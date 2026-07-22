@@ -11,7 +11,17 @@ from pathlib import Path
 
 import yaml
 
-from .model import AcademicTerm, OccurrenceCard, ParsedCard, SourceCard, YearOnly
+from .model import (
+    AcademicTerm,
+    ContributedArtifact,
+    ExamSource,
+    OccurrenceCard,
+    ParsedCard,
+    SourceCard,
+    TermOnly,
+    TextbookSource,
+    YearOnly,
+)
 
 SCHEMA = """
 create table cards (
@@ -24,10 +34,18 @@ create table cards (
 );
 create table classifications (card_id text not null, axis text not null, term text not null);
 create table relations (source_id text not null, kind text not null, target_id text not null);
+-- `sources` holds what every source kind has. The kind-specific columns live in
+-- their own tables, mirroring the discriminated union rather than flattening it
+-- into one row with columns that are null for two kinds out of three.
+-- `year` and `term` stay nullable here because the date union genuinely has
+-- cases that lack them; `date_kind` says which case, so null is never ambiguous.
 create table sources (
-  id text primary key, source_kind text not null, institution text not null,
-  area text not null, date_kind text not null, year integer, term text
+  id text primary key, source_kind text not null,
+  date_kind text not null, year integer, term text
 );
+create table exam_sources (id text primary key, institution text not null, area text not null);
+create table textbook_sources (id text primary key, textbook text not null);
+create table artifact_sources (id text primary key, provenance text not null);
 create table occurrences (
   id text primary key, problem_id text not null, source_id text not null, locator text not null
 );
@@ -66,7 +84,9 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[str]:
             if rel.target not in by_id:
                 errors.append(f"{where}: dangling relation target {rel.target!r}")
         if isinstance(p.card, SourceCard):
-            if p.card.payload.institution not in vocab["institutions"]:
+            # Only an exam sitting has an institution to check. A textbook has a
+            # publisher, not a university; an artifact has a provenance note.
+            if isinstance(p.card.payload, ExamSource) and p.card.payload.institution not in vocab["institutions"]:
                 errors.append(f"{where}: unknown institution {p.card.payload.institution!r}")
         if isinstance(p.card, OccurrenceCard):
             src = by_id.get(p.card.payload.source)
@@ -104,17 +124,27 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
         if isinstance(c, SourceCard):
             d = c.payload.date
             con.execute(
-                "insert into sources values (?,?,?,?,?,?,?)",
+                "insert into sources values (?,?,?,?,?)",
                 (
                     c.id,
                     c.payload.source_kind,
-                    c.payload.institution,
-                    c.payload.area,
                     d.kind,
                     d.year if isinstance(d, AcademicTerm | YearOnly) else None,
-                    d.term if isinstance(d, AcademicTerm) else None,
+                    d.term if isinstance(d, AcademicTerm | TermOnly) else None,
                 ),
             )
+            # One branch per variant, no fallback: a new source kind added to the
+            # union without a projection here is a mypy error, not a silent skip.
+            match c.payload:
+                case ExamSource():
+                    con.execute(
+                        "insert into exam_sources values (?,?,?)",
+                        (c.id, c.payload.institution, c.payload.area),
+                    )
+                case TextbookSource():
+                    con.execute("insert into textbook_sources values (?,?)", (c.id, c.payload.textbook))
+                case ContributedArtifact():
+                    con.execute("insert into artifact_sources values (?,?)", (c.id, c.payload.provenance))
         if isinstance(c, OccurrenceCard):
             problem = next(r.target for r in c.relations if r.kind == "instance-of")
             con.execute(

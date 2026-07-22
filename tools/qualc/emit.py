@@ -54,12 +54,21 @@ def _terms(con: sqlite3.Connection, card_id: str, axis: str) -> list[str]:
 OWNED = {"problem": "qual-problem", "solution": "qual-solution", "hint": "qual-hint", "strategy": "qual-strategy", "definition": "qual-definition"}
 
 
+def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
+    if isinstance(el, pf.Div):
+        el.classes = [OWNED.get(c, c) for c in el.classes]
+    return el
+
+
 def _blocks(card: sqlite3.Row) -> list[pf.Block]:
-    blocks = list(from_ast(card["ast"]).content)
-    for block in blocks:
-        if isinstance(block, pf.Div):
-            block.classes = [OWNED[c] if c in OWNED else c for c in block.classes]
-    return blocks
+    """Rename owned classes at every depth, not just the top level.
+
+    `reveal.lua` matches on the renamed `qual-*` classes. Renaming only
+    top-level divs meant a `solution` nested inside another section kept its
+    authored class, never matched the filter, and rendered fully expanded --
+    spoiling the problem it was supposed to hide behind a summary.
+    """
+    return list(from_ast(card["ast"]).walk(_rename).content)
 
 
 def _inlines(markdown: str) -> list[pf.Inline]:
@@ -141,9 +150,11 @@ def problem_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
         "select o.*, c.ast, s.title as source_title from occurrences o join cards c on c.id=o.id join cards s on s.id=o.source_id where o.problem_id=? order by o.id",
         (card["id"],),
     )
+    # Institution facets come from exam_sources: only a sitting has one. A
+    # problem cited from a textbook contributes a year but no institution.
     facets = _rows(
         con,
-        "select distinct s.institution, s.year from occurrences o join sources s on s.id=o.source_id where o.problem_id=?",
+        "select distinct e.institution, s.year from occurrences o join sources s on s.id=o.source_id join exam_sources e on e.id=s.id where o.problem_id=?",
         (card["id"],),
     )
     institutions = sorted({f["institution"].upper() for f in facets})
@@ -359,7 +370,7 @@ def project(db: Path, out: Path, publications: Path, site: Path, macros: dict) -
             "Historical sittings, each a fixed ordered list of occurrences.",
             _rows(
                 con,
-                "select c.* from cards c join sources s on s.id=c.id order by s.institution, s.year, c.id",
+                "select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id order by e.institution, s.year, c.id",
             ),
             "exam/",
         ),

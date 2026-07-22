@@ -34,16 +34,44 @@ class YearOnly(Strict):
     year: int
 
 
+class TermOnly(Strict):
+    """Season known, year not.
+
+    Not hypothetical: 20 make-me-a-qual records (all NUS) carry a real season
+    under the sentinel `year: 1970`. Without this case the season is lost, since
+    `AcademicTerm` demands a year and `YearOnly` demands one too.
+    """
+
+    kind: Literal["term"]
+    term: Literal["spring", "fall"]
+
+
 class UnknownDate(Strict):
     kind: Literal["unknown"]
 
 
-DateSpec = Annotated[AcademicTerm | YearOnly | UnknownDate, Field(discriminator="kind")]
+DateSpec = Annotated[
+    AcademicTerm | YearOnly | TermOnly | UnknownDate,
+    Field(discriminator="kind"),
+]
 
 
 # --- envelope ---------------------------------------------------------------
 
-RelationKind = Literal["instance-of", "solves", "hints-at", "uses", "related-to"]
+RelationKind = Literal[
+    "instance-of",
+    "solves",
+    "hints-at",
+    "uses",
+    "related-to",
+    "cites",
+    "variant-of",
+    "extracted-from",
+]
+
+# `\work` and `\todo` both land on `draft`; `\done` on `reviewed`. `verified` is
+# deliberately unpopulated by migration -- it is reserved for a later checking
+# pass, and claiming it on import would assert a review that never happened.
 Review = Literal["draft", "reviewed", "verified"]
 
 
@@ -74,11 +102,40 @@ class OccurrencePayload(Strict):
     locator: str
 
 
-class SourcePayload(Strict):
+class ExamSource(Strict):
+    """A sitting of a qualifying exam."""
+
     source_kind: Literal["university-exam"]
     institution: str
     area: str
     date: DateSpec
+
+
+class TextbookSource(Strict):
+    """A cited book. Carries no institution -- a textbook is not sat anywhere."""
+
+    source_kind: Literal["textbook"]
+    textbook: str
+    date: DateSpec
+
+
+class ContributedArtifact(Strict):
+    """A PDF, scan, or handwritten note contributed to the corpus.
+
+    `provenance` is required and free text because the honest answer is often a
+    sentence ("Neil's Fall 2019 solution set, origin unrecorded"). Requiring it
+    stops an artifact entering the corpus with no account of where it came from.
+    """
+
+    source_kind: Literal["contributed-artifact"]
+    provenance: str
+    date: DateSpec
+
+
+SourcePayload = Annotated[
+    ExamSource | TextbookSource | ContributedArtifact,
+    Field(discriminator="source_kind"),
+]
 
 
 class ProblemCard(Envelope):
@@ -95,6 +152,9 @@ class SourceCard(Envelope):
     payload: SourcePayload
 
 
+# Every remaining kind is envelope plus prose body. They are separate classes
+# rather than one class with a `kind` field because the union is what makes an
+# unknown kind a build failure instead of a silently accepted string.
 class SolutionCard(Envelope):
     kind: Literal["solution"]
 
@@ -107,14 +167,132 @@ class DefinitionCard(Envelope):
     kind: Literal["definition"]
 
 
+class TheoremCard(Envelope):
+    kind: Literal["theorem"]
+
+
+class PropositionCard(Envelope):
+    kind: Literal["proposition"]
+
+
+class CorollaryCard(Envelope):
+    kind: Literal["corollary"]
+
+
+class LemmaCard(Envelope):
+    kind: Literal["lemma"]
+
+
+class ProofCard(Envelope):
+    kind: Literal["proof"]
+
+
+class ExampleCard(Envelope):
+    kind: Literal["example"]
+
+
+class ExerciseCard(Envelope):
+    kind: Literal["exercise"]
+
+
+class RemarkCard(Envelope):
+    kind: Literal["remark"]
+
+
+class StrategyCard(Envelope):
+    kind: Literal["strategy"]
+
+
+class ConceptCard(Envelope):
+    kind: Literal["concept"]
+
+
+class FactCard(Envelope):
+    """A result stated without proof -- cited, folkloric, or assumed."""
+
+    kind: Literal["fact"]
+
+
+class ClaimCard(Envelope):
+    """A local assertion discharged by a surrounding argument.
+
+    Measured never to occur at the top level in either prose repo, so a
+    standalone claim card is unusual by construction; the kind exists so that a
+    deliberately promoted claim has somewhere to go.
+    """
+
+    kind: Literal["claim"]
+
+
+class WarningCard(Envelope):
+    """Editorial errata and caveats, often correcting the original exam's wording."""
+
+    kind: Literal["warning"]
+
+
+class SloganCard(Envelope):
+    """A one-line informal gloss of what a result really says."""
+
+    kind: Literal["slogan"]
+
+
 Card = Annotated[
-    ProblemCard | OccurrenceCard | SourceCard | SolutionCard | HintCard | DefinitionCard,
+    ProblemCard
+    | OccurrenceCard
+    | SourceCard
+    | SolutionCard
+    | HintCard
+    | DefinitionCard
+    | TheoremCard
+    | PropositionCard
+    | CorollaryCard
+    | LemmaCard
+    | ProofCard
+    | ExampleCard
+    | ExerciseCard
+    | RemarkCard
+    | StrategyCard
+    | ConceptCard
+    | FactCard
+    | ClaimCard
+    | WarningCard
+    | SloganCard,
     Field(discriminator="kind"),
 ]
 
+# Authored fenced-div class -> card kind. Total over every class measured in the
+# two prose repos; an unmapped class is a build failure, never silent prose.
+# `warnings` is plural in the source and singular as a kind: the div vocabulary
+# is an input format, not the domain type.
+DIV_CLASS_TO_KIND = {
+    "problem": "problem",
+    "solution": "solution",
+    "hint": "hint",
+    "definition": "definition",
+    "theorem": "theorem",
+    "proposition": "proposition",
+    "corollary": "corollary",
+    "lemma": "lemma",
+    "proof": "proof",
+    "example": "example",
+    "exercise": "exercise",
+    "remark": "remark",
+    "strategy": "strategy",
+    "concept": "concept",
+    "fact": "fact",
+    "claim": "claim",
+    "warnings": "warning",
+    "slogan": "slogan",
+}
+
+# Presentational only, carrying no semantics. Recorded rather than ignored, so
+# that "we never looked at it" and "we looked and it means nothing" stay
+# distinguishable.
+NON_SEMANTIC_CLASSES = {"foldopen"}
+
 # Fenced-div classes the compiler treats as semantic sections. Anything else in
 # a card body is ordinary prose.
-SECTION_KINDS = {"problem", "solution", "hint", "strategy", "definition", "remark"}
+SECTION_KINDS = set(DIV_CLASS_TO_KIND)
 
 
 class ParsedCard(Strict):
@@ -147,12 +325,26 @@ def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
 
 
 def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
+    """Collect semantic sections wherever they appear, including nested ones.
+
+    Nesting is normal here -- a `solution` containing a `proof` is the corpus's
+    dominant compound shape, and a `claim` is never anything but nested. A
+    nested section is indexed in addition to its parent, not instead of it: the
+    parent's text already includes the child's, because `pf.stringify` recurses.
+    """
     found: list[tuple[str, str]] = []
-    for block in doc.content:
-        if isinstance(block, pf.Div):
-            kind = next((c for c in block.classes if c in SECTION_KINDS), None)
-            if kind:
-                found.append((kind, pf.stringify(block).strip()))
+
+    def walk(blocks: list[pf.Element]) -> None:
+        for block in blocks:
+            if isinstance(block, pf.Div):
+                cls = next((c for c in block.classes if c in DIV_CLASS_TO_KIND), None)
+                if cls:
+                    # Record the domain kind, not the authored class: `warnings`
+                    # in the source is a `warning` everywhere downstream.
+                    found.append((DIV_CLASS_TO_KIND[cls], pf.stringify(block).strip()))
+                walk(list(block.content))
+
+    walk(list(doc.content))
     return found
 
 
