@@ -1,0 +1,46 @@
+.quarto-title .subtitle {
+  font-family: var(--bs-font-monospace);
+  font-size: .8rem;
+  opacity: .6;
+}
+
+/* Labels for the sections Quarto does not already know about. It owns theorem
+   and proof environments (.definition, .remark, .theorem, …); we own the rest. */
+div.qual-problem, div.qual-strategy, div.qual-definition {
+  border-left: 3px solid var(--bs-border-color);
+  padding: .1rem 0 .1rem 1rem;
+  margin-block: 1rem;
+}
+div.qual-problem::before, div.qual-strategy::before, div.qual-definition::before {
+  display: block;
+  font-variant: small-caps;
+  letter-spacing: .04em;
+  font-weight: 600;
+  opacity: .65;
+  font-size: .85rem;
+}
+div.qual-problem::before { content: "Problem"; }
+div.qual-strategy::before { content: "Strategy"; }
+div.qual-definition::before { content: "Definition"; }
+
+details.reveal {
+  border: 1px solid var(--bs-border-color);
+  border-radius: 4px;
+  padding: .4rem .75rem;
+  margin-block: .5rem;
+  background: var(--bs-tertiary-bg, #f8f9fa);
+}
+details.reveal > summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: .9rem;
+}
+details.reveal[open] > summary {
+  margin-bottom: .5rem;
+  border-bottom: 1px solid var(--bs-border-color);
+  padding-bottom: .35rem;
+}
+details.reveal.qual-occurrence > summary { font-weight: 500; opacity: .8; }
+
+div.panel { margin-block: 1rem; }
+div.panel > ul { margin-bottom: 0; }

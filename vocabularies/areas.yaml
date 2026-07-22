@@ -1,0 +1,10 @@
+# Exam areas. Open-ended set, so it is a registry — adding one is a data change,
+# not a schema change.
+- id: algebra
+  name: Algebra
+- id: real-analysis
+  name: Real Analysis
+- id: complex-analysis
+  name: Complex Analysis
+- id: topology
+  name: Topology

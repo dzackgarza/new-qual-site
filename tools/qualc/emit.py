@@ -1,0 +1,376 @@
+"""Renderer inputs.
+
+Pages are composed as pandoc ASTs and written by pandoc's own markdown writer.
+Nothing here assembles markdown by hand, so fencing, escaping, and math are the
+writer's problem rather than a source of quoting bugs.
+
+Emitted documents carry only semantics: a card's blocks keep the classes their
+author wrote (`.problem`, `.solution`, `.hint`), plus attributes drawn from the
+catalog. Presentation — what collapses, what is labelled how — is a render-time
+decision, and lives in `site/filters/reveal.lua`.
+
+Quarto never sees the corpus. Swapping it out replaces this module and nothing
+else.
+"""
+
+from __future__ import annotations
+
+import json
+import shutil
+import sqlite3
+from collections import Counter
+from pathlib import Path
+
+import panflute as pf
+import yaml
+
+from .model import from_ast
+
+
+def _rows(con: sqlite3.Connection, sql: str, args: tuple = ()) -> list[sqlite3.Row]:
+    con.row_factory = sqlite3.Row
+    return con.execute(sql, args).fetchall()
+
+
+def _terms(con: sqlite3.Connection, card_id: str, axis: str) -> list[str]:
+    return [
+        r["term"]
+        for r in _rows(
+            con,
+            "select term from classifications where card_id=? and axis=? order by term",
+            (card_id, axis),
+        )
+    ]
+
+
+# Quarto reserves several fenced-div classes for its own theorem and proof
+# environments, and claims them before user filters run. The corpus keeps the
+# authored names; this adapter renames only the sections it renders itself, and
+# leaves `.definition`, `.remark`, `.theorem` and friends to Quarto.
+# `.definition` is included because Quarto only renders theorem environments it
+# can cross-reference, i.e. ones carrying a `#def-…` id; without one it emits an
+# unlabelled div. Proof-like classes such as `.remark` need no id, so Quarto
+# keeps them.
+OWNED = {"problem": "qual-problem", "solution": "qual-solution", "hint": "qual-hint", "strategy": "qual-strategy", "definition": "qual-definition"}
+
+
+def _blocks(card: sqlite3.Row) -> list[pf.Block]:
+    blocks = list(from_ast(card["ast"]).content)
+    for block in blocks:
+        if isinstance(block, pf.Div):
+            block.classes = [OWNED[c] if c in OWNED else c for c in block.classes]
+    return blocks
+
+
+def _inlines(markdown: str) -> list[pf.Inline]:
+    parsed = pf.convert_text(markdown, output_format="panflute")
+    return list(parsed[0].content) if parsed else [pf.Str("")]
+
+
+def _link(card: sqlite3.Row, prefix: str = "../tag/") -> pf.Plain:
+    return pf.Plain(
+        pf.Link(*_inlines(card["title"]), url=f"{prefix}{card['id']}.qmd"),
+        pf.Space(),
+        pf.Code(card["id"]),
+    )
+
+
+Page = tuple[dict, list[pf.Block]]
+
+
+def write(page: Page, path: Path) -> None:
+    """Front matter is machine-read data; the body is prose.
+
+    They are written by different tools on purpose. Routing the metadata through
+    pandoc's markdown writer would escape it as if it were prose — `tag/P-*.qmd`
+    comes back out as `tag/P-\\*.qmd` and the listing silently matches nothing.
+    """
+    meta, blocks = page
+    body = (
+        pf.convert_text(
+            pf.Doc(*blocks),
+            input_format="panflute",
+            output_format="markdown",
+            extra_args=["--wrap=preserve"],
+        )
+        if blocks
+        else ""
+    )
+    path.write_text("---\n" + yaml.safe_dump(meta, sort_keys=False, allow_unicode=True).strip() + "\n---\n\n" + body + "\n")
+
+
+def _related(con: sqlite3.Connection, problem_id: str, kind: str) -> list[sqlite3.Row]:
+    return _rows(
+        con,
+        "select c.* from relations r join cards c on c.id = r.source_id where r.target_id=? and r.kind=? order by c.id",
+        (problem_id, kind),
+    )
+
+
+# --- publication manifests --------------------------------------------------
+
+
+def run_query(con: sqlite3.Connection, q: dict) -> list[sqlite3.Row]:
+    """The only query surface a publication manifest gets. Deliberately small.
+
+    Every key is required. A manifest that omits `limit` is a manifest whose
+    author has not decided how long the panel is, and the build should say so
+    rather than pick a number.
+    """
+    sql = "select distinct c.* from cards c"
+    args: list = []
+    for i, topic in enumerate(q["topics"]):
+        sql += f" join classifications t{i} on t{i}.card_id=c.id and t{i}.axis='topic' and t{i}.term=?"
+        args.append(topic)
+    sql += " where c.kind=?"
+    args.append(q["kind"])
+    if "review" in q:
+        sql += " and c.review in ({})".format(",".join("?" * len(q["review"])))
+        args += q["review"]
+    sql += " order by c.title limit ?"
+    args.append(q["limit"])
+    return _rows(con, sql, tuple(args))
+
+
+# --- pages ------------------------------------------------------------------
+
+
+def problem_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
+    occurrences = _rows(
+        con,
+        "select o.*, c.ast, s.title as source_title from occurrences o join cards c on c.id=o.id join cards s on s.id=o.source_id where o.problem_id=? order by o.id",
+        (card["id"],),
+    )
+    facets = _rows(
+        con,
+        "select distinct s.institution, s.year from occurrences o join sources s on s.id=o.source_id where o.problem_id=?",
+        (card["id"],),
+    )
+    institutions = sorted({f["institution"].upper() for f in facets})
+    years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
+    areas = _terms(con, card["id"], "area")
+    topics = _terms(con, card["id"], "topic")
+
+    blocks = _blocks(card)
+
+    for occ in occurrences:
+        for block in from_ast(occ["ast"]).content:
+            if isinstance(block, pf.Div):
+                block.classes = ["qual-occurrence"]
+                block.attributes = {
+                    "source": occ["source_title"],
+                    "locator": occ["locator"],
+                    "occurrence": occ["id"],
+                }
+            blocks.append(block)
+
+    for kind in ("hints-at", "solves"):
+        for rel in _related(con, card["id"], kind):
+            blocks += _blocks(rel)
+
+    uses = _rows(
+        con,
+        "select c.* from relations r join cards c on c.id=r.target_id where r.source_id=? and r.kind='uses'",
+        (card["id"],),
+    )
+    if uses:
+        blocks.append(pf.Header(pf.Str("Uses"), level=2))
+        blocks.append(pf.BulletList(*[pf.ListItem(_link(u)) for u in uses]))
+
+    return {
+        "title": card["title"],
+        "subtitle": card["id"],
+        "area": ", ".join(a.replace("-", " ").title() for a in areas),
+        "institutions": ", ".join(institutions) or "—",
+        "years": ", ".join(years) or "—",
+        "review": card["review"],
+        "categories": sorted(set(topics + areas + institutions + years)),
+    }, blocks
+
+
+def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
+    return {
+        "title": card["title"],
+        "subtitle": card["id"],
+        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
+    }, _blocks(card)
+
+
+def source_page(con: sqlite3.Connection, src: sqlite3.Row) -> Page:
+    items = _rows(
+        con,
+        "select o.locator, c.* from occurrences o join cards c on c.id=o.problem_id where o.source_id=? order by cast(o.locator as integer), o.locator",
+        (src["id"],),
+    )
+    listing = pf.OrderedList(
+        *[pf.ListItem(_link(i)) for i in items],
+        start=int(items[0]["locator"]) if items else 1,
+    )
+    return {"title": src["title"], "subtitle": src["id"]}, [
+        pf.Para(pf.Str(str(len(items))), pf.Space(), *_inlines("problems, in the order they appeared.")),
+        listing,
+    ]
+
+
+def guide_page(con: sqlite3.Connection, manifest: dict) -> Page:
+    blocks: list[pf.Block] = [
+        pf.Para(*_inlines("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."))
+    ]
+    for section in manifest["sections"]:
+        blocks.append(pf.Header(*_inlines(section["title"]), level=2))
+        for item in section["items"]:
+            if "ref" in item:
+                blocks += _blocks(_rows(con, "select * from cards where id=?", (item["ref"],))[0])
+            else:
+                hits = run_query(con, item["query"])
+                blocks.append(
+                    pf.Div(
+                        pf.BulletList(*[pf.ListItem(_link(h)) for h in hits]) if hits else pf.Para(pf.Emph(pf.Str("No"), pf.Space(), pf.Str("matches."))),
+                        classes=["panel"],
+                        attributes={"query-kind": item["query"]["kind"], "count": str(len(hits))},
+                    )
+                )
+    return {"title": manifest["title"]}, blocks
+
+
+def index_page(con: sqlite3.Connection) -> Page:
+    counts = Counter(r["kind"] for r in _rows(con, "select kind from cards"))
+    rows = [
+        ("Problems (canonical)", "problem"),
+        ("Occurrences (as they appeared)", "occurrence"),
+        ("Sources (exam sittings)", "source"),
+        ("Definitions", "definition"),
+        ("Hints", "hint"),
+        ("Solutions", "solution"),
+    ]
+    body = "\n".join(f"| {label} | {counts[kind]} |" for label, kind in rows)
+    blocks = pf.convert_text(
+        "A proof of concept: markdown cards in git compile to a semantic index, and\n"
+        "the site is one projection of that index.\n\n"
+        "| Cards | Count |\n|---|---|\n" + body + "\n\n"
+        "Start with [the problem browser](problems.qmd), a "
+        "[historical exam](exams.qmd), or a [study guide](guides.qmd) — the same "
+        "records, arranged three different ways.\n",
+        output_format="panflute",
+    )
+    return {"title": "Qual Corpus"}, list(blocks)
+
+
+def listing_page(title: str, listing: dict, lede: str) -> Page:
+    return {"title": title, "listing": listing}, [pf.Para(*_inlines(lede))]
+
+
+def link_list_page(con: sqlite3.Connection, title: str, lede: str, rows: list[sqlite3.Row], prefix: str) -> Page:
+    return {"title": title}, [
+        pf.Para(*_inlines(lede)),
+        pf.BulletList(*[pf.ListItem(_link(r, prefix)) for r in rows]),
+    ]
+
+
+# --- project ----------------------------------------------------------------
+
+QUARTO_YML = {
+    "project": {"type": "website", "output-dir": "_site"},
+    "website": {
+        "title": "Qual Corpus",
+        "navbar": {
+            "left": [
+                {"href": "index.qmd", "text": "Home"},
+                {"href": "problems.qmd", "text": "Problems"},
+                {"href": "exams.qmd", "text": "Exams"},
+                {"href": "guides.qmd", "text": "Guides"},
+            ]
+        },
+        "search": {"location": "navbar", "type": "overlay"},
+    },
+    "filters": ["reveal.lua"],
+    "format": {
+        "html": {
+            "theme": "cosmo",
+            "toc": True,
+            "include-in-header": "_macros.html",
+            "css": "styles.css",
+        }
+    },
+}
+
+PROBLEMS_LISTING = {
+    "id": "problems",
+    "contents": "tag/P-*.qmd",
+    "type": "table",
+    "fields": ["title", "area", "institutions", "years", "review"],
+    "field-display-names": {
+        "title": "Problem",
+        "area": "Area",
+        "institutions": "Seen at",
+        "years": "Years",
+        "review": "Status",
+    },
+    "sort": ["title"],
+    "sort-ui": ["title", "area", "years", "review"],
+    "filter-ui": True,
+    "categories": "cloud",
+    "page-size": 100,
+}
+
+
+def mathjax_header(macros: dict) -> str:
+    return "<script>\nwindow.MathJax = { tex: { macros: " + json.dumps(macros) + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] } };\n</script>\n"
+
+
+def project(db: Path, out: Path, publications: Path, site: Path, macros: dict) -> None:
+    if out.exists():
+        shutil.rmtree(out)
+    (out / "tag").mkdir(parents=True)
+    (out / "exam").mkdir()
+    (out / "guide").mkdir()
+    con = sqlite3.connect(db)
+
+    (out / "_quarto.yml").write_text(yaml.safe_dump(QUARTO_YML, sort_keys=False))
+    (out / "_macros.html").write_text(mathjax_header(macros))
+    for asset in ("styles.css", "filters/reveal.lua"):
+        shutil.copy(site / asset, out / Path(asset).name)
+
+    for card in _rows(con, "select * from cards where kind='problem'"):
+        write(problem_page(con, card), out / "tag" / f"{card['id']}.qmd")
+    for card in _rows(con, "select * from cards where kind in ('definition','solution','hint')"):
+        write(plain_page(con, card), out / "tag" / f"{card['id']}.qmd")
+    for src in _rows(con, "select * from cards where kind='source'"):
+        write(source_page(con, src), out / "exam" / f"{src['id']}.qmd")
+
+    guides = []
+    for path in sorted(publications.glob("*.yaml")):
+        manifest = yaml.safe_load(path.read_text())
+        write(guide_page(con, manifest), out / "guide" / f"{manifest['id']}.qmd")
+        guides.append(manifest)
+
+    write(
+        listing_page(
+            "Problems",
+            PROBLEMS_LISTING,
+            "Every problem in the corpus. Filter by any facet; the URL is the query.",
+        ),
+        out / "problems.qmd",
+    )
+    write(
+        link_list_page(
+            con,
+            "Exams",
+            "Historical sittings, each a fixed ordered list of occurrences.",
+            _rows(
+                con,
+                "select c.* from cards c join sources s on s.id=c.id order by s.institution, s.year, c.id",
+            ),
+            "exam/",
+        ),
+        out / "exams.qmd",
+    )
+    write(
+        (
+            {"title": "Guides"},
+            [pf.BulletList(*[pf.ListItem(pf.Plain(pf.Link(pf.Str(g["title"]), url=f"guide/{g['id']}.qmd"))) for g in guides])],
+        ),
+        out / "guides.qmd",
+    )
+    write(index_page(con), out / "index.qmd")
+    con.close()

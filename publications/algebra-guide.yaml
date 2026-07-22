@@ -1,0 +1,39 @@
+# A publication manifest: an ordered composition of stable IDs and queries.
+# Reordering it, retitling a section, or swapping a query changes nothing in the
+# corpus and nothing in the problem browser.
+schema: qual/publication@1
+id: GUIDE-ALGEBRA
+kind: study-guide
+title: Algebra Qualifying Exam Review
+sections:
+  - title: Sylow theory
+    items:
+      - ref: D-7TQ2M
+      - query:
+          kind: problem
+          topics:
+            - groups
+          limit: 10
+  - title: Fields and Galois theory
+    items:
+      - query:
+          kind: problem
+          topics:
+            - galois-theory
+          limit: 10
+  - title: Linear algebra
+    items:
+      - query:
+          kind: problem
+          topics:
+            - linear-algebra
+          limit: 10
+  - title: Reviewed solutions, all areas
+    items:
+      - query:
+          kind: solution
+          review:
+            - reviewed
+            - verified
+          limit: 25
+          topics: []

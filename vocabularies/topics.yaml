@@ -1,0 +1,41 @@
+# Topics. A registry, not a schema enum: a new topic is a new entry here.
+- id: algebra
+  name: Algebra
+- id: borel-cantelli
+  name: Borel-Cantelli
+- id: canonical-forms
+  name: Canonical Forms
+- id: cauchy-riemann
+  name: Cauchy-Riemann
+- id: convergence-of-functions
+  name: Convergence of Functions
+- id: convergence-of-integrals
+  name: Convergence of Integrals
+- id: fields
+  name: Fields
+- id: fubini-tonelli
+  name: Fubini-Tonelli
+- id: galois-theory
+  name: Galois Theory
+- id: groups
+  name: Groups
+- id: integrals
+  name: Integrals
+- id: linear-algebra
+  name: Linear Algebra
+- id: liouville-s-theorem
+  name: Liouville's Theorem
+- id: lp-spaces
+  name: Lp Spaces
+- id: matrices
+  name: Matrices
+- id: measure-theory
+  name: Measure Theory
+- id: norms
+  name: Norms
+- id: representation-theory
+  name: Representation Theory
+- id: uniform-continuity
+  name: Uniform Continuity
+- id: uniform-convergence
+  name: Uniform Convergence

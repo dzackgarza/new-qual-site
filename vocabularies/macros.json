@@ -1,0 +1,18 @@
+{
+  "CC": "{\\mathbf{C}}",
+  "Gal": "{ \\mathsf{Gal}}",
+  "QQ": "{\\mathbf{Q}}",
+  "RR": "{\\mathbf{R}}",
+  "ZZ": "{\\mathbf{Z}}",
+  "abs": ["{\\left\\lvert {#1} \\right\\rvert}", 1],
+  "dash": "{\\hbox{-}}",
+  "divides": " \\mathrel{|} ",
+  "generators": ["\\left\\langle{#1}\\right\\rangle", 1],
+  "intersect": "\\cap",
+  "inv": "^{-1}",
+  "normal": "{~\\trianglelefteq~}",
+  "restrictionof": [" {\\left.{{#1}} \\right|_{{#2}} }", 2],
+  "st": "{~\\mathrel{\\Big\\vert}~}",
+  "suchthat": "\\st",
+  "union": "\\cup"
+}
