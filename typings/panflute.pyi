@@ -71,6 +71,9 @@ class Space(Inline):
 class Emph(Inline):
     def __init__(self, *args: Inline) -> None: ...
 
+class Strong(Inline):
+    def __init__(self, *args: Inline) -> None: ...
+
 class Math(Inline):
     text: str
     format: str

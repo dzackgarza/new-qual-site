@@ -58,7 +58,7 @@ create virtual table search using fts5(card_id unindexed, section_kind unindexed
 
 def load_vocabularies(root: Path) -> dict[str, set[str]]:
     vocab = {}
-    for name in ("areas", "topics", "institutions"):
+    for name in ("areas", "topics", "institutions", "textbooks"):
         data = yaml.safe_load((root / f"{name}.yaml").read_text())
         vocab[name] = {entry["id"] for entry in data}
     return vocab
@@ -84,10 +84,15 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[str]:
             if rel.target not in by_id:
                 errors.append(f"{where}: dangling relation target {rel.target!r}")
         if isinstance(p.card, SourceCard):
-            # Only an exam sitting has an institution to check. A textbook has a
-            # publisher, not a university; an artifact has a provenance note.
-            if isinstance(p.card.payload, ExamSource) and p.card.payload.institution not in vocab["institutions"]:
-                errors.append(f"{where}: unknown institution {p.card.payload.institution!r}")
+            # One registry check per variant, matching the union. Only an exam
+            # sitting has an institution; a textbook has a registry entry
+            # instead; an artifact's provenance is free text by design and has
+            # no registry to check against.
+            payload = p.card.payload
+            if isinstance(payload, ExamSource) and payload.institution not in vocab["institutions"]:
+                errors.append(f"{where}: unknown institution {payload.institution!r}")
+            if isinstance(payload, TextbookSource) and payload.textbook not in vocab["textbooks"]:
+                errors.append(f"{where}: unknown textbook {payload.textbook!r}")
         if isinstance(p.card, OccurrenceCard):
             src = by_id.get(p.card.payload.source)
             if src is None:

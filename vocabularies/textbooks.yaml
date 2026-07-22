@@ -1,0 +1,10 @@
+# Cited textbooks. A registry, not a schema enum: a new book is an entry here,
+# never a change to the source union.
+- id: dummit-foote
+  name: Dummit and Foote, Abstract Algebra
+- id: folland
+  name: Folland, Real Analysis
+- id: hatcher
+  name: Hatcher, Algebraic Topology
+- id: stein-shakarchi-complex
+  name: Stein and Shakarchi, Complex Analysis

@@ -24,7 +24,7 @@ from pathlib import Path
 import panflute as pf
 import yaml
 
-from .model import from_ast
+from .model import DIV_CLASS_TO_KIND, from_ast
 
 
 def _rows(con: sqlite3.Connection, sql: str, args: tuple = ()) -> list[sqlite3.Row]:
@@ -43,20 +43,29 @@ def _terms(con: sqlite3.Connection, card_id: str, axis: str) -> list[str]:
     ]
 
 
-# Quarto reserves several fenced-div classes for its own theorem and proof
-# environments, and claims them before user filters run. The corpus keeps the
-# authored names; this adapter renames only the sections it renders itself, and
-# leaves `.definition`, `.remark`, `.theorem` and friends to Quarto.
-# `.definition` is included because Quarto only renders theorem environments it
-# can cross-reference, i.e. ones carrying a `#def-…` id; without one it emits an
-# unlabelled div. Proof-like classes such as `.remark` need no id, so Quarto
-# keeps them.
-OWNED = {"problem": "qual-problem", "solution": "qual-solution", "hint": "qual-hint", "strategy": "qual-strategy", "definition": "qual-definition"}
+# Every authored class is renamed and labelled here, driven off the same map the
+# indexer uses. Leaving the theorem-like classes to Quarto was measured to be a
+# mistake: Quarto only labels a theorem environment it can cross-reference, i.e.
+# one carrying a `#thm-…` id, and the corpus has none, so `.theorem`, `.concept`
+# and `.warnings` all rendered as unmarked prose -- exactly the semantics WS1
+# exists to preserve, lost at the last step.
+OWNED = {cls: f"qual-{kind}" for cls, kind in DIV_CLASS_TO_KIND.items()}
+
+# The class carrying the label. `reveal.lua` replaces the hint, solution and
+# occurrence divs outright, so those never reach this rule.
+SECTION_CLASS = "qual-section"
 
 
 def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
     if isinstance(el, pf.Div):
-        el.classes = [OWNED.get(c, c) for c in el.classes]
+        owned = [c for c in el.classes if c in OWNED]
+        el.classes = [OWNED[c] if c in OWNED else c for c in el.classes]
+        if owned:
+            el.classes.append(SECTION_CLASS)
+            # The label is the kind alone. The authored `title=` often contains
+            # mathematics, and a CSS `content: attr(...)` renders it as literal
+            # source; showing `$p\dash$subgroup` is worse than showing nothing.
+            el.attributes["data-label"] = DIV_CLASS_TO_KIND[owned[0]].title()
     return el
 
 
@@ -213,9 +222,14 @@ def source_page(con: sqlite3.Connection, src: sqlite3.Row) -> Page:
         "select o.locator, c.* from occurrences o join cards c on c.id=o.problem_id where o.source_id=? order by cast(o.locator as integer), o.locator",
         (src["id"],),
     )
-    listing = pf.OrderedList(
-        *[pf.ListItem(_link(i)) for i in items],
-        start=int(items[0]["locator"]) if items else 1,
+    # The locator is printed, not encoded in list numbering. A locator is a
+    # free-text label on the original sheet -- `3a`, `II.4`, `Problem 3` are all
+    # real -- so numbering the list by it either crashes or, worse, renumbers
+    # the sheet silently. A bullet carrying the label says what was actually
+    # printed on the exam.
+    listing = pf.Div(
+        pf.BulletList(*[pf.ListItem(pf.Plain(pf.Strong(pf.Str(i["locator"])), pf.Space(), *_link(i).content)) for i in items]),
+        classes=["qual-exam-listing"],
     )
     return {"title": src["title"], "subtitle": src["id"]}, [
         pf.Para(pf.Str(str(len(items))), pf.Space(), *_inlines("problems, in the order they appeared.")),
@@ -245,16 +259,21 @@ def guide_page(con: sqlite3.Connection, manifest: dict) -> Page:
 
 
 def index_page(con: sqlite3.Connection) -> Page:
+    # Counted off what is actually in the catalog, not off a list of kinds kept
+    # here. A hand-written list silently omits every kind added after it, and
+    # the omission looks exactly like a count of zero.
     counts = Counter(r["kind"] for r in _rows(con, "select kind from cards"))
-    rows = [
-        ("Problems (canonical)", "problem"),
-        ("Occurrences (as they appeared)", "occurrence"),
-        ("Sources (exam sittings)", "source"),
-        ("Definitions", "definition"),
-        ("Hints", "hint"),
-        ("Solutions", "solution"),
-    ]
-    body = "\n".join(f"| {label} | {counts[kind]} |" for label, kind in rows)
+    labels = {
+        "problem": "Problems (canonical)",
+        "occurrence": "Occurrences (as they appeared)",
+        "source": "Sources",
+    }
+
+    def plural(kind: str) -> str:
+        stem = kind.title()
+        return labels.get(kind) or (f"{stem[:-1]}ies" if stem.endswith("y") else f"{stem}s")
+
+    body = "\n".join(f"| {plural(kind)} | {n} |" for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
     blocks = pf.convert_text(
         "A proof of concept: markdown cards in git compile to a semantic index, and\n"
         "the site is one projection of that index.\n\n"
@@ -344,7 +363,12 @@ def project(db: Path, out: Path, publications: Path, site: Path, macros: dict) -
 
     for card in _rows(con, "select * from cards where kind='problem'"):
         write(problem_page(con, card), out / "tag" / f"{card['id']}.qmd")
-    for card in _rows(con, "select * from cards where kind in ('definition','solution','hint')"):
+    # Everything that is not a problem, a source, or an occurrence is envelope
+    # plus prose, and gets a plain page. Stated as an exclusion rather than a
+    # list of kinds so that adding a kind to the union publishes it, instead of
+    # leaving it indexed but unreachable with nothing saying so. Occurrences are
+    # deliberately absent: they render inline on the problem they instantiate.
+    for card in _rows(con, "select * from cards where kind not in ('problem','source','occurrence')"):
         write(plain_page(con, card), out / "tag" / f"{card['id']}.qmd")
     for src in _rows(con, "select * from cards where kind='source'"):
         write(source_page(con, src), out / "exam" / f"{src['id']}.qmd")

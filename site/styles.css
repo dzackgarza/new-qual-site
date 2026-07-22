@@ -4,14 +4,19 @@
   opacity: .6;
 }
 
-/* Labels for the sections Quarto does not already know about. It owns theorem
-   and proof environments (.definition, .remark, .theorem, …); we own the rest. */
-div.qual-problem, div.qual-strategy, div.qual-definition {
+/* One rule for every semantic section. The label text comes from `data-label`,
+   written by the emitter off the same class map the indexer uses, so a new card
+   kind is labelled without touching this file — and cannot be added here and
+   nowhere else, which is how `.theorem` and `.concept` came to render as plain
+   prose. Hints, solutions and occurrences never reach this rule: reveal.lua
+   replaces those divs with a collapsed <details>. */
+div.qual-section {
   border-left: 3px solid var(--bs-border-color);
   padding: .1rem 0 .1rem 1rem;
   margin-block: 1rem;
 }
-div.qual-problem::before, div.qual-strategy::before, div.qual-definition::before {
+div.qual-section::before {
+  content: attr(data-label);
   display: block;
   font-variant: small-caps;
   letter-spacing: .04em;
@@ -19,9 +24,6 @@ div.qual-problem::before, div.qual-strategy::before, div.qual-definition::before
   opacity: .65;
   font-size: .85rem;
 }
-div.qual-problem::before { content: "Problem"; }
-div.qual-strategy::before { content: "Strategy"; }
-div.qual-definition::before { content: "Definition"; }
 
 details.reveal {
   border: 1px solid var(--bs-border-color);
@@ -41,6 +43,11 @@ details.reveal[open] > summary {
   padding-bottom: .35rem;
 }
 details.reveal.qual-occurrence > summary { font-weight: 500; opacity: .8; }
+
+/* The exam listing prints each problem's own locator, so the list marker would
+   be a second, competing number. */
+div.qual-exam-listing ul { list-style: none; padding-left: 0; }
+div.qual-exam-listing li { margin-block: .35rem; }
 
 div.panel { margin-block: 1rem; }
 div.panel > ul { margin-bottom: 0; }

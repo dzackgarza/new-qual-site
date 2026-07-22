@@ -2,9 +2,10 @@
 
 Nesting is normal in this corpus: `solution` containing `proof` is its dominant
 compound shape (159 occurrences in qual-wiki, 141 in qual-review-and-solutions),
-and `claim` is *never* top-level in either repo. Rendering already handles this,
-because `site/filters/reveal.lua` is a Div filter and pandoc walks the whole
-block tree. The index did not.
+and `claim` is *never* top-level in either repo. Neither the index nor the
+renderer handled it: `site/filters/reveal.lua` does walk the whole block tree,
+but it matches the `qual-*` classes the emitter assigns, and the emitter renamed
+top-level divs only, so a nested solution rendered fully expanded.
 """
 
 from __future__ import annotations

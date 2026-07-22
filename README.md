@@ -60,10 +60,14 @@ Let $G$ be a finite group ...
 :::
 ```
 
-Kinds: `problem`, `occurrence`, `source`, `solution`, `hint`, `definition`. Relation kinds: `instance-of`, `solves`, `hints-at`, `uses`, `related-to`. Review states: `draft`, `reviewed`, `verified`.
+Kinds: `problem`, `occurrence`, `source`, `solution`, `hint`, `definition`, `theorem`, `proposition`, `corollary`, `lemma`, `proof`, `example`, `exercise`, `remark`, `strategy`, `concept`, `fact`, `claim`, `warning`, `slogan` — one per environment measured in the prose repos being migrated.
+Source cards come in three variants: `university-exam`, `textbook`, `contributed-artifact`. Relation kinds: `instance-of`, `solves`, `hints-at`, `uses`, `related-to`, `cites`, `variant-of`, `extracted-from`. Review states: `draft`, `reviewed`, `verified`.
 
 Closed enums are for genuinely closed concepts (card kind, relation kind, review state, date kind).
-Open-ended sets are registries in `vocabularies/`: adding a university or a topic is a data change, never a schema change.
+Open-ended sets are registries in `vocabularies/`: adding a university, a topic, or a textbook is a data change, never a schema change.
+
+The authored fenced-div class → card kind map is total.
+A class outside it fails the build rather than becoming prose, because a typo and an unclassified environment look identical to the compiler and both lose the section.
 
 Unknown information is a case, not a sentinel:
 
@@ -83,7 +87,7 @@ Deduplicating means repointing occurrences; nothing historical is deleted.
 ### Prose stays in markdown
 
 Front matter carries only what must be queried, validated, or used for identity.
-Statements, hints, and solutions are markdown with the fenced-div schema already used in `qual-wiki` (`::: problem`, `::: solution`, `::: hint`, `::: definition`, `::: remark`).
+Statements, hints, and solutions are markdown with the fenced-div schema already used in `qual-wiki` (`::: problem`, `::: solution`, `::: hint`, `::: definition`, `::: remark`), nested to any depth.
 
 ## No markdown by hand, anywhere
 
@@ -99,7 +103,7 @@ Machine config is not prose.
 Cards say what a block *is*. `site/filters/reveal.lua` decides what that means on screen — hints, solutions, and verbatim occurrences collapse behind a summary so the page does not spoil the problem.
 A print or exam target would make a different choice with no card changing.
 
-The emitter renames the classes it renders itself to `qual-*`, because Quarto claims `.solution`, `.remark`, and the theorem environments for its own processing before user filters run.
+The emitter renames every owned class to `qual-*` and writes the section's label into `data-label`, so the stylesheet needs one rule rather than one per kind and a new kind cannot be added to the schema but forgotten in the CSS. Leaving the theorem-like classes to Quarto was tried and measured wrong: Quarto only labels a theorem environment carrying a `#thm-…` crossref id, and with none in the corpus `.theorem`, `.concept`, and `.warnings` all rendered as unmarked prose.
 
 ## Publication manifests
 

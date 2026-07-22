@@ -290,9 +290,10 @@ DIV_CLASS_TO_KIND = {
 # distinguishable.
 NON_SEMANTIC_CLASSES = {"foldopen"}
 
-# Fenced-div classes the compiler treats as semantic sections. Anything else in
-# a card body is ordinary prose.
-SECTION_KINDS = set(DIV_CLASS_TO_KIND)
+# The two sets above are total over the authored corpus: every class measured in
+# the prose repos is in one of them. Anything else is a typo or an environment
+# nobody has classified, and both must stop the build rather than become prose.
+KNOWN_CLASSES = set(DIV_CLASS_TO_KIND) | NON_SEMANTIC_CLASSES
 
 
 class ParsedCard(Strict):
@@ -331,20 +332,34 @@ def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     dominant compound shape, and a `claim` is never anything but nested. A
     nested section is indexed in addition to its parent, not instead of it: the
     parent's text already includes the child's, because `pf.stringify` recurses.
+
+    Descent follows the whole block tree rather than chains of divs, because a
+    proof quoted inside a `>` block is still a proof.
+
+    Raises on any class outside `KNOWN_CLASSES`: an unclassified environment is
+    a build failure, never silent prose.
     """
     found: list[tuple[str, str]] = []
+    unknown: list[str] = []
 
-    def walk(blocks: list[pf.Element]) -> None:
-        for block in blocks:
-            if isinstance(block, pf.Div):
-                cls = next((c for c in block.classes if c in DIV_CLASS_TO_KIND), None)
-                if cls:
-                    # Record the domain kind, not the authored class: `warnings`
-                    # in the source is a `warning` everywhere downstream.
-                    found.append((DIV_CLASS_TO_KIND[cls], pf.stringify(block).strip()))
-                walk(list(block.content))
+    def walk(element: pf.Element) -> None:
+        if isinstance(element, pf.Div):
+            unknown.extend(c for c in element.classes if c not in KNOWN_CLASSES)
+            cls = next((c for c in element.classes if c in DIV_CLASS_TO_KIND), None)
+            if cls:
+                # Record the domain kind, not the authored class: `warnings` in
+                # the source is a `warning` everywhere downstream.
+                found.append((DIV_CLASS_TO_KIND[cls], pf.stringify(element).strip()))
+        # Leaf inlines carry no `content`; everything with children exposes it.
+        if hasattr(element, "content"):
+            for child in element.content:
+                if isinstance(child, pf.Element):
+                    walk(child)
 
-    walk(list(doc.content))
+    for block in doc.content:
+        walk(block)
+    if unknown:
+        raise ValueError(f"unmapped fenced-div class(es): {', '.join(sorted(set(unknown)))}")
     return found
 
 
