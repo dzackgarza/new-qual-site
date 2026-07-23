@@ -1,0 +1,22 @@
+[
+  {"start_line": 1, "end_line": 4, "destination": "wiki", "kind": "heading", "title": "Examples", "exam_term": null, "note": null},
+  {"start_line": 5, "end_line": 6, "destination": "wiki", "kind": "section", "title": "Point-Set", "exam_term": null, "note": null},
+  {"start_line": 7, "end_line": 15, "destination": "wiki", "kind": "definition", "title": "Topological Notions in Analysis", "exam_term": null, "note": null},
+  {"start_line": 16, "end_line": 35, "destination": "wiki", "kind": "example", "title": "Some useful examples of openness and closedness", "exam_term": null, "note": null},
+  {"start_line": 36, "end_line": 39, "destination": "wiki", "kind": "section", "title": "Common Spaces and Operations", "exam_term": null, "note": null},
+  {"start_line": 40, "end_line": 46, "destination": "wiki", "kind": "example", "title": "Nice spaces", "exam_term": null, "note": null},
+  {"start_line": 47, "end_line": 67, "destination": "wiki", "kind": "example", "title": "A bank of counterexamples", "exam_term": null, "note": null},
+  {"start_line": 68, "end_line": 70, "destination": "wiki", "kind": "remark", "title": null, "exam_term": null, "note": "TODO: Break these into separate examples and explain properties"},
+  {"start_line": 71, "end_line": 79, "destination": "wiki", "kind": "example", "title": "Non-Hausdorff spaces", "exam_term": null, "note": null},
+  {"start_line": 80, "end_line": 98, "destination": "wiki", "kind": "example", "title": "Constructed spaces", "exam_term": null, "note": null},
+  {"start_line": 99, "end_line": 115, "destination": "wiki", "kind": "fact", "title": "Operations", "exam_term": null, "note": null},
+  {"start_line": 116, "end_line": 118, "destination": "wiki", "kind": "section", "title": "Alternative Topologies", "exam_term": null, "note": null},
+  {"start_line": 119, "end_line": 127, "destination": "wiki", "kind": "example", "title": "Nonstandard topologies", "exam_term": null, "note": null},
+  {"start_line": 128, "end_line": 134, "destination": "wiki", "kind": "example", "title": "The cofinite topology", "exam_term": null, "note": null},
+  {"start_line": 135, "end_line": 138, "destination": "wiki", "kind": "proposition", "title": "Topology is discrete if and only if points are open", "exam_term": null, "note": null},
+  {"start_line": 139, "end_line": 147, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 148, "end_line": 157, "destination": "wiki", "kind": "example", "title": "The discrete topology", "exam_term": null, "note": null},
+  {"start_line": 158, "end_line": 166, "destination": "wiki", "kind": "example", "title": "The indiscrete topology", "exam_term": null, "note": null},
+  {"start_line": 167, "end_line": 169, "destination": "wiki", "kind": "section", "title": "Connectedness", "exam_term": null, "note": null},
+  {"start_line": 170, "end_line": 175, "destination": "wiki", "kind": "reference", "title": "Connectedness comparison table", "exam_term": null, "note": null}
+]

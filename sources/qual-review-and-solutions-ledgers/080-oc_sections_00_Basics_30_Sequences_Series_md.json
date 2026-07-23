@@ -1,0 +1,155 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 2,
+    "destination": "wiki",
+    "kind": "title",
+    "title": "Sequences and Series",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 3,
+    "end_line": 4,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Sequences",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 5,
+    "end_line": 11,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "The Cauchy condensation test",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 12,
+    "end_line": 25,
+    "destination": "wiki",
+    "kind": "proof",
+    "title": "showing a useful trick",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 26,
+    "end_line": 27,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Series",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 28,
+    "end_line": 40,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "p-tests",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 41,
+    "end_line": 48,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "Comparison Test",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 49,
+    "end_line": 52,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "Small Tails for Series of Functions",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 53,
+    "end_line": 56,
+    "destination": "wiki",
+    "kind": "corollary",
+    "title": "Term by Term Continuity Theorem",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 57,
+    "end_line": 60,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "Cauchy criterion for sums",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 61,
+    "end_line": 62,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Uniform Convergence",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 63,
+    "end_line": 66,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "Testing Uniform Convergence: The Sup Norm Test",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 67,
+    "end_line": 70,
+    "destination": "wiki",
+    "kind": "remark",
+    "title": "Negating the Sup Norm test",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 71,
+    "end_line": 79,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "$C(I)$ is complete",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 80,
+    "end_line": 106,
+    "destination": "wiki",
+    "kind": "proof",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 107,
+    "end_line": 110,
+    "destination": "wiki",
+    "kind": "remark",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 111,
+    "end_line": 116,
+    "destination": "wiki",
+    "kind": "theorem",
+    "title": "Weierstrass Approximation",
+    "exam_term": null,
+    "note": null
+  }
+]

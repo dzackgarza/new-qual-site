@@ -1,0 +1,83 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 2,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Schwarz Reflection",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 3,
+    "end_line": 4,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Schwarz",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 5,
+    "end_line": 21,
+    "destination": "wiki",
+    "kind": "theorem",
+    "title": "Schwarz Lemma",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 22,
+    "end_line": 42,
+    "destination": "wiki",
+    "kind": "proof",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 43,
+    "end_line": 47,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 48,
+    "end_line": 53,
+    "destination": "wiki",
+    "kind": "theorem",
+    "title": "Biholomorphisms of the disc",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 54,
+    "end_line": 58,
+    "destination": "wiki",
+    "kind": "proof",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 59,
+    "end_line": 66,
+    "destination": "wiki",
+    "kind": "theorem",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 67,
+    "end_line": 85,
+    "destination": "wiki",
+    "kind": "agenda",
+    "title": "Schwarz Lemma",
+    "exam_term": null,
+    "note": null
+  }
+]

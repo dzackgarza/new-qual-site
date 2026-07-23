@@ -1,0 +1,29 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 6,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Differentiability",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 7,
+    "end_line": 11,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "Lipschitz $\\iff$ differentiable with bounded derivative.",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 12,
+    "end_line": 19,
+    "destination": "wiki",
+    "kind": "theorem",
+    "title": "Term by Term Differentiability Theorem",
+    "exam_term": null,
+    "note": null
+  }
+]

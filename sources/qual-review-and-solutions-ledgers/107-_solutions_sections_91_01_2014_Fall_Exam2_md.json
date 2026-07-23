@@ -1,0 +1,7 @@
+[
+  {"start_line": 1, "end_line": 2, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 3, "end_line": 10, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2014", "note": null},
+  {"start_line": 11, "end_line": 22, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2014", "note": null},
+  {"start_line": 23, "end_line": 35, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2014", "note": null},
+  {"start_line": 36, "end_line": 40, "destination": "card", "kind": "problem", "title": "Weierstrass Approximation Theorem", "exam_term": "Fall 2014", "note": null}
+]

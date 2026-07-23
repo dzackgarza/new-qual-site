@@ -1,0 +1,13 @@
+---
+schema: qual/card@1
+id: P-66BHY
+kind: problem
+title: "- Let $P\\in \\syl_p(H)$ where $H\\normal G$ and show that $P\\intersect H\u2026"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+- Let $P\in \syl_p(H)$ where $H\normal G$ and show that $P\intersect H \in \syl_p(H)$.

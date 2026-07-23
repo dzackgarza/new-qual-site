@@ -1,0 +1,8 @@
+[
+  {"start_line": 1, "end_line": 2, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 3, "end_line": 17, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2018", "note": null},
+  {"start_line": 18, "end_line": 26, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2018", "note": null},
+  {"start_line": 27, "end_line": 48, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2018", "note": null},
+  {"start_line": 49, "end_line": 63, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2018", "note": null},
+  {"start_line": 64, "end_line": 72, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2018", "note": null}
+]

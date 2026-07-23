@@ -1,0 +1,13 @@
+---
+schema: qual/card@1
+id: P-I2KZL
+kind: problem
+title: "Prove that $f(z) = \\abs{z}^2$ has a derivative at $z=0$ and nowhere el\u2026"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations: []
+review: draft
+---
+Prove that $f(z) = \abs{z}^2$ has a derivative at $z=0$ and nowhere else.

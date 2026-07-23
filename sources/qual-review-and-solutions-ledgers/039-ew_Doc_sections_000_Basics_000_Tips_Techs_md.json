@@ -1,0 +1,19 @@
+[
+  {"start_line": 1, "end_line": 3, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 4, "end_line": 5, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 6, "end_line": 25, "destination": "wiki", "kind": "content", "title": null, "exam_term": null, "note": null},
+  {"start_line": 26, "end_line": 30, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 31, "end_line": 37, "destination": "wiki", "kind": "remark", "title": "Showing a function is constant", "exam_term": null, "note": null},
+  {"start_line": 38, "end_line": 45, "destination": "wiki", "kind": "fact", "title": null, "exam_term": null, "note": null},
+  {"start_line": 46, "end_line": 53, "destination": "wiki", "kind": "fact", "title": null, "exam_term": null, "note": null},
+  {"start_line": 54, "end_line": 57, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 58, "end_line": 90, "destination": "wiki", "kind": "fact", "title": "Some useful facts about basic complex algebra", "exam_term": null, "note": null},
+  {"start_line": 91, "end_line": 100, "destination": "wiki", "kind": "fact", "title": null, "exam_term": null, "note": null},
+  {"start_line": 101, "end_line": 105, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 106, "end_line": 127, "destination": "wiki", "kind": "fact", "title": null, "exam_term": null, "note": null},
+  {"start_line": 128, "end_line": 134, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 135, "end_line": 145, "destination": "wiki", "kind": "fact", "title": "Generalized Binomial Theorem", "exam_term": null, "note": null},
+  {"start_line": 146, "end_line": 177, "destination": "wiki", "kind": "fact", "title": "Some useful series", "exam_term": null, "note": null},
+  {"start_line": 178, "end_line": 186, "destination": "wiki", "kind": "fact", "title": null, "exam_term": null, "note": null},
+  {"start_line": 187, "end_line": 189, "destination": "wiki", "kind": "content", "title": null, "exam_term": null, "note": null}
+]

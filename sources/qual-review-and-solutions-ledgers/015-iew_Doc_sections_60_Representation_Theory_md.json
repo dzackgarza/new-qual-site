@@ -1,0 +1,6 @@
+[
+  {"start_line": 1, "end_line": 3, "destination": "wiki", "kind": "heading", "title": "Representation Theory", "exam_term": null, "note": null},
+  {"start_line": 4, "end_line": 11, "destination": "wiki", "kind": "theorem", "title": "Schur's Lemma", "exam_term": null, "note": null},
+  {"start_line": 12, "end_line": 18, "destination": "wiki", "kind": "theorem", "title": "Maschke's Theorem", "exam_term": null, "note": null},
+  {"start_line": 19, "end_line": 26, "destination": "wiki", "kind": "definition", "title": "Characters", "exam_term": null, "note": null}
+]

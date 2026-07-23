@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: P-URENL
+kind: problem
+title: "Evaluate $$\\displaystyle{ \\int_{0}^{\\infty}\\frac{x\\sin x}{x^2+a^2} \\,"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations: []
+review: draft
+---
+Evaluate $$\displaystyle{ \int_{0}^{\infty}\frac{x\sin x}{x^2+a^2} \,
+dx }.$$
+
+### Tie's Extra Questions: Fall 2009

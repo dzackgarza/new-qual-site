@@ -1,0 +1,8 @@
+[
+  {"start_line": 1, "end_line": 9, "destination": "wiki", "kind": "section", "title": "Appendix: Undergrad Material", "exam_term": null, "note": null},
+  {"start_line": 10, "end_line": 16, "destination": "wiki", "kind": "definition", "title": "limsup", "exam_term": null, "note": null},
+  {"start_line": 17, "end_line": 25, "destination": "wiki", "kind": "example", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 26, "end_line": 35, "destination": "wiki", "kind": "theorem", "title": "Bounded Convergence", "exam_term": null, "note": null},
+  {"start_line": 36, "end_line": 51, "destination": "wiki", "kind": "exposition", "title": null, "exam_term": null, "note": null},
+  {"start_line": 52, "end_line": 61, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null}
+]

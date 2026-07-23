@@ -1,0 +1,92 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 2,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Homology",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 3,
+    "end_line": 59,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Useful Facts",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 60,
+    "end_line": 86,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Known Homology",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 87,
+    "end_line": 176,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Mayer-Vietoris",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 177,
+    "end_line": 223,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "More Exact Sequences",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 224,
+    "end_line": 242,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Relative Homology",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 243,
+    "end_line": 244,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Exercises",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 245,
+    "end_line": 258,
+    "destination": "card",
+    "kind": "problem",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 259,
+    "end_line": 267,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 268,
+    "end_line": 269,
+    "destination": "wiki",
+    "kind": "trailer",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  }
+]

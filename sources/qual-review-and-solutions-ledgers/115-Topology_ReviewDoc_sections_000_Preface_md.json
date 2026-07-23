@@ -1,0 +1,15 @@
+[
+  {"start_line": 1, "end_line": 11, "destination": "wiki", "kind": "preface", "title": null, "exam_term": null, "note": null},
+  {"start_line": 12, "end_line": 24, "destination": "wiki", "kind": "notation-guide", "title": "Notation", "exam_term": null, "note": null},
+  {"start_line": 25, "end_line": 36, "destination": "wiki", "kind": "table", "title": null, "exam_term": null, "note": null},
+  {"start_line": 37, "end_line": 40, "destination": "wiki", "kind": "remark", "title": null, "exam_term": null, "note": null},
+  {"start_line": 41, "end_line": 49, "destination": "wiki", "kind": "remark", "title": "on direct sums vs direct products", "exam_term": null, "note": null},
+  {"start_line": 50, "end_line": 62, "destination": "wiki", "kind": "remark", "title": "on notation for free groups and free products", "exam_term": null, "note": null},
+  {"start_line": 63, "end_line": 75, "destination": "wiki", "kind": "remark", "title": "on notation for free abelian groups", "exam_term": null, "note": null},
+  {"start_line": 76, "end_line": 88, "destination": "wiki", "kind": "remark", "title": "on indexing conventions and list notation", "exam_term": null, "note": null},
+  {"start_line": 89, "end_line": 94, "destination": "wiki", "kind": "section+fact", "title": null, "exam_term": null, "note": null},
+  {"start_line": 95, "end_line": 99, "destination": "wiki", "kind": "proposition", "title": "Morphisms between groups finite and infinite groups", "exam_term": null, "note": null},
+  {"start_line": 100, "end_line": 110, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 111, "end_line": 115, "destination": "wiki", "kind": "remark", "title": "How to use this fact", "exam_term": null, "note": null},
+  {"start_line": 116, "end_line": 117, "destination": "wiki", "kind": "closing", "title": null, "exam_term": null, "note": null}
+]

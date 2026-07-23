@@ -1,0 +1,33 @@
+---
+schema: qual/card@1
+id: E-MNSQB
+kind: exercise
+title: "Let $(\\Omega,\\mcb)$ be a measurable space with a Borel $\\sigma\\dash$al\u2026"
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+:::{.exercise title="?"}
+Let $(\Omega,\mcb)$ be a measurable space with a Borel $\sigma\dash$algebra and $\mu_n: \mcb \to [0, \infty]$ be a $\sigma\dash$additive measure for each $n$.
+Show that the following map is again a $\sigma\dash$additive measure on $\mcb$:
+\[
+\mu(B) \da \sum_{n\geq 1} \mu_n(B)
+.\]
+:::
+
+:::{.solution}
+Apply Fubini-Tonelli to commute two sums:
+\[
+\mu\qty{\Union_{1\leq k \leq M} E_k}\da 
+&= \sum_{n\geq 1} \mu_n\qty{\Union_{1\leq k \leq M} E_k}\\
+&= \sum_{n\geq 1} \sum_{1\leq k \leq M} \mu_n\qty{E_k}\\
+&= \sum_{1\leq k \leq M}\sum_{n\geq 1} \mu_n\qty{E_k} \text{FT} \\
+&\da \sum_{1\leq k \leq M} \mu(E_k)
+.\]
+:::
+
+
+

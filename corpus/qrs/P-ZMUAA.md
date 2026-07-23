@@ -1,0 +1,14 @@
+---
+schema: qual/card@1
+id: P-ZMUAA
+kind: problem
+title: "Prove that $\\RR^2$ is not homeomorphic to $\\RR^n$ for $n > 2$."
+classification:
+  areas:
+  - topology
+  topics: []
+relations: []
+review: draft
+---
+Prove that $\RR^2$ is not homeomorphic to $\RR^n$ for $n > 2$.
+

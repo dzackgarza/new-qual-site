@@ -1,0 +1,38 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 246,
+    "destination": "wiki",
+    "kind": null,
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 247,
+    "end_line": 267,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "Applications of the class equation",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 268,
+    "end_line": 403,
+    "destination": "wiki",
+    "kind": null,
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 404,
+    "end_line": 408,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  }
+]

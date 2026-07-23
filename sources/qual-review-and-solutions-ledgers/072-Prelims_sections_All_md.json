@@ -1,0 +1,7 @@
+[
+  {"start_line": 1, "end_line": 6, "destination": "wiki", "kind": "preamble", "title": null, "exam_term": null, "note": null},
+  {"start_line": 7, "end_line": 13, "destination": "wiki", "kind": "notes", "title": null, "exam_term": "2017 Fall", "note": null},
+  {"start_line": 14, "end_line": 22, "destination": "wiki", "kind": "notes", "title": null, "exam_term": "2016 Fall", "note": null},
+  {"start_line": 23, "end_line": 28, "destination": "wiki", "kind": "notes", "title": null, "exam_term": "2015 Fall", "note": null},
+  {"start_line": 29, "end_line": 30, "destination": "wiki", "kind": "notes", "title": null, "exam_term": "2014 Fall", "note": null}
+]

@@ -1,0 +1,19 @@
+[
+  {"start_line": 1, "end_line": 82, "destination": "wiki", "kind": "section", "title": null, "exam_term": null, "note": null},
+  {"start_line": 83, "end_line": 84, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 85, "end_line": 87, "destination": "wiki", "kind": "proposition", "title": "Convergent Sums Have Small Tails", "exam_term": null, "note": null},
+  {"start_line": 88, "end_line": 94, "destination": "wiki", "kind": "theorem", "title": "Uniform Limit Theorem", "exam_term": null, "note": null},
+  {"start_line": 95, "end_line": 108, "destination": "wiki", "kind": "proof", "title": null, "exam_term": null, "note": null},
+  {"start_line": 109, "end_line": 112, "destination": "wiki", "kind": "proposition", "title": "Uniform Limits Commute with Integrals", "exam_term": null, "note": null},
+  {"start_line": 113, "end_line": 119, "destination": "wiki", "kind": "proposition", "title": "Weak $M\\dash$Test", "exam_term": null, "note": null},
+  {"start_line": 120, "end_line": 129, "destination": "wiki", "kind": "proposition", "title": "The Weierstrass $M\\dash$Test", "exam_term": null, "note": null},
+  {"start_line": 130, "end_line": 133, "destination": "wiki", "kind": "proposition", "title": "Borel Characterization of Measurable Sets", "exam_term": null, "note": null},
+  {"start_line": 134, "end_line": 139, "destination": "wiki", "kind": "proof", "title": "of Borel characterization", "exam_term": null, "note": null},
+  {"start_line": 140, "end_line": 147, "destination": "wiki", "kind": "theorem", "title": "Measurable sets can be approximated by open/closed/compact sets.", "exam_term": null, "note": null},
+  {"start_line": 148, "end_line": 163, "destination": "wiki", "kind": "proof", "title": "that measurable sets can be approximated", "exam_term": null, "note": null},
+  {"start_line": 164, "end_line": 166, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 167, "end_line": 180, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 181, "end_line": 200, "destination": "wiki", "kind": "proposition", "title": "Measurable Slices", "exam_term": null, "note": null},
+  {"start_line": 201, "end_line": 217, "destination": "wiki", "kind": "proof", "title": "of measurable slices", "exam_term": null, "note": null},
+  {"start_line": 218, "end_line": 218, "destination": "wiki", "kind": "blank", "title": null, "exam_term": null, "note": null}
+]

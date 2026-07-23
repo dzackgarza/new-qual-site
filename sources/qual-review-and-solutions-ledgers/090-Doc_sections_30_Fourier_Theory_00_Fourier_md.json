@@ -1,0 +1,21 @@
+[
+  {"start_line": 1, "end_line": 4, "destination": "wiki", "kind": "frontmatter", "title": null, "exam_term": null, "note": null},
+  {"start_line": 5, "end_line": 6, "destination": "wiki", "kind": "heading", "title": "Fourier Transform and Convolution", "exam_term": null, "note": null},
+  {"start_line": 7, "end_line": 8, "destination": "wiki", "kind": "heading", "title": "The Fourier Transform", "exam_term": null, "note": null},
+  {"start_line": 9, "end_line": 12, "destination": "wiki", "kind": "proposition", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 13, "end_line": 21, "destination": "wiki", "kind": "proposition", "title": "Riemann-Lebesgue: Fourier transforms have small tails.", "exam_term": null, "note": null},
+  {"start_line": 22, "end_line": 37, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 38, "end_line": 44, "destination": "wiki", "kind": "theorem", "title": "Fourier Inversion", "exam_term": null, "note": null},
+  {"start_line": 45, "end_line": 48, "destination": "wiki", "kind": "warnings", "title": null, "exam_term": null, "note": null},
+  {"start_line": 49, "end_line": 88, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 89, "end_line": 95, "destination": "wiki", "kind": "proposition", "title": "Eigenfunction of the Fourier transform", "exam_term": null, "note": null},
+  {"start_line": 96, "end_line": 97, "destination": "wiki", "kind": "heading", "title": "Approximate Identities", "exam_term": null, "note": null},
+  {"start_line": 98, "end_line": 104, "destination": "wiki", "kind": "example", "title": "of an approximation to the identity.", "exam_term": null, "note": null},
+  {"start_line": 105, "end_line": 111, "destination": "wiki", "kind": "theorem", "title": "Convolving against an approximate identity converges in $L^1$.", "exam_term": null, "note": null},
+  {"start_line": 112, "end_line": 132, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 133, "end_line": 139, "destination": "wiki", "kind": "theorem", "title": "Convolutions vanish at infinity", "exam_term": null, "note": null},
+  {"start_line": 140, "end_line": 161, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 162, "end_line": 168, "destination": "wiki", "kind": "proposition", "title": "Corollary of Young's inequality", "exam_term": null, "note": null},
+  {"start_line": 169, "end_line": 172, "destination": "wiki", "kind": "proposition", "title": "$L^1$ is closed under convolution.", "exam_term": null, "note": null},
+  {"start_line": 173, "end_line": 175, "destination": "wiki", "kind": "blank", "title": null, "exam_term": null, "note": null}
+]

@@ -1,0 +1,1190 @@
+[
+ {
+  "start_line": 1,
+  "end_line": 2,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "UGA Fall 2019 Problem Sets",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 3,
+  "end_line": 4,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set One",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 5,
+  "end_line": 6,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 7,
+  "end_line": 11,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 1.6.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 12,
+  "end_line": 16,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 1.6.4",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 17,
+  "end_line": 21,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.2.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 22,
+  "end_line": 25,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.2.12.b.",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 26,
+  "end_line": 31,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.4.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 32,
+  "end_line": 39,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.4.9).",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 40,
+  "end_line": 44,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.5.6",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 45,
+  "end_line": 50,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.5.9",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 51,
+  "end_line": 51,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 52,
+  "end_line": 150,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Sylow p-subgroups, 3-part problem with full solution"
+ },
+ {
+  "start_line": 151,
+  "end_line": 222,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Sylow p-subgroup correspondence, 2-part problem with full solution"
+ },
+ {
+  "start_line": 223,
+  "end_line": 312,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Conjugacy class divisibility, with full solution"
+ },
+ {
+  "start_line": 313,
+  "end_line": 367,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "S_5 conjugacy classes, with full solution"
+ },
+ {
+  "start_line": 368,
+  "end_line": 369,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Two",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 370,
+  "end_line": 371,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 372,
+  "end_line": 376,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.1.9",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 377,
+  "end_line": 388,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.1.10",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 389,
+  "end_line": 393,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.5.8",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 394,
+  "end_line": 397,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.6.4",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 398,
+  "end_line": 401,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.6.9",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 402,
+  "end_line": 405,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 1.9.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 406,
+  "end_line": 411,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 1.9.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 412,
+  "end_line": 412,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 413,
+  "end_line": 416,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Groups of order 14"
+ },
+ {
+  "start_line": 417,
+  "end_line": 421,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "p^3-groups and center"
+ },
+ {
+  "start_line": 422,
+  "end_line": 427,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Non-simple groups pq^k"
+ },
+ {
+  "start_line": 428,
+  "end_line": 431,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "S_4 solvability"
+ },
+ {
+  "start_line": 432,
+  "end_line": 433,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Three",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 434,
+  "end_line": 435,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 436,
+  "end_line": 439,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.7.10",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 440,
+  "end_line": 444,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.8.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 445,
+  "end_line": 448,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 2.8.9",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 449,
+  "end_line": 461,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.1.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 462,
+  "end_line": 465,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.1.8",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 466,
+  "end_line": 477,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.1.14",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 478,
+  "end_line": 482,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.1.16",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 483,
+  "end_line": 484,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 485,
+  "end_line": 495,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Ring homomorphisms from fields"
+ },
+ {
+  "start_line": 496,
+  "end_line": 501,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Z/nZ as direct sum of fields"
+ },
+ {
+  "start_line": 502,
+  "end_line": 507,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Non-invertible elements in maximal ideals"
+ },
+ {
+  "start_line": 508,
+  "end_line": 519,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Solvable groups of order 36"
+ },
+ {
+  "start_line": 520,
+  "end_line": 521,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Four",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 522,
+  "end_line": 523,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 524,
+  "end_line": 528,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.3.7",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 529,
+  "end_line": 539,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.3.8",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 540,
+  "end_line": 544,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.5.2",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 545,
+  "end_line": 548,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.5.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 549,
+  "end_line": 552,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.5.10",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 553,
+  "end_line": 557,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.6.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 558,
+  "end_line": 561,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.6.8",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 562,
+  "end_line": 563,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 564,
+  "end_line": 575,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Field homomorphisms from Q(alpha)"
+ },
+ {
+  "start_line": 576,
+  "end_line": 590,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Algebraic closure and splitting fields"
+ },
+ {
+  "start_line": 591,
+  "end_line": 605,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Finite-dimensional modules over fields"
+ },
+ {
+  "start_line": 606,
+  "end_line": 607,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Five",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 608,
+  "end_line": 609,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 610,
+  "end_line": 614,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.3.5",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 615,
+  "end_line": 624,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.3.12",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 625,
+  "end_line": 636,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.3.13",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 637,
+  "end_line": 650,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.4.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 651,
+  "end_line": 660,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.4.10 a/g/h",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 661,
+  "end_line": 665,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.6.11",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 666,
+  "end_line": 667,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 668,
+  "end_line": 673,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Galois extension normalcy and subgroup normality"
+ },
+ {
+  "start_line": 674,
+  "end_line": 681,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "D_8 Galois group with non-Galois intermediate extension"
+ },
+ {
+  "start_line": 682,
+  "end_line": 697,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Splitting field of x^3-7 over Q, R, F_13"
+ },
+ {
+  "start_line": 698,
+  "end_line": 699,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Six",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 700,
+  "end_line": 701,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 702,
+  "end_line": 706,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.4.11",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 707,
+  "end_line": 712,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.4.12",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 713,
+  "end_line": 720,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.8.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 721,
+  "end_line": 725,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.8.9",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 726,
+  "end_line": 730,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.9.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 731,
+  "end_line": 745,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 5.9.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 746,
+  "end_line": 747,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 748,
+  "end_line": 761,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Galois theory main theorem and zeta_43 automorphisms"
+ },
+ {
+  "start_line": 762,
+  "end_line": 774,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Splitting fields over finite fields"
+ },
+ {
+  "start_line": 775,
+  "end_line": 784,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Galois extensions in towers"
+ },
+ {
+  "start_line": 785,
+  "end_line": 786,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Seven",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 787,
+  "end_line": 788,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 789,
+  "end_line": 803,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.1.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 804,
+  "end_line": 813,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.1.5",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 814,
+  "end_line": 835,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.1.7",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 836,
+  "end_line": 847,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.1.12",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 848,
+  "end_line": 865,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.2.4",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 866,
+  "end_line": 872,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.2.8",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 873,
+  "end_line": 877,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.2.9",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 878,
+  "end_line": 879,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 880,
+  "end_line": 892,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Modules over PID, torsion modules"
+ },
+ {
+  "start_line": 893,
+  "end_line": 904,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Annihilators and prime ideals"
+ },
+ {
+  "start_line": 905,
+  "end_line": 910,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Principal ideal domains and irreducibles"
+ },
+ {
+  "start_line": 911,
+  "end_line": 912,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Eight",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 913,
+  "end_line": 914,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 915,
+  "end_line": 931,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.4.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 932,
+  "end_line": 938,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.4.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 939,
+  "end_line": 945,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.4.5",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 946,
+  "end_line": 953,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.4.9",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 954,
+  "end_line": 957,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.6.2",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 958,
+  "end_line": 967,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.6.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 968,
+  "end_line": 973,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 4.6.6",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 974,
+  "end_line": 975,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 976,
+  "end_line": 990,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Matrices over PID and modules"
+ },
+ {
+  "start_line": 991,
+  "end_line": 1005,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Structure theorem and finitely generated modules"
+ },
+ {
+  "start_line": 1006,
+  "end_line": 1019,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Torsion elements in modules"
+ },
+ {
+  "start_line": 1020,
+  "end_line": 1021,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Nine",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1022,
+  "end_line": 1023,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1024,
+  "end_line": 1035,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.1.3",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1036,
+  "end_line": 1048,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.1.5",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1049,
+  "end_line": 1053,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.1.7",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1054,
+  "end_line": 1059,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.2.2",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1060,
+  "end_line": 1094,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.2.4",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1095,
+  "end_line": 1109,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.2.5",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1110,
+  "end_line": 1111,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1112,
+  "end_line": 1122,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "UFD, PID, and non-PID examples"
+ },
+ {
+  "start_line": 1123,
+  "end_line": 1132,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Diagonalizable matrices with distinct eigenvalues"
+ },
+ {
+  "start_line": 1133,
+  "end_line": 1149,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Matrix rank and diagonalizability"
+ },
+ {
+  "start_line": 1150,
+  "end_line": 1151,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Problem Set Ten",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1152,
+  "end_line": 1153,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Exercises",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1154,
+  "end_line": 1158,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.3.1",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1159,
+  "end_line": 1163,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.3.5",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1164,
+  "end_line": 1168,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.4.4",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1169,
+  "end_line": 1182,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.4.8).",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1183,
+  "end_line": 1183,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.4.10",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1184,
+  "end_line": 1198,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.5.2",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1199,
+  "end_line": 1210,
+  "destination": "card",
+  "kind": "problem",
+  "title": "Hungerford 7.5.7",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1211,
+  "end_line": 1212,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Qual Problems",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1213,
+  "end_line": 1229,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Linear map from R^5, eigenvalues, fixed points"
+ },
+ {
+  "start_line": 1230,
+  "end_line": 1235,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Jordan form of all-ones matrix"
+ },
+ {
+  "start_line": 1236,
+  "end_line": 1247,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": null,
+  "note": "Jordan form and similarity for nilpotent transformations"
+ }
+]

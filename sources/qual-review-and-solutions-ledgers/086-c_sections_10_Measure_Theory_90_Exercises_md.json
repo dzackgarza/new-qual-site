@@ -1,0 +1,29 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 2,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 3,
+    "end_line": 6,
+    "destination": "card",
+    "kind": "problem",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 7,
+    "end_line": 9,
+    "destination": "card",
+    "kind": "problem",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  }
+]

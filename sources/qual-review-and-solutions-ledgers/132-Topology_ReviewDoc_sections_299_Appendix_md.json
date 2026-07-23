@@ -1,0 +1,11 @@
+[
+  {"start_line": 1, "end_line": 24, "destination": "wiki", "kind": "exposition", "title": "Appendix: Unsorted Stuff", "exam_term": null, "note": null},
+  {"start_line": 25, "end_line": 85, "destination": "wiki", "kind": "exposition", "title": "Cap and Cup Products", "exam_term": null, "note": null},
+  {"start_line": 86, "end_line": 99, "destination": "wiki", "kind": "exposition", "title": "The Long Exact Sequence of a Pair", "exam_term": null, "note": null},
+  {"start_line": 100, "end_line": 109, "destination": "wiki", "kind": "exposition", "title": "Tables", "exam_term": null, "note": null},
+  {"start_line": 110, "end_line": 118, "destination": "wiki", "kind": "facts", "title": "Homotopy Groups of Lie Groups", "exam_term": null, "note": null},
+  {"start_line": 119, "end_line": 145, "destination": "wiki", "kind": "facts", "title": "Higher Homotopy", "exam_term": null, "note": null},
+  {"start_line": 146, "end_line": 157, "destination": "wiki", "kind": "facts", "title": "Higher Homotopy Groups of the Sphere", "exam_term": null, "note": null},
+  {"start_line": 158, "end_line": 161, "destination": "wiki", "kind": "exposition", "title": "Misc", "exam_term": null, "note": null},
+  {"start_line": 162, "end_line": 168, "destination": "wiki", "kind": "exposition", "title": "Building a Moore Space", "exam_term": null, "note": null}
+]

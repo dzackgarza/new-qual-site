@@ -1,0 +1,56 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 4,
+    "destination": "wiki",
+    "kind": "frontmatter",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 5,
+    "end_line": 23,
+    "destination": "wiki",
+    "kind": "progress",
+    "title": "Progress",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 24,
+    "end_line": 31,
+    "destination": "wiki",
+    "kind": "syllabus",
+    "title": "Qualifying Exam Syllabus",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 32,
+    "end_line": 38,
+    "destination": "wiki",
+    "kind": "syllabus",
+    "title": "General Topology",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 39,
+    "end_line": 52,
+    "destination": "wiki",
+    "kind": "syllabus",
+    "title": "Algebraic Topology",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 53,
+    "end_line": 63,
+    "destination": "wiki",
+    "kind": "references",
+    "title": "References",
+    "exam_term": null,
+    "note": null
+  }
+]

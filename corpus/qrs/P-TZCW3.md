@@ -1,0 +1,20 @@
+---
+schema: qual/card@1
+id: P-TZCW3
+kind: problem
+title: "Prove the fundamental theorem of Algebra using"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations: []
+review: draft
+---
+Prove the fundamental theorem of Algebra using
+
+a.  
+Rouche's Theorem.
+
+b. 
+The maximum modulus principle.
+

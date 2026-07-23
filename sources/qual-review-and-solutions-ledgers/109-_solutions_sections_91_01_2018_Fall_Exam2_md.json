@@ -1,0 +1,47 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 2,
+    "destination": "wiki",
+    "kind": "section",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 3,
+    "end_line": 9,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall 2018",
+    "note": null
+  },
+  {
+    "start_line": 10,
+    "end_line": 13,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall 2018",
+    "note": null
+  },
+  {
+    "start_line": 14,
+    "end_line": 30,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall 2018",
+    "note": null
+  },
+  {
+    "start_line": 31,
+    "end_line": 34,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall 2018",
+    "note": null
+  }
+]

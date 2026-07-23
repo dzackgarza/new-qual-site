@@ -1,0 +1,20 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 3,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 4,
+    "end_line": 15,
+    "destination": "wiki",
+    "kind": "proposition",
+    "title": "Properties of the norm",
+    "exam_term": null,
+    "note": null
+  }
+]

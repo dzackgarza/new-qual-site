@@ -1,0 +1,15 @@
+[
+  {"start_line": 1, "end_line": 107, "destination": "wiki", "kind": "section", "title": null, "exam_term": null, "note": null},
+  {"start_line": 108, "end_line": 188, "destination": "wiki", "kind": "section", "title": "Definitions", "exam_term": null, "note": null},
+  {"start_line": 189, "end_line": 250, "destination": "wiki", "kind": "section", "title": "Matrix Groups", "exam_term": null, "note": null},
+  {"start_line": 251, "end_line": 326, "destination": "wiki", "kind": "section", "title": "Minimal / Characteristic Polynomials", "exam_term": null, "note": null},
+  {"start_line": 327, "end_line": 337, "destination": "wiki", "kind": "section", "title": "Finding Minimal Polynomials", "exam_term": null, "note": null},
+  {"start_line": 338, "end_line": 525, "destination": "wiki", "kind": "section", "title": "Other Canonical Forms", "exam_term": null, "note": null},
+  {"start_line": 526, "end_line": 604, "destination": "wiki", "kind": "section", "title": "Diagonalizability", "exam_term": null, "note": null},
+  {"start_line": 605, "end_line": 713, "destination": "wiki", "kind": "section", "title": "Matrix Counterexamples", "exam_term": null, "note": null},
+  {"start_line": 714, "end_line": 715, "destination": "wiki", "kind": "section", "title": "Exercises", "exam_term": null, "note": null},
+  {"start_line": 716, "end_line": 719, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 720, "end_line": 737, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 738, "end_line": 748, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 749, "end_line": 762, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null}
+]

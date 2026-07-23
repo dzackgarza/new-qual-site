@@ -1,0 +1,78 @@
+---
+schema: qual/card@1
+id: P-UKENP
+kind: problem
+title: "Let $f(x) = \\frac 1 x$."
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+Let $f(x) = \frac 1 x$.
+Show that $f$ is uniformly continuous on $(1, \infty)$ but not on $(0,\infty)$.
+
+:::{.concept}
+\envlist
+- Uniform continuity:
+\[  
+\forall \varepsilon>0, \exists \delta(\eps)>0 \quad\text{such that}\quad \abs{x-y}<\delta \implies \abs{f(x) - f(y)} < \eps
+.\]
+- Negating uniform continuity:
+  $\exists \eps > 0$ such that $\forall \delta(\eps)$ there exist $x, y$ such that $\abs{x-y} < \delta$ *and* $\abs{f(x) - f(y)} > \eps$.
+
+- Archimedean property: for all $x,y\in \RR$ there exists an $n \in \NN$ such that $nx>y$.
+  Take $x=\eps, y=1$, so $n\eps > 1$ and ${1\over n} < \eps$.
+:::
+
+:::{.strategy}
+1 is the only constant around, so try to use it for uniform continuity.
+To negate, find a bad $x$: since $1/x$ blows up near zero, go hunting for small $x$s!
+
+:::
+
+:::{.solution}
+
+- **Claim**: $f(x) = \frac 1 x$ is uniformly continuous on $(c, \infty)$ for any $c > 0$.
+  - Note that
+  $$
+  \abs{x}, \abs y > c > 0 \implies \abs{xy} = \abs{x}\abs{y} > c^2 \implies \frac{1}{\abs{xy}} < \frac 1 {c^{2}}
+  .$$
+
+  - Letting $\varepsilon$ be arbitrary, choose $\delta < \varepsilon c^2$.
+    - Note that $\delta$ does not depend on $x, y$.
+  - Then
+  \[
+  \abs{f(x) - f(y)}
+  &= \abs{\frac 1 x - \frac 1 y} \\
+  &= \frac{\abs{x-y}}{xy} \\
+  &\leq \frac{\delta}{xy} \\
+  &< \frac{\delta}{c^2} \\
+  &< \varepsilon
+  .\]
+
+- **Claim**: $f$ is *not* uniformly continuous when $c=0$.
+  - Take $\varepsilon < 1$, and let $\delta = \delta(\eps)$ be arbitrary.
+  - Let $x_n = \frac 1 n$ for $n\geq 1$.
+  - Choose $n$ large enough such that ${1\over n} < \delta$
+  - Then a computation:
+  \[
+  \abs{x_n - x_{n+1}} 
+  &= \frac 1 n - \frac 1 {n+1} \\
+  &= {1\over n(n+1) } \\
+  &< {1\over n} \\
+  &< \delta
+  ,\]
+  - Why this can be done: by the Archimedean property of $\RR$, for any $\delta\in \RR$, one can choose
+  choose $n$ such that $n\delta > 1$.
+  We've also used that $n+1 > 1$ so ${1\over n+1}< 1$
+  - Note that $f(x_n) = n$, so
+  \[
+  \abs{f(x_{n+1}) - f(x_{n})} = (n+1) - n = 1 > \varepsilon
+  .\]
+:::
+
+
+## Fall 2017 # 1 $\done$
+Let 

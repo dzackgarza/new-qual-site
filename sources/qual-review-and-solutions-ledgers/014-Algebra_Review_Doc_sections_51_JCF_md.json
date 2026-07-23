@@ -1,0 +1,20 @@
+[
+  {"start_line": 1, "end_line": 5, "destination": "wiki", "kind": "heading", "title": "Jordan Canonical Form", "exam_term": null, "note": null},
+  {"start_line": 6, "end_line": 20, "destination": "wiki", "kind": "remark", "title": "Sketch proof of existence of JCF", "exam_term": null, "note": null},
+  {"start_line": 21, "end_line": 22, "destination": "wiki", "kind": "heading", "title": "Facts", "exam_term": null, "note": null},
+  {"start_line": 23, "end_line": 25, "destination": "wiki", "kind": "fact", "title": null, "exam_term": null, "note": null},
+  {"start_line": 26, "end_line": 28, "destination": "wiki", "kind": "note", "title": null, "exam_term": null, "note": null},
+  {"start_line": 29, "end_line": 58, "destination": "wiki", "kind": "proposition", "title": "JCF Algorithm for generalized eigenvectors", "exam_term": null, "note": null},
+  {"start_line": 59, "end_line": 93, "destination": "wiki", "kind": "lemma", "title": "JCF from Minimal and Characteristic Polynomials", "exam_term": null, "note": null},
+  {"start_line": 94, "end_line": 113, "destination": "wiki", "kind": "example", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 114, "end_line": 118, "destination": "wiki", "kind": "warning", "title": null, "exam_term": null, "note": null},
+  {"start_line": 119, "end_line": 122, "destination": "wiki", "kind": "lemma", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 123, "end_line": 144, "destination": "wiki", "kind": "remark", "title": null, "exam_term": null, "note": null},
+  {"start_line": 145, "end_line": 162, "destination": "wiki", "kind": "proof", "title": "of generalized eigenspace decomposition", "exam_term": null, "note": null},
+  {"start_line": 163, "end_line": 165, "destination": "wiki", "kind": "note", "title": null, "exam_term": null, "note": null},
+  {"start_line": 166, "end_line": 167, "destination": "wiki", "kind": "heading", "title": "Exercises", "exam_term": null, "note": null},
+  {"start_line": 168, "end_line": 171, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 172, "end_line": 175, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 176, "end_line": 198, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 199, "end_line": 213, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null}
+]

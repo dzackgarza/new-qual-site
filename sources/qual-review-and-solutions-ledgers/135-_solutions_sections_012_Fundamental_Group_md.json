@@ -1,0 +1,128 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 2,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 3,
+    "end_line": 54,
+    "destination": "card",
+    "kind": "problem",
+    "title": "?",
+    "exam_term": "Spring '15",
+    "note": null
+  },
+  {
+    "start_line": 55,
+    "end_line": 73,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Spring '09, Spring '07, Fall '07, Fall '06",
+    "note": "Multiple appearances"
+  },
+  {
+    "start_line": 74,
+    "end_line": 80,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall '18",
+    "note": null
+  },
+  {
+    "start_line": 81,
+    "end_line": 85,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Spring '15",
+    "note": null
+  },
+  {
+    "start_line": 86,
+    "end_line": 90,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Spring '06",
+    "note": null
+  },
+  {
+    "start_line": 91,
+    "end_line": 94,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Spring '08",
+    "note": null
+  },
+  {
+    "start_line": 95,
+    "end_line": 99,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall '16",
+    "note": null
+  },
+  {
+    "start_line": 100,
+    "end_line": 105,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Spring '13",
+    "note": null
+  },
+  {
+    "start_line": 106,
+    "end_line": 108,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall '15",
+    "note": null
+  },
+  {
+    "start_line": 109,
+    "end_line": 127,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall '11",
+    "note": null
+  },
+  {
+    "start_line": 128,
+    "end_line": 133,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Fall '16",
+    "note": null
+  },
+  {
+    "start_line": 134,
+    "end_line": 146,
+    "destination": "card",
+    "kind": "problem",
+    "title": null,
+    "exam_term": "Spring '13",
+    "note": null
+  },
+  {
+    "start_line": 147,
+    "end_line": 159,
+    "destination": "card",
+    "kind": "problem",
+    "title": "Spring 2021, 4",
+    "exam_term": "Spring 2021",
+    "note": null
+  }
+]

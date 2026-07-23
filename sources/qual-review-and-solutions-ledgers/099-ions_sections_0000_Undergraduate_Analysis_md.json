@@ -1,0 +1,182 @@
+[
+ {
+  "start_line": 1,
+  "end_line": 2,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": null,
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 3,
+  "end_line": 69,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2018",
+  "note": null
+ },
+ {
+  "start_line": 70,
+  "end_line": 135,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2017",
+  "note": null
+ },
+ {
+  "start_line": 136,
+  "end_line": 175,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2014",
+  "note": null
+ },
+ {
+  "start_line": 176,
+  "end_line": 205,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2017",
+  "note": null
+ },
+ {
+  "start_line": 206,
+  "end_line": 250,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2014",
+  "note": null
+ },
+ {
+  "start_line": 251,
+  "end_line": 419,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2014",
+  "note": "Split from the span above, which lumped two problems and cut through :::{.proof title=\"of b\"}."
+ },
+ {
+  "start_line": 420,
+  "end_line": 519,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2019",
+  "note": null
+ },
+ {
+  "start_line": 520,
+  "end_line": 629,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2018",
+  "note": null
+ },
+ {
+  "start_line": 630,
+  "end_line": 702,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2017",
+  "note": null
+ },
+ {
+  "start_line": 703,
+  "end_line": 757,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2017",
+  "note": null
+ },
+ {
+  "start_line": 758,
+  "end_line": 823,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2016",
+  "note": null
+ },
+ {
+  "start_line": 824,
+  "end_line": 882,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2016",
+  "note": null
+ },
+ {
+  "start_line": 883,
+  "end_line": 942,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2016",
+  "note": null
+ },
+ {
+  "start_line": 943,
+  "end_line": 964,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2016",
+  "note": null
+ },
+ {
+  "start_line": 965,
+  "end_line": 973,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2015",
+  "note": null
+ },
+ {
+  "start_line": 974,
+  "end_line": 1029,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2020",
+  "note": null
+ },
+ {
+  "start_line": 1030,
+  "end_line": 1058,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Fall 2020",
+  "note": null
+ },
+ {
+  "start_line": 1059,
+  "end_line": 1060,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": null,
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 1061,
+  "end_line": 1092,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2014",
+  "note": null
+ }
+]

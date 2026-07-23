@@ -1,0 +1,155 @@
+---
+schema: qual/card@1
+id: P-ENAHU
+kind: problem
+title: "Let $R$ be a commutative ring."
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+Let $R$ be a commutative ring.
+
+a.
+Let $r \in R$. Show that the map
+\[
+r\bullet : R &\to R \\
+x &\mapsto r x
+.\]
+is an $R\dash$module endomorphism of $R$.
+
+b.
+We say that $r$ is a **zero-divisor** if $r\bullet$ is not injective.
+Show that if $r$ is a zero-divisor and $r \neq 0$, then the kernel and image of $R$ each consist of zero-divisors.
+
+c.
+Let $n \geq 2$ be an integer. Show: if $R$ has exactly $n$ zero-divisors, then $\#R \leq n^2$ .
+
+d.
+Show that up to isomorphism there are exactly two commutative rings $R$ with precisely 2 zero-divisors.
+
+> You may use without proof the following fact: every ring of order 4 is isomorphic to exactly one of the
+following:
+\[
+\frac{ \ZZ }{ 4\ZZ}, \quad
+\frac{ \frac{  \ZZ }{ 2\ZZ} [t]}{(t^2 + t + 1)}, \quad
+\frac{ \frac{ \ZZ }{ 2\ZZ} [t]}{ (t^2 - t)}, \quad
+\frac{ \frac{ \ZZ}{2\ZZ}[t]}{(t^2 )}
+.\]
+
+:::{.concept}
+\envlist
+
+- Testing module morphisms: $\phi(sm + n) = s\phi(m) + \phi(n)$.
+- First isomorphism theorem used for sizes: $R/\ker f \cong \im f$, so $\# R = \# \ker f \cdot \# \im f$.
+- See 1964 Annals "Properties of rings with a finite number of zero divisors"
+:::
+
+:::{.solution}
+\envlist
+
+:::{.proof title="of a"}
+\envlist
+
+- Let $\phi$ denote the map in question, it suffices to show that $\phi$ is $R\dash$linear, i.e. $\phi(s\vector x + \vector y) = s\phi(\vector x) + \phi(\vector y)$:
+\[
+\phi(s\vector x + \vector y) 
+&= r(s\vector x + \vector y) \\
+&= rs\vector x + r\vector y \\
+&= s(r\vector x) + (r\vector y) \\
+&= s\phi(\vector x) + \phi(\vector y)
+.\]
+:::
+
+:::{.proof title="of b"}
+Let $\phi_r(x) \da rx$ be the multiplication map.
+
+- Let $x\in \ker \phi_r \da \ts{x\in R \st rx = 0}$.
+
+- Since $R$ is commutative $0 = rx = xr$, and so $r\in \ker \phi_x$, so $\ker \phi_x \neq 0$ and $x$ is a zero divisor by definition.
+
+- Let $y\in \im \phi_r \da \theset{y \da rx \suchthat x\in R}$, we want to show $\ker \phi_y$ is nontrivial by producing some $z$ such that $yz=0$.
+  Write $y\da rx$ for some $x\in R$.
+
+- Since $r$ is a zero divisor, we can produce some $z\neq 0 \in \ker \phi_r$, so $rz = 0$. 
+
+- Now using that $R$ is commutative, we can compute
+\[
+yz = (rx)z = (xr)z = x (rz) = x(0) = 0
+,\]
+so $z\in \ker \phi_y$.
+:::
+
+:::{.proof title="of c"}
+\envlist
+
+- Let $Z \definedas \theset{z_i}_{i=1}^n$ be the set of $n$ zero divisors in $R$.
+- Let $\phi_i$ be the $n$ maps $x \mapsto z_i x$, and let $K_i = \ker \phi_i$ be the corresponding kernels.
+- Fix an $i$.
+- By (b), $K_i$ consists of zero divisors, so 
+\[
+\abs{K_i} \leq n < \infty \quad \text{for each } i
+.\]
+
+- Now consider $R/K_i \definedas \theset{r + K_i}$.
+- By the first isomorphism theorem, $R/K_i \cong \im \phi$, and by (b) every element in the image is a zero divisor, so 
+\[
+[R: K_i] = \abs{R/K_i} = \abs{\im \phi_i} \leq n 
+.\]
+
+- But then 
+\[
+\abs{R} = [R:K_i]\cdot \abs{K_i} \leq n\cdot n = n^2 
+.\]
+
+:::
+
+:::{.proof title="of d"}
+\envlist
+
+- By (c), if there are exactly 2 zero divisors then $\abs{R} \leq 4$.
+Since every element in a finite ring is either a unit or a zero divisor, and $\abs{R\units} \geq 2$ since $\pm 1$ are always units, we must have $\abs{R} = 4$.
+
+- Since the characteristic of a ring must divide its size, we have $\ch R = 2$ or $4$.
+
+- Using the hint, we see that only $\ZZ/(4)$ has characteristic 4, which has exactly 2 zero divisors given by $[0]_4$ and $[2]_4$.
+
+- If $R$ has characteristic 2, we can check the other 3 possibilities.
+
+- We can write $\ZZ/(2)[t]/(t^2) = \theset{a + bt \suchthat a,b\in \ZZ/(2)}$, and checking the multiplication table we have
+\[
+\begin{array}{c|cccc}
+			& 0 & 1 	& t & 1+t 	\\ \hline
+0 		& 0 & 0 	& 0 & 0   	\\ 
+1 		& 0 & 1 	& t & 1+t 	\\ 
+t 		& 0 & t 	& \mathbf{0} & t   	\\ 
+1 + t & 0 & 1+t & t & 1   	\\ 
+\end{array}
+,\]
+
+  and so we find that $t, 0$ are the zero divisors.
+
+- In $\ZZ/(2)[t]/(t^2 - t)$, we can check that $t^2 = t \implies t t^2 = t^2 \implies t(t^2 + 1) = 0 \implies t(t+1) = 0$, so both $t$ and $t+1$ are zero divisors, along with zero, so this is not a possibility.
+
+- Similarly, in $\ZZ/(2)[t]/(t^2 + t + 1)$, we can check the bottom-right corner of the multiplication table to find
+\[
+\left[\begin{array}{c|cc}
+	& t 	& 1 +t \\ \hline
+t & 1+t & 1 \\
+t & 1 	& t \\
+\end{array}\right]
+,\]
+
+  and so this ring only has one zero divisor.
+
+- Thus the only possibilities are:
+\[
+R &\cong \ZZ/(4) \\
+R &\cong \ZZ/(2)[t] / (t^2)
+.\]
+
+:::
+
+:::

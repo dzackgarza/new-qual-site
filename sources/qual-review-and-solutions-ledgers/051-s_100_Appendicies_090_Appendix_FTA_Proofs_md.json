@@ -1,0 +1,22 @@
+[
+  {"start_line": 1, "end_line": 6, "destination": "wiki", "kind": "heading", "title": "Unsorted Theorems", "exam_term": null, "note": null},
+  {"start_line": 7, "end_line": 12, "destination": "wiki", "kind": "theorem", "title": "Riemann's Removable Singularity Theorem", "exam_term": null, "note": null},
+  {"start_line": 13, "end_line": 18, "destination": "wiki", "kind": "theorem", "title": "Little Picard", "exam_term": null, "note": null},
+  {"start_line": 19, "end_line": 22, "destination": "wiki", "kind": "corollary", "title": null, "exam_term": null, "note": null},
+  {"start_line": 23, "end_line": 27, "destination": "wiki", "kind": "proof", "title": null, "exam_term": null, "note": null},
+  {"start_line": 28, "end_line": 29, "destination": "wiki", "kind": "heading", "title": "Morera", "exam_term": null, "note": null},
+  {"start_line": 30, "end_line": 41, "destination": "card", "kind": "exercise", "title": "Bounded Complex Analytic Functions form a Banach Space", "exam_term": null, "note": null},
+  {"start_line": 42, "end_line": 43, "destination": "wiki", "kind": "heading", "title": "Proofs of the Fundamental Theorem of Algebra", "exam_term": null, "note": null},
+  {"start_line": 44, "end_line": 45, "destination": "wiki", "kind": "heading", "title": "Argument Principle", "exam_term": null, "note": null},
+  {"start_line": 46, "end_line": 60, "destination": "wiki", "kind": "proof", "title": "using the argument principle", "exam_term": null, "note": null},
+  {"start_line": 61, "end_line": 62, "destination": "wiki", "kind": "heading", "title": "Rouche's Theorem", "exam_term": null, "note": null},
+  {"start_line": 63, "end_line": 89, "destination": "wiki", "kind": "proof", "title": "using Rouche's theorem", "exam_term": null, "note": null},
+  {"start_line": 90, "end_line": 91, "destination": "wiki", "kind": "heading", "title": "Liouville's Theorem", "exam_term": null, "note": null},
+  {"start_line": 92, "end_line": 109, "destination": "wiki", "kind": "proof", "title": "using Liouville's theorem", "exam_term": null, "note": null},
+  {"start_line": 110, "end_line": 111, "destination": "wiki", "kind": "heading", "title": "Open Mapping Theorem", "exam_term": null, "note": null},
+  {"start_line": 112, "end_line": 127, "destination": "wiki", "kind": "proof", "title": "using the Open Mapping theorem", "exam_term": null, "note": null},
+  {"start_line": 128, "end_line": 130, "destination": "wiki", "kind": "heading", "title": "Generalized Liouville", "exam_term": null, "note": null},
+  {"start_line": 131, "end_line": 136, "destination": "wiki", "kind": "theorem", "title": "Generalized Liouville", "exam_term": null, "note": null},
+  {"start_line": 137, "end_line": 146, "destination": "wiki", "kind": "lemma", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 147, "end_line": 155, "destination": "wiki", "kind": "proof", "title": "of FTA, using Generalized Liouville", "exam_term": null, "note": null}
+]

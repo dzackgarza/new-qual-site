@@ -1,0 +1,74 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 16,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Integrals",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 17,
+    "end_line": 29,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 30,
+    "end_line": 42,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 43,
+    "end_line": 56,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 57,
+    "end_line": 72,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "Trigonometric functions",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 73,
+    "end_line": 75,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Branch Cuts",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 76,
+    "end_line": 87,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 88,
+    "end_line": 103,
+    "destination": "card",
+    "kind": "exercise",
+    "title": "?",
+    "exam_term": null,
+    "note": null
+  }
+]

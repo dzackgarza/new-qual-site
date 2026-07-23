@@ -1,0 +1,111 @@
+---
+schema: qual/card@1
+id: P-AC6RV
+kind: problem
+title: "a."
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+a.
+Use the Class Equation (equivalently, the conjugation action of a group on itself) to prove that any $p\dash$group (a group whose order is a positive power of a prime integer $p$) has a nontrivial center.
+
+b.
+Prove that any group of order $p^2$ (where $p$ is prime) is abelian.
+
+c.
+Prove that any group of order $5^2 \cdot 7^2$ is abelian.
+
+d.
+Write down exactly one representative in each isomorphism class of groups of order $5^2 \cdot 7^2$.
+
+:::{.concept}
+\envlist
+
+- Centralizer: $C_G(x) = \theset{g\in G \suchthat [gx] = 1}$.
+- Class Equation: $\abs{G} = \abs{Z(G)} + \sum [G: C_G(x_i)]$
+- $G/Z(G)$ cyclic $\iff G$ is abelian.
+  \[
+  G/Z(G) = \generators{xZ} 
+  &\iff g\in G \implies gZ = x^mZ \\
+  &\iff g(x^m)\inv \in Z \\
+  &\iff g = x^m z \qtext{for some}z\in Z\\
+  &\implies gh = x^mz_1 x^n z_2 = x^n z_2 x^m z_1 = hg
+  .\]
+
+- Every group of order $p^2$ is abelian.
+- Classification of finite abelian groups.
+
+:::
+
+:::{.solution}
+\envlist
+
+:::{.proof title="of a"}
+Strategy: get $p$ to divide $\abs{Z(G)}$.
+
+- Apply the class equation:
+\[
+\abs{G} = \abs{Z(G)} + \sum [G: C_G(x_i)]
+.\]
+
+- Since $C_G(x_i) \leq G$ and $\abs{G} = p^k$, by Lagrange $\abs{C_G(x_i)} = p^\ell$ for some $0\leq \ell \leq k$.
+- Since $\abs{G} = p^k$ for some $k$ and $Z(G), C_G(x_i) \leq G$ are subgroups, their orders are powers of $p$.
+- Use $$[G: C_G(x_i)] = 1 \iff C_G(x_i) = G \iff \theset{g\in G\suchthat gx_ig\inv = x_i} = G \iff x_i \in Z(G).$$
+  - Thus every index appearing in the sum is greater than 1, and thus equal to $p^{\ell_i}$ for some $1\leq \ell_i \leq k$
+  - So $p$ divides every term in the sum
+
+- Rearrange 
+\[
+\abs{G} -  \sum [G: C_G(x_i)]
+= \abs{Z(G)} 
+.\]
+
+- $p$ divides both terms on the LHS, so must divide the RHS, so $\abs{Z(G)} \geq p$.
+
+
+:::
+
+:::{.proof title="of b"}
+Strategy: examine $\abs{G/Z(G)}$ by cases.
+
+- $1$: Then $G = Z(G)$ and $G$ is abelian.
+- $p$: Then $G/Z(G)$ is cyclic so $G$ is abelian
+- $p^2$: Not possible, since $\abs {Z(G)} > 1$ by (a).
+
+:::
+
+:::{.proof title="of c"}
+\envlist 
+
+- By Sylow
+
+  - $n_5 \divides 7^2,\quad n_5\cong 1\mod 5 \implies n_5\in\theset{1, 7, 49}\setminus\theset{7, 49} = \theset{1} \implies n_5 = 1$
+  - $n_7 \divides 5^2, \quad n_7 \cong 1 \mod 7 \implies n_7 \in \theset{1, 5, 25}\setminus\theset{5, 25} =\theset{1} \implies n_7 = 1$
+
+- By recognition of direct products, $G = S_5 \cross S_7$
+  - By above, $S_5, S_7\normal G$
+  - Check $S_5\intersect S_7 = \theset{e}$ since they have coprime order.
+  - Check $S_5S_7 = G$ since $\abs{S_5 S_7} = 5^2 7^2 = \abs{G}$
+
+- By (b), $S_5, S_7$ are abelian since they are groups of order $p^2$
+- The direct product of abelian groups is abelian.
+
+:::
+
+:::{.proof title="of d"}
+\envlist
+
+- $\ZZ_{5^2} \cross \ZZ_{7^2}$
+- $\ZZ_{5}^2 \cross \ZZ_{7^2}$
+- $\ZZ_{5^2} \cross \ZZ_{7}^2$
+- $\ZZ_{5}^2 \cross \ZZ_{7}^2$
+
+:::
+
+:::
+
+

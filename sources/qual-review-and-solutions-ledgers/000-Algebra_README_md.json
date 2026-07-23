@@ -1,0 +1,12 @@
+[
+  {"start_line": 1, "end_line": 4, "destination": "wiki", "kind": "frontmatter", "title": null, "exam_term": null, "note": null},
+  {"start_line": 5, "end_line": 26, "destination": "wiki", "kind": "tracking", "title": null, "exam_term": null, "note": "Exam status table"},
+  {"start_line": 27, "end_line": 29, "destination": "wiki", "kind": "heading", "title": "Syllabus", "exam_term": null, "note": null},
+  {"start_line": 30, "end_line": 57, "destination": "wiki", "kind": "section", "title": "Group Theory", "exam_term": null, "note": null},
+  {"start_line": 58, "end_line": 79, "destination": "wiki", "kind": "section", "title": "Linear Algebra", "exam_term": null, "note": null},
+  {"start_line": 80, "end_line": 88, "destination": "wiki", "kind": "section", "title": "Foundations", "exam_term": null, "note": null},
+  {"start_line": 89, "end_line": 106, "destination": "wiki", "kind": "section", "title": "Rings and Modules", "exam_term": null, "note": null},
+  {"start_line": 107, "end_line": 120, "destination": "wiki", "kind": "section", "title": "Field Theory", "exam_term": null, "note": null},
+  {"start_line": 121, "end_line": 125, "destination": "wiki", "kind": "note", "title": null, "exam_term": null, "note": "Student responsibilities"},
+  {"start_line": 126, "end_line": 135, "destination": "wiki", "kind": "section", "title": "References", "exam_term": null, "note": null}
+]

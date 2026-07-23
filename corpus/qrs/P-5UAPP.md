@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: P-5UAPP
+kind: problem
+title: "Let $S$ be the closed orientable surface of genus 2 and let $C$ be the\u2026"
+classification:
+  areas:
+  - topology
+  topics: []
+relations: []
+review: draft
+---
+Let $S$ be the closed orientable surface of genus 2 and let $C$ be the commutator subgroup of $\pi_1 (S, \ast)$. Let $\tilde S$ be the cover corresponding to $C$. 
+Is the covering map $\tilde S \to S$ regular? 
+
+> The term "normal" is sometimes used as a synonym for regular in this context.
+
+What is the group of deck transformations?
+
+Give an example of a nontrivial element of $\pi_1 (S, \ast)$ which lifts to a trivial deck transformation.
+

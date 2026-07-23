@@ -1,0 +1,9 @@
+[
+  {"start_line": 1, "end_line": 2, "destination": "wiki", "kind": "heading", "title": "$L^2$ and Fourier Analysis", "exam_term": null, "note": null},
+  {"start_line": 3, "end_line": 82, "destination": "card", "kind": "problem", "title": null, "exam_term": "Spring 2020", "note": null},
+  {"start_line": 83, "end_line": 225, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2017", "note": null},
+  {"start_line": 226, "end_line": 233, "destination": "card", "kind": "problem", "title": null, "exam_term": "Spring 2017", "note": null},
+  {"start_line": 234, "end_line": 242, "destination": "card", "kind": "problem", "title": null, "exam_term": "Spring 2015", "note": null},
+  {"start_line": 243, "end_line": 255, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2014", "note": null},
+  {"start_line": 256, "end_line": 282, "destination": "card", "kind": "problem", "title": null, "exam_term": "Fall 2020", "note": null}
+]

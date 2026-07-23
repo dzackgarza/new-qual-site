@@ -1,0 +1,173 @@
+[
+ {
+  "start_line": 1,
+  "end_line": 2,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Complex Arithmetic",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 3,
+  "end_line": 14,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 15,
+  "end_line": 21,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 22,
+  "end_line": 29,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 30,
+  "end_line": 44,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 45,
+  "end_line": 59,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 60,
+  "end_line": 72,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 73,
+  "end_line": 80,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 81,
+  "end_line": 81,
+  "destination": "wiki",
+  "kind": "heading",
+  "title": "Holomorphicity",
+  "exam_term": null,
+  "note": null
+ },
+ {
+  "start_line": 82,
+  "end_line": 84,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 85,
+  "end_line": 96,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 97,
+  "end_line": 100,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 2020",
+  "note": null
+ },
+ {
+  "start_line": 101,
+  "end_line": 113,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 20202",
+  "note": null
+ },
+ {
+  "start_line": 114,
+  "end_line": 132,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 20202",
+  "note": null
+ },
+ {
+  "start_line": 133,
+  "end_line": 138,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 20202",
+  "note": null
+ },
+ {
+  "start_line": 139,
+  "end_line": 146,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 20202",
+  "note": null
+ },
+ {
+  "start_line": 147,
+  "end_line": 151,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 20202",
+  "note": null
+ },
+ {
+  "start_line": 152,
+  "end_line": 160,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 20202",
+  "note": null
+ },
+ {
+  "start_line": 161,
+  "end_line": 173,
+  "destination": "card",
+  "kind": "problem",
+  "title": null,
+  "exam_term": "Spring 20202",
+  "note": null
+ }
+]

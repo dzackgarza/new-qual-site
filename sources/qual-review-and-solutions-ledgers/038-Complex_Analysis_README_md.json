@@ -1,0 +1,74 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 4,
+    "destination": "wiki",
+    "kind": "wiki",
+    "title": null,
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 5,
+    "end_line": 23,
+    "destination": "wiki",
+    "kind": "wiki",
+    "title": "Progress",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 24,
+    "end_line": 28,
+    "destination": "wiki",
+    "kind": "wiki",
+    "title": "Qualifying Exam Syllabus",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 29,
+    "end_line": 42,
+    "destination": "wiki",
+    "kind": "wiki",
+    "title": "Calculus and Undergraduate Analysis",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 43,
+    "end_line": 52,
+    "destination": "wiki",
+    "kind": "wiki",
+    "title": "Preliminary Topics in Complex Analysis",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 53,
+    "end_line": 79,
+    "destination": "wiki",
+    "kind": "wiki",
+    "title": "Cauchy's Theorem and its consequences",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 80,
+    "end_line": 89,
+    "destination": "wiki",
+    "kind": "wiki",
+    "title": "Conformal Mapping",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 90,
+    "end_line": 101,
+    "destination": "wiki",
+    "kind": "wiki",
+    "title": "References",
+    "exam_term": null,
+    "note": null
+  }
+]

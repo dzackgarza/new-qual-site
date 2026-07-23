@@ -1,0 +1,8 @@
+[
+  {"start_line": 1, "end_line": 4, "destination": "wiki", "kind": "frontmatter", "title": null, "exam_term": null, "note": null},
+  {"start_line": 5, "end_line": 6, "destination": "wiki", "kind": "heading", "title": null, "exam_term": null, "note": null},
+  {"start_line": 7, "end_line": 10, "destination": "wiki", "kind": "lemma", "title": "Function discontinuous on the rationals", "exam_term": null, "note": null},
+  {"start_line": 11, "end_line": 15, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 16, "end_line": 19, "destination": "wiki", "kind": "proposition", "title": "No functions discontinuous on the irrationals", "exam_term": null, "note": null},
+  {"start_line": 20, "end_line": 24, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null}
+]

@@ -1,0 +1,9 @@
+[
+  {"start_line": 1, "end_line": 2, "destination": "wiki", "kind": "heading", "title": "Counterexamples", "exam_term": null, "note": null},
+  {"start_line": 3, "end_line": 4, "destination": "wiki", "kind": "heading", "title": "Non-integrable functions", "exam_term": null, "note": null},
+  {"start_line": 5, "end_line": 15, "destination": "wiki", "kind": "example", "title": "Examples of integrable functions", "exam_term": null, "note": null},
+  {"start_line": 16, "end_line": 26, "destination": "wiki", "kind": "example", "title": "Examples of non-integrable functions", "exam_term": null, "note": null},
+  {"start_line": 27, "end_line": 44, "destination": "wiki", "kind": "proposition", "title": "a.e. convergence never implies $L^p$ convergence", "exam_term": null, "note": null},
+  {"start_line": 45, "end_line": 80, "destination": "wiki", "kind": "proposition", "title": "The four big counterexamples in convergence", "exam_term": null, "note": null},
+  {"start_line": 81, "end_line": 88, "destination": "wiki", "kind": "proposition", "title": "Functional analytic properties of $L^1$ and $L^2$", "exam_term": null, "note": null}
+]

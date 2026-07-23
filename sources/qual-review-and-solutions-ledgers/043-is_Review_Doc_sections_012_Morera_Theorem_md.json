@@ -1,0 +1,14 @@
+[
+  {"start_line": 1, "end_line": 2, "destination": "wiki", "kind": "heading", "title": "Morera's Theorem", "exam_term": null, "note": null},
+  {"start_line": 3, "end_line": 6, "destination": "wiki", "kind": "theorem", "title": "Morera's Theorem", "exam_term": null, "note": null},
+  {"start_line": 7, "end_line": 10, "destination": "wiki", "kind": "slogan", "title": null, "exam_term": null, "note": null},
+  {"start_line": 11, "end_line": 14, "destination": "wiki", "kind": "corollary", "title": "Sufficient condition for a sequence to converge to a holomorphic function", "exam_term": null, "note": null},
+  {"start_line": 15, "end_line": 18, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 19, "end_line": 22, "destination": "wiki", "kind": "remark", "title": null, "exam_term": null, "note": null},
+  {"start_line": 23, "end_line": 27, "destination": "wiki", "kind": "heading", "title": "Symmetric Regions", "exam_term": null, "note": null},
+  {"start_line": 28, "end_line": 43, "destination": "wiki", "kind": "theorem", "title": "Symmetry Principle", "exam_term": null, "note": null},
+  {"start_line": 44, "end_line": 47, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 48, "end_line": 51, "destination": "wiki", "kind": "theorem", "title": "Schwarz Reflection ", "exam_term": null, "note": null},
+  {"start_line": 52, "end_line": 55, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 56, "end_line": 59, "destination": "wiki", "kind": "remark", "title": null, "exam_term": null, "note": null}
+]

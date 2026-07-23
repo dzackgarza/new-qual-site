@@ -1,0 +1,74 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 11,
+    "destination": "wiki",
+    "kind": "remark",
+    "title": null,
+    "exam_term": null,
+    "note": "Title and author's introductory remarks on document structure"
+  },
+  {
+    "start_line": 12,
+    "end_line": 20,
+    "destination": "wiki",
+    "kind": "remark",
+    "title": null,
+    "exam_term": null,
+    "note": "Adapted remark on exam preparation expectations from Roy Smith"
+  },
+  {
+    "start_line": 21,
+    "end_line": 31,
+    "destination": "wiki",
+    "kind": "reference",
+    "title": null,
+    "exam_term": null,
+    "note": "Bibliography and general references"
+  },
+  {
+    "start_line": 32,
+    "end_line": 93,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Group Theory",
+    "exam_term": null,
+    "note": "Topic outline for group theory with references and curriculum notes"
+  },
+  {
+    "start_line": 94,
+    "end_line": 111,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Linear Algebra",
+    "exam_term": null,
+    "note": "Topic outline for linear algebra"
+  },
+  {
+    "start_line": 112,
+    "end_line": 186,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Rings",
+    "exam_term": null,
+    "note": "Topic outline for ring theory with references and detailed content notes"
+  },
+  {
+    "start_line": 187,
+    "end_line": 208,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Modules",
+    "exam_term": null,
+    "note": "Topic outline for modules over PIDs with references"
+  },
+  {
+    "start_line": 209,
+    "end_line": 229,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Field Theory",
+    "exam_term": null,
+    "note": "Topic outline for field theory"
+  }
+]

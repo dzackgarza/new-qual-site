@@ -1,0 +1,10 @@
+[
+  {"start_line": 1, "end_line": 4, "destination": "wiki", "kind": "frontmatter", "title": null, "exam_term": null, "note": null},
+  {"start_line": 5, "end_line": 5, "destination": "wiki", "kind": "heading", "title": "Commuting Limiting Operations", "exam_term": null, "note": null},
+  {"start_line": 6, "end_line": 11, "destination": "wiki", "kind": "proposition", "title": "Limits of bounded functions need not be bounded", "exam_term": null, "note": null},
+  {"start_line": 12, "end_line": 18, "destination": "wiki", "kind": "proposition", "title": "Limits of continuous functions need not be continuous", "exam_term": null, "note": null},
+  {"start_line": 19, "end_line": 26, "destination": "wiki", "kind": "proposition", "title": "Limits of differentiable functions need not be differentiable", "exam_term": null, "note": null},
+  {"start_line": 27, "end_line": 34, "destination": "wiki", "kind": "example", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 35, "end_line": 46, "destination": "wiki", "kind": "example", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 47, "end_line": 53, "destination": "wiki", "kind": "proposition", "title": "?", "exam_term": null, "note": null}
+]

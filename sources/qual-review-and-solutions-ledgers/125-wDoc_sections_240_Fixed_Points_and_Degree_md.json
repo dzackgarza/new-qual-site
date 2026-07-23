@@ -1,0 +1,11 @@
+[
+  {"start_line": 1, "end_line": 2, "destination": "wiki", "kind": "heading", "title": "Fixed Points and Degree Theory", "exam_term": null, "note": null},
+  {"start_line": 3, "end_line": 30, "destination": "wiki", "kind": "fact", "title": "Useful properties of the degree of a map between spheres", "exam_term": null, "note": null},
+  {"start_line": 31, "end_line": 55, "destination": "card", "kind": "exercise", "title": "No fixed points implies homotopic to antipodal", "exam_term": null, "note": null},
+  {"start_line": 56, "end_line": 70, "destination": "card", "kind": "exercise", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 71, "end_line": 79, "destination": "wiki", "kind": "theorem", "title": "Lefschetz Fixed Point", "exam_term": null, "note": null},
+  {"start_line": 80, "end_line": 83, "destination": "wiki", "kind": "theorem", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 84, "end_line": 88, "destination": "wiki", "kind": "proof", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 89, "end_line": 92, "destination": "wiki", "kind": "theorem", "title": "Hairy Ball", "exam_term": null, "note": null},
+  {"start_line": 93, "end_line": 95, "destination": "wiki", "kind": "theorem", "title": "Borsuk-Ulam", "exam_term": null, "note": null}
+]

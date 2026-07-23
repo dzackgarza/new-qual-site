@@ -1,0 +1,13 @@
+---
+schema: qual/card@1
+id: P-Y6Y6V
+kind: problem
+title: "- Does diagonalizable imply invertible? The converse?"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+- Does diagonalizable imply invertible? The converse?

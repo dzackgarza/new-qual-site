@@ -1,0 +1,12 @@
+[
+  {"start_line": 1, "end_line": 2, "destination": "wiki", "kind": "section", "title": null, "exam_term": null, "note": null},
+  {"start_line": 3, "end_line": 42, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null},
+  {"start_line": 43, "end_line": 65, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null},
+  {"start_line": 66, "end_line": 88, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null},
+  {"start_line": 89, "end_line": 182, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null},
+  {"start_line": 183, "end_line": 210, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null},
+  {"start_line": 211, "end_line": 333, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null},
+  {"start_line": 334, "end_line": 362, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null},
+  {"start_line": 363, "end_line": 403, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null},
+  {"start_line": 404, "end_line": 494, "destination": "card", "kind": "problem", "title": null, "exam_term": "Summer 2003", "note": null}
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "start_line": 1,
+    "end_line": 26,
+    "destination": "wiki",
+    "kind": "introduction",
+    "title": "Progress",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 27,
+    "end_line": 28,
+    "destination": "wiki",
+    "kind": "heading",
+    "title": "Qualifying Exam Syllabus",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 29,
+    "end_line": 52,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Undergraduate Analysis",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 53,
+    "end_line": 78,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Measure and Integration",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 79,
+    "end_line": 94,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Function Spaces",
+    "exam_term": null,
+    "note": null
+  },
+  {
+    "start_line": 95,
+    "end_line": 115,
+    "destination": "wiki",
+    "kind": "section",
+    "title": "Hilbert space and $L^2$ spaces:",
+    "exam_term": null,
+    "note": null
+  }
+]

@@ -1,0 +1,42 @@
+---
+schema: qual/card@1
+id: P-VM7CY
+kind: problem
+title: "Define a family $\\mct$ of subsets of $\\RR$ by saying that $A \\in T$ is\u2026"
+classification:
+  areas:
+  - topology
+  topics: []
+relations: []
+review: draft
+---
+:::{.problem title="?"}
+Define a family $\mct$ of subsets of $\RR$ by saying that $A \in T$ is $\iff A = \emptyset$ or $\RR \setminus A$ is a finite set. 
+
+Prove that $\mct$ is a topology on $\RR$, and that $\RR$ is compact with respect to this topology.
+
+
+:::
+
+
+:::{.concept}
+\envlist
+- This is precisely the cofinite topology.
+:::
+
+:::{.solution}
+\envlist
+
+1. $\RR\in \tau$ since $\RR\setminus \RR = \emptyset$ is trivially a finite set, and $\emptyset \in \tau$ by definition.
+2. If $U_i \in \tau$ then $(\union_i U_i)^c = \intersect U_i^c$ is an intersection of finite sets and thus finite, so $\union_i U_i \in \tau$.
+3. If $U_i \in \tau$, then $(\intersect_{i=1}^n U_i)^c = \union_{i=1}^n U_i^c$ is a finite union of finite sets and thus finite, so $\intersect U_i \in \tau$.
+
+So $\tau$ forms a topology.
+
+To see that $(\RR, \tau)$ is compact, let $\theset{U_i} \rightrightarrows \RR$ be an open cover by elements in $\tau$.
+
+Fix any $U_\alpha$, then $U_\alpha^c = \theset{p_1, \cdots, p_n}$ is finite, say of size $n$.
+So pick $U_1 \ni p_1, \cdots, U_n \ni p_n$; then $\RR \subset U_\alpha \union_{i=1}^n U_i$ is a finite cover.
+
+ 
+:::

@@ -1,0 +1,23 @@
+[
+  {"start_line": 1, "end_line": 12, "destination": "wiki", "kind": "warning", "title": null, "exam_term": null, "note": null},
+  {"start_line": 13, "end_line": 32, "destination": "wiki", "kind": "proposition", "title": "Product CW structure", "exam_term": null, "note": null},
+  {"start_line": 33, "end_line": 38, "destination": "wiki", "kind": "remark", "title": null, "exam_term": null, "note": null},
+  {"start_line": 39, "end_line": 49, "destination": "wiki", "kind": "example", "title": "?", "exam_term": null, "note": null},
+  {"start_line": 50, "end_line": 52, "destination": "card", "kind": "exercise", "title": "Homology of product of spheres", "exam_term": null, "note": null},
+  {"start_line": 53, "end_line": 57, "destination": "wiki", "kind": "heading", "title": "CW Structures on Common Spaces", "exam_term": null, "note": null},
+  {"start_line": 58, "end_line": 61, "destination": "wiki", "kind": "example", "title": "Spheres", "exam_term": null, "note": null},
+  {"start_line": 62, "end_line": 65, "destination": "wiki", "kind": "example", "title": "Real Projective Space", "exam_term": null, "note": null},
+  {"start_line": 66, "end_line": 69, "destination": "wiki", "kind": "example", "title": "Complex Projective Space", "exam_term": null, "note": null},
+  {"start_line": 70, "end_line": 73, "destination": "wiki", "kind": "example", "title": "Surfaces", "exam_term": null, "note": null},
+  {"start_line": 74, "end_line": 75, "destination": "wiki", "kind": "heading", "title": "Examples of Simplicial Complexes", "exam_term": null, "note": null},
+  {"start_line": 76, "end_line": 80, "destination": "wiki", "kind": "remark", "title": null, "exam_term": null, "note": null},
+  {"start_line": 81, "end_line": 84, "destination": "wiki", "kind": "example", "title": "Torus", "exam_term": null, "note": null},
+  {"start_line": 85, "end_line": 88, "destination": "wiki", "kind": "example", "title": "Klein Bottle and $\\RP^2$", "exam_term": null, "note": null},
+  {"start_line": 89, "end_line": 96, "destination": "wiki", "kind": "example", "title": "Non-example", "exam_term": null, "note": null},
+  {"start_line": 97, "end_line": 99, "destination": "wiki", "kind": "heading", "title": "Cellular Homology", "exam_term": null, "note": null},
+  {"start_line": 100, "end_line": 144, "destination": "wiki", "kind": "procedural", "title": null, "exam_term": null, "note": null},
+  {"start_line": 145, "end_line": 146, "destination": "wiki", "kind": "heading", "title": "Constructing a CW Complex with Prescribed Homology", "exam_term": null, "note": null},
+  {"start_line": 147, "end_line": 154, "destination": "wiki", "kind": "reference", "title": null, "exam_term": null, "note": null},
+  {"start_line": 155, "end_line": 156, "destination": "wiki", "kind": "heading", "title": "Exercises", "exam_term": null, "note": null},
+  {"start_line": 157, "end_line": 186, "destination": "card", "kind": "problem", "title": "?", "exam_term": null, "note": null}
+]

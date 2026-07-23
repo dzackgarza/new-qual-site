@@ -1,0 +1,10 @@
+[
+  {"start_line": 1, "end_line": 11, "destination": "wiki", "kind": "section", "title": null, "exam_term": null, "note": null},
+  {"start_line": 12, "end_line": 23, "destination": "card", "kind": "problem", "title": "Units or Zero Divisors", "exam_term": null, "note": null},
+  {"start_line": 24, "end_line": 44, "destination": "card", "kind": "problem", "title": "Maximal implies prime", "exam_term": null, "note": null},
+  {"start_line": 45, "end_line": 64, "destination": "wiki", "kind": "section", "title": null, "exam_term": null, "note": null},
+  {"start_line": 65, "end_line": 75, "destination": "card", "kind": "problem", "title": "Jacobson radical is bigger than the nilradical", "exam_term": null, "note": null},
+  {"start_line": 76, "end_line": 90, "destination": "card", "kind": "problem", "title": "Mod by nilradical to kill nilpotents", "exam_term": null, "note": null},
+  {"start_line": 91, "end_line": 111, "destination": "card", "kind": "problem", "title": "Nilradical is intersection of primes", "exam_term": null, "note": null},
+  {"start_line": 112, "end_line": 125, "destination": "wiki", "kind": "section", "title": null, "exam_term": null, "note": null}
+]
