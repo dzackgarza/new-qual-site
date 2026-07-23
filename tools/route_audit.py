@@ -18,6 +18,13 @@ Failure modes observed, in the order they were found:
   LUMPED        far fewer spans than the file has fenced divs. A ledger reading
                 "lines 4-1040 are definitions, all wiki" passes every byte-level
                 check and resolves nothing.
+  SPLIT_DIV     a card span whose fenced divs do not balance -- it begins or
+                ends inside a `:::` block. Tiling and byte-exact reassembly both
+                pass, because every line is present and merely on the wrong side
+                of a fence; the page rebuilds perfectly. But a card is extracted
+                to stand alone, so an unbalanced one is broken markdown the
+                moment it leaves the page. Found 3 of 2040 bundles, and only
+                because the downstream reader rejected them.
   UNROUTED      a source file with no ledger at all. Reported against the source
                 tree, not the ledger set, because a missing ledger produces no
                 row to inspect: three files went unrouted in a 263-file run that
@@ -153,6 +160,22 @@ def audit(ledger: Path) -> dict:
                 loud.append(f"DANGLING: span {s['start_line']} attaches to {at}, not a span start")
             elif starts[int(at)].get("kind") not in ANCHORS:
                 loud.append(f"DANGLING: span {s['start_line']} attaches to a {starts[int(at)].get('kind')!r}")
+
+    # --- is each extracted card self-contained -------------------------------
+    # A wiki span may be unbalanced without harm: the page is written whole and
+    # the fences meet up again across span boundaries. A card is lifted out on
+    # its own, so its fences must balance within the span.
+    for s in spans:
+        if s["destination"] != "card":
+            continue
+        body = lines[s["start_line"] - 1 : s["end_line"]]
+        opened = sum(1 for line in body if FENCE.match(line))
+        closed = sum(1 for line in body if re.match(r"^:{3,}\s*$", line))
+        if opened != closed:
+            fatal.append(
+                f"SPLIT_DIV: card span {s['start_line']}-{s['end_line']} has "
+                f"{opened} div openers and {closed} closers; it begins or ends inside a fence"
+            )
 
     # --- did a file of problems produce no problems --------------------------
     cards = [s for s in spans if s["destination"] == "card"]
