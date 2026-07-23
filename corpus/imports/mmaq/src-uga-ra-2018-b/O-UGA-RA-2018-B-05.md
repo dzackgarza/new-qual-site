@@ -20,7 +20,7 @@ payload:
 ::: problem
 Let $f \geq 0$ be a measurable function on $\RR$.
 Show that
-\[
-`\int`{=tex}*{`\mathbb{R}`{=tex}} f=`\int`{=tex}*{0}\^{`\infty`{=tex}} m({x: f(x)\>t}) d t
-\]
+$$
+\int_{\mathbb{R}} f=\int_{0}^{\infty} m(\{x: f(x)>t\}) d t
+$$
 :::

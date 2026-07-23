@@ -24,7 +24,7 @@ from pathlib import Path
 import panflute as pf
 import yaml
 
-from .model import DIV_CLASS_TO_KIND, from_ast
+from .model import DIV_CLASS_TO_KIND, MARKDOWN, from_ast
 
 
 def _rows(con: sqlite3.Connection, sql: str, args: tuple = ()) -> list[sqlite3.Row]:
@@ -81,7 +81,7 @@ def _blocks(card: sqlite3.Row) -> list[pf.Block]:
 
 
 def _inlines(markdown: str) -> list[pf.Inline]:
-    parsed = pf.convert_text(markdown, output_format="panflute")
+    parsed = pf.convert_text(markdown, input_format=MARKDOWN, output_format="panflute")
     return list(parsed[0].content) if parsed else [pf.Str("")]
 
 
@@ -281,6 +281,7 @@ def index_page(con: sqlite3.Connection) -> Page:
         "Start with [the problem browser](problems.qmd), a "
         "[historical exam](exams.qmd), or a [study guide](guides.qmd) — the same "
         "records, arranged three different ways.\n",
+        input_format=MARKDOWN,
         output_format="panflute",
     )
     return {"title": "Qual Corpus"}, list(blocks)

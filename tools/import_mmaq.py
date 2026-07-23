@@ -27,6 +27,8 @@ from pathlib import Path
 import panflute as pf
 import yaml
 
+from qualc.model import MARKDOWN
+
 ROOT = Path(__file__).resolve().parent.parent
 MMAQ = Path("/home/dzack/gitclones/make-me-a-qual/Combined_Questions.yaml")
 
@@ -235,7 +237,7 @@ def title_of(statement: str) -> str:
 
     Editorial titles are a curation task; this only has to be recognizable.
     """
-    doc = pf.convert_text(statement, output_format="panflute", standalone=True)
+    doc = pf.convert_text(statement, input_format=MARKDOWN, output_format="panflute", standalone=True)
     inlines = _text_inlines(list(doc.content), include_display=False)
     if len(pf.stringify(pf.Plain(*inlines)).strip()) < 20:
         # A statement that is mostly displayed formulas has to show one.
@@ -263,7 +265,7 @@ def title_of(statement: str) -> str:
 
 def body_of(statement: str, section: str) -> str:
     """Wrap a statement in its semantic div. Written by pandoc, not by hand."""
-    blocks = pf.convert_text(statement, output_format="panflute")
+    blocks = pf.convert_text(statement, input_format=MARKDOWN, output_format="panflute")
     body: str = pf.convert_text(
         pf.Doc(pf.Div(*blocks, classes=[section])),
         input_format="panflute",

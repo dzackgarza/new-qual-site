@@ -305,8 +305,22 @@ class ParsedCard(Strict):
     sections: list[tuple[str, str]]  # (section kind, plain text, for search)
 
 
+# The reader format, in one place because every read has to agree.
+#
+# `tex_math_single_backslash` is not optional here: the corpus writes display
+# mathematics as `\[ ... \]`, and pandoc's plain `markdown` does not recognize
+# that as math. With `raw_tex` on -- the default -- it reads the fragment as raw
+# LaTeX instead, which loses the mathematics (`\int_{\mathbb{R}}` comes back as
+# an emphasis-mangled `` `\int`{=tex}*{...} ``) and, worse, keeps consuming past
+# the end of the enclosing fenced div whenever the body holds a macro pandoc
+# does not know, such as `\qty`. Dropping `raw_tex` instead would close the divs
+# by rendering `\[ ... \]` as the literal characters and would destroy the
+# corpus's TikZ blocks; the extension is the fix, not the removal.
+MARKDOWN = "markdown+tex_math_single_backslash"
+
+
 def to_ast(markdown: str) -> str:
-    ast: str = pf.convert_text(markdown, output_format="json", standalone=True)
+    ast: str = pf.convert_text(markdown, input_format=MARKDOWN, output_format="json", standalone=True)
     return ast
 
 
