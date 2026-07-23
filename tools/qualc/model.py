@@ -341,11 +341,16 @@ def to_ast(markdown: str) -> str:
     message, and the message is the whole point. The parsing is still entirely
     pandoc's; only the error handling is ours.
 
-    A warning from this reader is not cosmetic: it can mean the card was
-    truncated. See `tests/test_reader_warnings.py` for the one worked example,
-    which is synthetic -- no card and no file in qual-wiki provokes it. The gate
-    is here because a parse pandoc was unsure of should not be indexed, not
-    because the corpus is known to contain such a parse.
+    The gate's justification is narrow and worth stating exactly, because it was
+    twice overstated: a parse the parser warned about should not be indexed. It
+    is not evidence-backed protection against a known corpus hazard. The only
+    worked example is input I constructed, no card or qual-wiki file provokes it,
+    and the measured count in real data is zero. See
+    `tests/test_reader_warnings.py`.
+
+    It has a known cost: qual-wiki emits benign warnings such as
+    `Macro '\\sech' already defined, ignoring`, so this will need revisiting when
+    the WS2 importer reads those files rather than authored cards.
     """
     proc = subprocess.run(
         ["pandoc", "--from", MARKDOWN, "--to", "json", "--standalone", "--fail-if-warnings"],

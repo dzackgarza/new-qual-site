@@ -1,33 +1,39 @@
 """A pandoc warning while reading a card is a build failure.
 
 `qualc` discarded pandoc's stderr, so a card pandoc had complained about was
-indexed anyway. That is the defect this file guards: the compiler should not
-store a parse the parser said it was unsure of, whatever the reason.
+indexed anyway. That is what this guards.
 
-The trigger below is synthetic, and deliberately labelled as such. It is *not* a
-hazard the corpus exhibits -- there is no card, and no file in qual-wiki, that
-provokes it. It is here because it is the smallest input that makes pandoc emit
-a reader warning while producing a plausible-looking AST, which is exactly the
-shape the guard exists to catch.
+Read the provenance of the fixture below before citing it for anything.
 
-What it is, for the record, because it was twice diagnosed wrongly:
+**The input is mine, not the corpus's.** No card and no file in qual-wiki
+provokes it; the measured count is zero across all 263 authored files. `\\qty` is
+a math-mode macro and nobody writes it in text mode. It appeared in text mode
+only because the reader was misconfigured: without `tex_math_single_backslash`
+the `\\[ ... \\]` delimiters were consumed as escaped brackets, so the math
+*contents* were spilled into the text-mode parser. Fixing the dialect took the
+warning count from 19 to 0. The fixture below re-enacts that misconfiguration by
+hand, which is the only way to reach this state now.
 
-`\\qty` is two different LaTeX macros. In `physics` it is the auto-sizing
-delimiter `\\qty{...}`, one argument, which is what this corpus writes. In
-`siunitx` v3 it is `\\qty{number}{unit}`, two arguments. Pandoc's LaTeX reader
-implements the siunitx one, so given a single group it keeps scanning for the
-second argument and consumes the closing `:::` and every block after it:
+So this is a demonstration that the gate fires, not evidence of a hazard. It was
+originally written up as the latter, along with three successive explanations of
+pandoc's internals, none of which I could support:
 
-    \\qty{3}{\\metre}   ->  RawInline "\\qty{3}{\\metre}", div closes
-    \\qty{3}          ->  RawInline "\\qty{3}\\n:::\\n\\nafter", div swallowed
+  1. "an unknown macro runs away" -- refuted by `\\foobar{x}`, which bounds fine;
+  2. "pandoc implements siunitx's two-argument `\\qty`" -- taken from a web-search
+     paraphrase, never checked against pandoc's source or documentation;
+  3. anything about packages or macro semantics. Pandoc passes raw TeX through.
 
-It is not "an unknown macro running away" -- `\\foobar{x}` parses fine and closes
-the div. It is a known macro with a missing argument, and a name collision
-between two packages.
+What is measured, and all that is claimed, with pandoc 3.6.1 in text mode:
 
-None of this reaches the corpus, because `\\qty` there is always inside math, and
-pandoc hands math to MathJax without parsing it. Both `$\\qty{x}$` and
-`\\[ \\qty{x} \\]` are `Math` nodes with the div intact.
+    \\qty{3}{\\metre}  ->  raw-TeX span ends there
+    \\qty{3}          ->  raw-TeX span runs to end of input, taking `:::` with it
+    \\foobar{x}       ->  span ends there
+
+Something decides the extent of a raw-TeX span and it varies by input. What, I do
+not know, and the gate does not depend on knowing.
+
+The corpus's actual usage is asserted in `test_qty_in_math_is_untouched` so this
+file cannot be misread as a finding against `\\qty`.
 """
 
 from __future__ import annotations
