@@ -18,8 +18,10 @@ Failure modes observed, in the order they were found:
   LUMPED        far fewer spans than the file has fenced divs. A ledger reading
                 "lines 4-1040 are definitions, all wiki" passes every byte-level
                 check and resolves nothing.
-  ORPHAN        a solution/hint/concept card with no `attaches_to`. Unreachable
-                from its problem, which is the same loss as dropping it.
+  DETACHED      a solution/hint/concept emitted as its own card. Solutions are
+                bundled into the problem card they belong to -- one card holds
+                the statement and every solution of it -- so a standalone one is
+                a routing error, not a link to repair.
   DANGLING      `attaches_to` naming a span that is not a problem or exercise.
   BARREN        a file full of numbered problem headings that produced no cards.
                 Not proof of error -- a link list of PDFs legitimately yields
@@ -43,9 +45,15 @@ from collections import Counter
 from pathlib import Path
 
 FENCE = re.compile(r"^:{3,}\s*\{?\s*\.?[\w-]")
-ATTACHABLE = {"solution", "hint", "concept", "strategy"}
+# Bundled into the problem card, never emitted alongside it. A problem card
+# holds its statement and all of its solutions; multiple solutions are multiple
+# divs in one body, which is what `site/filters/reveal.lua` already renders.
+BUNDLED = {"solution", "hint", "concept", "strategy"}
 ANCHORS = {"problem", "exercise"}
 LUMP_RATIO = 0.5  # spans/divs below this is a lump, not a resolution
+# A problem card legitimately runs long: statement plus every worked solution.
+# Only non-card spans are suspicious at this size -- a 555-line "definition" is
+# a lump, a 217-line problem is a problem.
 HUGE_SPAN = 150  # lines
 
 
@@ -90,21 +98,24 @@ def audit(ledger: Path) -> dict:
     divs = sum(1 for line in lines if FENCE.match(line))
     if divs and len(spans) < divs * LUMP_RATIO:
         loud.append(f"LUMPED: {len(spans)} spans for {divs} fenced divs")
-    biggest = max(s["end_line"] - s["start_line"] + 1 for s in spans)
-    if biggest > HUGE_SPAN:
-        big = next(s for s in spans if s["end_line"] - s["start_line"] + 1 == biggest)
-        loud.append(f"span of {biggest} lines at {big['start_line']}-{big['end_line']} ({big.get('kind')})")
+    prose = [s for s in spans if s.get("kind") not in ANCHORS]
+    if prose:
+        biggest = max(s["end_line"] - s["start_line"] + 1 for s in prose)
+        if biggest > HUGE_SPAN:
+            big = next(s for s in prose if s["end_line"] - s["start_line"] + 1 == biggest)
+            loud.append(f"span of {biggest} lines at {big['start_line']}-{big['end_line']} ({big.get('kind')})")
 
     # --- are the cards reachable ---------------------------------------------
     starts = {s["start_line"]: s for s in spans}
     for s in spans:
         if s["destination"] != "card":
             continue
+        if s.get("kind") in BUNDLED:
+            loud.append(f"DETACHED: {s['kind']} at {s['start_line']}-{s['end_line']} emitted as its own card; it belongs inside the problem span")
+            continue
         at = s.get("attaches_to")
-        if s.get("kind") in ATTACHABLE:
-            if at in (None, "", "null"):
-                loud.append(f"ORPHAN: {s['kind']} card at {s['start_line']} attaches to nothing")
-            elif int(at) not in starts:
+        if at not in (None, "", "null"):
+            if int(at) not in starts:
                 loud.append(f"DANGLING: span {s['start_line']} attaches to {at}, not a span start")
             elif starts[int(at)].get("kind") not in ANCHORS:
                 loud.append(f"DANGLING: span {s['start_line']} attaches to a {starts[int(at)].get('kind')!r}")
@@ -175,7 +186,7 @@ def main(argv: list[str]) -> int:
         for key, count in r["kinds"].items():
             dest, kind = key.split("/", 1)
             roles.setdefault(kind, Counter())[dest] += count
-    split = {k: v for k, v in roles.items() if len(v) > 1 and k in ATTACHABLE | ANCHORS}
+    split = {k: v for k, v in roles.items() if len(v) > 1 and k in BUNDLED | ANCHORS}
     if split:
         print("\n ?  SPLIT DESTINATION — the same role routed two ways across this batch:")
         for kind, dests in sorted(split.items()):
