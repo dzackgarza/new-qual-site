@@ -341,11 +341,11 @@ def to_ast(markdown: str) -> str:
     message, and the message is the whole point. The parsing is still entirely
     pandoc's; only the error handling is ours.
 
-    A warning from this reader is not cosmetic. `\\qty{ x }` outside math makes
-    the raw-TeX inline parser run to end of input, so the closing `:::` and
-    every block after it end up inside a `RawInline` and the card is silently
-    truncated. pandoc reports that; discarding the report is what made it
-    silent.
+    A warning from this reader is not cosmetic: it can mean the card was
+    truncated. See `tests/test_reader_warnings.py` for the one worked example,
+    which is synthetic -- no card and no file in qual-wiki provokes it. The gate
+    is here because a parse pandoc was unsure of should not be indexed, not
+    because the corpus is known to contain such a parse.
     """
     proc = subprocess.run(
         ["pandoc", "--from", MARKDOWN, "--to", "json", "--standalone", "--fail-if-warnings"],
