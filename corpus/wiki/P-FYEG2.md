@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-YESLV
+id: P-FYEG2
 kind: problem
 title: "Let $G$ be a finite group and $s, t\\in G$ be two distinct elements of\u2026"
 classification:
@@ -51,4 +51,5 @@ t &\mapsto b
 > Remark: see a more direct proof in [Theorem 2.1 and Theorem 1.1 here](https://kconrad.math.uconn.edu/blurbs/grouptheory/dihedral2.pdf)
 
 :::
+
 

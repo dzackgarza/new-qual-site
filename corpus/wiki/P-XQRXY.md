@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-SQWXQ
+id: P-XQRXY
 kind: problem
 title: "For a finite group $G$, let $c(G)$ denote the number of conjugacy clas\u2026"
 classification:
@@ -167,4 +167,3 @@ P(A)
 \todo[inline]{Redo part c}
 
 :::
-

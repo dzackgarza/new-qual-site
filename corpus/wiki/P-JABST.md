@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-H23R7
+id: P-JABST
 kind: problem
 title: "Let $P$ be a finite $p\\dash$group."
 classification:
@@ -34,6 +34,3 @@ H = \Disjoint_{i\leq M} [g_i] \intersect H = \qty{ Z(G) \intersect H } \disjoint
 - So $p$ must divide the remaining term $Z(G) \intersect H$, which makes it nontrivial.
 
 :::
-
-
-## Burnside / Class Equation

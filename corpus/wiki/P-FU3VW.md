@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-KNKMQ
+id: P-FU3VW
 kind: problem
 title: "Give generators and relations for the non-commutative group $G$ of ord\u2026"
 classification:
@@ -44,3 +44,6 @@ G = \gens{x, y\st x^7, y^9, yxy\inv = x^2}
 .\]
 :::
 
+
+
+### Fall 2019 Midterm #5 #algebra/qual/completed

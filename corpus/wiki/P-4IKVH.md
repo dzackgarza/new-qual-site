@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-ACFER
+id: P-4IKVH
 kind: problem
 title: "Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has\u2026"
 classification:
@@ -11,7 +11,6 @@ relations: []
 review: draft
 ---
 Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a nontrivial normal subgroup.
-:::
 
 :::{.solution}
 \envlist

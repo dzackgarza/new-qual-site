@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-6A6IN
+id: P-GYQLA
 kind: problem
 title: "Let $G$ be a finite group and $\\pi: G\\to \\sym(G)$ the Cayley represent\u2026"
 classification:
@@ -101,4 +101,3 @@ m= [G: \gens{ g }] = \size G / \size \gens{ g }= \size G / o(g) = \size G/ o(\pi
 
 
 :::
-

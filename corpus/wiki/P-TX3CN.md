@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-QKKXD
+id: P-TX3CN
 kind: problem
 title: "Let $G$ be a group containing a subgroup $H$ not equal to $G$ of finit\u2026"
 classification:
@@ -27,4 +27,5 @@ Prove that $G$ has a normal subgroup which is contained in every conjugate of $H
 - The index $[G:K]$ is finite since $G/K \cong \im \psi$ by the first isomorphism theorem, and $\size \im \psi \leq \size \Sym(G/H) = \size S_n = n! < \infty$.
 
 :::
+
 

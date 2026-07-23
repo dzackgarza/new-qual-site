@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-HS7QR
+id: P-KOSSD
 kind: problem
 title: "Let $H$ be a normal subgroup of a finite group $G$ where the order of\u2026"
 classification:
@@ -49,4 +49,3 @@ hN
   - We've also used that $\size G/N = m$, so $(xH)^m = H$ for any $xH\in G/H$.
 
 :::
-

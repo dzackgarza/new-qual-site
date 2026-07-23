@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-EP2YT
+id: P-4XOCE
 kind: problem
 title: "Let $H \\normal G$ be a normal subgroup of a finite group $G$, where th\u2026"
 classification:
@@ -65,4 +65,3 @@ p = 1 + \sum_{\substack{ j\leq k \\ j\neq 1 }} \size C_{i_j}
 - $\union C_{i_j} = H$, so $H \subseteq Z(G)$.
 
 :::
-

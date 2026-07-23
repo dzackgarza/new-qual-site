@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-UIFHV
+id: P-6NTDS
 kind: problem
 title: "Let $G$ be a nonabelian group of order $p^3$ for $p$ prime. Show that\u2026"
 classification:
@@ -74,4 +74,3 @@ $|[G,G]| \in \{ 1, p\}$ again by Lagrange's theorem. If $|[G,G]| = p$
 then $[G,G] = Z(G)$ and we are done. And, indeed, we must have
 $|[G,G]| = p$, because $G$ is nonabelian and so $|[G,G]| \ne 1$.
 :::
-

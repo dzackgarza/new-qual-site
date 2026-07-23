@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-TGSUW
+id: P-EHPA5
 kind: problem
 title: "For a prime $p$, let $G$ be a finite $p\\dash$group and let $N$ be a no\u2026"
 classification:
@@ -35,4 +35,3 @@ p = \size N = \sum_{i=1}^m \size [n_i] = 1 + \sum_{i=2}^m [n_i]
 - But the entire second term must sum to $p-1$ for this equality to hold, which forces $\size[n_i] = 1$ (and incidentally $m=p-1$)
 - Then $[n_i] = \ts{ n_i } \iff n_i \in Z(G)$, and this holds for all $i$, so $N \subseteq Z(G)$.
 :::
-

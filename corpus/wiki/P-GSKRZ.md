@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-MAEKZ
+id: P-GSKRZ
 kind: problem
 title: "Let $G$ be a group. An automorphism $\\phi: G \\rightarrow G$ is called\u2026"
 classification:
@@ -28,5 +28,4 @@ d.
 Suppose that an automorphism $\phi \in \operatorname{Aut}\left(S_{n}\right)$ preserves cycle type, i.e., that for every element $s$ of $S_{n}, s$ and $\phi(s)$ have the same cycle type. Show that $\phi$ is inner. 
 
 > Hint: Consider the images of generators $\phi((1,2)), \phi((2,3)), \cdots, \phi((n-1, n))$.
-
 

@@ -5,51 +5,56 @@
 
 ### Fall 2021 #1 #algebra/qual/work 
 
-[[P-MAEKZ]]
+[[P-GSKRZ]]
+
 ## Cosets
 
 ### Spring 2020 #2 #algebra/qual/completed
-[[P-HS7QR]]
+[[P-KOSSD]]
+
 ### Fall 2014 #6 #algebra/qual/completed
-[[P-7777S]]
+[[P-732VA]]
+
 ### Spring 2013 #3 #algebra/qual/completed
-[[P-H23R7]]
+[[P-JABST]]
+
+
+## Burnside / Class Equation
 
 ### Spring 2019 #4 #algebra/qual/completed
-[[P-SQWXQ]]
+[[P-XQRXY]]
+
 ## Group Actions / Representations
 
 ### Spring 2017 #1 #algebra/qual/completed
-[[P-6A6IN]]
+[[P-GYQLA]]
+
 
 ### Fall 2015 #1 #algebra/qual/completed
-[[P-QKKXD]]
-
+[[P-TX3CN]]
 ## Conjugacy Classes
 
 ### Spring 2021 #2 #algebra/qual/completed
 
-[[P-EP2YT]]
+[[P-4XOCE]]
+
 
 ### Spring 2015 #1 #algebra/qual/completed
-[[P-TGSUW]]
+[[P-EHPA5]]
+
 ## Unsorted / Counting Arguments
 
 
 ### Fall 2021 #2 #algebra/qual/completed 
 
-[[P-KNKMQ]]
+[[P-FU3VW]]
+[[P-6NTDS]]
 
-
-### Fall 2019 Midterm #5 #algebra/qual/completed
-[[P-UIFHV]]
 ### Spring 2012 #2 #algebra/qual/completed
-[[P-5246W]]
-
+[[P-T5EUB]]
 ### Fall 2016 #1 #algebra/qual/completed
-[[P-YESLV]]
-
+[[P-FYEG2]]
 ### Fall 2019 Midterm #1  #algebra/qual/completed
-[[P-ACFER]]
+[[P-4IKVH]]
 ### Fall 2019 Midterm #4 #algebra/qual/work
 [[P-QXISW]]

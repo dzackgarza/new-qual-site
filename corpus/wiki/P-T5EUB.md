@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-5246W
+id: P-T5EUB
 kind: problem
 title: "Let $G$ be a finite group and $p$ a prime number such that there is a\u2026"
 classification:
@@ -77,3 +77,4 @@ Use transitivity of characteristic.
 :::
 
 :::
+
