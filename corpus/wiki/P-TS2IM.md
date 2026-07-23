@@ -1,0 +1,15 @@
+---
+schema: qual/card@1
+id: P-TS2IM
+kind: problem
+title: "Describe all the conjugacy classes of $3 \\times 3$ matrices with ratio\u2026"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+Describe all the conjugacy classes of $3 \times 3$ matrices with rational entries which satisfy the equation \(A^4 - A^3 - A + 1 = 0\).
+Give a representative in each class.
+

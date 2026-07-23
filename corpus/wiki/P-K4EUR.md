@@ -1,0 +1,18 @@
+---
+schema: qual/card@1
+id: P-K4EUR
+kind: problem
+title: "- Let $\\Lambda\\in L^2(X)\\dual$."
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+> Note: (a) is a repeat.
+
+- Let $\Lambda\in L^2(X)\dual$.
+  - Show that $M\definedas \theset{f\in L^2(X) \suchthat \Lambda(f) = 0} \subseteq L^2(X)$ is a closed subspace, and $L^2(X) = M \oplus M\perp$.
+  - Prove that there exists a unique $g\in L^2(X)$ such that $\Lambda(f) = \int_X g \bar f$.
+

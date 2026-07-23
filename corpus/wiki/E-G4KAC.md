@@ -1,0 +1,15 @@
+---
+schema: qual/card@1
+id: E-G4KAC
+kind: exercise
+title: "Show $x\\in \\jacobsonrad{R} \\iff 1-xR \\subseteq R\\units$."
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.exercise title="?"}
+Show $x\in \jacobsonrad{R} \iff 1-xR \subseteq R\units$.
+:::

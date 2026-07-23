@@ -1,0 +1,13 @@
+---
+schema: qual/card@1
+id: E-6XHXX
+kind: exercise
+title: "Show that $\\RR$ is separable."
+classification:
+  areas:
+  - topology
+  topics: []
+relations: []
+review: draft
+---
+Show that $\RR$ is separable.

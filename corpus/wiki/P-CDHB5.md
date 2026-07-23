@@ -1,0 +1,14 @@
+---
+schema: qual/card@1
+id: P-CDHB5
+kind: problem
+title: "Let $A$ be an abelian group, and show $A$ is a $\\ZZ\\dash$module in a u\u2026"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+Let $A$ be an abelian group, and show $A$ is a $\ZZ\dash$module in a unique way.
+

@@ -1,0 +1,12 @@
+---
+schema: qual/card@1
+id: E-ARJT3
+kind: exercise
+title: "- What is a **separable** space?"
+classification:
+  areas: []
+  topics: []
+relations: []
+review: draft
+---
+- What is a **separable** space?

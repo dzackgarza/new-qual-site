@@ -1,0 +1,24 @@
+---
+schema: qual/card@1
+id: E-R7I7D
+kind: exercise
+title: "Sum formulas: $1/n^2$"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations: []
+review: draft
+---
+:::{.exercise title="Sum formulas: $1/n^2$"}
+Show
+\[
+\sum_{n \geq 1} \frac{1}{n^{2}}=\frac{\pi^{2}}{6}
+\]
+by integrating $\pi \cot(\pi z)z^{-2}$.
+
+
+#complex/exercise/work
+
+:::
+

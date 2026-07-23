@@ -1,0 +1,74 @@
+---
+schema: qual/card@1
+id: P-SI6E6
+kind: problem
+title: "Let $R = C[0, 1]$ be the ring of continuous real-valued functions on t\u2026"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+Let $R = C[0, 1]$ be the ring of continuous real-valued functions on the interval $[0, 1]$. Let I be an ideal of $R$.
+
+a.
+Show that if $f \in I, a \in [0, 1]$ are such that $f (a) \neq 0$, then there exists $g \in I$ such that $g(x) \geq 0$ for all $x \in [0, 1]$, and $g(x) > 0$ for all $x$ in some open neighborhood of $a$.
+
+b.
+If $I \neq R$, show that the set $Z(I) = \{x \in [0, 1] \suchthat f(x) = 0 \text{ for all } f \in I\}$ is nonempty.
+
+c.
+Show that if $I$ is maximal, then there exists $x_0 \in [0, 1]$ such that $I = \{ f \in R \suchthat f (x_0 ) = 0\}$.
+
+:::{.remark}
+Cool problem, but pretty specific topological tricks needed.
+:::
+
+:::{.solution}
+\envlist
+
+:::{.proof title="of a"}
+\envlist
+
+- Suppose $c\da f(a)\neq 0$, noting that $c$ may not be positive.
+- By continuity, pick $\eps$ small enough so that $\abs{x-a}<\eps \implies \abs{f(x) - f(a)} < c/2$.
+  Since we're on the interval, we have $f(x) \in (f(a) - c/2, f(a) + c/2) = (c/2, 3c/2)$ which is a ball of radius $c/2$ about $c$, which thus doesn't intersect $0$.
+- So $f(x) \neq 0$ on this ball, and $g \da f^2 > 0$ on it.
+  Note that ideals are closed under products, so $g\in I$
+- Moreover $f^2(x) \geq 0$ since squares are non-negative, so $g\geq 0$ on $[0, 1]$.
+:::
+
+:::{.proof title="of b"}
+\envlist
+
+- By contrapositive, suppose $V(I)= \emptyset$, we'll show $I$ contains a unit and thus $I=R$.
+- For each fixed $x\in [0, 1]$, since $V(I)$ is empty there is some $f_x$ such that $f_x(x) \neq 0$.
+- By (a), there is some $g_x$ with $g_x(x) > 0$ on a neighborhood $U_x\ni x$ and $g_x \geq 0$ everywhere.
+- Ranging over all $x$ yields a collection $\ts{(g_x, U_x) \st x\in [0, 1]}$ where $\ts{U_x}\covers [0, 1]$.
+- By compactness there is a finite subcover, yielding a finite collection $\ts{(g_k, U_k)}_{k=1}^n$ for some $n$.
+- Define the candidate unit as 
+\[
+G(x) \da {1\over \sum_{k=1}^n g_k(x)}
+.\]
+- This is well-defined: fix an $x$, then the denominator is zero at $x$ iff $g_k(x) = 0$ for all $k$.
+  But since the $U_k$ form an open cover, $x\in U_\ell$ for some $\ell$, and $g_\ell > 0$ on $U_\ell$.
+- Since ideals are closed under sums, $H\da {1\over G} \da \sum g_k \in I$.
+  But $H$ is clearly a unit since $HG = \id$.
+
+:::
+
+:::{.proof title="of c"}
+\envlist
+
+- If $I\normal R$ is maximal, $I\neq R$, and so by (b) we have $V(I) \neq \emptyset$.
+- So there is some $x_0\in[0, 1]$ with $f(x_0) = 0$ for all $f\in I$.
+- Define $\mfm_{x_0} \da \ts{f\in R \st f(x_0) = 0}$, which is clearly an ideal.
+  - This is a proper ideal, since constant nonzero functions are continuous and thus in $R$, not not $\mfm_{x_0}$.
+- We thus have $I \subseteq \mfm_{x_0}$, and by maximality they are equal.
+
+:::
+
+\todo[inline]{I'm not super convinced by c!}
+
+:::

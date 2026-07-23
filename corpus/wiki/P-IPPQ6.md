@@ -1,0 +1,15 @@
+---
+schema: qual/card@1
+id: P-IPPQ6
+kind: problem
+title: "Consider a nonconstant function between two compact Riemann Surfaces."
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+Consider a nonconstant function between two compact Riemann Surfaces.
+How is it related to Galois theory?
+

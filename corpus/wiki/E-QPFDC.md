@@ -1,0 +1,31 @@
+---
+schema: qual/card@1
+id: E-QPFDC
+kind: exercise
+title: "Uniform limit of holomorphic derivatives is the derivative"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations: []
+review: draft
+---
+:::{.exercise title="Uniform limit of holomorphic derivatives is the derivative"}
+Show that if $f_k \to f$ uniformly with $f$ holomorphic then every $n$th derivative satisfies $f_k^{(n)}\to f^{(n)}$ uniformly.
+
+#complex/exercise/work
+
+:::
+
+:::{.solution}
+
+![](../../assets/30_Complex_Analysis/990_Exercises/figures/2021-12-10_19-38-03.png)
+
+![](../../assets/30_Complex_Analysis/990_Exercises/figures/2021-12-10_19-38-12.png)
+
+Alt:
+
+![](../../assets/30_Complex_Analysis/990_Exercises/figures/2021-12-14_16-55-41.png)
+
+
+:::

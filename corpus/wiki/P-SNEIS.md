@@ -1,0 +1,17 @@
+---
+schema: qual/card@1
+id: P-SNEIS
+kind: problem
+title: "- Prove the *fundamental theorem of cosets*: for $xH, yH\\in G/H$,"
+classification:
+  areas: []
+  topics: []
+relations: []
+review: draft
+---
+- Prove the *fundamental theorem of cosets*: for $xH, yH\in G/H$,
+$$
+xH = yH \iff x\inv y\in H \iff y\inv x \in H
+$$
+
+> Use that $xH = yH\iff x\sim y$ is an equivalence relation (reflexive/symmetric/transitive)

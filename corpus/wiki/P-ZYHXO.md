@@ -1,0 +1,19 @@
+---
+schema: qual/card@1
+id: P-ZYHXO
+kind: problem
+title: "What does it mean to be algebraically closed?"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+What does it mean to be algebraically closed?
+
+:::{.solution}
+![Projects/Quals/Algebra/image/SmartSelect_20210420-000204_Xodo_Docs.jpg](../../assets/10_Algebra/999_Review/image/SmartSelect_20210420-000204_Xodo_Docs.jpg)
+:::
+
+

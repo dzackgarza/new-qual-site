@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: E-GEVBZ
+kind: exercise
+title: "Prove the rank-nullity theorem using JCF."
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.exercise title="?"}
+Prove the rank-nullity theorem using JCF.
+:::
+

@@ -1,0 +1,14 @@
+---
+schema: qual/card@1
+id: P-52WSU
+kind: problem
+title: "What is a Toeplitz operator?"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+What is a Toeplitz operator?
+

@@ -1,0 +1,22 @@
+---
+schema: qual/card@1
+id: E-NUJ7W
+kind: exercise
+title: "Show that a nonzero nilpotent matrix $A$ is not diagonalizable over an\u2026"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.exercise title="?"}
+Show that a nonzero nilpotent matrix $A$ is not diagonalizable over any field.
+Some useful facts:
+
+- $\spec A = \ts{0}$, since $Ax=\lambda x \implies A^n=\lambda^nx$, so $A^n=0$ forces $\lambda =0$.
+  This forces $\JCF(A)$ to be strictly upper-triangular.
+- $\min_A(x) = x^n$.
+- If $A$ were diagonalizable, $\JCF(A) = 0$.
+
+:::

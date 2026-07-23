@@ -1,0 +1,14 @@
+---
+schema: qual/card@1
+id: P-RVG47
+kind: problem
+title: "Do you know a Lie group that has no faithful finite-dimensional repres\u2026"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+Do you know a Lie group that has no faithful finite-dimensional representations?
+

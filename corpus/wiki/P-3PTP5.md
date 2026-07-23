@@ -1,0 +1,14 @@
+---
+schema: qual/card@1
+id: P-3PTP5
+kind: problem
+title: "Prove that a commutative ring with unit is a field if and only if its\u2026"
+classification:
+  areas: []
+  topics: []
+relations: []
+review: draft
+---
+Prove that a commutative ring with unit is a field if and only if its only ideals are {0} and the whole ring
+
+![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 19.png]]

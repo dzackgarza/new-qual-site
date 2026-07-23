@@ -1,0 +1,15 @@
+---
+schema: qual/card@1
+id: E-AVA2O
+kind: exercise
+title: "Give an example of a space that is compact but not sequentially compac\u2026"
+classification:
+  areas:
+  - topology
+  topics: []
+relations: []
+review: draft
+---
+Give an example of a space that is compact but not sequentially compact, and vice versa.
+
+#### Exercise  #topology/qual/work

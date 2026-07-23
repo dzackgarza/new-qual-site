@@ -1,0 +1,15 @@
+---
+schema: qual/card@1
+id: P-NHWAK
+kind: problem
+title: "What is the Jacobson radical?"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+What is the Jacobson radical?
+If R is a finitely-generated algebra over a field what can you say about it?
+

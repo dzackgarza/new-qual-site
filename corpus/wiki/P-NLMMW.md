@@ -1,0 +1,14 @@
+---
+schema: qual/card@1
+id: P-NLMMW
+kind: problem
+title: "- If $\\size G = pq$, is $G$ necessarily nilpotent?"
+classification:
+  areas: []
+  topics: []
+relations: []
+review: draft
+---
+- If $\size  G = pq$, is $G$ necessarily nilpotent?
+	
+	> Hint: consider $Z(S_3)$.

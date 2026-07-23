@@ -1,0 +1,13 @@
+---
+schema: qual/card@1
+id: P-FINEA
+kind: problem
+title: "- Show that $A_n$ is generated $3\\dash$cycles."
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+- Show that $A_n$ is generated $3\dash$cycles.

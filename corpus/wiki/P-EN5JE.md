@@ -1,0 +1,14 @@
+---
+schema: qual/card@1
+id: P-EN5JE
+kind: problem
+title: "- Let $H, K \\leq G$ a finite group, and without using the normalizers\u2026"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+- Let $H, K \leq G$ a finite group, and without using the normalizers of $H$ or $K$, show that $\abs{HK} = \abs{H} \abs{K}/\abs{H\intersect K}$.
+
