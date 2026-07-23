@@ -26,7 +26,6 @@ from pathlib import Path
 
 import panflute as pf
 import yaml
-
 from qualc.model import MARKDOWN
 
 ROOT = Path(__file__).resolve().parent.parent
