@@ -130,22 +130,34 @@ def _vendor_one(root: Path, out: Path) -> int:
     return n
 
 
+# The vault root is where Obsidian resolves non-local asset paths. It is not a
+# fixed name: qual-wiki and qual-review-and-solutions are separate repos, and a
+# working copy may sit at any path (a /tmp clone, a rename). Find it by walking
+# up to the outermost directory that still looks like the vault -- the one
+# holding `.obsidian`, or failing that the repo's `.git`. Falling back to the
+# file's own parent, as an earlier version did, made vendoring miss every asset
+# outside the first source file's directory: 135 of 176 for a /tmp checkout
+# whose name matched no hard-coded marker.
+VAULT_MARKERS = (".obsidian", ".git")
+
+
 def corpus_root(src: Path) -> Path:
-    """The vault root, which is where Obsidian resolves non-local asset paths."""
-    parts = src.parts
-    for marker in ("qual-wiki", "qual-review-and-solutions"):
-        if marker in parts:
-            return Path(*parts[: parts.index(marker) + 1])
+    # Nearest ancestor that looks like the vault, `.obsidian` first: it marks
+    # the vault root uniquely, where an outer `.git` (a parent gitclones dir)
+    # would misidentify it.
+    for marker in VAULT_MARKERS:
+        for anc in src.parents:
+            if (anc / marker).exists():
+                return anc
     return src.parent
 
 
 def rel_path(src: Path) -> Path:
     """The source's path relative to its corpus root, so the wiki keeps its tree."""
-    parts = src.parts
-    for marker in ("qual-wiki", "qual-review-and-solutions"):
-        if marker in parts:
-            return Path(*parts[parts.index(marker) + 1 :])
-    return Path(src.name)
+    try:
+        return src.relative_to(corpus_root(src))
+    except ValueError:
+        return Path(src.name)
 
 
 def area_of(src: Path) -> str | None:
