@@ -18,6 +18,20 @@ Failure modes observed, in the order they were found:
   LUMPED        far fewer spans than the file has fenced divs. A ledger reading
                 "lines 4-1040 are definitions, all wiki" passes every byte-level
                 check and resolves nothing.
+  UNROUTED      a source file with no ledger at all. Reported against the source
+                tree, not the ledger set, because a missing ledger produces no
+                row to inspect: three files went unrouted in a 263-file run that
+                reported 263/263 success, and nothing in a per-ledger audit could
+                have seen it. Completeness is a property of the pair.
+  REGRESSION    fewer bundles than a previous run of the same file produced.
+                Invisible to every single-run check: a ledger that finds no
+                problems is indistinguishable from a file that has none. Found
+                34 dropped problems in one file on its first use, which is the
+                argument for keeping a baseline at all.
+  EMPTY         the ledger is an empty array. Every line unaccounted for, and
+                it reads as success to anything that only checks for errors.
+  MALFORMED     the ledger is not valid JSON. Usually an unescaped backslash in
+                a LaTeX title. One file's failure, never the batch's.
   DETACHED      a solution/hint/concept/strategy emitted as its own card. The
                 unit of the problem bank is a *problem bundle*: one card holding
                 the statement (which may be multi-part), any hints, strategies,
@@ -38,6 +52,8 @@ Nothing here decides whether a routing is *right*. It decides whether it is
 answerable, and it shouts when it is not.
 
     uv run python tools/route_audit.py <ledger-dir> [--json]
+                                        [--baseline prev-audit.json]
+                                        [--sources qual-wiki-root]
 
 Each ledger is `<name>.json`, an array of spans, and carries the source path in
 a sibling `<name>.source` file or a `_source` key on its first span.
@@ -76,7 +92,14 @@ def source_of(ledger: Path, spans: list[dict]) -> Path:
 
 
 def audit(ledger: Path) -> dict:
-    spans = json.loads(ledger.read_text())
+    # A malformed ledger must be one file's failure, not the run's. An agent
+    # writing a LaTeX title without escaping the backslash produces invalid
+    # JSON, and crashing here hides every other result in the batch.
+    try:
+        spans = json.loads(ledger.read_text())
+    except json.JSONDecodeError as exc:
+        return {"file": ledger.name, "lines": 0, "spans": 0, "cards": 0, "divs": 0,
+                "fatal": [f"MALFORMED: {exc}"], "loud": [], "kinds": {}}
     src = source_of(ledger, spans)
     lines = src.read_text(errors="replace").splitlines(keepends=True)
     n = len(lines)
@@ -84,7 +107,9 @@ def audit(ledger: Path) -> dict:
     loud: list[str] = []
 
     if not spans:
-        return {"file": src.name, "fatal": ["empty ledger"], "loud": [], "lines": n}
+        return {"file": src.name, "lines": n, "spans": 0, "cards": 0, "divs": 0,
+                "fatal": [f"EMPTY: ledger has no spans; {n} lines unaccounted for"],
+                "loud": [], "kinds": {}}
 
     # --- did we get the whole ledger, and does it cover the whole file --------
     if spans[0]["start_line"] != 1:
@@ -164,6 +189,16 @@ def main(argv: list[str]) -> int:
     if not argv:
         print(__doc__)
         return 2
+    source_root: Path | None = None
+    if "--sources" in argv:
+        i = argv.index("--sources")
+        source_root = Path(argv[i + 1])
+        argv = argv[:i] + argv[i + 2 :]
+    baseline: dict[str, int] = {}
+    if "--baseline" in argv:
+        i = argv.index("--baseline")
+        baseline = {x["file"]: x["cards"] for x in json.loads(Path(argv[i + 1]).read_text())}
+        argv = argv[:i] + argv[i + 2 :]
     if argv[0] == "--lines":
         for arg in argv[1:]:
             print(f"{line_count(Path(arg))}\t{arg}")
@@ -175,6 +210,13 @@ def main(argv: list[str]) -> int:
     if as_json:
         print(json.dumps(reports, indent=2))
         return 1 if any(r["fatal"] for r in reports) else 0
+
+    # A file that yielded bundles before and none now is a regression no
+    # single-run check can see -- nothing in this ledger looks wrong.
+    for r in reports:
+        was = baseline.get(r["file"])
+        if was is not None and r["cards"] < was:
+            r["loud"].insert(0, f"REGRESSION: {was} bundles previously, {r['cards']} now")
 
     bad = 0
     for r in reports:
@@ -200,6 +242,21 @@ def main(argv: list[str]) -> int:
         print("\n ?  SPLIT DESTINATION — the same role routed two ways across this batch:")
         for kind, dests in sorted(split.items()):
             print(f"        {kind}: " + ", ".join(f"{d}={c}" for d, c in dests.most_common()))
+
+    if source_root is not None:
+        def authored(p: Path) -> bool:
+            return "attachments" not in p.parts and "TexDocs" not in p.parts and not p.name.endswith("_stripped.md")
+
+        want = {p for p in source_root.rglob("*.md") if authored(p)}
+        have = {source_of(p, []) for p in sorted(root.glob("*.json")) if p.with_suffix(".source").exists()}
+        missing = sorted(want - have)
+        if missing:
+            bad += len(missing)
+            print(f"\n !! UNROUTED — {len(missing)} source files have no ledger:")
+            for m in missing:
+                print(f"        {m}")
+        else:
+            print(f"\n ok  completeness: all {len(want)} source files have a ledger")
 
     print(f"\n{len(reports)} ledgers, {bad} fatal, {sum(1 for r in reports if r['loud'] and not r['fatal'])} flagged")
     return 1 if bad else 0

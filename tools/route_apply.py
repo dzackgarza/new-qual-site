@@ -55,6 +55,15 @@ def tag(kind: str, body: str) -> str:
     return f"{KIND_PREFIX.get(kind, 'X')}-" + base64.b32encode(digest).decode()[:5]
 
 
+def rel_path(src: Path) -> Path:
+    """The source's path relative to its corpus root, so the wiki keeps its tree."""
+    parts = src.parts
+    for marker in ("qual-wiki", "qual-review-and-solutions"):
+        if marker in parts:
+            return Path(*parts[parts.index(marker) + 1 :])
+    return Path(src.name)
+
+
 def area_of(src: Path) -> str | None:
     for part in src.parts:
         if part in AREA_BY_PREFIX:
@@ -119,7 +128,13 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
     (out / "corpus" / "wiki").mkdir(parents=True, exist_ok=True)
     for t, text in cards:
         (out / "corpus" / "wiki" / f"{t}.md").write_text(text)
-    wiki_page = out / "wiki" / src.name
+
+    # The wiki page keeps its place in the tree. Writing by basename alone
+    # collides -- qual-wiki has three `00_Resources.md`, three `000_Preface.md`
+    # -- and silently overwrites, which is indistinguishable from a routing
+    # failure when the reconstruction check runs. The directory structure is
+    # also the wiki's navigation, so flattening would discard it regardless.
+    wiki_page = out / "wiki" / rel_path(src)
     wiki_page.parent.mkdir(parents=True, exist_ok=True)
     wiki_page.write_text("".join(page))
 
