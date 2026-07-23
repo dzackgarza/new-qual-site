@@ -18,10 +18,11 @@ Failure modes observed, in the order they were found:
   LUMPED        far fewer spans than the file has fenced divs. A ledger reading
                 "lines 4-1040 are definitions, all wiki" passes every byte-level
                 check and resolves nothing.
-  DETACHED      a solution/hint/concept emitted as its own card. Solutions are
-                bundled into the problem card they belong to -- one card holds
-                the statement and every solution of it -- so a standalone one is
-                a routing error, not a link to repair.
+  DETACHED      a solution/hint/concept/strategy emitted as its own card. The
+                unit of the problem bank is a *problem bundle*: one card holding
+                the statement (which may be multi-part), any hints, strategies,
+                and concepts, links to other items, and every solution of it. A
+                standalone piece is a routing error, not a link to repair.
   DANGLING      `attaches_to` naming a span that is not a problem or exercise.
   BARREN        a file full of numbered problem headings that produced no cards.
                 Not proof of error -- a link list of PDFs legitimately yields
@@ -45,9 +46,11 @@ from collections import Counter
 from pathlib import Path
 
 FENCE = re.compile(r"^:{3,}\s*\{?\s*\.?[\w-]")
-# Bundled into the problem card, never emitted alongside it. A problem card
-# holds its statement and all of its solutions; multiple solutions are multiple
-# divs in one body, which is what `site/filters/reveal.lua` already renders.
+# Bundled into the problem card, never emitted alongside it. The bank's unit is
+# a *problem bundle*: statement (possibly multi-part), hints, strategies,
+# concepts, links to other items, and any number of solutions -- all one card.
+# Multiple solutions are multiple divs in one body, which is what
+# `site/filters/reveal.lua` already renders, each collapsed behind a summary.
 BUNDLED = {"solution", "hint", "concept", "strategy"}
 ANCHORS = {"problem", "exercise"}
 LUMP_RATIO = 0.5  # spans/divs below this is a lump, not a resolution
