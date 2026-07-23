@@ -7,6 +7,7 @@ Unknown metadata fields are rejected, so a typo fails the build.
 
 from __future__ import annotations
 
+import subprocess
 from pathlib import Path
 from typing import Annotated, Literal
 
@@ -320,8 +321,28 @@ MARKDOWN = "markdown+tex_math_single_backslash"
 
 
 def to_ast(markdown: str) -> str:
-    ast: str = pf.convert_text(markdown, input_format=MARKDOWN, output_format="json", standalone=True)
-    return ast
+    """Read a card body, and treat any reader diagnostic as a build failure.
+
+    pandoc is invoked directly rather than through `pf.convert_text` for one
+    reason: panflute raises `OSError("")` on a non-zero exit and drops the
+    message, and the message is the whole point. The parsing is still entirely
+    pandoc's; only the error handling is ours.
+
+    A warning from this reader is not cosmetic. `\\qty{ x }` outside math makes
+    the raw-TeX inline parser run to end of input, so the closing `:::` and
+    every block after it end up inside a `RawInline` and the card is silently
+    truncated. pandoc reports that; discarding the report is what made it
+    silent.
+    """
+    proc = subprocess.run(
+        ["pandoc", "--from", MARKDOWN, "--to", "json", "--standalone", "--fail-if-warnings"],
+        input=markdown,
+        capture_output=True,
+        text=True,
+    )
+    if proc.returncode != 0:
+        raise ValueError(proc.stderr.strip())
+    return proc.stdout
 
 
 def from_ast(ast: str) -> pf.Doc:
