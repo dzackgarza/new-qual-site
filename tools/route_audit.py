@@ -75,6 +75,8 @@ from collections import Counter
 from pathlib import Path
 
 FENCE = re.compile(r"^:{3,}\s*\{?\s*\.?[\w-]")
+# The divs a reader can be asked to do: what the problem bank is made of.
+ASKABLE = re.compile(r"^:{3,}\s*\{?\s*\.(problem|exercise)\b")
 # Bundled into the problem card, never emitted alongside it. The bank's unit is
 # a *problem bundle*: statement (possibly multi-part), hints, strategies,
 # concepts, links to other items, and any number of solutions -- all one card.
@@ -82,7 +84,7 @@ FENCE = re.compile(r"^:{3,}\s*\{?\s*\.?[\w-]")
 # `site/filters/reveal.lua` already renders, each collapsed behind a summary.
 BUNDLED = {"solution", "hint", "concept", "strategy"}
 ANCHORS = {"problem", "exercise"}
-LUMP_RATIO = 0.5  # spans/divs below this is a lump, not a resolution
+LUMP_RATIO = 0.5  # cards per askable div below this is a lump, not a resolution
 # A problem card legitimately runs long: statement plus every worked solution.
 # Only non-card spans are suspicious at this size -- a 555-line "definition" is
 # a lump, a 217-line problem is a problem.
@@ -136,9 +138,19 @@ def audit(ledger: Path) -> dict:
             fatal.append("REASSEMBLY: spans concatenated do not reproduce the source")
 
     # --- did it actually resolve anything ------------------------------------
+    # Count what the bank is actually made of, not every fence. A bundle holds a
+    # problem plus its concepts, strategies, solutions and their proofs, so cards
+    # are legitimately far fewer than divs -- comparing against all of them
+    # flagged four files that were correct: `36_Galois_Theory_Computations.md`
+    # has 60 divs and not one problem or exercise among them, so 0 cards is the
+    # right answer, and `50_Linear Algebra.md` has exactly 4 exercises and got
+    # exactly 4 cards. The question worth asking is whether the problems in the
+    # file became cards.
     divs = sum(1 for line in lines if FENCE.match(line))
-    if divs and len(spans) < divs * LUMP_RATIO:
-        loud.append(f"LUMPED: {len(spans)} spans for {divs} fenced divs")
+    askable = sum(1 for line in lines if ASKABLE.match(line))
+    cards = sum(1 for s in spans if s.get("destination") == "card")
+    if askable and cards < askable * LUMP_RATIO:
+        loud.append(f"LUMPED: {cards} cards for {askable} problem/exercise divs")
     prose = [s for s in spans if s.get("kind") not in ANCHORS]
     if prose:
         biggest = max(s["end_line"] - s["start_line"] + 1 for s in prose)
