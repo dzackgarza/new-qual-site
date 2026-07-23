@@ -348,9 +348,15 @@ def to_ast(markdown: str) -> str:
     and the measured count in real data is zero. See
     `tests/test_reader_warnings.py`.
 
-    It has a known cost: qual-wiki emits benign warnings such as
-    `Macro '\\sech' already defined, ignoring`, so this will need revisiting when
-    the WS2 importer reads those files rather than authored cards.
+    A cost I claimed for it does not exist. I said qual-wiki emits "benign"
+    warnings that would trip this gate during WS2. Measured: its 263 authored
+    files -- WS2's actual input -- emit **zero** pandoc warnings in this dialect.
+    The one warning I had glimpsed comes from a `TexDocs/` aggregate, which WS2
+    excludes, and it is not benign either: that file carries two
+    `\\newcommand{\\sech}`, one disabled with a leading `%`, and pandoc keeps the
+    disabled one, ignores the author's active one, and emits the `%` stripped so
+    the generated LaTeX holds a duplicate definition. I called it benign without
+    reading it.
     """
     proc = subprocess.run(
         ["pandoc", "--from", MARKDOWN, "--to", "json", "--standalone", "--fail-if-warnings"],
