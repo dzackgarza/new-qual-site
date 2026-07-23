@@ -4,7 +4,8 @@ id: P-YCLOT
 kind: problem
 title: "- (**Important**)"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

@@ -4,7 +4,8 @@ id: P-VLG4M
 kind: problem
 title: "Spring 2012"
 classification:
-  areas: []
+  areas:
+  - real-analysis
   topics: []
 relations: []
 review: draft

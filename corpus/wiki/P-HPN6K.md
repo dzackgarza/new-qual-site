@@ -4,7 +4,8 @@ id: P-HPN6K
 kind: problem
 title: "- $\\ZZ$"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

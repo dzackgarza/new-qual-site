@@ -4,7 +4,8 @@ id: P-PKJVI
 kind: problem
 title: "- Show that a group of order $pq$ where $p > q$. Show that $G$ has a n\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

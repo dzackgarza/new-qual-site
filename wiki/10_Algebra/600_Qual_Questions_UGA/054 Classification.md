@@ -2,10 +2,10 @@
 
 ## Spring 2020 #1 #algebra/qual/work
 
-[[P-RU4JS]]
+[[P-TU4KT]]
 
 ## Spring 2019 #3 #algebra/qual/completed
-[[P-NUDZB]]
+[[P-MD2U3]]
 ## Spring 2012 #3 #algebra/qual/work
 [[P-ZLNVG]]
 

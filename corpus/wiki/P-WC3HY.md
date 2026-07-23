@@ -4,7 +4,8 @@ id: P-WC3HY
 kind: problem
 title: "- State definitions of the following:"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

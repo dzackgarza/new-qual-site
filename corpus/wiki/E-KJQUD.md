@@ -4,7 +4,8 @@ id: E-KJQUD
 kind: exercise
 title: "- What is the **closure** of a subspace $E\\subseteq X$?"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

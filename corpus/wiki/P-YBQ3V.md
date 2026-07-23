@@ -4,7 +4,8 @@ id: P-YBQ3V
 kind: problem
 title: "- What property on a space guarantees that compact sets are closed"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

@@ -9,5 +9,5 @@
 ## Problems marked "to work"
 
 ```query
-section:(\work)
+section:()
 ```

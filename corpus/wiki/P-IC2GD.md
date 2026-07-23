@@ -4,7 +4,8 @@ id: P-IC2GD
 kind: problem
 title: "![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 13.png]]"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

@@ -4,7 +4,8 @@ id: P-SNEIS
 kind: problem
 title: "- Prove the *fundamental theorem of cosets*: for $xH, yH\\in G/H$,"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

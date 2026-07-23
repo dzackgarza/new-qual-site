@@ -4,7 +4,8 @@ id: E-FLVZU
 kind: exercise
 title: "- What does it mean for a topological space to be **compact**?"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

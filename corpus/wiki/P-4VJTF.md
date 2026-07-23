@@ -4,7 +4,8 @@ id: P-4VJTF
 kind: problem
 title: "- Let $\\FF_p$ be the finite field with $p$ elements, where $p$ is a pr\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

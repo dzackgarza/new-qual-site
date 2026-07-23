@@ -4,7 +4,8 @@ id: P-KOQPF
 kind: problem
 title: "- Show that if $G$ is an infinite simple group, then $G$ can not have\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

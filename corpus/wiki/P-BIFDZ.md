@@ -4,7 +4,8 @@ id: P-BIFDZ
 kind: problem
 title: "- Find two groups $G\\not\\cong H$ where $\\Aut G\\cong \\Aut H$."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

@@ -4,7 +4,8 @@ id: P-L7SEG
 kind: problem
 title: "- Let $G_1, G_2$ be groups and $H_2 \\leq G_2$ a subgroup."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

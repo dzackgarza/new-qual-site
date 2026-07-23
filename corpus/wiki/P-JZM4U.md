@@ -4,7 +4,8 @@ id: P-JZM4U
 kind: problem
 title: "- State the class equation."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

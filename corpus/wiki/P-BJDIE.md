@@ -4,7 +4,8 @@ id: P-BJDIE
 kind: problem
 title: "- What is the order of $\\GL_n(\\FF_p)$?"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

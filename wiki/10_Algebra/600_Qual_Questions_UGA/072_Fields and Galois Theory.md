@@ -41,7 +41,7 @@
 ### Fall 2019 Midterm #6  #algebra/qual/work
 [[P-2CP2Q]]
 ### Spring 2018 #2 #algebra/qual/completed
-[[P-TZEZZ]]
+[[P-OG5DJ]]
 ### Spring 2020 #4 #algebra/qual/work
 [[P-3YCHE]]
 
@@ -82,7 +82,7 @@
 
 [[P-JZSN3]]
 ### Fall 2019 #4 #algebra/qual/completed
-[[P-YK3UZ]]
+[[P-CGBXN]]
 ### Spring 2019 #2 #algebra/qual/completed
 [[P-IZ2VD]]
 ### $\star$ Fall 2016 #5 #algebra/qual/work

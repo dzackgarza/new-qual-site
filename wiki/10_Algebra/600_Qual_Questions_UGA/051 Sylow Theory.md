@@ -24,7 +24,7 @@
 ## Fall 2018 #1 #algebra/qual/completed 
 [[P-PKXBP]]
 ## Fall 2019 #2  #algebra/qual/completed
-[[P-NT3SF]]
+[[P-VI6QM]]
 ## Spring 2021 #3 #algebra/qual/work
 
 [[P-FPWNW]]

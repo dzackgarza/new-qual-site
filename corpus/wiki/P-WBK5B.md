@@ -4,7 +4,8 @@ id: P-WBK5B
 kind: problem
 title: "- Show that for $n\\neq 6$, $\\Aut(S_n) = \\Inn(S^n)$."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

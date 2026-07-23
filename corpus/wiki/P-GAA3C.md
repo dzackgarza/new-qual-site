@@ -4,7 +4,8 @@ id: P-GAA3C
 kind: problem
 title: "Does the converse hold?"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

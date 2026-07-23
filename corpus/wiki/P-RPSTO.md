@@ -4,7 +4,8 @@ id: P-RPSTO
 kind: problem
 title: "- Show that if $G$ is solvable, then $G$ contains a nontrivial normal\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

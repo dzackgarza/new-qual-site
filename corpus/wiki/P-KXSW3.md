@@ -4,7 +4,8 @@ id: P-KXSW3
 kind: problem
 title: "- Let $G\\leq H$ where $H$ is a finite $p\\dash$group, and suppose $\\phi\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

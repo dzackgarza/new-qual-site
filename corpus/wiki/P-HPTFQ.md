@@ -4,7 +4,8 @@ id: P-HPTFQ
 kind: problem
 title: "- Prove Cauchy's theorem."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

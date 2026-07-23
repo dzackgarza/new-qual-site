@@ -55,7 +55,7 @@ For $1\leq p< \infty$, $(L^p)\dual \cong L^q$.
 ?
 :::
 
-\todo[inline]{todo}
+
 
 :::{.proof title="$p=2$ case"}
 Use Riesz Representation for Hilbert spaces.

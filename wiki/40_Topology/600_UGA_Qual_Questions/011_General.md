@@ -17,14 +17,14 @@
 [[P-K5XUM]]
 ### 12 (Spring '06). #topology/qual/work
 
-[[P-6QYWK]]
+[[P-KM7Z4]]
 ### 13 (Fall '06). #topology/qual/work
 
 [[P-B2VGV]]
 
 ### 14 (Fall '07) #topology/qual/work
 
-[[P-2SIJV]]
+[[P-MYZU2]]
 ### 5 (Fall '04). #topology/qual/work
 
 [[P-QN7OP]]
@@ -61,7 +61,7 @@
 [[P-QICKA]]
 ### 2 (Spring '12) #topology/qual/work
 
-[[P-QHAJL]]
+[[P-L4EMZ]]
 ### 3 (Spring '09) #topology/qual/work
 
 [[P-L3BUX]]
@@ -79,7 +79,7 @@
 [[P-43KOX]]
 ### 20 (Fall '14) #topology/qual/completed
 
-[[P-KP3AC]]
+[[P-7N24X]]
 
 ### 22 (Fall '18) #topology/qual/work
 
@@ -92,7 +92,7 @@
 [[P-G373O]]
 ### Spring '19 #1  #topology/qual/completed
 
-[[P-CYWFK]]
+[[P-KVMKV]]
 ### Spring 2019 #2 #topology/qual/completed
 
 [[P-PATOJ]]
@@ -110,7 +110,7 @@
 [[P-HVKUA]]
 ### 11 (Fall '18) #topology/qual/work
 
-[[P-XPB4L]]
+[[P-XMOZA]]
 ### Spring 2021 #2
 
 [[P-2CN7G]]

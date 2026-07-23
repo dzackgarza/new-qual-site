@@ -4,7 +4,8 @@ id: P-2DITY
 kind: problem
 title: "- Show that the center of a $p\\dash$group is nontrivial"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

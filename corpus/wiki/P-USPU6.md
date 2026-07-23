@@ -4,7 +4,8 @@ id: P-USPU6
 kind: problem
 title: "- Show that any finite abelian group is isomorphic to the direct produ\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

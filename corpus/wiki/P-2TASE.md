@@ -4,7 +4,8 @@ id: P-2TASE
 kind: problem
 title: "- **Important**: Pick your favorite composite number $m = \\prod p_i^{e\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

@@ -4,7 +4,8 @@ id: P-WY2K6
 kind: problem
 title: "- Prove Lagrange's theorem."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

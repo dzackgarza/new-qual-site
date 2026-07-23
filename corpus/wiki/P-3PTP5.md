@@ -4,7 +4,8 @@ id: P-3PTP5
 kind: problem
 title: "Prove that a commutative ring with unit is a field if and only if its\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

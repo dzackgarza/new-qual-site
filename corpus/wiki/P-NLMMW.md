@@ -4,7 +4,8 @@ id: P-NLMMW
 kind: problem
 title: "- If $\\size G = pq$, is $G$ necessarily nilpotent?"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

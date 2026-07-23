@@ -4,7 +4,8 @@ id: P-SUU6D
 kind: problem
 title: "- How many elements in $\\Aut(\\ZZ/20)$ have order 4?"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

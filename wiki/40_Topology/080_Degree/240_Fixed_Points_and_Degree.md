@@ -48,7 +48,7 @@ Every $f: B^n \to B^n$ has a fixed point.
 :::{.proof title="?"}
 
 :::
-\todo[inline]{Proof}
+
 
 :::{.theorem title="Hairy Ball"}
 There is no non-vanishing tangent vector field on even dimensional spheres $S^{2n}$.

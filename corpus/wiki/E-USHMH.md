@@ -4,7 +4,8 @@ id: E-USHMH
 kind: exercise
 title: "- ![[_attachments/Pasted image 20210517025227.png]]"
 classification:
-  areas: []
+  areas:
+  - complex-analysis
   topics: []
 relations: []
 review: draft

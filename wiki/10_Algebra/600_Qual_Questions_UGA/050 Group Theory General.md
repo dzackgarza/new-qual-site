@@ -16,13 +16,13 @@
 [[P-732VA]]
 
 ### Spring 2013 #3 #algebra/qual/completed
-[[P-JABST]]
+[[P-67U4W]]
 
 
 ## Burnside / Class Equation
 
 ### Spring 2019 #4 #algebra/qual/completed
-[[P-XQRXY]]
+[[P-M6W74]]
 
 ## Group Actions / Representations
 

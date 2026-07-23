@@ -217,7 +217,6 @@ $\GF(p^n)$ is the splitting field of $\rho(x) = x^{p^n} - x$, and the elements a
 :::{.proof}
 Every element is a root by Cauchy's theorem, and the $p^n$ roots are distinct since its derivative is identically $-1$.
 
-\todo[inline]{todo}
 :::
 
 :::{.proposition title="Splits Product of Irreducibles"}
@@ -362,7 +361,7 @@ If $K_{/\QQ}$ is an abelian extension, then $K \subseteq \QQ(\zeta_m)$ for some 
 ## Misc
 
 :::{.definition title="Elementary Symmetric Functions"}
-\todo[inline]{todo}
+
 :::
 
 ## Exercises
@@ -371,6 +370,6 @@ If $K_{/\QQ}$ is an abelian extension, then $K \subseteq \QQ(\zeta_m)$ for some 
 [[E-6OUJV]]
 
 
-[[E-XUEQ4]]
+[[E-OB3LO]]
 
 [[E-PHSV5]]

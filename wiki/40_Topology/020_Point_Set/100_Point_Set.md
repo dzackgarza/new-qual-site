@@ -196,8 +196,6 @@ Then no tube about $y=0$ is entirely contained within $N$:
 
 :::{.proof title="Detailed proof of the Tube Lemma"}
 
-\todo[inline]{Check this proof!}
-
 - Let $\theset{U_j\cross V_j \suchthat j\in J} \covers X\cross Y$. 
 - Fix a point $x_0\in X$, then $\theset{x_0}\cross Y \subset N$ for some open set $N$.
 - By the tube lemma, there is a $U^x \subset X$ such that the tube $U^x \cross Y \subset N$.

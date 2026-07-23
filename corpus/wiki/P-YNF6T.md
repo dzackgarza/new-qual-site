@@ -4,7 +4,8 @@ id: P-YNF6T
 kind: problem
 title: "- Suppose $\\size G = pq$ with $p, q\\geq 2$ prime, and let $H\\leq G$ be\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

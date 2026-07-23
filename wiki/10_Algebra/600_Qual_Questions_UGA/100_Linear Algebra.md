@@ -40,16 +40,16 @@
 [[P-LW3KB]]
 
 ##  Fall 2018 #4 #algebra/qual/completed 
-[[P-646MY]]
+[[P-P3GIM]]
 
 ## Fall 2018 #5 #algebra/qual/completed
 [[P-3YFNY]]
 
 ## Fall 2019 #8 #algebra/qual/work
-[[P-NAOJU]]
+[[P-UQ4GC]]
 
 ## Spring 2013 #6 #algebra/qual/completed
-[[P-KV6KL]]
+[[P-CZVX6]]
 
 
 ## Fall 2020 #8 #algebra/qual/work

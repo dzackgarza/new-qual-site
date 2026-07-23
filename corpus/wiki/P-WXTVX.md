@@ -4,7 +4,8 @@ id: P-WXTVX
 kind: problem
 title: "- Show that $X$ is connected iff the only subsets of $X$ which are bot\u2026"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

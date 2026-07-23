@@ -4,7 +4,8 @@ id: P-HYQCG
 kind: problem
 title: "- Define what a composition series is, and state what it means for a g\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

@@ -35,7 +35,7 @@
 [[P-UKZE6]]
 
 ### Spring 2018 #8 #algebra/qual/completed
-[[P-SI6E6]]
+[[P-M2R25]]
 
 
 ## Zero Divisors and Nilpotents
@@ -66,7 +66,7 @@
 [[P-6KHMF]]
 
 ### Fall 2019 #6 #algebra/qual/completed
-[[P-5UKYR]]
+[[P-USHDW]]
 
 
 ## Noetherian Rings
@@ -76,7 +76,7 @@
 
 ### Spring 2021 #6 #algebra/qual/work
 
-[[P-UK6SH]]
+[[P-GN4CE]]
 
 ## Simple Rings
 

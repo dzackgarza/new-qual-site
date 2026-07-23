@@ -4,7 +4,8 @@ id: P-K2U6D
 kind: problem
 title: "- . Assume that $G$ is a group of order $231 = 3\\times 7\\times 11$. Sh\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

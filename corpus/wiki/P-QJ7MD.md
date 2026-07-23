@@ -4,7 +4,8 @@ id: P-QJ7MD
 kind: problem
 title: "- (**Important**)"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

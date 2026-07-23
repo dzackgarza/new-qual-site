@@ -2,7 +2,7 @@
 
 ## 1 (Spring 11/Spring '14) #topology/qual/completed
 
-[[P-PVCYK]]
+[[P-KFPX5]]
 
 
 ## 2 (Fall '06/Fall '09/Fall '15) #topology/qual/work
@@ -28,7 +28,7 @@
 
 
 ## 7 (Fall '17) #topology/qual/completed
-[[P-RIURT]]
+[[P-7IGID]]
 
 
 ## 8 (Spring '19) #topology/qual/completed

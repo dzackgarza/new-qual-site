@@ -4,7 +4,8 @@ id: E-ARJT3
 kind: exercise
 title: "- What is a **separable** space?"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

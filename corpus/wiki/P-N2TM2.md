@@ -4,7 +4,8 @@ id: P-N2TM2
 kind: problem
 title: "- For each of the following group actions, identify what the orbits, s\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

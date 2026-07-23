@@ -4,7 +4,8 @@ id: P-OTXNQ
 kind: problem
 title: "Does this hold when $A$ is instead an open subset?"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

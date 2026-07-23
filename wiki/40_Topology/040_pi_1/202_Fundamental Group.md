@@ -302,7 +302,7 @@ Any continuous map between CW complexes is homotopy equivalent to a cellular map
 :::{.theorem title="Freudenthal Suspension"}
 
 :::
-\todo[inline]{Theorem}
+
 
 :::{.fact title="Unsorted facts about higher homotopy groups"}
 \envlist

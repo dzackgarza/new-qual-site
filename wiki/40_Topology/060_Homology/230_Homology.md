@@ -15,11 +15,12 @@ H_{n}\qty{\bigvee_\alpha X_\alpha} &\cong \prod_\alpha H_{n} X_\alpha
 \]
 See footnote for categorical interpretation.[^wedge]
 
-
 [^wedge]: $\bigvee$ is the coproduct in the category $\mathbf{Top}_0$ of pointed topological spaces, and alternatively, $X\vee Y$ is the pushout in $\mathbf{Top}$ of $X \from \pt \to Y$
 
 :::
-\todo[inline]{May need some good pair condition?}
+:::{.remark}
+May need some good pair condition?
+:::
 
 :::{.example title="Application"}
 \[
@@ -48,7 +49,7 @@ H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bi
 :::{.theorem title="Excision"}
 Todo
 :::
-\todo[inline]{Excision.}
+
 
 :::{.fact title="Assorted facts}
 \envlist
@@ -82,7 +83,6 @@ H_{i}(S^n) =
 
 :::
 
-\todo[inline]{Homology examples.}
 
 ## Mayer-Vietoris
 
@@ -219,7 +219,9 @@ H^i(X; \ZZ) &= F(H_{i}(X; \ZZ)) \times T(H_{i-1}(X; \ZZ))\\
 H_{i}(X; \ZZ) &= F(H^i(X; \ZZ)) \times T(H^{i+1}(X; \ZZ))
 \]
 :::
-\todo[inline]{Might need assumptions: finite CW complex?}
+:::{.remark}
+Might need assumptions: finite CW complex?
+:::
 
 ## Relative Homology
 

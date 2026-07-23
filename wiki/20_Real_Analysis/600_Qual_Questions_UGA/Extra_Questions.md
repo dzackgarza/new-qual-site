@@ -197,7 +197,7 @@
 
 # Integral Calculus
 
-## 1.  
+
 
 [[P-3SSNK]]
 

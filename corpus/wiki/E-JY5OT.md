@@ -4,7 +4,8 @@ id: E-JY5OT
 kind: exercise
 title: "- Derive the reverse triangle inequality from the triangle inequality."
 classification:
-  areas: []
+  areas:
+  - real-analysis
   topics: []
 relations: []
 review: draft

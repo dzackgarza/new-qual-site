@@ -4,7 +4,8 @@ id: P-HWBXR
 kind: problem
 title: "Show the irreducibility criterion for polynomials $f\\in k[x]$ of degre\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

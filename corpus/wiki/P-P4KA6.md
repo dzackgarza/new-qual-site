@@ -4,7 +4,8 @@ id: P-P4KA6
 kind: problem
 title: "- Prove the \"Recognizing direct products\" theorem: if $H, K$ are norma\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

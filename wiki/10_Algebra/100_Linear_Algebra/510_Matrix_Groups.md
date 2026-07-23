@@ -7,7 +7,7 @@
 :::
 
 :::{.proposition title="Order of $\GL_n$"}
-\todo[inline]{todo}
+
 :::
 
 :::{.definition title="Special Linear Group"}
@@ -57,6 +57,5 @@ J \da
 
 :::
 
-\todo[inline]{Matrix group definitions.}
 
 

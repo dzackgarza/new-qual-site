@@ -4,7 +4,8 @@ id: P-SERVA
 kind: problem
 title: "- Let $H\\leq G$ be a subgroup (not necessarily normal)."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

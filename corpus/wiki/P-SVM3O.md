@@ -4,7 +4,8 @@ id: P-SVM3O
 kind: problem
 title: "- Prove that for every $g\\in G$, the order of $g$ divides the order of\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

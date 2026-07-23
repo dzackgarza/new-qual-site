@@ -4,7 +4,8 @@ id: P-SXM4Q
 kind: problem
 title: "- Let $s\\in G$, and state the definition of the **centralizer** of $C_\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

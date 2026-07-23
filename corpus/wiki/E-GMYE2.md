@@ -4,7 +4,8 @@ id: E-GMYE2
 kind: exercise
 title: "- Find a function that is differentiable but not continuously differen\u2026"
 classification:
-  areas: []
+  areas:
+  - real-analysis
   topics: []
 relations: []
 review: draft

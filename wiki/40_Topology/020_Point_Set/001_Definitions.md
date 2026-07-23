@@ -486,7 +486,6 @@ A\subset X, ~ \diam(A) < \delta_{L} \implies A\subseteq U_\alpha \text{ for some
 :::{.definition title="Alexander duality"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Boundary of a manifold"}
 Points $x\in M^n$ defined by 
@@ -510,7 +509,6 @@ where $F_{i}^j$ is the face operator, which acts on a simplicial map $\sigma$ by
 :::{.definition title="Cellular Homology"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Cellular Map"}
 A map $X \mapsvia{f} Y$ is said to be cellular if $f(X^{(n)}) \subseteq Y^{(n)}$ where $X^{(n)}$ denotes the $n\dash$ skeleton.
@@ -560,7 +558,6 @@ This is a useful property because it supplies you with a homotopy.
 :::{.definition title="Coproduct"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Covering Space"}
 A **covering space** of $X$ is the data $p: \tilde X \to X$ such that
@@ -604,7 +601,6 @@ Also used to show $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
 :::{.definition title="CW Complex"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="CW Cell"}
 An $n\dash$cell of $X$, say $e^n$, is the image of a map $\Phi: B^n \to X$. That is, $e^n = \Phi(B^n)$. Attaching an $n\dash$cell to $X$ is equivalent to forming the space $B^n \coprod_{f} X$ where $f: \del B^n \to X$.
@@ -628,7 +624,6 @@ i.e topological automorphisms of $\tilde X$ which fix $X$ pointwise.
 :::{.definition title="Deformation"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Deformation Retract"}
 A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ that is a retraction (so $r\circ \iota = \id_{A}$) *that also satisfies* $\iota \circ r \homotopic \id_{X}$.
@@ -674,12 +669,10 @@ For $x\in M$, the only nonvanishing homology group $H_{i}(M, M - \theset{x}; \ZZ
 :::{.definition title="Euler Characteristic"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Excision"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Free and Properly Discontinuous"}
 An action $G\actson X$ is **properly discontinuous** if each $x\in X$ has a neighborhood $U$ such that all of the images $g(U)$ for $g\in G$ are disjoint, i.e. $g_1(U) \intersect g_2(U) \neq \emptyset \implies g_1 = g_2$.
@@ -687,17 +680,14 @@ The action is **free** if there are no fixed points.
 
 Sometimes a slightly weaker condition is used: every point $x\in X$ has a neighborhood $U$ such that $U \intersect G(U) \neq \emptyset$ for only finitely many $G$.
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Free Product"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Free product with amalgamation"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Fundamental Class"}
 For a connected, closed, orientable manifold, $[M]$ is a generator of $H_{n}(M; \ZZ) = \ZZ$.
@@ -706,17 +696,14 @@ For a connected, closed, orientable manifold, $[M]$ is a generator of $H_{n}(M; 
 :::{.definition title="Fundamental Group"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Gluing Along a Map"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Homotopic"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Homotopy"}
 Let $X, Y$ be topological spaces and $f,g: X \to Y$ continuous maps. Then a **homotopy** from $f$ to $g$ is a continuous function
@@ -734,7 +721,6 @@ for all $x\in X$. If such a homotopy exists, we write $f\homotopic g$. This is a
 :::{.definition title="Homotopy Class"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Homotopy Equivalence"}
 Let $f: X \to Y$ be a continuous map, then $f$ is said to be a *homotopy equivalence* if there exists a continuous map $g: X \to Y$ such that
@@ -753,17 +739,14 @@ If such an $f$ exists, we write $X \homotopic Y$ and say $X$ and $Y$ have the sa
 :::{.definition title="Homotopy Extension Property"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Homotopy Groups"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Homotopy Lifting Property"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Intersection Pairing"}
 For a manifold $M$, a map on homology defined by
@@ -806,22 +789,18 @@ which is a nondegenerate bilinear form.
 :::{.definition title="Kronecker Product"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Lefschetz duality"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Lefschetz Number"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Lens Space"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Local Degree"}
 At a point $x \in V \subset M$, a generator of $H_{n}(V, V-\theset{x})$. The degree of a map $S^n \to S^n$ is the sum of its local degrees.
@@ -830,7 +809,6 @@ At a point $x \in V \subset M$, a generator of $H_{n}(V, V-\theset{x})$. The deg
 :::{.definition title="Local Orientation"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Local homology"}
 $H_{n}(X, X-A; \ZZ)$ is the local homology at $A$, also denoted $H_{n}(X \mid A)$
@@ -851,22 +829,18 @@ A manifold in which open neighborhoods may be isomorphic to either $\RR^n$ or a 
 :::{.definition title="Mayer-Vietoris Sequence"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Monodromy"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="N-cell"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="N-connected"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Normal covering space (a.k.a. 'regular')"}
 A covering space is **normal** if and only if for every $x\in X$ and every pair of lifts $\tilde x_1, \tilde x_2$, there is a deck transformation $f$ such that $f(\tilde x_1) = \tilde x_2$.
@@ -922,17 +896,14 @@ TFAE:
 :::{.definition title="Oriented manifold"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Path"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Path Lifting Property"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Poincaré Duality"}
 For a closed, orientable $n\dash$manifold, following map $[M] \frown \wait$ is an isomorphism: $$ D: H^k(M; R) \to H_{n-k}(M; R) \\ D(\alpha) = [M] \frown \alpha$$
@@ -941,22 +912,18 @@ For a closed, orientable $n\dash$manifold, following map $[M] \frown \wait$ is a
 :::{.definition title="R-orientability"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Relative boundaries"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Relative cycles"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Relative homotopy groups"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Semilocally Simply Connected"}
 A space $X$ is **semilocally simply connected** if every $x\in X$ has a neighborhood $U$ such that $U\injects X$ induces the trivial map $\pi_1(U;x) \to \pi_1(X, x)$.
@@ -965,7 +932,6 @@ A space $X$ is **semilocally simply connected** if every $x\in X$ has a neighbor
 :::{.definition title="Short exact sequence"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Simplicial Complex"}
 Given a simplex $\sigma = [v_1 \cdots v_n]$, define the **face map** 
@@ -1015,27 +981,22 @@ Equivalently, \( \pi _1 X = 1 \) is trivial.
 :::{.definition title="Singular Homology"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Universal Cover"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Weak Homotopy Equivalence"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Weak Topology"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Wedge Product"}
 
 :::
-\todo[inline]{Definitions}
 
 ## Homotopy
 
@@ -1062,37 +1023,30 @@ Explicitly given by
 :::{.definition title="Smash Product"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Moore Space"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Mapping Cone"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Mapping Cylinder"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Mapping Path Space"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Loop Space"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Eilenberg-MacLane Space"}
 
 :::
-\todo[inline]{Definitions}
 
 ## Homological Algebra
 
@@ -1107,7 +1061,6 @@ where $L_{n}$ denotes the $n$th left derived functor.
 :::{.definition title="Inverse Limit"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Generating Set"}
 $S = \theset{s_{i}}$ is a generating set for an $R\dash$ module $M$ iff $$x\in M \implies x = \sum r_{i} s_{i}$$ for some coefficients $r_{i} \in R$ (where this sum may be infinite).
@@ -1147,7 +1100,6 @@ $$
 :::{.definition title="Coboundary"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Cochain"}
 An cochain $c \in C^p(X; R)$ is a map $c \in \hom(C_{p}(X; R), R)$ on chains.
@@ -1156,12 +1108,10 @@ An cochain $c \in C^p(X; R)$ is a map $c \in \hom(C_{p}(X; R), R)$ on chains.
 :::{.definition title="Cocycle"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Cycle"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Derived Functor"}
 For a functor $T$ and an $R\dash$module $A$, a *left derived functor* $(L_{nT})$ is defined as $h_{n}(TP_{A})$, where $P_{A}$ is a projective resolution of $A$.
@@ -1170,17 +1120,14 @@ For a functor $T$ and an $R\dash$module $A$, a *left derived functor* $(L_{nT})$
 :::{.definition title="Direct Limit"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Direct Product"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Direct Sum"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Exact Functor"}
 A functor $T$ is *right exact* if a short exact sequence 
@@ -1210,12 +1157,10 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 :::{.definition title="Exact Sequence"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Ext Group"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Flat"}
 An $R\dash$module is flat if $A\tensor_{R} \wait$ is an exact functor.
@@ -1228,17 +1173,14 @@ A $\dash$module $M$ with a basis $S = \theset{s_{i}}$ of generating elements. Ev
 :::{.definition title="Group Ring"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Homologous"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Limit"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Linear Independence"}
 A generating $S$ for a module $M$ is linearly independent if $\sum r_{i} s_{i} = 0_M \implies \forall i,~r_{i} = 0$ where $s_{i}\in S, r_{i} \in R$.
@@ -1247,7 +1189,6 @@ A generating $S$ for a module $M$ is linearly independent if $\sum r_{i} s_{i} =
 :::{.definition title="Long exact sequence"}
 
 :::
-\todo[inline]{Definitions}
 
 
 
@@ -1258,20 +1199,16 @@ A pairing alone is an $R\dash$bilinear module map, or equivalently a map out of 
 :::{.definition title="Pullback"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Pushout"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Quasi-isomorphism"}
 
 :::
-\todo[inline]{Definitions}
 
 :::{.definition title="Projective Resolution"}
 
 :::
-\todo[inline]{Definitions}
 

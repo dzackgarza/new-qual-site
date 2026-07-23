@@ -4,7 +4,8 @@ id: P-O2H7G
 kind: problem
 title: "- Show that if $H, K \\leq G$ are subgroups and $H \\in N_G(H)$, then $H\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

@@ -66,7 +66,7 @@ Examples of some more exotic spaces that show up less frequently:
 
 :::
 
-\todo[inline]{Break these into separate examples and explain properties.}
+
 
 :::{.example title="Non-Hausdorff spaces"}
 The following spaces are non-Hausdorff:

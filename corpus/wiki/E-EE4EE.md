@@ -4,7 +4,8 @@ id: E-EE4EE
 kind: exercise
 title: "- What is an interior point? An isolated point? A limit point?"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

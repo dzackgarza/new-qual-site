@@ -4,7 +4,8 @@ id: P-VGFA7
 kind: problem
 title: "- Suppose $\\phi: S_n \\to G$ with $n$ even and $\\size G = m$ odd."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

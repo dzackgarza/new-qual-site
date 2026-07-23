@@ -4,7 +4,8 @@ id: P-ZHTDW
 kind: problem
 title: "- Identify $\\Aut_\\Grp(\\bigoplus_{i=1}^n \\ZZ/p)$ as a matrix group and\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

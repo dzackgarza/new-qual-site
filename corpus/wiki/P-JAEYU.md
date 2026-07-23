@@ -4,7 +4,8 @@ id: P-JAEYU
 kind: problem
 title: "- Show that the topologist's sine curve is connected but not path-conn\u2026"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

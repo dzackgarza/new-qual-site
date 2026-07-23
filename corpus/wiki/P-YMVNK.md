@@ -4,7 +4,8 @@ id: P-YMVNK
 kind: problem
 title: "- Suppose $X$ is a $G\\dash$set, so there is a permutation action of $G\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

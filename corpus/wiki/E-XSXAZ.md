@@ -4,7 +4,8 @@ id: E-XSXAZ
 kind: exercise
 title: "- Come up with 6 different topologies on $\\RR^d$."
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

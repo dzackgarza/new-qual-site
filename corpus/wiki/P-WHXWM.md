@@ -4,7 +4,8 @@ id: P-WHXWM
 kind: problem
 title: "- Prove the following implications of separation axioms, and show that\u2026"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

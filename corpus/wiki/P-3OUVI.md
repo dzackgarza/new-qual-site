@@ -4,7 +4,8 @@ id: P-3OUVI
 kind: problem
 title: "- Let $H, K \\leq G$ be subgroups with $H\\cong K$."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

@@ -720,8 +720,6 @@ Use the fact that $I \subseteq C_i < R$ for every $C_i$ and since no $C_i$ conta
 :::{.fact}
 Division algorithm for Euclidean domains.
 
-\todo[inline]{todo}
-
 :::
 
 :::{.definition title="Field of fractions"}
@@ -744,8 +742,6 @@ R\localize{S} \da \qty{R\cross S} / \sim && (a, s)\sim (b, t) \iff \exists u\in 
 
 :::
 
-\todo[inline]{Universal property.}
-
 :::{.warnings}
 There is a canonical ring morphism
 \[
@@ -764,13 +760,10 @@ For integral domains $R$,
 :::
 
 :::{.theorem title="Hilbert Basis Theorem"}
-\todo[inline]{todo}
 
 :::
 
 :::{.definition title="Primary Ideal"}
 An ideal $I\normal R$ is **primary** iff whenever $pq\in I$, $p\in I$ and $q^n\in I$ for some $n$.
 :::
-
-
 

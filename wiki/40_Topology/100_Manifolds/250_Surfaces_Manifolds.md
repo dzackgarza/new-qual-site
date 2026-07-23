@@ -51,7 +51,9 @@ Every surface can be obtained as the identification space of a polygon labeled w
 
 :::
 
-\todo[inline]{Examples, general procedure?}
+:::{.remark}
+Examples, general procedure?
+:::
 
 :::{.fact table="Table of surfaces possible for a given Euler characteristic"}
 
@@ -70,7 +72,7 @@ X = U\cup V \implies \chi(X) = \chi(U) + \chi(V) - \chi (U\cap V)
 :::{.proof}
 Todo
 :::
-\todo{Proof.}
+
 
 :::{.corollary title="Euler for Connect Sums"}
 \[  
@@ -95,7 +97,7 @@ Set $U= A, B=V$, then by definition of the connect sum, $A\cap B = \SS^2$ where 
 :::{.proof}
 Todo
 :::
-\todo{Proof.}
+
 
 :::{.proposition title="Rewriting a Klein Bottle"}
 \[  
@@ -105,7 +107,7 @@ Todo
 :::{.proof}
 Todo
 :::
-\todo{Proof.}
+
 
 ## Manifolds
 
@@ -155,7 +157,7 @@ If $M^n$ is closed and $n$ is odd, then $\chi(M^n) = 0$.
 Todo.
 Uses Poincaré duality?
 :::
-\todo[inline]{Proof!}
+
 
 :::{.proposition title="Nondegenerate intersection pairings"}
 For $M^n$ closed and orientable, the intersection pairing is nondegenerate modulo torsion.
@@ -169,7 +171,7 @@ If $X$ is nonorientable, then $p$ is a double cover.
 :::{.theorem title="Lefschetz Duality"}
 Todo
 :::
-\todo[inline]{Statement of Lefschetz duality.}
+
 
 ### 3-Manifolds, and Knot Complements
 
@@ -198,7 +200,7 @@ where $\nu(K)$ is a tubular neighborhood of $K$.
 :::{.proof title="?"}
 Todo
 :::
-\todo[inline]{todo}
+
 
 :::{.proposition title="Homology of knot complements in $S^3$"}
 For $K$ a knot,

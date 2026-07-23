@@ -4,7 +4,8 @@ id: P-6HPKO
 kind: problem
 title: "- (**Important**)"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

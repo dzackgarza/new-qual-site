@@ -4,7 +4,8 @@ id: E-YUGKU
 kind: exercise
 title: "- State the definition of the product topology, the subspace topology,\u2026"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

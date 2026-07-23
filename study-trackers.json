@@ -1,0 +1,822 @@
+[
+ {
+  "where": "000_My Active Problems.md",
+  "note": "\\work",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/040_Rings/20_Rings.md",
+  "note": "todo",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/040_Rings/20_Rings.md",
+  "note": "Universal property.",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/040_Rings/20_Rings.md",
+  "note": "todo",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/040_Rings/30_Fields_General.md",
+  "note": "todo",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/040_Rings/30_Fields_General.md",
+  "note": "todo",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/040_Rings/30_Fields_General.md",
+  "note": "I don't like this proof!",
+  "action": "kept as remark"
+ },
+ {
+  "where": "10_Algebra/100_Linear_Algebra/100_JCF.md",
+  "note": "Make more precise..",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/100_Linear_Algebra/100_JCF.md",
+  "note": "Messy indexing.",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/100_Linear_Algebra/510_Matrix_Groups.md",
+  "note": "todo",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/100_Linear_Algebra/510_Matrix_Groups.md",
+  "note": "Matrix group definitions.",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/200_Appendices/9951 Appendix.md",
+  "note": "Todo. Specify.",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/050 Group Theory General.md",
+  "note": "Clean up, sketchy argument.",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/050 Group Theory General.md",
+  "note": "Redo part c",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/051 Sylow Theory.md",
+  "note": "Part (b) not finished!",
+  "action": "kept as remark"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/054 Classification.md",
+  "note": "Work this problem.",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/054 Classification.md",
+  "note": "Revisit, seems short.",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/060_Commutative Algebra.md",
+  "note": "I'm not super convinced by c!",
+  "action": "kept as remark"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/060_Commutative Algebra.md",
+  "note": "Prove this",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/060_Commutative Algebra.md",
+  "note": "Prove this",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/060_Commutative Algebra.md",
+  "note": "???",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/072_Fields and Galois Theory.md",
+  "note": "Not the nicest proof! Would be better to replace the ad-hoc computations at the end.",
+  "action": "kept as remark"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/072_Fields and Galois Theory.md",
+  "note": "Finish (c)",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/072_Fields and Galois Theory.md",
+  "note": "Revisit, tricky!",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/100_Linear Algebra.md",
+  "note": "Revisit.",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/100_Linear Algebra.md",
+  "note": "Todo, missing part (c).",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/100_Linear Algebra.md",
+  "note": "Missing work!",
+  "action": "dropped"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/100_Linear Algebra.md",
+  "note": "Is there a proof without matrices? What if $V$ is infinite dimensional?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/100_Linear Algebra.md",
+  "note": "How to extend basis?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/100_Linear Algebra.md",
+  "note": "Why?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "10_Algebra/600_Qual_Questions_UGA/960 Extra Problems Linear Algebra.md",
+  "note": "Sort out from module section.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/020_Integration/Lp.md",
+  "note": "todo",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Revisit, not so clear that the last line can be made smaller than $\\eps$, since $M, N$ both depend on $\\eps$...",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Ask someone to check the last approximation part.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Possible to use part a with $\\sin(x) \\leq x$ on $[0, \\pi/2]$?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Not complete.",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Walk through.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "?",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Actually true? Need conditions?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Rewrite solution.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0000_Undergraduate Analysis.md",
+  "note": "Have someone check!",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0010_Measure Theory.md",
+  "note": "Move this to review notes to clean things up.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0010_Measure Theory.md",
+  "note": "What a mess, redo!!",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0010_Measure Theory.md",
+  "note": "Try to construct the set.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0010_Measure Theory.md",
+  "note": "Walk through.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0010_Measure Theory.md",
+  "note": "What is the final step in this approximation?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0010_Measure Theory.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0010_Measure Theory.md",
+  "note": "Last step seems wrong!",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0020_Integrals Convergence.md",
+  "note": "Not finished, flesh out.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0020_Integrals Convergence.md",
+  "note": "Walk through.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0020_Integrals Convergence.md",
+  "note": "What is the \"right\" proof here that uses the first part?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0020_Integrals Convergence.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0020_Integrals Convergence.md",
+  "note": "Walk through.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0020_Integrals Convergence.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0020_Integrals Convergence.md",
+  "note": "Missing some stuff.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0021_Integration and L1.md",
+  "note": "Walk through.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0030_Convolution and Fourier Analysis.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0050_Functional Analysis.md",
+  "note": "Is this assumed..? Or did we show it..?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0050_Functional Analysis.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0050_Functional Analysis.md",
+  "note": "show that $\\int_0^1 \\abs{f_n(x) - f_m(x)} \\,dx \\to 0$ rigorously, show that no $g\\in L^1([0, 1])$ can converge to this indicator function.",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0050_Functional Analysis.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0050_Functional Analysis.md",
+  "note": "Add concepts.",
+  "action": "dropped"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0050_Functional Analysis.md",
+  "note": "Shouldn't this be a supremum? The max may not exist?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "20_Real_Analysis/600_Qual_Questions_UGA/0050_Functional Analysis.md",
+  "note": "Review and clean up.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Definitions.md",
+  "note": "Definitions",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/001_Examples.md",
+  "note": "Break these into separate examples and explain properties.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/020_Point_Set/100_Point_Set.md",
+  "note": "Check this proof!",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/040_pi_1/202_Fundamental Group.md",
+  "note": "Theorem",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/060_Homology/230_Homology.md",
+  "note": "May need some good pair condition?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/060_Homology/230_Homology.md",
+  "note": "Excision.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/060_Homology/230_Homology.md",
+  "note": "Homology examples.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/060_Homology/230_Homology.md",
+  "note": "Might need assumptions: finite CW complex?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/080_Degree/240_Fixed_Points_and_Degree.md",
+  "note": "Proof",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/100_Manifolds/250_Surfaces_Manifolds.md",
+  "note": "Examples, general procedure?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/100_Manifolds/250_Surfaces_Manifolds.md",
+  "note": "Proof.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/100_Manifolds/250_Surfaces_Manifolds.md",
+  "note": "Proof.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/100_Manifolds/250_Surfaces_Manifolds.md",
+  "note": "Proof.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/100_Manifolds/250_Surfaces_Manifolds.md",
+  "note": "Proof!",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/100_Manifolds/250_Surfaces_Manifolds.md",
+  "note": "Statement of Lefschetz duality.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/100_Manifolds/250_Surfaces_Manifolds.md",
+  "note": "todo",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/200_Appendices/299_Appendix.md",
+  "note": "Check",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/011_General.md",
+  "note": "Not finished. Add concepts",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/011_General.md",
+  "note": "Proof 2 not complete?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/011_General.md",
+  "note": "Incomplete proof for part 3.",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/011_General.md",
+  "note": "Need direct proof",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/011_General.md",
+  "note": "What's the picture?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/011_General.md",
+  "note": "Review, from last year.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/011_General.md",
+  "note": "Not convincing..",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/013_Covering Spaces.md",
+  "note": "Not done?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/013_Covering Spaces.md",
+  "note": "Todo",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/013_Covering Spaces.md",
+  "note": "Expand solution.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/014 Cell Complexes and Attaching Maps.md",
+  "note": "Revisit, old. Maybe redo.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/018 Misc.md",
+  "note": "Why? What is the homotopy?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/018 Misc.md",
+  "note": "Why?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/600_UGA_Qual_Questions/018 Misc.md",
+  "note": "Lost, redo.",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/650_UCSD_Qual_Questions/291_UCSD_Fall 2014.md",
+  "note": "Solution",
+  "action": "dropped"
+ },
+ {
+  "where": "40_Topology/650_UCSD_Qual_Questions/292_UCSD_Summer 2003.md",
+  "note": "Not complete!",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/650_UCSD_Qual_Questions/292_UCSD_Summer 2003.md",
+  "note": "Why is this true?",
+  "action": "kept as remark"
+ },
+ {
+  "where": "40_Topology/650_UCSD_Qual_Questions/292_UCSD_Summer 2003.md",
+  "note": "Four-corner spectral sequences, only homology in degrees 1,3,5,8. No differentials hit anything!",
+  "action": "kept as remark"
+ }
+]

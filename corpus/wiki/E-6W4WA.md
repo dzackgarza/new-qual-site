@@ -4,7 +4,8 @@ id: E-6W4WA
 kind: exercise
 title: "- What does it mean for $E\\subseteq X$ to be a **dense** subspace?"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

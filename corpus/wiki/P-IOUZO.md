@@ -4,7 +4,8 @@ id: P-IOUZO
 kind: problem
 title: "- Can every continuous function on $\\bar \\DD$ be uniformly approximate\u2026"
 classification:
-  areas: []
+  areas:
+  - complex-analysis
   topics: []
 relations: []
 review: draft

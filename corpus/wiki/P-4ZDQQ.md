@@ -4,7 +4,8 @@ id: P-4ZDQQ
 kind: problem
 title: "- If $L/k$ is an abelian Galois extension of degree $540 = 2^2 \\times\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

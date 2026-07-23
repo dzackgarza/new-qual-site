@@ -4,7 +4,8 @@ id: P-Q44SQ
 kind: problem
 title: "- Show that every subgroup of order 5 in $S_5$ is a transitive subgrou\u2026"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

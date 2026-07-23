@@ -4,7 +4,8 @@ id: P-MFWBK
 kind: problem
 title: "- $\\QQ$"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

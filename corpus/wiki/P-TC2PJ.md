@@ -4,7 +4,8 @@ id: P-TC2PJ
 kind: problem
 title: "- Show that every compact metrizable space has a countable basis."
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

@@ -4,7 +4,8 @@ id: P-PSAET
 kind: problem
 title: "- Determine the orders $\\size \\GL_n(\\FF_p)$ and $\\size \\SL_n(\\FF_p)$."
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

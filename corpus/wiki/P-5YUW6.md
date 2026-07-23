@@ -4,7 +4,8 @@ id: P-5YUW6
 kind: problem
 title: "- State the orbit-stabilizer theorem"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

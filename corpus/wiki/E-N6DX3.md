@@ -4,7 +4,8 @@ id: E-N6DX3
 kind: exercise
 title: "- State the Cauchy-Riemann equations."
 classification:
-  areas: []
+  areas:
+  - complex-analysis
   topics: []
 relations: []
 review: draft

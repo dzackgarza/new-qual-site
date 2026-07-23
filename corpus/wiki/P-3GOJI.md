@@ -4,7 +4,8 @@ id: P-3GOJI
 kind: problem
 title: "- Show that for $X$ an arbitrary topological space, the one-point comp\u2026"
 classification:
-  areas: []
+  areas:
+  - topology
   topics: []
 relations: []
 review: draft

@@ -4,7 +4,8 @@ id: P-V7BGS
 kind: problem
 title: "- Prove that if $\\size G$ is prime, then $G$ is cyclic"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft

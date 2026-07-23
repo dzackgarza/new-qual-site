@@ -3,36 +3,31 @@ title: Final Exam
 ---
 
 
-# 1
-[[P-PE7IZ]]
 
-# 2
+[[P-LIRTB]]
 
-## a 
 
-[[P-UIZKU]]
+[[P-2WRPV]]
 
-# 3
 
-[[P-XQ4R6]]
-# 4
+[[P-3HGNF]]
+
 
 [[P-23M4O]]
-# 5
 
-[[P-4IWVY]]
-# 6
+
+[[P-KXSAO]]
+
 [[P-OX3MY]]
-# 7
 
-## a
-[[P-CVSSO]]
-# 8
 
-[[P-4KRNC]]
-# 9
+[[P-7IYBS]]
 
-[[P-GRL4N]]
-# 10
 
-[[P-UPYNJ]]
+[[P-HXTMK]]
+
+
+[[P-O753X]]
+
+
+[[P-RR26L]]

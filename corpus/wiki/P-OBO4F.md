@@ -4,7 +4,8 @@ id: P-OBO4F
 kind: problem
 title: "- Prove that if $\\size G = n$, then $g^n = e$ for every $g\\in G$"
 classification:
-  areas: []
+  areas:
+  - algebra
   topics: []
 relations: []
 review: draft
