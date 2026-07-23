@@ -306,18 +306,31 @@ class ParsedCard(Strict):
     sections: list[tuple[str, str]]  # (section kind, plain text, for search)
 
 
-# The reader format, in one place because every read has to agree.
+# The reader dialect, in one place because every read has to agree.
 #
-# `tex_math_single_backslash` is not optional here: the corpus writes display
-# mathematics as `\[ ... \]`, and pandoc's plain `markdown` does not recognize
-# that as math. With `raw_tex` on -- the default -- it reads the fragment as raw
-# LaTeX instead, which loses the mathematics (`\int_{\mathbb{R}}` comes back as
-# an emphasis-mangled `` `\int`{=tex}*{...} ``) and, worse, keeps consuming past
-# the end of the enclosing fenced div whenever the body holds a macro pandoc
-# does not know, such as `\qty`. Dropping `raw_tex` instead would close the divs
-# by rendering `\[ ... \]` as the literal characters and would destroy the
-# corpus's TikZ blocks; the extension is the fix, not the removal.
-MARKDOWN = "markdown+tex_math_single_backslash"
+# This is not a set assembled here. It is the dialect the corpus was written in,
+# copied from the author's own toolchain -- `~/.pandoc/bin/fmt-pipeline` reads
+# `markdown+fenced_divs+raw_tex+tex_math_dollars+tex_math_single_backslash
+# +wikilinks_title_after_pipe`, and the sibling scripts that produce HTML and
+# LaTeX pass `tex_math_single_backslash` too. Every file in `qual-wiki` has been
+# read and written through those scripts for years.
+#
+# `qualc` called bare `pandoc -f markdown` and so did not speak that dialect.
+# Two of the extensions are the difference between reading the corpus and
+# mangling it:
+#
+#   tex_math_single_backslash -- off in pandoc's stock `markdown`, where `\[`
+#     is simply an escaped `[`. Without it `\[ x^2 \]` reads as the literal
+#     characters `[ x^2 ]`, and a markdown round trip writes back
+#     `` `\int`{=tex}*{`\mathbb{R}`{=tex}} `` -- the subscript reinterpreted as
+#     an emphasis marker, which is how two corpus cards came to be stored corrupt.
+#   wikilinks_title_after_pipe -- without it `[[Sylow Theorems]]` is `Str
+#     "[[Sylow"`, not a Link. There are 360 of them in qual-wiki, and WS2
+#     requires them to resolve.
+#
+# The remaining three are pandoc defaults, written out so this string can be
+# diffed against the toolchain it came from rather than inferred.
+MARKDOWN = "markdown+fenced_divs+raw_tex+tex_math_dollars+tex_math_single_backslash+wikilinks_title_after_pipe"
 
 
 def to_ast(markdown: str) -> str:
