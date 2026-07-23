@@ -277,8 +277,11 @@ def strip_study_trackers(body: str, where: str = "") -> str:
     # A heading emptied of its number and marker is furniture, not a section.
     out = re.sub(r"(?m)^#{1,6}[ \t]*$\n?", "", out)
 
-    # Dropping a standalone tracker leaves the blank line it sat on.
-    return re.sub(r"\n{3,}", "\n\n", out)
+    # Dropping a standalone tracker leaves the blank line it sat on. Only tidy
+    # bodies this function actually edited: a card's tag is sha1 of its body, so
+    # collapsing whitespace unconditionally re-tags cards that contain nothing
+    # personal at all -- 421 of them rather than the 164 with a marker.
+    return re.sub(r"\n{3,}", "\n\n", out) if out != body else body
 
 
 TODO_OPEN = re.compile(r"[ \t]*\\todo(?:\[[^\]]*\])?\{")
