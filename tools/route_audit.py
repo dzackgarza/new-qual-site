@@ -61,7 +61,7 @@ def source_of(ledger: Path, spans: list[dict]) -> Path:
 def audit(ledger: Path) -> dict:
     spans = json.loads(ledger.read_text())
     src = source_of(ledger, spans)
-    lines = src.read_text().splitlines(keepends=True)
+    lines = src.read_text(errors="replace").splitlines(keepends=True)
     n = len(lines)
     fatal: list[str] = []
     loud: list[str] = []
@@ -128,10 +128,26 @@ def audit(ledger: Path) -> dict:
     }
 
 
+def line_count(path: Path) -> int:
+    """The one definition of how long a file is.
+
+    `wc -l` counts newlines, so it is short by one on any file whose last line
+    lacks a trailing newline -- 27 of qual-wiki's 263 authored files. Feeding a
+    routing agent a `wc -l` count and auditing it with this one makes every such
+    file fail for a reason that is entirely ours. The batch launcher and the
+    auditor must read the count from here.
+    """
+    return len(path.read_text(errors="replace").splitlines(keepends=True))
+
+
 def main(argv: list[str]) -> int:
     if not argv:
         print(__doc__)
         return 2
+    if argv[0] == "--lines":
+        for arg in argv[1:]:
+            print(f"{line_count(Path(arg))}\t{arg}")
+        return 0
     as_json = "--json" in argv
     root = Path([a for a in argv if not a.startswith("--")][0])
     reports = [audit(p) for p in sorted(root.glob("*.json"))]
