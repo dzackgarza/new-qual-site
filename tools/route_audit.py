@@ -21,8 +21,14 @@ Failure modes observed, in the order they were found:
   DETACHED      a solution/hint/concept/strategy emitted as its own card. The
                 unit of the problem bank is a *problem bundle*: one card holding
                 the statement (which may be multi-part), any hints, strategies,
-                and concepts, links to other items, and every solution of it. A
-                standalone piece is a routing error, not a link to repair.
+                and concepts, links to other items, and every solution of it.
+
+                A detached solution is one of two things and both need a human:
+                a routing error, or a solution whose problem is missing from the
+                source. The second is data loss -- a solution is of something,
+                so if no statement precedes it the statement was dropped
+                upstream. There is no such thing as a solution to nothing, and
+                the schema must not grow a kind to hold one.
   DANGLING      `attaches_to` naming a span that is not a problem or exercise.
   BARREN        a file full of numbered problem headings that produced no cards.
                 Not proof of error -- a link list of PDFs legitimately yields
