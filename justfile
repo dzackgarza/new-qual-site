@@ -25,6 +25,15 @@ build:
 site: build
     {{quarto}} render build/quarto
 
+# Build the standalone problem-bank browser + generator (site/browser.html)
+browser:
+    uv run python tools/build_browser.py
+
+# Build the browser and serve it at http://localhost:8731/browser.html
+browse: browser
+    @echo "Open http://localhost:8731/browser.html"
+    @cd site && python3 -m http.server 8731
+
 # Serve the site with live reload
 preview: build
     {{quarto}} preview build/quarto
