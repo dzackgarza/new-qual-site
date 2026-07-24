@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-SQA7CI6CC3
+kind: occurrence
+title: P-TX3CN at UGA algebra Fall 2015
+classification:
+  areas:
+  - algebra
+  topics: []
+relations:
+- kind: instance-of
+  target: P-TX3CN
+review: draft
+payload:
+  source: SRC-UGA-ALG-FALL-2015
+  locator: "1"
+---
+
+::: remark
+[[P-TX3CN]] appeared at UGA algebra Fall 2015, problem 1.
+:::

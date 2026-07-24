@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-Y22VO2DZ2A
+kind: occurrence
+title: P-A5CFD at UGA topology Fall 2006
+classification:
+  areas:
+  - topology
+  topics: []
+relations:
+- kind: instance-of
+  target: P-A5CFD
+review: draft
+payload:
+  source: SRC-UGA-TOP-FALL-2006
+  locator: "?"
+---
+
+::: remark
+[[P-A5CFD]] appeared at UGA topology Fall 2006.
+:::

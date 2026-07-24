@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-VPYGPCNGMM
+kind: occurrence
+title: P-PJY52 at UGA real-analysis June 2005
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations:
+- kind: instance-of
+  target: P-PJY52
+review: draft
+payload:
+  source: SRC-UGA-RA-JUNE-2005
+  locator: 3b
+---
+
+::: remark
+[[P-PJY52]] appeared at UGA real-analysis June 2005, problem 3b.
+:::

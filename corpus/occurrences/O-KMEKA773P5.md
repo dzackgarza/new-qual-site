@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-KMEKA773P5
+kind: occurrence
+title: P-HOIQ3 at UGA topology Fall 2004
+classification:
+  areas:
+  - topology
+  topics: []
+relations:
+- kind: instance-of
+  target: P-HOIQ3
+review: draft
+payload:
+  source: SRC-UGA-TOP-FALL-2004
+  locator: "?"
+---
+
+::: remark
+[[P-HOIQ3]] appeared at UGA topology Fall 2004.
+:::

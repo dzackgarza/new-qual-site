@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-NA6LHK7KJR
+kind: occurrence
+title: P-L4EMZ at UGA topology Spring 2012
+classification:
+  areas:
+  - topology
+  topics: []
+relations:
+- kind: instance-of
+  target: P-L4EMZ
+review: draft
+payload:
+  source: SRC-UGA-TOP-SPRING-2012
+  locator: "?"
+---
+
+::: remark
+[[P-L4EMZ]] appeared at UGA topology Spring 2012.
+:::

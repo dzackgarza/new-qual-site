@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-AWPE7IXPQA
+kind: occurrence
+title: P-2ZMDH at UGA complex-analysis Fall 2009
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations:
+- kind: instance-of
+  target: P-2ZMDH
+review: draft
+payload:
+  source: SRC-UGA-CA-FALL-2009
+  locator: "?"
+---
+
+::: remark
+[[P-2ZMDH]] appeared at UGA complex-analysis Fall 2009.
+:::

@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-NQKXMPDY25
+kind: occurrence
+title: P-LLCQX at UGA topology Fall 2013
+classification:
+  areas:
+  - topology
+  topics: []
+relations:
+- kind: instance-of
+  target: P-LLCQX
+review: draft
+payload:
+  source: SRC-UGA-TOP-FALL-2013
+  locator: "?"
+---
+
+::: remark
+[[P-LLCQX]] appeared at UGA topology Fall 2013.
+:::

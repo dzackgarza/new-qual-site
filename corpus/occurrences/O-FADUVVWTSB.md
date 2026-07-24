@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-FADUVVWTSB
+kind: occurrence
+title: P-RZ2JV at UGA algebra Fall 2018
+classification:
+  areas:
+  - algebra
+  topics: []
+relations:
+- kind: instance-of
+  target: P-RZ2JV
+review: draft
+payload:
+  source: SRC-UGA-ALG-FALL-2018
+  locator: "?"
+---
+
+::: remark
+[[P-RZ2JV]] appeared at UGA algebra Fall 2018.
+:::

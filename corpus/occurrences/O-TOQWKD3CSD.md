@@ -1,0 +1,21 @@
+---
+schema: qual/card@1
+id: O-TOQWKD3CSD
+kind: occurrence
+title: P-SMJE7 at UGA real-analysis Fall 2015
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations:
+- kind: instance-of
+  target: P-SMJE7
+review: draft
+payload:
+  source: SRC-UGA-RA-FALL-2015
+  locator: "?"
+---
+
+::: remark
+[[P-SMJE7]] appeared at UGA real-analysis Fall 2015.
+:::

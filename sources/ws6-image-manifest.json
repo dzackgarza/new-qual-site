@@ -1,0 +1,513 @@
+[
+ {
+  "image": "Algebra/UGA/2012-01 7.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2012,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "7",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2012-01 8.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2012,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "8",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2012-09 1.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2012,
+  "month": 9,
+  "season": "fall",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2013-01 2.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2013,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2013-09 2.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2013,
+  "month": 9,
+  "season": "fall",
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2014-09 2.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2014,
+  "month": 9,
+  "season": "fall",
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2016-09 1.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2016,
+  "month": 9,
+  "season": "fall",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2017-01 1.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2017,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2019-01 4.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2019,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "4",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2019-09 2.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2019,
+  "month": 9,
+  "season": "fall",
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2020-01 2.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2020,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2020-01 3.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2020,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "3",
+  "filename_parsed": true
+ },
+ {
+  "image": "Algebra/UGA/2020-09 8.png",
+  "area": "algebra",
+  "institution": "uga",
+  "year": 2020,
+  "month": 9,
+  "season": "fall",
+  "problem_number": "8",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-57.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-57_1.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-58.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-58_1.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-58_2.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-58_3.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "3",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-59.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-59_1.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_18-59_2.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_19-00.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_19-00_1.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_19-00_2.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/2021-05-22_19-00_3.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 5,
+  "season": null,
+  "problem_number": "3",
+  "filename_parsed": true
+ },
+ {
+  "image": "Complex Analysis/Conformal map 1.png",
+  "area": "complex-analysis",
+  "institution": "uga",
+  "year": null,
+  "month": null,
+  "season": null,
+  "problem_number": null,
+  "filename_parsed": false,
+  "raw_name": "Conformal map 1"
+ },
+ {
+  "image": "Real Analysis/2014-01 5.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2014,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "5",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2018-01 1.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2018,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2018-01 4.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2018,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "4",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2018-01 5.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2018,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "5",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2019-01 1.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2019,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2019-09 1.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2019,
+  "month": 9,
+  "season": "fall",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2020-01 1.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2020,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2020-09 1.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2020,
+  "month": 9,
+  "season": "fall",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2021-01 1.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2021-01 2.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "2",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2021-01 3.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "3",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2021-01 4.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "4",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2021-01 5.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "5",
+  "filename_parsed": true
+ },
+ {
+  "image": "Real Analysis/2021-01 6.png",
+  "area": "real-analysis",
+  "institution": "uga",
+  "year": 2021,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "6",
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2004-09 unknown.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2004,
+  "month": 9,
+  "season": "fall",
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2005-09 unknown.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2005,
+  "month": 9,
+  "season": "fall",
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2006-01 unknown.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2006,
+  "month": 1,
+  "season": "spring",
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2007-01 unknown.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2007,
+  "month": 1,
+  "season": "spring",
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2009-01 unknown.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2009,
+  "month": 1,
+  "season": "spring",
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2014-09 unknown.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2014,
+  "month": 9,
+  "season": "fall",
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2016-09 unknown.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2016,
+  "month": 9,
+  "season": "fall",
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2018-01 unknown.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2018,
+  "month": 1,
+  "season": "spring",
+  "problem_number": null,
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2019-01 1.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2019,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "1",
+  "filename_parsed": true
+ },
+ {
+  "image": "Topology/UGA/2021-01 5.png",
+  "area": "topology",
+  "institution": "uga",
+  "year": 2021,
+  "month": 1,
+  "season": "spring",
+  "problem_number": "5",
+  "filename_parsed": true
+ }
+]
