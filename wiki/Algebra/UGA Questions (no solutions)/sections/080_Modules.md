@@ -13,19 +13,19 @@
 ### Spring 2018 #6
 [[P-ZDYAF]]
 ### Spring 2018 #7
-[[P-CIU5A]]
+[[P-FOU3L]]
 ### Fall 2016 #6
 [[P-GP7TS]]
 ### Spring 2016 #4
 [[P-C2FE5]]
 ### Spring 2015 #8
-[[P-BO65I]]
+[[P-EMIQC]]
 ### Fall 2012 #6
-[[P-MGUVN]]
+[[P-4MBQJ]]
 ### Fall 2019 Final #1
 [[P-CDHB5]]
 ### Fall 2020 #6
-[[P-BYX54]]
+[[P-XQCRT]]
 ## Torsion and the Structure Theorem
 
 ### $\star$ Fall 2019 #5 $\done$
@@ -49,7 +49,7 @@
 ### Fall 2019 Final #7
 [[P-UW7CE]]
 ### Fall 2019 Final #10
-[[P-VANEX]]
+[[P-Q6PDD]]
 ### Fall 2020 #7
 
 [[P-GM2KV]]

@@ -136,5 +136,5 @@ This is continuous provided $f(z) \neq w$ on $\bd \Omega$ and is $\ZZ\dash$value
 
 ## Exercises
 
-[[E-E3YYI]]
-[[E-BKY7P]]
+[[E-PWVJS]]
+[[E-WTCTP]]

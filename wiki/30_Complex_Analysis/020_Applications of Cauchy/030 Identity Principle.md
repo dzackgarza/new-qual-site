@@ -62,5 +62,5 @@ For the generalization, consider $F(z, w) \da e^{z+w}-e^z e^w$; then $F\equiv 0$
 
 ## Exercises
 
-[[E-YD572]]
-[[E-MGVLI]]
+[[E-G4N4D]]
+[[E-5P24A]]

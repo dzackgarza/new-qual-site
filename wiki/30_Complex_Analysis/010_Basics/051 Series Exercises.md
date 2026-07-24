@@ -6,25 +6,25 @@ order: 51
 
 ## Analytic Properties of Series
 
-[[E-CYB2L]]
-[[E-KV2GA]]
-[[E-WML5E]]
+[[E-SKD7P]]
+[[E-EMISN]]
+[[E-QLRNW]]
 ## Radius of Convergence 
 
-[[E-UA3CO]]
-[[E-YDLH4]]
-[[E-5WA7T]]
+[[E-ZQGR5]]
+[[E-FS7GZ]]
+[[E-VWVTY]]
 ## Finding Laurent Expansions
 
-[[E-QKXE7]]
-[[E-KJVUD]]
-[[E-FOCMW]]
+[[E-BUVLS]]
+[[E-VCLTY]]
+[[E-DUMQG]]
 [[E-AHBVF]]
-[[E-HL7YY]]
-[[E-64EWP]]
-[[E-TWZVQ]]
-[[E-GF6OP]]
-[[E-7UUGN]]
+[[E-SQ4GJ]]
+[[E-ENJAF]]
+[[E-GMGFS]]
+[[E-XOCPO]]
+[[E-QCVGX]]
 ## New Things in $\CC$
 
-[[E-PBEOS]]
+[[E-QVMUV]]

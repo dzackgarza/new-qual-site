@@ -34,5 +34,5 @@ Any holomorphic non-constant map is an open map.
 
 ## Exercises
 
-[[E-QAHJA]]
-[[E-6NFAZ]]
+[[E-7ZCKU]]
+[[E-RKPAV]]

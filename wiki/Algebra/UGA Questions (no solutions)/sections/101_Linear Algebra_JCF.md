@@ -5,7 +5,7 @@
 ## $\star$ Spring 2020 #8
 [[P-S3BDU]]
 ## $\star$ Spring 2012 #7
-[[P-LZ6OU]]
+[[P-GCNAR]]
 ## Fall 2019 Final #8
 [[P-EPUZO]]
 ## Fall 2019 Final #9
@@ -33,4 +33,4 @@
 [[P-IOSZK]]
 ## Fall 2020 #5
 
-[[P-C6G74]]
+[[P-VHLIU]]

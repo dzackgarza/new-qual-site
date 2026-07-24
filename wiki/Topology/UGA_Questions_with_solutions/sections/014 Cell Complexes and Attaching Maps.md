@@ -48,9 +48,9 @@
 [[P-MCG5C]]
 
 ## 18 (Spring '18)
-[[P-MAXA4]]
+[[P-DFB3Y]]
 
 ## Spring 2019 #7 $\done$
 [[P-HMAKD]]
 ## 19 (Fall '18)
-[[P-KPJBJ]]
+[[P-TM4RI]]

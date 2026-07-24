@@ -1,7 +1,7 @@
 # Exercises
 
-[[E-E7SZ7]]
-[[E-24TCH]]
-[[E-YWKPH]]
-[[E-ZPICP]]
-[[E-QZP62]]
+[[E-ZVO5P]]
+[[E-5AKU5]]
+[[E-NSN6G]]
+[[E-AZSMO]]
+[[E-DDKSS]]

@@ -1,55 +1,55 @@
 # Homology and Degree Theory
 
-## 1 (Spring '09) #topology/qual/work
+## 1 (Spring '09)
 [[P-K6HWV]]
-## 2 (Fall '06) #topology/qual/work
+## 2 (Fall '06)
 
 [[P-VPPPN]]
-## 3 (Fall '12) #topology/qual/work
+## 3 (Fall '12)
 [[P-Y7C7Z]]
-## 4 (Fall '14) #topology/qual/work
+## 4 (Fall '14)
 [[P-S6EYF]]
-## 5 (Spring '08) #topology/qual/work
+## 5 (Spring '08)
 [[P-WOFN2]]
-## 6 (Spring '17) #topology/qual/work
+## 6 (Spring '17)
 [[P-XPUMM]]
-## 7 (Fall '15) #topology/qual/work
+## 7 (Fall '15)
 [[P-XRGV7]]
-## 8 (Spring '09) #topology/qual/work
+## 8 (Spring '09)
 [[P-EQZPV]]
-## 9 (Fall '05) #topology/qual/work
+## 9 (Fall '05)
 [[P-V4MD7]]
-## 10 (Fall '18) #topology/qual/work
+## 10 (Fall '18)
 [[P-N3RQY]]
-## 11 (Spring '05/Fall '13) #topology/qual/work
+## 11 (Spring '05/Fall '13)
 [[P-LLCQX]]
-## 12 (Spring '19) #topology/qual/work
+## 12 (Spring '19)
 
 [[P-LSJ7W]]
-## 13 (Spring '12) #topology/qual/work
+## 13 (Spring '12)
 [[P-CDWQH]]
-## 14 (Fall '18) #topology/qual/work
+## 14 (Fall '18)
 [[P-HOJTU]]
-## 15 (Fall '10) #topology/qual/work
+## 15 (Fall '10)
 [[P-YCZ6A]]
-## 16 (Fall '16) #topology/qual/work
+## 16 (Fall '16)
 [[P-23NY2]]
-## 17 (Spring '07) #topology/qual/work
+## 17 (Spring '07)
 [[P-QMESO]]
-## 18 (Spring '13) #topology/qual/work
+## 18 (Spring '13)
 [[P-3DTFZ]]
-## 19 (Fall '18) #topology/qual/work
+## 19 (Fall '18)
 [[P-KN75K]]
-## 20 (Spring '09) #topology/qual/work
+## 20 (Spring '09)
 
 [[P-UEGAX]]
-## 21 (Fall '17) #topology/qual/work
+## 21 (Fall '17)
 [[P-6ATGL]]
-## 22 (Fall '18) #topology/qual/work
+## 22 (Fall '18)
 [[P-LZ5CZ]]
-## 23 (Fall '11) #topology/qual/work
+## 23 (Fall '11)
 [[P-ETP6C]]
-## 24 (Spring '12/Spring '15) #topology/qual/work
+## 24 (Spring '12/Spring '15)
 [[P-HCQNH]]
 ## Spring 2021 #6
 

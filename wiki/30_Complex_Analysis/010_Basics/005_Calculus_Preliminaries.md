@@ -180,10 +180,10 @@ A sequence of functions $f_n$ is said to converge **locally uniformly** on $\Ome
 
 ## Exercises
 
-[[E-RQQFZ]]
-[[E-VAP54]]
-[[E-KM5DB]]
-[[E-6LTXC]]
-[[E-TNLWX]]
-[[E-LD4CB]]
-[[E-B57J2]]
+[[E-2JGJL]]
+[[E-CLMEK]]
+[[E-DXXL4]]
+[[E-6ULIT]]
+[[E-5KI4G]]
+[[E-4P3T2]]
+[[E-XXUNZ]]

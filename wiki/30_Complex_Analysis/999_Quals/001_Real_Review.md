@@ -4,54 +4,52 @@ order: 1
 
 # Real Analysis Review
 
-## Tie's Extra Questions: Fall 2015 (Computing area) #complex/exercise/completed
+## Tie's Extra Questions: Fall 2015 (Computing area)
 
 [[E-5IG73]]
-## Tie's Extra Questions: Fall 2015 (Variant) #complex/exercise/completed
+## Tie's Extra Questions: Fall 2015 (Variant)
 
 [[E-TDDQI]]
-## Spring 2019.1 #complex/qual/work
+## Spring 2019.1
 
 ^0a8ca5
 
 [[P-FQJMB]]
-## Recurrences #complex/qual/work
+## Recurrences
 
 [[P-KPCIE]]
-## Uniform continuity #complex/qual/work
+## Uniform continuity
 
 [[P-YFBBW]]
-## Negating uniform continuity #complex/qual/completed
+## Negating uniform continuity
 
 [[P-KNLBB]]
-## Non-continuously differentiable #complex/qual/completed
+## Non-continuously differentiable
 
 [[P-NBQ5W]]
-## Uniformly convergent + uniformly continuous #complex/qual/completed
+## Uniformly convergent + uniformly continuous
 
 [[P-EV3YB]]
-## Uniform differentiability #complex/qual/completed
+## Uniform differentiability
 
 [[P-UPCWX]]
-## Inf distance #complex/qual/completed
+## Inf distance
 
 [[P-BUD7S]]
-## Connectedness #complex/qual/completed
+## Connectedness
 
 [[P-E2CRQ]]
-## Pointwise and uniform convergence #complex/qual/completed
+## Pointwise and uniform convergence
 
 [[P-5VEUZ]]
-## #complex/qual/work
 
 [[P-LOXDS]]
-## #complex/qual/work
 
 
 [[P-FOAQM]]
 ## Exercises
 
-[[E-B6Q3O]]
-[[E-DKCCV]]
-[[E-LILGB]]
-[[E-5TJ2I]]
+[[E-OUBBQ]]
+[[E-NIPUY]]
+[[E-ELZ3Z]]
+[[E-JXU5L]]

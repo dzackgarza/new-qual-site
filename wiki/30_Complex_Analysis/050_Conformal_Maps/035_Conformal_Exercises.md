@@ -46,73 +46,73 @@ Tips:
 
 ## Cross-Ratios
 
-[[E-OK4UE]]
-[[E-E7SSK]]
+[[E-Z23VB]]
+[[E-G55QF]]
 
 ## Discs and Planes
 
-### $\HH\to\DD$ #complex/exercise/completed
+### $\HH\to\DD$
 
 [[P-IIONX]]
-### $\HH\to\DD$, cross-ratio #complex/exercise/completed
+### $\HH\to\DD$, cross-ratio
 
 [[E-W6MWU]]
-### $\DD\to\HH$ #complex/exercise/completed
+### $\DD\to\HH$
 
 [[E-4H3JY]]
-### Upper half-disc to $\DD$ #complex/exercise/completed
+### Upper half-disc to $\DD$
 
 [[E-PGGNF]]
-### Upper half-disc to $\HH$ #complex/exercise/completed
+### Upper half-disc to $\HH$
 
 [[E-6BH7D]]
-### $\DD^c \intersect \HH \to\HH$ #complex/exercise/completed
+### $\DD^c \intersect \HH \to\HH$
 
 [[E-PQ7NC]]
 
 ## Slits
 
-[[E-E37VJ]]
-### 8 #complex/exercise/work
+[[E-YAYQB]]
+### 8
 [[P-DQTVL]]
-### 9 #complex/exercise/work
+### 9
 [[P-IJQ5Z]]
-### 10 #complex/exercise/work
+### 10
 [[P-A6PQA]]
-## 11 #complex/exercise/work
+## 11
 [[P-CWXEW]]
 ## Strips
 
-### Horizontal strip to $\HH$ #complex/exercise/completed
+### Horizontal strip to $\HH$
 
 [[P-RMH6X]]
 ## Lunes
 
 ### Intersection of circles
 
-[[E-NP5Q4]]
+[[E-UUBBS]]
 ### Lune with one intersection point
 
-[[E-DPJWS]]
-### 4 #complex/exercise/work
+[[E-VS4XE]]
+### 4
 [[P-K7XDT]]
-### 5 #complex/exercise/work
+### 5
 [[P-5UKXY]]
-### 6 #complex/exercise/work
+### 6
 [[P-PYCCN]]
-### 13 #complex/exercise/work
+### 13
 [[P-64ZUP]]
 ## Sectors
 
-[[E-444IZ]]
+[[E-PYJZO]]
 ## Joukowski-Type Regions
 
-[[E-IHR33]]
+[[E-NZY3B]]
 ## Misc
 
-[[E-2QR3V]]
-[[E-6VJ2Z]]
-### 7 #complex/exercise/work
+[[E-H64WF]]
+[[E-3GIQS]]
+### 7
 [[P-EEUV6]]
-### 12 #complex/exercise/work
+### 12
 [[P-K4WSJ]]

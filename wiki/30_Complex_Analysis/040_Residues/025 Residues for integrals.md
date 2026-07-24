@@ -229,5 +229,5 @@ This is obvious from a picture, since $\sin(t)$ is a height on $S^1$ and $2t/\pi
 
 ## Exercises
 
-[[E-QU5E2]]
-[[E-5H54G]]
+[[E-IQQAF]]
+[[E-3ZAVQ]]

@@ -4,13 +4,13 @@ order: 999
 
 # Exercises
 
-[[E-CHCXA]]
+[[E-TVJFL]]
 
-[[E-ZZI44]]
+[[E-3QAC4]]
 
-[[E-XGIDP]]
+[[E-MTLQI]]
 
-[[E-XZTVE]]
+[[E-FMLK2]]
 
 [[E-I26BF]]
 

@@ -19,18 +19,18 @@ title: "Geometry, Complex Arithmetic"
 ## Geometry from equations
 
 [[P-V2OBF]]
-## Spring 2020.1, Spring 2020 HW 1.4 #complex/qual/completed 
+## Spring 2020.1, Spring 2020 HW 1.4 
 
 ^ea471a
 
 [[P-CZ3R7]]
-## Spring 2020 HW 1.1  #complex/exercise/completed
+## Spring 2020 HW 1.1
 
 [[E-HGWPG]]
-## Fixed argument exercise #complex/exercise/completed
+## Fixed argument exercise
 
 [[E-WH2YQ]]
-## Fall 2019.2, Spring 2020 HW 1.11 #complex/qual/completed
+## Fall 2019.2, Spring 2020 HW 1.11
 
 ^a35657
 
@@ -51,22 +51,22 @@ title: "Geometry, Complex Arithmetic"
 ^c8872d
 
 [[P-PM5FN]]
-## Spring 2021.1 #complex/qual/completed
+## Spring 2021.1
 
 ^7d0c77
 
 [[P-RLZK3]]
-## Spring 2020 HW 1.5 #complex/qual/completed
+## Spring 2020 HW 1.5
 
 [[P-XWO5N]]
-## Spring 2020 HW 1.2 #complex/qual/completed
+## Spring 2020 HW 1.2
 
 [[P-R3DSM]]
-## Fall 2020.1, Spring 2020 HW 1.6 #complex/qual/completed
+## Fall 2020.1, Spring 2020 HW 1.6
 
 ^b9b6b4
 
 [[P-37Z7J]]
-## Spring 2020 HW 1.5 #complex/qual/completed
+## Spring 2020 HW 1.5
 
 [[P-GTJDX]]

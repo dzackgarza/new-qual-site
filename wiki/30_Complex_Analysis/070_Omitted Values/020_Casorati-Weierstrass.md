@@ -51,9 +51,9 @@ In detail, from Gamelin:
 # Exercises
 
 
-[[E-PSD7Z]]
+[[E-HEJJK]]
 
-[[E-DCHFW]]
+[[E-3ZHRE]]
 
-[[E-DD574]]
+[[E-27X7K]]
 

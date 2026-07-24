@@ -1,41 +1,41 @@
 # The Fundamental Group
 
-## 1 (Spring '15) #topology/qual/completed
+## 1 (Spring '15)
 
 [[P-RIW3S]]
 
-## 2 (Spring '09/Spring '07/Fall '07/Fall '06) #topology/qual/work
+## 2 (Spring '09/Spring '07/Fall '07/Fall '06)
 
 [[P-LZDYV]]
-## 3 (Fall '18) #topology/qual/work
+## 3 (Fall '18)
 [[P-UCJF3]]
 
-## 4 (Spring '15) #topology/qual/work
+## 4 (Spring '15)
 [[P-Z74QX]]
 
-## 5 (Spring '06) #topology/qual/work
+## 5 (Spring '06)
 [[P-OIH2N]]
 
-## 6 (Spring '08) #topology/qual/work
+## 6 (Spring '08)
 [[P-PMBN2]]
 
-## 7 (Fall '16) #topology/qual/work
+## 7 (Fall '16)
 [[P-BNSGA]]
 
-## 8 (Spring '13) #topology/qual/work
+## 8 (Spring '13)
 [[P-DLXGE]]
 
-## 9 (Fall '15) #topology/qual/work
+## 9 (Fall '15)
 [[P-D2RBT]]
 
-## 10 (Fall '11) #topology/qual/work
+## 10 (Fall '11)
 [[P-HZBSC]]
 
-## 11 (Fall '16) #topology/qual/work
+## 11 (Fall '16)
 [[P-MXUIS]]
 
 
-## 12 (Spring '13) #topology/qual/work
+## 12 (Spring '13)
 
 [[P-7PCEH]]
 

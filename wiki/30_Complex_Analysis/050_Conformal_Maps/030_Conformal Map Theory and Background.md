@@ -129,8 +129,8 @@ Some nice properties:
 
 ## Exercise
 
-[[E-2P2WT]]
+[[E-JPAJE]]
 
-[[E-TJWSN]]
+[[E-PIB7A]]
 
-[[E-UZM7G]]
+[[E-KZB33]]

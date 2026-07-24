@@ -84,6 +84,6 @@ An important use: if $u$ satisfies the mean value property on every disc and is 
 
 [[E-I6W47]]
 
-[[E-2AVJU]]
+[[E-BEYZ5]]
 
-[[E-BQ2JY]]
+[[E-B4ZSQ]]

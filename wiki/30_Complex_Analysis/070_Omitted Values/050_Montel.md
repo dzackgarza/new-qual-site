@@ -113,6 +113,6 @@ Moreover, if $f_n\to f$ pointwise where $f$ fails continuity or differentiabilit
 
 ## Exercise
 
-[[E-ZE5QB]]
-[[E-ICFRI]]
-[[E-JR5FB]]
+[[E-UJAF4]]
+[[E-C5QHZ]]
+[[E-GFNDF]]

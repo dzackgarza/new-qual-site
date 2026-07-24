@@ -1,27 +1,26 @@
 # $L^2$ and Fourier Analysis
 
 
-## Fall 2020.5 #real_analysis/qual/completed
+## Fall 2020.5
 
 ^31cd83
 
-
 [[P-B2CWE]]
-## Spring 2020.6 #real_analysis/qual/completed
+## Spring 2020.6
 
 [[P-XL7MP]]
-## Fall 2017.5 #real_analysis/qual/completed
+## Fall 2017.5
 
 ^2ef915
 
 [[P-7UIFE]]
-## Spring 2017.5 #real_analysis/qual/work
+## Spring 2017.5
 
 ^736e88
 
 [[P-BXD6O]]
-## Spring 2015.6 #real_analysis/qual/work
+## Spring 2015.6
 [[P-ZOTXG]]
-## Fall 2014.5 #real_analysis/qual/work
+## Fall 2014.5
 
 [[P-5QNZJ]]

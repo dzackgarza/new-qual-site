@@ -7,61 +7,61 @@ title: "Exercises: Singularities"
 
 ## General
 
-[[E-2HWFU]]
+[[E-GRXN4]]
 
-[[E-EF6XH]]
+[[E-WE7UT]]
 
-[[E-7UGFU]]
+[[E-XPMW5]]
 
 ## Zeros
 
-[[E-YIPTJ]]
+[[E-WNXIR]]
 
-[[E-KMR37]]
+[[E-WAYFS]]
 
 ## Orders of poles/zeros
 
-[[E-NEAAE]]
+[[E-G3DCH]]
 
-[[E-FHP2Y]]
+[[E-JOSK3]]
 
-[[E-PB4XZ]]
+[[E-ALB7C]]
 
-[[E-4XMNT]]
+[[E-WXHMJ]]
 
 ## Poles 
 
-[[E-45WL6]]
+[[E-LIK72]]
 
-[[E-G3K6Y]]
+[[E-CLSFF]]
 
-[[E-HFZG7]]
+[[E-4GLUR]]
 
-[[E-Y7IUD]]
+[[E-NT2T3]]
 
-[[E-KZCF4]]
+[[E-UWKTZ]]
 
 ## Essential Singularities
 
-[[E-UK62I]]
+[[E-TM2Z4]]
 
-[[E-D3XMX]]
+[[E-LZTNT]]
 
-[[E-XRB6R]]
+[[E-LXPI7]]
 
-[[E-JCD7B]]
+[[E-SMOHZ]]
 
 ## Removable Singularities
 
-[[E-S4LAS]]
+[[E-XQW4K]]
 
-[[E-OCMBU]]
+[[E-JUT2P]]
 
-[[E-J6RQN]]
-[[E-NB4OU]]
+[[E-KUGNH]]
+[[E-4J6IB]]
 
 ## Singularities at Infinity 
 
-[[E-N474K]]
+[[E-W2CWJ]]
 
-[[E-SZXLW]]
+[[E-QX3VF]]

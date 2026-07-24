@@ -133,15 +133,15 @@ If $z_0$ is an order 1 pole of $f$ and $\gamma_{\eps, \theta}$ is an arc of the 
 
 ### Avoiding Residue Formulas
 
-[[E-GGR7K]]
-[[E-X74D6]]
-[[E-FHZU5]]
-[[E-2VV6N]]
-[[E-IYMJB]]
-[[E-H37ZH]]
-[[E-YRHDM]]
+[[E-S6663]]
+[[E-M5MWL]]
+[[E-RGDJ7]]
+[[E-M7K4C]]
+[[E-AOQLK]]
+[[E-TOZQJ]]
+[[E-FCYUM]]
 ### Applying the formulas
 
-[[E-IBCXP]]
-[[E-BTK6E]]
-[[E-PULJY]]
+[[E-YNZYA]]
+[[E-ITVTT]]
+[[E-U2A4C]]

@@ -51,18 +51,18 @@ Alternatively, use that $N(f+tg, \Omega)$ is a continuous $\ZZ\dash$valued funct
 
 # Exercises
 
-[[P-PU4X7]]
+[[P-FAGTL]]
 
-[[P-75OVL]]
+[[P-YSJO3]]
 
-[[P-ODYTC]]
+[[P-WECI4]]
 
-[[P-VTUDK]]
+[[P-GW3Y7]]
 
-[[P-W6POQ]]
+[[P-ER23C]]
 
-[[P-H4IXL]]
+[[P-5S2DR]]
 
-[[P-LD7LI]]
+[[P-4JM4Y]]
 
-[[P-W23KL]]
+[[P-4NBXB]]

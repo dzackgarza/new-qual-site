@@ -20,8 +20,8 @@ Schwarz lemma.
 
 ## Exercises
 
-[[E-FKQTK]]
+[[E-XQ4BA]]
 
-[[E-5RWHM]]
+[[E-CFTRQ]]
 
 

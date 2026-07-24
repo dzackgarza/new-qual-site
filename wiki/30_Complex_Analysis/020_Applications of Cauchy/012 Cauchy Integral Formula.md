@@ -41,9 +41,9 @@ c_k = {f^{(n)}(z_0) \over n!} = {1\over 2\pi i} \int_\gamma { f(\xi) \over (\xi 
 
 ## Exercises
 
-[[E-YPGFV]]
-[[E-6UIRC]]
-[[E-JQFDG]]
-[[E-TVJJR]]
+[[E-4F5TF]]
+[[E-RLHXB]]
+[[E-VGNUI]]
+[[E-3B2YA]]
 
 

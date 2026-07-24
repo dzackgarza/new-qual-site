@@ -10,32 +10,29 @@
 Try some #resources/problem_collections, or help me with unsolved ones:
 
 - Algebra
-	- #algebra/qual/work #algebra/qual/completed 
+	- 
 	- [[50_Solutions_Algebra]]
 	- [[00_Solutions|Ring Theory Solutions]]
 	- [[9960 UGA Problems|UGA Algebra Course PSets]]
 
 - Real Analysis
-	- #real_analysis/qual/work #real_analysis/qual/completed 
+	- 
 	- [[20_Real Analysis/000_Resources/20_Solutions|Real Analysis Solutions]]
 
 - Complex Analysis
-	- #complex/qual/work #complex/qual/completed 
+	- 
 	- [[30_Complex Analysis/000_Resources/20_Solutions|Complex Analysis Solutions]]
 
 - Topology
-	- #topology/qual/completed #topology/qual/work 
+	- 
 	- [[30_Solutions|Topology Solutions]]
 
-
 Read some #resources/solutions 
-
 
 Enjoy some light #resources/reading:
 
 - [The Written Qual Book](https://people.csail.mit.edu/ddeford/The_Written_Qual_Book.pdf)
 - [Berkeley Problems in Mathematics](https://ravuthleang12.files.wordpress.com/2013/08/berkeley-problems-in-mathematics.pdf)
-
 
 Look at past prelims/quals:
 
@@ -74,21 +71,9 @@ Do some #resources/reading:
 
 ### Solutions
 
-```query
-tag:solutions
-```
 
 ### Problems 
-```query
-tag:problems
-```
 
 ### Review ✨
-```query
-tag:completed
-```
 
 ### Problems to Work 🔨
-```query
-tag:work
-```

@@ -19,7 +19,7 @@ This makes $f$ a bounded entire function, and thus constant by Liouville.
 
 ## Exercise
 
-[[E-HI4DJ]]
-[[E-Y7G3D]]
+[[E-XZWER]]
+[[E-3LIG3]]
 
 

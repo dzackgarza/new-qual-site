@@ -45,9 +45,9 @@ Then $1/f$ is holomorphic on $G$ and continuous on $\bar G$, so $\max_{z\in \bar
 
 # Exercises
 
-[[E-MTRVA]]
-[[E-PZYIF]]
-[[E-RKAII]]
-[[E-DVR2S]]
-[[E-XUOVA]]
-[[E-KOWN2]]
+[[E-JTIXY]]
+[[E-ZC34M]]
+[[E-ZDVLE]]
+[[E-J3QMJ]]
+[[E-TYPSR]]
+[[E-6IZL3]]

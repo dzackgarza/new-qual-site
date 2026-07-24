@@ -8,45 +8,45 @@ title: "Exercises: Contour integration"
 ## Residues
 
 
-[[E-6FC66]]
+[[E-QF7KI]]
 ## Rational Functions 
 
 ### Superlinear Decay
 
-[[E-K4656]]
-[[E-ICRWN]]
-[[E-36ATB]]
-[[E-BX3TQ]]
-[[E-MV3XK]]
-[[E-C2HNL]]
+[[E-IZKCV]]
+[[E-UDYDX]]
+[[E-AKNDW]]
+[[E-AKF2O]]
+[[E-JZNWV]]
+[[E-SPIVX]]
 ### Linear or sublinear decay
 
-[[E-NL5TU]]
+[[E-AXBZQ]]
 ### No clear decay
 
-[[E-ZD6JU]]
-[[E-SIRWS]]
+[[E-YYRZX]]
+[[E-AIQEU]]
 ## Singularities along $\RR$, Principal Values
 
-[[E-KFKVU]]
-[[E-6GHUM]]
+[[E-ZGZYQ]]
+[[E-DUK6M]]
 ## Rational functions of $\cos, \sin$
 
-[[E-HR3G3]]
-[[E-3WV5U]]
-[[E-NDI7K]]
+[[E-BEIHP]]
+[[E-Z4JCZ]]
+[[E-JKROF]]
 ## Branch Cuts
 
 ### Logarithms
 
-[[E-7HCAG]]
-[[E-VGRBA]]
-[[E-J6PJP]]
-[[E-5AYG6]]
+[[E-FJJA6]]
+[[E-EOMTI]]
+[[E-KC6DS]]
+[[E-HHSCS]]
 ### Power Functions
 
-[[E-S6EOX]]
-[[E-TGUAH]]
+[[E-YAMX6]]
+[[E-2HIKG]]
 ### Square Roots / Slits
 
 :::{.concept}
@@ -63,8 +63,8 @@ title: "Exercises: Contour integration"
 
 :::
 
-[[E-MLTM2]]
-[[E-JVANT]]
-[[E-3FGMU]]
-[[E-UFFIL]]
-[[E-XP2DK]]
+[[E-L3MG4]]
+[[E-EBRU5]]
+[[E-GPCW2]]
+[[E-XYEP4]]
+[[E-KZV2Z]]

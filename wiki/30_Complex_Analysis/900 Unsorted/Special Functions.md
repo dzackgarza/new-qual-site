@@ -163,10 +163,10 @@ An interesting way to sum infinite series:
 
 :::
 
-[[E-R7JRT]]
-[[E-R7I7D]]
-[[E-OBFLL]]
-[[E-AIC3E]]
-[[E-IVUCK]]
-[[E-4OEWK]]
-[[E-Z6MCK]]
+[[E-2GYXM]]
+[[E-NTKTA]]
+[[E-ARVUV]]
+[[E-4WFQM]]
+[[E-6XPQW]]
+[[E-26QQP]]
+[[E-VA3OK]]

@@ -108,12 +108,12 @@ The inversion $z\to 1/z$ is easiest to understand in polar coordinates, $Re^{i\t
 
 # Exercises
 
-[[E-UPKG7]]
+[[E-X4MBB]]
 
-[[E-IGQAP]]
+[[E-WNNSK]]
 
 [[E-P7SIB]]
-[[E-M6TLT]]
+[[E-JWO2G]]
 
 [[E-ZCPKK]]
 

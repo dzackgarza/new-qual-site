@@ -286,6 +286,17 @@ def strip_study_trackers(body: str, where: str = "") -> str:
         return ""
     out = WORK_MACRO.sub(dework, out)
     out = BARE_ENUM_HEADING.sub("", out)
+
+    # Obsidian status hashtags -- `#complex/exercise/completed`,
+    # `#algebra/qual/work` -- are the same personal study tracking as `\work` in
+    # a third form: which problems the author had done or still had to do. They
+    # sit appended to headings ("#### Exercise  #topology/qual/work") and list
+    # items, so strip the tag and the whitespace it leaves behind.
+    def detag(m: re.Match[str]) -> str:
+        tracker_log.append({"where": where, "note": m.group(0).strip(), "action": "dropped"})
+        return ""
+    out = STATUS_HASHTAG.sub(detag, out)
+
     # A heading emptied of its number and marker is furniture, not a section.
     out = re.sub(r"(?m)^#{1,6}[ \t]*$\n?", "", out)
 
@@ -298,6 +309,8 @@ def strip_study_trackers(body: str, where: str = "") -> str:
 
 TODO_OPEN = re.compile(r"[ \t]*\\todo(?:\[[^\]]*\])?\{")
 WORK_MACRO = re.compile(r"[ \t]*\$?\\work\$?")
+# Personal study-status tags: #<area>/(qual|exercise|exercises)/(work|completed).
+STATUS_HASHTAG = re.compile(r"[ \t]*#[a-z_]+/(?:qual|exercises?)/(?:work|completed)\b")
 # `## 1`, `### a`, `## 3.` -- an enumeration left behind once the marker is gone.
 # A heading that is only a problem's position in a list is not a title; the tag
 # is the identity. Headings with real text (`## 2014 Fall`) are untouched.
@@ -313,26 +326,30 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
     page: list[str] = []
     cards: list[tuple[str, str]] = []
     terms: list[str] = []
+    relp = str(rel_path(src))
     for span in spans:
-        body = strip_study_trackers("".join(lines[span["start_line"] - 1 : span["end_line"]]), str(rel_path(src)))
+        raw = "".join(lines[span["start_line"] - 1 : span["end_line"]])
         if span["destination"] != "card":
-            page.append(body)
+            page.append(strip_study_trackers(raw, relp))
             continue
         # A bundle span that opens with the section heading swallows page
         # structure into the card: the heading is the wiki's navigation and the
         # exam provenance, not part of the problem statement. Split it back out
         # -- the page keeps it, so reconstruction is unaffected.
+        #
+        # Split on the raw span, then strip head and body *separately*. Stripping
+        # the whole span and splitting after lets a tracker in the discarded head
+        # trip the body's whitespace tidy-up, re-tagging a card whose statement
+        # never changed -- 180 of them, for a personal tag that sat in a heading.
         head: list[str] = []
-        # Split the already-normalised body, not the raw lines: recomputing from
-        # `lines` here silently discarded the tracker strip for every card.
-        rest = body.splitlines(keepends=True)
+        rest = raw.splitlines(keepends=True)
         while rest and (rest[0].startswith("#") or NOT_A_TITLE.match(rest[0].strip()) or not rest[0].strip()):
             head.append(rest.pop(0))
         if not rest:                       # nothing but furniture; leave it be
-            page.append(body)
+            page.append(strip_study_trackers(raw, relp))
             continue
-        page.extend(head)
-        body = "".join(rest)
+        page.append(strip_study_trackers("".join(head), relp))
+        body = strip_study_trackers("".join(rest), relp)
 
         kind = str(span["kind"]) if span.get("kind") else "problem"
         t = tag(kind, body)

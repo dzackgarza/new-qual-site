@@ -174,6 +174,6 @@ Some properties:
 
 # Exercises
 
-[[E-YQUKY]]
-[[E-FIWRC]]
-[[E-YAK2X]]
+[[E-6F2HU]]
+[[E-FXYTL]]
+[[E-WKY7C]]
