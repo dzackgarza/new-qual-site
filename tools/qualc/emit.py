@@ -16,8 +16,10 @@ else.
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import sqlite3
+import subprocess
 from collections import Counter
 from pathlib import Path
 
@@ -80,9 +82,126 @@ def _blocks(card: sqlite3.Row) -> list[pf.Block]:
     return list(from_ast(card["ast"]).walk(_rename).content)
 
 
+# --- raw-JSON tag-page path -------------------------------------------------
+#
+# The 3,200 tag pages are the bulk of the build. Composing them through panflute
+# means one pandoc process per card to load and one per page to write -- an hour.
+# Their bodies are only a card's own blocks plus, for a problem, its inlined
+# occurrences and any solution or hint. No `uses` link, no title parsing: every
+# piece is already pandoc JSON in the catalog. So these pages are assembled as
+# JSON and the whole set is written with a single pandoc pass. The other ~230
+# pages (sources, guides, listings, index) keep the panflute writer.
+
+
+def load_json(con: sqlite3.Connection) -> tuple[dict, list]:
+    """{card id -> its body block list} as raw pandoc JSON, plus the api version."""
+    cache, api = {}, [1, 23]
+    for r in _rows(con, "select id, ast from cards"):
+        doc = json.loads(r["ast"])
+        api = doc.get("pandoc-api-version", api)
+        cache[r["id"]] = doc.get("blocks", [])
+    return cache, api
+
+
+def _rename_json(node) -> None:
+    """The `_rename` transform, on raw JSON: rename owned Div classes at any depth."""
+    if isinstance(node, list):
+        for x in node:
+            _rename_json(x)
+    elif isinstance(node, dict):
+        if node.get("t") == "Div":
+            attr = node["c"][0]  # [id, classes, keyvals]
+            owned = [c for c in attr[1] if c in OWNED]
+            attr[1] = [OWNED[c] if c in OWNED else c for c in attr[1]]
+            if owned:
+                attr[1].append(SECTION_CLASS)
+                attr[2].append(["data-label", DIV_CLASS_TO_KIND[owned[0]].title()])
+        _rename_json(node.get("c"))
+
+
+def _dup(blocks):
+    return json.loads(json.dumps(blocks))
+
+
+def problem_json(con: sqlite3.Connection, card: sqlite3.Row, jcache: dict) -> tuple[dict, list]:
+    facets = _rows(
+        con,
+        "select distinct e.institution, s.year from occurrences o join sources s on s.id=o.source_id join exam_sources e on e.id=s.id where o.problem_id=?",
+        (card["id"],),
+    )
+    institutions = sorted({f["institution"].upper() for f in facets})
+    years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
+    areas = _terms(con, card["id"], "area")
+    topics = _terms(con, card["id"], "topic")
+
+    body = _dup(jcache[card["id"]])
+    _rename_json(body)
+    for occ in _rows(
+        con,
+        "select o.*, s.title as source_title from occurrences o join cards s on s.id=o.source_id where o.problem_id=? order by o.id",
+        (card["id"],),
+    ):
+        blocks = _dup(jcache[occ["id"]])
+        for b in blocks:
+            if b.get("t") == "Div":
+                kv = [["source", occ["source_title"]], ["locator", occ["locator"]], ["occurrence", occ["id"]]]
+                b["c"][0] = [b["c"][0][0], ["qual-occurrence"], kv]
+        body += blocks
+    for kind in ("hints-at", "solves"):
+        for rel in _related(con, card["id"], kind):
+            rb = _dup(jcache[rel["id"]])
+            _rename_json(rb)
+            body += rb
+    meta = {
+        "title": card["title"],
+        "subtitle": card["id"],
+        "area": ", ".join(a.replace("-", " ").title() for a in areas),
+        "institutions": ", ".join(institutions) or "—",
+        "years": ", ".join(years) or "—",
+        "review": card["review"],
+        "categories": sorted(set(topics + areas + institutions + years)),
+    }
+    return meta, body
+
+
+def plain_json(con: sqlite3.Connection, card: sqlite3.Row, jcache: dict) -> tuple[dict, list]:
+    body = _dup(jcache[card["id"]])
+    _rename_json(body)
+    meta = {
+        "title": card["title"],
+        "subtitle": card["id"],
+        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
+    }
+    return meta, body
+
+
+def write_json_pages(items: list[tuple[Path, dict, list]], api: list) -> None:
+    """Convert every tag page's JSON body to markdown in one pandoc call."""
+    combined: list = []
+    for i, (_, _, blocks) in enumerate(items):
+        combined.append({"t": "RawBlock", "c": ["html", f"<!--PG:{i}-->"]})
+        combined.extend(blocks)
+    doc = json.dumps({"pandoc-api-version": api, "meta": {}, "blocks": combined})
+    md = subprocess.run(["pandoc", "-f", "json", "-t", MARKDOWN, "--wrap=preserve"],
+                        input=doc, capture_output=True, text=True).stdout
+    parts = re.split(r"<!--PG:(\d+)-->", md)
+    bodies = {int(parts[j]): parts[j + 1].strip() for j in range(1, len(parts) - 1, 2)}
+    for i, (path, meta, _) in enumerate(items):
+        path.write_text("---\n" + yaml.safe_dump(meta, sort_keys=False, allow_unicode=True).strip()
+                        + "\n---\n\n" + bodies.get(i, "") + "\n")
+
+
 def _inlines(markdown: str) -> list[pf.Inline]:
-    parsed = pf.convert_text(markdown, input_format=MARKDOWN, output_format="panflute")
-    return list(parsed[0].content) if parsed else [pf.Str("")]
+    # A title is inline text, but some are lifted verbatim from a statement's
+    # first line and still carry a leading list/quote/heading marker, which
+    # pandoc parses as a block wrapper whose children are ListItems, not inlines.
+    # Strip one leading marker so the title parses as inlines; if it still parses
+    # to a non-inline block, fall back to the literal text rather than crash.
+    text = re.sub(r"^\s*([-*+]|\d+[.)]|>|#{1,6})\s+", "", markdown)
+    parsed = pf.convert_text(text, input_format=MARKDOWN, output_format="panflute")
+    if parsed and isinstance(parsed[0], (pf.Para, pf.Plain)):
+        return list(parsed[0].content)
+    return [pf.Str(markdown)]
 
 
 def _link(card: sqlite3.Row, prefix: str = "../tag/") -> pf.Plain:
@@ -370,7 +489,6 @@ def _generate_data(con: sqlite3.Connection) -> list[dict]:
     # (with a marker block between problems) into a single document and converted
     # once. Round-tripping each through from_ast would spawn pandoc thousands of
     # times and never finish.
-    import subprocess
     api = None
     blocks: list = []
     for r in problems:
@@ -393,7 +511,6 @@ def _generate_data(con: sqlite3.Connection) -> list[dict]:
     return out
 
 
-import re  # noqa: E402  (used by _generate_data)
 
 GENERATE_QMD = """---
 title: Generate a practice set
@@ -467,15 +584,18 @@ def project(db: Path, out: Path, publications: Path, site: Path, macros: dict) -
     for asset in ("styles.css", "filters/reveal.lua"):
         shutil.copy(site / asset, out / Path(asset).name)
 
+    # The bulk: every tag page composed as raw pandoc JSON and written in one
+    # pandoc pass. Everything not a problem, source, or occurrence is envelope
+    # plus prose; occurrences render inline on the problem they instantiate.
+    jcache, api = load_json(con)
+    tag_pages: list[tuple[Path, dict, list]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
-        write(problem_page(con, card), out / "tag" / f"{card['id']}.qmd")
-    # Everything that is not a problem, a source, or an occurrence is envelope
-    # plus prose, and gets a plain page. Stated as an exclusion rather than a
-    # list of kinds so that adding a kind to the union publishes it, instead of
-    # leaving it indexed but unreachable with nothing saying so. Occurrences are
-    # deliberately absent: they render inline on the problem they instantiate.
+        meta, body = problem_json(con, card, jcache)
+        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     for card in _rows(con, "select * from cards where kind not in ('problem','source','occurrence')"):
-        write(plain_page(con, card), out / "tag" / f"{card['id']}.qmd")
+        meta, body = plain_json(con, card, jcache)
+        tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
+    write_json_pages(tag_pages, api)
     for src in _rows(con, "select * from cards where kind='source'"):
         write(source_page(con, src), out / "exam" / f"{src['id']}.qmd")
 
