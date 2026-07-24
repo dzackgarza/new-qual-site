@@ -1,0 +1,334 @@
+{
+ "summary": {
+  "documents": 27,
+  "total_problems": 448,
+  "with_solutions": 118,
+  "audit_faithful": 27
+ },
+ "per_document": [
+  {
+   "doc": "Qual Problems.pdf",
+   "institution": "unknown",
+   "n_problems": 3,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Only truncated previews of problems 2 and 3 were available for review (part b/c text of problem 3, and the tail of problem 2's statement, were cut off before reaching me) \u2014 cannot fully verify those un-shown portions against the page, though everything visible matches.",
+     "Pages contain exactly 3 numbered problems (circled 7, 8, 9 in the source), matching the extraction's count of 3; institution 'unknown' is correct since the page only gives a course number '8005 Qual Problems' with no institution named.",
+     "Problem 1's statement (E/F Galois, F\u2286K\u2286E intermediate) matches page 1's diagram and the K/F-normal-iff-Gal(E/K)-normal-in-Gal(E/F) argument actually carried out there.",
+     "Problem 2's tower order F\u2286E\u2286K\u2286L matches page 2's diagram (read bottom-to-top: F, E, K, L) with L/F Galois via the D4 correspondence, and the visible fragment is consistent with the classic non-transitivity-of-normality counterexample being solved (E/F normal via H1\u22b4D4, K/E normal trivially, K/F not normal via H2 not normal in D4).",
+     "Problem 3's f(x)=x^3-7 and part (a) 'Find Gal(K/Q)' match the page 2/3 work computing Gal(Q(7^{1/3},\u03b63)/Q)\u2245S3; the page also solves two further parts (Gal(Q(\u03b63)/R)\u2245Z2, and the Galois group of the splitting field over F13\u2245S3) that correspond to likely parts (b) and (c), consistent with the extraction listing sub-parts a/b (and presumably c, not shown in the truncated preview)."
+    ]
+   }
+  },
+  {
+   "doc": "Qual Problems.xoj",
+   "institution": "unknown",
+   "n_problems": 3,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Page count matches: page 1 has problem (7), page 2 has (8) and the start of (9), page 3 continues (9)'s parts 2-3 -- 3 distinct problems total, matching the extraction's count of 3. No missing or invented problems found.",
+     "All directly quoted math in the three snippets matches the page verbatim: Problem 7's normal-extension definition and tower E|K|F; Problem 8's tower L|K|E|F; Problem 9's f(x)=x^3-7, splitting field Q(7^{1/3},\u03b63) with \u03b63=e^{2\u03c0i/3}.",
+     "Problem 8's extracted lead-in reads 'consider a tower of fields L|K|E|F corresponding under \u03bb to', but the page literally says 'By the Galois correspondence, we have' followed directly by the diagram (L/K/E/F on the left, {e}/H2/H1/D4 on the right, linked by \u03bb) -- the extraction paraphrases the diagram into prose rather than quoting it; the underlying correspondence (tower <-> subgroup chain via \u03bb) is preserved correctly though.",
+     "Problem 9's snippet cuts off at 'a. Fi', but the page's actual computation is numbered '1) Since min(7^{1/3},Q)=x^3-7...' (and '2)', '3)' on page 3), not 'a./b./c.' -- could not verify from the truncated snippet whether the fuller extracted text reconstructs official problem sub-parts (a/b/c) distinct from the author's numbered solution steps, or whether it invents sub-part labeling/content not on the page. Recommend checking the full (untruncated) text of extracted problem 3 against pages 2-3 specifically around this transition.",
+     "Institution 'unknown' is consistent with the page, which only shows a course/qual number '8005 Qual Problems' and the author's name (Zack Garza) in a cloud doodle -- no institution is named anywhere on the three pages."
+    ]
+   }
+  },
+  {
+   "doc": "Table of Small Groups.xoj",
+   "institution": "unknown",
+   "n_problems": 0,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Page is a handwritten reference table (n=1..20: groups of that order, factorization case p/p^2/pq/p^3/p^2q/p^4, and count of groups) \u2014 not a qual exam problem statement. Extraction reporting 0 problems is correct; there is nothing to mis-transcribe."
+    ]
+   }
+  },
+  {
+   "doc": "AlgebraSept2019solutions.pdf",
+   "institution": "unknown",
+   "n_problems": 6,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "JHU Years of Analysis Exams.pdf",
+   "institution": "jhu",
+   "n_problems": 108,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "All 20 pages read directly. Summing problems per exam using natural top-level numbering (not exploding lettered sub-parts like (a)/(b)/(c) or 3a/3b into separate entries) gives exactly 108 across the 15 exam instances found: Sept 2019 Real+Complex (4+4), Spring 2019 Real+Complex (4+4), two undated JHU 'Real and Complex analysis' exams (3+4 and 3+4), Fall 2017 (6), Spring 2017 (6), Fall 2016 (6), Spring 2016 (7), Fall 2015 (7), Spring 2015 (8), Fall 2014 (7), Spring 2014 (8), Fall 2013 (7), May 2013 (7+1), Fall 2012 (4+4) = 108. This matches the reported count exactly, so no missed/invented problems detected under this splitting convention.",
+     "The first 6 transcribed problems given in the prompt were checked verbatim against pages p-01 and p-02 (Sept 4, 2019 exam) and match the source math exactly, including the log x/(x^2+2) contour integral and the max|f(z)| <= AR^k+B entire-function problem.",
+     "Two of the 20 pages (p-04/p-05 and p-06/p-07) are undated JHU 'Real and Complex analysis' qualifying exams with only a Name/Date blank line, no semester/year printed. I could not verify from the pages themselves what year/semester label the extraction assigned to these two exams' problems (7 problems each) \u2014 this is a labeling risk the page images cannot resolve, though it does not affect the total problem count.",
+     "Only the first 6 of the 108 transcribed problem texts were available to check verbatim against page content; the remaining ~102 were verified only via the count-reconciliation method above, not a full per-problem text diff, since the full extraction list was not provided to this audit."
+    ]
+   }
+  },
+  {
+   "doc": "MATH871-Exam-Review-Sheets.pdf",
+   "institution": "unknown",
+   "n_problems": 0,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Document is a Math 871 (Munkres-based point-set topology) exam review sheet (2 sheets, 4 pages total: Exam 1 review + Exam 2 review), not a set of self-contained qual problems.",
+     "Content consists of (a) a vocabulary list, (b) a numbered list of paraphrased/abbreviated theorems (de Morgan's laws, Tychonoff-type facts, quotient map theorems, compactness/Hausdorff/normality theorems, homotopy facts, etc.), and (c) two 'Problem sets' lines that are bare cross-reference lists to textbook/problem-set exercise numbers (e.g. '1.2cgkmpq, 2.1, 2.2, 6.2, 7.1, 7.5aei, 13.3, 13.4' and 'H p.18 #2, PS10.1, ...'), with no problem statements given in the document itself -- the actual exercises live in the external Munkres/Hatcher texts and course PS handouts referenced by URL.",
+     "Because no exercise is stated in full on the page (only bare numeric/alphanumeric identifiers pointing to an external textbook), there is no self-contained problem text to transcribe; a 0-problem extraction is therefore correct rather than a miss.",
+     "Institution 'unknown' is a plausible gap in the extraction (course number Math 871 and instructor URL www.unl.edu/~smh/871 point to University of Nebraska-Lincoln), but that is a metadata/attribution question, not a problem-transcription fidelity issue."
+    ]
+   }
+  },
+  {
+   "doc": "Ma_TAMU_note.pdf",
+   "institution": "tamu",
+   "n_problems": 63,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Only verified the first 6 of the 63 extracted problem statements against page images directly (that's all provided in the prompt); the remaining 57 were checked only via a count-reconciliation, not a full statement-by-statement diff.",
+     "Source document contains genuinely empty problem stubs (Problem 1.3, 1.6, 1.7, 3.3) with numbers but no statement text \u2014 correctly appear to be excluded from the 63.",
+     "Source document contains three pure back-reference stubs (5.10, 6.3, 7.9) that say only 'same as Problem X in <year>' with no independent statement \u2014 correctly appear to be excluded from the 63 as they would duplicate another entry verbatim.",
+     "Problem 4.5 in the source itself is missing part (a): the document jumps from the end of Problem 4.4's proof directly to 'Problem 4.5. (b) Show that...' with no (a) ever given. This is a defect in the original document, not something the extraction should be faulted for, but any downstream user should know part (a) is absent from the source."
+    ]
+   }
+  },
+  {
+   "doc": "Neil_Spring_2018_Solutions.pdf",
+   "institution": "unknown",
+   "n_problems": 5,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Only truncated snippets of the transcribed problem statements were available for review (per the 'First few' excerpt), so problems 1, 3, 4, 5 could only be checked for topical consistency with their solutions on the page, not verified verbatim; problem 2 was verified character-for-character and matches exactly."
+    ]
+   }
+  },
+  {
+   "doc": "UCLA_Basic_Exam_Topics.pdf",
+   "institution": "ucla",
+   "n_problems": 0,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Pages contain only the UCLA Basic Examination syllabus/topic list and suggested reference textbooks, not actual exam problems; 0 extracted problems is correct for this source."
+    ]
+   }
+  },
+  {
+   "doc": "UCLA_Solutions.pdf",
+   "institution": "ucla",
+   "n_problems": 42,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Verification scope: the task prompt only exposed the first 6 of the 42 extracted problem texts to me for direct comparison; I did not have access to the full 42-item extraction output, so I could not character-check the transcription of items 7-42 against the pages.",
+     "Problem count check (independent of the extraction's own text): reading all 20 pages myself and tallying problems per section gives Spring 2009 = 12 (Problems 1-12, pp.2-6), Fall 2009 = 9 (Problems 1-9, pp.7-11), Spring 2010 = 13 (Problems 1-13, pp.12-15), Fall 2010 = 8 problem statements fully present on pp.16-20 (Problem 8's solution is cut off at the bottom of p.20, but its statement is intact and the page range ends there). That totals 12+9+13+8 = 42, exactly matching the extraction's reported count, with no evidence of a missing or invented problem.",
+     "The 6 previewed problem statements (Spring 2009 Problems 1-6: the F_t/G_t symmetric-difference identity, the weakly-dense unit sphere / operators problem, the X* separable implies X separable problem, the non-decreasing function / Fatou's lemma problem, the dyadic averaging operator E_n f problem, and the Haar function problem) all match the source page text and math verbatim as far as the given snippets go; no invented content or mis-transcribed math was found in this subset."
+    ]
+   }
+  },
+  {
+   "doc": "algebra_2003-2009_prelims.pdf",
+   "institution": "unknown",
+   "n_problems": 32,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "algebra_2010-2015_prelims.pdf",
+   "institution": "unknown",
+   "n_problems": 60,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Institution metadata reported as \"unknown\" but the document explicitly identifies the source on p-06 as \"Wesleyan University, Department of Mathematics, PhD Qualifying Exam, Written Part: Algebra, Profs. Hovey and Scowcroft\" (July 10, 2013 exam) \u2014 this should have been captured/propagated as the institution for the bundle rather than left unknown.",
+     "Only the first 6 of the 60 reported problems were visible in the provided extraction excerpt, so only those 6 could be directly spot-checked against the source images; all 6 matched the page content exactly, including the 3x3 matrix entries (0,-1,2 / 3,-4,6 / 2,-2,3) in problem 5. The remaining 54 problems' transcribed text was not available for this audit and were only verified indirectly via structural/count cross-checking against the page images.",
+     "Problem-count cross-check: manually counting top-level numbered problems across all 15 pages (June 2015: 4+4+4=12; Summer 2014: 6; Wesleyan July 2013: 4+4+4=12; June 2012: 4+4+4=12; Summer 2011: 6; June 2010: 4+4+4=12) sums to exactly 60, matching the reported count and confirming no whole top-level problems appear to have been dropped or invented, under the convention that each top-level numbered item (with its lettered sub-parts bundled) counts as one problem."
+    ]
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall02.pdf",
+   "institution": "uga",
+   "n_problems": 8,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall03.pdf",
+   "institution": "uga",
+   "n_problems": 8,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall04.pdf",
+   "institution": "unknown",
+   "n_problems": 9,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall05.pdf",
+   "institution": "uga",
+   "n_problems": 9,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "The page contains exactly 9 numbered problems (set complement identity, derivative/product rule, nonabelian groups order 5/6, cube roots of 8, contour integral around origin, multivariable chain rule/implicit function, decreasing-sequence partial-sum inequality, diagonalizable 2x2 matrix, binomial theorem mod p) matching the extraction's count of 9 and institution/date (UGA, Fall 2005 / Aug 12 2005).",
+     "Only the first 6 of 9 extracted problems were shown in the summary provided to me, so problems 7-9 (decreasing sequence inequality, matrix diagonalization, binomial theorem) could not be checked verbatim against the extraction text -- only against the source page, which they match in content/topic.",
+     "The 6 previewed problems (1-6) all match the page's math faithfully, including the exact formula in #1 (intersection complement = union of complements), the exact integral in #5 (-y/(x^2+y^2) dx + x/(x^2+y^2) dy), and the exact wording of #3 (n = 5, 6) and #4 (cube roots of 8, form a+bi)."
+    ]
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall06.pdf",
+   "institution": "uga",
+   "n_problems": 9,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall07.pdf",
+   "institution": "uga",
+   "n_problems": 7,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall10.pdf",
+   "institution": "uga",
+   "n_problems": 9,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall12.pdf",
+   "institution": "unknown",
+   "n_problems": 9,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Fall17.pdf",
+   "institution": "uga",
+   "n_problems": 8,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Spring03.pdf",
+   "institution": "uga",
+   "n_problems": 8,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "The page contains exactly 8 numbered problems (#1-#8), matching the extraction's reported count of 8; no missing or invented problems detected.",
+     "Problems 1-6 shown in the excerpt match the page's math verbatim (span/subspace proof, 3x2 complex matrix with A^tA=I_2 and AA^t=I_3, sum of squares formula, x > ln x, continuity of linear maps R^2->R^2, and the divergent-series/sqrt-convergence question).",
+     "Coverage caveat: only the extraction text for problems 1-6 was provided to me (labeled 'first few'); I read the full page image directly and confirmed problems 7 (differentiability definition + non-differentiability of xy/(x^2+y^2) at origin) and 8 (line integral via Green's theorem on the unit square) are present on the page, but I was not given the corresponding extracted text for items 7-8 to diff against, so I cannot confirm their transcription is free of errors -- only that the source problems exist and the total count of 8 is consistent."
+    ]
+   }
+  },
+  {
+   "doc": "grad_prelim_Spring04.pdf",
+   "institution": "uga",
+   "n_problems": 8,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Spring05.pdf",
+   "institution": "unknown",
+   "n_problems": 8,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": [
+     "Page contains exactly 8 problems under 'PRELIMINARY EXAM, SPRING 2005' header, matching the reported count of 8; no missing or invented problems observed on this single-page document.",
+     "Problems 1-6 as transcribed match the page verbatim in math content (quantifier statements A/B, Fibonacci F_0=1,F_1=1 recurrence, x^3=29-x, epsilon-delta continuity + limit of f(a_n), T(1,1)=(5,3) and T(2,3)=(7,9), 3x3 matrix A with v1,v2,v3 in R^3 linear dependence claims).",
+     "Problems 7 (cube roots of 2-2i) and 8 (series a_n^2 convergence given absolute/conditional convergence of a_n) were not shown in the truncated 'first few' excerpt provided in the task prompt, so their transcribed text could not be directly checked against the page in this pass; both appear correctly on the page itself with no sign of alteration needed.",
+     "Institution listed as 'unknown' is consistent with the page, which gives only 'PRELIMINARY EXAM, SPRING 2005' and no institution name."
+    ]
+   }
+  },
+  {
+   "doc": "grad_prelim_Spring06.pdf",
+   "institution": "uga",
+   "n_problems": 9,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "grad_prelim_Spring07.pdf",
+   "institution": "uga",
+   "n_problems": 8,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  },
+  {
+   "doc": "sample_exam.pdf",
+   "institution": "uga",
+   "n_problems": 9,
+   "audit": {
+    "faithful": true,
+    "problem_count_ok": true,
+    "issues": []
+   }
+  }
+ ]
+}

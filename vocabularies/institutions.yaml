@@ -8,3 +8,9 @@
   name: National University of Singapore
 - id: ucsd
   name: University of California, San Diego
+- id: ucla
+  name: University of California, Los Angeles
+- id: jhu
+  name: Johns Hopkins University
+- id: tamu
+  name: Texas A&M University

@@ -90,7 +90,13 @@ def institution(src_path: str) -> str:
     calendar. The file a problem was written down in does not change which exam
     it came from.
     """
-    return "ucsd" if "UCSD" in src_path else "uga"
+    if "UCSD" in src_path:
+        return "ucsd"
+    # WS9 extraction paths encode the institution: ws9/<inst>/<doc>.
+    m = re.search(r"(?:^|/)ws9/(ucla|jhu|tamu|ucsd|uga)/", src_path)
+    if m:
+        return m.group(1)
+    return "uga"
 
 
 def parse_term(term: str) -> list[dict]:
@@ -227,7 +233,7 @@ def render(card: dict, body: str) -> str:
         needs_quote = (
             not sv
             or sv[0] in "!&*[]{}#|>@`\"'%,?-:"
-            or ": " in sv
+            or ":" in sv          # any colon can start a nested mapping in YAML
             or sv.strip() != sv
             or sv.lower() in ("null", "true", "false", "yes", "no", "~")
             or re.fullmatch(r"-?\d+(\.\d+)?", sv) is not None
