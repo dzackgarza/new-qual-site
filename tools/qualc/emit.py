@@ -307,7 +307,8 @@ QUARTO_YML = {
         "navbar": {
             "left": [
                 {"href": "index.qmd", "text": "Home"},
-                {"href": "problems.qmd", "text": "Problems"},
+                {"href": "problems.qmd", "text": "Browse"},
+                {"href": "generate.qmd", "text": "Generate"},
                 {"href": "exams.qmd", "text": "Exams"},
                 {"href": "guides.qmd", "text": "Guides"},
             ]
@@ -349,6 +350,110 @@ def mathjax_header(macros: dict) -> str:
     return "<script>\nwindow.MathJax = { tex: { macros: " + json.dumps(macros) + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] } };\n</script>\n"
 
 
+def _generate_data(con: sqlite3.Connection) -> list[dict]:
+    """Every problem as a selectable exam question: statement markdown + facets.
+
+    The statement is recovered from the card AST (never the flattened section
+    text, which loses the math) with a single batched pandoc call rather than one
+    per problem, and each problem carries the areas and institutions it is filed
+    under so the generator can select the way make-me-a-qual did -- by area."""
+    problems = _rows(con, "select id, title, ast from cards where kind='problem' order by id")
+    areas: dict[str, list[str]] = {}
+    for r in _rows(con, "select card_id, term from classifications where axis='area'"):
+        areas.setdefault(r["card_id"], []).append(r["term"])
+    insts: dict[str, set] = {}
+    for r in _rows(con, "select o.problem_id pid, e.institution inst from occurrences o "
+                        "join exam_sources e on e.id=o.source_id"):
+        insts.setdefault(r["pid"], set()).add(r["inst"])
+    # One pandoc invocation for the whole corpus, not one per problem: each
+    # card's AST is already pandoc JSON, so the raw block lists are concatenated
+    # (with a marker block between problems) into a single document and converted
+    # once. Round-tripping each through from_ast would spawn pandoc thousands of
+    # times and never finish.
+    import subprocess
+    api = None
+    blocks: list = []
+    for r in problems:
+        doc = json.loads(r["ast"])
+        api = doc.get("pandoc-api-version", api)
+        blocks.append({"t": "Para", "c": [{"t": "Str", "c": f"%%%QSPLIT%%%{r['id']}%%%"}]})
+        blocks.extend(doc.get("blocks", []))
+    combined = json.dumps({"pandoc-api-version": api or [1, 23], "meta": {}, "blocks": blocks})
+    md = subprocess.run(["pandoc", "-f", "json", "-t", MARKDOWN, "--wrap=preserve"],
+                        input=combined, capture_output=True, text=True).stdout
+    chunks = re.split(r"%%%QSPLIT%%%([PEX]-[A-Z0-9]{5})%%%", md)
+    body_by_id = {chunks[i]: chunks[i + 1].strip() for i in range(1, len(chunks) - 1, 2)}
+    out = []
+    for r in problems:
+        stmt = body_by_id.get(r["id"], "")
+        # the problem body is wrapped in a fenced div; drop the fence for display
+        stmt = re.sub(r"^:::+.*$|^:::+$", "", stmt, flags=re.M).strip()
+        out.append({"id": r["id"], "areas": areas.get(r["id"], []),
+                    "insts": sorted(insts.get(r["id"], [])), "q": stmt})
+    return out
+
+
+import re  # noqa: E402  (used by _generate_data)
+
+GENERATE_QMD = """---
+title: Generate a practice set
+---
+
+```{=html}
+<style>
+.gen-panel{{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start;margin-top:8px}}
+.gen-controls .grp{{margin-bottom:18px}}
+.gen-controls label.h{{display:block;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#6c757d;margin-bottom:8px}}
+.gen-controls .opt{{display:block;margin:4px 0}}
+#gen-n{{width:90px;padding:6px 8px}}
+#gen-go{{margin-top:6px;padding:10px 18px;font-weight:600;border:0;border-radius:6px;background:#2780e3;color:#fff;cursor:pointer}}
+#gen-sheet .q{{display:flex;gap:14px;margin:22px 0;page-break-inside:avoid}}
+#gen-sheet .qn{{font-weight:700;color:#2780e3;min-width:26px}}
+#gen-sheet .src{{font-size:.85em;color:#6c757d;font-style:italic;margin-top:6px}}
+#gen-sheet h2{{text-align:center;border-bottom:2px solid #333;padding-bottom:10px}}
+@media print{{.gen-controls,.navbar,#quarto-header,.quarto-title-block{{display:none!important}}.gen-panel{{display:block}}}}
+</style>
+<div class="gen-panel">
+  <form class="gen-controls" onsubmit="return false">
+    <div class="grp"><label class="h">Areas</label><div id="gen-areas"></div></div>
+    <div class="grp"><label class="h">Institution</label><select id="gen-inst" class="form-select"></select></div>
+    <div class="grp"><label class="h">Number of problems</label><input type="number" id="gen-n" value="8" min="1" max="40"></div>
+    <div class="grp"><label class="opt"><input type="checkbox" id="gen-src"> Only from a recorded sitting</label></div>
+    <button id="gen-go">Generate set</button>
+    <button id="gen-print" style="margin-top:6px;background:none;border:1px solid #ccc;border-radius:6px;padding:9px 16px;cursor:pointer">Print / PDF</button>
+  </form>
+  <div id="gen-sheet"><p class="text-muted">Pick criteria and press <b>Generate set</b>. A modern take on make-me-a-qual — problems are sampled from the corpus and typeset here.</p></div>
+</div>
+<script>
+const AREAS={{"algebra":"Algebra","real-analysis":"Real Analysis","complex-analysis":"Complex Analysis","topology":"Topology"}};
+const QDATA=__GENDATA__;
+const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
+document.getElementById("gen-areas").innerHTML=Object.entries(AREAS).map(([k,v])=>`<label class="opt"><input type="checkbox" class="ga" value="${{k}}"> ${{v}}</label>`).join("");
+document.getElementById("gen-inst").innerHTML='<option value="">Any</option>'+insts.map(i=>`<option value="${{i}}">${{i.toUpperCase()}}</option>`).join("");
+function sample(a,n){{a=a.slice();for(let i=a.length-1;i>0;i--){{const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}}return a.slice(0,n);}}
+document.getElementById("gen-go").onclick=()=>{{
+  const areas=[...document.querySelectorAll(".ga:checked")].map(c=>c.value);
+  const inst=document.getElementById("gen-inst").value;
+  const n=Math.max(1,Math.min(40,+document.getElementById("gen-n").value||8));
+  const needSrc=document.getElementById("gen-src").checked;
+  let pool=QDATA.filter(q=>q.q.length>10
+    &&(!areas.length||q.areas.some(a=>areas.includes(a)))
+    &&(!inst||q.insts.includes(inst))
+    &&(!needSrc||q.insts.length));
+  const pick=sample(pool,n);
+  const sheet=document.getElementById("gen-sheet");
+  if(!pick.length){{sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}}
+  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst.toUpperCase():"");
+  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${{pick.length}} problems · ${{title}}</p>`+
+    pick.map((q,i)=>`<div class="q"><div class="qn">${{i+1}}.</div><div class="qb">${{q.q.replace(/&/g,'&amp;').replace(/</g,'&lt;')}}<div class="src">${{q.insts.map(x=>x.toUpperCase()).join(", ")}} · <a href="tag/${{q.id}}.html">${{q.id}}</a></div></div></div>`).join("");
+  if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([sheet]);
+}};
+document.getElementById("gen-print").onclick=()=>window.print();
+</script>
+```
+"""
+
+
 def project(db: Path, out: Path, publications: Path, site: Path, macros: dict) -> None:
     if out.exists():
         shutil.rmtree(out)
@@ -373,6 +478,8 @@ def project(db: Path, out: Path, publications: Path, site: Path, macros: dict) -
         write(plain_page(con, card), out / "tag" / f"{card['id']}.qmd")
     for src in _rows(con, "select * from cards where kind='source'"):
         write(source_page(con, src), out / "exam" / f"{src['id']}.qmd")
+
+    (out / "generate.qmd").write_text(GENERATE_QMD.replace("__GENDATA__", json.dumps(_generate_data(con), separators=(",", ":"))))
 
     guides = []
     for path in sorted(publications.glob("*.yaml")):
