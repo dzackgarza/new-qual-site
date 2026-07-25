@@ -24,6 +24,8 @@ build:
 # Build and render the site to build/quarto/_site
 site: build
     {{quarto}} render build/quarto
+    cp -r site/_site/wiki build/quarto/_site/wiki
+    cp -r site/_site/vendor build/quarto/_site/vendor
 
 # Serve the site with live reload
 preview: build

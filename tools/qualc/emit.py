@@ -430,6 +430,7 @@ QUARTO_YML = {
                 {"href": "generate.qmd", "text": "Generate"},
                 {"href": "exams.qmd", "text": "Exams"},
                 {"href": "guides.qmd", "text": "Guides"},
+                {"href": "wiki/000-solution-compendia.html", "text": "Wiki"},
             ]
         },
         "search": {"location": "navbar", "type": "overlay"},
