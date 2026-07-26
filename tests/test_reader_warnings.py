@@ -40,8 +40,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-import pytest
-from qualc.model import parse_card
+from qualc.model import discover, parse_card, parse_cards
 
 # `\qty{3}` in text mode: correct physics-package usage, wrong package as far as
 # pandoc is concerned, and no corpus card is written this way.
@@ -66,11 +65,19 @@ This paragraph is outside the example.
 
 
 def test_a_reader_warning_fails_the_build(tmp_path: Path) -> None:
-    p = tmp_path / "E-SWALLOW.md"
-    p.write_text(SWALLOWED)
-    with pytest.raises(Exception) as excinfo:
-        parse_card(p)
-    assert "unclosed" in str(excinfo.value).lower(), excinfo.value
+    warning = tmp_path / "E-SWALLOW.md"
+    before = tmp_path / "E-BEFORE.md"
+    after = tmp_path / "E-AFTER.md"
+    warning.write_text(SWALLOWED)
+    before.write_text(SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-BEFORE"))
+    after.write_text(SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-AFTER"))
+
+    parsed, errors = parse_cards([before, warning, after])
+
+    assert [item.card.id for item in parsed] == ["E-BEFORE", "E-AFTER"]
+    assert len(errors) == 1
+    assert str(warning) in errors[0]
+    assert "WARNING" in errors[0]
 
 
 def test_qty_in_math_is_untouched(tmp_path: Path) -> None:
@@ -83,7 +90,9 @@ def test_qty_in_math_is_untouched(tmp_path: Path) -> None:
 
 def test_the_real_corpus_reads_without_warnings() -> None:
     """The gate is worth nothing if the corpus does not pass it."""
-    from qualc.model import discover
+    paths = discover(Path(__file__).resolve().parent.parent / "corpus")
 
-    for path in discover(Path(__file__).resolve().parent.parent / "corpus"):
-        parse_card(path)
+    parsed, errors = parse_cards(paths)
+
+    assert errors == []
+    assert len(parsed) == len(paths)
