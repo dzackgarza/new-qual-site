@@ -25,8 +25,12 @@ def catalog_rows(root: Path) -> dict[str, list[tuple]]:
     con = sqlite3.connect(root / "build" / "catalog.sqlite")
     return {
         # source_path is excluded: it is a diagnostic, not identity
-        "cards": con.execute("select id, kind, title, review, ast from cards order by id").fetchall(),
-        "classifications": con.execute("select * from classifications order by 1,2,3").fetchall(),
+        "cards": con.execute(
+            "select id, kind, title, review, ast from cards order by id"
+        ).fetchall(),
+        "classifications": con.execute(
+            "select * from classifications order by 1,2,3"
+        ).fetchall(),
         "relations": con.execute("select * from relations order by 1,2,3").fetchall(),
         "occurrences": con.execute("select * from occurrences order by id").fetchall(),
         "sources": con.execute("select * from sources order by id").fetchall(),
@@ -38,6 +42,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     work = tmp_path / "repo"
     for sub in ("corpus", "vocabularies", "publications", "site"):
         shutil.copytree(ROOT / sub, work / sub)
+    (work / "assets").symlink_to(ROOT / "assets", target_is_directory=True)
     before = catalog_rows(work)
 
     # Reorganize the corpus the way a contributor might: flatten every card into
@@ -57,12 +62,15 @@ def test_unknown_metadata_field_is_rejected(tmp_path: Path) -> None:
     for sub in ("corpus", "vocabularies", "publications", "site"):
         shutil.copytree(ROOT / sub, work / sub)
     card = next((work / "corpus").rglob("P-*.md"))
-    card.write_text(card.read_text().replace("review: draft", "review: draft\nunivrsity: uga"))
+    card.write_text(
+        card.read_text().replace("review: draft", "review: draft\nunivrsity: uga")
+    )
 
     result = subprocess.run(
         [sys.executable, "-m", "qualc", "check", "--root", str(work)],
         capture_output=True,
         text=True,
+        check=False,
     )
     assert result.returncode == 1
     assert "univrsity" in result.stderr

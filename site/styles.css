@@ -1,3 +1,318 @@
+:root {
+  color-scheme: light;
+  --ink: #18212b;
+  --muted: #687482;
+  --line: #dce2e8;
+  --paper: #ffffff;
+  --wash: #f4f7fa;
+  --accent: #1769aa;
+  --accent-dark: #0e4c7d;
+  --bs-font-monospace: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --bs-border-color: var(--line);
+  --bs-tertiary-bg: var(--wash);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 20rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .16em;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+code,
+kbd {
+  font-family: var(--bs-font-monospace);
+}
+
+code {
+  padding: .1rem .3rem;
+  border-radius: .2rem;
+  background: var(--wash);
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+.site-header {
+  position: sticky;
+  z-index: 20;
+  top: 0;
+  border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--paper) 94%, transparent);
+  backdrop-filter: blur(12px);
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  width: min(100% - 2rem, 86rem);
+  min-height: 3.75rem;
+  margin-inline: auto;
+}
+
+.site-brand {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 750;
+  letter-spacing: -.02em;
+  text-decoration: none;
+}
+
+.site-links {
+  display: flex;
+  gap: 1.25rem;
+  margin-right: auto;
+}
+
+.site-links a {
+  color: var(--muted);
+  font-size: .92rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.search-open {
+  padding: .4rem .65rem;
+  border: 1px solid var(--line);
+  border-radius: .35rem;
+  color: var(--muted);
+  background: var(--paper);
+  cursor: pointer;
+}
+
+.search-open kbd {
+  margin-left: .35rem;
+  color: var(--ink);
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 52rem) minmax(11rem, 15rem);
+  gap: 4rem;
+  width: min(100% - 3rem, 74rem);
+  margin: 3.5rem auto 7rem;
+}
+
+.page-heading {
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 2rem;
+}
+
+.page-heading h1 {
+  max-width: 46rem;
+  margin: 0;
+  font-family: Charter, "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+.page-subtitle {
+  margin: .75rem 0 0;
+  color: var(--muted);
+  font-family: var(--bs-font-monospace);
+  font-size: .85rem;
+}
+
+.page-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.75rem;
+  margin: 1.35rem 0 0;
+}
+
+.page-fact {
+  display: grid;
+  gap: .1rem;
+}
+
+.page-fact dt {
+  color: var(--muted);
+  font-size: .7rem;
+  font-weight: 750;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.page-fact dd {
+  margin: 0;
+  font-size: .9rem;
+}
+
+.page-body {
+  overflow-wrap: anywhere;
+}
+
+.page-body h2,
+.page-body h3 {
+  margin-top: 2.25rem;
+  line-height: 1.2;
+}
+
+.page-body blockquote {
+  margin-inline: 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--line);
+  color: var(--muted);
+}
+
+.page-body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page-body th,
+.page-body td {
+  padding: .55rem .7rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+}
+
+.page-toc {
+  position: sticky;
+  top: 5.5rem;
+  align-self: start;
+  max-height: calc(100vh - 7rem);
+  overflow: auto;
+  color: var(--muted);
+  font-size: .84rem;
+}
+
+.page-toc:empty {
+  display: none;
+}
+
+.page-toc ol {
+  display: grid;
+  gap: .4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.page-toc a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-toc .toc-subsection {
+  padding-left: .85rem;
+}
+
+.search-dialog {
+  width: min(42rem, calc(100% - 2rem));
+  max-height: min(42rem, calc(100% - 4rem));
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  box-shadow: 0 1.5rem 4rem rgb(24 33 43 / 20%);
+}
+
+.search-dialog::backdrop {
+  background: rgb(24 33 43 / 42%);
+  backdrop-filter: blur(2px);
+}
+
+.search-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-heading h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.search-heading button {
+  border: 0;
+  font-size: 1.6rem;
+  background: transparent;
+  cursor: pointer;
+}
+
+#site-search-input,
+#problem-filter {
+  width: 100%;
+  padding: .75rem .85rem;
+  border: 1px solid var(--line);
+  border-radius: .4rem;
+  font: inherit;
+}
+
+#site-search-input {
+  margin-top: 1rem;
+}
+
+#site-search-results {
+  display: grid;
+  gap: .25rem;
+  padding: 0;
+  list-style: none;
+}
+
+#site-search-results li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .6rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+#site-search-results span {
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+.problem-browser {
+  display: grid;
+  gap: .45rem;
+  margin-top: 1rem;
+}
+
+.problem-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(9rem, auto);
+  gap: 1rem;
+  padding: .75rem .85rem;
+  border: 1px solid var(--line);
+  border-radius: .35rem;
+}
+
+.problem-row > p {
+  margin: 0;
+}
+
+.problem-row > p:last-child {
+  color: var(--muted);
+  font-size: .8rem;
+  text-align: right;
+}
+
+.problem-row[hidden] {
+  display: none;
+}
+
 .quarto-title .subtitle {
   font-family: var(--bs-font-monospace);
   font-size: .8rem;
@@ -51,3 +366,42 @@ div.qual-exam-listing li { margin-block: .35rem; }
 
 div.panel { margin-block: 1rem; }
 div.panel > ul { margin-bottom: 0; }
+
+@media (max-width: 56rem) {
+  .site-nav {
+    flex-wrap: wrap;
+    gap: .75rem 1rem;
+    padding-block: .65rem;
+  }
+
+  .site-links {
+    order: 3;
+    width: 100%;
+    gap: 1rem;
+    overflow-x: auto;
+  }
+
+  .search-open {
+    margin-left: auto;
+  }
+
+  .page-layout {
+    display: block;
+    width: min(100% - 2rem, 52rem);
+    margin-top: 2.5rem;
+  }
+
+  .page-toc {
+    display: none;
+  }
+}
+
+@media (max-width: 38rem) {
+  .problem-row {
+    grid-template-columns: 1fr;
+  }
+
+  .problem-row > p:last-child {
+    text-align: left;
+  }
+}

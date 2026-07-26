@@ -69,8 +69,12 @@ def test_a_reader_warning_fails_the_build(tmp_path: Path) -> None:
     before = tmp_path / "E-BEFORE.md"
     after = tmp_path / "E-AFTER.md"
     warning.write_text(SWALLOWED)
-    before.write_text(SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-BEFORE"))
-    after.write_text(SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-AFTER"))
+    before.write_text(
+        SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-BEFORE")
+    )
+    after.write_text(
+        SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-AFTER")
+    )
 
     parsed, errors = parse_cards([before, warning, after])
 
@@ -83,7 +87,9 @@ def test_a_reader_warning_fails_the_build(tmp_path: Path) -> None:
 def test_qty_in_math_is_untouched(tmp_path: Path) -> None:
     """The corpus's actual usage, asserted so the guard is not read as a ban on it."""
     p = tmp_path / "E-MATH.md"
-    p.write_text(SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-MATH"))
+    p.write_text(
+        SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-MATH")
+    )
     kinds = [k for k, _ in parse_card(p).sections]
     assert kinds == ["example"], kinds
 

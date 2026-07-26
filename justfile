@@ -1,5 +1,3 @@
-quarto := "uvx --from quarto-cli quarto"
-
 # ai-review-ci contract variables consumed by doctor and workflow installers.
 ai_review_ci_schema_version := "1"
 ai_review_ci_profile := "python"
@@ -17,19 +15,16 @@ default:
 check:
     uv run qualc check
 
-# Compile the corpus: catalog.sqlite + generated Quarto project
+# Compile the corpus: catalog.sqlite + QMD and static HTML projections
 build:
     uv run qualc build
 
 # Build and render the site to build/quarto/_site
 site: build
-    {{quarto}} render build/quarto
-    cp -r site/_site/wiki build/quarto/_site/wiki
-    cp -r site/_site/vendor build/quarto/_site/vendor
 
-# Serve the site with live reload
-preview: build
-    {{quarto}} preview build/quarto
+# Serve the compiled site
+preview port="8000": build
+    uv run python -m http.server {{ port }} --directory build/quarto/_site
 
 # Prove the architectural invariants hold
 test:
@@ -37,7 +32,7 @@ test:
 
 # Query the catalog directly (e.g. just query "select id, title from cards limit 5")
 query sql: build
-    @sqlite3 -box build/catalog.sqlite {{quote(sql)}}
+    @sqlite3 -box build/catalog.sqlite {{ quote(sql) }}
 
 # Re-seed the corpus from make-me-a-qual (one-shot; overwrites imports/ and canonical/)
 import:

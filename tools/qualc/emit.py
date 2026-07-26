@@ -1,37 +1,108 @@
-"""Renderer inputs.
+"""Corpus projections.
 
-Pages are composed as pandoc ASTs and written by pandoc's own markdown writer.
-Nothing here assembles markdown by hand, so fencing, escaping, and math are the
-writer's problem rather than a source of quoting bugs.
+Pages are composed as Pandoc ASTs and batch-written as both QMD and HTML.
+Nothing here assembles either projection by hand, so fencing, escaping, and
+math remain the writer's problem rather than a source of quoting bugs.
 
 Emitted documents carry only semantics: a card's blocks keep the classes their
 author wrote (`.problem`, `.solution`, `.hint`), plus attributes drawn from the
-catalog. Presentation — what collapses, what is labelled how — is a render-time
-decision, and lives in `site/filters/reveal.lua`.
-
-Quarto never sees the corpus. Swapping it out replaces this module and nothing
-else.
+catalog. The direct HTML projection owns the shared shell and presentation;
+generated QMD remains available as an inspectable secondary artifact.
 """
 
 from __future__ import annotations
 
+import copy
+import html
+import io
 import json
 import re
 import shutil
 import sqlite3
-import subprocess
 from collections import Counter
+from collections.abc import Callable
 from pathlib import Path
+from typing import cast
 
 import panflute as pf
 import yaml
 
 from .model import DIV_CLASS_TO_KIND, MARKDOWN, from_ast
+from .pandoc_batch import (
+    PandocBatchError,
+    PandocFailure,
+    PandocResult,
+    PandocServer,
+)
+from .static_site import (
+    AssetCatalog,
+    build_asset_catalog,
+    write_page,
+    write_search_index,
+)
 
 
 def _rows(con: sqlite3.Connection, sql: str, args: tuple = ()) -> list[sqlite3.Row]:
     con.row_factory = sqlite3.Row
     return con.execute(sql, args).fetchall()
+
+
+def _successful_outputs(
+    results: list[PandocResult],
+    operation: str,
+) -> list[str]:
+    outputs: list[str] = []
+    for index, result in enumerate(results):
+        match result:
+            case PandocFailure(error=error):
+                raise PandocBatchError(
+                    f"pandoc {operation} failed for item {index}: {error}"
+                )
+        warnings = [
+            message.message
+            for message in result.messages
+            if message.verbosity == "WARNING"
+        ]
+        if warnings:
+            raise ValueError(
+                f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}"
+            )
+        outputs.append(result.output)
+    return outputs
+
+
+def _successful_html_outputs(
+    results: list[PandocResult],
+    operation: str,
+) -> list[str]:
+    """Accept only PandocPure's two missing-localization notices.
+
+    Fragment HTML does not use either localized value, but Pandoc's HTML writer
+    still attempts to load them. Every content warning remains fatal.
+    """
+    ignored = (
+        "Could not load translations for en-US",
+        "The term Abstract has no translation defined.",
+    )
+    outputs: list[str] = []
+    for index, result in enumerate(results):
+        match result:
+            case PandocFailure(error=error):
+                raise PandocBatchError(
+                    f"pandoc {operation} failed for item {index}: {error}"
+                )
+        warnings = [
+            message.message
+            for message in result.messages
+            if message.verbosity == "WARNING"
+            and not message.message.startswith(ignored)
+        ]
+        if warnings:
+            raise ValueError(
+                f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}"
+            )
+        outputs.append(result.output)
+    return outputs
 
 
 def _terms(con: sqlite3.Connection, card_id: str, axis: str) -> list[str]:
@@ -58,10 +129,16 @@ OWNED = {cls: f"qual-{kind}" for cls, kind in DIV_CLASS_TO_KIND.items()}
 SECTION_CLASS = "qual-section"
 
 
+def _owned_class(class_name: str) -> str:
+    if class_name in OWNED:
+        return OWNED[class_name]
+    return class_name
+
+
 def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
     if isinstance(el, pf.Div):
         owned = [c for c in el.classes if c in OWNED]
-        el.classes = [OWNED[c] if c in OWNED else c for c in el.classes]
+        el.classes = [_owned_class(class_name) for class_name in el.classes]
         if owned:
             el.classes.append(SECTION_CLASS)
             # The label is the kind alone. The authored `title=` often contains
@@ -69,6 +146,44 @@ def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
             # source; showing `$p\dash$subgroup` is worse than showing nothing.
             el.attributes["data-label"] = DIV_CLASS_TO_KIND[owned[0]].title()
     return el
+
+
+REVEAL_LABELS = {
+    "qual-hint": "Hint",
+    "qual-solution": "Solution",
+    "qual-occurrence": "As it appeared",
+}
+
+
+def _reveal(
+    element: pf.Element,
+    document: pf.Doc,
+) -> pf.Element | list[pf.Block] | None:
+    del document
+    if not isinstance(element, pf.Div):
+        return None
+    reveal_class = next(
+        (class_name for class_name in element.classes if class_name in REVEAL_LABELS),
+        None,
+    )
+    if reveal_class is None:
+        return None
+    summary = REVEAL_LABELS[reveal_class]
+    if reveal_class == "qual-occurrence":
+        if "source" in element.attributes:
+            summary = element.attributes["source"]
+        locator = element.attributes.get("locator")
+        if locator:
+            summary += f", problem {locator}"
+    opening = (
+        f'<details class="reveal {reveal_class}"><summary>'
+        f"{html.escape(summary)}</summary>"
+    )
+    return [
+        pf.RawBlock(opening, format="html"),
+        *element.content,
+        pf.RawBlock("</details>", format="html"),
+    ]
 
 
 def _blocks(card: sqlite3.Row) -> list[pf.Block]:
@@ -88,9 +203,9 @@ def _blocks(card: sqlite3.Row) -> list[pf.Block]:
 # means one pandoc process per card to load and one per page to write -- an hour.
 # Their bodies are only a card's own blocks plus, for a problem, its inlined
 # occurrences and any solution or hint. No `uses` link, no title parsing: every
-# piece is already pandoc JSON in the catalog. So these pages are assembled as
-# JSON and the whole set is written with a single pandoc pass. The other ~230
-# pages (sources, guides, listings, index) keep the panflute writer.
+# piece is already pandoc JSON in the catalog. These pages are assembled as JSON
+# and written in bounded batches through one persistent Pandoc server. The other
+# pages use the same writer boundary after Panflute composition.
 
 
 def load_json(con: sqlite3.Connection) -> tuple[dict, list]:
@@ -98,12 +213,12 @@ def load_json(con: sqlite3.Connection) -> tuple[dict, list]:
     cache, api = {}, [1, 23]
     for r in _rows(con, "select id, ast from cards"):
         doc = json.loads(r["ast"])
-        api = doc.get("pandoc-api-version", api)
-        cache[r["id"]] = doc.get("blocks", [])
+        api = doc["pandoc-api-version"]
+        cache[r["id"]] = doc["blocks"]
     return cache, api
 
 
-def _rename_json(node) -> None:
+def _rename_json(node: object) -> None:
     """The `_rename` transform, on raw JSON: rename owned Div classes at any depth."""
     if isinstance(node, list):
         for x in node:
@@ -112,18 +227,20 @@ def _rename_json(node) -> None:
         if node.get("t") == "Div":
             attr = node["c"][0]  # [id, classes, keyvals]
             owned = [c for c in attr[1] if c in OWNED]
-            attr[1] = [OWNED[c] if c in OWNED else c for c in attr[1]]
+            attr[1] = [_owned_class(class_name) for class_name in attr[1]]
             if owned:
                 attr[1].append(SECTION_CLASS)
                 attr[2].append(["data-label", DIV_CLASS_TO_KIND[owned[0]].title()])
         _rename_json(node.get("c"))
 
 
-def _dup(blocks):
-    return json.loads(json.dumps(blocks))
+def _dup[T](value: T) -> T:
+    return copy.deepcopy(value)
 
 
-def problem_json(con: sqlite3.Connection, card: sqlite3.Row, jcache: dict) -> tuple[dict, list]:
+def problem_json(
+    con: sqlite3.Connection, card: sqlite3.Row, jcache: dict
+) -> tuple[dict, list]:
     facets = _rows(
         con,
         "select distinct e.institution, s.year from occurrences o join sources s on s.id=o.source_id join exam_sources e on e.id=s.id where o.problem_id=?",
@@ -144,7 +261,11 @@ def problem_json(con: sqlite3.Connection, card: sqlite3.Row, jcache: dict) -> tu
         blocks = _dup(jcache[occ["id"]])
         for b in blocks:
             if b.get("t") == "Div":
-                kv = [["source", occ["source_title"]], ["locator", occ["locator"]], ["occurrence", occ["id"]]]
+                kv = [
+                    ["source", occ["source_title"]],
+                    ["locator", occ["locator"]],
+                    ["occurrence", occ["id"]],
+                ]
                 b["c"][0] = [b["c"][0][0], ["qual-occurrence"], kv]
         body += blocks
     for kind in ("hints-at", "solves"):
@@ -164,49 +285,139 @@ def problem_json(con: sqlite3.Connection, card: sqlite3.Row, jcache: dict) -> tu
     return meta, body
 
 
-def plain_json(con: sqlite3.Connection, card: sqlite3.Row, jcache: dict) -> tuple[dict, list]:
+def plain_json(
+    con: sqlite3.Connection, card: sqlite3.Row, jcache: dict
+) -> tuple[dict, list]:
     body = _dup(jcache[card["id"]])
     _rename_json(body)
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
+        "categories": sorted(
+            set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))
+        ),
     }
     return meta, body
 
 
-def write_json_pages(items: list[tuple[Path, dict, list]], api: list) -> None:
-    """Convert every tag page's JSON body to markdown in one pandoc call."""
-    combined: list = []
-    for i, (_, _, blocks) in enumerate(items):
-        combined.append({"t": "RawBlock", "c": ["html", f"<!--PG:{i}-->"]})
-        combined.extend(blocks)
-    doc = json.dumps({"pandoc-api-version": api, "meta": {}, "blocks": combined})
-    md = subprocess.run(["pandoc", "-f", "json", "-t", MARKDOWN, "--wrap=preserve"],
-                        input=doc, capture_output=True, text=True).stdout
-    parts = re.split(r"<!--PG:(\d+)-->", md)
-    bodies = {int(parts[j]): parts[j + 1].strip() for j in range(1, len(parts) - 1, 2)}
-    for i, (path, meta, _) in enumerate(items):
-        path.write_text("---\n" + yaml.safe_dump(meta, sort_keys=False, allow_unicode=True).strip()
-                        + "\n---\n\n" + bodies.get(i, "") + "\n")
+def write_json_pages(
+    pandoc: PandocServer,
+    items: list[tuple[Path, dict, list]],
+    api: list,
+    site_root: Path,
+    mathjax: str,
+    link_targets: dict[str, Path],
+    assets: AssetCatalog,
+) -> None:
+    """Convert every tag page independently through one persistent server."""
+    documents = [
+        json.dumps(
+            {
+                "pandoc-api-version": api,
+                "meta": {},
+                "blocks": blocks,
+            }
+        )
+        for _, _, blocks in items
+    ]
+    bodies = _successful_outputs(
+        pandoc.write_markdown(documents, MARKDOWN),
+        "tag-page write",
+    )
+    html_bodies = _successful_html_outputs(
+        pandoc.write_html([_html_ast(document) for document in documents]),
+        "tag-page HTML write",
+    )
+    for (path, meta, _), body, html_body in zip(
+        items,
+        bodies,
+        html_bodies,
+        strict=True,
+    ):
+        path.write_text(
+            "---\n"
+            + yaml.safe_dump(
+                meta,
+                sort_keys=False,
+                allow_unicode=True,
+            ).strip()
+            + "\n---\n\n"
+            + body.strip()
+            + "\n"
+        )
+        write_page(
+            site_root,
+            path.relative_to(site_root.parent).with_suffix(".html"),
+            meta,
+            html_body,
+            mathjax,
+            link_targets,
+            assets,
+        )
 
 
-def _inlines(markdown: str) -> list[pf.Inline]:
+def _inline_source(markdown: str) -> str:
     # A title is inline text, but some are lifted verbatim from a statement's
     # first line and still carry a leading list/quote/heading marker, which
     # pandoc parses as a block wrapper whose children are ListItems, not inlines.
-    # Strip one leading marker so the title parses as inlines; if it still parses
-    # to a non-inline block, fall back to the literal text rather than crash.
-    text = re.sub(r"^\s*([-*+]|\d+[.)]|>|#{1,6})\s+", "", markdown)
-    parsed = pf.convert_text(text, input_format=MARKDOWN, output_format="panflute")
-    if parsed and isinstance(parsed[0], (pf.Para, pf.Plain)):
-        return list(parsed[0].content)
-    return [pf.Str(markdown)]
+    return re.sub(r"^\s*([-*+]|\d+[.)]|>|#{1,6})\s+", "", markdown)
 
 
-def _link(card: sqlite3.Row, prefix: str = "../tag/") -> pf.Plain:
+INLINE_SENTINEL = "QUALINLINEBOUNDARY"
+
+
+def build_inline_cache(
+    pandoc: PandocServer,
+    markdown_values: list[str],
+) -> dict[str, list[pf.Inline]]:
+    sources = list(dict.fromkeys(_inline_source(value) for value in markdown_values))
+    outputs = _successful_outputs(
+        pandoc.read_markdown(
+            [INLINE_SENTINEL + source for source in sources],
+            MARKDOWN,
+        ),
+        "inline read",
+    )
+    cache: dict[str, list[pf.Inline]] = {}
+    for source, output in zip(sources, outputs, strict=True):
+        document = from_ast(output)
+        if len(document.content) != 1 or not isinstance(
+            document.content[0],
+            (pf.Para, pf.Plain),
+        ):
+            raise ValueError(f"inline text parsed as block structure: {source!r}")
+        inlines = list(document.content[0].content)
+        if not inlines or not isinstance(inlines[0], pf.Str):
+            raise ValueError(f"inline boundary was not preserved: {source!r}")
+        if not inlines[0].text.startswith(INLINE_SENTINEL):
+            raise ValueError(f"inline boundary was corrupted: {source!r}")
+        inlines[0].text = inlines[0].text.removeprefix(INLINE_SENTINEL)
+        if not inlines[0].text:
+            inlines.pop(0)
+        cache[source] = inlines
+    return cache
+
+
+def _inlines(
+    markdown: str,
+    cache: dict[str, list[pf.Inline]],
+) -> list[pf.Inline]:
+    source = _inline_source(markdown)
+    if source not in cache:
+        raise ValueError(f"inline text was not batched: {source!r}")
+    return copy.deepcopy(cache[source])
+
+
+def _link(
+    card: sqlite3.Row,
+    inline_cache: dict[str, list[pf.Inline]],
+    prefix: str = "../tag/",
+) -> pf.Plain:
     return pf.Plain(
-        pf.Link(*_inlines(card["title"]), url=f"{prefix}{card['id']}.qmd"),
+        pf.Link(
+            *_inlines(card["title"], inline_cache),
+            url=f"{prefix}{card['id']}.html",
+        ),
         pf.Space(),
         pf.Code(card["id"]),
     )
@@ -215,25 +426,74 @@ def _link(card: sqlite3.Row, prefix: str = "../tag/") -> pf.Plain:
 Page = tuple[dict, list[pf.Block]]
 
 
-def write(page: Page, path: Path) -> None:
+def _document_ast(document: pf.Doc) -> str:
+    stream = io.StringIO()
+    dumper = cast(
+        Callable[[pf.Doc, io.StringIO], None],
+        vars(pf)["dump"],
+    )
+    dumper(document, stream)
+    return stream.getvalue()
+
+
+def _page_ast(page: Page) -> str:
+    _, blocks = page
+    return _document_ast(pf.Doc(*blocks))
+
+
+def _html_ast(ast: str) -> str:
+    return _document_ast(from_ast(ast).walk(_reveal))
+
+
+def write_pages(
+    pandoc: PandocServer,
+    items: list[tuple[Page, Path]],
+    site_root: Path,
+    mathjax: str,
+    link_targets: dict[str, Path],
+    assets: AssetCatalog,
+) -> None:
     """Front matter is machine-read data; the body is prose.
 
     They are written by different tools on purpose. Routing the metadata through
     pandoc's markdown writer would escape it as if it were prose — `tag/P-*.qmd`
     comes back out as `tag/P-\\*.qmd` and the listing silently matches nothing.
     """
-    meta, blocks = page
-    body = (
-        pf.convert_text(
-            pf.Doc(*blocks),
-            input_format="panflute",
-            output_format="markdown",
-            extra_args=["--wrap=preserve"],
-        )
-        if blocks
-        else ""
+    documents = [_page_ast(page) for page, _ in items]
+    bodies = _successful_outputs(
+        pandoc.write_markdown(documents, MARKDOWN),
+        "page write",
     )
-    path.write_text("---\n" + yaml.safe_dump(meta, sort_keys=False, allow_unicode=True).strip() + "\n---\n\n" + body + "\n")
+    html_bodies = _successful_html_outputs(
+        pandoc.write_html([_html_ast(document) for document in documents]),
+        "page HTML write",
+    )
+    for ((meta, _), path), body, html_body in zip(
+        items,
+        bodies,
+        html_bodies,
+        strict=True,
+    ):
+        path.write_text(
+            "---\n"
+            + yaml.safe_dump(
+                meta,
+                sort_keys=False,
+                allow_unicode=True,
+            ).strip()
+            + "\n---\n\n"
+            + body
+            + "\n"
+        )
+        write_page(
+            site_root,
+            path.relative_to(site_root.parent).with_suffix(".html"),
+            meta,
+            html_body,
+            mathjax,
+            link_targets,
+            assets,
+        )
 
 
 def _related(con: sqlite3.Connection, problem_id: str, kind: str) -> list[sqlite3.Row]:
@@ -272,7 +532,11 @@ def run_query(con: sqlite3.Connection, q: dict) -> list[sqlite3.Row]:
 # --- pages ------------------------------------------------------------------
 
 
-def problem_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
+def problem_page(
+    con: sqlite3.Connection,
+    card: sqlite3.Row,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> Page:
     occurrences = _rows(
         con,
         "select o.*, c.ast, s.title as source_title from occurrences o join cards c on c.id=o.id join cards s on s.id=o.source_id where o.problem_id=? order by o.id",
@@ -314,7 +578,9 @@ def problem_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
     )
     if uses:
         blocks.append(pf.Header(pf.Str("Uses"), level=2))
-        blocks.append(pf.BulletList(*[pf.ListItem(_link(u)) for u in uses]))
+        blocks.append(
+            pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses])
+        )
 
     return {
         "title": card["title"],
@@ -331,11 +597,17 @@ def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
     return {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
+        "categories": sorted(
+            set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))
+        ),
     }, _blocks(card)
 
 
-def source_page(con: sqlite3.Connection, src: sqlite3.Row) -> Page:
+def source_page(
+    con: sqlite3.Connection,
+    src: sqlite3.Row,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> Page:
     items = _rows(
         con,
         "select o.locator, c.* from occurrences o join cards c on c.id=o.problem_id where o.source_id=? order by cast(o.locator as integer), o.locator",
@@ -347,37 +619,89 @@ def source_page(con: sqlite3.Connection, src: sqlite3.Row) -> Page:
     # the sheet silently. A bullet carrying the label says what was actually
     # printed on the exam.
     listing = pf.Div(
-        pf.BulletList(*[pf.ListItem(pf.Plain(pf.Strong(pf.Str(i["locator"])), pf.Space(), *_link(i).content)) for i in items]),
+        pf.BulletList(
+            *[
+                pf.ListItem(
+                    pf.Plain(
+                        pf.Strong(pf.Str(i["locator"])),
+                        pf.Space(),
+                        *_link(i, inline_cache).content,
+                    )
+                )
+                for i in items
+            ]
+        ),
         classes=["qual-exam-listing"],
     )
     return {"title": src["title"], "subtitle": src["id"]}, [
-        pf.Para(pf.Str(str(len(items))), pf.Space(), *_inlines("problems, in the order they appeared.")),
+        pf.Para(
+            pf.Str(str(len(items))),
+            pf.Space(),
+            *_inlines(
+                "problems, in the order they appeared.",
+                inline_cache,
+            ),
+        ),
         listing,
     ]
 
 
-def guide_page(con: sqlite3.Connection, manifest: dict) -> Page:
+def guide_page(
+    con: sqlite3.Connection,
+    manifest: dict,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> Page:
     blocks: list[pf.Block] = [
-        pf.Para(*_inlines("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."))
+        pf.Para(
+            *_inlines(
+                "Assembled from a publication manifest: an ordered list of "
+                "stable IDs and queries. Reordering it touches no card and "
+                "no catalog row.",
+                inline_cache,
+            )
+        )
     ]
     for section in manifest["sections"]:
-        blocks.append(pf.Header(*_inlines(section["title"]), level=2))
+        blocks.append(
+            pf.Header(
+                *_inlines(section["title"], inline_cache),
+                level=2,
+            )
+        )
         for item in section["items"]:
             if "ref" in item:
-                blocks += _blocks(_rows(con, "select * from cards where id=?", (item["ref"],))[0])
+                blocks += _blocks(
+                    _rows(con, "select * from cards where id=?", (item["ref"],))[0]
+                )
             else:
                 hits = run_query(con, item["query"])
                 blocks.append(
                     pf.Div(
-                        pf.BulletList(*[pf.ListItem(_link(h)) for h in hits]) if hits else pf.Para(pf.Emph(pf.Str("No"), pf.Space(), pf.Str("matches."))),
+                        pf.BulletList(
+                            *[pf.ListItem(_link(h, inline_cache)) for h in hits]
+                        )
+                        if hits
+                        else pf.Para(
+                            pf.Emph(
+                                pf.Str("No"),
+                                pf.Space(),
+                                pf.Str("matches."),
+                            )
+                        ),
                         classes=["panel"],
-                        attributes={"query-kind": item["query"]["kind"], "count": str(len(hits))},
+                        attributes={
+                            "query-kind": item["query"]["kind"],
+                            "count": str(len(hits)),
+                        },
                     )
                 )
     return {"title": manifest["title"]}, blocks
 
 
-def index_page(con: sqlite3.Connection) -> Page:
+def index_page(
+    pandoc: PandocServer,
+    con: sqlite3.Connection,
+) -> Page:
     # Counted off what is actually in the catalog, not off a list of kinds kept
     # here. A hand-written list silently omits every kind added after it, and
     # the omission looks exactly like a count of zero.
@@ -390,30 +714,125 @@ def index_page(con: sqlite3.Connection) -> Page:
 
     def plural(kind: str) -> str:
         stem = kind.title()
-        return labels.get(kind) or (f"{stem[:-1]}ies" if stem.endswith("y") else f"{stem}s")
+        return labels.get(kind) or (
+            f"{stem[:-1]}ies" if stem.endswith("y") else f"{stem}s"
+        )
 
-    body = "\n".join(f"| {plural(kind)} | {n} |" for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
-    blocks = pf.convert_text(
-        "A proof of concept: markdown cards in git compile to a semantic index, and\n"
-        "the site is one projection of that index.\n\n"
-        "| Cards | Count |\n|---|---|\n" + body + "\n\n"
-        "Start with [the problem browser](problems.qmd), a "
-        "[historical exam](exams.qmd), or a [study guide](guides.qmd) — the same "
-        "records, arranged three different ways.\n",
-        input_format=MARKDOWN,
-        output_format="panflute",
+    body = "\n".join(
+        f"| {plural(kind)} | {n} |"
+        for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
     )
-    return {"title": "Qual Corpus"}, list(blocks)
+    output = _successful_outputs(
+        pandoc.read_markdown(
+            [
+                "A proof of concept: markdown cards in git compile to a semantic index, and\n"
+                "the site is one projection of that index.\n\n"
+                "| Cards | Count |\n|---|---|\n" + body + "\n\n"
+                "Start with [the problem browser](problems.html), a "
+                "[historical exam](exams.html), or a [study guide](guides.html) — the same "
+                "records, arranged three different ways.\n"
+            ],
+            MARKDOWN,
+        ),
+        "index-page read",
+    )
+    return {"title": "Qual Corpus"}, list(from_ast(output[0]).content)
 
 
-def listing_page(title: str, listing: dict, lede: str) -> Page:
-    return {"title": title, "listing": listing}, [pf.Para(*_inlines(lede))]
+def listing_page(
+    title: str,
+    listing: dict,
+    lede: str,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> Page:
+    return {"title": title, "listing": listing}, [
+        pf.Para(*_inlines(lede, inline_cache))
+    ]
 
 
-def link_list_page(con: sqlite3.Connection, title: str, lede: str, rows: list[sqlite3.Row], prefix: str) -> Page:
+def problem_browser_page(
+    con: sqlite3.Connection,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> Page:
+    problems = _rows(
+        con,
+        """
+        select c.*,
+          (select group_concat(term, ' ') from classifications
+           where card_id=c.id and axis='area') as areas,
+          (select group_concat(term, ' ') from classifications
+           where card_id=c.id and axis='topic') as topics,
+          (select group_concat(distinct upper(e.institution))
+           from occurrences o join exam_sources e on e.id=o.source_id
+           where o.problem_id=c.id) as institutions,
+          (select group_concat(distinct s.year)
+           from occurrences o join sources s on s.id=o.source_id
+           where o.problem_id=c.id and s.year is not null) as years
+        from cards c
+        where c.kind='problem'
+        order by c.title, c.id
+        """,
+    )
+    rows: list[pf.Block] = []
+    for problem in problems:
+        facets = " · ".join(
+            value.replace("-", " ").title()
+            for value in (
+                problem["areas"] or "",
+                problem["institutions"] or "",
+                problem["years"] or "",
+            )
+            if value
+        )
+        search = " ".join(
+            str(value)
+            for value in (
+                problem["title"],
+                problem["id"],
+                problem["areas"],
+                problem["topics"],
+                problem["institutions"],
+                problem["years"],
+            )
+            if value
+        ).lower()
+        rows.append(
+            pf.Div(
+                _link(problem, inline_cache, prefix="tag/"),
+                pf.Plain(pf.Str(facets or "Unclassified")),
+                classes=["problem-row"],
+                attributes={"data-search": search},
+            )
+        )
+    return {"title": "Problems"}, [
+        pf.Para(
+            *_inlines(
+                "Every problem in the corpus. Filter by any facet; the URL is "
+                "the query.",
+                inline_cache,
+            )
+        ),
+        pf.RawBlock(
+            '<label for="problem-filter">Filter problems</label>'
+            '<input id="problem-filter" type="search" '
+            'placeholder="Group theory, UGA, 2019…">',
+            format="html",
+        ),
+        pf.Div(*rows, classes=["problem-browser"]),
+    ]
+
+
+def link_list_page(
+    con: sqlite3.Connection,
+    title: str,
+    lede: str,
+    rows: list[sqlite3.Row],
+    prefix: str,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> Page:
     return {"title": title}, [
-        pf.Para(*_inlines(lede)),
-        pf.BulletList(*[pf.ListItem(_link(r, prefix)) for r in rows]),
+        pf.Para(*_inlines(lede, inline_cache)),
+        pf.BulletList(*[pf.ListItem(_link(row, inline_cache, prefix)) for row in rows]),
     ]
 
 
@@ -467,50 +886,156 @@ PROBLEMS_LISTING = {
 
 
 def mathjax_header(macros: dict) -> str:
-    return "<script>\nwindow.MathJax = { tex: { macros: " + json.dumps(macros) + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] } };\n</script>\n"
+    mathjax_macros: dict[str, object] = {}
+    for tex_name, definition in macros.items():
+        if not isinstance(tex_name, str):
+            raise TypeError(f"invalid TeX macro name type: {type(tex_name).__name__}")
+        if not tex_name.startswith("\\") or tex_name == "\\":
+            raise ValueError(f"invalid TeX macro name: {tex_name!r}")
+        if not isinstance(definition, str):
+            raise TypeError(
+                f"invalid definition for TeX macro {tex_name}: {definition!r}"
+            )
+        name = tex_name[1:]
+        if name in mathjax_macros:
+            raise ValueError(f"duplicate MathJax macro name: {name}")
+        parameters = {
+            int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)
+        }
+        if parameters:
+            argument_count = max(parameters)
+            expected = set(range(1, argument_count + 1))
+            if parameters != expected:
+                raise ValueError(
+                    f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}"
+                )
+            mathjax_macros[name] = [definition, argument_count]
+        else:
+            mathjax_macros[name] = definition
+    return (
+        "<script>\nwindow.MathJax = { tex: { macros: "
+        + json.dumps(mathjax_macros)
+        + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] } };\n</script>\n"
+    )
 
 
-def _generate_data(con: sqlite3.Connection) -> list[dict]:
+def _link_targets(
+    con: sqlite3.Connection,
+    guides: list[dict],
+) -> dict[str, Path]:
+    targets: dict[str, Path] = {}
+    for card in _rows(con, "select id, kind from cards where kind != 'occurrence'"):
+        directory = "exam" if card["kind"] == "source" else "tag"
+        targets[card["id"]] = Path(directory) / f"{card['id']}.html"
+    for occurrence in _rows(con, "select id, problem_id from occurrences"):
+        targets[occurrence["id"]] = Path("tag") / f"{occurrence['problem_id']}.html"
+    for guide in guides:
+        targets[guide["id"]] = Path("guide") / f"{guide['id']}.html"
+    return targets
+
+
+def _search_records(
+    con: sqlite3.Connection,
+    guides: list[dict],
+) -> list[dict[str, object]]:
+    records: list[dict[str, object]] = []
+    cards = _rows(
+        con,
+        """
+        select c.id, c.kind, c.title,
+          coalesce((select group_concat(term, ' ') from classifications
+                    where card_id=c.id), '') as facets,
+          coalesce((select group_concat(text, ' ') from sections
+                    where card_id=c.id), '') as body
+        from cards c
+        where c.kind != 'occurrence'
+        order by c.id
+        """,
+    )
+    for card in cards:
+        directory = "exam" if card["kind"] == "source" else "tag"
+        search = " ".join(
+            (
+                card["id"],
+                card["kind"],
+                card["title"],
+                card["facets"],
+                card["body"],
+            )
+        ).lower()
+        records.append(
+            {
+                "title": card["title"],
+                "kind": card["kind"],
+                "url": f"{directory}/{card['id']}.html",
+                "search": search,
+            }
+        )
+    records.extend(
+        {
+            "title": guide["title"],
+            "kind": "guide",
+            "url": f"guide/{guide['id']}.html",
+            "search": " ".join(
+                [guide["title"]] + [section["title"] for section in guide["sections"]]
+            ).lower(),
+        }
+        for guide in guides
+    )
+    return records
+
+
+def _generate_data(
+    pandoc: PandocServer,
+    con: sqlite3.Connection,
+) -> list[dict]:
     """Every problem as a selectable exam question: statement markdown + facets.
 
     The statement is recovered from the card AST (never the flattened section
     text, which loses the math) with a single batched pandoc call rather than one
     per problem, and each problem carries the areas and institutions it is filed
     under so the generator can select the way make-me-a-qual did -- by area."""
-    problems = _rows(con, "select id, title, ast from cards where kind='problem' order by id")
-    areas: dict[str, list[str]] = {}
+    problems = _rows(
+        con, "select id, title, ast from cards where kind='problem' order by id"
+    )
+    areas: dict[str, list[str]] = {problem["id"]: [] for problem in problems}
     for r in _rows(con, "select card_id, term from classifications where axis='area'"):
-        areas.setdefault(r["card_id"], []).append(r["term"])
-    insts: dict[str, set] = {}
-    for r in _rows(con, "select o.problem_id pid, e.institution inst from occurrences o "
-                        "join exam_sources e on e.id=o.source_id"):
-        insts.setdefault(r["pid"], set()).add(r["inst"])
-    # One pandoc invocation for the whole corpus, not one per problem: each
-    # card's AST is already pandoc JSON, so the raw block lists are concatenated
-    # (with a marker block between problems) into a single document and converted
-    # once. Round-tripping each through from_ast would spawn pandoc thousands of
-    # times and never finish.
-    api = None
-    blocks: list = []
-    for r in problems:
-        doc = json.loads(r["ast"])
-        api = doc.get("pandoc-api-version", api)
-        blocks.append({"t": "Para", "c": [{"t": "Str", "c": f"%%%QSPLIT%%%{r['id']}%%%"}]})
-        blocks.extend(doc.get("blocks", []))
-    combined = json.dumps({"pandoc-api-version": api or [1, 23], "meta": {}, "blocks": blocks})
-    md = subprocess.run(["pandoc", "-f", "json", "-t", MARKDOWN, "--wrap=preserve"],
-                        input=combined, capture_output=True, text=True).stdout
-    chunks = re.split(r"%%%QSPLIT%%%([PEX]-[A-Z0-9]{5})%%%", md)
-    body_by_id = {chunks[i]: chunks[i + 1].strip() for i in range(1, len(chunks) - 1, 2)}
+        if r["card_id"] in areas:
+            areas[r["card_id"]].append(r["term"])
+    insts: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
+    for r in _rows(
+        con,
+        "select o.problem_id pid, e.institution inst from occurrences o "
+        "join exam_sources e on e.id=o.source_id",
+    ):
+        if r["pid"] in insts:
+            insts[r["pid"]].add(r["inst"])
+    bodies = _successful_outputs(
+        pandoc.write_markdown(
+            [problem["ast"] for problem in problems],
+            MARKDOWN,
+        ),
+        "generator statement write",
+    )
     out = []
-    for r in problems:
-        stmt = body_by_id.get(r["id"], "")
+    for r, body in zip(problems, bodies, strict=True):
+        stmt = body.strip()
         # the problem body is wrapped in a fenced div; drop the fence for display
-        stmt = re.sub(r"^:::+.*$|^:::+$", "", stmt, flags=re.M).strip()
-        out.append({"id": r["id"], "areas": areas.get(r["id"], []),
-                    "insts": sorted(insts.get(r["id"], [])), "q": stmt})
+        stmt = re.sub(
+            r"^:::+.*$|^:::+$",
+            "",
+            stmt,
+            flags=re.MULTILINE,
+        ).strip()
+        out.append(
+            {
+                "id": r["id"],
+                "areas": areas[r["id"]],
+                "insts": sorted(insts[r["id"]]),
+                "q": stmt,
+            }
+        )
     return out
-
 
 
 GENERATE_QMD = """---
@@ -540,13 +1065,20 @@ title: Generate a practice set
     <button id="gen-go">Generate set</button>
     <button id="gen-print" style="margin-top:6px;background:none;border:1px solid #ccc;border-radius:6px;padding:9px 16px;cursor:pointer">Print / PDF</button>
   </form>
-  <div id="gen-sheet"><p class="text-muted">Pick criteria and press <b>Generate set</b>. A modern take on make-me-a-qual — problems are sampled from the corpus and typeset here.</p></div>
+  <div id="gen-sheet">
+    <p class="text-muted">Pick criteria and press <b>Generate set</b>.
+      A modern take on make-me-a-qual — problems are sampled from the corpus
+      and typeset here.</p>
+  </div>
 </div>
 <script>
 const AREAS={{"algebra":"Algebra","real-analysis":"Real Analysis","complex-analysis":"Complex Analysis","topology":"Topology"}};
 const QDATA=__GENDATA__;
 const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
-document.getElementById("gen-areas").innerHTML=Object.entries(AREAS).map(([k,v])=>`<label class="opt"><input type="checkbox" class="ga" value="${{k}}"> ${{v}}</label>`).join("");
+document.getElementById("gen-areas").innerHTML=Object.entries(AREAS)
+  .map(([k,v])=>`<label class="opt"><input type="checkbox" class="ga"
+    value="${{k}}"> ${{v}}</label>`)
+  .join("");
 document.getElementById("gen-inst").innerHTML='<option value="">Any</option>'+insts.map(i=>`<option value="${{i}}">${{i.toUpperCase()}}</option>`).join("");
 function sample(a,n){{a=a.slice();for(let i=a.length-1;i>0;i--){{const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}}return a.slice(0,n);}}
 document.getElementById("gen-go").onclick=()=>{{
@@ -563,7 +1095,14 @@ document.getElementById("gen-go").onclick=()=>{{
   if(!pick.length){{sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}}
   const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst.toUpperCase():"");
   sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${{pick.length}} problems · ${{title}}</p>`+
-    pick.map((q,i)=>`<div class="q"><div class="qn">${{i+1}}.</div><div class="qb">${{q.q.replace(/&/g,'&amp;').replace(/</g,'&lt;')}}<div class="src">${{q.insts.map(x=>x.toUpperCase()).join(", ")}} · <a href="tag/${{q.id}}.html">${{q.id}}</a></div></div></div>`).join("");
+    pick.map((q,i)=>`<div class="q">
+      <div class="qn">${{i+1}}.</div>
+      <div class="qb">${{q.q.replace(/&/g,'&amp;').replace(/</g,'&lt;')}}
+        <div class="src">${{q.insts.map(x=>x.toUpperCase()).join(", ")}} ·
+          <a href="tag/${{q.id}}.html">${{q.id}}</a>
+        </div>
+      </div>
+    </div>`).join("");
   if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([sheet]);
 }};
 document.getElementById("gen-print").onclick=()=>window.print();
@@ -572,69 +1111,167 @@ document.getElementById("gen-print").onclick=()=>window.print();
 """
 
 
-def project(db: Path, out: Path, publications: Path, site: Path, macros: dict) -> None:
+def project(
+    pandoc: PandocServer,
+    db: Path,
+    out: Path,
+    publications: Path,
+    site: Path,
+    macros: dict,
+) -> None:
     if out.exists():
         shutil.rmtree(out)
     (out / "tag").mkdir(parents=True)
     (out / "exam").mkdir()
     (out / "guide").mkdir()
+    site_root = out / "_site"
+    site_root.mkdir()
     con = sqlite3.connect(db)
+    mathjax = mathjax_header(macros)
 
     (out / "_quarto.yml").write_text(yaml.safe_dump(QUARTO_YML, sort_keys=False))
-    (out / "_macros.html").write_text(mathjax_header(macros))
-    for asset in ("styles.css", "filters/reveal.lua"):
+    (out / "_macros.html").write_text(mathjax)
+    for asset in ("styles.css", "app.js", "filters/reveal.lua"):
         shutil.copy(site / asset, out / Path(asset).name)
+    for asset in ("styles.css", "app.js"):
+        shutil.copy(site / asset, site_root / asset)
 
-    # The bulk: every tag page composed as raw pandoc JSON and written in one
-    # pandoc pass. Everything not a problem, source, or occurrence is envelope
-    # plus prose; occurrences render inline on the problem they instantiate.
+    guides = [
+        yaml.safe_load(path.read_text()) for path in sorted(publications.glob("*.yaml"))
+    ]
+    link_targets = _link_targets(con, guides)
+    assets = build_asset_catalog(site.parent / "assets")
+    inline_values = [
+        row["title"] for row in _rows(con, "select distinct title from cards")
+    ]
+    inline_values.extend(
+        [
+            "problems, in the order they appeared.",
+            (
+                "Assembled from a publication manifest: an ordered list of "
+                "stable IDs and queries. Reordering it touches no card and no "
+                "catalog row."
+            ),
+            "Every problem in the corpus. Filter by any facet; the URL is the query.",
+            "Historical sittings, each a fixed ordered list of occurrences.",
+        ]
+    )
+    inline_values.extend(
+        section["title"] for guide in guides for section in guide["sections"]
+    )
+    inline_cache = build_inline_cache(pandoc, inline_values)
+
     jcache, api = load_json(con)
     tag_pages: list[tuple[Path, dict, list]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
         meta, body = problem_json(con, card, jcache)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
-    for card in _rows(con, "select * from cards where kind not in ('problem','source','occurrence')"):
+    for card in _rows(
+        con, "select * from cards where kind not in ('problem','source','occurrence')"
+    ):
         meta, body = plain_json(con, card, jcache)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
-    write_json_pages(tag_pages, api)
+    write_json_pages(
+        pandoc,
+        tag_pages,
+        api,
+        site_root,
+        mathjax,
+        link_targets,
+        assets,
+    )
+
+    pages: list[tuple[Page, Path]] = []
     for src in _rows(con, "select * from cards where kind='source'"):
-        write(source_page(con, src), out / "exam" / f"{src['id']}.qmd")
+        pages.append(
+            (
+                source_page(con, src, inline_cache),
+                out / "exam" / f"{src['id']}.qmd",
+            )
+        )
 
-    (out / "generate.qmd").write_text(GENERATE_QMD.replace("__GENDATA__", json.dumps(_generate_data(con), separators=(",", ":"))))
-
-    guides = []
-    for path in sorted(publications.glob("*.yaml")):
-        manifest = yaml.safe_load(path.read_text())
-        write(guide_page(con, manifest), out / "guide" / f"{manifest['id']}.qmd")
-        guides.append(manifest)
-
-    write(
-        listing_page(
-            "Problems",
-            PROBLEMS_LISTING,
-            "Every problem in the corpus. Filter by any facet; the URL is the query.",
+    generate_qmd = GENERATE_QMD.replace(
+        "__GENDATA__",
+        json.dumps(
+            _generate_data(pandoc, con),
+            separators=(",", ":"),
         ),
-        out / "problems.qmd",
     )
-    write(
-        link_list_page(
-            con,
-            "Exams",
-            "Historical sittings, each a fixed ordered list of occurrences.",
-            _rows(
-                con,
-                "select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id order by e.institution, s.year, c.id",
-            ),
-            "exam/",
-        ),
-        out / "exams.qmd",
+    (out / "generate.qmd").write_text(generate_qmd)
+    generate_html = generate_qmd.split("```{=html}\n", 1)[1].rsplit("\n```", 1)[0]
+    write_page(
+        site_root,
+        Path("generate.html"),
+        {"title": "Generate a practice set"},
+        generate_html,
+        mathjax,
+        link_targets,
+        assets,
     )
-    write(
+
+    for guide in guides:
+        pages.append(
+            (
+                guide_page(con, guide, inline_cache),
+                out / "guide" / f"{guide['id']}.qmd",
+            )
+        )
+
+    pages.append(
         (
-            {"title": "Guides"},
-            [pf.BulletList(*[pf.ListItem(pf.Plain(pf.Link(pf.Str(g["title"]), url=f"guide/{g['id']}.qmd"))) for g in guides])],
+            problem_browser_page(con, inline_cache),
+            out / "problems.qmd",
         ),
-        out / "guides.qmd",
     )
-    write(index_page(con), out / "index.qmd")
+    pages.append(
+        (
+            link_list_page(
+                con,
+                "Exams",
+                "Historical sittings, each a fixed ordered list of occurrences.",
+                _rows(
+                    con,
+                    "select c.* from cards c join sources s on s.id=c.id "
+                    "join exam_sources e on e.id=s.id "
+                    "order by e.institution, s.year, c.id",
+                ),
+                "exam/",
+                inline_cache,
+            ),
+            out / "exams.qmd",
+        ),
+    )
+    pages.append(
+        (
+            (
+                {"title": "Guides"},
+                [
+                    pf.BulletList(
+                        *[
+                            pf.ListItem(
+                                pf.Plain(
+                                    pf.Link(
+                                        pf.Str(guide["title"]),
+                                        url=f"guide/{guide['id']}.html",
+                                    )
+                                )
+                            )
+                            for guide in guides
+                        ]
+                    )
+                ],
+            ),
+            out / "guides.qmd",
+        ),
+    )
+    pages.append((index_page(pandoc, con), out / "index.qmd"))
+    write_pages(
+        pandoc,
+        pages,
+        site_root,
+        mathjax,
+        link_targets,
+        assets,
+    )
+    write_search_index(site_root, _search_records(con, guides))
     con.close()

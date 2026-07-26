@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """The WS8 archive gate: classify every source file, prove the migrated ones.
 
 `no semantic loss` is only a checkable claim if every file in every source repo
@@ -37,14 +36,28 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-SCRATCH = Path("/tmp/claude-1000/-home-dzack-gitclones-new-qual-site/74f8af54-df1e-4c58-8cbb-e2c85add5444/scratchpad")
+SCRATCH = Path(
+    "/tmp/claude-1000/-home-dzack-gitclones-new-qual-site/74f8af54-df1e-4c58-8cbb-e2c85add5444/scratchpad"
+)
 
 # source repo -> (path on disk, route-ledger dir or None, re-materialised output)
 REPOS = {
-    "qual-wiki": (Path.home() / "gitclones/qual-wiki", SCRATCH / "final", Path("/tmp/rematerialize")),
-    "qual-review-and-solutions": (Path("/tmp/qrs"), SCRATCH / "qrs", Path("/tmp/remat-qrs")),
+    "qual-wiki": (
+        Path.home() / "gitclones/qual-wiki",
+        SCRATCH / "final",
+        Path("/tmp/rematerialize"),
+    ),
+    "qual-review-and-solutions": (
+        Path("/tmp/qrs"),
+        SCRATCH / "qrs",
+        Path("/tmp/remat-qrs"),
+    ),
     "make-me-a-qual": (Path.home() / "gitclones/make-me-a-qual", None, None),
-    "Analysis-Qual-Compendium": (Path.home() / "gitclones/Analysis-Qual-Compendium", None, None),
+    "Analysis-Qual-Compendium": (
+        Path.home() / "gitclones/Analysis-Qual-Compendium",
+        None,
+        None,
+    ),
 }
 
 ASSET_EXT = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".pdf", ".webp"}
@@ -55,7 +68,12 @@ def sha(path: Path) -> str:
 
 
 def tracked(repo: Path) -> list[str]:
-    return subprocess.run(["git", "-C", str(repo), "ls-files"], capture_output=True, text=True).stdout.splitlines()
+    return subprocess.run(
+        ["git", "-C", str(repo), "ls-files"],
+        capture_output=True,
+        check=True,
+        text=True,
+    ).stdout.splitlines()
 
 
 def corpus_asset_hashes() -> dict[str, str]:
@@ -78,8 +96,10 @@ def routed_sources(ledger_dir: Path | None, remat: Path | None) -> dict[str, dic
     if not ledger_dir or not remat:
         return {}
     import re
+
     sys.path.insert(0, str(REPO / "tools"))
-    import route_apply as R  # noqa: E402
+    import route_apply as R
+
     corpus_ids = {p.stem for p in (REPO / "corpus").rglob("*.md")}
     out: dict[str, dict] = {}
     for src_sidecar in ledger_dir.glob("*.source"):
@@ -90,73 +110,155 @@ def routed_sources(ledger_dir: Path | None, remat: Path | None) -> dict[str, dic
         if not page.exists() or not remat_page.exists():
             continue  # page dropped (e.g. a personal dashboard) -> not migrated
         # every [[TAG]] the materialised page references must resolve in corpus
-        tags = set(re.findall(r"\[\[([PEX]-[A-Z0-9]{5})\]\]", remat_page.read_text(errors="replace")))
+        tags = set(
+            re.findall(
+                r"\[\[([PEX]-[A-Z0-9]{5})\]\]", remat_page.read_text(errors="replace")
+            )
+        )
         if tags - corpus_ids:
             continue  # some card missing -> not fully migrated
-        out[str(src.resolve())] = {"page": rel, "cards": len(tags), "verified_page": page.exists()}
+        out[str(src.resolve())] = {
+            "page": rel,
+            "cards": len(tags),
+            "verified_page": page.exists(),
+        }
     return out
 
 
-def classify(repo_name: str, repo: Path, rel: str, corpus_hashes: dict, routed: dict,
-             corpus_ids: set, corpus_pages: set) -> dict:
+def classify(
+    repo_name: str,
+    repo: Path,
+    rel: str,
+    corpus_hashes: dict,
+    routed: dict,
+    corpus_ids: set,
+    corpus_pages: set,
+) -> dict:
     p = repo / rel
     ext = Path(rel).suffix.lower()
     row = {"repo": repo_name, "path": rel}
 
     # editor config and tooling: never corpus content
-    if rel.startswith(".obsidian/") or "/.obsidian/" in rel or rel.startswith(".git"):
+    if rel.startswith((".obsidian/", ".git")) or "/.obsidian/" in rel:
         return {**row, "disposition": "dropped", "reason": "editor config"}
-    if repo_name == "make-me-a-qual" and (rel.startswith("Webtool/") or rel.startswith(".ipynb")):
-        return {**row, "disposition": "dropped", "reason": "web tool / notebook checkpoint (WS7)"}
+    if repo_name == "make-me-a-qual" and rel.startswith(("Webtool/", ".ipynb")):
+        return {
+            **row,
+            "disposition": "dropped",
+            "reason": "web tool / notebook checkpoint (WS7)",
+        }
     if "tex_tempfiles/" in rel:
-        return {**row, "disposition": "generated", "reason": "pandoc temp build artifact"}
+        return {
+            **row,
+            "disposition": "generated",
+            "reason": "pandoc temp build artifact",
+        }
 
     # assets: bytes present in corpus/assets
     if ext in ASSET_EXT:
         h = sha(p)
         if h in corpus_hashes:
-            return {**row, "disposition": "migrated", "target": corpus_hashes[h], "evidence": f"sha1 {h[:12]} in {corpus_hashes[h]}"}
+            return {
+                **row,
+                "disposition": "migrated",
+                "target": corpus_hashes[h],
+                "evidence": f"sha1 {h[:12]} in {corpus_hashes[h]}",
+            }
         # a PDF/scan not vendored is a source-of-record whose extraction is open
-        return {**row, "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
+        return {
+            **row,
+            "disposition": "queued",
+            "reason": "asset not vendored; extraction open (WS9)",
+        }
 
     if ext == ".md":
         src_abs = str(p.resolve())
         if src_abs in routed:
             r = routed[src_abs]
-            return {**row, "disposition": "migrated", "target": f"wiki/{r['page']}", "evidence": f"re-materialises to wiki/{r['page']} + {r['cards']} cards, all in corpus"}
+            return {
+                **row,
+                "disposition": "migrated",
+                "target": f"wiki/{r['page']}",
+                "evidence": f"re-materialises to wiki/{r['page']} + {r['cards']} cards, all in corpus",
+            }
         # an authored .md that was not routed: aggregate, dashboard, or excluded
         name = Path(rel).name
-        if "TexDocs" in rel or name.startswith(("Qual", "UGA_", "Complex_Analysis_", "Real_Analysis_")):
-            return {**row, "disposition": "generated", "reason": "pandoc aggregate of sections/ (WS2 excluded)"}
-        if name in ("qual_progress.md", "000_My Active Problems.md", "999_Typsetting_Progress.md"):
-            return {**row, "disposition": "dropped", "reason": "author's personal study dashboard (removed from public wiki)"}
-        return {**row, "disposition": "dropped", "reason": "authored .md not routed (index/config/personal)"}
+        if "TexDocs" in rel or name.startswith(
+            ("Qual", "UGA_", "Complex_Analysis_", "Real_Analysis_")
+        ):
+            return {
+                **row,
+                "disposition": "generated",
+                "reason": "pandoc aggregate of sections/ (WS2 excluded)",
+            }
+        if name in (
+            "qual_progress.md",
+            "000_My Active Problems.md",
+            "999_Typsetting_Progress.md",
+        ):
+            return {
+                **row,
+                "disposition": "dropped",
+                "reason": "author's personal study dashboard (removed from public wiki)",
+            }
+        return {
+            **row,
+            "disposition": "dropped",
+            "reason": "authored .md not routed (index/config/personal)",
+        }
 
     if ext == ".tex":
         if repo_name == "Analysis-Qual-Compendium":
             if Path(rel).name == "main.tex":
-                return {**row, "disposition": "migrated", "target": "existing cards", "evidence": "all 68 problems verified present; see sources/analysis-qual-compendium-occurrences.json"}
+                return {
+                    **row,
+                    "disposition": "migrated",
+                    "target": "existing cards",
+                    "evidence": (
+                        "all 68 problems verified present; see "
+                        "sources/analysis-qual-compendium-occurrences.json"
+                    ),
+                }
             return {**row, "disposition": "dropped", "reason": "LaTeX preamble/macros"}
-        return {**row, "disposition": "generated", "reason": "LaTeX source of a built doc"}
+        return {
+            **row,
+            "disposition": "generated",
+            "reason": "LaTeX source of a built doc",
+        }
 
     if ext in {".yaml", ".yml"} and repo_name == "make-me-a-qual":
-        return {**row, "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+        return {
+            **row,
+            "disposition": "migrated",
+            "target": "corpus/imports/mmaq",
+            "evidence": "imported by tools/import_mmaq.py",
+        }
 
     # everything else: build tooling, styles, configs
-    return {**row, "disposition": "dropped", "reason": f"non-content file ({ext or 'no ext'})"}
+    return {
+        **row,
+        "disposition": "dropped",
+        "reason": f"non-content file ({ext or 'no ext'})",
+    }
 
 
 def build() -> list[dict]:
     corpus_hashes = corpus_asset_hashes()
     corpus_ids = {p.stem for p in (REPO / "corpus").rglob("*.md")}
-    corpus_pages = {str(p.relative_to(REPO / "wiki")) for p in (REPO / "wiki").rglob("*.md")}
+    corpus_pages = {
+        str(p.relative_to(REPO / "wiki")) for p in (REPO / "wiki").rglob("*.md")
+    }
     rows: list[dict] = []
     for name, (repo, ledger_dir, remat) in REPOS.items():
         if not repo.exists():
             continue
         routed = routed_sources(ledger_dir, remat)
         for rel in tracked(repo):
-            rows.append(classify(name, repo, rel, corpus_hashes, routed, corpus_ids, corpus_pages))
+            rows.append(
+                classify(
+                    name, repo, rel, corpus_hashes, routed, corpus_ids, corpus_pages
+                )
+            )
     return rows
 
 
@@ -166,21 +268,31 @@ def main(argv: list[str]) -> int:
     out = REPO / "sources/migration-ledger.jsonl"
     out.write_text("\n".join(json.dumps(r) for r in rows) + "\n")
     from collections import Counter
+
     disp = Counter(r["disposition"] for r in rows)
     print(f"{len(rows)} files classified -> {out}")
     for d, n in disp.most_common():
         print(f"  {d}: {n}")
+
     # Only migrated files with first-hand evidence are trash-safe: an asset whose
     # bytes are in corpus/assets, an authored .md re-materialised into the corpus,
     # or the compendium verified redundant. The mmaq YAMLs are migrated on a
     # prior-session import this run did not re-verify, so they are kept.
     def trash_safe(r: dict) -> bool:
-        e = r.get("evidence", "")
-        return r["disposition"] == "migrated" and (e.startswith(("sha1", "re-materialises")) or "68 problems" in e)
+        if "evidence" not in r:
+            return False
+        e = r["evidence"]
+        return r["disposition"] == "migrated" and (
+            e.startswith(("sha1", "re-materialises")) or "68 problems" in e
+        )
 
     safe = [r for r in rows if trash_safe(r)]
-    kept_migrated = [r for r in rows if r["disposition"] == "migrated" and not trash_safe(r)]
-    print(f"\ntrash-safe migrated files: {len(safe)}  (kept, unverified this run: {len(kept_migrated)})")
+    kept_migrated = [
+        r for r in rows if r["disposition"] == "migrated" and not trash_safe(r)
+    ]
+    print(
+        f"\ntrash-safe migrated files: {len(safe)}  (kept, unverified this run: {len(kept_migrated)})"
+    )
     for repo in REPOS:
         n = sum(1 for r in safe if r["repo"] == repo)
         if n:
@@ -188,6 +300,7 @@ def main(argv: list[str]) -> int:
 
     if cmd == "trash":
         import shutil
+
         trash_bin = shutil.which("trash") or shutil.which("gio")
         if not trash_bin:
             print("no `trash`/`gio` on PATH; refusing to rm", file=sys.stderr)
@@ -202,7 +315,9 @@ def main(argv: list[str]) -> int:
             else:
                 subprocess.run([trash_bin, str(src)], check=True)
             done += 1
-        print(f"\ntrashed {done} verified-migrated files (recoverable: trash bin, git history, corpus)")
+        print(
+            f"\ntrashed {done} verified-migrated files (recoverable: trash bin, git history, corpus)"
+        )
     else:
         print("\n(dry run; `trash` to move the trash-safe files to the trash bin)")
     return 0

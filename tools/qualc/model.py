@@ -7,13 +7,16 @@ Unknown metadata fields are rejected, so a typo fails the build.
 
 from __future__ import annotations
 
-import subprocess
+import io
+from collections.abc import Callable
 from pathlib import Path
-from typing import Annotated, Literal
+from typing import Annotated, Literal, cast
 
 import panflute as pf
 import yaml
-from pydantic import BaseModel, ConfigDict, Field
+from pydantic import BaseModel, ConfigDict, Field, TypeAdapter
+
+from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer
 
 
 class Strict(BaseModel):
@@ -358,20 +361,28 @@ def to_ast(markdown: str) -> str:
     the generated LaTeX holds a duplicate definition. I called it benign without
     reading it.
     """
-    proc = subprocess.run(
-        ["pandoc", "--from", MARKDOWN, "--to", "json", "--standalone", "--fail-if-warnings"],
-        input=markdown,
-        capture_output=True,
-        text=True,
-    )
-    if proc.returncode != 0:
-        raise ValueError(proc.stderr.strip())
-    return proc.stdout
+    with PandocServer() as pandoc:
+        result = pandoc.read_markdown([markdown], MARKDOWN)[0]
+    match result:
+        case PandocFailure(error=error):
+            raise PandocBatchError(error)
+    warnings = [
+        message.message for message in result.messages if message.verbosity == "WARNING"
+    ]
+    if warnings:
+        raise ValueError("\n".join(warnings))
+    return result.output
 
 
 def from_ast(ast: str) -> pf.Doc:
-    doc: pf.Doc = pf.convert_text(ast, input_format="json", output_format="panflute", standalone=True)
-    return doc
+    loader = cast(
+        Callable[[io.StringIO], object],
+        vars(pf)["load"],
+    )
+    document: object = loader(io.StringIO(ast))
+    if not isinstance(document, pf.Doc):
+        raise TypeError("pandoc JSON did not decode to a document")
+    return document
 
 
 def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
@@ -380,7 +391,7 @@ def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     _, fm, body = text.split("---\n", 2)
     meta = yaml.safe_load(fm)
     if not isinstance(meta, dict):
-        raise ValueError(f"{path}: front matter must be a mapping")
+        raise TypeError(f"{path}: front matter must be a mapping")
     return meta, body
 
 
@@ -418,22 +429,68 @@ def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     for block in doc.content:
         walk(block)
     if unknown:
-        raise ValueError(f"unmapped fenced-div class(es): {', '.join(sorted(set(unknown)))}")
+        raise ValueError(
+            f"unmapped fenced-div class(es): {', '.join(sorted(set(unknown)))}"
+        )
     return found
 
 
-def parse_card(path: Path) -> ParsedCard:
-    meta, body = split_front_matter(path.read_text(), path)
-    from pydantic import TypeAdapter
+def parse_cards_with(
+    pandoc: PandocServer,
+    paths: list[Path],
+) -> tuple[list[ParsedCard], list[str]]:
+    adapter: TypeAdapter[Card] = TypeAdapter(Card)
+    prepared: list[tuple[Path, Card, str]] = []
+    errors: list[str] = []
+    for path in paths:
+        try:
+            meta, body = split_front_matter(path.read_text(), path)
+            card: Card = adapter.validate_python(meta)
+            prepared.append((path, card, body))
+        except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
+            errors.append(f"{path}: {exc}")
 
-    card: Card = TypeAdapter(Card).validate_python(meta)
-    ast = to_ast(body)
-    return ParsedCard(
-        card=card,
-        ast=ast,
-        source_path=str(path),
-        sections=extract_sections(from_ast(ast)),
+    results = pandoc.read_markdown(
+        [body for _, _, body in prepared],
+        MARKDOWN,
     )
+    parsed: list[ParsedCard] = []
+    for (path, card, _), result in zip(prepared, results, strict=True):
+        if isinstance(result, PandocFailure):
+            errors.append(f"{path}: {result.error}")
+            continue
+        warnings = [
+            message.message
+            for message in result.messages
+            if message.verbosity == "WARNING"
+        ]
+        if warnings:
+            errors.append(f"{path}: WARNING: {'; '.join(warnings)}")
+            continue
+        try:
+            parsed.append(
+                ParsedCard(
+                    card=card,
+                    ast=result.output,
+                    source_path=str(path),
+                    sections=extract_sections(from_ast(result.output)),
+                )
+            )
+        except (TypeError, ValueError) as exc:
+            errors.append(f"{path}: {exc}")
+    return parsed, errors
+
+
+def parse_cards(paths: list[Path]) -> tuple[list[ParsedCard], list[str]]:
+    with PandocServer() as pandoc:
+        return parse_cards_with(pandoc, paths)
+
+
+def parse_card(path: Path) -> ParsedCard:
+    parsed, errors = parse_cards([path])
+    if errors:
+        raise ValueError(errors[0])
+    return parsed[0]
 
 
 def discover(corpus: Path) -> list[Path]:
