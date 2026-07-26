@@ -1302,7 +1302,7 @@ def _generate_data(
     pandoc: PandocServer,
     con: sqlite3.Connection,
 ) -> list[dict]:
-    """Every problem as a selectable exam question: statement markdown + facets.
+    """Every problem as a selectable exam question: statement HTML + facets.
 
     The statement is recovered from the card AST (never the flattened section
     text, which loses the math) with a single batched pandoc call rather than one
@@ -1323,23 +1323,13 @@ def _generate_data(
     ):
         if r["pid"] in insts:
             insts[r["pid"]].add(r["inst"])
-    bodies = _successful_outputs(
-        pandoc.write_markdown(
-            [problem["ast"] for problem in problems],
-            MARKDOWN,
-        ),
-        "generator statement write",
+    bodies = _successful_html_outputs(
+        pandoc.write_html([_html_ast(problem["ast"]) for problem in problems]),
+        "generator statement HTML write",
     )
     out = []
     for r, body in zip(problems, bodies, strict=True):
         stmt = body.strip()
-        # the problem body is wrapped in a fenced div; drop the fence for display
-        stmt = re.sub(
-            r"^:::+.*$|^:::+$",
-            "",
-            stmt,
-            flags=re.MULTILINE,
-        ).strip()
         out.append(
             {
                 "id": r["id"],
@@ -1410,7 +1400,7 @@ document.getElementById("gen-go").onclick=()=>{
   sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${pick.length} problems · ${title}</p>`+
     pick.map((q,i)=>`<div class="q">
       <div class="qn">${i+1}.</div>
-      <div class="qb">${q.q.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+      <div class="qb">${q.q}
         <div class="src">${q.insts.map(x=>x.toUpperCase()).join(", ")} ·
           <a href="tag/${q.id}.html">${q.id}</a>
         </div>
@@ -1509,13 +1499,13 @@ def project(
             )
         )
 
-    generate_qmd = GENERATE_QMD.replace(
-        "__GENDATA__",
-        json.dumps(
-            _generate_data(pandoc, con),
-            separators=(",", ":"),
-        ),
+    generator_data = json.dumps(
+        _generate_data(pandoc, con),
+        separators=(",", ":"),
     )
+    for unsafe, escaped in (("&", "\\u0026"), ("<", "\\u003c"), (">", "\\u003e")):
+        generator_data = generator_data.replace(unsafe, escaped)
+    generate_qmd = GENERATE_QMD.replace("__GENDATA__", generator_data)
     (out / "generate.qmd").write_text(generate_qmd)
     generate_html = generate_qmd.split("```{=html}\n", 1)[1].rsplit("\n```", 1)[0]
     write_page(
