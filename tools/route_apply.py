@@ -61,7 +61,7 @@ KIND_PREFIX = {"problem": "P", "exercise": "E"}
 
 def tag(kind: str, body: str) -> str:
     digest = hashlib.sha1(body.encode()).digest()
-    prefix = KIND_PREFIX.get(kind, "X")
+    prefix = KIND_PREFIX[kind]
     return f"{prefix}-" + base64.b32encode(digest).decode()[:5]
 
 
@@ -103,8 +103,10 @@ def resolve_asset(ref: str, src: Path) -> tuple[Path, Path] | None:
         for cand in (tree / here / ref, tree / ref):
             if cand.exists() and cand.is_file():
                 return tree, Path(os.path.normpath(cand.relative_to(tree)))
-    for tree, hit in _by_name.get(Path(ref).name, []):
-        return tree, hit.resolve().relative_to(tree.resolve())
+    name = Path(ref).name
+    if name in _by_name:
+        for tree, hit in _by_name[name]:
+            return tree, hit.resolve().relative_to(tree.resolve())
     return None
 
 
