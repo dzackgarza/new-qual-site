@@ -71,6 +71,7 @@ def fixture_repo(tmp_path: Path, name: str, card: str) -> Path:
     work = tmp_path / "repo"
     for sub in ("corpus", "vocabularies", "publications", "site"):
         shutil.copytree(ROOT / sub, work / sub)
+    (work / "assets").symlink_to(ROOT / "assets", target_is_directory=True)
     (work / "corpus" / name).write_text(card)
     return work
 
