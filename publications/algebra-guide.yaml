@@ -56,3 +56,5 @@ sections:
       topics:
       - groups
       limit: 12
+      review:
+        mode: any

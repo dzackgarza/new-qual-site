@@ -9,6 +9,7 @@ import re
 from dataclasses import dataclass
 from html import escape
 from pathlib import Path
+from typing import Literal
 from urllib.parse import unquote, urlsplit
 
 
@@ -19,19 +20,63 @@ class AssetCatalog:
 
 
 @dataclass(frozen=True)
+class RootParent:
+    pass
+
+
+@dataclass(frozen=True)
+class NodeParent:
+    key: str
+
+
+NavigationParent = RootParent | NodeParent
+
+
+@dataclass(frozen=True)
 class NavigationLink:
     key: str
     title: str
     target: Path
-    parent_key: str | None
+    parent: NavigationParent
+
+
+@dataclass(frozen=True)
+class StartReading:
+    following: NavigationLink
+
+
+@dataclass(frozen=True)
+class MiddleReading:
+    previous: NavigationLink
+    following: NavigationLink
+
+
+@dataclass(frozen=True)
+class EndReading:
+    previous: NavigationLink
+
+
+ReadingPosition = StartReading | MiddleReading | EndReading
 
 
 @dataclass(frozen=True)
 class PublicationNavigation:
     links: tuple[NavigationLink, ...]
     current_key: str
-    previous: NavigationLink | None
-    following: NavigationLink | None
+    position: ReadingPosition
+
+
+@dataclass(frozen=True)
+class StandardPage:
+    pass
+
+
+@dataclass(frozen=True)
+class SubjectPage:
+    navigation: PublicationNavigation
+
+
+PageChrome = StandardPage | SubjectPage
 
 
 def build_asset_catalog(root: Path) -> AssetCatalog:
@@ -84,47 +129,60 @@ def _relative_url(relative_path: Path, target: Path) -> str:
 def _navigation_link(
     relative_path: Path,
     link: NavigationLink,
-    *,
-    current: bool = False,
-    rel: str | None = None,
 ) -> str:
-    attributes = [f'href="{escape(_relative_url(relative_path, link.target))}"']
-    if current:
-        attributes.append('aria-current="page"')
-    if rel is not None:
-        attributes.append(f'rel="{escape(rel)}"')
-    return f"<a {' '.join(attributes)}>{escape(link.title)}</a>"
+    target = escape(_relative_url(relative_path, link.target))
+    return f'<a href="{target}">{escape(link.title)}</a>'
+
+
+def _current_navigation_link(
+    relative_path: Path,
+    link: NavigationLink,
+) -> str:
+    target = escape(_relative_url(relative_path, link.target))
+    return f'<a href="{target}" aria-current="page">{escape(link.title)}</a>'
+
+
+def _reading_navigation_link(
+    relative_path: Path,
+    link: NavigationLink,
+    relation: Literal["prev", "next"],
+) -> str:
+    target = escape(_relative_url(relative_path, link.target))
+    return f'<a href="{target}" rel="{relation}">{escape(link.title)}</a>'
 
 
 def _subject_tree(
     relative_path: Path,
     navigation: PublicationNavigation,
 ) -> str:
-    children: dict[str | None, list[NavigationLink]] = {}
+    roots: list[NavigationLink] = []
+    children: dict[str, list[NavigationLink]] = {
+        link.key: [] for link in navigation.links
+    }
     for link in navigation.links:
-        children.setdefault(link.parent_key, []).append(link)
+        match link.parent:
+            case RootParent():
+                roots.append(link)
+            case NodeParent(key=parent_key):
+                children[parent_key].append(link)
 
-    def branch(parent: str | None) -> str:
+    def branch(links: list[NavigationLink]) -> str:
         items = []
-        for link in children.get(parent, []):
-            nested = branch(link.key)
-            items.append(
-                "<li>"
-                + _navigation_link(
-                    relative_path,
-                    link,
-                    current=link.key == navigation.current_key,
-                )
-                + nested
-                + "</li>"
+        for link in links:
+            nested = branch(children[link.key])
+            anchor = (
+                _current_navigation_link(relative_path, link)
+                if link.key == navigation.current_key
+                else _navigation_link(relative_path, link)
             )
+            items.append("<li>" + anchor + nested + "</li>")
         return f"<ol>{''.join(items)}</ol>" if items else ""
 
     return (
         '<aside class="subject-sidebar">'
         '<nav aria-label="Subject">'
         '<strong class="subject-label">Study path</strong>'
-        f"{branch(None)}"
+        f"{branch(roots)}"
         "</nav>"
         "</aside>"
     )
@@ -139,18 +197,20 @@ def _breadcrumbs(
     cursor = by_key[navigation.current_key]
     while True:
         trail.append(cursor)
-        if cursor.parent_key is None:
-            break
-        cursor = by_key[cursor.parent_key]
+        match cursor.parent:
+            case RootParent():
+                break
+            case NodeParent(key=parent_key):
+                cursor = by_key[parent_key]
     trail.reverse()
     return (
         '<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>'
         + "".join(
             "<li>"
-            + _navigation_link(
-                relative_path,
-                link,
-                current=link.key == navigation.current_key,
+            + (
+                _current_navigation_link(relative_path, link)
+                if link.key == navigation.current_key
+                else _navigation_link(relative_path, link)
             )
             + "</li>"
             for link in trail
@@ -163,19 +223,44 @@ def _reading_order(
     relative_path: Path,
     navigation: PublicationNavigation,
 ) -> str:
-    links = []
-    if navigation.previous is not None:
-        links.append(
-            '<span class="reading-previous"><small>Previous</small>'
-            + _navigation_link(relative_path, navigation.previous, rel="prev")
-            + "</span>"
-        )
-    if navigation.following is not None:
-        links.append(
-            '<span class="reading-following"><small>Next</small>'
-            + _navigation_link(relative_path, navigation.following, rel="next")
-            + "</span>"
-        )
+    match navigation.position:
+        case StartReading(following=following):
+            links = [
+                '<span class="reading-following"><small>Next</small>'
+                + _reading_navigation_link(
+                    relative_path,
+                    following,
+                    "next",
+                )
+                + "</span>"
+            ]
+        case MiddleReading(previous=previous, following=following):
+            links = [
+                '<span class="reading-previous"><small>Previous</small>'
+                + _reading_navigation_link(
+                    relative_path,
+                    previous,
+                    "prev",
+                )
+                + "</span>",
+                '<span class="reading-following"><small>Next</small>'
+                + _reading_navigation_link(
+                    relative_path,
+                    following,
+                    "next",
+                )
+                + "</span>",
+            ]
+        case EndReading(previous=previous):
+            links = [
+                '<span class="reading-previous"><small>Previous</small>'
+                + _reading_navigation_link(
+                    relative_path,
+                    previous,
+                    "prev",
+                )
+                + "</span>"
+            ]
     return (
         '<nav class="reading-order" aria-label="Reading order">'
         + "".join(links)
@@ -253,7 +338,7 @@ def page_document(
     meta: dict[str, object],
     body: str,
     mathjax_header: str,
-    navigation: PublicationNavigation | None,
+    chrome: PageChrome,
 ) -> str:
     prefix = _prefix(relative_path)
     try:
@@ -266,18 +351,17 @@ def page_document(
     subtitle_html = (
         f'<p class="page-subtitle">{escape(subtitle)}</p>' if subtitle else ""
     )
-    subject_html = (
-        _subject_tree(relative_path, navigation) if navigation is not None else ""
-    )
-    breadcrumb_html = (
-        _breadcrumbs(relative_path, navigation) if navigation is not None else ""
-    )
-    reading_order_html = (
-        _reading_order(relative_path, navigation) if navigation is not None else ""
-    )
-    layout_class = (
-        "page-layout subject-layout" if navigation is not None else "page-layout"
-    )
+    match chrome:
+        case StandardPage():
+            subject_html = ""
+            breadcrumb_html = ""
+            reading_order_html = ""
+            layout_class = "page-layout"
+        case SubjectPage(navigation=navigation):
+            subject_html = _subject_tree(relative_path, navigation)
+            breadcrumb_html = _breadcrumbs(relative_path, navigation)
+            reading_order_html = _reading_order(relative_path, navigation)
+            layout_class = "page-layout subject-layout"
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -344,7 +428,7 @@ def write_page(
     mathjax_header: str,
     link_targets: dict[str, Path],
     assets: AssetCatalog,
-    navigation: PublicationNavigation | None,
+    chrome: PageChrome,
 ) -> None:
     path = site_root / relative_path
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -361,7 +445,7 @@ def write_page(
             meta,
             rewritten,
             mathjax_header,
-            navigation,
+            chrome,
         )
     )
 

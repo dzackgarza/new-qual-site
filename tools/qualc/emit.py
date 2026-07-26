@@ -36,17 +36,27 @@ from .pandoc_batch import (
     PandocServer,
 )
 from .publication import (
+    AnyReview,
     PublicationManifest,
     PublicationQuery,
     PublicationSection,
     QueryItem,
     ReferenceItem,
+    SelectedReviews,
     load_publications,
 )
 from .static_site import (
     AssetCatalog,
+    EndReading,
+    MiddleReading,
     NavigationLink,
+    NodeParent,
+    PageChrome,
     PublicationNavigation,
+    RootParent,
+    StandardPage,
+    StartReading,
+    SubjectPage,
     build_asset_catalog,
     write_page,
     write_search_index,
@@ -296,7 +306,7 @@ def _relation_groups_json(
         "</section>"
         '<section class="relation-group" data-relation-group="appearances">'
         "<h2>Derived appearances</h2>"
-        f"{_appearance_items(appearances.get(card_id, []))}"
+        f"{_appearance_items(appearances[card_id])}"
         "</section>"
         '<section class="relation-group" data-relation-group="backlinks">'
         "<h2>Backlinks</h2>"
@@ -460,7 +470,7 @@ def write_json_pages(
             mathjax,
             link_targets,
             assets,
-            None,
+            StandardPage(),
         )
 
 
@@ -532,7 +542,7 @@ def _link(
 
 
 Page = tuple[dict, list[pf.Block]]
-PageItem = tuple[Page, Path, PublicationNavigation | None]
+PageItem = tuple[Page, Path, PageChrome]
 
 
 def _document_ast(document: pf.Doc) -> str:
@@ -635,9 +645,12 @@ def run_query(
         args.append(topic)
     sql += " where c.kind=?"
     args.append(query.kind)
-    if query.review is not None:
-        sql += " and c.review in ({})".format(",".join("?" * len(query.review)))
-        args += query.review
+    match query.review:
+        case AnyReview():
+            pass
+        case SelectedReviews(values=reviews):
+            sql += " and c.review in ({})".format(",".join("?" * len(reviews)))
+            args += reviews
     sql += " order by c.title limit ?"
     args.append(query.limit)
     return _rows(con, sql, tuple(args))
@@ -760,20 +773,30 @@ def source_page(
     ]
 
 
-def _publication_route(
+def _publication_root_route(
     manifest: PublicationManifest,
-    section: PublicationSection | None = None,
 ) -> Path:
-    if section is None:
-        return Path("guide") / f"{manifest.id}.html"
+    return Path("guide") / f"{manifest.id}.html"
+
+
+def _publication_section_route(
+    manifest: PublicationManifest,
+    section: PublicationSection,
+) -> Path:
     return Path("guide") / manifest.id / f"{section.slug}.html"
 
 
-def _publication_target_key(
+def _publication_root_target_key(
     manifest: PublicationManifest,
-    section: PublicationSection | None = None,
 ) -> str:
-    return manifest.id if section is None else f"{manifest.id}/{section.slug}"
+    return manifest.id
+
+
+def _publication_section_target_key(
+    manifest: PublicationManifest,
+    section: PublicationSection,
+) -> str:
+    return f"{manifest.id}/{section.slug}"
 
 
 def _publication_navigation(
@@ -784,26 +807,35 @@ def _publication_navigation(
         NavigationLink(
             key=manifest.id,
             title=manifest.title,
-            target=_publication_route(manifest),
-            parent_key=None,
+            target=_publication_root_route(manifest),
+            parent=RootParent(),
         ),
         *(
             NavigationLink(
                 key=section.slug,
                 title=section.title,
-                target=_publication_route(manifest, section),
-                parent_key=section.parent,
+                target=_publication_section_route(manifest, section),
+                parent=NodeParent(section.parent),
             )
             for section in manifest.sections
         ),
     )
     ordered = list(links)
     index = next(i for i, link in enumerate(ordered) if link.key == current_key)
+    position: StartReading | MiddleReading | EndReading
+    if index == 0:
+        position = StartReading(following=ordered[1])
+    elif index == len(ordered) - 1:
+        position = EndReading(previous=ordered[-2])
+    else:
+        position = MiddleReading(
+            previous=ordered[index - 1],
+            following=ordered[index + 1],
+        )
     return PublicationNavigation(
         links=links,
         current_key=current_key,
-        previous=ordered[index - 1] if index else None,
-        following=ordered[index + 1] if index + 1 < len(ordered) else None,
+        position=position,
     )
 
 
@@ -855,7 +887,7 @@ def publication_root_page(
                     pf.Plain(
                         pf.Link(
                             *_inlines(section.title, inline_cache),
-                            url=_publication_target_key(manifest, section),
+                            url=_publication_section_target_key(manifest, section),
                         )
                     )
                 )
@@ -923,15 +955,17 @@ def publication_appearances(
     con: sqlite3.Connection,
     manifests: list[PublicationManifest],
 ) -> dict[str, list[Appearance]]:
-    appearances: dict[str, list[Appearance]] = {}
+    appearances: dict[str, list[Appearance]] = {
+        row["id"]: [] for row in _rows(con, "select id from cards order by id")
+    }
     for manifest in manifests:
         for section in manifest.sections:
-            target_key = _publication_target_key(manifest, section)
+            target_key = _publication_section_target_key(manifest, section)
             for item in section.items:
                 match item:
                     case ReferenceItem(ref=card_id):
                         _manifest_card(con, card_id)
-                        appearances.setdefault(card_id, []).append(
+                        appearances[card_id].append(
                             Appearance(
                                 target_key=target_key,
                                 title=section.title,
@@ -946,7 +980,7 @@ def publication_appearances(
                                 f"{manifest.id}/{section.slug}"
                             )
                         for hit in hits:
-                            appearances.setdefault(hit["id"], []).append(
+                            appearances[hit["id"]].append(
                                 Appearance(
                                     target_key=target_key,
                                     title=section.title,
@@ -1188,11 +1222,13 @@ def _link_targets(
     for occurrence in _rows(con, "select id, problem_id from occurrences"):
         targets[occurrence["id"]] = Path("tag") / f"{occurrence['problem_id']}.html"
     for guide in guides:
-        targets[_publication_target_key(guide)] = _publication_route(guide)
+        targets[_publication_root_target_key(guide)] = _publication_root_route(guide)
         for section in guide.sections:
-            targets[_publication_target_key(guide, section)] = _publication_route(
-                guide,
-                section,
+            targets[_publication_section_target_key(guide, section)] = (
+                _publication_section_route(
+                    guide,
+                    section,
+                )
             )
     return targets
 
@@ -1241,7 +1277,7 @@ def _search_records(
                 "title": guide.title,
                 "kind": "Page",
                 "detail": "study guide",
-                "url": _publication_route(guide).as_posix(),
+                "url": _publication_root_route(guide).as_posix(),
                 "search": " ".join(
                     [guide.title, guide.lede]
                     + [section.title for section in guide.sections]
@@ -1253,7 +1289,7 @@ def _search_records(
                 "title": section.title,
                 "kind": "Page",
                 "detail": guide.title,
-                "url": _publication_route(guide, section).as_posix(),
+                "url": _publication_section_route(guide, section).as_posix(),
                 "search": (f"{guide.title} {section.title} {section.lede}").lower(),
             }
             for section in guide.sections
@@ -1468,7 +1504,7 @@ def project(
             (
                 source_page(con, src, inline_cache),
                 out / "exam" / f"{src['id']}.qmd",
-                None,
+                StandardPage(),
             )
         )
 
@@ -1489,7 +1525,7 @@ def project(
         mathjax,
         link_targets,
         assets,
-        None,
+        StandardPage(),
     )
 
     for guide in guides:
@@ -1497,7 +1533,7 @@ def project(
             (
                 publication_root_page(guide, inline_cache),
                 out / "guide" / f"{guide.id}.qmd",
-                _publication_navigation(guide, guide.id),
+                SubjectPage(_publication_navigation(guide, guide.id)),
             )
         )
         pages.extend(
@@ -1509,7 +1545,7 @@ def project(
                     inline_cache,
                 ),
                 out / "guide" / guide.id / f"{section.slug}.qmd",
-                _publication_navigation(guide, section.slug),
+                SubjectPage(_publication_navigation(guide, section.slug)),
             )
             for section in guide.sections
         )
@@ -1518,7 +1554,7 @@ def project(
         (
             problem_browser_page(con, inline_cache),
             out / "problems.qmd",
-            None,
+            StandardPage(),
         ),
     )
     pages.append(
@@ -1537,7 +1573,7 @@ def project(
                 inline_cache,
             ),
             out / "exams.qmd",
-            None,
+            StandardPage(),
         ),
     )
     pages.append(
@@ -1561,10 +1597,10 @@ def project(
                 ],
             ),
             out / "guides.qmd",
-            None,
+            StandardPage(),
         ),
     )
-    pages.append((index_page(pandoc, con), out / "index.qmd", None))
+    pages.append((index_page(pandoc, con), out / "index.qmd", StandardPage()))
     write_pages(
         pandoc,
         pages,

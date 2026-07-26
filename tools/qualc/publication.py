@@ -7,7 +7,7 @@ only reading order, hierarchy, connective prose, and appearances of those cards.
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Literal
+from typing import Annotated, Literal
 
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, model_validator
@@ -17,6 +17,21 @@ from .model import Review
 
 class Strict(BaseModel):
     model_config = ConfigDict(extra="forbid")
+
+
+class AnyReview(Strict):
+    mode: Literal["any"]
+
+
+class SelectedReviews(Strict):
+    mode: Literal["selected"]
+    values: list[Review] = Field(min_length=1)
+
+
+ReviewConstraint = Annotated[
+    AnyReview | SelectedReviews,
+    Field(discriminator="mode"),
+]
 
 
 class PublicationQuery(Strict):
@@ -42,7 +57,7 @@ class PublicationQuery(Strict):
     ]
     topics: list[str]
     limit: int = Field(gt=0)
-    review: list[Review] | None = None
+    review: ReviewConstraint
 
 
 class ReferenceItem(Strict):
