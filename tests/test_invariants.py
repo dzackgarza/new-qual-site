@@ -256,13 +256,19 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert generator_problem_ids == catalog_problem_ids
     assert application_problem_ids <= generator_problem_ids
 
-    search = {
-        record["url"]: record
-        for record in json.loads((site / "search.json").read_text())
-    }
+    search_records = json.loads((site / "search.json").read_text())
+    search = {record["url"]: record for record in search_records}
     assert search["guide/GUIDE-ALGEBRA/finite-groups.html"]["kind"] == "Page"
     assert search["tag/T-SZRXI.html"]["kind"] == "Card"
     assert search["tag/P-P2UAH.html"]["kind"] == "Problem"
+    visible_sylow_results = [
+        record for record in search_records if "sylow" in record["search"]
+    ][:30]
+    assert {record["kind"] for record in visible_sylow_results} == {
+        "Page",
+        "Card",
+        "Problem",
+    }
 
     problem = read_html(site / "tag" / "P-P2UAH.html")
     semantic_order = [
