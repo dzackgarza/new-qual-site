@@ -1,0 +1,73 @@
+from __future__ import annotations
+
+import sys
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+import html5lib
+
+
+root = Path(sys.argv[1]).resolve()
+pages = sorted(root.rglob("*.html"))
+documents: dict[Path, object] = {}
+ids: dict[Path, set[str]] = {}
+parse_errors: list[str] = []
+
+for page in pages:
+    parser = html5lib.HTMLParser(strict=False)
+    document = parser.parse(page.read_text())
+    documents[page] = document
+    ids[page] = {
+        value
+        for element in document.iter()
+        for key, value in element.attrib.items()
+        if key.rsplit("}", 1)[-1] in {"id", "name"}
+    }
+    parse_errors.extend(f"{page.relative_to(root)}: {error}" for error in parser.errors)
+
+missing_targets: list[str] = []
+missing_fragments: list[str] = []
+qmd_links: list[str] = []
+local_references = 0
+
+for page, document in documents.items():
+    for element in document.iter():
+        for attribute in ("href", "src"):
+            raw = element.attrib.get(attribute)
+            if raw is None or not raw.strip():
+                continue
+            parsed = urlsplit(raw.strip())
+            if parsed.scheme or parsed.netloc or raw.startswith(
+                ("data:", "mailto:", "tel:")
+            ):
+                continue
+            local_references += 1
+            relative_path = unquote(parsed.path)
+            if relative_path.endswith(".qmd"):
+                qmd_links.append(f"{page.relative_to(root)} -> {raw}")
+            if relative_path.startswith("/"):
+                target = root / relative_path.lstrip("/")
+            else:
+                target = page.parent / relative_path if relative_path else page
+            target = target.resolve()
+            if target.is_dir():
+                target = target / "index.html"
+            if not target.exists():
+                missing_targets.append(f"{page.relative_to(root)} -> {raw}")
+                continue
+            if parsed.fragment and target.suffix.lower() in {".html", ".htm"}:
+                fragment = unquote(parsed.fragment)
+                if fragment not in ids.get(target, set()):
+                    missing_fragments.append(f"{page.relative_to(root)} -> {raw}")
+
+print(f"html_pages: {len(pages)}")
+print(f"html_parse_errors: {len(parse_errors)}")
+print(f"local_references: {local_references}")
+print(f"missing_local_targets: {len(missing_targets)}")
+print(f"missing_fragments: {len(missing_fragments)}")
+print(f"qmd_links: {len(qmd_links)}")
+
+problems = parse_errors + missing_targets + missing_fragments + qmd_links
+if problems:
+    print("\n".join(problems[:20]))
+    raise SystemExit(1)
