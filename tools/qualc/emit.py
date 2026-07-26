@@ -1237,7 +1237,7 @@ def _search_records(
     con: sqlite3.Connection,
     guides: list[PublicationManifest],
 ) -> list[dict[str, object]]:
-    records: list[dict[str, object]] = []
+    card_records: list[dict[str, object]] = []
     cards = _rows(
         con,
         """
@@ -1262,7 +1262,7 @@ def _search_records(
                 card["body"],
             )
         ).lower()
-        records.append(
+        card_records.append(
             {
                 "title": card["title"],
                 "kind": "Problem" if card["kind"] == "problem" else "Card",
@@ -1271,8 +1271,9 @@ def _search_records(
                 "search": search,
             }
         )
+    page_records: list[dict[str, object]] = []
     for guide in guides:
-        records.append(
+        page_records.append(
             {
                 "title": guide.title,
                 "kind": "Page",
@@ -1284,7 +1285,7 @@ def _search_records(
                 ).lower(),
             }
         )
-        records.extend(
+        page_records.extend(
             {
                 "title": section.title,
                 "kind": "Page",
@@ -1294,7 +1295,7 @@ def _search_records(
             }
             for section in guide.sections
         )
-    return records
+    return page_records + card_records
 
 
 def _generate_data(
