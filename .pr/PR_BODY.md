@@ -1,4 +1,5 @@
 Closes #17
+Closes #18
 
 ## Original objective
 
@@ -52,6 +53,9 @@ routes without a readable traversal.
     missing targets, missing fragments, or `.qmd` links.
   - Browser replay: 25 inspected screenshots across 375, 768, 1024, and 1440 px widths;
     zero console or page errors.
+- [x] The commit-tier QC baseline is green without suppressions or hook bypasses.
+  - Proof: the branch passes the repository's Semgrep, Ruff, Mypy, syntax, commit, and
+    push gates, resolving #18.
 
 ## Verification
 
