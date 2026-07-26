@@ -246,6 +246,20 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     match = re.search(r"const QDATA=(\[.*?\]);\nconst insts=", generator, re.DOTALL)
     assert match is not None
     generator_problem_ids = {problem["id"] for problem in json.loads(match.group(1))}
+    generator_scripts = [
+        script.text
+        for script in read_html(site / "generate.html").root.find_all("script")
+        if "const QDATA=" in script.text
+    ]
+    assert len(generator_scripts) == 1
+    script_check = subprocess.run(
+        ["node", "--check", "-"],
+        input=generator_scripts[0],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert script_check.returncode == 0, script_check.stderr
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
     catalog_problem_ids = {
         card_id
