@@ -245,7 +245,14 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     generator = (site / "generate.html").read_text()
     match = re.search(r"const QDATA=(\[.*?\]);\nconst insts=", generator, re.DOTALL)
     assert match is not None
-    generator_problem_ids = {problem["id"] for problem in json.loads(match.group(1))}
+    generator_problems = {
+        problem["id"]: problem for problem in json.loads(match.group(1))
+    }
+    generator_problem_ids = set(generator_problems)
+    assert generator_problems["P-J3FBW"]["q"].lstrip().startswith("<ul>")
+    assert "<li>Classify the four groups of order 28.</li>" in generator_problems[
+        "P-J3FBW"
+    ]["q"]
     generator_scripts = [
         script.text
         for script in read_html(site / "generate.html").root.find_all("script")
