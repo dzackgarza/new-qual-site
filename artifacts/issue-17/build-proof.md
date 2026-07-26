@@ -1,6 +1,8 @@
 # Issue 17 full vertical slice proof
 
-Proof target: commit `594e89e` on `fix/batched-corpus-build`.
+Proof target: merged implementation `d6aa9713a519aed5471fd58680a750de4f2ee4b3`
+and Pages provisioning repair
+`7d04adbfa48198e0d1a591b8a1d2497d84b532ac` on `main`.
 
 ## Published traversal
 
@@ -88,8 +90,27 @@ Manual inspection covered every screenshot. The inspected states include:
 - Page/Card/Problem search labels;
 - semantic list markup and typeset mathematics in the generated practice set.
 
+## Production deployment
+
+The GitHub Pages workflow completed successfully after the provisioning repair:
+
+- workflow run:
+  <https://github.com/dzackgarza/new-qual-site/actions/runs/30201392802>
+- deployed site: <https://dzackgarza.github.io/new-qual-site/>
+
+The deployed artifact was replayed in Chrome at `375`, `768`, `1024`, and
+`1440` CSS pixels. The replay covered the same 25 reading, disclosure,
+relations, search, and generator states described above, with zero console
+errors and zero page errors. Every deployed-state screenshot was manually
+inspected.
+
+The remaining operational follow-up is issue 21, which tracks migration away
+from the Node 20 action runtime warning emitted by otherwise successful Pages
+runs: <https://github.com/dzackgarza/new-qual-site/issues/21>.
+
 ## Nonclaims
 
 This proof covers the finite-groups vertical slice in issue 17. It does not
 claim bulk editorial completion for other subjects, a redesign of the corpus
-generator, or a production Pages deployment.
+generator, or completion of the Node action-runtime migration tracked in issue
+21.
