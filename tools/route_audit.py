@@ -97,9 +97,7 @@ def source_of(ledger: Path, spans: list[dict]) -> Path:
         return Path(sidecar.read_text().strip())
     if spans and "_source" in spans[0]:
         return Path(spans[0]["_source"])
-    raise SystemExit(
-        f"{ledger}: no source recorded (need a .source sidecar or a _source key)"
-    )
+    raise SystemExit(f"{ledger}: no source recorded (need a .source sidecar or a _source key)")
 
 
 def audit(ledger: Path) -> dict:
@@ -140,28 +138,18 @@ def audit(ledger: Path) -> dict:
     # --- did we get the whole ledger, and does it cover the whole file --------
     if spans[0]["start_line"] != 1:
         missing_lines = spans[0]["start_line"] - 1
-        fatal.append(
-            f"TRUNCATED: first span starts at line {spans[0]['start_line']}, "
-            f"not 1 — missing {missing_lines} lines "
-            f"({100 * missing_lines // n}% of the file)"
-        )
+        fatal.append(f"TRUNCATED: first span starts at line {spans[0]['start_line']}, not 1 — missing {missing_lines} lines ({100 * missing_lines // n}% of the file)")
     if spans[-1]["end_line"] != n:
-        fatal.append(
-            f"first/last: last span ends at {spans[-1]['end_line']}, file has {n} lines"
-        )
+        fatal.append(f"first/last: last span ends at {spans[-1]['end_line']}, file has {n} lines")
     for a, b in pairwise(spans):
         if b["start_line"] != a["end_line"] + 1:
-            fatal.append(
-                f"GAP: span ends {a['end_line']}, next starts {b['start_line']}"
-            )
+            fatal.append(f"GAP: span ends {a['end_line']}, next starts {b['start_line']}")
     for s in spans:
         if s["start_line"] > s["end_line"]:
             fatal.append(f"inverted span {s['start_line']}-{s['end_line']}")
 
     if not fatal:
-        rebuilt = "".join(
-            "".join(lines[s["start_line"] - 1 : s["end_line"]]) for s in spans
-        )
+        rebuilt = "".join("".join(lines[s["start_line"] - 1 : s["end_line"]]) for s in spans)
         if rebuilt != "".join(lines):
             fatal.append("REASSEMBLY: spans concatenated do not reproduce the source")
 
@@ -183,12 +171,8 @@ def audit(ledger: Path) -> dict:
     if prose:
         biggest = max(s["end_line"] - s["start_line"] + 1 for s in prose)
         if biggest > HUGE_SPAN:
-            big = next(
-                s for s in prose if s["end_line"] - s["start_line"] + 1 == biggest
-            )
-            loud.append(
-                f"span of {biggest} lines at {big['start_line']}-{big['end_line']} ({big.get('kind')})"
-            )
+            big = next(s for s in prose if s["end_line"] - s["start_line"] + 1 == biggest)
+            loud.append(f"span of {biggest} lines at {big['start_line']}-{big['end_line']} ({big.get('kind')})")
 
     # --- are the cards reachable ---------------------------------------------
     starts = {s["start_line"]: s for s in spans}
@@ -196,20 +180,14 @@ def audit(ledger: Path) -> dict:
         if s["destination"] != "card":
             continue
         if s.get("kind") in BUNDLED:
-            loud.append(
-                f"DETACHED: {s['kind']} at {s['start_line']}-{s['end_line']} emitted as its own card; it belongs inside the problem span"
-            )
+            loud.append(f"DETACHED: {s['kind']} at {s['start_line']}-{s['end_line']} emitted as its own card; it belongs inside the problem span")
             continue
         at = s.get("attaches_to")
         if at not in (None, "", "null"):
             if int(at) not in starts:
-                loud.append(
-                    f"DANGLING: span {s['start_line']} attaches to {at}, not a span start"
-                )
+                loud.append(f"DANGLING: span {s['start_line']} attaches to {at}, not a span start")
             elif starts[int(at)].get("kind") not in ANCHORS:
-                loud.append(
-                    f"DANGLING: span {s['start_line']} attaches to a {starts[int(at)].get('kind')!r}"
-                )
+                loud.append(f"DANGLING: span {s['start_line']} attaches to a {starts[int(at)].get('kind')!r}")
 
     # --- is each extracted card self-contained -------------------------------
     # A wiki span may be unbalanced without harm: the page is written whole and
@@ -222,16 +200,11 @@ def audit(ledger: Path) -> dict:
         opened = sum(1 for line in body if FENCE.match(line))
         closed = sum(1 for line in body if re.match(r"^:{3,}\s*$", line))
         if opened != closed:
-            fatal.append(
-                f"SPLIT_DIV: card span {s['start_line']}-{s['end_line']} has "
-                f"{opened} div openers and {closed} closers; it begins or ends inside a fence"
-            )
+            fatal.append(f"SPLIT_DIV: card span {s['start_line']}-{s['end_line']} has {opened} div openers and {closed} closers; it begins or ends inside a fence")
 
     # --- did a file of problems produce no problems --------------------------
     card_spans = [s for s in spans if s["destination"] == "card"]
-    numbered = sum(
-        1 for line in lines if re.match(r"^#{1,6}\s+(\d+|\w+\s+\d{4})", line)
-    )
+    numbered = sum(1 for line in lines if re.match(r"^#{1,6}\s+(\d+|\w+\s+\d{4})", line))
     if not card_spans and numbered >= 3:
         loud.append(f"BARREN: {numbered} numbered/dated headings produced 0 cards")
 
@@ -272,9 +245,7 @@ def main(argv: list[str]) -> int:
     baseline: dict[str, int] = {}
     if "--baseline" in argv:
         i = argv.index("--baseline")
-        baseline = {
-            x["file"]: x["cards"] for x in json.loads(Path(argv[i + 1]).read_text())
-        }
+        baseline = {x["file"]: x["cards"] for x in json.loads(Path(argv[i + 1]).read_text())}
         argv = argv[:i] + argv[i + 2 :]
     if argv[0] == "--lines":
         for arg in argv[1:]:
@@ -293,16 +264,12 @@ def main(argv: list[str]) -> int:
     for r in reports:
         was = baseline.get(r["file"])
         if was is not None and r["cards"] < was:
-            r["loud"].insert(
-                0, f"REGRESSION: {was} bundles previously, {r['cards']} now"
-            )
+            r["loud"].insert(0, f"REGRESSION: {was} bundles previously, {r['cards']} now")
 
     bad = 0
     for r in reports:
         mark = "FAIL" if r["fatal"] else ("warn" if r["loud"] else "  ok")
-        print(
-            f"{mark}  {r['file'][:44]:44s} {r['lines']:5d}L {r['spans']:4d}sp {r['cards']:4d}cards"
-        )
+        print(f"{mark}  {r['file'][:44]:44s} {r['lines']:5d}L {r['spans']:4d}sp {r['cards']:4d}cards")
         for f in r["fatal"]:
             print(f"        !! {f}")
         for w in r["loud"]:
@@ -320,30 +287,17 @@ def main(argv: list[str]) -> int:
             roles.setdefault(kind, Counter())[dest] += count
     split = {k: v for k, v in roles.items() if len(v) > 1 and k in BUNDLED | ANCHORS}
     if split:
-        print(
-            "\n ?  SPLIT DESTINATION — the same role routed two ways across this batch:"
-        )
+        print("\n ?  SPLIT DESTINATION — the same role routed two ways across this batch:")
         for kind, dests in sorted(split.items()):
-            print(
-                f"        {kind}: "
-                + ", ".join(f"{d}={c}" for d, c in dests.most_common())
-            )
+            print(f"        {kind}: " + ", ".join(f"{d}={c}" for d, c in dests.most_common()))
 
     if source_root is not None:
 
         def authored(p: Path) -> bool:
-            return (
-                "attachments" not in p.parts
-                and "TexDocs" not in p.parts
-                and not p.name.endswith("_stripped.md")
-            )
+            return "attachments" not in p.parts and "TexDocs" not in p.parts and not p.name.endswith("_stripped.md")
 
         want = {p for p in source_root.rglob("*.md") if authored(p)}
-        have = {
-            source_of(p, [])
-            for p in sorted(root.glob("*.json"))
-            if p.with_suffix(".source").exists()
-        }
+        have = {source_of(p, []) for p in sorted(root.glob("*.json")) if p.with_suffix(".source").exists()}
         missing = sorted(want - have)
         if missing:
             bad += len(missing)
@@ -353,9 +307,7 @@ def main(argv: list[str]) -> int:
         else:
             print(f"\n ok  completeness: all {len(want)} source files have a ledger")
 
-    print(
-        f"\n{len(reports)} ledgers, {bad} fatal, {sum(1 for r in reports if r['loud'] and not r['fatal'])} flagged"
-    )
+    print(f"\n{len(reports)} ledgers, {bad} fatal, {sum(1 for r in reports if r['loud'] and not r['fatal'])} flagged")
     return 1 if bad else 0
 
 

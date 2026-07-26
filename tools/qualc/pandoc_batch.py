@@ -73,9 +73,7 @@ class PandocServer:
             returncode = process.poll()
             if returncode is not None:
                 stderr = process.stderr.read() if process.stderr is not None else ""
-                raise PandocBatchError(
-                    f"pandoc server exited during startup ({returncode}): {stderr.strip()}"
-                )
+                raise PandocBatchError(f"pandoc server exited during startup ({returncode}): {stderr.strip()}")
             with socket.socket() as probe:
                 if probe.connect_ex(("127.0.0.1", port)) == 0:
                     self._process = process
@@ -100,9 +98,7 @@ class PandocServer:
         self._port = None
         self._abbreviations = None
 
-    def read_markdown(
-        self, texts: list[str], markdown_format: str
-    ) -> list[PandocResult]:
+    def read_markdown(self, texts: list[str], markdown_format: str) -> list[PandocResult]:
         abbreviations = self._require_abbreviations()
         requests = [
             {
@@ -117,9 +113,7 @@ class PandocServer:
         ]
         return self._convert(requests)
 
-    def write_markdown(
-        self, documents: list[str], markdown_format: str
-    ) -> list[PandocResult]:
+    def write_markdown(self, documents: list[str], markdown_format: str) -> list[PandocResult]:
         abbreviations = self._require_abbreviations()
         requests = [
             {
@@ -157,10 +151,7 @@ class PandocServer:
         for offset in range(0, len(requests), BATCH_SIZE):
             results.extend(self._request(requests[offset : offset + BATCH_SIZE]))
         if len(results) != len(requests):
-            raise PandocBatchError(
-                f"pandoc batch returned {len(results)} results "
-                f"for {len(requests)} requests"
-            )
+            raise PandocBatchError(f"pandoc batch returned {len(results)} results for {len(requests)} requests")
         return results
 
     def _request(self, requests: list[dict[str, object]]) -> list[PandocResult]:
@@ -172,9 +163,7 @@ class PandocServer:
                 "Content-Type": "application/json",
             },
         )
-        with urllib.request.urlopen(
-            request, timeout=SERVER_REQUEST_TIMEOUT_SECONDS
-        ) as response:
+        with urllib.request.urlopen(request, timeout=SERVER_REQUEST_TIMEOUT_SECONDS) as response:
             payload: object = json.load(response)
         if not isinstance(payload, list):
             raise PandocBatchError("pandoc batch response is not a JSON array")

@@ -366,9 +366,7 @@ def to_ast(markdown: str) -> str:
     match result:
         case PandocFailure(error=error):
             raise PandocBatchError(error)
-    warnings = [
-        message.message for message in result.messages if message.verbosity == "WARNING"
-    ]
+    warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
     if warnings:
         raise ValueError("\n".join(warnings))
     return result.output
@@ -429,9 +427,7 @@ def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     for block in doc.content:
         walk(block)
     if unknown:
-        raise ValueError(
-            f"unmapped fenced-div class(es): {', '.join(sorted(set(unknown)))}"
-        )
+        raise ValueError(f"unmapped fenced-div class(es): {', '.join(sorted(set(unknown)))}")
     return found
 
 
@@ -459,11 +455,7 @@ def parse_cards_with(
         if isinstance(result, PandocFailure):
             errors.append(f"{path}: {result.error}")
             continue
-        warnings = [
-            message.message
-            for message in result.messages
-            if message.verbosity == "WARNING"
-        ]
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
         if warnings:
             errors.append(f"{path}: WARNING: {'; '.join(warnings)}")
             continue

@@ -36,9 +36,7 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-SCRATCH = Path(
-    "/tmp/claude-1000/-home-dzack-gitclones-new-qual-site/74f8af54-df1e-4c58-8cbb-e2c85add5444/scratchpad"
-)
+SCRATCH = Path("/tmp/claude-1000/-home-dzack-gitclones-new-qual-site/74f8af54-df1e-4c58-8cbb-e2c85add5444/scratchpad")
 
 # source repo -> (path on disk, route-ledger dir or None, re-materialised output)
 REPOS = {
@@ -110,11 +108,7 @@ def routed_sources(ledger_dir: Path | None, remat: Path | None) -> dict[str, dic
         if not page.exists() or not remat_page.exists():
             continue  # page dropped (e.g. a personal dashboard) -> not migrated
         # every [[TAG]] the materialised page references must resolve in corpus
-        tags = set(
-            re.findall(
-                r"\[\[([PEX]-[A-Z0-9]{5})\]\]", remat_page.read_text(errors="replace")
-            )
-        )
+        tags = set(re.findall(r"\[\[([PEX]-[A-Z0-9]{5})\]\]", remat_page.read_text(errors="replace")))
         if tags - corpus_ids:
             continue  # some card missing -> not fully migrated
         out[str(src.resolve())] = {
@@ -183,9 +177,7 @@ def classify(
             }
         # an authored .md that was not routed: aggregate, dashboard, or excluded
         name = Path(rel).name
-        if "TexDocs" in rel or name.startswith(
-            ("Qual", "UGA_", "Complex_Analysis_", "Real_Analysis_")
-        ):
+        if "TexDocs" in rel or name.startswith(("Qual", "UGA_", "Complex_Analysis_", "Real_Analysis_")):
             return {
                 **row,
                 "disposition": "generated",
@@ -214,10 +206,7 @@ def classify(
                     **row,
                     "disposition": "migrated",
                     "target": "existing cards",
-                    "evidence": (
-                        "all 68 problems verified present; see "
-                        "sources/analysis-qual-compendium-occurrences.json"
-                    ),
+                    "evidence": ("all 68 problems verified present; see sources/analysis-qual-compendium-occurrences.json"),
                 }
             return {**row, "disposition": "dropped", "reason": "LaTeX preamble/macros"}
         return {
@@ -245,20 +234,14 @@ def classify(
 def build() -> list[dict]:
     corpus_hashes = corpus_asset_hashes()
     corpus_ids = {p.stem for p in (REPO / "corpus").rglob("*.md")}
-    corpus_pages = {
-        str(p.relative_to(REPO / "wiki")) for p in (REPO / "wiki").rglob("*.md")
-    }
+    corpus_pages = {str(p.relative_to(REPO / "wiki")) for p in (REPO / "wiki").rglob("*.md")}
     rows: list[dict] = []
     for name, (repo, ledger_dir, remat) in REPOS.items():
         if not repo.exists():
             continue
         routed = routed_sources(ledger_dir, remat)
         for rel in tracked(repo):
-            rows.append(
-                classify(
-                    name, repo, rel, corpus_hashes, routed, corpus_ids, corpus_pages
-                )
-            )
+            rows.append(classify(name, repo, rel, corpus_hashes, routed, corpus_ids, corpus_pages))
     return rows
 
 
@@ -282,17 +265,11 @@ def main(argv: list[str]) -> int:
         if "evidence" not in r:
             return False
         e = r["evidence"]
-        return r["disposition"] == "migrated" and (
-            e.startswith(("sha1", "re-materialises")) or "68 problems" in e
-        )
+        return r["disposition"] == "migrated" and (e.startswith(("sha1", "re-materialises")) or "68 problems" in e)
 
     safe = [r for r in rows if trash_safe(r)]
-    kept_migrated = [
-        r for r in rows if r["disposition"] == "migrated" and not trash_safe(r)
-    ]
-    print(
-        f"\ntrash-safe migrated files: {len(safe)}  (kept, unverified this run: {len(kept_migrated)})"
-    )
+    kept_migrated = [r for r in rows if r["disposition"] == "migrated" and not trash_safe(r)]
+    print(f"\ntrash-safe migrated files: {len(safe)}  (kept, unverified this run: {len(kept_migrated)})")
     for repo in REPOS:
         n = sum(1 for r in safe if r["repo"] == repo)
         if n:
@@ -315,9 +292,7 @@ def main(argv: list[str]) -> int:
             else:
                 subprocess.run([trash_bin, str(src)], check=True)
             done += 1
-        print(
-            f"\ntrashed {done} verified-migrated files (recoverable: trash bin, git history, corpus)"
-        )
+        print(f"\ntrashed {done} verified-migrated files (recoverable: trash bin, git history, corpus)")
     else:
         print("\n(dry run; `trash` to move the trash-safe files to the trash bin)")
     return 0

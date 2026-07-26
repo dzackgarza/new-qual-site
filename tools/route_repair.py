@@ -98,10 +98,7 @@ def repair(spans: list[dict], lines: list[str]) -> tuple[list[dict], list[str]]:
             while j >= prev["start_line"] and not opens(lines[j - 1]) and is_filler(lines[j - 1]):
                 j -= 1
             if j < prev["start_line"] or not opens(lines[j - 1]):
-                notes.append(
-                    f"UNFIXABLE: span {s['start_line']}-{s['end_line']} has an unmatched "
-                    f"closer and no opener in the filler above it; the source is wrong"
-                )
+                notes.append(f"UNFIXABLE: span {s['start_line']}-{s['end_line']} has an unmatched closer and no opener in the filler above it; the source is wrong")
                 break
             notes.append(f"start {s['start_line']} -> {j} (pulled back to its opener)")
             s["start_line"] = j

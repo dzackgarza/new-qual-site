@@ -94,16 +94,10 @@ class PublicationManifest(Strict):
             if section.slug in known:
                 raise ValueError(f"duplicate publication node: {section.slug}")
             if section.parent not in known:
-                raise ValueError(
-                    f"publication parent must precede its child: "
-                    f"{section.slug} -> {section.parent}"
-                )
+                raise ValueError(f"publication parent must precede its child: {section.slug} -> {section.parent}")
             known.add(section.slug)
         return self
 
 
 def load_publications(directory: Path) -> list[PublicationManifest]:
-    return [
-        PublicationManifest.model_validate(yaml.safe_load(path.read_text()))
-        for path in sorted(directory.glob("*.yaml"))
-    ]
+    return [PublicationManifest.model_validate(yaml.safe_load(path.read_text())) for path in sorted(directory.glob("*.yaml"))]
