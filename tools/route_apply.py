@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Materialise routing ledgers into problem-bundle cards and wiki pages.
 
 A ledger says where every line of a source file goes. This performs that edit:
@@ -62,7 +61,7 @@ KIND_PREFIX = {"problem": "P", "exercise": "E"}
 
 def tag(kind: str, body: str) -> str:
     digest = hashlib.sha1(body.encode()).digest()
-    prefix = KIND_PREFIX[kind] if kind in KIND_PREFIX else "X"
+    prefix = KIND_PREFIX[kind]
     return f"{prefix}-" + base64.b32encode(digest).decode()[:5]
 
 
@@ -104,8 +103,10 @@ def resolve_asset(ref: str, src: Path) -> tuple[Path, Path] | None:
         for cand in (tree / here / ref, tree / ref):
             if cand.exists() and cand.is_file():
                 return tree, Path(os.path.normpath(cand.relative_to(tree)))
-    for tree, hit in _by_name[Path(ref).name] if Path(ref).name in _by_name else []:
-        return tree, hit.resolve().relative_to(tree.resolve())
+    name = Path(ref).name
+    if name in _by_name:
+        for tree, hit in _by_name[name]:
+            return tree, hit.resolve().relative_to(tree.resolve())
     return None
 
 
@@ -120,7 +121,15 @@ def vendor_assets(root: Path, out: Path) -> int:
 def _vendor_one(root: Path, out: Path) -> int:
     n = 0
     for p in root.rglob("*"):
-        if not p.is_file() or p.suffix.lower() not in {".png", ".jpg", ".jpeg", ".gif", ".svg", ".pdf", ".webp"}:
+        if not p.is_file() or p.suffix.lower() not in {
+            ".png",
+            ".jpg",
+            ".jpeg",
+            ".gif",
+            ".svg",
+            ".pdf",
+            ".webp",
+        }:
             continue
         dest = out / "assets" / p.relative_to(root)
         dest.parent.mkdir(parents=True, exist_ok=True)
@@ -170,7 +179,9 @@ def area_of(src: Path) -> str | None:
 AUTHORED_TITLE = re.compile(r'^:{3,}[^\n]*?\btitle="([^"]*)"')
 # Lines that are page furniture rather than statement: layout macros, Obsidian
 # block anchors, bare tag lines.
-NOT_A_TITLE = re.compile(r"^(\\\w+\s*$|\^[0-9a-f]{6}\s*$|#[\w/-]+\s*$|!\[[^\]]*\]\([^)]*\)\s*$)")
+NOT_A_TITLE = re.compile(
+    r"^(\\\w+\s*$|\^[0-9a-f]{6}\s*$|#[\w/-]+\s*$|!\[[^\]]*\]\([^)]*\)\s*$)"
+)
 # A figure reference relative to the source file's own directory. Cards are
 # extracted out of that directory, so every one of these breaks on the way out.
 IMAGE = re.compile(r"(!\[[^\]]*\]\()((?!https?:|/)[^)]+)(\))")
@@ -229,28 +240,72 @@ def title_of(span: dict, body: str) -> str:
 # Dropped: section placeholders ("Definitions" alone accounts for 191) and notes
 # about authoring work still to do. Neither says anything about the mathematics.
 STUDY_TRACKERS = {
-    "definitions", "add concepts", "todo", "walk through", "proof", "prove this",
-    "prove", "solution", "theorem", "check", "finish", "revisit", "revisit, tricky",
-    "revisit, seems short", "revisit, old. maybe redo", "review, from last year",
-    "review and clean up", "rewrite solution", "expand solution", "work this problem",
-    "move this to review notes to clean things up", "sort out from module section",
-    "lost, redo", "what a mess, redo", "all messed up", "missing work",
-    "missing some stuff", "not finished, flesh out", "not finished. add concepts",
-    "not finished", "redo part c", "finish (c)", "todo, missing part (c)",
-    "todo. specify", "have someone check", "check this proof",
-    "ask someone to check the last approximation part", "clean up, sketchy argument",
-    "try to construct the set", "break these into separate examples and explain properties",
-    "messy indexing", "make more precise", "pictures", "find the proof",
-    "add series tricks", "prove fatou", "polynomial long division",
-    "universal property", "excision", "homology examples", "matrix group definitions",
-    "statement of lefschetz duality", "examples, general procedure?",
-    "montel's theorem", "normal families", "schwarz lemma", "equicontinuity",
-    "?", "??", "???",
+    "definitions",
+    "add concepts",
+    "todo",
+    "walk through",
+    "proof",
+    "prove this",
+    "prove",
+    "solution",
+    "theorem",
+    "check",
+    "finish",
+    "revisit",
+    "revisit, tricky",
+    "revisit, seems short",
+    "revisit, old. maybe redo",
+    "review, from last year",
+    "review and clean up",
+    "rewrite solution",
+    "expand solution",
+    "work this problem",
+    "move this to review notes to clean things up",
+    "sort out from module section",
+    "lost, redo",
+    "what a mess, redo",
+    "all messed up",
+    "missing work",
+    "missing some stuff",
+    "not finished, flesh out",
+    "not finished. add concepts",
+    "not finished",
+    "redo part c",
+    "finish (c)",
+    "todo, missing part (c)",
+    "todo. specify",
+    "have someone check",
+    "check this proof",
+    "ask someone to check the last approximation part",
+    "clean up, sketchy argument",
+    "try to construct the set",
+    "break these into separate examples and explain properties",
+    "messy indexing",
+    "make more precise",
+    "pictures",
+    "find the proof",
+    "add series tricks",
+    "prove fatou",
+    "polynomial long division",
+    "universal property",
+    "excision",
+    "homology examples",
+    "matrix group definitions",
+    "statement of lefschetz duality",
+    "examples, general procedure?",
+    "montel's theorem",
+    "normal families",
+    "schwarz lemma",
+    "equicontinuity",
+    "?",
+    "??",
+    "???",
 }
 
 
 def strip_study_trackers(body: str, where: str = "") -> str:
     """Drop the author's private trackers; keep substantive notes as remarks."""
+
     def sub(raw: str) -> str:
         note = raw.strip()
         key = note.rstrip(".!? ").strip().lower()
@@ -260,32 +315,37 @@ def strip_study_trackers(body: str, where: str = "") -> str:
         tracker_log.append({"where": where, "note": note, "action": "kept as remark"})
         # Not a tracker: it says something about the mathematics. Promote it to
         # a first-class remark so it survives as prose rather than a raw macro.
-        return f':::{{.remark}}\n{note}\n:::'
+        return f":::{{.remark}}\n{note}\n:::"
+
     # Brace matching, not a regex: 72 of these notes contain balanced braces of
     # their own (`\abs{...}`, `\frac{}{}`), and a `[^{}]*` body silently truncates
     # them mid-formula, which is how a note ending in `\abs{f_n(x) - f_m(x)`
     # reached the corpus.
-    out, i = [], 0
+    chunks: list[str] = []
+    i = 0
     while (m := TODO_OPEN.search(body, i)) is not None:
-        out.append(body[i : m.start()])
+        chunks.append(body[i : m.start()])
         j, depth = m.end(), 1
         while j < len(body) and depth:
             depth += (body[j] == "{") - (body[j] == "}")
             j += 1
-        out.append(sub(body[m.end() : j - 1]))
+        chunks.append(sub(body[m.end() : j - 1]))
         i = j
-    out.append(body[i:])
-    out = "".join(out)
+    chunks.append(body[i:])
+    cleaned = "".join(chunks)
 
     # `$\work$` is the same tracker worn differently: it marks a problem the
     # author had not yet worked, and in qual-review-and-solutions it sits in the
     # heading itself -- `## 1 $\work$` -- 4,608 times. It is not mathematics and
     # it is not a title, so it does not belong in a public heading.
     def dework(m: re.Match[str]) -> str:
-        tracker_log.append({"where": where, "note": m.group(0).strip(), "action": "dropped"})
+        tracker_log.append(
+            {"where": where, "note": m.group(0).strip(), "action": "dropped"}
+        )
         return ""
-    out = WORK_MACRO.sub(dework, out)
-    out = BARE_ENUM_HEADING.sub("", out)
+
+    cleaned = WORK_MACRO.sub(dework, cleaned)
+    cleaned = BARE_ENUM_HEADING.sub("", cleaned)
 
     # Obsidian status hashtags -- `#complex/exercise/completed`,
     # `#algebra/qual/work` -- are the same personal study tracking as `\work` in
@@ -293,18 +353,21 @@ def strip_study_trackers(body: str, where: str = "") -> str:
     # sit appended to headings ("#### Exercise  #topology/qual/work") and list
     # items, so strip the tag and the whitespace it leaves behind.
     def detag(m: re.Match[str]) -> str:
-        tracker_log.append({"where": where, "note": m.group(0).strip(), "action": "dropped"})
+        tracker_log.append(
+            {"where": where, "note": m.group(0).strip(), "action": "dropped"}
+        )
         return ""
-    out = STATUS_HASHTAG.sub(detag, out)
+
+    cleaned = STATUS_HASHTAG.sub(detag, cleaned)
 
     # A heading emptied of its number and marker is furniture, not a section.
-    out = re.sub(r"(?m)^#{1,6}[ \t]*$\n?", "", out)
+    cleaned = re.sub(r"(?m)^#{1,6}[ \t]*$\n?", "", cleaned)
 
     # Dropping a standalone tracker leaves the blank line it sat on. Only tidy
     # bodies this function actually edited: a card's tag is sha1 of its body, so
     # collapsing whitespace unconditionally re-tags cards that contain nothing
     # personal at all -- 421 of them rather than the 164 with a marker.
-    return re.sub(r"\n{3,}", "\n\n", out) if out != body else body
+    return re.sub(r"\n{3,}", "\n\n", cleaned) if cleaned != body else body
 
 
 TODO_OPEN = re.compile(r"[ \t]*\\todo(?:\[[^\]]*\])?\{")
@@ -314,7 +377,9 @@ STATUS_HASHTAG = re.compile(r"[ \t]*#[a-z_]+/(?:qual|exercises?)/(?:work|complet
 # `## 1`, `### a`, `## 3.` -- an enumeration left behind once the marker is gone.
 # A heading that is only a problem's position in a list is not a title; the tag
 # is the identity. Headings with real text (`## 2014 Fall`) are untouched.
-BARE_ENUM_HEADING = re.compile(r"(?m)^(#{1,6})[ \t]+[0-9]+[a-z]?\.?[ \t]*$|^(#{1,6})[ \t]+[a-z]\)?\.?[ \t]*$")
+BARE_ENUM_HEADING = re.compile(
+    r"(?m)^(#{1,6})[ \t]+[0-9]+[a-z]?\.?[ \t]*$|^(#{1,6})[ \t]+[a-z]\)?\.?[ \t]*$"
+)
 
 
 def apply_ledger(ledger: Path, out: Path) -> dict:
@@ -343,9 +408,13 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
         # never changed -- 180 of them, for a personal tag that sat in a heading.
         head: list[str] = []
         rest = raw.splitlines(keepends=True)
-        while rest and (rest[0].startswith("#") or NOT_A_TITLE.match(rest[0].strip()) or not rest[0].strip()):
+        while rest and (
+            rest[0].startswith("#")
+            or NOT_A_TITLE.match(rest[0].strip())
+            or not rest[0].strip()
+        ):
             head.append(rest.pop(0))
-        if not rest:                       # nothing but furniture; leave it be
+        if not rest:  # nothing but furniture; leave it be
             page.append(strip_study_trackers(raw, relp))
             continue
         page.append(strip_study_trackers("".join(head), relp))
@@ -380,7 +449,8 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
     # a move from an edit.
     (out / "corpus" / "wiki").mkdir(parents=True, exist_ok=True)
     for t, text in cards:
-        def move(m: re.Match) -> str:
+
+        def move(m: re.Match, *, card_tag: str = t) -> str:
             found = resolve_asset(unquote(m.group(2)), src)
             if found is None:
                 unresolved.append((src.name, m.group(2)))
@@ -392,13 +462,15 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
             # guarantee would quietly weaken from "nothing changed" to "nothing
             # changed except things I decided were fine", which is not a
             # guarantee at all.
-            rewrites.append({"card": t, "from": m.group(2), "to": new})
+            rewrites.append({"card": card_tag, "from": m.group(2), "to": new})
             return f"{m.group(1)}{new}{m.group(3)}"
 
         # Rewrite only the body: the front matter is machine-read metadata and
         # an image path has no business being in it.
         cut = text.index("\n---\n", 3) + len("\n---\n")
-        (out / "corpus" / "wiki" / f"{t}.md").write_text(text[:cut] + IMAGE.sub(move, text[cut:]))
+        (out / "corpus" / "wiki" / f"{t}.md").write_text(
+            text[:cut] + IMAGE.sub(move, text[cut:])
+        )
 
     # The wiki page keeps its place in the tree. Writing by basename alone
     # collides -- qual-wiki has three `00_Resources.md`, three `000_Preface.md`
@@ -424,14 +496,22 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
             return str(m.group(0))
         depth = len(here.parts)
         new = ("../" * depth) + f"../assets/{quote(str(found[1]))}"
-        rewrites.append({"card": f"wiki:{rel_path(src)}", "from": m.group(2), "to": new})
+        rewrites.append(
+            {"card": f"wiki:{rel_path(src)}", "from": m.group(2), "to": new}
+        )
         return f"{m.group(1)}{new}{m.group(3)}"
 
     wiki_page = out / "wiki" / rel_path(src)
     wiki_page.parent.mkdir(parents=True, exist_ok=True)
     wiki_page.write_text(IMAGE.sub(move_page, page_text))
 
-    return {"source": src.name, "cards": len(cards), "page": wiki_page, "terms": terms, "area": area}
+    return {
+        "source": src.name,
+        "cards": len(cards),
+        "page": wiki_page,
+        "terms": terms,
+        "area": area,
+    }
 
 
 def main(argv: list[str]) -> int:
@@ -450,20 +530,30 @@ def main(argv: list[str]) -> int:
     total = sum(r["cards"] for r in reports)
     for r in reports:
         print(f"{r['cards']:4d} bundles  area={r['area'] or '—':16s} {r['source']}")
-    print(f"\n{total} bundle cards, {len(reports)} wiki pages, {n_assets} assets vendored -> {out}")
+    print(
+        f"\n{total} bundle cards, {len(reports)} wiki pages, {n_assets} assets vendored -> {out}"
+    )
     (out / "asset-rewrites.json").write_text(json.dumps(rewrites, indent=1))
     (out / "study-trackers.json").write_text(json.dumps(tracker_log, indent=1))
     _d = sum(1 for t in tracker_log if t["action"] == "dropped")
-    print(f"{_d} study trackers dropped, {len(tracker_log) - _d} kept as remarks; manifest at {out}/study-trackers.json")
-    print(f"{len(rewrites)} asset references rewritten; manifest at {out}/asset-rewrites.json")
+    print(
+        f"{_d} study trackers dropped, {len(tracker_log) - _d} kept as remarks; manifest at {out}/study-trackers.json"
+    )
+    print(
+        f"{len(rewrites)} asset references rewritten; manifest at {out}/asset-rewrites.json"
+    )
     if unresolved:
-        print(f"\n{len(unresolved)} asset references could not be resolved anywhere in the vault:")
+        print(
+            f"\n{len(unresolved)} asset references could not be resolved anywhere in the vault:"
+        )
         for where, ref in unresolved[:10]:
             print(f"   {ref[:58]:58s} <- {where[:40]}")
 
     seen = Counter(t for r in reports for t in r["terms"])
     if seen:
-        print(f"\n{sum(seen.values())} exam terms recorded but NOT yet made into occurrences:")
+        print(
+            f"\n{sum(seen.values())} exam terms recorded but NOT yet made into occurrences:"
+        )
         for term, n in seen.most_common(8):
             print(f"   {n:3d}  {term}")
     return 0

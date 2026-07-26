@@ -8,16 +8,18 @@ import sys
 from pathlib import Path
 
 from . import emit, index
-from .model import ParsedCard, discover, parse_card
+from .model import ParsedCard, discover, parse_cards_with
+from .pandoc_batch import PandocServer
 
 
-def load(root: Path) -> tuple[list[ParsedCard], list[str]]:
-    parsed, errors = [], []
-    for path in discover(root / "corpus"):
-        try:
-            parsed.append(parse_card(path))
-        except Exception as exc:  # schema violation in one card must not hide the rest
-            errors.append(f"{path}: {exc}")
+def load(
+    root: Path,
+    pandoc: PandocServer,
+) -> tuple[list[ParsedCard], list[str]]:
+    parsed, errors = parse_cards_with(
+        pandoc,
+        discover(root / "corpus"),
+    )
     if not errors:
         errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies"))
     return parsed, errors
@@ -29,24 +31,26 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--root", type=Path, default=Path.cwd())
     args = ap.parse_args(argv)
 
-    parsed, errors = load(args.root)
-    if errors:
-        print(f"{len(errors)} error(s):", file=sys.stderr)
-        for e in errors:
-            print(f"  {e}", file=sys.stderr)
-        return 1
-    print(f"{len(parsed)} cards OK")
-    if args.command == "check":
-        return 0
+    with PandocServer() as pandoc:
+        parsed, errors = load(args.root, pandoc)
+        if errors:
+            print(f"{len(errors)} error(s):", file=sys.stderr)
+            for error in errors:
+                print(f"  {error}", file=sys.stderr)
+            return 1
+        print(f"{len(parsed)} cards OK")
+        if args.command == "check":
+            return 0
 
-    db = args.root / "build" / "catalog.sqlite"
-    index.build(parsed, db)
-    emit.project(
-        db,
-        args.root / "build" / "quarto",
-        args.root / "publications",
-        args.root / "site",
-        json.loads((args.root / "vocabularies" / "macros.json").read_text()),
-    )
-    print(f"wrote {db} and {args.root / 'build' / 'quarto'}")
-    return 0
+        db = args.root / "build" / "catalog.sqlite"
+        index.build(parsed, db)
+        emit.project(
+            pandoc,
+            db,
+            args.root / "build" / "quarto",
+            args.root / "publications",
+            args.root / "site",
+            json.loads((args.root / "vocabularies" / "macros.json").read_text()),
+        )
+        print(f"wrote {db} and {args.root / 'build' / 'quarto'}")
+        return 0

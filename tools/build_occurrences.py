@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """Turn recorded exam terms into occurrence and source cards.
 
 Every problem the corpus imported from a qual carried an `exam_term` string in
@@ -46,7 +45,12 @@ import re
 import sys
 from pathlib import Path
 
-AREA_CODE = {"algebra": "ALG", "real-analysis": "RA", "complex-analysis": "CA", "topology": "TOP"}
+AREA_CODE = {
+    "algebra": "ALG",
+    "real-analysis": "RA",
+    "complex-analysis": "CA",
+    "topology": "TOP",
+}
 # The Prelims are the first-year exam and span areas, so their problem cards
 # carry no single area (`areas: []`). Their sittings are still real, so they get
 # their own area-agnostic source series rather than being dropped.
@@ -57,23 +61,31 @@ PRELIM_CODE = "PRELIM"
 # June). The written label is the source's identity, so it is preserved in the
 # SRC id; the schema season is derived from it separately and is deliberately
 # lossy, because academic-term is spring-or-fall only.
-PERIOD_WORD = re.compile(r"\b(spring|fall|autumn|summer|january|february|march|april|may|june|july|august|september|october|november|december)\b", re.I)
+PERIOD_WORD = re.compile(
+    r"\b(spring|fall|autumn|summer|january|february|march|april|may|june|july|august|september|october|november|december)\b",
+    re.IGNORECASE,
+)
 # Period label -> schema season, or None when the schema cannot represent it.
 # January is the spring-semester sitting, November the fall one; May/June/Summer
 # have no spring/fall home and stay year-only.
 SCHEMA_SEASON = {
-    "SPRING": "spring", "JANUARY": "spring",
-    "FALL": "fall", "AUTUMN": "fall", "NOVEMBER": "fall",
+    "SPRING": "spring",
+    "JANUARY": "spring",
+    "FALL": "fall",
+    "AUTUMN": "fall",
+    "NOVEMBER": "fall",
 }
 
-COURSE_ARTIFACT = re.compile(r"\b(midterm|final|hw|homework|practice ?exam)\b", re.I)
+COURSE_ARTIFACT = re.compile(
+    r"\b(midterm|final|hw|homework|practice ?exam)\b", re.IGNORECASE
+)
 # A trailing problem locator: "#3", ".4", " 6.1", " 3a", ", 4b", "1b,c", "Challenge 1".
 LOCATOR = re.compile(
     r"[\s,]*#?\s*(\d+[a-z]?(?:[.,]\s*\d+[a-z]?)*(?:\s*[a-z]|,\s*[a-z])*|challenge\s*\d*|extended)\s*$",
-    re.I,
+    re.IGNORECASE,
 )
 YEAR = re.compile(r"\b(19|20)\d{2}\b")
-APOS_YEAR = re.compile(r"\b(spring|fall|autumn)\s*'\s*(\d{2})\b", re.I)
+APOS_YEAR = re.compile(r"\b(spring|fall|autumn)\s*'\s*(\d{2})\b", re.IGNORECASE)
 
 
 def _b32(s: str, n: int) -> str:
@@ -111,7 +123,10 @@ def parse_term(term: str) -> list[dict]:
     # corpus are comma, semicolon and slash. Split, but keep "6b" style locators
     # that use a comma from being torn apart: only split on separators that sit
     # before another season/year-looking piece.
-    parts = re.split(r"\s*[;/]\s*|\s*,\s*(?=(?:Spring|Fall|Autumn|January|June|May|November|\d{4}|['’]\d2))", term)
+    parts = re.split(
+        r"\s*[;/]\s*|\s*,\s*(?=(?:Spring|Fall|Autumn|January|June|May|November|\d{4}|['’]\d2))",
+        term,
+    )
     for raw in parts:
         piece = raw.strip()
         if not piece:
@@ -122,17 +137,28 @@ def parse_term(term: str) -> list[dict]:
         piece = APOS_YEAR.sub(lambda x: f"{x.group(1)} 20{x.group(2)}", piece)
         piece = re.sub(r"\b20202\b", "2020", piece)  # a real source typo, 18 times
         pm = PERIOD_WORD.search(piece)
-        period = pm.group(1).upper() if pm else ("SUMMER" if "summer" in piece.lower() else None)
+        period = (
+            pm.group(1).upper()
+            if pm
+            else ("SUMMER" if "summer" in piece.lower() else None)
+        )
         ym = YEAR.search(piece)
         year = int(ym.group()) if ym else None
         # The locator is whatever problem-number trails the year, once course
         # words are removed: "January 2005 3b" -> "3b", "May 2016, 1" -> "1",
         # "Fall 2019 Midterm #7" -> "7", "2010 6.1" -> "6.1".
-        rest = piece[ym.end():] if ym else piece
-        rest = re.sub(r"\b(midterm|final|hw|homework|practice ?exam|exam|challenge|qual)\b", " ", rest, flags=re.I)
+        rest = piece[ym.end() :] if ym else piece
+        rest = re.sub(
+            r"\b(midterm|final|hw|homework|practice ?exam|exam|challenge|qual)\b",
+            " ",
+            rest,
+            flags=re.IGNORECASE,
+        )
         lm = re.search(r"(\d+[a-z]?(?:[.,]\s*\d+[a-z]?)*)", rest)
         locator = re.sub(r"\s+", "", lm.group(1)) if lm else ""
-        out.append({"period": period, "year": year, "locator": locator, "artifact": artifact})
+        out.append(
+            {"period": period, "year": year, "locator": locator, "artifact": artifact}
+        )
     return out
 
 
@@ -145,41 +171,75 @@ def date_spec(period: str | None, year: int | None) -> dict:
     return {"kind": "unknown"}
 
 
-def source_card(inst: str, kind: str, area: str | None, period, year, artifact: str) -> tuple[str, dict]:
-    ac = AREA_CODE.get(area, PRELIM_CODE)
+def source_card(
+    inst: str,
+    kind: str,
+    area: str | None,
+    period: str | None,
+    year: int | None,
+    artifact: str,
+) -> tuple[str, dict]:
+    ac = AREA_CODE[area] if area is not None else PRELIM_CODE
     areas = [area] if area else []
     if kind == "contributed-artifact":
         # A course event (midterm, homework) rather than a sitting. Its written
         # description is its provenance; a date is attached when one was given.
         slug = _b32(f"{artifact}|{area}|{period}|{year}", 6)
         sid = f"SRC-{ac}-ART-{slug}"
-        payload = {"source_kind": "contributed-artifact",
-                   "provenance": artifact or "origin unrecorded",
-                   "date": date_spec(period, year)}
+        payload = {
+            "source_kind": "contributed-artifact",
+            "provenance": artifact or "origin unrecorded",
+            "date": date_spec(period, year),
+        }
         title = f"{artifact or 'Contributed problem'} ({area or 'prelim'})"
     else:
         # The id carries the written period (SPRING, MAY, ...) so two sittings in
         # one year -- a January and a May analysis qual -- stay distinct even
         # though the schema date can only say the year for one of them.
-        tag = "-".join(x for x in (period, str(year) if year else None) if x) or "UNDATED"
+        tag = (
+            "-".join(x for x in (period, str(year) if year else None) if x) or "UNDATED"
+        )
         sid = f"SRC-{inst.upper()}-{ac}-{tag}"
-        payload = {"source_kind": "university-exam", "institution": inst,
-                   "area": area or "prelim", "date": date_spec(period, year)}
-        label = " ".join(x for x in (period.title() if period else None, str(year) if year else None) if x) or "undated"
+        payload = {
+            "source_kind": "university-exam",
+            "institution": inst,
+            "area": area or "prelim",
+            "date": date_spec(period, year),
+        }
+        label = (
+            " ".join(
+                x
+                for x in (
+                    period.title() if period else None,
+                    str(year) if year else None,
+                )
+                if x
+            )
+            or "undated"
+        )
         title = f"{inst.upper()} {area or 'prelim'} {label}"
     card = {
-        "schema": "qual/card@1", "id": sid, "kind": "source", "title": title,
-        "classification": {"areas": areas, "topics": []}, "relations": [],
-        "review": "draft", "payload": payload,
+        "schema": "qual/card@1",
+        "id": sid,
+        "kind": "source",
+        "title": title,
+        "classification": {"areas": areas, "topics": []},
+        "relations": [],
+        "review": "draft",
+        "payload": payload,
     }
     body = f"::: remark\n{title}. Recorded from the source corpus' exam-term annotations.\n:::\n"
     return sid, {"card": card, "body": body}
 
 
-def occurrence_card(problem_tag: str, area: str | None, src_id: str, locator: str, sitting_label: str) -> tuple[str, dict]:
+def occurrence_card(
+    problem_tag: str, area: str | None, src_id: str, locator: str, sitting_label: str
+) -> tuple[str, dict]:
     oid = "O-" + _b32(f"{problem_tag}|{src_id}|{locator}", 10)
     card = {
-        "schema": "qual/card@1", "id": oid, "kind": "occurrence",
+        "schema": "qual/card@1",
+        "id": oid,
+        "kind": "occurrence",
         "title": f"{problem_tag} at {sitting_label}",
         "classification": {"areas": [area] if area else [], "topics": []},
         "relations": [{"kind": "instance-of", "target": problem_tag}],
@@ -192,10 +252,9 @@ def occurrence_card(problem_tag: str, area: str | None, src_id: str, locator: st
 
 
 def render(card: dict, body: str) -> str:
-    import io
     # Deterministic YAML by hand: the schema is small and fixed, and this avoids
     # a yaml dependency reordering keys between runs.
-    def block(d, indent=0):
+    def block(d: dict, indent: int = 0) -> str:
         pad = "  " * indent
         s = ""
         for k, v in d.items():
@@ -218,7 +277,8 @@ def render(card: dict, body: str) -> str:
             else:
                 s += f"{pad}{k}: {yaml_scalar(v)}\n"
         return s
-    def yaml_scalar(v):
+
+    def yaml_scalar(v: object) -> str:
         if isinstance(v, bool):
             return "true" if v else "false"
         if isinstance(v, int):
@@ -233,7 +293,7 @@ def render(card: dict, body: str) -> str:
         needs_quote = (
             not sv
             or sv[0] in "!&*[]{}#|>@`\"'%,?-:"
-            or ":" in sv          # any colon can start a nested mapping in YAML
+            or ":" in sv  # any colon can start a nested mapping in YAML
             or sv.strip() != sv
             or sv.lower() in ("null", "true", "false", "yes", "no", "~")
             or re.fullmatch(r"-?\d+(\.\d+)?", sv) is not None
@@ -241,6 +301,7 @@ def render(card: dict, body: str) -> str:
         if needs_quote:
             return '"' + sv.replace("\\", "\\\\").replace('"', '\\"') + '"'
         return sv
+
     return "---\n" + block(card) + "---\n\n" + body
 
 
@@ -285,6 +346,7 @@ def main(argv: list[str]) -> int:
         print(f"{len(dropped)} triples dropped (no area)")
     # audit summary of date kinds
     from collections import Counter
+
     kinds = Counter(sc["card"]["payload"].get("source_kind") for sc in sources.values())
     dates = Counter(sc["card"]["payload"]["date"]["kind"] for sc in sources.values())
     print("source kinds:", dict(kinds))

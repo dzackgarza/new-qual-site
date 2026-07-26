@@ -3,47 +3,28 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-
 permissions:
   contents: read
   pages: write
   id-token: write
-
 concurrency:
   group: pages
   cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-
-    - uses: astral-sh/setup-uv@v6
-      with:
-        enable-cache: true
-
-    # Quarto bundles pandoc, which qualc build also needs.
-    - uses: quarto-dev/quarto-actions/setup@v2
-
-    - name: Install Python and project deps
-      run: uv sync --frozen
-
-    - name: Build catalog and Quarto inputs
-      run: uv run qualc build
-
-    - name: Render site
-      run: quarto render build/quarto
-
-    - name: Copy wiki into rendered site
-      run: |
-        cp -r site/_site/wiki build/quarto/_site/wiki
-        cp -r site/_site/vendor build/quarto/_site/vendor
-
-    - uses: actions/upload-pages-artifact@v3
-      with:
-        path: build/quarto/_site
-
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e
+        with:
+          enable-cache: true
+      - name: Install Python and project deps
+        run: uv sync --frozen
+      - name: Build catalog and static site
+        run: uv run qualc build
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
+        with:
+          path: build/quarto/_site
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -51,5 +32,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-    - id: deployment
-      uses: actions/deploy-pages@v4
+      - id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
