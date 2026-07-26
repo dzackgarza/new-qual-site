@@ -4,7 +4,10 @@
   const closeButton = document.querySelector("#search-close");
   const input = document.querySelector("#site-search-input");
   const results = document.querySelector("#site-search-results");
-  const searchIndexUrl = new URL(document.body.dataset.searchIndex, document.baseURI);
+  const searchIndexUrl = new URL(
+    document.body.dataset.searchIndex,
+    document.baseURI,
+  );
   let records;
 
   const loadIndex = async () => {
@@ -39,9 +42,16 @@
       const link = document.createElement("a");
       link.href = new URL(record.url, searchIndexUrl).href;
       link.textContent = record.title;
+      const metadata = document.createElement("span");
+      metadata.className = "search-result-meta";
       const kind = document.createElement("span");
+      kind.className = "search-result-kind";
       kind.textContent = record.kind;
-      item.append(link, kind);
+      const detail = document.createElement("span");
+      detail.className = "search-result-detail";
+      detail.textContent = record.detail;
+      metadata.append(kind, detail);
+      item.append(link, metadata);
       results.append(item);
     }
   };
@@ -69,7 +79,9 @@
     });
   }
 
-  const headings = [...document.querySelectorAll(".page-body h2, .page-body h3")];
+  const headings = [
+    ...document.querySelectorAll(".page-body h2, .page-body h3"),
+  ];
   const toc = document.querySelector("#page-toc");
   if (headings.length && toc) {
     const label = document.createElement("strong");

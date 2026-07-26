@@ -1,39 +1,58 @@
-# A publication manifest: an ordered composition of stable IDs and queries.
-# Reordering it, retitling a section, or swapping a query changes nothing in the
-# corpus and nothing in the problem browser.
-schema: qual/publication@1
+schema: qual/publication@2
 id: GUIDE-ALGEBRA
 kind: study-guide
-title: Algebra Qualifying Exam Review
+title: Algebra
+lede: Follow one dependency-ordered path from finite-group counting through actions
+  and Sylow theory, then apply the results without leaving the subject traversal.
 sections:
-  - title: Sylow theory
-    items:
-      - ref: D-7TQ2M
-      - query:
-          kind: problem
-          topics:
-            - groups
-          limit: 10
-  - title: Fields and Galois theory
-    items:
-      - query:
-          kind: problem
-          topics:
-            - galois-theory
-          limit: 10
-  - title: Linear algebra
-    items:
-      - query:
-          kind: problem
-          topics:
-            - linear-algebra
-          limit: 10
-  - title: Reviewed solutions, all areas
-    items:
-      - query:
-          kind: solution
-          review:
-            - reviewed
-            - verified
-          limit: 25
-          topics: []
+- slug: finite-groups
+  title: Finite Groups
+  parent: GUIDE-ALGEBRA
+  lede: Begin with subgroup indices and prime-order existence. These results constrain
+    what a finite group can contain before an action is chosen.
+  items:
+  - ref: T-SZRXI
+  - ref: T-XDMK2
+- slug: actions-and-counting
+  title: Actions and Counting
+  parent: finite-groups
+  lede: 'Turn actions into arithmetic: orbit-stabilizer counts orbits, fixed-point
+    congruences exploit p-power orbit sizes, and conjugation produces the class equation.'
+  items:
+  - ref: D-WYC7C
+  - ref: T-OBPSZ
+  - ref: L-DJKXL
+  - ref: T-4CDTT
+- slug: sylow-theory
+  title: Sylow Theory
+  parent: actions-and-counting
+  lede: 'Combine prime-power subgroups with the action tools: existence, conjugacy,
+    and the numerical constraints on the number of Sylow subgroups.'
+  items:
+  - ref: D-7TQ2M
+  - ref: T-4RADG
+  - ref: T-RRK4J
+  - ref: T-3X5FF
+- slug: applications-and-problems
+  title: Applications and Problems
+  parent: sylow-theory
+  lede: Apply the divisibility and congruence constraints first, then work from actions
+    and class equations into the linked UGA and workshop problems.
+  items:
+  - ref: ST-DKYXZ
+  - ref: P-3DGMZ
+  - ref: P-2TVO4
+  - ref: P-P3RNI
+  - ref: P-AWKNO
+  - ref: P-FKAJJ
+  - ref: P-B6EUH
+  - ref: P-DXHST
+  - ref: P-VI6QM
+  - ref: P-P2UAH
+  - ref: H-2JK8Q
+  - ref: S-4WQ1R
+  - query:
+      kind: problem
+      topics:
+      - groups
+      limit: 12

@@ -17,6 +17,7 @@ import sys
 from dataclasses import dataclass, field
 from html.parser import HTMLParser
 from pathlib import Path
+from typing import ClassVar
 from urllib.parse import urljoin
 
 import yaml
@@ -50,7 +51,18 @@ class Element:
 
 
 class SemanticHtml(HTMLParser):
-    VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta"}
+    VOID: ClassVar[set[str]] = {
+        "area",
+        "base",
+        "br",
+        "col",
+        "embed",
+        "hr",
+        "img",
+        "input",
+        "link",
+        "meta",
+    }
 
     def __init__(self, source: str) -> None:
         super().__init__()

@@ -18,6 +18,22 @@ class AssetCatalog:
     by_name: dict[str, tuple[Path, ...]]
 
 
+@dataclass(frozen=True)
+class NavigationLink:
+    key: str
+    title: str
+    target: Path
+    parent_key: str | None
+
+
+@dataclass(frozen=True)
+class PublicationNavigation:
+    links: tuple[NavigationLink, ...]
+    current_key: str
+    previous: NavigationLink | None
+    following: NavigationLink | None
+
+
 def build_asset_catalog(root: Path) -> AssetCatalog:
     by_name: dict[str, list[Path]] = {}
     for path in root.rglob("*"):
@@ -63,6 +79,108 @@ def _relative_url(relative_path: Path, target: Path) -> str:
     if start == ".":
         start = ""
     return posixpath.relpath(target.as_posix(), start=start or ".")
+
+
+def _navigation_link(
+    relative_path: Path,
+    link: NavigationLink,
+    *,
+    current: bool = False,
+    rel: str | None = None,
+) -> str:
+    attributes = [f'href="{escape(_relative_url(relative_path, link.target))}"']
+    if current:
+        attributes.append('aria-current="page"')
+    if rel is not None:
+        attributes.append(f'rel="{escape(rel)}"')
+    return f"<a {' '.join(attributes)}>{escape(link.title)}</a>"
+
+
+def _subject_tree(
+    relative_path: Path,
+    navigation: PublicationNavigation,
+) -> str:
+    children: dict[str | None, list[NavigationLink]] = {}
+    for link in navigation.links:
+        children.setdefault(link.parent_key, []).append(link)
+
+    def branch(parent: str | None) -> str:
+        items = []
+        for link in children.get(parent, []):
+            nested = branch(link.key)
+            items.append(
+                "<li>"
+                + _navigation_link(
+                    relative_path,
+                    link,
+                    current=link.key == navigation.current_key,
+                )
+                + nested
+                + "</li>"
+            )
+        return f"<ol>{''.join(items)}</ol>" if items else ""
+
+    return (
+        '<aside class="subject-sidebar">'
+        '<nav aria-label="Subject">'
+        '<strong class="subject-label">Study path</strong>'
+        f"{branch(None)}"
+        "</nav>"
+        "</aside>"
+    )
+
+
+def _breadcrumbs(
+    relative_path: Path,
+    navigation: PublicationNavigation,
+) -> str:
+    by_key = {link.key: link for link in navigation.links}
+    trail = []
+    cursor = by_key[navigation.current_key]
+    while True:
+        trail.append(cursor)
+        if cursor.parent_key is None:
+            break
+        cursor = by_key[cursor.parent_key]
+    trail.reverse()
+    return (
+        '<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>'
+        + "".join(
+            "<li>"
+            + _navigation_link(
+                relative_path,
+                link,
+                current=link.key == navigation.current_key,
+            )
+            + "</li>"
+            for link in trail
+        )
+        + "</ol></nav>"
+    )
+
+
+def _reading_order(
+    relative_path: Path,
+    navigation: PublicationNavigation,
+) -> str:
+    links = []
+    if navigation.previous is not None:
+        links.append(
+            '<span class="reading-previous"><small>Previous</small>'
+            + _navigation_link(relative_path, navigation.previous, rel="prev")
+            + "</span>"
+        )
+    if navigation.following is not None:
+        links.append(
+            '<span class="reading-following"><small>Next</small>'
+            + _navigation_link(relative_path, navigation.following, rel="next")
+            + "</span>"
+        )
+    return (
+        '<nav class="reading-order" aria-label="Reading order">'
+        + "".join(links)
+        + "</nav>"
+    )
 
 
 def _asset_source(raw_url: str, catalog: AssetCatalog) -> Path:
@@ -135,6 +253,7 @@ def page_document(
     meta: dict[str, object],
     body: str,
     mathjax_header: str,
+    navigation: PublicationNavigation | None,
 ) -> str:
     prefix = _prefix(relative_path)
     try:
@@ -146,6 +265,18 @@ def page_document(
     subtitle = raw_subtitle if isinstance(raw_subtitle, str) else ""
     subtitle_html = (
         f'<p class="page-subtitle">{escape(subtitle)}</p>' if subtitle else ""
+    )
+    subject_html = (
+        _subject_tree(relative_path, navigation) if navigation is not None else ""
+    )
+    breadcrumb_html = (
+        _breadcrumbs(relative_path, navigation) if navigation is not None else ""
+    )
+    reading_order_html = (
+        _reading_order(relative_path, navigation) if navigation is not None else ""
+    )
+    layout_class = (
+        "page-layout subject-layout" if navigation is not None else "page-layout"
     )
     return f"""<!doctype html>
 <html lang="en">
@@ -184,9 +315,11 @@ def page_document(
            placeholder="Titles, statements, proofs, topics…">
     <ol id="site-search-results"></ol>
   </dialog>
-  <div class="page-layout">
+  <div class="{layout_class}">
+    {subject_html}
     <main id="main-content">
       <header class="page-heading">
+        {breadcrumb_html}
         <h1>{escape(title)}</h1>
         {subtitle_html}
         {_metadata(meta)}
@@ -194,6 +327,7 @@ def page_document(
       <article class="page-body">
         {body}
       </article>
+      {reading_order_html}
     </main>
     <aside id="page-toc" class="page-toc" aria-label="On this page"></aside>
   </div>
@@ -210,6 +344,7 @@ def write_page(
     mathjax_header: str,
     link_targets: dict[str, Path],
     assets: AssetCatalog,
+    navigation: PublicationNavigation | None,
 ) -> None:
     path = site_root / relative_path
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -220,7 +355,15 @@ def write_page(
         link_targets,
         assets,
     )
-    path.write_text(page_document(relative_path, meta, rewritten, mathjax_header))
+    path.write_text(
+        page_document(
+            relative_path,
+            meta,
+            rewritten,
+            mathjax_header,
+            navigation,
+        )
+    )
 
 
 def write_search_index(site_root: Path, records: list[dict[str, object]]) -> None:

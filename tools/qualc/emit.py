@@ -21,6 +21,7 @@ import shutil
 import sqlite3
 from collections import Counter
 from collections.abc import Callable
+from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
 
@@ -34,8 +35,18 @@ from .pandoc_batch import (
     PandocResult,
     PandocServer,
 )
+from .publication import (
+    PublicationManifest,
+    PublicationQuery,
+    PublicationSection,
+    QueryItem,
+    ReferenceItem,
+    load_publications,
+)
 from .static_site import (
     AssetCatalog,
+    NavigationLink,
+    PublicationNavigation,
     build_asset_catalog,
     write_page,
     write_search_index,
@@ -208,6 +219,94 @@ def _blocks(card: sqlite3.Row) -> list[pf.Block]:
 # pages use the same writer boundary after Panflute composition.
 
 
+@dataclass(frozen=True)
+class Appearance:
+    target_key: str
+    title: str
+    basis: str
+
+
+def _card_relation_items(
+    rows: list[sqlite3.Row],
+) -> str:
+    if not rows:
+        return '<p class="relation-empty">None.</p>'
+    return (
+        "<ul>"
+        + "".join(
+            "<li>"
+            f'<a href="{html.escape(row["id"], quote=True)}">'
+            f"<code>{html.escape(row['id'])}</code></a>"
+            f"<span>{html.escape(row['title'])}</span>"
+            f"<small>{html.escape(row['relation_kind'])}</small>"
+            "</li>"
+            for row in rows
+        )
+        + "</ul>"
+    )
+
+
+def _appearance_items(appearances: list[Appearance]) -> str:
+    if not appearances:
+        return '<p class="relation-empty">None.</p>'
+    return (
+        "<ul>"
+        + "".join(
+            "<li>"
+            f'<a href="{html.escape(appearance.target_key, quote=True)}">'
+            f"{html.escape(appearance.title)}</a>"
+            f"<small>{html.escape(appearance.basis)}</small>"
+            "</li>"
+            for appearance in appearances
+        )
+        + "</ul>"
+    )
+
+
+def _relation_groups_json(
+    con: sqlite3.Connection,
+    card_id: str,
+    appearances: dict[str, list[Appearance]],
+) -> dict:
+    dependencies = _rows(
+        con,
+        """
+        select c.id, c.title, r.kind as relation_kind
+        from relations r join cards c on c.id=r.target_id
+        where r.source_id=? and r.kind in ('uses', 'cites', 'extracted-from')
+        order by r.kind, c.title, c.id
+        """,
+        (card_id,),
+    )
+    backlinks = _rows(
+        con,
+        """
+        select c.id, c.title, r.kind as relation_kind
+        from relations r join cards c on c.id=r.source_id
+        where r.target_id=? and r.kind != 'instance-of'
+        order by r.kind, c.title, c.id
+        """,
+        (card_id,),
+    )
+    source = (
+        '<div class="relation-groups" aria-label="Card relationships">'
+        '<section class="relation-group" data-relation-group="dependencies">'
+        "<h2>Authored dependencies</h2>"
+        f"{_card_relation_items(dependencies)}"
+        "</section>"
+        '<section class="relation-group" data-relation-group="appearances">'
+        "<h2>Derived appearances</h2>"
+        f"{_appearance_items(appearances.get(card_id, []))}"
+        "</section>"
+        '<section class="relation-group" data-relation-group="backlinks">'
+        "<h2>Backlinks</h2>"
+        f"{_card_relation_items(backlinks)}"
+        "</section>"
+        "</div>"
+    )
+    return {"t": "RawBlock", "c": ["html", source]}
+
+
 def load_json(con: sqlite3.Connection) -> tuple[dict, list]:
     """{card id -> its body block list} as raw pandoc JSON, plus the api version."""
     cache, api = {}, [1, 23]
@@ -239,7 +338,10 @@ def _dup[T](value: T) -> T:
 
 
 def problem_json(
-    con: sqlite3.Connection, card: sqlite3.Row, jcache: dict
+    con: sqlite3.Connection,
+    card: sqlite3.Row,
+    jcache: dict,
+    appearances: dict[str, list[Appearance]],
 ) -> tuple[dict, list]:
     facets = _rows(
         con,
@@ -273,6 +375,7 @@ def problem_json(
             rb = _dup(jcache[rel["id"]])
             _rename_json(rb)
             body += rb
+    body.append(_relation_groups_json(con, card["id"], appearances))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
@@ -286,10 +389,14 @@ def problem_json(
 
 
 def plain_json(
-    con: sqlite3.Connection, card: sqlite3.Row, jcache: dict
+    con: sqlite3.Connection,
+    card: sqlite3.Row,
+    jcache: dict,
+    appearances: dict[str, list[Appearance]],
 ) -> tuple[dict, list]:
     body = _dup(jcache[card["id"]])
     _rename_json(body)
+    body.append(_relation_groups_json(con, card["id"], appearances))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
@@ -353,6 +460,7 @@ def write_json_pages(
             mathjax,
             link_targets,
             assets,
+            None,
         )
 
 
@@ -424,6 +532,7 @@ def _link(
 
 
 Page = tuple[dict, list[pf.Block]]
+PageItem = tuple[Page, Path, PublicationNavigation | None]
 
 
 def _document_ast(document: pf.Doc) -> str:
@@ -447,7 +556,7 @@ def _html_ast(ast: str) -> str:
 
 def write_pages(
     pandoc: PandocServer,
-    items: list[tuple[Page, Path]],
+    items: list[PageItem],
     site_root: Path,
     mathjax: str,
     link_targets: dict[str, Path],
@@ -459,7 +568,7 @@ def write_pages(
     pandoc's markdown writer would escape it as if it were prose — `tag/P-*.qmd`
     comes back out as `tag/P-\\*.qmd` and the listing silently matches nothing.
     """
-    documents = [_page_ast(page) for page, _ in items]
+    documents = [_page_ast(page) for page, _, _ in items]
     bodies = _successful_outputs(
         pandoc.write_markdown(documents, MARKDOWN),
         "page write",
@@ -468,12 +577,13 @@ def write_pages(
         pandoc.write_html([_html_ast(document) for document in documents]),
         "page HTML write",
     )
-    for ((meta, _), path), body, html_body in zip(
+    for ((meta, _), path, navigation), body, html_body in zip(
         items,
         bodies,
         html_bodies,
         strict=True,
     ):
+        path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(
             "---\n"
             + yaml.safe_dump(
@@ -493,6 +603,7 @@ def write_pages(
             mathjax,
             link_targets,
             assets,
+            navigation,
         )
 
 
@@ -507,7 +618,10 @@ def _related(con: sqlite3.Connection, problem_id: str, kind: str) -> list[sqlite
 # --- publication manifests --------------------------------------------------
 
 
-def run_query(con: sqlite3.Connection, q: dict) -> list[sqlite3.Row]:
+def run_query(
+    con: sqlite3.Connection,
+    query: PublicationQuery,
+) -> list[sqlite3.Row]:
     """The only query surface a publication manifest gets. Deliberately small.
 
     Every key is required. A manifest that omits `limit` is a manifest whose
@@ -516,16 +630,16 @@ def run_query(con: sqlite3.Connection, q: dict) -> list[sqlite3.Row]:
     """
     sql = "select distinct c.* from cards c"
     args: list = []
-    for i, topic in enumerate(q["topics"]):
+    for i, topic in enumerate(query.topics):
         sql += f" join classifications t{i} on t{i}.card_id=c.id and t{i}.axis='topic' and t{i}.term=?"
         args.append(topic)
     sql += " where c.kind=?"
-    args.append(q["kind"])
-    if "review" in q:
-        sql += " and c.review in ({})".format(",".join("?" * len(q["review"])))
-        args += q["review"]
+    args.append(query.kind)
+    if query.review is not None:
+        sql += " and c.review in ({})".format(",".join("?" * len(query.review)))
+        args += query.review
     sql += " order by c.title limit ?"
-    args.append(q["limit"])
+    args.append(query.limit)
     return _rows(con, sql, tuple(args))
 
 
@@ -646,56 +760,200 @@ def source_page(
     ]
 
 
-def guide_page(
+def _publication_route(
+    manifest: PublicationManifest,
+    section: PublicationSection | None = None,
+) -> Path:
+    if section is None:
+        return Path("guide") / f"{manifest.id}.html"
+    return Path("guide") / manifest.id / f"{section.slug}.html"
+
+
+def _publication_target_key(
+    manifest: PublicationManifest,
+    section: PublicationSection | None = None,
+) -> str:
+    return manifest.id if section is None else f"{manifest.id}/{section.slug}"
+
+
+def _publication_navigation(
+    manifest: PublicationManifest,
+    current_key: str,
+) -> PublicationNavigation:
+    links = (
+        NavigationLink(
+            key=manifest.id,
+            title=manifest.title,
+            target=_publication_route(manifest),
+            parent_key=None,
+        ),
+        *(
+            NavigationLink(
+                key=section.slug,
+                title=section.title,
+                target=_publication_route(manifest, section),
+                parent_key=section.parent,
+            )
+            for section in manifest.sections
+        ),
+    )
+    ordered = list(links)
+    index = next(i for i, link in enumerate(ordered) if link.key == current_key)
+    return PublicationNavigation(
+        links=links,
+        current_key=current_key,
+        previous=ordered[index - 1] if index else None,
+        following=ordered[index + 1] if index + 1 < len(ordered) else None,
+    )
+
+
+def _manifest_card(
     con: sqlite3.Connection,
-    manifest: dict,
+    card_id: str,
+) -> sqlite3.Row:
+    matches = _rows(con, "select * from cards where id=?", (card_id,))
+    if not matches:
+        raise ValueError(f"publication references unknown card: {card_id}")
+    return matches[0]
+
+
+def _publication_card(
+    card: sqlite3.Row,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> list[pf.Block]:
+    card_id = html.escape(card["id"], quote=True)
+    return [
+        pf.RawBlock(
+            f'<section class="publication-card" data-card-id="{card_id}">',
+            format="html",
+        ),
+        pf.Header(
+            pf.Link(
+                *_inlines(card["title"], inline_cache),
+                url=card["id"],
+            ),
+            pf.Space(),
+            pf.Code(card["id"]),
+            level=2,
+        ),
+        *_blocks(card),
+        pf.RawBlock("</section>", format="html"),
+    ]
+
+
+def publication_root_page(
+    manifest: PublicationManifest,
+    inline_cache: dict[str, list[pf.Inline]],
+) -> Page:
+    return {"title": manifest.title}, [
+        pf.Para(
+            *_inlines(manifest.lede, inline_cache),
+        ),
+        pf.OrderedList(
+            *[
+                pf.ListItem(
+                    pf.Plain(
+                        pf.Link(
+                            *_inlines(section.title, inline_cache),
+                            url=_publication_target_key(manifest, section),
+                        )
+                    )
+                )
+                for section in manifest.sections
+            ]
+        ),
+    ]
+
+
+def publication_section_page(
+    con: sqlite3.Connection,
+    manifest: PublicationManifest,
+    section: PublicationSection,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
     blocks: list[pf.Block] = [
-        pf.Para(
-            *_inlines(
-                "Assembled from a publication manifest: an ordered list of "
-                "stable IDs and queries. Reordering it touches no card and "
-                "no catalog row.",
-                inline_cache,
-            )
-        )
+        pf.Para(*_inlines(section.lede, inline_cache)),
     ]
-    for section in manifest["sections"]:
-        blocks.append(
-            pf.Header(
-                *_inlines(section["title"], inline_cache),
-                level=2,
-            )
-        )
-        for item in section["items"]:
-            if "ref" in item:
-                blocks += _blocks(
-                    _rows(con, "select * from cards where id=?", (item["ref"],))[0]
+    for item in section.items:
+        match item:
+            case ReferenceItem(ref=card_id):
+                blocks += _publication_card(
+                    _manifest_card(con, card_id),
+                    inline_cache,
                 )
-            else:
-                hits = run_query(con, item["query"])
+            case QueryItem(query=query):
+                hits = run_query(con, query)
+                if not hits:
+                    raise ValueError(
+                        f"publication query has no matches: "
+                        f"{manifest.id}/{section.slug}"
+                    )
                 blocks.append(
                     pf.Div(
-                        pf.BulletList(
-                            *[pf.ListItem(_link(h, inline_cache)) for h in hits]
-                        )
-                        if hits
-                        else pf.Para(
-                            pf.Emph(
-                                pf.Str("No"),
-                                pf.Space(),
-                                pf.Str("matches."),
-                            )
+                        pf.Header(
+                            *_inlines("More from the catalog", inline_cache),
+                            level=2,
                         ),
-                        classes=["panel"],
+                        pf.BulletList(
+                            *[
+                                pf.ListItem(
+                                    pf.Plain(
+                                        pf.Link(
+                                            *_inlines(hit["title"], inline_cache),
+                                            url=hit["id"],
+                                        ),
+                                        pf.Space(),
+                                        pf.Code(hit["id"]),
+                                    )
+                                )
+                                for hit in hits
+                            ]
+                        ),
+                        classes=["panel", "publication-query"],
                         attributes={
-                            "query-kind": item["query"]["kind"],
+                            "query-kind": query.kind,
                             "count": str(len(hits)),
                         },
                     )
                 )
-    return {"title": manifest["title"]}, blocks
+    return {"title": section.title}, blocks
+
+
+def publication_appearances(
+    con: sqlite3.Connection,
+    manifests: list[PublicationManifest],
+) -> dict[str, list[Appearance]]:
+    appearances: dict[str, list[Appearance]] = {}
+    for manifest in manifests:
+        for section in manifest.sections:
+            target_key = _publication_target_key(manifest, section)
+            for item in section.items:
+                match item:
+                    case ReferenceItem(ref=card_id):
+                        _manifest_card(con, card_id)
+                        appearances.setdefault(card_id, []).append(
+                            Appearance(
+                                target_key=target_key,
+                                title=section.title,
+                                basis="Authored reference",
+                            )
+                        )
+                    case QueryItem(query=query):
+                        hits = run_query(con, query)
+                        if not hits:
+                            raise ValueError(
+                                f"publication query has no matches: "
+                                f"{manifest.id}/{section.slug}"
+                            )
+                        for hit in hits:
+                            appearances.setdefault(hit["id"], []).append(
+                                Appearance(
+                                    target_key=target_key,
+                                    title=section.title,
+                                    basis=f"Catalog query: {query.kind}",
+                                )
+                            )
+    return appearances
 
 
 def index_page(
@@ -921,7 +1179,7 @@ def mathjax_header(macros: dict) -> str:
 
 def _link_targets(
     con: sqlite3.Connection,
-    guides: list[dict],
+    guides: list[PublicationManifest],
 ) -> dict[str, Path]:
     targets: dict[str, Path] = {}
     for card in _rows(con, "select id, kind from cards where kind != 'occurrence'"):
@@ -930,13 +1188,18 @@ def _link_targets(
     for occurrence in _rows(con, "select id, problem_id from occurrences"):
         targets[occurrence["id"]] = Path("tag") / f"{occurrence['problem_id']}.html"
     for guide in guides:
-        targets[guide["id"]] = Path("guide") / f"{guide['id']}.html"
+        targets[_publication_target_key(guide)] = _publication_route(guide)
+        for section in guide.sections:
+            targets[_publication_target_key(guide, section)] = _publication_route(
+                guide,
+                section,
+            )
     return targets
 
 
 def _search_records(
     con: sqlite3.Connection,
-    guides: list[dict],
+    guides: list[PublicationManifest],
 ) -> list[dict[str, object]]:
     records: list[dict[str, object]] = []
     cards = _rows(
@@ -966,22 +1229,35 @@ def _search_records(
         records.append(
             {
                 "title": card["title"],
-                "kind": card["kind"],
+                "kind": "Problem" if card["kind"] == "problem" else "Card",
+                "detail": f"{card['kind']} · {card['id']}",
                 "url": f"{directory}/{card['id']}.html",
                 "search": search,
             }
         )
-    records.extend(
-        {
-            "title": guide["title"],
-            "kind": "guide",
-            "url": f"guide/{guide['id']}.html",
-            "search": " ".join(
-                [guide["title"]] + [section["title"] for section in guide["sections"]]
-            ).lower(),
-        }
-        for guide in guides
-    )
+    for guide in guides:
+        records.append(
+            {
+                "title": guide.title,
+                "kind": "Page",
+                "detail": "study guide",
+                "url": _publication_route(guide).as_posix(),
+                "search": " ".join(
+                    [guide.title, guide.lede]
+                    + [section.title for section in guide.sections]
+                ).lower(),
+            }
+        )
+        records.extend(
+            {
+                "title": section.title,
+                "kind": "Page",
+                "detail": guide.title,
+                "url": _publication_route(guide, section).as_posix(),
+                "search": (f"{guide.title} {section.title} {section.lede}").lower(),
+            }
+            for section in guide.sections
+        )
     return records
 
 
@@ -1136,10 +1412,9 @@ def project(
     for asset in ("styles.css", "app.js"):
         shutil.copy(site / asset, site_root / asset)
 
-    guides = [
-        yaml.safe_load(path.read_text()) for path in sorted(publications.glob("*.yaml"))
-    ]
+    guides = load_publications(publications)
     link_targets = _link_targets(con, guides)
+    appearances = publication_appearances(con, guides)
     assets = build_asset_catalog(site.parent / "assets")
     inline_values = [
         row["title"] for row in _rows(con, "select distinct title from cards")
@@ -1154,22 +1429,28 @@ def project(
             ),
             "Every problem in the corpus. Filter by any facet; the URL is the query.",
             "Historical sittings, each a fixed ordered list of occurrences.",
+            "More from the catalog",
         ]
     )
+    inline_values.extend(guide.title for guide in guides)
+    inline_values.extend(guide.lede for guide in guides)
     inline_values.extend(
-        section["title"] for guide in guides for section in guide["sections"]
+        value
+        for guide in guides
+        for section in guide.sections
+        for value in (section.title, section.lede)
     )
     inline_cache = build_inline_cache(pandoc, inline_values)
 
     jcache, api = load_json(con)
     tag_pages: list[tuple[Path, dict, list]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
-        meta, body = problem_json(con, card, jcache)
+        meta, body = problem_json(con, card, jcache, appearances)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     for card in _rows(
         con, "select * from cards where kind not in ('problem','source','occurrence')"
     ):
-        meta, body = plain_json(con, card, jcache)
+        meta, body = plain_json(con, card, jcache, appearances)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     write_json_pages(
         pandoc,
@@ -1181,12 +1462,13 @@ def project(
         assets,
     )
 
-    pages: list[tuple[Page, Path]] = []
+    pages: list[PageItem] = []
     for src in _rows(con, "select * from cards where kind='source'"):
         pages.append(
             (
                 source_page(con, src, inline_cache),
                 out / "exam" / f"{src['id']}.qmd",
+                None,
             )
         )
 
@@ -1207,20 +1489,36 @@ def project(
         mathjax,
         link_targets,
         assets,
+        None,
     )
 
     for guide in guides:
         pages.append(
             (
-                guide_page(con, guide, inline_cache),
-                out / "guide" / f"{guide['id']}.qmd",
+                publication_root_page(guide, inline_cache),
+                out / "guide" / f"{guide.id}.qmd",
+                _publication_navigation(guide, guide.id),
             )
+        )
+        pages.extend(
+            (
+                publication_section_page(
+                    con,
+                    guide,
+                    section,
+                    inline_cache,
+                ),
+                out / "guide" / guide.id / f"{section.slug}.qmd",
+                _publication_navigation(guide, section.slug),
+            )
+            for section in guide.sections
         )
 
     pages.append(
         (
             problem_browser_page(con, inline_cache),
             out / "problems.qmd",
+            None,
         ),
     )
     pages.append(
@@ -1239,6 +1537,7 @@ def project(
                 inline_cache,
             ),
             out / "exams.qmd",
+            None,
         ),
     )
     pages.append(
@@ -1251,8 +1550,8 @@ def project(
                             pf.ListItem(
                                 pf.Plain(
                                     pf.Link(
-                                        pf.Str(guide["title"]),
-                                        url=f"guide/{guide['id']}.html",
+                                        pf.Str(guide.title),
+                                        url=f"guide/{guide.id}.html",
                                     )
                                 )
                             )
@@ -1262,9 +1561,10 @@ def project(
                 ],
             ),
             out / "guides.qmd",
+            None,
         ),
     )
-    pages.append((index_page(pandoc, con), out / "index.qmd"))
+    pages.append((index_page(pandoc, con), out / "index.qmd", None))
     write_pages(
         pandoc,
         pages,
