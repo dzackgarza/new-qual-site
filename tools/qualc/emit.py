@@ -1357,17 +1357,17 @@ title: Generate a practice set
 
 ```{=html}
 <style>
-.gen-panel{{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start;margin-top:8px}}
-.gen-controls .grp{{margin-bottom:18px}}
-.gen-controls label.h{{display:block;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#6c757d;margin-bottom:8px}}
-.gen-controls .opt{{display:block;margin:4px 0}}
-#gen-n{{width:90px;padding:6px 8px}}
-#gen-go{{margin-top:6px;padding:10px 18px;font-weight:600;border:0;border-radius:6px;background:#2780e3;color:#fff;cursor:pointer}}
-#gen-sheet .q{{display:flex;gap:14px;margin:22px 0;page-break-inside:avoid}}
-#gen-sheet .qn{{font-weight:700;color:#2780e3;min-width:26px}}
-#gen-sheet .src{{font-size:.85em;color:#6c757d;font-style:italic;margin-top:6px}}
-#gen-sheet h2{{text-align:center;border-bottom:2px solid #333;padding-bottom:10px}}
-@media print{{.gen-controls,.navbar,#quarto-header,.quarto-title-block{{display:none!important}}.gen-panel{{display:block}}}}
+.gen-panel{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start;margin-top:8px}
+.gen-controls .grp{margin-bottom:18px}
+.gen-controls label.h{display:block;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#6c757d;margin-bottom:8px}
+.gen-controls .opt{display:block;margin:4px 0}
+#gen-n{width:90px;padding:6px 8px}
+#gen-go{margin-top:6px;padding:10px 18px;font-weight:600;border:0;border-radius:6px;background:#2780e3;color:#fff;cursor:pointer}
+#gen-sheet .q{display:flex;gap:14px;margin:22px 0;page-break-inside:avoid}
+#gen-sheet .qn{font-weight:700;color:#2780e3;min-width:26px}
+#gen-sheet .src{font-size:.85em;color:#6c757d;font-style:italic;margin-top:6px}
+#gen-sheet h2{text-align:center;border-bottom:2px solid #333;padding-bottom:10px}
+@media print{.gen-controls,.navbar,#quarto-header,.quarto-title-block{display:none!important}.gen-panel{display:block}}
 </style>
 <div class="gen-panel">
   <form class="gen-controls" onsubmit="return false">
@@ -1385,16 +1385,16 @@ title: Generate a practice set
   </div>
 </div>
 <script>
-const AREAS={{"algebra":"Algebra","real-analysis":"Real Analysis","complex-analysis":"Complex Analysis","topology":"Topology"}};
+const AREAS={"algebra":"Algebra","real-analysis":"Real Analysis","complex-analysis":"Complex Analysis","topology":"Topology"};
 const QDATA=__GENDATA__;
 const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
 document.getElementById("gen-areas").innerHTML=Object.entries(AREAS)
   .map(([k,v])=>`<label class="opt"><input type="checkbox" class="ga"
-    value="${{k}}"> ${{v}}</label>`)
+    value="${k}"> ${v}</label>`)
   .join("");
-document.getElementById("gen-inst").innerHTML='<option value="">Any</option>'+insts.map(i=>`<option value="${{i}}">${{i.toUpperCase()}}</option>`).join("");
-function sample(a,n){{a=a.slice();for(let i=a.length-1;i>0;i--){{const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}}return a.slice(0,n);}}
-document.getElementById("gen-go").onclick=()=>{{
+document.getElementById("gen-inst").innerHTML='<option value="">Any</option>'+insts.map(i=>`<option value="${i}">${i.toUpperCase()}</option>`).join("");
+function sample(a,n){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a.slice(0,n);}
+document.getElementById("gen-go").onclick=()=>{
   const areas=[...document.querySelectorAll(".ga:checked")].map(c=>c.value);
   const inst=document.getElementById("gen-inst").value;
   const n=Math.max(1,Math.min(40,+document.getElementById("gen-n").value||8));
@@ -1405,19 +1405,19 @@ document.getElementById("gen-go").onclick=()=>{{
     &&(!needSrc||q.insts.length));
   const pick=sample(pool,n);
   const sheet=document.getElementById("gen-sheet");
-  if(!pick.length){{sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}}
+  if(!pick.length){sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}
   const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst.toUpperCase():"");
-  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${{pick.length}} problems · ${{title}}</p>`+
+  sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${pick.length} problems · ${title}</p>`+
     pick.map((q,i)=>`<div class="q">
-      <div class="qn">${{i+1}}.</div>
-      <div class="qb">${{q.q.replace(/&/g,'&amp;').replace(/</g,'&lt;')}}
-        <div class="src">${{q.insts.map(x=>x.toUpperCase()).join(", ")}} ·
-          <a href="tag/${{q.id}}.html">${{q.id}}</a>
+      <div class="qn">${i+1}.</div>
+      <div class="qb">${q.q.replace(/&/g,'&amp;').replace(/</g,'&lt;')}
+        <div class="src">${q.insts.map(x=>x.toUpperCase()).join(", ")} ·
+          <a href="tag/${q.id}.html">${q.id}</a>
         </div>
       </div>
     </div>`).join("");
   if(window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise([sheet]);
-}};
+};
 document.getElementById("gen-print").onclick=()=>window.print();
 </script>
 ```
