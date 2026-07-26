@@ -76,18 +76,10 @@ def _successful_outputs(
     for index, result in enumerate(results):
         match result:
             case PandocFailure(error=error):
-                raise PandocBatchError(
-                    f"pandoc {operation} failed for item {index}: {error}"
-                )
-        warnings = [
-            message.message
-            for message in result.messages
-            if message.verbosity == "WARNING"
-        ]
+                raise PandocBatchError(f"pandoc {operation} failed for item {index}: {error}")
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
         if warnings:
-            raise ValueError(
-                f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}"
-            )
+            raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
         outputs.append(result.output)
     return outputs
 
@@ -109,19 +101,10 @@ def _successful_html_outputs(
     for index, result in enumerate(results):
         match result:
             case PandocFailure(error=error):
-                raise PandocBatchError(
-                    f"pandoc {operation} failed for item {index}: {error}"
-                )
-        warnings = [
-            message.message
-            for message in result.messages
-            if message.verbosity == "WARNING"
-            and not message.message.startswith(ignored)
-        ]
+                raise PandocBatchError(f"pandoc {operation} failed for item {index}: {error}")
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING" and not message.message.startswith(ignored)]
         if warnings:
-            raise ValueError(
-                f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}"
-            )
+            raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
         outputs.append(result.output)
     return outputs
 
@@ -196,10 +179,7 @@ def _reveal(
         locator = element.attributes.get("locator")
         if locator:
             summary += f", problem {locator}"
-    opening = (
-        f'<details class="reveal {reveal_class}"><summary>'
-        f"{html.escape(summary)}</summary>"
-    )
+    opening = f'<details class="reveal {reveal_class}"><summary>{html.escape(summary)}</summary>'
     return [
         pf.RawBlock(opening, format="html"),
         *element.content,
@@ -262,11 +242,7 @@ def _appearance_items(appearances: list[Appearance]) -> str:
     return (
         "<ul>"
         + "".join(
-            "<li>"
-            f'<a href="{html.escape(appearance.target_key, quote=True)}">'
-            f"{html.escape(appearance.title)}</a>"
-            f"<small>{html.escape(appearance.basis)}</small>"
-            "</li>"
+            f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a><small>{html.escape(appearance.basis)}</small></li>'
             for appearance in appearances
         )
         + "</ul>"
@@ -410,9 +386,7 @@ def plain_json(
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(
-            set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))
-        ),
+        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
     }
     return meta, body
 
@@ -705,9 +679,7 @@ def problem_page(
     )
     if uses:
         blocks.append(pf.Header(pf.Str("Uses"), level=2))
-        blocks.append(
-            pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses])
-        )
+        blocks.append(pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses]))
 
     return {
         "title": card["title"],
@@ -724,9 +696,7 @@ def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
     return {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(
-            set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))
-        ),
+        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
     }, _blocks(card)
 
 
@@ -916,10 +886,7 @@ def publication_section_page(
             case QueryItem(query=query):
                 hits = run_query(con, query)
                 if not hits:
-                    raise ValueError(
-                        f"publication query has no matches: "
-                        f"{manifest.id}/{section.slug}"
-                    )
+                    raise ValueError(f"publication query has no matches: {manifest.id}/{section.slug}")
                 blocks.append(
                     pf.Div(
                         pf.Header(
@@ -955,9 +922,7 @@ def publication_appearances(
     con: sqlite3.Connection,
     manifests: list[PublicationManifest],
 ) -> dict[str, list[Appearance]]:
-    appearances: dict[str, list[Appearance]] = {
-        row["id"]: [] for row in _rows(con, "select id from cards order by id")
-    }
+    appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
     for manifest in manifests:
         for section in manifest.sections:
             target_key = _publication_section_target_key(manifest, section)
@@ -975,10 +940,7 @@ def publication_appearances(
                     case QueryItem(query=query):
                         hits = run_query(con, query)
                         if not hits:
-                            raise ValueError(
-                                f"publication query has no matches: "
-                                f"{manifest.id}/{section.slug}"
-                            )
+                            raise ValueError(f"publication query has no matches: {manifest.id}/{section.slug}")
                         for hit in hits:
                             appearances[hit["id"]].append(
                                 Appearance(
@@ -1006,14 +968,9 @@ def index_page(
 
     def plural(kind: str) -> str:
         stem = kind.title()
-        return labels.get(kind) or (
-            f"{stem[:-1]}ies" if stem.endswith("y") else f"{stem}s"
-        )
+        return labels.get(kind) or (f"{stem[:-1]}ies" if stem.endswith("y") else f"{stem}s")
 
-    body = "\n".join(
-        f"| {plural(kind)} | {n} |"
-        for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
-    )
+    body = "\n".join(f"| {plural(kind)} | {n} |" for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
     output = _successful_outputs(
         pandoc.read_markdown(
             [
@@ -1037,9 +994,7 @@ def listing_page(
     lede: str,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
-    return {"title": title, "listing": listing}, [
-        pf.Para(*_inlines(lede, inline_cache))
-    ]
+    return {"title": title, "listing": listing}, [pf.Para(*_inlines(lede, inline_cache))]
 
 
 def problem_browser_page(
@@ -1099,15 +1054,12 @@ def problem_browser_page(
     return {"title": "Problems"}, [
         pf.Para(
             *_inlines(
-                "Every problem in the corpus. Filter by any facet; the URL is "
-                "the query.",
+                "Every problem in the corpus. Filter by any facet; the URL is the query.",
                 inline_cache,
             )
         ),
         pf.RawBlock(
-            '<label for="problem-filter">Filter problems</label>'
-            '<input id="problem-filter" type="search" '
-            'placeholder="Group theory, UGA, 2019…">',
+            '<label for="problem-filter">Filter problems</label><input id="problem-filter" type="search" placeholder="Group theory, UGA, 2019…">',
             format="html",
         ),
         pf.Div(*rows, classes=["problem-browser"]),
@@ -1185,30 +1137,20 @@ def mathjax_header(macros: dict) -> str:
         if not tex_name.startswith("\\") or tex_name == "\\":
             raise ValueError(f"invalid TeX macro name: {tex_name!r}")
         if not isinstance(definition, str):
-            raise TypeError(
-                f"invalid definition for TeX macro {tex_name}: {definition!r}"
-            )
+            raise TypeError(f"invalid definition for TeX macro {tex_name}: {definition!r}")
         name = tex_name[1:]
         if name in mathjax_macros:
             raise ValueError(f"duplicate MathJax macro name: {name}")
-        parameters = {
-            int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)
-        }
+        parameters = {int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)}
         if parameters:
             argument_count = max(parameters)
             expected = set(range(1, argument_count + 1))
             if parameters != expected:
-                raise ValueError(
-                    f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}"
-                )
+                raise ValueError(f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}")
             mathjax_macros[name] = [definition, argument_count]
         else:
             mathjax_macros[name] = definition
-    return (
-        "<script>\nwindow.MathJax = { tex: { macros: "
-        + json.dumps(mathjax_macros)
-        + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] } };\n</script>\n"
-    )
+    return "<script>\nwindow.MathJax = { tex: { macros: " + json.dumps(mathjax_macros) + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] } };\n</script>\n"
 
 
 def _link_targets(
@@ -1224,11 +1166,9 @@ def _link_targets(
     for guide in guides:
         targets[_publication_root_target_key(guide)] = _publication_root_route(guide)
         for section in guide.sections:
-            targets[_publication_section_target_key(guide, section)] = (
-                _publication_section_route(
-                    guide,
-                    section,
-                )
+            targets[_publication_section_target_key(guide, section)] = _publication_section_route(
+                guide,
+                section,
             )
     return targets
 
@@ -1279,10 +1219,7 @@ def _search_records(
                 "kind": "Page",
                 "detail": "study guide",
                 "url": _publication_root_route(guide).as_posix(),
-                "search": " ".join(
-                    [guide.title, guide.lede]
-                    + [section.title for section in guide.sections]
-                ).lower(),
+                "search": " ".join([guide.title, guide.lede] + [section.title for section in guide.sections]).lower(),
             }
         )
         page_records.extend(
@@ -1308,9 +1245,7 @@ def _generate_data(
     text, which loses the math) with a single batched pandoc call rather than one
     per problem, and each problem carries the areas and institutions it is filed
     under so the generator can select the way make-me-a-qual did -- by area."""
-    problems = _rows(
-        con, "select id, title, ast from cards where kind='problem' order by id"
-    )
+    problems = _rows(con, "select id, title, ast from cards where kind='problem' order by id")
     areas: dict[str, list[str]] = {problem["id"]: [] for problem in problems}
     for r in _rows(con, "select card_id, term from classifications where axis='area'"):
         if r["card_id"] in areas:
@@ -1318,8 +1253,7 @@ def _generate_data(
     insts: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
     for r in _rows(
         con,
-        "select o.problem_id pid, e.institution inst from occurrences o "
-        "join exam_sources e on e.id=o.source_id",
+        "select o.problem_id pid, e.institution inst from occurrences o join exam_sources e on e.id=o.source_id",
     ):
         if r["pid"] in insts:
             insts[r["pid"]].add(r["inst"])
@@ -1443,17 +1377,11 @@ def project(
     link_targets = _link_targets(con, guides)
     appearances = publication_appearances(con, guides)
     assets = build_asset_catalog(site.parent / "assets")
-    inline_values = [
-        row["title"] for row in _rows(con, "select distinct title from cards")
-    ]
+    inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
     inline_values.extend(
         [
             "problems, in the order they appeared.",
-            (
-                "Assembled from a publication manifest: an ordered list of "
-                "stable IDs and queries. Reordering it touches no card and no "
-                "catalog row."
-            ),
+            ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
             "Every problem in the corpus. Filter by any facet; the URL is the query.",
             "Historical sittings, each a fixed ordered list of occurrences.",
             "More from the catalog",
@@ -1461,12 +1389,7 @@ def project(
     )
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
-    inline_values.extend(
-        value
-        for guide in guides
-        for section in guide.sections
-        for value in (section.title, section.lede)
-    )
+    inline_values.extend(value for guide in guides for section in guide.sections for value in (section.title, section.lede))
     inline_cache = build_inline_cache(pandoc, inline_values)
 
     jcache, api = load_json(con)
@@ -1474,9 +1397,7 @@ def project(
     for card in _rows(con, "select * from cards where kind='problem'"):
         meta, body = problem_json(con, card, jcache, appearances)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
-    for card in _rows(
-        con, "select * from cards where kind not in ('problem','source','occurrence')"
-    ):
+    for card in _rows(con, "select * from cards where kind not in ('problem','source','occurrence')"):
         meta, body = plain_json(con, card, jcache, appearances)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     write_json_pages(
@@ -1556,9 +1477,7 @@ def project(
                 "Historical sittings, each a fixed ordered list of occurrences.",
                 _rows(
                     con,
-                    "select c.* from cards c join sources s on s.id=c.id "
-                    "join exam_sources e on e.id=s.id "
-                    "order by e.institution, s.year, c.id",
+                    "select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id order by e.institution, s.year, c.id",
                 ),
                 "exam/",
                 inline_cache,

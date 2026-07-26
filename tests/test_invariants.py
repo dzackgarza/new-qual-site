@@ -33,16 +33,11 @@ class Element:
 
     @property
     def text(self) -> str:
-        return " ".join(
-            child.text if isinstance(child, Element) else child
-            for child in self.children
-        ).strip()
+        return " ".join(child.text if isinstance(child, Element) else child for child in self.children).strip()
 
     def find_all(self, tag: str | None = None, **attrs: str) -> list[Element]:
         matches = []
-        if (tag is None or self.tag == tag) and all(
-            self.attrs.get(key) == value for key, value in attrs.items()
-        ):
+        if (tag is None or self.tag == tag) and all(self.attrs.get(key) == value for key, value in attrs.items()):
             matches.append(self)
         for child in self.children:
             if isinstance(child, Element):
@@ -110,20 +105,12 @@ def resolved_link(page: Path, href: str) -> str:
 
 def move_appearance(manifest_path: Path, card_id: str) -> None:
     manifest = yaml.safe_load(manifest_path.read_text())
-    applications = next(
-        section
-        for section in manifest["sections"]
-        if section["slug"] == "applications-and-problems"
-    )
-    sylow = next(
-        section for section in manifest["sections"] if section["slug"] == "sylow-theory"
-    )
+    applications = next(section for section in manifest["sections"] if section["slug"] == "applications-and-problems")
+    sylow = next(section for section in manifest["sections"] if section["slug"] == "sylow-theory")
     item = next(item for item in applications["items"] if item.get("ref") == card_id)
     applications["items"].remove(item)
     sylow["items"].append(item)
-    manifest_path.write_text(
-        yaml.safe_dump(manifest, sort_keys=False, allow_unicode=True)
-    )
+    manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False, allow_unicode=True))
 
 
 def catalog_rows(root: Path) -> dict[str, list[tuple]]:
@@ -135,12 +122,8 @@ def catalog_rows(root: Path) -> dict[str, list[tuple]]:
     con = sqlite3.connect(root / "build" / "catalog.sqlite")
     return {
         # source_path is excluded: it is a diagnostic, not identity
-        "cards": con.execute(
-            "select id, kind, title, review, ast from cards order by id"
-        ).fetchall(),
-        "classifications": con.execute(
-            "select * from classifications order by 1,2,3"
-        ).fetchall(),
+        "cards": con.execute("select id, kind, title, review, ast from cards order by id").fetchall(),
+        "classifications": con.execute("select * from classifications order by 1,2,3").fetchall(),
         "relations": con.execute("select * from relations order by 1,2,3").fetchall(),
         "occurrences": con.execute("select * from occurrences order by id").fetchall(),
         "sources": con.execute("select * from sources order by id").fetchall(),
@@ -190,18 +173,12 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
 
         breadcrumbs = page.root.find_all("nav", **{"aria-label": "Breadcrumb"})
         assert len(breadcrumbs) == 1
-        assert [link.text for link in breadcrumbs[0].find_all("a")] == titles[
-            : index + 1
-        ]
+        assert [link.text for link in breadcrumbs[0].find_all("a")] == titles[: index + 1]
 
         previous = page.root.find_all("a", rel="prev")
         following = page.root.find_all("a", rel="next")
-        assert [resolved_link(route, link.attrs["href"]) for link in previous] == (
-            [routes[index - 1].as_posix()] if index else []
-        )
-        assert [resolved_link(route, link.attrs["href"]) for link in following] == (
-            [routes[index + 1].as_posix()] if index + 1 < len(routes) else []
-        )
+        assert [resolved_link(route, link.attrs["href"]) for link in previous] == ([routes[index - 1].as_posix()] if index else [])
+        assert [resolved_link(route, link.attrs["href"]) for link in following] == ([routes[index + 1].as_posix()] if index + 1 < len(routes) else [])
 
     applications_route = routes[-1]
     applications = read_html(site / applications_route)
@@ -245,19 +222,11 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     generator = (site / "generate.html").read_text()
     match = re.search(r"const QDATA=(\[.*?\]);\nconst insts=", generator, re.DOTALL)
     assert match is not None
-    generator_problems = {
-        problem["id"]: problem for problem in json.loads(match.group(1))
-    }
+    generator_problems = {problem["id"]: problem for problem in json.loads(match.group(1))}
     generator_problem_ids = set(generator_problems)
     assert generator_problems["P-J3FBW"]["q"].lstrip().startswith("<ul>")
-    assert "<li>Classify the four groups of order 28.</li>" in generator_problems[
-        "P-J3FBW"
-    ]["q"]
-    generator_scripts = [
-        script.text
-        for script in read_html(site / "generate.html").root.find_all("script")
-        if "const QDATA=" in script.text
-    ]
+    assert "<li>Classify the four groups of order 28.</li>" in generator_problems["P-J3FBW"]["q"]
+    generator_scripts = [script.text for script in read_html(site / "generate.html").root.find_all("script") if "const QDATA=" in script.text]
     assert len(generator_scripts) == 1
     script_check = subprocess.run(
         ["node", "--check", "-"],
@@ -268,12 +237,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     )
     assert script_check.returncode == 0, script_check.stderr
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    catalog_problem_ids = {
-        card_id
-        for (card_id,) in con.execute(
-            "select id from cards where kind='problem' order by id"
-        )
-    }
+    catalog_problem_ids = {card_id for (card_id,) in con.execute("select id from cards where kind='problem' order by id")}
     assert generator_problem_ids == catalog_problem_ids
     assert application_problem_ids <= generator_problem_ids
 
@@ -282,9 +246,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert search["guide/GUIDE-ALGEBRA/finite-groups.html"]["kind"] == "Page"
     assert search["tag/T-SZRXI.html"]["kind"] == "Card"
     assert search["tag/P-P2UAH.html"]["kind"] == "Problem"
-    visible_sylow_results = [
-        record for record in search_records if "sylow" in record["search"]
-    ][:30]
+    visible_sylow_results = [record for record in search_records if "sylow" in record["search"]][:30]
     assert {record["kind"] for record in visible_sylow_results} == {
         "Page",
         "Card",
@@ -294,11 +256,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     problem = read_html(site / "tag" / "P-P2UAH.html")
     semantic_order = [
         next(
-            (
-                class_name
-                for class_name in element.attrs.get("class", "").split()
-                if class_name in {"qual-problem", "qual-hint", "qual-solution"}
-            ),
+            (class_name for class_name in element.attrs.get("class", "").split() if class_name in {"qual-problem", "qual-hint", "qual-solution"}),
             "",
         )
         for element in problem.starts
@@ -322,9 +280,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert len(dependency_groups) == len(appearance_groups) == len(backlink_groups) == 1
     assert "D-7TQ2M" in dependency_groups[0].text
     assert "Applications and Problems" in appearance_groups[0].text
-    assert {"H-2JK8Q", "S-4WQ1R"} <= {
-        link.text for link in backlink_groups[0].find_all("a")
-    }
+    assert {"H-2JK8Q", "S-4WQ1R"} <= {link.text for link in backlink_groups[0].find_all("a")}
 
     stable_route = site / "tag" / "P-P2UAH.html"
     assert stable_route.is_file()
@@ -342,10 +298,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert catalog_rows(work) == before
     assert stable_route.is_file()
     moved_page = read_html(site / "guide" / "GUIDE-ALGEBRA" / "sylow-theory.html")
-    moved_targets = {
-        resolved_link(routes[-2], link.attrs["href"])
-        for link in moved_page.root.find_all("a")
-    }
+    moved_targets = {resolved_link(routes[-2], link.attrs["href"]) for link in moved_page.root.find_all("a")}
     assert "tag/P-P2UAH.html" in moved_targets
 
 
@@ -354,9 +307,7 @@ def test_unknown_metadata_field_is_rejected(tmp_path: Path) -> None:
     for sub in ("corpus", "vocabularies", "publications", "site"):
         shutil.copytree(ROOT / sub, work / sub)
     card = next((work / "corpus").rglob("P-*.md"))
-    card.write_text(
-        card.read_text().replace("review: draft", "review: draft\nunivrsity: uga")
-    )
+    card.write_text(card.read_text().replace("review: draft", "review: draft\nunivrsity: uga"))
 
     result = subprocess.run(
         [sys.executable, "-m", "qualc", "check", "--root", str(work)],

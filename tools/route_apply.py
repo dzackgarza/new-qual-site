@@ -179,9 +179,7 @@ def area_of(src: Path) -> str | None:
 AUTHORED_TITLE = re.compile(r'^:{3,}[^\n]*?\btitle="([^"]*)"')
 # Lines that are page furniture rather than statement: layout macros, Obsidian
 # block anchors, bare tag lines.
-NOT_A_TITLE = re.compile(
-    r"^(\\\w+\s*$|\^[0-9a-f]{6}\s*$|#[\w/-]+\s*$|!\[[^\]]*\]\([^)]*\)\s*$)"
-)
+NOT_A_TITLE = re.compile(r"^(\\\w+\s*$|\^[0-9a-f]{6}\s*$|#[\w/-]+\s*$|!\[[^\]]*\]\([^)]*\)\s*$)")
 # A figure reference relative to the source file's own directory. Cards are
 # extracted out of that directory, so every one of these breaks on the way out.
 IMAGE = re.compile(r"(!\[[^\]]*\]\()((?!https?:|/)[^)]+)(\))")
@@ -339,9 +337,7 @@ def strip_study_trackers(body: str, where: str = "") -> str:
     # heading itself -- `## 1 $\work$` -- 4,608 times. It is not mathematics and
     # it is not a title, so it does not belong in a public heading.
     def dework(m: re.Match[str]) -> str:
-        tracker_log.append(
-            {"where": where, "note": m.group(0).strip(), "action": "dropped"}
-        )
+        tracker_log.append({"where": where, "note": m.group(0).strip(), "action": "dropped"})
         return ""
 
     cleaned = WORK_MACRO.sub(dework, cleaned)
@@ -353,9 +349,7 @@ def strip_study_trackers(body: str, where: str = "") -> str:
     # sit appended to headings ("#### Exercise  #topology/qual/work") and list
     # items, so strip the tag and the whitespace it leaves behind.
     def detag(m: re.Match[str]) -> str:
-        tracker_log.append(
-            {"where": where, "note": m.group(0).strip(), "action": "dropped"}
-        )
+        tracker_log.append({"where": where, "note": m.group(0).strip(), "action": "dropped"})
         return ""
 
     cleaned = STATUS_HASHTAG.sub(detag, cleaned)
@@ -377,9 +371,7 @@ STATUS_HASHTAG = re.compile(r"[ \t]*#[a-z_]+/(?:qual|exercises?)/(?:work|complet
 # `## 1`, `### a`, `## 3.` -- an enumeration left behind once the marker is gone.
 # A heading that is only a problem's position in a list is not a title; the tag
 # is the identity. Headings with real text (`## 2014 Fall`) are untouched.
-BARE_ENUM_HEADING = re.compile(
-    r"(?m)^(#{1,6})[ \t]+[0-9]+[a-z]?\.?[ \t]*$|^(#{1,6})[ \t]+[a-z]\)?\.?[ \t]*$"
-)
+BARE_ENUM_HEADING = re.compile(r"(?m)^(#{1,6})[ \t]+[0-9]+[a-z]?\.?[ \t]*$|^(#{1,6})[ \t]+[a-z]\)?\.?[ \t]*$")
 
 
 def apply_ledger(ledger: Path, out: Path) -> dict:
@@ -408,11 +400,7 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
         # never changed -- 180 of them, for a personal tag that sat in a heading.
         head: list[str] = []
         rest = raw.splitlines(keepends=True)
-        while rest and (
-            rest[0].startswith("#")
-            or NOT_A_TITLE.match(rest[0].strip())
-            or not rest[0].strip()
-        ):
+        while rest and (rest[0].startswith("#") or NOT_A_TITLE.match(rest[0].strip()) or not rest[0].strip()):
             head.append(rest.pop(0))
         if not rest:  # nothing but furniture; leave it be
             page.append(strip_study_trackers(raw, relp))
@@ -468,9 +456,7 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
         # Rewrite only the body: the front matter is machine-read metadata and
         # an image path has no business being in it.
         cut = text.index("\n---\n", 3) + len("\n---\n")
-        (out / "corpus" / "wiki" / f"{t}.md").write_text(
-            text[:cut] + IMAGE.sub(move, text[cut:])
-        )
+        (out / "corpus" / "wiki" / f"{t}.md").write_text(text[:cut] + IMAGE.sub(move, text[cut:]))
 
     # The wiki page keeps its place in the tree. Writing by basename alone
     # collides -- qual-wiki has three `00_Resources.md`, three `000_Preface.md`
@@ -496,9 +482,7 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
             return str(m.group(0))
         depth = len(here.parts)
         new = ("../" * depth) + f"../assets/{quote(str(found[1]))}"
-        rewrites.append(
-            {"card": f"wiki:{rel_path(src)}", "from": m.group(2), "to": new}
-        )
+        rewrites.append({"card": f"wiki:{rel_path(src)}", "from": m.group(2), "to": new})
         return f"{m.group(1)}{new}{m.group(3)}"
 
     wiki_page = out / "wiki" / rel_path(src)
@@ -530,30 +514,20 @@ def main(argv: list[str]) -> int:
     total = sum(r["cards"] for r in reports)
     for r in reports:
         print(f"{r['cards']:4d} bundles  area={r['area'] or '—':16s} {r['source']}")
-    print(
-        f"\n{total} bundle cards, {len(reports)} wiki pages, {n_assets} assets vendored -> {out}"
-    )
+    print(f"\n{total} bundle cards, {len(reports)} wiki pages, {n_assets} assets vendored -> {out}")
     (out / "asset-rewrites.json").write_text(json.dumps(rewrites, indent=1))
     (out / "study-trackers.json").write_text(json.dumps(tracker_log, indent=1))
     _d = sum(1 for t in tracker_log if t["action"] == "dropped")
-    print(
-        f"{_d} study trackers dropped, {len(tracker_log) - _d} kept as remarks; manifest at {out}/study-trackers.json"
-    )
-    print(
-        f"{len(rewrites)} asset references rewritten; manifest at {out}/asset-rewrites.json"
-    )
+    print(f"{_d} study trackers dropped, {len(tracker_log) - _d} kept as remarks; manifest at {out}/study-trackers.json")
+    print(f"{len(rewrites)} asset references rewritten; manifest at {out}/asset-rewrites.json")
     if unresolved:
-        print(
-            f"\n{len(unresolved)} asset references could not be resolved anywhere in the vault:"
-        )
+        print(f"\n{len(unresolved)} asset references could not be resolved anywhere in the vault:")
         for where, ref in unresolved[:10]:
             print(f"   {ref[:58]:58s} <- {where[:40]}")
 
     seen = Counter(t for r in reports for t in r["terms"])
     if seen:
-        print(
-            f"\n{sum(seen.values())} exam terms recorded but NOT yet made into occurrences:"
-        )
+        print(f"\n{sum(seen.values())} exam terms recorded but NOT yet made into occurrences:")
         for term, n in seen.most_common(8):
             print(f"   {n:3d}  {term}")
     return 0

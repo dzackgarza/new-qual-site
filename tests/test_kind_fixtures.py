@@ -44,22 +44,12 @@ def fixture_repo(tmp_path: Path) -> Path:
 
 def test_every_kind_has_a_fixture() -> None:
     """A kind added to the union without a fixture fails here, not silently."""
-    covered = {
-        line.split(": ", 1)[1].strip()
-        for p in FIXTURES.glob("*.md")
-        for line in p.read_text().splitlines()
-        if line.startswith("kind: ")
-    }
+    covered = {line.split(": ", 1)[1].strip() for p in FIXTURES.glob("*.md") for line in p.read_text().splitlines() if line.startswith("kind: ")}
     assert card_kinds() - covered == set()
 
 
 def test_every_source_variant_has_a_fixture() -> None:
-    variants = {
-        line.split(": ", 1)[1].strip()
-        for p in FIXTURES.glob("*.md")
-        for line in p.read_text().splitlines()
-        if line.strip().startswith("source_kind: ")
-    }
+    variants = {line.split(": ", 1)[1].strip() for p in FIXTURES.glob("*.md") for line in p.read_text().splitlines() if line.strip().startswith("source_kind: ")}
     assert variants == {"university-exam", "textbook", "contributed-artifact"}, variants
 
 
@@ -109,24 +99,13 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
         capture_output=True,
     )
     rendered = {p.stem for p in (work / "build" / "quarto").rglob("*.qmd")}
-    rendered_html = {
-        p.stem for p in (work / "build" / "quarto" / "_site").rglob("*.html")
-    }
-    ids = {
-        line.split(": ", 1)[1].strip()
-        for p in FIXTURES.glob("*.md")
-        for line in p.read_text().splitlines()
-        if line.startswith("id: ")
-    }
+    rendered_html = {p.stem for p in (work / "build" / "quarto" / "_site").rglob("*.html")}
+    ids = {line.split(": ", 1)[1].strip() for p in FIXTURES.glob("*.md") for line in p.read_text().splitlines() if line.startswith("id: ")}
     assert ids - rendered == {"OCC-INDEXP"}, ids - rendered
     assert ids - rendered_html == {"OCC-INDEXP"}, ids - rendered_html
 
     problem_page = (work / "build" / "quarto" / "tag" / "PRB-INDEXP.qmd").read_text()
-    assert "Problem 3" in problem_page, (
-        "the occurrence must render on its problem's page"
-    )
-    problem_html = (
-        work / "build" / "quarto" / "_site" / "tag" / "PRB-INDEXP.html"
-    ).read_text()
+    assert "Problem 3" in problem_page, "the occurrence must render on its problem's page"
+    problem_html = (work / "build" / "quarto" / "_site" / "tag" / "PRB-INDEXP.html").read_text()
     assert "Problem 3" in problem_html
     assert '<details class="reveal qual-solution">' in problem_html

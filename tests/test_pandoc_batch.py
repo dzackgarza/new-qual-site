@@ -67,9 +67,7 @@ def test_batch_parse_matches_isolated_pandoc(tmp_path: Path) -> None:
     parsed, errors = model.parse_cards(paths)
 
     assert errors == []
-    assert [json.loads(item.ast) for item in parsed] == [
-        _isolated_ast(path) for path in paths
-    ]
+    assert [json.loads(item.ast) for item in parsed] == [_isolated_ast(path) for path in paths]
 
 
 def test_batch_inline_parse_keeps_block_markers_inline() -> None:
@@ -88,8 +86,4 @@ def test_batch_inline_parse_keeps_block_markers_inline() -> None:
         "Str",
         "Image",
     ]
-    assert all(
-        emit.INLINE_SENTINEL not in str(inline)
-        for source in sources
-        for inline in cache[source]
-    )
+    assert all(emit.INLINE_SENTINEL not in str(inline) for source in sources for inline in cache[source])

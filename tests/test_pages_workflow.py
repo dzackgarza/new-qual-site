@@ -18,8 +18,6 @@ def test_pages_workflow_uses_the_direct_build_and_immutable_actions() -> None:
     commands = [step["run"] for step in steps if "run" in step]
 
     assert external_actions
-    assert all(
-        re.fullmatch(r"[^@]+@[0-9a-f]{40}", action) for action in external_actions
-    )
+    assert all(re.fullmatch(r"[^@]+@[0-9a-f]{40}", action) for action in external_actions)
     assert "uv run qualc build" in commands
     assert not any("quarto" in command.lower() for command in commands)

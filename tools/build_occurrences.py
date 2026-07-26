@@ -76,9 +76,7 @@ SCHEMA_SEASON = {
     "NOVEMBER": "fall",
 }
 
-COURSE_ARTIFACT = re.compile(
-    r"\b(midterm|final|hw|homework|practice ?exam)\b", re.IGNORECASE
-)
+COURSE_ARTIFACT = re.compile(r"\b(midterm|final|hw|homework|practice ?exam)\b", re.IGNORECASE)
 # A trailing problem locator: "#3", ".4", " 6.1", " 3a", ", 4b", "1b,c", "Challenge 1".
 LOCATOR = re.compile(
     r"[\s,]*#?\s*(\d+[a-z]?(?:[.,]\s*\d+[a-z]?)*(?:\s*[a-z]|,\s*[a-z])*|challenge\s*\d*|extended)\s*$",
@@ -137,11 +135,7 @@ def parse_term(term: str) -> list[dict]:
         piece = APOS_YEAR.sub(lambda x: f"{x.group(1)} 20{x.group(2)}", piece)
         piece = re.sub(r"\b20202\b", "2020", piece)  # a real source typo, 18 times
         pm = PERIOD_WORD.search(piece)
-        period = (
-            pm.group(1).upper()
-            if pm
-            else ("SUMMER" if "summer" in piece.lower() else None)
-        )
+        period = pm.group(1).upper() if pm else ("SUMMER" if "summer" in piece.lower() else None)
         ym = YEAR.search(piece)
         year = int(ym.group()) if ym else None
         # The locator is whatever problem-number trails the year, once course
@@ -156,9 +150,7 @@ def parse_term(term: str) -> list[dict]:
         )
         lm = re.search(r"(\d+[a-z]?(?:[.,]\s*\d+[a-z]?)*)", rest)
         locator = re.sub(r"\s+", "", lm.group(1)) if lm else ""
-        out.append(
-            {"period": period, "year": year, "locator": locator, "artifact": artifact}
-        )
+        out.append({"period": period, "year": year, "locator": locator, "artifact": artifact})
     return out
 
 
@@ -196,9 +188,7 @@ def source_card(
         # The id carries the written period (SPRING, MAY, ...) so two sittings in
         # one year -- a January and a May analysis qual -- stay distinct even
         # though the schema date can only say the year for one of them.
-        tag = (
-            "-".join(x for x in (period, str(year) if year else None) if x) or "UNDATED"
-        )
+        tag = "-".join(x for x in (period, str(year) if year else None) if x) or "UNDATED"
         sid = f"SRC-{inst.upper()}-{ac}-{tag}"
         payload = {
             "source_kind": "university-exam",
@@ -232,9 +222,7 @@ def source_card(
     return sid, {"card": card, "body": body}
 
 
-def occurrence_card(
-    problem_tag: str, area: str | None, src_id: str, locator: str, sitting_label: str
-) -> tuple[str, dict]:
+def occurrence_card(problem_tag: str, area: str | None, src_id: str, locator: str, sitting_label: str) -> tuple[str, dict]:
     oid = "O-" + _b32(f"{problem_tag}|{src_id}|{locator}", 10)
     card = {
         "schema": "qual/card@1",

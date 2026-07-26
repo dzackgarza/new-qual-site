@@ -34,19 +34,17 @@ from pathlib import Path
 DELETE = ["qual_progress.md", "000_My Active Problems.md", "999_Typsetting_Progress.md"]
 
 TRIM = {
-    "30_Complex_Analysis/Complex Qual Progress.md":
-        "> Index of UGA Complex Analysis qual sittings, with links to the official exam "
-        "PDFs and to the problems in this wiki. (Structured occurrence data lives in the "
-        "`O-*` / `SRC-*` cards.)\n\n",
-    "20_Real_Analysis/Real Analysis Qual Progress.md":
-        "> UGA Real Analysis qual review material and an index of sittings, with links to "
-        "official exam PDFs and to the problems in this wiki.\n\n",
+    "30_Complex_Analysis/Complex Qual Progress.md": "> Index of UGA Complex Analysis qual sittings, with links to the official exam "
+    "PDFs and to the problems in this wiki. (Structured occurrence data lives in the "
+    "`O-*` / `SRC-*` cards.)\n\n",
+    "20_Real_Analysis/Real Analysis Qual Progress.md": "> UGA Real Analysis qual review material and an index of sittings, with links to "
+    "official exam PDFs and to the problems in this wiki.\n\n",
 }
 
 
 def trim(text: str) -> str:
-    text = re.sub(r"```query.*?```\n?", "", text, flags=re.S)     # Obsidian query blocks
-    text = re.sub(r"^See #\S+.*$\n?", "", text, flags=re.M)       # personal tag-reference line
+    text = re.sub(r"```query.*?```\n?", "", text, flags=re.S)  # Obsidian query blocks
+    text = re.sub(r"^See #\S+.*$\n?", "", text, flags=re.M)  # personal tag-reference line
     text = re.sub(r"^(\s*)-\s*\[[ xX]\]\s*", r"\1- ", text, flags=re.M)  # checkboxes -> bullets
     text = re.sub(r"\s*\((stuck|unsure|unsure\?)\)", "", text, flags=re.I)
     text = re.sub(r"\n{3,}", "\n\n", text).lstrip("\n")
@@ -59,7 +57,7 @@ def drop_empty_headings(text: str) -> str:
     for i, line in enumerate(lines):
         if re.match(r"^#+\s+\S", line) and "Exams by Year" not in line and "Review Material" not in line:
             has = False
-            for nxt in lines[i + 1:]:
+            for nxt in lines[i + 1 :]:
                 if re.match(r"^#+\s", nxt):
                     break
                 if nxt.strip() and not nxt.strip().startswith(">"):
