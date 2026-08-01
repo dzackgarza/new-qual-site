@@ -1,35 +1,40 @@
 #!/usr/bin/env python3
-"""One-shot importer: make-me-a-qual YAML -> corpus cards.
+"""Reproducibly reconcile every MakeMeAQual row with the corpus.
 
-Run once to seed the proof of concept. It is not part of the build; the cards
-it writes are the authored source from that point on.
+The upstream file is an input, not an authored corpus subtree.  The default
+invocation downloads the exact revision named by ``sources/mmaq-source.yaml``
+and verifies its hash before doing any work.  ``--input`` is an explicit local
+source override for tests or an already downloaded copy; it never acts as a
+silent fallback.
 
-Two inferences it makes, both recorded here because the source data cannot
-support them directly:
-
-  * No `season` field exists. Where a (university, exam, year) run restarts its
-    numbering, the records are treated as separate sittings, since a locator
-    reset means a new exam document. Terms stay unknown.
-  * Records with `year: 0` or `year: Extra` get `date: {kind: unknown}` rather
-    than a sentinel year.
+The importer is deliberately additive.  It owns only ``corpus/imports/mmaq-total``
+and its reconciliation ledger.  Existing cards are matched by an exact
+normalized statement fingerprint; no fuzzy or similarity merge is performed.
+Legacy generated directories are retired separately, after the ledger has been
+checked by the caller.
 """
 
 from __future__ import annotations
 
+import argparse
 import base64
 import hashlib
+import json
 import re
 import shutil
 import sys
-from collections import Counter
+import urllib.request
 from pathlib import Path
+from typing import Any
 
-import panflute as pf
 import yaml
 from qualc.model import MARKDOWN
+from qualc.pandoc_batch import PandocFailure, PandocServer
 
 ROOT = Path(__file__).resolve().parent.parent
-MMAQ = Path("/home/dzack/gitclones/make-me-a-qual/Combined_Questions.yaml")
+MANIFEST_NAME = Path("sources/mmaq-source.yaml")
+OUTPUT_NAME = Path("corpus/imports/mmaq-total")
+LEDGER_NAME = Path("sources/mmaq-reconciliation.jsonl")
 
 AREA_SLUG = {
     "Algebra": "algebra",
@@ -37,24 +42,21 @@ AREA_SLUG = {
     "Complex_Analysis": "complex-analysis",
     "Topology": "topology",
 }
-AREA_ABBR = {"algebra": "ALG", "real-analysis": "RA", "complex-analysis": "CA", "topology": "TOP"}
-
-# The slice. Deliberately spans three areas, two institutions, dated and
-# undated sources, and one set of records that are exact duplicates.
-SLICE = [
-    ("UGA", "Algebra", "2018"),
-    ("UGA", "Real_Analysis", "2018"),
-    ("UW", "Algebra", "2018"),
-    ("UGA", "Complex_Analysis", "Extra"),
-]
-# Only the duplicate groups from the undated complex analysis pile, so the
-# import exercises real deduplication rather than a manufactured example.
-CA_DUPES_ONLY = True
+AREA_ABBR = {
+    "algebra": "ALG",
+    "real-analysis": "RA",
+    "complex-analysis": "CA",
+    "topology": "TOP",
+}
+VALID_TERMS = {"spring", "fall"}
+REQUIRED_ROW_KEYS = {"year", "number", "university", "exam", "tags", "question"}
 
 
-def opaque(prefix: str, *parts: str) -> str:
-    digest = hashlib.sha1("|".join(parts).encode()).digest()
-    return prefix + base64.b32encode(digest).decode()[:5]
+def opaque(prefix: str, statement: str) -> str:
+    """Return a stable, human-safe identifier for a statement."""
+
+    digest = hashlib.sha1(statement.encode("utf-8")).digest()
+    return prefix + base64.b32encode(digest).decode("ascii").rstrip("=")[:10]
 
 
 def slug(text: str) -> str:
@@ -62,222 +64,479 @@ def slug(text: str) -> str:
 
 
 def normalize(statement: str) -> str:
-    return re.sub(r"\s+", " ", statement or "").strip().lower()
+    return re.sub(r"\s+", " ", statement).strip().lower()
 
 
-def load_records() -> list[dict]:
-    records: list[dict] = yaml.safe_load(MMAQ.read_text())
-    for i, r in enumerate(records):
-        r["_seq"] = i
-        r["_uni"] = str(r["university"]).strip()
-        r["_exam"] = str(r["exam"]).strip()
-        r["_year"] = str(r["year"]).strip()
-        r["_norm"] = normalize(r["question"])
-    return records
-
-
-def select(records: list[dict]) -> list[dict]:
-    chosen = []
-    for uni, exam, year in SLICE:
-        group = [r for r in records if (r["_uni"], r["_exam"], r["_year"]) == (uni, exam, year)]
-        if exam == "Complex_Analysis" and CA_DUPES_ONLY:
-            counts = Counter(r["_norm"] for r in group)
-            wanted = [k for k, v in counts.items() if v > 1][:2]
-            group = [r for r in group if r["_norm"] in wanted]
-        chosen += group
-    return chosen
-
-
-def split_sittings(group: list[dict]) -> list[list[dict]]:
-    """A locator that stops increasing means a new exam document."""
-    sittings: list[list[dict]] = []
-    last = None
-    for r in sorted(group, key=lambda r: r["_seq"]):
-        n = r.get("number") or 0
-        if last is None or n <= last:
-            sittings.append([])
-        sittings[-1].append(r)
-        last = n
-    return sittings
-
-
-def card(meta: dict, body: str) -> str:
-    return "---\n" + yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100).strip() + "\n---\n\n" + body
-
-
-def main() -> int:
-    records = select(load_records())
-    corpus = ROOT / "corpus"
-    for sub in ("imports", "canonical"):
-        shutil.rmtree(corpus / sub, ignore_errors=True)
-
-    topics: dict[str, str] = {}
-    problems: dict[str, dict] = {}  # normalized statement -> problem card meta
-    problem_bodies: dict[str, str] = {}
-    written_occurrences = 0
-
-    for uni, exam, year in SLICE:
-        area = AREA_SLUG[exam]
-        group = [r for r in records if (r["_uni"], r["_exam"], r["_year"]) == (uni, exam, year)]
-        if not group:
-            continue
-        sittings = split_sittings(group) if year.isdigit() else [group]
-        for si, sitting in enumerate(sittings):
-            suffix = f"{uni.upper()}-{AREA_ABBR[area]}-{year if year.isdigit() else 'UNDATED'}"
-            if len(sittings) > 1:
-                suffix += f"-{chr(ord('A') + si)}"
-            source_id = f"SRC-{suffix}"
-            date = {"kind": "year", "year": int(year)} if year.isdigit() else {"kind": "unknown"}
-            src_dir = corpus / "imports" / "mmaq" / source_id.lower()
-            src_dir.mkdir(parents=True, exist_ok=True)
-            (src_dir / f"{source_id}.md").write_text(
-                card(
-                    {
-                        "schema": "qual/card@1",
-                        "id": source_id,
-                        "kind": "source",
-                        "title": f"{uni} {exam.replace('_', ' ')}"
-                        + (f" {year}" if year.isdigit() else ", undated collection")
-                        + (f" (sitting {chr(ord('A') + si)})" if len(sittings) > 1 else ""),
-                        "classification": {"areas": [area], "topics": []},
-                        "relations": [],
-                        "review": "draft",
-                        "payload": {
-                            "source_kind": "university-exam",
-                            "institution": uni.lower(),
-                            "area": area,
-                            "date": date,
-                        },
-                    },
-                    body_of(
-                        "Imported from `make-me-a-qual` `Combined_Questions.yaml`. The exam term is not recorded in that source.",
-                        "remark",
-                    ),
-                )
-            )
-
-            seen_here: set[str] = set()
-            for i, rec in enumerate(sitting, start=1):
-                if rec["_norm"] in seen_here:
-                    continue  # duplicate transcription of the same exam item
-                seen_here.add(rec["_norm"])
-                statement = (rec.get("question") or "").strip()
-                tags = [t.strip() for t in (rec.get("tags") or []) if t and t.strip()]
-                for t in tags:
-                    topics[slug(t)] = t
-                topic_ids = [slug(t) for t in tags]
-
-                known = problems.get(rec["_norm"])
-                pid = known["id"] if known else opaque("P-", rec["_norm"])
-                if known is None:
-                    problems[rec["_norm"]] = {
-                        "schema": "qual/card@1",
-                        "id": pid,
-                        "kind": "problem",
-                        "title": title_of(statement),
-                        "classification": {"areas": [area], "topics": topic_ids},
-                        "relations": [],
-                        "review": "draft",
-                    }
-                    problem_bodies[pid] = body_of(statement, "problem")
-
-                locator = str(rec.get("number") or i)
-                occ_id = f"O-{suffix}-{int(locator):02d}"
-                (src_dir / f"{occ_id}.md").write_text(
-                    card(
-                        {
-                            "schema": "qual/card@1",
-                            "id": occ_id,
-                            "kind": "occurrence",
-                            "title": f"{uni} {exam.replace('_', ' ')}" + (f" {year}" if year.isdigit() else "") + f", problem {locator}",
-                            "classification": {"areas": [area], "topics": topic_ids},
-                            "relations": [{"kind": "instance-of", "target": pid}],
-                            "review": "draft",
-                            "payload": {"source": source_id, "locator": locator},
-                        },
-                        body_of(statement, "problem"),
-                    )
-                )
-                written_occurrences += 1
-
-    canon = corpus / "canonical"
-    canon.mkdir(parents=True, exist_ok=True)
-    for meta in problems.values():
-        (canon / f"{meta['id']}.md").write_text(card(meta, problem_bodies[meta["id"]]))
-
-    write_topics(topics)
-    print(f"{len(records)} selected records -> {len(problems)} problems, {written_occurrences} occurrences, {len(topics)} topics")
-    return 0
-
-
-def _text_inlines(blocks: list, include_display: bool) -> list[pf.Inline]:
-    """Inlines from the first prose in a statement, descending into lists."""
-    out: list[pf.Inline] = []
-    for block in blocks:
-        if isinstance(block, (pf.Para, pf.Plain)):
-            text = [
-                pf.Math(i.text, format="InlineMath") if isinstance(i, pf.Math) and i.format == "DisplayMath" else i
-                for i in block.content
-                if include_display or not (isinstance(i, pf.Math) and i.format == "DisplayMath")
-            ]
-            if any(pf.stringify(i).strip() for i in text):
-                out += ([pf.Space()] if out else []) + text
-        elif hasattr(block, "content"):
-            nested = _text_inlines(list(block.content), include_display)
-            if nested:
-                out += ([pf.Space()] if out else []) + nested
-        if len(pf.stringify(pf.Plain(*out))) > 72:
-            break
-    return out
+def card(meta: dict[str, Any], body: str) -> str:
+    frontmatter = yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100).strip()
+    return f"---\n{frontmatter}\n---\n\n{body.rstrip()}\n"
 
 
 def title_of(statement: str) -> str:
-    """A first-pass display title, taken off the AST so math stays math.
+    """Take a stable, recognizable title without spawning one Pandoc per row."""
 
-    Editorial titles are a curation task; this only has to be recognizable.
-    """
-    doc = pf.convert_text(statement, input_format=MARKDOWN, output_format="panflute", standalone=True)
-    inlines = _text_inlines(list(doc.content), include_display=False)
-    if len(pf.stringify(pf.Plain(*inlines)).strip()) < 20:
-        # A statement that is mostly displayed formulas has to show one.
-        inlines = _text_inlines(list(doc.content), include_display=True)
+    first = next((line.strip() for line in statement.splitlines() if line.strip()), "")
+    first = re.sub(r"^(?:[-*+]\s+|\d+[.)]\s+)", "", first)
+    first = re.sub(r"\s+", " ", first).strip()
+    if len(first) > 72:
+        first = first[:69].rsplit(" ", 1)[0].rstrip() + "…"
+    return first or "Imported qualifying-exam problem"
 
-    kept: list[pf.Inline] = []
-    length, cut = 0, None
-    for inline in inlines:
-        if isinstance(inline, pf.Space):
-            cut = len(kept)  # last safe place to stop
-        length += len(pf.stringify(inline))
-        if length > 72 and cut:
-            kept = kept[:cut] + [pf.Str("…")]
-            break
-        kept.append(inline)
 
-    title: str = pf.convert_text(
-        pf.Plain(*kept),
-        input_format="panflute",
-        output_format="markdown",
-        extra_args=["--wrap=none"],
+def converted_bodies(pandoc: PandocServer, statements: list[str], section: str) -> list[str]:
+    """Convert a bounded batch through the repository's persistent Pandoc boundary."""
+
+    documents = [f":::{{.{section}}}\n{statement}\n:::" for statement in statements]
+    parsed = pandoc.read_markdown(documents, MARKDOWN)
+    json_documents: list[str] = []
+    for index, result in enumerate(parsed):
+        if isinstance(result, PandocFailure):
+            raise RuntimeError(f"pandoc failed while reading imported row {index + 1}: {result.error}")
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
+        if warnings:
+            raise RuntimeError(f"pandoc warned while reading imported row {index + 1}: {'; '.join(warnings)}")
+        json_documents.append(result.output)
+    written = pandoc.write_markdown(json_documents, MARKDOWN)
+    outputs: list[str] = []
+    for index, result in enumerate(written):
+        if isinstance(result, PandocFailure):
+            raise RuntimeError(f"pandoc failed while writing imported row {index + 1}: {result.error}")
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
+        if warnings:
+            raise RuntimeError(f"pandoc warned while writing imported row {index + 1}: {'; '.join(warnings)}")
+        outputs.append(result.output.rstrip() + "\n")
+    return outputs
+
+
+def _required(mapping: dict[str, Any], key: str, context: str) -> Any:
+    if key not in mapping:
+        raise ValueError(f"{context} is missing required key {key!r}")
+    return mapping[key]
+
+
+def _manifest(root: Path) -> dict[str, str]:
+    path = root / MANIFEST_NAME
+    if not path.is_file():
+        raise FileNotFoundError(f"pinned MakeMeAQual manifest is missing: {path}")
+    raw = yaml.safe_load(path.read_text())
+    if not isinstance(raw, dict):
+        raise ValueError(f"{path} must contain a YAML mapping")
+    values: dict[str, str] = {}
+    for key in ("source", "url", "revision", "sha256", "path"):
+        value = _required(raw, key, str(path))
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError(f"{path}: {key} must be a non-empty string")
+        values[key] = value.strip()
+    if len(values["sha256"]) != 64 or not re.fullmatch(r"[0-9a-f]{64}", values["sha256"]):
+        raise ValueError(f"{path}: sha256 must be 64 lowercase hexadecimal characters")
+    return values
+
+
+def _source_bytes(root: Path, input_path: Path | None) -> tuple[bytes, dict[str, str]]:
+    if input_path is not None:
+        path = input_path.expanduser().resolve()
+        if not path.is_file():
+            raise FileNotFoundError(f"explicit MakeMeAQual input is missing: {path}")
+        data = path.read_bytes()
+        return data, {
+            "source": "explicit local input",
+            "url": str(path),
+            "revision": "local-input",
+            "sha256": hashlib.sha256(data).hexdigest(),
+            "path": str(path),
+        }
+
+    manifest = _manifest(root)
+    request = urllib.request.Request(
+        manifest["url"],
+        headers={"User-Agent": "new-qual-site-mmaq-import/1"},
     )
-    return title.strip()
+    with urllib.request.urlopen(request, timeout=45) as response:
+        data = response.read()
+    actual = hashlib.sha256(data).hexdigest()
+    if actual != manifest["sha256"]:
+        raise ValueError(f"MakeMeAQual source hash mismatch: expected {manifest['sha256']}, received {actual}")
+    return data, manifest
 
 
-def body_of(statement: str, section: str) -> str:
-    """Wrap a statement in its semantic div. Written by pandoc, not by hand."""
-    blocks = pf.convert_text(statement, input_format=MARKDOWN, output_format="panflute")
-    body: str = pf.convert_text(
-        pf.Doc(pf.Div(*blocks, classes=[section])),
-        input_format="panflute",
-        output_format="markdown",
-        extra_args=["--wrap=preserve"],
-    )
-    return body + "\n"
+def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, Any]], dict[str, str]]:
+    data, source = _source_bytes(root, input_path)
+    parsed = yaml.safe_load(data)
+    if not isinstance(parsed, list) or not parsed:
+        raise ValueError("MakeMeAQual source must be a non-empty YAML list")
+    records: list[dict[str, Any]] = []
+    for sequence, raw in enumerate(parsed, start=1):
+        if not isinstance(raw, dict):
+            raise ValueError(f"MakeMeAQual row {sequence} must be a mapping")
+        missing = sorted(REQUIRED_ROW_KEYS - set(raw))
+        if missing:
+            raise ValueError(f"MakeMeAQual row {sequence} is missing keys: {', '.join(missing)}")
+        question = raw["question"]
+        tags = raw["tags"]
+        if not isinstance(question, str) or not question.strip():
+            raise ValueError(f"MakeMeAQual row {sequence} has an empty question")
+        if not isinstance(tags, list) or any(not isinstance(tag, str) or not tag.strip() for tag in tags):
+            raise ValueError(f"MakeMeAQual row {sequence} has invalid tags")
+        exam = str(raw["exam"]).strip()
+        if exam not in AREA_SLUG:
+            raise ValueError(f"MakeMeAQual row {sequence} has unknown exam area {exam!r}")
+        university = str(raw["university"]).strip()
+        year = str(raw["year"]).strip()
+        season = ""
+        if "season" in raw and raw["season"] is not None:
+            season = str(raw["season"]).strip().lower()
+        if season == "na":
+            season = ""
+        if season and season not in VALID_TERMS:
+            raise ValueError(f"MakeMeAQual row {sequence} has unknown season {season!r}")
+        records.append(
+            {
+                "sequence": sequence,
+                "year": year,
+                "number": raw["number"],
+                "university": university,
+                "exam": exam,
+                "season": season,
+                "tags": [tag.strip() for tag in tags],
+                "question": question.strip(),
+                "normalized": normalize(question),
+            }
+        )
+    return records, source
 
 
-def write_topics(topics: dict[str, str]) -> None:
-    path = ROOT / "vocabularies" / "topics.yaml"
-    entries = [{"id": k, "name": v} for k, v in sorted(topics.items())]
+def _frontmatter(path: Path) -> dict[str, Any] | None:
+    text = path.read_text()
+    if not text.startswith("---\n"):
+        return None
+    pieces = text.split("---\n", 2)
+    if len(pieces) != 3:
+        return None
+    raw = yaml.safe_load(pieces[1])
+    return raw if isinstance(raw, dict) else None
+
+
+def _problem_fingerprint(path: Path) -> str | None:
+    metadata = _frontmatter(path)
+    if metadata is None or metadata.get("kind") != "problem":
+        return None
+    text = path.read_text().split("---\n", 2)[2].strip()
+    text = re.sub(r"^:::\s*\{\.problem[^}]*\}\s*\n", "", text)
+    text = re.sub(r"\n:::\s*$", "", text)
+    return normalize(text)
+
+
+def existing_problems(root: Path) -> dict[str, list[tuple[str, str]]]:
+    by_fingerprint: dict[str, list[tuple[str, str]]] = {}
+    for path in sorted((root / "corpus").rglob("*.md")):
+        fingerprint = _problem_fingerprint(path)
+        if fingerprint is None:
+            continue
+        metadata = _frontmatter(path)
+        if metadata is None:
+            continue
+        card_id = metadata["id"]
+        if not isinstance(card_id, str) or not card_id:
+            raise ValueError(f"problem card has invalid id: {path}")
+        if fingerprint not in by_fingerprint:
+            by_fingerprint[fingerprint] = []
+        by_fingerprint[fingerprint].append((card_id, str(path.relative_to(root))))
+    return dict(by_fingerprint)
+
+
+def date_spec(year: str, season: str) -> dict[str, Any]:
+    if year == "1970" and season in VALID_TERMS:
+        return {"kind": "term", "term": season}
+    if year.isdigit() and int(year) > 0:
+        if season in VALID_TERMS:
+            return {"kind": "academic-term", "year": int(year), "term": season}
+        return {"kind": "year", "year": int(year)}
+    if season in VALID_TERMS:
+        return {"kind": "term", "term": season}
+    return {"kind": "unknown"}
+
+
+def source_key(record: dict[str, Any]) -> tuple[str, str, str, str]:
+    season = record["season"] if record["season"] else ""
+    return (record["university"].upper(), record["exam"], record["year"], season)
+
+
+def source_id(key: tuple[str, str, str, str]) -> str:
+    university, exam, year, season = key
+    year_token = slug(year).upper() or "UNKNOWN"
+    if year_token == "0":
+        year_token = "UNKNOWN"
+    if year_token == "EXTRA":
+        year_token = "EXTRA"
+    season_token = season.upper() if season else "NA"
+    return f"SRC-MMAQ-{slug(university).upper()}-{AREA_ABBR[AREA_SLUG[exam]]}-{year_token}-{season_token}"
+
+
+def source_title(key: tuple[str, str, str, str]) -> str:
+    university, exam, year, season = key
+    area = exam.replace("_", " ")
+    if year.isdigit() and int(year) > 0:
+        date = f"{year} {season.title()}" if season else year
+    elif season:
+        date = f"undated year ({season.title()})"
+    else:
+        date = "undated collection"
+    return f"{university} {area} {date}"
+
+
+def topic_registry(root: Path, records: list[dict[str, Any]]) -> None:
+    path = root / "vocabularies/topics.yaml"
+    existing_raw: Any = []
+    if path.exists():
+        existing_raw = yaml.safe_load(path.read_text())
+    if not isinstance(existing_raw, list):
+        raise ValueError(f"{path} must contain a YAML list")
+    names: dict[str, str] = {}
+    for item in existing_raw:
+        if not isinstance(item, dict) or "id" not in item or "name" not in item:
+            raise ValueError(f"{path} contains a malformed topic entry")
+        topic_id = item["id"]
+        topic_name = item["name"]
+        if not isinstance(topic_id, str) or not isinstance(topic_name, str):
+            raise ValueError(f"{path} contains a non-string topic entry")
+        names[topic_id] = topic_name
+    for record in records:
+        for topic_name in record["tags"]:
+            topic_id = slug(topic_name)
+            if not topic_id:
+                raise ValueError(f"empty topic slug for {topic_name!r}")
+            if topic_id in names and names[topic_id] != topic_name:
+                if names[topic_id].casefold() != topic_name.casefold():
+                    raise ValueError(f"topic slug collision: {topic_id!r} names {names[topic_id]!r} and {topic_name!r}")
+                continue
+            names[topic_id] = topic_name
+    entries = [{"id": topic_id, "name": names[topic_id]} for topic_id in sorted(names)]
     path.write_text("# Topics. A registry, not a schema enum: a new topic is a new entry here.\n" + yaml.safe_dump(entries, sort_keys=False, allow_unicode=True))
+
+
+def write_source(
+    path: Path,
+    key: tuple[str, str, str, str],
+    count: int,
+    source: dict[str, str],
+    body: str,
+) -> None:
+    university, exam, year, season = key
+    area = AREA_SLUG[exam]
+    metadata = {
+        "schema": "qual/card@1",
+        "id": source_id(key),
+        "kind": "source",
+        "title": source_title(key),
+        "classification": {"areas": [area], "topics": []},
+        "relations": [],
+        "review": "draft",
+        "payload": {
+            "source_kind": "university-exam",
+            "institution": university.lower(),
+            "area": area,
+            "date": date_spec(year, season),
+        },
+    }
+    path.write_text(card(metadata, body))
+
+
+def write_problem(
+    path: Path,
+    statement: str,
+    area: str,
+    topics: list[str],
+    problem_id: str,
+    body: str,
+) -> None:
+    metadata = {
+        "schema": "qual/card@1",
+        "id": problem_id,
+        "kind": "problem",
+        "title": title_of(statement),
+        "classification": {"areas": [area], "topics": topics},
+        "relations": [],
+        "review": "draft",
+    }
+    path.write_text(card(metadata, body))
+
+
+def write_occurrence(
+    path: Path,
+    record: dict[str, Any],
+    source: str,
+    problem_id: str,
+    occurrence_id: str,
+    body: str,
+) -> None:
+    area = AREA_SLUG[record["exam"]]
+    topics = list(dict.fromkeys(slug(tag) for tag in record["tags"]))
+    number = str(record["number"])
+    locator = number if number not in {"", "0"} else f"row-{record['sequence']:04d}"
+    metadata = {
+        "schema": "qual/card@1",
+        "id": occurrence_id,
+        "kind": "occurrence",
+        "title": f"{source_title(source_key(record))}, problem {locator}",
+        "classification": {"areas": [area], "topics": topics},
+        "relations": [{"kind": "instance-of", "target": problem_id}],
+        "review": "draft",
+        "payload": {"source": source, "locator": locator},
+    }
+    path.write_text(card(metadata, body))
+
+
+def reconcile(
+    root: Path,
+    records: list[dict[str, Any]],
+    source: dict[str, str],
+    pandoc: PandocServer,
+) -> dict[str, int]:
+    output = root / OUTPUT_NAME
+    if output.exists():
+        if not output.is_dir():
+            raise ValueError(f"import output is not a directory: {output}")
+        for child in output.iterdir():
+            if child.is_dir():
+                shutil.rmtree(child)
+            else:
+                child.unlink()
+    output.mkdir(parents=True, exist_ok=True)
+
+    old = existing_problems(root)
+    used_ids = {card_id for candidates in old.values() for card_id, _ in candidates}
+    problem_ids: dict[str, str] = {}
+    problem_matches: dict[str, str] = {}
+    problem_legacy: dict[str, list[tuple[str, str]]] = {}
+    problem_details: dict[str, tuple[str, list[str]]] = {}
+
+    groups: dict[tuple[str, str, str, str], list[dict[str, Any]]] = {}
+    for record in records:
+        key = source_key(record)
+        if key not in groups:
+            groups[key] = []
+        groups[key].append(record)
+
+    for record in records:
+        fingerprint = record["normalized"]
+        if fingerprint not in problem_ids:
+            candidates = old[fingerprint] if fingerprint in old else []
+            if len(candidates) == 1:
+                problem_id, _ = candidates[0]
+                match = "existing-exact"
+                legacy = candidates
+            elif len(candidates) > 1:
+                problem_id = opaque("P-MMAQ-", fingerprint)
+                match = "ambiguous-exact"
+                legacy = candidates
+            else:
+                problem_id = opaque("P-MMAQ-", fingerprint)
+                match = "new"
+                legacy = []
+            while problem_id in used_ids and not (len(candidates) == 1 and problem_id == candidates[0][0]):
+                problem_id = opaque("P-MMAQ-", fingerprint + problem_id)
+            used_ids.add(problem_id)
+            problem_ids[fingerprint] = problem_id
+            problem_matches[fingerprint] = match
+            problem_legacy[fingerprint] = legacy
+            area = AREA_SLUG[record["exam"]]
+            topics = list(dict.fromkeys(slug(tag) for tag in record["tags"]))
+            problem_details[fingerprint] = (area, topics)
+
+    unique_fingerprints = list(problem_ids)
+    unique_statements = [next(record["question"] for record in records if record["normalized"] == fingerprint) for fingerprint in unique_fingerprints]
+    problem_bodies = dict(zip(unique_fingerprints, converted_bodies(pandoc, unique_statements, "problem"), strict=True))
+    # Occurrence cards carry the source appearance in their envelope; the
+    # statement itself remains a problem section, matching the existing corpus
+    # convention and the renderer's occurrence reveal handling.
+    occurrence_bodies = converted_bodies(pandoc, [record["question"] for record in records], "problem")
+
+    source_body_texts: list[str] = []
+    source_keys = list(groups)
+    for key in source_keys:
+        source_body_texts.append(
+            f"Imported from [`{source['source']}`]({source['url']}) at revision "
+            f"`{source['revision']}`. The verified source SHA-256 is `{source['sha256']}`. "
+            f"This source group contains {len(groups[key])} rows; no exam-term inference was made beyond "
+            "the explicit `season` value."
+        )
+    source_bodies = dict(zip(source_keys, converted_bodies(pandoc, source_body_texts, "remark"), strict=True))
+
+    for fingerprint, problem_id in problem_ids.items():
+        if problem_matches[fingerprint] != "existing-exact":
+            area, topics = problem_details[fingerprint]
+            statement = next(record["question"] for record in records if record["normalized"] == fingerprint)
+            write_problem(output / f"{problem_id}.md", statement, area, topics, problem_id, problem_bodies[fingerprint])
+
+    for key, group in groups.items():
+        write_source(output / f"{source_id(key)}.md", key, len(group), source, source_bodies[key])
+
+    ledger: list[dict[str, Any]] = []
+    for record in records:
+        fingerprint = record["normalized"]
+        problem_id = problem_ids[fingerprint]
+        occurrence_id = f"O-MMAQ-{record['sequence']:06d}"
+        write_occurrence(
+            output / f"{occurrence_id}.md",
+            record,
+            source_id(source_key(record)),
+            problem_id,
+            occurrence_id,
+            occurrence_bodies[record["sequence"] - 1],
+        )
+        legacy = problem_legacy[fingerprint]
+        ledger.append(
+            {
+                "row": record["sequence"],
+                "source_key": list(source_key(record)),
+                "source_id": source_id(source_key(record)),
+                "problem_id": problem_id,
+                "occurrence_id": occurrence_id,
+                "locator": str(record["number"]) if str(record["number"]) not in {"", "0"} else f"row-{record['sequence']:04d}",
+                "statement_sha256": hashlib.sha256(record["question"].encode("utf-8")).hexdigest(),
+                "match": problem_matches[fingerprint],
+                "legacy_problem_ids": [card_id for card_id, _ in legacy],
+                "legacy_problem_paths": [path for _, path in legacy],
+                "source_revision": source["revision"],
+                "source_sha256": source["sha256"],
+            }
+        )
+
+    ledger_path = root / LEDGER_NAME
+    ledger_path.parent.mkdir(parents=True, exist_ok=True)
+    ledger_path.write_text("".join(json.dumps(item, sort_keys=True) + "\n" for item in ledger))
+    topic_registry(root, records)
+
+    summary = {
+        "source": source,
+        "rows": len(records),
+        "source_groups": len(groups),
+        "unique_statements": len(problem_ids),
+        "existing_exact": sum(1 for value in problem_matches.values() if value == "existing-exact"),
+        "ambiguous_exact": sum(1 for value in problem_matches.values() if value == "ambiguous-exact"),
+        "new_problems": sum(1 for value in problem_matches.values() if value == "new"),
+        "occurrences": len(records),
+    }
+    (output / "manifest.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n")
+    return {key: value for key, value in summary.items() if isinstance(value, int)}
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(prog="import_mmaq")
+    parser.add_argument("--root", type=Path, default=ROOT)
+    parser.add_argument("--input", type=Path)
+    args = parser.parse_args(argv)
+    root = args.root.resolve()
+    records, source = load_records(root, args.input)
+    with PandocServer() as pandoc:
+        counts = reconcile(root, records, source, pandoc)
+    print(
+        f"{counts['rows']} source rows -> {counts['unique_statements']} unique problems, "
+        f"{counts['occurrences']} occurrences across {counts['source_groups']} source groups "
+        f"({counts['existing_exact']} exact existing, {counts['new_problems']} new, "
+        f"{counts['ambiguous_exact']} ambiguous)"
+    )
+    return 0
 
 
 if __name__ == "__main__":

@@ -44,7 +44,7 @@ Look at past prelims/quals:
 
 Dive into some topics here:
 
-- [[Prelim Resources]]
+- [[00_Prelims/Prelim Resources]]
 - [[010_Algebra]]
 - [[020_Real Analysis]]
 - [[030_Complex Analysis]]

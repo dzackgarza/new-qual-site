@@ -1,0 +1,22 @@
+---
+schema: qual/card@1
+id: P-MMAQ-2U22PXH5Q6
+kind: problem
+title: 'Let $(X, d)$ and $(Y, \rho)$ be metric spaces, $f: X\to Y$, and $x_0…'
+classification:
+  areas:
+  - real-analysis
+  topics:
+  - completeness
+relations: []
+review: draft
+---
+
+::: problem
+Let $(X, d)$ and $(Y, \rho)$ be metric spaces, $f: X\to Y$, and $x_0 \in X$.
+
+Prove that the following statements are equivalent:
+
+1.  For every $\varepsilon > 0 \quad \exists \delta > 0$ such that $\rho( f(x), f(x_0)  ) < \varepsilon$ whenever $d(x, x_0) < \delta$.
+2.  The sequence $\theset{f(x_n)}_{n=1}^\infty \to f(x_0)$ for every sequence $\theset{x_n} \to x_0$ in $X$.
+:::

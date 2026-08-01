@@ -34,9 +34,9 @@ test:
 query sql: build
     @sqlite3 -box build/catalog.sqlite {{ quote(sql) }}
 
-# Re-seed the corpus from make-me-a-qual (one-shot; overwrites imports/ and canonical/)
+# Reconcile every pinned make-me-a-qual row (additive; legacy generated imports stay until audited)
 import:
-    uv run python tools/import_mmaq.py
+    uv run python tools/import_mmaq.py --root .
 
 # Refresh the MathJax macro set from pandoc-config
 macros:

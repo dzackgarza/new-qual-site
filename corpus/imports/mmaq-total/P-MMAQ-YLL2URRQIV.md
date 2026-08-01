@@ -1,0 +1,24 @@
+---
+schema: qual/card@1
+id: P-MMAQ-YLL2URRQIV
+kind: problem
+title: Let $X$ be a topological space.
+classification:
+  areas:
+  - topology
+  topics:
+  - point-set
+  - compactness
+relations: []
+review: draft
+---
+
+::: problem
+Let $X$ be a topological space.
+
+i.  State what it means for $X$ to be compact.
+
+ii. Let $X = \theset{0} \cup \theset{{1\over n} \mid n \in \ZZ^+ }$. Is $X$ compact?
+
+iii. Let $X = (0, 1]$. Is $X$ compact?
+:::
