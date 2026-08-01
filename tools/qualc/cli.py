@@ -10,19 +10,37 @@ from pathlib import Path
 from . import emit, index
 from .model import ParsedCard, discover, parse_cards_with
 from .pandoc_batch import PandocServer
+from .static_site import build_asset_catalog
+from .wiki import WikiPage, parse_pages, resolve_links
 
 
 def load(
     root: Path,
     pandoc: PandocServer,
-) -> tuple[list[ParsedCard], list[str]]:
+) -> tuple[list[ParsedCard], list[WikiPage], list[str]]:
     parsed, errors = parse_cards_with(
         pandoc,
         discover(root / "corpus"),
     )
     if not errors:
         errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies"))
-    return parsed, errors
+    wiki_pages: list[WikiPage] = []
+    if not errors:
+        wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki")
+        errors.extend(wiki_errors)
+        card_routes = {}
+        for item in parsed:
+            if item.card.kind == "source":
+                card_routes[item.card.id] = Path("exam") / f"{item.card.id}.html"
+            elif item.card.kind == "occurrence":
+                target = next(relation.target for relation in item.card.relations if relation.kind == "instance-of")
+                card_routes[item.card.id] = Path("tag") / f"{target}.html"
+            else:
+                card_routes[item.card.id] = Path("tag") / f"{item.card.id}.html"
+        if wiki_pages:
+            assets = build_asset_catalog(root / "assets")
+            errors.extend(resolve_links(wiki_pages, card_routes, assets))
+    return parsed, wiki_pages, errors
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -32,13 +50,13 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
 
     with PandocServer() as pandoc:
-        parsed, errors = load(args.root, pandoc)
+        parsed, wiki_pages, errors = load(args.root, pandoc)
         if errors:
             print(f"{len(errors)} error(s):", file=sys.stderr)
             for error in errors:
                 print(f"  {error}", file=sys.stderr)
             return 1
-        print(f"{len(parsed)} cards OK")
+        print(f"{len(parsed)} cards and {len(wiki_pages)} wiki pages OK")
         if args.command == "check":
             return 0
 
@@ -51,6 +69,7 @@ def main(argv: list[str] | None = None) -> int:
             args.root / "publications",
             args.root / "site",
             json.loads((args.root / "vocabularies" / "macros.json").read_text()),
+            wiki_pages,
         )
         print(f"wrote {db} and {args.root / 'build' / 'quarto'}")
         return 0

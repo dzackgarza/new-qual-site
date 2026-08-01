@@ -273,6 +273,15 @@ def _rewrite_body(
 ) -> str:
     pattern = re.compile(r'(?P<attribute>href|src)="(?P<url>[^"]+)"')
 
+    def asset_url(raw_url: str) -> tuple[Path, str]:
+        source = _asset_source(raw_url, assets)
+        target = Path("assets") / source.relative_to(assets.root)
+        destination = site_root / target
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        if not destination.exists():
+            os.link(source, destination)
+        return target, _relative_url(relative_path, target)
+
     def replace(match: re.Match[str]) -> str:
         attribute = match.group("attribute")
         raw_url = match.group("url")
@@ -285,14 +294,13 @@ def _rewrite_body(
             if parsed.fragment:
                 rewritten += f"#{parsed.fragment}"
             return f'href="{escape(rewritten, quote=True)}"'
+        if attribute == "href" and parsed.path.startswith("assets/"):
+            _, rewritten = asset_url(raw_url)
+            if parsed.fragment:
+                rewritten += f"#{parsed.fragment}"
+            return f'href="{escape(rewritten, quote=True)}"'
         if attribute == "src":
-            source = _asset_source(raw_url, assets)
-            target = Path("assets") / source.relative_to(assets.root)
-            destination = site_root / target
-            destination.parent.mkdir(parents=True, exist_ok=True)
-            if not destination.exists():
-                os.link(source, destination)
-            rewritten = _relative_url(relative_path, target)
+            _, rewritten = asset_url(raw_url)
             return f'src="{escape(rewritten, quote=True)}"'
         return match.group(0)
 
@@ -348,6 +356,7 @@ def page_document(
         <a href="{prefix}generate.html">Generate</a>
         <a href="{prefix}exams.html">Exams</a>
         <a href="{prefix}guides.html">Guides</a>
+        <a href="{prefix}wiki/index.html">Wiki</a>
       </div>
       <button id="search-open" class="search-open" type="button" aria-haspopup="dialog">
         Search <kbd>/</kbd>

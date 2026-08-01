@@ -61,6 +61,21 @@ from .static_site import (
     write_page,
     write_search_index,
 )
+from .wiki import (
+    WIKI_BATCH_SIZE,
+    WikiPage,
+)
+from .wiki import (
+    link_targets as wiki_link_targets,
+)
+from .wiki import (
+    search_records as wiki_search_records,
+)
+
+KNOWN_PANDOC_WARNINGS = (
+    "Could not load translations for en-US",
+    "The term Abstract has no translation defined.",
+)
 
 
 def _rows(con: sqlite3.Connection, sql: str, args: tuple = ()) -> list[sqlite3.Row]:
@@ -71,13 +86,14 @@ def _rows(con: sqlite3.Connection, sql: str, args: tuple = ()) -> list[sqlite3.R
 def _successful_outputs(
     results: list[PandocResult],
     operation: str,
+    ignored: tuple[str, ...] = KNOWN_PANDOC_WARNINGS,
 ) -> list[str]:
     outputs: list[str] = []
     for index, result in enumerate(results):
         match result:
             case PandocFailure(error=error):
                 raise PandocBatchError(f"pandoc {operation} failed for item {index}: {error}")
-        warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING" and not message.message.startswith(ignored)]
         if warnings:
             raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
         outputs.append(result.output)
@@ -93,16 +109,12 @@ def _successful_html_outputs(
     Fragment HTML does not use either localized value, but Pandoc's HTML writer
     still attempts to load them. Every content warning remains fatal.
     """
-    ignored = (
-        "Could not load translations for en-US",
-        "The term Abstract has no translation defined.",
-    )
     outputs: list[str] = []
     for index, result in enumerate(results):
         match result:
             case PandocFailure(error=error):
                 raise PandocBatchError(f"pandoc {operation} failed for item {index}: {error}")
-        warnings = [message.message for message in result.messages if message.verbosity == "WARNING" and not message.message.startswith(ignored)]
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING" and not message.message.startswith(KNOWN_PANDOC_WARNINGS)]
         if warnings:
             raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
         outputs.append(result.output)
@@ -1093,7 +1105,7 @@ QUARTO_YML = {
                 {"href": "generate.qmd", "text": "Generate"},
                 {"href": "exams.qmd", "text": "Exams"},
                 {"href": "guides.qmd", "text": "Guides"},
-                {"href": "wiki/000-solution-compendia.html", "text": "Wiki"},
+                {"href": "wiki/index.qmd", "text": "Wiki"},
             ]
         },
         "search": {"location": "navbar", "type": "overlay"},
@@ -1158,17 +1170,22 @@ def _link_targets(
     guides: list[PublicationManifest],
 ) -> dict[str, Path]:
     targets: dict[str, Path] = {}
+
+    def add(key: str, target: Path) -> None:
+        targets[key] = target
+        targets[target.as_posix()] = target
+
     for card in _rows(con, "select id, kind from cards where kind != 'occurrence'"):
         directory = "exam" if card["kind"] == "source" else "tag"
-        targets[card["id"]] = Path(directory) / f"{card['id']}.html"
+        add(card["id"], Path(directory) / f"{card['id']}.html")
     for occurrence in _rows(con, "select id, problem_id from occurrences"):
-        targets[occurrence["id"]] = Path("tag") / f"{occurrence['problem_id']}.html"
+        add(occurrence["id"], Path("tag") / f"{occurrence['problem_id']}.html")
     for guide in guides:
-        targets[_publication_root_target_key(guide)] = _publication_root_route(guide)
+        add(_publication_root_target_key(guide), _publication_root_route(guide))
         for section in guide.sections:
-            targets[_publication_section_target_key(guide, section)] = _publication_section_route(
-                guide,
-                section,
+            add(
+                _publication_section_target_key(guide, section),
+                _publication_section_route(guide, section),
             )
     return targets
 
@@ -1176,6 +1193,7 @@ def _link_targets(
 def _search_records(
     con: sqlite3.Connection,
     guides: list[PublicationManifest],
+    wiki_pages: list[WikiPage] | None = None,
 ) -> list[dict[str, object]]:
     card_records: list[dict[str, object]] = []
     cards = _rows(
@@ -1232,7 +1250,22 @@ def _search_records(
             }
             for section in guide.sections
         )
-    return page_records + card_records
+    return wiki_search_records(wiki_pages or []) + page_records + card_records
+
+
+def _wiki_manifest(pages: list[WikiPage]) -> list[dict[str, str]]:
+    manifest = [
+        {
+            "source": page.source_rel.as_posix(),
+            "route": page.route.as_posix(),
+            "title": page.title,
+        }
+        for page in pages
+    ]
+    routes = [entry["route"] for entry in manifest]
+    if len(routes) != len(set(routes)):
+        raise ValueError("wiki page route collision")
+    return manifest
 
 
 def _generate_data(
@@ -1355,12 +1388,15 @@ def project(
     publications: Path,
     site: Path,
     macros: dict,
+    wiki_pages: list[WikiPage] | None = None,
 ) -> None:
     if out.exists():
         shutil.rmtree(out)
     (out / "tag").mkdir(parents=True)
     (out / "exam").mkdir()
     (out / "guide").mkdir()
+    if wiki_pages:
+        (out / "wiki").mkdir()
     site_root = out / "_site"
     site_root.mkdir()
     con = sqlite3.connect(db)
@@ -1375,6 +1411,8 @@ def project(
 
     guides = load_publications(publications)
     link_targets = _link_targets(con, guides)
+    link_targets.update(wiki_link_targets(wiki_pages or []))
+    (out / "wiki-manifest.json").write_text(json.dumps(_wiki_manifest(wiki_pages or []), ensure_ascii=False, indent=2) + "\n")
     appearances = publication_appearances(con, guides)
     assets = build_asset_catalog(site.parent / "assets")
     inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
@@ -1519,5 +1557,26 @@ def project(
         link_targets,
         assets,
     )
-    write_search_index(site_root, _search_records(con, guides))
+    if wiki_pages:
+        wiki_items: list[PageItem] = [
+            (
+                (
+                    {"title": page.title, "subtitle": page.source_rel.as_posix()},
+                    page.blocks,
+                ),
+                out / "wiki" / page.source_rel.with_suffix(".qmd"),
+                StandardPage(),
+            )
+            for page in wiki_pages
+        ]
+        for offset in range(0, len(wiki_items), WIKI_BATCH_SIZE):
+            write_pages(
+                pandoc,
+                wiki_items[offset : offset + WIKI_BATCH_SIZE],
+                site_root,
+                mathjax,
+                link_targets,
+                assets,
+            )
+    write_search_index(site_root, _search_records(con, guides, wiki_pages))
     con.close()

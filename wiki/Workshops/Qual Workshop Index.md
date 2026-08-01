@@ -14,10 +14,10 @@ Tags: #todo #MOC #my_talks #qualifying_exam  #active_projects
 
 ## Complex Analysis
 
-- [[Qual Complex Analysis]]
+- Qual Complex Analysis
 - [[Complex Week 1 Preliminaries]]
 - [[Complex Week 1 Preliminaries]]
-- [[Projects/Quals/Complex Week n Misc]]
+- Projects/Quals/Complex Week n Misc
 
 ## Real Analysis
 
@@ -35,7 +35,7 @@ Tags: #todo #MOC #my_talks #qualifying_exam  #active_projects
 
 ## Topology
 
-- [[Qual Topology]]
+- Qual Topology
 - [[Topology Week 1 Preliminaries]]
 
 

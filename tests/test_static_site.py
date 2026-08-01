@@ -28,7 +28,7 @@ def test_nested_page_rewrites_card_and_asset_links(tmp_path: Path) -> None:
         site_root,
         Path("tag/P-ONE.html"),
         {"title": "One"},
-        '<p><a href="P-TWO">Two</a><img src="../../assets/figures/diagram.png"></p>',
+        '<p><a href="P-TWO">Two</a><a href="assets/figures/diagram.png">Asset</a><img src="../../assets/figures/diagram.png"></p>',
         "",
         {"P-TWO": Path("tag/P-TWO.html")},
         build_asset_catalog(assets_root),
@@ -38,6 +38,7 @@ def test_nested_page_rewrites_card_and_asset_links(tmp_path: Path) -> None:
     page = (site_root / "tag" / "P-ONE.html").read_text()
     assert '<link rel="icon" href="data:,">' in page
     assert 'href="P-TWO.html"' in page
+    assert 'href="../assets/figures/diagram.png"' in page
     assert 'src="../assets/figures/diagram.png"' in page
     assert (site_root / "assets" / "figures" / "diagram.png").samefile(image)
 

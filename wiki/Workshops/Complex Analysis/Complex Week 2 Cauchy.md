@@ -7,7 +7,7 @@ Tags:
 
 # Topics
 
-- [[Blaschke factors]]
+- [[30_Complex_Analysis/060_Maps of Disc/060_Schwarz lemma|Blaschke factors]]
 - Toy contours
 - Cauchy's integral formula
 - Cauchy inequalities
