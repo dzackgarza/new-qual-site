@@ -102,6 +102,22 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
     (tmp_path / "vocabularies/topics.yaml").write_text("[]\n")
     keep = tmp_path / "corpus/imports/keep.txt"
     keep.write_text("user-owned marker\n")
+    legacy = tmp_path / "corpus/imports/mmaq-full"
+    legacy.mkdir()
+    legacy_meta = {
+        "schema": "qual/card@1",
+        "id": "P-OLD",
+        "kind": "problem",
+        "title": "Legacy exact problem",
+        "classification": {"areas": ["algebra"], "topics": ["groups"]},
+        "relations": [],
+        "review": "draft",
+    }
+    (legacy / "P-OLD.md").write_text(
+        "---\n"
+        + yaml.safe_dump(legacy_meta, sort_keys=False)
+        + "---\n\n::: problem\nLet $G$ be a finite group. Prove that the identity is unique.\n:::\n"
+    )
 
     _run(tmp_path, source)
     manifest = json.loads((tmp_path / "corpus/imports/mmaq-total/manifest.json").read_text())
@@ -112,6 +128,7 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
     assert len(list((tmp_path / "corpus/imports/mmaq-total").glob("O-*.md"))) == 5
     assert len(list((tmp_path / "corpus/imports/mmaq-total").glob("P-*.md"))) == 4
     assert len(list((tmp_path / "corpus/imports/mmaq-total").glob("SRC-*.md"))) == 4
+    assert (tmp_path / "corpus/imports/mmaq-total/P-OLD.md").read_text() == (legacy / "P-OLD.md").read_text()
     assert keep.read_text() == "user-owned marker\n"
 
     ledger = [json.loads(line) for line in (tmp_path / "sources/mmaq-reconciliation.jsonl").read_text().splitlines()]

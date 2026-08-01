@@ -1,0 +1,20 @@
+---
+schema: qual/card@1
+id: P-YMK7Z
+kind: problem
+title: Let $F$ be a field, and let $R$ be the subring of $F[X]$ of
+classification:
+  areas:
+  - algebra
+  topics:
+  - rings
+  - polynomials
+relations: []
+review: draft
+---
+
+::: problem
+Let $F$ be a field, and let $R$ be the subring of $F[X]$ of
+polynomials with $X$ coefficient equal to $0$. Prove that $R$ is not
+a UFD.
+:::

@@ -221,14 +221,21 @@ def _problem_fingerprint(path: Path) -> str | None:
     if metadata is None or metadata.get("kind") != "problem":
         return None
     text = path.read_text().split("---\n", 2)[2].strip()
-    text = re.sub(r"^:::\s*\{\.problem[^}]*\}\s*\n", "", text)
+    text = re.sub(r"^:::\s*(?:\{\.problem[^}]*\}|problem)\s*\n", "", text)
     text = re.sub(r"\n:::\s*$", "", text)
     return normalize(text)
 
 
-def existing_problems(root: Path) -> dict[str, list[tuple[str, str]]]:
+def existing_problems(
+    root: Path,
+    scan_root: Path | None = None,
+    excluded_roots: tuple[Path, ...] = (),
+) -> dict[str, list[tuple[str, str]]]:
     by_fingerprint: dict[str, list[tuple[str, str]]] = {}
-    for path in sorted((root / "corpus").rglob("*.md")):
+    search_root = scan_root if scan_root is not None else root / "corpus"
+    for path in sorted(search_root.rglob("*.md")):
+        if any(path == excluded or excluded in path.parents for excluded in excluded_roots):
+            continue
         fingerprint = _problem_fingerprint(path)
         if fingerprint is None:
             continue
@@ -242,6 +249,60 @@ def existing_problems(root: Path) -> dict[str, list[tuple[str, str]]]:
             by_fingerprint[fingerprint] = []
         by_fingerprint[fingerprint].append((card_id, str(path.relative_to(root))))
     return dict(by_fingerprint)
+
+
+def prior_reconciliation(root: Path, records: list[dict[str, Any]]) -> dict[str, dict[str, Any]]:
+    """Read prior row reconciliation so IDs and classifications survive retirement."""
+
+    ledger_path = root / LEDGER_NAME
+    if not ledger_path.exists():
+        return {}
+    wanted = {hashlib.sha256(record["question"].encode("utf-8")).hexdigest() for record in records}
+    recovered: dict[str, dict[str, Any]] = {}
+    for line_number, line in enumerate(ledger_path.read_text().splitlines(), start=1):
+        item = json.loads(line)
+        context = f"{ledger_path} line {line_number}"
+        if not isinstance(item, dict):
+            raise ValueError(f"{context} is not a JSON object")
+        statement_hash = _required(item, "statement_sha256", context)
+        problem_id = _required(item, "problem_id", context)
+        match = _required(item, "match", context)
+        legacy_ids = _required(item, "legacy_problem_ids", context)
+        legacy_paths = _required(item, "legacy_problem_paths", context)
+        if (
+            not isinstance(statement_hash, str)
+            or not isinstance(problem_id, str)
+            or not isinstance(match, str)
+            or not isinstance(legacy_ids, list)
+            or not isinstance(legacy_paths, list)
+            or any(not isinstance(value, str) for value in legacy_ids)
+            or any(not isinstance(value, str) for value in legacy_paths)
+            or len(legacy_ids) != len(legacy_paths)
+        ):
+            raise ValueError(f"{context} has invalid reconciliation fields")
+        if statement_hash not in wanted:
+            continue
+        entry = {
+            "problem_id": problem_id,
+            "match": match,
+            "legacy_problem_ids": legacy_ids,
+            "legacy_problem_paths": legacy_paths,
+        }
+        previous = recovered.get(statement_hash)
+        if previous is not None and previous != entry:
+            raise ValueError(f"{context} disagrees with an earlier row for {statement_hash}")
+        recovered[statement_hash] = entry
+    return recovered
+
+
+def is_legacy_generated(path: str) -> bool:
+    parts = Path(path).parts
+    return "imports" in parts and any(name in parts for name in ("mmaq", "mmaq-full"))
+
+
+def is_owned_output(path: str) -> bool:
+    parts = Path(path).parts
+    return "imports" in parts and "mmaq-total" in parts
 
 
 def date_spec(year: str, season: str) -> dict[str, Any]:
@@ -393,6 +454,19 @@ def reconcile(
     pandoc: PandocServer,
 ) -> dict[str, int]:
     output = root / OUTPUT_NAME
+    old = existing_problems(root, excluded_roots=(output,))
+    current = existing_problems(root, scan_root=output) if output.exists() else {}
+    current_text: dict[str, str] = {}
+    for candidates in current.values():
+        for _, relative_path in candidates:
+            current_text[relative_path] = (root / relative_path).read_text()
+    current_text_by_id: dict[str, str] = {}
+    if output.exists():
+        for path in sorted(output.glob("P-*.md")):
+            metadata = _frontmatter(path)
+            if metadata is not None and isinstance(metadata.get("id"), str):
+                current_text_by_id[metadata["id"]] = path.read_text()
+    prior = prior_reconciliation(root, records)
     if output.exists():
         if not output.is_dir():
             raise ValueError(f"import output is not a directory: {output}")
@@ -403,11 +477,13 @@ def reconcile(
                 child.unlink()
     output.mkdir(parents=True, exist_ok=True)
 
-    old = existing_problems(root)
     used_ids = {card_id for candidates in old.values() for card_id, _ in candidates}
+    used_ids.update(card_id for candidates in current.values() for card_id, _ in candidates)
     problem_ids: dict[str, str] = {}
     problem_matches: dict[str, str] = {}
+    problem_operations: dict[str, str] = {}
     problem_legacy: dict[str, list[tuple[str, str]]] = {}
+    problem_history: dict[str, list[tuple[str, str]]] = {}
     problem_details: dict[str, tuple[str, list[str]]] = {}
 
     groups: dict[tuple[str, str, str, str], list[dict[str, Any]]] = {}
@@ -421,23 +497,46 @@ def reconcile(
         fingerprint = record["normalized"]
         if fingerprint not in problem_ids:
             candidates = old[fingerprint] if fingerprint in old else []
-            if len(candidates) == 1:
+            current_candidates = current[fingerprint] if fingerprint in current else []
+            statement_hash = hashlib.sha256(record["question"].encode("utf-8")).hexdigest()
+            prior_entry = prior[statement_hash] if statement_hash in prior else None
+            prior_id = prior_entry["problem_id"] if prior_entry is not None else None
+            if len(current_candidates) == 1:
+                problem_id, _ = current_candidates[0]
+                operation = "current-output"
+                legacy = current_candidates
+            elif len(candidates) == 1:
                 problem_id, _ = candidates[0]
-                match = "existing-exact"
+                operation = "existing-exact"
                 legacy = candidates
             elif len(candidates) > 1:
                 problem_id = opaque("P-MMAQ-", fingerprint)
-                match = "ambiguous-exact"
+                operation = "ambiguous-exact"
                 legacy = candidates
+            elif prior_id is not None:
+                problem_id = prior_id
+                operation = "ledger-recovered"
+                relative_path = f"corpus/imports/mmaq-total/{problem_id}.md"
+                legacy = [(problem_id, relative_path)] if problem_id in current_text_by_id else [(problem_id, "")]
             else:
                 problem_id = opaque("P-MMAQ-", fingerprint)
-                match = "new"
+                operation = "new"
                 legacy = []
-            while problem_id in used_ids and not (len(candidates) == 1 and problem_id == candidates[0][0]):
+            prior_ids = {prior_id} if prior_id is not None else set()
+            preserved_ids = prior_ids | {candidate_id for candidate_id, _ in current_candidates}
+            while problem_id in used_ids and problem_id not in preserved_ids and not (len(candidates) == 1 and problem_id == candidates[0][0]):
                 problem_id = opaque("P-MMAQ-", fingerprint + problem_id)
             used_ids.add(problem_id)
             problem_ids[fingerprint] = problem_id
-            problem_matches[fingerprint] = match
+            problem_operations[fingerprint] = operation
+            if prior_entry is not None and problem_id == prior_id:
+                problem_matches[fingerprint] = prior_entry["match"]
+                problem_history[fingerprint] = list(
+                    zip(prior_entry["legacy_problem_ids"], prior_entry["legacy_problem_paths"], strict=True)
+                )
+            else:
+                problem_matches[fingerprint] = operation
+                problem_history[fingerprint] = legacy
             problem_legacy[fingerprint] = legacy
             area = AREA_SLUG[record["exam"]]
             topics = list(dict.fromkeys(slug(tag) for tag in record["tags"]))
@@ -463,7 +562,29 @@ def reconcile(
     source_bodies = dict(zip(source_keys, converted_bodies(pandoc, source_body_texts, "remark"), strict=True))
 
     for fingerprint, problem_id in problem_ids.items():
-        if problem_matches[fingerprint] != "existing-exact":
+        operation = problem_operations[fingerprint]
+        if operation == "existing-exact":
+            legacy_path = problem_legacy[fingerprint][0][1]
+            if is_legacy_generated(legacy_path):
+                if legacy_path in current_text:
+                    (output / f"{problem_id}.md").write_text(current_text[legacy_path])
+                elif (root / legacy_path).is_file():
+                    (output / f"{problem_id}.md").write_text((root / legacy_path).read_text())
+            continue
+        if operation in {"current-output", "ledger-recovered"}:
+            for card_id, legacy_path in problem_legacy[fingerprint]:
+                if legacy_path in current_text:
+                    (output / f"{problem_id}.md").write_text(current_text[legacy_path])
+                    break
+                if is_owned_output(legacy_path) and card_id in current_text_by_id:
+                    (output / f"{problem_id}.md").write_text(current_text_by_id[card_id])
+                    break
+                if is_legacy_generated(legacy_path) and (root / legacy_path).is_file():
+                    (output / f"{problem_id}.md").write_text((root / legacy_path).read_text())
+                    break
+            else:
+                operation = "regenerate"
+        if operation in {"ambiguous-exact", "new", "regenerate"}:
             area, topics = problem_details[fingerprint]
             statement = next(record["question"] for record in records if record["normalized"] == fingerprint)
             write_problem(output / f"{problem_id}.md", statement, area, topics, problem_id, problem_bodies[fingerprint])
@@ -484,7 +605,7 @@ def reconcile(
             occurrence_id,
             occurrence_bodies[record["sequence"] - 1],
         )
-        legacy = problem_legacy[fingerprint]
+        legacy = problem_history[fingerprint]
         ledger.append(
             {
                 "row": record["sequence"],
