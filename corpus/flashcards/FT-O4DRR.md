@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: FT-O4DRR
+kind: theorem
+title: 'Caratheodory Characterization'
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.theorem title="Caratheodory Characterization"}
+$E\subseteq \RR^n$ is measurable $\iff$ for all $A\subset \RR^n$, $ m_*(A) = m_*(E\intersect A) + m_*(E\intersect A^c) $
+:::

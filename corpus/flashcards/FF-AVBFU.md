@@ -1,0 +1,22 @@
+---
+schema: qual/card@1
+id: FF-AVBFU
+kind: fact
+title: 'Characterizations of $D_f$, the set of discontinuities of functions'
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.fact title="Characterizations of $D_f$, the set of discontinuities of functions"}
+- Always $F_\sigma$, closed, positive oscillation.
+
+- $f_n\to f$ with $f_n$ continuous $\implies D_f$ is meager.
+
+- (Lebesgue criterion) $f \in \mathcal{R}(a, b)$ and bounded $\implies D_f$ is null.
+
+- $f$ monotone $\implies D_f$ is countable, and additionally $f$ differentiable on $(a, b) \implies D_f$ is null.
+:::

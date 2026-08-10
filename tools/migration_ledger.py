@@ -33,6 +33,7 @@ import hashlib
 import json
 import subprocess
 import sys
+from functools import cache
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -56,9 +57,80 @@ REPOS = {
         None,
         None,
     ),
+    "math-flashcards": (Path.home() / "gitclones/math-flashcards", None, None),
 }
 
 ASSET_EXT = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".pdf", ".webp"}
+
+
+@cache
+def flashcard_files() -> dict[str, dict[str, int]]:
+    """math-flashcards deck path -> its per-card disposition counts.
+
+    A deck file's disposition is the roll-up of the cards inside it, so the two
+    are computed in one place. `tools/import_flashcards.py` owns the card-level
+    decisions and writes them to `sources/flashcard-import-ledger.jsonl`.
+    """
+    from collections import Counter
+
+    sys.path.insert(0, str(REPO / "tools"))
+    import import_flashcards
+
+    out: dict[str, Counter] = {}
+    for row in import_flashcards.dispositions():
+        out.setdefault(row["deck"], Counter())[row["disposition"]] += 1
+    # Every deck reports all three counts, so a reader of a row can tell "no
+    # queued cards" from "queued was never measured for this deck".
+    return {deck: {d: counts[d] for d in ("migrated", "dropped", "queued")} for deck, counts in out.items()}
+
+
+def classify_flashcards(row: dict, rel: str) -> dict:
+    """`math-flashcards`, the fifth source: Anki decks in nested-list markdown.
+
+    Only the 28 `*Qual*` decks are qual material. The rest of the repo's decks
+    are orals, schemes, toric varieties, algebraic geometry, lattices, and
+    reading notes -- real mathematics, but not qualifying-exam content, so they
+    are out of this corpus's subject scope rather than unmined.
+    """
+    counts = flashcard_files().get(rel)
+    if counts is not None:
+        queued = counts["queued"]
+        summary = ", ".join(f"{n} {d}" for d, n in sorted(counts.items()) if n)
+        if queued:
+            return {
+                **row,
+                "disposition": "queued",
+                "reason": (f"{queued} card(s) are a lost figure with no prose statement; figure re-authoring is tabled ({summary}); see sources/flashcard-import-ledger.jsonl"),
+            }
+        if counts["migrated"]:
+            return {
+                **row,
+                "disposition": "migrated",
+                "target": "corpus/flashcards",
+                "evidence": (f"imported by tools/import_flashcards.py: {summary}; see sources/flashcard-import-ledger.jsonl"),
+            }
+        return {
+            **row,
+            "disposition": "dropped",
+            "reason": (f"every card duplicates one already imported from another deck ({summary}); see sources/flashcard-import-ledger.jsonl"),
+        }
+    if rel.startswith("decks/"):
+        return {
+            **row,
+            "disposition": "dropped",
+            "reason": ("non-qual deck (orals, schemes, algebraic geometry, lattices, reading notes); outside this corpus's qualifying-exam subject scope"),
+        }
+    if rel.startswith("apkg/"):
+        return {
+            **row,
+            "disposition": "generated",
+            "reason": "compiled Anki package, rebuilt from decks/ by `just build`",
+        }
+    return {
+        **row,
+        "disposition": "dropped",
+        "reason": f"repo documentation / build tooling ({rel})",
+    }
 
 
 def sha(path: Path) -> str:
@@ -135,6 +207,8 @@ def classify(
     # editor config and tooling: never corpus content
     if rel.startswith((".obsidian/", ".git")) or "/.obsidian/" in rel:
         return {**row, "disposition": "dropped", "reason": "editor config"}
+    if repo_name == "math-flashcards":
+        return classify_flashcards(row, rel)
     if repo_name == "make-me-a-qual" and rel.startswith(("Webtool/", ".ipynb")):
         return {
             **row,
@@ -245,8 +319,36 @@ def build() -> list[dict]:
     return rows
 
 
+def build_repo(name: str) -> list[dict]:
+    """Classify one source repo. `build` needs every clone on disk at once; when
+    only one is present, this classifies that one so its rows can be merged into
+    the ledger without discarding the rows of a repo that is not cloned here."""
+    repo, ledger_dir, remat = REPOS[name]
+    corpus_hashes = corpus_asset_hashes()
+    corpus_ids = {p.stem for p in (REPO / "corpus").rglob("*.md")}
+    corpus_pages = {str(p.relative_to(REPO / "wiki")) for p in (REPO / "wiki").rglob("*.md")}
+    routed = routed_sources(ledger_dir, remat)
+    return [classify(name, repo, rel, corpus_hashes, routed, corpus_ids, corpus_pages) for rel in tracked(repo)]
+
+
+def merge(name: str) -> int:
+    """Replace one repo's rows in the ledger, leaving every other repo's alone."""
+    out = REPO / "sources/migration-ledger.jsonl"
+    kept = [line for line in out.read_text().splitlines() if line.strip() and json.loads(line)["repo"] != name]
+    rows = build_repo(name)
+    out.write_text("\n".join(kept + [json.dumps(r) for r in rows]) + "\n")
+    print(f"{name}: {len(rows)} rows merged into {out} ({len(kept)} rows of other repos kept)")
+    from collections import Counter
+
+    for d, n in Counter(r["disposition"] for r in rows).most_common():
+        print(f"  {d}: {n}")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     cmd = argv[0] if argv else "build"
+    if cmd == "merge":
+        return merge(argv[1])
     rows = build()
     out = REPO / "sources/migration-ledger.jsonl"
     out.write_text("\n".join(json.dumps(r) for r in rows) + "\n")

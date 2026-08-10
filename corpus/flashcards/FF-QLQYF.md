@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: FF-QLQYF
+kind: fact
+title: 'What is a first category set? A second category?'
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.fact title="What is a first category set? A second category?"}
+A subset is *first category* $ \iff $ it is countable union of nowhere dense sets, *second category* otherwise.
+:::

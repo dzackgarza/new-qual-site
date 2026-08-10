@@ -1,0 +1,18 @@
+---
+schema: qual/card@1
+id: FD-LXZIW
+kind: definition
+title: 'Characteristic of a ring'
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.definition title="Characteristic of a ring"}
+The smallest number $n$ such that $\sum_{j=1}^n 1_R = 0_R$.
+
+Equivalently, the kernel $n\ZZ$ of the unique map $\ZZ\to R$.
+:::

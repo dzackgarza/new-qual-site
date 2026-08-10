@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: FR-KEWV2
+kind: proof
+title: 'Proposition: $\sum \abs{f_n} \in L^1 \implies \sum \abs{f_n(x)} < \infty$ a.e.'
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.proof title="Proposition: $\sum \abs{f_n} \in L^1 \implies \sum \abs{f_n(x)} < \infty$ a.e."}
+Proof: by contradiction.
+:::
