@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5MLQE
 kind: problem
-title: "\\["
+title: "f(x) = \\sum _{n=0}^{\\infty} \\frac{x^{n}}{n !}."
 classification:
   areas:
   - real-analysis

@@ -4,7 +4,8 @@ id: O-745WTXSP7W
 kind: occurrence
 title: P-SQVNA at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-SXWWIGNUIF
 kind: occurrence
 title: P-LU2L3 at UGA prelim Summer 2011
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

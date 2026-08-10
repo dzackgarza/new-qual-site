@@ -4,7 +4,8 @@ id: O-JWWEFR6CGS
 kind: occurrence
 title: P-VYOWN at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

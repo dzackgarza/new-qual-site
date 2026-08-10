@@ -4,12 +4,14 @@ id: P-GW4KD
 kind: problem
 title: Let $n>1$ be an integer. Show that the automorphism group of the cycli…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Let $n>1$ be an integer. Show that the automorphism group of the cyclic group of order $n$ is isomorphic to the multiplicative group of units mod $n$.
+::: {.problem title="?"}
+Let $n>1$ be an integer.
+Show that the automorphism group of the cyclic group of order $n$ is isomorphic to the multiplicative group of units mod $n$.
 :::

@@ -4,7 +4,8 @@ id: O-47JX7ANOX5
 kind: occurrence
 title: P-GB7EM at UGA prelim Spring 2003
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

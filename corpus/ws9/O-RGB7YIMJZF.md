@@ -4,7 +4,8 @@ id: O-RGB7YIMJZF
 kind: occurrence
 title: P-AOZMW at UGA prelim Fall 2004
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

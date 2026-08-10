@@ -4,12 +4,13 @@ id: P-XVV4O
 kind: problem
 title: Present and explain an example refuting the converse to Lagrange's The…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Present and explain an example refuting the converse to Lagrange's Theorem.
 :::

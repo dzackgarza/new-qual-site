@@ -4,13 +4,14 @@ id: P-TNZTM
 kind: problem
 title: "Prove or disprove each of the following:"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove or disprove each of the following:
 
 a. If $R[x]$ is a PID, then $R$ is a field.

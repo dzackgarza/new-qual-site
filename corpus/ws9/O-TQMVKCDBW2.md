@@ -4,7 +4,8 @@ id: O-TQMVKCDBW2
 kind: occurrence
 title: P-U64DA at UGA prelim June 2015
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

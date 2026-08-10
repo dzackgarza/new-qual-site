@@ -4,12 +4,13 @@ id: P-HOBOM
 kind: problem
 title: For $n = 5, 6$, either give an example of a nonabelian group of order…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 For $n = 5, 6$, either give an example of a nonabelian group of order $n$, or prove that none exists.
 :::

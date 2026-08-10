@@ -4,7 +4,8 @@ id: O-6BC5OBNUHA
 kind: occurrence
 title: P-CQNPO at UGA prelim Spring 2007
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

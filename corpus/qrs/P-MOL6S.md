@@ -4,7 +4,8 @@ id: P-MOL6S
 kind: problem
 title: "1. Denoting $D^n f \\definedas \\dd{^n f}{x^n}$ and noting that $D^1 D^n\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

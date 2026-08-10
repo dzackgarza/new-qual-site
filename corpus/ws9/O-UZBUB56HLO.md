@@ -4,7 +4,8 @@ id: O-UZBUB56HLO
 kind: occurrence
 title: P-2TVO4 at UGA prelim Summer 2011
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: P-GWHUX
 kind: problem
 title: a. Determine the elementary divisors and invariant factors of the Abel…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

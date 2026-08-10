@@ -4,7 +4,8 @@ id: O-SGES5QRNHH
 kind: occurrence
 title: P-6POHT at UGA prelim Spring 2005
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

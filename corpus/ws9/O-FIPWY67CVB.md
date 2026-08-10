@@ -4,7 +4,8 @@ id: O-FIPWY67CVB
 kind: occurrence
 title: P-HUKW5 at UGA (undated) (prelim)
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

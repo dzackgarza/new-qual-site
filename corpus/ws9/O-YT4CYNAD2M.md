@@ -4,7 +4,8 @@ id: O-YT4CYNAD2M
 kind: occurrence
 title: P-LHC3M at UGA prelim Fall 2005
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

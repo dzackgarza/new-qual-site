@@ -4,7 +4,8 @@ id: O-CA4FXK6EN3
 kind: occurrence
 title: P-UU43Q at UGA prelim Fall 2012
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

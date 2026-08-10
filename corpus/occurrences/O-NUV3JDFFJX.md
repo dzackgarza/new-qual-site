@@ -4,7 +4,8 @@ id: O-NUV3JDFFJX
 kind: occurrence
 title: P-W6TOK at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

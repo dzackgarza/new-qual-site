@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KC3PY
 kind: problem
-title: "a."
+title: "Prove that if \\( E \\subseteq \\RR^n \\) is a Lebesgue measurable set, th\u2026"
 classification:
   areas:
   - real-analysis

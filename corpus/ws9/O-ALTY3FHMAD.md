@@ -4,7 +4,8 @@ id: O-ALTY3FHMAD
 kind: occurrence
 title: P-JH3BD at UGA prelim Summer 2009
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-5JHPARBDRC
 kind: occurrence
 title: P-EQFMD at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

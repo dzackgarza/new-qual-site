@@ -4,13 +4,14 @@ id: P-MW5EM
 kind: problem
 title: "Consider the statement:"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Consider the statement:
 
 "If there exists a purple apple, then all lemons are pink."

@@ -4,7 +4,8 @@ id: P-IKEPG
 kind: problem
 title: "1. Use the fact that $\\sum_{i=1}^n i = \\frac 1 2 n(n+1)$, so"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

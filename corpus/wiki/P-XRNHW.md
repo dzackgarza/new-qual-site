@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XRNHW
 kind: problem
-title: "a."
+title: "Let $F \\subset \\mathbb{R}$ be closed, and define"
 classification:
   areas:
   - real-analysis

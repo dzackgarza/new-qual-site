@@ -4,14 +4,16 @@ id: P-HHX6V
 kind: problem
 title: Let $D$ be a commutative ring with unit. A submodule $N$ of the $D$-mo…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Let $D$ be a commutative ring with unit. A submodule $N$ of the $D$-module $M$ is said to be pure in $M$ just in case for every $y \in N$ and $a \in D$, $ax = y$ is solvable in $N$ if solvable in $M$.
+::: {.problem title="?"}
+Let $D$ be a commutative ring with unit.
+A submodule $N$ of the $D$-module $M$ is said to be pure in $M$ just in case for every $y \in N$ and $a \in D$, $ax = y$ is solvable in $N$ if solvable in $M$.
 
 a. Show that if $N$ is a direct summand of $M$ then $N$ is pure in $M$.
 

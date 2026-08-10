@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LAZ4X
 kind: problem
-title: "a."
+title: "What is the degree of the antipodal map on the $n$-sphere?"
 classification:
   areas:
   - topology

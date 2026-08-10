@@ -2,9 +2,10 @@
 schema: qual/card@1
 id: P-ARI3E
 kind: problem
-title: "1."
+title: "1. Negate $\\forall x\\in \\RR,~\\exists y\\in \\RR \\suchthat \\abs{x-y} \\geq\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

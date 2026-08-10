@@ -4,7 +4,8 @@ id: O-RK7VKBSUYD
 kind: occurrence
 title: P-DCR24 at UGA prelim June 2012
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-4PGAPAWUO6
 kind: occurrence
 title: P-5DV7Z at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

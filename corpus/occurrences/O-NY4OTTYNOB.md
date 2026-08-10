@@ -4,7 +4,8 @@ id: O-NY4OTTYNOB
 kind: occurrence
 title: P-OSVPH at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EI5VA
 kind: problem
-title: "a."
+title: "Suppose the group $G$ acts on the set $X$ . Show that the stabilizers\u2026"
 classification:
   areas:
   - algebra

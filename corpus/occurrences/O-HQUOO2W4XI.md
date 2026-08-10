@@ -4,7 +4,8 @@ id: O-HQUOO2W4XI
 kind: occurrence
 title: P-IMYQU at UGA prelim Fall 2017
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

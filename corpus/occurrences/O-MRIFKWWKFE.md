@@ -4,7 +4,8 @@ id: O-MRIFKWWKFE
 kind: occurrence
 title: P-N2NUD at UGA prelim Fall 2014
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

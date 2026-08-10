@@ -4,7 +4,8 @@ id: O-QZCYN3K73H
 kind: occurrence
 title: P-F7Y7R at UGA prelim Fall 2017
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6AMZL
 kind: problem
-title: "a."
+title: "Let $f (x)$ be an irreducible polynomial of degree 4 in $\\QQ[x]$ whose\u2026"
 classification:
   areas:
   - algebra

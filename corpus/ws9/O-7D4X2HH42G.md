@@ -4,7 +4,8 @@ id: O-7D4X2HH42G
 kind: occurrence
 title: P-MOCTU at UGA prelim Summer 2011
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

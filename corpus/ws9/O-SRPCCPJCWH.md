@@ -4,7 +4,8 @@ id: O-SRPCCPJCWH
 kind: occurrence
 title: P-JVZMJ at UGA prelim Fall 2012
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

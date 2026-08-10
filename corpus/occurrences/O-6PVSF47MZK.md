@@ -4,7 +4,8 @@ id: O-6PVSF47MZK
 kind: occurrence
 title: P-IKEPG at UGA prelim Fall 2016
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-LRJR4HYGII
 kind: occurrence
 title: P-MFVEZ at UGA prelim Spring 2003
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

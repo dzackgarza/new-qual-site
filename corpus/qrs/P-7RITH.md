@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7RITH
 kind: problem
-title: "1."
+title: "Show that the function $u=u(x,y)$ given by"
 classification:
   areas:
   - complex-analysis

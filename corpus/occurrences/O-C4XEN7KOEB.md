@@ -4,7 +4,8 @@ id: O-C4XEN7KOEB
 kind: occurrence
 title: P-H442E at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

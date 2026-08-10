@@ -4,7 +4,8 @@ id: O-XQDNX6D2XB
 kind: occurrence
 title: P-UVSXF at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

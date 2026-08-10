@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GG7CQ
 kind: problem
-title: "1."
+title: "Find an example of a metric space $X$ and a subset $E \\subseteq X$"
 classification:
   areas:
   - real-analysis

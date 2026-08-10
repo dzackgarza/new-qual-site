@@ -4,7 +4,8 @@ id: O-QCAWAVH2G2
 kind: occurrence
 title: P-4PCPV at UGA prelim Fall 2007
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

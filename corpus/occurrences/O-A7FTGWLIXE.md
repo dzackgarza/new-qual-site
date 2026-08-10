@@ -4,7 +4,8 @@ id: O-A7FTGWLIXE
 kind: occurrence
 title: P-75G3E at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

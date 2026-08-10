@@ -4,7 +4,8 @@ id: O-MYZ5XMMT5P
 kind: occurrence
 title: P-IOAQB at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

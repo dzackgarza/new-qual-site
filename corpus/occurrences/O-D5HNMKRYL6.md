@@ -4,7 +4,8 @@ id: O-D5HNMKRYL6
 kind: occurrence
 title: P-NM425 at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

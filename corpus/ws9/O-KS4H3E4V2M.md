@@ -4,7 +4,8 @@ id: O-KS4H3E4V2M
 kind: occurrence
 title: P-ZR3OT at UGA prelim Summer 2014
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-LL7XLEJ4VY
 kind: occurrence
 title: P-VFB5V at UGA prelim June 2015
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

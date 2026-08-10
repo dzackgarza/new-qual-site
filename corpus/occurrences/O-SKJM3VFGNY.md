@@ -4,7 +4,8 @@ id: O-SKJM3VFGNY
 kind: occurrence
 title: P-ARI3E at UGA prelim Fall 2017
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

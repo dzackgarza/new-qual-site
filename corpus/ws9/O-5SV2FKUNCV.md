@@ -4,7 +4,8 @@ id: O-5SV2FKUNCV
 kind: occurrence
 title: P-TBXVH at UGA prelim Fall 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

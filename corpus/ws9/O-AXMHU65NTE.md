@@ -4,7 +4,8 @@ id: O-AXMHU65NTE
 kind: occurrence
 title: P-5XCMC at UGA prelim Spring 2005
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

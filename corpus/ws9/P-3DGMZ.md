@@ -4,12 +4,14 @@ id: P-3DGMZ
 kind: problem
 title: State the Sylow Theorems. Include information about the existence, ord…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-State the Sylow Theorems. Include information about the existence, order, and number $n_p$ of Sylow $p$-subgroups of a finite group, and mention additional divisibility and congruence properties of $n_p$.
+::: {.problem title="?"}
+State the Sylow Theorems.
+Include information about the existence, order, and number $n_p$ of Sylow $p$-subgroups of a finite group, and mention additional divisibility and congruence properties of $n_p$.
 :::

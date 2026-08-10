@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-25AFH
 kind: problem
-title: "a."
+title: "Let $\\mu$ be a measure on a measurable space $(X, \\mathcal M)$ and $f$\u2026"
 classification:
   areas:
   - real-analysis

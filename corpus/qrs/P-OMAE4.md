@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OMAE4
 kind: problem
-title: "a."
+title: "Carefully state Tonelli's theorem for a nonnegative function $F(x, t)$\u2026"
 classification:
   areas:
   - real-analysis

@@ -4,11 +4,13 @@ id: P-7CUNN
 kind: problem
 title: "1. $\\displaystyle \\int \\frac {x^3 + 4x^2}{x^2 + 4x + 3} ~dx = \\color{b\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
+
 1. $\displaystyle \int \frac {x^3 + 4x^2}{x^2 + 4x + 3} ~dx = \color{blue} {\frac {1}{2} x^2 - \frac {9}{2} \ln (x + 3) + \frac {3}{2} \ln (x+1)}$
 
 - **Solution:** $\frac {x^3 + 4x^2}{x^2 + 4x + 3} = x - \frac {9}{2} \cdot \frac {1}{x + 3} + \frac {3}{2} \cdot \frac {1}{x + 1}$
@@ -16,6 +18,7 @@ review: draft
 2. $\displaystyle \int \frac {2x^3 + 2x^2 - 9x - 1}{x^2 + x - 6} ~dx = \color{blue} {x^2 +2 \ln (x + 3) + \ln (x - 2)}$
 
 - **Solution:** $\frac {2x^3 + 2x^2 - 9x - 1}{x^2 + x - 6} = 2x + 2 \cdot \frac {1}{x + 3} + \frac {1}{x - 2}$
+
 - **Used 2019**, *Unsolved*
 
 3. $\displaystyle \int \frac {x^3 - x^2 -3x +1}{x^2 - x - 6} ~dx = \color{blue} {\frac {1}{2} x^2 + 2 \ln (x - 3) + \ln (x + 2)}$
@@ -33,10 +36,9 @@ review: draft
 6. $\displaystyle \int \frac {x^3 -4x^2 + 2x - 3}{x+2} ~dx = \color{blue} {\frac 1 3 x^3 -3x^2 + 14x - 31\ln(x+2)}$
 
 - **Solution:** $\frac {x^3 - 4x^2 + 2x - 3}{x+2} = x^2 - 6x + 14 - 31 \cdot \frac {1}{x + 2}$
+
 - **Used 2018**, *Unsolved*
 
-7. $\displaystyle \int \frac {x^4 - 2x^3 - 8x^2 + 2x + 10 }{x^2 - 2x - 8} ~dx =  \color{blue} {\frac {1}{3} x^3 + 3 \ln (x - 4) - \ln (x + 2)}$ 
+7. $\displaystyle \int \frac {x^4 - 2x^3 - 8x^2 + 2x + 10 }{x^2 - 2x - 8} ~dx =  \color{blue} {\frac {1}{3} x^3 + 3 \ln (x - 4) - \ln (x + 2)}$
 
 - **Solution:** $\frac {x^4 - 2x^3 - 8x^2 + 2x + 10 }{x^2 - 2x - 8} = x^2 + 3 \cdot \frac {1}{x - 4} - \frac {1}{x + 2}$
-
-

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JJ62Y
 kind: problem
-title: "a."
+title: "Let $K$ denote the splitting field of $x^5 - 2$ over $\\QQ$."
 classification:
   areas:
   - algebra

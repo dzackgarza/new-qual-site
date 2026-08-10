@@ -4,12 +4,15 @@ id: P-R4I5W
 kind: problem
 title: "6. $\\displaystyle \\int \\sqrt {1 + \\cos (2ax)} ~dx = \\color {blue} {\\fr\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
+
 6. $\displaystyle \int \sqrt {1 + \cos (2ax)} ~dx = \color {blue} {\frac {\sqrt {2}}{a} \sin (ax)}$
 
 - **Solution:** $\sqrt {1 + \cos (2ax)} = \sqrt {2 \cos ^2 (ax)} = \sqrt {2} \cos (ax)$
+
 - **Used 2019**

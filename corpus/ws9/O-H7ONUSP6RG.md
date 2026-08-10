@@ -4,7 +4,8 @@ id: O-H7ONUSP6RG
 kind: occurrence
 title: P-MSLD5 at UGA prelim Fall 2002
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

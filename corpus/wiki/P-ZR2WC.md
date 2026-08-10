@@ -2,9 +2,10 @@
 schema: qual/card@1
 id: P-ZR2WC
 kind: problem
-title: "4."
+title: "- Definition of uniform convergence:"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

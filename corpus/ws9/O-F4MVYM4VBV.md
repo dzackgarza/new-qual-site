@@ -4,7 +4,8 @@ id: O-F4MVYM4VBV
 kind: occurrence
 title: P-Q5LN7 at UGA prelim Fall 2004
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

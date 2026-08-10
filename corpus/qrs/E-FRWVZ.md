@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FRWVZ
 kind: exercise
-title: "\\["
+title: "\\int_{0}^{\\infty} \\frac{\\cos (x)}{x^{2}+b^{2}} d x=\\frac{\\pi \\mathrm{e\u2026"
 classification:
   areas:
   - complex-analysis

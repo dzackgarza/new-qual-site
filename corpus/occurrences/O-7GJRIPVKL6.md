@@ -4,7 +4,8 @@ id: O-7GJRIPVKL6
 kind: occurrence
 title: P-XYIBX at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

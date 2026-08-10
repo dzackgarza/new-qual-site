@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LSJ7W
 kind: problem
-title: "a."
+title: "Consider the quotient space"
 classification:
   areas:
   - topology

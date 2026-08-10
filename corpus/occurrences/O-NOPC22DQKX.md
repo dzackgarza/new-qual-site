@@ -4,7 +4,8 @@ id: O-NOPC22DQKX
 kind: occurrence
 title: P-CWELY at UGA prelim Fall 2017
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

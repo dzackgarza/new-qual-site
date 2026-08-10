@@ -4,7 +4,8 @@ id: O-C4ICPRE6XR
 kind: occurrence
 title: P-SD42B at UGA prelim Fall 2005
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

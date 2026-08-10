@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JK5PG
 kind: exercise
-title: "\\["
+title: "\\int_\\RR {1 \\over x^4 + 1} = {\\pi \\sqrt{2} \\over 2}"
 classification:
   areas:
   - complex-analysis

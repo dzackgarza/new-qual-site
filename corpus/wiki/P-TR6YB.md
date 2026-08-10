@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TR6YB
 kind: problem
-title: "a."
+title: "Use the Class Equation (equivalently, the conjugation action of a grou\u2026"
 classification:
   areas:
   - algebra

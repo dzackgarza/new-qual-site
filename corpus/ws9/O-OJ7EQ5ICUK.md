@@ -4,7 +4,8 @@ id: O-OJ7EQ5ICUK
 kind: occurrence
 title: P-GWHUX at UGA prelim June 2008
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-Z66NC
 kind: exercise
-title: "\\["
+title: "\\int_{1}^{\\infty} \\frac{d x}{x \\sqrt{x^{2}-1}} = {\\pi \\over 2}"
 classification:
   areas:
   - complex-analysis

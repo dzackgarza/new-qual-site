@@ -4,7 +4,8 @@ id: O-3Z2V66ZFBQ
 kind: occurrence
 title: P-VAWOC at UGA (undated) (prelim)
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

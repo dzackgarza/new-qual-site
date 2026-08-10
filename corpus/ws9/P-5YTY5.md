@@ -4,13 +4,14 @@ id: P-5YTY5
 kind: problem
 title: Let $\Delta$ be the triangle in $\mathbb{R}^2$ with vertices $(0,1)$,…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Let $\Delta$ be the triangle in $\mathbb{R}^2$ with vertices $(0,1)$, $(2,0)$, and $(2,1)$, traversed counterclockwise. Evaluate the line integral
-$$\int_{\Delta} y\,dx + 2x\,dy.$$
+::: {.problem title="?"}
+Let $\Delta$ be the triangle in $\mathbb{R}^2$ with vertices $(0,1)$, $(2,0)$, and $(2,1)$, traversed counterclockwise.
+Evaluate the line integral $$\int_{\Delta} y\,dx + 2x\,dy.$$
 :::

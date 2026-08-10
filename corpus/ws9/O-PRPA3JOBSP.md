@@ -4,7 +4,8 @@ id: O-PRPA3JOBSP
 kind: occurrence
 title: P-5YTY5 at UGA prelim Fall 2007
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

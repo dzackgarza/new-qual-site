@@ -4,7 +4,8 @@ id: P-L3LHW
 kind: problem
 title: "1. We need to show"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

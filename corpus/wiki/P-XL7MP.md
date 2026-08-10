@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XL7MP
 kind: problem
-title: "a."
+title: "Show that"
 classification:
   areas:
   - real-analysis

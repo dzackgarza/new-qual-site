@@ -4,7 +4,8 @@ id: O-NYYTFP5FHM
 kind: occurrence
 title: P-NGXAE at UGA prelim July 2013
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: P-2QLBW
 kind: problem
 title: "1. Definitions:"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

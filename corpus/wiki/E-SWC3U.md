@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SWC3U
 kind: exercise
-title: "a."
+title: "Let $z, w$ be complex numbers, such that $\\bar{z} w \\neq 1$."
 classification:
   areas:
   - complex-analysis

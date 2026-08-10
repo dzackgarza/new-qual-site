@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PAQWN
 kind: exercise
-title: "a."
+title: "Let Let $f:{\\mathbb C}\\rightarrow {\\mathbb C}$ be an entire function.\u2026"
 classification:
   areas:
   - complex-analysis

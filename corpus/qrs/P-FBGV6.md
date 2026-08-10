@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FBGV6
 kind: problem
-title: "1."
+title: "Suppose that $f: [0,1] \\to \\mathbb{R}$ is differentiable and"
 classification:
   areas:
   - real-analysis

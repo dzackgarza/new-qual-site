@@ -4,7 +4,8 @@ id: P-WJTPS
 kind: problem
 title: "2. We first note that we can rewrite the equation of the region to obt\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

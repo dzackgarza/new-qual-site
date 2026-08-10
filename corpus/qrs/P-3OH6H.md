@@ -4,7 +4,8 @@ id: P-3OH6H
 kind: problem
 title: "2. Claim: take $\\delta < \\min(1, \\sqrt{\\frac{\\varepsilon}{5}})$. Then\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

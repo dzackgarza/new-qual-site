@@ -4,7 +4,8 @@ id: O-J3UJXVSIJT
 kind: occurrence
 title: P-VUTDR at UGA prelim June 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -180,6 +180,16 @@ AUTHORED_TITLE = re.compile(r'^:{3,}[^\n]*?\btitle="([^"]*)"')
 # Lines that are page furniture rather than statement: layout macros, Obsidian
 # block anchors, bare tag lines.
 NOT_A_TITLE = re.compile(r"^(\\\w+\s*$|\^[0-9a-f]{6}\s*$|#[\w/-]+\s*$|!\[[^\]]*\]\([^)]*\)\s*$)")
+
+# A bare enumerator, a lone display-math delimiter, or a lone `?`. These name
+# nothing, and skipping them produced 92 cards titled `a.`, `1.`, or `\[`.
+#
+# Separate from `NOT_A_TITLE` on purpose: that one also drives the head/body
+# split below, where these lines are *statement*. An `a.` opening a multi-part
+# problem labels its first part, and hoisting it onto the page would leave the
+# card with an unlabelled part (a) beside a labelled (b). Bad as a title, load
+# bearing in the body.
+NOT_A_TITLE_ALONE = re.compile(r"^(\\[\[\]]\s*$|\(?[a-zA-Z][.)]\s*$|\d+[.)]\s*$|\?\s*$)")
 # A figure reference relative to the source file's own directory. Cards are
 # extracted out of that directory, so every one of these breaks on the way out.
 IMAGE = re.compile(r"(!\[[^\]]*\]\()((?!https?:|/)[^)]+)(\))")
@@ -211,7 +221,7 @@ def title_of(span: dict, body: str) -> str:
         # `\envlist` is a layout macro and `^043381` an Obsidian block anchor;
         # both are the first line of a statement often enough to have produced
         # 95 cards titled after them. Neither says anything about the problem.
-        if NOT_A_TITLE.match(line):
+        if NOT_A_TITLE.match(line) or NOT_A_TITLE_ALONE.match(line):
             continue
         line = re.sub(r"\s+", " ", line)
         title = (line[:70].rstrip() + "…") if len(line) > 70 else line

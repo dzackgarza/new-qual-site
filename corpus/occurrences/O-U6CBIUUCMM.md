@@ -4,7 +4,8 @@ id: O-U6CBIUUCMM
 kind: occurrence
 title: P-ANJIW at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

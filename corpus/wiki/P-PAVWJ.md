@@ -4,11 +4,13 @@ id: P-PAVWJ
 kind: problem
 title: "1. $\\displaystyle \\int \\frac {x^2}{x^2+1} ~dx = \\color{blue} {x - \\tan\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
+
 1. $\displaystyle \int \frac {x^2}{x^2+1} ~dx = \color{blue} {x - \tan ^{-1} (x)}$
 
 - **Solution:** $\frac {x^2}{x^2+1} = 1 - \frac {1}{x^2+1}$
@@ -44,7 +46,5 @@ review: draft
 9. $\displaystyle \int \frac {2x^5 + 4x^3 + 4x}{x^4+1} ~dx = \color{blue} {x^2 + \ln (x^4+1) + \tan ^{-1} (x^2)}$
 
 - **Solution:** $\frac {2x^5 + 4x^3 + 4x}{(x^4+1)} = 2x + \frac {4x^3}{x^4 + 1} + \frac {2x}{x^4 + 1}$
+
 - **Used 2019**
-
-
-

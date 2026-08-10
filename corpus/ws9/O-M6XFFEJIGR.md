@@ -4,7 +4,8 @@ id: O-M6XFFEJIGR
 kind: occurrence
 title: P-K5JBF at UGA prelim July 2013
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

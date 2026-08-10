@@ -4,7 +4,8 @@ id: O-JZOP6RM2FQ
 kind: occurrence
 title: P-FDWKY at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

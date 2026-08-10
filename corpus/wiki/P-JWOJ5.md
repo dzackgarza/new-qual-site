@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JWOJ5
 kind: problem
-title: "a."
+title: "Show (without using 3.8.9 in the S&S) that"
 classification:
   areas:
   - complex-analysis

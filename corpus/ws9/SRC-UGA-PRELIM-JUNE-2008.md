@@ -4,7 +4,8 @@ id: SRC-UGA-PRELIM-JUNE-2008
 kind: source
 title: UGA prelim June 2008
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

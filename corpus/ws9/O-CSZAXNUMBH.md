@@ -4,7 +4,8 @@ id: O-CSZAXNUMBH
 kind: occurrence
 title: P-UE5L6 at UGA prelim Spring 2004
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

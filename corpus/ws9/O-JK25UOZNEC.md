@@ -4,7 +4,8 @@ id: O-JK25UOZNEC
 kind: occurrence
 title: P-5HVC4 at UGA prelim Fall 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

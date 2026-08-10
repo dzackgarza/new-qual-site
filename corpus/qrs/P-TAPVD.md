@@ -4,7 +4,8 @@ id: P-TAPVD
 kind: problem
 title: "1. Write $f$ as $f(x,y)$, we are then given that $f_x, f_y \\in C_0(\\th\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

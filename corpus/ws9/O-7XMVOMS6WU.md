@@ -4,7 +4,8 @@ id: O-7XMVOMS6WU
 kind: occurrence
 title: P-H7ERV at UGA prelim June 2015
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

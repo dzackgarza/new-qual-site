@@ -4,7 +4,8 @@ id: P-TOIEK
 kind: problem
 title: "1. Suppose $f_n \\rightrightarrows g$ with each $f_n$ bounded; we want\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

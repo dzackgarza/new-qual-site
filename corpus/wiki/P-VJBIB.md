@@ -4,7 +4,8 @@ id: P-VJBIB
 kind: problem
 title: "1. Parts"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

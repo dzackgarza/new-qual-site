@@ -4,7 +4,8 @@ id: P-LF4NL
 kind: problem
 title: "5. Let $\\delta = \\min\\theset{\\frac 1 2, \\sqrt{\\frac \\varepsilon 2}}$,\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

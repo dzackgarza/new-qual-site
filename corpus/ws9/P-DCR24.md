@@ -4,14 +4,16 @@ id: P-DCR24
 kind: problem
 title: a. Find Sylow subgroups $P_2, P_3$, and $P_5$ for the three primes $2,…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-a. Find Sylow subgroups $P_2, P_3$, and $P_5$ for the three primes $2, 3, 5$ dividing the order of $A_5$. (It suffices to find generators of each of these groups.)
+::: {.problem title="?"}
+a. Find Sylow subgroups $P_2, P_3$, and $P_5$ for the three primes $2, 3, 5$ dividing the order of $A_5$.
+(It suffices to find generators of each of these groups.)
 
 b. Find the normalizers in $A_5$ of each of the three groups you found in part (a).
 

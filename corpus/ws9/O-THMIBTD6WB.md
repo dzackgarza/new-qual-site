@@ -4,7 +4,8 @@ id: O-THMIBTD6WB
 kind: occurrence
 title: P-C6SRA at UGA prelim Summer 2009
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-5DTJK5GWGX
 kind: occurrence
 title: P-7X6ZK at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

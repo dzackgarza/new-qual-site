@@ -4,7 +4,8 @@ id: O-LWOPXWFPZP
 kind: occurrence
 title: P-TGH5F at UGA prelim Fall 2002
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

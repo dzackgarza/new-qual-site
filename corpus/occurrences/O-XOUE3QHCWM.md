@@ -4,7 +4,8 @@ id: O-XOUE3QHCWM
 kind: occurrence
 title: P-UOENS at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

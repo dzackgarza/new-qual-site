@@ -4,14 +4,16 @@ id: P-OW6CS
 kind: problem
 title: Give an example of each of the following or explain why no such exampl…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Give an example of each of the following or explain why no such examples exist. One or two sentence answers will suffice; you don't need to give formal proofs.
+::: {.problem title="?"}
+Give an example of each of the following or explain why no such examples exist.
+One or two sentence answers will suffice; you don't need to give formal proofs.
 
 a. A Galois extension $K/F$ and an intermediate field $E$ ($F \subset E \subset K$) such that $F/E$ is not Galois.
 

@@ -4,14 +4,16 @@ id: P-VUTDR
 kind: problem
 title: Give an example of each of the following. Justification is not necessa…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Give an example of each of the following. Justification is not necessary.
+::: {.problem title="?"}
+Give an example of each of the following.
+Justification is not necessary.
 
 a. A principal ideal domain $D$ that is not a field.
 

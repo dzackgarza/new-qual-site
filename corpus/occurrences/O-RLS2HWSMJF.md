@@ -4,7 +4,8 @@ id: O-RLS2HWSMJF
 kind: occurrence
 title: P-BZIXT at UGA prelim Fall 2017
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

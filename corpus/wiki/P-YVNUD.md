@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YVNUD
 kind: problem
-title: "1."
+title: "Let $f(z) \\in H({\\mathbb D})$, $\\text{Re}(f(z)) >0$ and $f(0)= a>0$."
 classification:
   areas:
   - complex-analysis

@@ -4,7 +4,8 @@ id: O-S2HZOFB7QT
 kind: occurrence
 title: P-IMVV7 at UGA prelim Fall 2002
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

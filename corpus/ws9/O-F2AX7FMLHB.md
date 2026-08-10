@@ -4,7 +4,8 @@ id: O-F2AX7FMLHB
 kind: occurrence
 title: P-OW6CS at UGA prelim June 2012
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

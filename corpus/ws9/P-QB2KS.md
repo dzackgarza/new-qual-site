@@ -4,14 +4,16 @@ id: P-QB2KS
 kind: problem
 title: For each of the following, either give an example or explain why no su…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-For each of the following, either give an example or explain why no such example exists. One or two sentence answers will suffice; you don't need to give formal proofs.
+::: {.problem title="?"}
+For each of the following, either give an example or explain why no such example exists.
+One or two sentence answers will suffice; you don't need to give formal proofs.
 
 a. A commutative ring $R$ and an ideal $I$ of $R$ that is prime but not maximal.
 

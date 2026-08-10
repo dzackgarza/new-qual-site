@@ -4,12 +4,13 @@ id: P-OQW4B
 kind: problem
 title: Find all cube roots of $2-2i$ and express them in the standard form $a…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Find all cube roots of $2-2i$ and express them in the standard form $a + bi$.
 :::

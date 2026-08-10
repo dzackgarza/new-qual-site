@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZNYYP
 kind: problem
-title: "a."
+title: "Show that any finite index subgroup of a finitely generated free group\u2026"
 classification:
   areas:
   - topology

@@ -4,7 +4,8 @@ id: O-RI2XOKTIMI
 kind: occurrence
 title: P-ZSFKA at UGA prelim Summer 2007
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

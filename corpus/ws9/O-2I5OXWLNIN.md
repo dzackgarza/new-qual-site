@@ -4,7 +4,8 @@ id: O-2I5OXWLNIN
 kind: occurrence
 title: P-XERC4 at UGA prelim June 2015
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

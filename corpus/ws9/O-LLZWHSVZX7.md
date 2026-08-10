@@ -4,7 +4,8 @@ id: O-LLZWHSVZX7
 kind: occurrence
 title: P-ABRWU at UGA prelim Fall 2004
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

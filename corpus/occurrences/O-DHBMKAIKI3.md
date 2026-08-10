@@ -4,7 +4,8 @@ id: O-DHBMKAIKI3
 kind: occurrence
 title: P-TO7UO at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

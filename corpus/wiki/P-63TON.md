@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-63TON
 kind: problem
-title: "a."
+title: "Let $R$ be an integral domain with quotient field $F$."
 classification:
   areas:
   - algebra

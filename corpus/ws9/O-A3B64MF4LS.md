@@ -4,7 +4,8 @@ id: O-A3B64MF4LS
 kind: occurrence
 title: P-QDGDN at UGA prelim Fall 2017
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-CDQCAWZLEI
 kind: occurrence
 title: P-HU56P at UGA prelim June 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

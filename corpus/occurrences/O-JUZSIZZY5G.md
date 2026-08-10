@@ -4,7 +4,8 @@ id: O-JUZSIZZY5G
 kind: occurrence
 title: P-Y6XVP at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-77K3OKIHGD
 kind: occurrence
 title: P-3OH6H at UGA prelim Fall 2015
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

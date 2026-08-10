@@ -4,7 +4,8 @@ id: O-PO5KR57JQC
 kind: occurrence
 title: P-ZR2WC at UGA prelim Fall 2017
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-OYHVEUHP7A
 kind: occurrence
 title: P-SUXVR at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

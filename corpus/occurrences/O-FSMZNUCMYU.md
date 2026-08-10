@@ -4,7 +4,8 @@ id: O-FSMZNUCMYU
 kind: occurrence
 title: P-UGR7G at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

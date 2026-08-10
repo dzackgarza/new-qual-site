@@ -4,7 +4,8 @@ id: O-MU2YSYRPL7
 kind: occurrence
 title: P-JHQKZ at UGA prelim Summer 2014
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: P-V4VXC
 kind: problem
 title: a. Find the Maclaurin series expansion of $f(x) = xe^{2x}$ (that is, t…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

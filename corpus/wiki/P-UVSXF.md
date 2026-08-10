@@ -4,14 +4,17 @@ id: P-UVSXF
 kind: problem
 title: "11. $\\displaystyle \\int x\\sqrt {x+1}~dx = \\color {blue} {\\frac {2}{5}\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
+
 11. $\displaystyle \int x\sqrt {x+1}~dx =  \color {blue} {\frac {2}{5} (x + 1)^{\frac {5}{2}} - \frac {2}{3} (x + 1)^{\frac {3}{2}}}$
 
 - **Solution:** $u = x + 1$, $du = dx$
-- **Solution:** $x\sqrt {x + 1} ~dx = (u - 1) \sqrt {u} ~du = u^{\frac {3}{2}} - u^{- \frac {1}{2}} ~du$
-- **Used 2019**
 
+- **Solution:** $x\sqrt {x + 1} ~dx = (u - 1) \sqrt {u} ~du = u^{\frac {3}{2}} - u^{- \frac {1}{2}} ~du$
+
+- **Used 2019**

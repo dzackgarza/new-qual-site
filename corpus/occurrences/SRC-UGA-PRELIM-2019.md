@@ -4,7 +4,8 @@ id: SRC-UGA-PRELIM-2019
 kind: source
 title: UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

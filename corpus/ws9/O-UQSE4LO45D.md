@@ -4,7 +4,8 @@ id: O-UQSE4LO45D
 kind: occurrence
 title: P-UH7ZQ at UGA prelim Fall 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,13 +4,14 @@ id: P-UH7ZQ
 kind: problem
 title: Negate each of the following statements in the most informative way po…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Negate each of the following statements in the most informative way possible (i.e., without using the words "no" or "not").
 
 a. There is an integer $x$ so that $x + y$ is odd for each integer $y$.

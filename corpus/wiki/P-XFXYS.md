@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XFXYS
 kind: problem
-title: "d."
+title: "Deduce from (a) and (b) that the set of nilpotent elements of $R$ is t\u2026"
 classification:
   areas:
   - algebra

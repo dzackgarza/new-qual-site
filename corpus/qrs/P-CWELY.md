@@ -4,7 +4,8 @@ id: P-CWELY
 kind: problem
 title: "1. $V = \\theset{\\vector v \\in \\RR^3 \\suchthat \\inner{\\vector v}{\\theve\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

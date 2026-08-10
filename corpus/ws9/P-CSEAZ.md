@@ -4,7 +4,8 @@ id: P-CSEAZ
 kind: problem
 title: a. List all isomorphism classes of groups of size 120.
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

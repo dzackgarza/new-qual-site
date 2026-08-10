@@ -4,7 +4,8 @@ id: SRC-UGA-PRELIM-FALL-2014
 kind: source
 title: UGA prelim Fall 2014
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

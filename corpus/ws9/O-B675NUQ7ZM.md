@@ -4,7 +4,8 @@ id: O-B675NUQ7ZM
 kind: occurrence
 title: P-3DGMZ at UGA prelim June 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

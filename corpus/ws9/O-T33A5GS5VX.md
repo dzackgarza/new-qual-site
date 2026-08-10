@@ -4,7 +4,8 @@ id: O-T33A5GS5VX
 kind: occurrence
 title: P-SHNTG at UGA prelim July 2013
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

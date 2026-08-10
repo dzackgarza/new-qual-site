@@ -4,7 +4,8 @@ id: SRC-UGA-PRELIM-JUNE-2010
 kind: source
 title: UGA prelim June 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

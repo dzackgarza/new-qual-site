@@ -4,7 +4,8 @@ id: O-JOQ2Y2SMBD
 kind: occurrence
 title: P-R4I5W at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

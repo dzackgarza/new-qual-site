@@ -4,7 +4,8 @@ id: O-VX3WFXPRR7
 kind: occurrence
 title: P-TNZTM at UGA prelim Summer 2014
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

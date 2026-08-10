@@ -4,7 +4,8 @@ id: P-N2NUD
 kind: problem
 title: "2. We need to show that $R$ is reflexive, transitive, and symmetric."
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

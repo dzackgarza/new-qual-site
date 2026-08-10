@@ -8,3 +8,10 @@
   name: Complex Analysis
 - id: topology
   name: Topology
+# UGA's preliminary exam is its own sitting, not a slice of the four quals: it
+# ranges over calculus, analysis, and algebra in one paper. 29 source cards
+# already carry `payload.area: prelim`, which no registry entry matched, so
+# every card downstream of them was unclassifiable. The wiki has carried a
+# `Prelims` subject branch all along.
+- id: prelim
+  name: Prelim

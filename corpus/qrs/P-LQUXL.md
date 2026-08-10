@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LQUXL
 kind: problem
-title: "a."
+title: "Let $G$ be a finite group."
 classification:
   areas:
   - algebra

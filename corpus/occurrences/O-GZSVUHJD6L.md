@@ -4,7 +4,8 @@ id: O-GZSVUHJD6L
 kind: occurrence
 title: P-XIKRI at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,12 +4,13 @@ id: P-NXDOU
 kind: problem
 title: Determine whether the ring $\mathbb{Z}[3i]$ is a UFD.
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Determine whether the ring $\mathbb{Z}[3i]$ is a UFD.
 :::

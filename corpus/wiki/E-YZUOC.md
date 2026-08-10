@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YZUOC
 kind: exercise
-title: "a."
+title: "Let $F$ be an analytic function inside and on a simple closed curve $C\u2026"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VJPUY
 kind: problem
-title: "a."
+title: "Complete this definition: \"$f: \\RR^n\\to \\RR^m$ is real-differentiable\u2026"
 classification:
   areas:
   - complex-analysis
@@ -10,12 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-a.
-Complete this definition: "$f: \RR^n\to \RR^m$ is real-differentiable a point $p\in \RR^n$ iff there exists a linear transformation..."
 
-b.
-Give an example of a function $f:\RR^2\to \RR$ whose first-order partial derivatives exist everywhere but $f$ is not differentiable at $(0, 0)$.
+a. Complete this definition: "$f: \RR^n\to \RR^m$ is real-differentiable a point $p\in \RR^n$ iff there exists a linear transformation..."
 
-c.
-Give an example of a function $f: \RR^2 \to \RR$ which is real-differentiable everywhere but nowhere complex-differentiable.
+b. Give an example of a function $f:\RR^2\to \RR$ whose first-order partial derivatives exist everywhere but $f$ is not differentiable at $(0, 0)$.
 
+c. Give an example of a function $f: \RR^2 \to \RR$ which is real-differentiable everywhere but nowhere complex-differentiable.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RPR4M
 kind: problem
-title: "1."
+title: "Assume $\\displaystyle f(z) = \\sum_{n=0}^\\infty c_n z^n$ converges in $\u2026"
 classification:
   areas:
   - complex-analysis

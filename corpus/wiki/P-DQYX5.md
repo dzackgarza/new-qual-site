@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DQYX5
 kind: problem
-title: "a."
+title: "Let $f, g\\in L^1(\\RR^n)$ and give a definition of $f\\ast g$."
 classification:
   areas:
   - real-analysis

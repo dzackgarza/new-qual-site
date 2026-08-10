@@ -4,7 +4,8 @@ id: O-ARPFZ7CYAF
 kind: occurrence
 title: P-RVMWA at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

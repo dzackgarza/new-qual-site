@@ -4,7 +4,8 @@ id: O-4VAA2FTIIG
 kind: occurrence
 title: P-OY6YK at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

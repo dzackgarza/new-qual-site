@@ -4,7 +4,8 @@ id: O-AVUKYBE6MV
 kind: occurrence
 title: P-SAFVA at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

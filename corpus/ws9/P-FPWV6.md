@@ -4,14 +4,16 @@ id: P-FPWV6
 kind: problem
 title: Provide examples of the following. [No justification is required.]
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Provide examples of the following. [No justification is required.]
+::: {.problem title="?"}
+Provide examples of the following.
+[No justification is required.]
 
 a) a true implication whose converse is false,
 

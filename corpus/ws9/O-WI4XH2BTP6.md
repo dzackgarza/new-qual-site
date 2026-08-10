@@ -4,7 +4,8 @@ id: O-WI4XH2BTP6
 kind: occurrence
 title: P-ZY76X at UGA prelim June 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

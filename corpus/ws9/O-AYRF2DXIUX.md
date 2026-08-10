@@ -4,7 +4,8 @@ id: O-AYRF2DXIUX
 kind: occurrence
 title: P-OQW4B at UGA prelim Spring 2005
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

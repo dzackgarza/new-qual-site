@@ -4,7 +4,8 @@ id: P-SLNSQ
 kind: problem
 title: "1. Note that $8=2^3$ is a prime power $p^n$, so we can get this as a q\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

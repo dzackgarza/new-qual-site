@@ -4,7 +4,8 @@ id: O-6X6XXXZ7TU
 kind: occurrence
 title: P-Y5JK4 at UGA prelim June 2008
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

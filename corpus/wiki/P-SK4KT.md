@@ -2,9 +2,10 @@
 schema: qual/card@1
 id: P-SK4KT
 kind: problem
-title: "3."
+title: "1. Since $A$ is $2\\times 2$ and has 2 eigenvalues, noting that $\\deg \\\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

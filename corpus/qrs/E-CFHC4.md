@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-CFHC4
 kind: exercise
-title: "\\["
+title: "\\int_\\RR {1 \\over (1+x)^2} = {\\pi \\over 2}"
 classification:
   areas:
   - complex-analysis

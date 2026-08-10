@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XBYYR
 kind: exercise
-title: "a."
+title: "State the standard Schwarz reflection principle involving reflection a\u2026"
 classification:
   areas:
   - complex-analysis

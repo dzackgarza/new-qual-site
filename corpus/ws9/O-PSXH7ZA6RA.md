@@ -4,7 +4,8 @@ id: O-PSXH7ZA6RA
 kind: occurrence
 title: P-GW4KD at UGA prelim Summer 2007
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

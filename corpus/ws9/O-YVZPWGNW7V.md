@@ -4,7 +4,8 @@ id: O-YVZPWGNW7V
 kind: occurrence
 title: P-TBQBL at UGA prelim Summer 2009
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

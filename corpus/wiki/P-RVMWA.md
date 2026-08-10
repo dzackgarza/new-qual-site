@@ -4,11 +4,13 @@ id: P-RVMWA
 kind: problem
 title: "1. $\\displaystyle \\int \\sin ^2 (x) ~dx = \\color {blue} {\\frac {1}{2} (\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
+
 1. $\displaystyle \int \sin ^2 (x) ~dx = \color {blue} {\frac {1}{2} (x - \sin (x) \cos (x))}$
 
 - **Solution:** $\sin ^2 (x) = \frac {1 - \cos (2x)}{2}$
@@ -30,6 +32,7 @@ review: draft
 4. $\displaystyle \int \cos ^3 (x) ~dx = \color {blue} {\sin (x) - \frac {1}{3} \sin ^3 (x)} = \color {blue} {\frac {1}{12} \sin (3x) + \frac {3}{4} \sin (x)}$
 
 - **Solution:** $\cos ^3 (x) ~dx = (1 - \sin ^2 (x)) \cos (x) ~dx = (1 - \sin ^2 (x)) ~d\sin(x)$
+
 - **Another Solution:** $\cos ^3 (x) = \frac {1}{4} (3 \cos (x) + \cos (3x))$
 
 5. $\displaystyle \int (\sin(x)+1)^3 ~dx = \color {blue} {\frac {5}{2}x+\frac {1}{3}\cos ^3(x)-4\cos (x)-\frac {3}{4}\sin (2x)}$
@@ -51,6 +54,5 @@ review: draft
 9. $\displaystyle \int \cos^4(x) - \sin^4(x) dx = \color {blue} {\frac {1}{2}\sin{2x}}$
 
 - **Solution:** $\cos ^4 (x) - \sin ^4 (x) = (\cos ^2 (x) - \sin ^2 (x)) (\cos ^2 (x) + \sin ^2 (x)) = \cos ^2 (x) - \sin ^2 (x) = \cos (2x)$
+
 - **Used 2019**
-
-

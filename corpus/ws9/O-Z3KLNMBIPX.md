@@ -4,7 +4,8 @@ id: O-Z3KLNMBIPX
 kind: occurrence
 title: P-7B2CW at UGA prelim Summer 2009
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-4T4Q3HUCW2
 kind: occurrence
 title: P-XRZVW at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

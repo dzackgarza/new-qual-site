@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IE52K
 kind: problem
-title: "a."
+title: "State the three Sylow theorems."
 classification:
   areas:
   - algebra
@@ -10,12 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-a.
-State the three Sylow theorems.
 
-b.
-Prove that any group of order 1225 is abelian.
+a. State the three Sylow theorems.
 
-c.
-Write down exactly one representative in each isomorphism class of abelian groups of order 1225.
+b. Prove that any group of order 1225 is abelian.
 
+c. Write down exactly one representative in each isomorphism class of abelian groups of order 1225.

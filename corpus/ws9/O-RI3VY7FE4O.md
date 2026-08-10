@@ -4,7 +4,8 @@ id: O-RI3VY7FE4O
 kind: occurrence
 title: P-4STQR at UGA prelim Spring 2004
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

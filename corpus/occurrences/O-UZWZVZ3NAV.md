@@ -4,7 +4,8 @@ id: O-UZWZVZ3NAV
 kind: occurrence
 title: P-D75SD at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

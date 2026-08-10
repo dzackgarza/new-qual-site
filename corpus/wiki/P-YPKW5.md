@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YPKW5
 kind: problem
-title: "a."
+title: "Complete this definition: \"$f: \\RR^n\\to \\RR^m$ is real-differentiable\u2026"
 classification:
   areas:
   - complex-analysis

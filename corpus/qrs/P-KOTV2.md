@@ -4,7 +4,8 @@ id: P-KOTV2
 kind: problem
 title: "1. It will exactly be the row space of"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

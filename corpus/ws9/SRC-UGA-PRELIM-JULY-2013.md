@@ -4,7 +4,8 @@ id: SRC-UGA-PRELIM-JULY-2013
 kind: source
 title: UGA prelim July 2013
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

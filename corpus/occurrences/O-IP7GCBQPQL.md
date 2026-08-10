@@ -4,7 +4,8 @@ id: O-IP7GCBQPQL
 kind: occurrence
 title: P-5UMRG at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4KM5P
 kind: problem
-title: "2."
+title: "Show that the above is still true if $\\text{Re}(f(z)) >0$ is replaced\u2026"
 classification:
   areas:
   - complex-analysis

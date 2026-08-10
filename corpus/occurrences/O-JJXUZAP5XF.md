@@ -4,7 +4,8 @@ id: O-JJXUZAP5XF
 kind: occurrence
 title: P-RPSK2 at UGA prelim Fall 2016
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

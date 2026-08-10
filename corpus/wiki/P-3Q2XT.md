@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3Q2XT
 kind: problem
-title: "a."
+title: "Define a *Euclidean domain*."
 classification:
   areas:
   - algebra

@@ -4,7 +4,8 @@ id: P-P7KCE
 kind: problem
 title: "1. Let $\\vector w_i$ be the proposed new basis elements -- then $\\thes\u2026"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

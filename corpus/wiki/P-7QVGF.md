@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7QVGF
 kind: problem
-title: "a."
+title: "Show that if $f$ is continuous with compact support on $\\RR$, then"
 classification:
   areas:
   - real-analysis

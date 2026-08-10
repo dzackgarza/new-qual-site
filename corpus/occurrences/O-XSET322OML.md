@@ -4,7 +4,8 @@ id: O-XSET322OML
 kind: occurrence
 title: P-P7KCE at UGA prelim Fall 2014
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

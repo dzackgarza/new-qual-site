@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DILEG
 kind: problem
-title: "a."
+title: "Give the definition of a **covering space** $\\hat{X}$"
 classification:
   areas:
   - topology

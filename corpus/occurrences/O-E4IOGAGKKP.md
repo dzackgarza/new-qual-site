@@ -4,7 +4,8 @@ id: O-E4IOGAGKKP
 kind: occurrence
 title: P-WJTPS at UGA prelim Fall 2014
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

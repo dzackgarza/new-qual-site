@@ -4,7 +4,8 @@ id: O-IDE7D5F3W4
 kind: occurrence
 title: P-2WRUJ at UGA prelim Fall 2007
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

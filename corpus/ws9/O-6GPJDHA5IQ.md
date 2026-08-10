@@ -4,7 +4,8 @@ id: O-6GPJDHA5IQ
 kind: occurrence
 title: P-3373K at UGA prelim Fall 2005
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-6TQQM5Z4UV
 kind: occurrence
 title: P-34W2F at UGA prelim Fall 2014
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

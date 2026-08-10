@@ -4,7 +4,8 @@ id: O-642WPRAXKN
 kind: occurrence
 title: P-CEU5R at UGA prelim Spring 2007
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

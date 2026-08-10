@@ -4,7 +4,8 @@ id: O-3RMCINJDRS
 kind: occurrence
 title: P-FKEN5 at UGA prelim Fall 2003
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

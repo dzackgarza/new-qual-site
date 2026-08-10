@@ -4,7 +4,8 @@ id: O-3ZV5G46YMJ
 kind: occurrence
 title: P-HXR25 at UGA prelim June 2010
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

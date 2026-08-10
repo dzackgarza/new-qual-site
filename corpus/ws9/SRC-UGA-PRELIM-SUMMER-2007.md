@@ -4,7 +4,8 @@ id: SRC-UGA-PRELIM-SUMMER-2007
 kind: source
 title: UGA prelim Summer 2007
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft

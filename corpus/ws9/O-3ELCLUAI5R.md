@@ -4,7 +4,8 @@ id: O-3ELCLUAI5R
 kind: occurrence
 title: P-KU6C3 at UGA prelim Fall 2002
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,7 +4,8 @@ id: O-HT7GHBYLFH
 kind: occurrence
 title: P-DH6CX at UGA prelim 2018
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

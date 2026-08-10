@@ -4,7 +4,8 @@ id: SRC-PRELIM-ART-A2355I
 kind: source
 title: UGA (undated) (prelim)
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
@@ -16,5 +17,6 @@ payload:
 ---
 
 ::: remark
-UGA (undated) (prelim). Recorded from the source corpus' exam-term annotations.
+UGA (undated) (prelim).
+Recorded from the source corpus' exam-term annotations.
 :::

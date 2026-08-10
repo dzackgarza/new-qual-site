@@ -4,7 +4,8 @@ id: O-JOUWIT5ELB
 kind: occurrence
 title: P-TAPVD at UGA prelim Fall 2015
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

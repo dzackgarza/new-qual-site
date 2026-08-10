@@ -4,7 +4,8 @@ id: O-TMV3UYTDS5
 kind: occurrence
 title: P-RP7WR at UGA prelim July 2013
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

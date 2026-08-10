@@ -4,7 +4,8 @@ id: O-SJU66JFZPS
 kind: occurrence
 title: P-ZYPI3 at UGA prelim June 2012
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HD3G4
 kind: problem
-title: "1."
+title: "Produce sequences $\\{a_n\\},\\,\\{b_n\\}$ of"
 classification:
   areas:
   - real-analysis

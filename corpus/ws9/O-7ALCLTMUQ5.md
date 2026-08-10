@@ -4,7 +4,8 @@ id: O-7ALCLTMUQ5
 kind: occurrence
 title: P-I3UPP at UGA prelim Spring 2006
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

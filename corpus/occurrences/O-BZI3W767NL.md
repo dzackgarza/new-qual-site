@@ -4,7 +4,8 @@ id: O-BZI3W767NL
 kind: occurrence
 title: P-VPCLD at UGA prelim Fall 2016
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

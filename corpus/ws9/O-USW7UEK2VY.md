@@ -4,7 +4,8 @@ id: O-USW7UEK2VY
 kind: occurrence
 title: P-TWH7U at UGA prelim Fall 2006
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

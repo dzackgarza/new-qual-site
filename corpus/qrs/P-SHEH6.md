@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SHEH6
 kind: problem
-title: "\\["
+title: "\\int_{-\\infty}^{\\infty} \\frac{d x}{\\left(1+x^{2}\\right)^{n+1}}=\\frac{1\u2026"
 classification:
   areas:
   - complex-analysis

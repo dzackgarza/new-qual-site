@@ -4,14 +4,16 @@ id: P-QDGDN
 kind: problem
 title: "Let $X$ and $Y$ be sets and let $f: X \\to Y$ and $g: Y \\to X$ be funct…"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Let $X$ and $Y$ be sets and let $f: X \to Y$ and $g: Y \to X$ be functions. We suppose throughout that $g(f(x))=x$ for all $x \in X$.
+::: {.problem title="?"}
+Let $X$ and $Y$ be sets and let $f: X \to Y$ and $g: Y \to X$ be functions.
+We suppose throughout that $g(f(x))=x$ for all $x \in X$.
 
 a. Show that $f$ is injective.
 b. Show that $g$ is surjective.

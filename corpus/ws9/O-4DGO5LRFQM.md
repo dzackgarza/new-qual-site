@@ -4,7 +4,8 @@ id: O-4DGO5LRFQM
 kind: occurrence
 title: P-KBGYN at UGA prelim Fall 2004
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

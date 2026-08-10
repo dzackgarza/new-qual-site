@@ -4,7 +4,8 @@ id: O-L4TFM2HN3M
 kind: occurrence
 title: P-B6FMH at UGA prelim 2019
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

@@ -4,13 +4,14 @@ id: P-YLM7G
 kind: problem
 title: "Suppose $A$, $B$, and $C$ are sets, and $f: B \\to C$ and $g: A \\to B$…"
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Suppose $A$, $B$, and $C$ are sets, and $f: B \to C$ and $g: A \to B$ are functions.
 
 a. Prove that if $f$ and $g$ are surjective (onto), then so is $f \circ g$.

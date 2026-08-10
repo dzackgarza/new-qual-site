@@ -4,7 +4,8 @@ id: O-PTKNABPQLT
 kind: occurrence
 title: P-CZFJJ at UGA prelim June 2012
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

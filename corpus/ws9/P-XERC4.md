@@ -4,14 +4,16 @@ id: P-XERC4
 kind: problem
 title: In each item, a commutative ring $R$ and an ideal $I \subseteq R$ are…
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-In each item, a commutative ring $R$ and an ideal $I \subseteq R$ are given. Determine whether $I$ is prime, maximal, both, or neither.
+::: {.problem title="?"}
+In each item, a commutative ring $R$ and an ideal $I \subseteq R$ are given.
+Determine whether $I$ is prime, maximal, both, or neither.
 
 a. $R = \mathbb{C}[x]$, $I = (x^2+1)$.
 

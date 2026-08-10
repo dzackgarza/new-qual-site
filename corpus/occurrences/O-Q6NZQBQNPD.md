@@ -4,7 +4,8 @@ id: O-Q6NZQBQNPD
 kind: occurrence
 title: P-3CU65 at UGA prelim Fall 2015
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of

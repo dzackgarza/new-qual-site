@@ -4,7 +4,8 @@ id: O-25OTJPCOQR
 kind: occurrence
 title: P-CSEAZ at UGA prelim Summer 2009
 classification:
-  areas: []
+  areas:
+  - prelim
   topics: []
 relations:
 - kind: instance-of
