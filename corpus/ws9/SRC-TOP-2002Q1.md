@@ -20,7 +20,5 @@ payload:
 ---
 
 ::: remark
-The source is `assets/attachments/2002Q1_Topology_Qual.pdf`; its two pages were read
-against the transcription. The exam contains five selected problems from Section A and
-two from Section B, with nine statements supplied in total.
+This source card is provisional. Its problem statements require a fresh transcription directly from the rendered source page before they can be treated as complete.
 :::

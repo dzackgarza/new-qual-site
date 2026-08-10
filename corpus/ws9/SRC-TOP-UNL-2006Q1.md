@@ -18,6 +18,5 @@ payload:
 ---
 
 ::: remark
-The source is `assets/attachments/2006Q1_Topology_Qual.pdf`; all nine numbered
-statements on its single page were transcribed and reread against the rendered page.
+This source card is provisional. Its problem statements require a fresh transcription directly from the rendered source page before they can be treated as complete.
 :::

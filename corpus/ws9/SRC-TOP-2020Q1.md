@@ -18,7 +18,5 @@ payload:
 ---
 
 ::: remark
-The source is `assets/attachments/2020Q1_Topology_Qual.pdf`; all eight numbered
-statements on its single page were transcribed and reread against the rendered page.
-The diagram in B4 is reproduced at `assets/ws9/2020Q1_Topology_B4.png`.
+This source card is provisional. Its problem statements require a fresh transcription directly from the rendered source page before they can be treated as complete.
 :::

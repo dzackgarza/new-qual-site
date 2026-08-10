@@ -1,0 +1,19 @@
+---
+schema: qual/card@1
+id: P-RA19J3
+kind: problem
+title: 'UGA analysis qualifying exam, January 2019, problem 3'
+classification:
+  areas:
+  - real-analysis
+  topics: []
+relations: []
+review: draft
+---
+
+:::{.problem title="?"}
+Determine the values of $x\in\mathbb R$ for which
+$$\sum_{n=1}^{\infty}\frac{x^n}{1+n|x|^n}$$
+converges.
+:::
+
