@@ -1,0 +1,18 @@
+---
+schema: qual/card@1
+id: P-AMD-ZDESK7TT
+kind: problem
+title: Orientable surface of genus $g$
+classification:
+  areas:
+  - topology
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+Orientable surface of genus $g$
+
+1. $g=2$ is given by $a+b-a-b+c+d-c-d$
+:::

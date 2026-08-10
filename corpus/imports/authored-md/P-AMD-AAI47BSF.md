@@ -1,0 +1,18 @@
+---
+schema: qual/card@1
+id: P-AMD-AAI47BSF
+kind: problem
+title: 'Given: $|G| < \infty, \quad H \leq G, \quad N \normal G, (|H|,…'
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+Given: $|G| < \infty, \quad H \leq G, \quad N \normal G, (|H|, [G:N]) = 1$
+
+Show: $H \leq N$
+:::

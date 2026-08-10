@@ -1,0 +1,18 @@
+---
+schema: qual/card@1
+id: P-AMD-MKIM3ULY
+kind: problem
+title: 'Given: $G/Z(G)$ is cyclic'
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.problem}
+Given: $G/Z(G)$ is cyclic
+
+Show: $G$ is abelian
+:::

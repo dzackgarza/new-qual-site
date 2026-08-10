@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: E-AMD-NY3QKBRB
+kind: exercise
+title: Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto…
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.exercise}
+Show that the kernel of the map $G\to \aut(G)$ given by $g\mapsto (h\mapsto ghg\inv)$ is $Z(G)$.
+:::

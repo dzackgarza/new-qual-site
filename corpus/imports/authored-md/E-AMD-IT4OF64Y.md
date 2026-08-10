@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: E-AMD-IT4OF64Y
+kind: exercise
+title: Show that all groups of order 45 are abelian.
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+
+::: {.exercise}
+Show that all groups of order 45 are abelian.
+:::
