@@ -19,4 +19,3 @@ payload:
 ::: remark
 The statement is transcribed from the rendered page 1.
 :::
-
