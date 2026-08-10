@@ -91,6 +91,14 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[str]:
             payload = p.card.payload
             if isinstance(payload, ExamSource) and payload.institution not in vocab["institutions"]:
                 errors.append(f"{where}: unknown institution {payload.institution!r}")
+            # `ExamSource.area` is the only payload area field, and it went
+            # unchecked while `classification.areas` was checked. That is how
+            # `prelim` entered 29 UGA source cards unregistered: nothing rejected
+            # it here, and no card could inherit an area the registry did not
+            # know, so 419 cards ended up with `areas: []`. Registering `prelim`
+            # fixed those 419; this is what stops the next one.
+            if isinstance(payload, ExamSource) and payload.area not in vocab["areas"]:
+                errors.append(f"{where}: unknown area {payload.area!r}")
             if isinstance(payload, TextbookSource) and payload.textbook not in vocab["textbooks"]:
                 errors.append(f"{where}: unknown textbook {payload.textbook!r}")
         if isinstance(p.card, OccurrenceCard):

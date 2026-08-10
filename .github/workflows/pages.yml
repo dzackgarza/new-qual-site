@@ -11,7 +11,28 @@ concurrency:
   group: pages
   cancel-in-progress: false
 jobs:
+  # The corpus's invariants were unchecked in CI: this workflow ran `qualc build`
+  # and nothing else, so a pushed violation deployed. Tests gate the build now.
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e
+        with:
+          enable-cache: true
+      - uses: r-lib/actions/setup-pandoc@d3c5be51b12e724e68f33216ca3c148b66d5f0b6
+        with:
+          pandoc-version: 3.6.1
+      - name: Install Python and project deps
+        run: uv sync --frozen
+      # `needs_source_clones` is deselected because the runner has no clones of
+      # the five source repos. That is an exclusion, not a pass: G9's archive
+      # gate runs those three tests against fresh clones, and no source repo is
+      # archived until they are green there.
+      - name: Run the test suite
+        run: uv run --group dev pytest -q -m "not needs_source_clones"
   build:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262

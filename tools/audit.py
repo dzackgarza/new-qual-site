@@ -26,7 +26,6 @@ from pathlib import Path
 from typing import cast
 
 import yaml
-
 from qualc.cli import load
 from qualc.model import AcademicTerm, ParsedCard, TermOnly, YearOnly, split_front_matter
 from qualc.pandoc_batch import PandocServer
