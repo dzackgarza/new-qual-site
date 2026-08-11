@@ -27,7 +27,7 @@ title: Real Analysis Qualifying Exam
 ## Undergraduate Analysis
 
 > - **References**
->
+>   
 >   - Rudin: Chapters 2, 3, 4, 5, 7
 >
 >   - Folland: Section 0.6
@@ -51,7 +51,7 @@ title: Real Analysis Qualifying Exam
 ## Measure and Integration
 
 > - **References**:
->
+>   
 >   - Folland, Chapters 1, 2
 >
 >   - Stein and Shakarchi, Chapters 1, 2, 6
@@ -87,7 +87,7 @@ title: Real Analysis Qualifying Exam
 ## Function Spaces
 
 > - **References**:
->
+>   
 >   - Folland: Sections 5.2, 5.5, 6.2;
 >
 >   - Stein and Shakarchi: Chapter 4.
@@ -107,7 +107,7 @@ title: Real Analysis Qualifying Exam
 ## Hilbert space and $L^2$ spaces:
 
 > - **References**:
->
+>   
 >   - Folland: Sections 5.2, 5.5, 6.2;
 >
 >   - Stein and Shakarchi: Chapter 4.
