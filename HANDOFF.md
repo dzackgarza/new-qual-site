@@ -45,7 +45,8 @@ Issue #21’s Node 20 Actions warning is a non-blocking operational follow-up.
 
 ## Current state
 
-The source migration records and native source assets are checkpointed in the source migration revision documented below. The worktree must be clean and synchronized before handoff.
+The source migration records and native source assets are checkpointed in the source migration revision documented below.
+The worktree must be clean and synchronized before handoff.
 
 The current PDF slice is only a subset:
 
@@ -87,7 +88,9 @@ Three obligations that earlier records carried as outstanding have landed, and r
 
 - **Direct source evidence is recorded, but the plan's review gate is open.** The ledger has 2,285 rows: 1,773 migrated, 142 generated, 370 operational or empty rows dropped, and 0 queued.
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
-  The plan forbids new migration automation, replay tools, checkers, and scripts. A ledger or replay cannot prove complete migration. An independent complete review of each source and a final cross-review remain required.
+  The plan forbids new migration automation, replay tools, checkers, and scripts.
+  A ledger or replay cannot prove complete migration.
+  An independent complete review of each source and a final cross-review remain required.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
@@ -106,7 +109,8 @@ Preserve those edits while resuming the larger wiki work.
 The closeout work preserves direct source evidence.
 It does not complete the mathematical wiki or prove the plan's independent review gate.
 
-- `artifacts/issue-11/source-reviews/` contains direct evidence records for each source, the bot collection, and the cross-repository boundary. These records explicitly leave the independent review gate open.
+- `artifacts/issue-11/source-reviews/` contains direct evidence records for each source, the bot collection, and the cross-repository boundary.
+  These records explicitly leave the independent review gate open.
 
 - `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in the dirty source clone.
   Their native copies are under `assets/ws9/math-flashcards/untracked/`.
