@@ -45,8 +45,7 @@ Issue #21’s Node 20 Actions warning is a non-blocking operational follow-up.
 
 ## Current state
 
-The current worktree is clean and pushed at `f3e39d74468ce434d1f4765c70dbb993f19a7f7e`.
-The source migration records and native source assets are checkpointed there.
+The current worktree is clean and pushed at `b10eca1ac56069fa7fea22d3601705bb9324a34f`. The source migration records and native source assets are checkpointed there.
 
 The current PDF slice is only a subset:
 
@@ -86,11 +85,8 @@ Three obligations that earlier records carried as outstanding have landed, and r
 - **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
   Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
 
-- **The five-source migration review is recorded.** The ledger has 2,285 rows: 1,773 migrated,
-  142 generated, 370 operational or empty rows dropped, and 0 queued. Native source assets
-  are under `assets/ws9/`. The repository review records are in
-  `artifacts/issue-11/source-reviews/`. The source repositories remain available because
-  archive approval is still an owner decision.
+- **The five-source migration review is recorded.** The ledger has 2,285 rows: 1,773 migrated, 142 generated, 370 operational or empty rows dropped, and 0 queued.
+  Native source assets are under `assets/ws9/`. The repository review records are in `artifacts/issue-11/source-reviews/`. The source repositories remain available because archive approval is still an owner decision.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
@@ -106,16 +102,19 @@ Preserve those edits while resuming the larger wiki work.
 
 ## Source migration closeout boundary
 
-The closeout work secures source content. It does not complete the mathematical wiki.
+The closeout work secures source content.
+It does not complete the mathematical wiki.
 
-- `artifacts/issue-11/source-reviews/` contains one review for each source, the bot
-  collection, and the cross-repository pass.
-- `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in
-  the dirty source clone. Their native copies are under `assets/ws9/math-flashcards/untracked/`.
-- The MathQualBot original repository is unavailable. The 51 vendored images are copied
-  to `assets/ws9/qualbot-question-images/` and checked against their vendored source copies.
-- Issue #11 still needs explicit owner decisions for each source repository. No source
-  repository is archived by this handoff.
+- `artifacts/issue-11/source-reviews/` contains one review for each source, the bot collection, and the cross-repository pass.
+
+- `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in the dirty source clone.
+  Their native copies are under `assets/ws9/math-flashcards/untracked/`.
+
+- The MathQualBot original repository is unavailable.
+  The 51 vendored images are copied to `assets/ws9/qualbot-question-images/` and checked against their vendored source copies.
+
+- Issue #11 still needs explicit owner decisions for each source repository.
+  No source repository is archived by this handoff.
 
 ## Work required to finish the project
 
