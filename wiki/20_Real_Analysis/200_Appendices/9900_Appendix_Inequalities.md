@@ -3,6 +3,8 @@ title: Common Inequalities
 order: 9900
 ---
 
+title: Basics
+
 # Common Inequalities
 
 ## The GOATs
@@ -107,6 +109,15 @@ This appears in several other forms:
 \[
 {1\over 2\pi} \int_{(-\pi, \pi)} \abs{f}^2 = \sum_{k\in \ZZ} \abs{c_k}^2 && c_k \da {1\over 2\pi } \int_{(-\pi, \pi)} f(x) e^{-ikx} \dx
 .\]
+
+:::
+
+:::{.proposition title="Plancherel"}
+\[
+\norm{f}_{L^2}^2 &= \norm{\hat{f}}_{L^2} \\
+\int_{\RR^d} \abs{f}^2 &= \int_{\RR^d} \abs{\hat f}^2
+.\]
+
 
 :::
 

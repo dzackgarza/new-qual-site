@@ -5,6 +5,8 @@ title: Calculus Preliminaries
 
 # Calculus Preliminaries
 
+## Definitions
+
 ## Derivatives 
 
 :::{.proposition title="Contraction principle"}
@@ -65,6 +67,16 @@ J_{F\inv}(q) = \qty{J_F(p)}\inv
 The version for holomorphic functions: if $f\in \Hol(\CC; \CC)$ with $f'(p)\neq 0$ then there is a neighborhood $V\ni p$ with that $f\in \BiHol(V, f(V))$.
 :::
 
+:::{.theorem title="Green's Theorem"}
+If $\Omega \subseteq \CC$ is bounded with $\bd \Omega$ piecewise smooth and $f, g\in C^1(\bar \Omega)$, then
+$$\int_{\bd \Omega} f\, dx + g\, dy = \iint_{\Omega} \qty{ \dd{g}{x} - \dd{f}{y} } \, \dA.$$
+In vector form,
+\[
+\int_\gamma F\cdot \dr = \iint_R \curl F \dA
+.\]
+:::
+## Convergence
+
 :::{.slogan}
 A $C^1$ function is invertible in any neighborhood in which its derivative $f'$ is invertible.
 :::
@@ -76,6 +88,17 @@ Their difference converges to 0, and their common limit is the limit of the sum.
 :::
 
 ## Integrals
+
+:::{.remark}
+Some basic facts needed for line integrals in the plane:
+
+- $\grad f = \tv{ \dd{f}{x}, \dd{f}{y} }$.
+  - If $F = \grad f$ for some $f$, $F$ is a vector field.
+- Given $f(x, y)$ and $\gamma(t)$, the chain rule yields $\dd{}{t} (f\circ \gamma)(t) = \inner{ \grad f\circ \gamma)(t)} {\gamma'(t)}$.
+- For $F(x, y) = \tv{M(x, y), N(x, y)}$, $\curl F = \dd{N}{x} - \dd{M}{y}$ and $\div F = \dd{M}{x} + \dd{N}{y}$.
+- $\int_\gamma F\cdot \dr = \int_a^b F(\gamma(t))\cdot \gamma'(t) \dt$.
+
+:::
 
 ### Green's Theorem
 
@@ -165,6 +188,23 @@ R = {1\over \limsup_n \abs{a_n}^{1\over n}}
 Moreover $f$ is holomorphic in $D_R$, can be differentiated term-by-term, and $f' = \sum_{k\in \NN} n c_k z^k$.
 :::
 
+:::{.fact}
+Recall the **$p\dash$test**:
+\[
+\sum n^{-p} < \infty \iff p \in (1, \infty)
+.\]
+:::
+:::{.fact}
+The product of two sequences is given by the Cauchy product
+\[
+\sum a_kz^k \cdot \sum b_k z^k = \sum c_k z^k,\quad c_k \da \sum_{j\leq k} a_k b_{k-j}
+.\]
+:::
+:::{.fact}
+Recall how to carry out polynomial long division:
+
+:::
+
 :::{.proposition title="The $p\dash$test"}
 Recall the **$p\dash$test**:
 \[
@@ -178,7 +218,36 @@ Recall the **$p\dash$test**:
 A sequence of functions $f_n$ is said to converge **locally uniformly** on $\Omega \subseteq \CC$ iff $f_n\to f$ uniformly on every compact subset $K \subseteq \Omega$.
 :::
 
+:::{.definition title="Equicontinuous Family"}
+A family of functions $f_n$ is **equicontinuous** iff for every $\eps$ there exists a $\delta = \delta(\eps)$ (not depending on $n$ or $f_n$) such that $\abs{x-y}<\eps \implies \abs{f_n(x) - f_n(y)} < \eps$ for all $n$.
+:::
+:::{.remark}
+Recall Arzelà-Ascoli, an analog of Heine-Borel: for $X$ compact Hausdorff, consider the the Banach space $C(X; \RR)$ equipped with the *uniform norm* $\norm{f}_{\infty, X} \da \sup_{x\in X} \abs{f(x)}$.
+Then a subset $A \subseteq X$ is compact iff $A$ is closed, uniformly bounded, and equicontinuous.
+As a consequence, if $A$ is a sequence, it contains a subsequence converging uniformly to a continuous function.
+The proof is an $\eps/3$ argument.
+:::
+:::{.definition title="Normal Family"}
+
+:::
+:::{.remark}
+A continuous function on a compact set is uniformly continuous.
+:::
+:::{.definition title="Univalent functions"}
+A function $f\in \Hol(U; \CC)$ is called **univalent** if $f$ is injective.
+:::
+:::{.remark}
+If $f: \Omega \to \Omega'$ is a univalent surjection, $f$ is invertible on $\Omega$ and $f\inv$ is holomorphic.
+Compare to real functions: $f(x) = x^3$ is injective on $(-c, c)$ for any $c$ but $f'(0) = 0$ and $f\inv(x) \da x^{1/3}$ is not differentiable at zero.
+:::
+## Theorems
+:::{.theorem title="Implicit Function Theorem"}
+
+:::
+
 ## Exercises
+
+[[E-5GT6F]]
 
 [[E-2JGJL]]
 [[E-CLMEK]]

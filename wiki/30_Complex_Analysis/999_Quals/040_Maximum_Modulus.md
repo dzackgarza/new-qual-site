@@ -55,3 +55,10 @@ order: 40
 ## Tie's Extra Questions: Fall 2015
 
 [[P-ALI5T]]
+
+### Spring 20202 HW 3 #  3.8.15
+[[P-VEOV5]]
+### Spring 20202 HW 3 #  3.8.17
+### Spring 20202 HW 3 #  3.8.19
+### Spring 20202 HW 3 #  9
+### Spring 20202 HW 3 #  14

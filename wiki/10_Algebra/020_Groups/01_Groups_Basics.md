@@ -171,6 +171,8 @@ Two subgroups $H, K \leq G$ are **conjugate** iff there exists some $g\in G$ suc
 Note that all conjugate subgroups have the same cardinality.
 :::
 
+[[E-GYGP2]]
+
 [[E-VPWK4]]
 
 [[E-ZCJZC]]
@@ -192,6 +194,8 @@ $N\normal G \iff N = \disjoint' [h_i]$ is a disjoint union of conjugacy classes,
 Note that $C(h_i) = \ts{ gh_i g\inv \st g\in G }$, and $gh_i g\inv \in H$ since $H$ is normal, so $C(h_i) \subseteq G$ for all $i$.
 Conversely, if $C(h_i) \subseteq H$ for all $h_i \in H$, then $gh_ig\inv \in H$ for all $i$ and $H$ is normal.
 :::
+
+[[E-EMESP]]
 
 [[E-LUH54]]
 
@@ -285,9 +289,24 @@ xh_3\in xH &\implies xh_3 = (yh_2h_1\inv) h_3 \in yH
 ,\]
   so $xH \subseteq yH$.
 
-- A symmetric argument shows $y_H \subseteq xH$.[^df_p80_identical_disjoint]
+- A symmetric argument shows $y_H \subseteq xH$.[^df_p80_identical_disjoint-qrs]
 
-[^df_p80_identical_disjoint]: 
+:::
+
+:::{.proof title="?"}
+\envlist
+
+- $x\in xH$, since $e\in H$ because $H$ is a subgroup and we can take $h=e$ to get $x = xe \da xh \in xH$.
+- The reverse containment is clear, so $G = \Union_{x\in G} xH$ is a union of its cosets.
+- Suppose toward a contradiction that $\ell \in xH \intersect yH$ we'll show $xH = yH$.
+- Write $\ell =xh_1 =yh_2$ for some $h_i$, then
+\[
+xh_1 = yh_2 &\implies x = yh_2 h_1\inv \\
+xh_3\in xH &\implies xh_3 = (yh_2h_1\inv) h_3 \in yH
+,\]
+  so $xH \subseteq yH$.
+
+- A symmetric argument shows $y_H \subseteq xH$.[^df_p80_identical_disjoint]
 See full argument: D&F p.80.
 
 :::
@@ -506,4 +525,97 @@ $A_5$ is too big to write down, but has cycle types
 
 ## Exercises
 
+[[E-BAOST]]
+[^df_p80_identical_disjoint-qrs]: See full argument: D&F p.80.
+
 [[E-BH6Q6]]
+
+# Group Theory
+:::{.remark}
+Summary of useful qual tips:
+
+- Slightly obvious but good to remember:
+  - Subgroups of abelian groups are automatically normal.
+  - If $N$ is normal in $G$, then $N$ is normal in any subgroup containing it.
+  - If $N\leq G$ is the unique group of order $\# N$, then $N$ is normal (since any conjugate must have the same size).
+  - Using the subgroup correspondence: if $L/H\leq G/H$ then $L\leq G$ has size $\#(L/H)\#H$.
+- Sizes and structure:
+  - Quotienting by bigger groups yields smaller indices:
+  \[
+  1 \leq H \leq H \leq K \leq G \quad\text{ apply} [G: \wait] &&\implies \# G = [G:1] \geq [G:H] \geq [G:K] \geq [G:G] = 1
+  .\]
+  - $x$ is central iff $[x] = \ts{e}$.
+  - Unions aren't (generally) subgroups, intersections always are.
+  - Coprime order subgroups intersect trivially.
+  - Distinct subgroups of order $p^n, p^m$ can intersect trivially *or* in subgroups of order $p^{\ell}$.
+- Conjugacy:
+  - Sizes of conjugacy classes divide $\# G$ (by orbit-stabilizer).
+  - Conjugate subgroups have equal cardinality.
+  - Normal subgroups absorb conjugacy classes, and are thus unions of conjugacy classes.
+  - Reasoning about conjugacy classes: in $S_n$ they're precisely determined by cycle type, i.e. a partition of $n$.
+  - Remembering the class equation: for literally any group action $\phi: G\actson X$, one has $X = \Fix(\phi) \disjoint' \Orb(x_i)$ as a disjoint union of fixed points and nontrivial orbits, since orbits partition $X$.
+    Then take your action to be $G\actson G$ by $\phi: g.x\da gxg\inv$ to get $\Fix(\phi) = Z(G)$ and $\Orb(x_i) = \ts{gx_ig\inv} = [x_i]$ the conjugacy classes.
+    Now apply orbit stabilizer to get $\Orb(x) \cong G/\Stab(x)$ where $\Stab(x) = Z(x) = C_G(x)$ the centralizer.
+- Cosets:
+  - Cosets partition a group.
+  - Anything dealing with indices $[G:H]$: try just listing the cosets.
+  - $aH = bH \iff ab\inv \in H$.
+  - Showing subgroup containment: $K \subseteq H$ iff $kH = H$ for all $k\in K$.
+- Sylows:
+  - If $S_p$ is normal, then $S_p$ is characteristic.
+    This is useful if $H\leq G$ and $P\in\Syl_p(H)$ is normal in $H$, then $P$ is also normal in $G$.
+
+:::
+## Big List of Notation
+:::{.remark title="Notation"}
+I use the following notation throughout:
+
++--------------------------------------+------------------------------------------------------------------------------------------------------------------+
+| Notation                             | Definition                                                                                                       |
++======================================+==================================================================================================================+
+| $C_G(x)$                             | Centralizer of an element \ |
+|                                      | \( \da \ts{g\in \Gamma \st [g, x] = 1} \subseteq \Gamma \) \ |
++--------------------------------------+---------------------------------------------------------------------------------------+
+| $C_G(H)$                             | Centralizer of an subgroup \ |
+|                                      | \( \da \ts{g\in \Gamma \st [g, x] = 1\,\, \forall h\in H} = \Intersect_{h\in H} C_H(h) \subseteq G \) \ |
++--------------------------------------+---------------------------------------------------------------------------------------+
+| $C(H)$                               | Conjugacy Class  \ |
+|                                      | \( \da \ts{ ghg ^{-1} \st g\in G} \leq G \subseteq G \) \ |
++--------------------------------------+---------------------------------------------------------------------------------------+
+| \( Z(G) \)                           | Center \ |
+|                                      | \( \da \ts{ x\in G \st \forall g\in G,\, gxg ^{-1} = x } \subseteq G \)		|
++--------------------------------------+---------------------------------------------------------------------------------------+
+| \( N_G(H) \)                         | Normalizer \ |
+|                                      | \( \da \ts{ g\in G \st gHg ^{-1} = H } \subseteq G \)		|
++--------------------------------------+---------------------------------------------------------------------------------------+
+| \( \mathrm{Inn}(G) \)                | Inner Automorphisms \ |
+|                                      | \( \da \ts{ \varphi _g(x) \da gxg ^{-1} } \subseteq \Aut(G) \)  |
++--------------------------------------+---------------------------------------------------------------------------------------+
+| \( \mathrm{Out}(G) \)                | Outer Automorphisms \ |
+|                                      | \( \Aut(G) / \Inn(G) \mapsfrom \Aut(G) \) |
++--------------------------------------+---------------------------------------------------------------------------------------+
+|  \( [g h] \)                         |  Commutator of Elements  \ |
+|                                      |  \( \da ghg ^{-1} \in G \)  |
++--------------------------------------+---------------------------------------------------------------------------------------+
+|  \( [G H] \)                         |  Commutator of Subgroups  \ |
+|                                      |  \( \da \gens{ \ts{ [gh] \st g \in G,\, h \in H } } \leq G \)  |
++--------------------------------------+---------------------------------------------------------------------------------------+
+|  \( \OO_x,\, Gx \)                   |  Orbit of an Element  \ |
+|                                      |  \( \da \ts{ gx \st  x \in X} \)  |
++--------------------------------------+---------------------------------------------------------------------------------------+
+|  \( \mathrm{Stab}_G(x),\, G_x \)     |  Stabilizer of an Element \ |
+|                                      |  \( \da \ts{ g \in G \st gx = x } \subseteq G \)  |
++--------------------------------------+---------------------------------------------------------------------------------------+
+|  \( X/G \)                           |  Set of Orbits  \ |
+|                                      |  \( \da \ts{ G_x \st x \in X } \subseteq 2^X \)  |
++--------------------------------------+---------------------------------------------------------------------------------------+
+|  \( X^g \)                           |  Fixed Points  \ |
+|                                      |  \( \ts{x \in X \st \forall g \in G,\, gx = x} \subseteq X \)  |
++--------------------------------------+---------------------------------------------------------------------------------------+
+|  \( 2^X \)                           |  The powerset of \( X \)   \ |
+|                                      |  \( \da \ts{ U \subseteq X }  \)  |
++--------------------------------------+---------------------------------------------------------------------------------------+
+
+:::
+
+[^df_p80_identical_disjoint]:

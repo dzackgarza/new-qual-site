@@ -853,4 +853,3 @@ Alternatively,
 - Now just use the fact that $\bar{k} = \bar{K}$, and since $k\subseteq K$, any $K\dash$morphism is also a $k\dash$morphism.
 - Since $L/k$ is normal, $\sigma(L) = L$ and $L/K$ is thus normal.
 :::
-

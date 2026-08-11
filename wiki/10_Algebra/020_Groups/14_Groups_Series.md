@@ -33,6 +33,12 @@ I.e. for any $N\normal G$, $G \cong E$ for some extension of the form $N\to E\to
 
 :::{.definition title="Lower Central Series"}
 Set $G^0 = G$ and $G^{i+1} = [G, G^i]$, then $G^0 \geq G^1 \geq \cdots$ is the *lower central series* of $G$.
+:::
+> Mnemonic: "lower" because the chain is descending.
+> Iterate the adjoint map $[\wait, G]$, if this terminates then the map is nilpotent, so call $G$ nilpotent!
+
+:::{.definition title="Lower Central Series"}
+Set $G^0 = G$ and $G^{i+1} = [G, G^i]$, then $G^0 \geq G^1 \geq \cdots$ is the *lower central series* of $G$.
 
 > Mnemonic: "lower" because the chain is descending.
 > Iterate the adjoint map $[\wait, G]$, if this terminates then the map is nilpotent, so call $G$ nilpotent!
@@ -54,6 +60,17 @@ Set $G^{(0)} = G$ and $G^{(i+1)} = [G^{(i)}, G^{(i)}]$, then $G^{(0)} \geq G^{(1
 :::
 
 ## Solvability
+
+:::{.remark}
+A useful way to extract normal subgroups: let $G$ act on literally anything by $\phi: G\to \Aut(X)$.
+Then $\ker \phi \normal G$ is always a normal subgroup.
+Some examples:
+
+- $G\actson G$ by $x\mapsto gx$.
+- $G\actson \ts{H\leq G}$ by $H\mapsto gH$ or $H\mapsto gHg\inv$.
+- $G\actson \ts{\Syl_p(G)}$ for a fixed $p$ by $S_p \mapsto gS_p g\inv$.
+- $G\actson H$ for $H\normal G$ by inner automorphisms $h\mapsto ghg\inv$.
+:::
 
 :::{.remark}
 A useful way to extract normal subgroups: let $G$ act on literally anything by $\phi: G\to \Aut(X)$.
@@ -101,3 +118,5 @@ Some useful facts about solvable groups:
 - Every group of order less than 60 is solvable.
 :::
 
+
+## Series of Groups

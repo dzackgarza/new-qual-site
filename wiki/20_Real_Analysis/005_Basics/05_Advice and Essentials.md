@@ -49,6 +49,8 @@ order: 5
 - Integrals
   - Calculus techniques: Taylor series, IVT, MVT, etc.
   - Break up $\RR^n = \theset{\abs{x} \leq 1} \coprod \theset{\abs{x} > 1}$.
+
+    - Or break integration region into disjoint annuli.
     - Or break integration region into disjoint annuli: 
     \[
     \int_\RR f = \sum_{k\geq 0}\int_{2^k}^{2^{k+1}} d
@@ -81,6 +83,8 @@ order: 5
   - Measurable functions are almost continuous,
   - Pointwise convergent sequences of measurable functions are almost uniformly convergent.
 
+- $L^p$ spaces shrink as $p\nearrow \infty$ (by Holder).
+
 - Nesting of $L^p$ spaces: let $p< q$
   - For $\mu(X) = \infty$: no general containments.
   - For $\mu(X) < \infty: p < p+1 < \cdots \implies L^p \supseteq L^{p+1} \supseteq \cdots$.
@@ -109,8 +113,6 @@ $$\sum a_n < \infty \implies a_n \to 0 \qtext{and} \sum_{k=N}^\infty a_n \conver
 :::{.theorem title="Uniform Limit Theorem"}
 If $f_n\to f$ pointwise and uniformly with each $f_n$ continuous, then $f$ is continuous. [^uniform_limit_is_cts]
 
-[^uniform_limit_is_cts]: Slogan: a uniform limit of continuous functions is continuous.
-
 :::
 
 :::{.proof}
@@ -134,16 +136,12 @@ If $f_n \to f$ uniformly, then $\int f_n = \int f$.
 :::{.proposition title="Weak $M\dash$Test"}
 If $f_n(x) \leq M_n$ **for a fixed $x$** where $\sum M_n < \infty$, then the series $f(x) = \sum f_n(x)$ converges pointwise.[^note_about_pointwise_convergence]
 
-[^note_about_pointwise_convergence]: Note that this is only pointwise convergence of $f$, whereas the full $M\dash$test gives uniform convergence.
-
 :::
 
 :::{.proposition title="The Weierstrass $M\dash$Test"}
 If $\sup_{x\in A} \abs{f_n(x)} \leq M_n$ for each $n$ where $\sum M_n < \infty$, then $\sum_{n=1}^\infty f_n(x)$ converges uniformly and absolutely on $A$.
 [^m_test_suffices]
 Conversely, if $\sum f_n$ converges uniformly on $A$ then $\sup_{x\in A} \abs{f_n(x)} \to 0$. 
-
-[^m_test_suffices]: 
 It suffices to show $\abs{f_n(x)} \leq M_n$ for some $M_n$ not depending on $x$.
 
 :::
@@ -223,3 +221,8 @@ $\impliedby$:
 - Then explicitly, $f(x) = \chi_{A}$, which makes $f$ a measurable function.
 :::
 
+[^uniform_limit_is_cts]: Slogan: a uniform limit of continuous functions is continuous.
+
+[^note_about_pointwise_convergence]: Note that this is only pointwise convergence of $f$, whereas the full $M\dash$test gives uniform convergence.
+
+[^m_test_suffices]:

@@ -22,6 +22,38 @@ Equivalently, every open set is a union of basic open sets.
 :::
 
 :::{.definition title="Boundary"}
+The **boundary** of a subset $A\subseteq X$ is defined as $\bd A \da \cl_X(A) \sm \interior{A}$.
+Equivalently, every point $p\in A$ intersects both $A$ and $X\sm A$.
+:::
+:::{.definition title="Bounded"}
+A set $S$ in a metric space $(X, d)$ is *bounded* iff there exists an $m\in \RR$ such that $d(x, y) < m$ for every $x, y\in S$.
+:::
+:::{.definition title="Comparability of topologies"}
+Given two topologies $\tau_1, \tau_2$,
+
+- $\tau_1$ is **finer** than $\tau_2$ iff $\tau_1 \contains \tau_2$.
+- $\tau_1$ is **coarser** than $\tau_2$ iff $\tau_1 \iscontainedin \tau_2$.
+
+Two topologies are **comparable** if either $\tau_1 < \tau_2$ or $\tau_2 < \tau_1$.
+
+> Note: more open sets is like having a "finer" resolution.
+
+:::
+:::{.remark}
+Is this actually a poset relation? Fails reflexivity.
+:::
+:::{.definition title="Connected"}
+A space $X$ is **connected** iff there does not exist a disconnection $X = A\disjoint B$ with $A, B$ nonempty open sets.
+I.e. $X$ can not be written as the disjoint union of two proper nonempty open sets.
+Equivalently, $X$ contains no proper nonempty clopen sets.
+
+Note that there is an additional condition for a subspace $Y\subset X$ to be connected:
+\[
+\cl_{Y}(A) \intersect B = A \intersect \cl_{Y}(B) = \emptyset
+.\]
+:::
+
+:::{.definition title="Boundary"}
 The **boundary** of a subset $A\subseteq X$ is defined as $\bd A \da \cl_X(A) \sm A\interior$.
 Equivalently, every point $p\in A$ intersects both $A$ and $X\sm A$.
 :::
@@ -114,6 +146,32 @@ These classes are the **connected components** of $X$.
 :::{.definition title="Closed Sets"}
 \envlist
 
+- A set is closed if and only if its complement is open.
+- A set is closed iff it contains all of its limit points.
+- A closed set in a subspace: $Y\subset X \implies \cl_{Y}(A) \da \cl_{X}(A)\intersect Y$.
+
+:::
+:::{.definition title="Closed Maps"}
+See \cref{def:open_closed_maps}.
+:::
+:::{.definition title="Closure of a set"}
+For $U \subseteq X$, the closure of $U$ in $X$ is given by $\Cl_X(U) = \intersect_{\substack{ B\supseteq U \\ \text{ closed} }} B$, the intersection of all closed sets in $X$ containing $U$.
+For $Y\subseteq X$ a subspace containing $U$, the closure of $U$ in $Y$ is $\Cl_Y(U) = \Cl_X(U) \intersect Y$.[^closure_relative_theorem-qrs]
+In general, we write $\bar{U} \da \cl_X(U)$.
+
+An equivalent condition: $x\in \bar{U} \iff$ every neighborhood of $x$ intersects $U$.[^munkres_pt_in_closure-qrs]
+This is theorem 17.4 in Munkres
+Munkres 17.5
+
+:::
+:::{.definition title="Compact"}
+A topological space $(X, \tau)$ is **compact** iff every open cover has a *finite* subcover.
+That is, if $\theset{U_{j}}_{j\in J} \subseteq \tau$ is a collection of open sets such that $X = \Union_{j\in J} U_{j}$, then there exists a *finite* subset $J' \subset J$ such that $X \subseteq \Union_{j\in J'} U_{j}$.
+:::
+
+:::{.definition title="Closed Sets"}
+\envlist
+
 - A set $U \subseteq X$ is **closed** in $X$ if and only if its complement $X\sm U$ is open.
 - A set $U$ is **closed** in $X$ iff every limit point of $U$ in $X$ is contained in $U$. 
 - A set $U$ in $X$ is **closed** in $X$ iff $\cl_X(U) = U$.
@@ -138,11 +196,7 @@ For $Y\subseteq X$ a subspace containing $U$, the closure of $U$ in $Y$ is
 In general, we write $\bar{U} \da \cl_X(U)$.
 
 An equivalent condition: $x\in \cl_X(U) \iff$ every neighborhood of $x$ in $X$ intersects $U$.[^munkres_pt_in_closure]
-
-[^closure_relative_theorem]: 
 This is theorem 17.4 in Munkres
-
-[^munkres_pt_in_closure]: 
 Munkres 17.5
 
 :::
@@ -163,11 +217,27 @@ If $A\subseteq X$ is a subspace, then this collection **covers** $A$ iff $A\subs
 
 :::{.definition title="Dense"}
 A subspace $Q\subset X$ is **dense** iff every neighborhood of every point in $x$ intersects $Q$.
+Equivalently, $\cl_X(Q) = Q$.
+:::
+:::{.definition title="Diameter"}
+For a subset $A$ of a metric space $(X, d)$, the **diameter** of $A$ is defined as $\sup_{p, q\in A}d(p, q)$.
+:::
+
+:::{.definition title="Dense"}
+A subspace $Q\subset X$ is **dense** iff every neighborhood of every point in $x$ intersects $Q$.
 Equivalently, $\cl_X(Q) = X$.
 :::
 
 :::{.definition title="First Countable"}
 A space is **first-countable** iff every point admits a countable neighborhood basis.
+:::
+
+:::{.definition title="Hausdorff"}
+A topological space $X$ is *Hausdorff* iff points can be separated by disjoint neighborhoods: for every $p\neq q \in X$ there exist disjoint open sets $U\ni p$ and $V\ni q$.
+:::
+:::{.definition title="Injection"}
+A map $\iota:A\to B$ with a **left** inverse $f:B\to A$ satisfying $f\circ \iota = \id_A$.
+Note that this is equivalent to $f(x) = f(y) \implies x = y$.
 :::
 
 :::{.definition title="Hausdorff"}
@@ -204,6 +274,16 @@ I.e. for all $x\in X$, for all $N_x \ni x$, there exists a connected set $U \sub
 :::
 
 :::{.definition title="Locally Compact"}
+A space $X$ is *locally compact* iff every $x\in X$ has a neighborhood contained in a compact subset of $X$.
+
+> Note: authors such as Hartshorne often *also* require that $X$ is Hausdorff, and refer to the above definition as **quasicompactness**.
+
+:::
+:::{.definition title="Locally Finite"}
+A collection of subsets $\mcs$ of $X$ is *locally finite* iff each point of $M$ has a neighborhood that intersects at most finitely many elements of $\mcs$.
+:::
+
+:::{.definition title="Locally Compact"}
 A space $X$ is **locally compact** iff every $x\in X$ has a neighborhood contained in a compact subset of $X$.
 
 
@@ -235,6 +315,17 @@ A map $f:X\to Y$ is an **open map** (respectively a **closed map**) if and only 
 :::
 
 :::{.definition title="Paracompact"}
+A topological space $X$ is **paracompact** iff every open cover of $X$ admits an open locally finite refinement.
+:::
+:::{.definition title="Quotient Map"}
+A map $q:X\to Y$ is a **quotient map** if and only if
+
+1. $q$ is surjective, and
+2. $U \subseteq Y$ is open if and only if $q ^{-1} (U)$ is open.
+
+:::
+
+:::{.definition title="Paracompact"}
 A **refinement** of an open cover $\mcu \covers X$ is an open cover $\mcv\covers X$ such that for every $V_\beta \in \mcv$, there exists a $U_\alpha \in \mcu$ such that $V_\beta \subseteq U_\alpha$ -- setting $\mcv \leq \mcu$ iff $\mcv$ refines $\mcu$ yields a preorder on all open covers of $X$.
 
 A topological space $X$ is **paracompact** iff every open cover $\mcu\covers X$ admits an locally finite *refinement* -- a division into (potentially more) open subsets $\mcv \covers X$ such that each $x\in X$ is contained in only finitely many $V_\beta$.
@@ -260,11 +351,33 @@ A space $X$ is **path connected** if and only if for every pair of points $x\neq
 :::
 
 :::{.definition title="Path Components"}
+Set $x\sim y$ iff there exists a path-connected set $U\ni x, y$ and take equivalence classes.
+:::
+
+:::{.definition title="Path Components"}
 Set $x\sim y$ iff there exists a path-connected set $U\ni x, y$, then the equivalence classes are the **path components** of $X$.
 :::
 
 :::{.definition title="Precompact"}
 A subset $A\subseteq X$ is **precompact** iff $\cl_{X}(A)$ is compact.
+:::
+
+:::{.definition title="Product topology"}
+For $(X, \tau_X)$ and $(Y, \tau_Y)$ topological spaces, defining
+\[
+\tau_{X \cross Y} \da \ts{U \cross V \st U\in \tau_X,\, V\in \tau_Y}
+\]
+yields the **product topology** on $X \cross Y$.
+:::
+:::{.definition title="Proper"}
+A map $f:X\to Y$ is **proper** if pullbacks of compact sets are compact: if $K \subseteq Y$ is compact, then $f\inv(K) \subseteq X$ is compact.
+:::
+:::{.definition title="Quasicompact"}
+A topological space $X$ (possible non-Hausdorff) is **quasi-compact** iff every open cover admits a finite subcover.
+If $X$ is additionally Hausdorff, $X$ is said to be **compact**.
+
+> Note: this is a distinction coming from algebraic geometry, and Hartshorne in particular.
+
 :::
 
 :::{.definition title="Product and box topologies"}
@@ -350,6 +463,31 @@ A space $X$ is **regular** if whenever $x\in X$ and $F\not\ni x$ is closed, $F$ 
 :::
 
 :::{.definition title="Retract"}
+A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} B$ satisfying $$r\circ\iota = \id_{A}.$$
+A **retract** of $B$ onto a subspace $A$ is a map $r:B\to A$ that is a left-inverse for the inclusion $f:A\injects B$, so $r \circ f = \id_A$:
+
+
+\begin{tikzcd}
+	A && B
+	\arrow["f", from=1-1, to=1-3]
+	\arrow["r"', curve={height=18pt}, dashed, from=1-3, to=1-1]
+	\arrow[loop left, from=1-1]{l}{\mathrm{id}_A}
+\end{tikzcd}
+
+> [Link to (partial) Diagram](https://q.uiver.app/?q=WzAsMixbMCwwLCJBIl0sWzIsMCwiQiJdLFswLDEsImYiXSxbMSwwLCJyIiwyLHsiY3VydmUiOjMsInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dXQ==)
+
+Equivalently, a continuous map $r:B\to A$ with $\ro{r}{A} = \id_A$ restricting to the identity on $A$, i.e. fixing $A$ pointwise.
+Note that $r$ is necessarily a surjection.
+
+Alt:
+Let $X$ be a topological space and $A \subset X$ be a subspace, then a **retraction** of $X$ onto $A$ is a map $r: X\into X$ such that the image of $X$ is $A$ and $r$ restricted to $A$ is the identity.
+:::
+:::{.remark}
+If $X$ retracts onto $A$ with $\iota:A\injects X$, then $i_*$ is injective.
+Any nonempty space retracts to a point via a constant map.
+:::
+
+:::{.definition title="Retract"}
 A **retract** $r$ of $B$ onto a subspace $A$ is a map $r:B\to A$ that is a left-inverse for the inclusion $f:A\injects B$, so $r \circ f = \id_A$:
 
 \begin{tikzcd}
@@ -384,6 +522,10 @@ A space $X$ is **separable** iff $X$ contains a countable dense subset.
 :::
 
 :::{.definition title="Second Countable"}
+A space is *second-countable* iff it admits a countable basis.
+:::
+
+:::{.definition title="Second Countable"}
 A space is **second-countable** iff it admits a countable basis.
 :::
 
@@ -396,6 +538,46 @@ For $(X, \tau)$ a topological space and $U \subseteq X$ an arbitrary subset, the
 
 :::{.definition title="Surjection"}
 A map $\pi$ with a **right** inverse $f$ satisfying $$\pi \circ f = \id$$
+:::
+
+:::{.definition title="$T_n$ Spaces (Separation Axioms)"}
+\envlist
+
+- $T_0$: Points are distinguishable.
+  For any 2 points $x_1\neq x_2$, at least one $x_i$ (say $x_1$) admits a neighborhood not containing $x_2$.
+
+- $T_1$: For any 2 points, *both* admit neighborhoods not containing the other.
+  Equivalently, points are closed.
+
+- $T_2$: For any 2 points, both admit *disjoint* separating neighborhoods.
+
+- $T_{2.5}$: For any 2 points, both admit *disjoint closed* separating neighborhoods.
+
+- $T_3$: $T_0$ & *regular*.
+  Given any point $x$ and any closed $F\not\ni x$, there are neighborhoods separating $F$ and $x$.
+
+- $T_{3.5}$: $T_0$ & completely regular.
+  Any point $x$ and closed $F\not\ni x$ can be separated by a continuous function.
+
+- $T_4$: $T_1$ & normal.
+  Any two disjoint closed subsets can be separated by neighborhoods.
+
+:::
+:::{.example title="Counterexamples for separation axioms"}
+\envlist
+
+- Not $T_0$: the space \( \ts{ f:\RR\to \CC\st \int_\RR \abs{f}^2 < \infty } \), since two a.e. equal functions aren't *distinguishable* (they have precisely the same set of neighborhoods).
+- $T_1$ but not $T_0$: $\spec R$ for $R\in \CRing$ with the Zariski topology.
+  There are points that aren't closed: $\spec R \sm \mspec R$.
+:::
+:::{.definition title="Topology"}
+\envlist
+
+- Using open sets: closed under arbitrary unions and finite intersections.
+- Using closed sets: closed under arbitrary intersections and finite unions.
+:::
+:::{.remark}
+A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is closed in $\RR$.
 :::
 
 :::{.definition title="$T_n$ Spaces (Separation Axioms)"}
@@ -447,6 +629,13 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 A topological **embedding** is a continuous map $f:X\to Y$ which is a homeomorphism onto its image, i.e. $X\cong_{\Top} f(X)$.
 :::
 
+:::{.definition title="Uniform Continuity"}
+For $f: (X, d_{x}) \to (Y, d_{Y})$ metric spaces,
+\[
+\forall \eps > 0, ~\exists \delta > 0 \text{ such that } \quad d_{X}(x_{1}, x_{2}) < \delta \implies d_{Y}(f(x_{1}), f(x_{2})) < \eps
+.\]
+:::
+
 ## Analysis and Metric Spaces
 
 :::{.definition title="Diameter"}
@@ -487,6 +676,10 @@ A\subset X, ~ \diam(A) < \delta_{L} \implies A\subseteq U_\alpha \text{ for some
 
 :::
 
+:::{.definition title="Basis of a module"}
+For an $R\dash$module $M$, a basis $B$ is a linearly independent generating set.
+:::
+
 :::{.definition title="Boundary of a manifold"}
 Points $x\in M^n$ defined by 
 $$
@@ -523,6 +716,26 @@ A *constant map* $f: X\to Y$ iff $f(X) = y_{0}$ for some $y_{0}\in Y$, i.e. for 
 :::
 
 :::{.definition title="Colimit"}
+For a directed system $(X_{i}, f_{ij}$, the **colimit** is an object $X$ with a sequence of projections $\pi_{i}:X\to X_{i}$ such that for any $Y$ mapping into the system, the following diagram commutes:
+
+\begin{tikzcd}
+                 &                            &  & Y \arrow[lldddd, "\psi_{j}"] \arrow[rrdddd, "\psi_{i}"] \arrow[dd, "\exists!", dashed] &  &               &        \\
+                 &                            &  &                                                                                    &  &               &        \\
+                 &                            &  & X \arrow[lldd, "\pi_{j}"] \arrow[rrdd, "\pi_{i}"]                                      &  &               &        \\
+                 &                            &  &                                                                                    &  &               &        \\
+\cdots \arrow[r] & X_{j} \arrow[rrrr, "f_{ij}"] &  &                                                                                    &  & X_{i} \arrow[r] & \cdots
+\end{tikzcd}
+:::
+:::{.example title="of colimits"}
+\envlist
+
+- Products
+- Pullbacks
+- Inverse / projective limits
+- The \( p\dash \)adic integers \( \ZZ_{p} \).
+:::
+
+:::{.definition title="Colimit"}
 For a directed system $(X_{i}, f_{ij})$, the **colimit** is an object $X$ with a sequence of projections $\pi_{i}:X\to X_{i}$ such that for any $Y$ mapping into the system, the following diagram commutes:
 
 \begin{tikzcd}
@@ -549,8 +762,6 @@ A space $X$ is **contractible** if $\id_X$ is nullhomotopic. i.e. the identity i
 
 Equivalently, $X$ is contractible if $X \homotopic \theset{x_0}$ is homotopy equivalent to a point.
 This means that there exists a mutually inverse pair of maps $f: X \into \theset{x_0}$ and $g:\theset{x_0} \into X$ such that $f\circ g \homotopic \id_{\theset{x_0}}$ and $g\circ f \homotopic \id_X$.[^contractible_is_useful]
-
-[^contractible_is_useful]: 
 This is a useful property because it supplies you with a homotopy.
 
 :::
@@ -630,6 +841,34 @@ A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashlef
 
 > Note that this is equality in one direction, but only homotopy equivalence in the other.
 
+Equivalently, a map $F:I\cross X\to X$ such that
+\[
+F_{0}(x) &= \id_{X}
+F_{t}(x)\mid_{A} &= \id_{A}
+F_{1}(X) &= A
+.\]
+
+Alt:
+
+A **deformation retract** is a homotopy $H:X\cross I \into X$ from $\id_X$ to $\id_A$ where $\ro{H}{A} = \id_A$ fixes $A$ at all times.
+$$
+H: X\cross I \to X \\
+H(x, 0) = \id_X \\
+H(x, 1) = \id_A \\
+x\in A \implies H(x, t) \in A \quad \forall t
+$$
+:::
+:::{.remark}
+A deformation retract between a space and a subspace is a homotopy equivalence, and further $X\homotopic Y$ iff there is a $Z$ such that both $X$ and $Y$ are deformation retracts of $Z$. Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$, then $A \homotopic B$.
+
+
+:::
+
+:::{.definition title="Deformation Retract"}
+A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ that is a retraction (so $r\circ \iota = \id_{A}$) *that also satisfies* $\iota \circ r \homotopic \id_{X}$.
+
+> Note that this is equality in one direction, but only homotopy equivalence in the other.
+
 Equivalently, a map $F:I\cross X\to X$ such that 
 \[
 F_{0}(x) &= \id_{X}
@@ -668,6 +907,29 @@ For $x\in M$, the only nonvanishing homology group $H_{i}(M, M - \theset{x}; \ZZ
 
 :::{.definition title="Euler Characteristic"}
 
+:::
+
+:::{.definition title="Exact Functor"}
+A functor $T$ is *right exact* if a short exact sequence
+
+\[0 \to A \to B \to C \to 0
+\]
+yields an exact sequence
+
+\[\ldots TA \to TB \to TC \to 0
+\]
+and is *left exact* if it yields
+
+\[0 \to TA \to TB \to TC \to \ldots
+\]
+Thus a functor is exact iff it is both left and right exact, yielding
+
+\[0 \to TA \to TB \to TC \to 0
+.\]
+
+:::
+:::{.example title="of an exact functor"}
+$\wait \tensor_{R} \wait$ is a right exact bifunctor.
 :::
 
 :::{.definition title="Excision"}
@@ -1113,6 +1375,10 @@ An cochain $c \in C^p(X; R)$ is a map $c \in \hom(C_{p}(X; R), R)$ on chains.
 
 :::
 
+:::{.definition title="Deck transformation"}
+For a covering space $\tilde X \mapsvia{p} X$, self-isomorphisms $f:\tilde X \to \tilde X$ of covering spaces are referred to as **deck transformations**.
+:::
+
 :::{.definition title="Derived Functor"}
 For a functor $T$ and an $R\dash$module $A$, a *left derived functor* $(L_{nT})$ is defined as $h_{n}(TP_{A})$, where $P_{A}$ is a projective resolution of $A$.
 :::
@@ -1212,3 +1478,12 @@ A pairing alone is an $R\dash$bilinear module map, or equivalently a map out of 
 
 :::
 
+[^closure_relative_theorem-qrs]:
+
+[^munkres_pt_in_closure-qrs]:
+
+[^closure_relative_theorem]:
+
+[^munkres_pt_in_closure]:
+
+[^contractible_is_useful]:

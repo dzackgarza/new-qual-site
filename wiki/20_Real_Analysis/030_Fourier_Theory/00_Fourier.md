@@ -214,4 +214,3 @@ Take $q = 1$ in Young's inequality to obtain
 :::{.proposition title="$L^1$ is closed under convolution."}
 If $f, g \in L^1$ then $f\ast g\in L^1$.
 :::
-

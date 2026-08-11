@@ -1,5 +1,16 @@
 # Functional Analysis: General
 
+## Fall 2019 # 4 $$
+## Spring 2019 # 5 $$
+## Spring 2016 # 6
+## Spring 2015 # 5
+## Fall 2015 # 6
+## Fall 2014 # 6
+# Functional Analysis: Banach Spaces
+## Spring 2019 # 1 $$
+## Spring 2017 # 6 $$
+## Fall 2017 # 6 $$
+
 
 
 ## Fall 2019.4
@@ -48,5 +59,3 @@
 ^ffabe6
 
 [[P-UHFLP]]
-
-

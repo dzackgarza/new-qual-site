@@ -79,4 +79,3 @@ If $\mathcal F \subset C(X)$ is a family of continuous functions on $X$, then $\
 .\]
 
 :::
-

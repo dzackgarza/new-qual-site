@@ -43,6 +43,15 @@ In each case, there is a formula
 :::{.proposition title="Polygon Models for Surfaces"}
 Every surface can be obtained as the identification space of a polygon labeled with sides \( \alpha_i, \beta_i, \rho_i \).
 
+![$\Sigma_{3, 3}$](figures/image_2021-04-08-19-40-14.png)?
+![image_2021-04-08-19-40-31](figures/image_2021-04-08-19-40-31.png)
+![image_2021-04-08-19-40-41](figures/image_2021-04-08-19-40-41.png)
+
+:::
+
+:::{.proposition title="Polygon Models for Surfaces"}
+Every surface can be obtained as the identification space of a polygon labeled with sides \( \alpha_i, \beta_i, \rho_i \).
+
 ![figures/image_2021-04-08-19-40-14.png](../../../assets/figures/image_2021-04-08-19-40-14.png)
 
 ![figures/image_2021-04-08-19-40-31.png](../../../assets/figures/image_2021-04-08-19-40-31.png)
@@ -213,4 +222,3 @@ H_*(S^3 \sm K) = [\ZZ, \ZZ, 0, 0, \cdots]
 Apply Mayer-Vietoris, taking $S^3 = n(K) \cup (S^3-K)$, where $n(K) \homotopic S^1$ and $S^3-K \cap n(K) \homotopic T^2$. 
 Use the fact that $S^3-K$ is a connected, open 3-manifold, so $H^3(S^3-K) =0$.
 :::
-

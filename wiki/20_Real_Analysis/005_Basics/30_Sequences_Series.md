@@ -4,6 +4,8 @@ order: 35
 
 # Sequences and Series
 
+## Sequences
+
 ## Sequences of functions
 
 :::{.definition title="limsup of functions"}
@@ -58,6 +60,16 @@ If $0\leq a_n \leq b_n$, then
 - $\sum b_n < \infty \implies \sum a_n < \infty$, and 
 - $\sum a_n = \infty \implies \sum b_n = \infty$.
 
+:::
+
+:::{.proposition title="Small Tails for Series of Functions"}
+If $\sum f_n$ converges then $f_n \to 0$ uniformly.
+:::
+:::{.corollary title="Term by Term Continuity Theorem"}
+If $f_n$ are continuous and $\sum f_n \to f$ converges uniformly, then $f$ is continuous.
+:::
+:::{.proposition title="Cauchy criterion for sums"}
+$f_n$ are uniformly Cauchy (so $\norm{f_n - f_m}_\infty < \eps$) iff $f_n$ is uniformly convergent.
 :::
 
 :::{.proposition title="Sufficient condition for Taylor convergence"}
@@ -165,4 +177,3 @@ If $[a, b] \subset \RR$ is a closed interval and $f$ is continuous, then for eve
 
 Equivalently, polynomials are dense in the Banach space $C([0, 1], \norm{\wait}_\infty)$.
 :::
-

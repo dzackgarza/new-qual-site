@@ -1,5 +1,7 @@
 # Proofs of the Fundamental Theorem of Algebra
 
+### Argument Principle
+
 ## Argument Principle 
 
 :::{.proof title="using the argument principle"}
@@ -15,6 +17,8 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 - Then $g$ has a Laurent series ${n\over z} + {c_2 \over z^2} + \cdots$
 - Integrate term-by-term to get $N(0) = n$.
 :::
+
+### Rouche's Theorem
 
 ## Rouche's Theorem
 
@@ -51,6 +55,8 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::
 
+### Liouville's Theorem
+
 ## Liouville's Theorem
 
 :::{.proof title="?"}
@@ -85,6 +91,8 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::
 
+### Open Mapping Theorem
+
 ## Open Mapping Theorem
 
 :::{.proof title="using the Open Mapping theorem"}
@@ -102,6 +110,8 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 - So $p$ has a root.
 
 :::
+
+### Generalized Liouville
 
 ## Generalized Liouville
 
@@ -123,3 +133,19 @@ If $f:X\to Y$ is a nonconstant holomorphic map between Riemann surfaces with $X$
 Given a nonconstant $p\in \CC[x]$, regard it as a function $p: \PP^1(\CC) \to \PP^1(\CC)$ by extending so that $p(\infty) = \infty$.
 Since $p$ is nonconstant, by the lemma $p$ is surjective, so there exists some $x\neq \infty$ in $\PP^1(\CC)$ with $p(x) = 0$.
 :::
+
+# Unsorted Theorems
+:::{.theorem title="Riemann's Removable Singularity Theorem"}
+If $f$ is holomorphic on $\Omega$ except possibly at $z_0$ and $f$ is bounded on $\Omega\setminus\theset{z_0}$, then $z_0$ is a removable singularity.
+:::
+:::{.theorem title="Little Picard"}
+If $f:\CC\to \CC$ is entire and nonconstant, then $\im(f)$ is either $\CC$ or $\CC\sm\ts{z_0}$ for some point $z_0$.
+:::
+:::{.corollary}
+The ring of holomorphic functions on a domain in $\CC$ has no zero divisors.
+:::
+:::{.proof}
+???
+:::
+Morera
+[[E-QO2S7]]

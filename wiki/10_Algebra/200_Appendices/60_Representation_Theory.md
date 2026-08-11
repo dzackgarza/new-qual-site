@@ -23,4 +23,3 @@ T_g: M &\to M \\
 m &\mapsto g\actson m
 .\]
 :::
-

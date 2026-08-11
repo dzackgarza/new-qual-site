@@ -144,8 +144,6 @@ F_1 = F \disjoint \Disjoint_{k=1}^{\infty} E_k
 3. Approximation: For all $E$ there exists a $G \supseteq E$ such that $m_*(G) \leq m_*(E) + \varepsilon$.
 4. Disjoint[^1] Additivity: $m_*(A \disjoint B) = m_*(A) + m_*(B)$. 
 
-[^1]: This holds for outer measure **iff** $\mathrm{dist}(A, B) > 0$.
-
 :::
 
 :::{.definition title="Lebesgue Measurability"}
@@ -196,6 +194,14 @@ Measurable sets form a sigma algebra, and these are expressed as countable union
 :::{.theorem title="Borel-Cantelli"}
 Let $\{E_{k}\}$ be a countable collection of measurable sets.
 Then
+$$
+\sum_{k} m(E_{k}) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_{k}
+.$$
+:::
+
+:::{.theorem title="Borel-Cantelli"}
+Let $\{E_{k}\}$ be a countable collection of measurable sets.
+Then
 \[
 \sum_{k} m(E_{k}) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_{k}
 \iff
@@ -213,6 +219,16 @@ In words, interpreting $E_k$ as events and $m(E_k) = \PP(E_k)$ as a probability:
 - If $\sum_{j} m(E_{j}) < \infty$, then $\sum_{j=N}^\infty m(E_{j}) \converges{N\to\infty}\to 0$ as the tail of a convergent sequence.
 - $E = \limsup_{j} E_{j} = \intersect_{k=1}^\infty \union_{j=k}^\infty E_{j} \implies E \subseteq \union_{j=k}^\infty$ for all $k$
 - $E \subset \union_{j=k}^\infty \implies m(E) \leq \sum_{j=k}^\infty m(E_{j}) \converges{k\to\infty}\to 0$.
+:::
+
+:::{.proposition title="Extending the class of measurable functions."}
+
+- Characteristic functions are measurable
+- If $f_{n}$ are measurable, so are $\abs{f_{n}}, \limsup f_{n}, \liminf f_{n}, \lim f_{n}$,
+- Sums and differences of measurable functions are measurable,
+- Cones $F(x,y) = f(x)$ are measurable,
+- Compositions $f\circ T$ for $T$ a linear transformation are measurable,
+- "Convolution-ish" transformations $(x,y) \mapsto f(x-y)$ are measurable
 :::
 
 :::{.proposition title="Extending the class of measurable functions."}
@@ -252,3 +268,4 @@ By counterexample: there is a homeomorphism that takes that Cantor set (measure 
 
 :::
 
+[^1]: This holds for outer measure **iff** $\mathrm{dist}(A, B) > 0$.
