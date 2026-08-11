@@ -122,9 +122,9 @@ def check_one_sitting_one_source(parsed: list[ParsedCard]) -> Check:
     )
 
 
-def _manifest_ids() -> set[str]:
+def _manifest_ids(root: Path = REPO) -> set[str]:
     ids: set[str] = set()
-    for path in (REPO / "publications").glob("*.yaml"):
+    for path in (root / "publications").glob("*.yaml"):
         text = path.read_text()
         data = yaml.safe_load(text)
         stack = [data]
@@ -139,7 +139,7 @@ def _manifest_ids() -> set[str]:
     return ids
 
 
-def check_orphans(parsed: list[ParsedCard], wiki_pages: list[WikiPage]) -> Check:
+def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO) -> set[str]:
     """A card is reachable when a page or manifest names it, or when it hangs off
     a card that is. The emitter renders occurrences, hints and solutions on their
     problem's route, so a reader does reach them -- but only through it.
@@ -151,7 +151,7 @@ def check_orphans(parsed: list[ParsedCard], wiki_pages: list[WikiPage]) -> Check
     emitter draws it -- delete `source_page`'s listing and this edge goes too."""
     import panflute as pf
 
-    referenced: set[str] = set(_manifest_ids())
+    referenced: set[str] = set(_manifest_ids(root))
 
     def visit(element: pf.Element) -> None:
         if isinstance(element, pf.Link | IMAGE_ELEMENT):
@@ -197,7 +197,11 @@ def check_orphans(parsed: list[ParsedCard], wiki_pages: list[WikiPage]) -> Check
                 reachable.add(child)
                 frontier.append(child)
 
-    orphans = sorted(item.card.id for item in parsed if item.card.id not in reachable)
+    return {item.card.id for item in parsed if item.card.id not in reachable}
+
+
+def check_orphans(parsed: list[ParsedCard], wiki_pages: list[WikiPage]) -> Check:
+    orphans = sorted(orphan_ids(parsed, wiki_pages))
     if not orphans:
         return Check("orphans")
     head = ", ".join(orphans[:10])

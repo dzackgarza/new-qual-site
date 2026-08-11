@@ -45,8 +45,14 @@ def load(
 
 
 def main(argv: list[str] | None = None) -> int:
+    arguments = list(sys.argv[1:] if argv is None else argv)
+    if arguments and arguments[0] == "replay-sources":
+        from replay_sources import main as replay_main
+
+        return replay_main(arguments[1:])
+
     ap = argparse.ArgumentParser(prog="qualc")
-    ap.add_argument("command", choices=["check", "build"])
+    ap.add_argument("command", choices=["check", "build", "replay-sources"])
     ap.add_argument("--root", type=Path, default=Path.cwd())
     # Diagnostics carry a stable `code`; `--json` exposes it so a caller can
     # assert which check failed instead of grepping the human wording.

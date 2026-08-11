@@ -278,7 +278,7 @@
 {"repo": "qual-wiki", "path": "10_Algebra/TexDocs/data.yaml", "disposition": "dropped", "reason": "non-content file (.yaml)"}
 {"repo": "qual-wiki", "path": "10_Algebra/TexDocs/figures", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-wiki", "path": "10_Algebra/TexDocs/sections", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "qual-wiki", "path": "10_Algebra/TexDocs/tex_tempfiles/QualAlgebra.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-wiki", "path": "10_Algebra/TexDocs/tex_tempfiles/QualAlgebra.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-wiki/10_Algebra/TexDocs/QualAlgebra.md and its sections"}
 {"repo": "qual-wiki", "path": "110_Further Studying.md", "disposition": "migrated", "target": "wiki/110_Further Studying.md", "evidence": "re-materialises to wiki/110_Further Studying.md + 0 cards, all in corpus"}
 {"repo": "qual-wiki", "path": "110_Graduate_Topics.md", "disposition": "migrated", "target": "wiki/110_Graduate_Topics.md", "evidence": "re-materialises to wiki/110_Graduate_Topics.md + 0 cards, all in corpus"}
 {"repo": "qual-wiki", "path": "20_Real_Analysis/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
@@ -346,7 +346,7 @@
 {"repo": "qual-wiki", "path": "20_Real_Analysis/TexDocs/data.yaml", "disposition": "dropped", "reason": "non-content file (.yaml)"}
 {"repo": "qual-wiki", "path": "20_Real_Analysis/TexDocs/figures", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-wiki", "path": "20_Real_Analysis/TexDocs/sections", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "qual-wiki", "path": "20_Real_Analysis/TexDocs/tex_tempfiles/QualReal.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-wiki", "path": "20_Real_Analysis/TexDocs/tex_tempfiles/QualReal.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-wiki/20_Real_Analysis/TexDocs/QualReal.md and its sections"}
 {"repo": "qual-wiki", "path": "20_Real_Analysis/figures/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-wiki", "path": "20_Real_Analysis/figures/2021-06-10_21-54-57.png", "disposition": "migrated", "target": "assets/40_Topology/figures/2021-01-10_23-09.pdf", "evidence": "sha1 da39a3ee5e6b in assets/40_Topology/figures/2021-01-10_23-09.pdf"}
 {"repo": "qual-wiki", "path": "20_Real_Analysis/figures/2021-06-10_21-55-11.png", "disposition": "migrated", "target": "assets/20_Real Analysis/figures/2021-06-10_21-55-11.png", "evidence": "sha1 192096d94414 in assets/20_Real Analysis/figures/2021-06-10_21-55-11.png"}
@@ -634,7 +634,7 @@
 {"repo": "qual-wiki", "path": "30_Complex_Analysis/TexDocs/data.yaml", "disposition": "dropped", "reason": "non-content file (.yaml)"}
 {"repo": "qual-wiki", "path": "30_Complex_Analysis/TexDocs/figures", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-wiki", "path": "30_Complex_Analysis/TexDocs/sections", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "qual-wiki", "path": "30_Complex_Analysis/TexDocs/tex_tempfiles/QualComplex.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-wiki", "path": "30_Complex_Analysis/TexDocs/tex_tempfiles/QualComplex.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-wiki/30_Complex_Analysis/TexDocs/QualComplex.md and its sections"}
 {"repo": "qual-wiki", "path": "30_Complex_Analysis/figures/2021-06-16_16-42-18.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/figures/2021-06-16_16-42-18.png", "evidence": "sha1 0967b7b7db13 in assets/30_Complex_Analysis/figures/2021-06-16_16-42-18.png"}
 {"repo": "qual-wiki", "path": "30_Complex_Analysis/figures/2021-07-29_18-37-57.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/figures/2021-07-29_18-37-57.png", "evidence": "sha1 e4f985a2eacc in assets/30_Complex_Analysis/figures/2021-07-29_18-37-57.png"}
 {"repo": "qual-wiki", "path": "30_Complex_Analysis/figures/2021-07-29_18-38-24.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/figures/2021-07-29_18-38-24.png", "evidence": "sha1 12d853eddbf2 in assets/30_Complex_Analysis/figures/2021-07-29_18-38-24.png"}
@@ -761,7 +761,7 @@
 {"repo": "qual-wiki", "path": "40_Topology/TexDocs/data.yaml", "disposition": "dropped", "reason": "non-content file (.yaml)"}
 {"repo": "qual-wiki", "path": "40_Topology/TexDocs/figures", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-wiki", "path": "40_Topology/TexDocs/sections", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "qual-wiki", "path": "40_Topology/TexDocs/tex_tempfiles/QualTopology.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-wiki", "path": "40_Topology/TexDocs/tex_tempfiles/QualTopology.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-wiki/40_Topology/TexDocs/QualTopology.md and its sections"}
 {"repo": "qual-wiki", "path": "40_Topology/figures/1513062466927.png", "disposition": "migrated", "target": "assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1513062466927.png", "evidence": "sha1 ba497772fece in assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1513062466927.png"}
 {"repo": "qual-wiki", "path": "40_Topology/figures/1513062526623.png", "disposition": "migrated", "target": "assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1513062526623.png", "evidence": "sha1 404343f9b02c in assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1513062526623.png"}
 {"repo": "qual-wiki", "path": "40_Topology/figures/1513062599096.png", "disposition": "migrated", "target": "assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1513062599096.png", "evidence": "sha1 2b62ffc672fe in assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1513062599096.png"}
@@ -1608,7 +1608,7 @@
 {"repo": "qual-review-and-solutions", "path": "Algebra/Review Doc/sections/figures/2021-08-20_19-45-33.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/999_Quals/figures/figures/2021-08-20_19-45-33.png", "evidence": "sha1 8068eadb4c70 in assets/30_Complex_Analysis/999_Quals/figures/figures/2021-08-20_19-45-33.png"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/Review Doc/sections/figures/image_2020-06-01-20-56-35.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/999_Quals/figures/figures/image_2020-06-01-20-56-35.png", "evidence": "sha1 dbfe72dda36d in assets/30_Complex_Analysis/999_Quals/figures/figures/image_2020-06-01-20-56-35.png"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/Review Doc/sections/figures/image_2020-06-12-20-22-43.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/999_Quals/figures/figures/image_2020-06-12-20-22-43.png", "evidence": "sha1 3d49d4f0a4d1 in assets/30_Complex_Analysis/999_Quals/figures/figures/image_2020-06-12-20-22-43.png"}
-{"repo": "qual-review-and-solutions", "path": "Algebra/Review Doc/tex_tempfiles/AlgebraQualNotes.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-review-and-solutions", "path": "Algebra/Review Doc/tex_tempfiles/AlgebraQualNotes.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-review-and-solutions/Algebra/Review Doc/AlgebraQualNotes.md and its sections"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Question (with solutions)/.pandoc", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Question (with solutions)/Makefile", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Question (with solutions)/UGA_Algebra_Qual_Solutions.bib", "disposition": "dropped", "reason": "non-content file (.bib)"}
@@ -1620,7 +1620,7 @@
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Question (with solutions)/data.yaml", "disposition": "dropped", "reason": "non-content file (.yaml)"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Question (with solutions)/figures", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Question (with solutions)/sections", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "qual-review-and-solutions", "path": "Algebra/UGA Question (with solutions)/tex_tempfiles/UGA_Algebra_Qual_Solutions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-review-and-solutions", "path": "Algebra/UGA Question (with solutions)/tex_tempfiles/UGA_Algebra_Qual_Solutions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-review-and-solutions/Algebra/UGA Question (with solutions)/UGA_Algebra_Qual_Solutions.tex"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Questions (no solutions)/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Questions (no solutions)/.pandoc", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Questions (no solutions)/Makefile", "disposition": "dropped", "reason": "non-content file (no ext)"}
@@ -1661,7 +1661,7 @@
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Questions (no solutions)/sections/figures/2021-08-14_18-00-51.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/999_Quals/figures/figures/2021-08-14_18-01-02.png", "evidence": "sha1 381b6b7f5d40 in assets/30_Complex_Analysis/999_Quals/figures/figures/2021-08-14_18-01-02.png"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Questions (no solutions)/sections/figures/2021-08-15_00-02-28.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/999_Quals/figures/figures/2021-08-15_00-02-28.png", "evidence": "sha1 ce5bc6b490b0 in assets/30_Complex_Analysis/999_Quals/figures/figures/2021-08-15_00-02-28.png"}
 {"repo": "qual-review-and-solutions", "path": "Algebra/UGA Questions (no solutions)/sections/figures/image_2021-04-17-02-44-48.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/999_Quals/figures/figures/image_2021-04-17-02-44-48.png", "evidence": "sha1 5d6c742f75ed in assets/30_Complex_Analysis/999_Quals/figures/figures/image_2021-04-17-02-44-48.png"}
-{"repo": "qual-review-and-solutions", "path": "Algebra/UGA Questions (no solutions)/tex_tempfiles/UGA_Algebra_Qual_Questions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-review-and-solutions", "path": "Algebra/UGA Questions (no solutions)/tex_tempfiles/UGA_Algebra_Qual_Questions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-review-and-solutions/Algebra/UGA Questions (no solutions)/UGA_Algebra_Qual_Questions.tex"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/README.md", "disposition": "migrated", "target": "wiki/Complex Analysis/README.md", "evidence": "re-materialises to wiki/Complex Analysis/README.md + 0 cards, all in corpus"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/Review Doc/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
@@ -1764,7 +1764,7 @@
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (no solutions)/sections/figures/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (no solutions)/sections/figures/image_2020-06-17-21-52-40.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/999_Quals/figures/image_2020-06-17-21-52-40.png", "evidence": "sha1 b5ff39d53d0a in assets/30_Complex_Analysis/999_Quals/figures/image_2020-06-17-21-52-40.png"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (no solutions)/sections/figures/image_2020-06-17-21-53-19.png", "disposition": "migrated", "target": "assets/30_Complex_Analysis/999_Quals/figures/image_2020-06-17-21-53-19.png", "evidence": "sha1 00a30ddd005a in assets/30_Complex_Analysis/999_Quals/figures/image_2020-06-17-21-53-19.png"}
-{"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (no solutions)/tex_tempfiles/Complex_Analysis_Problems.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (no solutions)/tex_tempfiles/Complex_Analysis_Problems.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-review-and-solutions/Complex Analysis/UGA Question (no solutions)/Complex_Analysis_Problems.tex"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (with solutions)/.pandoc", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (with solutions)/Complex_Analysis_Solutions.html", "disposition": "dropped", "reason": "non-content file (.html)"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (with solutions)/Complex_Analysis_Solutions.md", "disposition": "generated", "reason": "pandoc aggregate of sections/ (WS2 excluded)"}
@@ -1775,7 +1775,7 @@
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (with solutions)/data.yaml", "disposition": "dropped", "reason": "non-content file (.yaml)"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (with solutions)/figures", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (with solutions)/sections", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (with solutions)/tex_tempfiles/Complex_Analysis_Solutions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-review-and-solutions", "path": "Complex Analysis/UGA Question (with solutions)/tex_tempfiles/Complex_Analysis_Solutions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-review-and-solutions/Complex Analysis/UGA Question (with solutions)/Complex_Analysis_Solutions.tex"}
 {"repo": "qual-review-and-solutions", "path": "LICENSE", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Prelims/sections/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Prelims/sections/2014 Fall.md", "disposition": "migrated", "target": "wiki/Prelims/sections/2014 Fall.md", "evidence": "re-materialises to wiki/Prelims/sections/2014 Fall.md + 6 cards, all in corpus"}
@@ -1869,7 +1869,7 @@
 {"repo": "qual-review-and-solutions", "path": "Real Analysis/UGA Question (with solutions)/data.yaml", "disposition": "dropped", "reason": "non-content file (.yaml)"}
 {"repo": "qual-review-and-solutions", "path": "Real Analysis/UGA Question (with solutions)/figures", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Real Analysis/UGA Question (with solutions)/sections", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "qual-review-and-solutions", "path": "Real Analysis/UGA Question (with solutions)/tex_tempfiles/UGA_Real_Analysis_Qual_Solutions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "qual-review-and-solutions", "path": "Real Analysis/UGA Question (with solutions)/tex_tempfiles/UGA_Real_Analysis_Qual_Solutions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from qual-review-and-solutions/Real Analysis/UGA Question (with solutions)/UGA_Real_Analysis_Qual_Solutions.tex"}
 {"repo": "qual-review-and-solutions", "path": "Real Analysis/UGA Questions (no solutions)/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Real Analysis/UGA Questions (no solutions)/.pandoc", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Real Analysis/UGA Questions (no solutions)/Makefile", "disposition": "dropped", "reason": "non-content file (no ext)"}
@@ -1906,7 +1906,7 @@
 {"repo": "qual-review-and-solutions", "path": "Topology/ReviewDoc/Makefile", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "qual-review-and-solutions", "path": "Topology/ReviewDoc/TopologyQualifyingExamNotes.bib", "disposition": "dropped", "reason": "non-content file (.bib)"}
 {"repo": "qual-review-and-solutions", "path": "Topology/ReviewDoc/TopologyQualifyingExamNotes.html", "disposition": "dropped", "reason": "non-content file (.html)"}
-{"repo": "qual-review-and-solutions", "path": "Topology/ReviewDoc/TopologyQualifyingExamNotes.md", "disposition": "generated", "reason": "TeX macro preamble plus a concatenation of the 19 migrated `Topology/ReviewDoc/sections/*.md` files: all 397 extracted items are present in those sections, and every one of the 702 lines not found there is a `\\newcommand`/`\\renewcommand` preamble line or its continuation"}
+{"repo": "qual-review-and-solutions", "path": "Topology/ReviewDoc/TopologyQualifyingExamNotes.md", "disposition": "generated", "reason": "rebuilt from qual-review-and-solutions/Topology/ReviewDoc/sections/*.md; TeX macro preamble plus a concatenation of the 19 migrated files: all 397 extracted items are present in those sections, and every one of the 702 lines not found there is a `\\newcommand`/`\\renewcommand` preamble line or its continuation"}
 {"repo": "qual-review-and-solutions", "path": "Topology/ReviewDoc/TopologyQualifyingExamNotes.pdf", "disposition": "queued", "target": "assets/Topology/ReviewDoc/TopologyQualifyingExamNotes.pdf", "evidence": "sha1 f770ac9f6428 in assets/Topology/ReviewDoc/TopologyQualifyingExamNotes.pdf", "note": "bytes vendored to corpus/assets", "reason": "past-exam/pset/solution PDF; content not extracted (WS9)"}
 {"repo": "qual-review-and-solutions", "path": "Topology/ReviewDoc/TopologyQualifyingExamNotes.tex", "disposition": "generated", "reason": "LaTeX source of a built doc"}
 {"repo": "qual-review-and-solutions", "path": "Topology/ReviewDoc/TopologyQualifyingExamNotes_stripped.md", "disposition": "generated", "reason": "pandoc-normalised rendering of TopologyQualifyingExamNotes.md (`\\( \\)` math, resolved references); same fenced-div sequence, no statement of its own"}
@@ -2017,12 +2017,12 @@
 {"repo": "make-me-a-qual", "path": "Combined_Questions.md", "disposition": "generated", "reason": "markdown rendering of the migrated Combined_Questions.yaml: all 508 `## Question` statements match a YAML row by exact normalized fingerprint (siblings Combined_Questions.tex/.pdf are already `generated`/`queued`)"}
 {"repo": "make-me-a-qual", "path": "Combined_Questions.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
 {"repo": "make-me-a-qual", "path": "Combined_Questions.tex", "disposition": "generated", "reason": "LaTeX source of a built doc"}
-{"repo": "make-me-a-qual", "path": "Combined_Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Combined_Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "LICENSE", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Makefile", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/Comments.md", "disposition": "dropped", "reason": "contributor's reading advice (which Dummit & Foote and Lang exercise ranges to work); no mathematical statement"}
-{"repo": "make-me-a-qual", "path": "Questions/Algebra/Emory/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Algebra/Emory/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/Extra/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/Extra/Review Questions.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/Extra/UCSD Algebra HW Questions.md", "disposition": "migrated", "target": "corpus/imports/authored-md", "evidence": "58 statements: 0 already migrated by exact fingerprint, 58 routed to new cards (P-AMD-Q626TCVB, P-AMD-IWMSL46U, P-AMD-YAKYTEPB, P-AMD-N76UKBOK\u2026)"}
@@ -2030,37 +2030,37 @@
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/Harvard/Commutative Algebra.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/Harvard/Fields and Galois Theory.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/Harvard/groups.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
-{"repo": "make-me-a-qual", "path": "Questions/Algebra/UGA/QualQuestions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Algebra/UGA/QualQuestions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/UW/JessieLoucks.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Algebra/UW/JessieLoucks.tex", "disposition": "generated", "reason": "LaTeX source of a built doc"}
-{"repo": "make-me-a-qual", "path": "Questions/Algebra/UW/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Algebra/UW/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "Questions/Archive/Emory/main.md", "disposition": "migrated", "target": "corpus/imports/authored-md", "evidence": "37 statements: 26 already migrated by exact fingerprint, 10 by macro-spelling twin (G3 rule), 1 routed to new cards (P-AMD-OOYYQNH5); reconciled against the 36 Emory YAML rows, which the 26 exact plus 10 macro-spelling matches exhaust one-for-one"}
 {"repo": "make-me-a-qual", "path": "Questions/Archive/Emory/main.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Archive/Emory/main.tex", "disposition": "generated", "reason": "LaTeX source of a built doc"}
 {"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/Emory/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/Emory/ComplexQuestions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/Emory/ComplexQuestions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/Harvard/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/Harvard/Complex Analysis.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
-{"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/NUS/NUS_Complex_Analysis.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/NUS/NUS_Complex_Analysis.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/UGA/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/UGA/AllQuestions.md", "disposition": "migrated", "target": "corpus/imports/authored-md", "evidence": "112 statements: 106 already migrated by exact fingerprint, 6 routed to new cards (P-AMD-INYGESUE, P-AMD-SDW3RG7L, P-AMD-YDNWHPDM, P-AMD-JWY5GWNO\u2026)"}
 {"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/UGA/AllQuestions.pdf", "disposition": "migrated", "target": "assets/attachments/Questions_from_Tie.pdf", "evidence": "sha1 33836c152afd in assets/attachments/Questions_from_Tie.pdf"}
 {"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/UGA/Problems by Topic.pdf", "disposition": "queued", "target": "assets/attachments/Azoff Problems by Topic.pdf", "evidence": "sha1 74f45eecd03f in assets/attachments/Azoff Problems by Topic.pdf", "note": "bytes vendored to corpus/assets", "reason": "past-exam/pset/solution PDF; content not extracted (WS9)"}
-{"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/UGA/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Complex_Analysis/UGA/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/Emory/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/Emory/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/Emory/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/Extra/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/NUS/NUS_Real_Analysis.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
-{"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/CombinedQuestions.md", "disposition": "generated", "reason": "pandoc `!include` index naming the 12 `sections/*.md` files; holds no statement of its own"}
+{"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/NUS/NUS_Real_Analysis.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/CombinedQuestions.md", "disposition": "generated", "reason": "rebuilt from make-me-a-qual/Questions/Real_Analysis/UGA/sections/*.md; pandoc `!include` index naming the 12 files; holds no statement of its own"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/CombinedQuestions.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/Fall 2019/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/Fall 2019/Fall_2019_SOLUTIONS.pdf", "disposition": "queued", "target": "assets/Real Analysis/Resources/Example Solutions/Fall_2019_SOLUTIONS.pdf", "evidence": "sha1 98856dcb9d57 in assets/Real Analysis/Resources/Example Solutions/Fall_2019_SOLUTIONS.pdf", "note": "bytes vendored to corpus/assets", "reason": "past-exam/pset/solution PDF; content not extracted (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/Fall 2019/Spring 2019 with Solutions.pdf", "disposition": "queued", "target": "assets/Real Analysis/Resources/Example Solutions/Spring 2019 with Solutions.pdf", "evidence": "sha1 5aeefa3bc488 in assets/Real Analysis/Resources/Example Solutions/Spring 2019 with Solutions.pdf", "note": "bytes vendored to corpus/assets", "reason": "past-exam/pset/solution PDF; content not extracted (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/Fall 2019/Spring2018_SOLUTIONS.pdf", "disposition": "queued", "target": "assets/Real Analysis/Resources/Example Solutions/Spring2018_SOLUTIONS.pdf", "evidence": "sha1 134c499d3965 in assets/Real Analysis/Resources/Example Solutions/Spring2018_SOLUTIONS.pdf", "note": "bytes vendored to corpus/assets", "reason": "past-exam/pset/solution PDF; content not extracted (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/Makefile", "disposition": "dropped", "reason": "non-content file (no ext)"}
-{"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/sections/2014 Fall.md", "disposition": "migrated", "target": "corpus/imports/authored-md", "evidence": "6 statements: 6 already migrated by exact fingerprint, 0 routed to new cards"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/sections/2014 Spring.md", "disposition": "migrated", "target": "corpus/imports/authored-md", "evidence": "5 statements: 4 already migrated by exact fingerprint, 1 routed to new cards (P-HPRVA)"}
 {"repo": "make-me-a-qual", "path": "Questions/Real_Analysis/UGA/sections/2015 Fall.md", "disposition": "migrated", "target": "corpus/imports/authored-md", "evidence": "6 statements: 6 already migrated by exact fingerprint, 0 routed to new cards"}
@@ -2083,7 +2083,7 @@
 {"repo": "make-me-a-qual", "path": "Questions/Topology/UCSD/Justin's Problems.pdf", "disposition": "queued", "reason": "asset not vendored; extraction open (WS9)"}
 {"repo": "make-me-a-qual", "path": "Questions/Topology/UGA/.empty", "disposition": "dropped", "reason": "non-content file (no ext)"}
 {"repo": "make-me-a-qual", "path": "Questions/Topology/UGA/MikeProblems.md", "disposition": "migrated", "target": "corpus/imports/authored-md", "evidence": "160 statements: 159 already migrated by exact fingerprint, 1 routed to new cards (P-AMD-GSAD4GX2)"}
-{"repo": "make-me-a-qual", "path": "Questions/Topology/UGA/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq", "evidence": "imported by tools/import_mmaq.py"}
+{"repo": "make-me-a-qual", "path": "Questions/Topology/UGA/Questions.yaml", "disposition": "migrated", "target": "corpus/imports/mmaq-total", "evidence": "imported by tools/import_mmaq.py"}
 {"repo": "make-me-a-qual", "path": "README.md", "disposition": "dropped", "reason": "repository contribution guide and tool description; no mathematical statement"}
 {"repo": "make-me-a-qual", "path": "Webtool/.empty", "disposition": "dropped", "reason": "web tool / notebook checkpoint (WS7)"}
 {"repo": "make-me-a-qual", "path": "Webtool/Frontend/Algebra.json", "disposition": "dropped", "reason": "web tool / notebook checkpoint (WS7)"}
@@ -2123,9 +2123,9 @@
 {"repo": "make-me-a-qual", "path": "Webtool/webpage_template.html", "disposition": "dropped", "reason": "web tool / notebook checkpoint (WS7)"}
 {"repo": "make-me-a-qual", "path": "make_md_doc.py", "disposition": "dropped", "reason": "non-content file (.py)"}
 {"repo": "make-me-a-qual", "path": "replace.sh", "disposition": "dropped", "reason": "non-content file (.sh)"}
-{"repo": "make-me-a-qual", "path": "tex_tempfiles/Combined_Questions.fdb_latexmk", "disposition": "generated", "reason": "pandoc temp build artifact"}
-{"repo": "make-me-a-qual", "path": "tex_tempfiles/Combined_Questions.fls", "disposition": "generated", "reason": "pandoc temp build artifact"}
-{"repo": "make-me-a-qual", "path": "tex_tempfiles/Combined_Questions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact"}
+{"repo": "make-me-a-qual", "path": "tex_tempfiles/Combined_Questions.fdb_latexmk", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from make-me-a-qual/Combined_Questions.tex"}
+{"repo": "make-me-a-qual", "path": "tex_tempfiles/Combined_Questions.fls", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from make-me-a-qual/Combined_Questions.tex"}
+{"repo": "make-me-a-qual", "path": "tex_tempfiles/Combined_Questions.pdf", "disposition": "generated", "reason": "pandoc temp build artifact rebuilt from make-me-a-qual/Combined_Questions.tex"}
 {"repo": "make-me-a-qual", "path": "unicode_replace.sh", "disposition": "dropped", "reason": "non-content file (.sh)"}
 {"repo": "Analysis-Qual-Compendium", "path": "macros_envs.tex", "disposition": "dropped", "reason": "LaTeX preamble/macros"}
 {"repo": "Analysis-Qual-Compendium", "path": "main.tex", "disposition": "migrated", "target": "existing cards", "evidence": "all 68 problems verified present; see sources/analysis-qual-compendium-occurrences.json"}

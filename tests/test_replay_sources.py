@@ -4,14 +4,13 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from replay_sources import compare_ledger_rows, resolve_target
-
+from replay_sources import LedgerRow, compare_ledger_rows, resolve_target
 
 ROOT = Path(__file__).resolve().parent.parent
 
 
 def test_ledger_comparison_rejects_a_source_path_drift() -> None:
-    rows = [{"repo": "qual-wiki", "path": "README.md", "disposition": "dropped", "reason": "documentation"}]
+    rows: list[LedgerRow] = [{"repo": "qual-wiki", "path": "README.md", "disposition": "dropped", "reason": "documentation"}]
 
     result = compare_ledger_rows(
         rows,
