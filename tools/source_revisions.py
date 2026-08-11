@@ -46,4 +46,4 @@ SOURCE_REVISIONS: tuple[SourceRevision, ...] = (
     ),
 )
 
-TARGET_COMMIT = "510f68f84d41594949b88cf7e280a49821856a8c"
+TARGET_COMMIT = "1e0d5f1e4ff8daef6dbe4c20a5f3ca30eddd2fe7"
