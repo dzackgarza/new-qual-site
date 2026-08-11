@@ -1,353 +1,353 @@
 {
- "_provenance": {
-  "source": "Analysis-Qual-Compendium (LaTeX, UGA Real Analysis quals Spring 2014 - Fall 2019)",
-  "finding": "All 68 problem statements are already present in the corpus (via qual-wiki and qual-review-and-solutions); every proof block is empty. The repo was NOT routed as cards: doing so would inject 68 solution-less duplicate stubs and violate the content-addressed dedup model.",
-  "value": "Its one unique asset is clean per-sitting exam-term attribution across 12 sittings. This file records, for each compendium problem, the existing card it corresponds to -- a verified seed for the WS5 occurrence work.",
-  "method": "token-containment match after stripping pandoc conversion artifacts; 64/68 auto-matched >=0.75, 4 pure-formula problems pinned by direct formula search."
- },
- "occurrences": [
-  {
-   "exam_term": "Fall 2019 #1",
-   "card": "P-QOC7V.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2019 #2",
-   "card": "P-S2SVK.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2019 #3",
-   "card": "P-B6S3M.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2019 #4",
-   "card": "P-X3MW2.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2019 #5",
-   "card": "P-7QVGF.md",
-   "confidence": 0.83
-  },
-  {
-   "exam_term": "Spring 2019 #1",
-   "card": "P-GJ7RY.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2019 #2",
-   "card": "P-ALZSD.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2019 #3",
-   "card": "P-XWL4U.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2019 #4",
-   "card": "P-ZCE6E.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2019 #5",
-   "card": "P-K7QEP.md",
-   "confidence": 0.97
-  },
-  {
-   "exam_term": "Fall 2018 #1",
-   "card": "P-XEEUX.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2018 #2",
-   "card": "P-OPH7A.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2018 #3",
-   "card": "P-CFEIR.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2018 #4",
-   "card": "P-NVVZJ.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2018 #5",
-   "card": "P-ZWJ7K.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2018 #6",
-   "card": "P-VYRJF.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2018 #1",
-   "card": "P-G373O.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2018 #2",
-   "card": "P-RHNMI.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2018 #3",
-   "card": "P-ZCE6E.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2018 #4",
-   "card": "P-SAIVF.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2018 #5",
-   "card": "P-TNOTE.md",
-   "confidence": 0.75
-  },
-  {
-   "exam_term": "Fall 2017 #1",
-   "card": "P-STYWD.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2017 #2",
-   "card": "P-UCPPT.md",
-   "confidence": 0.9
-  },
-  {
-   "exam_term": "Fall 2017 #3",
-   "card": "P-CKY3L.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2017 #4",
-   "card": "P-DEFYR.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2017 #5",
-   "card": "P-L44W5.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2017 #6",
-   "card": "P-UHFLP.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2017 #1",
-   "card": "P-TPZF3.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2017 #2",
-   "card": "P-25AFH.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2017 #3",
-   "card": "P-4RXD2.md",
-   "confidence": 0.83
-  },
-  {
-   "exam_term": "Spring 2017 #4",
-   "card": "P-QNJ6C.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2017 #5",
-   "card": "P-BXD6O.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2017 #5",
-   "card": "P-KVE3S.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2016 (Neil-ish) #1",
-   "card": "P-MMCHV.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2016 (Neil-ish) #2",
-   "card": "P-OPH7A.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2016 (Neil-ish) #3",
-   "card": "P-7QVGF.md",
-   "confidence": null,
-   "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
-  },
-  {
-   "exam_term": "Fall 2016 (Neil-ish) #4",
-   "card": "P-L7G3D.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2016 (Neil-ish) #5",
-   "card": "P-LG4GL.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2016 (Neil-ish) #6",
-   "card": "P-AKPMF.md",
-   "confidence": null,
-   "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
-  },
-  {
-   "exam_term": "Spring 2016 (Neil-ish) #1",
-   "card": "P-VXO5U.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2016 (Neil-ish) #2",
-   "card": "P-J25XX.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2016 (Neil-ish) #3",
-   "card": "P-P2UWB.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2016 (Neil-ish) #4",
-   "card": "P-O5S6X.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2016 (Neil-ish) #5",
-   "card": "P-7UD7E.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2016 (Neil-ish) #6",
-   "card": "P-WWNJC.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2015 #1",
-   "card": "P-XHEB6.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2015 #2",
-   "card": "P-VAZ3Z.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2015 #3",
-   "card": "P-VYRJF.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2015 #4",
-   "card": "P-LG4GL.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2015 #5",
-   "card": "P-RDMYM.md",
-   "confidence": 0.78
-  },
-  {
-   "exam_term": "Fall 2015 #6",
-   "card": "P-ZZXH3.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2015 #1",
-   "card": "P-BH66D.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2015 #2",
-   "card": "P-JP74P.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2015 #3",
-   "card": "P-E5NRO.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2015 #4",
-   "card": "P-ZAS5Z.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2015 #5",
-   "card": "P-BH7BM.md",
-   "confidence": 0.94
-  },
-  {
-   "exam_term": "Spring 2015 #6",
-   "card": "P-ZOTXG.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2014 #1",
-   "card": "P-XL7MP.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2014 #2",
-   "card": "P-RHDT6.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2014 #3",
-   "card": "P-J745K.md",
-   "confidence": null,
-   "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
-  },
-  {
-   "exam_term": "Fall 2014 #4",
-   "card": "P-XL7MP.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2014 #5",
-   "card": "P-5QNZJ.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Fall 2014 #6",
-   "card": "P-AKPMF.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2014 #1",
-   "card": "P-UMAQ5.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2014 #2",
-   "card": "P-XUV2I.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2014 #3",
-   "card": "P-ZCE6E.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2014 #4",
-   "card": "P-KGSPZ.md",
-   "confidence": 1.0
-  },
-  {
-   "exam_term": "Spring 2014 #5",
-   "card": "P-ZZXH3.md",
-   "confidence": 0.5
-  }
- ]
+  "_provenance": {
+    "source": "Analysis-Qual-Compendium (LaTeX, UGA Real Analysis quals Spring 2014 - Fall 2019)",
+    "finding": "All 68 problem statements are already present in the corpus (via qual-wiki and qual-review-and-solutions); every proof block is empty. The repo was NOT routed as cards: doing so would inject 68 solution-less duplicate stubs and violate the content-addressed dedup model.",
+    "value": "Its one unique asset is clean per-sitting exam-term attribution across 12 sittings. This file records, for each compendium problem, the existing card it corresponds to -- a verified seed for the WS5 occurrence work.",
+    "method": "token-containment match after stripping pandoc conversion artifacts; 64/68 auto-matched >=0.75, 4 pure-formula problems pinned by direct formula search."
+  },
+  "occurrences": [
+    {
+      "exam_term": "Fall 2019 #1",
+      "card": "P-QOC7V.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2019 #2",
+      "card": "P-S2SVK.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2019 #3",
+      "card": "P-B6S3M.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2019 #4",
+      "card": "P-X3MW2.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2019 #5",
+      "card": "P-7QVGF.md",
+      "confidence": 0.83
+    },
+    {
+      "exam_term": "Spring 2019 #1",
+      "card": "P-GJ7RY.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2019 #2",
+      "card": "P-ALZSD.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2019 #3",
+      "card": "P-XWL4U.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2019 #4",
+      "card": "P-ZCE6E.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2019 #5",
+      "card": "P-K7QEP.md",
+      "confidence": 0.97
+    },
+    {
+      "exam_term": "Fall 2018 #1",
+      "card": "P-XEEUX.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2018 #2",
+      "card": "P-OPH7A.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2018 #3",
+      "card": "P-CFEIR.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2018 #4",
+      "card": "P-NVVZJ.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2018 #5",
+      "card": "P-ZWJ7K.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2018 #6",
+      "card": "P-VYRJF.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2018 #1",
+      "card": "P-G373O.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2018 #2",
+      "card": "P-RHNMI.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2018 #3",
+      "card": "P-ZCE6E.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2018 #4",
+      "card": "P-SAIVF.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2018 #5",
+      "card": "P-TNOTE.md",
+      "confidence": 0.75
+    },
+    {
+      "exam_term": "Fall 2017 #1",
+      "card": "P-STYWD.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2017 #2",
+      "card": "P-UCPPT.md",
+      "confidence": 0.9
+    },
+    {
+      "exam_term": "Fall 2017 #3",
+      "card": "P-CKY3L.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2017 #4",
+      "card": "P-DEFYR.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2017 #5",
+      "card": "P-L44W5.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2017 #6",
+      "card": "P-UHFLP.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2017 #1",
+      "card": "P-TPZF3.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2017 #2",
+      "card": "P-25AFH.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2017 #3",
+      "card": "P-4RXD2.md",
+      "confidence": 0.83
+    },
+    {
+      "exam_term": "Spring 2017 #4",
+      "card": "P-QNJ6C.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2017 #5",
+      "card": "P-BXD6O.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2017 #5",
+      "card": "P-KVE3S.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2016 (Neil-ish) #1",
+      "card": "P-MMCHV.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2016 (Neil-ish) #2",
+      "card": "P-OPH7A.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2016 (Neil-ish) #3",
+      "card": "P-7QVGF.md",
+      "confidence": null,
+      "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
+    },
+    {
+      "exam_term": "Fall 2016 (Neil-ish) #4",
+      "card": "P-L7G3D.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2016 (Neil-ish) #5",
+      "card": "P-LG4GL.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2016 (Neil-ish) #6",
+      "card": "P-AKPMF.md",
+      "confidence": null,
+      "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
+    },
+    {
+      "exam_term": "Spring 2016 (Neil-ish) #1",
+      "card": "P-VXO5U.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2016 (Neil-ish) #2",
+      "card": "P-J25XX.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2016 (Neil-ish) #3",
+      "card": "P-P2UWB.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2016 (Neil-ish) #4",
+      "card": "P-O5S6X.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2016 (Neil-ish) #5",
+      "card": "P-7UD7E.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2016 (Neil-ish) #6",
+      "card": "P-WWNJC.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2015 #1",
+      "card": "P-XHEB6.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2015 #2",
+      "card": "P-VAZ3Z.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2015 #3",
+      "card": "P-VYRJF.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2015 #4",
+      "card": "P-LG4GL.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2015 #5",
+      "card": "P-RDMYM.md",
+      "confidence": 0.78
+    },
+    {
+      "exam_term": "Fall 2015 #6",
+      "card": "P-ZZXH3.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2015 #1",
+      "card": "P-BH66D.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2015 #2",
+      "card": "P-JP74P.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2015 #3",
+      "card": "P-E5NRO.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2015 #4",
+      "card": "P-ZAS5Z.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2015 #5",
+      "card": "P-BH7BM.md",
+      "confidence": 0.94
+    },
+    {
+      "exam_term": "Spring 2015 #6",
+      "card": "P-ZOTXG.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2014 #1",
+      "card": "P-XL7MP.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2014 #2",
+      "card": "P-RHDT6.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2014 #3",
+      "card": "P-J745K.md",
+      "confidence": null,
+      "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
+    },
+    {
+      "exam_term": "Fall 2014 #4",
+      "card": "P-XL7MP.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2014 #5",
+      "card": "P-5QNZJ.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Fall 2014 #6",
+      "card": "P-AKPMF.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2014 #1",
+      "card": "P-UMAQ5.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2014 #2",
+      "card": "P-XUV2I.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2014 #3",
+      "card": "P-ZCE6E.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2014 #4",
+      "card": "P-KGSPZ.md",
+      "confidence": 1.0
+    },
+    {
+      "exam_term": "Spring 2014 #5",
+      "card": "P-ZZXH3.md",
+      "confidence": 0.5
+    }
+  ]
 }
