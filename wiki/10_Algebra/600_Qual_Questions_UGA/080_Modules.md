@@ -3,7 +3,7 @@
 ## General Questions
 ## Spring 2017 #3
 [[P-DLPD4]]
-## Spring 2020 #5 $$
+## Spring 2020 #5
 
 ## Annihilators
 

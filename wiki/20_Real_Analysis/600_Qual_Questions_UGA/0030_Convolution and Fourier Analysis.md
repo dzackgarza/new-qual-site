@@ -1,8 +1,8 @@
 # $L^2$ and Fourier Analysis
 
-## Spring 2020 # 6 $$
+## Spring 2020 # 6
 [[P-MKF4V]]
-## Fall 2017 # 5 $$
+## Fall 2017 # 5
 [[P-L44W5]]
 ## Spring 2017 # 5
 ## Spring 2015 # 6

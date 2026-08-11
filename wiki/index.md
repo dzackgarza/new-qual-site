@@ -40,6 +40,8 @@ Look at past prelims/quals:
 - Harvard Prelims: <http://www.math.harvard.edu/graduate/index.html#past>
 - UCLA Prelims and Quals: <https://secure.math.ucla.edu/gradquals/hbquals.php>
 
+Browse the corpus by where it came from: [[000_Card_Archives]]
+
 ## Reading/Studying
 
 Dive into some topics here:

@@ -1,6 +1,6 @@
 # Liouville's Theorem, Power Series (8155e)
 
-## 1 $$
+## 1
 
 [[P-6VF7J]]
 
@@ -13,13 +13,13 @@
 
 [[P-GRNXH]]
 
-## 5 $$
+## 5
 
 [[P-ZZO3P]]
 
 
 
-## 6 $$
+## 6
 [[P-YGU32]]
 
 

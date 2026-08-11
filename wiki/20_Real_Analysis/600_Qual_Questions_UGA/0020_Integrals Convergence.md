@@ -1,18 +1,18 @@
 # Integrals: Convergence
 
-## Fall 2019 # 2 $$
-## Spring 2020 # 5 $$
-## Spring 2019 # 3 $$
-## Fall 2018 # 6 $$
+## Fall 2019 # 2
+## Spring 2020 # 5
+## Spring 2019 # 3
+## Fall 2018 # 6
 ## Fall 2018 # 3
-## Spring 2018 # 5 $$
-## Spring 2018 # 2 $$
+## Spring 2018 # 5
+## Spring 2018 # 2
 [[P-RHNMI]]
-## Fall 2016 # 3 $$
+## Fall 2016 # 3
 ## Fall 2015 # 3
 [[P-O6T63]]
 ## Fall 2015 # 4
-## Spring 2021 # 2 $$
+## Spring 2021 # 2
 ## Spring 2021 # 5
 [[P-Y4YM6]]
 
