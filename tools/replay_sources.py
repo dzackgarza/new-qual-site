@@ -301,21 +301,21 @@ def _write_proof(path: Path, report: ReplayReport) -> None:
     lines = [
         "# Fresh-clone source replay",
         "",
-        f"Target revision: `{report.target_commit}`",
-        f"Candidate ledger rows: {report.ledger_rows}",
+        f"Target revision: `{report.target_commit}` Candidate ledger rows: {report.ledger_rows}",
         "",
         "Source revisions:",
         "",
     ]
-    lines.extend(f"- `{r.name}` `{r.branch}` `{r.commit}` via `{r.ssh_url}`" for r in report.source_revisions)
+    for revision in report.source_revisions:
+        lines.extend([f"- `{revision.name}` `{revision.branch}` `{revision.commit}` via `{revision.ssh_url}`", ""])
     lines.extend(
         [
-            "",
-            "The command cloned each source over SSH into a new temporary root, checked out the recorded commit, and verified a clean worktree. "
+            "The command cloned each source over SSH into a new temporary root, checked out the recorded commit, and verified a clean worktree.",
             "It compared every tracked path with the committed ledger, then verified migrated targets and source hashes.",
             "It also verified generated-source reasons, queued owners, dropped-source reasons, and the recorded G7 residual.",
             "",
-            "This proves source preservation and build-integrity inputs. It does not prove that the mathematical wiki is complete.",
+            "This proves source preservation and build-integrity inputs.",
+            "It does not prove that the mathematical wiki is complete.",
         ]
     )
     path.parent.mkdir(parents=True, exist_ok=True)
