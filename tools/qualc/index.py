@@ -111,22 +111,14 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
         if isinstance(p.card, OccurrenceCard):
             src = by_id.get(p.card.payload.source)
             if src is None:
-                errors.append(
-                    Diagnostic("occurrence-missing-source", where, f"names missing source {p.card.payload.source!r}")
-                )
+                errors.append(Diagnostic("occurrence-missing-source", where, f"names missing source {p.card.payload.source!r}"))
             elif not isinstance(src.card, SourceCard):
-                errors.append(
-                    Diagnostic("occurrence-source-not-a-source-card", where, f"{p.card.payload.source} is not a source card")
-                )
+                errors.append(Diagnostic("occurrence-source-not-a-source-card", where, f"{p.card.payload.source} is not a source card"))
             targets = [r.target for r in p.card.relations if r.kind == "instance-of"]
             if len(targets) != 1:
-                errors.append(
-                    Diagnostic("occurrence-instance-of-count", where, "occurrence needs exactly one instance-of relation")
-                )
+                errors.append(Diagnostic("occurrence-instance-of-count", where, "occurrence needs exactly one instance-of relation"))
             elif targets[0] in by_id and by_id[targets[0]].card.kind != "problem":
-                errors.append(
-                    Diagnostic("occurrence-instance-of-not-a-problem", where, "instance-of must target a problem")
-                )
+                errors.append(Diagnostic("occurrence-instance-of-not-a-problem", where, "instance-of must target a problem"))
     return errors
 
 

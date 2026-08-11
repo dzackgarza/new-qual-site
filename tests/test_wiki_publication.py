@@ -8,9 +8,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-from conftest import diagnostic_codes
-
 import pytest
+from conftest import diagnostic_codes
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"

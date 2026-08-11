@@ -11,11 +11,10 @@ from __future__ import annotations
 import subprocess
 import sys
 from pathlib import Path
-
-from conftest import diagnostic_codes, fixture_repo
 from typing import get_args, get_type_hints
 
 import pytest
+from conftest import diagnostic_codes, fixture_repo
 from qualc.model import Card
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -30,8 +29,6 @@ def card_kinds() -> set[str]:
     """
     union, _discriminator = get_args(Card)
     return {get_args(get_type_hints(variant)["kind"])[0] for variant in get_args(union)}
-
-
 
 
 def test_every_kind_has_a_fixture() -> None:
