@@ -212,7 +212,7 @@ Do not report the PDF subtask as the project finish line.
 ## PLAN-QUAL-GRUNT-001 progress (2026-08-11)
 
 Grunt-work completion run.
-**All eleven workstreams landed.** `main` = `d05ea3d`; `uv run qualc check` -> 7,207 cards and 323 wiki pages OK; `pytest -q` -> 67 passed.
+**All eleven workstreams landed.** `main` = `fd98aec`; `uv run qualc check` -> 7,207 cards and 323 wiki pages OK; `pytest -q` -> 67 passed.
 
 | workstream | state | commit | headline |
 | --- | --- | --- | --- |
@@ -226,7 +226,7 @@ Grunt-work completion run.
 | G10 math-flashcards | done | `1d49862` | 372 cards, fifth source ledgered |
 | G6 subject-tree merge | done | merge of `g6-tree-merge` | 403 -> 291 pages, prose consolidated not dropped |
 | G7 reachability | done | `e1a4ca6`, merged | 32 pages from recorded order; orphans 3,104 -> 19 documented |
-| G9 source hygiene | partial | — | worktrees restored, credentials off disk; archiving and token revocation are owner actions |
+| G9 source hygiene | partial | — | worktrees restored, credentials off disk, token revocation owner-confirmed; archiving remains open |
 
 Corpus: 6,907 -> 7,207 cards.
 `tools/audit.py`: empty-areas ok, duplicate-bodies ok, ledger-totality ok, reason-truth ok, migrated-evidence ok.
@@ -238,7 +238,7 @@ Four of the plan's own claims proved stale against the repo and are corrected in
 
 ## Resume here (2026-08-11, end of the GRUNT-001 run)
 
-`main` = `d05ea3d`, clean, pushed.
+`main` = `fd98aec`, clean, pushed.
 `uv run qualc check` -> **7,207 cards and 323 wiki pages OK**. `pytest -q` -> **67 passed**.
 
 ### Done and durable
@@ -275,18 +275,12 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
   The parent plan still records remaining guard work.
 
 - **G9 — source hygiene: partial.** Replay is complete.
-  Token revocation, source correction pushes, and archive decisions remain owner actions.
+  Token revocation is owner-confirmed and source correction pushes are complete; archive decisions remain open.
 
 ### One action for the owner
 
-**Revoke the leaked PAT.** Classic `ghp_` token, 40 characters.
-It was the `origin` credential in `make-me-a-qual`, `Analysis-Qual-Compendium` and `qual-review-and-solutions.broken-pack-preserved` -- the same token in all three, confirmed by hashing rather than printing it.
-All three remotes are now SSH, `grep -rl ghp_ */.git/config` returns 0, and `git ls-remote` succeeds over SSH, so it is off disk.
-**It is still live until revoked** at github.com/settings/tokens.
-
-This could not be done for you: GitHub's REST API exposes no endpoint to list or delete a user's own personal access tokens, so revocation is browser-only.
-Identify it by last-used date and scopes -- it will show recent use against `make-me-a-qual` and `Analysis-Qual-Compendium`. The value itself is no longer recoverable: the configs were rewritten to SSH before the token was revoked, which removed the only copies.
-Revoke first, identify by usage, not by value.
+**Token revocation: owner-confirmed.** The token value is not recorded.
+All three remotes are now SSH, `grep -rl ghp_ */.git/config` returns 0, and `git ls-remote` succeeds over SSH.
 
 ### Standing constraint: do not archive any source repo yet
 
@@ -302,8 +296,7 @@ Keep the archive gate closed until the owner names each repository's decision.
 ### State of the source repos
 
 All five worktrees restored: `git ls-files -d` = 0 for `qual-wiki` (was 1,255 missing), `make-me-a-qual` (8), `Analysis-Qual-Compendium` (1), `math-flashcards`, `qual-review-and-solutions`. The last has a working SSH clone with 542 tracked files matching its 542 ledger rows.
-The replay records these remote commits: `qual-wiki` `064e3e8`, `qual-review-and-solutions` `590a892`, `make-me-a-qual` `beba581`, `Analysis-Qual-Compendium` `15168d8`, and `math-flashcards` `cecb473`. The local proofreading commits in `qual-wiki` and `math-flashcards` remain unpublished because their pre-push hook rejects the repositories.
-Do not treat those local commits as the replay baseline.
+The replay records these remote commits: `qual-wiki` `e668685`, `qual-review-and-solutions` `590a892`, `make-me-a-qual` `beba581`, `Analysis-Qual-Compendium` `15168d8`, and `math-flashcards` `69cecc4`. The local proofreading commits are now published; generated package residue remains local in `math-flashcards`.
 
 `qual-review-and-solutions.broken-pack-preserved` is **unrecoverable and preserved**: `git index-pack` reaches 34,784 of 35,135 objects then `fatal: early EOF`. The pack is truncated.
 Nothing depends on it.

@@ -18,7 +18,7 @@ SOURCE_REVISIONS: tuple[SourceRevision, ...] = (
         "qual-wiki",
         "git@github.com:dzackgarza/qual-wiki.git",
         "main",
-        "064e3e8815c69d763469e5384b9f85c767f9b9b6",
+        "e6686855d9db6dbe815432c3cb8b0597b7cc4fb6",
     ),
     SourceRevision(
         "qual-review-and-solutions",
@@ -42,7 +42,7 @@ SOURCE_REVISIONS: tuple[SourceRevision, ...] = (
         "math-flashcards",
         "git@github.com:dzackgarza/math-flashcards.git",
         "master",
-        "cecb473ed7627603d95a9ed6a8e11537711905ef",
+        "69cecc401981fb2f897a6a3c29feb869d811013c",
     ),
 )
 
