@@ -212,7 +212,7 @@ Do not report the PDF subtask as the project finish line.
 ## PLAN-QUAL-GRUNT-001 progress (2026-08-11)
 
 Grunt-work completion run.
-**All eleven workstreams landed.** `main` = `940c6e4`; `uv run qualc check` -> 7,207 cards and 323 wiki pages OK; `pytest -q` -> 65 passed in ~3m19s.
+**All eleven workstreams landed.** `main` = `d05ea3d`; `uv run qualc check` -> 7,207 cards and 323 wiki pages OK; `pytest -q` -> 67 passed.
 
 | workstream | state | commit | headline |
 | --- | --- | --- | --- |
@@ -238,8 +238,8 @@ Four of the plan's own claims proved stale against the repo and are corrected in
 
 ## Resume here (2026-08-11, end of the GRUNT-001 run)
 
-`main` = `940c6e4`, clean, pushed.
-`uv run qualc check` -> **7,207 cards and 323 wiki pages OK**. `pytest -q` -> **65 passed**.
+`main` = `d05ea3d`, clean, pushed.
+`uv run qualc check` -> **7,207 cards and 323 wiki pages OK**. `pytest -q` -> **67 passed**.
 
 ### Done and durable
 
@@ -265,15 +265,15 @@ All three residuals are deliberate and documented, not backlog.
 The 10 sittings need the source to settle: a month label against a semester label for one lossy derived season.
 Two carry positive evidence of being *different* sittings (January/Spring 2014 set different problem 2; January/Spring 2017 different problem 3); `JUNE-2017` vs `MAY-2017` is flagged `unsettled` in `sources/g3-sitting-decisions.jsonl`.
 
-### Not done
+### Remaining owner actions
 
-- **G6 — subject-tree merge.** Branch `g6-tree-merge` in `.claude/worktrees/g6`, 238 files changed, **uncommitted**. `wiki/` still carries both upstream layouts (numbered `10_Algebra…` and named `Algebra…`). Read that worktree before restarting; do not discard it.
+- **G6 — subject-tree merge: done.** The merged worktree and branch contain no unique work.
 
-- **G8 remainder.** Guards still owed for queued->migrated without a card, upstream row count vs occurrence count, and reachability.
+- **G7 — reachability: done.** The current orphan set is the 19-card set in `sources/g7-residual.jsonl`.
 
-- **G9 archiving.** Not done.
-  Reachability is now proved (19 documented orphans), so the remaining bar is the fresh-clone replay issue #11 requires.
-  See the standing constraint above.
+- **G8 — proof guards: partial.** The fresh-clone replay checks source totality, targets, hashes, generated sources, queued owners, and G7 residuals. The parent plan still records remaining guard work.
+
+- **G9 — source hygiene: partial.** Replay is complete. Token revocation, source correction pushes, and archive decisions remain owner actions.
 
 ### One action for the owner
 
@@ -289,16 +289,17 @@ Revoke first, identify by usage, not by value.
 ### Standing constraint: do not archive any source repo yet
 
 Not a decision to weigh -- a constraint.
-**No source repo is archived until its content is guaranteed migrated in some measure.** The gate being green is not that guarantee on its own: `ledger-totality`, `reason-truth` and `migrated-evidence` all report ok, and all five source worktrees are restored, but roughly 3,100 cards are still reachable from no page or manifest, so the published wiki cannot show what the ledger says was preserved.
-Issue #11 additionally requires a fresh-clone replay before archiving.
+**No source repo is archived until its content is guaranteed migrated in some measure.** The replay proves source preservation and build-integrity inputs. It does not prove mathematical wiki completeness, and no repository has an owner archive approval.
+Issue #11's fresh-clone replay is committed in `artifacts/issue-11/fresh-clone-replay.md`.
 
 G7 has since run: orphans are 19, each recorded with why no authored order exists for it (17 are cards G3 retired whose files were never removed -- defect #31 -- and whose survivors are reachable; the other two have no sitting, no occurrence and no ledger row).
-Reachability is therefore proved, and the remaining bar is the fresh-clone replay issue #11 requires.
-Run that before archiving anything.
+Reachability and the fresh-clone replay are proved. Keep the archive gate closed until the owner names each repository's decision.
 
 ### State of the source repos
 
 All five worktrees restored: `git ls-files -d` = 0 for `qual-wiki` (was 1,255 missing), `make-me-a-qual` (8), `Analysis-Qual-Compendium` (1), `math-flashcards`, `qual-review-and-solutions`. The last has a working SSH clone with 542 tracked files matching its 542 ledger rows.
+The replay records these remote commits: `qual-wiki` `064e3e8`, `qual-review-and-solutions` `590a892`, `make-me-a-qual` `beba581`, `Analysis-Qual-Compendium` `15168d8`, and `math-flashcards` `cecb473`.
+The local proofreading commits in `qual-wiki` and `math-flashcards` remain unpublished because their pre-push hook rejects the repositories. Do not treat those local commits as the replay baseline.
 
 `qual-review-and-solutions.broken-pack-preserved` is **unrecoverable and preserved**: `git index-pack` reaches 34,784 of 35,135 objects then `fatal: early EOF`. The pack is truncated.
 Nothing depends on it.
