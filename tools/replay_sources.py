@@ -315,7 +315,8 @@ def _write_proof(path: Path, report: ReplayReport) -> None:
     lines.extend(
         [
             "",
-            "The command cloned each source over SSH into a new temporary root, checked out the recorded commit, and verified a clean worktree. It compared every tracked path with the committed ledger, then verified migrated targets and source hashes.",
+            "The command cloned each source over SSH into a new temporary root, checked out the recorded commit, and verified a clean worktree. "
+            "It compared every tracked path with the committed ledger, then verified migrated targets and source hashes.",
             "It also verified generated-source reasons, queued owners, dropped-source reasons, and the recorded G7 residual.",
             "",
             "This proves source preservation and build-integrity inputs. It does not prove that the mathematical wiki is complete.",
