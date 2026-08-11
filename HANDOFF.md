@@ -224,9 +224,9 @@ Landed and pushed through `7bbb7fe` (15 commits, `pytest` 67 green, `uv run qual
 | G5 heading formats | done | `7bbb7fe` | named scope already complete; 65 problems recovered from swallowed headings |
 | G8 CI guards | partial | `64f90a1` | `payload.area` guard, CI test job, 4 invariant tests |
 | G10 math-flashcards | done | `1d49862` | 372 cards, fifth source ledgered |
-| G6 subject-tree merge | running | — | isolated worktree |
-| G7 reachability | pending | — | scope grew: +503 +372 +65 new cards, orphans by construction |
-| G9 source hygiene | running | — | non-destructive scope; archiving and token revocation await user approval |
+| G6 subject-tree merge | done | merge of `g6-tree-merge` | 403 -> 291 pages, prose consolidated not dropped |
+| G7 reachability | done | merge of `g7-reachability` | 3,104 orphans -> 19 documented; pages emitted from recorded order only |
+| G9 source hygiene | partial | — | worktrees restored, credentials off disk; archiving and token revocation are owner actions |
 
 Corpus: 6,907 -> 7,207 cards.
 `tools/audit.py`: empty-areas ok, duplicate-bodies ok, ledger-totality ok, reason-truth ok, migrated-evidence ok.
@@ -266,68 +266,44 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 
 - **G6 — subject-tree merge.** Branch `g6-tree-merge` in `.claude/worktrees/g6`, 238 files changed, **uncommitted**. `wiki/` still carries both upstream layouts (numbered `10_Algebra…` and named `Algebra…`). Read that worktree before restarting; do not discard it.
 
-- **G7 — reachability.** Not started, and its scope grew: ~940 cards added by this run are reachable from no page or manifest.
-  This is the largest remaining piece and the most editorial — the user's existing reading order is authoritative and is to be transcribed, never improved.
-
 - **G8 remainder.** Guards still owed for queued->migrated without a card, upstream row count vs occurrence count, and reachability.
 
 - **G9 archiving.** Deferred by owner decision: archiving would certify preservation while G7 has not made the preserved material reachable.
   Issue #11 requires a fresh-clone replay before archiving.
 
-### Decisions awaiting the owner
+### One action for the owner
 
-Each of these is a judgement call this run deliberately did not make. None is
-blocked work; all are choices with consequences.
-
-**1. Revoke the leaked PAT.** Classic `ghp_` token, 40 characters. It was in
-`make-me-a-qual`, `Analysis-Qual-Compendium` and
+**Revoke the leaked PAT.** Classic `ghp_` token, 40 characters. It was the
+`origin` credential in `make-me-a-qual`, `Analysis-Qual-Compendium` and
 `qual-review-and-solutions.broken-pack-preserved` -- the same token in all three,
 confirmed by hashing rather than printing it. All three remotes are now SSH,
-`grep -rl ghp_ */.git/config` returns 0 and `git ls-remote` succeeds over SSH, so
-it is off disk. It is still live until revoked at github.com/settings/tokens.
-Not done here because only the owner can see what else depends on it; revoking
-blind would break unknown callers silently.
+`grep -rl ghp_ */.git/config` returns 0, and `git ls-remote` succeeds over SSH,
+so it is off disk. **It is still live until revoked** at
+github.com/settings/tokens.
 
-**2. Archive the five source repos, or not.** The gate is green
-(`ledger-totality`, `reason-truth`, `migrated-evidence` all ok, all five source
-worktrees restored). Deferred because G7 has not run: ~3,100 cards are reachable
-from no page, so archiving now certifies preservation the published wiki cannot
-show. Issue #11 additionally requires a fresh-clone replay before archiving.
-Reversible on GitHub, but outward-facing.
+This could not be done for you: GitHub's REST API exposes no endpoint to list or
+delete a user's own personal access tokens, so revocation is browser-only.
+Identify it by last-used date and scopes -- it will show recent use against
+`make-me-a-qual` and `Analysis-Qual-Compendium`. The value itself is no longer
+recoverable: the configs were rewritten to SSH before the token was revoked,
+which removed the only copies. Revoke first, identify by usage, not by value.
 
-**3. Keep or abandon the G7 worktree.** See the in-flight worktrees section
-below. If abandoning, extract `sources/g7-heading-math-residue.jsonl` first --
-that finding is independent of reachability.
+### Standing constraint: do not archive any source repo yet
 
-**4. Three test-suite items identified in audit, deliberately not acted on.**
-The suite was audited against `test-guidelines` and five banned string
-assertions, one dependency-owned test and one strictly-entailed test were
-removed. Three findings remain, each needing a call rather than an obvious fix:
+Not a decision to weigh -- a constraint. **No source repo is archived until its
+content is guaranteed migrated in some measure.** The gate being green is not
+that guarantee on its own: `ledger-totality`, `reason-truth` and
+`migrated-evidence` all report ok, and all five source worktrees are restored,
+but roughly 3,100 cards are still reachable from no page or manifest, so the
+published wiki cannot show what the ledger says was preserved. Issue #11
+additionally requires a fresh-clone replay before archiving.
 
-- `test_every_kind_has_a_fixture` asserts every card kind in the `Card` union has
-  a file in `tests/fixtures/kinds`. It tests the test suite's own completeness,
-  not the product. It is a useful lint -- a new kind without a fixture is a real
-  gap -- but it proves no repository behaviour, which is what the guidelines ask
-  of a test. Keep as a lint, move to QC, or delete.
-- `test_every_source_variant_has_a_fixture` asserts the fixture set covers
-  exactly `{university-exam, textbook, contributed-artifact}`. That restates the
-  schema back to itself: it reads the union and compares it to a hardcoded copy.
-  Same call as above.
-- `test_the_current_corpus_uses_only_mapped_classes` runs `qualc check` over the
-  real corpus and asserts exit 0. **A no-op checker returning 0 passes it.** It is
-  discriminating only in combination with `test_unmapped_class_fails_the_build`,
-  which proves check does fail on a bad class. It is also a data assertion --
-  "today's corpus is valid" -- that the commit gate already makes on every
-  commit, and it costs 69s of a 199s suite. Keep for defence in depth, or drop it
-  and rely on the gate.
-
-**5. The suite's remaining cost is one test.** `test_corpus_layout_is_semantically
-_inert` is ~150s of the 199s suite because it builds the real corpus twice: a
-baseline, then again after flattening every card into one directory. Both builds
-are load-bearing -- the second is what proves routes derive from card identity
-rather than source path, which is a plausible emitter bug. The baseline could be
-shared via a session fixture, saving roughly half. Not attempted here because it
-is the project's load-bearing architectural proof and deserves its own change.
+G7 has since run: orphans are 19, each recorded with why no authored order
+exists for it (17 are cards G3 retired whose files were never removed -- defect
+#31 -- and whose survivors are reachable; the other two have no sitting, no
+occurrence and no ledger row). Reachability is therefore proved, and the
+remaining bar is the fresh-clone replay issue #11 requires. Run that before
+archiving anything.
 
 ### State of the source repos
 
@@ -357,29 +333,14 @@ Also: the plan's own numbers drift.
 Four of its factual claims were stale against the repo this run (see its Surprises section).
 Measure before trusting any count in it.
 
-### In-flight worktrees (read before starting G6 or G7 work)
+### Worktrees
 
-Two git worktrees exist under `.claude/worktrees/`. Neither is debris; both hold real work and neither should be deleted without reading it.
+Both worktrees under `.claude/worktrees/` are **merged into `main`** and hold no
+unique work. `git branch --merged main` lists `g6-tree-merge` and
+`g7-reachability`. Each can be removed with `git worktree remove
+.claude/worktrees/<name>` followed by deleting the branch.
 
-**`.claude/worktrees/g6` — branch `g6-tree-merge`, clean, already merged.** `git branch --merged main` lists it.
-Its commits are in `main` via the merge commit; the worktree is kept only so the branch has a checkout.
-Safe to remove with `git worktree remove .claude/worktrees/g6` once the branch is deleted.
-
-**`.claude/worktrees/g7` — branch `g7-reachability`, 31 uncommitted files, 0 commits.** G7 was dispatched, began work, and was stood down mid-pass before it committed anything.
-The work is uncommitted and lives only in that worktree: a `git worktree remove` would destroy it.
-It contains:
-
-- `sources/g7-page-attachment.jsonl` (32 rows) -- pages created to attach cards, each with a note on whether the page stands alone for a reader.
-
-- `sources/g7-residual.jsonl` (19 rows) -- cards deliberately *not* attached, each with the reason.
-  These are the honest residual the workstream was told to produce rather than invent an order for.
-
-- `sources/g7-heading-math-residue.jsonl` (59 rows) -- **a finding no other workstream caught**: page headings carrying empty display-math delimiters, e.g. `## Spring 2020 #5 $$` -> `## Spring 2020 #5`, left when the import discarded the math it was delimiting.
-  This is a real corpus defect and is worth landing on its own even if the rest of G7 is redone.
-
-- `tools/attach_pages.py`, `wiki/000_Card_Archives.md` and other new pages.
-
-To resume G7: work in that worktree, do not restart from `main`. Re-measure the orphan count first (`tools/audit.py --only orphans` reported 3,104 of 7,207 when G7 was dispatched).
-The editorial rule stands: transcribe the author's existing reading order where it exists, and where it does not, report the cards rather than composing one.
-
-To abandon G7 instead: extract `g7-heading-math-residue.jsonl` and its fixes first -- that finding is independent of the reachability work.
+An earlier revision of this file said the G7 worktree held 31 uncommitted files
+that a removal would destroy. That was true when written; G7 subsequently
+finished and committed. Verify with `git status --porcelain` in the worktree
+before removing either, rather than trusting this paragraph.
