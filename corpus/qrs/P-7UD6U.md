@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7UD6U
 kind: problem
-title: "Let $G$ be a group and $H, K < G$ be subgroups of finite index."
+title: Let $G$ be a group and $H, K < G$ be subgroups of finite index.
 classification:
   areas:
   - algebra
@@ -43,6 +43,3 @@ Count in towers, show that distinct coset reps stay distinct.
 - But then $h_i K \neq h_j K$, so these are distinct cosets in $G/K$.
 - So $\#G/K \geq m$.
 :::
-
-### Spring 2013 #3 $\done$
-Let $P$ be a finite $p\dash$group.

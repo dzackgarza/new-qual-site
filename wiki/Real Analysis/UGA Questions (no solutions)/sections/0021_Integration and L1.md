@@ -1,7 +1,7 @@
 # Integrals: Approximation
 
 ## Spring 2018 # 3 $\done$
-[[P-LFIZY]]
+[[P-OFICU]]
 ## Spring 2018 # 4 $\done$
 [[P-SAIVF]]
 ## Spring 2015 # 2
@@ -12,7 +12,9 @@
 
 ## Spring 2020 # 3 $\done$
 
-[[P-UTQJT]]
+[[P-KPFEF]]
+
+## Fall 2019 # 5.
 
 [[P-7QVGF]]
 
@@ -24,8 +26,13 @@
 ## Fall 2014 # 3
 [[P-L2HGH]]
 
+## Spring 2014 # 1
+
 [[P-HPRVA]]
 
+## Spring 2021 # 4
+
 [[P-7MOQA]]
+
 ## Fall 2020 \# 4
 [[P-HEMGC]]

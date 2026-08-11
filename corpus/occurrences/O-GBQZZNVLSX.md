@@ -9,11 +9,11 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-OS765
+  target: P-Y6XIB
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2017
-  locator: "3"
+  locator: '3'
 ---
 
 ::: remark

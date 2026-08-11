@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-DE7HO7TSOG
 kind: occurrence
-title: P-NBFDJ at UGA algebra Fall 2015
+title: P-XFXYS at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-NBFDJ
+  target: P-XFXYS
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-NBFDJ]] appeared at UGA algebra Fall 2015.
+[[P-XFXYS]] appeared at UGA algebra Fall 2015.
 :::

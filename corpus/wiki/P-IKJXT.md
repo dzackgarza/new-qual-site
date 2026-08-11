@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IKJXT
 kind: problem
-title: "Let $f (x)$ be an irreducible polynomial of degree 4 in $\\QQ[x]$ whose\u2026"
+title: "Let $f (x)$ be an irreducible polynomial of degree 4 in $\\QQ[x]$ whos\u2026"
 classification:
   areas:
   - algebra
@@ -17,5 +17,3 @@ Let $f (x)$ be an irreducible polynomial of degree 4 in $\QQ[x]$ whose splitting
 
 b.
 Prove that if $K$ is a Galois extension of $\QQ$ of degree 4, then there is an intermediate subfield between $K$ and $\QQ$.
-
-### Spring 2017 #7

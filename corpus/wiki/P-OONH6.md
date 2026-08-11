@@ -79,5 +79,3 @@ From here, it's a standard exercise, so to sum up:
 - Use the Cayley map $z\mapsto {z-i\over z+i}$ to send $\HH\to \DD$.
 
 :::
-
-## Spring 2020.5, Spring 2019.6

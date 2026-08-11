@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-TSDD2SC456
 kind: occurrence
-title: P-HZGRC at UGA algebra Fall 2013
+title: P-X7EHF at UGA algebra Fall 2013
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-HZGRC
+  target: P-X7EHF
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2013
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-HZGRC]] appeared at UGA algebra Fall 2013.
+[[P-X7EHF]] appeared at UGA algebra Fall 2013.
 :::

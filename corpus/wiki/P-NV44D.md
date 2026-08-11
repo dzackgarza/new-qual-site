@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NV44D
 kind: problem
-title: "For $a> 0$, evaluate"
+title: For $a> 0$, evaluate
 classification:
   areas:
   - complex-analysis
@@ -10,9 +10,8 @@ classification:
 relations: []
 review: draft
 ---
+
 For $a> 0$, evaluate
 \[
 \int_0^{\pi/2} \frac{d\theta}{a + \sin^2 \theta}
 \]
-
-

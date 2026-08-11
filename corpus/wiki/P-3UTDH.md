@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3UTDH
 kind: problem
-title: "Let $E\\subset \\CC$ denote the splitting field over $\\QQ$ of the polyno\u2026"
+title: "Let $E\\subset \\CC$ denote the splitting field over $\\QQ$ of the polyn\u2026"
 classification:
   areas:
   - algebra
@@ -22,5 +22,3 @@ Find the Galois group of $(x^3 - 11)(x^2 - 2)$ over $\QQ$.
 
 c.
 Prove that the minimal polynomial of $11^{1/3} + 2^{1/2}$ over $\QQ$ has degree 6.
-
-### Spring 2013 #8

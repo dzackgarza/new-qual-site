@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5YLZS
 kind: problem
-title: "Suppose $f(x)$ and $xf(x)$ are integrable on $\\RR$."
+title: Suppose $f(x)$ and $xf(x)$ are integrable on $\RR$.
 classification:
   areas:
   - real-analysis
@@ -55,4 +55,3 @@ $$
 - We then have $$\abs{h_n(x)} = \abs{f(x) x\sin(\xi_n x)} \leq \abs{xf(x)}\quad\text{since } \abs{\sin(\xi_n x)} \leq  1$$ for every $x$ and every $n$.
 - Since $xf(x) \in L^1(\RR)$ by assumption, the DCT applies. 
 :::
-

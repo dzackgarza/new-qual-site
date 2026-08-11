@@ -30,9 +30,10 @@ See also [conformal map exercises](30_Complex_Analysis/050_Conformal_Maps/035_Co
 
 [[P-OONH6]]
 
-^0df993
+## Spring 2020.5, Spring 2019.6
 
 [[P-4X7XU]]
+
 ## UMN Spring 2009
 
 [[E-WYJ7K]]

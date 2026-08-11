@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4X7XU
 kind: problem
-title: "Spring 2020.5"
+title: Find a conformal map that maps the region
 classification:
   areas:
   - complex-analysis
@@ -70,4 +70,3 @@ So $f(i\RR)$ is oriented from bottom to top, as in the image.
 That the region outside the disc is mapped to the strip shown: points $x\in \RR$ with $\abs{x} > 1$ map to $\abs{x}<1$, which is in the strip.
 One can also conclude this by handedness: the original region is on the right with respect to $C_1$ and also on the right with respect to $i\RR$, so the new region should be on the right with respect to both $f(i\RR)$ and $f(C_1)$ with their induced orientations.
 :::
-

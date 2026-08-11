@@ -1,8 +1,12 @@
 # Undergraduate Analysis: Uniform Convergence
 
 ## Fall 2018 # 1 $\done$
-[[P-UKENP]]
-[[P-5MLQE]]
+[[P-6HV66]]
+
+## Fall 2017 # 1
+
+[[P-STYWD]]
+
 ## Fall 2014 # 1 $\done$
 [[P-TUGZG]]
 ## Spring 2017 # 4 $\done$
@@ -10,10 +14,21 @@
 ## Spring 2015 # 1 $\done$
 [[P-BH66D]]
 ## Fall 2014 # 2  $\done$
-[[P-I5APR]]
+[[P-RHDT6]]
+
+# General Analysis
+
+[[P-YBNB1]]
+
+## Spring 2020 # 1
+
+[[P-OW5VL]]
 
 ## Fall 2019 # 1 $\done$
 [[P-QOC7V]]
+
+## Fall 2018 # 4
+
 [[P-NVVZJ]]
 
 ## Fall 2017 # 4 $\done$

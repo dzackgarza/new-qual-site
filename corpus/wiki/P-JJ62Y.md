@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JJ62Y
 kind: problem
-title: "Let $K$ denote the splitting field of $x^5 - 2$ over $\\QQ$."
+title: Let $K$ denote the splitting field of $x^5 - 2$ over $\QQ$.
 classification:
   areas:
   - algebra
@@ -23,5 +23,3 @@ a & b \\
 
 b.
 Determine all intermediate fields between $K$ and $\QQ$ which are Galois over $\QQ$.
-
-### Fall 2016 #4

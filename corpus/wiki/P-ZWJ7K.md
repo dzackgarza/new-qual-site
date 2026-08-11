@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZWJ7K
 kind: problem
-title: "Let $f: \\RR \\to \\RR$. Prove that"
+title: 'a. Let $f: \RR \to \RR$.'
 classification:
   areas:
   - real-analysis

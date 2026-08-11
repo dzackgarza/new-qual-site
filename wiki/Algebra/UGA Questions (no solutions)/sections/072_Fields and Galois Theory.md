@@ -53,7 +53,11 @@
 
 ### Fall 2019 Midterm #6
 
-[[P-P7TMM]]
+[[P-2CP2Q]]
+
+### Spring 2018 #2
+
+[[P-OG5DJ]]
 
 ### Spring 2020 #4
 
@@ -61,15 +65,15 @@
 
 ### Spring 2017 #8
 
-[[P-I4Y55]]
+[[P-JJ62Y]]
 
 ### Fall 2016 #4
 
-[[P-6NMU2]]
+[[P-YEBFN]]
 
 ### Spring 2016 #2
 
-[[P-R6SXV]]
+[[P-G5MEU]]
 
 ### Fall 2015 #5
 
@@ -77,23 +81,23 @@
 
 ### Spring 2015 #5
 
-[[P-NTD6V]]
+[[P-KR27N]]
 
 ### Fall 2014 #3
 
-[[P-2GD4H]]
+[[P-EP64S]]
 
 ### Fall 2013 #6
 
-[[P-CFBBY]]
+[[P-VOGZ5]]
 
 ### Spring 2014 #4
 
-[[P-K7JBV]]
+[[P-3UTDH]]
 
 ### Spring 2013 #8
 
-[[P-YVNDI]]
+[[P-2LX4F]]
 
 ## Galois Groups: Indirect Computations / Facts
 
@@ -111,11 +115,11 @@
 
 ### Fall 2017 #4
 
-[[P-6AMZL]]
+[[P-IKJXT]]
 
 ### Spring 2017 #7
 
-[[P-WA5RE]]
+[[P-WNSWZ]]
 
 ### Spring 2016 #6
 
@@ -123,11 +127,19 @@
 
 ### Fall 2015 #6
 
-[[P-LQUXL]]
+[[P-PBZHI]]
 
 ### Fall 2014 #1
 
-[[P-ENCMY]] [[P-X6HVG]] [[P-V7JRI]]
+[[P-XSSEP]]
+
+### Spring 2013 #7
+
+[[P-TM7YV]]
+
+### Fall 2012 #3
+
+[[P-QNQTT]]
 
 ## $p$th Roots and $x^{p^k}-x$
 
@@ -167,11 +179,11 @@
 
 ### Fall 2017 #3
 
-[[P-OS765]]
+[[P-Y6XIB]]
 
 ### Spring 2015 #2
 
-[[P-56PBT]]
+[[P-LFC2G]]
 
 ### Spring 2014 #3
 

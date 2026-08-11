@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PBZHI
 kind: problem
-title: "Let $G$ be a finite group."
+title: Let $G$ be a finite group.
 classification:
   areas:
   - algebra
@@ -23,5 +23,3 @@ Prove that there exists an intermediate field $E$ of $K/F$ with $[E: F] = 3$.
 c.
 With $K/F$ as in (b), does an intermediate field $L$ necessarily exist satisfying $[L: F] = 2$?
 Give a proof or counterexample.
-
-### Fall 2014 #1

@@ -9,11 +9,11 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-Y37R6
+  target: P-4PTIX
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2014
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark

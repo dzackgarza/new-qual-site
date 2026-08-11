@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4GWVV
 kind: problem
-title: "(b) Evaluate $$\\oint_{C}\\frac{e^{\\tau}}{(\\tau^2+\\pi^2)^2}d\\tau$$"
+title: Find the conformal map that takes the upper half-plane comformally
 classification:
   areas:
   - complex-analysis
@@ -10,9 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-(b) Evaluate $$\oint_{C}\frac{e^{\tau}}{(\tau^2+\pi^2)^2}d\tau$$
-where $C$ is the circle $|z|=4$.
-
-### Tie's Extra Questions: Fall 2016
-
-
+Find the conformal map that takes the upper half-plane comformally
+onto the half-strip $\{
+w=x+iy:\ -\pi/2<x<\pi/2\ y>0\}$.

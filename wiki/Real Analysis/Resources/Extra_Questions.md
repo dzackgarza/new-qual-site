@@ -13,9 +13,16 @@ solutions to any problems, you should attempt the problem on your own.
 [[P-XEEUX]]
 ##  (May 2016, \#2) 
 
-[[P-TZ35F]]
-[[P-LGBCJ]]
+[[P-DQQUE]]
+
+## (May 2016, \#3)
+
+[[P-CWJBS]]
+
+## (May 2016, \#4)
+
 [[P-FPWLY]]
+
 ##  (May 2016, \#5) 
 [[P-6LWY3]]
 ##  (May 2016, \#6) 
@@ -155,7 +162,19 @@ solutions to any problems, you should attempt the problem on your own.
 
 ##  (January 2006 1) 
 
-[[P-36ZEY]]
+[[P-DFDX4]]
+
+## ?
+
+[[P-E4WZN]]
+
+## ?
+
+[[P-FYGQ6]]
+
+## ?
+
+[[P-4E6U3]]
 
 ##  (January 2006 4a) 
 

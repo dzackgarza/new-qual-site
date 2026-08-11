@@ -9,11 +9,11 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-SUE6S
+  target: P-OO3WX
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark

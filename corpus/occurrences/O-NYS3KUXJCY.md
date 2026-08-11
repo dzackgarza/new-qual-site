@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-NYS3KUXJCY
 kind: occurrence
-title: P-URENL at UGA complex-analysis Fall 2009
+title: P-IP6QO at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-URENL
+  target: P-IP6QO
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2009
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-URENL]] appeared at UGA complex-analysis Fall 2009.
+[[P-IP6QO]] appeared at UGA complex-analysis Fall 2009.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LL7UL
 kind: problem
-title: "Let $K$ be a Galois extension of a field $F$ with $[K: F] = 2015$."
+title: 'Let $K$ be a Galois extension of a field $F$ with $[K: F] = 2015$.'
 classification:
   areas:
   - algebra
@@ -49,5 +49,3 @@ Since the quotients $N_i/N_{i+1}$ have prime power order, they are cyclic and th
 We know $N_1$ is normal in $G$ since it came from extending a normal group in a quotient, and we know $N_2$ is normal in $N_1$ since it was normal in all of $G$.
 So $G$ is solvable.
 :::
-
-

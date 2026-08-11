@@ -6,7 +6,11 @@
 [[P-XYDVS]]
 ### Fall 2014 #6 $\done$
 [[P-7UD6U]]
+
+### Spring 2013 #3
+
 [[P-6TCYA]]
+
 ## Burnside / Class Equation
 
 ### Spring 2019 #4 $\done$
@@ -31,7 +35,11 @@
 [[P-6NTDS]]
 ### Spring 2012 #2 $\done$
 [[P-WIGQD]]
+
+### Fall 2016 #1
+
 [[P-UYKBG]]
+
 ### Fall 2019 Midterm #1  $\done$
 [[P-3SQVT]]
 ### Fall 2019 Midterm #4

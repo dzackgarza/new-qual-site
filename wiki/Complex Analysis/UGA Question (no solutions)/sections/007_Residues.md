@@ -36,18 +36,72 @@
 
 ## $\done$
 
-[[P-HN2WS]]
+[[P-OIP5P]]
 
-[[P-UAIFQ]]
+### Tie's Extra Questions: Fall 2009
 
-[[P-URENL]]
+[[P-2ZMDH]]
+
+### Tie's Extra Questions: Fall 2009
+
+[[P-IP6QO]]
+
+### Tie's Extra Questions: Fall 2009
 
 [[P-C3XJT]]
 
+### Spring 20202 HW 2 #  2.6.1
+
 [[P-O5K7C]]
 
-[[P-JYIUP]] [[P-LGD4Z]]
+### Spring 20202 HW 2 #  2.6.2
 
-[[P-2RS4X]] [[P-DQRNX]] [[P-WYW7H]] [[P-SHEH6]] [[P-DJWUH]] [[P-EW5N5]] [[P-JFDQJ]] [[P-E55UF]] [[P-4GT43]]
+[[P-JYIUP]]
 
-[[P-JMUJU]] [[P-NV44D]]
+### Spring 20202 HW 3 #  3.8.1
+
+[[P-FIOQC]]
+
+### Spring 20202 HW 3 #  3.8.2
+
+[[P-2RS4X]]
+
+### Spring 20202 HW 3 #  3.8.4
+
+[[P-PNCAW]]
+
+### Spring 20202 HW 3 #  3.8.5
+
+[[P-5LY53]]
+
+### Spring 20202 HW 3 #  3.8.6
+
+[[P-4M6DM]]
+
+### Spring 20202 HW 3 #  3.8.7
+
+[[P-PQOTX]]
+
+### Spring 20202 HW 3 #  3.8.8
+
+[[P-GLF66]]
+
+### Spring 20202 HW 3 #  3.8.9
+
+[[P-JFDQJ]]
+
+### Spring 20202 HW 3 #  3.8.10
+
+[[P-E55UF]]
+
+### Spring 20202 HW 3 #  6
+
+[[P-JWOJ5]]
+
+### Spring 20202 HW 3 #  7
+
+[[P-4Y4QT]]
+
+### Spring 20202 HW 3 #  10
+
+[[P-NV44D]]

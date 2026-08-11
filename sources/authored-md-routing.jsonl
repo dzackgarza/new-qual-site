@@ -107,7 +107,7 @@
 {"card": "", "evidence": "card P-AEWN6", "locator": "Fall 2016 3", "path": "Questions/Complex_Analysis/UGA/AllQuestions.md", "sha1": "1d53e3fabe8c", "verdict": "exact"}
 {"card": "", "evidence": "card P-57CAX", "locator": "Fall 2016 4", "path": "Questions/Complex_Analysis/UGA/AllQuestions.md", "sha1": "dac2d5a61fc8", "verdict": "exact"}
 {"card": "", "evidence": "make-me-a-qual YAML row UGA Complex_Analysis Extra n=0", "locator": "Fall 2016 5", "path": "Questions/Complex_Analysis/UGA/AllQuestions.md", "sha1": "aedcc015b30e", "verdict": "exact"}
-{"card": "P-AMD-7E6M6OSE", "evidence": "sitting SRC-UGA-CA-FALL-2016", "locator": "Fall 2016 6", "path": "Questions/Complex_Analysis/UGA/AllQuestions.md", "sha1": "bed4fe90847f", "verdict": "minted"}
+{"card": "P-X7WUF", "evidence": "sitting SRC-UGA-CA-FALL-2016", "locator": "Fall 2016 6", "path": "Questions/Complex_Analysis/UGA/AllQuestions.md", "sha1": "bed4fe90847f", "verdict": "minted"}
 {"card": "", "evidence": "make-me-a-qual YAML row UGA Complex_Analysis Extra n=0", "locator": "Fall 2016 7", "path": "Questions/Complex_Analysis/UGA/AllQuestions.md", "sha1": "813e173001c3", "verdict": "exact"}
 {"card": "", "evidence": "make-me-a-qual YAML row UGA Complex_Analysis Extra n=0", "locator": "Fall 2016 8", "path": "Questions/Complex_Analysis/UGA/AllQuestions.md", "sha1": "b4f1a0ecbbb3", "verdict": "exact"}
 {"card": "", "evidence": "make-me-a-qual YAML row UGA Topology 0 n=1", "locator": "1 (Spring '06).", "path": "Questions/Topology/UGA/MikeProblems.md", "sha1": "ebcc157d7504", "verdict": "exact"}
@@ -276,7 +276,7 @@
 {"card": "P-AMD-SYO3GZHS", "evidence": "sitting SRC-UCSD-TOP-FALL-2017", "locator": "4", "path": "Questions/Topology/UCSD/Fall 2017 Final.md", "sha1": "1b6453892473", "verdict": "minted"}
 {"card": "P-AMD-3MWMRPVS", "evidence": "sitting SRC-UCSD-TOP-FALL-2017", "locator": "5", "path": "Questions/Topology/UCSD/Fall 2017 Final.md", "sha1": "ac3478d69a3c", "verdict": "minted"}
 {"card": "", "evidence": "card P-LMEKH", "locator": "6", "path": "Questions/Topology/UCSD/Fall 2017 Final.md", "sha1": "c1dfd96eea8c", "verdict": "exact"}
-{"card": "P-AMD-QXTWGZUS", "evidence": "sitting SRC-UGA-RA-SPRING-2014", "locator": "1", "path": "Questions/Real_Analysis/UGA/sections/2014 Spring.md", "sha1": "356a192b7913", "verdict": "minted"}
+{"card": "P-HPRVA", "evidence": "sitting SRC-UGA-RA-SPRING-2014", "locator": "1", "path": "Questions/Real_Analysis/UGA/sections/2014 Spring.md", "sha1": "356a192b7913", "verdict": "minted"}
 {"card": "", "evidence": "make-me-a-qual YAML row UGA Real_Analysis 2014 n=2", "locator": "2", "path": "Questions/Real_Analysis/UGA/sections/2014 Spring.md", "sha1": "da4b9237bacc", "verdict": "exact"}
 {"card": "", "evidence": "make-me-a-qual YAML row UGA Real_Analysis 2014 n=3", "locator": "3", "path": "Questions/Real_Analysis/UGA/sections/2014 Spring.md", "sha1": "77de68daecd8", "verdict": "exact"}
 {"card": "", "evidence": "card P-KGSPZ", "locator": "4", "path": "Questions/Real_Analysis/UGA/sections/2014 Spring.md", "sha1": "1b6453892473", "verdict": "exact"}

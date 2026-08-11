@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GPMVB
 kind: problem
-title: "Prove that all the roots of the complex polynomial"
+title: Prove that all the roots of the complex polynomial
 classification:
   areas:
   - complex-analysis
@@ -10,4 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 Prove that all the roots of the complex polynomial
+
+$$z^7 - 5 z^3 +12 =0$$ lie between the circles $|z|=1$ and $|z|=2$.

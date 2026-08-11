@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F7HCN
 kind: problem
-title: "Prove the following:"
+title: 'Prove the following:'
 classification:
   areas:
   - complex-analysis
@@ -10,9 +10,11 @@ classification:
 relations: []
 review: draft
 ---
+
 Prove the following:
 
 a. $\sum_{n} nz^n$ does not converge at any point of $S^1$
 
 b. $\sum_n {z^n \over n^2}$ converges at every point of $S^1$.
 
+c. $\sum_n {z^n \over n}$ converges at every point of $S^1$ except $z=1$.

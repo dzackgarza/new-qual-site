@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LFWBF
 kind: problem
-title: "We have maps"
+title: '> Note: Let $X\dual \definedas \hom_R(X, R)$ denote the dual.'
 classification:
   areas:
   - algebra
@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 > Note: Let $X\dual \definedas \hom_R(X, R)$ denote the dual.
 
 We have maps
@@ -49,9 +50,11 @@ h &\mapsto h \circ f\dual
 \end{align*}
 \]
 
-We can now check that $f^{\vee\vee} \circ \theta_A = \theta_B \circ f$ as maps from $A$ to $B^{\vee\vee}$. Letting $a\in A$, and $h\in B^{\vee\vee}$ (so $h: B\dual \to R$), we will show that both maps act on $h$ in the same way.
+We can now check that $f^{\vee\vee} \circ \theta_A = \theta_B \circ f$ as maps from $A$ to $B^{\vee\vee}$.
+Letting $a\in A$, and $h\in B^{\vee\vee}$ (so $h: B\dual \to R$), we will show that both maps act on $h$ in the same way.
 
-For notational convenience, write $\phi \actson h \definedas h\circ \phi$. We then have
+For notational convenience, write $\phi \actson h \definedas h\circ \phi$.
+We then have
 
 \[
 \begin{align*}
@@ -67,3 +70,4 @@ For notational convenience, write $\phi \actson h \definedas h\circ \phi$. We th
 \end{align*}
 \]
 
+which shows that these actions agree, and thus the diagram commutes.

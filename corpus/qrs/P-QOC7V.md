@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QOC7V
 kind: problem
-title: "Let $\\{a_n\\}_{n=1}^\\infty$ be a sequence of real numbers."
+title: Let $\{a_n\}_{n=1}^\infty$ be a sequence of real numbers.
 classification:
   areas:
   - real-analysis
@@ -108,5 +108,3 @@ Revisit, not so clear that the last line can be made smaller than $\eps$, since 
 :::
 
 :::
-
-## Fall 2018 # 4 $\done$

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-X7EHF
 kind: problem
-title: "Let $R$ be a commutative ring with $1\\neq 0$."
+title: Let $R$ be a commutative ring with $1\neq 0$.
 classification:
   areas:
   - algebra
@@ -27,3 +27,6 @@ c.
   In other words, $I$ is disjoint from $S$ and if $J$ is any ideal disjoint from $S$ with $I\subseteq J \subseteq R$ then $J=I$ or $J=R$.
 
   Show that $I$ is a prime ideal.
+
+d. 
+Deduce from (a) and (b) that the set of nilpotent elements of $R$ is the intersection of all prime ideals of $R$.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GCNAR
 kind: problem
-title: "Consider the following matrix as a linear transformation from $V\\defin\u2026"
+title: "Consider the following matrix as a linear transformation from $V\\defi\u2026"
 classification:
   areas:
   - algebra
@@ -29,5 +29,3 @@ Express $V$ in terms of a direct sum of indecomposable $\CC[x]\dash$modules.
 
 c.
 Find the Jordan canonical form of $A$.
-
-

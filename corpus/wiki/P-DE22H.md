@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DE22H
 kind: problem
-title: "Let $D = \\QQ[x]$ and let $M$ be a $\\QQ[x]\\dash$module such that"
+title: Let $D = \QQ[x]$ and let $M$ be a $\QQ[x]\dash$module such that
 classification:
   areas:
   - algebra
@@ -16,5 +16,3 @@ M \cong \frac{\mathbb{Q}[x]}{(x-1)^{3}} \oplus \frac{\mathbb{Q}[x]}{\left(x^{2}+
 .\]
 
 Determine the elementary divisors and invariant factors of $M$.
-
-## Spring 2020 #7

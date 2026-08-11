@@ -65,8 +65,15 @@
 ^3e8888
 
 [[P-J25XX]]
+
+## Fall 2015.2
+
 [[P-RJV7Q]]
+
+## Spring 2015.3
+
 [[P-TEEXE]]
+
 ## Spring 2014.3
 [[P-CWRU6]]
 ## Spring 2014.4
@@ -87,9 +94,10 @@
 
 [[P-6QWZI]]
 
-^e41970
+## Fall 2020.2
 
 [[P-ZWJ7K]]
+
 ## Fall 2016.2
 
 ^254fa4

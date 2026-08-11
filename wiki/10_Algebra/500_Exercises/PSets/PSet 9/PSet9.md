@@ -9,19 +9,49 @@ title: Problem Set 9
 ## Part 1
 
 [[P-NQRYU]]
+
+## Part 2
+
 [[P-N27XI]]
+
+# Problem 2
+
+[[P-YBNB1]]
+
+## Part 1
+
+[[P-1IM1B]]
+
+## Part 2
+
+[[P-HGQ8T]]
+
 # Problem 3
 
 [[P-HQ6DM]]
 
+# Problem 4
 
 [[P-XRTSC]]
-# Problem 5
 
+# Problem 5
 
 ## Part 1
 
 [[P-DB3EP]]
+
+## Part 2
+
+[[P-OLLG3]]
+
+## Part 3
+
+[[P-KDJFP]]
+
+## Part 4
+
+[[P-OQCJR]]
+
 # Problem 6
 
 [[P-UMKJ4]]

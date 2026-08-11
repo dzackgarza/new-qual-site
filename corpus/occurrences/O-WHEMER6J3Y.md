@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-WHEMER6J3Y
 kind: occurrence
-title: P-W2JEU at UGA complex-analysis Spring 2015
+title: P-MV7O6 at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-W2JEU
+  target: P-MV7O6
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-W2JEU]] appeared at UGA complex-analysis Spring 2015.
+[[P-MV7O6]] appeared at UGA complex-analysis Spring 2015.
 :::

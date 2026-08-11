@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XFXYS
 kind: problem
-title: "Deduce from (a) and (b) that the set of nilpotent elements of $R$ is t\u2026"
+title: "Let $R$ be a rng (a ring without 1) which contains an element $u$ suc\u2026"
 classification:
   areas:
   - algebra
@@ -10,10 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-d. 
-Deduce from (a) and (b) that the set of nilpotent elements of $R$ is the intersection of all prime ideals of $R$.
-
-### Fall 2015 #3
 Let $R$ be a rng (a ring without 1) which contains an element $u$ such that for all $y\in R$, there exists an $x\in R$ such that $xu=y$.
 
 Prove that $R$ contains a maximal left ideal.

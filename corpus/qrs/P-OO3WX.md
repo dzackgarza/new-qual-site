@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OO3WX
 kind: problem
-title: "$\\displaystyle \\int_0^\\infty \\frac{x^{a-1}}{1 + x^n} \\, dx$, $0< a < n\u2026"
+title: Let $0<r<1$. Show that polynomials
 classification:
   areas:
   - complex-analysis
@@ -10,9 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-$\displaystyle \int_0^\infty \frac{x^{a-1}}{1 + x^n} \, dx$, $0< a < n$
-(ii) $\displaystyle \int_0^\infty \frac{\log x}{(1 + x^2)^2}\, dx$
 
-### Tie's Extra Questions: Spring 2015
-
-
+Let $0<r<1$.
+Show that polynomials $P_n(z)  = 1 + 2z + 3 z^2 + \cdots + n z^{n-1}$ have no zeros in $|z|<r$ for all sufficiently large $n$'s.

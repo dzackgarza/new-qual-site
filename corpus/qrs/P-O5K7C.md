@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O5K7C
 kind: problem
-title: "Show that"
+title: Show that
 classification:
   areas:
   - complex-analysis
@@ -19,6 +19,3 @@ Show that
 
 
 ![Image](../../assets/figures/2020-02-03-13%3A51.png)\
-
-
-### Spring 20202 HW 2 #  2.6.2

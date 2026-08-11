@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PSRIH
 kind: problem
-title: "Give generators and relations for the non-commutative group $G$ of ord\u2026"
+title: "Give generators and relations for the non-commutative group $G$ of or\u2026"
 classification:
   areas:
   - algebra
@@ -42,5 +42,3 @@ G = \gens{x, y\st x^7, y^9, yxy\inv = \psi(x)}
 G = \gens{x, y\st x^7, y^9, yxy\inv = x^2}
 .\]
 :::
-
-### Fall 2019 Midterm #5

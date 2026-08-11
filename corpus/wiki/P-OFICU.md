@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OFICU
 kind: problem
-title: "Let $f$ be a non-negative measurable function on $[0, 1]$."
+title: Let $f$ be a non-negative measurable function on $[0, 1]$.
 classification:
   areas:
   - real-analysis
@@ -76,5 +76,3 @@ Show that
   - Thus $\norm{f}_p \geq \norm{f}_\infty$.
 
 :::
-
-## Spring 2018.4

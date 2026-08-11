@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7QVGF
 kind: problem
-title: "Show that if $f$ is continuous with compact support on $\\RR$, then"
+title: Show that if $f$ is continuous with compact support on $\RR$, then
 classification:
   areas:
   - real-analysis
@@ -109,4 +109,3 @@ This works for arbitrary $f\in L^1$, using approximation by continuous functions
   so it suffices to show that $\norm{\tau_h g - g} \to 0$.
 
 :::
-

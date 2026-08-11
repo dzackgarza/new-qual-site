@@ -63,7 +63,10 @@
 
 
 [[P-4PTIX]]
-[[P-6VGOD]]
+
+### Tie's Extra Questions: Fall 2011
+
+[[P-64ZUP]]
 
 ### Tie's Extra Questions: Fall 2011
 
@@ -124,7 +127,7 @@
 ### Tie's Extra Questions: Spring 2014
 
 
-[[P-Y37R6]]
+[[P-4PTIX]]
 ### Tie's Extra Questions: Spring 2014
 
 
@@ -199,6 +202,11 @@
 
 
 [[P-EH22O]]
+
+### Tie's Extra Questions: Fall 2015### Tie's Extra Questions: Fall 2015
+
+[[P-EHKFZ]]
+
 ## Spring 2015
 
 
@@ -242,8 +250,12 @@
 ### Tie's Extra Questions: Spring 2015
 
 
-[[P-D2F2B]]
+[[E-T5ERF]]
+
+### Tie's Extra Questions: Spring 2015
+
 [[P-FBOFF]]
+
 ### Tie's Extra Questions: Spring 2015
 
 
@@ -255,7 +267,7 @@
 ### Tie's Extra Questions: Spring 2015
 
 
-[[P-SUE6S]]
+[[P-OO3WX]]
 ### Tie's Extra Questions: Spring 2015
 
 
@@ -297,7 +309,11 @@
 
 
 [[P-UGCNF]]
-[[P-2NQ43]]
+
+### Tie's Extra Questions: Spring 2015
+
+[[P-MV7O6]]
+
 ### Tie's Extra Questions: Spring 2015
 
 
@@ -305,7 +321,7 @@
 ### Tie's Extra Questions: Spring 2015
 
 
-[[P-SUE6S]]
+[[P-OO3WX]]
 ### Tie's Extra Questions: Spring 2015
 
 
@@ -320,13 +336,32 @@
 ### Tie's Extra Questions: Spring 2015
 
 
-[[P-W2JEU]]
-[[P-ZJM7N]]
+[[P-MV7O6]]
+
+### Tie's Extra Questions: Spring 2015
+
+[[P-3JE4U]]
+
+### Tie's Extra Questions: Spring 2015
+
 [[P-OO3WX]]
+
+### Tie's Extra Questions: Spring 2015
+
 [[P-RMM73]]
+
 any $s<r$, there exists a constant $c>0$ such that
 $$\|f\|_{(\infty, s)} \leq c \|f\|_{(1, r)},$$ where
 [[P-S5FOO]]
+
+## Fall 2016
+
+[[P-YBNB1]]
+
+### Tie's Extra Questions: Fall 2016
+
+[[P-VF9RI]]
+
 ### Tie's Extra Questions: Fall 2016
 
 
@@ -344,6 +379,16 @@ $$\|f\|_{(\infty, s)} \leq c \|f\|_{(1, r)},$$ where
 
 
 [[P-GPMVB]]
+
+### Tie's Extra Questions: Fall 2016
+
 [[P-X7WUF]]
+
+### Tie's Extra Questions: Fall 2016
+
 [[P-4GWVV]]
-[[P-4X5BP]]
+
+### Tie's Extra Questions: Fall 2016
+
+[[P-RKKCE]]
+

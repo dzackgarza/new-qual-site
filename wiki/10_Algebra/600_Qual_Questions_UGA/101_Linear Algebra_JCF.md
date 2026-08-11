@@ -5,14 +5,34 @@
 [[P-R5QUP]]
 ## $\star$ Spring 2012 #8
 [[P-ZZDMX]]
+
+## $\star$ Spring 2020 #8
+
 [[P-HAEQ7]]
+
+## $\star$ Spring 2012 #7
+
 [[P-GCNAR]]
+
 ## Fall 2019 Final #8
 [[P-45V3F]]
+
+## Fall 2019 Final #9
+
 [[P-5H7FG]]
+
+## Spring 2016 #7
+
 [[P-DE22H]]
+
+## Spring 2020 #7
+
 [[P-R5NVB]]
+
+## Spring 2019 #7
+
 [[P-RWPK4]]
+
 ## Spring 2018 #4
 [[P-D4X7R]]
 ## Spring 2017 #6

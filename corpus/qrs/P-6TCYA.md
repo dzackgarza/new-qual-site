@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6TCYA
 kind: problem
-title: "Prove that every nontrivial normal subgroup of $P$ intersects the cent\u2026"
+title: Let $P$ be a finite $p\dash$group.
 classification:
   areas:
   - algebra
@@ -10,6 +10,8 @@ classification:
 relations: []
 review: draft
 ---
+Let $P$ be a finite $p\dash$group.
+
 Prove that every nontrivial normal subgroup of $P$ intersects the center of $P$ nontrivially.
 
 :::{.solution}
@@ -31,4 +33,3 @@ H = \Disjoint_{i\leq M} [g_i] \intersect H = \qty{ Z(G) \intersect H } \disjoint
 - So $p$ must divide the remaining term $Z(G) \intersect H$, which makes it nontrivial.
 
 :::
-

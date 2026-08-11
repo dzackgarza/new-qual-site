@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-5TB2LXRTQA
 kind: occurrence
-title: P-X6HVG at UGA algebra Spring 2013
+title: P-TM7YV at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-X6HVG
+  target: P-TM7YV
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2013
-  locator: "7"
+  locator: '7'
 ---
 
 ::: remark
-[[P-X6HVG]] appeared at UGA algebra Spring 2013, problem 7.
+[[P-TM7YV]] appeared at UGA algebra Spring 2013, problem 7.
 :::

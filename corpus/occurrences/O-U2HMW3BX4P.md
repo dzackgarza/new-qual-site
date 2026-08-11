@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-U2HMW3BX4P
 kind: occurrence
-title: P-UKENP at UGA real-analysis Fall 2018
+title: P-6HV66 at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-UKENP
+  target: P-6HV66
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2018
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-UKENP]] appeared at UGA real-analysis Fall 2018.
+[[P-6HV66]] appeared at UGA real-analysis Fall 2018.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-Y3ITK77EHG
 kind: occurrence
-title: P-36ZEY at UGA real-analysis January 2006
+title: P-DFDX4 at UGA real-analysis January 2006
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-36ZEY
+  target: P-DFDX4
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2006
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-36ZEY]] appeared at UGA real-analysis January 2006.
+[[P-DFDX4]] appeared at UGA real-analysis January 2006.
 :::

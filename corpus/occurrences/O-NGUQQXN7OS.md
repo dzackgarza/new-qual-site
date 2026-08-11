@@ -9,11 +9,11 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-EPUZO
+  target: P-45V3F
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2019
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark

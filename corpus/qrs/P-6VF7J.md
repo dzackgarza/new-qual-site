@@ -12,7 +12,7 @@ review: draft
 ---
 Suppose $f$ is analytic on a region $\Omega$ such that $\DD \subseteq \Omega \subseteq \CC$ and $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of convergence exactly 1.
 
-a. $\done$
+a.
 Give an example of such an $f$ that converges at every point of $S^1$.
 
 b.
@@ -31,7 +31,7 @@ Missing part (c)
 
 :::
 
-a.  $\done$
+a.
 
 - Take $\sum {z^n \over n^2}$
 - Then \[\abs{z}\leq 1 \implies \abs{z^n\over n^2} \leq {1\over n^2}\] which is summable

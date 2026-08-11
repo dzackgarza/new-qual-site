@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7MOQA
 kind: problem
-title: "Let $f, g$ be Lebesgue integrable on $\\RR$ and let $g_n(x) \\da g(x- n)\u2026"
+title: "Let $f, g$ be Lebesgue integrable on $\\RR$ and let $g_n(x) \\da g(x- n\u2026"
 classification:
   areas:
   - real-analysis
@@ -174,4 +174,3 @@ I_2
 - Check that as $N\to \infty$ as $\eps\to 0$ to yield the result.
 
 :::
-

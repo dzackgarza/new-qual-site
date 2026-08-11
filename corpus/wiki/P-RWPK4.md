@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RWPK4
 kind: problem
-title: "Let $p$ be a prime number."
+title: Let $p$ be a prime number.
 classification:
   areas:
   - algebra
@@ -201,4 +201,3 @@ P = [\vector v_1, \vector x, \vector p_1, \cdots, \vector p_{p-2}] =
 .\]
 
 :::
-

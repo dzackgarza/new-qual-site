@@ -26,6 +26,10 @@ order: 35
 
 [[P-XIY3O]]
 
+## No polynomials converging uniformly to $1/z$
+
+[[P-4HP1O]]
+
 ## Eventually sublinear implies constant
 
 [[P-2DXZW]]
@@ -50,7 +54,6 @@ order: 35
 
 [[P-AZFIB]]
 
-
 ## Spring 2020 HW 2, 2.6.8
 
 [[P-WNOA2]]
@@ -59,29 +62,29 @@ order: 35
 [[P-66WI2]]
 
 ## Spring 2020 HW 2, 6
+
 [[P-AW6IK]]
 
 ## Spring 2020 HW 2, 7
+
 [[P-IRNN2]]
 
 ## Spring 2020 HW 2, 8
 
 [[P-QC7BY]]
 
-
 ## Spring 2020 HW 2, 10
+
 [[P-FL5SY]]
 
-
 ## Spring 2020 HW 2, 11
+
 [[P-OZXEA]]
 
 ## Spring 2020 HW 2, 12
-[[P-UQOCE]]
 
+[[P-UQOCE]]
 
 ## Spring 2020 HW 2, 13
 
 [[P-SXZZW]]
-
-

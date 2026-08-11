@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SAIVF
 kind: problem
-title: "Let $f\\in L^2([0, 1])$ and suppose"
+title: Let $f\in L^2([0, 1])$ and suppose
 classification:
   areas:
   - real-analysis
@@ -94,4 +94,3 @@ $$
 :::
 
 :::
-

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2RS4X
 kind: problem
-title: "Evaluate the integral"
+title: Evaluate the integral
 classification:
   areas:
   - complex-analysis
@@ -16,6 +16,3 @@ Evaluate the integral
 .\]
 
 What are the poles of ${1\over 1 + z^4}$ ?
-
-
-### Spring 20202 HW 3 #  3.8.4

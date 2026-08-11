@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-BDCJISGJCU
 kind: occurrence
-title: P-O23AB at UGA algebra Spring 2016
+title: P-DE22H at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-O23AB
+  target: P-DE22H
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2016
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-O23AB]] appeared at UGA algebra Spring 2016.
+[[P-DE22H]] appeared at UGA algebra Spring 2016.
 :::

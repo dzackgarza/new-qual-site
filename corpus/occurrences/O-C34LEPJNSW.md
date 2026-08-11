@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-C34LEPJNSW
 kind: occurrence
-title: P-SHEH6 at Spring 2020 HW 3 #3.8.6 (complex-analysis)
+title: P-4M6DM at Spring 2020 HW 3
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-SHEH6
+  target: P-4M6DM
 review: draft
 payload:
   source: SRC-CA-ART-3VVS4Q
-  locator: "3"
+  locator: '3'
 ---
 
 ::: remark
-[[P-SHEH6]] appeared at Spring 2020 HW 3 #3.8.6 (complex-analysis), problem 3.
+[[P-4M6DM]] appeared at Spring 2020 HW 3 #3.8.6 (complex-analysis), problem 3.
 :::

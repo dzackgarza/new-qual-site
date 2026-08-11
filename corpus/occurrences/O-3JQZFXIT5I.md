@@ -9,11 +9,11 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-NTD6V
+  target: P-KR27N
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2015
-  locator: "5"
+  locator: '5'
 ---
 
 ::: remark

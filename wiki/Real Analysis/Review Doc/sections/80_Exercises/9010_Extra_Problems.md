@@ -32,7 +32,12 @@
 [[P-W7RQ2]]
 ## 2010 7 Challenge 1: Generalized Holder
 
-[[P-TXMST]]
+[[P-YTOGK]]
+
+## 2010 7 Challenge 2: Young's Inequality
+
+[[P-LUYHY]]
+
 ## 2010 9.1
 
 [[P-H2AG2]]

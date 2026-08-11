@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-UEPBDAXLQY
 kind: occurrence
-title: P-2NQ43 at UGA complex-analysis Spring 2015
+title: P-MV7O6 at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-2NQ43
+  target: P-MV7O6
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-2NQ43]] appeared at UGA complex-analysis Spring 2015.
+[[P-MV7O6]] appeared at UGA complex-analysis Spring 2015.
 :::

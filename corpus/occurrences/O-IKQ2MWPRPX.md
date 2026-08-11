@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-IKQ2MWPRPX
 kind: occurrence
-title: P-ZJM7N at UGA complex-analysis Spring 2015
+title: P-3JE4U at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-ZJM7N
+  target: P-3JE4U
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-ZJM7N]] appeared at UGA complex-analysis Spring 2015.
+[[P-3JE4U]] appeared at UGA complex-analysis Spring 2015.
 :::

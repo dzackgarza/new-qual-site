@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QNQTT
 kind: problem
-title: "Let $f(x) \\in \\QQ[x]$ be an irreducible polynomial of degree 5."
+title: Let $f(x) \in \QQ[x]$ be an irreducible polynomial of degree 5.
 classification:
   areas:
   - algebra
@@ -10,8 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-Let $f(x) \in \QQ[x]$ be an irreducible polynomial of degree 5.
-Assume that $f$ has all but two roots in $\RR$.
-Compute the Galois group of $f(x)$ over $\QQ$ and justify your answer.
 
-## $p$th Roots and $x^{p^k}-x$
+Let $f(x) \in \QQ[x]$ be an irreducible polynomial of degree 5. Assume that $f$ has all but two roots in $\RR$.
+Compute the Galois group of $f(x)$ over $\QQ$ and justify your answer.

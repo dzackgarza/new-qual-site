@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R5NVB
 kind: problem
-title: "Let"
+title: Let
 classification:
   areas:
   - algebra
@@ -29,5 +29,3 @@ c.
 Write down the minimal polynomial of $A$.
 
 > You should not need to compute $P\inv$.
-
-## Spring 2019 #7 

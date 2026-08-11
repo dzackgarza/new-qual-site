@@ -47,11 +47,20 @@
 
 ### Spring 20202 HW 2 #  2.6.14
 
-[[P-HBCHZ]]
-[[P-EY6UN]]
-[[P-FOYTY]]
+[[P-YEZTR]]
 
+### Spring 20202 HW 2 #  1
+
+[[P-7UIYI]]
+
+### Spring 20202 HW 2 #  2
+
+[[P-FOYTY]]
 
 ### Spring 20202 HW 2 #  3
 [[P-F7HCN]]
+
+### Spring 20202 HW 2 #  5
+
 [[P-LLNJ7]]
+

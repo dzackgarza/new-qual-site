@@ -9,11 +9,11 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-56PBT
+  target: P-LFC2G
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2015
-  locator: "2"
+  locator: '2'
 ---
 
 ::: remark

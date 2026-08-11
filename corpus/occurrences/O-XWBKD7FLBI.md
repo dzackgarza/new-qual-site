@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-XWBKD7FLBI
 kind: occurrence
-title: P-S3BDU at UGA algebra Spring 2020
+title: P-HAEQ7 at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-S3BDU
+  target: P-HAEQ7
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-S3BDU]] appeared at UGA algebra Spring 2020.
+[[P-HAEQ7]] appeared at UGA algebra Spring 2020.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NVVZJ
 kind: problem
-title: "Let $f\\in L^1([0, 1])$."
+title: Let $f\in L^1([0, 1])$.
 classification:
   areas:
   - real-analysis

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-OPSRR6VA7D
 kind: occurrence
-title: P-GM2KV at UGA algebra Fall 2020
+title: P-BBL4N at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-GM2KV
+  target: P-BBL4N
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-GM2KV]] appeared at UGA algebra Fall 2020.
+[[P-BBL4N]] appeared at UGA algebra Fall 2020.
 :::

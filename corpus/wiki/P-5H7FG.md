@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5H7FG
 kind: problem
-title: "Exhibit the rational and Jordan canonical forms for the following matr\u2026"
+title: "Exhibit the rational and Jordan canonical forms for the following mat\u2026"
 classification:
   areas:
   - algebra
@@ -19,5 +19,3 @@ Exhibit the rational and Jordan canonical forms for the following matrix $A\in M
   -2 & 0 & -1 & -2
   \end{array}\right)
   .\]
-
-## Spring 2016 #7

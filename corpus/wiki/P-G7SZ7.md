@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G7SZ7
 kind: problem
-title: "We have the map"
+title: We have the map
 classification:
   areas:
   - algebra
@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 We have the map
 
 \[
@@ -30,14 +31,16 @@ f &\mapsto \pi \circ f
 
 The claim is that $\overline{\pi}$ is *not* a surjection, and thus not an epimorphism (in the same category).
 
-To see that this is the case, we can simply note that $\hom_\ZZ(\ZZ_2, \ZZ) = 0$ by part 3 of Problem 1, whereas $\hom_\ZZ(\ZZ_2, \ZZ_2) \neq 0$. 
+To see that this is the case, we can simply note that $\hom_\ZZ(\ZZ_2, \ZZ) = 0$ by part 3 of Problem 1, whereas $\hom_\ZZ(\ZZ_2, \ZZ_2) \neq 0$.
 
-For example, one can define 
+For example, one can define
 \[
 \begin{align*}
 \id_{\ZZ_2}: \ZZ_2 &\to \ZZ_2\\
 [x]_2 &\mapsto [x]_2 
 ,\end{align*}
 \]
-which is a nontrivial module homomorphisms. 
+which is a nontrivial module homomorphisms.
 
+So any such $f$ appearing must be the zero map, and thus $\overline{\pi}$ is also the zero map.
+$\qed$

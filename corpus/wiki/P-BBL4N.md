@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BBL4N
 kind: problem
-title: "Let $A \\in \\Mat(n\\times n, \\RR)$ be arbitrary."
+title: Let $A \in \Mat(n\times n, \RR)$ be arbitrary.
 classification:
   areas:
   - algebra
@@ -29,7 +29,3 @@ a. Determine the elementary divisors and invariant factors of $A$.
 b. Determine the minimal polynomial of $A$.
 
 c. Determine the characteristic polynomial of $A$.
-
-
-
-## Misc/Unsorted

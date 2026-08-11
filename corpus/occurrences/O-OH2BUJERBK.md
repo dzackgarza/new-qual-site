@@ -9,11 +9,11 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-4T7W2
+  target: P-PSRIH
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2021
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark

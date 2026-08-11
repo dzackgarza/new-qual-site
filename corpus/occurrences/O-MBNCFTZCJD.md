@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-MBNCFTZCJD
 kind: occurrence
-title: P-TZ35F at UGA real-analysis May 2016
+title: P-DQQUE at UGA real-analysis May 2016
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-TZ35F
+  target: P-DQQUE
 review: draft
 payload:
   source: SRC-UGA-RA-MAY-2016
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-TZ35F]] appeared at UGA real-analysis May 2016.
+[[P-DQQUE]] appeared at UGA real-analysis May 2016.
 :::

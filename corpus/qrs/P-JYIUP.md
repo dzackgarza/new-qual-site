@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JYIUP
 kind: problem
-title: "Show that"
+title: Show that
 classification:
   areas:
   - complex-analysis
@@ -17,5 +17,3 @@ Show that
 .\]
 
 > Hint: use the fact that this integral equals $\frac{1}{2 i} \int_{-\infty}^{\infty} \frac{e^{i x}-1}{x} d x$, and integrate around an indented semicircle.
-
-### Spring 20202 HW 3 #  3.8.1

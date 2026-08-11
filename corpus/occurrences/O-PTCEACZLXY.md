@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-PTCEACZLXY
 kind: occurrence
-title: P-Z3ZVN at UGA algebra Fall 2019
+title: P-5H7FG at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-Z3ZVN
+  target: P-5H7FG
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2019
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-Z3ZVN]] appeared at UGA algebra Fall 2019.
+[[P-5H7FG]] appeared at UGA algebra Fall 2019.
 :::
