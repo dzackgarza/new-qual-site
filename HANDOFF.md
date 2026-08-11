@@ -211,9 +211,8 @@ Do not report the PDF subtask as the project finish line.
 
 ## PLAN-QUAL-GRUNT-001 progress (2026-08-11)
 
-Grunt-work completion run. **All eleven workstreams landed.**
-`main` = `940c6e4`; `uv run qualc check` -> 7,207 cards and 323 wiki pages OK;
-`pytest -q` -> 65 passed in ~3m19s.
+Grunt-work completion run.
+**All eleven workstreams landed.** `main` = `940c6e4`; `uv run qualc check` -> 7,207 cards and 323 wiki pages OK; `pytest -q` -> 65 passed in ~3m19s.
 
 | workstream | state | commit | headline |
 | --- | --- | --- | --- |
@@ -239,8 +238,8 @@ Four of the plan's own claims proved stale against the repo and are corrected in
 
 ## Resume here (2026-08-11, end of the GRUNT-001 run)
 
-`main` = `940c6e4`, clean, pushed. `uv run qualc check` -> **7,207 cards and 323
-wiki pages OK**. `pytest -q` -> **65 passed**.
+`main` = `940c6e4`, clean, pushed.
+`uv run qualc check` -> **7,207 cards and 323 wiki pages OK**. `pytest -q` -> **65 passed**.
 
 ### Done and durable
 
