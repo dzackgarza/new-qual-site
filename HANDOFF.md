@@ -307,3 +307,39 @@ Use one isolated git worktree per workstream.
 Also: the plan's own numbers drift.
 Four of its factual claims were stale against the repo this run (see its Surprises section).
 Measure before trusting any count in it.
+
+### In-flight worktrees (read before starting G6 or G7 work)
+
+Two git worktrees exist under `.claude/worktrees/`. Neither is debris; both hold
+real work and neither should be deleted without reading it.
+
+**`.claude/worktrees/g6` — branch `g6-tree-merge`, clean, already merged.**
+`git branch --merged main` lists it. Its commits are in `main` via the merge
+commit; the worktree is kept only so the branch has a checkout. Safe to remove
+with `git worktree remove .claude/worktrees/g6` once the branch is deleted.
+
+**`.claude/worktrees/g7` — branch `g7-reachability`, 31 uncommitted files, 0
+commits.** G7 was dispatched, began work, and was stood down mid-pass before it
+committed anything. The work is uncommitted and lives only in that worktree: a
+`git worktree remove` would destroy it. It contains:
+
+- `sources/g7-page-attachment.jsonl` (32 rows) -- pages created to attach cards,
+  each with a note on whether the page stands alone for a reader.
+- `sources/g7-residual.jsonl` (19 rows) -- cards deliberately *not* attached,
+  each with the reason. These are the honest residual the workstream was told to
+  produce rather than invent an order for.
+- `sources/g7-heading-math-residue.jsonl` (59 rows) -- **a finding no other
+  workstream caught**: page headings carrying empty display-math delimiters, e.g.
+  `## Spring 2020 #5 $$` -> `## Spring 2020 #5`, left when the import discarded
+  the math it was delimiting. This is a real corpus defect and is worth landing
+  on its own even if the rest of G7 is redone.
+- `tools/attach_pages.py`, `wiki/000_Card_Archives.md` and other new pages.
+
+To resume G7: work in that worktree, do not restart from `main`. Re-measure the
+orphan count first (`tools/audit.py --only orphans` reported 3,104 of 7,207 when
+G7 was dispatched). The editorial rule stands: transcribe the author's existing
+reading order where it exists, and where it does not, report the cards rather
+than composing one.
+
+To abandon G7 instead: extract `g7-heading-math-residue.jsonl` and its fixes
+first -- that finding is independent of the reachability work.
