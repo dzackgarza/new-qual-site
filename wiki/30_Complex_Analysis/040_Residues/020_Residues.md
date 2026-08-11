@@ -126,7 +126,7 @@ where $M_R \da \sup_{t\in [0, \pi]} \abs{g(Re^{it})}$.
 where we've used that on $[0, \pi/2]$, there is an inequality $2t/\pi \leq \sin(t)$.
 This is obvious from a picture, since $\sin(t)$ is a height on $S^1$ and $2t/\pi$ is a height on a diagonal line:
 
-![image_2021-06-09-01-29-22](../../../../../assets/figures/image_2021-06-09-01-29-22.png)
+![image_2021-06-09-01-29-22](../../../assets/figures/image_2021-06-09-01-29-22.png)
 
 :::
 
@@ -198,7 +198,7 @@ As a special case, if $z_0$ is a simple pole of $f$, then
 \Res_{z=z_0}f = \lim_{z\to z_0} (z-z_0) f(z)
 .\]
 :::
-![](../../../../../assets/figures/2021-10-29_01-33-46.png)
+![](../../../assets/figures/2021-10-29_01-33-46.png)
 :::{.corollary title="Better derivative formula that sometimes works for simple poles"}
 
 If additionally $f=g/h$ where $h(z_0) = 0$ and $h'(z_0)\neq 0$,
@@ -233,7 +233,7 @@ Let $f(z) = \frac{1}{1+z^2}$, then $g(z) = 1, h(z) = 1+z^2$, and $h'(z) = 2z$ so
 [[E-SNRS5]]
 [[E-ENWYG]]
 [[E-PMURO]]
-![image_2021-05-17-13-33-55](../../../../../assets/figures/image_2021-05-17-13-33-55.png)
+![image_2021-05-17-13-33-55](../../../assets/figures/image_2021-05-17-13-33-55.png)
 
 :::{.theorem title="The residue theorem"}
 Let $f$ be meromorphic on a region $\Omega$ with poles \( \ts{ \elts{z}{N} } \).

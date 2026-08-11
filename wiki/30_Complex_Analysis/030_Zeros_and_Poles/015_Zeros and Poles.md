@@ -77,9 +77,9 @@ f(z) \da \int_\gamma { f(\xi) \over \xi - z} \dx
 This is valid for $z\neq z_0$, but the right-hand side is analytic. (?)
 :::
 
-![](../../../../../assets/figures/2021-10-29_01-30-50.png)
+![](../../../assets/figures/2021-10-29_01-30-50.png)
 
-![](../../../../../assets/figures/2021-10-29_01-31-06.png)
+![](../../../assets/figures/2021-10-29_01-31-06.png)
 
 
 :::{.theorem title="Improved Taylor Remainder Theorem"}

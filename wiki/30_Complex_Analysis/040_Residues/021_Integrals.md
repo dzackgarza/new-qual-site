@@ -4,11 +4,11 @@
 
 - For integrals that decay faster than $1/z^\alpha, \alpha>1$: semicircular contours.
 
-  ![](../../../../../assets/figures/2021-07-29_18-37-57.png)
+  ![](../../../assets/figures/2021-07-29_18-37-57.png)
 
 - For integrals that decay like $1/z$: rectangular contours.
 
-![](../../../../../assets/figures/2021-07-29_18-38-24.png)
+![](../../../assets/figures/2021-07-29_18-38-24.png)
 
 - If a trigonometric function is in the numerator, check if $I \approx \Re(\tilde I)$ where $\tilde I$ replaces cosines/sines with $e^{iz}$.
 

@@ -1,7 +1,7 @@
 # Conformal Maps / Linear Fractional Transformations
 
 
-![](../../../../../assets/figures/2021-10-29_02-33-08.png)
+![](../../../assets/figures/2021-10-29_02-33-08.png)
 
 :::{.definition title="Conformal Map / Biholomorphism"}
 A map $f$ is **conformal** on $\Omega$ iff $f$ is complex-differentiable, $f'(z)\neq 0$ for $z\in \Omega$, and $f$ preserves signed angles (so $f$ is orientation-preserving).
@@ -132,7 +132,7 @@ i \qty{1-w \over 1+w} &\mapsfrom w
 
 - This maps $\RR\to \bd \DD$, where $F(\infty) = -1$, and as $x\in \RR$ ranges from $-\infty\to\infty$, $F(x)$ travels from $z=-1$ counter-clockwise through $S^1$ (starting at $z=-1$ and moving through the lower half first).
 
-![](../../../../../assets/figures/2021-07-29_19-02-54.png)
+![](../../../assets/figures/2021-07-29_19-02-54.png)
 
 So this extends to a map $\HH\to \DD$.
 
@@ -213,7 +213,7 @@ z &\mapstofrom {z^{\pi\over \alpha} - i \over z^{\pi\over\alpha} + i}
 
 Idea: compose some known functions.
 
-![](../../../../../assets/figures/image_2020-07-22-13-22-46.png)
+![](../../../assets/figures/image_2020-07-22-13-22-46.png)
 
 \[
 S_{\alpha} &\to S_{\pi} = \HH \to \DD \\

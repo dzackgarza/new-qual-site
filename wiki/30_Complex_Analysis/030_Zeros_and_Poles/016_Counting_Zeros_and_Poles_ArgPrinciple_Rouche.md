@@ -122,10 +122,10 @@ The number of zeros/poles are determined by a dominating function.
 
 
 
-![](../../../../../assets/figures/2021-10-29_01-39-19.png)
+![](../../../assets/figures/2021-10-29_01-39-19.png)
 
 
-![](../../../../../assets/figures/2021-10-29_01-39-43.png)
+![](../../../assets/figures/2021-10-29_01-39-43.png)
 
 [[E-T4VAX]]
 [[E-XQ4BS]]

@@ -31,12 +31,12 @@ title: Basics
 
 :::
 
-![](../../../../../assets/figures/2021-10-29_16-51-23.png)
-![](../../../../../assets/figures/2021-10-29_16-55-00.png)
+![](../../../assets/figures/2021-10-29_16-51-23.png)
+![](../../../assets/figures/2021-10-29_16-55-00.png)
 A nowhere differentiable function:
-![](../../../../../assets/figures/2021-10-29_16-57-12.png)
+![](../../../assets/figures/2021-10-29_16-57-12.png)
 Monotone functions are differentiable almost everywhere.
-![](../../../../../assets/figures/2021-10-29_17-28-39.png)
+![](../../../assets/figures/2021-10-29_17-28-39.png)
 [[E-QSNCL]]
 
 :::{.example title="?"}

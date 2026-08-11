@@ -333,8 +333,8 @@ v_{xx} + u_{yx} = 0 \implies v_{xx} + v_{yy} = 0 \\ \\
 [[E-3QAC4]]
 [[E-MTLQI]]
 ## Power Series
-![](../../../../../assets/figures/2021-10-28_21-22-12.png)
-![](../../../../../assets/figures/2021-10-28_21-22-35.png)
+![](../../../assets/figures/2021-10-28_21-22-12.png)
+![](../../../assets/figures/2021-10-28_21-22-35.png)
 :::{.theorem title="Improved Taylor's Theorem"}
 If $f$ is holomorphic on a region $\Omega$ with $\closure{ D_R(z_0)} \subseteq \Omega$, and for every $z\in D_r(z_0)$, $f$ has a power series expansion of the following form:
 \[
