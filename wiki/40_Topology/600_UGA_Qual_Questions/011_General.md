@@ -4,15 +4,21 @@
 
 ### Fall '11
 
+[[P-3NKLK]]
+
 [[P-5ADNP]]
 
 ### 6 (Fall '05)
+
+[[P-XSBTH]]
 
 [[P-DHIWH]]
 ### 7 (Fall '06).
 
 [[P-FGSRH]]
 ### 8 (Fall '10).
+
+[[P-AZ46Z]]
 
 [[P-K5XUM]]
 ### 12 (Spring '06).
@@ -29,6 +35,8 @@
 
 [[P-QN7OP]]
 ### ? (Spring '10)
+
+[[P-YZ3BU]]
 
 [[P-MHQ6A]]
 ### ? (Spring '11)
@@ -66,6 +74,8 @@
 
 [[P-L3BUX]]
 ### 4 (Spring '05)
+
+[[P-N5HX3]]
 
 [[P-FZIG3]]
 ### 44 (Spring '15)
@@ -287,4 +297,24 @@ Show that $[0, 1]$ is compact without using the Heine-Borel theorem.
 [[E-Y52Y4]]
 
 #### Exercise
+
+[[E-TTDES]]
+[[E-TTW3C]]
+[[E-GNMUG]]
+[[E-AZ7SN]]
+[[E-2EG76]]
+[[E-4ZTVF]]
+[[E-KDAVR]]
+[[E-IHJ56]]
+[[E-FV5FI]]
+[[E-X36KD]]
+[[E-7DSGZ]]
+[[E-2HSGM]]
+[[E-TRRUN]]
+[[E-6MBWQ]]
+[[E-J3IO7]]
+[[E-3RLT2]]
+[[E-T7PYZ]]
+[[E-5W3U6]]
+[[E-7NUZ2]]
 [[E-54CQC]]

@@ -3,6 +3,13 @@
 
 # May 2016 Qual
 
+##  (May 2016, \#1)
+##  (May 2016, \#2)
+## (May 2016, \#3)
+## (May 2016, \#4)
+##  (May 2016, \#5)
+##  (May 2016, \#6)
+
 ##  May 2016, 1 
 
 [[P-XEEUX]]
@@ -22,6 +29,11 @@
 [[P-BDFPC]]
 
 # Metric Spaces and Topology
+
+##  (May 2019, \#1)
+##  (June 2003, \#1b,c)
+##  (January 2009, \#4a)
+##  (January 2011 \#3a)
 
 ##  (May 2019, 1) 
 
@@ -46,6 +58,12 @@
 
 # Sequences and Series
 
+## (June 2013 \#1a)
+## (January 2014 \#2)
+##  (May 2011 \#4a)
+## (June 2005 \#3b)
+## (January 2011 \#5)
+
 ## (June 2013 1a) 
 [[P-MCFQT]]
 ## (January 2014 2) 
@@ -69,6 +87,13 @@
 # Continuity of Functions
 
 # Differential Calculus
+
+##  (June 2005 \#1a)
+##  (January 2006 \#2b)
+##  (June 2007 \#3a)
+##  (June 2008 \#3a)
+##  (January 2012 \#4b, extended)
+##  (June 2012 \#1a)
 
 ##  (June 2005 1a) 
 
@@ -128,12 +153,16 @@
 
 # Sequences and Series of Functions
 
+## (June 2010 \#6a)
+
 ## (June 2010 6a) 
 
 [[P-7P5F5]]
 
 
 ##  (January 2008 5a) 
+
+##  (January 2005 \#4, June 2010 \#6b)
 
 [[P-XQRCI]]
 
@@ -144,6 +173,10 @@
 
 
 ##  (January 2020 4a) 
+
+##  (June 2005 \#5)
+[[P-CFSC6]]
+##  (January 2005 \#3b)
 
 [[P-5UQSK]]
 
@@ -197,6 +230,12 @@
 
 # Integral Calculus
 
+##  (January 2006 \#4b)
+##  (June 2005 \#1b)
+##  (January 2010 \#5)
+##  (January 2009 \#4b)
+##  (June 2009 \#5b)
+
 
 
 [[P-3SSNK]]
@@ -245,3 +284,11 @@
 
 [[P-BKCZH]]
 
+
+This document is a collection of solutions to various problems written
+up by the participants of the May 2020 Analysis Qualifying Exam
+Workshop. This is in no way meant to be an official source for solutions
+to old exam problems, but is simply meant to be a repository of
+solutions to problems worked on during the workshop. You may use this to
+help you study for the analysis qualifying exam, but before you read the
+solutions to any problems, you should attempt the problem on your own.

@@ -79,8 +79,6 @@ Negated:[^Negated_uniform_convergence]
 (\exists \varepsilon>0)\left(\forall n_{0} = n_0 (\eps) \right)(\exists x = x(n_0) \in S)\left(\exists n>n_{0}\right)\left(\left|f_{n}(x)-f(x)\right| \geq \varepsilon\right)
 .\]
 
-[^Negated_uniform_convergence]: Slogan: to negate, find a bad $x$ depending on $n_0$ that are larger than some $\eps$.
-
 :::
 
 ## Function Spaces
@@ -148,8 +146,6 @@ If the $\limsup$ and $\liminf$ sets are equal, then one can define the set $\lim
 
 :::{.definition title="$F_\sigma$ and $G_\delta$ Sets"}
 An $F_\sigma$ set is a union of closed sets, and a $G_\delta$ set is an intersection of opens. [^Mnemonic_Ferme]
-
-[^Mnemonic_Ferme]: 
 Mnemonic: "F" stands for *ferme*, which is "closed" in French, and $\sigma$ corresponds to a "sum", i.e. a union.
 
 :::
@@ -212,6 +208,10 @@ $$f * g(x)=\int f(x-y) g(y) d y .$$
 :::
 
 :::{.definition title="Approximations to the identity"}
+For $\phi\in L^1$, the dilations satisfy $\int \phi_{t} = \int \phi$, and if $\int \phi = 1$ then $\phi$ is an **approximate identity**.
+:::
+
+:::{.definition title="Approximations to the identity"}
 For $\phi\in L^1$, the dilations satisfy $\int \phi_{t} = \int \phi$, and if $\int \phi = 1$ then $\phi$ is an **approximate identity**. 
 
 Some properties that approximate identities enjoy:
@@ -271,3 +271,7 @@ A space is a **Banach space** if and only if it is a complete normed vector spac
 :::{.definition title="Hilbert Space"}
 A **Hilbert space** is an inner product space which is a Banach space under the induced norm.
 :::
+
+[^Negated_uniform_convergence]: Slogan: to negate, find a bad $x$ depending on $n_0$ that are larger than some $\eps$.
+
+[^Mnemonic_Ferme]:

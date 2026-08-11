@@ -199,8 +199,6 @@ u_{1}, \cdots, u_{k}, v_{1}, \cdots, v_{m}
   }
 }
 \]
-
-[^path_connected_necessary]: 
 Note that the hypothesis that $U_1 \intersect U_2$ is path-connected is necessary: take $S^1$ with $U,V$ neighborhoods of the poles, whose intersection is two disjoint components.
 
 :::
@@ -340,4 +338,4 @@ Any continuous map between CW complexes is homotopy equivalent to a cellular map
 
 [^homotopyproduct]: This follows because $X\cross Y \surjects X$ is a fiber bundle, so use LES in homotopy and the fact that $\pi_{i\geq 2} \in \mathbf{Ab}$.
 
-
+[^path_connected_necessary]:

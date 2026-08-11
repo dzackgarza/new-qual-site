@@ -766,4 +766,3 @@ For integral domains $R$,
 :::{.definition title="Primary Ideal"}
 An ideal $I\normal R$ is **primary** iff whenever $pq\in I$, $p\in I$ and $q^n\in I$ for some $n$.
 :::
-

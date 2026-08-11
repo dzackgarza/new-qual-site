@@ -1,5 +1,22 @@
 # Measure Theory: Sets
 
+## Spring 2020 # 2 $$
+## Fall 2019 # 3. $$
+## Spring 2019 # 2 $$
+## Fall 2018 # 2
+## Spring 2018 # 1 $$
+## Fall 2017 # 2 $$
+## Spring 2017 # 2 $$
+## Fall 2016 # 4 $$
+## Spring 2016 # 3
+## Spring 2016 # 5
+## Fall 2015 # 2
+## Spring 2015 # 3
+## Spring 2014 # 3
+## Spring 2014 # 4
+## Spring 2017 # 1 $$
+## Spring 2016 # 2
+
 ## Fall 2021.3
 
 ^9d4269
@@ -81,6 +98,12 @@
 
 
 # Measure Theory: Functions
+
+## Fall 2016 # 2 $$
+## Spring 2016 # 4
+## Spring 2021 # 1 $$
+## Spring 2021 # 3
+## Fall 2020 \# 2
 
 ## Spring 2021.1
 

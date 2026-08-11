@@ -34,15 +34,16 @@ then there exists an $F$ such that
 \norm{ \sum_{n\leq N} f_n - F}_\infty \convergesto{N\to\infty} 0 && F' = g
 .\]
 
-[^theorem_referfence_6.4.3_Abbott]: See Abbott theorem 6.4.3, pp 168.
-
-[^pointwise_works_too]: So this implicitly holds if $f$ is the pointwise limit of $f_n$.
-
 :::
 
 :::{.proposition title="Lipschitz $\iff$ differentiable with bounded derivative."}
 A function $f: (a, b) \to \RR$ is Lipschitz $\iff f$ is differentiable and $f'$ is bounded.
 In this case, $\abs{f'(x)} \leq C$, the Lipschitz constant.
+:::
+
+:::{.theorem title="Term by Term Differentiability Theorem"}
+If $f_n$ are differentiable, $\sum f_n' \to g$ uniformly, and there exists one point[^pointwise_works_too-qrs] $x_0$ such that $\sum f_n(x)$ converges, then there exist an $f$ such that $\sum f_n \to f$ uniformly and $f' = g$.[^theorem_referfence_6.4.3_Abbott-qrs]
+
 :::
 
 :::{.example title="Derivatives of bounded functions need not be bounded"}
@@ -64,3 +65,10 @@ now take the sequence $x_n \da 1/\sqrt{k\pi}$ to get $f'(x_n) = 2\sqrt{k\pi}(-1)
 
 :::
 
+[^theorem_referfence_6.4.3_Abbott]: See Abbott theorem 6.4.3, pp 168.
+
+[^pointwise_works_too]: So this implicitly holds if $f$ is the pointwise limit of $f_n$.
+
+[^theorem_referfence_6.4.3_Abbott-qrs]: See Abbott theorem 6.4.3, pp 168.
+
+[^pointwise_works_too-qrs]: So this implicitly holds if $f$ is the pointwise limit of $f_n$.

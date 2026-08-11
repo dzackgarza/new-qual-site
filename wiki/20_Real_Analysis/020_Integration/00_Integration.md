@@ -12,6 +12,13 @@
 \envlist
 
 - $L^+$: nonnegative measurable functions
+- $L^1$: Lebesgue integrable functions, so $\int \abs{f} < \infty$
+:::
+
+:::{.remark title="on notation"}
+\envlist
+
+- $L^+$: nonnegative measurable functions
 - $L^1$: Lebesgue integrable functions, so $\norm{f}_{L^1} \da \int \abs{f} < \infty$.
 :::
 
@@ -136,6 +143,9 @@ $$
 Measurable, non-negative, increasing pointwise a.e. allows commuting limits and integrals.
 :::
 
+:::{.proof title="of MCT, todo"}
+:::
+
 #todo Proof
 
 :::{.theorem title="Dominated Convergence"}
@@ -151,6 +161,9 @@ As a consequence,
 
 > Positivity *not* needed.
 
+:::
+
+:::{.proof title="of DCT, todo"}
 :::
 
 #todo Proof
@@ -200,6 +213,13 @@ Proceed by showing $\limsup \int f_n \leq \int f \leq \liminf \int f_n$:
   - Here we use that $g_n + f_n \to g+f$ with $0 \leq \abs{f_n} + f_n \leq g_n + f_n$ so Fatou's lemma again applies.
 :::
 
+:::{.proposition title="Convergence in $L^1$ implies convergence of norms"}
+If $f\in L^1$, then
+\[
+\int\abs{f_n - f} \to 0 \iff \int \abs{f_n} \to \int \abs{f}
+.\]
+:::
+
 :::{.remark}
 The converse to the DCT does not hold, i.e. $L^p$ boundedness does not imply a.e. boundedness, i.e. it is not true that $\lim \int f_k = \int f$ implies that $\exists g\in L^p$ such that $f_k < g$ a.e. for every $k$.
 
@@ -247,6 +267,70 @@ If $f_n$ is a sequence of nonnegative measurable functions, then
 &\geq \int \liminf_n f_n \\
 \limsup_n \int f_n &\leq \int \limsup_n f_n
 .\]
+:::
+
+:::{.proof title="of Fatou"}
+
+:::
+:::{.theorem title="Tonelli (Non-Negative, Measurable)"}
+For $f(x, y)$ **non-negative and measurable**, for almost every $x\in \RR^n$,
+
+- $f_x(y)$ is a **measurable** function
+- $F(x) = \int f(x, y) ~dy$ is a **measurable** function,
+- For $E$ measurable, the slices $E_x \definedas \theset{y \suchthat (x, y) \in E}$ are measurable.
+- $\int f = \int \int F$, i.e. any iterated integral is equal to the original.
+:::
+:::{.theorem title="Fubini (Integrable)"}
+For $f(x, y)$ **integrable**, for almost every $x\in \RR^n$,
+
+- $f_x(y)$ is an **integrable** function
+- $F(x) \definedas \int f(x, y) ~dy$ is an **integrable** function,
+- For $E$ measurable, the slices $E_x \definedas \theset{y \suchthat (x, y) \in E}$ are measurable.
+- $\int f = \int \int f(x,y)$, i.e. any iterated integral is equal to the original
+
+:::
+:::{.theorem title="Fubini-Tonelli"}
+If any iterated integral is **absolutely integrable**, i.e. $\int \int \abs{f(x, y)} < \infty$, then $f$ is integrable and $\int f$ equals any iterated integral.
+:::
+:::{.proposition title="Differentiating Under an Integral (non-negative)"}
+If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) ~dt$,
+\[
+\dd{}{t} F(t)
+&\definedas \lim_{h \rightarrow 0} \int \frac{f(x, t+h)-f(x, t)}{h} d x \\
+&\eq^{\scriptstyle\text{DCT}} \int \dd{}{t} f(x, t) ~dx
+.\]
+
+To justify passing the limit, let $h_k \to 0$ be any sequence and define
+$$
+f_k(x, t) = \frac{f(x, t+h_k)-f(x, t)}{h_k}
+,$$
+so $f_k \converges{k\to\infty}\too \dd{f}{t}$ pointwise.
+
+Apply the MVT to $f_k$ to get $f_k(x, t) = f_k(\xi, t)$ for some $\xi \in [0, h_k]$, and show that $f_k(\xi, t) \in L_1$.
+:::
+:::{.proposition title="Commuting Sums with Integrals (non-negative)"}
+If $f_n$ are non-negative and $\sum \int \abs f_n < \infty$, then $\sum \int f_n = \int \sum f_n$.
+:::
+:::{.proof title="Commuting sums with integrals"}
+- Idea: MCT.
+- Let $F_N = \sum^N f_n$ be a finite partial sum;
+- Then there are simple functions $\phi_n \nearrow f_n$
+- So $\sum^N \phi_n \nearrow F_N$ and MCT applies
+:::
+:::{.theorem title="Commuting Sums with Integrals (integrable)"}
+If $\theset{f_n}$ integrable with either $\sum \int \abs{f_n} < \infty$ or $\int\sum \abs{f_n} < \infty$, then
+\[
+\int\sum f_n = \sum \int f_n
+.\]
+:::
+:::{.proof title="Commuting sums with integrals (integrable)"}
+\envlist
+
+- By Tonelli, if $f_n(x) \geq 0$ for all $n$, taking the counting measure allows interchanging the order of "integration".
+- By Fubini on $\abs{f_n}$, if either "iterated integral" is finite then the result follows.
+:::
+:::{.proposition title="?"}
+If $f_k \in L^1$ and $\sum \norm{f_k}_1 < \infty$ then $\sum f_k$ converges almost everywhere and in $L^1$.
 :::
 
 #todo Prove
@@ -316,4 +400,3 @@ Moreover if $\dd{f}{t}$ exists and $\abs{\dd{f}{t}(x, t)} \leq \abs{g}$ for some
 
 
 :::
-

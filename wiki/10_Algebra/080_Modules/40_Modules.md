@@ -2,6 +2,21 @@
 
 ## Definitions and Basics
 
+:::{.definition title="$R\dash$modules"}
+Four properties:
+
+- $r(x+y) = rx + ry$
+- $(r+s)x = rs + sx$
+- $(rs)x= r(s(x))$
+- $1_Rx = x$
+
+Note that $M$ is additionally an $R\dash$algebra if the multiplication map is $R\dash$bilinear and so given by $m: M^{\tensor_R 2}\to M$ satisfying
+\[
+r. m(a\tensor b) = m(r.a \tensor b) = m(a\tensor r.b) && \forall r\in R, a,b \in M
+.\]
+
+:::
+
 :::{.definition title="R-modules"}
 Four properties:
 
@@ -397,6 +412,28 @@ r\actson (m\tensor n) \da (r\actson m)\tensor n
 .\]
 :::
 
+:::{.proposition title="?"}
+If $\dim_k V, \dim_k W < \infty$ then there is an isomorphism
+\[
+V\dual \tensor_k W \mapsvia{\sim} \Hom_{\kmod}(V, W) \\
+\tilde v \tensor w &\mapsto \tilde v(\wait) w
+.\]
+:::
+:::{.proposition title="?"}
+If either of $\dim_k V, \dim_k W$ is finite, then
+\[
+V\dual \tensor_k W\dual \mapsvia{\sim} (V\tensor W)\dual \\
+v\tensor w &\mapsto (x \tensor y \mapsto v(x) w(y))
+.\]
+
+:::
+:::{.proposition title="?"}
+\[
+\Hom_{\kmod}(V, W) \mapsvia{\sim} \Hom_{\kmod}(W, V)\dual \\
+T &\mapsto \Tr(T \circ \wait )
+.\]
+:::
+
 
 :::{.proposition title="?"}
 If $\dim_k V, \dim_k W < \infty$ then there is an isomorphism
@@ -455,4 +492,3 @@ $\ZZ/2 \tensor_\ZZ \ZZ/3 = 0$:
 > [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMiwwLCJcXFpaIFxcdGVuc29yX1xcWlogXFxaWi8zIl0sWzQsMCwiXFxaWiBcXHRlbnNvcl9cXFpaIFxcWlovMyJdLFsyLDIsIlxcWlovMyJdLFs0LDIsIlxcWlovMyJdLFs2LDIsIjAiXSxbNiwwLCJcXFpaLzMgXFx0ZW5zb3JfXFxaWiBcXFpaLzIiXSxbMCwyLCIwIl0sWzAsMCwiMCJdLFsyLDMsIihcXHdhaXQgXFx0aW1lcyAyKSJdLFswLDEsIihcXHdhaXQgXFx0aW1lcyAyKSBcXGNyb3NzIFxcb25lIl0sWzMsNF0sWzEsNV0sWzcsMF0sWzYsMl0sWzAsMiwiXFxwcm9qXzIiLDFdLFsxLDMsIlxccHJval8yIiwxXSxbNSw0LCJcXGNvbmciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
 
 :::
-

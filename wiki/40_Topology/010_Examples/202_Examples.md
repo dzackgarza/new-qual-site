@@ -294,6 +294,3 @@ The following is a giant list of known homology/homotopy.
 - $D(1, S^n) \cong \RR^n$ and thus $D(k, S^n) \cong D(k-1, \RR^n) \cong \bigvee^{k-1} S^1$
 
 :::
-
-
-
