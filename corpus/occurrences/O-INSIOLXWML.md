@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-INSIOLXWML
 kind: occurrence
-title: P-UVJFG at UGA complex-analysis Spring 2020
+title: P-QC7BY at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-UVJFG
+  target: P-QC7BY
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-UVJFG]] appeared at UGA complex-analysis Spring 2020.
+[[P-QC7BY]] appeared at UGA complex-analysis Spring 2020.
 :::

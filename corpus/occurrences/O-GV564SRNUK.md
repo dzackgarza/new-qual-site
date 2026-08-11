@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-GV564SRNUK
 kind: occurrence
-title: P-LQFWB at UGA topology Spring 2017
+title: P-Q5Q6P at UGA topology Spring 2017
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-LQFWB
+  target: P-Q5Q6P
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2017
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-LQFWB]] appeared at UGA topology Spring 2017.
+[[P-Q5Q6P]] appeared at UGA topology Spring 2017.
 :::

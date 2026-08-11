@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-IZHTAKDHPX
 kind: occurrence
-title: P-OBLMF at UGA topology Spring 2014
+title: P-FQNYQ at UGA topology Spring 2014
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-OBLMF
+  target: P-FQNYQ
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2014
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-OBLMF]] appeared at UGA topology Spring 2014.
+[[P-FQNYQ]] appeared at UGA topology Spring 2014.
 :::

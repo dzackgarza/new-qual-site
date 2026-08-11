@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FD-J3HIA
 kind: definition
-title: '$K(\alpha)$ for $\alpha \in F\supset K$'
+title: $K(\alpha)$ for $\alpha \in F\supset K$
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: variant-of
-  target: FD-5CUUG
+  target: FD-3V3ZW
 review: draft
 ---
 

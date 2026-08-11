@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-CXEJIY6QIC
 kind: occurrence
-title: P-4POSJ at UGA topology Fall 2004
+title: P-QN7OP at UGA topology Fall 2004
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-4POSJ
+  target: P-QN7OP
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2004
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-4POSJ]] appeared at UGA topology Fall 2004.
+[[P-QN7OP]] appeared at UGA topology Fall 2004.
 :::

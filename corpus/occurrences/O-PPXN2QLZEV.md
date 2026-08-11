@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-PPXN2QLZEV
 kind: occurrence
-title: P-GM3VO at UGA real-analysis Fall 2015
+title: P-XHEB6 at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-GM3VO
+  target: P-XHEB6
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-GM3VO]] appeared at UGA real-analysis Fall 2015.
+[[P-XHEB6]] appeared at UGA real-analysis Fall 2015.
 :::

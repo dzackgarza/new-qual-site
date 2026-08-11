@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-SU5JYAUQTE
 kind: occurrence
-title: P-XZ4WP at UGA real-analysis Spring 2014
+title: P-KGSPZ at UGA real-analysis Spring 2014
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-XZ4WP
+  target: P-KGSPZ
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2014
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-XZ4WP]] appeared at UGA real-analysis Spring 2014.
+[[P-KGSPZ]] appeared at UGA real-analysis Spring 2014.
 :::

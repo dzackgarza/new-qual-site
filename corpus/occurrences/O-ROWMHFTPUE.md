@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-ROWMHFTPUE
 kind: occurrence
-title: P-FN3IP at UGA real-analysis January 2005
+title: P-AITX4 at UGA real-analysis January 2005
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-FN3IP
+  target: P-AITX4
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2005
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-FN3IP]] appeared at UGA real-analysis January 2005.
+[[P-AITX4]] appeared at UGA real-analysis January 2005.
 :::

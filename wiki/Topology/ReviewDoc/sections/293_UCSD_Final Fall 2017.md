@@ -5,10 +5,10 @@
 [[P-YHFCR]]
 
 
-[[P-M666Y]]
+[[P-6P7O7]]
 
 
-[[P-BBWQ6]]
+[[P-IWMWM]]
 
 
 [[P-KPDL7]]
@@ -19,7 +19,7 @@ Use covering space $\RR \surjects S^1$?
 
 
 
-[[P-PL6SJ]]
+[[P-SAEXG]]
 
 
 [[P-LMEKH]]

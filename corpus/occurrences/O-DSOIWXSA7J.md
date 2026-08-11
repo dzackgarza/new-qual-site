@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-DSOIWXSA7J
 kind: occurrence
-title: P-C4FVK at Fall 2019 Midterm #9 (algebra)
+title: P-JG7FM at Fall 2019 Midterm
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-C4FVK
+  target: P-JG7FM
 review: draft
 payload:
   source: SRC-ALG-ART-DR32BP
-  locator: "9"
+  locator: '9'
 ---
 
 ::: remark
-[[P-C4FVK]] appeared at Fall 2019 Midterm #9 (algebra), problem 9.
+[[P-JG7FM]] appeared at Fall 2019 Midterm #9 (algebra), problem 9.
 :::

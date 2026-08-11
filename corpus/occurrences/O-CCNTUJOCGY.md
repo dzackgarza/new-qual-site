@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-CCNTUJOCGY
 kind: occurrence
-title: P-ECTLA at UGA topology Fall 2012
+title: P-SGK4K at UGA topology Fall 2012
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-ECTLA
+  target: P-SGK4K
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2012
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-ECTLA]] appeared at UGA topology Fall 2012.
+[[P-SGK4K]] appeared at UGA topology Fall 2012.
 :::

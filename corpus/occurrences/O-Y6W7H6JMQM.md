@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-Y6W7H6JMQM
 kind: occurrence
-title: P-M666Y at UCSD topology Fall 2017
+title: P-6P7O7 at UCSD topology Fall 2017
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-M666Y
+  target: P-6P7O7
 review: draft
 payload:
   source: SRC-UCSD-TOP-FALL-2017
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-M666Y]] appeared at UCSD topology Fall 2017.
+[[P-6P7O7]] appeared at UCSD topology Fall 2017.
 :::

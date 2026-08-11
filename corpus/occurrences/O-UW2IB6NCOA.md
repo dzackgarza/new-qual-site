@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-UW2IB6NCOA
 kind: occurrence
-title: P-NOQ6V at UGA real-analysis 2010
+title: P-AGH3O at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-NOQ6V
+  target: P-AGH3O
 review: draft
 payload:
   source: SRC-UGA-RA-2010
-  locator: "10.3"
+  locator: '10.3'
 ---
 
 ::: remark
-[[P-NOQ6V]] appeared at UGA real-analysis 2010, problem 10.3.
+[[P-AGH3O]] appeared at UGA real-analysis 2010, problem 10.3.
 :::

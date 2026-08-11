@@ -23,7 +23,7 @@
 [[P-YGU32]]
 
 
-[[P-BETTT]]
+[[P-A46P2]]
 
 
 [[P-JICG7]]
@@ -55,11 +55,11 @@
 
 [[P-ACDEH]]
 ### Spring 20202 HW 2 #  4
-[[P-443QL]]
+[[P-DKYVD]]
 
 ### Spring 20202 HW 3 #  1
 
-[[P-VWG37]]
+[[P-EMHMR]]
 
 ### Spring 20202 HW 3 #  2
 

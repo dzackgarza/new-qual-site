@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-K7JEXDWXGM
 kind: occurrence
-title: P-VJ4JV at UGA topology Fall 2011
+title: P-ETP6C at UGA topology Fall 2011
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-VJ4JV
+  target: P-ETP6C
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2011
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-VJ4JV]] appeared at UGA topology Fall 2011.
+[[P-ETP6C]] appeared at UGA topology Fall 2011.
 :::

@@ -114,9 +114,7 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
         "review": "draft",
     }
     (legacy / "P-OLD.md").write_text(
-        "---\n"
-        + yaml.safe_dump(legacy_meta, sort_keys=False)
-        + "---\n\n::: problem\nLet $G$ be a finite group. Prove that the identity is unique.\n:::\n"
+        "---\n" + yaml.safe_dump(legacy_meta, sort_keys=False) + "---\n\n::: problem\nLet $G$ be a finite group. Prove that the identity is unique.\n:::\n"
     )
 
     _run(tmp_path, source)
@@ -146,3 +144,61 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
     first = _snapshot(tmp_path)
     _run(tmp_path, source)
     assert _snapshot(tmp_path) == first
+
+
+def test_loose_equates_rendering_spellings_and_separates_different_mathematics() -> None:
+    """The corpus's statement identity: same mathematics, whatever the spelling."""
+
+    from import_mmaq import loose
+
+    assert loose(r"Let $\mathbf{Q}$ act.") == loose(r"Let $\mathbb{Q}$ act.")
+    assert loose(r"$$\begin{aligned} x &= 1 \end{aligned}$$") == loose(r"\begin{align*} x &= 1 \end{align*}")
+    assert loose(r"Evaluate \[ \int f \,dx \]") == loose(r"Evaluate $$\int f \, dx$$")
+    assert loose("> Hint: use compactness.") == loose("Hint: use compactness.")
+    assert loose(r"`\begin{align*} x = 1 \end{align*}`{=tex}") == loose(r"\begin{align*} x = 1 \end{align*}")
+
+    # Equality, not resemblance: one changed symbol is a different statement.
+    assert loose("Show that $f$ is continuous.") != loose("Show that $f$ is differentiable.")
+    assert loose("Let $n \\geq 2$.") != loose("Let $n \\geq 3$.")
+    assert loose("$x > 0$") != loose("$x 0$")
+
+
+def test_import_joins_a_sitting_the_corpus_already_records(tmp_path: Path) -> None:
+    """One sitting, one source card: a second importer attaches to the first's."""
+
+    source = tmp_path / "Combined_Questions.yaml"
+    _fixture(source)
+    (tmp_path / "corpus/imports").mkdir(parents=True)
+    (tmp_path / "corpus/occurrences").mkdir()
+    (tmp_path / "vocabularies").mkdir()
+    (tmp_path / "vocabularies/topics.yaml").write_text("[]\n")
+    native = {
+        "schema": "qual/card@1",
+        "id": "SRC-UGA-ALG-SPRING-2018",
+        "kind": "source",
+        "title": "UGA algebra Spring 2018",
+        "classification": {"areas": ["algebra"], "topics": []},
+        "relations": [],
+        "review": "draft",
+        "payload": {
+            "source_kind": "university-exam",
+            "institution": "uga",
+            "area": "algebra",
+            "date": {"kind": "academic-term", "year": 2018, "term": "spring"},
+        },
+    }
+    (tmp_path / "corpus/occurrences/SRC-UGA-ALG-SPRING-2018.md").write_text(
+        "---\n" + yaml.safe_dump(native, sort_keys=False) + "---\n\n::: remark\nUGA algebra Spring 2018.\n:::\n"
+    )
+
+    _run(tmp_path, source)
+    output = tmp_path / "corpus/imports/mmaq-total"
+    manifest = json.loads((output / "manifest.json").read_text())
+    assert manifest["joined_existing_sittings"] == 1
+    assert not (output / "SRC-MMAQ-UGA-ALG-2018-SPRING.md").exists()
+
+    ledger = [json.loads(line) for line in (tmp_path / "sources/mmaq-reconciliation.jsonl").read_text().splitlines()]
+    assert ledger[0]["source_id"] == "SRC-UGA-ALG-SPRING-2018"
+    occurrence = _meta(output / f"{ledger[0]['occurrence_id']}.md")
+    assert occurrence["payload"]["source"] == "SRC-UGA-ALG-SPRING-2018"
+    assert occurrence["title"].startswith("UGA algebra Spring 2018,")

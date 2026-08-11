@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-4KAWZRKLVY
 kind: occurrence
-title: P-QTGNJ at UGA topology Spring 2005
+title: P-LLCQX at UGA topology Spring 2005
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-QTGNJ
+  target: P-LLCQX
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2005
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-QTGNJ]] appeared at UGA topology Spring 2005.
+[[P-LLCQX]] appeared at UGA topology Spring 2005.
 :::

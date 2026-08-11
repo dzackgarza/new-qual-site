@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-QUBBQBS3KH
 kind: occurrence
-title: P-YGHOG at UGA complex-analysis Spring 2014
+title: P-TH3WN at UGA complex-analysis Spring 2014
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-YGHOG
+  target: P-TH3WN
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2014
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-YGHOG]] appeared at UGA complex-analysis Spring 2014.
+[[P-TH3WN]] appeared at UGA complex-analysis Spring 2014.
 :::

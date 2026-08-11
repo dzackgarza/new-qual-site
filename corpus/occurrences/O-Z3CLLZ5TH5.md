@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-Z3CLLZ5TH5
 kind: occurrence
-title: P-BYBLU at UGA real-analysis Spring 2016
+title: P-O5S6X at UGA real-analysis Spring 2016
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-BYBLU
+  target: P-O5S6X
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2016
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-BYBLU]] appeared at UGA real-analysis Spring 2016.
+[[P-O5S6X]] appeared at UGA real-analysis Spring 2016.
 :::

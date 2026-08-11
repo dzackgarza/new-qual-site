@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-RZGUHR5HHW
 kind: occurrence
-title: P-BPJKA at UGA topology Spring 2008
+title: P-PMBN2 at UGA topology Spring 2008
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-BPJKA
+  target: P-PMBN2
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2008
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-BPJKA]] appeared at UGA topology Spring 2008.
+[[P-PMBN2]] appeared at UGA topology Spring 2008.
 :::

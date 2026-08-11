@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-QZHX7M6HBE
 kind: occurrence
-title: P-PAUQQ at UGA topology Spring 2017
+title: P-OCUZ4 at UGA topology Spring 2017
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-PAUQQ
+  target: P-OCUZ4
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2017
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-PAUQQ]] appeared at UGA topology Spring 2017.
+[[P-OCUZ4]] appeared at UGA topology Spring 2017.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-GIFCFJIXXT
 kind: occurrence
-title: P-Y6TUK at UGA real-analysis June 2009
+title: P-VG7GK at UGA real-analysis June 2009
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-Y6TUK
+  target: P-VG7GK
 review: draft
 payload:
   source: SRC-UGA-RA-JUNE-2009
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-Y6TUK]] appeared at UGA real-analysis June 2009.
+[[P-VG7GK]] appeared at UGA real-analysis June 2009.
 :::

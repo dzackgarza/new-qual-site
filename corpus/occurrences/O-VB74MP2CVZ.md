@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-VB74MP2CVZ
 kind: occurrence
-title: P-PACZO at UGA topology Spring 2013
+title: P-3DTFZ at UGA topology Spring 2013
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-PACZO
+  target: P-3DTFZ
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2013
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-PACZO]] appeared at UGA topology Spring 2013.
+[[P-3DTFZ]] appeared at UGA topology Spring 2013.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-P6Y52Y2VG5
 kind: occurrence
-title: P-SISRD at UGA topology Spring 2012
+title: P-T5QRW at UGA topology Spring 2012
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-SISRD
+  target: P-T5QRW
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2012
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-SISRD]] appeared at UGA topology Spring 2012.
+[[P-T5QRW]] appeared at UGA topology Spring 2012.
 :::

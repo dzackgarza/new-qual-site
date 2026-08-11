@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-2FVTJWKP3I
 kind: occurrence
-title: P-KRQ4D at UGA algebra Spring 2020
+title: P-J5GIE at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-KRQ4D
+  target: P-J5GIE
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-KRQ4D]] appeared at UGA algebra Spring 2020.
+[[P-J5GIE]] appeared at UGA algebra Spring 2020.
 :::

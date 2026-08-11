@@ -39,7 +39,7 @@ from pathlib import Path
 from typing import TypedDict
 
 import yaml
-from import_mmaq import _source_bytes, normalize
+from import_mmaq import _source_bytes, loose, normalize
 
 ROOT = Path(__file__).resolve().parent.parent
 OUTPUT = ROOT / "corpus/imports/authored-md"
@@ -67,23 +67,6 @@ def blob(repo: Path, path: str) -> str:
 
 
 # --- fingerprints -----------------------------------------------------------
-
-_BB = re.compile(r"\\math(?:bf|bb|cal|rm)\{([a-zA-Z])\}")
-_ALIGN = re.compile(r"\$\$\s*\\begin\{aligned\}|\\begin\{align\*?\}|\\begin\{aligned\}")
-_ALIGN_END = re.compile(r"\\end\{aligned\}\s*\$\$|\\end\{align\*?\}|\\end\{aligned\}")
-
-
-def loose(text: str) -> str:
-    """Normalize away TeX spelling, spacing macros and display-math punctuation."""
-    t = text.lower()
-    t = _BB.sub(lambda m: r"\bb{" + m.group(1) + "}", t)
-    t = _ALIGN.sub(lambda _: r"\begin{ALIGN}", t)
-    t = _ALIGN_END.sub(lambda _: r"\end{ALIGN}", t)
-    t = re.sub(r"\\[,;:!]", "", t)
-    t = re.sub(r"\s+", "", t)
-    t = re.sub(r"\.(?=\\end\{ALIGN\}|\$\$)", "", t)
-    return t.rstrip(".,;$ \t")
-
 
 BODYLESS_KINDS = {"source", "occurrence"}
 

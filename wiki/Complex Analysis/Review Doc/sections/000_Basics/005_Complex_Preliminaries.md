@@ -361,9 +361,9 @@ v_{xx} + u_{yx} = 0 \implies v_{xx} + v_{yy} = 0 \\ \\
 [[E-UVNVV]]
 
 
-[[E-HRUKW]]
-[[E-NLQVJ]]
-[[E-SXAPF]]
+[[E-TVJFL]]
+[[E-3QAC4]]
+[[E-MTLQI]]
 
 ## Power Series
 
@@ -530,7 +530,7 @@ If $f,g$ are analytic with $f'=g'$, then $f-g$ is constant.
 ### Exercises: Series
 
 [[E-ZWNTH]]
-[[E-M52FS]]
-[[E-TN5JK]]
+[[E-BUVLS]]
+[[E-VCLTY]]
 [[E-THK2Z]]
 [[E-ORJPT]]

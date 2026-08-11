@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-IY7OLG37GR
 kind: occurrence
-title: P-P2CNW at UGA topology Fall 2011
+title: P-UG5YN at UGA topology Fall 2011
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-P2CNW
+  target: P-UG5YN
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2011
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-P2CNW]] appeared at UGA topology Fall 2011.
+[[P-UG5YN]] appeared at UGA topology Fall 2011.
 :::

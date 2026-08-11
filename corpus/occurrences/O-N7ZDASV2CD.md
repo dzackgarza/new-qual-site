@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-N7ZDASV2CD
 kind: occurrence
-title: P-KXZFY at UGA algebra Fall 2018
+title: P-P3GIM at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-KXZFY
+  target: P-P3GIM
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2018
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-KXZFY]] appeared at UGA algebra Fall 2018.
+[[P-P3GIM]] appeared at UGA algebra Fall 2018.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-DSEYB64LOQ
 kind: occurrence
-title: P-RQGDY at UGA topology Fall 2006
+title: P-A5CFD at UGA topology Fall 2006
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-RQGDY
+  target: P-A5CFD
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2006
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-RQGDY]] appeared at UGA topology Fall 2006.
+[[P-A5CFD]] appeared at UGA topology Fall 2006.
 :::

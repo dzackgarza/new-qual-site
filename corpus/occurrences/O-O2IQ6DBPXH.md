@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-O2IQ6DBPXH
 kind: occurrence
-title: P-IXPSF at UGA topology Fall 2012
+title: P-LWGC4 at UGA topology Fall 2012
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-IXPSF
+  target: P-LWGC4
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2012
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-IXPSF]] appeared at UGA topology Fall 2012.
+[[P-LWGC4]] appeared at UGA topology Fall 2012.
 :::

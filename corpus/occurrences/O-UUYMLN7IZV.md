@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-UUYMLN7IZV
 kind: occurrence
-title: P-5Y66D at UGA topology Spring 2018
+title: P-RQN6N at UGA topology Spring 2018
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-5Y66D
+  target: P-RQN6N
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2018
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-5Y66D]] appeared at UGA topology Spring 2018.
+[[P-RQN6N]] appeared at UGA topology Spring 2018.
 :::

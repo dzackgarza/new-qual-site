@@ -84,7 +84,7 @@ If $H\normal G$ and $P \in \mathrm{Syl}_p(G)$, then $H N_G(P) = G$ and $[G: H]$ 
 
 ### Exercises
 
-[[E-IDYVB]]
+[[P-5UUNM]]
 ## Nilpotent Groups
 
 :::{.definition title="Nilpotent"}

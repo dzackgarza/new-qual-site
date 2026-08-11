@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-FOEB4OYL5Q
 kind: occurrence
-title: P-TQTR7 at UGA real-analysis January 2009
+title: P-YIC3K at UGA real-analysis January 2009
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-TQTR7
+  target: P-YIC3K
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2009
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-TQTR7]] appeared at UGA real-analysis January 2009.
+[[P-YIC3K]] appeared at UGA real-analysis January 2009.
 :::

@@ -2,7 +2,6 @@
 
 > Notation: $\DD$ is the open unit disc, $\HH$ is the open upper half-plane.
 
-
 [[P-FS6W6]]
 
 [[P-PPWDW]]
@@ -15,7 +14,7 @@
 
 [[P-PYCCN]]
 
-[[P-4XI3A]]
+[[P-EEUV6]]
 
 [[P-DQTVL]]
 
@@ -25,9 +24,9 @@
 
 [[P-CWXEW]]
 
-[[P-C7O3L]]
+[[P-K4WSJ]]
 
 [[P-64ZUP]]
 ### Tie's Extra Questions: Fall 2009
 
-[[P-S52W6]]
+[[P-64ZUP]]

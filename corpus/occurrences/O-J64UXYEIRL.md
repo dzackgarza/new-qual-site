@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-J64UXYEIRL
 kind: occurrence
-title: P-D5ZZB at UGA real-analysis Fall 2016
+title: P-MMCHV at UGA real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-D5ZZB
+  target: P-MMCHV
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2016
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-D5ZZB]] appeared at UGA real-analysis Fall 2016.
+[[P-MMCHV]] appeared at UGA real-analysis Fall 2016.
 :::

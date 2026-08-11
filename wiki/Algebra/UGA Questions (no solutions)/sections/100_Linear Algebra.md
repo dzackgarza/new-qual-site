@@ -1,11 +1,11 @@
 # Linear Algebra: Diagonalizability
 
 ## Fall 2017 #7
-[[P-4MPL7]]
+[[P-NQAQK]]
 ## Spring 2015 #3
-[[P-VYSMW]]
+[[P-FO6H7]]
 ## Fall 2016 #2
-[[P-EN6A7]]
+[[P-BDX6L]]
 ## Spring 2019 #1 $\done$
 
 [[P-AIXPZ]]
@@ -15,29 +15,29 @@
 ## $\star$ Spring 2012 #6
 [[P-A4AIM]]
 ## $\star$ Spring 2014 #7
-[[P-7D2U6]]
+[[P-24L43]]
 ## Fall 2012 #7
-[[P-JV52F]]
+[[P-5EROX]]
 ## Fall 2012 #8
-[[P-ZTBW6]]
+[[P-UDBZP]]
 ## Fall 2012 #5
-[[P-YTH44]]
+[[P-4IKKY]]
 ## Fall 2015 #7
 
-[[P-Y7F56]]
+[[P-RGCVM]]
 ## Fall 2014 #4
-[[P-5BL6K]]
+[[P-OWMPB]]
 ## Fall 2015 #8
-[[P-UU5TB]]
+[[P-LW3KB]]
 ##  Fall 2018 #4 $\done$ 
-[[P-KXZFY]]
+[[P-P3GIM]]
 ## Fall 2018 #5 $\done$
-[[P-LWDLT]]
+[[P-3YFNY]]
 ## Fall 2019 #8
 [[P-UQ4GC]]
 
 ## Spring 2013 #6 $\done$
-[[P-6LQAD]]
+[[P-CZVX6]]
 ## Fall 2020 #8
 
-[[P-B5B24]]
+[[P-V6Z2K]]

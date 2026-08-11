@@ -708,7 +708,7 @@ It suffices to count ordered bases of $\FF_p^n$:
 
 ## Exercises
 
-[[E-AHS3K]]
-[[E-AME66]]
-[[E-C2O2D]]
-[[E-JCB2V]]
+[[E-LJ7PF]]
+[[E-D62SD]]
+[[E-NUJ7W]]
+[[E-GNYRR]]

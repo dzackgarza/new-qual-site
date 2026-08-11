@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-WVOTXO5ZSJ
 kind: occurrence
-title: P-SBYJN at UGA real-analysis Fall 2016
+title: P-LG4GL at UGA real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-SBYJN
+  target: P-LG4GL
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2016
-  locator: "5"
+  locator: '5'
 ---
 
 ::: remark
-[[P-SBYJN]] appeared at UGA real-analysis Fall 2016, problem 5.
+[[P-LG4GL]] appeared at UGA real-analysis Fall 2016, problem 5.
 :::

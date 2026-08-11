@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-XHATMIE5ZB
 kind: occurrence
-title: P-QHOQZ at UGA complex-analysis Spring 2015
+title: P-CZ5QM at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-QHOQZ
+  target: P-CZ5QM
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-QHOQZ]] appeared at UGA complex-analysis Spring 2015.
+[[P-CZ5QM]] appeared at UGA complex-analysis Spring 2015.
 :::

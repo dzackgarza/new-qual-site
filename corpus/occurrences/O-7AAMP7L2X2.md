@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-7AAMP7L2X2
 kind: occurrence
-title: P-EPBAR at UGA real-analysis June 2010
+title: P-7P5F5 at UGA real-analysis June 2010
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-EPBAR
+  target: P-7P5F5
 review: draft
 payload:
   source: SRC-UGA-RA-JUNE-2010
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-EPBAR]] appeared at UGA real-analysis June 2010.
+[[P-7P5F5]] appeared at UGA real-analysis June 2010.
 :::

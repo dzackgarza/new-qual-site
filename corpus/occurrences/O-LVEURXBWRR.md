@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-LVEURXBWRR
 kind: occurrence
-title: P-WQBVQ at UGA real-analysis January 2009
+title: P-YACKS at UGA real-analysis January 2009
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-WQBVQ
+  target: P-YACKS
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2009
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-WQBVQ]] appeared at UGA real-analysis January 2009.
+[[P-YACKS]] appeared at UGA real-analysis January 2009.
 :::

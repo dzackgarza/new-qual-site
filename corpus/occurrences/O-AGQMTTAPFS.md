@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-AGQMTTAPFS
 kind: occurrence
-title: P-ORXUE at UGA algebra Fall 2021
+title: P-R5QUP at UGA algebra Fall 2021
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-ORXUE
+  target: P-R5QUP
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2021
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-ORXUE]] appeared at UGA algebra Fall 2021.
+[[P-R5QUP]] appeared at UGA algebra Fall 2021.
 :::

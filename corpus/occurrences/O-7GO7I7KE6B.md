@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-7GO7I7KE6B
 kind: occurrence
-title: P-VT34U at UGA topology Fall 2005
+title: P-V4MD7 at UGA topology Fall 2005
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-VT34U
+  target: P-V4MD7
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2005
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-VT34U]] appeared at UGA topology Fall 2005.
+[[P-V4MD7]] appeared at UGA topology Fall 2005.
 :::

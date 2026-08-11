@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-XYSEAZ74RV
 kind: occurrence
-title: P-BTXFT at UGA topology Fall 2015
+title: P-XRGV7 at UGA topology Fall 2015
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-BTXFT
+  target: P-XRGV7
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-BTXFT]] appeared at UGA topology Fall 2015.
+[[P-XRGV7]] appeared at UGA topology Fall 2015.
 :::

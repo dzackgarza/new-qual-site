@@ -367,6 +367,6 @@ If $K_{/\QQ}$ is an abelian extension, then $K \subseteq \QQ(\zeta_m)$ for some 
 ## Exercises
 
 
-[[E-JUXDR]]
+[[E-6OUJV]]
 [[E-LUR7G]]
 [[E-PHSV5]]

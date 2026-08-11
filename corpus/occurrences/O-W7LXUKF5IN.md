@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-W7LXUKF5IN
 kind: occurrence
-title: P-GBJXY at UGA real-analysis January 2011
+title: P-A4O6K at UGA real-analysis January 2011
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-GBJXY
+  target: P-A4O6K
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2011
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-GBJXY]] appeared at UGA real-analysis January 2011.
+[[P-A4O6K]] appeared at UGA real-analysis January 2011.
 :::

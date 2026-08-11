@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-VPF5QMVID2
 kind: occurrence
-title: P-HTY2H at UGA algebra Fall 2012
+title: P-JCWGD at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-HTY2H
+  target: P-JCWGD
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2012
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-HTY2H]] appeared at UGA algebra Fall 2012.
+[[P-JCWGD]] appeared at UGA algebra Fall 2012.
 :::

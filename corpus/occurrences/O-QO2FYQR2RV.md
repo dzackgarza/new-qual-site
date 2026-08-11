@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-QO2FYQR2RV
 kind: occurrence
-title: P-SAGAA at UGA topology Spring 2016
+title: P-3TQB5 at UGA topology Spring 2016
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-SAGAA
+  target: P-3TQB5
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2016
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-SAGAA]] appeared at UGA topology Spring 2016.
+[[P-3TQB5]] appeared at UGA topology Spring 2016.
 :::

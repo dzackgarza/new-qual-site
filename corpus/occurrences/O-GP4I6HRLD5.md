@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-GP4I6HRLD5
 kind: occurrence
-title: P-2U6Z5 at UGA topology Spring 2009
+title: P-ZPH3J at UGA topology Spring 2009
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-2U6Z5
+  target: P-ZPH3J
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2009
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-2U6Z5]] appeared at UGA topology Spring 2009.
+[[P-ZPH3J]] appeared at UGA topology Spring 2009.
 :::

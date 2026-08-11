@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-VBFAWOAREV
 kind: occurrence
-title: P-5R6T7 at UGA topology Fall 2006
+title: P-FGSRH at UGA topology Fall 2006
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-5R6T7
+  target: P-FGSRH
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2006
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-5R6T7]] appeared at UGA topology Fall 2006.
+[[P-FGSRH]] appeared at UGA topology Fall 2006.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-SDHOODX6IY
 kind: occurrence
-title: P-34NU4 at Fall 2019 Midterm #10 (algebra)
+title: P-567ZZ at Fall 2019 Midterm
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-34NU4
+  target: P-567ZZ
 review: draft
 payload:
   source: SRC-ALG-ART-N7TL2K
-  locator: "10"
+  locator: '10'
 ---
 
 ::: remark
-[[P-34NU4]] appeared at Fall 2019 Midterm #10 (algebra), problem 10.
+[[P-567ZZ]] appeared at Fall 2019 Midterm #10 (algebra), problem 10.
 :::

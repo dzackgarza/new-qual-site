@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-YRQUX73DDK
 kind: occurrence
-title: P-5UAPP at UGA topology Spring 2008
+title: P-YVYGB at UGA topology Spring 2008
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-5UAPP
+  target: P-YVYGB
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2008
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-5UAPP]] appeared at UGA topology Spring 2008.
+[[P-YVYGB]] appeared at UGA topology Spring 2008.
 :::

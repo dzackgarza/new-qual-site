@@ -1,49 +1,36 @@
 # Residues
 
-
 [[P-DFHS3]]
 
-[[P-2FHHT]]
+[[P-5TA6H]]
 
+[[P-JW4A4]]
 
-[[P-2AUEZ]]
+[[P-BFLEH]]
 
+[[P-HQCDF]]
 
-[[P-Q7KTD]]
+[[P-KNDGQ]]
 
+[[P-Q7NED]]
 
-[[P-4AMIW]]
+[[P-MKTOL]]
 
+[[P-2CKBC]]
 
-[[P-QG4B5]]
-
-
-[[P-JTKW2]]
-
-
-[[P-M5EA3]]
-
-
-[[P-5ZKEO]]
-
-
-[[P-CAARR]]
-
+[[P-NY56Z]]
 
 [[P-WJNR3]]
 
 [[P-YDJE6]]
 
-[[P-RDBCJ]]
+[[P-ICOAE]]
 
 # Extra Questions
 
+[[P-C57FJ]]
 
-[[P-2ZOOX]]
-
-
-[[P-37HFU]]
-
+[[P-IP6QO]]
 
 [[P-UHX3H]]
 
@@ -59,18 +46,8 @@
 
 [[P-O5K7C]]
 
-[[P-JYIUP]]
-[[P-LGD4Z]]
+[[P-JYIUP]] [[P-LGD4Z]]
 
-[[P-2RS4X]]
-[[P-DQRNX]]
-[[P-WYW7H]]
-[[P-SHEH6]]
-[[P-DJWUH]]
-[[P-EW5N5]]
-[[P-JFDQJ]]
-[[P-E55UF]]
-[[P-4GT43]]
+[[P-2RS4X]] [[P-DQRNX]] [[P-WYW7H]] [[P-SHEH6]] [[P-DJWUH]] [[P-EW5N5]] [[P-JFDQJ]] [[P-E55UF]] [[P-4GT43]]
 
-[[P-JMUJU]]
-[[P-LQ2ZI]]
+[[P-JMUJU]] [[P-NV44D]]

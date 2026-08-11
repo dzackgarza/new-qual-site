@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-7SUGDECLN4
 kind: occurrence
-title: P-HMAKD at UGA topology Spring 2019
+title: P-H42KM at UGA topology Spring 2019
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-HMAKD
+  target: P-H42KM
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2019
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-HMAKD]] appeared at UGA topology Spring 2019.
+[[P-H42KM]] appeared at UGA topology Spring 2019.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-HKPVAORQ2U
 kind: occurrence
-title: P-NVWOL at UGA topology Fall 2009
+title: P-CI7E2 at UGA topology Fall 2009
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-NVWOL
+  target: P-CI7E2
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2009
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-NVWOL]] appeared at UGA topology Fall 2009.
+[[P-CI7E2]] appeared at UGA topology Fall 2009.
 :::

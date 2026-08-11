@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-OPIHKYUSYL
 kind: occurrence
-title: P-H3O3V at UGA algebra Spring 2012
+title: P-ZLNVG at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-H3O3V
+  target: P-ZLNVG
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2012
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-H3O3V]] appeared at UGA algebra Spring 2012.
+[[P-ZLNVG]] appeared at UGA algebra Spring 2012.
 :::

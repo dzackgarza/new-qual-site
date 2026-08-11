@@ -1,78 +1,78 @@
 # Homology and Degree Theory
 
 ## 1 (Spring '09)
-[[P-OAWZF]]
+[[P-K6HWV]]
 
 ## 2 (Fall '06)
 
-[[P-V47DF]]
+[[P-VPPPN]]
 
 ## 3 (Fall '12)
-[[P-RUF5R]]
+[[P-Y7C7Z]]
 
 ## 4 (Fall '14)
-[[P-ONPT4]]
+[[P-S6EYF]]
 
 ## 5 (Spring '08)
-[[P-2JBGV]]
+[[P-WOFN2]]
 
 ## 6 (Spring '17)
-[[P-XQGPG]]
+[[P-XPUMM]]
 
 ## 7 (Fall '15)
-[[P-BTXFT]]
+[[P-XRGV7]]
 
 ## 8 (Spring '09)
-[[P-PT4P6]]
+[[P-EQZPV]]
 
 ## 9 (Fall '05)
-[[P-VT34U]]
+[[P-V4MD7]]
 
 ## 10 (Fall '18)
-[[P-YQTLB]]
+[[P-N3RQY]]
 
 ## 11 (Spring '05/Fall '13)
-[[P-QTGNJ]]
+[[P-LLCQX]]
 
 ## 12 (Spring '19)
 
 [[P-LSJ7W]]
 ## 13 (Spring '12)
-[[P-NHF5J]]
+[[P-CDWQH]]
 
 ## 14 (Fall '18)
-[[P-E76ZM]]
+[[P-HOJTU]]
 
 ## 15 (Fall '10)
-[[P-QEQGO]]
+[[P-YCZ6A]]
 
 ## 16 (Fall '16)
-[[P-P47OS]]
+[[P-23NY2]]
 
 ## 17 (Spring '07)
-[[P-SMM7V]]
+[[P-QMESO]]
 
 ## 18 (Spring '13)
-[[P-PACZO]]
+[[P-3DTFZ]]
 
 ## 19 (Fall '18)
-[[P-JVVEH]]
+[[P-KN75K]]
 
 ## 20 (Spring '09)
 
-[[P-LAZ4X]]
+[[P-UEGAX]]
 
 ## 21 (Fall '17)
-[[P-OVI4R]]
+[[P-6ATGL]]
 
 ## 22 (Fall '18)
-[[P-6CSFU]]
+[[P-LZ5CZ]]
 
 ## 23 (Fall '11)
-[[P-VJ4JV]]
+[[P-ETP6C]]
 
 ## 24 (Spring '12/Spring '15)
-[[P-HPQ7B]]
+[[P-HCQNH]]
 
 ## Spring 2021 #6
 
@@ -80,7 +80,7 @@
 
 ## Spring 2021 #7
 
-[[P-KC4K7]]
+[[P-OSS6X]]
 
 ## Spring 2021 #9
 

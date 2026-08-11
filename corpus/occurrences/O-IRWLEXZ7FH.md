@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-IRWLEXZ7FH
 kind: occurrence
-title: P-NPIQW at UGA topology Fall 2004
+title: P-4XONF at UGA topology Fall 2004
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-NPIQW
+  target: P-4XONF
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2004
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-NPIQW]] appeared at UGA topology Fall 2004.
+[[P-4XONF]] appeared at UGA topology Fall 2004.
 :::

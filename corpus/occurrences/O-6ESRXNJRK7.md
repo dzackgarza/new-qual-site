@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-6ESRXNJRK7
 kind: occurrence
-title: P-BPGPB at UGA complex-analysis Spring 2015
+title: P-R424U at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-BPGPB
+  target: P-R424U
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-BPGPB]] appeared at UGA complex-analysis Spring 2015.
+[[P-R424U]] appeared at UGA complex-analysis Spring 2015.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-T7AAJPNW54
 kind: occurrence
-title: P-BFMRG at UGA topology Spring 2021
+title: P-LLVY2 at UGA topology Spring 2021
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-BFMRG
+  target: P-LLVY2
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2021
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-BFMRG]] appeared at UGA topology Spring 2021.
+[[P-LLVY2]] appeared at UGA topology Spring 2021.
 :::

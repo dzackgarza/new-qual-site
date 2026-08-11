@@ -99,7 +99,7 @@ For everything that follows, assume $G$ is a finite group.
 [[P-QJ7MD]]
 [[P-6XW74]]
 [[P-KXSW3]]
-[[P-RFOYH]]
+[[P-KPEPM]]
 ## Qual Problems
 
 [[P-IC2GD]]

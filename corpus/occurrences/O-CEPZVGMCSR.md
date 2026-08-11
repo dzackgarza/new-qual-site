@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-CEPZVGMCSR
 kind: occurrence
-title: P-JUBTK at UGA topology Spring 2011
+title: P-IE2G7 at UGA topology Spring 2011
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-JUBTK
+  target: P-IE2G7
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2011
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-JUBTK]] appeared at UGA topology Spring 2011.
+[[P-IE2G7]] appeared at UGA topology Spring 2011.
 :::

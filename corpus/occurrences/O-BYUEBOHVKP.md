@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-BYUEBOHVKP
 kind: occurrence
-title: P-R4NFM at UGA real-analysis Fall 2018
+title: P-236QU at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-R4NFM
+  target: P-236QU
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2018
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-R4NFM]] appeared at UGA real-analysis Fall 2018.
+[[P-236QU]] appeared at UGA real-analysis Fall 2018.
 :::

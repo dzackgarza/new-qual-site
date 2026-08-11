@@ -47,7 +47,7 @@ Let $X= S^a \cross S^b$, so $p_{S^a}(t) = 1 + t^a$ and $p_{S^b}(t) = 1 + t^b$, t
 :::
 
 
-[[E-HFOEC]]
+[[E-GTNVU]]
 
 
 

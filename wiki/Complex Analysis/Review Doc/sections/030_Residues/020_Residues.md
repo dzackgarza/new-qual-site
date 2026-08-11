@@ -207,8 +207,8 @@ Let $f(z) = \frac{1}{1+z^2}$, then $g(z) = 1, h(z) = 1+z^2$, and $h'(z) = 2z$ so
 
 [[E-V2VS5]]
 [[E-SNRS5]]
-[[E-6QWDJ]]
-[[E-34OHY]]
+[[E-TOZQJ]]
+[[E-FCYUM]]
 [[E-ENWYG]]
 [[E-PMURO]]
 ![image_2021-05-17-13-33-55](../../../../../assets/figures/image_2021-05-17-13-33-55.png)

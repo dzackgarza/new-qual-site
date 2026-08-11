@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-XTZHPAQRKN
 kind: occurrence
-title: P-VCA6I at UGA real-analysis June 2005
+title: P-VO7MI at UGA real-analysis June 2005
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-VCA6I
+  target: P-VO7MI
 review: draft
 payload:
   source: SRC-UGA-RA-JUNE-2005
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-VCA6I]] appeared at UGA real-analysis June 2005.
+[[P-VO7MI]] appeared at UGA real-analysis June 2005.
 :::

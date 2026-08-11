@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-GC7HG5PUZB
 kind: occurrence
-title: P-BLOMU at UGA topology Spring 2013
+title: P-DLXGE at UGA topology Spring 2013
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-BLOMU
+  target: P-DLXGE
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2013
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-BLOMU]] appeared at UGA topology Spring 2013.
+[[P-DLXGE]] appeared at UGA topology Spring 2013.
 :::

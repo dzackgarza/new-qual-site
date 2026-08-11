@@ -122,7 +122,7 @@ status: in_progress
 [[P-WJNR3]]
 ### $\sin$ in numerator
 
-[[P-6EMGG]]
+[[P-IP6QO]]
 ### Tie's Extra Questions: Fall 2009
 
 [[P-IP6QO]]

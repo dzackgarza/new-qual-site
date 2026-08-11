@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-AZFXM77NOD
 kind: occurrence
-title: P-GEPQX at UGA topology Spring 2007
+title: P-3AKX2 at UGA topology Spring 2007
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-GEPQX
+  target: P-3AKX2
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2007
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-GEPQX]] appeared at UGA topology Spring 2007.
+[[P-3AKX2]] appeared at UGA topology Spring 2007.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-CJCH6MHNHW
 kind: occurrence
-title: P-SKZT2 at UGA complex-analysis Fall 2015
+title: P-ALI5T at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-SKZT2
+  target: P-ALI5T
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-SKZT2]] appeared at UGA complex-analysis Fall 2015.
+[[P-ALI5T]] appeared at UGA complex-analysis Fall 2015.
 :::

@@ -1,8 +1,8 @@
 ---
 schema: qual/card@1
 id: E-P2JSX
-kind: exercise
-title: "13. Characterize the splitting field and all intermediate fields of th\u2026"
+kind: problem
+title: 13. Characterize the splitting field and all intermediate fields of th…
 classification:
   areas:
   - algebra
@@ -10,4 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-13. Characterize the splitting field and all intermediate fields of the polynomial $\left(x^{2}-2\right)\left(x^{2}-3\right)\left(x^{2}-5\right)$ over $Q$. Using this characterization, find a primitive element of the splitting field.
+
+13. Characterize the splitting field and all intermediate fields of the polynomial $\left(x^{2}-2\right)\left(x^{2}-3\right)\left(x^{2}-5\right)$ over $Q$.
+    Using this characterization, find a primitive element of the splitting field.

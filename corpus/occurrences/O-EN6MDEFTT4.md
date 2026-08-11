@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-EN6MDEFTT4
 kind: occurrence
-title: P-VT6O7 at UGA topology Fall 2010
+title: P-2HSIO at UGA topology Fall 2010
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-VT6O7
+  target: P-2HSIO
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2010
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-VT6O7]] appeared at UGA topology Fall 2010.
+[[P-2HSIO]] appeared at UGA topology Fall 2010.
 :::

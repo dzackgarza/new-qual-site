@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-JRS23L2XYX
 kind: occurrence
-title: P-ADZXB at UGA real-analysis January 2012
+title: P-SKT7G at UGA real-analysis January 2012
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-ADZXB
+  target: P-SKT7G
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2012
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-ADZXB]] appeared at UGA real-analysis January 2012.
+[[P-SKT7G]] appeared at UGA real-analysis January 2012.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-HL37WJNYZY
 kind: occurrence
-title: P-BPEIF at UGA real-analysis 2010
+title: P-EUIAS at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-BPEIF
+  target: P-EUIAS
 review: draft
 payload:
   source: SRC-UGA-RA-2010
-  locator: "9"
+  locator: '9'
 ---
 
 ::: remark
-[[P-BPEIF]] appeared at UGA real-analysis 2010, problem 9.
+[[P-EUIAS]] appeared at UGA real-analysis 2010, problem 9.
 :::

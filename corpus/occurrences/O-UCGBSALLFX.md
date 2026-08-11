@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-UCGBSALLFX
 kind: occurrence
-title: P-NITSU at UGA topology Spring 2021
+title: P-GFHMD at UGA topology Spring 2021
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-NITSU
+  target: P-GFHMD
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2021
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-NITSU]] appeared at UGA topology Spring 2021.
+[[P-GFHMD]] appeared at UGA topology Spring 2021.
 :::

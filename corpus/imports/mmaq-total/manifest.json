@@ -1,7 +1,8 @@
 {
-  "ambiguous_exact": 94,
-  "existing_exact": 182,
-  "new_problems": 206,
+  "ambiguous_exact": 93,
+  "existing_exact": 154,
+  "joined_existing_sittings": 19,
+  "new_problems": 174,
   "occurrences": 508,
   "rows": 508,
   "source": {
@@ -12,5 +13,5 @@
     "url": "https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml"
   },
   "source_groups": 42,
-  "unique_statements": 482
+  "unique_statements": 481
 }

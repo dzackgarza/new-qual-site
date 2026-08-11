@@ -11,7 +11,7 @@
 [[P-XSBTH]]
 ### 7 (Fall '06).
 
-[[P-5R6T7]]
+[[P-FGSRH]]
 
 ### 8 (Fall '10). $\done$
 
@@ -19,7 +19,7 @@
 
 ### 12 (Spring '06).
 
-[[P-HV265]]
+[[P-KM7Z4]]
 
 ### 13 (Fall '06).
 
@@ -27,11 +27,11 @@
 
 ### 14 (Fall '07)
 
-[[P-YZII6]]
+[[P-MYZU2]]
 
 ### 5 (Fall '04).
 
-[[P-4POSJ]]
+[[P-QN7OP]]
 
 ### ? (Spring '10) $\done$
 
@@ -39,7 +39,7 @@
 
 ### ? (Spring '11)
 
-[[P-JUBTK]]
+[[P-IE2G7]]
 
 ### 21 (Fall '14)
 
@@ -47,38 +47,38 @@
 
 ### 23 (Spring '15) $\done$
 
-[[P-VM7CY]]
+[[P-72DG6]]
 
 ### 25 (Fall '16)
 
-[[P-6YPX6]]
+[[P-KSQQ5]]
 
 ### 42 (Spring '10) $\done$
 
-[[P-3N7IL]]
+[[P-URS24]]
 
 
 ### 43 (Fall '12)
 
-[[P-ECTLA]]
+[[P-SGK4K]]
 
 ## Compactness and Metric Spaces
 
 ### 1 (Spring '06)
 
-[[P-4ASMM]]
+[[P-7CYRD]]
 
 ### 26 (Fall '17)
 
-[[P-4QWNM]]
+[[P-QICKA]]
 
 ### 2 (Spring '12)
 
-[[P-ZY4E3]]
+[[P-L4EMZ]]
 
 ### 3 (Spring '09)
 
-[[P-7S5DA]]
+[[P-L3BUX]]
 
 ### 4 (Spring '05) $\done$
 
@@ -86,40 +86,40 @@
 
 ### 44 (Spring '15)
 
-[[P-3GSFT]]
+[[P-OKDFC]]
 
 ### 18 (Fall '07) $\done$
 
-[[P-43OAT]]
+[[P-C62HS]]
 
 ### 19 (Spring '15) $\done$
 
-[[P-CXNIP]]
+[[P-43KOX]]
 
 ### 20 (Fall '14) $\done$
 
-[[P-LBA6H]]
+[[P-7N24X]]
 
 
 ### 22 (Fall '18)
 
-[[P-VZEZY]]
+[[P-4X3OY]]
 
 ### 24 (Spring '16)
 
-[[P-SAGAA]]
+[[P-3TQB5]]
 
 ### 27 (Fall '17)
 
-[[P-Y4XOF]]
+[[P-G373O]]
 
 ### Spring '19 #1  $\done$
 
-[[P-FP5YD]]
+[[P-KVMKV]]
 
 ### Spring 2019 #2 $\done$
 
-[[P-EUJC3]]
+[[P-PATOJ]]
 
 ### Spring 2021 #3
 
@@ -129,51 +129,51 @@
 
 ### 9 (Spring '13)
 
-[[P-JV3DB]]
+[[P-EOZ7B]]
 
 ### 10 (Fall '05) $\done$
 
 [[P-HVKUA]]
 ### 11 (Fall '18)
 
-[[P-CF6TD]]
+[[P-XMOZA]]
 
 ### Spring 2021 #2
 
-[[P-UWTX3]]
+[[P-2CN7G]]
 
 ## Hausdorff Spaces and Separation
 
 ### 29 (Fall '14)
 
-[[P-MERFW]]
+[[P-4URWK]]
 
 ### 30 (Spring '18) $\done$
 
-[[P-PPTMJ]]
+[[P-MDFEL]]
 
 ### 31 (Spring '09) $\done$
 
-[[P-VXRAS]]
+[[P-AT75W]]
 
 ### 32 (Fall '14) $\done$
 
-[[P-J63NH]]
+[[P-KCN2B]]
 
 ### 33 (Fall '06)
 
-[[P-RQGDY]]
+[[P-A5CFD]]
 
 ### 34 (Fall '04)
 
-[[P-NQHPU]]
+[[P-HOIQ3]]
 
 ### 35 (Fall '16)
 
 [[P-DYBYC]]
 ### 36 (Spring '06)
 
-[[P-26E6Z]]
+[[P-VAJSW]]
 
 ### 37 (Spring '09)
 
@@ -181,23 +181,23 @@
 
 ### 38 (Spring '08) $\done$
 
-[[P-3PGAL]]
+[[P-BPDEA]]
 
 ### 39 (Fall '04)
 
-[[P-7EILV]]
+[[P-IOVNM]]
 
 ### 40 (Spring '18)
 
-[[P-6TMRA]]
+[[P-VPACG]]
 
 ### 41 (Fall '09)
 
-[[P-NVWOL]]
+[[P-CI7E2]]
 
 ### 45 (Spring '11)
 
-[[P-XSU6C]]
+[[P-XXLEK]]
 
 ## Exercises
 
@@ -228,22 +228,22 @@
 ### Connectedness
 
 #### Exercise
-[[E-FQZ5Y]]
+[[E-EHQWZ]]
 
 #### Exercise
-[[E-HV45J]]
+[[E-UDJ3C]]
 
 #### Exercise
-[[E-JJQY6]]
+[[E-2BLQW]]
 
 #### Exercise
-[[E-I63QG]]
+[[E-C74H7]]
 
 #### Exercise
-[[E-D7LG5]]
+[[E-ZN7P4]]
 
 #### Exercise
-[[E-2FTC4]]
+[[E-ETTEH]]
 
 #### Exercise $\done$
 [[E-GSE3M]]
@@ -312,19 +312,19 @@
 [[E-HYQMG]]
 
 #### Exercise
-[[E-QURI5]]
+[[E-VUMGX]]
 #### Exercise
-[[E-I3AYB]]
+[[E-6XHXX]]
 #### Exercise
-[[E-J3EP5]]
+[[E-IOZ4G]]
 #### Exercise
-[[E-2TINB]]
+[[E-Q7TSH]]
 #### Exercise
-[[E-B3KVL]]
+[[E-MKK6X]]
 #### Exercise
-[[E-C7OYT]]
+[[E-5FLKZ]]
 #### Exercise
-[[E-5ETBH]]
+[[E-22IOS]]
 ### Hausdorff Spaces
 
 
@@ -344,6 +344,6 @@
 [[E-Y52Y4]]
 
 #### Exercise
-[[E-P7KJW]]
+[[E-54CQC]]
 
 

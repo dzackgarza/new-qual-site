@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-3VZ5KLVPOF
 kind: occurrence
-title: P-7S5DA at UGA topology Spring 2009
+title: P-L3BUX at UGA topology Spring 2009
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-7S5DA
+  target: P-L3BUX
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2009
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-7S5DA]] appeared at UGA topology Spring 2009.
+[[P-L3BUX]] appeared at UGA topology Spring 2009.
 :::

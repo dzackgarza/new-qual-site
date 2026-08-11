@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-RWAM5RMOOM
 kind: occurrence
-title: P-XQCRT at UGA algebra Fall 2020
+title: P-XPGT3 at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-XQCRT
+  target: P-XPGT3
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-XQCRT]] appeared at UGA algebra Fall 2020.
+[[P-XPGT3]] appeared at UGA algebra Fall 2020.
 :::

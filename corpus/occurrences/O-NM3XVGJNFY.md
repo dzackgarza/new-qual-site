@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-NM3XVGJNFY
 kind: occurrence
-title: P-UU5TB at UGA algebra Fall 2015
+title: P-LW3KB at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-UU5TB
+  target: P-LW3KB
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-UU5TB]] appeared at UGA algebra Fall 2015.
+[[P-LW3KB]] appeared at UGA algebra Fall 2015.
 :::

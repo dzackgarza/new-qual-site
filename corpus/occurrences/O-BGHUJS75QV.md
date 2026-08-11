@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-BGHUJS75QV
 kind: occurrence
-title: P-MQMLC at UGA real-analysis January 2020
+title: P-5UQSK at UGA real-analysis January 2020
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-MQMLC
+  target: P-5UQSK
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-MQMLC]] appeared at UGA real-analysis January 2020.
+[[P-5UQSK]] appeared at UGA real-analysis January 2020.
 :::

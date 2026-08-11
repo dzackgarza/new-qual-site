@@ -1,8 +1,8 @@
 ---
 schema: qual/card@1
 id: E-YFT35
-kind: exercise
-title: "19. Prove that $\\boldsymbol{F}_{p^{n}}$ is the splitting field of $x^{\u2026"
+kind: problem
+title: 19. Prove that $\boldsymbol{F}_{p^{n}}$ is the splitting field of $x^{…
 classification:
   areas:
   - algebra
@@ -10,4 +10,5 @@ classification:
 relations: []
 review: draft
 ---
+
 19. Prove that $\boldsymbol{F}_{p^{n}}$ is the splitting field of $x^{p^{n}}-x$ over $\boldsymbol{F}_{p}$.

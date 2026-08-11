@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-YBPMC4KZPO
 kind: occurrence
-title: P-KIWKO at UGA topology Fall 2015
+title: P-D2RBT at UGA topology Fall 2015
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-KIWKO
+  target: P-D2RBT
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-KIWKO]] appeared at UGA topology Fall 2015.
+[[P-D2RBT]] appeared at UGA topology Fall 2015.
 :::

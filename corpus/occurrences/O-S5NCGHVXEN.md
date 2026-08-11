@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-S5NCGHVXEN
 kind: occurrence
-title: P-JVVEH at UGA topology Fall 2018
+title: P-KN75K at UGA topology Fall 2018
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-JVVEH
+  target: P-KN75K
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2018
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-JVVEH]] appeared at UGA topology Fall 2018.
+[[P-KN75K]] appeared at UGA topology Fall 2018.
 :::

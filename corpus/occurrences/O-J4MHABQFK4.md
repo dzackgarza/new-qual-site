@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-J4MHABQFK4
 kind: occurrence
-title: P-TILWG at UGA topology Spring 2005
+title: P-RZFB4 at UGA topology Spring 2005
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-TILWG
+  target: P-RZFB4
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2005
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-TILWG]] appeared at UGA topology Spring 2005.
+[[P-RZFB4]] appeared at UGA topology Spring 2005.
 :::

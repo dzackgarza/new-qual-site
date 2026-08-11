@@ -210,9 +210,9 @@ Note that all conjugate subgroups have the same cardinality.
 
 [[E-GYGP2]]
 
-[[E-E4C6M]]
+[[E-BSGSM]]
 
-[[E-ZJ3HD]]
+[[E-47X7Y]]
 
 ### Normal Subgroups
 
@@ -324,9 +324,6 @@ xh_3\in xH &\implies xh_3 = (yh_2h_1\inv) h_3 \in yH
   so $xH \subseteq yH$.
 
 - A symmetric argument shows $y_H \subseteq xH$.[^df_p80_identical_disjoint]
-
-[^df_p80_identical_disjoint]: 
-See full argument: D&F p.80.
 
 :::
 
@@ -545,3 +542,5 @@ $A_5$ is too big to write down, but has cycle types
 ## Exercises
 
 [[E-BAOST]]
+
+[^df_p80_identical_disjoint]: See full argument: D&F p.80.

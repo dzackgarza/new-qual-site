@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-C3BU5L4YPD
 kind: occurrence
-title: P-5V4EQ at UCSD topology Summer 2003
+title: P-CQ64W at UCSD topology Summer 2003
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-5V4EQ
+  target: P-CQ64W
 review: draft
 payload:
   source: SRC-UCSD-TOP-SUMMER-2003
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-5V4EQ]] appeared at UCSD topology Summer 2003.
+[[P-CQ64W]] appeared at UCSD topology Summer 2003.
 :::

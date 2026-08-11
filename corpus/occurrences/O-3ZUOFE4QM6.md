@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-3ZUOFE4QM6
 kind: occurrence
-title: P-SYUXA at UGA algebra Fall 2021
+title: P-QCF34 at UGA algebra Fall 2021
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-SYUXA
+  target: P-QCF34
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2021
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-SYUXA]] appeared at UGA algebra Fall 2021.
+[[P-QCF34]] appeared at UGA algebra Fall 2021.
 :::

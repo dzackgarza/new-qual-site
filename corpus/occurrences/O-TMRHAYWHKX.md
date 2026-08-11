@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-TMRHAYWHKX
 kind: occurrence
-title: P-BDMTR at UGA complex-analysis Fall 2009
+title: P-NVJN5 at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-BDMTR
+  target: P-NVJN5
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2009
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-BDMTR]] appeared at UGA complex-analysis Fall 2009.
+[[P-NVJN5]] appeared at UGA complex-analysis Fall 2009.
 :::

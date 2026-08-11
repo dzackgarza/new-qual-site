@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-BIQQDCUARR
 kind: occurrence
-title: P-7NIAW at UGA topology Fall 2012
+title: P-QB5KF at UGA topology Fall 2012
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-7NIAW
+  target: P-QB5KF
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2012
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-7NIAW]] appeared at UGA topology Fall 2012.
+[[P-QB5KF]] appeared at UGA topology Fall 2012.
 :::

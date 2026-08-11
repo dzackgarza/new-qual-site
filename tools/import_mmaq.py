@@ -67,6 +67,41 @@ def normalize(statement: str) -> str:
     return re.sub(r"\s+", " ", statement).strip().lower()
 
 
+_BB = re.compile(r"\\math(?:bf|bb|cal|rm)\{([a-zA-Z])\}")
+_ALIGN = re.compile(r"\$\$\s*\\begin\{aligned\}|\\begin\{align\*?\}|\\begin\{aligned\}")
+_ALIGN_END = re.compile(r"\\end\{aligned\}\s*\$\$|\\end\{align\*?\}|\\end\{aligned\}")
+
+
+def loose(text: str) -> str:
+    r"""The statement's identity: its text after every difference that is not one.
+
+    Two renderings of one statement differ by TeX spelling alone -- `\mathbf{Q}`
+    against `\mathbb{Q}`, `\begin{aligned}` against `\begin{align*}`, a spacing
+    macro, a `.` inside display math. PLAN-QUAL-GRUNT-001 rules those are not
+    variants, so they are equal here. This is equality, never a similarity
+    threshold: nothing is merged on resemblance.
+
+    It is the corpus's own equality -- `tools/collapse_duplicates.py` collapses
+    under it -- so the importer must match under it too, or it re-mints on every
+    run the duplicates that pass removed.
+    """
+    t = text.lower()
+    # Pandoc spells a TeX environment it will not touch as a raw-tex span, and
+    # re-emits a blockquote with its `>` markers. Neither is part of the
+    # statement. `>` is dropped only where it opens a line, so a `>` inside
+    # mathematics survives.
+    t = re.sub(r"^\s*>+\s?", "", t, flags=re.M)
+    t = t.replace("`{=tex}", "").replace("`", "")
+    t = t.replace(r"\[", "$$").replace(r"\]", "$$")
+    t = _BB.sub(lambda m: r"\bb{" + m.group(1) + "}", t)
+    t = _ALIGN.sub(lambda _: r"\begin{ALIGN}", t)
+    t = _ALIGN_END.sub(lambda _: r"\end{ALIGN}", t)
+    t = re.sub(r"\\[,;:!]", "", t)
+    t = re.sub(r"\s+", "", t)
+    t = re.sub(r"\.(?=\\end\{ALIGN\}|\$\$)", "", t)
+    return t.rstrip(".,;$ \t")
+
+
 def card(meta: dict[str, Any], body: str) -> str:
     frontmatter = yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100).strip()
     return f"---\n{frontmatter}\n---\n\n{body.rstrip()}\n"
@@ -199,7 +234,7 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
                 "season": season,
                 "tags": [tag.strip() for tag in tags],
                 "question": question.strip(),
-                "normalized": normalize(question),
+                "normalized": loose(question),
             }
         )
     return records, source
@@ -223,7 +258,7 @@ def _problem_fingerprint(path: Path) -> str | None:
     text = path.read_text().split("---\n", 2)[2].strip()
     text = re.sub(r"^:::\s*(?:\{\.problem[^}]*\}|problem)\s*\n", "", text)
     text = re.sub(r"\n:::\s*$", "", text)
-    return normalize(text)
+    return loose(text)
 
 
 def existing_problems(
@@ -333,6 +368,71 @@ def source_id(key: tuple[str, str, str, str]) -> str:
     return f"SRC-MMAQ-{slug(university).upper()}-{AREA_ABBR[AREA_SLUG[exam]]}-{year_token}-{season_token}"
 
 
+def native_sittings(root: Path, excluded_roots: tuple[Path, ...] = ()) -> dict[tuple[str, str, str], list[tuple[str, str]]]:
+    """Exam sittings the corpus already records, keyed by institution, area and date.
+
+    One sitting has one `source` card. When a sitting this import names already
+    has a card minted from another source, the import joins onto it rather than
+    minting a parallel `SRC-MMAQ-*`, which would split every per-exam query.
+
+    A key can hold more than one card, because the schema's `academic-term` is
+    spring-or-fall only and the corpus labels UGA analysis sittings by month:
+    "January 2014" and "Spring 2014" both derive spring 2014. Which of those a
+    row belongs to is decided by its own season word, in `join_sitting`.
+    """
+    found: dict[tuple[str, str, str], list[tuple[str, str]]] = {}
+    for path in sorted((root / "corpus").rglob("*.md")):
+        if any(path == excluded or excluded in path.parents for excluded in excluded_roots):
+            continue
+        metadata = _frontmatter(path)
+        if metadata is None or metadata["kind"] != "source":
+            continue
+        payload = metadata["payload"]
+        if payload["source_kind"] != "university-exam":
+            continue
+        key = (payload["institution"], payload["area"], json.dumps(payload["date"], sort_keys=True))
+        if key not in found:
+            found[key] = []
+        found[key].append((metadata["id"], metadata["title"]))
+    return found
+
+
+def join_sitting(
+    native: dict[tuple[str, str, str], list[tuple[str, str]]],
+    key: tuple[str, str, str, str],
+) -> tuple[str, str] | None:
+    """The existing card for this sitting, or None when the corpus is unclear.
+
+    A row states its own season. When several existing cards derive the same
+    schema season, only the one whose written label is that season is the same
+    sitting; joining onto a differently-labelled one would assert an identity
+    the source does not support.
+    """
+    candidates = native[sitting_key(key)] if sitting_key(key) in native else []
+    if len(candidates) == 1:
+        return candidates[0]
+    season = key[3].lower()
+    labelled = [item for item in candidates if season and season in item[1].lower()]
+    return labelled[0] if len(labelled) == 1 else None
+
+
+def corpus_ids(root: Path, excluded_roots: tuple[Path, ...] = ()) -> set[str]:
+    """Every card id the corpus holds outside this import's own output."""
+    found: set[str] = set()
+    for path in sorted((root / "corpus").rglob("*.md")):
+        if any(path == excluded or excluded in path.parents for excluded in excluded_roots):
+            continue
+        metadata = _frontmatter(path)
+        if metadata is not None:
+            found.add(metadata["id"])
+    return found
+
+
+def sitting_key(key: tuple[str, str, str, str]) -> tuple[str, str, str]:
+    university, exam, year, season = key
+    return (university.lower(), AREA_SLUG[exam], json.dumps(date_spec(year, season), sort_keys=True))
+
+
 def source_title(key: tuple[str, str, str, str]) -> str:
     university, exam, year, season = key
     area = exam.replace("_", " ")
@@ -429,6 +529,7 @@ def write_occurrence(
     problem_id: str,
     occurrence_id: str,
     body: str,
+    sitting_title: str,
 ) -> None:
     area = AREA_SLUG[record["exam"]]
     topics = list(dict.fromkeys(slug(tag) for tag in record["tags"]))
@@ -438,7 +539,7 @@ def write_occurrence(
         "schema": "qual/card@1",
         "id": occurrence_id,
         "kind": "occurrence",
-        "title": f"{source_title(source_key(record))}, problem {locator}",
+        "title": f"{sitting_title}, problem {locator}",
         "classification": {"areas": [area], "topics": topics},
         "relations": [{"kind": "instance-of", "target": problem_id}],
         "review": "draft",
@@ -454,6 +555,8 @@ def reconcile(
     pandoc: PandocServer,
 ) -> dict[str, int]:
     output = root / OUTPUT_NAME
+    native = native_sittings(root, excluded_roots=(output,))
+    foreign_ids = corpus_ids(root, excluded_roots=(output,))
     old = existing_problems(root, excluded_roots=(output,))
     current = existing_problems(root, scan_root=output) if output.exists() else {}
     current_text: dict[str, str] = {}
@@ -522,7 +625,11 @@ def reconcile(
                 problem_id = opaque("P-MMAQ-", fingerprint)
                 operation = "new"
                 legacy = []
-            prior_ids = {prior_id} if prior_id is not None else set()
+            # A prior id is preserved so a row keeps its identity across runs --
+            # but only while it is still this statement's id. Once another card
+            # in the corpus owns it, recovering it mints a duplicate id, so the
+            # row takes a fresh one instead.
+            prior_ids = {prior_id} if prior_id is not None and prior_id not in foreign_ids else set()
             preserved_ids = prior_ids | {candidate_id for candidate_id, _ in current_candidates}
             while problem_id in used_ids and problem_id not in preserved_ids and not (len(candidates) == 1 and problem_id == candidates[0][0]):
                 problem_id = opaque("P-MMAQ-", fingerprint + problem_id)
@@ -531,9 +638,7 @@ def reconcile(
             problem_operations[fingerprint] = operation
             if prior_entry is not None and problem_id == prior_id:
                 problem_matches[fingerprint] = prior_entry["match"]
-                problem_history[fingerprint] = list(
-                    zip(prior_entry["legacy_problem_ids"], prior_entry["legacy_problem_paths"], strict=True)
-                )
+                problem_history[fingerprint] = list(zip(prior_entry["legacy_problem_ids"], prior_entry["legacy_problem_paths"], strict=True))
             else:
                 problem_matches[fingerprint] = operation
                 problem_history[fingerprint] = legacy
@@ -589,7 +694,23 @@ def reconcile(
             statement = next(record["question"] for record in records if record["normalized"] == fingerprint)
             write_problem(output / f"{problem_id}.md", statement, area, topics, problem_id, problem_bodies[fingerprint])
 
+    # A sitting the corpus already records keeps its own `source` card; this
+    # import contributes its occurrences to it. Only a sitting no other source
+    # has recorded gets an `SRC-MMAQ-*` card of its own.
+    sitting_ids: dict[tuple[str, str, str, str], str] = {}
+    sitting_titles: dict[tuple[str, str, str, str], str] = {}
+    joined = 0
+    for key in groups:
+        existing = join_sitting(native, key)
+        if existing is None:
+            sitting_ids[key], sitting_titles[key] = source_id(key), source_title(key)
+            continue
+        sitting_ids[key], sitting_titles[key] = existing
+        joined += 1
+
     for key, group in groups.items():
+        if sitting_ids[key] != source_id(key):
+            continue
         write_source(output / f"{source_id(key)}.md", key, len(group), source, source_bodies[key])
 
     ledger: list[dict[str, Any]] = []
@@ -600,17 +721,18 @@ def reconcile(
         write_occurrence(
             output / f"{occurrence_id}.md",
             record,
-            source_id(source_key(record)),
+            sitting_ids[source_key(record)],
             problem_id,
             occurrence_id,
             occurrence_bodies[record["sequence"] - 1],
+            sitting_titles[source_key(record)],
         )
         legacy = problem_history[fingerprint]
         ledger.append(
             {
                 "row": record["sequence"],
                 "source_key": list(source_key(record)),
-                "source_id": source_id(source_key(record)),
+                "source_id": sitting_ids[source_key(record)],
                 "problem_id": problem_id,
                 "occurrence_id": occurrence_id,
                 "locator": str(record["number"]) if str(record["number"]) not in {"", "0"} else f"row-{record['sequence']:04d}",
@@ -632,6 +754,7 @@ def reconcile(
         "source": source,
         "rows": len(records),
         "source_groups": len(groups),
+        "joined_existing_sittings": joined,
         "unique_statements": len(problem_ids),
         "existing_exact": sum(1 for value in problem_matches.values() if value == "existing-exact"),
         "ambiguous_exact": sum(1 for value in problem_matches.values() if value == "ambiguous-exact"),

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-PVYNVZNYTW
 kind: occurrence
-title: P-U4YZM at UGA algebra Fall 2017
+title: P-VGN3T at UGA algebra Fall 2017
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-U4YZM
+  target: P-VGN3T
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2017
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-U4YZM]] appeared at UGA algebra Fall 2017.
+[[P-VGN3T]] appeared at UGA algebra Fall 2017.
 :::

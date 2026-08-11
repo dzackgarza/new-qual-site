@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-WYMKSWLW4W
 kind: occurrence
-title: P-GERYL at UGA real-analysis Spring 2020
+title: P-AXFG7 at UGA real-analysis Spring 2020
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-GERYL
+  target: P-AXFG7
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-GERYL]] appeared at UGA real-analysis Spring 2020.
+[[P-AXFG7]] appeared at UGA real-analysis Spring 2020.
 :::

@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-GMZB2ATV4Q
 kind: occurrence
-title: P-KHIP6 at UGA real-analysis Spring 2017
+title: P-ZCPFV at UGA real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-KHIP6
+  target: P-ZCPFV
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2017
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-KHIP6]] appeared at UGA real-analysis Spring 2017.
+[[P-ZCPFV]] appeared at UGA real-analysis Spring 2017.
 :::

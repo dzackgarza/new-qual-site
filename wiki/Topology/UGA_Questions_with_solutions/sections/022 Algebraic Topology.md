@@ -1,18 +1,13 @@
 # Extra Problems: Algebraic Topology
 
-
 ## Algebraic Topology
 
 ### Fundamental Group
 
-[[P-ZI3L4]]
-[[P-AYHO7]]
+[[P-ZI3L4]] [[P-XSRNS]]
 ### Covering Spaces
 
-[[P-ZPIB7]]
+[[P-SCVNS]]
 ### Homology
 
-[[P-BNURB]]
-[[P-PIW3Z]]
-[[P-GMWKE]]
-[[P-HK667]]
+[[P-BNURB]] [[P-PIW3Z]] [[P-GMWKE]] [[P-TJSP5]]

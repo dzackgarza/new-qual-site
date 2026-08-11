@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-XSET322OML
 kind: occurrence
-title: P-P7KCE at UGA prelim Fall 2014
+title: P-QJE7B at UGA prelim Fall 2014
 classification:
   areas:
   - prelim
   topics: []
 relations:
 - kind: instance-of
-  target: P-P7KCE
+  target: P-QJE7B
 review: draft
 payload:
   source: SRC-UGA-PRELIM-FALL-2014
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-P7KCE]] appeared at UGA prelim Fall 2014.
+[[P-QJE7B]] appeared at UGA prelim Fall 2014.
 :::

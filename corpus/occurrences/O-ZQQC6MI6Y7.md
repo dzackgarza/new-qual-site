@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-ZQQC6MI6Y7
 kind: occurrence
-title: P-QRVWF at UGA real-analysis Fall 2014
+title: P-FFLLF at UGA real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-QRVWF
+  target: P-FFLLF
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2014
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-QRVWF]] appeared at UGA real-analysis Fall 2014.
+[[P-FFLLF]] appeared at UGA real-analysis Fall 2014.
 :::

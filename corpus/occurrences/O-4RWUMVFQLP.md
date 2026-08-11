@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-4RWUMVFQLP
 kind: occurrence
-title: P-CF6TD at UGA topology Fall 2018
+title: P-XMOZA at UGA topology Fall 2018
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-CF6TD
+  target: P-XMOZA
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2018
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-CF6TD]] appeared at UGA topology Fall 2018.
+[[P-XMOZA]] appeared at UGA topology Fall 2018.
 :::

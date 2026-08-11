@@ -46,11 +46,11 @@
 
 ### Spring 2020 HW 2 #  2.6.7
 
-[[P-OGQDR]]
+[[P-AZFIB]]
 
 ### Spring 2020 HW 2 #  2.6.8
 
-[[P-NGSY7]]
+[[P-WNOA2]]
 
 ### Spring 2020 HW 2 #  2.6.9
 
@@ -60,23 +60,23 @@
 [[P-AW6IK]]
 
 ### Spring 2020 HW 2 #  7
-[[P-JVG4T]]
+[[P-IRNN2]]
 
 ### Spring 2020 HW 2 #  8
-[[P-UVJFG]]
+[[P-QC7BY]]
 
 ### Spring 2020 HW 2 #  9 (Cauchy's Formula for Exterior Regions)
 
 [[P-HH4R3]]
 
 ### Spring 2020 HW 2 #  10
-[[P-PX6A5]]
+[[P-FL5SY]]
 
 ### Spring 2020 HW 2 #  11
 [[P-OZXEA]]
 
 ### Spring 2020 HW 2 #  12
-[[P-MIRSN]]
+[[P-UQOCE]]
 
 ### Spring 2020 HW 2 #  13
 
@@ -84,7 +84,7 @@
 
 ### Entire and $O$ of polynomial implies polynomial $\done$
 
-[[P-PHC7M]]
+[[P-YYEUK]]
 
 ## Uniform sequence implies uniform derivatives $\done$
 

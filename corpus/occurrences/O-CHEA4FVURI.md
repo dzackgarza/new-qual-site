@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-CHEA4FVURI
 kind: occurrence
-title: P-S64JH at UGA real-analysis Spring 2021
+title: P-TNOTE at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-S64JH
+  target: P-TNOTE
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2021
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-S64JH]] appeared at UGA real-analysis Spring 2021.
+[[P-TNOTE]] appeared at UGA real-analysis Spring 2021.
 :::

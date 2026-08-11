@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-OL6OMIWXUV
 kind: occurrence
-title: P-VYSMW at UGA algebra Spring 2015
+title: P-FO6H7 at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-VYSMW
+  target: P-FO6H7
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2015
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-VYSMW]] appeared at UGA algebra Spring 2015.
+[[P-FO6H7]] appeared at UGA algebra Spring 2015.
 :::

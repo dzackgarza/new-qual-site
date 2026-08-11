@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-WMFPOP2LZ5
 kind: occurrence
-title: P-OGQDR at UGA complex-analysis Spring 2020
+title: P-AZFIB at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-OGQDR
+  target: P-AZFIB
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-OGQDR]] appeared at UGA complex-analysis Spring 2020.
+[[P-AZFIB]] appeared at UGA complex-analysis Spring 2020.
 :::

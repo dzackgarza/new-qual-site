@@ -1,8 +1,8 @@
 ---
 schema: qual/card@1
 id: E-DHPCV
-kind: exercise
-title: "Let $f$ be holomorphic in a neighborhood of $D_r(z_0)$. Show that for\u2026"
+kind: problem
+title: Let $f$ be holomorphic in a neighborhood of $D_r(z_0)$. Show that for…
 classification:
   areas:
   - complex-analysis

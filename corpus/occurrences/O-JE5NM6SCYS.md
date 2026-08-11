@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-JE5NM6SCYS
 kind: occurrence
-title: P-MIRSN at UGA complex-analysis Spring 2020
+title: P-UQOCE at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-MIRSN
+  target: P-UQOCE
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-MIRSN]] appeared at UGA complex-analysis Spring 2020.
+[[P-UQOCE]] appeared at UGA complex-analysis Spring 2020.
 :::

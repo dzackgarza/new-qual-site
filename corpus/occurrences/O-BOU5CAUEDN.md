@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-BOU5CAUEDN
 kind: occurrence
-title: P-QGWME at UGA real-analysis January 2010
+title: P-QXYTV at UGA real-analysis January 2010
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-QGWME
+  target: P-QXYTV
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2010
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-QGWME]] appeared at UGA real-analysis January 2010.
+[[P-QXYTV]] appeared at UGA real-analysis January 2010.
 :::

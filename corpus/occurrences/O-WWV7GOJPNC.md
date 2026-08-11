@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-WWV7GOJPNC
 kind: occurrence
-title: P-QTGNJ at UGA topology Fall 2013
+title: P-LLCQX at UGA topology Fall 2013
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-QTGNJ
+  target: P-LLCQX
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2013
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-QTGNJ]] appeared at UGA topology Fall 2013.
+[[P-LLCQX]] appeared at UGA topology Fall 2013.
 :::

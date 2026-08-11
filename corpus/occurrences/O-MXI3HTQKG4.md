@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-MXI3HTQKG4
 kind: occurrence
-title: P-OMAE4 at UGA real-analysis November 2014
+title: P-FS6II at UGA real-analysis November 2014
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-OMAE4
+  target: P-FS6II
 review: draft
 payload:
   source: SRC-UGA-RA-NOVEMBER-2014
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-OMAE4]] appeared at UGA real-analysis November 2014.
+[[P-FS6II]] appeared at UGA real-analysis November 2014.
 :::

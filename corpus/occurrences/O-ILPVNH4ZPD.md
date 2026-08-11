@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-ILPVNH4ZPD
 kind: occurrence
-title: P-WGFVJ at UGA topology Fall 2014
+title: P-23S3Z at UGA topology Fall 2014
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-WGFVJ
+  target: P-23S3Z
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2014
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-WGFVJ]] appeared at UGA topology Fall 2014.
+[[P-23S3Z]] appeared at UGA topology Fall 2014.
 :::

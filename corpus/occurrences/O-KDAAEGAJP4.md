@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-KDAAEGAJP4
 kind: occurrence
-title: P-443QL at UGA complex-analysis Spring 2020
+title: P-DKYVD at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-443QL
+  target: P-DKYVD
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-443QL]] appeared at UGA complex-analysis Spring 2020.
+[[P-DKYVD]] appeared at UGA complex-analysis Spring 2020.
 :::

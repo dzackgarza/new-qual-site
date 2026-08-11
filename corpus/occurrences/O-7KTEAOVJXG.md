@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-7KTEAOVJXG
 kind: occurrence
-title: P-KXCPM at UGA topology Fall 2004
+title: P-N2FQ7 at UGA topology Fall 2004
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-KXCPM
+  target: P-N2FQ7
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2004
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-KXCPM]] appeared at UGA topology Fall 2004.
+[[P-N2FQ7]] appeared at UGA topology Fall 2004.
 :::

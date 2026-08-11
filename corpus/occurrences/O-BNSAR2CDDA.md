@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-BNSAR2CDDA
 kind: occurrence
-title: P-TCLHM at UGA real-analysis June 2005
+title: P-2B2T5 at UGA real-analysis June 2005
 classification:
   areas:
   - real-analysis
   topics: []
 relations:
 - kind: instance-of
-  target: P-TCLHM
+  target: P-2B2T5
 review: draft
 payload:
   source: SRC-UGA-RA-JUNE-2005
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-TCLHM]] appeared at UGA real-analysis June 2005.
+[[P-2B2T5]] appeared at UGA real-analysis June 2005.
 :::

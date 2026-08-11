@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-QJZTSVHZHF
 kind: occurrence
-title: P-6YJMC at UGA algebra Spring 2020
+title: P-HBWYH at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-6YJMC
+  target: P-HBWYH
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2020
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-6YJMC]] appeared at UGA algebra Spring 2020.
+[[P-HBWYH]] appeared at UGA algebra Spring 2020.
 :::

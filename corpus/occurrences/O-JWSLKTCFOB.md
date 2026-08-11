@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-JWSLKTCFOB
 kind: occurrence
-title: P-FP5YD at UGA topology Spring 2019
+title: P-KVMKV at UGA topology Spring 2019
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-FP5YD
+  target: P-KVMKV
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2019
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-FP5YD]] appeared at UGA topology Spring 2019.
+[[P-KVMKV]] appeared at UGA topology Spring 2019.
 :::

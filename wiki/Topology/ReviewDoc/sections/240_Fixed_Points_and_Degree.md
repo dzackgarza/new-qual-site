@@ -28,7 +28,7 @@ H_{x_i}: \RR^{n+1} &\to \RR^{n+1} \\
 :::
 
 
-[[E-X3L7D]]
+[[E-EYILL]]
 [[E-ZXKDY]]
 :::{.theorem title="Lefschetz Fixed Point"}
 For $f:X\to X$, define the **trace** of $f$ to be

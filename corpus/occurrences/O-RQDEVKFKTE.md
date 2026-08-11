@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-RQDEVKFKTE
 kind: occurrence
-title: P-AMVT7 at UGA topology Spring 2011
+title: P-B3VM7 at UGA topology Spring 2011
 classification:
   areas:
   - topology
   topics: []
 relations:
 - kind: instance-of
-  target: P-AMVT7
+  target: P-B3VM7
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2011
-  locator: "?"
+  locator: '?'
 ---
 
 ::: remark
-[[P-AMVT7]] appeared at UGA topology Spring 2011.
+[[P-B3VM7]] appeared at UGA topology Spring 2011.
 :::

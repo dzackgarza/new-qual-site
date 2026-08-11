@@ -2,20 +2,20 @@
 schema: qual/card@1
 id: O-R5XVGWO5SP
 kind: occurrence
-title: P-XYY34 at Fall 2019 Midterm #7 (algebra)
+title: P-XQ3YN at Fall 2019 Midterm
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-XYY34
+  target: P-XQ3YN
 review: draft
 payload:
   source: SRC-ALG-ART-TWQCHB
-  locator: "7"
+  locator: '7'
 ---
 
 ::: remark
-[[P-XYY34]] appeared at Fall 2019 Midterm #7 (algebra), problem 7.
+[[P-XQ3YN]] appeared at Fall 2019 Midterm #7 (algebra), problem 7.
 :::
