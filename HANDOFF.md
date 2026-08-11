@@ -45,7 +45,7 @@ Issue #21’s Node 20 Actions warning is a non-blocking operational follow-up.
 
 ## Current state
 
-The current worktree is clean and synchronized with `origin/main`. The source migration records and native source assets are checkpointed in the source migration revision documented below.
+The source migration records and native source assets are checkpointed in the source migration revision documented below. The worktree must be clean and synchronized before handoff.
 
 The current PDF slice is only a subset:
 
@@ -85,8 +85,9 @@ Three obligations that earlier records carried as outstanding have landed, and r
 - **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
   Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
 
-- **The five-source migration review is recorded.** The ledger has 2,285 rows: 1,773 migrated, 142 generated, 370 operational or empty rows dropped, and 0 queued.
-  Native source assets are under `assets/ws9/`. The repository review records are in `artifacts/issue-11/source-reviews/`. The source repositories remain available because archive approval is still an owner decision.
+- **Direct source evidence is recorded, but the plan's review gate is open.** The ledger has 2,285 rows: 1,773 migrated, 142 generated, 370 operational or empty rows dropped, and 0 queued.
+  Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
+  The plan forbids new migration automation, replay tools, checkers, and scripts. A ledger or replay cannot prove complete migration. An independent complete review of each source and a final cross-review remain required.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
@@ -102,10 +103,10 @@ Preserve those edits while resuming the larger wiki work.
 
 ## Source migration closeout boundary
 
-The closeout work secures source content.
-It does not complete the mathematical wiki.
+The closeout work preserves direct source evidence.
+It does not complete the mathematical wiki or prove the plan's independent review gate.
 
-- `artifacts/issue-11/source-reviews/` contains one review for each source, the bot collection, and the cross-repository pass.
+- `artifacts/issue-11/source-reviews/` contains direct evidence records for each source, the bot collection, and the cross-repository boundary. These records explicitly leave the independent review gate open.
 
 - `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in the dirty source clone.
   Their native copies are under `assets/ws9/math-flashcards/untracked/`.

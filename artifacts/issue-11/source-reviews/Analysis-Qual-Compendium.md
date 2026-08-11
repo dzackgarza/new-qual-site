@@ -1,32 +1,14 @@
-# Closeout review: Analysis-Qual-Compendium
+# Direct source review record: Analysis-Qual-Compendium
 
-Review role: closeout reviewer, separate from the migration editing pass.
+This record reports source evidence. It is not an independent completion review.
 
 Source revision: `15168d8df736c3bc99be57e8b48e0675e0cd4e2f`.
+Inventory boundary: 3 tracked paths.
 
-Target migration revision: `f3e39d74468ce434d1f4765c70dbb993f19a7f7e`.
+The ledger has 3 migrated rows, 0 generated rows, 0 dropped rows, and 0 queued
+rows. The native targets are under
+`assets/ws9/Analysis-Qual-Compendium/native/`, or are existing canonical cards.
 
-Inventory boundary: `git ls-files` returned 3 paths.
-The migration ledger has 3 rows for this source.
-The ledger SHA-256 at review was `1576c28ef2f73742f8c11936b1e12b8237ebb5d151175881d4a6540de0e6ee6f`.
-
-Disposition counts:
-
-- 3 migrated.
-
-- 0 generated.
-
-- 0 dropped.
-
-- 0 queued.
-
-Review checks:
-
-- All three tracked paths have permanent native targets.
-
-- All three targets pass direct SHA-1 identity checks.
-
-- The archived status of the source repository was not used as migration evidence.
-
-Result: pass.
-The complete pinned source inventory is retained.
+This evidence does not satisfy the plan's independent-review requirement. A
+reviewer who did not perform this migration must inspect all three source paths
+and their target mappings before this source can pass the closeout gate.

@@ -1,39 +1,23 @@
-# Closeout review: qual-review-and-solutions
+# Direct source review record: qual-review-and-solutions
 
-Review role: closeout reviewer, separate from the migration editing pass.
+This record reports source evidence. It is not an independent completion review.
 
 Source revision: `590a8929b2326cc770a246e934ab36fb30b0c7ab`.
+Inventory boundary: 542 tracked paths.
 
-Target migration revision: `f3e39d74468ce434d1f4765c70dbb993f19a7f7e`.
+The ledger has 347 migrated rows, 48 generated rows, 147 dropped rows, and 0
+queued rows. Every generated row names a permanent target under
+`assets/ws9/qual-review-and-solutions/generated/`. Those targets retain the
+generated source bytes verbatim. Native source and binary rows retain copies
+under `assets/ws9/qual-review-and-solutions/native/`.
 
-Inventory boundary: `git ls-files` returned 542 paths.
-The migration ledger has 542 rows for this source.
-The ledger SHA-256 at review was `1576c28ef2f73742f8c11936b1e12b8237ebb5d151175881d4a6540de0e6ee6f`.
+The authored `Algebra/Review Doc/AlgebraQualNotes.md` is represented by 953
+statement records: 949 routed records and four source blocks. The four blocks
+are listed with source line ranges and SHA-1 values in
+`sources/unrouted-source-blocks.jsonl`; the complete native source is at
+`assets/ws9/qual-review-and-solutions/native/Algebra/Review Doc/AlgebraQualNotes.md.source`.
 
-Disposition counts:
-
-- 347 migrated.
-
-- 48 generated.
-
-- 147 operational, empty, or editor files dropped.
-
-- 0 queued.
-
-Review checks:
-
-- Every tracked path has one ledger row.
-
-- Every migrated SHA-1 row has an existing target.
-  All native identity checks pass.
-
-- 143 transformed authored pages were compared with their source and target card references.
-  No unresolved normalized-content gap remains.
-
-- The dropped Markdown and TeX scan found no source page with hidden statement content.
-  Bibliographies, metadata, figure TeX, rendered pages, and other non-empty source artifacts are retained under `assets/ws9/qual-review-and-solutions/native/`.
-
-- All generated rows name their aggregate, section, or source build input.
-
-Result: pass.
-Source wording, metadata, bibliographic entries, figures, and build inputs have permanent targets.
+This evidence does not satisfy the plan's independent-review requirement. A
+reviewer who did not perform this migration must inspect all 542 source paths,
+the target mappings, and the four retained source blocks before this source can
+pass the closeout gate.

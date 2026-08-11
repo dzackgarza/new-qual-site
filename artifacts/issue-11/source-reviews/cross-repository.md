@@ -1,49 +1,25 @@
-# Cross-repository closeout review
+# Cross-repository direct evidence record
 
-Review role: cross-repository reviewer, separate from the repository migration pass.
+This record reports the assembled evidence. It is not the independent
+cross-repository review required by the plan.
 
-Target migration revision: `f3e39d74468ce434d1f4765c70dbb993f19a7f7e`.
+The boundary is five pinned source revisions with 2,285 tracked paths, 82
+observed untracked APKG artifacts, and 51 vendored MathQualBot images. The
+ledger has 2,285 rows: 1,773 migrated, 142 generated, 370 dropped, and 0
+queued. Generated artifacts have permanent verbatim targets under
+`assets/ws9/`; the 82 APKG files and 51 images have separate manifests and
+native copies.
 
-Review boundary:
+The QRS authored review document has 949 routed statement records and four
+retained source blocks. The block line ranges and SHA-1 values are recorded in
+`sources/unrouted-source-blocks.jsonl`; the complete native source is retained
+under `assets/ws9/qual-review-and-solutions/native/`.
 
-- Five pinned source revisions.
+The plan explicitly forbids new migration automation, replay tools, checkers,
+and scripts. The earlier verifier and its generated report were therefore
+removed. A ledger, replay, or build result cannot prove complete migration.
 
-- 2,285 tracked source paths.
-
-- 2,285 migration-ledger rows.
-
-- 51 vendored MathQualBot images and 51 manifest records.
-
-- 82 observed uncommitted APKG artifacts, recorded in their own manifest.
-
-Ledger counts at review:
-
-- 1,773 migrated.
-
-- 142 generated.
-
-- 370 operational, empty, or editor files dropped.
-
-- 0 queued.
-
-Cross-source checks:
-
-- `ledger-totality`, `reason-truth`, and `migrated-evidence` all pass.
-
-- Fresh SSH replay checks all five pinned clones at 2,285 ledger rows.
-
-- Every native SHA-1 row has a present target and a matching source hash.
-
-- Every generated row names a migrated source or build input.
-
-- No non-empty Markdown, TeX, YAML, BibTeX, JSON, HTML, PDF, archive, figure-TeX, or native deck file remains dropped.
-
-- Duplicate card occurrences retain their source deck and map to canonical imports.
-
-- The bot collection has permanent copies and manifest coverage.
-
-The replay and build are supporting checks.
-This review uses the source files, target files, ledger rows, native identity hashes, transformed-page comparisons, and provenance records as its evidence.
-
-Result: pass for source migration coverage.
-Archive decisions remain owner actions.
+An independent reviewer must now inspect the five full inventories, the
+untracked and vendored manifests, all target mappings, and the retained QRS
+blocks. Until that review is recorded, the plan's all-content and archive gates
+remain open.
