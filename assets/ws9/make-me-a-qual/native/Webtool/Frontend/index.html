@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Make Me a Qual</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+  <form class="form-horizontal">
+  <fieldset>
+  <!-- Form Name -->
+  <legend>Make Me a Qual</legend>
+  <small class="form-text text-muted">Inspired by / adapted from Jonathan Love's <a href="http://stanford.edu/~jonlove/qual/makeit.html">tool of the same name </a>.</small>
+  Instructions:
+  <ul>
+    <li>There is an underlying collection of questions from a large number of quals, the options here essentially filter these down and take a random selection.</li>
+    <li>Select exam type (Algebra, Analysis, etc). The later selections will be populated with the metadata from the available questions.</li>
+    <li>Use the "Topics" and "Years" sections to add or remove questions, while ensuring the "Number of Matching Questions" is strictly positive.</li>
+    <li>Choose the number of questions to appear on the exam, then click "Make Me a Qual" to open a new HTML window with the exam questions.</li>
+    <li><i>(Note that you can instead generate a PDF to download, but this takes slightly longer.)</i></li>
+  </ul>
+  <div class="alert alert-info" role="alert">
+    If you'd like to contribute qual questions or improve the tool, <a href="https://github.com/dzackgarza/MakeMeAQual_UGA">see the Github repository</a>.
+    <br>
+    You can also submit questions directly <a href="https://forms.gle/PRFPBHJHxUtgQ5nA6">using this form</a>
+  </div>
+  <hr>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="row">
+				<div class="col-md-3">
+
+
+            <label class="col-md-8 control-label" for="selectmultiple">Number of Questions</label>
+            <input id="numberQuestions" name="textinput" type="text" value="10" class="form-control input-md">
+          <!-- Multiple Radios -->
+          <div class="form-group">
+            <label class="col-md-12 control-label" for="examType">Exam</label>
+            <div class="col-md-12">
+              <div class="radio">
+                  <input type="radio" name="examType" id="AlgebraRadio" value="Algebra" checked="checked">
+                <label for="AlgebraRadio">
+                  Algebra
+                </label>
+              </div>
+              <div class="radio">
+                  <input type="radio" name="examType" id="RealAnalysisRadio" value="Real_Analysis">
+                <label for="RealAnalysisRadio">
+                  Real Analysis
+                </label>
+              </div>
+              <div class="radio">
+                  <input type="radio" name="examType" id="TopologyRadio" value="Topology">
+                <label for="TopologyRadio">
+                  Topology
+                </label>
+              </div>
+              <div class="radio">
+                  <input type="radio" name="examType" id="ComplexAnalysisRadio" value="Complex_Analysis">
+                  <label for="ComplexAnalysisRadio">
+                  Complex Analysis
+                </label>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Button -->
+          <div class="form-group">
+
+            <div class="col-md-4">
+            <div class="form-check">
+              <b>Output Type</b>
+              <hr>
+              <input class="form-check-input" type="radio" name="outputFormat" id="exampleRadios1" value="0" checked>
+              <label class="form-check-label" for="exampleRadios1">Web Page</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="outputFormat" id="exampleRadios2" value="1">
+              <label class="form-check-label" for="exampleRadios2">PDF</label>
+            </div>
+            <button id="makeQual" name="singlebutton" class="btn btn-primary">Make Me a Qual</button>
+            </div>
+              <small class="form-text text-muted">Number of matching questions: <span id="numQuestions"></span></small>
+          </div>
+
+				</div>
+				<div class="col-md-4">
+          <!-- Select Multiple -->
+          <div class="form-group">
+            <label class="col-md-4 control-label" for="selectmultiple">Topics</label>
+            <div class="col-md-12">
+              <select id="selectTopics" name="selectTopics" class="form-control" multiple="multiple">
+              </select>
+              <button id="btnClearAllTopics" name="btnClearAllTopics" class="btn btn-primary">Clear All</button>
+              <button id="btnSelectAllTopics" name="btnSelectAllTopics" class="btn btn-primary">Select All</button>
+              <small class="form-text text-muted">Click and press "delete" to remove. Ctrl-Click to select multiple items.</small>
+            </div>
+          </div>
+
+				</div>
+        <div class="col-md-4">
+          <!-- Select Multiple -->
+          <div class="form-group row">
+            <div class="col-md-6">
+            <label class="col-md-6 control-label" for="selectmultiple">Years to Include</label>
+              <select id="selectYears" name="selectYears" class="form-control" multiple="multiple">
+              </select>
+              <button id="btnClearAllYears" name="btnClearAllYears" class="btn btn-primary">Clear All</button>
+              <button id="btnSelectAllYears" name="btnSelectAllYears" class="btn btn-primary">Select All</button>
+            </div>
+
+          </div>
+
+        </div>
+    <label class="col-md-6 control-label" for="singlebutton"></label>
+            <div class="col-md-6">
+              <label class="col-md-6 control-label" for="selectmultiple">Universities</label>
+              <select id="selectUniversities" name="selectUniversities" class="form-control" multiple="multiple">
+              </select>
+            </div>
+
+
+			</div>
+		</div>
+	</div>
+  </fieldset>
+  </form>
+<hr>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js" integrity="sha256-4lietOiwRDBKx1goZZbRiwB06L+/bPYEGDIKZt82bgg=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.min.js" integrity="sha256-+C0A5Ilqmu4QcSPxrlGpaZxJ04VjsRjKu+G82kl5UJk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/css/selectize.bootstrap3.min.css" integrity="sha256-ze/OEYGcFbPRmvCnrSeKbRTtjG4vGLHXgOqsyLFTRjg=" crossorigin="anonymous" />
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

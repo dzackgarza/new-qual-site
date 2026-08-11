@@ -1,0 +1,579 @@
+{
+  "source_revision": "69cecc401981fb2f897a6a3c29feb869d811013c",
+  "artifacts": [
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/2020-04-03.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/2020-04-03.apkg",
+      "sha1": "21a53e91ba7d2e992069446db5f4c916dfe2f6e0"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/AG.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/AG.apkg",
+      "sha1": "2957072b0b71ee856a78d0816de2e95c3fd79dff"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Algebra.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Algebra.apkg",
+      "sha1": "a8503abcab54c893074c11c89a5aa79d1445cf66"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Algebra__Algebraic Groups.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Algebra__Algebraic Groups.apkg",
+      "sha1": "58433bad3bceeea94379573aacbeacaa0058559c"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Algebra__Category Theory.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Algebra__Category Theory.apkg",
+      "sha1": "0d9a199ed97c37bcd3b7466cae4d91bd438ba1ee"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Algebra__Commutative Algebra.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Algebra__Commutative Algebra.apkg",
+      "sha1": "5142cfe0b7e830f347ad7d1676d724e7bccb752c"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Algebra__Lie Algebras.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Algebra__Lie Algebras.apkg",
+      "sha1": "ca35ef957bf91754905e5ac860f10a8dea41b03b"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Algebra__Number Theory.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Algebra__Number Theory.apkg",
+      "sha1": "d9cd49014a33aa7091777b557d9b0e228e6fb8b0"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Algebraic Geometry__AG.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Algebraic Geometry__AG.apkg",
+      "sha1": "b39c97be1e9f752245e291c286afbec5635ccba2"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Analysis__Analysis 1.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Analysis__Analysis 1.apkg",
+      "sha1": "9b10a647b0cdd50c6c6b9119237ffde9ac0560bc"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Analysis__Functional Analysis.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Analysis__Functional Analysis.apkg",
+      "sha1": "898d3147f8a3621541ff03ab0a090687176abdc9"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Analysis__QualClassReview.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Analysis__QualClassReview.apkg",
+      "sha1": "930609e1a8cf6d188c150a68b72bdbac40ebf0ed"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Basics.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Basics.apkg",
+      "sha1": "69465947620fed6351b16745857afad0c4910f5d"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Basics__Basics.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Basics__Basics.apkg",
+      "sha1": "6f3302a235fac00a94b1fe687e7b54d17fce9984"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Complex.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Complex.apkg",
+      "sha1": "cc2a133fabcdb0c534cd93c1b914cb925a084c06"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Definitions.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Definitions.apkg",
+      "sha1": "cc7759495958a8801cf28207bf05a61454598c90"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Grad Math Facts__Grad Math Facts.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Grad Math Facts__Grad Math Facts.apkg",
+      "sha1": "8a0463cc4395e90288390fb9612cdc3c6209fde4"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Learning__NT.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Learning__NT.apkg",
+      "sha1": "7d382190b82c536f3169bd1e821120ea8a50ab23"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Math__Grad Math Facts.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Math__Grad Math Facts.apkg",
+      "sha1": "856e4bc0960bda94e3c3936d5731bc3dbbade92d"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Math__Math Tricks.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Math__Math Tricks.apkg",
+      "sha1": "52908c780664735d68397a56bd4dcc65e035a500"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Misc__2020-09-16.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Misc__2020-09-16.apkg",
+      "sha1": "4c0e7dc0015459c7a35544e5d2b2c0db5ede65d4"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__2022-11-23.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__2022-11-23.apkg",
+      "sha1": "093966f4f783639d71e15fcc0f7a2e824176932b"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Cohomology of Schemes.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Cohomology of Schemes.apkg",
+      "sha1": "7d52fe541e5a6d70d82322f227ed508897dc7365"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Curves and Surfaces.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Curves and Surfaces.apkg",
+      "sha1": "7fa81149bbb596851f9912c68e00bb438f657f9c"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Divisors.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Divisors.apkg",
+      "sha1": "d35b1739f1be8d0391b49efa8c25d775a4e14c9c"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Looijenga IAS.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Looijenga IAS.apkg",
+      "sha1": "f32e3f8ec93395dd459327a98357570847d48135"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Misc Schemes.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Misc Schemes.apkg",
+      "sha1": "b6dfa8345e803f1ce00599cbba3cff35f5b2708a"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Morphisms.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Morphisms.apkg",
+      "sha1": "f1d8a795a6bf1b5649e9ed797c1054a4f24acd1c"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__O_X Modules.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__O_X Modules.apkg",
+      "sha1": "7df7835526e83ab24f41ec9f04207ab8776214aa"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Schemes.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Schemes.apkg",
+      "sha1": "203a72b8d860d24170647716a4c1d392364599eb"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Sheaves.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Sheaves.apkg",
+      "sha1": "f45370467d0055e7f2effff170329ecd12f9caf9"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Toric Varieties.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Toric Varieties.apkg",
+      "sha1": "757cc141bc51b8432ade62f307cc08b3dd196d8c"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Orals__Varieties_ Definitions.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Orals__Varieties_ Definitions.apkg",
+      "sha1": "7cfe4d1d35d8302590d65a845a7a5f3c2023080c"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Algebra__QualAlgebra.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Algebra__QualAlgebra.apkg",
+      "sha1": "c8b2e1871efc4247e7e92b21c66fca9c78919bfc"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Algebra__QualAlgebraFields.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Algebra__QualAlgebraFields.apkg",
+      "sha1": "aa9cc369a7c3f515b59e31bd697d0207b867912f"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Algebra__QualAlgebraGroups.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Algebra__QualAlgebraGroups.apkg",
+      "sha1": "f980d2058396ad76c02fb75e13adf99a1461a40f"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Algebra__QualAlgebraModules.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Algebra__QualAlgebraModules.apkg",
+      "sha1": "cc43aa765d499148ca3c2a6e3c0284d9ae380cd6"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Algebra__QualAlgebraicTopology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Algebra__QualAlgebraicTopology.apkg",
+      "sha1": "097d38576bd1c356c6fd9e8628f7f563fed87951"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Algebra__Rings.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Algebra__Rings.apkg",
+      "sha1": "6f1b1c245dbcb406017e7d1b234b31b652ed46f0"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Basics__Basics.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Basics__Basics.apkg",
+      "sha1": "1e88c85312bad79e8700edca31a572b7a5441015"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Basics__Special Angles.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Basics__Special Angles.apkg",
+      "sha1": "889347acc16688a589aa950c8a269800c39bee3b"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__000_Proof Sketches.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__000_Proof Sketches.apkg",
+      "sha1": "02861270828822bdbc8b65e4ca555f7c6fd39001"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__2021-12-18.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__2021-12-18.apkg",
+      "sha1": "00d9d9164449b71645a30c054a883c3c203a03de"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__Basics.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__Basics.apkg",
+      "sha1": "91d186dfd5cec257abd8b5de5bb229db1640f22b"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__Conformal Maps.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__Conformal Maps.apkg",
+      "sha1": "6fc4d2a8f0244633c77c4c66a70e4db00d0d4567"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__Definitions.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__Definitions.apkg",
+      "sha1": "07cbe1241505974d45ac80308dc4b79a2e7feea0"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__Examples.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__Examples.apkg",
+      "sha1": "049e022d26ebbb16ea6a21724d7e0f92361cd4a6"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__Formulas and Technical Theorems.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__Formulas and Technical Theorems.apkg",
+      "sha1": "85e1bffc75b44bbf61b61d6f17693df2588eed02"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__Hyperbolic Formulas.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__Hyperbolic Formulas.apkg",
+      "sha1": "dd58e944126aa165c80f7843f138706e6ac8f3e1"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__QualComplexAnalysis.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__QualComplexAnalysis.apkg",
+      "sha1": "017ec79aae9830e52d7e4d205eeaf144a9af5148"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Complex Analysis__Theorems facts and statements.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Complex Analysis__Theorems facts and statements.apkg",
+      "sha1": "7850cdb070baef969e69ec17599b5904f42caf40"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Real Analysis__QualClassReview.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Real Analysis__QualClassReview.apkg",
+      "sha1": "b45de566f395146f4c94d89c43a93a24aa16eb84"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Real Analysis__QualRealAnalysis.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Real Analysis__QualRealAnalysis.apkg",
+      "sha1": "883309e7bf1d8c563f66dead5d145f39281b21f8"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Topology__QualAlgebraicTopology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Topology__QualAlgebraicTopology.apkg",
+      "sha1": "7dd6873b2c66d1d9e32dc44b65d3d97736918698"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Topology__QualPointSetTopology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Topology__QualPointSetTopology.apkg",
+      "sha1": "6eae75ce678cc0e3f4d5a86e1d74d6c611425d52"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Qual Topology__QualTopology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Qual Topology__QualTopology.apkg",
+      "sha1": "d0158f66caeba04b9f5b9b6495ba0aabc3ad0e4e"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Quals__Commutative Algebra.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Quals__Commutative Algebra.apkg",
+      "sha1": "d1a76bf5b34d55bbe09bdf14f47b3f6dda6c2cfc"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Quals__Complex Analysis.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Quals__Complex Analysis.apkg",
+      "sha1": "5d98a8d58b26542fa96264e34c8ed2a10808c636"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Quals__Real Analysis.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Quals__Real Analysis.apkg",
+      "sha1": "8217575528d4c8e7bf6db11c56ed7090397b2d3d"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Quals__Topology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Quals__Topology.apkg",
+      "sha1": "95ca31e4bde0c32842b2aea1b7cea855f9b16878"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__AG_General.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__AG_General.apkg",
+      "sha1": "330a3d1c55eccbadd94a80bf23102cceacd29b83"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__ClassFieldTheory.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__ClassFieldTheory.apkg",
+      "sha1": "3cfc82ca0bb79be61071f4e5ac5d8b6d92d4f6f2"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__EtaleCohomology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__EtaleCohomology.apkg",
+      "sha1": "ed1170feb743b5725b6d62b7d67431c0cbbea2ff"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__FunctionFields.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__FunctionFields.apkg",
+      "sha1": "aaa80a1f3ab89a941257b0e0bc5eb3722484c165"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__Hochschild.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__Hochschild.apkg",
+      "sha1": "521288850f25a18f12667670694983297414a314"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__Hodge.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__Hodge.apkg",
+      "sha1": "2acee67ca40d8eed4f31c079a0b54712320c3dcb"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__Homotopy.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__Homotopy.apkg",
+      "sha1": "1045e0f82ef99fef3167ea6797d2cc7e50dda8a6"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__Misc.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__Misc.apkg",
+      "sha1": "3589f07ef703a259a82a523cc21d7df3a52c488e"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__New.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__New.apkg",
+      "sha1": "b825533fbc07ea188d9686f807e127b792861420"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__Surfaces.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__Surfaces.apkg",
+      "sha1": "7a08836c0e91827f337a134be3366366c6cf2956"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Reading__Unsorted.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Reading__Unsorted.apkg",
+      "sha1": "fa4c42831a75530ddc67378a7372a0d72d55d067"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/RepTheory.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/RepTheory.apkg",
+      "sha1": "fbb27312073049707871afadc89ab4554e43a577"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Research__Definitions.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Research__Definitions.apkg",
+      "sha1": "93b7de9dc3069e192b80769087e86b4d8720a28e"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Research__K3s.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Research__K3s.apkg",
+      "sha1": "4b6575f04c802a6818746db9dbcf45b5a86526eb"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Research__Lattices.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Research__Lattices.apkg",
+      "sha1": "4d4d8cde22964d64e7b1c0acaf0e775c63ae580a"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Research__Papers.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Research__Papers.apkg",
+      "sha1": "74fcd41004c9c613173a20cdd90a4ddef63e39cb"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Schemes.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Schemes.apkg",
+      "sha1": "ce8d68cff6bd0c4cbd18653571531376527ab1a2"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Test__2021-12-18.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Test__2021-12-18.apkg",
+      "sha1": "d011135fcb26177f6e698725ca6aa42344db9882"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Topology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Topology.apkg",
+      "sha1": "a7fbe04f5e170eef2bf5d961ef4fa1e9d5ed2d13"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Topology__Algebraic Topology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Topology__Algebraic Topology.apkg",
+      "sha1": "244de54841f56b417fd46c7335d31f10c3cfd370"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Topology__Point-Set Topology.apkg",
+      "state": "untracked",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Topology__Point-Set Topology.apkg",
+      "sha1": "122a4cb1d2a961a9aab83a0f972dcb4bae263799"
+    },
+    {
+      "source_repo": "math-flashcards",
+      "source_path": "apkg/Vocabulary.apkg",
+      "state": "modified-worktree",
+      "target": "assets/ws9/math-flashcards/untracked/apkg/Vocabulary.apkg",
+      "sha1": "ee631dbe82a77e6d9230087612264e42d3b51000"
+    }
+  ]
+}
