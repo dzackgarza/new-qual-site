@@ -45,7 +45,7 @@ Issue #21’s Node 20 Actions warning is a non-blocking operational follow-up.
 
 ## Current state
 
-The current worktree is clean and pushed at `82db18d1d2bee6429652686266a33b1552cf1881`. The source migration records and native source assets are checkpointed there.
+The current worktree is clean and synchronized with `origin/main`. The source migration records and native source assets are checkpointed in the source migration revision documented below.
 
 The current PDF slice is only a subset:
 
