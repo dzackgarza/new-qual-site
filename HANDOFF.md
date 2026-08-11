@@ -211,11 +211,11 @@ Do not report the PDF subtask as the project finish line.
 
 ## PLAN-QUAL-GRUNT-001 progress (2026-08-11)
 
-Grunt-work completion run. Landed and pushed through `7bbb7fe` (15 commits,
-`pytest` 67 green, `uv run qualc check` -> 7,207 cards and 403 wiki pages OK).
+Grunt-work completion run.
+Landed and pushed through `7bbb7fe` (15 commits, `pytest` 67 green, `uv run qualc check` -> 7,207 cards and 403 wiki pages OK).
 
 | workstream | state | commit | headline |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | G0 unblock the build | done | `77d42ea` | 25 schema errors + duplicate id cleared; 758 WS9 cards landed |
 | G1 reconcile records | done | vault `1f7e739`, `d94d478`, `8f835cc` | 5 issues corrected; found M4/M5 never existed |
 | G2 mis-dropped markdown | done | `3e9cc6c` | 32 rows adjudicated, 503 cards; 180-exercise chapter recovered |
@@ -228,13 +228,10 @@ Grunt-work completion run. Landed and pushed through `7bbb7fe` (15 commits,
 | G7 reachability | pending | — | scope grew: +503 +372 +65 new cards, orphans by construction |
 | G9 source hygiene | running | — | non-destructive scope; archiving and token revocation await user approval |
 
-Corpus: 6,907 -> 7,207 cards. `tools/audit.py`: empty-areas ok, duplicate-bodies ok,
-ledger-totality ok, reason-truth ok, migrated-evidence ok. Documented residuals: 1
-degenerate title (`P-V33RL`), 10 UGA month-vs-term sittings needing the source.
+Corpus: 6,907 -> 7,207 cards.
+`tools/audit.py`: empty-areas ok, duplicate-bodies ok, ledger-totality ok, reason-truth ok, migrated-evidence ok.
+Documented residuals: 1 degenerate title (`P-V33RL`), 10 UGA month-vs-term sittings needing the source.
 
-Open defects found on the way: `dzackgarza/new-qual-site#31` (collapse tool builds its
-map from HEAD but deletes from the working tree) and `dzackgarza/flowmark#31` (footnote
-inside a fenced div crashes the formatter, open since 2026-07-24).
+Open defects found on the way: `dzackgarza/new-qual-site#31` (collapse tool builds its map from HEAD but deletes from the working tree) and `dzackgarza/flowmark#31` (footnote inside a fenced div crashes the formatter, open since 2026-07-24).
 
-Four of the plan's own claims proved stale against the repo and are corrected in its
-Surprises section rather than silently edited.
+Four of the plan's own claims proved stale against the repo and are corrected in its Surprises section rather than silently edited.
