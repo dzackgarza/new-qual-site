@@ -267,10 +267,7 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 
 - **G6 — subject-tree merge.** Branch `g6-tree-merge` in `.claude/worktrees/g6`, 238 files changed, **uncommitted**. `wiki/` still carries both upstream layouts (numbered `10_Algebra…` and named `Algebra…`). Read that worktree before restarting; do not discard it.
 
-- **G7 — reachability. Done** (`e1a4ca6`, branch `g7-reachability`). Orphans 3,104 -> 19.
-  `tools/attach_pages.py` emits 32 pages from ledgers and card fields alone: a Source Archive per subject (273 source cards, institution then date), a page per math-flashcards deck (25, in each deck's own card order), the review doc's Extra Problems chapter (180 cards under its own heading path), and one hub page linked from `wiki/index.md`.
-  Routes and their order sources are in `sources/g7-page-attachment.jsonl`; the residual is in `sources/g7-residual.jsonl`.
-  Two things to know before changing it: the orphan closure in `tools/audit.py` now includes the source -> occurrence -> problem edge, because `emit.source_page` renders that listing; and 59 headings lost an empty `$$` left by the import's status-macro discard, which had been swallowing card references into display math (`sources/g7-heading-math-residue.jsonl`).
+- **G7 — reachability: done** (`e1a4ca6`, branch `g7-reachability`). Orphans 3,104 -> 19. `tools/attach_pages.py` emits 32 pages from ledgers and card fields alone: a Source Archive per subject (273 source cards, institution then date), a page per math-flashcards deck (25, in each deck's own card order), the review doc's Extra Problems chapter (180 cards under its own heading path), and one hub page linked from `wiki/index.md`. Routes and their order sources are in `sources/g7-page-attachment.jsonl`; the residual is in `sources/g7-residual.jsonl`. Two things to know before changing it: the orphan closure in `tools/audit.py` now includes the source -> occurrence -> problem edge, because `emit.source_page` renders that listing; and 59 headings lost an empty `$$` left by the import's status-macro discard, which had been swallowing card references into display math (`sources/g7-heading-math-residue.jsonl`).
 
 - **G8 remainder.** Guards still owed for queued->migrated without a card, upstream row count vs occurrence count, and reachability.
 
