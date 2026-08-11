@@ -1,11 +1,11 @@
 # Undergraduate Analysis: Uniform Convergence
 
-## Fall 2018 # 1 $$
+## Fall 2018 # 1
 ## Fall 2017 # 1
-## Fall 2014 # 1 $$
-## Spring 2017 # 4 $$
-## Spring 2015 # 1 $$
-## Fall 2014 # 2  $$
+## Fall 2014 # 1
+## Spring 2017 # 4
+## Spring 2015 # 1
+## Fall 2014 # 2
 
 ## Fall 2018.1
 
@@ -44,16 +44,16 @@
 
 [[P-YBNB1]]
 ## Spring 2020 # 1
-## Fall 2019 # 1 $$
+## Fall 2019 # 1
 [[P-QOC7V]]
 ## Fall 2018 # 4
 [[P-NVVZJ]]
-## Fall 2017 # 4 $$
+## Fall 2017 # 4
 [[P-BNXPE]]
 ## Spring 2017 # 3
-## Fall 2016 # 1 $$
-## Fall 2016 # 5 $$
-## Fall 2016 # 6 $$
+## Fall 2016 # 1
+## Fall 2016 # 5
+## Fall 2016 # 6
 ## Spring 2016 # 1
 [[P-FKKSH]]
 ## Fall 2015 # 1
@@ -62,7 +62,7 @@
 ## Fall 2020 \# 3
 [[P-K4EJA]]
 ## Unsorted
-## Spring 2014 # 2  $$
+## Spring 2014 # 2
 
 ## Fall 2021.1
 

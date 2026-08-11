@@ -1,7 +1,7 @@
 # Integrals: Approximation
 
-## Spring 2018 # 3 $$
-## Spring 2018 # 4 $$
+## Spring 2018 # 3
+## Spring 2018 # 4
 ## Spring 2015 # 2
 ## Fall 2014 # 4
 [[P-WPVFN]]
@@ -29,9 +29,9 @@
 [[P-5SMO5]]
 # $L^1$
 
-## Spring 2020 # 3 $$
+## Spring 2020 # 3
 ## Fall 2019 # 5.
-## Fall 2017 # 3 $$
+## Fall 2017 # 3
 [[P-2LJDT]]
 ## Spring 2015 # 4
 [[P-ZAS5Z]]

@@ -142,7 +142,13 @@ def _manifest_ids() -> set[str]:
 def check_orphans(parsed: list[ParsedCard], wiki_pages: list[WikiPage]) -> Check:
     """A card is reachable when a page or manifest names it, or when it hangs off
     a card that is. The emitter renders occurrences, hints and solutions on their
-    problem's route, so a reader does reach them -- but only through it."""
+    problem's route, so a reader does reach them -- but only through it.
+
+    The same holds one level up, for the same reason: `emit.source_page` renders
+    every occurrence of a sitting on that sitting's own route, each linked to its
+    problem, "in the order they appeared". Naming a `source` card therefore
+    reaches its occurrences and their problems. This edge is here because the
+    emitter draws it -- delete `source_page`'s listing and this edge goes too."""
     import panflute as pf
 
     referenced: set[str] = set(_manifest_ids())
@@ -174,6 +180,13 @@ def check_orphans(parsed: list[ParsedCard], wiki_pages: list[WikiPage]) -> Check
                 if relation.target not in edges:
                     edges[relation.target] = set()
                 edges[relation.target].add(item.card.id)
+        if item.card.kind == "occurrence":
+            source = item.card.payload.source
+            if source not in edges:
+                edges[source] = set()
+            # The sitting's page carries the occurrence and links its problem.
+            edges[source].add(item.card.id)
+            edges[source].update(relation.target for relation in item.card.relations if relation.kind == "instance-of")
 
     reachable = {cid for cid in referenced}
     frontier = list(reachable)

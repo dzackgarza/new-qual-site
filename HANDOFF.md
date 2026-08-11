@@ -225,7 +225,7 @@ Landed and pushed through `7bbb7fe` (15 commits, `pytest` 67 green, `uv run qual
 | G8 CI guards | partial | `64f90a1` | `payload.area` guard, CI test job, 4 invariant tests |
 | G10 math-flashcards | done | `1d49862` | 372 cards, fifth source ledgered |
 | G6 subject-tree merge | done | merge of `g6-tree-merge` | 403 -> 291 pages, prose consolidated not dropped |
-| G7 reachability | done | merge of `g7-reachability` | 3,104 orphans -> 19 documented; pages emitted from recorded order only |
+| G7 reachability | done | `e1a4ca6`, merged | 32 pages from recorded order; orphans 3,104 -> 19 documented |
 | G9 source hygiene | partial | — | worktrees restored, credentials off disk; archiving and token revocation are owner actions |
 
 Corpus: 6,907 -> 7,207 cards.
@@ -243,6 +243,8 @@ Four of the plan's own claims proved stale against the repo and are corrected in
 
 ### Done and durable
 
+- **G7 — reachability: done** (`e1a4ca6`, branch `g7-reachability`). Orphans 3,104 -> 19. `tools/attach_pages.py` emits 32 pages from ledgers and card fields alone: a Source Archive per subject (273 source cards, institution then date), a page per math-flashcards deck (25, in each deck's own card order), the review doc's Extra Problems chapter (180 cards under its own heading path), and one hub page linked from `wiki/index.md`. Routes and their order sources are in `sources/g7-page-attachment.jsonl`; the residual is in `sources/g7-residual.jsonl`. Two things to know before changing it: the orphan closure in `tools/audit.py` now includes the source -> occurrence -> problem edge, because `emit.source_page` renders that listing; and 59 headings lost an empty `$$` left by the import's status-macro discard, which had been swallowing card references into display math (`sources/g7-heading-math-residue.jsonl`).
+
 G0, G1, G2, G3, G4, G5, G10, and G8's first slice.
 11 commits this run (`ca289a8..050954f`). Corpus 6,907 -> 7,207: +503 routed authored markdown, +372 flashcards, +65 recovered from swallowed headings, -628 duplicates collapsed.
 
@@ -256,20 +258,19 @@ reason-truth       ok
 migrated-evidence  ok
 degenerate-titles  1   P-V33RL: title '?'
 duplicate-sittings 10  UGA real-analysis month-vs-term pairs
+orphans            19  17 recorded duplicates + 1 reconstructed problem and its solution
 ```
 
-Both residuals are deliberate and documented, not backlog.
+All three residuals are deliberate and documented, not backlog.
 The 10 sittings need the source to settle: a month label against a semester label for one lossy derived season.
 Two carry positive evidence of being *different* sittings (January/Spring 2014 set different problem 2; January/Spring 2017 different problem 3); `JUNE-2017` vs `MAY-2017` is flagged `unsettled` in `sources/g3-sitting-decisions.jsonl`.
 
 ### Not done
 
 - **G6 — subject-tree merge.** Branch `g6-tree-merge` in `.claude/worktrees/g6`, 238 files changed, **uncommitted**. `wiki/` still carries both upstream layouts (numbered `10_Algebra…` and named `Algebra…`). Read that worktree before restarting; do not discard it.
-
 - **G8 remainder.** Guards still owed for queued->migrated without a card, upstream row count vs occurrence count, and reachability.
 
-- **G9 archiving.** Deferred by owner decision: archiving would certify preservation while G7 has not made the preserved material reachable.
-  Issue #11 requires a fresh-clone replay before archiving.
+- **G9 archiving.** Not done. Reachability is now proved (19 documented orphans), so the remaining bar is the fresh-clone replay issue #11 requires. See the standing constraint above.
 
 ### One action for the owner
 

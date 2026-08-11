@@ -34,8 +34,6 @@
 
 [[P-UHX3H]]
 
-## $$
-
 [[P-OIP5P]]
 
 ### Tie's Extra Questions: Fall 2009

@@ -9,7 +9,7 @@
 
 
 [[P-YR75I]]
-## 5 $$
+## 5
 
 [[P-MNWYL]]
 
@@ -21,10 +21,10 @@
 
 
 [[P-OND4D]]
-## 9 $$
+## 9
 [[P-B4WQK]]
 
-## 10 $$
+## 10
 [[P-3W7LA]]
 # Extra
 
@@ -82,10 +82,10 @@
 
 [[P-SXZZW]]
 
-### Entire and $O$ of polynomial implies polynomial $$
+### Entire and $O$ of polynomial implies polynomial
 
 [[P-YYEUK]]
 
-## Uniform sequence implies uniform derivatives $$
+## Uniform sequence implies uniform derivatives
 
 [[P-OFKQJ]]
