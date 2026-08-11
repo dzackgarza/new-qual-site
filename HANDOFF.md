@@ -273,37 +273,24 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 
 ### One action for the owner
 
-**Revoke the leaked PAT.** Classic `ghp_` token, 40 characters. It was the
-`origin` credential in `make-me-a-qual`, `Analysis-Qual-Compendium` and
-`qual-review-and-solutions.broken-pack-preserved` -- the same token in all three,
-confirmed by hashing rather than printing it. All three remotes are now SSH,
-`grep -rl ghp_ */.git/config` returns 0, and `git ls-remote` succeeds over SSH,
-so it is off disk. **It is still live until revoked** at
-github.com/settings/tokens.
+**Revoke the leaked PAT.** Classic `ghp_` token, 40 characters.
+It was the `origin` credential in `make-me-a-qual`, `Analysis-Qual-Compendium` and `qual-review-and-solutions.broken-pack-preserved` -- the same token in all three, confirmed by hashing rather than printing it.
+All three remotes are now SSH, `grep -rl ghp_ */.git/config` returns 0, and `git ls-remote` succeeds over SSH, so it is off disk.
+**It is still live until revoked** at github.com/settings/tokens.
 
-This could not be done for you: GitHub's REST API exposes no endpoint to list or
-delete a user's own personal access tokens, so revocation is browser-only.
-Identify it by last-used date and scopes -- it will show recent use against
-`make-me-a-qual` and `Analysis-Qual-Compendium`. The value itself is no longer
-recoverable: the configs were rewritten to SSH before the token was revoked,
-which removed the only copies. Revoke first, identify by usage, not by value.
+This could not be done for you: GitHub's REST API exposes no endpoint to list or delete a user's own personal access tokens, so revocation is browser-only.
+Identify it by last-used date and scopes -- it will show recent use against `make-me-a-qual` and `Analysis-Qual-Compendium`. The value itself is no longer recoverable: the configs were rewritten to SSH before the token was revoked, which removed the only copies.
+Revoke first, identify by usage, not by value.
 
 ### Standing constraint: do not archive any source repo yet
 
-Not a decision to weigh -- a constraint. **No source repo is archived until its
-content is guaranteed migrated in some measure.** The gate being green is not
-that guarantee on its own: `ledger-totality`, `reason-truth` and
-`migrated-evidence` all report ok, and all five source worktrees are restored,
-but roughly 3,100 cards are still reachable from no page or manifest, so the
-published wiki cannot show what the ledger says was preserved. Issue #11
-additionally requires a fresh-clone replay before archiving.
+Not a decision to weigh -- a constraint.
+**No source repo is archived until its content is guaranteed migrated in some measure.** The gate being green is not that guarantee on its own: `ledger-totality`, `reason-truth` and `migrated-evidence` all report ok, and all five source worktrees are restored, but roughly 3,100 cards are still reachable from no page or manifest, so the published wiki cannot show what the ledger says was preserved.
+Issue #11 additionally requires a fresh-clone replay before archiving.
 
-G7 has since run: orphans are 19, each recorded with why no authored order
-exists for it (17 are cards G3 retired whose files were never removed -- defect
-#31 -- and whose survivors are reachable; the other two have no sitting, no
-occurrence and no ledger row). Reachability is therefore proved, and the
-remaining bar is the fresh-clone replay issue #11 requires. Run that before
-archiving anything.
+G7 has since run: orphans are 19, each recorded with why no authored order exists for it (17 are cards G3 retired whose files were never removed -- defect #31 -- and whose survivors are reachable; the other two have no sitting, no occurrence and no ledger row).
+Reachability is therefore proved, and the remaining bar is the fresh-clone replay issue #11 requires.
+Run that before archiving anything.
 
 ### State of the source repos
 
@@ -335,12 +322,9 @@ Measure before trusting any count in it.
 
 ### Worktrees
 
-Both worktrees under `.claude/worktrees/` are **merged into `main`** and hold no
-unique work. `git branch --merged main` lists `g6-tree-merge` and
-`g7-reachability`. Each can be removed with `git worktree remove
-.claude/worktrees/<name>` followed by deleting the branch.
+Both worktrees under `.claude/worktrees/` are **merged into `main`** and hold no unique work.
+`git branch --merged main` lists `g6-tree-merge` and `g7-reachability`. Each can be removed with `git worktree remove .claude/worktrees/<name>` followed by deleting the branch.
 
-An earlier revision of this file said the G7 worktree held 31 uncommitted files
-that a removal would destroy. That was true when written; G7 subsequently
-finished and committed. Verify with `git status --porcelain` in the worktree
-before removing either, rather than trusting this paragraph.
+An earlier revision of this file said the G7 worktree held 31 uncommitted files that a removal would destroy.
+That was true when written; G7 subsequently finished and committed.
+Verify with `git status --porcelain` in the worktree before removing either, rather than trusting this paragraph.
