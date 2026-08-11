@@ -300,5 +300,3 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     moved_page = read_html(site / "guide" / "GUIDE-ALGEBRA" / "sylow-theory.html")
     moved_targets = {resolved_link(routes[-2], link.attrs["href"]) for link in moved_page.root.find_all("a")}
     assert "tag/P-P2UAH.html" in moved_targets
-
-
