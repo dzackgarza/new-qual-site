@@ -1,6 +1,6 @@
 # Independent cross-repository review
 
-Result: FAIL for the complete-migration gate at target commit `567ab703`.
+Result: FAIL for the complete-migration gate at target commit `9a0f057`.
 
 The independent review checked the five source review records, the full migration ledger, the untracked APKG manifest, the vendored MathQualBot manifest, duplicate and provenance mappings, and the current target paths.
 
