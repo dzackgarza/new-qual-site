@@ -6,7 +6,6 @@ title: "Qual Complex Analysis: Basics"
 
 The `decks/Qual Complex Analysis/Basics.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FF-Y6IOA]]
 
 [[FF-7KQCC]]
@@ -18,4 +17,3 @@ The `decks/Qual Complex Analysis/Basics.md` deck of `math-flashcards`, in the de
 [[FF-2ABHQ]]
 
 [[FF-A7OEY]]
-

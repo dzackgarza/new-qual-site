@@ -6,7 +6,6 @@ title: "Quals: Commutative Algebra"
 
 The `decks/Quals/Commutative Algebra.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FF-CQSNC]]
 
 [[FF-7U6UY]]
@@ -40,4 +39,3 @@ The `decks/Quals/Commutative Algebra.md` deck of `math-flashcards`, in the deck'
 [[FF-UYMWY]]
 
 [[FF-VKYM3]]
-

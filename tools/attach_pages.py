@@ -190,13 +190,7 @@ def workshop_theory(cards: dict[str, dict]) -> dict[str, list[str]]:
     # A workshop problem is already listed on its day's own page, through its
     # occurrence. Only the theory statements, which have no occurrence, need a
     # position here.
-    with_occurrence = {
-        relation["target"]
-        for card in cards.values()
-        if card["kind"] == "occurrence"
-        for relation in card["relations"]
-        if relation["kind"] == "instance-of"
-    }
+    with_occurrence = {relation["target"] for card in cards.values() if card["kind"] == "occurrence" for relation in card["relations"] if relation["kind"] == "instance-of"}
     days: dict[str, list[tuple[tuple[int, ...], str]]] = {}
     for card_id, card in cards.items():
         parts = card_id.split("-")
@@ -271,9 +265,7 @@ EXTRA_PROBLEMS_ROUTE = "wiki/10_Algebra/500_Exercises/9970 Extra Problems.md"
 
 def extra_problems(cards: dict[str, dict]) -> list[dict]:
     rows = [
-        row
-        for row in _rows("authored-md-routing.jsonl")
-        if row["path"] == "Algebra/Review Doc/AlgebraQualNotes.md" and row["verdict"] == "minted" and row["card"] in cards
+        row for row in _rows("authored-md-routing.jsonl") if row["path"] == "Algebra/Review Doc/AlgebraQualNotes.md" and row["verdict"] == "minted" and row["card"] in cards
     ]
     blocks: list[str] = []
     listed: list[str] = []
@@ -294,8 +286,7 @@ def extra_problems(cards: dict[str, dict]) -> list[dict]:
     _write(
         EXTRA_PROBLEMS_ROUTE,
         "Extra Problems",
-        "The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the\n"
-        "chapter's own order and under its own headings.\n",
+        "The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the\nchapter's own order and under its own headings.\n",
         blocks,
     )
     return [
@@ -331,8 +322,7 @@ def hub(emitted: list[dict]) -> list[dict]:
     _write(
         route,
         "Card Archives",
-        "The pages that list the corpus by its source: the sittings and artifacts of each\n"
-        "subject, the flashcard decks, and the review doc's problem chapter.\n",
+        "The pages that list the corpus by its source: the sittings and artifacts of each\nsubject, the flashcard decks, and the review doc's problem chapter.\n",
         blocks,
     )
     return [

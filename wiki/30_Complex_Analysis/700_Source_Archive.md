@@ -4,20 +4,16 @@ title: "Complex Analysis Source Archive"
 
 # Complex Analysis Source Archive
 
-Every recorded sitting and contributed artifact in this subject, by institution and
-then by date. Each entry links to that source's own page, which lists its problems
-in the order they appeared.
-
+Every recorded sitting and contributed artifact in this subject, by institution and then by date.
+Each entry links to that source's own page, which lists its problems in the order they appeared.
 
 ## EMORY
 
 [[SRC-MMAQ-EMORY-CA-UNKNOWN-NA]]
 
-
 ## NUS
 
 [[SRC-MMAQ-NUS-CA-1970-SPRING]]
-
 
 ## UGA
 
@@ -52,7 +48,6 @@ in the order they appeared.
 [[SRC-UGA-CA-FALL-2021]]
 
 [[SRC-MMAQ-UGA-CA-EXTRA-NA]]
-
 
 ## Contributed artifacts
 
@@ -103,4 +98,3 @@ in the order they appeared.
 [[SRC-CA-ART-RBZJEW]]
 
 [[SRC-EMORY-CA-ARANGO]]
-

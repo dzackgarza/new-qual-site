@@ -225,7 +225,7 @@ Landed and pushed through `7bbb7fe` (15 commits, `pytest` 67 green, `uv run qual
 | G8 CI guards | partial | `64f90a1` | `payload.area` guard, CI test job, 4 invariant tests |
 | G10 math-flashcards | done | `1d49862` | 372 cards, fifth source ledgered |
 | G6 subject-tree merge | running | — | isolated worktree |
-| G7 reachability | pending | — | scope grew: +503 +372 +65 new cards, orphans by construction |
+| G7 reachability | done | `e1a4ca6` | 32 pages emitted from recorded order; orphans 3,104 -> 19 documented |
 | G9 source hygiene | running | — | non-destructive scope; archiving and token revocation await user approval |
 
 Corpus: 6,907 -> 7,207 cards.
@@ -256,9 +256,10 @@ reason-truth       ok
 migrated-evidence  ok
 degenerate-titles  1   P-V33RL: title '?'
 duplicate-sittings 10  UGA real-analysis month-vs-term pairs
+orphans            19  17 recorded duplicates + 1 reconstructed problem and its solution
 ```
 
-Both residuals are deliberate and documented, not backlog.
+All three residuals are deliberate and documented, not backlog.
 The 10 sittings need the source to settle: a month label against a semester label for one lossy derived season.
 Two carry positive evidence of being *different* sittings (January/Spring 2014 set different problem 2; January/Spring 2017 different problem 3); `JUNE-2017` vs `MAY-2017` is flagged `unsettled` in `sources/g3-sitting-decisions.jsonl`.
 
@@ -266,8 +267,10 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 
 - **G6 — subject-tree merge.** Branch `g6-tree-merge` in `.claude/worktrees/g6`, 238 files changed, **uncommitted**. `wiki/` still carries both upstream layouts (numbered `10_Algebra…` and named `Algebra…`). Read that worktree before restarting; do not discard it.
 
-- **G7 — reachability.** Not started, and its scope grew: ~940 cards added by this run are reachable from no page or manifest.
-  This is the largest remaining piece and the most editorial — the user's existing reading order is authoritative and is to be transcribed, never improved.
+- **G7 — reachability. Done** (`e1a4ca6`, branch `g7-reachability`). Orphans 3,104 -> 19.
+  `tools/attach_pages.py` emits 32 pages from ledgers and card fields alone: a Source Archive per subject (273 source cards, institution then date), a page per math-flashcards deck (25, in each deck's own card order), the review doc's Extra Problems chapter (180 cards under its own heading path), and one hub page linked from `wiki/index.md`.
+  Routes and their order sources are in `sources/g7-page-attachment.jsonl`; the residual is in `sources/g7-residual.jsonl`.
+  Two things to know before changing it: the orphan closure in `tools/audit.py` now includes the source -> occurrence -> problem edge, because `emit.source_page` renders that listing; and 59 headings lost an empty `$$` left by the import's status-macro discard, which had been swallowing card references into display math (`sources/g7-heading-math-residue.jsonl`).
 
 - **G8 remainder.** Guards still owed for queued->migrated without a card, upstream row count vs occurrence count, and reachability.
 

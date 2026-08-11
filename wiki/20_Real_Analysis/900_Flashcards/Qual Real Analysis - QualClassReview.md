@@ -6,7 +6,6 @@ title: "Qual Real Analysis: QualClassReview"
 
 The `decks/Qual Real Analysis/QualClassReview.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FD-WN55Z]]
 
 [[FT-JQSOK]]
@@ -54,4 +53,3 @@ The `decks/Qual Real Analysis/QualClassReview.md` deck of `math-flashcards`, in 
 [[FD-T7SN6]]
 
 [[FT-JRRRW]]
-

@@ -6,7 +6,6 @@ title: "Qual Complex Analysis: Formulas and Technical Theorems"
 
 The `decks/Qual Complex Analysis/Formulas and Technical Theorems.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FT-ZJQ2T]]
 
 [[FT-REHJT]]
@@ -28,4 +27,3 @@ The `decks/Qual Complex Analysis/Formulas and Technical Theorems.md` deck of `ma
 [[FF-UQZNR]]
 
 [[FF-JKLWM]]
-

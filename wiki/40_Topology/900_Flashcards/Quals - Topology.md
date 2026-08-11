@@ -6,7 +6,6 @@ title: "Quals: Topology"
 
 The `decks/Quals/Topology.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FF-IEHB2]]
 
 [[FF-4DFKT]]
@@ -28,4 +27,3 @@ The `decks/Quals/Topology.md` deck of `math-flashcards`, in the deck's own card 
 [[FF-D2KJJ]]
 
 [[FF-LFY7V]]
-

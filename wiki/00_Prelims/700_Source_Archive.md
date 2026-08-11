@@ -4,10 +4,8 @@ title: "Prelims Source Archive"
 
 # Prelims Source Archive
 
-Every recorded sitting and contributed artifact in this subject, by institution and
-then by date. Each entry links to that source's own page, which lists its problems
-in the order they appeared.
-
+Every recorded sitting and contributed artifact in this subject, by institution and then by date.
+Each entry links to that source's own page, which lists its problems in the order they appeared.
 
 ## UGA
 
@@ -67,8 +65,6 @@ in the order they appeared.
 
 [[SRC-UGA-PRELIM-2019]]
 
-
 ## Contributed artifacts
 
 [[SRC-PRELIM-ART-A2355I]]
-

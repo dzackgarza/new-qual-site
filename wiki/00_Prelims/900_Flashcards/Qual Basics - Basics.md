@@ -6,7 +6,6 @@ title: "Qual Basics: Basics"
 
 The `decks/Qual Basics/Basics.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FF-HK72Z]]
 
 [[FF-ED3CD]]
@@ -18,4 +17,3 @@ The `decks/Qual Basics/Basics.md` deck of `math-flashcards`, in the deck's own c
 [[FF-UC7SQ]]
 
 [[FF-2AKVH]]
-

@@ -6,7 +6,6 @@ title: "Qual Basics: Special Angles"
 
 The `decks/Qual Basics/Special Angles.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FF-ATMHV]]
 
 [[FF-ZQFSR]]
@@ -28,4 +27,3 @@ The `decks/Qual Basics/Special Angles.md` deck of `math-flashcards`, in the deck
 [[FF-XEQFR]]
 
 [[FF-TGHJ5]]
-

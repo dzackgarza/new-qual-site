@@ -6,7 +6,6 @@ title: "Qual Algebra: Rings"
 
 The `decks/Qual Algebra/Rings.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FD-LXZIW]]
 
 [[FT-PUVIQ]]
@@ -30,4 +29,3 @@ The `decks/Qual Algebra/Rings.md` deck of `math-flashcards`, in the deck's own c
 [[FD-GXXBV]]
 
 [[FD-25SUQ]]
-

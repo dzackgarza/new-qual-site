@@ -4,15 +4,12 @@ title: "Real Analysis Source Archive"
 
 # Real Analysis Source Archive
 
-Every recorded sitting and contributed artifact in this subject, by institution and
-then by date. Each entry links to that source's own page, which lists its problems
-in the order they appeared.
-
+Every recorded sitting and contributed artifact in this subject, by institution and then by date.
+Each entry links to that source's own page, which lists its problems in the order they appeared.
 
 ## EMORY
 
 [[SRC-MMAQ-EMORY-RA-UNKNOWN-NA]]
-
 
 ## JHU
 
@@ -42,11 +39,9 @@ in the order they appeared.
 
 [[SRC-JHU-RA-FALL-2019]]
 
-
 ## NUS
 
 [[SRC-MMAQ-NUS-RA-1970-SPRING]]
-
 
 ## TAMU
 
@@ -62,7 +57,6 @@ in the order they appeared.
 
 [[SRC-TAMU-RA-JANUARY-2017]]
 
-
 ## UCLA
 
 [[SRC-UCLA-RA-SPRING-2009]]
@@ -72,7 +66,6 @@ in the order they appeared.
 [[SRC-UCLA-RA-SPRING-2010]]
 
 [[SRC-UCLA-RA-FALL-2010]]
-
 
 ## UGA
 
@@ -172,7 +165,6 @@ in the order they appeared.
 
 [[SRC-UGA-RA-FALL-2021]]
 
-
 ## Contributed artifacts
 
 [[SRC-RA-ART-GHJOJZ]]
@@ -230,4 +222,3 @@ in the order they appeared.
 [[D-RA-WORKSHOP-D7-CONVERGENCE]]
 
 [[SRC-RA-WORKSHOP-D8-MISC]]
-

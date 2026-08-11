@@ -4,10 +4,8 @@ title: "Topology Source Archive"
 
 # Topology Source Archive
 
-Every recorded sitting and contributed artifact in this subject, by institution and
-then by date. Each entry links to that source's own page, which lists its problems
-in the order they appeared.
-
+Every recorded sitting and contributed artifact in this subject, by institution and then by date.
+Each entry links to that source's own page, which lists its problems in the order they appeared.
 
 ## UCSD
 
@@ -16,7 +14,6 @@ in the order they appeared.
 [[SRC-UCSD-TOP-FALL-2014]]
 
 [[SRC-UCSD-TOP-FALL-2017]]
-
 
 ## UGA
 
@@ -83,7 +80,6 @@ in the order they appeared.
 [[SRC-UGA-TOP-SPRING-2021]]
 
 [[SRC-MMAQ-UGA-TOP-UNKNOWN-NA]]
-
 
 ## Contributed artifacts
 
@@ -166,4 +162,3 @@ in the order they appeared.
 [[SRC-TOP-WORKSHOP-D9-HOMOLOGY]]
 
 [[SRC-UCSD-TOP-JUSTIN]]
-

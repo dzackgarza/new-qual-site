@@ -6,7 +6,6 @@ title: "Quals: Real Analysis"
 
 The `decks/Quals/Real Analysis.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FF-IAUQG]]
 
 [[FF-HORGP]]
@@ -66,4 +65,3 @@ The `decks/Quals/Real Analysis.md` deck of `math-flashcards`, in the deck's own 
 [[FF-GNU7E]]
 
 [[FF-FSDJP]]
-

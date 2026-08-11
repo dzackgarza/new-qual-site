@@ -6,7 +6,6 @@ title: "Qual Algebra: QualAlgebraModules"
 
 The `decks/Qual Algebra/QualAlgebraModules.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FE-ISVDM]]
 
 [[FT-BC6S2]]
@@ -42,4 +41,3 @@ The `decks/Qual Algebra/QualAlgebraModules.md` deck of `math-flashcards`, in the
 [[FD-S2W5E]]
 
 [[FE-W56LS]]
-

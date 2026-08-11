@@ -6,7 +6,6 @@ title: "Qual Topology: QualTopology"
 
 The `decks/Qual Topology/QualTopology.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FD-COPFN]]
 
 [[FT-J7RQV]]
@@ -18,4 +17,3 @@ The `decks/Qual Topology/QualTopology.md` deck of `math-flashcards`, in the deck
 [[FD-IV5GM]]
 
 [[FE-BGEZL]]
-

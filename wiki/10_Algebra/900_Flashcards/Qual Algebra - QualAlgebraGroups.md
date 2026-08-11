@@ -6,7 +6,6 @@ title: "Qual Algebra: QualAlgebraGroups"
 
 The `decks/Qual Algebra/QualAlgebraGroups.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FT-ZENUU]]
 
 [[FT-7NMQR]]
@@ -76,4 +75,3 @@ The `decks/Qual Algebra/QualAlgebraGroups.md` deck of `math-flashcards`, in the 
 [[FD-SSR6N]]
 
 [[FD-HRCTL]]
-

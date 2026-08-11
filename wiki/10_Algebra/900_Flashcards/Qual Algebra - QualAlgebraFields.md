@@ -6,7 +6,6 @@ title: "Qual Algebra: QualAlgebraFields"
 
 The `decks/Qual Algebra/QualAlgebraFields.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FD-KWXK3]]
 
 [[FD-TP2IZ]]
@@ -50,4 +49,3 @@ The `decks/Qual Algebra/QualAlgebraFields.md` deck of `math-flashcards`, in the 
 [[FD-JJFZ3]]
 
 [[FD-OUWGL]]
-

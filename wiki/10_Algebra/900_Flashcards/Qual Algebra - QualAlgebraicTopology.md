@@ -6,7 +6,6 @@ title: "Qual Algebra: QualAlgebraicTopology"
 
 The `decks/Qual Algebra/QualAlgebraicTopology.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FF-5LPTQ]]
 
 [[FF-SYCKI]]
@@ -32,4 +31,3 @@ The `decks/Qual Algebra/QualAlgebraicTopology.md` deck of `math-flashcards`, in 
 [[FF-CKGXX]]
 
 [[FD-BDEI2]]
-

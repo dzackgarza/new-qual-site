@@ -6,7 +6,6 @@ title: "Qual Complex Analysis: Definitions"
 
 The `decks/Qual Complex Analysis/Definitions.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FD-C7EQD]]
 
 [[FD-BRJK5]]
@@ -18,4 +17,3 @@ The `decks/Qual Complex Analysis/Definitions.md` deck of `math-flashcards`, in t
 [[FD-VTT7T]]
 
 [[FD-4GI2R]]
-

@@ -6,7 +6,6 @@ title: "Qual Topology: QualPointSetTopology"
 
 The `decks/Qual Topology/QualPointSetTopology.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FD-6SR5I]]
 
 [[FD-7R4QC]]
@@ -54,4 +53,3 @@ The `decks/Qual Topology/QualPointSetTopology.md` deck of `math-flashcards`, in 
 [[FD-PMA24]]
 
 [[FF-VWKGM]]
-

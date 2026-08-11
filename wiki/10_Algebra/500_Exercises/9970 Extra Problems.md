@@ -4,9 +4,7 @@ title: "Extra Problems"
 
 # Extra Problems
 
-The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the
-chapter's own order and under its own headings.
-
+The `Extra Problems` chapter of `Algebra/Review Doc/AlgebraQualNotes.md`, in the chapter's own order and under its own headings.
 
 ## Commutative Algebra
 
@@ -16,9 +14,7 @@ chapter's own order and under its own headings.
 
 [[E-AMD-V76MBREM]]
 
-
 ## Group Theory
-
 
 ### Centralizing and Normalizing
 
@@ -46,7 +42,6 @@ chapter's own order and under its own headings.
 
 [[E-AMD-DQIMPK6W]]
 
-
 ### Primes in Group Theory
 
 [[E-AMD-ZKVM4LO2]]
@@ -68,7 +63,6 @@ chapter's own order and under its own headings.
 [[E-AMD-4ZKQKRLH]]
 
 [[E-AMD-YSTR6E6Y]]
-
 
 ### p-Groups
 
@@ -95,7 +89,6 @@ chapter's own order and under its own headings.
 [[E-AMD-4M4FKNN3]]
 
 [[E-AMD-TM3LMADH]]
-
 
 ### Symmetric Groups
 
@@ -133,7 +126,6 @@ chapter's own order and under its own headings.
 
 [[E-AMD-IBD5SNJO]]
 
-
 ### Alternating Groups
 
 [[E-AMD-GY2JTPQI]]
@@ -144,18 +136,15 @@ chapter's own order and under its own headings.
 
 [[E-AMD-2OEGAZBX]]
 
-
 ### Dihedral Groups
 
 [[E-AMD-DQCYAQBD]]
-
 
 ### Other Groups
 
 [[E-AMD-UXMX7R25]]
 
 [[E-AMD-DI5UYFIZ]]
-
 
 ### Classification
 
@@ -177,7 +166,6 @@ chapter's own order and under its own headings.
 
 [[E-AMD-F4PIWGSE]]
 
-
 ### Group Actions
 
 [[E-AMD-2MV56W7X]]
@@ -187,7 +175,6 @@ chapter's own order and under its own headings.
 [[E-AMD-Y3DIXRGP]]
 
 [[E-AMD-WQANMZED]]
-
 
 ### Series of Groups
 
@@ -219,7 +206,6 @@ chapter's own order and under its own headings.
 
 [[E-AMD-OKQQCRTG]]
 
-
 ### Misc
 
 [[E-AMD-5E2GZSH6]]
@@ -234,7 +220,6 @@ chapter's own order and under its own headings.
 
 [[E-AMD-HT4WUY5D]]
 
-
 ### Nonstandard Topics
 
 [[E-AMD-LUQWX7QK]]
@@ -243,16 +228,13 @@ chapter's own order and under its own headings.
 
 [[E-AMD-JRUQKWKO]]
 
-
 ## Ring Theory
-
 
 ### Basic Structure
 
 [[E-AMD-BKDDOBZG]]
 
 [[E-AMD-JGCVGZJE]]
-
 
 ### Ideals
 
@@ -294,7 +276,6 @@ chapter's own order and under its own headings.
 
 [[E-AMD-BBG6IC7K]]
 
-
 ### Characterizing Certain Ideals
 
 [[E-AMD-HWVXZVE4]]
@@ -313,7 +294,6 @@ chapter's own order and under its own headings.
 
 [[E-AMD-UEHZOJ3K]]
 
-
 ### Misc
 
 [[E-AMD-XG4QLJKL]]
@@ -327,7 +307,6 @@ chapter's own order and under its own headings.
 [[E-AMD-BII4UYJ7]]
 
 [[E-AMD-QRCIRKQ7]]
-
 
 ## Field Theory
 
@@ -373,9 +352,7 @@ chapter's own order and under its own headings.
 
 [[E-AMD-4TXVF5CA]]
 
-
 ## Galois Theory
-
 
 ### Theory
 
@@ -386,7 +363,6 @@ chapter's own order and under its own headings.
 [[E-AMD-CCULHKQJ]]
 
 [[E-AMD-WKWEEJIZ]]
-
 
 ### Computations
 
@@ -414,7 +390,6 @@ chapter's own order and under its own headings.
 
 [[E-AMD-HIFDV6WB]]
 
-
 ## Modules and Linear Algebra
 
 [[E-AMD-FN5JCFZP]]
@@ -438,4 +413,3 @@ chapter's own order and under its own headings.
 [[E-AMD-7YJUIMVH]]
 
 [[E-AMD-4WD576RU]]
-

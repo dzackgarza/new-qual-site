@@ -6,7 +6,6 @@ title: "Qual Complex Analysis: Hyperbolic Formulas"
 
 The `decks/Qual Complex Analysis/Hyperbolic Formulas.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FD-XUGN3]]
 
 [[FF-AGEQ4]]
@@ -24,4 +23,3 @@ The `decks/Qual Complex Analysis/Hyperbolic Formulas.md` deck of `math-flashcard
 [[FF-ENSFJ]]
 
 [[FF-5GLOZ]]
-

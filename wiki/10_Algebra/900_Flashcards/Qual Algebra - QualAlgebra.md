@@ -6,7 +6,6 @@ title: "Qual Algebra: QualAlgebra"
 
 The `decks/Qual Algebra/QualAlgebra.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FD-2UWAQ]]
 
 [[FT-2P5VV]]
@@ -26,4 +25,3 @@ The `decks/Qual Algebra/QualAlgebra.md` deck of `math-flashcards`, in the deck's
 [[FD-3V3ZW]]
 
 [[FD-QPNDA]]
-

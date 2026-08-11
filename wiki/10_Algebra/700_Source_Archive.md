@@ -4,15 +4,12 @@ title: "Algebra Source Archive"
 
 # Algebra Source Archive
 
-Every recorded sitting and contributed artifact in this subject, by institution and
-then by date. Each entry links to that source's own page, which lists its problems
-in the order they appeared.
-
+Every recorded sitting and contributed artifact in this subject, by institution and then by date.
+Each entry links to that source's own page, which lists its problems in the order they appeared.
 
 ## EMORY
 
 [[SRC-MMAQ-EMORY-ALG-UNKNOWN-NA]]
-
 
 ## UGA
 
@@ -56,7 +53,6 @@ in the order they appeared.
 
 [[SRC-UGA-ALG-FALL-2021]]
 
-
 ## UW
 
 [[SRC-MMAQ-UW-ALG-2005-NA]]
@@ -89,7 +85,6 @@ in the order they appeared.
 
 [[SRC-MMAQ-UW-ALG-EXTRA-NA]]
 
-
 ## Contributed artifacts
 
 [[SRC-ALG-ART-25QLUQ]]
@@ -111,4 +106,3 @@ in the order they appeared.
 [[SRC-ALG-ART-ZZB64L]]
 
 [[SRC-UCSD-ALG-200A-HOMEWORK]]
-

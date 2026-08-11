@@ -6,7 +6,6 @@ title: "Qual Real Analysis: QualRealAnalysis"
 
 The `decks/Qual Real Analysis/QualRealAnalysis.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FT-P5UNP]]
 
 [[FT-OGS76]]
@@ -146,4 +145,3 @@ The `decks/Qual Real Analysis/QualRealAnalysis.md` deck of `math-flashcards`, in
 [[FF-EMDBP]]
 
 [[FT-ITKJU]]
-

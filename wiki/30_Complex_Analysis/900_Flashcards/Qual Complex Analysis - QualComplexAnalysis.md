@@ -6,7 +6,6 @@ title: "Qual Complex Analysis: QualComplexAnalysis"
 
 The `decks/Qual Complex Analysis/QualComplexAnalysis.md` deck of `math-flashcards`, in the deck's own card order.
 
-
 [[FT-3ZL25]]
 
 [[FT-B73T5]]
@@ -44,4 +43,3 @@ The `decks/Qual Complex Analysis/QualComplexAnalysis.md` deck of `math-flashcard
 [[FF-HO7RN]]
 
 [[FT-FZERI]]
-
