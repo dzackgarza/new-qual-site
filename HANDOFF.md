@@ -238,86 +238,72 @@ Four of the plan's own claims proved stale against the repo and are corrected in
 
 ## Resume here (2026-08-11, end of the GRUNT-001 run)
 
-`main` = `050954f`, clean, pushed, `origin/main` level. `uv run qualc check` ->
-**7,207 cards and 403 wiki pages OK**. `pytest` 67 green.
+`main` = `050954f`, clean, pushed, `origin/main` level.
+`uv run qualc check` -> **7,207 cards and 403 wiki pages OK**. `pytest` 67 green.
 
 ### Done and durable
 
-G0, G1, G2, G3, G4, G5, G10, and G8's first slice. 11 commits this run
-(`ca289a8..050954f`). Corpus 6,907 -> 7,207: +503 routed authored markdown, +372
-flashcards, +65 recovered from swallowed headings, -628 duplicates collapsed.
+G0, G1, G2, G3, G4, G5, G10, and G8's first slice.
+11 commits this run (`ca289a8..050954f`). Corpus 6,907 -> 7,207: +503 routed authored markdown, +372 flashcards, +65 recovered from swallowed headings, -628 duplicates collapsed.
 
 `uv run python tools/audit.py` final state:
 
-    duplicate-bodies   ok
-    empty-areas        ok
-    ledger-totality    ok
-    reason-truth       ok
-    migrated-evidence  ok
-    degenerate-titles  1   P-V33RL: title '?'
-    duplicate-sittings 10  UGA real-analysis month-vs-term pairs
+```
+duplicate-bodies   ok
+empty-areas        ok
+ledger-totality    ok
+reason-truth       ok
+migrated-evidence  ok
+degenerate-titles  1   P-V33RL: title '?'
+duplicate-sittings 10  UGA real-analysis month-vs-term pairs
+```
 
-Both residuals are deliberate and documented, not backlog. The 10 sittings need the
-source to settle: a month label against a semester label for one lossy derived season.
-Two carry positive evidence of being *different* sittings (January/Spring 2014 set
-different problem 2; January/Spring 2017 different problem 3); `JUNE-2017` vs
-`MAY-2017` is flagged `unsettled` in `sources/g3-sitting-decisions.jsonl`.
+Both residuals are deliberate and documented, not backlog.
+The 10 sittings need the source to settle: a month label against a semester label for one lossy derived season.
+Two carry positive evidence of being *different* sittings (January/Spring 2014 set different problem 2; January/Spring 2017 different problem 3); `JUNE-2017` vs `MAY-2017` is flagged `unsettled` in `sources/g3-sitting-decisions.jsonl`.
 
 ### Not done
 
-- **G6 — subject-tree merge.** Branch `g6-tree-merge` in `.claude/worktrees/g6`,
-  238 files changed, **uncommitted**. `wiki/` still carries both upstream layouts
-  (numbered `10_Algebra…` and named `Algebra…`). Read that worktree before restarting;
-  do not discard it.
-- **G7 — reachability.** Not started, and its scope grew: ~940 cards added by this run
-  are reachable from no page or manifest. This is the largest remaining piece and the
-  most editorial — the user's existing reading order is authoritative and is to be
-  transcribed, never improved.
-- **G8 remainder.** Guards still owed for queued->migrated without a card, upstream row
-  count vs occurrence count, and reachability.
-- **G9 archiving.** Deferred by owner decision: archiving would certify preservation
-  while G7 has not made the preserved material reachable. Issue #11 requires a
-  fresh-clone replay before archiving.
+- **G6 — subject-tree merge.** Branch `g6-tree-merge` in `.claude/worktrees/g6`, 238 files changed, **uncommitted**. `wiki/` still carries both upstream layouts (numbered `10_Algebra…` and named `Algebra…`). Read that worktree before restarting; do not discard it.
+
+- **G7 — reachability.** Not started, and its scope grew: ~940 cards added by this run are reachable from no page or manifest.
+  This is the largest remaining piece and the most editorial — the user's existing reading order is authoritative and is to be transcribed, never improved.
+
+- **G8 remainder.** Guards still owed for queued->migrated without a card, upstream row count vs occurrence count, and reachability.
+
+- **G9 archiving.** Deferred by owner decision: archiving would certify preservation while G7 has not made the preserved material reachable.
+  Issue #11 requires a fresh-clone replay before archiving.
 
 ### One action for the owner
 
-**Revoke the leaked PAT.** Classic `ghp_` token, 40 chars. It was in `make-me-a-qual`,
-`Analysis-Qual-Compendium`, and `qual-review-and-solutions.broken-pack-preserved` --
-the same token in all three. All remotes are now SSH and `grep -rl ghp_ */.git/config`
-returns 0, so it is off disk, but the token itself is still live until revoked at
-github.com/settings/tokens.
+**Revoke the leaked PAT.** Classic `ghp_` token, 40 chars.
+It was in `make-me-a-qual`, `Analysis-Qual-Compendium`, and `qual-review-and-solutions.broken-pack-preserved` -- the same token in all three.
+All remotes are now SSH and `grep -rl ghp_ */.git/config` returns 0, so it is off disk, but the token itself is still live until revoked at github.com/settings/tokens.
 
 ### State of the source repos
 
-All five worktrees restored: `git ls-files -d` = 0 for `qual-wiki` (was 1,255 missing),
-`make-me-a-qual` (8), `Analysis-Qual-Compendium` (1), `math-flashcards`,
-`qual-review-and-solutions`. The last has a working SSH clone with 542 tracked files
-matching its 542 ledger rows.
+All five worktrees restored: `git ls-files -d` = 0 for `qual-wiki` (was 1,255 missing), `make-me-a-qual` (8), `Analysis-Qual-Compendium` (1), `math-flashcards`, `qual-review-and-solutions`. The last has a working SSH clone with 542 tracked files matching its 542 ledger rows.
 
-`qual-review-and-solutions.broken-pack-preserved` is **unrecoverable and preserved**:
-`git index-pack` reaches 34,784 of 35,135 objects then `fatal: early EOF`. The pack is
-truncated. Nothing depends on it.
+`qual-review-and-solutions.broken-pack-preserved` is **unrecoverable and preserved**: `git index-pack` reaches 34,784 of 35,135 objects then `fatal: early EOF`. The pack is truncated.
+Nothing depends on it.
 
 ### Open defects found during this run
 
-- `dzackgarza/new-qual-site#31` — `collapse_duplicates.py` builds its retired->survivor
-  map from `HEAD` but deletes from the working tree, so any pass that edits card bodies
-  then collapses leaves silent dangling references. Cause of both dangling incidents in
-  this run, and because the pre-push gate tests the working tree, each one blocked
-  pushing every other workstream's verified commits.
-- `dzackgarza/flowmark#31` — a footnote definition inside a fenced div raises
-  `'CustomFencedDiv' object has no attribute 'footnotes'`, failing the commit gate for
-  the whole repo and naming no file. Open since 2026-07-24.
-- `dzackgarza/new-qual-site#16` — its premise is contradicted by
-  `tools/migration_ledger.py`; recommended for closure. See the comment on the issue.
+- `dzackgarza/new-qual-site#31` — `collapse_duplicates.py` builds its retired->survivor map from `HEAD` but deletes from the working tree, so any pass that edits card bodies then collapses leaves silent dangling references.
+  Cause of both dangling incidents in this run, and because the pre-push gate tests the working tree, each one blocked pushing every other workstream's verified commits.
+
+- `dzackgarza/flowmark#31` — a footnote definition inside a fenced div raises `'CustomFencedDiv' object has no attribute 'footnotes'`, failing the commit gate for the whole repo and naming no file.
+  Open since 2026-07-24.
+
+- `dzackgarza/new-qual-site#16` — its premise is contradicted by `tools/migration_ledger.py`; recommended for closure.
+  See the comment on the issue.
 
 ### Operational note for whoever runs the next batch
 
-Running several workstreams in one working tree was this run's dominant cost. The commit
-gate formats and scans `git diff --cached`, so any agent's staged violations block every
-agent's commit; two gates cannot hold `.git/index.lock` at once; and the pre-push gate
-tests the working tree, so one agent's in-flight state blocks pushing finished work.
+Running several workstreams in one working tree was this run's dominant cost.
+The commit gate formats and scans `git diff --cached`, so any agent's staged violations block every agent's commit; two gates cannot hold `.git/index.lock` at once; and the pre-push gate tests the working tree, so one agent's in-flight state blocks pushing finished work.
 Use one isolated git worktree per workstream.
 
-Also: the plan's own numbers drift. Four of its factual claims were stale against the
-repo this run (see its Surprises section). Measure before trusting any count in it.
+Also: the plan's own numbers drift.
+Four of its factual claims were stale against the repo this run (see its Surprises section).
+Measure before trusting any count in it.
