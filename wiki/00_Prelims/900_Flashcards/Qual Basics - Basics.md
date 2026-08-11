@@ -10,6 +10,8 @@ The `decks/Qual Basics/Basics.md` deck of `math-flashcards`, in the deck's own c
 
 [[FF-ED3CD]]
 
+[[FF-HAMDC]]
+
 [[FD-JI2RH]]
 
 [[FD-BWVRA]]

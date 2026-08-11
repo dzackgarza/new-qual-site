@@ -43,9 +43,9 @@ In each case, there is a formula
 :::{.proposition title="Polygon Models for Surfaces"}
 Every surface can be obtained as the identification space of a polygon labeled with sides \( \alpha_i, \beta_i, \rho_i \).
 
-![$\Sigma_{3, 3}$](figures/image_2021-04-08-19-40-14.png)?
-![image_2021-04-08-19-40-31](figures/image_2021-04-08-19-40-31.png)
-![image_2021-04-08-19-40-41](figures/image_2021-04-08-19-40-41.png)
+![$\Sigma_{3, 3}$](../../../assets/figures/image_2021-04-08-19-40-14.png)?
+![image_2021-04-08-19-40-31](../../../assets/figures/image_2021-04-08-19-40-31.png)
+![image_2021-04-08-19-40-41](../../../assets/figures/image_2021-04-08-19-40-41.png)
 
 :::
 

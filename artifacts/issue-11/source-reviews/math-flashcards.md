@@ -1,12 +1,9 @@
-# Direct source review record: math-flashcards
+# Independent source review: math-flashcards
 
-This record reports source evidence.
-It is not an independent completion review.
+Result: PASS for the pinned source boundary and known untracked artifacts.
 
-Source revision: `69cecc401981fb2f897a6a3c29feb869d811013c`. Inventory boundary: 153 tracked paths, plus 82 observed untracked APKG files.
+Source revision: `69cecc401981fb2f897a6a3c29feb869d811013c`. Inventory: 153 tracked paths, plus 82 observed untracked APKG files. The source ledger has 85 migrated, 63 generated, 5 dropped, and 0 queued rows.
 
-The ledger has 85 migrated rows, 63 generated rows, 5 dropped rows, and 0 queued rows.
-Every generated APKG row names a permanent target under `assets/ws9/math-flashcards/generated/`. The 82 observed untracked APKG files are listed in `sources/math-flashcards-untracked-artifacts.json` and copied under `assets/ws9/math-flashcards/untracked/`.
+The reviewer checked 68 native tracked files, 63 tracked APKG files, and 82 manifest-listed untracked APKG files. Every direct identity comparison matched. The flashcard ledger has 404 migrated and 92 dropped rows. The drops are 90 exact duplicates, one title duplicate, and one scratch card.
 
-This evidence does not satisfy the plan's independent-review requirement.
-A reviewer who did not perform this migration must inspect all tracked and known untracked artifacts, the deck mappings, and the target copies before this source can pass the closeout gate.
+`FF-HAMDC` is retained at `corpus/flashcards/FF-HAMDC.md`, with its distinct plus-sign formula. The deck page and source ledgers include it.

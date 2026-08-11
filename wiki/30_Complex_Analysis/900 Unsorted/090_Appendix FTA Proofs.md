@@ -24,7 +24,7 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::{.proof title="From Gamelin"}
 
-![](figures/2021-12-10_18-02-14.png)
+![](../../../assets/figures/2021-12-10_18-02-14.png)
 
 :::
 
@@ -61,15 +61,15 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::{.proof title="?"}
 
-![](figures/2021-12-14_16-58-33.png)
+![](../../../assets/figures/2021-12-14_16-58-33.png)
 
 :::
 
 :::{.proof title="from Gamelin"}
 
-![](figures/2021-12-10_19-52-51.png)
+![](../../../assets/figures/2021-12-10_19-52-51.png)
 
-![](figures/2021-12-10_19-52-58.png)
+![](../../../assets/figures/2021-12-10_19-52-58.png)
 
 :::
 

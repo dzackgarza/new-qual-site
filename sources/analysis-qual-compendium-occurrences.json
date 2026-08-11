@@ -63,7 +63,7 @@
     },
     {
       "exam_term": "Fall 2018 #2",
-      "card": "P-OPH7A.md",
+      "card": "P-DWFMA.md",
       "confidence": 1.0
     },
     {
@@ -83,7 +83,7 @@
     },
     {
       "exam_term": "Fall 2018 #6",
-      "card": "P-VYRJF.md",
+      "card": "P-3AREP.md",
       "confidence": 1.0
     },
     {
@@ -98,7 +98,7 @@
     },
     {
       "exam_term": "Spring 2018 #3",
-      "card": "P-ZCE6E.md",
+      "card": "P-OFICU.md",
       "confidence": 1.0
     },
     {
@@ -108,8 +108,8 @@
     },
     {
       "exam_term": "Spring 2018 #5",
-      "card": "P-TNOTE.md",
-      "confidence": 0.75
+      "card": "P-P6D6X.md",
+      "confidence": 1.0
     },
     {
       "exam_term": "Fall 2017 #1",
@@ -183,9 +183,8 @@
     },
     {
       "exam_term": "Fall 2016 (Neil-ish) #3",
-      "card": "P-7QVGF.md",
-      "confidence": null,
-      "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
+      "card": "P-JMOGT.md",
+      "confidence": 1.0
     },
     {
       "exam_term": "Fall 2016 (Neil-ish) #4",
@@ -199,9 +198,8 @@
     },
     {
       "exam_term": "Fall 2016 (Neil-ish) #6",
-      "card": "P-AKPMF.md",
-      "confidence": null,
-      "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
+      "card": "P-K6CAP.md",
+      "confidence": 1.0
     },
     {
       "exam_term": "Spring 2016 (Neil-ish) #1",
@@ -245,12 +243,12 @@
     },
     {
       "exam_term": "Fall 2015 #3",
-      "card": "P-VYRJF.md",
+      "card": "P-SMJE7.md",
       "confidence": 1.0
     },
     {
       "exam_term": "Fall 2015 #4",
-      "card": "P-LG4GL.md",
+      "card": "P-P5TFA.md",
       "confidence": 1.0
     },
     {
@@ -260,7 +258,7 @@
     },
     {
       "exam_term": "Fall 2015 #6",
-      "card": "P-ZZXH3.md",
+      "card": "P-COY2N.md",
       "confidence": 1.0
     },
     {
@@ -295,7 +293,7 @@
     },
     {
       "exam_term": "Fall 2014 #1",
-      "card": "P-XL7MP.md",
+      "card": "P-TUGZG.md",
       "confidence": 1.0
     },
     {
@@ -305,13 +303,12 @@
     },
     {
       "exam_term": "Fall 2014 #3",
-      "card": "P-J745K.md",
-      "confidence": null,
-      "note": "pure-formula problem; presence in corpus verified by direct formula search, card pinned by hand"
+      "card": "P-KH5ZV.md",
+      "confidence": 1.0
     },
     {
       "exam_term": "Fall 2014 #4",
-      "card": "P-XL7MP.md",
+      "card": "P-5SMO5.md",
       "confidence": 1.0
     },
     {
@@ -336,7 +333,7 @@
     },
     {
       "exam_term": "Spring 2014 #3",
-      "card": "P-ZCE6E.md",
+      "card": "P-CWRU6.md",
       "confidence": 1.0
     },
     {
@@ -346,8 +343,8 @@
     },
     {
       "exam_term": "Spring 2014 #5",
-      "card": "P-ZZXH3.md",
-      "confidence": 0.5
+      "card": "P-2HIC2.md",
+      "confidence": 1.0
     }
   ]
 }

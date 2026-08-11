@@ -57,7 +57,7 @@ The major fact that reduces integrals to residues:
 \int_\gamma z^k \dz = \int_0^{2\pi} e^{ik\theta} ie^{i\theta } \dtheta = i\int_0^{2\pi} e^{i(k+1)\theta \dtheta }
 =
 \begin{cases}
-2\pi i & k=-1
+-2\pi i & k=-1
 \\
 0 & \text{else}.
 \end{cases}
@@ -305,13 +305,13 @@ If $z_0$ is an order 1 pole of $f$ and $\gamma_{\eps, \theta}$ is an arc of the 
 \lim_{\eps\to 0} \int_{\gamma_{\eps, \theta}} f(z) \dz  = i\theta \Res_{z = z_0}f(z)
 .\]
 
-![](figures/2021-12-22_05-13-02.png)
+![](../../../assets/figures/2021-12-22_05-13-02.png)
 
 :::
 
 :::{.proof title="?"}
 
-![](figures/2021-12-22_05-13-27.png)
+![](../../../assets/figures/2021-12-22_05-13-27.png)
 
 :::
 

@@ -17,7 +17,7 @@ More generally, if $g: [a,b]\to \RR$ is similarly continuous on $[a, b]$ and dif
 What this means graphically:
 
 
-![](figures/2021-11-09_22-20-24.png)
+![](../../../assets/figures/2021-11-09_22-20-24.png)
 
 :::
 

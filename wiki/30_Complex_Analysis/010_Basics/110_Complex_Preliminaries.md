@@ -528,12 +528,12 @@ What the roots look like:
 
 - $n$ odd:
 
-![](figures/2021-12-12_21-49-07.png)
+![](../../../assets/figures/2021-12-12_21-49-07.png)
 
 - $n$ even: $\theta_0=0$, increment by $2\pi/n$. 
 Always have $\pm 1$.
 
-![](figures/2021-12-12_21-49-23.png)
+![](../../../assets/figures/2021-12-12_21-49-23.png)
 
 :::
 
@@ -569,11 +569,11 @@ What the roots look like:
 
 - $n$ odd: start at $\theta_0 = \pi$, increment by $2\pi/n$.
 
-![](figures/2021-12-12_21-48-14.png)
+![](../../../assets/figures/2021-12-12_21-48-14.png)
 
 - $n$ even: start at $\theta_0 = \pi/n$, increment by $2\pi/n$.
 
-![](figures/2021-12-12_21-48-27.png)
+![](../../../assets/figures/2021-12-12_21-48-27.png)
 
 
 :::

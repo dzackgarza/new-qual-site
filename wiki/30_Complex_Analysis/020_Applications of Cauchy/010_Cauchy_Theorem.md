@@ -3,7 +3,7 @@
 :::{.definition title="Complex Integral"}
 \[
 \int_{\gamma} f d z:=\int_{I} f(\gamma(t)) \gamma^{\prime}(t) \dt
-= \int_\gamma (u+iv)\dx + (-v+iu)\dy
+= \int_\gamma (u+iv)\dx \wedge (-v+iu)\dy
 .\]
 :::
 
@@ -32,12 +32,12 @@ and
 .\]
 :::
 :::{.proof title="?"}
-![image_2021-05-27-16-54-06](figures/image_2021-05-27-16-54-06.png)
+![image_2021-05-27-16-54-06](../../../assets/figures/image_2021-05-27-16-54-06.png)
 
 :::
 :::{.proof title="?"}
-![image_2021-05-27-16-56-39](figures/image_2021-05-27-16-56-39.png)
-![image_2021-05-27-16-56-52](figures/image_2021-05-27-16-56-52.png)
+![image_2021-05-27-16-56-39](../../../assets/figures/image_2021-05-27-16-56-39.png)
+![image_2021-05-27-16-56-52](../../../assets/figures/image_2021-05-27-16-56-52.png)
 :::
 :::{.theorem title="Cauchy's Inequality / Cauchy's Estimate" ref="CauchyInequality"}
 For $z_0 \in D_R(z_0) \subset \Omega$, setting $M \da \sup_{z\in \gamma}\abs{f(z)}$ so $\abs{f(z)}\leq M$ on $\gamma$

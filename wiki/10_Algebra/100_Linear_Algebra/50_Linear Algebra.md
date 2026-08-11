@@ -97,7 +97,7 @@ The coefficients of the characteristic polynomial are elementary symmetric funct
 Consider $f(x) \da x^3-6x^2+12x-8$, then any rational root is in $\ts{\pm 8, \pm 4, \pm 2, \pm 1}$.
 Testing $f(2) = 0$ works, and dividing by $x-2$ yields
 
-![](figures/2021-07-24_18-32-38.png)
+![](../../../assets/figures/2021-07-24_18-32-38.png)
 
 The rest can be factored by inspection:
 \[
@@ -269,7 +269,7 @@ Equivalently, one can select $n-\ell$ diagonal entries and delete the correspond
 
 :::{.example title="?"}
 
-![](figures/2021-07-24_19-48-11.png)
+![](../../../assets/figures/2021-07-24_19-48-11.png)
 
 :::
 

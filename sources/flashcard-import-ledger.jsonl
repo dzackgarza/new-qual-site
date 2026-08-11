@@ -121,7 +121,7 @@
 {"deck": "decks/Qual Algebra/Rings.md", "front": "Definition: Unique Factorization Domain", "kind": "definition", "id": "FD-25SUQ", "disposition": "migrated", "evidence": "corpus/flashcards/FD-25SUQ.md"}
 {"deck": "decks/Qual Basics/Basics.md", "front": "Descartes' Rule of Signs", "kind": "fact", "id": "FF-HK72Z", "disposition": "migrated", "evidence": "corpus/flashcards/FF-HK72Z.md"}
 {"deck": "decks/Qual Basics/Basics.md", "front": "Factor $x^n - a^n$", "kind": "fact", "id": "FF-ED3CD", "disposition": "migrated", "evidence": "corpus/flashcards/FF-ED3CD.md"}
-{"deck": "decks/Qual Basics/Basics.md", "front": "Factor $x^n + a^n$", "kind": "fact", "id": "FF-HAMDC", "disposition": "dropped", "reason": "duplicates flashcard FF-ED3CD (same front and same body, an earlier deck)"}
+{"deck": "decks/Qual Basics/Basics.md", "front": "Factor $x^n + a^n$", "kind": "fact", "id": "FF-HAMDC", "disposition": "migrated", "evidence": "corpus/flashcards/FF-HAMDC.md; direct source-to-target semantic comparison preserves the distinct plus-sign formula"}
 {"deck": "decks/Qual Basics/Basics.md", "front": "Functional characterization of injective functions.", "kind": "definition", "id": "FD-JI2RH", "disposition": "migrated", "evidence": "corpus/flashcards/FD-JI2RH.md"}
 {"deck": "decks/Qual Basics/Basics.md", "front": "Functional characterization of surjective functions.", "kind": "definition", "id": "FD-BWVRA", "disposition": "migrated", "evidence": "corpus/flashcards/FD-BWVRA.md"}
 {"deck": "decks/Qual Basics/Basics.md", "front": "Factor $x^n - y^n$", "kind": "fact", "id": "FF-UC7SQ", "disposition": "migrated", "evidence": "corpus/flashcards/FF-UC7SQ.md"}

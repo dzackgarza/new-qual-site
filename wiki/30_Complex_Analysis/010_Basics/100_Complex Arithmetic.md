@@ -138,7 +138,7 @@ Some computations that come up frequently:
 :::{.fact}
 The inversion $z\to 1/z$ is easiest to understand in polar coordinates, $Re^{i\theta}\mapsto {1\over R}e^{-i\theta}$:
 
-![](figures/2021-12-18_23-32-13.png)
+![](../../../assets/figures/2021-12-18_23-32-13.png)
 
 :::
 

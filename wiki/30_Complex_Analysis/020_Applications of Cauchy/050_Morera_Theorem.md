@@ -75,7 +75,7 @@ Holomorphic implies analytic.
 Taken from Gamelin: the proof is based on Morera's theorem. 
 Idea: break region into nested cubes:
 
-![](figures/2021-12-10_19-47-54.png)
+![](../../../assets/figures/2021-12-10_19-47-54.png)
 
 Let $R$ be a closed rectangle in $D$. We subdivide $R$ into four equal subrectangles. Since the integral of $f(z)$ around $\partial R$ is the sum of the integrals of $f(z)$ around the four subrectangles, there is at least one of the subrectangles, call it $R_{1}$, for which
 \[
