@@ -86,14 +86,14 @@ Three obligations that earlier records carried as outstanding have landed, and r
 - **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
   Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
 
-- **Direct source evidence is current at commit `8346322`, but the plan's review gate is open.** The ledger has 2,285 rows: 1,775 migrated, 142 generated, 368 operational or empty rows dropped, and 0 queued.
+- **Direct source evidence is current at commit `1e8243c`, but the plan's review gate is open.** The ledger has 2,285 rows: 1,775 migrated, 142 generated, 368 operational or empty rows dropped, and 0 queued.
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
   The plan forbids new migration automation, replay tools, checkers, and scripts.
   A ledger or replay cannot prove complete migration.
   Independent reviews pass for QRS, make-me-a-qual, Analysis-Qual-Compendium, and math-flashcards.
   qual-wiki is blocked by seven source image blobs absent from its pinned revision and history.
   MathQualBot source-copy identity passes, but the deleted original repository prevents completeness proof.
-  The independent cross-review remains required.
+  The independent cross-review is recorded and fails on the qual-wiki source-identity blocker.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
@@ -110,12 +110,12 @@ Preserve those edits while resuming the larger wiki work.
 ## Source migration closeout boundary
 
 The closeout work preserves direct source evidence.
-It does not complete the mathematical wiki or prove the plan's independent cross-review gate.
+It does not complete the mathematical wiki or pass the plan's independent cross-review gate.
 
 - `artifacts/issue-11/source-reviews/` contains the current source review records.
   QRS, make-me-a-qual, Analysis-Qual-Compendium, and math-flashcards pass independent review.
   qual-wiki fails the source-identity gate for seven missing pinned source blobs.
-  The cross-repository record remains open pending its independent review.
+  The cross-repository record fails because qual-wiki has seven unavailable source blobs.
 
 - `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in the dirty source clone.
   Their native copies are under `assets/ws9/math-flashcards/untracked/`.
