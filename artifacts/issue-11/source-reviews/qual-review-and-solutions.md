@@ -12,14 +12,14 @@ The authored `Algebra/Review Doc/AlgebraQualNotes.md` is represented by 953 stat
 The four blocks are listed with source line ranges and SHA-1 values in `sources/unrouted-source-blocks.jsonl`; the complete native source is at `assets/ws9/qual-review-and-solutions/native/Algebra/Review Doc/AlgebraQualNotes.md.source`.
 
 The independent review covered all 143 transformed QRS pages and all 1,224 unique linked cards.
-Every linked card exists. Every substantive prose and mathematical line is accounted for.
+Every linked card exists.
+Every substantive prose and mathematical line is accounted for.
 The 20 non-exact card comparisons are only line wrapping or image-path normalization.
 All linked-card image references resolve to existing files.
 The Cauchy equation and residue sign now match their source text.
 The 25 transformed-page figure paths now resolve within this repository.
 
-The source contains status macros: `\\todo` 192, `\\done` 158, and `\\work` 420.
-The derived index pages omit these macros because the page schema has no status field.
+The source contains status macros: `\\todo` 192, `\\done` 158, and `\\work` 420. The derived index pages omit these macros because the page schema has no status field.
 The exact native source copies retain every macro and are permanent versioned targets.
 This is the plan's permitted native-source preservation when a derived page cannot represent source structure.
 The owner accepts this projection disposition; it is not a dropped source item.
