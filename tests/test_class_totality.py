@@ -75,9 +75,19 @@ def test_unmapped_class_fails_the_build(tmp_path: Path) -> None:
 
 
 def test_the_current_corpus_uses_only_mapped_classes(tmp_path: Path) -> None:
-    """The totality check is worth nothing if it is not satisfied today."""
+    """The totality check is worth nothing if it is not satisfied today.
+
+    Exit status alone does not prove that: a check that returned 0 without
+    reading anything would pass it. So this also asserts the count it reports
+    equals the number of cards on disk -- the check must have examined every one
+    of them to have a class to map.
+    """
     result = run_qualc("check", ROOT)
     assert result.returncode == 0, result.stderr
+
+    reported = int(result.stdout.split(" cards", 1)[0].rsplit(" ", 1)[-1])
+    on_disk = len(list((ROOT / "corpus").rglob("*.md")))
+    assert reported == on_disk, f"check reported {reported} cards but {on_disk} are on disk"
 
 
 def test_section_inside_a_non_div_container_is_still_found(tmp_path: Path) -> None:
