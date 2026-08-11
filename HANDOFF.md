@@ -274,11 +274,60 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 - **G9 archiving.** Deferred by owner decision: archiving would certify preservation while G7 has not made the preserved material reachable.
   Issue #11 requires a fresh-clone replay before archiving.
 
-### One action for the owner
+### Decisions awaiting the owner
 
-**Revoke the leaked PAT.** Classic `ghp_` token, 40 chars.
-It was in `make-me-a-qual`, `Analysis-Qual-Compendium`, and `qual-review-and-solutions.broken-pack-preserved` -- the same token in all three.
-All remotes are now SSH and `grep -rl ghp_ */.git/config` returns 0, so it is off disk, but the token itself is still live until revoked at github.com/settings/tokens.
+Each of these is a judgement call this run deliberately did not make. None is
+blocked work; all are choices with consequences.
+
+**1. Revoke the leaked PAT.** Classic `ghp_` token, 40 characters. It was in
+`make-me-a-qual`, `Analysis-Qual-Compendium` and
+`qual-review-and-solutions.broken-pack-preserved` -- the same token in all three,
+confirmed by hashing rather than printing it. All three remotes are now SSH,
+`grep -rl ghp_ */.git/config` returns 0 and `git ls-remote` succeeds over SSH, so
+it is off disk. It is still live until revoked at github.com/settings/tokens.
+Not done here because only the owner can see what else depends on it; revoking
+blind would break unknown callers silently.
+
+**2. Archive the five source repos, or not.** The gate is green
+(`ledger-totality`, `reason-truth`, `migrated-evidence` all ok, all five source
+worktrees restored). Deferred because G7 has not run: ~3,100 cards are reachable
+from no page, so archiving now certifies preservation the published wiki cannot
+show. Issue #11 additionally requires a fresh-clone replay before archiving.
+Reversible on GitHub, but outward-facing.
+
+**3. Keep or abandon the G7 worktree.** See the in-flight worktrees section
+below. If abandoning, extract `sources/g7-heading-math-residue.jsonl` first --
+that finding is independent of reachability.
+
+**4. Three test-suite items identified in audit, deliberately not acted on.**
+The suite was audited against `test-guidelines` and five banned string
+assertions, one dependency-owned test and one strictly-entailed test were
+removed. Three findings remain, each needing a call rather than an obvious fix:
+
+- `test_every_kind_has_a_fixture` asserts every card kind in the `Card` union has
+  a file in `tests/fixtures/kinds`. It tests the test suite's own completeness,
+  not the product. It is a useful lint -- a new kind without a fixture is a real
+  gap -- but it proves no repository behaviour, which is what the guidelines ask
+  of a test. Keep as a lint, move to QC, or delete.
+- `test_every_source_variant_has_a_fixture` asserts the fixture set covers
+  exactly `{university-exam, textbook, contributed-artifact}`. That restates the
+  schema back to itself: it reads the union and compares it to a hardcoded copy.
+  Same call as above.
+- `test_the_current_corpus_uses_only_mapped_classes` runs `qualc check` over the
+  real corpus and asserts exit 0. **A no-op checker returning 0 passes it.** It is
+  discriminating only in combination with `test_unmapped_class_fails_the_build`,
+  which proves check does fail on a bad class. It is also a data assertion --
+  "today's corpus is valid" -- that the commit gate already makes on every
+  commit, and it costs 69s of a 199s suite. Keep for defence in depth, or drop it
+  and rely on the gate.
+
+**5. The suite's remaining cost is one test.** `test_corpus_layout_is_semantically
+_inert` is ~150s of the 199s suite because it builds the real corpus twice: a
+baseline, then again after flattening every card into one directory. Both builds
+are load-bearing -- the second is what proves routes derive from card identity
+rather than source path, which is a plausible emitter bug. The baseline could be
+shared via a session fixture, saving roughly half. Not attempted here because it
+is the project's load-bearing architectural proof and deserves its own change.
 
 ### State of the source repos
 
@@ -310,36 +359,27 @@ Measure before trusting any count in it.
 
 ### In-flight worktrees (read before starting G6 or G7 work)
 
-Two git worktrees exist under `.claude/worktrees/`. Neither is debris; both hold
-real work and neither should be deleted without reading it.
+Two git worktrees exist under `.claude/worktrees/`. Neither is debris; both hold real work and neither should be deleted without reading it.
 
-**`.claude/worktrees/g6` — branch `g6-tree-merge`, clean, already merged.**
-`git branch --merged main` lists it. Its commits are in `main` via the merge
-commit; the worktree is kept only so the branch has a checkout. Safe to remove
-with `git worktree remove .claude/worktrees/g6` once the branch is deleted.
+**`.claude/worktrees/g6` — branch `g6-tree-merge`, clean, already merged.** `git branch --merged main` lists it.
+Its commits are in `main` via the merge commit; the worktree is kept only so the branch has a checkout.
+Safe to remove with `git worktree remove .claude/worktrees/g6` once the branch is deleted.
 
-**`.claude/worktrees/g7` — branch `g7-reachability`, 31 uncommitted files, 0
-commits.** G7 was dispatched, began work, and was stood down mid-pass before it
-committed anything. The work is uncommitted and lives only in that worktree: a
-`git worktree remove` would destroy it. It contains:
+**`.claude/worktrees/g7` — branch `g7-reachability`, 31 uncommitted files, 0 commits.** G7 was dispatched, began work, and was stood down mid-pass before it committed anything.
+The work is uncommitted and lives only in that worktree: a `git worktree remove` would destroy it.
+It contains:
 
-- `sources/g7-page-attachment.jsonl` (32 rows) -- pages created to attach cards,
-  each with a note on whether the page stands alone for a reader.
-- `sources/g7-residual.jsonl` (19 rows) -- cards deliberately *not* attached,
-  each with the reason. These are the honest residual the workstream was told to
-  produce rather than invent an order for.
-- `sources/g7-heading-math-residue.jsonl` (59 rows) -- **a finding no other
-  workstream caught**: page headings carrying empty display-math delimiters, e.g.
-  `## Spring 2020 #5 $$` -> `## Spring 2020 #5`, left when the import discarded
-  the math it was delimiting. This is a real corpus defect and is worth landing
-  on its own even if the rest of G7 is redone.
+- `sources/g7-page-attachment.jsonl` (32 rows) -- pages created to attach cards, each with a note on whether the page stands alone for a reader.
+
+- `sources/g7-residual.jsonl` (19 rows) -- cards deliberately *not* attached, each with the reason.
+  These are the honest residual the workstream was told to produce rather than invent an order for.
+
+- `sources/g7-heading-math-residue.jsonl` (59 rows) -- **a finding no other workstream caught**: page headings carrying empty display-math delimiters, e.g. `## Spring 2020 #5 $$` -> `## Spring 2020 #5`, left when the import discarded the math it was delimiting.
+  This is a real corpus defect and is worth landing on its own even if the rest of G7 is redone.
+
 - `tools/attach_pages.py`, `wiki/000_Card_Archives.md` and other new pages.
 
-To resume G7: work in that worktree, do not restart from `main`. Re-measure the
-orphan count first (`tools/audit.py --only orphans` reported 3,104 of 7,207 when
-G7 was dispatched). The editorial rule stands: transcribe the author's existing
-reading order where it exists, and where it does not, report the cards rather
-than composing one.
+To resume G7: work in that worktree, do not restart from `main`. Re-measure the orphan count first (`tools/audit.py --only orphans` reported 3,104 of 7,207 when G7 was dispatched).
+The editorial rule stands: transcribe the author's existing reading order where it exists, and where it does not, report the cards rather than composing one.
 
-To abandon G7 instead: extract `g7-heading-math-residue.jsonl` and its fixes
-first -- that finding is independent of the reachability work.
+To abandon G7 instead: extract `g7-heading-math-residue.jsonl` and its fixes first -- that finding is independent of the reachability work.
