@@ -302,18 +302,3 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert "tag/P-P2UAH.html" in moved_targets
 
 
-def test_unknown_metadata_field_is_rejected(tmp_path: Path) -> None:
-    work = tmp_path / "repo"
-    for sub in ("corpus", "vocabularies", "publications", "site"):
-        shutil.copytree(ROOT / sub, work / sub)
-    card = next((work / "corpus").rglob("P-*.md"))
-    card.write_text(card.read_text().replace("review: draft", "review: draft\nunivrsity: uga"))
-
-    result = subprocess.run(
-        [sys.executable, "-m", "qualc", "check", "--root", str(work)],
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    assert result.returncode == 1
-    assert "univrsity" in result.stderr

@@ -10,13 +10,10 @@ top-level divs only, so a nested solution rendered fully expanded.
 
 from __future__ import annotations
 
-import shutil
 import sqlite3
-import subprocess
-import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
+from conftest import fixture_repo, run_qualc
 
 NESTED_CARD = """---
 schema: qual/card@1
@@ -42,26 +39,18 @@ of the index congruent to $1$ is $1$ itself, so the subgroup is normal.
 """
 
 
-def build(work: Path) -> sqlite3.Connection:
-    subprocess.run(
-        [sys.executable, "-m", "qualc", "build", "--root", str(work)],
-        check=True,
-        capture_output=True,
-    )
+def build(tmp_path: Path) -> sqlite3.Connection:
+    """The claim under test is about the nested card, so it is the only card that
+    needs to be here. This used to copy and build the whole real corpus -- three
+    times in this file -- to assert something one card proves."""
+    work = fixture_repo(tmp_path, {"nested.md": NESTED_CARD})
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
     return sqlite3.connect(work / "build" / "catalog.sqlite")
 
 
-def fixture_repo(tmp_path: Path) -> Path:
-    work = tmp_path / "repo"
-    for sub in ("corpus", "vocabularies", "publications", "site"):
-        shutil.copytree(ROOT / sub, work / sub)
-    (work / "assets").symlink_to(ROOT / "assets", target_is_directory=True)
-    (work / "corpus" / "nested.md").write_text(NESTED_CARD)
-    return work
-
-
 def test_nested_section_is_indexed(tmp_path: Path) -> None:
-    con = build(fixture_repo(tmp_path))
+    con = build(tmp_path)
     kinds = [k for (k,) in con.execute("select section_kind from sections where card_id = 'S-NEST1'")]
     assert "solution" in kinds, "the enclosing solution should be indexed"
     assert "proof" in kinds, "the proof nested inside it should be indexed too"
@@ -76,13 +65,13 @@ def test_nested_section_is_searchable_as_its_own_kind(tmp_path: Path) -> None:
     so that assertion passes while the bug is present. The discriminating question
     is whether the proof reaches the index as a proof.
     """
-    con = build(fixture_repo(tmp_path))
+    con = build(tmp_path)
     hits = con.execute("select section_kind from search where search match 'Sylow' and card_id = 'S-NEST1'").fetchall()
     assert ("proof",) in hits, "the nested proof must be searchable as a proof"
 
 
 def test_enclosing_section_still_carries_its_own_text(tmp_path: Path) -> None:
     """Recursing must not move the nested text out of its parent, only add a row."""
-    con = build(fixture_repo(tmp_path))
+    con = build(tmp_path)
     (solution_text,) = con.execute("select text from sections where card_id = 'S-NEST1' and section_kind = 'solution'").fetchone()
     assert "follows from Sylow" in solution_text
