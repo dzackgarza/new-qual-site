@@ -1,5 +1,12 @@
 """A pandoc warning while reading a card is a build failure.
 
+The companion claim -- that the real corpus reads clean today -- is not asserted
+here. `qualc check` fails when `parse_cards` returns any error and pandoc
+warnings are recorded as errors (`cli.load` short-circuits at the first
+`if not errors:`), so `test_the_current_corpus_uses_only_mapped_classes`
+already entails it. Asserting it twice cost 175s per suite run and proved
+nothing the other test did not.
+
 `qualc` discarded pandoc's stderr, so a card pandoc had complained about was
 indexed anyway. That is what this guards.
 
@@ -40,7 +47,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from qualc.model import discover, parse_card, parse_cards
+from qualc.model import parse_card, parse_cards
 
 # `\qty{3}` in text mode: correct physics-package usage, wrong package as far as
 # pandoc is concerned, and no corpus card is written this way.
@@ -75,9 +82,8 @@ def test_a_reader_warning_fails_the_build(tmp_path: Path) -> None:
     parsed, errors = parse_cards([before, warning, after])
 
     assert [item.card.id for item in parsed] == ["E-BEFORE", "E-AFTER"]
-    assert len(errors) == 1
-    assert str(warning) in errors[0]
-    assert "WARNING" in errors[0]
+    assert [error.code for error in errors] == ["reader-warning"]
+    assert errors[0].where == str(warning), "the diagnostic must name the file that warned"
 
 
 def test_qty_in_math_is_untouched(tmp_path: Path) -> None:
@@ -86,13 +92,3 @@ def test_qty_in_math_is_untouched(tmp_path: Path) -> None:
     p.write_text(SWALLOWED.replace("\\qty{3}", "$\\qty{3}$").replace("E-SWALLOW", "E-MATH"))
     kinds = [k for k, _ in parse_card(p).sections]
     assert kinds == ["example"], kinds
-
-
-def test_the_real_corpus_reads_without_warnings() -> None:
-    """The gate is worth nothing if the corpus does not pass it."""
-    paths = discover(Path(__file__).resolve().parent.parent / "corpus")
-
-    parsed, errors = parse_cards(paths)
-
-    assert errors == []
-    assert len(parsed) == len(paths)

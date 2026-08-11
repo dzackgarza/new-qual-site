@@ -55,7 +55,9 @@ def test_unregistered_payload_area_is_rejected() -> None:
     vocab = load_vocabularies(ROOT / "vocabularies")
 
     errors = validate([_source_card("not-a-real-area")], vocab)
-    assert any("unknown area 'not-a-real-area'" in error for error in errors), "an unregistered payload.area must be rejected; it was accepted"
+    assert [error.code for error in errors] == ["unknown-area"], (
+        f"an unregistered payload.area must be rejected as unknown-area; got {[e.code for e in errors]}"
+    )
 
     # And the same card with a registered area passes, so the guard is not
     # simply rejecting every source card.

@@ -13,25 +13,23 @@ The real corpus is still the right input for two claims, and those keep it:
 `test_the_current_corpus_uses_only_mapped_classes` (the totality check is worth
 nothing if today's corpus does not satisfy it) and
 `test_corpus_layout_is_semantically_inert` (the architectural claim is about this
-corpus's layout). `real_corpus_catalog` builds it once per session so they share
-one build instead of paying for one each.
+corpus's layout). Those two are ~85% of the suite's runtime; sharing their builds
+is the next real saving and needs its own change.
 """
 
 from __future__ import annotations
 
+import json
 import shutil
 import subprocess
 import sys
-from collections.abc import Iterator
 from pathlib import Path
-
-import pytest
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURE_CORPUS = Path(__file__).resolve().parent / "fixtures" / "kinds"
 
 
-def fixture_repo(tmp_path: Path, cards: dict[str, str]) -> Path:
+def fixture_repo(tmp_path: Path, cards: dict[str, str] | None = None) -> Path:
     """A minimal valid repo: the kind fixtures plus whatever `cards` adds.
 
     No manifests -- the real ones name cards from the real corpus, and a
@@ -42,30 +40,27 @@ def fixture_repo(tmp_path: Path, cards: dict[str, str]) -> Path:
         shutil.copytree(ROOT / sub, work / sub)
     shutil.copytree(FIXTURE_CORPUS, work / "corpus")
     (work / "publications").mkdir()
-    for name, text in cards.items():
+    for name, text in (cards or {}).items():
         (work / "corpus" / name).write_text(text)
     return work
 
 
-def run_qualc(command: str, root: Path) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        [sys.executable, "-m", "qualc", command, "--root", str(root)],
-        capture_output=True,
-        text=True,
-    )
+def run_qualc(command: str, root: Path, *, as_json: bool = False) -> subprocess.CompletedProcess[str]:
+    argv = [sys.executable, "-m", "qualc", command, "--root", str(root)]
+    if as_json:
+        argv.append("--json")
+    return subprocess.run(argv, capture_output=True, text=True)
 
 
-@pytest.fixture(scope="session")
-def real_corpus_catalog(tmp_path_factory: pytest.TempPathFactory) -> Iterator[Path]:
-    """One build of the real corpus, shared by every test that needs it.
+def diagnostic_codes(root: Path) -> list[str]:
+    """The codes `qualc check` reports, through the real CLI boundary.
 
-    Read-only: a test that mutates the tree must build its own, because the
-    mutation is what it is testing.
+    Tests assert on these rather than on stderr wording: a code is the
+    diagnostic's identity, the message is presentation. Substring matching on
+    the message passes when it is reworded and passes when an unrelated
+    diagnostic happens to share a word.
     """
-    work = tmp_path_factory.mktemp("real-corpus") / "repo"
-    for sub in ("corpus", "vocabularies", "publications", "site"):
-        shutil.copytree(ROOT / sub, work / sub)
-    (work / "assets").symlink_to(ROOT / "assets", target_is_directory=True)
-    result = run_qualc("build", work)
-    assert result.returncode == 0, result.stderr
-    yield work / "build" / "catalog.sqlite"
+    result = run_qualc("check", root, as_json=True)
+    if result.returncode == 0:
+        return []
+    return [entry["code"] for entry in json.loads(result.stderr)]

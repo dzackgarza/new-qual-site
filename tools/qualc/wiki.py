@@ -19,6 +19,7 @@ from urllib.parse import unquote, urlsplit
 import panflute as pf
 import yaml
 
+from .diagnostics import Diagnostic
 from .model import MARKDOWN, from_ast
 from .pandoc_batch import PandocFailure, PandocServer
 from .static_site import AssetCatalog, _asset_source
@@ -78,7 +79,7 @@ def _without_first_title(document: pf.Doc) -> list[pf.Block]:
     return blocks
 
 
-def parse_pages(pandoc: PandocServer, root: Path) -> tuple[list[WikiPage], list[str]]:
+def parse_pages(pandoc: PandocServer, root: Path) -> tuple[list[WikiPage], list[Diagnostic]]:
     """Parse all source pages through the same Pandoc dialect as cards.
 
     Wiki pages can be much larger than cards, so requests are intentionally kept
@@ -87,13 +88,13 @@ def parse_pages(pandoc: PandocServer, root: Path) -> tuple[list[WikiPage], list[
 
     paths = discover(root)
     prepared: list[tuple[Path, Path, dict[str, object], str]] = []
-    errors: list[str] = []
+    errors: list[Diagnostic] = []
     for path in paths:
         try:
             metadata, body = _split_front_matter(path.read_text(), path)
             prepared.append((path, path.relative_to(root), metadata, body))
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
-            errors.append(f"{path}: {exc}")
+            errors.append(Diagnostic("card-unreadable", str(path), str(exc)))
 
     parsed: list[WikiPage] = []
     for offset in range(0, len(prepared), WIKI_BATCH_SIZE):
@@ -101,11 +102,11 @@ def parse_pages(pandoc: PandocServer, root: Path) -> tuple[list[WikiPage], list[
         results = pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN)
         for (path, source_rel, metadata, _), result in zip(batch, results, strict=True):
             if isinstance(result, PandocFailure):
-                errors.append(f"{path}: {result.error}")
+                errors.append(Diagnostic("card-unreadable", str(path), result.error))
                 continue
             warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
             if warnings:
-                errors.append(f"{path}: WARNING: {'; '.join(warnings)}")
+                errors.append(Diagnostic("reader-warning", str(path), "; ".join(warnings)))
                 continue
             document = from_ast(result.output)
             parsed.append(
@@ -119,6 +120,18 @@ def parse_pages(pandoc: PandocServer, root: Path) -> tuple[list[WikiPage], list[
                 )
             )
     return parsed, errors
+
+
+class MissingPageReference(ValueError):
+    def __init__(self, raw: str) -> None:
+        self.raw = raw
+        super().__init__(f"missing wiki page reference: {raw}")
+
+
+class AmbiguousPageReference(ValueError):
+    def __init__(self, raw: str) -> None:
+        self.raw = raw
+        super().__init__(f"ambiguous wiki page reference: {raw}")
 
 
 def _normal_key(value: str) -> str:
@@ -187,7 +200,7 @@ def _page_target(
     if len(matches) == 1:
         return matches[0]
     if len(matches) > 1:
-        raise ValueError(f"ambiguous wiki page reference: {raw}")
+        raise AmbiguousPageReference(raw)
     normalized_matches: list[WikiPage] = []
     for candidate in exact_candidates:
         key = _normalized_path(candidate)
@@ -198,7 +211,7 @@ def _page_target(
     if len(normalized_matches) == 1:
         return normalized_matches[0]
     if len(normalized_matches) > 1:
-        raise ValueError(f"ambiguous wiki page reference: {raw}")
+        raise AmbiguousPageReference(raw)
     stem = Path(key).stem
     candidates: list[WikiPage] = []
     for stem_key in (stem, stem.lower()):
@@ -211,8 +224,8 @@ def _page_target(
     if len(unique) == 1:
         return unique[0]
     if len(unique) > 1:
-        raise ValueError(f"ambiguous wiki page reference: {raw}")
-    raise ValueError(f"missing wiki page reference: {raw}")
+        raise AmbiguousPageReference(raw)
+    raise MissingPageReference(raw)
 
 
 def _asset_target(raw: str, assets: AssetCatalog) -> Path:
@@ -253,11 +266,11 @@ def resolve_links(
     pages: list[WikiPage],
     card_routes: dict[str, Path],
     assets: AssetCatalog,
-) -> list[str]:
+) -> list[Diagnostic]:
     """Resolve every local page/card/asset link in-place; return failures."""
 
     by_key, by_normalized, by_stem = _page_indexes(pages)
-    errors: list[str] = []
+    errors: list[Diagnostic] = []
 
     def visit(page: WikiPage, element: pf.Element) -> pf.Element:
         if isinstance(element, pf.Link) or isinstance(element, IMAGE_ELEMENT):
@@ -280,8 +293,12 @@ def resolve_links(
                     )
                 else:
                     setattr(element, "url", target)
+            except MissingPageReference as exc:
+                errors.append(Diagnostic("page-reference-missing", str(page.source_path), str(exc)))
+            except AmbiguousPageReference as exc:
+                errors.append(Diagnostic("page-reference-ambiguous", str(page.source_path), str(exc)))
             except (OSError, ValueError) as exc:
-                errors.append(f"{page.source_path}: {exc}")
+                errors.append(Diagnostic("asset-unresolved", str(page.source_path), str(exc)))
         if hasattr(element, "content"):
             element.content = [visit(page, child) if isinstance(child, pf.Element) else child for child in element.content]
         return element

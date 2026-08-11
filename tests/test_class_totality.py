@@ -15,7 +15,7 @@ from __future__ import annotations
 import sqlite3
 from pathlib import Path
 
-from conftest import ROOT, fixture_repo, run_qualc
+from conftest import ROOT, diagnostic_codes, fixture_repo, run_qualc
 
 CARD = """---
 schema: qual/card@1
@@ -58,9 +58,20 @@ The argument is quoted from the original sheet.
 
 
 def test_unmapped_class_fails_the_build(tmp_path: Path) -> None:
-    result = run_qualc("check", fixture_repo(tmp_path, {"typo.md": CARD}))
-    assert result.returncode != 0, "an unmapped div class must not pass check"
-    assert "definitoin" in result.stderr, "the diagnostic must name the offending class"
+    """A typo'd fence and a genuinely new environment are indistinguishable to
+    the compiler, so both must stop the build rather than become silent prose.
+
+    The assertion is on the diagnostic's code, not its wording: a message can be
+    reworded without changing behaviour, and a substring can match a diagnostic
+    that fired for an unrelated reason."""
+    work = fixture_repo(tmp_path, {"typo.md": CARD})
+    assert diagnostic_codes(work) == ["unmapped-div-class"]
+
+    # And the card is genuinely absent downstream, not merely complained about:
+    # a build that reported the error and indexed the card anyway would pass an
+    # exit-status-only assertion.
+    assert run_qualc("build", work).returncode != 0
+    assert not (work / "build" / "catalog.sqlite").exists()
 
 
 def test_the_current_corpus_uses_only_mapped_classes(tmp_path: Path) -> None:

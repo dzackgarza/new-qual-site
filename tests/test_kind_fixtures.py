@@ -8,10 +8,11 @@ Each is a real, small, correct statement all the same -- a fixture that says
 
 from __future__ import annotations
 
-import shutil
 import subprocess
 import sys
 from pathlib import Path
+
+from conftest import diagnostic_codes, fixture_repo
 from typing import get_args, get_type_hints
 
 import pytest
@@ -31,15 +32,6 @@ def card_kinds() -> set[str]:
     return {get_args(get_type_hints(variant)["kind"])[0] for variant in get_args(union)}
 
 
-def fixture_repo(tmp_path: Path) -> Path:
-    work = tmp_path / "repo"
-    for sub in ("vocabularies", "site"):
-        shutil.copytree(ROOT / sub, work / sub)
-    shutil.copytree(FIXTURES, work / "corpus")
-    # No manifests: the real ones name cards from the real corpus, and a guide
-    # is a publication decision, not part of what a card kind must support.
-    (work / "publications").mkdir()
-    return work
 
 
 def test_every_kind_has_a_fixture() -> None:
@@ -76,14 +68,7 @@ def test_unknown_textbook_is_rejected(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     card = work / "corpus" / "SRC-DUMMIT.md"
     card.write_text(card.read_text().replace("dummit-foote", "dumit-foot"))
-    result = subprocess.run(
-        [sys.executable, "-m", "qualc", "check", "--root", str(work)],
-        capture_output=True,
-        text=True,
-        check=False,
-    )
-    assert result.returncode != 0
-    assert "unknown textbook" in result.stderr
+    assert diagnostic_codes(work) == ["unknown-textbook"]
 
 
 def test_every_card_reaches_a_page(tmp_path: Path) -> None:

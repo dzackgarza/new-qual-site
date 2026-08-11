@@ -8,6 +8,7 @@ import sys
 from pathlib import Path
 
 from . import emit, index
+from .diagnostics import Diagnostic
 from .model import ParsedCard, discover, parse_cards_with
 from .pandoc_batch import PandocServer
 from .static_site import build_asset_catalog
@@ -17,7 +18,7 @@ from .wiki import WikiPage, parse_pages, resolve_links
 def load(
     root: Path,
     pandoc: PandocServer,
-) -> tuple[list[ParsedCard], list[WikiPage], list[str]]:
+) -> tuple[list[ParsedCard], list[WikiPage], list[Diagnostic]]:
     parsed, errors = parse_cards_with(
         pandoc,
         discover(root / "corpus"),
@@ -47,14 +48,20 @@ def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="qualc")
     ap.add_argument("command", choices=["check", "build"])
     ap.add_argument("--root", type=Path, default=Path.cwd())
+    # Diagnostics carry a stable `code`; `--json` exposes it so a caller can
+    # assert which check failed instead of grepping the human wording.
+    ap.add_argument("--json", action="store_true", help="emit diagnostics as JSON on stderr")
     args = ap.parse_args(argv)
 
     with PandocServer() as pandoc:
         parsed, wiki_pages, errors = load(args.root, pandoc)
         if errors:
-            print(f"{len(errors)} error(s):", file=sys.stderr)
-            for error in errors:
-                print(f"  {error}", file=sys.stderr)
+            if args.json:
+                print(json.dumps([error.as_dict() for error in errors]), file=sys.stderr)
+            else:
+                print(f"{len(errors)} error(s):", file=sys.stderr)
+                for error in errors:
+                    print(f"  {error}", file=sys.stderr)
             return 1
         print(f"{len(parsed)} cards and {len(wiki_pages)} wiki pages OK")
         if args.command == "check":

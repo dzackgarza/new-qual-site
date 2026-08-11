@@ -8,6 +8,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from conftest import diagnostic_codes
+
 import pytest
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -63,24 +65,28 @@ def test_build_emits_every_authored_page_and_resolves_real_links(tmp_path: Path)
 
 
 @pytest.mark.parametrize(
-    ("pages", "needle"),
+    ("pages", "code"),
     [
-        ({"index.md": "# Root\n\n[[does-not-exist]]\n"}, "missing wiki page reference"),
+        ({"index.md": "# Root\n\n[[does-not-exist]]\n"}, "page-reference-missing"),
         (
             {
                 "index.md": "# Root\n\n[[same]]\n",
                 "a/same.md": "# A\n",
                 "b/same.md": "# B\n",
             },
-            "ambiguous wiki page reference",
+            "page-reference-ambiguous",
         ),
     ],
 )
 def test_check_rejects_missing_or_ambiguous_page_references(
     tmp_path: Path,
     pages: dict[str, str],
-    needle: str,
+    code: str,
 ) -> None:
+    """A reference that resolves to nothing, and one that resolves to two pages,
+    are different failures and must stay distinguishable. Asserting the code
+    rather than the wording is what keeps them apart -- both messages contain
+    "wiki page reference"."""
     work = fixture_repo(tmp_path)
     wiki = work / "wiki"
     for path in wiki.rglob("*.md"):
@@ -90,7 +96,4 @@ def test_check_rejects_missing_or_ambiguous_page_references(
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(text)
 
-    result = run("check", work)
-    assert result.returncode != 0
-    assert "wiki/" in result.stderr
-    assert needle in result.stderr
+    assert diagnostic_codes(work) == [code]

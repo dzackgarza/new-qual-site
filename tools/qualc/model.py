@@ -16,6 +16,7 @@ import panflute as pf
 import yaml
 from pydantic import BaseModel, ConfigDict, Field, TypeAdapter
 
+from .diagnostics import Diagnostic
 from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer
 
 
@@ -393,6 +394,15 @@ def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     return meta, body
 
 
+class UnmappedDivClass(ValueError):
+    """A fenced-div class with no card kind. Carries the classes so the caller
+    can emit a typed diagnostic rather than re-parsing its own message."""
+
+    def __init__(self, classes: list[str]) -> None:
+        self.classes = classes
+        super().__init__(f"unmapped fenced-div class(es): {', '.join(classes)}")
+
+
 def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     """Collect semantic sections wherever they appear, including nested ones.
 
@@ -427,24 +437,24 @@ def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     for block in doc.content:
         walk(block)
     if unknown:
-        raise ValueError(f"unmapped fenced-div class(es): {', '.join(sorted(set(unknown)))}")
+        raise UnmappedDivClass(sorted(set(unknown)))
     return found
 
 
 def parse_cards_with(
     pandoc: PandocServer,
     paths: list[Path],
-) -> tuple[list[ParsedCard], list[str]]:
+) -> tuple[list[ParsedCard], list[Diagnostic]]:
     adapter: TypeAdapter[Card] = TypeAdapter(Card)
     prepared: list[tuple[Path, Card, str]] = []
-    errors: list[str] = []
+    errors: list[Diagnostic] = []
     for path in paths:
         try:
             meta, body = split_front_matter(path.read_text(), path)
             card: Card = adapter.validate_python(meta)
             prepared.append((path, card, body))
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
-            errors.append(f"{path}: {exc}")
+            errors.append(Diagnostic("card-unreadable", str(path), str(exc)))
 
     results = pandoc.read_markdown(
         [body for _, _, body in prepared],
@@ -453,11 +463,11 @@ def parse_cards_with(
     parsed: list[ParsedCard] = []
     for (path, card, _), result in zip(prepared, results, strict=True):
         if isinstance(result, PandocFailure):
-            errors.append(f"{path}: {result.error}")
+            errors.append(Diagnostic("card-unreadable", str(path), result.error))
             continue
         warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
         if warnings:
-            errors.append(f"{path}: WARNING: {'; '.join(warnings)}")
+            errors.append(Diagnostic("reader-warning", str(path), "; ".join(warnings)))
             continue
         try:
             parsed.append(
@@ -468,12 +478,14 @@ def parse_cards_with(
                     sections=extract_sections(from_ast(result.output)),
                 )
             )
+        except UnmappedDivClass as exc:
+            errors.append(Diagnostic("unmapped-div-class", str(path), str(exc)))
         except (TypeError, ValueError) as exc:
-            errors.append(f"{path}: {exc}")
+            errors.append(Diagnostic("card-unreadable", str(path), str(exc)))
     return parsed, errors
 
 
-def parse_cards(paths: list[Path]) -> tuple[list[ParsedCard], list[str]]:
+def parse_cards(paths: list[Path]) -> tuple[list[ParsedCard], list[Diagnostic]]:
     with PandocServer() as pandoc:
         return parse_cards_with(pandoc, paths)
 
