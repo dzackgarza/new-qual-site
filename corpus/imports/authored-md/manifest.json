@@ -319,7 +319,11 @@
   "Questions/Archive/Emory/main.md": {
     "exact": 26,
     "macro-twin": 10,
-    "minted": ["P-AMD-OOYYQNH5", "O-AMD-00160", "SRC-EMORY-CA-ARANGO"],
+    "minted": [
+      "P-AMD-OOYYQNH5",
+      "O-AMD-00160",
+      "SRC-EMORY-CA-ARANGO"
+    ],
     "statements": 37
   },
   "Questions/Complex_Analysis/UGA/AllQuestions.md": {
@@ -350,7 +354,10 @@
   "Questions/Real_Analysis/UGA/sections/2014 Spring.md": {
     "exact": 4,
     "macro-twin": 0,
-    "minted": ["P-AMD-QXTWGZUS", "O-AMD-00012"],
+    "minted": [
+      "P-AMD-QXTWGZUS",
+      "O-AMD-00012"
+    ],
     "statements": 5
   },
   "Questions/Real_Analysis/UGA/sections/2015 Fall.md": {
@@ -392,7 +399,10 @@
   "Questions/Real_Analysis/UGA/sections/2018 Fall.md": {
     "exact": 5,
     "macro-twin": 0,
-    "minted": ["P-AMD-WPHD7G63", "O-AMD-00013"],
+    "minted": [
+      "P-AMD-WPHD7G63",
+      "O-AMD-00013"
+    ],
     "statements": 6
   },
   "Questions/Real_Analysis/UGA/sections/2018 Spring.md": {
@@ -404,19 +414,44 @@
   "Questions/Real_Analysis/UGA/sections/2019 Fall.md": {
     "exact": 2,
     "macro-twin": 0,
-    "minted": ["P-AMD-JQWDPMM2", "O-AMD-00018", "P-AMD-CTH7TM34", "O-AMD-00019", "P-AMD-WFUONDWI", "O-AMD-00020"],
+    "minted": [
+      "P-AMD-JQWDPMM2",
+      "O-AMD-00018",
+      "P-AMD-CTH7TM34",
+      "O-AMD-00019",
+      "P-AMD-WFUONDWI",
+      "O-AMD-00020"
+    ],
     "statements": 5
   },
   "Questions/Real_Analysis/UGA/sections/2019 Spring.md": {
     "exact": 1,
     "macro-twin": 0,
-    "minted": ["P-AMD-WEXTRZWM", "O-AMD-00014", "P-AMD-DIHC4KCK", "O-AMD-00015", "P-AMD-D6DVS2T4", "O-AMD-00016", "P-AMD-RBVZKRUS", "O-AMD-00017"],
+    "minted": [
+      "P-AMD-WEXTRZWM",
+      "O-AMD-00014",
+      "P-AMD-DIHC4KCK",
+      "O-AMD-00015",
+      "P-AMD-D6DVS2T4",
+      "O-AMD-00016",
+      "P-AMD-RBVZKRUS",
+      "O-AMD-00017"
+    ],
     "statements": 5
   },
   "Questions/Topology/UCSD/Fall 2017 Final.md": {
     "exact": 2,
     "macro-twin": 0,
-    "minted": ["P-AMD-2QRPHB25", "O-AMD-00008", "P-AMD-NC5HCXU6", "O-AMD-00009", "P-AMD-SYO3GZHS", "O-AMD-00010", "P-AMD-3MWMRPVS", "O-AMD-00011"],
+    "minted": [
+      "P-AMD-2QRPHB25",
+      "O-AMD-00008",
+      "P-AMD-NC5HCXU6",
+      "O-AMD-00009",
+      "P-AMD-SYO3GZHS",
+      "O-AMD-00010",
+      "P-AMD-3MWMRPVS",
+      "O-AMD-00011"
+    ],
     "statements": 6
   },
   "Questions/Topology/UCSD/Justin's Problems.md": {
@@ -485,12 +520,8 @@
       "O-AMD-00108",
       "P-AMD-VH5QRTV2",
       "O-AMD-00109",
-      "P-AMD-DH2J3BJG",
-      "O-AMD-00110",
       "P-AMD-CM4OPBUE",
       "O-AMD-00111",
-      "P-AMD-GMSJJZSO",
-      "O-AMD-00112",
       "P-AMD-RNUQZAEI",
       "O-AMD-00113",
       "P-AMD-A6MEOFBL",
@@ -592,7 +623,10 @@
   "Questions/Topology/UGA/MikeProblems.md": {
     "exact": 159,
     "macro-twin": 0,
-    "minted": ["P-AMD-GSAD4GX2", "O-AMD-00007"],
+    "minted": [
+      "P-AMD-GSAD4GX2",
+      "O-AMD-00007"
+    ],
     "statements": 160
   }
 }
