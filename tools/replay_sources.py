@@ -168,9 +168,7 @@ def _verify_authored_page(root: Path, row: LedgerRow) -> None:
     references = re.findall(r"\[\[([A-Z]-[A-Z0-9]+)\]\]", target.read_text())
     expected = int(match.group(2))
     if len(references) < expected:
-        raise RuntimeError(
-            f"{row['repo']}:{row['path']}: target has {len(references)} card links, expected at least {expected}"
-        )
+        raise RuntimeError(f"{row['repo']}:{row['path']}: target has {len(references)} card links, expected at least {expected}")
 
 
 def _flashcard_rows(root: Path, deck: str) -> list[dict[str, str]]:
@@ -284,9 +282,7 @@ def replay(root: Path, clone_root: Path | None, candidate_path: Path | None) -> 
     try:
         if not clones:
             clones = {revision.name: _clone(revision, working_root) for revision in revisions}
-            (working_root / ".qualc-replay.json").write_text(
-                json.dumps({revision.name: revision.commit for revision in revisions}, sort_keys=True) + "\n"
-            )
+            (working_root / ".qualc-replay.json").write_text(json.dumps({revision.name: revision.commit for revision in revisions}, sort_keys=True) + "\n")
         tracked_by_repo = {name: _tracked(clone) for name, clone in clones.items()}
         problems = compare_ledger_rows(rows, tracked_by_repo)
         if problems:
