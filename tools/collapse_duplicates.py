@@ -27,9 +27,14 @@ a reader needs.
 
 `sources/g3-collapse-map.jsonl` is the retirement record, and it is re-derived
 from `HEAD` on every run rather than accumulated: it names every card id `HEAD`
-held that the tree no longer does, against the card that now carries its body. A
-retired id with no surviving body would be a loss, not a collapse, and the run
-reports it by name.
+held that the tree no longer does, against the card that now carries its body.
+This run's own plan names the survivor for the cards it retires, because the
+`HEAD` body of a card a pass edited before collapsing matches nothing on disk.
+
+The run exits non-zero, naming the ids and the files, if any retired id has no
+survivor or is still referenced when it finishes. A retired id with no surviving
+body is a loss, not a collapse, and an unrepointed reference is what the
+pre-push gate would find later, after it has blocked every other workstream.
 """
 
 from __future__ import annotations
@@ -77,7 +82,14 @@ def read_cards() -> dict[str, tuple[Path, dict, str]]:
 
 
 def plan_collapse(cards: dict[str, tuple[Path, dict, str]]) -> dict[str, str]:
-    """Retired id -> survivor id, for every group of loose-equal bodies."""
+    """Retired id -> survivor id, for every group of loose-equal bodies.
+
+    `BODYLESS_KINDS` is load-bearing here, not a tidy-up. An occurrence card
+    carries the body of the problem it instantiates -- that is what the
+    occurrence layer is -- so an `O-*` card and its `P-*` card are loose-equal
+    by design and are not duplicates. Collapsing on shared body alone would
+    retire the whole occurrence layer.
+    """
     groups: dict[str, list[str]] = {}
     for card_id, (_, meta, text) in cards.items():
         if meta["kind"] in BODYLESS_KINDS:
@@ -161,18 +173,33 @@ def rewrite_payload_sources(cards: dict[str, tuple[Path, dict, str]], alias: dic
 UNREPOINTED = {"sources/mmaq-reconciliation.jsonl", "sources/g3-collapse-map.jsonl"}
 
 
+def _id_pattern(ids: set[str] | dict[str, str]) -> re.Pattern[str]:
+    return re.compile(r"\b(" + "|".join(sorted(map(re.escape, ids), key=len, reverse=True)) + r")\b")
+
+
+def _resolved_targets() -> list[Path]:
+    """The pages and manifests whose card ids `qualc check` resolves.
+
+    A sidecar ledger is not here. `sources/g5-collapse-repoint.jsonl` and
+    `sources/g7-residual.jsonl` name retired ids on purpose, as the record of
+    what was retired and why, and the compiler never resolves them.
+    """
+    return [*sorted((ROOT / "wiki").rglob("*.md")), *sorted((ROOT / "publications").glob("*.yaml"))]
+
+
+def _reference_targets() -> list[Path]:
+    """Every page, manifest and sidecar ledger this tool repoints."""
+    found = [*_resolved_targets(), *sorted(p for p in (ROOT / "sources").rglob("*.json*") if p.is_file())]
+    return [p for p in found if str(p.relative_to(ROOT)) not in UNREPOINTED]
+
+
 def rewrite_text_references(alias: dict[str, str]) -> dict[str, int]:
     """Rewrite every retired id named in a page, a manifest or a sidecar ledger."""
-    pattern = re.compile(r"\b(" + "|".join(sorted(map(re.escape, alias), key=len, reverse=True)) + r")\b")
-    targets = [
-        *sorted((ROOT / "wiki").rglob("*.md")),
-        *sorted((ROOT / "publications").glob("*.yaml")),
-        *sorted(p for p in (ROOT / "sources").rglob("*.json*") if p.is_file()),
-    ]
+    if not alias:
+        return {}
+    pattern = _id_pattern(alias)
     counts: dict[str, int] = {}
-    for path in targets:
-        if str(path.relative_to(ROOT)) in UNREPOINTED:
-            continue
+    for path in _reference_targets():
         text = path.read_text()
         rewritten = pattern.sub(lambda m: alias[m.group(1)], text)
         if rewritten == text:
@@ -218,7 +245,7 @@ def promote_kinds(cards: dict[str, tuple[Path, dict, str]]) -> list[str]:
     return promoted
 
 
-def rebuild_map(cards: dict[str, tuple[Path, dict, str]]) -> list[dict]:
+def rebuild_map(cards: dict[str, tuple[Path, dict, str]], retire: dict[str, str]) -> list[dict]:
     """Rebuild the retirement map from git: every card id `HEAD` held and the
     tree no longer does, against the card that now carries its body.
 
@@ -226,6 +253,13 @@ def rebuild_map(cards: dict[str, tuple[Path, dict, str]]) -> list[dict]:
     however many passes happened to run. A retired card whose body no card now
     holds is reported with `survivor: null` -- that would be a loss, not a
     collapse.
+
+    `retire` is this run's own plan and outranks the fingerprint lookup. The
+    lookup asks which working-tree card carries the `HEAD` body, so it answers
+    `None` for any card whose body a pass edited before the collapse -- the id
+    was then retired with no survivor and every reference to it dangled
+    silently. The plan was computed from the working tree and does not have that
+    blind spot.
     """
     listing = subprocess.run(
         ["git", "-C", str(ROOT), "ls-tree", "-r", "--name-only", "HEAD", "corpus/"],
@@ -244,7 +278,14 @@ def rebuild_map(cards: dict[str, tuple[Path, dict, str]]) -> list[dict]:
         if meta is None or meta["id"] in cards or meta["kind"] in BODYLESS_KINDS:
             continue
         text = _unfence(body)
-        survivor = by_fingerprint[loose(text)] if loose(text) in by_fingerprint else None
+        planned = meta["id"] in retire
+        survivor = retire[meta["id"]] if planned else (by_fingerprint[loose(text)] if loose(text) in by_fingerprint else None)
+        if planned:
+            reason = "collapsed by this run; the working-tree body was loose-equal to the survivor's"
+        elif survivor and cards[survivor][2].strip() == text.strip():
+            reason = "exact body"
+        else:
+            reason = "body differs only in whitespace, blockquote or display-math and TeX macro spelling"
         rows.append(
             {
                 "retired": meta["id"],
@@ -254,9 +295,7 @@ def rebuild_map(cards: dict[str, tuple[Path, dict, str]]) -> list[dict]:
                 "survivor": survivor,
                 "survivor_path": str(cards[survivor][0].relative_to(ROOT)) if survivor else None,
                 "survivor_kind": cards[survivor][1]["kind"] if survivor else None,
-                "reason": "exact body"
-                if survivor and cards[survivor][2].strip() == text.strip()
-                else "body differs only in whitespace, blockquote or display-math and TeX macro spelling",
+                "reason": reason,
             }
         )
     for loser, survivor in sorted(SEED_ALIASES.items()):
@@ -273,6 +312,30 @@ def rebuild_map(cards: dict[str, tuple[Path, dict, str]]) -> list[dict]:
             }
         )
     return sorted(rows, key=lambda row: row["retired"])
+
+
+def dangling_references(cards: dict[str, tuple[Path, dict, str]], retired: set[str]) -> dict[str, list[str]]:
+    """File -> the retired ids it still names, after repointing.
+
+    The map and the rewriters can only repoint an id they can name a survivor
+    for. This asks the question `qualc check` asks -- does anything the compiler
+    resolves still point at a card that is gone -- so the answer arrives here
+    rather than as a pre-push failure that blocks every other workstream.
+    """
+    found: dict[str, list[str]] = {}
+    for path, meta, _ in cards.values():
+        named = {relation["target"] for relation in meta["relations"]} & retired
+        if "payload" in meta and "source" in meta["payload"] and meta["payload"]["source"] in retired:
+            named.add(meta["payload"]["source"])
+        if named:
+            found[str(path.relative_to(ROOT))] = sorted(named)
+    if retired:
+        pattern = _id_pattern(retired)
+        for path in _resolved_targets():
+            named = set(pattern.findall(path.read_text()))
+            if named:
+                found[str(path.relative_to(ROOT))] = sorted(named)
+    return found
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -306,7 +369,7 @@ def main(argv: list[str] | None = None) -> int:
     # a second run finish the job rather than leave the first run's references
     # half-rewritten.
     cards = read_cards()
-    rows = rebuild_map(cards)
+    rows = rebuild_map(cards, retire)
     lost = [row["retired"] for row in rows if row["survivor"] is None]
     alias = {row["retired"]: row["survivor"] for row in rows if row["survivor"] is not None}
     relations = rewrite_relations(cards, alias)
@@ -319,7 +382,14 @@ def main(argv: list[str] | None = None) -> int:
     print(f"relations rewritten on {relations} cards; payload.source rewritten on {payloads} cards")
     print(f"text references rewritten in {len(references)} files: {sum(references.values())} ids")
     print(f"{len(rows)} retired ids mapped; {len(lost)} with no surviving body: {lost}")
-    return 0
+
+    dangling = dangling_references(read_cards(), {row["retired"] for row in rows})
+    if not lost and not dangling:
+        return 0
+    for path, ids in sorted(dangling.items()):
+        print(f"    {path} still names {', '.join(ids)}")
+    print(f"tree is inconsistent: {len(lost)} retired ids with no survivor, {len(dangling)} files still naming a retired id")
+    return 1
 
 
 if __name__ == "__main__":
