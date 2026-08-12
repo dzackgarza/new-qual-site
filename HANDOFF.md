@@ -304,8 +304,8 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
   The parent plan still records remaining guard work.
 
 - **G9 — source hygiene: complete for this closeout.** Replay is complete.
-  Token revocation is owner-confirmed, source correction pushes are complete, and M7
-  records `retain` for every source repository. No archive action is authorized.
+  Token revocation is owner-confirmed, source correction pushes are complete, and M7 records `retain` for every source repository.
+  No archive action is authorized.
 
 ### One action for the owner
 
