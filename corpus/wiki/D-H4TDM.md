@@ -20,6 +20,6 @@ so that $b(x, y) = [x]_{\mathcal B}^t\, G\, [y]_{\mathcal B}$.
 Changing basis by an invertible $P$ replaces $G$ with $P^t G P$, so $\det G$ is well defined modulo squares of units, and $b$ is nondegenerate exactly when $G$ is invertible.
 :::
 
-:::{.concept}
+::: {.concept}
 See Artin, *Algebra*, ch. 8.
 :::

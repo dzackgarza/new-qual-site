@@ -21,6 +21,6 @@ is injective, equivalently an isomorphism when $\dim_k V < \infty$.
 Equivalently, the radical $\ts{ x \in V \st b(x,y) = 0 \text{ for all } y \in V }$ is zero, equivalently any Gram matrix of $b$ is invertible.
 :::
 
-:::{.concept}
+::: {.concept}
 See Artin, *Algebra*, ch. 8.
 :::

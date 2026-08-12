@@ -19,6 +19,6 @@ For $q$ a prime power,
 A matrix is invertible exactly when its columns form a basis of $\FF_q^n$, so the columns may be chosen in order: the $(k+1)\dash$st column is any vector outside the span of the previous $k$, a subspace with $q^k$ elements.
 :::
 
-:::{.concept}
+::: {.concept}
 See Dummit and Foote, §11.1, for the basis criterion.
 :::

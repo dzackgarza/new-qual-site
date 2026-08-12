@@ -21,6 +21,6 @@ When $\ch k \neq 2$ this is the same data as a symmetric bilinear form, via $q(x
 In coordinates $q$ is a homogeneous degree-$2$ polynomial, $q(x) = \sum_{i \leq j} a_{ij} x_i x_j$.
 :::
 
-:::{.concept}
+::: {.concept}
 See Artin, *Algebra*, ch. 8.
 :::

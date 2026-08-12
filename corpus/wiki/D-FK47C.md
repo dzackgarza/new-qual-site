@@ -25,6 +25,6 @@ so the coefficients of a monic polynomial are, up to sign, the elementary symmet
 Every symmetric polynomial in $R[x_1, \cdots, x_n]$ is a polynomial in $e_1, \cdots, e_n$ over $R$, uniquely so.
 :::
 
-:::{.concept}
+::: {.concept}
 See Dummit and Foote, §14.6.
 :::
