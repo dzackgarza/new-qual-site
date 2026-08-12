@@ -95,8 +95,8 @@ Three obligations that earlier records carried as outstanding have landed, and r
   `artifacts/issue-11/source-reviews/math-flashcards-current-boundary.md` records the current 82-artifact worktree boundary and all matching target hashes.
   The qual-wiki source repair at `3fe1f58f` restores the seven former image gaps and the complete topology figure set.
   The scoped MathQualBot collection passes: all 51 vendored question images and their provenance have matching source and target hashes.
-  `artifacts/issue-11/source-reviews/cross-repository.md` records a global PASS claim at target boundary `819ddef`.
-  The review records do not identify reviewer assignments or prove separation from migration, repair, or prior completion adjudication. Under `PLAN-QUAL-HANDOFF-CLOSEOUT-001`, M4 and M5 remain unproved until that provenance exists.
+  `artifacts/issue-11/source-reviews/cross-repository.md` records a global PASS claim at target boundary `819ddef`. The review records do not identify reviewer assignments or prove separation from migration, repair, or prior completion adjudication.
+  Under `PLAN-QUAL-HANDOFF-CLOSEOUT-001`, M4 and M5 remain unproved until that provenance exists.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
