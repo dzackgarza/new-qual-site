@@ -69,13 +69,28 @@
     }
   });
 
+  // The page says the URL is the query, so it has to be: ?q= seeds the filter on
+  // load and tracks it as the reader types, which makes a filtered view
+  // shareable and bookmarkable.
   const problemFilter = document.querySelector("#problem-filter");
   if (problemFilter) {
-    problemFilter.addEventListener("input", () => {
+    const applyFilter = () => {
       const terms = problemFilter.value.toLocaleLowerCase().trim().split(/\s+/);
       for (const row of document.querySelectorAll(".problem-row")) {
         row.hidden = !terms.every((term) => row.dataset.search.includes(term));
       }
+    };
+    problemFilter.value = new URLSearchParams(location.search).get("q") ?? "";
+    applyFilter();
+    problemFilter.addEventListener("input", () => {
+      applyFilter();
+      const url = new URL(location.href);
+      if (problemFilter.value) {
+        url.searchParams.set("q", problemFilter.value);
+      } else {
+        url.searchParams.delete("q");
+      }
+      history.replaceState(null, "", url);
     });
   }
 

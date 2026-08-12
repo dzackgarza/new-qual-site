@@ -170,6 +170,43 @@ REVEAL_LABELS = {
     "qual-occurrence": "As it appeared",
 }
 
+# Authored div classes whose content answers the problem instead of stating it.
+# A tag page may hide them behind a disclosure; a printable practice sheet must
+# not carry them at all.
+ANSWER_CLASSES = {"solution", "hint", "proof", "strategy", "concept", "warnings"}
+
+# The same material also occurs unwrapped, as a paragraph or list item whose
+# leading bold run labels it.
+ANSWER_LABELS = {"solution", "hint", "answer"}
+
+
+def _answer_label(block: pf.Element) -> str:
+    if not isinstance(block, pf.Para | pf.Plain) or not block.content:
+        return ""
+    head = block.content[0]
+    if not isinstance(head, pf.Strong):
+        return ""
+    return pf.stringify(head).strip().rstrip(":").lower()
+
+
+def _statement_only(
+    element: pf.Element,
+    document: pf.Doc,
+) -> pf.Element | list[pf.Block] | None:
+    """Drop every block that answers the problem instead of stating it.
+
+    `walk` is bottom-up, so a labelled paragraph inside a list item is removed
+    before the item is visited; the emptied item is then removed as well, rather
+    than surviving as a stray bullet."""
+    del document
+    if isinstance(element, pf.Div) and ANSWER_CLASSES.intersection(element.classes):
+        return []
+    if isinstance(element, pf.ListItem):
+        return [] if not element.content else None
+    if _answer_label(element) in ANSWER_LABELS:
+        return []
+    return None
+
 
 def _reveal(
     element: pf.Element,
@@ -548,6 +585,10 @@ def _page_ast(page: Page) -> str:
 
 def _html_ast(ast: str) -> str:
     return _document_ast(from_ast(ast).walk(_reveal))
+
+
+def _statement_ast(ast: str) -> str:
+    return _document_ast(from_ast(ast).walk(_statement_only))
 
 
 def write_pages(
@@ -935,11 +976,43 @@ def publication_section_page(
     return {"title": section.title}, blocks
 
 
-def publication_appearances(
+def card_appearances(
     con: sqlite3.Connection,
     manifests: list[PublicationManifest],
 ) -> dict[str, list[Appearance]]:
+    """Where each card shows up: guide sections, and for a problem, its sittings.
+
+    The sitting edge is the reverse of the 2,798 links an exam page already
+    carries. Without it a problem page names the sitting it came from in the
+    occurrence disclosure but offers no way to reach it."""
     appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
+    seen: set[tuple[str, str]] = set()
+    for occurrence in _rows(
+        con,
+        """
+        select o.problem_id, o.source_id, o.locator, c.title
+        from occurrences o join cards c on c.id=o.source_id
+        order by c.title, o.locator = '?', o.locator, o.id
+        """,
+    ):
+        # One link per sitting. A problem recorded twice at the same sitting is
+        # usually one occurrence with a locator and one without; ordering puts
+        # the located one first, so that is the row that survives.
+        key = (occurrence["problem_id"], occurrence["source_id"])
+        if key in seen:
+            continue
+        seen.add(key)
+        locator = occurrence["locator"]
+        title = occurrence["title"]
+        if locator and locator != "?":
+            title += f", problem {locator}"
+        appearances[occurrence["problem_id"]].append(
+            Appearance(
+                target_key=occurrence["source_id"],
+                title=title,
+                basis="Exam sitting",
+            )
+        )
     for manifest in manifests:
         for section in manifest.sections:
             target_key = _publication_section_target_key(manifest, section)
@@ -1318,7 +1391,12 @@ def _generate_data(
     The statement is recovered from the card AST (never the flattened section
     text, which loses the math) with a single batched pandoc call rather than one
     per problem, and each problem carries the areas and institutions it is filed
-    under so the generator can select the way make-me-a-qual did -- by area."""
+    under so the generator can select the way make-me-a-qual did -- by area.
+
+    The sheet is statements only, so the AST goes through `_statement_only`
+    first. `_html_ast` is the tag-page extraction and is wrong here: it hides
+    answers behind a disclosure the reader can open, which on a printed practice
+    sheet means printing them."""
     problems = _rows(con, "select id, title, ast from cards where kind='problem' order by id")
     areas: dict[str, list[str]] = {problem["id"]: [] for problem in problems}
     for r in _rows(con, "select card_id, term from classifications where axis='area'"):
@@ -1332,7 +1410,7 @@ def _generate_data(
         if r["pid"] in insts:
             insts[r["pid"]].add(r["inst"])
     bodies = _successful_html_outputs(
-        pandoc.write_html([_html_ast(problem["ast"]) for problem in problems]),
+        pandoc.write_html([_statement_ast(problem["ast"]) for problem in problems]),
         "generator statement HTML write",
     )
     out = []
@@ -1355,16 +1433,24 @@ title: Generate a practice set
 
 ```{=html}
 <style>
-.gen-panel{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start;margin-top:8px}
+/* Every track and flex item is min-width:0. A grid or flex item defaults to a
+   min-content floor, so one wide equation in one problem widened the sheet
+   track and pushed the whole page sideways; `mjx-container{max-width:100%}` in
+   the site stylesheet then resolved against the widened column and never bit.
+   The remaining irreducibly wide block scrolls inside .qb, not on <body>. */
+.gen-panel{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:32px;align-items:start;margin-top:8px}
 .gen-controls .grp{margin-bottom:18px}
 .gen-controls label.h{display:block;font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:#6c757d;margin-bottom:8px}
 .gen-controls .opt{display:block;margin:4px 0}
 #gen-n{width:90px;padding:6px 8px}
 #gen-go{margin-top:6px;padding:10px 18px;font-weight:600;border:0;border-radius:6px;background:#2780e3;color:#fff;cursor:pointer}
+#gen-sheet{min-width:0}
 #gen-sheet .q{display:flex;gap:14px;margin:22px 0;page-break-inside:avoid}
-#gen-sheet .qn{font-weight:700;color:#2780e3;min-width:26px}
+#gen-sheet .qn{font-weight:700;color:#2780e3;min-width:26px;flex:0 0 auto}
+#gen-sheet .qb{min-width:0;flex:1 1 auto;overflow-x:auto}
 #gen-sheet .src{font-size:.85em;color:#6c757d;font-style:italic;margin-top:6px}
 #gen-sheet h2{text-align:center;border-bottom:2px solid #333;padding-bottom:10px}
+@media (max-width:56rem){.gen-panel{grid-template-columns:minmax(0,1fr)}}
 @media print{.gen-controls,.navbar,#quarto-header,.quarto-title-block{display:none!important}.gen-panel{display:block}}
 </style>
 <div class="gen-panel">
@@ -1454,7 +1540,7 @@ def project(
     link_targets = _link_targets(con, guides)
     link_targets.update(wiki_link_targets(wiki_pages or []))
     (out / "wiki-manifest.json").write_text(json.dumps(_wiki_manifest(wiki_pages or []), ensure_ascii=False, indent=2) + "\n")
-    appearances = publication_appearances(con, guides)
+    appearances = card_appearances(con, guides)
     assets = build_asset_catalog(site.parent / "assets")
     inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
     inline_values.extend(
