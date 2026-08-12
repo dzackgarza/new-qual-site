@@ -78,8 +78,6 @@ sections:
           kind: problem
           topics:
             - convergence-of-functions
-            - uniform-convergence
-            - sequences-of-functions
           limit: 12
           review:
             mode: any
