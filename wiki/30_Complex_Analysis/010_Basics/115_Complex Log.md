@@ -14,7 +14,7 @@ Note that it's not necessarily true that if $z=x+iy$ that $\Arg(z) = \arctan\qty
 There is a formula based on which quadrant $z$ is in:
 
 
-![](figures/2021-12-19_02-35-23.png)
+![](../../../../assets/assets/figures/2021-12-19_02-35-23.png)
 
 Note that $\Arg(0)$ is undefined, so that $\Arg(z)$ makes sense on $\CC \sm (-\infty, 0]$, where $(\infty, 0]$ is a **branch cut**. 
 Any choice of interval $(\theta_0, \theta_0 + 2\pi]$ yields a different branch cut.
@@ -38,17 +38,7 @@ f_2(z) = \sqrt{r}e^{i{\Arg(z) + 2\pi \over 2} } = \sqrt{r} e^{i{\Arg(z) \over 2}
 
 [[P-4GDBQ]]
 
-:::{.definition title="Complex log"}
-Define
-\[
-\log(z) \da \ln\qty{\abs{z}} + i\Arg(z)
-,\]
-where $\Arg(z)$ is the principal argument in $(-\pi, \pi]$.
-Note that this is sometimes written
-\[
-\log(z) \da \ln\qty{\abs{r}} + i\theta
-.\]
-:::
+[[D-OMBQT]]
 
 :::{.example title="Log is multivalued"}
 \[
@@ -65,29 +55,9 @@ The principal branch of $\Log$ is defined so that $\Log(1) = 0$, and can be writ
 where $\gamma$ is any piecewise smooth path connecting 1 to $z$.
 :::
 
-:::{.definition title="Complex fractional powers"}
-Define
-\[
-z^\alpha \da e^{\alpha \log(z)}
-,\]
-where some branch of $\log$ (usually the principal branch) is implicitly chosen.
-:::
+[[D-T6INB]]
 
-:::{.theorem title="Existence of $\log(f)$ on domains"}
-If $\Omega$ is a connected domain with $f\in \OO\units(\Omega)$ an invertible regular function with 
-\[
-\int_\gamma {f'\over f} = 0
-\]
-for all $\gamma \subseteq \Omega$, then
-
-- There exists a holomorphic $g:\Omega\to \CC$ such that $g = \log(f)$ and $e^g = f$.
-
-- $g' = {f'\over f}$, yielding an explicit formula
-\[
-g(z) = g(z_0) + \int_{z_0}^z {f'(\xi) \over \xi}\dxi
-.\]
-
-:::
+[[T-NRSFZ]]
 
 :::{.remark}
 $\Log(f(z))$ has branch points at the zeros of $f$.
@@ -101,15 +71,7 @@ f^{1/n} = e^{{1\over n} \log(f)}
 taking (say) a principal branch of $\log$ given by $\CC \sm (-\infty, 0] \cross 0$.
 :::
 
-:::{.proposition title="Existence of complex log"}
-Suppose $\Omega$ is a simply-connected region such that $1\in \Omega, 0\not\in\Omega$.
-Then there exists a branch of $F(z) \da \Log(z)$ such that
-
-- $F$ is holomorphic on $\Omega$,
-- $e^{F(z)} = z$ for all $z\in \Omega$
-- $F(x) = \log(x)$ for $x\in \RR$ in a neighborhood of $1$.
-
-:::
+[[PR-OYF6X]]
 
 [[P-LHZGV]]
 
@@ -134,14 +96,7 @@ So $\log$ can't even be made continuous if one crosses the branch.
 The issue is the **branch point** or **branch singularity** at $z=0$.
 :::
 
-:::{.theorem title="Existence of log of a function"}
-If $f$ is holomorphic and nonvanishing on a simply-connected region $\Omega$, then there exists a holomorphic $G$ on $\Omega$ such that
-
-\[
-f(z) = e^{G(z)}
-.\]
-
-:::
+[[T-FWT3W]]
 
 :::{.fact}
 The complex exponential is $2\pi i$ periodic, and invertible on any horizontal strip of the form

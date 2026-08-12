@@ -1,17 +1,6 @@
 # Rouché 
 
-:::{.theorem title="Rouché's Theorem" ref="Rouche"}
-Let $M, m$ be meromorphic on $\Omega$ and write $Z_M, Z_m, P_M, P_m$ for the numbers of zeros and poles of $M$ and $m$ respectively.
-Suppose $\gamma \subseteq \Omega$ is a toy contour winding about each zero and pole of $f$ and $g$ precisely once.
-Then
-\[
-\abs{m} \leq \abs{M} \text{ on } \gamma \implies \Index_{z=0}(M\circ \gamma)(z) 
-&= \Index_{z=0}((M+m)\circ \gamma)(z) \\
-\implies Z_M - P_M 
-&= Z_{M+m} - P_{M+m}
-.\]
-In particular, if $M, m$ are *holomorphic* on $\Omega$, then $M$ and $M+m$ have the same number of zeros in $\Omega$, i.e. $Z_M = Z_{M+m}$.
-:::
+[[T-CJCKL]]
 
 :::{.slogan}
 The number of zeros/poles in a region is determined by a dominating function on the boundary.
@@ -37,15 +26,15 @@ On how to use Rouché, and some common tricks:
 Idea: use argument principle on $(f+g)/f$.
 Alternatively, use that $N(f+tg, \Omega)$ is a continuous $\ZZ\dash$valued function for all $t\in [0, 1]$.
 
-![](figures/2021-12-10_22-23-58.png)
+![](../../../../assets/assets/figures/2021-12-10_22-23-58.png)
 
 :::
 
 :::{.proof title="of Rouché, alternative"}
 
-![](figures/2021-12-14_16-25-41.png)
+![](../../../../assets/assets/figures/2021-12-14_16-25-41.png)
 
-![](figures/2021-12-15_02-24-10.png)
+![](../../../../assets/assets/figures/2021-12-15_02-24-10.png)
 
 :::
 

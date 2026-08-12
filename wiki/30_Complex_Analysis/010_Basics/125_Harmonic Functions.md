@@ -6,43 +6,12 @@ order: 125
 
 ## Delbar and the Laplacian
 
-:::{.definition title="Laplacian and Harmonic Functions"}
-A real function of two variables $u(x, y)$ is **harmonic** iff it is in the kernel of the Laplacian operator:
-\[  
-\Delta u \definedas \qty{\dd{^2}{x^2} + \dd{^2}{y^2}}u = 0
-.\]
-:::
+[[D-CFBSA]]
 
-:::{.definition title="del and delbar operators"}
-\[
-\del \da \del_z \da {1\over 2}\qty{\del_x - i \del_y}
-\quad
-\text{ and }
-\quad
-\delbar
-\da \del_{\bar z}
-={1\over 2}\qty{ \del_x + i\del_y}
-.\]
-Moreover, the 1-form corresponding to $F$ can be written as 
-\[
-dF = \del F + \delbar F = \dd{F}{z} \dz + \dd{F}{\zbar}\dzbar
-.\]
-
-Written slightly more explicitly:
-\[
-\dd{F}{z} = {1\over 2}\qty{\dd{F}{x} + {1\over i}\dd{F}{y} } && 
-\dd{F}{\zbar} = {1\over 2}\qty{\dd{F}{x} - {1\over i}\dd{F}{y} } 
-.\]
-
-:::
+[[D-OAFF5]]
 
 
-:::{.proposition title="Mean Value Property"}
-If $u$ is harmonic on $\Omega$ then
-\[
-u(z_0) = u(x_0 + i y_0) = {1\over 2\pi r} \oint_{\bd \DD_r(z_0)} u \ds = {1\over \pi r^2} \iint_{\DD_r(z_0)} u(x, y) \dx \dy
-.\]
-:::
+[[PR-UWGI6]]
 
 
 :::{.proof title="?"}

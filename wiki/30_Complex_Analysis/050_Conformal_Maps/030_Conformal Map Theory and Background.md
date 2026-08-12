@@ -23,11 +23,7 @@ Write $f(z+\eps) = f(z) + \eps f'(z) + \bigo(\eps^2)$, then
 so all tangent vectors near $z_0$ are rotated by approximately the same angle $f'(z_0)$, preserving their relative angles.
 :::
 
-:::{.definition title="Conformal Map / Biholomorphism"}
-A map $f$ is **conformal** on $\Omega$ iff $f$ is complex-differentiable, $f'(z)\neq 0$ for $z\in \Omega$, and $f$ preserves signed angles (so $f$ is orientation-preserving).
-
-A bijective conformal map $f:U\to V$ **biholomorphism**, and we say $U$ and $V$ are **biholomorphic**.
-:::
+[[D-TM4TE]]
 
 :::{.fact title="Checking if a map is conformal"}
 To check if a map is conformal at $p$, it *suffices* to check that $f'(p)\neq 0$.
@@ -45,50 +41,11 @@ The bijectivity condition can be weakened: an *injective* holomorphic map satisf
 
 ## The Cross-Ratio Construction
 
-:::{.proposition title="Cross ratio construction of conformal maps"}
-Define generalized cross-ratios as
-\[
-(z_1, z_2, z_3, z_4) &\da {z_1 - z_3\over z_1-z_4}{z_2 - z_4 \over z_2 - z_3} \\
-R(z) \da (z, a,b,c) &\da {z - b\over z-c}{a - c\over a - c} \\
-.\]
-
-Given any three points, $R(z)$ sends
-\[
-a &\to 1 \\
-b &\to 0 \\
-c &\to \infty
-.\]
-
-
-One can use this to produce a map sending any three points to any other three points:
-\[
-T(z) \da 
-(w; w_1, w_2, w_3)\inv
-\circ
-(z; z_1,z_2, z_3)
-.\]
-
-If any of the $z_i$ are $\infty$, the convention is to remove the corresponding terms where they appear:
-:::
+[[PR-AQ6YR]]
 
 ## Linear Fractional/Mobius Transformations
 
-:::{.definition title="Mobius transformation"}
-A map of the following form is a **linear fractional transformation** ( or a **Mobius transformation**):
-\[  
-T(z) = {az + b \over cz + d}
-,\]
-where the denominator is assumed to not be a multiple of the numerator.
-These have inverses given by
-\[  
-T^{-1}(w) = {dw-b \over -cw + a}
-\]
-and derivatives given by
-\[
-T'(z) = {ad-bc \over (cz+d)^2}
-,\]
-so this is always a conformal map when $ad-bc\neq 0$.
-:::
+[[D-FRVBV]]
 
 :::{.remark title="Mobius transformations as projective linear automorphisms"}
 Using that $\Aut(\CP^1) \cong \PGL_2(\CC)$, there is a nice matrix representation if you act on projective coordinates:

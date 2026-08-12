@@ -1,0 +1,20 @@
+---
+schema: qual/card@1
+id: T-22RQZ
+kind: theorem
+title: "Cauchy's Inequality / Cauchy's Estimate"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations: []
+review: draft
+---
+:::{.theorem title="Cauchy's Inequality / Cauchy's Estimate" ref="CauchyInequality"}
+For $z_0 \in D_R(z_0) \subset \Omega$, setting $M \da \sup_{z\in \gamma}\abs{f(z)}$ so $\abs{f(z)}\leq M$ on $\gamma$
+\[
+\abs{ f^{(n)} (z_0) } 
+\leq \frac{n !}{2 \pi} \int_{0}^{2 \pi} \frac{ M } {R^{n+1}} R \dtheta
+= \frac{M n ! }{R^n} 
+.\]
+:::

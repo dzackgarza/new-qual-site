@@ -36,7 +36,7 @@ a\leq b \implies e^{-a} \geq e^{-b}
 
 - Some standard contours:
 
-  ![](figures/2021-12-23_18-51-55.png)
+  ![](../../../../assets/assets/figures/2021-12-23_18-51-55.png)
 
 Let $\deg$ denote the $z\dash$adic valuation, so $\deg(p(x)/q(x)) = \deg(p) - \deg(q)$.
 :::
@@ -47,13 +47,13 @@ For $\int_\RR f$: Semicircle. Always get
 \int_\RR f = \sum_{z_0\in \HH} \Res_{z=z_0}f(z)
 .\]
 
-![figures/2021-07-29_18-37-57.png](../../../assets/figures/2021-07-29_18-37-57.png)
+![figures/2021-07-29_18-37-57.png](../../../../assets/assets/figures/2021-07-29_18-37-57.png)
 
 For $\int_{\RR_{\geq 0}} f$: use symmetry to convert to $\int_\RR$ (e.g. if $f$ is even), or find a symmetric ray and use a sector:
 
-![](figures/2021-12-21_21-14-04.png)
+![](../../../../assets/assets/figures/2021-12-21_21-14-04.png)
 
-![](figures/2021-12-21_21-17-25.png)
+![](../../../../assets/assets/figures/2021-12-21_21-17-25.png)
 
 :::
 
@@ -84,7 +84,7 @@ If $f(z) \approx \cos(z), \sin(z), \tan(z), \cdots$: check if $\displaystyle\int
 
 - For $f$ rational with $\deg f\leq -2$, take a keyhole
 
-  ![](figures/2021-12-14_17-19-31.png)
+  ![](../../../../assets/assets/figures/2021-12-14_17-19-31.png)
 
   - A useful fact: 
   \[
@@ -100,9 +100,9 @@ If $f(z) \approx \cos(z), \sin(z), \tan(z), \cdots$: check if $\displaystyle\int
 
 - $\int_{\RR_{\geq 0}} f(x) \log(x)$: indented semicircular contours
 
-![](figures/2021-12-14_17-20-48.png)
+![](../../../../assets/assets/figures/2021-12-14_17-20-48.png)
 
-![](figures/2021-12-22_05-14-24.png)
+![](../../../../assets/assets/figures/2021-12-22_05-14-24.png)
 
 - When a log trick is useful: if $f(z) = \log(z)g(z)$ where $\int g(z)$ is easy, try a contour that is a rotation of $\RR$.
   The substitution usually yields $\log(\zeta x) \leadsto \ln\abs{x} + i\theta$, so $\int \log(\zeta x)g(\zeta x) = \int \log(x)g(x) + \int i\theta g(x)$ if $g$ is $\zeta\dash$invariant.
@@ -121,7 +121,7 @@ For real integrals:
 .\]
 The same principle works for complex contours, e.g. for $\int_\RR p(z)/q(z)$ where $q$ has real roots:
 
-![](figures/2021-12-21_23-40-15.png)
+![](../../../../assets/assets/figures/2021-12-21_23-40-15.png)
 
 The contours along the real line converge to the principal values of the real integral.
 
@@ -129,12 +129,7 @@ The contours along the real line converge to the principal values of the real in
 
 ## The ML Estimate
 
-:::{.theorem title="ML Estimate"}
-\[
-\abs{ \int_\gamma f(z) \dz } \leq ML \da \sup_{\xi \in \gamma} \abs{f(\xi)} \cdot \length(\gamma) 
-.\]
-
-:::
+[[T-SFXI7]]
 
 :::{.remark}
 If $C_R$ is a semicircular contour subtending an angle of $\theta$,
@@ -157,31 +152,7 @@ If $M = \bigo(R)$, use Jordan's lemma!
 
 ## Jordan's Lemma
 
-:::{.theorem title="Jordan's Lemma"}
-
-For $\alpha > 0$,
-define
-\[
-C_R \da \ts{ z=Re^{it} \st t\in [0, \pi] }
-.\]
-
-![](figures/2021-12-20_20-35-11.png)
-\[
-\abs{\int_{C_R} e^{i\alpha z} g(z) \dz} \leq \pi\alpha\inv M_R \qquad M_R \da \sup_{z\in C_R} \abs{g(z)}
-.\]
-Note that if $M_R\to 0$ as $R\to \infty$, this integral vanishes -- so this works if $M_R \in \bigo\qty{1\over R^\eps}$ for $\eps>0$.
-
-For $\alpha < 0$, the same statement holds with the contour replaced by $\tilde C_R\da \ts{Re{it} \st t\in [0, -\pi]}$.
-This is because the main estimate involves
-\[
-\cdots & \leq \lim _{R \rightarrow \infty} \int_{H_{R}} e^{-\alpha R \sin \theta}|F(z)| R d \theta
-,\]
-which goes to zero if $-\alpha n\sin(\theta)<0$, i.e. 
-
-- $\alpha>0$ and $\sin(\theta)>0$, so $C_R$ is in the upper half-plane, or
-- $\alpha < 0$ and $\sin(\theta)<0$, so $C_R$ is in the lower half-plane.
-
-:::
+[[T-ZO5UU]]
 
 :::{.remark title="Slightly stronger than the ML estimate"}
 Compare to the above computation of $\int_\RR { \cos(x) \over x^2 + 1}$.
@@ -193,7 +164,7 @@ Taking $\alpha = 1$, this yields
 
 :::{.remark title="On which semicircle to use"}
 
-![](figures/2021-12-21_21-10-30.png)
+![](../../../../assets/assets/figures/2021-12-21_21-10-30.png)
 
 :::
 
@@ -223,7 +194,7 @@ The quick justification:
 where we've used that on $[0, \pi/2]$, there is an inequality $2t/\pi \leq \sin(t)$.
 This is obvious from a picture, since $\sin(t)$ is a height on $S^1$ and $2t/\pi$ is a height on a diagonal line:
 
-![figures/image_2021-06-09-01-29-22.png](../../../assets/figures/image_2021-06-09-01-29-22.png)
+![figures/image_2021-06-09-01-29-22.png](../../../../assets/assets/figures/image_2021-06-09-01-29-22.png)
 
 :::
 

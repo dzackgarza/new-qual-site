@@ -4,17 +4,7 @@ order: 52
 
 # Analytic Number Theory Faves
 
-:::{.lemma title="Dirichlet's Test"}
-Given two sequences of real numbers \( \ts{ a_k } , \ts{ b_k } \) which satisfy
-
-1. The sequence of partial sums \( \ts{ A_n } \) is bounded,
-2. $b_k \searrow 0$.
-
-then 
-\[
-\sum_{k\geq 1} a_k b_k < \infty
-.\]
-:::
+[[L-EAZX6]]
 
 :::{.proof title="?"}
 
@@ -49,16 +39,9 @@ So it suffices to bound the latter sum:
 
 :::
 
-:::{.theorem title="Abel's Theorem"}
-If $\sum_{k=1}^\infty c_k z^j$ converges on $\abs{z} < 1$ then 
-\[
-\lim_{z\to 1^-} \sum_{k\in \NN} c_k z^k = \sum_{k\in \NN} c_k
-.\]
-:::
+[[T-B7YTE]]
 
-:::{.lemma title="Abel's Test"}
-If $f(z) \da \sum c_k z^k$ is a power series with $c_k \in \RR^{\geq 0}$ and $c_k\decreasesto 0$, then $f$ converges on $S^1$ except possibly at $z=1$.
-:::
+[[L-MYZOX]]
 
 :::{.example title="application of Abel's theorem"}
 What is the value of the alternating harmonic series?
@@ -76,28 +59,7 @@ Then $f(1) = 1-1+1-\cdots$ diverges at 1, but $1/1+1 = 1/2$.
 So the limit $s\da \lim_{x\to 1^-} f(x) 1/2$, but $\sum a_n$ doesn't converge to $s$.
 :::
 
-:::{.proposition title="Summation by Parts"}
-Setting $A_n \da \sum_{k=1}^n b_k$ and $B_0 \da 0$,
-\[
-\sum_{k=m}^n a_k b_k 
-&= A_nb_n - A_{m-1} b_m - \sum_{k=m}^{n-1} A_k(b_{k+1} - b_{k})
-.\]
-Compare this to integrating by parts:
-\[
-\int_a^b f g = F(b)g(b) - F(a)g(a) - \int_a^b Fg'
-.\]
-How to remember: set $\Delta g_k \da g_{k+1} - g_k$ and $\mathbf{I} g_k = g_{k+1}$, then 
-\[
-\sum_{k=m}^n f_k \cdot \Delta g_k = f_{n+1} g_{n+1} - f_m g_m - \sum_{k=m}^n \mathbf{I}g_{k} \cdot \Delta f_k
-.\]
-
-
-Note there is a useful form for taking the product of sums:
-\[
-A_{n} B_{n}=\sum_{k=1}^{n} A_{k} b_{k}+\sum_{k=1}^{n} a_{k} B_{k-1}
-.\]
-
-:::
+[[PR-2MTPE]]
 
 :::{.proof title="?"}
 An inelegant proof: define $A_n \da \sum_{k\leq n} a_k$, use that $a_k = A_k - A_{k-1}$, reindex, and peel a top/bottom term off of each sum to pattern-match.

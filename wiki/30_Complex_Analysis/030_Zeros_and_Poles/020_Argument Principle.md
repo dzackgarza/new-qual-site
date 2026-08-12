@@ -1,11 +1,6 @@
 # Argument Principle
 
-:::{.definition title="The logarithmic derivative"}
-The **logarithmic derivative** is defined as 
-\[
-\logd f \da {f' \over f}
-.\]
-:::
+[[D-WHYOA]]
 
 :::{.fact}
 It converts all poles and zeros of meromorphic $f$ into simple poles of $\logd f$.
@@ -30,33 +25,9 @@ d \qty{ \log(f) } = {f'\over f}\dz  \implies \Res_{z=p}(d \log(f) ) = v_p(f)
 
 :::
 
-:::{.definition title="Winding Number"}
-For $\gamma \subseteq \Omega$ a closed curve not passing through a point $z_0$, the **winding number of $\gamma$ about $z_0$** (or the **index**) is defined as
-\[
-\Index_{z=z_0}(\gamma) \da {1\over 2\pi i} \int_\gamma {1\over \xi -z_0}\dxi
-.\]
+[[D-PJ7JM]]
 
-:::
-
-:::{.theorem title="Argument Principle, Zeros/Poles Version"}
-For $f$ meromorphic in $\Omega$ with multisets of zeros \( Z_f \da \ts{ z_j } \) and poles \( P_f\da \ts{ p_k } \) (so repeated with multiplicity) 
-for $\gamma \da \bd \Omega$ not intersecting any of the zeros/poles,
-
-\[  
-{1\over 2\pi i} \int_\gamma \logd f(z) \dz
-\da {1\over 2\pi i} \int_\gamma {f'(z) \over f(z)} \dz =
-&= \size Z_f - \size P_f
-,\]
-where $\size Z_f$ and $\size P_f$ are the number of zeros and poles respectively, counted with multiplicity.
-If $f$ is holomorphic, then
-\[
-{1\over 2\pi i} \oint_{\bd \Omega} {f'(z) \over f(z)}\dz 
-&= \sum_{z_k\in f\inv(0) \intersect \Omega} \mathrm{mult}(f, z_k) \\
-{1\over 2\pi i} \oint_{\bd \Omega} {zf'(z) \over f(z)}\dz 
-&= \sum_{z_k\in f\inv(0) \intersect \Omega} f(z_k) \mathrm{mult}(f, z_k) \\
-.\]
-
-:::
+[[T-JXDQT]]
 
 :::{.proof title="?"}
 \envlist
@@ -85,15 +56,7 @@ so $z_0$ is a simple pole of $\logd f$ and $\res_{z=z_0} \logd f = m$.
 .\]
 :::
 
-:::{.theorem title="Argument Principle, Index Version"}
-With the same setup as above, 
-\[
-{1\over 2\pi i} \int_\gamma \logd f(z) \dz
-&= \Index_{w=0}(f\circ \gamma)(w)
-.\]
-
-
-:::
+[[T-52HK6]]
 
 :::{.proof title="?"}
 Make the change of variables $w = f(z)$, then $z=\gamma(t) \mapsto w = (f\circ \gamma)(t)$ and $\dw = f'(z) \dz$, so
@@ -117,7 +80,7 @@ Let $f(z) = z^2 + z = z(z+1)$.
 You can track the change in argument by just breaking a curve up into sub-curves and evaluating a branch of the $\arg$ function at the endpoints.
 For example, in this picture, the change in argument is $\pi$ no matter what the curve does in $\HH$:
 
-![](figures/2021-12-10_18-06-04.png)
+![](../../../../assets/assets/figures/2021-12-10_18-06-04.png)
 
 :::
 

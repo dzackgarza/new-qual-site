@@ -1,12 +1,6 @@
 # Appendix
 
-:::{.definition title="Gamma function"}
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t} \dt
-.\]
-
-
-:::
+[[D-Q3MYK]]
 :::{.remark}
 Some interesting properties of $\Gamma$:
 $\Gamma(z+1) = z\Gamma(z)$ and has simple poles at $z=0,-1,-2,\cdots$ with residues $\Res_{z=-m} \Gamma(z) = (-1)^m/m!$.
@@ -26,15 +20,7 @@ $\mcl(t^{z-1}, s=1) = \Gamma(z)$ and $\mcl(t^n, s=1) = \Gamma(n+1)$.
 
 :::
 
-:::{.theorem title="Uniformization"}
-Every Riemann surface $S$ is the quotient of a free proper holomorphic action of a group $G$ on the universal cover $\tilde S$ of $S$, so $S\cong \tilde S/G$ is a biholomorphism.
-Moreover, $\tilde S$ is biholomorphic to either 
-
-- $\CP^1$
-- $\CC$
-- $\DD$
-
-:::
+[[T-ZAEWG]]
 
 ## Misc Basic Algebra
 :::{.fact title="Standard forms of conic sections"}
@@ -63,10 +49,7 @@ x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
 :::{.fact}
 The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle is $\frac{n-2}{n}\pi$.
 :::
-:::{.definition title="The Dirichlet Problem"}
-Given a bounded piecewise continuous function $u:S^1\to \RR$, is there a unique extension to a continuous harmonic function $\tilde u: \DD\to \RR$?
-
-:::
+[[D-XR64P]]
 :::{.remark}
 More generally, this is a boundary value problem for a region where the *values* of the function on the boundary are given.
 Compare to prescribing conditions on the normal vector on the boundary, which would be a Neumann BVP.

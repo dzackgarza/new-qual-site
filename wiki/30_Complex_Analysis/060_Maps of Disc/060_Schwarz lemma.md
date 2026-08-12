@@ -2,33 +2,9 @@
 
 ## Hyperbolic Translations / Blaschke Factors
 
-:::{.definition title="Hyperbolic translations/Blaschke factors"}
-For $a\in \DD$, the maps
-\[
-\psi_a \da {a-z\over 1-\bar{a}z}
-\]
-are *hyperbolic translations* because they preserve the hyperbolic metric on the Poincaré disc.
-They're also commonly called **Blaschke factors**, and also sometimes taken to be
-\[
-\phi_a \da {z-a \over 1-\bar{a} z} = - \psi_a
-.\]
-A rational map of the form
-\[
-\Psi_{\vector a}(z) = \lambda \prod_{1\leq k\leq n} \psi_a(z) = \lambda \prod_{1\leq k \leq n} {a_i - z\over 1 - \bar{a_i} z},\qquad \vector a\da\tv{a_1,\cdots, a_n}
-\]
-with zeros $a_i \in \DD$ is called a **Blaschke product** and is a map $\DD\to \DD$ that preserves $S^1$.
-:::
+[[D-MFPYG]]
 
-:::{.proposition title="Properties of hyperbolic translations / Blaschke factors"}
-Some useful properties:
-
-- $\psi_a \in \Aut(\DD)$
-- $\psi_a(S^1) = S^1$
-- $\psi_a(0) = a$ and $\psi(a) = 0$
-- With this choice of sign, $\psi_{a} \inv = \psi_{a}$, so $\psi_a^2 = \id$.
-- $\psi_a'(z) = {\abs{a}^2 - 1 \over \qty{1-\bar{a} z}^2 }$
-- $\psi_a(\lambda z) = \lambda\psi_{\bar\lambda a}(z)$
-:::
+[[PR-ULJAJ]]
 
 :::{.proof title="of properties"}
 Inverting: set $f(z) = w$ and solve for $z$:
@@ -59,14 +35,7 @@ Scaling: use a fun trick, insert $1=\bar\lambda \lambda$ like so
 Being an involution: check $\psi_a(\psi_a(z))$ satisfies the Schwarz lemma and has two fixed points, forcing it to be the identity.
 :::
 
-:::{.theorem title="Structure theorem: automorphisms of the disc"}
-Every map $g\in \Aut(\DD)$ is of the form 
-
-\[
-\Aut(\DD) = \ts{ \lambda \psi_a(z) \st a\in \DD, \lambda \in S^1 }
-,\]
-i.e. they are all Blaschke factors and rotations.
-:::
+[[T-W26VL]]
 
 :::{.proof title="of theorem, sketch"}
 
@@ -82,28 +51,9 @@ i.e. they are all Blaschke factors and rotations.
 
 ## The Schwarz Lemma
 
-:::{.theorem title="Schwarz Lemma" ref="SchwarzzLemma"}
-If $f: \DD \to \DD$ is holomorphic with $f(0) = 0$, then
+[[T-DAETF]]
 
-1. $\abs{f(z)} \leq \abs z$ for all $z\in \DD$
-2. $\abs{f'(0)} \leq 1$.
-
-Moreover, if 
-
-- $\abs{f(z_0)} = \abs{z_0}$ for any $z_0\in \DD\smz$, or 
-- $\abs{f'(0)} = 1$, 
-
-then $f$ is a rotation, i.e. $f(z) = \lambda z$ for some $\abs{\lambda} = 1$.
-:::
-
-:::{.theorem title="Schwarz lemma, a useful alternative statement"}
-Let $f:\DD\to \DD$ be holomorphic with $f(0) = 0$. 
-Then either
-
-- $f(z) = e^{i\theta}z$ is a rotation, or
-- $\abs{f'(0)} < 1$ and $\abs{f(z)} < \abs{z}$ for all $z\in \DD$, noting the strict inequalities.
-
-:::
+[[T-VM6MJ]]
 
 :::{.proof title="of Schwarz"}
 \envlist
@@ -128,9 +78,9 @@ Then either
 :::{.proof title="of Schwarz, alternative"}
 
 
-![](figures/2021-12-14_16-30-35.png)
+![](../../../../assets/assets/figures/2021-12-14_16-30-35.png)
 
-![](figures/2021-12-14_16-30-46.png)
+![](../../../../assets/assets/figures/2021-12-14_16-30-46.png)
 
 :::
 

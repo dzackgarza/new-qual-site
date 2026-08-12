@@ -1,8 +1,6 @@
 # Liouville's Theorem
 
-:::{.theorem title="Liouville's Theorem" ref="Liouville"}
-If $f$ is entire and bounded, $f$ is constant.
-:::
+[[T-QHIHJ]]
 
 :::{.proof title="of Liouville"}
 \envlist
@@ -17,7 +15,7 @@ If $f$ is entire and bounded, $f$ is constant.
 
 :::{.proof title="of Liouville, alternative"}
 
-![](figures/2021-12-14_16-51-04.png)
+![](../../../../assets/assets/figures/2021-12-14_16-51-04.png)
 
 :::
 

@@ -2,22 +2,10 @@
 
 ## Schwarz
 
-:::{.theorem title="Schwarz Lemma" ref="SchwarzzLemma"}
-If $f: \DD \to \DD$ is holomorphic with $f(0) = 0$, then
-
-1. $\abs{f(z)} \leq \abs z$ for all $z\in \DD$
-2. $\abs{f'(0)} \leq 1$.
-
-Moreover, if
-
-- $\abs{f(z_0)} = \abs{z_0}$ for any $z_0\in \DD$, or
-- $\abs{f'(0)} = 1$,
-
-then $f$ is a rotation.
-:::
+[[T-XMSIT]]
 
 
-![](../../../assets/figures/2021-10-29_02-32-14.png)
+![](../../../../assets/assets/figures/2021-10-29_02-32-14.png)
 
 :::{.proof title="?"}
 \envlist
@@ -41,22 +29,14 @@ then $f$ is a rotation.
 
 
 [[E-TJ3WM]]
-:::{.theorem title="Biholomorphisms of the disc"}
-\[
-\Aut_\CC(\DD) = \ts{ z\mapsto e^{i\theta} \qty{\alpha - z \over 1 - \bar{\alpha} z} }
-.\]
-:::
+[[T-2XFTY]]
 
 :::{.proof title="?"}
 Schwarz lemma.
 :::
 
 
-:::{.theorem title="?"}
-\[
-\Aut_\CC(\HH) = \ts{ z \mapsto {az+b \over cz+d} \st a,b,c,d\in \CC, ad-bc=1 } \cong\PSL_2(\RR)
-.\]
-:::
+[[T-O2PGN]]
 
 
 

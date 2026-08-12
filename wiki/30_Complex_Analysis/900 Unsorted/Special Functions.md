@@ -9,17 +9,13 @@
 f(x) = {1\over 2\pi}\int_\RR e^{i\xi x} \hat{f}(\xi) \dxi 
 .\]
 
-![](figures/2021-12-20_07-55-38.png)
+![](../../../../assets/assets/figures/2021-12-20_07-55-38.png)
 
 :::
 
 ## The Gamma Function
 
-:::{.definition title="Gamma function"}
-\[
-\Gamma(z) = \int_0^\infty t^{z-1}e^{-t} \dt
-.\]
-:::
+[[D-TKGVZ]]
 
 :::{.remark}
 Some interesting properties of $\Gamma$:
@@ -39,77 +35,36 @@ $\mcl(t^{z-1}, s=1) = \Gamma(z)$ and $\mcl(t^n, s=1) = \Gamma(n+1)$.
 
 The residues:
 
-![](figures/2021-12-19_19-59-45.png)
+![](../../../../assets/assets/figures/2021-12-19_19-59-45.png)
 
 :::
 
-:::{.proposition title="$\Gamma$ is holomorphic on the right half-plane"}
+[[PR-NLV6Q]]
 
-![](figures/2021-12-19_19-58-16.png)
+[[PR-FBQ6F]]
 
-:::
-
-:::{.proposition title="Functional equation for $\Gamma$"}
-
-![](figures/2021-12-19_19-58-44.png)
-
-:::
-
-:::{.proposition title="Meromorphic continuation of $\Gamma$"}
-
-![](figures/2021-12-19_19-59-05.png)
-:::
+[[PR-YQZI3]]
 
 ## The Beta Function
 
-:::{.definition title="Beta function"}
-\[
-B(z, w)=\int_{0}^{1} t^{z-1}(1-t)^{w-1} \mathrm{~d} t
-.\]
-
-:::
+[[D-2WZLB]]
 
 [[E-I6CYR]]
 ## Riemann Zeta
 
-:::{.definition title="The Riemann Zeta Function"}
+[[D-HJYH3]]
 
-![](figures/2021-12-19_20-00-12.png)
+[[PR-K4KTF]]
 
-There is a product expansion
-\[
-\zeta(s) = \prod_{p\in \spec \ZZ} {1\over 1-p^{-s}}
-,\]
-where $\spec \ZZ$ are the primes of $\ZZ$.
-:::
-
-:::{.proposition title="Meromorphic continuation of $\zeta$"}
-
-![](figures/2021-12-19_20-00-54.png)
-
-There is a functional equation:
-
-![](figures/2021-12-19_20-03-08.png)
-
-:::
-
-:::{.proposition title="Zeros of $\zeta$"}
-
-![](figures/2021-12-19_20-02-43.png)
-
-:::
+[[PR-QHFCK]]
 
 ## Weierstrass $\wp$
 
-:::{.definition title="The Weierstrass $\wp$ function"}
-
-![](figures/2021-12-19_22-33-34.png)
-
-:::
+[[D-LGP2Q]]
 
 :::{.remark}
 
-![](figures/2021-12-19_22-34-18.png)
+![](../../../../assets/assets/figures/2021-12-19_22-34-18.png)
 
 :::
 
@@ -121,35 +76,16 @@ There is a functional equation:
 
 :::{.fact title="Infinite products"}
 
-![](figures/2021-12-14_17-36-04.png)
+![](../../../../assets/assets/figures/2021-12-14_17-36-04.png)
 
 :::
 
 
-:::{.theorem title="Hadamard factorization"}
-Write
-\[
-E_{p}(z)= \begin{cases}
-1-z & n=0 \\ 
-(1-z) \exp \left(z+\frac{z^{2}}{2}+\cdots+\frac{z^{n}}{n}\right) & \text { otherwise }
-\end{cases}
-,\]
-and define the **order** of an entire function $f$ to be the infimum over $p$ where there exists some $R$ such that $\abs{f(z)} \leq e^{\abs{z}^p}$ for $\abs{z} > R$.
-Suppose $f$ is entire of order $p$, write $\ts{z_k}_{k\leq n}$ for its set of nonzero zeros repeated with multiplicity, and suppose $z=0$ is a zero of $f$ of order $m$.
-Then there is a decomposition
-\[
-f(z) = z^m e^{g(z)}\prod_{k\geq 1} E_p\qty{z\over z_k}
-,\]
-where $\deg(g) \leq p$.
-:::
+[[T-2WJ4U]]
 
 
 [[E-DR5LY]]
-:::{.theorem title="Weierstrass factorization"}
-
-![](figures/2021-12-14_17-36-26.png)
-
-:::
+[[T-IEJFA]]
 
 :::{.remark}
 An interesting way to sum infinite series:

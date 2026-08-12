@@ -88,24 +88,14 @@ and check
 
 :::
 ## Estimates
-:::{.proposition title="Length bound / ML Estimate"}
-\[
-\abs{ \int_\gamma f} \leq ML \da \sup_{z\in \gamma} \abs{f} \cdot \mathrm{length}(\gamma)
-.\]
-:::
+[[PR-ZCMJQ]]
 :::{.proof title="?"}
 \[
 \left|\int_{\gamma} f(z) d z\right| \leq \sup _{t \in[a, b]}|f(z(t))| \int_{a}^{b}\left|z^{\prime}(t)\right| d t \leq \sup _{z \in \gamma}|f(z)| \cdot \operatorname{length}(\gamma)
 .\]
 
 :::
-:::{.proposition title="Jordan's Lemma"}
-Suppose that $f(z) = e^{iaz}g(z)$ for some $g$, and let $C_R \da \ts{ z=Re^{it} \st t\in [0, \pi] }$. Then
-\[
-\abs{\int_{C_R} f(z) \dz} \leq {\pi M_R \over a}
-\]
-where $M_R \da \sup_{t\in [0, \pi]} \abs{g(Re^{it})}$.
-:::
+[[PR-QZEJM]]
 :::{.proof title="?"}
 \[
 \abs{ \int_{C_R} f(z)\dz }
@@ -126,7 +116,7 @@ where $M_R \da \sup_{t\in [0, \pi]} \abs{g(Re^{it})}$.
 where we've used that on $[0, \pi/2]$, there is an inequality $2t/\pi \leq \sin(t)$.
 This is obvious from a picture, since $\sin(t)$ is a height on $S^1$ and $2t/\pi$ is a height on a diagonal line:
 
-![image_2021-06-09-01-29-22](../../../assets/figures/image_2021-06-09-01-29-22.png)
+![image_2021-06-09-01-29-22](../../../../assets/assets/figures/image_2021-06-09-01-29-22.png)
 
 :::
 
@@ -174,39 +164,11 @@ You may be able to just compute an integral!
 
 ## Residue Formulas
 
-:::{.theorem title="The Residue Theorem"}
-Let $f$ be meromorphic on a region $\Omega$ with poles \( \ts{ \elts{z}{N} } \).
-Then for any $\gamma \in \Omega\sm \ts{ \elts{z}{N} }$,
-\[
-{1 \over 2\pi i } \int_\gamma f(z) \dz = \sum_{j=1}^N n_\gamma(z_j) \Res_{z=z_j} f
-.\]
-If $\gamma$ is a toy contour, then
-\[
-{1\over 2\pi i}\int_\gamma f\dz = \sum_{j=1}^N \Res_{z=z_j}f
-.\]
-
-:::
-:::{.proposition title="Residue formula for higher order poles"}
-If $f$ has a pole $z_0$ of order $n$, then
-\[
-\Res_{z=z_0} f = \lim_{z\to z_0} {1 \over (n-1)!} \qty{\dd{}{z}}^{n-1} (z-z_0)^n f(z)
-.\]
-:::
-:::{.proposition title="Residue formula for simple poles"}
-As a special case, if $z_0$ is a simple pole of $f$, then
-\[
-\Res_{z=z_0}f = \lim_{z\to z_0} (z-z_0) f(z)
-.\]
-:::
-![](../../../assets/figures/2021-10-29_01-33-46.png)
-:::{.corollary title="Better derivative formula that sometimes works for simple poles"}
-
-If additionally $f=g/h$ where $h(z_0) = 0$ and $h'(z_0)\neq 0$,
-\[
-\Res_{z=z_0} {g(z) \over h(z)} = {g(z_0) \over h'(z_0)}
-.\]
-
-:::
+[[T-HRPNO]]
+[[PR-2XFT4]]
+[[PR-L4Y5F]]
+![](../../../../assets/assets/figures/2021-10-29_01-33-46.png)
+[[C-Q6BSL]]
 :::{.proof title="?"}
 Apply L'Hopital:
 \[
@@ -220,58 +182,20 @@ Let $f(z) = \frac{1}{1+z^2}$, then $g(z) = 1, h(z) = 1+z^2$, and $h'(z) = 2z$ so
 \Res_{z=i}{1\over 1+z^2} = \frac{1}{2i}
 .\]
 :::
-:::{.proposition title="Residue at infinity"}
-
-\[
-\Res_{z=\infty}f(z) = \Res_{z=0} g(z) && g(z) \da -{1 \over z^2}f\qty{1\over z}
-.\]
-
-:::
+[[PR-D3CDJ]]
 ### Exercises
 > Some good computations [here](https://math.mit.edu/~jorloff/18.04/notes/topic9.pdf).
 [[E-V2VS5]]
 [[E-SNRS5]]
 [[E-ENWYG]]
 [[E-PMURO]]
-![image_2021-05-17-13-33-55](../../../assets/figures/image_2021-05-17-13-33-55.png)
+![image_2021-05-17-13-33-55](../../../../assets/assets/figures/image_2021-05-17-13-33-55.png)
 
-:::{.theorem title="The residue theorem"}
-Let $f$ be meromorphic on a region $\Omega$ with poles \( \ts{ \elts{z}{N} } \).
-Then for any $\gamma \in \Omega\sm \ts{ \elts{z}{N} }$, 
-\[
-{1 \over 2\pi i } \int_\gamma f(z) \dz = \sum_{j=1}^N n_\gamma(z_j) \Res_{z=z_j} f
-.\]
-If $\gamma$ is a toy contour with winding number 1 about each pole, then
-\[
-{1\over 2\pi i}\int_\gamma f\dz = \sum_{j=1}^N \Res_{z=z_j}f
-.\]
+[[T-VE5MW]]
 
-:::
+[[T-ESKLY]]
 
-:::{.theorem title="The residue formula"}
-If $f$ has a pole $z_0$ of order $n$, then
-\[  
-\Res_{z=z_0} f = \lim_{z\to z_0} {1 \over (n-1)!} \qty{\dd{}{z}}^{n-1} (z-z_0)^n f(z)
-.\]
-
-As a special case, if $z_0$ is a simple pole of $f$, then
-\[  
-\Res_{z=z_0}f = \lim_{z\to z_0} (z-z_0) f(z)
-.\]
-:::
-
-:::{.corollary title="Residue formula: rational function formula for simple poles"}
-If additionally $f=g/h$ where $h(z_0) = 0$ and $h'(z_0)\neq 0$, 
-\[
-\Res_{z=z_0} {g(z) \over h(z)} = {g(z_0) \over h'(z_0)}
-.\]
-
-Note that if $f(z) = 1/h(z)$ and $z_0$ is a simple pole, this reduces to
-\[
-\Res_{z=z_0}{1\over h(z)} = {1\over h'(z_0)}
-.\]
-
-:::
+[[C-ZTEH7]]
 
 :::{.warnings}
 Note that only the denominator gets differentiated, not the numerator!
@@ -286,32 +210,13 @@ Apply L'Hopital:
 .\]
 :::
 
-:::{.theorem title="Residue formula: poles at infinity"}
-\[
-\Res_{z=\infty}f(z) = \Res_{z=0} g(z) && g(z) \da -{1 \over z^2}f\qty{1\over z} 
-.\]
+[[T-WFXQP]]
 
-Note on where this weird formula comes from: residues are associated not to function $f$ but to *differential forms* $f(z)\dz$, and inversion sends $f(z) \dz\to f(1/z)d(1/z) = f(1/z)\cdot -{1\over z^2}\dz$.
-This residue can alternatively be calculated for $f$ by taking $\gamma$ a contour enclosing all singularities of $f$ and computing
-\[
-\Res_{z=\infty}f(z) = -{1\over 2\pi}\int_\gamma f(z) \dz
-.\]
-
-:::
-
-:::{.theorem title="Residue formula: fractional residues"}
-If $z_0$ is an order 1 pole of $f$ and $\gamma_{\eps, \theta}$ is an arc of the circle $C_\eps \da \ts{ \abs{z-z_0} = \eps}$ subtending an angle of $\theta$, then
-\[
-\lim_{\eps\to 0} \int_{\gamma_{\eps, \theta}} f(z) \dz  = i\theta \Res_{z = z_0}f(z)
-.\]
-
-![](../../../assets/figures/2021-12-22_05-13-02.png)
-
-:::
+[[T-SSNLT]]
 
 :::{.proof title="?"}
 
-![](../../../assets/figures/2021-12-22_05-13-27.png)
+![](../../../../assets/assets/figures/2021-12-22_05-13-27.png)
 
 :::
 

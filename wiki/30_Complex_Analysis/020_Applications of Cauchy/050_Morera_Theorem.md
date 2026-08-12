@@ -1,8 +1,6 @@
 # Morera's Theorem 
 
-:::{.theorem title="Morera's Theorem" ref="Morera"}
-If $f$ is continuous on a domain $\Omega$ and $\int_T f = 0$ for every triangle $T\subset \Omega$, then $f$ is holomorphic.
-:::
+[[T-LHSMY]]
 
 :::{.slogan}
 If every integral along a triangle vanishes, implies holomorphic.
@@ -24,9 +22,7 @@ Sometimes stated for rectangles with sides parallel to axes.
 The power of this theorem is that virtually no assumptions on $f$ are made, e.g. $f$ is not even assumed smooth or even differentiable.
 :::
 
-:::{.corollary title="Sufficient condition for a sequence to converge to a holomorphic function"}
-If \( \ts{ f_n }_{n\in \NN} \) is a holomorphic sequence on a region \( \Omega  \) which uniformly converges to $f$ on every compact subset $K \subseteq \Omega$, then $f$ is holomorphic, and $f_n' \to f'$ uniformly on every such compact subset $K$.
-:::
+[[C-TODSQ]]
 
 :::{.proof title="?"}
 Commute limit with integral and apply Morera's theorem.
@@ -39,27 +35,11 @@ This can be applied to series of the form $\sum_k f_k(z)$.
 ### Symmetric Regions
 In this section, take $\Omega$ to be a region symmetric about the real axis, so $z\in \Omega \iff \bar{z} \in \Omega$.
 Partition this set as $\Omega^+ \subseteq \HH, I \subseteq \RR, \Omega^- \subseteq \bar{\HH}$.
-:::{.theorem title="Symmetry Principle"}
-Suppose that $f^+$ is holomorphic on $\Omega^+$ and $f^-$ is holomorphic on $\Omega^-$, and $f$ extends continuously to $I$ with $f^+(x) = f^-(x)$ for $x\in I$.
-Then the following piecewise-defined function is holomorphic on $\Omega$:
-\[
-f(z)
-\da
-\begin{cases}
-f^+(z) & z\in \Omega^+
-\\
-f^-(z) & z\in \Omega^-
-\\
-f^+(z) = f^-(z) & z\in I.
-\end{cases}
-\]
-:::
+[[T-SBGSC]]
 :::{.proof title="?"}
 Apply Morera?
 :::
-:::{.theorem title="Schwarz Reflection " ref="SchwarzReflection"}
-If $f$ is continuous and holomorphic on $\HH^+$ and real-valued on $\RR$, then the extension defined by $F^-(z) = \bar{f(\bar{z})}$ for $z\in \HH^-$ is a well-defined holomorphic function on $\CC$.
-:::
+[[T-Q3GGF]]
 :::{.proof title="?"}
 Apply the symmetry principle.
 :::
@@ -67,15 +47,13 @@ Apply the symmetry principle.
 $\HH^+, \HH^-$ can be replaced with any region symmetric about a line segment $L\subseteq \RR$.
 :::
 
-:::{.theorem title="Goursat"}
-Holomorphic implies analytic.
-:::
+[[T-B3BDO]]
 
 :::{.proof title="?"}
 Taken from Gamelin: the proof is based on Morera's theorem. 
 Idea: break region into nested cubes:
 
-![](../../../assets/figures/2021-12-10_19-47-54.png)
+![](../../../../assets/assets/figures/2021-12-10_19-47-54.png)
 
 Let $R$ be a closed rectangle in $D$. We subdivide $R$ into four equal subrectangles. Since the integral of $f(z)$ around $\partial R$ is the sum of the integrals of $f(z)$ around the four subrectangles, there is at least one of the subrectangles, call it $R_{1}$, for which
 \[

@@ -1,9 +1,6 @@
 # PDEs
 
-:::{.definition title="The Dirichlet Problem"}
-Given a bounded piecewise continuous function $u:S^1\to \RR$, is there a unique extension to a continuous harmonic function $\tilde u: \DD\to \RR$?
-
-:::
+[[D-XR64P]]
 
 :::{.remark}
 More generally, this is a boundary value problem for a region where the *values* of the function on the boundary are given.

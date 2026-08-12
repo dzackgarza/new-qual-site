@@ -1,0 +1,18 @@
+---
+schema: qual/card@1
+id: T-MEWTS
+kind: theorem
+title: "Characterization of conformal maps"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations: []
+review: draft
+---
+:::{.theorem title="Characterization of conformal maps"}
+Conformal maps $\DD\to\DD$ have the form
+\[
+g(z) = \lambda {1-a \over 1 - \bar a z}, \quad \abs{a} < 1, \quad \abs{\lambda} = 1
+.\]
+:::

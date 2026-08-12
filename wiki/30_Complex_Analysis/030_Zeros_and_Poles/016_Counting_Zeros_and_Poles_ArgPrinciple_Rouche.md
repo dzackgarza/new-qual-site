@@ -4,13 +4,7 @@
 
 
 
-:::{.definition title="The logarithmic derivative"}
-The **logarithmic derivative** is defined as
-\[
-\del_{\log} f \da {f' \over f}
-.\]
-It converts all poles and zeros of $f$ into simple poles of $\del_{\log f}$.
-:::
+[[D-IA5FS]]
 
 [[E-VI5ZS]]
 
@@ -23,23 +17,9 @@ d \qty{ \log(f) } = {f'\over f}\dz  \implies \Res_{z=p}(d \log(f) ) = v_p(f)
 
 :::
 
-:::{.definition title="Winding Number"}
-For $\gamma \subseteq \Omega$ a closed curve not passing through a point $z_0$, the **winding number of $\gamma$ about $z_0$** (or the **index**) is defined as
-\[
-\Ind_{z=z_0}(\gamma) \da {1\over 2\pi i} \int_\gamma {1\over \xi -z_0}\dxi
-.\]
+[[D-QEVVE]]
 
-:::
-
-:::{.theorem title="Argument Principle, Zeros/Poles Version"}
-For $f$ meromorphic in $\Omega$ with multisets of zeros \( Z_f \da \ts{ z_j } \) and poles \( P_f\da \ts{ p_k } \) (so repeated with multiplicity)
-for $\gamma \da \bd \Omega$ not intersect
-\[
-{1\over 2\pi i} \int_\gamma \del_{\log} f(z) \dz
-&= \# Z_f - \# P_f
-,\]
-where $\# Z_f$ and $\# P_f$ are the number of zeros and poles respectively, counted with multiplicity.
-:::
+[[T-VCX3Y]]
 
 :::{.proof title="?"}
 \envlist
@@ -69,15 +49,7 @@ so $z_0$ is a simple pole of $\del_{\log} f$ and $\res_{z=z_0} \del_{\log} f = m
 
 :::
 
-:::{.theorem title="Argument Principle, Index Version"}
-With the same setup as above,
-\[
-{1\over 2\pi i} \int_\gamma \del_{\log} f(z) \dz
-&= \Ind_{w=0}(f\circ \gamma)(w)
-.\]
-
-
-:::
+[[T-EBAOE]]
 
 :::{.proof title="?"}
 Make the change of variables $w = f(z)$, then $z=\gamma(t) \mapsto w = (f\circ \gamma)(t)$ and $\dw = f'(z) \dz$, so
@@ -100,20 +72,7 @@ Let $f(z) = z^2 + z = z(z+1)$.
 
 ## Rouché
 
-:::{.theorem title="Rouché's Theorem" ref="Rouche"}
-If
-
-- $f, g$ are meromorphic on $\Omega$
-- $\gamma \subset \Omega$ is a toy contour winding about each zero/pole of $f, g$ exactly once,
-- $\abs{g} < \abs{f}$ on $\gamma$
-
-then
-\[
-\Ind_{z=0}(f\circ \gamma)(z) = \Ind_{z=0}((f+g)\circ \gamma)(z) \implies Z_f - P_f = Z_{f+g} - P_{f+g}
-.\]
-In particular, if $f, g$ are holomorphic, they have the same number of zeros in $\Omega$.
-
-:::
+[[T-5JNUU]]
 
 :::{.slogan}
 The number of zeros/poles are determined by a dominating function.
@@ -122,31 +81,22 @@ The number of zeros/poles are determined by a dominating function.
 
 
 
-![](../../../assets/figures/2021-10-29_01-39-19.png)
+![](../../../../assets/assets/figures/2021-10-29_01-39-19.png)
 
 
-![](../../../assets/figures/2021-10-29_01-39-43.png)
+![](../../../../assets/assets/figures/2021-10-29_01-39-43.png)
 
 [[E-T4VAX]]
 [[E-XQ4BS]]
-:::{.corollary title="Open Mapping"}
-Any holomorphic non-constant map is an open map.
-:::
+[[C-FRF33]]
 
 
 
-:::{.corollary title="Maximum Modulus" ref="MaximumModulus"}
-If $f$ is holomorphic and nonconstant on an open connected region $\Omega$, then $\abs{f}$ can not attain a maximum on $\Omega$.
-If $\Omega$ is bounded and $f$ is continuous on $\bar \Omega$, then $\max_{\bar \Omega} \abs{f}$ occurs on $\bd \Omega$.
-Conversely, if $f$ attains a local supremum at $z_0 \in \Omega$, then $f$ is constant on $\Omega$.
-:::
+[[C-GM57K]]
 
 
 
-:::{.corollary title="?"}
-If $f$ is nonzero on $\Omega$, then $f$ attains a minimum on $\bd \Omega$.
-This follows from applying the MMP to $1/f$.
-:::
+[[C-YQUHR]]
 
 ## Counting Zeros
 

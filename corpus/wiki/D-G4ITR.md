@@ -1,0 +1,18 @@
+---
+schema: qual/card@1
+id: D-G4ITR
+kind: definition
+title: "Laplacian and Harmonic Functions"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+relations: []
+review: draft
+---
+:::{.definition title="Laplacian and Harmonic Functions"}
+A real function of two variables $u(x, y)$ is **harmonic** iff it is in the kernel of the Laplacian operator:
+\[
+\Delta u \definedas \qty{\dd{^2}{x^2} + \dd{^2}{y^2}}u = 0
+.\]
+:::

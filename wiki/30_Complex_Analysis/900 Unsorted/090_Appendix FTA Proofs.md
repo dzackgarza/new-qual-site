@@ -24,14 +24,14 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::{.proof title="From Gamelin"}
 
-![](../../../assets/figures/2021-12-10_18-02-14.png)
+![](../../../../assets/assets/figures/2021-12-10_18-02-14.png)
 
 :::
 
 :::{.proof title="using Rouche's theorem"}
 
-![](../../../assets/30_Complex_Analysis/figures/2021-07-29_20-41-18.png)
-![](../../../assets/30_Complex_Analysis/figures/2021-07-29_20-41-29.png)
+![](../../../../assets/assets/30_Complex_Analysis/figures/2021-07-29_20-41-18.png)
+![](../../../../assets/assets/30_Complex_Analysis/figures/2021-07-29_20-41-29.png)
 
 - Let $P(z) = a_nz^n + \cdots + a_0$
 - Set $f(z) = a_n z^n$ and $g(z) = P(z) - f(z) = a_{n-1}z^{n-1} + \cdots + a_0$, so $f+g = P$.
@@ -61,15 +61,15 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 :::{.proof title="?"}
 
-![](../../../assets/figures/2021-12-14_16-58-33.png)
+![](../../../../assets/assets/figures/2021-12-14_16-58-33.png)
 
 :::
 
 :::{.proof title="from Gamelin"}
 
-![](../../../assets/figures/2021-12-10_19-52-51.png)
+![](../../../../assets/assets/figures/2021-12-10_19-52-51.png)
 
-![](../../../assets/figures/2021-12-10_19-52-58.png)
+![](../../../../assets/assets/figures/2021-12-10_19-52-58.png)
 
 :::
 
@@ -115,19 +115,9 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 
 ## Generalized Liouville
 
-:::{.theorem title="Generalized Liouville"}
-If $X$ is a compact complex manifold,
-any holomorphic $f:X\to \CC$ is constant.
-:::
+[[T-BBQLQ]]
 
-:::{.lemma title="?"}
-If $f:X\to Y$ is a nonconstant holomorphic map between Riemann surfaces with $X$ compact, then
-
-- $f$ must be surjective,
-- $Y$ must be compact,
-- $f\inv(q)$ is finite for all $q\in Y$,
-- The branch and ramification loci consist of finitely many points.
-:::
+[[L-ZXBBI]]
 
 :::{.proof title="of FTA, using Generalized Liouville"}
 Given a nonconstant $p\in \CC[x]$, regard it as a function $p: \PP^1(\CC) \to \PP^1(\CC)$ by extending so that $p(\infty) = \infty$.
@@ -135,12 +125,8 @@ Since $p$ is nonconstant, by the lemma $p$ is surjective, so there exists some $
 :::
 
 # Unsorted Theorems
-:::{.theorem title="Riemann's Removable Singularity Theorem"}
-If $f$ is holomorphic on $\Omega$ except possibly at $z_0$ and $f$ is bounded on $\Omega\setminus\theset{z_0}$, then $z_0$ is a removable singularity.
-:::
-:::{.theorem title="Little Picard"}
-If $f:\CC\to \CC$ is entire and nonconstant, then $\im(f)$ is either $\CC$ or $\CC\sm\ts{z_0}$ for some point $z_0$.
-:::
+[[T-ISZP3]]
+[[T-AELHU]]
 :::{.corollary}
 The ring of holomorphic functions on a domain in $\CC$ has no zero divisors.
 :::

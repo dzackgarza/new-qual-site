@@ -1,13 +1,6 @@
 # Casorati-Weierstrass
 
-:::{.theorem title="Casorati-Weierstrass" ref="Casorati"}
-If $f$ is holomorphic on $\Omega\setminus\theset{z_0}$ where $z_0$ is an essential singularity, then for every $V\subset \Omega\setminus\theset{z_0}$, $f(V)$ is dense in $\CC$.
-
-Equivalently, suppose $z_{0}$ is an essential isolated singularity of $f(z)$. Then for every complex number $w_{0}$, there is a sequence $z_{n} \rightarrow z_{0}$ such that $f\left(z_{n}\right) \rightarrow w_{0}$.
-
-![](figures/2022-01-05_05-28-04.png)
-
-:::
+[[T-C5VEI]]
 
 :::{.slogan}
 The image of a punctured disc at an essential singularity is dense in $\CC$.
@@ -42,11 +35,11 @@ and use that it's bounded to conclude that $z_0$ is either removable or a pole f
 
 In detail, from Gamelin:
 
-![](figures/2021-12-10_18-47-34.png)
+![](../../../../assets/assets/figures/2021-12-10_18-47-34.png)
 
 :::
 
-![](../../../assets/figures/2021-10-29_01-31-06.png)
+![](../../../../assets/assets/figures/2021-10-29_01-31-06.png)
 
 # Exercises
 

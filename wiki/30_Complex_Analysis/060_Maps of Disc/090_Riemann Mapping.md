@@ -4,15 +4,7 @@
 If $\Omega \subseteq \CC$ with $\pi_1 \Omega = 1$ then $\Omega$ is biholomorphic to $\DD$.
 :::
 
-:::{.theorem title="Riemann Mapping"}
-If $\Omega$ is simply connected, nonempty, and not all of $\CC$, then for every $z_{0}\in \Omega$ there exists a unique conformal map $F:\Omega \to \DD$.
-Moreover, it can be arranged so that $F(z_{0}) = 0$ and $F'(z_{0}) > 0$.
-
-Thus any two such sets $\Omega_{1}, \Omega_{2}$ are conformally equivalent.
-
-![](figures/2021-12-14_16-33-52.png)
-
-:::
+[[T-4MDS6]]
 
 :::{.remark}
 Necessity of hypothesis:
@@ -55,29 +47,20 @@ h'_w(w) &= {1\over 1 - \abs{w}^2}
 - Show $h$ is surjective by showing $\abs{h'(z_0)} \geq \abs{g'(z_0)}$ (contrapositive to earlier step).
 
 
-![](figures/2021-12-14_16-34-14.png)
+![](../../../../assets/assets/figures/2021-12-14_16-34-14.png)
 
-![](figures/2021-12-14_16-34-24.png)
+![](../../../../assets/assets/figures/2021-12-14_16-34-24.png)
 
-![](figures/2021-12-14_16-34-50.png)
+![](../../../../assets/assets/figures/2021-12-14_16-34-50.png)
 
-![](figures/2021-12-14_17-34-54.png)
-
-:::
-
-:::{.corollary title="Uniformization"}
-A simply connected nonempty domain $\Omega \subseteq \CC$ is conformally equivalent to exactly one of
-
-- $\CP^1$,
-- $\CC$, or
-- $\DD$.
+![](../../../../assets/assets/figures/2021-12-14_17-34-54.png)
 
 :::
+
+[[C-BKYF7]]
 
 [[P-Z776N]]
-:::{.corollary title="Injective implies holomorphic inverse"}
-If $f:U\to V$ is holomorphic and injective, then $f$ is invertible on its image.
-:::
+[[C-FVT4V]]
 
 :::{.proof title="?"}
 \envlist

@@ -1,17 +1,8 @@
 # The Identity/Continuation Principle
 
-:::{.definition title="Limit point"}
-Recall that a point $x$ is a limit point of a set $S$ if every punctured neighborhood of $x$ contains a point of $S$, and any infinite subset of a compact set contains a limit point.
-:::
+[[D-TFSPT]]
 
-:::{.theorem title="Continuation Principle / Identity Theorem"}
-Suppose $f$ is holomorphic on a bounded connected domain $\Omega \neq \emptyset$.
-TFAE:
-
-- $f(z) \equiv 0$
-- There is an accumulation point $z_0$ and a sequence $\ts{z_k}\to z_0$ with $f(z_k) = 0$ for all $k$, with the $z_k$ distinct.
-- There is a point $z_0$ with $f^{(n)}(z_0) = 0$ for all $n$.
-:::
+[[T-SVF2W]]
 
 :::{.slogan}
 Two functions agreeing on a set with a limit point are equal on a domain.
@@ -49,11 +40,7 @@ So $w_0$ is an interior point of $V$, making $V$ open and $U$ closed.
 ![[attachments/Pasted image 20211215021255.png]]
 :::
 
-:::{.theorem title="Identity principle (Generalization)"}
-If $f(z)$ and $g(z)$ are analytic on a domain $\Omega$, and if $f(z)=g(z)$ for $z$ belonging to a set that has a nonisolated point, then $f(z)=g(z)$ for all $z \in \Omega$.
-
-More generally, if $\Omega$ is a domain with a nonisolated point, $F(z, w): \Omega\cartpower{2}\to \CC$ is holomorphic in both variables, and $F(z, w) \equiv 0$ on $\Omega$, then $F(z, w) \equiv 0$ on any domain $\Omega' \contains \Omega$. 
-:::
+[[T-OFMGU]]
 
 :::{.example title="?"}
 Since $\sin^2(z)+\cos^2(z) = 1$ for $z\in \RR$, which has a limit point, this holds for $z\in \CC$ as well.
