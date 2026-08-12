@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HQ6DM
 kind: problem
-title: '**Definition:**'
+title: "Definition: We say $A \\sim B$ in $M_n(R)$ $\\iff$ there exists an invertible $P$ such that $B=PAP\\inv$."
 classification:
   areas:
   - algebra

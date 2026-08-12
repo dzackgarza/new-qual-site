@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W3PZY
 kind: problem
-title: "Let $f(x) \\in F[x]$ be irreducible, then since $p(x) \\definedas \\gcd(f\u2026"
+title: "Let $f(x) \\in F[x]$ be irreducible, then since $p(x) \\definedas \\gcd(f, f')$ must divide $f$ and $f$ is\u2026"
 classification:
   areas:
   - algebra

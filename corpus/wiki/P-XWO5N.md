@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XWO5N
 kind: problem
-title: "a. Let $z, w \\in \\CC$ with $\\bar z w \\neq 1$."
+title: "Let $z, w \\in \\CC$ with $\\bar z w \\neq 1$. Prove that $\\abs{w-z \\over 1 - \\bar w z} < 1 \\quad\\text{ if } \\abs{z}<1,~ \\abs{w} < 1$ with equality when $\\abs{z} = 1$ or $\\abs{w} = 1$. Prove\u2026"
 classification:
   areas:
   - complex-analysis

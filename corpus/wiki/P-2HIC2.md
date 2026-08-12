@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2HIC2
 kind: problem
-title: "Let $f, g \\in L^1([0, 1])$ and for all $x\\in [0, 1]$ define"
+title: "Let $f, g \\in L^1([0, 1])$ and for all $x\\in [0, 1]$ define $F(x) \\definedas \\int _{0}^{x} f(y) \\, dy \\qtext{and} G(x)\\definedas \\int _{0}^{x} g(y) \\, dy$"
 classification:
   areas:
   - real-analysis
@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="?"}
+
+::: {.problem title="?"}
 Let $f, g \in L^1([0, 1])$ and for all $x\in [0, 1]$ define
 \[
 F(x) \definedas \int _{0}^{x} f(y) \, dy 

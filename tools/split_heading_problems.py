@@ -32,6 +32,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from card_titles import title_of
 
 ROOT = Path(__file__).resolve().parent.parent
 WIKI = ROOT / "wiki"
@@ -149,19 +150,6 @@ def mint_id(prefix: str, taken: set[str], seed: str) -> str:
     raise RuntimeError(f"no free id for {seed}")
 
 
-MARKER = re.compile(r"^([a-z]|\d+|\(?[a-z]\)?)\.?$")
-
-
-def title_of(body: str, fallback: str) -> str:
-    """First real clause of a statement, skipping fences and bare list markers."""
-    for line in body.splitlines():
-        line = line.strip()
-        if not line or line.startswith((":::", "\\", "^")) or MARKER.match(line):
-            continue
-        return line if len(line) <= 70 else line[:69] + "…"
-    return fallback
-
-
 def plan_page(page: Path, cards: dict[str, Card], defective: set[str]) -> Iterator[tuple[int, int, list[str], list[tuple[str | None, str]]]]:
     """Yield (run, chunks, ids) for every run of this page that needs a split."""
     lines = page.read_text().splitlines()
@@ -218,7 +206,7 @@ def main() -> int:
                             "schema": template["schema"],
                             "id": cid,
                             "kind": template["kind"],
-                            "title": title_of(text, head or ""),
+                            "title": title_of(text),
                             "classification": {
                                 "areas": list(template["classification"]["areas"]),
                                 "topics": [],
@@ -249,7 +237,7 @@ def main() -> int:
                 block += [f"[[{cid}]]", ""]
                 card = cards[cid]
                 card.body = "\n" + text.strip() + "\n"
-                card.front["title"] = title_of(text, card.front["title"])
+                card.front["title"] = title_of(text)
             lines[start:end] = block
         page.write_text("\n".join(lines) + "\n")
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VLZN2
 kind: problem
-title: "- Show that if $f\\in L^1$ then $\\hat f$ is bounded and uniformly conti\u2026"
+title: "Show that if $f\\in L^1$ then $\\hat f$ is bounded and uniformly continuous. Is\u2026"
 classification:
   areas:
   - real-analysis

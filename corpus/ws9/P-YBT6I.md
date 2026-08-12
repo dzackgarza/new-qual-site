@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YBT6I
 kind: problem
-title: Let
+title: "Let $fg(x) := \\int_{-\\infty}^{+\\infty} f(y)g(x-y)dy$ denote the convolution of $f$ and $g$."
 classification:
   areas:
   - real-analysis

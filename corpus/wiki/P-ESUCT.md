@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ESUCT
 kind: problem
-title: "Let $\\zeta_n$ denote a primitive $n$th root of 1 $\\in \\QQ$."
+title: "Let $\\zeta_n$ denote a primitive $n$th root of 1 $\\in \\QQ$. You may assume the\u2026"
 classification:
   areas:
   - algebra

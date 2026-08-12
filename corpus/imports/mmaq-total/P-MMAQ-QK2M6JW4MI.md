@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-QK2M6JW4MI
 kind: problem
-title: Given a finite group $G$, recall that its *regular representation*
+title: "Given a finite group $G$, recall that its regular\u2026"
 classification:
   areas:
   - algebra

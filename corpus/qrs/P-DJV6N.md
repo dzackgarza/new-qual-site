@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DJV6N
 kind: problem
-title: "Assume that $\\abs b < 1$ and show that the following polynomial has ex\u2026"
+title: "Assume that $\\abs b < 1$ and show that the following polynomial has\u2026"
 classification:
   areas:
   - complex-analysis

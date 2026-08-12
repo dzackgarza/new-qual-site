@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ARI3E
 kind: problem
-title: "1. Negate $\\forall x\\in \\RR,~\\exists y\\in \\RR \\suchthat \\abs{x-y} \\geq\u2026"
+title: "Negate $\\forall x\\in \\RR,~\\exists y\\in \\RR \\suchthat \\abs{x-y} \\geq 2017$ $\\exists x\\in \\RR \\suchthat \\forall y\\in \\RR,~ \\abs{x-y} < 2017$ Note that $p\\implies q \\iff q \\vee \\neg p$, so we have\u2026"
 classification:
   areas:
   - prelim

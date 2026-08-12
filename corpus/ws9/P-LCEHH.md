@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LCEHH
 kind: problem
-title: Give an example of a tower of field extensions $F \subseteq E \subsete…
+title: "Give an example of a tower of field extensions $F \\subseteq E \\subseteq K \\subseteq L$, with $L/F$\u2026"
 classification:
   areas:
   - algebra

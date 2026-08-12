@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XCSKB
 kind: problem
-title: "Let $R$ be a ring and $M$ an $R\\dash$module."
+title: "Let $R$ be a ring and $M$ an $R\\dash$module. $\\tor(M) = \\{m \\in M \\suchthat \\exists r \\in R, ~r \\neq 0, ~rm = 0\\}$"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YZBES
 kind: problem
-title: "Find the number of roots of $z^4 - 6z + 3 =0$ in $|z|<1$ and"
+title: "Find the number of roots of $z^4 - 6z + 3 =0$ in $|z|<1$ and $1 < |z| < 2$ respectively. On $\\abs{z} \\leq 1$: Big: $M(z) = -6z$"
 classification:
   areas:
   - complex-analysis

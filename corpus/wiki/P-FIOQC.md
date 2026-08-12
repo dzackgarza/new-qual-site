@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FIOQC
 kind: problem
-title: "Use the following formula to show that the complex zeros of $\\sin(\\pi\u2026"
+title: "Use the following formula to show that the complex zeros of $\\sin(\\pi z)$\u2026"
 classification:
   areas:
   - complex-analysis

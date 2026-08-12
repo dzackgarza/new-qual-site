@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DXHST
 kind: problem
-title: "Suppose the group $G$ acts on the set $A$."
+title: "Suppose the group $G$ acts on the set $A$. Assume this action is\u2026"
 classification:
   areas:
   - algebra

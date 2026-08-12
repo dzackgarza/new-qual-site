@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XXUNZ
 kind: exercise
-title: "Show that if $f_n\\to f$ uniformly then $\\int_\\gamma f_n\\to \\int_\\gamma\u2026"
+title: "Show that if $f_n\\to f$ uniformly then $\\int_\\gamma f_n\\to \\int_\\gamma f$."
 classification:
   areas:
   - complex-analysis

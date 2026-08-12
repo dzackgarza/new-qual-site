@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KJQUD
 kind: exercise
-title: "- What is the **closure** of a subspace $E\\subseteq X$?"
+title: "What is the closure of a subspace $E\\subseteq X$?"
 classification:
   areas:
   - topology
@@ -10,4 +10,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - What is the **closure** of a subspace $E\subseteq X$?

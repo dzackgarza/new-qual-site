@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-6SR5I
 kind: definition
-title: 'Retract'
+title: "Retract: Retract: A subspace $A \\subset X$ is a retract of $X$ iff there exists a\u2026"
 classification:
   areas:
   - topology

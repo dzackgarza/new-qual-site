@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Q7NED
 kind: problem
-title: "Calculate"
+title: "Calculate $\\int_0^\\infty {\\sin(x) \\over x(x^2+1)}\\, dx$"
 classification:
   areas:
   - complex-analysis

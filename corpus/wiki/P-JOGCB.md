@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-JOGCB
 kind: problem
-title: "Let $u = \\sqrt{2 + \\sqrt{2}}$, $v = \\sqrt{2 - \\sqrt{2}}$, and $E = \\\
-  Q\u2026"
+title: "Let $u = \\sqrt{2 + \\sqrt{2}}$, $v = \\sqrt{2 - \\sqrt{2}}$, and $E = \\QQ(u)$."
 classification:
   areas:
   - algebra

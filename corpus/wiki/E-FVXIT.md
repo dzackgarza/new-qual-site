@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FVXIT
 kind: exercise
-title: "Suppose $f: \\DD\\to \\HH$ is analytic and satisfies $f(0) = 2$."
+title: "Suppose $f: \\DD\\to \\HH$ is analytic and satisfies $f(0) = 2$. Find a sharp upper\u2026"
 classification:
   areas:
   - complex-analysis

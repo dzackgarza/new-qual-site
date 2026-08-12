@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-44SHD
 kind: problem
-title: 2. Prove that if $A$ and $B$ are invertible matrices over a field $\bo…
+title: "Prove that if $A$ and $B$ are invertible matrices over a field $\\boldsymbol{k}$\u2026"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VDKZF
 kind: problem
-title: "Let $f(z)$ be entire and assume values of $f(z)$ lie outside a *bounde\u2026"
+title: "Let $f(z)$ be entire and assume values of $f(z)$ lie outside a bounded\u2026"
 classification:
   areas:
   - complex-analysis

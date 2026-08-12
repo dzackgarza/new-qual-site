@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XYYHG
 kind: problem
-title: Determine all holomorphic automorphisms of the upper half plane $\math…
+title: "Determine all holomorphic automorphisms of the upper half\u2026"
 classification:
   areas:
   - real-analysis

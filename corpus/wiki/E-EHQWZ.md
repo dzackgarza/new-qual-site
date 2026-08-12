@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EHQWZ
 kind: exercise
-title: "Prove that $X$ is connected iff the only clopen subsets are $\\emptyset\u2026"
+title: "Prove that $X$ is connected iff the only clopen subsets are $\\emptyset, X$."
 classification:
   areas:
   - topology
@@ -10,5 +10,5 @@ classification:
 relations: []
 review: draft
 ---
-Prove that $X$ is connected iff the only clopen subsets are $\emptyset, X$.
 
+Prove that $X$ is connected iff the only clopen subsets are $\emptyset, X$.

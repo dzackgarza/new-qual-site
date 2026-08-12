@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HGWPG
 kind: exercise
-title: "Geometrically describe the following subsets of $\\CC$:"
+title: "Geometrically describe the following subsets of $\\CC$: $\\abs{z-1} = 1$ $\\abs{z-1} = 2\\abs{z-2}$ $1/z = \\bar z$ $\\Re(z) = 3$ $\\Im(z) = a$ with $a\\in \\RR$."
 classification:
   areas:
   - complex-analysis

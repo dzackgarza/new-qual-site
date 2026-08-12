@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-V2OBF
 kind: problem
-title: "Describe each set in the $z$-plane in (a) and (b) below, where $\\alpha\u2026"
+title: "Describe each set in the $z$-plane in (a) and (b) below, where\u2026"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XAQEZ
 kind: problem
-title: "We start with a few known facts. Let $A=M$, the Mobius strip, and $B=\u2026"
+title: "We start with a few known facts."
 classification:
   areas:
   - topology

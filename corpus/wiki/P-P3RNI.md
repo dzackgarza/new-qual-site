@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P3RNI
 kind: problem
-title: "Let $G$ be a finite group with $n$ distinct conjugacy classes."
+title: "Let $G$ be a finite group with $n$ distinct conjugacy classes. Let\u2026"
 classification:
   areas:
   - algebra

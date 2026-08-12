@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UKZE6
 kind: problem
-title: "Let $R$ be a commutative ring with 1."
+title: "Let $R$ be a commutative ring with 1. some positive integer $n$."
 classification:
   areas:
   - algebra

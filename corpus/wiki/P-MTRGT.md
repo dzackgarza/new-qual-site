@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MTRGT
 kind: problem
-title: "Let $\\displaystyle{\\psi_{\\alpha}(z)=\\frac{\\alpha-z}{1-\\bar{\\alpha}z}}$"
+title: "Let $\\displaystyle{\\psi_{\\alpha}(z)=\\frac{\\alpha-z}{1-\\bar{\\alpha}z}}$ with $|\\alpha|<1$ and $\\mathbb D = \\{z:\\ |z|<1\\}$."
 classification:
   areas:
   - complex-analysis

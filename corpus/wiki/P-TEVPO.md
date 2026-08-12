@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TEVPO
 kind: problem
-title: "1. Parts"
+title: "Parts Suppose $\\exists M_g \\suchthat \\forall x,~ g(x) < M$."
 classification:
   areas:
   - prelim

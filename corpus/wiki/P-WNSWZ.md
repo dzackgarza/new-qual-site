@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WNSWZ
 kind: problem
-title: Let $F$ be a field and let $f(x) \in F[x]$.
+title: "Let $F$ be a field and let $f(x) \\in F[x]$."
 classification:
   areas:
   - algebra

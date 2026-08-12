@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LZVDM
 kind: problem
-title: 'Let $K$ be a field. A discrete valuation on $K$ is a function $\nu:'
+title: "Let $K$ be a field."
 classification:
   areas:
   - algebra

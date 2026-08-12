@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TH4A2
 kind: exercise
-title: "8. Recall the definition of the join of two subgroups $H \\vee G$ (or $\u2026"
+title: "Recall the definition of the join of two subgroups $H \\vee G$ (or $H+G$ )."
 classification:
   areas:
   - algebra

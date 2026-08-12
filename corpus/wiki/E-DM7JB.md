@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DM7JB
 kind: exercise
-title: "Find all functions on the Riemann sphere that have a simple pole at $z\u2026"
+title: "Find all functions on the Riemann sphere that have a simple\u2026"
 classification:
   areas:
   - complex-analysis

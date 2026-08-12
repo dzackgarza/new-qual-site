@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-DGMOEV2O
 kind: exercise
-title: Let $P\in \syl_p(H)$ where $H\normal G$ and show that $P\intersect H…
+title: "Let $P\\in \\syl_p(H)$ where $H\\normal G$ and show that $P\\intersect H \\in \\syl_p(H)$."
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EQFMD
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {1-\\sin(x)}{1 + \\cos(x)} ~dx = \\color {b\u2026"
+title: "$\\displaystyle \\int \\frac {1-\\sin(x)}{1 + \\cos(x)} ~dx = \\color {blue} {\\tan (\\frac {x}{2}) - \\ln (1 + \\tan ^2 (\\frac {x}{2}))} = \\color {blue} {\\tan (\\frac {x}{2}) - 2 \\ln (\\sec (\\frac {x}{2}))} = \\color {blue} {\\tan (\\frac {x}{2}) + 2 \\ln (\\cos (\\frac {x}{2}))} = \\color {blue} {\\tan (\\frac {x}{2}) + \\ln (1+\\cos (x))}\u200b$\u2026"
 classification:
   areas:
   - prelim

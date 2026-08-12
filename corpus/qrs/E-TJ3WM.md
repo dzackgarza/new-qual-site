@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TJ3WM
 kind: exercise
-title: "Show that $\\Aut_\\CC(\\CC) = \\ts{ z \\mapsto az+b\\st a\\in \\CC\\units, b\\in\u2026"
+title: "Show that $\\Aut_\\CC(\\CC) = \\ts{ z \\mapsto az+b\\st a\\in \\CC\\units, b\\in \\CC }$."
 classification:
   areas:
   - complex-analysis
@@ -10,8 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that $\Aut_\CC(\CC) = \ts{ z \mapsto az+b\st a\in \CC\units, b\in \CC }$.
 :::
-
-

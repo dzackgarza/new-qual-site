@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EMESP
 kind: exercise
-title: "Prove that if $G$ is a $p\\dash$group, every subgroup $N\\normal G$ inte\u2026"
+title: "Prove that if $G$ is a $p\\dash$group, every subgroup $N\\normal G$ intersects the\u2026"
 classification:
   areas:
   - algebra

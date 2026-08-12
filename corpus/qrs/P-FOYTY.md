@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FOYTY
 kind: problem
-title: Let $f$ be a power series centered at the origin.
+title: "Let $f$ be a power series centered at the origin. Prove that $f$\u2026"
 classification:
   areas:
   - complex-analysis

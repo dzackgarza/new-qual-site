@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YMVNK
 kind: problem
-title: "- Suppose $X$ is a $G\\dash$set, so there is a permutation action of $G\u2026"
+title: "Suppose $X$ is a $G\\dash$set, so there is a permutation action of $G$ on $X$."
 classification:
   areas:
   - algebra

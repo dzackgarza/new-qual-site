@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3EAU2
 kind: problem
-title: "Suppose $f$ is analytic on $\\DD^\\circ$."
+title: "Suppose $f$ is analytic on $\\DD^\\circ$. Determine with proof which of the\u2026"
 classification:
   areas:
   - complex-analysis

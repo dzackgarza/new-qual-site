@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HUKW5
 kind: problem
-title: "Define the Jacobian matrix of a mapping $f: \\mathbb{R}^n \\to \\mathbb{R…"
+title: "Define the Jacobian matrix of a mapping $f: \\mathbb{R}^n \\to \\mathbb{R}^m$ at a point $a = (a_1, \\dots, a_n)$ of $\\mathbb{R}^n$."
 classification:
   areas:
   - prelim

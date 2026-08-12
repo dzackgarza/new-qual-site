@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MKEL2
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {1}{e^x + e^{-x}} ~dx = \\color{blue} {\\ta\u2026"
+title: "$\\displaystyle \\int \\frac {1}{e^x + e^{-x}} ~dx = \\color{blue} {\\tan ^{-1} e^x}\u200b$ Solution: $u = e^x$, $du = e^x ~dx$ Solution: $\\frac {1}{e^x + e^{-x}} ~dx = \\frac {e^x}{e^{2x} + 1} ~dx = \\frac {1}{u^2 + 1} ~du\u200b$"
 classification:
   areas:
   - prelim

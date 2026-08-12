@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-WP4ETDGX
 kind: problem
-title: Suppose $X = \union_i^n A_i$ such that for any $1\leq k \leq n,~…
+title: "Suppose $X = \\union_i^n A_i$ such that for any $1\\leq k \\leq n,~ \\intersect_i^k A_i$ is either empty or contractible\u2026"
 classification:
   areas:
   - topology

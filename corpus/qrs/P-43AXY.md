@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-43AXY
 kind: problem
-title: "Prove that the following polynomial has its roots outside of the unit\u2026"
+title: "Prove that the following polynomial has its roots outside of\u2026"
 classification:
   areas:
   - complex-analysis

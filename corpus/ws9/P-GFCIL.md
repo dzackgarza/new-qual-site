@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GFCIL
 kind: problem
-title: Let $I = [0,1]$ and denote $\|\cdot\|_p$ the $p$-norm $\|f\|_p = \left…
+title: "Let $I = [0,1]$ and denote $\\|\\cdot\\|_p$ the $p$-norm $\\|f\\|_p = \\left(\\int_I |f|^p\\right)^{1/p}$ for $1 \\le p < \\infty$ (we admit this is a norm) and $\\|f\\|_\\infty = \\operatorname{ess\\,sup}|f|$."
 classification:
   areas:
   - real-analysis

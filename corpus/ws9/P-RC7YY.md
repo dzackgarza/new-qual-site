@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RC7YY
 kind: problem
-title: a. Define *unitary operator* on a complex Hilbert space.
+title: "Define unitary operator on a complex Hilbert space."
 classification:
   areas:
   - real-analysis

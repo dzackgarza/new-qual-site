@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SQVNA
 kind: problem
-title: "- **Solution:** $\\ln (x^2 - 1) = \\ln (x + 1)(x - 1) = \\ln (x + 1) + \\l\u2026"
+title: "Solution: $\\ln (x^2 - 1) = \\ln (x + 1)(x - 1) = \\ln (x + 1) + \\ln (x - 1)\u200b$ $\\displaystyle \\int x^n \\ln(x) ~dx = \\color{blue} { \\frac {x^{n + 1}}{n + 1} (\\ln (x) - \\frac {1}{n + 1})}\u200b$ Solution: $u = \\ln (x)\u200b$\u2026"
 classification:
   areas:
   - prelim

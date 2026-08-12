@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PLJCK
 kind: exercise
-title: "Suppose $f$ is entire and suppose that for some integer $n\\geq 1$,"
+title: "Suppose $f$ is entire and suppose that for some integer $n\\geq 1$, $\\lim_{z\\to \\infty} {f(z) \\over z^n} = 0$\u2026"
 classification:
   areas:
   - complex-analysis

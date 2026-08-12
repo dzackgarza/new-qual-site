@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-RFQAUA7NB7
 kind: problem
-title: Prove or disprove each of the following statements.
+title: "Prove or disprove each of the following statements. If $f$ is\u2026"
 classification:
   areas:
   - real-analysis

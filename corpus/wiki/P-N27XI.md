@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N27XI
 kind: problem
-title: Define a map
+title: "Define a map \\begin{align} \\phi: Z(R) &\\to Z(M_n(R) \\\\ r &\\mapsto r I_n .\\end{align} By part 1, this map is surjective."
 classification:
   areas:
   - algebra

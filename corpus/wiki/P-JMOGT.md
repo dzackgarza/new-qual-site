@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JMOGT
 kind: problem
-title: "Let $f\\in L^1(\\RR)$."
+title: "Let $f\\in L^1(\\RR)$. Show that $\\lim _{x \\to 0} \\int _{\\RR} \\abs{f(y-x)-f(y)} \\, dy = 0$"
 classification:
   areas:
   - real-analysis

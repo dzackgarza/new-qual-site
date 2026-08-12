@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L7G3D
 kind: problem
-title: "Let $(X, \\mathcal M, \\mu)$ be a measure space and suppose $\\theset{E_n\u2026"
+title: "Let $(X, \\mathcal M, \\mu)$ be a measure space and suppose $\\theset{E_n} \\subset \\mathcal M$ satisfies $\\lim _{n \\rightarrow \\infty} \\mu\\left(X \\backslash E_{n}\\right)=0$"
 classification:
   areas:
   - real-analysis

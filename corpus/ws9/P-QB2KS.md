@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QB2KS
 kind: problem
-title: For each of the following, either give an example or explain why no su…
+title: "For each of the following, either give an example or explain\u2026"
 classification:
   areas:
   - prelim

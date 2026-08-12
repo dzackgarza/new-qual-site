@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-PX64W
 kind: definition
-title: "Centralizer"
+title: "Centralizer: The centralizer of an element is defined as $Z(h) \\da C_G(h) \\da \\ts{ g\\in G \\st ghg\\inv = h }$ the elements of\u2026"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AK3OT
 kind: problem
-title: "Let \\( f_n \\in L^2([0, 1]) \\) for \\( n\\in \\NN \\), and assume that"
+title: "Let \\( f_n \\in L^2([0, 1]) \\) for \\( n\\in \\NN \\), and assume that \\( \\norm{f_n}_2 \\leq n^{-51 \\over 100} \\) for all \\( n\\in \\NN \\), $\\hat{f}_n$ is supported in the\u2026"
 classification:
   areas:
   - real-analysis

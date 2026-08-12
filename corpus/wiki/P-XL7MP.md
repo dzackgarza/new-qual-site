@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XL7MP
 kind: problem
-title: "Show that"
+title: "Show that $L^2([0, 1]) \\subseteq L^1([0, 1]) \\qtext{and} \\ell^1(\\ZZ) \\subseteq \\ell^2(\\ZZ)$ For $f\\in L^1([0, 1])$ define $\\hat{f}(n) \\definedas \\int _0^1 f(x) e^{-2\\pi i n x} \\, dx$ Prove that if $f\\in L^1([0, 1])$ and\u2026"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-QPXH6FYHGE
 kind: problem
-title: Let $X$ be a topological space and let
+title: "Let $X$ be a topological space and let $\\Delta = \\theset{(x, y) \\in X \\times X \\mid x = y}$ Show that $X$ is a\u2026"
 classification:
   areas:
   - topology

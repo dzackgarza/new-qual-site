@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z6THT
 kind: problem
-title: "Facts used:"
+title: "Facts used: Homotopy LES Hurewicz $0\\to A\\to B \\to 0$ exact iff $A\\cong B$"
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GLK4G
 kind: problem
-title: "- **Solution:** $x^3e^{-x^2} dx = \\frac {1}{2} x^2 e^{-x^2} dx^2$"
+title: "Solution: $x^3e^{-x^2} dx = \\frac {1}{2} x^2 e^{-x^2} dx^2$ Used 2019 $\\displaystyle \\int e^{x^{\\frac {1}{a}}} ~dx$"
 classification:
   areas:
   - prelim

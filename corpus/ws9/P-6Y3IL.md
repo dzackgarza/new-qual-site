@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6Y3IL
 kind: problem
-title: Suppose that $f_j \in L^2(\mathbb{R}^d)$, $j = 1, 2, \ldots$, and $f \…
+title: "Suppose that $f_j \\in L^2(\\mathbb{R}^d)$, $j = 1, 2, \\ldots$, and $f \\in L^2(\\mathbb{R}^d)$ satisfy $\\lim_{j\\to\\infty} \\int_{\\mathbb{R}^d} f_j g = \\int_{\\mathbb{R}^d} fg$ for all $g \\in L^2(\\mathbb{R}^d)$."
 classification:
   areas:
   - real-analysis

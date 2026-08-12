@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JOGPB
 kind: problem
-title: "Assume $f$ is continuous in the region:"
+title: "Assume $f$ is continuous in the region: $0 < \\abs{z-a} \\leq R,\\quad 0 \\leq \\Arg(z-a) \\leq \\beta_0 \\qquad \\beta_0\\in (0, 2\\pi]$"
 classification:
   areas:
   - complex-analysis

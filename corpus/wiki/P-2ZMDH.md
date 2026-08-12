@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2ZMDH
 kind: problem
-title: "Suppose that $f$ is an analytic function in the region $D$ which"
+title: "Suppose that $f$ is an analytic function in the region $D$ which\u2026"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-LUR7G
 kind: exercise
-title: "Show"
+title: "Show $x^\\ell - 1 \\divides x^m-1 \\iff \\ell\\divides m$ $\\implies$ Write $m = \\ell q + r$ with $0\\leq r < \\ell$. Write\u2026"
 classification:
   areas:
   - algebra

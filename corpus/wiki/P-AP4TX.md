@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AP4TX
 kind: problem
-title: Define a map
+title: "Define a map $\\phi_\\mathrm{ev}: \\hom_\\ZZ(\\ZZ_m, A) \\to A \\\\ (f: \\ZZ_m \\to A) \\mapsto f(1)$"
 classification:
   areas:
   - algebra

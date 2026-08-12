@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TUGZG
 kind: problem
-title: "Let $\\theset{f_n}$ be a sequence of continuous functions such that $\\s\u2026"
+title: "Let $\\theset{f_n}$ be a sequence of continuous functions such that $\\sum f_n$\u2026"
 classification:
   areas:
   - real-analysis

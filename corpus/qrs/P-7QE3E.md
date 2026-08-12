@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7QE3E
 kind: problem
-title: "Let $F \\subset \\mathbb{R}$ be closed, and define"
+title: "Let $F \\subset \\mathbb{R}$ be closed, and define $\\delta_{F}(y):=\\inf _{x \\in F}|x-y|$ For $y \\notin F$, show that $\\int_{F}|x-y|^{-2} d x \\leq \\frac{2}{\\delta_F(y)}$ Let $F \\subset \\mathbb{R}$ be a\u2026"
 classification:
   areas:
   - real-analysis

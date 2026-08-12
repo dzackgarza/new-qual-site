@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-I67ZI
 kind: problem
-title: Let $Y$ be a closed subspace of a Banach space $X$, with norm $\|\cdot…
+title: "Let $Y$ be a closed subspace of a Banach space $X$, with norm $\\|\\cdot\\|$."
 classification:
   areas:
   - real-analysis

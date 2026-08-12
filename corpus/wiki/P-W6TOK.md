@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W6TOK
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {x}{x^4-16} ~dx = \\color{blue} {\\frac {1}\u2026"
+title: "$\\displaystyle \\int \\frac {x}{x^4-16} ~dx = \\color{blue} {\\frac {1}{16} (\\ln (x^2 - 4) - \\ln (x^2 + 4))}$ Solution: $u =x^2$, $du = 2x ~dx$ Solution\u2026"
 classification:
   areas:
   - prelim

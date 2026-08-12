@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y3MQA
 kind: problem
-title: This problem is about the integral
+title: "This problem is about the integral $I = \\int_0^\\infty \\frac{\\cos u\\, du}{u^4+1}$"
 classification:
   areas:
   - real-analysis

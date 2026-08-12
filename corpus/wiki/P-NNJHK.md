@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NNJHK
 kind: problem
-title: "We want to show that if $A, B$ are $R\\dash$modules then $X = (\\hom_{R\u2026"
+title: "We want to show that if $A, B$ are $R\\dash$modules then $X = (\\hom_{R\\dash\\text{mod}}(A, B), +$ is an abelian\u2026"
 classification:
   areas:
   - algebra

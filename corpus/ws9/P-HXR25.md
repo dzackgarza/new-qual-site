@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HXR25
 kind: problem
-title: Let $\mathbb{F}_p$ be the finite field with $p$ elements, and let $f(x…
+title: "Let $\\mathbb{F}_p$ be the finite field with $p$ elements, and let $f(x) \\in \\mathbb{F}_p[x]$ be a\u2026"
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UUACQ
 kind: problem
-title: "4. $\\displaystyle \\int \\frac {x}{\\sqrt {4-x^4}} ~dx = \\color {blue} {\\\u2026"
+title: "$\\displaystyle \\int \\frac {x}{\\sqrt {4-x^4}} ~dx = \\color {blue} {\\frac {1}{2} \\sin ^{-1} (\\frac {x^2}{2})}$ Solution: $2 \\sin (u) = x^2$, $\\cos (u) ~du = x ~dx$ Solution\u2026"
 classification:
   areas:
   - prelim

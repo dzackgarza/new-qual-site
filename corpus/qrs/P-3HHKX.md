@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3HHKX
 kind: problem
-title: "Prove the following inequality, and explain when equality holds:"
+title: "Prove the following inequality, and explain when equality\u2026"
 classification:
   areas:
   - complex-analysis

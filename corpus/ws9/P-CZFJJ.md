@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CZFJJ
 kind: problem
-title: Consider the polynomial ring $\mathbb{Z}[x]$. Let $I = (2, x^2 + 3x -…
+title: "Consider the polynomial ring $\\mathbb{Z}[x]$."
 classification:
   areas:
   - prelim

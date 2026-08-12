@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GN4CE
 kind: problem
-title: "Carefully state the definition of **Noetherian** for a commutative rin\u2026"
+title: "Carefully state the definition of Noetherian for a\u2026"
 classification:
   areas:
   - algebra

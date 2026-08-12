@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FD3FN
 kind: problem
-title: "Prove that for every continuous map $f : S^2 \\to S^2$ there is some $x\u2026"
+title: "Prove that for every continuous map $f : S^2 \\to S^2$ there is some $x$ such\u2026"
 classification:
   areas:
   - topology
@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-Prove that for every continuous map $f : S^2 \to S^2$ there is some $x$ such that either $f (x) = x$ or $f (x) = -x$. 
+
+Prove that for every continuous map $f : S^2 \to S^2$ there is some $x$ such that either $f (x) = x$ or $f (x) = -x$.
 
 > Hint: Where $A : S^2 \to S^2$ is the antipodal map, you are being asked to prove that either $f$ or $A \circ f$ has a fixed point.
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-B7CYY
 kind: definition
-title: "Diameter"
+title: "Diameter: For a subset $A$ of a metric space $(X, d)$, the diameter of $A$ is\u2026"
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y7C7Z
 kind: problem
-title: "Let $A$ and $B$ be circles bounding disjoint disks in the plane $z = 0\u2026"
+title: "Let $A$ and $B$ be circles bounding disjoint disks in the plane $z = 0$ in $\\RR^3$."
 classification:
   areas:
   - topology

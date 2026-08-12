@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WAI3F
 kind: problem
-title: "3. **Main Idea**: Linear homotopy fails continuity without the conditi\u2026"
+title: "Main Idea: Linear homotopy fails continuity without the\u2026"
 classification:
   areas:
   - topology

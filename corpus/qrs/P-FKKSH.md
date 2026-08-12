@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FKKSH
 kind: problem
-title: "For $n\\in \\NN$, define"
+title: "For $n\\in \\NN$, define $e_{n} = \\left (1+ {1\\over n} \\right)^{n} \\qtext{and} E_{n} = \\left( 1+ {1\\over n} \\right)^{n+1}$ Show that $e_n < E_n$, and prove Bernoulli's\u2026"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-BRWA7
 kind: theorem
-title: "If $m, p$ are isomorphisms, $l$ is an **surjection**, and $q$ is an **\u2026"
+title: "If $m, p$ are isomorphisms, $l$ is an surjection, and $q$ is an\u2026"
 classification:
   areas:
   - topology

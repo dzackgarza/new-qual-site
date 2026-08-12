@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WEZIH3QOMQ
 kind: problem
-title: An integral domain $R$ is said to be an *Euclidean domain* if there
+title: "An integral domain $R$ is said to be an Euclidean domain if\u2026"
 classification:
   areas:
   - algebra

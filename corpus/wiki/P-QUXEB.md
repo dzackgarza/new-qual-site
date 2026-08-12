@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QUXEB
 kind: problem
-title: "Prove the following:"
+title: "Prove the following: $\\sum_{n} nz^n$ does not converge at any point of $S^1$ $\\sum_n {z^n \\over n^2}$\u2026"
 classification:
   areas:
   - complex-analysis

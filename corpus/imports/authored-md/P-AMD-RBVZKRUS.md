@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-RBVZKRUS
 kind: problem
-title: a. Show that $L^2([0, 1]) ⊆ L^1([0, 1])$ and argue that $L^2([0,…
+title: "Show that $L^2([0, 1]) \u2286 L^1([0, 1])$ and argue that $L^2([0, 1])$ in fact forms a dense subset of $L^1([0, 1])$."
 classification:
   areas:
   - real-analysis

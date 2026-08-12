@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T7IKN
 kind: problem
-title: "Let $f$ be a holomorphic function in the punctured disk $\\{z : 0 < |z|…"
+title: "Let $f$ be a holomorphic function in the punctured disk $\\{z : 0 < |z| < 2\\}$\u2026"
 classification:
   areas:
   - real-analysis

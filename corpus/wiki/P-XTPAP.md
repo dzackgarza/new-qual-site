@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XTPAP
 kind: problem
-title: "7. **Main Idea**: Nothing to it. Homotopy:"
+title: "Main Idea: Nothing to it."
 classification:
   areas:
   - topology

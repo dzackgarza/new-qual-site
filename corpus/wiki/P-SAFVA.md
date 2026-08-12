@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SAFVA
 kind: problem
-title: "1. $\\displaystyle \\int \\ln (ax + b) ~dx = \\color{blue} {\\frac {ax + b}\u2026"
+title: "$\\displaystyle \\int \\ln (ax + b) ~dx = \\color{blue} {\\frac {ax + b}{a} \\ln (ax + b) - x}$ Solution: $u = \\ln (ax + b)\u200b$, $v = x\u200b$, $du = \\frac {a}{ax + b} ~dx\u200b$, $dv = dx\u200b$"
 classification:
   areas:
   - prelim

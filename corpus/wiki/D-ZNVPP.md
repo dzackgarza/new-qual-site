@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-ZNVPP
 kind: definition
-title: "Connected"
+title: "Connected: A space $X$ is connected iff there does not exist a\u2026"
 classification:
   areas:
   - topology

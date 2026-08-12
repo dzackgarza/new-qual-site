@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NYOLD
 kind: problem
-title: "Let $f\\in L^1(\\RR)$ and let \\( \\mathcal{U}\\da \\ts{(x, y) \\in \\RR^2 \\st\u2026"
+title: "Let $f\\in L^1(\\RR)$ and let \\( \\mathcal{U}\\da \\ts{(x, y) \\in \\RR^2 \\st y > 0} \\) denote the upper half plane."
 classification:
   areas:
   - real-analysis

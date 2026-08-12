@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4MDI2
 kind: problem
-title: "7. If $F$ is some (not necessarily Galois) field extension over $K$ su\u2026"
+title: "If $F$ is some (not necessarily Galois) field extension over $K$\u2026"
 classification:
   areas:
   - algebra

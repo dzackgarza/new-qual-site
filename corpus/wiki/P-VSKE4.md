@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VSKE4
 kind: problem
-title: "Let $\\Omega \\subset \\CC$ be a connected open subset. Let $\\left\\{f_{n}\u2026"
+title: "Let $\\Omega \\subset \\CC$ be a connected open subset."
 classification:
   areas:
   - complex-analysis

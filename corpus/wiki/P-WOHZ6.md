@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WOHZ6
 kind: problem
-title: "Prove that the following series converges uniformly on the set $\\these\u2026"
+title: "Prove that the following series converges uniformly on the\u2026"
 classification:
   areas:
   - complex-analysis

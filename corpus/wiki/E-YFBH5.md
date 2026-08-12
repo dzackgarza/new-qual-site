@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YFBH5
 kind: exercise
-title: "Suppose $f:\\DD\\to\\DD$ is analytic, has a single zero of order $k$ at $\u2026"
+title: "Suppose $f:\\DD\\to\\DD$ is analytic, has a single zero of order $k$ at $z=0$, and\u2026"
 classification:
   areas:
   - complex-analysis

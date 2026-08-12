@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-HXKWYM3NJN
 kind: problem
-title: Suppose that $f$ is holomorphic in an open set containing the closed
+title: "Suppose that $f$ is holomorphic in an open set containing the\u2026"
 classification:
   areas:
   - complex-analysis
@@ -13,10 +13,9 @@ review: draft
 ---
 
 ::: problem
-Suppose that $f$ is holomorphic in an open set containing the closed
-unit disc, except for a pole at $z_0$ on the unit circle. Let
-$f(z) = \sum_{n = 1}^\infty c_n z^n$ denote the power series in
-the open disc. Show that
+Suppose that $f$ is holomorphic in an open set containing the closed unit disc, except for a pole at $z_0$ on the unit circle.
+Let $f(z) = \sum_{n = 1}^\infty c_n z^n$ denote the power series in the open disc.
+Show that
 
 (1) $c_n \neq 0$ for all large enough $n$'s, and
 

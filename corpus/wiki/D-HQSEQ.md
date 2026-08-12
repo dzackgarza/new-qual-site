@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-HQSEQ
 kind: definition
-title: "Paracompact"
+title: "Paracompact: A topological space $X$ is paracompact iff every open cover of $X$\u2026"
 classification:
   areas:
   - topology

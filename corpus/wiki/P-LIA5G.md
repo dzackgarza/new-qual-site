@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LIA5G
 kind: problem
-title: "Suppose that $U$ is a bounded, open and simply connected domain in $\\m\u2026"
+title: "Suppose that $U$ is a bounded, open and simply connected domain\u2026"
 classification:
   areas:
   - complex-analysis
@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="?"}
+
+::: {.problem title="?"}
 Suppose that $U$ is a bounded, open and simply connected domain in $\mathbb{C}$ and that $f(z)$ is a complex-valued non-constant continuous function on $\bar{U}$ whose restriction to $U$ is holomorphic.
 
 - Prove the maximum modulus principle by showing that if $z_{0} \in U$, then
@@ -20,10 +21,9 @@ $$
 $$
 
 - Show furthermore that if $|f(z)|$ is constant on $\partial U$, then $f(z)$ has a zero in $U$ (i.e., there exists $z_{0} \in U$ for which $f\left(z_{0}\right)=0$ ).
-
 :::
 
-:::{.solution}
+::: {.solution}
 Let $M\da \sup_{z\in \bd U}\abs{f(z)}$.
 If $M=0$, then $f$ must be the constant zero function, so assume $M>0$.
 

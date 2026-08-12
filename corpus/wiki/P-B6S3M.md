@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B6S3M
 kind: problem
-title: "Let $(X, \\mathcal B, \\mu)$ be a measure space with $\\mu(X) = 1$ and $\\\u2026"
+title: "Let $(X, \\mathcal B, \\mu)$ be a measure space with $\\mu(X) = 1$ and $\\{B_n\\}_{n=1}^\\infty$ be a sequence of $\\mathcal B$\u2026"
 classification:
   areas:
   - real-analysis

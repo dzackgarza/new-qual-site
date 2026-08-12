@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CA2UVVW5NM
 kind: problem
-title: Suppose that $X$ is a Hausdorff topological space and that $A…
+title: "Suppose that $X$ is a Hausdorff topological space and that $A \\subset X$.\u2026"
 classification:
   areas:
   - topology

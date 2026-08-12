@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XGHXK
 kind: problem
-title: "1. **Main Idea**: A linear homotopy projected onto the sphere works."
+title: "Main Idea: A linear homotopy projected onto the sphere\u2026"
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3SQVT
 kind: problem
-title: "Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has\u2026"
+title: "Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a\u2026"
 classification:
   areas:
   - algebra

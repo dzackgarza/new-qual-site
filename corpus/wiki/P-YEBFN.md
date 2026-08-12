@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YEBFN
 kind: problem
-title: Set $f(x) = x^3 - 5 \in \QQ[x]$.
+title: "Set $f(x) = x^3 - 5 \\in \\QQ[x]$. Find the splitting field $K$ of $f(x)$ over $\\QQ$."
 classification:
   areas:
   - algebra

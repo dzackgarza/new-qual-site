@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YZ4WV
 kind: problem
-title: "Let $f(z)$ be a non-constant analytic function in $|z|>0$ such that $f\u2026"
+title: "Let $f(z)$ be a non-constant analytic function in $|z|>0$ such that $f(z_n) = 0$ for\u2026"
 classification:
   areas:
   - complex-analysis

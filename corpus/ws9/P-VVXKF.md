@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VVXKF
 kind: problem
-title: a. Let $G$ be a finite group of order $p^k m$ where $p$ is prime and $…
+title: "Let $G$ be a finite group of order $p^k m$ where $p$ is prime and $(p,m) = 1$."
 classification:
   areas:
   - prelim

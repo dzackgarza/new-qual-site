@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-MGRGF
 kind: proposition
-title: "Let $T:V\\to V$ be a linear map where $n\\da \\dim_k V$."
+title: "Let $T:V\\to V$ be a linear map where $n\\da \\dim_k V$. TFAE: There exists a basis \\( \\ts{ e_i } \\) of\u2026"
 classification:
   areas:
   - algebra

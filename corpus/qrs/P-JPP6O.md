@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JPP6O
 kind: problem
-title: "Let $H \\normal G$ be a normal subgroup of a finite group $G$, where th\u2026"
+title: "Let $H \\normal G$ be a normal subgroup of a finite group $G$, where the\u2026"
 classification:
   areas:
   - algebra

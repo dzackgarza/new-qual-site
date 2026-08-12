@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3IDAX
 kind: problem
-title: "Prove the Fundamental Theorem of Algebra (using complex analysis)."
+title: "Prove the Fundamental Theorem of Algebra (using complex\u2026"
 classification:
   areas:
   - complex-analysis

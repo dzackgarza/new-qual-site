@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-H2WTL
 kind: problem
-title: "The question provides some insight into Cauchy's theorem. Solve the"
+title: "The question provides some insight into Cauchy's theorem.\u2026"
 classification:
   areas:
   - complex-analysis

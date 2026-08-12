@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NUMZV
 kind: exercise
-title: "Let $f(z)$ be entire and assume that $f(z) \\leq M |z|^2$ outside some"
+title: "Let $f(z)$ be entire and assume that $f(z) \\leq M |z|^2$ outside some disk for some\u2026"
 classification:
   areas:
   - complex-analysis

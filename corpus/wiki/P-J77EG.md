@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J77EG
 kind: problem
-title: "Let $M$ be an $n \\times n$ matrix such that $M_{ij} = 1$ for all $i, j\u2026"
+title: "Let $M$ be an $n \\times n$ matrix such that $M_{ij} = 1$ for all $i, j$, and consider the\u2026"
 classification:
   areas:
   - algebra

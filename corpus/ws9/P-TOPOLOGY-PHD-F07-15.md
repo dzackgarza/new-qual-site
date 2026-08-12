@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-15
 kind: problem
-title: 'Identify a surface from a polygonal symbol and classify surfaces'
+title: "The polygonal symbol of a certain surface without boundary\u2026"
 classification:
   areas:
   - topology

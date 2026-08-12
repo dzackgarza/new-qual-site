@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CV2MR
 kind: problem
-title: "Prove that $f(z) = \\abs{z}^2$ has a derivative at $z=0$ and nowhere el\u2026"
+title: "Prove that $f(z) = \\abs{z}^2$ has a derivative at $z=0$ and nowhere else. The easy\u2026"
 classification:
   areas:
   - complex-analysis

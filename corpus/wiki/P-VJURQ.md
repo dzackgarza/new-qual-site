@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VJURQ
 kind: problem
-title: "How do you construct a polynomial over $\\QQ$ whose Galois group is $S_\u2026"
+title: "How do you construct a polynomial over $\\QQ$ whose Galois group\u2026"
 classification:
   areas:
   - algebra

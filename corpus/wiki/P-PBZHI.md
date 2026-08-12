@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PBZHI
 kind: problem
-title: Let $G$ be a finite group.
+title: "Let $G$ be a finite group. Show that there exists a field\u2026"
 classification:
   areas:
   - algebra

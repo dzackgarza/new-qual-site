@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WB2SR
 kind: problem
-title: "Supposing that $\\dim V = n$, let $\\mathcal B \\definedas \\theset{\\vecto\u2026"
+title: "Supposing that $\\dim V = n$, let $\\mathcal B \\definedas \\theset{\\vector b_k \\mid 1 \\leq k \\leq n}$ be a basis for $V$, and define $\\vector e_i \\definedas [0, 0, \\cdots, 1, \\cdots, 0] \\in V^{\\oplus m}$"
 classification:
   areas:
   - algebra

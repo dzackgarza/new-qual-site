@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RMZDG
 kind: problem
-title: "Use the Cauchy inequalities or the maximum modulus principle to solve\u2026"
+title: "Use the Cauchy inequalities or the maximum modulus principle\u2026"
 classification:
   areas:
   - complex-analysis

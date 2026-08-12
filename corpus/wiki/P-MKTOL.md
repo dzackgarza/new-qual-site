@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MKTOL
 kind: problem
-title: "Calculate"
+title: "Calculate $\\int_0^\\infty {\\sqrt x \\over 1 + x^2} \\, dx$"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EUIAS
 kind: problem
-title: "Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \\da \\ts{x\u2026"
+title: "Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \\da \\ts{x\\in H \\st Ux = x}$, let $P$\u2026"
 classification:
   areas:
   - real-analysis

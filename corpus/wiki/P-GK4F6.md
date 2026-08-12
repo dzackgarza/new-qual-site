@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GK4F6
 kind: problem
-title: "Let $\\gamma(t)$ be a piecewise smooth curve in $\\mathbb{C}, t \\in[0,1]\u2026"
+title: "Let $\\gamma(t)$ be a piecewise smooth curve in $\\mathbb{C}, t \\in[0,1]$. Let $F(w)$ be a continuous\u2026"
 classification:
   areas:
   - complex-analysis

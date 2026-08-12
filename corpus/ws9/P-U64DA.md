@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-U64DA
 kind: problem
-title: Assume that $p$ is prime and $X^p - a$ is irreducible in $\mathbb{Q}[X…
+title: "Assume that $p$ is prime and $X^p - a$ is irreducible in $\\mathbb{Q}[X]$."
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-HGDAG
 kind: theorem
-title: "Baire"
+title: "Baire: If $X$ is a complete metric space, $X$ is a Baire space: the\u2026"
 classification:
   areas:
   - topology

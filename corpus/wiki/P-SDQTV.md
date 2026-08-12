@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SDQTV
 kind: problem
-title: "Give the definitions of **covering space** and **deck transformation**\u2026"
+title: "Give the definitions of covering space and deck\u2026"
 classification:
   areas:
   - topology

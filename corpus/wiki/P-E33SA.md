@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E33SA
 kind: exercise
-title: "- What does it mean for a function to be **uniformly continuous** on \u2026"
+title: "What does it mean for a function to be uniformly continuous\u2026"
 classification:
   areas:
   - real-analysis

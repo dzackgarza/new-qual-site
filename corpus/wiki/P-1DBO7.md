@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-1DBO7
 kind: problem
-title: "If $E \\geq F$ is a finite extension, then it is algebraic and $E = F[\u2026"
+title: "If $E \\geq F$ is a finite extension, then it is algebraic and $E = F[\\alpha_1, \\cdots, \\alpha_n]$."
 classification:
   areas:
   - algebra

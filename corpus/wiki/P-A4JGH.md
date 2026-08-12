@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A4JGH
 kind: problem
-title: "1. Parts:"
+title: "Parts: Negating\u2026"
 classification:
   areas:
   - prelim

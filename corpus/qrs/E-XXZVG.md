@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XXZVG
 kind: exercise
-title: "Prove the uniform limit theorem for holomorphic functions: if $f_n\\to\u2026"
+title: "Prove the uniform limit theorem for holomorphic functions\u2026"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IOSZK
 kind: problem
-title: "Let m"
+title: "Let m $A \\da \\begin{bmatrix} 4 & 1 & -1 \\\\ -6 & -1 & 2 \\\\ 2 & 1 & 1 \\end{bmatrix} \\in \\Mat(3\\times 3, \\CC)$ Find the Jordan canonical form $J$ of $A$."
 classification:
   areas:
   - algebra

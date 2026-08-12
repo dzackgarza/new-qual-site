@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ULNGG
 kind: problem
-title: "[Reconstructed from solution — no problem statement page was present i…"
+title: "[Reconstructed from solution \u2014 no problem statement page was\u2026"
 classification:
   areas:
   - real-analysis

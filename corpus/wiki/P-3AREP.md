@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3AREP
 kind: problem
-title: "Compute the following limit and justify your calculations:"
+title: "Compute the following limit and justify your calculations: $\\lim_{n \\rightarrow \\infty} \\int_{1}^{n} \\frac{d x}{\\left(1+\\frac{x}{n}\\right)^{n} \\sqrt[n]{x}}$\u2026"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YTOGK
 kind: problem
-title: "Suppose that"
+title: "Suppose that $1\\leq p_j \\leq \\infty, && \\sum_{j=1}^n {1\\over p_j} = {1\\over r} \\leq 1$"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HHNOP
 kind: problem
-title: "Let $X$ and $Y$ be Banach spaces. A bounded linear transformation $A:X…"
+title: "Let $X$ and $Y$ be Banach spaces."
 classification:
   areas:
   - real-analysis

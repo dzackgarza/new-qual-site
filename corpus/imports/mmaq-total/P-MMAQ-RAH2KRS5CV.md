@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-RAH2KRS5CV
 kind: problem
-title: A metric space is said to be **totally bounded** if for every $\eps…
+title: "A metric space is said to be totally bounded if for every $\\eps > 0$\u2026"
 classification:
   areas:
   - topology

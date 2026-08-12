@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FU6SE
 kind: problem
-title: "Let $f$ be a continuous function in the region"
+title: "Let $f$ be a continuous function in the region $D=\\{z \\suchthat \\abs{z}>R, 0\\leq \\arg z\\leq \\theta\\}\\quad\\text{where}\\quad 1\\leq \\theta \\leq 2\\pi$ If there exists\u2026"
 classification:
   areas:
   - complex-analysis

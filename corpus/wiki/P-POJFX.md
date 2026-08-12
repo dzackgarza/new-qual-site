@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-POJFX
 kind: problem
-title: "Let $F$ be a field and $n$ a positive integer, and consider"
+title: "Let $F$ be a field and $n$ a positive integer, and consider $A=\\left[\\begin{array}{ccc} 1 & \\dots & 1 \\\\ & \\ddots & \\\\ 1 & \\dots & 1 \\end{array}\\right] \\in M_{n}(F)$ Show\u2026"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GYQLA
 kind: problem
-title: "Let $G$ be a finite group and $\\pi: G\\to \\sym(G)$ the Cayley represent\u2026"
+title: "Let $G$ be a finite group and $\\pi: G\\to \\sym(G)$ the Cayley representation. Prove\u2026"
 classification:
   areas:
   - algebra

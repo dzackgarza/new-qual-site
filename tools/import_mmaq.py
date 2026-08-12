@@ -28,6 +28,7 @@ from pathlib import Path
 from typing import Any
 
 import yaml
+from card_titles import title_of
 from qualc.model import MARKDOWN
 from qualc.pandoc_batch import PandocFailure, PandocServer
 
@@ -105,17 +106,6 @@ def loose(text: str) -> str:
 def card(meta: dict[str, Any], body: str) -> str:
     frontmatter = yaml.safe_dump(meta, sort_keys=False, allow_unicode=True, width=100).strip()
     return f"---\n{frontmatter}\n---\n\n{body.rstrip()}\n"
-
-
-def title_of(statement: str) -> str:
-    """Take a stable, recognizable title without spawning one Pandoc per row."""
-
-    first = next((line.strip() for line in statement.splitlines() if line.strip()), "")
-    first = re.sub(r"^(?:[-*+]\s+|\d+[.)]\s+)", "", first)
-    first = re.sub(r"\s+", " ", first).strip()
-    if len(first) > 72:
-        first = first[:69].rsplit(" ", 1)[0].rstrip() + "…"
-    return first or "Imported qualifying-exam problem"
 
 
 def converted_bodies(pandoc: PandocServer, statements: list[str], section: str) -> list[str]:

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VOGZ5
 kind: problem
-title: "Let $K$ be the splitting field of $x^4-2$ over $\\QQ$ and set $G = \\ga\u2026"
+title: "Let $K$ be the splitting field of $x^4-2$ over $\\QQ$ and set $G = \\gal(K/\\QQ)$."
 classification:
   areas:
   - algebra

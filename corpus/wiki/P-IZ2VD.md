@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IZ2VD
 kind: problem
-title: "Let $F = \\FF_p$ , where $p$ is a prime number."
+title: "Let $F = \\FF_p$ , where $p$ is a prime number. Show that if $\\pi(x) \\in F[x]$ is\u2026"
 classification:
   areas:
   - algebra

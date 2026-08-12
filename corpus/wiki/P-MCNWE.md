@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MCNWE
 kind: problem
-title: "a. Define what it means for a finite extension of fields $E$ over $F$\u2026"
+title: "Define what it means for a finite extension of fields $E$ over $F$\u2026"
 classification:
   areas:
   - algebra

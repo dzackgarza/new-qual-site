@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XPDMQ
 kind: problem
-title: "2. **Main Idea**: Exact same idea as 1, just a more complicated check."
+title: "Main Idea: Exact same idea as 1, just a more complicated\u2026"
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DX7WA
 kind: problem
-title: Let $f(z)$ be an analytic function on the entire complex plane $\mathb…
+title: "Let $f(z)$ be an analytic function on the entire complex plane $\\mathbb{C}$\u2026"
 classification:
   areas:
   - real-analysis

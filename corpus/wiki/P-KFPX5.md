@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KFPX5
 kind: problem
-title: "Give the definition of a **covering space** $\\hat{X}$"
+title: "Give the definition of a covering space $\\hat{X}$ (and covering map $p : \\hat{X} \\to X$\u2026"
 classification:
   areas:
   - topology

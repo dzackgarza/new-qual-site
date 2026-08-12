@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XXLEK
 kind: problem
-title: "Recall that a topological space is **regular** if for every point $p \\\u2026"
+title: "Recall that a topological space is regular if for every\u2026"
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZOYZH
 kind: problem
-title: "A ring \\( R \\) is called *simple* if its only two-sided ideals are $0$\u2026"
+title: "A ring \\( R \\) is called simple if its only two-sided ideals are $0$\u2026"
 classification:
   areas:
   - algebra

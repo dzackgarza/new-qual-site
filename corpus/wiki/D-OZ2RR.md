@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-OZ2RR
 kind: definition
-title: "Normalizer"
+title: "Normalizer: $N_G(H) = \\theset{g\\in G \\suchthat gHg\\inv = H} = \\Union_{M\\in S} M, \\quad S \\da \\theset{H\\suchthat H \\normal M \\leq G}$ Contrast to the centralizer: these don't have to fix $H$\u2026"
 classification:
   areas:
   - algebra

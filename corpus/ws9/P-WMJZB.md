@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WMJZB
 kind: problem
-title: Let $\mathcal{H}$ be a Hilbert space equipped with an inner product $(…
+title: "Let $\\mathcal{H}$ be a Hilbert space equipped with an inner product $(\\cdot,\\cdot)$ and\u2026"
 classification:
   areas:
   - real-analysis

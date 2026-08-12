@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-K6UP2R5BUV
 kind: problem
-title: Give an example of a continuous $f\in L^1(\RR)$ such that $f(x)…
+title: "Give an example of a continuous $f\\in L^1(\\RR)$ such that $f(x) \\not\\to 0$\u2026"
 classification:
   areas:
   - real-analysis

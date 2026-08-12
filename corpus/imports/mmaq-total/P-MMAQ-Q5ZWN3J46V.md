@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-Q5ZWN3J46V
 kind: problem
-title: 'Let $f, g: [a, b] \to \RR$ be measurable with'
+title: "Let $f, g: [a, b] \\to \\RR$ be measurable with $\\int_{a}^{b} f(x) ~d x=\\int_{a}^{b} g(x) ~d x$"
 classification:
   areas:
   - real-analysis

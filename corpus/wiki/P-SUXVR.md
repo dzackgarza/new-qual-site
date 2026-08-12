@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SUXVR
 kind: problem
-title: "6. $\\displaystyle \\int \\frac {1}{x^2\\sqrt {x^2-a^2}} ~dx = \\frac {1}{a\u2026"
+title: "$\\displaystyle \\int \\frac {1}{x^2\\sqrt {x^2-a^2}} ~dx = \\frac {1}{a^2} \\sin(\\sec ^{-1} (\\frac {x}{a})) = \\color {blue} {\\frac {\\sqrt {x^2 - a^2}}{a^2 x}}\u200b$ Solution: $\\sec (u) = \\frac {1}{a} \\cdot x$\u2026"
 classification:
   areas:
   - prelim

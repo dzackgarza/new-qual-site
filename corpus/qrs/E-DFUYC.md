@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DFUYC
 kind: exercise
-title: "Prove the \"recognizing direct products\" theorem."
+title: "Prove the \"recognizing direct products\" theorem. Can the\u2026"
 classification:
   areas:
   - algebra
@@ -10,8 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Prove the "recognizing direct products" theorem.
 Can the conditions be relaxed?
 :::
-

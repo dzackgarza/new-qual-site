@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C62HS
 kind: problem
-title: "Prove that if $(X, d)$ is a compact metric space, $f : X \\to X$ is a"
+title: "Prove that if $(X, d)$ is a compact metric space, $f : X \\to X$ is a continuous\u2026"
 classification:
   areas:
   - topology

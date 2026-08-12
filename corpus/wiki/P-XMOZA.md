@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XMOZA
 kind: problem
-title: "Let"
+title: "Let \\begin{align} X=\\left\\{(x, y) \\in \\mathbb{R}^{2} | x>0, y \\geq 0, \\text { and } \\frac{y}{x} \\text { is rational }\\right\\} \\end{align} and equip $X$ with the subspace topology induced by the\u2026"
 classification:
   areas:
   - topology

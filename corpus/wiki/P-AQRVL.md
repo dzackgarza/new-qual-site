@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AQRVL
 kind: problem
-title: "Expand $\\frac{1}{1-z^{2}}+\\frac{1}{z-3}$ in a series of the form $\\sum\u2026"
+title: "Expand $\\frac{1}{1-z^{2}}+\\frac{1}{z-3}$ in a series of the form $\\sum_{-\\infty}^{\\infty} a_{n} z^{n}$ so it converges for $|z|<1$, $1<|z|<3$, $|z|>3$."
 classification:
   areas:
   - complex-analysis

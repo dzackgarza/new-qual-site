@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LL7UL
 kind: problem
-title: 'Let $K$ be a Galois extension of a field $F$ with $[K: F] = 2015$.'
+title: "Let $K$ be a Galois extension of a field $F$ with $[K: F] = 2015$. Prove that $K$\u2026"
 classification:
   areas:
   - algebra

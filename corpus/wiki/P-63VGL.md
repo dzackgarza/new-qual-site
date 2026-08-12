@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-63VGL
 kind: problem
-title: "Suppose that $f$ is holomorphic on a punctured open set $\\Omega\\setmin\u2026"
+title: "Suppose that $f$ is holomorphic on a punctured open set $\\Omega\\setminus\\theset{w_0}$ and\u2026"
 classification:
   areas:
   - complex-analysis

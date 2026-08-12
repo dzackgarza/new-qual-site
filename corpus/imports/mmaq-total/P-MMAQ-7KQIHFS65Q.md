@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-7KQIHFS65Q
 kind: problem
-title: Let $f$ be a non-negative function on $\RR^n$ and $\mathcal A =…
+title: "Let $f$ be a non-negative function on $\\RR^n$ and $\\mathcal A = \\{(x, t) \\in \\RR^n \\times \\RR : 0 \\leq t \\leq f (x)\\}$."
 classification:
   areas:
   - real-analysis

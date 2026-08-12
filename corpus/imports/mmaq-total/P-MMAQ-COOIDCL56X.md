@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-COOIDCL56X
 kind: problem
-title: Show that $f(z) = z^2$ is uniformly continuous in any open disk
+title: "Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where\u2026"
 classification:
   areas:
   - complex-analysis

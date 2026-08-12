@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3AV7Z
 kind: problem
-title: "Facts used:"
+title: "Facts used: Construction of Moore Spaces $\\tilde H_n(\\Sigma X) = \\tilde H_{n-1}(X)$, using $\\Sigma X = C_X \\union_X C_X$ and\u2026"
 classification:
   areas:
   - topology
@@ -10,8 +10,11 @@ classification:
 relations: []
 review: draft
 ---
+
 Facts used:
+
 - Construction of Moore Spaces
+
 - $\tilde H_n(\Sigma X) = \tilde H_{n-1}(X)$, using $\Sigma X = C_X \union_X C_X$ and Mayer-Vietoris.
 
 Take $X = e^0 \union_{\Phi_1} e^5 \union_{\Phi_2} e^6$, where

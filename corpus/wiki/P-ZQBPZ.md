@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZQBPZ
 kind: problem
-title: "- ![](Pasted%20image%2020210520145810.png)"
+title: "Untitled"
 classification:
   areas:
   - topology

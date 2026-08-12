@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OY6YK
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {x^2 + 2x + 1}{x\\sqrt {x^2-1}}~dx = \\colo\u2026"
+title: "$\\displaystyle \\int \\frac {x^2 + 2x + 1}{x\\sqrt {x^2-1}}~dx = \\color {blue} {2\\ln(\\sqrt {x^2-1}+x)+\\sqrt {x^2-1}+\\sec ^{-1} (x)}$ Solution: $\\sec (u) = x$, $\\tan (u) \\sec (u) ~du = dx$ Solution\u2026"
 classification:
   areas:
   - prelim

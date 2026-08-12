@@ -43,6 +43,8 @@ from collections import Counter
 from pathlib import Path
 from urllib.parse import quote, unquote
 
+from card_titles import title_of
+
 # Each source repo names its areas differently: qual-wiki numbers them for sort
 # order, qual-review-and-solutions spells them out. Both map to the same closed
 # area registry.
@@ -189,60 +191,16 @@ def area_of(src: Path) -> str | None:
     return None
 
 
-AUTHORED_TITLE = re.compile(r'^:{3,}[^\n]*?\btitle="([^"]*)"')
 # Lines that are page furniture rather than statement: layout macros, Obsidian
-# block anchors, bare tag lines.
+# block anchors, bare tag lines. This drives the head/body split below, where a
+# bare enumerator is *statement*: an `a.` opening a multi-part problem labels its
+# first part, and hoisting it onto the page would leave the card with an
+# unlabelled part (a) beside a labelled (b). `card_titles` owns the separate
+# question of what makes a line worth titling a card after.
 NOT_A_TITLE = re.compile(r"^(\\\w+\s*$|\^[0-9a-f]{6}\s*$|#[\w/-]+\s*$|!\[[^\]]*\]\([^)]*\)\s*$)")
-
-# A bare enumerator, a lone display-math delimiter, or a lone `?`. These name
-# nothing, and skipping them produced 92 cards titled `a.`, `1.`, or `\[`.
-#
-# Separate from `NOT_A_TITLE` on purpose: that one also drives the head/body
-# split below, where these lines are *statement*. An `a.` opening a multi-part
-# problem labels its first part, and hoisting it onto the page would leave the
-# card with an unlabelled part (a) beside a labelled (b). Bad as a title, load
-# bearing in the body.
-NOT_A_TITLE_ALONE = re.compile(r"^(\\[\[\]]\s*$|\(?[a-zA-Z][.)]\s*$|\d+[.)]\s*$|\?\s*$)")
 # A figure reference relative to the source file's own directory. Cards are
 # extracted out of that directory, so every one of these breaks on the way out.
 IMAGE = re.compile(r"(!\[[^\]]*\]\()((?!https?:|/)[^)]+)(\))")
-
-
-def title_of(span: dict, body: str) -> str:
-    r"""The authored title if there is one, else the first sentence of the statement.
-
-    The title is read out of the source body, never from the ledger. Asked to
-    copy `title="Complement of the disc to $\\mathbb{H}$"`, routing agents
-    returned `"Complement of the disc to H"` -- LaTeX silently rendered to
-    Unicode, `\mathbb{H}` collapsed to a letter -- and four titles came back
-    empty. Byte-exact reconstruction cannot see it, because the card *body*
-    still holds the authored div verbatim; only the front-matter title was
-    paraphrased. Parsing it here makes transcription impossible to get wrong.
-
-    The corpus titles most expository divs but leaves problems bare -- 240 carry
-    an explicit `?`. A generated title is a display handle, not an identity; the
-    tag is the identity.
-    """
-    for line in body.splitlines()[:4]:
-        m = AUTHORED_TITLE.match(line)
-        if m and m.group(1).strip() not in ("", "?"):
-            return str(m.group(1)).strip()
-    for line in body.splitlines():
-        line = line.strip()
-        if not line or line.startswith((":::", "#", "---", ">")):
-            continue
-        # `\envlist` is a layout macro and `^043381` an Obsidian block anchor;
-        # both are the first line of a statement often enough to have produced
-        # 95 cards titled after them. Neither says anything about the problem.
-        if NOT_A_TITLE.match(line) or NOT_A_TITLE_ALONE.match(line):
-            continue
-        line = re.sub(r"\s+", " ", line)
-        title = (line[:70].rstrip() + "…") if len(line) > 70 else line
-        # A title is one line of text. Anything that survives to here and still
-        # spans lines or embeds an image is furniture the filters missed, and
-        # emitting it produces front matter that will not parse.
-        return title.replace("\n", " ").strip() or "Untitled"
-    return "Untitled"
 
 
 # The author's private study trackers, verbatim and normalised. These marked
@@ -440,7 +398,7 @@ def apply_ledger(ledger: Path, out: Path) -> dict:
             "schema: qual/card@1",
             f"id: {t}",
             f"kind: {kind}",
-            f"title: {json.dumps(title_of(span, body))}",
+            f"title: {json.dumps(title_of(body))}",
             "classification:",
             f"  areas:\n  - {area}" if area else "  areas: []",
             "  topics: []",

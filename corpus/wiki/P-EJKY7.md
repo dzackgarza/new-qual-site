@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EJKY7
 kind: problem
-title: "Let $X$ be $S^1$ with two 2-cells attached via $z\\mapsto z^5$ and $z\\m\u2026"
+title: "Let $X$ be $S^1$ with two 2-cells attached via $z\\mapsto z^5$ and $z\\mapsto z^3$."
 classification:
   areas:
   - topology

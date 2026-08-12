@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRNXH
 kind: problem
-title: "Suppose $f$ is analytic on $\\DD^\\circ$."
+title: "Suppose $f$ is analytic on $\\DD^\\circ$. Determine with proof which of the\u2026"
 classification:
   areas:
   - complex-analysis
@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 Suppose $f$ is analytic on $\DD^\circ$.
 Determine with proof which of the following are possible:
 
@@ -20,4 +21,3 @@ b. $f\qty{1\over n} = e^{-n}$ for each even integer $n>1$ while $f\qty{1\over n}
 c. $f\qty{1\over n^2} = {1\over n}$ for each integer $n>1$.
 
 d. $f\qty{1\over n} = {n-2 \over n-1}$ for each integer $n>1$.
-

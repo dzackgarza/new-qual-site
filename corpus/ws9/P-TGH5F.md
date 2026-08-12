@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TGH5F
 kind: problem
-title: Let $v_1, \dots, v_k$ be vectors in $\mathbb{R}^n$. Define the span $V…
+title: "Let $v_1, \\dots, v_k$ be vectors in $\\mathbb{R}^n$."
 classification:
   areas:
   - prelim

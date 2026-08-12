@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4PTIX
 kind: problem
-title: Let $g$ be analytic for $|z|\leq 1$ and $|g(z)| < 1$ for $|z| = 1$.
+title: "Let $g$ be analytic for $|z|\\leq 1$ and $|g(z)| < 1$ for $|z| = 1$. Show that $g$ has a unique\u2026"
 classification:
   areas:
   - complex-analysis

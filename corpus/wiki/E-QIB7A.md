@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-QIB7A
 kind: exercise
-title: "(1) Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence"
+title: "Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence in $O$ such\u2026"
 classification:
   areas:
   - complex-analysis

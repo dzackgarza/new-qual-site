@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-JWY5GWNO
 kind: problem
-title: Find a conformal map
+title: "Find a conformal map from $\\{ z: |z - 1/2| > 1/2, \\text{Re}(z)>0 \\}$ to $\\mathbb H$ from $\\{ z: |z - 1/2| > 1/2, |z| <1 \\}$ to $\\mathbb D$ from the\u2026"
 classification:
   areas:
   - complex-analysis

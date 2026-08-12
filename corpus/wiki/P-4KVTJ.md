@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4KVTJ
 kind: problem
-title: "Let $\\gamma$ be a piecewise smooth simple closed curve with interior $\u2026"
+title: "Let $\\gamma$ be a piecewise smooth simple closed curve with interior\u2026"
 classification:
   areas:
   - complex-analysis

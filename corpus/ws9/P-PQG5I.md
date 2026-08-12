@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PQG5I
 kind: problem
-title: Let
+title: "Let $A = \\left\\{x\\in\\ell^2: \\sum_{n\\ge1} n|x_n|^2 \\le 1\\right\\}$ Show that $A$ is compact in the $\\ell^2$ topology."
 classification:
   areas:
   - real-analysis

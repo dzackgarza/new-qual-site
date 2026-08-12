@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FDWKY
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {x}{x-1} ~dx = \\color{blue} {x + \\ln (1 -\u2026"
+title: "$\\displaystyle \\int \\frac {x}{x-1} ~dx = \\color{blue} {x + \\ln (1 - x)}$ Solution: $\\frac {x}{x-1} = 1 + \\frac {1}{x-1}$ Used 2018\u2026"
 classification:
   areas:
   - prelim

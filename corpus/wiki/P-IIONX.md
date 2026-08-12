@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IIONX
 kind: problem
-title: "Find a fractional linear transformation $T$ which maps $\\HH$ to $\\DD$,\u2026"
+title: "Find a fractional linear transformation $T$ which maps $\\HH$ to $\\DD$\u2026"
 classification:
   areas:
   - complex-analysis
@@ -10,16 +10,19 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="?"}
+
+::: {.problem title="?"}
 Find a fractional linear transformation $T$ which maps $\HH$ to $\DD$, and explicitly describe the image of the first quadrant under $T$.
 :::
 
-:::{.solution}
+::: {.solution}
 Unclear to me how to *motivate* this formula, but choose $f(z) = {z-i\over z+i}$.
 Note that
 
 - $f(-1) = i$
+
 - $f(0) = -1$
+
 - $f(1) = -i$,
 
 so $\RR$ oriented from $-\infty\to\infty$ is sent to $S^1$ oriented counterclockwise.
@@ -36,4 +39,3 @@ Instead consider handedness and where sub-regions go:
 Noting that $Q_1$ is the bigon enclosed by $0, \infty$, this maps to a bigon spanned by $-1, 1$.
 By handedness, since $Q_1$ is to the left of $\RR$, it gets mapped to the left of the image of $\RR_{>0}$, which is the lower half of the circle.
 :::
-

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BW6LF
 kind: problem
-title: "Construct a space having $H_*(X) = [\\ZZ, 0, 0, 0, 0, \\ZZ_4, 0, \\cdots]\u2026"
+title: "Construct a space having $H_(X) = [\\ZZ, 0, 0, 0, 0, \\ZZ_4, 0, \\cdots]$."
 classification:
   areas:
   - topology

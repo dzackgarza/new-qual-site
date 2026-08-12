@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XYYRM
 kind: problem
-title: "Facts used:"
+title: "Facts used: Every homeomorphism induces isomorphisms on\u2026"
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5YLZS
 kind: problem
-title: Suppose $f(x)$ and $xf(x)$ are integrable on $\RR$.
+title: "Suppose $f(x)$ and $xf(x)$ are integrable on $\\RR$. Define $F$ by $F(t)\\definedas \\int _{-\\infty}^{\\infty} f(x) \\cos (x t) dx$ Show that $F'(t)=-\\int _{-\\infty}^{\\infty} x f(x) \\sin (x t) dx$"
 classification:
   areas:
   - real-analysis
