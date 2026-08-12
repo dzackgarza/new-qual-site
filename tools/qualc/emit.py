@@ -1182,13 +1182,7 @@ def mathjax_header(macros: dict) -> str:
         "    return MathJax.startup.defaultPageReady();\n"
         "  } }\n"
     )
-    return (
-        "<script>\nwindow.MathJax = {\n  tex: { macros: "
-        + json.dumps(mathjax_macros)
-        + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] },\n"
-        + align_fix
-        + "};\n</script>\n"
-    )
+    return "<script>\nwindow.MathJax = {\n  tex: { macros: " + json.dumps(mathjax_macros) + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] },\n" + align_fix + "};\n</script>\n"
 
 
 def _link_targets(
