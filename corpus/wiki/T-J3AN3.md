@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Riesz-Fischer"}
+
+::: {.theorem title="Riesz-Fischer"}
 Let $U = \theset{u_{n}}_{n=1}^\infty$ be an orthonormal set (not necessarily a basis), then
 
 1. There is an isometric surjection
@@ -31,5 +32,4 @@ $$
 $$
 
 > Note: the choice of $\vector x$ is unique $\iff$ $\theset{u_{n}}$ is **complete**, i.e. $\inner{\vector x}{\vector u_{n}} = 0$ for all $n$ implies $\vector x = \vector 0$.
-
 :::

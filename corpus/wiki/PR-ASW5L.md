@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Principal Ideals are Free"}
+
+::: {.proposition title="Principal Ideals are Free"}
 If $I \normal R$ is an ideal of $R$, then $I$ is a free $R\dash$module iff $I$ is a principal ideal.
 :::

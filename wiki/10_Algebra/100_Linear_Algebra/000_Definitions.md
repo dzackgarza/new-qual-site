@@ -1,6 +1,6 @@
 # Definitions
 
-:::{.remark}
+::: {.remark}
 The main powerhouse: for $T:V\to V$ a linear transformation for $V\in\Vect_k$, map to $V\in \modsleft{k[x]}$ by letting polynomials act via $p(x)\cdot \vector v \da p(T)(\vector v)$.
 Using that $k[x]$ is a PID iff $k$ is a field, and we can apply the FTFGMPID to get two decompositions:
 \[
@@ -9,12 +9,16 @@ V &\cong \bigoplus _{j=1}^m k[x] / \gens{ p_i(x)^{e_i} } && \text{ with } p_i \t
 \]
 
 - The $q_i$ are the **invariant factors** of $T$
-  - $q_i$ is the minimal polynomial of $T$ restricted to $V_i \da k[x] / \gens{ q_i(x) }$. 
-  - The largest invariant factor $q_n$ is the **minimal polynomial** of $T$.
-  - The product $\prod_{i=1}^n q_i(x)$ is the **characteristic polynomial** of $T$.
-- The $p_i$ are the **elementary divisors** of $T$.
-  - Todo: what can you read off of this...?
 
+  - $q_i$ is the minimal polynomial of $T$ restricted to $V_i \da k[x] / \gens{ q_i(x) }$.
+
+  - The largest invariant factor $q_n$ is the **minimal polynomial** of $T$.
+
+  - The product $\prod_{i=1}^n q_i(x)$ is the **characteristic polynomial** of $T$.
+
+- The $p_i$ are the **elementary divisors** of $T$.
+
+  - Todo: what can you read off of this...?
 :::
 
 [[D-5BR4D]]
@@ -41,17 +45,24 @@ V &\cong \bigoplus _{j=1}^m k[x] / \gens{ p_i(x)^{e_i} } && \text{ with } p_i \t
 
 ## Notation
 
-:::{.remark}
+::: {.remark}
 Some definitions:
 
 - $A^t$ is the usual transpose.
+
 - $A^{\dagger}$ is the conjugate transpose.
+
 - A matrix is $A^{\dagger}$ is **adjoint** to $A$ iff $\inner{A\vector x}{\vector y} = \inner{\vector x}{A^{\dagger} \vector y}$.
+
   - $A$ is **self-adjoint** iff $A$ is an adjoint for itself, so $\inner{A\vector x}{\vector y} = \inner{\vector x}{A \vector y}$.
+
 - $A$ is **symmetric** iff $A = A^t$.
+
   - $A$ is **orthogonal** iff $A^tA = AA^t = I$
+
 - $A$ is **Hermitian** iff $A^{\dagger} = A$.
+
   - $A$ is **normal** iff $AA^{\dagger} = A^{\dagger} A$.
+
   - $A$ is **unitary** iff $A^{\dagger}A = AA^{\dagger} = I$.
 :::
-

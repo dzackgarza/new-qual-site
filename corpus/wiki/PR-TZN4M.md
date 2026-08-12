@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Characterization of finite normal extensions as splitting fields"}
+
+::: {.proposition title="Characterization of finite normal extensions as splitting fields"}
 An extension $L/k$ is finite and normal $\iff L$ is the splitting field of some polynomial $f\in k[x]$.
 :::

@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Gram Matrix"}
-#todo
 
+::: {.definition title="Gram Matrix"}
+#todo
 :::

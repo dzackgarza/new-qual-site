@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="?"}
+
+::: {.proposition title="?"}
 The Cantor set is closed with empty interior.
 :::

@@ -10,11 +10,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Free Module"}
+
+::: {.definition title="Free Module"}
 A **free** module $M$ is a module satisfying any of the following conditions:
 
-- A universal property:
-  There is a set \( \mathcal{B}  \) and a set map \( M \mapsvia{\iota} \mathcal{B}  \) such that every set map \( \mathcal{B} \mapsvia{N} \) lifts:
+- A universal property: There is a set \( \mathcal{B}  \) and a set map \( M \mapsvia{\iota} \mathcal{B}  \) such that every set map \( \mathcal{B} \mapsvia{N} \) lifts:
 
 \begin{tikzcd}
 	M \\
@@ -29,10 +29,9 @@ A **free** module $M$ is a module satisfying any of the following conditions:
 
 - Existence of a basis:
 
-  There is linearly independent (so $\sum r_i \beta_i = 0 \implies r_i = 0$) spanning set (so \( m\in M \implies m = \sum r_i \beta_i \) ) of the form \( \mathcal{B} \da \ts{ \beta_i }_{i\in I} \), 
+  There is linearly independent (so $\sum r_i \beta_i = 0 \implies r_i = 0$) spanning set (so \( m\in M \implies m = \sum r_i \beta_i \) ) of the form \( \mathcal{B} \da \ts{ \beta_i }_{i\in I} \),
 
 - Direct sum decomposition:
 
   $M$ decomposes as $M \cong \bigoplus_{i\in I} \beta_i R$, a sum of cyclic submodules.
-
 :::

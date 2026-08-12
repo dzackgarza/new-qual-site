@@ -10,8 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="$C(I)$ is complete"}
-The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped with the norm 
+
+::: {.proposition title="$C(I)$ is complete"}
+The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped with the norm
 \[
 \norm{f}_\infty \da \sup_{x\in [0, 1]} \abs{f(x)}
 \]

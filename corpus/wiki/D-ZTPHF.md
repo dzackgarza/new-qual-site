@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Order"}
+
+::: {.definition title="Order"}
 The **order** of an element $g\in G$, denoted $n \da o(g)$, is the smallest $n\in \ZZ^{\geq 0}$ such that $g^n = e$.
 :::

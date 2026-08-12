@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Primitive Polynomials"}
+
+::: {.definition title="Primitive Polynomials"}
 For $R$ a UFD, a polynomial $p\in R[x]$ is **primitive** iff the greatest common divisors of its coefficients is a unit.
 :::

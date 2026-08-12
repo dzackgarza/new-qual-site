@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Integrability"}
+
+::: {.definition title="Integrability"}
 A measurable function is **integrable** iff $\norm{f}_1 < \infty$.
 :::

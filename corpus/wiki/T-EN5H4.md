@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="$S_n$ is Almost Always Solvable"}
+
+::: {.theorem title="$S_n$ is Almost Always Solvable"}
 If $n\geq 4$ then $S_n$ is solvable.
 :::

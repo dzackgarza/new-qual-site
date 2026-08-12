@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="p-groups"}
+
+::: {.definition title="p-groups"}
 If $\abs{G} = p^k$, then $G$ is a **p-group.**
 :::

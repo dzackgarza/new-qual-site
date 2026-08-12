@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Heine-Cantor"}
+
+::: {.theorem title="Heine-Cantor"}
 Every continuous function $f:X\to Y$ where $X$ is a compact metric space is uniformly continuous.
 As a result, if $f:U\to \RR$ is continuous, then $f$ is uniformly continuous on any $K \subseteq U$ compact.
 :::

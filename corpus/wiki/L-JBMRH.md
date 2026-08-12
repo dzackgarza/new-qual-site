@@ -10,6 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-:::{.lemma title="?"}
-Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
+
+::: {.lemma title="?"}
+Any nonempty set which is bounded from above (resp.
+below) has a well-defined supremum (resp.
+infimum).
 :::

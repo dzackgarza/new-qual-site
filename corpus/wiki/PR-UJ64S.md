@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Small Tails for Series of Functions"}
+
+::: {.proposition title="Small Tails for Series of Functions"}
 If $\sum f_n$ converges then $f_n \to 0$ uniformly.
 :::

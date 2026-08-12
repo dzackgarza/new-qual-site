@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 ::: {.proposition title="a.e. convergence never implies $L^p$ convergence"}
 Sequences $f_k \converges{a.e.}\to f$ but $f_k \converges{L^p}{\not\to} f$:
 

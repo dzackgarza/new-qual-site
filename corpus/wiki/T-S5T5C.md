@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Sylow 3"}
+
+::: {.theorem title="Sylow 3"}
 \envlist
 
 1. $n_p \divides m~$, and in particular, $n_p \leq m$.
@@ -18,5 +19,4 @@ review: draft
 2. $n_p \equiv 1 \mod p$.
 
 3. $n_p = [G : N_G(S_p)]$ where $N_G$ is the normalizer.
-
 :::

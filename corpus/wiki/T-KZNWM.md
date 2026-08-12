@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Non-measurable sets exist"}
+
+::: {.theorem title="Non-measurable sets exist"}
 There is a non-measurable set $A\subseteq \RR$.
 :::

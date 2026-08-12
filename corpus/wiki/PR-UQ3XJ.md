@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Order of $\GL_n$"}
 
+::: {.proposition title="Order of $\GL_n$"}
 :::

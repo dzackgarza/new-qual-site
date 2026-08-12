@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.lemma title="Function discontinuous on the rationals"}
+
+::: {.lemma title="Function discontinuous on the rationals"}
 There is a function discontinuous precisely on $\QQ$.
 :::

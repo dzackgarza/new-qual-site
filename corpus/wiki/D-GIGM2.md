@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Nilpotent"}
+
+::: {.definition title="Nilpotent"}
 An element $r\in R$ is **nilpotent** if $r^n = 0$ for some $n \in \ZZ^{\geq 0}$.
 :::

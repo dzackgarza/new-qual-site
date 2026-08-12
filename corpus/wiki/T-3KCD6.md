@@ -10,9 +10,10 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Cauchy's Theorem"}
-For every prime $p$ dividing $\abs{G}$. there is an element (and thus a subgroup) of order $p$.
+
+::: {.theorem title="Cauchy's Theorem"}
+For every prime $p$ dividing $\abs{G}$.
+there is an element (and thus a subgroup) of order $p$.
 
 > This is a partial converse to Lagrange's theorem, and strengthened by Sylow's theorem.
-
 :::

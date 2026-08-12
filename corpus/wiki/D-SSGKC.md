@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Quadratic Form"}
-#todo
 
+::: {.definition title="Quadratic Form"}
+#todo
 :::

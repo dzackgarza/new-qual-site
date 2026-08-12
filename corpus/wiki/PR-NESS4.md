@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="NC Theorem"}
+
+::: {.proposition title="NC Theorem"}
 $N_G(H) / C_G(H)$ is isomorphic to a subgroup of $\Aut(H)$.
 :::

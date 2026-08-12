@@ -10,10 +10,13 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Ring"}
-A **ring** is a triple $(R, +, \cdot) \in \CRing$ such that 
+
+::: {.definition title="Ring"}
+A **ring** is a triple $(R, +, \cdot) \in \CRing$ such that
 
 - $(R, +)\in \Ab\Grp$,
+
 - $(R, \cdot) \in \Monoid$
+
 - Distributivity: $a(b+c) = ab + ac$.
 :::

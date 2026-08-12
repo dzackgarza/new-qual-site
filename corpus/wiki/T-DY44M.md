@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Baire"}
-$\RR$ is a **Baire space**
-Thus $\RR$ can not be written as a countable union of nowhere dense sets.
+
+::: {.theorem title="Baire"}
+$\RR$ is a **Baire space** Thus $\RR$ can not be written as a countable union of nowhere dense sets.
 :::

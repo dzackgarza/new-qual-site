@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.lemma title="$p$ groups are solvable"}
+
+::: {.lemma title="$p$ groups are solvable"}
 Every finite $p$ group is solvable.
 :::

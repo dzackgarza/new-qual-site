@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Hilbert Basis Theorem"}
 
+::: {.theorem title="Hilbert Basis Theorem"}
 :::

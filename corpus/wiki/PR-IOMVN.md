@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Fixing transitivity of normality"}
+
+::: {.proposition title="Fixing transitivity of normality"}
 Characteristic subgroups of normal subgroups are normal, i.e. if $H\normal G$ and $N \ch H$, then $N\normal G$.
 :::

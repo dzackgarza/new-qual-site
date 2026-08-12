@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Transitive Group Action"}
+
+::: {.definition title="Transitive Group Action"}
 A group action $G\actson X$ is **transitive** iff for all $x, y\in X$ there exists a $g\in G$ such that $g\cdot x = x$.
 Equivalently, the action has a single orbit.
 :::

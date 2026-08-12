@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Nondegenerate Bilinear Form"}
 
+::: {.definition title="Nondegenerate Bilinear Form"}
 :::

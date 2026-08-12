@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Characterization of normal algebraic extensions"}
+
+::: {.proposition title="Characterization of normal algebraic extensions"}
 For $L/k$ algebraic: let $\bar{k}$ be an algebraic closure containing $L$, then $L/k$ is normal iff every $k\dash$embedding $\sigma: L\to \bar{k}$ satisfies $\im \sigma = L$, so $\sigma$ is a $k\dash$automorphism of $L$:
 
 \begin{tikzcd}
@@ -28,5 +29,4 @@ For $L/k$ algebraic: let $\bar{k}$ be an algebraic closure containing $L$, then 
 \end{tikzcd}
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNSxbMCw0LCJrIl0sWzAsMiwiTCJdLFsyLDQsImsiXSxbMiwwLCJcXGJhcntrfSJdLFsyLDIsIlxcc2lnbWEoTCkgPSBMIixbMTIwLDYwLDYwLDFdXSxbMCwxLCIiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDIsIiIsMSx7ImxldmVsIjoyLCJzdHlsZSI6eyJoZWFkIjp7Im5hbWUiOiJub25lIn19fV0sWzIsNCwiIiwxLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNCwzLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDMsIlxcc2lnbWEiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDQsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn0sImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dXQ==)
-
 :::

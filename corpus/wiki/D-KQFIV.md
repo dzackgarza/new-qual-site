@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Perfect Fields"}
+
+::: {.definition title="Perfect Fields"}
 The following are equivalent:
 
 - $k$ is a **perfect** field.
@@ -20,5 +21,4 @@ The following are equivalent:
 - Every finite extension $F/k$ is separable.
 
 - Every irreducible polynomial $p\in k[x]$ is separable.
-
 :::

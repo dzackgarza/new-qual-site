@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Reduced Ring"}
-A ring $R$ is **reduced** if $R$ contains no nonzero nilpotent elements. 
+
+::: {.definition title="Reduced Ring"}
+A ring $R$ is **reduced** if $R$ contains no nonzero nilpotent elements.
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Meager Sets"}
+
+::: {.definition title="Meager Sets"}
 A set is **meager** if it is a *countable* union of nowhere dense sets.
 :::

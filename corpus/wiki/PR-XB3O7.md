@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Irreducible implies separable for perfect fields"}
+
+::: {.proposition title="Irreducible implies separable for perfect fields"}
 If $k$ is a perfect field, then every irreducible $f\in k[x]^{\irr}$ is automatically separable.
 :::

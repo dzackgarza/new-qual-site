@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Characterization of Solvable"}
+
+::: {.theorem title="Characterization of Solvable"}
 A group $G$ is solvable iff its derived series terminates.
 :::

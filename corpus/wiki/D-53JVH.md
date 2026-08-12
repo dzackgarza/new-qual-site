@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Nilpotent"}
+
+::: {.definition title="Nilpotent"}
 A group $G$ is **nilpotent** iff $G$ has a terminating upper central series.
 :::

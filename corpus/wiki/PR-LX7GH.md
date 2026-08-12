@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Prime implies irreducible for UFDs"}
+
+::: {.proposition title="Prime implies irreducible for UFDs"}
 In $R$ a UFD, an element $r\in R$ is prime $\iff r$ is irreducible.
 :::

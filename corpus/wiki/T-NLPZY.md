@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Fundamental Theorem of Galois Theory"}
+
+::: {.theorem title="Fundamental Theorem of Galois Theory"}
 Let $L/k$ be a Galois extension, then there is a correspondence:
 \[
 \correspond{\text{Subgroups } H \leq \Gal(L/k)}
@@ -33,5 +34,4 @@ H &\rightarrow \correspond{E^H \definedas ~\text{The fixed field of $H$}} \\
 - The compositum $F_1 F_2$ corresponds to $H_1 \intersect H_2$.
 
 - The subfield $F_1 \intersect F_2$ corresponds to $H_1 H_2$.
-
 :::

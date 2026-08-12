@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Normalizers Grow"}
+
+::: {.definition title="Normalizers Grow"}
 If for every proper $H < G$, $H\normal N_G(H)$ is again proper, then "normalizers grow" in $G$.
 :::

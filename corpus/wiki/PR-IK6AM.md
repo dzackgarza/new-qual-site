@@ -10,9 +10,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Characterization of perfect fields"}
-$k$ is perfect (using the irreducible implies separable condition) if either 
 
-- $\ch k = 0$ or 
+::: {.proposition title="Characterization of perfect fields"}
+$k$ is perfect (using the irreducible implies separable condition) if either
+
+- $\ch k = 0$ or
+
 - $\ch k = p > 0$ and $k^p = k$.
 :::

@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Local Ring"}
+
+::: {.definition title="Local Ring"}
 A ring $R$ is **local** iff it contains a unique maximal ideal $\mfm$, so $\mspec R = \ts{ 0, \mfm}$.
 As a consequence, there is a uniquely associated **residue field** $\kappa \da R/\mfm$.
 :::

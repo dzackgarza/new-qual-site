@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Cayley-Hamilton"}
+
+::: {.theorem title="Cayley-Hamilton"}
 The minimal polynomial divides the characteristic polynomial, and in particular $\chi_A(A) = 0$.
 :::

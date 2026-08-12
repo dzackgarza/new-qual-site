@@ -10,11 +10,10 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Orbit-Stabilizer"}
 
-\[\size  {Gx} = [G: G_x] = \size  {G} / \size {G_x} \quad \text{if $G$ is finite}
-.\]
+::: {.theorem title="Orbit-Stabilizer"}
+
+\[\size  {Gx} = [G: G_x] = \size  {G} / \size {G_x} \quad \text{if $G$ is finite} .\]
 
 > Mnemonic: $G/G_x \cong Gx$.
-
 :::

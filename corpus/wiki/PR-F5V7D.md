@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="No functions discontinuous on the irrationals"}
+
+::: {.proposition title="No functions discontinuous on the irrationals"}
 There *do not* exist functions that are discontinuous precisely on $\RR\setminus \QQ$.
 :::

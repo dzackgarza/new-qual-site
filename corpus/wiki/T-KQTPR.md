@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Open Mapping"}
+
+::: {.theorem title="Open Mapping"}
 If $X, Y\in \Banach$ and $T:X\to Y$ is a surjective continuous operator, then $T$ is an open map.
 :::

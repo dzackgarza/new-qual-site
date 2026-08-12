@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Projective Modules"}
+
+::: {.definition title="Projective Modules"}
 A module $P$ is **projective** iff it satisfies any of the following conditions:
 
 - A universal property: for every surjective $N \mapsvia{g} M$ and $P \mapsvia{f} M$, the following lift exists:
@@ -36,7 +37,7 @@ A module $P$ is **projective** iff it satisfies any of the following conditions:
   For every SES $0\to A\to B\to P\to 0$, there is a right section $P\to B$ such that $P\to B\to P = \id_P$.
 
   > Note that this implies $B\cong \im(P\to B) \oplus \ker(B\to P)$.
-  
+
 - Exactness:
 
   The (always left-exact) covariant hom functor $\Hom(P, \wait)$ is right-exact.

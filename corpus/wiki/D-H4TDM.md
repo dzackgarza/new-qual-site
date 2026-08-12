@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Gram Matrix"}
 
+::: {.definition title="Gram Matrix"}
 :::

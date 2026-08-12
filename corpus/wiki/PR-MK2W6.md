@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Irreducible polynomials have separable splitting fields"}
+
+::: {.proposition title="Irreducible polynomials have separable splitting fields"}
 Irreducible polynomials have distinct roots after passing to a splitting field.
 :::

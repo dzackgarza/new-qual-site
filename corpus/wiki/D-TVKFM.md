@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Topological Notions"}
+
+::: {.definition title="Topological Notions"}
 Let $X$ be a metric space and $A$ a subset.
 Let $A'$ denote the limit points of $A$, and $\bar{A} \da A\union A'$ to be its closure.
 
@@ -36,5 +37,4 @@ Let $A'$ denote the limit points of $A$, and $\bar{A} \da A\union A'$ to be its 
   I.e., $X\subset A\union A'$.
 
   - Alternatively, $\bar{A} = X$, so the closure of $A$ is $X$.
-
 :::

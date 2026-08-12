@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Cosets are equal or disjoint"}
+
+::: {.proposition title="Cosets are equal or disjoint"}
 Any two cosets $xH, yH$ are either equal or disjoint.
 :::

@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="?"}
+
+::: {.proposition title="?"}
 For a linear operator on a vector space of nonzero finite dimension, TFAE:
 
 - The minimal polynomial is equal to the characteristic polynomial.
@@ -24,5 +25,4 @@ For a linear operator on a vector space of nonzero finite dimension, TFAE:
 - There exists a *cyclic vector* $\vector v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
 
 - $T$ has $\dim V$ distinct eigenvalues
-
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Simple modules"}
+
+::: {.definition title="Simple modules"}
 A module is **simple** iff it has no nontrivial proper submodules.
 :::

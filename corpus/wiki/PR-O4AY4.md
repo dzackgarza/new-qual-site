@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="$L^1$ functions are absolutely continuous."}
+
+::: {.proposition title="$L^1$ functions are absolutely continuous."}
 $m(E) \to 0 \implies \int_E f \to 0$.
 :::

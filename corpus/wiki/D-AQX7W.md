@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Basis of a Hilbert space"}
+
+::: {.definition title="Basis of a Hilbert space"}
 A set $\theset{u_{n}}$ is a **basis** for a Hilbert space $\mch$ iff it is dense in $\mch$.
 :::

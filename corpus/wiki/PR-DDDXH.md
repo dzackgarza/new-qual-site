@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Fields are simple"}
+
+::: {.proposition title="Fields are simple"}
 $R \in \Field \iff \Id(R) = \ts{ 0, R }$.
 :::

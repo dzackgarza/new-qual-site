@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Zorn's Lemma"}
+
+::: {.theorem title="Zorn's Lemma"}
 If $P$ is a poset in which every chain has an upper bound, then $P$ has a maximal element.
 :::

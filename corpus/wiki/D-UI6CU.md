@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Field"}
+
+::: {.definition title="Field"}
 A **field** is a commutative division ring, i.e. every nonzero element is a uni, i.e. every nonzero element is a unit
 :::

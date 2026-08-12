@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Heine-Borel"}
+
+::: {.theorem title="Heine-Borel"}
 $X\subseteq \RR^n$ is compact $\iff X$ is closed and bounded.
 :::

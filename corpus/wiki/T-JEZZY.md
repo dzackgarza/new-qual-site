@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Gauss' Lemma"}
+
+::: {.theorem title="Gauss' Lemma"}
 Let $R$ be a UFD and $F$ its field of fractions.
 Then a primitive $p\in R[x]$ (so e.g. $p$ monic) is irreducible in $R[x] \iff p$ is irreducible in $F[x]$.
 

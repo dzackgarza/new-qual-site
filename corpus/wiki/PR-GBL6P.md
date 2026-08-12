@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Minimal equals characteristic iff cyclic"}
+
+::: {.proposition title="Minimal equals characteristic iff cyclic"}
 $\chi_A(x) = \min_A(x)$ iff $A$ admits a cyclic vector.
 :::

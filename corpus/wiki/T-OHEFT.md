@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Nilpotent Implies Maximal Normals"}
+
+::: {.theorem title="Nilpotent Implies Maximal Normals"}
 A group $G$ is nilpotent iff every maximal subgroup is normal.
 :::

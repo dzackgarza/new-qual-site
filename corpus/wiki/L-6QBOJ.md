@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.lemma title="Frattini's Argument"}
+
+::: {.lemma title="Frattini's Argument"}
 If $N\normal G$ and $P\in \Syl_p(H)$ then $G = N_G(P)H$.
 :::

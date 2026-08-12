@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Duals for $L^p$ spaces"}
+
+::: {.theorem title="Duals for $L^p$ spaces"}
 For $1\leq p< \infty$, $(L^p)\dual \cong L^q$.
 :::

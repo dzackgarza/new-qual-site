@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Identification of Finite Fields as Splitting Fields"}
+
+::: {.proposition title="Identification of Finite Fields as Splitting Fields"}
 $\GF(p^n)$ is the splitting field of $\rho(x) = x^{p^n} - x$, and the elements are exactly the roots of $\rho$.
 :::

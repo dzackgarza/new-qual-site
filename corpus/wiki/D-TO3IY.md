@@ -10,8 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Irreducible Element"}
-An element $r\in R$ is **irreducible** iff 
+
+::: {.definition title="Irreducible Element"}
+An element $r\in R$ is **irreducible** iff
 \[
 r=ab \implies a \in R\units \text{ or }  b\in R\units
 \]

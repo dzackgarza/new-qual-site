@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.corollary title="Term by Term Continuity Theorem"}
+
+::: {.corollary title="Term by Term Continuity Theorem"}
 If $f_n$ are continuous and $\sum f_n \to f$ converges uniformly, then $f$ is continuous.
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Classification of groups of order $p$"}
+
+::: {.proposition title="Classification of groups of order $p$"}
 Every group $G$ of prime order $p\geq 2$ is cyclic and thus isomorphic to $\ZZ/p$.
 :::

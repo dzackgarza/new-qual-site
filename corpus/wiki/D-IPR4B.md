@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Cyclotomic Field"}
+
+::: {.definition title="Cyclotomic Field"}
 Any subfield of $\SF(x^n-1)$ is a **cyclotomic field**.
 :::

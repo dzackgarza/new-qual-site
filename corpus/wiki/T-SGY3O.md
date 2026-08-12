@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Splitting + Perfect implies Galois"}
+
+::: {.theorem title="Splitting + Perfect implies Galois"}
 \envlist
 
 - If $\ch k = 0$ or $k$ is finite, then $k$ is perfect.

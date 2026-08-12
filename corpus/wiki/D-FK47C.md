@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Elementary Symmetric Functions"}
 
+::: {.definition title="Elementary Symmetric Functions"}
 :::

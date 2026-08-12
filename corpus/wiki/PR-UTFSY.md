@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Existence of maximal ideals"}
+
+::: {.proposition title="Existence of maximal ideals"}
 Every proper ideal is contained in a maximal ideal.
 :::

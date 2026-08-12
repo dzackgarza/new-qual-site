@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Krull"}
+
+::: {.theorem title="Krull"}
 Every ring has a proper maximal ideal, and any proper ideal is contained in a maximal ideal.
 :::

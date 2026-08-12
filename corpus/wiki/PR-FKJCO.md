@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="A unit ball that is not compact"}
+
+::: {.proposition title="A unit ball that is not compact"}
 The unit ball in $C([0, 1])$ with the sup norm is not compact.
 :::

@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Group Action"}
+
+::: {.definition title="Group Action"}
 An action of $G$ on $X$ is a group morphism
 \[
 \phi:G \times X &\rightarrow X \\ 
@@ -24,5 +25,6 @@ g &\mapsto (x \mapsto \phi_g (x) \definedas g\cdot x)
 satisfying
 
 1. $e\cdot x = x$
+
 2. $g\cdot (h\cdot x) = (gh)\cdot x$
 :::

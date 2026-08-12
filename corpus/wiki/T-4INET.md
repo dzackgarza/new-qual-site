@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Characterization of Nilpotent Groups"}
+
+::: {.theorem title="Characterization of Nilpotent Groups"}
 $G$ is nilpotent iff $G$ has a lower central series terminating at $1$.
 :::

@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Normalizer"}
+
+::: {.definition title="Normalizer"}
 \[
 N_G(H) = \theset{g\in G \suchthat gHg\inv = H} = \Union_{M\in S} M, \quad S \da \theset{H\suchthat H \normal M \leq G} 
 \]

@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Normal extensions are upper transitive, forward implication"}
+
+::: {.proposition title="Normal extensions are upper transitive, forward implication"}
 For $L/k$ finite,
 
 \begin{tikzcd}
@@ -28,5 +29,4 @@ For $L/k$ finite,
 \end{tikzcd}
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNyxbMCwwLCJMIl0sWzAsMiwiSyJdLFswLDQsImsiXSxbMiwyLCJcXGltcGxpZXMiXSxbNCwwLCJMIl0sWzQsMiwiSyJdLFs0LDQsImsiXSxbMSwwXSxbMiwxXSxbMiwwLCJcXHRleHR7Tm9ybWFsfSIsMix7ImN1cnZlIjo0LCJjb2xvdXIiOlswLDYwLDYwXSwic3R5bGUiOnsiYm9keSI6eyJuYW1lIjoiZGFzaGVkIn19fSxbMCw2MCw2MCwxXV0sWzYsNV0sWzUsNF0sWzUsNCwiXFx0ZXh0e05vcm1hbH0iLDIseyJjdXJ2ZSI6MywiY29sb3VyIjpbMCw2MCw2MF0sInN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX0sWzAsNjAsNjAsMV1dXQ==)
-
 :::

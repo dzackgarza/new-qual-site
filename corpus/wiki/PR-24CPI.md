@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Triangular Decomposition"}
+
+::: {.proposition title="Triangular Decomposition"}
 Any linear map $T:V\to V$ over a perfect field decomposes as $T = S + N$ with $S$ semisimple (diagonal), $N$ nilpotent, and $[DN] = 0$.
 If $T$ is invertible, then $T$ decomposes as $T = SU$ where $S$ is semisimple, $U$ is unipotent, and $[UN] = 0$.
 :::

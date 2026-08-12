@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Principal Ideal Domain"}
+
+::: {.definition title="Principal Ideal Domain"}
 A ring $R$ is a **principal ideal domain** iff every ideal is principal.
 :::

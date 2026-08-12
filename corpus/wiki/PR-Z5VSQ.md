@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="?"}
+
+::: {.proposition title="?"}
 Measurability is not preserved by homeomorphisms.
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Simultaneous Diagonalizability"}
+
+::: {.proposition title="Simultaneous Diagonalizability"}
 A set of operators $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
 :::

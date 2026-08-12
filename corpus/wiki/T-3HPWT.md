@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Primitive Element Theorem"}
+
+::: {.theorem title="Primitive Element Theorem"}
 Every finite separable extension is simple.
 :::

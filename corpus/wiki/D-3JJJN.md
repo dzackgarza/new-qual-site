@@ -10,8 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Split Exact Sequences"}
-A short exact sequence 
+
+::: {.definition title="Split Exact Sequences"}
+A short exact sequence
 \[
 \xi: 0 \to A \mapsvia{d_1} B \mapsvia{d_2} C \to 0
 \]

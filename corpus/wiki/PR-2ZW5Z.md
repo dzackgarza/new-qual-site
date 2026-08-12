@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 ::: {.proposition title="Properties of the norm"}
 Let $K$ be a number field and $N:K\to \ZZ$ be its norm function.
 

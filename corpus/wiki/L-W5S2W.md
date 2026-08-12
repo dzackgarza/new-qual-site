@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.lemma title="?"}
+
+::: {.lemma title="?"}
 The elementary divisors of $A$ are the minimal polynomials of the Jordan blocks.
 :::

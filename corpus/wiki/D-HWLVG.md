@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Valuation Ring"}
-A **valuation ring** is an integral domain $R$ such that for every $x\in \ff(R)$, $x\in R$ or $x\inv \in R$.
 
+::: {.definition title="Valuation Ring"}
+A **valuation ring** is an integral domain $R$ such that for every $x\in \ff(R)$, $x\in R$ or $x\inv \in R$.
 :::

@@ -10,8 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Hahn-Banach"}
+
+::: {.theorem title="Hahn-Banach"}
 
 #todo
-
 :::

@@ -10,10 +10,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="The Spectral Theorem"}
+
+::: {.theorem title="The Spectral Theorem"}
 \envlist
 
 1. Hermitian (self-adjoint) matrices (i.e. $A^{\dagger} = A$) are diagonalizable over $\CC$.
-2. Symmetric matrices (i.e. $A^t = A$) are diagonalizable over $\RR$.
 
+2. Symmetric matrices (i.e. $A^t = A$) are diagonalizable over $\RR$.
 :::

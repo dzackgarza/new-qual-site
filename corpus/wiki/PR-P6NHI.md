@@ -10,10 +10,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Comparison Test"}
-If $0\leq a_n \leq b_n$, then 
 
-- $\sum b_n < \infty \implies \sum a_n < \infty$, and 
+::: {.proposition title="Comparison Test"}
+If $0\leq a_n \leq b_n$, then
+
+- $\sum b_n < \infty \implies \sum a_n < \infty$, and
+
 - $\sum a_n = \infty \implies \sum b_n = \infty$.
-
 :::

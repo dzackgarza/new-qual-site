@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Free implies projective"}
+
+::: {.proposition title="Free implies projective"}
 Any free $M\in \rmod$ is projective.
 :::

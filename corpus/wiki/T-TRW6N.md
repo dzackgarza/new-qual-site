@@ -10,12 +10,10 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Bounded Convergence"}
 
+::: {.theorem title="Bounded Convergence"}
 
 ![](../../assets/20_Real_Analysis/figures/2021-10-29_16-43-30.png)
 
-
 ![](../../assets/20_Real_Analysis/figures/2021-10-29_16-43-43.png)
-
 :::

@@ -10,11 +10,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Embeddings and Lifts"}
+
+::: {.definition title="Embeddings and Lifts"}
 Let $k$ denote a field, and $L/k$ extension.
 Every field morphism is an embedding (injection).
 An **embedding** of $k\dash$algebras $L\embeds L'$ will refer to any ring morphism over $k$, i.e. a field morphism that restricts to the identity on $k$:
-
 
 \begin{tikzcd}
 	L && {L'} \\
@@ -43,5 +43,4 @@ More generally, we can ask for lifts of any map $\sigma: k\to k'$:
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwwLCJMIl0sWzIsMCwiTCciXSxbMCwyLCJrIl0sWzIsMiwia19cXHNpZ21hIl0sWzAsMSwiIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiwzLCJcXHNpZ21hIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiwwLCIiLDEseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDEsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzUsNCwiIiwwLHsic2hvcnRlbiI6eyJzb3VyY2UiOjIwLCJ0YXJnZXQiOjIwfX1dXQ==)
 
 Most often, we'll take $\sigma: k\to k$ to be the identity.
-
 :::

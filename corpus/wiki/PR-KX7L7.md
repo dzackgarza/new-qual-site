@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="?"}
+
+::: {.proposition title="?"}
 If $T:V \injects W$ is injective, then $T\tensor \one_X: V\tensor X \injects W\tensor X$ is also injective for any $X$.
 Thus $F(\wait) = (\wait \tensor X)$ is right-exact for any $X$.
 :::

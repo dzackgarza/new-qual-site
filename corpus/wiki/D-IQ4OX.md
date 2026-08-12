@@ -10,10 +10,13 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Subgroup"}
+
+::: {.definition title="Subgroup"}
 A subset $H\subseteq G$ is a **subgroup** iff
 
 1. Closure: $HH \subset H$
+
 2. Identity: $e\in H$
+
 3. Inverses: $g\in H \iff g\inv \in H$.
 :::

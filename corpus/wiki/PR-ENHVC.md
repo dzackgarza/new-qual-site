@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Separability test: $\gcd$ with derivative"}
+
+::: {.proposition title="Separability test: $\gcd$ with derivative"}
 $f$ is separable iff $\gcd(f, f')=1$, so $f, f'$ share no common roots.
 Moreover, the multiple roots of $f$ are precisely the roots of $\gcd(f, f')$.
 :::

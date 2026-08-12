@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Containment of Finite Fields"}
+
+::: {.proposition title="Containment of Finite Fields"}
 $\GF(p^\ell) \leq \GF(p^k) \iff \ell$ divides $k$.
 :::
