@@ -1178,22 +1178,32 @@ def mathjax_header(macros: dict) -> str:
     # environment, so ENV deletes whole `\begin{env}...\end{env}` spans before the test:
     # a block that says `a &= \begin{cases}...\end{cases} \\ &= b` needs the wrapper for
     # its own alignment characters even though it contains an environment.
-    align_fix = (
-        "  startup: { pageReady() {\n"
-        "    var ENV = /\\\\begin\\{(align|aligned|array|cases|matrix|gather|split|"
-        "smallmatrix|pmatrix|bmatrix|vmatrix)(\\*?)\\}[\\s\\S]*?"
-        "\\\\end\\{\\1\\2\\}/g;\n"
-        "    document.querySelectorAll('.math.display').forEach(function (el) {\n"
-        "      var t = el.textContent;\n"
-        "      if (t.indexOf('&') < 0 || t.replace(ENV, '').indexOf('&') < 0) return;\n"
-        "      el.textContent = t.replace(/\\\\\\[/, '\\\\[\\\\begin{aligned}')\n"
-        "                        .replace(/\\\\\\](?![\\s\\S]*\\\\\\])/, "
-        "'\\\\end{aligned}\\\\]');\n"
-        "    });\n"
-        "    return MathJax.startup.defaultPageReady();\n"
-        "  } }\n"
+    # It runs as a render action rather than once at page load. A `pageReady` hook
+    # rewrites the DOM that exists when the page opens, so `generate.html`, which
+    # injects a sheet and typesets it on demand, never got the wrapper and its
+    # mathematics failed on exactly the blocks that render correctly on their own
+    # page. A render action runs on every typeset pass, and at priority 15 it sees
+    # the TeX after `find` (10) and before `compile` (20) -- so it edits the source
+    # string, with the delimiters already stripped, instead of the rendered element.
+    return (
+        "<script>\n(function () {\n"
+        "  var ENV = /\\\\begin\\{(align|aligned|array|cases|matrix|gather|split|"
+        "smallmatrix|pmatrix|bmatrix|vmatrix)(\\*?)\\}[\\s\\S]*?\\\\end\\{\\1\\2\\}/g;\n"
+        "  function wrap(math) {\n"
+        "    if (!math.display) return;\n"
+        "    var t = math.math;\n"
+        "    if (t.indexOf('&') < 0 || t.replace(ENV, '').indexOf('&') < 0) return;\n"
+        "    math.math = '\\\\begin{aligned}' + t + '\\\\end{aligned}';\n"
+        "  }\n"
+        "  window.MathJax = {\n"
+        "    tex: { macros: " + json.dumps(mathjax_macros) + ", "
+        "inlineMath: [['$','$'],['\\\\(','\\\\)']] },\n"
+        "    options: { renderActions: { wrapAligned: [15,\n"
+        "      function (doc) { for (var m of doc.math) { wrap(m); } },\n"
+        "      function (math) { wrap(math); }\n"
+        "    ] } }\n"
+        "  };\n})();\n</script>\n"
     )
-    return "<script>\nwindow.MathJax = {\n  tex: { macros: " + json.dumps(mathjax_macros) + ", inlineMath: [['$','$'],['\\\\(','\\\\)']] },\n" + align_fix + "};\n</script>\n"
 
 
 def _link_targets(
