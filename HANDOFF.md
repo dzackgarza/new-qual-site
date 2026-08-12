@@ -83,8 +83,10 @@ They are not the current catalog.
 
 Three obligations that earlier records carried as outstanding have landed, and reading them as outstanding mis-orders the work:
 
-- **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
-  Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
+- **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links.
+  Measured 2026-08-12: 3,460 card-shaped `[[TAG]]` references in `wiki/`, 3,273 distinct, none unresolved. The 3,644/2,876 figures this line used to quote predate the G3 collapse and G6 merge.
+  The non-card links are a different story: of 341 such targets, 100 resolve to a wiki page and 83 to an asset, and 129 references resolve to nothing — stale Obsidian path spellings, basename shorthands, and `#^blockid` anchors with no counterpart in the target model. That is `dzackgarza/new-qual-site#32`, a rendered-page defect rather than a migration one.
+  Implemented is not complete: the acceptance for issue #23 is pages in / routes out plus browser inspection, which needs `uv run qualc build`.
 
 - **Direct migration evidence exists for the named source boundary, but the closeout gate remains open.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 directly reviewed non-content rows, and 0 queued.
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
@@ -106,9 +108,8 @@ Three obligations that earlier records carried as outstanding have landed, and r
   All 508 source statements are present verbatim in their occurrence cards.
   See `artifacts/issue-11/source-reviews/content-coverage-verification.md`.
 
-**Reported but not verified here:** `uv run qualc check` exits 0 and reports 6,906 cards and 403 wiki pages.
-The two file counts above corroborate the figures; the exit status is unverified because the command takes about four minutes and another process held the tree.
-Running `uv run qualc check` settles it.
+**Verified 2026-08-12:** `uv run qualc check` exits 0 and reports **7,208 cards and 323 wiki pages OK**.
+The 6,906-card and 403-page figures in the table above are the 2026-08-10 measurement, taken before the G3 collapse, G6 merge, and G7 attachment landed. Re-measure rather than trusting either set.
 
 The grunt-work slice of the remaining corpus obligations is planned in `.hermes/plans/features/FEATURE-QUAL-CORPUS/plans/PLAN-QUAL-VENDOR-001/plans/PLAN-QUAL-GRUNT-001/PLAN-QUAL-GRUNT-001.md`. That plan does not replace the completion contract below; it feeds it.
 
