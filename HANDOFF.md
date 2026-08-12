@@ -86,7 +86,7 @@ Three obligations that earlier records carried as outstanding have landed, and r
 - **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
   Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
 
-- **Direct source evidence is current at commit `b48198fe`.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 operational or empty rows dropped, and 0 queued.
+- **Direct source evidence is current at commit `d5509f0a`.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 operational or empty rows dropped, and 0 queued.
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
   The plan forbids new migration automation, replay tools, checkers, and scripts.
   A ledger or replay cannot prove complete migration.
@@ -126,8 +126,9 @@ It does complete the plan's permanent source-migration and independent-review ga
 - The named source boundary now has direct complete-migration evidence.
   This claim does not assert that the mathematical wiki is editorially complete or that an unavailable, out-of-scope MathQualBot repository exists.
 
-- Issue #11 records the M7 `retain` decision for each source repository.
-  No archive action is authorized or performed by this handoff.
+- Issue #11 records the current non-destructive state for each source repository.
+  No owner archive or retain decision has been supplied. No archive action is authorized
+  or performed by this handoff.
 
 ## Work required to finish the project
 
@@ -303,9 +304,10 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 - **G8 — proof guards: partial.** The fresh-clone replay checks source totality, targets, hashes, generated sources, queued owners, and G7 residuals.
   The parent plan still records remaining guard work.
 
-- **G9 — source hygiene: complete for this closeout.** Replay is complete.
-  Token revocation is owner-confirmed, source correction pushes are complete, and M7 records `retain` for every source repository.
-  No archive action is authorized.
+- **G9 — source hygiene: migration gate complete; archive decision pending.** Replay is
+  complete. Token revocation is owner-confirmed and source correction pushes are complete.
+  The current source state is retained, but no owner archive or retain decision has been
+  supplied. No archive action is authorized.
 
 ### One action for the owner
 
@@ -321,7 +323,7 @@ Issue #11's fresh-clone replay is committed in `artifacts/issue-11/fresh-clone-r
 
 G7 has since run: orphans are 19, each recorded with why no authored order exists for it (17 are cards G3 retired whose files were never removed -- defect #31 -- and whose survivors are reachable; the other two have no sitting, no occurrence and no ledger row).
 Reachability and the fresh-clone replay are proved.
-The archive gate remains closed because the recorded decision for every repository is `retain`.
+The archive gate remains closed because no owner archive or retain decision is recorded.
 
 ### State of the source repos
 
