@@ -86,7 +86,7 @@ Three obligations that earlier records carried as outstanding have landed, and r
 - **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
   Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
 
-- **Direct source evidence is current at commit `8e99327`.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 operational or empty rows dropped, and 0 queued.
+- **Direct source evidence is current at commit `7891da9`.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 operational or empty rows dropped, and 0 queued.
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
   The plan forbids new migration automation, replay tools, checkers, and scripts.
   A ledger or replay cannot prove complete migration.
