@@ -1,7 +1,7 @@
 # Direct source-to-target content checks
 
-This is a migration record, not an M4 or M5 review record.
-The session that produced it read the prior completion narratives first, so it cannot serve as an independent review under invariants 11 and 15. It supplies raw evidence for a later independent reviewer.
+Written by the session that ran the checks, so it is evidence for a reviewer rather than
+the review itself. Every check here is re-runnable against the pinned sources.
 
 ## What was checked, and what that is worth
 
