@@ -97,9 +97,15 @@ Three obligations that earlier records carried as outstanding have landed, and r
   The scoped MathQualBot collection passes: all 51 vendored question images and their provenance have matching source and target hashes.
   `artifacts/issue-11/source-reviews/cross-repository.md` records a global PASS claim at target boundary `819ddef`. The review records do not identify reviewer assignments or prove separation from migration, repair, or prior completion adjudication.
   Under `PLAN-QUAL-HANDOFF-CLOSEOUT-001`, M4 and M5 remain unproved until that provenance exists.
+  `artifacts/issue-11/source-reviews/content-coverage-verification.md` measures the content question directly at `9d698120` across all five repositories and finds nothing missing: 508 make-me-a-qual statements verbatim, 68 compendium problems on 68 distinct cards, 285 flashcard deck cards, 522 authored-Markdown statements, and 377 of 398 qual-wiki/QRS authored files with every content token present (the other 21 lose only authoring status words and path fragments).
+  What M4 and M5 still lack is reviewer provenance, not content evidence.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
-  Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
+  Its `ambiguous-exact` rows number 103, not 104, and they are not near matches.
+  Each has exactly one distinct candidate card ID and the chosen `problem_id` is that ID:
+  the importer's ambiguity was over which file path held the card, not which statement.
+  All 508 source statements are present verbatim in their occurrence cards.
+  See `artifacts/issue-11/source-reviews/content-coverage-verification.md`.
 
 **Reported but not verified here:** `uv run qualc check` exits 0 and reports 6,906 cards and 403 wiki pages.
 The two file counts above corroborate the figures; the exit status is unverified because the command takes about four minutes and another process held the tree.

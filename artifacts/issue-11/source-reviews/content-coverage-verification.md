@@ -69,25 +69,18 @@ Content-word coverage against the corpus is 1.00 for 16 files and 0.98/0.99 for 
 
 ## qual-wiki and qual-review-and-solutions: 398 authored files
 
-These two repositories migrate authored Markdown by splitting each source file into a
-`wiki/` page plus extracted cards. 398 ledger rows carry the evidence "re-materialises to
-wiki/X.md + N cards, all in corpus", for 3,637 cards. The wiki page keeps the source text
-and prepends `[[CARD]]` references, so the claim is directly testable.
+These two repositories migrate authored Markdown by splitting each source file into a `wiki/` page plus extracted cards.
+398 ledger rows carry the evidence "re-materialises to wiki/X.md + N cards, all in corpus", for 3,637 cards.
+The wiki page keeps the source text and prepends `[[CARD]]` references, so the claim is directly testable.
 
-Reassembling each page with the bodies of every card it references, and comparing with the
-pinned source, 230 of 398 reproduce every source token. The 168 shortfalls are dominated by
-`\work`, `\todo`, `\done` and `$\work$` heading markers — authoring status macros the
-import discards by design — and by Obsidian pasted-image filenames.
+Reassembling each page with the bodies of every card it references, and comparing with the pinned source, 230 of 398 reproduce every source token.
+The 168 shortfalls are dominated by `\work`, `\todo`, `\done` and `$\work$` heading markers — authoring status macros the import discards by design — and by Obsidian pasted-image filenames.
 
-The residue is not a migration question but a linking one. Where a page no longer reaches a
-statement, deduplication moved that statement to a canonical card the page does not
-reference. The Cauchy-Riemann statement missing from
-`Complex Analysis/UGA Question (no solutions)/sections/001_RealVariables.md` is present in
-five corpus files, `P-TH3WN` among them.
+The residue is not a migration question but a linking one.
+Where a page no longer reaches a statement, deduplication moved that statement to a canonical card the page does not reference.
+The Cauchy-Riemann statement missing from `Complex Analysis/UGA Question (no solutions)/sections/001_RealVariables.md` is present in five corpus files, `P-TH3WN` among them.
 
-Asking the migration question instead — is each source token present **anywhere** in
-`corpus/` or `wiki/` — **377 of the 398 files are complete**. The other 21 lose between one
-and eight tokens each:
+Asking the migration question instead — is each source token present **anywhere** in `corpus/` or `wiki/` — **377 of the 398 files are complete**. The other 21 lose between one and eight tokens each:
 
 | absent token | source of it |
 | --- | --- |
@@ -96,8 +89,8 @@ and eight tokens each:
 | `projects` | the `Projects/Quals/Algebra/image/...` prefix of image paths |
 | `7cconformal`, `20map`, `20exercises`, `onenote` | URL percent-encoding and link-scheme fragments |
 
-Not one is a problem, solution, definition, or theorem. No mathematics from either
-repository is absent from the target.
+Not one is a problem, solution, definition, or theorem.
+No mathematics from either repository is absent from the target.
 
 ## Where the authored source actually sits
 
@@ -118,13 +111,8 @@ None is a qual problem, solution, or theory statement.
 
 No missing source content was found by any of these checks.
 
-They now cover statement-level presence for all five source repositories: the five
-transformed collections above, and the 398 authored-Markdown files of qual-wiki and
-qual-review-and-solutions.
+They now cover statement-level presence for all five source repositories: the five transformed collections above, and the 398 authored-Markdown files of qual-wiki and qual-review-and-solutions.
 
-They do not certify complete migration, for two reasons that a fresh reviewer should test
-rather than inherit. Presence of every content token is weaker than a reading of every
-statement; it can miss a reordering or a truncation that reuses the same vocabulary. And
-whether the qual-wiki and QRS material is *organized into* the wiki is a separate question
-from whether it is present — that is the project's stated unfinished work, not a migration
-gap.
+They do not certify complete migration, for two reasons that a fresh reviewer should test rather than inherit.
+Presence of every content token is weaker than a reading of every statement; it can miss a reordering or a truncation that reuses the same vocabulary.
+And whether the qual-wiki and QRS material is *organized into* the wiki is a separate question from whether it is present — that is the project's stated unfinished work, not a migration gap.
