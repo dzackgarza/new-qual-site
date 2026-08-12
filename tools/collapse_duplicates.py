@@ -3,8 +3,8 @@ r"""Collapse duplicate card bodies onto one card and repoint everything at it.
 
 `tools/audit.py --only duplicate-bodies` reports the groups; this retires all but
 one card of each group and rewrites every pointer at a retired id -- card
-relations, `[[TAG]]` refs in `wiki/`, publication manifests, and the sidecar
-ledgers -- so no reference dangles and no occurrence is lost.
+relations, `[[TAG]]` refs in `wiki/`, publication manifests -- so no reference
+dangles and no occurrence is lost.
 
     uv run python tools/collapse_duplicates.py --dry-run
     uv run python tools/collapse_duplicates.py
@@ -165,14 +165,6 @@ def rewrite_payload_sources(cards: dict[str, tuple[Path, dict, str]], alias: dic
     return changed
 
 
-# Two sidecars are not repointed. `mmaq-reconciliation.jsonl` is rewritten by
-# its own importer on every run and its `legacy_problem_ids` field exists to
-# name ids that no longer resolve -- rewriting those erases the history it was
-# built to keep. This map is the retirement record itself; a retired id in its
-# `retired` column must stay retired.
-UNREPOINTED = {"sources/mmaq-reconciliation.jsonl", "sources/g3-collapse-map.jsonl"}
-
-
 def _id_pattern(ids: set[str] | dict[str, str]) -> re.Pattern[str]:
     return re.compile(r"\b(" + "|".join(sorted(map(re.escape, ids), key=len, reverse=True)) + r")\b")
 
@@ -180,26 +172,32 @@ def _id_pattern(ids: set[str] | dict[str, str]) -> re.Pattern[str]:
 def _resolved_targets() -> list[Path]:
     """The pages and manifests whose card ids `qualc check` resolves.
 
-    A sidecar ledger is not here. `sources/g5-collapse-repoint.jsonl` and
-    `sources/g7-residual.jsonl` name retired ids on purpose, as the record of
-    what was retired and why, and the compiler never resolves them.
+    Nothing under `sources/` is here, and no name is exempted from that: every
+    sidecar is a record of what a pass found, not an index into the tree. Each
+    row states its ids together with the columns that describe them at the
+    moment it was written -- the file the card was at, its title and kind, the
+    sha of the source block, the disposition and the evidence -- so an id
+    rewritten to a survivor makes the rest of its own row false. That is what
+    happened to `sources/g7-residual.jsonl`: rows reading "this card duplicates
+    that survivor" became "the survivor duplicates itself", at a `path` naming
+    the file the collapse had just deleted.
+
+    No reader needs the rewrite. `tools/replay_sources.py` compares these rows
+    against the tree (`_verify_orphans` requires the residual set to equal the
+    orphans the corpus now has) and `tools/attach_pages.py` drops any ledger id
+    the corpus no longer holds. A record that has fallen out of step with the
+    tree must say so and fail, which a rewritten id would hide.
     """
     return [*sorted((ROOT / "wiki").rglob("*.md")), *sorted((ROOT / "publications").glob("*.yaml"))]
 
 
-def _reference_targets() -> list[Path]:
-    """Every page, manifest and sidecar ledger this tool repoints."""
-    found = [*_resolved_targets(), *sorted(p for p in (ROOT / "sources").rglob("*.json*") if p.is_file())]
-    return [p for p in found if str(p.relative_to(ROOT)) not in UNREPOINTED]
-
-
 def rewrite_text_references(alias: dict[str, str]) -> dict[str, int]:
-    """Rewrite every retired id named in a page, a manifest or a sidecar ledger."""
+    """Rewrite every retired id named in a page or a publication manifest."""
     if not alias:
         return {}
     pattern = _id_pattern(alias)
     counts: dict[str, int] = {}
-    for path in _reference_targets():
+    for path in _resolved_targets():
         text = path.read_text()
         rewritten = pattern.sub(lambda m: alias[m.group(1)], text)
         if rewritten == text:

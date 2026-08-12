@@ -16,6 +16,7 @@ in-process state alone.
 
 from __future__ import annotations
 
+import json
 import shutil
 import subprocess
 import sys
@@ -43,7 +44,7 @@ review: draft
 """
 
 
-def fixture_corpus(root: Path, cards: dict[str, str], page: str) -> None:
+def fixture_corpus(root: Path, cards: dict[str, str], page: str, sidecars: dict[str, str] | None = None) -> None:
     """A corpus the tool can run against: cards, a wiki page, and a `HEAD`.
 
     `tools/` is copied because the tool locates the corpus relative to its own
@@ -54,6 +55,8 @@ def fixture_corpus(root: Path, cards: dict[str, str], page: str) -> None:
     (root / "sources").mkdir()
     (root / "publications").mkdir()
     shutil.copytree(ROOT / "tools", root / "tools")
+    for name, text in (sidecars or {}).items():
+        (root / "sources" / name).write_text(text)
     for relative, text in cards.items():
         path = root / "corpus" / relative
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -92,6 +95,35 @@ def test_a_body_edited_before_the_collapse_still_repoints_its_references(tmp_pat
 
     assert not (root / "corpus/qrs/P-BBBBB.md").exists()
     assert (root / "wiki/page.md").read_text() == "# Page\n\n[[P-AAAAA]] and [[P-AAAAA]]\n"
+    assert result.returncode == 0
+
+
+def test_a_sources_record_still_names_the_card_that_was_retired(tmp_path: Path) -> None:
+    """A `sources/` row says what a pass found; the collapse must not restate it.
+
+    The row below is `sources/g7-residual.jsonl` in miniature: it records that
+    one card duplicates another, and every other column -- the retired card's
+    own path, the survivor's -- describes the tree at the moment the pass ran.
+    Repointing the id turns it into "this card duplicates itself" against a
+    `path` that names a file the collapse has just deleted.
+    """
+    root = tmp_path / "repo"
+    residual = json.dumps({"card": "P-BBBBB", "path": "corpus/qrs/P-BBBBB.md", "survivor": "P-AAAAA", "survivor_path": "corpus/wiki/P-AAAAA.md"}) + "\n"
+    fixture_corpus(
+        root,
+        {
+            "wiki/P-AAAAA.md": card("P-AAAAA", "problem", "Order 12", ORDER_12),
+            "qrs/P-BBBBB.md": card("P-BBBBB", "problem", "Order 12, as posed", ORDER_12),
+        },
+        "# Page\n\n[[P-AAAAA]] and [[P-BBBBB]]\n",
+        sidecars={"g7-residual.jsonl": residual},
+    )
+
+    result = collapse(root)
+
+    assert not (root / "corpus/qrs/P-BBBBB.md").exists()
+    assert (root / "wiki/page.md").read_text() == "# Page\n\n[[P-AAAAA]] and [[P-AAAAA]]\n"
+    assert (root / "sources/g7-residual.jsonl").read_text() == residual
     assert result.returncode == 0
 
 
