@@ -226,6 +226,12 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     generator_problem_ids = set(generator_problems)
     assert generator_problems["P-J3FBW"]["q"].lstrip().startswith("<ul>")
     assert "<li>Classify the four groups of order 28.</li>" in generator_problems["P-J3FBW"]["q"]
+    # The generated sheet is statements only. A tag page may put the solution
+    # behind a disclosure the reader chooses to open; the generator has no
+    # disclosure and prints whatever it is given, so the answer-bearing blocks
+    # must be gone from its extraction rather than merely folded.
+    answer_markup = re.compile(r'<div[^>]*class="[^"]*\b(solution|hint|proof|strategy|concept|warnings)\b')
+    assert [card_id for card_id, problem in generator_problems.items() if answer_markup.search(problem["q"])] == []
     generator_scripts = [script.text for script in read_html(site / "generate.html").root.find_all("script") if "const QDATA=" in script.text]
     assert len(generator_scripts) == 1
     script_check = subprocess.run(
@@ -281,6 +287,18 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert "D-7TQ2M" in dependency_groups[0].text
     assert "Applications and Problems" in appearance_groups[0].text
     assert {"H-2JK8Q", "S-4WQ1R"} <= {link.text for link in backlink_groups[0].find_all("a")}
+
+    # A sitting links to its problems; the problem must link back to the sitting
+    # it was set at, not merely name it.
+    problem_appearances = problem.root.find_all(
+        "section",
+        **{"data-relation-group": "appearances"},
+    )
+    assert len(problem_appearances) == 1
+    assert "exam/SRC-UGA-ALG-FALL-2018.html" in {
+        resolved_link(Path("tag/P-P2UAH.html"), link.attrs["href"]) for link in problem_appearances[0].find_all("a")
+    }
+    assert "UGA algebra Fall 2018, problem 1" in problem_appearances[0].text
 
     stable_route = site / "tag" / "P-P2UAH.html"
     assert stable_route.is_file()
