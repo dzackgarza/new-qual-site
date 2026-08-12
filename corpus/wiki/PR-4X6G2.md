@@ -14,8 +14,11 @@ review: draft
 For $M^n$ a closed orientable manifold without boundary and $\FF$ a field,
 \[
 H_k(M^n; \FF) \cong H^{n-k}(M^n; \FF)
-\iff
-M^n \text{ is closed and orientable}
 .\]
+
+:::{.remark}
+Hatcher, *Algebraic Topology*, Theorem 3.30.
+Closedness and orientability are hypotheses of the duality, not consequences of it.
+:::
 
 :::
