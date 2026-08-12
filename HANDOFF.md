@@ -104,6 +104,7 @@ Three obligations that earlier records carried as outstanding have landed, and r
   `artifacts/issue-11/source-reviews/content-coverage-verification.md` measures the content question directly at `9d698120` across all five repositories and finds nothing missing: 508 make-me-a-qual statements verbatim, 68 compendium problems on 68 distinct cards, 285 flashcard deck cards, 522 authored-Markdown statements, and 377 of 398 qual-wiki/QRS authored files with every content token present (the other 21 lose only authoring status words and path fragments).
   What M4 and M5 still lack is a sign-off by someone who did not do the migrating.
   The content itself is checked.
+  **All five source repositories were archived on 2026-08-12** by owner decision. Each carries a README forwarding pointer to this repository naming the pinned revision its content was checked at. Archiving makes the remotes read-only; nothing is deleted, and the local clones and their pinned revisions remain available for any re-check.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its `ambiguous-exact` rows number 103, not 104, and they are not near matches.
