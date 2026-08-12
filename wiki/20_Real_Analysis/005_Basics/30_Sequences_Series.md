@@ -49,7 +49,7 @@ where each group with $a_k$ has $2^k$ terms.
 [[C-3S4XS]]
 [[PR-GT5RS]]
 
-[[PR-OGMDS]]
+[[PR-H4CYN]]
 
 [[PR-6OHTJ]]
 

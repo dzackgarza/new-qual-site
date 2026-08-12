@@ -165,8 +165,8 @@ so the DCT applies to $g_n$ and
 :::{.proof title="of Fatou"}
 
 :::
-[[T-IDJ3T]]
-[[T-JZMTR]]
+[[T-6PRW3]]
+[[T-4GPEF]]
 [[T-X7XZX]]
 [[PR-V4MOK]]
 [[PR-JW3QE]]

@@ -34,7 +34,13 @@ from dataclasses import dataclass
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-DECKS = Path.home() / "gitclones/math-flashcards"
+# The decks are read from the copy inside this repository, not from a clone of the
+# source. Pointing at `~/gitclones/math-flashcards` meant the importer and the test
+# over it only worked on one machine: CI has no such clone, so `dispositions()`
+# returned an empty list and the Pages deploy failed on every push with
+# `assert 0 == 496`. It is also what PLAN-QUAL-HANDOFF-CLOSEOUT-001's invariant 4
+# forbids -- a permanent target may not depend on a source clone.
+DECKS = REPO / "assets/ws9/math-flashcards/native"
 OUT = REPO / "corpus/flashcards"
 
 # The 28 `*Qual*` decks. The other decks in that repo (orals, schemes, toric,
