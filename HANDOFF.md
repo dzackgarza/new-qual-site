@@ -255,6 +255,60 @@ The project is complete only when:
 Until that sequence reaches the project completion contract, report the state as project-in-progress.
 Do not report the PDF subtask as the project finish line.
 
+## Resume here (2026-08-13)
+
+`main` is at `9fa6aa96`, clean and pushed. The Pages deploy is green and the site is live at
+<https://dzackgarza.github.io/new-qual-site/>.
+
+`uv run qualc check` -> **8,217 cards and 327 wiki pages OK**. `pytest -q` -> **67 passed**.
+`tools/audit.py` -> everything ok except one degenerate title and 19 documented orphans.
+
+### What changed
+
+**Source migration is closed.** All five source repositories are archived, each carrying a
+README forwarding pointer naming the revision its content was checked at. An independent
+review found the one real gap: `qual-wiki`'s `20_Real_Analysis/PSets.zip` had a byte-identity
+check and was never opened, and four authored problem sets with full worked solutions were
+inside it, existing nowhere else. They are now pages under
+`wiki/20_Real_Analysis/500_Exercises/`.
+
+**The theory backbone exists.** 1,092 titled statement blocks that were inline prose in the
+wiki are now 1,013 cards. `route_apply` could not extract them before: its `KIND_PREFIX`
+knew only `problem` and `exercise`, so a theorem span died on `KeyError`. Corpus 7,208 ->
+8,217.
+
+**Five subject branches**, up from one: Algebra, Real Analysis, Complex Analysis, Topology,
+Workshops. 31 guide routes. Proofs in `artifacts/issue-26/`, `artifacts/issue-29/`,
+`artifacts/issue-30/`.
+
+**The deploy was broken and is fixed.** It had failed on every push since before this run,
+because `import_flashcards.DECKS` pointed at `~/gitclones/math-flashcards` and CI has no such
+clone. The decks are now in the repository, which is what invariant 4 required anyway.
+
+**Site-wide maths rendering.** 831 display blocks across 458 cards write `\[ a &= b \\ &= c \]`
+with bare alignment characters; MathJax now wraps them in `aligned`. Failing blocks across the
+guide routes went from 69 to 15.
+
+### What is open
+
+- **Issue #2 carries the authored defects found by making statements addressable**: 72 titled
+  statements with empty bodies (64 in Topology, concentrated in CW Complex, Singular Homology,
+  Excision, Universal Cover, Fundamental Group), fifteen statements that are mathematically
+  wrong, no Laurent expansion theorem, no homeomorphism definition, 68 bare `\too`, and
+  `\closure` undefined. None was corrected in place; they are authored notes.
+- **Issue #33**: `run_query` filters on kind and review but never on area, so a subject guide's
+  problem panel can pull foreign problems.
+- **M4 and M5** of the closeout plan want a sign-off by someone who did not do the migrating.
+  The content itself is checked and the checks re-run.
+- Issue #30's fuller replay -- search, filters, disclosure, generation, four viewport widths --
+  was not exercised on the deployed host.
+
+### One thing worth not repeating
+
+Collapsing duplicate cards by scanning for any two that share a body deleted 796 cards. An
+occurrence card and the problem card it instantiates share a body by design; that is what the
+occurrence layer is. Restored from HEAD and redone against an explicit list.
+
 ## PLAN-QUAL-GRUNT-001 progress (2026-08-11)
 
 Grunt-work completion run.
