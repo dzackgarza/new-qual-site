@@ -122,7 +122,7 @@ def test_an_occurrence_is_not_a_duplicate_of_the_problem_it_instantiates(tmp_pat
         "occurrence",
         "Order 12 at UGA algebra Spring 2020",
         ORDER_12,
-        extra='payload:\n  source: SRC-UGA\n  locator: Problem 3\n',
+        extra="payload:\n  source: SRC-UGA\n  locator: Problem 3\n",
     ).replace("relations: []", "relations:\n- kind: instance-of\n  target: P-AAAAA")
     fixture_corpus(
         root,
