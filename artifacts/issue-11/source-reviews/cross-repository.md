@@ -1,6 +1,6 @@
 # Independent cross-repository review
 
-Result: PASS for the plan's named source boundary at target commit `ac3b439`.
+Result: PASS for the plan's named source boundary at target commit `819ddef`.
 
 ## Review evidence
 
