@@ -110,9 +110,8 @@ Preserve those edits while resuming the larger wiki work.
 ## Source migration closeout boundary
 
 The closeout work preserves direct source evidence.
-It does not complete the mathematical wiki's editorial organization. It does complete
-the plan's permanent source-migration and independent-review gate for the named source
-boundary.
+It does not complete the mathematical wiki's editorial organization.
+It does complete the plan's permanent source-migration and independent-review gate for the named source boundary.
 
 - `artifacts/issue-11/source-reviews/` contains the current source review records.
   All five source repositories and the scoped bot collection pass independent review.
@@ -125,8 +124,7 @@ boundary.
   The 51 vendored images are copied to `assets/ws9/qualbot-question-images/` and checked against their vendored source copies.
 
 - The named source boundary now has direct complete-migration evidence.
-  This claim does not assert that the mathematical wiki is editorially complete or that
-  an unavailable, out-of-scope MathQualBot repository exists.
+  This claim does not assert that the mathematical wiki is editorially complete or that an unavailable, out-of-scope MathQualBot repository exists.
 
 - Issue #11 still needs explicit owner decisions for each source repository.
   No source repository is archived by this handoff.
