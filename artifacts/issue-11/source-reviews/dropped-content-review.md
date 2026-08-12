@@ -2,21 +2,21 @@
 
 ## Review boundary
 
-This is a manual direct review of every row currently marked `dropped` in
-`sources/migration-ledger.jsonl`. The review reads each pinned source object,
-records its Git object ID and byte length, and records the finding that supports
-the disposition. The review does not add a verifier, replay tool, or migration
-automation.
+This is a manual direct review of every row currently marked `dropped` in `sources/migration-ledger.jsonl`. The review reads each pinned source object, records its Git object ID and byte length, and records the finding that supports the disposition.
+The review does not add a verifier, replay tool, or migration automation.
 
 The review covers 367 rows from these pinned source revisions:
 
 - `qual-wiki`: `3fe1f58fdf800209c5ad243c91411bc0ee40cc7c`
+
 - `qual-review-and-solutions`: `590a8929b2326cc770a246e934ab36fb30b0c7ab`
+
 - `make-me-a-qual`: `beba581e5b32f54ff469ed603a0885d51591e5fc`
+
 - `math-flashcards`: `69cecc401981fb2f897a6a3c29feb869d811013c`
 
-The direct findings are homogeneous only within each section below. Every source
-path is named.
+The direct findings are homogeneous only within each section below.
+Every source path is named.
 
 ## qual-wiki — editor config (100 rows)
 
@@ -527,16 +527,10 @@ Direct read: build recipe only; no deck payload.
 
 ## Disposition
 
-Every reviewed row contains no authored mathematical, bibliographic, provenance,
-or figure content. The rows remain `dropped` as operational, generated,
-empty, or editor artifacts. Content-bearing source rows are not included in this
-review; they remain governed by their source-review records and direct target
-comparisons.
+Every reviewed row contains no authored mathematical, bibliographic, provenance, or figure content.
+The rows remain `dropped` as operational, generated, empty, or editor artifacts.
+Content-bearing source rows are not included in this review; they remain governed by their source-review records and direct target comparisons.
 
-The five empty BibTeX rows were read as zero-byte blobs. The web-tool JSON rows
-were also read as zero-byte blobs. The four Git path-pointer rows in
-`qual-wiki` and the corresponding path-pointer rows in
-`qual-review-and-solutions` were read as pointers, not file content; their
-target directories are separately present in the source inventory.
-
-
+The five empty BibTeX rows were read as zero-byte blobs.
+The web-tool JSON rows were also read as zero-byte blobs.
+The four Git path-pointer rows in `qual-wiki` and the corresponding path-pointer rows in `qual-review-and-solutions` were read as pointers, not file content; their target directories are separately present in the source inventory.
