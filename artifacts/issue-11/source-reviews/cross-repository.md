@@ -1,6 +1,6 @@
 # Independent cross-repository review
 
-Result: PASS for the plan's named source boundary at target commit `8e99327`.
+Result: PASS for the plan's named source boundary at target commit `c220f9c2`.
 
 The independent review checked the five source review records, the full migration ledger, the untracked APKG manifest, the vendored MathQualBot manifest, duplicate and provenance mappings, and the current target paths.
 
