@@ -1,0 +1,15 @@
+---
+schema: qual/card@1
+id: PR-6PENU
+kind: proposition
+title: "Application: isomorphisms in the homology of spheres"
+classification:
+  areas:
+  - topology
+  topics: []
+relations: []
+review: draft
+---
+:::{.proposition title="Application: isomorphisms in the homology of spheres"}
+\[H^i(S^n) \cong H^{i-1}(S^{n-1}).\]
+:::

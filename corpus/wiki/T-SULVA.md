@@ -10,10 +10,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Hurwitz 2"}
+
+::: {.theorem title="Hurwitz 2"}
 If $\ts{f_k}$ are univalent functions on $\Omega$ converging normally to $f$, then either
 
 - $f$ is univalent, or
-- $f$ is constant.
 
+- $f$ is constant.
 :::

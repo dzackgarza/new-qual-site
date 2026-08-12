@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Cayley Transform"}
+
+::: {.theorem title="Cayley Transform"}
 The fractional linear transformation given by $F(z) = {i - z \over i + z}$ maps $\DD\to \HH$ with inverse $G(w) = i {1-w \over 1 + w}$.
 :::

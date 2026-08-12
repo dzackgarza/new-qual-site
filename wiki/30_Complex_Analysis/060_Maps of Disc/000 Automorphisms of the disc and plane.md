@@ -2,7 +2,7 @@
 
 [[T-HSWGS]]
 
-:::{.proof title="?"}
+::: {.proof title="?"}
 Schwarz lemma.
 :::
 
@@ -13,5 +13,3 @@ Schwarz lemma.
 [[E-XQ4BA]]
 
 [[E-CFTRQ]]
-
-

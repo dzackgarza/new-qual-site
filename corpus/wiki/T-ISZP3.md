@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Riemann's Removable Singularity Theorem"}
+
+::: {.theorem title="Riemann's Removable Singularity Theorem"}
 If $f$ is holomorphic on $\Omega$ except possibly at $z_0$ and $f$ is bounded on $\Omega\setminus\theset{z_0}$, then $z_0$ is a removable singularity.
 :::

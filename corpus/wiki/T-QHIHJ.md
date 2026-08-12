@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Liouville's Theorem" ref="Liouville"}
+
+::: {.theorem title="Liouville's Theorem" ref="Liouville"}
 If $f$ is entire and bounded, $f$ is constant.
 :::

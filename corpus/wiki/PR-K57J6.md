@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Holomorphic functions have harmonic components"}
+
+::: {.proposition title="Holomorphic functions have harmonic components"}
 If $f(z) = u(x, y) + iv(x, y)$ is holomorphic, then $u, v$ are harmonic.
 :::

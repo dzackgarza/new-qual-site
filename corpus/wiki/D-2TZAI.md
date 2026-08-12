@@ -1,0 +1,18 @@
+---
+schema: qual/card@1
+id: D-2TZAI
+kind: definition
+title: "Topology"
+classification:
+  areas:
+  - topology
+  topics: []
+relations: []
+review: draft
+---
+:::{.definition title="Topology"}
+\envlist
+
+- Using open sets: closed under arbitrary unions and finite intersections.
+- Using closed sets: closed under arbitrary intersections and finite unions.
+:::

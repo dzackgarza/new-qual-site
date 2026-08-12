@@ -10,8 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Factorization of zeros out of holomorphic functions"}
+
+::: {.proposition title="Factorization of zeros out of holomorphic functions"}
 
 ![](../../assets/figures/2021-12-14_17-02-18.png)
-
 :::

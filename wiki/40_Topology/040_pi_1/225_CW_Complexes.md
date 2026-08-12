@@ -10,25 +10,7 @@ C_*(X) = (0 \from C_0 \from C_1 \from \cdots )
 :::
 
 
-:::{.proposition title="Product CW structure"}
-If $X, Y$ are CW complexes with $p_X(t), p_Y(t)$ the generating functions for the number of cells (so $[t^n] p_X(t) \da a_n$ is the number of $n\dash$cells in $X$), then the generating function for the product is 
-\[
-p_{X\cross Y}(t) = p_X(t)p_Y(t)
-.\]
-Categorified, this comes from a quasi-isomorphism 
-\[
-C_*^{\cell}(X\cross Y) \cong C_*^{\cell}(X) \tensor_\ZZ C_*^{\cell}(Y)
-.\] 
-so 
-\[
-C_n^{\cell}(X \cross Y ) \cong \bigoplus_{i+j=n} C_i^\cell(X) \cross C_j^{\cell}(Y)
-.\]
-The boundary maps are thus given by
-\[
-\bd(a, b) &\da \bd_X a \tensor b + (-1)^{\abs a} a \tensor \bd_Y b
-.\]
-
-:::
+[[PR-QJZDT]]
 
 :::{.remark}
 This is nontrivial, it's the content of the *Eilenberg-Zilber theorem*.
@@ -63,7 +45,7 @@ $\mathbb{CP}^n =e^2 \cup e^4 \cup \cdots e^{2n}$
 :::
 
 :::{.example title="Surfaces"}
-![Fundamental domains](../../../assets/40_Topology/figures/1513064067523.png)
+![Fundamental domains](../../../../assets/assets/40_Topology/figures/1513064067523.png)
 :::
 
 ## Examples of Simplicial Complexes 
@@ -74,17 +56,17 @@ Then each $n$-cell will correspond to a set of $n+1$ of these integers - throw t
 :::
 
 :::{.example title="Torus"}
-![Torus](../../../assets/40_Topology/figures/1513062466927.png)
+![Torus](../../../../assets/assets/40_Topology/figures/1513062466927.png)
 :::
 
 :::{.example title="Klein Bottle and $\RP^2$"}
-![Klein Bottle and $\RP^2$](../../../assets/40_Topology/figures/1513062526623.png)
+![Klein Bottle and $\RP^2$](../../../../assets/assets/40_Topology/figures/1513062526623.png)
 :::
 
 :::{.example title="Non-example"}
 For counterexamples, note that this fails to be a triangulation of $T$:
 
-![Not a Torus](../../../assets/40_Topology/figures/1513062599096.png)
+![Not a Torus](../../../../assets/assets/40_Topology/figures/1513062599096.png)
 
 This fails - for example, the specification of a simplex $[1,2,1]$ does not uniquely determine a triangle in the this picture.
 :::

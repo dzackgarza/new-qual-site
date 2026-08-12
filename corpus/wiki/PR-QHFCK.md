@@ -10,8 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Zeros of $\zeta$"}
+
+::: {.proposition title="Zeros of $\zeta$"}
 
 ![](../../assets/30_Complex_Analysis/900 Unsorted/figures/2021-12-19_20-02-43.png)
-
 :::

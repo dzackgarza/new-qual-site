@@ -32,28 +32,15 @@ H_{x_i}: \RR^{n+1} &\to \RR^{n+1} \\
 
 
 [[E-ZXKDY]]
-:::{.theorem title="Lefschetz Fixed Point"}
-For $f:X\to X$, define the **trace** of $f$ to be
-\[
-\Lambda_f \da \sum_{k \geq 0} (-1)^k ~\mathrm{Tr}(f_* \mid H_k(X; \QQ))
-\]
-where $f_*: H_k(X; \QQ) \to H_k(X; \QQ)$ is the induced map on homology.
-If $\Lambda_f \neq 0$ then $f$ has a fixed point.
-:::
+[[T-BX4LD]]
 
-:::{.theorem title="?"}
-Every $f: B^n \to B^n$ has a fixed point.
-:::
+[[T-S2OLJ]]
 
 :::{.proof title="?"}
 
 :::
 
 
-:::{.theorem title="Hairy Ball"}
-There is no non-vanishing tangent vector field on even dimensional spheres $S^{2n}$.
-:::
+[[T-VQTR6]]
 
-:::{.theorem title="Borsuk-Ulam"}
-For every $S^n \mapsvia{f} \RR^n \exists x\in S^n$ such that $f(x) = f(-x)$.
-:::
+[[T-WNOWY]]

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Normal Family"}
 
+::: {.definition title="Normal Family"}
 :::

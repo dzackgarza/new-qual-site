@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Goursat"}
+
+::: {.theorem title="Goursat"}
 Holomorphic implies analytic.
 :::

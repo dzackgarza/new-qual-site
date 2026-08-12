@@ -10,11 +10,13 @@ classification:
 relations: []
 review: draft
 ---
-:::{.corollary title="Uniformization"}
+
+::: {.corollary title="Uniformization"}
 A simply connected nonempty domain $\Omega \subseteq \CC$ is conformally equivalent to exactly one of
 
 - $\CP^1$,
-- $\CC$, or
-- $\DD$.
 
+- $\CC$, or
+
+- $\DD$.
 :::

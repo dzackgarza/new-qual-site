@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Generalized Liouville"}
-If $X$ is a compact complex manifold,
-any holomorphic $f:X\to \CC$ is constant.
+
+::: {.theorem title="Generalized Liouville"}
+If $X$ is a compact complex manifold, any holomorphic $f:X\to \CC$ is constant.
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Limit point"}
+
+::: {.definition title="Limit point"}
 Recall that a point $x$ is a limit point of a set $S$ if every punctured neighborhood of $x$ contains a point of $S$, and any infinite subset of a compact set contains a limit point.
 :::

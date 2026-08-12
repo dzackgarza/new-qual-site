@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Holomorphic implies analytic"}
+
+::: {.theorem title="Holomorphic implies analytic"}
 If $f$ is analytic on $D_R(p)$, then $f(z) = \sum c_k(z-p)^k$ on this disc.
 :::

@@ -93,10 +93,7 @@ H_*(X) &= [H_1(X), H_2(X), H_3(X), \cdots]
 An injective group morphism $f:X\injects Y$ where $X$ is trivial forces $Y$ to be trivial.
 :::
 
-:::{.proposition title="Morphisms between groups finite and infinite groups"}
-There are no nontrivial homomorphisms from finite groups into free groups.
-In particular, any group morphism $f: \ZZ_n \to \ZZ$ is trivial.
-:::
+[[PR-WB7MM]]
 
 :::{.proof title="?"}
 Let $f: G\to H$, then $f(1_G) = 1_H$.

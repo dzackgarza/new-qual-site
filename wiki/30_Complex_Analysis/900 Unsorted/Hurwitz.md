@@ -1,4 +1,4 @@
-# Hurwitz 
+# Hurwitz
 
 [[D-G42SR]]
 
@@ -6,10 +6,8 @@
 
 [[T-FZWEC]]
 
-:::{.slogan}
+::: {.slogan}
 The zeros of the sequence converge to the zeros of the limit.
 :::
 
-:qa
-[[T-SULVA]]
-
+:qa [[T-SULVA]]

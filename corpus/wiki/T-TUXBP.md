@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Implicit Function Theorem"}
 
+::: {.theorem title="Implicit Function Theorem"}
 :::

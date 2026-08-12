@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Essential Singularity"}
+
+::: {.definition title="Essential Singularity"}
 A singularity $z_0$ is *essential* iff it is neither removable nor a pole.
 Equivalently, a Laurent series expansion about $z_0$ has a principal part with infinitely many terms.
 :::

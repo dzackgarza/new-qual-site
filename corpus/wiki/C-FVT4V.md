@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.corollary title="Injective implies holomorphic inverse"}
+
+::: {.corollary title="Injective implies holomorphic inverse"}
 If $f:U\to V$ is holomorphic and injective, then $f$ is invertible on its image.
 :::

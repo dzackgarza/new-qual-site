@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Locally equicontinuous iff normal when uniformly bounded"}
-Suppose $\mcf$ is locally uniformly bounded. 
+
+::: {.theorem title="Locally equicontinuous iff normal when uniformly bounded"}
+Suppose $\mcf$ is locally uniformly bounded.
 Then $\mcf$ is locally equicontinuous and a normal family.
 :::

@@ -2,9 +2,7 @@
 
 ## Exact Sequences
 
-::: {.proposition title="?"}
-The sequence $A \mapsvia{f_1} B \mapsvia{f_2} C$ is exact if and only if $\im f_i = \ker f_{i+1}$ and thus $f_2 \circ f_1 = 0$.
-:::
+[[PR-QDIOC]]
 
 ::: {.fact}
 Some useful results:
@@ -26,10 +24,7 @@ Some useful results:
 - Can think of $C \cong \frac{B}{\im f_1}$.
 :::
 
-::: {.definition title="Splitting an exact sequence"}
-The sequences *splits* when a morphism $f_2^{-1}: C \into B$ exists.
-In $\textbf{Ab}$, this means $B \cong A \oplus C$, in $\mathbf{Grp}$ it's $B \cong A \semidirect_\phi C$.
-:::
+[[D-3WX4Z]]
 
 ::: {.example title="of exact sequences"}
 \envlist
@@ -69,14 +64,7 @@ Any LES $A_1 \into \cdots \into A_6$ decomposes into a twisted collection of SES
 
 ## Five Lemma
 
-::: {.theorem title="?"}
-If $m, p$ are isomorphisms, $l$ is an **surjection**, and $q$ is an **injection**, then $n$ is an **isomorphism**.
-
-<!--![5 lemma.svg](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/5_lemma.svg/388px-5_lemma.svg.png)-->
-
-Proof: diagram chase two "four lemmas", one on each side.
-Full proof [here](https://en.wikipedia.org/wiki/Five_lemma).
-:::
+[[T-BRWA7]]
 
 ## Free Resolutions
 

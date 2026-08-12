@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.corollary title="?"}
+
+::: {.corollary title="?"}
 If $f$ is nonzero on $\Omega$, then $f$ attains a minimum on $\bd \Omega$.
 This follows from applying the MMP to $1/f$.
 :::

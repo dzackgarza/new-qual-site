@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Meromorphic implies rational"}
+
+::: {.theorem title="Meromorphic implies rational"}
 Meromorphic functions on $\CC$ are rational functions.
 :::

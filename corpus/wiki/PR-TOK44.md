@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Root Test"}
+
+::: {.proposition title="Root Test"}
 ![figures/image_2021-05-27-15-40-58.png](../../assets/figures/image_2021-05-27-15-40-58.png)
 :::

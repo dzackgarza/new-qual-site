@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Minimum modulus principle"}
+
+::: {.theorem title="Minimum modulus principle"}
 Suppose  $f$ is holomorphic and nonvanishing on $\Omega$.
 If any interior point $z_0\in \Omega^\circ$ is a relative minimum for $f$, then $f$ is constant.
 If $f$ is nonconstant, then the minimum must occur on $\bd\Omega$.

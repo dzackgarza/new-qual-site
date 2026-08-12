@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Picard's little theorem"}
+
+::: {.theorem title="Picard's little theorem"}
 If $f$ is nonconstant and entire, it takes on every value in $\CC$ with at most one exception.
 Equivalently, if $f$ omits 2 finite values, $f$ is constant.
 :::

@@ -5,14 +5,7 @@
 ## Point-Set
 
 
-:::{.definition title="Topological Notions in Analysis"}
-A useful list:
-
-![figures/image_2021-05-27-20-18-15.png](../../../assets/figures/image_2021-05-27-20-18-15.png)
-
-Note that limit points require punctured neighborhoods!
-
-:::
+[[D-SN2OH]]
 
 :::{.example title="Some useful examples of openness and closedness"}
 
@@ -93,7 +86,7 @@ The following are some examples of ways to construct specific spaces for example
 - Simplicial Complexes
   - Nice minimal example:
   
-![](../../../assets/figures/image_2020-05-22-18-58-03.png) 
+![](../../../../assets/assets/figures/image_2020-05-22-18-58-03.png) 
 
 :::
 
@@ -133,9 +126,7 @@ The cofinite topology on any space $X$ is always
 - Compact
 :::
 
-:::{.proposition title="Topology is discrete if and only if points are open"}
-A topology $(X, \tau)$ is the discrete topology iff points $x\in X$ are open.
-:::
+[[PR-NJTN5]]
 
 :::{.proof title="?"}
 If $\ts x_i$ is open for each $x_i \in X$, then 
