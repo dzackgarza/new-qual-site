@@ -56,7 +56,20 @@ AREA_BY_PREFIX = {
     "Complex Analysis": "complex-analysis",
     "Topology": "topology",
 }
-KIND_PREFIX = {"problem": "P", "exercise": "E"}
+# Statement kinds carry the prefixes the corpus already uses for them: D, T, L.
+# `proposition` and `corollary` are valid card kinds with no cards yet, so they take
+# the first free letters -- P is problem and C is unused. Extraction was limited to
+# problems and exercises, which is why the authored theorems in the Complex Analysis
+# and Topology trees are still inline prose rather than cards.
+KIND_PREFIX = {
+    "problem": "P",
+    "exercise": "E",
+    "definition": "D",
+    "theorem": "T",
+    "lemma": "L",
+    "proposition": "PR",
+    "corollary": "C",
+}
 
 
 def tag(kind: str, body: str) -> str:
