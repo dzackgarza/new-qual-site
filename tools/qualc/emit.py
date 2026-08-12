@@ -1168,13 +1168,19 @@ def mathjax_header(macros: dict) -> str:
     # maths, where `&` is illegal -- so those blocks render as "Misplaced &" instead of
     # the mathematics. Wrapping them in `aligned` before typesetting is what the source
     # means, and is done here rather than by editing 458 cards.
+    #
+    # A block is left alone only when every `&` in it already sits inside an alignment
+    # environment, so ENV deletes whole `\begin{env}...\end{env}` spans before the test:
+    # a block that says `a &= \begin{cases}...\end{cases} \\ &= b` needs the wrapper for
+    # its own alignment characters even though it contains an environment.
     align_fix = (
         "  startup: { pageReady() {\n"
         "    var ENV = /\\\\begin\\{(align|aligned|array|cases|matrix|gather|split|"
-        "smallmatrix|pmatrix|bmatrix|vmatrix)/;\n"
+        "smallmatrix|pmatrix|bmatrix|vmatrix)(\\*?)\\}[\\s\\S]*?"
+        "\\\\end\\{\\1\\2\\}/g;\n"
         "    document.querySelectorAll('.math.display').forEach(function (el) {\n"
         "      var t = el.textContent;\n"
-        "      if (t.indexOf('&') < 0 || ENV.test(t)) return;\n"
+        "      if (t.indexOf('&') < 0 || t.replace(ENV, '').indexOf('&') < 0) return;\n"
         "      el.textContent = t.replace(/\\\\\\[/, '\\\\[\\\\begin{aligned}')\n"
         "                        .replace(/\\\\\\](?![\\s\\S]*\\\\\\])/, "
         "'\\\\end{aligned}\\\\]');\n"
