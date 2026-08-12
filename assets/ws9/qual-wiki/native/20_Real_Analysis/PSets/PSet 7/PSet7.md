@@ -14,17 +14,20 @@ $$
 \vector x_i \definedas \lim_{n\to\infty} x_i^n.
 $$
 
-This is well-defined since $\norm{x^j - x^k}_{\ell^2} = \sum_i \abs{x^j_i - x^k_i}^2 \to 0$, and since this is a sum of positive real numbers that approaches zero, each term must approach zero. But then for a fixed $i$, the sequence $\abs{x_i^j - x^k_i}^2$ is a Cauchy sequence of real numbers which necessarily converges by thethe  completeness of $\RR$.
+This is well-defined since $\norm{x^j - x^k}_{\ell^2} = \sum_i \abs{x^j_i - x^k_i}^2 \to 0$, and since this is a sum of positive real numbers that approaches zero, each term must approach zero.
+But then for a fixed $i$, the sequence $\abs{x_i^j - x^k_i}^2$ is a Cauchy sequence of real numbers which necessarily converges by thethe  completeness of $\RR$.
 
-We also have $\norm{\vector x - x^j}_{\ell^2} \to 0$ since 
+We also have $\norm{\vector x - x^j}_{\ell^2} \to 0$ since
 $$
 \norm{\vector x - x^j}_{\ell^2} = 
 \norm{\lim_{k\to \infty}  x^k - x^j}_{\ell^2} =
 \lim_{k\to \infty} \norm{x^k - x^j}_{\ell^2} \to 0
 $$
-where the limit can be passed through the norm because the map $t \mapsto \norm{t}_{\ell^2}$ is continuous. So $x^j \to \vector x$ in $\ell^2$ as well.
+where the limit can be passed through the norm because the map $t \mapsto \norm{t}_{\ell^2}$ is continuous.
+So $x^j \to \vector x$ in $\ell^2$ as well.
 
-It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vector x_i}^2 < \infty$. To this end, we write
+It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vector x_i}^2 < \infty$.
+To this end, we write
 \[
 \begin{align*}
 \norm{\vector x}_{\ell^2} &= \norm{\vector x - x^j + x^j}_{\ell^2} \\
@@ -33,14 +36,14 @@ It remains to show that $\vector x \in \ell^2(\NN)$, i.e. that $\sum_i \abs{\vec
 \end{align*}
 \]
 
-where $\lim_j \norm{\vector x - x^j}_{\ell^2} = 0$ by the previous argument, and the second term is bounded because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} \definedas M < \infty$. $\qed$
+where $\lim_j \norm{\vector x - x^j}_{\ell^2} = 0$ by the previous argument, and the second term is bounded because $x^j \in \ell^2 \iff \norm{x^j}_{\ell^2} \definedas M < \infty$.
+$\qed$
 
 ## Part b
+
 Let $H$ be a Hilbert space with inner product $\inner{\wait}{\wait}$ and induced norm $\norm{\wait}$.
 
-
-**Lemma**: 
-For any complex number $z$, we have
+**Lemma**: For any complex number $z$, we have
 $$
 \Im(z) = \Re(-iz),
 $$
@@ -62,7 +65,7 @@ We can compute the following:
 \\ \\
 \end{align*}
 
-and summing these all 
+and summing these all
 
 \[
 \begin{align*}
@@ -99,8 +102,7 @@ $\qed$
 
 # Problem 2
 
-**Lemma:**
-The map $\inner{\wait}{\wait}: H \cross H \to \RR$ is continuous.
+**Lemma:** The map $\inner{\wait}{\wait}: H \cross H \to \RR$ is continuous.
 
 *Proof:*
 
@@ -125,7 +127,8 @@ where $\norm{y_n} \to \norm{y} \coloneqq M < \infty$ since $y \in H$ implies tha
 ## Part a:
 
 We want to show that sequences in $E^\perp$ converge to elements of $E^\perp$.
-Using the lemma, letting $\theset{e_n}$ be a sequence in $E^\perp$, so $y\in E \implies \inner{e_n}{y} = 0$. Since $H$ is complete, $e_n \to e \in H$; we can show that $e \in E^\perp$ by letting $y\in E$ be arbitrary and computing
+Using the lemma, letting $\theset{e_n}$ be a sequence in $E^\perp$, so $y\in E \implies \inner{e_n}{y} = 0$.
+Since $H$ is complete, $e_n \to e \in H$; we can show that $e \in E^\perp$ by letting $y\in E$ be arbitrary and computing
 \[
 \begin{align*}
 \inner{e}{y} = \inner{\lim_n e_n}{y} = \lim_n \inner{e_n}{y} = \lim_n 0 = 0,
@@ -135,10 +138,11 @@ Using the lemma, letting $\theset{e_n}$ be a sequence in $E^\perp$, so $y\in E \
 so $e\in E^\perp$.
 
 ## Part b:
+
 Let $S \coloneqq \mathrm{span}_H(E)$; then the smallest closed subspace containing $E$ is $\overline{S}$, the closure of $S$.
 We will proceed by showing that $E^{\perp \perp} = \overline{S}$.
 
-$\overline{S} \subseteq E^{\perp\perp}$: 
+$\overline{S} \subseteq E^{\perp\perp}$:
 
 Let $\theset{x_n}$ be a sequence in $S$, so $x_n \to x \in \overline{S}$.
 
@@ -172,7 +176,6 @@ where we can note that the first term is zero because $Px \in S_c$ and $x-Px \in
 
 But this says $\norm{x-Px}^2 = 0$, so $x-Px = 0$ and thus $x=Px\in S_c$, which is what we wanted to show.
 
-
 # Problem 3
 
 ## Part a
@@ -188,10 +191,9 @@ We compute
 
 which verifies that this is an orthonormal system.
 
-
 ## Part b
 
-We first note that this system spans the degree 1 polynomials in $L^2([0, 1])$, since we have 
+We first note that this system spans the degree 1 polynomials in $L^2([0, 1])$, since we have
 
 $$
 \left[\begin{array}{rr}
@@ -286,7 +288,7 @@ We have
 ,\end{align*}
 \]
 
-since $e^{2\pi i k} = 1$ for every $k\in Z$, and $k-\ell \in \ZZ$. 
+since $e^{2\pi i k} = 1$ for every $k\in Z$, and $k-\ell \in \ZZ$.
 Thus this set is orthonormal.
 
 ## Part b
@@ -299,7 +301,6 @@ Letting $\varepsilon > 0$, we can thus choose a $P$ such that $\norm{f - P}_\inf
 $$
 \int_0^1 \abs{f(x) - P(x)}~ dx \leq \int_0^1 \varepsilon ~dx = \varepsilon.
 $$
-
 
 Thus we can write
 $$
@@ -316,7 +317,7 @@ It follows that we can let $g = P$ and $h = f - P$ to obtain the desired result.
 
 ### ii
 
-By part (i), the claim is that it suffices to show this is true for $f\in L^2$. 
+By part (i), the claim is that it suffices to show this is true for $f\in L^2$.
 In this case, we can identify
 
 \[
@@ -345,7 +346,7 @@ Then
 &\to 0
 ,\end{align*}
 \]
-with a similar computation for $\int f(x) \sin(2\pi k x)$. 
+with a similar computation for $\int f(x) \sin(2\pi k x)$.
 $\qed$
 
 # Problem 5
@@ -355,7 +356,8 @@ $\qed$
 We use the following algorithm: given $\theset v_i$, we set
 
 - $e_1 = v_1$, and then normalize to obtain $\hat{e_1} = e_1 / \norm{e_1}$
-- $e_{i} = v_{i} - \sum_{k \leq i-1} \inner{v_i}{\hat{e_i}}\hat{e_i}$ 
+
+- $e_{i} = v_{i} - \sum_{k \leq i-1} \inner{v_i}{\hat{e_i}}\hat{e_i}$
 
 The result set $\theset{\hat{e_i}}$ is the orthonormalized basis.
 
@@ -373,7 +375,8 @@ e_2
 ,\end{align*}
 \]
 
-and so $e_2 = x$. We can then check that 
+and so $e_2 = x$.
+We can then check that
 $$
 \norm{e_2} = \left( \int_{-1}^1 x^2 ~dx \right)^{1/2} = \sqrt{\frac 2 3},
 $$
@@ -391,7 +394,7 @@ e_3
 .\end{align*}
 \]
 
-We can then check that $\norm{e_3}^2 = \frac 8 {45}$, so we set 
+We can then check that $\norm{e_3}^2 = \frac 8 {45}$, so we set
 \[
 \begin{align*}
 \hat e_3 
@@ -400,7 +403,6 @@ We can then check that $\norm{e_3}^2 = \frac 8 {45}$, so we set
 &= \frac 1 3 \sqrt{\frac{45}{2}} \left( \frac{3x^2 - 1}{2} \right)
 .\end{align*}
 \]
-
 
 In summary, this yields
 \[
@@ -416,11 +418,11 @@ which are scalar multiples of the first three Legendre polynomials.
 ## Part b
 
 Let $p(x) = a + bx + cx^2$, we are then looking for $p$ such that $\norm{x^3 - p(x)}_2^2$ is minimized.
-Noting that 
+Noting that
 $$
 p(x) \in \mathrm{span}\theset{1, x, x^2} = \mathrm{span}\theset{P_0(x), P_1(x), P_2(x)} \coloneqq S, 
-$$ 
-we can conclude that $p(x)$ will be the projection of $x^3$ onto $S$. 
+$$
+we can conclude that $p(x)$ will be the projection of $x^3$ onto $S$.
 Thus $p(x) = \sum_{i=0}^2 \inner{x^3}{\hat e_i}\hat e_i$.
 
 Proceeding to compute the terms in this expansion, we can note that $\inner{x^3}{f}$ for any $f$ that is even will result in integrating an odd function over a symmetric interval, yielding zero.
@@ -435,10 +437,10 @@ And thus $p(x) = \frac 2 5 x$ is the minimizer.
 
 ## Part c
 
-The first three conditions necessitate $g \in S^\perp$ and $\norm{g} = 1$. 
+The first three conditions necessitate $g \in S^\perp$ and $\norm{g} = 1$.
 Since $S$ is a closed subspace, we can write $x^3 = p(x) + (x^3 - p(x)) \in S \oplus S^\perp$, and so $x^3 - p(x) \in S^\perp$.
 
-The claim is that $g(x) \coloneqq x^3 - p(x)$ is a scalar multiple of the desired maximizer. 
+The claim is that $g(x) \coloneqq x^3 - p(x)$ is a scalar multiple of the desired maximizer.
 This follows from the fact that
 $$
 \abs{ \inner{x^3 - p}{g}} \leq \norm{x^3 - p} \norm{g}
@@ -447,7 +449,7 @@ $$
 by Cauchy-Schwarz, with equality precisely when $g = \lambda(x^3 - p)$ for some scalar $\lambda$.
 However, the restriction $\norm{g} = 1$ forces $\lambda = \norm{x^3-p}\inv$.
 
-A computation shows that 
+A computation shows that
 \[
 \begin{align*}
 \norm{x^3 - p}^2
@@ -484,7 +486,7 @@ We can then conclude that $f-g \in S^\perp$, since we have
 
 ## Part b
 
-Note that this equivalent to finding an $f_0 \in \mathcal{C}$ such that $\norm{f_0}$ is minimized. 
+Note that this equivalent to finding an $f_0 \in \mathcal{C}$ such that $\norm{f_0}$ is minimized.
 
 Letting $f_0 \in \mathcal{C}$, be arbitrary and noting that by part (a) we have $f_0 = g + s$ where $s\in S^\perp$, we can compute
 \[
@@ -496,5 +498,5 @@ Letting $f_0 \in \mathcal{C}$, be arbitrary and noting that by part (a) we have 
 \]
 
 which can be minimized by taking $s=0$, which forces $\norm{s}^2 = 0$ and $\inner{g}{s} = 0$.
-But this imposes the condition $f_0 = g + 0 = g$. 
+But this imposes the condition $f_0 = g + 0 = g$.
 $\qed$
