@@ -10,5 +10,5 @@ classification:
 relations: []
 review: draft
 ---
-- Show that if $G \actson X$ is a group action, then the stabilizer $G_x$ of a point is a subgroup.
 
+- Show that if $G \actson X$ is a group action, then the stabilizer $G_x$ of a point is a subgroup.

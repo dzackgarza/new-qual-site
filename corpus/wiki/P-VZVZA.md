@@ -10,6 +10,5 @@ classification:
 relations: []
 review: draft
 ---
-Find *all* surfaces, orientable and non-orientable, which can be covered by a closed surface (i.e. compact with empty boundary) of genus 2. 
-Prove that your answer is correct.
 
+Find *all* surfaces, orientable and non-orientable, which can be covered by a closed surface (i.e. compact with empty boundary) of genus 2. Prove that your answer is correct.

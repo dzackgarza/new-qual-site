@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-View the torus $T$ as the quotient space $\RR^2 /\ZZ^2$. 
+
+View the torus $T$ as the quotient space $\RR^2 /\ZZ^2$.
 
 Let $A$ be a $2 \times 2$ matrix with $\ZZ$ coefficients.
 

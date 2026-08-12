@@ -10,5 +10,5 @@ classification:
 relations: []
 review: draft
 ---
-What is the maximal real field in a cyclotomic extension $\QQ(\zeta_n)/\QQ$?
 
+What is the maximal real field in a cyclotomic extension $\QQ(\zeta_n)/\QQ$?

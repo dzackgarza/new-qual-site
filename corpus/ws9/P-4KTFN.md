@@ -11,7 +11,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 For this problem, consider just Lebesgue measurable functions $f : [0,1] \to \mathbb{R}$, together with the Lebesgue measure.
 
 a. State Fatou's lemma (no proof required).

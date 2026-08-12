@@ -11,6 +11,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Determine all holomorphic automorphisms of the upper half plane $\mathcal{U} = \{z : \operatorname{Im} z > 0\}$.
 :::

@@ -10,10 +10,9 @@ classification:
 relations: []
 review: draft
 ---
+
 Describe each set in the $z$-plane in (a) and (b) below, where $\alpha$ is a complex number and $k$ is a positive number such that $2|\alpha|<k$.
 
 (a) $|z-\alpha|+|z+\alpha|=k$;
 
 (b) $|z-\alpha|+|z+\alpha| \leq k$.
-
-

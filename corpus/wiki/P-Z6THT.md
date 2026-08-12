@@ -10,9 +10,13 @@ classification:
 relations: []
 review: draft
 ---
+
 Facts used:
+
 - Homotopy LES
+
 - Hurewicz
+
 - $0\to A\to B \to 0$ exact iff $A\cong B$
 
 From the LES in homotopy we have
@@ -39,4 +43,5 @@ $$
 
 where rows 3 and 4 force $\pi_3(E) \cong \ZZ$, rows 0 and 1 force $\pi_0(E) = \ZZ$, and the remaining rows force $\pi_1(E) = \pi_2(E) = 0$.
 
-By Hurewicz, we thus have $H_3(E) = \pi_3(E) = \ZZ$. $\qed$
+By Hurewicz, we thus have $H_3(E) = \pi_3(E) = \ZZ$.
+$\qed$

@@ -38,9 +38,8 @@ from collections.abc import Callable
 from pathlib import Path
 from typing import TypedDict
 
-from card_titles import title_of
-
 import yaml
+from card_titles import title_of
 from import_mmaq import _source_bytes, loose, normalize
 
 ROOT = Path(__file__).resolve().parent.parent
