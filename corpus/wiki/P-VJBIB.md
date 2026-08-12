@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VJBIB
 kind: problem
-title: "1. Parts"
+title: "Parts If $A$ has two distinct eigenvalues, we will have $A = PDP\\inv$ where $P$\u2026"
 classification:
   areas:
   - prelim

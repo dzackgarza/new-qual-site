@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XUV2I
 kind: problem
-title: "Let $\\theset{a_n}$ be a sequence of real numbers such that"
+title: "Let $\\theset{a_n}$ be a sequence of real numbers such that $\\theset{b_n} \\in \\ell^2(\\NN) \\implies \\sum a_n b_n < \\infty$ Show that $\\sum a_n^2 < \\infty$.\u2026"
 classification:
   areas:
   - real-analysis

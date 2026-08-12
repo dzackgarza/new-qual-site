@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-6W4WA
 kind: exercise
-title: "- What does it mean for $E\\subseteq X$ to be a **dense** subspace?"
+title: "What does it mean for $E\\subseteq X$ to be a dense subspace?"
 classification:
   areas:
   - topology
@@ -10,4 +10,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - What does it mean for $E\subseteq X$ to be a **dense** subspace?

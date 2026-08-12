@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PAVWJ
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {x^2}{x^2+1} ~dx = \\color{blue} {x - \\tan\u2026"
+title: "$\\displaystyle \\int \\frac {x^2}{x^2+1} ~dx = \\color{blue} {x - \\tan ^{-1} (x)}$ Solution: $\\frac {x^2}{x^2+1} = 1 - \\frac {1}{x^2+1}$\u2026"
 classification:
   areas:
   - prelim

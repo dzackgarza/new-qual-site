@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LHC3M
 kind: problem
-title: a. Let $f(x,y)$ be a differentiable function from $\mathbb{R}^2$ to $\…
+title: "Let $f(x,y)$ be a differentiable function from $\\mathbb{R}^2$ to $\\mathbb{R}$ and let $g(t) = (x(t), y(t))$ be a\u2026"
 classification:
   areas:
   - prelim

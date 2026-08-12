@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SWILN
 kind: problem
-title: "Let $\\gamma$ be a smooth curve joining two distinct points $a, b\\in \\C\u2026"
+title: "Let $\\gamma$ be a smooth curve joining two distinct points $a, b\\in \\CC$. Prove\u2026"
 classification:
   areas:
   - complex-analysis

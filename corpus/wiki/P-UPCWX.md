@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UPCWX
 kind: problem
-title: "Let $f$ be differentiable on $[a, b]$."
+title: "Let $f$ be differentiable on $[a, b]$. Say that $f$ is uniformly\u2026"
 classification:
   areas:
   - complex-analysis

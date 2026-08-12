@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IC2GD
 kind: problem
-title: "![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 13.png]]"
+title: "Untitled"
 classification:
   areas:
   - algebra
@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 ![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 13.png]]
 
 ![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 14.png]]

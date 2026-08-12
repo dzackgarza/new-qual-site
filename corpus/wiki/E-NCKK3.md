@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NCKK3
 kind: exercise
-title: "Let $\\bar B(a, r)$ denote the closed disc of radius $r$ about $a\\in \\C\u2026"
+title: "Let $\\bar B(a, r)$ denote the closed disc of radius $r$ about $a\\in \\CC$. Let $f$ be\u2026"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TVRVM
 kind: problem
-title: "2. Base case: for $n=1$, we have $a_1 = 1 \\leq a_2 = \\frac{16} 3 \\leq\u2026"
+title: "Base case: for $n=1$, we have $a_1 = 1 \\leq a_2 = \\frac{16} 3 \\leq 10.$ Suppose this holds for $k < n$, then\u2026"
 classification:
   areas:
   - prelim

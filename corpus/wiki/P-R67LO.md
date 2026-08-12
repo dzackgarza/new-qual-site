@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R67LO
 kind: problem
-title: "1. $\\displaystyle \\int (\\sin(x) + \\cos(x))^2 ~dx = \\color {blue} {x-\\f\u2026"
+title: "$\\displaystyle \\int (\\sin(x) + \\cos(x))^2 ~dx = \\color {blue} {x-\\frac {1}{2}\\cos(2x)}$ Solution: $(\\sin(x) + \\cos(x))^2 = 1 + 2 \\sin(x) \\cos(x)$\u2026"
 classification:
   areas:
   - prelim

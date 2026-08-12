@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-5MX7E
 kind: definition
-title: "Colimit"
+title: "Colimit: For a directed system $(X_{i}, f_{ij})$, the colimit is an object $X$ with a\u2026"
 classification:
   areas:
   - topology

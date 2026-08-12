@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IHU2C
 kind: problem
-title: "How many roots does the following polynomial have in the open disc $\\a\u2026"
+title: "How many roots does the following polynomial have in the\u2026"
 classification:
   areas:
   - complex-analysis

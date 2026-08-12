@@ -26,6 +26,7 @@ from pathlib import Path
 from typing import cast
 
 import yaml
+from card_titles import COMPOSED_KINDS, authored_title, degenerate, retitle
 from qualc.cli import load
 from qualc.model import AcademicTerm, ParsedCard, TermOnly, YearOnly, split_front_matter
 from qualc.pandoc_batch import PandocServer
@@ -89,13 +90,35 @@ def check_empty_areas(parsed: list[ParsedCard]) -> Check:
 
 
 def check_degenerate_titles(parsed: list[ParsedCard]) -> Check:
-    """A title that is a list marker or a bare ordinal names nothing."""
+    """A title a reader cannot read, or cannot tell from another card's.
+
+    `/problems.html` sorts its rows by title, so a title is the whole of what a
+    reader has before opening the card. `card_titles.degenerate` owns what makes
+    one unreadable; this adds the one condition that needs the corpus rather
+    than the card: two cards sharing a title, where the statements differ far
+    enough for a longer derivation to tell them apart. Cards holding the same
+    body are `duplicate-bodies`, not a titling defect.
+    """
     bad: list[str] = []
+    bodies: dict[str, str] = {}
     for item in parsed:
-        title = item.card.title.strip()
-        stripped = title.rstrip(".)").strip()
-        if not stripped or (len(stripped) <= 2 and not stripped.isalpha()) or len(stripped) <= 1:
-            bad.append(f"{item.card.id}: title {item.card.title!r}")
+        _, body = split_front_matter(Path(item.source_path).read_text(), Path(item.source_path))
+        bodies[item.card.id] = body
+        reason = degenerate(item.card.title, authored_title(body))
+        if reason:
+            bad.append(f"{item.card.id}: {reason}: {item.card.title!r}")
+
+    flagged = {line.split(":", 1)[0] for line in bad}
+    shared: dict[str, list[str]] = {}
+    for item in parsed:
+        if item.card.id in flagged or item.card.kind in COMPOSED_KINDS:
+            continue
+        shared.setdefault(item.card.title, []).append(item.card.id)
+    for title, ids in shared.items():
+        if len(ids) < 2 or len({bodies[i].strip() for i in ids}) < 2:
+            continue
+        if len(set(retitle({i: bodies[i] for i in ids}).values())) > 1:
+            bad.append(f"{', '.join(sorted(ids))}: share one title, and their statements do not: {title!r}")
     return Check("degenerate-titles", sorted(bad))
 
 

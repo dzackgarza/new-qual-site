@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OIP5P
 kind: problem
-title: "Show that"
+title: "Show that $\\int_0^{\\infty} {\\cos(x) \\over x^2 + b^2}\\dx = {\\pi e^{-b} \\over 2b}$ Let $I$ be the integral over $\\RR$."
 classification:
   areas:
   - complex-analysis

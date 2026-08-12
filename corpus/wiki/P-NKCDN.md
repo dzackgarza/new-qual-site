@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NKCDN
 kind: problem
-title: "- **Solution:** $u_1 = \\cos (x)\u200b$, $v_1 = e^x\u200b$, $du_1 = - \\sin (x) ~d\u2026"
+title: "Solution: $u_1 = \\cos (x)\u200b$, $v_1 = e^x\u200b$, $du_1 = - \\sin (x) ~dx\u200b$, $dv_1 = e^x ~dx\u200b$"
 classification:
   areas:
   - prelim

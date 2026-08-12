@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MX2HR
 kind: problem
-title: "Define what it means for a group $G$ to be *solvable*."
+title: "Define what it means for a group $G$ to be solvable."
 classification:
   areas:
   - algebra

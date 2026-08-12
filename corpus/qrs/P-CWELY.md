@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CWELY
 kind: problem
-title: "1. $V = \\theset{\\vector v \\in \\RR^3 \\suchthat \\inner{\\vector v}{\\theve\u2026"
+title: "$V = \\theset{\\vector v \\in \\RR^3 \\suchthat \\inner{\\vector v}{\\thevector{3,4,5}} = \\vector 0}$ Subspace test: $V \\subset X$ is a linear subspace iff\u2026"
 classification:
   areas:
   - prelim

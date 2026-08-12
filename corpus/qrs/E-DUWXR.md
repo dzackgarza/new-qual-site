@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DUWXR
 kind: exercise
-title: "- $\\star$: Show that $$f,g \\in L^1 \\implies f\\ast g \\in L^1 \\qtext{and\u2026"
+title: "$\\star$: Show that $f,g \\in L^1 \\implies f\\ast g \\in L^1 \\qtext{and} \\norm{f\\ast g}_1 \\leq \\norm{f}_1 \\norm{g}_1$"
 classification:
   areas:
   - real-analysis
@@ -10,5 +10,5 @@ classification:
 relations: []
 review: draft
 ---
-- $\star$: Show that $$f,g \in L^1 \implies f\ast g \in L^1 \qtext{and} \norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1.$$
 
+- $\star$: Show that $$f,g \in L^1 \implies f\ast g \in L^1 \qtext{and} \norm{f\ast g}_1 \leq \norm{f}_1 \norm{g}_1.$$

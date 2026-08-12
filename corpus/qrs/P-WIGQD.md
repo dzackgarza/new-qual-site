@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WIGQD
 kind: problem
-title: "Let $G$ be a finite group and $p$ a prime number such that there is a\u2026"
+title: "Let $G$ be a finite group and $p$ a prime number such that there\u2026"
 classification:
   areas:
   - algebra

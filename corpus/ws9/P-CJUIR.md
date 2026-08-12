@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CJUIR
 kind: problem
-title: Let $R$ be the planar region between the circles $x^2 + y^2 = 4$ and $…
+title: "Let $R$ be the planar region between the circles $x^2 + y^2 = 4$ and $(x-1)^2 + y^2 = 1$, and\u2026"
 classification:
   areas:
   - prelim

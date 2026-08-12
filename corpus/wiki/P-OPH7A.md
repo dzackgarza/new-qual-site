@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OPH7A
 kind: problem
-title: "Let $f, g: [a, b] \\to \\RR$ be measurable with"
+title: "Let $f, g: [a, b] \\to \\RR$ be measurable with $\\int_{a}^{b} f(x) ~d x=\\int_{a}^{b} g(x) ~d x$ Show that either $f(x) = g(x)$ almost\u2026"
 classification:
   areas:
   - real-analysis

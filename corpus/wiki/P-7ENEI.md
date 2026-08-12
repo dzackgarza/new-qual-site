@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7ENEI
 kind: problem
-title: "Suppose that $f$ is holomorphic in an open set containing the closed u\u2026"
+title: "Suppose that $f$ is holomorphic in an open set containing the\u2026"
 classification:
   areas:
   - complex-analysis

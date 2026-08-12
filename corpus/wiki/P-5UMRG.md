@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5UMRG
 kind: problem
-title: "5. $\\displaystyle \\int \\frac {\\sqrt {x^2-a^2}}{x} ~dx = \\tan (\\sec ^{-\u2026"
+title: "$\\displaystyle \\int \\frac {\\sqrt {x^2-a^2}}{x} ~dx = \\tan (\\sec ^{-1} (\\frac {x}{a})) - a \\sec ^{-1} (\\frac {x}{a}) = \\color {blue} {\\sqrt {x^2-a^2} - a \\sec ^{-1} (\\frac {x}{a})} = \\color {blue} {\\sqrt {x^2-a^2} - a \\tan ^{-1} (\\frac {\\sqrt {x^2 - a^2}}{a})}\u200b$\u2026"
 classification:
   areas:
   - prelim

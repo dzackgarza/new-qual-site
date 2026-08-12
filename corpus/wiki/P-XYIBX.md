@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XYIBX
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {1 - \\sqrt {x}}{1 + \\sqrt {x}} ~dx = \\col\u2026"
+title: "$\\displaystyle \\int \\frac {1 - \\sqrt {x}}{1 + \\sqrt {x}} ~dx = \\color{blue} {- x + 4 \\sqrt {x} - 4 \\ln (1 + x)}$ Solution: $u = 1 + \\sqrt {x}$, $x = (u - 1)^2$, $dx = 2(u - 1) ~du$"
 classification:
   areas:
   - prelim

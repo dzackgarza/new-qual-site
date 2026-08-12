@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2RS4X
 kind: problem
-title: Evaluate the integral
+title: "Evaluate the integral $\\int_\\RR {dx \\over 1 + x^4}$"
 classification:
   areas:
   - complex-analysis

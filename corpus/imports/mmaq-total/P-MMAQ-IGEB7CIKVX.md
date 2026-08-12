@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-IGEB7CIKVX
 kind: problem
-title: Let $R$ be a ring and $M$ an $R\dash$module.
+title: "Let $R$ be a ring and $M$ an $R\\dash$module. Prove that if $R$ is an\u2026"
 classification:
   areas:
   - algebra

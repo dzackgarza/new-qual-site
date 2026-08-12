@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-D2RBT
 kind: problem
-title: "Compute the fundamental group, using any technique you like, of $\\RP^2\u2026"
+title: "Compute the fundamental group, using any technique you like\u2026"
 classification:
   areas:
   - topology
@@ -10,4 +10,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Compute the fundamental group, using any technique you like, of $\RP^2 \#\RP^2 \#\RP^2$.

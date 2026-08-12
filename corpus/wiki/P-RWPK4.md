@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RWPK4
 kind: problem
-title: Let $p$ be a prime number.
+title: "Let $p$ be a prime number. Let $A$ be a $p \\times p$ matrix over a field $F$ with\u2026"
 classification:
   areas:
   - algebra

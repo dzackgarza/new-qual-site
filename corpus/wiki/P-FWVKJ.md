@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FWVKJ
 kind: problem
-title: "![[Pasted image 20210527173251.png]]"
+title: "Untitled"
 classification:
   areas:
   - complex-analysis
@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 ![[Pasted image 20210527173251.png]]
 
 ![[_attachments/Pasted image 20210527173330.png]]
@@ -19,5 +20,3 @@ review: draft
 ![[_attachments/Pasted image 20210527173111.png]]
 
 ![[_attachments/Pasted image 20210527173427.png]]
-
-

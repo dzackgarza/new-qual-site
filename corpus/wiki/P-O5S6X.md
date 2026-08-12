@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O5S6X
 kind: problem
-title: "Let $E \\subset \\RR$ be measurable with $m(E) < \\infty$."
+title: "Let $E \\subset \\RR$ be measurable with $m(E) < \\infty$. Define $f(x)=m(E \\cap(E+x))$ Show that $f\\in L^1(\\RR)$. $f$ is\u2026"
 classification:
   areas:
   - real-analysis
@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-Let $E \subset \RR$ be measurable with $m(E) < \infty$. 
+
+Let $E \subset \RR$ be measurable with $m(E) < \infty$.
 Define
 \[
 f(x)=m(E \cap(E+x)).
@@ -19,11 +20,12 @@ f(x)=m(E \cap(E+x)).
 Show that
 
 1. $f\in L^1(\RR)$.
+
 2. $f$ is uniformly continuous.
+
 3. $\lim _{|x| \to \infty} f(x) = 0$.
 
-> Hint: 
+> Hint:
 \[
 \chi_{E \cap(E+x)}(y)=\chi_{E}(y) \chi_{E}(y-x)
 \]
-

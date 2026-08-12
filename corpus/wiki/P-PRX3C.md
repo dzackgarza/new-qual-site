@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PRX3C
 kind: problem
-title: "Define *prime ideal*, give an example of a nontrivial ideal in the rin\u2026"
+title: "Define prime ideal, give an example of a nontrivial ideal in\u2026"
 classification:
   areas:
   - algebra

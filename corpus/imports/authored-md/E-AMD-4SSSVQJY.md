@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-4SSSVQJY
 kind: solution
-title: \hfill
+title: "Let $a\\in R$ and define $\\phi(x) = ax$."
 classification:
   areas:
   - algebra

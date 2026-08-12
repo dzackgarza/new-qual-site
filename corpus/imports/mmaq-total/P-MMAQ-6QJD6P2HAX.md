@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-6QJD6P2HAX
 kind: problem
-title: Let $R$ be a commutative ring with 1.
+title: "Let $R$ be a commutative ring with 1. Show that every proper\u2026"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-JQWDPMM2
 kind: problem
-title: Let $\{a_n\}_{n=1}^\infty$ be a sequence of real numbers.
+title: "Let $\\{a_n\\}_{n=1}^\\infty$ be a sequence of real numbers. Prove that if $\\displaystyle\\lim_{n\\to\u221e} a_n = 0$, then $\\displaystyle\\lim_{n\\to\u221e} a_1 + \\cdots + a_n = 0$."
 classification:
   areas:
   - real-analysis

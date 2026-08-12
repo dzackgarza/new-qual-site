@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VYOWN
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {x + \\sin(x)}{1 + \\cos(x)}~dx = \\color {b\u2026"
+title: "$\\displaystyle \\int \\frac {x + \\sin(x)}{1 + \\cos(x)}~dx = \\color {blue} {\\frac {x \\sin (x)}{1 + \\cos (x)}} = \\color {blue} {x \\tan \\frac {x}{2}}$ Solution: $u = x$, $v = \\frac {\\sin (x)}{1 + \\cos (x)}$, $du = dx$\u2026"
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MD2U3
 kind: problem
-title: "How many isomorphism classes are there of groups of order 45?"
+title: "How many isomorphism classes are there of groups of order\u2026"
 classification:
   areas:
   - algebra
@@ -10,20 +10,22 @@ classification:
 relations: []
 review: draft
 ---
+
 How many isomorphism classes are there of groups of order 45?
 
 Describe a representative from each class.
 
-:::{.concept}
+::: {.concept}
 \envlist
 
 - Sylow theorems:
-- $n_p \cong 1 \mod p$
-- $n_p \divides m$.
 
+- $n_p \cong 1 \mod p$
+
+- $n_p \divides m$.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - It turns out that $n_3 = 1$ and $n_5 = 1$, so $G \cong S_3 \cross S_5$ since both subgroups are normal.
@@ -35,7 +37,6 @@ Describe a representative from each class.
 - Thus
 
 - $G \cong \ZZ/(9) \cross \ZZ/(5)$, or
+
 - $G \cong \ZZ/(3)^2 \cross \ZZ/(5)$.
-
 :::
-

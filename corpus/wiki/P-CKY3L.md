@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CKY3L
 kind: problem
-title: "Let"
+title: "Let $S = \\spanof_\\CC\\theset{\\chi_{(a, b)} \\suchthat a, b \\in \\RR}$ the complex linear span of characteristic functions of\u2026"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCPPT
 kind: problem
-title: "Let $f(x) = x^2$ and $E \\subset [0, \\infty) \\definedas \\RR^+$."
+title: "Let $f(x) = x^2$ and $E \\subset [0, \\infty) \\definedas \\RR^+$. Show that $m^(E) = 0 \\iff m^(f(E)) = 0$ Deduce that the map $\\phi: \\mathcal{L}(\\RR^+) &\\to \\mathcal{L}(\\RR^+) \\\\ E &\\mapsto f(E)$ is a bijection\u2026"
 classification:
   areas:
   - real-analysis

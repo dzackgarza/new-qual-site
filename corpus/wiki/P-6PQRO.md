@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6PQRO
 kind: problem
-title: "Recall that the **suspension** of a topological space, denoted $SX$, i\u2026"
+title: "Recall that the suspension of a topological space, denoted $SX$\u2026"
 classification:
   areas:
   - topology
@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 Recall that the **suspension** of a topological space, denoted $SX$, is the quotient space formed from $X \times [-1, 1]$ by identifying $(x, 1)$ with $(y, 1)$ for all $x, y \in X$, and also identifying $(x, -1)$ with $(y, -1)$ for all $x, y \in X$.
 
 a. Show that $SX$ is the union of two contractible subspaces.

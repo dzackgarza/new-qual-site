@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-XRHTV
 kind: definition
-title: "Topology"
+title: "Topology: Using open sets: closed under arbitrary unions and finite\u2026"
 classification:
   areas:
   - topology

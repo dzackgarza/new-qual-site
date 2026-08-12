@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y34JB
 kind: problem
-title: "Let $f$ be a measurable function on $\\mathbb{R}$. Show that the graph\u2026"
+title: "Let $f$ be a measurable function on $\\mathbb{R}$. Show that the graph of $f$\u2026"
 classification:
   areas:
   - real-analysis

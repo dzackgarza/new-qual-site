@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CFMLS
 kind: problem
-title: "Define"
+title: "Define $E:=\\left\\{x \\in \\mathbb{R}:\\left|x-\\frac{p}{q}\\right|<q^{-3} \\text { for infinitely many } p, q \\in \\mathbb{N}\\right\\}$ Prove that $m(E) = 0$."
 classification:
   areas:
   - real-analysis

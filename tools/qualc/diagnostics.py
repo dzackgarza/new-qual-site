@@ -37,6 +37,7 @@ DiagnosticCode = Literal[
     "page-reference-missing",
     "page-reference-ambiguous",
     "asset-unresolved",
+    "unknown-citation",
 ]
 
 

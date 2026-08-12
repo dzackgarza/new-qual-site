@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E6Y7R
 kind: problem
-title: "1. $\\displaystyle \\int x\\sin^{-1}(\\frac {1}{x}) ~dx = \\color {blue} {\\\u2026"
+title: "$\\displaystyle \\int x\\sin^{-1}(\\frac {1}{x}) ~dx = \\color {blue} {\\frac {1}{2} (x^2 \\csc ^{-1} (x) + \\sqrt {x^2 - 1})} = \\color {blue} {\\frac {1}{2} (x^2 \\sin ^{-1} (\\frac {1}{x}) + \\sqrt {x^2 - 1})}$ Solution: $x \\sin ^{-1} (\\frac {1}{x}) = x \\csc ^{-1} (x)$\u2026"
 classification:
   areas:
   - prelim

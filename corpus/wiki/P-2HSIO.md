@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2HSIO
 kind: problem
-title: "Suppose that X has universal cover $p : \\tilde X \\to X$ and let $A \\su\u2026"
+title: "Suppose that X has universal cover $p : \\tilde X \\to X$ and let $A \\subset X$ be a subspace\u2026"
 classification:
   areas:
   - topology

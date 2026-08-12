@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FFARP
 kind: exercise
-title: "- Show that every compact set is closed and bounded."
+title: "Show that every compact set is closed and bounded."
 classification:
   areas:
   - real-analysis
@@ -10,4 +10,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that every compact set is closed and bounded.

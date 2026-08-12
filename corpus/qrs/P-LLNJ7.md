@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LLNJ7
 kind: problem
-title: "Assume $f$ is continuous in the region $\\theset{x+iy \\suchthat x\\geq \u2026"
+title: "Assume $f$ is continuous in the region $\\theset{x+iy \\suchthat x\\geq x_0, ~ 0\\leq y \\leq b}$, and the following\u2026"
 classification:
   areas:
   - complex-analysis

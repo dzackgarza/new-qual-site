@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-D6N7M
 kind: problem
-title: "Show that if $x_n$ is a decreasing sequence of positive real numbers s\u2026"
+title: "Show that if $x_n$ is a decreasing sequence of positive real\u2026"
 classification:
   areas:
   - real-analysis

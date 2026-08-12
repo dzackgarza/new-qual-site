@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R6SXV
 kind: problem
-title: "Let $K = \\QQ[\\sqrt 2 + \\sqrt 5]$."
+title: "Let $K = \\QQ[\\sqrt 2 + \\sqrt 5]$. Find $[K: \\QQ]$. Show that $K/\\QQ$ is Galois, and find the Galois\u2026"
 classification:
   areas:
   - algebra
@@ -10,13 +10,11 @@ classification:
 relations: []
 review: draft
 ---
+
 Let $K = \QQ[\sqrt 2 + \sqrt 5]$.
 
-a.
-Find $[K: \QQ]$.
+a. Find $[K: \QQ]$.
 
-b.
-Show that $K/\QQ$ is Galois, and find the Galois group $G$ of $K/\QQ$.
+b. Show that $K/\QQ$ is Galois, and find the Galois group $G$ of $K/\QQ$.
 
-c.
-Exhibit explicitly the correspondence between subgroups of $G$ and intermediate fields between $\QQ$ and $K$.
+c. Exhibit explicitly the correspondence between subgroups of $G$ and intermediate fields between $\QQ$ and $K$.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-24RNF
 kind: definition
-title: '$K(x)$'
+title: "$K(x)$: The field of rational functions, i.e. ratios of polynomials\u2026"
 classification:
   areas:
   - algebra

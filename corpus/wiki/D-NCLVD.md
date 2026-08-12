@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-NCLVD
 kind: definition
-title: "Retract"
+title: "Retract: A map $r$ in $A\\mathrel{\\textstyle\\substack{\\injects^{\\iota}\\\\\\textstyle\\dashleftarrow_{r}}} B$ satisfying $r\\circ\\iota = \\id_{A}$ A retract of $B$ onto a subspace $A$ is a\u2026"
 classification:
   areas:
   - topology

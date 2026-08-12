@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PC2H7
 kind: problem
-title: "$\\cos (x) + \\cos (y) = 2 \\cos (\\frac {x + y}{2}) \\cos (\\frac {x - y}{\u2026"
+title: "$\\cos (x) + \\cos (y) = 2 \\cos (\\frac {x + y}{2}) \\cos (\\frac {x - y}{2})\u200b$ $\\cos (x) - \\cos (y) = - 2 \\sin (\\frac {x + y}{2}) \\sin (\\frac {x - y}{2})\u200b$ $\\tan (x) - \\tan (y) = \\frac {\\sin (x + y)}{\\cos {x} \\cos (y)}$\u2026"
 classification:
   areas:
   - prelim

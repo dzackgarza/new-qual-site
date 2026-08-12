@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MLGPK
 kind: problem
-title: "Let $R$ be a simple rng (a nonzero ring which is not assume to have a\u2026"
+title: "Let $R$ be a simple rng (a nonzero ring which is not assume to\u2026"
 classification:
   areas:
   - algebra

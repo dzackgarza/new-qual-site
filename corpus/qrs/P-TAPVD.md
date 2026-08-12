@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TAPVD
 kind: problem
-title: "1. Write $f$ as $f(x,y)$, we are then given that $f_x, f_y \\in C_0(\\th\u2026"
+title: "Write $f$ as $f(x,y)$, we are then given that $f_x, f_y \\in C_0(\\theset{0})$."
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ROMKF
 kind: problem
-title: "Let $a_n \\neq 0$ and assume that $\\displaystyle"
+title: "Let $a_n \\neq 0$ and assume that $\\displaystyle \\lim_{n \\rightarrow \\infty} \\frac{|a_{n+1}|}{|a_n|} = L$."
 classification:
   areas:
   - complex-analysis

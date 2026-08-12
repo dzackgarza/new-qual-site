@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-M3BT5
 kind: problem
-title: "Suppose $F = K[\\alpha_1, \\cdots, \\alpha_n]$ where $\\alpha_1^{n_1} \\in\u2026"
+title: "Suppose $F = K[\\alpha_1, \\cdots, \\alpha_n]$ where $\\alpha_1^{n_1} \\in K$ for some $n_1$ and\u2026"
 classification:
   areas:
   - algebra

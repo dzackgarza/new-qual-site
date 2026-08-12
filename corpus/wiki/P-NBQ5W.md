@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NBQ5W
 kind: problem
-title: "Give an example of a function $f:\\RR\\to \\RR$ that is everywhere differ\u2026"
+title: "Give an example of a function $f:\\RR\\to \\RR$ that is everywhere\u2026"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7FRUL
 kind: problem
-title: "Facts used:"
+title: "Facts used: $H_(T^2) = [\\ZZ, \\ZZ^2, \\ZZ, 0\\rightarrow]$ $N^{(1)} \\homotopic S^1$, so $H_{\\geq 2}(N) = 0$."
 classification:
   areas:
   - topology
@@ -10,15 +10,22 @@ classification:
 relations: []
 review: draft
 ---
-Facts used:
-- $H_*(T^2) = [\ZZ, \ZZ^2, \ZZ, 0\rightarrow]$
-- $N^{(1)} \homotopic S^1$, so $H_{\geq 2}(N) = 0$.
-- A SES $0\to A\to B \to F \to 0$ with $F$ free splits.
-- $0\to A \to B \mapsvia{\cong} C \to D \to 0$ implies $A = D = 0$.
-Let $N$ be the knotted solid torus, so that $\del N = T^2$, and let $X = S^3 - N$. Then
-- $S^3 = N \union_{T^2} X$
-- $N \cap X = T^2$
 
+Facts used:
+
+- $H_*(T^2) = [\ZZ, \ZZ^2, \ZZ, 0\rightarrow]$
+
+- $N^{(1)} \homotopic S^1$, so $H_{\geq 2}(N) = 0$.
+
+- A SES $0\to A\to B \to F \to 0$ with $F$ free splits.
+
+- $0\to A \to B \mapsvia{\cong} C \to D \to 0$ implies $A = D = 0$.
+  Let $N$ be the knotted solid torus, so that $\del N = T^2$, and let $X = S^3 - N$.
+  Then
+
+- $S^3 = N \union_{T^2} X$
+
+- $N \cap X = T^2$
 
 and we apply Mayer-Vietoris to $S^3$:
 
@@ -42,8 +49,10 @@ $$
 $$
 
 We then deduce:
+
 - $H_0(X) = \ZZ$ by the splitting of the line 0 SES $$0 \to \ZZ \to \ZZ \cross H_0(X) \to \ZZ \to 0$$ yielding $Z\cross H_0(X) \cong \ZZ \times \ZZ$.
+
 - $H_1(X) = \ZZ$ by the line 1 SES $$0 \to \ZZ^2 \to \ZZ \cross H_1(X) \to 0$$ which yields an isomorphism.
-- $H_2(X) = H_3(X) = 0$ by examining the SES spanning lines 3 and 2: $$0 \injects H_3(X) \injects \ZZ \mapsvia{\cong_{\del_3}} \ZZ \surjects H_2(X) \surjects 0$$
- 	Since $\del_3$ must be an isomorphism, this forces the edge terms to be zero.
-$\qed$
+
+- $H_2(X) = H_3(X) = 0$ by examining the SES spanning lines 3 and 2: $$0 \injects H_3(X) \injects \ZZ \mapsvia{\cong_{\del_3}} \ZZ \surjects H_2(X) \surjects 0$$ Since $\del_3$ must be an isomorphism, this forces the edge terms to be zero.
+  $\qed$

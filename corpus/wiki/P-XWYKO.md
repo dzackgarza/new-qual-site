@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XWYKO
 kind: problem
-title: "Note that we can't have $T^j = 0$ for any $j\\leq 4$, since then $T^5 \u2026"
+title: "Note that we can't have $T^j = 0$ for any $j\\leq 4$, since then $T^5 = T^{5-k}T^k = T^{5-k} 0 = 0$\u2026"
 classification:
   areas:
   - algebra

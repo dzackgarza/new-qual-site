@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-I3UPP
 kind: problem
-title: Let $\tau$ be the arc of the unit circle in the first quadrant, from $…
+title: "Let $\\tau$ be the arc of the unit circle in the first quadrant\u2026"
 classification:
   areas:
   - prelim

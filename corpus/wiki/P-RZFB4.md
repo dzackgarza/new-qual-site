@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RZFB4
 kind: problem
-title: "a. Suppose $Y$ is an $n$-fold connected covering space of the torus $S\u2026"
+title: "Suppose $Y$ is an $n$-fold connected covering space of the torus $S^1 \\times S^1$."
 classification:
   areas:
   - topology

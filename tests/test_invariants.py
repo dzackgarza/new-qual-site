@@ -295,9 +295,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
         **{"data-relation-group": "appearances"},
     )
     assert len(problem_appearances) == 1
-    assert "exam/SRC-UGA-ALG-FALL-2018.html" in {
-        resolved_link(Path("tag/P-P2UAH.html"), link.attrs["href"]) for link in problem_appearances[0].find_all("a")
-    }
+    assert "exam/SRC-UGA-ALG-FALL-2018.html" in {resolved_link(Path("tag/P-P2UAH.html"), link.attrs["href"]) for link in problem_appearances[0].find_all("a")}
     assert "UGA algebra Fall 2018, problem 1" in problem_appearances[0].text
 
     stable_route = site / "tag" / "P-P2UAH.html"

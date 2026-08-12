@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y3PUL
 kind: problem
-title: "Show that $\\RP^2 \\lor S^1$ is *not* homotopy equivalent to a compact s\u2026"
+title: "Show that $\\RP^2 \\lor S^1$ is not homotopy equivalent to a compact surface\u2026"
 classification:
   areas:
   - topology
@@ -10,5 +10,5 @@ classification:
 relations: []
 review: draft
 ---
-Show that $\RP^2 \lor S^1$ is *not* homotopy equivalent to a compact surface (possibly with boundary).
 
+Show that $\RP^2 \lor S^1$ is *not* homotopy equivalent to a compact surface (possibly with boundary).

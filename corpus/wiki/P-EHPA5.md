@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EHPA5
 kind: problem
-title: "For a prime $p$, let $G$ be a finite $p\\dash$group and let $N$ be a no\u2026"
+title: "For a prime $p$, let $G$ be a finite $p\\dash$group and let $N$ be a normal\u2026"
 classification:
   areas:
   - algebra

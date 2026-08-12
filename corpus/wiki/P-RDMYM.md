@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RDMYM
 kind: problem
-title: "Let $f, g \\in L^1(\\RR)$ be Borel measurable."
+title: "Let $f, g \\in L^1(\\RR)$ be Borel measurable. Show that The function $F(x, y) \\definedas f(x-y) g(y)$ is Borel\u2026"
 classification:
   areas:
   - real-analysis

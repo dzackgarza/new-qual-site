@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OCUZ4
 kind: problem
-title: "Prove or disprove:"
+title: "Prove or disprove: Every map from $\\RP^2 \\lor \\RP^2$ to itself has a fixed\u2026"
 classification:
   areas:
   - topology
@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-Prove or disprove: 
+
+Prove or disprove:
 
 Every map from $\RP^2 \lor \RP^2$ to itself has a fixed point.

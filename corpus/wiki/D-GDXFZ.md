@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-GDXFZ
 kind: definition
-title: "Proper"
+title: "Proper: Several equivalent definitions."
 classification:
   areas:
   - topology

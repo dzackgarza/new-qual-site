@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BZIXT
 kind: problem
-title: "1. Parts:"
+title: "Parts: Let $x, y \\in X$ and suppose $f(x) = f(y)$."
 classification:
   areas:
   - prelim

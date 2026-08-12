@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5SR2D
 kind: problem
-title: "Prove that if $z\\mapsto f(z)$ is analytic, then $z \\mapsto \\bar{f(\\bar\u2026"
+title: "Prove that if $z\\mapsto f(z)$ is analytic, then $z \\mapsto \\bar{f(\\bar z)}$ is analytic. It suffices\u2026"
 classification:
   areas:
   - complex-analysis

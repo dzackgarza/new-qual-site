@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QJE7B
 kind: problem
-title: "1. Let $\\vector w_i$ be the proposed new basis elements -- then $\\thes\u2026"
+title: "Let $\\vector w_i$ be the proposed new basis elements -- then $\\theset{\\vector w_i}$ will be a\u2026"
 classification:
   areas:
   - prelim

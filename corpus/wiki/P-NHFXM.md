@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NHFXM
 kind: problem
-title: "1. $\\displaystyle \\int \\frac {1}{\\sin (x) + \\cos (x)} ~dx = \\color {b\u2026"
+title: "$\\displaystyle \\int \\frac {1}{\\sin (x) + \\cos (x)} ~dx = \\color {blue}{\\frac {1}{\\sqrt {2}} (\\ln (\\tan (\\frac {x}{2}) - 1 + \\sqrt {2}) - \\ln (\\tan (\\frac {x}{2}) - 1 - \\sqrt {2}))} = \\color {blue} {- \\frac {1}{\\sqrt {2}} \\ln (\\csc (x + \\frac {\\pi}{4}) - \\cot (x + \\frac {\\pi}{4}))}$\u2026"
 classification:
   areas:
   - prelim

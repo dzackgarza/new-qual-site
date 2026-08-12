@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BFLEH
 kind: problem
-title: "Calculate"
+title: "Calculate $\\int_0^\\infty {\\cos(x) - \\cos(4x) \\over x^2} \\, dx$"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SFDLG
 kind: problem
-title: "a. Show that in polar coordinates, the Cauchy-Riemann equations take t\u2026"
+title: "Show that in polar coordinates, the Cauchy-Riemann equations\u2026"
 classification:
   areas:
   - complex-analysis

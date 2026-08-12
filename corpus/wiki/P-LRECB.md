@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LRECB
 kind: problem
-title: "Let $K$ be a Galois extension of $F$, and let $F \\subset E \\subset K$\u2026"
+title: "Let $K$ be a Galois extension of $F$, and let $F \\subset E \\subset K$ be inclusions of\u2026"
 classification:
   areas:
   - algebra

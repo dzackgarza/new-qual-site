@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QWEAV
 kind: problem
-title: "Let $N$ be a positive integer, and let $G$ be a finite group of order\u2026"
+title: "Let $N$ be a positive integer, and let $G$ be a finite group of\u2026"
 classification:
   areas:
   - algebra

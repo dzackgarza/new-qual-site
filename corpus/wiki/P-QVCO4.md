@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QVCO4
 kind: problem
-title: Identifying
+title: "Identifying $R \\cross F = F[x] \\oplus F \\cong F[x] \\oplus \\frac{F[x]}{(f)}$ where $f$ is any degree 1 polynomial in $F[x]$, by the\u2026"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TGUAG
 kind: problem
-title: "Find the Laurent expansion of"
+title: "Find the Laurent expansion of $f(z) = {z + 1 \\over z(z-1)}$ about $z=0$ and $z=1$ respectively. Let\u2026"
 classification:
   areas:
   - complex-analysis

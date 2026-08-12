@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MFCCS
 kind: exercise
-title: "- Show that any disjoint intervals is countable."
+title: "Show that any disjoint intervals is countable."
 classification:
   areas:
   - real-analysis
@@ -10,4 +10,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that any disjoint intervals is countable.

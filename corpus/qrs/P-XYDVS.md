@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XYDVS
 kind: problem
-title: "Let $H$ be a normal subgroup of a finite group $G$ where the order of\u2026"
+title: "Let $H$ be a normal subgroup of a finite group $G$ where the order\u2026"
 classification:
   areas:
   - algebra

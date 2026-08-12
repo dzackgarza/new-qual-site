@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-RAVAC
 kind: exercise
-title: "Let $f$ be entire, and discuss (with proofs and examples) the types of\u2026"
+title: "Let $f$ be entire, and discuss (with proofs and examples) the\u2026"
 classification:
   areas:
   - complex-analysis
@@ -10,15 +10,16 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="?"}
+
+::: {.problem title="?"}
 Let $f$ be entire, and discuss (with proofs and examples) the types of singularities $f$ might have (removable, pole, or essential) at $z=\infty$ in the following cases:
 
 1. $f$ has at most finitely many zeros in $\CC$.
-2. $f$ has infinitely many zeros in $\CC$.
 
+2. $f$ has infinitely many zeros in $\CC$.
 :::
 
-:::{.solution}
+::: {.solution}
 Write $f(z) = \sum_{k\geq 0} c_k z^k$ since it is entire.
 
 - If $f$ has finitely many zeros, $f$ is nonconstant and entire, and thus unbounded by Liouville.
@@ -30,4 +31,3 @@ Write $f(z) = \sum_{k\geq 0} c_k z^k$ since it is entire.
 - If $f$ has infinitely many zeros, if $f$ is nonconstant then infinitely many $c_k$ are nonzero -- otherwise $f$ is a polynomial and can only have finitely many zeros.
   Then $g(z) \da f(1/z) = \sum_{k\geq 0}{c_k\over z^k}$ has infinitely many nonzero terms, making $z=0$ an essential singularity for $g$ and $z=\infty$ essential for $f$.
 :::
-

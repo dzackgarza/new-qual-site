@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DCR24
 kind: problem
-title: a. Find Sylow subgroups $P_2, P_3$, and $P_5$ for the three primes $2,…
+title: "Find Sylow subgroups $P_2, P_3$, and $P_5$ for the three primes $2, 3, 5$ dividing\u2026"
 classification:
   areas:
   - prelim

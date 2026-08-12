@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZYLUB
 kind: problem
-title: "Give the $4 \\times 4$ Jordan forms with minimal polynomial $(x - 1)(x\u2026"
+title: "Give the $4 \\times 4$ Jordan forms with minimal polynomial $(x - 1)(x - 2)^2$."
 classification:
   areas:
   - algebra
@@ -10,5 +10,5 @@ classification:
 relations: []
 review: draft
 ---
-Give the $4 \times 4$ Jordan forms with minimal polynomial $(x - 1)(x - 2)^2$.
 
+Give the $4 \times 4$ Jordan forms with minimal polynomial $(x - 1)(x - 2)^2$.

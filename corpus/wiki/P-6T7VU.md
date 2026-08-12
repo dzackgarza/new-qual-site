@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6T7VU
 kind: problem
-title: "**Lemma:**"
+title: "Lemma: If $M$ is a cyclic module over a PID, then $M$ has exactly\u2026"
 classification:
   areas:
   - algebra

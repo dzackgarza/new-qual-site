@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XIY3O
 kind: problem
-title: State and prove Green's Theorem for rectangles.
+title: "State and prove Green's Theorem for rectangles. Use this to\u2026"
 classification:
   areas:
   - complex-analysis

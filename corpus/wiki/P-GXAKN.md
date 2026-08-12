@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GXAKN
 kind: problem
-title: "Define"
+title: "Define $f(x, y):=\\left\\{\\begin{array}{ll}{\\frac{x^{1 / 3}}{(1+x y)^{3 / 2}}} & {\\text { if } 0 \\leq x \\leq y} \\\\ {0} & {\\text { otherwise }}\\end{array}\\right.$ Carefully show that $f \\in L^1(\\RR^2)$. Note that\u2026"
 classification:
   areas:
   - real-analysis

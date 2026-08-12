@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MHQ6A
 kind: problem
-title: "If $X$ is a topological space and $S \\subset X$, define in terms of"
+title: "If $X$ is a topological space and $S \\subset X$, define in terms of open\u2026"
 classification:
   areas:
   - topology

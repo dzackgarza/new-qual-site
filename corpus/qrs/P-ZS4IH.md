@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZS4IH
 kind: problem
-title: "Let $\\bar B(a, r)$ denote the closed disc of radius $r$ about $a\\in \\C\u2026"
+title: "Let $\\bar B(a, r)$ denote the closed disc of radius $r$ about $a\\in \\CC$. Let $f$ be\u2026"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-EP2X5Z2JJ3
 kind: problem
-title: Let $\{a_n\}_{n=1}^\infty$ be a sequence of real numbers.
+title: "Let $\\{a_n\\}_{n=1}^\\infty$ be a sequence of real numbers. Prove that if $\\displaystyle\\lim_{n\\to\\infty} a_n = 0$, then $\\displaystyle\\lim_{n\\to\\infty} a_1 + \\cdots + a_n = 0$."
 classification:
   areas:
   - real-analysis

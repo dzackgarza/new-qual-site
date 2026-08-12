@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MOL6S
 kind: problem
-title: "1. Denoting $D^n f \\definedas \\dd{^n f}{x^n}$ and noting that $D^1 D^n\u2026"
+title: "Denoting $D^n f \\definedas \\dd{^n f}{x^n}$ and noting that $D^1 D^n f = D^{n+1}f$, we have $\\begin{align} D^0f &= xe^{2x} \\\\ D^1f &= e^{2x} + 2D^0f \\\\ D^2f &= 2e^{2x} + 2D^1f \\\\ D^3f &= 4e^{2x} + 2D^2f \\\\ \\end{align}$"
 classification:
   areas:
   - prelim

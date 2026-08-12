@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PHHXJ
 kind: problem
-title: "1. $\\displaystyle \\int \\sqrt {1 -x^2} ~dx = \\frac {1}{2} (\\sin ^{-1} (\u2026"
+title: "$\\displaystyle \\int \\sqrt {1 -x^2} ~dx = \\frac {1}{2} (\\sin ^{-1} (x) + \\frac {1}{2} \\sin (2 \\sin ^{-1} (x))) = \\color {blue} {\\frac {1}{2} (\\sin ^{-1} (x) + x \\sqrt {1 - x^2})}$ Solution: $\\sin (u) = x\u200b$\u2026"
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FSFMB
 kind: problem
-title: "For a finite group $G$, let $c(G)$ denote the number of conjugacy clas\u2026"
+title: "For a finite group $G$, let $c(G)$ denote the number of conjugacy\u2026"
 classification:
   areas:
   - algebra

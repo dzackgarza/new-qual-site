@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4RXD2
 kind: problem
-title: "Let"
+title: "Let $f_{n}(x) = a e^{-n a x} - b e^{-n b x} \\quad \\text{ where } 0 < a < b$ Show that $\\sum_{n=1}^{\\infty} \\left|f_{n}\\right|$ is not in $L^{1}([0, \\infty), m)$"
 classification:
   areas:
   - real-analysis

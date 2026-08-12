@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AG7QC
 kind: problem
-title: "Prove that the distinct complex numbers $z_1, z_2, z_3$ are the vertic\u2026"
+title: "Prove that the distinct complex numbers $z_1, z_2, z_3$ are the vertices of\u2026"
 classification:
   areas:
   - complex-analysis

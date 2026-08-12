@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ARJT3
 kind: exercise
-title: "- What is a **separable** space?"
+title: "What is a separable space?"
 classification:
   areas:
   - topology
@@ -10,4 +10,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - What is a **separable** space?

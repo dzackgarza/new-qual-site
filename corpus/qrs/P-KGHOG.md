@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KGHOG
 kind: problem
-title: "Suppose that $f: \\RR\\to\\RR$ is a continuous function that vanishes out\u2026"
+title: "Suppose that $f: \\RR\\to\\RR$ is a continuous function that vanishes outside\u2026"
 classification:
   areas:
   - complex-analysis

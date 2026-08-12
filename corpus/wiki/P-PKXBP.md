@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PKXBP
 kind: problem
-title: "Let $G$ be a finite group whose order is divisible by a prime number $\u2026"
+title: "Let $G$ be a finite group whose order is divisible by a prime\u2026"
 classification:
   areas:
   - algebra

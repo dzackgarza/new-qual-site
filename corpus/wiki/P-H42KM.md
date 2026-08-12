@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-H42KM
 kind: problem
-title: "For $f:X\\to Y$, the *mapping cone* of $f$ is defined as"
+title: "For $f:X\\to Y$, the mapping cone of $f$ is defined as $C_f \\definedas \\qty{X\\cross I} \\disjoint Y/\\sim \\\\ (x, 0) \\sim (x', 0) \\quad \\text{for all }x, x'\\in X\\\\ (x, 1) \\sim f(x)$"
 classification:
   areas:
   - topology

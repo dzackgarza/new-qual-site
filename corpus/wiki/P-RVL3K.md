@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RVL3K
 kind: problem
-title: "- Show that if $E\\subseteq \\RR^n$ is measurable with $\\mu(E) < \\infty$\u2026"
+title: "Show that if $E\\subseteq \\RR^n$ is measurable with $\\mu(E) < \\infty$ and $f\\in L^p(X)$ then $\\norm{f}_{L^p(X)} \\converges{p\\to\\infty}\\to \\norm{f}_\\infty$ Is it true that\u2026"
 classification:
   areas:
   - real-analysis

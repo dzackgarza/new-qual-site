@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5CM5W
 kind: problem
-title: "Prove that if \\( E \\subseteq \\RR^n \\) is a Lebesgue measurable set, th\u2026"
+title: "Prove that if \\( E \\subseteq \\RR^n \\) is a Lebesgue measurable set, then for any \\( h \\in \\RR \\)\u2026"
 classification:
   areas:
   - real-analysis

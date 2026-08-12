@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RHNMI
 kind: problem
-title: "Let"
+title: "Let $f_{n}(x):=\\frac{x}{1+x^{n}}, \\quad x \\geq 0$ Show that this sequence converges pointwise and find\u2026"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HOIQ3
 kind: problem
-title: "Let X be a noncompact locally compact Hausdorff space, with topology $\u2026"
+title: "Let X be a noncompact locally compact Hausdorff space, with\u2026"
 classification:
   areas:
   - topology

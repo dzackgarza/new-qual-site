@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BV7DD
 kind: problem
-title: (1) Let $p(z)$ be a polynomial, $R>0$ any positive number, and
+title: "Let $p(z)$ be a polynomial, $R>0$ any positive number, and $m \\geq 1$ an integer.\u2026"
 classification:
   areas:
   - complex-analysis

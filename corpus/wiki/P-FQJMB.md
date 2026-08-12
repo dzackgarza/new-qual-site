@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FQJMB
 kind: problem
-title: "Define"
+title: "Define $E(z)=e^{x}(\\cos y+i \\sin y)$ Show that $E(z)$ is the unique function analytic on $\\mathbb{C}$ that\u2026"
 classification:
   areas:
   - complex-analysis

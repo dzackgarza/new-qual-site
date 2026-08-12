@@ -39,6 +39,7 @@ from pathlib import Path
 from typing import TypedDict
 
 import yaml
+from card_titles import title_of
 from import_mmaq import _source_bytes, loose, normalize
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -386,15 +387,6 @@ CARD_KINDS = {
 def opaque(prefix: str, statement: str) -> str:
     digest = hashlib.sha1(statement.encode("utf-8")).digest()
     return prefix + base64.b32encode(digest).decode("ascii").rstrip("=")[:8]
-
-
-def title_of(statement: str) -> str:
-    first = next((line.strip() for line in statement.splitlines() if line.strip()), "")
-    first = re.sub(r"^(?:[-*+]\s+|\d+[.)]\s+|i+\.\s+)", "", first)
-    first = re.sub(r"\s+", " ", first).strip()
-    if len(first) > 72:
-        first = first[:69].rsplit(" ", 1)[0].rstrip() + "…"
-    return first or "Authored qualifying-exam statement"
 
 
 def card(meta: dict, kind: str, body: str) -> str:

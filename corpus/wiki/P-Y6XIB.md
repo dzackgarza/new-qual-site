@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y6XIB
 kind: problem
-title: "Let $F$ be a field. Let $f(x)$ be an irreducible polynomial in $F[x]$\u2026"
+title: "Let $F$ be a field. Let $f(x)$ be an irreducible polynomial in $F[x]$ of\u2026"
 classification:
   areas:
   - algebra

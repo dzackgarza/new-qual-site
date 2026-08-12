@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WWJLP32YTK
 kind: problem
-title: Prove or disprove each of the following statements.
+title: "Prove or disprove each of the following statements. If $f : [0, 1] \\to \\mathbb{R}$ is a\u2026"
 classification:
   areas:
   - real-analysis

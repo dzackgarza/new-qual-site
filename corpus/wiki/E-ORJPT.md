@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ORJPT
 kind: exercise
-title: "Show that $\\prod_{n\\in \\ZZ} (1 + a_n) < \\infty$ if $\\ts{a_n} \\in \\ell_\u2026"
+title: "Show that $\\prod_{n\\in \\ZZ} (1 + a_n) < \\infty$ if $\\ts{a_n} \\in \\ell_1(\\ZZ)$."
 classification:
   areas:
   - complex-analysis
@@ -10,8 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that $\prod_{n\in \ZZ} (1 + a_n) < \infty$ if $\ts{a_n} \in \ell_1(\ZZ)$.
-
 :::
-

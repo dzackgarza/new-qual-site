@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZCE6E
 kind: problem
-title: "Let $f$ be a non-negative function on $\\RR^n$ and $\\mathcal A = \\{(x,\u2026"
+title: "Let $f$ be a non-negative function on $\\RR^n$ and $\\mathcal A = \\{(x, t) \u2208 \\RR^n \\times \\RR : 0 \u2264 t \u2264 f (x)\\}$."
 classification:
   areas:
   - real-analysis

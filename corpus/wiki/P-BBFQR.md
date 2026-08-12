@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BBFQR
 kind: problem
-title: "Useful facts:"
+title: "Useful facts: $\\tilde X \\surjects X$ induces $\\pi_1(\\tilde X) \\injects \\pi_1(X)$"
 classification:
   areas:
   - topology

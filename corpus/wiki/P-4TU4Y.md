@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4TU4Y
 kind: problem
-title: "Find all entire functions satisfying"
+title: "Find all entire functions satisfying $\\abs{f(z)} \\leq \\abs{z}^{1\\over 2} \\quad\\text{ for } \\abs{z} > 10$ Since $f$ is entire, take\u2026"
 classification:
   areas:
   - complex-analysis

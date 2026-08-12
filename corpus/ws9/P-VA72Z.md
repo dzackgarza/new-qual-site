@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VA72Z
 kind: problem
-title: a. Provide examples to show that the series $\sum_{n=1}^{\infty} a_n^2…
+title: "Provide examples to show that the series $\\sum_{n=1}^{\\infty} a_n^2$ may or may not\u2026"
 classification:
   areas:
   - prelim

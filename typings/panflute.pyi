@@ -93,6 +93,37 @@ class Link(Inline):
     url: str
     def __init__(self, *args: Inline, url: str = ..., title: str = ...) -> None: ...
 
+class Span(Inline):
+    def __init__(
+        self,
+        *args: Inline,
+        identifier: str = ...,
+        classes: list[str] = ...,
+        attributes: dict[str, str] = ...,
+    ) -> None: ...
+
+class Citation(Element):
+    id: str
+    mode: str
+
+class Cite(Inline):
+    citations: list[Citation]
+    def __init__(self, *args: Inline, citations: list[Citation] = ...) -> None: ...
+
+class Caption(Element):
+    def __init__(self, *args: Block) -> None: ...
+
+class Figure(Block):
+    caption: Caption
+    def __init__(
+        self,
+        *args: Block,
+        caption: Caption = ...,
+        identifier: str = ...,
+        classes: list[str] = ...,
+        attributes: dict[str, str] = ...,
+    ) -> None: ...
+
 class RawBlock(Block):
     def __init__(self, text: str, format: str = ...) -> None: ...
 

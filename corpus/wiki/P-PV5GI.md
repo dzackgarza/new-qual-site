@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PV5GI
 kind: problem
-title: "3. $\\displaystyle \\int \\frac {\\sqrt {1 + \\ln (x)}}{x \\ln (x)} ~dx = \\c\u2026"
+title: "$\\displaystyle \\int \\frac {\\sqrt {1 + \\ln (x)}}{x \\ln (x)} ~dx = \\color {blue} {2 \\sqrt {1 + \\ln (x)} + \\ln (\\sqrt {1 + \\ln (x)} - 1) - \\ln (\\sqrt {1 + \\ln (x)} + 1)}$ Solution: $u = \\sqrt {1 + \\ln (x)}$\u2026"
 classification:
   areas:
   - prelim

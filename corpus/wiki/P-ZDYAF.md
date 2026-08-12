@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZDYAF
 kind: problem
-title: "Let"
+title: "Let $M &= \\{(w, x, y, z) \\in \\ZZ^4 \\suchthat w + x + y + z \\in 2\\ZZ\\} \\\\ N &= \\ts{ (w, x, y, z) \\in \\ZZ^4 \\suchthat 4\\divides (w - x),~ 4\\divides (x - y),~ 4\\divides ( y - z) }$ Show that $N$ is a $\\ZZ\\dash$submodule of\u2026"
 classification:
   areas:
   - algebra

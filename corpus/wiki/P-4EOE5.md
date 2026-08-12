@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4EOE5
 kind: problem
-title: "- $\\star$: Show that for $E\\subseteq \\RR^n$, TFAE:"
+title: "$\\star$: Show that for $E\\subseteq \\RR^n$, TFAE: $E$ is measurable $E = H\\union Z$ here $H$ is $F_\\sigma$ and $Z$ is\u2026"
 classification:
   areas:
   - real-analysis

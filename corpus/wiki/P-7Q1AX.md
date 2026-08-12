@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7Q1AX
 kind: problem
-title: '**Lemma:**'
+title: "Lemma: If $x \\divides n$ and $x\\divides m$ then $x\\divides \\gcd(m, n)$"
 classification:
   areas:
   - algebra

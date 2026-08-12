@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PYCCN
 kind: problem
-title: "Find a conformal map from $\\theset{\\abs{z-1} < 2} \\intersect \\theset{\\\u2026"
+title: "Find a conformal map from $\\theset{\\abs{z-1} < 2} \\intersect \\theset{\\abs{z+1} < 2}$ to $\\HH$."
 classification:
   areas:
   - complex-analysis
@@ -10,5 +10,5 @@ classification:
 relations: []
 review: draft
 ---
-Find a conformal  map from $\theset{\abs{z-1} < 2} \intersect \theset{\abs{z+1} < 2}$ to $\HH$.
 
+Find a conformal  map from $\theset{\abs{z-1} < 2} \intersect \theset{\abs{z+1} < 2}$ to $\HH$.

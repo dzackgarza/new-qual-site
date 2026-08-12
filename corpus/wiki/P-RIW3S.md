@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RIW3S
 kind: problem
-title: "Let $S^1$ denote the unit circle in $C$, $X$ be any topological space,\u2026"
+title: "Let $S^1$ denote the unit circle in $C$, $X$ be any topological space\u2026"
 classification:
   areas:
   - topology

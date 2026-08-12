@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-YO6NZ
 kind: definition
-title: "Connected"
+title: "Connected: A space $X$ is disconnected iff There exists a separation of $X$\u2026"
 classification:
   areas:
   - topology

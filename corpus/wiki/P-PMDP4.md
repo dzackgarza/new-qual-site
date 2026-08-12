@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PMDP4
 kind: problem
-title: "Prove that if $xf(x) \\in L^1(\\RR)$, then"
+title: "Prove that if $xf(x) \\in L^1(\\RR)$, then $F(y) \\da \\int f(x) \\cos(yx)\\, dx$ defines a $C^1$ function. Fix $y_0$, we'll\u2026"
 classification:
   areas:
   - real-analysis

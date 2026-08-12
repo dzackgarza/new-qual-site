@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BPSOU
 kind: exercise
-title: "Show that if $f$ is entire and $\\abs{f(z)} \\in \\bigo(\\abs{z}^p)$ for $\u2026"
+title: "Show that if $f$ is entire and $\\abs{f(z)} \\in \\bigo(\\abs{z}^p)$ for $\\abs{z}$ sufficiently large, then $f$\u2026"
 classification:
   areas:
   - complex-analysis

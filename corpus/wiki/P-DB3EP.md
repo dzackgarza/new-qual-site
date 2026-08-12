@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DB3EP
 kind: problem
-title: "$\\impliedby$: Suppose that $A\\vector x = \\vector b$ has a solution $\\\u2026"
+title: "$\\impliedby$: Suppose that $A\\vector x = \\vector b$ has a solution $\\vector x$."
 classification:
   areas:
   - algebra

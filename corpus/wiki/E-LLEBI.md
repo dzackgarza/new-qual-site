@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-LLEBI
 kind: problem
-title: Let $f$ be a non-constant analytic function on $\mathbb D$ with $f(\ma…
+title: "Let $f$ be a non-constant analytic function on $\\mathbb D$ with $f(\\mathbb D) \\subseteq \\mathbb D$."
 classification:
   areas:
   - complex-analysis

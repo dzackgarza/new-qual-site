@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-2LKTOV7NE6
 kind: problem
-title: Define
+title: "Define $f(x) = \\sum_{n=1}^{\\infty} \\frac{1}{n^{x}}$ Show that $f$ converges to a differentiable function on\u2026"
 classification:
   areas:
   - real-analysis

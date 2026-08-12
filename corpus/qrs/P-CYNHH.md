@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CYNHH
 kind: problem
-title: "Find the Laurent expansions about $z=0$ of the following functions:"
+title: "Find the Laurent expansions about $z=0$ of the following\u2026"
 classification:
   areas:
   - complex-analysis

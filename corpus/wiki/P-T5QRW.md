@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T5QRW
 kind: problem
-title: "What is the definition of a **regular** (or Galois) covering space?"
+title: "What is the definition of a regular (or Galois) covering\u2026"
 classification:
   areas:
   - topology

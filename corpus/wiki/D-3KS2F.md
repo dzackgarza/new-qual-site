@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-3KS2F
 kind: definition
-title: "Boundary"
+title: "Boundary: The boundary of a subset $A\\subseteq X$ is defined as $\\bd A \\da \\cl_X(A) \\sm \\interior{A}$."
 classification:
   areas:
   - topology

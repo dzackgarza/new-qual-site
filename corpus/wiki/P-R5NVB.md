@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R5NVB
 kind: problem
-title: Let
+title: "Let $A=\\left[\\begin{array}{ccc} 2 & 0 & 0 \\\\ 4 & 6 & 1 \\\\ -16 & -16 & -2 \\end{array}\\right] \\in M_{3}(\\mathrm{C})$ Find the Jordan canonical form $J$ of $A$."
 classification:
   areas:
   - algebra

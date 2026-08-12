@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WL7TG
 kind: problem
-title: "Let"
+title: "Let $M=\\left(\\begin{array}{ll}{a} & {b} \\\\ {c} & {d}\\end{array}\\right) \\quad \\text{and} \\quad N=\\left(\\begin{array}{cc}{x} & {u} \\\\ {-y} & {-v}\\end{array}\\right)$ over a commutative ring $R$, where $b$ and $x$ are units\u2026"
 classification:
   areas:
   - algebra

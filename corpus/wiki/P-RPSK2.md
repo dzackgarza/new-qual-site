@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RPSK2
 kind: problem
-title: "1. Parts"
+title: "Parts We have $\\int_C F_1 dx + F_2 dy + \\cdots = \\int _ { C } \\vec { F } \\cdot d \\vec { r } = \\int _ { a } ^ { b } \\vec { F } ( \\vec { r } ( t ) ) \\cdot \\vec { r } ^ { \\prime } ( t ) d t$ and we can paramaterize a line\u2026"
 classification:
   areas:
   - prelim

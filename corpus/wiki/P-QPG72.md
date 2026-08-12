@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QPG72
 kind: problem
-title: "How many path-connected 2-fold covering spaces does $S^1 \\vee \\RP 2$ h\u2026"
+title: "How many path-connected 2-fold covering spaces does $S^1 \\vee \\RP 2$ have?\u2026"
 classification:
   areas:
   - topology
@@ -10,7 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-How many path-connected 2-fold covering spaces does $S^1 \vee \RP 2$ have? What are the total spaces?
+
+How many path-connected 2-fold covering spaces does $S^1 \vee \RP 2$ have?
+What are the total spaces?
 
 **Solution**:
 

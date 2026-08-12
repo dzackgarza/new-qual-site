@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VPPPN
 kind: problem
-title: "State the **Mayer-Vietoris theorem**."
+title: "State the Mayer-Vietoris theorem."
 classification:
   areas:
   - topology

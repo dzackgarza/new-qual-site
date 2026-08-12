@@ -8,6 +8,7 @@ Unknown metadata fields are rejected, so a typo fails the build.
 from __future__ import annotations
 
 import io
+import re
 from collections.abc import Callable
 from pathlib import Path
 from typing import Annotated, Literal, cast
@@ -384,6 +385,33 @@ def from_ast(ast: str) -> pf.Doc:
     return document
 
 
+def to_json(document: pf.Doc) -> str:
+    stream = io.StringIO()
+    dumper = cast(Callable[[pf.Doc, io.StringIO], None], vars(pf)["dump"])
+    dumper(document, stream)
+    return stream.getvalue()
+
+
+# A caption ending in an image suffix is the figure's own file path. Pandoc's
+# implicit-figure syntax makes the caption out of the alt text, and the authored
+# vault wrote the path there, so 93 figures across 22 pages were captioned
+# `_attachments/Pasted image 20211031235625.png`.
+FILE_CAPTION = re.compile(r"\.(png|jpe?g|gif|svg|webp|pdf)$", re.I)
+
+
+def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
+    """Take the caption off a figure captioned with its own filename.
+
+    The `alt` text is left as it stands. It is not displayed, and it is the last
+    pointer from the rendered page back to the file in the vault; a caption a
+    reader can use has to be written, and writing one here would invent it.
+    """
+    del doc
+    if isinstance(element, pf.Figure) and FILE_CAPTION.search(pf.stringify(element.caption).strip()):
+        element.caption = pf.Caption()
+    return element
+
+
 def split_front_matter(text: str, path: Path) -> tuple[dict, str]:
     if not text.startswith("---\n"):
         raise ValueError(f"{path}: card must start with YAML front matter")
@@ -470,12 +498,13 @@ def parse_cards_with(
             errors.append(Diagnostic("reader-warning", str(path), "; ".join(warnings)))
             continue
         try:
+            document = from_ast(result.output).walk(drop_path_captions)
             parsed.append(
                 ParsedCard(
                     card=card,
-                    ast=result.output,
+                    ast=to_json(document),
                     source_path=str(path),
-                    sections=extract_sections(from_ast(result.output)),
+                    sections=extract_sections(document),
                 )
             )
         except UnmappedDivClass as exc:

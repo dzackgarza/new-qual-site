@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-2GCTV
 kind: definition
-title: "Bounded"
+title: "Bounded: A set $S$ in a metric space $(X, d)$ is bounded iff there exists an $m\\in \\RR$\u2026"
 classification:
   areas:
   - topology

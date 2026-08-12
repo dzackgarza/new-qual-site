@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4KTFN
 kind: problem
-title: "For this problem, consider just Lebesgue measurable functions $f : [0,…"
+title: "For this problem, consider just Lebesgue measurable\u2026"
 classification:
   areas:
   - real-analysis
@@ -11,7 +11,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 For this problem, consider just Lebesgue measurable functions $f : [0,1] \to \mathbb{R}$, together with the Lebesgue measure.
 
 a. State Fatou's lemma (no proof required).

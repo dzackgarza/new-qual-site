@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-X6B3FWHG
 kind: problem
-title: 'Given: $|G| < \infty$'
+title: "Given: $|G| < \\infty$ Show $\\Phi(G)~\\text{char}~ G$ Show $\\Phi(G)$ is nilpotent Given: $|P| = p^e$"
 classification:
   areas:
   - algebra

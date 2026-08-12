@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6QCZ5
 kind: problem
-title: "a. Prove that if $f, g: \\RR^n\\to \\CC$ is both measurable then $F(x, y)\u2026"
+title: "Prove that if $f, g: \\RR^n\\to \\CC$ is both measurable then $F(x, y) \\definedas f(x)$ and $h(x, y)\\definedas f(x-y) g(y)$ is measurable on $\\RR^n\\cross \\RR^n$."
 classification:
   areas:
   - real-analysis

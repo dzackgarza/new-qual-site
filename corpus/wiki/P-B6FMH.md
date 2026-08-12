@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B6FMH
 kind: problem
-title: "13. $\\displaystyle \\int_{0}^{1} \\frac {1}{\\sqrt {x(1-x)}} ~dx = 2 \\sin\u2026"
+title: "$\\displaystyle \\int_{0}^{1} \\frac {1}{\\sqrt {x(1-x)}} ~dx = 2 \\sin ^{-1} (\\sqrt {x}) |_{0}^{1} = \\color {blue} {\\pi}$ Solution: $u = \\sqrt {x}$, $du = \\frac {1}{2 \\sqrt {x}} ~dx$ Solution\u2026"
 classification:
   areas:
   - prelim

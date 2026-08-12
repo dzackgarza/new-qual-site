@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-URPZ4
 kind: problem
-title: "Find the number of solutions to the following equation on $\\abs{z} < 1\u2026"
+title: "Find the number of solutions to the following equation on $\\abs{z} < 1$: $6z^3 + 1 = -e^z$"
 classification:
   areas:
   - complex-analysis

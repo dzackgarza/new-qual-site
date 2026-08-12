@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMC34
 kind: problem
-title: "Find all entire functions that satisfy"
+title: "Find all entire functions that satisfy $\\abs{f(z)} \\geq \\abs{z} \\quad \\forall z\\in \\CC$ Prove this list is\u2026"
 classification:
   areas:
   - complex-analysis

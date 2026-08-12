@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FS-5FKPD
 kind: strategy
-title: 'Showing uniform convergence of a *series* of functions'
+title: "Showing uniform convergence of a series of functions"
 classification:
   areas:
   - real-analysis

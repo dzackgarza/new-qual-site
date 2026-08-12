@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5KZDX
 kind: problem
-title: "Definition: A field $F$ is *perfect* if every irreducible polynomial \u2026"
+title: "Definition: A field $F$ is perfect if every irreducible\u2026"
 classification:
   areas:
   - algebra

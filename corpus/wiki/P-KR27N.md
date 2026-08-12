@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KR27N
 kind: problem
-title: Let $f(x) = x^4 - 5 \in \QQ[x]$.
+title: "Let $f(x) = x^4 - 5 \\in \\QQ[x]$. Compute the Galois group of $f$ over $\\QQ$."
 classification:
   areas:
   - algebra

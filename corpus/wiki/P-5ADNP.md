@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5ADNP
 kind: problem
-title: "Fall 2011"
+title: "Fall 2011: Let $X$ be a topological space, and $B \\subset A \\subset X$. Equip $A$ with the subspace\u2026"
 classification:
   areas:
   - topology

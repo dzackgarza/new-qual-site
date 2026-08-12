@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-36DLV
 kind: problem
-title: "Suppose $f$ is entire and there exist $A, R >0$ and natural number"
+title: "Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such\u2026"
 classification:
   areas:
   - complex-analysis
@@ -10,10 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-Suppose $f$ is entire and there exist $A, R >0$ and natural number
-$N$ such that $$|f(z)| \geq A |z|^N\ \text{for}\ |z| \geq R.$$ Show
-that
+
+Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such that $$|f(z)| \geq A |z|^N\ \text{for}\ |z| \geq R.$$ Show that
 
 1. $f$ is a polynomial and
-2. the degree of $f$ is at least $N$.
 
+2. the degree of $f$ is at least $N$.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SK4KT
 kind: problem
-title: "1. Since $A$ is $2\\times 2$ and has 2 eigenvalues, noting that $\\deg \\\u2026"
+title: "Since $A$ is $2\\times 2$ and has 2 eigenvalues, noting that $\\deg \\chi_A(x) = 2$, we have $\\chi_A(x) = (x-1)(x+1) = x^2 -1$."
 classification:
   areas:
   - prelim

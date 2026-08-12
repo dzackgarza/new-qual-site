@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3MDGM
 kind: problem
-title: "3. $\\displaystyle \\int \\frac {\\sec^3(x) + e^{\\sin(x)}}{\\sec(x)} ~dx =\u2026"
+title: "$\\displaystyle \\int \\frac {\\sec^3(x) + e^{\\sin(x)}}{\\sec(x)} ~dx = \\color {blue} {\\tan(x) + e^{\\sin(x)}}$ Solution: $\\frac {\\sec ^3 (x) + e^{\\sin(x)}}{\\sec(x)} = \\sec ^2 (x) + \\cos (x) \\cdot e^{\\sin(x)}$ Used 2018\u2026"
 classification:
   areas:
   - prelim

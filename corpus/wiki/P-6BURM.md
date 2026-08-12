@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6BURM
 kind: problem
-title: "Let $n\\in \\ZZ^{\\geq 0}$ and show that the equation"
+title: "Let $n\\in \\ZZ^{\\geq 0}$ and show that the equation $e^z = az^n$ has $n$ solutions in the open\u2026"
 classification:
   areas:
   - complex-analysis

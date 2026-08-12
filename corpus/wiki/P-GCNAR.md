@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GCNAR
 kind: problem
-title: "Consider the following matrix as a linear transformation from $V\\defi\u2026"
+title: "Consider the following matrix as a linear transformation\u2026"
 classification:
   areas:
   - algebra

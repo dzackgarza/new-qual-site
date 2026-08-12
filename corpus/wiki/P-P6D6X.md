@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P6D6X
 kind: problem
-title: "Suppose that"
+title: "Suppose that $f_n, f \\in L^1$, $f_n \\to f$ almost everywhere, and $\\int\\left|f_{n}\\right| \\rightarrow \\int|f|$."
 classification:
   areas:
   - real-analysis

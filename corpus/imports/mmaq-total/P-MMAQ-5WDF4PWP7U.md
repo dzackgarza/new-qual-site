@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5WDF4PWP7U
 kind: problem
-title: Let $f, g \in L^1([0, 1])$ and for all $x\in [0, 1]$ define
+title: "Let $f, g \\in L^1([0, 1])$ and for all $x\\in [0, 1]$ define $F(x):=\\int_{0}^{x} f(y) d y \\quad \\text { and } \\quad G(x):=\\int_{0}^{x} g(y) d y$"
 classification:
   areas:
   - real-analysis

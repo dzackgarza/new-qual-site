@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-DIHC4KCK
 kind: problem
-title: Let $\{f_k\}$ be any sequence of functions in $L^2([0, 1])$…
+title: "Let $\\{f_k\\}$ be any sequence of functions in $L^2([0, 1])$ satisfying $\\norm{f_k}_2 \\leq M$ for all $k \u2208 \\NN$."
 classification:
   areas:
   - real-analysis

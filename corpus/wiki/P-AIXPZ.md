@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AIXPZ
 kind: problem
-title: "Let $A$ be a square matrix over the complex numbers."
+title: "Let $A$ be a square matrix over the complex numbers. Suppose\u2026"
 classification:
   areas:
   - algebra

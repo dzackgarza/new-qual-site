@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCA6D
 kind: problem
-title: "Can there be a function $f:I\\to \\RR$ that is continuous on $\\QQ$ and d\u2026"
+title: "Can there be a function $f:I\\to \\RR$ that is continuous on $\\QQ$ and\u2026"
 classification:
   areas:
   - real-analysis
@@ -10,10 +10,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Can there be a function $f:I\to \RR$ that is continuous on $\QQ$ and discontinuous otherwise?
 :::
 
-:::{.solution}
+::: {.solution}
 ![](../../assets/20_Real_Analysis/figures/2021-10-29_18-23-37.png)
 :::

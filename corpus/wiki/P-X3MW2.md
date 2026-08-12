@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-X3MW2
 kind: problem
-title: "Let $\\{u_n\\}_{n=1}^\u221e$ be an orthonormal sequence in a Hilbert space $\\\u2026"
+title: "Let $\\{u_n\\}_{n=1}^\u221e$ be an orthonormal sequence in a Hilbert space $\\mathcal{H}$."
 classification:
   areas:
   - real-analysis

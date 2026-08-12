@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-YQUHR
 kind: corollary
-title: "If $f$ is nonzero on $\\Omega$, then $f$ attains a minimum on $\\bd \\Ome\u2026"
+title: "If $f$ is nonzero on $\\Omega$, then $f$ attains a minimum on $\\bd \\Omega$."
 classification:
   areas:
   - complex-analysis

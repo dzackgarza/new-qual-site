@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-UI7ZL
 kind: definition
-title: "Closed Sets"
+title: "Closed Sets: A set $U \\subseteq X$ is closed in $X$ if and only if its complement $X\\sm U$ is open."
 classification:
   areas:
   - topology
