@@ -2333,3 +2333,5 @@
 {"repo":"qual-wiki","path":"40_Topology/600_UGA_Qual_Questions/figures/spheres_and_balls.pdf","disposition":"migrated","target":"assets/40_Topology/figures/spheres_and_balls.pdf","evidence":"sha1 2df441c72602 in assets/40_Topology/figures/spheres_and_balls.pdf"}
 {"repo":"qual-wiki","path":"40_Topology/600_UGA_Qual_Questions/figures/spheres_and_balls.svg","disposition":"migrated","target":"assets/40_Topology/figures/spheres_and_balls.svg","evidence":"sha1 6661213f1bfb in assets/40_Topology/figures/spheres_and_balls.svg"}
 {"repo":"qual-wiki","path":"40_Topology/600_UGA_Qual_Questions/figures/tree_cover.png","disposition":"migrated","target":"assets/40_Topology/figures/tree_cover.png","evidence":"sha1 5b382e4efc44 in assets/40_Topology/figures/tree_cover.png"}
+{"repo": "qual-wiki", "path": "README.md", "disposition": "dropped", "reason": "archive forwarding pointer written by new-qual-site after migration; not source content"}
+{"repo": "Analysis-Qual-Compendium", "path": "README.md", "disposition": "dropped", "reason": "archive forwarding pointer written by new-qual-site after migration; not source content"}
