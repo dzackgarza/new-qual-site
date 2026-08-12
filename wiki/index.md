@@ -10,21 +10,17 @@
 Try some #resources/problem_collections, or help me with unsolved ones:
 
 - Algebra
-	- 
 	- [[50_Solutions_Algebra]]
 	- [[00_Solutions|Ring Theory Solutions]]
 	- [[10_Algebra/500_Exercises/9960 UGA Problems|UGA Algebra Course PSets]]
 
 - Real Analysis
-	- 
 	- [[20_Real_Analysis/000_Resources/20_Solutions|Real Analysis Solutions]]
 
 - Complex Analysis
-	- 
 	- [[30_Complex_Analysis/000_Resources/20_Solutions|Complex Analysis Solutions]]
 
 - Topology
-	- 
 	- [[30_Solutions|Topology Solutions]]
 
 Read some #resources/solutions 
