@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import shutil
 import subprocess
 import sys
@@ -98,14 +99,44 @@ def test_check_rejects_missing_or_ambiguous_page_references(
     assert diagnostic_codes(work) == [code]
 
 
+def test_a_citation_names_the_book_rather_than_its_key(tmp_path: Path) -> None:
+    """Pandoc reads `[@key]` as a citation and leaves the key as the element's
+    own text, so with no CSL step the reader is shown `[@dummit_foote_2004]`.
+    The registry knows what that key cites; the page says so."""
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "index.md").write_text("# Fixture index\n\nReferences: [@dummit_foote_2004], [@smith].\n")
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    # Pandoc's HTML writer wraps its output, so a name can straddle two lines.
+    page = re.sub(r"\s+", " ", (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
+    assert "Dummit and Foote, Abstract Algebra" in page
+    assert "Smith, Algebra Course Notes" in page
+    assert "@dummit_foote_2004" not in page
+
+    records = json.loads((work / "build" / "quarto" / "_site" / "search.json").read_text())
+    index = next(record for record in records if record["url"] == "wiki/index.html")
+    assert "dummit and foote" in index["search"]
+
+
+def test_check_rejects_a_citation_no_textbook_claims(tmp_path: Path) -> None:
+    """A key the registry does not know would reach the page as itself."""
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "index.md").write_text("# Fixture index\n\nSee [@bourbaki_1970].\n")
+    for path in (work / "wiki").rglob("*.md"):
+        if path.name != "index.md":
+            path.unlink()
+
+    assert diagnostic_codes(work) == ["unknown-citation"]
+
+
 def test_a_figure_captioned_with_its_own_filename_loses_the_caption(tmp_path: Path) -> None:
     """Pandoc's implicit-figure syntax makes the caption out of the alt text, and
     the authored vault wrote the attachment path there. A written caption is a
     caption and stays; a path is the file's name and is not one."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text(
-        "# Fixture index\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n"
-    )
+    (work / "wiki" / "index.md").write_text("# Fixture index\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n")
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
