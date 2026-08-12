@@ -38,7 +38,7 @@ query sql: build
 import:
     uv run python tools/import_mmaq.py --root .
 
-# Refresh the MathJax macro set from pandoc-config
+# Refresh the MathJax macro set from the author's pandoc preamble
 macros:
     uv run python tools/sync_macros.py
 
