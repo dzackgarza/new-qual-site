@@ -1,0 +1,191 @@
+schema: qual/publication@2
+id: GUIDE-COMPLEX-ANALYSIS
+kind: study-guide
+title: Complex Analysis
+lede: >-
+  Follow one dependency-ordered path from the definition of a complex derivative to the
+  theorems that only holomorphic functions satisfy: what contour integration proves about a
+  function on the inside of a curve, how that forces the local shape of zeros and poles, what
+  those poles compute, and which domains a holomorphic bijection can carry onto a disc.
+sections:
+  - slug: holomorphy-and-analyticity
+    title: Holomorphy and Analyticity
+    parent: GUIDE-COMPLEX-ANALYSIS
+    lede: >-
+      Start with the complex derivative as a limit that must agree from every direction. That
+      single requirement is the whole subject in compressed form: approaching along the real
+      and imaginary axes and equating the two answers produces the Cauchy-Riemann equations,
+      which say that the delbar derivative vanishes and that the real and imaginary parts are
+      harmonic. The section closes by naming the other candidate definition, analyticity, and
+      recording the one direction that needs no integration: a convergent power series is
+      smooth on its disc, so analytic implies holomorphic. The converse is the debt the next
+      section pays.
+    items:
+      - ref: D-E7A5W
+      - ref: PR-37QA5
+      - ref: PR-JKE6C
+      - ref: D-Z5BD2
+      - ref: PR-TVPCM
+      - ref: D-G4ITR
+      - ref: PR-K57J6
+      - ref: D-V6UQJ
+      - ref: PR-QNDSD
+  - slug: cauchy-theory
+    title: Cauchy Theory
+    parent: holomorphy-and-analyticity
+    lede: >-
+      Integration is what converts the pointwise derivative condition into global information.
+      Cauchy-Goursat says a holomorphic function integrates to zero around any closed path in a
+      simply connected region, and the Cauchy integral formula turns that vanishing into a
+      reproducing formula: the values on a circle determine the value and every derivative at
+      the center. Expanding the kernel in a geometric series proves the converse owed above,
+      that holomorphic functions are analytic with coefficients read off the circle. Everything
+      after is a consequence of that formula. Bounding the integrand gives Cauchy's estimate,
+      which gives Liouville. Averaging gives the mean value property, which gives the maximum
+      modulus principle. Reading the coefficient formula backwards gives the identity theorem,
+      and Morera reverses the whole implication by promoting vanishing triangle integrals back
+      to holomorphy.
+    items:
+      - ref: D-6DAXB
+      - ref: T-2OVCI
+      - ref: T-6DEUH
+      - ref: T-GROTS
+      - ref: T-M332P
+      - ref: T-QHIHJ
+      - ref: T-5BLYU
+      - ref: T-BYNL5
+      - ref: T-SVF2W
+      - ref: T-LHSMY
+  - slug: zeros-and-singularities
+    title: Zeros and Singularities
+    parent: cauchy-theory
+    lede: >-
+      The power series expansion from the last section is a local normal form, and this section
+      reads it off. A nonzero function's zero has a finite order because some coefficient is
+      the first nonzero one, so zeros factor as a power times a nonvanishing function and are
+      therefore isolated. Allowing negative powers classifies an isolated singularity by its
+      principal part: none makes it removable, which Riemann's theorem shows is detected by
+      mere boundedness; finitely many makes it a pole, whose leading coefficient is the
+      residue; infinitely many makes it essential, where Casorati-Weierstrass shows the image
+      of every punctured neighborhood is dense. Meromorphic means the only singularities are
+      poles, which is the hypothesis the next two sections run on.
+    items:
+      - ref: PR-5A64G
+      - ref: PR-EWOP5
+      - ref: D-IWIA5
+      - ref: D-TUAYD
+      - ref: T-ZZJDP
+      - ref: D-AUD6K
+      - ref: D-C3JIU
+      - ref: D-VKP6N
+      - ref: T-EO65T
+      - ref: D-7DFVJ
+      - query:
+          kind: problem
+          topics:
+            - meromorphic-functions
+          limit: 5
+          review:
+            mode: any
+  - slug: argument-principle
+    title: The Argument Principle
+    parent: zeros-and-singularities
+    lede: >-
+      Zeros and poles now have orders, so they can be counted. The logarithmic derivative is
+      the device that does it: it converts a zero or pole of any order into a simple pole whose
+      residue is that order with sign, so a single contour integral returns the number of zeros
+      minus the number of poles inside. Reading the same integral as a winding number of the
+      image curve gives the index form, and the index form gives Rouche, since a dominated
+      perturbation cannot change the winding number. Applying the count to the equation
+      f(z) = w for w near a value already attained shows every nonconstant holomorphic map is
+      open, and openness is a second and sharper proof of the modulus principles: no interior
+      point can maximize the modulus, and applying that to a reciprocal handles the minimum.
+    items:
+      - ref: D-IA5FS
+      - ref: D-QEVVE
+      - ref: T-VCX3Y
+      - ref: T-EBAOE
+      - ref: T-5JNUU
+      - ref: C-FRF33
+      - ref: T-YLI6Y
+  - slug: residues
+    title: Residues and Contour Integration
+    parent: argument-principle
+    lede: >-
+      The argument principle was one instance of a general fact: only the coefficient of the
+      inverse first power survives integration around a pole. The residue theorem states it in
+      full, weighting each residue by the winding number of the contour. What remains is
+      arithmetic and estimation. The residue at a pole of order n is a limit of a derivative of
+      the function with the pole cleared, which specializes to a quotient rule when the pole
+      comes from a simple zero of a denominator. To evaluate a real integral one closes the
+      contour and discards the added arc, and that is what the ML bound and Jordan's lemma are
+      for: the first bounds any contour integral by supremum times length, the second supplies
+      the decay an oscillatory factor needs on a large semicircle. Indented arcs at a simple
+      pole contribute a fraction of the residue proportional to the angle, and the residue at
+      infinity closes off the count when all finite poles are enclosed.
+    items:
+      - ref: T-VE5MW
+      - ref: T-ESKLY
+      - ref: C-ZTEH7
+      - ref: PR-ZCMJQ
+      - ref: T-ZO5UU
+      - ref: T-SSNLT
+      - ref: T-WFXQP
+      - query:
+          kind: problem
+          topics:
+            - residues
+          limit: 5
+          review:
+            mode: any
+  - slug: conformal-maps-and-the-disc
+    title: Conformal Maps and the Disc
+    parent: residues
+    lede: >-
+      Openness and the local factorization of zeros say when a holomorphic map is locally
+      injective: exactly where the derivative does not vanish, which is the definition of
+      conformal, and injectivity then makes the inverse holomorphic for free. So the question
+      becomes which domains are biholomorphic. Mobius transformations answer it for the model
+      domains, since a cross-ratio construction sends any three points to any other three and
+      the Cayley transform identifies the half-plane with the disc. For the disc itself the
+      Schwarz lemma is the constraint: a self-map fixing the origin cannot expand, and equality
+      anywhere forces a rotation. Composing with the Blaschke factors, which are the involutions
+      moving a chosen point to the origin, removes the fixing hypothesis and pins down the
+      automorphism group exactly.
+    items:
+      - ref: D-PCDNH
+      - ref: C-FVT4V
+      - ref: D-FRVBV
+      - ref: PR-74KHY
+      - ref: T-77SHB
+      - ref: T-2KGOX
+      - ref: D-MFPYG
+      - ref: PR-ULJAJ
+      - ref: T-DAETF
+      - ref: T-W26VL
+  - slug: normal-families-and-omitted-values
+    title: Normal Families and Omitted Values
+    parent: conformal-maps-and-the-disc
+    lede: >-
+      Explicit formulas classify maps between the model domains only. To produce a conformal map
+      onto an arbitrary simply connected domain, one extracts it as a limit, and that requires
+      compactness in a space of holomorphic functions. Morera supplies half of it: a locally
+      uniform limit of holomorphic functions is holomorphic, and the derivatives converge too.
+      Arzela-Ascoli supplies the other half for continuous functions, trading uniform
+      boundedness and equicontinuity for a convergent subsequence. Montel's theorem is the
+      complex-analytic upgrade, and it is where Cauchy's estimate is spent a second time: a
+      locally bounded family of holomorphic functions is automatically equicontinuous, hence
+      normal. That compactness is what lets an extremal argument converge, which is the Riemann
+      mapping theorem. The same normality criterion, applied to families omitting values,
+      strengthens Casorati-Weierstrass from dense image to an image omitting at most one point.
+    items:
+      - ref: D-AIQG3
+      - ref: C-TODSQ
+      - ref: D-PPYCK
+      - ref: D-MBDTR
+      - ref: T-6F3GO
+      - ref: D-IJMPJ
+      - ref: T-4ALS2
+      - ref: T-55MPA
+      - ref: T-HWBWI
+      - ref: T-DDOWW
