@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-NGUQQXN7OS
 kind: occurrence
-title: P-EPUZO at UGA algebra Fall 2019
+title: P-45V3F at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-EPUZO]] appeared at UGA algebra Fall 2019.
+[[P-45V3F]] appeared at UGA algebra Fall 2019.
 :::

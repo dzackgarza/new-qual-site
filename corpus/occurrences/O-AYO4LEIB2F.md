@@ -9,7 +9,7 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-ZZDMX
+  target: P-GVWWY
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2012

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-OQMSGO7DDK
 kind: occurrence
-title: P-R6SXV at UGA algebra Spring 2016
+title: P-G5MEU at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-R6SXV]] appeared at UGA algebra Spring 2016, problem 2.
+[[P-G5MEU]] appeared at UGA algebra Spring 2016, problem 2.
 :::

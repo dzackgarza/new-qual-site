@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: O-23EWNKSXS3
 kind: occurrence
-title: P-ZZDMX at UGA algebra Spring 2012
+title: P-GVWWY at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-ZZDMX
+  target: P-GVWWY
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2012
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-ZZDMX]] appeared at UGA algebra Spring 2012.
+[[P-GVWWY]] appeared at UGA algebra Spring 2012.
 :::

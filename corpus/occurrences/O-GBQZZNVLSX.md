@@ -9,7 +9,7 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-Y6XIB
+  target: P-OS765
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2017

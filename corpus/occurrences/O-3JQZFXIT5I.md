@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-3JQZFXIT5I
 kind: occurrence
-title: P-NTD6V at UGA algebra Spring 2015
+title: P-KR27N at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-NTD6V]] appeared at UGA algebra Spring 2015, problem 5.
+[[P-KR27N]] appeared at UGA algebra Spring 2015, problem 5.
 :::

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: O-CEC27TLBZK
 kind: occurrence
-title: P-WNSWZ at UGA algebra Spring 2017
+title: P-WA5RE at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-WNSWZ
+  target: P-WA5RE
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2017
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-WNSWZ]] appeared at UGA algebra Spring 2017.
+[[P-WA5RE]] appeared at UGA algebra Spring 2017.
 :::

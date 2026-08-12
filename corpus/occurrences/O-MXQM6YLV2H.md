@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-MXQM6YLV2H
 kind: occurrence
-title: P-VAZ3Z at UGA real-analysis Fall 2015
+title: P-RJV7Q at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-VAZ3Z]] appeared at UGA real-analysis Fall 2015.
+[[P-RJV7Q]] appeared at UGA real-analysis Fall 2015.
 :::

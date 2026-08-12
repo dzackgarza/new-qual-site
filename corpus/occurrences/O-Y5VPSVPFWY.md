@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: O-Y5VPSVPFWY
 kind: occurrence
-title: P-YEBFN at UGA algebra Fall 2016
+title: P-6NMU2 at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-YEBFN
+  target: P-6NMU2
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2016
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-YEBFN]] appeared at UGA algebra Fall 2016.
+[[P-6NMU2]] appeared at UGA algebra Fall 2016.
 :::

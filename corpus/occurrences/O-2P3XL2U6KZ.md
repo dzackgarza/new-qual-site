@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: O-2P3XL2U6KZ
 kind: occurrence
-title: P-LFC2G at UGA algebra Spring 2015
+title: P-56PBT at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
   topics: []
 relations:
 - kind: instance-of
-  target: P-LFC2G
+  target: P-56PBT
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2015
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-LFC2G]] appeared at UGA algebra Spring 2015.
+[[P-56PBT]] appeared at UGA algebra Spring 2015.
 :::

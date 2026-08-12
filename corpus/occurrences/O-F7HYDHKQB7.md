@@ -9,7 +9,7 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-WNSWZ
+  target: P-WA5RE
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2017

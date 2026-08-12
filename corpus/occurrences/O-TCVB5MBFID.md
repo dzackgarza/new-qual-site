@@ -9,7 +9,7 @@ classification:
   topics: []
 relations:
 - kind: instance-of
-  target: P-LFC2G
+  target: P-56PBT
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2015

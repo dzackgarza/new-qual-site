@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-ZW6Y24AQZO
 kind: occurrence
-title: P-YVNDI at UGA algebra Spring 2013
+title: P-2LX4F at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-YVNDI]] appeared at UGA algebra Spring 2013, problem 8.
+[[P-2LX4F]] appeared at UGA algebra Spring 2013, problem 8.
 :::

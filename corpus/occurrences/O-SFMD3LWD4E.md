@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-SFMD3LWD4E
 kind: occurrence
-title: P-SUE6S at UGA complex-analysis Spring 2015
+title: P-OO3WX at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
@@ -17,5 +17,5 @@ payload:
 ---
 
 ::: remark
-[[P-SUE6S]] appeared at UGA complex-analysis Spring 2015.
+[[P-OO3WX]] appeared at UGA complex-analysis Spring 2015.
 :::
