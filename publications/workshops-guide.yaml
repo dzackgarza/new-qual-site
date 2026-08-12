@@ -1,0 +1,153 @@
+schema: qual/publication@2
+id: GUIDE-WORKSHOPS
+kind: study-guide
+title: Workshops
+lede: >-
+  The qual workshops as a practice track across all four subjects. Every problem here is
+  a card the subject branches already own, met in the order the workshop met it rather than
+  in dependency order, so this reads as a companion to those branches and not as a second
+  copy of them.
+sections:
+  - slug: algebra
+    title: Algebra
+    parent: GUIDE-WORKSHOPS
+    lede: >-
+      Four sittings that run the Algebra branch's results as practice: subgroup and index
+      counting first, then the finite-group structure the counting supports, then Sylow
+      applied, and finally rings. These are the same canonical problems the Algebra guide
+      lands on, met here in the order the workshop met them rather than in dependency order.
+      Two later sittings, on representation theory and linear algebra, left pages but no
+      problems.
+    items:
+      # Algebra Week 1 Groups Warmup
+      - ref: P-SERVA
+      - ref: P-SNEIS
+      - ref: P-YNF6T
+      - ref: P-WY2K6
+      - ref: P-HPTFQ
+      - ref: P-V7BGS
+      - ref: P-SVM3O
+      - ref: P-OBO4F
+      - ref: P-SXM4Q
+      - ref: P-DUUFY
+      - ref: P-L7SEG
+      - ref: P-DUVZD
+      - ref: P-VGFA7
+      - ref: P-4VJTF
+      - ref: P-PSAET
+      - ref: P-6HPKO
+      - ref: P-YCLOT
+      - ref: P-QJ7MD
+      - ref: P-6XW74
+      - ref: P-KXSW3
+      - ref: P-KPEPM
+      - ref: P-IC2GD
+      # Algebra Week 2 Finite Group Theory
+      - ref: P-O2H7G
+      - ref: P-P4KA6
+      - ref: P-WC3HY
+      - ref: P-5YUW6
+      - ref: P-JZM4U
+      - ref: P-2DITY
+      - ref: P-2TASE
+      - ref: P-6XW74
+      - ref: P-HYQCG
+      - ref: P-N2TM2
+      - ref: P-YMVNK
+      - ref: P-BQVDL
+      - ref: P-KOQPF
+      - ref: P-Q44SQ
+      - ref: P-BXBHJ
+      - ref: P-BJDIE
+      - ref: P-TRZ3O
+      - ref: P-SUU6D
+      - ref: P-BIFDZ
+      - ref: P-3OUVI
+      - ref: P-HPSTB
+      - ref: P-WBK5B
+      - ref: P-KPEPM
+      - ref: P-NLMMW
+      - ref: P-RPSTO
+      # Algebra Week 3 Sylow Theory
+      - ref: P-ZHTDW
+      - ref: P-ZBTCU
+      - ref: P-PKJVI
+      - ref: P-USPU6
+      - ref: P-K2U6D
+      - ref: P-4ZDQQ
+      # Algebra Week 4 Rings
+      - ref: P-3PTP5
+      - ref: P-HWBXR
+  - slug: real-analysis
+    title: Real Analysis
+    parent: algebra
+    lede: >-
+      Two sittings against the Real Analysis branch. The first works the preliminaries the
+      continuity section assumes; the second is measure theory, which the branch's
+      Riemann-Stieltjes section does not reach, so this is the only route to that material in
+      a reading order.
+    items:
+      # Real Week 1 Preliminaries
+      - ref: E-JY5OT
+      - ref: P-65060
+      - ref: P-JPDRQ
+      - ref: P-X1WOB
+      - ref: P-E33SA
+      - ref: E-GMYE2
+      - ref: P-4FH62
+      # Real Week 2 Measure Theory
+      - ref: P-VLG4M
+      - ref: P-HKQHN
+      - ref: P-FYFEC
+      - ref: P-NLNZ3
+  - slug: complex-analysis
+    title: Complex Analysis
+    parent: real-analysis
+    lede: >-
+      Two sittings against the Complex Analysis branch, following its first two sections: the
+      preliminaries behind holomorphy, then Cauchy theory, where the exercises are worked
+      applications of the integral formula rather than restatements of it.
+    items:
+      # Complex Week 1 Preliminaries
+      - ref: E-N6DX3
+      - ref: E-USHMH
+      - ref: P-642LC
+      # Complex Week 2 Cauchy
+      - ref: E-W3QMS
+      - ref: P-IOUZO
+      - ref: P-FWVKJ
+  - slug: topology
+    title: Topology
+    parent: complex-analysis
+    lede: >-
+      One sitting on point-set preliminaries, carrying more problems than any other single
+      workshop. It exercises the separation and compactness hypotheses that the Topology
+      branch's early sections establish.
+    items:
+      # Topology Week 1 Preliminaries
+      - ref: E-YUGKU
+      - ref: E-OIS5D
+      - ref: E-EE4EE
+      - ref: E-KJQUD
+      - ref: E-FLVZU
+      - ref: E-6W4WA
+      - ref: E-XSXAZ
+      - ref: E-ARJT3
+      - ref: E-45N4G
+      - ref: P-MFWBK
+      - ref: P-HPN6K
+      - ref: P-N7RR5
+      - ref: P-2V6GL
+      - ref: P-3GOJI
+      - ref: P-JAEYU
+      - ref: P-FNJCM
+      - ref: P-WXTVX
+      - ref: P-NNHWB
+      - ref: P-OTXNQ
+      - ref: P-NJNNL
+      - ref: P-SG462
+      - ref: P-GAA3C
+      - ref: P-YBQ3V
+      - ref: P-ZQBPZ
+      - ref: P-WHXWM
+      - ref: P-TC2PJ
