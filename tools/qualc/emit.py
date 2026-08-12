@@ -14,21 +14,18 @@ from __future__ import annotations
 
 import copy
 import html
-import io
 import json
 import re
 import shutil
 import sqlite3
 from collections import Counter
-from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
-from typing import cast
 
 import panflute as pf
 import yaml
 
-from .model import DIV_CLASS_TO_KIND, MARKDOWN, from_ast
+from .model import DIV_CLASS_TO_KIND, MARKDOWN, from_ast, to_json
 from .pandoc_batch import (
     PandocBatchError,
     PandocFailure,
@@ -531,23 +528,13 @@ Page = tuple[dict, list[pf.Block]]
 PageItem = tuple[Page, Path, PageChrome]
 
 
-def _document_ast(document: pf.Doc) -> str:
-    stream = io.StringIO()
-    dumper = cast(
-        Callable[[pf.Doc, io.StringIO], None],
-        vars(pf)["dump"],
-    )
-    dumper(document, stream)
-    return stream.getvalue()
-
-
 def _page_ast(page: Page) -> str:
     _, blocks = page
-    return _document_ast(pf.Doc(*blocks))
+    return to_json(pf.Doc(*blocks))
 
 
 def _html_ast(ast: str) -> str:
-    return _document_ast(from_ast(ast).walk(_reveal))
+    return to_json(from_ast(ast).walk(_reveal))
 
 
 def write_pages(

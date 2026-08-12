@@ -96,3 +96,21 @@ def test_check_rejects_missing_or_ambiguous_page_references(
         path.write_text(text)
 
     assert diagnostic_codes(work) == [code]
+
+
+def test_a_figure_captioned_with_its_own_filename_loses_the_caption(tmp_path: Path) -> None:
+    """Pandoc's implicit-figure syntax makes the caption out of the alt text, and
+    the authored vault wrote the attachment path there. A written caption is a
+    caption and stays; a path is the file's name and is not one."""
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "index.md").write_text(
+        "# Fixture index\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n"
+    )
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
+    assert page.count("<figcaption") == 1
+    assert "The Tube Lemma</figcaption>" in page
+    assert 'alt="figures/diagram.png"' in page

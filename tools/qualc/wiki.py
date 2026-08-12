@@ -20,12 +20,13 @@ import panflute as pf
 import yaml
 
 from .diagnostics import Diagnostic
-from .model import MARKDOWN, from_ast
+from .model import MARKDOWN, drop_path_captions, from_ast
 from .pandoc_batch import PandocFailure, PandocServer
 from .static_site import AssetCatalog, _asset_source
 
 WIKI_BATCH_SIZE = 8
 IMAGE_ELEMENT = cast(type[pf.Element], vars(pf)["Image"])
+
 
 
 @dataclass
@@ -108,7 +109,7 @@ def parse_pages(pandoc: PandocServer, root: Path) -> tuple[list[WikiPage], list[
             if warnings:
                 errors.append(Diagnostic("reader-warning", str(path), "; ".join(warnings)))
                 continue
-            document = from_ast(result.output)
+            document = from_ast(result.output).walk(drop_path_captions)
             parsed.append(
                 WikiPage(
                     source_path=path,
