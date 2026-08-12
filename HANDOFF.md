@@ -126,8 +126,8 @@ It does complete the plan's permanent source-migration and independent-review ga
 - The named source boundary now has direct complete-migration evidence.
   This claim does not assert that the mathematical wiki is editorially complete or that an unavailable, out-of-scope MathQualBot repository exists.
 
-- Issue #11 still needs explicit owner decisions for each source repository.
-  No source repository is archived by this handoff.
+- Issue #11 records the M7 `retain` decision for each source repository.
+  No archive action is authorized or performed by this handoff.
 
 ## Work required to finish the project
 
