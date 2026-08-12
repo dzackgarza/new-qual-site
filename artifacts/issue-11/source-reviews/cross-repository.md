@@ -1,41 +1,73 @@
 # Independent cross-repository review
 
-Result: PASS for the plan's named source boundary at target commit `d5509f0a`.
+Result: PASS for the plan's named source boundary at target commit `ac3b439`.
 
-The independent review checked the five source review records, the full migration ledger, the untracked APKG manifest, the vendored MathQualBot manifest, duplicate and provenance mappings, and the current target paths.
+## Review evidence
 
-The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 dropped, and 0 queued.
+The reviewer read the five repository review records, the complete migration
+ledger, the direct dropped-row review, the current math-flashcards boundary
+review, the untracked APKG manifest, the vendored MathQualBot manifest, the
+duplicate and provenance mappings, and the current target paths.
 
-Boundary results:
+The ledger has 2,335 rows: 1,826 `migrated`, 142 `generated`, 367 directly
+reviewed non-content `dropped`, and 0 `queued`.
 
-- `make-me-a-qual`: PASS. 116 tracked paths; 59 migrated, 8 generated, 49 dropped; 508 source questions and 508 target occurrences; 38 direct identity checks pass.
+The five tracked source inventories have exact ledger coverage:
 
-- `Analysis-Qual-Compendium`: PASS. 3 tracked paths; 68 source sections, 68 occurrence rows, 68 unique cards, and no missing targets.
+- `qual-wiki`: 1,521 source paths and 1,521 ledger rows.
+- `qual-review-and-solutions`: 542 source paths and 542 ledger rows.
+- `make-me-a-qual`: 116 source paths and 116 ledger rows.
+- `Analysis-Qual-Compendium`: 3 source paths and 3 ledger rows.
+- `math-flashcards`: 153 source paths and 153 ledger rows.
 
-- `math-flashcards`: PASS. 153 tracked paths; 85 migrated, 63 generated, 5 dropped; 68 native files, 63 tracked APKG files, and 82 untracked APKG files pass identity checks.
+There are no duplicate `(repo, path)` keys, no migrated or generated row without
+a target or evidence field, and no queued row.
 
-- `qual-review-and-solutions`: PASS. 542 tracked paths; 348 migrated, 48 generated, 146 dropped; 143 transformed pages and 1,224 linked cards are covered; the four unrouted source blocks remain in the complete native source.
+## Repository results
 
-- `qual-wiki`: PASS. 1,521 tracked paths; 1,331 migrated, 23 generated, 167 dropped.
-  All 197 transformed projections, native source mappings, target card references, and recovered figure assets pass the independent review.
+- `make-me-a-qual`: PASS. The independent review covers 508 source questions,
+  508 target occurrences, and 38 direct identity checks. The 49 dropped rows
+  are listed in `dropped-content-review.md`.
 
-- MathQualBot: PASS for the scoped vendored collection.
-  All 51 manifest source/target pairs pass SHA-1 identity.
-  The plan names the vendored question images and provenance, not the unavailable original repository.
+- `Analysis-Qual-Compendium`: PASS. The independent review covers 68 source
+  sections, 68 occurrence rows, 68 unique cards, and the two native TeX files.
 
-The source revisions are:
+- `math-flashcards`: PASS. The independent review covers 68 native tracked
+  files, 63 tracked APKG files, and all 82 current APKG artifacts. The current
+  source and target hashes match for all 82 artifacts, including the modified
+  `Vocabulary.apkg`; see `math-flashcards-current-boundary.md`.
+
+- `qual-review-and-solutions`: PASS. The independent review covers all 143
+  transformed pages, 1,224 linked cards, the four unrouted source blocks, and
+  the retained native sources. The 146 dropped rows are directly reviewed in
+  `dropped-content-review.md`.
+
+- `qual-wiki`: PASS. The independent review covers all 197 transformed
+  projections, native source mappings, target card references, recovered figure
+  assets, and the 167 dropped rows directly reviewed in
+  `dropped-content-review.md`.
+
+- MathQualBot: PASS for the scoped vendored collection. All 51 manifest source
+  and target pairs pass SHA-1 identity. The plan names this vendored collection
+  and its provenance, not the unavailable original repository.
+
+## Source revisions
 
 - qual-wiki `3fe1f58fdf800209c5ad243c91411bc0ee40cc7c`
-
 - qual-review-and-solutions `590a8929b2326cc770a246e934ab36fb30b0c7ab`
-
 - make-me-a-qual `beba581e5b32f54ff469ed603a0885d51591e5fc`
-
 - Analysis-Qual-Compendium `15168d8df736c3bc99be57e8b48e0675e0cd4e2f`
+- math-flashcards tracked baseline `69cecc401981fb2f897a6a3c29feb869d811013c`
+- math-flashcards current APKG worktree artifacts are frozen by
+  `sources/math-flashcards-untracked-artifacts.json`.
 
-- math-flashcards `69cecc401981fb2f897a6a3c29feb869d811013c`
+## Result against the plan
 
-Every ledger row has a permanent target or a reviewed non-content disposition.
-No queued row remains.
-No content-bearing row remains dropped.
-The review proves the named source boundary from direct source comparisons, target-path checks, byte comparisons, manifest checks, and provenance records.
+Every source row has a permanent target or a direct review proving that it has
+no authored mathematical, bibliographic, provenance, or figure content.
+Every generated row has a permanent retained artifact and named migrated inputs.
+Every migrated row has a target and direct comparison evidence. No content-bearing
+row remains queued or dropped. The named source boundary is permanently migrated.
+
+The archive decision gate remains separate. No source repository is archived
+without an explicit owner `retain` or `archive` decision.
