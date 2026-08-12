@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="?"}
+
+::: {.theorem title="?"}
 Every $f: B^n \to B^n$ has a fixed point.
 :::

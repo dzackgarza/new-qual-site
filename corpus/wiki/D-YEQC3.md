@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Normal"}
+
+::: {.definition title="Normal"}
 A space is **normal** if any two disjoint closed subsets can be separated by neighborhoods.
 :::

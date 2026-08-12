@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Alexander duality"}
 
+::: {.definition title="Alexander duality"}
 :::

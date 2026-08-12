@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Known Euler characteristics"}
+
+::: {.proposition title="Known Euler characteristics"}
 If $M^n$ is closed and $n$ is odd, then $\chi(M^n) = 0$.
 :::

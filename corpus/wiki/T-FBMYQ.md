@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Excision"}
+
+::: {.theorem title="Excision"}
 Todo
 :::

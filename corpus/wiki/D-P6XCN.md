@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Refinement"}
+
+::: {.definition title="Refinement"}
 A cover $\mcv \covers X$ is a **refinement** of $\mcu \covers X$ iff for each $V\in \mcv$ there exists a $U\in\mcu$ such that $V\subseteq U$.
 :::

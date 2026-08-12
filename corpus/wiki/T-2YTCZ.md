@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Convex sets admit homotopies"}
+
+::: {.theorem title="Convex sets admit homotopies"}
 Any two continuous functions into a convex set are homotopic.
 :::

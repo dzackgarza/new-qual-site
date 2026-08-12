@@ -1,0 +1,17 @@
+---
+schema: qual/card@1
+id: D-QZ2LQ
+kind: definition
+title: "Unitary Group"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.definition title="Unitary Group"}
+\[
+U_n(\CC) \da \ts{ A \st A^\dagger A = AA^\dagger = 1 } 
+.\]
+:::

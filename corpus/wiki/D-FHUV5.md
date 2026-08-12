@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Group Ring"}
 
+::: {.definition title="Group Ring"}
 :::

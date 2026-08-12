@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Fundamental Group"}
 
+::: {.definition title="Fundamental Group"}
 :::

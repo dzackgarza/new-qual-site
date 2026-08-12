@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Retract"}
+
+::: {.definition title="Retract"}
 A **retract** $r$ of $B$ onto a subspace $A$ is a map $r:B\to A$ that is a left-inverse for the inclusion $f:A\injects B$, so $r \circ f = \id_A$:
 
 \begin{tikzcd}
@@ -25,12 +26,10 @@ A **retract** $r$ of $B$ onto a subspace $A$ is a map $r:B\to A$ that is a left-
 Equivalently, a continuous map $r:B\to A$ with $\ro{r}{A} = \id_A$ restricting to the identity on $A$, i.e. fixing $A$ pointwise.
 Note that $r$ is necessarily a surjection.
 
-Alt:
-Let $X$ be a topological space and $A \subset X$ be a subspace, then a **retraction** of $X$ onto $A$ is a map $r: X\into X$ such that the image of $X$ is $A$ and $r$ restricted to $A$ is the identity.
+Alt: Let $X$ be a topological space and $A \subset X$ be a subspace, then a **retraction** of $X$ onto $A$ is a map $r: X\into X$ such that the image of $X$ is $A$ and $r$ restricted to $A$ is the identity.
 
-:::{.remark}
+::: {.remark}
 If $X$ retracts onto $A$ with $\iota:A\injects X$, then $i_*$ is injective.
 Any nonempty space retracts to a point via a constant map.
 :::
-
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Orientable manifold"}
+
+::: {.definition title="Orientable manifold"}
 A manifold for which an orientation exists, see "Orientation of a Manifold".
 :::

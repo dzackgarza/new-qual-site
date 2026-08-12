@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Kronecker Product"}
 
+::: {.definition title="Kronecker Product"}
 :::

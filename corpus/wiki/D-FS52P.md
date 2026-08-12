@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Flat"}
+
+::: {.definition title="Flat"}
 An $R\dash$module is flat if $A\tensor_{R} \wait$ is an exact functor.
 :::

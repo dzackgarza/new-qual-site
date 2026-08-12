@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Euler Characteristic"}
 
+::: {.definition title="Euler Characteristic"}
 :::

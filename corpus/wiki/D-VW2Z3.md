@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Quasicompact"}
+
+::: {.definition title="Quasicompact"}
 A topological space $X$ (possible non-Hausdorff) is **quasicompact** iff every open cover admits a finite subcover.
 If $X$ is additionally Hausdorff, $X$ is said to be **compact**.
 :::

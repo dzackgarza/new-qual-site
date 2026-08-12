@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="N-connected"}
 
+::: {.definition title="N-connected"}
 :::

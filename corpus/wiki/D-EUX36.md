@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Homotopy Groups"}
 
+::: {.definition title="Homotopy Groups"}
 :::

@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Cup Product"}
+
+::: {.definition title="Cup Product"}
 A map taking pairs ($p\dash$cocycles, $q\dash$cocycles) to $(p+q)\dash$cocyles by
 \[
 H^p(X; R) \cross H^q(X; R) \mapsvia{\smile} H^{p+q}(X; R)\\
@@ -18,8 +19,7 @@ H^p(X; R) \cross H^q(X; R) \mapsvia{\smile} H^{p+q}(X; R)\\
 \]
 where $\Delta^{p+q} \mapsvia{\sigma} X$ is a singular $p+q$ simplex and
 
-\[I_{i}^j: [i, \cdots, j] \injects\Delta^{p+q}
-.\]
+\[I_{i}^j: [i, \cdots, j] \injects\Delta^{p+q} .\]
 
 is an embedding of the $(j-i)\dash$simplex into a $(p+q)\dash$simplex.
 :::

@@ -10,10 +10,12 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Quotient Map"}
-A map $q:X\to Y$ is a **quotient map** if and only if 
+
+::: {.definition title="Quotient Map"}
+A map $q:X\to Y$ is a **quotient map** if and only if
 
 1. $q$ is surjective, and
+
 2. $U$ is open in $Y\iff q ^{-1} (U)$ is open in $X$
 
 > Note that $\implies$ comes from the definition of continuity of $q$, but $\impliedby$ is a stronger condition.
@@ -21,6 +23,6 @@ A map $q:X\to Y$ is a **quotient map** if and only if
 Equivalently:
 
 - $p$ maps *saturated* subsets of $X$ to open subsets of $Y$, or
-- If $U$ is open in $X$, then $(q\inv \circ q)(U)$ is again open in $X$.
 
+- If $U$ is open in $X$, then $(q\inv \circ q)(U)$ is again open in $X$.
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="First Countable"}
+
+::: {.definition title="First Countable"}
 A space is **first-countable** iff every point admits a countable neighborhood basis.
 :::

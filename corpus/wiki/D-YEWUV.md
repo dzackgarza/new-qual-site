@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Accumulation point"}
+
+::: {.definition title="Accumulation point"}
 See **limit point**.
 :::

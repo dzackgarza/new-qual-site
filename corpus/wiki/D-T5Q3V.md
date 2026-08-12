@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Loop Space"}
 
+::: {.definition title="Loop Space"}
 :::

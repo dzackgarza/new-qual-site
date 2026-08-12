@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Pushout"}
 
+::: {.definition title="Pushout"}
 :::

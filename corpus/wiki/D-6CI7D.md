@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Local Orientation"}
 
+::: {.definition title="Local Orientation"}
 :::

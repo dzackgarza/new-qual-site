@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Path"}
 
+::: {.definition title="Path"}
 :::

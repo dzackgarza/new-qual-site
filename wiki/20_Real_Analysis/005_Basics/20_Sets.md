@@ -6,88 +6,49 @@ order: 20
 
 ## Compactness
     
-:::{.theorem title="Folland 0.25"}
-For $E \subseteq (X, d)$ a metric space, TFAE:
-
-- $E$ is complete and totally bounded.
-- $E$ is sequentially compact: Every sequence in $E$ has a subsequence that converges to a point in $E$.
-- $E$ is compact: every open cover has a finite subcover.
-
-Note that $E$ is complete as a metric space with the induced metric iff $E$ is closed in $X$, and $E$ is bounded iff it is totally bounded.
-:::
+[[T-YOZX6]]
 
 
 ## Topology / Sets
 
-:::{.proposition title="Compact if and only if sequentially compact for metric spaces"}
-Metric spaces are compact iff they are sequentially compact, (i.e. every sequence has a convergent subsequence).
-:::
+[[PR-25GM2]]
 
 #todo Proof
 
-:::{.proposition title="A unit ball that is not compact"}
-The unit ball in $C([0, 1])$ with the sup norm is not compact.
-:::
+[[PR-FKJCO]]
 
 :::{.proof title="?"}
 Take $f_k(x) = x^n$, which converges to $\chi(x=1)$. 
 The limit is not continuous, so no subsequence can converge.
 :::
 
-:::{.theorem title="Heine-Borel"}
-$X\subseteq \RR^n$ is compact $\iff X$ is closed and bounded.
-:::
+[[T-QPTHZ]]
 
-:::{.proposition title="Geometric Series"}
-\[
-\sum_{k=0}^\infty x^k = \frac 1 {1-x} \iff \abs{x} < 1
-.\]
-:::
+[[PR-6C3GQ]]
 
-:::{.corollary title="?"}
-\[
-\sum_{k=0}^\infty \frac 1 {2^k} = 1
-.\]
-:::
+[[C-WR7YV]]
 
-:::{.proposition title="?"}
-Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
-:::
+[[PR-OGEEA]]
 
-:::{.lemma title="?"}
-Any nonempty set which is bounded from above (resp. below) has a well-defined supremum (resp. infimum).
-:::
+[[L-JBMRH]]
 
 ## Smallness for sets
 
-:::{.proposition title="Finite unions of nowhere dense sets are still nowhere dense"}
-A *finite* union of nowhere dense is again nowhere dense.
-:::
+[[PR-CZS5F]]
 
-:::{.theorem title="Baire"}
-$\RR$ is a **Baire space**, i.e. $\RR$ can not be written as a countable union of nowhere dense sets.
-:::
+[[T-7FJFK]]
 
-:::{.proposition title="?"}
-The Cantor set is closed with empty interior.
-:::
+[[PR-JTFMW]]
 
 :::{.proof title="?"}
 Its complement is a union of open intervals, and can't contain an interval since intervals have positive measure and $m(C_n)$ tends to zero.
 :::
 
-:::{.corollary title="?"}
-The Cantor set is nowhere dense.
-:::
+[[C-44LL4]]
 
 ## Smallness for functions
 
-:::{.proposition title="Existence of Smooth Compactly Supported Functions"}
-There exist smooth compactly supported functions, e.g. take 
-\[
-f(x) = e^{-\frac{1}{x^2}} \chi_{(0, \infty)}(x)
-.\]
-:::
+[[PR-K5573]]
 
 - **Arzela - Ascoli 1**:
 If $\mathcal{F}$ is pointwise bounded and equicontinuous, then $\mathcal{F}$ is totally bounded in the uniform metric and its closure $\overline{\mathcal{F}} \in C(X)$ in the space of continuous functions is compact.
@@ -138,6 +99,6 @@ For any two sets $A, B$ in a metric space or compact Hausdorff space $X$, there 
 
     *Proof:*
 
-    ![figures/2019-12-19-16-49-56.png](../../../assets/figures/2019-12-19-16-49-56.png)
+    ![figures/2019-12-19-16-49-56.png](../../../../assets/assets/figures/2019-12-19-16-49-56.png)
 		
 - Uniform convergence allows commuting sums with integrals

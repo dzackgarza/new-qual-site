@@ -10,8 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Singular Chain"}
 
-\[x \in C_{n}(x) \implies X = \sum_{i} n_{i} \sigma_{i} = \sum_{i} n_{i} (\Delta^n \mapsvia{\sigma_{i}} X)
-.\]
+::: {.definition title="Singular Chain"}
+
+\[x \in C_{n}(x) \implies X = \sum_{i} n_{i} \sigma_{i} = \sum_{i} n_{i} (\Delta^n \mapsvia{\sigma_{i}} X) .\]
 :::

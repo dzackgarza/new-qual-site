@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Cocycle"}
 
+::: {.definition title="Cocycle"}
 :::

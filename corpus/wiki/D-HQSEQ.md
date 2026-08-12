@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Paracompact"}
+
+::: {.definition title="Paracompact"}
 A topological space $X$ is **paracompact** iff every open cover of $X$ admits an open locally finite refinement.
 :::

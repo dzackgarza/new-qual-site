@@ -4,47 +4,13 @@ order: 35
 
 # Differentiability
 
-:::{.theorem title="Mean Value Theorem"}
-If $f: [a, b] \to \RR$ is continuous on a closed interval and differentiable on $(a, b)$, then there exists $\xi \in [a, b]$ such that 
-\[
-f(b) - f(a) = f'(\xi)(b-a)
-.\]
+[[T-OXNTU]]
 
-More generally, if $g: [a,b]\to \RR$ is similarly continuous on $[a, b]$ and differentiable on $(a, b)$, then there exists a $\xi$ with
-\[
-\qty{ f(b) - f(c) } g'(\xi) = \qty{g(b) - g(a)} f'(\xi)
-.\]
-What this means graphically:
+[[T-DS4VW]]
 
+[[PR-LTRLV]]
 
-![](../../../assets/figures/2021-11-09_22-20-24.png)
-
-:::
-
-:::{.theorem title="Term by Term Differentiability Theorem"}
-If $\ts{f_n}$ is a sequence of functions where
-
-- each $f_n$ is differentiable, 
-- there is some $G$ such that $\norm{ \sum_{n\leq N} f_n' - G}_\infty \convergesto{N\to\infty} 0$, and 
-- there exists at least *one point*[^pointwise_works_too] $x_0$ such that $\sum f_n(x)$ converges (pointwise), 
-
-then there exists an $F$ such that 
-[^theorem_referfence_6.4.3_Abbott]
-\[
-\norm{ \sum_{n\leq N} f_n - F}_\infty \convergesto{N\to\infty} 0 && F' = g
-.\]
-
-:::
-
-:::{.proposition title="Lipschitz $\iff$ differentiable with bounded derivative."}
-A function $f: (a, b) \to \RR$ is Lipschitz $\iff f$ is differentiable and $f'$ is bounded.
-In this case, $\abs{f'(x)} \leq C$, the Lipschitz constant.
-:::
-
-:::{.theorem title="Term by Term Differentiability Theorem"}
-If $f_n$ are differentiable, $\sum f_n' \to g$ uniformly, and there exists one point[^pointwise_works_too-qrs] $x_0$ such that $\sum f_n(x)$ converges, then there exist an $f$ such that $\sum f_n \to f$ uniformly and $f' = g$.[^theorem_referfence_6.4.3_Abbott-qrs]
-
-:::
+[[T-TR526]]
 
 :::{.example title="Derivatives of bounded functions need not be bounded"}
 \[
@@ -65,10 +31,6 @@ now take the sequence $x_n \da 1/\sqrt{k\pi}$ to get $f'(x_n) = 2\sqrt{k\pi}(-1)
 
 :::
 
-[^theorem_referfence_6.4.3_Abbott]: See Abbott theorem 6.4.3, pp 168.
 
-[^pointwise_works_too]: So this implicitly holds if $f$ is the pointwise limit of $f_n$.
 
-[^theorem_referfence_6.4.3_Abbott-qrs]: See Abbott theorem 6.4.3, pp 168.
 
-[^pointwise_works_too-qrs]: So this implicitly holds if $f$ is the pointwise limit of $f_n$.

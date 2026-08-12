@@ -8,11 +8,7 @@ title: Basics
 
 # Appendix: Undergrad Review
 
-:::{.definition title="limsup"}
-\[
-\limsup x_{n}=\lim _{N \rightarrow \infty} \sup _{n>N} x_{n}
-.\]
-:::
+[[D-G2I5Q]]
 
 :::{.example title="?"}
 \envlist
@@ -21,28 +17,20 @@ title: Basics
 
 :::
 
-:::{.theorem title="Bounded Convergence"}
+[[T-TRW6N]]
 
-
-![](../../../assets/20_Real_Analysis/figures/2021-10-29_16-43-30.png)
-
-
-![](../../../assets/20_Real_Analysis/figures/2021-10-29_16-43-43.png)
-
-:::
-
-![](../../../assets/figures/2021-10-29_16-51-23.png)
-![](../../../assets/figures/2021-10-29_16-55-00.png)
+![](../../../../assets/assets/figures/2021-10-29_16-51-23.png)
+![](../../../../assets/assets/figures/2021-10-29_16-55-00.png)
 A nowhere differentiable function:
-![](../../../assets/figures/2021-10-29_16-57-12.png)
+![](../../../../assets/assets/figures/2021-10-29_16-57-12.png)
 Monotone functions are differentiable almost everywhere.
-![](../../../assets/figures/2021-10-29_17-28-39.png)
+![](../../../../assets/assets/figures/2021-10-29_17-28-39.png)
 [[E-QSNCL]]
 
 :::{.example title="?"}
-![](../../../assets/20_Real_Analysis/figures/2021-10-29_16-51-23.png)
+![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_16-51-23.png)
 
-![](../../../assets/20_Real_Analysis/figures/2021-10-29_16-55-00.png)
+![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_16-55-00.png)
 
 :::
 
@@ -50,7 +38,7 @@ Monotone functions are differentiable almost everywhere.
 A nowhere differentiable function:
 
 
-![](../../../assets/20_Real_Analysis/figures/2021-10-29_16-57-12.png)
+![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_16-57-12.png)
 
 :::
 
@@ -58,7 +46,7 @@ A nowhere differentiable function:
 Monotone functions are differentiable almost everywhere.
 
 
-![](../../../assets/20_Real_Analysis/figures/2021-10-29_17-28-39.png)
+![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_17-28-39.png)
 
 :::
 

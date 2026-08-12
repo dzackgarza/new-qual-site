@@ -8,18 +8,9 @@ order: 40
 
 ## The Fourier Transform
 
-:::{.proposition title="?"}
-If $\hat f = \hat g$ then $f=g$ almost everywhere.
-:::
+[[PR-47TTS]]
 
-:::{.proposition title="Riemann-Lebesgue: Fourier transforms have small tails."}
-\[
-f\in L^1 \implies
-\hat{f}(\xi) \rightarrow 0 \text { as }|\xi| \rightarrow \infty
-,\]
-
-if $f \in L^1$, then $\hat f$ is continuous and bounded.
-:::
+[[PR-IGMH4]]
 
 :::{.remark}
 Note that this implies there can be no identity for convolution: if there existed a function $\delta$ with $\delta(x) = 0$ for $x\neq 0$ and $\int\delta = 1$, then
@@ -45,12 +36,7 @@ contradicting Riemann-Lebesgue.
 
 :::
    
-:::{.theorem title="Fourier Inversion"}
-\[
-f(x)=\int_{\mathbb{R}^{n}} \widehat{f}(x) e^{2 \pi i x \cdot \xi} d \xi
-.\]
-
-:::
+[[T-DTXIA]]
 
 :::{.warnings}
 Fubini-Tonelli does not work here!
@@ -96,29 +82,9 @@ I_{t}(x) \to \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~\text{ pointwise and }~\p
 
 :::
 
-:::{.proposition title="Eigenfunction of the Fourier transform"}
-\[
-g(x) \da e^{-\pi \abs{t}^2} \implies \hat g(\xi) = g(\xi) \qtext{and}
-\hat g_{t}(x) = g(tx) = e^{-\pi t^2 \abs{x}^2}
-.\]
-:::
+[[PR-DPRY7]]
 
-:::{.proposition title="Useful properties of the Fourier transform"}
-\[
-\widehat{f\ast g}(\xi)
-&= \hat f(\xi) \cdot \hat g (\xi) \\
-\widehat{\tau_h f}(\xi)
-&= e^{2\pi i \xi \cdot h}\widehat{f}(\xi) \\
-\widehat{e^{2\pi i \xi \cdot h}f(\xi)}
-&= \tau_{-h}\widehat f(\xi) \\
-\widehat{f \circ T}(\xi)
-&= \abs{\det T}\inv (\hat f \circ T^{-t})(\xi) \\
-\dd{}{\xi} \widehat{f}(\xi)
-&= -2\pi i \cdot \widehat {\xi f} (\xi) \\
-\widehat{\dd{}{\xi} f}(\xi)
-&= 2\pi i \xi \cdot \widehat{f}(\xi)
-.\]
-:::
+[[PR-DY2B3]]
 
 :::{.example title="Some transform pairs"}
 \[
@@ -146,12 +112,7 @@ g(x) \da e^{-\pi \abs{t}^2} \implies \hat g(\xi) = g(\xi) \qtext{and}
 
 :::
 
-:::{.theorem title="Convolving against an approximate identity converges in $L^1$."}
-\[
-\pnorm{f \ast \phi_{t} - f}{1} \converges{t\to 0}\to 0
-.\]
-
-:::
+[[T-HHFGB]]
 
 :::{.proof title="?"}
 \[
@@ -174,12 +135,7 @@ g(x) \da e^{-\pi \abs{t}^2} \implies \hat g(\xi) = g(\xi) \qtext{and}
 
 :::
 
-:::{.theorem title="Convolutions vanish at infinity"}
-\[
-f,g \in L^1 \text{ and  bounded}  \implies \lim_{|x| \rightarrow \infty} (f * g)(x) = 0
-.\]
-
-:::
+[[T-3UXK7]]
 
 :::{.proof title="?"}
 
@@ -203,14 +159,6 @@ f,g \in L^1 \text{ and  bounded}  \implies \lim_{|x| \rightarrow \infty} (f * g)
 
 :::
 
-:::{.proposition title="Corollary of Young's inequality"}
-Take $q = 1$ in Young's inequality to obtain
-\[
-\pnorm{f \ast g}p \leq \norm{f}p \norm{g}1
-.\]
+[[PR-PRSKG]]
 
-:::
-
-:::{.proposition title="$L^1$ is closed under convolution."}
-If $f, g \in L^1$ then $f\ast g\in L^1$.
-:::
+[[PR-A7UFG]]

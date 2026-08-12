@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Dense"}
+
+::: {.definition title="Dense"}
 A subspace $Q\subset X$ is **dense** iff every neighborhood of every point in $x$ intersects $Q$.
 Equivalently, $\cl_X(Q) = Q$.
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.corollary title="Lipschitz implies uniformly continuous"}
+
+::: {.corollary title="Lipschitz implies uniformly continuous"}
 Lipschitz continuity implies uniform continuity (take $\delta = \eps/C$)
 :::

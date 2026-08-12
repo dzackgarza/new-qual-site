@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Singular Homology"}
 
+::: {.definition title="Singular Homology"}
 :::

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Free product with amalgamation"}
 
+::: {.definition title="Free product with amalgamation"}
 :::

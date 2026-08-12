@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Maps into contractible spaces are always nullhomotopic"}
+
+::: {.theorem title="Maps into contractible spaces are always nullhomotopic"}
 If $X$ is contractible, every map $f: Y \into X$ is nullhomotopic.
 :::

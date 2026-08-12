@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Freudenthal Suspension"}
 
+::: {.theorem title="Freudenthal Suspension"}
 :::

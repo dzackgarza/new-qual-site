@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Homotopy Lifting Property"}
 
+::: {.definition title="Homotopy Lifting Property"}
 :::

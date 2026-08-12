@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Moore Space"}
 
+::: {.definition title="Moore Space"}
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Cellular Approximation"}
+
+::: {.theorem title="Cellular Approximation"}
 Any continuous map between CW complexes is homotopy equivalent to a cellular map.
 :::

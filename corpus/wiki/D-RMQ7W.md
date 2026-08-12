@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Mapping Cylinder"}
 
+::: {.definition title="Mapping Cylinder"}
 :::

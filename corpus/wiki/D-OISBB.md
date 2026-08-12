@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Path Lifting Property"}
 
+::: {.definition title="Path Lifting Property"}
 :::

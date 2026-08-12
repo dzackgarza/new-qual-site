@@ -13,20 +13,9 @@ title: Basics
 For any measure space $(X, M, \mu)$, one can define $L^2(\mu)$ with the inner product $\inner{f}{g} \da \int_X f\bar{g} d\mu$.
 :::
 
-:::{.proposition title="$L^p$ spaces are Banach"}
-?
-:::
+[[PR-L35O7]]
 
-:::{.proposition title="Duals of $L^p$ spaces"}
-For $p\inv + q\inv = 1$, with $1<p<\infty$, there is an isomorphism of Banach spaces
-\[
-\kappa: L^p(\mu) &\to L^q(\mu) \\
-f &\mapsto (g \mapsto \int_X f g d\mu )
-.\]
-
-This is surjective by Radon-Nikodym, and an isometry by Holder's inequality, which is enough to be an isometric isomorphism.
-
-:::
+[[PR-WS6NT]]
 
 ## General Facts
 
@@ -73,42 +62,13 @@ For all $x, y\in H$,
 .\]
 :::
 
-:::{.proposition title="Convergence implies convergence of inner products"}
-If $x_k\to x$ and $y_k\to y$ in $H$, then $\inner{x_k}{y_k} \to \inner{x}{y}$.
-Proof:
-\[
-\abs{\inner{x_k}{y_k} - \inner{x}{y} } =\abs{\inner{x_n - x}{y_n} + \inner{x}{y_n-y} } \leq \norm{x_n - x}\norm{y_n} + \norm{x} \norm{y_n - y}
-.\]
-
-
-:::
+[[PR-KTZZ5]]
 
 ## Fourier Coefficients
 
-:::{.theorem title="Bessel's Inequality"}
-For any orthonormal set $\theset{u_{n}} \subseteq \mch$ a Hilbert space (not necessarily a basis),
-\[
-\left\|x-\sum_{n=1}^{N}\left\langle x, u_{n}\right\rangle u_{n}\right\|^{2}=\|x\|^{2}-\sum_{n=1}^{N}\left|\left\langle x, u_{n}\right\rangle\right|^{2}
-\]
-and thus
-\[
-\sum_{n=1}^{\infty}\left|\left\langle x, u_{n}\right\rangle\right|^{2} \leq\|x\|^{2}
-.\]
+[[T-4BDE3]]
 
-:::
-
-:::{.theorem title="Bessel's Inequality"}
-For any orthonormal set $\theset{u_{n}} \subseteq \mch$ a Hilbert space (not necessarily a basis),
-\[
-\left\|x-\sum_{n=1}^{N}\left\langle x, u_{n}\right\rangle u_{n}\right\|^{2}=\|x\|^{2}-\sum_{n=1}^{N}\left|\left\langle x, u_{n}\right\rangle\right|^{2}
-\]
-and thus
-\[
-\sum_{n=1}^{\infty}\left|\left\langle x, u_{n}\right\rangle\right|^{2} \leq\|x\|^{2}
-.\]
-
-Note that this generalizes to uncountable bases, and implies that only finitely many terms $\inner{x}{u_n}$ can be nonzero.
-:::
+[[T-4CDKK]]
 
 :::{.proof title="of Bessel's inequality"}
 \envlist
@@ -149,30 +109,10 @@ Note that this generalizes to uncountable bases, and implies that only finitely 
 
 :::
 
-:::{.theorem title="Parseval"}
-Let $\ts{u_n}_{n\in A}$ be an orthonormal set in a Hilbert space $\mch$.
-TFAE:
-
-- Completeness: $\ts{u_n}$ is a complete basis, i.e. $\inner{x}{u_n}=0$ for all $n$ implies $x=0$
-- Parseval's identity:
-\[
-\sum_{n\in A} \abs{ \inner{x}{u_n} }^2 = \norm{x}^2_{\mch}
-.\]
-
-- Every $x\in \mch$ can be expressed uniquely as 
-\[
-x = \sum_{n\in A} \inner{x}{u_n}u_n
-,\]
-where the sum has only countably many nonzero terms.
-:::
+[[T-5AALA]]
 
 
-:::{.theorem title="Riesz Representation for Hilbert Spaces"}
-If $\Lambda$ is a continuous linear functional on a Hilbert space $H$, then there exists a unique $y \in H$ such that
-\[
-\forall x\in H,\quad \Lambda(x) = \inner{x}{y}
-.\]
-:::
+[[T-LDCZB]]
 
 :::{.proof title="?"}
 \envlist
@@ -211,29 +151,7 @@ $$\Lambda(u) = \Lambda(\Lambda(x) z - \Lambda(z) x) = \Lambda(x) \Lambda(z) - \L
 
 :::
 
-:::{.theorem title="Riesz-Fischer"}
-Let $U = \theset{u_{n}}_{n=1}^\infty$ be an orthonormal set (not necessarily a basis), then
-
-1. There is an isometric surjection
-
-\[
-\mathcal{H} &\to \ell^2(\NN) \\
-\vector x &\mapsto \theset{\inner{\vector x}{\vector u_{n}}}_{n=1}^\infty
-\]
-
-i.e. if $\theset{a_{n}} \in \ell^2(\NN)$, so $\sum \abs{a_{n}}^2 < \infty$, then there exists a $\vector x \in \mathcal{H}$ such that
-$$
-a_{n} = \inner{\vector x}{\vector u_{n}} \quad \forall n.
-$$
-
-2. $\vector x$ can be chosen such that
-$$
-\norm{\vector x}^2 = \sum \abs{a_{n}}^2
-$$
-
-> Note: the choice of $\vector x$ is unique $\iff$ $\theset{u_{n}}$ is **complete**, i.e. $\inner{\vector x}{\vector u_{n}} = 0$ for all $n$ implies $\vector x = \vector 0$.
-
-:::
+[[T-J3AN3]]
 
 :::{.proof title="?"}
 \envlist
@@ -247,13 +165,7 @@ $$
 
 ## Operator Norms
 
-:::{.theorem title="Functionals are continuous if and only if bounded"}
-Let $L:X \to \CC$ be a linear functional, then the following are equivalent:
-
-1. $L$ is continuous
-2. $L$ is continuous at zero
-3. $L$ is bounded, i.e. $\exists c\geq 0$ such that $\abs{L(x)} \leq c \norm{x}$ for all $x\in H$
-:::
+[[T-5IWCG]]
 
 :::{.proof title="?"}
 $2 \implies 3$:
@@ -276,9 +188,7 @@ We have $\abs{L(x-y)} \leq c\norm{x-y}$, so given $\varepsilon \geq 0$ simply ch
 
 :::
 
-:::{.theorem title="The operator norm is a norm"}
-If $H$ is a Hilbert space, then $(H\dual, \norm{\wait}_{\text{op}})$ is a normed space.
-:::
+[[T-QBTWN]]
 
 :::{.proof title="?"}
 The only nontrivial property is the triangle inequality, but
@@ -288,9 +198,7 @@ The only nontrivial property is the triangle inequality, but
 
 :::
 
-:::{.theorem title="The operator norm on $X\dual$ yields a Banach space"}
-If $X$ is a normed vector space, then $(X\dual, \norm{\wait}_{\text{op}})$ is a Banach space.
-:::
+[[T-W5SDY]]
 
 :::{.proof title="?"}
 \envlist

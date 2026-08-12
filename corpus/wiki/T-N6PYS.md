@@ -10,11 +10,15 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Maps from compact to Hausdorff spaces, Lee A.52"}
-If $f:X\to Y$ is continuous where $X$ is compact and $Y$ is Hausdorff, then 
+
+::: {.theorem title="Maps from compact to Hausdorff spaces, Lee A.52"}
+If $f:X\to Y$ is continuous where $X$ is compact and $Y$ is Hausdorff, then
 
 - $f$ is a closed map.
+
 - If $f$ is surjective, $f$ is a quotient map.
+
 - If $f$ is injective, $f$ is a topological embedding.
+
 - If $f$ is bijective, it is a homeomorphism.
 :::

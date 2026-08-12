@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="The rationals are neither open nor closed"}
+
+::: {.proposition title="The rationals are neither open nor closed"}
 $\QQ\subset \RR$ is not open and not closed.
 
 \

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Homotopic"}
 
+::: {.definition title="Homotopic"}
 :::

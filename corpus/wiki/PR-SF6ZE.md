@@ -1,0 +1,17 @@
+---
+schema: qual/card@1
+id: PR-SF6ZE
+kind: proposition
+title: "Tower law for subgroups"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.proposition title="Tower law for subgroups"}
+\[
+K\leq H \leq G \implies [G: K] = [G:H] [H: K]
+.\]
+:::

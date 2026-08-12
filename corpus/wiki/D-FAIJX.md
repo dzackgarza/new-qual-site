@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Mayer-Vietoris Sequence"}
 
+::: {.definition title="Mayer-Vietoris Sequence"}
 :::

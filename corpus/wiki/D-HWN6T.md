@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Quasi-isomorphism"}
 
+::: {.definition title="Quasi-isomorphism"}
 :::

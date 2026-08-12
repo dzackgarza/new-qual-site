@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Cycle"}
 
+::: {.definition title="Cycle"}
 :::

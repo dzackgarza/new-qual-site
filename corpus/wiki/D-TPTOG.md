@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Mapping Path Space"}
 
+::: {.definition title="Mapping Path Space"}
 :::

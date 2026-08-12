@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="CW Complex"}
 
+::: {.definition title="CW Complex"}
 :::

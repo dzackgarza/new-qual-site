@@ -1,0 +1,20 @@
+---
+schema: qual/card@1
+id: PR-5PDNQ
+kind: proposition
+title: "If either of $\\dim_k V, \\dim_k W$ is finite, then"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.proposition title="?"}
+If either of $\dim_k V, \dim_k W$ is finite, then
+\[
+V\dual \tensor_k W\dual &\mapsvia{\sim} (V\tensor W)\dual \\
+v\tensor w &\mapsto (x \tensor y \mapsto v(x) w(y))
+.\]
+
+:::

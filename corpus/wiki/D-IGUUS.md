@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Wedge Product"}
 
+::: {.definition title="Wedge Product"}
 :::

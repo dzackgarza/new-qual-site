@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Homotopy Class"}
 
+::: {.definition title="Homotopy Class"}
 :::

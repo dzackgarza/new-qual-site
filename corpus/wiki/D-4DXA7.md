@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="$T_n$ Spaces (Separation Axioms)"}
+
+::: {.definition title="$T_n$ Spaces (Separation Axioms)"}
 \envlist
 
 - $T_0$: Points are distinguishable.
@@ -23,13 +24,11 @@ review: draft
 
 - $T_{2.5}$: For any 2 points, both admit *disjoint closed* separating neighborhoods.
 
-- $T_3$: $T_0$ & *regular*.
-  Given any point $x$ and any closed $F\not\ni x$, there are neighborhoods separating $F$ and $x$.
+- $T_3$: $T_0$ & *regular*. Given any point $x$ and any closed $F\not\ni x$, there are neighborhoods separating $F$ and $x$.
 
 - $T_{3.5}$: $T_0$ & completely regular.
   Any point $x$ and closed $F\not\ni x$ can be separated by a continuous function.
 
 - $T_4$: $T_1$ & normal.
   Any two disjoint closed subsets can be separated by neighborhoods.
-
 :::

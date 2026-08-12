@@ -1,12 +1,8 @@
 # Appendix: Extra Topics
 
-:::{.proposition title="NC Theorem"}
-$N_G(H) / C_G(H)$ is isomorphic to a subgroup of $\Aut(H)$.
-:::
+[[PR-NESS4]]
 
-:::{.definition title="Normalizers Grow"}
-If for every proper $H < G$, $H\normal N_G(H)$ is again proper, then "normalizers grow" in $G$.
-:::
+[[D-43MDF]]
 
 ## Characteristic Subgroups
 
@@ -16,20 +12,14 @@ Normality is not transitive!
 I.e. if $H\normal G$ and $N\normal H$, it's not necessarily the case that $N\normal G$.
 :::
 
-:::{.definition title="Characteristic Subgroups"}
-A subgroup $H\leq G$ is **characteristic** in $G$, written $H \ch G$, iff for every $\phi \in \Aut(G)$, $\phi(H) \leq H$.
-Equivalently, $\phi(H) = H$.
-I.e. $H$ is fixed (not necessarily pointwise) under every automorphism of the ambient group $G$.
-:::
+[[D-53LTN]]
 
 :::{.remark title="Characteristic isn't equivalent to normalcy"}
 Characteristic subgroups are normal, because $\psi_g(\wait) \da g(\wait)g\inv$ is an (inner) automorphic of $G$.
 Not every normal subgroup is characteristic: take $G \da H_1 \cross H_2$ and $\psi(x, y) = (y, x)$.
 :::
 
-:::{.proposition title="Fixing transitivity of normality"}
-Characteristic subgroups of normal subgroups are normal, i.e. if $H\normal G$ and $N \ch H$, then $N\normal G$.
-:::
+[[PR-IOMVN]]
 
 :::{.proof title="?"}
 $A \ch B \normal C \implies A\normal C$:
@@ -39,12 +29,7 @@ $A \ch B \normal C \implies A\normal C$:
 - Then $\psi(A) = A$ since $A\ch B$, so $cAc\inv = A$ and $A\normal C$.
 :::
 
-:::{.proposition title="Centers are characteristic"}
-For any group $G$,
-\[
-Z(G) \ch G
-.\]
-:::
+[[PR-GJLQP]]
 
 :::{.proof title="?"}
 Let $\psi \in \Aut(H)$ and $x=\psi(y)\in \psi(Z(H))$ so $y\in Z(H)$, then for arbitrary $h\in H$,
@@ -59,28 +44,11 @@ Let $\psi \in \Aut(H)$ and $x=\psi(y)\in \psi(Z(H))$ so $y\in Z(H)$, then for ar
 
 ## Normal Closures and Cores
 
-:::{.definition title="Normal Closure of a Subgroup"}
-The smallest normal subgroup of $G$ containing $H$:
-\[
-H^G \definedas \{gHg^{-1}: g\in G\} = \bigcap \theset{N: H \leq N \normal G }
-.\]
-:::
+[[D-BPRD3]]
 
-:::{.definition title="Normal Core of a subgroup"}
-The largest normal subgroup of $G$ containing $H$:
-\[
-H_G = \Intersect_{g\in G} gHg^{-1} = \gens{ N: N \normal G ~\&~ N \leq H} = \ker \psi
-.\]
-where
-\[
-\psi: G &\to \Aut(G/H) \\
-g &\mapsto (xH\mapsto gxH)
-\]
-:::
+[[D-QMVEB]]
 
-:::{.theorem title="Fratini's Argument"}
-If $H\normal G$ and $P \in \mathrm{Syl}_p(G)$, then $H N_G(P) = G$ and $[G: H]$ divides $\abs{N_G(P)}$.
-:::
+[[T-4XKGD]]
 
 ### Exercises
 
@@ -88,27 +56,17 @@ If $H\normal G$ and $P \in \mathrm{Syl}_p(G)$, then $H N_G(P) = G$ and $[G: H]$ 
 
 ## Nilpotent Groups
 
-:::{.definition title="Nilpotent"}
-A group $G$ is **nilpotent** iff $G$ has a terminating upper central series.
-:::
+[[D-53JVH]]
 
 > Moral: the adjoint map is nilpotent.
 
-:::{.theorem title="Characterization of Nilpotent Groups"}
-$G$ is nilpotent iff $G$ has an upper central series terminating at $G$.
-:::
+[[T-7PU33]]
 
-:::{.theorem title="Characterization of Nilpotent Groups"}
-$G$ is nilpotent iff $G$ has a lower central series terminating at $1$.
-:::
+[[T-4INET]]
 
-:::{.theorem title="Nilpotents Have All Sylows Normal"}
-A group $G$ is nilpotent iff all of its Sylow $p\dash$subgroups are normal for every $p$ dividing $\abs{G}$.
-:::
+[[T-GM7EB]]
 
-:::{.theorem title="Nilpotent Implies Maximal Normals"}
-A group $G$ is nilpotent iff every maximal subgroup is normal.
-:::
+[[T-OHEFT]]
 
 :::{.proposition}
 For $G$ a finite group, TFAE:
@@ -132,9 +90,7 @@ For $G$ a finite group, TFAE:
 
 ## Rings
 
-:::{.definition title="Gorenstein Rings"}
-A commutative Noetherian ring $R$ is **Gorenstein** iff $R$ viewed as an $R\dash$module has finite injective dimension.
-:::
+[[D-DU4UQ]]
 
 :::{.example title="Why care about Gorenstein rings?"}
 If $R\in \gr\kAlg$ with $\dim_k R < \infty$, then $R$ decomposes as $R = R_0 \oplus R_1 \oplus \cdots R_n$ with $R_0 \da k$, and $R$ is Gorenstein iff $R$ satisfies "Poincaré duality": $\dim_k R_0 = \dim_k R_m = 1$ and there is a perfect pairing $R_i \tensor_k R_{n-j} \to R_n$.

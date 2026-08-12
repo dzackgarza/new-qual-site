@@ -1,0 +1,26 @@
+---
+schema: qual/card@1
+id: D-NQZUY
+kind: definition
+title: "$R\\dash$modules"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.definition title="$R\dash$modules"}
+Four properties:
+
+- $r(x+y) = rx + ry$
+- $(r+s)x = rs + sx$
+- $(rs)x= r(s(x))$
+- $1_Rx = x$
+
+Note that $M$ is additionally an $R\dash$algebra if the multiplication map is $R\dash$bilinear and so given by $m: M^{\tensor_R 2}\to M$ satisfying
+\[
+r. m(a\tensor b) = m(r.a \tensor b) = m(a\tensor r.b) && \forall r\in R, a,b \in M
+.\]
+
+:::

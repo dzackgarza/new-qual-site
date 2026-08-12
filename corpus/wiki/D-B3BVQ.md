@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Locally Finite"}
+
+::: {.definition title="Locally Finite"}
 A collection of subsets $\mcs$ of $X$ is **locally finite** iff each point of $M$ has a neighborhood that intersects at most finitely many elements of $\mcs$.
 :::

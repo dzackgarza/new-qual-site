@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Homotopy Extension Property"}
 
+::: {.definition title="Homotopy Extension Property"}
 :::

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Ext Group"}
 
+::: {.definition title="Ext Group"}
 :::

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Oriented manifold"}
 
+::: {.definition title="Oriented manifold"}
 :::

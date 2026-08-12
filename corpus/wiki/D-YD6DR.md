@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="R-orientability"}
 
+::: {.definition title="R-orientability"}
 :::

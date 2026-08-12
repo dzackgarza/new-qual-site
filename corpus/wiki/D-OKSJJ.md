@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Inverse Limit"}
 
+::: {.definition title="Inverse Limit"}
 :::

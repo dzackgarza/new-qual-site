@@ -1,0 +1,15 @@
+---
+schema: qual/card@1
+id: D-GIGM2
+kind: definition
+title: "Nilpotent"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.definition title="Nilpotent"}
+An element $r\in R$ is **nilpotent** if $r^n = 0$ for some $n \in \ZZ^{\geq 0}$.
+:::

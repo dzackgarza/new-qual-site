@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Colimit"}
+
+::: {.definition title="Colimit"}
 For a directed system $(X_{i}, f_{ij})$, the **colimit** is an object $X$ with a sequence of projections $\pi_{i}:X\to X_{i}$ such that for any $Y$ mapping into the system, the following diagram commutes:
 
 \begin{tikzcd}
@@ -21,13 +22,15 @@ For a directed system $(X_{i}, f_{ij})$, the **colimit** is an object $X$ with a
 \cdots \arrow[r] & X_{j} \arrow[rrrr, "f_{ij}"] &  &                                                                                    &  & X_{i} \arrow[r] & \cdots
 \end{tikzcd}
 
-:::{.example title="of colimits"}
+::: {.example title="of colimits"}
 \envlist
 
 - Products
+
 - Pullbacks
+
 - Inverse / projective limits
+
 - The \( p\dash \)adic integers \( \ZZ_{p} \).
 :::
-
 :::

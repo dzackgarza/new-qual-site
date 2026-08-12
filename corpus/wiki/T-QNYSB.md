@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Lefschetz Duality"}
+
+::: {.theorem title="Lefschetz Duality"}
 Todo
 :::

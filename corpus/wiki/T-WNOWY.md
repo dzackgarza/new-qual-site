@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Borsuk-Ulam"}
+
+::: {.theorem title="Borsuk-Ulam"}
 For every $S^n \mapsvia{f} \RR^n \exists x\in S^n$ such that $f(x) = f(-x)$.
 :::

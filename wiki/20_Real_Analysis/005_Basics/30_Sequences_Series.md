@@ -8,13 +8,7 @@ order: 35
 
 ## Sequences of functions
 
-:::{.definition title="limsup of functions"}
-For $f:A\to \RR$,
-\[
-\limsup_{x\to y} f(x) \da \lim_{\eps\to 0} \sup f\qty{A \intersect B_\eps(y) \smts{y}}
-.\]
-
-:::
+[[D-S2YWR]]
 
 :::{.example title="?"}
 A series of continuous functions that does *not* converge uniformly but is still continuous:
@@ -31,12 +25,7 @@ Take $x = 1/n^2$.
 $\limsup$ is largest limit of a convergent subsequence, $\liminf$ is the smallest.
 :::
 
-:::{.proposition title="The Cauchy condensation test"}
-For $\ts{a_k}$ is a non-increasing sequence in $\RR$ then
-\[
-\sum_{k\geq 1} a_k < \infty \iff \sum_{k\geq 1} 2^k a_{2^k}<\infty
-.\]
-:::
+[[PR-4EVYE]]
 
 :::{.proof title="showing a useful trick"}
 Show that
@@ -54,92 +43,33 @@ where each group with $a_k$ has $2^k$ terms.
 
 ## Series
 
-:::{.proposition title="Comparison Test"}
-If $0\leq a_n \leq b_n$, then 
+[[PR-P6NHI]]
 
-- $\sum b_n < \infty \implies \sum a_n < \infty$, and 
-- $\sum a_n = \infty \implies \sum b_n = \infty$.
+[[PR-UJ64S]]
+[[C-3S4XS]]
+[[PR-GT5RS]]
 
-:::
+[[PR-OGMDS]]
 
-:::{.proposition title="Small Tails for Series of Functions"}
-If $\sum f_n$ converges then $f_n \to 0$ uniformly.
-:::
-:::{.corollary title="Term by Term Continuity Theorem"}
-If $f_n$ are continuous and $\sum f_n \to f$ converges uniformly, then $f$ is continuous.
-:::
-:::{.proposition title="Cauchy criterion for sums"}
-$f_n$ are uniformly Cauchy (so $\norm{f_n - f_m}_\infty < \eps$) iff $f_n$ is uniformly convergent.
-:::
+[[PR-6OHTJ]]
 
-:::{.proposition title="Sufficient condition for Taylor convergence"}
-Given a point $c$ and some $\varepsilon>0$, if $f \in C^\infty(I)$ and there exists an $M$ such that 
-$$
-x \in N_\varepsilon(c) \implies \abs{f^{(n)}(x)} \leq M^n
-$$
-then the Taylor expansion about $c$ converges on $N_\varepsilon(c)$.
-:::
+[[PR-LEDI3]]
 
-:::{.proposition title="p-tests"}
-Let $n$ be a fixed dimension and set $B = \theset{x\in \RR^n \suchthat \norm{x} \leq 1}$. 
-\[
-\sum \frac 1 {n^p} < \infty &\iff p>1 \\
-\int_\varepsilon^\infty \frac 1 {x^p} < \infty 
-&\iff p>1 \\
-\int_0^1 \frac 1 {x^p} < \infty 
-&\iff p<1 \\
-\int_B \frac{1}{\abs{x}^p} < \infty &\iff p < n \\
-\int_{B^c} \frac{1}{\abs{x}^p} < \infty &\iff p > n \\
-.\]
-:::
+[[C-VSE32]]
 
-:::{.proposition title="Small Tails for Series of Functions"}
-\[
-\sum f_n < \infty \implies \norm{f_n}_\infty \convergesto{n\to\infty}0
-.\]
+[[PR-4RWAG]]
 
-:::
-
-:::{.corollary title="Term by Term Continuity Theorem"}
-\[
-f_n \text{ cts},\, \norm{\sum_{k\leq N} f_n \to F}_\infty \convergesto{N\to\infty} 0 \implies F \text{ cts}
-.\]
-:::
-
-:::{.proposition title="Cauchy criterion for sums"}
-Uniformly Cauchy iff uniformly convergent, i.e.
-\[
-\norm{f_n - f_m} \convergesto{m, n\to \infty} 0 \iff \exists f,\, \norm{f_n - f} \convergesto{n\to\infty} 0
-.\]
-
-:::
-
-:::{.theorem title="Lagrange and Cauchy Remainders"}
-If $f$ is $n$ times differentiable on a neighborhood of a point $p$, say $N_\delta(p)$, then for all points $x$ in the deleted neighborhood $N_\delta(p) - \theset{p}$ , there exists a point $\xi$ strictly between $x$ and $p$ such that
-\[
-x \in N_\delta(p)-\theset{p} \implies f(x) 
-&= \sum_{k=0}^{n-1} \frac{f^{(k)}(p)}{k!}(x-p)^k + \frac{f^{(n)}(\xi)}{n!}(x-p)^n \\ \\
-&= \sum_{k=0}^{n-1} \frac{f^{(k)}(p)}{k!}(x-p)^k + \int_c^x \frac{1}{n!} \dd{^n f}{x^n}(t) (x-t)^n ~dt
-\]
-:::
+[[T-EWZ5U]]
 
 ## Uniform Convergence
 
-:::{.proposition title="Testing Uniform Convergence: The Sup Norm Test"}
-$f_n \to f$ uniformly iff there exists an $M_n$ such that $\norm{f_n - f}_\infty \leq M_n \to 0$.
-:::
+[[PR-WUZSG]]
 
 :::{.remark title="Negating the Sup Norm test"}
 **Negating**: find an $x$ which depends on $n$ for which $\norm{f_n}_\infty > \eps$ (negating small tails) or $\norm{f_n - f_m} > \eps$ (negating the Cauchy criterion).
 :::
 
-:::{.proposition title="$C(I)$ is complete"}
-The space $X = C([0, 1])$, continuous functions $f: [0, 1] \to \RR$, equipped with the norm 
-\[
-\norm{f}_\infty \da \sup_{x\in [0, 1]} \abs{f(x)}
-\]
-is a **complete** metric space.
-:::
+[[PR-RWROV]]
 
 :::{.proof}
 \envlist
@@ -172,8 +102,4 @@ is a **complete** metric space.
 In other cases, you may need to show the limit is bounded, or has bounded derivative, or whatever other conditions define $X$.
 :::
 
-:::{.theorem title="Weierstrass Approximation"}
-If $[a, b] \subset \RR$ is a closed interval and $f$ is continuous, then for every $\eps> 0$ there exists a polynomial $p_\eps$ such that $\norm{f- p_\eps}_{L^\infty([a, b])} \converges{\eps \to 0}\to 0$.
-
-Equivalently, polynomials are dense in the Banach space $C([0, 1], \norm{\wait}_\infty)$.
-:::
+[[T-3QNBQ]]

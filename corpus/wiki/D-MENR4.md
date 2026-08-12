@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Eilenberg-MacLane Space"}
 
+::: {.definition title="Eilenberg-MacLane Space"}
 :::

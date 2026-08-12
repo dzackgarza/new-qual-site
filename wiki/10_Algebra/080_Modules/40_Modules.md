@@ -2,51 +2,16 @@
 
 ## Definitions and Basics
 
-:::{.definition title="$R\dash$modules"}
-Four properties:
+[[D-NQZUY]]
 
-- $r(x+y) = rx + ry$
-- $(r+s)x = rs + sx$
-- $(rs)x= r(s(x))$
-- $1_Rx = x$
-
-Note that $M$ is additionally an $R\dash$algebra if the multiplication map is $R\dash$bilinear and so given by $m: M^{\tensor_R 2}\to M$ satisfying
-\[
-r. m(a\tensor b) = m(r.a \tensor b) = m(a\tensor r.b) && \forall r\in R, a,b \in M
-.\]
-
-:::
-
-:::{.definition title="R-modules"}
-Four properties:
-
-- $r(x+y) = rx + ry$
-- $(r+s)x = rs + sx$
-- $(rs)x= r(s(x))$
-- $1_Rx = x$
-
-Note that $M$ is additionally an $R\dash$algebra if the multiplication map is $R\dash$bilinear and so given by $m: M^{\tensor_R 2}\to M$ satisfying
-\[
-r. m(a\tensor b) = m(r.a \tensor b) = m(a\tensor r.b) && \forall r\in R, a,b \in M
-.\]
-
-:::
+[[D-7563L]]
 
 
-:::{.proposition title="The one-step submodule test"}
-$N\subseteq M$ is an $R\dash$submodule iff $N$ is nonempty and for every $r\in R$ and $x, y \in N$, we have $rx+y\in N$.
-:::
+[[PR-TAPZF]]
 
-:::{.definition title="Module Morphisms"}
-A map $f: M\to N$ is a **morphism of modules** iff $f(rm + n) = rf(m) + f(n)$.
-:::
+[[D-JUYFQ]]
 
-:::{.proposition title="One-step module morphism test"}
-A map $\phi: M\to N$ is a morphism in $\rmod$ iff
-\[
-\phi(r.x + y) = r.\phi(x) + \phi(y) \in N && \forall r\in R, x,y\in M
-.\]
-:::
+[[PR-JBDUI]]
 
 
 :::{.remark}
@@ -54,58 +19,22 @@ Quotients of modules are easier to reason about additively, writing $M/N = \ts{x
 Then $(x + N) + (y + N) = (x+y) + N$ and $(x+N)(y+N) = (xy) + N$.
 :::
 
-:::{.definition title="Simple modules"}
-A module is **simple** iff it has no nontrivial proper submodules.
-:::
+[[D-CRWZ7]]
 
-:::{.definition title="Indecomposable modules"}
-A module $M$ is **decomposable** iff it admits a direct sum decomposition $M \cong M_1 \oplus M_2$ with $M_1, M_2 \neq 0$.
-An **indecomposable** module is defined in the obvious way.
-:::
+[[D-4HEUB]]
 
-:::{.definition title="Cyclic modules"}
-A module $M$ is **cyclic** if there exists a single generator $m\in M$ such that $M = mR \da \gens{ m }$.
-:::
+[[D-HY7UU]]
 
 ## Structure Theorems
 
-:::{.proposition title="Isomorphism theorems"}
-\[
-M / \ker \phi &\cong \im \phi \\
-{A+B \over B} &\cong {A\over A \intersect B} \\
-{M/A \over B/A} &\cong {M\over B} \\
-\correspond{
-  \text{Submodules of } M \\ \text{containing }N
-}
-&\mapstofrom
-\correspond{
-  \text{Submodules of } M/N
-}
-\\
-A &\mapstofrom A/N
-.\]
+[[PR-DJZLY]]
 
-Note that the lattice correspondence commutes with sums and intersections of submodules.
-
-:::
-
-:::{.proposition title="Recognizing direct sums"}
-If $M_1, M_2 \leq M$ are submodules, then $M = M_1 \oplus M_2$ if the following conditions hold:
-
-- $M_1 + M_2 = M$
-- $M_1 \intersect M_2 = 0$
-:::
+[[PR-RIJSC]]
 
 
 ## Exact Sequences
 
-:::{.definition title="Exact Sequences"}
-A sequence of \(R\dash\)module morphisms 
-\[
-0 \mapsvia{d_1} A \mapsvia{d_2} B \mapsvia{d_3} C \to 0
-\]
-is *exact* iff $\im d_i = \ker d_{i+1}$.
-:::
+[[D-BJYH3]]
 
 
 :::{.remark}
@@ -113,25 +42,9 @@ Note that $C\cong B/d_1(A)$ always, but $B$ is not a direct sum of the outer ter
 :::
 
 
-:::{.definition title="Split Exact Sequences"}
-A short exact sequence 
-\[
-\xi: 0 \to A \mapsvia{d_1} B \mapsvia{d_2} C \to 0
-\]
-has a **right-splitting** iff there exists a map $s: C\to B$ such that $d_2 \circ s = \id_{C}$.
-$\xi$ has a **left-splitting** iff there exists a map $t:B\to A$ such that $t \circ d_1 = \id_A$.
-:::
+[[D-3JJJN]]
 
-:::{.proposition title="Equivalent conditions for splitting SESs"}
-Let $\xi: 0 \to A \mapsvia{d_1} B \mapsvia{d_2}  C \to 0$ be a SES, then TFAE
-
-- $\xi$ admits a right-splitting $s: C\to B$.
-- $C$ is projective.
-- $\xi$ admits a left-splitting $t: B\to A$.
-- $A$ is injective.
-- $\xi$ is isomorphic to a SES of the form $0\to A \to A \oplus C \to C \to 0$.
-
-:::
+[[PR-OODAV]]
 
 :::{.proof title="?"}
 Right-splitting implies direct sum:
@@ -149,56 +62,20 @@ d_2(b - sd_2(b)) = d_2(b) - d_2sd_2(b) = d_2(b) - d_2(b) = 0
 
 ## Free and Projective Modules
 
-:::{.definition title="Free Module"}
-A **free** module $M$ is a module satisfying any of the following conditions:
-
-- A universal property:
-  There is a set \( \mathcal{B}  \) and a set map \( M \mapsvia{\iota} \mathcal{B}  \) such that every set map \( \mathcal{B} \mapsvia{N} \) lifts:
-
-\begin{tikzcd}
-	M \\
-	\\
-	{\mathcal{B}} && N
-	\arrow["f", from=3-1, to=3-3]
-	\arrow["{\tilde f}", dashed, from=1-1, to=3-3]
-	\arrow["\iota", hook, from=3-1, to=1-1]
-\end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsMyxbMCwyLCJcXG1hdGhjYWx7Qn0iXSxbMCwwLCJNIl0sWzIsMiwiTiJdLFswLDIsImYiXSxbMSwyLCJcXHRpbGRlIGYiLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMCwxLCJcXGlvdGEiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dXQ==)
-
-- Existence of a basis:
-
-  There is linearly independent (so $\sum r_i \beta_i = 0 \implies r_i = 0$) spanning set (so \( m\in M \implies m = \sum r_i \beta_i \) ) of the form \( \mathcal{B} \da \ts{ \beta_i }_{i\in I} \), 
-
-- Direct sum decomposition:
-
-  $M$ decomposes as $M \cong \bigoplus_{i\in I} \beta_i R$, a sum of cyclic submodules.
-
-:::
+[[D-LIEMF]]
 
 :::{.example title="A non-free module"}
 $\ZZ/6$ is a $\ZZ\dash$module that is *not* free, since the element \( [3] \) is a torsion element, where \( 2[3] = [6] = [0] \).
 This uses the fact that free modules over a PID are torsionfree.
 :::
 
-:::{.definition title="Free rank"}
-If a module $M$ is free, the **free rank** of $M$ is the cardinality of any basis.
-:::
+[[D-IGB7I]]
 
-:::{.proposition title="?"}
-Every free \(R\dash\)module admits a basis (spanning $R\dash$linearly independent set).
-:::
+[[PR-DLPTR]]
 
-:::{.definition title="Torsion and torsionfree"}
-An element $m\in M$ is a **torsion element** if there exists a nonzero $r\in R$ such that $rm = 0_M$.
-A module \( M \) is **torsion-free** if and only if for every \( x\in M \), \( mx = 0_M \implies m=0_M \), i.e. $M$ has no nonzero torsion elements.
-Equivalently, defining $M_t \da \ts{ m\in M \st \exists r\in R, rm = 0_M }$ as the set of all torsion elements, $M$ is torsion free iff $M_t = 0$.
-If $M_t = M$, we say $M$ is a **torsion module**.
-:::
+[[D-ZJJ7G]]
 
-:::{.proposition title="Free implies torsionfree"}
-For $R$ an integral domain, any finitely generated free \(R\dash\)module $M$ is torsionfree.
-:::
+[[PR-4K4XZ]]
 
 :::{.proof title="that free implies torsionfree"}
 \envlist
@@ -221,37 +98,7 @@ This follows because any two elements $a/b, p/q$ are in a single ideal, since ta
 So any basis has size one, which would mean $\QQ = \ts{ \pm 1/d, \pm 2/d, \cdots }$ which in particular doesn't include the average of the first two terms.
 :::
 
-:::{.definition title="Projective Modules"}
-A module $P$ is **projective** iff it satisfies any of the following conditions:
-
-- A universal property: for every surjective $N \mapsvia{g} M$ and $P \mapsvia{f} M$, the following lift exists:
-
-\begin{tikzcd}
-	&& P \\
-	\\
-	N && M && 0
-	\arrow["g", two heads, from=3-1, to=3-3]
-	\arrow[from=3-3, to=3-5]
-	\arrow["f", from=1-3, to=3-3]
-	\arrow["{\exists \tilde f}"', dashed, from=1-3, to=3-1]
-\end{tikzcd}
-
-> [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMiwwLCJQIl0sWzIsMiwiTSJdLFswLDIsIk4iXSxbNCwyLCIwIl0sWzIsMSwiZyIsMCx7InN0eWxlIjp7ImhlYWQiOnsibmFtZSI6ImVwaSJ9fX1dLFsxLDNdLFswLDEsImYiXSxbMCwyLCJcXGV4aXN0cyBcXHRpbGRlIGYiLDIseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
-
-- Direct summand:
-
-  $P$ is a direct summand of a free module $F$, so $F = P \oplus T$ for some module $T\leq F$.
-
-- Splitting:
-
-  For every SES $0\to A\to B\to P\to 0$, there is a right section $P\to B$ such that $P\to B\to P = \id_P$.
-
-  > Note that this implies $B\cong \im(P\to B) \oplus \ker(B\to P)$.
-  
-- Exactness:
-
-  The (always left-exact) covariant hom functor $\Hom(P, \wait)$ is right-exact.
-:::
+[[D-RHJMK]]
 
 :::{.remark}
 There is a nice way to remember the right diagrams for injective and projective modules.
@@ -277,9 +124,7 @@ The slogan is that morphisms *out* of a projective module can be *pulled* back t
 
 :::
 
-:::{.proposition title="Free implies projective"}
-Any free $M\in \rmod$ is projective.
-:::
+[[PR-RPL4Q]]
 
 :::{.proof title="?"}
 \envlist
@@ -346,24 +191,9 @@ Since free implies torsionfree, \( R_1 \) can not be a free \(R\dash\)module.
 
 ## Classification of Modules over a PID
 
-:::{.proposition title="STFGMPID"}
-Let $M$ be a finitely generated modules over a PID $R$.
-Then there is an **invariant factor** decomposition
+[[PR-UVUS6]]
 
-\begin{align*}
-M \cong F \bigoplus_{i=1}^m R/(r_i) \quad\text{where } r_1 \divides r_2 \divides \cdots
-\end{align*}
-
-and similarly an **elementary divisor** decomposition:
-\[
-M \cong F \bigoplus_{i=1}^n R/ \gens{p_i^{e_i}}
-\]
-where $F$ is free of finite rank and the $p_i$ are *not necessarily distinct* primes in $R$.
-:::
-
-:::{.proposition title="Principal Ideals are Free"}
-If $I \normal R$ is an ideal of $R$, then $I$ is a free $R\dash$module iff $I$ is a principal ideal.
-:::
+[[PR-ASW5L]]
 
 :::{.proof title="?"}
 $\implies$:
@@ -406,66 +236,23 @@ This splits since $F$ is free and thus projective, so $F\cong M \oplus M_t$.
 
 ## Algebraic Properties
 
-:::{.definition title="Module structure on tensor products"}
-\[
-r\actson (m\tensor n) \da (r\actson m)\tensor n
-.\]
-:::
+[[D-B5X33]]
 
-:::{.proposition title="?"}
-If $\dim_k V, \dim_k W < \infty$ then there is an isomorphism
-\[
-V\dual \tensor_k W \mapsvia{\sim} \Hom_{\kmod}(V, W) \\
-\tilde v \tensor w &\mapsto \tilde v(\wait) w
-.\]
-:::
-:::{.proposition title="?"}
-If either of $\dim_k V, \dim_k W$ is finite, then
-\[
-V\dual \tensor_k W\dual \mapsvia{\sim} (V\tensor W)\dual \\
-v\tensor w &\mapsto (x \tensor y \mapsto v(x) w(y))
-.\]
-
-:::
-:::{.proposition title="?"}
-\[
-\Hom_{\kmod}(V, W) \mapsvia{\sim} \Hom_{\kmod}(W, V)\dual \\
-T &\mapsto \Tr(T \circ \wait )
-.\]
-:::
+[[PR-O5YUI]]
+[[PR-BHUO6]]
+[[PR-TGFTL]]
 
 
-:::{.proposition title="?"}
-If $\dim_k V, \dim_k W < \infty$ then there is an isomorphism
-\[
-V\dual \tensor_k W &\mapsvia{\sim} \Hom_{\kmod}(V, W) \\
-\tilde v \tensor w &\mapsto \tilde v(\wait) w
-.\]
-:::
+[[PR-LPJLD]]
 
 
-:::{.proposition title="?"}
-If either of $\dim_k V, \dim_k W$ is finite, then
-\[
-V\dual \tensor_k W\dual &\mapsvia{\sim} (V\tensor W)\dual \\
-v\tensor w &\mapsto (x \tensor y \mapsto v(x) w(y))
-.\]
-
-:::
+[[PR-5PDNQ]]
 
 
-:::{.proposition title="?"}
-\[
-\Hom_{\kmod}(V, W) &\mapsvia{\sim} \Hom_{\kmod}(W, V)\dual \\
-T &\mapsto \Tr(T \circ \wait )
-.\]
-:::
+[[PR-GXII2]]
 
 
-:::{.proposition title="?"}
-If $T:V \injects W$ is injective, then $T\tensor \one_X: V\tensor X \injects W\tensor X$ is also injective for any $X$.
-Thus $F(\wait) = (\wait \tensor X)$ is right-exact for any $X$.
-:::
+[[PR-KX7L7]]
 
 
 

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Totally bounded if and only if Cauchy subsequences exist"}
+
+::: {.theorem title="Totally bounded if and only if Cauchy subsequences exist"}
 A metric space is totally bounded iff every sequence has a Cauchy subsequence.
 :::

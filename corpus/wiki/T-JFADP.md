@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Closed in Hausdorff $\implies$ compact"}
+
+::: {.theorem title="Closed in Hausdorff $\implies$ compact"}
 A closed subset of a Hausdorff space is compact.
 :::

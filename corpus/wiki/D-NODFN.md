@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Direct Limit"}
 
+::: {.definition title="Direct Limit"}
 :::

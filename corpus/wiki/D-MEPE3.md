@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="N-cell"}
 
+::: {.definition title="N-cell"}
 :::

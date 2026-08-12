@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Relative cycles"}
 
+::: {.definition title="Relative cycles"}
 :::

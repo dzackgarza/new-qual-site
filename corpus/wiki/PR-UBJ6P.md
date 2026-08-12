@@ -10,11 +10,14 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Fundamental theorem of covering spaces, Hatcher 1.39"}
-If $X$ is 
+
+::: {.proposition title="Fundamental theorem of covering spaces, Hatcher 1.39"}
+If $X$ is
 
 - Path-connected,
+
 - Locally path-connected, and
+
 - Semilocally simply connected,
 
 then $X$ admits a universal cover $\hat{X} \to X$: if $C \mapsvia{q} X$ is any other covering map with $C$ connected, then there exists a covering map $\tilde p: \hat{X} \to C$ making the following diagram commute:
@@ -35,8 +38,10 @@ Note that by the universal property, $\hat X$ is unique up to homeomorphism when
 Moreover, letting $\tilde X \to X$ be an arbitrary path-connected cover and $H\da p_* \pi_1(\tilde X; \tilde x_0), G\da \pi_1(X; x_0)$,
 
 - The $\tilde X\to X$ is Galois iff $H\normal G$,
-- $\Deck(\tilde X\to X) \cong N_{G}(H)/H$ where $N$ is the normalizer in $G$ of $H$,
-- $\Deck(\tilde X\to X) \cong G/H$ if $\tilde X\to X$ is Galois,
-- $\Deck(\hat{X} \to X) \cong G$.
 
+- $\Deck(\tilde X\to X) \cong N_{G}(H)/H$ where $N$ is the normalizer in $G$ of $H$,
+
+- $\Deck(\tilde X\to X) \cong G/H$ if $\tilde X\to X$ is Galois,
+
+- $\Deck(\hat{X} \to X) \cong G$.
 :::

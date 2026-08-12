@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Neighborhood"}
+
+::: {.definition title="Neighborhood"}
 A **neighborhood** of a point $x$ is *any* open set containing $x$.
 :::

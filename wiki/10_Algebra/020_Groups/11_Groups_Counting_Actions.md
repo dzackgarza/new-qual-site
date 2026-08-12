@@ -1,9 +1,6 @@
 ## Counting Theorems
 
-:::{.theorem title="Lagrange's Theorem"}
-\[H \leq G \implies \# H \divides \# G.\]
-Moreover, there is an equality $[G:H] = \# G/ \# H$ when $G$ is finite.
-:::
+[[T-F4O3E]]
 
 :::{.proof title="of Lagrange's theorem"}
 Write $G/H = \ts{g_0 H, g_1 H, \cdots, g_N H}$ for some $N \da [G:H]$.
@@ -14,15 +11,7 @@ G = \disjoint_{k \leq N} g_k H \implies \#G = \sum_{k\leq N} \# \qty{g_k H} = \s
 so $\# G = N \# H$, $\#H$ divides $\# G$ and $N = [G:H]$ divides $\# G$.
 :::
 
-:::{.corollary title="?"}
-\[
-\# G = \#(G/H) \#H \da [G:H] \, \# H
-,\]
-or written another way,
-\[
-\#(G/H) = \# G/ \# H
-.\]
-:::
+[[C-XRC67]]
 
 :::{.corollary}
 The order of every element divides the size of $G$, i.e.
@@ -45,12 +34,7 @@ $x\not\in H$, so $H\neq xH$, but two must be equal:
 - $xH = x^2H$: the fundamental theorem of cosets forces $x\inv x^2 \in H$, so $x\in H$. $\contradiction$
 :::
 
-:::{.theorem title="Cauchy's Theorem"}
-For every prime $p$ dividing $\abs{G}$. there is an element (and thus a subgroup) of order $p$.
-
-> This is a partial converse to Lagrange's theorem, and strengthened by Sylow's theorem.
-
-:::
+[[T-3KCD6]]
 
 :::{.proof title="?"}
 See [https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf](https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf).
@@ -58,22 +42,7 @@ See [https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf](https://kco
 
 ## Group Actions
 
-:::{.definition title="Group Action"}
-An action of $G$ on $X$ is a group morphism
-\[
-\phi:G \times X &\rightarrow X \\
-(g,x) &\mapsto g x
-\]
-or equivalently
-\[
-\phi: G &\to \Aut(X) \\
-g &\mapsto (x \mapsto \phi_g (x) \definedas g\cdot x)
-\]
-satisfying
-
-1. $e\cdot x = x$
-2. $g\cdot (h\cdot x) = (gh)\cdot x$
-:::
+[[D-3T6O2]]
 
 :::{.remark title="Reminder of notation"}
 For a group $G$ acting on a set $X$,
@@ -102,19 +71,10 @@ For any group action, the kernel is the intersection of all stabilizers:
 .\]
 :::
 
-:::{.definition title="Transitive Group Action"}
-A group action $G\actson X$ is **transitive** iff for all $x, y\in X$ there exists a $g\in G$ such that $g\cdot x = x$.
-Equivalently, the action has a single orbit.
-:::
+[[D-KGGWK]]
 
 
-:::{.proposition title="Orbit Stabilizer Isomorphism"}
-If $G\actson X$ transitively, then for any choice of $x\in X$ there is an isomorphism of sets given by
-\[
-\Phi: G/G_{x} &\mapsvia{\sim} X \\
-gG_{x} &\mapsto g\actson x
-.\]
-:::
+[[PR-GSDKO]]
 
 :::{.proof title="of orbit stabilizer"}
 \envlist
@@ -131,11 +91,7 @@ gG_{x} &\mapsto g\actson x
 
 :::
 
-:::{.proposition title="Stabilizers of all orbit reps are conjugate"}
-If $X\in \GSets$, then for any points $x_i\in X$ in the same orbit, the stabilizers $G_{x_0}$ and $G_{x_1}$ are conjugate.
-
-Note that if $G$ acts transitively, this says all stabilizers are conjugate.
-:::
+[[PR-KGHJ2]]
 
 :::{.proof title="that stabilizers are conjugate"}
 \envlist
@@ -154,14 +110,7 @@ so $H_x = g\inv H_y g$.
 
 :::
 
-:::{.theorem title="Orbit-Stabilizer"}
-
-\[\# {Gx} = [G: G_x] = \# {G} / \#{G_x} \quad \text{if $G$ is finite}
-.\]
-
-> Mnemonic: $G/G_x \cong Gx$.
-
-:::
+[[T-KANHW]]
 
 ## Examples of Orbit-Stabilizer and the Class Equation
 
@@ -173,10 +122,7 @@ X = \Fix(\phi) \Disjoint_{x}' \Orb(x)
 where $\Fix(\phi)$ is the union of all orbits of size 1, and the remaining union is over distinct nontrivial orbits, taking one representative $x$ from each.
 :::
 
-:::{.proposition title="Simple groups with a nontrivial subgroup embed into symmetric groups"}
-An application of group actions:
-if $G$ is simple, $H < G$ proper, and $[G:H] = n$, then there exists an injective map $\phi: G \injects S_n$.
-:::
+[[PR-5FGA7]]
 
 :::{.proof}
 \envlist
@@ -231,31 +177,11 @@ Now taking cardinalities yields the class equation:
 
 :::
 
-:::{.corollary title="The Class Equation"}
-\[
-\# {G} = \# {Z(G)} + \sum_{\substack{\text{One $g$ from} \\ \text{each nontrivial} \\ \text{conj. class}}} [G: Z(g)]
-\]
-
-As a reminder,
-\[
-Z(g) &= \ts{h\in G \st hgh\inv = g} \text{ is the centralizer of } g\\
-Z(G) &= \ts{h\in G \st hgh\inv = g\,\, \forall g\in G} = \Intersect_{g\in G} Z(g) \text{ is the center of } G
-.\]
-
-:::
+[[C-A6UAR]]
 
 [[E-6AOD7]]
 
-:::{.corollary title="Burnside's Lemma"}
-For $G$ a finite group acting on $X$,
-\[
-\# {X/G} = \frac{1}{\# G }\sum_{g\in G} \# \Fix(g)
-,\]
-where $X/G = \ts{\Orb(x_1), \cdots, \Orb(x_n)}$ is the set or orbits and $\Fix(g) = \ts{x\in X \st gx=x}$ are the fixed points under $g$.
-
-> Slogan: the number of orbits is equal to the average number of fixed points.
-
-:::
+[[C-CM7ZS]]
 
 :::{.proof title="of Burnside's Lemma"}
 Strategy: form the set $A \da \ts{ (g,x) \in G\cross X \st g\actson x = x }$ and write/count it in two different ways.
@@ -352,9 +278,7 @@ For a fixed proper subgroup $H< G$, let $G$ act on its cosets $X \da G/H \da \th
 
 :::
 
-:::{.proposition title="Application of translation action on cosets"}
-If $G$ is a finite group and $p\da [G:H]$ is the smallest prime dividing $\# G$, then $H\normal G$.
-:::
+[[PR-E6VI4]]
 
 :::{.proof title="?"}
 \envlist

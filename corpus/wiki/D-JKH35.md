@@ -10,7 +10,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Product topology"}
+
+::: {.definition title="Product topology"}
 For $(X, \tau_X)$ and $(Y, \tau_Y)$ topological spaces, defining
 \[
 \tau_{X \cross Y} \da \ts{U \cross V \st U\in \tau_X,\, V\in \tau_Y}

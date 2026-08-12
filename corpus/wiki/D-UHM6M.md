@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Second Countable"}
+
+::: {.definition title="Second Countable"}
 A space is *second-countable* iff it admits a countable basis.
 :::

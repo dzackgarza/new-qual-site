@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Smash Product"}
 
+::: {.definition title="Smash Product"}
 :::

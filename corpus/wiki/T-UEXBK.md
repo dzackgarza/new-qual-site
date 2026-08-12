@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="Closed subset of compact is compact"}
+
+::: {.theorem title="Closed subset of compact is compact"}
 A closed subset $A$ of a compact set $B$ is compact.
 :::

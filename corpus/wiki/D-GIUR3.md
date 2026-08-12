@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Lefschetz duality"}
 
+::: {.definition title="Lefschetz duality"}
 :::

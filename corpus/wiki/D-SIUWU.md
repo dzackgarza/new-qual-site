@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Short exact sequence"}
 
+::: {.definition title="Short exact sequence"}
 :::

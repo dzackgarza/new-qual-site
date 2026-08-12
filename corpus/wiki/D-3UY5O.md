@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Lefschetz Number"}
 
+::: {.definition title="Lefschetz Number"}
 :::

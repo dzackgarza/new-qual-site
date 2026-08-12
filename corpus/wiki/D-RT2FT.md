@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Surjection"}
+
+::: {.definition title="Surjection"}
 A map $\pi$ with a **right** inverse $f$ satisfying $$\pi \circ f = \id$$
 :::

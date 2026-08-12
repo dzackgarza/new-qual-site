@@ -10,20 +10,25 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Comparability of topologies"}
+
+::: {.definition title="Comparability of topologies"}
 Given two topologies $\tau_1, \tau_2$,
 
 - $\tau_1$ is **finer/stronger/larger** than $\tau_2$ iff $\tau_1 \contains \tau_2$ (idea: finer resolutions).
+
 - $\tau_1$ is **coarser/weaker/smaller** than $\tau_2$ iff $\tau_1 \iscontainedin \tau_2$.
 
 Two topologies are **comparable** if either $\tau_1 \subseteq \tau_2$ or $\tau_2 \subseteq \tau_1$.
 
-:::{.remark}
+::: {.remark}
 The set of all topologies on a given set $X$ forms a complete lattice bounded under inclusion:
 
 - $\sup(\tau_1, \tau_2) = \tau_1 \union \tau_2$
+
   - The finest topology is the discrete topology $\tau_{\terminal} \da 2^X$, where every set is open.
+
 - $\inf(\tau_1, \tau_2) = \gens{\tau_1 \intersect \tau_2}$, the topology *generated* by the intersection.
+
   - The coarsest topology is the indiscrete topology $\tau_{\initial} \da \ts{\emptyset, X}$.
 
 If $f:X\to Y$, then
@@ -53,15 +58,13 @@ If $f:X\to Y$, then
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNCxbMCwyLCJcXHRhdV8xKFkpIl0sWzAsMCwiXFx0YXVfMihZKSJdLFsyLDAsIlxcSG9tX1xcVG9wKFxcdGF1KFgpLCBcXHRhdV8yKFkpKSJdLFsyLDIsIlxcSG9tX1xcVG9wKFxcdGF1KFgpLCBcXHRhdV8yKFkpKSJdLFswLDFdLFsyLDNdLFs0LDUsIlxcSG9tX1xcVG9wKFgsIFxcd2FpdCkiLDAseyJzaG9ydGVuIjp7InNvdXJjZSI6MjAsInRhcmdldCI6MjB9fV1d)
 
-
 - Decreasing $\tau(X)$ or increasing $\tau(Y)$ makes it *easier* for $f$ to be an open map.
 
 - For a fixed $X$, decreasing $\tau(X)$ makes it *easier* for sequences to converge in $X$.
 :::
 
-:::{.example title="?"}
+::: {.example title="?"}
 Write $\tau_\zar(X)$ for the Zariski topology on a space and $\tau_{\an}(X)$ for the classical/Euclidean topology.
 Then $\tau_\zar(\CC^n) < \tau_{\an}(\CC^n)$, i.e. the Zariski topology is strictly weaker than the Euclidean topology and has fewer open sets.
 :::
-
 :::

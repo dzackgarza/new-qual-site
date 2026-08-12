@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Weak Topology"}
 
+::: {.definition title="Weak Topology"}
 :::

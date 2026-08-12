@@ -106,14 +106,9 @@ order: 5
 
 # The Absolute Essentials
 
-:::{.proposition title="Convergent Sums Have Small Tails"}
-$$\sum a_n < \infty \implies a_n \to 0 \qtext{and} \sum_{k=N}^\infty a_n \converges{N\to\infty}\to 0$$
-:::
+[[PR-IGVTV]]
 
-:::{.theorem title="Uniform Limit Theorem"}
-If $f_n\to f$ pointwise and uniformly with each $f_n$ continuous, then $f$ is continuous. [^uniform_limit_is_cts]
-
-:::
+[[T-ERNLN]]
 
 :::{.proof}
 \envlist
@@ -129,26 +124,13 @@ If $f_n\to f$ pointwise and uniformly with each $f_n$ continuous, then $f$ is co
 - So just need to choose $N$ large enough and $\delta$ small enough to make all 3 $\varepsilon$ bounds hold.
 :::
 
-:::{.proposition title="Uniform Limits Commute with Integrals"}
-If $f_n \to f$ uniformly, then $\int f_n = \int f$.
-:::
+[[PR-L7LNZ]]
 
-:::{.proposition title="Weak $M\dash$Test"}
-If $f_n(x) \leq M_n$ **for a fixed $x$** where $\sum M_n < \infty$, then the series $f(x) = \sum f_n(x)$ converges pointwise.[^note_about_pointwise_convergence]
+[[PR-6WMSR]]
 
-:::
+[[PR-O2XFF]]
 
-:::{.proposition title="The Weierstrass $M\dash$Test"}
-If $\sup_{x\in A} \abs{f_n(x)} \leq M_n$ for each $n$ where $\sum M_n < \infty$, then $\sum_{n=1}^\infty f_n(x)$ converges uniformly and absolutely on $A$.
-[^m_test_suffices]
-Conversely, if $\sum f_n$ converges uniformly on $A$ then $\sup_{x\in A} \abs{f_n(x)} \to 0$. 
-It suffices to show $\abs{f_n(x)} \leq M_n$ for some $M_n$ not depending on $x$.
-
-:::
-
-:::{.proposition title="Borel Characterization of Measurable Sets"}
-If $E$ is Lebesgue measurable, then $E = H \disjoint N$ where $H \in F_\sigma$ and $N$ is null.
-:::
+[[PR-PIVFR]]
 
 :::{.proof title="of Borel characterization"}
 For every $\frac 1 n$ there exists a closed set $K_{n} \subset E$ such that $m(E\setminus K_{n}) \leq \frac 1 n$.
@@ -156,13 +138,7 @@ Take $K = \union K_{n}$, wlog $K_{n} \nearrow K$ so $m(K) = \lim m(K_{n}) = m(E)
 Take $N\da E\setminus K$, then $m(N) = 0$.
 :::
 
-:::{.theorem title="Measurable sets can be approximated by open/closed/compact sets."}
-Suppose $E$ is measurable; then for every $\eps>0$,
-
-1. There exists an open $O\supset E$ with $m(O\setminus E) < \eps$
-2. There exists a closed $F\subset E$ with $m(E\setminus F) < \eps$
-3. There exists a compact $K\subset E$ with $m(E\setminus K) < \eps$.
-:::
+[[T-IIKSW]]
 
 :::{.proof title="that measurable sets can be approximated"}
 \envlist
@@ -183,25 +159,7 @@ Suppose $E$ is measurable; then for every $\eps>0$,
 
 
 [[E-OMK54]]
-:::{.proposition title="Measurable Slices"}
-Let $E$ be a measurable subset of $\RR^n$. Then
-
-- For almost every $x\in \RR^{n_1}$, the slice $E_x \definedas \theset{y \in \RR^{n_2} \mid  (x,y) \in E}$ is measurable in $\RR^{n_2}$.
-
-- The function
-
-\[
-F: \RR^{n_1} &\to \RR \\
-x &\mapsto m(E_x) = \int_{\RR^{n_2}} \chi_{E_x} ~dy
-\]
-
-is measurable and 
-\[
-m(E) = \int_{\RR^{n_1}} m(E_x) ~dx 
-= \int_{\RR^{n_1}} \int_{\RR^{n_2}} \chi_{E_x} ~dy ~dx
-.\]
-
-:::
+[[PR-6NDTF]]
 
 :::{.proof title="of measurable slices"}
 \envlist
@@ -221,8 +179,5 @@ $\impliedby$:
 - Then explicitly, $f(x) = \chi_{A}$, which makes $f$ a measurable function.
 :::
 
-[^uniform_limit_is_cts]: Slogan: a uniform limit of continuous functions is continuous.
 
-[^note_about_pointwise_convergence]: Note that this is only pointwise convergence of $f$, whereas the full $M\dash$test gives uniform convergence.
 
-[^m_test_suffices]:

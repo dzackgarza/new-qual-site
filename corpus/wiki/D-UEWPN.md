@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Long exact sequence"}
 
+::: {.definition title="Long exact sequence"}
 :::

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Cellular Homology"}
 
+::: {.definition title="Cellular Homology"}
 :::

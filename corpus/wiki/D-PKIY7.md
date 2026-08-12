@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Projective Resolution"}
 
+::: {.definition title="Projective Resolution"}
 :::

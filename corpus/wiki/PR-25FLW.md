@@ -1,0 +1,15 @@
+---
+schema: qual/card@1
+id: PR-25FLW
+kind: proposition
+title: "Algebraic extensions of perfect fields are separable"
+classification:
+  areas:
+  - algebra
+  topics: []
+relations: []
+review: draft
+---
+:::{.proposition title="Algebraic extensions of perfect fields are separable"}
+If $\ch k = 0$ or $k$ is finite, then every *algebraic* extension $L/k$ is separable.
+:::

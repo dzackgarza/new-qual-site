@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Chain"}
+
+::: {.definition title="Chain"}
 An element $c \in C_{p}(X; R)$ can be represented as the singular $p$ simplex $\Delta^p \to X$.
 :::

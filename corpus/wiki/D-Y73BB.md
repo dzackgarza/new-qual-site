@@ -10,8 +10,9 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Kronecker Pairing"}
-A map pairing a chain with a cochain, given by 
+
+::: {.definition title="Kronecker Pairing"}
+A map pairing a chain with a cochain, given by
 \[
 H^n(X; R) \cross H_{n}(X; R) \to R \\ ([\psi, \alpha]) \mapsto \psi(\alpha)
 \]

@@ -5,22 +5,9 @@ $L^p$ convergence does not imply pointwise convergence or even a.e. convergence 
 
 :::
 
-:::{.proposition title="Dense subspaces of $L^2(I)$ "}
-The following are dense subspaces of $L^2([0, 1])$ and $L^1(\RR)$:
+[[PR-NFB7Q]]
 
-- Bounded measurable functions with bounded support
-- Simple functions
-- Step functions
-- $C_0([0, 1])$
-- Smoothly differentiable functions $C_0^\infty([0, 1])$
-- Smooth compactly supported functions $C_c^\infty$
-:::
-
-:::{.theorem title="?"}
-\[
-m(X) < \infty \implies \lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty 
-.\]
-:::
+[[T-4KKSH]]
 
 :::{.proof title="?"}
 Let $M = \norm{f}_\infty$.
@@ -47,9 +34,7 @@ We also have
 
 :::
 
-:::{.theorem title="Duals for $L^p$ spaces"}
-For $1\leq p< \infty$, $(L^p)\dual \cong L^q$.
-:::
+[[T-5BFVS]]
 
 :::{.proof title="$p=1$ case"}
 ?
@@ -61,17 +46,9 @@ For $1\leq p< \infty$, $(L^p)\dual \cong L^q$.
 Use Riesz Representation for Hilbert spaces.
 :::
 
-:::{.proposition title="$L^1$ is not quite the dual of $L^\infty$."}
-$L^1 \subset (L^\infty)\dual$, since the isometric mapping is always injective, but *never* surjective.
-:::
+[[PR-N7YFV]]
 
-:::{.proposition title="?"}
-\[
-f_k \converges{\ae}\to f \text{ and }
-\norm{f_k}_p \leq M
-\implies f\in L^p \text{ and } \norm{f}_p \leq M
-.\]
-:::
+[[PR-TWF4F]]
 
 :::{.proof title="?"}
 *Proof:* Apply Fatou to $\abs{f}^p$:
@@ -80,12 +57,7 @@ f_k \converges{\ae}\to f \text{ and }
 .\]
 :::
 
-:::{.proposition title="Continuity in $L^1$ holds for all $L^p$, translation operators are continuous"}
-\[
-f \text{ uniformly continuous }: \quad
-\norm{\tau_h f - f}_{L^p(X)} \convergesto{h\to 0} 0 && \forall p
-.\]
-:::
+[[PR-JX4YU]]
 
 :::{.proof title="?"}
 Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
@@ -95,11 +67,7 @@ Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 .\]
 :::
 
-:::{.proposition title="?"}
-\[
-(f, g) \in L^p\times L^q \implies f\convolve g \text{ uniformly continuous}
-.\]
-:::
+[[PR-3W4FO]]
 
 :::{.proof title="?"}
 Use Young's inequality
@@ -111,12 +79,7 @@ Use Young's inequality
 :::
 
 # $L^1$ Facts
-:::{.proposition title="Zero in $L^1$ iff zero almost everywhere"}
-For $f\in L^+$,
-\[
-\int f = 0 \quad\iff\quad f \equiv 0 \text{ almost everywhere}
-.\]
-:::
+[[PR-HFYSO]]
 :::{.proof}
 \envlist
 
@@ -139,13 +102,7 @@ For $f\in L^+$,
   0 < \int {1\over n} \chi_{E_n} \leq \int f
   .\]
 :::
-:::{.proposition title="Translation Invariance"}
-The Lebesgue integral is translation invariant, i.e.
-\[
-\int f(x) ~dx = \int f(x + h) ~dx &&\text{for any} h
-.\]
-
-:::
+[[PR-XAVMU]]
 :::{.proof}
 \envlist
 
@@ -160,18 +117,12 @@ The Lebesgue integral is translation invariant, i.e.
 - Similarly, $\tau_h \phi_n \nearrow \tau_h f$ so $\int \tau_h f \to \int f$
 - Finally $\theset{\int \tau_h \phi} = \theset{\int \phi}$ by step 1, and the suprema are equal by uniqueness of limits.
 :::
-:::{.proposition title="Integrals distribute over disjoint sets"}
-If $X \subseteq A \union B$, then $\int_X f \leq \int_A f + \int_{A^c} f$ with equality iff $X = A\disjoint B$.
-:::
-:::{.proposition title="Uniformly continuous $L^1$ functions vanish at infinity."}
-If $f \in L^1$ and $f$ is uniformly continuous, then $f(x) \converges{\abs{x}\to\infty}\to 0$.
-:::
+[[PR-HLPMX]]
+[[PR-EHL3O]]
 :::{.warnings}
 This doesn't hold for general $L^1$ functions, take any train of triangles with height 1 and summable areas.
 :::
-:::{.theorem title="Small Tails in $L^1$"}
-If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that if $A = B_R(0)^c$, then $\int_A \abs f < \varepsilon$.
-:::
+[[T-5YROQ]]
 :::{.proof}
 \envlist
 
@@ -180,25 +131,17 @@ If $f\in L^1$, then for every $\varepsilon$ there exists a radius $R$ such that 
 - Then choose $N$ large enough so that $g=0$ on $E\definedas B_N(0)$
 - Then \[ \int_E \abs{f} \leq \int_E\abs{f-g} + \int_E \abs{g}.\]
 :::
-:::{.proposition title="$L^1$ functions are absolutely continuous."}
-$m(E) \to 0 \implies \int_E f \to 0$.
-:::
+[[PR-O4AY4]]
 :::{.proof title="?"}
 Approximate with compactly supported functions.
 Take $g\converges{L_1}\to f$, then $g \leq M$ so $\int_E{f} \leq \int_E{f-g} + \int_E g \to 0 + M \cdot m(E) \to 0$.
 :::
-:::{.proposition title="$L^1$ functions are finite almost everywhere."}
-If $f\in L^1$, then $m(\theset{f(x) = \infty}) = 0$.
-:::
+[[PR-2KEIE]]
 :::{.proof title="?"}
 Idea: Split up domain
 Let $A = \theset{f(x) = \infty}$, then $\infty > \int f = \int_A f + \int_{A^c} f = \infty \cdot m(A) + \int_{A^c} f \implies m(X) =0$.
 :::
-:::{.theorem title="Continuity in $L^1$"}
-\[
-\norm{\tau_h f - f}_1 \converges{h\to 0}\to 0
-\]
-:::
+[[T-G543T]]
 :::{.proof}
 \envlist
 
@@ -213,23 +156,11 @@ Take $g\converges{L_1}\to f$ with $g\in C_c$.
 ,\]
 which follows because we can enlarge the support of $g$ to $K$ where the integrand is zero on $K^c$, then apply uniform continuity on $K$.
 :::
-:::{.proposition title="Integration by parts, special case"}
-\[
-F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d y \\
-\implies
-\int_{0}^{1} F(x) g(x) d x=F(1) G(1)-\int_{0}^{1} f(x) G(x) d x
-.\]
-
-:::
+[[PR-TNFL4]]
 :::{.proof title="?"}
 Fubini-Tonelli, and sketch region to change integration bounds.
 :::
-:::{.theorem title="Lebesgue Density"}
-\[
-A_{h}(f)(x):=\frac{1}{2 h} \int_{x-h}^{x+h} f(y) d y
-\implies \norm{A_h(f) - f} \converges{h\to 0}\to 0
-.\]
-:::
+[[T-S3C3S]]
 :::{.proof title="?"}
 Fubini-Tonelli, and sketch region to change integration bounds, and continuity in $L^1$.
 :::

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Direct Sum"}
 
+::: {.definition title="Direct Sum"}
 :::

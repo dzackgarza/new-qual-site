@@ -64,7 +64,7 @@ C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}}
 \[
 \# \GL_n(\FF_p) = \prod_{k=0}^{n-1}(p^n-p^k) = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n-p^{n-1})
 .\]
-![](../../../assets/figures/2021-08-20_19-45-33.png)
+![](../../../../assets/assets/figures/2021-08-20_19-45-33.png)
 
 - $\Aut(C_m^n)$ for $m$ not prime: no clue!
   For $n=2$, this seems to be a wreath product $\Aut(C_m) \wr C_2$.
@@ -80,77 +80,7 @@ C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}}
 
 :::
 
-:::{.proposition title="How to count sizes of automorphism groups"}
-Homs among various cyclic groups $C_m$ and any of their automorphism groups $\Aut(C_m)$ are **completely** classified, so for example $\Hom(C_m, C_n), \Hom(C_m, \Aut(C_n)), \Hom(\Aut(C_m), C_n)$, etc.
-There's a good reference here: 
-
-<https://www.whitman.edu/documents/Academics/Mathematics/SeniorProject_BrianSloan.pdf>
-
-
-Let $\varphi$ be the totient function, and note that a cyclic group $C_n$ has precisely $\phi(n)$ choices of generators.
-One can compute
-\[
-\phi(p) &= p-1 \\
-\phi(p^k) &= p^{k-1}(p - 1) \\
-\phi(p^kq^\ell) &= \phi(p^k)\phi(q^\ell) \quad\text{when } \gcd(q, p) = 1
-.\]
-
-- Automorphisms of cyclic groups are completely known:
-\[
-\Aut(C_n) \cong C_n\units 
-,\]
-which has size $\phi(n)$ but is not generally isomorphic to $C_{\phi(n)}$
-
-:::{.warnings}
-Warning: $C_n\units$ is not always cyclic!! 
-For example, $C_8\units \cong C_2^2 \neq C_{4}$.
-In fact, $C_n\units$ cyclic iff $n=2,4,p^k, 2p^k$ for $p$ an odd prime.
-:::
-
-
-- For $p$ an odd prime, $\Aut(C_p) \cong C_p\units \cong C_{p-1}$ is cyclic. 
-
-- For $p^k$ an odd prime power, $\Aut(C_{p^k}) \cong C_{\varphi(p^k)}$ is cyclic.
-
-
-- For $2^k$ with $k\geq 1$, $C_{2^k}\units \cong C_{2}\times C_{2^{k-2}}$.
-
-- If $G, H$ have coprime order then $\Aut(G \cross H) \cong \Aut(G) \cross  \Aut(H)$.
-  One can then compute a general order by factoring $n = \prod_{k=1}^\ell p_k^{n_k}$ to get a decomposition 
-\[
-C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}} 
-,\]
-  and thus
-  \[
-  \Aut(C_n) 
-  &\cong \Aut\qty{\prod_{k=1}^{\ell} C_{p_k^{n_k}} }\\
-  &\cong \prod_{k=1}^\ell \Aut\qty{C_{p_k^{n_k}}} \\
-  &\cong \prod_{k=1}^\ell C_{p_k^{n_k}}\units \\
-  &\cong C_{2^{\ell}}\units \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{p_k^{n_k}}\units \\
-  &\cong \qty{C_2 \cross C_{2^{\ell-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} && m_k \da \varphi(p_k^{n_k}) \\
-  &\cong \qty{C_2 \cross C_{2^{\ell-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} &&  m_k \da p_k^{n_k-1}(p_k-1)  
-  .\]
-
-
-
-- $\Aut(C_p^n) \cong \GL_n(\FF_p)$ which has size 
-\[
-\size \GL_n(\FF_p) = \prod_{k=0}^{n-1}(p^n-p^k) = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n-p^{n-1})
-.\]
-
-- $\Aut(C_m^n)$ for $m$ not prime: no clue!
-  For $n=2$, this seems to be a wreath product $\Aut(C_m) \wr C_2$.
-
-
-- Counting homs: $\size \Hom_\Grp(C_n, C_m) = \gcd(n ,m)$.
-
-
--  If $\sigma \in \Aut(H)$ and $\tau \in \Aut(N)$, then \(N \semidirect_\psi H \cong N \semidirect_{\tau \circ \psi \circ \sigma} H\).
-  - So if $\GL_n$ shows up in a semidirect product, it suffices to consider similarity classes of matrices (i.e. just use canonical forms).
-
-- $\Inn(G) \cong G/Z(G)$.
-
-:::
+[[PR-N6S6P]]
 
 :::{.example title="?"}
 Some examples of writing automorphism groups as products of cyclic groups:
@@ -218,28 +148,13 @@ Some concrete examples of $\Aut(C_m) \cong C_m\units$ for various $m$:
 
 ## Isomorphism Theorems
 
-:::{.theorem title="1st Isomorphism Theorem"}
-If $\phi:G\to H$ is a group morphism then \[G/\ker \phi \cong \im \phi.\]
-
-Note: for this to make sense, we also have
-
-- $\ker \phi \normal G$
-- $\im \phi \leq G$
-:::
+[[T-I5N43]]
 
 :::{.corollary}
 If $\phi: G\to H$ is surjective then $H\cong G/\ker \phi$.
 :::
 
-:::{.theorem title="Diamond Theorem / 2nd Isomorphism Theorem"}
-If $S \leq G$ and $N \normal G$, then
-\[
-\frac{SN}{N} \cong \frac{S}{S\intersect N} \quad \text{ and }\quad \abs{SN} = \frac{\abs S \abs N}{\abs{S\intersect N}}
-.\]
-
-![The 2nd "Diamond" Isomorphism Theorem](../../../assets/figures/2020-01-01-15-20-27.png){width=350px}
-
-:::
+[[T-NFQBO]]
 
 :::{.remark}
 For this to make sense, we also have
@@ -250,44 +165,9 @@ For this to make sense, we also have
 If we relax the conditions to $S, N \leq G$ with $S \in N_G(N)$, then $S\intersect N \normal S$ (but is not normal in $G$) and the 2nd Isomorphism Theorem still holds.
 :::
 
-:::{.theorem title="Cancellation / 3rd Isomorphism Theorem"}
-Suppose $N, K \leq G$ with $N \normal G$ and $N\subseteq K \subseteq G$.
+[[T-6CQEB]]
 
-1. If $K\leq G$ then $K/N \leq G/N$ is a subgroup
-2. If $K\normal G$ then $K/N \normal G/N$.
-3. Every subgroup of $G/N$ is of the form $K/N$ for some such $K \leq G$.
-3. Every *normal* subgroup of $G/N$ is of the form $K/N$ for some such $K \normal G$.
-4. If $K\normal G$, then we can cancel normal subgroups:
-\[  
-\frac{G/N}{K/N} \cong \frac{G}{K}
-.\]
-:::
-
-:::{.theorem title="The Correspondence Theorem / 4th Isomorphism Theorem"}
-Suppose $N \normal G$, then there exists a correspondence:
-
-\[  
-\left\{
-H < G \suchthat N \subseteq H
-\right\}
-\mapstofrom
-\left\{
-H \suchthat H < \frac G N
-\right\}
-\\
-\correspond{
-  \text{Subgroups of $G$} \\
-  \text{containing $N$}
-} \mapstofrom
-\correspond{
-  \text{Subgroups of the } \\
-  \text{quotient $G/N$}
-}
-.\]
-
-In words, subgroups of $G$ containing $N$ correspond to subgroups of the quotient group $G/N$. 
-This is given by the map $H \mapsto H/N$.
-:::
+[[T-RLVA4]]
 
 :::{.fact}
 $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
@@ -295,28 +175,11 @@ $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
 
 ## Products
 
-:::{.proposition title="HK Subgroup Theorem"}
-If $H,K \leq G$ and $H \leq N_G(K)$ (or $K \normal G$) then $HK \leq G$ is a subgroup.
-:::
+[[PR-BEIVF]]
 
-:::{.theorem title="Chinese Remainder Theorem"}
-\[
-\gcd(p, q) = 1 \implies \ZZ/p\ZZ \cross \ZZ/q\ZZ \cong \ZZ/pq\ZZ
-.\]
-:::
+[[T-TTZ2Y]]
 
-:::{.theorem title="Recognizing Direct Products"}
-We have $G \cong H \times K$ when
-
-1. $H, K \normal G$
-
-2. $G = HK$.
-
-3. $H\intersect K = \theset{e} \subset G$
-
-> Note: can relax to $[h,k] = 1$ for all $h, k$.
-
-:::
+[[T-SVJUN]]
 
 [[E-DFUYC]]
 :::{.remark}
@@ -349,71 +212,17 @@ With these conditions, the following map is an isomorphism:
 
 [[E-R6I7G]]
 
-:::{.theorem title="Recognizing Generalized Direct Products"}
-We have $G \cong \prod_{i=1}^n H_i$ when
+[[T-YNKCZ]]
 
-- $H_i \normal G$ for all $i$.
-
-- $G = H_1 \cdots H_n$
-
-- $H_k \intersect H_1 \cdots \hat{H_k} \cdots H_n = \emptyset$
-
-> Note on notation: intersect $H_k$ with the amalgam *leaving out* $H_k$.
-
-:::
-
-:::{.theorem title="Recognizing Semidirect Products"}
-We have $G \cong N \semidirect_\psi H$ when
-
-- $N \normal G$
-
-- $G =  NH$
-
-- $H \actson N$ by conjugation via a map
-  \[  
-  \psi: H \to \Aut(N) \\
-  h \mapsto h(\wait)h^{-1}
-  .\]
-
-> Relaxed condition: $H, N \normal G$ for direct product, or just $H\leq G$ for a semidirect product.
-
-:::
+[[T-SB6AV]]
 
 ## Classification: Finitely Generated Abelian Groups
 
-:::{.definition title="Invariant Factor Decomposition"}
-If $G$ is a finitely generated abelian group, then there is a decomposition
-$$
-G \cong \ZZ^r \times \prod_{k=1}^m C_{n_k}
-\quad \text{ where } n_1 \divides \cdots \divides n_m
-,$$
-into a free group and a finite number of cyclic groups,
-where $r\in \ZZ^{\geq 0}$ is unique and the $n_i$ are uniquely determined.
-:::
+[[D-SS34F]]
 
-:::{.definition title="Elementary Divisor Decomposition"}
-If $G$ is a finitely generated abelian group, then there is a unique list of **not necessarily distinct** prime powers $p_k^{e_k}$ such that
-\[
-G \cong \ZZ^r \cross \prod_{k=1}^m C_{p^k}^{e_k} 
-,\]
-where $r\in \ZZ^{\geq 0}$ is uniquely determined.
+[[D-JQNJQ]]
 
-:::
-
-:::{.proposition title="Converting between elementary divisors and invariant factors"}
-Given any presentation of a group as a product of cyclic groups $G = \prod \ZZ_i/m_i$, with the $m_i$ not necessarily distinct, 
-
-- Factor all of the $m_i$ into prime powers, keeping the exponents intact.
-- Organize into a table whose columns correspond to individual primes $p_i$.
-  - Within an individual column for the prime $p_k$, write all terms of the form $p_k^{e_k}$ (with exponents intact) 
-  - Arrange the terms from lowest at the top to highest at the bottom.
-    Push everything down so that the bottom-most rows are all filled out. 
-- For **elementary divisors**, just list out all of elements of the table individually, running across rows.
-- For **invariant factors**, iterate a process of taking the largest of each prime power (i.e. the bottom row) at each step, deleting that row, and continuing in the same fashion.
-
-> Note: this sounds much more complicated than it actually is. Try it!
-
-:::
+[[PR-TLPVU]]
 
 :::{.example title="Abstract Example"}
 \envlist
@@ -505,9 +314,7 @@ Reading down columns, left to right (merging nothing) yields elementary divisors
 
 :::
 
-:::{.proposition title="Number of abelian groups is given by products of partition numbers"}
-If $\size G \da n = \prod_{k=1}^m p_k^{e_k}$, then there are exactly $\prod_{k=1}^m P(e_k)$ abelian groups of order $n$, where $P$ is the integer partition function.
-:::
+[[PR-2JG3F]]
 
 :::{.example title="of an integer partition"}
 One can compute $P(6) = 11$, where all of the partitions are given by
@@ -531,25 +338,7 @@ One can compute $P(6) = 11$, where all of the partitions are given by
 In practice, it is easy to list all of the partitions out for a given $n$, but it's also useful to have a systematic way to generate them and actually check that you have them all.
 :::
 
-:::{.proposition title="Formula for partitions"}
-There is a recurrence relation
-\[
-P_k(n) = P_k(n-k) + P_{k-1}(n-1)
-,\]
-which follows from the fact that one can obtain a partition of $n$ with $k$ parts by either
-
-- Taking a partition of $n-k$ into $k$ parts and adding 1 to each part, e.g. $[1,1,1,3] \mapsto [2,2,2,4]$
-- Taking a partition of $n-1$ into $k-1$ parts and adding a new standalone part $1$, e.g. $[1,1,2,5] \mapsto [1,1,2,5,1]$.
-
-Summing over $k$ yields the following, which can be recursed:
-\[
-P(n) 
-&= \sum_{k=1}^n P_k(n-k) + P(n-1) \\
-&= \sum_{k=1}^n P_k(n-k) + \sum_{k=1}^{n-1} P_k(n-1-k) + P(n-2) \\
-&= \cdots
-,\]
-where $P_k(m) = 0$ for $k>m$ and $P_m(m) = 1$.
-:::
+[[PR-434DX]]
 
 :::{.example title="?"}
 One can compute that $P(5) = 7$, and the formula recovers this:
@@ -604,18 +393,14 @@ General strategy: find a normal subgroup (usually a Sylow) and use recognition o
 - Order $pqr$: ?
 - Order $p^2q$: ?
 
-:::{.proposition title="Classification of groups of order $p$"}
-Every group $G$ of prime order $p\geq 2$ is cyclic and thus isomorphic to $\ZZ/p$.
-:::
+[[PR-LFGHA]]
 
 :::{.proof title="?"}
 Supposing that $g\neq e$, it generates a cyclic subgroup $H \da \gens{g} \leq G$ of order dividing $p$ by Lagrange.
 Since $g\neq e$, $\size H = p = \size G$.
 :::
 
-:::{.proposition title="Classification of groups of order $p^2$"}
-Every group $G$ of order $p^2$ is abelian, and thus isomorphic to either $C_{p^2}$ or $C_p^2$.
-:::
+[[PR-IGLFV]]
 
 :::{.proof title="?"}
 Quotient by the center to get $m\da \size G/Z(G) \in \ts{ 1, p, p^2 }$.
@@ -627,16 +412,7 @@ By cases:
 
 :::
 
-:::{.proposition title="Classification of groups of order $pq$"}
-If $G$ is a group of order $pq$ where without loss of generality $q<p$, then
-
-1. If $q\notdivides p-1$ then $G$ is cyclic and $G\cong S_p \cross S_q \cong C_{pq}$.
-2. If $q\divides p-1$ then $G\cong S_q \semidirect_\psi S_p$ where $S_p \normal G$ and $\psi: S_q \to \Aut(S_p)$, and $G$ has a presentation 
-\[
-G\cong \gens{a, b \st a^p, b^q, bab\inv = a^\ell} \\ \\ 
-\ell \not\equiv 1 \mod p && \ell^q \equiv 1 \mod p
-.\]
-:::
+[[PR-SLWTB]]
 
 :::{.proof title="of $pq$ theorem, case 1"}
 \envlist
@@ -714,9 +490,7 @@ where
 - So $\psi \circ \pi_k: \ZZ/q \to \ZZ/(p-1)$ for $1\leq k \leq q-1$ yields $q-1$ distinct actions, and we're done.
 :::
 
-:::{.lemma title="Frattini's Argument"}
-If $N\normal G$ and $P\in \Syl_p(H)$ then $G = N_G(P)H$.
-:::
+[[L-6QBOJ]]
 
 :::{.proof title="?"}
 \envlist
@@ -728,9 +502,7 @@ If $N\normal G$ and $P\in \Syl_p(H)$ then $G = N_G(P)H$.
 
 :::
 
-:::{.lemma title="$p$ groups are solvable"}
-Every finite $p$ group is solvable.
-:::
+[[L-Q44MT]]
 
 :::{.proof title="?"}
 \envlist
@@ -743,15 +515,9 @@ Every finite $p$ group is solvable.
 
 :::
 
-:::{.lemma title="$pq$ groups have normals the size of the biggest prime"}
-If $\size G = pq$ with $p<q$ distinct primes, then $G$ has a normal subgroup of size $q$.
+[[L-WROBY]]
 
-This is immediate from Sylow theory: $[n_q]_q = 1, n_q \divides p, p<q$ forces $n_q = 1$.
-:::
-
-:::{.proposition title="PQR Theorem"}
-If $|G| = pqr$ where $p<q<r$ are distinct primes then $G$ is solvable.
-:::
+[[PR-2ZOAV]]
 
 :::{.proof title="?"}
 \envlist

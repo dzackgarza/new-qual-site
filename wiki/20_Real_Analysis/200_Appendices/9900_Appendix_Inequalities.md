@@ -9,13 +9,7 @@ title: Basics
 
 ## The GOATs
 
-:::{.proposition title="Cauchy-Schwarz Inequality"}
-\[  
-\abs{\inner{f}{g}} = \leq \pnorm{f}2 \pnorm{g}2
-&& \text{with equality} \iff f = \lambda g
-.\]
-
-:::
+[[PR-X5D4Z]]
 
 :::{.remark title="Different forms of CS"}
 In general, Cauchy-Schwarz relates inner product to norm, and only happens to relate norms in $L^1$.
@@ -29,25 +23,9 @@ Some other useful forms:
 
 :::
 
-:::{.proposition title="Reverse Triangle Inequality"}
-\[  
-\abs{\norm{x} - \norm{y}} \leq \norm{x - y}
-.\]
+[[PR-IJOPU]]
 
-:::
-
-:::{.proposition title="Holder's Inequality"}
-\[  
-\frac 1 p + \frac 1 q = 1 \implies \pnorm{f g}{1} \leq \pnorm{f}{p} \pnorm{g}{q}
-.\]
-
-With integrals:
-\[
-\int_X \abs{fg} \leq \qty{\int_X \abs{f}^p}^{1\over p} \qty{\int_X \abs{f}^q}^{1\over q}
-.\]
-
-
-:::
+[[PR-7BGSE]]
 
 :::{.proof title="of Holder's inequality"}
 It suffices to show this when $\norm{f}_p = \norm{g}_q = 1$, since
@@ -86,23 +64,9 @@ Then let $h = \abs{f}^p$:
 
 :::
 
-:::{.proposition title="Bessel's Inequality"}
-For $x\in H$ a Hilbert space and $\theset{e_k}$ an orthonormal sequence,
-\[  
-\sum_{k=1}^{\infty}\| \inner{x}{e_{k} } \|^{2} \leq \|x\|^{2}
-.\]
+[[PR-RYVI7]]
 
-> Note that this does not need to be a basis.
-
-:::
-
-:::{.proposition title="Parseval's Identity"}
-Equality in Bessel's inequality, attained when $\theset{e_k}$ is a *basis*, i.e. it is complete, i.e. the span of its closure is all of $H$.
-This states that if $\ts{e_k}$ is an orthonormal basis for $H$, then
-\[
-\sum_{k\geq 0} \abs{ \inner{x}{e_k} } ^2 = \norm{x}_H^2
-.\]
-:::
+[[PR-ZI7M3]]
 
 :::{.remark}
 This appears in several other forms:
@@ -112,57 +76,15 @@ This appears in several other forms:
 
 :::
 
-:::{.proposition title="Plancherel"}
-\[
-\norm{f}_{L^2}^2 &= \norm{\hat{f}}_{L^2} \\
-\int_{\RR^d} \abs{f}^2 &= \int_{\RR^d} \abs{\hat f}^2
-.\]
+[[PR-CCDRN]]
 
-
-:::
-
-:::{.proposition title="Plancherel"}
-\[
-\norm{f}_{L^2}^2 &= \norm{\hat{f}}_{L^2} \\
-\int_{\RR^d} \abs{f}^2 &= \int_{\RR^d} \abs{\hat f}^2
-.\]
-
-Slogan: the $L^2$ norm of the function equals the $\ell^2$ norm of the Fourier coefficients
-
-
-:::
+[[PR-JCZKL]]
 
 ## Less common
 
-:::{.proposition title="Markov/Chebyshev's Inequality"}
-The most often used form here:
-\[  
-\mu \qty{ f\inv\qty{(\alpha, \infty)} } \da \mu\qty{\ts{ x\in X \st \abs{f(x)} > \alpha  }} \leq {1\over \alpha} \norm{f}_1 \da {1\over \alpha} \int_X \abs{f}
-.\]
-Proof: let $S_\alpha$ be the set appearing, then $\alpha \mu(S_\alpha)$ is the sum of areas of certain boxes below the graph of $f$.
-Interpret $\int_X f$ as the total area under the graph to make the inequality obvious.
+[[PR-YO7MV]]
 
-![figures/image_2021-06-02-22-59-46.png](../../../assets/figures/image_2021-06-02-22-59-46.png)
-
-The probability interpretation: $\PP(X\geq \alpha) \leq {1\over \alpha} \EE(X)$.
-
-The more general version:
-\[
-\mu \qty{ f\inv\qty{(\alpha, \infty)} } \da \mu\qty{\ts{ x\in X \st \abs{f(x)} > \alpha }  } \leq {1\over \alpha^p} \norm{f}_p^p \da{1\over \alpha^p} \int_X \abs{f}^p 
-.\]
-Proof:
-\[
-\norm{f}_p^p = \int \abs{f}^p \geq \int_{S_\alpha} \abs{f}^p \geq \alpha^p \int_{S_\alpha} 1 = \alpha^p \mu(S_\alpha)
-.\]
-
-:::
-
-:::{.proposition title="Minkowski's Inequality"}
-\[  
-1\leq p < \infty \implies \pnorm{f+g}{p} \leq \pnorm{f}{p}+ \pnorm{g}{p}
-.\]
-
-:::
+[[PR-XUVZY]]
 
 :::{.remark}
 This does not handle $p=\infty$ case.
@@ -209,13 +131,7 @@ q &= \frac p {p-1}
 
 :::
   
-:::{.proposition title="Young's Inequality"}
-\[
-\frac 1 p + \frac 1 q = \frac 1 r + 1 \implies
-\|f \ast g\|_{r} \leq\|f\|_{p}\|g\|_{q}
-\]
-
-:::
+[[PR-2P7FZ]]
 
 :::{.remark title="some useful special cases"}
 \[  
@@ -230,50 +146,17 @@ q &= \frac p {p-1}
 
 ## Inequalities that appear in proofs 
 
-:::{.proposition title="AM-GM Inequality"}
-\[
-\sqrt{ab} \leq \frac{a+b}{2}
-.\]
-:::
+[[PR-IQYTA]]
 
-:::{.proposition title="Jensen's Inequality"}
-\[
-f(tx + (1-t)y) \leq tf(x) + (1-t)f(y)
-.\]
+[[PR-W4ICW]]
 
-:::
+[[PR-BPOH2]]
 
-:::{.proposition title="Young's Product Inequality"}
-\[
-AB \leq {A^p \over p} + {B^q \over q}
-.\]
+[[PR-7KTA6]]
 
-:::
+[[PR-OPSAC]]
 
-:::{.proposition title="?"}
-\[
-(a+b)^p \leq 2^{p-1} (a^p + b^p)
-.\]
-
-:::
-
-:::{.proposition title="Bernoulli's Inequality"}
-\[
-(1 + x)^n \geq 1 +nx \quad x\geq -1, \text{ or } n\in 2\ZZ \text{ and } \forall x
-.\]
-
-As a consequence,
-\[
-1-x \leq e^{-x}
-.\]
-
-:::
-
-:::{.proposition title="Exponential Inequality"}
-\[  
-\forall t\in \RR,\quad 1 + t \leq  e^t
-.\]
-:::
+[[PR-CHY3F]]
 
 :::{.proof}
 \envlist
@@ -282,12 +165,7 @@ As a consequence,
 - $\dd{}{t} 1+ t < \dd{t}e^t \iff t<0$
 :::
 
-:::{.proposition title="Young's Convolution Inequality"}
-\[
-{1\over r} \da {1\over p} + {1\over q} - 1 \implies \pnorm{f \ast g}{r} \leq \pnorm{f}{p} \norm{g}{q}
-.\]
-
-:::
+[[PR-2C3SZ]]
 
 
 - $\sqrt{x + y} \leq \sqrt{x} + \sqrt{y}$.

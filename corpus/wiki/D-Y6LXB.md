@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Relative boundaries"}
 
+::: {.definition title="Relative boundaries"}
 :::

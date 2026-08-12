@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Universal Cover"}
 
+::: {.definition title="Universal Cover"}
 :::

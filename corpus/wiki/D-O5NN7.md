@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Orbit space"}
+
+::: {.definition title="Orbit space"}
 For a group action $G\actson X$, the **orbit space** $X/G$ is defined as $X/\sim$  where $\forall x,y\in X, x\sim y \iff \exists g\in G \mid g.x = y$.
 :::

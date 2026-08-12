@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Dimension vanishing for homology of manifolds"}
+
+::: {.proposition title="Dimension vanishing for homology of manifolds"}
 If $M^n$ is a closed and connected $n\dash$manifold, then $H^{\geq n} X = 0$.
 :::

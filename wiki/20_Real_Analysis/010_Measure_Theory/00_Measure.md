@@ -23,43 +23,13 @@ E = F_\sigma \disjoint N && E \disjoint N = G_\delta
 .\]
 :::
 
-:::{.definition title="Measures on measurable spaces"}
-If $(X, \mcm)$ is a measurable space, then a **measure** is a function $\mu: \mcm \to [0,\infty]$ such that 
+[[D-QYLPH]]
 
-1. $\mu(\emptyset) = 0$.
-2. Countable additivity: if $\ts{E_k}_{k\geq 1}$ is a countable union of disjoint sets in $X$, then 
-\[
-\mu\qty{\disjoint_{k\geq 1} E_k} = \sum_{k\geq 1} \mu(E_k)
-.\]
+[[PR-A4J4G]]
 
-If (2) only holds for finitely indexed sums, we say $\mu$ is **$\sigma\dash$additive**.
-:::
+[[T-7LQ7X]]
 
-:::{.proposition title="Subtraction of Measures"}
-$$m(A) = m(B) + m(C) \qtext{and} m(C) < \infty \implies m(A) - m(C) = m(B).$$
-:::
-
-:::{.theorem title="Properties of measures"}
-Let $(X, \mcm, \mu)$ be a measure space.
-Then
-
-1. Monotonicity: $E \subseteq F \implies \mu(E) \leq \mu(F)$.
-2. Countable subadditivity: If $ts{E_k}_{k\geq 1}$ is a countable collection, 
-\[
-\mu\qty{\Union_{k\geq 1} E_k} \leq \sum_{k\geq 1} \mu(E_k)
-.\]
-:::
-
-:::{.proposition title="Continuity of Measure"}
-\[
-\text{Continuity from below:} \quad 
-E_{n} \nearrow E &\implies m(E_{n}) \converges{n\to\infty}\too m(E) \\
-\text{Continuity from above:} \quad 
-m(E_{1}) < \infty \text{ and } E_{n} \searrow E &\implies m(E_{n}) \converges{n\to\infty}\too m(E)
-.\]
-
-Mnemonic: $\lim_n \mu(E_n) = \mu(\lim E_n)$ where $\lim_n E_n = E\da \union_N E_n$ for $E_n \increasesto E$ and $\lim_n E_n = E \da \intersect_n E_n$ for $E_n\decreasesto E$.
-:::
+[[PR-KKJ6O]]
 
 :::{.proof title="sketches"}
 Idea: break into disjoint annuli!
@@ -70,7 +40,7 @@ Idea: break into disjoint annuli!
 - From above: funny step, use $E_{1} = (\disjoint E_{j}\setminus E_{j+1}) \disjoint (\intersect E_{j})$.
   - Taking measures yields a telescoping sum, and use countable additivity, then finiteness to subtract.
 
-  ![image_2021-05-28-23-29-31.png](../../../assets/figures/image_2021-05-28-23-29-31.png)
+  ![image_2021-05-28-23-29-31.png](../../../../assets/assets/figures/image_2021-05-28-23-29-31.png)
 
 
 :::
@@ -136,29 +106,15 @@ F_1 = F \disjoint \Disjoint_{k=1}^{\infty} E_k
 
 # Outer Measure
 
-:::{.proposition title="Properties of Outer Measure"}
-\envlist
+[[PR-LF7SW]]
 
-1. Monotonicity: $E\subseteq F \implies m_*(E) \leq m_*(F)$.
-2. Countable Subadditivity: $m_*(\union E_{i}) \leq \sum m_*(E_{i})$.
-3. Approximation: For all $E$ there exists a $G \supseteq E$ such that $m_*(G) \leq m_*(E) + \varepsilon$.
-4. Disjoint[^1] Additivity: $m_*(A \disjoint B) = m_*(A) + m_*(B)$. 
-
-:::
-
-:::{.definition title="Lebesgue Measurability"}
-A set $E$ is **measurable** iff it can be approximated by an open set in $m_*$, so there exists $G\contains E$ with $m_*(G\sm E) < \eps$.
-:::
+[[D-UYOGE]]
 
 # Measures on $\RR^d$
 
-:::{.proposition title="Opens are unions of almost disjoint intervals."}
-Every open subset of $\RR$ (resp $\RR^n$) can be written as a unique countable union of disjoint (resp. almost disjoint) intervals (resp. cubes).
-:::
+[[PR-I4YON]]
 
-:::{.proposition title="Translation and Dilation Invariance"}
-Lebesgue measure is translation and dilation invariant.
-:::
+[[PR-DXWWU]]
 
 :::{.proof title="of translation/dilation invariance"}
 \envlist
@@ -170,9 +126,7 @@ Lebesgue measure is translation and dilation invariant.
     Then use that $tQ_i \covers tE$ to get $tm_*(E) \leq t\sum \abs{Q_i} = \sum \abs{tQ_i} \leq m_*(tE) + \eps$ and similarly reverse to get equality.
 :::
 
-:::{.theorem title="Non-measurable sets exist"}
-There is a non-measurable set $A\subseteq \RR$.
-:::
+[[T-KZNWM]]
 
 :::{.proof title="Constructing a non-measurable set"}
 \envlist
@@ -183,33 +137,15 @@ There is a non-measurable set $A\subseteq \RR$.
 - By translation invariance, $m(N_{j}) = m(N)$, and disjoint additivity forces $m(M) = 0$, a contradiction.
 :::
 
-:::{.proposition title="Limsups/infs of measurable sets are measurable."}
-If $A_{n}$ are all measurable, $\limsup A_{n}$ and $\liminf A_{n}$ are measurable.
-:::
+[[PR-NULVE]]
 
 :::{.proof title="That limsups/infs are measurable"}
 Measurable sets form a sigma algebra, and these are expressed as countable unions/intersections of measurable sets.
 :::
 
-:::{.theorem title="Borel-Cantelli"}
-Let $\{E_{k}\}$ be a countable collection of measurable sets.
-Then
-$$
-\sum_{k} m(E_{k}) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_{k}
-.$$
-:::
+[[T-YMPTF]]
 
-:::{.theorem title="Borel-Cantelli"}
-Let $\{E_{k}\}$ be a countable collection of measurable sets.
-Then
-\[
-\sum_{k} m(E_{k}) < \infty \implies \text{ almost every } x\in \RR \text{ is in at most finitely many } E_{k}
-\iff
-m(\limsup_k E_k) = 0
-.\]
-
-In words, interpreting $E_k$ as events and $m(E_k) = \PP(E_k)$ as a probability: if the sum of probabilities of events is finite, the probability of infinitely many events occurring is zero.
-:::
+[[T-OTR5M]]
 
 :::{.proof title="of Borel-Cantelli"}
 \envlist
@@ -221,45 +157,19 @@ In words, interpreting $E_k$ as events and $m(E_k) = \PP(E_k)$ as a probability:
 - $E \subset \union_{j=k}^\infty \implies m(E) \leq \sum_{j=k}^\infty m(E_{j}) \converges{k\to\infty}\to 0$.
 :::
 
-:::{.proposition title="Extending the class of measurable functions."}
+[[PR-I44DD]]
 
-- Characteristic functions are measurable
-- If $f_{n}$ are measurable, so are $\abs{f_{n}}, \limsup f_{n}, \liminf f_{n}, \lim f_{n}$,
-- Sums and differences of measurable functions are measurable,
-- Cones $F(x,y) = f(x)$ are measurable,
-- Compositions $f\circ T$ for $T$ a linear transformation are measurable,
-- "Convolution-ish" transformations $(x,y) \mapsto f(x-y)$ are measurable
-:::
-
-:::{.proposition title="Extending the class of measurable functions."}
-
-- Characteristic functions are measurable
-- If $f_{n}$ are measurable, so are $\abs{f_{n}}, \limsup f_{n}, \liminf f_{n}, \lim f_{n}$, 
-- Sums and differences of measurable functions are measurable, 
-- Cylinders $F(x,y) = f(x)$ are measurable, 
-- Compositions $f\circ T$ for $T$ a linear transformation are measurable,
-- "Convolution-ish" transformations $(x,y) \mapsto f(x-y)$ are measurable
-:::
+[[PR-552IH]]
 
 :::{.proof title="Convolution"}
 Take the cone on $f$ to get $F(x, y) = f(x)$, then compose $F$ with the linear transformation $T = [1, -1; 1, 0]$.
 :::
 
-:::{.definition title="Sigma finiteness"}
-A measure space $(X, \mcm, \mu)$ is **$\sigma\dash$finite** if $X$ can be written as a union of countably many measurable sets with finite measure.
-:::
+[[D-BXAUS]]
 
-:::{.proposition title="Regularity of measure"}
-If $(X, \mcb, \mu)$ is a Borel measure space where $\mu$ is finite on all balls of finite radius, then for any $E \in \mcb$ and any $\eps>0$,
+[[PR-UHWNM]]
 
-- There exists an open set $O$  with $E \subset O$ and $\mu(O\sm E) < \eps$
-- There exists a closed set $F$ with $F\subset E$ and $\mu(E\sm F) < \eps$.
-
-:::
-
-:::{.proposition title="?"}
-Measurability is not preserved by homeomorphisms.
-:::
+[[PR-Z5VSQ]]
 
 :::{.proof title="?"}
 By counterexample: there is a homeomorphism that takes that Cantor set (measure zero) to a fat Cantor set.
@@ -268,4 +178,3 @@ By counterexample: there is a homeomorphism that takes that Cantor set (measure 
 
 :::
 
-[^1]: This holds for outer measure **iff** $\mathrm{dist}(A, B) > 0$.

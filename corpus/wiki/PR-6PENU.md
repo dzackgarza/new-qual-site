@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Application: isomorphisms in the homology of spheres"}
+
+::: {.proposition title="Application: isomorphisms in the homology of spheres"}
 \[H^i(S^n) \cong H^{i-1}(S^{n-1}).\]
 :::

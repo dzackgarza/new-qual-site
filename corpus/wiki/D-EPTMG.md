@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Regular"}
+
+::: {.definition title="Regular"}
 A space $X$ is **regular** if whenever $x\in X$ and $F\not\ni x$ is closed, $F$ and $x$ are separated by neighborhoods.
 :::

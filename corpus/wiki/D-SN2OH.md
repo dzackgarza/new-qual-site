@@ -10,11 +10,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Topological Notions in Analysis"}
+
+::: {.definition title="Topological Notions in Analysis"}
 A useful list:
 
 ![figures/image_2021-05-27-20-18-15.png](../../assets/figures/image_2021-05-27-20-18-15.png)
 
 Note that limit points require punctured neighborhoods!
-
 :::

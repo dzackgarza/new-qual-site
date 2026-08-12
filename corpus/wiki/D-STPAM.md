@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Exact Sequence"}
 
+::: {.definition title="Exact Sequence"}
 :::

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Weak Homotopy Equivalence"}
 
+::: {.definition title="Weak Homotopy Equivalence"}
 :::

@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Homologous"}
 
+::: {.definition title="Homologous"}
 :::

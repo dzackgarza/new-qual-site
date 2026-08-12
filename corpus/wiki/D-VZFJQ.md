@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Path Components"}
+
+::: {.definition title="Path Components"}
 Set $x\sim y$ iff there exists a path-connected set $U\ni x, y$ and take equivalence classes.
 :::

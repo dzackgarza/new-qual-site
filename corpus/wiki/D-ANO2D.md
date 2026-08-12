@@ -10,10 +10,12 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Covering Space"}
+
+::: {.definition title="Covering Space"}
 A **covering space** of $X$ is the data $p: \tilde X \to X$ such that
 
 1. Each $x\in X$ admits a neighborhood $U$ such that $p ^{-1} (U)$ is a union of disjoint open sets in $\tilde V_i \subseteq X$ (the **sheets** of $\tilde X$ over $U$),
+
 2. $\ro{p}{V_i}: V_i \to U$ is a homeomorphism for each sheet.
 
 An **isomorphism** of covering spaces $\tilde X_1 \cong \tilde X_2$ is a commutative diagram
@@ -27,5 +29,4 @@ An **isomorphism** of covering spaces $\tilde X_1 \cong \tilde X_2$ is a commuta
 	\arrow["{f}", from=1-1, to=1-3]
 \end{tikzcd}
 > [Link to diagram](https://q.uiver.app/?q=WzAsMyxbMCwwLCJcXHRpbGRlIFhfMSJdLFsxLDIsIlgiXSxbMiwwLCJcXHRpbGRlIFhfMiJdLFswLDEsInBfMSIsMl0sWzIsMSwicF8yIl0sWzAsMiwiZiJdXQ==)
-
 :::

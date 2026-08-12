@@ -29,7 +29,7 @@
 
 - De-nesting radicals:
 
-![figures/2021-08-15_00-44-15.png](../../../assets/figures/2021-08-15_00-44-15.png)
+![figures/2021-08-15_00-44-15.png](../../../../assets/assets/figures/2021-08-15_00-44-15.png)
 
 
 :::
@@ -39,17 +39,7 @@ Assume all extensions here are algebraic and finite.
 Let $f\in \QQ[x]$ with $n \da \deg f$.
 :::
 
-:::{.theorem title="The Algorithm"}
-\envlist
-
-- Show your extension is Galois (normal and separable)
-  - Show $f$ is irreducible and separable.
-- Find the degree of the extension $d$, since then $\size G = d$.
-  - Note that in general, $G\leq S_n$ and $n\neq d$, $\size G\neq n$.
-- Obtain $n\divides d \da \size G \divides n!$ and $G\leq S_n$ is a transitive subgroup, list possibilities.
-- Rule out cases or determine the group completely by finding cycle types.
-
-:::
+[[T-AILFB]]
 
 :::{.example title="Of using the algorithm"}
 Consider $f(x) \da x^5-9x+3$, let $L\da \SF(f)/\QQ$.
@@ -114,9 +104,7 @@ Showing your extension $K/k$ is Galois:
 
 ## Irreducibility
 
-:::{.proposition title="Consequence of Chebotarev density: checking irreducibility mod $p$"}
-If $f\in \ZZ[x]$ is monic and there exists any prime $p$ such that $f\mod p$ is irreducible in $\FF_p[x]$, then $f$ irreducible in $\QQ[x]$.
-:::
+[[PR-PB6UE]]
 
 :::{.remark}
 Finding a good prime for this is hard, but irreducibility can be checked exhaustively in small fields: just enumerate all polynomials and try polynomial long division.
@@ -127,18 +115,7 @@ $f(x) \da x^4 + x + 1$ is irreducible in $\ZZ[x]$, since checking manually in $\
 Manually dividing $a_1 x^2 + a_2 x + a_3$ for $a_i\in 0, 1$ leaves remainders, so there are no quadratic factors.
 :::
 
-:::{.theorem title="Eisenstein's Criterion"}
-If \[
-f(x) = \sum_{i=0}^n \alpha_i x^i = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0 \in \QQ[x]
-.\]
-then $f$ will be irreducible over $\QQ[x]$ (and thus over $\ZZ[x]$ by Gauss' lemma) if
-$\exists p$ such that
-
-- $p$ divides every coefficient *except* $a_n$ and
-- $p^2$ does not divide $a_0$.
-
-Note that if $f$ is monic, it suffices to find any prime dividing all of the non-leading terms.
-:::
+[[T-CF6S3]]
 
 :::{.remark title="Shifting"}
 If $f(x+a)$ satisfies Eisenstein for any $p$, then $f$ is irreducible.
@@ -214,9 +191,7 @@ d\divides [\SF(f): \QQ]
 
 ### Transitive Subgroups
 
-:::{.proposition title="Galois groups are transitive subgroups"}
-If $f\in k[x]$ is irreducible, then $\Gal(\SF(f)/k) \leq S_n$ is **always** a transitive subgroup, i.e. it acts transitively on the set of roots.
-:::
+[[PR-LXSGE]]
 
 :::{.corollary}
 \[
@@ -294,21 +269,12 @@ $n=4$:
 :::{.fact title="Recognizing cycle types"}
 The following are the cycle types that can occur:
 
-- ![Subgroups of S_4](../../../assets/figures/2021-08-09_14-39-07.png)
+- ![Subgroups of S_4](../../../../assets/assets/figures/2021-08-09_14-39-07.png)
 
 :::
 
 
-:::{.proposition title="Recognizing $A_n$ or $S_n$"}
-Useful fact: if $G \leq S_n$ for $n$ prime contains a 2-cycle and a $p\dash$cycle, then $G\cong S_n$.
-Note that for $n$ not prime, a transposition and an $n\dash$cycle isn't enough, since one needs the specific $n\dash$cycle $(1,2,\cdots,n)$ in general.
-
-If $n>2$ and $G$ contains a 3-cycle and an $n\dash$cycle, then $G = A_n$ or $S_n$.
-Note that by Orbit-Stabilizer $n\divides \size G$, and if $n$ is prime then by Cauchy there is an $n\dash$cycle (but this is not always the case).
-In fact, it suffices to find a $k\dash$cycle for any $k\geq n/2$, which can be found by reducing mod $p$ and examining cycle types.
-
-Moreover, if $G$ contains a 2-cycle (transposition), then $G = S_n$.
-:::
+[[PR-5PI25]]
 
 
 :::{.remark title="Other useful facts to reason about $A_n$"}
@@ -322,16 +288,13 @@ Moreover, if $G$ contains a 2-cycle (transposition), then $G = S_n$.
 :::{.fact}
 Some useful generating sets: see <https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf>
 
-![](../../../assets/figures/2021-08-09_18-51-08.png)
+![](../../../../assets/assets/figures/2021-08-09_18-51-08.png)
 
 :::
 
 ### Density: Cycle Types
 
-:::{.proposition title="A consequence of Chebotarev Density: reading cycles from reduction mod $p$"}
-For any $p\not\divides \Delta$, writing $f(x) = \prod_{i=1}^m f_i(x) \mod p$, $G$ contains a cycle of type $(\deg f_1, \deg f_2, \cdots, \deg f_m)$.
-Equivalently, if $\tilde f \da f\mod p$, then $G(\tilde f) \leq G(f)$ is a subgroup.
-:::
+[[PR-XDWOP]]
 
 :::{.warnings}
 Warning: this only works if the $f_i$ are distinct, i.e. there are no repeated factors in the factorization $\mod p$.
@@ -394,19 +357,7 @@ Since $5>n/2=7/2$, $G = S_7$.
 
 ### Discriminants
 
-:::{.definition title="Discriminant"}
-For $f = \sum a_k x^k$ monic,
-\[
-\Delta_f = \prod_{i < j} (r_i - r_j)^2
-.\]
-
-Note that $\Delta = 0$ when $f$ has a repeated root.
-
-For cubics, 
-
-- $\Delta > 0 \implies 3$ distinct real roots
-- $\Delta < 0 \implies 1$ real root and 1 conjugate pair.
-:::
+[[D-W3DSO]]
 
 :::{.example title="How to actually write this product"}
 For $f$ a cubic:
@@ -568,20 +519,13 @@ so knowing the general shape of a cubic, there is exactly one real root, somewhe
 So $G(f) = S_3$.
 :::
 
-:::{.proposition title="Classification for cubics"}
-Away from $\ch k = 2$, Galois groups of cubics are entirely determined by discriminants:
-
-**There are only two possibilities**: $S_3$ or $A_3 \cong C_3$.
-
-- If $\sqrt{\Delta}\in k$, then $G\cong A_3$.
-- Otherwise, $G\cong S_3$.
-:::
+[[PR-XPDHE]]
 
 :::{.example title="of discriminants of cubics"}
 
-![](../../../assets/figures/2021-08-09_14-28.png)
+![](../../../../assets/assets/figures/2021-08-09_14-28.png)
 
-![](../../../assets/figures/2021-08-09_14-36-34.png)
+![](../../../../assets/assets/figures/2021-08-09_14-36-34.png)
 
 :::
 
@@ -612,48 +556,10 @@ Away from $\ch k = 2$, Galois groups of cubics are entirely determined by discri
 ### Quartics
 
 
-:::{.definition title="Resolvent of a quartic"}
-If 
-\[
-f(x)=x^{4}+a_{3} x^{3}+a_{2} x^{2}+a_{1} x+a_{0}
-\]
-then define the **resolvent** of $f$ by
-\[
-R_{4}(t)=t^{3}-a_{2} t^{2}+\left(a_{1} a_{3}-4 a_{0}\right) t+4 a_{0} a_{2}-a_{1}^{2}-a_{0} a_{3}{ }^{2}
-.\]
-
-Alternatively, it can be defined in terms of the roots $r_i$:
-\[
-\left(x-\left(r_{1} r_{2}+r_{3} r_{4}\right)\right)\left(x-\left(r_{1} r_{3}+r_{2} r_{4}\right)\right)\left(x-\left(r_{1} r_{4}+r_{2} r_{3}\right)\right)
-.\]
-
-For depressed quartics,
-\[
-f(X)=X^{4}+c X+d \Longrightarrow R_{3}(X)=X^{3}-4 d X-c^{2}
-.\]
-
-:::
+[[D-4DWC5]]
 
 
-:::{.proposition title="Classification for quartics"}
-The Galois groups of irreducible quartics can be determined using discriminants, resolvents, and checking irreducibility:
-
-- If $\sqrt{\Delta}\in \QQ$, then $G = A_4, C_2^2$.
-  - If resolvent is irreducible: $A_4$.
-    Otherwise $C_2^2$.
-- If $\sqrt{\Delta}\not\in \QQ$ then $G = S_4, D_4, C_4$.
-  - Is resolvent is irreducible: $S_4$.
-    Otherwise, $D_4$ or $C_4$, argue by cycle types (or if $f$ is irreducible in $\QQ(\sqrt{\Delta})$, $D_4$).
-- Summary:
-  ![](../../../assets/figures/2021-08-09_14-48-55.png)
-
-A flow chart summarizing the full process:
-
-![](../../../assets/figures/2021-07-20_22-06-48.png)
-
-
-See Hungerford 273 for classification.
-:::
+[[PR-E4T3S]]
 
 :::{.example title="Quartics using resolvent cubics"}
 \envlist
@@ -796,23 +702,23 @@ $n=3$:
 
 - $D_3 \cong S_3$
 - $A_3 \cong C_3$.
-- ![$S_3$](../../../assets/figures/2021-08-14_18-01-02.png)
-- ![$S_3$ up to conjugacy](../../../assets/figures/2021-08-10_01-41-05.png)
+- ![$S_3$](../../../../assets/assets/figures/2021-08-14_18-01-02.png)
+- ![$S_3$ up to conjugacy](../../../../assets/assets/figures/2021-08-10_01-41-05.png)
 
 $n=4$:
 
-- ![$D_4$](../../../assets/figures/2021-08-10_01-46-58.png)
-- ![$A_4$](../../../assets/figures/2021-08-10_01-42-20.png)
-- ![$S_4$](../../../assets/figures/2021-08-10_01-41-53.png)
+- ![$D_4$](../../../../assets/assets/figures/2021-08-10_01-46-58.png)
+- ![$A_4$](../../../../assets/assets/figures/2021-08-10_01-42-20.png)
+- ![$S_4$](../../../../assets/assets/figures/2021-08-10_01-41-53.png)
 
 $n=5$:
 
-- ![$D_5$](../../../assets/figures/2021-08-10_01-47-16.png)
-- ![$A_5$](../../../assets/figures/2021-08-10_01-43-01.png)
-- ![$S_5$](../../../assets/figures/2021-08-10_01-42-45.png)
+- ![$D_5$](../../../../assets/assets/figures/2021-08-10_01-47-16.png)
+- ![$A_5$](../../../../assets/assets/figures/2021-08-10_01-43-01.png)
+- ![$S_5$](../../../../assets/assets/figures/2021-08-10_01-42-45.png)
 
 Misc:
 
-- ![$Q_8$](../../../assets/figures/2021-08-10_01-40-14.png)
+- ![$Q_8$](../../../../assets/assets/figures/2021-08-10_01-40-14.png)
 
 :::

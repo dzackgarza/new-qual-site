@@ -5,25 +5,13 @@ order: 9900
 
 # Appendix: Functional Analysis 
 
-:::{.theorem title="Bounded inverse"}
-If $X, Y\in \Banach$ and $T:X\to Y$ is a bijective continuous operator, then $T\inv$ is continuous and thus $T$ is a homeomorphism.
-:::
+[[T-FO27T]]
 
-:::{.theorem title="Open Mapping"}
-If $X, Y\in \Banach$ and $T:X\to Y$ is a surjective continuous operator, then $T$ is an open map.
-:::
+[[T-KQTPR]]
 
-:::{.theorem title="Closed graph"}
-If $X, Y\in \Banach$ and $T \in L(X, Y)$ is a closed linear operator, i.e. the graph $\Gamma(T) \subseteq X\times Y$ is closed, then $T$ is bounded.
-:::
+[[T-TTLXS]]
 
-:::{.theorem title="Uniform Boundedness"}
-Let $X, Y\in \Banach$ and $\ts{ T_{\alpha}}  \subseteq L(X, Y)$ be a family of uniformly pointwise bounded operators, so for all points $x$ there exists a constant $C_x$ such that $\norm{T_{\alpha}x} \leq C_x$ for all $\alpha$. Then there exists a constant bound that is uniform in $x$, i.e. a $C$ such that $\norm{T_{\alpha}x}\leq C$ for all $x$.
-:::
+[[T-F2THV]]
 
-:::{.theorem title="Hahn-Banach"}
-
-#todo
-
-:::
+[[T-OW2QG]]
 

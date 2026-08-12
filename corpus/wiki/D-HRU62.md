@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Gluing Along a Map"}
 
+::: {.definition title="Gluing Along a Map"}
 :::

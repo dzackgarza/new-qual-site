@@ -21,12 +21,7 @@ A **$p\dash$group** is a group $G$ such that every element is order $p^k$ for so
   If $G$ is a finite $p\dash$group, then $\abs G = p^j$ for some $j$.
 :::
 
-:::{.lemma title="Congruences for fixed points"}
-If $G\actson X$ for $G$ a $p\dash$group, then letting $\Fix(G) \da \ts{x\in X \st gx=x}$, one has
-\[
-\size X \equiv \size \Fix(G) \mod p
-.\]
-:::
+[[L-354HC]]
 
 :::{.proof title="?"}
 \envlist
@@ -59,11 +54,7 @@ Some setup and notation: assume
 
 ### Sylow 1 (Cauchy for Prime Powers)
 
-:::{.theorem title="Sylow 1"}
-\[
-\forall p^n \text{ dividing } \abs{G} \text{, there exists a subgroup of size } p^n
-.\]
-:::
+[[T-WRMBM]]
 
 :::{.slogan}
 Sylow $p\dash$subgroups exist for any $p$ dividing $\abs{G}$, and are maximal in the sense that every $p\dash$subgroup of $G$ is contained in a Sylow $p\dash$subgroup.
@@ -100,13 +91,7 @@ xH \in \Fix_H(G/H)
 
 ### Sylow 2 (Sylows are Conjugate)
 
-:::{.theorem title="Sylow 2"}
-All Sylow$\dash p$ subgroups $S_p$ are conjugate, i.e.
-\[
-S_p^i, S_p^j \in \mathrm{Syl}_p(G) \implies \exists g \text{ such that } g S_p^i g\inv = S_p^j
-\]
-
-:::
+[[T-EF2MZ]]
 
 :::{.corollary}
 \[
@@ -137,16 +122,7 @@ where we now get equality since these sets have the same cardinality.
 
 ### Sylow 3 (Numerical Constraints)
 
-:::{.theorem title="Sylow 3"}
-\envlist
-
-1. $n_p \divides m~$, and in particular, $n_p \leq m$.
-
-2. $n_p \equiv 1 \mod p$.
-
-3. $n_p = [G : N_G(S_p)]$ where $N_G$ is the normalizer.
-
-:::
+[[T-S5T5C]]
 
 
 :::{.proof title="of Sylow 3"}

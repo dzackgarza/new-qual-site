@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Free Product"}
 
+::: {.definition title="Free Product"}
 :::

@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.theorem title="When open maps are homeomorphisms"}
+
+::: {.theorem title="When open maps are homeomorphisms"}
 A continuous bijective open map is a homeomorphism.
 :::

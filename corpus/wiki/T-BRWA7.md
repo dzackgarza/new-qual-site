@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
+
 ::: {.theorem title="?"}
 If $m, p$ are isomorphisms, $l$ is an **surjection**, and $q$ is an **injection**, then $n$ is an **isomorphism**.
 

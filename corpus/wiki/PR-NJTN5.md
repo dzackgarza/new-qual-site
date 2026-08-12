@@ -10,6 +10,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Topology is discrete if and only if points are open"}
+
+::: {.proposition title="Topology is discrete if and only if points are open"}
 A topology $(X, \tau)$ is the discrete topology iff points $x\in X$ are open.
 :::

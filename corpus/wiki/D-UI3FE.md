@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Lens Space"}
 
+::: {.definition title="Lens Space"}
 :::

@@ -17,67 +17,27 @@ V &\cong \bigoplus _{j=1}^m k[x] / \gens{ p_i(x)^{e_i} } && \text{ with } p_i \t
 
 :::
 
-:::{.definition title="Nondegenerate Bilinear Form"}
-#todo
-:::
+[[D-5BR4D]]
 
-:::{.definition title="Quadratic Form"}
-#todo
+[[D-SSGKC]]
 
-:::
+[[D-RG5FO]]
 
-:::{.definition title="Gram Matrix"}
-#todo
+[[D-BSUV4]]
 
-:::
+[[D-B4VTH]]
 
-:::{.definition title="Normal Matrix"}
-A matrix $A\in \Mat(n\times n; \CC)$ is **normal** iff $A^{\dagger} A = AA^{\dagger}$ where $A^{\dagger}$ is the conjugate transpose.
-:::
+[[D-HGMOW]]
 
-:::{.definition title="Semisimple"}
-A matrix $A$ over $k$ is **semisimple** iff $A$ is diagonalizable over $k^\alg$, the algebraic closure.
-:::
+[[D-23FX7]]
 
-:::{.definition title="Nilpotent"}
-A matrix $A$ over $k$ is **nilpotent** iff $A^k = 0$ for some $k\geq 1$.
+[[PR-24CPI]]
 
-> Idea: upper triangular matrices.
+[[PR-WDPF7]]
 
-:::
+[[D-JIGMN]]
 
-:::{.definition title="Unipotent"}
-A element $A$ in a ring $R$ is **unipotent** iff $A-1$ is nilpotent.
-
-> Idea: an upper-triangular matrix with ones on the diagonal.
-
-:::
-
-:::{.proposition title="Triangular Decomposition"}
-Any linear map $T:V\to V$ over a perfect field decomposes as $T = S + N$ with $S$ semisimple (diagonal), $N$ nilpotent, and $[DN] = 0$.
-If $T$ is invertible, then $T$ decomposes as $T = SU$ where $S$ is semisimple, $U$ is unipotent, and $[UN] = 0$.
-:::
-
-:::{.proposition title="Perp of sum is intersection of perps"}
-\[
-\qty{ \sum  W_i}^\perp = \Intersect \qty{W_i^\perp}
-.\]
-:::
-
-:::{.definition title="Similar Matrices"}
-Two matrices $A,B$ are **similar** (i.e. $A = PBP\inv$) $\iff A,B$ have the same Jordan Canonical Form (JCF).
-:::
-
-:::{.definition title="Equivalent Matrices"}
-Two matrices $A, B$ are **equivalent** (i.e. $A = PBQ$) $\iff$
-
-- They have the same rank,
-
-- They have the same invariant factors, *and*
-
-- They have the same (JCF)
-
-:::
+[[D-JRPTK]]
 
 ## Notation
 

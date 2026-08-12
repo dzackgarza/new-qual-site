@@ -6,18 +6,9 @@ $A^{\dagger}$ denotes the conjugate transpose of $A$.
 
 :::
 
-:::{.lemma title="?"}
-Let $V$ be a vector space over $k$ an algebraically closed and $A \in \mathrm{End}(V)$.
-Then if $W \subseteq V$ is an invariant subspace, so $A(W) \subseteq W$, the $A$ has an eigenvector in $W$.
-:::
+[[L-C5DDK]]
 
-:::{.theorem title="The Spectral Theorem"}
-\envlist
-
-1. Hermitian (self-adjoint) matrices (i.e. $A^{\dagger} = A$) are diagonalizable over $\CC$.
-2. Symmetric matrices (i.e. $A^t = A$) are diagonalizable over $\RR$.
-
-:::
+[[T-WQHMA]]
 
 :::{.remark}
 In fact, $A$ is symmetric $\iff \spec A$ forms an orthonormal basis.
@@ -45,9 +36,7 @@ so $A(W_1) \subseteq W_1$ is an invariant subspace, etc.
 
 :::
 
-:::{.proposition title="Simultaneous Diagonalizability"}
-A set of operators $\theset{A_i}$ pairwise commute $\iff$ they are all simultaneously diagonalizable.
-:::
+[[PR-GV5CF]]
 
 :::{.proof title="?"}
 By induction on number of operators
@@ -64,9 +53,7 @@ By induction on number of operators
 
 :::
 
-:::{.theorem title="Characterizations of Diagonalizability"}
-$M$ is diagonalizable over $\FF \iff \min_M(x, \FF)$ splits into distinct linear factors over $\FF$, or equivalently iff all of the roots of $\min_M$ lie in $\FF$.
-:::
+[[T-6ABNR]]
 
 :::{.proof title="?"}
 $\implies$:

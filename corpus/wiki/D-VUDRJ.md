@@ -10,6 +10,6 @@ classification:
 relations: []
 review: draft
 ---
-:::{.definition title="Relative homotopy groups"}
 
+::: {.definition title="Relative homotopy groups"}
 :::
