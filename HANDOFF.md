@@ -115,7 +115,8 @@ It does not complete the mathematical wiki's editorial organization.
 It does not complete the plan's permanent source-migration and independent-review gate for the named source boundary.
 
 - `artifacts/issue-11/source-reviews/` contains the current source review records.
-  Their PASS labels are aggregate review claims. They do not contain the direct inspection note required for each dropped row.
+  Their PASS labels are aggregate review claims.
+  They do not contain the direct inspection note required for each dropped row.
   `cross-repository.md` is tied to an earlier target revision and is superseded for closeout by `migration-proof-audit.md`.
 
 - `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in the dirty source clone.
