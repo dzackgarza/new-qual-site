@@ -102,8 +102,7 @@ Three obligations that earlier records carried as outstanding have landed, and r
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its `ambiguous-exact` rows number 103, not 104, and they are not near matches.
-  Each has exactly one distinct candidate card ID and the chosen `problem_id` is that ID:
-  the importer's ambiguity was over which file path held the card, not which statement.
+  Each has exactly one distinct candidate card ID and the chosen `problem_id` is that ID: the importer's ambiguity was over which file path held the card, not which statement.
   All 508 source statements are present verbatim in their occurrence cards.
   See `artifacts/issue-11/source-reviews/content-coverage-verification.md`.
 
