@@ -1,0 +1,85 @@
+schema: qual/publication@2
+id: GUIDE-REAL-ANALYSIS
+kind: study-guide
+title: Real Analysis
+lede: >-
+  Follow one dependency-ordered path across the single-variable core: what continuity gives
+  you on a compact set, what differentiation extracts from it, what the Riemann-Stieltjes
+  integral accumulates, and which of those properties survive a limit of functions.
+sections:
+  - slug: continuity
+    title: Continuity
+    parent: GUIDE-REAL-ANALYSIS
+    lede: >-
+      Start from the four equivalent readings of continuity, because each later argument
+      picks the one it needs: the sequential form for limits, the preimage form for
+      topological arguments, and the epsilon-delta form for estimates. Compactness is what
+      upgrades continuity into the two facts the rest of the path depends on: attained
+      extrema and uniform continuity.
+    items:
+      - ref: T-RA-WORKSHOP-D4-3-1
+      - ref: T-RA-WORKSHOP-D4-3-2
+      - ref: T-RA-WORKSHOP-D4-3-3
+      - ref: T-RA-WORKSHOP-D4-3-4
+      - ref: T-RA-WORKSHOP-D4-3-5
+      - query:
+          kind: problem
+          topics:
+            - uniform-continuity
+          limit: 8
+          review:
+            mode: any
+  - slug: differentiation
+    title: Differentiation
+    parent: continuity
+    lede: >-
+      Differentiation is where attained extrema become a computational tool. Fermat turns an
+      interior extremum into a vanishing derivative, the Mean Value Theorem turns that into
+      control of the function across an interval, and Taylor's theorem makes the control
+      quantitative by naming the remainder.
+    items:
+      - ref: T-RA-WORKSHOP-D5-4-1
+      - ref: T-RA-WORKSHOP-D5-4-2
+      - ref: T-RA-WORKSHOP-D5-4-3
+  - slug: riemann-stieltjes-integration
+    title: Riemann-Stieltjes Integration
+    parent: differentiation
+    lede: >-
+      The Stieltjes integral is stated against a general integrator, so the criterion for
+      integrability is a statement about upper and lower sums rather than about the
+      integrand alone. Integration by parts and the reduction to a Riemann integral are the
+      two tools that make it computable; the fundamental theorem and the integral mean value
+      theorem then connect it back to the derivative.
+    items:
+      - ref: T-RA-WORKSHOP-D6-5-1
+      - ref: T-RA-WORKSHOP-D6-5-2
+      - ref: T-RA-WORKSHOP-D6-5-3
+      - ref: T-RA-WORKSHOP-D6-5-4
+      - ref: T-RA-WORKSHOP-D6-5-5
+  - slug: uniform-convergence
+    title: Uniform Convergence
+    parent: riemann-stieltjes-integration
+    lede: >-
+      Every property established so far is a property of one function, and the question here
+      is which of them a limit inherits. Separating pointwise from uniform convergence is
+      what makes that question answerable. Uniform convergence preserves continuity and
+      commutes with the integral, differentiability needs the stronger hypothesis on the
+      derivatives, and Arzela-Ascoli and Stone-Weierstrass close the section by saying which
+      families are compact and which are dense.
+    items:
+      - ref: D-RA-WORKSHOP-D7-CONVERGENCE
+      - ref: T-RA-WORKSHOP-D7-6-1
+      - ref: T-RA-WORKSHOP-D7-6-2
+      - ref: T-RA-WORKSHOP-D7-6-3
+      - ref: T-RA-WORKSHOP-D7-6-4
+      - ref: T-RA-WORKSHOP-D7-6-5
+      - ref: T-RA-WORKSHOP-D7-6-7
+      - query:
+          kind: problem
+          topics:
+            - convergence-of-functions
+            - uniform-convergence
+            - sequences-of-functions
+          limit: 12
+          review:
+            mode: any
