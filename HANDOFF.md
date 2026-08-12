@@ -86,14 +86,15 @@ Three obligations that earlier records carried as outstanding have landed, and r
 - **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
   Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
 
-- **Direct source evidence is current at commit `d5509f0a`.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 operational or empty rows dropped, and 0 queued.
+- **The migration proof audit is not complete.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 dropped, and 0 queued.
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
   The plan forbids new migration automation, replay tools, checkers, and scripts.
   A ledger or replay cannot prove complete migration.
-  Independent complete reviews pass for QRS, make-me-a-qual, Analysis-Qual-Compendium, math-flashcards, and qual-wiki.
+  `artifacts/issue-11/migration-proof-audit.md` records why the aggregate review records do not meet the plan's per-item evidence contract.
+  All 367 dropped rows lack a direct inspection note, and the `math-flashcards` worktree differs from its pinned review boundary.
   The qual-wiki source repair at `3fe1f58f` restores the seven former image gaps and the complete topology figure set.
   The scoped MathQualBot collection passes: all 51 vendored question images and their provenance have matching source and target hashes.
-  The independent cross-review passes for the named source boundary.
+  The earlier independent cross-review is supporting history only; it does not close the current proof gap.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
@@ -109,13 +110,13 @@ Preserve those edits while resuming the larger wiki work.
 
 ## Source migration closeout boundary
 
-The closeout work preserves direct source evidence.
+The closeout work preserves the existing source-review records and records their proof gap.
 It does not complete the mathematical wiki's editorial organization.
-It does complete the plan's permanent source-migration and independent-review gate for the named source boundary.
+It does not complete the plan's permanent source-migration and independent-review gate for the named source boundary.
 
 - `artifacts/issue-11/source-reviews/` contains the current source review records.
-  All five source repositories and the scoped bot collection pass independent review.
-  `cross-repository.md` records the final cross-repository PASS.
+  Their PASS labels are aggregate review claims. They do not contain the direct inspection note required for each dropped row.
+  `cross-repository.md` is tied to an earlier target revision and is superseded for closeout by `migration-proof-audit.md`.
 
 - `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in the dirty source clone.
   Their native copies are under `assets/ws9/math-flashcards/untracked/`.
@@ -123,7 +124,8 @@ It does complete the plan's permanent source-migration and independent-review ga
 - The MathQualBot original repository is unavailable outside the named plan scope.
   The 51 vendored images are copied to `assets/ws9/qualbot-question-images/` and checked against their vendored source copies.
 
-- The named source boundary now has direct complete-migration evidence.
+- The named source boundary does not yet have direct complete-migration evidence.
+  Archive work remains blocked until every dropped and migrated row has the required direct evidence and the source boundary is frozen.
   This claim does not assert that the mathematical wiki is editorially complete or that an unavailable, out-of-scope MathQualBot repository exists.
 
 - Issue #11 records the current non-destructive state for each source repository.
