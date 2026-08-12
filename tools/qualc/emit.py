@@ -617,15 +617,20 @@ def _related(con: sqlite3.Connection, problem_id: str, kind: str) -> list[sqlite
 def run_query(
     con: sqlite3.Connection,
     query: PublicationQuery,
+    area: str,
 ) -> list[sqlite3.Row]:
     """The only query surface a publication manifest gets. Deliberately small.
 
     Every key is required. A manifest that omits `limit` is a manifest whose
     author has not decided how long the panel is, and the build should say so
     rather than pick a number.
+
+    `area` is the guide's own subject, not a manifest key: the panel renders
+    inside a subject section and reads as scoped to it, so a query is scoped
+    whether or not its author thought about scoping.
     """
-    sql = "select distinct c.* from cards c"
-    args: list = []
+    sql = "select distinct c.* from cards c join classifications a on a.card_id=c.id and a.axis='area' and a.term=?"
+    args: list = [area]
     for i, topic in enumerate(query.topics):
         sql += f" join classifications t{i} on t{i}.card_id=c.id and t{i}.axis='topic' and t{i}.term=?"
         args.append(topic)
@@ -896,9 +901,9 @@ def publication_section_page(
                     inline_cache,
                 )
             case QueryItem(query=query):
-                hits = run_query(con, query)
+                hits = run_query(con, query, manifest.area)
                 if not hits:
-                    raise ValueError(f"publication query has no matches: {manifest.id}/{section.slug}")
+                    raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
                 blocks.append(
                     pf.Div(
                         pf.Header(
@@ -950,9 +955,9 @@ def publication_appearances(
                             )
                         )
                     case QueryItem(query=query):
-                        hits = run_query(con, query)
+                        hits = run_query(con, query, manifest.area)
                         if not hits:
-                            raise ValueError(f"publication query has no matches: {manifest.id}/{section.slug}")
+                            raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
                         for hit in hits:
                             appearances[hit["id"]].append(
                                 Appearance(

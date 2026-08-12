@@ -87,6 +87,23 @@ class PublicationManifest(Strict):
     lede: str = Field(min_length=1)
     sections: list[PublicationSection] = Field(min_length=1)
 
+    @property
+    def area(self) -> str:
+        """The subject every query in this guide is scoped to.
+
+        A study guide's id names its subject -- `GUIDE-COMPLEX-ANALYSIS` is the
+        complex-analysis guide -- so the scope is already recorded and does not
+        become a field a manifest author can forget. An optional `areas` key on
+        the query would default to unscoped, and unscoped is the defect: topic
+        terms are shared between subjects, so `integrals` carries 19
+        real-analysis problems as well as 7 complex-analysis ones.
+
+        A guide whose id names no area in the corpus scopes to nothing, and its
+        first query panel fails the build with no matches rather than quietly
+        drawing from every subject.
+        """
+        return self.id.removeprefix("GUIDE-").lower()
+
     @model_validator(mode="after")
     def validate_hierarchy(self) -> PublicationManifest:
         known = {self.id}
