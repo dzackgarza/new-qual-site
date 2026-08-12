@@ -303,8 +303,9 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 - **G8 — proof guards: partial.** The fresh-clone replay checks source totality, targets, hashes, generated sources, queued owners, and G7 residuals.
   The parent plan still records remaining guard work.
 
-- **G9 — source hygiene: partial.** Replay is complete.
-  Token revocation is owner-confirmed and source correction pushes are complete; archive decisions remain open.
+- **G9 — source hygiene: complete for this closeout.** Replay is complete.
+  Token revocation is owner-confirmed, source correction pushes are complete, and M7
+  records `retain` for every source repository. No archive action is authorized.
 
 ### One action for the owner
 
@@ -320,7 +321,7 @@ Issue #11's fresh-clone replay is committed in `artifacts/issue-11/fresh-clone-r
 
 G7 has since run: orphans are 19, each recorded with why no authored order exists for it (17 are cards G3 retired whose files were never removed -- defect #31 -- and whose survivors are reachable; the other two have no sitting, no occurrence and no ledger row).
 Reachability and the fresh-clone replay are proved.
-Keep the archive gate closed until the owner names each repository's decision.
+The archive gate remains closed because the recorded decision for every repository is `retain`.
 
 ### State of the source repos
 
