@@ -90,7 +90,8 @@ Three obligations that earlier records carried as outstanding have landed, and r
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
   The plan forbids new migration automation, replay tools, checkers, and scripts.
   A ledger or replay cannot prove complete migration.
-  `artifacts/issue-11/migration-proof-audit.md` records the direct evidence. `artifacts/issue-11/source-reviews/dropped-content-review.md` names and reviews all 367 dropped rows.
+  `artifacts/issue-11/migration-proof-audit.md` records the direct evidence.
+  `artifacts/issue-11/source-reviews/dropped-content-review.md` names and reviews all 367 dropped rows.
   `artifacts/issue-11/source-reviews/math-flashcards-current-boundary.md` records the current 82-artifact worktree boundary and all matching target hashes.
   The qual-wiki source repair at `3fe1f58f` restores the seven former image gaps and the complete topology figure set.
   The scoped MathQualBot collection passes: all 51 vendored question images and their provenance have matching source and target hashes.
