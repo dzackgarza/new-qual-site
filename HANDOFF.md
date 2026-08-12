@@ -86,7 +86,7 @@ Three obligations that earlier records carried as outstanding have landed, and r
 - **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
   Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
 
-- **The permanent source-migration gate passes for the named source boundary.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 directly reviewed non-content rows, and 0 queued.
+- **Direct migration evidence exists for the named source boundary, but the closeout gate remains open.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 directly reviewed non-content rows, and 0 queued.
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
   The plan forbids new migration automation, replay tools, checkers, and scripts.
   A ledger or replay cannot prove complete migration.
@@ -95,7 +95,8 @@ Three obligations that earlier records carried as outstanding have landed, and r
   `artifacts/issue-11/source-reviews/math-flashcards-current-boundary.md` records the current 82-artifact worktree boundary and all matching target hashes.
   The qual-wiki source repair at `3fe1f58f` restores the seven former image gaps and the complete topology figure set.
   The scoped MathQualBot collection passes: all 51 vendored question images and their provenance have matching source and target hashes.
-  `artifacts/issue-11/source-reviews/cross-repository.md` records the current independent cross-review.
+  `artifacts/issue-11/source-reviews/cross-repository.md` records a global PASS claim at target boundary `819ddef`.
+  The review records do not identify reviewer assignments or prove separation from migration, repair, or prior completion adjudication. Under `PLAN-QUAL-HANDOFF-CLOSEOUT-001`, M4 and M5 remain unproved until that provenance exists.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
@@ -111,14 +112,14 @@ Preserve those edits while resuming the larger wiki work.
 
 ## Source migration closeout boundary
 
-The closeout work preserves direct source evidence and the independent review.
+The closeout work preserves direct source evidence and the existing review records.
 It does not complete the mathematical wiki's editorial organization.
-It completes the plan's permanent source-migration and independent-review gate for the named source boundary.
+It does not complete the plan's permanent source-migration and independent-review gate for the named source boundary.
 
 - `artifacts/issue-11/source-reviews/` contains the current source review records.
   `dropped-content-review.md` names every dropped row with its direct finding.
   `math-flashcards-current-boundary.md` names the current APKG boundary.
-  `cross-repository.md` records the independent global PASS.
+  `cross-repository.md` records a global PASS claim, but it does not prove reviewer identity or task separation.
 
 - `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in the dirty source clone.
   Their native copies are under `assets/ws9/math-flashcards/untracked/`.
@@ -126,8 +127,8 @@ It completes the plan's permanent source-migration and independent-review gate f
 - The MathQualBot original repository is unavailable outside the named plan scope.
   The 51 vendored images are copied to `assets/ws9/qualbot-question-images/` and checked against their vendored source copies.
 
-- The named source boundary has direct complete-migration evidence.
-  Archive work remains blocked only until each source repository has an explicit owner `retain` or `archive` decision.
+- The named source boundary has direct migration evidence, but plan-level completion is not proved.
+  Archive work remains blocked until M4 through M6 pass and each source repository has an explicit owner `retain` or `archive` decision.
   This claim does not assert that the mathematical wiki is editorially complete or that an unavailable, out-of-scope MathQualBot repository exists.
 
 - Issue #11 records the current non-destructive state for each source repository.
@@ -308,7 +309,7 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 - **G8 — proof guards: partial.** The fresh-clone replay checks source totality, targets, hashes, generated sources, queued owners, and G7 residuals.
   The parent plan still records remaining guard work.
 
-- **G9 — source hygiene: migration gate complete; archive decision pending.** Replay is complete.
+- **G9 — source hygiene: direct migration evidence recorded; independent-review provenance and archive decisions pending.** Replay is complete.
   Token revocation is owner-confirmed and source correction pushes are complete.
   The current source state is retained, but no owner archive or retain decision has been supplied.
   No archive action is authorized.
