@@ -102,7 +102,8 @@ Three obligations that earlier records carried as outstanding have landed, and r
   `artifacts/issue-11/source-reviews/cross-repository.md` records a global PASS claim at target boundary `819ddef`. The review records do not identify reviewer assignments or prove separation from migration, repair, or prior completion adjudication.
   Under `PLAN-QUAL-HANDOFF-CLOSEOUT-001`, M4 and M5 remain unproved until that provenance exists.
   `artifacts/issue-11/source-reviews/content-coverage-verification.md` measures the content question directly at `9d698120` across all five repositories and finds nothing missing: 508 make-me-a-qual statements verbatim, 68 compendium problems on 68 distinct cards, 285 flashcard deck cards, 522 authored-Markdown statements, and 377 of 398 qual-wiki/QRS authored files with every content token present (the other 21 lose only authoring status words and path fragments).
-  What M4 and M5 still lack is a sign-off by someone who did not do the migrating. The content itself is checked.
+  What M4 and M5 still lack is a sign-off by someone who did not do the migrating.
+  The content itself is checked.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its `ambiguous-exact` rows number 103, not 104, and they are not near matches.

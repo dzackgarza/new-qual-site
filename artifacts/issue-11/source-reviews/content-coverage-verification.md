@@ -1,7 +1,7 @@
 # Direct source-to-target content checks
 
-Written by the session that ran the checks, so it is evidence for a reviewer rather than
-the review itself. Every check here is re-runnable against the pinned sources.
+Written by the session that ran the checks, so it is evidence for a reviewer rather than the review itself.
+Every check here is re-runnable against the pinned sources.
 
 ## What was checked, and what that is worth
 
