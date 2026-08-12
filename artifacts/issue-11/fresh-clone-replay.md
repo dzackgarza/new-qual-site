@@ -1,10 +1,10 @@
 # Fresh-clone source replay
 
-Target revision: `1e0d5f1e4ff8daef6dbe4c20a5f3ca30eddd2fe7` Candidate ledger rows: 2285
+Target revision: `8e993272` Candidate ledger rows: 2335
 
 Source revisions:
 
-- `qual-wiki` `main` `e6686855d9db6dbe815432c3cb8b0597b7cc4fb6` via `git@github.com:dzackgarza/qual-wiki.git`
+- `qual-wiki` `main` `3fe1f58fdf800209c5ad243c91411bc0ee40cc7c` via `git@github.com:dzackgarza/qual-wiki.git`
 
 - `qual-review-and-solutions` `master` `590a8929b2326cc770a246e934ab36fb30b0c7ab` via `git@github.com:dzackgarza/qual-review-and-solutions.git`
 

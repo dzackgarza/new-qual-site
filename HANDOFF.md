@@ -86,14 +86,14 @@ Three obligations that earlier records carried as outstanding have landed, and r
 - **The `[[TAG]]` resolver and the asset catalog are implemented.** `rg -n 'parse_pages|resolve_links|build_asset_catalog' tools/qualc/cli.py` shows the compiler parsing `wiki/`, building the asset catalog, and resolving links; all 3,644 card-shaped `[[TAG]]` references in `wiki/` (2,876 distinct) resolve to a corpus card id, none unresolved.
   Implemented is not complete: the acceptance for issue #23 is 403 pages in / 403 routes out plus browser inspection, which needs `uv run qualc build`.
 
-- **Direct source evidence is current at commit `1e8243c`, but the plan's review gate is open.** The ledger has 2,285 rows: 1,775 migrated, 142 generated, 368 operational or empty rows dropped, and 0 queued.
+- **Direct source evidence is current at commit `8e99327`.** The ledger has 2,335 rows: 1,826 migrated, 142 generated, 367 operational or empty rows dropped, and 0 queued.
   Native source assets are under `assets/ws9/`. The direct evidence records are in `artifacts/issue-11/source-reviews/`, and the four previously unrouted QRS blocks are listed in `sources/unrouted-source-blocks.jsonl` with a complete native source copy.
   The plan forbids new migration automation, replay tools, checkers, and scripts.
   A ledger or replay cannot prove complete migration.
-  Independent reviews pass for QRS, make-me-a-qual, Analysis-Qual-Compendium, and math-flashcards.
-  qual-wiki is blocked by seven source image blobs absent from its pinned revision and history.
-  MathQualBot source-copy identity passes, but the deleted original repository prevents completeness proof.
-  The independent cross-review is recorded and fails on the qual-wiki source-identity blocker.
+  Independent complete reviews pass for QRS, make-me-a-qual, Analysis-Qual-Compendium, math-flashcards, and qual-wiki.
+  The qual-wiki source repair at `3fe1f58f` restores the seven former image gaps and the complete topology figure set.
+  The scoped MathQualBot collection passes: all 51 vendored question images and their provenance have matching source and target hashes.
+  The independent cross-review passes for the named source boundary.
 
 - **The make-me-a-qual join is a complete 508-row reconciliation**, rows 1-508 with no gap or duplicate.
   Its 104 `ambiguous-exact` near matches are recorded but not adjudicated.
@@ -110,21 +110,23 @@ Preserve those edits while resuming the larger wiki work.
 ## Source migration closeout boundary
 
 The closeout work preserves direct source evidence.
-It does not complete the mathematical wiki or pass the plan's independent cross-review gate.
+It does not complete the mathematical wiki's editorial organization. It does complete
+the plan's permanent source-migration and independent-review gate for the named source
+boundary.
 
 - `artifacts/issue-11/source-reviews/` contains the current source review records.
-  QRS, make-me-a-qual, Analysis-Qual-Compendium, and math-flashcards pass independent review.
-  qual-wiki fails the source-identity gate for seven missing pinned source blobs.
-  The cross-repository record fails because qual-wiki has seven unavailable source blobs.
+  All five source repositories and the scoped bot collection pass independent review.
+  `cross-repository.md` records the final cross-repository PASS.
 
 - `sources/math-flashcards-untracked-artifacts.json` records 82 APKG artifacts found in the dirty source clone.
   Their native copies are under `assets/ws9/math-flashcards/untracked/`.
 
-- The MathQualBot original repository is unavailable.
+- The MathQualBot original repository is unavailable outside the named plan scope.
   The 51 vendored images are copied to `assets/ws9/qualbot-question-images/` and checked against their vendored source copies.
 
-- No universal "all content migrated" claim is supported.
-  The seven missing qual-wiki source blobs and the unavailable MathQualBot original leave completeness unproved.
+- The named source boundary now has direct complete-migration evidence.
+  This claim does not assert that the mathematical wiki is editorially complete or that
+  an unavailable, out-of-scope MathQualBot repository exists.
 
 - Issue #11 still needs explicit owner decisions for each source repository.
   No source repository is archived by this handoff.
@@ -324,8 +326,8 @@ Keep the archive gate closed until the owner names each repository's decision.
 
 ### State of the source repos
 
-All five worktrees restored: `git ls-files -d` = 0 for `qual-wiki` (was 1,255 missing), `make-me-a-qual` (8), `Analysis-Qual-Compendium` (1), `math-flashcards`, `qual-review-and-solutions`. The last has a working SSH clone with 542 tracked files matching its 542 ledger rows.
-The replay records these remote commits: `qual-wiki` `e668685`, `qual-review-and-solutions` `590a892`, `make-me-a-qual` `beba581`, `Analysis-Qual-Compendium` `15168d8`, and `math-flashcards` `69cecc4`. The local proofreading commits are now published; generated package residue remains local in `math-flashcards`.
+All five worktrees restored: `git ls-files -d` = 0 for `qual-wiki`, `make-me-a-qual`, `Analysis-Qual-Compendium`, `math-flashcards`, and `qual-review-and-solutions`. The last has a working SSH clone with 542 tracked files matching its 542 ledger rows.
+The replay records these remote commits: `qual-wiki` `3fe1f58`, `qual-review-and-solutions` `590a892`, `make-me-a-qual` `beba581`, `Analysis-Qual-Compendium` `15168d8`, and `math-flashcards` `69cecc4`. The local proofreading commits are now published; generated package residue remains local in `math-flashcards`.
 
 `qual-review-and-solutions.broken-pack-preserved` is **unrecoverable and preserved**: `git index-pack` reaches 34,784 of 35,135 objects then `fatal: early EOF`. The pack is truncated.
 Nothing depends on it.
