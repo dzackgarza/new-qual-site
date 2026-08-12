@@ -1,0 +1,229 @@
+schema: qual/publication@2
+id: GUIDE-TOPOLOGY
+kind: study-guide
+title: Topology
+lede: >-
+  Follow one dependency-ordered path from the open-set axioms to the algebraic invariants:
+  which separation and countability hypotheses a space needs before its points behave,
+  what compactness and connectedness give a continuous map, and how homotopy, covering
+  spaces, and homology turn those spaces into groups that can be computed.
+sections:
+  - slug: spaces-and-continuous-maps
+    title: Spaces and Continuous Maps
+    parent: GUIDE-TOPOLOGY
+    lede: >-
+      One structure carries the whole subject: a family of open sets closed under arbitrary
+      unions and finite intersections. A basis is how such a family is produced in practice,
+      and the closed sets, the closure, and the limit points are the same data read through
+      the complement. The subspace, product, and quotient constructions come first because
+      every space met later is built by one of them. Continuity is then defined by preimages
+      rather than by points, which is what makes it checkable against a basis; Munkres 18.1
+      collects the equivalent forms, and open and closed maps isolate the one-sided condition
+      that continuity alone does not supply.
+    items:
+      - ref: D-XRHTV
+      - ref: D-WKURJ
+      - ref: D-UI7ZL
+      - ref: D-ASXW6
+      - ref: D-Y6JAS
+      - ref: D-LB2LS
+      - ref: D-C5THN
+      - ref: D-ITBUT
+      - ref: D-AEAAD
+      - ref: T-FA6VI
+      - ref: D-CTGON
+      - query:
+          kind: problem
+          topics:
+            - point-set
+          limit: 12
+          review:
+            mode: any
+  - slug: separation-and-countability
+    title: Separation and Countability
+    parent: spaces-and-continuous-maps
+    lede: >-
+      The axioms so far permit spaces in which distinct points share every neighborhood, so
+      nothing yet forces limits to be unique or points to be closed. The separation axioms
+      are the graded repair: each $T_n$ condition says which pair of disjoint objects can be
+      pulled apart by open sets, with $T_1$ exactly the condition that points are closed and
+      $T_2$ the hypothesis that later compactness arguments use. The countability axioms
+      bound the size of the same data instead of its separation, first countability through
+      neighborhood bases at a point and second countability through a basis for the whole
+      topology; separability asks the weaker question of a countable dense subset, stated in
+      terms of the closure from the previous section.
+    items:
+      - ref: D-ZFRV4
+      - ref: D-OM7TD
+      - ref: D-EPTMG
+      - ref: D-YEQC3
+      - ref: PR-R72XL
+      - ref: D-EMJTU
+      - ref: D-E2NWN
+      - ref: D-23NTI
+      - ref: D-X6LZD
+      - ref: D-3O6QH
+      - query:
+          kind: problem
+          topics:
+            - hausdorff-spaces
+          limit: 6
+          review:
+            mode: any
+  - slug: compactness
+    title: Compactness
+    parent: separation-and-countability
+    lede: >-
+      Compactness is the first hypothesis that turns the local statements above into global
+      ones, because a finite subcover replaces an arbitrary indexing set by a maximum. Read
+      the results in two groups. The first is what a continuous map does to a compact set:
+      the image stays compact, a real-valued map attains its extremes, and against a
+      Hausdorff target a continuous bijection is forced to be a homeomorphism, which is why
+      the separation axioms had to come first. The second is what compactness does inside a
+      product or a metric space, the tube lemma being the projection statement that makes
+      products of compact spaces tractable, and completeness with total boundedness being the
+      metric reformulation.
+    items:
+      - ref: D-AOJG3
+      - ref: D-EILKJ
+      - ref: PR-ZCUXL
+      - ref: T-TJBYR
+      - ref: T-UEXBK
+      - ref: T-OPK3N
+      - ref: T-WX5Y6
+      - ref: T-N6PYS
+      - ref: T-G4GO4
+      - ref: T-HH3YP
+      - query:
+          kind: problem
+          topics:
+            - compactness
+          limit: 8
+          review:
+            mode: any
+  - slug: connectedness-and-homotopy
+    title: Connectedness and Homotopy
+    parent: compactness
+    lede: >-
+      Connectedness is the other property preserved by continuous surjections, and it is
+      stated by what cannot happen: no decomposition into two disjoint nonempty open sets, or
+      equivalently no proper clopen subset. Path-connectedness replaces that negative
+      condition with a map out of the interval, which is the first time a space is probed by
+      maps in rather than by covers. Homotopy makes those probing maps themselves the object
+      of study: a continuous deformation through $X \times I$, an equivalence relation on
+      $\hom(X,Y)$, and hence a notion of equivalence for spaces that is strictly weaker than
+      homeomorphism. Retracts and deformation retracts are the computable case, and a
+      contractible space is one where the identity is nullhomotopic, so every map into it
+      carries no information.
+    items:
+      - ref: D-YO6NZ
+      - ref: D-FAEYE
+      - ref: D-X73EB
+      - ref: D-7JSLO
+      - ref: D-SOVXO
+      - ref: D-HFR32
+      - ref: D-K43GA
+      - ref: D-NCLVD
+      - ref: D-6UHU7
+      - ref: T-TQ4J3
+      - query:
+          kind: problem
+          topics:
+            - connectedness
+          limit: 8
+          review:
+            mode: any
+  - slug: the-fundamental-group
+    title: The Fundamental Group
+    parent: connectedness-and-homotopy
+    lede: >-
+      Homotopy classes of maps form only a set; restricting to loops at a basepoint makes
+      concatenation a group law, and that is the whole content of the construction. Simple
+      connectedness is then the statement that this group is trivial, which is where
+      path-connectedness from the previous section is needed for the basepoint to be
+      immaterial. Convexity supplies the one family of spaces whose homotopies can be written
+      down directly, and Seifert-van Kampen converts an open cover by path-connected sets
+      into an amalgamated free product, so the group of a union is computed from the groups
+      of the pieces and their intersection. The wedge is the case where the intersection is a
+      point.
+    items:
+      - ref: D-YD6DH
+      - ref: D-GFM35
+      - ref: PR-EWJMJ
+      - ref: T-2YTCZ
+      - ref: T-BTPU4
+      - ref: PR-3APOT
+      - query:
+          kind: problem
+          topics:
+            - fundamental-group
+          limit: 6
+          review:
+            mode: any
+  - slug: covering-spaces
+    title: Covering Spaces
+    parent: the-fundamental-group
+    lede: >-
+      Van Kampen computes the fundamental group from a cover by open sets; covering spaces
+      invert the question and recover spaces from the subgroups of that group. A covering map
+      is a local homeomorphism with evenly covered neighborhoods, so paths and homotopies
+      lift uniquely once a starting lift is fixed, and the induced map on $\pi_1$ is
+      injective. The lifting criterion states exactly which maps factor through a cover in
+      terms of the image subgroup, and the fundamental theorem makes the correspondence with
+      subgroups precise for spaces that are path-connected, locally path-connected, and
+      semilocally simply connected, with deck transformations realizing the normalizer
+      quotient and Galois covers the normal case. A free properly discontinuous action
+      produces such covers directly, and the subgroups of free groups are the payoff.
+    items:
+      - ref: D-ANO2D
+      - ref: D-EPQ54
+      - ref: T-SKJB2
+      - ref: T-EF5IX
+      - ref: PR-R5EN3
+      - ref: D-4VGAW
+      - ref: D-MWD2L
+      - ref: PR-UBJ6P
+      - ref: T-O44GI
+      - ref: C-ILVEB
+      - query:
+          kind: problem
+          topics:
+            - covering-spaces
+          limit: 6
+          review:
+            mode: any
+  - slug: homology-degree-and-duality
+    title: Homology, Degree, and Duality
+    parent: covering-spaces
+    lede: >-
+      The fundamental group is nonabelian and hard to compute above dimension one, so the
+      remaining invariants are the homology groups, taken here as given and used through
+      their two computational tools. Mayer-Vietoris is the exact sequence attached to a cover
+      by two open sets, the homological counterpart of van Kampen, and wedges split; together
+      they give the homology of spheres by induction on dimension. Degree is what that
+      calculation makes possible, since a self-map of $S^n$ acts on an infinite cyclic group
+      and is therefore recorded by a single integer. The fixed-point theorems are all
+      applications of that integer or of its alternating-sum refinement, the Lefschetz
+      number. Poincaré duality is the last structural statement, pairing $H^k$ against
+      $H_{n-k}$ on a closed orientable manifold via cap product with the fundamental class,
+      and the classification of surfaces is the dimension-two case where the Euler
+      characteristic and orientability are a complete invariant.
+    items:
+      - ref: D-MMDM3
+      - ref: T-3VUOH
+      - ref: PR-B6BB2
+      - ref: PR-6PENU
+      - ref: D-XC53X
+      - ref: T-BX4LD
+      - ref: T-S2OLJ
+      - ref: T-VQTR6
+      - ref: T-WNOWY
+      - ref: D-QP7WI
+      - ref: T-NBARV
+      - query:
+          kind: problem
+          topics:
+            - fixed-points
+          limit: 6
+          review:
+            mode: any
