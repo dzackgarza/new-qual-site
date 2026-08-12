@@ -15,7 +15,6 @@ review: draft
 A compact subset of a Hausdorff space is closed.
 
 ::: {.remark}
-Munkres, *Topology*, 2nd ed., Theorem 26.3.
-The converse direction fails: $\RR$ is closed in the Hausdorff space $\RR$ and is not compact.
+Munkres, *Topology*, 2nd ed., Theorem 26.3. The converse direction fails: $\RR$ is closed in the Hausdorff space $\RR$ and is not compact.
 :::
 :::

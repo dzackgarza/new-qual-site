@@ -18,7 +18,7 @@ Thus any two such sets $\Omega_{1}, \Omega_{2}$ are conformally equivalent.
 
 ![](../../assets/30_Complex_Analysis/060_Maps of Disc/figures/2021-12-14_16-33-52.png)
 
-:::{.remark}
+::: {.remark}
 Stein and Shakarchi, *Complex Analysis*, Ch. 8 Theorem 1.1.
 :::
 :::
