@@ -127,8 +127,8 @@ It does complete the plan's permanent source-migration and independent-review ga
   This claim does not assert that the mathematical wiki is editorially complete or that an unavailable, out-of-scope MathQualBot repository exists.
 
 - Issue #11 records the current non-destructive state for each source repository.
-  No owner archive or retain decision has been supplied. No archive action is authorized
-  or performed by this handoff.
+  No owner archive or retain decision has been supplied.
+  No archive action is authorized or performed by this handoff.
 
 ## Work required to finish the project
 
@@ -304,10 +304,10 @@ Two carry positive evidence of being *different* sittings (January/Spring 2014 s
 - **G8 — proof guards: partial.** The fresh-clone replay checks source totality, targets, hashes, generated sources, queued owners, and G7 residuals.
   The parent plan still records remaining guard work.
 
-- **G9 — source hygiene: migration gate complete; archive decision pending.** Replay is
-  complete. Token revocation is owner-confirmed and source correction pushes are complete.
-  The current source state is retained, but no owner archive or retain decision has been
-  supplied. No archive action is authorized.
+- **G9 — source hygiene: migration gate complete; archive decision pending.** Replay is complete.
+  Token revocation is owner-confirmed and source correction pushes are complete.
+  The current source state is retained, but no owner archive or retain decision has been supplied.
+  No archive action is authorized.
 
 ### One action for the owner
 
