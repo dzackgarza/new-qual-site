@@ -1,7 +1,12 @@
 #!/usr/bin/env python3
 r"""Regenerate vocabularies/macros.json from the author's pandoc preamble.
 
-Only the macros the corpus actually uses, plus whatever those expand into.
+Only the macros the authored text actually uses, plus whatever those expand into.
+`_macros.html` is included in every document the build emits, so the used set is read
+from `wiki/` as well as `corpus/`; narrowing it to `corpus/` left every macro a wiki page
+uses undefined, and an undefined macro renders as red literal text without raising a
+MathJax error.
+
 The result is committed, so a build never reaches outside this repository.
 
 `PREAMBLE` is the file the author's own pipeline loads, and it is read the way
@@ -20,6 +25,10 @@ LaTeX reads it, because every shortcut here has already cost the site a macro:
     `\perp` are only ever defined in commented-out lines, in terms of `\oldexp`
     and `\oldperp` that nothing defines; taking those definitions broke 82
     corpus sites that mean MathJax's own `\exp` and `\perp`.
+  * the preamble targets LaTeX, and MathJax is the smaller language. A body may
+    use a primitive MathJax has no equivalent for, and MathJax fails the whole
+    expression rather than the primitive. `TEX_ONLY` drops those; the preamble
+    stays correct for the LaTeX pipeline that also reads it.
 
 Keys carry the leading backslash, which is the name `qualc build` wants:
 `mathjax_header` rejects anything else. Arity is not written; it is read back
@@ -46,6 +55,10 @@ OPERATOR_RE = re.compile(r"\\DeclareMathOperator\*?\s*\{?\\([A-Za-z]+)\}?\s*\{")
 # The committed vocabulary carried `\sq` and `\I` because of it. `[A-Za-z]` is
 # in the lookahead so a failed test cannot be satisfied by a shorter name.
 MACRO_USE_RE = re.compile(r"\\([A-Za-z]+)(?![A-Za-z\u2026])")
+# Paragraph-mode glue. MathJax has no `\hfill`, and `\qed` is written with one.
+TEX_ONLY = re.compile(r"\\hfill\b")
+
+USED_IN = ("corpus", "wiki")
 
 
 def preamble_text(path: Path, seen: frozenset[Path] = frozenset()) -> str:
@@ -92,8 +105,9 @@ def main() -> int:
     defined = definitions(preamble_text(PREAMBLE))
 
     used: set[str] = set()
-    for path in (ROOT / "corpus").rglob("*.md"):
-        used |= set(MACRO_USE_RE.findall(path.read_text()))
+    for where in USED_IN:
+        for path in (ROOT / where).rglob("*.md"):
+            used |= set(MACRO_USE_RE.findall(path.read_text()))
 
     frontier, keep = used & defined.keys(), {}
     while frontier:  # a macro may be defined in terms of another
@@ -101,9 +115,9 @@ def main() -> int:
         keep[name] = defined[name]
         frontier |= {n for n in MACRO_USE_RE.findall(defined[name]) if n in defined and n not in keep}
 
-    macros = {"\\" + name: body for name, body in sorted(keep.items())}
+    macros = {"\\" + name: TEX_ONLY.sub("", body).strip() for name, body in sorted(keep.items())}
     (ROOT / "vocabularies" / "macros.json").write_text(json.dumps(macros, indent=2, ensure_ascii=False) + "\n")
-    print(f"{len(macros)} macros used by the corpus, from {PREAMBLE}")
+    print(f"{len(macros)} macros used by {' and '.join(USED_IN)}, from {PREAMBLE}")
     undefined = sorted(n for n in used if n not in defined)
     if undefined:
         print(f"not defined in the preamble (assumed standard LaTeX): {' '.join(undefined)}")
