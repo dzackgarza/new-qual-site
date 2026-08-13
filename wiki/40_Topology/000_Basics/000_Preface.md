@@ -2,8 +2,8 @@
 
 References:
 
-- Munkres [@munkres_2018]
-- Hatcher [@hatcher_2002]
+- Munkres [@Mun00]
+- Hatcher [@Hat02]
 
 Some fun resources:
 

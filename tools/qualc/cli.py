@@ -12,7 +12,7 @@ from .diagnostics import Diagnostic
 from .model import ParsedCard, discover, parse_cards_with
 from .pandoc_batch import PandocServer
 from .static_site import build_asset_catalog
-from .wiki import WikiPage, load_textbooks, parse_pages, resolve_links
+from .wiki import WikiPage, load_citations, parse_pages, resolve_links
 
 
 def load(
@@ -27,7 +27,7 @@ def load(
         errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies"))
     wiki_pages: list[WikiPage] = []
     if not errors:
-        wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_textbooks(root / "vocabularies"))
+        wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
         errors.extend(wiki_errors)
         card_routes = {}
         for item in parsed:

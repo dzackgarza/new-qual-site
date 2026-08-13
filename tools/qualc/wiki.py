@@ -21,55 +21,36 @@ import yaml
 
 from .diagnostics import Diagnostic
 from .model import MARKDOWN, drop_path_captions, from_ast
-from .pandoc_batch import PandocFailure, PandocServer
+from .pandoc_batch import Citations, PandocFailure, PandocServer
 from .static_site import AssetCatalog, _asset_source
 
 WIKI_BATCH_SIZE = 8
 IMAGE_ELEMENT = cast(type[pf.Element], vars(pf)["Image"])
 
 
-def load_textbooks(root: Path) -> dict[str, str]:
-    """Citation key -> the book's name, from the textbook registry.
-
-    An entry answers to its own id, and to any key in its `cites` list: the
-    authored wiki writes `[@dummit_foote_2004]` where the registry calls the
-    same book `dummit-foote`.
-    """
-    books = yaml.safe_load((root / "textbooks.yaml").read_text())
-    return {key: book["name"] for book in books for key in [book["id"], *book.get("cites", [])]}
+def load_citations(root: Path) -> Citations:
+    """The BibTeX the authored wiki cites, and the style its references are set in."""
+    return Citations(
+        bibliography=(root / "references.bib").read_text(),
+        style=(root / "citation-style.csl").read_text(),
+    )
 
 
-def _inlines(text: str) -> list[pf.Inline]:
-    words = text.split(" ")
-    out: list[pf.Inline] = [pf.Str(words[0])]
-    for word in words[1:]:
-        out.extend([pf.Space(), pf.Str(word)])
-    return out
+# citeproc reports a key no entry defines as a warning and renders it as
+# `**key?**`, which would reach the page. The message is the only place the key
+# is named, so the warning is classified rather than the AST inspected.
+CITEPROC_MISSING = "Citeproc: citation "
+
+# Pandoc records the citeproc request in the document's metadata, so a page's
+# stringified text ends `references.bibstyle.csl` and every page in the search
+# index matches a search for either name. They describe the request, not the page.
+CITEPROC_METADATA = ("bibliography", "csl")
 
 
-def resolve_citations(document: pf.Doc, path: Path, textbooks: dict[str, str]) -> list[Diagnostic]:
-    """Name the book a `[@key]` cites, in place; return the keys no book claims.
-
-    Pandoc reads `[@dummit_foote_2004]` as a citation and leaves the key as the
-    element's own text, so without CSL processing the reader is shown the key.
-    Nothing here runs CSL: two pages carry 21 citations of six books, and a
-    generated bibliography would send the reader to a second list to learn what
-    naming the book in place already tells them.
-    """
-    errors: list[Diagnostic] = []
-
-    def visit(element: pf.Element, doc: pf.Doc) -> pf.Element | None:
-        del doc
-        if not isinstance(element, pf.Cite):
-            return None
-        unknown = [citation.id for citation in element.citations if citation.id not in textbooks]
-        if unknown:
-            errors.append(Diagnostic("unknown-citation", str(path), f"no textbook registry entry cites {', '.join(unknown)}"))
-            return None
-        return pf.Span(*_inlines("; ".join(textbooks[citation.id] for citation in element.citations)), classes=["citation"])
-
-    document.walk(visit)
-    return errors
+def _citation_diagnostic(warning: str, path: Path) -> Diagnostic:
+    if warning.startswith(CITEPROC_MISSING):
+        return Diagnostic("unknown-citation", str(path), warning)
+    return Diagnostic("reader-warning", str(path), warning)
 
 
 @dataclass
@@ -123,7 +104,7 @@ def _without_first_title(document: pf.Doc) -> list[pf.Block]:
     return blocks
 
 
-def parse_pages(pandoc: PandocServer, root: Path, textbooks: dict[str, str]) -> tuple[list[WikiPage], list[Diagnostic]]:
+def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple[list[WikiPage], list[Diagnostic]]:
     """Parse all source pages through the same Pandoc dialect as cards.
 
     Wiki pages can be much larger than cards, so requests are intentionally kept
@@ -143,17 +124,18 @@ def parse_pages(pandoc: PandocServer, root: Path, textbooks: dict[str, str]) -> 
     parsed: list[WikiPage] = []
     for offset in range(0, len(prepared), WIKI_BATCH_SIZE):
         batch = prepared[offset : offset + WIKI_BATCH_SIZE]
-        results = pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN)
+        results = pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN, citations)
         for (path, source_rel, metadata, _), result in zip(batch, results, strict=True):
             if isinstance(result, PandocFailure):
                 errors.append(Diagnostic("card-unreadable", str(path), result.error))
                 continue
             warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
             if warnings:
-                errors.append(Diagnostic("reader-warning", str(path), "; ".join(warnings)))
+                errors.extend(_citation_diagnostic(warning, path) for warning in warnings)
                 continue
             document = from_ast(result.output).walk(drop_path_captions)
-            errors.extend(resolve_citations(document, path, textbooks))
+            for key in CITEPROC_METADATA:
+                document.metadata.content.pop(key, None)
             parsed.append(
                 WikiPage(
                     source_path=path,

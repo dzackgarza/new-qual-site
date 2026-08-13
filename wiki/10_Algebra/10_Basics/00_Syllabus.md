@@ -18,19 +18,19 @@ Adapted from remark written by Roy Smith, August 2006:
 
 ## General References
 
-- David Dummit and Richard Foote, Abstract Algebra, Wiley, 2003. [@dummit_foote_2004]
+- David Dummit and Richard Foote, Abstract Algebra, Wiley, 2003. [@DF04]
 
-- Kenneth Hoffman and Ray Kunze, Linear Algebra, Prentice-Hall, 1971. [@hoffman_kunze_1981]
+- Kenneth Hoffman and Ray Kunze, Linear Algebra, Prentice-Hall, 1971. [@HK71]
 
-- Thomas W. Hungerford, Algebra, Springer, 1974. [@hungerford_2008]
+- Thomas W. Hungerford, Algebra, Springer, 1974. [@Hun74]
 
-- Roy Smith, Algebra Course Notes (843-1 through 845-3). [@smith]
+- Roy Smith, Algebra Course Notes (843-1 through 845-3). [@Smi]
 
   - Note: scroll down the page to find links to his course notes.
 
 ## Group Theory
 
-> References: [@dummit_foote_2004], [@hungerford_2008], [@smith] "The first 6 chapters (220 pages) of Dummit and Foote are excellent.
+> References: [@DF04], [@Hun74], [@Smi] "The first 6 chapters (220 pages) of Dummit and Foote are excellent.
 > All the definitions and proofs of these theorems on groups are given in Smith's web based lecture notes for math 843 part 1."
 
 ### Topics
@@ -139,7 +139,7 @@ Chapters 1-9 of Dummit and Foote
 
 ## Linear Algebra
 
-> References: [@dummit_foote_2004],[@hoffman_kunze_1981],[@smith]
+> References: [@DF04],[@HK71],[@Smi]
 
 ### Topics
 
@@ -171,7 +171,7 @@ Chapters 1-9 of Dummit and Foote
 
 ## Rings
 
-> References: [@dummit_foote_2004],[@hungerford_2008],[@smith]
+> References: [@DF04],[@Hun74],[@Smi]
 
 - DF chapters 13,14 (about 145 pages).
 
@@ -289,7 +289,7 @@ Chapters 1-9 of Dummit and Foote
 
 ## Modules
 
-> References: [@dummit_foote_2004],[@hungerford_2008],[@smith]
+> References: [@DF04],[@Hun74],[@Smi]
 
 ### Topics
 
@@ -314,7 +314,7 @@ Chapters 1-9 of Dummit and Foote
 
 ### Topics
 
-> References: [@dummit_foote_2004],[@hungerford_2008],[@smith]
+> References: [@DF04],[@Hun74],[@Smi]
 
 - Algebraic extensions of fields
 

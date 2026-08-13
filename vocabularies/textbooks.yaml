@@ -1,35 +1,27 @@
 # Cited textbooks. A registry, not a schema enum: a new book is an entry here,
 # never a change to the source union.
 #
-# `cites` lists the keys the authored wiki writes inside `[@...]`, where an entry
-# answers to something other than its own id. Pandoc reads those as citations and
-# leaves the key itself as the reader-facing text unless something resolves it;
-# `qualc.wiki.resolve_citations` resolves them against this list, and a key no
-# entry claims fails the check rather than reaching a page.
+# This registry says which books a card may name as its source. It does not
+# resolve citations: `[@key]` is resolved by citeproc against
+# `references.bib`, whose keys are the ones the authored wiki writes.
 - id: ahlfors
   name: Ahlfors, Complex Analysis
 - id: artin
   name: Artin, Algebra
 - id: dummit-foote
   name: Dummit and Foote, Abstract Algebra
-  cites: [dummit_foote_2004]
 - id: folland
   name: Folland, Real Analysis
 - id: hatcher
   name: Hatcher, Algebraic Topology
-  cites: [hatcher_2002]
 - id: hoffman-kunze
   name: Hoffman and Kunze, Linear Algebra
-  cites: [hoffman_kunze_1981]
 - id: hungerford
   name: Hungerford, Algebra
-  cites: [hungerford_2008]
 - id: munkres
   name: Munkres, Topology
-  cites: [munkres_2018]
 - id: smith-course-notes
   name: Smith, Algebra Course Notes
-  cites: [smith]
 - id: stein-shakarchi-complex
   name: Stein and Shakarchi, Complex Analysis
 - id: weibel

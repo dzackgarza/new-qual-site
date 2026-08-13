@@ -99,29 +99,47 @@ def test_check_rejects_missing_or_ambiguous_page_references(
     assert diagnostic_codes(work) == [code]
 
 
-def test_a_citation_names_the_book_rather_than_its_key(tmp_path: Path) -> None:
+def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
     """Pandoc reads `[@key]` as a citation and leaves the key as the element's
-    own text, so with no CSL step the reader is shown `[@dummit_foote_2004]`.
-    The registry knows what that key cites; the page says so."""
+    own text, so without citeproc the reader is shown `[@dummit_foote_2004]`.
+    citeproc resolves it against `references.bib`: the reader gets an author-date
+    reference in place and a bibliography entry to look it up in."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text("# Fixture index\n\nReferences: [@dummit_foote_2004], [@smith].\n")
+    (work / "wiki" / "index.md").write_text("# Fixture index\n\nReferences: [@DF04], [@Smi].\n")
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
 
     # Pandoc's HTML writer wraps its output, so a name can straddle two lines.
-    page = re.sub(r"\s+", " ", (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
-    assert "Dummit and Foote, Abstract Algebra" in page
-    assert "Smith, Algebra Course Notes" in page
-    assert "@dummit_foote_2004" not in page
+    html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
+    assert "@DF04" not in html
+
+    # The reference is only half of it: the key resolves to a work the reader can
+    # find, listed once in a generated bibliography carrying the library's metadata.
+    assert html.count('class="csl-entry"') == 2
+
+    # Read as text: Better BibTeX protects title case with a `nocase` span, so a
+    # title is not contiguous in the markup. The style is the committed alphabetic
+    # one, which labels a reference `[DuFo04]` rather than `(Dummit and Foote 2004)`.
+    text = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html))
+    assert "[DuFo04]" in text
+    assert "[Smit]" in text
+    assert "Dummit, D. S. and R. M. Foote" in text
+    assert "Wiley, 2004" in text
+    assert "Smith, R." in text
 
     records = json.loads((work / "build" / "quarto" / "_site" / "search.json").read_text())
     index = next(record for record in records if record["url"] == "wiki/index.html")
-    assert "dummit and foote" in index["search"]
+    assert "dummit, d. s. and r. m. foote" in index["search"]
+    # Pandoc records the citeproc request in the document metadata. The page is
+    # searchable for what it says, not for the names of the files it was built with.
+    assert "references.bib" not in index["search"]
+    assert "style.csl" not in index["search"]
 
 
-def test_check_rejects_a_citation_no_textbook_claims(tmp_path: Path) -> None:
-    """A key the registry does not know would reach the page as itself."""
+def test_check_rejects_a_citation_the_bibliography_does_not_define(tmp_path: Path) -> None:
+    """citeproc renders a key it cannot resolve as `**key?**`, which would reach
+    the page. The build stops at the named diagnostic instead."""
     work = fixture_repo(tmp_path)
     (work / "wiki" / "index.md").write_text("# Fixture index\n\nSee [@bourbaki_1970].\n")
     for path in (work / "wiki").rglob("*.md"):

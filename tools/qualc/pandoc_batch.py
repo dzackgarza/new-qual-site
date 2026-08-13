@@ -23,6 +23,14 @@ class PandocBatchError(RuntimeError):
 
 
 @dataclass(frozen=True)
+class Citations:
+    """What citeproc needs, as text. Both travel to the server in one request."""
+
+    bibliography: str
+    style: str
+
+
+@dataclass(frozen=True)
 class PandocMessage:
     message: str
     verbosity: str
@@ -98,8 +106,32 @@ class PandocServer:
         self._port = None
         self._abbreviations = None
 
-    def read_markdown(self, texts: list[str], markdown_format: str) -> list[PandocResult]:
+    def read_markdown(
+        self,
+        texts: list[str],
+        markdown_format: str,
+        citations: Citations | None = None,
+    ) -> list[PandocResult]:
+        """Read markdown to a Pandoc AST, resolving citations when given a bibliography.
+
+        The server runs in PandocPure and cannot open a file, so the bibliography
+        and the style both travel in `files` and are named by path. Both are
+        base64-encoded like the abbreviations: the server reads a `files` value as
+        base64 whenever it parses as base64, and a BibTeX file that happened to do
+        so was decoded to bytes and rejected as invalid UTF-8. Encoding removes the
+        guess.
+
+        The style is required rather than optional. Pandoc 3.10 cannot resolve its
+        own default style under PandocPure -- it looks for `data/data/default.csl`
+        and fails -- so a citeproc run without an explicit CSL fails every page.
+        """
         abbreviations = self._require_abbreviations()
+        files = {"abbreviations": abbreviations}
+        citeproc: dict[str, object] = {}
+        if citations is not None:
+            files["references.bib"] = base64.b64encode(citations.bibliography.encode()).decode()
+            files["style.csl"] = base64.b64encode(citations.style.encode()).decode()
+            citeproc = {"citeproc": True, "bibliography": ["references.bib"], "csl": "style.csl"}
         requests = [
             {
                 "text": text,
@@ -107,7 +139,8 @@ class PandocServer:
                 "to": "json",
                 "standalone": True,
                 "abbreviations": "abbreviations",
-                "files": {"abbreviations": abbreviations},
+                "files": files,
+                **citeproc,
             }
             for text in texts
         ]

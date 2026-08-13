@@ -656,12 +656,18 @@ def run_query(
     `area` is the guide's own subject, not a manifest key: the panel renders
     inside a subject section and reads as scoped to it, so a query is scoped
     whether or not its author thought about scoping.
+
+    `topics` matches a card carrying **any** of them. Topic vocabulary is finer
+    than a section: convergence alone splits four ways, and a section about
+    convergence wants all of it. One join per topic asked for a card carrying
+    every one, which no card does, so the panel a section actually wants was
+    unsayable.
     """
     sql = "select distinct c.* from cards c join classifications a on a.card_id=c.id and a.axis='area' and a.term=?"
     args: list = [area]
-    for i, topic in enumerate(query.topics):
-        sql += f" join classifications t{i} on t{i}.card_id=c.id and t{i}.axis='topic' and t{i}.term=?"
-        args.append(topic)
+    if query.topics:
+        sql += " join classifications t on t.card_id=c.id and t.axis='topic' and t.term in ({})".format(",".join("?" * len(query.topics)))
+        args += list(query.topics)
     sql += " where c.kind=?"
     args.append(query.kind)
     match query.review:

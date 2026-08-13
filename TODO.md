@@ -4,7 +4,7 @@
 
 - [ ] Classify the problem cards by topic.
 
-- [ ] Make `run_query` (`tools/qualc/emit.py:645`) match any of the listed topics rather than all of them.
+- [x] Make `run_query` match any of the listed topics rather than all of them.
 
 - [ ] Report a panel that returns less than its topics hold.
   The build fails only on an empty result.
@@ -20,13 +20,17 @@
 
 ## Citations
 
-- [ ] Write BibTeX entries for the books in `vocabularies/textbooks.yaml`.
+- [x] Write BibTeX entries for the books the wiki cites, in `vocabularies/references.bib`.
 
-- [ ] Run pandoc with `--citeproc` and a CSL.
+- [x] Run pandoc with citeproc.
+  No CSL: pandoc's built-in default styles the entries.
 
-- [ ] Delete `qualc.wiki.resolve_citations` and the `cites:` mapping.
+- [x] Delete `qualc.wiki.resolve_citations` and the `cites:` mapping.
 
-- [ ] Delete `vocabularies/textbooks.yaml`.
+- [ ] Put the six entries in the Zotero library and generate `references.bib` from the export.
+  `~/.pandoc/bib/references.bib` is a Zotero export, so entries added to it by hand are lost on the next export.
+
+`vocabularies/textbooks.yaml` stays: it is also the closed vocabulary a card's `TextbookSource` names.
 
 ## Stubs
 
@@ -34,20 +38,16 @@
 
 ## Rendering
 
-- [ ] Drop `\hfill` from `\qed` in `vocabularies/macros.json:228`. MathJax has no `\hfill`.
+- [x] Drop `\hfill` from `\qed`. MathJax has no `\hfill`.
 
-- [ ] Give `\too` its argument at every bare use.
-
-- [ ] Define `\closure`.
-
-- [ ] Make `tools/sync_macros.py:95` read `wiki/` as well as `corpus/`.
+- [x] Make `sync_macros` read `wiki/` as well as `corpus/`.
 
 - [ ] Check for undefined macros directly.
   They render red and emit no `mjx-merror`.
 
-## Site
+- [ ] 45 files write a bare `\hfill` in prose, left over from the LaTeX sources.
 
-- [ ] Wire filter state into the URL on `/problems.html`, or delete the claim (`tools/qualc/emit.py:1134`, `:1537`).
+## Site
 
 - [ ] Replace the raw vault paths used as figcaptions with descriptions.
 
