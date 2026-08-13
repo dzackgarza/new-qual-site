@@ -74,17 +74,17 @@ _ALIGN_END = re.compile(r"\\end\{aligned\}\s*\$\$|\\end\{align\*?\}|\\end\{align
 
 
 def loose(text: str) -> str:
-    r"""The statement's identity: its text after every difference that is not one.
+    r"""One import's text, after every difference that re-minting would invent.
 
-    Two renderings of one statement differ by TeX spelling alone -- `\mathbf{Q}`
+    Two renderings of one record differ by TeX spelling alone -- `\mathbf{Q}`
     against `\mathbb{Q}`, `\begin{aligned}` against `\begin{align*}`, a spacing
-    macro, a `.` inside display math. PLAN-QUAL-GRUNT-001 rules those are not
-    variants, so they are equal here. This is equality, never a similarity
-    threshold: nothing is merged on resemblance.
+    macro, a `.` inside display math. Equal here means the importer recognises a
+    record it already minted, instead of minting it again on the next run.
 
-    It is the corpus's own equality -- `tools/collapse_duplicates.py` collapses
-    under it -- so the importer must match under it too, or it re-mints on every
-    run the duplicates that pass removed.
+    It does not decide whether two cards state the same mathematics. Nothing in
+    the text decides that: an unwritten card normalises to the same string as
+    every other unwritten card, and two sittings of one problem normalise to the
+    same string as each other. Deciding it means reading both statements.
     """
     t = text.lower()
     # Pandoc spells a TeX environment it will not touch as a raw-tex span, and

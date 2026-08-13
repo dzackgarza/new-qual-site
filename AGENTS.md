@@ -1,3 +1,68 @@
+# This project is not automatable
+
+Read this before writing anything in this repository.
+
+Intake and migration needed tools. Getting the content out of five source
+repositories and into this one was a transport problem, and transport is what a
+tool is for. **That phase is over.** Everything after it is intelligent, semantic
+work on mathematics.
+
+Nothing after intake is mechanical. Not checking. Not deduplicating. Not
+classifying. Not merging, writing, retitling, reorganizing, or auditing. Every
+one of those operations means reading the mathematics, understanding what a
+statement says, and deciding. There is no normal form, fingerprint, digest,
+similarity score, heuristic, or "clever enough" parse that decides any of them,
+because the thing being decided is what the mathematics *means*.
+
+Growing this corpus is like growing the Stacks Project: reading, writing,
+analysis, auditing, reorganization, all of it infinitely subtle, with unbounded
+edge cases. A tool that automates any part of that is a claim to have enumerated
+the cases in advance. That claim is false every time.
+
+It is also a bad trade even when it appears to work. This is a **one-time task**.
+The content gets written and finalized once. Every tool built to automate a part
+of it is obsolete the moment that part is finished, and until then it fossilizes
+whatever heuristic its author guessed at, in code that outlives the reasoning
+behind it. The tool then gets trusted precisely because it is a tool.
+
+## What this rules out
+
+Do not write, extend, or "make safe" anything that decides a semantic question.
+If a proposed tool would answer *are these the same statement*, *is this title
+right*, *does this belong in that section*, *is this body empty enough to
+discard*, *which of these is canonical* — do not write it. Read the cards and
+decide.
+
+Making such a tool safer is worse than leaving it broken, because it keeps the
+tool. The correct response to a heuristic that destroys content is to delete the
+heuristic, not to add a floor under it.
+
+`tools/collapse_duplicates.py` was exactly this and has been deleted. It decided
+which cards stated the same mathematics from a normalized-text fingerprint. It
+proposed destroying distinct statements three separate times: once merging
+occurrence cards with the problems they instantiate, once merging every unwritten
+card onto one survivor so that Hahn-Banach, Mayer-Vietoris, Nondegenerate
+Bilinear Form and Local Orientation became a single card, and once merging
+occurrence cards with each other, which are different sittings of one problem and
+the entire reason the occurrence layer exists. The eleven collapses that were
+actually correct were settled by reading twenty-two cards.
+
+## What a tool may still do
+
+Render and transport. The build pipeline turns authored content into a site;
+`sync_macros.py` and `sync_bibliography.py` mirror an external file into the
+repository so the build is self-contained. None of these decides anything about
+the mathematics.
+
+A check may report a measurement, named for exactly the measurement it took.
+`audit.py`'s `duplicate-bodies` reports that two cards hold the same bytes. That
+is a true statement about bytes and a *candidate* for someone to read. It is not
+a finding that the two cards are the same statement, and it must never be wired
+to anything that acts on that reading. A check whose name claims more than it
+measured is the same defect in smaller form.
+
+* * *
+
 > Source: `PR_GUIDANCE.md` in `ai`.
 
 # Review Guidelines
