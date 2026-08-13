@@ -1,28 +1,27 @@
 # TODO
 
 Almost everything left here is reading and writing mathematics, not engineering.
-See AGENTS.md: after intake, no part of this is mechanical, and a tool that
-decides a semantic question does not get written.
+See AGENTS.md: after intake, no part of this is mechanical, and a tool that decides a semantic question does not get written.
 
 ## Problem subtrees
 
 - [ ] Classify the problem cards by topic.
-  By reading them. 2,750 of the 3,036 carry no topic, and 95 of the 107 topics that
-  do appear are named by no panel, so the subtrees reach 96 problems.
+  By reading them.
+  2,750 of the 3,036 carry no topic, and 95 of the 107 topics that do appear are named by no panel, so the subtrees reach 96 problems.
 
 - [x] Make `run_query` match any of the listed topics rather than all of them.
 
 - [ ] Decide what a panel should do when it returns less than its topics hold.
-  The build fails only on an empty result, so a partly-filled panel is silent. What
-  counts as under-filled is a judgement about the section, not a threshold.
+  The build fails only on an empty result, so a partly-filled panel is silent.
+  What counts as under-filled is a judgement about the section, not a threshold.
 
 ## Duplicates
 
-- [x] Read the eleven pairs merged at `c6d73c99`.
-  Ten are one problem ingested from both the wiki and `qrs`, with the sittings already in the occurrence layer; `P-OO3WX`/`P-SUE6S` are two `qrs` imports of one problem, and the retired card had no occurrences. No reference dangles.
+- [x] Read the eleven pairs merged at `c6d73c99`. Ten are one problem ingested from both the wiki and `qrs`, with the sittings already in the occurrence layer; `P-OO3WX`/`P-SUE6S` are two `qrs` imports of one problem, and the retired card had no occurrences.
+  No reference dangles.
 
-- [x] Delete `tools/collapse_duplicates.py`.
-  It decided which statements were the same from a normalised-text fingerprint, which cannot decide that. `audit.py`'s `duplicate-bodies` still reports cards sharing a body exactly; reading the pair is what settles it.
+- [x] Delete `tools/collapse_duplicates.py`. It decided which statements were the same from a normalised-text fingerprint, which cannot decide that.
+  `audit.py`'s `duplicate-bodies` still reports cards sharing a body exactly; reading the pair is what settles it.
 
 ## Citations
 
