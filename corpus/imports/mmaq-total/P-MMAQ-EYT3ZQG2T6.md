@@ -7,7 +7,6 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - analysis
   - limits
 relations: []
 review: draft

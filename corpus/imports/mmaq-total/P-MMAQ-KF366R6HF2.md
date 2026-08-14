@@ -7,8 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
+  - argument-principle
+  - cauchy-integral-theorem
   - integrals
-  - argument-principle-cauchy-s-integral-theorem
   - meromorphic-functions
 relations: []
 review: draft

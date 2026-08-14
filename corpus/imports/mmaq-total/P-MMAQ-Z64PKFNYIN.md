@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - entire-functions
-  - analysis
 relations: []
 review: draft
 ---

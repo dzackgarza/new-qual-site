@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - analysis
+  - trigonometry
+  - polynomials
+  - zeros
 relations: []
 review: draft
 ---

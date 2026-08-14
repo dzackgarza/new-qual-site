@@ -13,8 +13,6 @@
   name: Approximations to the Identity
 - id: argument-principle
   name: Argument Principle
-- id: argument-principle-cauchy-s-integral-theorem
-  name: Argument Principle Cauchy's Integral Theorem
 - id: arzela-ascoli
   name: Arzela-Ascoli
 - id: automorphisms

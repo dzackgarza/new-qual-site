@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - integrals
-  - analysis
 relations: []
 review: draft
 ---

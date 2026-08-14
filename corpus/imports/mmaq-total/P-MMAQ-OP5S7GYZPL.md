@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - holomorphic-functions
-  - analysis
 relations: []
 review: draft
 ---
