@@ -32,8 +32,8 @@ See AGENTS.md: after intake, no part of this is mechanical, and a tool that deci
 
 - [x] Delete `qualc.wiki.resolve_citations` and the `cites:` mapping.
 
-- [ ] Put the six entries in the Zotero library and generate `references.bib` from the export.
-  `~/.pandoc/bib/references.bib` is a Zotero export, so entries added to it by hand are lost on the next export.
+- [x] Put the six entries in the Zotero library and generate `references.bib` from the export.
+  `tools/sync_bibliography.py` exports the cited items through Better BibTeX; the committed file is the export.
 
 `vocabularies/textbooks.yaml` stays: it is also the closed vocabulary a card's `TextbookSource` names.
 
@@ -54,7 +54,8 @@ See AGENTS.md: after intake, no part of this is mechanical, and a tool that deci
 
 ## Site
 
-- [ ] Replace the raw vault paths used as figcaptions with descriptions.
+- [x] Replace the raw vault paths used as figcaptions with descriptions.
+  `7d540047` dropped the path captions instead of describing them; one raw caption survives, `000_Solution Compendia`.
 
 - [ ] Build the Prelims subject branch (#24).
 
@@ -72,9 +73,14 @@ See AGENTS.md: after intake, no part of this is mechanical, and a tool that deci
 
 ## Proof
 
-- [ ] Exercise search, filters, occurrence links, problem disclosure and statements-only generation on the deployed host.
+- [x] Exercise search, filters, occurrence links, problem disclosure and statements-only generation on the deployed host.
+  Done in `artifacts/issue-30/replay-proof.md`: search, filters and disclosure work; occurrence links and statements-only failed and became #37-#40, all since fixed.
 
-- [ ] Screenshot the widths #30 names.
+- [x] Screenshot the widths #30 names.
+  15 routes at all four widths on both hosts; 56 of the 60 pairs byte-identical.
+
+- [ ] Replay the deployed host at a revision carrying the #37-#40 fixes.
+  The recorded replay covers `bba5c28a`, which predates them, so #30's deployed proof does not yet describe the fixed artifact.
 
 - [ ] Get the closeout M4/M5 sign-off from someone who did not do the migrating.
 
@@ -82,4 +88,6 @@ See AGENTS.md: after intake, no part of this is mechanical, and a tool that deci
 
 #5, #6, #7, #8, #9, #10, #11, #14.
 
-- [ ] Check #23, #26, #27, #29, #30 against their proofs in `artifacts/` and close the ones that are done.
+- [x] Check #23, #26, #27, #29, #30 against their proofs in `artifacts/`, and close the ones that are done.
+  None closes: #23's build proofs were never run, #26's proof says its own reachability criterion is unmet, #27 has no proof, #29's topology section carries the #41 overflow, and #30's replay predates the #37-#40 fixes.
+  #35, #42 and #43 were already fixed at HEAD and are closed; #41 is down to its presentation residue.
