@@ -80,7 +80,7 @@ sections:
       - ref: P-HWBXR
   - slug: real-analysis
     title: Real Analysis
-    parent: algebra
+    parent: GUIDE-WORKSHOPS
     lede: >-
       Two sittings against the Real Analysis branch. The first works the preliminaries the
       continuity section assumes; the second is measure theory, which the branch's
@@ -102,7 +102,7 @@ sections:
       - ref: P-NLNZ3
   - slug: complex-analysis
     title: Complex Analysis
-    parent: real-analysis
+    parent: GUIDE-WORKSHOPS
     lede: >-
       Two sittings against the Complex Analysis branch, following its first two sections: the
       preliminaries behind holomorphy, then Cauchy theory, where the exercises are worked
@@ -118,7 +118,7 @@ sections:
       - ref: P-FWVKJ
   - slug: topology
     title: Topology
-    parent: complex-analysis
+    parent: GUIDE-WORKSHOPS
     lede: >-
       One sitting on point-set preliminaries, carrying more problems than any other single
       workshop. It exercises the separation and compactness hypotheses that the Topology
