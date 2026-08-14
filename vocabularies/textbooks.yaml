@@ -20,6 +20,8 @@
   name: Hungerford, Algebra
 - id: munkres
   name: Munkres, Topology
+- id: munkres-manifolds
+  name: Munkres, Analysis on Manifolds
 - id: smith-course-notes
   name: Smith, Algebra Course Notes
 - id: stein-shakarchi-complex

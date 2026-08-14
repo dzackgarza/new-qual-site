@@ -29,6 +29,5 @@ Nondegeneracy on $V$ neither implies nor is implied by nondegeneracy on a given 
 :::
 
 ::: {.concept}
-See Artin, *Algebra*, §8.4, Lemma 8.4.2, Proposition 8.4.4 and Theorem 8.4.5, pp. 235-238.
-The formulation over an arbitrary field, through the adjoint $V \to V\dual$, is the related card of the same title.
+See Artin, *Algebra*, §8.4, Lemma 8.4.2, Proposition 8.4.4 and Theorem 8.4.5, pp. 235-238. The formulation over an arbitrary field, through the adjoint $V \to V\dual$, is the related card of the same title.
 :::
