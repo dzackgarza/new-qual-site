@@ -46,7 +46,8 @@ In fact, $C_n\units$ cyclic iff $n=2,4,p^k, 2p^k$ for $p$ an odd prime.
 - For $p^k$ an odd prime power, $\Aut(C_{p^k}) \cong C_{\varphi(p^k)}$ is cyclic.
 
 
-- For $2^k$ with $k\geq 1$, $C_{2^k}\units \cong C_{2}\times C_{2^{k-2}}$.
+- For $2^k$ with $k\geq 3$, $C_{2^k}\units \cong C_{2}\times C_{2^{k-2}}$.
+  The two small cases are separate: $C_2\units = 1$ and $C_4\units \cong C_2$.
 
 - If $G, H$ have coprime order then $\Aut(G \cross H) \cong \Aut(G) \cross  \Aut(H)$.
   One can then compute a general order by factoring $n = \prod_{k=1}^\ell p_k^{n_k}$ to get a decomposition 
@@ -59,10 +60,12 @@ C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}}
   &\cong \Aut\qty{\prod_{k=1}^{\ell} C_{p_k^{n_k}} }\\
   &\cong \prod_{k=1}^\ell \Aut\qty{C_{p_k^{n_k}}} \\
   &\cong \prod_{k=1}^\ell C_{p_k^{n_k}}\units \\
-  &\cong C_{2^{\ell}}\units \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{p_k^{n_k}}\units \\
-  &\cong \qty{C_2 \cross C_{2^{\ell-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} && m_k \da \varphi(p_k^{n_k}) \\
-  &\cong \qty{C_2 \cross C_{2^{\ell-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} &&  m_k \da p_k^{n_k-1}(p_k-1)  
+  &\cong C_{2^{n_1}}\units \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{p_k^{n_k}}\units \\
+  &\cong \qty{C_2 \cross C_{2^{n_1-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} && m_k \da \varphi(p_k^{n_k}) \\
+  &\cong \qty{C_2 \cross C_{2^{n_1-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} &&  m_k \da p_k^{n_k-1}(p_k-1)  
   .\]
+
+  Here $p_1 = 2$ with exponent $n_1$, and the $2\dash$part is written this way only when $n_1 \geq 3$; the exponent of the $2\dash$factor is $n_1$, not the number of distinct primes $\ell$.
 
 
 

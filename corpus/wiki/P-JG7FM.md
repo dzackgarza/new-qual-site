@@ -36,8 +36,8 @@ Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity. Show that $[\QQ(
   where we've used that $\zeta^{k} = \zeta^{k\mod n}$.
   From this, we see that $\sigma_{k}(\alpha_1)=\sigma_{n-k}(\alpha_1)$ and we pick up $(n-1)/2$ distinct conjugates.
 
-- For $n$ not prime, the exact same argument runs through $\phi(n)$ values of $k$ for $\sigma_k$, and again yields $\sigma_{k}(\alpha_1) = \sigma_{\phi(n) - k}(\alpha_1)$.
-  Matching them up appropriately yields $\phi(n)/2$ distinct roots.
+- For $n$ not prime, the exact same argument runs through the $\phi(n)$ values of $k$ coprime to $n$, and again yields $\sigma_{k}(\alpha_1) = \sigma_{n - k}(\alpha_1)$, since $\zeta_n^{n-k} = \zeta_n^{-k}$.
+  The pairing $k \leftrightarrow n-k$ is fixed-point free on those $k$ for $n\geq 3$, so it partitions them into $\phi(n)/2$ pairs, giving $\phi(n)/2$ distinct roots.
 :::
 
 

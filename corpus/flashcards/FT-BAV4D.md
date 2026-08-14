@@ -14,5 +14,7 @@ review: draft
 ---
 
 ::: {.theorem title="Euler's Theorem"}
-$a^{\phi(n)} \cong 1 \mod n$.
+If $\gcd(a, n) = 1$ then $a^{\phi(n)} \equiv 1 \mod n$.
+
+The coprimality hypothesis is needed: $2^{\phi(4)} = 4 \equiv 0 \mod 4$.
 :::

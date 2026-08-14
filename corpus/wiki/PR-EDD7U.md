@@ -42,7 +42,8 @@ Equivalently, one can select $n-\ell$ diagonal entries and delete the correspond
 :::
 
 
-To factor this polynomial, the **rational roots test** can be useful: for $f(t) = a_nt^n + \cdots + a_1 t + a_0$, rational roots are of the form $p/q$ where $p \divides a_n$ and $q\divides a_0$.
-Note that this simplifies greatly for $f$ monic!
+To factor this polynomial, the **rational roots test** can be useful: for $f(t) = a_nt^n + \cdots + a_1 t + a_0$, rational roots in lowest terms are of the form $p/q$ where $p \divides a_0$ and $q\divides a_n$.
+The numerator divides the **constant** term and the denominator the **leading** coefficient.
+Note that this simplifies greatly for $f$ monic, where $q \divides 1$ forces every rational root to be an integer dividing $a_0$.
 Once you have a root, apply **polynomial long division** to get a smaller problem, and hopefully this continues to work until it's factored.
 :::

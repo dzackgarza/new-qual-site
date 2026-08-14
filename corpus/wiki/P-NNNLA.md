@@ -49,7 +49,7 @@ Let $K = \QQ(\zeta)$.
 \envlist
 
 - $\zeta \definedas e^{2\pi i / 8}$ is a primitive $8$th root of unity
-- The minimal polynomial of an $n$th root of unity is the $n$th cyclotomic polynomial $\Phi_n$
+- The minimal polynomial of a **primitive** $n$th root of unity is the $n$th cyclotomic polynomial $\Phi_n$
 - The degree of the field extension is the degree of $\Phi_8$, which is
 \[
 \phi(8) = \phi(2^3) = 2^{3-1} \cdot (2-1) = 4
@@ -61,9 +61,10 @@ Let $K = \QQ(\zeta)$.
 :::{.proof title="of b"}
 \envlist
 
-- $\Gal(\QQ(\zeta)/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(4)$ by general theory 
-- $\ZZ/(4)$ has exactly one subgroup of index 2.
-- Thus there is exactly **one** intermediate field of degree 2 (a quadratic extension).
+- $\Gal(\QQ(\zeta)/\QQ) \cong \ZZ/(8)\units \cong \ZZ/(2) \cross \ZZ/(2)$, the Klein four-group.
+  It is **not** $\ZZ/(4)$: every element of $\ZZ/(8)\units = \ts{1,3,5,7}$ squares to $1$, so there is no element of order $4$.
+- The Klein four-group has exactly three subgroups of index 2.
+- Thus there are exactly **three** intermediate fields of degree 2, namely $\QQ(i)$, $\QQ(\sqrt 2)$ and $\QQ(\sqrt{-2})$.
 
 :::
 
@@ -76,7 +77,7 @@ Let $K = \QQ(\zeta)$.
   - $\QQ(i, \sqrt{2})\subseteq \QQ(\zeta)$
     - $\zeta_8^2 = i$, and $\zeta_8 = \sqrt{2}\inv + i\sqrt{2}\inv$ so $\zeta_8 + \zeta_8 \inv = 2/\sqrt{2} = \sqrt{2}$.
   - $\QQ(\zeta) \subseteq \QQ(i, \sqrt{2})$: 
-    - $\zeta = e^{2\pi i / 8} = \sin(\pi/4) + i\cos(\pi/4) = {\sqrt 2 \over 2}\qty{1+i}$.
+    - $\zeta = e^{2\pi i / 8} = \cos(\pi/4) + i\sin(\pi/4) = {\sqrt 2 \over 2}\qty{1+i}$.
 
 - Thus $L = \QQ(i, \sqrt{2})(\sqrt[4]{2}) = \QQ(i, \sqrt 2, \sqrt[4] 2) = \QQ(i, \sqrt[4]{2})$.
   - Uses the fact that $\QQ(\sqrt 2) \subseteq \QQ(\sqrt[4] 2)$ since $\sqrt[4]{2}^2 = \sqrt{2}$ 

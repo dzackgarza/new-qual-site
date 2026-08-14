@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S5JSR
 kind: problem
-title: "Show that the Galois group of $x^n - 2$ is $D_n$, the dihedral group on $n$\u2026"
+title: "Galois theory exercises: splitting fields, intermediate extensions, finite fields"
 classification:
   areas:
   - algebra
@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
-- Show that the Galois group of $x^n - 2$ is $D_n$, the dihedral group on $n$ vertices.
+- The splitting field of $x^n-2$ over $\QQ$ is $\QQ(2^{1/n}, \zeta_n)$.
+  Show that the Galois group embeds into $\ZZ/n\ZZ \semidirect \qty{\ZZ/n\ZZ}\units$, and that it is dihedral of order $2n$ exactly when $\phi(n)=2$, that is for $n=3,4,6$.
+  It is not $D_n$ for general $n$.
 
 - Compute all intermediate field extensions of $\QQ(\sqrt 2, \sqrt 3)$, show it is equal to $\QQ(\sqrt 2 + \sqrt 3)$, and find a corresponding minimal polynomial.
 
