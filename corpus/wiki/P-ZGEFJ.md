@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZGEFJ
 kind: problem
-title: "In order for $IS$ to be a submodule of $A$, we need to show the follo\u2026"
+title: "$IS$ is a submodule of $A$"
 classification:
   areas:
   - algebra
@@ -13,34 +13,32 @@ relations: []
 review: draft
 ---
 
-In order for $IS$ to be a submodule of $A$, we need to show the following implication:
+Here $I$ is a left ideal of $R$, $S$ is a nonempty subset of the $R\dash$module $A$, and
 $$
-x\in IS,~a\in A \implies xa, ax \in IS.
+IS \definedas \theset{ \sum_{i=1}^n r_i a_i \suchthat n\geq 1,\ r_i \in I,\ a_i \in S }
+.$$
+
+$A$ carries no internal multiplication, so being a submodule is closure under addition and under the action of $R$, not closure under multiplication by elements of $A$.
+So we show
+$$
+x, y \in IS,~ r\in R \implies x + y \in IS \text{ and } rx \in IS.
 $$
 
-Suppose $x\in IS$.
-Then by definition, $x = \sum_{i=1}^n r_i a_i$ for some $r_i \in R, a_i\in A$.
+Closure under addition is immediate: concatenating the two sums
+$$
+x = \sum_{i=1}^n r_i a_i, \qquad y = \sum_{j=1}^m r_j' a_j'
+$$
+exhibits $x+y$ as another finite sum of the same shape, with all coefficients in $I$ and all module elements in $S$.
 
-But then
+For the action of $R$, let $r\in R$. Then
 \[
 \begin{align*}
-xa &= \left( \sum_{i=1}^n r_i a_i \right) a \\
-&= \sum_{i=1}^n r_i a_i a \\
-&\definedas \sum_{i=1}^n r_i a_i',
-\end{align*}
+rx &= r\left( \sum_{i=1}^n r_i a_i \right) \\
+&= \sum_{i=1}^n (r r_i) a_i
+,\end{align*}
 \]
 
-where $a_i' \definedas a_i a$ for each $i$, which is still an element of $A$ since $A$ itself is a module and thus closed under multiplication.
+and $r r_i \in I$ for each $i$, because $I$ is a *left* ideal and is therefore closed under left multiplication by $R$.
+This exhibits $rx$ as an element of $IS$.
 
-But this expresses $xa$ as an element of $IS$.
-Similarly, we have
-\[
-\begin{align*}
-ax &= a \left( \sum_{i=1}^n r_i a_i \right)\\
-&= \sum_{i=1}^n a r_i a_i a \\
-&\definedas \sum_{i=1}^n r_i a a_i, \\
-&\definedas \sum_{i=1}^n r_i a_i',
-\end{align*}
-\]
-
-and so $ax \in IS$ as well.
+Finally $IS \neq \emptyset$ since $S\neq\emptyset$, so $IS$ is a submodule of $A$.

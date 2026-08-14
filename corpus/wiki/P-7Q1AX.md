@@ -23,23 +23,28 @@ $\qed$
 
 We claim that $\ZZ_n[m] \cong \ZZ_{(m, n)}$, from which the result immediately follows by part 1.
 
-Define a map
+Let $d \definedas \gcd(m,n)$ and define a map
 \[
 \begin{align*}
-\phi: \ZZ &\to \ZZ_n[m] \\ 
-1 &\mapsto [1]_{\mod n}
-,\end{align*}
+\phi: \ZZ &\to \ZZ_n \\ 
+1 &\mapsto [n/d]_{\mod n}
+.\end{align*}
 \]
 
-which we claim is an isomorphism.
-$\phi$ is clearly surjective since $\ZZ\to \ZZ_n$ is a quotient map and $\ZZ_n[m]$ is a subgroup of $\ZZ_n$, and if we let $d \definedas \gcd(m, n)$, we have
+Note that $1\mapsto [1]$ would not work: $[1]$ is not $m\dash$torsion unless $n\divides m$.
 
+**The image is exactly $\ZZ_n[m]$.**
+First, $m\cdot (n/d) = (m/d)n \equiv 0 \mod n$, so $\im \phi \subseteq \ZZ_n[m]$.
+Conversely, suppose $[x] \in \ZZ_n[m]$, so $n \divides mx$.
+Dividing by $d$ gives $(n/d) \divides (m/d)x$, and $\gcd(n/d, m/d) = 1$, so $(n/d)\divides x$.
+Hence $[x] \in \gens{[n/d]} = \im\phi$.
+
+**The kernel is $d\ZZ$.**
 \[
 \begin{align*}
-\ker \phi &= \theset{x\in \ZZ_n \suchthat  mx = 0} \\
-&= \theset{x \in \ZZ_n \suchthat x \divides m} \\
-&= \theset{x \in \ZZ \suchthat x \divides n ~\text{ and }~ x \divides m} \\
-&= \theset{x \in \ZZ \suchthat x \divides d} \quad \text{by the lemma} \\
+\ker \phi &= \theset{x\in \ZZ \suchthat (n/d)x \equiv 0 \mod n} \\
+&= \theset{x \in \ZZ \suchthat n \divides (n/d) x} \\
+&= \theset{x \in \ZZ \suchthat d \divides x} \\
 &= d\ZZ~
 .\end{align*}
 \]

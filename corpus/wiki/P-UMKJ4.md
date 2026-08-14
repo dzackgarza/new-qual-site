@@ -16,19 +16,20 @@ review: draft
 > Proof following http://sierra.nmsu.edu/morandi/notes/SmithNormalForm.pdf
 
 The goal is to show that any matrix $A \in M(m\times n, R)$ is *equivalent* to a matrix $D$ of the described form, so $A = PDQ$ for some matrices $P,Q$.
-Since $S$ is in fact the set of Smith Normal Forms for such matrices, it suffices to show that $SNF(A)$ can be obtained by left and right multiplication by invertible matrices.
-Moreover, since row operations can be performed by left-multiplication of elementary matrices, and column operations by right-multiplication.
+Since $D$ is by construction the Smith normal form of $A$, it suffices to show that $SNF(A)$ can be obtained by left and right multiplication by invertible matrices.
+Row operations are performed by left-multiplication by elementary matrices, and column operations by right-multiplication.
 
 We proceed by induction on $m+n$.
 
-For the base case $m + n = 2$, this can only yield a $1\times 1$ matrix, and the result holds vacuously.
+For the base case $m + n = 2$, this can only yield a $1\times 1$ matrix, which is already in the desired form.
 
 For the inductive step, we will proceed by considering the top-left $2\times 2$ block, say $M = \left[ \begin{array}{cc} a & b \\ c & d \end{array}\right]$, and showing it can be reduced to a block of the form $M' = \left[ \begin{array}{cc} d_1 & 0 \\ 0 & d_2 \end{array}\right]$ where $d_1 \divides d_2$. 
 Then the sub-matrix obtained by deleting the row and column containing $d_1$ is a strictly smaller matrix, allowing the inductive hypothesis to be applied.
 
 Moreover, note that if we are able to perform this reduction by a series of left and right multiplications, this will yields $A_1 = P_1 A Q_1$, and inductively we will have $A_{r} = (P_r \cdots P_2 P_1) A (Q_1 Q_2 \cdots Q_R)$, so each matrix will remain equivalent at every step.
 
-> Note: since $R$ is a PID, it is also a Euclidean domain, so we can compute greatest common divisors.
+> Note: since $R$ is a PID, any two elements have a gcd, and Bézout holds: $\gcd(a,c) = sa + tc$ for some $s,t\in R$, because $\gens{a, c} = \gens{\gcd(a,c)}$.
+> This does not need $R$ to be Euclidean, and indeed not every PID is: $\ZZ\left[ \frac{1+\sqrt{-19} }{2} \right]$ is a PID that admits no Euclidean function.
 
 We'll first reduce the top-left entry and eliminate the bottom-left entry.
 
@@ -40,7 +41,7 @@ So let $\ell_1, \ell_2$ be parameters to be determined; we can then compute
 \begin{align*}
 P_1 A = \left[\begin{array}{cc} s & t \\ \ell_1 & \ell_2 \end{array}\right]
 \left[\begin{array}{cc} a & b \\ c & d \end{array}\right] =
-\left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right]
+\left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_2 d \end{array}\right]
 ,\end{align*}
 
 where we now only have to choose $\ell_1, \ell_2$ so that $P_1$ is invertible.
@@ -57,7 +58,7 @@ P_1\inv \definedas \left[\begin{array}{cc} \ell_2 & -t \\ -\ell_1 & s \end{array
 \left[\begin{array}{cc} s\ell_2 - t\ell_1 & -ts + st \\ \ell_1 \ell_2 - \ell_2 \ell_1 & -t\ell_1 + s\ell_2  \end{array}\right]
 ,\end{align*}
 
-which just says that we need to pick $\ell_1, \ell_2$ such that $s\ell_1 - t\ell_2 = 1$, since the off-diagonal entries vanish because $R$ is commutative.
+which just says that we need to pick $\ell_1, \ell_2$ such that $s\ell_2 - t\ell_1 = 1$, since the off-diagonal entries vanish because $R$ is commutative.
 
 
 But this can be done by writing $a = d k_1$ and $c = d k_2$, since $d$ was their gcd, then 
@@ -65,16 +66,16 @@ $$
 d = sa + tc =  s dk_1 + t d k_2 \implies 1 = s k_1 + t k_2,
 $$
 
-so just choose $\ell_1  = k_1, \ell_2 = -k_2$ to yield $P_1 P_1\inv = I_2$.
+so just choose $\ell_1  = -k_2, \ell_2 = k_1$ to get $s\ell_2 - t\ell_1 = sk_1 + tk_2 = 1$, yielding $P_1 P_1\inv = I_2$.
 
 We can observe that in the matrix $P_1 A$, since $d$ divides $a$ and $c$, $d$ also divides $\ell_1a+\ell_2 c$.
-So write $k_1 d = \ell_1 a + \ell_2 c$, we can then perform a row operation by left-multiplying:
+So write $kd = \ell_1 a + \ell_2 c$, we can then perform a row operation by left-multiplying:
 
 
 \begin{align*}
 Q_1  P_1 A\definedas \left[\begin{array}{cc} 1 & 0 \\ -k & 1 \end{array}\right]
-\left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_1 d \end{array}\right] =
-\left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
+\left[\begin{array}{cc} d & sb + td \\ \ell_1 a + \ell_2 c & \ell_1 b + \ell_2 d \end{array}\right] =
+\left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_2 d \end{array}\right]
 .\end{align*}
 
 We now carry out the same process with the top *row* instead of the first *column*.
@@ -88,7 +89,7 @@ $$
 then perform column operations (i.e. right-multiplying by some $R_1$) to obtain a matrix of the form 
 $$
 Q_1 P_1 A R_1 \definedas 
-\left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_1 d \end{array}\right]
+\left[\begin{array}{cc} d & sb + td \\ 0 & -k(sb + td) + \ell_1 b + \ell_2 d \end{array}\right]
 \left[\begin{array}{cc} s' & \ell_3 \\ t' & \ell_4 \end{array}\right] = 
 \left[\begin{array}{cc} d_1 &  d\ell_3 + (sb + td)\ell_4 \\ ? & ? \end{array}\right]
 $$

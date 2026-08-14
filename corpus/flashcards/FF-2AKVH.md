@@ -16,7 +16,9 @@ review: draft
 ---
 
 ::: {.fact title="Factor $x^n + y^n$"}
+For $n$ odd,
 $$
-(x+y)(x^{n-1} + x^{n-2}(-y) + \cdots + (-y)^{n+1})
+x^n + y^n = (x+y)\left(x^{n-1} + x^{n-2}(-y) + \cdots + (-y)^{n-1}\right)
 $$
+For $n$ even this fails: $x+y$ does not divide $x^n + y^n$.
 :::

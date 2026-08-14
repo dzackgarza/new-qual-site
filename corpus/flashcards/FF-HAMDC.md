@@ -14,7 +14,9 @@ review: draft
 ---
 
 ::: {.fact title="Factor $x^n + a^n$"}
+For $n$ odd,
 $$
-(x+a) \sum _{k=0}^{n-1} (-a)^k x^{n-k}
+x^n + a^n = (x+a) \sum _{k=0}^{n-1} (-a)^k x^{n-1-k}
 $$
+For $n$ even this fails: $x+a$ does not divide $x^n + a^n$, since $-a$ is not a root.
 :::

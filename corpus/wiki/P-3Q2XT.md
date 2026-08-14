@@ -33,17 +33,18 @@ Give either a proof or a counterexample with justification.
 
 - $R$ is Euclidean iff it admits a Euclidean algorithm: there is a degree function $f: R\to \ZZ_{\geq 0}$ such that for all $a,b\in R$, there exist $q, r\in R$ such that $a = bq + r$ where $f(r) <f(b)$ or $r=0$.
 
-- $R$ is a UFD iff every $r\in R$ can be written as $r = u \prod_{i=1}^n p_i$ with $n\geq 0$, $u\in R\units$, and $p_i$ irreducible.
+- $R$ is a UFD iff every nonzero $r\in R$ can be written as $r = u \prod_{i=1}^n p_i$ with $n\geq 0$, $u\in R\units$, and $p_i$ irreducible.
   This is unique up to associates of the $p_i$ and reordering.
 
 - Euclidean implies UFD:
   - Euclidean implies PID:
     - If $I \in \Id(R)$ one can use the degree function to find any $b \in I$ where $f(b)$ is minimal.
     - Then $I = \gens{b}$, since if $a\in I$ one can write $a = bq + r$ and use that $a-bq \in I \implies r\in I$.
-    - But by minimality, we can't have $f(r)<f(b)$, so $r=0$ and $a \divides b$, so $b\in \gens{a}$.
+    - But by minimality, we can't have $f(r)<f(b)$, so $r=0$ and $b \divides a$, so $a\in \gens{b}$.
     
   - PID implies UFD:
-    - Use that irreducible implies prime in a PID, so every $x\in R$ has some factorization into finitely many primes.
+    - Existence: a PID is Noetherian, and the ascending chain condition forces every nonzero nonunit to factor into finitely many irreducibles.
+    Since irreducible implies prime in a PID, this is a factorization into primes.
     - Supposing $x = u_p \prod_{i=1}^m p_i = u_q \prod_{i=1}^n q_i$, use that $p_1$ divides the LHS and so $p_1$ divides the RHS.
     WLOG, $p_1\divides q_1$, so $q_1 = u_1 p_1$ for $u\in R\units$, so $x = u_q u_1 p_1 \prod_{i=2}^m q_i$ by rewriting a term on the RHS.
     - Note that this makes $p_1, q_1$ associates.
@@ -67,7 +68,7 @@ Give either a proof or a counterexample with justification.
 - UFD does not imply Euclidean:
   - It suffices to find a UFD that is not a PID.
   - Take $R \da \CC[x, y]$, which is a UFD by the usual factorization of polynomials.
-  It is not a PID, since $\gens{2, x}$ is not principal.
+  It is not a PID, since $\gens{x, y}$ is not principal.
 
 
 :::

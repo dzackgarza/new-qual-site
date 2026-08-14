@@ -13,8 +13,8 @@ relations: []
 review: draft
 ---
 :::{.definition title="Prime Element"}
-An element $p\in R$ is **prime** iff 
+A nonzero nonunit $p\in R$ is **prime** iff 
 \[  
-a,b \in R\units\smz, \quad ab\divides p \implies a\divides p \text{ or }  b\divides p
+a,b \in R, \quad p\divides ab \implies p\divides a \text{ or } p\divides b
 .\]
 :::
