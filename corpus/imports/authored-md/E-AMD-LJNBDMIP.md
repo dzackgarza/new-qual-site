@@ -6,7 +6,8 @@ title: Show that a permutation is odd iff it has an odd number of even cycles.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---

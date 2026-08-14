@@ -6,7 +6,9 @@ title: Show that $\GF(p^d) \leq \GF(p^n) \iff d\divides n$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - field-extensions
 relations: []
 review: draft
 ---

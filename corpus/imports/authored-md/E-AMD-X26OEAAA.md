@@ -6,7 +6,9 @@ title: 'Show that $[\QQ(\sqrt 2 + \sqrt 3) : \QQ] = 4$.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - galois-theory
 relations: []
 review: draft
 ---

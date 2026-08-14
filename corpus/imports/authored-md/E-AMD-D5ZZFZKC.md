@@ -6,7 +6,10 @@ title: Show that every $p\dash$group has a nontrivial center.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - class-equation
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

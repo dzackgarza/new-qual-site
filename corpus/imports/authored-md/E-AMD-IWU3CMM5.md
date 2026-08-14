@@ -6,7 +6,10 @@ title: Analyze groups of order $pq$ with $q<p$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations: []
 review: draft
 ---

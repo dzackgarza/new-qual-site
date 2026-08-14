@@ -6,7 +6,10 @@ title: "Let $R$ be a PID. Show primes are maximal, so $\\spec R \\subseteq \\msp
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - noetherian-rings
+  - factorization
 relations: []
 review: draft
 ---

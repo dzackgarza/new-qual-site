@@ -6,11 +6,14 @@ title: "Prove the rank-nullity theorem using JCF."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rank-and-nullity
+  - jordan-canonical-form
+  - linear-algebra
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Prove the rank-nullity theorem using JCF.
 :::
-

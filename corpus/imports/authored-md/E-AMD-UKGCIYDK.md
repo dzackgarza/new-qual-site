@@ -6,7 +6,10 @@ title: Show that if $R$ is a local ring then $R\setminus R\units$ is a…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - local-rings
+  - jacobson-radical
+  - maximal-ideals
 relations: []
 review: draft
 ---

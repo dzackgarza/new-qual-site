@@ -6,7 +6,10 @@ title: Does diagonalizable imply invertible? The converse?
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - matrices
+  - counterexamples
 relations: []
 review: draft
 ---

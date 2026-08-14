@@ -6,7 +6,10 @@ title: "Recall the definition of the join of two subgroups $H \\vee G$ (or $H+G$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - subgroups
 relations: []
 review: draft
 ---

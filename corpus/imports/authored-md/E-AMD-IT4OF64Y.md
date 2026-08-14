@@ -6,7 +6,10 @@ title: Show that all groups of order 45 are abelian.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - abelian-groups
+  - sylow-theory
 relations: []
 review: draft
 ---

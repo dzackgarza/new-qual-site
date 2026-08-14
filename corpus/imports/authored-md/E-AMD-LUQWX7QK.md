@@ -6,7 +6,10 @@ title: Show that $H~\text{char}~G \Rightarrow H \unlhd G$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---

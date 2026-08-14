@@ -6,7 +6,10 @@ title: Show that a finitely generated module over a Noetherian local ring…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nakayamas-lemma
+  - free-modules
+  - homological-algebra
 relations: []
 review: draft
 ---

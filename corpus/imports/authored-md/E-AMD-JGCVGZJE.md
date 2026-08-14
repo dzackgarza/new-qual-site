@@ -6,7 +6,9 @@ title: Show that $R\units$ need not be closed under addition.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - counterexamples
 relations: []
 review: draft
 ---

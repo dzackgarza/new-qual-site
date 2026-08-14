@@ -6,7 +6,10 @@ title: Show that every ring has a proper maximal ideal.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - zorns-lemma
 relations: []
 review: draft
 ---

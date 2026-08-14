@@ -6,7 +6,9 @@ title: Give a necessary and sufficient condition for a cyclic group to be…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - cyclic-groups
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Show that every prime ideal is radical.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

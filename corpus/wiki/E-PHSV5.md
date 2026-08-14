@@ -6,7 +6,10 @@ title: "Show that if $f \\in \\FF_p[x]^{\\irr}$ is degree $d$,"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - field-extensions
 relations: []
 review: draft
 ---

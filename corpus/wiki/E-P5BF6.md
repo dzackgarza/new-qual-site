@@ -6,7 +6,10 @@ title: "Notation: let $N$ or $N(R)$ be the set of nilpotents in $R$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - rings
+  - polynomials
 relations: []
 review: draft
 ---

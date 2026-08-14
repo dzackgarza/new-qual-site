@@ -6,7 +6,10 @@ title: "Prove that if $G$ is a $p\\dash$group, every subgroup $N\\normal G$ inte
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - class-equation
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

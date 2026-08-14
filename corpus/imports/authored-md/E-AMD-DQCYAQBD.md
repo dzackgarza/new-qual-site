@@ -6,7 +6,10 @@ title: Show that if $N\normal D_n$ is a normal subgroup of a dihedral…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - groups
+  - classification
 relations: []
 review: draft
 ---

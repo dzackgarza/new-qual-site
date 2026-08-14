@@ -6,7 +6,9 @@ title: Show that $\text{rad}(IJ) = \text{rad}(I) \intersect \text{rad}(J)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - nilpotence
 relations: []
 review: draft
 ---

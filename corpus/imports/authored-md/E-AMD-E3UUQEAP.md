@@ -6,7 +6,10 @@ title: "Show that the splitting field of $f(x) = x^3-2$ is $\\QQ(\\sqrt[3]{2}, \
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - roots-of-unity
+  - field-extensions
 relations: []
 review: draft
 ---

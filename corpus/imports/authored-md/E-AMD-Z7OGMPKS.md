@@ -6,7 +6,9 @@ title: Show that $[S_n, S_n] = A_n$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - commutators
+  - permutations
 relations: []
 review: draft
 ---

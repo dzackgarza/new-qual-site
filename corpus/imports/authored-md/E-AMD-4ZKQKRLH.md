@@ -6,7 +6,10 @@ title: Show that any normal $p\dash$ subgroup is contained in every Sylow…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - p-groups
 relations: []
 review: draft
 ---

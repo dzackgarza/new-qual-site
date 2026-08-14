@@ -6,7 +6,10 @@ title: Show that every group of order $pqr$ with $p<q<r$ primes contains a…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - simple-groups
 relations: []
 review: draft
 ---

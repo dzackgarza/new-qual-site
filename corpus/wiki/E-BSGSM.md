@@ -6,11 +6,13 @@ title: "Show that normal groups absorb conjugacy classes: if $N\\normal G$ and\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - conjugacy
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that normal groups absorb conjugacy classes: if $N\normal G$ and $[g_i]$ is a conjugacy class in $g$, either $[g_i] \subseteq N$ or $[g_i] \intersect N = \emptyset$.
 :::
-

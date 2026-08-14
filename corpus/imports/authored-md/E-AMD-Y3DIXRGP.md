@@ -6,7 +6,10 @@ title: Show that the stabilizer of an element need not be a normal subgroup?
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - normal-subgroups
+  - counterexamples
 relations: []
 review: draft
 ---

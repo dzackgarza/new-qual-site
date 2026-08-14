@@ -6,7 +6,9 @@ title: Show that the union of two ideals need not be an ideal.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Show that for an ideal $I\normal R$, its radical is the intersection…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - prime-ideals
+  - nilpotence
 relations: []
 review: draft
 ---

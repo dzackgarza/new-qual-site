@@ -6,7 +6,10 @@ title: Show that if $R\neq 0$ is a ring in which every non-unit is…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - local-rings
+  - nilpotence
+  - rings
 relations: []
 review: draft
 ---

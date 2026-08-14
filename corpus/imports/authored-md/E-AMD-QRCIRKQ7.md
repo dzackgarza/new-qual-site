@@ -6,7 +6,10 @@ title: Show that every prime ideal is irreducible.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - ideals
+  - primary-decomposition
 relations: []
 review: draft
 ---

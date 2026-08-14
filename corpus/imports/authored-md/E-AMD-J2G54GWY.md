@@ -6,7 +6,9 @@ title: Show that if $G$ is finite and solvable then every composition…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - subgroup-series
 relations: []
 review: draft
 ---

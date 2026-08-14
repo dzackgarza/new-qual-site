@@ -6,7 +6,9 @@ title: Show that $Z(G) \subseteq C_G(H) \subseteq N_G(H)$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - subgroups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Show that $\rad{I}$ is the intersection of all prime ideals…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - prime-ideals
+  - nilpotence
 relations: []
 review: draft
 ---

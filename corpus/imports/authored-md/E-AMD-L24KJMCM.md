@@ -6,7 +6,9 @@ title: "Show that $\\GF(p^n)$ is the splitting field of $x^{p^n} - x \\in \\FF_p
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - splitting-fields
 relations: []
 review: draft
 ---

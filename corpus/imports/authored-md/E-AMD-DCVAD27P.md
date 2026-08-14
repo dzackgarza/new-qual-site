@@ -6,7 +6,9 @@ title: Show that $\union_{\mfm \in \maxspec(R)} = R\setminus R\units$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - rings
 relations: []
 review: draft
 ---

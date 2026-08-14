@@ -6,7 +6,10 @@ title: Show that every field is simple.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

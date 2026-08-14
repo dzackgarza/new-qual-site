@@ -6,15 +6,17 @@ title: "- Let $G$ be a group of order $p$ with $v$ and $e$ positive integers,\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - p-groups
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 \envlist
 
-- Let $G$ be a group of order $p$ with $v$ and $e$ positive integers, $p$ prime, $p > v$, and $v$ is not a multiple of $p$. 
+- Let $G$ be a group of order $p$ with $v$ and $e$ positive integers, $p$ prime, $p > v$, and $v$ is not a multiple of $p$.
   Show that $G$ has a normal Sylow p-subgroup.
-
 :::
-

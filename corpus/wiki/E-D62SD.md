@@ -6,7 +6,10 @@ title: "Consider the Vandermonde matrix:"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - determinants
+  - matrices
+  - polynomials
 relations: []
 review: draft
 ---

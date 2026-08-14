@@ -6,7 +6,9 @@ title: Show that no group of order 36 is simple.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
 relations: []
 review: draft
 ---

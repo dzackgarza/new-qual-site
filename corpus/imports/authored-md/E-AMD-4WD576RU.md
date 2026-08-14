@@ -6,7 +6,10 @@ title: Show that if the minimal polynomial of a linear map $T$ is…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - semisimplicity
+  - linear-algebra
 relations: []
 review: draft
 ---

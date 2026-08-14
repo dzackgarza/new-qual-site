@@ -6,7 +6,9 @@ title: If $\theset{\alpha_i}_{i=1}^n \subset F$ are algebraic over $K$,…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - rings
 relations: []
 review: draft
 ---

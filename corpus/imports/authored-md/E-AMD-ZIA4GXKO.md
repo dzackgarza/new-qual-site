@@ -6,7 +6,8 @@ title: 'What is $[\QQ(\sqrt 2 + \sqrt 3): \QQ]$?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

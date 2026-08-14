@@ -6,10 +6,14 @@ title: "Show that if $p\\in \\spec R$ then $R\\localize{p}$ is local."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - localization
+  - local-rings
+  - prime-ideals
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that if $p\in \spec R$ then $R\localize{p}$ is local.
 :::

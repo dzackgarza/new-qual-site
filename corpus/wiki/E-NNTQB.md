@@ -6,10 +6,13 @@ title: "Show that if $G$ is finite then $\\abs{G}/\\abs{H} = [G: H]$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that if $G$ is finite then $\abs{G}/\abs{H} = [G: H]$.
 :::

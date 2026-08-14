@@ -6,7 +6,10 @@ title: Show that the stabilizer of an element $G_x$ is a subgroup of $G$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - subgroups
+  - group-actions
 relations: []
 review: draft
 ---

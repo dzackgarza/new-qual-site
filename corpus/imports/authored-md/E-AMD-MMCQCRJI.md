@@ -6,7 +6,10 @@ title: Show that if $L/K$ is separable, then $L$ is normal $\iff$ there…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - separability
+  - field-extensions
 relations: []
 review: draft
 ---

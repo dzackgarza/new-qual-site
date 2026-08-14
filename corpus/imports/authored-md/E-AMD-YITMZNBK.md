@@ -6,7 +6,10 @@ title: "Show that if $x\\in R$ a PID, then $x$ is irreducible $\\iff \\gens{x}\\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - maximal-ideals
+  - factorization
 relations: []
 review: draft
 ---

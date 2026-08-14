@@ -6,7 +6,10 @@ title: Show that $I\normal R$ is maximal iff $R/I$ is a field.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - fields
 relations: []
 review: draft
 ---

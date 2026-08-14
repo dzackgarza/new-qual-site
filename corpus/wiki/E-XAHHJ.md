@@ -6,7 +6,10 @@ title: "Let $p \\in \\mathbb{Z}$ be a prime number."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - roots-of-unity
 relations: []
 review: draft
 ---

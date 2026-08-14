@@ -6,7 +6,10 @@ title: Show that $R$ is a local ring iff for every $x\in R$, either $x$ or…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - local-rings
+  - maximal-ideals
+  - rings
 relations: []
 review: draft
 ---

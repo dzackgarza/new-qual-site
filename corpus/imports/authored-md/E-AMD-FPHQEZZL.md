@@ -6,7 +6,10 @@ title: Show that $\Inn(G) \cong G / Z(G)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - centralizers-and-normalizers
+  - isomorphism-theorems
 relations: []
 review: draft
 ---

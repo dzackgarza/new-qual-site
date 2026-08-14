@@ -6,14 +6,18 @@ title: "- Show that if $H, K \\normal G$ and $H\\intersect K = \\emptyset$, then
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - commutators
+  - direct-products
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 \envlist
 
 - Show that if $H, K \normal G$ and $H\intersect K = \emptyset$, then $hk=kh$ for all $h\in H,k\in K$.
-- Show that if $H,K\normal G$ are normal subgroups that intersect trivially, then $[H, K] = 1$ (so $hk = kh$ for all $k$ and $h$).
 
+- Show that if $H,K\normal G$ are normal subgroups that intersect trivially, then $[H, K] = 1$ (so $hk = kh$ for all $k$ and $h$).
 :::

@@ -6,7 +6,9 @@ title: Show that p-groups $\implies$ nilpotent
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - nilpotent-groups
 relations: []
 review: draft
 ---

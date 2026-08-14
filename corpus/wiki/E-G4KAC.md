@@ -6,10 +6,14 @@ title: "Show $x\\in \\jacobsonrad{R} \\iff 1-xR \\subseteq R\\units$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - rings
+  - ideals
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show $x\in \jacobsonrad{R} \iff 1-xR \subseteq R\units$.
 :::

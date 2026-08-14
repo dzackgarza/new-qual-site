@@ -6,10 +6,14 @@ title: "Prove the Poincar\u00e9 theorem for groups: if $H\\leq G$ are possibly i
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - normal-subgroups
+  - group-actions
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Prove the Poincaré theorem for groups: if $H\leq G$  are possibly infinite groups with finite index $n\da [G:H]$, then there exists an $N\normal H$ where $[N: H] < n!$.
 :::

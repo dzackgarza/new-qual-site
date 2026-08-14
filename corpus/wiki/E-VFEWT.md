@@ -6,10 +6,14 @@ title: "Show that if $J\\in \\Id(R)$ (with $J\\contains I$) is radical/prime/max
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - prime-ideals
+  - maximal-ideals
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that if $J\in \Id(R)$ (with $J\contains I$) is radical/prime/maximal iff $\bar J \in \Id(R/I)$ is radical/prime/maximal.
 :::

@@ -6,7 +6,9 @@ title: Prove that the kernel of a homomorphism is a normal subgroup.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - homomorphisms
 relations: []
 review: draft
 ---

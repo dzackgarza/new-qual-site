@@ -6,7 +6,10 @@ title: "Show $x^\\ell - 1 \\divides x^m-1 \\iff \\ell\\divides m$ $\\implies$ Wr
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - factorization
+  - roots-of-unity
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Prove that every simple abelian group is cyclic.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - simple-groups
+  - abelian-groups
+  - cyclic-groups
 relations: []
 review: draft
 ---

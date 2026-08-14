@@ -6,7 +6,10 @@ title: Show that every prime ideal is primary.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - primary-decomposition
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

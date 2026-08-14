@@ -6,7 +6,10 @@ title: Prove that $x^{p^n}-x$ is the product of all monic irreducible…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - factorization
 relations: []
 review: draft
 ---

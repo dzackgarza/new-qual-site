@@ -6,7 +6,10 @@ title: $\star$ Show that if $x$ is not a unit, then $x$ is contained in…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - zorns-lemma
 relations: []
 review: draft
 ---

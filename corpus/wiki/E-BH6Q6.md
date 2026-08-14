@@ -6,7 +6,10 @@ title: "Show that if $G$ is a finite group acting transitively on a set\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - sylow-theory
+  - structure-theorem
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Show that nilpotent groups have nontrivial centers.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

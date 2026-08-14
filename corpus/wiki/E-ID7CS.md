@@ -6,7 +6,10 @@ title: "If $F$ is some (not necessarily Galois) field extension over $K$\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

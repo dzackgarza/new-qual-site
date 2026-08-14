@@ -6,7 +6,10 @@ title: Show that if $E/k, F/k$ are Galois with $E\intersect F = k$, then…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - direct-products
+  - field-extensions
 relations: []
 review: draft
 ---

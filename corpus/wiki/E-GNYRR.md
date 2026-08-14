@@ -6,7 +6,10 @@ title: "Prove Cayley-Hamilton in the following way."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---

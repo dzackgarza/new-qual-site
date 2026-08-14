@@ -6,7 +6,10 @@ title: "Compute $\\JCF(A)$ for $A \\da \\mattt{1}{-1}{0}{-1}{4}{-1}{-4}{13}{-3}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

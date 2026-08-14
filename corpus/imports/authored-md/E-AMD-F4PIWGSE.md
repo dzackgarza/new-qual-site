@@ -6,7 +6,10 @@ title: Suppose $\abs G = 240 = s^4 \cdot 3 \cdot 5$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - semidirect-products
+  - classification
 relations: []
 review: draft
 ---

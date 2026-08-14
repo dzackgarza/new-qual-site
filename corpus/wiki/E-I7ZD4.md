@@ -6,11 +6,13 @@ title: "Prove Cayley-Hamilton using the JCF."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - jordan-canonical-form
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Prove Cayley-Hamilton using the JCF.
 :::
-

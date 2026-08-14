@@ -6,7 +6,10 @@ title: Show that every group of order $p^2$ is abelian and classify them.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - p-groups
+  - abelian-groups
 relations: []
 review: draft
 ---

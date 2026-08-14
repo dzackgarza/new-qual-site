@@ -6,7 +6,10 @@ title: "Quotient by nilradical is reduced"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Show that $\gal(x^3+4x+2)/\QQ \cong S_3$, a symmetric group.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - permutations
 relations: []
 review: draft
 ---

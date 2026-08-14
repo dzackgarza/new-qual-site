@@ -6,7 +6,10 @@ title: Show that every maximal subgroup of a $p\dash$group is normal.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---

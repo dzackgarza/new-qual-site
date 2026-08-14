@@ -6,7 +6,10 @@ title: Show that \( \gens{ 2, x }\normal \ZZ[x] \) is not a principal ideal.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - principal-ideal-domains
+  - polynomials
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Show that if $R$ is Noetherian then every ideal is finitely generated.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - ideals
 relations: []
 review: draft
 ---

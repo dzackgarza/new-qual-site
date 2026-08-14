@@ -6,7 +6,10 @@ title: "Show that if $H < G$ is a proper subgroup, then $\\Union_{g\\in G} gHg\\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - centralizers-and-normalizers
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

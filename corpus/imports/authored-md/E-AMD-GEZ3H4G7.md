@@ -6,7 +6,9 @@ title: Show that if $L/F$ and $\alpha$ is algebraic over both $F$ and $L$,…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - polynomials
 relations: []
 review: draft
 ---

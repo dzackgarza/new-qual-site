@@ -6,7 +6,9 @@ title: Show that $\maxspec(R) \subsetneq \spec(R)$ but the containment is…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
 relations: []
 review: draft
 ---

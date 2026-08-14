@@ -6,7 +6,8 @@ title: Show that intersections, products, and sums of ideals are ideals.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
 relations: []
 review: draft
 ---

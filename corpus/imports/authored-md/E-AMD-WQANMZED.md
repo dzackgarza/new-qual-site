@@ -6,7 +6,10 @@ title: Show that if $G \actson X$ is a group action, then the stabilizer…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - subgroups
+  - group-actions
 relations: []
 review: draft
 ---

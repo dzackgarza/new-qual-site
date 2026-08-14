@@ -6,7 +6,10 @@ title: "Compute all intermediate field extensions of $\\QQ(\\sqrt 2, \\sqrt 3)$,
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - polynomials
 relations: []
 review: draft
 ---

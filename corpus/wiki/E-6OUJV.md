@@ -6,10 +6,14 @@ title: "If $f\\in k[x]^{\\irr}$ with $\\ch k = p$, then there is a unique separa
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - polynomials
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 If $f\in k[x]^{\irr}$ with $\ch k = p$, then there is a unique separable $g\in k[x]^{\irr}$ such that $f(x) = g(x^{p^k})$ for some unique $k$.
 :::

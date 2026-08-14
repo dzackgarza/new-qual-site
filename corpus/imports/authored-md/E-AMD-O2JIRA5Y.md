@@ -6,7 +6,9 @@ title: Show that if $N$ and $G/N$ are solvable, then $G$ is solvable.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - normal-subgroups
 relations: []
 review: draft
 ---

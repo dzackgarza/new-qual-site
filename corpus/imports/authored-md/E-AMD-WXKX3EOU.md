@@ -6,7 +6,10 @@ title: Show that $\gal(x^{15}+2)/\QQ \cong S_2 \semidirect \ZZ/15\ZZ$ for…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - semidirect-products
+  - roots-of-unity
 relations: []
 review: draft
 ---

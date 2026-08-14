@@ -6,10 +6,14 @@ title: "Show that normal matrices are diagonalizable."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - matrices
+  - inner-product-spaces
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that normal matrices are diagonalizable.
 :::

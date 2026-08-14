@@ -6,7 +6,10 @@ title: Prove that if $R$ is an integral domain, then $R[t]$ is again an…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-domains
+  - polynomials
+  - rings
 relations: []
 review: draft
 ---

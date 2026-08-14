@@ -6,7 +6,9 @@ title: Show that the nilradical is given by $\nilrad{R} = \rad(0)$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - ideals
 relations: []
 review: draft
 ---

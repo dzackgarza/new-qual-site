@@ -6,7 +6,10 @@ title: "Show that $H ~\\text{char}~ K ~\\text{char}~G \\Rightarrow H ~\\text{cha
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - subgroups
+  - normal-subgroups
 relations: []
 review: draft
 ---

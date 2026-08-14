@@ -6,7 +6,10 @@ title: "Prove that an irreducible $\\pi(x)\\in \\FF_p[x]$ divides $x^{p^n}-x \\i
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - polynomials
 relations: []
 review: draft
 ---

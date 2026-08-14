@@ -6,7 +6,9 @@ title: Show that Abelian $\implies$ nilpotent
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - nilpotent-groups
 relations: []
 review: draft
 ---

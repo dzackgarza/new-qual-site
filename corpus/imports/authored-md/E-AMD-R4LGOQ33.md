@@ -6,7 +6,9 @@ title: Show that every $p\dash$group is solvable.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - solvable-groups
 relations: []
 review: draft
 ---

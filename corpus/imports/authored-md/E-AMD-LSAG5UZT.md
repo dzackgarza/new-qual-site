@@ -6,7 +6,10 @@ title: Let $p$ be a prime and $\abs{G} = p^3$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - sylow-theory
+  - semidirect-products
 relations: []
 review: draft
 ---

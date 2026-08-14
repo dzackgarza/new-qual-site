@@ -6,7 +6,10 @@ title: "Determine $\\JCF(B)$ for"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - matrices
+  - eigenvalues-and-eigenvectors
 relations: []
 review: draft
 ---

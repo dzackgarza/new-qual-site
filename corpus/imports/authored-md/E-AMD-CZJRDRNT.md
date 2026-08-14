@@ -6,7 +6,9 @@ title: Show that $\QQ(2^{1\over 3})$ and $\QQ(\zeta_3 2^{1\over 3})$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - splitting-fields
 relations: []
 review: draft
 ---

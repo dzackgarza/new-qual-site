@@ -6,7 +6,10 @@ title: Show that if $A,B$ are diagonalizable and $[A, B] = 0$ then $A,B$…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

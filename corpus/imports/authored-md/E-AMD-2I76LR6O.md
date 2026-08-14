@@ -6,7 +6,10 @@ title: Show that if $x, y$ are in the same orbit, then their stabilizers…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - conjugacy
+  - group-actions
 relations: []
 review: draft
 ---

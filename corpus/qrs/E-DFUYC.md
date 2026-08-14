@@ -6,7 +6,9 @@ title: "Prove the \"recognizing direct products\" theorem. Can the\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - direct-products
+  - normal-subgroups
 relations: []
 review: draft
 ---

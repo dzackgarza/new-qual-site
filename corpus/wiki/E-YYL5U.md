@@ -6,10 +6,14 @@ title: "Show that if $R$ is a nonzero ring where every element is either a uni\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - local-rings
+  - nilpotence
+  - rings
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that if $R$ is a nonzero ring where every element is either a unit or nilpotent, then $R$ is local.
 :::

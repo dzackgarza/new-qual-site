@@ -6,7 +6,10 @@ title: "Compute all intermediate field extensions of $\\QQ(2^{1\\over 4}, \\zeta
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - roots-of-unity
 relations: []
 review: draft
 ---

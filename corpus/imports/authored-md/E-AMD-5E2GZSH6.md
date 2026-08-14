@@ -6,7 +6,9 @@ title: Prove Burnside's theorem.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - burnside-s-lemma
+  - group-actions
 relations: []
 review: draft
 ---

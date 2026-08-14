@@ -6,7 +6,10 @@ title: Show that in a $p$ group, every normal subgroup intersects the…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - normal-subgroups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

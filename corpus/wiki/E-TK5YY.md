@@ -6,7 +6,10 @@ title: "Prove the Cayley-Hamilton theorem. Prove that the minimal\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - diagonalization
+  - linear-algebra
 relations: []
 review: draft
 ---

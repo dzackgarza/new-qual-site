@@ -6,7 +6,9 @@ title: Show that if an ideal $I\normal R$ contains a unit then $I = R$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

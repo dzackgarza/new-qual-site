@@ -6,7 +6,10 @@ title: Show that if $\spec(R) \subseteq \maxspec(R)$ then $R$ is a UFD.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - maximal-ideals
+  - factorization
 relations: []
 review: draft
 ---

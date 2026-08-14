@@ -6,7 +6,10 @@ title: Show that localizing a ring at a prime ideal produces a local ring.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - localization
+  - local-rings
+  - prime-ideals
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: 'What is $[\QQ(2^{3\over 2}) : \QQ]$?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

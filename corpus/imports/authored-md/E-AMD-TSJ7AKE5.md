@@ -6,7 +6,10 @@ title: Given $H\subseteq G$, let $S(H)= \bigcup_{g\in G} gHg^{-1}$, so…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - centralizers-and-normalizers
+  - orbit-stabilizer
 relations: []
 review: draft
 ---

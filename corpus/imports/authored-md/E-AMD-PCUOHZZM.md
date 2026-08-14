@@ -6,7 +6,8 @@ title: Show directly that any $k\dash$cycle is a product of transpositions,…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---

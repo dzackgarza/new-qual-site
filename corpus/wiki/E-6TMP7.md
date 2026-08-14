@@ -6,18 +6,17 @@ title: "Compute the Galois group of $x^2-2$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Compute the Galois group of $x^2-2$.
 :::
 
-
-:::{.solution}
+::: {.solution}
 $\ZZ/2\ZZ$?
 :::
-
-
-

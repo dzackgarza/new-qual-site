@@ -6,7 +6,8 @@ title: Show that $HK$ is a subgroup of $G$ iff $HK = KH$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
 relations: []
 review: draft
 ---

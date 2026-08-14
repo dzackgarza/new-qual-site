@@ -6,7 +6,10 @@ title: Show that $\Aut(S_3) = \Inn(S_3) \cong S_3$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - permutations
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Classify all groups of order 10.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - groups
+  - sylow-theory
 relations: []
 review: draft
 ---
