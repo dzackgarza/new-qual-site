@@ -32,6 +32,7 @@ sections:
       - ref: D-AEAAD
       - ref: T-FA6VI
       - ref: D-CTGON
+      - ref: D-9KQZT
       - query:
           kind: problem
           topics:
