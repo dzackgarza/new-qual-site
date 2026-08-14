@@ -120,7 +120,7 @@
   "\\conjugate": "{\\overline{{#1}}}",
   "\\const": "{\\operatorname{const.}}",
   "\\contains": "\\supseteq",
-  "\\contradiction": "\\text{\\Lightning}",
+  "\\contradiction": "\\mathord{\\unicode{x21AF}}",
   "\\converges": "\\overset{#1}",
   "\\convergesto": "\\overset{#1}\\too",
   "\\convolve": "\\ast",

@@ -1,0 +1,77 @@
+"""Which macros reach the reader as red text instead of mathematics.
+
+MathJax's `noundefined` extension, which `tex-chtml-full` loads, renders an
+unknown control sequence as red literal text and raises no error, so
+`mjx-merror` is blind to the whole class. The only signal left is the colour,
+and colour exists only after MathJax has run: this waits on
+`MathJax.startup.promise` before reading the DOM, because a dump taken
+mid-typeset counts nothing.
+
+It reports the macro names, how often each appears, and on how many pages. It
+says nothing about whether a rendered formula is mathematically right.
+
+Usage: python3 artifacts/issue-23/undefined-macro-census <base-url> <routes-file> [--limit N]
+"""
+
+from __future__ import annotations
+
+import collections
+import json
+import sys
+from pathlib import Path
+from urllib.parse import quote
+
+from playwright.sync_api import sync_playwright
+
+BASE = sys.argv[1].rstrip("/")
+routes = [line.strip() for line in Path(sys.argv[2]).read_text().splitlines() if line.strip()]
+if "--limit" in sys.argv:
+    routes = routes[: int(sys.argv[sys.argv.index("--limit") + 1])]
+
+RED = """
+() => {
+  const red = [];
+  for (const node of document.querySelectorAll('mjx-container *')) {
+    const colour = getComputedStyle(node).color;
+    if (colour !== 'rgb(255, 0, 0)' && colour !== 'red') continue;
+    if (node.children.length) continue;          // count the leaf, not its wrappers
+    red.push(node.textContent);
+  }
+  return red;
+}
+"""
+
+names: collections.Counter[str] = collections.Counter()
+pages: collections.defaultdict[str, set[str]] = collections.defaultdict(set)
+unsettled: list[str] = []
+
+with sync_playwright() as playwright:
+    browser = playwright.chromium.launch(executable_path="/bin/chromium")
+    page = browser.new_context(viewport={"width": 1440, "height": 900}).new_page()
+    for route in routes:
+        page.goto(f"{BASE}/{quote(route)}", wait_until="load")
+        try:
+            page.wait_for_function("() => window.MathJax && MathJax.startup && MathJax.startup.promise", timeout=20000)
+            page.evaluate("() => MathJax.startup.promise")
+        except Exception:
+            unsettled.append(route)
+            continue
+        # A red run arrives one character per element; join them back up.
+        text = "".join(page.evaluate(RED))
+        for token in text.replace("\\", " \\").split():
+            if token.startswith("\\"):
+                names[token] += 1
+                pages[token].add(route)
+
+print(f"routes_loaded: {len(routes)}")
+print(f"routes_mathjax_never_settled: {len(unsettled)}")
+print(f"distinct_red_macros: {len(names)}")
+print(f"red_macro_uses: {sum(names.values())}")
+print(f"routes_with_any: {len({route for routes_ in pages.values() for route in routes_})}")
+print("\nmacro, uses, pages:")
+for name, count in names.most_common():
+    print(f"  {name:20} {count:5}  {len(pages[name])}")
+
+Path("undefined-macro-census.json").write_text(
+    json.dumps({name: sorted(pages[name]) for name in names}, indent=2) + "\n"
+)

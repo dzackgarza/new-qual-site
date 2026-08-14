@@ -66,7 +66,12 @@ TEX_ONLY = re.compile(r"\\hfill\b")
 # `\notdivides` is built from `\ooalign`, `\hidewidth` and `\cr`, which are
 # plain-TeX alignment primitives MathJax has no equivalent for. `\nmid` is the
 # same relation from the standard tables, which MathJax does implement.
-UNRENDERABLE = {"notdivides": "\\mathrel{\\nmid}"}
+# `\Lightning` is a marvosym symbol, so `\contradiction` reached the page as
+# red literal text. U+21AF DOWNWARDS ZIGZAG ARROW is the same sign.
+UNRENDERABLE = {
+    "notdivides": "\\mathrel{\\nmid}",
+    "contradiction": "\\mathord{\\unicode{x21AF}}",
+}
 
 USED_IN = ("corpus", "wiki")
 
