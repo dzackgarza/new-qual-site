@@ -136,7 +136,7 @@ sections:
             mode: any
   - slug: separation-and-countability
     title: Separation and Countability
-    parent: constructions-of-spaces
+    parent: spaces-and-continuous-maps
     lede: >-
       The axioms so far permit spaces in which distinct points share every neighborhood, so
       nothing yet forces limits to be unique or points to be closed. The separation axioms
@@ -255,7 +255,7 @@ sections:
             mode: any
   - slug: compactness
     title: Compactness
-    parent: metric-spaces
+    parent: separation-and-countability
     lede: >-
       Compactness is the first hypothesis that turns the local statements above into global
       ones, because a finite subcover replaces an arbitrary indexing set by a maximum. Read
@@ -318,7 +318,7 @@ sections:
             mode: any
   - slug: connectedness-and-homotopy
     title: Connectedness and Homotopy
-    parent: compactness
+    parent: spaces-and-continuous-maps
     lede: >-
       Connectedness is the other property preserved by continuous surjections, and it is
       stated by what cannot happen: no decomposition into two disjoint nonempty open sets, or
@@ -497,7 +497,7 @@ sections:
             mode: any
   - slug: cell-complexes
     title: Cell Complexes
-    parent: covering-spaces
+    parent: constructions-of-spaces
     lede: >-
       Everything computed after this point is computed from a cell structure, so the spaces
       have to be built rather than merely described. A CW complex is assembled by induction on
@@ -657,7 +657,7 @@ sections:
             mode: any
   - slug: surfaces
     title: Surfaces
-    parent: degree-and-fixed-points
+    parent: homology
     lede: >-
       Dimension two is the case where the invariants above are a complete answer. Every
       compact surface is an identification space of a polygon with its edges paired, the
@@ -711,7 +711,7 @@ sections:
             mode: any
   - slug: manifolds-and-duality
     title: Manifolds and Duality
-    parent: surfaces
+    parent: homology
     lede: >-
       A manifold is locally Euclidean, so its local homology is the local homology of
       $\RR^n$ and each point carries two generators of $H_n(M, M \sm \ts{x})$. An orientation
