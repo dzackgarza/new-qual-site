@@ -74,12 +74,14 @@ For just the statements of most of these theorems: [[attachments/ComplexAnalysis
 - Virtually any time: consider $1/f(z)$ and $f(1/z)$.
 
 - Setting $w=e^z$ is useful.
+
 :::{.remark title="Showing a function is constant"}
 If you want to show that a function $f$ is constant, try one of the following:
 
 - Write $f = u + iv$ and use Cauchy-Riemann to show $u_x, u_y = 0$, etc.
 - Show that $f$ is entire and bounded.
   - If you additionally want to show $f$ is zero, show $\lim_{z\to\infty} f(z) = 0$.
+
 :::
 :::{.fact}
 To show a function is holomorphic,
@@ -96,7 +98,9 @@ To count zeros:
 
 :::
 ## Basic but Useful Facts
+
 ### Arithmetic
+
 :::{.fact title="Some useful facts about basic complex algebra"}
 \[
 z\bar z &= \abs{z}^2 &&
@@ -143,8 +147,10 @@ Some computations that come up frequently:
 {1\over \abs{a+b}} &\leq {1 \over {\abs a - \abs b}} &&
 \abs{e^{z}} = e^{\Re(z)}, \quad \arg(e^z) = \Im(z)
 .\]
+
 :::
 ### Calculus
+
 :::{.fact}
 Various differentials:
 \[
@@ -273,6 +279,7 @@ and set ${n\choose k} \da (n)_k/k!$, then
 \[
 (x+y)^n = \sum_{k\geq 0} {n\choose k} x^{k}y^{n-k}
 .\]
+
 :::
 :::{.fact title="Some useful series"}
 \[
@@ -303,6 +310,7 @@ e^z &= \sum_{k\geq 0} {z^k \over k!} \\
   &= 1 + (1/2)x + {(1/2)(-1/2) \over 2!}x^2 + {(1/2)(-1/2)(-3/2) \over 3!}x^3 + \cdots \\
   &= 1 + {1\over 2} x - {1\over 8}x^2 + {1\over 16}x^3 - \cdots
 \]
+
 :::
 :::{.fact}
 Useful trick for expanding square roots:
@@ -319,4 +327,5 @@ $$
 $$
 
 > A great deal of content borrowed from the following: <https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf>
+
 # General Info / Tips / Techniques

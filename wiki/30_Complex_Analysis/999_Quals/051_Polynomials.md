@@ -14,12 +14,9 @@ order: 51
 
 [[E-PAQWN]]
 
-
 ### Asymptotic to $z^n$
 
 [[E-PLJCK]]
-
-
 
 ### Spring 2021.3, Tie's Extra Questions: Spring 2014, Fall 2009 (Polynomial lower bound, $d$ arbitrary)
 
@@ -34,6 +31,7 @@ order: 51
 ^c3336f
 
 [[P-VUVYD]]
+
 ### Spring 2019.4 (Eventually bounded implies rational)
 
 ^047423
@@ -47,7 +45,3 @@ order: 51
 ### Spring 2020 HW 2, SS 2.6.13
 
 [[E-TUKVC]]
-
-
-
-

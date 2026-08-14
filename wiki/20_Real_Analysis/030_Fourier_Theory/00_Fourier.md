@@ -18,6 +18,7 @@ Note that this implies there can be no identity for convolution: if there existe
 \widehat{\delta}(\xi)=\int \delta(x) e^{-2 \pi i \xi x} d x=\int \delta(x) d x=1
 ,\]
 contradicting Riemann-Lebesgue.
+
 :::
 
 :::{.proof title="?"}
@@ -40,6 +41,7 @@ contradicting Riemann-Lebesgue.
 
 :::{.warnings}
 Fubini-Tonelli does not work here!
+
 :::
     
 :::{.proof title="?"}
@@ -101,6 +103,7 @@ I_{t}(x) \to \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~\text{ pointwise and }~\p
 && e^{-\pi x^2}
 &\iff e^{-\pi \xi^2}
 .\]
+
 :::
 
 ## Approximate Identities 

@@ -9,11 +9,13 @@
 There is an oft-used weaker condition that $f'(z) \neq 0$ for any point.
 Note that that this condition alone doesn't necessarily imply $f$ is holomorphic, since anti-holomorphic maps may have nonzero derivatives.
 For example, take $f(z) = \bar{z}$, so $f(x+iy) = x-iy$ -- this does not satisfy the Cauchy-Riemann equations.
+
 :::
 
 :::{.remark}
 A bijective holomorphic map automatically has a holomorphic inverse.
 This can be weakened: an injective holomorphic map satisfies $f'(z) \neq 0$ and $f ^{-1}$ is well-defined on its range and holomorphic.
+
 :::
 
 [[D-DKJEU]]
@@ -85,6 +87,7 @@ This is just a composition of the above map with the flip $z\mapsto -z$:
 :::{.remark}
 This extends to a function $\CC\sm\RR^{\leq 0} \to \RR \cross (-\pi, \pi)$.
 Circles of radius $R$ are mapped to vertical line segments connecting $\ln(R) + i\pi$ to $\ln(R) - i\pi$, and rays are mapped to horizontal lines.
+
 :::
 
 

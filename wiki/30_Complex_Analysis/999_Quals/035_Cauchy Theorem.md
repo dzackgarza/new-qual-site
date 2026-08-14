@@ -57,6 +57,7 @@ order: 35
 ## Spring 2020 HW 2, 2.6.8
 
 [[P-WNOA2]]
+
 ## Spring 2020 HW 2, 2.6.9
 
 [[P-66WI2]]

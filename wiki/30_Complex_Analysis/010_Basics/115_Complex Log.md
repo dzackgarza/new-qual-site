@@ -20,6 +20,7 @@ Note that $\Arg(0)$ is undefined, so that $\Arg(z)$ makes sense on $\CC \sm (-\i
 Any choice of interval $(\theta_0, \theta_0 + 2\pi]$ yields a different branch cut.
 
 Since $\log(z)$ and $z^\alpha$ are defined in terms of $\Arg$, this is where most branching issues come from!
+
 :::
 
 :::{.example title="Of choosing branches"}
@@ -45,6 +46,7 @@ f_2(z) = \sqrt{r}e^{i{\Arg(z) + 2\pi \over 2} } = \sqrt{r} e^{i{\Arg(z) \over 2}
 \log(1+i) = \ln\qty{\sqrt 2} + \qty{{\pi\over 4} + 2k\pi}i
 .\]
 Note that this assigns an infinite number of complex numbers to $1+i$, all on the line $\Re(z) = \ln\qty{\sqrt 2}$ with imaginary parts differing by multiples of $2\pi$.
+
 :::
 
 :::{.remark}
@@ -53,6 +55,7 @@ The principal branch of $\Log$ is defined so that $\Log(1) = 0$, and can be writ
 \Log(z) = \int_\gamma {1\over \xi} \dxi
 \]
 where $\gamma$ is any piecewise smooth path connecting 1 to $z$.
+
 :::
 
 [[D-T6INB]]
@@ -61,6 +64,7 @@ where $\gamma$ is any piecewise smooth path connecting 1 to $z$.
 
 :::{.remark}
 $\Log(f(z))$ has branch points at the zeros of $f$.
+
 :::
 
 :::{.fact}
@@ -69,6 +73,7 @@ Common trick:
 f^{1/n} = e^{{1\over n} \log(f)}
 ,\]
 taking (say) a principal branch of $\log$ given by $\CC \sm (-\infty, 0] \cross 0$.
+
 :::
 
 [[PR-MWUJS]]
@@ -83,6 +88,7 @@ taking (say) a principal branch of $\log$ given by $\CC \sm (-\infty, 0] \cross 
 
 For counterexamples, take $z=\zeta_4^3=\exp(3\pi i / 4$ and $w=\zeta_4^2 = \exp(\pi i/2)$.
 Then $zw= \exp(-3 \pi i /4)$, using that the domain of $\Arg$ is $(-\pi, \pi]$.
+
 :::
 
 :::{.remark}
@@ -94,6 +100,7 @@ Then
 
 So $\log$ can't even be made continuous if one crosses the branch.
 The issue is the **branch point** or **branch singularity** at $z=0$.
+
 :::
 
 [[T-FWT3W]]
@@ -103,6 +110,7 @@ The complex exponential is $2\pi i$ periodic, and invertible on any horizontal s
 \[
 S_\alpha \da \ts{z\in \CC \st \Im(z) \in [\alpha, \alpha+2\pi] }
 .\]
+
 :::
 
 :::{.example title="of branch cuts"}

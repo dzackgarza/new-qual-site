@@ -5,9 +5,13 @@ title: Homework 6
 # Homework Problems
 
 ## Problem 1
+
 [[P-YFOG7]]
+
 ## Problem 2
+
 [[P-5HMI7]]
+
 ## Problem 3
 
 ### Part 1
@@ -29,6 +33,7 @@ title: Homework 6
 ## Problem 6
 
 ### Part 1
+
 [[P-GKPVE]]
 
 ### Part 2
@@ -44,6 +49,7 @@ title: Homework 6
 ## Problem 1
 
 ### Part 1
+
 [[P-X7AK4]]
 
 ### Part 2
@@ -77,4 +83,3 @@ title: Homework 6
 ### Part 2
 
 [[P-BF8JM]]
-

@@ -17,6 +17,7 @@
 :::{.remark}
 Quotients of modules are easier to reason about additively, writing $M/N = \ts{x + N}$ as cosets.
 Then $(x + N) + (y + N) = (x+y) + N$ and $(x+N)(y+N) = (xy) + N$.
+
 :::
 
 [[D-CRWZ7]]
@@ -39,6 +40,7 @@ Then $(x + N) + (y + N) = (x+y) + N$ and $(x+N)(y+N) = (xy) + N$.
 
 :::{.remark}
 Note that $C\cong B/d_1(A)$ always, but $B$ is not a direct sum of the outer terms unless the sequence splits.
+
 :::
 
 
@@ -67,6 +69,7 @@ d_2(b - sd_2(b)) = d_2(b) - d_2sd_2(b) = d_2(b) - d_2(b) = 0
 :::{.example title="A non-free module"}
 $\ZZ/6$ is a $\ZZ\dash$module that is *not* free, since the element \( [3] \) is a torsion element, where \( 2[3] = [6] = [0] \).
 This uses the fact that free modules over a PID are torsionfree.
+
 :::
 
 [[D-IGB7I]]
@@ -90,12 +93,14 @@ This uses the fact that free modules over a PID are torsionfree.
   We get $rM \leq N \leq M$ since $X$ is a generating set for $M$, so it now suffices to show $rM \cong M$.
 - Just define a map $\phi_r: M\surjects rM$ where $m\mapsto rm$, and note $\ker \phi_r =\ts{ m\in M \st rm = 0} = 0$ since $M$ is torsionfree.
   So $M = M/\ker \phi_r \cong rM$.
+
 :::
 
 :::{.example title="A torsionfree module that is not free"}
 $\QQ \in \mods{\ZZ}$ is torsionfree, but not free as a \(\ZZ\dash\)module.
 This follows because any two elements $a/b, p/q$ are in a single ideal, since taking $d\da \gcd(b, q)$ we have $1/a = 1/d + \cdots 1/d$ and similarly $p/q = 1/a + \cdots + 1/a$, so these are in \( \gens{ 1/d }  \).
 So any basis has size one, which would mean $\QQ = \ts{ \pm 1/d, \pm 2/d, \cdots }$ which in particular doesn't include the average of the first two terms.
+
 :::
 
 [[D-RHJMK]]
@@ -187,6 +192,7 @@ Let \( R_1, R_2 \) be two nontrivial rings and set \( R \da R_1 \oplus R_2 \).
 Then \( R_1, R_2 \) are projective \( R\dash \)modules by construction, but each factor contains \( R\dash \)torsion:
 setting \( e \da (0, 1) \in R \) we have \( e \actson R_1 = 0_{R_1} \).
 Since free implies torsionfree, \( R_1 \) can not be a free \(R\dash\)module.
+
 :::
 
 ## Classification of Modules over a PID

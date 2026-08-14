@@ -4,6 +4,7 @@
 
 :::{.remark}
 Galois is defined as **normal and separable**.
+
 :::
 
 [[D-PUOGJ]]
@@ -12,6 +13,7 @@ Galois is defined as **normal and separable**.
 
 :::{.corollary}
 $\GF(p^n)$ is a simple extension over $\FF_p$.
+
 :::
 
 [[D-VRPYB]]
@@ -93,6 +95,7 @@ $\impliedby$:
 
 :::{.proposition}
 $\abs{\aut(L/k)} \leq [L: k]$ with equality precisely when $L/k$ is normal.
+
 :::
 
 ## Separable Extensions
@@ -116,6 +119,7 @@ $\abs{\aut(L/k)} \leq [L: k]$ with equality precisely when $L/k$ is normal.
 
 :::{.fact}
 If $\alpha \in K/k$ is separable, then $\alpha$ is separable in any larger field $L/K/k$ since the minimal polynomial over the larger field will divide the minimal polynomial over the smaller field. 
+
 :::
 
 [[PR-ENHVC]]
@@ -134,6 +138,7 @@ Suppose $r$ is a root of $f, f'$.
 Write $f(x) = (x-r)p(x)$ and $f'(x) = (x-r)p'(x) + p(x)$.
 Rearranging, $f'(x) - (x-r)p'(x) = p(x)$, and since $r$ is a root of the LHS it's a root of the RHS.
 So $p(x) = (x-r) q(x)$ and $f(x) = (x-r)^2 q(x)$, making $r$ a repeated root.
+
 :::
 
 [[PR-OMKPN]]
@@ -142,6 +147,7 @@ So $p(x) = (x-r) q(x)$ and $f(x) = (x-r)^2 q(x)$, making $r$ a repeated root.
 Assume $f$ is monic, then $f$ is inseparable iff $f, f'$ have a common root $a$.
 So $(x-a)\divides q\da \gcd(f, f')$, and since $f$ is irreducible, it must be the minimal polynomial of $a$.
 Since $f'(a) = 0$, this forces $f'\divides f$, and since $\deg f' = \deg f - 1 < \deg f$ this forces $f' \equiv 0$.
+
 :::
 
 [[PR-TLBPS]]
@@ -163,6 +169,7 @@ Since $f'(a) = 0$, this forces $f'\divides f$, and since $\deg f' = \deg f - 1 <
   - $\implies$: Let $f$ be irreducible and inseparable, so $f' \equiv 0 \in k[x]$.
     Then $f(x) \da \sum_{k=0}^n a_k x^k$ implies $f'(x) \da \sum_{k=1}^{n}ka_k x^{k-1}$, which is zero iff $ka_k \equiv 0$ so $p$ divides $ka_k$.
     So $a_k\not\equiv 0$ forces $p\divides k$, so $f = a_0 + a_px^p + a_{2p}x^{2p} + \cdots$.
+
 :::
 
 [[C-C2GYX]]
@@ -189,6 +196,7 @@ So $f' \equiv 0\implies f(x) = q(x^p)$ where $q(t) \da \sum b_i t^i$.
 
 $\impliedby$:
 If $f(x) = q(x^p)$ for some $q$, the previous calculation shows $q$ has multiple roots, thus so does $f$, so $f$ is inseparable.
+
 :::
 
 :::{.fact title="Irreducible implies separable in characteristic zero"}
@@ -197,6 +205,7 @@ If $\ch k = 0$ and $f\in k[x]^{\irr}$, then $f$ is automatically separable.
 Why this is true: assuming $f$ is irreducible, $\gcd(f, f') = 1$ or $f$.
 It can't be $f$, since $f\divides f'$ would force $\deg f = \deg f' = 0$ and make $f$ a constant.
 So this $\gcd$ is 1.
+
 :::
 
 :::{.fact title="Irreducible implies separable for perfect fields"}
@@ -212,10 +221,12 @@ So this $\gcd$ is 1.
 f(x) = \sum a_k x^{pk} = \sum b_k^p x^{pk} =\qty{ \sum b_k x^k }^p
 ,\]
   making $f$ reducible. $\contradiction$
+
 :::
 
 :::{.fact title="finite extensions of perfect fields are separable"}
 A finite extension of a perfect field is automatically separable, and one only needs to show normality to show it's Galois.
+
 :::
 
 [[PR-3VQBI]]
@@ -321,6 +332,7 @@ $\implies$:
 
 :::{.fact}
 For $L/k$ algebraic and $\ch k = 0$, $L/k$ is Galois $\iff L/k$ is normal.
+
 :::
 
 [[PR-QDRB4]]
@@ -356,6 +368,7 @@ Since $L/K$ is Galois, every $f\in \Gal(K/k)$ lifts to $\Gal(L/k)$, making $\rho
   However, the intermediate extensions $\QQ(2^{1/4}) / \QQ(2^{1/2})$ and $\QQ(\sqrt 2) / \QQ$ are Galois since they are quadratic.
   Slogan: "Being Galois is not transitive in towers."
 - A quadratic extension that is not Galois: $\SF(x^2 + y) \in \FF_2(y)[x]$, which factors as $(x - \sqrt{y})^2$, making the extension not separable.
+
 :::
 
 
@@ -423,10 +436,12 @@ Normal extensions are *not* distinguished, since they fail the forward implicati
 However, they do have the (forward implication) upper transitive, lifting, and compositing properties.
 
 As a consequence, Galois extensions are also not distinguished.
+
 :::
 
 :::{.fact title="Normal/Algebraic/Galois extensions are upper transitive"}
 For $L/F/k$: $L/k$ normal/algebraic/Galois $\implies L/F$ normal/algebraic/Galois.
+
 :::
 
 ### Algebraic Extensions
@@ -441,11 +456,13 @@ For $L/F/k$: $L/k$ normal/algebraic/Galois $\implies L/F$ normal/algebraic/Galoi
 - Let $S$ be the finitely many coefficients of $f$, then $\alpha$ is algebraic over $k(S)$.
 - Note that $k(S)/k$ is finite and thus algebraic, and $k(S,\alpha)/k(s)$ is finite and also algebraic, so we're reduced to the finite case.
 - It suffices to show $k(S, \alpha)/k(s)/k$ is finite, which follows from multiplicativity of degrees.
+
 :::
 
 
 :::{.remark}
 If $L/K/k$ with $\alpha$ algebraic over $L$, then $\alpha$ is algebraic over $K$ and $\min_{\alpha, L}$ divides $\min_{\alpha, K}$ (so minimal polynomials only get smaller in extensions).
+
 :::
 
 
@@ -465,6 +482,7 @@ Now $K/k$ isn't normal, since $\Gal(L/k) = S_3$ but $\Gal(L/K) = \ZZ/2 \not\norm
 
 Another example: let $L/k$ be any algebraic extension that isn't normal, and take $N_k$ to be the normal closure to get $N_k/L$. 
 Concretely, $N_\QQ / \QQ(2^{1\over 3})/\QQ$ works.
+
 :::
 
 :::{.example title="Normal extensions are not transitive: failure of reverse implication"}
@@ -474,6 +492,7 @@ take
 L/K/k \da \QQ(2^{1\over 4}) / \QQ(2^{1\over 2}) / \QQ
 .\]
 Each iterate is normal since it's quadratic, but the overall extension misses complex roots and is thus not normal.
+
 :::
 
 [[PR-MHOVR]]
@@ -523,4 +542,5 @@ Alternatively,
 
 - Now just use the fact that $\bar{k} = \bar{K}$, and since $k\subseteq K$, any $K\dash$morphism is also a $k\dash$morphism.
 - Since $L/k$ is normal, $\sigma(L) = L$ and $L/K$ is thus normal.
+
 :::

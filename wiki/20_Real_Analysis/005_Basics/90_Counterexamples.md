@@ -11,6 +11,7 @@ g(x) \da \sum {1 \over 1 + n^2 x}
 .\]
 
 Take $x = 1/n^2$.
+
 :::
 
 Let all of the following integrals to be over a compact interval $[a, b]$ with $0 \leq a < b$.
@@ -20,6 +21,7 @@ Questions to ask:
 - Where is/isn't $f$ continuous?
 - Where is/isn't $f$ differentiable?
 - Is $f$ Riemann integrable?
+
 ## Dirichlet function
 f ( x ) = b + (a-b)~\chi(x\in \QQ) = \begin{cases}
 a, & x\in \QQ \\
@@ -30,6 +32,7 @@ b, & \text{else}
 - Discontinuous everywhere
 - Not integrable
 - Differentiable nowhere
+
 ## Dirichlet with a Continuous Point
 f ( x ) = x~\chi(\QQ) =
 \begin{cases}
@@ -41,6 +44,7 @@ x, & x\in \QQ \\
 - Not integrable
   - $U(f) > \frac 1 4$ but $L(f) = 0$.
 - Differentiable nowhere
+
 ## Dirichlet with a Differentiable Point
 f ( x ) = x^2~\chi(\QQ) = \begin{cases}
 x^2, & x\in \QQ \\
@@ -50,6 +54,7 @@ x^2, & x\in \QQ \\
 - Discontinuous at $\RR-\theset{0}$
 - Not integrable
 - Differentiable at 0
+
 ## Dirichlet with Two Functions
 f ( x ) = x~\chi{\QQ} + (-x)\chi(\RR-\QQ) = \begin{cases}
 x, & x\in \QQ \\
@@ -59,6 +64,7 @@ x, & x\in \QQ \\
 - Discontinuous at $\RR-\theset{0}$
 - Differentiable nowhere.
 - Not integrable
+
 :::{.proof title="of non-integrability"}
 Restrict attention to $\tv{\frac 1 2, 1}$
 \[
@@ -82,6 +88,7 @@ and
 \implies \underline{\int_0^1} f &\leq -\frac 1 4
 \]
 So we have $\underline{\int_0^1} f \lneq 0 \lneq \overline{\int_0^1} f$.
+
 :::
 ## The Thomae function
 f ( x ) = \begin{cases}
@@ -162,6 +169,7 @@ and
 \implies \underline{\int_0^1} f &\leq -\frac 1 4
 \]
 So we have $\underline{\int_0^1} f \lneq 0 \lneq \overline{\int_0^1} f$.
+
 :::
 
 [^1]: Riemann integrable by the Lebesgue criterion.

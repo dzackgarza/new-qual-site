@@ -21,6 +21,7 @@ G\in \mcm \implies \forall \eps, \exists G = G(\eps) \text{ such that }\,\, m(G)
 \[
 E = F_\sigma \disjoint N && E \disjoint N = G_\delta
 .\]
+
 :::
 
 [[D-QYLPH]]
@@ -102,6 +103,7 @@ F_1 = F \disjoint \Disjoint_{k=1}^{\infty} E_k
 .\]
 
 - Now use that $\lim_{N\to\infty}\mu(F_{N+1}) = \lim_{N\to\infty} \mu(F_N)$ to conclude.
+
 :::
 
 # Outer Measure
@@ -124,6 +126,7 @@ F_1 = F \disjoint \Disjoint_{k=1}^{\infty} E_k
     One can then show $m_*(E + k) \leq \sum \abs{Q_i + k} = \sum \abs{Q_i}\leq m_*(E) + \eps$ for all $\eps$, and get the reverse inequality by writing $E = (E+y)-y$.
   - For dilation, use that $m_*(t(A\disjoint B)) = tm_*(A\disjoint B)$, which is useful because we cover with disjoint cubes.
     Then use that $tQ_i \covers tE$ to get $tm_*(E) \leq t\sum \abs{Q_i} = \sum \abs{tQ_i} \leq m_*(tE) + \eps$ and similarly reverse to get equality.
+
 :::
 
 [[T-KZNWM]]
@@ -135,12 +138,14 @@ F_1 = F \disjoint \Disjoint_{k=1}^{\infty} E_k
 - Enumerate the rationals in $[0, 1]$ as $q_{j}$, and define $N_{j} = N + q_{j}$. These intersect trivially.
 - Define $M \da \disjoint N_{j}$, then $[0, 1) \subseteq  M \subseteq [-1, 2)$, so the measure must be between 1 and 3.
 - By translation invariance, $m(N_{j}) = m(N)$, and disjoint additivity forces $m(M) = 0$, a contradiction.
+
 :::
 
 [[PR-NULVE]]
 
 :::{.proof title="That limsups/infs are measurable"}
 Measurable sets form a sigma algebra, and these are expressed as countable unions/intersections of measurable sets.
+
 :::
 
 [[T-YMPTF]]
@@ -155,6 +160,7 @@ Measurable sets form a sigma algebra, and these are expressed as countable union
 - If $\sum_{j} m(E_{j}) < \infty$, then $\sum_{j=N}^\infty m(E_{j}) \converges{N\to\infty}\to 0$ as the tail of a convergent sequence.
 - $E = \limsup_{j} E_{j} = \intersect_{k=1}^\infty \union_{j=k}^\infty E_{j} \implies E \subseteq \union_{j=k}^\infty$ for all $k$
 - $E \subset \union_{j=k}^\infty \implies m(E) \leq \sum_{j=k}^\infty m(E_{j}) \converges{k\to\infty}\to 0$.
+
 :::
 
 [[PR-I44DD]]
@@ -163,6 +169,7 @@ Measurable sets form a sigma algebra, and these are expressed as countable union
 
 :::{.proof title="Convolution"}
 Take the cone on $f$ to get $F(x, y) = f(x)$, then compose $F$ with the linear transformation $T = [1, -1; 1, 0]$.
+
 :::
 
 [[D-BXAUS]]

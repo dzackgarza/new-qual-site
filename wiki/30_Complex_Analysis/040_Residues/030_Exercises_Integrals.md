@@ -9,6 +9,7 @@ title: "Exercises: Contour integration"
 
 
 [[E-QF7KI]]
+
 ## Rational Functions 
 
 ### Superlinear Decay
@@ -19,22 +20,27 @@ title: "Exercises: Contour integration"
 [[E-AKF2O]]
 [[E-JZNWV]]
 [[E-SPIVX]]
+
 ### Linear or sublinear decay
 
 [[E-AXBZQ]]
+
 ### No clear decay
 
 [[E-YYRZX]]
 [[E-AIQEU]]
+
 ## Singularities along $\RR$, Principal Values
 
 [[E-ZGZYQ]]
 [[E-DUK6M]]
+
 ## Rational functions of $\cos, \sin$
 
 [[E-BEIHP]]
 [[E-Z4JCZ]]
 [[E-JKROF]]
+
 ## Branch Cuts
 
 ### Logarithms
@@ -43,10 +49,12 @@ title: "Exercises: Contour integration"
 [[E-EOMTI]]
 [[E-KC6DS]]
 [[E-HHSCS]]
+
 ### Power Functions
 
 [[E-YAMX6]]
 [[E-2HIKG]]
+
 ### Square Roots / Slits
 
 :::{.concept}

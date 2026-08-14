@@ -11,6 +11,7 @@ title: Basics
 
 :::{.remark}
 For any measure space $(X, M, \mu)$, one can define $L^2(\mu)$ with the inner product $\inner{f}{g} \da \int_X f\bar{g} d\mu$.
+
 :::
 
 [[PR-L35O7]]
@@ -27,6 +28,7 @@ Working with inner products:
 x\neq 0 \implies \inner{x}{x} > 0
 .\]
 We define $\norm{x} \da \sqrt{\inner{x}{x}}$.
+
 :::
 
 :::{.fact title="Cauchy-Schwarz"}
@@ -35,6 +37,7 @@ For $x, y\in H$,
 \abs{ \inner{x}{y}} \leq \norm{x} \norm{y}
 ,\]
 with equality iff $x, y$ are linearly independent.
+
 :::
 
 :::{.fact title="Pythagoras"}
@@ -53,6 +56,7 @@ For all $x, y\in H$,
 \[
 4 \inner{x}{y} = \norm{x+y}^2 - \norm{x-y}^2 +i\qty{\norm{x+iy}^2 - \norm{x-iy}^2}
 .\]
+
 :::
 
 :::{.fact title="Parallelogram law"}
@@ -60,6 +64,7 @@ For all $x, y\in H$,
 \[
 \norm{x+y}^2 + \norm{x-y}^2 = 2\qty{\norm{x}^2 + \norm{y}^2 }
 .\]
+
 :::
 
 [[PR-KTZZ5]]
@@ -231,10 +236,12 @@ n, m \geq N \implies \norm{L_{n} - L_{m}} < \varepsilon \implies \abs{L_{m}(x) -
 :::
 
 ## Misc
+
 :::{.remark}
 Big theorems for Banach spaces:
 
 - Uniform boundedness principle
 - Open mapping theorem
 - Closed graph theorem
+
 :::

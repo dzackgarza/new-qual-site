@@ -72,6 +72,7 @@ The coefficients of the characteristic polynomial are elementary symmetric funct
 \[
 \chi_A(t) = t^n - \qty{\sum_i \lambda_i }t^{n-1} + \qty{\sum_{i < j} \lambda_i \lambda_j }t^{n-2} + \cdots \pm \qty{\prod_i \lambda_i}
 .\]
+
 :::
 
 :::{.example title="of polynomial long division"}
@@ -84,6 +85,7 @@ The rest can be factored by inspection:
 \[
 f(x) = (x-2)(x^2-4x+4) = (x-2)^3
 .\]
+
 :::
 
 

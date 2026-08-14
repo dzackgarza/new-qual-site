@@ -122,6 +122,7 @@ order: 5
   - The first and last $\eps/3$ come from uniform convergence of $F_N\to F$.
   - The middle $\eps/3$ comes from continuity of each $F_N$.
 - So just need to choose $N$ large enough and $\delta$ small enough to make all 3 $\varepsilon$ bounds hold.
+
 :::
 
 [[PR-L7LNZ]]
@@ -136,6 +137,7 @@ order: 5
 For every $\frac 1 n$ there exists a closed set $K_{n} \subset E$ such that $m(E\setminus K_{n}) \leq \frac 1 n$.
 Take $K = \union K_{n}$, wlog $K_{n} \nearrow K$ so $m(K) = \lim m(K_{n}) = m(E)$.
 Take $N\da E\setminus K$, then $m(N) = 0$.
+
 :::
 
 [[T-IIKSW]]
@@ -152,6 +154,7 @@ Take $N\da E\setminus K$, then $m(N) = 0$.
   - Set $K_{n} = F\intersect \DD_{n}$, a ball of radius $n$ about $0$.
   - Then $E\setminus K_{n} \searrow E\setminus F$
   - Since $m(E) < \infty$, there is an $N$ such that $n\geq N \implies m(E\setminus K_{n}) < \eps$.
+
 :::
 
 
@@ -177,6 +180,7 @@ $\impliedby$:
 - Define $A_x = \theset{y\in \RR \mid (x, y) \in \mathcal{A}}$, then $m(A_x) = f(x)$.
 - By the corollary, $A_x$ is measurable set, $x \mapsto A_x$ is a measurable function, and $m(A) = \int f(x) ~dx$.
 - Then explicitly, $f(x) = \chi_{A}$, which makes $f$ a measurable function.
+
 :::
 
 

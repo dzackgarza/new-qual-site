@@ -37,6 +37,7 @@ Some fun resources:
 
 :::{.remark}
 I use $e_G$ or $1_G, 0_G$ to denote identity elements in a group $G$.
+
 :::
 
 :::{.remark title="on direct sums vs direct products"}
@@ -46,6 +47,7 @@ Both the product and direct sum have coordinate-wise operations.
 For finite index sets $\abs{J}< \infty$, the direct sum and product coincide, but in general there is only an injection $\bigoplus_j X_i \injects \prod_j X_j$.
 In the direct sum $\bigoplus_j X_j$ have only finitely many nonzero entries, while the product allows *infinitely* many nonzero entries.
 So in general, I always use the product notation.
+
 :::
 
 :::{.remark title="on notation for free groups and free products"}
@@ -59,6 +61,7 @@ E.g. an element may look like
 \[
 x = a_1^2 a_2^4 a_1 a_2^{-2}
 .\]
+
 :::
 
 :::{.remark title="on notation for free abelian groups"}
@@ -72,6 +75,7 @@ E.g. such an element may look like
 \[
 x = 2a_1 + 4a_2 + a_1 - a_2 = 3a_1 + 3a_2
 .\]
+
 :::
 
 :::{.remark title="on indexing conventions and list notation"}
@@ -91,6 +95,7 @@ H_*(X) &= [H_1(X), H_2(X), H_3(X), \cdots]
 
 :::{.fact}
 An injective group morphism $f:X\injects Y$ where $X$ is trivial forces $Y$ to be trivial.
+
 :::
 
 [[PR-WB7MM]]
@@ -104,9 +109,11 @@ Supposing $g\in G$ is torsion of order $n$, we have
 
 so $f(g)$ is torsion of order dividing $n$.
 But a free group is torsionfree.
+
 :::
 
 :::{.remark title="How to use this fact"}
 This is especially useful if you have some $f: A\into B$ and you look at the induced homomorphism $f_*: \pi_1(A) \into \pi_1(B)$. If the former is finite and the latter contains a copy of $\ZZ$, then $f_*$ has to be the trivial map $f_*([\alpha]) = e \in \pi_1(B)$ for every $[\alpha] \in \pi_1(A)$.
 You can play a similar game when you take homology or cohomology.
+
 :::

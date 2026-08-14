@@ -9,6 +9,7 @@ Useful facts:
 \[
 f' = \dd{f}{z} = {1\over i}\dd{f}{y} = \dd{f}{x} = \dd u x + i \dd v x
 .\]
+
 :::
 
 # Complex Calculus
@@ -63,6 +64,7 @@ Note an issue: a different parameterization yields a different (still nonzero) n
 &= -{4i\over 3}
 .\]
 This is these are paths that don't lift to closed loops on the Riemann surface defined by $z\mapsto z^2$.
+
 :::
 
 :::{.remark title="Solving real integrals with complex calculus"}
@@ -129,6 +131,7 @@ Some properties:
   - E.g. $\del \abs{z}^2 = \del z\bar z = \bar{z}$ and $\delbar \abs{z}^2 = z$.
     - So $d(\abs{z}^2) = \bar{z}\dz + z\dzbar$
   - E.g. $\del \exp\qty{ - \abs{z}^2 } = \del \exp\qty{-z\bar z} = e^{-\abs{z}^2}\cdot \del(z\bar z) = \bar z e^{-\abs{z}^2}$.
+
 :::
 
 

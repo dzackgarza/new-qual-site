@@ -15,6 +15,7 @@ Since cosets are equal or disjoint and have equal cardinality,
 G = \disjoint_{k \leq N} g_k H \implies \size G = \sum_{k\leq N} \size  \qty{g_k H} = \sum_{k\leq N} \size  H = N \size  H
 ,\]
 so $\size  G = N \size  H$, $\size H$ divides $\size  G$ and $N = [G:H]$ divides $\size  G$.
+
 :::
 
 [[C-HWX2P]]
@@ -24,6 +25,7 @@ The order of every element divides the size of $G$, i.e.
 $$
 g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 .$$
+
 :::
 
 :::{.warnings}
@@ -38,12 +40,14 @@ $x\not\in H$, so $H\neq xH$, but two must be equal:
 
 - $x^2H = H$: use $x^2 = x\inv$ since $x^3=e$, but $x\in H \implies x\inv\in H$, $\contradiction$
 - $xH = x^2H$: the fundamental theorem of cosets forces $x\inv x^2 \in H$, so $x\in H$. $\contradiction$
+
 :::
 
 [[T-3KCD6]]
 
 :::{.proof title="?"}
 See [https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf](https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf).
+
 :::
 
 ## Group Actions
@@ -55,6 +59,7 @@ Note: a reminder of notation:[[00_Notation_Algebra]].
 
 Note that being in the same orbit is an equivalence relation which partitions $X$, and $G$ acts transitively if restricted to any single orbit.
 Also, $x\in \Fix$ iff $\Orb(x) = \ts{x}$ and $\Stab_G(x) = G$.
+
 :::
 
 
@@ -115,6 +120,7 @@ A useful mnemonic: for any group action $\phi: G\actson X$, using that orbits pa
 X = \Fix(\phi) + \Disjoint_{x}' \Orb(x)
 ,\]
 where $\Fix(\phi)$ is the union of all orbits of size 1, and the remaining union is over distinct nontrivial orbits, taking one representative $x$ from each.
+
 :::
 
 [[PR-5FGA7]]
@@ -128,6 +134,7 @@ where $\Fix(\phi)$ is the union of all orbits of size 1, and the remaining union
   If $\ker \phi = 1$, $\phi$ is injective and we're done.
 
 - Otherwise $\ker \phi = G$, and acting on $eH$ yields $gH = H$ for all $g$, forcing $H=G$ and $n=1$, contradicting that $H<G$ is proper. $\contradiction$
+
 :::
 
 ### Left Translation
@@ -223,6 +230,7 @@ Proceed by partitioning the sum up according to which orbit each term comes from
 &= \sum_{\Orb(x_0) \in X/G} 1 \\
 &= \size (X/G)
 .\]
+
 :::
 
 

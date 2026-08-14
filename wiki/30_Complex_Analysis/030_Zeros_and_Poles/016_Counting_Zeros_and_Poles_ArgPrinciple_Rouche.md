@@ -76,6 +76,7 @@ Let $f(z) = z^2 + z = z(z+1)$.
 
 :::{.slogan}
 The number of zeros/poles are determined by a dominating function.
+
 :::
 
 
@@ -111,6 +112,7 @@ The number of zeros/poles are determined by a dominating function.
   - Set $f(z) = 6z$ and $g(z) = z^4 + 3$.
   - Check $\abs{g(z)} \leq \abs{z}^4 + 3 = 4 < 6 = \abs{f(z)}$.
   - So $P$ has 1 zero here.
+
 :::
 
 :::{.example}
@@ -120,4 +122,5 @@ The number of zeros/poles are determined by a dominating function.
 - Set $f(z) = \alpha z$ and $g(z) = e^{-z}$.
 - Estimate at $\abs{z} =1$ we have $\abs{g} =\abs{e^{-z}} = e^{-\Re(z)} \leq e^1 < \abs{\alpha} = \abs{f(z)}$
 - $f$ has one zero at $z_0 = 0$, thus so does $f+g$.
+
 :::

@@ -15,6 +15,7 @@
 - For rational functions of $\cos, \sin$: set $2\cos(z) = z + z\inv, 2\sin(z) = z - z\inv, \dtheta = {\dz\over iz}$ to reduce to a residue count in $\abs{z} \leq 1$.
 
 [[E-CFHC4]] [[E-JK5PG]] [[E-FRWVZ]] [[E-2RKYE]]
+
 ## Branch Cuts
 
 [[E-22P3T]] [[E-Z66NC]]

@@ -8,6 +8,7 @@ title: Residues
 :::{.warnings}
 A pedantic warning: $\Res_{z=p}(f)$ should really be $\Res_{z=p}(df)$ for $df = f(z) \dz$, since it's only an invariant of the 1-form $df$ and not necessarily $f$ itself.
 We freely abuse notation!
+
 :::
 :::{.remark}
 What to use when:
@@ -31,6 +32,7 @@ What to use when:
 
 :::
 ## Basics
+
 :::{.remark}
 Check: do you need residues at all??
 You may be able to just compute an integral!
@@ -67,6 +69,7 @@ Thus
 \int \sum_{k\geq -M} c_k z^k = \sum_{k\geq -M} \int c_k z^k = 2\pi i c_{-1}
 ,\]
 i.e. the integral picks out the $c_{-1}$ coefficient in a Laurent series expansion.
+
 :::
 :::{.example title="?"}
 Consider
@@ -89,6 +92,7 @@ and check
 :::
 ## Estimates
 [[PR-ZCMJQ]]
+
 :::{.proof title="?"}
 \[
 \left|\int_{\gamma} f(z) d z\right| \leq \sup _{t \in[a, b]}|f(z(t))| \int_{a}^{b}\left|z^{\prime}(t)\right| d t \leq \sup _{z \in \gamma}|f(z)| \cdot \operatorname{length}(\gamma)
@@ -96,6 +100,7 @@ and check
 
 :::
 [[PR-QZEJM]]
+
 :::{.proof title="?"}
 \[
 \abs{ \int_{C_R} f(z)\dz }
@@ -134,6 +139,7 @@ Useful when taking $z\to z_0$ with $z_0$ a root of $p, p', q'$.
 :::{.remark}
 Pedantic warning: $\Res_{z=p}(f)$ should really be $\Res_{z=p}(df)$ for $df = f(z) \dz$, since it's only an invariant of the 1-form $df$ and not necessarily $f$ itself.
 We freely abuse notation!
+
 :::
 
 :::{.remark}
@@ -169,20 +175,24 @@ You may be able to just compute an integral!
 [[PR-L4Y5F]]
 ![](../../../../assets/assets/figures/2021-10-29_01-33-46.png)
 [[C-Q6BSL]]
+
 :::{.proof title="?"}
 Apply L'Hopital:
 \[
 (z-z_0) {g(z) \over h(z)} = {(z-z_0) g(z) \over h(z) } \equalsbecause{LH}
 {g(z) + (z-z_0) g'(z) \over h'(z)} \converges{z\to z_0}\too {g(z_0) \over h'(z_0)}
 .\]
+
 :::
 :::{.example title="Residue of a simple pole (order 1)"}
 Let $f(z) = \frac{1}{1+z^2}$, then $g(z) = 1, h(z) = 1+z^2$, and $h'(z) = 2z$ so that $h'(i) = 2i \neq 0$. Thus
 \[
 \Res_{z=i}{1\over 1+z^2} = \frac{1}{2i}
 .\]
+
 :::
 [[PR-D3CDJ]]
+
 ### Exercises
 > Some good computations [here](https://math.mit.edu/~jorloff/18.04/notes/topic9.pdf).
 [[E-V2VS5]]
@@ -200,6 +210,7 @@ Let $f(z) = \frac{1}{1+z^2}$, then $g(z) = 1, h(z) = 1+z^2$, and $h'(z) = 2z$ so
 :::{.warnings}
 Note that only the denominator gets differentiated, not the numerator!
 To remember this, just rederive the equation from L'Hopital's rule and use the product rule on $(z-z_0)g(z)$.
+
 :::
 
 :::{.proof title="Of derivative formula for simple poles"}
@@ -208,6 +219,7 @@ Apply L'Hopital:
 (z-z_0) {g(z) \over h(z)} = {(z-z_0) g(z) \over h(z) } \equalsbecause{LH}
 {g(z) + (z-z_0) g'(z) \over h'(z)} \converges{z\to z_0}\too {g(z_0) \over h'(z_0)}
 .\]
+
 :::
 
 [[T-WFXQP]]
@@ -231,6 +243,7 @@ Apply L'Hopital:
 [[E-AOQLK]]
 [[E-TOZQJ]]
 [[E-FCYUM]]
+
 ### Applying the formulas
 
 [[E-YNZYA]]

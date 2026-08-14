@@ -79,19 +79,23 @@ For everything that follows, assume $G$ is a finite group.
 [[P-V7BGS]]
 [[P-SVM3O]]
 [[P-OBO4F]]
+
 ### Normal Subgroups
 
 [[P-SXM4Q]]
 [[P-DUUFY]]
 [[P-L7SEG]]
+
 ### Symmetric Groups
 
 [[P-DUVZD]]
 [[P-VGFA7]]
+
 ### Matrix Groups
 
 [[P-4VJTF]]
 [[P-PSAET]]
+
 ## Warmup Problems
 
 [[P-6HPKO]]
@@ -100,6 +104,7 @@ For everything that follows, assume $G$ is a finite group.
 [[P-6XW74]]
 [[P-KXSW3]]
 [[P-KPEPM]]
+
 ## Qual Problems
 
 [[P-IC2GD]]

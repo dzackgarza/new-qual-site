@@ -5,7 +5,9 @@
 
 ##  (May 2016, \#1)
 ##  (May 2016, \#2)
+
 ## (May 2016, \#3)
+
 ## (May 2016, \#4)
 ##  (May 2016, \#5)
 ##  (May 2016, \#6)
@@ -59,19 +61,24 @@
 # Sequences and Series
 
 ## (June 2013 \#1a)
+
 ## (January 2014 \#2)
 ##  (May 2011 \#4a)
+
 ## (June 2005 \#3b)
+
 ## (January 2011 \#5)
 
 ## (June 2013 1a) 
 [[P-MCFQT]]
+
 ## (January 2014 2) 
 
 [[P-RAYX2]]
 
 ##  (May 2011 4a) 
 [[P-C3MKZ]]
+
 ## (June 2005 3b) 
 
 [[P-PJY52]]

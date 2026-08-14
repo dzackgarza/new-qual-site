@@ -33,6 +33,7 @@ Scaling: use a fun trick, insert $1=\bar\lambda \lambda$ like so
 .\]
 
 Being an involution: check $\psi_a(\psi_a(z))$ satisfies the Schwarz lemma and has two fixed points, forcing it to be the identity.
+
 :::
 
 [[T-W26VL]]
@@ -47,6 +48,7 @@ Being an involution: check $\psi_a(\psi_a(z))$ satisfies the Schwarz lemma and h
 
 - Claim: this representation is unique.
   Consider $f'(z)$, this determines $\Arg(\lambda)$.
+
 :::
 
 ## The Schwarz Lemma
@@ -73,6 +75,7 @@ Being an involution: check $\psi_a(\psi_a(z))$ satisfies the Schwarz lemma and h
 - $\abs{f(z_0)} = \abs{z_0}\implies f$ is a rotation:
   - Again $\abs{g(z)} \leq 1$, but $\abs{f(z_0)} = \abs{z_0} \implies \abs{g(z_0)} = 1$, so $g$ attains a maximum on $\abs{z}\leq 1$, making it constant, so $f(z) = cz$.
   - Then $\abs{z_0} = \abs{f(z_0)} = \abs{cz_0}$ since $f(z_0) = z_0$, so $\abs{c} = 1$ and $c = e^{i\theta}$ for some $\theta$.
+
 :::
 
 :::{.proof title="of Schwarz, alternative"}

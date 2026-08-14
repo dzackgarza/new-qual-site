@@ -1,10 +1,15 @@
 # Undergraduate Analysis: Uniform Convergence
 
 ## Fall 2018 # 1
+
 ## Fall 2017 # 1
+
 ## Fall 2014 # 1
+
 ## Spring 2017 # 4
+
 ## Spring 2015 # 1
+
 ## Fall 2014 # 2
 
 ## Fall 2018.1
@@ -12,7 +17,6 @@
 ^0484e7
 
 [[P-6HV66]]
-
 
 ## Fall 2017.1
 
@@ -27,40 +31,57 @@
 [[P-QNJ6C]]
 
 ## Fall 2014.1
+
 [[P-TUGZG]]
 
-
-
 ## Spring 2015.1
+
 [[P-BH66D]]
 
-
 ## Fall 2014.2
+
 [[P-RHDT6]]
-
-
 
 # General Analysis
 
 ## Spring 2020 # 1
+
 ## Fall 2019 # 1
+
 [[P-QOC7V]]
+
 ## Fall 2018 # 4
+
 [[P-NVVZJ]]
+
 ## Fall 2017 # 4
+
 [[P-BNXPE]]
+
 ## Spring 2017 # 3
+
 ## Fall 2016 # 1
+
 ## Fall 2016 # 5
+
 ## Fall 2016 # 6
+
 ## Spring 2016 # 1
+
 [[P-FKKSH]]
+
 ## Fall 2015 # 1
+
 ## Fall 2020 \# 1
+
 [[P-6UKIC]]
+
 ## Fall 2020 \# 3
+
 [[P-K4EJA]]
+
 ## Unsorted
+
 ## Spring 2014 # 2
 
 ## Fall 2021.1
@@ -69,21 +90,11 @@
 
 [[P-JCEPZ]]
 
-
-
-
 ## Fall 2020.1
 
 ^821653
 
 [[P-D6N7M]]
-
-
-
-
-
-
-
 
 ## Spring 2020.1
 
@@ -137,8 +148,7 @@
 
 ^6ae65c
 
-[[P-VXO5U]]
-4. $\lim _{n \to \infty} e_{n} = \lim _{n \to \infty} E_{n}$.
+[[P-VXO5U]] 4. $\lim _{n \to \infty} e_{n} = \lim _{n \to \infty} E_{n}$.
 
 ## Fall 2015.1
 

@@ -32,6 +32,7 @@ The claim is that this makes $\ts{x_k}$ a Cauchy sequence, this follows from the
 \[
 \abs{x_n - x_m} \leq \sum_{n+1\leq k \leq m} \abs{x_k - x_{k-1}} \leq \sum_{n \leq k \leq m-1} c^k \abs{x_1 - x_0} \leq c^n \abs{x_1 - x_0 \over 1-c} \to 0
 .\]
+
 :::
 
 ## Implicit Function Theorem
@@ -40,6 +41,7 @@ The claim is that this makes $\ts{x_k}$ a Cauchy sequence, this follows from the
 
 :::{.slogan}
 A relation is locally the graph of a function wherever the derivative is nonsingular.
+
 :::
 
 ### Inverse Function Theorem
@@ -47,16 +49,19 @@ A relation is locally the graph of a function wherever the derivative is nonsing
 [[T-XECJ3]]
 
 [[T-JH6VL]]
+
 ## Convergence
 
 :::{.slogan}
 A $C^1$ function is invertible in any neighborhood in which its derivative $f'$ is invertible.
+
 :::
 
 :::{.remark}
 Recall that absolutely convergent implies convergent, but not conversely: $\sum k\inv = \infty$ but $\sum (-1)^k k\inv < \infty$.
 This converges because the even (odd) partial sums are monotone increasing/decreasing respectively and in $(0, 1)$, so they converge to a finite number.
 Their difference converges to 0, and their common limit is the limit of the sum.
+
 :::
 
 ## Integrals
@@ -99,6 +104,7 @@ Some basic facts needed for line integrals in the plane:
 - For every root $r_i$ of multiplicity 1, include a term $A/(x-r_i)$.
 - For any factors $g(x)$ of multiplicity $k$, include terms $A_1/g(x), A_2/g(x)^2, \cdots, A_k / g(x)^k$.
 - For irreducible quadratic factors $h_i(x)$, include terms of the form ${Ax+B \over h_i(x)}$.
+
 :::
 
 [[PR-4LISY]]
@@ -107,6 +113,7 @@ Some basic facts needed for line integrals in the plane:
 
 :::{.remark}
 Note that if a power series converges uniformly, then summing commutes with integrating or differentiating.
+
 :::
 
 [[PR-WIMIM]]
@@ -120,12 +127,14 @@ Recall the **$p\dash$test**:
 \[
 \sum n^{-p} < \infty \iff p \in (1, \infty)
 .\]
+
 :::
 :::{.fact}
 The product of two sequences is given by the Cauchy product
 \[
 \sum a_kz^k \cdot \sum b_k z^k = \sum c_k z^k,\quad c_k \da \sum_{j\leq k} a_k b_{k-j}
 .\]
+
 :::
 :::{.fact}
 Recall how to carry out polynomial long division:
@@ -139,20 +148,26 @@ Recall how to carry out polynomial long division:
 [[D-AIQG3]]
 
 [[D-5Y4MC]]
+
 :::{.remark}
 Recall Arzelà-Ascoli, an analog of Heine-Borel: for $X$ compact Hausdorff, consider the the Banach space $C(X; \RR)$ equipped with the *uniform norm* $\norm{f}_{\infty, X} \da \sup_{x\in X} \abs{f(x)}$.
 Then a subset $A \subseteq X$ is compact iff $A$ is closed, uniformly bounded, and equicontinuous.
 As a consequence, if $A$ is a sequence, it contains a subsequence converging uniformly to a continuous function.
 The proof is an $\eps/3$ argument.
+
 :::
 [[D-QTJ7T]]
+
 :::{.remark}
 A continuous function on a compact set is uniformly continuous.
+
 :::
 [[D-HL4KE]]
+
 :::{.remark}
 If $f: \Omega \to \Omega'$ is a univalent surjection, $f$ is invertible on $\Omega$ and $f\inv$ is holomorphic.
 Compare to real functions: $f(x) = x^3$ is injective on $(-c, c)$ for any $c$ but $f'(0) = 0$ and $f\inv(x) \da x^{1/3}$ is not differentiable at zero.
+
 :::
 ## Theorems
 [[T-TUXBP]]

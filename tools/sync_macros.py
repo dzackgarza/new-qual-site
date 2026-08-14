@@ -125,10 +125,7 @@ def main() -> int:
         keep[name] = defined[name]
         frontier |= {n for n in MACRO_USE_RE.findall(defined[name]) if n in defined and n not in keep}
 
-    macros = {
-        "\\" + name: UNRENDERABLE.get(name, TEX_ONLY.sub("", body).strip())
-        for name, body in sorted(keep.items())
-    }
+    macros = {"\\" + name: UNRENDERABLE.get(name, TEX_ONLY.sub("", body).strip()) for name, body in sorted(keep.items())}
     (ROOT / "vocabularies" / "macros.json").write_text(json.dumps(macros, indent=2, ensure_ascii=False) + "\n")
     print(f"{len(macros)} macros used by {' and '.join(USED_IN)}, from {PREAMBLE}")
     undefined = sorted(n for n in used if n not in defined)

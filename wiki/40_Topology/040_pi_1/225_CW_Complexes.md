@@ -30,22 +30,27 @@ Let $X= S^a \cross S^b$, so $p_{S^a}(t) = 1 + t^a$ and $p_{S^b}(t) = 1 + t^b$, t
 
 
 [[E-GTNVU]]
+
 ## CW Structures on Common Spaces
 
 :::{.example title="Spheres"}
 $S^n = e^0 \union e^n$: a point and an $n\dash$cell.
+
 :::
 
 :::{.example title="Real Projective Space"}
 $\RP^n = e^1 \cup e^2 \cup \cdots \cup e^n$: one cell in each dimension.
+
 :::
 
 :::{.example title="Complex Projective Space"}
 $\mathbb{CP}^n =e^2 \cup e^4 \cup \cdots e^{2n}$
+
 :::
 
 :::{.example title="Surfaces"}
 ![Fundamental domains](../../../../assets/assets/40_Topology/figures/1513064067523.png)
+
 :::
 
 ## Examples of Simplicial Complexes 
@@ -53,14 +58,17 @@ $\mathbb{CP}^n =e^2 \cup e^4 \cup \cdots e^{2n}$
 :::{.remark}
 To write down a simplicial complex, label the vertices with increasing integers. 
 Then each $n$-cell will correspond to a set of $n+1$ of these integers - throw them in a list.
+
 :::
 
 :::{.example title="Torus"}
 ![Torus](../../../../assets/assets/40_Topology/figures/1513062466927.png)
+
 :::
 
 :::{.example title="Klein Bottle and $\RP^2$"}
 ![Klein Bottle and $\RP^2$](../../../../assets/assets/40_Topology/figures/1513062526623.png)
+
 :::
 
 :::{.example title="Non-example"}
@@ -69,6 +77,7 @@ For counterexamples, note that this fails to be a triangulation of $T$:
 ![Not a Torus](../../../../assets/assets/40_Topology/figures/1513062599096.png)
 
 This fails - for example, the specification of a simplex $[1,2,1]$ does not uniquely determine a triangle in the this picture.
+
 :::
 
 

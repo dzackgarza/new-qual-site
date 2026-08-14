@@ -26,6 +26,7 @@ The first 4 can be obtained from the following pasting diagrams:
 
 :::{.remark}
 Examples, general procedure?
+
 :::
 
 :::{.fact table="Table of surfaces possible for a given Euler characteristic"}
@@ -38,27 +39,35 @@ Examples, general procedure?
 :::
 
 [[PR-QV4U5]]
+
 :::{.proof}
 Todo
+
 :::
 
 
 [[C-CT2NX]]
+
 :::{.proof}
 Set $U= A, B=V$, then by definition of the connect sum, $A\cap B = \SS^2$ where $\chi(\SS^2) = 2$
+
 :::
 
 [[PR-GKRFP]]
 
 [[PR-LIXWH]]
+
 :::{.proof}
 Todo
+
 :::
 
 
 [[PR-BDH3V]]
+
 :::{.proof}
 Todo
+
 :::
 
 
@@ -67,6 +76,7 @@ Todo
 :::{.remark}
 To show something is not a manifold, try looking at local homology. 
 Can use point-set style techniques like removing points, i.e. $H_1(X, X-\pt)$; this should essentially always yield $\ZZ$ by excision arguments.
+
 :::
 
 [[PR-ZCPDD]]
@@ -82,6 +92,7 @@ Can use point-set style techniques like removing points, i.e. $H_1(X, X-\pt)$; t
 :::{.proof title="?"}
 Todo.
 Uses Poincaré duality?
+
 :::
 
 
@@ -96,6 +107,7 @@ Uses Poincaré duality?
 
 :::{.fact}
 Every $\CC\dash$manifold is canonically orientable.
+
 :::
 
 [[PR-UL3KL]]
@@ -104,6 +116,7 @@ Every $\CC\dash$manifold is canonically orientable.
 
 :::{.proof title="?"}
 Todo
+
 :::
 
 
@@ -112,4 +125,5 @@ Todo
 :::{.proof}
 Apply Mayer-Vietoris, taking $S^3 = n(K) \cup (S^3-K)$, where $n(K) \homotopic S^1$ and $S^3-K \cap n(K) \homotopic T^2$. 
 Use the fact that $S^3-K$ is a connected, open 3-manifold, so $H^3(S^3-K) =0$.
+
 :::

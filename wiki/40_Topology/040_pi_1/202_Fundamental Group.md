@@ -6,10 +6,12 @@
 \[
 X\cross \RR^n \homotopic X \cross \pt \cong X
 .\]
+
 :::
 
 :::{.fact title="$\pi_0, H_0$ detect path components"}
 The ranks of $\pi_{0}$ and $H_{0}$ are the number of path components.
+
 :::
 
 [[T-2YTCZ]]
@@ -17,6 +19,7 @@ The ranks of $\pi_{0}$ and $H_{0}$ are the number of path components.
 :::{.proof title="?"}
 The linear homotopy. Supposing $X$ is convex, for any two points $x,y\in X$, the line $tx + (1-t)y$ is contained in $X$ for every $t\in[0,1]$.
 So let $f, g: Z \into X$ be any continuous functions into $X$. Then define $H: Z \cross I \into X$ by $H(z,t) = tf(z) + (1-t)g(z)$, the linear homotopy between $f,g$. By convexity, the image is contained in $X$ for every $t,z$, so this is a homotopy between $f,g$.
+
 :::
 
 
@@ -28,6 +31,7 @@ So let $f, g: Z \into X$ be any continuous functions into $X$. Then define $H: Z
 
 :::{.remark title="a summary"}
 Elements of the fundamental group are *homotopy classes of loops*, and every continuous map between spaces induces a homomorphism on fundamental groups.
+
 :::
 
 
@@ -57,6 +61,7 @@ Elements of the fundamental group are *homotopy classes of loops*, and every con
   - "There and back" paths
 - Show it is injective
   - Divide $I\times I$ into a grid
+
 :::
 
 :::{.example title="Pushing out with van Kampen"}
@@ -70,12 +75,14 @@ So $$A\ast_{Z} B = \gens{x, y \suchthat x^4, y^6, x^2y^{-3}}$$.
 
 :::{.proof title="?"}
 By van Kampen, this is equivalent to the amalgamated product over $\pi_1(x_0) = 1$, which is just a free product.
+
 :::
 
 ### Facts
 
 :::{.fact}
 $H_{1}$ is the abelianization of $\pi_{1}$.
+
 :::
 
 [[PR-OO3DH]]
@@ -87,6 +94,7 @@ $H_{1}$ is the abelianization of $\pi_{1}$.
 - $\gamma$ being continuous in the product topology is equivalent to $f, g$ being continuous maps to $X, Y$ respectively.
 - Similarly a homotopy $F: I^2 \to X \cross Y$ is equivalent to a pair of homotopies $f_t, g_t$ of the corresponding loops.
 - So the map $[ \gamma ] \mapsto ([f], [g])$ is the desired bijection.
+
 :::
 
 [[PR-EWJMJ]]
@@ -95,11 +103,13 @@ $H_{1}$ is the abelianization of $\pi_{1}$.
 $\Rightarrow$: Suppose $X$ is simply connected. Then every loop in $X$ contracts to a point, so if $\alpha$ is a loop in $X$, $[\alpha] = [\id_{x_{0}}]$, the identity element of $\pi_{1}(X)$. But then there is only one element in in this group.
 
 $\Leftarrow$: Suppose $\pi_{1}(X) = 0$. Then there is just one element in the fundamental group, the identity element, so if $\alpha$ is a loop in $X$ then $[\alpha] = [\id_{x_{0}}]$. So there is a homotopy taking $\alpha$ to the constant map, which is a contraction of $\alpha$ to a point.
+
 :::
 
 
 :::{.fact}
 For a graph $G$, we always have $\pi_{1}(G) \cong \ZZ^n$ where $n = |E(G - T)|$, the complement of the set of edges in any maximal tree. Equivalently, $n = 1-\chi(G)$. Moreover, $X \homotopic \bigvee^n S^1$ in this case.
+
 :::
 
 
@@ -110,6 +120,7 @@ For a graph $G$, we always have $\pi_{1}(G) \cong \ZZ^n$ where $n = |E(G - T)|$,
 
 :::{.warnings}
 Individual maps may not work: take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ which have isomorphic homotopy but not homology.
+
 :::
 
 [[T-GL7E6]]
@@ -121,6 +132,7 @@ Individual maps may not work: take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ whi
 
 - $\pi_{k\leq n}S^n = 0$
 - $\pi_{n}(X) \cong \pi_{n}(X^{(n)})$
+
 :::
 
 [[T-HZUM7]]

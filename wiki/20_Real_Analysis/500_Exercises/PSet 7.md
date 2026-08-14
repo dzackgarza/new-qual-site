@@ -224,6 +224,7 @@ We can also compute
 \implies \norm{f-g}_2 &= \frac 1 {\sqrt{180}}
 .\end{align*}
 \]
+
 # Problem 4
 
 ## Part a

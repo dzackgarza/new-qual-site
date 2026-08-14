@@ -2,6 +2,7 @@
 
 :::{.slogan}
 If $\Omega \subseteq \CC$ with $\pi_1 \Omega = 1$ then $\Omega$ is biholomorphic to $\DD$.
+
 :::
 
 [[T-4MDS6]]
@@ -76,5 +77,6 @@ h'_w(w) &= {1\over 1 - \abs{w}^2}
 {1\over f'(z_0) } =
 {1\over f'(g(w_0))}
 .\]
+
 :::
 

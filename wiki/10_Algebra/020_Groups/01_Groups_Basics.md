@@ -55,6 +55,7 @@ Summary of useful qual tips:
 
 :::{.remark}
 For any $p$ dividing the order of $G$, $\mathrm{Syl}_p(G)$ denotes the *set* of Sylow$\dash p$ subgroups of $G$.
+
 :::
 
 
@@ -82,6 +83,7 @@ This $d$ can be computed using the extended Euclidean algorithm.
 Useful context clue!
 In particular, this works when $a, b$ are coprime and $d=1$, since you can write $x^1 = x^{as + bt} = x^{as}x^{bt}$ to get interesting information about orders of elements.
 If you see "coprime" in a finite group question, try the division algorithm.
+
 :::
 
 [[D-ZTPHF]]
@@ -99,6 +101,7 @@ g_i &\mapsto h_i \quad \forall i
 Why this exists: the presentation yields a surjective morphism $\pi: F(g_i) \to G$ with $G\cong F(g_i) / \ker \pi$.
 Define a map $\psi: F(g_i) \to H$ where $g_i\mapsto h_i$, then since the $h_i$ satisfy the relations $r_i$, $\ker \pi \subseteq \ker \psi$.
 So $\psi$ factors through $\ker \pi$ yielding a morphism $F/\ker \pi \to H$.
+
 :::
 
 ## Subgroups
@@ -117,6 +120,7 @@ So $\psi$ factors through $\ker \pi$ yielding a morphism $F/\ker \pi \to H$.
 - Identity: $a=b=x\implies xx\inv=e\in H$
 - Inverses: $a=e, b=x \implies x\inv \in H$.
 - Closure: let $x, y\in H$, then $y\inv \in H$ by above, so $xy = x(y\inv )\inv \in H$.
+
 :::
 
 [[E-MSDCC]]
@@ -131,6 +135,7 @@ Conjugacy classes are **not** subgroups in general, since they don't generally c
 However, by orbit-stabilizer and the conjugation action, their sizes always divide the order of $G$.
 
 **Useful qual fact**: $[x] = \ts{ x } \iff x\in Z(G)$, i.e. having a trivial conjugacy class is the same as being central.
+
 :::
 
 [[D-ES7MP]]
@@ -142,6 +147,7 @@ However, by orbit-stabilizer and the conjugation action, their sizes always divi
 [[E-ZCJZC]]
 [[E-BSGSM]]
 [[E-47X7Y]]
+
 ### Normal Subgroups
 
 [[D-EKE4Q]]
@@ -151,6 +157,7 @@ However, by orbit-stabilizer and the conjugation action, their sizes always divi
 :::{.proof title="?"}
 Note that $C(h_i) = \ts{ gh_i g\inv \st g\in G }$, and $gh_i g\inv \in H$ since $H$ is normal, so $C(h_i) \subseteq G$ for all $i$.
 Conversely, if $C(h_i) \subseteq H$ for all $h_i \in H$, then $gh_ig\inv \in H$ for all $i$ and $H$ is normal.
+
 :::
 
 [[E-EMESP]]
@@ -176,6 +183,7 @@ C_{\lieg}(\lieh) = \ts{x\in \lieg \st [xh] = 0 \,\forall h\in \lieh }
 N_{\lieg}(\lieh) = \ts{x\in \lieg \st [xh] \in \lieh \,\forall h\in \lieh }
 .\]
 So $[x, \wait]_{\lieh} = 0$ for central $x$ and $\im [x, \wait]_{\lieh} \subseteq \lieh$ for normal elements.
+
 :::
 
 [[D-NK7G7]]
@@ -193,6 +201,7 @@ So $[x, \wait]_{\lieh} = 0$ for central $x$ and $\im [x, \wait]_{\lieh} \subsete
 Write $G/H \intersect K \da G/J = \ts{ h_1J, \cdots, h_m J  }$ as distinct cosets where $m\da [G:H]$ and the $h_i$ are all in $H$.
 Then $i\neq j\implies h_i h_j\inv \not \in H \intersect K$, but $h_i h_j\inv \in H$ since subgroups are closed under products and inverses, which forces $h_i h_j\inv \not\in K$.
 So $h_i K \neq h_j K$, meaning there are at least $m$ cosets in $G/K$, so $[G:K] \geq m$.
+
 :::
 
 [[PR-VUKHO]]
@@ -239,17 +248,20 @@ See full argument: D&F p.80.
 \[
 aH = bH \iff a\in bH \iff a=bh \text{ for some } h \iff b\inv a = h \iff ba\inv \in H
 .\]
+
 :::
 
 [[D-VJGH5]]
 
 :::{.remark title="Common coset trick"}
 If you can reduce a problem to showing $X \subseteq H$, it suffices to show $xH = H$ for all $x\in X$.
+
 :::
 
 :::{.remark}
 Cosets form an equivalence relation and thus partition a group.
 Nice trick: write $G/H = \ts{ g_1 H, g_2 H,\cdots, g_n H }$, then $G = \disjoint_{i\leq n} g_i H$.
+
 :::
 
 [[T-WR7CD]]
@@ -276,6 +288,7 @@ Use that $\sum_{d\divides n} \phi(d) = n$, and that there are at most $\phi(d)$ 
 
 $\implies$:
 If $G = \gens{ a }$ with $a^n=e$, then for each $d\divides n$ take $H_d \da \gens{ a^{n\over d} }$ for existence.
+
 :::
 
 [[E-DAS3L]]
@@ -352,6 +365,7 @@ $A_5$ is too big to write down, but has cycle types
 - $(2,2,1)$
 - $(3,1,1)$
 - $(5)$
+
 :::
 
 :::{.fact title="Some useful facts"}
@@ -374,6 +388,7 @@ $A_5$ is too big to write down, but has cycle types
 [[E-BH6Q6]]
 
 # Group Theory
+
 :::{.remark}
 Summary of useful qual tips:
 
@@ -410,6 +425,7 @@ Summary of useful qual tips:
 
 :::
 ## Big List of Notation
+
 :::{.remark title="Notation"}
 I use the following notation throughout:
 

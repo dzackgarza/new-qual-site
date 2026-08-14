@@ -17,12 +17,14 @@ g(x) \da \sum {1 \over 1 + n^2 x}
 .\]
 
 Take $x = 1/n^2$.
+
 :::
 
 ## Sequences of number
 
 :::{.slogan}
 $\limsup$ is largest limit of a convergent subsequence, $\liminf$ is the smallest.
+
 :::
 
 [[PR-4EVYE]]
@@ -67,6 +69,7 @@ where each group with $a_k$ has $2^k$ terms.
 
 :::{.remark title="Negating the Sup Norm test"}
 **Negating**: find an $x$ which depends on $n$ for which $\norm{f_n}_\infty > \eps$ (negating small tails) or $\norm{f_n - f_m} > \eps$ (negating the Cauchy criterion).
+
 :::
 
 [[PR-RWROV]]
@@ -100,6 +103,7 @@ where each group with $a_k$ has $2^k$ terms.
 
 :::{.remark}
 In other cases, you may need to show the limit is bounded, or has bounded derivative, or whatever other conditions define $X$.
+
 :::
 
 [[T-3QNBQ]]

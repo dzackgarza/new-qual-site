@@ -3,6 +3,7 @@
 
 :::{.remark}
 Algorithm for SNF: D&F page 479.
+
 :::
 
 :::{.remark}
@@ -17,6 +18,7 @@ Some definitions:
 - $A$ is **Hermitian** iff $A^{\dagger} = A$.
   - $A$ is **normal** iff $AA^{\dagger} = A^{\dagger} A$.
   - $A$ is **unitary** iff $A^{\dagger}A = AA^{\dagger} = I$.
+
 :::
 
 :::{.fact title="Undergrad reminders"}
@@ -91,6 +93,7 @@ The coefficients of the characteristic polynomial are elementary symmetric funct
 \[
 \chi_A(t) = t^n - \qty{\sum_i \lambda_i }t^{n-1} + \qty{\sum_{i < j} \lambda_i \lambda_j }t^{n-2} + \cdots \pm \qty{\prod_i \lambda_i}
 .\]
+
 :::
 
 :::{.example title="of polynomial long division"}
@@ -103,6 +106,7 @@ The rest can be factored by inspection:
 \[
 f(x) = (x-2)(x^2-4x+4) = (x-2)^3
 .\]
+
 :::
 
 ## Definitions
@@ -183,6 +187,7 @@ Fix some notation:
 
 :::{.fact}
 If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
+
 :::
 
 [[T-SJCF7]]
@@ -196,6 +201,7 @@ $$
 \min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0
 ,$$
 which forces $\min_A(\lambda_i) = 0$.
+
 :::
 
 ## Finding Minimal Polynomials
@@ -232,6 +238,7 @@ So $V = k[x]\actson \vector v$ for some $\vector v\in V$, which is the desired c
 V = \ts{f(x).v \st f\in k[x]} = \spanof_k\ts{A^k v \st k\geq 0}
 .\]
 By Cayley-Hamilton, $\chi_A(A) = 0$ and so $A^n$ is a linear combinations of $A^k$ for $0\leq k \leq n-1$, so $V= \spanof_k \ts{A^k v \st 0\leq k \leq n-1}$.
+
 :::
 
 [[PR-TI6YA]]
@@ -239,6 +246,7 @@ By Cayley-Hamilton, $\chi_A(A) = 0$ and so $A^n$ is a linear combinations of $A^
 :::{.remark}
 Thus the blocks of $\RCF(A)$ biject with invariant factors of $A$.
 Note that any companion matrix is already in $\RCF$.
+
 :::
 
 :::{.proof title="Derivation of RCF"}
@@ -308,6 +316,7 @@ M_1 =
 For $A\in \Mat(m\times n; R)$ over $R$ any PID, $\SNF(A)$ is a matrix whose diagonal entries are the invariant factors.
 How to compute $\SNF(A)$: take $A = \diag(a_i)$ where $a_i = d_i/d_{i-1}$ and $d_i$ is the $\gcd$ of the determinants of all $i\times i$ minors of $A$.
 $A\sim B$ are similar $\iff \SNF(A) = \SNF(B)$.
+
 :::
 
 ### Using Canonical Forms
@@ -332,6 +341,7 @@ $A^{\dagger}$ denotes the conjugate transpose of $A$.
 
 :::{.remark}
 In fact, $A$ is symmetric $\iff \spec A$ forms an orthonormal basis.
+
 :::
 
 :::{.proof title="of spectral theorem"}
@@ -382,6 +392,7 @@ If $\min_A$ factors into linear factors, so does each invariant factor, so every
 $\impliedby$:
 If $A$ is diagonalizable, every elementary divisor is linear, so every invariant factor factors into linear pieces.
 But the minimal polynomial is just the largest invariant factor.
+
 :::
 
 ## Matrix Counterexamples
@@ -449,6 +460,7 @@ Non-similar matrices with the same characteristic polynomial
 \end{array}\right)
 \]
 Here $\chi_A(x) = \chi_B(x) = x^2$, but they are not conjugate since their JCFs differ (note that they're already in JCF!)
+
 :::
 
 :::{.example title="?"}
@@ -475,6 +487,7 @@ M_2
 \da
 \matt 0 1 {-1} 0
 .\]
+
 :::
 
 ### Counting

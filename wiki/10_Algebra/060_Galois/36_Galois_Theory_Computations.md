@@ -37,6 +37,7 @@
 :::{.remark}
 Assume all extensions here are algebraic and finite.
 Let $f\in \QQ[x]$ with $n \da \deg f$.
+
 :::
 
 [[T-AILFB]]
@@ -65,6 +66,7 @@ Consider $f(x) \da x^5-9x+3$, let $L\da \SF(f)/\QQ$.
     - $A_5$, since this is an odd number of even length cycles.
     - $F_5$ since $3\notdivides 20$.
   - So this only leaves $S_5$.
+
 :::
 
 ## Showing Extensions are Galois
@@ -108,11 +110,13 @@ Showing your extension $K/k$ is Galois:
 
 :::{.remark}
 Finding a good prime for this is hard, but irreducibility can be checked exhaustively in small fields: just enumerate all polynomials and try polynomial long division.
+
 :::
 
 :::{.example title="using irreducibility mod $p$"}
 $f(x) \da x^4 + x + 1$ is irreducible in $\ZZ[x]$, since checking manually in $\FF_2[x]$ shows that $0, 1$ are not roots $\mod 2$ so there is not linear factor.
 Manually dividing $a_1 x^2 + a_2 x + a_3$ for $a_i\in 0, 1$ leaves remainders, so there are no quadratic factors.
+
 :::
 
 [[T-CF6S3]]
@@ -120,6 +124,7 @@ Manually dividing $a_1 x^2 + a_2 x + a_3$ for $a_i\in 0, 1$ leaves remainders, s
 :::{.remark title="Shifting"}
 If $f(x+a)$ satisfies Eisenstein for any $p$, then $f$ is irreducible.
 This is generally because $\Delta_{f(x)} = \Delta_{f(x + a)}$, and if $p$ works for Eisenstein on any $f$ then $p\divides \Delta_f$.
+
 :::
 
 :::{.example title="of shifting"}
@@ -130,10 +135,12 @@ Set $f(x) \da x^2+x+2$, then $f(x+3) = x^2 + 7x + 14$ and Eisenstein applies at 
 :::{.remark title="Inverting"}
 If $n \da \deg(f)$ and $x^n f(1/x)$ is irreducible, then $f$ is irreducible.
 Note that this is just reversing the coefficients.
+
 :::
 
 :::{.example title="Of inverting"}
 Take $f(x) \da 2x^5 -4x^2-3$, then for $g(x) \da 3x^5 +4x^2 - 2$ Eisenstein applies with $p=2$.
+
 :::
 
 
@@ -142,6 +149,7 @@ If $f(x) \equiv b(x+a)^n\mod p$ for some $p$ where $n\da \deg f$, then Eisenstei
 Note the change in signs/reverse translation.
 
 In other words, reduce mod $p$ for various $p$, and if any $p$ collapses $f$ to a power of a linear factor, use that $p$ for Eisenstein.
+
 :::
 
 :::{.example title="of mod $p$ reduction checks"}
@@ -150,6 +158,7 @@ Check
 f(x) \da x^3 + x^2 -48 x + 128 \leadsto f(x)\equiv (x-3)^3 \mod 5
 ,\]
 and Eisenstein on $f(x+3)$ with $p=5$ works.
+
 :::
 
 
@@ -186,6 +195,7 @@ d\divides [\SF(f): \QQ]
 - If all exponents are even, $f(r) = 0 \iff f(-r) = 0$, so roots occur in pairs $(r, -r)$.
   - Pairs are preserved by $G$ in the sense that every $\sigma\in G$ satisfies either $\ts{r, -r}\mapsto \ts{r, -r}$ or $\ts{r, -r} \mapsto \ts{s, -s}$ for another pair.
   - Example: $x^4-5x^2+5$ has two pairs.
+
 :::
 
 
@@ -205,6 +215,7 @@ By orbit stabilizer, $\OO_r \cong G/\Stab_G(r)$ and thus
 \size G = \size \OO_r \cdot \size \Stab_G(r)
 ,\]
 so both terms on the right-hand side patently divide $\size G$
+
 :::
 
 :::{.fact title="Table of transitive subgroups of $S_n$ for qual-sized $n$"}
@@ -283,6 +294,7 @@ The following are the cycle types that can occur:
 - Alternating groups have even numbers of cycles of even length.
 - Elements in $A_n$ either have cycle type with an even number of even lengths (including 0).
 - $A_4$ does not contain a subgroup isomorphic to $C_2^2$.
+
 :::
 
 :::{.fact}
@@ -298,6 +310,7 @@ Some useful generating sets: see <https://kconrad.math.uconn.edu/blurbs/groupthe
 
 :::{.warnings}
 Warning: this only works if the $f_i$ are distinct, i.e. there are no repeated factors in the factorization $\mod p$.
+
 :::
 
 :::{.example title="Ruling out choices by existence of cycle types"}
@@ -305,6 +318,7 @@ You can use this to rule out types of groups using Lagrange's theorem: if you fi
 Example: $\deg f=5$ with exactly one conjugate pair of roots, then there is a 5-cycle $\sigma \da (1,2,3,4,5)$ because $5\divides \size G$ and a 2-cycle $\tau \da (1,2)$ coming from complex conjugation.
 There check that $a_1 \da \sigma \tau \sigma\inv = (1, 5)$ and $a_1 \tau = (1, 5, 2)$ is a 3-cycle, so $3\divides \size G$.
 This rules out $F_5$ which is of order 20, since $3\not\divides 20$.
+
 :::
 
 :::{.example title="Finding cycle types by reducing mod $p$"}
@@ -321,6 +335,7 @@ Take $f(x) \da x^6 + x^4 + x + 3$, then
 f(x) &\equiv (x+1)(x^2 + \cdots)(x^3 + \cdots) \mod 2 &\implies \text{type } (1,2,3) \in G \\
 f(x) &\equiv x(x+2)(x^4 + \cdots) \mod 3 &\implies \text{type } (1,1,4) \in G \\
 .\]
+
 :::
 
 :::{.example title="of using density"}
@@ -341,11 +356,13 @@ Let $f(x) = x^6 + x^4 + x + 3$, reduce $\mod 11$ to get a cycle type $(1, 5)$.
 So $G\leq S_6$ contains a 5-cycle, where $5>n/2 \da 6/2=3$, meaning $G = A_n, S_n$.
 Now reduce $\mod p$ for various $p$ to look for a cycle type of the form $(2,1,1,\cdots)$ or $(3,1,1,\cdots)$.
 This is hard, but $f\mod 2$ has type $(1,2,3)$ and $\qty{ (a,b)(c,d,e) }^3 = (a, b)$, so $G$ contains a transposition and thus $G = S_n = S_6$.
+
 :::
 
 :::{.example title="?"}
 Let $f(x) = x^7-x-1$, reduce $\mod 2$ to get a 7-cycle, and $\mod 3$ to get $(2, 5)$.
 Then use $(2, 5)^5 = (2,1,1,\cdots)$ to get a transposition, So $G = S_7$.
+
 :::
 
 :::{.example title="?"}
@@ -376,6 +393,7 @@ For $f$ a quartic:
 .\]
 
 In general, for a degree $n$ polynomial this will have $n(n-1)/2$ terms.
+
 :::
 
 :::{.remark}
@@ -433,6 +451,7 @@ This follows because
 - By Sylow, there is an element of order 5.
 
 So $G = S_5$.
+
 :::
 
 ### Quadratics
@@ -446,6 +465,7 @@ Every degree 2 extension $L/k$ is Galois, except possibly in characteristic 2:
 \[
 \min_{ \alpha}(x)' = 2x + \cdots \not\equiv 0
 ,\] 
+
 :::
 
 :::{.remark}
@@ -455,6 +475,7 @@ f(x)=x^{2}+\alpha x+\beta=\left(x-\frac{\alpha}{2}\right)^{2}+\beta-\frac{\alpha
 .\]
 
 Thus it suffices to consider quadratics of the form $x^2+a$.
+
 :::
 
 :::{.example title="Quadratics"}
@@ -472,6 +493,7 @@ G \subseteq \gens{(1, 2), (3, 4)} = \ts{\id, (1,2), (3,4), (1,2)(3,4)} \cong C_2
   .\]
   - $\size G = 4$, taking the tower $\QQ(\sqrt 2, \sqrt 3) / \QQ(\sqrt 2)/ \QQ$ and noting $\sqrt 3 \not\in \QQ(\sqrt 2)$ which makes each step degree 2.
   So this forces $G \cong C_2\cross C_2$.
+
 :::
 
 ### Cubics
@@ -486,12 +508,14 @@ Tricks/reminders:
   This immediately yields $S_3$.
 - Otherwise, 3 real roots (or no easy way to check root types).
   Try discriminant classification: put in the form $t^3+pt+q$, potentially using $t=x-b/3a$, then $\Delta = -4p^3-27q^2$.
+
 :::
 
 :::{.remark title="Easy cycles in odd/prime degrees with basic Calculus"}
 If $n \da \deg f$ is odd, then $f$ has at least one real root.
 If $f$ has two non-real roots, then $G$ contains a transposition.
 If $n$ is prime, then $G$ contains an $n\dash$cycle (by transitivity and Cauchy), forcing $G = S_n$.
+
 :::
 
 :::{.example title="Of using easy cycles to get $S_3$"}
@@ -504,6 +528,7 @@ The other two must be a complex conjugate pair.
 Alternatively, just factor the darn thing: $f(x) = (x-\omega)(x-\zeta_3\omega)(x-\zeta_3^2\omega)$ where $\omega \da 2^{1\over 3}$ and $\zeta_3^3=1$.
 
 So $G(f)$ contains a transposition, and since $\deg f = 3$ is prime, $G$ contains a 3-cycle and $G(f) = S_3$.
+
 :::
 
 :::{.example title="Of using easy cycles to get $S_3$"}
@@ -517,6 +542,7 @@ f(4/3) = (4/3)^3-4(4/3)+5 = (64/27)-(16/3)+5 = 55/27 > 0
 ,\]
 so knowing the general shape of a cubic, there is exactly one real root, somewhere in $(-\infty ,-\sqrt{4/3})$.
 So $G(f) = S_3$.
+
 :::
 
 [[PR-XPDHE]]
@@ -550,6 +576,7 @@ So $G(f) = S_3$.
 - $G(x^3-3x+1) = A_3$:
   - This is already a depressed cubic, so $\Delta = -4(-3)^3 + 27(1) = -3(27) = 81$.
   - $\Delta = 81 \in \QQ^2$, so $G\leq A_3$.
+
 :::
 
 
@@ -594,6 +621,7 @@ I.e., the following map is an isomorphism:
 (\ZZ/n)\units &\to \Gal(\QQ(\zeta_n), \QQ) \\
 [r] &\mapsto (\phi_r: \zeta_n \mapsto \zeta_n^r )
 \]
+
 :::
 
 :::{.fact}
@@ -607,6 +635,7 @@ The splitting field of $x^p-1$ is $\QQ(\zeta_p)$, and the splitting field of $x^
 - $x^p+a$ factors as $\prod_{k=0}^{p-1}(x - \zeta_p^k \omega )$ for $\omega \da (-a)^{1\over p}$.
 
 Also use that splitting fields over $\QQ$ are always normal, so it suffices to check that $f$ is separable and irreducible to show extensions are Galois.
+
 :::
 
 :::{.example title="$x^n-a$"}

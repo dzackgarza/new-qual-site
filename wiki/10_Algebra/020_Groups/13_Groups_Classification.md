@@ -32,6 +32,7 @@ which has size $\phi(n)$ but is not generally isomorphic to $C_{\phi(n)}$
 Warning: $C_n\units$ is not always cyclic!!
 For example, $C_8\units \cong C_2^2 \neq C_{4}$.
 In fact, $C_n\units$ cyclic iff $n=2,4,p^k, 2p^k$ for $p$ an odd prime.
+
 :::
 
 
@@ -152,6 +153,7 @@ Some concrete examples of $\Aut(C_m) \cong C_m\units$ for various $m$:
 
 :::{.corollary}
 If $\phi: G\to H$ is surjective then $H\cong G/\ker \phi$.
+
 :::
 
 [[T-NFQBO]]
@@ -163,6 +165,7 @@ For this to make sense, we also have
 - $S\intersect N \normal S$,
 
 If we relax the conditions to $S, N \leq G$ with $S \in N_G(N)$, then $S\intersect N \normal S$ (but is not normal in $G$) and the 2nd Isomorphism Theorem still holds.
+
 :::
 
 [[T-6CQEB]]
@@ -171,6 +174,7 @@ If we relax the conditions to $S, N \leq G$ with $S \in N_G(N)$, then $S\interse
 
 :::{.fact}
 $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
+
 :::
 
 ## Products
@@ -182,10 +186,12 @@ $N \normal G$ and $N \subseteq H < G \implies N \normal H$.
 [[T-SVJUN]]
 
 [[E-DFUYC]]
+
 :::{.remark}
 Things are particularly nice when the orders of $H$ and $k$ are coprime.
 For 3, $x\in H \intersect K$ implies that the order of $x$ divides $\gcd(\# H, \# K) = 1$, so $H \intersect K = \ts{e}$.
 Thus for 2, one only needs that $\#(HK) = \# G$.
+
 :::
 :::{.proof title="?"}
 With these conditions, the following map is an isomorphism:
@@ -288,6 +294,7 @@ and thus the invariant factor form is
 \[
 G\cong \ZZ_2 \times \ZZ_{3\cdot 2} \times \ZZ_{5^2 \cdot 3 \cdot 2}
 \]
+
 :::
 
 :::{.example}
@@ -336,6 +343,7 @@ One can compute $P(6) = 11$, where all of the partitions are given by
 
 :::{.remark}
 In practice, it is easy to list all of the partitions out for a given $n$, but it's also useful to have a systematic way to generate them and actually check that you have them all.
+
 :::
 
 [[PR-434DX]]
@@ -353,6 +361,7 @@ P(5)
 &= 7
 .\]
 Note that you could just stop at the third line, since $P(3) = 3$ is easy to enumerate: $[1,1,1], [1,2], [3]$.
+
 :::
 
 :::{.example title="Applying this to classifying groups"}
@@ -383,6 +392,7 @@ Crossing $[1, 2]$ with everything:
 - $\qty{ \ZZ_p \cross \ZZ_{p^2} }  \cross \ZZ_{q^4} \mapsfrom [1, 2]\cross [4]$
 
 And so on!
+
 :::
 
 ## Classification: Groups of Special Orders
@@ -398,6 +408,7 @@ General strategy: find a normal subgroup (usually a Sylow) and use recognition o
 :::{.proof title="?"}
 Supposing that $g\neq e$, it generates a cyclic subgroup $H \da \gens{g} \leq G$ of order dividing $p$ by Lagrange.
 Since $g\neq e$, $\size H = p = \size G$.
+
 :::
 
 [[PR-IGLFV]]
@@ -437,6 +448,7 @@ By cases:
   \size S_pS_q = {\size S_p \size S_q \over \size \qty{S_p \intersect S_q}} = {pq \over 1} = \size G
   .\]
   If $G$ is finite, then $AB\leq G$ with $\size AB = \size G$ implies $AB = G$.
+
 :::
 
 :::{.proof title="of $pq$ theorem, case 2"}
@@ -472,6 +484,7 @@ G&\cong \ZZ/q \semidirect_{\psi} \ZZ/p
 
 :::{.claim}
 All choices yield isomorphic semidirect products.
+
 :::
 
 - Use that $G\da A\semidirect_{\psi} N$ with $\psi:A\to \Aut(N)$ is an $\Aut(N)$ and $\Aut(A)$ module, where $f \in \Aut(N)$ and $\pi\in \Aut(A)$ act in the following ways:
@@ -488,6 +501,7 @@ where
 
 - However, since $C_q \leq \ZZ/(p-1)$ and $\Aut(C_q) \cong \ZZ/(q-1)$, there are exactly $q-1$ automorphisms of the image $C_q$, say $\ts{\pi_k}_{k=1}^{q-1}$.
 - So $\psi \circ \pi_k: \ZZ/q \to \ZZ/(p-1)$ for $1\leq k \leq q-1$ yields $q-1$ distinct actions, and we're done.
+
 :::
 
 [[L-6QBOJ]]
@@ -564,4 +578,5 @@ Proof of first claim: let $m\da \size G = pqr$, then $G$ has a normal subgroup o
   - Then by the subgroup correspondence theorem, $R$ corresponds to a normal subgroup $R'\normal G$ of size $r\ell$ with $r<\ell$.
   - Applying the same lemma to $R'$ immediately yields a normal subgroup $R''$ of order $r$ in $R'$
   - Now use that $R'' \operatorname{char} R'$ since Sylows are characteristic, and $R'\normal G$, so $R''\normal G$ too.
+
 :::

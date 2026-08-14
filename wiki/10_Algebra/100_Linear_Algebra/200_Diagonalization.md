@@ -12,6 +12,7 @@ $A^{\dagger}$ denotes the conjugate transpose of $A$.
 
 :::{.remark}
 In fact, $A$ is symmetric $\iff \spec A$ forms an orthonormal basis.
+
 :::
 
 :::{.proof title="of spectral theorem"}
@@ -62,6 +63,7 @@ If $\min_A$ factors into linear factors, so does each invariant factor, so every
 $\impliedby$:
 If $A$ is diagonalizable, every elementary divisor is linear, so every invariant factor factors into linear pieces. 
 But the minimal polynomial is just the largest invariant factor.
+
 :::
 
 

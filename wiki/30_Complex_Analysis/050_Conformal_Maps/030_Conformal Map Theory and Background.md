@@ -21,22 +21,26 @@ Write $f(z+\eps) = f(z) + \eps f'(z) + \bigo(\eps^2)$, then
 \Arg(f(z+\eps) - f(z)) \approx \Arg(\eps f'(z)) = \Arg(\eps) + \Arg(f'(z))\to \Arg(f'(z))
 ,\]
 so all tangent vectors near $z_0$ are rotated by approximately the same angle $f'(z_0)$, preserving their relative angles.
+
 :::
 
 [[D-TM4TE]]
 
 :::{.fact title="Checking if a map is conformal"}
 To check if a map is conformal at $p$, it *suffices* to check that $f'(p)\neq 0$.
+
 :::
 
 :::{.remark}
 Conformal implies holomorphic, and a bijective conformal map has conformal inverse automatically.
 Importantly, bijective holomorphic maps always have holomorphic inverses.
 Self-biholomorphisms of a domain $\Omega$ form a group $\Aut_\CC(\Omega)$.
+
 :::
 
 :::{.remark}
 The bijectivity condition can be weakened: an *injective* holomorphic map satisfies $f'(z) \neq 0$ and $f ^{-1}$ is well-defined on its range and holomorphic.
+
 :::
 
 ## The Cross-Ratio Construction

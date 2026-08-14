@@ -4,6 +4,7 @@
 
 :::{.slogan}
 The image of a punctured disc at an essential singularity is dense in $\CC$.
+
 :::
 
 :::{.proof title="of Casorati-Weierstrass"}
@@ -23,6 +24,7 @@ Otherwise, if $g(z_0) = w_0\neq 0$, then
 \abs{ f(z_0)} = \abs{ {1\over w_0} + z_0} \leq \eps + \abs{z_0} < \infty
 ,\]
 making $z_0$ removable and again yielding a contradiction.
+
 :::
 
 :::{.proof title="of Casorati-Weierstrass, Gamelin"}

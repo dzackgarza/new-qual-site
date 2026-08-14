@@ -4,12 +4,9 @@
 
 [[P-6VF7J]]
 
-
 [[P-VQUPX]]
 
-
 [[P-NL22Q]]
-
 
 [[P-GRNXH]]
 
@@ -17,36 +14,32 @@
 
 [[P-ZZO3P]]
 
-
-
 ## 6
-[[P-YGU32]]
 
+[[P-YGU32]]
 
 [[P-A46P2]]
 
-
 [[P-JICG7]]
-
 
 [[P-A7H63]]
 
-
 [[P-HZ3G4]]
-
 
 # Extra
 
-
 ## Tie's Questions
-[[P-CWG5L]]
 
+[[P-CWG5L]]
 
 ## Tie's Questions
 
 [[P-RPR4M]]
+
 ### Tie's Extra Questions: Fall 2009
+
 [[P-36DLV]]
+
 ### Tie's Extra Questions: Fall 2009
 
 [[P-YV65T]]
@@ -54,7 +47,9 @@
 ### Tie's Extra Questions: Fall 2009
 
 [[P-ACDEH]]
+
 ### Spring 20202 HW 2 #  4
+
 [[P-DKYVD]]
 
 ### Spring 20202 HW 3 #  1

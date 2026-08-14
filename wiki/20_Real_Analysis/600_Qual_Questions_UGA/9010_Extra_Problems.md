@@ -8,15 +8,19 @@ title: Problem Sets
 ## Continuous on compact implies uniformly continuous
 
 [[P-DS4D6]]
+
 ## 2010 6.1
 
 [[P-56AFO]]
+
 ## 2010 6.2
 
 [[P-V33ML]]
+
 ## 2010 6.5
 
 [[P-7GKWO]]
+
 ## 2010 7.1
 
 [[P-5EVB3]]
@@ -45,29 +49,21 @@ title: Problem Sets
 
 [[P-W7RQ2]]
 
-
 ## 2010 7 Challenge 1: Generalized Holder
 
 [[P-YTOGK]]
-
 
 ## 2010 7 Challenge 2: Young's Inequality
 
 [[P-LUYHY]]
 
-
-
-
-
 ## 2010 9.1
 
 [[P-H2AG2]]
 
-
 ## 2010 9.2
 
 [[P-NYZMD]]
-
 
 ## 2010 9.3
 
@@ -77,20 +73,17 @@ title: Problem Sets
 
 [[P-JETLX]]
 
- 
 ## 2010 9.6
 
 [[P-PCOHF]]
 
-## 2010 9 Challenge 
+## 2010 9 Challenge
 
 [[P-EUIAS]]
-
 
 ## 2010 10.1
 
 [[P-O4USN]]
-
 
 ## 2010 10.2
 
@@ -99,7 +92,6 @@ title: Problem Sets
 ## 2010 10.3
 
 [[P-AGH3O]]
-
 
 ## 2010 10.4
 

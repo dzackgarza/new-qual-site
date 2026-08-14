@@ -9,6 +9,7 @@ The most useful tricks of the trade:
 - Multiplicativity in towers can force numerical divisibility constraints.
   E.g. if $\alpha$ is a root of any irreducible $f$, take the tower $\SF(\alpha, k)/k(\alpha)/k$: then the degree of $\min_{\alpha, k}(x)\in k[x]$ divides the degree of the extension $[\SF(\alpha, k) :  k]$.
 -
+
 :::
 
 
@@ -34,6 +35,7 @@ The most useful tricks of the trade:
 
 :::{.corollary}
 A primitive polynomial $p\in \QQ[x]$ is irreducible $\iff p$ is irreducible in $\ZZ[x]$.
+
 :::
 
 ## Definitions
@@ -57,6 +59,7 @@ A primitive polynomial $p\in \QQ[x]$ is irreducible $\iff p$ is irreducible in $
 :::{.example title="of a non-perfect field"}
 Example of a non-perfect field: $\FF_p(t)$.
 Use that $f(x) \da x^p - t$ is irreducible in $\FF_p(t)[x]$ but not separable.
+
 :::
 
 [[PR-IK6AM]]
@@ -119,6 +122,7 @@ with equality when $L/k$ is Galois.
   - Thus every field morphism is either zero or injective.
 - The characteristic of any field $k$ is either 0 or $p$ a prime.
 - If $L/k$ is algebraic, then $\min(\alpha, L)$ divides $\min(\alpha, k)$.
+
 :::
 
 [[PR-ZO73V]]
@@ -142,6 +146,7 @@ Every element is a root by Cauchy's theorem, and the $p^n$ roots are distinct si
 
 :::{.corollary}
 $x^{p^n} - x = \prod f_i(x)$ over all irreducible monic $f_i \in \FF_p[x]$ of degree $d$ dividing $n$.
+
 :::
 
 :::{.proof}
@@ -158,6 +163,7 @@ $\implies$:
 - So if $f$ is an irreducible factor of $\phi_n$, $f$ is the minimal polynomial of some root $\alpha$ of $\phi_n$, so $\deg f \divides n$.
 
 -  $\phi_n'(x) = p^nx^{p^{n-1}} \neq 0$, so $\phi_n$ is squarefree and thus has no repeated factors. So $\phi_n$ is the product of all such irreducible $f$.
+
 :::
 
 [[PR-DEG36]]
@@ -168,6 +174,7 @@ If \( k = \ts{ a_1, a_2, \cdots a_n } \)  then define the polynomial
 f(x) \da 1 +\prod_{j=1}^n (x-a_j) \in k[x]
 .\]
 This has no roots in $k$.
+
 :::
 
 ## Cyclotomic Polynomials
@@ -224,6 +231,7 @@ k\divides n \implies \Phi_{n}(x) &= \Phi_{n\over k}\left(x^{k}\right)
 \Phi_6(z) &= z^2 -z + 1 \\
 \Phi_8(z) &= z^4+1 
 .\]
+
 :::
 
 [[PR-DCK6S]]

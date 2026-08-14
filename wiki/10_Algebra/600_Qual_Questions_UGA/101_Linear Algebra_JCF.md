@@ -1,9 +1,11 @@
 # Linear Algebra: Canonical Forms
 
-## Fall 2021 #3 
+## Fall 2021 #3
 
 [[P-R5QUP]]
+
 ## $\star$ Spring 2012 #8
+
 [[P-GVWWY]]
 
 ## $\star$ Spring 2020 #8
@@ -15,6 +17,7 @@
 [[P-GCNAR]]
 
 ## Fall 2019 Final #8
+
 [[P-45V3F]]
 
 ## Fall 2019 Final #9
@@ -34,23 +37,35 @@
 [[P-RWPK4]]
 
 ## Spring 2018 #4
+
 [[P-D4X7R]]
+
 ## Spring 2017 #6
+
 [[P-VHCGV]]
+
 ## Spring 2016 #1
+
 [[P-4GMLL]]
+
 ## Spring 2015 #6
 
 [[P-P7TEE]]
 
 [[P-POJFX]]
+
 ## Fall 2014 #5
+
 [[P-SIGK5]]
+
 ## Spring 2013 #5
+
 [[P-RXKJR]]
+
 ## Spring 2021 #1
 
 [[P-IOSZK]]
+
 ## Fall 2020 #5
 
 [[P-VHLIU]]

@@ -57,6 +57,7 @@ Since $c_k \da (-1)^k/k \decreasesto 0$, this converges at $z=1$, and by Abel's 
 The converse to Abel's theorem is false: take $f(z) = \sum  (-z)^n = 1/(1+z)$.
 Then $f(1) = 1-1+1-\cdots$ diverges at 1, but $1/1+1 = 1/2$.
 So the limit $s\da \lim_{x\to 1^-} f(x) 1/2$, but $\sum a_n$ doesn't converge to $s$.
+
 :::
 
 [[PR-2MTPE]]

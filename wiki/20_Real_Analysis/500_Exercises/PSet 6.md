@@ -118,6 +118,7 @@ Let $h(x) = e^{2\pi i x\cdot y} f(x)$. We then have
 &= \hat f(\xi - y)
 .\end{align*}
 \]
+
 ## (b)
 
 We'll use the fact that if $\inner{\wait}{\wait}$ is an inner product on a vector space $V$ and $A$ is an invertible linear transformation, then for all $\vector x, \vector y \in V$ we have 

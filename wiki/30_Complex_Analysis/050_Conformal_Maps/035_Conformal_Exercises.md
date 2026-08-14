@@ -42,6 +42,7 @@ Tips:
 - Arcs between two points must go to arcs between their images
 
 - $\RR =\ts{\tan(t) \st t\in (-\pi/2, \pi/ 2)}$.
+
 :::
 
 ## Cross-Ratios
@@ -54,18 +55,23 @@ Tips:
 ### $\HH\to\DD$
 
 [[P-IIONX]]
+
 ### $\HH\to\DD$, cross-ratio
 
 [[E-W6MWU]]
+
 ### $\DD\to\HH$
 
 [[E-4H3JY]]
+
 ### Upper half-disc to $\DD$
 
 [[E-PGGNF]]
+
 ### Upper half-disc to $\HH$
 
 [[E-6BH7D]]
+
 ### $\DD^c \intersect \HH \to\HH$
 
 [[E-PQ7NC]]
@@ -73,46 +79,62 @@ Tips:
 ## Slits
 
 [[E-YAYQB]]
+
 ### 8
 [[P-DQTVL]]
+
 ### 9
 [[P-IJQ5Z]]
+
 ### 10
 [[P-A6PQA]]
+
 ## 11
 [[P-CWXEW]]
+
 ## Strips
 
 ### Horizontal strip to $\HH$
 
 [[P-RMH6X]]
+
 ## Lunes
 
 ### Intersection of circles
 
 [[E-UUBBS]]
+
 ### Lune with one intersection point
 
 [[E-VS4XE]]
+
 ### 4
 [[P-K7XDT]]
+
 ### 5
 [[P-5UKXY]]
+
 ### 6
 [[P-PYCCN]]
+
 ### 13
 [[P-64ZUP]]
+
 ## Sectors
 
 [[E-PYJZO]]
+
 ## Joukowski-Type Regions
 
 [[E-NZY3B]]
+
 ## Misc
 
 [[E-H64WF]]
 [[E-3GIQS]]
+
 ### 7
 [[P-EEUV6]]
+
 ### 12
 [[P-K4WSJ]]

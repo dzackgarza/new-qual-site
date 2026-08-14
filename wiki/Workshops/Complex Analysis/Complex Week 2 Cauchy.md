@@ -2,21 +2,25 @@
 title: "Complex Analysis Qual Prep Week 2: Things Named After Cauchy"
 ---
 
-Tags: 
-#qualifying_exam #active_projects 
+Tags: #qualifying_exam #active_projects
 
 # Topics
 
 - [[30_Complex_Analysis/060_Maps of Disc/060_Schwarz lemma|Blaschke factors]]
+
 - Toy contours
+
 - Cauchy's integral formula
+
 - Cauchy inequalities
--   Computing integrals
-	-   Residue formulas
-	-   ML Inequality
-	-  Jordan's lemma
 
+- Computing integrals
 
+  - Residue formulas
+
+  - ML Inequality
+
+  - Jordan's lemma
 
 ## Review
 
@@ -56,11 +60,9 @@ Tags:
 
 **Bounds**
 
-Jordan's Lemma:
-![[_attachments/Pasted image 20210527182026.png]]
+Jordan's Lemma: ![[_attachments/Pasted image 20210527182026.png]]
 
 ![[_attachments/Pasted image 20210527182117.png]]
-
 
 ### Blaschke Factors
 
@@ -84,13 +86,14 @@ Jordan's Lemma:
 
 ![[_attachments/Pasted image 20210527175435.png]]
 
-
 # Warmups
 
 [[E-W3QMS]]
+
 # Questions
 
 [[P-IOUZO]]
+
 # Qual Problems
 
 [[P-FWVKJ]]

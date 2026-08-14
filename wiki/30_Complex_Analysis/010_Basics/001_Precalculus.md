@@ -9,6 +9,7 @@ title: Precalculus Preliminaries
 
 :::{.fact}
 The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle is $\frac{n-2}{n}\pi$.
+
 :::
 
 :::{.fact title="Standard forms of conic sections"}
@@ -93,6 +94,7 @@ Some useful numerology that comes up when trying to estimate when poles fall wit
 - $1/\sqrt{3} \approx 0.577$
 - $e\approx 2.718$
 - $\pi \approx 3.14159$
+
 :::
 
 

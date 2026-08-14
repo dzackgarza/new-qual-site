@@ -39,6 +39,7 @@ title: Homework 7
 # Problem 4
 
 [[P-OC42E]]
+
 # Problem 5
 
 ## Part (a)
@@ -60,6 +61,7 @@ title: Homework 7
 # Problem 6
 
 [[P-WB2SR]]
+
 # Problem 7
 
 [[P-PQGS4]]

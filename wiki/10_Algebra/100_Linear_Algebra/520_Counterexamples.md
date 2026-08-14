@@ -65,6 +65,7 @@ Non-similar matrices with the same characteristic polynomial
 \end{array}\right)
 \]
 Here $\chi_A(x) = \chi_B(x) = x^2$, but they are not conjugate since their JCFs differ (note that they're already in JCF!)
+
 :::
 
 :::{.example title="?"}
@@ -91,5 +92,6 @@ M_2
 \da 
 \matt 0 1 {-1} 0
 .\]
+
 :::
 

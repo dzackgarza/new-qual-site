@@ -6,6 +6,7 @@
 More generally, this is a boundary value problem for a region where the *values* of the function on the boundary are given.
 Compare to prescribing conditions on the normal vector on the boundary, which would be a Neumann BVP.
 Why these show up: a harmonic function on a simply connected region has a harmonic conjugate, and solutions of BVPs are always analytic functions with harmonic real/imaginary parts.
+
 :::
 
 :::{.example title="Dirichlet problem on the strip"}
@@ -20,4 +21,5 @@ Then the following function is harmonic on $\RR^2$ and satisfies that Dirichlet 
 \[
 T(x ,y) = e^{-y} \sin(x) = \Re(-ie^{iz}) = \Im(e^{iz})
 .\]
+
 :::

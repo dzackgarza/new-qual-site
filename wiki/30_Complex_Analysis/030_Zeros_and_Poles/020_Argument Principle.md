@@ -15,6 +15,7 @@ Then take log derivatives:
 
 Then if $g$ is holomorphic and nonzero away from $z_0$, so is $g'/g$.
 So the only contribution to $\Res_{z=z_0} \logd f$ is $m$.
+
 :::
 
 :::{.remark}
@@ -54,6 +55,7 @@ so $z_0$ is a simple pole of $\logd f$ and $\res_{z=z_0} \logd f = m$.
 &= \sum_{z_i \in P_{\logd f}} \Res_{z=z_i} \logd f(z)\\
 &= \sum_{z_k \in Z_f} \Res_{z=z_k} f(z) - \sum_{z_j \in P_f} \Res_{z=z_j} f(z)
 .\]
+
 :::
 
 [[T-52HK6]]

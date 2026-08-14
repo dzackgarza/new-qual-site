@@ -9,6 +9,7 @@ Since cosets are equal or disjoint and have equal cardinality,
 G = \disjoint_{k \leq N} g_k H \implies \#G = \sum_{k\leq N} \# \qty{g_k H} = \sum_{k\leq N} \# H = N \# H
 ,\]
 so $\# G = N \# H$, $\#H$ divides $\# G$ and $N = [G:H]$ divides $\# G$.
+
 :::
 
 [[C-XRC67]]
@@ -18,6 +19,7 @@ The order of every element divides the size of $G$, i.e.
 $$
 g\in G \implies o(g) \divides o(G) \implies g^{\abs G} = e
 .$$
+
 :::
 
 :::{.warnings}
@@ -32,12 +34,14 @@ $x\not\in H$, so $H\neq xH$, but two must be equal:
 
 - $x^2H = H$: use $x^2 = x\inv$ since $x^3=e$, but $x\in H \implies x\inv\in H$, $\contradiction$
 - $xH = x^2H$: the fundamental theorem of cosets forces $x\inv x^2 \in H$, so $x\in H$. $\contradiction$
+
 :::
 
 [[T-3KCD6]]
 
 :::{.proof title="?"}
 See [https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf](https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf).
+
 :::
 
 ## Group Actions
@@ -62,6 +66,7 @@ OO(x) = Gx = \theset{g\cdot x \suchthat g\in G} \subseteq X  && \text[Orbit}
 
 Note that being in the same orbit is an equivalence relation which partitions $X$, and $G$ acts transitively if restricted to any single orbit.
 Also, $x\in \Fix$ iff $\Orb(x) = \ts{x}$ and $\Stab_G(x) = G$.
+
 :::
 
 :::{.fact}
@@ -69,6 +74,7 @@ For any group action, the kernel is the intersection of all stabilizers:
 \[
 \ker \psi = \Intersect_{x\in X} G_x
 .\]
+
 :::
 
 [[D-KGGWK]]
@@ -120,6 +126,7 @@ A useful mnemonic: for any group action $\phi: G\actson X$, using that orbits pa
 X = \Fix(\phi) \Disjoint_{x}' \Orb(x)
 ,\]
 where $\Fix(\phi)$ is the union of all orbits of size 1, and the remaining union is over distinct nontrivial orbits, taking one representative $x$ from each.
+
 :::
 
 [[PR-5FGA7]]
@@ -133,6 +140,7 @@ where $\Fix(\phi)$ is the union of all orbits of size 1, and the remaining union
   If $\ker \phi = 1$, $\phi$ is injective and we're done.
 
 - Otherwise $\ker \phi = G$, and acting on $eH$ yields $gH = H$ for all $g$, forcing $H=G$ and $n=1$, contradicting that $H<G$ is proper. $\contradiction$
+
 :::
 
 ### Left Translation
@@ -228,6 +236,7 @@ Proceed by partitioning the sum up according to which orbit each term comes from
 &= \sum_{\Orb(x_0) \in X/G} 1 \\
 &= \#(X/G)
 .\]
+
 :::
 
 

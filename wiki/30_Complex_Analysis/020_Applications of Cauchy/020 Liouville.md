@@ -11,6 +11,7 @@
 \abs{f'(z)} \leq { 1! \norm{f}_{C_R} \over R } \leq {M \over R}\converges{R\to\infty}\too 0
 ,\]
   so $f'(z) = 0$ for all $z$.
+
 :::
 
 :::{.proof title="of Liouville, alternative"}
@@ -23,6 +24,7 @@
 Suppose $f$ is entire and bounded.
 Under an affine change of variables in the domain and range, $f(0) = 0$ and $\abs{f(z)} \leq 1$, the claim is that $f\equiv 0$.
 The function $g(z) \da f(Rz)$ satisfies the Schwarz lemma, so $\abs{f(Rz)} \leq \abs{z} \implies \abs{f(w)} \leq \abs{w}/R\convergesto{R\to\infty}0$.
+
 :::
 
 ## Exercises

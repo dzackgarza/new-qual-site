@@ -1,35 +1,33 @@
 # Integrals and Cauchy's Theorem (8155d)
 
-
-
 [[P-KPLQU]]
-
 
 [[P-RHQC5]]
 
-
 [[P-YR75I]]
+
 ## 5
 
 [[P-MNWYL]]
 
-
 [[P-KGHOG]]
-
 
 [[P-GHVIO]]
 
-
 [[P-OND4D]]
+
 ## 9
+
 [[P-B4WQK]]
 
 ## 10
+
 [[P-3W7LA]]
+
 # Extra
 
-
 ## ?
+
 [[P-H4HKX]]
 
 ### Tie's Extra Questions: Fall 2009
@@ -57,12 +55,15 @@
 [[P-66WI2]]
 
 ### Spring 2020 HW 2 #  6
+
 [[P-AW6IK]]
 
 ### Spring 2020 HW 2 #  7
+
 [[P-IRNN2]]
 
 ### Spring 2020 HW 2 #  8
+
 [[P-QC7BY]]
 
 ### Spring 2020 HW 2 #  9 (Cauchy's Formula for Exterior Regions)
@@ -70,12 +71,15 @@
 [[P-HH4R3]]
 
 ### Spring 2020 HW 2 #  10
+
 [[P-FL5SY]]
 
 ### Spring 2020 HW 2 #  11
+
 [[P-OZXEA]]
 
 ### Spring 2020 HW 2 #  12
+
 [[P-UQOCE]]
 
 ### Spring 2020 HW 2 #  13

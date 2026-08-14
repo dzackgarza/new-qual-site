@@ -10,6 +10,7 @@ Some pictures to keep in mind when it comes to covers and path lifting:
 
 :::{.remark}
 When covering spaces are involved in any way, try computing Euler characteristics - this sometimes yields nice numerical constraints.
+
 :::
 
 :::{.fact title="Euler characteristics are multiplicative on covering spaces"}
@@ -22,15 +23,18 @@ For $p: A \mapsvia{} B$ an $n\dash$fold cover,
 
 :::{.fact}
 Covering spaces of orientable manifolds are orientable.
+
 :::
 
 :::{.fact}
 The preimage of a boundary point under a covering map must also be a boundary point
+
 :::
 
 :::{.fact}
 Normal subgroups correspond to *normal/regular* coverings, where automorphisms act freely/transitively.
 These are "maximally symmetric".
+
 :::
 
 ## Universal Covers
@@ -83,6 +87,7 @@ Covering spaces of $X$ are classified by subgroups of $\pi_1(X)$:
 
 :::{.remark title="Automatic lifts"}
 Note that if $Y$ is simply connected, then $\pi_1(Y) = 0$ and this holds automatically!
+
 :::
 
 [[PR-R5EN3]]
@@ -261,11 +266,13 @@ The universal cover of $S^1$ is $\RR$; this is an infinitely sheeted cover, and 
 :::{.example title="Projective $n\dash$space $\RP^n$"}
 The universal cover of $\RP^n$ is $S^n$; this is a two-sheeted cover. 
 The fiber above $x_0$ contains the two antipodal points.
+
 :::
 
 :::{.example title="The torus $S^1 \cross S^1$"}
 The universal cover of $T = S^1 \cross S^1$ is $\tilde X =\RR \cross \RR$. 
 The fiber above the base point contains every point on the integer lattice $\ZZ \cross \ZZ = \pi_1(T) = \text{Aut}(\tilde X)$
+
 :::
 
 [[PR-BXAA5]]
@@ -314,6 +321,7 @@ H(f(y), t) & \text{else}.
 \end{cases}
 \]
 Then $H'$ is a homotopy between $f$ and a constant map, and $f$ is nullhomotopic.
+
 :::
 
 [[C-GJRYO]]
@@ -335,6 +343,7 @@ where $f = p \circ \tilde f$:
 
 Since every map into a contractible space is nullhomotopic, there is a homotopy $\tilde H: Y\cross I \into Z$ from $\tilde f$ to a constant map $c: Y\to Z$, say $c(y) = z_0$ for all $y$. 
 But then $p\circ \tilde H: X \cross I \into Y$ is also a homotopy from $f$ to the map $p\circ c$, which satisfies $(p\circ c)(y) = p(z_0) = x_0$ for some $x_0 \in X$, and is in particular a constant map.
+
 :::
 
 [[PR-TRSHQ]]
@@ -349,12 +358,14 @@ But then $p\circ \tilde H: X \cross I \into Y$ is also a homotopy from $f$ to th
   - Since $p$ is a covering map, $p_*: \ZZ/2\ZZ \injects \ZZ^2$ is injective.
 - Since $p$ was supposed a cover, this can be used to imply that $\id_{\TT^2}$ is nullhomotopic.
 - Covering maps induce injections on $\pi_1$, and the only way the trivial map can be injective is if $\pi_1(T^2) = 0$, a contradiction. 
+
 :::
 
 [[T-O44GI]]
 
 :::{.fact}
 If $f:X\to Y$ is a covering map of degree 1, then $f$ is necessarily a homeomorphism.
+
 :::
 
 ## Exercises

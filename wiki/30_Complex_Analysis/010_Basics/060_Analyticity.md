@@ -46,6 +46,7 @@ Now by the $M\dash$test,
 \[  
 \abs{z} \leq R < \infty \implies \abs{\sum {z^n \over n!}} \leq e^R < \infty
 .\]
+
 :::
 
 # Exercises

@@ -6,6 +6,7 @@ order: 110
 
 :::{.fact}
 Since $\CC$ is a field, $\CC[x]$ is a UFD.
+
 :::
 
 [[D-YKB3V]]
@@ -20,8 +21,10 @@ Mnemonic:
 \[
 z = re^{i\theta} = re^{i\qty{\theta + 2k\pi}} \implies z^{1/n} = \cdots
 .\]
+
 :::
 ## Complex Log
+
 :::{.fact title="Complex Log"}
 For $z= r e^{i\theta}\neq 0$, $\theta$ is of the form $\Theta + 2k\pi$ where $\Theta = \Arg z$
 We define
@@ -33,6 +36,7 @@ Thus
 \[
 \log(re^{i\theta}) = \ln \abs{r} + i\theta
 .\]
+
 :::
 :::{.fact}
 Common trick:
@@ -40,9 +44,11 @@ Common trick:
 f^{1/n} = e^{{1\over n} \log(f)}
 ,\]
 taking (say) a principal branch of $\log$ given by $\CC \sm (-\infty, 0] \cross 0$.
+
 :::
 [[PR-MWUJS]]
 [[D-4CSPM]]
+
 :::{.warnings}
 It's tempting to define
 \[
@@ -60,12 +66,16 @@ Then
 
 So $\log$ can't even be made continuous if one crosses the branch.
 The issue is the **branch point** or **branch singularity** at $z=0$.
+
 :::
 - Since $\CC$ is a field, $\CC[x]$ is a UFD.
 [[T-E76LX]]
+
 ## Complex Calculus
+
 :::{.remark}
 When parameterizing integrals $\int_\gamma f(z)\dz$, parameterize $\gamma$ by $\theta$ and write $z=re^{i\theta}$ so $\dz = ire^{i\theta}\dtheta$.
+
 :::
 :::{.warnings}
 $f(z) = \sin(z), \cos(z)$ are unbounded on $\CC$!
@@ -92,10 +102,12 @@ Note an issue: a different parameterization yields a different (still nonzero) n
 &= -{4i\over 3}
 .\]
 This is these are paths that don't lift to closed loops on the Riemann surface defined by $z\mapsto z^2$.
+
 :::
 ### Holomorphy and Cauchy-Riemann
 [[D-V6UQJ]]
 [[D-E7A5W]]
+
 :::{.example title="Holomorphic vs non-holomorphic"}
 \envlist
 
@@ -114,6 +126,7 @@ which is a complex number that depends on $\theta$ and is thus not a single valu
 [[D-KLTBZ]]
 [[PR-37QA5]]
 [[PR-OOHUL]]
+
 :::{.proof}
 Setting
 \[
@@ -153,13 +166,16 @@ Thus
 
 :::
 [[PR-EMFAN]]
+
 ### Delbar and the Laplacian
 [[D-Z5BD2]]
 [[PR-TVPCM]]
+
 ### Harmonic Functions and the Laplacian
 [[D-G4ITR]]
 [[PR-JKE6C]]
 [[PR-K57J6]]
+
 :::{.proof title="?"}
 \envlist
 
@@ -190,18 +206,22 @@ v_{xx} + u_{yx} = 0 \implies v_{xx} + v_{yy} = 0 \\ \\
 [[E-TVJFL]]
 [[E-3QAC4]]
 [[E-MTLQI]]
+
 ## Power Series
 ![](../../../../assets/assets/figures/2021-10-28_21-22-12.png)
 ![](../../../../assets/assets/figures/2021-10-28_21-22-35.png)
 [[T-GROTS]]
 [[PR-RE2B2]]
+
 :::{.remark}
 By an application of the Cauchy integral formula (see S&S 7.1) if $f$ is holomorphic on $D_R(z_0)$ there is a formula for all $k\geq 0$ and all $0<r<R$:
 \[
 c_k = {1\over 2\pi r^k} \int_0^{2\pi} f(z_0 + re^{i\theta}) e^{-in\theta}\dtheta
 .\]
+
 :::
 [[PR-4BVDD]]
+
 :::{.proof}
 Apply the estimate
 \[
@@ -211,8 +231,10 @@ Now by the $M\dash$test,
 \[
 \abs{z} \leq R < \infty \implies \abs{\sum {z^n \over n!}} \leq e^R < \infty
 .\]
+
 :::
 [[L-TVIDY]]
+
 :::{.proof title="?"}
 
 > See <http://www.math.uwaterloo.ca/~krdavids/Comp/Abel.pdf>
@@ -247,6 +269,7 @@ So it suffices to bound the latter sum:
 :::
 [[T-RRB7M]]
 [[L-MYZOX]]
+
 :::{.example title="application of Abel's theorem"}
 What is the value of the alternating harmonic series?
 Integrate a geometric series to obtain
@@ -260,8 +283,10 @@ Since $c_k \da (-1)^k/k \decreasesto 0$, this converges at $z=1$, and by Abel's 
 The converse to Abel's theorem is false: take $f(z) = \sum  (-z)^n = 1/(1+z)$.
 Then $f(1) = 1-1+1-\cdots$ diverges at 1, but $1/1+1 = 1/2$.
 So the limit $s\da \lim_{x\to 1^-} f(x) 1/2$, but $\sum a_n$ doesn't converge to $s$.
+
 :::
 [[PR-6GL7M]]
+
 :::{.proof title="?"}
 An inelegant proof: define $A_n \da \sum_{k\leq n} a_k$, use that $a_k = A_k - A_{k-1}$, reindex, and peel a top/bottom term off of each sum to pattern-match.
 \
@@ -280,6 +305,7 @@ Behold:
 
 :::
 [[PR-NZZ2C]]
+
 ### Exercises: Series
 [[E-ZWNTH]]
 [[E-BUVLS]]
@@ -296,6 +322,7 @@ z = re^{i\theta} = re^{i\qty{\theta + 2k\pi}} \implies z^{1/n} =
 \ts{ \omega_k \da r^{1/n} e^{i \qty{ \theta + 2k\pi \over n} } \st 0 \leq k \leq n-1 }
 .\]
 Note that one root is $r^{1/n}\in \RR$, and the rest are separated by angles of $2\pi/n$.
+
 :::
 
 ## Complex Factoring
@@ -309,6 +336,7 @@ For monic polynomials, this becomes slightly nicer:
 \[
 z_k = {1\over 2}\qty{-b + i\sqrt{4c-b^2} }
 .\]
+
 :::
 
 :::{.example title="Factoring a quadratic"}
@@ -320,6 +348,7 @@ x^2 + 2x + 6 &= 0 \\
 \implies x+1 &= \pm 2i \\
 \implies x &= -1\pm 2i
 .\]
+
 :::
 
 :::{.fact title="Factoring $z^n-1$"}

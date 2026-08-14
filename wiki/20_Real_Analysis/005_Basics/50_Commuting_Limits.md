@@ -7,12 +7,14 @@ order: 50
 [[PR-LCV2V]]
 [[PR-SCTER]]
 [[PR-DWOXP]]
+
 :::{.example title="?"}
 As a counterexample:
 \[
 f_n(x) \da \sqrt{x^2 + {1\over n}} \converges{n\to\infty}\too f(x) \da \abs{x}
 ,\]
 and this convergence is even uniform.
+
 :::
 :::{.example title="?"}
 \[
@@ -24,6 +26,7 @@ But
 f_n'(x) = {1-nx^2 \over\qty{1 + nx^2}^2}
 ,\]
 and $f_n'(0) \to 1$.
+
 :::
 [[PR-UZVC3]]
 
@@ -39,12 +42,14 @@ For example,
 \lim_{m\to \infty}\lim_{n\to\infty} {n \over n + m} &= 1 \neq 0 =
 \lim_{n\to \infty}\lim_{m\to\infty} {n \over n + m}
 .\]
+
 :::
 
 :::{.example title="Limits of bounded functions need not be bounded"}
 \[  
 \lim_{n\to \infty}\sup_{x\in X} \abs{f_n(x) } \neq \sup_{x\in X} \abs{\lim_{n\to\infty} f_n(x) }
 .\]
+
 :::
 
 :::{.example title="Limits of continuous functions need not be continuous"}
@@ -84,11 +89,13 @@ But
 f_n'(x) = {1-nx^2 \over\qty{1 + nx^2}^2}
 ,\]
 and $f_n'(0) \to 1$.
+
 :::
 
 :::{.remark}
 Note that uniform convergence of $f_n$ and $f_n'$ is sufficient to guarantee that $f$ is differentiable.
 Even worse: every continuous function is a uniform limit of polynomials by the Weierstrass approximation theorem.
+
 :::
 
 
@@ -96,6 +103,7 @@ Even worse: every continuous function is a uniform limit of polynomials by the W
 \[  
 \lim_{n\to \infty} \int_a^b f_n(x) \,dx \neq \int_a^b \lim_{n\to \infty} \qty{ f_n(x) } \,dx
 .\]
+
 :::
 
 - Differentiability $\implies$ continuity but not the converse: $f(x) = \abs{x}$.

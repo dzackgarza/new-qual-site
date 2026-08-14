@@ -6,6 +6,7 @@
 
 :::{.slogan}
 Two functions agreeing on a set with a limit point are equal on a domain.
+
 :::
 
 :::{.proof title="Using power series and topology"}
@@ -38,6 +39,7 @@ So $w_0$ is an interior point of $V$, making $V$ open and $U$ closed.
 
 :::{.proof title="?"}
 ![[attachments/Pasted image 20211215021255.png]]
+
 :::
 
 [[T-OFMGU]]
@@ -45,6 +47,7 @@ So $w_0$ is an interior point of $V$, making $V$ open and $U$ closed.
 :::{.example title="?"}
 Since $\sin^2(z)+\cos^2(z) = 1$ for $z\in \RR$, which has a limit point, this holds for $z\in \CC$ as well.
 For the generalization, consider $F(z, w) \da e^{z+w}-e^z e^w$; then $F\equiv 0$ on $\RR$ and thus this holds on $\CC$.
+
 :::
 
 ## Exercises

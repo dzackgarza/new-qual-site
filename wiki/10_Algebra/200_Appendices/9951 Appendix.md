@@ -10,6 +10,7 @@
 Normality is not transitive!
 
 I.e. if $H\normal G$ and $N\normal H$, it's not necessarily the case that $N\normal G$.
+
 :::
 
 [[D-53LTN]]
@@ -17,6 +18,7 @@ I.e. if $H\normal G$ and $N\normal H$, it's not necessarily the case that $N\nor
 :::{.remark title="Characteristic isn't equivalent to normalcy"}
 Characteristic subgroups are normal, because $\psi_g(\wait) \da g(\wait)g\inv$ is an (inner) automorphic of $G$.
 Not every normal subgroup is characteristic: take $G \da H_1 \cross H_2$ and $\psi(x, y) = (y, x)$.
+
 :::
 
 [[PR-IOMVN]]
@@ -27,6 +29,7 @@ $A \ch B \normal C \implies A\normal C$:
 - $A\ch B$ iff $A$ is fixed by every $\psi\in \Aut(B)$., WTS $cAc\inv = A$ for all $c\in C$.
 - Since $B\normal C$, the automorphism $\psi(\wait) \da c(\wait)c\inv$ descends to an element of $\Aut(B)$.
 - Then $\psi(A) = A$ since $A\ch B$, so $cAc\inv = A$ and $A\normal C$.
+
 :::
 
 [[PR-GJLQP]]
@@ -40,6 +43,7 @@ Let $\psi \in \Aut(H)$ and $x=\psi(y)\in \psi(Z(H))$ so $y\in Z(H)$, then for ar
 &= \psi( \psi\inv(h) \cdot y ) && \text{since } \psi\inv(h)\in H, \, y\in Z(H) \\
 &= h\psi(y)
 .\]
+
 :::
 
 ## Normal Closures and Cores
@@ -78,6 +82,7 @@ For $G$ a finite group, TFAE:
 - Every maximal subgroup is normal
 - $G$ has a terminating *Lower* Central Series
 - $G$ has a terminating *Upper* Central Series
+
 :::
 
 :::{.fact}
@@ -94,4 +99,5 @@ For $G$ a finite group, TFAE:
 
 :::{.example title="Why care about Gorenstein rings?"}
 If $R\in \gr\kAlg$ with $\dim_k R < \infty$, then $R$ decomposes as $R = R_0 \oplus R_1 \oplus \cdots R_n$ with $R_0 \da k$, and $R$ is Gorenstein iff $R$ satisfies "Poincaré duality": $\dim_k R_0 = \dim_k R_m = 1$ and there is a perfect pairing $R_i \tensor_k R_{n-j} \to R_n$.
+
 :::

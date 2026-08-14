@@ -19,6 +19,7 @@
 [[P-WB56B]]
 
 [[P-IZZ3T]]
+
 # Several Variables
 
 [[P-R4RAS]]
@@ -34,17 +35,21 @@
 [[P-SWWWO]]
 
 [[P-DVJGQ]]
+
 # Several Variables: Extra Questions
 
 ## ?
 
 [[P-TH3WN]]
+
 ## ?
 
 [[P-ODRVC]] [[P-JES3E]]
+
 ### Tie's Extra Questions: Fall 2009
 
 [[P-TH3WN]]
+
 ## Spring 2020 HW 1 # 10
 
 [[P-VH7IY]]

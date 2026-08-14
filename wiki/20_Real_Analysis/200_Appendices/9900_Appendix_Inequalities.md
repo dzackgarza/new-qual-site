@@ -89,6 +89,7 @@ This appears in several other forms:
 :::{.remark}
 This does not handle $p=\infty$ case.
 Use to prove $L^p$ is a normed space.
+
 :::
 
 :::{.proof title="of Minkowski's inequality"}
@@ -163,6 +164,7 @@ q &= \frac p {p-1}
 
 - It's an equality when $t=0$.
 - $\dd{}{t} 1+ t < \dd{t}e^t \iff t<0$
+
 :::
 
 [[PR-2C3SZ]]

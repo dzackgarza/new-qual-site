@@ -39,6 +39,7 @@ a\leq b \implies e^{-a} \geq e^{-b}
   ![](../../../../assets/assets/figures/2021-12-23_18-51-55.png)
 
 Let $\deg$ denote the $z\dash$adic valuation, so $\deg(p(x)/q(x)) = \deg(p) - \deg(q)$.
+
 :::
 
 :::{.remark title="Rational, $\deg(f) \leq -2$ or $f\sim 1/z^{1+\varepsilon}$ "}
@@ -64,6 +65,7 @@ Semicircles. Realize
 .\]
 
 This works for $f(z)e^{iz}$ where $f(z) = p(z)/q(z)$ with $\deg q \geq \deg p+2$ by the ML estimate, or $\deg q \geq \deg p +1$ by Jordan's lemma.
+
 :::
 
 :::{.remark title="Rational functions of $\cos, \sin$:"}
@@ -112,6 +114,7 @@ If $f(z) \approx \cos(z), \sin(z), \tan(z), \cdots$: check if $\displaystyle\int
 :::{.remark title="No clear decay on semicircles: replication"}
 The replication trick: if $f(z) = f(\zeta_m z)$ for some $m$, try a sector.
 If $f(z) = f(z + ib)$ for some $b$, a rectangle.
+
 :::
 
 :::{.remark title="Integrating over singularities: take principal values"}
@@ -138,6 +141,7 @@ If $C_R$ is a semicircular contour subtending an angle of $\theta$,
 ,\]
 so provided $M = \bigo\qty{1\over R^{1+\eps}}$, this goes to zero as $R\to\infty$.
 If $M = \bigo(R)$, use Jordan's lemma!
+
 :::
 
 :::{.proof title="?"}
@@ -148,6 +152,7 @@ If $M = \bigo(R)$, use Jordan's lemma!
 &\da \int_\gamma M\dz \\
 &= M \cdot \length(\gamma)
 .\]
+
 :::
 
 ## Jordan's Lemma
@@ -160,6 +165,7 @@ Taking $\alpha = 1$, this yields
 \[
 \abs{ \int_{C_R} { e^{iz} \over z^2 + 1 } \dz } \leq \pi \sup_{z\in C_R} \abs{1\over z^2 +1} \leq {\pi \over R^2 - 1}\to 0
 .\]
+
 :::
 
 :::{.remark title="On which semicircle to use"}

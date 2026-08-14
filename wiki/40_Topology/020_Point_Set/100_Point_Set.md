@@ -21,12 +21,14 @@ Some key high-level topics:
 
 :::{.proof title="?"}
 Take $\theset{B_{\eps \over 2}(y) \suchthat y\in Y}\covers Y$, pull back to an open cover of $X$, has Lebesgue number $\delta_L > 0$, then $x' \in B_{\delta_L}(x) \implies f(x), f(x') \in B_{\eps \over 2}(y)$ for some $y$. 
+
 :::
 
 [[C-EBAGE]]
 
 :::{.remark}
 Counterexample to the converse: $f(x) = \sqrt x$ on $[0, 1]$ has unbounded derivative.
+
 :::
 
 [[T-OPK3N]]
@@ -54,6 +56,7 @@ Counterexample to the converse: $f(x) = \sqrt x$ on $[0, 1]$ has unbounded deriv
 - Since $A$ is closed, $W\definedas B\setminus A$ is open
 - Then $V\union W$ is an open cover of $B$, and has a finite subcover $\theset{V_i}$
 - Then $\theset{V_i \intersect A}$ is a finite open cover of $A$.
+
 :::
 
 [[T-TJBYR]]
@@ -62,6 +65,7 @@ Counterexample to the converse: $f(x) = \sqrt x$ on $[0, 1]$ has unbounded deriv
 Let $f:X\to f(X)$ be continuous.
 Take an open covering $\mathcal{U} \covers f(X)$, then $f\inv(\mathcal{U}) \covers X$, which is cover by opens since $f$ is continuous.
 Take a finite subcover by compactness of $X$, then they push forward to a finite subcover of $f(X)$.
+
 :::
 
 [[T-JFADP]]
@@ -86,6 +90,7 @@ A compact set in a Hausdorff space is closed, so $f(A)$ is closed in $Y$.
 
 :::{.remark title="On retractions"}
 Every space has at least one retraction - for example, the constant map $r:X \into \theset{x_0}$ for any $x\_0 \in X$.
+
 :::
 
 [[T-JSXGR]]
@@ -94,6 +99,7 @@ Every space has at least one retraction - for example, the constant map $r:X \in
 
 :::{.proof title="?"}
 See Munkres page 104.
+
 :::
 
 [[T-N6PYS]]
@@ -108,6 +114,7 @@ For a counterexample, $\RR^2$ and let $N$ be the set contained between a Gaussia
 Then no tube about $y=0$ is entirely contained within $N$:
 
 ![figures/image_2021-05-21-01-39-26.png](../../../../assets/assets/figures/image_2021-05-21-01-39-26.png)
+
 :::
 
 :::{.proof title="Sketch"}
@@ -138,6 +145,7 @@ Then no tube about $y=0$ is entirely contained within $N$:
   - So $y\in V_j$ for this $j$
   - Since $x\in W$, $x\in U_j$ for *every* $j$, thus $x\in U_j$.
   - So $(x, y) \in U_j \cross V_j$
+
 :::
 
 ## "Analysis"-esque Results in Topology

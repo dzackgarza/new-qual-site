@@ -6,6 +6,7 @@
 - Show something holds for indicator functions.
 - Show it holds for simple functions by linearity.
 - Use $s_k \increasesto f$ and apply MCT to show it holds for $f$.
+
 :::
 
 :::{.remark title="on notation"}
@@ -13,6 +14,7 @@
 
 - $L^+$: nonnegative measurable functions
 - $L^1$: Lebesgue integrable functions, so $\int \abs{f} < \infty$
+
 :::
 
 :::{.remark title="on notation"}
@@ -20,6 +22,7 @@
 
 - $L^+$: nonnegative measurable functions
 - $L^1$: Lebesgue integrable functions, so $\norm{f}_{L^1} \da \int \abs{f} < \infty$.
+
 :::
 
 [[D-DHFN4]]
@@ -27,6 +30,7 @@
 :::{.remark}
 Note that we still require Borel sets in the target for Lebesgue measurability!
 Taking $(\mcl_{\RR^d}, \mcl_\RR)$ functions is too stringent, e.g. this class does not contain continuous functionals.
+
 :::
 
 :::{.warnings}
@@ -36,6 +40,7 @@ Then $m(g(C)) = 1$ since $f$ is constant on intervals in $C^c$, so use Vitali's 
 So $g(C)$ contains a non-measurable set $A$.
 Define $B\da g\inv(A)$, then $B \subset C$ and $m(C) = 0$ implies $B$ is measurable and $\chi_B$ is a measurable function.
 But then $k\da \chi_B \circ g\inv$ is not $\mcl\dash$measurable, since $k\inv(1) = A$ is a non-measurable set, but $\chi_B$ is $\mcl\dash$measurable and $g\inv$ is continuous.
+
 :::
 
 [[PR-EWXRO]]
@@ -60,6 +65,7 @@ A useful fact: for $(X, \mathcal{M})$ a measure space, integrals split across di
 
 :::{.example title="An essentially bounded but not bounded function"}
 $f(x) = x\chi_\QQ(x)$ is essentially bounded but not bounded.
+
 :::
 
 [[PR-OI5HX]]
@@ -68,6 +74,7 @@ $f(x) = x\chi_\QQ(x)$ is essentially bounded but not bounded.
 
 :::{.slogan}
 Large powers of $x$ help us in neighborhoods of infinity and hurt around zero.
+
 :::
 
 ## The Convergence Theorems
@@ -76,6 +83,7 @@ Large powers of $x$ help us in neighborhoods of infinity and hurt around zero.
 
 :::{.slogan}
 Measurable, non-negative, increasing pointwise a.e. allows commuting limits and integrals.
+
 :::
 
 :::{.proof title="of MCT, todo"}
@@ -121,6 +129,7 @@ Proceed by showing $\limsup \int f_n \leq \int f \leq \liminf \int f_n$:
 .\]
 
   - Here we use that $g_n + f_n \to g+f$ with $0 \leq \abs{f_n} + f_n \leq g_n + f_n$ so Fatou's lemma again applies.
+
 :::
 
 [[PR-KNYSF]]
@@ -143,6 +152,7 @@ Then
 - $0 = \int f = \lim \int f_k = 0$
 
 - But $g > f_k \implies g > \norm{f_k}_\infty = 1$ a.e. $\implies g\not\in L^p(\RR)$.
+
 :::
 
 [[PR-H4ZVI]]
@@ -158,6 +168,7 @@ so the DCT applies to $g_n$ and
 = \int \abs{f_n} - g_n\\
 \to_{DCT} \lim \int \abs{f_n} - \int \abs{f}
 .\]
+
 :::
 
 [[T-LDJNS]]
@@ -170,18 +181,22 @@ so the DCT applies to $g_n$ and
 [[T-X7XZX]]
 [[PR-V4MOK]]
 [[PR-JW3QE]]
+
 :::{.proof title="Commuting sums with integrals"}
 - Idea: MCT.
 - Let $F_N = \sum^N f_n$ be a finite partial sum;
 - Then there are simple functions $\phi_n \nearrow f_n$
 - So $\sum^N \phi_n \nearrow F_N$ and MCT applies
+
 :::
 [[T-MN6WQ]]
+
 :::{.proof title="Commuting sums with integrals (integrable)"}
 \envlist
 
 - By Tonelli, if $f_n(x) \geq 0$ for all $n$, taking the counting measure allows interchanging the order of "integration".
 - By Fubini on $\abs{f_n}$, if either "iterated integral" is finite then the result follows.
+
 :::
 [[PR-EHIXY]]
 
@@ -195,6 +210,7 @@ so the DCT applies to $g_n$ and
 .\]
 
 Note that MCT might work, but showing that this is non-decreasing in $n$ is difficult.
+
 :::
 
 ## Commuting 
@@ -206,6 +222,7 @@ Note that MCT might work, but showing that this is non-decreasing in $n$ is diff
 - Let $F_N = \sum^N f_n$ be a finite partial sum; 
 - Then there are simple functions $\phi_n \nearrow f_n$ 
 - So $\sum^N \phi_n \nearrow F_N$ and MCT applies
+
 :::
 
 :::{.proof title="Commuting sums with integrals, integrable case"}
@@ -213,6 +230,7 @@ Note that MCT might work, but showing that this is non-decreasing in $n$ is diff
 
 - By Tonelli, if $f_n(x) \geq 0$ for all $n$, taking the counting measure allows interchanging the order of "integration".
 - By Fubini on $\abs{f_n}$, if either "iterated integral" is finite then the result follows.
+
 :::
 
 [[PR-YJJSY]]
@@ -220,6 +238,7 @@ Note that MCT might work, but showing that this is non-decreasing in $n$ is diff
 :::{.proof title="?"}
 Define $F_N = \sum^N f_k$ and $F = \lim_N F_N$, then $\norm{F_N}_1 \leq \sum^N \norm{f_k} < \infty$ so $F\in L^1$ and $\norm{F_N - F}_1 \to 0$ so the sum converges in $L^1$.
 Almost everywhere convergence: ?
+
 :::
 
 [[PR-2CZUM]]

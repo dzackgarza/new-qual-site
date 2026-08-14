@@ -3,6 +3,7 @@
 ## Tie's Extra Questions: Fall 2015
 
 [[P-YVNUD]] [[P-4KM5P]]
+
 ## Tie's Extra Questions: Spring 2015
 
 [[E-BV7DD]]
@@ -10,12 +11,15 @@
 ## Tie's Extra Questions: Spring 2015
 
 [[E-BVT72]]
+
 ## Tie's Extra Questions: Spring 2015
 
 [[E-T5ERF]]
+
 ## Tie's Extra Questions: Spring 2015
 
 [[E-YEIQ5]]
+
 ## Tie's Extra Questions: Spring 2015
 
 [[E-OS574]]
@@ -23,6 +27,7 @@
 ## Tie's Extra Questions: Spring 2015
 
 [[E-35I3B]]
+
 ## Tie's Extra Questions: Spring 2015
 
 [[E-LLEBI]]
@@ -42,6 +47,7 @@
 ## Tie's Extra Questions: Fall 2016
 
 [[E-ML2I7]]
+
 ## Tie's Extra Questions: Fall 2016
 
 [[E-A2LBX]]

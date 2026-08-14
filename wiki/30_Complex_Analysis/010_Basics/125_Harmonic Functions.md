@@ -35,11 +35,13 @@ Take $r\to 1$ to obtain
 \[
 F(r) = {1\over 2\pi} \int_{[-\pi, \pi]} u(z_0 + re^{it}) \ds \too \int_{[-\pi, \pi]} u(z_0) \ds = u(z_0) = u(x_0, y_0)
 .\]
+
 :::
 
 
 :::{.remark}
 An important use: if $u$ satisfies the mean value property on every disc and is continuous, then $u$ is automatically harmonic.
+
 :::
 
 

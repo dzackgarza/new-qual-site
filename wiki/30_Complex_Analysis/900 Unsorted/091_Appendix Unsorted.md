@@ -1,6 +1,7 @@
 # Appendix
 
 [[D-Q3MYK]]
+
 :::{.remark}
 Some interesting properties of $\Gamma$:
 $\Gamma(z+1) = z\Gamma(z)$ and has simple poles at $z=0,-1,-2,\cdots$ with residues $\Res_{z=-m} \Gamma(z) = (-1)^m/m!$.
@@ -23,6 +24,7 @@ $\mcl(t^{z-1}, s=1) = \Gamma(z)$ and $\mcl(t^n, s=1) = \Gamma(n+1)$.
 [[T-ZAEWG]]
 
 ## Misc Basic Algebra
+
 :::{.fact title="Standard forms of conic sections"}
 \envlist
 
@@ -39,21 +41,26 @@ Write $f(x, y) = Ax^2 + Bxy + Cy^2 + \cdots$, then consider the discriminant $\D
   - $\Delta < 0$ and $A=C, B=0 \iff$ circle
 - $\Delta = 0 \iff$ parabola
 - $\Delta > 0 \iff$ hyperbola
+
 :::
 :::{.fact title="Completing the square"}
 \[
 x^2 - bx = (x - s)^2 - s^2 \quad\text{where} s = \frac{b}{2} \\
 x^2 + bx = (x + s)^2 - s^2 \quad\text{where} s = \frac{b}{2}
 .\]
+
 :::
 :::{.fact}
 The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle is $\frac{n-2}{n}\pi$.
+
 :::
 [[D-XR64P]]
+
 :::{.remark}
 More generally, this is a boundary value problem for a region where the *values* of the function on the boundary are given.
 Compare to prescribing conditions on the normal vector on the boundary, which would be a Neumann BVP.
 Why these show up: a harmonic function on a simply connected region has a harmonic conjugate, and solutions of BVPs are always analytic functions with harmonic real/imaginary parts.
+
 :::
 :::{.example title="Dirichlet problem on the strip"}
 See section 27, example 1 in Brown and Churchill.
@@ -67,11 +74,13 @@ Then the following function is harmonic on $\RR^2$ and satisfies that Dirichlet 
 \[
 T(x ,y) = e^{-y} \sin(x) = \Re(-ie^{iz}) = \Im(e^{iz})
 .\]
+
 :::
 :::{.remark}
 \[
 \hat{f}(\xi) \da \mcl(f, i\xi) \da \int_\RR f(x) e^{-i\xi x} \dx
 .\]
+
 :::
 
 [[E-6H7HD]]

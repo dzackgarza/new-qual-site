@@ -16,6 +16,7 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 - Check that $\lim_{\abs{z\to \infty}}zg(z) = n$, so $g$ has a simple pole at $\infty$
 - Then $g$ has a Laurent series ${n\over z} + {c_2 \over z^2} + \cdots$
 - Integrate term-by-term to get $N(0) = n$.
+
 :::
 
 ### Rouche's Theorem
@@ -122,16 +123,20 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
 :::{.proof title="of FTA, using Generalized Liouville"}
 Given a nonconstant $p\in \CC[x]$, regard it as a function $p: \PP^1(\CC) \to \PP^1(\CC)$ by extending so that $p(\infty) = \infty$.
 Since $p$ is nonconstant, by the lemma $p$ is surjective, so there exists some $x\neq \infty$ in $\PP^1(\CC)$ with $p(x) = 0$.
+
 :::
 
 # Unsorted Theorems
 [[T-ISZP3]]
 [[T-AELHU]]
+
 :::{.corollary}
 The ring of holomorphic functions on a domain in $\CC$ has no zero divisors.
+
 :::
 :::{.proof}
 ???
+
 :::
 Morera
 [[E-QO2S7]]

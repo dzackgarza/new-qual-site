@@ -28,6 +28,7 @@ Fix some notation:
 
 :::{.fact}
 If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
+
 :::
 
 [[T-SJCF7]]
@@ -41,6 +42,7 @@ $$
 \min_A(\lambda_i)\vector v_i = \min_A(A)\vector v_i = \vector 0
 ,$$ 
 which forces $\min_A(\lambda_i) = 0$.
+
 :::
 
 ## Finding Minimal Polynomials

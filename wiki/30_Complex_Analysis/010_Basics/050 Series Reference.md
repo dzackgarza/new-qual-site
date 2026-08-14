@@ -30,6 +30,7 @@ Where this comes up most often:
 \[
 \qty{\dd{}{z}}^k z^n = \falling{n}{k} \, z^{n-k}
 .\]
+
 :::
 
 :::{.fact title="Generalized Binomial Theorem"}
@@ -41,6 +42,7 @@ Then
 \[
 (x+y)^n = \sum_{k\geq 0} {n\choose k} x^{k}y^{n-k}
 .\]
+
 :::
 
 :::{.fact title="List of useful series"}
@@ -144,6 +146,7 @@ The product of two sequences is given by the Cauchy product
 \[
 \sum a_kz^k \cdot \sum b_k z^k = \sum c_k z^k,\quad c_k \da \sum_{j\leq k} a_k b_{k-j}
 .\]
+
 :::
 
 # Inverting Series
@@ -159,6 +162,7 @@ b_n &= -a_0\inv \sum_{1\leq i \leq n} a_i b_{n-i} \\
 &= -a_0\inv \sum_{0\leq i \leq n-1} a_{n-i}b_i \\
 &= -{1\over a_0}\qty{a_nb_0 + a_{n-1}b_1 + \cdots + a_1 b_{n-1} }
 .\]
+
 :::
 
 :::{.proof title="Sketch"}
@@ -178,6 +182,7 @@ a_0b_2 + a_1b_1 + a_2b_0 &= 1 \\
 [[P-IM6MH]]
 [[P-OCOSY]]
 [[P-VT4TV]]
+
 ## Geometric Series
 
 :::{.fact title="Using geometric series to invert power series"}
@@ -198,14 +203,17 @@ Purely formally, we have
 \[
 {1\over A(z)} = {1 \over 1- (1-A(z))} = \sum_{k\geq 0} (1-A(z))^k z^k
 .\]
+
 :::
 
 :::{.warnings}
 In order to invert $A$ using this method, you need to clear powers of $z$ so that a leading term is constant.
+
 :::
 
 [[P-VO5YR]]
 [[P-NBSTW]]
+
 ## Polynomial Long Division
 
 :::{.example title="Inverting by polynomial long division"}
@@ -255,6 +263,7 @@ z^2 +z^3 &= (1+z)(z^2) + 0 \\
 {z^3 + 1\over z+1}&= 1 - z + z^2
 ,\]
 which is useful for generating the first few low order terms of a series expansion.
+
 :::
 
 [[P-KUNLD]]

@@ -38,12 +38,14 @@ We also have
 
 :::{.proof title="$p=1$ case"}
 ?
+
 :::
 
 
 
 :::{.proof title="$p=2$ case"}
 Use Riesz Representation for Hilbert spaces.
+
 :::
 
 [[PR-N7YFV]]
@@ -55,6 +57,7 @@ Use Riesz Representation for Hilbert spaces.
 \[
 \int \abs{f}^p = \int \liminf \abs{f_k}^p \leq \liminf \int \abs{f_k}^p = M
 .\]
+
 :::
 
 [[PR-JX4YU]]
@@ -65,6 +68,7 @@ Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 \norm{\tau_h f - f}_p
 \leq \norm{\tau_h f - \tau_h g}_p + \norm{\tau_h g - g}_p + \norm{g - f}_p \to 0
 .\]
+
 :::
 
 [[PR-3W4FO]]
@@ -80,6 +84,7 @@ Use Young's inequality
 
 # $L^1$ Facts
 [[PR-HFYSO]]
+
 :::{.proof}
 \envlist
 
@@ -101,8 +106,10 @@ Use Young's inequality
   0 < {1\over n} \chi_{E_n} \leq f \implies
   0 < \int {1\over n} \chi_{E_n} \leq \int f
   .\]
+
 :::
 [[PR-XAVMU]]
+
 :::{.proof}
 \envlist
 
@@ -116,13 +123,17 @@ Use Young's inequality
 - For $f\in L^+$, choose $\phi_n \nearrow f$ so $\int \phi_n \to \int f$.
 - Similarly, $\tau_h \phi_n \nearrow \tau_h f$ so $\int \tau_h f \to \int f$
 - Finally $\theset{\int \tau_h \phi} = \theset{\int \phi}$ by step 1, and the suprema are equal by uniqueness of limits.
+
 :::
 [[PR-HLPMX]]
 [[PR-EHL3O]]
+
 :::{.warnings}
 This doesn't hold for general $L^1$ functions, take any train of triangles with height 1 and summable areas.
+
 :::
 [[T-5YROQ]]
+
 :::{.proof}
 \envlist
 
@@ -130,18 +141,24 @@ This doesn't hold for general $L^1$ functions, take any train of triangles with 
 - Take $g\converges{L_1}\to f$ with $g\in C_c$
 - Then choose $N$ large enough so that $g=0$ on $E\definedas B_N(0)$
 - Then \[ \int_E \abs{f} \leq \int_E\abs{f-g} + \int_E \abs{g}.\]
+
 :::
 [[PR-O4AY4]]
+
 :::{.proof title="?"}
 Approximate with compactly supported functions.
 Take $g\converges{L_1}\to f$, then $g \leq M$ so $\int_E{f} \leq \int_E{f-g} + \int_E g \to 0 + M \cdot m(E) \to 0$.
+
 :::
 [[PR-2KEIE]]
+
 :::{.proof title="?"}
 Idea: Split up domain
 Let $A = \theset{f(x) = \infty}$, then $\infty > \int f = \int_A f + \int_{A^c} f = \infty \cdot m(A) + \int_{A^c} f \implies m(X) =0$.
+
 :::
 [[T-G543T]]
+
 :::{.proof}
 \envlist
 
@@ -155,13 +172,18 @@ Take $g\converges{L_1}\to f$ with $g\in C_c$.
 &\converges{??}\to 0
 ,\]
 which follows because we can enlarge the support of $g$ to $K$ where the integrand is zero on $K^c$, then apply uniform continuity on $K$.
+
 :::
 [[PR-TNFL4]]
+
 :::{.proof title="?"}
 Fubini-Tonelli, and sketch region to change integration bounds.
+
 :::
 [[T-S3C3S]]
+
 :::{.proof title="?"}
 Fubini-Tonelli, and sketch region to change integration bounds, and continuity in $L^1$.
+
 :::
 # Lp Facts

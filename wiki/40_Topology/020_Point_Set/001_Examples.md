@@ -36,6 +36,7 @@ The following are some standard "nice" spaces:
 \[
 S^n, \DD^n, T^n, \RP^n, \CP^n, \mathbb{M}, \mathbb{K}, \Sigma_{g}, \RP^\infty, \CP^\infty
 .\]
+
 :::
 
 :::{.example title="A bank of counterexamples"}
@@ -117,6 +118,7 @@ The following are some nice examples of topologies to put on familiar spaces to 
 - Cofinite
 - Discrete and Indiscrete
 - Uniform
+
 :::
 
 :::{.example title="The cofinite topology"}
@@ -124,6 +126,7 @@ The cofinite topology on any space $X$ is always
 
 - Non-Hausdorff
 - Compact
+
 :::
 
 [[PR-NJTN5]]
@@ -135,6 +138,7 @@ If $\ts x_i$ is open for each $x_i \in X$, then
 - Unions of open sets are open.
 
 Thus $U$ is open.
+
 :::
 
 :::{.example title="The discrete topology"}
@@ -145,6 +149,7 @@ Some facts about the discrete topology:
 - Compact iff finite
 - Totally disconnected
 - If $X$ is discrete, every map $f:X\to Y$ for any $Y$ is continuous (obvious!)
+
 :::
 
 :::{.example title="The indiscrete topology"}
@@ -154,6 +159,7 @@ Some facts about the indiscrete topology:
 - Never Hausdorff
 - If $Y$ is indiscrete, every map $f:X\to Y$ is continuous (obvious!)
 - Always compact
+
 :::
 
 ### Connectedness

@@ -224,6 +224,7 @@ Todo
 [[P-6OVVU]]
 [[P-XTPAP]]
 [[P-E53UO]]
+
 ## Fundamental Group
 
 [[P-QNUFT]]
@@ -239,6 +240,7 @@ Todo
 [[P-V4A37]]
 [[P-5WRVK]]
 [[P-LKYOC]]
+
 ## Group Actions
 
 1. 
@@ -254,6 +256,7 @@ Todo
 [[P-O2J6S]]
 [[P-IXL2P]]
 [[P-63J4S]]
+
 ## Simplicial Homology
 
 1. Todo 
@@ -263,6 +266,7 @@ Todo
 [[P-557LL]]
 [[P-MA7SC]]
 [[P-ALVYE]]
+
 ## Mayer Vietoris Problems
 
 ### $\RP^2$

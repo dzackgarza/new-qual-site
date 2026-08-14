@@ -87,6 +87,7 @@ The $n\dash$torus, defined as
 \[
 T^n \da \prod_{j=1}^n S^1 = S^1 \times S^1 \times \cdots
 .\]
+
 :::
 
 :::{.example title="Grassmannians"}
@@ -98,6 +99,7 @@ Note that $\RP^n = \Gr(n, 1)_{\RR}$ and $\CP^n = \Gr(n, 1)_{/\CC}$.
 
 :::{.example title="Stiefel Manifolds"}
 The Stiefel manifold $V_{n}(k)_{\RR}$, the space of orthonormal $k\dash$frames in $\RR^n$?
+
 :::
 
 :::{.example title="Lie Groups"}
@@ -122,6 +124,7 @@ Some other spaces that show up, but don't usually have great algebraic topologic
 * The projective special linear group over a ring $R$, $PSL_{n}(R)$
 * The modular groups $PSL_{n}(\ZZ)$
   * Specifically $PSL_{2}(\ZZ)$
+
 :::
 
 :::{.example title="Eilenberg-MacLane Spaces"}
@@ -183,11 +186,13 @@ In low dimensions, there are some "accidental" homeomorphisms:
 
 :::{.example title="Deleting points"}
 Write $D(k, X)$ for the space $X$ with $k\in \NN$ distinct points deleted, i.e. the punctured space $X - \theset{x_{1}, x_{2}, \ldots x_{k}}$ where each $x_{i} \in X$.
+
 :::
 
 :::{.example title="Bouquets of Spheres"}
 The "generalized uniform bouquet"? $\mathcal{B}^n(m) = \bigvee_{i=1}^n S^m$.
 There's no standard name for this, but it's an interesting enough object to consider!
+
 :::
 
 :::{.example title="Other ways to modify a known space"}

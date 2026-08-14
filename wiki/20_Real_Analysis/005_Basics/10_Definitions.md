@@ -13,6 +13,7 @@ order: 10
 :::{.remark}
 The main difference is that $\delta$ may depend on $x_0$ and $\eps$ in continuity, but only depends on $\eps$ in the uniform version.
 I.e. once $\delta$ is fixed, for continuity one may only range over $x$, but in uniform continuity one can range over all pairs $x,y$.
+
 :::
 
 [[D-TVKFM]]
@@ -27,6 +28,7 @@ I.e. once $\delta$ is fixed, for continuity one may only range over $x$, but in 
 
 :::{.fact}
 If $X$ is complete, then absolutely convergent implies convergent.
+
 :::
 
 [[D-2MJRE]]

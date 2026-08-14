@@ -2,7 +2,7 @@
 
 ## Point-Set Topology
 
-:::{.remark title="on the term 'locally'"}
+::: {.remark title="on the term 'locally'"}
 The prefix "locally blah" almost always means that for every $x\in X$, there exists *some* neighborhood $N_x\ni x$ which has property "blah".
 :::
 
@@ -10,11 +10,11 @@ The prefix "locally blah" almost always means that for every $x\in X$, there exi
 
 [[D-WKURJ]]
 
-[[D-3KS2F]]
-[[D-EHUCS]]
-[[D-KW52R]]
-:::{.remark}
-Is this actually a poset relation? Fails reflexivity.
+[[D-3KS2F]] [[D-EHUCS]] [[D-KW52R]]
+
+::: {.remark}
+Is this actually a poset relation?
+Fails reflexivity.
 :::
 [[D-ZNVPP]]
 
@@ -26,10 +26,7 @@ Is this actually a poset relation? Fails reflexivity.
 
 [[D-FAEYE]]
 
-[[D-KJC6W]]
-[[D-Q5272]]
-[[D-UHTGH]]
-[[D-EILKJ]]
+[[D-KJC6W]] [[D-Q5272]] [[D-UHTGH]] [[D-EILKJ]]
 
 [[D-UI7ZL]]
 
@@ -43,15 +40,13 @@ Is this actually a poset relation? Fails reflexivity.
 
 [[D-AOJG3]]
 
-[[D-KJBAK]]
-[[D-HS6DE]]
+[[D-KJBAK]] [[D-HS6DE]]
 
 [[D-X6LZD]]
 
 [[D-E2NWN]]
 
-[[D-6FMP3]]
-[[D-BUAYX]]
+[[D-6FMP3]] [[D-BUAYX]]
 
 [[D-ZFRV4]]
 
@@ -65,8 +60,7 @@ Is this actually a poset relation? Fails reflexivity.
 
 [[D-GYBZ2]]
 
-[[D-RZ7I3]]
-[[D-6JJJU]]
+[[D-RZ7I3]] [[D-6JJJU]]
 
 [[D-5EOQZ]]
 
@@ -82,8 +76,7 @@ Is this actually a poset relation? Fails reflexivity.
 
 [[D-CTGON]]
 
-[[D-HQSEQ]]
-[[D-TNBFZ]]
+[[D-HQSEQ]] [[D-TNBFZ]]
 
 [[D-W56JR]]
 
@@ -97,9 +90,7 @@ Is this actually a poset relation? Fails reflexivity.
 
 [[D-7ALR2]]
 
-[[D-JKH35]]
-[[D-WHVXL]]
-[[D-MQSFD]]
+[[D-JKH35]] [[D-WHVXL]] [[D-MQSFD]]
 
 [[D-C5THN]]
 
@@ -112,7 +103,8 @@ Is this actually a poset relation? Fails reflexivity.
 [[D-EPTMG]]
 
 [[D-NCLVD]]
-:::{.remark}
+
+::: {.remark}
 If $X$ retracts onto $A$ with $\iota:A\injects X$, then $i_*$ is injective.
 Any nonempty space retracts to a point via a constant map.
 :::
@@ -132,15 +124,18 @@ Any nonempty space retracts to a point via a constant map.
 [[D-RT2FT]]
 
 [[D-4DXA7]]
-:::{.example title="Counterexamples for separation axioms"}
+
+::: {.example title="Counterexamples for separation axioms"}
 \envlist
 
 - Not $T_0$: the space \( \ts{ f:\RR\to \CC\st \int_\RR \abs{f}^2 < \infty } \), since two a.e. equal functions aren't *distinguishable* (they have precisely the same set of neighborhoods).
+
 - $T_1$ but not $T_0$: $\spec R$ for $R\in \CRing$ with the Zariski topology.
   There are points that aren't closed: $\spec R \sm \mspec R$.
 :::
 [[D-2TZAI]]
-:::{.remark}
+
+::: {.remark}
 A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is closed in $\RR$.
 :::
 
@@ -183,12 +178,16 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 [[D-VZS33]]
 
 [[D-TD6AO]]
-:::{.example title="of colimits"}
+
+::: {.example title="of colimits"}
 \envlist
 
 - Products
+
 - Pullbacks
+
 - Inverse / projective limits
+
 - The \( p\dash \)adic integers \( \ZZ_{p} \).
 :::
 
@@ -201,10 +200,10 @@ A mnemonic: in $\RR$, $\intersect_{n\in \NN} (-1/n, 1/n) = \ts{0}$ which is clos
 [[D-ANO2D]]
 
 [[D-B2JER]]
-	
-:::{.example title="Applications of the cup product"}
+
+::: {.example title="Applications of the cup product"}
 On a manifold, the cup product is Poincaré dual to the intersection of submanifolds.
-Also used to show $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$. 
+Also used to show $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
 :::
 
 [[D-ZOU5G]]
@@ -216,10 +215,10 @@ Also used to show $T^2 \not\homotopic S^2 \vee S^1 \vee S^1$.
 [[D-UH3L5]]
 
 [[D-2O3N7]]
-:::{.remark}
-A deformation retract between a space and a subspace is a homotopy equivalence, and further $X\homotopic Y$ iff there is a $Z$ such that both $X$ and $Y$ are deformation retracts of $Z$. Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$, then $A \homotopic B$.
 
-
+::: {.remark}
+A deformation retract between a space and a subspace is a homotopy equivalence, and further $X\homotopic Y$ iff there is a $Z$ such that both $X$ and $Y$ are deformation retracts of $Z$.
+Moreover, if $A$ and $B$ both have deformation retracts onto a common space $X$, then $A \homotopic B$.
 :::
 
 [[D-6UHU7]]
@@ -231,7 +230,8 @@ A deformation retract between a space and a subspace is a homotopy equivalence, 
 [[D-QK5BM]]
 
 [[D-Z2V7T]]
-:::{.example title="of an exact functor"}
+
+::: {.example title="of an exact functor"}
 $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 :::
 
@@ -266,7 +266,7 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 [[D-TK4QD]]
 
 [[D-6POU4]]
-	
+
 [[D-Y73BB]]
 
 [[D-VP4LC]]
@@ -379,8 +379,7 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-3VEC5]]
 
-[[D-I7D56]]
-[[D-M3Y6X]]
+[[D-I7D56]] [[D-M3Y6X]]
 
 [[D-5KMYI]]
 
@@ -424,8 +423,6 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 
 [[D-UEWPN]]
 
-
-
 [[D-EGHL6]]
 
 [[D-VWYRN]]
@@ -435,8 +432,3 @@ $\wait \tensor_{R} \wait$ is a right exact bifunctor.
 [[D-HWN6T]]
 
 [[D-PKIY7]]
-
-
-
-
-

@@ -192,9 +192,11 @@ $\displaystyle \int \sec ^{-1} (x) ~dx = x \sec ^{-1} (x) - \ln (\sqrt {x^2 - 1}
 ###### Sin
 
 [[P-PHHXJ]] [[P-45Y6B]] [[P-5OCGZ]] [[P-UUACQ]]
+
 ###### Sec
 
 [[P-5UMRG]] [[P-SUXVR]]
+
 ###### Tan
 
 [[P-XRZVW]]
@@ -232,6 +234,7 @@ $\displaystyle \int \sec ^{-1} (x) ~dx = x \sec ^{-1} (x) - \ln (\sqrt {x^2 - 1}
 ##### Level 3
 
 [[P-PAVWJ]]
+
 ## Powers of Sine and Cosine
 
 ##### Trick

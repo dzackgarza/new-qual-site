@@ -6,21 +6,26 @@
 $H_0(X)$ is a free abelian group on the set of path components of $X$.
 Thus if $X$ is path connected, $H_0(X) \cong \ZZ$.
 In general, $H_0(X) \cong \ZZ^{\abs{\pi_0(X)}}$, where $\abs{\pi_0(X)}$ is the number of path components of $X$.
+
 :::
 
 [[PR-B6BB2]]
+
 :::{.remark}
 May need some good pair condition?
+
 :::
 
 :::{.example title="Application"}
 \[
 H_{n}(\bigvee_{k} S^n) = \ZZ^k
 .\]
+
 :::
 
 :::{.proof title="?"}
 Mayer-Vietoris. 
+
 :::
 
 :::{.warnings}
@@ -43,6 +48,7 @@ H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bi
 
 - $H_{n}(X) = 0 \iff X$ has no $n\dash$cells.
 - $C^0 X = \pt \implies d_{1}: C^1 \to C^0$ is the zero map.
+
 :::
 
 ## Known Homology
@@ -56,6 +62,7 @@ H_{i}(S^n) =
 0 & \text{else}.
 \end{cases}
 \]
+
 :::
 
 :::{.example title="Real Projective Spaces"}
@@ -75,12 +82,14 @@ H_{i}(S^n) =
 
 :::{.fact title="Useful algebra fact"}
 Since $\ZZ$ is free and thus projective, any exact sequence of the form $0 \to \ZZ^n \to A \to \ZZ^m \to 0$ splits and $A\cong \ZZ^{n}\cross \ZZ^m$.
+
 :::
 
 [[T-3VUOH]]
 
 :::{.example title="Application: computing the homology of a connect sum"}
 $H_*(A \# B)$: Use the fact that $A\# B = A \union_{S^n} B$ to apply Mayer-Vietoris.
+
 :::
 
 [[PR-6PENU]]
@@ -107,8 +116,10 @@ In particular, we have the shape $0 \to A \to B \to 0$ in an exact sequence, whi
 [[T-TZ3X7]]
 
 [[T-2W5WN]]
+
 :::{.remark}
 Might need assumptions: finite CW complex?
+
 :::
 
 ## Relative Homology

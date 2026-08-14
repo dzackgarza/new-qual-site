@@ -8,13 +8,11 @@ order: 40
 
 [[P-4KPQM]]
 
-
 ## Spring 2020.7
 
 ^aff739
 
 [[P-AKSSQ]]
-
 
 ## Fall 2020.6
 
@@ -42,11 +40,9 @@ order: 40
 
 [[P-DLF3X]]
 
-
 ## Tie's Extra Questions: Spring 2015
 
 [[P-R424U]]
-
 
 ## Tie's Extra Questions: Spring 2015
 
@@ -57,8 +53,13 @@ order: 40
 [[P-ALI5T]]
 
 ### Spring 20202 HW 3 #  3.8.15
+
 [[P-VEOV5]]
+
 ### Spring 20202 HW 3 #  3.8.17
+
 ### Spring 20202 HW 3 #  3.8.19
+
 ### Spring 20202 HW 3 #  9
+
 ### Spring 20202 HW 3 #  14

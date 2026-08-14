@@ -20,6 +20,7 @@ order: 20
 :::{.proof title="?"}
 Take $f_k(x) = x^n$, which converges to $\chi(x=1)$. 
 The limit is not continuous, so no subsequence can converge.
+
 :::
 
 [[T-QPTHZ]]
@@ -42,6 +43,7 @@ The limit is not continuous, so no subsequence can converge.
 
 :::{.proof title="?"}
 Its complement is a union of open intervals, and can't contain an interval since intervals have positive measure and $m(C_n)$ tends to zero.
+
 :::
 
 [[C-44LL4]]
