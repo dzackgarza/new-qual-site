@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {1 - \\sqrt {x}}{1 + \\sqrt {x}} ~dx = \\co
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

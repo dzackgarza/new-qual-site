@@ -6,7 +6,9 @@ title: P-AR3HH at UGA prelim Fall 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - ideals
+  - rings
 relations:
 - kind: instance-of
   target: P-AR3HH

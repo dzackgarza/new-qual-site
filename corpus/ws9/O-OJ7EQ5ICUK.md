@@ -6,7 +6,9 @@ title: P-GWHUX at UGA prelim June 2008
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - abelian-groups
+  - structure-theorem
 relations:
 - kind: instance-of
   target: P-GWHUX

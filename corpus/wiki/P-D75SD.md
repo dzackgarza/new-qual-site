@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int \\sin(x) \\cos (\\cos (x)) ~dx = \\color{blue} {- 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
+  - trigonometry
 relations: []
 review: draft
 ---

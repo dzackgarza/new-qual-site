@@ -6,7 +6,8 @@ title: "1. Claim: this holds iff $f$ is injective iff $f$ has a left inverse."
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - functions-and-relations
 relations: []
 review: draft
 ---

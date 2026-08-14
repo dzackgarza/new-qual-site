@@ -6,7 +6,9 @@ title: P-ZYPI3 at UGA prelim June 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
 relations:
 - kind: instance-of
   target: P-ZYPI3

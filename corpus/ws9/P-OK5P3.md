@@ -6,7 +6,9 @@ title: Let $\gamma$ be the closed path which goes counterclockwise around the…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
+  - green-s-theorem
 relations: []
 review: draft
 ---

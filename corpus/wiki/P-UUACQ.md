@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int \\frac {x}{\\sqrt {4-x^4}} ~dx = \\color {blue} {\
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

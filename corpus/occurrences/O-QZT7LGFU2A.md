@@ -6,7 +6,9 @@ title: P-TVRVM at UGA prelim Fall 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - sequences-of-numbers
 relations:
 - kind: instance-of
   target: P-TVRVM

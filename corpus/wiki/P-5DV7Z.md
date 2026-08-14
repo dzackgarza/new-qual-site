@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x}{x^2+9} ~dx = \\color{blue} {\\frac 1 2 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

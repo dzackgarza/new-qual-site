@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int x\\sin^{-1}(\\frac {1}{x}) ~dx = \\color {blue} {\
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
+  - trigonometry
 relations: []
 review: draft
 ---

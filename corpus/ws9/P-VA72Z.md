@@ -6,7 +6,10 @@ title: "Provide examples to show that the series $\\sum_{n=1}^{\\infty} a_n^2$ m
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - series-of-numbers
+  - convergence-tests
+  - counterexamples
 relations: []
 review: draft
 ---

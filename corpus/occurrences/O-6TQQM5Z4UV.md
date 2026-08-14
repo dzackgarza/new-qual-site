@@ -6,7 +6,9 @@ title: P-34W2F at UGA prelim Fall 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations:
 - kind: instance-of
   target: P-34W2F

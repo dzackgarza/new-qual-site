@@ -6,7 +6,9 @@ title: P-SK4KT at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations:
 - kind: instance-of
   target: P-SK4KT

@@ -6,7 +6,10 @@ title: P-5RLR6 at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-5RLR6

@@ -6,7 +6,8 @@ title: Write the following statement in symbolic form, and then give (in symb…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations: []
 review: draft
 ---

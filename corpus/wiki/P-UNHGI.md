@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x+1}{x^2+2x+3} ~dx = \\color{blue} {\\frac
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

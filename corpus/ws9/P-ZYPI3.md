@@ -6,7 +6,9 @@ title: a. State the structure theorem for finitely generated modules over a P…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
 relations: []
 review: draft
 ---

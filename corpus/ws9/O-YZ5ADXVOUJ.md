@@ -6,7 +6,10 @@ title: P-VA72Z at UGA prelim Spring 2005
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - series-of-numbers
+  - convergence-tests
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-VA72Z

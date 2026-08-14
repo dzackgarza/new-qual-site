@@ -6,7 +6,9 @@ title: Let $F$ be a field of characteristic zero and $\overline{F}$ be an alg…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

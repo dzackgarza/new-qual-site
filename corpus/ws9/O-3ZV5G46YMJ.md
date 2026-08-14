@@ -6,7 +6,10 @@ title: P-HXR25 at UGA prelim June 2010
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - polynomials
 relations:
 - kind: instance-of
   target: P-HXR25

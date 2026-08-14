@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {1}{e^x + e^{-x}} ~dx = \\color{blue} {\\ta
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

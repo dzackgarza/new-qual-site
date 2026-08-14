@@ -6,7 +6,9 @@ title: P-TAPVD at UGA prelim Fall 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations:
 - kind: instance-of
   target: P-TAPVD

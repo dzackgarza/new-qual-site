@@ -6,7 +6,9 @@ title: P-HU56P at UGA prelim June 2010
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations:
 - kind: instance-of
   target: P-HU56P

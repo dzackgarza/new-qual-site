@@ -6,7 +6,9 @@ title: P-2ALGH at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
 relations:
 - kind: instance-of
   target: P-2ALGH

@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int_{0}^{\\pi} \\sqrt {1 + \\cos (2x)} ~dx= \\color {b
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

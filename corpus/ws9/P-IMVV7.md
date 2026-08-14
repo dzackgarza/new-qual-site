@@ -6,7 +6,8 @@ title: Let $k$ and $n$ be positive integers with $k \le n$. Give the definiti…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - combinatorics
 relations: []
 review: draft
 ---

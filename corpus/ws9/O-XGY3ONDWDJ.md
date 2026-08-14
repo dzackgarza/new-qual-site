@@ -6,7 +6,10 @@ title: P-ZG74L at UGA prelim July 2013
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - automorphisms
+  - fields
 relations:
 - kind: instance-of
   target: P-ZG74L

@@ -6,7 +6,9 @@ title: P-VPCLD at UGA prelim Fall 2016
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
 relations:
 - kind: instance-of
   target: P-VPCLD

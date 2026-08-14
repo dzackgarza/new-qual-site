@@ -6,7 +6,10 @@ title: For each of the following, either give an example or indicate that non…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - tensor-products
+  - modules
+  - counterexamples
 relations: []
 review: draft
 ---

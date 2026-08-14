@@ -6,7 +6,9 @@ title: P-VFB5V at UGA prelim June 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - finite-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-VFB5V

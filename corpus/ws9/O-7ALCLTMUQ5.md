@@ -6,7 +6,8 @@ title: P-I3UPP at UGA prelim Spring 2006
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
 relations:
 - kind: instance-of
   target: P-I3UPP

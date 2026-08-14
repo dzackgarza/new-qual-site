@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int e^{\\sin ^2 (x)} \\sin (2x) ~dx = \\color{blue} {e
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
+  - trigonometry
 relations: []
 review: draft
 ---

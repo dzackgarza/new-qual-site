@@ -6,7 +6,10 @@ title: Give an example of each of the following. Justification is not necessa…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integral-domains
+  - principal-ideal-domains
+  - counterexamples
 relations: []
 review: draft
 ---

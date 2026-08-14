@@ -6,7 +6,8 @@ title: "2. We need to show that $R$ is reflexive, transitive, and symmetric."
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - functions-and-relations
 relations: []
 review: draft
 ---

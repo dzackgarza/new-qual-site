@@ -6,7 +6,8 @@ title: a) Let $\gamma$ be a path in the plane $\mathbb{R}^2$. Define what is…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
 relations: []
 review: draft
 ---

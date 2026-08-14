@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac 1 {x(\\ln(x))^2} ~dx = \\color{blue} {\\fra
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

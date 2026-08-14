@@ -6,7 +6,9 @@ title: P-JLPVR at UGA prelim Spring 2006
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - linear-algebra
+  - matrices
 relations:
 - kind: instance-of
   target: P-JLPVR

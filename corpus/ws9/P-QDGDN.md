@@ -6,7 +6,8 @@ title: "Let $X$ and $Y$ be sets and let $f: X \\to Y$ and $g: Y \\to X$ be funct
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - functions-and-relations
 relations: []
 review: draft
 ---

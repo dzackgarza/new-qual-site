@@ -6,7 +6,10 @@ title: a. List all abelian groups of order 60.
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - abelian-groups
+  - modules
+  - structure-theorem
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "1. Suppose $f_n \\rightrightarrows g$ with each $f_n$ bounded; we want\u
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
 relations: []
 review: draft
 ---

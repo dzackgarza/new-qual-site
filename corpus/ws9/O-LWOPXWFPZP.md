@@ -6,7 +6,9 @@ title: P-TGH5F at UGA prelim Fall 2002
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - bases
 relations:
 - kind: instance-of
   target: P-TGH5F

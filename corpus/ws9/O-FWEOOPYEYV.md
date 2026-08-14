@@ -6,7 +6,10 @@ title: P-3GKGV at UGA prelim Summer 2009
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - noetherian-rings
+  - rings
+  - modules
 relations:
 - kind: instance-of
   target: P-3GKGV

@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\cos (x+\\frac {\\pi}{4}) \\cos(x- \\frac {\\pi}{
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

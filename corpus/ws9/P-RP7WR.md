@@ -6,7 +6,10 @@ title: a. What finite groups $G$ can occur as collections of automorphisms of…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - automorphisms
+  - fields
 relations: []
 review: draft
 ---

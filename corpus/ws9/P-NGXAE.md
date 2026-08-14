@@ -6,7 +6,9 @@ title: Let $K$ be the splitting field of $x^4 - 6$ over $\mathbb{Q}$.
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - splitting-fields
+  - galois-theory
 relations: []
 review: draft
 ---

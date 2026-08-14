@@ -6,7 +6,10 @@ title: P-C6SRA at UGA prelim Summer 2009
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - tensor-products
+  - modules
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-C6SRA

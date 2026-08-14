@@ -6,7 +6,10 @@ title: Let $R$ be a PID with field of fractions $F$. Let $V$ be a vector spac…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - modules
+  - free-modules
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: P-GB7EM at UGA prelim Spring 2003
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
+  - continuity
 relations:
 - kind: instance-of
   target: P-GB7EM

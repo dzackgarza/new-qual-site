@@ -6,7 +6,9 @@ title: P-LU2L3 at UGA prelim Summer 2011
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - rational-canonical-form
+  - matrices
 relations:
 - kind: instance-of
   target: P-LU2L3

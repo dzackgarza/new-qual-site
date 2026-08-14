@@ -6,7 +6,9 @@ title: P-6POHT at UGA prelim Spring 2005
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - number-theory
 relations:
 - kind: instance-of
   target: P-6POHT

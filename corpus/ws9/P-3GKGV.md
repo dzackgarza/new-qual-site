@@ -6,7 +6,10 @@ title: A ring is called left (resp. right) Artinian if every descending chain…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - noetherian-rings
+  - rings
+  - modules
 relations: []
 review: draft
 ---

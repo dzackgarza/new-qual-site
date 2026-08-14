@@ -6,7 +6,8 @@ title: "$\\cos (x) + \\cos (y) = 2 \\cos (\\frac {x + y}{2}) \\cos (\\frac {x - 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - trigonometry
 relations: []
 review: draft
 ---

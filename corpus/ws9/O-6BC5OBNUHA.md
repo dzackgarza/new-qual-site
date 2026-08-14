@@ -6,7 +6,10 @@ title: P-CQNPO at UGA prelim Spring 2007
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - counterexamples
+  - differentiation
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-CQNPO

@@ -6,7 +6,9 @@ title: P-NXDOU at UGA prelim June 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - factorization
+  - integral-domains
 relations:
 - kind: instance-of
   target: P-NXDOU

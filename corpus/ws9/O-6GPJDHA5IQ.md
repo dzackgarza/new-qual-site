@@ -6,7 +6,8 @@ title: P-3373K at UGA prelim Fall 2005
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - roots-of-unity
 relations:
 - kind: instance-of
   target: P-3373K

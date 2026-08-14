@@ -6,7 +6,9 @@ title: "Base case: for $n=1$, we have $a_1 = 1 \\leq a_2 = \\frac{16} 3 \\leq 10
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

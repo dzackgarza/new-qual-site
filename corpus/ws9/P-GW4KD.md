@@ -6,7 +6,9 @@ title: Let $n>1$ be an integer. Show that the automorphism group of the cycli…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - automorphisms
+  - cyclic-groups
 relations: []
 review: draft
 ---

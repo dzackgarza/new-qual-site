@@ -6,7 +6,9 @@ title: "Solution: $x^3e^{-x^2} dx = \\frac {1}{2} x^2 e^{-x^2} dx^2$ Used 2019 $
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

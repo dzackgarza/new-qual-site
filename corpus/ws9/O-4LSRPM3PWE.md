@@ -6,7 +6,10 @@ title: P-3DS32 at UGA prelim Summer 2007
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - abelian-groups
+  - modules
+  - structure-theorem
 relations:
 - kind: instance-of
   target: P-3DS32

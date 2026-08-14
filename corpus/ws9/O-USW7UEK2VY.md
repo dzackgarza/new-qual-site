@@ -6,7 +6,8 @@ title: P-TWH7U at UGA prelim Fall 2006
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
 relations:
 - kind: instance-of
   target: P-TWH7U

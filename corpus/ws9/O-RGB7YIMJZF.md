@@ -6,7 +6,10 @@ title: P-AOZMW at UGA prelim Fall 2004
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - series-of-numbers
+  - convergence-tests
+  - power-series
 relations:
 - kind: instance-of
   target: P-AOZMW

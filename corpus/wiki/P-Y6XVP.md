@@ -6,7 +6,9 @@ title: "3. $\\displaystyle \\int e^{(x + e^x)} ~dx = \\color{blue} {e^{e^{x}}}\u
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

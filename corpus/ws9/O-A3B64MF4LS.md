@@ -6,7 +6,8 @@ title: P-QDGDN at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - functions-and-relations
 relations:
 - kind: instance-of
   target: P-QDGDN

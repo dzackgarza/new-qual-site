@@ -6,7 +6,9 @@ title: "Parts: Negating\u2026"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
+  - uniform-convergence
 relations: []
 review: draft
 ---

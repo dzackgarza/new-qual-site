@@ -6,7 +6,9 @@ title: P-4STQR at UGA prelim Spring 2004
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - bases
 relations:
 - kind: instance-of
   target: P-4STQR

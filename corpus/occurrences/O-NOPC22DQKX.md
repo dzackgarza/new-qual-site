@@ -6,7 +6,9 @@ title: P-CWELY at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - linear-algebra
 relations:
 - kind: instance-of
   target: P-CWELY

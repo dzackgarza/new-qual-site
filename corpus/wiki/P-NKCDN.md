@@ -6,7 +6,10 @@ title: "Solution: $u_1 = \\cos (x)\u200b$, $v_1 = e^x\u200b$, $du_1 = - \\sin (x
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
+  - trigonometry
 relations: []
 review: draft
 ---

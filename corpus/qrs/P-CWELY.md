@@ -6,7 +6,9 @@ title: "$V = \\theset{\\vector v \\in \\RR^3 \\suchthat \\inner{\\vector v}{\\th
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - linear-algebra
 relations: []
 review: draft
 ---

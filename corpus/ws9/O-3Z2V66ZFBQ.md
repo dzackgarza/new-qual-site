@@ -6,7 +6,9 @@ title: P-VAWOC at UGA (undated) (prelim)
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - taylor-series
+  - power-series
 relations:
 - kind: instance-of
   target: P-VAWOC

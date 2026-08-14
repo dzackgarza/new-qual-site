@@ -6,7 +6,9 @@ title: P-GW4KD at UGA prelim Summer 2007
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - automorphisms
+  - cyclic-groups
 relations:
 - kind: instance-of
   target: P-GW4KD

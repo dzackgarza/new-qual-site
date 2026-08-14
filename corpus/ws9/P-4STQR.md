@@ -6,7 +6,9 @@ title: a) Define what it means for vectors $v_1, \ldots, v_n$ in a vector spa…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - bases
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\ln (ax + b) ~dx = \\color{blue} {\\frac {ax + b}
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
 relations: []
 review: draft
 ---

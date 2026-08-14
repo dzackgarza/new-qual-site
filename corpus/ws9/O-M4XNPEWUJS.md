@@ -6,7 +6,9 @@ title: P-HOBOM at UGA prelim Fall 2005
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - groups
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-HOBOM

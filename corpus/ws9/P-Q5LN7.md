@@ -6,7 +6,8 @@ title: Let $\alpha$ be the complex number $-2+2\sqrt{3}i$. Express $\alpha^3$…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - roots-of-unity
 relations: []
 review: draft
 ---

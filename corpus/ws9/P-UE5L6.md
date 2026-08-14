@@ -6,7 +6,10 @@ title: "Suppose $f$ is a continuous function satisfying the equation $f(x) = 5 +
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - differentiation
+  - integrals
+  - continuity
 relations: []
 review: draft
 ---

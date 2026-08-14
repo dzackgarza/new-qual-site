@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {e^x}{e^x + 1} ~dx = \\color{blue} {\\ln (e
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

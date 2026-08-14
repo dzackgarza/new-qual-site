@@ -6,7 +6,8 @@ title: "$\\displaystyle \\int 2018^x ~dx = \\color {blue} {\\frac {2018^x}{\\ln 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
 relations: []
 review: draft
 ---

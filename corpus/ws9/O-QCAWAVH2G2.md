@@ -6,7 +6,8 @@ title: P-4PCPV at UGA prelim Fall 2007
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations:
 - kind: instance-of
   target: P-4PCPV

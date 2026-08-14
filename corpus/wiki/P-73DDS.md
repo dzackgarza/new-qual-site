@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int \\frac {\\cos(x)}{\\sin ^2 (x)} ~dx = \\color {blu
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
+  - u-substitution
 relations: []
 review: draft
 ---

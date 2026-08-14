@@ -6,7 +6,9 @@ title: "Used 2019 $\\displaystyle \\int \\sin (x) \\cos (x) \\cot (x) \\tan (x) 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

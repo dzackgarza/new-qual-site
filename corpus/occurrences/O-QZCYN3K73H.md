@@ -6,7 +6,8 @@ title: P-F7Y7R at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations:
 - kind: instance-of
   target: P-F7Y7R

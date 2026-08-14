@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int_{0}^{1} \\frac {1}{\\sqrt {x(1-x)}} ~dx = 2 \\sin 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - improper-integrals
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

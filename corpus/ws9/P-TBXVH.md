@@ -6,7 +6,9 @@ title: "Suppose $f: \\mathbb{R} \\to \\mathbb{R}$."
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - limits
+  - continuity
 relations: []
 review: draft
 ---

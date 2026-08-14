@@ -6,7 +6,9 @@ title: P-2WRUJ at UGA prelim Fall 2007
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - combinatorics
 relations:
 - kind: instance-of
   target: P-2WRUJ

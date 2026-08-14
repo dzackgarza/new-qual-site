@@ -6,7 +6,9 @@ title: P-JHQKZ at UGA prelim Summer 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - modules
+  - ideals
 relations:
 - kind: instance-of
   target: P-JHQKZ

@@ -6,7 +6,9 @@ title: a. Find the Maclaurin series expansion of $f(x) = xe^{2x}$ (that is, t…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - taylor-series
+  - power-series
 relations: []
 review: draft
 ---

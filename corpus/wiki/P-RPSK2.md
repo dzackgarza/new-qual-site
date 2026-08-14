@@ -6,7 +6,8 @@ title: "Parts We have $\\int_C F_1 dx + F_2 dy + \\cdots = \\int _ { C } \\vec {
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
 relations: []
 review: draft
 ---

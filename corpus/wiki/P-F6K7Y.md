@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int \\sec^3(x) ~dx = \\color {blue} {\\frac {1}{2} (\\
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {xe^x\\ln x - e^x}{x\\ln^2 x} = \\color {bl
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - differentiation
 relations: []
 review: draft
 ---

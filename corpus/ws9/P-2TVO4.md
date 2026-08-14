@@ -6,7 +6,10 @@ title: Let $p < q$ be two distinct odd primes such that $p \nmid q - 1$. Let…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - splitting-fields
+  - galois-theory
+  - roots-of-unity
 relations: []
 review: draft
 ---

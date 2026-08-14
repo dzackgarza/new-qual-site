@@ -6,7 +6,10 @@ title: a. State the binomial theorem.
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - combinatorics
+  - number-theory
 relations: []
 review: draft
 ---

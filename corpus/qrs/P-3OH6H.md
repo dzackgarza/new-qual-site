@@ -6,7 +6,9 @@ title: "2. Claim: take $\\delta < \\min(1, \\sqrt{\\frac{\\varepsilon}{5}})$. Th
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - limits
+  - continuity
 relations: []
 review: draft
 ---

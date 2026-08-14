@@ -6,7 +6,9 @@ title: For a positive integer $n$, let $I_n$ denote the $n \times n$ identity…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

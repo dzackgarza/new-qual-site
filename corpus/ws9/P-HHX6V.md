@@ -6,7 +6,9 @@ title: Let $D$ be a commutative ring with unit. A submodule $N$ of the $D$-mo…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - modules
+  - free-modules
 relations: []
 review: draft
 ---

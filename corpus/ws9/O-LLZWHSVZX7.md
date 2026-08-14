@@ -6,7 +6,9 @@ title: P-ABRWU at UGA prelim Fall 2004
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
+  - differentiation
 relations:
 - kind: instance-of
   target: P-ABRWU

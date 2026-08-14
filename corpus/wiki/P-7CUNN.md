@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x^3 + 4x^2}{x^2 + 4x + 3} ~dx = \\color{bl
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - partial-fractions
 relations: []
 review: draft
 ---

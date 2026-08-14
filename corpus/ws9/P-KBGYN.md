@@ -6,7 +6,9 @@ title: Let $a$ be a real number other than 1. Use induction to show that for…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - series-of-numbers
 relations: []
 review: draft
 ---

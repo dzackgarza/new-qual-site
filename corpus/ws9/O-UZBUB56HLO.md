@@ -6,7 +6,10 @@ title: P-2TVO4 at UGA prelim Summer 2011
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - splitting-fields
+  - galois-theory
+  - roots-of-unity
 relations:
 - kind: instance-of
   target: P-2TVO4

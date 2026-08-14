@@ -6,7 +6,9 @@ title: "1. Definitions:"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations: []
 review: draft
 ---

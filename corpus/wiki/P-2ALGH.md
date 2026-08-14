@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\ln ^2 (x) ~dx = \\color{blue} {2 x - 2 x \\ln (x
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
 relations: []
 review: draft
 ---

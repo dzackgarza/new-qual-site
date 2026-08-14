@@ -6,7 +6,10 @@ title: "Consider the polynomial ring $\\mathbb{Z}[x]$."
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - ideals
+  - polynomials
+  - rings
 relations: []
 review: draft
 ---

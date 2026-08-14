@@ -6,7 +6,10 @@ title: Give a complete factorization of each of the following over the indica…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - factorization
+  - polynomials
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

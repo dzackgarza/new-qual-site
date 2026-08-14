@@ -6,7 +6,9 @@ title: Recall that the Fibonacci numbers are defined by $F_0 = 1, F_1 = 1$, a…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - number-theory
 relations: []
 review: draft
 ---

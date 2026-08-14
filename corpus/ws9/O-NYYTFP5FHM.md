@@ -6,7 +6,9 @@ title: P-NGXAE at UGA prelim July 2013
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - splitting-fields
+  - galois-theory
 relations:
 - kind: instance-of
   target: P-NGXAE

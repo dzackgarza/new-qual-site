@@ -6,7 +6,9 @@ title: P-75G3E at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-75G3E

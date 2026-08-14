@@ -6,7 +6,10 @@ title: P-W6TOK at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
+  - partial-fractions
 relations:
 - kind: instance-of
   target: P-W6TOK

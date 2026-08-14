@@ -6,7 +6,8 @@ title: P-CEU5R at UGA prelim Spring 2007
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations:
 - kind: instance-of
   target: P-CEU5R

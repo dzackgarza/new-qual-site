@@ -6,7 +6,10 @@ title: P-D75SD at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-D75SD

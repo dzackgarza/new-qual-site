@@ -6,7 +6,8 @@ title: P-MSLD5 at UGA prelim Fall 2002
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations:
 - kind: instance-of
   target: P-MSLD5

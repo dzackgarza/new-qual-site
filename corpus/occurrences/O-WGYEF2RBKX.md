@@ -6,7 +6,9 @@ title: P-FPMMA at UGA prelim Fall 2016
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - linear-algebra
 relations:
 - kind: instance-of
   target: P-FPMMA

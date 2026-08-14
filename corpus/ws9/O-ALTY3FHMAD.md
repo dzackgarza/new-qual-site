@@ -6,7 +6,10 @@ title: P-JH3BD at UGA prelim Summer 2009
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - factorization
+  - polynomials
+  - irreducibility-criteria
 relations:
 - kind: instance-of
   target: P-JH3BD

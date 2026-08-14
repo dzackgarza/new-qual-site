@@ -6,7 +6,11 @@ title: "2. Induct on $n$, integrate by parts and use L'Hopital:"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - improper-integrals
+  - integration-by-parts
+  - induction
 relations: []
 review: draft
 ---

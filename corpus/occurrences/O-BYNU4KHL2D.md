@@ -6,7 +6,9 @@ title: P-TOIEK at UGA prelim Fall 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
 relations:
 - kind: instance-of
   target: P-TOIEK

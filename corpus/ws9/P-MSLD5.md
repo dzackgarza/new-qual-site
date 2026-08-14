@@ -6,7 +6,8 @@ title: a. Suppose that for each positive integer $m$, we have a set $S_m$ of…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations: []
 review: draft
 ---

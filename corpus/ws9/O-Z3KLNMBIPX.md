@@ -6,7 +6,10 @@ title: P-7B2CW at UGA prelim Summer 2009
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - groups
+  - simple-groups
+  - sylow-theory
 relations:
 - kind: instance-of
   target: P-7B2CW

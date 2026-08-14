@@ -6,7 +6,9 @@ title: Let $z=f(x,y)$ be a smooth surface. Show that the gradient is perpendi…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations: []
 review: draft
 ---

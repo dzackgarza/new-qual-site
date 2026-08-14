@@ -6,7 +6,9 @@ title: P-SAFVA at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
 relations:
 - kind: instance-of
   target: P-SAFVA

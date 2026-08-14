@@ -6,7 +6,9 @@ title: "Suppose $J$ and $L$ are groups, and $\\varphi: L \\to \\mathrm{Aut}(J)$ 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - semidirect-products
+  - automorphisms
 relations: []
 review: draft
 ---

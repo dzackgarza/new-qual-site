@@ -6,7 +6,9 @@ title: "Write $f$ as $f(x,y)$, we are then given that $f_x, f_y \\in C_0(\\these
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations: []
 review: draft
 ---

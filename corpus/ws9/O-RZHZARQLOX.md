@@ -6,7 +6,9 @@ title: P-K5L2R at UGA prelim June 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - splitting-fields
+  - galois-theory
 relations:
 - kind: instance-of
   target: P-K5L2R

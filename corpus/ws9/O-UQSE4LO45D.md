@@ -6,7 +6,8 @@ title: P-UH7ZQ at UGA prelim Fall 2010
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations:
 - kind: instance-of
   target: P-UH7ZQ

@@ -6,7 +6,10 @@ title: "For each of the following, either give an example or explain\u2026"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - rings
+  - ideals
+  - counterexamples
 relations: []
 review: draft
 ---

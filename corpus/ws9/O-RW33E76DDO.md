@@ -6,7 +6,10 @@ title: P-E4XWH at UGA prelim June 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - groups
+  - counterexamples
+  - normal-subgroups
 relations:
 - kind: instance-of
   target: P-E4XWH

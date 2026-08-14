@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {1}{\\sqrt {x^2 + 25}} ~dx = \\ln (\\frac {
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Let $R$ be the planar region between the circles $x^2 + y^2 = 4$ and $(x
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
+  - green-s-theorem
 relations: []
 review: draft
 ---

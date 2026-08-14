@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x^2}{x^2+1} ~dx = \\color{blue} {x - \\tan
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - partial-fractions
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "Parts: Let $x, y \\in X$ and suppose $f(x) = f(y)$."
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - functions-and-relations
 relations: []
 review: draft
 ---

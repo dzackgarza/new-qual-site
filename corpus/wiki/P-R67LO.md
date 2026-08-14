@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int (\\sin(x) + \\cos(x))^2 ~dx = \\color {blue} {x-\\
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

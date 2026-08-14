@@ -6,7 +6,9 @@ title: "Let $f(x,y)$ be a differentiable function from $\\mathbb{R}^2$ to $\\mat
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations: []
 review: draft
 ---

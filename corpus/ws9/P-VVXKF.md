@@ -6,7 +6,8 @@ title: "Let $G$ be a finite group of order $p^k m$ where $p$ is prime and $(p,m)
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - sylow-theory
 relations: []
 review: draft
 ---

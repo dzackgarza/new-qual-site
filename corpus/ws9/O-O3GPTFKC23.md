@@ -6,7 +6,8 @@ title: P-MW5EM at UGA prelim Fall 2006
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations:
 - kind: instance-of
   target: P-MW5EM

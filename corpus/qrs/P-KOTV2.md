@@ -6,7 +6,10 @@ title: "1. It will exactly be the row space of"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - linear-algebra
+  - bases
+  - matrices
 relations: []
 review: draft
 ---

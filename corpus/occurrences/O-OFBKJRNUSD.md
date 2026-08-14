@@ -6,7 +6,9 @@ title: P-SLNSQ at UGA prelim Fall 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
 relations:
 - kind: instance-of
   target: P-SLNSQ

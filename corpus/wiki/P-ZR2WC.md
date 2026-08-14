@@ -6,7 +6,9 @@ title: "- Definition of uniform convergence:"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - uniform-convergence
+  - riemann-integrability
 relations: []
 review: draft
 ---

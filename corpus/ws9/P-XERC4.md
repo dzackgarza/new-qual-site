@@ -6,7 +6,9 @@ title: In each item, a commutative ring $R$ and an ideal $I \subseteq R$ are…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
 relations: []
 review: draft
 ---

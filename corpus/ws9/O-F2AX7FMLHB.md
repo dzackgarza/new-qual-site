@@ -6,7 +6,9 @@ title: P-OW6CS at UGA prelim June 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-OW6CS

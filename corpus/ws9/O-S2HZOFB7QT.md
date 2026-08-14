@@ -6,7 +6,8 @@ title: P-IMVV7 at UGA prelim Fall 2002
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - combinatorics
 relations:
 - kind: instance-of
   target: P-IMVV7

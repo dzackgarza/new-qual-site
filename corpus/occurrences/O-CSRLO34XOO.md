@@ -6,7 +6,8 @@ title: P-PC2H7 at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-PC2H7

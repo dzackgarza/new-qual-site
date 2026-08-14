@@ -6,7 +6,9 @@ title: (Frattini) Let $K$ be a normal subgroup of a finite group $G$, and let…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

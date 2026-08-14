@@ -6,7 +6,9 @@ title: P-DH6CX at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations:
 - kind: instance-of
   target: P-DH6CX

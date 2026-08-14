@@ -6,7 +6,10 @@ title: P-CSEAZ at UGA prelim Summer 2009
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - groups
+  - classification
+  - rational-canonical-form
 relations:
 - kind: instance-of
   target: P-CSEAZ

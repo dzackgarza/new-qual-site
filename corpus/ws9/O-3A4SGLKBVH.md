@@ -6,7 +6,10 @@ title: P-W5LVB at UGA prelim July 2013
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - abelian-groups
+  - modules
+  - structure-theorem
 relations:
 - kind: instance-of
   target: P-W5LVB

@@ -6,7 +6,9 @@ title: P-7CUNN at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - partial-fractions
 relations:
 - kind: instance-of
   target: P-7CUNN

@@ -6,7 +6,9 @@ title: P-ANJIW at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - differentiation
 relations:
 - kind: instance-of
   target: P-ANJIW

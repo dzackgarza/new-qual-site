@@ -6,7 +6,8 @@ title: P-JHXZS at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
 relations:
 - kind: instance-of
   target: P-JHXZS

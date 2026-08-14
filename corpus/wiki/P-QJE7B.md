@@ -6,7 +6,9 @@ title: "Let $\\vector w_i$ be the proposed new basis elements -- then $\\theset{
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - bases
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-3OH6H at UGA prelim Fall 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - limits
+  - continuity
 relations:
 - kind: instance-of
   target: P-3OH6H

@@ -6,7 +6,9 @@ title: Solution to P-GWHUX
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - abelian-groups
+  - structure-theorem
 relations:
 - kind: solves
   target: P-GWHUX

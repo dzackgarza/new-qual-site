@@ -6,7 +6,10 @@ title: Suppose $A \in M_4(\mathbb{Q})$ is a 4-by-4 matrix of multiplicative o…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - rational-canonical-form
+  - modules
+  - matrices
 relations: []
 review: draft
 ---

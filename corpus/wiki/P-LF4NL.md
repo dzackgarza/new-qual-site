@@ -6,7 +6,9 @@ title: "5. Let $\\delta = \\min\\theset{\\frac 1 2, \\sqrt{\\frac \\varepsilon 2
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - limits
+  - continuity
 relations: []
 review: draft
 ---

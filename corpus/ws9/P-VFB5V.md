@@ -6,7 +6,9 @@ title: Let $p$ be prime, $n$ be a positive integer, $f(X) = X^{p^n} - X + 1$,…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - finite-fields
+  - field-extensions
 relations: []
 review: draft
 ---

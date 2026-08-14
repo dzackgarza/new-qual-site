@@ -6,7 +6,9 @@ title: "Denoting $D^n f \\definedas \\dd{^n f}{x^n}$ and noting that $D^1 D^n f 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - taylor-series
+  - differentiation
 relations: []
 review: draft
 ---

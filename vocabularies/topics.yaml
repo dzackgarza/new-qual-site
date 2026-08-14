@@ -69,6 +69,8 @@
   name: Closure
 - id: cohomology
   name: Cohomology
+- id: combinatorics
+  name: Combinatorics
 - id: commutative-algebra
   name: Commutative Algebra
 - id: commutators
@@ -171,6 +173,8 @@
   name: Function Spaces
 - id: functional-analysis
   name: Functional Analysis
+- id: functions-and-relations
+  name: Functions and Relations
 - id: fundamental-group
   name: Fundamental Group
 - id: galois-theory
@@ -215,6 +219,10 @@
   name: Ideals
 - id: identity-theorem
   name: Identity Theorem
+- id: improper-integrals
+  name: Improper Integrals
+- id: induction
+  name: Induction
 - id: inner-product-spaces
   name: Inner Product Spaces
 - id: integral-domains
@@ -223,6 +231,8 @@
   name: Integral Extensions
 - id: integrals
   name: Integrals
+- id: integration-by-parts
+  name: Integration by Parts
 - id: irreducibility-criteria
   name: Irreducibility Criteria
 - id: isomorphism-theorems
@@ -243,6 +253,8 @@
   name: Laurent Series
 - id: limits
   name: Limits
+- id: line-integrals
+  name: Line Integrals
 - id: linear-algebra
   name: Linear Algebra
 - id: liouville-s-theorem
@@ -251,6 +263,8 @@
   name: Local Rings
 - id: localization
   name: Localization
+- id: logic-and-quantifiers
+  name: Logic and Quantifiers
 - id: lp-spaces
   name: Lp Spaces
 - id: manifolds
@@ -287,6 +301,8 @@
   name: Montel
 - id: morera
   name: Morera
+- id: multivariable-calculus
+  name: Multivariable Calculus
 - id: nakayamas-lemma
   name: Nakayama's Lemma
 - id: nilpotence
@@ -313,6 +329,8 @@
   name: p-Groups
 - id: paracompactness
   name: Paracompactness
+- id: partial-fractions
+  name: Partial Fractions
 - id: partitions
   name: Partitions
 - id: pdes
@@ -427,6 +445,8 @@
   name: Sylow Theory
 - id: symmetric-functions
   name: Symmetric Functions
+- id: taylor-series
+  name: Taylor Series
 - id: tensor-products
   name: Tensor Products
 - id: torsion
@@ -435,10 +455,14 @@
   name: Trace
 - id: transcendence
   name: Transcendence
+- id: trigonometric-substitution
+  name: Trigonometric Substitution
 - id: trigonometry
   name: Trigonometry
 - id: tube-lemma
   name: Tube Lemma
+- id: u-substitution
+  name: u-Substitution
 - id: uniform-continuity
   name: Uniform Continuity
 - id: uniform-convergence

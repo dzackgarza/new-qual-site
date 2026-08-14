@@ -6,7 +6,9 @@ title: Give an example of each of the following or explain why no such exampl…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - counterexamples
 relations: []
 review: draft
 ---

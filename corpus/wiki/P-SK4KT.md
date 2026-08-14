@@ -6,7 +6,9 @@ title: "Since $A$ is $2\\times 2$ and has 2 eigenvalues, noting that $\\deg \\ch
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations: []
 review: draft
 ---

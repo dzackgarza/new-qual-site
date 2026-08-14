@@ -6,7 +6,9 @@ title: Indicate whether each of the following if-then statements is true, and…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
+  - counterexamples
 relations: []
 review: draft
 ---

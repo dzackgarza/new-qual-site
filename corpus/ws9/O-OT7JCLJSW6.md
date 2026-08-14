@@ -6,7 +6,10 @@ title: P-6ET4N at UGA prelim June 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - rational-canonical-form
+  - matrices
 relations:
 - kind: instance-of
   target: P-6ET4N

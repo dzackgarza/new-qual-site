@@ -6,7 +6,9 @@ title: P-PCSZ2 at UGA prelim June 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - semidirect-products
+  - automorphisms
 relations:
 - kind: instance-of
   target: P-PCSZ2

@@ -6,7 +6,8 @@ title: Using the method of Lagrange Multipliers, find the maximum and minimum…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
 relations: []
 review: draft
 ---

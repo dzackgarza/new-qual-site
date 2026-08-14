@@ -6,7 +6,8 @@ title: Negate each of the following statements in the most informative way po…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations: []
 review: draft
 ---

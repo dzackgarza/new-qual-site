@@ -6,7 +6,8 @@ title: Write the negations of these sentences in as "smooth" a way as possibl…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations: []
 review: draft
 ---

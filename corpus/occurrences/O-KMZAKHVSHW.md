@@ -6,7 +6,9 @@ title: P-A4JGH at UGA prelim Fall 2016
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
+  - uniform-convergence
 relations:
 - kind: instance-of
   target: P-A4JGH

@@ -6,7 +6,10 @@ title: Provide examples of the following. [No justification is required.]
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - counterexamples
+  - differentiation
+  - continuity
 relations: []
 review: draft
 ---

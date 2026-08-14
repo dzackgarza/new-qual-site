@@ -6,7 +6,9 @@ title: P-MOL6S at UGA prelim Fall 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - taylor-series
+  - differentiation
 relations:
 - kind: instance-of
   target: P-MOL6S

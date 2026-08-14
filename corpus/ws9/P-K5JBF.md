@@ -6,7 +6,9 @@ title: Form an abelian group $M$ as the quotient of $\mathbb{Z}^3$ by the ele…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - abelian-groups
+  - structure-theorem
 relations: []
 review: draft
 ---

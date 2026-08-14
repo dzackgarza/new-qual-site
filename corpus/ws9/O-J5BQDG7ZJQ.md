@@ -6,7 +6,10 @@ title: P-PDAPQ at UGA prelim Summer 2007
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-PDAPQ

@@ -6,7 +6,9 @@ title: P-LHC3M at UGA prelim Fall 2005
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations:
 - kind: instance-of
   target: P-LHC3M

@@ -6,7 +6,9 @@ title: Suppose the field $K$ is a Galois extension of the field $F$, such tha…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

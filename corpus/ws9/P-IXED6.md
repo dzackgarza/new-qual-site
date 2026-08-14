@@ -6,7 +6,9 @@ title: Suppose that $R$ is a principal-ideal domain and $a, b, c, d \in R$ wi…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - ideals
 relations: []
 review: draft
 ---

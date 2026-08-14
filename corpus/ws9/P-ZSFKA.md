@@ -6,7 +6,9 @@ title: Let $O$ be the ring of integers of $\mathbf{Q}(\sqrt2)$. Show that $O$…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - euclidean-domains
+  - number-theory
 relations: []
 review: draft
 ---

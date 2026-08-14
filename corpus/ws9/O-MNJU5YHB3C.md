@@ -6,7 +6,10 @@ title: P-FPWV6 at UGA prelim Spring 2004
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - counterexamples
+  - differentiation
+  - continuity
 relations:
 - kind: instance-of
   target: P-FPWV6

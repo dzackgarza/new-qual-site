@@ -6,7 +6,9 @@ title: P-7X6ZK at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-7X6ZK

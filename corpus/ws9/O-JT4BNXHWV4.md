@@ -6,7 +6,10 @@ title: P-OUQ2Q at UGA prelim Summer 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - rational-canonical-form
+  - modules
+  - matrices
 relations:
 - kind: instance-of
   target: P-OUQ2Q

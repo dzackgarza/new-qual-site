@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int \\frac {x}{x^4-16} ~dx = \\color{blue} {\\frac {1}
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
+  - partial-fractions
 relations: []
 review: draft
 ---

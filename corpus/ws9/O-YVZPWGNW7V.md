@@ -6,7 +6,9 @@ title: P-TBQBL at UGA prelim Summer 2009
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-TBQBL

@@ -6,7 +6,9 @@ title: P-ZY76X at UGA prelim June 2010
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-ZY76X

@@ -6,7 +6,10 @@ title: P-QB2KS at UGA prelim June 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - rings
+  - ideals
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-QB2KS

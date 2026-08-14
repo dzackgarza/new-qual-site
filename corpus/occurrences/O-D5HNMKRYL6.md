@@ -6,7 +6,9 @@ title: P-NM425 at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
 relations:
 - kind: instance-of
   target: P-NM425

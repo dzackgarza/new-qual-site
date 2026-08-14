@@ -6,7 +6,9 @@ title: P-XERC4 at UGA prelim June 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
 relations:
 - kind: instance-of
   target: P-XERC4

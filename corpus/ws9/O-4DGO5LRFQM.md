@@ -6,7 +6,9 @@ title: P-KBGYN at UGA prelim Fall 2004
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-KBGYN

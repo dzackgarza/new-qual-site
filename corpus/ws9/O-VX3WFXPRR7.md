@@ -6,7 +6,10 @@ title: P-TNZTM at UGA prelim Summer 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - counterexamples
+  - modules
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-TNZTM

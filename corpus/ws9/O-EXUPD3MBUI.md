@@ -6,7 +6,9 @@ title: P-UVJYB at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations:
 - kind: instance-of
   target: P-UVJYB

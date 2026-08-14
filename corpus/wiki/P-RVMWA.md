@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\sin ^2 (x) ~dx = \\color {blue} {\\frac {1}{2} (
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

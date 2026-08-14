@@ -6,7 +6,10 @@ title: Suppose $K$ is a field. Let $K(x)$ denote the field of rational functi…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - automorphisms
+  - fields
 relations: []
 review: draft
 ---

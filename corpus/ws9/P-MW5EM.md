@@ -6,7 +6,8 @@ title: "Consider the statement:"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations: []
 review: draft
 ---

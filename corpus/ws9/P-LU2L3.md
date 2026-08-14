@@ -6,7 +6,9 @@ title: For $n = 3, 4$, and 5, determine the number of similarity classes of m…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - rational-canonical-form
+  - matrices
 relations: []
 review: draft
 ---

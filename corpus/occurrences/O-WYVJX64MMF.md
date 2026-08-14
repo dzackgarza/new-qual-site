@@ -6,7 +6,9 @@ title: P-QJE7B at UGA prelim Fall 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - bases
 relations:
 - kind: instance-of
   target: P-QJE7B

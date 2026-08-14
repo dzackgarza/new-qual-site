@@ -1,0 +1,686 @@
+schema: qual/publication@2
+id: GUIDE-PRELIM
+kind: study-guide
+title: Prelim
+lede: >-
+  UGA's preliminary exam is one paper, not a slice of the four quals: it asks for the
+  calculus, linear algebra, and algebra a first-year student is expected to have before any
+  qual is attempted. This guide follows that paper's own order — first what a proof is and
+  how a statement is negated, then limits and the two operations built on them, then the
+  linear algebra the algebra sections quietly assume, and finally groups, rings, and fields.
+  Every item is a problem that was actually set or worked; there is no theory layer here,
+  because the exam does not test one.
+sections:
+  - slug: logic-and-proof
+    title: Logic and Proof
+    parent: GUIDE-PRELIM
+    lede: >-
+      The paper opens on the mechanics of mathematical statements rather than on any subject,
+      and that is deliberate: a candidate who cannot negate a quantified sentence cannot state
+      what a limit failing to exist means. Negation of nested quantifiers is asked directly and
+      repeatedly, along with the converse and contrapositive, which are the two ways a true
+      implication is most often misremembered. Injectivity and surjectivity are the first place
+      those quantifiers get used on an object rather than a sentence, and equivalence relations
+      are where they get used on a set. Induction closes the section as the one proof technique
+      the exam expects by name, usually on a sum or a divisibility claim, and the counting
+      formulas are its most common companion.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - logic-and-quantifiers
+          limit: 13
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - functions-and-relations
+          limit: 6
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - induction
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - combinatorics
+          limit: 3
+          review:
+            mode: any
+  - slug: limits-and-continuity
+    title: Limits and Continuity
+    parent: logic-and-proof
+    lede: >-
+      With quantifiers in hand the epsilon-delta definition is readable, and the exam asks for
+      it in the strict form: state the definition, then produce a delta for a specific function
+      and limit. The deltas wanted here are the ones a candidate can find by bounding the
+      offending factor on a small interval first, which is why the answers so often look like
+      the minimum of a constant and a root of epsilon. Continuity is the same definition with
+      the value of the limit pinned to the value of the function, and the counterexamples asked
+      for — continuous but not differentiable, differentiable but not continuously so — are how
+      the exam checks that the definitions are held apart rather than blurred.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - limits
+          limit: 5
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - continuity
+          limit: 7
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - differentiation
+          limit: 14
+          review:
+            mode: any
+  - slug: integration-techniques
+    title: Integration Techniques
+    parent: limits-and-continuity
+    lede: >-
+      The largest single block of the archive is indefinite and definite integrals, and it is
+      drilled rather than reasoned: the exam expects the technique to be recognized on sight.
+      Four techniques cover nearly all of them. Substitution handles any integrand carrying its
+      own derivative as a factor. Parts handles a product where one factor differentiates down
+      to nothing, and the same computation run twice recovers the integral of the secant cube
+      and of the exponential against a sine. Trigonometric substitution handles the three
+      quadratic radicals, and partial fractions handles a proper rational function once long
+      division has made it proper. The trigonometric identities are listed alongside because
+      half of these integrals are an identity applied before any technique at all, and the
+      improper cases are separated out because they need a limit the others do not.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - integrals
+          limit: 62
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - u-substitution
+          limit: 23
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - integration-by-parts
+          limit: 9
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - trigonometric-substitution
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - partial-fractions
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - trigonometry
+          limit: 22
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - improper-integrals
+          limit: 4
+          review:
+            mode: any
+  - slug: sequences-and-series
+    title: Sequences and Series
+    parent: integration-techniques
+    lede: >-
+      A series is a sequence of partial sums, so the convergence tests are the section's whole
+      content and the exam asks which one applies and why. The recurring question is the set of
+      real numbers for which a power series converges, which is the ratio test followed by a
+      separate argument at each endpoint — the endpoints are where the marks are. Taylor series
+      appear both as an expansion to be computed and as an approximation whose error must be
+      bounded. Uniform convergence is the one idea here that is not about numbers: it is the
+      negation exercise of the first section applied to a sequence of functions, and it is what
+      makes the interchange of a limit with an integral legitimate.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - sequences-of-numbers
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - series-of-numbers
+          limit: 5
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - convergence-tests
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - power-series
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - taylor-series
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - uniform-convergence
+          limit: 3
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - sequences-of-functions
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - series-of-functions
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - riemann-integrability
+          limit: 1
+          review:
+            mode: any
+  - slug: multivariable-calculus
+    title: Multivariable Calculus
+    parent: sequences-and-series
+    lede: >-
+      In several variables differentiability stops being the existence of a limit of difference
+      quotients and becomes the existence of a linear map approximating the increment; the exam
+      asks for that definition and then for the standard example whose partials both exist at
+      the origin while the function is not even continuous there. The chain rule, the Jacobian,
+      and the fact that the gradient is orthogonal to a level set are the computational
+      consequences it asks to see derived. Line integrals are the section's other half, and the
+      three questions asked about them are the same three every time: compute it by
+      parametrizing, compute it again by Green's theorem, and decide whether it is
+      path-independent — which is to ask whether the field is conservative.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - multivariable-calculus
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - line-integrals
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - green-s-theorem
+          limit: 5
+          review:
+            mode: any
+  - slug: linear-algebra
+    title: Linear Algebra
+    parent: multivariable-calculus
+    lede: >-
+      The exam's linear algebra runs from the subspace test to canonical forms in a single
+      arc, and the later algebra sections assume all of it. A subspace is checked by closure, a
+      span is cut down to a basis by discarding dependent vectors, and the rank-nullity theorem
+      is what converts either into a dimension count. Eigenvalues come from the characteristic
+      polynomial and diagonalizability from whether the eigenvectors span, which is the same
+      question as whether the minimal polynomial is squarefree — the exam asks it both ways.
+      The canonical forms close the section: rational canonical form is the invariant-factor
+      statement about a linear operator, Jordan form is the elementary-divisor statement over a
+      field with enough roots, and nilpotence is the case where the only eigenvalue is zero.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - vector-spaces
+          limit: 5
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - bases
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - linear-algebra
+          limit: 5
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - rank-and-nullity
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - matrices
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - eigenvalues-and-eigenvectors
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - diagonalization
+          limit: 3
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - minimal-and-characteristic-polynomials
+          limit: 2
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - jordan-canonical-form
+          limit: 2
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - rational-canonical-form
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - nilpotence
+          limit: 1
+          review:
+            mode: any
+  - slug: groups
+    title: Groups
+    parent: linear-algebra
+    lede: >-
+      Group theory on this paper is almost entirely about finite groups and about one question:
+      given an order, what are the groups of that order? Lagrange bounds the possible subgroup
+      orders and its converse fails, which the exam asks for by counterexample. Sylow's
+      theorems supply what Lagrange cannot — existence, conjugacy, and a congruence on the
+      count — and the standard argument of order pq is the exam's favourite application. The
+      abelian case is settled completely by the structure theorem, which is why listing the
+      abelian groups of a given order is a routine question and listing all groups of that
+      order is not. Automorphism groups and semidirect products are how the nonabelian
+      examples get built once the abelian ones are exhausted.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - groups
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - cosets-and-lagrange
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - cyclic-groups
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - normal-subgroups
+          limit: 2
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - simple-groups
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - sylow-theory
+          limit: 5
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - centralizers-and-normalizers
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - abelian-groups
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - structure-theorem
+          limit: 5
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - automorphisms
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - semidirect-products
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - classification
+          limit: 1
+          review:
+            mode: any
+  - slug: rings-and-modules
+    title: Rings and Modules
+    parent: groups
+    lede: >-
+      A ring question on this paper is usually a question about its ideals: which are prime,
+      which are maximal, and what the quotient looks like. The chain of domains is what
+      organizes the rest — every Euclidean domain is principal and every principal ideal domain
+      is a unique factorization domain, and the exam asks for the examples separating each
+      containment. Modules generalize both vector spaces and abelian groups, and the structure
+      theorem over a principal ideal domain is the single result that pays for itself three
+      times: it classifies finitely generated abelian groups, it produces the rational canonical
+      form of the previous section, and it answers the module questions here directly.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - rings
+          limit: 5
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - ideals
+          limit: 6
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - prime-ideals
+          limit: 2
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - maximal-ideals
+          limit: 3
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - local-rings
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - noetherian-rings
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - integral-domains
+          limit: 2
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - euclidean-domains
+          limit: 2
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - principal-ideal-domains
+          limit: 5
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - factorization
+          limit: 2
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - polynomials
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - irreducibility-criteria
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - modules
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - free-modules
+          limit: 2
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - tensor-products
+          limit: 1
+          review:
+            mode: any
+  - slug: fields-and-galois
+    title: Fields and Galois Theory
+    parent: rings-and-modules
+    lede: >-
+      A field extension is a vector space over the base field, so the degree is a dimension and
+      the tower law is multiplicativity of dimension — that one observation answers a large
+      share of these questions. The splitting field of an explicit cubic or quartic is asked
+      for repeatedly, together with its degree and its Galois group, and the group is pinned
+      down by how the roots may be permuted rather than by computing anything. Finite fields
+      are the case where the whole theory collapses to one cyclic Galois group generated by
+      Frobenius, which is why irreducibility over a finite field can be tested by a greatest
+      common divisor. Number-theoretic questions sit here because they are the same arguments
+      run in a ring of integers.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - fields
+          limit: 3
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - field-extensions
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - splitting-fields
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - galois-theory
+          limit: 11
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - finite-fields
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - number-theory
+          limit: 4
+          review:
+            mode: any
+  - slug: complex-numbers
+    title: Complex Numbers
+    parent: fields-and-galois
+    lede: >-
+      The paper's complex content is small and computational: put a complex number in polar
+      form, take its roots, and write them back as a plus bi. Those roots are the roots of
+      unity scaled and rotated, which is where this section meets the cyclotomic extensions of
+      the previous one. One question goes further and asks for the Cauchy integral formula and
+      a contour integral evaluated both by the formula and by direct parametrization, which is
+      the only place the exam touches complex analysis proper.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - roots-of-unity
+          limit: 4
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - cauchy-integral-formula
+          limit: 1
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - contour-integration
+          limit: 1
+          review:
+            mode: any
+  - slug: counterexamples
+    title: Counterexamples
+    parent: complex-numbers
+    lede: >-
+      A recurring instruction on this paper is "give an example or explain why none exists",
+      and it is the most efficient question on it: one line of an answer distinguishes a
+      candidate who knows a definition from one who knows what the definition rules out. These
+      are collected here because they belong to no single subject — the same instruction is
+      applied to a non-abelian group whose proper subgroups are all normal, to a prime ideal
+      that is not maximal, to a module that is torsion-free and not free, and to a function
+      that is continuous at a point and differentiable nowhere near it. Reading them together
+      is the fastest revision the archive supports.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - counterexamples
+          limit: 16
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - misc
+          limit: 1
+          review:
+            mode: any

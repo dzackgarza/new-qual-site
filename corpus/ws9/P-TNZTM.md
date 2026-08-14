@@ -6,7 +6,10 @@ title: "Prove or disprove each of the following:"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - counterexamples
+  - modules
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

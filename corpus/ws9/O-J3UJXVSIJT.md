@@ -6,7 +6,10 @@ title: P-VUTDR at UGA prelim June 2010
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integral-domains
+  - principal-ideal-domains
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-VUTDR

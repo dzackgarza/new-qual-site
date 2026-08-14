@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x^2}{1+x^6} ~dx = \\color{blue} {\\frac {1
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

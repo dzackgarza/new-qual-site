@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {\\sqrt {x^2-a^2}}{x} ~dx = \\tan (\\sec ^{
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

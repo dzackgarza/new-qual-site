@@ -6,7 +6,9 @@ title: P-SHNTG at UGA prelim July 2013
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - ideals
+  - rings
 relations:
 - kind: instance-of
   target: P-SHNTG

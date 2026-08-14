@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x + \\sin(x)}{1 + \\cos(x)}~dx = \\color {
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

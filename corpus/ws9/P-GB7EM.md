@@ -6,7 +6,10 @@ title: a. Let $f$ be a real-valued function defined on $\mathbb{R}^n$. Define…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
+  - continuity
 relations: []
 review: draft
 ---

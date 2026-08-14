@@ -6,7 +6,9 @@ title: P-HUKW5 at UGA (undated) (prelim)
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations:
 - kind: instance-of
   target: P-HUKW5

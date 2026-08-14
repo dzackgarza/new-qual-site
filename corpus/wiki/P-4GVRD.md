@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\sqrt {4-x} ~dx = \\color{blue} {- \\frac {2}{3}(
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

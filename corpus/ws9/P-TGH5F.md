@@ -6,7 +6,9 @@ title: "Let $v_1, \\dots, v_k$ be vectors in $\\mathbb{R}^n$."
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - bases
 relations: []
 review: draft
 ---

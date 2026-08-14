@@ -6,7 +6,10 @@ title: P-5HVC4 at UGA prelim Fall 2010
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations:
 - kind: instance-of
   target: P-5HVC4

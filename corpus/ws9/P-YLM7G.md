@@ -6,7 +6,8 @@ title: "Suppose $A$, $B$, and $C$ are sets, and $f: B \\to C$ and $g: A \\to B$â
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - functions-and-relations
 relations: []
 review: draft
 ---

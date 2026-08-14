@@ -6,7 +6,10 @@ title: P-RP7WR at UGA prelim July 2013
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - automorphisms
+  - fields
 relations:
 - kind: instance-of
   target: P-RP7WR

@@ -6,7 +6,10 @@ title: For each of the following statements, determine if it is true or false…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - fields
+  - finite-fields
+  - counterexamples
 relations: []
 review: draft
 ---

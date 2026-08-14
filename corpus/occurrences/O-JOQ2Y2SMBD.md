@@ -6,7 +6,9 @@ title: P-R4I5W at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-R4I5W

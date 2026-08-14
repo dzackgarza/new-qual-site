@@ -6,7 +6,9 @@ title: P-ZR3OT at UGA prelim Summer 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - splitting-fields
+  - galois-theory
 relations:
 - kind: instance-of
   target: P-ZR3OT

@@ -6,7 +6,9 @@ title: P-TEVPO at UGA prelim Fall 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - limits
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-TEVPO

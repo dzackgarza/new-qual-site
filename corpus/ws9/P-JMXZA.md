@@ -6,7 +6,8 @@ title: Negate the following statements in a "non-cheap" way â€“ especially, avoâ
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations: []
 review: draft
 ---

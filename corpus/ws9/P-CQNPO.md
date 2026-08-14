@@ -6,7 +6,10 @@ title: "Give an example (proof not required) of each of the following:"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - counterexamples
+  - differentiation
+  - series-of-functions
 relations: []
 review: draft
 ---

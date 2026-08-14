@@ -6,7 +6,9 @@ title: "1. We have $p_A(x) = (x+1)(x-1)(x) = x^3 - x$ and so by Cayley-Hamilto\u
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations: []
 review: draft
 ---

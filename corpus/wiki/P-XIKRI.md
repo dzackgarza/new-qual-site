@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {4x^3 + 2x}{x^4 + 1} ~dx = \\color{blue} {\
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-FDWKY at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - partial-fractions
 relations:
 - kind: instance-of
   target: P-FDWKY

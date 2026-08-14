@@ -6,7 +6,8 @@ title: P-UGR7G at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
 relations:
 - kind: instance-of
   target: P-UGR7G

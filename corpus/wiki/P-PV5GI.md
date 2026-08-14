@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {\\sqrt {1 + \\ln (x)}}{x \\ln (x)} ~dx = \
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

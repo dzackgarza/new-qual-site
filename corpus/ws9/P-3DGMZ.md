@@ -6,7 +6,8 @@ title: State the Sylow Theorems. Include information about the existence, ord…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - sylow-theory
 relations: []
 review: draft
 ---

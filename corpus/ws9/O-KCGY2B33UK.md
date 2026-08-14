@@ -6,7 +6,9 @@ title: P-V4VXC at UGA prelim Fall 2006
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - taylor-series
+  - power-series
 relations:
 - kind: instance-of
   target: P-V4VXC

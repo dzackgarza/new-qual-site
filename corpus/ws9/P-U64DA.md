@@ -6,7 +6,9 @@ title: "Assume that $p$ is prime and $X^p - a$ is irreducible in $\\mathbb{Q}[X]
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

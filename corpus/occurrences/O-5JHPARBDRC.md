@@ -6,7 +6,9 @@ title: P-EQFMD at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-EQFMD

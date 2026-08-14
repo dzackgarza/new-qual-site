@@ -6,7 +6,8 @@ title: P-MNR6F at UGA prelim Fall 2016
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - functions-and-relations
 relations:
 - kind: instance-of
   target: P-MNR6F

@@ -6,7 +6,9 @@ title: P-ZR2WC at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - uniform-convergence
+  - riemann-integrability
 relations:
 - kind: instance-of
   target: P-ZR2WC

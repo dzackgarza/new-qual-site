@@ -6,7 +6,9 @@ title: P-VJBIB at UGA prelim Fall 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
 relations:
 - kind: instance-of
   target: P-VJBIB

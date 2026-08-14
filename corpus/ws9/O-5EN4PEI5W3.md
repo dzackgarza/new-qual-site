@@ -6,7 +6,9 @@ title: P-RE2VW at UGA prelim June 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-RE2VW

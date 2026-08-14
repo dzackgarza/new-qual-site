@@ -6,7 +6,8 @@ title: "1. Lemma: $f$ is injective $\\iff f$ has a left inverse $f\\inv$ satisfy
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - functions-and-relations
 relations: []
 review: draft
 ---

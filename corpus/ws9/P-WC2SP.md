@@ -6,7 +6,9 @@ title: A local ring is a commutative ring with 1 which has a unique maximal i…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - local-rings
+  - maximal-ideals
 relations: []
 review: draft
 ---

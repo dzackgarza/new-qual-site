@@ -6,7 +6,9 @@ title: P-VYOWN at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-VYOWN

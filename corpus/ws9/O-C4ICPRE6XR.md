@@ -6,7 +6,9 @@ title: P-SD42B at UGA prelim Fall 2005
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - series-of-numbers
+  - convergence-tests
 relations:
 - kind: instance-of
   target: P-SD42B

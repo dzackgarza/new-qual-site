@@ -6,7 +6,9 @@ title: P-PHHXJ at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations:
 - kind: instance-of
   target: P-PHHXJ

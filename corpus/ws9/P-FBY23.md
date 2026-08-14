@@ -6,7 +6,9 @@ title: a. State the Cauchy integral formula and use it to evaluate the comple…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - contour-integration
 relations: []
 review: draft
 ---

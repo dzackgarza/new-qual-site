@@ -6,7 +6,10 @@ title: "1. We want some power series centered at 4 with convergence radius 1,\u2
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - power-series
+  - convergence-tests
+  - counterexamples
 relations: []
 review: draft
 ---

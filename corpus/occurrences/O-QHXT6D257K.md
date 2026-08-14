@@ -6,7 +6,10 @@ title: P-FB5CY at UGA prelim Fall 2016
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - power-series
+  - convergence-tests
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-FB5CY

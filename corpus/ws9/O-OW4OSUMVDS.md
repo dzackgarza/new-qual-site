@@ -6,7 +6,9 @@ title: P-HHX6V at UGA prelim June 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - modules
+  - free-modules
 relations:
 - kind: instance-of
   target: P-HHX6V

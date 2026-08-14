@@ -6,7 +6,8 @@ title: a. Suppose $A$ and $B$ are false statements. Is the statement
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations: []
 review: draft
 ---

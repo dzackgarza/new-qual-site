@@ -6,7 +6,9 @@ title: "Solution: $\\ln (x^2 - 1) = \\ln (x + 1)(x - 1) = \\ln (x + 1) + \\ln (x
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
 relations: []
 review: draft
 ---

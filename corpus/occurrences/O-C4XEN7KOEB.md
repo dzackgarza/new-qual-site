@@ -6,7 +6,9 @@ title: P-H442E at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - improper-integrals
 relations:
 - kind: instance-of
   target: P-H442E

@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x+1}{\\sqrt {4-x^2}} ~dx = \\color {blue} 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "1. Note that $8=2^3$ is a prime power $p^n$, so we can get this as a q\u
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

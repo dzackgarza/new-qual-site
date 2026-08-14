@@ -6,7 +6,9 @@ title: P-U64DA at UGA prelim June 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - irreducibility-criteria
 relations:
 - kind: instance-of
   target: P-U64DA

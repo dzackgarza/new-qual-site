@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int_{1}^{2} \\frac {1}{x\\sqrt {x^2 -1}} dx = \\color 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

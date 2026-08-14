@@ -6,7 +6,10 @@ title: P-B34X5 at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - vector-spaces
+  - linear-algebra
+  - rank-and-nullity
 relations:
 - kind: instance-of
   target: P-B34X5

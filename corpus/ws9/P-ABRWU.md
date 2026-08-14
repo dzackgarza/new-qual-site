@@ -6,7 +6,9 @@ title: "Let $f:\\mathbb{R}\\to\\mathbb{R}$ be a function and let $a$ be a real n
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
+  - differentiation
 relations: []
 review: draft
 ---

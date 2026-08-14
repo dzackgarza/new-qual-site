@@ -6,7 +6,9 @@ title: "1. Apply the spectral theorem: $D$ will have the eigenvalues on the di\u
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
 relations: []
 review: draft
 ---

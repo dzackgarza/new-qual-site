@@ -6,7 +6,10 @@ title: P-B6FMH at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - improper-integrals
+  - trigonometric-substitution
 relations:
 - kind: instance-of
   target: P-B6FMH

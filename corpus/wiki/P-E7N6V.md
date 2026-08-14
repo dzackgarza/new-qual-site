@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int\\sqrt {x\\cdot\\sqrt[3]{x\\cdot\\sqrt[4]{x\\cdot\\
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - improper-integrals
+  - misc
 relations: []
 review: draft
 ---

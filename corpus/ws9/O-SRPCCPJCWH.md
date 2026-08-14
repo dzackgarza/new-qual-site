@@ -6,7 +6,8 @@ title: P-JVZMJ at UGA prelim Fall 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations:
 - kind: instance-of
   target: P-JVZMJ

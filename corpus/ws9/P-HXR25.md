@@ -6,7 +6,10 @@ title: "Let $\\mathbb{F}_p$ be the finite field with $p$ elements, and let $f(x)
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - polynomials
 relations: []
 review: draft
 ---

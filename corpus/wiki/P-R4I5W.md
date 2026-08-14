@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\sqrt {1 + \\cos (2ax)} ~dx = \\color {blue} {\\f
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Define the Jacobian matrix of a mapping $f: \\mathbb{R}^n \\to \\mathbb{
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations: []
 review: draft
 ---

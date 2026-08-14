@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x^2 + 2x + 1}{x\\sqrt {x^2-1}}~dx = \\colo
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

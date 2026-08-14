@@ -6,7 +6,10 @@ title: Give an example of each of the following. (You don't need to justify y…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
+  - counterexamples
 relations: []
 review: draft
 ---

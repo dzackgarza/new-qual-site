@@ -6,7 +6,9 @@ title: Let $R$ be a ring with 1, and let $I$ be a two sided ideal of $R$. Let…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - modules
+  - ideals
 relations: []
 review: draft
 ---

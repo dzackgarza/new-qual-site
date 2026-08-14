@@ -6,7 +6,9 @@ title: Let $C$ be a circle in the $xy$-plane, oriented counterclockwise, and…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
+  - green-s-theorem
 relations: []
 review: draft
 ---

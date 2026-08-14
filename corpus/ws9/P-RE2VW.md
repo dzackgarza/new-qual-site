@@ -6,7 +6,9 @@ title: Suppose $K/F$ is a Galois extension and that $\mathrm{Gal}(K/F)$ is is…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

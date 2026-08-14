@@ -6,7 +6,9 @@ title: Let $K$ be the splitting field of $x^3 + 2$ over $\mathbb{Q}$.
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - splitting-fields
+  - galois-theory
 relations: []
 review: draft
 ---

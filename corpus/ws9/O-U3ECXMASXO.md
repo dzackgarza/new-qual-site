@@ -6,7 +6,10 @@ title: P-3DZXT at UGA prelim Fall 2010
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - combinatorics
+  - number-theory
 relations:
 - kind: instance-of
   target: P-3DZXT

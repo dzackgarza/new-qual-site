@@ -6,7 +6,9 @@ title: "Suppose $R$ is a commutative ring (with 1), $I$ is a proper ideal\u2026"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

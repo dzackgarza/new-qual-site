@@ -6,7 +6,9 @@ title: P-DCR24 at UGA prelim June 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - sylow-theory
+  - centralizers-and-normalizers
 relations:
 - kind: instance-of
   target: P-DCR24

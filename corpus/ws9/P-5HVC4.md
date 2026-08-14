@@ -6,7 +6,10 @@ title: "Let $A = \\begin{bmatrix} 0 & 1 \\\\ 6 & -1 \\end{bmatrix}$. Prove that 
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

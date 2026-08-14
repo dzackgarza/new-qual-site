@@ -6,7 +6,9 @@ title: P-ZSFKA at UGA prelim Summer 2007
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - euclidean-domains
+  - number-theory
 relations:
 - kind: instance-of
   target: P-ZSFKA

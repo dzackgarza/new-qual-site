@@ -6,7 +6,9 @@ title: "Let $L \\subset \\mathbb{R}^2$ be the line spanned by the vector $\\begi
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - linear-algebra
+  - matrices
 relations: []
 review: draft
 ---

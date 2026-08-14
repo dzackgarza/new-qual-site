@@ -6,7 +6,9 @@ title: P-WC2SP at UGA prelim Summer 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - local-rings
+  - maximal-ideals
 relations:
 - kind: instance-of
   target: P-WC2SP

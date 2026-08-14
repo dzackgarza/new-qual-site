@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {1}{x^2\\sqrt {x^2-a^2}} ~dx = \\frac {1}{a
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

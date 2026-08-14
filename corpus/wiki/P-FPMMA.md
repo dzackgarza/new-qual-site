@@ -6,7 +6,9 @@ title: "2. The gradient $\\nabla f = [y, x]$ will be orthogonal to level curves\
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - linear-algebra
 relations: []
 review: draft
 ---

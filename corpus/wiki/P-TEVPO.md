@@ -6,7 +6,9 @@ title: "Parts Suppose $\\exists M_g \\suchthat \\forall x,~ g(x) < M$."
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - limits
+  - counterexamples
 relations: []
 review: draft
 ---

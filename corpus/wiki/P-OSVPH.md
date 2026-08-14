@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {\\sin^3(x)}{\\cos(x) - \\cos^3(x)} ~dx = \
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

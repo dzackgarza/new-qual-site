@@ -6,7 +6,8 @@ title: For the cubic polynomial $x^3 - 3x + 2$, use the cubic formula describ…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - polynomials
 relations: []
 review: draft
 ---

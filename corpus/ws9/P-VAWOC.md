@@ -6,7 +6,9 @@ title: Work out the Taylor series for $f(x) = \ln x$ around $x=1$ and use it…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - taylor-series
+  - power-series
 relations: []
 review: draft
 ---

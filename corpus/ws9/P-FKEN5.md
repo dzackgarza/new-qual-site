@@ -6,7 +6,9 @@ title: Prove by induction that the sum of the cubes of 3 consecutive positive…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - number-theory
 relations: []
 review: draft
 ---

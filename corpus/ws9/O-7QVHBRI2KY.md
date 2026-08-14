@@ -6,7 +6,9 @@ title: P-K5GH3 at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - multivariable-calculus
+  - differentiation
 relations:
 - kind: instance-of
   target: P-K5GH3

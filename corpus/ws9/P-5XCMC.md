@@ -6,7 +6,8 @@ title: Let $P(x)$ and $Q(x)$ be open sentences containing the variable $x$, a…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations: []
 review: draft
 ---

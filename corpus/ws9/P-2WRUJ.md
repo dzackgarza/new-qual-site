@@ -6,7 +6,9 @@ title: Let $k$ be a nonnegative integer. Prove by mathematical induction that…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - combinatorics
 relations: []
 review: draft
 ---

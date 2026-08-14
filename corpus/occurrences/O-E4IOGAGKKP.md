@@ -6,7 +6,9 @@ title: P-WJTPS at UGA prelim Fall 2014
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
+  - green-s-theorem
 relations:
 - kind: instance-of
   target: P-WJTPS

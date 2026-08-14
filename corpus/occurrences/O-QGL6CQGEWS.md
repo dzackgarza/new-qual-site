@@ -6,7 +6,10 @@ title: P-3MDGM at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
+  - u-substitution
 relations:
 - kind: instance-of
   target: P-3MDGM

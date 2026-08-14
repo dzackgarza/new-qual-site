@@ -6,7 +6,8 @@ title: "$\\displaystyle \\int \\frac {1}{9+x^2} ~dx = \\color {blue} {\\frac {1}
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
 relations: []
 review: draft
 ---

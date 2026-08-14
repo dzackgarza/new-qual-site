@@ -6,7 +6,9 @@ title: Consider the line integral $\int_C 2x\,dx + x^2y\,dy$, where $C$ is th…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
+  - green-s-theorem
 relations: []
 review: draft
 ---

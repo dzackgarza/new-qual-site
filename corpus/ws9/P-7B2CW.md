@@ -6,7 +6,10 @@ title: Let $|G|=pq$ where $p$ and $q$ are prime, $p<q$.
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - groups
+  - simple-groups
+  - sylow-theory
 relations: []
 review: draft
 ---

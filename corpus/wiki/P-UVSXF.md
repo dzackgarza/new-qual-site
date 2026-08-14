@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int x\\sqrt {x+1}~dx = \\color {blue} {\\frac {2}{5} (
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations: []
 review: draft
 ---

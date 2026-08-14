@@ -6,7 +6,9 @@ title: P-IKEPG at UGA prelim Fall 2016
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-IKEPG

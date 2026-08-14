@@ -6,7 +6,9 @@ title: a. Show that every Euclidean domain is a principal ideal domain.
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - euclidean-domains
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

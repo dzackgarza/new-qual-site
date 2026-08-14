@@ -6,7 +6,9 @@ title: Let $R$ be a ring (with unit).
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

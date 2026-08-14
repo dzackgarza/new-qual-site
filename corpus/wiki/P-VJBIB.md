@@ -6,7 +6,9 @@ title: "Parts If $A$ has two distinct eigenvalues, we will have $A = PDP\\inv$ w
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
 relations: []
 review: draft
 ---

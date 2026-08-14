@@ -6,7 +6,8 @@ title: "Find all cube roots of $2-2i$ and express them in the standard\u2026"
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - roots-of-unity
 relations: []
 review: draft
 ---

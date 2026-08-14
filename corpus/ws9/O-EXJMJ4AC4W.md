@@ -6,7 +6,9 @@ title: P-CJUIR at UGA prelim Fall 2006
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
+  - green-s-theorem
 relations:
 - kind: instance-of
   target: P-CJUIR

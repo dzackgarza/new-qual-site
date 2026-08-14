@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int x\\sec ^{-1} (x) ~dx = \\color {blue} {\\frac {1}{
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - integration-by-parts
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-IXED6 at UGA prelim July 2013
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - ideals
 relations:
 - kind: instance-of
   target: P-IXED6

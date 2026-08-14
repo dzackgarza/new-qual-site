@@ -6,7 +6,9 @@ title: P-XRZVW at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations:
 - kind: instance-of
   target: P-XRZVW

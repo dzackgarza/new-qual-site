@@ -6,7 +6,9 @@ title: Let $a_0, a_1, a_2, \ldots$ be a decreasing sequence of positive real…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - series-of-numbers
+  - convergence-tests
 relations: []
 review: draft
 ---

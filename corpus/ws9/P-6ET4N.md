@@ -6,7 +6,10 @@ title: a. Find a rational canonical form and a Jordan canonical form for the…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - rational-canonical-form
+  - matrices
 relations: []
 review: draft
 ---

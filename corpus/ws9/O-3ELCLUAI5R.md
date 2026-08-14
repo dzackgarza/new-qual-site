@@ -6,7 +6,8 @@ title: P-KU6C3 at UGA prelim Fall 2002
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - polynomials
 relations:
 - kind: instance-of
   target: P-KU6C3

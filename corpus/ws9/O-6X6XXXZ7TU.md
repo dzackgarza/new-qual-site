@@ -6,7 +6,9 @@ title: P-Y5JK4 at UGA prelim June 2008
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - euclidean-domains
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-Y5JK4

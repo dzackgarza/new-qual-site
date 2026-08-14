@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\frac {x}{x-1} ~dx = \\color{blue} {x + \\ln (1 -
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - partial-fractions
 relations: []
 review: draft
 ---

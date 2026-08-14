@@ -6,7 +6,8 @@ title: P-VVXKF at UGA prelim June 2012
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - sylow-theory
 relations:
 - kind: instance-of
   target: P-VVXKF

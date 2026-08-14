@@ -6,7 +6,10 @@ title: Solution to P-TB7BG
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - nilpotence
+  - jordan-canonical-form
+  - matrices
 relations:
 - kind: solves
   target: P-TB7BG

@@ -6,7 +6,10 @@ title: A square matrix $N$ over the complex numbers is nilpotent just in case…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - nilpotence
+  - jordan-canonical-form
+  - matrices
 relations: []
 review: draft
 ---

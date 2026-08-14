@@ -6,7 +6,8 @@ title: "Prove that the line integral $\\displaystyle\\int_C (x+y^3)\\,dx + (e^y+
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
 relations: []
 review: draft
 ---

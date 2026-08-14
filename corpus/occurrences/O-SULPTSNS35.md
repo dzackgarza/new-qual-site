@@ -6,7 +6,10 @@ title: P-KOTV2 at UGA prelim Fall 2015
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - linear-algebra
+  - bases
+  - matrices
 relations:
 - kind: instance-of
   target: P-KOTV2

@@ -6,7 +6,9 @@ title: a. Determine the elementary divisors and invariant factors of the Abel…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - abelian-groups
+  - structure-theorem
 relations: []
 review: draft
 ---

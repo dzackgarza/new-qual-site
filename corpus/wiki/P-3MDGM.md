@@ -6,7 +6,10 @@ title: "$\\displaystyle \\int \\frac {\\sec^3(x) + e^{\\sin(x)}}{\\sec(x)} ~dx =
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometry
+  - u-substitution
 relations: []
 review: draft
 ---

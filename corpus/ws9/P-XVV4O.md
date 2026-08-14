@@ -6,7 +6,9 @@ title: Present and explain an example refuting the converse to Lagrange's The…
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: P-MOCTU at UGA prelim Summer 2011
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - modules
+  - free-modules
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-MOCTU

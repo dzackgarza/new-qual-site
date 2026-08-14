@@ -6,7 +6,8 @@ title: P-5XCMC at UGA prelim Spring 2005
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - logic-and-quantifiers
 relations:
 - kind: instance-of
   target: P-5XCMC

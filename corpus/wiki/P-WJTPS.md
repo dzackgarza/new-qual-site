@@ -6,7 +6,9 @@ title: "2. We first note that we can rewrite the equation of the region to obt\u
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - line-integrals
+  - green-s-theorem
 relations: []
 review: draft
 ---

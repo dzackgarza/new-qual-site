@@ -6,7 +6,10 @@ title: P-TB7BG at UGA prelim June 2008
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - nilpotence
+  - jordan-canonical-form
+  - matrices
 relations:
 - kind: instance-of
   target: P-TB7BG

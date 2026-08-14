@@ -6,7 +6,9 @@ title: P-PAVWJ at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - partial-fractions
 relations:
 - kind: instance-of
   target: P-PAVWJ

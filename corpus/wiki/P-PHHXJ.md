@@ -6,7 +6,9 @@ title: "$\\displaystyle \\int \\sqrt {1 -x^2} ~dx = \\frac {1}{2} (\\sin ^{-1} (
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - trigonometric-substitution
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: P-5JBRJ at UGA prelim Summer 2011
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - fields
+  - finite-fields
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-5JBRJ

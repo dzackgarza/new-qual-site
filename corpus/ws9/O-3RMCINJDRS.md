@@ -6,7 +6,9 @@ title: P-FKEN5 at UGA prelim Fall 2003
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - induction
+  - number-theory
 relations:
 - kind: instance-of
   target: P-FKEN5

@@ -6,7 +6,9 @@ title: P-XVV4O at UGA prelim July 2013
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-XVV4O

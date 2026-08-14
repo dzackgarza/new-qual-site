@@ -6,7 +6,9 @@ title: P-TO7UO at UGA prelim 2018
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations:
 - kind: instance-of
   target: P-TO7UO

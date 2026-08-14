@@ -6,7 +6,9 @@ title: P-UVSXF at UGA prelim 2019
 classification:
   areas:
   - prelim
-  topics: []
+  topics:
+  - integrals
+  - u-substitution
 relations:
 - kind: instance-of
   target: P-UVSXF
