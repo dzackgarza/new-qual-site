@@ -6,7 +6,9 @@ title: "Deck transformation"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
 relations: []
 review: draft
 ---

@@ -1,4 +1,6 @@
 # Topics. A registry, not a schema enum: a new topic is a new entry here.
+- id: abelian-groups
+  name: Abelian Groups
 - id: absolute-continuity
   name: Absolute Continuity
 - id: algebra
@@ -9,6 +11,8 @@
   name: Analysis
 - id: approximations-to-the-identity
   name: Approximations to the Identity
+- id: argument-principle
+  name: Argument Principle
 - id: argument-principle-cauchy-s-integral-theorem
   name: Argument Principle Cauchy's Integral Theorem
 - id: arzela-ascoli
@@ -21,6 +25,10 @@
   name: Bernoulli
 - id: biholomorphisms
   name: Biholomorphisms
+- id: bilinear-forms
+  name: Bilinear Forms
+- id: blaschke-factors
+  name: Blaschke Factors
 - id: borel-cantelli
   name: Borel-Cantelli
 - id: calculus
@@ -31,6 +39,10 @@
   name: Cantor Set
 - id: casorati-weierstrass
   name: Casorati-Weierstrass
+- id: category-theory
+  name: Category Theory
+- id: cauchy-estimates
+  name: Cauchy Estimates
 - id: cauchy-integral-formula
   name: Cauchy Integral Formula
 - id: cauchy-integral-theorem
@@ -39,18 +51,30 @@
   name: Cauchy-Riemann
 - id: cell-complexes
   name: Cell Complexes
+- id: centralizers-and-normalizers
+  name: Centralizers and Normalizers
+- id: character-theory
+  name: Character Theory
+- id: characteristic
+  name: Characteristic
 - id: class-equation
   name: Class Equation
 - id: classification
   name: Classification
 - id: closure
   name: Closure
+- id: cohomology
+  name: Cohomology
 - id: commutative-algebra
   name: Commutative Algebra
+- id: commutators
+  name: Commutators
 - id: compactness
   name: Compactness
 - id: completeness
   name: Completeness
+- id: complex-logarithm
+  name: Complex Logarithm
 - id: conformal-maps
   name: Conformal Maps
 - id: conjugacy
@@ -61,6 +85,8 @@
   name: Continuity
 - id: continuity-of-measure
   name: Continuity of Measure
+- id: contour-integration
+  name: Contour Integration
 - id: convergence
   name: Convergence
 - id: convergence-of-functions
@@ -69,30 +95,64 @@
   name: Convergence of Integrals
 - id: convergence-of-numbers
   name: Convergence of Numbers
+- id: convergence-tests
+  name: Convergence Tests
 - id: convolution
   name: Convolution
+- id: cosets-and-lagrange
+  name: Cosets and Lagrange
+- id: countability
+  name: Countability
 - id: counterexamples
   name: Counterexamples
 - id: covering-spaces
   name: Covering Spaces
+- id: cyclic-groups
+  name: Cyclic Groups
+- id: degree
+  name: Degree
 - id: density
   name: Density
+- id: determinants
+  name: Determinants
+- id: diagonalization
+  name: Diagonalization
 - id: differentiation
   name: Differentiation
 - id: egorov
   name: Egorov
 - id: entire-functions
   name: Entire Functions
+- id: equicontinuity
+  name: Equicontinuity
+- id: essential-singularities
+  name: Essential Singularities
+- id: euclidean-domains
+  name: Euclidean Domains
 - id: euclidean-spaces
   name: Euclidean Spaces
+- id: euler-characteristic
+  name: Euler Characteristic
+- id: exact-sequences
+  name: Exact Sequences
+- id: factorization
+  name: Factorization
 - id: fatou
   name: Fatou
+- id: field-extensions
+  name: Field Extensions
 - id: fields
   name: Fields
+- id: finite-fields
+  name: Finite Fields
 - id: fixed-points
   name: Fixed Points
 - id: fractional-linear-transformations
   name: Fractional Linear Transformations
+- id: free-groups
+  name: Free Groups
+- id: free-modules
+  name: Free Modules
 - id: fubini-tonelli
   name: Fubini-Tonelli
 - id: function-spaces
@@ -103,12 +163,16 @@
   name: Fundamental Group
 - id: galois-theory
   name: Galois Theory
+- id: gamma-function
+  name: Gamma Function
 - id: geometry
   name: Geometry
 - id: green-s-theorem
   name: Green's Theorem
 - id: group-actions
   name: Group Actions
+- id: group-presentations
+  name: Group Presentations
 - id: groups
   name: Groups
 - id: harmonic-functions
@@ -119,14 +183,32 @@
   name: Hilbert Spaces
 - id: holomorphic-functions
   name: Holomorphic Functions
+- id: homeomorphisms
+  name: Homeomorphisms
 - id: homological-algebra
   name: Homological Algebra
 - id: homology
   name: Homology
+- id: homomorphisms
+  name: Homomorphisms
+- id: homotopy
+  name: Homotopy
+- id: hurwitz
+  name: Hurwitz
+- id: hyperbolic-functions
+  name: Hyperbolic Functions
 - id: ideals
   name: Ideals
+- id: identity-theorem
+  name: Identity Theorem
+- id: inner-product-spaces
+  name: Inner Product Spaces
+- id: integral-domains
+  name: Integral Domains
 - id: integrals
   name: Integrals
+- id: irreducibility-criteria
+  name: Irreducibility Criteria
 - id: jacobson-radical
   name: Jacobson Radical
 - id: jordan-canonical-form
@@ -145,12 +227,26 @@
   name: Linear Algebra
 - id: liouville-s-theorem
   name: Liouville's Theorem
+- id: local-rings
+  name: Local Rings
 - id: localization
   name: Localization
 - id: lp-spaces
   name: Lp Spaces
+- id: manifolds
+  name: Manifolds
 - id: matrices
   name: Matrices
+- id: matrix-groups
+  name: Matrix Groups
+- id: maximal-ideals
+  name: Maximal Ideals
+- id: maximum-modulus-principle
+  name: Maximum Modulus Principle
+- id: mayer-vietoris
+  name: Mayer-Vietoris
+- id: mean-value-property
+  name: Mean Value Property
 - id: mean-value-theorem
   name: Mean Value Theorem
 - id: measure-theory
@@ -159,42 +255,110 @@
   name: Meromorphic Functions
 - id: metric-spaces
   name: Metric Spaces
+- id: minimal-and-characteristic-polynomials
+  name: Minimal and Characteristic Polynomials
 - id: misc
   name: Misc
 - id: modules
   name: Modules
+- id: montel
+  name: Montel
+- id: morera
+  name: Morera
+- id: nilpotence
+  name: Nilpotence
+- id: nilpotent-groups
+  name: Nilpotent Groups
+- id: noetherian-rings
+  name: Noetherian Rings
+- id: normal-families
+  name: Normal Families
+- id: normal-subgroups
+  name: Normal Subgroups
 - id: norms
   name: Norms
+- id: number-theory
+  name: Number Theory
+- id: open-mapping-theorem
+  name: Open Mapping Theorem
+- id: orbit-stabilizer
+  name: Orbit-Stabilizer
+- id: orientation
+  name: Orientation
+- id: p-groups
+  name: p-Groups
+- id: paracompactness
+  name: Paracompactness
 - id: pdes
   name: PDEs
+- id: permutations
+  name: Permutations
+- id: picard
+  name: Picard
+- id: poincare-duality
+  name: Poincaré Duality
 - id: point-set
   name: Point-Set
+- id: poles
+  name: Poles
 - id: polynomials
   name: Polynomials
+- id: power-series
+  name: Power Series
+- id: primary-decomposition
+  name: Primary Decomposition
+- id: prime-ideals
+  name: Prime Ideals
+- id: principal-ideal-domains
+  name: Principal Ideal Domains
 - id: principal-parts
   name: Principal Parts
+- id: product-topology
+  name: Product Topology
+- id: projective-modules
+  name: Projective Modules
+- id: quadratic-forms
+  name: Quadratic Forms
 - id: quotient-spaces
   name: Quotient Spaces
 - id: radon-nikodym
   name: Radon Nikodym
+- id: rational-canonical-form
+  name: Rational Canonical Form
+- id: removable-singularities
+  name: Removable Singularities
 - id: representation-theory
   name: Representation Theory
 - id: residues
   name: Residues
+- id: retracts
+  name: Retracts
 - id: riemann-integrability
   name: Riemann Integrability
 - id: riemann-mapping
   name: Riemann Mapping
+- id: riemann-surfaces
+  name: Riemann Surfaces
+- id: riemann-zeta
+  name: Riemann Zeta Function
 - id: riesz-representation
   name: Riesz Representation
 - id: rings
   name: Rings
+- id: roots-of-unity
+  name: Roots of Unity
 - id: rouche
   name: Rouche
 - id: schwarz-lemma
   name: Schwarz Lemma
 - id: schwarz-reflection
   name: Schwarz Reflection
+- id: semisimplicity
+  name: Semisimplicity
+- id: separability
+  name: Separability
+- id: separation-axioms
+  name: Separation Axioms
 - id: sequences-of-functions
   name: Sequences of Functions
 - id: sequences-of-numbers
@@ -203,25 +367,61 @@
   name: Series of Functions
 - id: series-of-numbers
   name: Series of Numbers
+- id: simple-groups
+  name: Simple Groups
 - id: singularities
   name: Singularities
 - id: small-tails
   name: Small Tails
+- id: solvable-groups
+  name: Solvable Groups
+- id: splitting-fields
+  name: Splitting Fields
+- id: structure-theorem
+  name: Structure Theorem
+- id: subgroup-series
+  name: Subgroup Series
+- id: subgroups
+  name: Subgroups
+- id: subspace-topology
+  name: Subspace Topology
 - id: sums
   name: Sums
 - id: surfaces
   name: Surfaces
 - id: sylow-theory
   name: Sylow Theory
+- id: symmetric-functions
+  name: Symmetric Functions
+- id: tensor-products
+  name: Tensor Products
 - id: torsion
   name: Torsion
+- id: trace
+  name: Trace
+- id: trigonometry
+  name: Trigonometry
 - id: tube-lemma
   name: Tube Lemma
 - id: uniform-continuity
   name: Uniform Continuity
 - id: uniform-convergence
   name: Uniform Convergence
+- id: uniformization
+  name: Uniformization
+- id: valuation-rings
+  name: Valuation Rings
+- id: van-kampen
+  name: Seifert-van Kampen
 - id: variation
   name: Variation
 - id: vector-spaces
   name: Vector Spaces
+- id: weierstrass-factorization
+  name: Weierstrass Factorization
+- id: winding-number
+  name: Winding Number
+- id: zeros
+  name: Zeros
+- id: zorns-lemma
+  name: Zorn's Lemma

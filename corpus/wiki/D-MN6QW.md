@@ -6,7 +6,8 @@ title: "Manifold with boundary"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - manifolds
 relations: []
 review: draft
 ---

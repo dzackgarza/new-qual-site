@@ -6,7 +6,9 @@ title: "Compact: A topological space $(X, \\tau)$ is compact iff $X$ is Hausdorf
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

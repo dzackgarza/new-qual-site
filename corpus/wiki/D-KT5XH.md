@@ -6,7 +6,9 @@ title: "Boundary: The boundary of a subset $A\\subseteq X$ is defined as $\\bd A
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - closure
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Galois/normal/regular covers"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
 relations: []
 review: draft
 ---

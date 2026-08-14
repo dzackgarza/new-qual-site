@@ -6,7 +6,8 @@ title: "Homotopy Class"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

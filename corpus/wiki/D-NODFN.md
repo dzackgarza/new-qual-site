@@ -6,7 +6,10 @@ title: "Direct Limit"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - category-theory
+  - homological-algebra
+  - homology
 relations: []
 review: draft
 ---

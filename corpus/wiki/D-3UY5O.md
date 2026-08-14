@@ -6,7 +6,9 @@ title: "Lefschetz Number"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homology
 relations: []
 review: draft
 ---

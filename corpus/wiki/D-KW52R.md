@@ -6,7 +6,8 @@ title: "Comparability of topologies"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
 relations: []
 review: draft
 ---

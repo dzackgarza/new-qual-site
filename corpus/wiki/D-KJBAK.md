@@ -6,7 +6,10 @@ title: "Dense: A subspace $Q\\subset X$ is dense iff every neighborhood of every
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - closure
+  - density
 relations: []
 review: draft
 ---

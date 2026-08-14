@@ -6,7 +6,10 @@ title: "N-connected"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - connectedness
+  - fundamental-group
 relations: []
 review: draft
 ---

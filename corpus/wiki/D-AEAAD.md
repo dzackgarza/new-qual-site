@@ -6,7 +6,9 @@ title: "Continuous Map"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - point-set
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Splitting an exact sequence"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - groups
 relations: []
 review: draft
 ---

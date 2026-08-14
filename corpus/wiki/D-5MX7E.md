@@ -2,35 +2,34 @@
 schema: qual/card@1
 id: D-5MX7E
 kind: definition
-title: "Colimit: For a directed system $(X_{i}, f_{ij})$, the colimit is an object $X$ with a\u2026"
+title: "Colimit: For a diagram $F: I \\to \\mathcal C$, the colimit is an object $X$ together with…"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - category-theory
 relations: []
 review: draft
 ---
 
 ::: {.definition title="Colimit"}
-For a directed system $(X_{i}, f_{ij})$, the **colimit** is an object $X$ with a sequence of projections $\pi_{i}:X\to X_{i}$ such that for any $Y$ mapping into the system, the following diagram commutes:
-
-\begin{tikzcd}
-                 &                            &  & Y \arrow[lldddd, "\psi_{j}"] \arrow[rrdddd, "\psi_{i}"] \arrow[dd, "\exists!", dashed] &  &               &        \\
-                 &                            &  &                                                                                    &  &               &        \\
-                 &                            &  & X \arrow[lldd, "\pi_{j}"] \arrow[rrdd, "\pi_{i}"]                                      &  &               &        \\
-                 &                            &  &                                                                                    &  &               &        \\
-\cdots \arrow[r] & X_{j} \arrow[rrrr, "f_{ij}"] &  &                                                                                    &  & X_{i} \arrow[r] & \cdots
-\end{tikzcd}
+For a diagram $F: I \to \mathcal C$, the **colimit** is an object $X$ together with maps $\iota_i: F(i) \to X$ commuting with the diagram, universal with that property: any other such cocone $\ts{\psi_i: F(i) \to Y}$ factors through a unique $X \to Y$.
+For a directed system $(X_i, f_{ij})$ this is the direct limit: the $\iota_i$ point **out of** the system and into $X$, and a compatible family of maps out of the system extends uniquely over $X$.
+The dual notion, reversing all arrows, is a limit.
+:::
 
 ::: {.example title="of colimits"}
 \envlist
 
-- Products
+- Coproducts
 
-- Pullbacks
+- Pushouts
 
-- Inverse / projective limits
+- Direct / inductive limits
 
-- The \( p\dash \)adic integers \( \ZZ_{p} \).
+- The group $\ZZ[1/p]$, as the colimit of $\ZZ \mapsvia{p} \ZZ \mapsvia{p} \cdots$.
 :::
+
+::: {.concept}
+See Weibel, *An Introduction to Homological Algebra*, 2.6.7 and Variation 2.6.9.
 :::

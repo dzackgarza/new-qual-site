@@ -6,7 +6,9 @@ title: "Retract: A retract $r$ of $B$ onto a subspace $A$ is a map $r:B\\to A$ t
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homotopy
 relations: []
 review: draft
 ---

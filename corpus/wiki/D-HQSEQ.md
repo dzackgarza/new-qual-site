@@ -6,7 +6,10 @@ title: "Paracompact: A topological space $X$ is paracompact iff every open cover
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - paracompactness
+  - point-set
 relations: []
 review: draft
 ---

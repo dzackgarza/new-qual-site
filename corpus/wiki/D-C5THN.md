@@ -6,7 +6,10 @@ title: "Product and box topologies"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - product-topology
+  - point-set
+  - bases
 relations: []
 review: draft
 ---

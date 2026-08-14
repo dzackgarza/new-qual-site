@@ -6,7 +6,10 @@ title: "Lipschitz implies uniformly continuous"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - uniform-continuity
+  - continuity
 relations: []
 review: draft
 ---

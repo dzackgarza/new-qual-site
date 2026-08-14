@@ -6,7 +6,10 @@ title: "Homotopy Extension Property"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - cell-complexes
+  - retracts
 relations: []
 review: draft
 ---

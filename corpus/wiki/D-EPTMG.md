@@ -6,7 +6,9 @@ title: "Regular"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - point-set
 relations: []
 review: draft
 ---

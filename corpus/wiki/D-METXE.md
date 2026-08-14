@@ -6,7 +6,9 @@ title: "Closed Maps: A map $f:X\\to Y$ is closed if whenever $U \\subseteq X$ is
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - point-set
 relations: []
 review: draft
 ---

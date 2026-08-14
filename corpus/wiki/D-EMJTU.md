@@ -6,7 +6,10 @@ title: "Neighborhood Basis"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - bases
+  - countability
 relations: []
 review: draft
 ---

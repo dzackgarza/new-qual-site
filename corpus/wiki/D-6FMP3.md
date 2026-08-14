@@ -6,7 +6,10 @@ title: "Hausdorff: A topological space $X$ is Hausdorff iff points can be\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - hausdorff-spaces
+  - separation-axioms
 relations: []
 review: draft
 ---

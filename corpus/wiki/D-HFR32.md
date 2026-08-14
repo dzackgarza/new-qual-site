@@ -6,7 +6,8 @@ title: "Homotopy Equivalence"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

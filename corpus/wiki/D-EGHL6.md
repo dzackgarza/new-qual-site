@@ -6,7 +6,9 @@ title: "Perfect Pairing"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - modules
+  - linear-algebra
 relations: []
 review: draft
 ---

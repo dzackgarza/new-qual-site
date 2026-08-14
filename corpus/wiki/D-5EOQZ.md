@@ -6,7 +6,9 @@ title: "Locally Compact"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
 relations: []
 review: draft
 ---

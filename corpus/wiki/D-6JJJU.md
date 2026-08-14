@@ -6,7 +6,9 @@ title: "Locally Finite"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - paracompactness
 relations: []
 review: draft
 ---

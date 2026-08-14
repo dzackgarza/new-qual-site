@@ -6,7 +6,9 @@ title: "Path Lifting Property"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
 relations: []
 review: draft
 ---

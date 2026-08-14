@@ -6,7 +6,8 @@ title: "Contractible"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

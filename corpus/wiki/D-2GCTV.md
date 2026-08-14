@@ -6,7 +6,8 @@ title: "Bounded: A set $S$ in a metric space $(X, d)$ is bounded iff there exist
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
 relations: []
 review: draft
 ---

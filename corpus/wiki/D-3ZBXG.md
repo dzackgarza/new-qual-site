@@ -6,7 +6,8 @@ title: "Injection: A map $\\iota:A\\to B$ is injective if it admits a left inver
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - category-theory
 relations: []
 review: draft
 ---

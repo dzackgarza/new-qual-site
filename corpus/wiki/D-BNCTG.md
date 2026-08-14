@@ -6,7 +6,9 @@ title: "Local homology"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - manifolds
 relations: []
 review: draft
 ---

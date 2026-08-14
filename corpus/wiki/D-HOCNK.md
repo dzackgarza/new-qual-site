@@ -6,7 +6,9 @@ title: "Homotopy Lifting Property"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - covering-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Flat"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - modules
+  - homological-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "Factoring through a contractible space implies nullhomotopic"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

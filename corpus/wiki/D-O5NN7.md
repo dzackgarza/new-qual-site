@@ -6,7 +6,9 @@ title: "Orbit space"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - group-actions
+  - quotient-spaces
 relations: []
 review: draft
 ---

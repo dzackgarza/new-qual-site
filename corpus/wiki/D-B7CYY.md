@@ -6,7 +6,8 @@ title: "Diameter: For a subset $A$ of a metric space $(X, d)$, the diameter of $
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
 relations: []
 review: draft
 ---

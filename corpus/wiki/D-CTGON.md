@@ -6,7 +6,9 @@ title: "Open and Closed Maps"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - point-set
 relations: []
 review: draft
 ---

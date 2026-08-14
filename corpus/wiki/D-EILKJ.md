@@ -6,7 +6,8 @@ title: "Compact: A topological space $(X, \\tau)$ is compact iff every open cove
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

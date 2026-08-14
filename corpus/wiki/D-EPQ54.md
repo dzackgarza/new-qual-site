@@ -6,7 +6,9 @@ title: "Semilocally Simply Connected"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

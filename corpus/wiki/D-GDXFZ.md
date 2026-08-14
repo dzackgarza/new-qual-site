@@ -6,7 +6,10 @@ title: "Proper: Several equivalent definitions."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
+  - point-set
 relations: []
 review: draft
 ---

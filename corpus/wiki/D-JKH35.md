@@ -6,7 +6,9 @@ title: "Product topology"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - product-topology
+  - point-set
 relations: []
 review: draft
 ---

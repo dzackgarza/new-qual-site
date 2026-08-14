@@ -6,7 +6,9 @@ title: "Simplicial Complex"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations: []
 review: draft
 ---

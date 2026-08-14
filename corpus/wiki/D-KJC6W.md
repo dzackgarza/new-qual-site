@@ -6,7 +6,9 @@ title: "Closed Sets: A set is closed if and only if its complement is open."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - closure
 relations: []
 review: draft
 ---

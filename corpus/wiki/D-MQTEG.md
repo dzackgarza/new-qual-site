@@ -6,7 +6,8 @@ title: "Cocycle"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
 relations: []
 review: draft
 ---

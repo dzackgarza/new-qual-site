@@ -6,7 +6,8 @@ title: "Coproduct"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - category-theory
 relations: []
 review: draft
 ---

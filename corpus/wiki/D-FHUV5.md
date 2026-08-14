@@ -6,7 +6,10 @@ title: "Group Ring"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - rings
+  - groups
+  - representation-theory
 relations: []
 review: draft
 ---

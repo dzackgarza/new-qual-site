@@ -6,7 +6,9 @@ title: "Basis of a module"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - modules
+  - bases
 relations: []
 review: draft
 ---

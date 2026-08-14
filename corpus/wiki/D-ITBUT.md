@@ -6,7 +6,9 @@ title: "Quotient Map"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - continuity
 relations: []
 review: draft
 ---

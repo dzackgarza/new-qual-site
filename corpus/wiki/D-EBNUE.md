@@ -6,7 +6,9 @@ title: "Fundamental Group"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

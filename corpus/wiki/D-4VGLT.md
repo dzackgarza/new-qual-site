@@ -6,7 +6,9 @@ title: "Tor Group"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - modules
 relations: []
 review: draft
 ---

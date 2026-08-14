@@ -6,7 +6,9 @@ title: "Locally Connected"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - point-set
 relations: []
 review: draft
 ---

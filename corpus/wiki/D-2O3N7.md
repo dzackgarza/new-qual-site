@@ -6,7 +6,9 @@ title: "Deformation Retract"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
 relations: []
 review: draft
 ---

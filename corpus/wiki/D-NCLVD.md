@@ -6,7 +6,9 @@ title: "Retract: A map $r$ in $A\\mathrel{\\textstyle\\substack{\\injects^{\\iot
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homotopy
 relations: []
 review: draft
 ---

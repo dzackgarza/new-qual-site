@@ -6,7 +6,9 @@ title: "The subspace topology"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - subspace-topology
 relations: []
 review: draft
 ---

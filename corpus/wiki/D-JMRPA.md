@@ -6,7 +6,8 @@ title: "Neighborhood"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
 relations: []
 review: draft
 ---

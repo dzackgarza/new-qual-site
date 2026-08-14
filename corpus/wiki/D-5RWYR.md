@@ -6,7 +6,9 @@ title: "Linear Independence"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - modules
+  - linear-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Weak Topology"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - cell-complexes
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Precompact"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - closure
 relations: []
 review: draft
 ---

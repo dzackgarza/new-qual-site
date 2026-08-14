@@ -6,7 +6,9 @@ title: "Free and Properly Discontinuous"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - group-actions
+  - covering-spaces
 relations: []
 review: draft
 ---

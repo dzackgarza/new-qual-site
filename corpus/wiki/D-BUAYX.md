@@ -6,7 +6,8 @@ title: "Injection: A map $\\iota:A\\to B$ with a left inverse $f:B\\to A$ satisf
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - category-theory
 relations: []
 review: draft
 ---

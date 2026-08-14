@@ -6,7 +6,9 @@ title: "Euler for Connect Sums"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - euler-characteristic
 relations: []
 review: draft
 ---

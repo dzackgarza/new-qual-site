@@ -6,7 +6,10 @@ title: "$T_n$ Spaces (Separation Axioms)"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - separation-axioms
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

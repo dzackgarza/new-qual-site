@@ -6,7 +6,10 @@ title: "Simply Connected"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - connectedness
 relations: []
 review: draft
 ---

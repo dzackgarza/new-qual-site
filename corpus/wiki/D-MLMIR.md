@@ -6,7 +6,9 @@ title: "Boundary of a manifold"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - manifolds
+  - homology
 relations: []
 review: draft
 ---

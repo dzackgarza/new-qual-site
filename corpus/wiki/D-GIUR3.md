@@ -6,7 +6,10 @@ title: "Lefschetz duality"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - poincare-duality
+  - manifolds
+  - homology
 relations: []
 review: draft
 ---

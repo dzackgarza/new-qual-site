@@ -6,7 +6,9 @@ title: "Path"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - fundamental-group
 relations: []
 review: draft
 ---
