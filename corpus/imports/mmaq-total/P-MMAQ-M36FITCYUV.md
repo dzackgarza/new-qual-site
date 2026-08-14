@@ -8,7 +8,7 @@ classification:
   - topology
   topics:
   - point-set
-  - compact-spaces
+  - compactness
   - metric-spaces
   - analysis
 relations: []

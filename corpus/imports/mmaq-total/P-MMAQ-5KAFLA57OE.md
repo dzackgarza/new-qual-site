@@ -10,7 +10,7 @@ classification:
   - point-set
   - hausdorff-spaces
   - counterexamples
-  - quotient-space
+  - quotient-spaces
 relations: []
 review: draft
 ---

@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - analytic-functions
+  - holomorphic-functions
   - analysis
 relations: []
 review: draft
