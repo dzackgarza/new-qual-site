@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-IAUQG
 kind: fact
-title: 'What is the $ M{\hbox{-}} $test?'
+title: "What is the $M{\\hbox{-}}$test?"
 classification:
   areas:
   - real-analysis

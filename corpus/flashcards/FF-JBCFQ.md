@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-JBCFQ
 kind: fact
-title: 'Define $ \limsup, \liminf $ for sequences of sets. What are their containments?'
+title: "Define $\\limsup, \\liminf$ for sequences of sets. What are their containments?"
 classification:
   areas:
   - real-analysis

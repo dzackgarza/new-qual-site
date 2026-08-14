@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-JXE7U
 kind: fact
-title: 'Prove $ \mathop{\mathrm{Hom}}_R(R, A) \cong A $.'
+title: "Prove $\\mathop{\\mathrm{Hom}}_R(R, A) \\cong A$.: Take the map\u2026"
 classification:
   areas:
   - topology

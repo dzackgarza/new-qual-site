@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-5EBCJ
 kind: fact
-title: 'Characterize the set $ D_f $ of discontinuities of a function.'
+title: "Characterize the set $D_f$ of discontinuities of a function."
 classification:
   areas:
   - real-analysis

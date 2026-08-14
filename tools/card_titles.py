@@ -58,6 +58,9 @@ DISPLAY = re.compile(r"\$\$(.*?)\$\$|\\\[(.*?)\\\]", re.S)
 # with no delimiters around it, and counting its source as prose cut titles in
 # the middle of an `\begin`.
 MATH = re.compile(r"\$[^$]*\$|\\\(.*?\\\)|\\begin\{[a-zA-Z*]+\}.*?\\end\{[a-zA-Z*]+\}", re.S)
+# An inline span whose delimiters are padded, `$ x $`. Pandoc opens no math on
+# `$ `, so the span is printed rather than typeset.
+MATH_SPAN_PADDING = re.compile(r"\$[ \t]*([^$]*?)[ \t]*\$")
 IMAGE = re.compile(r"!\[[^\]]*\]\([^)]*\)|!\[\[[^\]]*\]\]")
 EMPHASIS = re.compile(r"\*{1,3}(?=\S)|(?<=\S)\*{1,3}|`")
 # A footnote reference is a pointer to a note the title does not carry.
@@ -185,12 +188,28 @@ def authored_title(body: str) -> str:
     return ""
 
 
+def _tighten(title: str) -> str:
+    """Close up whitespace just inside a `$...$` delimiter.
+
+    The authored corpus writes `$ \\chi(A\\# B) $` as often as `$\\chi(A\\# B)$`.
+    Pandoc does not open a math span on `$ `, so the whole span reaches the page
+    as its own source with the operators dropped -- `$ \\cos(z) = \\cosh(?) $`
+    renders as "(z) = (?)". LaTeX ignores the spacing, so removing it changes
+    nothing a reader was meant to see.
+    """
+    return MATH_SPAN_PADDING.sub(r"$\1$", title)
+
+
 def title_of(body: str, sentences: int = 1) -> str:
     """The opening of the statement, cut where a reader can still read it.
 
     `sentences` is how many closed units the title must carry; the collision
     pass raises it for cards that would otherwise share a title.
     """
+    return _tighten(_derive_title(body, sentences))
+
+
+def _derive_title(body: str, sentences: int = 1) -> str:
     authored = authored_title(body)
     if authored and readable(authored) >= FLOOR:
         return authored
@@ -255,11 +274,16 @@ def _typesets(title: str) -> bool:
     display blocks with bare `&`, which `_inline_display` would otherwise carry
     into a title verbatim; `_macros.html` wraps such a block in `aligned`
     before typesetting it, and a title has nowhere to put that.
+
+    A padded delimiter, `$ x $`, fails earlier than MathJax: pandoc opens no
+    math span on `$ `, so the source reaches the page unrendered. `_tighten`
+    is the repair, and a title that differs from its own tightening still
+    carries the defect.
     """
     braces = re.sub(r"\\.", "", title, flags=re.S)
     inline = "".join(match.group(0) for match in MATH.finditer(title))
     aligned = re.sub(r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", "", inline, flags=re.S)
-    return title.count("$") % 2 == 0 and braces.count("{") == braces.count("}") and title.count(r"\begin{") == title.count(r"\end{") and "&" not in aligned
+    return title.count("$") % 2 == 0 and braces.count("{") == braces.count("}") and title.count(r"\begin{") == title.count(r"\end{") and "&" not in aligned and title == _tighten(title)
 
 
 def degenerate(title: str, authored: str = "") -> str | None:

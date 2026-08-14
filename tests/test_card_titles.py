@@ -68,6 +68,16 @@ def test_an_aligned_display_reaches_the_title_inside_its_environment() -> None:
     assert degenerate(title) is None
 
 
+def test_a_padded_delimiter_never_reaches_a_title() -> None:
+    """The corpus writes `$ x $` as often as `$x$`. Pandoc opens no math span on
+    `$ `, so the whole span reaches the page as source with its operators
+    dropped: `$ \\cos(z) = \\cosh(?) $` renders as "(z) = (?)"."""
+    body = ':::{.fact title="Angle addition: $ \\cosh(x+iy) = \\cdots $"}\nbody\n:::\n'
+    assert title_of(body) == "Angle addition: $\\cosh(x+iy) = \\cdots$"
+    assert degenerate("Angle addition: $ \\cosh(x+iy) $") == "does not typeset"
+    assert degenerate("Angle addition: $\\cosh(x+iy)$") is None
+
+
 def test_degenerate_names_the_defects_a_reader_meets() -> None:
     assert degenerate("Let") == "names nothing"
     assert degenerate("?") == "no title"

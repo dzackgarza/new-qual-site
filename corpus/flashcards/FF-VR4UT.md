@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: FF-VR4UT
 kind: fact
-title: 'Angle addition formulas: $ \sinh(x+iy) = \cdots .$'
+title: "Angle addition formulas: $\\sinh(x+iy) = \\cdots .$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - hyperbolic-functions
+  - trigonometry
 relations: []
 review: draft
 ---

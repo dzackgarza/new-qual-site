@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KUYTP
 kind: problem
-title: "Useful facts: $ H_{k}(X\\times Y) \\cong \\bigoplus _{{i+j=k}}H_{i}(X)\\otimes H_{j}(Y) \\bigoplus_{i+j=k-1}\\tor(H_i(X), H_j(Y))$"
+title: "Useful facts\u2026"
 classification:
   areas:
   - topology

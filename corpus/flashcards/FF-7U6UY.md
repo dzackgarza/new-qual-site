@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-7U6UY
 kind: fact
-title: 'What is $ {J ({R}) } $? How is it interpreted geometrically?'
+title: "What is ${J ({R}) }$? How is it interpreted geometrically?"
 classification:
   areas:
   - algebra

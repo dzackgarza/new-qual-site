@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-5QPHF
 kind: fact
-title: 'The tor complex between $ C_n $ and $ A $.'
+title: "The tor complex between $C_n$ and $A$."
 classification:
   areas:
   - topology

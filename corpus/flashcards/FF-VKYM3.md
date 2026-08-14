@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-VKYM3
 kind: fact
-title: 'For matrices, does $ A^n=B^n\implies A=B $?'
+title: "For matrices, does $A^n=B^n\\implies A=B$?"
 classification:
   areas:
   - algebra

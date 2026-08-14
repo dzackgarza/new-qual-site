@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-AE7ID
 kind: fact
-title: 'What is $ \chi(A\# B) $?'
+title: "What is $\\chi(A\\# B)$?"
 classification:
   areas:
   - topology

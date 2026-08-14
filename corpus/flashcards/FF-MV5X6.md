@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: FF-MV5X6
 kind: fact
-title: 'Relating hyperbolic functions to usual ones: $ \sin(z) = \sinh(?) .$'
+title: "Relating hyperbolic functions to usual ones: $\\sin(z) = \\sinh(?) .$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - hyperbolic-functions
+  - trigonometry
 relations: []
 review: draft
 ---

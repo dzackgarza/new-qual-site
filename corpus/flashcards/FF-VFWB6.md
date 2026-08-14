@@ -2,11 +2,13 @@
 schema: qual/card@1
 id: FF-VFWB6
 kind: fact
-title: 'Angle addition formulas: $ \cosh(x+iy) = \cdots .$'
+title: "Angle addition formulas: $\\cosh(x+iy) = \\cdots .$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - hyperbolic-functions
+  - trigonometry
 relations: []
 review: draft
 ---
