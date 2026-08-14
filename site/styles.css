@@ -278,6 +278,11 @@ mjx-container[display="true"] {
 
 .page-body {
   overflow-wrap: anywhere;
+  /* A formula wider than a narrow column has nowhere to go: `mjx-container`
+     scrolls display math, but inline math is sized by its run and paints past
+     the column, which set the width of the whole document at 375px. Scrolling
+     the article keeps that inside the page instead. */
+  overflow-x: auto;
 }
 
 .page-body h2,

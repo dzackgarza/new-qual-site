@@ -10,7 +10,7 @@ from __future__ import annotations
 import io
 import re
 from collections.abc import Callable
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Annotated, Literal, cast
 
 import panflute as pf
@@ -399,15 +399,40 @@ def to_json(document: pf.Doc) -> str:
 FILE_CAPTION = re.compile(r"\.(png|jpe?g|gif|svg|webp|pdf)$", re.I)
 
 
+def _figure_targets(element: pf.Figure) -> list[str]:
+    urls: list[str] = []
+
+    def collect(node: pf.Element, doc: pf.Doc) -> pf.Element:
+        del doc
+        url = getattr(node, "url", None)
+        if isinstance(url, str):
+            urls.append(url)
+        return node
+
+    pf.Doc(*element.content).walk(collect)
+    return urls
+
+
 def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
-    """Take the caption off a figure captioned with its own filename.
+    """Take the caption off a figure captioned with its own path.
+
+    Two spellings of one defect. Most are a file: a caption ending in an image
+    suffix. One is a page, `![[000_Solution Compendia]]`, an Obsidian embed
+    whose alt text is the page path and carries no suffix to match on; there the
+    caption is compared against the target the figure points at instead.
 
     The `alt` text is left as it stands. It is not displayed, and it is the last
     pointer from the rendered page back to the file in the vault; a caption a
     reader can use has to be written, and writing one here would invent it.
     """
     del doc
-    if isinstance(element, pf.Figure) and FILE_CAPTION.search(pf.stringify(element.caption).strip()):
+    if not isinstance(element, pf.Figure):
+        return element
+    caption = pf.stringify(element.caption).strip()
+    if not caption:
+        return element
+    repeats_target = any(caption == PurePosixPath(url).stem or caption == url for url in _figure_targets(element))
+    if FILE_CAPTION.search(caption) or repeats_target:
         element.caption = pf.Caption()
     return element
 
