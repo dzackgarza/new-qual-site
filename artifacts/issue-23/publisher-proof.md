@@ -309,11 +309,10 @@ The other fourteen were measured but not read, and I say so rather than claim in
 
 # Second run, 2026-08-14: after the repairs
 
-The six defects above were repaired and the affected proofs rerun. **All four of
-issue #23's proofs now pass.** The record above is the first run and is left as
-it was written; this section is what changed.
+The six defects above were repaired and the affected proofs rerun.
+**All four of issue #23's proofs now pass.** The record above is the first run and is left as it was written; this section is what changed.
 
-| | |
+|  |  |
 | --- | --- |
 | Revision | `34a3eea50ceb4edfc20fb13dcd7208f00d0350ad` |
 | Working copy | a second detached `git worktree`, for the same reason as the first |
@@ -331,59 +330,36 @@ it was written; this section is what changed.
 
 ## What each number did
 
-**Fragments: 116 -> 0.** Every Obsidian block marker is now an anchor carrying its
-own `^<id>`, so the 104 links into one resolve as authored, and the 12 heading
-references resolve through the id Pandoc gave the heading. Local references rose
-from 63,429 to 74,401, because the recovered headings and divs carry anchors and
-links that were previously inside swallowed paragraphs.
+**Fragments: 116 -> 0.** Every Obsidian block marker is now an anchor carrying its own `^<id>`, so the 104 links into one resolve as authored, and the 12 heading references resolve through the id Pandoc gave the heading.
+Local references rose from 63,429 to 74,401, because the recovered headings and divs carry anchors and links that were previously inside swallowed paragraphs.
 
-**Prose: 1,393 -> 225 unretained words, out of 58,674.** The remaining 225 are
-markup, and I read the residue on every page that carries any: citation keys
-resolved by citeproc, footnote labels, heading attributes, the hex of a block id
-now living in an `id`, and the ten `\cref` label names whose display text is what
-now reaches the page. **No authored prose is unaccounted for.**
+**Prose: 1,393 -> 225 unretained words, out of 58,674.** The remaining 225 are markup, and I read the residue on every page that carries any: citation keys resolved by citeproc, footnote labels, heading attributes, the hex of a block id now living in an `id`, and the ten `\cref` label names whose display text is what now reaches the page.
+**No authored prose is unaccounted for.**
 
-**Section labelling: 0 -> 853 of 873.** The 20 that do not reach the label rule
-are the citation-block and bibliography divs, which are not semantic sections.
-521 authored titles render as body text; the one carrying `$p$` typesets, which
-is what a CSS `attr()` could not have done.
+**Section labelling: 0 -> 853 of 873.** The 20 that do not reach the label rule are the citation-block and bibliography divs, which are not semantic sections.
+521 authored titles render as body text; the one carrying `$p$` typesets, which is what a CSS `attr()` could not have done.
 
 **Empty list items: 10 -> 0.** The Greatest Hits list reads its ten theorem names.
 
 **Literal block markers: 97 paragraphs on 22 pages -> 0.**
 
-**MathJax errors: 4 -> 0** across the replayed loads, and `\notdivides` renders at
-all six of its uses.
+**MathJax errors: 4 -> 0** across the replayed loads, and `\notdivides` renders at all six of its uses.
 
-**Narrow width: 119 of 327 pages -> 0.** Measured the same way, every wiki page
-loaded at 375px. Nothing is left to enumerate as irreducible: the subtitle wraps,
-and wide mathematics scrolls inside the article rather than moving the page.
+**Narrow width: 119 of 327 pages -> 0.** Measured the same way, every wiki page loaded at 375px. Nothing is left to enumerate as irreducible: the subtitle wraps, and wide mathematics scrolls inside the article rather than moving the page.
 
-**Navigation.** Every wiki page carries a breadcrumb trail of its directory path
-and previous/next in filename order, built through the same `PublicationNavigation`
-the guides use. Guide pages keep their sidebar, breadcrumbs and reading order
-unchanged; wiki pages deliberately have no sidebar.
+**Navigation.** Every wiki page carries a breadcrumb trail of its directory path and previous/next in filename order, built through the same `PublicationNavigation` the guides use.
+Guide pages keep their sidebar, breadcrumbs and reading order unchanged; wiki pages deliberately have no sidebar.
 
 ## What was inspected by eye this time
 
-Six images, all at 1440: the Galois page showing a `Remark` label and the
-recovered heading list in its table of contents; its `Example` section showing
-the authored title `using irreducibility mod p` with the `p` typeset; the
-Greatest Hits list showing ten named theorems where ten empty bullets had been;
-the Measure Theory page top, showing the breadcrumb `20 Real Analysis / 600 Qual
-Questions UGA / Measure Theory: Sets` with the directory levels as text; the same
-page's foot, showing `PREVIOUS Undergraduate Analysis: Uniform Convergence` and
-`NEXT Integrals: Convergence`; and the hint-and-solution card page reopened.
+Six images, all at 1440: the Galois page showing a `Remark` label and the recovered heading list in its table of contents; its `Example` section showing the authored title `using irreducibility mod p` with the `p` typeset; the Greatest Hits list showing ten named theorems where ten empty bullets had been; the Measure Theory page top, showing the breadcrumb `20 Real Analysis / 600 Qual Questions UGA / Measure Theory: Sets` with the directory levels as text; the same page's foot, showing `PREVIOUS Undergraduate Analysis: Uniform Convergence` and `NEXT Integrals: Convergence`; and the hint-and-solution card page reopened.
 
 ## What the second run still does not establish
 
 Everything the first run disclaims still holds, and two things are new:
 
-- **Six references name a block that does not exist.** `^e41970`, `^b424e2`,
-  `^052756`, `^0df993` twice, and a heading reference to `Spring 2016 3 work`.
-  Their pages are right and their fragments name nothing on those pages, so the
-  link keeps the page and drops the fragment, and the build prints all six. Which
-  block each meant is a reading decision and is not made here.
-- **The ten `\cref` cross-references are text, not links.** `\label{}` occurs
-  nowhere in `wiki/`, so there is no target to resolve against. The words are on
-  the page; the reference is not restored.
+- **Six references name a block that does not exist.** `^e41970`, `^b424e2`, `^052756`, `^0df993` twice, and a heading reference to `Spring 2016 3 work`. Their pages are right and their fragments name nothing on those pages, so the link keeps the page and drops the fragment, and the build prints all six.
+  Which block each meant is a reading decision and is not made here.
+
+- **The ten `\cref` cross-references are text, not links.** `\label{}` occurs nowhere in `wiki/`, so there is no target to resolve against.
+  The words are on the page; the reference is not restored.
