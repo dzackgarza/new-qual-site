@@ -6,7 +6,9 @@ title: 'Definition: prime ideal.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

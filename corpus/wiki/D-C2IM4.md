@@ -6,7 +6,10 @@ title: "Nilradical"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---

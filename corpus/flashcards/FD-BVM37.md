@@ -6,7 +6,9 @@ title: 'Irreducible Module'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
 relations: []
 review: draft
 ---

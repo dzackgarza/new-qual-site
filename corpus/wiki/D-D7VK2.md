@@ -6,7 +6,9 @@ title: "Principal Ideal"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

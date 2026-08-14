@@ -6,7 +6,9 @@ title: "$K[x]$: The algebra of polynomials in the variable $x$, i.e. $K[x] = \\t
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - rings
 relations:
 - kind: variant-of
   target: FD-24RNF

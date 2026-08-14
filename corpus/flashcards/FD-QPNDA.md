@@ -6,7 +6,9 @@ title: "$K(\\alpha)$ for $\\alpha \\in F\\supset K$: The minimal subfield of $F$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - fields
 relations:
 - kind: variant-of
   target: FD-3V3ZW

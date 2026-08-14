@@ -6,7 +6,9 @@ title: "Nilpotent: A group $G$ is nilpotent iff $G$ has a terminating upper cent
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - subgroup-series
 relations: []
 review: draft
 ---

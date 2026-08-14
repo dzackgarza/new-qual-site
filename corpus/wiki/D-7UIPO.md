@@ -6,7 +6,10 @@ title: "Transitive Subgroup"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - permutations
+  - subgroups
 relations: []
 review: draft
 ---

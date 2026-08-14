@@ -6,7 +6,8 @@ title: 'Functional characterization of injective functions.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - misc
 relations: []
 review: draft
 ---

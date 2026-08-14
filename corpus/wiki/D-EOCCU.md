@@ -6,7 +6,9 @@ title: "Prime Subfield"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - field-extensions
 relations: []
 review: draft
 ---

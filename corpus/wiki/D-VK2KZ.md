@@ -6,7 +6,10 @@ title: "Discrete Valuation Rings"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - valuation-rings
+  - local-rings
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

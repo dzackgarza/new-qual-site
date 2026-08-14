@@ -6,7 +6,10 @@ title: 'Class Equation'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - class-equation
+  - conjugacy
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

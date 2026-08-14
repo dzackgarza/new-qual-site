@@ -6,7 +6,10 @@ title: "Normal Field Extension"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - splitting-fields
+  - galois-theory
 relations: []
 review: draft
 ---

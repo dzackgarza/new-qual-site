@@ -6,7 +6,9 @@ title: "Nilpotent: A matrix $A$ over $k$ is nilpotent iff $A^k = 0$ for some $k\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - matrices
 relations: []
 review: draft
 ---

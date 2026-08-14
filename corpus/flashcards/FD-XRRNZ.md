@@ -6,7 +6,9 @@ title: 'Notation and definition of fixed points of a group action.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - orbit-stabilizer
 relations: []
 review: draft
 ---

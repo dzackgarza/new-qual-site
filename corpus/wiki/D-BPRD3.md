@@ -6,7 +6,9 @@ title: "Normal Closure of a Subgroup"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---

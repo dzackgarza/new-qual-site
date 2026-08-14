@@ -6,7 +6,8 @@ title: 'How to determine sign of a permutation'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---

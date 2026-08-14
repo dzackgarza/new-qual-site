@@ -6,7 +6,9 @@ title: "Reduced Ring"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - rings
 relations: []
 review: draft
 ---

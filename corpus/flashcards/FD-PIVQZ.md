@@ -6,7 +6,8 @@ title: 'Even vs Odd Permutations'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---

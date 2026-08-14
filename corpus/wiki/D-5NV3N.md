@@ -6,7 +6,9 @@ title: "Central Series"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - nilpotent-groups
 relations: []
 review: draft
 ---

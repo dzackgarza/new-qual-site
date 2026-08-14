@@ -6,7 +6,9 @@ title: "Unitary Group"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - inner-product-spaces
 relations: []
 review: draft
 ---

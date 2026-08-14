@@ -6,7 +6,10 @@ title: "Semisimple"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - matrices
+  - semisimplicity
 relations: []
 review: draft
 ---

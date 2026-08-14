@@ -6,7 +6,9 @@ title: "Gram Matrix"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - matrices
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Projective Modules"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - projective-modules
+  - modules
+  - homological-algebra
 relations: []
 review: draft
 ---

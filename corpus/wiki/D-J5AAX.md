@@ -6,7 +6,9 @@ title: "General Linear Group"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - linear-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: 'Algebraic Field Extension'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Centralizer: The centralizer of an element is defined as $Z(h) \\da C_G(
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - conjugacy
+  - group-actions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Definition: Projective module'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - projective-modules
+  - free-modules
+  - modules
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Embeddings and Lifts"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - homomorphisms
 relations: []
 review: draft
 ---

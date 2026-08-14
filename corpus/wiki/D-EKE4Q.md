@@ -6,7 +6,9 @@ title: "Normal subgroup"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---

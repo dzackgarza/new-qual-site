@@ -6,7 +6,9 @@ title: 'Definition: Unique Factorization Domain'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - integral-domains
 relations: []
 review: draft
 ---

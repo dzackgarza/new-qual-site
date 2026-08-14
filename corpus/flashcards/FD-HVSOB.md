@@ -6,7 +6,8 @@ title: 'Algebraic Field Extension'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations:
 - kind: variant-of
   target: FD-NS5RF

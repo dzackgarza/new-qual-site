@@ -6,7 +6,9 @@ title: "Euler's Totient Function"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - number-theory
+  - cyclic-groups
 relations: []
 review: draft
 ---

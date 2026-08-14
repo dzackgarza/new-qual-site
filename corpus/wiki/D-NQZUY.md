@@ -6,7 +6,9 @@ title: "$R\\dash$modules"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - algebras
 relations: []
 review: draft
 ---

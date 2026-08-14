@@ -6,7 +6,9 @@ title: "Irreducible Element"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - rings
 relations: []
 review: draft
 ---

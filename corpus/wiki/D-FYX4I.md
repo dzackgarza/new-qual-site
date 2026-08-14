@@ -6,7 +6,9 @@ title: "Composition Series"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - classification
 relations: []
 review: draft
 ---

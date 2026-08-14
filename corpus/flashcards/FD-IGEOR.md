@@ -6,7 +6,10 @@ title: '$G_x$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - orbit-stabilizer
+  - subgroups
 relations: []
 review: draft
 ---

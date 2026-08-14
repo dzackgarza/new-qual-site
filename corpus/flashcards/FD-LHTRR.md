@@ -6,7 +6,10 @@ title: 'Definition: splitting field of a polynomial $f\in k[x]$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - polynomials
+  - field-extensions
 relations: []
 review: draft
 ---

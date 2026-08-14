@@ -6,7 +6,9 @@ title: 'Annihilator of a module'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - ideals
 relations: []
 review: draft
 ---

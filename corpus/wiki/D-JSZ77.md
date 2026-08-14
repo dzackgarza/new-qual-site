@@ -6,7 +6,10 @@ title: "Regular ring"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - commutative-algebra
+  - local-rings
+  - noetherian-rings
 relations: []
 review: draft
 ---

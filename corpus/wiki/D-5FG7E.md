@@ -6,7 +6,9 @@ title: "Fixed Field"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

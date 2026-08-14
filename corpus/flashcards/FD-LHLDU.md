@@ -6,7 +6,10 @@ title: '$\gens{p}\dash$primary'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - primary-decomposition
+  - torsion
 relations: []
 review: draft
 ---

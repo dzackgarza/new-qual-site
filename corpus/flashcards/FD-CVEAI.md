@@ -6,7 +6,9 @@ title: 'Rank of a Free module'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - bases
 relations: []
 review: draft
 ---

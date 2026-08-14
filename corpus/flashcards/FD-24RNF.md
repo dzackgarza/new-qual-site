@@ -6,7 +6,9 @@ title: "$K(x)$: The field of rational functions, i.e. ratios of polynomials\u202
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - polynomials
 relations: []
 review: draft
 ---

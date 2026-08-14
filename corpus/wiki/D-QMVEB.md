@@ -6,7 +6,10 @@ title: "Normal Core of a subgroup"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - subgroups
+  - group-actions
 relations: []
 review: draft
 ---

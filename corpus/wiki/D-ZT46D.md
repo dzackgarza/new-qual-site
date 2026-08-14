@@ -6,7 +6,9 @@ title: "Separable polynomials"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - polynomials
 relations: []
 review: draft
 ---

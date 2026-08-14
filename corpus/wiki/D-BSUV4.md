@@ -6,7 +6,10 @@ title: "Normal Matrix"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - inner-product-spaces
+  - diagonalization
 relations: []
 review: draft
 ---

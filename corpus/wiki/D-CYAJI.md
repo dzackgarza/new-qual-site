@@ -6,7 +6,9 @@ title: "Semisimple Modules"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - modules
 relations: []
 review: draft
 ---

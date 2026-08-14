@@ -6,7 +6,9 @@ title: 'Definition: torsionfree'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - modules
 relations: []
 review: draft
 ---

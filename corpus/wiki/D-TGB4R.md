@@ -6,7 +6,10 @@ title: "Local Ring"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - local-rings
+  - maximal-ideals
+  - fields
 relations: []
 review: draft
 ---

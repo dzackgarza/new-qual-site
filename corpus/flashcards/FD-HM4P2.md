@@ -6,7 +6,9 @@ title: 'Definition: Primitive Root of Unity.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - cyclic-groups
 relations: []
 review: draft
 ---

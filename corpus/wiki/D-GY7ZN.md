@@ -6,7 +6,8 @@ title: "Special Orthogonal Group"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
 relations: []
 review: draft
 ---

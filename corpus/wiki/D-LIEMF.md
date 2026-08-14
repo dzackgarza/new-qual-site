@@ -6,7 +6,10 @@ title: "Free Module"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - modules
+  - bases
 relations: []
 review: draft
 ---

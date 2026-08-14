@@ -6,7 +6,9 @@ title: "Elementary Symmetric Functions"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - symmetric-functions
+  - polynomials
 relations: []
 review: draft
 ---

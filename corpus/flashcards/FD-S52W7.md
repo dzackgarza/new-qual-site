@@ -6,7 +6,9 @@ title: 'Definition: prime.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - rings
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Upper Central Series"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - nilpotent-groups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

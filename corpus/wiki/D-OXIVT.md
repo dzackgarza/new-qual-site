@@ -6,7 +6,10 @@ title: "Field of fractions"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - localization
+  - integral-domains
+  - fields
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Minimal polynomial"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - linear-algebra
 relations: []
 review: draft
 ---

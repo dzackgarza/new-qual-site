@@ -6,7 +6,9 @@ title: "Nilpotent: An element $r\\in R$ is nilpotent if $r^n = 0$ for some $n \\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - rings
 relations: []
 review: draft
 ---

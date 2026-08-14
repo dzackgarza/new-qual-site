@@ -6,7 +6,10 @@ title: "Characteristic Subgroups"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
+  - automorphisms
+  - normal-subgroups
 relations: []
 review: draft
 ---

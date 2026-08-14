@@ -6,7 +6,9 @@ title: 'Conjugates of a root'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

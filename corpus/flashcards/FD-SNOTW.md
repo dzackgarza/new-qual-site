@@ -6,7 +6,10 @@ title: 'Definition: simple ring.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - ideals
+  - semisimplicity
 relations: []
 review: draft
 ---

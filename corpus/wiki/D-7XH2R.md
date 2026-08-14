@@ -6,7 +6,9 @@ title: "Maximal Ideal"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Definition: algebraically closed.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - field-extensions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Normalizer: $N_G(H) = \\theset{g\\in G \\suchthat gHg\\inv = H} = \\Unio
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - subgroups
+  - normal-subgroups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Similar Matrices"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - canonical-forms
+  - jordan-canonical-form
 relations: []
 review: draft
 ---

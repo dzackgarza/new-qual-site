@@ -6,7 +6,10 @@ title: "Discriminant"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - symmetric-functions
 relations: []
 review: draft
 ---

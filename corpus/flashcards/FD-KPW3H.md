@@ -6,7 +6,9 @@ title: 'Definition: irreducible polynomial'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

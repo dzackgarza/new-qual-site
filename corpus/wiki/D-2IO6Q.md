@@ -6,7 +6,10 @@ title: "Jacobson Radical"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---

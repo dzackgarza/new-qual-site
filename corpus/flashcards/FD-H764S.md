@@ -6,7 +6,9 @@ title: 'Elementary Divisors'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - abelian-groups
 relations: []
 review: draft
 ---

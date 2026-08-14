@@ -6,7 +6,9 @@ title: "Radical of an Ideal"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - nilpotence
 relations: []
 review: draft
 ---

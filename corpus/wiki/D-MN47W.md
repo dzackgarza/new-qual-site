@@ -6,7 +6,10 @@ title: "Field Automorphisms"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - automorphisms
+  - field-extensions
 relations: []
 review: draft
 ---

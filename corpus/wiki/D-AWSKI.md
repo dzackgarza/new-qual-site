@@ -6,7 +6,9 @@ title: "Prime Element"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - rings
 relations: []
 review: draft
 ---

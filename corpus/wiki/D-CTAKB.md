@@ -6,7 +6,10 @@ title: "Characters"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
+  - trace
 relations: []
 review: draft
 ---

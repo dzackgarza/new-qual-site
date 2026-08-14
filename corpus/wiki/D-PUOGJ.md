@@ -6,7 +6,8 @@ title: "Simple Extensions"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

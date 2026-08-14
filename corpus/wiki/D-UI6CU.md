@@ -6,7 +6,9 @@ title: "Field"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - rings
 relations: []
 review: draft
 ---

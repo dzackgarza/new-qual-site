@@ -6,7 +6,9 @@ title: "Divisibility of Elements"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - rings
 relations: []
 review: draft
 ---

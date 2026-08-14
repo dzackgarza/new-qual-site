@@ -6,7 +6,9 @@ title: 'Normal Extension'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - splitting-fields
 relations: []
 review: draft
 ---

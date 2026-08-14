@@ -6,7 +6,9 @@ title: 'Definition: Maximal ideal.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
 relations: []
 review: draft
 ---

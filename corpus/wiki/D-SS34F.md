@@ -6,7 +6,10 @@ title: "Invariant Factor Decomposition"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - abelian-groups
+  - classification
 relations: []
 review: draft
 ---

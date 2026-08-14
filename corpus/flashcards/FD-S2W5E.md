@@ -6,7 +6,9 @@ title: 'Cyclic Module'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - cyclic-groups
 relations: []
 review: draft
 ---

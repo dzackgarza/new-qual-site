@@ -6,7 +6,10 @@ title: "Dedekind Domains"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---

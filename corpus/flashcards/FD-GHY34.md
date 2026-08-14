@@ -6,7 +6,9 @@ title: "Irreducible: A polynomial $p(x)$ is irreducible iff $\\deg p>1$ and $p(x
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

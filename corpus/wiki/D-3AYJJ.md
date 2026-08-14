@@ -6,7 +6,10 @@ title: "Localization"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - localization
+  - commutative-algebra
+  - rings
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Centralizer: $Z_G(S) = \\ts{g\\in G \\st gsg\\inv = s\\, \\forall s\\in 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - subgroups
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Characteristic"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - characteristic
+  - rings
 relations: []
 review: draft
 ---

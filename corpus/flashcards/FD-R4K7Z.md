@@ -6,7 +6,9 @@ title: "Irreducible: An element $p$ in a ring $R$ is irreducible $\\iff$ $p=ab \
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - rings
 relations:
 - kind: variant-of
   target: FD-GHY34

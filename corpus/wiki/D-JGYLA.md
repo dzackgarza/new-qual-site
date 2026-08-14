@@ -6,7 +6,9 @@ title: "Separable Field Extension"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
 relations: []
 review: draft
 ---

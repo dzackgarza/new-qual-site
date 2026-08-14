@@ -6,7 +6,9 @@ title: 'Definition: Diagonalizable.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - matrices
 relations: []
 review: draft
 ---

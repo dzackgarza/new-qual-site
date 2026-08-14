@@ -6,7 +6,9 @@ title: "The sign homomorphism"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - homomorphisms
 relations: []
 review: draft
 ---

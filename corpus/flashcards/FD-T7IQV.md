@@ -6,7 +6,9 @@ title: 'Solvable Group'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - subgroup-series
 relations: []
 review: draft
 ---

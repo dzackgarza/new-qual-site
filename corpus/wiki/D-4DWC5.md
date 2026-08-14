@@ -6,7 +6,9 @@ title: "Resolvent of a quartic"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
 relations: []
 review: draft
 ---

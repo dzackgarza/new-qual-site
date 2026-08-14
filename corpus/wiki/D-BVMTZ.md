@@ -6,7 +6,10 @@ title: "Reducible and Irreducible Polynomials"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - irreducibility-criteria
+  - factorization
 relations: []
 review: draft
 ---

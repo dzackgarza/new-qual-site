@@ -6,7 +6,9 @@ title: 'Noetherian Module'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - modules
 relations: []
 review: draft
 ---

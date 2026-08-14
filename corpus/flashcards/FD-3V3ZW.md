@@ -6,7 +6,9 @@ title: 'Definition: $K[\alpha]$ for $\alpha \in F \supset K$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - rings
 relations: []
 review: draft
 ---

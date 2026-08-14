@@ -6,7 +6,9 @@ title: "The symmetric group"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-presentations
 relations: []
 review: draft
 ---

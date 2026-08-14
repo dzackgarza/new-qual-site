@@ -6,7 +6,10 @@ title: "Perfect Fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - fields
+  - finite-fields
 relations: []
 review: draft
 ---

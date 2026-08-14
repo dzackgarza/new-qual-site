@@ -6,7 +6,9 @@ title: "Definition of Galois group for a finite extension $K/F$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

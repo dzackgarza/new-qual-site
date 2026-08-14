@@ -6,7 +6,9 @@ title: "Simple Groups"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - simple-groups
+  - normal-subgroups
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Irreducible Ideal"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - primary-decomposition
 relations: []
 review: draft
 ---

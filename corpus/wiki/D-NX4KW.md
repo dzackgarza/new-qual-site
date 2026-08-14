@@ -6,7 +6,9 @@ title: "Max Spectrum"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---

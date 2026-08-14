@@ -6,7 +6,9 @@ title: "Normal Series"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - normal-subgroups
 relations: []
 review: draft
 ---

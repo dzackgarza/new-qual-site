@@ -6,7 +6,9 @@ title: "Noetherian"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - ideals
 relations: []
 review: draft
 ---

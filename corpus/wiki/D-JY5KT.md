@@ -6,7 +6,10 @@ title: "Companion Matrix"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - matrices
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

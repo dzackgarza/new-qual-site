@@ -6,7 +6,9 @@ title: "Primary Ideal"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - primary-decomposition
+  - ideals
 relations: []
 review: draft
 ---

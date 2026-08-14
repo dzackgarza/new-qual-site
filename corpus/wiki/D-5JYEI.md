@@ -6,7 +6,11 @@ title: "Galois Extension and Galois Group"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - separability
+  - splitting-fields
 relations: []
 review: draft
 ---

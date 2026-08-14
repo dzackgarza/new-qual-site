@@ -6,7 +6,9 @@ title: "Normalizer: $N_G(S) \\da \\ts{g\\in G \\st gSg\\inv = S}$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - subgroups
 relations: []
 review: draft
 ---

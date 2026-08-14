@@ -6,7 +6,10 @@ title: 'Definition: perfect field.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - fields
+  - finite-fields
 relations: []
 review: draft
 ---

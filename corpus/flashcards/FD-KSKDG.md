@@ -6,7 +6,8 @@ title: 'Definition: Transitive Group Action'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
 relations: []
 review: draft
 ---

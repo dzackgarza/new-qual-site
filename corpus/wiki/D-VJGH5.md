@@ -6,7 +6,9 @@ title: "Index of a subgroup"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

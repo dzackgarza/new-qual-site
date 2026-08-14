@@ -6,7 +6,9 @@ title: "Special Linear Group"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - determinants
 relations: []
 review: draft
 ---

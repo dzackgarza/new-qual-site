@@ -6,7 +6,9 @@ title: 'Definition: irreducible.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - rings
 relations: []
 review: draft
 ---

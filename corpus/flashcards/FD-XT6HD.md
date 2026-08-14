@@ -6,7 +6,10 @@ title: 'Definition: Rational Canonical Form'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - structure-theorem
+  - modules
 relations: []
 review: draft
 ---

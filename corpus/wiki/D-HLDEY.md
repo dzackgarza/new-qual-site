@@ -6,7 +6,9 @@ title: "Conjugacy class"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - group-actions
 relations: []
 review: draft
 ---

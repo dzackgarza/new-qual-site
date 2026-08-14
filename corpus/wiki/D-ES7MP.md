@@ -6,7 +6,9 @@ title: "Conjugate subgroups"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - subgroups
 relations: []
 review: draft
 ---

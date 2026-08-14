@@ -6,7 +6,9 @@ title: "Ideal"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

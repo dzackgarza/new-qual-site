@@ -6,7 +6,10 @@ title: "Special Unitary Group"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - determinants
+  - inner-product-spaces
 relations: []
 review: draft
 ---

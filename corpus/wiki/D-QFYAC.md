@@ -6,7 +6,10 @@ title: "Characteristic polynomial"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - determinants
+  - matrices
 relations: []
 review: draft
 ---

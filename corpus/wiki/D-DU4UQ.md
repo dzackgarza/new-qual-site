@@ -6,7 +6,10 @@ title: "Gorenstein Rings"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - commutative-algebra
+  - noetherian-rings
+  - homological-algebra
 relations: []
 review: draft
 ---

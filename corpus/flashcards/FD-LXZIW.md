@@ -6,7 +6,9 @@ title: 'Characteristic of a ring'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - characteristic
+  - rings
 relations: []
 review: draft
 ---

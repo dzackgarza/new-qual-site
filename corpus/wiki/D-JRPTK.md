@@ -6,7 +6,10 @@ title: "Equivalent Matrices"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - canonical-forms
+  - linear-algebra
 relations: []
 review: draft
 ---

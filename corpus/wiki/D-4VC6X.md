@@ -6,7 +6,10 @@ title: "Primitive Polynomials"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - factorization
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

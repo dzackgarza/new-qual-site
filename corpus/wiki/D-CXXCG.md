@@ -6,7 +6,9 @@ title: "Prime Spectrum"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---

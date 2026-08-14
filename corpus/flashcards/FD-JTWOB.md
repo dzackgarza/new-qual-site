@@ -6,7 +6,9 @@ title: 'Invariant Factors'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - canonical-forms
 relations: []
 review: draft
 ---
