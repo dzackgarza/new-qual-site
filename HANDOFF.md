@@ -1,118 +1,426 @@
-# Session handoff — PLAN-QUAL-OUTSTANDING-001 milestone pause
+# Qual corpus handoff and restart plan
 
-Date: 2026-08-14. Session start revision: `72c7f326`. HEAD at pause: see `git log` (~100 commits ahead of `origin/main`, **not pushed**). Plan record: `PLAN-QUAL-OUTSTANDING-001` in the agent-memory vault (status: in-progress).
-Orchestration ran as one coordinator with seven Opus worker lanes; every lane's final report is in the session transcript, and every proof artifact is committed under `artifacts/issue-*/`.
+> Tier: workstream
+> Parent: vault plan `PLAN-QUAL-OUTSTANDING-001`
+> Roadmap owner: [GitHub issue #1](https://github.com/dzackgarza/new-qual-site/issues/1)
+> State boundary: repository revision `380a48d0`, synchronized with `origin/main` on 2026-08-14
 
-## 1. Unresolved at pause — handle these before anything else
+This file is a restart map. It is not the live work tracker.
 
-(Items rewritten at end of session; the two big risks resolved before the pause completed.)
+GitHub issues own public requirements, decisions, and current execution state.
+Vault plans preserve the project structure and earlier reasoning.
+Committed proof artifacts own technical evidence.
 
-1. **RESOLVED — the uncommitted classification batch.** The Complex Analysis lane recovered and committed its theory-spine batch (`fa80ad69`), merged its proof addenda correctly on top of the reachability addendum (`da32fdd6`), and the ~400 formatter-normalization files landed as `7fd3e80f`. The stale-proof landmine no longer exists; the tree was verified clean.
+Update this file only at a handoff boundary. Do not mirror each issue update here.
 
-2. **RESOLVED — Algebra corrections complete, not partial.** All five batches plus the proof-document repairs landed: `eee0d46d`, `8a4bc822`+`b3214111`, `d58db4d3`, `fb546a5c`, `2d160bd2`, `205b5975`, `f00a577a`, `eb59182e`, `07f03f95` — 117 cards, proof citation audit clean (210/210 ids resolve).
-   Recorded-not-guessed items are listed in the proof and §5.
+## Contents
 
-3. **RESOLVED — the stale test was repaired and pushed.** `test_corpus_layout_is_semantically_inert` now derives its expectations from the manifest itself (`d0fea0d6`, written almost entirely by the Algebra lane before its session ended; orchestrator finished one gate-policy line).
-   Single test green (334s); full push gate green (82 passed).
+- [1. Result](#1-result-that-the-remaining-work-must-deliver)
+- [2. Authority and routing](#2-authority-and-routing)
+- [3. Starting boundary](#3-starting-boundary)
+- [4. Dependency order](#4-dependency-order)
+- [5. GitHub reconciliation](#5-workstream-r1-reconcile-github-state)
+- [6. Issue closeout](#6-workstream-r2-issue-specific-closeout)
+- [7. Deployment proof](#7-workstream-r3-current-deployment-and-issue-30)
+- [8. User decisions](#8-user-decisions-and-issue-routes)
+- [9. Proof and stop rules](#9-proof-and-stop-rules)
+- [10. Final closure](#10-final-closure-order)
 
-4. **RESOLVED — pushed.** `72c7f326..d0fea0d6` (126 commits) landed on `origin/main` through the full gate.
+## 1. Result that the remaining work must deliver
 
-5. **OPEN — no GitHub writes have been made.** The full batch is in §4. This is now the FIRST resume item.
+Complete the publication and preservation roadmap in issue #1.
 
-6. **NOTE — audit worktrees did not survive.** A disk-full emergency at session end (root filesystem at 99%) forced reclaiming the scratchpad worktrees; the rest fell to tmp cleanup and were pruned.
-   Every proof, ledger, and artifact they supported is committed; only replay convenience was lost.
+A reader must be able to do all of the following on the deployed site:
 
-## 2. State of the plan's workstreams
+- enter each subject branch;
+- read the authored mathematics in a supported order;
+- reach stable pages, cards, problems, occurrences, sources, hints, and solutions;
+- use search, filters, and statements-only exam generation;
+- view diagrams, citations, assets, and mathematical notation correctly.
 
-- **WS1 — all six subject branches classified, manifested, proved.** Issue map (verified via `gh`): #24 Prelims, #25 Algebra, #26 Real Analysis, #27 Complex Analysis, #28 Topology, #29 Workshops.
-  Each has a committed `artifacts/issue-N/branch-proof.md` pinned to a revision, with measured reachability and explicit nonclaims.
-  Corpus went from 2,750 unclassified problem cards to near-zero (deferrals are enumerated per proof, all no-mathematics fragments).
-  Topic registry: 9 duplicate pairs merged (`e507fb8e`), ~35 new entries added under the user-confirmed criteria.
+The source migration must also have a valid independent closeout review.
 
-- **WS2 — content corrections complete (rounds 1–2).** All originally named defects fixed with cited sources; round 2 fixed the Topology-proof falsehoods and the padded-delimiter title family (root fix + check).
-  Full commit ledger in the WS2 reports; key: `1ae11251 50e20cdf 700dee17 f3170ff1 6efbb5b3 a1c85d4e 122d026a 320724bf 7f1d34ec 22377eac 69644748 dea91fc6`.
+Issue #2 remains a separate, long-term mathematics program.
+It does not block statements-only publication.
+It does block honest solution-bearing exam generation.
 
-- **WS3 — complete.** #9 inventory frozen (249 documents, 2,662 pages dispositioned, ledger at 380 rows, 82 licensing flags); Anki decks closed at card level; #7/#8/#5 residual proofs run; six textbook source cards live (`e48495cc`, routes `/exam/SRC-TEXT-*`); importer boundary fixed shape-(iii) (`vocabularies/topic-aliases.yaml` + `6b30ef9a`).
+## 2. Authority and routing
 
-- **WS4 — #23 closed on a two-run proof; publisher rebuilt.** All four deferred proofs pass at the second run (fragments 116→0, mobile overflow 119→0 pages, div labels 0→853, prose retention 97.6%→99.6% with the residue all markup).
-  Per-branch wiki navigation landed (serves #6's unique criterion).
-  Follow-ons landed: citation links (21/21), derived panel headings (no more identical "More from the catalog"), on-this-page math typesetting, `\contradiction` macro fix, macro-census tool (`artifacts/issue-23/undefined-macro-census`, 71-route sample).
+Use one owner for each kind of state.
 
-- **Not started, sequenced last by the plan:** the fresh deployed replay for #30 (needs push + deploy first) and #11's M4/M5 sign-off (must be a fresh-context agent that did none of the migrating).
+### Public work state
 
-## 3. First-resume queue, in order
+- [Issue #1](https://github.com/dzackgarza/new-qual-site/issues/1) owns the full roadmap.
+- [Issue #6](https://github.com/dzackgarza/new-qual-site/issues/6) owns publisher and subject publication.
+- Issues [#23](https://github.com/dzackgarza/new-qual-site/issues/23) through [#30](https://github.com/dzackgarza/new-qual-site/issues/30) own its publication work units.
+- Issues [#5](https://github.com/dzackgarza/new-qual-site/issues/5) through [#11](https://github.com/dzackgarza/new-qual-site/issues/11) own source and product workstreams.
+- [Issue #14](https://github.com/dzackgarza/new-qual-site/issues/14) owns the remaining upstream macro-source decision.
+- [Issue #41](https://github.com/dzackgarza/new-qual-site/issues/41) owns the small rendered-page residue.
+- [Issue #2](https://github.com/dzackgarza/new-qual-site/issues/2) owns mathematical corrections and structured solutions.
 
-(All repo work is committed and pushed; what remains is measurement, externalization, and the deployed-proof tail.)
+### Planning records
 
-1. The GitHub batch (§4) — comments, provenance restatements, and issue closures on the committed proofs.
+- `PLAN-QUAL-OUTSTANDING-001` defines the active workstream structure.
+- `PLAN-QUAL-GRUNT-001` defines the larger corpus-repair program.
+- `PLAN-QUAL-HANDOFF-CLOSEOUT-001` defines the source-migration review criteria.
 
-2. #28's 121-card reachability re-measure — unblocked by the panel-heading fix (`965a9e76`); on success #28 closes on its literal criterion.
+The issue tree is now the live execution tracker.
+Treat the vault plans as derivation records where their status text is stale.
 
-3. Deploy; then #30's deployed replay in the existing `replay-proof.md` format at the deployed revision; then #11's M4/M5 sign-off by a fresh-context agent against `artifacts/issue-11/`.
+The closeout plan contains contradictory old status statements about archive action.
+Do not use those statements as current evidence.
+Issue #11 and `artifacts/issue-11/` own the current closeout record.
 
-4. Optional, offered by the publisher lane: full-site undefined-macro census (5,824 pages); `title:` override on QueryItem (nothing asks yet).
+### Proof artifacts
 
-## 4. GitHub writes owed (batched, none posted)
+- `artifacts/issue-23/publisher-proof.md` owns the publisher proof.
+- `artifacts/issue-24/branch-proof.md` through `artifacts/issue-29/branch-proof.md` own branch proof.
+- `artifacts/issue-30/replay-proof.md` owns the earlier browser findings.
+- `artifacts/issue-30/deploy-proof.md` owns the earlier deployed proof.
+- `artifacts/issue-11/` owns source migration and review evidence.
 
-- **#2 batch comment:** WS2 round-1/2 disposition tables (in its reports) and the per-subject findings lists (each in its `artifacts/issue-N/branch-proof.md`): wrong statements corrected, unsettleables, mis-kinded cards, duplicate pairs, aggregates, area misfilings (~30 combined-prelim cards in RA; 5 oral-exam cards in Algebra), the two `E-AMD` id corrections.
+Do not copy proof results into a second ledger.
+Link the relevant artifact from the owning issue.
 
-- **Provenance restatements** for cross-lane index sweeps (pre-pathspec-rule): `65b926c5` carries 1,039 Real Analysis classification files (intended message in the RA report) → restate on #26; `0bed0189` carries the Prelims branch proof → note on #24; seven WS2 round-1 card fixes carry other lanes' hashes (table in the WS2 report).
+## 3. Starting boundary
 
-- **Close on proofs:** #23 (two-run publisher proof), #24–#29 (branch proofs; state each proof's residues: #27's P-Y37R6 panel-limit deferral and unverified section-lede under-fill statements; #28's 121-card gap pending re-measure; occurrence-layer interpretation below).
+The repository state described here is committed and pushed.
+The working tree was clean at `380a48d0`.
 
-- **#6:** stale 403-page quantifier (inventory is 327 post-G6-merge, mapped in `sources/g6-page-merge-map.jsonl`); its unique criterion (per-branch navigation) landed in `cb9e21dd` — likely closable.
+The main remaining mismatch is public state.
+The newest proof and correction records are not yet reflected on GitHub.
 
-- **#7:** validators pass; citations now link (21/21) to the six textbook source routes — check its acceptance list before closing (`/exam/` namespace for books noted as cosmetic residue).
+The following repository work exists and must not be repeated without a failed criterion:
 
-- **#8:** counts verified independently; defect 2 resolved; two findings recorded (importer's undeclared registry write — fixed by shape-(iii); re-import drift, §5).
+- all six subject classifications and branch manifests;
+- all six branch proof files;
+- the second publisher proof run;
+- the named content correction rounds;
+- the MakeMeAQual reconciliation and intake inventory;
+- the first deployed proof and browser replay;
+- the source migration proof set.
 
-- **#9:** inventory frozen; the 82 licensing flags await the user (§5); Anki decks dispositioned; F08phdtop ledger row still says `second_read: not yet completed`, and the PDF is headed January 2009 while filed as Fall 2008.
+The earlier audit worktrees no longer exist.
+Use committed artifacts for resumption.
 
-- **#10:** reduced (facet witnesses remain; typed-facets question §5). **#14:** reducible to the upstream `qual-wiki` line-586 decision (§5); `\notdivides` and `\contradiction` fixed here.
+Before any new edit, verify the boundary:
 
-## 5. User decisions pending (batched during the session)
+```bash
+git status --short --branch
+git rev-parse HEAD
+git rev-parse origin/main
+gh issue list --state open --limit 100
+uvx --python 3.14 --from git+https://github.com/dzackgarza/agent-memory \
+  agent-memory plan show PLAN-QUAL-OUTSTANDING-001
+```
 
-1. **Licensing — 82 flagged intake rows** (31 documents + 51 qualbot images): an unattributed ~300-question bank (AlgebraQualNotes pp.168–206 = QualAlgebra pp.81–119), Combined_Questions.pdf with stripped attribution, named third parties (Usher, Tie, Azoff, Arango-Pineros), verbatim Stein–Shakarchi/Hungerford/Folland material, contradictory directory labels.
-   Nothing transcribed or published from these.
+Stop if the checkout has unknown changes.
+Do not delete, restore, stash, or rewrite them.
 
-2. **Normal-family convention:** Stein–Shakarchi vs Ahlfors (genuinely inequivalent; card D-QTJ7T states S-S and records Ahlfors with the witness).
-   Standardize?
+## 4. Dependency order
 
-3. **tikzcd:** 44 cards carry `\begin{tikzcd}` that pandoc drops silently — diagrams invisible on the built site.
-   Needs a diagram pipeline decision.
+Use this order unless a live issue records a newer dependency.
 
-4. **Regeneration-vs-curation:** a clean re-import still differs from HEAD on 30 cards whose topics a reader refined beyond the input tags — curation inside an importer-regenerated subtree survives only if expressible as data the tool reads.
-   Decide the ownership model before any re-import.
+```text
+R0  Verify repository, deployment, issue, and plan state
+ |
+ v
+R1  Reconcile GitHub issues with committed proof
+ |\
+ | +--> R2  Finish issue-specific closeout checks
+ |          (#5-#11, #23-#29, #41)
+ |
+ +----> R3  Deploy current main and complete issue #30 replay
+ |
+ +----> R4  Complete fresh independent review for issue #11
+             without using this handoff as the review frame
 
-5. **The 27 solution write-ups minted as problems** (Prelims): re-kinding is schema-blocked (`instance-of` must target a problem); real repair = mint the missing problem cards and repoint occurrences.
-   Approve as a work item?
+R2 + R3 + R4
+ |
+ v
+R5  Reconcile issue #6 and roadmap issue #1
+```
 
-6. **#14 upstream:** delete the `%`-commented line 586 in the `qual-wiki` source repo (only remaining item).
+Decision-gated work can run only after the user gives the named decision.
+Section 8 routes each decision.
 
-7. **#10 facets:** substring matching over one `data-search` string, no typed facets; 1,584 of 3,036 rows carry a year token.
-   Typed facets or accept?
+## 5. Workstream R1: reconcile GitHub state
 
-8. **Occurrence-layer reachability interpretation (ratify or veto):** branch-proof acceptance reads "every extracted card reachable" as every page-bearing card; occurrence cards are catalog rows behind exam pages, site-wide.
+No GitHub updates from the final work batch have been posted.
+This is the first resume task.
 
-9. Smaller: trivial-intersection notation (`{e}` vs `∅` both appear); `\mspec`/`\maxspec` both defined; prelim problems all carry `title="?"` (mass titling); duplicate-pair merges (52 algebra pairs, 3 prelim pairs, 20 topology pairs, PR-25GM2 ⊂ T-YOZX6, two screenshot-only twins PR-VUBCC/PR-ITZIT); P-AMD-OXM52UGE (a homophone joke card in Topology); 19 Anki answers lost to image conversion (lattices content — recoverable only from the .apkg binaries); Spec⊆maxSpec cards (two equally-supported repairs, recorded verbatim).
+### 5.1 Publish content findings on issue #2
 
-## 6. Environment and process facts a successor needs
+Post the correction and finding records from the branch proofs and content reports.
 
-- **QC configs live in `~/ai-review-ci/tool-configs/`** (semgrep.yml, ruff-global.toml).
-  Semgrep silently passes scanning 0 files on a wrong config path; bare ruff falls back to line-length 88 and false-fails.
-  (Saved as a vault trap memory.)
+The comment must distinguish these classes:
 
-- **Shared checkout, many writers:** always `git commit -- <paths>` (a bare commit takes the whole shared index; it swept files three times this session).
-  Never `git add -A`. Builds/checks run only in private worktrees or via `qualc --root <dir>` — nine concurrent shared-tree builds tore `build/catalog.sqlite` early in the session.
+- corrected false statements;
+- source-backed corrections;
+- unresolved mathematical choices;
+- missing mathematics;
+- card-kind or source-structure defects;
+- duplicate candidates that still need reading.
 
-- **Panel limits:** exact-count limits silently truncate (both directions — RA's limit caught up by matches; Complex hides 49 conformal-map cards today under limit 8 of 57). RA/Algebra/Topology now use generous caps; Complex still has low limits whose lede-stated under-fill judgment is unverified (that lane is dead).
+Do not describe issue #2 as complete.
+Its full structured-proof program remains open.
 
-- **Guide ids couple to `vocabularies/areas.yaml`** (`GUIDE-` stripped, lowercased = query scope).
-  `workshops` deliberately has no area entry — the Workshops branch grows only by named refs; do not "fix" areas.yaml.
+### 5.2 Restore commit provenance on the owning issues
 
-- **`qualc check` tolerates what `qualc build` once made fatal;** dangling anchors are now degrade-and-warn by design (all five historic ones repointed in `da46e7ad`).
+Post the known cross-lane provenance facts on their issue owners.
 
-- **Security:** one prompt-injection attempt observed in `improved-webtools` web-search output (fake "tool passphrase" + instruction to write a file).
-  Ignored by the lane; treat that backend's output as untrusted.
+- Issue #26 must identify `65b926c5` as the Real Analysis classification commit.
+- Issue #24 must identify `0bed0189` as the Prelims branch-proof commit.
+- Issue #2 must identify the seven round-one fixes that carry another lane's commit hash.
 
-- **Preserved worktrees (audit artifacts — reclaim after the GitHub batch):** `topo-proof2` (2938781c), `ws-proof3` (825c835b), `ws3-intake/wt-27`, `ws3-intake/wt-e48495cc`, `ws3-intake/wt-idem`, `wt-237b1853` (the #8 import proof), plus `ws-proof`, `ws-proof2`, `ws4-proofs/census`, `wt-alg` (unclaimed leftovers — verify empty before removal; never `--force`).
+Use the existing reports for the exact mapping.
+Do not infer authorship from the commit summary alone.
+
+### 5.3 Update stale issue claims before closure
+
+Several issue bodies contain old inventory counts and old implementation claims.
+
+For each issue, compare its full acceptance text with current committed evidence.
+Then post one current evidence comment.
+
+The comment must include:
+
+- the exact repository revision;
+- the obligation under review;
+- the proof artifact or direct observation;
+- any nonclaim or residue;
+- the disposition of each unmet criterion.
+
+Close an issue only when its own acceptance text is fully satisfied.
+A parent issue, passing check, or proof count cannot replace that test.
+
+## 6. Workstream R2: issue-specific closeout
+
+### 6.1 Publisher and authored pages: issues #5 and #23
+
+Use `artifacts/issue-23/publisher-proof.md` as the primary proof record.
+
+The second run records these results at its named revision:
+
+- source pages and emitted routes are set-equal;
+- authored prose is retained;
+- static fragment validation passes;
+- the browser proof has no remaining publisher defect.
+
+Later commits add citation links, panel titles, heading mathematics, and one macro repair.
+
+Before closing issue #23, confirm that later commits preserve all four proof obligations.
+Do not replace the proof with a new count-only check.
+
+Issue #5 has a wider source-preservation claim.
+Close it only after its card-reference and authored-position criteria are also mapped.
+
+### 6.2 Subject branches: issues #24 through #29
+
+Read each `artifacts/issue-N/branch-proof.md` before posting a disposition.
+
+For each branch:
+
+- confirm the proof revision and branch manifest;
+- map every issue criterion to the proof;
+- retain every stated nonclaim;
+- post mathematical defects on issue #2;
+- close only after all branch-specific gaps are settled.
+
+Issue #28 needs one new reachability measurement.
+Its proof records 121 unaddressed Topology cards.
+Commit `965a9e76` removed the repeated-panel-title constraint.
+
+Rebuild the current Topology branch and repeat the proof's reachability query.
+Close #28 only if every required card is addressable under issue #28's meaning.
+
+The occurrence-layer interpretation is user-gated.
+Do not silently weaken “every extracted card is reachable.”
+Section 8 routes this decision to issue #6 and the branch issues.
+
+Issue #6 remains open until its full acceptance is proved.
+Its body includes the full-site proof as its eighth child work unit.
+Therefore issue #30 must close before issue #6 can close.
+
+### 6.3 Source reconciliation: issues #7 and #8
+
+Issue #7 owns all `qual-review-and-solutions` bundles, variants, citations, and assets.
+
+The current handoff records working citation routes and current validators.
+Those facts do not prove every variant or collapse decision.
+
+Before closing #7:
+
+- map every source bundle to a canonical card, variant, or reviewed collapse;
+- verify all six textbook source routes;
+- run the current reconciliation and route validators;
+- record all remaining source wording differences.
+
+Issue #8 owns the 508-row MakeMeAQual join.
+
+Before closing #8:
+
+- verify all 508 rows on the current revision;
+- confirm each exact-match decision has one semantic target;
+- compare institution, area, date, season, source, and occurrence counts;
+- prove an isolated import does not change curated output;
+- settle the regeneration-versus-curation ownership decision in Section 8.
+
+Do not use “508 rows exist” as the completion claim.
+
+### 6.4 Attachment extraction: issue #9
+
+The repository contains a frozen document inventory and page-level dispositions.
+
+Issue #9 remains open for these required facts:
+
+- every retained document has a page-level disposition;
+- every transcription has an independent reread;
+- all 82 licensing flags have an owner decision;
+- `F08phdtop` has a second read and a settled date label;
+- the 19 image-only Anki answers have a recorded disposition.
+
+Do not publish third-party material before the user decides its license status.
+
+### 6.5 Reader and generator: issues #10 and #41
+
+Issue #41 now contains mostly presentation residue.
+Verify each item against the current rendered page before closing it.
+
+Issue #10 owns the complete reader, search, filter, occurrence, diagram, citation, and generator behavior.
+
+Before closing #10:
+
+- compare browser and generator problem sets with the built catalog;
+- exercise each supported facet and combined filters;
+- inspect a statements-only generated exam;
+- inspect a diagram, citation, occurrence link, hint, and solution;
+- settle typed facets and `tikzcd` in Section 8.
+
+### 6.6 Source archive closeout: issue #11
+
+All five source repositories are already archived by owner decision.
+Do not repeat archive action.
+
+The remaining obligation is independent sign-off.
+The existing M5 record is a failure at target `763dbdb1`.
+Later work closed its content findings, including the hidden `PSets.zip` material.
+
+Assign the next review to a fresh context.
+Give it only these inputs:
+
+- `PLAN-QUAL-HANDOFF-CLOSEOUT-001`;
+- the pinned source revisions;
+- the current target tree;
+- `sources/migration-ledger.jsonl`;
+- raw files under `artifacts/issue-11/`.
+
+Do not give the reviewer this handoff or an earlier completion summary.
+
+The review must establish:
+
+- reviewer identity and task separation for each repository review;
+- direct source-to-target semantic coverage at the current boundary;
+- a current cross-repository criterion-to-evidence map;
+- an explicit disposition for every prior M5 failure;
+- no unresolved evidence that contradicts permanent migration.
+
+After a passing review, reconcile issue #11 and the closeout plan.
+Remove stale claims that no archive action occurred.
+
+## 7. Workstream R3: current deployment and issue #30
+
+The existing browser replay covers deployed revision `bba5c28a`.
+The existing deployment proof covers revision `95e2d626`.
+Neither proves the current published artifact.
+
+After R1, deploy the current `main` revision.
+Record the exact commit, workflow run, deployment URL, and deployed revision.
+
+Repeat issue #30 at the deployed boundary:
+
+- verify route and catalog manifests;
+- visit every subject branch root and terminal route;
+- exercise search, filters, occurrences, disclosure, diagrams, citations, and generation;
+- inspect 375, 768, 1024, and 1440 CSS-pixel snapshots;
+- inspect console and network results;
+- confirm local and deployed artifacts use the same revision;
+- state every unexercised path and nonclaim.
+
+Use the existing `artifacts/issue-30/replay-proof.md` format.
+Write a current proof instead of extending the stale verdict.
+
+Issue #30 closes only when its own proof list has no unmet criterion.
+
+## 8. User decisions and issue routes
+
+Ask for these decisions as one concise batch.
+Do not infer an answer from existing content.
+
+1. **Third-party licensing.** Route to issue #9.
+   Decide the 82 flagged intake rows before public transcription.
+
+2. **Normal-family convention.** Route to issue #2.
+   Choose Stein–Shakarchi or Ahlfors for the canonical definition.
+
+3. **`tikzcd` publication.** Route to issue #10.
+   Decide the supported diagram boundary for the 44 affected cards.
+
+4. **Importer ownership.** Route to issue #8.
+   Decide whether curated topics belong in importer input or outside its output subtree.
+
+5. **Twenty-seven solution write-ups stored as problems.** Route to issues #5 and #24.
+   Approve new problem cards and occurrence repointing.
+
+6. **Disabled `\sech` definition.** Route to issue #14.
+   Decide whether to remove the commented upstream line.
+
+7. **Typed facets.** Route to issue #10.
+   Decide whether area, institution, year, and topic need separate controls.
+
+8. **Occurrence reachability.** Route to issue #6 and issues #24 through #29.
+   Decide whether sitting and problem pages satisfy occurrence reachability.
+
+9. **Small mathematical and editorial choices.** Route by ownership.
+   Use issue #2 for notation, duplicate statements, and competing mathematical repairs.
+   Use issue #9 for missing image-only answers.
+   Reopen #40 or file a narrow issue before any mass title work.
+
+Record each answer on its owning issue.
+Do not keep the decision only in this file.
+
+## 9. Proof and stop rules
+
+- Read the mathematics before any classification, merge, title, or canonicality decision.
+- Do not create a semantic classifier or deduplication tool.
+- Verify claims at the current source, target, rendered, or deployed boundary.
+- Treat a focused check as evidence only for its named obligation.
+- Run targeted checks during an edit.
+- Let commit and push hooks run the configured full checks.
+- Render and inspect the real page before closing visual work.
+- Use `trash`, never `rm`.
+- Commit each coherent change and push before handoff.
+- Do not close a parent issue because its children look complete.
+- Do not stop after a status update while safe issue work remains.
+
+Stop and ask the user only when:
+
+- a decision in Section 8 is required;
+- two mathematical sources give inequivalent answers;
+- a source is unreadable or has uncertain license status;
+- the requested change needs deletion or another irreversible action;
+- live issue requirements contradict and no owning decision resolves them.
+
+## 10. Final closure order
+
+Use this order after all workstreams finish:
+
+1. Close satisfied leaf issues with current proof links.
+2. Close issue #30 on the current deployed proof.
+3. Close issue #6 after all publisher and branch obligations hold.
+4. Reconcile issues #5 through #11 with their current acceptance text.
+5. Update roadmap issue #1 with remaining open work.
+6. Keep issue #2 open unless its full mathematics program is complete.
+
+The project is not complete while issue #1 has an unmet requirement.
+This handoff is not evidence that any issue is complete.
