@@ -25,34 +25,34 @@ sections:
       the exam expects by name, usually on a sum or a divisibility claim, and the counting
       formulas are its most common companion.
     items:
-      - query:
-          kind: problem
-          topics:
-            - logic-and-quantifiers
-          limit: 13
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - functions-and-relations
-          limit: 6
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - induction
-          limit: 8
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - combinatorics
-          limit: 3
-          review:
-            mode: any
+      - ref: P-4PCPV
+      - ref: P-5XCMC
+      - ref: P-A4JGH
+      - ref: P-ABRWU
+      - ref: P-ARI3E
+      - ref: P-CEU5R
+      - ref: P-F7Y7R
+      - ref: P-JMXZA
+      - ref: P-JVZMJ
+      - ref: P-MSLD5
+      - ref: P-MW5EM
+      - ref: P-TBQBL
+      - ref: P-UH7ZQ
+      - ref: P-5RZWO
+      - ref: P-BZIXT
+      - ref: P-MNR6F
+      - ref: P-N2NUD
+      - ref: P-QDGDN
+      - ref: P-YLM7G
+      - ref: P-2WRUJ
+      - ref: P-3DZXT
+      - ref: P-6POHT
+      - ref: P-FKEN5
+      - ref: P-IKEPG
+      - ref: P-IMYQU
+      - ref: P-KBGYN
+      - ref: P-TVRVM
+      - ref: P-IMVV7
   - slug: limits-and-continuity
     title: Limits and Continuity
     parent: logic-and-proof
@@ -66,27 +66,13 @@ sections:
       for — continuous but not differentiable, differentiable but not continuously so — are how
       the exam checks that the definitions are held apart rather than blurred.
     items:
-      - query:
-          kind: problem
-          topics:
-            - limits
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - continuity
-          limit: 7
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - differentiation
-          limit: 14
-          review:
-            mode: any
+      - ref: P-3OH6H
+      - ref: P-L3LHW
+      - ref: P-LF4NL
+      - ref: P-TBXVH
+      - ref: P-TEVPO
+      - ref: P-FPWV6
+      - ref: P-UE5L6
   - slug: integration-techniques
     title: Integration Techniques
     parent: limits-and-continuity
@@ -102,55 +88,67 @@ sections:
       half of these integrals are an identity applied before any technique at all, and the
       improper cases are separated out because they need a limit the others do not.
     items:
-      - query:
-          kind: problem
-          topics:
-            - integrals
-          limit: 62
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - u-substitution
-          limit: 23
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - integration-by-parts
-          limit: 9
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - trigonometric-substitution
-          limit: 10
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - partial-fractions
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - trigonometry
-          limit: 22
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - improper-integrals
-          limit: 4
-          review:
-            mode: any
+      - ref: P-2ALGH
+      - ref: P-3MDGM
+      - ref: P-45Y6B
+      - ref: P-4GVRD
+      - ref: P-5DV7Z
+      - ref: P-5OCGZ
+      - ref: P-5RLR6
+      - ref: P-5UMRG
+      - ref: P-73DDS
+      - ref: P-75G3E
+      - ref: P-7CUNN
+      - ref: P-7NXQ7
+      - ref: P-7X6ZK
+      - ref: P-ANJIW
+      - ref: P-B6FMH
+      - ref: P-CJ16Y
+      - ref: P-D75SD
+      - ref: P-DH6CX
+      - ref: P-E6Y7R
+      - ref: P-E7N6V
+      - ref: P-EAYXF
+      - ref: P-EQFMD
+      - ref: P-F6K7Y
+      - ref: P-FDWKY
+      - ref: P-GLK4G
+      - ref: P-H442E
+      - ref: P-IOAQB
+      - ref: P-JHXZS
+      - ref: P-JIAQR
+      - ref: P-KAQ4G
+      - ref: P-MKEL2
+      - ref: P-NHFXM
+      - ref: P-NKCDN
+      - ref: P-NM425
+      - ref: P-OSVPH
+      - ref: P-OY6YK
+      - ref: P-PAVWJ
+      - ref: P-PHHXJ
+      - ref: P-PV5GI
+      - ref: P-R4I5W
+      - ref: P-R67LO
+      - ref: P-RVMWA
+      - ref: P-SAFVA
+      - ref: P-SQVNA
+      - ref: P-SUXVR
+      - ref: P-SZNKD
+      - ref: P-TO7UO
+      - ref: P-UGR7G
+      - ref: P-UNHGI
+      - ref: P-UOENS
+      - ref: P-UUACQ
+      - ref: P-UVSXF
+      - ref: P-VYOWN
+      - ref: P-W6TOK
+      - ref: P-XIKRI
+      - ref: P-XRZVW
+      - ref: P-XYIBX
+      - ref: P-Y6XVP
+      - ref: P-YFZRX
+      - ref: P-3CU65
+      - ref: P-PC2H7
   - slug: sequences-and-series
     title: Sequences and Series
     parent: integration-techniques
@@ -164,69 +162,16 @@ sections:
       negation exercise of the first section applied to a sequence of functions, and it is what
       makes the interchange of a limit with an integral legitimate.
     items:
-      - query:
-          kind: problem
-          topics:
-            - sequences-of-numbers
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - series-of-numbers
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - convergence-tests
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - power-series
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - taylor-series
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - uniform-convergence
-          limit: 3
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - sequences-of-functions
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - series-of-functions
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - riemann-integrability
-          limit: 1
-          review:
-            mode: any
+      - ref: P-AOZMW
+      - ref: P-SD42B
+      - ref: P-VA72Z
+      - ref: P-FB5CY
+      - ref: P-V4VXC
+      - ref: P-VAWOC
+      - ref: P-MOL6S
+      - ref: P-TOIEK
+      - ref: P-ZR2WC
+      - ref: P-CQNPO
   - slug: multivariable-calculus
     title: Multivariable Calculus
     parent: sequences-and-series
@@ -241,27 +186,26 @@ sections:
       parametrizing, compute it again by Green's theorem, and decide whether it is
       path-independent — which is to ask whether the field is conservative.
     items:
-      - query:
-          kind: problem
-          topics:
-            - multivariable-calculus
-          limit: 10
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - line-integrals
-          limit: 10
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - green-s-theorem
-          limit: 5
-          review:
-            mode: any
+      - ref: P-2QLBW
+      - ref: P-34W2F
+      - ref: P-E5WUU
+      - ref: P-FPMMA
+      - ref: P-GB7EM
+      - ref: P-HUKW5
+      - ref: P-K5GH3
+      - ref: P-LHC3M
+      - ref: P-TAPVD
+      - ref: P-TWH7U
+      - ref: P-5YTY5
+      - ref: P-CJUIR
+      - ref: P-I3UPP
+      - ref: P-MFVEZ
+      - ref: P-NVWMC
+      - ref: P-OK5P3
+      - ref: P-RPSK2
+      - ref: P-UU43Q
+      - ref: P-WJTPS
+      - ref: P-YVA5W
   - slug: linear-algebra
     title: Linear Algebra
     parent: multivariable-calculus
@@ -276,83 +220,24 @@ sections:
       statement about a linear operator, Jordan form is the elementary-divisor statement over a
       field with enough roots, and nilpotence is the case where the only eigenvalue is zero.
     items:
-      - query:
-          kind: problem
-          topics:
-            - vector-spaces
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - bases
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - linear-algebra
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - rank-and-nullity
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - matrices
-          limit: 10
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - eigenvalues-and-eigenvectors
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - diagonalization
-          limit: 3
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - minimal-and-characteristic-polynomials
-          limit: 2
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - jordan-canonical-form
-          limit: 2
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - rational-canonical-form
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - nilpotence
-          limit: 1
-          review:
-            mode: any
+      - ref: P-4STQR
+      - ref: P-B34X5
+      - ref: P-CWELY
+      - ref: P-QJE7B
+      - ref: P-TGH5F
+      - ref: P-KOTV2
+      - ref: P-JLPVR
+      - ref: P-5HVC4
+      - ref: P-6ET4N
+      - ref: P-LU2L3
+      - ref: P-OUQ2Q
+      - ref: P-R7TCU
+      - ref: P-SK4KT
+      - ref: P-TB7BG
+      - ref: P-UVJYB
+      - ref: P-VJBIB
+      - ref: P-VPCLD
+      - ref: P-CSEAZ
   - slug: groups
     title: Groups
     parent: linear-algebra
@@ -367,90 +252,23 @@ sections:
       order is not. Automorphism groups and semidirect products are how the nonabelian
       examples get built once the abelian ones are exhausted.
     items:
-      - query:
-          kind: problem
-          topics:
-            - groups
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - cosets-and-lagrange
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - cyclic-groups
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - normal-subgroups
-          limit: 2
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - simple-groups
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - sylow-theory
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - centralizers-and-normalizers
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - abelian-groups
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - structure-theorem
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - automorphisms
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - semidirect-products
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - classification
-          limit: 1
-          review:
-            mode: any
+      - ref: P-7B2CW
+      - ref: P-E4XWH
+      - ref: P-HOBOM
+      - ref: P-XVV4O
+      - ref: P-GW4KD
+      - ref: P-HU56P
+      - ref: P-3DGMZ
+      - ref: P-DCR24
+      - ref: P-VVXKF
+      - ref: P-3DS32
+      - ref: P-GWHUX
+      - ref: P-K5JBF
+      - ref: P-W5LVB
+      - ref: P-ZYPI3
+      - ref: P-PCSZ2
+      - ref: P-RP7WR
+      - ref: P-ZG74L
   - slug: rings-and-modules
     title: Rings and Modules
     parent: groups
@@ -464,111 +282,29 @@ sections:
       times: it classifies finitely generated abelian groups, it produces the rational canonical
       form of the previous section, and it answers the module questions here directly.
     items:
-      - query:
-          kind: problem
-          topics:
-            - rings
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - ideals
-          limit: 6
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - prime-ideals
-          limit: 2
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - maximal-ideals
-          limit: 3
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - local-rings
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - noetherian-rings
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - integral-domains
-          limit: 2
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - euclidean-domains
-          limit: 2
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - principal-ideal-domains
-          limit: 5
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - factorization
-          limit: 2
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - polynomials
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - irreducibility-criteria
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - modules
-          limit: 10
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - free-modules
-          limit: 2
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - tensor-products
-          limit: 1
-          review:
-            mode: any
+      - ref: P-3GKGV
+      - ref: P-AR3HH
+      - ref: P-CZFJJ
+      - ref: P-QB2KS
+      - ref: P-SHNTG
+      - ref: P-IXED6
+      - ref: P-JHQKZ
+      - ref: P-PDAPQ
+      - ref: P-XERC4
+      - ref: P-WC2SP
+      - ref: P-NXDOU
+      - ref: P-VUTDR
+      - ref: P-Y5JK4
+      - ref: P-ZSFKA
+      - ref: P-MOCTU
+      - ref: P-TNZTM
+      - ref: P-JH3BD
+      - ref: P-HXR25
+      - ref: P-KU6C3
+      - ref: P-SLNSQ
+      - ref: P-U64DA
+      - ref: P-C6SRA
+      - ref: P-HHX6V
   - slug: fields-and-galois
     title: Fields and Galois Theory
     parent: rings-and-modules
@@ -583,48 +319,16 @@ sections:
       common divisor. Number-theoretic questions sit here because they are the same arguments
       run in a ring of integers.
     items:
-      - query:
-          kind: problem
-          topics:
-            - fields
-          limit: 3
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - field-extensions
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - splitting-fields
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - galois-theory
-          limit: 11
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - finite-fields
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - number-theory
-          limit: 4
-          review:
-            mode: any
+      - ref: P-5JBRJ
+      - ref: P-H7ERV
+      - ref: P-RE2VW
+      - ref: P-VFB5V
+      - ref: P-ZY76X
+      - ref: P-2TVO4
+      - ref: P-K5L2R
+      - ref: P-NGXAE
+      - ref: P-ZR3OT
+      - ref: P-OW6CS
   - slug: complex-numbers
     title: Complex Numbers
     parent: fields-and-galois
@@ -636,27 +340,10 @@ sections:
       a contour integral evaluated both by the formula and by direct parametrization, which is
       the only place the exam touches complex analysis proper.
     items:
-      - query:
-          kind: problem
-          topics:
-            - roots-of-unity
-          limit: 4
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - cauchy-integral-formula
-          limit: 1
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - contour-integration
-          limit: 1
-          review:
-            mode: any
+      - ref: P-3373K
+      - ref: P-OQW4B
+      - ref: P-Q5LN7
+      - ref: P-FBY23
   - slug: counterexamples
     title: Counterexamples
     parent: complex-numbers
@@ -675,12 +362,5 @@ sections:
           topics:
             - counterexamples
           limit: 16
-          review:
-            mode: any
-      - query:
-          kind: problem
-          topics:
-            - misc
-          limit: 1
           review:
             mode: any
