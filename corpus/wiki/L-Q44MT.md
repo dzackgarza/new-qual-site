@@ -6,7 +6,9 @@ title: "$p$ groups are solvable"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - solvable-groups
 relations: []
 review: draft
 ---

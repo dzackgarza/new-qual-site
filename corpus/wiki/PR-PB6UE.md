@@ -6,7 +6,10 @@ title: "Consequence of Chebotarev density: checking irreducibility mod $p$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - irreducibility-criteria
+  - finite-fields
+  - polynomials
 relations: []
 review: draft
 ---

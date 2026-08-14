@@ -6,7 +6,10 @@ title: "Cauchy's Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - groups
+  - cosets-and-lagrange
+  - p-groups
 relations: []
 review: draft
 ---

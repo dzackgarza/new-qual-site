@@ -6,7 +6,10 @@ title: "The characteristic polynomial is the product of the\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - structure-theorem
+  - canonical-forms
 relations: []
 review: draft
 ---

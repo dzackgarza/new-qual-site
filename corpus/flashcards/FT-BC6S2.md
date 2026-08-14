@@ -6,7 +6,10 @@ title: 'Characterizations of Diagonalizability of a Square Matrix $M$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations: []
 review: draft
 ---

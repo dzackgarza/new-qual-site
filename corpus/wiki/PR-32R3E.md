@@ -6,7 +6,9 @@ title: "Identification of Finite Fields as Splitting Fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - splitting-fields
 relations: []
 review: draft
 ---

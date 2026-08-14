@@ -6,7 +6,10 @@ title: "Jordan-Holder"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - simple-groups
+  - classification
 relations: []
 review: draft
 ---

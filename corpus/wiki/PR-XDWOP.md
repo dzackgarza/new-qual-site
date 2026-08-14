@@ -6,7 +6,10 @@ title: "A consequence of Chebotarev Density: reading cycles from reduction mod $
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - finite-fields
 relations: []
 review: draft
 ---

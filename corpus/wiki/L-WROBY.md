@@ -6,7 +6,10 @@ title: "$pq$ groups have normals the size of the biggest prime"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - classification
 relations: []
 review: draft
 ---

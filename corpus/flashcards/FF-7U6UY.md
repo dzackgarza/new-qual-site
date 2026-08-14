@@ -6,7 +6,10 @@ title: 'What is $ {J ({R}) } $? How is it interpreted geometrically?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - ideals
+  - geometry
 relations: []
 review: draft
 ---

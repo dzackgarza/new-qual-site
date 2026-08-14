@@ -6,7 +6,9 @@ title: "Separability is transitive."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
 relations: []
 review: draft
 ---

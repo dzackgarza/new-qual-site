@@ -6,7 +6,10 @@ title: "Classification for cubics"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - classification
+  - polynomials
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Does $A^n=B^\n$ imply $A=B$?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - counterexamples
 relations:
 - kind: variant-of
   target: FE-ISVDM

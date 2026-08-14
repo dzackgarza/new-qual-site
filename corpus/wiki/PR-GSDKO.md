@@ -6,7 +6,10 @@ title: "Orbit Stabilizer Isomorphism"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - group-actions
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

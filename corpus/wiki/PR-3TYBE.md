@@ -6,7 +6,10 @@ title: "Let $L/K/k$ with $L/k$ Galois. Then"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - field-extensions
 relations: []
 review: draft
 ---

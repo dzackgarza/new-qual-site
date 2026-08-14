@@ -6,7 +6,10 @@ title: "Inseparable iff polynomial in characteristic powers"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - polynomials
 relations: []
 review: draft
 ---

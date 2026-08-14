@@ -6,7 +6,10 @@ title: 'Give a categorical/homological corollary of Nakayama''s lemma.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nakayamas-lemma
+  - free-modules
+  - modules
 relations: []
 review: draft
 ---

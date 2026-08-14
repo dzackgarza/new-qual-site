@@ -6,7 +6,10 @@ title: "Classification of quadratic extensions"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - classification
 relations: []
 review: draft
 ---

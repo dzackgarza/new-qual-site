@@ -6,7 +6,10 @@ title: "Splits Product of Irreducibles"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - polynomials
 relations: []
 review: draft
 ---

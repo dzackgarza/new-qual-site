@@ -6,7 +6,9 @@ title: 'For matrices, does $ A^n=B^n\implies A=B $?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - counterexamples
 relations: []
 review: draft
 ---

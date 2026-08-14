@@ -6,7 +6,10 @@ title: "Existence of maximal ideals"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - zorns-lemma
 relations: []
 review: draft
 ---

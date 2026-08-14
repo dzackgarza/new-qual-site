@@ -6,7 +6,10 @@ title: 'What is the going up theorem?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-extensions
+  - prime-ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---

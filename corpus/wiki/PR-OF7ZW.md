@@ -6,7 +6,10 @@ title: "For a linear operator on a vector space of nonzero finite dimension, T\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - rational-canonical-form
+  - structure-theorem
 relations: []
 review: draft
 ---

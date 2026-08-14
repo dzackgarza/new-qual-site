@@ -6,7 +6,10 @@ title: "Big chain of inclusions"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - integral-domains
+  - factorization
 relations: []
 review: draft
 ---

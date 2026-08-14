@@ -6,7 +6,9 @@ title: "\\# G = \\#(G/H) \\#H \\da [G:H] \\, \\# H"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

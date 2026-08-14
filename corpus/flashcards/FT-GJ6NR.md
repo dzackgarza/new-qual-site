@@ -6,7 +6,10 @@ title: 'Fundamental Theorem of Galois Theory'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - normal-subgroups
 relations: []
 review: draft
 ---

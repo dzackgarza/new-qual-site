@@ -6,7 +6,10 @@ title: 'What is the geometric interpretation of Krull''s intersection theorem?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - krull-dimension
+  - local-rings
+  - geometry
 relations: []
 review: draft
 ---

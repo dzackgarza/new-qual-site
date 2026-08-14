@@ -6,7 +6,9 @@ title: "Normal extensions are upper transitive, forward implication"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - splitting-fields
 relations: []
 review: draft
 ---

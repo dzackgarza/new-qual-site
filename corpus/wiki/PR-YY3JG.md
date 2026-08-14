@@ -6,7 +6,9 @@ title: "Quotients by bigger subgroups yield smaller quotients"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

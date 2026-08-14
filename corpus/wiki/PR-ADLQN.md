@@ -6,7 +6,10 @@ title: "Prime Subfields of Finite Fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - characteristic
+  - classification
 relations: []
 review: draft
 ---

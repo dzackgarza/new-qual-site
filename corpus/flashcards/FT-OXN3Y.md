@@ -6,7 +6,10 @@ title: 'Gauss'' Lemma'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - polynomials
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

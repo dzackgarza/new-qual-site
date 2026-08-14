@@ -6,7 +6,10 @@ title: "Freshman's Dream"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - characteristic
+  - fields
+  - finite-fields
 relations: []
 review: draft
 ---

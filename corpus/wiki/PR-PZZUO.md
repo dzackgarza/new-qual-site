@@ -6,7 +6,8 @@ title: "Subring criteria"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
 relations: []
 review: draft
 ---

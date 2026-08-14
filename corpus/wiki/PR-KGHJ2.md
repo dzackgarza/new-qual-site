@@ -6,7 +6,10 @@ title: "Stabilizers of all orbit reps are conjugate"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - conjugacy
+  - group-actions
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "\\size G = \\size (G/H) \\size H \\da [G:H] \\, \\size H"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

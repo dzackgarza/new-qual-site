@@ -6,7 +6,9 @@ title: "Formula for partitions"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - partitions
+  - number-theory
 relations: []
 review: draft
 ---

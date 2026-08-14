@@ -6,7 +6,9 @@ title: "Simplifications of separability for finite extensions"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
 relations: []
 review: draft
 ---

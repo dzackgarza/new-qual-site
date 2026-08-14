@@ -6,7 +6,10 @@ title: "Classification of groups of order $pq$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - semidirect-products
+  - groups
 relations: []
 review: draft
 ---

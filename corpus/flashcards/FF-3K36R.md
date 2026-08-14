@@ -6,7 +6,10 @@ title: 'What is Krull''s intersection theorem?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - commutative-algebra
+  - local-rings
 relations: []
 review: draft
 ---

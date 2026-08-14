@@ -6,7 +6,9 @@ title: "For $\\FF_p$ a finite field of prime order, all quadratic extensions\u20
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - field-extensions
 relations: []
 review: draft
 ---

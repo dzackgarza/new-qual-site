@@ -6,7 +6,8 @@ title: '$\phi(p^k) = ?$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - number-theory
 relations: []
 review: draft
 ---

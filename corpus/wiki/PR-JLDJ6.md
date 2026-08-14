@@ -6,7 +6,10 @@ title: "Computing Cyclotomic Polynomials"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - polynomials
+  - number-theory
 relations: []
 review: draft
 ---

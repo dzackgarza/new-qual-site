@@ -6,7 +6,10 @@ title: "Wedderburn"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - rings
+  - integral-domains
 relations: []
 review: draft
 ---

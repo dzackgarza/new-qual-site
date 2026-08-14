@@ -6,7 +6,9 @@ title: "Containment of Finite Fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - field-extensions
 relations: []
 review: draft
 ---

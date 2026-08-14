@@ -6,7 +6,10 @@ title: "If $\\dim_k V, \\dim_k W < \\infty$ then there is an isomorphism $V\\dua
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - dual-spaces
+  - tensor-products
+  - linear-algebra
 relations: []
 review: draft
 ---

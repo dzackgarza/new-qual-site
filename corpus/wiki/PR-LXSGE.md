@@ -6,7 +6,10 @@ title: "Galois groups are transitive subgroups"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - group-actions
 relations: []
 review: draft
 ---

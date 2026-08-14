@@ -6,7 +6,10 @@ title: 'Example of a field extension that is not Galois.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - counterexamples
 relations: []
 review: draft
 ---

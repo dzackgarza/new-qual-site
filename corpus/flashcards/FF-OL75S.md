@@ -6,7 +6,9 @@ title: 'Burnside''s Formula'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - burnside-s-lemma
+  - group-actions
 relations: []
 review: draft
 ---

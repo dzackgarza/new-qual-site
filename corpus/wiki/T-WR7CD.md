@@ -6,7 +6,9 @@ title: "Counting Cosets"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - normal-subgroups
 relations: []
 review: draft
 ---

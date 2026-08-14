@@ -6,7 +6,10 @@ title: "Characterization of normal algebraic extensions"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - splitting-fields
+  - galois-theory
 relations: []
 review: draft
 ---

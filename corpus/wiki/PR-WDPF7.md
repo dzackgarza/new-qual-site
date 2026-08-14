@@ -6,7 +6,9 @@ title: "Perp of sum is intersection of perps"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - inner-product-spaces
+  - vector-spaces
 relations: []
 review: draft
 ---

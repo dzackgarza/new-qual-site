@@ -6,7 +6,10 @@ title: "Burnside's Lemma"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - burnside-s-lemma
+  - group-actions
+  - orbit-stabilizer
 relations: []
 review: draft
 ---

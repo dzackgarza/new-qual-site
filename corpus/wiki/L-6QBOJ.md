@@ -6,7 +6,10 @@ title: "Frattini's Argument"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - centralizers-and-normalizers
+  - normal-subgroups
 relations: []
 review: draft
 ---

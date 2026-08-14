@@ -6,7 +6,10 @@ title: "Derivative completely detects separability"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - polynomials
+  - characteristic
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Order of $\\GL_n$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - finite-fields
+  - bases
 relations: []
 review: draft
 ---

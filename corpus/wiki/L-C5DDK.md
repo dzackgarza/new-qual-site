@@ -6,7 +6,9 @@ title: "Let $V$ be a vector space over $k$ an algebraically closed and $A \\in \
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---

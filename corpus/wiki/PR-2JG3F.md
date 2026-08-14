@@ -6,7 +6,10 @@ title: "Number of abelian groups is given by products of partition numbers"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - abelian-groups
+  - partitions
 relations: []
 review: draft
 ---

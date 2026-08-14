@@ -6,7 +6,10 @@ title: "\\Hom_{\\kmod}(V, W) \\mapsvia{\\sim} \\Hom_{\\kmod}(W, V)\\dual \\\\"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - dual-spaces
+  - trace
+  - linear-algebra
 relations: []
 review: draft
 ---

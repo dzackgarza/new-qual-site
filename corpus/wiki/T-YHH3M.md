@@ -6,7 +6,9 @@ title: "Schur's Lemma"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - semisimplicity
 relations: []
 review: draft
 ---

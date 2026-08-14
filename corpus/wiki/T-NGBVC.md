@@ -6,7 +6,8 @@ title: "Finite Extensions are Algebraic"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

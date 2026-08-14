@@ -6,7 +6,10 @@ title: "Quadratic extensions of rationals"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - galois-theory
+  - polynomials
 relations: []
 review: draft
 ---

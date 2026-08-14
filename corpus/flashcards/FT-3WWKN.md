@@ -6,7 +6,10 @@ title: 'Four Characterizations of Galois extensions $K/F$.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - separability
 relations: []
 review: draft
 ---

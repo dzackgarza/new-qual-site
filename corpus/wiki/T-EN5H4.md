@@ -6,7 +6,9 @@ title: "$S_n$ is Almost Always Solvable"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - permutations
 relations: []
 review: draft
 ---

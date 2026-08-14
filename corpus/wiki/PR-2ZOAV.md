@@ -6,7 +6,9 @@ title: "PQR Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - classification
 relations: []
 review: draft
 ---

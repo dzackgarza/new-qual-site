@@ -6,7 +6,9 @@ title: 'What is a reduced ring?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - rings
 relations: []
 review: draft
 ---

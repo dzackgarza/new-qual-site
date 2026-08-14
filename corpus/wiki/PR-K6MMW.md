@@ -6,7 +6,10 @@ title: "Let $T:V\\to V$ be a linear map where $n\\da \\dim_k V$. TFAE: There exi
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - jordan-canonical-form
+  - linear-algebra
 relations: []
 review: draft
 ---

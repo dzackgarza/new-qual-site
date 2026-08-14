@@ -59,6 +59,8 @@
   name: Character Theory
 - id: characteristic
   name: Characteristic
+- id: chinese-remainder-theorem
+  name: Chinese Remainder Theorem
 - id: class-equation
   name: Class Equation
 - id: classification
@@ -121,6 +123,8 @@
   name: Diagonalization
 - id: differentiation
   name: Differentiation
+- id: direct-products
+  name: Direct Products
 - id: dual-spaces
   name: Dual Spaces
 - id: egorov

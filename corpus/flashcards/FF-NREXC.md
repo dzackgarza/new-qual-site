@@ -6,7 +6,10 @@ title: 'What is Nakayama''s lemma?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nakayamas-lemma
+  - modules
+  - ideals
 relations: []
 review: draft
 ---

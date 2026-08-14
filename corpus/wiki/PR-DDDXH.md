@@ -6,7 +6,10 @@ title: "Fields are simple"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

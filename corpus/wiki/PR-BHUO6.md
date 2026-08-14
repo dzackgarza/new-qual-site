@@ -6,7 +6,10 @@ title: "If either of $\\dim_k V, \\dim_k W$ is finite, then $V\\dual \\tensor_k 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - dual-spaces
+  - tensor-products
+  - vector-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Irreducible implies separable for perfect fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - fields
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

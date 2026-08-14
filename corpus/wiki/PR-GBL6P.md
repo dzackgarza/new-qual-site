@@ -6,7 +6,9 @@ title: "Minimal equals characteristic iff cyclic"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - rational-canonical-form
 relations: []
 review: draft
 ---

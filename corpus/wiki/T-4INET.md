@@ -6,7 +6,9 @@ title: "Characterization of Nilpotent Groups"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - subgroup-series
 relations: []
 review: draft
 ---

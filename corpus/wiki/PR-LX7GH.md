@@ -6,7 +6,9 @@ title: "Prime implies irreducible for UFDs"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - integral-domains
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Recognizing $A_n$ or $S_n$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - subgroups
+  - galois-theory
 relations: []
 review: draft
 ---

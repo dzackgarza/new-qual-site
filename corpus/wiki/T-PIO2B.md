@@ -6,7 +6,10 @@ title: "Maschke's Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - semisimplicity
+  - characteristic
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Factor $x^n + a^n$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - factorization
 relations: []
 review: draft
 ---

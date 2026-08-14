@@ -6,7 +6,10 @@ title: "Characterization of perfect fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - fields
+  - characteristic
 relations: []
 review: draft
 ---

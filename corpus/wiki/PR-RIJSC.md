@@ -6,7 +6,8 @@ title: "Recognizing direct sums"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
 relations: []
 review: draft
 ---

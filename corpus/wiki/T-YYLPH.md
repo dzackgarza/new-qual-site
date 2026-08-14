@@ -6,7 +6,10 @@ title: "Hilbert Basis Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - polynomials
+  - ideals
 relations: []
 review: draft
 ---

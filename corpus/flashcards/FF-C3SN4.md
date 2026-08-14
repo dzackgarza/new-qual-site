@@ -6,7 +6,10 @@ title: 'Groups of Order 9'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - groups
+  - p-groups
 relations: []
 review: draft
 ---

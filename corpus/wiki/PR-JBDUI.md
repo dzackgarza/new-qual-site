@@ -6,7 +6,9 @@ title: "One-step module morphism test"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - homomorphisms
 relations: []
 review: draft
 ---

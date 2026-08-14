@@ -6,7 +6,9 @@ title: "Characterization of finite normal extensions as splitting fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

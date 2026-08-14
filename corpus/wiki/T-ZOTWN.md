@@ -6,7 +6,10 @@ title: "Artin-Wedderburn?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - rings
+  - algebras
 relations: []
 review: draft
 ---

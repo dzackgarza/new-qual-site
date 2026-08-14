@@ -6,7 +6,9 @@ title: "Characterization of Prime Subfields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - characteristic
 relations: []
 review: draft
 ---

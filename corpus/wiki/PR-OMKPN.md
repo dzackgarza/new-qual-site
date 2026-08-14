@@ -6,7 +6,9 @@ title: "Separability test: identically zero derivative"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - polynomials
 relations: []
 review: draft
 ---

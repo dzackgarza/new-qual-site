@@ -6,7 +6,8 @@ title: 'What is the sign of the cycle $\sigma=(123456)(789)(10~11)(12~13~14~15)(
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---

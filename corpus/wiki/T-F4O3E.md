@@ -6,7 +6,9 @@ title: "Lagrange's Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

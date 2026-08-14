@@ -6,7 +6,10 @@ title: 'What is the Artin-Rees lemma?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - modules
+  - ideals
 relations: []
 review: draft
 ---

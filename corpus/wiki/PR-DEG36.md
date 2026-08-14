@@ -6,7 +6,9 @@ title: "Finite fields are not algebraically closed"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - fields
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Normality satisfies the lifting property"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - splitting-fields
+  - galois-theory
 relations: []
 review: draft
 ---

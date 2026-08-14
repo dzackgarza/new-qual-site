@@ -6,7 +6,9 @@ title: 'Groups of Order 10'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - groups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'What is Krull''s Hauptidealsatz?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - krull-dimension
+  - prime-ideals
+  - noetherian-rings
 relations: []
 review: draft
 ---

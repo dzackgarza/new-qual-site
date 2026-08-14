@@ -6,7 +6,10 @@ title: "Galois is upper transitive, characterization of when lower transitivity 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - field-extensions
 relations: []
 review: draft
 ---

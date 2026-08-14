@@ -6,7 +6,10 @@ title: "Classification of groups of order $p$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - cyclic-groups
+  - groups
 relations: []
 review: draft
 ---

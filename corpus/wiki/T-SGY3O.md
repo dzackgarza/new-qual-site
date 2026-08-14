@@ -6,7 +6,10 @@ title: "Splitting + Perfect implies Galois"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - splitting-fields
+  - galois-theory
 relations: []
 review: draft
 ---

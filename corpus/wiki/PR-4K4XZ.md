@@ -6,7 +6,10 @@ title: "Free implies torsionfree"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - torsion
+  - integral-domains
 relations: []
 review: draft
 ---

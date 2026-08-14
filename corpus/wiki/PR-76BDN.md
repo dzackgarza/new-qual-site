@@ -6,7 +6,10 @@ title: "Showing ideals are maximal/prime with quotients"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

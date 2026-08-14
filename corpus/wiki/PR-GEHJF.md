@@ -6,7 +6,10 @@ title: "Characterizations of Rings"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - fields
+  - factorization
 relations: []
 review: draft
 ---

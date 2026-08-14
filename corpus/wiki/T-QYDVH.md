@@ -6,7 +6,9 @@ title: "Orbit-Stabilizer"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - group-actions
 relations: []
 review: draft
 ---

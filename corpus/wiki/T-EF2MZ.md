@@ -6,7 +6,9 @@ title: "Sylow 2"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - conjugacy
 relations: []
 review: draft
 ---

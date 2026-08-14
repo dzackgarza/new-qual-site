@@ -6,7 +6,10 @@ title: 'What is a regular ring? 2023-01-1'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - local-rings
+  - krull-dimension
+  - commutative-algebra
 relations: []
 review: draft
 ---

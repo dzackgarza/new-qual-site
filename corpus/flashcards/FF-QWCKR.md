@@ -6,7 +6,9 @@ title: 'What is a quasiregular element in a ring?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - rings
 relations: []
 review: draft
 ---

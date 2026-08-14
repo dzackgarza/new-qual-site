@@ -6,7 +6,10 @@ title: "Useful computational trick"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - determinants
+  - trace
 relations: []
 review: draft
 ---

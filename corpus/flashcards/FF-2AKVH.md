@@ -6,7 +6,9 @@ title: 'Factor $x^n + y^n$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - factorization
 relations:
 - kind: variant-of
   target: FF-UC7SQ

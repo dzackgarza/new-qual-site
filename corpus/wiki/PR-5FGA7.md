@@ -6,7 +6,10 @@ title: "Simple groups with a nontrivial subgroup embed into symmetric groups"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - simple-groups
+  - permutations
 relations: []
 review: draft
 ---

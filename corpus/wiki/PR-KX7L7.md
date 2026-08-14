@@ -6,7 +6,10 @@ title: "If $T:V \\injects W$ is injective, then $T\\tensor \\one_X: V\\tensor X 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - tensor-products
+  - exact-sequences
+  - vector-spaces
 relations: []
 review: draft
 ---

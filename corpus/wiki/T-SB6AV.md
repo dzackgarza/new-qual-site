@@ -6,7 +6,10 @@ title: "Recognizing Semidirect Products"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semidirect-products
+  - normal-subgroups
+  - automorphisms
 relations: []
 review: draft
 ---

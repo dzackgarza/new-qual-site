@@ -6,7 +6,8 @@ title: "Transitivity of algebraic extensions, forward implication"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Construction of Finite Fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - splitting-fields
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

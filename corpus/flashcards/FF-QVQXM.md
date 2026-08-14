@@ -6,7 +6,8 @@ title: 'One step subgroup test'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
 relations: []
 review: draft
 ---

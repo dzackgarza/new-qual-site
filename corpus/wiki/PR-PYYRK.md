@@ -6,7 +6,9 @@ title: "Normal iff disjoint union of conjugacy classes"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - conjugacy
 relations: []
 review: draft
 ---

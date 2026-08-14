@@ -6,7 +6,10 @@ title: "Splitting Fields of Cyclotomic Polynomials"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - splitting-fields
+  - galois-theory
 relations: []
 review: draft
 ---

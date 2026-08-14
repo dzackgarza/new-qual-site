@@ -6,7 +6,10 @@ title: "Separable splitting fields are Galois"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - separability
+  - splitting-fields
 relations: []
 review: draft
 ---

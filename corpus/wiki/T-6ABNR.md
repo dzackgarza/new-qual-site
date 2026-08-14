@@ -6,7 +6,9 @@ title: "Characterizations of Diagonalizability"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

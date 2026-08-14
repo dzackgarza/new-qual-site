@@ -6,7 +6,9 @@ title: "Proper ideals contain no units"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

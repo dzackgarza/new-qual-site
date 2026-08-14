@@ -6,7 +6,10 @@ title: "The elementary divisors of $A$ are the minimal polynomials of the Jord\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - structure-theorem
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

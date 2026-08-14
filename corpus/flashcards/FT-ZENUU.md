@@ -6,7 +6,9 @@ title: 'Sylow Theorems'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - p-groups
 relations: []
 review: draft
 ---

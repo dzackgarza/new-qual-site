@@ -6,7 +6,10 @@ title: 'What is the geometric interpretation of Nakayama''s lemma?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nakayamas-lemma
+  - geometry
+  - modules
 relations: []
 review: draft
 ---

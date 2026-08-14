@@ -6,7 +6,9 @@ title: 'Order of the smallest nonabelian group'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - groups
 relations: []
 review: draft
 ---

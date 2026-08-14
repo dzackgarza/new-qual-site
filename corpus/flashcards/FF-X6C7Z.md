@@ -6,7 +6,9 @@ title: 'Give a geometric application of Nakayama''s lemma.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nakayamas-lemma
+  - geometry
 relations: []
 review: draft
 ---

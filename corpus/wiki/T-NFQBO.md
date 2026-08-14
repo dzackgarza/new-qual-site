@@ -6,7 +6,10 @@ title: "Diamond Theorem / 2nd Isomorphism Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - isomorphism-theorems
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---

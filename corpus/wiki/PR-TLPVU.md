@@ -6,7 +6,10 @@ title: "Converting between elementary divisors and invariant factors"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - abelian-groups
+  - classification
 relations: []
 review: draft
 ---

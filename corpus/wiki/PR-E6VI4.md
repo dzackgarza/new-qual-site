@@ -6,7 +6,10 @@ title: "Application of translation action on cosets"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - normal-subgroups
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

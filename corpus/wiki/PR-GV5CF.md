@@ -6,7 +6,10 @@ title: "Simultaneous Diagonalizability"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

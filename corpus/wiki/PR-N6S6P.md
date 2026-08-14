@@ -6,7 +6,10 @@ title: "How to count sizes of automorphism groups"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - cyclic-groups
+  - semidirect-products
 relations: []
 review: draft
 ---

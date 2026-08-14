@@ -6,7 +6,10 @@ title: "Algebraic extensions of perfect fields are separable"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
+  - fields
 relations: []
 review: draft
 ---

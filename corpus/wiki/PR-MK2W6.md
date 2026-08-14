@@ -6,7 +6,10 @@ title: "Irreducible polynomials have separable splitting fields"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - splitting-fields
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'What is Krull''s theorem?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - zorns-lemma
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "The Spectral Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - inner-product-spaces
+  - matrices
 relations: []
 review: draft
 ---

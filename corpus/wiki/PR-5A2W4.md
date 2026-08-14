@@ -6,7 +6,10 @@ title: "JCF Algorithm for generalized eigenvectors"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

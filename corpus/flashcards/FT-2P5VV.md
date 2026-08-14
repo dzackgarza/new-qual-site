@@ -6,7 +6,9 @@ title: 'Eisenstein''s Criterion'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - irreducibility-criteria
+  - polynomials
 relations: []
 review: draft
 ---

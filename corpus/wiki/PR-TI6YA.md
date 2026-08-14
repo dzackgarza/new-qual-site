@@ -6,7 +6,10 @@ title: "Rational Canonical Form"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - structure-theorem
+  - matrices
 relations: []
 review: draft
 ---

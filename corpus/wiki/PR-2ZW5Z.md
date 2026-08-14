@@ -6,7 +6,9 @@ title: "Properties of the norm"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - number-theory
 relations: []
 review: draft
 ---

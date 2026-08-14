@@ -6,7 +6,10 @@ title: "Principal Ideals are Free"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - ideals
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

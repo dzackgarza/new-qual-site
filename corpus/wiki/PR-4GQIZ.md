@@ -6,7 +6,10 @@ title: "Equivalent conditions for cyclic vectors"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - minimal-and-characteristic-polynomials
+  - modules
 relations: []
 review: draft
 ---

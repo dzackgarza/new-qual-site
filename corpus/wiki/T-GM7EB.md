@@ -6,7 +6,10 @@ title: "Nilpotents Have All Sylows Normal"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

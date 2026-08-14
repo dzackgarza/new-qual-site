@@ -6,7 +6,8 @@ title: "Towers are multiplicative in degree"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

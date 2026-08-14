@@ -6,7 +6,9 @@ title: 'Fermat''s Little Theorem'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - number-theory
+  - finite-fields
 relations: []
 review: draft
 ---

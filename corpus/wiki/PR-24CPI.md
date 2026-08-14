@@ -6,7 +6,10 @@ title: "Triangular Decomposition"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - nilpotence
+  - linear-algebra
 relations: []
 review: draft
 ---

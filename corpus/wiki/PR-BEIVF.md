@@ -6,7 +6,10 @@ title: "HK Subgroup Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
+  - centralizers-and-normalizers
+  - normal-subgroups
 relations: []
 review: draft
 ---

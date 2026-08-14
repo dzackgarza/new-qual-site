@@ -6,7 +6,10 @@ title: 'What is Nakayama''s lemma for a local ring?'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nakayamas-lemma
+  - local-rings
+  - modules
 relations: []
 review: draft
 ---

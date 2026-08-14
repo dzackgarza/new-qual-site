@@ -6,7 +6,9 @@ title: "Recognizing Generalized Direct Products"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - direct-products
+  - normal-subgroups
 relations: []
 review: draft
 ---

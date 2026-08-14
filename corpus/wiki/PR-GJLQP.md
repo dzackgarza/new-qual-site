@@ -6,7 +6,10 @@ title: "Centers are characteristic"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - automorphisms
+  - subgroups
 relations: []
 review: draft
 ---

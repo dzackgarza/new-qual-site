@@ -6,7 +6,10 @@ title: "The minimal polynomial of $A$ is the invariant factor of\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - structure-theorem
+  - canonical-forms
 relations: []
 review: draft
 ---

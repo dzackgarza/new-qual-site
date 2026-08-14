@@ -6,7 +6,10 @@ title: "Equivalent conditions for splitting SESs"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - projective-modules
+  - homological-algebra
 relations: []
 review: draft
 ---

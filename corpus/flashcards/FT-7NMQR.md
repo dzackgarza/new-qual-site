@@ -6,7 +6,10 @@ title: 'Recognizing Direct Products'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - direct-products
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---

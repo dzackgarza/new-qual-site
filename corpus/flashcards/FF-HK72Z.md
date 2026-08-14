@@ -6,7 +6,8 @@ title: 'Descartes'' Rule of Signs'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
 relations: []
 review: draft
 ---

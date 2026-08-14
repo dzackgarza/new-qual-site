@@ -6,7 +6,10 @@ title: "Nilpotent Implies Maximal Normals"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---

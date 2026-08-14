@@ -6,7 +6,10 @@ title: "The Algorithm"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - classification
 relations: []
 review: draft
 ---

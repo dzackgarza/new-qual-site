@@ -6,7 +6,9 @@ title: "Separability test: $\\gcd$ with derivative"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - polynomials
 relations: []
 review: draft
 ---

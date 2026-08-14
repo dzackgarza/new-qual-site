@@ -6,7 +6,9 @@ title: "Free implies projective"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - projective-modules
 relations: []
 review: draft
 ---

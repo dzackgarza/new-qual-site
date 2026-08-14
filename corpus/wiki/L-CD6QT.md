@@ -6,7 +6,10 @@ title: "JCF from Minimal and Characteristic Polynomials"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
+  - eigenvalues-and-eigenvectors
 relations: []
 review: draft
 ---

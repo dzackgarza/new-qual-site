@@ -6,7 +6,10 @@ title: "Characterization of Solvable"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - subgroup-series
+  - commutators
 relations: []
 review: draft
 ---

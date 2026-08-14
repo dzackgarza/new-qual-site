@@ -6,7 +6,10 @@ title: "Every free \\(R\\dash\\)module admits a basis (spanning $R\\dash$linearl
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - bases
+  - modules
 relations: []
 review: draft
 ---

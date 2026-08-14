@@ -6,7 +6,10 @@ title: "Fixing transitivity of normality"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - automorphisms
+  - subgroups
 relations: []
 review: draft
 ---

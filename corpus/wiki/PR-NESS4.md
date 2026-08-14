@@ -6,7 +6,10 @@ title: "NC Theorem"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - automorphisms
+  - isomorphism-theorems
 relations: []
 review: draft
 ---

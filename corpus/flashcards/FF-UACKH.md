@@ -6,7 +6,9 @@ title: 'Cyclotomic Polynomial: $\Phi_{2p}(x)$.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - polynomials
 relations: []
 review: draft
 ---

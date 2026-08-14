@@ -6,7 +6,9 @@ title: "Separability has the compositing property"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
 relations: []
 review: draft
 ---
