@@ -259,12 +259,7 @@ def _typesets(title: str) -> bool:
     braces = re.sub(r"\\.", "", title, flags=re.S)
     inline = "".join(match.group(0) for match in MATH.finditer(title))
     aligned = re.sub(r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", "", inline, flags=re.S)
-    return (
-        title.count("$") % 2 == 0
-        and braces.count("{") == braces.count("}")
-        and title.count(r"\begin{") == title.count(r"\end{")
-        and "&" not in aligned
-    )
+    return title.count("$") % 2 == 0 and braces.count("{") == braces.count("}") and title.count(r"\begin{") == title.count(r"\end{") and "&" not in aligned
 
 
 def degenerate(title: str, authored: str = "") -> str | None:
