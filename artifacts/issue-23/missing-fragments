@@ -1,0 +1,80 @@
+"""Classify the unresolved fragments the static validator reports.
+
+`validate-site` prints only the first twenty. This walks the same boundary --
+every `href`/`src` in every emitted HTML page whose fragment names no `id` or
+`name` on the target page -- and groups the whole set by source page, target
+page, and fragment shape.
+
+Usage: python3 artifacts/issue-23/missing-fragments <site-root>
+"""
+
+from __future__ import annotations
+
+import collections
+import re
+import sys
+from pathlib import Path
+from urllib.parse import unquote, urlsplit
+
+import html5lib
+
+root = Path(sys.argv[1]).resolve()
+pages = sorted(root.rglob("*.html"))
+ids: dict[Path, set[str]] = {}
+documents = {}
+
+for page in pages:
+    document = html5lib.HTMLParser(strict=False).parse(page.read_text())
+    documents[page] = document
+    ids[page] = {
+        value
+        for element in document.iter()
+        for key, value in element.attrib.items()
+        if key.rsplit("}", 1)[-1] in {"id", "name"}
+    }
+
+missing: list[tuple[str, str, str]] = []
+for page, document in documents.items():
+    for element in document.iter():
+        for attribute in ("href", "src"):
+            raw = element.attrib.get(attribute)
+            if raw is None or not raw.strip():
+                continue
+            parsed = urlsplit(raw.strip())
+            if parsed.scheme or parsed.netloc or not parsed.fragment:
+                continue
+            relative = unquote(parsed.path)
+            target = (root / relative.lstrip("/")) if relative.startswith("/") else (page.parent / relative if relative else page)
+            target = target.resolve()
+            if target.is_dir():
+                target = target / "index.html"
+            if target.suffix.lower() not in {".html", ".htm"} or not target.exists():
+                continue
+            fragment = unquote(parsed.fragment)
+            if fragment not in ids.get(target, set()):
+                missing.append(
+                    (
+                        page.relative_to(root).as_posix(),
+                        target.relative_to(root).as_posix(),
+                        fragment,
+                    )
+                )
+
+print(f"unresolved_fragments: {len(missing)}")
+print(f"source_pages: {len(({entry[0] for entry in missing}))}")
+print(f"target_pages: {len(({entry[1] for entry in missing}))}")
+
+shapes = collections.Counter(
+    "obsidian block id (^hex)" if re.fullmatch(r"\^[0-9a-f]+", entry[2]) else "other"
+    for entry in missing
+)
+for shape, count in shapes.most_common():
+    print(f"shape {shape}: {count}")
+
+print("\nby source page:")
+for source, count in collections.Counter(entry[0] for entry in missing).most_common():
+    print(f"  {count:4}  {source}")
+
+print("\nby target page:")
+for target, count in collections.Counter(entry[1] for entry in missing).most_common():
+    print(f"  {count:4}  {target}")

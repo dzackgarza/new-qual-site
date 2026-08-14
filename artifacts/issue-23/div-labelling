@@ -1,0 +1,54 @@
+"""How the authored environment divs are labelled on the emitted wiki pages.
+
+An authored page writes `:::{.remark title="Shifting"}`. Pandoc turns that into
+`<div class="remark" title="Shifting">`. This counts, across every emitted wiki
+page, how many such divs there are, which classes they carry, how many carry an
+authored `title`, and how many reach the `div.qual-section` rule that puts a
+visible label on the block.
+
+It counts elements and attributes. It does not judge how a block should look.
+
+Usage: python3 artifacts/issue-23/div-labelling <site-root>
+"""
+
+from __future__ import annotations
+
+import collections
+import sys
+from pathlib import Path
+
+import html5lib
+
+site = Path(sys.argv[1]).resolve()
+
+classes: collections.Counter[str] = collections.Counter()
+titled = 0
+titled_pages: set[str] = set()
+labelled = 0
+total = 0
+
+for page in sorted((site / "wiki").rglob("*.html")):
+    document = html5lib.HTMLParser(strict=False).parse(page.read_text())
+    for element in document.iter():
+        if not isinstance(element.tag, str) or element.tag.rsplit("}", 1)[-1] != "div":
+            continue
+        names = element.attrib.get("class", "").split()
+        if not names or "page-layout" in names or "page-toc" in names:
+            continue
+        if names[0] in {"search-heading", "site-links"}:
+            continue
+        total += 1
+        classes.update(names)
+        if "qual-section" in names or "data-label" in element.attrib:
+            labelled += 1
+        if element.attrib.get("title"):
+            titled += 1
+            titled_pages.add(page.relative_to(site).as_posix())
+
+print(f"environment_divs: {total}")
+print(f"divs_carrying_an_authored_title: {titled}")
+print(f"pages_carrying_a_titled_div: {len(titled_pages)}")
+print(f"divs_reaching_the_visible_label_rule: {labelled}")
+print("\nclasses:")
+for name, count in classes.most_common():
+    print(f"  {count:5}  {name}")

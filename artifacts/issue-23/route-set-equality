@@ -1,0 +1,56 @@
+"""Set-equality between the authored page inventory, the manifest, and the emitted HTML.
+
+Four sets, compared pairwise:
+
+  sources   every `wiki/**/*.md` on disk, path relative to `wiki/`
+  manifest  the `source` field of every `build/quarto/wiki-manifest.json` entry
+  routes    the `route` field of the same entries
+  emitted   every `build/quarto/_site/wiki/**/*.html` file, path relative to `_site`
+
+It reports the symmetric differences and the route multiplicity. It says nothing
+about what any page contains.
+
+Usage: python3 artifacts/issue-23/route-set-equality <repo-root>
+"""
+
+from __future__ import annotations
+
+import collections
+import json
+import sys
+from pathlib import Path
+
+root = Path(sys.argv[1]).resolve()
+manifest = json.loads((root / "build" / "quarto" / "wiki-manifest.json").read_text())
+
+sources = {path.relative_to(root / "wiki").as_posix() for path in (root / "wiki").rglob("*.md")}
+declared = {entry["source"] for entry in manifest}
+routes = [entry["route"] for entry in manifest]
+site = root / "build" / "quarto" / "_site"
+emitted = {path.relative_to(site).as_posix() for path in (site / "wiki").rglob("*.html")}
+
+expected_routes = {f"wiki/{source[:-3]}.html" for source in sources}
+repeated = {route: count for route, count in collections.Counter(routes).items() if count > 1}
+
+print(f"source_pages: {len(sources)}")
+print(f"manifest_entries: {len(manifest)}")
+print(f"distinct_routes: {len(set(routes))}")
+print(f"emitted_wiki_html: {len(emitted)}")
+print(f"sources_not_in_manifest: {len(sources - declared)}")
+print(f"manifest_not_in_sources: {len(declared - sources)}")
+print(f"routes_repeated: {len(repeated)}")
+print(f"routes_not_emitted: {len(set(routes) - emitted)}")
+print(f"emitted_not_in_manifest: {len(emitted - set(routes))}")
+print(f"routes_not_source_derived: {len(set(routes) ^ expected_routes)}")
+
+failures = [
+    *(f"source not in manifest: {value}" for value in sorted(sources - declared)),
+    *(f"manifest source not on disk: {value}" for value in sorted(declared - sources)),
+    *(f"route emitted {count} times: {route}" for route, count in sorted(repeated.items())),
+    *(f"route has no HTML file: {value}" for value in sorted(set(routes) - emitted)),
+    *(f"HTML file has no manifest entry: {value}" for value in sorted(emitted - set(routes))),
+    *(f"route is not its source path: {value}" for value in sorted(set(routes) ^ expected_routes)),
+]
+if failures:
+    print("\n".join(failures))
+    raise SystemExit(1)

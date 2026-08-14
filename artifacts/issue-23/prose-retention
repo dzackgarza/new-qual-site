@@ -1,0 +1,148 @@
+"""Word-level comparison of every authored page against the page the build emitted.
+
+For each `wiki/**/*.md` this takes the multiset of prose words in the source and
+the multiset of prose words in the emitted `<main>`, and reports the words the
+source carries more often than the page does.
+
+Prose word means `[A-Za-z]{2,}` outside mathematics, code, and link targets.
+Mathematics is removed from both sides -- the source in TeX delimiters, the page
+in the `span.math` elements Pandoc writes -- because the two sides spell the same
+formula differently and a TeX diff is not a prose diff.
+
+On a fenced-div opener the class and the attribute names are markup, not prose:
+`:::{.fact title="Bezout's Identity"}` renders the title and nothing else, so the
+source side keeps the quoted values and drops the rest of the brace.
+
+This measures word retention. It does not decide whether two pages say the same
+thing; a page whose words all survive can still have been reordered or rewritten.
+
+Usage: python3 artifacts/issue-23/prose-retention <repo-root> [--detail N]
+"""
+
+from __future__ import annotations
+
+import collections
+import json
+import re
+import sys
+from pathlib import Path
+
+import html5lib
+
+root = Path(sys.argv[1]).resolve()
+detail = int(sys.argv[sys.argv.index("--detail") + 1]) if "--detail" in sys.argv else 0
+# `--residue` reports only what is unretained beyond the fenced-div titles, which
+# are counted separately because one cause explains all of them.
+residue_only = "--residue" in sys.argv
+
+WORD = re.compile(r"[A-Za-z]{2,}")
+FRONT_MATTER = re.compile(r"\A---\n.*?\n---\n", re.DOTALL)
+FENCED_CODE = re.compile(r"^```.*?^```", re.DOTALL | re.MULTILINE)
+DISPLAY_MATH = re.compile(r"\$\$.*?\$\$", re.DOTALL)
+INLINE_MATH = re.compile(r"(?<!\\)\$[^$\n]+?(?<!\\)\$")
+# The house dialect enables tex_math_single_backslash, so these are math too.
+BRACKET_MATH = re.compile(r"\\\[.*?\\\]", re.DOTALL)
+PAREN_MATH = re.compile(r"\\\(.*?\\\)", re.DOTALL)
+TEX_ENVIRONMENT = re.compile(r"\\begin\{(\w+\*?)\}.*?\\end\{\1\}", re.DOTALL)
+CODE_SPAN = re.compile(r"`[^`\n]+`")
+COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
+LINK_TARGET = re.compile(r"\]\([^)]*\)")
+DIV_ATTRIBUTES = re.compile(r"^(:{3,}\s*)\{(.*)\}\s*$", re.MULTILINE)
+QUOTED = re.compile(r"\"([^\"]*)\"")
+# `![[path]]` embeds an asset; `[[target|display]]` shows only the display half.
+WIKILINK_EMBED = re.compile(r"!\[\[[^\]]*\]\]")
+WIKILINK_TARGET = re.compile(r"\[\[[^\]|]*\|")
+# raw_tex is on, so a bare backslash command is markup: `\envlist` renders nothing.
+TEX_COMMAND = re.compile(r"\\[A-Za-z]+")
+
+
+def source_words(text: str, keep_div_titles: bool = True) -> collections.Counter[str]:
+    text = FRONT_MATTER.sub("", text)
+    text = COMMENT.sub(" ", text)
+    text = FENCED_CODE.sub(" ", text)
+    text = DIV_ATTRIBUTES.sub(
+        (lambda m: " ".join(QUOTED.findall(m.group(2)))) if keep_div_titles else (lambda m: " "),
+        text,
+    )
+    text = DISPLAY_MATH.sub(" ", text)
+    text = BRACKET_MATH.sub(" ", text)
+    text = PAREN_MATH.sub(" ", text)
+    text = TEX_ENVIRONMENT.sub(" ", text)
+    text = INLINE_MATH.sub(" ", text)
+    text = CODE_SPAN.sub(" ", text)
+    text = WIKILINK_EMBED.sub(" ", text)
+    text = WIKILINK_TARGET.sub("[[", text)
+    text = LINK_TARGET.sub("] ", text)
+    text = TEX_COMMAND.sub(" ", text)
+    return collections.Counter(WORD.findall(text))
+
+
+def rendered_words(path: Path) -> collections.Counter[str]:
+    document = html5lib.HTMLParser(strict=False).parse(path.read_text())
+    main = next(
+        element
+        for element in document.iter()
+        if isinstance(element.tag, str) and element.tag.rsplit("}", 1)[-1] == "main"
+    )
+
+    def collect(element, inside_math: bool) -> list[str]:
+        classes = element.attrib.get("class", "").split()
+        # html5lib gives a comment node a factory function as its tag.
+        tag = element.tag.rsplit("}", 1)[-1] if isinstance(element.tag, str) else "#comment"
+        math = inside_math or "math" in classes or tag in {"script", "style"}
+        pieces: list[str] = []
+        if not math and element.text:
+            pieces.extend(WORD.findall(element.text))
+        for child in element:
+            pieces.extend(collect(child, math))
+            if not inside_math and child.tail:
+                pieces.extend(WORD.findall(child.tail))
+        return pieces
+
+    return collections.Counter(collect(main, False))
+
+
+manifest = json.loads((root / "build" / "quarto" / "wiki-manifest.json").read_text())
+site = root / "build" / "quarto" / "_site"
+
+pages_with_deficit: list[tuple[str, int, collections.Counter[str]]] = []
+total_source = 0
+total_deficit = 0
+total_deficit_without_div_titles = 0
+
+for entry in sorted(manifest, key=lambda item: item["source"]):
+    text = (root / "wiki" / entry["source"]).read_text()
+    source = source_words(text, keep_div_titles=not residue_only)
+    page = rendered_words(site / entry["route"])
+    deficit = source - page
+    total_source += sum(source.values())
+    total_deficit += sum(deficit.values())
+    total_deficit_without_div_titles += sum((source_words(text, keep_div_titles=False) - page).values())
+    if deficit:
+        pages_with_deficit.append((entry["source"], sum(deficit.values()), deficit))
+
+print(f"pages_compared: {len(manifest)}")
+print(f"source_prose_words: {total_source}")
+print(f"words_not_retained: {total_deficit}")
+print(f"words_not_retained_excluding_div_titles: {total_deficit_without_div_titles}")
+print(f"pages_with_any_deficit: {len(pages_with_deficit)}")
+
+vocabulary = collections.Counter()
+for _, _, deficit in pages_with_deficit:
+    vocabulary.update(deficit)
+print(f"distinct_words_not_retained: {len(vocabulary)}")
+
+print("\nmost frequent unretained words:")
+for word, count in vocabulary.most_common(30):
+    print(f"  {count:5}  {word}")
+
+print("\npages by deficit:")
+for source, count, _ in sorted(pages_with_deficit, key=lambda item: -item[1])[: detail or 40]:
+    print(f"  {count:5}  {source}")
+
+if detail:
+    print("\nper-page detail:")
+    for source, count, deficit in sorted(pages_with_deficit, key=lambda item: -item[1])[:detail]:
+        print(f"\n{source}  ({count})")
+        for word, missing in deficit.most_common():
+            print(f"    {missing:4}  {word}")

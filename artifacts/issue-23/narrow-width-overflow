@@ -1,0 +1,87 @@
+"""Load every emitted wiki page in a 375px browser and record what overflows it.
+
+`replay-wiki-pages` looks at nine routes closely. This one looks at all of them
+shallowly: it loads each page at 375x812, waits for MathJax to finish, and
+reports the pages whose document is wider than the viewport, naming the widest
+element that sticks out.
+
+It measures layout width at one viewport. It does not judge readability, and it
+says nothing about any other width.
+
+Usage: python3 artifacts/issue-23/narrow-width-overflow <base-url> <manifest> <output.json>
+"""
+
+from __future__ import annotations
+
+import collections
+import json
+import sys
+from pathlib import Path
+from urllib.parse import quote
+
+from playwright.sync_api import sync_playwright
+
+BASE = sys.argv[1].rstrip("/")
+manifest = json.loads(Path(sys.argv[2]).read_text())
+OUTPUT = Path(sys.argv[3])
+
+WIDEST = """
+() => {
+  const w = document.documentElement.clientWidth;
+  // An overflowing leaf makes every ancestor overflow by the same amount, so
+  // report the deepest element holding the largest excess, not the outermost.
+  const depth = (n) => { let d = 0; while (n.parentElement) { d += 1; n = n.parentElement; } return d; };
+  const over = [...document.querySelectorAll('body *')]
+    .filter((n) => n.scrollWidth > n.clientWidth + 1 && n.clientWidth > 0)
+    .map((n) => ({tag: n.tagName, cls: (n.className || '').toString().split(' ')[0],
+                  excess: n.scrollWidth - n.clientWidth, depth: depth(n)}))
+    .sort((a, b) => b.excess - a.excess || b.depth - a.depth);
+  return {
+    overflow: document.documentElement.scrollWidth - w,
+    widest: over.length ? over[0] : null,
+  };
+}
+"""
+
+records = []
+with sync_playwright() as playwright:
+    browser = playwright.chromium.launch(executable_path="/bin/chromium")
+    context = browser.new_context(viewport={"width": 375, "height": 812})
+    page = context.new_page()
+    for entry in manifest:
+        url = f"{BASE}/{quote(entry['route'])}"
+        page.goto(url, wait_until="load")
+        try:
+            page.wait_for_function(
+                "() => [...document.querySelectorAll('span.math')]"
+                ".every((s) => s.querySelector('mjx-container'))",
+                timeout=15000,
+            )
+            settled = True
+        except Exception:
+            settled = False
+        measured = page.evaluate(WIDEST)
+        records.append({"route": entry["route"], "mathjax_settled": settled, **measured})
+    browser.close()
+
+OUTPUT.write_text(json.dumps(records, indent=2) + "\n")
+
+overflowing = [record for record in records if record["overflow"] > 0]
+print(f"pages_loaded: {len(records)}")
+print(f"mathjax_did_not_settle: {sum(1 for r in records if not r['mathjax_settled'])}")
+print(f"pages_overflowing_375px: {len(overflowing)}")
+if overflowing:
+    excess = [record["overflow"] for record in overflowing]
+    print(f"overflow_px_min_median_max: {min(excess)} {sorted(excess)[len(excess) // 2]} {max(excess)}")
+
+causes = collections.Counter(
+    f"{record['widest']['tag']}.{record['widest']['cls']}" if record["widest"] else "unattributed"
+    for record in overflowing
+)
+print("\nwidest overflowing element:")
+for cause, count in causes.most_common():
+    print(f"  {count:4}  {cause}")
+
+print("\nworst pages:")
+for record in sorted(overflowing, key=lambda r: -r["overflow"])[:15]:
+    print(f"  {record['overflow']:5}px  {record['route']}")

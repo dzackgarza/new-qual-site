@@ -1,0 +1,151 @@
+"""Drive a real browser over representative emitted wiki pages and measure them.
+
+One page load per route per width. For each load it records console errors and
+warnings, uncaught page errors, failed requests, the MathJax error count after
+typesetting settles, whether the document scrolls horizontally, and the counts
+of the page features issue #23 names: card references, figures that actually
+decoded, citation entries, and the navigation a reader uses to get here.
+
+Every screenshot is written so it can be looked at; the numbers below are not a
+substitute for looking.
+
+Usage: python3 artifacts/issue-23/replay-wiki-pages <base-url> <output-dir>
+"""
+
+from __future__ import annotations
+
+import json
+import sys
+from pathlib import Path
+
+from playwright.sync_api import sync_playwright
+
+BASE = sys.argv[1].rstrip("/")
+OUTPUT = Path(sys.argv[2])
+OUTPUT.mkdir(parents=True, exist_ok=True)
+
+WIDTHS = {"desktop-1440": (1440, 900), "mobile-375": (375, 812)}
+
+ROUTES = {
+    "wiki-root": "wiki/index.html",
+    "subject-algebra": "wiki/010_Algebra.html",
+    "cards-measure-theory": "wiki/20_Real_Analysis/600_Qual_Questions_UGA/0010_Measure Theory.html",
+    "figures-cauchy-integral": "wiki/30_Complex_Analysis/020_Applications of Cauchy/012 Cauchy Integral Formula.html",
+    "citations-algebra-syllabus": "wiki/10_Algebra/10_Basics/00_Syllabus.html",
+    "titled-divs-galois": "wiki/10_Algebra/060_Galois/36_Galois_Theory_Computations.html",
+    "cref-tips-and-techniques": "wiki/30_Complex_Analysis/010_Basics/000_Tips_Techs.html",
+    "block-refs-real-progress": "wiki/20_Real_Analysis/Real Analysis Qual Progress.html",
+    "card-target-occurrences": "tag/P-P2UWB.html",
+    "card-target-hint-and-solution": "tag/P-P2UAH.html",
+}
+
+# The card a wiki page references is where a hint or solution lives, so the
+# reference is only proved reachable if the target's disclosures actually open.
+DISCLOSURE_ROUTES = {"card-target-occurrences", "card-target-hint-and-solution"}
+
+MEASURE = """
+() => {
+  const main = document.querySelector('main');
+  const images = [...document.images];
+  const empty = [...document.querySelectorAll('li > p, li')]
+    .filter((n) => n.children.length === 0 && n.textContent.trim() === '').length;
+  return {
+    card_reference_links: document.querySelectorAll('a.wikilink').length,
+    page_links: document.querySelectorAll('main a[href]').length,
+    images_total: images.length,
+    images_decoded: images.filter((i) => i.naturalWidth > 0).length,
+    citation_entries: document.querySelectorAll('.csl-entry').length,
+    disclosure_elements: document.querySelectorAll('details').length,
+    toc_entries: document.querySelectorAll('#page-toc a').length,
+    breadcrumb_or_subtitle: (document.querySelector('.page-subtitle') || {}).textContent || '',
+    heading: (document.querySelector('main h1') || {}).textContent || '',
+    mjx_merror: document.querySelectorAll('mjx-merror').length,
+    typeset_math: document.querySelectorAll('mjx-container').length,
+    unrendered_math: [...document.querySelectorAll('span.math')]
+      .filter((s) => !s.querySelector('mjx-container')).length,
+    empty_list_items: empty,
+    literal_block_markers: (main ? main.innerText.match(/(^|\\n)\\^[0-9a-f]{6}(\\n|$)/g) || [] : []).length,
+    horizontal_overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+  };
+}
+"""
+
+results = []
+with sync_playwright() as playwright:
+    browser = playwright.chromium.launch(executable_path="/bin/chromium")
+    for width_name, (width, height) in WIDTHS.items():
+        context = browser.new_context(viewport={"width": width, "height": height})
+        for route_name, route in ROUTES.items():
+            page = context.new_page()
+            console: list[str] = []
+            errors: list[str] = []
+            failed: list[str] = []
+            page.on("console", lambda message: console.append(f"{message.type}: {message.text}") if message.type in {"error", "warning"} else None)
+            page.on("pageerror", lambda error: errors.append(str(error)))
+            page.on("requestfailed", lambda request: failed.append(f"{request.url} {request.failure}"))
+            response = page.goto(f"{BASE}/{route}", wait_until="load")
+            # MathJax 3 typesets a `span.math` by inserting an `mjx-container`
+            # inside it; the span stays. A page settles when none is left empty.
+            try:
+                page.wait_for_function(
+                    "() => [...document.querySelectorAll('span.math')]"
+                    ".every((s) => s.querySelector('mjx-container'))",
+                    timeout=30000,
+                )
+                mathjax = "typeset"
+            except Exception:
+                mathjax = "did not settle"
+            page.wait_for_timeout(500)
+            measured = page.evaluate(MEASURE)
+            shot = OUTPUT / f"{width_name}-{route_name}.png"
+            page.screenshot(path=str(shot), full_page=True)
+            if route_name in DISCLOSURE_ROUTES:
+                summaries = page.query_selector_all("details > summary")
+                for summary in summaries:
+                    summary.click()
+                page.wait_for_timeout(300)
+                measured["disclosures_clicked"] = len(summaries)
+                measured["disclosures_open"] = page.evaluate("() => document.querySelectorAll('details[open]').length")
+                measured["disclosure_labels"] = page.evaluate("() => [...document.querySelectorAll('details > summary')].map((s) => s.textContent.trim())")
+                open_shot = OUTPUT / f"{width_name}-{route_name}-open.png"
+                page.screenshot(path=str(open_shot), full_page=True)
+            results.append(
+                {
+                    "width": width_name,
+                    "route": route,
+                    "name": route_name,
+                    "status": response.status if response else None,
+                    "mathjax": mathjax,
+                    "console": console,
+                    "page_errors": errors,
+                    "failed_requests": failed,
+                    "screenshot": shot.name,
+                    **measured,
+                }
+            )
+            page.close()
+        context.close()
+    browser.close()
+
+(OUTPUT / "replay.json").write_text(json.dumps(results, indent=2) + "\n")
+
+print(f"loads: {len(results)}")
+print(f"non_200: {sum(1 for r in results if r['status'] != 200)}")
+print(f"page_errors: {sum(len(r['page_errors']) for r in results)}")
+print(f"console_errors_or_warnings: {sum(len(r['console']) for r in results)}")
+print(f"failed_requests: {sum(len(r['failed_requests']) for r in results)}")
+print(f"mathjax_did_not_settle: {sum(1 for r in results if r['mathjax'] != 'typeset')}")
+print(f"mjx_merror_total: {sum(r['mjx_merror'] for r in results)}")
+print(f"images_not_decoded: {sum(r['images_total'] - r['images_decoded'] for r in results)}")
+print(f"loads_with_horizontal_overflow: {sum(1 for r in results if r['horizontal_overflow'] > 0)}")
+print()
+for record in results:
+    print(
+        f"{record['width']:14} {record['name']:28} "
+        f"status={record['status']} math={record['typeset_math']:4} merror={record['mjx_merror']} "
+        f"cards={record['card_reference_links']:4} img={record['images_decoded']}/{record['images_total']} "
+        f"cite={record['citation_entries']} details={record['disclosure_elements']} toc={record['toc_entries']} "
+        f"untypeset={record['unrendered_math']} "
+        f"emptyli={record['empty_list_items']} blockmark={record['literal_block_markers']} "
+        f"overflow={record['horizontal_overflow']}"
+    )
