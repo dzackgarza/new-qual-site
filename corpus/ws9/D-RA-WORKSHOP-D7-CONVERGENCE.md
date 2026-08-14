@@ -6,7 +6,11 @@ title: 'Pointwise and uniform convergence of function sequences and series'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - sequences-of-functions
+  - series-of-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Theorem 6.1: Uniform limits of continuous functions are continuous'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-functions
+  - continuity
 relations: []
 review: draft
 ---

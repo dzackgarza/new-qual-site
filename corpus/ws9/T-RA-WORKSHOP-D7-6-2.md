@@ -6,7 +6,9 @@ title: 'Theorem 6.2: Weierstrass M-test'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

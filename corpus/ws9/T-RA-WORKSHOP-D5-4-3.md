@@ -6,7 +6,8 @@ title: 'Theorem 4.3: Taylor’s theorem with remainder'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations: []
 review: draft
 ---

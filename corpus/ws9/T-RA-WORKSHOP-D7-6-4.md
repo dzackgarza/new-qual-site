@@ -6,7 +6,10 @@ title: 'Theorem 6.4: Uniform convergence of differentiable functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - differentiation
+  - convergence-of-functions
 relations: []
 review: draft
 ---

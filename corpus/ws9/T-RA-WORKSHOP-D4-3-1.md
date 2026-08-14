@@ -6,7 +6,9 @@ title: 'Proposition 3.1: Equivalent characterizations of continuity'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - euclidean-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Theorem 5.3: Reduction of a Stieltjes integral to a Riemann integral'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - riemann-integrability
 relations: []
 review: draft
 ---

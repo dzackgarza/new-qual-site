@@ -6,7 +6,10 @@ title: 'Theorem 3.3: Uniform continuity on compact sets'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Theorem 5.5: Integral mean value theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - integrals
+  - continuity
 relations: []
 review: draft
 ---

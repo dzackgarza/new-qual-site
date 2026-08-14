@@ -6,7 +6,8 @@ title: 'Theorem 5.2: Riemann–Stieltjes integration by parts'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
 relations: []
 review: draft
 ---

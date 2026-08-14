@@ -77,6 +77,8 @@
   name: Covering Spaces
 - id: density
   name: Density
+- id: differentiation
+  name: Differentiation
 - id: egorov
   name: Egorov
 - id: entire-functions

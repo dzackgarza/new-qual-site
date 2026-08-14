@@ -6,7 +6,8 @@ title: 'Theorem 4.1: Fermat’s stationary-point theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Theorem 3.5: Discontinuities of monotone functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - limits
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Theorem 5.4: First fundamental theorem of calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - differentiation
+  - continuity
 relations: []
 review: draft
 ---

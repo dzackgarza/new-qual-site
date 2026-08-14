@@ -6,7 +6,10 @@ title: 'Theorem 6.3: Uniform limits and Riemann–Stieltjes integrals'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-integrals
+  - integrals
 relations: []
 review: draft
 ---

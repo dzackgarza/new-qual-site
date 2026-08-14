@@ -6,7 +6,9 @@ title: 'Theorem 4.2: Mean Value Theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations: []
 review: draft
 ---

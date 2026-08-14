@@ -6,7 +6,8 @@ title: 'Theorem 3.4: Intermediate Value Theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: 'Theorem 6.7: Stone–Weierstrass'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - function-spaces
+  - polynomials
+  - uniform-convergence
 relations: []
 review: draft
 ---

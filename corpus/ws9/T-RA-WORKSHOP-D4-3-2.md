@@ -6,7 +6,9 @@ title: 'Theorem 3.2: Continuous images of compact sets and extrema'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - compactness
 relations: []
 review: draft
 ---

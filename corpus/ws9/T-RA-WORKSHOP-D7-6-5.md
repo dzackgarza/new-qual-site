@@ -6,7 +6,10 @@ title: 'Theorem 6.5: Arzelà–Ascoli'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - arzela-ascoli
+  - compactness
+  - function-spaces
 relations: []
 review: draft
 ---
