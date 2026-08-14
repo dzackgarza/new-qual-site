@@ -1675,13 +1675,7 @@ def project(
             "Historical sittings, each a fixed ordered list of occurrences.",
         ]
     )
-    inline_values.extend(
-        _query_heading(item.query, topic_names)
-        for guide in guides
-        for section in guide.sections
-        for item in section.items
-        if isinstance(item, QueryItem)
-    )
+    inline_values.extend(_query_heading(item.query, topic_names) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
     inline_values.extend(value for guide in guides for section in guide.sections for value in (section.title, section.lede))
