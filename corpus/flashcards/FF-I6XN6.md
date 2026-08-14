@@ -24,5 +24,5 @@ review: draft
 
 4. $D_6$
 
-5. $\gens{a,b,c\suchthat a^2, b^2, c^2, abc}$
+5. The dicyclic group of order 12, $\gens{a, b \suchthat a^6, \, b^2 a^{-3}, \, bab\inv a}$
 :::

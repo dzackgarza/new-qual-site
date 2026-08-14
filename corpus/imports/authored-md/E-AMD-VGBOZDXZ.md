@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-VGBOZDXZ
 kind: exercise
-title: Show that every normal subgroup of a $p\dash$group is contained in…
+title: Show that every nontrivial normal subgroup of a finite $p\dash$group me…
 classification:
   areas:
   - algebra
@@ -15,7 +15,7 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that every normal subgroup of a $p\dash$group is contained in the center.
+Show that every nontrivial normal subgroup of a finite $p\dash$group meets the center nontrivially.
 
-> Hint: Consider $G/Z(G)$.
+> Hint: let $G$ act on the normal subgroup by conjugation and count the orbits.
 :::

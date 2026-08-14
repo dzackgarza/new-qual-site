@@ -13,4 +13,4 @@ relations: []
 review: draft
 ---
 
-- Show that the center of $S_n$ for $n\geq 4$ is nontrivial.
+- Show that the center of $S_n$ for $n\geq 4$ is trivial.

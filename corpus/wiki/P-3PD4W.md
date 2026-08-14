@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3PD4W
 kind: problem
-title: "Prove that the centre of a group of order $pr$ ($p$ prime) is not triv\u2026"
+title: "Prove that the centre of a group of order $p^r$ ($p$ prime) is not triv\u2026"
 classification:
   areas:
   - algebra
@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Prove that the centre of a group of order $pr$ ($p$ prime) is not trivial.
 
+Prove that the centre of a group of order $p^r$ ($p$ prime) is not trivial.

@@ -13,5 +13,7 @@ review: draft
 ---
 
 ::: {.definition title="How to determine sign of a permutation"}
-A cycle is odd iff it has an odd number of odd cycles (i.e. *even* number of elements in cycle).
+A permutation is odd iff its disjoint cycle decomposition contains an odd number of *even-length* cycles.
+
+A single cycle of length $k$ has sign $(-1)^{k-1}$, so one cycle is odd iff it has an *even* number of elements.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VX22R
 kind: problem
-title: "- Show that every normal subgroup of a $p\\dash$group is contained in t\u2026"
+title: "- Show that every nontrivial normal subgroup of a finite $p\\dash$group m\u2026"
 classification:
   areas:
   - algebra
@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-- Show that every normal subgroup of a $p\dash$group is contained in the center.
+- Show that every nontrivial normal subgroup of a finite $p\dash$group meets the center nontrivially.
 
-  > Hint: Consider $G/Z(G)$.
+  > Hint: let $G$ act on the normal subgroup by conjugation and count the orbits.

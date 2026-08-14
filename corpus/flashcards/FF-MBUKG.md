@@ -14,7 +14,7 @@ review: draft
 ---
 
 ::: {.fact title="Groups of Order 18"}
-2 Abelian, 2 Nonabelian
+2 Abelian, 3 Nonabelian
 
 1. $\ZZ/18\ZZ$
 
@@ -23,4 +23,6 @@ review: draft
 3. $D_9$
 
 4. $S_3 \cross \ZZ/3\ZZ$
+
+5. The generalized dihedral group $(\ZZ/3\ZZ)^2 \semidirect \ZZ/2\ZZ$, with the order-two factor acting by inversion
 :::

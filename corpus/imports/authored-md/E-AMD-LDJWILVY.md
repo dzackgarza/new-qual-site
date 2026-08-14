@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-LDJWILVY
 kind: exercise
-title: Show that if $H \leq N_G(K)$ then $HK \leq H$, and give a…
+title: Show that if $H \leq N_G(K)$ then $HK \leq G$, and give a…
 classification:
   areas:
   - algebra
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that if $H \leq N_G(K)$ then $HK \leq H$, and give a counterexample showing that this condition is necessary.
+Show that if $H \leq N_G(K)$ then $HK \leq G$, and give a counterexample showing that this condition is necessary.
 :::

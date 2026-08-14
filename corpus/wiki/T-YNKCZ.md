@@ -20,7 +20,7 @@ We have $G \cong \prod_{i=1}^n H_i$ when
 
 - $G = H_1 \cdots H_n$
 
-- $H_k \intersect H_1 \cdots \hat{H_k} \cdots H_n = \emptyset$
+- $H_k \intersect H_1 \cdots \hat{H_k} \cdots H_n = \theset{e}$
 
 > Note on notation: intersect $H_k$ with the amalgam *leaving out* $H_k$.
 :::

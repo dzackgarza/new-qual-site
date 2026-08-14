@@ -15,9 +15,9 @@ review: draft
 ---
 
 ::: {.theorem title="Recognizing Direct Products"}
-When there exist two subgroups $H, K \leq G$ such that
+$G \cong H\cross K$ when there exist two subgroups $H, K \leq G$ such that
 
-1. $H\intersect K = \emptyset$
+1. $H\intersect K = \theset{e}$
 
 2. $G = HK$
 

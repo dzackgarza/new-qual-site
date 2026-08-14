@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.exercise}
-Let $P\in \syl_p(H)$ where $H\normal G$ and show that $P\intersect H \in \syl_p(H)$.
+Let $P\in \syl_p(G)$ where $H\normal G$ and show that $P\intersect H \in \syl_p(H)$.
 :::

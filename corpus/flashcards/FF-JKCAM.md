@@ -22,7 +22,7 @@ review: draft
 
 3. $D_{10}$
 
-4. $\ZZ/5\ZZ \semidirect \ZZ/4\ZZ$
+4. $\ZZ/5\ZZ \semidirect \ZZ/4\ZZ$ with $\ZZ/4\ZZ$ acting faithfully, the affine group $\mathrm{AGL}_1(\FF_5)$
 
-5. $\gens{a,b,c \suchthat a^5, b^2,c^2}$
+5. The dicyclic group of order 20, $\gens{a, b \suchthat a^{10}, \, b^2 a^{-5}, \, bab\inv a}$
 :::
