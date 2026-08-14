@@ -6,7 +6,10 @@ title: "Residues at $\\infty$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - singularities
+  - laurent-series
 relations: []
 review: draft
 ---

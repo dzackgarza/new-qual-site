@@ -6,7 +6,10 @@ title: "Applying Jordan's lemma"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Computing residues: $1/z^2\\sin(z)$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - laurent-series
+  - poles
+  - trigonometry
 relations: []
 review: draft
 ---

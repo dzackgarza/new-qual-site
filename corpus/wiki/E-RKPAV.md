@@ -6,7 +6,10 @@ title: "Prove that if $f$ is holomorphic on a connected open set $\\Omega$ and\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - cauchy-riemann
+  - holomorphic-functions
 relations: []
 review: draft
 ---

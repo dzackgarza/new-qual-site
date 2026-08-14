@@ -6,7 +6,10 @@ title: "Show that $\\sin(z) = z$ has infinitely many solutions in $\\CC$."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - picard
+  - entire-functions
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "SS 1.13: Constant real/imaginary/magnitude implies constant"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - open-mapping-theorem
+  - holomorphic-functions
 relations: []
 review: draft
 ---

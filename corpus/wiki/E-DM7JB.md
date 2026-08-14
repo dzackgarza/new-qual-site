@@ -6,7 +6,11 @@ title: "Find all functions on the Riemann sphere that have a simple\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - meromorphic-functions
+  - poles
+  - principal-parts
+  - riemann-surfaces
 relations: []
 review: draft
 ---

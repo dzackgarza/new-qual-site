@@ -6,7 +6,11 @@ title: "Showing singularities are removable"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - laurent-series
+  - trigonometry
+  - singularities
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that if $f$ is holomorphic on $\\DD$ then $f$ has a power series e\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - uniform-convergence
+  - holomorphic-functions
 relations: []
 review: draft
 ---

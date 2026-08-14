@@ -6,7 +6,11 @@ title: "Let $P, Q$ be polynomials with no common zeros. Assume $a$ is a root\u20
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - principal-parts
+  - poles
+  - residues
+  - polynomials
 relations: []
 review: draft
 ---

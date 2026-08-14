@@ -6,7 +6,10 @@ title: "Show that the Dirichlet function $f(x) = \\chi_{I \\intersect \\QQ}$ is 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Laurent expansions on annuli"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
+  - principal-parts
+  - residues
 relations: []
 review: draft
 ---

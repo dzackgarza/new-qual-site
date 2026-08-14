@@ -6,7 +6,11 @@ title: "$x/(x^2+4x+13)^2$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - poles
 relations: []
 review: draft
 ---

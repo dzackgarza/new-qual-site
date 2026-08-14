@@ -6,7 +6,11 @@ title: "Residues and classifying singularities"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - singularities
+  - residues
+  - poles
+  - removable-singularities
 relations: []
 review: draft
 ---

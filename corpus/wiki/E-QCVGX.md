@@ -6,7 +6,10 @@ title: "Laurent expanding tricky exponentials"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - power-series
+  - poles
 relations: []
 review: draft
 ---

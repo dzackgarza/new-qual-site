@@ -6,7 +6,9 @@ title: "Cosine expansion in $z\\inv$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - trigonometry
 relations: []
 review: draft
 ---

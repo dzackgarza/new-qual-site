@@ -6,7 +6,9 @@ title: "SS 3.2.15"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - open-mapping-theorem
 relations: []
 review: draft
 ---

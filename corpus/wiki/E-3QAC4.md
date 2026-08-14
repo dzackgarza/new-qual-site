@@ -6,7 +6,9 @@ title: "f and fbar holomorphic implies constant"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - holomorphic-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Sum formulas: $1/n^2+a^2$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - series-of-numbers
+  - hyperbolic-functions
+  - meromorphic-functions
 relations: []
 review: draft
 ---

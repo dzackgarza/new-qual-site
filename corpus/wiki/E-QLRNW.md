@@ -6,7 +6,11 @@ title: "Uniform limits of derivatives, term-by-term differentiation"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
+  - cauchy-integral-formula
+  - power-series
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Finding harmonic conjugates"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - cauchy-riemann
 relations: []
 review: draft
 ---

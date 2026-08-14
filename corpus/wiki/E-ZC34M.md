@@ -6,7 +6,9 @@ title: "Let $f: \\Omega\\to \\CC$ be holomorphic and suppose there is a $z_0 \\i
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - zeros
 relations: []
 review: draft
 ---

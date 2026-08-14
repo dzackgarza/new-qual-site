@@ -6,7 +6,11 @@ title: "No bijective conformal maps from a disc to an annulus"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - biholomorphisms
+  - conformal-maps
+  - removable-singularities
+  - open-mapping-theorem
 relations: []
 review: draft
 ---

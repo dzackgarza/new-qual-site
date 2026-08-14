@@ -6,7 +6,11 @@ title: "Images of sequences of poles converge to anything"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - casorati-weierstrass
+  - poles
+  - singularities
+  - identity-theorem
 relations: []
 review: draft
 ---

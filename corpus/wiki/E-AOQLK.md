@@ -6,7 +6,10 @@ title: "Residues using partial fractions/principal parts"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - principal-parts
+  - poles
 relations: []
 review: draft
 ---

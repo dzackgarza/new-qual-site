@@ -6,7 +6,9 @@ title: "Modulus of $e^z$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - complex-logarithm
+  - entire-functions
 relations: []
 review: draft
 ---

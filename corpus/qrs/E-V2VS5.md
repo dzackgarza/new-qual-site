@@ -6,7 +6,11 @@ title: "Show that the complex zeros of $f(z) \\da \\sin(\\pi z)$ are exactly $\\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - residues
+  - trigonometry
+  - poles
 relations: []
 review: draft
 ---

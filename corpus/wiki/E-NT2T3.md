@@ -6,7 +6,10 @@ title: "Singularities of $1\\over e^z - 1$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - poles
+  - residues
+  - singularities
 relations: []
 review: draft
 ---

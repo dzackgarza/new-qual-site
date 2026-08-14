@@ -6,7 +6,9 @@ title: "Orders of zeros"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - power-series
 relations: []
 review: draft
 ---

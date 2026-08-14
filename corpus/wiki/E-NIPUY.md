@@ -6,7 +6,9 @@ title: "Show $f(x) = x^{-n}$ for $n\\in \\ZZ_{\\geq 0}$ is uniformly continuous 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - continuity
 relations: []
 review: draft
 ---

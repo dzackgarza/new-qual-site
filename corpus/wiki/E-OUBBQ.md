@@ -6,7 +6,9 @@ title: "Uniform continuity of $x^n$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - continuity
 relations: []
 review: draft
 ---

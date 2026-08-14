@@ -6,7 +6,11 @@ title: "\\int_\\RR {1 \\over (1+x^2)^2} \\dx"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - poles
 relations: []
 review: draft
 ---

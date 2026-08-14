@@ -6,7 +6,10 @@ title: "Show that $B(z, w) = {\\Gamma(z) \\Gamma(w) \\over \\Gamma(z+w)}$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
+  - integrals
+  - convolution
 relations: []
 review: draft
 ---

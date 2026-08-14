@@ -6,7 +6,10 @@ title: "Removable singularities for derivatives"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - cauchy-estimates
+  - singularities
 relations: []
 review: draft
 ---

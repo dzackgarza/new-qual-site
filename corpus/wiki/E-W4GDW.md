@@ -6,7 +6,9 @@ title: "Find the conformal map that takes the upper half-plane conformally ont\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - trigonometry
 relations: []
 review: draft
 ---

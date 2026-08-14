@@ -6,7 +6,12 @@ title: "Sum formulas: 1/(n-a)^2"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - meromorphic-functions
+  - principal-parts
+  - poles
+  - trigonometry
+  - series-of-functions
 relations: []
 review: draft
 ---

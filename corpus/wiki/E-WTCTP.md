@@ -6,7 +6,11 @@ title: "Detecting injectivity using derivatives"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - rouche
+  - argument-principle
+  - open-mapping-theorem
 relations: []
 review: draft
 ---

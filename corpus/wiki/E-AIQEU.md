@@ -6,7 +6,11 @@ title: "$e^{ax}\\operatorname{sech}(z)$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - hyperbolic-functions
 relations: []
 review: draft
 ---

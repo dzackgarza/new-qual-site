@@ -6,7 +6,11 @@ title: "Primitive in the complement of a branch cut"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - complex-logarithm
+  - cauchy-integral-theorem
 relations: []
 review: draft
 ---

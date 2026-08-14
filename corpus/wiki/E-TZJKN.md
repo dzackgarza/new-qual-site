@@ -6,7 +6,10 @@ title: "Holomorphic functions have harmonic components"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - cauchy-riemann
+  - holomorphic-functions
 relations: []
 review: draft
 ---

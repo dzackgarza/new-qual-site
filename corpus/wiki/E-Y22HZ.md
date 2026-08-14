@@ -6,7 +6,10 @@ title: "Uniform limit of holomorphic derivatives is the derivative"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - cauchy-estimates
+  - sequences-of-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Show that there is an entire function $h$ such that"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - meromorphic-functions
+  - principal-parts
+  - removable-singularities
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Show that if $\\theset{f_n}$ is a sequence of holomorphic functions con\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
+  - holomorphic-functions
+  - morera
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Finitely many poles"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - poles
+  - essential-singularities
+  - meromorphic-functions
+  - riemann-surfaces
 relations: []
 review: draft
 ---

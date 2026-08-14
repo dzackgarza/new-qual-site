@@ -6,7 +6,10 @@ title: "$\\cos(x) / x^2 + b^2$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

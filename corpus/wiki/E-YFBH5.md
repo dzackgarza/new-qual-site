@@ -6,7 +6,11 @@ title: "Suppose $f:\\DD\\to\\DD$ is analytic, has a single zero of order $k$ at 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - blaschke-factors
+  - schwarz-lemma
+  - zeros
+  - maximum-modulus-principle
 relations: []
 review: draft
 ---

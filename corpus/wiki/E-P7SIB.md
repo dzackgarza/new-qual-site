@@ -6,7 +6,8 @@ title: "Trig identities"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
 relations: []
 review: draft
 ---

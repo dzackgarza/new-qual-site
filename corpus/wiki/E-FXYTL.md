@@ -6,7 +6,9 @@ title: "Show that if $fg \\equiv 0$ on a domain $\\Omega$ then either $f\\equiv 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - identity-theorem
+  - zeros
 relations: []
 review: draft
 ---

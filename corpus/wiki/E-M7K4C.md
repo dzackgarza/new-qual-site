@@ -6,7 +6,11 @@ title: "Cauchy formula and principal parts"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - residues
+  - principal-parts
+  - contour-integration
 relations: []
 review: draft
 ---

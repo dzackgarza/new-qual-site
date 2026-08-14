@@ -6,7 +6,11 @@ title: "Zeros of $\\sin(\\pi z)$ and singularities of $\\csc(\\pi z)$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - residues
+  - trigonometry
+  - poles
 relations: []
 review: draft
 ---

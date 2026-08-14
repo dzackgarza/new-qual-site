@@ -6,7 +6,10 @@ title: "Using derivatives"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - schwarz-lemma
+  - cauchy-estimates
+  - zeros
 relations: []
 review: draft
 ---

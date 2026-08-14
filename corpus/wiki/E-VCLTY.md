@@ -6,7 +6,10 @@ title: "Laurent expansions about different points"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
+  - principal-parts
 relations: []
 review: draft
 ---

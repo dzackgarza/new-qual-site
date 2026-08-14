@@ -6,7 +6,12 @@ title: "$1/1+a^2+2a\\cos(\\theta)$, Poisson kernels"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
+  - harmonic-functions
 relations: []
 review: draft
 ---

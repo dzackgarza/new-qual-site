@@ -6,7 +6,10 @@ title: "Show that ${1\\over z} \\sum_{k=1}^\\infty {z^k \\over k}$ converges on 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - power-series
+  - series-of-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that $\\del_{\\log}(fg) = \\del_{\\log} f + \\del_{\\log} g$, i.e."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - argument-principle
+  - poles
+  - zeros
 relations: []
 review: draft
 ---

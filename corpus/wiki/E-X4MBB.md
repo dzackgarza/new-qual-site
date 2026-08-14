@@ -6,7 +6,9 @@ title: "Finding complex roots"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Derivatives detect multiplicity of zeros"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - power-series
+  - holomorphic-functions
 relations: []
 review: draft
 ---

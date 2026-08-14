@@ -6,7 +6,11 @@ title: "Integral computation"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - poles
 relations: []
 review: draft
 ---

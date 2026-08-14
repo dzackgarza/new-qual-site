@@ -6,7 +6,11 @@ title: "$1/\\sqrt{x^2-1}$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

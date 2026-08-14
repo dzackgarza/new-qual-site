@@ -6,7 +6,10 @@ title: "Application of summation by parts"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - power-series
+  - series-of-functions
 relations: []
 review: draft
 ---

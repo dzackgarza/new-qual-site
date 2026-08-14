@@ -6,7 +6,9 @@ title: "Find all entire functions $f$ such that $f(x) = e^x$ on $\\RR$."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - identity-theorem
+  - entire-functions
 relations: []
 review: draft
 ---

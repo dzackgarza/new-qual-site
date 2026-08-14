@@ -6,7 +6,9 @@ title: "Residue of $1/z^n+1$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - poles
 relations: []
 review: draft
 ---

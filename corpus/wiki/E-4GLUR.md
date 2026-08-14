@@ -6,7 +6,11 @@ title: "Singularities of of $\\sin(z)/z$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - laurent-series
+  - trigonometry
+  - singularities
 relations: []
 review: draft
 ---

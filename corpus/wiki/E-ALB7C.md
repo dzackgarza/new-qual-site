@@ -6,7 +6,10 @@ title: "Poles of derivatives"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - poles
+  - laurent-series
+  - principal-parts
 relations: []
 review: draft
 ---

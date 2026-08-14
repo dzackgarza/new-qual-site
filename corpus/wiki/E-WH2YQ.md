@@ -6,7 +6,9 @@ title: "Fix $a,b\\in \\CC$ and $\\theta$, and describe the locus"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
+  - fractional-linear-transformations
 relations: []
 review: draft
 ---

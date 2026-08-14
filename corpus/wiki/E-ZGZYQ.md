@@ -6,7 +6,11 @@ title: "$\\sin(x)/x$ and $\\cos(x)/x$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

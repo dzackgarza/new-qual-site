@@ -6,7 +6,9 @@ title: "Show that a real-valued holomorphic function is constant."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - holomorphic-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Complement of a segment"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - complex-logarithm
+  - fractional-linear-transformations
 relations: []
 review: draft
 ---

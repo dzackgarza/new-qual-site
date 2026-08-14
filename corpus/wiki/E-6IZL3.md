@@ -6,7 +6,9 @@ title: "Bounded harmonic functions"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - maximum-modulus-principle
 relations: []
 review: draft
 ---

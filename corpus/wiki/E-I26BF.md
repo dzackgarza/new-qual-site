@@ -6,7 +6,10 @@ title: "Injective implies nonvanishing derivative"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - biholomorphisms
+  - zeros
+  - open-mapping-theorem
 relations: []
 review: draft
 ---

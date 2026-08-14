@@ -6,7 +6,9 @@ title: "Expanding Laurent series in different regions"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
 relations: []
 review: draft
 ---

@@ -6,7 +6,12 @@ title: "Define $f(z) &= {\\pi^2 \\over \\sin^2 \\qty{\\pi z} } \\\\ g(z) &= \\su
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - meromorphic-functions
+  - poles
+  - principal-parts
+  - identity-theorem
+  - trigonometry
 relations: []
 review: draft
 ---

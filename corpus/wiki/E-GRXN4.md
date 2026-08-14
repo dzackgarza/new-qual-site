@@ -6,7 +6,11 @@ title: "True/false"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - poles
+  - essential-singularities
+  - laurent-series
+  - counterexamples
 relations: []
 review: draft
 ---

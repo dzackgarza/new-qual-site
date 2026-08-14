@@ -6,7 +6,10 @@ title: "Expansion at an essential singularity"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - essential-singularities
+  - power-series
 relations: []
 review: draft
 ---

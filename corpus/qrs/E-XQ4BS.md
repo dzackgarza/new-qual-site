@@ -6,7 +6,9 @@ title: "Show that $h(z) = z + 3 + 2e^z$ has one root in $\\ts{ \\Re(z) \\leq 0}$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

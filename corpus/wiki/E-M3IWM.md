@@ -6,7 +6,10 @@ title: "Stein/Shakarchi 1.20: Series convergence on the circle"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - power-series
+  - series-of-functions
 relations: []
 review: draft
 ---

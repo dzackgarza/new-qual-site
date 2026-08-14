@@ -6,7 +6,10 @@ title: "Uniform limit theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - continuity
+  - compactness
 relations: []
 review: draft
 ---

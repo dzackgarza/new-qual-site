@@ -6,7 +6,11 @@ title: "Residue from Laurent expansion: $1/(z - \\sin(z))$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - laurent-series
+  - poles
+  - trigonometry
 relations: []
 review: draft
 ---

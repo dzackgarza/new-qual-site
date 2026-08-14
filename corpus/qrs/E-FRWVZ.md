@@ -6,7 +6,10 @@ title: "$\\int_{0}^{\\infty} \\frac{\\cos (x)}{x^{2}+b^{2}} d x=\\frac{\\pi \\ma
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

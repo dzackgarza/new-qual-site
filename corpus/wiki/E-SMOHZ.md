@@ -6,7 +6,11 @@ title: "Limit point of zeros is an essential singularity"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - essential-singularities
+  - identity-theorem
+  - zeros
+  - singularities
 relations: []
 review: draft
 ---

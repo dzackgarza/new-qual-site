@@ -6,7 +6,11 @@ title: "$1/a+b\\cos(\\theta)$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

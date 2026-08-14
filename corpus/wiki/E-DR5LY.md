@@ -6,7 +6,11 @@ title: "Hadamard expansion of $\\sin$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - weierstrass-factorization
+  - entire-functions
+  - zeros
+  - trigonometry
 relations: []
 review: draft
 ---

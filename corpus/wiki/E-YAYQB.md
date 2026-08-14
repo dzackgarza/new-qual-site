@@ -6,7 +6,10 @@ title: "Disc minus a slit"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - fractional-linear-transformations
+  - complex-logarithm
 relations: []
 review: draft
 ---

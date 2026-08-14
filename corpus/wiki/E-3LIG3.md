@@ -6,7 +6,9 @@ title: "Suppose that $g$ is entire and satisfies the functional\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - picard
+  - entire-functions
 relations: []
 review: draft
 ---

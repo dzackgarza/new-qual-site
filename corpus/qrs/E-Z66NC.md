@@ -6,7 +6,11 @@ title: "\\int_{1}^{\\infty} \\frac{d x}{x \\sqrt{x^{2}-1}} = {\\pi \\over 2}"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

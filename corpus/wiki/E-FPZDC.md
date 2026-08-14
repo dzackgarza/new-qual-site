@@ -6,7 +6,10 @@ title: "Show that the gamma function is analytic in the half-plane $\\Re (s)>0$\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
+  - holomorphic-functions
+  - residues
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "$e^{x/2} / 1+e^x,$ replication"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

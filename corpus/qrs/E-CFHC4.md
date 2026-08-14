@@ -6,7 +6,10 @@ title: "\\int_\\RR {1 \\over (1+x)^2} = {\\pi \\over 2}"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

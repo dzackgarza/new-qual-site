@@ -6,7 +6,10 @@ title: "Proving functions are harmonic using components of holomorphic functions
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - cauchy-riemann
+  - holomorphic-functions
 relations: []
 review: draft
 ---

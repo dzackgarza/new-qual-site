@@ -6,7 +6,9 @@ title: "Show that if $f$ is a differentiable contraction, $f$ is uniformly con\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - continuity
 relations: []
 review: draft
 ---

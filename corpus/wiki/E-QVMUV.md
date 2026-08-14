@@ -6,7 +6,10 @@ title: "Cauchy integral formula for coefficients"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - cauchy-integral-formula
+  - convergence-tests
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Cauchy formula and $\\sinh$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - contour-integration
+  - hyperbolic-functions
 relations: []
 review: draft
 ---

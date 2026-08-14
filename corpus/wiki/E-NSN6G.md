@@ -6,7 +6,11 @@ title: "Locally uniform limit theorem for holomorphic functions"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - cauchy-estimates
+  - sequences-of-functions
+  - holomorphic-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Let $\\lambda = {1\\over 2}\\qty{1 + i \\sqrt{3}}$ and find a map"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - fractional-linear-transformations
 relations: []
 review: draft
 ---

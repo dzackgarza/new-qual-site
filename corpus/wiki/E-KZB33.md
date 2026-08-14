@@ -6,7 +6,10 @@ title: "Show that if $f$ is injective, then $f'$ is nowhere vanishing and thus\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - biholomorphisms
+  - zeros
+  - conformal-maps
 relations: []
 review: draft
 ---

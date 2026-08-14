@@ -6,7 +6,10 @@ title: "Fixed points: multiple"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - schwarz-lemma
+  - blaschke-factors
 relations: []
 review: draft
 ---

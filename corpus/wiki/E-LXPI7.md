@@ -6,7 +6,11 @@ title: "Constructing functions with specified singularities"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - singularities
+  - essential-singularities
+  - poles
+  - removable-singularities
 relations: []
 review: draft
 ---

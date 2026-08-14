@@ -6,7 +6,11 @@ title: "Show that $\\sum_{k\\in \\ZZ} {1\\over \\qty{ k - {1\\over 2}}^2 } = \\p
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - series-of-numbers
+  - trigonometry
+  - meromorphic-functions
 relations: []
 review: draft
 ---

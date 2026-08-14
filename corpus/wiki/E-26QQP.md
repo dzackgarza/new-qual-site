@@ -6,7 +6,11 @@ title: "Show that $\\sim_{k\\in \\ZZ} { (-1)^k \\over (k+a)^2} = \\pi^2 \\cos(\\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - meromorphic-functions
+  - series-of-numbers
+  - trigonometry
 relations: []
 review: draft
 ---

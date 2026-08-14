@@ -6,7 +6,11 @@ title: "Show that $\\sum_{k\\geq 1}{1\\over k^2 + a^2} = {1\\over 2}{\\pi \\coth
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - series-of-numbers
+  - hyperbolic-functions
+  - meromorphic-functions
 relations: []
 review: draft
 ---

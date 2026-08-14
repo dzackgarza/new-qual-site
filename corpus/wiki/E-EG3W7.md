@@ -6,7 +6,10 @@ title: "Show that if $f$ is non-constant, then $f'$ is analytic and the zeros\u2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - holomorphic-functions
+  - identity-theorem
 relations: []
 review: draft
 ---

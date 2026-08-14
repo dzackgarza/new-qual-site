@@ -6,7 +6,10 @@ title: "Power series are continuous"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - continuity
+  - uniform-convergence
 relations: []
 review: draft
 ---

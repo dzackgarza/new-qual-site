@@ -6,7 +6,9 @@ title: "Show that if $f$ is constant on any closed disk $r\\bar\\DD$ for $r<1$,\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - identity-theorem
+  - maximum-modulus-principle
 relations: []
 review: draft
 ---

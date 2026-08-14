@@ -6,7 +6,10 @@ title: "Convergence of a $\\ZZ\\dash$index series"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - convergence-tests
+  - power-series
 relations: []
 review: draft
 ---

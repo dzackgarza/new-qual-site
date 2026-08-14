@@ -6,7 +6,9 @@ title: "Show that if $\\abs{f} = 0$ on $\\bd \\Omega$ then either $f$ is constan
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - zeros
 relations: []
 review: draft
 ---

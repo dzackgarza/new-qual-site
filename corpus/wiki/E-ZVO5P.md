@@ -6,7 +6,9 @@ title: "Primitives imply vanishing integral"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - contour-integration
+  - cauchy-integral-theorem
 relations: []
 review: draft
 ---

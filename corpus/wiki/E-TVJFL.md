@@ -6,7 +6,10 @@ title: "Zero derivative implies constant"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - cauchy-riemann
+  - connectedness
 relations: []
 review: draft
 ---

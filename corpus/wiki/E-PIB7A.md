@@ -6,7 +6,10 @@ title: "Cancelling poles"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - blaschke-factors
+  - poles
+  - meromorphic-functions
 relations: []
 review: draft
 ---

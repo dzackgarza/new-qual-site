@@ -6,7 +6,10 @@ title: "$xe^{2ix}/x^2-1$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

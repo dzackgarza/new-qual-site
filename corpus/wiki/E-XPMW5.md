@@ -6,7 +6,12 @@ title: "Classifying singularities"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - singularities
+  - laurent-series
+  - removable-singularities
+  - essential-singularities
+  - poles
 relations: []
 review: draft
 ---

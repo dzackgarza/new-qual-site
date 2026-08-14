@@ -6,7 +6,10 @@ title: "Holomorphic functions have discrete zeros"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - identity-theorem
+  - power-series
 relations: []
 review: draft
 ---

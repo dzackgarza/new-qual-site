@@ -6,7 +6,10 @@ title: "Laurent expanding exponentials"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - power-series
+  - entire-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Expansion for a reciprocal"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - power-series
+  - poles
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Orders of poles"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - poles
+  - laurent-series
+  - singularities
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Determine where the following real-valued function is or is not unifor\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

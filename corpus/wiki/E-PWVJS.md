@@ -6,7 +6,10 @@ title: "Show that $\\logd(fg) = \\logd f + \\logd g$, i.e."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - argument-principle
+  - poles
+  - zeros
 relations: []
 review: draft
 ---

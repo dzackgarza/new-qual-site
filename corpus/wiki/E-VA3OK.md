@@ -6,7 +6,11 @@ title: "Computing $\\zeta(2)$ by integration"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - series-of-numbers
+  - trigonometry
+  - riemann-zeta
 relations: []
 review: draft
 ---

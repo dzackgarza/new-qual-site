@@ -6,7 +6,10 @@ title: "Injectivity relates to derivatives"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - open-mapping-theorem
+  - argument-principle
 relations: []
 review: draft
 ---

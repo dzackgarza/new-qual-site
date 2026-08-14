@@ -6,7 +6,10 @@ title: "Find the radius of convergences for the power series\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - convergence-tests
+  - complex-logarithm
 relations: []
 review: draft
 ---
