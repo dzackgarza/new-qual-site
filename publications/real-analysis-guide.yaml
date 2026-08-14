@@ -40,55 +40,55 @@ sections:
             - convergence-tests
             - bernoulli
             - countability
-          limit: 9
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *numbers
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *numbers
-          limit: 10
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics: *numbers
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: lemma
           topics: *numbers
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: corollary
           topics: *numbers
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *numbers
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *numbers
-          limit: 66
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *numbers
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: metric-spaces
@@ -124,61 +124,61 @@ sections:
             - euclidean-spaces
             - cantor-set
             - density
-          limit: 18
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *metric
-          limit: 16
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *metric
-          limit: 17
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics: *metric
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: corollary
           topics: *metric
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics: *metric
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: proof
           topics: *metric
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *metric
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *metric
-          limit: 88
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *metric
-          limit: 6
+          limit: 500
           review:
             mode: any
   - slug: continuity
@@ -206,61 +206,61 @@ sections:
             - continuity
             - uniform-continuity
             - fixed-points
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *cts
-          limit: 19
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *cts
-          limit: 9
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics: *cts
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: corollary
           topics: *cts
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: lemma
           topics: *cts
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: proof
           topics: *cts
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *cts
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *cts
-          limit: 74
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *cts
-          limit: 3
+          limit: 500
           review:
             mode: any
   - slug: differentiation
@@ -288,43 +288,43 @@ sections:
             - mean-value-theorem
             - variation
             - calculus
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *diff
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics: *diff
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: proof
           topics: *diff
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *diff
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *diff
-          limit: 64
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *diff
-          limit: 2
+          limit: 500
           review:
             mode: any
   - slug: riemann-stieltjes-integration
@@ -349,25 +349,25 @@ sections:
           kind: theorem
           topics: &rs
             - riemann-integrability
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *rs
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics: *rs
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *rs
-          limit: 19
+          limit: 500
           review:
             mode: any
   - slug: sequences-and-series-of-functions
@@ -411,73 +411,73 @@ sections:
             - trigonometry
             - roots-of-unity
             - counterexamples
-          limit: 9
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *funcseq
-          limit: 19
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *funcseq
-          limit: 26
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics: *funcseq
-          limit: 28
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics: *funcseq
-          limit: 14
+          limit: 500
           review:
             mode: any
       - query:
           kind: corollary
           topics: *funcseq
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: lemma
           topics: *funcseq
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: strategy
           topics: *funcseq
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: proof
           topics: *funcseq
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *funcseq
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *funcseq
-          limit: 129
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *funcseq
-          limit: 8
+          limit: 500
           review:
             mode: any
   - slug: measure-and-measurable-functions
@@ -517,61 +517,61 @@ sections:
             - continuity-of-measure
             - absolute-continuity
             - radon-nikodym
-          limit: 26
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *measure
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *measure
-          limit: 31
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics: *measure
-          limit: 9
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics: *measure
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: strategy
           topics: *measure
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: proof
           topics: *measure
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *measure
-          limit: 14
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *measure
-          limit: 100
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *measure
-          limit: 8
+          limit: 500
           review:
             mode: any
   - slug: the-lebesgue-integral
@@ -607,61 +607,61 @@ sections:
             - fubini-tonelli
             - small-tails
             - maximal-functions
-          limit: 5
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *lebesgue
-          limit: 26
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *lebesgue
-          limit: 25
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics: *lebesgue
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics: *lebesgue
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: strategy
           topics: *lebesgue
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: proof
           topics: *lebesgue
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *lebesgue
-          limit: 10
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *lebesgue
-          limit: 151
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *lebesgue
-          limit: 8
+          limit: 500
           review:
             mode: any
   - slug: lp-spaces
@@ -699,55 +699,55 @@ sections:
             - function-spaces
             - convolution
             - approximations-to-the-identity
-          limit: 14
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *lp
-          limit: 30
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *lp
-          limit: 46
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics: *lp
-          limit: 14
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics: *lp
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: proof
           topics: *lp
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *lp
-          limit: 19
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *lp
-          limit: 158
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *lp
-          limit: 14
+          limit: 500
           review:
             mode: any
   - slug: hilbert-spaces-and-duality
@@ -792,37 +792,37 @@ sections:
             - functional-analysis
             - weak-convergence
             - open-mapping-theorem
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *hilbert
-          limit: 17
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *hilbert
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics: *hilbert
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *hilbert
-          limit: 48
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *hilbert
-          limit: 13
+          limit: 500
           review:
             mode: any
   - slug: fourier-analysis
@@ -847,37 +847,37 @@ sections:
           kind: definition
           topics: &fourier
             - fourier-analysis
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics: *fourier
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics: *fourier
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics: *fourier
-          limit: 5
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics: *fourier
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *fourier
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: problems-from-the-joint-exams
@@ -913,12 +913,12 @@ sections:
             - schwarz-lemma
             - argument-principle
             - pdes
-          limit: 30
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics: *joint
-          limit: 7
+          limit: 500
           review:
             mode: any
