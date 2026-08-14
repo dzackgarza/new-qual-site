@@ -10,7 +10,7 @@ classification:
   - point-set
   - compactness
   - metric-spaces
-  - analysis
+  - fixed-points
 relations: []
 review: draft
 ---

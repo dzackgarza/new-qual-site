@@ -9,7 +9,7 @@ classification:
   topics:
   - point-set
   - metric-spaces
-  - analysis
+  - completeness
 relations: []
 review: draft
 ---
