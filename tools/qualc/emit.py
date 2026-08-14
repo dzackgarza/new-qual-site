@@ -1030,11 +1030,29 @@ def publication_root_page(
     ]
 
 
+def _plural(kind: str) -> str:
+    return f"{kind[:-1]}ies" if kind.endswith("y") else f"{kind}s"
+
+
+def _query_heading(query: PublicationQuery, topic_names: dict[str, str]) -> str:
+    """What a query panel holds, said in the author's own words.
+
+    Every panel used to be headed `More from the catalog`, so a section with
+    ten of them offered ten indistinguishable headings and nothing under them
+    was addressable. The kind and the topics are already written in the
+    manifest, and `topics.yaml` already carries a name for each topic, so the
+    heading restates the query rather than inventing a title for it.
+    """
+    topics = ", ".join(topic_names[topic] if topic in topic_names else topic for topic in query.topics)
+    return f"{_plural(query.kind).title()}: {topics}" if topics else _plural(query.kind).title()
+
+
 def publication_section_page(
     con: sqlite3.Connection,
     manifest: PublicationManifest,
     section: PublicationSection,
     inline_cache: dict[str, list[pf.Inline]],
+    topic_names: dict[str, str],
 ) -> Page:
     blocks: list[pf.Block] = [
         pf.Para(*_inlines(section.lede, inline_cache)),
@@ -1053,7 +1071,7 @@ def publication_section_page(
                 blocks.append(
                     pf.Div(
                         pf.Header(
-                            *_inlines("More from the catalog", inline_cache),
+                            *_inlines(_query_heading(query, topic_names), inline_cache),
                             level=2,
                         ),
                         pf.BulletList(
@@ -1620,6 +1638,7 @@ def project(
     publications: Path,
     site: Path,
     macros: dict,
+    topic_names: dict[str, str],
     wiki_pages: list[WikiPage] | None = None,
 ) -> None:
     if out.exists():
@@ -1654,8 +1673,14 @@ def project(
             ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
             "Every problem in the corpus. Filter by any facet; the URL is the query.",
             "Historical sittings, each a fixed ordered list of occurrences.",
-            "More from the catalog",
         ]
+    )
+    inline_values.extend(
+        _query_heading(item.query, topic_names)
+        for guide in guides
+        for section in guide.sections
+        for item in section.items
+        if isinstance(item, QueryItem)
     )
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
@@ -1725,6 +1750,7 @@ def project(
                     guide,
                     section,
                     inline_cache,
+                    topic_names,
                 ),
                 out / "guide" / guide.id / f"{section.slug}.qmd",
                 SubjectPage(_publication_navigation(guide, section.slug)),

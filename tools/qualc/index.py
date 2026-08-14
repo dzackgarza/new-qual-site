@@ -65,6 +65,12 @@ def load_vocabularies(root: Path) -> dict[str, set[str]]:
     return vocab
 
 
+def topic_names(root: Path) -> dict[str, str]:
+    """Each topic id under the display name the vocabulary already gives it."""
+    data = yaml.safe_load((root / "topics.yaml").read_text())
+    return {entry["id"]: entry["name"] for entry in data}
+
+
 def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagnostic]:
     errors: list[Diagnostic] = []
     by_id: dict[str, ParsedCard] = {}
