@@ -112,12 +112,12 @@ def unpack_cross_references(element: pf.Element, doc: pf.Doc) -> pf.Element | li
     restored and `parse_pages` names every one it restored.
     """
     del doc
-    if not isinstance(element, pf.RawInline) or cast(str, getattr(element, "format")) != "tex":
+    if not isinstance(element, pf.RawInline) or element.format != "tex":
         return element
-    match = CREF.fullmatch(cast(str, getattr(element, "text")).strip())
+    match = CREF.fullmatch(element.text.strip())
     if match is None:
         return element
-    return _text_inlines(match.group(2))
+    return _text_inlines(cast(str, match.group(2)))
 
 
 def discover(root: Path) -> list[Path]:
@@ -192,12 +192,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
                 errors.extend(_citation_diagnostic(warning, path) for warning in warnings)
                 continue
             restored.extend(f"{source_rel.as_posix()}: \\cref[{label}]" for label, _ in CREF.findall(body))
-            document = (
-                from_ast(result.output)
-                .walk(drop_path_captions)
-                .walk(anchor_block_markers)
-                .walk(unpack_cross_references)
-            )
+            document = from_ast(result.output).walk(drop_path_captions).walk(anchor_block_markers).walk(unpack_cross_references)
             for key in CITEPROC_METADATA:
                 document.metadata.content.pop(key, None)
             parsed.append(

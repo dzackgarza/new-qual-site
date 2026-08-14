@@ -36,6 +36,7 @@ class Para(Block):
 
 class Header(Block):
     level: int
+    identifier: str
     def __init__(self, *args: Inline, level: int = ..., identifier: str = ...) -> None: ...
 
 class Div(Block):
@@ -125,6 +126,11 @@ class Figure(Block):
     ) -> None: ...
 
 class RawBlock(Block):
+    def __init__(self, text: str, format: str = ...) -> None: ...
+
+class RawInline(Inline):
+    text: str
+    format: str
     def __init__(self, text: str, format: str = ...) -> None: ...
 
 def stringify(element: Element, newlines: bool = ...) -> str: ...
