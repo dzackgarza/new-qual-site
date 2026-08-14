@@ -6,7 +6,10 @@ title: "Let $f_{n}(x):=\\frac{x}{1+x^{n}}, \\quad x \\geq 0$ Show that this sequ
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

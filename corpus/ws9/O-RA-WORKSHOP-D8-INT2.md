@@ -6,7 +6,9 @@ title: 'Integral Calculus problem 2 (June 2017, 2) on Day 8: Miscellaneous Topic
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-INT2

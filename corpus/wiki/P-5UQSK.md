@@ -6,7 +6,9 @@ title: "Let $M<\\infty$ and $\\mathcal{F} \\subseteq C[a,b]$."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - differentiation
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Verify that an induced norm metric satisfies the metric axioms'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - norms
 relations: []
 review: draft
 ---

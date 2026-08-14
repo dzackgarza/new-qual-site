@@ -6,7 +6,10 @@ title: "Let $f, g \\in L^2(\\RR)$. Show that $\\lim _{n \\to \\infty} \\int _{\\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - small-tails
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-HWAMG at TAMU real-analysis August 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-HWAMG

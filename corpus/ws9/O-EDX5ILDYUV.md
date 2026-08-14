@@ -6,7 +6,9 @@ title: P-YQDFJ at TAMU real-analysis January 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - continuity
 relations:
 - kind: instance-of
   target: P-YQDFJ

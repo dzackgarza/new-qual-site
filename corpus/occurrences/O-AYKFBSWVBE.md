@@ -6,7 +6,9 @@ title: P-56AFO at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - euclidean-spaces
 relations:
 - kind: instance-of
   target: P-56AFO

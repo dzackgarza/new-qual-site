@@ -6,7 +6,10 @@ title: P-MNEPM at UGA real-analysis November 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - continuity
 relations:
 - kind: instance-of
   target: P-MNEPM

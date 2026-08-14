@@ -6,7 +6,9 @@ title: "For each $n \\in \\ZZ$ give an example of a map $f_n : S^2 \\to S^2$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations: []
 review: draft
 ---

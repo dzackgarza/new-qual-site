@@ -6,7 +6,10 @@ title: P-3SSNK at UGA real-analysis June 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - continuity
 relations:
 - kind: instance-of
   target: P-3SSNK

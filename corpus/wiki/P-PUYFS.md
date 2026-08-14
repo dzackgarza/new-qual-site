@@ -6,7 +6,9 @@ title: "Let $(X,d)$ be a metric space, $K\\subset X$ be"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

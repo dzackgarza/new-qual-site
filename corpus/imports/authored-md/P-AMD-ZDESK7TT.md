@@ -6,7 +6,9 @@ title: Orientable surface of genus $g$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

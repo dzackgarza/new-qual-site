@@ -6,7 +6,10 @@ title: P-RBVY6 at JHU real-analysis Fall 2012
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - residues
+  - integrals
 relations:
 - kind: instance-of
   target: P-RBVY6

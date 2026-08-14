@@ -6,7 +6,10 @@ title: "(b) Show by example that the union of infinitely"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

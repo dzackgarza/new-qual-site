@@ -6,7 +6,10 @@ title: P-GXAKN at UGA real-analysis Spring 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - integrals
+  - l1
 relations:
 - kind: instance-of
   target: P-GXAKN

@@ -6,7 +6,9 @@ title: 'A differential inequality with zero initial value'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations: []
 review: draft
 ---

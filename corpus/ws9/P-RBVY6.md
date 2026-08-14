@@ -6,7 +6,10 @@ title: Let $f(x) = \frac{1}{x^2+1}$. Use residues to compute the Fourier tran…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - residues
+  - integrals
 relations: []
 review: draft
 ---

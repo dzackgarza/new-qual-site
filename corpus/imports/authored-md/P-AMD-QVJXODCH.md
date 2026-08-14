@@ -6,7 +6,8 @@ title: "Let $p(z) = \\frac{\\prod_i^n z-a_i}{\\prod_j^m z-b_j}$ with all $a_i, b
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
 relations: []
 review: draft
 ---

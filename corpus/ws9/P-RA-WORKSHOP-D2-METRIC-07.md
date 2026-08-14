@@ -6,7 +6,10 @@ title: 'Compactness of infinite unions and attainment of distance to a compact s
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-PMDP4 at UGA real-analysis Fall 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - integrals
 relations:
 - kind: instance-of
   target: P-PMDP4

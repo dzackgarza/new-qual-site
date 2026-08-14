@@ -6,7 +6,8 @@ title: 'Sequences and Series problem 11 (June 2008 #4b) on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-11

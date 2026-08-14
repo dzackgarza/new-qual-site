@@ -6,7 +6,9 @@ title: P-6LWY3 at UGA real-analysis May 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
 relations:
 - kind: instance-of
   target: P-6LWY3

@@ -6,7 +6,9 @@ title: Prove that for a SES $0\into A\into B\into C$, the group $\ext(C,A)$…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - groups
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Let $I$ be an index set and $\\alpha: I \\to (0, \\infty)$. Show that $\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - continuity
 relations: []
 review: draft
 ---

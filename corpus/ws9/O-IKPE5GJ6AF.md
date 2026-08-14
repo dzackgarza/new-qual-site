@@ -6,7 +6,10 @@ title: P-E3HGI at TAMU real-analysis August 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - weak-convergence
 relations:
 - kind: instance-of
   target: P-E3HGI

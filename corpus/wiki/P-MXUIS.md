@@ -6,7 +6,11 @@ title: "Let $S_k$ be the space obtained by removing $k$ disjoint open disks fr\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - van-kampen
+  - fundamental-group
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

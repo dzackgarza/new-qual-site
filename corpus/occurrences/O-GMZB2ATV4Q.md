@@ -6,7 +6,10 @@ title: P-ZCPFV at UGA real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - differentiation
 relations:
 - kind: instance-of
   target: P-ZCPFV

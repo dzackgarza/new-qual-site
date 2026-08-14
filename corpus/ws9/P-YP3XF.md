@@ -6,7 +6,9 @@ title: Determine whether there is a nonzero smooth compactly supported functi…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - counterexamples
 relations: []
 review: draft
 ---

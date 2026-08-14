@@ -6,7 +6,10 @@ title: "Show that for $0 < p < q \\leq \\infty$, $\\norm{a}_{\\ell^q} \\leq \\no
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - norms
+  - series-of-numbers
 relations: []
 review: draft
 ---

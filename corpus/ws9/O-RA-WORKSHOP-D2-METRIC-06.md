@@ -6,7 +6,9 @@ title: 'Metric Spaces and Topology problem 6 (May 2019 #1) on Day 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-06

@@ -6,7 +6,9 @@ title: "8. Here we go:"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fundamental-group
 relations: []
 review: draft
 ---

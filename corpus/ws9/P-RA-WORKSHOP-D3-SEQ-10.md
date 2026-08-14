@@ -6,7 +6,9 @@ title: 'Select a subseries summing to any positive target from a divergent posit
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

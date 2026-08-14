@@ -6,7 +6,9 @@ title: P-KC3PY at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - integrals
 relations:
 - kind: instance-of
   target: P-KC3PY

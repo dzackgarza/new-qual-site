@@ -6,7 +6,10 @@ title: P-HHPDB at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
+  - uniform-convergence
 relations:
 - kind: instance-of
   target: P-HHPDB

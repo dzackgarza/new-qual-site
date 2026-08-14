@@ -6,7 +6,8 @@ title: "Fall 2006, 13"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

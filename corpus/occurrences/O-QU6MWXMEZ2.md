@@ -6,7 +6,10 @@ title: P-DQYX5 at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - convolution
+  - l1
 relations:
 - kind: instance-of
   target: P-DQYX5

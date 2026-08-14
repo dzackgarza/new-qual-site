@@ -6,7 +6,9 @@ title: P-BH66D at UGA real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-BH66D

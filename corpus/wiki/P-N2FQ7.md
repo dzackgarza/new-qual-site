@@ -6,7 +6,11 @@ title: "Let $X$ be the space formed by identifying the boundary of a"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - van-kampen
+  - surfaces
 relations: []
 review: draft
 ---

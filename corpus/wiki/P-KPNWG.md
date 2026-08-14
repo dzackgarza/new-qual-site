@@ -6,7 +6,9 @@ title: "Calculate the following limit, justifying each step of your calculatio\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations: []
 review: draft
 ---

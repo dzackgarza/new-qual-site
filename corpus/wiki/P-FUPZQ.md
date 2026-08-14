@@ -6,7 +6,9 @@ title: "Assume that $f$ is differentiable at $a$."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
 relations: []
 review: draft
 ---

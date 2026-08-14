@@ -6,7 +6,10 @@ title: "Show that $L^2([0, 1]) \u2286 L^1([0, 1])$ and argue that $L^2([0, 1])$ 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riesz-representation
+  - lp-spaces
+  - density
 relations: []
 review: draft
 ---

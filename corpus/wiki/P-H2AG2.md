@@ -6,7 +6,9 @@ title: "Show that the set \\( \\ts{ u_k(j) \\da \\delta_{ij} } \\subseteq \\ell^
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
 relations: []
 review: draft
 ---

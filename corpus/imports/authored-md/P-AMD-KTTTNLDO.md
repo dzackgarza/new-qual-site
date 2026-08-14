@@ -6,7 +6,9 @@ title: Show that $S^2 - \{p_0, p_1\} \simeq S^1$.
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
 relations: []
 review: draft
 ---

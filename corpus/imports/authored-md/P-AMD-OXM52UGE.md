@@ -6,7 +6,8 @@ title: Prove that the homophony group is trivial.
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - groups
 relations: []
 review: draft
 ---

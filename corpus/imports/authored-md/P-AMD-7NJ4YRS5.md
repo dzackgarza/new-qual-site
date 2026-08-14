@@ -6,7 +6,10 @@ title: Define $M$ as the group ring $R = \ZZ[\ZZ_2]$ with the action…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - modules
+  - rings
 relations: []
 review: draft
 ---

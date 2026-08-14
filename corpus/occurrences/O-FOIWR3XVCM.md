@@ -6,7 +6,10 @@ title: P-P5TFA at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - integrals
 relations:
 - kind: instance-of
   target: P-P5TFA

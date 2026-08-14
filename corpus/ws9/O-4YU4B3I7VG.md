@@ -6,7 +6,10 @@ title: P-BMKR6 at JHU (undated) (real-analysis)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - completeness
+  - norms
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-BMKR6

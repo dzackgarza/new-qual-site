@@ -6,7 +6,9 @@ title: P-YHXGO at UCLA real-analysis Fall 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - functional-analysis
 relations:
 - kind: instance-of
   target: P-YHXGO

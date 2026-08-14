@@ -6,7 +6,9 @@ title: "7. Generators of the subgroups:"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
 relations: []
 review: draft
 ---

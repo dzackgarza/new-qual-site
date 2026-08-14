@@ -6,7 +6,10 @@ title: Let $S$ be a closed subspace of $(C[0,1], \|\cdot\|_\infty)$. If $S$ i…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - norms
+  - closure
 relations: []
 review: draft
 ---

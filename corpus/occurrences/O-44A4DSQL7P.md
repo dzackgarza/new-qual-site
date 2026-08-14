@@ -6,7 +6,10 @@ title: P-WWNJC at UGA real-analysis Spring 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
+  - norms
 relations:
 - kind: instance-of
   target: P-WWNJC

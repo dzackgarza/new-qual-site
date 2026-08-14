@@ -6,7 +6,10 @@ title: P-TPZF3 at UGA real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - cantor-set
+  - measure-theory
+  - compactness
 relations:
 - kind: instance-of
   target: P-TPZF3

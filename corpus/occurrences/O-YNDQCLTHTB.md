@@ -6,7 +6,10 @@ title: P-DQE3F at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - convergence-of-functions
+  - l1
 relations:
 - kind: instance-of
   target: P-DQE3F

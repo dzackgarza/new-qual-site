@@ -6,7 +6,11 @@ title: P-HPRVA at UGA real-analysis Spring 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - l1
+  - counterexamples
+  - limits
 relations:
 - kind: instance-of
   target: P-HPRVA

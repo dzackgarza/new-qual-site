@@ -6,7 +6,10 @@ title: "Let $f$ and $g$ be Lebesgue integrable on $\\mathbb{R}$."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l1
+  - small-tails
+  - norms
 relations: []
 review: draft
 ---

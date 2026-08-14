@@ -6,7 +6,9 @@ title: "Let $(X, d)$ and $(Y, \\rho)$ be metric spaces, $f: X\\to Y$, and $x_0 \
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - metric-spaces
 relations: []
 review: draft
 ---

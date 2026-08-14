@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, May 2016, problem 1'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - uniform-continuity
 relations: []
 review: draft
 ---

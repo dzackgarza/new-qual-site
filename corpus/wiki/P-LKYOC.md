@@ -6,7 +6,9 @@ title: "11. First note that $\\pi_1(S^1\\cross S^1) \\cong F^2$, the free group 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
 relations: []
 review: draft
 ---

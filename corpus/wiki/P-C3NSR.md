@@ -6,7 +6,9 @@ title: "Spring 2021, 9"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations: []
 review: draft
 ---

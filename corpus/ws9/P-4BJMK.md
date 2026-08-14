@@ -6,7 +6,10 @@ title: "This problem is about the integral $I = \\int_{-\\infty}^{\\infty} \\fra
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - residues
+  - riemann-integrability
 relations: []
 review: draft
 ---

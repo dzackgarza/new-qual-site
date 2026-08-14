@@ -6,7 +6,10 @@ title: "Useful facts: $T^2 = e^0 + e^1_1 + e^1_2 + e^2$ as a CW complex."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - covering-spaces
+  - homotopy
 relations: []
 review: draft
 ---

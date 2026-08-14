@@ -6,7 +6,9 @@ title: "Let $\\mathcal H$ be a Hilbert space."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - closure
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "For each natural number $n$, let $f_n : [0,1] \\to \\mathbb{R}$ be a seq
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

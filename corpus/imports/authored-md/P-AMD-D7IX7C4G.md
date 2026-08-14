@@ -6,7 +6,10 @@ title: 'Show that there is no map $f: S^2 \to S^1$ that commutes with the…'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

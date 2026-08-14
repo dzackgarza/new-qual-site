@@ -6,7 +6,10 @@ title: Let $X$ be an infinite dimensional Banach space. What is the $w^*$-clo…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - weak-convergence
 relations: []
 review: draft
 ---

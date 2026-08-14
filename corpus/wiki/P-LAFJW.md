@@ -6,7 +6,10 @@ title: "Compute $H_*$ of the complement of a knotted solid torus in $S^3$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
+  - manifolds
 relations: []
 review: draft
 ---

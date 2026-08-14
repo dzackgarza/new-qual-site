@@ -6,7 +6,8 @@ title: P-VO7MI at UGA real-analysis June 2005
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations:
 - kind: instance-of
   target: P-VO7MI

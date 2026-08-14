@@ -6,7 +6,10 @@ title: P-6FHOE at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-6FHOE

@@ -6,7 +6,8 @@ title: 'More Problems 13 on Day 3: Sequences and Series'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-13

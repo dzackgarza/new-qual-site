@@ -6,7 +6,9 @@ title: P-6HV66 at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-6HV66

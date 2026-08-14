@@ -6,7 +6,10 @@ title: P-7UIFE at UGA real-analysis Fall 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
+  - l1
 relations:
 - kind: instance-of
   target: P-7UIFE

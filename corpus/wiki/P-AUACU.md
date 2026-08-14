@@ -6,7 +6,10 @@ title: "Prove that if $f'$ exists and is bounded on"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - mean-value-theorem
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Fix a measurable function $f : \\mathbb{R}^2 \\to \\mathbb{R}$ and, for 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - counterexamples
+  - integrals
 relations: []
 review: draft
 ---

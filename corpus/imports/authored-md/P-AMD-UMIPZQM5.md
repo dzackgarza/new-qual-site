@@ -6,7 +6,9 @@ title: Find a free resolution of $\QQ$ as a $\ZZ$-module.
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - modules
 relations: []
 review: draft
 ---

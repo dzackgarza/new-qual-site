@@ -6,7 +6,9 @@ title: "Show that for each \\( \\epsilon>0 \\) the following function is the Fou
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - integrals
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-FSSHC at TAMU real-analysis January 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
 relations:
 - kind: instance-of
   target: P-FSSHC

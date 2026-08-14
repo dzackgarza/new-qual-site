@@ -6,7 +6,10 @@ title: "Let $g\\in L^\\infty([0, 1])$ Prove that $\\int _{[0,1]} f(x) g(x)\\, dx
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - density
+  - integrals
 relations: []
 review: draft
 ---

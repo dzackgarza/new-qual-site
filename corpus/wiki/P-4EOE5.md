@@ -6,7 +6,9 @@ title: "$\\star$: Show that for $E\\subseteq \\RR^n$, TFAE: $E$ is measurable $E
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - integrals
 relations: []
 review: draft
 ---

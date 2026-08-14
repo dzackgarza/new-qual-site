@@ -6,7 +6,11 @@ title: "- If $f$ is continuous, is it necessarily the case that $f'$ is contin\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - counterexamples
+  - convergence-of-functions
+  - differentiation
+  - completeness
 relations: []
 review: draft
 ---

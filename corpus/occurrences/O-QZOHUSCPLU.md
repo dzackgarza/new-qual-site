@@ -6,7 +6,10 @@ title: P-OFICU at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - l-infty
+  - limits
 relations:
 - kind: instance-of
   target: P-OFICU

@@ -6,7 +6,9 @@ title: "A topological space is totally disconnected if its only\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - point-set
 relations: []
 review: draft
 ---

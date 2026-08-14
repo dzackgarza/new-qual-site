@@ -6,7 +6,9 @@ title: "Let $f\\in L^1([0, 1])$. Prove that $\\lim_{n \\to \\infty} \\int_{0}^{1
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - l1
 relations: []
 review: draft
 ---

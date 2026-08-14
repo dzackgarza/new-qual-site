@@ -6,7 +6,9 @@ title: P-XQRCI at UGA real-analysis January 2008
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - convergence-of-functions
 relations:
 - kind: instance-of
   target: P-XQRCI

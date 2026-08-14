@@ -6,7 +6,11 @@ title: P-NYOLD at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - maximal-functions
+  - approximations-to-the-identity
+  - convolution
+  - differentiation
 relations:
 - kind: instance-of
   target: P-NYOLD

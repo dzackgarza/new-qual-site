@@ -6,7 +6,9 @@ title: "justify the statement that $\\int_0^1\\int_0^1 \\frac{(x-y)\\sin(xy)}{x^
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - integrals
 relations: []
 review: draft
 ---

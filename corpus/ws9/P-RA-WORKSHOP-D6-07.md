@@ -6,7 +6,10 @@ title: 'The $L^p$ norms of a nonnegative continuous function converge to its max
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - l-infty
+  - limits
 relations: []
 review: draft
 ---

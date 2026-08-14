@@ -6,7 +6,10 @@ title: P-KVE3S at UGA real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - norms
+  - completeness
 relations:
 - kind: instance-of
   target: P-KVE3S

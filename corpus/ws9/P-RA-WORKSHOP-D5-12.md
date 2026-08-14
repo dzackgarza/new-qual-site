@@ -6,7 +6,10 @@ title: 'A two-sided sequence quotient converges to the derivative'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

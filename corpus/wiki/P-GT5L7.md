@@ -6,7 +6,10 @@ title: "Show that $\\ZZ^{\\ast 2}$ has subgroups isomorphic to $\\ZZ^{\\ast n}$ 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
+  - fundamental-group
 relations: []
 review: draft
 ---

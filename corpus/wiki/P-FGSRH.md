@@ -6,7 +6,10 @@ title: "Fall 2006, 7"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - convergence
 relations: []
 review: draft
 ---

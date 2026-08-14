@@ -6,7 +6,9 @@ title: P-XEEUX at UGA real-analysis May 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - uniform-continuity
 relations:
 - kind: instance-of
   target: P-XEEUX

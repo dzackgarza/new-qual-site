@@ -6,7 +6,9 @@ title: Compute $H_*(X\cross S^n)$ in terms of $H_*(X)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations: []
 review: draft
 ---

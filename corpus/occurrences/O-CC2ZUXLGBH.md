@@ -6,7 +6,10 @@ title: P-NYZMD at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
+  - polynomials
 relations:
 - kind: instance-of
   target: P-NYZMD

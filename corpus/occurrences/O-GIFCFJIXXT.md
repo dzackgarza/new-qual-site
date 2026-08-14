@@ -6,7 +6,10 @@ title: P-VG7GK at UGA real-analysis June 2009
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - differentiation
+  - norms
 relations:
 - kind: instance-of
   target: P-VG7GK

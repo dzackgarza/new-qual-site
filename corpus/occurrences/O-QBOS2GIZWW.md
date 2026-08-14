@@ -6,7 +6,10 @@ title: P-QMPVS at UGA real-analysis November 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - norms
+  - l-infty
 relations:
 - kind: instance-of
   target: P-QMPVS

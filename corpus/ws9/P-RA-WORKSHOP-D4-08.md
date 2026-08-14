@@ -6,7 +6,9 @@ title: 'Continuity and uniform continuity of a rational function'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - uniform-continuity
 relations: []
 review: draft
 ---

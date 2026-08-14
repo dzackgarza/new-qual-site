@@ -6,7 +6,9 @@ title: "Suppose $(X, d)$ is a compact metric space and $U$ is an open covering\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

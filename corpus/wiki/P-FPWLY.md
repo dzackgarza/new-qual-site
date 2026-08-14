@@ -6,7 +6,9 @@ title: Suppose that $f \colon [0,2] \to \mathbb{R}$ is continuous on
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - differentiation
 relations: []
 review: draft
 ---

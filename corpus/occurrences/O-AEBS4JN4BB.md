@@ -6,7 +6,9 @@ title: P-CN673 at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - l1
 relations:
 - kind: instance-of
   target: P-CN673

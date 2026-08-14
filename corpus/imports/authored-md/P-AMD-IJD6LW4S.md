@@ -6,7 +6,9 @@ title: $S_m \vee S_n$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations: []
 review: draft
 ---

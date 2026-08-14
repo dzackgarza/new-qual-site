@@ -6,7 +6,8 @@ title: 'Continuity of a running supremum'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
 relations: []
 review: draft
 ---

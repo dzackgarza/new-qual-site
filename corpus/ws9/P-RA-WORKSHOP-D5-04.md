@@ -6,7 +6,8 @@ title: 'Derive the product rule from the derivative definition'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations: []
 review: draft
 ---

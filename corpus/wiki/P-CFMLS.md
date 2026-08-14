@@ -6,7 +6,9 @@ title: "Define $E:=\\left\\{x \\in \\mathbb{R}:\\left|x-\\frac{p}{q}\\right|<q^{
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Let $X = S^2 / \\theset{p_1 = \\cdots = p_k }$ be the topological space\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - euler-characteristic
+  - quotient-spaces
 relations: []
 review: draft
 ---

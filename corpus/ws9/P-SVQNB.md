@@ -6,7 +6,9 @@ title: Let $f$ be an entire non-constant function that satisfies the function…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - holomorphic-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Problem 6 at the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/8
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA19J6

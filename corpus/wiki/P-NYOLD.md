@@ -6,7 +6,11 @@ title: "Let $f\\in L^1(\\RR)$ and let \\( \\mathcal{U}\\da \\ts{(x, y) \\in \\RR
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - maximal-functions
+  - approximations-to-the-identity
+  - convolution
+  - differentiation
 relations: []
 review: draft
 ---

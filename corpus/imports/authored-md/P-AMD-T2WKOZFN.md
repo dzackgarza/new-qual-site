@@ -6,7 +6,9 @@ title: 'Let $\alpha: S^n \to S^n,~ \alpha(p) = -p$ be the antipodal map on…'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homotopy
 relations: []
 review: draft
 ---

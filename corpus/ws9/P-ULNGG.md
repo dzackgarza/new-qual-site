@@ -6,7 +6,9 @@ title: "[Reconstructed from solution \u2014 no problem statement page was\u2026"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations: []
 review: draft
 ---

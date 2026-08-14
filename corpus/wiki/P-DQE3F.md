@@ -6,7 +6,10 @@ title: "Let \\( \\ts{ f_k }_{k=1}^{\\infty } \\subseteq L^2([0, 1]) \\) be a seq
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - convergence-of-functions
+  - l1
 relations: []
 review: draft
 ---

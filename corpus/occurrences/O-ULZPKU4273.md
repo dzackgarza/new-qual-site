@@ -6,7 +6,10 @@ title: P-VXO5U at UGA real-analysis Spring 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - bernoulli
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-VXO5U

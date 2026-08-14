@@ -6,7 +6,10 @@ title: "Consider the metric space $(\\mathbb{Q},d)$"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

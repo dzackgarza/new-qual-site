@@ -6,7 +6,10 @@ title: Compute $H_*(X)$ for $X = S^3 - N$, with $N$ a knotted solid torus…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - manifolds
 relations: []
 review: draft
 ---

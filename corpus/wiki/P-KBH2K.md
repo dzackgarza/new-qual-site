@@ -6,7 +6,10 @@ title: "Let $\\{a_n\\}_{n=1}^\\infty$ be a sequence of real numbers. Prove that 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - series-of-numbers
+  - limits
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-PGDJ2 at JHU real-analysis Fall 2012
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - rouche
+  - polynomials
 relations:
 - kind: instance-of
   target: P-PGDJ2

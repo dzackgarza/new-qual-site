@@ -6,7 +6,9 @@ title: 'Characterize lower and upper semicontinuity by open inverse images and l
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - metric-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: P-LG4GL at UGA real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - lp-spaces
+  - limits
 relations:
 - kind: instance-of
   target: P-LG4GL

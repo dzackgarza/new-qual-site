@@ -6,7 +6,9 @@ title: How many zeros does the polynomial
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - rouche
+  - polynomials
 relations: []
 review: draft
 ---

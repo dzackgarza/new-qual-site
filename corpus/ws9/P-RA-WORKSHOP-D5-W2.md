@@ -6,7 +6,9 @@ title: 'A quadratic difference bound forces constancy'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations: []
 review: draft
 ---

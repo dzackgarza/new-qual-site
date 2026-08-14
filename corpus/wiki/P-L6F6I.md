@@ -6,7 +6,10 @@ title: "Describe all possible covering maps between $S^2, T^2, K$"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - surfaces
+  - fundamental-group
 relations: []
 review: draft
 ---

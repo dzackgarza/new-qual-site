@@ -6,7 +6,9 @@ title: "Let $\\mcs, \\mct$ be topologies on a set $X$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - counterexamples
 relations: []
 review: draft
 ---

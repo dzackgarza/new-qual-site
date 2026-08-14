@@ -6,7 +6,9 @@ title: "Define $f \\colon [0,1] \\to [-1,1]$ by"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - counterexamples
 relations: []
 review: draft
 ---

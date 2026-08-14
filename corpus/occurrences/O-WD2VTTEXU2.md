@@ -6,7 +6,8 @@ title: P-DFDX4 at UGA real-analysis January 2006
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-DFDX4

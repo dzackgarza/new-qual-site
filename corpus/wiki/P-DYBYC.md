@@ -6,7 +6,9 @@ title: "Prove that a metric space $X$ is normal, i.e. if $A, B \\subset X$ are c
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - metric-spaces
 relations: []
 review: draft
 ---

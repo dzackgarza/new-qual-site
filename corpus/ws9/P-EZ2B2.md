@@ -6,7 +6,9 @@ title: Let $X$ be a topological space, and $A, B \subseteq X$ be connected subse
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - closure
 relations: []
 review: draft
 ---

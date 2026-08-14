@@ -6,7 +6,9 @@ title: 'Show that if $f: S^m \into S^n$ and $\exists U \subset S^m$ such…'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homology
 relations: []
 review: draft
 ---

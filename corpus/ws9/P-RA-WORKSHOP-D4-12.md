@@ -6,7 +6,9 @@ title: 'A sequential liminf condition implies continuity at a point'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - limits
 relations: []
 review: draft
 ---

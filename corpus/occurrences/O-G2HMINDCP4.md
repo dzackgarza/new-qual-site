@@ -6,7 +6,9 @@ title: P-B6S3M at UGA real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-B6S3M

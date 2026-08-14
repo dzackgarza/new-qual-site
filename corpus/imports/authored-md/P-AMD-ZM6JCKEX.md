@@ -6,7 +6,10 @@ title: "Let $i: \\mathbb{RP}^2 \\to \\mathbb{RP}^3$, induced by $S^2 \\hookright
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - covering-spaces
+  - homology
 relations: []
 review: draft
 ---

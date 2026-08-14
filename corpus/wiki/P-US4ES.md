@@ -6,7 +6,9 @@ title: "Let $(X,d)$ be a metric space. A function"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - metric-spaces
 relations: []
 review: draft
 ---

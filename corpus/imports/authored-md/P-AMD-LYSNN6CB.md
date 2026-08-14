@@ -6,7 +6,8 @@ title: "Show that $X$ is homotopy-equivalent to a point $\\iff$ $\\text{id}_X \\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

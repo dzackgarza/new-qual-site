@@ -6,7 +6,8 @@ title: "Prove that the radius of convergence, $R$, of"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
 relations: []
 review: draft
 ---

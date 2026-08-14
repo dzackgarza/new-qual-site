@@ -6,7 +6,10 @@ title: P-QNJ6C at UGA real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - integrals
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-QNJ6C

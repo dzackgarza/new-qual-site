@@ -6,7 +6,10 @@ title: P-MSIER at TAMU real-analysis August 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - measure-theory
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-MSIER

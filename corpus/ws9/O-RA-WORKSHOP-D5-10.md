@@ -6,7 +6,9 @@ title: 'Problem 10 (January 2005 6) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-10

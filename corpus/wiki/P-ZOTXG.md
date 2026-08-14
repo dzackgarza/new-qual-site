@@ -6,7 +6,10 @@ title: "Let $f \\in L^1(\\RR)$ and $g$ be a bounded measurable function on $\\RR
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - uniform-continuity
+  - differentiation
 relations: []
 review: draft
 ---

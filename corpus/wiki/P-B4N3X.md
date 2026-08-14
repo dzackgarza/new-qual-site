@@ -6,7 +6,9 @@ title: "Let $X$ and $Y$ be topological spaces and let $f : X \\to Y$ be a funct\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - subspace-topology
 relations: []
 review: draft
 ---

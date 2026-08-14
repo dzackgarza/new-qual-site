@@ -6,7 +6,9 @@ title: "Let $\\{a_k\\}_{k=1}^\\infty$ be a bounded sequence of real numbers and"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

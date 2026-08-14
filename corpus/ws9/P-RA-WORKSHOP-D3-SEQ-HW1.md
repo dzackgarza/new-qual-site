@@ -6,7 +6,9 @@ title: 'Uniqueness of the limit of a real sequence (warm-up)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

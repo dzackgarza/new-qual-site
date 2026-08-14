@@ -6,7 +6,11 @@ title: "State the classification theorem for surfaces (compact, without bounda\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - surfaces
+  - homology
+  - euler-characteristic
 relations: []
 review: draft
 ---

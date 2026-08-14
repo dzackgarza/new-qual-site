@@ -6,7 +6,9 @@ title: "Suppose $0 < a < b \\leq \\infty$, and find examples of functions $f \\i
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

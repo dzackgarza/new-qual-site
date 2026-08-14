@@ -6,7 +6,10 @@ title: 'A jump integrator evaluates a Riemann–Stieltjes integral at zero'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - continuity
 relations: []
 review: draft
 ---

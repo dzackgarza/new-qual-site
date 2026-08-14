@@ -6,7 +6,9 @@ title: 'Problem 10 (Essentially June 2013 7) at Day 6: Integral Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - riemann-integrability
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D6-10

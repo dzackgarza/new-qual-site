@@ -6,7 +6,9 @@ title: "Let $(X, \\mathcal M, \\mu)$ be a measure space and suppose $\\theset{E_
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations: []
 review: draft
 ---

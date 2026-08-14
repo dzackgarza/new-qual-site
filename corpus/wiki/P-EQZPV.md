@@ -6,7 +6,9 @@ title: "Let $X$ be the topological space obtained by identifying three distinc\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - quotient-spaces
 relations: []
 review: draft
 ---

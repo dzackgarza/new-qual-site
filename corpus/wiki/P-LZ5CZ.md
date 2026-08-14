@@ -6,7 +6,9 @@ title: "Let $\\DD$ be a closed disk embedded in the torus $T = S^1 \\times S^1$\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

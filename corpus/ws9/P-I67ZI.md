@@ -6,7 +6,9 @@ title: "Let $Y$ be a closed subspace of a Banach space $X$, with norm $\\|\\cdot
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
 relations: []
 review: draft
 ---

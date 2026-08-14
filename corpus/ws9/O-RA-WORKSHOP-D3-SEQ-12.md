@@ -6,7 +6,9 @@ title: 'More Problems 12 (January 2012 #1a) on Day 3: Sequences and Series'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-12

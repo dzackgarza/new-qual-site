@@ -6,7 +6,9 @@ title: A hexagon with the identifications $a+b+c-a-b-c$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - surfaces
 relations: []
 review: draft
 ---

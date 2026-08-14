@@ -6,7 +6,9 @@ title: "Determine the winding number of the following map: $f: S^1 \\to \\mathbb
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fundamental-group
 relations: []
 review: draft
 ---

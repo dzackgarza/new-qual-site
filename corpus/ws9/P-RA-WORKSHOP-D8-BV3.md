@@ -6,7 +6,9 @@ title: 'Determine whether x sin(1/x) has bounded variation'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - counterexamples
 relations: []
 review: draft
 ---

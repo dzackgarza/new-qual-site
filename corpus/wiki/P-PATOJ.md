@@ -6,7 +6,10 @@ title: "Let $X$ be Hausdorff, and recall that the one-point\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - point-set
 relations: []
 review: draft
 ---

@@ -10,11 +10,12 @@ classification:
   - arzela-ascoli
   - compactness
   - function-spaces
+  - equicontinuity
 relations: []
 review: draft
 ---
 
-:::{.theorem title="Theorem 6.5 (Arzelà–Ascoli)"}
-Let $K\subset\mathbb R^n$ be compact. A collection of functions $\mathcal F\subset C(K,\mathbb R^m)$ is
-compact if and only if $\mathcal F$ is closed, bounded, and (pointwise) equicontinuous.
+::: {.theorem title="Theorem 6.5 (Arzelà–Ascoli)"}
+Let $K\subset\mathbb R^n$ be compact.
+A collection of functions $\mathcal F\subset C(K,\mathbb R^m)$ is compact if and only if $\mathcal F$ is closed, bounded, and (pointwise) equicontinuous.
 :::

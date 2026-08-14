@@ -6,7 +6,9 @@ title: 'Problem 9 (June 2012 1a) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-09

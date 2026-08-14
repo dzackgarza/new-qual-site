@@ -6,7 +6,9 @@ title: "Give a self-contained proof that the zeroth homology $H_0 (X)$ is isom\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - connectedness
 relations: []
 review: draft
 ---

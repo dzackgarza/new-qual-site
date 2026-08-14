@@ -6,7 +6,9 @@ title: P-KPNWG at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations:
 - kind: instance-of
   target: P-KPNWG

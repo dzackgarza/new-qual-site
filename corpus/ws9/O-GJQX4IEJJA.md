@@ -6,7 +6,10 @@ title: P-PAQ4K at JHU real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fatou
+  - convergence-of-integrals
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-PAQ4K

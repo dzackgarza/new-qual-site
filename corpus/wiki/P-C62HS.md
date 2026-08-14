@@ -6,7 +6,10 @@ title: "Prove that if $(X, d)$ is a compact metric space, $f : X \\to X$ is a co
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - metric-spaces
+  - compactness
 relations: []
 review: draft
 ---

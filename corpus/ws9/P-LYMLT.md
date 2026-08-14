@@ -6,7 +6,10 @@ title: Let $X$ be the 2-sphere, and $A \subseteq X$ the equatorial circle in $X$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homology
+  - fundamental-group
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Consider the quotient space"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - quotient-spaces
+  - manifolds
 relations: []
 review: draft
 ---

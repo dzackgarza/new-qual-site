@@ -6,7 +6,10 @@ title: "Let $f_{n}(x) = n x(1-x)^{n}, \\quad n \\in \\NN$ Show that $f_n \\to 0$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

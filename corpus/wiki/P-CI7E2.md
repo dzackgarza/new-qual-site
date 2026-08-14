@@ -6,7 +6,9 @@ title: "Let $A$ be a closed subset of a normal topological space $X$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - quotient-spaces
 relations: []
 review: draft
 ---

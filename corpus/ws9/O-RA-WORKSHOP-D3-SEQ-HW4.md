@@ -6,7 +6,9 @@ title: 'Sequences and Series warm-up 4 (KRD10 #3.1.D) on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-HW4

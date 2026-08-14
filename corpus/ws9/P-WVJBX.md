@@ -6,7 +6,10 @@ title: Suppose $\{f_n\}_{n=1}^\infty \subset L^2(\mathbb{R})$ is a sequence t…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - convergence-of-functions
+  - measure-theory
 relations: []
 review: draft
 ---

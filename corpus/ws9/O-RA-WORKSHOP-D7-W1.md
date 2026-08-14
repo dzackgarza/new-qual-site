@@ -6,7 +6,10 @@ title: 'Warm-up 1 at Day 7: Sequences and Series of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - polynomials
+  - function-spaces
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-W1

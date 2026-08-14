@@ -6,7 +6,10 @@ title: P-JETLX at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - density
+  - l1
 relations:
 - kind: instance-of
   target: P-JETLX

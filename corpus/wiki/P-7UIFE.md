@@ -6,7 +6,10 @@ title: "Let $\\varphi$ be a compactly supported smooth function that vanishes o\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
+  - l1
 relations: []
 review: draft
 ---

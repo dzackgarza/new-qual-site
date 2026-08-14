@@ -6,7 +6,10 @@ title: "Let $g\\in L^\\infty([0, 1])$."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - lp-spaces
+  - riesz-representation
 relations: []
 review: draft
 ---

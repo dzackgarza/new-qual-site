@@ -6,7 +6,9 @@ title: 'Differentiability at zero and a continuous factorization'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - continuity
 relations: []
 review: draft
 ---

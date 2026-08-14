@@ -6,7 +6,10 @@ title: Assume that $f_1, f_2, \ldots$ is a sequence of positive continuous fu…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fatou
+  - convergence-of-integrals
+  - counterexamples
 relations: []
 review: draft
 ---

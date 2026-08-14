@@ -6,7 +6,10 @@ title: "Let $f\\in L^1(\\RR)$. Show that $\\lim _{x \\to 0} \\int _{\\RR} \\abs{
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l1
+  - continuity
+  - density
 relations: []
 review: draft
 ---

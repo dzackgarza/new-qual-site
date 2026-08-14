@@ -6,7 +6,10 @@ title: "Let $X$ be the topological space obtained as the quotient of the spher\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
+  - quotient-spaces
 relations: []
 review: draft
 ---

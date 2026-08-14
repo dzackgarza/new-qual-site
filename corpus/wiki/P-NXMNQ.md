@@ -6,7 +6,9 @@ title: "Suppose that $f:\\mathbb{R}\\to\\mathbb{R}$ satisfies"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: 'Prove Theorem 4.1'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations:
 - kind: uses
   target: T-RA-WORKSHOP-D5-4-1

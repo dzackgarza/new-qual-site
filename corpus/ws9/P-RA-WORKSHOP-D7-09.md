@@ -6,7 +6,9 @@ title: 'A uniformly bounded derivative gives equicontinuity'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - differentiation
 relations: []
 review: draft
 ---

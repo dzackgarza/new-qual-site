@@ -6,7 +6,10 @@ title: P-AGH3O at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - maximal-functions
+  - l1
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-AGH3O

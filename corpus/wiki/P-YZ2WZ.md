@@ -6,7 +6,9 @@ title: "This problem may be much harder than expected."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - fubini-tonelli
 relations: []
 review: draft
 ---

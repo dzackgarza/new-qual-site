@@ -6,7 +6,10 @@ title: "Consider the function"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - maximal-functions
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

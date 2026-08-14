@@ -6,7 +6,9 @@ title: "Prove that for every continuous map $f : S^2 \\to S^2$ there is some $x$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'A compact set has positive distance from a disjoint closed set'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

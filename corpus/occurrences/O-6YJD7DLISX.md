@@ -6,7 +6,10 @@ title: P-K6CAP at UGA real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - small-tails
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-K6CAP

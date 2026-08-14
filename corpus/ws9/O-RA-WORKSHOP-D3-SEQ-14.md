@@ -6,7 +6,9 @@ title: 'More Problems 14 (January 2008 #6b) on Day 3: Sequences and Series'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-14

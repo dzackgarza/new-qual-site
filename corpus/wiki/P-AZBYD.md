@@ -6,7 +6,10 @@ title: "Let $L$ be a 3-manifold with homology $[\\ZZ, \\ZZ_3, 0, \\ZZ, \\ldots]$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cohomology
+  - product-topology
 relations: []
 review: draft
 ---

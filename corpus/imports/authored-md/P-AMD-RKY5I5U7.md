@@ -6,7 +6,10 @@ title: "Show that octagon pasting is homeomorphic to the $T = \\mathbb{R}^2 / \\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - surfaces
+  - homeomorphisms
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Construct a space $X$ such that
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
+  - cohomology
 relations: []
 review: draft
 ---

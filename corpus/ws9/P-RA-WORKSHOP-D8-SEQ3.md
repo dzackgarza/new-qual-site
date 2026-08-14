@@ -6,7 +6,10 @@ title: 'Uniform convergence without the Weierstrass M-test'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

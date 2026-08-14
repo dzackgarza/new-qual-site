@@ -6,7 +6,10 @@ title: P-PUNEM at UGA real-analysis January 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - l2
 relations:
 - kind: instance-of
   target: P-PUNEM

@@ -6,7 +6,9 @@ title: 'A nonzero derivative gives local injectivity'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - continuity
 relations: []
 review: draft
 ---

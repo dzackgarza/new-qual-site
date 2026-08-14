@@ -6,7 +6,10 @@ title: "Let $F \\subset \\mathbb{R}$ be closed, and define $\\delta_{F}(y):=\\in
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - integrals
+  - fubini-tonelli
 relations: []
 review: draft
 ---

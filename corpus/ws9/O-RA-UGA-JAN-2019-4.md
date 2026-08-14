@@ -6,7 +6,9 @@ title: 'Problem 4 at the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/8
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations:
 - kind: instance-of
   target: P-RA19J4

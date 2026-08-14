@@ -6,7 +6,9 @@ title: 'Verify the parallelogram law for an inner-product norm (warm-up)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
+  - hilbert-spaces
 relations: []
 review: draft
 ---

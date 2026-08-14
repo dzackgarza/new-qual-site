@@ -6,7 +6,10 @@ title: 'Vanishing high moments force a continuous function to vanish'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - integrals
 relations: []
 review: draft
 ---

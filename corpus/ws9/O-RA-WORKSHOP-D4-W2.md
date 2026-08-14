@@ -6,7 +6,9 @@ title: 'Warm-up 2 at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-W2

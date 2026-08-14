@@ -6,7 +6,10 @@ title: P-TCUDY at JHU real-analysis May 2013
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - l2
+  - hilbert-spaces
 relations:
 - kind: instance-of
   target: P-TCUDY

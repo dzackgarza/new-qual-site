@@ -6,7 +6,8 @@ title: "Let $f \\colon [a,b] \\to \\mathbb{R}$. Suppose"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
 relations: []
 review: draft
 ---

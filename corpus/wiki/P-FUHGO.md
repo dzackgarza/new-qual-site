@@ -6,7 +6,10 @@ title: "Give an example, with explanation, of a closed curve in a surfaces whi\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

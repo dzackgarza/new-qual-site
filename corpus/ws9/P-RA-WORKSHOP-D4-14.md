@@ -6,7 +6,8 @@ title: 'Prove Theorem 3.4'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
 relations:
 - kind: uses
   target: T-RA-WORKSHOP-D4-3-4

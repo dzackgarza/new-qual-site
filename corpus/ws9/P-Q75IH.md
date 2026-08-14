@@ -6,7 +6,9 @@ title: "Prove the following variant of the Lebesgue differentiation theorem: Lâ€
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - measure-theory
 relations: []
 review: draft
 ---

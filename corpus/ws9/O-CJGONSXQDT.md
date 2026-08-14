@@ -6,7 +6,10 @@ title: P-4BJMK at JHU (undated) (real-analysis)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - residues
+  - riemann-integrability
 relations:
 - kind: instance-of
   target: P-4BJMK

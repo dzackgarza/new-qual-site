@@ -6,7 +6,9 @@ title: P-PIVLV at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-PIVLV

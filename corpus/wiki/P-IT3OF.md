@@ -6,7 +6,11 @@ title: "For any integer $n \\geq 2$ let $X_n$ denote the space formed by attach\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

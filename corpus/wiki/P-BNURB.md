@@ -6,7 +6,10 @@ title: "- Compute the homology of the Klein bottle using the Mayer-Vietoris se\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

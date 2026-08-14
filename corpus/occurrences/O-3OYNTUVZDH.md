@@ -6,7 +6,10 @@ title: P-JP74P at UGA real-analysis Spring 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - integrals
+  - fourier-analysis
 relations:
 - kind: instance-of
   target: P-JP74P

@@ -6,7 +6,10 @@ title: Let $U \subset \mathbb{C}$ be an open set and
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - hilbert-spaces
+  - completeness
 relations: []
 review: draft
 ---

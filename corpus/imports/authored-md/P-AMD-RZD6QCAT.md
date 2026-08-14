@@ -6,7 +6,9 @@ title: Show that $A\injects B \implies A\tensor \QQ \injects B\tensor \QQ$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - modules
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Sequences and Series problem 3 (January 2006, 4a) on Day 8: Miscellaneou
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-SEQ3

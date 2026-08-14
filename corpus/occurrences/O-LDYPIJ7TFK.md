@@ -6,7 +6,10 @@ title: P-7P5F5 at UGA real-analysis June 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-functions
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-7P5F5

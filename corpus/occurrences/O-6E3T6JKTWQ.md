@@ -6,7 +6,10 @@ title: P-VACDU at UGA real-analysis June 2003
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-VACDU

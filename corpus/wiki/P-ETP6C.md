@@ -6,7 +6,8 @@ title: "For any $n \\geq 1$ let $S^n = \\theset{(x_0 , \\cdots , x_n )\\mid \\su
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "For topological spaces $X, Y$ the mapping cone $C(f )$ of a map $f : X \
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
+  - degree
 relations: []
 review: draft
 ---

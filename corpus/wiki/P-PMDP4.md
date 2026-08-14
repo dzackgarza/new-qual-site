@@ -6,7 +6,9 @@ title: "Prove that if $xf(x) \\in L^1(\\RR)$, then $F(y) \\da \\int f(x) \\cos(y
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - integrals
 relations: []
 review: draft
 ---

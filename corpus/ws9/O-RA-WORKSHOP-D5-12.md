@@ -6,7 +6,10 @@ title: 'Problem 12 (January 2010 4) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-12

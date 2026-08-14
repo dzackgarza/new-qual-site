@@ -6,7 +6,9 @@ title: "Compute the following limit: $\\lim _{n \\rightarrow \\infty} \\int_{1}^
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations: []
 review: draft
 ---

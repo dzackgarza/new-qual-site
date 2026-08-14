@@ -6,7 +6,9 @@ title: "Let $(M, d_M)$, $(N, d_N)$ be metric spaces. Define"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
 relations: []
 review: draft
 ---

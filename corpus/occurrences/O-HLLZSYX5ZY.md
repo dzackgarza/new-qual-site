@@ -6,7 +6,9 @@ title: P-AKPMF at UGA real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - norms
 relations:
 - kind: instance-of
   target: P-AKPMF

@@ -6,7 +6,9 @@ title: P-SVQNB at UCLA real-analysis Spring 2009
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-SVQNB

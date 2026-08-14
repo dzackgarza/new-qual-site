@@ -6,7 +6,9 @@ title: 'Split a Riemann–Stieltjes integral at an interior point'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations: []
 review: draft
 ---

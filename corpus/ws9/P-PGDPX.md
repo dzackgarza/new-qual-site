@@ -6,7 +6,9 @@ title: Does there exist a nonempty measurable set $E \subset \mathbb{R}$ sati…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - counterexamples
 relations: []
 review: draft
 ---

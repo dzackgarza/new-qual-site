@@ -6,7 +6,10 @@ title: "Let $\\mathcal{H}$ be a Hilbert space equipped with an inner product $(\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

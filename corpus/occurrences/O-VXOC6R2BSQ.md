@@ -6,7 +6,10 @@ title: P-RYI7M at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - convergence-of-functions
+  - lp-spaces
 relations:
 - kind: instance-of
   target: P-RYI7M

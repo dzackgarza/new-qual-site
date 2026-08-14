@@ -6,7 +6,9 @@ title: Let $(X, \mathcal B, \mu)$ be a measure space with $\mu(X) = 1$ and…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: If $R_1 \neq R_2$, prove that the radius of convergence, $R$, of
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
 relations: []
 review: draft
 ---

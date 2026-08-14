@@ -6,7 +6,10 @@ title: P-TUGZG at UGA real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
+  - continuity
 relations:
 - kind: instance-of
   target: P-TUGZG

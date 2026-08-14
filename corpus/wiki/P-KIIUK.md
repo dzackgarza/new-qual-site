@@ -6,7 +6,9 @@ title: "- Show that if $X\\mapsvia{f} X^n$ is not surjective, then $f$ is nullh\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - degree
 relations: []
 review: draft
 ---

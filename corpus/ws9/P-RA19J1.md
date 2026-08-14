@@ -6,7 +6,10 @@ title: 'UGA analysis qualifying exam, January 2019, problem 1'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - equicontinuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-4QQGN at TAMU real-analysis August 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-4QQGN

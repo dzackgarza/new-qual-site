@@ -6,7 +6,9 @@ title: 'Select a convergent subseries from a sequence tending to zero (warm-up)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

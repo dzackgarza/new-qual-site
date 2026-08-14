@@ -6,7 +6,9 @@ title: "Suppose $X = \\union_i^n A_i$ such that for any $1\\leq k \\leq n,~ \\in
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Sequences and Series problem 9 (June 2005 #3b) on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-09

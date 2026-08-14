@@ -6,7 +6,9 @@ title: "Prove : $f \\in \\mathcal{R}(\\alpha)$ on $[a,b]$ if and"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations: []
 review: draft
 ---

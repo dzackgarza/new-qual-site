@@ -6,7 +6,10 @@ title: 'Closedness, boundedness, and compactness in the rational metric space'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

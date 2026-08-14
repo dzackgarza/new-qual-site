@@ -6,7 +6,10 @@ title: "Show that any finite index subgroup of a finitely generated free group\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
+  - fundamental-group
 relations: []
 review: draft
 ---

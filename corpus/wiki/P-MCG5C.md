@@ -6,7 +6,11 @@ title: "Let $X$ be a CW complex and let $\\pi : Y \\to X$ be a covering space. S
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - euler-characteristic
+  - cell-complexes
+  - compactness
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "REVISIT Let $f,g : S^1 \\rightarrow X$, $P = X \\cup_f B^2 \\cong X \\co
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - cell-complexes
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "- Compute $\\pi_1(S^1 \\cross S^1)$"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - product-topology
 relations: []
 review: draft
 ---

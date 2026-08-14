@@ -6,7 +6,9 @@ title: P-7QJS2 at JHU real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - arzela-ascoli
 relations:
 - kind: instance-of
   target: P-7QJS2

@@ -6,7 +6,9 @@ title: 'A series that is uniformly convergent away from zero but not near zero'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

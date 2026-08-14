@@ -6,7 +6,10 @@ title: 'Polynomial approximation with endpoint factors'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - uniform-convergence
+  - polynomials
 relations: []
 review: draft
 ---

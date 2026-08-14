@@ -6,7 +6,10 @@ title: P-PQG5I at UCLA real-analysis Spring 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - compactness
+  - hilbert-spaces
 relations:
 - kind: instance-of
   target: P-PQG5I

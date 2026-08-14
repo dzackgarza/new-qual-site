@@ -6,7 +6,10 @@ title: 'A weighted integral attains a point value'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - integrals
+  - continuity
 relations: []
 review: draft
 ---

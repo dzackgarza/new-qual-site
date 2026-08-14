@@ -6,7 +6,10 @@ title: P-BNXPE at UGA real-analysis Fall 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-BNXPE

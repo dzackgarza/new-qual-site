@@ -6,7 +6,11 @@ title: "Let $\\{f_k\\}$ be any sequence of functions in $L^2([0, 1])$ satisfying
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - fatou
+  - egorov
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Integrals of uniformly convergent continuous functions with a moving end
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

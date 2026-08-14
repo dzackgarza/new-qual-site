@@ -6,7 +6,10 @@ title: "2. Theorem: if $M_g \\surjects M_h$ is an $n-$sheeted covering space, t\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - surfaces
+  - euler-characteristic
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: P-XVHFQ at UGA real-analysis January 2006
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-XVHFQ

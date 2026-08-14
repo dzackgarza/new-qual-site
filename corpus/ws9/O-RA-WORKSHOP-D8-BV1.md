@@ -6,7 +6,8 @@ title: 'Bounded Variation problem 1 (January 2018) on Day 8: Miscellaneous Topic
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-BV1

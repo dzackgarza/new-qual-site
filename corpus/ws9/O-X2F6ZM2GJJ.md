@@ -6,7 +6,10 @@ title: P-CTQ6G at TAMU real-analysis January 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - completeness
+  - density
 relations:
 - kind: instance-of
   target: P-CTQ6G

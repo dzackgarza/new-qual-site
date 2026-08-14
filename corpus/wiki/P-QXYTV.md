@@ -6,7 +6,10 @@ title: "Suppose that $f:[a,b]\\to\\mathbb{R}$ is"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - l-infty
+  - limits
 relations: []
 review: draft
 ---

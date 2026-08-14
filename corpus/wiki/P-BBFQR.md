@@ -6,7 +6,10 @@ title: "Useful facts: $\\tilde X \\surjects X$ induces $\\pi_1(\\tilde X) \\inje
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - surfaces
 relations: []
 review: draft
 ---

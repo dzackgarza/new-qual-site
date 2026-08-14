@@ -6,7 +6,10 @@ title: P-SKT7G at UGA real-analysis January 2012
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-SKT7G

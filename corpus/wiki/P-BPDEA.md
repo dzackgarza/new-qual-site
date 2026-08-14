@@ -6,7 +6,10 @@ title: "Give an example of a quotient map in which the domain is Hausdorff, bu\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - hausdorff-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

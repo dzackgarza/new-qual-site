@@ -6,7 +6,10 @@ title: P-4RXD2 at UGA real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - l1
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-4RXD2

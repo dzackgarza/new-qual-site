@@ -6,7 +6,10 @@ title: P-7Y4VS at JHU (undated) (real-analysis)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - l2
+  - function-spaces
 relations:
 - kind: instance-of
   target: P-7Y4VS

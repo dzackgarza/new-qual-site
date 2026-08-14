@@ -6,7 +6,10 @@ title: 'Warm-up 3 (January 2007 1) at Day 6: Integral Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - differentiation
+  - integrals
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D6-W3

@@ -6,7 +6,10 @@ title: P-OSPIM at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fatou
+  - measure-theory
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-OSPIM

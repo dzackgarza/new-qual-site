@@ -6,7 +6,10 @@ title: "Let $f_{n}(x) = a e^{-n a x} - b e^{-n b x} \\quad \\text{ where } 0 < a
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - l1
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

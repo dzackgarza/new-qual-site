@@ -6,7 +6,8 @@ title: 'Sequences and Series problem 1 (January 2006, 1) on Day 8: Miscellaneous
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-SEQ1

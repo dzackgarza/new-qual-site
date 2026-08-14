@@ -6,7 +6,9 @@ title: "Let $X = \\theset{(0, y) \\mid - 1 \\leq y \\leq 1} \\cup \\theset{\\qty
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations: []
 review: draft
 ---

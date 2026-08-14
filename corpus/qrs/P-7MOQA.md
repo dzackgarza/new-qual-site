@@ -6,7 +6,10 @@ title: "Let $f, g$ be Lebesgue integrable on $\\RR$ and let $g_n(x) \\da g(x- n)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l1
+  - small-tails
+  - norms
 relations: []
 review: draft
 ---

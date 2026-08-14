@@ -6,7 +6,9 @@ title: "Let $(X, d)$ be a compact metric space, and let $f : X \\to X$ be an is\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
 relations: []
 review: draft
 ---

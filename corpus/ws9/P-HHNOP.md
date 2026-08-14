@@ -6,7 +6,9 @@ title: "Let $X$ and $Y$ be Banach spaces."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - compactness
 relations: []
 review: draft
 ---

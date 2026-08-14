@@ -6,7 +6,9 @@ title: P-2LJDT at UGA real-analysis Fall 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - l1
 relations:
 - kind: instance-of
   target: P-2LJDT

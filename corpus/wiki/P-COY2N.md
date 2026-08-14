@@ -6,7 +6,10 @@ title: "Let $f: [0, 1] \\to \\RR$ be continuous."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - norms
+  - lp-spaces
 relations: []
 review: draft
 ---

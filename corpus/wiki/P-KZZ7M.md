@@ -6,7 +6,9 @@ title: "Suppose $f_n:[0,1]\\to\\mathbb{R}$ are continuous"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $f, g \\in L^2(\\RR)$. Prove that the formula $h(x) \\definedas \\in
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - uniform-continuity
+  - l2
 relations: []
 review: draft
 ---

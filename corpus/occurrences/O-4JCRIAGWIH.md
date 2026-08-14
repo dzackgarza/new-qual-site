@@ -6,7 +6,8 @@ title: P-BH6X6 at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
 relations:
 - kind: instance-of
   target: P-BH6X6

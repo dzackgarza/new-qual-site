@@ -6,7 +6,10 @@ title: "Consider the following sequence of functions:"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - l1
+  - l-infty
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Let \\( f_n \\in L^2([0, 1]) \\) for \\( n\\in \\NN \\), and assume that
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l2
+  - hilbert-spaces
+  - series-of-functions
 relations: []
 review: draft
 ---

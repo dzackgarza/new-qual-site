@@ -6,7 +6,10 @@ title: "Let $A = \\left\\{x\\in\\ell^2: \\sum_{n\\ge1} n|x_n|^2 \\le 1\\right\\}
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - compactness
+  - hilbert-spaces
 relations: []
 review: draft
 ---

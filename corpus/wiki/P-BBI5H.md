@@ -6,7 +6,9 @@ title: "3. $\\Rightarrow$ Let $[\\alpha] \\in \\pi_1(X\\cross Y, (x_0, y_0))$ be
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - product-topology
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Prove that if $f: [0, 1] \\to \\RR$ is continuous then"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - continuity
+  - stone-weierstrass
 relations: []
 review: draft
 ---

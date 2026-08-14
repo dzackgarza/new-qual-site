@@ -6,7 +6,10 @@ title: "Show that $\\ker A \\into A\\tensor \\QQ$ given by $a \\mapsto a\\tensor
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - modules
+  - torsion
+  - homological-algebra
 relations: []
 review: draft
 ---

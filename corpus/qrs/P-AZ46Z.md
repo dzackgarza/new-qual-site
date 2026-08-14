@@ -6,7 +6,10 @@ title: "Fall 2010, 8"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
+  - tube-lemma
 relations: []
 review: draft
 ---

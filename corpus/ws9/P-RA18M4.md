@@ -6,7 +6,10 @@ title: 'UGA analysis qualifying exam, May 2018, problem 4'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - function-spaces
+  - arzela-ascoli
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Write down the fundamental group of the following spaces:'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

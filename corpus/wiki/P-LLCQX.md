@@ -6,7 +6,10 @@ title: "Let $X$ be the topological space formed by filling in two\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

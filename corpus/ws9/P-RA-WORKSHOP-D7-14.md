@@ -6,7 +6,10 @@ title: 'Uniform convergence along a convergent sequence of points'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - continuity
+  - sequences-of-functions
 relations: []
 review: draft
 ---

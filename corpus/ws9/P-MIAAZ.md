@@ -6,7 +6,8 @@ title: Show that every continuous convex function $f$ defined on the closed u…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
 relations: []
 review: draft
 ---

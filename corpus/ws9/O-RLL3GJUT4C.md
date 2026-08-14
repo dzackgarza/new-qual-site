@@ -6,7 +6,10 @@ title: P-Y3MQA at JHU real-analysis Fall 2013
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - residues
+  - integrals
+  - riemann-integrability
 relations:
 - kind: instance-of
   target: P-Y3MQA

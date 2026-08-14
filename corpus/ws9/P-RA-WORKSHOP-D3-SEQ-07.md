@@ -6,7 +6,10 @@ title: 'Compare liminf of products of positive sequences'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
+  - counterexamples
 relations: []
 review: draft
 ---

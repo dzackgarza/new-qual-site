@@ -6,7 +6,10 @@ title: "Let $X = S^1 \\cross S^1$ and $A\\subset X$ be a subspace with $A \\cong
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - fundamental-group
+  - surfaces
 relations: []
 review: draft
 ---

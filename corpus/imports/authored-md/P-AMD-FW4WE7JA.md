@@ -6,7 +6,9 @@ title: 'Show that any non-surjective map $f: X \rightarrow S^n$ is homotopic…'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - degree
 relations: []
 review: draft
 ---

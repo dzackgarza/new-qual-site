@@ -6,7 +6,8 @@ title: P-MIAAZ at TAMU real-analysis January 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
 relations:
 - kind: instance-of
   target: P-MIAAZ

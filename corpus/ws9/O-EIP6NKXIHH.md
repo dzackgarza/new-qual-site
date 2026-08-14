@@ -6,7 +6,9 @@ title: P-CH37V at UCLA real-analysis Fall 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - integrals
 relations:
 - kind: instance-of
   target: P-CH37V

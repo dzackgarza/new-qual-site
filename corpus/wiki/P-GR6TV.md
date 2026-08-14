@@ -6,7 +6,10 @@ title: "Find an example of a metric space $X$ and a subset $E \\subseteq X$"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

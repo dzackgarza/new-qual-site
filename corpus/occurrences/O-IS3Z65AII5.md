@@ -6,7 +6,9 @@ title: P-S2SVK at UGA real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - differentiation
 relations:
 - kind: instance-of
   target: P-S2SVK

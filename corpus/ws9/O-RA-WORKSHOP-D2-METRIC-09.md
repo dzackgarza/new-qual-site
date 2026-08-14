@@ -6,7 +6,9 @@ title: 'Metric Spaces and Topology problem 9 (January 2011 #3a) on Day 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-09

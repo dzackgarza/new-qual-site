@@ -6,7 +6,10 @@ title: "How many surfaces are there, up to homeomorphism, which are:"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - surfaces
+  - euler-characteristic
 relations: []
 review: draft
 ---

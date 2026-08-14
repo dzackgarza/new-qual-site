@@ -6,7 +6,10 @@ title: 'Epsilon-delta continuity and differentiability of an integral of $1/t$'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - differentiation
+  - integrals
 relations: []
 review: draft
 ---

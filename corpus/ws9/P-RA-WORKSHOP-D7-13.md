@@ -6,7 +6,9 @@ title: 'A trigonometric integral limit'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Let $C$ denote the Banach space of all convergent sequences under the…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
 relations: []
 review: draft
 ---

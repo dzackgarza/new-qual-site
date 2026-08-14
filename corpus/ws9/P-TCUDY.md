@@ -6,7 +6,10 @@ title: Recall that the inner product on $L^2(\mathbb{R}^d)$ is given by
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - l2
+  - hilbert-spaces
 relations: []
 review: draft
 ---

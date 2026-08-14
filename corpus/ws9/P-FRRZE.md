@@ -6,7 +6,10 @@ title: Find the fundamental group of the space $X$ consisting of $\mathbb{R}^3$ 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
+  - homotopy
 relations: []
 review: draft
 ---

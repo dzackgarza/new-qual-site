@@ -6,7 +6,9 @@ title: 'Warm-up 1 (June 1999 10) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-W1

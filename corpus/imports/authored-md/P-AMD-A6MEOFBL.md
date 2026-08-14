@@ -6,7 +6,10 @@ title: Show that all 3 presentations of $\pi_1(K)$ are isomorphic
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - groups
 relations: []
 review: draft
 ---

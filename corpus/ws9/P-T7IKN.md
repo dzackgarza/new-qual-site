@@ -6,7 +6,9 @@ title: "Let $f$ be a holomorphic function in the punctured disk $\\{z : 0 < |z| 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - singularities
+  - holomorphic-functions
 relations: []
 review: draft
 ---

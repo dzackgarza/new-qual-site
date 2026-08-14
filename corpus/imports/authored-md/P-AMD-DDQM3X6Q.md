@@ -6,7 +6,9 @@ title: Show $\tilde H_i(\Sigma X) \cong \tilde H_{i-1}(X)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations: []
 review: draft
 ---

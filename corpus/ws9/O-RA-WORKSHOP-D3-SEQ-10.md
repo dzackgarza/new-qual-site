@@ -6,7 +6,9 @@ title: 'Sequences and Series problem 10 (January 2011 #5) on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-10

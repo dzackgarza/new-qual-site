@@ -6,7 +6,9 @@ title: P-THQJ3 at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - closure
 relations:
 - kind: instance-of
   target: P-THQJ3

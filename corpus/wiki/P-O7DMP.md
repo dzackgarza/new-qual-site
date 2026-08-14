@@ -6,7 +6,9 @@ title: "Define $F(x) &\\da \\qty{ \\sin(\\pi x) \\over \\pi x}^2 \\\\ G(x) &\\da
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - integrals
 relations: []
 review: draft
 ---

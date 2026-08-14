@@ -6,7 +6,11 @@ title: P-MKF4V at UGA real-analysis Spring 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - lp-spaces
+  - uniform-convergence
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-MKF4V

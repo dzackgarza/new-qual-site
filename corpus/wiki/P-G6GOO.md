@@ -6,7 +6,9 @@ title: "6. General construction: construct a tree $T$ by picking a basepoint i\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

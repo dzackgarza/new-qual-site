@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, January 2019, problem 5'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations: []
 review: draft
 ---

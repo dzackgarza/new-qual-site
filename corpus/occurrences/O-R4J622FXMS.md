@@ -6,7 +6,9 @@ title: P-RHDT6 at UGA real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - continuity
 relations:
 - kind: instance-of
   target: P-RHDT6

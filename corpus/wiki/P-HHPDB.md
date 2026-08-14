@@ -6,7 +6,10 @@ title: "Let $\\phi\\in L^1(\\RR^n)$ such that $\\int \\phi = 1$ and define $\\ph
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
+  - uniform-convergence
 relations: []
 review: draft
 ---

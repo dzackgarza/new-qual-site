@@ -6,7 +6,10 @@ title: P-CFSC6 at UGA real-analysis June 2005
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - integrals
 relations:
 - kind: instance-of
   target: P-CFSC6

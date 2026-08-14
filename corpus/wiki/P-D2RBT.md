@@ -6,7 +6,10 @@ title: "Compute the fundamental group, using any technique you like\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - van-kampen
 relations: []
 review: draft
 ---

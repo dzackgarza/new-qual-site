@@ -6,7 +6,9 @@ title: 'For each of the following $f: S^1 \rightarrow S^1$, identify the…'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fundamental-group
 relations: []
 review: draft
 ---

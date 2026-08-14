@@ -6,7 +6,9 @@ title: "Using the LES in Homotopy"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - homology
 relations: []
 review: draft
 ---

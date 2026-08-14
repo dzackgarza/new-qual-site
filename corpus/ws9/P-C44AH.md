@@ -6,7 +6,10 @@ title: Let $\mu$ be Lebesgue measure on $\mathbb{D}$. Let $H$ be the subspace…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - l2
+  - completeness
 relations: []
 review: draft
 ---

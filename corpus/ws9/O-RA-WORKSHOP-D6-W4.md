@@ -6,7 +6,9 @@ title: 'Warm-up 4 (Apo74 7.2) at Day 6: Integral Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D6-W4

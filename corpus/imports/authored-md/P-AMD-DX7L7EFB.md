@@ -6,7 +6,9 @@ title: Identify $\pi_1(M, [(1, \frac{1}{2})])$, and identify the class of…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
 relations: []
 review: draft
 ---

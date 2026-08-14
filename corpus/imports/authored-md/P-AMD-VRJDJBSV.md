@@ -6,7 +6,9 @@ title: Show that $\mathbb{R}^3 - S^1 \simeq S^1 \vee S^2$.
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
 relations: []
 review: draft
 ---

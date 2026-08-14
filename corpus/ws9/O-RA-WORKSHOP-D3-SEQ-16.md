@@ -6,7 +6,9 @@ title: 'More Problems 16 (January 2006 #5) on Day 3: Sequences and Series'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - fubini-tonelli
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-16

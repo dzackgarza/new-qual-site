@@ -6,7 +6,9 @@ title: P-TFXE2 at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - maximal-functions
+  - l1
 relations:
 - kind: instance-of
   target: P-TFXE2

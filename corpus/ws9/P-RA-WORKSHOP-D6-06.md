@@ -6,7 +6,9 @@ title: 'A bounded function with finitely many discontinuities is Riemann integra
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - continuity
 relations: []
 review: draft
 ---

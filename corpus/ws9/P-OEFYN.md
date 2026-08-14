@@ -6,7 +6,10 @@ title: "Let $X$ and $Y$ be Hilbert spaces and $L : X \\to Y$ be a bounded lineaâ
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - hilbert-spaces
+  - compactness
 relations: []
 review: draft
 ---

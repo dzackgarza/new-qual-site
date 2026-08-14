@@ -6,7 +6,8 @@ title: P-UKIC7 at UGA real-analysis June 2007
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations:
 - kind: instance-of
   target: P-UKIC7

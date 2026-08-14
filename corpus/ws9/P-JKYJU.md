@@ -6,7 +6,10 @@ title: "Let $U \\subset \\mathbb{C}$ be an open set containing the closure $\\ov
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - uniform-convergence
+  - rouche
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'A positive continuous function has positive integral'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - continuity
 relations: []
 review: draft
 ---

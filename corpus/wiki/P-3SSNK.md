@@ -6,7 +6,10 @@ title: "(June 2014 1)Define $\\alpha \\colon [-1,1] \\to \\mathbb{R}$ by"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - continuity
 relations: []
 review: draft
 ---

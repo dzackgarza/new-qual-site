@@ -6,7 +6,9 @@ title: "Prove that every closed convex $K \\subset H$ a Hilbert space has a uni\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - norms
 relations: []
 review: draft
 ---

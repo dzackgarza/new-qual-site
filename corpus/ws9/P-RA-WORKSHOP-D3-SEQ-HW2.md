@@ -6,7 +6,10 @@ title: 'A limit point is the limit of a sequence from the set (warm-up)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - sequences-of-numbers
+  - closure
 relations: []
 review: draft
 ---

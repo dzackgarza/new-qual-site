@@ -6,7 +6,10 @@ title: "Suppose that $X \\subset Y$ and $X$ is a deformation retract of $Y$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - connectedness
+  - homotopy
 relations: []
 review: draft
 ---

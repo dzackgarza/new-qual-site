@@ -6,7 +6,10 @@ title: "Main Idea: Show that both spaces are a deformation retract\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - cell-complexes
+  - retracts
 relations: []
 review: draft
 ---

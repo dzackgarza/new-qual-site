@@ -6,7 +6,9 @@ title: "Show that for $X$ path connected, $\\pi_1(X) = \\mathbb{1} \\iff \\foral
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

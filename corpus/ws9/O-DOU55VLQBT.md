@@ -6,7 +6,10 @@ title: P-QSYKP at UCLA real-analysis Fall 2009
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - pdes
+  - norms
 relations:
 - kind: instance-of
   target: P-QSYKP

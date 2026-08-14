@@ -6,7 +6,9 @@ title: "Suppose that $f: [0,1] \\to \\mathbb{R}$ is differentiable and"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations: []
 review: draft
 ---

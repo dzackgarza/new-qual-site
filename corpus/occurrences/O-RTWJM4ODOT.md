@@ -6,7 +6,9 @@ title: P-KGSPZ at UGA real-analysis Spring 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-KGSPZ

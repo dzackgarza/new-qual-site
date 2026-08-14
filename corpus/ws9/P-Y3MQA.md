@@ -6,7 +6,10 @@ title: "This problem is about the integral $I = \\int_0^\\infty \\frac{\\cos u\\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - residues
+  - integrals
+  - riemann-integrability
 relations: []
 review: draft
 ---

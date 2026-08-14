@@ -6,7 +6,9 @@ title: 'Metric Spaces and Topology warm-up 4 on Day 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
+  - hilbert-spaces
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-HW4

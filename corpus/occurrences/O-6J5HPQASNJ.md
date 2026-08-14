@@ -6,7 +6,9 @@ title: P-UFRBU at UGA real-analysis January 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-UFRBU

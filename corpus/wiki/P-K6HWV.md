@@ -6,7 +6,9 @@ title: "Compute the homology of the one-point union of $S^1 \\times S^1$ and $S^
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

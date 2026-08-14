@@ -6,7 +6,10 @@ title: P-YPGAW at JHU real-analysis Fall 2012
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - l1
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-YPGAW

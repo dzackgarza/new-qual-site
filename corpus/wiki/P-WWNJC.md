@@ -6,7 +6,10 @@ title: "Without using the Riesz Representation Theorem, compute"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
+  - norms
 relations: []
 review: draft
 ---

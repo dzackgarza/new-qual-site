@@ -6,7 +6,10 @@ title: "What surface is represented by the $6\\dash$gon with edges identified a\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - classification
+  - quotient-spaces
 relations: []
 review: draft
 ---

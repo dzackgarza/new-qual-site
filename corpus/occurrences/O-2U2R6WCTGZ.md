@@ -6,7 +6,10 @@ title: P-QOC7V at UGA real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - series-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-QOC7V

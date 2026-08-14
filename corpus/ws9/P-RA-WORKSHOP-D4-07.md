@@ -6,7 +6,9 @@ title: 'Prove the extreme value theorem in one real dimension'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - compactness
 relations:
 - kind: uses
   target: T-RA-WORKSHOP-D4-3-2

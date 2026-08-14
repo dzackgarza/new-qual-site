@@ -6,7 +6,9 @@ title: P-DX7WA at UCLA real-analysis Spring 2009
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - integrals
 relations:
 - kind: instance-of
   target: P-DX7WA

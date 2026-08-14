@@ -6,7 +6,9 @@ title: 'The sum metric on a product and compact products'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
 relations: []
 review: draft
 ---

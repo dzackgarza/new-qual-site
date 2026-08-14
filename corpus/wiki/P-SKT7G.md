@@ -6,7 +6,10 @@ title: "Let $f:\\mathbb{R}\\to\\mathbb{R}$ be a"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - counterexamples
 relations: []
 review: draft
 ---

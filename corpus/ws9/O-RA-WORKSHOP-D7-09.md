@@ -6,7 +6,9 @@ title: 'Problem 9 (January 2020 4a) at Day 7: Sequences and Series of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - differentiation
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-09

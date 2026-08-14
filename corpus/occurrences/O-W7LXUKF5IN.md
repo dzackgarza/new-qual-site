@@ -6,7 +6,9 @@ title: P-A4O6K at UGA real-analysis January 2011
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
 relations:
 - kind: instance-of
   target: P-A4O6K

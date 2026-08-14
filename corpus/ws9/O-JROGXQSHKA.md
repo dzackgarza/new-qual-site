@@ -6,7 +6,10 @@ title: P-RC7YY at UCLA real-analysis Fall 2009
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - harmonic-functions
+  - functional-analysis
 relations:
 - kind: instance-of
   target: P-RC7YY

@@ -6,7 +6,10 @@ title: P-BXD6O at UGA real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - uniform-continuity
+  - l2
 relations:
 - kind: instance-of
   target: P-BXD6O

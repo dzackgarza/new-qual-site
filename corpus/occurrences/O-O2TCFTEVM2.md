@@ -6,7 +6,10 @@ title: P-MMCHV at UGA real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - differentiation
+  - uniform-convergence
 relations:
 - kind: instance-of
   target: P-MMCHV

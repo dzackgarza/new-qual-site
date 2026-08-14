@@ -6,7 +6,10 @@ title: "Assume $(X,d)$ is a compact metric space."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

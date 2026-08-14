@@ -6,7 +6,10 @@ title: "Let $f: \\RR \\to \\CC$ be continuous with period 1."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - integrals
+  - fourier-analysis
 relations: []
 review: draft
 ---

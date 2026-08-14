@@ -6,7 +6,8 @@ title: "Suppose that $f,g:\\mathbb{R}\\to\\mathbb{R}$ are"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations: []
 review: draft
 ---

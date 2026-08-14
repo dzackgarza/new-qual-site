@@ -6,7 +6,9 @@ title: "Spring 2006, 12"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - connectedness
 relations: []
 review: draft
 ---

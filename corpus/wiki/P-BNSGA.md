@@ -6,7 +6,10 @@ title: "Let $A$ be the union of the unit sphere in $\\RR^3$ and the interval $\\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
+  - covering-spaces
 relations: []
 review: draft
 ---

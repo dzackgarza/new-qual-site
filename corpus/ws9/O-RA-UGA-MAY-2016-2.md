@@ -6,7 +6,9 @@ title: 'Problem 2 at the Masters & Ph.D. Qualifying Exam, Analysis: Math 825/826
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-RA16M2

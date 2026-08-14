@@ -6,7 +6,10 @@ title: "Give the definition of a covering space $\\hat{X}$ (and covering map $p 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

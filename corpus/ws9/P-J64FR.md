@@ -6,7 +6,10 @@ title: Consider the complex Hilbert space
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - riesz-representation
+  - series-of-functions
 relations: []
 review: draft
 ---

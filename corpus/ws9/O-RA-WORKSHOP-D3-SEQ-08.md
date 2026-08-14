@@ -6,7 +6,9 @@ title: 'Sequences and Series problem 8 (May 2011 #4a) on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - convergence-of-functions
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-08

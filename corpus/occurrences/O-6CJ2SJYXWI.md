@@ -6,7 +6,8 @@ title: P-I6PEO at UGA real-analysis January 2007
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
 relations:
 - kind: instance-of
   target: P-I6PEO

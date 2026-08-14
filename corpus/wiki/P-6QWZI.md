@@ -7,7 +7,10 @@ title: "Let \\( (X, \\mathcal{M}, \\mu)  \\) be a finite measure space and let \
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - egorov
+  - measure-theory
+  - l1
 relations: []
 review: draft
 ---

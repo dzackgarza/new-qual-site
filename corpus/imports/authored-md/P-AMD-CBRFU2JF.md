@@ -6,7 +6,10 @@ title: Let $M = (S^1 \cross B^2) \union_{\id_\del} (S^1 \cross B^2)$ and…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - manifolds
 relations: []
 review: draft
 ---

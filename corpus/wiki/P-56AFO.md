@@ -6,7 +6,9 @@ title: "Show that $\\int_{\\BB^n} {1 \\over \\abs{x}^p } \\dx &< \\infty \\iff p
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - euclidean-spaces
 relations: []
 review: draft
 ---

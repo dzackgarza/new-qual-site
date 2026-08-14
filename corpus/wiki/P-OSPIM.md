@@ -6,7 +6,10 @@ title: "a. See \\cref{equivalence_of_approximating_measures}"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fatou
+  - measure-theory
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

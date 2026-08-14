@@ -6,7 +6,9 @@ title: P-O7DMP at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - integrals
 relations:
 - kind: instance-of
   target: P-O7DMP

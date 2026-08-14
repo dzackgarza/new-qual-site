@@ -6,7 +6,10 @@ title: 'Problem 8 (January 2012 4b, extended) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-08

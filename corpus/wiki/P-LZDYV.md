@@ -6,7 +6,10 @@ title: "State van Kampen's theorem."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - van-kampen
+  - fundamental-group
+  - surfaces
 relations: []
 review: draft
 ---

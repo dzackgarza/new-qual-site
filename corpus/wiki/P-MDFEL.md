@@ -6,7 +6,9 @@ title: "Suppose that $X$ is a Hausdorff topological space and that $A \\subset X
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

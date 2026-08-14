@@ -6,7 +6,9 @@ title: "Lemma: $S^n - \\theset{p_i}_{i=1}^k = \\bigvee_{k-1}S^{n-1}$, i.e. $S^n$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Metric Spaces and Topology warm-up 5 (January 2010 #1a partial) on Day 2
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - function-spaces
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-HW5

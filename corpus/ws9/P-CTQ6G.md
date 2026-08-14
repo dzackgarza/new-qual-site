@@ -6,7 +6,10 @@ title: (1) $Y$ is metric space. Prove $y\in Y$ is isolated iff the complement…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - completeness
+  - density
 relations: []
 review: draft
 ---

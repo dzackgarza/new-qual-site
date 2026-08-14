@@ -6,7 +6,8 @@ title: "Show that $E$ is measurable iff $E$ is regular."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
 relations: []
 review: draft
 ---

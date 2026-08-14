@@ -6,7 +6,11 @@ title: "Let $I = [0,1]$ and denote $\\|\\cdot\\|_p$ the $p$-norm $\\|f\\|_p = \\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - norms
+  - completeness
+  - convolution
 relations: []
 review: draft
 ---

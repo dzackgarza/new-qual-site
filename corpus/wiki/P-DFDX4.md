@@ -6,7 +6,8 @@ title: Let the power series series
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
 relations: []
 review: draft
 ---

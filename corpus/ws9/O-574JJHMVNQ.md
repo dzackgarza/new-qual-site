@@ -6,7 +6,9 @@ title: P-RGBUN at JHU real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - residues
+  - integrals
 relations:
 - kind: instance-of
   target: P-RGBUN

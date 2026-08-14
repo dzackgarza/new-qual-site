@@ -6,7 +6,9 @@ title: 'Problem 3 at the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/8
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations:
 - kind: instance-of
   target: P-RA18M3

@@ -6,7 +6,10 @@ title: "For this problem, consider just Lebesgue measurable\u2026"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fatou
+  - convergence-of-integrals
+  - counterexamples
 relations: []
 review: draft
 ---

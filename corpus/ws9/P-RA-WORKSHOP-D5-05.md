@@ -6,7 +6,9 @@ title: 'A difference quotient involving powers of the variable'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
 relations: []
 review: draft
 ---

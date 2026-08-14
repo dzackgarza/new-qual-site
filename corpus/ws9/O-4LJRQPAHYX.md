@@ -6,7 +6,8 @@ title: P-GKGSD at JHU real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-GKGSD

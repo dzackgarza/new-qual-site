@@ -6,7 +6,10 @@ title: "- Let $\\Lambda\\in L^2(X)\\dual$."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - riesz-representation
+  - l2
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Suppose $\\varphi\\in L^1(\\RR)$ with"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
+  - l1
 relations: []
 review: draft
 ---

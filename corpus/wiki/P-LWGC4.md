@@ -6,7 +6,9 @@ title: "Let $f = \\id_{\\RP^2} \\lor \\ast$ and $g = \\ast \\lor id_{S^1}$ be tw
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homotopy
 relations: []
 review: draft
 ---

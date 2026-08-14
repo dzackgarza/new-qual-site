@@ -6,7 +6,10 @@ title: "Let $\\theset{a_n}$ be a sequence of real numbers such that $\\theset{b_
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - functional-analysis
+  - series-of-numbers
 relations: []
 review: draft
 ---

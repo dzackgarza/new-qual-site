@@ -6,7 +6,9 @@ title: P-KZZ7M at UGA real-analysis January 2005
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-KZZ7M

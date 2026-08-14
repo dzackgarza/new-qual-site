@@ -6,7 +6,10 @@ title: P-K4EUR at UGA real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - riesz-representation
+  - l2
 relations:
 - kind: instance-of
   target: P-K4EUR

@@ -6,7 +6,10 @@ title: "a. Prove that the operator $T : L^2([0,1]) \\to L^2([0,1])$ defined byâ€
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - l2
+  - compactness
 relations: []
 review: draft
 ---

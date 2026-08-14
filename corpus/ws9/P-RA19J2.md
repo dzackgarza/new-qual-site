@@ -6,7 +6,10 @@ title: 'UGA analysis qualifying exam, January 2019, problem 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - compactness
+  - closure
 relations: []
 review: draft
 ---

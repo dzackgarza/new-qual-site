@@ -6,7 +6,10 @@ title: 'UGA analysis qualifying exam, May 2016, problem 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

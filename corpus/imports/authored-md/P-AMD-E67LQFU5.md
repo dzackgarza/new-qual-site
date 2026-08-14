@@ -6,7 +6,10 @@ title: Identify the following groups up to isomorphism
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - modules
+  - homological-algebra
+  - groups
 relations: []
 review: draft
 ---

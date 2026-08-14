@@ -6,7 +6,8 @@ title: "Use the definition of the derivative to prove that"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations: []
 review: draft
 ---

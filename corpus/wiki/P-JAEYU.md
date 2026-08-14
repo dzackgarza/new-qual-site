@@ -6,7 +6,9 @@ title: "- Show that the topologist's sine curve is connected but not path-conn\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations: []
 review: draft
 ---

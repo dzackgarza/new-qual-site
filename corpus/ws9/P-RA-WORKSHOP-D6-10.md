@@ -6,7 +6,9 @@ title: 'Prove Theorem 5.3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - riemann-integrability
 relations:
 - kind: uses
   target: T-RA-WORKSHOP-D6-5-3

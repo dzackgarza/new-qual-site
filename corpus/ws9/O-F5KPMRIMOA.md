@@ -6,7 +6,10 @@ title: P-3GWIK at JHU (undated) (real-analysis)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - compactness
+  - hilbert-spaces
 relations:
 - kind: instance-of
   target: P-3GWIK

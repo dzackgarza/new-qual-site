@@ -6,7 +6,9 @@ title: 'Bounded variation of a point-mass function with absolutely summable weig
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - series-of-numbers
 relations: []
 review: draft
 ---

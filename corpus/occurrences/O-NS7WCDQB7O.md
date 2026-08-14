@@ -6,7 +6,9 @@ title: P-CKY3L at UGA real-analysis Fall 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - l1
 relations:
 - kind: instance-of
   target: P-CKY3L

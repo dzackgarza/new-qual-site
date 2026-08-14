@@ -6,7 +6,8 @@ title: "Assume $\\beta >0$, $a_n>0$, $n=1,2,\\ldots$, and"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations: []
 review: draft
 ---

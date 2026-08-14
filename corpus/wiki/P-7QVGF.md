@@ -6,7 +6,10 @@ title: Show that if $f$ is continuous with compact support on $\RR$, then
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
+  - l1
 relations: []
 review: draft
 ---

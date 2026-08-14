@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, January 2019, problem 6'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

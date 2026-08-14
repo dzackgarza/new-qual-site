@@ -6,7 +6,10 @@ title: "Compute, by any means available, the fundamental group and all the hom\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - covering-spaces
 relations: []
 review: draft
 ---

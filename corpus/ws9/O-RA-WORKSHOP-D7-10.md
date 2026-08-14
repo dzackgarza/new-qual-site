@@ -6,7 +6,10 @@ title: 'Problem 10 (June 2005 5) at Day 7: Sequences and Series of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - integrals
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-10

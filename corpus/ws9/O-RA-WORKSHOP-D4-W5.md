@@ -6,7 +6,9 @@ title: 'Warm-up 5 at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-W5

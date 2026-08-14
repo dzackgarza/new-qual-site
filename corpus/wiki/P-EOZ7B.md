@@ -6,7 +6,9 @@ title: "Recall that a topological space is said to be connected if\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - continuity
 relations: []
 review: draft
 ---

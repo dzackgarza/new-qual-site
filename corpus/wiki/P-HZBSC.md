@@ -6,7 +6,10 @@ title: "Let $V = \\DD^2 \\times S^1 = \\theset{ (z, e^{it}) \\suchthat \\norm z 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
+  - manifolds
 relations: []
 review: draft
 ---

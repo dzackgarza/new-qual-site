@@ -6,7 +6,9 @@ title: "\\label{hilbert_space_exam_question}"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
 relations: []
 review: draft
 ---

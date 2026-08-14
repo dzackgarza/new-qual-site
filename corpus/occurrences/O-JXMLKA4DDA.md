@@ -6,7 +6,9 @@ title: P-EUIAS at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - functional-analysis
 relations:
 - kind: instance-of
   target: P-EUIAS

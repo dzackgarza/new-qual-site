@@ -6,7 +6,9 @@ title: P-5YLZS at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - integrals
 relations:
 - kind: instance-of
   target: P-5YLZS

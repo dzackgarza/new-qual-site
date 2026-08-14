@@ -6,7 +6,9 @@ title: "Let $U \\subset \\mathbb{C}$ be an open set containing $\\overline{D}(P,
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - rouche
+  - holomorphic-functions
 relations: []
 review: draft
 ---

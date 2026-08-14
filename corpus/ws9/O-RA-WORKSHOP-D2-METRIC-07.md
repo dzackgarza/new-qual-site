@@ -6,7 +6,10 @@ title: 'Metric Spaces and Topology problem 7 (June 2003 #1b,c) on Day 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-07

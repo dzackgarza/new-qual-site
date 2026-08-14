@@ -6,7 +6,9 @@ title: "Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \\da \\ts{x
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - functional-analysis
 relations: []
 review: draft
 ---

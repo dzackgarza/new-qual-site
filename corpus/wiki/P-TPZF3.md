@@ -6,7 +6,10 @@ title: "Let $K$ be the set of numbers in $[0, 1]$ whose decimal expansions do\u2
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - cantor-set
+  - measure-theory
+  - compactness
 relations: []
 review: draft
 ---

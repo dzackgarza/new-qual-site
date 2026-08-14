@@ -6,7 +6,10 @@ title: P-FC62S at TAMU real-analysis August 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-FC62S

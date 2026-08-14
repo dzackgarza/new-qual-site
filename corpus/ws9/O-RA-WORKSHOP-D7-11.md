@@ -6,7 +6,9 @@ title: 'Problem 11 (January 2005 3b) at Day 7: Sequences and Series of Functions
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-11

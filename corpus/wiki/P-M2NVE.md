@@ -6,7 +6,9 @@ title: "Prove that there does not exist a continuous map $f : S^2 \\to S^2$ fro\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homotopy
 relations: []
 review: draft
 ---

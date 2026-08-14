@@ -6,7 +6,10 @@ title: P-BDFPC at UGA real-analysis May 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - stone-weierstrass
 relations:
 - kind: instance-of
   target: P-BDFPC

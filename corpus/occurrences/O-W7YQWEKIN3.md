@@ -6,7 +6,10 @@ title: P-U354O at UGA real-analysis January 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - compactness
+  - convergence-of-functions
 relations:
 - kind: instance-of
   target: P-U354O

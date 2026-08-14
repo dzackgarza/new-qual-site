@@ -6,7 +6,8 @@ title: "Let $f$ be a function of bounded variation on"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
 relations: []
 review: draft
 ---

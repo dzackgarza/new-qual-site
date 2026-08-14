@@ -6,7 +6,10 @@ title: "Show that a continuous function on a compact set is uniformly continuo\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

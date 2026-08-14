@@ -6,7 +6,9 @@ title: Let $R = \ZZ[x,y]$, and $M = R/(x-y), N = R/(x,y)$. Construct free…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - modules
 relations: []
 review: draft
 ---

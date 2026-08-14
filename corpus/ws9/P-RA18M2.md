@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, May 2018, problem 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - convergence-of-functions
 relations: []
 review: draft
 ---

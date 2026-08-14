@@ -6,7 +6,9 @@ title: 'Problem 6 (June 2005 1b) at Day 6: Integral Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D6-06

@@ -6,7 +6,10 @@ title: 'Problem 14 (June 2009 4a) at Day 7: Sequences and Series of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - continuity
+  - sequences-of-functions
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-14

@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, January 2019, problem 4'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations: []
 review: draft
 ---

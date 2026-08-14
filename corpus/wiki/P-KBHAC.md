@@ -6,7 +6,10 @@ title: "Give a list without repetitions of all compact surfaces (orientable or\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - surfaces
+  - euler-characteristic
 relations: []
 review: draft
 ---

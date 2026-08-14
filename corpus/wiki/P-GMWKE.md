@@ -6,7 +6,10 @@ title: "- Compute $H^*(S^2 \\vee S^2 \\vee S^4)$"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

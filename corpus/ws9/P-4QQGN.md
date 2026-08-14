@@ -6,7 +6,9 @@ title: (1) Let $f(x)$ be a real valued function on the real line that is diff…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - measure-theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "1. Let $f \\in C_c^0(\\RR^n)$, and show"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - uniform-continuity
+  - l1
 relations: []
 review: draft
 ---

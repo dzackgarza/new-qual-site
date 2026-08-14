@@ -6,7 +6,9 @@ title: P-C3MKZ at UGA real-analysis May 2011
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - convergence-of-functions
 relations:
 - kind: instance-of
   target: P-C3MKZ

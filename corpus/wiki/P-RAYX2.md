@@ -6,7 +6,10 @@ title: "Produce sequences $\\{a_n\\},\\,\\{b_n\\}$ of"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: 'Every bounded-variation function is a difference of increasing functions
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
 relations: []
 review: draft
 ---

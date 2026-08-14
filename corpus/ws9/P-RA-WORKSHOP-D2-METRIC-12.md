@@ -6,7 +6,9 @@ title: 'Prove the finite-or-countable interval decomposition of open subsets of 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - euclidean-spaces
+  - measure-theory
 relations: []
 review: draft
 ---

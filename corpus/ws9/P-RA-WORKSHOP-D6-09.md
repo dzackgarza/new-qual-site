@@ -6,7 +6,10 @@ title: 'An integral bound involving a twice-differentiable function'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - differentiation
+  - norms
 relations: []
 review: draft
 ---

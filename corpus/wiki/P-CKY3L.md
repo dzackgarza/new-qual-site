@@ -6,7 +6,9 @@ title: "Let $S = \\spanof_\\CC\\theset{\\chi_{(a, b)} \\suchthat a, b \\in \\RR}
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - l1
 relations: []
 review: draft
 ---

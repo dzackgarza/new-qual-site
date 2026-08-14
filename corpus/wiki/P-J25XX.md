@@ -6,7 +6,9 @@ title: "Let $0 < \\lambda < 1$ and construct a Cantor set $C_\\lambda$ by succe\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - cantor-set
+  - measure-theory
 relations: []
 review: draft
 ---

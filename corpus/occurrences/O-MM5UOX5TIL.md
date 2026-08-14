@@ -6,7 +6,9 @@ title: P-MCFQT at UGA real-analysis June 2013
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-MCFQT

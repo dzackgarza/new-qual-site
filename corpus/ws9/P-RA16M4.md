@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, May 2016, problem 4'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - differentiation
 relations: []
 review: draft
 ---

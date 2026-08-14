@@ -6,7 +6,10 @@ title: 'Analyze the Babylonian square-root iteration (warm-up)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
+  - fixed-points
 relations: []
 review: draft
 ---

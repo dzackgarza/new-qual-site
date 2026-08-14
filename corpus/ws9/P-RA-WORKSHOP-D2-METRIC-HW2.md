@@ -6,7 +6,9 @@ title: 'Prove compactness of the reciprocal-integer set (warm-up)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

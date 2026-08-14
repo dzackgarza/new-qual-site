@@ -6,7 +6,9 @@ title: P-X3MW2 at UGA real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
 relations:
 - kind: instance-of
   target: P-X3MW2

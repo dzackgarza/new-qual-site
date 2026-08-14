@@ -6,7 +6,10 @@ title: 'Problem 1 at the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/8
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - equicontinuity
 relations:
 - kind: instance-of
   target: P-RA19J1

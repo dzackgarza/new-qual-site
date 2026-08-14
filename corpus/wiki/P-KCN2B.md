@@ -6,7 +6,9 @@ title: "Let $X$ be a topological space and let $\\Delta = \\theset{(x, y) \\in X
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - product-topology
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "- Show that if $f:X\\to Y$ is continuous and $X$ is compact then the im\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

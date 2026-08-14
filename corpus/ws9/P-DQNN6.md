@@ -6,7 +6,10 @@ title: We say a sequence $\{a_n\}$ in $[0,1]$ is equi-distributed if for all…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - measure-theory
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

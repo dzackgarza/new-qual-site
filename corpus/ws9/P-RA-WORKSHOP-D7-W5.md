@@ -6,7 +6,10 @@ title: 'Equicontinuity upgrades pointwise convergence to uniform convergence'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - uniform-convergence
+  - compactness
 relations: []
 review: draft
 ---

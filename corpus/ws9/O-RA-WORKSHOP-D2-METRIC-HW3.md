@@ -6,7 +6,8 @@ title: 'Metric Spaces and Topology warm-up 3 on Day 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-HW3

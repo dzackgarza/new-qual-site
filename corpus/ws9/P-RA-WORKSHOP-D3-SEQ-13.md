@@ -6,7 +6,8 @@ title: 'Prove the ratio test from the root test'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations: []
 review: draft
 ---

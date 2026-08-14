@@ -6,7 +6,9 @@ title: 'A continuous self-map of an interval has a fixed point'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - continuity
 relations: []
 review: draft
 ---

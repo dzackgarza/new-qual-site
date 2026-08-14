@@ -6,7 +6,10 @@ title: "Let $M$ be a compact orientable surface of genus $2$ without boundary."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - surfaces
 relations: []
 review: draft
 ---

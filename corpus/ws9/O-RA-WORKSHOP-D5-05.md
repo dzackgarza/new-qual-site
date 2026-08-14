@@ -6,7 +6,9 @@ title: 'Problem 5 (January 2006 2b) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-05

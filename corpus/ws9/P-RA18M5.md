@@ -6,7 +6,10 @@ title: 'UGA analysis qualifying exam, May 2018, problem 5'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - uniform-convergence
+  - compactness
 relations: []
 review: draft
 ---

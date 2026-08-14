@@ -6,7 +6,10 @@ title: "a. Prove that if $g\\in L^1(\\RR)$ then"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - small-tails
+  - l1
+  - limits
 relations: []
 review: draft
 ---

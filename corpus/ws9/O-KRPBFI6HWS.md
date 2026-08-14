@@ -6,7 +6,8 @@ title: P-COS2L at UCLA real-analysis Spring 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - harmonic-functions
 relations:
 - kind: instance-of
   target: P-COS2L

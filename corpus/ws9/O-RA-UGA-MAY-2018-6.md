@@ -6,7 +6,10 @@ title: 'Problem 6 at the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/8
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - continuity
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA18M6

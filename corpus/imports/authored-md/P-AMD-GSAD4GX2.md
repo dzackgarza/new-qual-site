@@ -6,7 +6,11 @@ title: "Is every complete bounded metric space compact? If so, give\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - completeness
+  - counterexamples
 relations: []
 review: draft
 ---

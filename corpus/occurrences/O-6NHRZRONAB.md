@@ -6,7 +6,10 @@ title: P-B2ZXW at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l1
+  - small-tails
+  - norms
 relations:
 - kind: instance-of
   target: P-B2ZXW

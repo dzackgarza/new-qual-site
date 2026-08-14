@@ -6,7 +6,9 @@ title: "Spring 2021, 7"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - connectedness
 relations: []
 review: draft
 ---

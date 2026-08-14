@@ -6,7 +6,10 @@ title: P-J64FR at UCLA real-analysis Fall 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - riesz-representation
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-J64FR

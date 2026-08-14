@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, May 2016, problem 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

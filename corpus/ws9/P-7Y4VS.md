@@ -6,7 +6,10 @@ title: Let $U$ be an open subset of $\mathbb{C}$. We use the notion
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - l2
+  - function-spaces
 relations: []
 review: draft
 ---

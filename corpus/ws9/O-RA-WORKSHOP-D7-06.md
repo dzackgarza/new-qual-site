@@ -6,7 +6,10 @@ title: 'Problem 6 (June 2010 6a) at Day 7: Sequences and Series of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-functions
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-06

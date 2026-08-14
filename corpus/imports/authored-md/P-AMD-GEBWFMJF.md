@@ -6,7 +6,9 @@ title: Prove the Ham Sandwich theorem.
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - degree
 relations: []
 review: draft
 ---

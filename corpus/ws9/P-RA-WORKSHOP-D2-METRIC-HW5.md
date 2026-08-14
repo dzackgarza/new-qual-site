@@ -6,7 +6,10 @@ title: 'Classify two sets as open, closed, or compact in their metric spaces (wa
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - function-spaces
+  - metric-spaces
 relations: []
 review: draft
 ---

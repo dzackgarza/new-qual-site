@@ -6,7 +6,9 @@ title: P-H2AG2 at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
 relations:
 - kind: instance-of
   target: P-H2AG2

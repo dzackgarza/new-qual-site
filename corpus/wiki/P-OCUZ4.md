@@ -6,7 +6,9 @@ title: "Prove or disprove: Every map from $\\RP^2 \\lor \\RP^2$ to itself has a 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homology
 relations: []
 review: draft
 ---

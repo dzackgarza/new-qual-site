@@ -6,7 +6,11 @@ title: P-XL7MP at UGA real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - lp-spaces
+  - uniform-convergence
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-XL7MP

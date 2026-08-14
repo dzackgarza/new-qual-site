@@ -6,7 +6,10 @@ title: Show that $T-D^1 := X \simeq S^1 \vee S^1$.
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
+  - surfaces
 relations: []
 review: draft
 ---

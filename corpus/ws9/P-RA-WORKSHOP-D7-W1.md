@@ -6,7 +6,10 @@ title: 'Stone–Weierstrass and a polynomial algebra with high-degree terms'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - polynomials
+  - function-spaces
 relations:
   - kind: uses
     target: T-RA-WORKSHOP-D7-6-7

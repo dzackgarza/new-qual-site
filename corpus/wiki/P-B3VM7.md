@@ -6,7 +6,10 @@ title: "State the Lefschetz Fixed Point Theorem for a finite\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - degree
+  - homology
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "- Prove Fatou's lemma using the Monotone Convergence Theorem."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fatou
+  - convergence-of-integrals
+  - l1
 relations: []
 review: draft
 ---

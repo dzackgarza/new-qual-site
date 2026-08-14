@@ -6,7 +6,9 @@ title: 'Metric Spaces and Topology problem 2 (May 2017, 6) on Day 8: Miscellaneo
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-METRIC2

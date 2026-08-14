@@ -6,7 +6,10 @@ title: 'Problem 9 (June 2009 5b) at Day 6: Integral Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - differentiation
+  - norms
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D6-09

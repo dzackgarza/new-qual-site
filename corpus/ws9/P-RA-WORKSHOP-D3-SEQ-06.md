@@ -6,7 +6,9 @@ title: 'Compute the limit of a square-root difference sequence'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

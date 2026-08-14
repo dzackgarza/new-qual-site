@@ -6,7 +6,10 @@ title: "Let $f$ be a continuous real-valued function on"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - integrals
+  - continuity
 relations: []
 review: draft
 ---

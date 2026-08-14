@@ -6,7 +6,8 @@ title: 'Problem 14 at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-14

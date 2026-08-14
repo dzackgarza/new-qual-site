@@ -6,7 +6,9 @@ title: P-O3LYK at JHU real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - rouche
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-O3LYK

@@ -6,7 +6,10 @@ title: P-COY2N at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - norms
+  - lp-spaces
 relations:
 - kind: instance-of
   target: P-COY2N

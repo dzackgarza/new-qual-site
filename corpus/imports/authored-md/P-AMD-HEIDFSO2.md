@@ -6,7 +6,10 @@ title: "Show that $H_(X; \\QQ) = H_(X;\\ZZ)\\tensor \\QQ$ $H^(X; \\ZZ) = \\hom(H
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cohomology
+  - homological-algebra
 relations: []
 review: draft
 ---

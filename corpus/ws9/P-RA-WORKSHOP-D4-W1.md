@@ -6,7 +6,9 @@ title: 'Uniform continuity and a continuous non-uniformly-continuous example'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - counterexamples
 relations: []
 review: draft
 ---

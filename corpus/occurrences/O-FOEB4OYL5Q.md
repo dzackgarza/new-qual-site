@@ -6,7 +6,10 @@ title: P-YIC3K at UGA real-analysis January 2009
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - integrals
+  - continuity
 relations:
 - kind: instance-of
   target: P-YIC3K

@@ -6,7 +6,8 @@ title: 'Warm-up 4 (June 2013 1b) at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - limits
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-W4

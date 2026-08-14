@@ -6,7 +6,11 @@ title: Describe a CW complex structure for the lens space $L(p, 1)$ and…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - fundamental-group
+  - manifolds
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Facts used: $M$ closed, connected, oriented $\\implies H_i(M)\\cong H^{n
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - poincare-duality
+  - homology
+  - cohomology
+  - manifolds
 relations: []
 review: draft
 ---

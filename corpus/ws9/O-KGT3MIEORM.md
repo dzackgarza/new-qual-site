@@ -6,7 +6,11 @@ title: P-GFCIL at JHU (undated) (real-analysis)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - norms
+  - completeness
+  - convolution
 relations:
 - kind: instance-of
   target: P-GFCIL

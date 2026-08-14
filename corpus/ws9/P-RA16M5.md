@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, May 2016, problem 5'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'A monotone increasing function has at most countably many jump discontin
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - limits
 relations: []
 review: draft
 ---

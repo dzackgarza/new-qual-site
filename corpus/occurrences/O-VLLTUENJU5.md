@@ -6,7 +6,9 @@ title: P-I73ZD at UGA real-analysis May 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
 relations:
 - kind: instance-of
   target: P-I73ZD

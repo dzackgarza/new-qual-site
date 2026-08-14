@@ -6,7 +6,10 @@ title: "Let $\\phi\\in L^\\infty(\\RR)$. Show that the following limit exists an
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - lp-spaces
+  - limits
 relations: []
 review: draft
 ---

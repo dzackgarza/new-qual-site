@@ -6,7 +6,9 @@ title: "Let $f(x) = \\sum _{n=0}^{\\infty} \\frac{x^{n}}{n !}$ Describe the inte
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

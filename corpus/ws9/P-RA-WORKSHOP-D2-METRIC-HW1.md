@@ -6,7 +6,9 @@ title: 'State the open-cover definition of compactness (warm-up)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

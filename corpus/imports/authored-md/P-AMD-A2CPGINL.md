@@ -6,7 +6,10 @@ title: Show that $\pi_1(K)$, the Klein bottle, is given by pairs $(m,n)$…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - covering-spaces
 relations: []
 review: draft
 ---

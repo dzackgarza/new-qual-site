@@ -6,7 +6,9 @@ title: P-CFMLS at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-CFMLS

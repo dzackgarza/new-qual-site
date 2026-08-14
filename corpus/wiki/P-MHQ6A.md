@@ -6,7 +6,10 @@ title: "If $X$ is a topological space and $S \\subset X$, define in terms of ope
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - closure
+  - subspace-topology
 relations: []
 review: draft
 ---

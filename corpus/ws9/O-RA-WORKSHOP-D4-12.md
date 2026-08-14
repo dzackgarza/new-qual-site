@@ -6,7 +6,9 @@ title: 'Problem 12 (January 2012 1b) at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - limits
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-12

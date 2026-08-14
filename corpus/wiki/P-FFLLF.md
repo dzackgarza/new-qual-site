@@ -6,7 +6,10 @@ title: "Let $f: [0, 1]\\to \\RR$ be continuous, and prove the Weierstrass approx
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - uniform-convergence
 relations: []
 review: draft
 ---

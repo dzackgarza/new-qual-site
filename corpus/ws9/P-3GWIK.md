@@ -6,7 +6,10 @@ title: Prove that the unit ball of $L^2$ endowed with its natural strong topo…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - compactness
+  - hilbert-spaces
 relations: []
 review: draft
 ---

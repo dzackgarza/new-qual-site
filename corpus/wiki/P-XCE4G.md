@@ -6,7 +6,10 @@ title: "Let $f_n \\colon [0,1) \\to \\mathbb{R}$ be the function defined by"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - uniform-convergence
+  - differentiation
 relations: []
 review: draft
 ---

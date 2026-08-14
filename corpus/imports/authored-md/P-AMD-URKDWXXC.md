@@ -6,7 +6,8 @@ title: Compute $\tor(\QQ, A)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
 relations: []
 review: draft
 ---

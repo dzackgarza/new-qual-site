@@ -6,7 +6,10 @@ title: 'Failure of uniform convergence for $f(x^n)$ when endpoint values differ'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Metric Spaces and Topology problem 3 (January 2017, 3) on Day 8: Miscell
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - compactness
+  - convergence-of-functions
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-METRIC3

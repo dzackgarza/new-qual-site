@@ -6,7 +6,9 @@ title: P-W7RQ2 at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - integrals
 relations:
 - kind: instance-of
   target: P-W7RQ2

@@ -6,7 +6,10 @@ title: "Consider $L^2([0, 1])$ and define"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
+  - polynomials
 relations: []
 review: draft
 ---

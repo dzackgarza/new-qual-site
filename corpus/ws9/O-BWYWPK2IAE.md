@@ -6,7 +6,9 @@ title: P-I67ZI at TAMU real-analysis August 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
 relations:
 - kind: instance-of
   target: P-I67ZI

@@ -6,7 +6,10 @@ title: P-P6D6X at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - fatou
+  - l1
 relations:
 - kind: instance-of
   target: P-P6D6X

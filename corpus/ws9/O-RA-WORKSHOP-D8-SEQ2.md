@@ -6,7 +6,9 @@ title: 'Sequences and Series problem 2 on Day 8: Miscellaneous Topics'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-SEQ2

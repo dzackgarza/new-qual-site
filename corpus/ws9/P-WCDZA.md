@@ -6,7 +6,10 @@ title: "a. Prove the Riemann-Lebesgue Lemma: if $f \\in L^1(\\mathbb{R}^d)$, the
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l1
+  - convolution
 relations: []
 review: draft
 ---

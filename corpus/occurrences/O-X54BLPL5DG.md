@@ -6,7 +6,10 @@ title: P-GJIZI at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l1
+  - series-of-functions
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-GJIZI

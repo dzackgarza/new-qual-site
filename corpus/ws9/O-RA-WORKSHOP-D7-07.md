@@ -6,7 +6,9 @@ title: 'Problem 7 (January 2008 5a) at Day 7: Sequences and Series of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - convergence-of-functions
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-07

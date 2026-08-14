@@ -6,7 +6,9 @@ title: 'Determine convergence of a parameter-dependent power series'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - convergence-of-functions
 relations: []
 review: draft
 ---

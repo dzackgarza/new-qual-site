@@ -6,7 +6,10 @@ title: "Let $f: [1, \\infty) \\to \\RR$ such that $f(1) = 1$ and"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - integrals
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Spring 2021, 4"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Warm-up 3 (KRD10, Exercise 6.2.B) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-W3

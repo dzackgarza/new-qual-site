@@ -6,7 +6,10 @@ title: "Show that if $f\\in L^1$ then $\\hat f$ is bounded and uniformly continu
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l1
+  - uniform-continuity
 relations: []
 review: draft
 ---

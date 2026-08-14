@@ -6,7 +6,10 @@ title: 'Sequences and Series problem 4 on Day 8: Miscellaneous Topics'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - uniform-convergence
+  - differentiation
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-SEQ4

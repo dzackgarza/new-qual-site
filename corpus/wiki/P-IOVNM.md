@@ -6,7 +6,10 @@ title: "Let $X$ be a compact Hausdorff space and suppose $R \\subset X \\times X
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - hausdorff-spaces
+  - compactness
 relations: []
 review: draft
 ---

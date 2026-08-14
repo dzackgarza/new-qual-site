@@ -6,7 +6,10 @@ title: "[Reconstructed from solution \u2014 no problem statement page was\u2026"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - l2
 relations: []
 review: draft
 ---

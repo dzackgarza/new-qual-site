@@ -6,7 +6,9 @@ title: 'Problem 13 (June 2007 4b part i) at Day 7: Sequences and Series of Funct
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-13

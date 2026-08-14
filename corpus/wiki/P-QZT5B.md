@@ -6,7 +6,9 @@ title: "Show that if $\\sum \\mu(E_k) < \\infty$ then almost every $x\\in X$ is 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations: []
 review: draft
 ---

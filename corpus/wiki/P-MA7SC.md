@@ -6,7 +6,9 @@ title: "4. $S^2 \\union_f D^2$, where $f$ attaches to the equator"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations: []
 review: draft
 ---

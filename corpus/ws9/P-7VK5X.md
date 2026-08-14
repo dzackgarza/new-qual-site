@@ -6,7 +6,9 @@ title: "If $A$ is a Borel subset of the line. Then $E=\\{(x,y):x-y\\in A\\}$ is 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - fubini-tonelli
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Prove Theorem 3.3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - compactness
+  - continuity
 relations:
 - kind: uses
   target: T-RA-WORKSHOP-D4-3-3

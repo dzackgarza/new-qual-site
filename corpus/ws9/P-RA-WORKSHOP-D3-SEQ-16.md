@@ -6,7 +6,9 @@ title: 'Interchange two nonnegative double-series summations'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - fubini-tonelli
 relations: []
 review: draft
 ---

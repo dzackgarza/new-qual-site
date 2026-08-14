@@ -6,7 +6,10 @@ title: P-YSR66 at TAMU real-analysis January 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - compactness
 relations:
 - kind: instance-of
   target: P-YSR66

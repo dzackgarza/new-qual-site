@@ -6,7 +6,10 @@ title: P-DQNN6 at TAMU real-analysis January 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - measure-theory
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-DQNN6

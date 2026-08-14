@@ -6,7 +6,9 @@ title: P-XHEB6 at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - polynomials
 relations:
 - kind: instance-of
   target: P-XHEB6

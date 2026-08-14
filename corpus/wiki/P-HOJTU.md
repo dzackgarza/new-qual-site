@@ -6,7 +6,8 @@ title: "It is a fact that if $X$ is a single point then $H_1 (X) = \\theset{0}$\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations: []
 review: draft
 ---

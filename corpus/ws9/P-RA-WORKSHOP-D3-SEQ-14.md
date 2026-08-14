@@ -6,7 +6,9 @@ title: 'Use an epsilon–delta proof for a quotient of convergent sequences'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: P-WVJBX at JHU real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - convergence-of-functions
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-WVJBX

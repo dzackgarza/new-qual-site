@@ -6,7 +6,10 @@ title: P-AUACU at UGA real-analysis June 2008
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - mean-value-theorem
 relations:
 - kind: instance-of
   target: P-AUACU

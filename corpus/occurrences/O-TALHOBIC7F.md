@@ -6,7 +6,10 @@ title: P-K7QEP at UGA real-analysis Spring 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riesz-representation
+  - lp-spaces
+  - density
 relations:
 - kind: instance-of
   target: P-K7QEP

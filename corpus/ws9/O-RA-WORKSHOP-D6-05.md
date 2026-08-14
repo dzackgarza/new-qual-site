@@ -6,7 +6,9 @@ title: 'Problem 5 (January 2006 4b) at Day 6: Integral Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D6-05

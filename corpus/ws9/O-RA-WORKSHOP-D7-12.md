@@ -6,7 +6,10 @@ title: 'Problem 12 (January 2006 7a) at Day 7: Sequences and Series of Functions
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - uniform-convergence
+  - polynomials
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-12

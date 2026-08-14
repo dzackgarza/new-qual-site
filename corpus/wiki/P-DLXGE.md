@@ -6,7 +6,10 @@ title: "a. Let $S_1$ and $S_2$ be disjoint surfaces."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "- Show that if $f\\in C^1(\\RR)$ and both $\\lim_{x\\to \\infty} f(x)$ a
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
 relations: []
 review: draft
 ---

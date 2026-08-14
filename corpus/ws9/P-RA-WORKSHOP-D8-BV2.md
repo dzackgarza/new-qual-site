@@ -6,7 +6,8 @@ title: 'The reciprocal of a bounded-away-from-zero bounded-variation function'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
 relations: []
 review: draft
 ---

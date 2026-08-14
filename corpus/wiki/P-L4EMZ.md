@@ -6,7 +6,9 @@ title: "Let $X$ be a topological space. State what it means for $X$ to be\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

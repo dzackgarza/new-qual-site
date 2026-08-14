@@ -6,7 +6,10 @@ title: "Define unitary operator on a complex Hilbert space."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - harmonic-functions
+  - functional-analysis
 relations: []
 review: draft
 ---

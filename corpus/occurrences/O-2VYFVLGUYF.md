@@ -6,7 +6,9 @@ title: P-PUYFS at UGA real-analysis January 2011
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-PUYFS

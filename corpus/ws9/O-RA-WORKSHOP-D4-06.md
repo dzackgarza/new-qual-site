@@ -6,7 +6,9 @@ title: 'Problem 6 (January 2009 2a) at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-06

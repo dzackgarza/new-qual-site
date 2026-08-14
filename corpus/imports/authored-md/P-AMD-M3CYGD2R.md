@@ -6,7 +6,10 @@ title: 'Compute the homology of:'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
+  - quotient-spaces
 relations: []
 review: draft
 ---

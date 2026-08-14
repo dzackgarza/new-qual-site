@@ -6,7 +6,8 @@ title: 'Problem 13 at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-13

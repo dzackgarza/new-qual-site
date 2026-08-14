@@ -6,7 +6,9 @@ title: "Compute the following limit and justify your calculations: $\\lim_{n \\r
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations: []
 review: draft
 ---

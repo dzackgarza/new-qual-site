@@ -6,7 +6,10 @@ title: P-XLANN at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - lp-spaces
+  - riesz-representation
 relations:
 - kind: instance-of
   target: P-XLANN

@@ -6,7 +6,10 @@ title: P-TNOTE at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - measure-theory
+  - borel-cantelli
 relations:
 - kind: instance-of
   target: P-TNOTE

@@ -6,7 +6,8 @@ title: P-GGJ5N at UGA real-analysis June 2008
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-GGJ5N

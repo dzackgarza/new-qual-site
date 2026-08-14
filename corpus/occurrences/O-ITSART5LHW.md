@@ -6,7 +6,10 @@ title: P-KBH2K at UGA real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - series-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-KBH2K

@@ -6,7 +6,10 @@ title: 'A function and its derivative cannot converge to nonzero limits at infin
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - counterexamples
 relations: []
 review: draft
 ---

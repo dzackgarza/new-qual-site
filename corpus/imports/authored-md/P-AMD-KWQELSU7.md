@@ -6,7 +6,9 @@ title: Compute $H_*(\RP^2 \cross \RP^2; \ZZ_2)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations: []
 review: draft
 ---

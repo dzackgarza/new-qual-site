@@ -6,7 +6,9 @@ title: 'Warm-up 1 (KRD10, 6.4.N) at Day 6: Integral Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D6-W1

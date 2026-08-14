@@ -6,7 +6,9 @@ title: P-FPWLY at UGA real-analysis May 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - differentiation
 relations:
 - kind: instance-of
   target: P-FPWLY

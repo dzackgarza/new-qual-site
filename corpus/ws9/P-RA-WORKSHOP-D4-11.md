@@ -6,7 +6,10 @@ title: 'A contraction image containing a bounded set'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - metric-spaces
+  - completeness
 relations: []
 review: draft
 ---

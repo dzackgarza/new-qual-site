@@ -157,6 +157,8 @@
   name: Finite Fields
 - id: fixed-points
   name: Fixed Points
+- id: fourier-analysis
+  name: Fourier Analysis
 - id: fractional-linear-transformations
   name: Fractional Linear Transformations
 - id: free-groups
@@ -255,6 +257,8 @@
   name: Matrices
 - id: matrix-groups
   name: Matrix Groups
+- id: maximal-functions
+  name: Maximal Functions
 - id: maximal-ideals
   name: Maximal Ideals
 - id: maximum-modulus-principle
@@ -399,6 +403,8 @@
   name: Solvable Groups
 - id: splitting-fields
   name: Splitting Fields
+- id: stone-weierstrass
+  name: Stone-Weierstrass
 - id: structure-theorem
   name: Structure Theorem
 - id: subgroup-series
@@ -439,6 +445,8 @@
   name: Variation
 - id: vector-spaces
   name: Vector Spaces
+- id: weak-convergence
+  name: Weak Convergence
 - id: weierstrass-factorization
   name: Weierstrass Factorization
 - id: winding-number

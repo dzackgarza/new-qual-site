@@ -6,7 +6,9 @@ title: "Let $\\{a_n\\}_{n=1}^\\infty \\subseteq \\mathbb{R}$"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - series-of-numbers
 relations: []
 review: draft
 ---

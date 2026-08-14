@@ -6,7 +6,10 @@ title: "Spring 2021, 8"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

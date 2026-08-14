@@ -6,7 +6,9 @@ title: "Prove that $\\left| \\frac{d^{n}}{d x^{n}} \\frac{\\sin x}{x}\\right| \\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - differentiation
 relations: []
 review: draft
 ---

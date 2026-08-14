@@ -6,7 +6,10 @@ title: Nonorientable surface of genus $g$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - classification
+  - orientation
 relations: []
 review: draft
 ---

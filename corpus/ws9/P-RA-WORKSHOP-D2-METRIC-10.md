@@ -6,7 +6,9 @@ title: 'Every positive metric sphere in an unbounded connected metric space is n
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - connectedness
 relations: []
 review: draft
 ---

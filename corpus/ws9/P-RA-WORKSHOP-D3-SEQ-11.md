@@ -6,7 +6,8 @@ title: 'Divergence is preserved by the transform a_n to a_n/(β+a_n)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations: []
 review: draft
 ---

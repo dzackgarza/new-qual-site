@@ -6,7 +6,10 @@ title: Prove that a normed vector space $(X, \|\cdot\|)$ is Banach if and onl…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - completeness
+  - norms
+  - series-of-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Define $f(x, y):=\\left\\{\\begin{array}{ll}{\\frac{x^{1 / 3}}{(1+x y)^{
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - integrals
+  - l1
 relations: []
 review: draft
 ---

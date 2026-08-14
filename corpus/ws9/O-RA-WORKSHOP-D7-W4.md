@@ -6,7 +6,10 @@ title: 'Warm-up 4 (KRD10, 8.6.A) at Day 7: Sequences and Series of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-functions
+  - compactness
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-W4

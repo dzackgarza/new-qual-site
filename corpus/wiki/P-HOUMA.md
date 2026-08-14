@@ -6,7 +6,9 @@ title: "Let $(X,d)$ be an unbounded and connected metric space. Prove that"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - connectedness
 relations: []
 review: draft
 ---

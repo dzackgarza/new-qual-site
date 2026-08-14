@@ -6,7 +6,10 @@ title: "Show that the space $C^1([a, b])$ is a Banach space when equipped with\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - norms
+  - completeness
 relations: []
 review: draft
 ---

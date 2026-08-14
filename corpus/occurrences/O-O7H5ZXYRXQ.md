@@ -6,7 +6,10 @@ title: P-KPFEF at UGA real-analysis Spring 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - small-tails
+  - l1
+  - limits
 relations:
 - kind: instance-of
   target: P-KPFEF

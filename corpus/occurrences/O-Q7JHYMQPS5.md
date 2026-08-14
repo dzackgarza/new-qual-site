@@ -6,7 +6,10 @@ title: P-RAYX2 at UGA real-analysis January 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RAYX2

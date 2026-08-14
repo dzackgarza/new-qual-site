@@ -6,7 +6,9 @@ title: P-NIC7C at TAMU real-analysis August 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
 relations:
 - kind: instance-of
   target: P-NIC7C

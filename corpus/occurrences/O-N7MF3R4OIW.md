@@ -6,7 +6,10 @@ title: P-JMOGT at UGA real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l1
+  - continuity
+  - density
 relations:
 - kind: instance-of
   target: P-JMOGT

@@ -6,7 +6,9 @@ title: P-PJY52 at UGA real-analysis June 2005
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-PJY52

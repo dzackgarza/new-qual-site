@@ -6,7 +6,9 @@ title: P-HHNOP at UCLA real-analysis Spring 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - compactness
 relations:
 - kind: instance-of
   target: P-HHNOP

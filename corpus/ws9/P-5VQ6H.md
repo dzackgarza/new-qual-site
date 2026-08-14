@@ -6,7 +6,10 @@ title: Let $L^2 = L^2(\mathbb{R}^d)$ be the real Hilbert space endowed with i…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - l2
+  - hilbert-spaces
 relations: []
 review: draft
 ---

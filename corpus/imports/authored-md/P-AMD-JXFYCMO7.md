@@ -6,7 +6,8 @@ title: 'Show $\tor_R^*(\cdot, \cdot)$ is symmetric in the following way:'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-DQQUE at UGA real-analysis May 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-DQQUE

@@ -6,7 +6,9 @@ title: 'A bounded positive multiplier preserves convergence of a positive series
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

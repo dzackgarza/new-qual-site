@@ -6,7 +6,9 @@ title: 'Problem 8 (January 2005 4 and June 2010 6b) at Day 7: Sequences and Seri
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-08

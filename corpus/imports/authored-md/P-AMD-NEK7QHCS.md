@@ -6,7 +6,9 @@ title: Let $\theset{A_i}^n \in \mathbf{Ab}$ be finitely generated, show…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that any compact connected surface with nonempty boundary is homo\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

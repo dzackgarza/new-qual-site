@@ -6,7 +6,10 @@ title: P-YBT6I at JHU real-analysis Fall 2012
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - l2
+  - l1
 relations:
 - kind: instance-of
   target: P-YBT6I

@@ -6,7 +6,10 @@ title: 'UGA analysis qualifying exam, May 2018, problem 1'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - series-of-numbers
+  - limits
 relations: []
 review: draft
 ---

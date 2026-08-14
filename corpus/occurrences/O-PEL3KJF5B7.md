@@ -6,7 +6,10 @@ title: P-JCEPZ at UGA real-analysis Fall 2021
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-JCEPZ

@@ -6,7 +6,10 @@ title: P-4E64D at UGA real-analysis Fall 2021
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - norms
+  - l2
 relations:
 - kind: instance-of
   target: P-4E64D

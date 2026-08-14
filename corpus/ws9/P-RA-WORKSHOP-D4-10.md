@@ -6,7 +6,9 @@ title: 'A continuous real function cannot take every value exactly twice'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Problem 8 (June 2009 1) at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - uniform-continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-08

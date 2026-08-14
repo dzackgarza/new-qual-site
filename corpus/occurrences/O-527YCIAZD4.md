@@ -6,7 +6,8 @@ title: P-DX6EM at UGA real-analysis January 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
 relations:
 - kind: instance-of
   target: P-DX6EM

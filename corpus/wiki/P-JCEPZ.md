@@ -6,7 +6,10 @@ title: "Let $\\left\\{x_{n}\\right\\}_{n-1}^{\\infty}$ be a sequence of real num
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
+  - fixed-points
 relations: []
 review: draft
 ---

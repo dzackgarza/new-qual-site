@@ -6,7 +6,11 @@ title: "Spring 2009, 31"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - homeomorphisms
+  - counterexamples
 relations: []
 review: draft
 ---

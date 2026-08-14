@@ -6,7 +6,10 @@ title: "- Use the Kunneth formula to compute $H^*(S^2\\cross S^2; \\ZZ)$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - product-topology
+  - homology
 relations: []
 review: draft
 ---

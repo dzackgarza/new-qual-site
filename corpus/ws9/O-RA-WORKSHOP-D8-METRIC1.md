@@ -6,7 +6,10 @@ title: 'Metric Spaces and Topology problem 1 on Day 8: Miscellaneous Topics'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-METRIC1

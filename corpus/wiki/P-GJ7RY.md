@@ -6,7 +6,10 @@ title: "Let $C([0, 1])$ denote the space of all continuous real-valued functio\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - completeness
+  - norms
 relations: []
 review: draft
 ---

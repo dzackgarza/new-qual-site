@@ -6,7 +6,10 @@ title: 'Compute the following directly from chain complexes and check using UCT:
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cohomology
+  - homological-algebra
 relations: []
 review: draft
 ---

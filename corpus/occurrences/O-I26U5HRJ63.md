@@ -6,7 +6,9 @@ title: P-PCOHF at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - norms
 relations:
 - kind: instance-of
   target: P-PCOHF

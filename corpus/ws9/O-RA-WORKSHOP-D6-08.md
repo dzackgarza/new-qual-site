@@ -6,7 +6,10 @@ title: 'Problem 8 (January 2009 4b) at Day 6: Integral Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - integrals
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D6-08

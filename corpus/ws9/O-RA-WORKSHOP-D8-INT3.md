@@ -6,7 +6,10 @@ title: 'Integral Calculus problem 3 (Spring 2017, 7) on Day 8: Miscellaneous Top
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - differentiation
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-INT3

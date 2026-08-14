@@ -6,7 +6,9 @@ title: "Suppose that $f$ is continuous and $f(x)\\geq 0$"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - continuity
 relations: []
 review: draft
 ---

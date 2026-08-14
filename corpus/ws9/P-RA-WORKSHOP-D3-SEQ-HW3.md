@@ -6,7 +6,8 @@ title: 'Conditional convergence with divergent square series prevents absolute c
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations: []
 review: draft
 ---

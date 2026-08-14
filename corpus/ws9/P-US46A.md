@@ -6,7 +6,10 @@ title: "For $f\\in L^2(\\mathbb{R})$ and a sequence $\\{x_n\\}\\subseteq\\mathbb
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - measure-theory
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Evaluate $\int_0^\infty \frac{\log x}{x^2+2}dx$ by contour integration…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - residues
+  - integrals
 relations: []
 review: draft
 ---

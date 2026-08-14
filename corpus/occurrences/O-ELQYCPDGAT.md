@@ -6,7 +6,10 @@ title: P-UHFLP at UGA real-analysis Fall 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - completeness
+  - norms
 relations:
 - kind: instance-of
   target: P-UHFLP

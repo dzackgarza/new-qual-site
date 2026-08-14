@@ -6,7 +6,9 @@ title: Show that $x,y\in X$ path & simply-connected $\implies$ all paths…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

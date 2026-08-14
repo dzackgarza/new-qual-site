@@ -6,7 +6,10 @@ title: 'Problem 4 at the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/8
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - function-spaces
+  - arzela-ascoli
 relations:
 - kind: instance-of
   target: P-RA18M4

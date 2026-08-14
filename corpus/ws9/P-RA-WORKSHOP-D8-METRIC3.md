@@ -6,7 +6,10 @@ title: 'A decreasing sequence of nonnegative continuous functions converges unif
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - compactness
+  - convergence-of-functions
 relations: []
 review: draft
 ---

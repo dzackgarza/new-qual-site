@@ -6,7 +6,9 @@ title: "Determine the values of $x\\in\\mathbb{R}$ for which"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - convergence-of-functions
 relations: []
 review: draft
 ---

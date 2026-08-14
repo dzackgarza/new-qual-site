@@ -6,7 +6,10 @@ title: Let $f\in L^2([0, 1])$ and suppose
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - l2
 relations: []
 review: draft
 ---

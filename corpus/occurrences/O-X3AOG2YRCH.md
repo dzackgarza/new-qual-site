@@ -6,7 +6,9 @@ title: P-NXMNQ at UGA real-analysis June 2012
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - continuity
 relations:
 - kind: instance-of
   target: P-NXMNQ

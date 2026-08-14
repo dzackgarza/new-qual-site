@@ -6,7 +6,10 @@ title: P-5VQ6H at JHU (undated) (real-analysis)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - l2
+  - hilbert-spaces
 relations:
 - kind: instance-of
   target: P-5VQ6H

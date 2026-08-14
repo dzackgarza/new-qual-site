@@ -6,7 +6,9 @@ title: 'UGA analysis qualifying exam, January 2019, problem 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - convergence-of-functions
 relations: []
 review: draft
 ---

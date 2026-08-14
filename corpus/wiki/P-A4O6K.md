@@ -6,7 +6,9 @@ title: "Suppose $\\{a_n\\}$ is a sequence of positive real"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

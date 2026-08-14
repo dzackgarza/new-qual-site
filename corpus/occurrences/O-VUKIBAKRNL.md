@@ -6,7 +6,9 @@ title: P-2B2T5 at UGA real-analysis June 2005
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - continuity
 relations:
 - kind: instance-of
   target: P-2B2T5

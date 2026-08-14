@@ -6,7 +6,10 @@ title: "Let $X = \\RR^3 - \\Delta^{(1)}$, the complement of the skeleton of regu
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - homotopy
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "4. Let $p: \\tilde G \\surjects G$ be such a covering, $a,b\\in \\tilde 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
 relations: []
 review: draft
 ---

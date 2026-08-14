@@ -6,7 +6,10 @@ title: 'Pointwise and uniform convergence of $x^n$ on $[0,1]$'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-functions
+  - compactness
 relations: []
 review: draft
 ---

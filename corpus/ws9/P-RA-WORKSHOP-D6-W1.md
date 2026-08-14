@@ -6,7 +6,9 @@ title: 'Products of bounded Riemann-integrable functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations: []
 review: draft
 ---

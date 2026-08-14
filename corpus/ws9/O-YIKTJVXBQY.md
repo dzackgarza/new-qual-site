@@ -6,7 +6,9 @@ title: P-C53SG at TAMU real-analysis August 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - integrals
 relations:
 - kind: instance-of
   target: P-C53SG

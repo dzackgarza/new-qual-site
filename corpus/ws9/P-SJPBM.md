@@ -6,7 +6,9 @@ title: Let $Q$ be the closed unit square in $\mathbb{C}$ and let $R$ be the c…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Let $v$ be a trigonometric polynomial in two variables, i.e.
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - pdes
+  - norms
 relations: []
 review: draft
 ---

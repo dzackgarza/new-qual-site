@@ -6,7 +6,10 @@ title: P-AE7QC at UCLA real-analysis Fall 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - l1
+  - l-infty
 relations:
 - kind: instance-of
   target: P-AE7QC

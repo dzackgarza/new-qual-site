@@ -6,7 +6,10 @@ title: "Prove that a topological space that has a countable base for its topol\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - metric-spaces
 relations: []
 review: draft
 ---

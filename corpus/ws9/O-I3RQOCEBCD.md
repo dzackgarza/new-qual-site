@@ -6,7 +6,10 @@ title: P-MSHRB at JHU real-analysis Spring 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - l2
+  - compactness
 relations:
 - kind: instance-of
   target: P-MSHRB

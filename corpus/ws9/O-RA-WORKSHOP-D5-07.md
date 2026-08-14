@@ -6,7 +6,10 @@ title: 'Problem 7 (June 2008 3a) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - mean-value-theorem
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-07

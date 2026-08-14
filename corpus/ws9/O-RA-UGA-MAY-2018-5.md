@@ -6,7 +6,10 @@ title: 'Problem 5 at the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/8
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - uniform-convergence
+  - compactness
 relations:
 - kind: instance-of
   target: P-RA18M5

@@ -6,7 +6,10 @@ title: 'A closed and bounded noncompact subset of a metric space'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

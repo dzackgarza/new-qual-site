@@ -6,7 +6,10 @@ title: P-WMJZB at JHU real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-WMJZB

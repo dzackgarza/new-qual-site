@@ -6,7 +6,10 @@ title: 'UGA analysis qualifying exam, May 2016, problem 6'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - stone-weierstrass
 relations: []
 review: draft
 ---

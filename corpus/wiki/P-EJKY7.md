@@ -6,7 +6,10 @@ title: "Let $X$ be $S^1$ with two 2-cells attached via $z\\mapsto z^5$ and $z\\m
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - cohomology
 relations: []
 review: draft
 ---

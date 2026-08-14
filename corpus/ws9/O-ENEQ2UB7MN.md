@@ -6,7 +6,10 @@ title: P-S4PJP at UCLA real-analysis Spring 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - lp-spaces
+  - norms
 relations:
 - kind: instance-of
   target: P-S4PJP

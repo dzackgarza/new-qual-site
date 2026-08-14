@@ -6,7 +6,10 @@ title: 'Sequences and Series problem 7 (January 2014 #2) on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-07

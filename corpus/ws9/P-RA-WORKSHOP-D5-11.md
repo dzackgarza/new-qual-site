@@ -6,7 +6,9 @@ title: 'A function vanishing at both endpoints has a large derivative'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - mean-value-theorem
+  - differentiation
 relations: []
 review: draft
 ---

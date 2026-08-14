@@ -6,7 +6,9 @@ title: "Suppose $f,g:[0,1]\\to\\mathbb{R}$ are both continuous and of bounded va
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - continuity
 relations: []
 review: draft
 ---

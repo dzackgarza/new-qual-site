@@ -6,7 +6,9 @@ title: "Let $E \\subseteq H$ a Hilbert space."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - closure
 relations: []
 review: draft
 ---

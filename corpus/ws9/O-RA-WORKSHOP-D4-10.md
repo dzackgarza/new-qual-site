@@ -6,7 +6,9 @@ title: 'Problem 10 (KRD10, 5.6.H) at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-10

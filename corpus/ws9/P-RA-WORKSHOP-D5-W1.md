@@ -6,7 +6,9 @@ title: 'A function with zero derivative is constant'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Warm-up 2 (Rud76, Exercise 5.1) at Day 5: Differential Calculus'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D5-W2

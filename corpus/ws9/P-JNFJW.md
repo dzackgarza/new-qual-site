@@ -6,7 +6,9 @@ title: Let $\Omega$ be an open convex region in the complex plane. Assume $f$…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - counterexamples
 relations: []
 review: draft
 ---

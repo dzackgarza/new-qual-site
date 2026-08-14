@@ -6,7 +6,10 @@ title: P-MLJMH at UGA real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - lp-spaces
+  - norms
 relations:
 - kind: instance-of
   target: P-MLJMH

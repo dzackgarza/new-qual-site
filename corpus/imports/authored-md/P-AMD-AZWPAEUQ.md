@@ -6,7 +6,9 @@ title: Compute $H_*(\Sigma\RP^2 \cross \RP^2; \ZZ)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "Compute: $\\tor(\\ZZ \\oplus \\ZZ_2 \\oplus \\ZZ_8, \\ZZ \\oplus \\ZZ_4 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
 relations: []
 review: draft
 ---

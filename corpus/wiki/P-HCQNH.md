@@ -6,7 +6,10 @@ title: "Suppose that $U$ and $V$ are open subsets of a space $X$, with $X = U \\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - mayer-vietoris
+  - homology
 relations: []
 review: draft
 ---

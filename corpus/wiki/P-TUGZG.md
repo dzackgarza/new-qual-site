@@ -6,7 +6,10 @@ title: "Let $\\theset{f_n}$ be a sequence of continuous functions such that $\\s
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
+  - continuity
 relations: []
 review: draft
 ---

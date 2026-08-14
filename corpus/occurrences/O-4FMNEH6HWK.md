@@ -6,7 +6,9 @@ title: P-J25XX at UGA real-analysis Spring 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - cantor-set
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-J25XX

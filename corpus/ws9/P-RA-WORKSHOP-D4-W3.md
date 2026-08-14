@@ -6,7 +6,8 @@ title: 'An epsilon-delta proof for the cube-root function'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
 relations: []
 review: draft
 ---

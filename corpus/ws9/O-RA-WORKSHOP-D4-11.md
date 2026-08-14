@@ -6,7 +6,10 @@ title: 'Problem 11 (June 2013 5b) at Day 4: Continuity of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - metric-spaces
+  - completeness
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D4-11

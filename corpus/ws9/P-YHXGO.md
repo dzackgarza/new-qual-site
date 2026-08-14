@@ -6,7 +6,9 @@ title: Let $A(\mathbb{D})$ be the $\mathbb{C}$-vector space of all holomorphi…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - functional-analysis
 relations: []
 review: draft
 ---

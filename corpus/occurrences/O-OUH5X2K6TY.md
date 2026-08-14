@@ -6,7 +6,9 @@ title: P-DEYSQ at UGA real-analysis June 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations:
 - kind: instance-of
   target: P-DEYSQ

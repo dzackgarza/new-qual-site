@@ -6,7 +6,9 @@ title: 'Additional problem 12 on Day 2: Metric Spaces and Topology'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - euclidean-spaces
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-12

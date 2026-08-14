@@ -6,7 +6,10 @@ title: 'Sequences and Series warm-up 2 on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - sequences-of-numbers
+  - closure
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-HW2

@@ -6,7 +6,10 @@ title: P-ZOTXG at UGA real-analysis Spring 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - uniform-continuity
+  - differentiation
 relations:
 - kind: instance-of
   target: P-ZOTXG

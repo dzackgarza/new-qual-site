@@ -6,7 +6,9 @@ title: "Let $A = S^n - \\theset{n_p = \\text{North Pole}}, B = S^n - \\theset{s_
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Calculate a presentation of $\pi_1(S^3-K)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

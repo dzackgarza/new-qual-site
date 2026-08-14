@@ -6,7 +6,9 @@ title: P-W6ITY at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-W6ITY

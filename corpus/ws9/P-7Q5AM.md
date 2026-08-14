@@ -6,7 +6,10 @@ title: Let $H$ be an infinite dimensional real Hilbert space.
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - functional-analysis
 relations: []
 review: draft
 ---

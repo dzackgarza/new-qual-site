@@ -6,7 +6,10 @@ title: "Let $X$ be the space obtained as the quotient of a disjoint union of a\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - quotient-spaces
 relations: []
 review: draft
 ---

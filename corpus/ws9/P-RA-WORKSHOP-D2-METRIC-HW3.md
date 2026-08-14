@@ -6,7 +6,8 @@ title: 'Decide whether the set of binary sequences is countable (warm-up)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

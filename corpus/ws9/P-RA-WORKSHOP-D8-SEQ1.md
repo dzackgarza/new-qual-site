@@ -6,7 +6,8 @@ title: 'Radii of convergence for sums and coefficientwise products of power seri
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
 relations: []
 review: draft
 ---

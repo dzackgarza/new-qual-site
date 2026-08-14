@@ -6,7 +6,10 @@ title: P-W5XWA at TAMU real-analysis August 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - norms
 relations:
 - kind: instance-of
   target: P-W5XWA

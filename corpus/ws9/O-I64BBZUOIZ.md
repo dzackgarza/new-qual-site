@@ -6,7 +6,10 @@ title: P-JKYJU at JHU real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - uniform-convergence
+  - rouche
 relations:
 - kind: instance-of
   target: P-JKYJU

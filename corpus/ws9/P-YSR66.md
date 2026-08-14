@@ -6,7 +6,10 @@ title: (a) Let $X$ be a normed vector space and $Y$ be a closed liner subspac…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - compactness
 relations: []
 review: draft
 ---

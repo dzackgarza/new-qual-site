@@ -6,7 +6,9 @@ title: "Compute the homology of the subset $X \\subset \\RR^3$ formed as the uni
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations: []
 review: draft
 ---

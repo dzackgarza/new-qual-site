@@ -6,7 +6,10 @@ title: P-D6N7M at UGA real-analysis Fall 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-D6N7M

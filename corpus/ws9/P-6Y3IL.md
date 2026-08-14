@@ -6,7 +6,10 @@ title: "Suppose that $f_j \\in L^2(\\mathbb{R}^d)$, $j = 1, 2, \\ldots$, and $f 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - l2
+  - hilbert-spaces
 relations: []
 review: draft
 ---

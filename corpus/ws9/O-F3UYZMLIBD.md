@@ -6,7 +6,9 @@ title: P-OZXQA at JHU real-analysis Fall 2013
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - rouche
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-OZXQA

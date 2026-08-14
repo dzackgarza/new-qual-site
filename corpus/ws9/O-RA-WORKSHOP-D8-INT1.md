@@ -6,7 +6,10 @@ title: 'Integral Calculus problem 1 (June 2014, 1) on Day 8: Miscellaneous Topic
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - continuity
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-INT1

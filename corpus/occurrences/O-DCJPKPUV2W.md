@@ -6,7 +6,9 @@ title: P-VYRJF at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations:
 - kind: instance-of
   target: P-VYRJF

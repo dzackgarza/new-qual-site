@@ -6,7 +6,9 @@ title: 'Metric Spaces and Topology problem 10 on Day 2'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - connectedness
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-10

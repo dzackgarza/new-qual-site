@@ -6,7 +6,10 @@ title: P-CWJBS at UGA real-analysis May 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-CWJBS

@@ -6,7 +6,10 @@ title: 'Warm-up 5 at Day 7: Sequences and Series of Functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - uniform-convergence
+  - compactness
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D7-W5

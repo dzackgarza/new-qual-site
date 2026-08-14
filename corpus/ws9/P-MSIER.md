@@ -6,7 +6,10 @@ title: Let $(\Omega,\mathcal{A},\mu)$ be a finite measure space and $(f_n)$ b…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - measure-theory
+  - counterexamples
 relations: []
 review: draft
 ---

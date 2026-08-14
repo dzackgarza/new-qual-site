@@ -6,7 +6,9 @@ title: 'Problem 1 at the Masters & Ph.D. Qualifying Exam, Analysis: Math 825/826
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - uniform-continuity
 relations:
 - kind: instance-of
   target: P-RA16M1

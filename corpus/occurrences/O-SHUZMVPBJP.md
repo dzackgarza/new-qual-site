@@ -6,7 +6,10 @@ title: P-YIXSO at UGA real-analysis Spring 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - continuity
+  - stone-weierstrass
 relations:
 - kind: instance-of
   target: P-YIXSO

@@ -6,7 +6,11 @@ title: "Denote the points of $S^1 \\times I$ by $(z, t)$ where $z$ is a unit co\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - homology
+  - quotient-spaces
 relations: []
 review: draft
 ---

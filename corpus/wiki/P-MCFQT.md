@@ -6,7 +6,9 @@ title: "Let $a_n =\\sqrt{n}\\left(\\sqrt{n+1}-\\sqrt{n}\\right)$. Prove that $\\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

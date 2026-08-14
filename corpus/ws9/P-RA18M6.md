@@ -6,7 +6,10 @@ title: 'UGA analysis qualifying exam, May 2018, problem 6'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

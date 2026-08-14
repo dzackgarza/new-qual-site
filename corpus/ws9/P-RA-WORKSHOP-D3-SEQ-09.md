@@ -6,7 +6,9 @@ title: 'A conditionally convergent series has power-series radius one'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - series-of-numbers
 relations: []
 review: draft
 ---

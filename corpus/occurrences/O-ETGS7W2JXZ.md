@@ -6,7 +6,11 @@ title: P-XWL4U at UGA real-analysis Spring 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - fatou
+  - egorov
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-XWL4U

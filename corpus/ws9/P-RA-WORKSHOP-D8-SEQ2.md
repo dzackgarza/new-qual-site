@@ -6,7 +6,9 @@ title: 'Uniform convergence of a variable-ratio geometric series on bounded inte
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

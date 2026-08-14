@@ -6,7 +6,8 @@ title: "Let $\\theset{X_\\alpha \\mid \\alpha \\in A}$ be a family of connected 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: P-BPL7E at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - egorov
+  - measure-theory
+  - l1
 relations:
 - kind: instance-of
   target: P-6QWZI

@@ -6,7 +6,9 @@ title: P-AITX4 at UGA real-analysis June 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - continuity
 relations:
 - kind: instance-of
   target: P-AITX4

@@ -6,7 +6,10 @@ title: "Let X be a noncompact locally compact Hausdorff space, with\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - point-set
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Let $f,g \\rightarrow S^n$ be such that $\\forall x\\in X, f(x) \\neq -g
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - degree
 relations: []
 review: draft
 ---

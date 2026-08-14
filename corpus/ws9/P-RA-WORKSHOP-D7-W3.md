@@ -6,7 +6,10 @@ title: 'Prove the uniform-limit continuity theorem directly'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - continuity
+  - convergence-of-functions
 relations:
 - kind: uses
   target: T-RA-WORKSHOP-D7-6-1

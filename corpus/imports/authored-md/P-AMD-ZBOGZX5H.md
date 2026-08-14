@@ -6,7 +6,9 @@ title: For any space $X$, show that $H^1(X)$ is free abelian
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homological-algebra
 relations: []
 review: draft
 ---

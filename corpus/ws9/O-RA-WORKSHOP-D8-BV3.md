@@ -6,7 +6,9 @@ title: 'Bounded Variation problem 3 (January 2017, 2a) on Day 8: Miscellaneous T
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-BV3

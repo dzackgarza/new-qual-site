@@ -6,7 +6,9 @@ title: "Give an example of a homotopy class of maps of $S^1 \\lor S^1$ each mem\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homotopy
 relations: []
 review: draft
 ---

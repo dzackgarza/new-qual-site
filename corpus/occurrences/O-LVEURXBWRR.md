@@ -6,7 +6,10 @@ title: P-YACKS at UGA real-analysis January 2009
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-YACKS

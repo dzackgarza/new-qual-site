@@ -6,7 +6,10 @@ title: Let $f \in L^1(\mathbb{R}^d)$ and $M_f$ denote the Hardy-Littlewood ma…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - maximal-functions
+  - measure-theory
+  - l1
 relations: []
 review: draft
 ---

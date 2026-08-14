@@ -6,7 +6,10 @@ title: 'Sequences and Series warm-up 5 (Abbott Exercise 2.4.5) on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-HW5

@@ -6,7 +6,10 @@ title: P-6UKIC at UGA real-analysis Fall 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-6UKIC

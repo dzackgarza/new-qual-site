@@ -6,7 +6,10 @@ title: P-PUDXH at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - fubini-tonelli
+  - norms
 relations:
 - kind: instance-of
   target: P-PUDXH

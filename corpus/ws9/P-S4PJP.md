@@ -6,7 +6,10 @@ title: "Let $\\phi:\\mathbb{R}\\to\\mathbb{R}$ be a continuous function with com
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - lp-spaces
+  - norms
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: P-GJ7RY at UGA real-analysis Spring 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - completeness
+  - norms
 relations:
 - kind: instance-of
   target: P-GJ7RY

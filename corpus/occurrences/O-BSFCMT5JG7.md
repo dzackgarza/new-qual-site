@@ -6,7 +6,9 @@ title: P-L7G3D at UGA real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations:
 - kind: instance-of
   target: P-L7G3D

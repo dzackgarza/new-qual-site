@@ -6,7 +6,8 @@ title: 'Equality at a point under an order bound forces equal derivatives'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-2HIC2 at UGA real-analysis Spring 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - fubini-tonelli
 relations:
 - kind: instance-of
   target: P-2HIC2

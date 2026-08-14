@@ -6,7 +6,9 @@ title: P-BKCZH at UGA real-analysis January 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - mean-value-theorem
 relations:
 - kind: instance-of
   target: P-BKCZH

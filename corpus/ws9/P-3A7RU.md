@@ -6,7 +6,9 @@ title: "Show that the punctured unit disk $\\{z : 0 < |z| < 1\\}$ and the annulu
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - biholomorphisms
 relations: []
 review: draft
 ---

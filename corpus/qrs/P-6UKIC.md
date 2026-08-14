@@ -6,7 +6,10 @@ title: "Show that if $x_n$ is a decreasing sequence of positive real\u2026"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

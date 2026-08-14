@@ -6,7 +6,10 @@ title: "a. Prove Holder's inequality:"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - norms
+  - l-infty
 relations: []
 review: draft
 ---

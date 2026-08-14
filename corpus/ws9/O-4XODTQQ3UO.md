@@ -6,7 +6,10 @@ title: P-4XNZ6 at JHU real-analysis Spring 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - maximal-functions
+  - measure-theory
+  - l1
 relations:
 - kind: instance-of
   target: P-4XNZ6

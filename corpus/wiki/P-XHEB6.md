@@ -6,7 +6,9 @@ title: "Define $f(x)=c_{0}+c_{1} x^{1}+c_{2} x^{2}+\\ldots+c_{n} x^{n} \\text { 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - polynomials
 relations: []
 review: draft
 ---

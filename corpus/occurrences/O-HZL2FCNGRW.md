@@ -6,7 +6,9 @@ title: P-FTV4U at UGA real-analysis January 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-FTV4U

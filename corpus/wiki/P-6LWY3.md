@@ -6,7 +6,9 @@ title: "Let $f_n(x) = n^\\beta x(1-x^2)^n$, $x \\in [0,1]$,"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
 relations: []
 review: draft
 ---

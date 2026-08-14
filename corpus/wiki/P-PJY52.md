@@ -6,7 +6,9 @@ title: "If the series $\\sum_{n=0}^\\infty a_n$ converges"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - series-of-numbers
 relations: []
 review: draft
 ---

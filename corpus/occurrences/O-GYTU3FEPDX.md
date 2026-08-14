@@ -6,7 +6,10 @@ title: P-QXYTV at UGA real-analysis January 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - l-infty
+  - limits
 relations:
 - kind: instance-of
   target: P-QXYTV

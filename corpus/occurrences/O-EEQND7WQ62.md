@@ -6,7 +6,9 @@ title: P-STYWD at UGA real-analysis Fall 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-STYWD

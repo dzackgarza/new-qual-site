@@ -6,7 +6,9 @@ title: "If $f:[0,1]\\to\\mathbb{R}$ is"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - continuity
 relations: []
 review: draft
 ---

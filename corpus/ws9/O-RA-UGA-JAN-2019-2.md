@@ -6,7 +6,10 @@ title: 'Problem 2 at the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/8
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - compactness
+  - closure
 relations:
 - kind: instance-of
   target: P-RA19J2

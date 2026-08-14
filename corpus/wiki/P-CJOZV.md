@@ -6,7 +6,9 @@ title: "Find all three-fold covers of the wedge of two copies of $\\RP^2$ .\u202
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

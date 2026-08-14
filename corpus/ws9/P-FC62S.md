@@ -6,7 +6,10 @@ title: Assume that $X$ is a reflexive Banach space and $\phi$ is a continuous…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - counterexamples
 relations: []
 review: draft
 ---

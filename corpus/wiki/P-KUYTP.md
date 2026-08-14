@@ -6,7 +6,9 @@ title: "Useful facts: $ H_{k}(X\\times Y) \\cong \\bigoplus _{{i+j=k}}H_{i}(X)\\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations: []
 review: draft
 ---

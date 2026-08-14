@@ -6,7 +6,10 @@ title: "Define $f(x) = \\sum_{n=1}^{\\infty} \\frac{1}{n^{x}}$ Show that $f$ con
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - differentiation
+  - uniform-convergence
 relations: []
 review: draft
 ---

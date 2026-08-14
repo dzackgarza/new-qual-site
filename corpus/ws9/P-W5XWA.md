@@ -6,7 +6,10 @@ title: Assume that $(x_n)$ is a weakly converging sequence in a Hilbert space…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - norms
 relations: []
 review: draft
 ---

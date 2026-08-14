@@ -6,7 +6,10 @@ title: "Let $X$ be a complete metric space and define a norm $\\|f\\|:=\\max \\{
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - completeness
+  - norms
 relations: []
 review: draft
 ---

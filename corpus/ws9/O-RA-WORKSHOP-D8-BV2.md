@@ -6,7 +6,8 @@ title: 'Bounded Variation problem 2 (January 2007, 6a) on Day 8: Miscellaneous T
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D8-BV2

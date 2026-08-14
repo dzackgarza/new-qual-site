@@ -6,7 +6,11 @@ title: P-Y4YM6 at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l2
+  - hilbert-spaces
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-Y4YM6

@@ -6,7 +6,10 @@ title: "For $n\\in \\NN$, define $e_{n} = \\left (1+ {1\\over n} \\right)^{n} \\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - bernoulli
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Fall 2005: Prove that the unit interval $I$ is compact. Be sure to\u2026
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: P-BH7BM at UGA real-analysis Spring 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - closure
 relations:
 - kind: instance-of
   target: P-BH7BM

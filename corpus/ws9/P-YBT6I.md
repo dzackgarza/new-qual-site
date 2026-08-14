@@ -6,7 +6,10 @@ title: "Let $fg(x) := \\int_{-\\infty}^{+\\infty} f(y)g(x-y)dy$ denote the convo
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - l2
+  - l1
 relations: []
 review: draft
 ---

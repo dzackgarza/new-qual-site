@@ -6,7 +6,9 @@ title: 'The integral limit of $f(x^n)$'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: Show that $S^2 \not\cong S^3$.
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - homology
 relations: []
 review: draft
 ---

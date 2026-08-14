@@ -6,7 +6,9 @@ title: P-2AO23 at JHU real-analysis Fall 2013
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-2AO23

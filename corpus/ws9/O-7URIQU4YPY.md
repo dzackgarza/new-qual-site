@@ -6,7 +6,10 @@ title: P-JVAGD at JHU real-analysis Spring 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - integrals
+  - absolute-continuity
 relations:
 - kind: instance-of
   target: P-JVAGD

@@ -6,7 +6,10 @@ title: "Let $X$ be a normed vector space."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - continuity
 relations: []
 review: draft
 ---

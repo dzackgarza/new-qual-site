@@ -6,7 +6,10 @@ title: P-OEFYN at JHU real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - hilbert-spaces
+  - compactness
 relations:
 - kind: instance-of
   target: P-OEFYN

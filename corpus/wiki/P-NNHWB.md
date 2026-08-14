@@ -6,7 +6,8 @@ title: "- Show that a closed subset $A$ of a compact space $X$ is compact."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

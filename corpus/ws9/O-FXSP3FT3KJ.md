@@ -6,7 +6,9 @@ title: P-T7IKN at JHU real-analysis Fall 2019
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - singularities
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-T7IKN

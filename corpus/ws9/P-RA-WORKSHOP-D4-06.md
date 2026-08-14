@@ -6,7 +6,9 @@ title: 'Uniform continuity of the logarithm on $(0,1]$'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - counterexamples
 relations: []
 review: draft
 ---

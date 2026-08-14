@@ -6,7 +6,10 @@ title: 'Uniform convergence and differentiability of a logarithmic-type series'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - uniform-convergence
+  - differentiation
 relations: []
 review: draft
 ---

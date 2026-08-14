@@ -6,7 +6,10 @@ title: P-OW5VL at UGA real-analysis Spring 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - continuity
+  - stone-weierstrass
 relations:
 - kind: instance-of
   target: P-OW5VL

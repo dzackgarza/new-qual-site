@@ -6,7 +6,10 @@ title: 'Problem 3 at the Masters & Ph.D. Qualifying Exam, Analysis: Math 825/826
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-RA16M3

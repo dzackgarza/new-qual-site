@@ -6,7 +6,9 @@ title: P-O6T63 at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations:
 - kind: instance-of
   target: P-O6T63

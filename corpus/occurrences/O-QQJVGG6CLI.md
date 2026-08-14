@@ -6,7 +6,10 @@ title: P-LUYHY at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - lp-spaces
+  - norms
 relations:
 - kind: instance-of
   target: P-LUYHY

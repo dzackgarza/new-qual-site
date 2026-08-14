@@ -6,7 +6,10 @@ title: P-TCJBY at TAMU real-analysis January 2017
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - norms
+  - closure
 relations:
 - kind: instance-of
   target: P-TCJBY

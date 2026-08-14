@@ -6,7 +6,10 @@ title: "Describe a cell complex structure on the torus $T = S^1 \\times S^1$ an\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

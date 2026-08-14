@@ -6,7 +6,9 @@ title: Here we examine
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
 relations: []
 review: draft
 ---

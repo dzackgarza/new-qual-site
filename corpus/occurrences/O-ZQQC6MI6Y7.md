@@ -6,7 +6,10 @@ title: P-FFLLF at UGA real-analysis Fall 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - uniform-convergence
 relations:
 - kind: instance-of
   target: P-FFLLF

@@ -6,7 +6,9 @@ title: "Let $X,Y$ be Banach spaces and $T:X\\to Y$ be a one-to-one, bounded andâ
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
 relations: []
 review: draft
 ---

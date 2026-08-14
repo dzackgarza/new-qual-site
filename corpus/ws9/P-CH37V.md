@@ -6,7 +6,9 @@ title: Let $\mathbb{R}/\mathbb{Z}$ denote the torus (whose elements we write…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - integrals
 relations: []
 review: draft
 ---

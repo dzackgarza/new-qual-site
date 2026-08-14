@@ -6,7 +6,10 @@ title: Let $\mathcal{H}$ be an infinite dimensional Hilbert space. Determine…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - compactness
 relations: []
 review: draft
 ---

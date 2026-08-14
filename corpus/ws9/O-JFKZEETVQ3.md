@@ -6,7 +6,10 @@ title: P-WCDZA at JHU real-analysis May 2013
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l1
+  - convolution
 relations:
 - kind: instance-of
   target: P-WCDZA

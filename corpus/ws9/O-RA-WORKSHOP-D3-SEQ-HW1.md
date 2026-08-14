@@ -6,7 +6,9 @@ title: 'Sequences and Series warm-up 1 on Day 3'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-HW1

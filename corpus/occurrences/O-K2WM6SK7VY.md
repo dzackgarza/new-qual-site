@@ -6,7 +6,10 @@ title: P-LQEAV at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - norms
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-LQEAV

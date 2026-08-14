@@ -6,7 +6,10 @@ title: P-XUV2I at UGA real-analysis Spring 2014
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - functional-analysis
+  - series-of-numbers
 relations:
 - kind: instance-of
   target: P-XUV2I

@@ -6,7 +6,11 @@ title: "Show that $L^2([0, 1]) \\subseteq L^1([0, 1]) \\qtext{and} \\ell^1(\\ZZ)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - lp-spaces
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

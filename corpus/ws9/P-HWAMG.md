@@ -6,7 +6,9 @@ title: (a) Let $f$ be a real valued function on the unit interval $[0,1]$. Pr…
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

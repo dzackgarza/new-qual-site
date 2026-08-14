@@ -6,7 +6,9 @@ title: "3. Draw CW square for $T$ and cut down the center to see two copies of\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - cell-complexes
 relations: []
 review: draft
 ---

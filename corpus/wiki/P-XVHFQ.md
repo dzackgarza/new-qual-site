@@ -6,7 +6,10 @@ title: "Let $f_n(x) = \\begin{cases} \\frac{1}{n} & x \\in (\\frac{1}{2^{n+1}}, 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

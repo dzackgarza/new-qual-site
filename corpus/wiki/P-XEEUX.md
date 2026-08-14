@@ -6,7 +6,9 @@ title: "Consider the function $f(x) = \\frac{x}{1-x^2}$,"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - uniform-continuity
 relations: []
 review: draft
 ---

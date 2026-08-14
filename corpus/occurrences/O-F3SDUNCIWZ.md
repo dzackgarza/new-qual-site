@@ -6,7 +6,9 @@ title: P-P2UWB at UGA real-analysis Fall 2021
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - convergence-of-integrals
 relations:
 - kind: instance-of
   target: P-P2UWB

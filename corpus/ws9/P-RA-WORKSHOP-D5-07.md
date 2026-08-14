@@ -6,7 +6,10 @@ title: 'A bounded derivative gives a one-sided limit'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - limits
+  - mean-value-theorem
 relations: []
 review: draft
 ---

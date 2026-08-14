@@ -6,7 +6,10 @@ title: P-MW6OS at JHU real-analysis Fall 2016
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - compactness
 relations:
 - kind: instance-of
   target: P-MW6OS

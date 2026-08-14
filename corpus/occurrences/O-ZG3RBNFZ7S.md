@@ -6,7 +6,9 @@ title: P-YTOGK at UGA real-analysis 2010
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - norms
 relations:
 - kind: instance-of
   target: P-YTOGK

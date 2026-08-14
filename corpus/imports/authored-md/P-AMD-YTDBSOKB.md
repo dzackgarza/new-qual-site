@@ -6,7 +6,10 @@ title: For each of these actions of $\mathbb{Z}_2$ on $S^n$, compute…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - group-actions
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

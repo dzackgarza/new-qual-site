@@ -6,7 +6,9 @@ title: 'Equicontinuity of the family $x/(1+nx^2)$ on compact intervals'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - convergence-of-functions
 relations: []
 review: draft
 ---

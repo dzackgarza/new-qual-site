@@ -6,7 +6,9 @@ title: 'A liminf-limsup bound for real sequences'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

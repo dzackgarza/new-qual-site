@@ -6,7 +6,9 @@ title: "Let $f_n(x) = \\frac{x}{1+nx^2}$ for"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - convergence-of-functions
 relations: []
 review: draft
 ---

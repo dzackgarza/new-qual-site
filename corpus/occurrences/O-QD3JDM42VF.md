@@ -6,7 +6,9 @@ title: P-5UQSK at UGA real-analysis January 2020
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - differentiation
 relations:
 - kind: instance-of
   target: P-5UQSK

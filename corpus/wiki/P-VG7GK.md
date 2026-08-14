@@ -6,7 +6,10 @@ title: "Let $\\phi$ be a real-valued function defined on"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - differentiation
+  - norms
 relations: []
 review: draft
 ---
