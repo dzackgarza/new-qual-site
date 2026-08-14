@@ -6,7 +6,10 @@ title: "Term by Term Continuity Theorem"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
+  - continuity
 relations: []
 review: draft
 ---

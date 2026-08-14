@@ -6,7 +6,9 @@ title: "Existence of Smooth Compactly Supported Functions"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - differentiation
 relations: []
 review: draft
 ---

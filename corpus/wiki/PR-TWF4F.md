@@ -6,7 +6,10 @@ title: "f_k \\converges{\\ae}\\to f \\text{ and }"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fatou
+  - lp-spaces
+  - convergence-of-functions
 relations: []
 review: draft
 ---

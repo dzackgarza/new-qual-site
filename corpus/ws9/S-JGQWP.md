@@ -6,7 +6,9 @@ title: Solution to P-C53SG
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - integrals
 relations:
 - kind: solves
   target: P-C53SG

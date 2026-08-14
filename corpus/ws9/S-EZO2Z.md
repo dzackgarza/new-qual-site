@@ -6,7 +6,8 @@ title: Solution to P-MIAAZ
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
 relations:
 - kind: solves
   target: P-MIAAZ

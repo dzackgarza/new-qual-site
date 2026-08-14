@@ -6,7 +6,8 @@ title: "Reverse Triangle Inequality"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
 relations: []
 review: draft
 ---

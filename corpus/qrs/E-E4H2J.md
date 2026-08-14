@@ -6,7 +6,10 @@ title: "- Show that if $f\\in L^1$ and $g$ is bounded, then $f\\ast g$ is bounde
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - uniform-continuity
+  - l1
 relations: []
 review: draft
 ---

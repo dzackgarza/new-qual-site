@@ -6,7 +6,10 @@ title: Solution to P-7Q5AM
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - functional-analysis
 relations:
 - kind: solves
   target: P-7Q5AM

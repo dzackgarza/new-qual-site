@@ -6,7 +6,10 @@ title: "- Show that if a subset of a metric space is complete and totally boun\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

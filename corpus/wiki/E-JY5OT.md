@@ -6,7 +6,9 @@ title: '- Derive the reverse triangle inequality from the triangle inequality.'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

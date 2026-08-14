@@ -6,7 +6,8 @@ title: "Finite unions of nowhere dense sets are still nowhere dense"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Testing Uniform Convergence: The Sup Norm Test"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - norms
 relations: []
 review: draft
 ---

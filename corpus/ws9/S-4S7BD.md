@@ -6,7 +6,9 @@ title: Solution to P-SVQNB
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - holomorphic-functions
 relations:
 - kind: solves
   target: P-SVQNB

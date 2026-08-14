@@ -6,7 +6,8 @@ title: "Dilation"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
 relations: []
 review: draft
 ---

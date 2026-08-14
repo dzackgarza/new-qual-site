@@ -6,7 +6,9 @@ title: "No functions discontinuous on the irrationals"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

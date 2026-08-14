@@ -6,7 +6,10 @@ title: "The Cantor set is closed with empty interior."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - cantor-set
+  - density
+  - closure
 relations: []
 review: draft
 ---

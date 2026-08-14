@@ -6,7 +6,9 @@ title: "- Is it true that the converse to the DCT holds?"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - counterexamples
 relations: []
 review: draft
 ---

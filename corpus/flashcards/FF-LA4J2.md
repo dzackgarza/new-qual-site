@@ -6,7 +6,8 @@ title: 'What is the Caratheodory characterization of outer measure?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
 relations: []
 review: draft
 ---

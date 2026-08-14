@@ -6,7 +6,10 @@ title: 'Example of a function that is Lebesgue integrable but not Riemann integr
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
+  - counterexamples
 relations: []
 review: draft
 ---

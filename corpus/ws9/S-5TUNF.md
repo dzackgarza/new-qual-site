@@ -6,7 +6,10 @@ title: Solution to P-TCJBY
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - norms
+  - closure
 relations:
 - kind: solves
   target: P-TCJBY

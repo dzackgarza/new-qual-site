@@ -6,7 +6,9 @@ title: "The Weierstrass $M\\dash$Test"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

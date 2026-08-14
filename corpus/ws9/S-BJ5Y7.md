@@ -6,7 +6,10 @@ title: Solution to P-S4PJP
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - lp-spaces
+  - norms
 relations:
 - kind: solves
   target: P-S4PJP

@@ -6,7 +6,10 @@ title: "Compute the following limits:"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - series-of-numbers
+  - fatou
 relations: []
 review: draft
 ---

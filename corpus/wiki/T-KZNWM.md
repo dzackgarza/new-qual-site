@@ -6,7 +6,9 @@ title: "Non-measurable sets exist"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - counterexamples
 relations: []
 review: draft
 ---

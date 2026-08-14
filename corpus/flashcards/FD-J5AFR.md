@@ -6,7 +6,9 @@ title: 'Definition: Infinity Norm'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - norms
 relations: []
 review: draft
 ---

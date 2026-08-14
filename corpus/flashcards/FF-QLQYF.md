@@ -6,7 +6,9 @@ title: 'What is a first category set? A second category?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - countability
 relations: []
 review: draft
 ---

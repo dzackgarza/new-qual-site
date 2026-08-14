@@ -6,7 +6,9 @@ title: "Small Tails in $L^1$"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - small-tails
+  - l1
 relations: []
 review: draft
 ---

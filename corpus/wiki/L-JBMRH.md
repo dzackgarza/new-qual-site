@@ -6,7 +6,8 @@ title: "Any nonempty set which is bounded from above (resp. below) has a well-\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

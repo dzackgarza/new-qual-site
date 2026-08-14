@@ -6,7 +6,9 @@ title: "Hahn-Banach"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - dual-spaces
 relations: []
 review: draft
 ---

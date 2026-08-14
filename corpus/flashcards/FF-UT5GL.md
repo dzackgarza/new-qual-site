@@ -6,7 +6,10 @@ title: 'What is the Riesz Representation theorem?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riesz-representation
+  - hilbert-spaces
+  - dual-spaces
 relations: []
 review: draft
 ---

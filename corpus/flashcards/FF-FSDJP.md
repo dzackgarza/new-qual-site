@@ -6,7 +6,10 @@ title: 'What does small tails mean? Absolute continuity?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - small-tails
+  - continuity-of-measure
+  - l1
 relations: []
 review: draft
 ---

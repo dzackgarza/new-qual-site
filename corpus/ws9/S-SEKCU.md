@@ -6,7 +6,10 @@ title: Solution to P-US46A
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l2
+  - measure-theory
+  - continuity
 relations:
 - kind: solves
   target: P-US46A

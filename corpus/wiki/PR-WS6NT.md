@@ -6,7 +6,10 @@ title: "Duals of $L^p$ spaces"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - lp-spaces
+  - radon-nikodym
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Borel-Cantelli"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations: []
 review: draft
 ---

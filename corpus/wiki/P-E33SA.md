@@ -6,7 +6,10 @@ title: "What does it mean for a function to be uniformly continuous\u2026"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

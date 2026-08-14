@@ -6,7 +6,9 @@ title: 'Uniform Boundedness Principle'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
 relations: []
 review: draft
 ---

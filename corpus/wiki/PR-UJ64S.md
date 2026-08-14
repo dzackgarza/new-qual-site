@@ -6,7 +6,10 @@ title: "Small Tails for Series of Functions"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - small-tails
+  - uniform-convergence
 relations: []
 review: draft
 ---

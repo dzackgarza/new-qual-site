@@ -6,7 +6,10 @@ title: "Riemann-Lebesgue: Fourier transforms have small tails."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l1
+  - small-tails
 relations: []
 review: draft
 ---

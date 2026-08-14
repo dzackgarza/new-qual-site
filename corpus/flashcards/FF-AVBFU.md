@@ -6,7 +6,10 @@ title: 'Characterizations of $D_f$, the set of discontinuities of functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - countability
+  - measure-theory
 relations: []
 review: draft
 ---

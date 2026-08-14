@@ -6,7 +6,9 @@ title: "Nowhere Dense Sets"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - closure
 relations: []
 review: draft
 ---

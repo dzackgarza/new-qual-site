@@ -6,7 +6,9 @@ title: "Show that every compact set is closed and bounded."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

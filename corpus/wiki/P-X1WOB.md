@@ -6,7 +6,10 @@ title: -- What does it mean for a series to converge? How can you check this?
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - convergence-tests
+  - small-tails
 relations: []
 review: draft
 ---

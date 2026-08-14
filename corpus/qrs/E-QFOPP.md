@@ -6,7 +6,9 @@ title: "- $\\star$: Prove that the Lebesgue integral is translation invariant,\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - measure-theory
 relations: []
 review: draft
 ---

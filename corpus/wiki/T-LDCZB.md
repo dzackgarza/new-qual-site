@@ -6,7 +6,10 @@ title: "Riesz Representation for Hilbert Spaces"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riesz-representation
+  - hilbert-spaces
+  - dual-spaces
 relations: []
 review: draft
 ---

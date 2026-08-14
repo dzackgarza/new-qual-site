@@ -6,7 +6,9 @@ title: "Uniform Convergence"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
 relations: []
 review: draft
 ---

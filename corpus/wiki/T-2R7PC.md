@@ -6,7 +6,9 @@ title: "Lagrange and Cauchy Remainders"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - series-of-functions
 relations: []
 review: draft
 ---

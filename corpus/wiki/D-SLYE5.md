@@ -6,7 +6,9 @@ title: "Completeness of a Hilbert space"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - bases
 relations: []
 review: draft
 ---

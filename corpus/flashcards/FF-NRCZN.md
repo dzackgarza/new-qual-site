@@ -6,7 +6,9 @@ title: 'What is a dense subset?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - closure
 relations: []
 review: draft
 ---

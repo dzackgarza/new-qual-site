@@ -6,7 +6,9 @@ title: "Measurable Slices"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - measure-theory
 relations: []
 review: draft
 ---

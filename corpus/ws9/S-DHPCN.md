@@ -6,7 +6,9 @@ title: Solution to P-7VK5X
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - fubini-tonelli
 relations:
 - kind: solves
   target: P-7VK5X

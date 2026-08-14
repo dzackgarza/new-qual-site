@@ -6,7 +6,9 @@ title: "Pointwise Convergence"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - sequences-of-functions
 relations: []
 review: draft
 ---

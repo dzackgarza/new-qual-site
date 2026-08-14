@@ -6,7 +6,9 @@ title: Solution to P-HWAMG
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
 relations:
 - kind: solves
   target: P-HWAMG

@@ -6,7 +6,10 @@ title: "$L^1$ is not quite the dual of $L^\\infty$."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - l-infty
+  - l1
 relations: []
 review: draft
 ---

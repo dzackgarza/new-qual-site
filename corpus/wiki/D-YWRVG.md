@@ -6,7 +6,9 @@ title: "Essential supremum and infimum, essentially bounded"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l-infty
+  - norms
 relations: []
 review: draft
 ---

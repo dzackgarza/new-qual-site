@@ -6,7 +6,9 @@ title: 'Proposition: $\sum \abs{f_n} \in L^1 \implies \sum \abs{f_n(x)} < \infty
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - l1
 relations: []
 review: draft
 ---

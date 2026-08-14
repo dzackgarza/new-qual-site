@@ -6,7 +6,10 @@ title: "- $\\star$: Prove continuity in $L^1$, i.e."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - l1
+  - continuity
+  - density
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Limsups/infs of measurable sets are measurable."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - borel-cantelli
 relations: []
 review: draft
 ---

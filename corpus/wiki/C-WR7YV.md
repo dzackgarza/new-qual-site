@@ -6,7 +6,8 @@ title: "\\sum_{k=0}^\\infty \\frac 1 {2^k} = 1"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations: []
 review: draft
 ---

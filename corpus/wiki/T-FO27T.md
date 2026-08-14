@@ -6,7 +6,9 @@ title: "Bounded inverse"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - continuity
 relations: []
 review: draft
 ---

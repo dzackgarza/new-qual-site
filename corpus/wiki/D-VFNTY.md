@@ -6,7 +6,9 @@ title: "Baire Space: A space $X$ is a Baire space if and only if every countable
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - metric-spaces
 relations: []
 review: draft
 ---

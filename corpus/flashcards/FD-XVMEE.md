@@ -6,7 +6,9 @@ title: 'Equicontinuous'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - equicontinuity
+  - metric-spaces
 relations:
 - kind: variant-of
   target: FD-TGBYP

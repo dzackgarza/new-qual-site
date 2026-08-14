@@ -6,7 +6,9 @@ title: "Dual of a Hilbert space"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - hilbert-spaces
 relations: []
 review: draft
 ---

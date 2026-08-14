@@ -6,7 +6,10 @@ title: "Dense subspaces of $L^2(I)$"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - lp-spaces
+  - l2
 relations: []
 review: draft
 ---

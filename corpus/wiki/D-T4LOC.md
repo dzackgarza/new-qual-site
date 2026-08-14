@@ -6,7 +6,9 @@ title: "Dual Norm"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - norms
 relations: []
 review: draft
 ---

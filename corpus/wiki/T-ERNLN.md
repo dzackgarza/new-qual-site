@@ -6,7 +6,9 @@ title: "Uniform Limit Theorem"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - continuity
 relations: []
 review: draft
 ---

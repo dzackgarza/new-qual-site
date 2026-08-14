@@ -6,7 +6,10 @@ title: "The operator norm on $X\\dual$ yields a Banach space"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - norms
+  - completeness
 relations: []
 review: draft
 ---

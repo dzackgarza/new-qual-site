@@ -6,7 +6,10 @@ title: "Cauchy-Schwarz Inequality"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
+  - l2
+  - inner-product-spaces
 relations: []
 review: draft
 ---

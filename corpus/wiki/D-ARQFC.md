@@ -6,7 +6,9 @@ title: "Approximations to the identity"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
 relations: []
 review: draft
 ---

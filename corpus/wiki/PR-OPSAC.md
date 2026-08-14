@@ -6,7 +6,8 @@ title: "Bernoulli's Inequality"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - bernoulli
 relations: []
 review: draft
 ---

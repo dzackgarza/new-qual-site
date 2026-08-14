@@ -6,7 +6,9 @@ title: "$\\star$: Show that if $E\\subseteq \\RR^n$ is measurable then $m(E) = \
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - compactness
 relations: []
 review: draft
 ---

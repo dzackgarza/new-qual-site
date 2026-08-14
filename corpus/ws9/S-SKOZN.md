@@ -6,7 +6,10 @@ title: Solution to P-625QO
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - integrals
+  - norms
 relations:
 - kind: solves
   target: P-625QO

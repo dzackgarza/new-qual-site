@@ -6,7 +6,8 @@ title: "Measurable sets can be approximated by open/closed/compact sets."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
 relations: []
 review: draft
 ---

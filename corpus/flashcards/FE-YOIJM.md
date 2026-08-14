@@ -6,7 +6,10 @@ title: 'Is a composition of Lebesgue measurable functions measurable?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - cantor-set
+  - counterexamples
 relations: []
 review: draft
 ---

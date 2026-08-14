@@ -6,7 +6,8 @@ title: "Exponential Inequality"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

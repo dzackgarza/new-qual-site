@@ -6,7 +6,10 @@ title: 'Riesz Representation Theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riesz-representation
+  - lp-spaces
+  - dual-spaces
 relations: []
 review: draft
 ---

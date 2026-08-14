@@ -6,7 +6,9 @@ title: "Function discontinuous on the rationals"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

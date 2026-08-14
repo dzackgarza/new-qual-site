@@ -6,7 +6,9 @@ title: 'What is a compact operator?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - compactness
 relations: []
 review: draft
 ---

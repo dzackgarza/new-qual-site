@@ -6,7 +6,9 @@ title: "Singleton sets in $\\RR$ are closed, and thus $\\QQ$ is an $F_\\sigma$ s
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - countability
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Solution to P-J64FR
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - riesz-representation
+  - series-of-functions
 relations:
 - kind: solves
   target: P-J64FR

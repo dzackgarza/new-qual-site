@@ -6,7 +6,9 @@ title: "Can there be a function $f:I\\to \\RR$ that is continuous on $\\QQ$ and\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

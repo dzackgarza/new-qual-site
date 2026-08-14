@@ -6,7 +6,10 @@ title: "Parseval"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - l2
+  - bases
 relations: []
 review: draft
 ---

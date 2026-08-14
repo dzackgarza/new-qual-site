@@ -6,7 +6,9 @@ title: 'Where is ${1\over x^p}$ integrable in $\RR$? (Depending on $p$)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - lp-spaces
 relations: []
 review: draft
 ---

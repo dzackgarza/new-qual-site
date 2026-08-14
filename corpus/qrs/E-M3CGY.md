@@ -6,7 +6,9 @@ title: "Show that every open $U \\subseteq \\RR^n$ is a countable union of almos
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - euclidean-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Example of a sequence of bounded functions whose pointwise limit is unbo
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

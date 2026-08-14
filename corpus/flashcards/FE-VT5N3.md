@@ -6,7 +6,10 @@ title: 'A sequence of functions that converges a.e. but not in $L^1$, uniformly,
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

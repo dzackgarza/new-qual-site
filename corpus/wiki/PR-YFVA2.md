@@ -6,7 +6,10 @@ title: "Functional analytic properties of $L^1$ and $L^2$"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - hilbert-spaces
+  - completeness
 relations: []
 review: draft
 ---

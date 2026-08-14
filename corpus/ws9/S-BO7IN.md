@@ -6,7 +6,10 @@ title: Solution to P-E3HGI
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - functional-analysis
+  - weak-convergence
 relations:
 - kind: solves
   target: P-E3HGI

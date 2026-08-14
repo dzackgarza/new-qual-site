@@ -6,7 +6,10 @@ title: "- Give an example showing that this fails if $g$ is not bounded."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - series-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

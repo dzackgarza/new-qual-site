@@ -6,7 +6,10 @@ title: "\\inner{f}{\\phi} \\da \\int f \\cdot \\phi = 0 \\quad \\forall \\phi\\i
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - integrals
+  - measure-theory
 relations: []
 review: draft
 ---

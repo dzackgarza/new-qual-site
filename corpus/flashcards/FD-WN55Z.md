@@ -6,7 +6,9 @@ title: 'Equivalent Characterizations of Completeness'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - completeness
+  - series-of-numbers
 relations: []
 review: draft
 ---

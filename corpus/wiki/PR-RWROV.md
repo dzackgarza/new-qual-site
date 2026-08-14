@@ -6,7 +6,10 @@ title: "$C(I)$ is complete"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - function-spaces
+  - completeness
+  - norms
 relations: []
 review: draft
 ---

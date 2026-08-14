@@ -6,7 +6,9 @@ title: "Show that a uniform limit of bounded functions is bounded.\u2026"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - continuity
 relations: []
 review: draft
 ---

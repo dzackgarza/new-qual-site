@@ -6,7 +6,8 @@ title: "AM-GM Inequality"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
 relations: []
 review: draft
 ---

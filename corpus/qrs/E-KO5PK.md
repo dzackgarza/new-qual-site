@@ -6,7 +6,9 @@ title: "- Prove continuity in $L^p$: If $f$ is uniformly continuous then for a\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - uniform-continuity
 relations: []
 review: draft
 ---

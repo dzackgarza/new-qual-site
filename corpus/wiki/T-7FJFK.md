@@ -6,7 +6,10 @@ title: "Baire: $\\RR$ is a Baire space, i.e. $\\RR$ can not be written as a coun
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - metric-spaces
+  - completeness
 relations: []
 review: draft
 ---

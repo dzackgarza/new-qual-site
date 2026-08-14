@@ -6,7 +6,10 @@ title: Solution to P-MSIER
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - measure-theory
+  - counterexamples
 relations:
 - kind: solves
   target: P-MSIER

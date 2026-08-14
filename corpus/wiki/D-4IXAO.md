@@ -6,7 +6,9 @@ title: "Orthonormal sequence"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - inner-product-spaces
 relations: []
 review: draft
 ---

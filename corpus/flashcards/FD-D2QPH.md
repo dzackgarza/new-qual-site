@@ -6,7 +6,9 @@ title: 'Limit definition of exponential function'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - limits
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Continuity and Uniform Continuity"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - continuity
+  - uniform-continuity
 relations: []
 review: draft
 ---

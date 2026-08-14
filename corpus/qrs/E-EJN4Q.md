@@ -6,7 +6,9 @@ title: "- Show that every open $U \\subseteq \\RR$ is a countable union of disjo
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - euclidean-spaces
+  - measure-theory
 relations: []
 review: draft
 ---

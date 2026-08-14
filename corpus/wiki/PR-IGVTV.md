@@ -6,7 +6,9 @@ title: "Convergent Sums Have Small Tails"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - small-tails
 relations: []
 review: draft
 ---

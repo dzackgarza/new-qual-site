@@ -6,7 +6,10 @@ title: "Continuity in $L^1$ holds for all $L^p$, translation operators are conti
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - uniform-continuity
+  - continuity
 relations: []
 review: draft
 ---

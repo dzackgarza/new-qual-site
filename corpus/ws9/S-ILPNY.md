@@ -6,7 +6,9 @@ title: Solution to P-SJPBM
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - counterexamples
 relations:
 - kind: solves
   target: P-SJPBM

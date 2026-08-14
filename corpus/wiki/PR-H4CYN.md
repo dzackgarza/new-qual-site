@@ -6,7 +6,9 @@ title: "Sufficient condition for Taylor convergence"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - series-of-functions
 relations: []
 review: draft
 ---

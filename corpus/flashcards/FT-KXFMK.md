@@ -6,7 +6,8 @@ title: 'Equivalent characterizations of measurability of a set'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
 relations: []
 review: draft
 ---

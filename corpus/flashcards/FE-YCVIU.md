@@ -6,7 +6,10 @@ title: 'Give an example of a function that converges almost everywhere but not p
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

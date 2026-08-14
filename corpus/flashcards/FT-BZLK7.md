@@ -6,7 +6,9 @@ title: 'Riemann-Lebesgue Lemma'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l1
 relations: []
 review: draft
 ---

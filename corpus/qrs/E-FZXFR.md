@@ -6,7 +6,10 @@ title: "- Is it the case that $f\\in L^1$ implies $\\hat f\\in L^1$?"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

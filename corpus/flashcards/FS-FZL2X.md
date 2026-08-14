@@ -6,7 +6,9 @@ title: "Showing uniform convergence of a sequence of functions"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
 relations: []
 review: draft
 ---

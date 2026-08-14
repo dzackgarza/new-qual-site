@@ -6,7 +6,10 @@ title: Solution to P-AE7QC
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - l1
+  - l-infty
 relations:
 - kind: solves
   target: P-AE7QC

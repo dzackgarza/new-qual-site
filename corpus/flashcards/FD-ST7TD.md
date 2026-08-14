@@ -6,7 +6,9 @@ title: 'Uniform Continuity'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - metric-spaces
 relations: []
 review: draft
 ---

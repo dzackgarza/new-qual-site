@@ -6,7 +6,10 @@ title: "Limits of differentiable functions need not be differentiable"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - uniform-convergence
+  - counterexamples
 relations: []
 review: draft
 ---

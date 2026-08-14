@@ -6,7 +6,9 @@ title: "Show that if $f, g$ are continuous and compactly supported, then\u2026"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - continuity
 relations: []
 review: draft
 ---

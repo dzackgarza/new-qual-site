@@ -6,7 +6,9 @@ title: 'What does it mean for a set to be nowhere dense?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - closure
 relations: []
 review: draft
 ---

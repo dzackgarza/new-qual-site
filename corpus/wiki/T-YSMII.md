@@ -6,7 +6,9 @@ title: "p-Test for Integrals"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - convergence-tests
 relations: []
 review: draft
 ---

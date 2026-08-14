@@ -6,7 +6,9 @@ title: 'Negating uniform convergence of a sequence of functions'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - counterexamples
 relations: []
 review: draft
 ---

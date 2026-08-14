@@ -6,7 +6,8 @@ title: "limsup of functions"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - limits
 relations: []
 review: draft
 ---

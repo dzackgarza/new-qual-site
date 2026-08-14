@@ -6,7 +6,10 @@ title: 'Example of a sequence of differentiable functions whose pointwise limit 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - convergence-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

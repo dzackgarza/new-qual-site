@@ -6,7 +6,10 @@ title: 'Weierstrass Approximation Theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - stone-weierstrass
+  - density
+  - polynomials
 relations: []
 review: draft
 ---

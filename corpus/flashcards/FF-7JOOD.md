@@ -6,7 +6,8 @@ title: 'What is the diameter of set?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
 relations: []
 review: draft
 ---

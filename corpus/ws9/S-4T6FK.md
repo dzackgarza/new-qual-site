@@ -6,7 +6,9 @@ title: Solution to P-JNFJW
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - counterexamples
 relations:
 - kind: solves
   target: P-JNFJW

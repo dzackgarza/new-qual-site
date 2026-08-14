@@ -6,7 +6,10 @@ title: "Commuting derivatives with integrals, Folland 2.27"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - convergence-of-integrals
+  - integrals
 relations: []
 review: draft
 ---

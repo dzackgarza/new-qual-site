@@ -6,7 +6,9 @@ title: "If $f, g$ are compactly supported, is it necessarily the case that\u2026
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - l1
 relations: []
 review: draft
 ---

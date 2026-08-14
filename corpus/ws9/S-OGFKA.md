@@ -6,7 +6,10 @@ title: Solution to P-VAZ7S
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - lp-spaces
+  - l-infty
+  - limits
 relations:
 - kind: solves
   target: P-VAZ7S

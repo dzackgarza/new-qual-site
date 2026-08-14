@@ -6,7 +6,10 @@ title: "- Show that that Cantor middle-thirds set is compact, totally disconne\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - cantor-set
+  - borel-cantelli
+  - measure-theory
 relations: []
 review: draft
 ---

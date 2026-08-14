@@ -6,7 +6,9 @@ title: Solution to P-YQDFJ
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - variation
+  - continuity
 relations:
 - kind: solves
   target: P-YQDFJ

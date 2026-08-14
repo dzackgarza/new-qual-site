@@ -6,7 +6,10 @@ title: 'Give an example of a sequence of functions that converge uniformly but n
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Jensen's Inequality"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
+  - integrals
 relations: []
 review: draft
 ---

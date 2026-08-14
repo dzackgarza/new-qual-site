@@ -6,7 +6,9 @@ title: 'What is the uniform boundedness principle?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
 relations: []
 review: draft
 ---

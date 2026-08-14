@@ -6,7 +6,10 @@ title: 'Proposition: Convergence in measure is equivalent to a.e. convergence'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - egorov
+  - convergence-of-functions
+  - measure-theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "If $f_k \\in L^1$ and $\\sum \\norm{f_k}_1 < \\infty$ then $\\sum f_k$ c
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - l1
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "Measurable Function"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Baire Space: $X$ is a Baire space iff whenever $ \\theset{U_n}$ is a cou
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - metric-spaces
 relations: []
 review: draft
 ---

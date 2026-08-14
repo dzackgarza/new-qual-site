@@ -6,7 +6,10 @@ title: "Plancherel: $\\norm{f}_{L^2}^2 &= \\norm{\\hat{f}}_{L^2} \\\\ \\int_{\\R
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - l2
+  - norms
 relations: []
 review: draft
 ---

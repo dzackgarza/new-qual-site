@@ -6,7 +6,10 @@ title: "Limits of continuous functions need not be continuous"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

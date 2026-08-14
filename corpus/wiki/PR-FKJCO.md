@@ -6,7 +6,10 @@ title: "A unit ball that is not compact"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - function-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

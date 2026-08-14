@@ -6,7 +6,10 @@ title: Solution to P-I67ZI
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - functional-analysis
+  - norms
 relations:
 - kind: solves
   target: P-I67ZI

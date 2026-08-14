@@ -6,7 +6,10 @@ title: 'Egorov''s Theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - egorov
+  - convergence-of-functions
+  - measure-theory
 relations: []
 review: draft
 ---

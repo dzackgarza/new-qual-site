@@ -6,7 +6,9 @@ title: 'What is a meagre set?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - countability
 relations: []
 review: draft
 ---

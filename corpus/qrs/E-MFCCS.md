@@ -6,7 +6,9 @@ title: "Show that any disjoint intervals is countable."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - countability
+  - euclidean-spaces
 relations: []
 review: draft
 ---

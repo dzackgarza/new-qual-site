@@ -6,7 +6,9 @@ title: 'Holder''s Inequality'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
+  - lp-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Define $ \limsup, \liminf $ for sequences of sets. What are their contai
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - borel-cantelli
 relations: []
 review: draft
 ---

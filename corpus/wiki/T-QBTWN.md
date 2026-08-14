@@ -6,7 +6,10 @@ title: "The operator norm is a norm"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - norms
+  - hilbert-spaces
 relations: []
 review: draft
 ---

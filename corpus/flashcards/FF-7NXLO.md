@@ -6,7 +6,9 @@ title: 'What is the Hahn-Banach theorem?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - dual-spaces
 relations: []
 review: draft
 ---

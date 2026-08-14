@@ -6,7 +6,9 @@ title: 'What is a Baire space?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - metric-spaces
 relations: []
 review: draft
 ---

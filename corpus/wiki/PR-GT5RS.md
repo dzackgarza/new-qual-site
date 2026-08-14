@@ -6,7 +6,9 @@ title: "Cauchy criterion for sums"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - completeness
 relations: []
 review: draft
 ---

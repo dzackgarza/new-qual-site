@@ -6,7 +6,10 @@ title: Solution to P-DQNN6
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - measure-theory
+  - convergence-of-integrals
 relations:
 - kind: solves
   target: P-DQNN6

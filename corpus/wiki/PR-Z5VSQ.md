@@ -6,7 +6,9 @@ title: "Measurability is not preserved by homeomorphisms."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - counterexamples
 relations: []
 review: draft
 ---

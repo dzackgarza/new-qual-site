@@ -6,7 +6,10 @@ title: "Differentiating Under an Integral (non-negative)"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - convergence-of-integrals
+  - integrals
 relations: []
 review: draft
 ---

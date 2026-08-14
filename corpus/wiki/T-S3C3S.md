@@ -6,7 +6,10 @@ title: "Lebesgue Density"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - differentiation
+  - integrals
 relations: []
 review: draft
 ---

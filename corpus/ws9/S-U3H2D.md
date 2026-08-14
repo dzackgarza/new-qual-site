@@ -6,7 +6,10 @@ title: Solution to P-NIC7C
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - functional-analysis
+  - norms
 relations:
 - kind: solves
   target: P-NIC7C

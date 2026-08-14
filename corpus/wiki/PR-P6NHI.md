@@ -6,7 +6,9 @@ title: "Comparison Test"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - convergence-tests
 relations: []
 review: draft
 ---

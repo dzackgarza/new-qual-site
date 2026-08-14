@@ -6,7 +6,10 @@ title: 'Example of a function that converges pointwise but not uniformly'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - counterexamples
 relations: []
 review: draft
 ---

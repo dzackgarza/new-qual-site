@@ -6,7 +6,10 @@ title: "- Prove that uniform convergence implies pointwise convergence implies\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-functions
+  - series-of-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "- Show that if $K$ is compact and $F$ is closed with $K, F$ disjoint t\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

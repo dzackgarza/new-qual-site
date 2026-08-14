@@ -6,7 +6,10 @@ title: "p-tests"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - series-of-numbers
+  - convergence-tests
 relations: []
 review: draft
 ---

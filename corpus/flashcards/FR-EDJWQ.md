@@ -6,7 +6,10 @@ title: 'Relationship between continuity and differentiability'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

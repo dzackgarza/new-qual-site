@@ -6,7 +6,10 @@ title: Solution to P-NSKLO
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fatou
+  - convergence-of-integrals
+  - counterexamples
 relations:
 - kind: solves
   target: P-NSKLO

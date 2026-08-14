@@ -6,7 +6,11 @@ title: "The four big counterexamples in convergence"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

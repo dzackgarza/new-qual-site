@@ -6,7 +6,9 @@ title: "Lipschitz $\\iff$ differentiable with bounded derivative."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - uniform-continuity
 relations: []
 review: draft
 ---

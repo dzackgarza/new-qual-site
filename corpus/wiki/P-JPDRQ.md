@@ -6,7 +6,10 @@ title: "- Can a convergent sequence of real numbers have a subsequence conver\u2
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - uniform-convergence
+  - convergence-of-functions
 relations: []
 review: draft
 ---

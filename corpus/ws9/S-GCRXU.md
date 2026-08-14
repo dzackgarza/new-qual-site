@@ -6,7 +6,9 @@ title: Solution to P-YHXGO
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - functional-analysis
 relations:
 - kind: solves
   target: P-YHXGO

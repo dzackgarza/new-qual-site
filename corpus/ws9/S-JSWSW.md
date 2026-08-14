@@ -6,7 +6,9 @@ title: Solution to P-4QQGN
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - differentiation
+  - measure-theory
 relations:
 - kind: solves
   target: P-4QQGN

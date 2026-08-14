@@ -6,7 +6,9 @@ title: "Show that $f_n: [a, b]\\to \\RR$ are continuously differentiable with de
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - differentiation
 relations: []
 review: draft
 ---

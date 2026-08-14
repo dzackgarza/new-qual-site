@@ -6,7 +6,9 @@ title: Solution to P-CH37V
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - integrals
 relations:
 - kind: solves
   target: P-CH37V

@@ -6,7 +6,9 @@ title: "Open Mapping"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - open-mapping-theorem
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Convergence implies convergence of inner products"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - inner-product-spaces
+  - convergence-of-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: 'Definition: Measurability of a Set'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
 relations: []
 review: draft
 ---

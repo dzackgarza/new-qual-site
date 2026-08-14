@@ -6,7 +6,10 @@ title: Solution to P-ULPU3
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - measure-theory
+  - integrals
 relations:
 - kind: solves
   target: P-ULPU3

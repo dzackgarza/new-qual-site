@@ -6,7 +6,10 @@ title: Solution to P-W5XWA
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - weak-convergence
+  - hilbert-spaces
+  - norms
 relations:
 - kind: solves
   target: P-W5XWA

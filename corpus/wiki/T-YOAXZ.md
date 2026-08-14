@@ -6,7 +6,10 @@ title: "Heine-Cantor"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

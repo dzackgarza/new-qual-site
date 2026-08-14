@@ -6,7 +6,9 @@ title: "Limits of bounded functions need not be bounded"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

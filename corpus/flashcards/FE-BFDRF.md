@@ -6,7 +6,10 @@ title: 'A sequence of functions that converges pointwise and a.e. but not unifor
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

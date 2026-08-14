@@ -6,7 +6,9 @@ title: '$p\dash$test for integrals.'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - lp-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "Borel Characterization of Measurable Sets"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
 relations: []
 review: draft
 ---

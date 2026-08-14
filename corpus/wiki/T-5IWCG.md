@@ -6,7 +6,10 @@ title: "Functionals are continuous if and only if bounded"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - continuity
+  - norms
 relations: []
 review: draft
 ---

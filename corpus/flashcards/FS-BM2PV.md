@@ -6,7 +6,10 @@ title: 'How to commute a sum and an integral'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fubini-tonelli
+  - convergence-of-integrals
+  - series-of-functions
 relations: []
 review: draft
 ---

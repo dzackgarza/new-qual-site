@@ -6,7 +6,9 @@ title: "\\ts{f_n} \\subseteq L^1 \\text{ and } \\sum_n \\norm{f_n}_{L^1} < \\inf
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - l1
 relations: []
 review: draft
 ---

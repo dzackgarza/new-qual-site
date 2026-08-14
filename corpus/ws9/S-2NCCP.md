@@ -6,7 +6,10 @@ title: Solution to P-QZE53
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - integrals
+  - fubini-tonelli
 relations:
 - kind: solves
   target: P-QZE53

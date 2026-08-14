@@ -6,7 +6,9 @@ title: "(a+b)^p \\leq 2^{p-1} (a^p + b^p)"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
+  - lp-spaces
 relations: []
 review: draft
 ---

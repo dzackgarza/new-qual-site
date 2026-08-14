@@ -6,7 +6,10 @@ title: "- Prove the Lebesgue integral is translation/dilation invariant."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
+  - integrals
+  - lp-spaces
 relations: []
 review: draft
 ---

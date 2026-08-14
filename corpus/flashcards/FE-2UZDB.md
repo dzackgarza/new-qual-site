@@ -6,7 +6,10 @@ title: 'Example of a sequence of differentiable functions $f_n \to f$ uniformly 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - differentiation
+  - counterexamples
 relations: []
 review: draft
 ---

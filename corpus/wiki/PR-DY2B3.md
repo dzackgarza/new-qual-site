@@ -6,7 +6,9 @@ title: "Useful properties of the Fourier transform"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - convolution
 relations: []
 review: draft
 ---

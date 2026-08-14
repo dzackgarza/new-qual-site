@@ -6,7 +6,9 @@ title: "Opens are unions of almost disjoint intervals."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - euclidean-spaces
+  - measure-theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Completeness"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

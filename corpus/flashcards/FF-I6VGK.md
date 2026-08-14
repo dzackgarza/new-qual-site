@@ -6,7 +6,9 @@ title: 'Relative strengths of convergence'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - uniform-convergence
 relations: []
 review: draft
 ---

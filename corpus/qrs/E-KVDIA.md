@@ -6,7 +6,9 @@ title: "- $\\star$: Prove that the Lebesgue integral is dilation invariant, i.e\
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - measure-theory
 relations: []
 review: draft
 ---

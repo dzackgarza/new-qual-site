@@ -6,7 +6,10 @@ title: "Term by Term Differentiability Theorem"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - differentiation
+  - uniform-convergence
 relations: []
 review: draft
 ---

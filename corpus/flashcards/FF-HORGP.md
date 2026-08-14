@@ -6,7 +6,9 @@ title: 'Give several equivalent characterizations of completeness.'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - completeness
+  - series-of-numbers
 relations: []
 review: draft
 ---

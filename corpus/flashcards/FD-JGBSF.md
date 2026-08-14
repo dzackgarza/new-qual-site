@@ -6,7 +6,9 @@ title: 'First and Second Category'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - countability
 relations: []
 review: draft
 ---

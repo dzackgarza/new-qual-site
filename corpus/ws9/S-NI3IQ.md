@@ -6,7 +6,9 @@ title: Solution to P-ULNGG
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations:
 - kind: solves
   target: P-ULNGG

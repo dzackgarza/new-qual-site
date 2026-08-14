@@ -6,7 +6,8 @@ title: "Geometric Series"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
 relations: []
 review: draft
 ---

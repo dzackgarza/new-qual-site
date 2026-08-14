@@ -6,7 +6,9 @@ title: "Uniform Limits Commute with Integrals"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-of-integrals
 relations: []
 review: draft
 ---

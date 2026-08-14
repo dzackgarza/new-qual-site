@@ -6,7 +6,10 @@ title: Solution to P-QSYKP
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - fourier-analysis
+  - pdes
+  - norms
 relations:
 - kind: solves
   target: P-QSYKP

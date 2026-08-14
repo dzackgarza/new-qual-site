@@ -6,7 +6,9 @@ title: 'Dominated Convergence Theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-integrals
+  - integrals
 relations: []
 review: draft
 ---

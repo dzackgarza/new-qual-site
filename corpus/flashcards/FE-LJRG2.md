@@ -6,7 +6,10 @@ title: 'Give an example of a function that converge almost everywhere but not po
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

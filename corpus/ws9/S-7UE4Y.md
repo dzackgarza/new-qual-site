@@ -6,7 +6,10 @@ title: Solution to P-YSR66
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - functional-analysis
+  - norms
+  - compactness
 relations:
 - kind: solves
   target: P-YSR66

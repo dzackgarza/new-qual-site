@@ -6,7 +6,10 @@ title: "Basis of a Hilbert space"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
+  - density
+  - bases
 relations: []
 review: draft
 ---

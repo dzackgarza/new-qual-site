@@ -6,7 +6,9 @@ title: "Heine-Borel"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

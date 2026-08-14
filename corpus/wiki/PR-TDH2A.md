@@ -6,7 +6,10 @@ title: "Lebesgue criterion"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - continuity
+  - measure-theory
 relations: []
 review: draft
 ---

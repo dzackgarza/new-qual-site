@@ -6,7 +6,9 @@ title: "Integration by parts, special case"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - fubini-tonelli
 relations: []
 review: draft
 ---

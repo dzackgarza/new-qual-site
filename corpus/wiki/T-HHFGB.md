@@ -6,7 +6,10 @@ title: "Convolving against an approximate identity converges in $L^1$."
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
+  - l1
 relations: []
 review: draft
 ---

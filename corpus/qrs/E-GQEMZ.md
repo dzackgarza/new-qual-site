@@ -6,7 +6,9 @@ title: "$f\\in L^1$ and $g$ smooth and compactly supported (and in fact $f\\ast 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convolution
+  - differentiation
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Give an example of a set that is not nowhere dense.'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - counterexamples
 relations: []
 review: draft
 ---

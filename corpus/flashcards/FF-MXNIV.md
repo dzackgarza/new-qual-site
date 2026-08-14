@@ -6,7 +6,8 @@ title: 'Sets known to be measurable'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - measure-theory
 relations: []
 review: draft
 ---

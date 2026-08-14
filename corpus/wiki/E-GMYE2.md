@@ -6,7 +6,11 @@ title: "- Find a function that is differentiable but not continuously differen\u
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - differentiation
+  - cantor-set
+  - counterexamples
 relations: []
 review: draft
 ---

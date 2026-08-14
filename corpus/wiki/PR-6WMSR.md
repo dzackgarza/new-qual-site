@@ -6,7 +6,9 @@ title: "Weak $M\\dash$Test"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-functions
+  - convergence-of-functions
 relations: []
 review: draft
 ---

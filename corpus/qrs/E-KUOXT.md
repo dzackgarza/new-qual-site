@@ -6,7 +6,10 @@ title: "Show that if additionally $\\abs{\\phi(x)} \\leq c(1 + \\abs{x})^{-n-\\e
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - approximations-to-the-identity
+  - convolution
+  - uniform-convergence
 relations: []
 review: draft
 ---

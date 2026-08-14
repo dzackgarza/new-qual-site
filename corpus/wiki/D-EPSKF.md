@@ -6,7 +6,9 @@ title: "Linear functionals"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - functional-analysis
 relations: []
 review: draft
 ---

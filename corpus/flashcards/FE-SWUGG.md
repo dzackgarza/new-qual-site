@@ -6,7 +6,10 @@ title: 'Give an example of a sequence of functions that converge pointwise but n
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - convergence-of-functions
+  - l1
+  - counterexamples
 relations: []
 review: draft
 ---

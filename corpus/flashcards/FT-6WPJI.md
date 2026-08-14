@@ -6,7 +6,10 @@ title: 'Baire Category Theorem'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - density
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

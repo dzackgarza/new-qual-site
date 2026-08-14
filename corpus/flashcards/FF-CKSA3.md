@@ -6,7 +6,9 @@ title: 'What is Minkowski''s inequality?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - norms
+  - lp-spaces
 relations: []
 review: draft
 ---

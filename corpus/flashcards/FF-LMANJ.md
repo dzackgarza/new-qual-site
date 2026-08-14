@@ -6,7 +6,9 @@ title: 'Where is $x^p$ integrable in $\RR$? (Depending on $p$)'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - lp-spaces
 relations: []
 review: draft
 ---

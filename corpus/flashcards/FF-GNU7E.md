@@ -6,7 +6,9 @@ title: 'What is the Borel-Cantelli lemma?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - borel-cantelli
+  - measure-theory
 relations: []
 review: draft
 ---

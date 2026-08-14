@@ -6,7 +6,9 @@ title: 'Proposition: Translation/Dilation Invariance of the Lebesgue Integral'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - integrals
+  - measure-theory
 relations: []
 review: draft
 ---

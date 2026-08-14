@@ -6,7 +6,9 @@ title: "Duals for $L^p$ spaces"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - dual-spaces
+  - lp-spaces
 relations: []
 review: draft
 ---

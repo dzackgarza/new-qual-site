@@ -6,7 +6,9 @@ title: 'What is the $ M{\hbox{-}} $test?'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

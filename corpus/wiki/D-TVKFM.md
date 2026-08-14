@@ -6,7 +6,9 @@ title: "Topological Notions"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - closure
 relations: []
 review: draft
 ---
