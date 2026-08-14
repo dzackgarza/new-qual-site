@@ -12,13 +12,15 @@ Orchestration ran as one coordinator with seven Opus worker lanes; every lane's 
 2. **RESOLVED — Algebra corrections complete, not partial.** All five batches plus the proof-document repairs landed: `eee0d46d`, `8a4bc822`+`b3214111`, `d58db4d3`, `fb546a5c`, `2d160bd2`, `205b5975`, `f00a577a`, `eb59182e`, `07f03f95` — 117 cards, proof citation audit clean (210/210 ids resolve).
    Recorded-not-guessed items are listed in the proof and §5.
 
-3. **RESOLVED — the stale test was repaired and pushed.** `test_corpus_layout_is_semantically_inert` now derives its expectations from the manifest itself (`d0fea0d6`, written almost entirely by the Algebra lane before its session ended; orchestrator finished one gate-policy line). Single test green (334s); full push gate green (82 passed).
+3. **RESOLVED — the stale test was repaired and pushed.** `test_corpus_layout_is_semantically_inert` now derives its expectations from the manifest itself (`d0fea0d6`, written almost entirely by the Algebra lane before its session ended; orchestrator finished one gate-policy line).
+   Single test green (334s); full push gate green (82 passed).
 
 4. **RESOLVED — pushed.** `72c7f326..d0fea0d6` (126 commits) landed on `origin/main` through the full gate.
 
 5. **OPEN — no GitHub writes have been made.** The full batch is in §4. This is now the FIRST resume item.
 
-6. **NOTE — audit worktrees did not survive.** A disk-full emergency at session end (root filesystem at 99%) forced reclaiming the scratchpad worktrees; the rest fell to tmp cleanup and were pruned. Every proof, ledger, and artifact they supported is committed; only replay convenience was lost.
+6. **NOTE — audit worktrees did not survive.** A disk-full emergency at session end (root filesystem at 99%) forced reclaiming the scratchpad worktrees; the rest fell to tmp cleanup and were pruned.
+   Every proof, ledger, and artifact they supported is committed; only replay convenience was lost.
 
 ## 2. State of the plan's workstreams
 
@@ -40,17 +42,15 @@ Orchestration ran as one coordinator with seven Opus worker lanes; every lane's 
 
 ## 3. First-resume queue, in order
 
-1. Resolve the uncommitted classification batch (§1.1); push.
+(All repo work is committed and pushed; what remains is measurement, externalization, and the deployed-proof tail.)
 
-2. Algebra batches 4–5 and the #25 proof-document corrections (§1.2).
+1. The GitHub batch (§4) — comments, provenance restatements, and issue closures on the committed proofs.
 
-3. #28's 121-card reachability re-measure — unblocked by the panel-heading fix (`965a9e76`); on success #28 closes on its literal criterion.
+2. #28's 121-card reachability re-measure — unblocked by the panel-heading fix (`965a9e76`); on success #28 closes on its literal criterion.
 
-4. The GitHub batch (§4).
+3. Deploy; then #30's deployed replay in the existing `replay-proof.md` format at the deployed revision; then #11's M4/M5 sign-off by a fresh-context agent against `artifacts/issue-11/`.
 
-5. Deploy; then #30 deployed replay in the existing `replay-proof.md` format at the deployed revision; then #11 sign-off by a fresh agent against `artifacts/issue-11/`.
-
-6. Optional, offered by the publisher lane: full-site macro census (5,824 pages); `title:` override on QueryItem (nothing asks yet).
+4. Optional, offered by the publisher lane: full-site undefined-macro census (5,824 pages); `title:` override on QueryItem (nothing asks yet).
 
 ## 4. GitHub writes owed (batched, none posted)
 
