@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-FBMYQ
 kind: theorem
-title: "Excision: Todo"
+title: "Excision: Given subspaces $Z \\subseteq A \\subseteq X$ with $\\cl_X(Z) \\subseteq A\\interior$, the inclusion of pairs induces isomorphisms…"
 classification:
   areas:
   - topology

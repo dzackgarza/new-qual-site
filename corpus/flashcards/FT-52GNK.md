@@ -14,9 +14,11 @@ review: draft
 ---
 
 ::: {.theorem title="Urysohn's Lemma"}
-A space $X$ is normal iff for every closed $U, V \subset X$ there exists a continuous function $f: X\to [0, 1]$ with $f(U) = 0, f(V) = 1$.
+A space $X$ is normal iff for every pair of **disjoint** closed sets $U, V \subseteq X$ there is a continuous $f: X\to [0,1]$ with $\ro f U = 0$ and $\ro f V = 1$.
+:::
 
-Equivalently $\chi_U \leq f \leq \chi_V$.
+::: {.remark}
+Munkres, *Topology*, §33, Theorem 33.1. Disjointness is needed: without it take $U = V$ nonempty and no such $f$ exists.
 
-Equivalently, a topological space is separable and metrizable $\iff$ it is regular, Hausdorff, and second-countable.
+This card previously closed with "Equivalently, a topological space is separable and metrizable iff it is regular, Hausdorff, and second-countable". That is the **Urysohn metrization theorem**, Munkres §34, Theorem 34.1 — a different theorem with a different conclusion, not an equivalent form of the lemma. The lemma is what metrization is proved *from*.
 :::
