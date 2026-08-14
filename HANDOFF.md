@@ -12,13 +12,13 @@ Orchestration ran as one coordinator with seven Opus worker lanes; every lane's 
 2. **RESOLVED — Algebra corrections complete, not partial.** All five batches plus the proof-document repairs landed: `eee0d46d`, `8a4bc822`+`b3214111`, `d58db4d3`, `fb546a5c`, `2d160bd2`, `205b5975`, `f00a577a`, `eb59182e`, `07f03f95` — 117 cards, proof citation audit clean (210/210 ids resolve).
    Recorded-not-guessed items are listed in the proof and §5.
 
-3. **OPEN — one stale test blocks the push gate.** `tests/test_invariants.py::test_corpus_layout_is_semantically_inert` hard-codes the pre-session 4-section Algebra guide traversal and fails against the legitimate 17-section guide.
-   A repair (manifest-as-source-of-truth rewrite, per test-guidelines) was in flight at session end — check `git log -- tests/test_invariants.py` and `git status`: if a green commit landed, push; if the working tree holds a partial rewrite, finish or restart it from the test's intent (rendered traversal coherent with the manifest), never a vacuous weakening.
-   This is the only thing between the current state and a clean `git push`.
+3. **RESOLVED — the stale test was repaired and pushed.** `test_corpus_layout_is_semantically_inert` now derives its expectations from the manifest itself (`d0fea0d6`, written almost entirely by the Algebra lane before its session ended; orchestrator finished one gate-policy line). Single test green (334s); full push gate green (82 passed).
 
-4. **OPEN — nothing is pushed** (~110 commits ahead of `origin/main`). Push immediately after (3).
+4. **RESOLVED — pushed.** `72c7f326..d0fea0d6` (126 commits) landed on `origin/main` through the full gate.
 
-5. **OPEN — no GitHub writes have been made.** The full batch is in §4.
+5. **OPEN — no GitHub writes have been made.** The full batch is in §4. This is now the FIRST resume item.
+
+6. **NOTE — audit worktrees did not survive.** A disk-full emergency at session end (root filesystem at 99%) forced reclaiming the scratchpad worktrees; the rest fell to tmp cleanup and were pruned. Every proof, ledger, and artifact they supported is committed; only replay convenience was lost.
 
 ## 2. State of the plan's workstreams
 
