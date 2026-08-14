@@ -7,7 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - misc
+  - fundamental-group
+  - homotopy
+  - covering-spaces
 relations: []
 review: draft
 ---
