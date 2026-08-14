@@ -114,7 +114,11 @@
       const item = document.createElement("li");
       const link = document.createElement("a");
       link.href = `#${heading.id}`;
-      link.textContent = heading.textContent;
+      // Copying textContent flattened a heading's mathematics to its source
+      // characters, so a card titled with a formula read as raw TeX in the
+      // index. Cloning the nodes keeps the math markup, which MathJax then
+      // typesets here the same as it does in the heading itself.
+      link.append(...heading.cloneNode(true).childNodes);
       item.className = heading.tagName === "H3" ? "toc-subsection" : "";
       item.append(link);
       list.append(item);
