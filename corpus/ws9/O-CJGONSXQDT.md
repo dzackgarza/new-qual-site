@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
+  - contour-integration
   - integrals
-  - residues
   - riemann-integrability
 relations:
 - kind: instance-of

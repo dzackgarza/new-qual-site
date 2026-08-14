@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - residues
+  - contour-integration
   - integrals
   - riemann-integrability
 relations:

@@ -12,7 +12,6 @@ classification:
 relations: []
 review: draft
 ---
-Assume that $f$ is differentiable at $a$.
-Evaluate
-$$\lim_{x\to a}\frac{a^nf(x)-x^nf(a)}{x-a},\quad n\in\mathbb{N}.$$
 
+Assume that $f$ is differentiable at $a$.
+Evaluate $$\lim_{x\to a}\frac{a^nf(x)-x^nf(a)}{x-a},\quad n\in\mathbb{N}.$$

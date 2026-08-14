@@ -11,7 +11,7 @@ classification:
 relations: []
 review: draft
 ---
-Let $f \colon [a,b] \to \mathbb{R}$. Suppose
-$f \in \text{BV}[a,b]$. Prove $f$ is the difference of two
-increasing functions.
 
+Let $f \colon [a,b] \to \mathbb{R}$.
+Suppose $f \in \text{BV}[a,b]$.
+Prove $f$ is the difference of two increasing functions.

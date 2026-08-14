@@ -14,8 +14,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(June 2008 #3a) Prove that if $f'$ exists and is bounded on $(a,b]$, then
-$$\lim_{x\to a^+}f(x)$$
-exists.
+::: {.problem title="?"}
+(June 2008 #3a) Prove that if $f'$ exists and is bounded on $(a,b]$, then $$\lim_{x\to a^+}f(x)$$ exists.
 :::

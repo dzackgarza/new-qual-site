@@ -7,12 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
+  - dual-spaces
   - functional-analysis
   - norms
   - continuity
 relations: []
 review: draft
 ---
+
 Let $X$ be a normed vector space.
 
 a. Give the definition of what it means for a map $L:X\to \CC$ to be a *linear functional*.

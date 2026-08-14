@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
+  - normal-families
   - holomorphic-functions
-  - arzela-ascoli
 relations:
 - kind: instance-of
   target: P-7QJS2

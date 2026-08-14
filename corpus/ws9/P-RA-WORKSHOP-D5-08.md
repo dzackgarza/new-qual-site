@@ -14,10 +14,8 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(January 2012 #4b, extended) Let $f:\mathbb R\to\mathbb R$ be a differentiable function with
-$f'\in C(\mathbb R)$. Assume that there are $a,b\in\mathbb R$ with
-$$\lim_{x\to\infty}f(x)=a\qquad\text{and}\qquad\lim_{x\to\infty}f'(x)=b.$$
-Prove that $b=0$. Then, find a counterexample to show that the assumption
-$\lim_{x\to\infty}f'(x)$ exists is necessary.
+::: {.problem title="?"}
+(January 2012 #4b, extended) Let $f:\mathbb R\to\mathbb R$ be a differentiable function with $f'\in C(\mathbb R)$.
+Assume that there are $a,b\in\mathbb R$ with $$\lim_{x\to\infty}f(x)=a\qquad\text{and}\qquad\lim_{x\to\infty}f'(x)=b.$$ Prove that $b=0$.
+Then, find a counterexample to show that the assumption $\lim_{x\to\infty}f'(x)$ exists is necessary.
 :::

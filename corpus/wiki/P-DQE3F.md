@@ -13,6 +13,7 @@ classification:
 relations: []
 review: draft
 ---
+
 Let \( \ts{ f_k }_{k=1}^{\infty } \subseteq L^2([0, 1]) \) be a sequence which *converges in $L^1$* to a function $f$.
 
 a. Prove that $f\in L^1([0, 1])$.

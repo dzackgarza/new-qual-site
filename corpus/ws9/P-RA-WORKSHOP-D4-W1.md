@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-State the definition of uniform continuity. Give an example of a function $f:(0,1)\to\mathbb R$ which is
-continuous but not uniformly continuous.
+::: {.problem title="?"}
+State the definition of uniform continuity.
+Give an example of a function $f:(0,1)\to\mathbb R$ which is continuous but not uniformly continuous.
 :::

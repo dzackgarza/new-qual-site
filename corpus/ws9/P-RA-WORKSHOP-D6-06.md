@@ -13,7 +13,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(June 2005 #1b) Use the definition of the Riemann integral to prove that if $f$ is bounded on $[a,b]$ and
-is continuous everywhere except for finitely many points in $(a,b)$, then $f\in\mathcal R$ on $[a,b]$.
+::: {.problem title="?"}
+(June 2005 #1b) Use the definition of the Riemann integral to prove that if $f$ is bounded on $[a,b]$ and is continuous everywhere except for finitely many points in $(a,b)$, then $f\in\mathcal R$ on $[a,b]$.
 :::

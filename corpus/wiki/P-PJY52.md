@@ -12,7 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-If the series $\sum_{n=0}^\infty a_n$ converges
-conditionally, show that the radius of convergence of the power
-series $\sum_{n=0}^\infty a_nx^n$ is 1.
 
+If the series $\sum_{n=0}^\infty a_n$ converges conditionally, show that the radius of convergence of the power series $\sum_{n=0}^\infty a_nx^n$ is 1.

@@ -13,7 +13,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-([KRD10, Exercise 6.2.B]) If $f:(a,b)\to\mathbb R$ is continuously differentiable and $f'(x_0)\ne0$
-for some $x_0\in(a,b)$, then $f$ is injective on some interval $(c,d)$ containing $x_0$.
+::: {.problem title="?"}
+([KRD10, Exercise 6.2.B]) If $f:(a,b)\to\mathbb R$ is continuously differentiable and $f'(x_0)\ne0$ for some $x_0\in(a,b)$, then $f$ is injective on some interval $(c,d)$ containing $x_0$.
 :::

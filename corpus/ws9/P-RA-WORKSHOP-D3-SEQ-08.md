@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 (May 2011 #4a) Determine the values of $x\in\mathbb R$ for which
 $$
 \sum_{n=1}^{\infty}\frac{x^n}{1+n|x|^n}

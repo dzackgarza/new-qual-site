@@ -13,10 +13,9 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-A useful lemma: Let $\{x_n\}$ be a real sequence with $\liminf_{n\to\infty}x_n$,
-$\limsup_{n\to\infty}x_n\in\mathbb R$. Show that for any $\epsilon>0$ there exists some $N\in\mathbb N$
-so that
+::: {.problem title="?"}
+A useful lemma: Let $\{x_n\}$ be a real sequence with $\liminf_{n\to\infty}x_n$, $\limsup_{n\to\infty}x_n\in\mathbb R$.
+Show that for any $\epsilon>0$ there exists some $N\in\mathbb N$ so that
 $$
 \left(\liminf_{n\to\infty}x_n\right)-\epsilon<x_n<
 \left(\limsup_{n\to\infty}x_n\right)+\epsilon

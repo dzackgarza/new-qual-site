@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(June 2010 #6a) Let $f:[0,1]\to\mathbb R$ be continuous with $f(0)\ne f(1)$ and define
-$f_n(x)=f(x^n)$. Prove that $f_n$ does not converge uniformly on $[0,1]$.
+::: {.problem title="?"}
+(June 2010 #6a) Let $f:[0,1]\to\mathbb R$ be continuous with $f(0)\ne f(1)$ and define $f_n(x)=f(x^n)$.
+Prove that $f_n$ does not converge uniformly on $[0,1]$.
 :::

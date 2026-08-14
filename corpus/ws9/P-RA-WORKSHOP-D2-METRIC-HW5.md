@@ -14,10 +14,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(January 2010 #1a partial) Determine whether or not the sets
-$$\{(x,y)\in\mathbb R^2:x+y<3\}$$
-and
-$$\{f\in C([-1,1]):f(0)=0\}$$
-are open, closed, or compact, where $C([-1,1])$ is considered with $\lVert\cdot\rVert_\infty$.
+::: {.problem title="?"}
+(January 2010 #1a partial) Determine whether or not the sets $$\{(x,y)\in\mathbb R^2:x+y<3\}$$ and $$\{f\in C([-1,1]):f(0)=0\}$$ are open, closed, or compact, where $C([-1,1])$ is considered with $\lVert\cdot\rVert_\infty$.
 :::

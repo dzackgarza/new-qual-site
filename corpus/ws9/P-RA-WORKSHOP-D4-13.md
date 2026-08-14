@@ -16,6 +16,6 @@ relations:
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove Theorem 3.3.
 :::

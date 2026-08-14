@@ -11,7 +11,5 @@ classification:
 relations: []
 review: draft
 ---
-Use the definition of the derivative to prove that
-if $f$ and $g$ are differentiable at $x$, then $fg$ is
-differentiable at $x$.
 
+Use the definition of the derivative to prove that if $f$ and $g$ are differentiable at $x$, then $fg$ is differentiable at $x$.

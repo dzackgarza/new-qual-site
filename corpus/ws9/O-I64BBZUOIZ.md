@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
+  - hurwitz
   - holomorphic-functions
   - uniform-convergence
-  - rouche
 relations:
 - kind: instance-of
   target: P-JKYJU

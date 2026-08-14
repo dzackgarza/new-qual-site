@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 (January 2014 #2)
 
 (a) Produce sequences $\{a_n\}$, $\{b_n\}$ of positive real numbers such that

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Let $H$ be an infinite dimensional real Hilbert space.
 
 a. Prove that the unit sphere $S=\{x\in H: ||x||=1\}$ is weakly dense in the unit ball $B=\{x\in H: ||x||\le 1\}$.

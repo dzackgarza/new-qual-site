@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 (June 2008 #4b) Assume $\beta>0$, $a_n>0$, $n=1,2,\ldots$, and the series $\sum a_n$ is divergent.
 Show that
 $$

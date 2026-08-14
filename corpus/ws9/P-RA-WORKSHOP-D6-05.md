@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(January 2006 #4b) Suppose that $f$ is continuous and $f(x)\ge0$ on $[0,1]$. If $f(0)>0$, prove that
-$$\int_0^1f(x)\,dx>0.$$
+::: {.problem title="?"}
+(January 2006 #4b) Suppose that $f$ is continuous and $f(x)\ge0$ on $[0,1]$.
+If $f(0)>0$, prove that $$\int_0^1f(x)\,dx>0.$$
 :::

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 (c.f. June 2012 #1b) If $f:[0,1]\to[0,1]$ is continuous, show that $f(x)=x$ for some $x\in[0,1]$.
 :::

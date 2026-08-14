@@ -11,6 +11,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="?"}
+
+::: {.problem title="?"}
 Show that $E$ is measurable iff $E$ is regular.
 :::

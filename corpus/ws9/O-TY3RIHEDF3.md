@@ -8,7 +8,7 @@ classification:
   - real-analysis
   topics:
   - meromorphic-functions
-  - argument-principle-cauchy-s-integral-theorem
+  - argument-principle
 relations:
 - kind: instance-of
   target: P-UUYPV

@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove that the unit ball of $L^2$ endowed with its natural strong topology is not compact.
 :::

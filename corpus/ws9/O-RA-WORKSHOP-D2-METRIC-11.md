@@ -9,6 +9,7 @@ classification:
   topics:
   - continuity
   - limits
+  - countability
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-11

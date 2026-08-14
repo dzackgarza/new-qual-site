@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove that a normed vector space $(X, \|\cdot\|)$ is Banach if and only if every normally (sometimes called also absolutely) convergent series is convergent.
 :::

@@ -14,7 +14,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Prove the absolute continuity of the Lebesgue integral; in other words, prove that if $f$ is integrable on $\mathbb{R}^d$, then for every $\epsilon > 0$ there exists $\delta > 0$ such that
-$$\int_E |f| < \epsilon \text{ whenever } m(E) < \delta.$$
+::: {.problem title="?"}
+Prove the absolute continuity of the Lebesgue integral; in other words, prove that if $f$ is integrable on $\mathbb{R}^d$, then for every $\epsilon > 0$ there exists $\delta > 0$ such that $$\int_E |f| < \epsilon \text{ whenever } m(E) < \delta.$$
 :::

@@ -13,8 +13,9 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Let $\Omega$ be an open convex region in the complex plane. Assume $f$ is a holomorphic function on $\Omega$ and the $\text{Re}(f'(z))>0$ for all $z\in\Omega$.
+::: {.problem title="?"}
+Let $\Omega$ be an open convex region in the complex plane.
+Assume $f$ is a holomorphic function on $\Omega$ and the $\text{Re}(f'(z))>0$ for all $z\in\Omega$.
 
 a. Prove that $f$ is one-to-one.
 

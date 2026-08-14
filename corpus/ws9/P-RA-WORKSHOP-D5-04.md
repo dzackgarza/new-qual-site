@@ -12,7 +12,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(June 2005 #1a) Use the definition of the derivative to prove that if $f$ and $g$ are differentiable at $x$,
-then $fg$ is differentiable at $x$.
+::: {.problem title="?"}
+(June 2005 #1a) Use the definition of the derivative to prove that if $f$ and $g$ are differentiable at $x$, then $fg$ is differentiable at $x$.
 :::

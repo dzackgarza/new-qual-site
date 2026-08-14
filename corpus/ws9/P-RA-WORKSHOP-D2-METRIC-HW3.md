@@ -7,11 +7,11 @@ classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
+  - countability
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Is the set of all sequences $x_1,x_2,\ldots$ with $x_i\in\{0,1\}$ for $i=1,2,\ldots$ countable?
 :::

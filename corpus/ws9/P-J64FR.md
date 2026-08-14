@@ -14,15 +14,12 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-Consider the complex Hilbert space
-$$H := \left\{f:\overline{\mathbb{D}}\to\mathbb{C}: f(z)=\sum_{k=0}^\infty \widehat{f}(k)z^k \text{ with } ||f||^2 := \sum_{k=0}^\infty (1+k^2)|\widehat{f}(k)|^2 < \infty\right\}.$$
+::: {.problem title="?"}
+Consider the complex Hilbert space $$H := \left\{f:\overline{\mathbb{D}}\to\mathbb{C}: f(z)=\sum_{k=0}^\infty \widehat{f}(k)z^k \text{ with } ||f||^2 := \sum_{k=0}^\infty (1+k^2)|\widehat{f}(k)|^2 < \infty\right\}.$$
 
 a. Prove that the linear function $L:f\mapsto f(1)$ is bounded.
 
 b. Find the element $g\in H$ representing $L$.
 
-c. Show that $f\mapsto \text{Re}\,L(f)$ achieves its maximal value on the set
-$$B := \{f\in H: ||f||\le1 \text{ and } f(0)=0\},$$
-that this maximum occurs at a unique point, and determine this maximal value.
+c. Show that $f\mapsto \text{Re}\,L(f)$ achieves its maximal value on the set $$B := \{f\in H: ||f||\le1 \text{ and } f(0)=0\},$$ that this maximum occurs at a unique point, and determine this maximal value.
 :::

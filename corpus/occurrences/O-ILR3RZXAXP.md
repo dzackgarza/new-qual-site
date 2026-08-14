@@ -7,6 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
+  - dual-spaces
   - lp-spaces
   - norms
 relations:

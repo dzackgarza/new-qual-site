@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(January 2012 #1a) Let $\{a_n\}$, $\{b_n\}$ be bounded sequences of positive real numbers. If $\sum b_n$ is convergent,
-show that $\sum a_nb_n$ is also convergent.
+::: {.problem title="?"}
+(January 2012 #1a) Let $\{a_n\}$, $\{b_n\}$ be bounded sequences of positive real numbers.
+If $\sum b_n$ is convergent, show that $\sum a_nb_n$ is also convergent.
 :::

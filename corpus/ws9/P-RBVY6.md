@@ -9,7 +9,7 @@ classification:
   topics:
   - fourier-analysis
   - residues
-  - integrals
+  - contour-integration
 relations: []
 review: draft
 ---

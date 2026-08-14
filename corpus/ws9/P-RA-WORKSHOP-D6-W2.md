@@ -13,7 +13,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-([Apo74, 7.12] c.f. [Rud76, p. 138 #3]) Give an example of a bounded function $f$ and an increasing
-function $\alpha$ defined on $[a,b]$ such that $|f|\in\mathcal R(\alpha)$ but $f\notin\mathcal R(\alpha)$.
+::: {.problem title="?"}
+([Apo74, 7.12] c.f. [Rud76, p. 138 #3]) Give an example of a bounded function $f$ and an increasing function $\alpha$ defined on $[a,b]$ such that $|f|\in\mathcal R(\alpha)$ but $f\notin\mathcal R(\alpha)$.
 :::

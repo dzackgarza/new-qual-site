@@ -347,6 +347,8 @@
   name: Quotient Spaces
 - id: radon-nikodym
   name: Radon Nikodym
+- id: rank-and-nullity
+  name: Rank and Nullity
 - id: rational-canonical-form
   name: Rational Canonical Form
 - id: removable-singularities

@@ -8,6 +8,7 @@ classification:
   - real-analysis
   topics:
   - series-of-numbers
+  - convergence-tests
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-13

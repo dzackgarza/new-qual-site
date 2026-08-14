@@ -12,7 +12,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(June 2013 #1b) Prove that
-$$\lim_{x\to-\infty}\frac{x-1}{x}=1.$$
+::: {.problem title="?"}
+(June 2013 #1b) Prove that $$\lim_{x\to-\infty}\frac{x-1}{x}=1.$$
 :::

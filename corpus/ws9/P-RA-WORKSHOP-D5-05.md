@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(January 2006 #2b) Assume that $f$ is differentiable at $a$. Evaluate
-$$\lim_{x\to a}\frac{a^n f(x)-x^n f(a)}{x-a},\qquad n\in\mathbb N.$$
+::: {.problem title="?"}
+(January 2006 #2b) Assume that $f$ is differentiable at $a$.
+Evaluate $$\lim_{x\to a}\frac{a^n f(x)-x^n f(a)}{x-a},\qquad n\in\mathbb N.$$
 :::

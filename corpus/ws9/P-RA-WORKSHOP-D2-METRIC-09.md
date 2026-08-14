@@ -13,8 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(January 2011 #3a) Let $(X,d)$ be a metric space, $K\subset X$ be compact, and $F\subset X$ be closed. If
-$K\cap F=\varnothing$, prove that there exists an $\epsilon>0$ so that $d(k,f)\ge\epsilon$ for all $k\in K$ and
-$f\in F$.
+::: {.problem title="?"}
+(January 2011 #3a) Let $(X,d)$ be a metric space, $K\subset X$ be compact, and $F\subset X$ be closed.
+If $K\cap F=\varnothing$, prove that there exists an $\epsilon>0$ so that $d(k,f)\ge\epsilon$ for all $k\in K$ and $f\in F$.
 :::

@@ -14,10 +14,11 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 (c.f. [Abb01, Exercise 2.4.5]) Let $x_1=2$ and define
 $$
 x_{n+1}=\frac12\left(x_n+\frac{2}{x_n}\right).
 $$
-Find $\lim_{n\to\infty}x_n$. Hint: Show that $\{x_n\}$ is decreasing.
+Find $\lim_{n\to\infty}x_n$.
+Hint: Show that $\{x_n\}$ is decreasing.
 :::

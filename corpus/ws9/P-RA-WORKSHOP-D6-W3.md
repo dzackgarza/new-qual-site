@@ -14,9 +14,8 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(January 2007 #1) Let
-$$f(x)=\int_1^x\frac1t\,dt$$
-for $x>0$. (a) Use an $\epsilon$-$\delta$ proof to show that $f$ is continuous on $(0,\infty)$.
+::: {.problem title="?"}
+(January 2007 #1) Let $$f(x)=\int_1^x\frac1t\,dt$$ for $x>0$.
+(a) Use an $\epsilon$-$\delta$ proof to show that $f$ is continuous on $(0,\infty)$.
 (b) Use an $\epsilon$-$\delta$ proof to show that $f$ is differentiable on $(0,\infty)$.
 :::

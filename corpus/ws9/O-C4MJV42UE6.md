@@ -8,8 +8,8 @@ classification:
   - real-analysis
   topics:
   - holomorphic-functions
+  - normal-families
   - l2
-  - function-spaces
 relations:
 - kind: instance-of
   target: P-7Y4VS

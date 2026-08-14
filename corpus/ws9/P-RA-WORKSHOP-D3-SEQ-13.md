@@ -8,10 +8,11 @@ classification:
   - real-analysis
   topics:
   - series-of-numbers
+  - convergence-tests
 relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Assume that Theorem 2.4 (the root test) is true and prove the ratio test (Theorem 2.5).
 :::

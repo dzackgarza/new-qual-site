@@ -13,8 +13,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-([Apo74, 7.2]) If $f\in\mathcal R(\alpha)$ on $[a,b]$ and
-$\int_a^b f\,d\alpha=0$ for every $f$ which is monotonic on $[a,b]$, prove that $\alpha$ must be constant
-on $[a,b]$.
+::: {.problem title="?"}
+([Apo74, 7.2]) If $f\in\mathcal R(\alpha)$ on $[a,b]$ and $\int_a^b f\,d\alpha=0$ for every $f$ which is monotonic on $[a,b]$, prove that $\alpha$ must be constant on $[a,b]$.
 :::

@@ -13,7 +13,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-(January 2005 #4, June 2010 #6b) If $f:[0,1]\to\mathbb R$ is continuous, prove that
-$$\lim_{n\to\infty}\int_0^1f(x^n)\,dx=f(0).$$
+::: {.problem title="?"}
+(January 2005 #4, June 2010 #6b) If $f:[0,1]\to\mathbb R$ is continuous, prove that $$\lim_{n\to\infty}\int_0^1f(x^n)\,dx=f(0).$$
 :::

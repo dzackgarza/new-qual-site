@@ -6,7 +6,10 @@ title: P-G373O at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
+  - completeness
 relations:
 - kind: instance-of
   target: P-G373O

@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-:::{.problem title="?"}
-(c.f. January 2007 #3a, June 2010 #2a) Prove Theorem 3.2 for a function
-$f:K\subset\mathbb R\to\mathbb R$. (The proof is nearly unchanged when $n$ or $m$ is greater than 1.)
+::: {.problem title="?"}
+(c.f. January 2007 #3a, June 2010 #2a) Prove Theorem 3.2 for a function $f:K\subset\mathbb R\to\mathbb R$.
+(The proof is nearly unchanged when $n$ or $m$ is greater than 1.)
 :::

@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
+  - countability
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D2-METRIC-HW3

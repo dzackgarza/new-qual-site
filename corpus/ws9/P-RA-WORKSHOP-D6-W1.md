@@ -13,7 +13,6 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
-([KRD10, 6.4.N]) If $f$ and $g$ are bounded on $[a,b]$ and both are Riemann integrable on $[a,b]$,
-show that $fg\in\mathcal R$ on $[a,b]$.
+::: {.problem title="?"}
+([KRD10, 6.4.N]) If $f$ and $g$ are bounded on $[a,b]$ and both are Riemann integrable on $[a,b]$, show that $fg\in\mathcal R$ on $[a,b]$.
 :::
