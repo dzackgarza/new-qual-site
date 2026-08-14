@@ -248,7 +248,7 @@
   "\\nonzero": "^{\\bullet}",
   "\\norm": "{\\left\\lVert {#1} \\right\\rVert}",
   "\\normal": "{~\\trianglelefteq~}",
-  "\\notdivides": "\\mathrel{\\mkern.5mu \n    \n    \\ooalign{\\hidewidth$\\big|$\\hidewidth\\cr$\\nmid$\\cr}\n  }",
+  "\\notdivides": "\\mathrel{\\nmid}",
   "\\one": "\\mathbbm{1}",
   "\\op": "^{\\operatorname{op}}",
   "\\ord": "{\\operatorname{Ord}}",

@@ -58,6 +58,16 @@ MACRO_USE_RE = re.compile(r"\\([A-Za-z]+)(?![A-Za-z\u2026])")
 # Paragraph-mode glue. MathJax has no `\hfill`, and `\qed` is written with one.
 TEX_ONLY = re.compile(r"\\hfill\b")
 
+# Preamble definitions MathJax cannot render, under the definition to use
+# instead. A body reaching MathJax with a construct it does not implement
+# renders as a red error box, not as a fallback, so the substitution has to
+# happen here rather than at the page.
+#
+# `\notdivides` is built from `\ooalign`, `\hidewidth` and `\cr`, which are
+# plain-TeX alignment primitives MathJax has no equivalent for. `\nmid` is the
+# same relation from the standard tables, which MathJax does implement.
+UNRENDERABLE = {"notdivides": "\\mathrel{\\nmid}"}
+
 USED_IN = ("corpus", "wiki")
 
 
@@ -115,7 +125,10 @@ def main() -> int:
         keep[name] = defined[name]
         frontier |= {n for n in MACRO_USE_RE.findall(defined[name]) if n in defined and n not in keep}
 
-    macros = {"\\" + name: TEX_ONLY.sub("", body).strip() for name, body in sorted(keep.items())}
+    macros = {
+        "\\" + name: UNRENDERABLE.get(name, TEX_ONLY.sub("", body).strip())
+        for name, body in sorted(keep.items())
+    }
     (ROOT / "vocabularies" / "macros.json").write_text(json.dumps(macros, indent=2, ensure_ascii=False) + "\n")
     print(f"{len(macros)} macros used by {' and '.join(USED_IN)}, from {PREAMBLE}")
     undefined = sorted(n for n in used if n not in defined)
