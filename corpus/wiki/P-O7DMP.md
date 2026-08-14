@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O7DMP
 kind: problem
-title: "Define $F(x) &\\da \\qty{ \\sin(\\pi x) \\over \\pi x}^2 \\\\ G(x) &\\da \\begin{cases} 1 - \\abs{x} & \\abs{x} \\leq 1 \\\\ 0 & \\text{else}. \\end{cases}$ Show that $\\fourier{G}(\\xi) = F(\\xi)$"
+title: "Define $\\begin{aligned}F(x) &\\da \\qty{ \\sin(\\pi x) \\over \\pi x}^2 \\\\ G(x) &\\da \\begin{cases} 1 - \\abs{x} & \\abs{x} \\leq 1 \\\\ 0 & \\text{else}. \\end{cases}\\end{aligned}$ Show that $\\fourier{G}(\\xi) = F(\\xi)$"
 classification:
   areas:
   - real-analysis

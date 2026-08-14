@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-56AFO
 kind: problem
-title: "Show that $\\int_{\\BB^n} {1 \\over \\abs{x}^p } \\dx &< \\infty \\iff p < n \\\\ \\\\ \\\\ \\int_{\\RR^n\\sm \\BB^n} {1 \\over \\abs{x}^p } \\dx &< \\infty \\iff p > n$ Todo"
+title: "Show that $\\begin{aligned}\\int_{\\BB^n} {1 \\over \\abs{x}^p } \\dx &< \\infty \\iff p < n \\\\ \\\\ \\\\ \\int_{\\RR^n\\sm \\BB^n} {1 \\over \\abs{x}^p } \\dx &< \\infty \\iff p > n\\end{aligned}$ Todo"
 classification:
   areas:
   - real-analysis

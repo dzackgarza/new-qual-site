@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-5PDNQ
 kind: proposition
-title: "If either of $\\dim_k V, \\dim_k W$ is finite, then $V\\dual \\tensor_k W\\dual &\\mapsvia{\\sim} (V\\tensor W)\\dual \\\\ v\\tensor w &\\mapsto (x \\tensor y \\mapsto v(x) w(y))$"
+title: "If either of $\\dim_k V, \\dim_k W$ is finite, then $\\begin{aligned}V\\dual \\tensor_k W\\dual &\\mapsvia{\\sim} (V\\tensor W)\\dual \\\\ v\\tensor w &\\mapsto (x \\tensor y \\mapsto v(x) w(y))\\end{aligned}$"
 classification:
   areas:
   - algebra

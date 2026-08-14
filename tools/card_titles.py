@@ -79,6 +79,12 @@ def _inline_display(body: str) -> str:
         # The corpus writes the sentence's full stop inside the delimiters, as
         # `.\]`. Drop it -- but never the one in `\right.`, which is a brace.
         inner = re.sub(r"(?<!\\right)(?<!\\left)[.,]$", "", inner).strip()
+        # The corpus writes aligned display blocks with bare `&`, which is
+        # "Misplaced &" once the block is inlined. `_macros.html` wraps such a
+        # block in `aligned` before typesetting it; do the same here, so the
+        # title keeps the formula instead of losing it.
+        if "&" in re.sub(r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", "", inner, flags=re.S):
+            inner = rf"\begin{{aligned}}{inner}\end{{aligned}}"
         return f" ${inner}$ " if inner else " "
 
     return DISPLAY.sub(one, body)
@@ -243,9 +249,22 @@ def _typesets(title: str) -> bool:
 
     Escaped braces are dropped before counting: `\\left\\{ x \\right.` is
     balanced LaTeX with one brace character in it.
+
+    A title's mathematics is inline, and an alignment character outside an
+    alignment environment is "Misplaced &" there. The corpus writes aligned
+    display blocks with bare `&`, which `_inline_display` would otherwise carry
+    into a title verbatim; `_macros.html` wraps such a block in `aligned`
+    before typesetting it, and a title has nowhere to put that.
     """
     braces = re.sub(r"\\.", "", title, flags=re.S)
-    return title.count("$") % 2 == 0 and braces.count("{") == braces.count("}") and title.count(r"\begin{") == title.count(r"\end{")
+    inline = "".join(match.group(0) for match in MATH.finditer(title))
+    aligned = re.sub(r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", "", inline, flags=re.S)
+    return (
+        title.count("$") % 2 == 0
+        and braces.count("{") == braces.count("}")
+        and title.count(r"\begin{") == title.count(r"\end{")
+        and "&" not in aligned
+    )
 
 
 def degenerate(title: str, authored: str = "") -> str | None:

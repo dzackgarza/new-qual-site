@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ULHPN
 kind: problem
-title: "Compute $\\ext(\\ZZ \\oplus \\ZZ/2 \\oplus \\ZZ/3, \\ZZ \\oplus \\ZZ/4 \\oplus \\\u2026"
+title: "Compute $\\ext(\\ZZ \\oplus \\ZZ/2 \\oplus \\ZZ/3, \\ZZ \\oplus \\ZZ/4 \\oplus \\ZZ/5)$. Facts Used: Since $\\ZZ$ is a free $\\ZZ\\dash$module, $\\ext(\\ZZ, \\ZZ/m) = 0$"
 classification:
   areas:
   - topology

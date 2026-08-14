@@ -57,10 +57,22 @@ def test_a_cut_never_falls_inside_the_mathematics() -> None:
     assert degenerate(title_of(body)) is None
 
 
+def test_an_aligned_display_reaches_the_title_inside_its_environment() -> None:
+    """The corpus writes `\\[ a &= b \\\\ &= c \\]`, where the alignment characters
+    have no environment; a title's mathematics is inline, where a bare `&` is
+    "Misplaced &". The site's renderer wraps such a block in `aligned` before
+    typesetting it, and the title has to carry the wrapper itself."""
+    body = "Plancherel:\n\\[\n\\|f\\|^2 &= \\|\\hat f\\|^2 \\\\ &= 1\n.\\]\n"
+    title = title_of(body)
+    assert title == "Plancherel: $\\begin{aligned}\\|f\\|^2 &= \\|\\hat f\\|^2 \\\\ &= 1\\end{aligned}$"
+    assert degenerate(title) is None
+
+
 def test_degenerate_names_the_defects_a_reader_meets() -> None:
     assert degenerate("Let") == "names nothing"
     assert degenerate("?") == "no title"
     assert degenerate("Show that $\\frac{a}{b") == "does not typeset"
+    assert degenerate("Show that $a &= b$") == "does not typeset"
     assert degenerate("![[_attachments/Pasted image 20210517.png]]") == "an image is not a title"
     assert degenerate("**Main Idea**: deformation retract") == "carries markdown markup"
 

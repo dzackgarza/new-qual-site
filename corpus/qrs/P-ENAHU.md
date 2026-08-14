@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ENAHU
 kind: problem
-title: "Let $R$ be a commutative ring. Let $r \\in R$. Show that the map $r\\bullet : R &\\to R \\\\ x &\\mapsto r x$ is an $R\\dash$\u2026"
+title: "Let $R$ be a commutative ring. Let $r \\in R$. Show that the map $\\begin{aligned}r\\bullet : R &\\to R \\\\ x &\\mapsto r x\\end{aligned}$ is an $R\\dash$\u2026"
 classification:
   areas:
   - algebra

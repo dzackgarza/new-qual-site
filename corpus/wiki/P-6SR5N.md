@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6SR5N
 kind: problem
-title: "Show $\\int_0^{2\\pi} {1\\over a + \\cos(\\theta)} \\dtheta = {2\\pi \\over \\sqrt{a^2-1}}, && a> 1$ Sketch: Set $z=e^{i\\theta}$ to get $\\frac{2}{i} \\int_{|z|=1} \\frac{\\mathrm{d} z}{z^{2}+2 a z+1}$"
+title: "Show $\\begin{aligned}\\int_0^{2\\pi} {1\\over a + \\cos(\\theta)} \\dtheta = {2\\pi \\over \\sqrt{a^2-1}}, && a> 1\\end{aligned}$ Sketch: Set $z=e^{i\\theta}$ to get $\\frac{2}{i} \\int_{|z|=1} \\frac{\\mathrm{d} z}{z^{2}+2 a z+1}$"
 classification:
   areas:
   - complex-analysis

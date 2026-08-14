@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SLWIE
 kind: problem
-title: "Define $f(z) &= {\\pi^2 \\over \\sin^2 \\qty{\\pi z} } \\\\ g(z) &= \\sum_{n\\in \\ZZ} {1\\over (z-n)^2}$ Show that $f$ and $g$ have the same singularities in $\\CC$.\u2026"
+title: "Show that $\\pi^2/\\sin^2(\\pi z)$ and $\\sum_{n\\in\\ZZ}(z-n)^{-2}$ agree, by comparing their singularities and singular parts"
 classification:
   areas:
   - complex-analysis
