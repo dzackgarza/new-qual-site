@@ -6,7 +6,10 @@ title: P-PSRIH at UGA algebra Fall 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-presentations
+  - semidirect-products
+  - classification
 relations:
 - kind: instance-of
   target: P-PSRIH

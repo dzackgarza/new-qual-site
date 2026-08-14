@@ -6,7 +6,10 @@ title: P-5EROX at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - trace
+  - determinants
+  - matrices
 relations:
 - kind: instance-of
   target: P-5EROX

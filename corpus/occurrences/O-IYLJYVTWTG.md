@@ -6,7 +6,10 @@ title: P-T5EUB at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - centralizers-and-normalizers
 relations:
 - kind: instance-of
   target: P-T5EUB

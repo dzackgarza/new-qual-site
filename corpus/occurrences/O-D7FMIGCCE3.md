@@ -6,7 +6,10 @@ title: P-SW76H at UGA algebra Spring 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - fields
+  - zorns-lemma
 relations:
 - kind: instance-of
   target: P-SW76H

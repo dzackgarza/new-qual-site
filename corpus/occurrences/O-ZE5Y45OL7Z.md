@@ -6,7 +6,10 @@ title: P-UKZE6 at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - maximal-ideals
+  - nilpotence
 relations:
 - kind: instance-of
   target: P-UKZE6

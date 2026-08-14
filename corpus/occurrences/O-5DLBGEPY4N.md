@@ -6,7 +6,10 @@ title: P-MD2U3 at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - abelian-groups
 relations:
 - kind: instance-of
   target: P-MD2U3

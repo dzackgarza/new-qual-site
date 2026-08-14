@@ -6,7 +6,10 @@ title: P-DGAQM at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - galois-theory
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-DGAQM

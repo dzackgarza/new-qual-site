@@ -6,7 +6,10 @@ title: P-WA5RE at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - finite-fields
+  - galois-theory
 relations:
 - kind: instance-of
   target: P-WA5RE

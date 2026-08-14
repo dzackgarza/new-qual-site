@@ -6,7 +6,10 @@ title: P-UDBZP at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - inner-product-spaces
+  - bases
 relations:
 - kind: instance-of
   target: P-UDBZP

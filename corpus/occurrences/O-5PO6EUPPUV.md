@@ -6,7 +6,10 @@ title: P-USHDW at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - prime-ideals
+  - zorns-lemma
 relations:
 - kind: instance-of
   target: P-USHDW

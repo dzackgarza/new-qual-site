@@ -6,7 +6,10 @@ title: P-CPB5V at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - ideals
+  - semisimplicity
 relations:
 - kind: instance-of
   target: P-CPB5V

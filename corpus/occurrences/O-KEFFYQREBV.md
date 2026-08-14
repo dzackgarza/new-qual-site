@@ -6,7 +6,10 @@ title: P-GCNAR at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - jordan-canonical-form
+  - modules
 relations:
 - kind: instance-of
   target: P-GCNAR

@@ -6,7 +6,10 @@ title: P-DE22H at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - canonical-forms
 relations:
 - kind: instance-of
   target: P-DE22H

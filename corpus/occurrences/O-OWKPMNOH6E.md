@@ -6,7 +6,10 @@ title: P-UW7CE at Fall 2019 Final (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations:
 - kind: instance-of
   target: P-UW7CE

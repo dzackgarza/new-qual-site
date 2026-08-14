@@ -6,7 +6,10 @@ title: P-OG5DJ at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-OG5DJ

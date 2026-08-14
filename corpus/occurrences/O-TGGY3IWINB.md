@@ -6,7 +6,10 @@ title: P-XPGT3 at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - ideals
+  - nakayamas-lemma
 relations:
 - kind: instance-of
   target: P-XPGT3

@@ -6,7 +6,10 @@ title: P-DLFQC at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - geometry
+  - commutative-algebra
+  - maximal-ideals
 relations:
 - kind: instance-of
   target: P-DLFQC

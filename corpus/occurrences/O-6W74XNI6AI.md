@@ -6,7 +6,10 @@ title: P-IE52K at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - abelian-groups
+  - classification
 relations:
 - kind: instance-of
   target: P-IE52K

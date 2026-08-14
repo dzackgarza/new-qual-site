@@ -6,7 +6,10 @@ title: P-R5QUP at UGA algebra Fall 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - trace
 relations:
 - kind: instance-of
   target: P-R5QUP

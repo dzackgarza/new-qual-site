@@ -6,7 +6,10 @@ title: P-GP7TS at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - modules
+  - projective-modules
 relations:
 - kind: instance-of
   target: P-GP7TS

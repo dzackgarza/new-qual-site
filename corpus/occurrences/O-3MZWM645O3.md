@@ -6,7 +6,10 @@ title: P-XCSKB at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - modules
+  - integral-domains
 relations:
 - kind: instance-of
   target: P-XCSKB

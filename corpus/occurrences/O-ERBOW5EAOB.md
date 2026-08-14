@@ -6,7 +6,10 @@ title: P-4IKKY at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - vector-spaces
+  - linear-algebra
+  - direct-products
 relations:
 - kind: instance-of
   target: P-4IKKY

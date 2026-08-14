@@ -6,7 +6,9 @@ title: P-G5MEU at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-G5MEU

@@ -6,7 +6,10 @@ title: P-XQ3YN at Fall 2019 Midterm (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - fields
 relations:
 - kind: instance-of
   target: P-XQ3YN

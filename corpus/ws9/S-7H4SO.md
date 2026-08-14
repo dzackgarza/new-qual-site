@@ -6,7 +6,10 @@ title: Solution to P-B6E7Q
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
+  - simple-groups
 relations:
 - kind: solves
   target: P-B6E7Q

@@ -6,7 +6,10 @@ title: P-L37J7 at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - free-modules
+  - ideals
 relations:
 - kind: instance-of
   target: P-L37J7

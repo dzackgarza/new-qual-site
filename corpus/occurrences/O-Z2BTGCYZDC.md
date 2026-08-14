@@ -6,7 +6,10 @@ title: P-CZVX6 at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - diagonalization
+  - irreducibility-criteria
 relations:
 - kind: instance-of
   target: P-CZVX6

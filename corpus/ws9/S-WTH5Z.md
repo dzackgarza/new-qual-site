@@ -6,7 +6,10 @@ title: Solution to P-B2P3P
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - rational-canonical-form
+  - nilpotence
 relations:
 - kind: solves
   target: P-B2P3P

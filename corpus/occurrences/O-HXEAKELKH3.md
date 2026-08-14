@@ -6,7 +6,10 @@ title: P-HJ2AR at UGA algebra Spring 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-HJ2AR

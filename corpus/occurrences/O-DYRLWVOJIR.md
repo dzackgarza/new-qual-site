@@ -6,7 +6,10 @@ title: P-PJA4A at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - normal-subgroups
 relations:
 - kind: instance-of
   target: P-PJA4A

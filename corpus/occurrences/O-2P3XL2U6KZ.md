@@ -6,7 +6,10 @@ title: P-56PBT at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - structure-theorem
+  - cyclic-groups
 relations:
 - kind: instance-of
   target: P-56PBT

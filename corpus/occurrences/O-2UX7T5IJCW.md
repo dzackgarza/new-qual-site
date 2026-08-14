@@ -6,7 +6,10 @@ title: P-C2FE5 at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - homological-algebra
+  - modules
 relations:
 - kind: instance-of
   target: P-C2FE5

@@ -6,7 +6,10 @@ title: P-TU4KT at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - classification
+  - structure-theorem
 relations:
 - kind: instance-of
   target: P-TU4KT

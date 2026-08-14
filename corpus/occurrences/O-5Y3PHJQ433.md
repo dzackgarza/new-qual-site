@@ -6,7 +6,10 @@ title: P-PBZHI at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - permutations
 relations:
 - kind: instance-of
   target: P-PBZHI

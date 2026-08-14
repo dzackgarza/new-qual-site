@@ -6,7 +6,10 @@ title: P-UYKBG at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-presentations
+  - groups
+  - subgroups
 relations:
 - kind: instance-of
   target: P-UYKBG

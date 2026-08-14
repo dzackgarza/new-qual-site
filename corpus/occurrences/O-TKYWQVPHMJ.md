@@ -6,7 +6,9 @@ title: P-7UD6U at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations:
 - kind: instance-of
   target: P-7UD6U

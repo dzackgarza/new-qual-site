@@ -6,7 +6,10 @@ title: P-J5GIE at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - torsion
+  - exact-sequences
 relations:
 - kind: instance-of
   target: P-J5GIE

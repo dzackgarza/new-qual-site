@@ -6,7 +6,10 @@ title: P-AZDQO at UGA algebra Fall 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
+  - cyclic-groups
 relations:
 - kind: instance-of
   target: P-AZDQO

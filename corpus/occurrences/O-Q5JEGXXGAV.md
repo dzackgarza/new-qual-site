@@ -6,7 +6,10 @@ title: P-DYEG6 at UGA algebra Fall 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
+  - finite-fields
 relations:
 - kind: instance-of
   target: P-DYEG6

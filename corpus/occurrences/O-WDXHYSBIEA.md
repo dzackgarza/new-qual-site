@@ -6,7 +6,10 @@ title: P-TR6YB at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - class-equation
+  - p-groups
+  - abelian-groups
 relations:
 - kind: instance-of
   target: P-TR6YB

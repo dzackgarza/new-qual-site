@@ -6,7 +6,10 @@ title: P-Q6PDD at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - inner-product-spaces
+  - diagonalization
 relations:
 - kind: instance-of
   target: P-Q6PDD

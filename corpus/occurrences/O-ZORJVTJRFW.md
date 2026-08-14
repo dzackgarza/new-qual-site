@@ -6,7 +6,10 @@ title: P-OKCT6 at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations:
 - kind: instance-of
   target: P-OKCT6

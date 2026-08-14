@@ -6,7 +6,10 @@ title: P-3UTDH at UGA algebra Spring 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-3UTDH

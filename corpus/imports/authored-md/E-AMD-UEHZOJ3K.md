@@ -6,7 +6,10 @@ title: "$\\nilrad{R} \\subseteq \\intersect \\mathfrak{p}$: $x \\in \\nilrad{R} 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

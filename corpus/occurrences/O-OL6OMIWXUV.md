@@ -6,7 +6,10 @@ title: P-FO6H7 at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations:
 - kind: instance-of
   target: P-FO6H7

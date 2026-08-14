@@ -6,7 +6,10 @@ title: P-6NTDS at Fall 2019 Midterm #5 (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - commutators
+  - centralizers-and-normalizers
 relations:
 - kind: instance-of
   target: P-6NTDS

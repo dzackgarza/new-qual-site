@@ -6,7 +6,10 @@ title: P-EMIQC at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-EMIQC

@@ -6,7 +6,10 @@ title: P-J2D5B at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - integral-extensions
+  - algebras
 relations:
 - kind: instance-of
   target: P-J2D5B

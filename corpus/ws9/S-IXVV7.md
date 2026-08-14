@@ -6,7 +6,10 @@ title: Solution to P-DLFQC
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - geometry
+  - commutative-algebra
+  - maximal-ideals
 relations:
 - kind: solves
   target: P-DLFQC

@@ -6,7 +6,10 @@ title: P-G263Z at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-domains
+  - rings
+  - modules
 relations:
 - kind: instance-of
   target: P-G263Z

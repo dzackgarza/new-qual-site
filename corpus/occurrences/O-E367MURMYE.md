@@ -6,7 +6,10 @@ title: P-45CLI at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-actions
+  - cosets-and-lagrange
 relations:
 - kind: instance-of
   target: P-45CLI

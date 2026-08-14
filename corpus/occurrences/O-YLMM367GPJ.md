@@ -6,7 +6,10 @@ title: P-FPWNW at UGA algebra Spring 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - p-groups
+  - sylow-theory
 relations:
 - kind: instance-of
   target: P-FPWNW

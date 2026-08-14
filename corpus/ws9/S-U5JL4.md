@@ -6,7 +6,10 @@ title: Solution to P-J2D5B
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - integral-extensions
+  - algebras
 relations:
 - kind: solves
   target: P-J2D5B

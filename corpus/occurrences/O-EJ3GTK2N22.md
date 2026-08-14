@@ -6,7 +6,10 @@ title: P-2CP2Q at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - splitting-fields
 relations:
 - kind: instance-of
   target: P-2CP2Q

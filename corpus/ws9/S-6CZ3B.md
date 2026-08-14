@@ -6,7 +6,10 @@ title: Solution to P-PBVSZ
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - algebras
+  - centralizers-and-normalizers
 relations:
 - kind: solves
   target: P-PBVSZ

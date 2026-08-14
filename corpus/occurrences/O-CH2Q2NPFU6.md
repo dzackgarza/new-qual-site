@@ -6,7 +6,10 @@ title: P-ZDBML at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-ZDBML

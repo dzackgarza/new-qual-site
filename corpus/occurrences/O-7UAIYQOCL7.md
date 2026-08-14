@@ -6,7 +6,10 @@ title: P-XSSEP at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - irreducibility-criteria
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-XSSEP

@@ -6,7 +6,10 @@ title: P-B6E7Q at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
+  - conjugacy
 relations:
 - kind: instance-of
   target: P-B6E7Q

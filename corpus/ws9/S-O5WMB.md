@@ -6,7 +6,10 @@ title: Solution to P-EHBDD
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - jacobson-radical
+  - rings
 relations:
 - kind: solves
   target: P-EHBDD

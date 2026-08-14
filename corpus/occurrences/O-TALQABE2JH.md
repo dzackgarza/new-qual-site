@@ -6,7 +6,10 @@ title: P-2LX4F at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - galois-theory
+  - splitting-fields
 relations:
 - kind: instance-of
   target: P-2LX4F

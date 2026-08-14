@@ -6,7 +6,10 @@ title: P-5WZBI at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - group-presentations
 relations:
 - kind: instance-of
   target: P-5WZBI

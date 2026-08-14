@@ -6,7 +6,10 @@ title: P-OS765 at UGA algebra Fall 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - irreducibility-criteria
+  - field-extensions
+  - polynomials
 relations:
 - kind: instance-of
   target: P-OS765

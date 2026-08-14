@@ -6,7 +6,10 @@ title: P-EI5VA at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - conjugacy
+  - burnside-s-lemma
 relations:
 - kind: instance-of
   target: P-EI5VA

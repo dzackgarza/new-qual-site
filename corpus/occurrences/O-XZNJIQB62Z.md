@@ -6,7 +6,10 @@ title: P-2GXZ2 at UGA algebra Spring 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - localization
+  - rings
 relations:
 - kind: instance-of
   target: P-2GXZ2

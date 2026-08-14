@@ -6,7 +6,10 @@ title: P-VOGZ5 at UGA algebra Fall 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - normal-subgroups
 relations:
 - kind: instance-of
   target: P-VOGZ5

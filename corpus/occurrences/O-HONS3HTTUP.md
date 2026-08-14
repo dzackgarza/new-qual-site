@@ -6,7 +6,10 @@ title: P-R2UOL at UGA algebra Fall 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - field-extensions
+  - roots-of-unity
 relations:
 - kind: instance-of
   target: P-R2UOL

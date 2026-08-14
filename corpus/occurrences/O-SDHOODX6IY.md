@@ -6,7 +6,10 @@ title: P-567ZZ at Fall 2019 Midterm
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - cyclic-groups
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-567ZZ

@@ -6,7 +6,10 @@ title: P-5H7FG at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - jordan-canonical-form
+  - matrices
 relations:
 - kind: instance-of
   target: P-5H7FG

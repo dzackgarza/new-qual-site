@@ -6,7 +6,10 @@ title: P-4T7W2 at UGA algebra Fall 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-presentations
+  - semidirect-products
+  - classification
 relations:
 - kind: instance-of
   target: P-PSRIH

@@ -6,7 +6,10 @@ title: "$\\begin{aligned}a + \\nilrad{R} \\text{ nilpotent } &\\implies (a+ \\ni
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

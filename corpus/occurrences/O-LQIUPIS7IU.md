@@ -6,7 +6,10 @@ title: P-KR27N at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-KR27N

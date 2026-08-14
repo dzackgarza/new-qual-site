@@ -6,7 +6,10 @@ title: P-QCF34 at UGA algebra Fall 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - ideals
+  - torsion
 relations:
 - kind: instance-of
   target: P-QCF34

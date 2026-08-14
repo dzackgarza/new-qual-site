@@ -6,7 +6,10 @@ title: P-63TON at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - polynomials
+  - integral-domains
 relations:
 - kind: instance-of
   target: P-63TON

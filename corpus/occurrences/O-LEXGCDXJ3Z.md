@@ -6,7 +6,10 @@ title: P-MCNWE at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-MCNWE

@@ -6,7 +6,10 @@ title: P-TM7YV at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - direct-products
 relations:
 - kind: instance-of
   target: P-TM7YV

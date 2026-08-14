@@ -6,7 +6,9 @@ title: P-GVWWY at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - linear-algebra
 relations:
 - kind: instance-of
   target: P-GVWWY

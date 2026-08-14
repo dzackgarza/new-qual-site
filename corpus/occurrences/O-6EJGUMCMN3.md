@@ -6,7 +6,10 @@ title: P-6TCYA at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - normal-subgroups
+  - class-equation
 relations:
 - kind: instance-of
   target: P-6TCYA

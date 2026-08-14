@@ -6,7 +6,10 @@ title: P-RWPK4 at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - characteristic
 relations:
 - kind: instance-of
   target: P-RWPK4

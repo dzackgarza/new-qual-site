@@ -6,7 +6,10 @@ title: P-BBL4N at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - minimal-and-characteristic-polynomials
+  - modules
 relations:
 - kind: instance-of
   target: P-BBL4N

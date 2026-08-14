@@ -6,7 +6,10 @@ title: P-V6LPH at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - group-presentations
 relations:
 - kind: instance-of
   target: P-V6LPH

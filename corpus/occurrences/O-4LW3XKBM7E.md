@@ -6,7 +6,10 @@ title: P-D4X7R at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations:
 - kind: instance-of
   target: P-D4X7R

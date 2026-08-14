@@ -6,7 +6,10 @@ title: P-VYZEN at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - roots-of-unity
+  - cyclic-groups
 relations:
 - kind: instance-of
   target: P-VYZEN

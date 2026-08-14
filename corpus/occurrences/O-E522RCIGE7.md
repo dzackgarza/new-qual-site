@@ -6,7 +6,10 @@ title: P-LT6QB at UGA algebra Fall 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - galois-theory
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-LT6QB

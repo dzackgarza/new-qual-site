@@ -6,7 +6,10 @@ title: P-EGKRW at Fall 2019 Final (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - ideals
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-EGKRW

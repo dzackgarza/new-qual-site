@@ -6,7 +6,9 @@ title: P-SIGK5 at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
 relations:
 - kind: instance-of
   target: P-SIGK5

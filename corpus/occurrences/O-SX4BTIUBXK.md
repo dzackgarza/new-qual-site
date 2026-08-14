@@ -6,7 +6,10 @@ title: P-44MIX at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - canonical-forms
 relations:
 - kind: instance-of
   target: P-44MIX

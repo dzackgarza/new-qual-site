@@ -6,7 +6,10 @@ title: P-ZDYAF at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - smith-normal-form
+  - free-modules
 relations:
 - kind: instance-of
   target: P-ZDYAF

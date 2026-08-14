@@ -6,7 +6,10 @@ title: P-2GD4H at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-EP64S

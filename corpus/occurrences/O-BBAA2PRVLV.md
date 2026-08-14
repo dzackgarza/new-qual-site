@@ -6,7 +6,10 @@ title: P-P3RNI at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - centralizers-and-normalizers
+  - class-equation
 relations:
 - kind: instance-of
   target: P-P3RNI

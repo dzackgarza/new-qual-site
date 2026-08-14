@@ -6,7 +6,9 @@ title: P-HBWYH at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - polynomials
 relations:
 - kind: instance-of
   target: P-HBWYH

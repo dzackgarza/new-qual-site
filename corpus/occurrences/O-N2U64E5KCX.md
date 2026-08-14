@@ -6,7 +6,9 @@ title: P-Z75FW at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
 relations:
 - kind: instance-of
   target: P-Z75FW

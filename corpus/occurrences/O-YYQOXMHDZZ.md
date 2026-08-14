@@ -6,7 +6,10 @@ title: P-UB666 at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - roots-of-unity
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-UB666

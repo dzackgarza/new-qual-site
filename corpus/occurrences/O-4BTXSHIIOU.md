@@ -6,7 +6,10 @@ title: P-EVBF7 at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-EVBF7

@@ -6,7 +6,10 @@ title: P-NQAQK at UGA algebra Fall 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
+  - linear-algebra
 relations:
 - kind: instance-of
   target: P-NQAQK

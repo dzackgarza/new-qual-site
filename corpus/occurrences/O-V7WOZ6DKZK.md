@@ -6,7 +6,10 @@ title: P-FSFMB at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - class-equation
+  - burnside-s-lemma
 relations:
 - kind: instance-of
   target: P-FSFMB

@@ -6,7 +6,10 @@ title: Solution to P-LCEHH
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - field-extensions
 relations:
 - kind: solves
   target: P-LCEHH

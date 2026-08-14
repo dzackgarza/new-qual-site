@@ -6,7 +6,10 @@ title: P-JCWGD at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - group-actions
+  - cosets-and-lagrange
 relations:
 - kind: instance-of
   target: P-JCWGD

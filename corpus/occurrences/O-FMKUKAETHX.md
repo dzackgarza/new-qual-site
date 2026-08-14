@@ -6,7 +6,10 @@ title: P-BDX6L at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations:
 - kind: instance-of
   target: P-BDX6L

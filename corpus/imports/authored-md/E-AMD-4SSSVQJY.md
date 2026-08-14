@@ -6,7 +6,10 @@ title: "Let $a\\in R$ and define $\\phi(x) = ax$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-domains
+  - rings
+  - fields
 relations: []
 review: draft
 ---

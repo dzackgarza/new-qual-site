@@ -6,7 +6,10 @@ title: P-PBVSZ at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - algebras
+  - centralizers-and-normalizers
 relations:
 - kind: instance-of
   target: P-PBVSZ

@@ -6,7 +6,10 @@ title: P-QMGAA at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - factorization
 relations:
 - kind: instance-of
   target: P-QMGAA

@@ -6,7 +6,10 @@ title: P-RGCVM at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - canonical-forms
+  - minimal-and-characteristic-polynomials
+  - jordan-canonical-form
 relations:
 - kind: instance-of
   target: P-RGCVM

@@ -6,7 +6,10 @@ title: P-GAJ7B at UGA algebra Spring 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - permutations
+  - group-presentations
 relations:
 - kind: instance-of
   target: P-GAJ7B

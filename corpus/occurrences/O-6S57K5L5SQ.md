@@ -6,7 +6,10 @@ title: P-GN4CE at UGA algebra Spring 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - ideals
+  - polynomials
 relations:
 - kind: instance-of
   target: P-GN4CE

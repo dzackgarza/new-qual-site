@@ -6,7 +6,9 @@ title: P-Z75FW at Fall 2019 Midterm (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
 relations:
 - kind: instance-of
   target: P-Z75FW

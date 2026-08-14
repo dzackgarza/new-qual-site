@@ -6,7 +6,10 @@ title: P-5SED7 at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-5SED7

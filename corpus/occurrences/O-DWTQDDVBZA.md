@@ -6,7 +6,10 @@ title: P-4GMLL at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations:
 - kind: instance-of
   target: P-4GMLL

@@ -6,7 +6,10 @@ title: P-ZSUAJ at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - zorns-lemma
 relations:
 - kind: instance-of
   target: P-ZSUAJ

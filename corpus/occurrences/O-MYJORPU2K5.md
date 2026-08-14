@@ -6,7 +6,10 @@ title: P-EOEJS at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-actions
+  - simple-groups
 relations:
 - kind: instance-of
   target: P-EOEJS

@@ -6,7 +6,10 @@ title: P-X7EHF at UGA algebra Fall 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - prime-ideals
+  - zorns-lemma
 relations:
 - kind: instance-of
   target: P-X7EHF

@@ -6,7 +6,10 @@ title: P-AIXPZ at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - minimal-and-characteristic-polynomials
+  - separability
 relations:
 - kind: instance-of
   target: P-AIXPZ

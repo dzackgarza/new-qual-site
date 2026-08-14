@@ -6,7 +6,10 @@ title: P-HAEQ7 at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - jordan-canonical-form
+  - linear-algebra
 relations:
 - kind: instance-of
   target: P-HAEQ7

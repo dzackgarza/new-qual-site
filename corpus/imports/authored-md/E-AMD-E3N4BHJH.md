@@ -6,7 +6,10 @@ title: Suppose $\mm$ is maximal, $ab\in \mm$, and $b\not\in \mm$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

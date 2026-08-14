@@ -6,7 +6,10 @@ title: P-2B4GV at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - smith-normal-form
+  - modules
 relations:
 - kind: instance-of
   target: P-2B4GV

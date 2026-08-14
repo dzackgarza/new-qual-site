@@ -6,7 +6,10 @@ title: P-HULLX at UGA algebra Spring 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
+  - p-groups
 relations:
 - kind: instance-of
   target: P-HULLX

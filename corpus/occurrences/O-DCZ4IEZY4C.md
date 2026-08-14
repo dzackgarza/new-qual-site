@@ -6,7 +6,10 @@ title: P-PC6ZW at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - bases
+  - tensor-products
 relations:
 - kind: instance-of
   target: P-PC6ZW

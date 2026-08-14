@@ -6,7 +6,10 @@ title: P-4MBQJ at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - modules
+  - primary-decomposition
 relations:
 - kind: instance-of
   target: P-4MBQJ

@@ -6,7 +6,10 @@ title: P-VHCGV at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - nilpotence
+  - matrices
 relations:
 - kind: instance-of
   target: P-VHCGV

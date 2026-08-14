@@ -6,7 +6,10 @@ title: P-EHPA5 at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - normal-subgroups
+  - centralizers-and-normalizers
 relations:
 - kind: instance-of
   target: P-EHPA5

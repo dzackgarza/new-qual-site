@@ -6,7 +6,10 @@ title: P-WCV7R at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - polynomials
+  - ideals
 relations:
 - kind: instance-of
   target: P-WCV7R

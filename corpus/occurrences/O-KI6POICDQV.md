@@ -6,7 +6,10 @@ title: P-IPPKZ at UGA algebra Spring 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - rings
+  - integral-domains
 relations:
 - kind: instance-of
   target: P-IPPKZ

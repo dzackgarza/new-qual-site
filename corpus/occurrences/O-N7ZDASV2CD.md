@@ -6,7 +6,10 @@ title: P-P3GIM at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
 relations:
 - kind: instance-of
   target: P-P3GIM

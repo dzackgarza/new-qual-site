@@ -6,7 +6,10 @@ title: P-FKAJJ at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - group-actions
+  - p-groups
 relations:
 - kind: instance-of
   target: P-FKAJJ

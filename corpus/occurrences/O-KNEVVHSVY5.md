@@ -6,7 +6,10 @@ title: P-65GIR at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - noetherian-rings
+  - ideals
 relations:
 - kind: instance-of
   target: P-65GIR

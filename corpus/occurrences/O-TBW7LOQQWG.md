@@ -6,7 +6,10 @@ title: P-DBY54 at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - ideals
+  - zorns-lemma
 relations:
 - kind: instance-of
   target: P-DBY54

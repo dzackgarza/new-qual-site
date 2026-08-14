@@ -6,7 +6,10 @@ title: P-JG7FM at Fall 2019 Midterm
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - galois-theory
 relations:
 - kind: instance-of
   target: P-JG7FM

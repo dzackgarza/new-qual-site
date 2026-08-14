@@ -6,7 +6,10 @@ title: P-UMQHV at Fall 2019 Midterm (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - irreducibility-criteria
 relations:
 - kind: instance-of
   target: P-UMQHV

@@ -6,7 +6,10 @@ title: P-JJ62Y at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - matrix-groups
 relations:
 - kind: instance-of
   target: P-JJ62Y

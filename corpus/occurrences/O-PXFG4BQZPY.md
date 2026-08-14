@@ -6,7 +6,10 @@ title: P-NNNLA at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - galois-theory
 relations:
 - kind: instance-of
   target: P-NNNLA

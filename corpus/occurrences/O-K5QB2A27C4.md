@@ -6,7 +6,10 @@ title: P-AHI7C at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - modules
+  - integral-domains
 relations:
 - kind: instance-of
   target: P-AHI7C

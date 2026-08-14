@@ -6,7 +6,10 @@ title: P-6KHMF at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
+  - modules
 relations:
 - kind: instance-of
   target: P-6KHMF

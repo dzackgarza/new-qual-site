@@ -6,7 +6,10 @@ title: P-2DH4S at Fall 2019 Final (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - linear-algebra
+  - rank-and-nullity
+  - vector-spaces
 relations:
 - kind: instance-of
   target: P-2DH4S

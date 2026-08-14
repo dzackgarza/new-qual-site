@@ -6,7 +6,10 @@ title: P-JZSN3 at UGA algebra Spring 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - irreducibility-criteria
+  - characteristic
+  - polynomials
 relations:
 - kind: instance-of
   target: P-JZSN3

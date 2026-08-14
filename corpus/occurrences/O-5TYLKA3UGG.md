@@ -6,7 +6,10 @@ title: P-EPDRU at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - free-modules
+  - structure-theorem
 relations:
 - kind: instance-of
   target: P-EPDRU

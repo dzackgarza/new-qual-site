@@ -6,7 +6,10 @@ title: P-EHBDD at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - jacobson-radical
+  - rings
 relations:
 - kind: instance-of
   target: P-EHBDD

@@ -6,7 +6,10 @@ title: Maximal $\implies$ prime, and so if $x$ is in every prime ideal, it…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - nilpotence
+  - ideals
 relations: []
 review: draft
 ---

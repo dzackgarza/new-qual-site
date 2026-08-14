@@ -6,7 +6,10 @@ title: P-5YZPH at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - group-actions
+  - cosets-and-lagrange
 relations:
 - kind: instance-of
   target: P-5YZPH

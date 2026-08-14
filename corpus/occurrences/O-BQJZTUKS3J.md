@@ -6,7 +6,10 @@ title: P-VHLIU at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations:
 - kind: instance-of
   target: P-VHLIU

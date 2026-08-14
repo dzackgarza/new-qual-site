@@ -6,7 +6,10 @@ title: P-QNQTT at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - polynomials
 relations:
 - kind: instance-of
   target: P-QNQTT

@@ -6,7 +6,10 @@ title: P-KBW6F at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - sylow-theory
+  - centralizers-and-normalizers
 relations:
 - kind: instance-of
   target: P-KBW6F

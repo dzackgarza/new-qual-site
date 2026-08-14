@@ -6,7 +6,10 @@ title: P-FOU3L at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - primary-decomposition
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-FOU3L

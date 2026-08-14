@@ -6,7 +6,10 @@ title: P-3YCHE at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-3YCHE

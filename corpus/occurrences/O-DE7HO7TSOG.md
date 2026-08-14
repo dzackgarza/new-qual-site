@@ -6,7 +6,10 @@ title: P-XFXYS at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - zorns-lemma
 relations:
 - kind: instance-of
   target: P-XFXYS

@@ -6,7 +6,9 @@ title: P-CWQHP at Fall 2019 Midterm (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - centralizers-and-normalizers
 relations:
 - kind: instance-of
   target: P-CWQHP

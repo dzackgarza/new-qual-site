@@ -6,7 +6,10 @@ title: P-XYDVS at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - cosets-and-lagrange
+  - subgroups
 relations:
 - kind: instance-of
   target: P-XYDVS

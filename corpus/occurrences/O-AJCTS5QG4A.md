@@ -6,7 +6,9 @@ title: P-QXISW at Fall 2019 Midterm (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-presentations
 relations:
 - kind: instance-of
   target: P-QXISW

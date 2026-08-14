@@ -6,7 +6,10 @@ title: P-VI6QM at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - cyclic-groups
 relations:
 - kind: instance-of
   target: P-VI6QM

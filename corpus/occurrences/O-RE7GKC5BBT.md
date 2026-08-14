@@ -6,7 +6,10 @@ title: P-ZLNVG at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations:
 - kind: instance-of
   target: P-ZLNVG

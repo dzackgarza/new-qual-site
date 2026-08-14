@@ -6,7 +6,10 @@ title: P-YMOTZ at UGA algebra Fall 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - abelian-groups
 relations:
 - kind: instance-of
   target: P-YMOTZ

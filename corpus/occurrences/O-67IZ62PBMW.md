@@ -6,7 +6,10 @@ title: P-SDO43 at UGA algebra Spring 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - rank-and-nullity
+  - modules
 relations:
 - kind: instance-of
   target: P-SDO43

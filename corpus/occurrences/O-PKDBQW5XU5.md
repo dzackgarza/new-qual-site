@@ -6,7 +6,10 @@ title: P-Q6PDD at Fall 2019 Final (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - inner-product-spaces
+  - diagonalization
 relations:
 - kind: instance-of
   target: P-Q6PDD

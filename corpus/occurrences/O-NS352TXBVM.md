@@ -6,7 +6,9 @@ title: P-CDHB5 at Fall 2019 Final (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - abelian-groups
 relations:
 - kind: instance-of
   target: P-CDHB5

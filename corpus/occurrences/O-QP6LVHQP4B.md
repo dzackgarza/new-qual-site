@@ -6,7 +6,10 @@ title: P-DURCM at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - modules
+  - projective-modules
 relations:
 - kind: instance-of
   target: P-DURCM

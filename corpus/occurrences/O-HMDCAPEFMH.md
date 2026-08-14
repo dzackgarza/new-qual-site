@@ -6,7 +6,10 @@ title: P-LL7UL at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - galois-theory
+  - sylow-theory
 relations:
 - kind: instance-of
   target: P-LL7UL

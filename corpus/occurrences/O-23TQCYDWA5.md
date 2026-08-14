@@ -6,7 +6,10 @@ title: P-DLPD4 at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - bases
+  - modules
 relations:
 - kind: instance-of
   target: P-DLPD4

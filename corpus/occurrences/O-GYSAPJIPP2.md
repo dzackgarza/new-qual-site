@@ -6,7 +6,10 @@ title: P-IZ2VD at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - field-extensions
 relations:
 - kind: instance-of
   target: P-IZ2VD

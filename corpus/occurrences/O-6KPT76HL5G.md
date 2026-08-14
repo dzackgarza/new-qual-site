@@ -6,7 +6,10 @@ title: P-3YFNY at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - rational-canonical-form
+  - linear-algebra
 relations:
 - kind: instance-of
   target: P-3YFNY

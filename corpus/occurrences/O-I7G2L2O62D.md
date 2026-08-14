@@ -6,7 +6,10 @@ title: P-MX2HR at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - sylow-theory
+  - classification
 relations:
 - kind: instance-of
   target: P-MX2HR

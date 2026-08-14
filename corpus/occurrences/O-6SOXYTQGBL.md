@@ -6,7 +6,10 @@ title: P-WL7TG at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - rings
+  - determinants
 relations:
 - kind: instance-of
   target: P-WL7TG

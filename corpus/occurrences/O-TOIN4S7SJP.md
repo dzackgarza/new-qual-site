@@ -6,7 +6,10 @@ title: P-4IKVH at Fall 2019 Midterm #1 (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - classification
 relations:
 - kind: instance-of
   target: P-4IKVH

@@ -6,7 +6,10 @@ title: P-4PIPW at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - structure-theorem
+  - sylow-theory
 relations:
 - kind: instance-of
   target: P-4PIPW

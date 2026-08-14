@@ -6,7 +6,10 @@ title: P-DXHST at UGA algebra Fall 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - orbit-stabilizer
+  - permutations
 relations:
 - kind: instance-of
   target: P-DXHST

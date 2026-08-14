@@ -6,7 +6,10 @@ title: P-AFC6V at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - p-groups
 relations:
 - kind: instance-of
   target: P-AFC6V

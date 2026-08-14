@@ -6,7 +6,10 @@ title: P-2CP2Q at Fall 2019 Midterm (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - splitting-fields
 relations:
 - kind: instance-of
   target: P-2CP2Q

@@ -6,7 +6,10 @@ title: P-J6BNQ at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - subgroups
 relations:
 - kind: instance-of
   target: P-J6BNQ

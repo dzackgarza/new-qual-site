@@ -6,7 +6,10 @@ title: P-A4AIM at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - matrices
+  - canonical-forms
 relations:
 - kind: instance-of
   target: P-A4AIM

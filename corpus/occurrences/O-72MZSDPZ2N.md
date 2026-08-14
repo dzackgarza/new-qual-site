@@ -6,7 +6,9 @@ title: P-JWPNL at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - simple-groups
+  - sylow-theory
 relations:
 - kind: instance-of
   target: P-JWPNL

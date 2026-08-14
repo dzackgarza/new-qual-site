@@ -6,7 +6,10 @@ title: P-LW3KB at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - dual-spaces
+  - vector-spaces
 relations:
 - kind: instance-of
   target: P-LW3KB

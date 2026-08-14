@@ -6,7 +6,10 @@ title: P-IKJXT at UGA algebra Fall 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - permutations
 relations:
 - kind: instance-of
   target: P-IKJXT

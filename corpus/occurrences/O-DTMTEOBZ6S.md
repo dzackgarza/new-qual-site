@@ -6,7 +6,10 @@ title: P-GSKRZ at UGA algebra Fall 2021
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - permutations
+  - conjugacy
 relations:
 - kind: instance-of
   target: P-GSKRZ

@@ -6,7 +6,10 @@ title: P-BHHKY at UGA algebra Fall 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations:
 - kind: instance-of
   target: P-BHHKY

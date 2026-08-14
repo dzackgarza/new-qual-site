@@ -6,7 +6,10 @@ title: P-TQNU2 at UGA algebra Fall 2012
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - galois-theory
+  - sylow-theory
 relations:
 - kind: instance-of
   target: P-TQNU2

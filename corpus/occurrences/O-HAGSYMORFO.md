@@ -6,7 +6,10 @@ title: P-ZOYZH at UGA algebra Fall 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - ideals
+  - semisimplicity
 relations:
 - kind: instance-of
   target: P-ZOYZH

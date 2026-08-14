@@ -6,7 +6,10 @@ title: P-3SQVT at Fall 2019 Midterm (algebra)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - classification
 relations:
 - kind: instance-of
   target: P-3SQVT

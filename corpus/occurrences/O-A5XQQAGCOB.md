@@ -6,7 +6,10 @@ title: P-24L43 at UGA algebra Spring 2014
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - structure-theorem
+  - matrices
 relations:
 - kind: instance-of
   target: P-24L43

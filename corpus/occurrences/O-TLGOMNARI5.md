@@ -6,7 +6,10 @@ title: P-6PRPK at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - sylow-theory
+  - normal-subgroups
 relations:
 - kind: instance-of
   target: P-6PRPK

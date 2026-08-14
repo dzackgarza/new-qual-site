@@ -6,7 +6,9 @@ title: P-45V3F at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - minimal-and-characteristic-polynomials
 relations:
 - kind: instance-of
   target: P-45V3F

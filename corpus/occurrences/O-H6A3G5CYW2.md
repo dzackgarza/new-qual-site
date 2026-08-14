@@ -6,7 +6,10 @@ title: P-3Q2XT at UGA algebra Spring 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - euclidean-domains
+  - factorization
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-3Q2XT

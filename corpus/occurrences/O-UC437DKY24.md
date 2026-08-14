@@ -6,7 +6,10 @@ title: P-VGN3T at UGA algebra Fall 2017
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - integral-domains
+  - principal-ideal-domains
 relations:
 - kind: instance-of
   target: P-VGN3T

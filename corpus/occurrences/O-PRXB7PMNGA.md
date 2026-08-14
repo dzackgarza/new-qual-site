@@ -6,7 +6,10 @@ title: P-P7TEE at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - characteristic
 relations:
 - kind: instance-of
   target: P-P7TEE

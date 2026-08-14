@@ -6,7 +6,10 @@ title: P-YDJDI at UGA algebra Fall 2015
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - group-actions
+  - cosets-and-lagrange
 relations:
 - kind: instance-of
   target: P-YDJDI

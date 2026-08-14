@@ -6,7 +6,10 @@ title: P-PRX3C at UGA algebra Fall 2013
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - maximal-ideals
+  - ideals
 relations:
 - kind: instance-of
   target: P-PRX3C

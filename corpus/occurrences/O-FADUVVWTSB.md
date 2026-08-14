@@ -6,7 +6,10 @@ title: P-RZ2JV at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - maximal-ideals
+  - roots-of-unity
 relations:
 - kind: instance-of
   target: P-RZ2JV

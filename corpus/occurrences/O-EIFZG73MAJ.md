@@ -6,7 +6,10 @@ title: P-M2R25 at UGA algebra Spring 2018
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - rings
 relations:
 - kind: instance-of
   target: P-M2R25
