@@ -6,7 +6,10 @@ title: 9. For a field $K$ take $f \in K[x]$ and let $n=\operatorname{deg} f$.…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - permutations
+  - field-extensions
 relations: []
 review: draft
 ---

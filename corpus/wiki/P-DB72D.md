@@ -6,7 +6,10 @@ title: "How many abelian groups of order 200 are there?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - abelian-groups
+  - structure-theorem
 relations: []
 review: draft
 ---

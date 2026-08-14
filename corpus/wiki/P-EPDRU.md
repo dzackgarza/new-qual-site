@@ -6,7 +6,10 @@ title: "Let $M$ be a finitely generated module over a PID $R$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - free-modules
+  - structure-theorem
 relations: []
 review: draft
 ---

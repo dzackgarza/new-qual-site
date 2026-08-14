@@ -6,7 +6,10 @@ title: 'Given: $H ~\text{char}~ K \normal G$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - automorphisms
+  - subgroups
 relations: []
 review: draft
 ---

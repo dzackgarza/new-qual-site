@@ -6,7 +6,10 @@ title: "Let $M \\in M_5(R)$ be a $5\\times 5$ square matrix with"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - eigenvalues-and-eigenvectors
+  - rank-and-nullity
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Let $G$ be a group and $H, K < G$ be subgroups of finite index. Show tha
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

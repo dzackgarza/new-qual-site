@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring, and $S\\subset R$ be a nonempty subset t\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - ideals
+  - zorns-lemma
 relations: []
 review: draft
 ---

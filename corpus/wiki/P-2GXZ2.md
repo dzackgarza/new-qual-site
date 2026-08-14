@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring and $a\\in R$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - localization
+  - rings
 relations: []
 review: draft
 ---

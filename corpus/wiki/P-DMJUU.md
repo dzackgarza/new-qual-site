@@ -6,7 +6,10 @@ title: "Hungerford 5.6.11"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - irreducibility-criteria
+  - characteristic
 relations: []
 review: draft
 ---

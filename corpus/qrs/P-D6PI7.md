@@ -6,7 +6,9 @@ title: "- Show that if a matrix is diagonalizable, its minimal polynomial is s\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

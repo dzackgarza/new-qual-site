@@ -6,7 +6,9 @@ title: 'Given: For every triplet in $G$, two elements commute'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

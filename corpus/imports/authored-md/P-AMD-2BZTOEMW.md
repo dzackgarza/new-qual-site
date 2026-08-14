@@ -6,7 +6,9 @@ title: 'Given: $|G| = p(p+1)$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

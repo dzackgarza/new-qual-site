@@ -6,7 +6,10 @@ title: "Let $H \\normal G$ be a normal subgroup of a finite group $G$, where the
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - normal-subgroups
+  - conjugacy
 relations: []
 review: draft
 ---

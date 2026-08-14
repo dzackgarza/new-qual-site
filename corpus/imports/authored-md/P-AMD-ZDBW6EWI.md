@@ -6,7 +6,10 @@ title: 'Given: $G$ is cyclic'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - cyclic-groups
+  - abelian-groups
 relations: []
 review: draft
 ---

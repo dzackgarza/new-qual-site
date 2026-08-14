@@ -6,7 +6,9 @@ title: 2. Suppose that for a field $F / K$ that $a \in F$ is algebraic and ha…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - polynomials
 relations: []
 review: draft
 ---

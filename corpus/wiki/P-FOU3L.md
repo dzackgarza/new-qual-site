@@ -6,7 +6,10 @@ title: "Let $R$ be a PID and $M$ be an $R\\dash$module. Let $p$ be a prime elem\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - primary-decomposition
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

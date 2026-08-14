@@ -6,7 +6,10 @@ title: "Let $U$ be an infinite-dimensional vector space over a field $k$\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - vector-spaces
+  - linear-algebra
+  - direct-products
 relations: []
 review: draft
 ---

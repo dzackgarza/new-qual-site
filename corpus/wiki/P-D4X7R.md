@@ -6,7 +6,10 @@ title: "Let $A=\\left[\\begin{array}{lll}{0} & {1} & {-2} \\\\ {1} & {1} & {-3} 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "State the structure theorem for semisimple Artinian rings."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - rings
+  - structure-theorem
 relations: []
 review: draft
 ---

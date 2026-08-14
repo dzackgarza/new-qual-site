@@ -6,7 +6,9 @@ title: "Show that Sylow $p_i\\dash$subgroups $S_{p_1}, S_{p_2}$ for distinct pri
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - p-groups
 relations: []
 review: draft
 ---

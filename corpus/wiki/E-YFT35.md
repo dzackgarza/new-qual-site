@@ -6,7 +6,9 @@ title: "Prove that $\\boldsymbol{F}_{p^{n}}$ is the splitting field of $x^{p^{n}
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - splitting-fields
 relations: []
 review: draft
 ---

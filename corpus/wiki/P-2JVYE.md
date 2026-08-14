@@ -6,7 +6,9 @@ title: "State/prove/explain Schur's lemma."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - semisimplicity
 relations: []
 review: draft
 ---

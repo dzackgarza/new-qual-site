@@ -6,7 +6,10 @@ title: "Consider the $\\ZZ\\dash$submodule $N$ of $\\ZZ^3$ spanned by"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - smith-normal-form
+  - modules
 relations: []
 review: draft
 ---

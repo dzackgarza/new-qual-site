@@ -6,7 +6,10 @@ title: "Let $f$ be a degree 4 polynomial with integer coefficients."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - splitting-fields
+  - polynomials
 relations: []
 review: draft
 ---

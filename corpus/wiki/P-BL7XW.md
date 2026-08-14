@@ -6,7 +6,10 @@ title: "Classify all groups of order $p^3$ for $p$ prime."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - p-groups
+  - group-presentations
 relations: []
 review: draft
 ---

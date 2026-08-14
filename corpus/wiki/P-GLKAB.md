@@ -6,7 +6,10 @@ title: "What is the discriminant of a polynomial?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - symmetric-functions
 relations: []
 review: draft
 ---

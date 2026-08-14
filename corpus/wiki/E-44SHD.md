@@ -6,7 +6,10 @@ title: "Prove that if $A$ and $B$ are invertible matrices over a field $\\boldsy
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - determinants
+  - matrices
+  - polynomials
 relations: []
 review: draft
 ---

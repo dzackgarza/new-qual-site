@@ -6,7 +6,9 @@ title: "- Show that $C_G(H) \\subseteq N_G(H) \\leq G$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - subgroups
 relations: []
 review: draft
 ---

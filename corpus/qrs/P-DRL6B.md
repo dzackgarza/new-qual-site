@@ -6,7 +6,10 @@ title: "- Show that a matrix representing a linear map $T:V\\to V$ is diagonali\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---

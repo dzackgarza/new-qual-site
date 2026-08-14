@@ -6,7 +6,10 @@ title: 3. For a polynomial $f \in K[x]$, prove that if $r \in F$ is a root of…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - field-extensions
 relations: []
 review: draft
 ---

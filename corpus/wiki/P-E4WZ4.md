@@ -6,7 +6,10 @@ title: "Hungerford 2.2.12.b."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - abelian-groups
+  - structure-theorem
 relations: []
 review: draft
 ---

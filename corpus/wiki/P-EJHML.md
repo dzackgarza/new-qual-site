@@ -6,7 +6,9 @@ title: "- Show that a field with $p^n$ elements has exactly one subfield of si\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - field-extensions
 relations: []
 review: draft
 ---

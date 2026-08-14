@@ -6,7 +6,10 @@ title: 22. For $n>2$ let $\zeta_{n}$ denote a primitive $n$ th root of unity…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - number-theory
 relations: []
 review: draft
 ---

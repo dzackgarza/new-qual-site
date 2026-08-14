@@ -6,7 +6,10 @@ title: 'Given: $G \actson X$ transitively, $H \normal G$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - orbit-stabilizer
+  - normal-subgroups
 relations: []
 review: draft
 ---

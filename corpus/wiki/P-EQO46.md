@@ -6,7 +6,10 @@ title: "What are the groups of order 12?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - groups
+  - subgroups
 relations: []
 review: draft
 ---

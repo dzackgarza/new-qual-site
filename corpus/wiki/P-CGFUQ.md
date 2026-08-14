@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - principal-ideal-domains
+  - counterexamples
 relations: []
 review: draft
 ---

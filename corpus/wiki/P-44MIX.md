@@ -6,7 +6,10 @@ title: "Let $R = k[x]$ for $k$ a field and let $M$ be the $R\\dash$module given\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - canonical-forms
 relations: []
 review: draft
 ---

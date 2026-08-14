@@ -6,7 +6,10 @@ title: "Maximal implies prime"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

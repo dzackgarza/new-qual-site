@@ -6,7 +6,10 @@ title: "Compute the Galois group of $x^3 - 2$ over the rationals."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - roots-of-unity
 relations: []
 review: draft
 ---

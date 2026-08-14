@@ -6,7 +6,10 @@ title: "Let $R$ be a PID. Classify irreducible $R\\dash$modules up to\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

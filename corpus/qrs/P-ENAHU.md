@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring. Let $r \\in R$. Show that the map $r\\bul
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-domains
+  - rings
+  - modules
 relations: []
 review: draft
 ---

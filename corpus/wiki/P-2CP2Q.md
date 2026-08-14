@@ -6,7 +6,10 @@ title: "Compute the Galois group of $f(x) = x^3-3x -3\\in \\QQ[x]/\\QQ$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - splitting-fields
 relations: []
 review: draft
 ---

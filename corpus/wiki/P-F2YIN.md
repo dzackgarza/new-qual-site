@@ -6,7 +6,10 @@ title: "Talk about factorisation and primes in a polynomial ring."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - polynomials
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

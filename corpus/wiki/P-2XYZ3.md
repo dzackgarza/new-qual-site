@@ -6,7 +6,10 @@ title: "Prove that any finite division ring is a field (that is, prove commuta\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - rings
+  - integral-domains
 relations: []
 review: draft
 ---

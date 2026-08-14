@@ -6,7 +6,10 @@ title: 'Given: $|G| =595$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - classification
 relations: []
 review: draft
 ---

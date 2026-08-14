@@ -6,7 +6,10 @@ title: "- Show that $G$ is solvable iff its derived series terminates."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - subgroup-series
+  - commutators
 relations: []
 review: draft
 ---

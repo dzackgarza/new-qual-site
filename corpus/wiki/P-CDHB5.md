@@ -6,7 +6,9 @@ title: "Let $A$ be an abelian group, and show $A$ is a $\\ZZ\\dash$module in a u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - abelian-groups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "- Show that $S_{n\\geq 5}$ has one normal subgroup: $A_n$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - permutations
+  - simple-groups
 relations: []
 review: draft
 ---

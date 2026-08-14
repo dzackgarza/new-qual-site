@@ -6,7 +6,10 @@ title: 'Given: $|G| < \infty, N \normal G, (|N|, [G:N]) =1$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

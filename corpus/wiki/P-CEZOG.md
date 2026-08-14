@@ -6,7 +6,10 @@ title: "If $A$ is a cyclic module over a commutative ring $R$, so we have\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - cyclic-groups
+  - torsion
 relations: []
 review: draft
 ---

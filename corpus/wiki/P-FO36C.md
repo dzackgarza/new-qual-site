@@ -6,7 +6,10 @@ title: "Define lower central series, upper central series, nilpotent and solva\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - nilpotent-groups
+  - solvable-groups
 relations: []
 review: draft
 ---

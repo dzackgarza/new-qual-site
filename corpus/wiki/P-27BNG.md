@@ -6,7 +6,9 @@ title: Suppose $K/F$ is a finite, normal, Galois extension.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

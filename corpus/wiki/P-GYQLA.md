@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group and $\\pi: G\\to \\sym(G)$ the Cayley represen
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-actions
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

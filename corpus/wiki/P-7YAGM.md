@@ -6,7 +6,10 @@ title: "Note that since $\\zeta(\\zeta+\\zeta\\inv) = \\zeta^2 + 1$, we have the
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - galois-theory
 relations: []
 review: draft
 ---

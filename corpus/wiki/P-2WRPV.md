@@ -6,7 +6,10 @@ title: "Let $\\phi: \\ZZ^4 \\to \\ZZ^3$ be a linear map which in the standard ba
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - smith-normal-form
+  - structure-theorem
+  - modules
 relations: []
 review: draft
 ---

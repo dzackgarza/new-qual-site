@@ -6,7 +6,10 @@ title: "Let $R$ be a ring and $f: M\\to N$ and $g: N\\to M$ be $R\\dash$module h
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - modules
+  - projective-modules
 relations: []
 review: draft
 ---

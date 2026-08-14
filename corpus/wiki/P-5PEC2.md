@@ -6,7 +6,10 @@ title: "Let's look at $\\SL_2(\\FF_3)$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - finite-fields
+  - permutations
 relations: []
 review: draft
 ---

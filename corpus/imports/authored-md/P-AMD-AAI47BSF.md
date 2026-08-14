@@ -6,7 +6,10 @@ title: "Given: $|G| < \\infty, \\quad H \\leq G, \\quad N \\normal G, (|H|, [G:N
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---

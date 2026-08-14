@@ -6,7 +6,9 @@ title: 'Show: $Inn(G) ~\text{char}~ Aut(G)$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - normal-subgroups
 relations: []
 review: draft
 ---

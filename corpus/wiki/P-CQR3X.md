@@ -6,7 +6,10 @@ title: "- Show if $G$ is finite, then $G$ is solvable $\\iff$ all of its compos\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - subgroup-series
+  - classification
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $V$ be a finite dimensional vector space over a field $F$ and let\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - diagonalization
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Show: $D_{2n}$ is nilpotent iff $n = 2^{i}$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - p-groups
+  - groups
 relations: []
 review: draft
 ---

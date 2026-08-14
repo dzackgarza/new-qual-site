@@ -6,7 +6,10 @@ title: "Hungerford 4.1.7"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - homomorphisms
+  - rings
 relations: []
 review: draft
 ---

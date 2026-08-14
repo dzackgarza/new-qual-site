@@ -6,7 +6,10 @@ title: 'Show: $G/Z(G)$ is nilpotent $\implies G$ is nilpotent'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - centralizers-and-normalizers
+  - subgroup-series
 relations: []
 review: draft
 ---

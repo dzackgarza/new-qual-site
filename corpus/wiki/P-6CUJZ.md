@@ -6,7 +6,9 @@ title: "- $Z(A_n) = 1$ for $n\\geq 4$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - permutations
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - classification
 relations: []
 review: draft
 ---

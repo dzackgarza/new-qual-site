@@ -6,7 +6,10 @@ title: "- Let $H, K \\leq G$ be subgroups with $H\\cong K$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
+  - normal-subgroups
+  - counterexamples
 relations: []
 review: draft
 ---

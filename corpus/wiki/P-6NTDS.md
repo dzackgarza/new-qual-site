@@ -6,7 +6,10 @@ title: "Let $G$ be a nonabelian group of order $p^3$ for $p$ prime. Show that\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - commutators
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

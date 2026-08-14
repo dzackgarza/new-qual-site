@@ -6,7 +6,10 @@ title: Let $A \in \Mat(n\times n, \RR)$ be arbitrary.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - minimal-and-characteristic-polynomials
+  - modules
 relations: []
 review: draft
 ---

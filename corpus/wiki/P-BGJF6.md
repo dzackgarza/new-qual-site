@@ -6,7 +6,10 @@ title: "A splitting field of $f$ over $F$ is an extension $L \\geq F$ that con\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - polynomials
+  - field-extensions
 relations: []
 review: draft
 ---

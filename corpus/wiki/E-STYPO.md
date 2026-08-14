@@ -6,7 +6,10 @@ title: 21. Recall the definition of a perfect field. Give an example of an im…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - fields
+  - finite-fields
 relations: []
 review: draft
 ---

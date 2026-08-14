@@ -6,7 +6,10 @@ title: "Let $F \\subset K \\subset L$ be finite degree field extensions."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - counterexamples
 relations: []
 review: draft
 ---

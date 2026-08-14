@@ -6,7 +6,10 @@ title: "Let $\\zeta_n$ denote a primitive $n$th root of 1 $\\in \\QQ$. You may a
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

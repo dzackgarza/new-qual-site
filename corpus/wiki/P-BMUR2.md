@@ -6,7 +6,10 @@ title: "Hungerford 4.4.1"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - abelian-groups
+  - cyclic-groups
 relations: []
 review: draft
 ---

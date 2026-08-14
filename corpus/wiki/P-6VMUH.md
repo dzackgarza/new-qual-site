@@ -6,7 +6,9 @@ title: "What's the Galois group of $x^4 - 3$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
 relations: []
 review: draft
 ---

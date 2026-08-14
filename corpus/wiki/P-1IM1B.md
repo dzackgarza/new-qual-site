@@ -6,7 +6,9 @@ title: "If $A,B$ are (skew)-symmetric, then $A^t = \\pm A$ and $B^t = \\pm B$ r\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - bilinear-forms
 relations: []
 review: draft
 ---

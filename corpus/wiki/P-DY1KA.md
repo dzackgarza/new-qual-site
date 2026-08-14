@@ -6,7 +6,10 @@ title: "By part (1), we know that these conditions uniquely specify their Jor\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - matrices
+  - canonical-forms
 relations: []
 review: draft
 ---

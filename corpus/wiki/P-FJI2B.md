@@ -6,7 +6,10 @@ title: "Classify finitely-generated modules over $\\ZZ$, over PIDs, and over De\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

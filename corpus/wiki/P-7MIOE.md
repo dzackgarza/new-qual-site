@@ -6,7 +6,9 @@ title: "Prove that the alternating group $A_n$ is simple for $n \\geq 5$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - simple-groups
+  - permutations
 relations: []
 review: draft
 ---

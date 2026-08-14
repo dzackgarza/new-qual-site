@@ -6,7 +6,10 @@ title: 'Given: $G$ is nilpotent'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - subgroups
+  - normal-subgroups
 relations: []
 review: draft
 ---

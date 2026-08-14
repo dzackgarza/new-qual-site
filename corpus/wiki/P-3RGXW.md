@@ -6,7 +6,10 @@ title: "Talk about the isomorphism classes of subgroups of $\\QQ$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - subgroups
+  - classification
 relations: []
 review: draft
 ---

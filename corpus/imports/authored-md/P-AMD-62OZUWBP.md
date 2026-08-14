@@ -6,7 +6,10 @@ title: Every $a\in R$ for a finite ring is either a unit or a zero divisor.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-domains
+  - rings
+  - fields
 relations: []
 review: draft
 ---

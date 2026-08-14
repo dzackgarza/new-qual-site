@@ -6,7 +6,10 @@ title: The nilradical is contained in the Jacobson radical, i.e.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - nilpotence
+  - ideals
 relations: []
 review: draft
 ---

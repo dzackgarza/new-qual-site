@@ -6,7 +6,10 @@ title: 'Show: Every finite group is finitely generated.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - cyclic-groups
+  - subgroups
 relations: []
 review: draft
 ---

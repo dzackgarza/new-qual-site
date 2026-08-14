@@ -6,7 +6,10 @@ title: "Nilradical is intersection of primes"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

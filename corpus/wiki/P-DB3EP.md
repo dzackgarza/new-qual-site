@@ -6,7 +6,10 @@ title: "$\\impliedby$: Suppose that $A\\vector x = \\vector b$ has a solution $\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - linear-algebra
+  - matrices
+  - rank-and-nullity
 relations: []
 review: draft
 ---

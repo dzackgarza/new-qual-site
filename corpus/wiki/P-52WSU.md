@@ -6,7 +6,8 @@ title: "What is a Toeplitz operator?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - functional-analysis
 relations: []
 review: draft
 ---

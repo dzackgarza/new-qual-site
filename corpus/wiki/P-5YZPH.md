@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group, $H$ a $p\\dash$subgroup, and $P$ a sylow $p\\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - group-actions
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

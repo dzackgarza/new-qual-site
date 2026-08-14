@@ -6,7 +6,10 @@ title: "Let $R$ be a simple rng (a nonzero ring which is not assume to\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - ideals
+  - semisimplicity
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Say we can find a matrix $A$ such that $\\exp(A) = B$ for $B$ in $SL_n(\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - determinants
+  - trace
 relations: []
 review: draft
 ---

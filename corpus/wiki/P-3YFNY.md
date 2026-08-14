@@ -6,7 +6,10 @@ title: "Let $A$ be an $n \\times n$ matrix."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - rational-canonical-form
+  - linear-algebra
 relations: []
 review: draft
 ---

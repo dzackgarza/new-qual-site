@@ -6,7 +6,10 @@ title: 24. Prove that the Galois group of the polynomial $x^{n}-1$ over $Q$ i…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - roots-of-unity
+  - abelian-groups
 relations: []
 review: draft
 ---

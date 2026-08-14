@@ -6,7 +6,10 @@ title: "Is \\(A_4\\) a simple group?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - simple-groups
+  - conjugacy
+  - permutations
 relations: []
 review: draft
 ---

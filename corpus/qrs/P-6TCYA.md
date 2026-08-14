@@ -6,7 +6,10 @@ title: "Let $P$ be a finite $p\\dash$group. Prove that every nontrivial normal\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - normal-subgroups
+  - class-equation
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $\\FF$ be a finite field. Give (with proof) the decomposition\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - structure-theorem
+  - cyclic-groups
 relations: []
 review: draft
 ---

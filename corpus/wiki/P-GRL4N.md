@@ -6,7 +6,10 @@ title: "The standard computation of $\\det(xI - A) = 0$ shows that $\\chi_A(x) =
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - rational-canonical-form
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

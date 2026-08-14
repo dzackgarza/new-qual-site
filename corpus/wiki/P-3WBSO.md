@@ -6,7 +6,8 @@ title: "What is Dirichlet's theorem about primes in arithmetic progression?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - number-theory
 relations: []
 review: draft
 ---

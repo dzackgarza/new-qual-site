@@ -6,7 +6,10 @@ title: "- Let $R$ be a Noetherian ring and $A,B$ algebras over $R$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - algebras
+  - commutative-algebra
 relations: []
 review: draft
 ---

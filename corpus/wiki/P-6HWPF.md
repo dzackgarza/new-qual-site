@@ -6,7 +6,10 @@ title: "Can we solve general quadratic equations by radicals?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - solvable-groups
+  - polynomials
 relations: []
 review: draft
 ---

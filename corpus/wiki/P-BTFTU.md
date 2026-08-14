@@ -6,7 +6,8 @@ title: "Hungerford 5.1.1"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

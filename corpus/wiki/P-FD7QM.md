@@ -6,7 +6,10 @@ title: "Hungerford 4.6.6"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - cyclic-groups
 relations: []
 review: draft
 ---

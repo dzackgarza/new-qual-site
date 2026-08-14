@@ -6,7 +6,10 @@ title: "Consider a translation-invariant subspace of $L_1$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - convolution
+  - function-spaces
+  - algebras
 relations: []
 review: draft
 ---

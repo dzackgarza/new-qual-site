@@ -6,7 +6,9 @@ title: "If $E \\geq F$ is a finite extension, then it is algebraic and $E = F[\\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Consider the following matrix as a linear transformation\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - jordan-canonical-form
+  - modules
 relations: []
 review: draft
 ---

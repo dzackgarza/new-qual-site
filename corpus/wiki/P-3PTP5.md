@@ -6,7 +6,10 @@ title: "Prove that a commutative ring with unit is a field if and only if its\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

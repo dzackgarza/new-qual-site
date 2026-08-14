@@ -6,7 +6,9 @@ title: "Draw the subgroup lattice for $S_3$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
+  - permutations
 relations: []
 review: draft
 ---

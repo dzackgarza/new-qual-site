@@ -6,7 +6,10 @@ title: "Let $I = (2, x)$ be an ideal in $R = \\ZZ[x]$, and show that $I$ is not\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - ideals
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

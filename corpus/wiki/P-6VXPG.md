@@ -6,7 +6,10 @@ title: "Suppose you are given a finite Galois extension $K/\\QQ$ by $f(x) \\in \
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - polynomials
 relations: []
 review: draft
 ---

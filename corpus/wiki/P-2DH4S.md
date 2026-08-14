@@ -6,7 +6,10 @@ title: "Let $V$ be a finite-dimensional $k\\dash$vector space and $T:V\\to V$ a\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - linear-algebra
+  - rank-and-nullity
+  - vector-spaces
 relations: []
 review: draft
 ---

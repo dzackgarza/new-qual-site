@@ -6,7 +6,10 @@ title: "- Does diagonalizable imply distinct eigenvalues?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that $Z(G) \\leq G$ is always characteristic."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - automorphisms
+  - subgroups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Note that if $A = 0$ or $I$ then $A$ is patently diagonal, so suppose\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

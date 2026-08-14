@@ -6,7 +6,10 @@ title: "Jacobson radical is bigger than the nilradical"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - nilpotence
+  - ideals
 relations: []
 review: draft
 ---

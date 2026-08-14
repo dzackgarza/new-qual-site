@@ -6,7 +6,10 @@ title: 3. For the ring of $n \times n$ matrices over a commutative unital rin…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - determinants
+  - matrices
+  - rings
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: We have $F \leq E \leq K$. Suppose that
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - cyclic-groups
+  - normal-subgroups
 relations: []
 review: draft
 ---

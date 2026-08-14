@@ -6,7 +6,10 @@ title: "Let $F$ be the field with 2 elements and $K$ a splitting field of $f(x) 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - galois-theory
+  - splitting-fields
 relations: []
 review: draft
 ---

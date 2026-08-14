@@ -6,7 +6,10 @@ title: "- Show that if $p\\in \\QQ[x]$ and $r\\in \\QQ$ is a rational root, then
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - factorization
+  - number-theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Given: $\forall x \in G, x^2 = e$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - groups
 relations: []
 review: draft
 ---

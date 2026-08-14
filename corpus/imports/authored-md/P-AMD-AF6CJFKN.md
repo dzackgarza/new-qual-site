@@ -6,7 +6,10 @@ title: Prove Cauchy's Theorem. Given $p\divides o(G) <\infty$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - p-groups
+  - orbit-stabilizer
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $T:V\\to V$ be a linear transformation where $V$ is a finite-dimen\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - jordan-canonical-form
+  - linear-algebra
 relations: []
 review: draft
 ---

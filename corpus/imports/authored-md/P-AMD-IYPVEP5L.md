@@ -6,7 +6,10 @@ title: 'Given: $H\leq G, N \normal G, H \in \text{Hall}(G)$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - subgroups
+  - normal-subgroups
 relations: []
 review: draft
 ---

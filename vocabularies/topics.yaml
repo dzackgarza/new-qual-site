@@ -185,6 +185,8 @@
   name: Group Actions
 - id: group-presentations
   name: Group Presentations
+- id: group-rings
+  name: Group Rings
 - id: groups
   name: Groups
 - id: harmonic-functions
@@ -401,6 +403,8 @@
   name: Singularities
 - id: small-tails
   name: Small Tails
+- id: smith-normal-form
+  name: Smith Normal Form
 - id: solvable-groups
   name: Solvable Groups
 - id: splitting-fields
@@ -429,6 +433,8 @@
   name: Torsion
 - id: trace
   name: Trace
+- id: transcendence
+  name: Transcendence
 - id: trigonometry
   name: Trigonometry
 - id: tube-lemma

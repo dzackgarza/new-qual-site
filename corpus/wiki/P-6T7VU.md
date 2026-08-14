@@ -6,7 +6,10 @@ title: "Lemma: If $M$ is a cyclic module over a PID, then $M$ has exactly\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

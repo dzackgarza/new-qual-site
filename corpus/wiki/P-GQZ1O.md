@@ -6,7 +6,10 @@ title: Suppose $R$ is a domain, $M$ an $R\dash$module, and let
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - modules
+  - integral-domains
 relations: []
 review: draft
 ---

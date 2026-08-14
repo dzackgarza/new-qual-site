@@ -6,7 +6,9 @@ title: "Since all eigenvalues are roots of the minimal polynomial and complex\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - eigenvalues-and-eigenvectors
 relations: []
 review: draft
 ---

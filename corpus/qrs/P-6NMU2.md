@@ -6,7 +6,10 @@ title: "Set $f(x) = x^3 - 5 \\in \\QQ[x]$. Find the splitting field $K$ of $f(x)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

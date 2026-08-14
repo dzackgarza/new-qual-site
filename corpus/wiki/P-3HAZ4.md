@@ -6,7 +6,8 @@ title: "- Show that $C_G(G) = Z(G)$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

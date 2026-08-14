@@ -6,7 +6,9 @@ title: "- How do you compute the totient $\\phi(p)$ for $p$ prime? Or $\\phi(n)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - number-theory
+  - cyclic-groups
 relations: []
 review: draft
 ---

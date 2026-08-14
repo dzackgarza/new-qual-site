@@ -6,7 +6,10 @@ title: 'Given: $r$ beads of $n$ colors'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - burnside-s-lemma
+  - group-actions
+  - partitions
 relations: []
 review: draft
 ---

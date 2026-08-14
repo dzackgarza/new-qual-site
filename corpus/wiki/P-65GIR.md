@@ -6,7 +6,10 @@ title: "Let $R$ be a PID and $(a_1) < (a_2) < \\cdots$ be an ascending chain of\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - noetherian-rings
+  - ideals
 relations: []
 review: draft
 ---

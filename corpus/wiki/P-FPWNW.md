@@ -6,7 +6,10 @@ title: "a. Show that every group of order $p^2$ with $p$ prime is abelian."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - p-groups
+  - sylow-theory
 relations: []
 review: draft
 ---

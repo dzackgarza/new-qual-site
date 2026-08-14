@@ -6,7 +6,10 @@ title: 4. If $R$ is an integral domain and $A$ is an $n \times n$ matrix over…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - determinants
+  - matrices
+  - integral-domains
 relations: []
 review: draft
 ---

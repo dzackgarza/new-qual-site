@@ -6,7 +6,9 @@ title: "If $L\\vector x = \\vector x$, then $\\vector x$ is an eigenvector with 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "We can note that since $f$ has 4 roots, the Galois group $G$ of its sp\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - splitting-fields
 relations: []
 review: draft
 ---

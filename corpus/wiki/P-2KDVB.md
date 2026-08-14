@@ -6,7 +6,10 @@ title: To see that $\ZZ_m$ is a $\ZZ_{mk}$ module, we define an action
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - homomorphisms
+  - cyclic-groups
 relations: []
 review: draft
 ---

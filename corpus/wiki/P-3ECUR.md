@@ -6,7 +6,10 @@ title: "Hungerford 7.4.10"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

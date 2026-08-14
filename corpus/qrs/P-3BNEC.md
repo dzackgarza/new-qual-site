@@ -6,7 +6,8 @@ title: "If $F$ is over $K$, and $E$ is an intermediate extension of $F$ over $K$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

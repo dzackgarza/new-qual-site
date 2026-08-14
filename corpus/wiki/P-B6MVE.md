@@ -6,7 +6,10 @@ title: 'Let $f: R \to R$ be an endomorphism of $R$ in the category of rings.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - rings
+  - homomorphisms
 relations: []
 review: draft
 ---

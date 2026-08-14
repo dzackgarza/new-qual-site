@@ -6,7 +6,8 @@ title: "What is the degree of a field extension?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

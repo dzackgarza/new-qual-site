@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group acting on a set $X$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - group-actions
+  - p-groups
 relations: []
 review: draft
 ---

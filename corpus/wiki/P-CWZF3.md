@@ -6,7 +6,10 @@ title: "We want to show that if $(p) \\normal R$ is a prime ideal then $R/(p)$\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - maximal-ideals
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

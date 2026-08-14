@@ -6,7 +6,9 @@ title: "What's a Galois group that's not $S_n$ or $A_n$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - classification
 relations: []
 review: draft
 ---

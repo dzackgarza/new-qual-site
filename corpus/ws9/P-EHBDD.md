@@ -6,7 +6,10 @@ title: In this question, $R$ is a ring and $e \in R$ is an idempotent, so tha…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - jacobson-radical
+  - rings
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "If $L/k$ is an abelian Galois extension of degree $540 = 2^2 \\times 3^3
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - abelian-groups
+  - field-extensions
 relations: []
 review: draft
 ---

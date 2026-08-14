@@ -6,7 +6,10 @@ title: 4. Prove that as extensions of $\boldsymbol{Q}, \boldsymbol{Q}(x)$ is…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - transcendence
+  - field-extensions
 relations: []
 review: draft
 ---

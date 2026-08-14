@@ -6,7 +6,10 @@ title: "Show that if $H \\leq G$, $K\\normal G$ is a normal subgroup, and $H~\\t
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - automorphisms
+  - subgroups
 relations: []
 review: draft
 ---

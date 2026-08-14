@@ -6,7 +6,10 @@ title: "Let $G$ be a group. An automorphism $\\phi: G \\rightarrow G$ is called\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - permutations
+  - conjugacy
 relations: []
 review: draft
 ---

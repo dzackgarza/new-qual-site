@@ -6,7 +6,9 @@ title: "Find a non-symmetric polynomial whose square is symmetric."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - symmetric-functions
+  - polynomials
 relations: []
 review: draft
 ---

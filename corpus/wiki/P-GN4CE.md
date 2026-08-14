@@ -6,7 +6,10 @@ title: "Carefully state the definition of Noetherian for a\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - ideals
+  - polynomials
 relations: []
 review: draft
 ---

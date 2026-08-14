@@ -6,7 +6,10 @@ title: 'i: $|G| < \infty, H < G$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - centralizers-and-normalizers
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

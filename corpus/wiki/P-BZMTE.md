@@ -6,7 +6,9 @@ title: "To see that $\\phi(n)$ is even for all $n>2$, we can take a prime fact\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - number-theory
+  - roots-of-unity
 relations: []
 review: draft
 ---

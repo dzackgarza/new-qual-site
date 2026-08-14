@@ -6,7 +6,10 @@ title: "What are the possible images of the unit circle under a linear transfo\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - linear-algebra
+  - matrices
+  - geometry
 relations: []
 review: draft
 ---

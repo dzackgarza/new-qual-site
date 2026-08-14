@@ -6,7 +6,10 @@ title: "What are the prime ideals and maximal ideals of $\\ZZ[x]$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - maximal-ideals
+  - polynomials
 relations: []
 review: draft
 ---

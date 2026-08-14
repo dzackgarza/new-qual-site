@@ -6,7 +6,10 @@ title: "Give an example of a $\\CC\\dash$algebra which is not semisimple."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - algebras
+  - counterexamples
 relations: []
 review: draft
 ---

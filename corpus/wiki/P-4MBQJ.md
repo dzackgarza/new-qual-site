@@ -6,7 +6,10 @@ title: "Let $R$ be a ring and $M$ an $R\\dash$module. Recall that $M$ is Noether
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - modules
+  - primary-decomposition
 relations: []
 review: draft
 ---

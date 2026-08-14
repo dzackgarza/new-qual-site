@@ -6,7 +6,8 @@ title: "What's the field with 25 elements?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
 relations: []
 review: draft
 ---

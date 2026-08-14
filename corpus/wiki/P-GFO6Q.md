@@ -6,7 +6,10 @@ title: "Let $R$ be an algebra over $\\CC$ which is finite-dimensional as a $\\CC
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - algebras
+  - maximal-ideals
+  - classification
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Define p-adic numbers."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - valuation-rings
+  - number-theory
+  - local-rings
 relations: []
 review: draft
 ---

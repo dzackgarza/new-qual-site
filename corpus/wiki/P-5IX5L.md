@@ -6,7 +6,9 @@ title: "Hungerford 2.5.9"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

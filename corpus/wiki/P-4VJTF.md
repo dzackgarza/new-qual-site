@@ -6,7 +6,10 @@ title: "- Let $\\FF_p$ be the finite field with $p$ elements, where $p$ is a pr\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - centralizers-and-normalizers
+  - finite-fields
 relations: []
 review: draft
 ---

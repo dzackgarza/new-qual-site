@@ -6,7 +6,10 @@ title: 'Given: $R$ a ring, $M_n(R)$ its matrix ring'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - ideals
+  - semisimplicity
 relations: []
 review: draft
 ---

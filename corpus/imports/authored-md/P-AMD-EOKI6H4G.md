@@ -6,7 +6,10 @@ title: 'Given: $H \leq G$. Show: $\text{core}(H)$ is'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - group-actions
+  - subgroups
 relations: []
 review: draft
 ---

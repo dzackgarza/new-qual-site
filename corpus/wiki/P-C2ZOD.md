@@ -6,7 +6,9 @@ title: "Hungerford 5.3.8"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - fields
 relations: []
 review: draft
 ---

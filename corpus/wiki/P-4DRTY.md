@@ -6,7 +6,10 @@ title: "Is $\\QQ(\\sqrt[3]{21})$ normal?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

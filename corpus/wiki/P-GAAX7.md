@@ -6,7 +6,10 @@ title: "Since $G$ is a $p\\dash$group, it has a nontrivial center."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - commutators
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

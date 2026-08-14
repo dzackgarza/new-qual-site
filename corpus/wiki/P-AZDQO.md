@@ -6,7 +6,10 @@ title: "Let $p, q$ be distinct primes."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
+  - cyclic-groups
 relations: []
 review: draft
 ---

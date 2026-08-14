@@ -6,7 +6,10 @@ title: "Since $\\ZZ^4$ is a finitely generated module over the PID $\\ZZ$, the \
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - smith-normal-form
+  - structure-theorem
+  - abelian-groups
 relations: []
 review: draft
 ---

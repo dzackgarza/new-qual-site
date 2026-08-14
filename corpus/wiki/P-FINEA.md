@@ -6,7 +6,9 @@ title: "- Show that $A_n$ is generated $3\\dash$cycles."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-presentations
 relations: []
 review: draft
 ---

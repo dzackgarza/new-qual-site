@@ -6,7 +6,10 @@ title: Let $D = \QQ[x]$ and let $M$ be a $\QQ[x]\dash$module such that
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - canonical-forms
 relations: []
 review: draft
 ---

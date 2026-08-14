@@ -6,7 +6,10 @@ title: "By the Galois correspondence, all intermediate fields will correspond\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - cyclic-groups
+  - field-extensions
 relations: []
 review: draft
 ---

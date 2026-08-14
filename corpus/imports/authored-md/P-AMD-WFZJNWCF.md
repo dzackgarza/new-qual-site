@@ -6,7 +6,10 @@ title: 'Given: $|G| < \infty$, $H \leq G$ maximal $\implies [G:H] = p$, a prime.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - sylow-theory
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

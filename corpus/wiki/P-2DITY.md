@@ -6,7 +6,10 @@ title: "- Show that the center of a $p\\dash$group is nontrivial"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - centralizers-and-normalizers
+  - class-equation
 relations: []
 review: draft
 ---

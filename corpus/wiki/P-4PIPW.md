@@ -6,7 +6,10 @@ title: "How many isomorphism classes of abelian groups of order 56 are there?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - structure-theorem
+  - sylow-theory
 relations: []
 review: draft
 ---

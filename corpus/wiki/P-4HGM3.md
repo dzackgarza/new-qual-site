@@ -6,7 +6,10 @@ title: "Classify all groups of order 8."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - p-groups
+  - groups
 relations: []
 review: draft
 ---

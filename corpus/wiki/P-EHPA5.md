@@ -6,7 +6,10 @@ title: "For a prime $p$, let $G$ be a finite $p\\dash$group and let $N$ be a nor
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - normal-subgroups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

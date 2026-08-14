@@ -6,7 +6,10 @@ title: "What is a Noetherian ring?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - ideals
+  - nakayamas-lemma
 relations: []
 review: draft
 ---

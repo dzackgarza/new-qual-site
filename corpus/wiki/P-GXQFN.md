@@ -6,7 +6,10 @@ title: "Hungerford 5.4.12"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - classification
+  - permutations
 relations: []
 review: draft
 ---

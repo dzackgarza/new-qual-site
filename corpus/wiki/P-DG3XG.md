@@ -6,7 +6,10 @@ title: "Let $K \\subset L \\subset M$ be a tower of finite degree"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - counterexamples
 relations: []
 review: draft
 ---

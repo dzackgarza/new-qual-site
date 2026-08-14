@@ -6,7 +6,10 @@ title: "Definition: A field $F$ is perfect if every irreducible\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - fields
+  - finite-fields
 relations: []
 review: draft
 ---

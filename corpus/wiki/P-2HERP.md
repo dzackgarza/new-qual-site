@@ -6,7 +6,10 @@ title: "What can you say about the eigenvalues of a skew-symmetric matrix?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - matrices
+  - bilinear-forms
 relations: []
 review: draft
 ---

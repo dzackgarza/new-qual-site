@@ -6,7 +6,10 @@ title: "Take a finite field extension \\( \\FF_p^n \\) over \\( \\FF_p \\)."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - minimal-and-characteristic-polynomials
+  - galois-theory
 relations: []
 review: draft
 ---

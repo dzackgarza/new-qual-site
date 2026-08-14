@@ -6,7 +6,9 @@ title: "- Show that any field morphism is either 0 or injective."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - homomorphisms
 relations: []
 review: draft
 ---

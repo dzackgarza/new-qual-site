@@ -6,7 +6,10 @@ title: "Prove that the centre of a group of order $pr$ ($p$ prime) is not triv\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - centralizers-and-normalizers
+  - class-equation
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Tell me about the representations of $D_4$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - character-theory
+  - groups
 relations: []
 review: draft
 ---

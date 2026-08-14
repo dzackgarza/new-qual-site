@@ -6,7 +6,10 @@ title: "Images and kernels of module homomorphisms are always submodules, so \u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - homomorphisms
+  - torsion
 relations: []
 review: draft
 ---

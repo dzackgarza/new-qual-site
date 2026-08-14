@@ -6,7 +6,10 @@ title: Show $H \normal K \normal G \not\implies H \normal G$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - counterexamples
+  - subgroups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "What are the groups of order $p^2$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - p-groups
+  - semidirect-products
 relations: []
 review: draft
 ---

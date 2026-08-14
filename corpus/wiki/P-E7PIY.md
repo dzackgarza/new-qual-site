@@ -6,7 +6,9 @@ title: "State the fundamental theorem of symmetric polynomials."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - symmetric-functions
+  - polynomials
 relations: []
 review: draft
 ---

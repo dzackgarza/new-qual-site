@@ -6,7 +6,8 @@ title: "- Show that disjoint cycles commute."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---

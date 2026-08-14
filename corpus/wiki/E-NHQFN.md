@@ -6,7 +6,10 @@ title: 20. Prove that for any positive integer $n$ there is an irreducible po…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - polynomials
 relations: []
 review: draft
 ---

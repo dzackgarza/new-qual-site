@@ -6,7 +6,9 @@ title: "Why is $[K\\(alpha): K]$ equal to the degree of the minimal polynomial\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - polynomials
 relations: []
 review: draft
 ---

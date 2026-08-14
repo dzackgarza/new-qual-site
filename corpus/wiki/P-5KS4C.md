@@ -6,7 +6,10 @@ title: "By a theorem in class, this would force $\\Gal(E/K)$ to be solvable, w\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - galois-theory
+  - permutations
 relations: []
 review: draft
 ---

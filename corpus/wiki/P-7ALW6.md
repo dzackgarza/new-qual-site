@@ -6,7 +6,9 @@ title: "What is the Galois group of $\\QQ(\\sqrt 2, \\sqrt 3)\\, / \\, \\QQ ?$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Suppose $r = sk$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - cyclic-groups
+  - isomorphism-theorems
 relations: []
 review: draft
 ---

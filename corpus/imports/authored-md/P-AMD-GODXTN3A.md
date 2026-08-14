@@ -6,7 +6,10 @@ title: "Given: $|G| < \\infty$ Show: $|G|$ is nilpotent iff $a,b\\in G, (a,b)=1 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - sylow-theory
+  - direct-products
 relations: []
 review: draft
 ---

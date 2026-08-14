@@ -6,7 +6,10 @@ title: "a. Using Sylow theory, show that every group of order $2p$ where $p$ i\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - group-presentations
 relations: []
 review: draft
 ---

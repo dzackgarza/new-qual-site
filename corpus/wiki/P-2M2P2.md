@@ -6,7 +6,9 @@ title: "Let $P\\in \\syl_p(H)$ where $H\\normal G$ and show that $P\\intersect H
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

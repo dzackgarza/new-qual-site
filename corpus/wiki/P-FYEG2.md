@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group and $s, t\\in G$ be two distinct elements of\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-presentations
+  - groups
+  - subgroups
 relations: []
 review: draft
 ---

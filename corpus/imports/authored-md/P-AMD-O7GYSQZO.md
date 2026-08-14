@@ -6,7 +6,10 @@ title: 'Given: $H, K \normal HK \leq G$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - isomorphism-theorems
+  - direct-products
+  - normal-subgroups
 relations: []
 review: draft
 ---

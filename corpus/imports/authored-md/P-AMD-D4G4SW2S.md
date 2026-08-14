@@ -6,7 +6,10 @@ title: 'Given: $H \subseteq G, P \in \text{Syl}_p(G)$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - conjugacy
+  - subgroups
 relations: []
 review: draft
 ---

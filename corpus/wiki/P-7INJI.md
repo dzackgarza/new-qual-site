@@ -6,7 +6,10 @@ title: "Discuss representations of $\\ZZ$, the infinite cyclic group."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - group-rings
+  - cyclic-groups
 relations: []
 review: draft
 ---

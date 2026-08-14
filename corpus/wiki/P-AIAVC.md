@@ -6,7 +6,10 @@ title: "If you have two linear representations $\\pi_1$ and $\\pi_2$ of a finite
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - character-theory
+  - conjugacy
 relations: []
 review: draft
 ---

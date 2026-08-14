@@ -6,7 +6,10 @@ title: "Is the discriminant of a polynomial always a polynomial in the coeffic\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - symmetric-functions
+  - polynomials
+  - galois-theory
 relations: []
 review: draft
 ---

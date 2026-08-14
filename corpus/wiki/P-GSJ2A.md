@@ -6,7 +6,10 @@ title: "What are the eigenvalues of a symmetric matrix?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - matrices
+  - inner-product-spaces
 relations: []
 review: draft
 ---

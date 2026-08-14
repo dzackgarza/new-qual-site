@@ -6,7 +6,10 @@ title: "Classify groups of order 35."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - cyclic-groups
 relations: []
 review: draft
 ---

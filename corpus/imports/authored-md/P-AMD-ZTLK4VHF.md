@@ -6,7 +6,10 @@ title: 'Given: $R$ a commutative ring, $x,y \in R$ nilpotent'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - ideals
+  - rings
 relations: []
 review: draft
 ---

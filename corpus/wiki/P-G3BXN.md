@@ -6,7 +6,10 @@ title: "Is $\\CC[x, y]$ a PID?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - prime-ideals
+  - polynomials
 relations: []
 review: draft
 ---

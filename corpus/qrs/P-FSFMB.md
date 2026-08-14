@@ -6,7 +6,10 @@ title: "For a finite group $G$, let $c(G)$ denote the number of conjugacy\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - class-equation
+  - burnside-s-lemma
 relations: []
 review: draft
 ---

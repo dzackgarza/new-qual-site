@@ -6,7 +6,10 @@ title: "Let $L/K$ be a finite extension of fields."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
+  - finite-fields
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $A, B$ be two $n\\times n$ matrices with the property that $AB = BA$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

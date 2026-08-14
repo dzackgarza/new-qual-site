@@ -6,7 +6,9 @@ title: 'Given: $P \leq H \leq K \leq G < \infty, P \in \text{Syl}_p(G)$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

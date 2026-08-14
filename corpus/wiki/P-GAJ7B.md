@@ -6,7 +6,10 @@ title: "Let $G\\subset S_9$ be a Sylow-3 subgroup of the symmetric group on 9 l\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - permutations
+  - group-presentations
 relations: []
 review: draft
 ---

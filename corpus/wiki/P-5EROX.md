@@ -6,7 +6,10 @@ title: "Let $k$ be a field of characteristic zero and $A, B \\in M_n(k)$ be two\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - trace
+  - determinants
+  - matrices
 relations: []
 review: draft
 ---

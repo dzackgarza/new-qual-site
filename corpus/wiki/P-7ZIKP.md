@@ -6,7 +6,10 @@ title: "Give examples of maximal ideals in $K = R \\times R \\times R \\times \\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - direct-products
 relations: []
 review: draft
 ---

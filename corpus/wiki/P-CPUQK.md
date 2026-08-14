@@ -6,7 +6,10 @@ title: "Hungerford 4.1.12"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - homological-algebra
+  - modules
 relations: []
 review: draft
 ---

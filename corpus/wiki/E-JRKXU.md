@@ -6,7 +6,9 @@ title: 17. Let $u=\sqrt{3+\sqrt{2}}$. Is $\boldsymbol{Q}(u)$ a splitting fiel…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

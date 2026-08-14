@@ -6,7 +6,10 @@ title: "Let $G$ be a group of order 60 whose Sylow 3-subgroup is normal."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

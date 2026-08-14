@@ -6,7 +6,10 @@ title: 6. Suppose that $\phi$ and $\psi$ are commuting endomorphisms of a fin…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---

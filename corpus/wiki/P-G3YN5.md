@@ -6,7 +6,10 @@ title: "1. State the structure theorem for finitely generated modules over a"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - smith-normal-form
+  - abelian-groups
 relations: []
 review: draft
 ---

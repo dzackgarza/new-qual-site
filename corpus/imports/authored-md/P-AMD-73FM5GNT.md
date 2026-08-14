@@ -6,7 +6,9 @@ title: 'Show: $|G| < 60 \implies G$ is solvable'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - classification
 relations: []
 review: draft
 ---

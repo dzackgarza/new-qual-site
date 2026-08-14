@@ -6,7 +6,10 @@ title: 'Given: $\mathcal{K}$ a conjugacy class in $S_n$,…'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - permutations
+  - group-actions
 relations: []
 review: draft
 ---

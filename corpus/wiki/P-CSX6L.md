@@ -6,7 +6,10 @@ title: "Talk about conjugacy classes in the symmetric group $S_n$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - permutations
+  - partitions
 relations: []
 review: draft
 ---

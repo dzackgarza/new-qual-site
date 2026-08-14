@@ -6,7 +6,10 @@ title: "Classify finite fields, their subfields, and their field extensions."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - galois-theory
+  - automorphisms
 relations: []
 review: draft
 ---

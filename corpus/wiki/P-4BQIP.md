@@ -6,7 +6,10 @@ title: "Let $G$ be a group of order $p^3$ for some prime $p$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - centralizers-and-normalizers
+  - classification
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Can you have a degree 7 irreducible polynomial over \\( \\FF_p \\)?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - polynomials
 relations: []
 review: draft
 ---

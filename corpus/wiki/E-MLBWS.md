@@ -6,7 +6,10 @@ title: 16. Given an example of a finite extension of fields that has infinite…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - counterexamples
+  - separability
 relations: []
 review: draft
 ---

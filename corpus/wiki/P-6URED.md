@@ -6,7 +6,10 @@ title: "Show that $S_4$ is a solvable, nonabelian group."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - permutations
+  - subgroup-series
 relations: []
 review: draft
 ---

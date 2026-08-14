@@ -6,7 +6,10 @@ title: "Since 0 is an eigenvalue, there exists an eigenvector $\\vector v$ suc\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rank-and-nullity
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---

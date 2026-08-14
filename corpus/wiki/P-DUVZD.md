@@ -6,7 +6,8 @@ title: "- Let $\\sigma = (4\\, 2\\, 1)(6\\, 1\\, 3\\, 2) \\in S_6$ in cycle nota
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---

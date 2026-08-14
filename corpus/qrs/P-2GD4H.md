@@ -6,7 +6,10 @@ title: "Consider the polynomial $f(x) = x^4 - 7 \\in \\QQ[x]$ and let $E/\\QQ$ b
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

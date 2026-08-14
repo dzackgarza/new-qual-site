@@ -6,7 +6,10 @@ title: "Hungerford 7.2.4"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - linear-algebra
+  - matrices
+  - rank-and-nullity
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Hungerford 4.1.5"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
+  - cyclic-groups
 relations: []
 review: draft
 ---

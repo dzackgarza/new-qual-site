@@ -6,7 +6,9 @@ title: "Find all normal subgroups of $A_4$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - permutations
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $R$ be an integral domain and let $M$ be a nonzero torsion $R\\dash$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - modules
+  - integral-domains
 relations: []
 review: draft
 ---

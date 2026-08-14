@@ -6,7 +6,10 @@ title: "Define a map $\\phi_\\mathrm{ev}: \\hom_\\ZZ(\\ZZ_m, A) \\to A \\\\ (f: 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - cyclic-groups
+  - isomorphism-theorems
 relations: []
 review: draft
 ---

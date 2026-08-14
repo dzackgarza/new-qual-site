@@ -6,7 +6,10 @@ title: 'Given: $\sigma \in Aut(G)$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - centralizers-and-normalizers
+  - normal-subgroups
 relations: []
 review: draft
 ---

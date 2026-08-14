@@ -6,7 +6,9 @@ title: "If you have an irreducible representation of a subgroup, is the induce\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - semisimplicity
 relations: []
 review: draft
 ---

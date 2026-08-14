@@ -6,7 +6,10 @@ title: "- Show that $ff(R[t]) = ff(R)(t)$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - localization
+  - polynomials
+  - integral-domains
 relations: []
 review: draft
 ---

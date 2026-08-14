@@ -6,7 +6,9 @@ title: 1. Suppose that for an extension field $F$ over $K$ and for $a \in F$,…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - transcendence
 relations: []
 review: draft
 ---

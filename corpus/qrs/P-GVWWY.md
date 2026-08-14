@@ -6,7 +6,9 @@ title: "Let $V$ be a finite-dimensional vector space over a field $k$ and $T:V\\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - linear-algebra
 relations: []
 review: draft
 ---

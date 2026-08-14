@@ -6,7 +6,10 @@ title: 'Given: $G \actson X, \quad |G| < \infty , \quad 1 < |X| < \infty$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - orbit-stabilizer
+  - burnside-s-lemma
 relations: []
 review: draft
 ---

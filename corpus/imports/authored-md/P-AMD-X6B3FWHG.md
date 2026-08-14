@@ -6,7 +6,10 @@ title: "Given: $|G| < \\infty$ Show $\\Phi(G)~\\text{char}~ G$ Show $\\Phi(G)$ i
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - subgroups
+  - p-groups
 relations: []
 review: draft
 ---

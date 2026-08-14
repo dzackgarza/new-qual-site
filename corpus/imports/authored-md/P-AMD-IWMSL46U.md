@@ -6,7 +6,9 @@ title: 'Given: $|G|<\infty, |G| = 0\mod 2$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - groups
 relations: []
 review: draft
 ---

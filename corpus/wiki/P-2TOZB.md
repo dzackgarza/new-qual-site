@@ -6,7 +6,10 @@ title: "Hungerford 4.6.2"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - torsion
+  - integral-domains
 relations: []
 review: draft
 ---

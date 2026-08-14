@@ -6,7 +6,10 @@ title: "(Important) Prove that if $G/Z(G)$ is cyclic then $G$ is abelian."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - abelian-groups
+  - cyclic-groups
 relations: []
 review: draft
 ---

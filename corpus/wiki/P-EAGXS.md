@@ -6,7 +6,10 @@ title: "What is the connection between the structure theorem for modules over\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - canonical-forms
+  - conjugacy
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "What is an example of isomorphic but not equal fields?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - counterexamples
 relations: []
 review: draft
 ---

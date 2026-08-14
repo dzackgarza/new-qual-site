@@ -6,7 +6,9 @@ title: "Consider the simple operator on C given by multiplication by a complex\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - functional-analysis
+  - diagonalization
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "- Identify all of the elements of the Galois group of $x^p-2$ for $p$\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - roots-of-unity
 relations: []
 review: draft
 ---

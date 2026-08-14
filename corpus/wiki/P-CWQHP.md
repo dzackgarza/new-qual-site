@@ -6,7 +6,9 @@ title: "Let $G$ be a finite group and let $P$ be a sylow $p\\dash$subgroup for\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

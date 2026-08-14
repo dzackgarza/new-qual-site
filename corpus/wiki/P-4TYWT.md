@@ -6,7 +6,9 @@ title: "- Show that a group of order $p^2 q^2$ has a normal Sylow subgroup."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

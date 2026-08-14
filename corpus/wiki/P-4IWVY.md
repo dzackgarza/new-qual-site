@@ -6,7 +6,10 @@ title: "Irreducible: Let $a\\in M$ be arbitrary; we can then consider the\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

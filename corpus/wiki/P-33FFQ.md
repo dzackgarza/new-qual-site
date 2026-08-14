@@ -6,7 +6,10 @@ title: "Let $n$ be a positive integer and let $B$ denote the"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Let $R = \CC[x],~ M = \CC^2$, and
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - cyclic-groups
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

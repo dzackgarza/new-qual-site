@@ -6,7 +6,10 @@ title: "We want to show that every simple $R\\dash$module $M$ is cyclic, i.e. \u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
+  - cyclic-groups
 relations: []
 review: draft
 ---

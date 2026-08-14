@@ -6,7 +6,10 @@ title: "- Show that if $K/E/F$ with $K/F$ Galois then $K/E$ is always Galois w\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - field-extensions
 relations: []
 review: draft
 ---

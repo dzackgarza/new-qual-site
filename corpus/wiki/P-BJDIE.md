@@ -6,7 +6,10 @@ title: "- What is the order of $\\GL_n(\\FF_p)$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - finite-fields
+  - bases
 relations: []
 review: draft
 ---

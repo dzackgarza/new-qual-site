@@ -6,7 +6,10 @@ title: "Let $R$ be a ring with the following commutative diagram of $R\\dash$mo\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - homological-algebra
+  - modules
 relations: []
 review: draft
 ---

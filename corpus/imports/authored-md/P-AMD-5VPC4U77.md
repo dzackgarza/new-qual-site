@@ -6,7 +6,9 @@ title: 'Given: $G = H \semidirect_\psi K$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semidirect-products
+  - automorphisms
 relations: []
 review: draft
 ---

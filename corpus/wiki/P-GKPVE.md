@@ -6,7 +6,10 @@ title: "Since $f$ is irreducible of degree $n$ and $u$ is a root of $f$, the \u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - automorphisms
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Given: $|G| = n, G$ cyclic, $\\sigma_i: G \\rightarrow G \\ni x \\mapsto
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - cyclic-groups
+  - number-theory
 relations: []
 review: draft
 ---

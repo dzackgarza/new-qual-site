@@ -6,7 +6,10 @@ title: "How many abelian groups are there of order 36?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - abelian-groups
+  - structure-theorem
 relations: []
 review: draft
 ---

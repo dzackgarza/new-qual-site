@@ -6,7 +6,10 @@ title: 'Given: $K = \langle k \rangle \normal G$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - cyclic-groups
+  - automorphisms
 relations: []
 review: draft
 ---

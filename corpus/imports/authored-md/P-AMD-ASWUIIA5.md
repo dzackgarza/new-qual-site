@@ -6,7 +6,10 @@ title: 'Given: $R$ a commutative ring, $G$ a finite group, $RG$ a group ring.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-rings
+  - conjugacy
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

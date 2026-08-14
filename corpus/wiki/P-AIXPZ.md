@@ -6,7 +6,10 @@ title: "Let $A$ be a square matrix over the complex numbers. Suppose\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - minimal-and-characteristic-polynomials
+  - separability
 relations: []
 review: draft
 ---

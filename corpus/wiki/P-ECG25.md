@@ -6,7 +6,8 @@ title: "- Show that $\\alpha/F$ is algebraic $\\iff F(\\alpha)/F$ is a finite ex
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

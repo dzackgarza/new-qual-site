@@ -6,7 +6,10 @@ title: "What is the Galois group of $x^4 - 2x^2 + 9$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - polynomials
 relations: []
 review: draft
 ---

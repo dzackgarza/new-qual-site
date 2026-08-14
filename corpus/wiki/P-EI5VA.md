@@ -6,7 +6,10 @@ title: "Suppose the group $G$ acts on the set $X$ . Show that the stabilizers\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - conjugacy
+  - burnside-s-lemma
 relations: []
 review: draft
 ---

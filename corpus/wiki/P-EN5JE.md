@@ -6,7 +6,9 @@ title: "- Let $H, K \\leq G$ a finite group, and without using the normalizers\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

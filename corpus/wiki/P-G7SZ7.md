@@ -6,7 +6,10 @@ title: We have the map
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - exact-sequences
+  - homological-algebra
 relations: []
 review: draft
 ---

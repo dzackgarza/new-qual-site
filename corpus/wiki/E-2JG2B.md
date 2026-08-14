@@ -6,7 +6,10 @@ title: 5. What is the companion matrix $M$ of the polynomial $f=x^{2}-x+2$ ov…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations: []
 review: draft
 ---

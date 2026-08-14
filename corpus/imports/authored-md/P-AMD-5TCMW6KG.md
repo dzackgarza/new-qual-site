@@ -6,7 +6,10 @@ title: 'Given: $R$ a commutative ring, $R[[x]]$ its formal power series'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - local-rings
+  - maximal-ideals
 relations: []
 review: draft
 ---

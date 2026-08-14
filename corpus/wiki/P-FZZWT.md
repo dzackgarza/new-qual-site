@@ -6,7 +6,10 @@ title: "Do you know what a group representation is?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - character-theory
+  - trace
 relations: []
 review: draft
 ---

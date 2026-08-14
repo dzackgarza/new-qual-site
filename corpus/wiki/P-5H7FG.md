@@ -6,7 +6,10 @@ title: "Exhibit the rational and Jordan canonical forms for the following mat\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - jordan-canonical-form
+  - matrices
 relations: []
 review: draft
 ---

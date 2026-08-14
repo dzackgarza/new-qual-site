@@ -6,7 +6,9 @@ title: 'Show: $Q_8 \cong \langle a,b \mid a^2 = b^2, a^{-1}ba = b^{-1}\rangle$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-presentations
+  - groups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "This is true. By the Galois correspondence, it suffices to show that \u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - field-extensions
 relations: []
 review: draft
 ---

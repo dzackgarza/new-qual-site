@@ -6,7 +6,10 @@ title: "By part 1, $(\\hom_{R\\dash\\text{mod}}(A, A), +)$ is an abelian group, 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - rings
+  - homomorphisms
 relations: []
 review: draft
 ---

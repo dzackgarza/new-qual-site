@@ -6,7 +6,10 @@ title: "Hungerford 5.8.9"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - number-theory
 relations: []
 review: draft
 ---

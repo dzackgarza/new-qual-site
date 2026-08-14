@@ -6,7 +6,9 @@ title: 'Given: $G=H_1 \cup H_2 \cup H_3, G$ finite'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

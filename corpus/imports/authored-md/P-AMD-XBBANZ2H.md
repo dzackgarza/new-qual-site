@@ -6,7 +6,9 @@ title: 'Show: $N_G(N_G(P)) = N_G(P)$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

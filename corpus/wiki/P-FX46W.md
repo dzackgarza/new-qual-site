@@ -6,7 +6,10 @@ title: "Define \u201crepresentation\u201d of a group."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - semisimplicity
+  - inner-product-spaces
 relations: []
 review: draft
 ---

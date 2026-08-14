@@ -6,7 +6,10 @@ title: 5. If $F$ is over $E$, and $E$ is $\quad$ over $K$ is $F$ necessarily…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - separability
+  - splitting-fields
 relations: []
 review: draft
 ---

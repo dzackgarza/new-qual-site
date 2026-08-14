@@ -6,7 +6,10 @@ title: "What are the representations of $S_3$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - character-theory
+  - permutations
 relations: []
 review: draft
 ---

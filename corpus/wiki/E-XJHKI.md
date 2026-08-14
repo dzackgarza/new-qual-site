@@ -6,7 +6,10 @@ title: 23. Suppose that a field $K$ with characteristic not equal to 2 contai…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - fields
+  - characteristic
 relations: []
 review: draft
 ---

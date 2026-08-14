@@ -6,7 +6,10 @@ title: 'Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in…'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - torsion
+  - cyclic-groups
 relations: []
 review: draft
 ---

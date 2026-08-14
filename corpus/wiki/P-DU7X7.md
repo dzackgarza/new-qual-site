@@ -6,7 +6,9 @@ title: "What's Hilbert's theorem 90?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - cyclic-groups
 relations: []
 review: draft
 ---

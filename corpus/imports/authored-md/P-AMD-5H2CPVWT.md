@@ -6,7 +6,10 @@ title: 'Given: $H \normal G, K \normal G,H \intersect K = e$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - commutators
+  - direct-products
 relations: []
 review: draft
 ---

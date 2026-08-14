@@ -6,7 +6,10 @@ title: 'Given: $[H : G]= n < \infty$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - group-actions
+  - simple-groups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $N$ be a positive integer, and let $G$ be a finite group of\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-actions
+  - simple-groups
 relations: []
 review: draft
 ---

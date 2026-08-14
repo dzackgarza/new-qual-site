@@ -6,7 +6,10 @@ title: "Why is $(x^p - 1)/(x - 1)$ irreducible over $\\QQ$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - irreducibility-criteria
+  - roots-of-unity
+  - polynomials
 relations: []
 review: draft
 ---

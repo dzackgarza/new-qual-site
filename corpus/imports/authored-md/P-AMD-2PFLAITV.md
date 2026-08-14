@@ -6,7 +6,10 @@ title: 'Show: $|G| < 60 \implies G$ is not simple.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - simple-groups
+  - sylow-theory
+  - classification
 relations: []
 review: draft
 ---

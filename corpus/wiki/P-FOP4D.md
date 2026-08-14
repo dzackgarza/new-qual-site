@@ -6,7 +6,10 @@ title: "Is a square matrix always similar to its transpose?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - canonical-forms
+  - matrices
+  - rational-canonical-form
 relations: []
 review: draft
 ---

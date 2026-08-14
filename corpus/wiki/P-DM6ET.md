@@ -6,7 +6,10 @@ title: "Let $A$ be an $n\\times n$ matrix over a field $F$ such"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Consider $\\SL_2(R)$ acting on $\\RR^2$ by matrix multiplication."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - matrix-groups
+  - orbit-stabilizer
 relations: []
 review: draft
 ---

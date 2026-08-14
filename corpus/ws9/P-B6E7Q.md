@@ -6,7 +6,10 @@ title: Let $G$ be a finite group. Adopt the usual notation for the character…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
+  - conjugacy
 relations: []
 review: draft
 ---

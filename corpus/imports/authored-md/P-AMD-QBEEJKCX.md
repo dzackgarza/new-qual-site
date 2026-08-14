@@ -6,7 +6,10 @@ title: The nilradical is the intersection of all prime ideals, i.e.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - prime-ideals
+  - ideals
 relations: []
 review: draft
 ---

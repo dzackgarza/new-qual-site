@@ -6,7 +6,10 @@ title: "Let $E/F$ be a Galois field extension, and let $K/F$ be"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - field-extensions
 relations: []
 review: draft
 ---

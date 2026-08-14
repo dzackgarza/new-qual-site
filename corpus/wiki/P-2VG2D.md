@@ -6,7 +6,10 @@ title: "Prove that the integers form a PID."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - euclidean-domains
+  - ideals
 relations: []
 review: draft
 ---

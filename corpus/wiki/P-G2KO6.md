@@ -6,7 +6,10 @@ title: "State the Chinese remainder theorem in any form you like."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - chinese-remainder-theorem
+  - ideals
+  - number-theory
 relations: []
 review: draft
 ---

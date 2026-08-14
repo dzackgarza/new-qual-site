@@ -6,7 +6,10 @@ title: "Let $A=\\left(\\begin{array}{ccc} -3 & 3 & -2 \\\\ -7 & 6 & -3 \\\\ 1 & 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

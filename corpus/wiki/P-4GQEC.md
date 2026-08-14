@@ -6,7 +6,10 @@ title: "Explain how the structure theorem for finitely-generated modules over\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - rational-canonical-form
+  - modules
 relations: []
 review: draft
 ---

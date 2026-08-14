@@ -6,7 +6,10 @@ title: "Hungerford 5.1.16"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - vector-spaces
+  - fields
 relations: []
 review: draft
 ---

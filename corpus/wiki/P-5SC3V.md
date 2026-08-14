@@ -6,7 +6,10 @@ title: "Do you know a PID that's not Euclidean?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - euclidean-domains
+  - counterexamples
 relations: []
 review: draft
 ---

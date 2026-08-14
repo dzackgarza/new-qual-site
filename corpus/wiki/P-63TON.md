@@ -6,7 +6,10 @@ title: "Let $R$ be an integral domain with quotient field $F$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - polynomials
+  - integral-domains
 relations: []
 review: draft
 ---

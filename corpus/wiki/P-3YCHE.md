@@ -6,7 +6,10 @@ title: "Let $f(x) = x^4-2 \\in \\QQ[x]$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

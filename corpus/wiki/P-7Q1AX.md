@@ -6,7 +6,10 @@ title: "Lemma: If $x \\divides n$ and $x\\divides m$ then $x\\divides \\gcd(m, n
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cyclic-groups
+  - isomorphism-theorems
+  - number-theory
 relations: []
 review: draft
 ---

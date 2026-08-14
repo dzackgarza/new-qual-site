@@ -6,7 +6,9 @@ title: "- Let $H\\leq G$ be a subgroup and $N\\normal G$ be a normal subgroup."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
+  - normal-subgroups
 relations: []
 review: draft
 ---

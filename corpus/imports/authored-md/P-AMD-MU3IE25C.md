@@ -6,7 +6,9 @@ title: 'Given: $H_1, H_2, H_3 \leq G, G = H_1 \cup H_2$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

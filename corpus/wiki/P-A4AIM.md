@@ -6,7 +6,10 @@ title: "Let $k$ be a field and let the group $G = \\GL(m, k) \\cross \\GL(n, k)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - matrices
+  - canonical-forms
 relations: []
 review: draft
 ---

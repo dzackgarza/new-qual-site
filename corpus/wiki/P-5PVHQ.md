@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring and $M$ an $R-$module."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - modules
+  - integral-domains
 relations: []
 review: draft
 ---

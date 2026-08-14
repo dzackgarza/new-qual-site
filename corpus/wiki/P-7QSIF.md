@@ -6,7 +6,10 @@ title: "Hungerford 2.5.6"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - p-groups
 relations: []
 review: draft
 ---

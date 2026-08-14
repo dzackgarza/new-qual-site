@@ -6,7 +6,10 @@ title: "Do polynomials in several variables form a PID?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - principal-ideal-domains
+  - polynomials
+  - ideals
 relations: []
 review: draft
 ---

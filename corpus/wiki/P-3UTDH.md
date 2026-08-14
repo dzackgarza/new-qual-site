@@ -6,7 +6,10 @@ title: "Let $E\\subset \\CC$ denote the splitting field over $\\QQ$ of the polyn
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

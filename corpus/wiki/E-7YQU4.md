@@ -6,7 +6,9 @@ title: 11. Prove that a finite field cannot be algebraically closed.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - fields
 relations: []
 review: draft
 ---

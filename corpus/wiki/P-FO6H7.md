@@ -6,7 +6,10 @@ title: "Let $F$ be a field and $V$ a finite dimensional $F\\dash$vector space,\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---

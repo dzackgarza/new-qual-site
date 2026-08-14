@@ -6,7 +6,10 @@ title: "Hungerford 7.4.8)."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - jordan-canonical-form
+  - structure-theorem
 relations: []
 review: draft
 ---

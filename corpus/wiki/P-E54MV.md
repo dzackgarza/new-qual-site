@@ -6,7 +6,10 @@ title: "Writing $f(x) = x^3 - 3x - 3 = \\sum a_i x_i \\in \\QQ[x]$, we can concl
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - irreducibility-criteria
+  - permutations
 relations: []
 review: draft
 ---

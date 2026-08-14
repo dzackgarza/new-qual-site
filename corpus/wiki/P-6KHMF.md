@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring. Define a maximal ideal and prove\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - prime-ideals
+  - modules
 relations: []
 review: draft
 ---

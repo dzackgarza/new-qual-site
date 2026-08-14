@@ -6,7 +6,10 @@ title: "Prove that a subgroup of index two is normal."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

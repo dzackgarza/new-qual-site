@@ -6,7 +6,10 @@ title: "What are the characteristic and minimal polynomial of the Frobenius au\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - minimal-and-characteristic-polynomials
+  - galois-theory
 relations: []
 review: draft
 ---

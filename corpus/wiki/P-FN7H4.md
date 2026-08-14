@@ -6,7 +6,10 @@ title: "What is the Galois group of $x^2 - 2$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - irreducibility-criteria
+  - splitting-fields
 relations: []
 review: draft
 ---

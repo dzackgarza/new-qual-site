@@ -6,7 +6,9 @@ title: "Let $K = \\QQ[\\sqrt 2 + \\sqrt 5]$. Find $[K: \\QQ]$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

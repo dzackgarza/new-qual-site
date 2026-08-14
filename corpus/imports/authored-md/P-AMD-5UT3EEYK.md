@@ -6,7 +6,10 @@ title: 'Show: TFAE; $\text{clos}(H)$ satisfies:'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - conjugacy
+  - subgroups
 relations: []
 review: draft
 ---

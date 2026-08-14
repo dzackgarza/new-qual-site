@@ -6,7 +6,10 @@ title: Work over an algebraically closed field $F$ of characteristic zero.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - geometry
+  - commutative-algebra
+  - maximal-ideals
 relations: []
 review: draft
 ---

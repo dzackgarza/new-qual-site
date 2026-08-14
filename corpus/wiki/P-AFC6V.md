@@ -6,7 +6,10 @@ title: "Let $G$ be a group of order 96."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - p-groups
 relations: []
 review: draft
 ---

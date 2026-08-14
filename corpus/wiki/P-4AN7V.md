@@ -6,7 +6,10 @@ title: "Determine for which integers the ring"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - chinese-remainder-theorem
+  - fields
+  - rings
 relations: []
 review: draft
 ---

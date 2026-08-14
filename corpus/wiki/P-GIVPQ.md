@@ -6,7 +6,10 @@ title: "What is a semisimple algebra?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - algebras
+  - structure-theorem
 relations: []
 review: draft
 ---

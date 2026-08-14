@@ -6,7 +6,9 @@ title: "Hungerford 2.8.9"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - sylow-theory
 relations: []
 review: draft
 ---

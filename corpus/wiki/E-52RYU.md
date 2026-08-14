@@ -6,7 +6,10 @@ title: 10. Let $F$ be the splitting field of $f \in K[x]$ over $K$. Prove tha…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - field-extensions
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

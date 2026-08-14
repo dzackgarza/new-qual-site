@@ -6,7 +6,10 @@ title: "What's Cayley's theorem?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - permutations
+  - subgroups
 relations: []
 review: draft
 ---

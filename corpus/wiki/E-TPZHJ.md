@@ -6,7 +6,10 @@ title: 1. For a division ring $D$, let $V_{i}$ be a finite dimensional vector…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - vector-spaces
+  - rank-and-nullity
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: $|G| < \infty$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - simple-groups
+  - normal-subgroups
+  - direct-products
 relations: []
 review: draft
 ---

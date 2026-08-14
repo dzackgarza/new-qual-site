@@ -6,7 +6,10 @@ title: 15. Consider the polynomial $f=x^{3}-x+1$ in $\boldsymbol{F}_{3}[x]$.…
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - splitting-fields
 relations: []
 review: draft
 ---

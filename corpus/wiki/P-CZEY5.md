@@ -6,7 +6,9 @@ title: Suppose $\phi(n) = 2$. Take a prime factorization of $n$, so we have
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - number-theory
+  - cyclic-groups
 relations: []
 review: draft
 ---

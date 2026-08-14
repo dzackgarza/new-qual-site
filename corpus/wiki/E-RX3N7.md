@@ -6,7 +6,9 @@ title: "For $u=\\sqrt{2+\\sqrt{2}}$, What is the Galois group of $\\boldsymbol{Q
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---
