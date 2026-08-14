@@ -6,7 +6,9 @@ title: 'Identify hypotheses relating compact and closed sets (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

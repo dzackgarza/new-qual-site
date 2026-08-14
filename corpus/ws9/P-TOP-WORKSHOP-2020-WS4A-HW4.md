@@ -6,7 +6,9 @@ title: 'Mayer–Vietoris homology sequence for an open cover'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'An open connected subset of Euclidean space is path connected'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

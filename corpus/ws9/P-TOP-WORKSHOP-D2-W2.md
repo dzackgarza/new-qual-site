@@ -6,7 +6,8 @@ title: 'Path-connected spaces are connected (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

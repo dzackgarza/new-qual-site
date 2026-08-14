@@ -6,7 +6,9 @@ title: 'State the Galois correspondence theorem for universal covers (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

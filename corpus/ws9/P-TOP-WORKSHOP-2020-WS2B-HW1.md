@@ -6,7 +6,9 @@ title: 'Determine retractions and deformation retractions in basic spaces (warm-
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homotopy
 relations: []
 review: draft
 ---

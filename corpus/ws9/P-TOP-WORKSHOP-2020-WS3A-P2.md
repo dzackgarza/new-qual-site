@@ -6,7 +6,9 @@ title: 'A homotopy of the identity forces the represented element to be central'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

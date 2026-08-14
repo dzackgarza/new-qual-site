@@ -6,7 +6,8 @@ title: "$\\Leftarrow$: Main Idea: Projection and inclusion are homotopy inverses
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

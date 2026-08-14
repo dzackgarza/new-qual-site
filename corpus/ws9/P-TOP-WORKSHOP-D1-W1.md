@@ -6,7 +6,9 @@ title: 'A compact subset of a $T_2$ space is closed (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

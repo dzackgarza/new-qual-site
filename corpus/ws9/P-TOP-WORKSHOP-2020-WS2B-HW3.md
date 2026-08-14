@@ -6,7 +6,9 @@ title: 'Construct the mapping cylinder of a constant disk map (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - cell-complexes
 relations: []
 review: draft
 ---

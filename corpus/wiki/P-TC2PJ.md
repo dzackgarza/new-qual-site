@@ -6,7 +6,10 @@ title: "- Show that every compact metrizable space has a countable basis."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - countability
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Construct the radial deformation retraction of punctured Euclidean space
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homotopy
+  - euclidean-spaces
 relations: []
 review: draft
 ---

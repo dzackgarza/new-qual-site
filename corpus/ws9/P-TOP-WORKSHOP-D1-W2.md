@@ -6,7 +6,8 @@ title: 'Compactness warm-up statement with $A\subseteq Y$ (verbatim source wordi
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

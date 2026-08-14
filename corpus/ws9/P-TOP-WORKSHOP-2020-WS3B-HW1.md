@@ -6,7 +6,8 @@ title: 'Find universal covers of a circle and a wedge of circles (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
 relations: []
 review: draft
 ---

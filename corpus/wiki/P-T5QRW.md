@@ -6,7 +6,10 @@ title: "What is the definition of a regular (or Galois) covering\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
+  - fundamental-group
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Show that $\\chi(\\Sigma_g + \\Sigma_h) = \\chi(\\Sigma_g) + \\chi(\\Sig
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations: []
 review: draft
 ---

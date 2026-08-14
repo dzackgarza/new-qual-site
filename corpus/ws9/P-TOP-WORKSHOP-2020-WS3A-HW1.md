@@ -6,7 +6,9 @@ title: 'Construct cell complexes for the sphere and torus (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - surfaces
 relations: []
 review: draft
 ---

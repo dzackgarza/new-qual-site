@@ -6,7 +6,9 @@ title: 'Analyze the topologist’s sine wave (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations: []
 review: draft
 ---

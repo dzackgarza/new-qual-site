@@ -6,7 +6,9 @@ title: 'Separate consecutive separation axioms by examples (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - counterexamples
 relations: []
 review: draft
 ---

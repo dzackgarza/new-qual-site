@@ -6,7 +6,9 @@ title: 'Homotopy is compatible with composition, but cancellation can fail'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - counterexamples
 relations: []
 review: draft
 ---

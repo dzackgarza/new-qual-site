@@ -6,7 +6,9 @@ title: 'Image of a path-connected space under a continuous map (verbatim warm-up
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - continuity
 relations: []
 review: draft
 ---

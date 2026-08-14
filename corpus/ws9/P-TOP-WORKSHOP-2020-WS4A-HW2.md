@@ -6,7 +6,9 @@ title: 'Compute the homology groups of S^1 from a Δ-complex structure'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations: []
 review: draft
 ---

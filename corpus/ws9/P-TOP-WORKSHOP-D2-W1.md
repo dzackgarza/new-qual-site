@@ -6,7 +6,8 @@ title: 'A connected space has only trivial clopen sets (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

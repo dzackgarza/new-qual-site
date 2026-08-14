@@ -6,7 +6,8 @@ title: 'A union of connected subsets with nonempty intersection is connected'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'A Hausdorff quotient without a countable basis'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - hausdorff-spaces
+  - countability
 relations: []
 review: draft
 ---

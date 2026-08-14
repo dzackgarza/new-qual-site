@@ -6,7 +6,9 @@ title: 'A compact subset of a product with the indiscrete two-point space'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
 relations: []
 review: draft
 ---

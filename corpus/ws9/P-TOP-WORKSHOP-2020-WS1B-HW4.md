@@ -6,7 +6,9 @@ title: 'Give distinct topologies on R (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - euclidean-spaces
 relations: []
 review: draft
 ---

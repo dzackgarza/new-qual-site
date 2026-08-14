@@ -6,7 +6,10 @@ title: "Let $X = S^1 \\cross B^2 - L$ where $L$ is two linked solid torii insid\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - manifolds
 relations: []
 review: draft
 ---

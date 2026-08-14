@@ -6,7 +6,8 @@ title: 'Define a topology on a set (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
 relations: []
 review: draft
 ---

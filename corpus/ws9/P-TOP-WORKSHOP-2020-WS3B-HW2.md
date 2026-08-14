@@ -6,7 +6,9 @@ title: 'Describe deck transformations of the displayed universal covers (warm-up
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
 relations: []
 review: draft
 ---

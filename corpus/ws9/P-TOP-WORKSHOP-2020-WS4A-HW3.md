@@ -6,7 +6,8 @@ title: 'Reduced versus non-reduced homology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations: []
 review: draft
 ---

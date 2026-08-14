@@ -6,7 +6,10 @@ title: 'A continuous bijection from compact to Hausdorff is a homeomorphism'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - homeomorphisms
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'State the Seifert–van Kampen theorem (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - van-kampen
+  - fundamental-group
 relations: []
 review: draft
 ---

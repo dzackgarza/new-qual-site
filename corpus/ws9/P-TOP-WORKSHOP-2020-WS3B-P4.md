@@ -6,7 +6,9 @@ title: 'Lift maps between simply connected covering spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
 relations: []
 review: draft
 ---

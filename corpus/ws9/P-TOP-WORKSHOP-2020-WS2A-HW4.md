@@ -6,7 +6,8 @@ title: 'Relate paths to connected components (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'A Δ-complex structure and chain complex for the standard 2-simplex'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations: []
 review: draft
 ---

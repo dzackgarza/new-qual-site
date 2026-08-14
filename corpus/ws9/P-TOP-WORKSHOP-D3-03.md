@@ -6,7 +6,9 @@ title: 'A local closure condition implies regularity'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - closure
 relations: []
 review: draft
 ---

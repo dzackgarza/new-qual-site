@@ -6,7 +6,9 @@ title: 'Construct a topology from a subbasis (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - bases
+  - point-set
 relations: []
 review: draft
 ---

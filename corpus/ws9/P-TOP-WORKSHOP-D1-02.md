@@ -6,7 +6,9 @@ title: 'Cartesian products of locally compact spaces (closure formulation)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
 relations: []
 review: draft
 ---

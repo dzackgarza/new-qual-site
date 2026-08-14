@@ -6,7 +6,9 @@ title: 'A finite intersection of closed sets contained in a prescribed open neig
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - closure
 relations: []
 review: draft
 ---

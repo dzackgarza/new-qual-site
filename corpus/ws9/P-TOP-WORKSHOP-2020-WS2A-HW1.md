@@ -6,7 +6,8 @@ title: 'List the separation properties T0 through T4 (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
 relations: []
 review: draft
 ---

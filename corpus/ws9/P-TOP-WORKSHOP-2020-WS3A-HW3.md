@@ -6,7 +6,9 @@ title: 'Describe the classification of compact boundaryless surfaces (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - surfaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Removing a product of proper subsets from a product of connected spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - product-topology
 relations: []
 review: draft
 ---
