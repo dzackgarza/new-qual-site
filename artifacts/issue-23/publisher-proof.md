@@ -368,9 +368,8 @@ Everything the first run disclaims still holds, and two things are new:
 
 ## Follow-on landings after the second run
 
-Four publisher defects found by other lanes' proofs, landed after the second run
-above. They do not change any of #23's four proofs; they are recorded here
-because they are the same publisher surface.
+Four publisher defects found by other lanes' proofs, landed after the second run above.
+They do not change any of #23's four proofs; they are recorded here because they are the same publisher surface.
 
 | defect | fix | commit |
 | --- | --- | --- |
@@ -379,35 +378,20 @@ because they are the same publisher surface.
 | `\contradiction` rendered as red literal text | `\text{\Lightning}` is marvosym; now U+21AF | `3f84da15` |
 | The on-this-page index flattened a heading's mathematics | the index clones the heading's nodes, so MathJax typesets them | `429fed7f` |
 
-**Panel headings are distinct per guide.** Measured across the whole guide tree
-on the build carrying `965a9e76`: `More from the catalog` appears **0** times.
-**No heading repeats within a page.** Three repeat across *different* guides --
-`Problems: Counterexamples` in `GUIDE-PRELIM/counterexamples`,
-`GUIDE-ALGEBRA/linear-algebra` and `GUIDE-TOPOLOGY/connectedness-and-homotopy`
--- which is one Counterexamples panel per subject and is correct.
-`GUIDE-TOPOLOGY/compactness`, which carried five identical headings, now reads
-Definitions: Compactness, Problems: Compactness, Exercises: Compactness,
-Problems: Tube Lemma, Problems: Paracompactness, and its on-this-page index
-lists all five.
+**Panel headings are distinct per guide.** Measured across the whole guide tree on the build carrying `965a9e76`: `More from the catalog` appears **0** times.
+**No heading repeats within a page.** Three repeat across *different* guides -- `Problems: Counterexamples` in `GUIDE-PRELIM/counterexamples`, `GUIDE-ALGEBRA/linear-algebra` and `GUIDE-TOPOLOGY/connectedness-and-homotopy` -- which is one Counterexamples panel per subject and is correct.
+`GUIDE-TOPOLOGY/compactness`, which carried five identical headings, now reads Definitions: Compactness, Problems: Compactness, Exercises: Compactness, Problems: Tube Lemma, Problems: Paracompactness, and its on-this-page index lists all five.
 
-**Citations: 21 of 21 link**, and the validator on that build reports 5,824
-pages, 82,790 local references, zero missing targets and zero missing fragments.
+**Citations: 21 of 21 link**, and the validator on that build reports 5,824 pages, 82,790 local references, zero missing targets and zero missing fragments.
 
 ### The undefined-macro census, and what it refutes
 
-`artifacts/issue-23/undefined-macro-census` measures the class `mjx-merror`
-cannot see: `noundefined` renders an unknown control sequence as red literal
-text and raises no error, so colour is the only signal, and it exists only after
-MathJax runs. The script waits on `MathJax.startup.promise` before reading.
+`artifacts/issue-23/undefined-macro-census` measures the class `mjx-merror` cannot see: `noundefined` renders an unknown control sequence as red literal text and raises no error, so colour is the only signal, and it exists only after MathJax runs.
+The script waits on `MathJax.startup.promise` before reading.
 
-Over 71 routes -- every wiki root page, 20 guide routes, 40 tag pages -- it finds
-**one** macro: `\contradiction`. **11 of the 71 never settled inside the
-20-second budget**, so this is a lower bound over a sample and not a site-wide
-census.
+Over 71 routes -- every wiki root page, 20 guide routes, 40 tag pages -- it finds **one** macro: `\contradiction`. **11 of the 71 never settled inside the 20-second budget**, so this is a lower bound over a sample and not a site-wide census.
 
-**`\da` and `\definedas` are not in this class.** They expand to `\coloneqq`,
-which MathJax does implement. Probed directly: `\da` and `\coloneqq` both
-typeset as `:=` with zero red elements, against a deliberately undefined control
-that painted five. The three built pages that use them --
-`tag/D-R4H6F`, `tag/P-VGN3T`, `tag/E-TK5YY` -- render `:=` with zero red. They
-were reported as a defect and are not one.
+**`\da` and `\definedas` are not in this class.** They expand to `\coloneqq`, which MathJax does implement.
+Probed directly: `\da` and `\coloneqq` both typeset as `:=` with zero red elements, against a deliberately undefined control that painted five.
+The three built pages that use them -- `tag/D-R4H6F`, `tag/P-VGN3T`, `tag/E-TK5YY` -- render `:=` with zero red.
+They were reported as a defect and are not one.
