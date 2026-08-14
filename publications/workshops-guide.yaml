@@ -151,3 +151,52 @@ sections:
       - ref: P-ZQBPZ
       - ref: P-WHXWM
       - ref: P-TC2PJ
+  - slug: real-analysis-sittings
+    title: Real Analysis Workshop Sittings
+    parent: real-analysis
+    lede: >-
+      The seven days of the Real Analysis workshop, extracted from the worksheets rather
+      than from the wiki week pages above, and the reason this branch is not just those
+      pages: each day is a sitting card whose route lists that day's problems in the order
+      they were set, with every problem linking to its canonical card in the Real Analysis
+      branch. The run is Day 2 through Day 8; there is no Day 1 among the extracted
+      worksheets. Metric spaces and topology come first because the rest of the subject is
+      stated in their language, then sequences and series, then the three calculus days,
+      then sequences and series of functions, where uniform convergence separates what the
+      earlier days could assume.
+    items:
+      - ref: SRC-RA-WORKSHOP-D2-METRIC
+      - ref: SRC-RA-WORKSHOP-D3-SEQUENCES
+      - ref: SRC-RA-WORKSHOP-D4-CONTINUITY
+      - ref: SRC-RA-WORKSHOP-D5-DIFFERENTIAL
+      - ref: SRC-RA-WORKSHOP-D6-INTEGRAL
+      - ref: SRC-RA-WORKSHOP-D7-SEQUENCES
+      - ref: SRC-RA-WORKSHOP-D8-MISC
+  - slug: topology-sittings
+    title: Topology Workshop Sittings
+    parent: topology
+    lede: >-
+      Fifteen Topology sittings, in two runs that cover the subject twice at different
+      depths. The numbered days follow the Topology branch's own order -- compactness,
+      connectedness, separation axioms, counterexamples, then fundamental groups, covering
+      spaces and homology -- with no Day 5 or Day 6 among the extracted worksheets. The
+      eight worksheets of the May 2020 workshop run the same ground again in one week,
+      pairing a warm-up sheet with a problem sheet at each stage. Each sitting's route
+      lists its problems in the order they were set and links each to its canonical card in
+      the Topology branch.
+    items:
+      - ref: SRC-TOP-WORKSHOP-D1-COMPACT
+      - ref: SRC-TOP-WORKSHOP-D2-CONNECTED
+      - ref: SRC-TOP-WORKSHOP-D3-SEPARATION
+      - ref: SRC-TOP-WORKSHOP-D4-COUNTEREXAMPLES
+      - ref: SRC-TOP-WORKSHOP-D7-GROUPS
+      - ref: SRC-TOP-WORKSHOP-D8-COVERING
+      - ref: SRC-TOP-WORKSHOP-D9-HOMOLOGY
+      - ref: SRC-TOP-WORKSHOP-2020-WS1A
+      - ref: SRC-TOP-WORKSHOP-2020-WS1B
+      - ref: SRC-TOP-WORKSHOP-2020-WS2A
+      - ref: SRC-TOP-WORKSHOP-2020-WS2B
+      - ref: SRC-TOP-WORKSHOP-2020-WS3A
+      - ref: SRC-TOP-WORKSHOP-2020-WS3B
+      - ref: SRC-TOP-WORKSHOP-2020-WS4A
+      - ref: SRC-TOP-WORKSHOP-2020-WS5
