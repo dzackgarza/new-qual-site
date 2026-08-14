@@ -16,9 +16,7 @@ review: draft
 Show that any continuous map $f : \RP^2 \to S^1 \times S^1$ is necessarily null-homotopic.
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - Two techniques: 
   - Show $f_* = 0$ 
   - Lift to a contractible universal cover.

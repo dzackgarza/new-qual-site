@@ -17,9 +17,7 @@ Prove Liouville's theorem: suppose $f:\CC\to\CC$ is entire and bounded.
 Use Cauchy's formula to prove that $f'\equiv 0$ and hence $f$ is constant.
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 
 :::
 - Suffices to prove $f' = 0$ because $\CC$ is connected (see Stein Ch 1, 3.4)

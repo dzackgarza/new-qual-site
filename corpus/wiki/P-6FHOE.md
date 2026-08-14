@@ -26,9 +26,7 @@ b. Compute
 \]
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - ?
 :::
 

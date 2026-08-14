@@ -16,9 +16,7 @@ review: draft
 Prove that, for $n \geq 2$, every continuous map $f: \RP^n \to S^1$ is null-homotopic.
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 
 :::
 - Any continuous map $\RP^n \mapsvia{f} S^1$ induces a group morphism $\pi_1\RP^n \mapsvia{f_*} \pi_1S^1$

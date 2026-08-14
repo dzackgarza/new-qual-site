@@ -17,9 +17,7 @@ review: draft
 Prove the Fundamental Theorem of Algebra (using complex analysis).
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 
 :::
 - Strategy: By contradiction with Liouville's Theorem

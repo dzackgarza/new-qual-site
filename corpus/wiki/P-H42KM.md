@@ -23,9 +23,7 @@ C_f \definedas \qty{X\cross I} \disjoint Y/\sim \\
 Let $\phi_k: S^1\to S^1$ be a $k\dash$fold covering and find $\pi_1\qty{C_f}$.
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 
 :::
 Let $f: S^1 \mapsvia{\times k} S^1$.

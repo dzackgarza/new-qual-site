@@ -33,9 +33,7 @@ converges uniformly on $[0, 1]$ to a continuous function $g$ such that $g = f$ a
 > Hint: One approach is to argue that if $f\in L^1([0, 1])$ with $\theset{\hat f (n)} \in \ell^1(\ZZ)$ then $f\in L^2([0, 1])$.
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - For $e_n(x) \definedas e^{2\pi i n x}$, the set $\theset{e_n}$ is an orthonormal basis for $L^2([0, 1])$.
 - For any orthonormal sequence in a Hilbert space, we have Bessel's inequality:
   \[

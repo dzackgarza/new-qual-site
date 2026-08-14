@@ -19,9 +19,7 @@ e^{1\over z} \hspace{8em} \cos \qty{1\over z}
 .\]
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 
 :::
 Let $f(z) = {z+1\over z(z-1)}$.

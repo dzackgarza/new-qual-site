@@ -28,9 +28,7 @@ Prove that $f$ can not be analytic at *every* point of $S^1$.
 Missing part (c)
 :::
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 
 :::
 

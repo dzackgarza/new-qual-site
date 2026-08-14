@@ -23,9 +23,7 @@ F'(t)=-\int _{-\infty}^{\infty} x f(x) \sin (x t) dx
 .\]
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - Mean Value Theorem
 - DCT
 :::

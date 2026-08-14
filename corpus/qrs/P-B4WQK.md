@@ -20,9 +20,7 @@ Suppose that $f: \CC\to\CC$ is continuous everywhere and analytic on $\CC\setmin
 Something missing?
 :::
 ::: {.solution}
-\hfill
 ::: {.concept}
-\hfill
 :::
 
 - Note $f$ is continuous on $\CC$ since analytic implies continuous ($f$ equals its power series, where the partials sums uniformly converge to it, and uniform limit of continuous is continuous).

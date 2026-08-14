@@ -36,9 +36,7 @@ and prove the following:
 \]
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - ?
 :::
 

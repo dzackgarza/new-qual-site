@@ -21,9 +21,7 @@ to $S^1 \vee S^1$?
 If there is, give an example; if not, give a proof.
 
 ::: {.solution}
-\hfill
 ::: {.concept}
-\hfill
 :::
 Yes,
 

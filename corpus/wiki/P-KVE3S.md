@@ -19,7 +19,6 @@ Show that the space $C^1([a, b])$ is a Banach space when equipped with the norm
 \]
 
 :::{.concept}
-\hfill
 - See 
 <https://math.stackexchange.com/questions/507263/prove-that-c1a-b-with-the-c1-norm-is-a-banach-space/>
 :::

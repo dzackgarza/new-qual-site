@@ -16,9 +16,7 @@ review: draft
 Find all three-fold covers of the wedge of two copies of $\RP^2$ . Justify your answer.
 
 ::: {.solution}
-\hfill
 ::: {.concept}
-\hfill
 :::
 Note $\pi_1 \RP^2 = \ZZ/2\ZZ$, so $\pi_1 X = (\ZZ/2\ZZ)^2$.
 

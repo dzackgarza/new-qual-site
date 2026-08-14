@@ -18,9 +18,7 @@ Compute the following limit and justify your calculations:
 \]
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - ?
 :::
 

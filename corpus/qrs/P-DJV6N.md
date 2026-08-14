@@ -19,9 +19,7 @@ f(z) \definedas z^3 + 3z^2 + bz + b^2
 .\]
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 Multiple versions of Rouches theorem!
 :::
 

@@ -13,7 +13,6 @@ review: draft
 ---
 
 ::: problem
-\hfill
 
 - Let $R$ be a commutative ring with no nonzero nilpotent elements.
   Show that the only units in the polynomial ring $R[x]$ are the units of $R$, regarded as constant polynomials.

@@ -19,7 +19,6 @@ Every $a\in R$ for a finite ring is either a unit or a zero divisor.
 :::
 
 ::: {.solution}
-\hfill
 
 - Let $a\in R$ and define $\phi(x) = ax$.
 

@@ -22,9 +22,7 @@ for all $x \neq 0$ and positive integers $n$.
 > Hint: Consider $\displaystyle\int_0^1 \cos(tx) dt$
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - DCT
 - Bounding in the right place. 
   Don't evaluate the actual integral!

@@ -46,7 +46,6 @@ ii. Argue that the $g$ obtained above must in fact belong to $L^∞([0, 1])$ and
 - **Lemma**:  $m(X) < \infty \implies L^p(X) \subset L^2(X)$.
 
   :::{.proof}
-  \hfill
   - Write Holder's inequality as $\norm{fg}_1 \leq \norm{f}_a \norm{g}_b$ where $\frac 1 a + \frac 1 b = 1$, then
   \[
   \norm{f}_p^p = \norm{\abs f^p}_1 \leq \norm{\abs f^p}_a ~\norm{1}_b

@@ -20,9 +20,7 @@ Show that
 \]
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - $C_c^\infty \injects L^p$ is dense.
 - If $f$...?
 :::

@@ -15,7 +15,6 @@ review: draft
 ---
 
 ::: {.solution}
-\hfill
 
 - Let $a\in R$ and define $\phi(x) = ax$.
 

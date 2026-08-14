@@ -19,9 +19,7 @@ f(z) = z^7 - 4z^3 - 1
 .\]
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 
 :::
 - Set $h(z) = -4z^3$ and $g(z) = z^7 - 1$, then on $\abs{z} = 1$,

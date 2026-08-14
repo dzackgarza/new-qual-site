@@ -22,9 +22,7 @@ Suppose that
 Show that $\int f_{n} \rightarrow \int f$.
 
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 - $\int \abs{f_n - f} \to \iff \int f_n = \int f$.
 - Fatou:
 \[

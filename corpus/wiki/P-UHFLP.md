@@ -25,7 +25,6 @@ Shouldn't this be a supremum? The max may not exist?
 :::
 
 :::{.solution}
-\hfill
 
 Let $\theset{f_k}$ be a Cauchy sequence, so $\norm{f_k} < \infty$ for all $k$.
 Then for a fixed $x$, the sequence $f_k(x)$ is Cauchy in $\RR$ and thus converges to some $f(x)$, so define $f$ by $f(x) \definedas \lim_{k\to\infty} f_k(x)$.

@@ -35,9 +35,7 @@ Prove that $p$ is a homeomorphism.
 Not done?
 :::
 :::{.solution}
-\hfill
 :::{.concept}
-\hfill
 
 :::
 
