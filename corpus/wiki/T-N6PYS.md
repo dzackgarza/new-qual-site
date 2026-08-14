@@ -6,7 +6,11 @@ title: "Maps from compact to Hausdorff spaces, Lee A.52"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - quotient-spaces
+  - homeomorphisms
 relations: []
 review: draft
 ---

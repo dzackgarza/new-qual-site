@@ -6,7 +6,9 @@ title: "Homology commutes with wedge products"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

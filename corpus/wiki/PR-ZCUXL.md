@@ -6,7 +6,11 @@ title: "The continuous image of a..."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - compactness
+  - connectedness
+  - density
 relations: []
 review: draft
 ---

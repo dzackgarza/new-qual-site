@@ -6,7 +6,8 @@ title: "- Show that $X$ is connected iff the only subsets of $X$ which are bot\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Classification of Surfaces"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - surfaces
+  - euler-characteristic
 relations: []
 review: draft
 ---

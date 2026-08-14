@@ -6,7 +6,9 @@ title: "Freudenthal Suspension"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - cell-complexes
 relations: []
 review: draft
 ---

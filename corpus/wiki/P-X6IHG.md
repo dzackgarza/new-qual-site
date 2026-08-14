@@ -6,7 +6,10 @@ title: "Use the Lefschetz fixed point theorem to show that any degree-one map\u2
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - degree
+  - counterexamples
 relations: []
 review: draft
 ---

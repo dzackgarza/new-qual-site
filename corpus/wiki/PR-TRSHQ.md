@@ -6,7 +6,10 @@ title: "Showing one space can not cover another"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - surfaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Decomposing $\\RP^2$"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - quotient-spaces
 relations: []
 review: draft
 ---

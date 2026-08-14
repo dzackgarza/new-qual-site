@@ -6,7 +6,9 @@ title: "Totally bounded if and only if Cauchy subsequences exist"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
 relations: []
 review: draft
 ---

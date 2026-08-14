@@ -6,7 +6,9 @@ title: "Points are closed in $T_1$ spaces."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - point-set
 relations: []
 review: draft
 ---

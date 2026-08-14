@@ -6,7 +6,9 @@ title: "Application: isomorphisms in the homology of spheres"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homology
 relations: []
 review: draft
 ---

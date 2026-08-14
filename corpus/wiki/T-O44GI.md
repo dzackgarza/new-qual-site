@@ -6,7 +6,10 @@ title: "When actions yield covering maps onto their quotients, Hatcher 1.40"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
+  - fundamental-group
 relations: []
 review: draft
 ---

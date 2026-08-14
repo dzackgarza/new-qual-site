@@ -6,7 +6,8 @@ title: "Topology is discrete if and only if points are open"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
 relations: []
 review: draft
 ---

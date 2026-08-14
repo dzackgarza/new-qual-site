@@ -6,7 +6,9 @@ title: 'Urysohn''s Lemma'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - continuity
 relations: []
 review: draft
 ---

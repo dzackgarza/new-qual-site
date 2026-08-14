@@ -6,7 +6,9 @@ title: 'Are singletons open or closed?'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - point-set
 relations: []
 review: draft
 ---

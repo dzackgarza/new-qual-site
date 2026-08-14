@@ -6,7 +6,9 @@ title: "Recall that a topological space is regular if for every\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - countability
 relations: []
 review: draft
 ---

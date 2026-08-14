@@ -6,7 +6,10 @@ title: "Product CW structure"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - product-topology
+  - homology
 relations: []
 review: draft
 ---

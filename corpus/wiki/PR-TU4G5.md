@@ -6,7 +6,9 @@ title: "Known Euler characteristics"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - manifolds
 relations: []
 review: draft
 ---

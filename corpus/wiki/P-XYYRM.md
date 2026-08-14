@@ -6,7 +6,10 @@ title: "Facts used: Every homeomorphism induces isomorphisms on\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - poincare-duality
+  - cohomology
+  - manifolds
 relations: []
 review: draft
 ---

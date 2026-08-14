@@ -6,7 +6,9 @@ title: "Borsuk-Ulam"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - degree
 relations: []
 review: draft
 ---

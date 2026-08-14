@@ -6,7 +6,9 @@ title: "Hairy Ball"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - degree
 relations: []
 review: draft
 ---

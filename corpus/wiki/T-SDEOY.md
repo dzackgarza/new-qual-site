@@ -6,7 +6,9 @@ title: "Whitehead's Theorem"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - cell-complexes
 relations: []
 review: draft
 ---

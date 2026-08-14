@@ -6,7 +6,8 @@ title: "Maps into contractible spaces are always nullhomotopic"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Cellular Approximation"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homotopy
 relations: []
 review: draft
 ---

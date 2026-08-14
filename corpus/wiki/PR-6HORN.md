@@ -6,7 +6,10 @@ title: "Homotopy type of knot complements"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - manifolds
+  - homology
 relations: []
 review: draft
 ---

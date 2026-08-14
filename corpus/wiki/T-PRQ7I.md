@@ -6,7 +6,10 @@ title: "Cantor's Nested Intervals Theorem"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Extreme Value Theorem"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

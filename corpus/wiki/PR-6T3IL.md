@@ -6,7 +6,10 @@ title: "Continuous on compact $\\implies$ uniformly continuous"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - uniform-continuity
+  - continuity
 relations: []
 review: draft
 ---

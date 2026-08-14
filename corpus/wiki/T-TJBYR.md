@@ -6,7 +6,9 @@ title: "Continuous image of compact is compact"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "Excision: Todo"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations: []
 review: draft
 ---

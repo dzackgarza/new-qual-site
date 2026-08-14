@@ -6,7 +6,9 @@ title: "Lifting criterion for covers, Hatcher 1.33"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

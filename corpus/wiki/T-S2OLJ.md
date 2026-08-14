@@ -6,7 +6,8 @@ title: "Every $f: B^n \\to B^n$ has a fixed point."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
 relations: []
 review: draft
 ---

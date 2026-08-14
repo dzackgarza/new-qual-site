@@ -6,7 +6,9 @@ title: "Main Idea: A linear homotopy projected onto the sphere\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - degree
 relations: []
 review: draft
 ---

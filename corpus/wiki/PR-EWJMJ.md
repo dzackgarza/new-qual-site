@@ -6,7 +6,8 @@ title: "$\\pi_1$ detects simply-connectedness"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
 relations: []
 review: draft
 ---

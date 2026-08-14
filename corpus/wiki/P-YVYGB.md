@@ -6,7 +6,11 @@ title: "Let $S$ be the closed orientable surface of genus 2 and let $C$ be the\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
+  - surfaces
+  - fundamental-group
 relations: []
 review: draft
 ---

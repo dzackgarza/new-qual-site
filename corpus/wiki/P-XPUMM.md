@@ -6,7 +6,10 @@ title: "Use the circle along which the connected sum is performed and the Maye\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Facts used: Homotopy LES Hurewicz $0\\to A\\to B \\to 0$ exact iff $A\\c
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - homology
 relations: []
 review: draft
 ---

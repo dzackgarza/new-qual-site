@@ -6,7 +6,9 @@ title: "$\\pi_1$ of a wedge"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

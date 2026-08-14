@@ -6,7 +6,10 @@ title: "The rationals are neither open nor closed"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - closure
+  - euclidean-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "If $m, p$ are isomorphisms, $l$ is an surjection, and $q$ is an\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
 relations: []
 review: draft
 ---

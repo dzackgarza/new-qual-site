@@ -6,7 +6,9 @@ title: "Let $A$ and $B$ be circles bounding disjoint disks in the plane $z = 0$ 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
 relations: []
 review: draft
 ---

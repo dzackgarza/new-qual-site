@@ -6,7 +6,9 @@ title: "Closed if and only if compact in compact Hausdorff spaces"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

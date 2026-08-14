@@ -6,7 +6,10 @@ title: "Let $X$ denote the quotient space formed from the sphere $S^2$ by iden\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - quotient-spaces
 relations: []
 review: draft
 ---

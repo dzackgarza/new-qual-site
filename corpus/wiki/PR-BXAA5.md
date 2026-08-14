@@ -6,7 +6,9 @@ title: "General construction for wedge products"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - cell-complexes
 relations: []
 review: draft
 ---

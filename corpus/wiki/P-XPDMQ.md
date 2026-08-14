@@ -6,7 +6,9 @@ title: "Main Idea: Exact same idea as 1, just a more complicated\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - degree
 relations: []
 review: draft
 ---

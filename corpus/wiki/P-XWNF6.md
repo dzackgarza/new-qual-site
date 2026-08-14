@@ -6,7 +6,9 @@ title: "7. Theorem: $\\pi_1(\\bigvee_{i=1}^k S^1) \\cong {\\Large{*}}_{i=1}^n\\Z
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - van-kampen
+  - fundamental-group
 relations: []
 review: draft
 ---

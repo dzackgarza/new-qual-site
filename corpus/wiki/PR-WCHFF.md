@@ -6,7 +6,9 @@ title: "Homology of knot complements in $S^3$"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - manifolds
 relations: []
 review: draft
 ---

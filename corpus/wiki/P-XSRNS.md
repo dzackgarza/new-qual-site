@@ -6,7 +6,9 @@ title: "- Show that if $X = S^2 \\disjoint_{\\id} S^2$ is a pushout along the eq
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations: []
 review: draft
 ---

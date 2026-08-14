@@ -6,7 +6,9 @@ title: "Inclusion-Exclusion"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - mayer-vietoris
 relations: []
 review: draft
 ---

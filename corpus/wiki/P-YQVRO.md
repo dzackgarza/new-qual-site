@@ -6,7 +6,9 @@ title: "Find all homotopy classes of maps from $S^1 \\times \\DD^2$ to itself su
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homotopy
 relations: []
 review: draft
 ---

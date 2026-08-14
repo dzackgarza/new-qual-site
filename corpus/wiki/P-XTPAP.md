@@ -6,7 +6,9 @@ title: "Main Idea: Nothing to it."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - classification
 relations: []
 review: draft
 ---

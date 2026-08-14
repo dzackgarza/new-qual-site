@@ -6,7 +6,9 @@ title: "Hurewicz"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - homology
 relations: []
 review: draft
 ---

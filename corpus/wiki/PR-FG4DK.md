@@ -6,7 +6,10 @@ title: "Killing homotopy"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - cell-complexes
+  - fundamental-group
 relations: []
 review: draft
 ---

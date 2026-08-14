@@ -6,7 +6,9 @@ title: "Homotopy lifting property for covers, Hatcher 1.30"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
 relations: []
 review: draft
 ---

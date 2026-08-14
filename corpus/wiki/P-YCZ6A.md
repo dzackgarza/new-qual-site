@@ -6,7 +6,9 @@ title: "Compute the homology groups of $S^2 \\times S^2$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations: []
 review: draft
 ---

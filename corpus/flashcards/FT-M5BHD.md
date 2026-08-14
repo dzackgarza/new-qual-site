@@ -6,7 +6,10 @@ title: 'Show that a continuous bijection from a compact space to a Hausdorff spa
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - homeomorphisms
 relations: []
 review: draft
 ---

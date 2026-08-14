@@ -6,7 +6,10 @@ title: "Dimension vanishing for homology of manifolds"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - manifolds
+  - homology
+  - cohomology
 relations: []
 review: draft
 ---

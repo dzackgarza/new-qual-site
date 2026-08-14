@@ -6,7 +6,10 @@ title: "Sequentially compact if and only if complete and totally bounded"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

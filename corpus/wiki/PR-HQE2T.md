@@ -6,7 +6,10 @@ title: "Using universal covers"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
+  - fundamental-group
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Covering spaces induce injections on $\\pi_1$, Hatcher 1.31"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

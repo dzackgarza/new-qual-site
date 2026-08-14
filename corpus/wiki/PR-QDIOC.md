@@ -6,7 +6,8 @@ title: "The sequence $A \\mapsvia{f_1} B \\mapsvia{f_2} C$ is exact if and only\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
 relations: []
 review: draft
 ---

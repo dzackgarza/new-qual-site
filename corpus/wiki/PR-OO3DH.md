@@ -6,7 +6,9 @@ title: "$\\pi_1$ of a product, Hatcher 1.12"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - product-topology
 relations: []
 review: draft
 ---

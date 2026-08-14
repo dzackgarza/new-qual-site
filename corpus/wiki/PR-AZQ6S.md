@@ -6,7 +6,10 @@ title: "Relative Poincar\u00e9 Duality for manifolds"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - poincare-duality
+  - manifolds
+  - cohomology
 relations: []
 review: draft
 ---

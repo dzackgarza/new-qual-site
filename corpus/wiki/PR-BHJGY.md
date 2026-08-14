@@ -6,7 +6,9 @@ title: "Number of sheets in a covering space, Hatcher 1.32"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

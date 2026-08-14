@@ -6,7 +6,9 @@ title: "Fundamental theorem of covering spaces, Hatcher 1.39"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

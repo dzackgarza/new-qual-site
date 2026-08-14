@@ -6,7 +6,10 @@ title: "Characterizations of continuous maps, Munkres 18.1"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - closure
+  - point-set
 relations: []
 review: draft
 ---

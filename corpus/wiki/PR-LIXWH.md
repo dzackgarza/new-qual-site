@@ -6,7 +6,9 @@ title: "Decomposing a Klein Bottle"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

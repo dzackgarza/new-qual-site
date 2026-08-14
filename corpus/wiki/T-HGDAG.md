@@ -6,7 +6,10 @@ title: "Baire: If $X$ is a complete metric space, $X$ is a Baire space: the\u202
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - completeness
+  - metric-spaces
+  - density
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Show that a map $S^n \\to S^n$ has a fixed point unless its degree is e\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations: []
 review: draft
 ---

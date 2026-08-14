@@ -6,7 +6,10 @@ title: "The Tube Lemma"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - tube-lemma
+  - compactness
+  - product-topology
 relations: []
 review: draft
 ---

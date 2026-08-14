@@ -6,7 +6,10 @@ title: "- Compute $\\pi_1(X)$ where $X \\definedas S^2/\\sim$, where $x\\sim -x$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - cell-complexes
+  - quotient-spaces
 relations: []
 review: draft
 ---

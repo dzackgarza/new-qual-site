@@ -6,7 +6,8 @@ title: "Closed subset of compact is compact"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

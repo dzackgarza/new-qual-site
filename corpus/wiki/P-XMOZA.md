@@ -6,7 +6,10 @@ title: "Let \\begin{align} X=\\left\\{(x, y) \\in \\mathbb{R}^{2} | x>0, y \\geq
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - subspace-topology
+  - euclidean-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Compact in Hausdorff $\\implies$ closed"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

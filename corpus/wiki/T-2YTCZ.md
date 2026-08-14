@@ -6,7 +6,8 @@ title: "Convex sets admit homotopies"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

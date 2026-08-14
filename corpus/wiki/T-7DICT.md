@@ -6,7 +6,8 @@ title: "Cantor's Intersection Theorem"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

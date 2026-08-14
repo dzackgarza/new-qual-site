@@ -6,7 +6,10 @@ title: "We start with a few known facts."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

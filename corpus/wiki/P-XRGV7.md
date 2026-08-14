@@ -6,7 +6,10 @@ title: "Express a Klein bottle as the union of two annuli."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

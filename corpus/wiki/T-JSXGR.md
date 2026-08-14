@@ -6,7 +6,9 @@ title: "When open maps are homeomorphisms"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - continuity
 relations: []
 review: draft
 ---
