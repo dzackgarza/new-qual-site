@@ -1,15 +1,28 @@
 # Topology subject branch: build proof
 
-Manifest: `publications/topology-guide.yaml`. Built and inspected at `c6fa2be0`.
+Manifest: `publications/topology-guide.yaml`. Built and inspected at `2938781c`.
 
-The captures are of `c6fa2be0`. `286c5cc3` came after them and removed three refs, so the
-captures of `constructions-of-spaces`, `the-fundamental-group` and `covering-spaces` each
-show one card the manifest no longer lists — `D-TNBFZ`, `D-EBNUE` and `T-F4PQY`. Reading
-those three captures is what found the duplication, and the repository was under
-continuous builds from the other subject lanes afterwards, which deleted and rebuilt
-`build/quarto/_site` faster than a second inspection could be taken.
+Built in a private worktree at that revision rather than in the shared checkout, so the
+build tools are committed state and nothing could delete the output mid-inspection:
 
-`uv run qualc build` -> 8,207 cards and 327 wiki pages OK.
+```
+git worktree add <scratchpad>/topo-proof2 2938781c
+uv run qualc build   # exit 0, 8,213 cards and 327 wiki pages OK
+```
+
+`artifacts/issue-17/validate-site` over the whole rendered site:
+
+```
+html_pages: 5809
+html_parse_errors: 0
+local_references: 73992
+missing_local_targets: 0
+missing_fragments: 0
+qmd_links: 0
+```
+
+That is issue #28's "no broken references or assets" answered over every page the build
+emits, not only over this branch's fourteen.
 
 ## What had to happen first
 
@@ -26,7 +39,7 @@ homology, degree, duality — was absent from the registry entirely.
 | left unclassified, listed below | 9 |
 | occurrence cards, taking their canonical's topics | 809 |
 | occurrence cards skipped, canonical unclassified | 5 |
-| source cards, unclassified by corpus-wide convention | 75 |
+| source cards, unclassified by corpus-wide convention | 77 |
 
 Every assignment on the 1,083 was made by reading the card body. Commits `9b8524f6`,
 `f6de61ab`, `65b926c5`, `66d6b5c2`, `afcf05da`, `bb4feba9`, `aac178b2` carry them in
@@ -37,6 +50,16 @@ product-topology 73, van-kampen 58, manifolds 52, retracts 44, degree 42, counta
 mayer-vietoris 39, euler-characteristic 38, separation-axioms 37, homeomorphisms 35,
 cohomology 34, subspace-topology 22, orientation 18, category-theory 17,
 poincare-duality 14, paracompactness 6.
+
+No Topology card carries `analysis`. Six did, all from the MakeMeAQual import, and none
+had it as its only topic; `77eb3e93` drops it and gives four of them the term their
+statement is about. `point-set` is kept on 66 cards: the registry audit found it a real
+division inside the area against the algebraic-topology terms rather than a second name
+for the area.
+
+Every panel limit is 500, above the largest topic. They were the measured count of each
+topic until `2938781c`, which is a number that has to be re-derived whenever any card is
+reclassified, and five had already drifted inside this branch.
 
 ## Routes
 
@@ -150,7 +173,7 @@ absolute and relative forms, Lefschetz duality, Alexander duality, the intersect
 ## Coverage, measured
 
 The branch addresses 1,014 of the 1,135 Topology cards of substantive kind, by 173 refs
-and 59 panels; every panel returns matches, 2,010 hits in total. The 121 it does not
+and 59 panels; every panel returns matches, 2,018 hits in total. The 121 it does not
 address break down as 39 definitions, 34 exercises, 13 propositions, 11 theorems, 11
 facts, 9 problems, 2 corollaries and 2 examples.
 
@@ -185,10 +208,16 @@ facet queries.
 **Not exercised here**: search, the generator, hint and solution disclosure states, and
 any viewport other than 1440 wide.
 
-**The site was not otherwise validated.** `artifacts/issue-17/validate-site` was not run
-over this build; the repository was under concurrent builds from other subject lanes
-throughout, and `build/quarto/_site` was deleted and rebuilt underneath this inspection
-twice.
+**There is no per-branch navigation.** A reader reaches the branch through `/guides.html`
+and moves inside it by the study-path sidebar, the breadcrumb and the previous/next
+links. Whatever per-branch navigation the publisher lane is building is not present at
+`2938781c` and nothing here claims it.
+
+**The sidebar is a tree, the reading order is a list.** The study path nests each section
+under its parent, so its order is the tree's, while the numbered path on the root and the
+previous/next links follow the order of the sections in the manifest. They agree on
+membership and not on sequence, and that is the emitter's design rather than a defect
+this branch introduced.
 
 ## Defects found while reading, not repaired here
 
