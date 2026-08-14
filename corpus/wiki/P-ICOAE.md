@@ -6,7 +6,12 @@ title: "Suppose $a>b>0$ and calculate"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
+  - poles
 relations: []
 review: draft
 ---

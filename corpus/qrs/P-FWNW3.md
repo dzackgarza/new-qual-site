@@ -6,7 +6,10 @@ title: "- Show that any holomorphic function $f$ can be uniformly approximated\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - uniform-convergence
+  - polynomials
 relations: []
 review: draft
 ---

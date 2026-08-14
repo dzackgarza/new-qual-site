@@ -6,7 +6,10 @@ title: "Prove the open mapping theorem for holomorphic functions: If $f$ is a\u2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - argument-principle
+  - zeros
 relations: []
 review: draft
 ---

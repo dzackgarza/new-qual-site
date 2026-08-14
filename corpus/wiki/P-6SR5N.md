@@ -6,7 +6,11 @@ title: "Show $\\int_0^{2\\pi} {1\\over a + \\cos(\\theta)} \\dtheta = {2\\pi \\o
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

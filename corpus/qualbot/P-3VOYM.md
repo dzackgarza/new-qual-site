@@ -6,7 +6,10 @@ title: Let $a > 0$ and calculate
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

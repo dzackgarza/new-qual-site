@@ -6,7 +6,11 @@ title: "Let $\\xi\\in \\RR$, evaluate"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - hyperbolic-functions
 relations: []
 review: draft
 ---

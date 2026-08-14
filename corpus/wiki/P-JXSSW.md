@@ -6,7 +6,12 @@ title: "For the following functions, find the Laurent series about $0$ and cla\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - singularities
+  - essential-singularities
+  - removable-singularities
+  - poles
 relations: []
 review: draft
 ---

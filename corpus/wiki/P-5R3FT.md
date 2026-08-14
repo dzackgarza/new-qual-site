@@ -6,7 +6,10 @@ title: "Let $c\\in \\CC$ with $\\abs{c} < {1\\over 3}$. Show that on the open se
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

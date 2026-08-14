@@ -6,7 +6,10 @@ title: "Let $f$ and $g$ be non-zero analytic functions on a region $\\Omega$.\u2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - open-mapping-theorem
+  - zeros
 relations: []
 review: draft
 ---

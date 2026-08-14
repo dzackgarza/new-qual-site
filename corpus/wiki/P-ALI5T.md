@@ -6,7 +6,9 @@ title: "Assume $f(z)$ is analytic in region $D$ and $\\Gamma$ is a rectifiable\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - maximum-modulus-principle
 relations: []
 review: draft
 ---

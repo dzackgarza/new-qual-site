@@ -6,7 +6,10 @@ title: "Calculate $\\int_0^\\infty {\\cos(x) - \\cos(4x) \\over x^2} \\, dx$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

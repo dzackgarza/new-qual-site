@@ -6,7 +6,10 @@ title: "Find the number of zeros in $\\abs{z} \\in (1, 2)$ of"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

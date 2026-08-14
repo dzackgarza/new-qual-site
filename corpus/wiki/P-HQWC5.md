@@ -6,7 +6,11 @@ title: "For $k=1,2,\\cdots, n$, suppose $\\abs{a_k} < 1$ and $f(z) \\da \\qty{z 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - blaschke-factors
+  - argument-principle
+  - zeros
+  - rouche
 relations: []
 review: draft
 ---

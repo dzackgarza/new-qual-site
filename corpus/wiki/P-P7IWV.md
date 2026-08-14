@@ -6,7 +6,11 @@ title: "Prove that $f(z) = z^4 + 2z^3 -2z + 10$ has exactly one root in each o\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - argument-principle
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

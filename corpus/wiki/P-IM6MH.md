@@ -6,7 +6,9 @@ title: "Invert $2z-1$, one coefficient at a time"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - laurent-series
 relations: []
 review: draft
 ---

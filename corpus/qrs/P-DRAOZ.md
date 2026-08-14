@@ -6,7 +6,10 @@ title: "Let $f$ be differentiable on $[a, b]$. Say that $f$ is uniformly\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
+  - continuity
+  - uniform-continuity
 relations: []
 review: draft
 ---

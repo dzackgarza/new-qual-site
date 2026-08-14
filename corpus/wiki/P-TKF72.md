@@ -6,7 +6,10 @@ title: "Let $0\\leq \\alpha \\leq 2\\pi$ be a fixed angle."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - laurent-series
 relations: []
 review: draft
 ---

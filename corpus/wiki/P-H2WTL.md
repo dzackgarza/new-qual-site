@@ -6,7 +6,10 @@ title: "The question provides some insight into Cauchy's theorem.\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - contour-integration
+  - winding-number
+  - integrals
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "$\\displaystyle \\|f\\|_{(\\infty, s)} = \\text{sup}_{z \\in D_s(z_0)}|f
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - norms
+  - holomorphic-functions
 relations: []
 review: draft
 ---

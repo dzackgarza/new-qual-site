@@ -6,7 +6,9 @@ title: "Use $n$-th roots of unity (i.e. solutions of $z^{n}-1=0$ ) to show tha\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Prove that for every $n\\in \\ZZ^{\\geq 0}$ the following polynomial has
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

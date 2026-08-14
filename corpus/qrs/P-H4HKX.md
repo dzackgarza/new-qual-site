@@ -6,7 +6,9 @@ title: "Assume $f$ is continuous in the region: $0< |z-a| \\leq R, \\; 0 \\leq \
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
 relations: []
 review: draft
 ---

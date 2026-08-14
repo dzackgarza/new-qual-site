@@ -6,7 +6,10 @@ title: "- Show that a uniform limit of continuous functions is continuous."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - continuity
+  - sequences-of-functions
 relations: []
 review: draft
 ---

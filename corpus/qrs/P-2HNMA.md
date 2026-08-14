@@ -6,7 +6,10 @@ title: "(1) Show that the function $u=u(x,y)$ given by"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - pdes
+  - counterexamples
 relations: []
 review: draft
 ---

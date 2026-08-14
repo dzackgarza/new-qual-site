@@ -6,7 +6,10 @@ title: "Unique fixed points"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - rouche
+  - compactness
 relations: []
 review: draft
 ---

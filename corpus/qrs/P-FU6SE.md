@@ -6,7 +6,10 @@ title: "Let $f$ be a continuous function in the region $D=\\{z \\suchthat \\abs{
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - contour-integration
+  - residues
+  - limits
 relations: []
 review: draft
 ---

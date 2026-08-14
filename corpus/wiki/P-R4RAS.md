@@ -6,7 +6,10 @@ title: "Is the following function continuous, differentiable, continuously dif\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---

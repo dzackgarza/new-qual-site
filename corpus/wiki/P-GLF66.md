@@ -6,7 +6,11 @@ title: "Show that if $a,b\\in \\RR$ with $a > \\abs{b}$, then"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

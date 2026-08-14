@@ -6,7 +6,10 @@ title: "Let $\\gamma(t)$ be a piecewise smooth curve in $\\mathbb{C}, t \\in[0,1
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - contour-integration
+  - cauchy-integral-formula
 relations: []
 review: draft
 ---

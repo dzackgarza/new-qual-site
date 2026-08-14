@@ -6,7 +6,10 @@ title: "Prove that for $a> 0$, $z\\tan z - a$ has only real roots."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Prove that $\\max_{\\abs z = 1} \\abs{a_0 + a_1 z + \\cdots + a_{n-1}z^{
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - maximum-modulus-principle
+  - polynomials
 relations: []
 review: draft
 ---

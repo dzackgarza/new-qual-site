@@ -6,7 +6,10 @@ title: "Invert $\\cos(z)$, one coefficient at a tiem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - trigonometry
+  - laurent-series
 relations: []
 review: draft
 ---

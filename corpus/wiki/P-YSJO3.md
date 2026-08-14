@@ -6,7 +6,10 @@ title: "Explicit Rouche, $2\\mathbb{D}$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

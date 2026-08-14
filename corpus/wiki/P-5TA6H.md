@@ -6,7 +6,10 @@ title: "Let $a>0$ and calculate $\\int_0^\\infty {x\\sin(x) \\over x^2 + a^2} \\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

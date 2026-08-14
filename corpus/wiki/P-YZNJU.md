@@ -6,7 +6,9 @@ title: "Use de Moivre's theorem (i.e. $\\left(e^{i \\theta}\\right)^{n}==\\cos n
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - series-of-numbers
 relations: []
 review: draft
 ---

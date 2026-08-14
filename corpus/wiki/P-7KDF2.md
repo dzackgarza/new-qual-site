@@ -6,7 +6,8 @@ title: "Prove that $\\left|z_{1}+z_{2}\\right|^{2}+\\left|z_{1}-z_{2}\\right|^{2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
 relations: []
 review: draft
 ---

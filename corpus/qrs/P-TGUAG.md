@@ -6,7 +6,10 @@ title: "Find the Laurent expansion of $f(z) = {z + 1 \\over z(z-1)}$ about $z=0$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - principal-parts
+  - poles
 relations: []
 review: draft
 ---

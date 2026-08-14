@@ -6,7 +6,10 @@ title: "Show that $P(z) \\da z^4 + 6z + 3$ has 3 zeros in $\\ts{1\\leq \\abs{z} 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

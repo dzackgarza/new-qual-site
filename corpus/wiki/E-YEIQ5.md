@@ -6,7 +6,9 @@ title: Let $f$ be an analytic function on a region $\Omega$. Show that $f$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - maximum-modulus-principle
 relations: []
 review: draft
 ---

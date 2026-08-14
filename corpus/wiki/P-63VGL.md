@@ -6,7 +6,10 @@ title: "Suppose that $f$ is holomorphic on a punctured open set $\\Omega\\setmin
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - morera
+  - contour-integration
 relations: []
 review: draft
 ---

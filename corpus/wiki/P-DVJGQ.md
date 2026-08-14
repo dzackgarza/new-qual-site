@@ -6,7 +6,8 @@ title: "State the most general version of the implicit function theorem for re\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
 relations: []
 review: draft
 ---

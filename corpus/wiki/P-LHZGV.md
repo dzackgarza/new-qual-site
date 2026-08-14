@@ -6,7 +6,9 @@ title: "Log properties can fail"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - complex-logarithm
+  - counterexamples
 relations: []
 review: draft
 ---

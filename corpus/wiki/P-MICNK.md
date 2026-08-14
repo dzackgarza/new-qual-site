@@ -6,7 +6,10 @@ title: "Let $a\\in \\CC$ and $n\\geq 2$."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

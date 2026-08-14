@@ -6,7 +6,9 @@ title: "Show that if $E\\subset [0, 1]$ is uncountable, then there is some $t\\i
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - point-set
+  - counterexamples
 relations: []
 review: draft
 ---

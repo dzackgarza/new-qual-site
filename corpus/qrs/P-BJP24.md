@@ -6,7 +6,9 @@ title: "(Cauchy's formula for \"exterior\" region) Let $\\gamma$ be piecewise"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - contour-integration
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Evaluate $\\displaystyle{ \\int_{0}^{\\infty}\\frac{x\\sin x}{x^2+a^2} \
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

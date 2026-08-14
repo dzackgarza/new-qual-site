@@ -6,7 +6,10 @@ title: "Expand $\\frac{1}{1-z^{2}}+\\frac{1}{z-3}$ in a series of the form $\\su
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
+  - power-series
 relations: []
 review: draft
 ---

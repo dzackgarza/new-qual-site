@@ -6,7 +6,10 @@ title: "Suppose $f\\in C_\\CC^1(\\Omega)$ and $T\\subset \\Omega$ is a triangle 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - green-s-theorem
+  - cauchy-integral-theorem
+  - contour-integration
 relations: []
 review: draft
 ---

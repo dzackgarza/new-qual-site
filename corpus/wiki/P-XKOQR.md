@@ -6,7 +6,11 @@ title: "A holomorphic mapping $f: U \\rightarrow V$ is a local bijection on $U$\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - biholomorphisms
+  - open-mapping-theorem
+  - argument-principle
+  - rouche
 relations: []
 review: draft
 ---

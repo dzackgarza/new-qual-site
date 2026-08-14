@@ -6,7 +6,10 @@ title: "Apply Rouch\u00e9's Theorem to prove the Fundamental Theorem of\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - polynomials
+  - zeros
 relations: []
 review: draft
 ---

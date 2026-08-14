@@ -6,7 +6,10 @@ title: "How many roots does the following polynomial have in the\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Let $f$ be analytic on a region $R$ and suppose $f'(z_0) \\neq 0$ for s\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - argument-principle
+  - zeros
+  - biholomorphisms
 relations: []
 review: draft
 ---

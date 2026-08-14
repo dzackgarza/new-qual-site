@@ -6,7 +6,8 @@ title: "Let $\\Omega$ be a simply connected open set and let $\\gamma$ be a simp
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Explicit Rouch\u00e9, half-plane"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

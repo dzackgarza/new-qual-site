@@ -6,7 +6,10 @@ title: "Let $\\gamma$ be a piecewise smooth simple closed curve with interior\u2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - residues
+  - contour-integration
 relations: []
 review: draft
 ---

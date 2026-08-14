@@ -6,7 +6,10 @@ title: "Show that $\\int_0^{\\infty} {\\cos(x) \\over x^2 + b^2}\\dx = {\\pi e^{
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

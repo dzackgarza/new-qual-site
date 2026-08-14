@@ -6,7 +6,8 @@ title: "Prove the following inequality, and explain when equality\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
 relations: []
 review: draft
 ---

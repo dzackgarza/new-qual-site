@@ -6,7 +6,10 @@ title: "Prove that all the roots of the complex polynomial $z^7 - 5 z^3 +12 =0$ 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

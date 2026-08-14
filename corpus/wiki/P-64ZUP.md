@@ -6,7 +6,9 @@ title: "Find a conformal map from $D = \\{z :\\ |z| < 1,\\ |z - 1/2| > 1/2\\}$ t
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - fractional-linear-transformations
 relations: []
 review: draft
 ---

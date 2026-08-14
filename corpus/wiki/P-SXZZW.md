@@ -6,7 +6,11 @@ title: "Compute $\\int_{\\abs z = 1} \\qty{z + {1\\over z}}^{2n} {dz \\over z}$ 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Assume two functions $u, b: \\RR^2 \\to \\RR$ have continuous partial de
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - contour-integration
+  - holomorphic-functions
+  - morera
 relations: []
 review: draft
 ---

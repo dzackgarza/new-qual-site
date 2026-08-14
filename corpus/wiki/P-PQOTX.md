@@ -6,7 +6,12 @@ title: "Show that $\\int_{0}^{2 \\pi} \\frac{d \\theta}{(a+\\cos \\theta)^{2}}=\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
+  - poles
 relations: []
 review: draft
 ---

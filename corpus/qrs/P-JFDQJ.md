@@ -6,7 +6,11 @@ title: "Show that $\\int_{0}^{1} \\log (\\sin \\pi x) d x=-\\log 2$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

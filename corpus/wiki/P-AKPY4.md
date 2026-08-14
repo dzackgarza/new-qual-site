@@ -6,7 +6,9 @@ title: "Suppose $D$ is a domain and $f, g$ are analytic on $D$. Prove that if $f
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - identity-theorem
+  - zeros
 relations: []
 review: draft
 ---

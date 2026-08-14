@@ -6,7 +6,10 @@ title: "Suppose $n \\geq 2$. Use a wedge of angle $\\frac{2 \\pi}{n}$ to evaluat
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

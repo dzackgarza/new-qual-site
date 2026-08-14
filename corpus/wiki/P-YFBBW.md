@@ -6,7 +6,9 @@ title: "Suppose $f:\\RR\\to\\RR$ is continuous and $\\lim_{x\\to \\pm \\infty} f
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - continuity
 relations: []
 review: draft
 ---

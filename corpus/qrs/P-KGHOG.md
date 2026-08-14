@@ -6,7 +6,10 @@ title: "Suppose that $f: \\RR\\to\\RR$ is a continuous function that vanishes ou
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - integrals
+  - holomorphic-functions
 relations: []
 review: draft
 ---

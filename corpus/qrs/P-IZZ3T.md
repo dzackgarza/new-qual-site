@@ -6,7 +6,9 @@ title: "Suppose $f, g: [0, 1] \\to \\RR$ where $f$ is Riemann integrable and for
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - riemann-integrability
+  - integrals
 relations: []
 review: draft
 ---

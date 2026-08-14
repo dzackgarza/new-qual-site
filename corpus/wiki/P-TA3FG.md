@@ -6,7 +6,10 @@ title: "Suppose $f$ is analytic on a region $\\Omega$ such that $\\DD \\subseteq
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - convergence-tests
+  - singularities
 relations: []
 review: draft
 ---

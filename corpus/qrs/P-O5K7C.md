@@ -6,7 +6,10 @@ title: "Show that $\\int_{0}^{\\infty} \\sin \\left(x^{2}\\right) d x=\\int_{0}^
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

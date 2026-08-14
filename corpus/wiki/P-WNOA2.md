@@ -6,7 +6,9 @@ title: "Suppose that $f$ is holomorphic on the strip $S = \\theset{x+iy \\suchth
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-estimates
+  - holomorphic-functions
 relations: []
 review: draft
 ---

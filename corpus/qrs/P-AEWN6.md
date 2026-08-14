@@ -6,7 +6,10 @@ title: "(a) $f: D\\rightarrow {\\mathbb C}$ be a continuous function, where"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

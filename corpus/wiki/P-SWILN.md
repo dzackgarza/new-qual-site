@@ -6,7 +6,10 @@ title: "Let $\\gamma$ be a smooth curve joining two distinct points $a, b\\in \\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - morera
+  - holomorphic-functions
+  - contour-integration
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Use $n$th roots of unity to show that $2^{n-1} \\sin\\qty{\\pi \\over n}
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
+  - zeros
 relations: []
 review: draft
 ---

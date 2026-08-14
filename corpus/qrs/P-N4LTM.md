@@ -6,7 +6,10 @@ title: "Let $f$ be analytic in a domain $D$ and fix $z_0 \\in D$ with $w_0 \\def
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - zeros
+  - argument-principle
 relations: []
 review: draft
 ---

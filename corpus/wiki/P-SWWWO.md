@@ -6,7 +6,9 @@ title: "Let $F:\\RR^2\\to \\RR$ be continuously differentiable with $F(0, 0) = 0
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
+  - continuity
 relations: []
 review: draft
 ---

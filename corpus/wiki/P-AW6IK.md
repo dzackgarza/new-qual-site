@@ -6,7 +6,11 @@ title: "Show by example that there exists a function $f(z)$ that is holomorphi\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - singularities
+  - counterexamples
+  - residues
 relations: []
 review: draft
 ---

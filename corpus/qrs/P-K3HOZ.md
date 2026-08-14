@@ -6,7 +6,11 @@ title: "Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence in $O$ su
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - identity-theorem
+  - schwarz-reflection
+  - mean-value-property
 relations: []
 review: draft
 ---

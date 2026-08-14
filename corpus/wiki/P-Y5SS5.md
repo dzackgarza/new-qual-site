@@ -6,7 +6,9 @@ title: "Prove that if $D$ is a simply connected domain and $f(z)$ is holomorph\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - complex-logarithm
+  - holomorphic-functions
 relations: []
 review: draft
 ---

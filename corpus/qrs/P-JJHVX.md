@@ -6,7 +6,9 @@ title: "Show that if $f$ is once complex differentiable at each point\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - cauchy-integral-theorem
 relations: []
 review: draft
 ---

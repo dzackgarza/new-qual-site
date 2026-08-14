@@ -6,7 +6,10 @@ title: "Complete this definition: \"$f: \\RR^n\\to \\RR^m$ is real-differentiabl
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
+  - cauchy-riemann
+  - counterexamples
 relations: []
 review: draft
 ---

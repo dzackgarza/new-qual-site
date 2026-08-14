@@ -6,7 +6,11 @@ title: "Find the number of zeros $z$ with $\\Re(z) > 0$ for the following funct\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - argument-principle
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

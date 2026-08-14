@@ -6,7 +6,9 @@ title: "Show that $\\alpha z e^z = 1$ where $\\abs{\\alpha} > e$ has exactly one
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

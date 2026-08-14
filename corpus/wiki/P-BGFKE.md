@@ -6,7 +6,10 @@ title: "Prove that the following polynomial has its roots outside of\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

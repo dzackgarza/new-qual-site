@@ -6,7 +6,10 @@ title: "Show that $\\int_{-\\infty}^{\\infty} \\frac{x \\sin x}{x^{2}+a^{2}} d x
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

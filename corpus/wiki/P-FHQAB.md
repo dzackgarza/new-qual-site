@@ -6,7 +6,10 @@ title: "Show that if $f$ is holomorphic on $\\DD\\smz$ and $\\abs{f(z)} \\leq \\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - maximum-modulus-principle
+  - singularities
 relations: []
 review: draft
 ---

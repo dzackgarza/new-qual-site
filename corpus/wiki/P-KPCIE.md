@@ -6,7 +6,10 @@ title: "Let $x_0 = a, x_1 = b$, and set $x_n \\definedas {x_{n-1} + x_{n-2} \\ov
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - sequences-of-numbers
+  - completeness
+  - convergence
 relations: []
 review: draft
 ---

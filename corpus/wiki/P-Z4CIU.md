@@ -6,7 +6,10 @@ title: "Prove that all the roots of the complex polynomial $f(z) = z^7 - 5 z^3 +
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

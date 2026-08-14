@@ -6,7 +6,10 @@ title: "Without using Cauchy's integral formula, show that if $\\abs{a} < r < \\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - contour-integration
+  - residues
 relations: []
 review: draft
 ---

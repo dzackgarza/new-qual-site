@@ -6,7 +6,11 @@ title: "Show that $\\int_{-\\infty}^{\\infty} \\frac{d x}{\\left(1+x^{2}\\right)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - poles
 relations: []
 review: draft
 ---

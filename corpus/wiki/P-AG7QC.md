@@ -6,7 +6,9 @@ title: "Prove that the distinct complex numbers $z_1, z_2, z_3$ are the vertices
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
+  - polynomials
 relations: []
 review: draft
 ---

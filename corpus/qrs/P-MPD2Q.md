@@ -6,7 +6,9 @@ title: "Suppose $A, B\\subseteq \\RR^n$ are connected and not disjoint. Prove th
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - connectedness
+  - point-set
 relations: []
 review: draft
 ---

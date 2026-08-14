@@ -6,7 +6,9 @@ title: "Prove that if $f$ has two Laurent series expansions,"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - power-series
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Prove that if $c>0$, $\\abs{w_1} = c\\abs{w_2} \\implies \\abs{w_1 - c^2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
+  - fractional-linear-transformations
 relations: []
 review: draft
 ---

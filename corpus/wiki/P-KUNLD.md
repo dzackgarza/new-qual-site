@@ -6,7 +6,10 @@ title: "Tangent from polynomial long division"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - power-series
+  - trigonometry
 relations: []
 review: draft
 ---

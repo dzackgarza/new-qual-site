@@ -6,7 +6,11 @@ title: "Evaluate the integral $\\int_\\mathbb{R} {dx \\over 1 + x^4}$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - poles
 relations: []
 review: draft
 ---

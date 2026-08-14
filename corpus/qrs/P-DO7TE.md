@@ -6,7 +6,10 @@ title: "- Show that $\\sin(z)/z$ has no poles."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - singularities
+  - trigonometry
 relations: []
 review: draft
 ---

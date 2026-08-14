@@ -6,7 +6,11 @@ title: "Suppose that $f$ is an analytic function in the region $D$ which\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - residues
+  - zeros
+  - power-series
 relations: []
 review: draft
 ---

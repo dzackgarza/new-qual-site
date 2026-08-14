@@ -6,7 +6,10 @@ title: "Prove the following: $\\sum_{n} nz^n$ does not converge at any point of 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - convergence-tests
+  - series-of-functions
 relations: []
 review: draft
 ---

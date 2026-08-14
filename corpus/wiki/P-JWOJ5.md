@@ -6,7 +6,11 @@ title: "Show (without using 3.8.9 in the S&S) that"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - mean-value-property
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

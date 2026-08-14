@@ -6,7 +6,11 @@ title: "Use $n$-th roots of unity (i.e. solutions of $z^n - 1 =0$) to show that 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
+  - cauchy-riemann
+  - complex-logarithm
 relations: []
 review: draft
 ---

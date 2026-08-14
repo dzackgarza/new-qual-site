@@ -6,7 +6,10 @@ title: "Suppose $f$ is analytic on $\\DD^\\circ$. Determine with proof which of 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - identity-theorem
+  - zeros
+  - holomorphic-functions
 relations: []
 review: draft
 ---

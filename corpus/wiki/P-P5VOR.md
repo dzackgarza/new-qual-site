@@ -6,7 +6,11 @@ title: "Let $a \\in \\mathbb{R}$ with $0<a<3$. Evaluate"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

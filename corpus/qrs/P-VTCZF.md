@@ -6,7 +6,9 @@ title: "Show that if $f$ is holomorphic on a connected region $\\Omega$ and $f'\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - connectedness
 relations: []
 review: draft
 ---

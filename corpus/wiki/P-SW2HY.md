@@ -6,7 +6,9 @@ title: "Let $n$ be a natural number. Show that"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
 relations: []
 review: draft
 ---

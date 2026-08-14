@@ -6,7 +6,9 @@ title: "Find the number of roots on $\\abs{z} \\leq 1$ of"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

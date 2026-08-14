@@ -6,7 +6,11 @@ title: "Prove that the following series converges uniformly on the\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - convergence-tests
+  - series-of-functions
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Let $u(x,y)$ be harmonic and have continuous partial derivatives of
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - cauchy-riemann
+  - contour-integration
 relations: []
 review: draft
 ---

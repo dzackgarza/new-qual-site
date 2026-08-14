@@ -6,7 +6,11 @@ title: "Prove that $z^4 + 2z^3 -2z + 10$ has exactly one root in each open"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
+  - argument-principle
 relations: []
 review: draft
 ---

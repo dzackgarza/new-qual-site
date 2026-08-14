@@ -6,7 +6,10 @@ title: "Consider the function $f(z)=\\frac{1}{2}\\left(z+\\frac{1}{z}\\right)$ f
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - biholomorphisms
+  - geometry
 relations: []
 review: draft
 ---

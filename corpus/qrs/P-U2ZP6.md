@@ -6,7 +6,11 @@ title: "Can every continuous function on $\\bar \\DD$ be uniformly approximated\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - polynomials
+  - counterexamples
+  - holomorphic-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Give an example of a function $f:\\RR\\to \\RR$ that is everywhere\u2026
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
+  - counterexamples
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Let $n\\in \\ZZ^{\\geq 1}$ and $0<\\theta<\\pi$ and show that"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - trigonometry
+  - poles
 relations: []
 review: draft
 ---

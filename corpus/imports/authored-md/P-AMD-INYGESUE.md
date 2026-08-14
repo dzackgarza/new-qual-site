@@ -6,7 +6,11 @@ title: "Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - harmonic-functions
+  - pdes
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that $\\displaystyle \\int_0^\\infty \\frac{x^{a-1}}{1+x^n} dx=\\fr
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

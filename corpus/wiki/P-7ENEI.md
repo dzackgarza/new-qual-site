@@ -6,7 +6,10 @@ title: "Suppose that $f$ is holomorphic in an open set containing the\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - poles
+  - laurent-series
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Suppose $A, B \\subseteq \\RR^n$ are disjoint and compact. Prove that th
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - euclidean-spaces
 relations: []
 review: draft
 ---

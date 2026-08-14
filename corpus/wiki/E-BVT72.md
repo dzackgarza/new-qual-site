@@ -6,7 +6,10 @@ title: (1) Explicitly write down an example of a non-zero analytic function i…
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - identity-theorem
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Prove the fundamental theorem of Algebra using Rouche's\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - maximum-modulus-principle
+  - polynomials
+  - zeros
 relations: []
 review: draft
 ---

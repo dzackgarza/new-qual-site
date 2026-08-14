@@ -6,7 +6,10 @@ title: "Calculate $\\int_0^\\infty {\\sin(x) \\over x}\\, dx$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

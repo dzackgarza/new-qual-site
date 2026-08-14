@@ -6,7 +6,11 @@ title: "Compute the following integral carefully justifying each step:"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

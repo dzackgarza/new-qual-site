@@ -6,7 +6,10 @@ title: "Show that in polar coordinates, the Cauchy-Riemann equations\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - complex-logarithm
+  - holomorphic-functions
 relations: []
 review: draft
 ---

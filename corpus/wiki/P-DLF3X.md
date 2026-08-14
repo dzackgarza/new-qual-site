@@ -6,7 +6,8 @@ title: "Let $f$ be nonzero, analytic on a bounded region $\\Omega$ and continuo\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
 relations: []
 review: draft
 ---

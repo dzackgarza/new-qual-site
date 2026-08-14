@@ -6,7 +6,11 @@ title: "Let $f$ be non-constant and holomorphic in an open set containing the\u2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - open-mapping-theorem
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

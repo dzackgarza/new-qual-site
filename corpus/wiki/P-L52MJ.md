@@ -6,7 +6,10 @@ title: "Let $f(z)$ be analytic in an open set $\\Omega$ except possibly at a"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - morera
+  - contour-integration
 relations: []
 review: draft
 ---

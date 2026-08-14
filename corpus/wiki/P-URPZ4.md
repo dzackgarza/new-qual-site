@@ -6,7 +6,9 @@ title: "Find the number of solutions to the following equation on $\\abs{z} < 1$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

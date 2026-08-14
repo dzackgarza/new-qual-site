@@ -6,7 +6,11 @@ title: "Show that if $a>0$, then $\\int_{0}^{\\infty} \\frac{\\log x}{x^{2}+a^{2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

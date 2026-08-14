@@ -6,7 +6,11 @@ title: "Assume $f$ is continuous in the region: $0 < \\abs{z-a} \\leq R,\\quad 0
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - laurent-series
+  - poles
 relations: []
 review: draft
 ---

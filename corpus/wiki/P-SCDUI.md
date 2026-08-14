@@ -6,7 +6,10 @@ title: "Assume that $\\abs b < 1$ and show that the following polynomial has\u20
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---

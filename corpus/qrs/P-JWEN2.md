@@ -6,7 +6,10 @@ title: "Suppose $\\theset{f_n}_{n\\in \\NN}$ is a sequence of continuous functio
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
+  - continuity
 relations: []
 review: draft
 ---

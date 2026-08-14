@@ -6,7 +6,9 @@ title: "Suppose $f$ is continuous and nonvanishing on $\\bar \\DD$, and\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - schwarz-reflection
 relations: []
 review: draft
 ---

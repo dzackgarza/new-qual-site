@@ -6,7 +6,10 @@ title: "Find a conformal map from $\\{ z: |z - 1/2| > 1/2, \\text{Re}(z)>0 \\}$ 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - blaschke-factors
+  - fractional-linear-transformations
 relations: []
 review: draft
 ---

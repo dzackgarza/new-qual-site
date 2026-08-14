@@ -6,7 +6,10 @@ title: "Show that $\\int_{0}^{\\infty} \\frac{x^{a-1}}{1+x^{n}} d x=\\frac{\\pi}
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations: []
 review: draft
 ---

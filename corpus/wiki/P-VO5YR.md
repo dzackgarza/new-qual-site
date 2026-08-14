@@ -6,7 +6,10 @@ title: "Invert $\\sin(z)$ using geometric series"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - power-series
+  - trigonometry
 relations: []
 review: draft
 ---

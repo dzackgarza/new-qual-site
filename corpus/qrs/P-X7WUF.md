@@ -6,7 +6,10 @@ title: (a) Let $F$ be an analytic function inside and on a simple closed
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - poles
+  - contour-integration
 relations: []
 review: draft
 ---

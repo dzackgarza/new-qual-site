@@ -6,7 +6,8 @@ title: "Describe each set in the $z$-plane in (a) and (b) below, where\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
 relations: []
 review: draft
 ---

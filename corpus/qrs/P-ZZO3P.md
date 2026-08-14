@@ -6,7 +6,11 @@ title: "Prove the Fundamental Theorem of Algebra (using complex\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - liouville-s-theorem
+  - polynomials
+  - zeros
+  - entire-functions
 relations: []
 review: draft
 ---

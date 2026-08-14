@@ -6,7 +6,11 @@ title: "Let $0<r<1$. Show that polynomials $P_n(z) = 1 + 2z + 3 z^2 + \\cdots + 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
+  - uniform-convergence
 relations: []
 review: draft
 ---

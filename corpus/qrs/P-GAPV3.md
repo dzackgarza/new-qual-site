@@ -6,7 +6,10 @@ title: "For $s>0$, the gamma function is defined by $\\displaystyle{\\Gamma(s)=\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
+  - holomorphic-functions
+  - residues
 relations: []
 review: draft
 ---

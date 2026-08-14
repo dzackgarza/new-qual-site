@@ -6,7 +6,8 @@ title: "Invert $1-z$, one coefficient at a time"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
 relations: []
 review: draft
 ---

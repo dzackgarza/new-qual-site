@@ -6,7 +6,11 @@ title: "Compute the following integrals. $\\displaystyle \\int_0^\\infty \\frac{
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

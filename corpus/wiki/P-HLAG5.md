@@ -6,7 +6,9 @@ title: "Let $f(z)=z+1 / z$. Describe the images of both the circle $|z|=r$ of\u2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - geometry
 relations: []
 review: draft
 ---

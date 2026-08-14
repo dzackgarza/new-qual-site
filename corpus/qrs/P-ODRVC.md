@@ -6,7 +6,9 @@ title: "Give an example of a"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - counterexamples
 relations: []
 review: draft
 ---

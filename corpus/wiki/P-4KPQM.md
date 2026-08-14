@@ -6,7 +6,10 @@ title: "Prove the fundamental theorem of Algebra using the maximum\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - polynomials
+  - zeros
 relations: []
 review: draft
 ---

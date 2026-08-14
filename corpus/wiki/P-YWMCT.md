@@ -6,7 +6,11 @@ title: "Show that $\\int_{\\RR_{\\geq 0}}{x^{-s} \\over x+1} = {\\pi \\over \\si
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations: []
 review: draft
 ---

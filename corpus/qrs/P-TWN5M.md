@@ -6,7 +6,9 @@ title: "Geometrically describe the following subsets of $\\CC$: $\\abs{z-1} = 1$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
+  - fractional-linear-transformations
 relations: []
 review: draft
 ---

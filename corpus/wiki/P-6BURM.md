@@ -6,7 +6,9 @@ title: "Let $n\\in \\ZZ^{\\geq 0}$ and show that the equation $e^z = az^n$ has $
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

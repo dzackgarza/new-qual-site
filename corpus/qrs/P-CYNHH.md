@@ -6,7 +6,10 @@ title: "Find the Laurent expansions about $z=0$ of the following\u2026"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - essential-singularities
+  - principal-parts
 relations: []
 review: draft
 ---

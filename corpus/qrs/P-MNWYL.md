@@ -6,7 +6,11 @@ title: "Prove that there is no sequence of polynomials that uniformly converge\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - cauchy-integral-formula
+  - polynomials
+  - counterexamples
 relations: []
 review: draft
 ---

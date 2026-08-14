@@ -6,7 +6,11 @@ title: "For each $n\\in \\ZZ^{\\geq 1}$, let $P_n(z) = 1 + z + {1\\over 2!} z^2 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
+  - uniform-convergence
 relations: []
 review: draft
 ---

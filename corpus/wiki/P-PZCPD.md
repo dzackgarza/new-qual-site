@@ -6,7 +6,8 @@ title: "Let $z_{k}(k=1, \\cdots, n)$ be complex numbers lying on the same side\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
 relations: []
 review: draft
 ---

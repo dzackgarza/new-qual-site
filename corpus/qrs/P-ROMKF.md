@@ -6,7 +6,10 @@ title: "Let $a_n \\neq 0$ and assume that $\\displaystyle \\lim_{n \\rightarrow 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - power-series
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

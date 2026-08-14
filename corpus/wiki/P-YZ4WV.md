@@ -6,7 +6,11 @@ title: "Let $f(z)$ be a non-constant analytic function in $|z|>0$ such that $f(z
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - essential-singularities
+  - singularities
+  - identity-theorem
+  - zeros
 relations: []
 review: draft
 ---

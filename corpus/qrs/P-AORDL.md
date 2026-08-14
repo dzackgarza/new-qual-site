@@ -6,7 +6,11 @@ title: "Let $f$ be non-constant, analytic in $\\abs{z} > 0$, where $f(z_n) = 0$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - essential-singularities
+  - singularities
+  - identity-theorem
+  - zeros
 relations: []
 review: draft
 ---

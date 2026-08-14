@@ -6,7 +6,10 @@ title: "Let $P = (1, 3) \\in \\RR^2$ and define"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
+  - cauchy-riemann
+  - holomorphic-functions
 relations: []
 review: draft
 ---

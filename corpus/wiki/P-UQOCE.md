@@ -6,7 +6,9 @@ title: "Let $f$ be analytic in a domain $D$ and $\\gamma$ be a closed curve in\u
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - contour-integration
 relations: []
 review: draft
 ---

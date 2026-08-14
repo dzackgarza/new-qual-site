@@ -6,7 +6,11 @@ title: "Let $f = u + iv$ be an entire function such that $\\Re(f(x+iy))$ is pol\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - cauchy-riemann
+  - entire-functions
+  - polynomials
 relations: []
 review: draft
 ---

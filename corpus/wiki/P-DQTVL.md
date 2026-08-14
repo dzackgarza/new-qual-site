@@ -6,7 +6,10 @@ title: "Let $D$ be the region obtained by deleting the real interval $[0, 1)$\u2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - complex-logarithm
+  - fractional-linear-transformations
 relations: []
 review: draft
 ---

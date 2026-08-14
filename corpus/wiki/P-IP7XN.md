@@ -6,7 +6,10 @@ title: "Show that $z\\sin(z) = a$ has only real solutions."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Calculate $\\int_0^\\infty {\\sin^3(x) \\over x^3} \\, dx$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations: []
 review: draft
 ---

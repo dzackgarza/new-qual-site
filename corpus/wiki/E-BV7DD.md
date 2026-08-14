@@ -6,7 +6,11 @@ title: "Let $p(z)$ be a polynomial, $R>0$ any positive number, and $m \\geq 1$ a
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - polynomials
+  - uniform-convergence
+  - laurent-series
 relations: []
 review: draft
 ---

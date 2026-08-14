@@ -6,7 +6,11 @@ title: "Define $E(z)=e^{x}(\\cos y+i \\sin y)$ Show that $E(z)$ is the unique fu
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - entire-functions
+  - power-series
+  - identity-theorem
 relations: []
 review: draft
 ---

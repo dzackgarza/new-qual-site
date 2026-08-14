@@ -6,7 +6,11 @@ title: "Use the following formula to show that the complex zeros of $\\sin(\\pi 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - residues
+  - trigonometry
+  - poles
 relations: []
 review: draft
 ---

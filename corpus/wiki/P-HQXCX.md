@@ -6,7 +6,9 @@ title: "Characterize positive integers $n$ such that $(1+i)^{n}=(1-i)^{n}$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - geometry
 relations: []
 review: draft
 ---

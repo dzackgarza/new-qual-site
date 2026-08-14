@@ -6,7 +6,10 @@ title: "Let $\\displaystyle f(z) = \\frac{1}{z} + \\frac{1}{z^2 -1}$."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
+  - principal-parts
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: '(1) Let $f$ be analytic in $\Omega: 0<|z-a|<r$ except at a'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - casorati-weierstrass
+  - poles
+  - singularities
+  - meromorphic-functions
 relations: []
 review: draft
 ---

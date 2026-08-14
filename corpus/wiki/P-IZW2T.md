@@ -6,7 +6,10 @@ title: "Expand the following functions into Laurent series in the indicated"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
+  - essential-singularities
 relations: []
 review: draft
 ---

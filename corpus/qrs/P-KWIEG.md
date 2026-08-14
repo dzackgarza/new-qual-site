@@ -6,7 +6,10 @@ title: "Find the number of roots of $p(z) = 4z^4 - 6z + 3$ in $\\abs{z} < 1$ an\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations: []
 review: draft
 ---
