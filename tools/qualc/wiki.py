@@ -375,6 +375,41 @@ def _page_target(
     raise MissingPageReference(raw)
 
 
+# A citation is still a `Cite` at this point, carrying the bib keys it names;
+# the `<span class="citation">` is what the HTML writer makes of it later. The
+# textbook source cards are keyed on the same string, uppercased, so the
+# reference reaches its card without a lookup table.
+TEXTBOOK_CARD = "SRC-TEXT-{}"
+
+
+def link_citations(pages: list[WikiPage], card_routes: dict[str, Path]) -> int:
+    """Point every citation at the source card for the work it cites.
+
+    A citation rendered as `[DuFo04]` and stopped there; the reader had no way
+    from the reference to the book. A key with no source card is left as it is
+    rather than linked into nothing.
+    """
+    linked = 0
+
+    def visit(element: pf.Element, doc: pf.Doc) -> pf.Element:
+        nonlocal linked
+        del doc
+        if not isinstance(element, pf.Cite) or len(element.citations) != 1:
+            return element
+        card = TEXTBOOK_CARD.format(element.citations[0].id.upper())
+        if card not in card_routes:
+            return element
+        linked += 1
+        return pf.Link(
+            *cast(list[pf.Inline], element.content),
+            url=card_routes[card].as_posix(),
+        )
+
+    for page in pages:
+        page.blocks = list(pf.Doc(*page.blocks).walk(visit).content)
+    return linked
+
+
 def _asset_target(raw: str, assets: AssetCatalog) -> Path:
     source = _asset_source(raw, assets)
     return Path("assets") / source.relative_to(assets.root)

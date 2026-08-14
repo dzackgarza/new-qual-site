@@ -12,7 +12,7 @@ from .diagnostics import Diagnostic
 from .model import ParsedCard, discover, parse_cards_with
 from .pandoc_batch import PandocServer
 from .static_site import build_asset_catalog
-from .wiki import WikiPage, load_citations, parse_pages, resolve_links
+from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links
 
 
 def load(
@@ -41,6 +41,7 @@ def load(
         if wiki_pages:
             assets = build_asset_catalog(root / "assets")
             errors.extend(resolve_links(wiki_pages, card_routes, assets))
+            link_citations(wiki_pages, card_routes)
     return parsed, wiki_pages, errors
 
 

@@ -95,6 +95,8 @@ class Link(Inline):
     def __init__(self, *args: Inline, url: str = ..., title: str = ...) -> None: ...
 
 class Span(Inline):
+    classes: list[str]
+    attributes: dict[str, str]
     def __init__(
         self,
         *args: Inline,
