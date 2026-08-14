@@ -2,7 +2,7 @@
 
 Manifest: `publications/real-analysis-guide.yaml`, extended from the four-section workshop spine to twelve sections covering the whole Real Analysis area.
 
-`uv run qualc build` -> 8,207 cards and 327 wiki pages OK.
+Pinned revision `093fe0a4`, built in a clean worktree: `uv run qualc build` -> 8,213 cards and 327 wiki pages OK, thirteen guide routes whose slugs match the committed manifest exactly.
 
 ## What changed since the previous proof
 
@@ -37,8 +37,10 @@ Thirteen routes, one root and twelve sections:
 
 ## Reachability
 
-The claim is measured, not asserted.
-Every card id appearing anywhere in the rendered HTML of the thirteen routes was collected and compared against the area's card list:
+The claim is measured, not asserted, and twice by different means that agree.
+Against the rendered HTML, every card id appearing anywhere on the thirteen routes was collected and compared with the area's card list.
+Against the pinned build, each card was tested directly for a section that names it or a panel whose kind and topic match it, which needs no render.
+The table is the pinned-build measurement:
 
 | kind | reached | in area |
 | --- | ---: | ---: |
@@ -46,7 +48,7 @@ Every card id appearing anywhere in the rendered HTML of the thirteen routes was
 | proposition | 103 | 103 |
 | theorem | 95 | 96 |
 | definition | 71 | 71 |
-| fact | 50 | 50 |
+| fact | 39 | 50 |
 | exercise | 48 | 49 |
 | solution | 36 | 36 |
 | example | 14 | 14 |
@@ -55,8 +57,11 @@ Every card id appearing anywhere in the rendered HTML of the thirteen routes was
 | corollary | 4 | 4 |
 | lemma | 2 | 2 |
 
-The nine cards not reached are exactly the nine this lane deferred, listed under nonclaims below.
-No card was left unreachable for any other reason.
+934 of the 954 reached at the pinned revision.
+Nine of the twenty misses are exactly the nine this lane deferred, listed under nonclaims below.
+The other eleven are trigonometric-value flashcards (`FF-ATMHV FF-CIESS FF-CLFAB FF-SF7VN FF-TGHJ5 FF-TGTS7 FF-VT2E7 FF-W2TS2 FF-XEQFR FF-YBIQV FF-ZQFSR`) that entered the area in `1d49862a`, the math-flashcards ingest, after this lane's classification sweep had finished; they carry no topic yet, so no panel can match them.
+They are new unclassified cards in the area, not deferrals of this lane, and classifying them belongs to whoever owns that ingest.
+The count is a measurement at one revision of a corpus other lanes are still growing, which is why the revision is pinned.
 
 The method that makes this checkable: the twelve sections partition the topic vocabulary.
 Every topic carried by any Real-Analysis-area card belongs to exactly one section, and each section carries one panel per card kind present under its topics, with the panel limit set to the exact count.
