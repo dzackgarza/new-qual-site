@@ -151,7 +151,7 @@ sections:
       - ref: P-PC2H7
   - slug: sequences-and-series
     title: Sequences and Series
-    parent: integration-techniques
+    parent: limits-and-continuity
     lede: >-
       A series is a sequence of partial sums, so the convergence tests are the section's whole
       content and the exam asks which one applies and why. The recurring question is the set of
@@ -174,7 +174,7 @@ sections:
       - ref: P-CQNPO
   - slug: multivariable-calculus
     title: Multivariable Calculus
-    parent: sequences-and-series
+    parent: integration-techniques
     lede: >-
       In several variables differentiability stops being the existence of a limit of difference
       quotients and becomes the existence of a linear map approximating the increment; the exam
@@ -208,7 +208,7 @@ sections:
       - ref: P-YVA5W
   - slug: linear-algebra
     title: Linear Algebra
-    parent: multivariable-calculus
+    parent: GUIDE-PRELIM
     lede: >-
       The exam's linear algebra runs from the subspace test to canonical forms in a single
       arc, and the later algebra sections assume all of it. A subspace is checked by closure, a
@@ -240,7 +240,7 @@ sections:
       - ref: P-CSEAZ
   - slug: groups
     title: Groups
-    parent: linear-algebra
+    parent: logic-and-proof
     lede: >-
       Group theory on this paper is almost entirely about finite groups and about one question:
       given an order, what are the groups of that order? Lagrange bounds the possible subgroup
@@ -346,7 +346,7 @@ sections:
       - ref: P-FBY23
   - slug: counterexamples
     title: Counterexamples
-    parent: complex-numbers
+    parent: GUIDE-PRELIM
     lede: >-
       A recurring instruction on this paper is "give an example or explain why none exists",
       and it is the most efficient question on it: one line of an answer distinguishes a
