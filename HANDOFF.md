@@ -9,9 +9,12 @@ Orchestration ran as one coordinator with seven Opus worker lanes; every lane's 
 
 1. **RESOLVED — the uncommitted classification batch.** The Complex Analysis lane recovered and committed its theory-spine batch (`fa80ad69`), merged its proof addenda correctly on top of the reachability addendum (`da32fdd6`), and the ~400 formatter-normalization files landed as `7fd3e80f`. The stale-proof landmine no longer exists; the tree was verified clean.
 
-2. **RESOLVED — Algebra corrections complete, not partial.** All five batches plus the proof-document repairs landed: `eee0d46d`, `8a4bc822`+`b3214111`, `d58db4d3`, `fb546a5c`, `2d160bd2`, `205b5975`, `f00a577a`, `eb59182e`, `07f03f95` — 117 cards, proof citation audit clean (210/210 ids resolve). Recorded-not-guessed items are listed in the proof and §5.
+2. **RESOLVED — Algebra corrections complete, not partial.** All five batches plus the proof-document repairs landed: `eee0d46d`, `8a4bc822`+`b3214111`, `d58db4d3`, `fb546a5c`, `2d160bd2`, `205b5975`, `f00a577a`, `eb59182e`, `07f03f95` — 117 cards, proof citation audit clean (210/210 ids resolve).
+   Recorded-not-guessed items are listed in the proof and §5.
 
-3. **OPEN — one stale test blocks the push gate.** `tests/test_invariants.py::test_corpus_layout_is_semantically_inert` hard-codes the pre-session 4-section Algebra guide traversal and fails against the legitimate 17-section guide. A repair (manifest-as-source-of-truth rewrite, per test-guidelines) was in flight at session end — check `git log -- tests/test_invariants.py` and `git status`: if a green commit landed, push; if the working tree holds a partial rewrite, finish or restart it from the test's intent (rendered traversal coherent with the manifest), never a vacuous weakening. This is the only thing between the current state and a clean `git push`.
+3. **OPEN — one stale test blocks the push gate.** `tests/test_invariants.py::test_corpus_layout_is_semantically_inert` hard-codes the pre-session 4-section Algebra guide traversal and fails against the legitimate 17-section guide.
+   A repair (manifest-as-source-of-truth rewrite, per test-guidelines) was in flight at session end — check `git log -- tests/test_invariants.py` and `git status`: if a green commit landed, push; if the working tree holds a partial rewrite, finish or restart it from the test's intent (rendered traversal coherent with the manifest), never a vacuous weakening.
+   This is the only thing between the current state and a clean `git push`.
 
 4. **OPEN — nothing is pushed** (~110 commits ahead of `origin/main`). Push immediately after (3).
 
