@@ -33,29 +33,59 @@ NavigationParent = RootParent | NodeParent
 
 
 @dataclass(frozen=True)
+class PageTarget:
+    """A node a reader can open: a route to link to."""
+
+    route: Path
+
+
+@dataclass(frozen=True)
+class LevelOnly:
+    """A directory in the authored wiki. It names a level of the trail and has
+    no page of its own, so it is read in a breadcrumb but never linked to."""
+
+
+NavigationTarget = PageTarget | LevelOnly
+
+
+@dataclass(frozen=True)
 class NavigationLink:
     key: str
     title: str
-    # A directory in the authored wiki names a level of the trail but has no page
-    # of its own, so it appears in a breadcrumb as text rather than as a link.
-    target: Path | None
+    target: NavigationTarget
     parent: NavigationParent
 
 
 @dataclass(frozen=True)
+class ReadingLink:
+    """Somewhere reading goes next. Always a page: a directory is not readable."""
+
+    title: str
+    target: PageTarget
+
+    @staticmethod
+    def of(link: NavigationLink) -> ReadingLink:
+        match link.target:
+            case LevelOnly():
+                raise ValueError(f"reading order points at a directory: {link.key}")
+            case PageTarget() as target:
+                return ReadingLink(title=link.title, target=target)
+
+
+@dataclass(frozen=True)
 class StartReading:
-    following: NavigationLink
+    following: ReadingLink
 
 
 @dataclass(frozen=True)
 class MiddleReading:
-    previous: NavigationLink
-    following: NavigationLink
+    previous: ReadingLink
+    following: ReadingLink
 
 
 @dataclass(frozen=True)
 class EndReading:
-    previous: NavigationLink
+    previous: ReadingLink
 
 
 ReadingPosition = StartReading | MiddleReading | EndReading
@@ -140,30 +170,32 @@ def _navigation_link(
     relative_path: Path,
     link: NavigationLink,
 ) -> str:
-    if link.target is None:
-        return f"<span>{escape(link.title)}</span>"
-    target = escape(_relative_url(relative_path, link.target))
-    return f'<a href="{target}">{escape(link.title)}</a>'
+    match link.target:
+        case LevelOnly():
+            return f"<span>{escape(link.title)}</span>"
+        case PageTarget(route=route):
+            target = escape(_relative_url(relative_path, route))
+            return f'<a href="{target}">{escape(link.title)}</a>'
 
 
 def _current_navigation_link(
     relative_path: Path,
     link: NavigationLink,
 ) -> str:
-    if link.target is None:
-        return f'<span aria-current="page">{escape(link.title)}</span>'
-    target = escape(_relative_url(relative_path, link.target))
-    return f'<a href="{target}" aria-current="page">{escape(link.title)}</a>'
+    match link.target:
+        case LevelOnly():
+            return f'<span aria-current="page">{escape(link.title)}</span>'
+        case PageTarget(route=route):
+            target = escape(_relative_url(relative_path, route))
+            return f'<a href="{target}" aria-current="page">{escape(link.title)}</a>'
 
 
 def _reading_navigation_link(
     relative_path: Path,
-    link: NavigationLink,
+    link: ReadingLink,
     relation: Literal["prev", "next"],
 ) -> str:
-    if link.target is None:
-        raise ValueError(f"reading order points at a directory, which has no page: {link.key}")
-    target = escape(_relative_url(relative_path, link.target))
+    target = escape(_relative_url(relative_path, link.target.route))
     return f'<a href="{target}" rel="{relation}">{escape(link.title)}</a>'
 
 

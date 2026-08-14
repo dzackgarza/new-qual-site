@@ -46,12 +46,15 @@ from .static_site import (
     AssetCatalog,
     AuthoredPage,
     EndReading,
+    LevelOnly,
     MiddleReading,
     NavigationLink,
     NavigationParent,
     NodeParent,
     PageChrome,
+    PageTarget,
     PublicationNavigation,
+    ReadingLink,
     RootParent,
     StandardPage,
     StartReading,
@@ -174,7 +177,7 @@ def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
             kind = DIV_CLASS_TO_KIND[owned[0]]
             el.classes.append(SECTION_CLASS)
             el.attributes["data-label"] = kind.title()
-            title = el.attributes.get("title", "").strip()
+            title = el.attributes["title"].strip() if "title" in el.attributes else ""
             if title and kind in TITLED_KINDS:
                 el.content.insert(0, pf.RawBlock(_title_html(title), format="html"))
     return el
@@ -295,14 +298,14 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
                     links[key] = NavigationLink(
                         key=key,
                         title=page.source_rel.parts[depth - 1].replace("_", " "),
-                        target=None,
+                        target=LevelOnly(),
                         parent=parent,
                     )
                 parent = NodeParent(key)
             links[page.route.as_posix()] = NavigationLink(
                 key=page.route.as_posix(),
                 title=page.title,
-                target=page.route,
+                target=PageTarget(page.route),
                 parent=parent,
             )
         ordered = tuple(links.values())
@@ -312,13 +315,13 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
             key = page.route.as_posix()
             position: StartReading | MiddleReading | EndReading
             if previous is None and following is not None:
-                position = StartReading(following=links[following.route.as_posix()])
+                position = StartReading(following=ReadingLink.of(links[following.route.as_posix()]))
             elif following is None and previous is not None:
-                position = EndReading(previous=links[previous.route.as_posix()])
+                position = EndReading(previous=ReadingLink.of(links[previous.route.as_posix()]))
             elif previous is not None and following is not None:
                 position = MiddleReading(
-                    previous=links[previous.route.as_posix()],
-                    following=links[following.route.as_posix()],
+                    previous=ReadingLink.of(links[previous.route.as_posix()]),
+                    following=ReadingLink.of(links[following.route.as_posix()]),
                 )
             else:
                 # A branch of one page has nowhere to go; it keeps its trail.
@@ -937,14 +940,14 @@ def _publication_navigation(
         NavigationLink(
             key=manifest.id,
             title=manifest.title,
-            target=_publication_root_route(manifest),
+            target=PageTarget(_publication_root_route(manifest)),
             parent=RootParent(),
         ),
         *(
             NavigationLink(
                 key=section.slug,
                 title=section.title,
-                target=_publication_section_route(manifest, section),
+                target=PageTarget(_publication_section_route(manifest, section)),
                 parent=NodeParent(section.parent),
             )
             for section in manifest.sections
@@ -954,13 +957,13 @@ def _publication_navigation(
     index = next(i for i, link in enumerate(ordered) if link.key == current_key)
     position: StartReading | MiddleReading | EndReading
     if index == 0:
-        position = StartReading(following=ordered[1])
+        position = StartReading(following=ReadingLink.of(ordered[1]))
     elif index == len(ordered) - 1:
-        position = EndReading(previous=ordered[-2])
+        position = EndReading(previous=ReadingLink.of(ordered[-2]))
     else:
         position = MiddleReading(
-            previous=ordered[index - 1],
-            following=ordered[index + 1],
+            previous=ReadingLink.of(ordered[index - 1]),
+            following=ReadingLink.of(ordered[index + 1]),
         )
     return PublicationNavigation(
         links=links,

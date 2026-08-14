@@ -399,14 +399,17 @@ def to_json(document: pf.Doc) -> str:
 FILE_CAPTION = re.compile(r"\.(png|jpe?g|gif|svg|webp|pdf)$", re.I)
 
 
+LINKING_ELEMENTS = (cast(type[pf.Element], vars(pf)["Link"]), cast(type[pf.Element], vars(pf)["Image"]))
+
+
 def _figure_targets(element: pf.Figure) -> list[str]:
+    """Every url the figure points at: its image, and any link wrapping it."""
     urls: list[str] = []
 
     def collect(node: pf.Element, doc: pf.Doc) -> pf.Element:
         del doc
-        url = getattr(node, "url", None)
-        if isinstance(url, str):
-            urls.append(url)
+        if isinstance(node, LINKING_ELEMENTS):
+            urls.append(cast(str, getattr(node, "url")))
         return node
 
     pf.Doc(*element.content).walk(collect)
