@@ -215,11 +215,11 @@ Following one reaches its `tag/` page, which renders the statement, the area/ins
 **Hints and solutions.** `tag/P-P2UAH.html` carries three `<details>`; clicking every summary opens all three, labelled `UGA algebra Fall 2018, problem 1`, `Hint` and `Solution`, with typeset mathematics inside.
 Identical at 375 and 1440. This is the only card on the site carrying both a hint and a solution, so the feature is proved on its single instance and no more.
 
-**Figures.** Every image that a replayed page requests decodes: 5 of 5 on the Cauchy Integral Formula page, 14 of 14 on Galois Theory Computations, 19 of 19 overall.
+**Figures.** Every image that a replayed page requests decodes: 5 of 5 on the Cauchy Integral Formula page, 14 of 14 on Galois Theory Computations, 38 of 38 across the 20 loads.
 
 **Citations.** The Algebra syllabus renders `[DuFo04]`, `[Hung74]`, `[Smit]` in place of its `[@...]` keys and emits four `.csl-entry` bibliography entries.
 
-**Mathematics.** All 20 loads settle, and no `span.math` is left untypeset — 1,382 typeset containers across the replayed routes.
+**Mathematics.** All 20 loads settle, and no `span.math` is left untypeset — 1,538 typeset containers across the 20 loads, 0 left over.
 
 **Navigation.** Every page carries a source-path subtitle and an on-this-page table of contents (8 to 32 entries on the replayed routes), and the wiki root links to each subject.
 
