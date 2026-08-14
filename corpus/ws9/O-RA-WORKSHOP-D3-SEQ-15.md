@@ -6,7 +6,10 @@ title: 'More Problems 15 on Day 3: Sequences and Series'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
+  - convergence
 relations:
 - kind: instance-of
   target: P-RA-WORKSHOP-D3-SEQ-15

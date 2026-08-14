@@ -6,7 +6,10 @@ title: 'Prove the monotone, nth-term, and Cauchy condensation theorems'
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - series-of-numbers
+  - sequences-of-numbers
+  - convergence
 relations: []
 review: draft
 ---
