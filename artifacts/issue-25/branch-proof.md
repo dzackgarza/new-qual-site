@@ -195,6 +195,10 @@ Among them: `D-3ZPR7`/`D-BAD4E`, `D-3V3SP`/`D-DQPGU`, `D-P5D3T`/`D-VWRBP`, `D-MC
 No panel can select on it -- the guide's queries are already scoped to the area -- so those cards belonged to no section.
 They were read and reclassified in `95154bdc`.
 
+No Algebra-area card carries `algebra` as a topic any longer, and none carries `analysis` either.
+That is measured over the whole topic list, not just over cards whose only topic it was: zero of 2,368.
+The `algebra` registry entry itself is left in place in `vocabularies/topics.yaml`; whether it is retired is a decision for the areas that still use it.
+
 **The study path rail indents one level per section and does not cap.** Written as a chain of seventeen, the rail squeezed "The Structure Theorem over a PID" to "Th ... PID" and clipped four other labels.
 The manifest now uses `parent` for the actual prerequisite rather than for "comes after", which makes the hierarchy a tree five deep and every label render in full.
 The reading order is unaffected: it follows the order of the sections in the manifest, and the foot navigation still runs 1 to 17. The rail defect itself is untouched and still live for any guide that chains more than about a dozen sections.
