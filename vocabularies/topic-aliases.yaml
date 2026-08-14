@@ -1,0 +1,26 @@
+# Retired topic ids and the entry each was merged into. Owned by the
+# classification side, alongside topics.yaml: an entry is added only by a
+# deliberate curation act, when a registry merge retires an id that a source's
+# raw tags still use. Importers read this file and never write it, so a merge
+# decision survives re-import instead of being undone by it.
+#
+# Seeded from e507fb8e, which merged nine duplicate registry entries after
+# reading every member card.
+- retired: analytic-functions
+  survivor: holomorphic-functions
+- retired: biholomorphism
+  survivor: biholomorphisms
+- retired: classification-of-groups
+  survivor: classification
+- retired: compact-spaces
+  survivor: compactness
+- retired: connected-spaces
+  survivor: connectedness
+- retired: group-theory
+  survivor: groups
+- retired: quotient-space
+  survivor: quotient-spaces
+- retired: ring
+  survivor: rings
+- retired: sylow-theorems
+  survivor: sylow-theory

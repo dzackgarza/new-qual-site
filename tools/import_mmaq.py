@@ -189,6 +189,8 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
     parsed = yaml.safe_load(data)
     if not isinstance(parsed, list) or not parsed:
         raise ValueError("MakeMeAQual source must be a non-empty YAML list")
+    registered, aliases = topic_vocabulary(root)
+    unregistered: dict[str, int] = {}
     records: list[dict[str, Any]] = []
     for sequence, raw in enumerate(parsed, start=1):
         if not isinstance(raw, dict):
@@ -214,9 +216,20 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
             season = ""
         if season and season not in VALID_TERMS:
             raise ValueError(f"MakeMeAQual row {sequence} has unknown season {season!r}")
+        topics: list[str] = []
+        for tag in tags:
+            topic = slug(tag)
+            if not topic:
+                raise ValueError(f"MakeMeAQual row {sequence} has an empty topic slug for {tag!r}")
+            topic = aliases.get(topic, topic)
+            if topic not in registered:
+                unregistered.setdefault(topic, sequence)
+            if topic not in topics:
+                topics.append(topic)
         records.append(
             {
                 "sequence": sequence,
+                "topics": topics,
                 "year": year,
                 "number": raw["number"],
                 "university": university,
@@ -226,6 +239,13 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
                 "question": question.strip(),
                 "normalized": loose(question),
             }
+        )
+    if unregistered:
+        listed = ", ".join(f"{topic!r} (row {row})" for topic, row in sorted(unregistered.items()))
+        raise ValueError(
+            f"unregistered-topic: {len(unregistered)} tag(s) are neither in vocabularies/topics.yaml nor "
+            f"aliased in vocabularies/topic-aliases.yaml: {listed}. Registering a topic or recording a "
+            f"merge is a curation act; this importer will not do it."
         )
     return records, source
 
@@ -435,34 +455,32 @@ def source_title(key: tuple[str, str, str, str]) -> str:
     return f"{university} {area} {date}"
 
 
-def topic_registry(root: Path, records: list[dict[str, Any]]) -> None:
-    path = root / "vocabularies/topics.yaml"
-    existing_raw: Any = []
-    if path.exists():
-        existing_raw = yaml.safe_load(path.read_text())
-    if not isinstance(existing_raw, list):
-        raise ValueError(f"{path} must contain a YAML list")
-    names: dict[str, str] = {}
-    for item in existing_raw:
-        if not isinstance(item, dict) or "id" not in item or "name" not in item:
-            raise ValueError(f"{path} contains a malformed topic entry")
-        topic_id = item["id"]
-        topic_name = item["name"]
-        if not isinstance(topic_id, str) or not isinstance(topic_name, str):
-            raise ValueError(f"{path} contains a non-string topic entry")
-        names[topic_id] = topic_name
-    for record in records:
-        for topic_name in record["tags"]:
-            topic_id = slug(topic_name)
-            if not topic_id:
-                raise ValueError(f"empty topic slug for {topic_name!r}")
-            if topic_id in names and names[topic_id] != topic_name:
-                if names[topic_id].casefold() != topic_name.casefold():
-                    raise ValueError(f"topic slug collision: {topic_id!r} names {names[topic_id]!r} and {topic_name!r}")
-                continue
-            names[topic_id] = topic_name
-    entries = [{"id": topic_id, "name": names[topic_id]} for topic_id in sorted(names)]
-    path.write_text("# Topics. A registry, not a schema enum: a new topic is a new entry here.\n" + yaml.safe_dump(entries, sort_keys=False, allow_unicode=True))
+def topic_vocabulary(root: Path) -> tuple[set[str], dict[str, str]]:
+    """Read the curated topic registry and its retirement aliases.
+
+    Both files belong to the classification side. This importer consumes them
+    and never writes them: a registry merge is a reading decision, so writing
+    the registry here would undo one on every re-import.
+    """
+    registry_path = root / "vocabularies/topics.yaml"
+    entries = yaml.safe_load(registry_path.read_text())
+    if not isinstance(entries, list):
+        raise ValueError(f"{registry_path} must contain a YAML list")
+    registered = set()
+    for item in entries:
+        if not isinstance(item, dict) or not isinstance(item.get("id"), str):
+            raise ValueError(f"{registry_path} contains a malformed topic entry")
+        registered.add(item["id"])
+
+    alias_path = root / "vocabularies/topic-aliases.yaml"
+    aliases: dict[str, str] = {}
+    for item in yaml.safe_load(alias_path.read_text()) or []:
+        if not isinstance(item, dict) or not isinstance(item.get("retired"), str) or not isinstance(item.get("survivor"), str):
+            raise ValueError(f"{alias_path} contains a malformed alias entry")
+        if item["survivor"] not in registered:
+            raise ValueError(f"{alias_path}: alias {item['retired']!r} names unregistered survivor {item['survivor']!r}")
+        aliases[item["retired"]] = item["survivor"]
+    return registered, aliases
 
 
 def write_source(
@@ -522,7 +540,7 @@ def write_occurrence(
     sitting_title: str,
 ) -> None:
     area = AREA_SLUG[record["exam"]]
-    topics = list(dict.fromkeys(slug(tag) for tag in record["tags"]))
+    topics = record["topics"]
     number = str(record["number"])
     locator = number if number not in {"", "0"} else f"row-{record['sequence']:04d}"
     metadata = {
@@ -634,8 +652,7 @@ def reconcile(
                 problem_history[fingerprint] = legacy
             problem_legacy[fingerprint] = legacy
             area = AREA_SLUG[record["exam"]]
-            topics = list(dict.fromkeys(slug(tag) for tag in record["tags"]))
-            problem_details[fingerprint] = (area, topics)
+            problem_details[fingerprint] = (area, record["topics"])
 
     unique_fingerprints = list(problem_ids)
     unique_statements = [next(record["question"] for record in records if record["normalized"] == fingerprint) for fingerprint in unique_fingerprints]
@@ -738,7 +755,6 @@ def reconcile(
     ledger_path = root / LEDGER_NAME
     ledger_path.parent.mkdir(parents=True, exist_ok=True)
     ledger_path.write_text("".join(json.dumps(item, sort_keys=True) + "\n" for item in ledger))
-    topic_registry(root, records)
 
     summary = {
         "source": source,

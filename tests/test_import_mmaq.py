@@ -9,6 +9,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
+import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -82,6 +83,14 @@ def _snapshot(root: Path) -> dict[str, str]:
     return result
 
 
+def _vocabulary(root: Path, topics: list[str], aliases: list[dict[str, str]] | None = None) -> None:
+    """Seed the curated topic vocabulary the importer reads and never writes."""
+    directory = root / "vocabularies"
+    directory.mkdir(parents=True, exist_ok=True)
+    (directory / "topics.yaml").write_text(yaml.safe_dump([{"id": t, "name": t} for t in topics]))
+    (directory / "topic-aliases.yaml").write_text(yaml.safe_dump(aliases or []))
+
+
 def _run(root: Path, source: Path) -> None:
     subprocess.run(
         [sys.executable, str(IMPORTER), "--root", str(root), "--input", str(source)],
@@ -97,9 +106,8 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
 
     source = tmp_path / "Combined_Questions.yaml"
     _fixture(source)
+    _vocabulary(tmp_path, ["groups", "sequences", "point-set", "residues"])
     (tmp_path / "corpus/imports").mkdir(parents=True)
-    (tmp_path / "vocabularies").mkdir()
-    (tmp_path / "vocabularies/topics.yaml").write_text("[]\n")
     keep = tmp_path / "corpus/imports/keep.txt"
     keep.write_text("user-owned marker\n")
     legacy = tmp_path / "corpus/imports/mmaq-full"
@@ -146,6 +154,34 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
     assert _snapshot(tmp_path) == first
 
 
+def test_a_retired_topic_resolves_to_its_survivor_and_an_unregistered_one_stops_the_import(tmp_path: Path) -> None:
+    """Registry merges are curation: the importer honours them and never writes them."""
+
+    source = tmp_path / "Combined_Questions.yaml"
+    _fixture(source)
+    (tmp_path / "corpus/imports").mkdir(parents=True)
+    # "Point Set" slugs to point-set, which this registry retired in favour of point-set-topology.
+    _vocabulary(
+        tmp_path,
+        ["groups", "sequences", "point-set-topology", "residues"],
+        [{"retired": "point-set", "survivor": "point-set-topology"}],
+    )
+    registry_before = (tmp_path / "vocabularies/topics.yaml").read_text()
+
+    _run(tmp_path, source)
+    topics = {topic for path in (tmp_path / "corpus/imports/mmaq-total").glob("O-*.md") for topic in _meta(path)["classification"]["topics"]}
+    assert "point-set-topology" in topics
+    assert "point-set" not in topics
+    assert (tmp_path / "vocabularies/topics.yaml").read_text() == registry_before
+
+    # Drop the alias: the tag is now neither registered nor mapped, and the import stops.
+    _vocabulary(tmp_path, ["groups", "sequences", "point-set-topology", "residues"])
+    with pytest.raises(subprocess.CalledProcessError) as caught:
+        _run(tmp_path, source)
+    assert "unregistered-topic" in caught.value.stderr
+    assert "point-set" in caught.value.stderr
+
+
 def test_loose_equates_rendering_spellings_and_separates_different_mathematics() -> None:
     """The corpus's statement identity: same mathematics, whatever the spelling."""
 
@@ -168,10 +204,9 @@ def test_import_joins_a_sitting_the_corpus_already_records(tmp_path: Path) -> No
 
     source = tmp_path / "Combined_Questions.yaml"
     _fixture(source)
+    _vocabulary(tmp_path, ["groups", "sequences", "point-set", "residues"])
     (tmp_path / "corpus/imports").mkdir(parents=True)
     (tmp_path / "corpus/occurrences").mkdir()
-    (tmp_path / "vocabularies").mkdir()
-    (tmp_path / "vocabularies/topics.yaml").write_text("[]\n")
     native = {
         "schema": "qual/card@1",
         "id": "SRC-UGA-ALG-SPRING-2018",
