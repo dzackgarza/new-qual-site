@@ -3,14 +3,106 @@ id: GUIDE-COMPLEX-ANALYSIS
 kind: study-guide
 title: Complex Analysis
 lede: >-
-  Follow one dependency-ordered path from the definition of a complex derivative to the
-  theorems that only holomorphic functions satisfy: what contour integration proves about a
-  function on the inside of a curve, how that forces the local shape of zeros and poles, what
-  those poles compute, and which domains a holomorphic bijection can carry onto a disc.
+  Follow one dependency-ordered path from the arithmetic of the plane to the theorems that
+  only holomorphic functions satisfy: what the complex derivative costs, what contour
+  integration proves about a function on the inside of a curve, how that forces the local
+  shape of zeros and poles, what those poles compute, which domains a holomorphic bijection
+  can carry onto a disc, and what a limit of holomorphic functions can be. Each section
+  closes with panels drawn from the qual sittings, so the theory is read next to the
+  problems it was built to answer.
 sections:
+  - slug: complex-arithmetic-and-elementary-functions
+    title: Complex Arithmetic and the Elementary Functions
+    parent: GUIDE-COMPLEX-ANALYSIS
+    lede: >-
+      Nothing here is yet about holomorphy. It is about having the plane and its standard
+      functions at hand, because every later estimate is finally a computation in them. The
+      exponential is the whole content: sine and cosine are its even and odd parts along the
+      imaginary axis, the hyperbolic pair is the same combination along the real axis, and the
+      two families therefore differ by a rotation, which is the identity every contour argument
+      on a rectangle later runs on. Inverting the exponential is where the subject first
+      refuses to cooperate. The logarithm cannot be defined continuously on a punctured plane,
+      only on a slit one, and fixing a branch is a choice that later integrals pay for making:
+      the monodromy factor a keyhole contour collects is exactly the discontinuity recorded
+      here. Complex powers inherit the same ambiguity through the same definition.
+    items:
+      - ref: FD-XUGN3
+      - ref: FF-AGEQ4
+      - ref: FF-MV5X6
+      - ref: FF-VFWB6
+      - ref: FF-VR4UT
+      - ref: FF-LF5ND
+      - ref: FF-XKATS
+      - ref: FF-TBIC5
+      - ref: FF-2OHYV
+      - ref: D-OMBQT
+      - ref: D-4CSPM
+      - ref: D-T6INB
+      - ref: PR-MWUJS
+      - ref: T-E76LX
+      - query:
+          kind: problem
+          topics:
+            - geometry
+            - trigonometry
+            - hyperbolic-functions
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - complex-logarithm
+          limit: 6
+          review:
+            mode: any
+  - slug: series-and-convergence
+    title: Series and Convergence
+    parent: complex-arithmetic-and-elementary-functions
+    lede: >-
+      A power series is the object the rest of the subject converges to, so the tests that
+      decide when one converges come first. The root test is the one that matters, because it
+      returns a radius rather than a verdict, and the radius is what makes a disc of
+      convergence a domain. Inside that disc the convergence is uniform on compact subsets,
+      which is the hypothesis every later interchange of limit and integral quotes. The
+      boundary is where the tests separate: absolute convergence settles the circle in one
+      stroke when the coefficients are summable, and when they are not, summation by parts and
+      Dirichlet's test decide the circle point by point, which is why the same three series
+      appear over and over as the standard examples of every possible behaviour. Abel's theorem
+      then connects a boundary value back to the radial limit.
+    items:
+      - ref: PR-NQ64T
+      - ref: PR-TOK44
+      - ref: PR-WIMIM
+      - ref: PR-5WUAP
+      - ref: T-AZSCN
+      - ref: PR-2MTPE
+      - ref: FT-3ZL25
+      - ref: L-MYZOX
+      - ref: T-B7YTE
+      - ref: PR-4LISY
+      - ref: FE-VWNUI
+      - ref: FE-LAN3V
+      - ref: FE-EUOB2
+      - query:
+          kind: problem
+          topics:
+            - convergence-tests
+            - series-of-numbers
+            - series-of-functions
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - power-series
+          limit: 6
+          review:
+            mode: any
   - slug: holomorphy-and-analyticity
     title: Holomorphy and Analyticity
-    parent: GUIDE-COMPLEX-ANALYSIS
+    parent: series-and-convergence
     lede: >-
       Start with the complex derivative as a limit that must agree from every direction. That
       single requirement is the whole subject in compressed form: approaching along the real
@@ -30,9 +122,61 @@ sections:
       - ref: PR-K57J6
       - ref: D-V6UQJ
       - ref: PR-QNDSD
+      - query:
+          kind: problem
+          topics:
+            - cauchy-riemann
+            - holomorphic-functions
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - cauchy-riemann
+          limit: 6
+          review:
+            mode: any
+  - slug: harmonic-functions
+    title: Harmonic Functions
+    parent: holomorphy-and-analyticity
+    lede: >-
+      The Cauchy-Riemann equations produced a pair of harmonic functions from every holomorphic
+      one, and this section takes that seriously as a two-way street. Locally the construction
+      reverses: a harmonic function on a disc is the real part of a holomorphic one, recovered
+      by integrating its conjugate differential along any path, and the integral is
+      path-independent for exactly the reason the equations say it is. Everything the modulus
+      principles will do for holomorphic functions therefore has a real counterpart proved the
+      same way, once through the mean value property and once by transporting the statement
+      through the holomorphic function whose real part it is. The Dirichlet problem is the
+      boundary-value question this makes it possible to ask, and it is where the subject
+      touches partial differential equations rather than absorbing them.
+    items:
+      - ref: D-CFBSA
+      - ref: PR-UWGI6
+      - ref: PR-6WOTK
+      - ref: PR-QW3ZK
+      - ref: C-KOFDQ
+      - ref: D-XR64P
+      - query:
+          kind: problem
+          topics:
+            - harmonic-functions
+            - pdes
+            - mean-value-property
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - harmonic-functions
+          limit: 6
+          review:
+            mode: any
   - slug: cauchy-theory
     title: Cauchy Theory
-    parent: holomorphy-and-analyticity
+    parent: harmonic-functions
     lede: >-
       Integration is what converts the pointwise derivative condition into global information.
       Cauchy-Goursat says a holomorphic function integrates to zero around any closed path in a
@@ -56,6 +200,32 @@ sections:
       - ref: T-BYNL5
       - ref: T-SVF2W
       - ref: T-LHSMY
+      - query:
+          kind: problem
+          topics:
+            - liouville-s-theorem
+            - entire-functions
+            - cauchy-estimates
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - identity-theorem
+            - morera
+            - maximum-modulus-principle
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - cauchy-integral-formula
+            - cauchy-integral-theorem
+          limit: 6
+          review:
+            mode: any
   - slug: zeros-and-singularities
     title: Zeros and Singularities
     parent: cauchy-theory
@@ -88,6 +258,24 @@ sections:
           limit: 5
           review:
             mode: any
+      - query:
+          kind: problem
+          topics:
+            - singularities
+            - removable-singularities
+            - essential-singularities
+            - casorati-weierstrass
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - laurent-series
+            - principal-parts
+          limit: 8
+          review:
+            mode: any
   - slug: argument-principle
     title: The Argument Principle
     parent: zeros-and-singularities
@@ -101,6 +289,8 @@ sections:
       f(z) = w for w near a value already attained shows every nonconstant holomorphic map is
       open, and openness is a second and sharper proof of the modulus principles: no interior
       point can maximize the modulus, and applying that to a reciprocal handles the minimum.
+      Rouche is the most heavily exercised theorem in the subject's problem record, which is
+      why its panel is the longest in the guide.
     items:
       - ref: D-IA5FS
       - ref: D-QEVVE
@@ -109,6 +299,30 @@ sections:
       - ref: T-5JNUU
       - ref: C-FRF33
       - ref: T-YLI6Y
+      - query:
+          kind: problem
+          topics:
+            - rouche
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - argument-principle
+            - winding-number
+            - open-mapping-theorem
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - zeros
+            - polynomials
+          limit: 8
+          review:
+            mode: any
   - slug: residues
     title: Residues and Contour Integration
     parent: argument-principle
@@ -123,7 +337,9 @@ sections:
       for: the first bounds any contour integral by supremum times length, the second supplies
       the decay an oscillatory factor needs on a large semicircle. Indented arcs at a simple
       pole contribute a fraction of the residue proportional to the angle, and the residue at
-      infinity closes off the count when all finite poles are enclosed.
+      infinity closes off the count when all finite poles are enclosed. Evaluation is the
+      largest single family of problems in the corpus, so the panels below are a sample of it
+      rather than a survey.
     items:
       - ref: T-VE5MW
       - ref: T-ESKLY
@@ -139,6 +355,22 @@ sections:
           limit: 5
           review:
             mode: any
+      - query:
+          kind: problem
+          topics:
+            - contour-integration
+            - integrals
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - residues
+            - contour-integration
+          limit: 10
+          review:
+            mode: any
   - slug: conformal-maps-and-the-disc
     title: Conformal Maps and the Disc
     parent: residues
@@ -152,7 +384,9 @@ sections:
       Schwarz lemma is the constraint: a self-map fixing the origin cannot expand, and equality
       anywhere forces a rotation. Composing with the Blaschke factors, which are the involutions
       moving a chosen point to the origin, removes the fixing hypothesis and pins down the
-      automorphism group exactly.
+      automorphism group exactly. The exam record for this section is almost entirely explicit
+      map-building between named regions, so its exercise panel is the one to read for
+      technique.
     items:
       - ref: D-PCDNH
       - ref: C-FVT4V
@@ -164,6 +398,30 @@ sections:
       - ref: PR-ULJAJ
       - ref: T-DAETF
       - ref: T-W26VL
+      - query:
+          kind: problem
+          topics:
+            - conformal-maps
+            - fractional-linear-transformations
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - schwarz-lemma
+            - blaschke-factors
+            - biholomorphisms
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - conformal-maps
+          limit: 10
+          review:
+            mode: any
   - slug: normal-families-and-omitted-values
     title: Normal Families and Omitted Values
     parent: conformal-maps-and-the-disc
@@ -179,6 +437,10 @@ sections:
       normal. That compactness is what lets an extremal argument converge, which is the Riemann
       mapping theorem. The same normality criterion, applied to families omitting values,
       strengthens Casorati-Weierstrass from dense image to an image omitting at most one point.
+      This is the thinnest section in the exam record. Normal families, Montel, Picard and the
+      Riemann mapping theorem carry five problems between them, and Hurwitz and Arzela-Ascoli
+      carry none at all, so the problem panel below is short because the corpus is, not because
+      the topic is small. Read the exercise panel instead: the technique is exercised there.
     items:
       - ref: D-AIQG3
       - ref: C-TODSQ
@@ -187,6 +449,113 @@ sections:
       - ref: T-6F3GO
       - ref: D-IJMPJ
       - ref: T-4ALS2
+      - ref: T-MCB7V
+      - ref: T-FZWEC
+      - ref: T-SULVA
+      - ref: T-4MDS6
       - ref: T-55MPA
       - ref: T-HWBWI
       - ref: T-DDOWW
+      - query:
+          kind: problem
+          topics:
+            - normal-families
+            - montel
+            - picard
+            - riemann-mapping
+          limit: 6
+          review:
+            mode: any
+      - query:
+          kind: exercise
+          topics:
+            - equicontinuity
+            - normal-families
+            - uniform-convergence
+          limit: 8
+          review:
+            mode: any
+  - slug: special-functions-and-factorization
+    title: Special Functions and Factorization
+    parent: normal-families-and-omitted-values
+    lede: >-
+      A holomorphic function is determined by its zeros up to a nonvanishing factor, and a
+      nonvanishing entire function is an exponential, so an entire function should be
+      reconstructible from its zero set. Weierstrass makes that literal with convergence factors
+      that let an infinite product over infinitely many zeros converge, and Hadamard sharpens it
+      for functions of finite order, where the exponential factor is a polynomial of bounded
+      degree. The classical functions are what the machinery was built for: the product for sine
+      is the identity behind the summation formulas evaluated by residues two sections back, and
+      Gamma and zeta are the standard examples of meromorphic continuation past the half-plane
+      where their integral and series converge. This section is under-filled relative to the
+      others and should be read as a pointer rather than a treatment. The corpus carries the
+      definitions and the statements but almost no worked problems, several of its Gamma and
+      zeta cards are images with no text, and the Weierstrass elliptic function has no statement
+      at all; those gaps are recorded on issue #2.
+    items:
+      - ref: T-2WJ4U
+      - ref: T-IEJFA
+      - ref: D-Q3MYK
+      - ref: PR-NLV6Q
+      - ref: PR-YQZI3
+      - ref: D-2WZLB
+      - ref: D-HJYH3
+      - ref: PR-K4KTF
+      - ref: T-BBQLQ
+      - ref: T-ZAEWG
+      - ref: C-BKYF7
+      - query:
+          kind: exercise
+          topics:
+            - gamma-function
+            - riemann-zeta
+            - weierstrass-factorization
+            - riemann-surfaces
+          limit: 8
+          review:
+            mode: any
+  - slug: problems-from-the-qual-sittings
+    title: Problems from the Qual Sittings
+    parent: GUIDE-COMPLEX-ANALYSIS
+    lede: >-
+      The sections above each end with the problems belonging to their own theory. This last
+      section is the other traversal: the problems that cut across sections, gathered by the
+      technique a solution reaches for rather than by where that technique was proved. A growth
+      bound with the conclusion that the function is a polynomial is one recurring shape; a
+      counting argument on a named polynomial is another; an estimate on the disc is a third.
+      Reading these after the theory is the point, because none of them announces which section
+      it belongs to, which is the condition the exam actually imposes.
+    items:
+      - query:
+          kind: problem
+          topics:
+            - entire-functions
+            - liouville-s-theorem
+          limit: 10
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - power-series
+            - laurent-series
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - uniform-convergence
+            - sequences-of-functions
+            - morera
+          limit: 8
+          review:
+            mode: any
+      - query:
+          kind: problem
+          topics:
+            - counterexamples
+            - uniform-continuity
+          limit: 8
+          review:
+            mode: any
