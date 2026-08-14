@@ -356,8 +356,6 @@ $$\|f\|_{(\infty, s)} \leq c \|f\|_{(1, r)},$$ where
 
 ## Fall 2016
 
-[[P-YBNB1]]
-
 ### Tie's Extra Questions: Fall 2016
 
 [[P-VF9RI]]

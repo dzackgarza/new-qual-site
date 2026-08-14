@@ -41,8 +41,6 @@
 
 ## Misc/Unsorted
 
-[[P-YBNB1]]
-
 ### Spring 2017 #3
 
 

@@ -88,8 +88,6 @@
 
 ## Galois Groups: Indirect Computations / Facts
 
-[[P-YBNB1]]
-
 ### Fall 2019 #7
 
 [[P-DGAQM]]
@@ -129,8 +127,6 @@
 [[P-QNQTT]]
 
 ## $p$th Roots and $x^{p^k}-x$
-
-[[P-YBNB1]]
 
 ### Spring 2021 #7
 

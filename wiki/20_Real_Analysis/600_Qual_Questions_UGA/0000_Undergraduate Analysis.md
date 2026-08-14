@@ -42,7 +42,6 @@
 
 # General Analysis
 
-[[P-YBNB1]]
 ## Spring 2020 # 1
 ## Fall 2019 # 1
 [[P-QOC7V]]

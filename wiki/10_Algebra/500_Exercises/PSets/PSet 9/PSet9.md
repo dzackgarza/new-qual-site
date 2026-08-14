@@ -16,8 +16,6 @@ title: Problem Set 9
 
 # Problem 2
 
-[[P-YBNB1]]
-
 ## Part 1
 
 [[P-1IM1B]]

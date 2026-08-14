@@ -28,8 +28,6 @@ title: Homework 6
 
 ## Problem 6
 
-[[P-YBNB1]]
-
 ### Part 1
 [[P-GKPVE]]
 
@@ -42,8 +40,6 @@ title: Homework 6
 [[P-5KS4C]]
 
 # Qual Problems
-
-[[P-YBNB1]]
 
 ## Problem 1
 
@@ -59,8 +55,6 @@ title: Homework 6
 [[P-PDRT9]]
 
 ## Problem 2
-
-[[P-YBNB1]]
 
 ### Part 1
 
