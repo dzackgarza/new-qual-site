@@ -19,7 +19,8 @@ Given: $H \subseteq G, P \in \text{Syl}_p(G)$
 
 Show: $\exists g \in G \ni gPg^{-1} \cap H \in \text{Syl}_p(H)$
 
-> The intersection with $H$ is needed. $gPg^{-1}$ has the full $p\dash$part of $\abs G$ as its order and need not be contained in $H$ at all, so it is a Sylow $p\dash$subgroup of $H$ only in the case $\abs H$ and $\abs G$ share that $p\dash$part.
+> The intersection with $H$ is needed.
+> $gPg^{-1}$ has the full $p\dash$part of $\abs G$ as its order and need not be contained in $H$ at all, so it is a Sylow $p\dash$subgroup of $H$ only in the case $\abs H$ and $\abs G$ share that $p\dash$part.
 
 Given: $H \normal G$
 

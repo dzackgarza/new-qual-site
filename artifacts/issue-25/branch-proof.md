@@ -99,15 +99,16 @@ The 50 source cards are unclassified by decision, not by omission, and the decis
 
 These were found by reading, not by any check, and none of them is fixed by the manifest work this proof covers.
 
-They were corrected afterwards, in `eee0d46d`, `8a4bc822`, `d58db4d3`, `fb546a5c`, `2d160bd2`, `205b5975` and `f00a577a`, each against a source cited in its commit body. Three classes are not corrected and stay routed to issue #2: the cards with no mathematics, the wrong-area oral-exam cards, and the duplicate pairs, which are decisions about what to keep rather than about what is true. Three items are recorded as unsettleable rather than guessed, and are named where they appear below.
+They were corrected afterwards, in `eee0d46d`, `8a4bc822`, `d58db4d3`, `fb546a5c`, `2d160bd2`, `205b5975` and `f00a577a`, each against a source cited in its commit body.
+Three classes are not corrected and stay routed to issue #2: the cards with no mathematics, the wrong-area oral-exam cards, and the duplicate pairs, which are decisions about what to keep rather than about what is true.
+Three items are recorded as unsettleable rather than guessed, and are named where they appear below.
 
 ### Statements that are false as written
 
 `T-EN5H4` says S_n is solvable for n ≥ 4; it is solvable exactly for n ≤ 4. `E-AMD-5X2XEHTC`, `P-VAK32` ask to show a nilpotent operator is diagonalisable; only the zero operator is.
 `E-AMD-O2OGRSJP`, `P-WI5OS` ask to show Z(S_n) is nontrivial for n ≥ 4, contradicting `E-AMD-74T5EHRR` and `P-JPTMN` in the same corpus.
 `E-AMD-VGBOZDXZ`, `P-VX22R` say every normal subgroup of a p-group lies in the center; the true statement is its neighbour `E-AMD-TM3LMADH`. `E-AMD-DLD6LYAM`, `P-35P7L` conclude G ≅ A_4 from a normal subgroup of order 4 in a group of order 12; Z/12 has one too.
-`E-AMD-EBIC3Z5S` concludes R is a UFD from spec(R) ⊆ maxspec(R). `E-AMD-J3YZ5TXF`, `P-KSSA7`, `P-S5JSR` say the Galois group of x^n − 2 is D_n; the group embeds in Z/n ⋊ (Z/n)^× and is dihedral exactly when φ(n) = 2, that is for n = 3, 4, 6.
-`P-AMD-2PFLAITV` says no group of order under 60 is simple; the cyclic groups of prime order are.
+`E-AMD-EBIC3Z5S` concludes R is a UFD from spec(R) ⊆ maxspec(R). `E-AMD-J3YZ5TXF`, `P-KSSA7`, `P-S5JSR` say the Galois group of x^n − 2 is D_n; the group embeds in Z/n ⋊ (Z/n)^× and is dihedral exactly when φ(n) = 2, that is for n = 3, 4, 6. `P-AMD-2PFLAITV` says no group of order under 60 is simple; the cyclic groups of prime order are.
 `P-AMD-AFCXP5C6` asks to show Q/Z ≅ C^×. `P-AMD-D4G4SW2S` asks for gPg⁻¹ ∈ Syl_p(H) where gPg⁻¹ ∩ H is meant; `E-AMD-DGMOEV2O` asks for P ∩ H ∈ Syl_p(H) given P ∈ Syl_p(H), which is trivial.
 `E-AMD-LDJWILVY`, `P-B644L` conclude HK ≤ H. `E-AMD-E3UUQEAP` gives the splitting field of x³ − 2 as Q(∛2, ζ_2), and ζ_2 = −1. `P-SXM4Q` asks to prove ⟨s⟩ is normal in G rather than in C_G(s). `P-O2H7G` hypothesises H ∈ N_G(H). `P-3PD4W` asks for the center of a group of order pr with p prime; order 6 is a counterexample and p^r is presumably meant.
 `E-AMD-5E2GZSH6` says "Prove Burnside's theorem" without saying which.
