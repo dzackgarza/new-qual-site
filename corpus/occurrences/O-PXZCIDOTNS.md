@@ -6,7 +6,10 @@ title: P-DFB3Y at UGA topology Spring 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - degree
+  - homology
 relations:
 - kind: instance-of
   target: P-DFB3Y

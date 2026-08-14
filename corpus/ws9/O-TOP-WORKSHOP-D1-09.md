@@ -6,7 +6,9 @@ title: 'Problem 9 (Purdue 2011) at Topology Qual Workshop Day 1: Compactness'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - compactness
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D1-09

@@ -6,7 +6,10 @@ title: P-23NY2 at UGA topology Fall 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
+  - surfaces
 relations:
 - kind: instance-of
   target: P-23NY2

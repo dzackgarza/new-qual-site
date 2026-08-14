@@ -6,7 +6,9 @@ title: 'Worksheet 2B problem 4 (June 2010)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T10A4

@@ -6,7 +6,8 @@ title: 'Worksheet 1 Part 2 first-list problem 2 (May 2016)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-T16A2

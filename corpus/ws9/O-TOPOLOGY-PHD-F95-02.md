@@ -6,7 +6,9 @@ title: 'F95phdtop Section I problem 2'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-02

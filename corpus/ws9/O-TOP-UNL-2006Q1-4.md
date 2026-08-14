@@ -6,7 +6,10 @@ title: 'Question 4 at the UNL Mathematics Qualifying Exam, January 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - point-set
 relations:
 - kind: instance-of
   target: P-T06Q1-4

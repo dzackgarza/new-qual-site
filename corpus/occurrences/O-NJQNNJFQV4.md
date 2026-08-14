@@ -6,7 +6,10 @@ title: P-OKDFC at UGA topology Spring 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-OKDFC

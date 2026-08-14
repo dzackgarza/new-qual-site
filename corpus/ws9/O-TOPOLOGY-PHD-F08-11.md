@@ -6,7 +6,9 @@ title: 'F08phdtop page 2, Part One problem 11'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - point-set
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-11

@@ -6,7 +6,10 @@ title: P-QHH2O at UGA topology Spring 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - product-topology
 relations:
 - kind: instance-of
   target: P-QHH2O

@@ -6,7 +6,9 @@ title: P-P6A3Q at UGA topology Spring 2021
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations:
 - kind: instance-of
   target: P-P6A3Q

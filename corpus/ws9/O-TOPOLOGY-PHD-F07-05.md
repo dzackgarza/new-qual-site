@@ -6,7 +6,9 @@ title: 'F07phdtop page 1, Part One problem 5'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-05

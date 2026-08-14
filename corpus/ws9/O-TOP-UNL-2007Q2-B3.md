@@ -6,7 +6,10 @@ title: Section B3 at the UNL Mathematics Qualifying Exam, June 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - retracts
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T07B3

@@ -6,7 +6,10 @@ title: 'Problem 1 (Michigan May 2009) at Topology Qual Workshop Day 7: Fundament
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D7-G01

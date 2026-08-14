@@ -6,7 +6,9 @@ title: P-2HSIO at UGA topology Fall 2010
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-2HSIO

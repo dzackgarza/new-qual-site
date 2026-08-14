@@ -6,7 +6,9 @@ title: P-CI7E2 at UGA topology Fall 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-CI7E2

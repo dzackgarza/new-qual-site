@@ -6,7 +6,11 @@ title: P-U7G2X at UCSD topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - euler-characteristic
+  - group-actions
+  - manifolds
 relations:
 - kind: instance-of
   target: P-U7G2X

@@ -6,7 +6,10 @@ title: 'Question 1 at the UNL Mathematics Qualifying Exam, June 2005'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - limits
+  - point-set
 relations:
 - kind: instance-of
   target: P-T05A1

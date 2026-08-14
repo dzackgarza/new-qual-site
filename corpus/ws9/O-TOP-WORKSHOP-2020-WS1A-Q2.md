@@ -6,7 +6,10 @@ title: 'Worksheet 1 Part 2 second-list problem 2 (May 2016)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - groups
 relations:
 - kind: instance-of
   target: P-T16B2

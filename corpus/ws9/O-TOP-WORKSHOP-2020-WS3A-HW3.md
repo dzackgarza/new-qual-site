@@ -6,7 +6,9 @@ title: 'Worksheet 3A warm-up 3 (classification of surfaces)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - surfaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS3A-HW3

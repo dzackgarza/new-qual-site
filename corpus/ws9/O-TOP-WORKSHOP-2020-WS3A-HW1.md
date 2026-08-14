@@ -6,7 +6,9 @@ title: 'Worksheet 3A warm-up 1 (cell complexes)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - surfaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS3A-HW1

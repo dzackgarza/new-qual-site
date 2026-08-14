@@ -6,7 +6,10 @@ title: P-XRGV7 at UGA topology Fall 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - surfaces
 relations:
 - kind: instance-of
   target: P-XRGV7

@@ -6,7 +6,10 @@ title: 'Problem 4 (January 2006 A4) at Topology Qual Workshop Day 1: Compactness
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - point-set
 relations:
 - kind: instance-of
   target: P-T06Q1-4

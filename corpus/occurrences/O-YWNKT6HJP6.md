@@ -6,7 +6,9 @@ title: P-6ATGL at UGA topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - homology
 relations:
 - kind: instance-of
   target: P-6ATGL

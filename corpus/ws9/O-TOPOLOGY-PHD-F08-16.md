@@ -6,7 +6,10 @@ title: 'F08phdtop page 2, Part Two problem 4'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - retracts
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-16

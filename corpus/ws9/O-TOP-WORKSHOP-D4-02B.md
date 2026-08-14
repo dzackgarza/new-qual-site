@@ -6,7 +6,9 @@ title: 'Problem 2 (June 2008 A3) at Topology Qual Workshop Day 4: Assorted Probl
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - continuity
 relations:
 - kind: instance-of
   target: P-T08A3

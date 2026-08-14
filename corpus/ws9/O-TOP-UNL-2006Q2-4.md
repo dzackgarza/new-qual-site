@@ -6,7 +6,9 @@ title: 'Question 4 at the UNL Mathematics Qualifying Exam, June 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - connectedness
 relations:
 - kind: instance-of
   target: P-T06Q2-4

@@ -6,7 +6,11 @@ title: P-AT75W at UGA topology Spring 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
+  - hausdorff-spaces
+  - homeomorphisms
 relations:
 - kind: instance-of
   target: P-AT75W

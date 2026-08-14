@@ -6,7 +6,10 @@ title: 'Question 7 at the UNL Mathematics Qualifying Exam, June 2005'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T05B3

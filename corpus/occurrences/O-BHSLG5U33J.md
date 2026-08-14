@@ -6,7 +6,10 @@ title: P-653RW at UGA topology Spring 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - conjugacy
+  - fundamental-group
+  - homotopy
 relations:
 - kind: instance-of
   target: P-653RW

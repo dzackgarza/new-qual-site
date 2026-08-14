@@ -6,7 +6,10 @@ title: P-D2RBT at UGA topology Fall 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-D2RBT

@@ -6,7 +6,10 @@ title: Section B4 at the UNL Math Topology Qualifying Exam, May 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T16B4

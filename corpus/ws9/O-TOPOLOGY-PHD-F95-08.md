@@ -6,7 +6,10 @@ title: 'F95phdtop Section II problem 3'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - quotient-spaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-08

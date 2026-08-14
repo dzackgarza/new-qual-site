@@ -6,7 +6,9 @@ title: 'F95phdtop Section I problem 1'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-01

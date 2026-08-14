@@ -6,7 +6,8 @@ title: 'Worksheet 2 problem 1 (June 2010)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
 relations:
 - kind: instance-of
   target: P-T10A1

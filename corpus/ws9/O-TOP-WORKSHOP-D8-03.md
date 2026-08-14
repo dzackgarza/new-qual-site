@@ -6,7 +6,10 @@ title: 'Problem 3 (June 2005) at Topology Qual Workshop Day 8: Covering Spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - surfaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-03

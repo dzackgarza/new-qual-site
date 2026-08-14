@@ -6,7 +6,10 @@ title: P-LLCQX at UGA topology Spring 2005
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - homology
 relations:
 - kind: instance-of
   target: P-LLCQX

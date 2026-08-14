@@ -6,7 +6,10 @@ title: 'Worksheet 2A problem 2 (January 2017)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - product-topology
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-T17Q1-3

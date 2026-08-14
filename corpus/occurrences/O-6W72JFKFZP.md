@@ -6,7 +6,9 @@ title: P-UCJF3 at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-UCJF3

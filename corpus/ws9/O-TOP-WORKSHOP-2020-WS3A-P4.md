@@ -6,7 +6,10 @@ title: 'Worksheet 3A problem 4 (May 2019)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - quotient-spaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-T19B1

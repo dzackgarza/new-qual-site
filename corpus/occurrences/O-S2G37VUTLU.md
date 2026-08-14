@@ -6,7 +6,9 @@ title: P-YTOUD at UGA topology Spring 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-YTOUD

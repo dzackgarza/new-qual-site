@@ -6,7 +6,10 @@ title: P-IWMWM at UCSD topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - retracts
+  - surfaces
 relations:
 - kind: instance-of
   target: P-IWMWM

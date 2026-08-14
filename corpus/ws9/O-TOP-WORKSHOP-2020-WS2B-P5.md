@@ -6,7 +6,10 @@ title: 'Worksheet 2B problem 5 (June 2011)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-T11A4

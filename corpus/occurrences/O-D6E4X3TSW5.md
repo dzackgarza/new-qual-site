@@ -6,7 +6,9 @@ title: P-A3USX at UGA topology Spring 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-A3USX

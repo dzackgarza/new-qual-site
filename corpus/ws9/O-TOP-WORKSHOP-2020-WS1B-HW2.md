@@ -6,7 +6,9 @@ title: 'Worksheet 2 warm-up 2 (basis topology)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - bases
+  - point-set
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS1B-HW2

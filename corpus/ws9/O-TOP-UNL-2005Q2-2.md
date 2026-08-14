@@ -6,7 +6,9 @@ title: 'Question 2 at the UNL Mathematics Qualifying Exam, June 2005'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
 relations:
 - kind: instance-of
   target: P-T05A2

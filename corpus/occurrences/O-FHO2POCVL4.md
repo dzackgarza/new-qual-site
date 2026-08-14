@@ -6,7 +6,9 @@ title: P-7XSR6 at UGA topology Spring 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homotopy
 relations:
 - kind: instance-of
   target: P-7XSR6

@@ -6,7 +6,9 @@ title: P-OCUZ4 at UGA topology Spring 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homology
 relations:
 - kind: instance-of
   target: P-OCUZ4

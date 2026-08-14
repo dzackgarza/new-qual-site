@@ -6,7 +6,10 @@ title: 'Warm-up 3 at Topology Qual Workshop Day 3: Separation Axioms'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - point-set
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D3-W3

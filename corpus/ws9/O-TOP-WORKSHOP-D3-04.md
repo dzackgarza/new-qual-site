@@ -6,7 +6,10 @@ title: 'Problem 4 (January 2004 A2) at Topology Qual Workshop Day 3: Separation 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D3-04

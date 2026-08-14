@@ -6,7 +6,11 @@ title: 'Question 5 at the UNL Mathematics Qualifying Exam, June 2014'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T14B1

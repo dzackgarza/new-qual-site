@@ -6,7 +6,9 @@ title: 'Worksheet 2A problem 3 (May 2018)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-T18A3

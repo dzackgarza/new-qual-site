@@ -6,7 +6,9 @@ title: 'Problem 4 (Purdue Jan 2009) at Topology Qual Workshop Day 8: Covering Sp
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - covering-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-04

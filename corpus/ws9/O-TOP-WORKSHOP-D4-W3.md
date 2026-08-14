@@ -6,7 +6,10 @@ title: 'Warm-up 3 at Topology Qual Workshop Day 4: Counterexamples'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
+  - point-set
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D4-W3

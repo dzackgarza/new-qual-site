@@ -6,7 +6,9 @@ title: P-MDFEL at UGA topology Spring 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations:
 - kind: instance-of
   target: P-MDFEL

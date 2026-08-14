@@ -6,7 +6,10 @@ title: P-QICKA at UGA topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-QICKA

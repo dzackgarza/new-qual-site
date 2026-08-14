@@ -6,7 +6,10 @@ title: P-OSZPJ at UGA topology Fall 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - surfaces
 relations:
 - kind: instance-of
   target: P-OSZPJ

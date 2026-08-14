@@ -6,7 +6,8 @@ title: 'Warm-up 1 at Topology Qual Workshop Day 2: Connectedness and Path Connec
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D2-W1

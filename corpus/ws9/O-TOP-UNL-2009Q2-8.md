@@ -6,7 +6,9 @@ title: 'Question 8 at the UNL Mathematics Qualifying Exam, June 2009'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-T09B4

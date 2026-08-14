@@ -6,7 +6,9 @@ title: P-M2NVE at UGA topology Fall 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homotopy
 relations:
 - kind: instance-of
   target: P-M2NVE

@@ -6,7 +6,9 @@ title: 'Problem 2 (January 2008 B7) at Topology Qual Workshop Day 2: Connectedne
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - product-topology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D2-02

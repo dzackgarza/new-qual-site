@@ -6,7 +6,10 @@ title: P-HCQNH at UGA topology Spring 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - homology
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-HCQNH

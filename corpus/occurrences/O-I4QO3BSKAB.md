@@ -6,7 +6,8 @@ title: P-HOJTU at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations:
 - kind: instance-of
   target: P-HOJTU

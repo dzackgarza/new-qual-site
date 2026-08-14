@@ -6,7 +6,9 @@ title: P-FD3FN at UGA topology Spring 2012
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-FD3FN

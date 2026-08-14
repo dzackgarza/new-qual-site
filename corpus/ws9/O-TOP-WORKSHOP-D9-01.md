@@ -6,7 +6,10 @@ title: 'Problem 1 (Michigan Sept 2010) at Topology Qual Workshop Day 9: Homology
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - quotient-spaces
+  - surfaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D9-01

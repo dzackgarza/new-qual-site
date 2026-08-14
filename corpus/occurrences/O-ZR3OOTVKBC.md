@@ -6,7 +6,10 @@ title: P-C62HS at UGA topology Fall 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - fixed-points
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-C62HS

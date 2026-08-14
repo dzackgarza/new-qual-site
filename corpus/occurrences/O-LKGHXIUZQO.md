@@ -6,7 +6,9 @@ title: P-43KOX at UGA topology Spring 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - product-topology
 relations:
 - kind: instance-of
   target: P-43KOX

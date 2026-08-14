@@ -6,7 +6,11 @@ title: P-22GH7 at UGA topology Spring 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - euler-characteristic
+  - quotient-spaces
+  - surfaces
 relations:
 - kind: instance-of
   target: P-22GH7

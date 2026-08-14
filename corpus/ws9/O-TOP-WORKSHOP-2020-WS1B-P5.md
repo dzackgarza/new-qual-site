@@ -6,7 +6,9 @@ title: 'Worksheet 2 problem 5 (May 2020)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
 relations:
 - kind: instance-of
   target: P-T20A4

@@ -6,7 +6,9 @@ title: 'F07phdtop page 1, Part One problem 6'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-06

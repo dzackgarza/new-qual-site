@@ -6,7 +6,10 @@ title: Section B4 at the UNL Mathematics Qualifying Exam, June 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - euler-characteristic
+  - homology
 relations:
 - kind: instance-of
   target: P-T07B4

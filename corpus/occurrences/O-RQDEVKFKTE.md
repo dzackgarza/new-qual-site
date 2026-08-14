@@ -6,7 +6,10 @@ title: P-B3VM7 at UGA topology Spring 2011
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
+  - homology
 relations:
 - kind: instance-of
   target: P-B3VM7

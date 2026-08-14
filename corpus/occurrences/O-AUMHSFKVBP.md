@@ -6,7 +6,9 @@ title: P-CDWQH at UGA topology Spring 2012
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - homology
 relations:
 - kind: instance-of
   target: P-CDWQH

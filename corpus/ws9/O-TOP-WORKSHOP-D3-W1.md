@@ -6,7 +6,9 @@ title: 'Warm-up 1 at Topology Qual Workshop Day 3: Separation Axioms'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D3-W1

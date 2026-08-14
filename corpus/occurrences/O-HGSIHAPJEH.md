@@ -6,7 +6,9 @@ title: P-7N24X at UGA topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-7N24X

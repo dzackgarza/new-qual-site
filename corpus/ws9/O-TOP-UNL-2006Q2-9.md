@@ -6,7 +6,8 @@ title: 'Question 9 at the UNL Mathematics Qualifying Exam, June 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations:
 - kind: instance-of
   target: P-T06Q2-9

@@ -6,7 +6,10 @@ title: 'Question 9 at the UNL Mathematics Qualifying Exam, January 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T06Q1-9

@@ -6,7 +6,9 @@ title: 'Problem 6 (Purdue Jan 2008) at Topology Qual Workshop Day 8: Covering Sp
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - covering-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-06

@@ -6,7 +6,10 @@ title: P-YHFCR at UCSD topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-YHFCR

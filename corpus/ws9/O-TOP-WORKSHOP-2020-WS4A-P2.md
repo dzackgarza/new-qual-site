@@ -6,7 +6,9 @@ title: 'Worksheet 4A problem 2 (January 2017)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-T17Q1-8

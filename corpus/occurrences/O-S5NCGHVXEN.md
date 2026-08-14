@@ -6,7 +6,9 @@ title: P-KN75K at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-KN75K

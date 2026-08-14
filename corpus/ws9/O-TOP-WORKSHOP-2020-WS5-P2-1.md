@@ -6,7 +6,10 @@ title: 'Worksheet 5 Part 2 problem 1 (May 2013)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-12

@@ -6,7 +6,10 @@ title: Problem 6 at the UNL Math 871-872 Topology Qualifying Exam, January 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T17Q1-6

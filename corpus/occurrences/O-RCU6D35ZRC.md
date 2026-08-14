@@ -6,7 +6,9 @@ title: P-2HMGE at UGA topology Spring 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-2HMGE

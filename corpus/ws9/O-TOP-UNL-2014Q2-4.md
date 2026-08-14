@@ -6,7 +6,9 @@ title: 'Question 4 at the UNL Mathematics Qualifying Exam, June 2014'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T14A4

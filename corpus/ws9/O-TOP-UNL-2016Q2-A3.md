@@ -6,7 +6,9 @@ title: Section A3 at the UNL Math Topology Qualifying Exam, May 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
 relations:
 - kind: instance-of
   target: P-T16A3

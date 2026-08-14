@@ -6,7 +6,9 @@ title: P-RQN6N at UGA topology Spring 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-RQN6N

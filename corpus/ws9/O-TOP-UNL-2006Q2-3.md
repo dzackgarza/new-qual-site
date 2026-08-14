@@ -6,7 +6,9 @@ title: 'Question 3 at the UNL Mathematics Qualifying Exam, June 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-T06Q2-3

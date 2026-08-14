@@ -6,7 +6,10 @@ title: 'Question 6 at the UNL Mathematics Qualifying Exam, June 2005'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T05B2

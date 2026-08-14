@@ -6,7 +6,11 @@ title: P-VN3M2 at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homology
+  - manifolds
+  - poincare-duality
 relations:
 - kind: instance-of
   target: P-VN3M2

@@ -6,7 +6,9 @@ title: 'F08phdtop page 2, Part One problem 10'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-10

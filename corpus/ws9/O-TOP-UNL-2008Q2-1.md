@@ -6,7 +6,9 @@ title: 'Question 1 at the UNL Mathematics Qualifying Exam, June 2008'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T08A1

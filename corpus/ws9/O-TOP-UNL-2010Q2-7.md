@@ -6,7 +6,9 @@ title: 'Question 7 at the UNL Mathematics Qualifying Exam, June 2010'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
 relations:
 - kind: instance-of
   target: P-T10B3

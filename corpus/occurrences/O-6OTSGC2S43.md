@@ -6,7 +6,9 @@ title: P-K6HWV at UGA topology Spring 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-K6HWV

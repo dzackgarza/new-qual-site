@@ -6,7 +6,10 @@ title: 'Question 3 at the UNL Mathematics Qualifying Exam, June 2014'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
+  - point-set
 relations:
 - kind: instance-of
   target: P-T14A3

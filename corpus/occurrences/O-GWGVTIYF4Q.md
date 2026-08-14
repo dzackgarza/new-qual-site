@@ -6,7 +6,10 @@ title: P-7NQO2 at UCSD topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - euler-characteristic
+  - group-actions
 relations:
 - kind: instance-of
   target: P-7NQO2

@@ -6,7 +6,11 @@ title: P-P4P4L at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homology
+  - manifolds
+  - poincare-duality
 relations:
 - kind: instance-of
   target: P-P4P4L

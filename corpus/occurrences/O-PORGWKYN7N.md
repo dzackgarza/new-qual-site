@@ -6,7 +6,9 @@ title: P-BW6LF at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-BW6LF

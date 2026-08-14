@@ -6,7 +6,10 @@ title: 'F07phdtop page 1, Part One problem 3'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - point-set
+  - product-topology
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-03

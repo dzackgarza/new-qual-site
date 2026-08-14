@@ -6,7 +6,10 @@ title: 'Worksheet 4A problem 1 (May 2015)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T15B4

@@ -6,7 +6,10 @@ title: 'Problem 4 (January 2002) at Topology Qual Workshop Day 7: Fundamental Gr
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D7-G04-AXES

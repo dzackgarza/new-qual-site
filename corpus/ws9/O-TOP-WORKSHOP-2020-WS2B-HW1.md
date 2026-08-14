@@ -6,7 +6,9 @@ title: 'Worksheet 2B warm-up 1 (retractions)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2B-HW1

@@ -6,7 +6,10 @@ title: P-3AKX2 at UGA topology Spring 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-3AKX2

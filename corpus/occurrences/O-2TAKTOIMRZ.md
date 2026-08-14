@@ -6,7 +6,9 @@ title: P-N3RQY at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-N3RQY

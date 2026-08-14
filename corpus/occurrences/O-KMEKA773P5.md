@@ -6,7 +6,10 @@ title: P-HOIQ3 at UGA topology Fall 2004
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - point-set
 relations:
 - kind: instance-of
   target: P-HOIQ3

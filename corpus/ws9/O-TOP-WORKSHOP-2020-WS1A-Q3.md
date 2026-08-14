@@ -6,7 +6,9 @@ title: 'Worksheet 1 Part 2 second-list problem 3 (May 2016)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homeomorphisms
 relations:
 - kind: instance-of
   target: P-T16B3

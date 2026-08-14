@@ -6,7 +6,10 @@ title: P-FQNYQ at UGA topology Spring 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - homology
 relations:
 - kind: instance-of
   target: P-FQNYQ

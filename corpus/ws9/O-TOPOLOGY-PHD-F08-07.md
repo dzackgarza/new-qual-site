@@ -6,7 +6,9 @@ title: 'F08phdtop page 1, Part One problem 7'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - product-topology
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-07

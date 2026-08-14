@@ -6,7 +6,10 @@ title: 'F07phdtop page 2, Part One problem 9'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-09

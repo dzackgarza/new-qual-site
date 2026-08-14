@@ -6,7 +6,9 @@ title: 'Worksheet 2B problem 3 (January 2019)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - counterexamples
+  - homotopy
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2B-P3

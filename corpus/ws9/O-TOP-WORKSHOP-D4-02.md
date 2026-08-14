@@ -6,7 +6,9 @@ title: 'Problem 2 (June 2008 A1) at Topology Qual Workshop Day 4: Counterexample
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T08A1

@@ -6,7 +6,8 @@ title: P-B2VGV at UGA topology Fall 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-B2VGV

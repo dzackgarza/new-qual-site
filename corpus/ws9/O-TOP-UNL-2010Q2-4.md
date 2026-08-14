@@ -6,7 +6,9 @@ title: 'Question 4 at the UNL Mathematics Qualifying Exam, June 2010'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T10A4

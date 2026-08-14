@@ -6,7 +6,10 @@ title: 'Worksheet 5 Part 2 problem 4 (May 2013)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homological-algebra
+  - homology
 relations:
 - kind: instance-of
   target: P-T13B4

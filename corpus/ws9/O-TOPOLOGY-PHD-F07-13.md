@@ -6,7 +6,8 @@ title: 'F07phdtop page 2, Part Two problem 1'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-13

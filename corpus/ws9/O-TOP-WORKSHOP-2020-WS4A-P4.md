@@ -6,7 +6,10 @@ title: 'Worksheet 4A problem 4 (January 2019)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T19Q1-8

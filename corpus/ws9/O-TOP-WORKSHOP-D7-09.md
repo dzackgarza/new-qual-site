@@ -6,7 +6,10 @@ title: 'Problem 9 (January 2012) at Topology Qual Workshop Day 7: Fundamental Gr
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - retracts
 relations:
 - kind: instance-of
   target: P-T12B4

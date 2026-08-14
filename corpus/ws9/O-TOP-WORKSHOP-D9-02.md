@@ -6,7 +6,10 @@ title: 'Problem 2 (Michigan Jan 2010) at Topology Qual Workshop Day 9: Homology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D9-02

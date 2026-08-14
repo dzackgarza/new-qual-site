@@ -6,7 +6,9 @@ title: Section A4 at the UNL Mathematics Qualifying Exam, June 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T07A4

@@ -6,7 +6,10 @@ title: P-3WQES at UGA topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - classification
+  - surfaces
 relations:
 - kind: instance-of
   target: P-3WQES

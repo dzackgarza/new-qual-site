@@ -6,7 +6,10 @@ title: P-UEGAX at UGA topology Spring 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - covering-spaces
+  - degree
 relations:
 - kind: instance-of
   target: P-UEGAX

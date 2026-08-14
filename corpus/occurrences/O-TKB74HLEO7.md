@@ -6,7 +6,11 @@ title: P-6PQRO at UGA topology Spring 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - homotopy
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-6PQRO

@@ -6,7 +6,9 @@ title: 'Problem 4 (June 2004 A2) at Topology Qual Workshop Day 4: Assorted Probl
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D4-04B

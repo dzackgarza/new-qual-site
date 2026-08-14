@@ -6,7 +6,8 @@ title: 'Worksheet 2 warm-up 1 (definition of topology)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS1B-HW1

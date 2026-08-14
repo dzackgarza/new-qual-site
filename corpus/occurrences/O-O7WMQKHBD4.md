@@ -6,7 +6,10 @@ title: P-XYYRM at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - manifolds
+  - poincare-duality
 relations:
 - kind: instance-of
   target: P-XYYRM

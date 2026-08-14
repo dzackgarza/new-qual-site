@@ -6,7 +6,10 @@ title: 'Problem 6 (June 2011 A4) at Topology Qual Workshop Day 1: Compactness'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-T11A4

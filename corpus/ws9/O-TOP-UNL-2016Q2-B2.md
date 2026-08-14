@@ -6,7 +6,10 @@ title: Section B2 at the UNL Math Topology Qualifying Exam, May 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - groups
 relations:
 - kind: instance-of
   target: P-T16B2

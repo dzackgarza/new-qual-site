@@ -6,7 +6,9 @@ title: P-EQZPV at UGA topology Spring 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-EQZPV

@@ -6,7 +6,10 @@ title: 'Worksheet 3B problem 5 (January 2020)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-T20B2

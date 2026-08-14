@@ -6,7 +6,9 @@ title: 'Worksheet 1 Part 2 first-list problem 3 (May 2016)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
 relations:
 - kind: instance-of
   target: P-T16A3

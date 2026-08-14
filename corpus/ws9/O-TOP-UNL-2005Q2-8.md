@@ -6,7 +6,10 @@ title: 'Question 8 at the UNL Mathematics Qualifying Exam, June 2005'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - homology
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-T05B4

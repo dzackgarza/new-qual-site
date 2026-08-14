@@ -6,7 +6,9 @@ title: Section A1 at the UNL Math Topology Qualifying Exam, May 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T16A1

@@ -6,7 +6,10 @@ title: 'Problem 3 (January 2004 A3) at Topology Qual Workshop Day 4: Counterexam
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - point-set
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D4-03

@@ -6,7 +6,9 @@ title: 'Worksheet 2A warm-up 2 (separation examples)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - counterexamples
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2A-HW2

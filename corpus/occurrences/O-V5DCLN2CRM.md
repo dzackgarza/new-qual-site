@@ -6,7 +6,9 @@ title: P-FZIG3 at UGA topology Spring 2005
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-FZIG3

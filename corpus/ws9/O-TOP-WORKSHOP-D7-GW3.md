@@ -6,7 +6,10 @@ title: 'Warm-up 3 at Topology Qual Workshop Day 7: Fundamental Groups'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D7-GW3

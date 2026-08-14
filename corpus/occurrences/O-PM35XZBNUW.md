@@ -6,7 +6,9 @@ title: P-YCZ6A at UGA topology Fall 2010
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations:
 - kind: instance-of
   target: P-YCZ6A

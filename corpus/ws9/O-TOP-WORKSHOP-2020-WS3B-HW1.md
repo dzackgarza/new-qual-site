@@ -6,7 +6,8 @@ title: 'Worksheet 3B warm-up 1 (universal covers)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS3B-HW1

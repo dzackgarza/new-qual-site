@@ -6,7 +6,8 @@ title: 'Warm-up 1 at Topology Qual Workshop Day 9: Homology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D9-HW1

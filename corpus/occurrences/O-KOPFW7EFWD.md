@@ -6,7 +6,10 @@ title: P-XMOZA at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - euclidean-spaces
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-XMOZA

@@ -6,7 +6,9 @@ title: 'Worksheet 4A warm-up 4 (Mayer–Vietoris)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS4A-HW4

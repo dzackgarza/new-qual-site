@@ -6,7 +6,10 @@ title: P-23S3Z at UGA topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - fundamental-group
+  - retracts
 relations:
 - kind: instance-of
   target: P-23S3Z

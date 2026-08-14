@@ -6,7 +6,9 @@ title: P-Z6THT at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - homotopy
 relations:
 - kind: instance-of
   target: P-Z6THT

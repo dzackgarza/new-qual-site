@@ -6,7 +6,11 @@ title: Problem 1 at the UNL Math 871-872 Topology Qualifying Exam, January 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - compactness
+  - point-set
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T17Q1-1

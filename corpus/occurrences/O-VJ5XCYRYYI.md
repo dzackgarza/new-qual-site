@@ -6,7 +6,10 @@ title: P-3KEA4 at UGA topology Fall 2010
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - fixed-points
+  - surfaces
 relations:
 - kind: instance-of
   target: P-3KEA4

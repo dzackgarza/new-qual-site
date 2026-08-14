@@ -6,7 +6,10 @@ title: Section B1 at the UNL Mathematics Qualifying Exam, June 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-T07B1

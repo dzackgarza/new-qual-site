@@ -6,7 +6,10 @@ title: P-OMOPR at UGA topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - homotopy
 relations:
 - kind: instance-of
   target: P-OMOPR

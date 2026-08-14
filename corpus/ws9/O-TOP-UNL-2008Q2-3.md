@@ -6,7 +6,9 @@ title: 'Question 3 at the UNL Mathematics Qualifying Exam, June 2008'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - continuity
 relations:
 - kind: instance-of
   target: P-T08A3

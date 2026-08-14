@@ -6,7 +6,10 @@ title: P-VPPPN at UGA topology Fall 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - manifolds
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-VPPPN

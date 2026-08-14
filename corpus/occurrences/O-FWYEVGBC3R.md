@@ -6,7 +6,10 @@ title: P-LSJ7W at UGA topology Spring 2019
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - manifolds
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-LSJ7W

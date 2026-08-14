@@ -6,7 +6,9 @@ title: P-N5HX3 at UGA topology Spring 2005
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-N5HX3

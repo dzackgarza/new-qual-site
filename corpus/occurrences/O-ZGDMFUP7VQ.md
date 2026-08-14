@@ -6,7 +6,9 @@ title: P-6LBCE at UGA topology Spring 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-6LBCE

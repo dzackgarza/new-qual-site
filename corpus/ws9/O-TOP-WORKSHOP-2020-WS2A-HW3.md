@@ -6,7 +6,9 @@ title: 'Worksheet 2A warm-up 3 (compact and closed sets)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2A-HW3

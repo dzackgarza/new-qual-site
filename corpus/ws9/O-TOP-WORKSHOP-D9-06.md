@@ -6,7 +6,9 @@ title: 'Problem 6 at Topology Qual Workshop Day 9: Homology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D9-06

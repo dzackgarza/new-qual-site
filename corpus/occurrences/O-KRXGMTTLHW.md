@@ -6,7 +6,10 @@ title: P-HBECH at UGA topology Spring 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - euler-characteristic
+  - surfaces
 relations:
 - kind: instance-of
   target: P-HBECH

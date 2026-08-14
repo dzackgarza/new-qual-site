@@ -6,7 +6,11 @@ title: P-MXUIS at UGA topology Fall 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - fundamental-group
+  - surfaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-MXUIS

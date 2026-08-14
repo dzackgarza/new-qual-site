@@ -6,7 +6,11 @@ title: 'Question 2 at the UNL Mathematics Qualifying Exam, June 2014'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - homotopy
+  - product-topology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T14A2

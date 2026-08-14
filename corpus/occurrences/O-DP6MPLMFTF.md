@@ -6,7 +6,10 @@ title: P-T5QRW at UGA topology Spring 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - group-actions
 relations:
 - kind: instance-of
   target: P-T5QRW

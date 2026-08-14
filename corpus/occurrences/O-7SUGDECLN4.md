@@ -6,7 +6,10 @@ title: P-H42KM at UGA topology Spring 2019
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-H42KM

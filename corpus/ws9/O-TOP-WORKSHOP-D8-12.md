@@ -6,7 +6,10 @@ title: 'Problem 12 (May 2013) at Topology Qual Workshop Day 8: Covering Spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-12

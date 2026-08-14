@@ -6,7 +6,10 @@ title: 'F95phdtop Section II problem 1'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - retracts
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-06

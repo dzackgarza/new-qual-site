@@ -6,7 +6,9 @@ title: P-72DG6 at UGA topology Spring 2015
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
 relations:
 - kind: instance-of
   target: P-72DG6

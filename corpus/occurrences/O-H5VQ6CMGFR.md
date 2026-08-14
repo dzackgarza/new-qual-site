@@ -6,7 +6,9 @@ title: P-YQVRO at UGA topology Fall 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homotopy
 relations:
 - kind: instance-of
   target: P-YQVRO

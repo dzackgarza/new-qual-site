@@ -6,7 +6,10 @@ title: 'Problem 7 (January 2002 A5) at Topology Qual Workshop Day 2: Connectedne
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - euclidean-spaces
+  - homeomorphisms
 relations:
 - kind: instance-of
   target: P-4WCFE

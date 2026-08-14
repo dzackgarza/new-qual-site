@@ -6,7 +6,10 @@ title: P-W3HQL at UGA topology Fall 2011
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - euler-characteristic
+  - surfaces
 relations:
 - kind: instance-of
   target: P-W3HQL

@@ -6,7 +6,9 @@ title: 'Problem 2 (June 2004 A1 and June 2007 A4) at Topology Qual Workshop Day 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D1-02

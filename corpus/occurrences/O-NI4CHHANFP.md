@@ -6,7 +6,9 @@ title: P-B4N3X at UGA topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-B4N3X

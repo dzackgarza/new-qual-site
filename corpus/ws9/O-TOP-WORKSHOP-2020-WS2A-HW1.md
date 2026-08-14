@@ -6,7 +6,8 @@ title: 'Worksheet 2A warm-up 1 (separation axioms)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2A-HW1

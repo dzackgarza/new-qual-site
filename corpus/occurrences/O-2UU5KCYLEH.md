@@ -6,7 +6,10 @@ title: P-IBLLK at UGA topology Fall 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-IBLLK

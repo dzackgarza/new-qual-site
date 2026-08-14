@@ -6,7 +6,9 @@ title: 'Problem 7 (Purdue Jan 2007) at Topology Qual Workshop Day 8: Covering Sp
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - covering-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-07

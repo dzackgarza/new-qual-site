@@ -6,7 +6,9 @@ title: P-7IGID at UGA topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
 relations:
 - kind: instance-of
   target: P-7IGID

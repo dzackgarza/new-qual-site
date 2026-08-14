@@ -6,7 +6,9 @@ title: P-LMEKH at UCSD topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
 relations:
 - kind: instance-of
   target: P-LMEKH

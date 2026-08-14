@@ -6,7 +6,10 @@ title: 'Worksheet 2 problem 3 (June 2012)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - category-theory
+  - continuity
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T12Q2-2

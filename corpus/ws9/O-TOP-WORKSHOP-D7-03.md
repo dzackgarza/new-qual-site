@@ -6,7 +6,10 @@ title: 'Problem 3 (Wisconsin August 2010) at Topology Qual Workshop Day 7: Funda
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D7-G02

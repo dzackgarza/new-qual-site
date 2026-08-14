@@ -6,7 +6,10 @@ title: P-VROCX at UCSD topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fixed-points
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-VROCX

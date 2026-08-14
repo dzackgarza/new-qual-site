@@ -6,7 +6,9 @@ title: P-XXLEK at UGA topology Spring 2011
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-XXLEK

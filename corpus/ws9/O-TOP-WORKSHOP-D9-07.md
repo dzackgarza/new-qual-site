@@ -6,7 +6,10 @@ title: 'Problem 7 (Jan 2012) at Topology Qual Workshop Day 9: Homology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D9-07

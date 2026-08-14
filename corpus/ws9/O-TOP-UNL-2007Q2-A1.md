@@ -6,7 +6,10 @@ title: Section A1 at the UNL Mathematics Qualifying Exam, June 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - connectedness
+  - point-set
 relations:
 - kind: instance-of
   target: P-T07A1

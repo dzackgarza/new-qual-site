@@ -6,7 +6,10 @@ title: P-WOFN2 at UGA topology Spring 2008
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - manifolds
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-WOFN2

@@ -6,7 +6,9 @@ title: 'F07phdtop page 2, Part Two problem 2'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-14

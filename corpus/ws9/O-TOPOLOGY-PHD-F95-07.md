@@ -6,7 +6,10 @@ title: 'F95phdtop Section II problem 2'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euclidean-spaces
+  - fundamental-group
+  - homeomorphisms
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-07

@@ -6,7 +6,9 @@ title: 'Problem 1 (June 2009 2A) at Topology Qual Workshop Day 4: Counterexample
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-T09A2

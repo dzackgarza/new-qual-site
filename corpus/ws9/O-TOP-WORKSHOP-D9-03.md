@@ -6,7 +6,10 @@ title: 'Problem 3 (Michigan May 2009) at Topology Qual Workshop Day 9: Homology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - homotopy
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D9-03

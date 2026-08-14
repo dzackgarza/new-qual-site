@@ -6,7 +6,10 @@ title: P-G23Y5 at UGA topology Fall 2004
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homotopy
+  - surfaces
 relations:
 - kind: instance-of
   target: P-G23Y5

@@ -6,7 +6,10 @@ title: P-26UEL at UGA topology Spring 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - euler-characteristic
+  - product-topology
 relations:
 - kind: instance-of
   target: P-26UEL

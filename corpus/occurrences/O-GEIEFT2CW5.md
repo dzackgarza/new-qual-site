@@ -6,7 +6,11 @@ title: P-ASHJM at UGA topology Fall 2005
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - euler-characteristic
+  - homology
+  - surfaces
 relations:
 - kind: instance-of
   target: P-ASHJM

@@ -6,7 +6,9 @@ title: P-62SYD at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
 relations:
 - kind: instance-of
   target: P-62SYD

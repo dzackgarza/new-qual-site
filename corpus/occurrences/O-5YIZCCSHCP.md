@@ -6,7 +6,10 @@ title: P-BPDEA at UGA topology Spring 2008
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - counterexamples
+  - hausdorff-spaces
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-BPDEA

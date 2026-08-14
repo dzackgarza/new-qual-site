@@ -6,7 +6,9 @@ title: P-4TKPD at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - hausdorff-spaces
 relations:
 - kind: instance-of
   target: P-4TKPD

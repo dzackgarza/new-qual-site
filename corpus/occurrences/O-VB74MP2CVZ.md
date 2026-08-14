@@ -6,7 +6,8 @@ title: P-3DTFZ at UGA topology Spring 2013
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
 relations:
 - kind: instance-of
   target: P-3DTFZ

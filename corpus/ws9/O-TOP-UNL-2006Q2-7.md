@@ -6,7 +6,9 @@ title: 'Question 7 at the UNL Mathematics Qualifying Exam, June 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-T06Q2-7

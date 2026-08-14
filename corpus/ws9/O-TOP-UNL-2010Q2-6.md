@@ -6,7 +6,10 @@ title: 'Question 6 at the UNL Mathematics Qualifying Exam, June 2010'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-T10B2

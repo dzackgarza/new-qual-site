@@ -6,7 +6,9 @@ title: P-DYBYC at UGA topology Fall 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-DYBYC

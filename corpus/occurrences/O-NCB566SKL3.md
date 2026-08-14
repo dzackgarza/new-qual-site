@@ -6,7 +6,9 @@ title: P-6P7O7 at UCSD topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-6P7O7

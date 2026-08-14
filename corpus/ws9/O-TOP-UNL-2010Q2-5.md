@@ -6,7 +6,9 @@ title: 'Question 5 at the UNL Mathematics Qualifying Exam, June 2010'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations:
 - kind: instance-of
   target: P-T10B1

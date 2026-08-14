@@ -6,7 +6,9 @@ title: 'Problem 4 (January 2006 A5) at Topology Qual Workshop Day 2: Connectedne
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T06Q1-5

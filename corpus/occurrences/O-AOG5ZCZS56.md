@@ -6,7 +6,10 @@ title: P-6XN3Z at UGA topology Spring 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - degree
+  - homotopy
 relations:
 - kind: instance-of
   target: P-6XN3Z

@@ -6,7 +6,9 @@ title: P-LWGC4 at UGA topology Fall 2012
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homotopy
 relations:
 - kind: instance-of
   target: P-LWGC4

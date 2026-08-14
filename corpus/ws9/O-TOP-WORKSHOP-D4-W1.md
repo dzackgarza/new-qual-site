@@ -6,7 +6,9 @@ title: 'Warm-up 1 at Topology Qual Workshop Day 4: Counterexamples'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - point-set
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D4-W1

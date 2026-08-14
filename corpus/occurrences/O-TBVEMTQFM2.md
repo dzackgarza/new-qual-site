@@ -6,7 +6,9 @@ title: P-HVKUA at UGA topology Fall 2005
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-HVKUA

@@ -6,7 +6,9 @@ title: 'Problem 9 (June 2007) at Topology Qual Workshop Day 8: Covering Spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-T07B2

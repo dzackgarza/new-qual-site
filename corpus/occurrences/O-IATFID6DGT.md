@@ -6,7 +6,10 @@ title: P-X6IHG at UGA topology Spring 2019
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - counterexamples
+  - degree
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-X6IHG

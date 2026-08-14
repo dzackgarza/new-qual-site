@@ -6,7 +6,9 @@ title: 'Worksheet 3B problem 2 (May 2018)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
 relations:
 - kind: instance-of
   target: P-T18B3

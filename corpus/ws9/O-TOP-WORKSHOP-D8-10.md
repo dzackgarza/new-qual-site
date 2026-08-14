@@ -6,7 +6,9 @@ title: 'Problem 10 (June 2008) at Topology Qual Workshop Day 8: Covering Spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T08B2

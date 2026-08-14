@@ -6,7 +6,8 @@ title: 'Problem 6 (January 2002 A3) at Topology Qual Workshop Day 2: Connectedne
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D2-06

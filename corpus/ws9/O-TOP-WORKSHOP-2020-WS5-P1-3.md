@@ -6,7 +6,10 @@ title: 'Worksheet 5 Part 1 problem 3 (May 2013)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homeomorphisms
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T13A3

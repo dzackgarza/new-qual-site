@@ -6,7 +6,10 @@ title: 'Problem 6 (January 2012 A2) at Topology Qual Workshop Day 3: Separation 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - product-topology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D3-06

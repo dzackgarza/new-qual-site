@@ -6,7 +6,9 @@ title: P-QDTPB at UGA topology Spring 2008
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations:
 - kind: instance-of
   target: P-QDTPB

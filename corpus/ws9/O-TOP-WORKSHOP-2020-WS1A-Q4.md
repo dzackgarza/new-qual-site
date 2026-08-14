@@ -6,7 +6,10 @@ title: 'Worksheet 1 Part 2 second-list problem 4 (May 2016)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T16B4

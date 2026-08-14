@@ -6,7 +6,9 @@ title: P-6UCWP at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations:
 - kind: instance-of
   target: P-6UCWP

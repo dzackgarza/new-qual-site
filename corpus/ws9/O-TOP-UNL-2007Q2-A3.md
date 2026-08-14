@@ -6,7 +6,11 @@ title: Section A3 at the UNL Mathematics Qualifying Exam, June 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
+  - hausdorff-spaces
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T07A3

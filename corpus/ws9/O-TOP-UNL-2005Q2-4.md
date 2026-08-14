@@ -6,7 +6,10 @@ title: 'Question 4 at the UNL Mathematics Qualifying Exam, June 2005'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - homeomorphisms
+  - paracompactness
 relations:
 - kind: instance-of
   target: P-T05A4

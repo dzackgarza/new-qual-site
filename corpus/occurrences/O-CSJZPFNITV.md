@@ -6,7 +6,9 @@ title: P-KSQQ5 at UGA topology Fall 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - counterexamples
+  - point-set
 relations:
 - kind: instance-of
   target: P-KSQQ5

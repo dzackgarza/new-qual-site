@@ -6,7 +6,10 @@ title: P-2CN7G at UGA topology Spring 2021
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - hausdorff-spaces
+  - product-topology
 relations:
 - kind: instance-of
   target: P-2CN7G

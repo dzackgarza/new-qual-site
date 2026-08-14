@@ -6,7 +6,9 @@ title: 'Worksheet 4A warm-up 2 (circle)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS4A-HW2

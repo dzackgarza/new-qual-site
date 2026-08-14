@@ -6,7 +6,9 @@ title: 'Worksheet 2B warm-up 3 (mapping cylinder)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homotopy
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2B-HW3

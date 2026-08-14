@@ -6,7 +6,9 @@ title: 'Worksheet 3B warm-up 3 (Galois correspondence)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS3B-HW3

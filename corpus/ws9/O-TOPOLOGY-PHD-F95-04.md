@@ -6,7 +6,9 @@ title: 'F95phdtop Section I problem 4'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-04

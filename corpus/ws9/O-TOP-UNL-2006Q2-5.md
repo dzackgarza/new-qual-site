@@ -6,7 +6,10 @@ title: 'Question 5 at the UNL Mathematics Qualifying Exam, June 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T06Q2-5

@@ -6,7 +6,9 @@ title: P-VPACG at UGA topology Spring 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-VPACG

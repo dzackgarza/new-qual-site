@@ -6,7 +6,10 @@ title: 'F95phdtop Section II problem 4'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-09

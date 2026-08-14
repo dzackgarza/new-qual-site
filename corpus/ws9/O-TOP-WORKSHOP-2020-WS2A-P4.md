@@ -6,7 +6,9 @@ title: 'Worksheet 2A problem 4 (May 2019)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T19A2

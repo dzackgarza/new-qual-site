@@ -6,7 +6,10 @@ title: P-L6F6I at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - surfaces
 relations:
 - kind: instance-of
   target: P-L6F6I

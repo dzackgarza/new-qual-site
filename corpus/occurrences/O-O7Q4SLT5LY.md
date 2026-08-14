@@ -6,7 +6,10 @@ title: P-KBHAC at UGA topology Spring 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - euler-characteristic
+  - surfaces
 relations:
 - kind: instance-of
   target: P-KBHAC

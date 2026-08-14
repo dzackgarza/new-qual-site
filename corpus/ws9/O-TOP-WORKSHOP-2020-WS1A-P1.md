@@ -6,7 +6,9 @@ title: 'Worksheet 1 Part 2 first-list problem 1 (May 2016)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T16A1

@@ -6,7 +6,9 @@ title: 'Worksheet 2B problem 2 (May 2018)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T18A4

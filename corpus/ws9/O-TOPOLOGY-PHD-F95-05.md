@@ -6,7 +6,9 @@ title: 'F95phdtop Section I problem 5'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-05

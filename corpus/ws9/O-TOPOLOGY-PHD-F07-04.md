@@ -6,7 +6,9 @@ title: 'F07phdtop page 1, Part One problem 4'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-04

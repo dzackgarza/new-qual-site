@@ -6,7 +6,10 @@ title: P-Y3PUL at UGA topology Spring 2011
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - homotopy
+  - surfaces
 relations:
 - kind: instance-of
   target: P-Y3PUL

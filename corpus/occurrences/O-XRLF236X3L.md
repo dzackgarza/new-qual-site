@@ -6,7 +6,9 @@ title: P-C3NSR at UGA topology Spring 2021
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-C3NSR

@@ -6,7 +6,9 @@ title: 'Warm-up 3 (Purdue 2010) at Topology Qual Workshop Day 2: Connectedness a
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - continuity
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D2-W3

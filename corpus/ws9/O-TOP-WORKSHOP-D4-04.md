@@ -6,7 +6,10 @@ title: 'Problem 4 at Topology Qual Workshop Day 4: Counterexamples'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
+  - hausdorff-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D4-04

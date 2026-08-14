@@ -6,7 +6,10 @@ title: 'F08phdtop page 1, Part One problem 2'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - completeness
+  - metric-spaces
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-02

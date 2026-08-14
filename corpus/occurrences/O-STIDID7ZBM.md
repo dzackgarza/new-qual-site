@@ -6,7 +6,9 @@ title: P-5ADNP at UGA topology Fall 2011
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-5ADNP

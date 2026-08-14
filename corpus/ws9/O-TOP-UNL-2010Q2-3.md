@@ -6,7 +6,9 @@ title: 'Question 3 at the UNL Mathematics Qualifying Exam, June 2010'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T10A3

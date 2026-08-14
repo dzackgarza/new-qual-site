@@ -6,7 +6,9 @@ title: 'Worksheet 2 problem 2 (June 2011)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations:
 - kind: instance-of
   target: P-T11A1

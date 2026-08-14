@@ -6,7 +6,9 @@ title: 'Question 2 at the UNL Mathematics Qualifying Exam, January 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - limits
 relations:
 - kind: instance-of
   target: P-T06Q1-2

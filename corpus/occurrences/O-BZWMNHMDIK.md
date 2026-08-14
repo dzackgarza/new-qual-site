@@ -6,7 +6,9 @@ title: P-KUYTP at UCSD topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations:
 - kind: instance-of
   target: P-KUYTP

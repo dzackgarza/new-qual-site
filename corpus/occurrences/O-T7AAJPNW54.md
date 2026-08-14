@@ -6,7 +6,10 @@ title: P-LLVY2 at UGA topology Spring 2021
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - homotopy
+  - surfaces
 relations:
 - kind: instance-of
   target: P-LLVY2

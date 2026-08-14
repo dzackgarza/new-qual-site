@@ -6,7 +6,10 @@ title: 'Question 8 at the UNL Mathematics Qualifying Exam, June 2014'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T14B4

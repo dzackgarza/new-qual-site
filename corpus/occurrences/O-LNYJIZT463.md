@@ -6,7 +6,9 @@ title: P-KM7Z4 at UGA topology Spring 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - retracts
 relations:
 - kind: instance-of
   target: P-KM7Z4

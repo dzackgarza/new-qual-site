@@ -6,7 +6,9 @@ title: 'Question 6 at the UNL Mathematics Qualifying Exam, June 2009'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - hausdorff-spaces
 relations:
 - kind: instance-of
   target: P-T09B2

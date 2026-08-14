@@ -6,7 +6,10 @@ title: P-5JTV2 at UGA topology Spring 2019
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-5JTV2

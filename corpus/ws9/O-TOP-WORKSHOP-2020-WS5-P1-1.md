@@ -6,7 +6,10 @@ title: 'Worksheet 5 Part 1 problem 1 (May 2013)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - hausdorff-spaces
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T13A1

@@ -6,7 +6,10 @@ title: P-TEDZR at UCSD topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - manifolds
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-TEDZR

@@ -6,7 +6,9 @@ title: 'Warm-up 2 at Topology Qual Workshop Day 8: Covering Spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - counterexamples
+  - covering-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-CW2

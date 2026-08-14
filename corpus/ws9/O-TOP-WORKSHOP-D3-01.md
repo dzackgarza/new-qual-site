@@ -6,7 +6,10 @@ title: 'Problem 1 (January 2008 B9) at Topology Qual Workshop Day 3: Separation 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - hausdorff-spaces
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D3-01

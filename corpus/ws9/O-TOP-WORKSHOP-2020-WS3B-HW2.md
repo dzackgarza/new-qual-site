@@ -6,7 +6,9 @@ title: 'Worksheet 3B warm-up 2 (deck transformations)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS3B-HW2

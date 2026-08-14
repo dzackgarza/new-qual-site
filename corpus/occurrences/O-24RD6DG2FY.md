@@ -6,7 +6,9 @@ title: P-LZ5CZ at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - surfaces
 relations:
 - kind: instance-of
   target: P-LZ5CZ

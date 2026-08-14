@@ -6,7 +6,10 @@ title: 'Question 8 at the UNL Mathematics Qualifying Exam, June 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - homotopy
 relations:
 - kind: instance-of
   target: P-T06Q2-8

@@ -6,7 +6,9 @@ title: 'F08phdtop page 2, Part Two problem 7'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - euler-characteristic
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-19

@@ -6,7 +6,11 @@ title: P-HXZYI at UGA topology Spring 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - fundamental-group
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-HXZYI

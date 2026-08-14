@@ -6,7 +6,10 @@ title: P-L7Z4E at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - manifolds
+  - poincare-duality
 relations:
 - kind: instance-of
   target: P-L7Z4E

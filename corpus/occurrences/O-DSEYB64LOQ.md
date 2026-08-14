@@ -6,7 +6,11 @@ title: P-A5CFD at UGA topology Fall 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
+  - hausdorff-spaces
+  - product-topology
 relations:
 - kind: instance-of
   target: P-A5CFD

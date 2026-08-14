@@ -6,7 +6,10 @@ title: 'Worksheet 1 Part 2 second-list problem 1 (May 2016)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T16B1

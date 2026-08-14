@@ -6,7 +6,11 @@ title: P-YVYGB at UGA topology Spring 2008
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - group-actions
+  - surfaces
 relations:
 - kind: instance-of
   target: P-YVYGB

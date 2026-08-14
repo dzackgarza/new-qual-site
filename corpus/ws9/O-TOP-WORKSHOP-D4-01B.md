@@ -6,7 +6,8 @@ title: 'Problem 1 (June 2010 A1) at Topology Qual Workshop Day 4: Assorted Probl
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
 relations:
 - kind: instance-of
   target: P-T10A1

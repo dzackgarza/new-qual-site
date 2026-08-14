@@ -6,7 +6,9 @@ title: P-EOZ7B at UGA topology Spring 2013
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - continuity
 relations:
 - kind: instance-of
   target: P-EOZ7B

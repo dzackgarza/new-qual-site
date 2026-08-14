@@ -6,7 +6,8 @@ title: 'Problem 1 (January 2002 A1) at Topology Qual Workshop Day 1: Compactness
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations:
 - kind: instance-of
   target: P-AISD5

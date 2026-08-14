@@ -6,7 +6,10 @@ title: P-G373O at UGA topology Fall 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-G373O

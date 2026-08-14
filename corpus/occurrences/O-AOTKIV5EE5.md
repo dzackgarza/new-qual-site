@@ -6,7 +6,10 @@ title: P-PATOJ at UGA topology Spring 2019
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - point-set
 relations:
 - kind: instance-of
   target: P-PATOJ

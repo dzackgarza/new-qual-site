@@ -6,7 +6,10 @@ title: P-MHQ6A at UGA topology Spring 2010
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - connectedness
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-MHQ6A

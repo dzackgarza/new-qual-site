@@ -6,7 +6,8 @@ title: 'Worksheet 2A warm-up 4 (paths and components)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2A-HW4

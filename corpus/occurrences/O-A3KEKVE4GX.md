@@ -6,7 +6,8 @@ title: P-MYZU2 at UGA topology Fall 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-MYZU2

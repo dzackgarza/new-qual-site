@@ -6,7 +6,10 @@ title: P-AZBYD at UCSD topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homology
+  - product-topology
 relations:
 - kind: instance-of
   target: P-AZBYD

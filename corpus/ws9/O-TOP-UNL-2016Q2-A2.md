@@ -6,7 +6,8 @@ title: Section A2 at the UNL Math Topology Qualifying Exam, May 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-T16A2

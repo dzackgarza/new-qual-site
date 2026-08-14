@@ -6,7 +6,9 @@ title: P-L3BUX at UGA topology Spring 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-L3BUX

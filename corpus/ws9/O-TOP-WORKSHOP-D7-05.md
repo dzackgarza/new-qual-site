@@ -6,7 +6,10 @@ title: 'Problem 5 (June 2005) at Topology Qual Workshop Day 7: Fundamental Group
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D7-G03

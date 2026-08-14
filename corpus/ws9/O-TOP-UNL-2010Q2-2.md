@@ -6,7 +6,10 @@ title: 'Question 2 at the UNL Mathematics Qualifying Exam, June 2010'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-T10A2

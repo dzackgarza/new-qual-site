@@ -6,7 +6,9 @@ title: P-K3QJY at UCSD topology Summer 2003
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - homotopy
 relations:
 - kind: instance-of
   target: P-K3QJY

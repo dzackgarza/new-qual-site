@@ -6,7 +6,9 @@ title: Section B2 at the UNL Mathematics Qualifying Exam, June 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-T07B2

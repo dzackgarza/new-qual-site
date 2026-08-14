@@ -6,7 +6,10 @@ title: 'Warm-up 2 at Topology Qual Workshop Day 9: Homology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T06Q1-9

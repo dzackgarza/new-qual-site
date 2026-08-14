@@ -6,7 +6,10 @@ title: P-SDQTV at UGA topology Fall 2009
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
+  - surfaces
 relations:
 - kind: instance-of
   target: P-SDQTV

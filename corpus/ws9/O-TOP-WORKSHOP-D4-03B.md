@@ -6,7 +6,10 @@ title: 'Problem 3 (January 2008 B8) at Topology Qual Workshop Day 4: Assorted Pr
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
+  - product-topology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D4-03B

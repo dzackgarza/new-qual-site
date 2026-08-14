@@ -6,7 +6,9 @@ title: 'Worksheet 2 problem 4 (May 2015)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T15A3

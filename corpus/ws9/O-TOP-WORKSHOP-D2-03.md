@@ -6,7 +6,8 @@ title: 'Problem 3 (June 2007 A2) at Topology Qual Workshop Day 2: Connectedness 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-T07A2

@@ -6,7 +6,10 @@ title: 'Problem 5 (June 2005 A4) at Topology Qual Workshop Day 1: Compactness'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - homeomorphisms
+  - paracompactness
 relations:
 - kind: instance-of
   target: P-T05A4

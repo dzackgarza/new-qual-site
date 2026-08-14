@@ -6,7 +6,9 @@ title: 'F08phdtop page 1, Part One problem 6'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-06

@@ -6,7 +6,9 @@ title: P-QYLM3 at UGA topology Spring 2011
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-QYLM3

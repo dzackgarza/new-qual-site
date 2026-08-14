@@ -6,7 +6,9 @@ title: P-4X3OY at UGA topology Fall 2018
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations:
 - kind: instance-of
   target: P-4X3OY

@@ -6,7 +6,8 @@ title: 'Worksheet 4A warm-up 3 (reduced homology)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS4A-HW3

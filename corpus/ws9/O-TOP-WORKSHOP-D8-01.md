@@ -6,7 +6,8 @@ title: 'Problem 1 (Wisconsin Jan 1998) at Topology Qual Workshop Day 8: Covering
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-01

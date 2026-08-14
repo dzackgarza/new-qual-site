@@ -6,7 +6,9 @@ title: 'Problem 8 (June 2010 A4) at Topology Qual Workshop Day 2: Connectedness 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T10A4

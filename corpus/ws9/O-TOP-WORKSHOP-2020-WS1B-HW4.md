@@ -6,7 +6,9 @@ title: 'Worksheet 2 warm-up 4 (topologies on R)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euclidean-spaces
+  - point-set
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS1B-HW4

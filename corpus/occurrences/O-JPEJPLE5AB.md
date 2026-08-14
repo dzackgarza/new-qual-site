@@ -6,7 +6,11 @@ title: P-E247B at UGA topology Spring 2005
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - counterexamples
+  - homology
+  - homotopy
+  - retracts
 relations:
 - kind: instance-of
   target: P-E247B

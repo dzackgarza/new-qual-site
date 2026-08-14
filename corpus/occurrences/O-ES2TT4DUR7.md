@@ -6,7 +6,10 @@ title: P-QN7OP at UGA topology Fall 2004
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - connectedness
+  - continuity
 relations:
 - kind: instance-of
   target: P-QN7OP

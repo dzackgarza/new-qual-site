@@ -6,7 +6,10 @@ title: 'F07phdtop page 2, Part Two problem 4'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - retracts
+  - surfaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-16

@@ -6,7 +6,8 @@ title: 'Worksheet 2B problem 1 (May 2015)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations:
 - kind: instance-of
   target: P-T15A4

@@ -6,7 +6,8 @@ title: 'F07phdtop page 2, Part One problem 11'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-11

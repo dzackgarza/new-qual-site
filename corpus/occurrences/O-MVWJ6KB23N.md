@@ -6,7 +6,11 @@ title: P-KVMKV at UGA topology Spring 2019
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - counterexamples
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-KVMKV

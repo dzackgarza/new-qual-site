@@ -6,7 +6,9 @@ title: 'F07phdtop page 2, Part One problem 12'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-12

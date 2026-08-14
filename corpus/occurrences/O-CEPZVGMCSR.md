@@ -6,7 +6,9 @@ title: P-IE2G7 at UGA topology Spring 2011
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - point-set
 relations:
 - kind: instance-of
   target: P-IE2G7

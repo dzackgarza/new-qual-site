@@ -6,7 +6,10 @@ title: 'Problem 7 (January 2012 A4) at Topology Qual Workshop Day 3: Separation 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - product-topology
+  - separation-axioms
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-T12A4

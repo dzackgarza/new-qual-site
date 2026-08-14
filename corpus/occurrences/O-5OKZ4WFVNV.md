@@ -6,7 +6,9 @@ title: P-L4EMZ at UGA topology Spring 2012
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations:
 - kind: instance-of
   target: P-L4EMZ

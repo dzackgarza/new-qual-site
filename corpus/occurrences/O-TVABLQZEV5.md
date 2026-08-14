@@ -6,7 +6,9 @@ title: P-2ZWQ7 at UGA topology Spring 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - linear-algebra
 relations:
 - kind: instance-of
   target: P-2ZWQ7

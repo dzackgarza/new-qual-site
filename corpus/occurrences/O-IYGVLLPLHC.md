@@ -6,7 +6,10 @@ title: P-AZ46Z at UGA topology Fall 2010
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
+  - tube-lemma
 relations:
 - kind: instance-of
   target: P-AZ46Z

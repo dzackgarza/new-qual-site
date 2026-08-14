@@ -6,7 +6,9 @@ title: P-OSS6X at UGA topology Spring 2021
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - homology
 relations:
 - kind: instance-of
   target: P-OSS6X

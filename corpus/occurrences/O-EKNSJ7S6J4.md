@@ -6,7 +6,9 @@ title: P-A33VH at UGA topology Spring 2021
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-A33VH

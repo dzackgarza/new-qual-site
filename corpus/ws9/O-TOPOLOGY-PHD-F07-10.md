@@ -6,7 +6,9 @@ title: 'F07phdtop page 2, Part One problem 10'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - connectedness
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-10

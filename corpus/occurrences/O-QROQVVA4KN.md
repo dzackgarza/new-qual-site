@@ -6,7 +6,10 @@ title: P-7CYRD at UGA topology Spring 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - convergence
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-7CYRD

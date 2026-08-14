@@ -6,7 +6,10 @@ title: P-5JYOH at UGA topology Spring 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - euler-characteristic
+  - surfaces
 relations:
 - kind: instance-of
   target: P-5JYOH

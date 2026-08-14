@@ -6,7 +6,9 @@ title: 'Worksheet 4A warm-up 1 (standard 2-simplex)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS4A-HW1

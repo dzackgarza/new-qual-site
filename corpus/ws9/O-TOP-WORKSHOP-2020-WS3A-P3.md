@@ -6,7 +6,10 @@ title: 'Worksheet 3A problem 3 (January 2019)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - retracts
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-T19Q1-5

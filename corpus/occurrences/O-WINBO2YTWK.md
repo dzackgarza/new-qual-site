@@ -6,7 +6,10 @@ title: P-FVQWC at UGA topology Spring 2013
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - quotient-spaces
+  - surfaces
 relations:
 - kind: instance-of
   target: P-FVQWC

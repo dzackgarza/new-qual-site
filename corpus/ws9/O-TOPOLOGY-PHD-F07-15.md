@@ -6,7 +6,10 @@ title: 'F07phdtop page 2, Part Two problem 3'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - euler-characteristic
+  - surfaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-15

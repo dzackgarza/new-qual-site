@@ -6,7 +6,10 @@ title: 'F07phdtop page 2, Part Two problem 7'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - manifolds
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-19

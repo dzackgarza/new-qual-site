@@ -6,7 +6,10 @@ title: 'Problem 10 (June 2012) at Topology Qual Workshop Day 7: Fundamental Grou
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D7-G04

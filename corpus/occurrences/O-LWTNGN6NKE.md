@@ -6,7 +6,9 @@ title: P-R7EFJ at UGA topology Spring 2019
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-R7EFJ

@@ -6,7 +6,10 @@ title: 'Question 3 at the UNL Mathematics Qualifying Exam, January 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - continuity
+  - fixed-points
 relations:
 - kind: instance-of
   target: P-T06Q1-3

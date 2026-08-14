@@ -6,7 +6,10 @@ title: 'Problem 2 (June 2006 A5) at Topology Qual Workshop Day 3: Separation Axi
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T06Q2-5

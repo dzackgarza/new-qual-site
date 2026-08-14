@@ -6,7 +6,9 @@ title: 'F08phdtop page 1, Part One problem 4'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-04

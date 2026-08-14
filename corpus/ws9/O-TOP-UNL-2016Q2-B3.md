@@ -6,7 +6,9 @@ title: Section B3 at the UNL Math Topology Qualifying Exam, May 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homeomorphisms
 relations:
 - kind: instance-of
   target: P-T16B3

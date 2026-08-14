@@ -6,7 +6,9 @@ title: 'Question 1 at the UNL Mathematics Qualifying Exam, January 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - point-set
 relations:
 - kind: instance-of
   target: P-T06Q1-1

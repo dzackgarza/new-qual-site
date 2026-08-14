@@ -6,7 +6,9 @@ title: P-GFHMD at UGA topology Spring 2021
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - surfaces
 relations:
 - kind: instance-of
   target: P-GFHMD

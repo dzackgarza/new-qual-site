@@ -6,7 +6,9 @@ title: P-2JRWF at UGA topology Spring 2010
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homology
 relations:
 - kind: instance-of
   target: P-2JRWF

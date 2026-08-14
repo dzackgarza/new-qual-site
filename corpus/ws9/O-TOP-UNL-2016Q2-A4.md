@@ -6,7 +6,9 @@ title: Section A4 at the UNL Math Topology Qualifying Exam, May 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - retracts
 relations:
 - kind: instance-of
   target: P-T16A4

@@ -6,7 +6,9 @@ title: 'Problem 8 (Purdue 2011) at Topology Qual Workshop Day 1: Compactness'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D1-08

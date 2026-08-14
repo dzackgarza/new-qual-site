@@ -6,7 +6,10 @@ title: 'Question 4 at the UNL Mathematics Qualifying Exam, June 2009'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-T09A4

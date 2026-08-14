@@ -6,7 +6,10 @@ title: P-FUHGO at UGA topology Fall 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - surfaces
 relations:
 - kind: instance-of
   target: P-FUHGO

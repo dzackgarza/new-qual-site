@@ -6,7 +6,9 @@ title: 'Problem 3 (June 2004 A3) at Topology Qual Workshop Day 3: Separation Axi
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D3-03

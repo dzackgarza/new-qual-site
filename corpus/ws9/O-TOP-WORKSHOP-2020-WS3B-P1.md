@@ -6,7 +6,9 @@ title: 'Worksheet 3B problem 1 (June 2014)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
 relations:
 - kind: instance-of
   target: P-T14B3

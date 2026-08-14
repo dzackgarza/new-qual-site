@@ -6,7 +6,8 @@ title: 'F08phdtop page 1, Part One problem 3'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-03

@@ -6,7 +6,10 @@ title: P-FGSRH at UGA topology Fall 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - convergence
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-FGSRH

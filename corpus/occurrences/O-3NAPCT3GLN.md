@@ -6,7 +6,9 @@ title: P-4DIFI at UGA topology Fall 2013
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations:
 - kind: instance-of
   target: P-4DIFI

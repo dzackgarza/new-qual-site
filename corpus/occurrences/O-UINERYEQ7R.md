@@ -6,7 +6,10 @@ title: P-VAJSW at UGA topology Spring 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-VAJSW

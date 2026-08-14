@@ -6,7 +6,9 @@ title: 'Question 2 at the UNL Mathematics Qualifying Exam, June 2008'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T08A2

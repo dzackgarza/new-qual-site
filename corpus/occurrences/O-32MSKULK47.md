@@ -6,7 +6,9 @@ title: P-QMESO at UGA topology Spring 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - retracts
 relations:
 - kind: instance-of
   target: P-QMESO

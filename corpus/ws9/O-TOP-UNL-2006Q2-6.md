@@ -6,7 +6,10 @@ title: 'Question 6 at the UNL Mathematics Qualifying Exam, June 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - quotient-spaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-T06Q2-6

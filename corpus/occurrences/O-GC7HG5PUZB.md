@@ -6,7 +6,10 @@ title: P-DLXGE at UGA topology Spring 2013
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-DLXGE

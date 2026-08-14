@@ -6,7 +6,9 @@ title: P-S6EYF at UGA topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-S6EYF

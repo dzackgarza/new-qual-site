@@ -6,7 +6,10 @@ title: 'Covering-space follow-up 2 at Topology Qual Workshop Day 7'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - covering-spaces
+  - groups
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D7-G05

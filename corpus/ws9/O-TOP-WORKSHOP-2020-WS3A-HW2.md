@@ -6,7 +6,9 @@ title: 'Worksheet 3A warm-up 2 (Seifert–van Kampen)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS3A-HW2

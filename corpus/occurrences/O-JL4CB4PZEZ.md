@@ -6,7 +6,8 @@ title: P-ETP6C at UGA topology Fall 2011
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations:
 - kind: instance-of
   target: P-ETP6C

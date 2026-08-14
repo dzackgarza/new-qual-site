@@ -6,7 +6,10 @@ title: P-JIFL3 at UGA topology Fall 2007
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-JIFL3

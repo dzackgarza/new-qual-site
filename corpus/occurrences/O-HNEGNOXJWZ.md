@@ -6,7 +6,10 @@ title: P-3H47Q at UGA topology Spring 2006
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - surfaces
 relations:
 - kind: instance-of
   target: P-3H47Q

@@ -6,7 +6,11 @@ title: 'Worksheet 4A problem 5 (May 2019)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - homotopy
+  - mayer-vietoris
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T19B4

@@ -6,7 +6,8 @@ title: 'Warm-up 2 at Topology Qual Workshop Day 1: Compactness'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D1-W2

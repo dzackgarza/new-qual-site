@@ -6,7 +6,10 @@ title: Section B1 at the UNL Math Topology Qualifying Exam, May 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T16B1

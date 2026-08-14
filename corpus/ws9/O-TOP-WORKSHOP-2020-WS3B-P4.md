@@ -6,7 +6,9 @@ title: 'Worksheet 3B problem 4 (May 2019)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS3B-P4

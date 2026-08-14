@@ -6,7 +6,10 @@ title: 'Problem 9 (June 2009 A4) at Topology Qual Workshop Day 3: Separation Axi
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-T09A4

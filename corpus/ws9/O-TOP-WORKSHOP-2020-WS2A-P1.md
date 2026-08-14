@@ -6,7 +6,9 @@ title: 'Worksheet 2A problem 1 (May 2015)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - euclidean-spaces
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2A-P1

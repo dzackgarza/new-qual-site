@@ -6,7 +6,11 @@ title: 'Worksheet 5 Part 1 problem 2 (May 2013)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
+  - hausdorff-spaces
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-T13A2

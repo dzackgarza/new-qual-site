@@ -6,7 +6,9 @@ title: 'F95phdtop Section I problem 3'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - product-topology
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F95-03

@@ -6,7 +6,8 @@ title: 'Question 1 at the UNL Mathematics Qualifying Exam, June 2010'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
 relations:
 - kind: instance-of
   target: P-T10A1

@@ -6,7 +6,11 @@ title: P-N2FQ7 at UGA topology Fall 2004
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - surfaces
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-N2FQ7

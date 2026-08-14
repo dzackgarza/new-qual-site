@@ -6,7 +6,9 @@ title: P-LMVF6 at UGA topology Spring 2012
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homotopy
 relations:
 - kind: instance-of
   target: P-LMVF6

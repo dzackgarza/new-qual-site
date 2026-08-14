@@ -6,7 +6,9 @@ title: 'Question 6 at the UNL Mathematics Qualifying Exam, June 2008'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - product-topology
 relations:
 - kind: instance-of
   target: P-T08B2

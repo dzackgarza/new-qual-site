@@ -6,7 +6,9 @@ title: 'Problem 2 at Topology Qual Workshop Day 7: Fundamental Groups'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D7-G02-SVK

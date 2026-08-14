@@ -6,7 +6,9 @@ title: 'Worksheet 5 Part 1 problem 4 (May 2013)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T13A4

@@ -6,7 +6,10 @@ title: P-NQKCX at UCSD topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - covering-spaces
+  - homotopy
 relations:
 - kind: instance-of
   target: P-NQKCX

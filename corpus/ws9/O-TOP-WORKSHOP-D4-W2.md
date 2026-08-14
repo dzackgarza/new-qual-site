@@ -6,7 +6,9 @@ title: 'Warm-up 2 at Topology Qual Workshop Day 4: Counterexamples'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - homeomorphisms
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D4-W2

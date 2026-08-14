@@ -6,7 +6,10 @@ title: 'Worksheet 2B warm-up 2 (radial deformation retraction)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euclidean-spaces
+  - homotopy
+  - retracts
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2B-HW2

@@ -6,7 +6,9 @@ title: 'Question 2 at the UNL Mathematics Qualifying Exam, June 2006'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-T06Q2-2

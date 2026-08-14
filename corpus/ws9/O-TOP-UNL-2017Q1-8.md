@@ -6,7 +6,9 @@ title: Problem 8 at the UNL Math 871-872 Topology Qualifying Exam, January 2017
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-T17Q1-8

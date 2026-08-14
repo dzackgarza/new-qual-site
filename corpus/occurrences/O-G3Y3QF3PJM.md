@@ -6,7 +6,10 @@ title: P-4EIOH at UGA topology Spring 2021
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - homology
 relations:
 - kind: instance-of
   target: P-4EIOH

@@ -6,7 +6,10 @@ title: 'Worksheet 5 Part 2 problem 3 (May 2013)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-T13B3

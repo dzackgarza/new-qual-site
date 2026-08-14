@@ -6,7 +6,9 @@ title: 'Worksheet 2A warm-up 5 (topologist’s sine wave)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS2A-HW5

@@ -6,7 +6,9 @@ title: 'Problem 8 (June 2011 A3) at Topology Qual Workshop Day 3: Separation Axi
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - separation-axioms
 relations:
 - kind: instance-of
   target: P-T11A3

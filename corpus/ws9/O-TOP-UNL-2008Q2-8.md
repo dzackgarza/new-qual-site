@@ -6,7 +6,11 @@ title: 'Question 8 at the UNL Mathematics Qualifying Exam, June 2008'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - quotient-spaces
+  - surfaces
 relations:
 - kind: instance-of
   target: P-T08B4

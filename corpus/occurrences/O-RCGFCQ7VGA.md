@@ -6,7 +6,9 @@ title: P-JH5RI at UGA topology Spring 2008
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homotopy
 relations:
 - kind: instance-of
   target: P-JH5RI

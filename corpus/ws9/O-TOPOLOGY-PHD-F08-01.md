@@ -6,7 +6,9 @@ title: 'F08phdtop page 1, Part One problem 1'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-01

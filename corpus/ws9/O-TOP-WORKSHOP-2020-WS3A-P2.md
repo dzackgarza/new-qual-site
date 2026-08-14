@@ -6,7 +6,9 @@ title: 'Worksheet 3A problem 2 (May 2017)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-2020-WS3A-P2

@@ -6,7 +6,9 @@ title: 'Worksheet 1 Part 2 first-list problem 4 (May 2016)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - retracts
 relations:
 - kind: instance-of
   target: P-T16A4

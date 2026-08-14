@@ -6,7 +6,9 @@ title: 'F07phdtop page 2, Part Two problem 5'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F07-17

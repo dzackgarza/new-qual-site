@@ -6,7 +6,10 @@ title: 'Worksheet 2A problem 5 (May 2019)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - metric-spaces
 relations:
 - kind: instance-of
   target: P-T19A3

@@ -6,7 +6,9 @@ title: 'Covering-space follow-up 1 (June 2010) at Topology Qual Workshop Day 7'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
 relations:
 - kind: instance-of
   target: P-T10B3

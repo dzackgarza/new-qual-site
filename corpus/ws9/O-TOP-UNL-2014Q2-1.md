@@ -6,7 +6,10 @@ title: 'Question 1 at the UNL Mathematics Qualifying Exam, June 2014'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - separation-axioms
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-T14A1

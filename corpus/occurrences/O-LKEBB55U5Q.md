@@ -6,7 +6,9 @@ title: P-URS24 at UGA topology Spring 2010
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-URS24

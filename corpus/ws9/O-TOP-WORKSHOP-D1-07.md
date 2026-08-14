@@ -6,7 +6,10 @@ title: 'Problem 7 at Topology Qual Workshop Day 1: Compactness'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - homeomorphisms
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D1-07

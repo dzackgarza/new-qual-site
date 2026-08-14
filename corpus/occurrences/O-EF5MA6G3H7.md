@@ -6,7 +6,10 @@ title: P-IOVNM at UGA topology Fall 2004
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - quotient-spaces
 relations:
 - kind: instance-of
   target: P-IOVNM

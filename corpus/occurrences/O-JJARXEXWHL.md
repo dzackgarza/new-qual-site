@@ -6,7 +6,9 @@ title: P-3TQB5 at UGA topology Spring 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-3TQB5

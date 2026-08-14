@@ -6,7 +6,10 @@ title: P-BNSGA at UGA topology Fall 2016
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-BNSGA

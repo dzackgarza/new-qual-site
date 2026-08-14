@@ -6,7 +6,10 @@ title: 'Problem 8 on the infinite dihedral group at Topology Qual Workshop Day 8
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - covering-spaces
+  - groups
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D8-08

@@ -6,7 +6,9 @@ title: P-DHIWH at UGA topology Fall 2005
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations:
 - kind: instance-of
   target: P-DHIWH

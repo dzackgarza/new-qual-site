@@ -6,7 +6,9 @@ title: P-KCN2B at UGA topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - product-topology
 relations:
 - kind: instance-of
   target: P-KCN2B

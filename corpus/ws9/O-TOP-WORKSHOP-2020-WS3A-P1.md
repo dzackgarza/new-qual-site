@@ -6,7 +6,10 @@ title: 'Worksheet 3A problem 1 (June 2012)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-T12Q2-5

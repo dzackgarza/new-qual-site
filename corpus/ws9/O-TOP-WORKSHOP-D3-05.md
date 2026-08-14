@@ -6,7 +6,9 @@ title: 'Problem 5 (January 2004 A4) at Topology Qual Workshop Day 3: Separation 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - subspace-topology
 relations:
 - kind: instance-of
   target: P-TOP-WORKSHOP-D3-05

@@ -6,7 +6,9 @@ title: P-XSBTH at UGA topology Fall 2005
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations:
 - kind: instance-of
   target: P-XSBTH

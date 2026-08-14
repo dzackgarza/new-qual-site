@@ -6,7 +6,9 @@ title: P-Y7C7Z at UGA topology Fall 2012
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations:
 - kind: instance-of
   target: P-Y7C7Z

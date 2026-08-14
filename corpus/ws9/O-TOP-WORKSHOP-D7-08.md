@@ -6,7 +6,9 @@ title: 'Problem 8 (June 2011) at Topology Qual Workshop Day 7: Fundamental Group
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations:
 - kind: instance-of
   target: P-T11B1

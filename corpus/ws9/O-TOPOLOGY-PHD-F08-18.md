@@ -6,7 +6,9 @@ title: 'F08phdtop page 2, Part Two problem 6'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations:
 - kind: instance-of
   target: P-TOPOLOGY-PHD-F08-18
