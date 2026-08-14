@@ -5,7 +5,7 @@ Manifest: `publications/complex-analysis-guide.yaml`. Built and inspected at `4b
 `uv run qualc build` -> 8,207 cards and 327 wiki pages OK, 5,791 HTML pages, 13 Complex Analysis guide routes.
 
 The build was run against a copy of the tree, not against the working tree.
-See the last section for why, and for what that does and does not leave proved.
+See the last section for why, and the addendum for what superseded it.
 
 ## What the branch covers
 
@@ -16,6 +16,10 @@ It is now twelve sections, 112 references and 30 panels.
 The 48 cards left unclassified are named, not rounded off.
 42 are `source` cards, which record a sitting or a homework set and state no mathematics; a study-guide section has nothing to put them under, and a reader reaches them through the exam route instead.
 The remaining six have bodies consisting only of image references with no statement in text: `P-642LC`, `P-FWVKJ`, `E-FZLDN`, `E-IYBZP`, `E-G4N4D`, `E-USHMH`.
+
+Two registry addenda landed after the first draft of this proof and are included in the counts above.
+`analysis` was an area-level mirror tag carrying no information; the eight cards holding it as their only topic were read and given real topics, the other 32 simply lost it, and no complex-analysis card carries it now.
+`argument-principle-cauchy-s-integral-theorem` fused two theorems under one id; its two members now carry `argument-principle` and `cauchy-integral-theorem` and the fused entry is removed, which is the one authorized registry deletion.
 
 ## Routes
 
@@ -149,42 +153,25 @@ The other ten emit, and were not re-inspected.
 
 Same pinned revision and same build as part one.
 
-**Page-side reachability is complete: 105 of 105.**
-Breadth-first traversal of the rendered site starting at
-`/guide/GUIDE-COMPLEX-ANALYSIS.html`, following local `href` and `src` links only.
-Link extraction and target resolution are lifted from
-`artifacts/issue-17/validate-site` rather than written fresh, so both measurements
-agree on what counts as a local link. 5,804 pages are reachable from the branch
-root; every one of the 105 `wiki/30_Complex_Analysis` pages is among them, and the
-unreached set is empty. The per-branch wiki navigation added in `cb9e21dd` is
-what closes it.
+**Page-side reachability is complete: 105 of 105.** Breadth-first traversal of the rendered site starting at `/guide/GUIDE-COMPLEX-ANALYSIS.html`, following local `href` and `src` links only.
+Link extraction and target resolution are lifted from `artifacts/issue-17/validate-site` rather than written fresh, so both measurements agree on what counts as a local link.
+5,804 pages are reachable from the branch root; every one of the 105 `wiki/30_Complex_Analysis` pages is among them, and the unreached set is empty.
+The per-branch wiki navigation added in `cb9e21dd` is what closes it.
 
-This is the half the first addendum recorded as unmeasured. Both halves of #27's
-reachability criterion now have a number: 105 of 105 pages, and one card.
+This is the half the first addendum recorded as unmeasured.
+Both halves of #27's reachability criterion now have a number: 105 of 105 pages, and one card.
 
-**`P-Y37R6` is deferred, and the reason is not classification.**
-The card states mathematics — a three-part fixed-point problem on the disc with a
-Blaschke-factor hint — and it is *already* classified, carrying `fixed-points`,
-`schwarz-lemma` and `blaschke-factors`, all three registered. It has its own route
-at `/tag/P-Y37R6.html`, appears in the problems index, the generator and the search
-index, and is linked from `P-4PTIX`.
+**`P-Y37R6` is deferred, and the reason is not classification.** The card states mathematics — a three-part fixed-point problem on the disc with a Blaschke-factor hint — and it is *already* classified, carrying `fixed-points`, `schwarz-lemma` and `blaschke-factors`, all three registered.
+It has its own route at `/tag/P-Y37R6.html`, appears in the problems index, the generator and the search index, and is linked from `P-4PTIX`.
 
-What it is missing is a path from *this branch*. It matches the Conformal Maps and
-the Disc panel on `schwarz-lemma, blaschke-factors, biholomorphisms`, which has 57
-matching problems and `limit: 8`. The card is one of the 49 the limit truncates.
-No classification change reaches it: it is already tagged with the topics that
-panel selects on. Reaching it needs a manifest change — a larger cap, a narrower
-panel, or an explicit `ref` — and that is a decision about what the section should
-show, not a tagging gap. Recorded here, not made here.
+What it is missing is a path from *this branch*. It matches the Conformal Maps and the Disc panel on `schwarz-lemma, blaschke-factors, biholomorphisms`, which has 57 matching problems and `limit: 8`. The card is one of the 49 the limit truncates.
+No classification change reaches it: it is already tagged with the topics that panel selects on.
+Reaching it needs a manifest change — a larger cap, a narrower panel, or an explicit `ref` — and that is a decision about what the section should show, not a tagging gap.
+Recorded here, not made here.
 
-**Panel limits carry no exact-count tripwire.**
-All 30 panels in `publications/complex-analysis-guide.yaml` were checked against
-their current match counts in the built catalog. None has a limit equal to its
-match count, so none silently truncates the next card classified into its topics.
-The two narrowest margins are Normal Families problems at 6 against 7 matches and
-Special Functions exercises at 8 against 9; both are one card from becoming exact.
-The counts ignore each panel's `review` filter and are therefore upper bounds,
-which does not change the verdict for any panel but those two.
+**Panel limits carry no exact-count tripwire.** All 30 panels in `publications/complex-analysis-guide.yaml` were checked against their current match counts in the built catalog.
+None has a limit equal to its match count, so none silently truncates the next card classified into its topics.
+The two narrowest margins are Normal Families problems at 6 against 7 matches and Special Functions exercises at 8 against 9; both are one card from becoming exact.
+The counts ignore each panel's `review` filter and are therefore upper bounds, which does not change the verdict for any panel but those two.
 
-The truncation that hides `P-Y37R6` is the same mechanism seen from the other end:
-not a limit that has caught up with its matches, but a limit far below them.
+The truncation that hides `P-Y37R6` is the same mechanism seen from the other end: not a limit that has caught up with its matches, but a limit far below them.
