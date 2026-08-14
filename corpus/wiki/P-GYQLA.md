@@ -53,20 +53,24 @@ My guess is this year's qual class spent more time than usual on the proof of Ca
 .\]
 - So there are $m$ orbits all of length exactly $k$.
   Proceed by casework.
+- A cycle of length $k$ has sign $(-1)^{k-1}$, so $\sgn(\pi_g) = (-1)^{m(k-1)}$.
+- If $k$ is odd:
+  - Then $k-1$ is even, each of the $m$ cycles is an even permutation, and $\sgn(\pi_g) = +1$.
+  - So $\pi_g \in \ker\sgn$ is an even permutation, whatever $m$ is.
 - If $k$ is even:
-  - This yields $m$ odd cycles, and thus $\pi$ has zero (an even number) of even cycles.
-  - Thus $\pi \in \ker \sgn$ and is an even permutation.
-- If $k$ is odd
-  - This yields $m$ even cycles, thus an even number of even cycles iff $m$ is even 
+  - Then $k-1$ is odd, each of the $m$ cycles is an odd permutation, and $\sgn(\pi_g) = (-1)^m$.
+  - So $\pi_g$ is even iff $m$ is even, and odd iff $m$ is odd.
 - The claim is that the number of orbit representatives $m$ is equal to $[G:H] = \size G/H$ for $H = \gens{ g }$. 
   - Proof: define a map
   \[
-  \ts{ \text{Orbit representatives } x_i } &\to G/H \\
-  x &\mapsto xH
+  \ts{ \text{Orbit representatives } x_i } &\to H\backslash G \\
+  x &\mapsto Hx
   .\]
+
+  The orbits are the RIGHT cosets $Hx = \ts{ g^\ell x }$, since $g$ acts by left translation.
   - This is injective and surjective because
   \[
-  xH = yH &\iff xy\inv \in H = \gens{ g } \\
+  Hx = Hy &\iff xy\inv \in H = \gens{ g } \\
   &\iff xy\inv = g^\ell \\
   &\iff x=g^\ell y \\
   &\iff y\in \OO_x
@@ -75,25 +79,18 @@ My guess is this year's qual class spent more time than usual on the proof of Ca
 
 - We now have
 \[
-\pi_g \text{ is an even permutation } \iff 
+\pi_g \text{ is an even permutation } \iff
 \begin{cases}
-k \text{ is odd and } m \text{ is even} &  
+k \text{ is odd} &
 \\
 \text{ or } & \\
-k \text{ is even}
+k \text{ is even and } m \text{ is even}
  & .
 \end{cases}
 \]
 - Everything was an iff, so flip the evens to odds:
 \[
-\pi_g \text{ is an odd permutation } \iff 
-\begin{cases}
-k \text{ is even and } m \text{ is odd} &  
-\\
-\text{ or } & \\
-k \text{ is odd}
- & .
-\end{cases}
+\pi_g \text{ is an odd permutation } \iff k \text{ is even and } m \text{ is odd}
 .\]
 - Then just recall that $k\da o(\pi_g)$ and 
 \[

@@ -15,5 +15,7 @@ review: draft
 ---
 
 ::: {.definition title="$\gens{p}\dash$primary"}
-For every $m\in M$ and $t\in R$ with $t\not\in \gens{p}$, there exists a $a\in R$ such that $atm = m$.
+For $R$ a PID and $p\in R$ prime, an $R\dash$module $M$ is $\gens{p}\dash$**primary** iff every $m\in M$ is annihilated by some power of $p$: for each $m$ there is an $n\geq 1$ with $p^n m = 0$.
+
+Equivalently, $M$ is the $p\dash$primary component $M[p^\infty] = \theset{ m \in M \suchthat p^n m = 0 \text{ for some } n }$ of itself.
 :::

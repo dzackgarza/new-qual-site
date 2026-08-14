@@ -86,9 +86,9 @@ We'll proceed by induction on $n = \dim_\CC(V)$, and showing that there is an or
 If $V$ is finite dimensional and $\lambda$ is an eigenvalue of $A$, then $\overline{\lambda}$ is an eigenvalue of $A^*$.
 
 *Proof:*
+Since $A^* - \bar\lambda I = (A - \lambda I)^*$ and $\det(M^*) = \overline{\det M}$,
 $$
-\operatorname{det}(A-\lambda I) = 
-0 = \overline{\operatorname{det}\left(A^{*} - \bar{\lambda} I\right)}. \qed
+\operatorname{det}\left(A^{*} - \bar{\lambda} I\right) = \overline{\operatorname{det}(A-\lambda I)} = \bar 0 = 0. \qed
 $$
 
 Since $\CC$ is algebraically closed, every matrix $A \in M_n(\CC)$ will have an eigenvalue, since its characteristic polynomial will have a root by the Fundamental Theorem of Algebra.
@@ -105,29 +105,28 @@ $$
 $$ 
 will be upper triangular. 
 We would then be able to obtain an orthonormal basis 
-$\mathcal{C} \definedas \mathcal{B} \union \theset{\vector{v_1}}$ of $S \oplus S^\perp = V$.
+$\mathcal{C} \definedas \mathcal{B} \union \theset{\vector{v_1}}$ of $S \oplus S^\perp = V$, **ordered with $\vector v_1$ last**.
 
-Since we have a direct sum decomposition, the matrix of $A$ with respect to $\mathcal{C}$ can be written in block form as 
+Only $S^\perp$ is $A\dash$invariant here; $S$ is an eigenspace of $A^*$, not of $A$, so $\restrictionof{A}{S}$ is not defined and the matrix is not block diagonal.
+What the invariance of $S^\perp$ gives is that the first $n-1$ columns have no $\vector v_1$ component, i.e. a zero in the last row:
 
 \begin{align*}
 [A]_{\mathcal{C}} &=
 \left[\begin{array}{cc}
-[\restrictionof{A}{S}]_{\mathcal{C}} & 0 \\
-0 & [\restrictionof{A}{S^\perp}]_{\mathcal{C}}
+[\restrictionof{A}{S^\perp}]_{\mathcal{B}} & \vector u \\
+0 & c
 \end{array}\right]
 =
 \left[\begin{array}{cc}
-[\restrictionof{A}{S}]_{\theset{\vector v_1}} & 0 \\
-0 & [\restrictionof{A}{S^\perp}]_{\mathcal{B}}
-\end{array}\right]
-=
-\left[\begin{array}{cc}
-\lambda_1 & 0 \\
-0 & \mathbf{A}' 
+\mathbf{A}' & \vector u \\
+0 & c
 \end{array}\right]
 ,\end{align*}
 
-which is upper-triangular since $\mathbf{A}'$ is upper-triangular.
+where $\vector u$ and the scalar $c$ record $A\vector v_1$ in the basis $\mathcal C$, and are otherwise unconstrained.
+This is upper-triangular since $\mathbf{A}'$ is upper-triangular.
+
+> Ordering $\vector v_1$ first would instead put the unconstrained column on the left and give a **lower** triangular matrix.
 
 To see that $A$ does indeed restrict to an operator on $S^\perp$, we need to show that $A(S^\perp) \subseteq S^\perp$.
 So let $\vector s \in S^\perp$; then $\inner{\vector v_1}{\vector s} = 0$ by definition.

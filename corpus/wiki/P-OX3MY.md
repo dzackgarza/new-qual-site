@@ -16,6 +16,7 @@ review: draft
 
 Suppose $T: V \to V$ is not invertible, then $\dim \im T < n$ and $\dim \ker T > 0$ by the Rank-Nullity theorem.
 This means that there is a nontrivial $\vector v \in \ker T$, and a nontrivial vector $\vector w \in \im(T)$, so let $S$ be the matrix formed by the outer product $\vector v \vector w^t$.
+Since $\vector w \in \im(T)$, fix an $\vector x_0$ with $T\vector x_0 = \vector w$; this is the vector the second computation will use.
 
 We then consider how $ST$ acts on vectors $\vector x$:
 
@@ -30,16 +31,19 @@ TS\vector x
 
 where $\mathbf{0_n}$ is the $n\times n$ matrix of all zeros.
 
-Similarly,
+For the other order, evaluate at the specific vector $\vector x_0$:
 \begin{align*}
-ST\vector x 
-&\definedas S \vector y \\
-&= \vector v \vector w^t \vector y \\
-&= \inner{\vector w}{\vector y} \vector v \\
-&= c_i \vector v \\
+ST\vector x_0 
+&= S \vector w \\
+&= \vector v \vector w^t \vector w \\
+&= \inner{\vector w}{\vector w} \vector v \\
+&= \norm{\vector w}^2 \vector v \\
 &\neq \vector 0,
 \end{align*}
 
-where $\inner{\vector w}{\vector y} \definedas c_i \neq 0$ because $\vector y \in \im(T) = (\im(T)\perp)\perp$, so $\vector y$ and $\vector w$ can not be orthogonal.
+since $\vector w \neq \vector 0$ and $\vector v \neq \vector 0$.
+
+> The choice $\vector x_0$ with $T\vector x_0 = \vector w$ is what makes this work.
+> Membership in $\im(T)$ alone gives nothing: two vectors of $\im(T)$ can perfectly well be orthogonal, so a general $\vector y \in \im(T)$ may have $\inner{\vector w}{\vector y} = 0$.
 
 $\qed$

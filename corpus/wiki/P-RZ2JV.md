@@ -39,7 +39,7 @@ By the correspondence theorem, submodules of $M/N$ biject with submodules $A$ of
 
 So
 
-- $M$ is maximal:
+- $N$ is maximal:
 
 - $\iff$ no such (proper, nontrivial) submodule $A$ exists
 
@@ -52,23 +52,27 @@ So
 Identify $\ZZ\dash$modules with abelian groups, then by (a), $N$ is maximal $\iff$ $M/N$ is simple $\iff$ $M/N$ has no nontrivial proper subgroups.
 \
 
-By Cauchy's theorem, if $\abs{M/N} = ab$ is a composite number, then $a\divides ab \implies$ there is an element (and thus a subgroup) of order $a$.
-In this case, $M/N$ contains a nontrivial proper cyclic subgroup, so $M/N$ is not simple.
+Suppose $\abs{M/N}$ is finite and composite, and let $a$ be a **prime** divisor of it with $a < \abs{M/N}$.
+Cauchy's theorem applies to $a$ and gives an element, and thus a cyclic subgroup, of order $a$.
+Since $1 < a < \abs{M/N}$ this subgroup is proper and nontrivial, so $M/N$ is not simple.
 So $\abs{M/N}$ can not be composite, and therefore must be prime.
+Note Cauchy's theorem needs its divisor to be prime, so the argument picks a prime factor rather than an arbitrary factorisation $ab$.
 :::
 
 ::: {.proof title="of c"}
 \envlist
 
-- Let $G = \theset{x \in \CC \suchthat x^n=1 \text{ for some }n\in \NN}$, and suppose $H < G$ is a proper submodule.
+- Let $G = \theset{x \in \CC \suchthat x^n=1 \text{ for some }n\in \NN}$, and suppose $H < G$ is a maximal submodule.
 
-- Since $H\neq G$, there is some $p$ and some $k$ such that $\zeta_{p^k}\not\in H$.
+- By (b), $\abs{G/H} = q$ for some prime $q$.
+  So $G/H$ has exponent dividing $q$, that is, $x^q \in H$ for every $x\in G$.
 
-  - Otherwise, if $H$ contains every $\zeta_{p^k}$ it contains every $\zeta_n$
+- But $G$ is a **divisible** group: given $x\in G$ with $x^n = 1$, the element $x$ has a $q\dash$th root inside $G$, since any $y\in\CC$ with $y^q = x$ satisfies $y^{qn} = 1$ and so is itself a root of unity.
 
-Then there must be a prime $p$ such that the $\zeta_{p^k} \not \in H$ for all $k$ greater than some constant $m$ -- otherwise, we can use the fact that if $\zeta_{p^k} \in H$ then $\zeta_{p^\ell} \in H$ for all $\ell \leq k$, and if $\zeta_{p^k} \in H$ for all $p$ and all $k$ then $H = G$.
+- Therefore every $x\in G$ can be written $x = y^q$ with $y\in G$, and the previous point puts $x = y^q \in H$.
+  So $G \subseteq H$, contradicting $H < G$.
 
-But this means there are infinitely many elements in $G\setminus H$, and so $\infty = [G: H] = \abs{G/H}$ is not a prime.
-Thus by (b), $H$ can not be maximal, a contradiction.
+> The tempting shortcut, that infinitely many elements lie outside $H$ and so the index must be infinite, does not follow.
+> A subgroup of finite index can omit infinitely many elements: $2\ZZ$ has index $2$ in $\ZZ$ and misses infinitely many integers.
 :::
 :::

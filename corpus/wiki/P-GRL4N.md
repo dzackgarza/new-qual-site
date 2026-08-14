@@ -14,7 +14,8 @@ relations: []
 review: draft
 ---
 The standard computation of $\det(xI - A) = 0$ shows that $\chi_A(x) = \det(xI - A) = (x-1)^2 (x+1)^2$, and so the eigenvalues of $A$ are $1, -1$.
-We want the minimal polynomial of $A$, which is given by $\prod(x-\lambda_i)^{\alpha_i}$ where $\alpha_i = \dim E_{\lambda_i}$ is the geometric multiplicity of $\lambda_i$.
+We want the minimal polynomial of $A$, which is given by $\prod(x-\lambda_i)^{\alpha_i}$ where $\alpha_i$ is the size of the **largest** Jordan block for $\lambda_i$.
+That exponent is not the geometric multiplicity $\dim E_{\lambda_i}$, which instead counts how **many** Jordan blocks $\lambda_i$ has.
 
 Another standard computation shows that 
 $$
@@ -57,22 +58,23 @@ JCF(A) = J_{-1}^2 \oplus 2 J_{1}^1
 .\end{align*}
 
 
-By arguments similar to the previous two problems, the only possible invariant factor decomposition is given by 
+The largest invariant factor is always the minimal polynomial, so $d_2 = p_A(x) = (x-1)(x+1)^2$, and $d_1$ is then forced by $d_1 d_2 = \chi_A(x)$:
 
 \begin{align*}
-d_1 &= (x+1) \\
-d_2 &= (x-1)^2 (x+1)
+d_1 &= (x-1) \\
+d_2 &= (x-1) (x+1)^2
 \end{align*}
 
-and thus
+which satisfies the required divisibility $d_1 \divides d_2$.
+Expanding $d_2 = x^3 + x^2 - x - 1$, the companion block has last column $(1, 1, -1)^t$, and thus
 
 \begin{align*}
 RCF(A) &= C(d_1) \oplus C(d_2) =
 \left[\begin{array}{c|ccc}
--1 & 0 & 0 & 0 \\ \hline
-0  & 0 & 0 & -1 \\
+1 & 0 & 0 & 0 \\ \hline
+0  & 0 & 0 & 1 \\
 0  & 1 & 0 & 1 \\
-0  & 0 & 1 & 1 \\
+0  & 0 & 1 & -1 \\
 \end{array}\right]
 .\end{align*}
 
