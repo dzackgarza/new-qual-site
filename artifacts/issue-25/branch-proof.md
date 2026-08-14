@@ -105,15 +105,15 @@ They route to issue #2.
 `E-AMD-O2OGRSJP`, `P-WI5OS` ask to show Z(S_n) is nontrivial for n ≥ 4, contradicting `E-AMD-74T5EHRR` and `P-JPTMN` in the same corpus.
 `E-AMD-VGBOZDXZ`, `P-VX22R` say every normal subgroup of a p-group lies in the center; the true statement is its neighbour `E-AMD-TM3LMADH`. `E-AMD-DLD6LYAM`, `P-35P7L` conclude G ≅ A_4 from a normal subgroup of order 4 in a group of order 12; Z/12 has one too.
 `E-AMD-EBIC3Z5S` concludes R is a UFD from spec(R) ⊆ maxspec(R). `E-AMD-J3YZ5TXF`, `P-KSSA7`, `P-S5JSR` say the Galois group of x^n − 2 is D_n; that holds for n = 3, 4 and not in general.
-`E-AMD-2PFLAITV` says no group of order under 60 is simple; the cyclic groups of prime order are.
-`E-AMD-AFCXP5C6` asks to show Q/Z ≅ C^×. `E-AMD-D4G4SW2S` asks for gPg⁻¹ ∈ Syl_p(H) where gPg⁻¹ ∩ H is meant; `E-AMD-DGMOEV2O` asks for P ∩ H ∈ Syl_p(H) given P ∈ Syl_p(H), which is trivial.
+`P-AMD-2PFLAITV` says no group of order under 60 is simple; the cyclic groups of prime order are.
+`P-AMD-AFCXP5C6` asks to show Q/Z ≅ C^×. `P-AMD-D4G4SW2S` asks for gPg⁻¹ ∈ Syl_p(H) where gPg⁻¹ ∩ H is meant; `E-AMD-DGMOEV2O` asks for P ∩ H ∈ Syl_p(H) given P ∈ Syl_p(H), which is trivial.
 `E-AMD-LDJWILVY`, `P-B644L` conclude HK ≤ H. `E-AMD-E3UUQEAP` gives the splitting field of x³ − 2 as Q(∛2, ζ_2), and ζ_2 = −1. `P-SXM4Q` asks to prove ⟨s⟩ is normal in G rather than in C_G(s). `P-O2H7G` hypothesises H ∈ N_G(H). `P-3PD4W` asks for the center of a group of order pr with p prime; order 6 is a counterexample and p^r is presumably meant.
 `E-AMD-5E2GZSH6` says "Prove Burnside's theorem" without saying which.
 
 ### Definitions that state the wrong thing
 
 `D-GY7ZN` defines SO_n as {A : AA^t = I}, which is O_n, and equates it with a kernel that is SL_n. `D-J5AAX`, `D-LIIHP` define GL_n(R) as {A : A = Ā}. `D-3V3SP`, `D-DQPGU` define the symplectic group with a symmetric J. `D-KGGWK` defines transitivity as g·x = x. `D-JGYK4` defines primary with "and" where "or" is meant.
-`D-QMVEB` calls the normal core the largest normal subgroup containing H; its own formula gives the largest contained in H. `D-JRPTK` characterises matrix equivalence by rank, invariant factors and JCF; rank alone does it.
+`D-QMVEB` calls the normal core the largest normal subgroup containing H; its own formula gives the largest contained in H. `D-JRPTK` characterises matrix equivalence by rank, invariant factors and JCF; the JCF is a similarity invariant and does not belong, while the invariant factors are the complete invariant over a PID and rank alone suffices only over a field.
 `D-TGB4R` writes mSpec R = {0, m}. `D-AWSKI` defines a prime element by ab | p rather than p | ab.
 `D-7563L`, `D-NQZUY` state the module axiom as (r+s)x = rs + sx.
 `D-GXMDW` states ring morphisms as f(a(b+c)) = f(a)f(b) + f(a)f(c). `D-JQNJQ` writes the elementary divisor decomposition with the exponents transposed.
@@ -167,7 +167,7 @@ The solution carries its own warning that it was not checked.
 `P-PS4CG` interchanges n_p and n_q and counts Sylow p-subgroups with q − 1 elements each.
 `P-P3GIM` writes V ≅ k[x]/m(x) for a module that need not be cyclic.
 `P-OX3MY` argues two vectors of im(T) cannot be orthogonal.
-`P-63TON` takes Q[2√2] for the fraction field of Z[2√2], and argues every monic linear polynomial over that ring has no constant term.
+`P-63TON` describes the monic linear polynomials over Z[2√2] as having no rational integer part. Its fraction field Q[2√2] is correct, since 2√2 ∈ Q[2√2] gives √2 ∈ Q[2√2].
 `P-M3BT5` names its target extension L in the conclusion and F everywhere else.
 
 ### Cards with no mathematics in them

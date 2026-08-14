@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-2PFLAITV
 kind: problem
-title: 'Show: $|G| < 60 \implies G$ is not simple.'
+title: 'Show: $|G| < 60$ and $G$ nonabelian $\implies G$ is not simple.'
 classification:
   areas:
   - algebra
@@ -15,5 +15,8 @@ review: draft
 ---
 
 ::: {.problem}
-Show: $|G| < 60 \implies G$ is not simple.
+Show: $|G| < 60$ and $G$ nonabelian $\implies G$ is not simple.
+
+Equivalently: every simple group of order less than $60$ is cyclic of prime order.
+The nonabelian hypothesis cannot be dropped, since $C_p$ is simple for every prime $p$, and $A_5$ of order $60$ is the smallest nonabelian simple group.
 :::
