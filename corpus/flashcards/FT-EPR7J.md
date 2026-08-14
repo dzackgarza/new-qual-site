@@ -6,7 +6,9 @@ title: 'Rouché''s Theorem'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations: []
 review: draft
 ---

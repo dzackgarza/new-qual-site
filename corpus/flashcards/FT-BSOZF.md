@@ -6,7 +6,9 @@ title: 'Dirichlet''s Test'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - series-of-numbers
 relations:
 - kind: variant-of
   target: FT-3ZL25

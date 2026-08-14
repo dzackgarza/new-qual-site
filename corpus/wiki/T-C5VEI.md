@@ -6,7 +6,9 @@ title: "Casorati-Weierstrass"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - casorati-weierstrass
+  - essential-singularities
 relations: []
 review: draft
 ---

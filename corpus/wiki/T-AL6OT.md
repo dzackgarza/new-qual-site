@@ -6,7 +6,9 @@ title: "Riemann's removable singularity theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - singularities
 relations: []
 review: draft
 ---

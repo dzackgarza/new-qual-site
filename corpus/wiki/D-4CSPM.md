@@ -6,7 +6,8 @@ title: "Principal branch and exponential"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - complex-logarithm
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Inverting series: for $A(z) = \sum c_k z^k$ and $1/A(z) = \sum b_k z^k$,
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - series-of-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Limit point"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - point-set
+  - limits
 relations: []
 review: draft
 ---

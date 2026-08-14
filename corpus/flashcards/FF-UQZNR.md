@@ -6,7 +6,10 @@ title: 'Inverting series: ${1\over \sin(z) } = \cdots$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - trigonometry
+  - power-series
 relations: []
 review: draft
 ---

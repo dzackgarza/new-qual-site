@@ -6,7 +6,11 @@ title: "Argument Principle, Zeros/Poles Version"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - argument-principle
+  - zeros
+  - poles
+  - meromorphic-functions
 relations: []
 review: draft
 ---

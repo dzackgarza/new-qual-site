@@ -6,7 +6,10 @@ title: 'Exponential expansions of $\sin(z)$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - contour-integration
+  - residues
 relations: []
 review: draft
 ---

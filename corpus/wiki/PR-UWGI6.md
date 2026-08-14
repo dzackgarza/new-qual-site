@@ -6,7 +6,9 @@ title: "Mean Value Property"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - mean-value-property
+  - harmonic-functions
 relations: []
 review: draft
 ---

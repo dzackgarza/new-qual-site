@@ -6,7 +6,9 @@ title: "Slit plane to horizontal strip"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - complex-logarithm
 relations: []
 review: draft
 ---

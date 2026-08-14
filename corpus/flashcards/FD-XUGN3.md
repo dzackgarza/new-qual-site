@@ -6,7 +6,8 @@ title: 'Exponential definitions of $\cosh$ and $\sinh$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - hyperbolic-functions
 relations: []
 review: draft
 ---

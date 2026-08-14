@@ -6,7 +6,9 @@ title: "The $p\\dash$test"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - series-of-numbers
 relations: []
 review: draft
 ---

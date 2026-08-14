@@ -6,7 +6,9 @@ title: "Locally uniform convergence"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
 relations: []
 review: draft
 ---

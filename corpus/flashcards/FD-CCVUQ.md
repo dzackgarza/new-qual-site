@@ -6,7 +6,9 @@ title: 'Definition: A removable singularity'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - singularities
 relations:
 - kind: variant-of
   target: FD-BRJK5

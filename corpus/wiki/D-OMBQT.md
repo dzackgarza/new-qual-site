@@ -6,7 +6,8 @@ title: "Complex log"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - complex-logarithm
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Strict maximum principle, complex version"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - harmonic-functions
 relations: []
 review: draft
 ---

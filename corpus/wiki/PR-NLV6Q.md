@@ -6,7 +6,9 @@ title: "$\\Gamma$ is holomorphic on the right half-plane"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
+  - holomorphic-functions
 relations: []
 review: draft
 ---

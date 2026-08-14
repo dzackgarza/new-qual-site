@@ -6,7 +6,9 @@ title: "Little Picard"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - picard
+  - entire-functions
 relations: []
 review: draft
 ---

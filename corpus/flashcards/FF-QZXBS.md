@@ -6,7 +6,11 @@ title: 'Types of isolated singularities'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - singularities
+  - poles
+  - essential-singularities
+  - removable-singularities
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Zeros of holomorphic functions are isolated"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - holomorphic-functions
 relations: []
 review: draft
 ---

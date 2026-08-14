@@ -6,7 +6,9 @@ title: "Properties of hyperbolic translations / Blaschke factors"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - blaschke-factors
+  - biholomorphisms
 relations: []
 review: draft
 ---

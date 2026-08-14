@@ -6,7 +6,9 @@ title: "Radius of Convergence by the Root Test"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - convergence-tests
 relations: []
 review: draft
 ---

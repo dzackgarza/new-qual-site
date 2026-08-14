@@ -6,7 +6,9 @@ title: 'Definition: A pole $a$ of order $m$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - poles
+  - singularities
 relations:
 - kind: variant-of
   target: FD-C7EQD

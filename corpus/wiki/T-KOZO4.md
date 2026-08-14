@@ -6,7 +6,9 @@ title: "Riemann Extension Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - singularities
 relations: []
 review: draft
 ---

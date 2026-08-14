@@ -6,7 +6,10 @@ title: "Laurent expansion on an annulus"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - principal-parts
+  - singularities
 relations: []
 review: draft
 ---

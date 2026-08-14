@@ -6,7 +6,11 @@ title: "The Residue Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - winding-number
+  - meromorphic-functions
 relations: []
 review: draft
 ---

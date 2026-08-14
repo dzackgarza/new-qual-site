@@ -6,7 +6,8 @@ title: "Improved Taylor Remainder Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
 relations: []
 review: draft
 ---

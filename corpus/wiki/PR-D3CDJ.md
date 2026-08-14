@@ -6,7 +6,9 @@ title: "Residue at infinity"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - singularities
 relations: []
 review: draft
 ---

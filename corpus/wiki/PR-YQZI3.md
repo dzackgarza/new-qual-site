@@ -6,7 +6,9 @@ title: "Meromorphic continuation of $\\Gamma$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
+  - meromorphic-functions
 relations: []
 review: draft
 ---

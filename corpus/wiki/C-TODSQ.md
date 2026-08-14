@@ -6,7 +6,11 @@ title: "Sufficient condition for a sequence to converge to a holomorphic functio
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
+  - holomorphic-functions
+  - morera
 relations: []
 review: draft
 ---

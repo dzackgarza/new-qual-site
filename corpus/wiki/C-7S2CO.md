@@ -6,7 +6,11 @@ title: "Formula for Laurent coefficients"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - cauchy-integral-formula
+  - cauchy-estimates
+  - power-series
 relations: []
 review: draft
 ---

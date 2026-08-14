@@ -6,7 +6,9 @@ title: 'Dirichlet''s Test'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - series-of-numbers
 relations: []
 review: draft
 ---

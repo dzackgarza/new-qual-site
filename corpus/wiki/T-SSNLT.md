@@ -6,7 +6,10 @@ title: "Residue formula: fractional residues"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - poles
 relations: []
 review: draft
 ---

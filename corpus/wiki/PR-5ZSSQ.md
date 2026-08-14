@@ -6,7 +6,10 @@ title: "Contraction principle"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - metric-spaces
+  - completeness
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: '$\arctan(1) = \cdots$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
 relations: []
 review: draft
 ---

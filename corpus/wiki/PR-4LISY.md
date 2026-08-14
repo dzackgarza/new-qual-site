@@ -6,7 +6,9 @@ title: "Uniform Convergence of Series"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

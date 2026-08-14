@@ -6,7 +6,9 @@ title: "Power Series are Smooth"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - holomorphic-functions
 relations: []
 review: draft
 ---

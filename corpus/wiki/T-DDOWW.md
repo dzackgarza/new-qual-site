@@ -6,7 +6,10 @@ title: "Picard's big theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - picard
+  - normal-families
+  - essential-singularities
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Series expansion for $\csch(z) = {1\over \sinh(z)}$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - hyperbolic-functions
+  - laurent-series
 relations: []
 review: draft
 ---

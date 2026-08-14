@@ -6,7 +6,10 @@ title: 'An analytic function with convergence radius 1 which converges at every 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - series-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

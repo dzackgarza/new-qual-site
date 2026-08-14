@@ -6,7 +6,9 @@ title: "Improved Taylor's Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - cauchy-integral-formula
 relations: []
 review: draft
 ---

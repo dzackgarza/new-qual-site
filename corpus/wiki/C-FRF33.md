@@ -6,7 +6,9 @@ title: "Open Mapping"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - holomorphic-functions
 relations: []
 review: draft
 ---

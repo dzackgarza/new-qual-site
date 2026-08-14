@@ -6,7 +6,9 @@ title: "Poles (and associated terminology)"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - poles
+  - singularities
 relations: []
 review: draft
 ---

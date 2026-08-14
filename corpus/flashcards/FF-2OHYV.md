@@ -6,7 +6,9 @@ title: 'Standard parameterization of a circle in $\CC$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - contour-integration
 relations: []
 review: draft
 ---

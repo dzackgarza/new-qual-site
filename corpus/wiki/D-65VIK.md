@@ -6,7 +6,9 @@ title: "Zeros"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - holomorphic-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Mean Value Property for Holomorphic Functions"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - mean-value-property
+  - cauchy-integral-formula
 relations: []
 review: draft
 ---

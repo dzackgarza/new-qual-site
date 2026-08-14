@@ -6,7 +6,9 @@ title: "Identity principle (Generalization)"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - identity-theorem
+  - zeros
 relations: []
 review: draft
 ---

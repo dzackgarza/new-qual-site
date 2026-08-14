@@ -6,7 +6,8 @@ title: 'Double angle formulas involving $\tan$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Maximum Modulus"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - harmonic-functions
 relations: []
 review: draft
 ---

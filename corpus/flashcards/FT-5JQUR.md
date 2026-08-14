@@ -6,7 +6,9 @@ title: 'Cauchy-Goursat Theorem'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-theorem
+  - contour-integration
 relations: []
 review: draft
 ---

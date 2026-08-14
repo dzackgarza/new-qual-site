@@ -6,7 +6,8 @@ title: "Well-definedness of pole order"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - poles
 relations: []
 review: draft
 ---

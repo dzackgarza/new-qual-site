@@ -6,7 +6,10 @@ title: "Zeros and their orders"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - power-series
+  - holomorphic-functions
 relations: []
 review: draft
 ---

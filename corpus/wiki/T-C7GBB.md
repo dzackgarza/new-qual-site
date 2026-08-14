@@ -6,7 +6,8 @@ title: "Zeros of derivative $f'$ lie in convex hull of zeros of $f$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
 relations: []
 review: draft
 ---

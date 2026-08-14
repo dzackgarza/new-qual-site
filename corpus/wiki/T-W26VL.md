@@ -6,7 +6,9 @@ title: "Structure theorem: automorphisms of the disc"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - biholomorphisms
+  - blaschke-factors
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Beta function"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
+  - integrals
 relations: []
 review: draft
 ---

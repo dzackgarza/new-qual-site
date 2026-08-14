@@ -6,7 +6,8 @@ title: '$\arctan\qty{\sqrt{3} \over 3} = \cdots$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
 relations: []
 review: draft
 ---

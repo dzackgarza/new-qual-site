@@ -6,7 +6,10 @@ title: "Holomorphic functions have isolated zeros"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - identity-theorem
+  - holomorphic-functions
 relations: []
 review: draft
 ---

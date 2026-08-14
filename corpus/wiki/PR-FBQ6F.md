@@ -6,7 +6,8 @@ title: "Functional equation for $\\Gamma$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
 relations: []
 review: draft
 ---

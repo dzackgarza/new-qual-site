@@ -6,7 +6,9 @@ title: "Factorization of zeros out of holomorphic functions"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - holomorphic-functions
 relations: []
 review: draft
 ---

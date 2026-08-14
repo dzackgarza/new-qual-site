@@ -6,7 +6,8 @@ title: "The Weierstrass $\\wp$ function"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - meromorphic-functions
 relations: []
 review: draft
 ---

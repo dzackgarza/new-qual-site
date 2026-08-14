@@ -6,7 +6,9 @@ title: 'Series expansion for $\sech(z) = {1\over \cosh(z)}$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - hyperbolic-functions
+  - power-series
 relations: []
 review: draft
 ---

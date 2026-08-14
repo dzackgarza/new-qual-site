@@ -6,7 +6,10 @@ title: "Hurwitz"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - hurwitz
+  - zeros
+  - uniform-convergence
 relations: []
 review: draft
 ---

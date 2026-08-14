@@ -6,7 +6,9 @@ title: 'Example of a conformal map that is not injective.'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
+  - counterexamples
 relations: []
 review: draft
 ---

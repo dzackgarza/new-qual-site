@@ -6,7 +6,9 @@ title: "Existence of log of a function"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - complex-logarithm
+  - holomorphic-functions
 relations: []
 review: draft
 ---

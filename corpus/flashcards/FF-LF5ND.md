@@ -6,7 +6,9 @@ title: 'Series expansion for $\cosh(z)$'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - hyperbolic-functions
+  - power-series
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Zeros of $\\zeta$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - riemann-zeta
+  - zeros
 relations: []
 review: draft
 ---

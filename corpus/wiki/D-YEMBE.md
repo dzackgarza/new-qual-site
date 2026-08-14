@@ -6,7 +6,9 @@ title: "Real (multivariate) differentiable"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
+  - cauchy-riemann
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Weierstrass $M\\dash$Test"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - uniform-convergence
+  - series-of-functions
 relations: []
 review: draft
 ---

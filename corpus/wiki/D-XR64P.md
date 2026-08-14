@@ -6,7 +6,9 @@ title: "The Dirichlet Problem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - pdes
 relations: []
 review: draft
 ---

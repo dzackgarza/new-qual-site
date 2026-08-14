@@ -6,7 +6,9 @@ title: "Argument Principle, Index Version"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - argument-principle
+  - winding-number
 relations: []
 review: draft
 ---

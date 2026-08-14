@@ -6,7 +6,9 @@ title: "Residue formula for higher order poles"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - poles
 relations: []
 review: draft
 ---

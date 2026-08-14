@@ -6,7 +6,9 @@ title: "Meromorphic continuation of $\\zeta$"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - riemann-zeta
+  - meromorphic-functions
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Riemann''s Removable Singularity Theorem'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - singularities
 relations:
 - kind: variant-of
   target: FT-5NI77

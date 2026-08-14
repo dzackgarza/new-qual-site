@@ -6,7 +6,8 @@ title: "Complex fractional powers"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - complex-logarithm
 relations: []
 review: draft
 ---

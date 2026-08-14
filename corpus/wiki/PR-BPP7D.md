@@ -6,7 +6,8 @@ title: "Sector to Disc"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
 relations: []
 review: draft
 ---

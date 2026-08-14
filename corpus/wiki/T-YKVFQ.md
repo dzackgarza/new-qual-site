@@ -6,7 +6,9 @@ title: "Bolzano-Weierstrass property"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - compactness
+  - sequences-of-numbers
 relations: []
 review: draft
 ---

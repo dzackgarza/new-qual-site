@@ -6,7 +6,8 @@ title: "Minimum modulus principle"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
 relations: []
 review: draft
 ---

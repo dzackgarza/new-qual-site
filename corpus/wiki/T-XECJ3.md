@@ -6,7 +6,9 @@ title: "Inverse Function Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
+  - biholomorphisms
 relations: []
 review: draft
 ---

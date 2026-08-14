@@ -6,7 +6,9 @@ title: "Root Test"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - power-series
 relations: []
 review: draft
 ---

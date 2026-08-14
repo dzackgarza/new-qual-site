@@ -6,7 +6,10 @@ title: "The logarithmic derivative"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - argument-principle
+  - poles
+  - zeros
 relations: []
 review: draft
 ---

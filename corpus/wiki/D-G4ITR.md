@@ -6,7 +6,9 @@ title: "Laplacian and Harmonic Functions"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - pdes
 relations: []
 review: draft
 ---

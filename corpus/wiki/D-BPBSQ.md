@@ -6,7 +6,8 @@ title: "Singularities at infinity"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - singularities
 relations: []
 review: draft
 ---

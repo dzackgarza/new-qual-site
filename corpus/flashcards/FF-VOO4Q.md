@@ -6,7 +6,9 @@ title: 'The generalized residue formula'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - poles
 relations: []
 review: draft
 ---

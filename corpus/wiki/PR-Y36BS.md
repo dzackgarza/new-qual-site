@@ -6,7 +6,9 @@ title: "Holomorphic implies continuous."
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Principal Part and Residue at poles"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - principal-parts
+  - residues
+  - poles
+  - laurent-series
 relations: []
 review: draft
 ---

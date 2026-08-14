@@ -6,7 +6,9 @@ title: 'Cauchy''s Integral Formula for Derivatives'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-estimates
+  - cauchy-integral-formula
 relations: []
 review: draft
 ---

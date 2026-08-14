@@ -6,7 +6,10 @@ title: 'An analytic function with convergence radius 1 which fails to converge a
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - series-of-functions
+  - counterexamples
 relations: []
 review: draft
 ---

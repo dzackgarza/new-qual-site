@@ -6,7 +6,10 @@ title: "If $f:X\\to Y$ is a nonconstant holomorphic map between Riemann surface\
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - riemann-surfaces
+  - holomorphic-functions
+  - compactness
 relations: []
 review: draft
 ---

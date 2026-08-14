@@ -6,7 +6,9 @@ title: "Better derivative formula that sometimes works for simple poles"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - poles
 relations: []
 review: draft
 ---

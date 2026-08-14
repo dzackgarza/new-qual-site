@@ -6,7 +6,9 @@ title: 'Cauchy Integral Formula (Higher Derivatives)'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - contour-integration
 relations: []
 review: draft
 ---

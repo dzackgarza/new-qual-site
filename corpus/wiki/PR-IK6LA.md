@@ -6,7 +6,8 @@ title: "Disc complement to doubly slit plane"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - conformal-maps
 relations: []
 review: draft
 ---

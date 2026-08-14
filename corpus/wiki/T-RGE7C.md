@@ -6,7 +6,9 @@ title: "Continuation Principle / Identity Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - identity-theorem
+  - zeros
 relations: []
 review: draft
 ---

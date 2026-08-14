@@ -6,7 +6,9 @@ title: "Analytic"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - holomorphic-functions
 relations: []
 review: draft
 ---

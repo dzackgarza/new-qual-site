@@ -6,7 +6,11 @@ title: "Rouch\u00e9's Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - winding-number
+  - meromorphic-functions
 relations: []
 review: draft
 ---
