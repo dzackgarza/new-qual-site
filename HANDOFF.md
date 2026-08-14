@@ -5,27 +5,17 @@ Orchestration ran as one coordinator with seven Opus worker lanes; every lane's 
 
 ## 1. Unresolved at pause — handle these before anything else
 
-1. **~685 uncommitted files in this checkout.** Three classes:
+(Items rewritten at end of session; the two big risks resolved before the pause completed.)
 
-   - **Real work, must not be lost:** the Complex Analysis lane's theory-layer classification batch — topics added to ~562 `corpus/wiki/` C-cards, ~54 `corpus/flashcards/`, plus `corpus/hand-authored/T-4XPWL.md` and a few `corpus/qrs/` files.
-     The lane died on API SSL errors after its problem/exercise/occurrence layers were committed but before this batch landed.
-     Its `artifacts/issue-27/branch-proof.md` count (1,479 classified) includes this batch.
-     A resume request is outstanding; if the lane stays dead, checkpoint-commit this batch with attributed provenance (assignments were read by the dead lane, not by the committer — say so in the message), or have a fresh agent spot-verify a sample first.
+1. **RESOLVED — the uncommitted classification batch.** The Complex Analysis lane recovered and committed its theory-spine batch (`fa80ad69`), merged its proof addenda correctly on top of the reachability addendum (`da32fdd6`), and the ~400 formatter-normalization files landed as `7fd3e80f`. The stale-proof landmine no longer exists; the tree was verified clean.
 
-   - **Harmless formatter normalizations:** fence-spacing and prose-unwrap diffs in `corpus/ws9/`, `corpus/occurrences/SRC-TEXT-*`, `corpus/imports/mmaq-total/` (2 files).
-     Safe to commit with the batch.
+2. **RESOLVED — Algebra corrections complete, not partial.** All five batches plus the proof-document repairs landed: `eee0d46d`, `8a4bc822`+`b3214111`, `d58db4d3`, `fb546a5c`, `2d160bd2`, `205b5975`, `f00a577a`, `eb59182e`, `07f03f95` — 117 cards, proof citation audit clean (210/210 ids resolve). Recorded-not-guessed items are listed in the proof and §5.
 
-   - **A LANDMINE — do not commit:** the working-tree copy of `artifacts/issue-27/branch-proof.md` is a stale pre-`84c2baf4` revision; committing it would DELETE the committed second addendum (the 105/105 page-reachability measurement and the P-Y37R6 record).
-     Preserve the dirty copy to a scratchpad if desired, then restore the committed version.
-     Never `git add -A` in this tree.
+3. **OPEN — one stale test blocks the push gate.** `tests/test_invariants.py::test_corpus_layout_is_semantically_inert` hard-codes the pre-session 4-section Algebra guide traversal and fails against the legitimate 17-section guide. A repair (manifest-as-source-of-truth rewrite, per test-guidelines) was in flight at session end — check `git log -- tests/test_invariants.py` and `git status`: if a green commit landed, push; if the working tree holds a partial rewrite, finish or restart it from the test's intent (rendered traversal coherent with the manifest), never a vacuous weakening. This is the only thing between the current state and a clean `git push`.
 
-2. **Algebra correction batches 4–5 not run.** Batches 1–3 are committed (`eee0d46d`; `8a4bc822`+`b3214111`; `d58db4d3`). Remaining, from the findings list in `artifacts/issue-25/branch-proof.md`: fields/separability/Galois (~25 cards) and linear algebra/canonical forms (~23 cards).
-   Also owed: fixes inside that proof document itself — two id slips (`E-AMD-2PFLAITV`, `E-AMD-D4G4SW2S` are actually `P-AMD-*`; the cards exist, nothing was deleted) and two findings the lane itself refuted (`P-63TON` fraction-field claim; `D-JRPTK` rank-alone claim).
-   The lane's final checkpoint report never arrived.
+4. **OPEN — nothing is pushed** (~110 commits ahead of `origin/main`). Push immediately after (3).
 
-3. **Nothing is pushed.** Push `main` once (1) is resolved and the tree is clean.
-
-4. **No GitHub writes have been made.** The full batch is in §4.
+5. **OPEN — no GitHub writes have been made.** The full batch is in §4.
 
 ## 2. State of the plan's workstreams
 
