@@ -39,49 +39,49 @@ sections:
           kind: definition
           topics:
             - point-set
-          limit: 59
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - point-set
-          limit: 58
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - closure
-          limit: 23
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - continuity
-          limit: 36
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - limits
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - bases
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - homeomorphisms
-          limit: 21
+          limit: 500
           review:
             mode: any
   - slug: constructions-of-spaces
@@ -109,28 +109,28 @@ sections:
           kind: definition
           topics:
             - quotient-spaces
-          limit: 10
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - subspace-topology
-          limit: 18
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - product-topology
-          limit: 59
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - quotient-spaces
-          limit: 80
+          limit: 500
           review:
             mode: any
   - slug: separation-and-countability
@@ -163,35 +163,35 @@ sections:
           kind: definition
           topics:
             - separation-axioms
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - hausdorff-spaces
-          limit: 49
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - separation-axioms
-          limit: 25
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - countability
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - density
-          limit: 9
+          limit: 500
           review:
             mode: any
   - slug: metric-spaces
@@ -221,35 +221,35 @@ sections:
           kind: definition
           topics:
             - metric-spaces
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - metric-spaces
-          limit: 30
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - completeness
-          limit: 5
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - euclidean-spaces
-          limit: 21
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - convergence
-          limit: 2
+          limit: 500
           review:
             mode: any
   - slug: compactness
@@ -284,35 +284,35 @@ sections:
           kind: definition
           topics:
             - compactness
-          limit: 19
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - compactness
-          limit: 93
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - compactness
-          limit: 51
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - tube-lemma
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - paracompactness
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: connectedness-and-homotopy
@@ -350,35 +350,35 @@ sections:
           kind: definition
           topics:
             - homotopy
-          limit: 33
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - connectedness
-          limit: 72
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - homotopy
-          limit: 98
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - retracts
-          limit: 32
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - counterexamples
-          limit: 30
+          limit: 500
           review:
             mode: any
   - slug: the-fundamental-group
@@ -410,28 +410,28 @@ sections:
           kind: definition
           topics:
             - fundamental-group
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - fundamental-group
-          limit: 171
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - van-kampen
-          limit: 53
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - groups
-          limit: 33
+          limit: 500
           review:
             mode: any
   - slug: covering-spaces
@@ -468,28 +468,28 @@ sections:
           kind: definition
           topics:
             - covering-spaces
-          limit: 15
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - covering-spaces
-          limit: 118
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - group-actions
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - conjugacy
-          limit: 2
+          limit: 500
           review:
             mode: any
   - slug: cell-complexes
@@ -527,21 +527,21 @@ sections:
           kind: definition
           topics:
             - cell-complexes
-          limit: 20
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - cell-complexes
-          limit: 91
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - category-theory
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: homology
@@ -580,35 +580,35 @@ sections:
           kind: definition
           topics:
             - homology
-          limit: 38
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - homology
-          limit: 142
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - mayer-vietoris
-          limit: 35
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - homological-algebra
-          limit: 18
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - modules
-          limit: 6
+          limit: 500
           review:
             mode: any
   - slug: degree-and-fixed-points
@@ -635,21 +635,21 @@ sections:
           kind: definition
           topics:
             - degree
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - degree
-          limit: 35
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - fixed-points
-          limit: 29
+          limit: 500
           review:
             mode: any
   - slug: surfaces
@@ -682,28 +682,28 @@ sections:
           kind: fact
           topics:
             - surfaces
-          limit: 15
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - surfaces
-          limit: 88
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - classification
-          limit: 20
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - euler-characteristic
-          limit: 23
+          limit: 500
           review:
             mode: any
   - slug: manifolds-and-duality
@@ -748,34 +748,34 @@ sections:
           kind: definition
           topics:
             - manifolds
-          limit: 21
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - manifolds
-          limit: 20
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - orientation
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - cohomology
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - poincare-duality
-          limit: 4
+          limit: 500
           review:
             mode: any
