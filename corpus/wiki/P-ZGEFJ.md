@@ -14,9 +14,9 @@ review: draft
 ---
 
 Here $I$ is a left ideal of $R$, $S$ is a nonempty subset of the $R\dash$module $A$, and
-$$
+\[
 IS \definedas \theset{ \sum_{i=1}^n r_i a_i \suchthat n\geq 1,\ r_i \in I,\ a_i \in S }
-.$$
+.\]
 
 $A$ carries no internal multiplication, so being a submodule is closure under addition and under the action of $R$, not closure under multiplication by elements of $A$.
 So we show
