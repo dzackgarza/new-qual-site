@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MFWBK
 kind: problem
-title: "- $\\QQ$"
+title: "$\\QQ$"
 classification:
   areas:
   - topology
@@ -10,4 +10,4 @@ classification:
 relations: []
 review: draft
 ---
-	- $\QQ$
+- $\QQ$

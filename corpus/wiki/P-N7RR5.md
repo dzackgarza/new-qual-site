@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
--  Is it true that the interior of a product is the product of the interiors?
+
+- Is it true that the interior of a product is the product of the interiors?
