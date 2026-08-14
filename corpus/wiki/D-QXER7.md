@@ -18,5 +18,6 @@ Products, pullbacks, and inverse limits are limits; the dual notion, reversing a
 :::
 
 ::: {.concept}
-See Hatcher, §4.H, pp. 460-461.
+See Weibel, *An Introduction to Homological Algebra*, Variation 2.6.9, which defines the limit as the colimit of the opposite diagram and records that it is right adjoint to the diagonal functor, hence left exact.
+The dual construction is the colimit, 2.6.7 there.
 :::

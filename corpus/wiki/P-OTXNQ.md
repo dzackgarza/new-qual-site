@@ -10,4 +10,4 @@ classification:
 relations: []
 review: draft
 ---
-	Does this hold when $A$ is instead an open subset?
+Does this hold when $A$ is instead an open subset?
