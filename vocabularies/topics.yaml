@@ -31,6 +31,8 @@
   name: Blaschke Factors
 - id: borel-cantelli
   name: Borel-Cantelli
+- id: burnside-s-lemma
+  name: Burnside's Lemma
 - id: calculus
   name: Calculus
 - id: canonical-forms
@@ -119,8 +121,12 @@
   name: Diagonalization
 - id: differentiation
   name: Differentiation
+- id: dual-spaces
+  name: Dual Spaces
 - id: egorov
   name: Egorov
+- id: eigenvalues-and-eigenvectors
+  name: Eigenvalues and Eigenvectors
 - id: entire-functions
   name: Entire Functions
 - id: equicontinuity
@@ -205,14 +211,20 @@
   name: Inner Product Spaces
 - id: integral-domains
   name: Integral Domains
+- id: integral-extensions
+  name: Integral Extensions
 - id: integrals
   name: Integrals
 - id: irreducibility-criteria
   name: Irreducibility Criteria
+- id: isomorphism-theorems
+  name: Isomorphism Theorems
 - id: jacobson-radical
   name: Jacobson Radical
 - id: jordan-canonical-form
   name: Jordan Canonical Form
+- id: krull-dimension
+  name: Krull Dimension
 - id: l-infty
   name: L infty
 - id: l1
@@ -265,6 +277,8 @@
   name: Montel
 - id: morera
   name: Morera
+- id: nakayamas-lemma
+  name: Nakayama's Lemma
 - id: nilpotence
   name: Nilpotence
 - id: nilpotent-groups
@@ -289,6 +303,8 @@
   name: p-Groups
 - id: paracompactness
   name: Paracompactness
+- id: partitions
+  name: Partitions
 - id: pdes
   name: PDEs
 - id: permutations
@@ -353,6 +369,8 @@
   name: Schwarz Lemma
 - id: schwarz-reflection
   name: Schwarz Reflection
+- id: semidirect-products
+  name: Semidirect Products
 - id: semisimplicity
   name: Semisimplicity
 - id: separability
