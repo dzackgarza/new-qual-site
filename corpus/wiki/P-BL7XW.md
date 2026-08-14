@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Classify all groups of order $p^3$ for $p$ prime.
 
+Classify all groups of order $p^3$ for $p$ prime.

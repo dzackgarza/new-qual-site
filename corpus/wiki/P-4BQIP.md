@@ -13,8 +13,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem}
+
+::: {.problem}
 Let $G$ be a group of order $p^3$ for some prime $p$.
 Show that either $G$ is abelian, or $\left| Z(G) \right| = p$.
 :::
-

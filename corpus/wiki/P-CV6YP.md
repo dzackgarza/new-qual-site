@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that $ff(R[t]) = ff(R)(t)$.

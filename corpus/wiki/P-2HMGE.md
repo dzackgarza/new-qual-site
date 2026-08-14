@@ -12,6 +12,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="?"}
+
+::: {.problem title="?"}
 Show that a connected, normal topological space with more than a single point is uncountable.
 :::

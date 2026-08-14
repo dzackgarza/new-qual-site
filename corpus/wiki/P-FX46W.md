@@ -13,8 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
 Define “representation” of a group.
 Define “irreducible representation”.
 Why can you decompose representations of finite groups into irreducible ones?
 Construct an in- variant inner product.
-

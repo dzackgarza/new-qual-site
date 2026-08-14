@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that any infinite set with the cofinite topology is compact.

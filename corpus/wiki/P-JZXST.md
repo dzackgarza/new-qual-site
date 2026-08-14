@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-3. Draw CW square for $T$ and cut down the center to see two copies of $K$.
 
+3. Draw CW square for $T$ and cut down the center to see two copies of $K$.

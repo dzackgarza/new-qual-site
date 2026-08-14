@@ -12,4 +12,7 @@ classification:
 relations: []
 review: draft
 ---
-- What is an interior point? An isolated point? A limit point?
+
+- What is an interior point?
+  An isolated point?
+  A limit point?

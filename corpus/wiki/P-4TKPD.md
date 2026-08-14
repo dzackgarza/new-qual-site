@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Prove that a finite CW complex must be Hausdorff.

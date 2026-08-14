@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Theorem 5.2"}
+::: {.theorem title="Theorem 5.2"}
 If $f\in\mathcal R(\alpha)$ on $[a,b]$ then $\alpha\in\mathcal R(f)$ on $[a,b]$ and
 $$
 \int_a^b f\,d\alpha=f(b)\alpha(b)-f(a)\alpha(a)-\int_a^b\alpha\,df.

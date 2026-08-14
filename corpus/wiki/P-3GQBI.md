@@ -13,8 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 5.1.16"}
-Show that in $\mathbb{C}$, the fields $\mathbb{Q}(i) \cong \mathbb{Q}(\sqrt 2)$ as vector spaces, but
-not as fields. 
-:::
 
+::: {.problem title="Hungerford 5.1.16"}
+Show that in $\mathbb{C}$, the fields $\mathbb{Q}(i) \cong \mathbb{Q}(\sqrt 2)$ as vector spaces, but not as fields.
+:::

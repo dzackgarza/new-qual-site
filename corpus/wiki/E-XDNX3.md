@@ -12,5 +12,6 @@ classification:
 relations: []
 review: draft
 ---
-Let $A$ be a compact subspace of a Hausdorff space $X$. 
+
+Let $A$ be a compact subspace of a Hausdorff space $X$.
 Show that $A$ is closed.

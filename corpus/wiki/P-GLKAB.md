@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What is the discriminant of a polynomial?
 
+What is the discriminant of a polynomial?

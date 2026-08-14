@@ -12,16 +12,19 @@ classification:
 relations: []
 review: draft
 ---
+
 Let $S^3 \to E \to S^5$ be a fiber bundle and compute $H_3(E)$.
 
-:::{.solution title="Using the LES in Homotopy"}
+::: {.solution title="Using the LES in Homotopy"}
 
 \envlist
-:::{.concept}
+::: {.concept}
 \envlist
 
 - Homotopy LES: $F\to E\to B \leadsto \pi_*F() \to \pi_*(E) \to \pi_*(B)$.
+
 - Hurewicz: $\pi_{\leq n}(X) = 0, \pi_n(X) \neq 0 \implies \pi_n(X) \cong H_n(X)$.
+
 - $0\to A\to B \to 0$ exact iff $A\cong B$
 :::
 
@@ -87,17 +90,18 @@ and plugging in known information yields
 
 where
 
-- Rows 3 and 4 force $\pi_3(E) \cong \ZZ$, 
+- Rows 3 and 4 force $\pi_3(E) \cong \ZZ$,
+
 - Rows 0 and 1 force $\pi_0(E) = \ZZ$ (todo: not clear if this is true... is it even needed here?)
+
 - The remaining rows force $\pi_1(E) = \pi_2(E) = 0$.
 
-By Hurewicz, we thus have $H_3(E) = \pi_3(E) = \ZZ$. 
+By Hurewicz, we thus have $H_3(E) = \pi_3(E) = \ZZ$.
 :::
 
-:::{.solution title="Using the Serre spectral sequence"}
+::: {.solution title="Using the Serre spectral sequence"}
 
-:::{.remark}
+::: {.remark}
 Four-corner spectral sequences, only homology in degrees 1,3,5,8. No differentials hit anything!
 :::
-
 :::

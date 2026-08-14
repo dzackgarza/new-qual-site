@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What are the characteristic and minimal polynomial of the Frobenius automorphism?
 
+What are the characteristic and minimal polynomial of the Frobenius automorphism?

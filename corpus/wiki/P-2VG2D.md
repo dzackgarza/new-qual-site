@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Prove that the integers form a PID.
 
+Prove that the integers form a PID.

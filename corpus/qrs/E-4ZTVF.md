@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Show that a quotient of a compact space is again compact.
 
+Show that a quotient of a compact space is again compact.

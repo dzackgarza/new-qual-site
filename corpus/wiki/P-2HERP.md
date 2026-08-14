@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What can you say about the eigenvalues of a skew-symmetric matrix?
 
+What can you say about the eigenvalues of a skew-symmetric matrix?

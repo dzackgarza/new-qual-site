@@ -18,7 +18,5 @@ payload:
 ---
 
 ::: remark
-Munkres, *Topology*, 2nd edition, Prentice Hall, 2000. Cited in the authored wiki as `[@Mun00]`; the work itself is in
-`vocabularies/references.bib` and the book is registered as `munkres` in
-`vocabularies/textbooks.yaml`.
+Munkres, *Topology*, 2nd edition, Prentice Hall, 2000. Cited in the authored wiki as `[@Mun00]`; the work itself is in `vocabularies/references.bib` and the book is registered as `munkres` in `vocabularies/textbooks.yaml`.
 :::

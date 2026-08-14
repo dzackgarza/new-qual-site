@@ -13,13 +13,17 @@ classification:
 relations: []
 review: draft
 ---
-How many surfaces are there, up to homeomorphism, which are: 
 
-- Connected, 
-- Compact, 
-- Possibly with boundary, 
-- Possibly nonorientable, and 
-- With Euler characteristic -3? 
+How many surfaces are there, up to homeomorphism, which are:
+
+- Connected,
+
+- Compact,
+
+- Possibly with boundary,
+
+- Possibly nonorientable, and
+
+- With Euler characteristic -3?
 
 Describe one representative from each class.
-

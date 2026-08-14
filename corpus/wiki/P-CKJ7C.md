@@ -13,6 +13,6 @@ classification:
 relations: []
 review: draft
 ---
+
 What are the representations of $S_3$?
 How do they restrict to $S_2$?
-

@@ -13,6 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-How many groups are there of order 15?
-Prove it.
 
+How many groups are there of order 15? Prove it.

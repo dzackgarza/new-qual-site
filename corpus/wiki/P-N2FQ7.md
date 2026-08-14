@@ -14,7 +14,7 @@ classification:
 relations: []
 review: draft
 ---
-Let $X$ be the space formed by identifying the boundary of a
-Möbius band with a meridian of the torus $T^2$. 
+
+Let $X$ be the space formed by identifying the boundary of a Möbius band with a meridian of the torus $T^2$.
 
 Compute $\pi_1 (X)$ and $H_* (X)$.

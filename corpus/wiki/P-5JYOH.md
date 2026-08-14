@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-Describe the topological classification of all compact connected surfaces $M$ without boundary having Euler characteristic $\chi(M )\geq -2$. 
+
+Describe the topological classification of all compact connected surfaces $M$ without boundary having Euler characteristic $\chi(M )\geq -2$.
 
 No proof is required.
-

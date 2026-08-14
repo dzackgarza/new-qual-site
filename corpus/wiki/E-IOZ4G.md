@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that any space with the indiscrete topology is separable.

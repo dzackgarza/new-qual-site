@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-- Prove Burnside's theorem.
 
+- Prove Burnside's theorem.

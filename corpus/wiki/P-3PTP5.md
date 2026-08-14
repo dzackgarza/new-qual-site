@@ -13,6 +13,7 @@ classification:
 relations: []
 review: draft
 ---
+
 Prove that a commutative ring with unit is a field if and only if its only ideals are {0} and the whole ring
 
 ![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 19.png]]

@@ -12,8 +12,9 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="?"}
-Is every product (finite or infinite) of Hausdorff spaces Hausdorff?
-If yes, prove it. If no, give a counterexample.
-:::
 
+::: {.problem title="?"}
+Is every product (finite or infinite) of Hausdorff spaces Hausdorff?
+If yes, prove it.
+If no, give a counterexample.
+:::

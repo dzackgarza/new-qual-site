@@ -11,4 +11,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that a closed subset $A$ of a compact space $X$ is compact.

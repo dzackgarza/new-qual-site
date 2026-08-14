@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Prove that the alternating group $A_n$ is simple for $n \geq 5$.
 
+Prove that the alternating group $A_n$ is simple for $n \geq 5$.

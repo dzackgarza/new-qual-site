@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-What's a Galois group that's not $S_n$ or $A_n$?
 
+What's a Galois group that's not $S_n$ or $A_n$?

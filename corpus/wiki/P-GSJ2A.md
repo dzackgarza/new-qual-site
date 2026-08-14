@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What are the eigenvalues of a symmetric matrix?
 
+What are the eigenvalues of a symmetric matrix?

@@ -13,9 +13,9 @@ classification:
 relations: []
 review: draft
 ---
+
 Consider $\SL_2(R)$ acting on $\RR^2$ by matrix multiplication.
 What is the stabiliser of a point?
 Does it depend which point?
 Do you know what sort of subgroup this is?
 What if $\SL_2(R)$ acts by Möbius transformations instead?
-

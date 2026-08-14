@@ -11,4 +11,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that $\alpha/F$ is algebraic $\iff F(\alpha)/F$ is a finite extension.

@@ -13,7 +13,6 @@ classification:
 relations: []
 review: draft
 ---
-Take a finite field extension \( \FF_p^n \) over \( \FF_p \).
-What is Frobenius?
-What is its characteristic polynomial?
 
+Take a finite field extension \( \FF_p^n \) over \( \FF_p \). What is Frobenius?
+What is its characteristic polynomial?

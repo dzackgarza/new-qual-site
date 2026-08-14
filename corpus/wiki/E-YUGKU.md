@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - State the definition of the product topology, the subspace topology, and the quotient topology.

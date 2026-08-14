@@ -12,6 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that a sequentially compact space is totally bounded.
 
 #### Exercise

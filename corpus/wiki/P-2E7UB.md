@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - $\star$ Show that if $x$ is not a unit, then $x$ is contained in some maximal ideal.

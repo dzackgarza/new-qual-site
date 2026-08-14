@@ -13,8 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 5.4.11"}
-Determine all subgroups of the Galois group and all intermediate fields of the splitting (over
-$\mathbb{Q}$) of the polynomial $(x^{3}-2)(x^{2}-3)\in \mathbb{Q}[x]$.
-:::
 
+::: {.problem title="Hungerford 5.4.11"}
+Determine all subgroups of the Galois group and all intermediate fields of the splitting (over $\mathbb{Q}$) of the polynomial $(x^{3}-2)(x^{2}-3)\in \mathbb{Q}[x]$.
+:::

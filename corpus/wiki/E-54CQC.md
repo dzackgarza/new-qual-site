@@ -13,6 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that a local homeomorphism between compact Hausdorff spaces is a covering space.
-
-

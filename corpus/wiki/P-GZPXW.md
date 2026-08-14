@@ -13,8 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 5.8.9"}
-If $n>2$ and $\zeta$ is a primitive $n$th root of unity over $\mathbb{Q}$, then
-$[\mathbb{Q}(\zeta + \zeta^{-1}): \mathbb{Q}]=\phi(n)/2.$
-:::
 
+::: {.problem title="Hungerford 5.8.9"}
+If $n>2$ and $\zeta$ is a primitive $n$th root of unity over $\mathbb{Q}$, then $[\mathbb{Q}(\zeta + \zeta^{-1}): \mathbb{Q}]=\phi(n)/2.$
+:::

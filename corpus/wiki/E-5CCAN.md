@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that $\RR$ is not homeomorphic to $[0, \infty)$.

@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-- Show that the Quaternion group has only one element of order 2, namely $-1$.
 
+- Show that the Quaternion group has only one element of order 2, namely $-1$.

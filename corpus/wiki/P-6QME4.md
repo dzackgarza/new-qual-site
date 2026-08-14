@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that $S_4$ has two normal subgroups: $A_4, \ZZ_2^2$.

@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Explain how the structure theorem for finitely-generated modules over a PID applies to a linear operator on a finite dimensional vector space.
 
+Explain how the structure theorem for finitely-generated modules over a PID applies to a linear operator on a finite dimensional vector space.

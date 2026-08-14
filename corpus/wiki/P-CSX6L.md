@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Talk about conjugacy classes in the symmetric group $S_n$.
 
+Talk about conjugacy classes in the symmetric group $S_n$.

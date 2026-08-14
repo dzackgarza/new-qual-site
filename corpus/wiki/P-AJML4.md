@@ -12,6 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 If you have an irreducible representation of a subgroup, is the induced representation of the whole group still irreducible?
-
-

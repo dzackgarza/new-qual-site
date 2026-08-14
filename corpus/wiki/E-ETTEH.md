@@ -11,10 +11,13 @@ classification:
 relations: []
 review: draft
 ---
-Show that if $X$ is locally path connected, then 
+
+Show that if $X$ is locally path connected, then
 
 - Every open subset of $X$ is again locally path-connected.
-- $X$ is connected $\iff X$ is path-connected.
-- Every path component of $X$ is a connected component of $X$.
-- Every connected component of $X$ is open in $X$.
 
+- $X$ is connected $\iff X$ is path-connected.
+
+- Every path component of $X$ is a connected component of $X$.
+
+- Every connected component of $X$ is open in $X$.

@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Compute the Galois group of $x^3 - 2$ over the rationals.
 
+Compute the Galois group of $x^3 - 2$ over the rationals.

@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that the set $(x, y) \in \RR^2$ such that at least one of $x, y$ is rational with the subspace topology is a connected space.

@@ -11,5 +11,5 @@ classification:
 relations: []
 review: draft
 ---
-What's the field with 25 elements?
 
+What's the field with 25 elements?

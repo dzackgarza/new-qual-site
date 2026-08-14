@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem}
+
+::: {.problem}
 Show that $S_4$ is a solvable, nonabelian group.
 :::
-

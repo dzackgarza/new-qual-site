@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Describe the Galois theory of cyclotomic extensions.
 
+Describe the Galois theory of cyclotomic extensions.

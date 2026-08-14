@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-What is a Galois extension?
 
+What is a Galois extension?

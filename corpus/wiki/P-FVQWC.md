@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What surface is represented by the $6\dash$gon with edges identified according to the symbol $xyzxy\inv z\inv$ ?
 
+What surface is represented by the $6\dash$gon with edges identified according to the symbol $xyzxy\inv z\inv$ ?

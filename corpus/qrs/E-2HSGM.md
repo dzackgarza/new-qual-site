@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Show that $[0, 1]$ is compact.
 
+Show that $[0, 1]$ is compact.

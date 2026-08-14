@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Is a square matrix always similar to its transpose?
 
+Is a square matrix always similar to its transpose?

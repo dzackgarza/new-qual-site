@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-- Compute $\pi_1(S^1 \cross S^1)$
 
+- Compute $\pi_1(S^1 \cross S^1)$

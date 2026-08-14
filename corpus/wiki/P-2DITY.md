@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that the center of a $p\dash$group is nontrivial

@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Identify all of the elements of the Galois group of $x^p-2$ for $p$ an odd prime (note: this has a complicated presentation).

@@ -13,8 +13,6 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Theorem 4.2 (Mean Value Theorem)"}
-If $f$ is a real valued function which is continuous on $[a,b]$ and differentiable on $(a,b)$, then
-there exists a point $\xi\in(a,b)$ so that
-$$\frac{f(b)-f(a)}{b-a}=f'(\xi).$$
+::: {.theorem title="Theorem 4.2 (Mean Value Theorem)"}
+If $f$ is a real valued function which is continuous on $[a,b]$ and differentiable on $(a,b)$, then there exists a point $\xi\in(a,b)$ so that $$\frac{f(b)-f(a)}{b-a}=f'(\xi).$$
 :::

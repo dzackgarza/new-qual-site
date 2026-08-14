@@ -18,7 +18,5 @@ payload:
 ---
 
 ::: remark
-Hoffman and Kunze, *Linear Algebra*, 2nd edition, Prentice-Hall, 1971. Cited in the authored wiki as `[@HK71]`; the work itself is in
-`vocabularies/references.bib` and the book is registered as `hoffman-kunze` in
-`vocabularies/textbooks.yaml`.
+Hoffman and Kunze, *Linear Algebra*, 2nd edition, Prentice-Hall, 1971. Cited in the authored wiki as `[@HK71]`; the work itself is in `vocabularies/references.bib` and the book is registered as `hoffman-kunze` in `vocabularies/textbooks.yaml`.
 :::

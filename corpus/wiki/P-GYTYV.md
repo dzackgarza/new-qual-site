@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-- Show that $C_G(H) \subseteq N_G(H) \leq G$.
 
+- Show that $C_G(H) \subseteq N_G(H) \leq G$.

@@ -18,7 +18,5 @@ payload:
 ---
 
 ::: remark
-Hungerford, *Algebra*, Graduate Texts in Mathematics 73, Springer, 1974. Cited in the authored wiki as `[@Hun74]`; the work itself is in
-`vocabularies/references.bib` and the book is registered as `hungerford` in
-`vocabularies/textbooks.yaml`.
+Hungerford, *Algebra*, Graduate Texts in Mathematics 73, Springer, 1974. Cited in the authored wiki as `[@Hun74]`; the work itself is in `vocabularies/references.bib` and the book is registered as `hungerford` in `vocabularies/textbooks.yaml`.
 :::

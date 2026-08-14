@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="Spring 2021, 7"}
+
+::: {.problem title="Spring 2021, 7"}
 Prove directly from the definition that the 0th singular homology of a nonempty path-connected space is isomorphic to $\ZZ$.
 :::
-

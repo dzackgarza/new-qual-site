@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-What's the Galois group of $x^4 - 3$?
 
+What's the Galois group of $x^4 - 3$?

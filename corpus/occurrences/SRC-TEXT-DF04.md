@@ -18,7 +18,5 @@ payload:
 ---
 
 ::: remark
-Dummit and Foote, *Abstract Algebra*, 3rd edition, Wiley, 2004. Cited in the authored wiki as `[@DF04]`; the work itself is in
-`vocabularies/references.bib` and the book is registered as `dummit-foote` in
-`vocabularies/textbooks.yaml`.
+Dummit and Foote, *Abstract Algebra*, 3rd edition, Wiley, 2004. Cited in the authored wiki as `[@DF04]`; the work itself is in `vocabularies/references.bib` and the book is registered as `dummit-foote` in `vocabularies/textbooks.yaml`.
 :::

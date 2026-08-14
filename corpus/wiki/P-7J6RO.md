@@ -13,13 +13,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 4.1.5"}
-If $R$ has an identity, then a nonzero unitary $R\dash$module is **simple** if its only submodules are $0$
-and $A$.
 
-1.  Show that every simple $R-$module is cyclic.
+::: {.problem title="Hungerford 4.1.5"}
+If $R$ has an identity, then a nonzero unitary $R\dash$module is **simple** if its only submodules are $0$ and $A$.
 
-2.  If $A$ is simple, every $R-$module endomorphism is either the zero
-    map or an isomorphism.
+1. Show that every simple $R-$module is cyclic.
+
+2. If $A$ is simple, every $R-$module endomorphism is either the zero map or an isomorphism.
 :::
-

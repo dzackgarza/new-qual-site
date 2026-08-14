@@ -13,6 +13,6 @@ classification:
 relations: []
 review: draft
 ---
-- Let $R$ be a Noetherian ring and $A,B$ algebras over $R$. 
-  Suppose $A$ is finite type over $R$ and finite over B. 
-  Then $B$ is finite type over $R$.
+
+- Let $R$ be a Noetherian ring and $A,B$ algebras over $R$.
+  Suppose $A$ is finite type over $R$ and finite over B. Then $B$ is finite type over $R$.

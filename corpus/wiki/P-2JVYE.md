@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-State/prove/explain Schur's lemma.
 
+State/prove/explain Schur's lemma.

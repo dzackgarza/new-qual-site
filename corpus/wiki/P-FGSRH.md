@@ -13,10 +13,9 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="Fall 2006, 7"}
-A topological space is **sequentially compact** if every infinite sequence in $X$ has a convergent subsequence. 
+
+::: {.problem title="Fall 2006, 7"}
+A topological space is **sequentially compact** if every infinite sequence in $X$ has a convergent subsequence.
 
 Prove that every compact metric space is sequentially compact.
-
 :::
-

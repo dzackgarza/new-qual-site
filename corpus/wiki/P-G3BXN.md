@@ -13,6 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Is $\CC[x, y]$ a PID?
-Is \( \gens{ x, y }  \) a prime ideals in it?
 
+Is $\CC[x, y]$ a PID? Is \( \gens{ x, y }  \) a prime ideals in it?

@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Do polynomials in several variables form a PID?
 
+Do polynomials in several variables form a PID?

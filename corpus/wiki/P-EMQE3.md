@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What is the Galois group of $x^4 - 2x^2 + 9$?
 
+What is the Galois group of $x^4 - 2x^2 + 9$?

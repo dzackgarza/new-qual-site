@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What Galois stuff can you say about $x^{2n} - 2$?
 
+What Galois stuff can you say about $x^{2n} - 2$?

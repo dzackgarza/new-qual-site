@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-State the structure theorem for semisimple Artinian rings.
 
+State the structure theorem for semisimple Artinian rings.

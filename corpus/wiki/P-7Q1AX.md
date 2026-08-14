@@ -33,8 +33,7 @@ Let $d \definedas \gcd(m,n)$ and define a map
 
 Note that $1\mapsto [1]$ would not work: $[1]$ is not $m\dash$torsion unless $n\divides m$.
 
-**The image is exactly $\ZZ_n[m]$.**
-First, $m\cdot (n/d) = (m/d)n \equiv 0 \mod n$, so $\im \phi \subseteq \ZZ_n[m]$.
+**The image is exactly $\ZZ_n[m]$.** First, $m\cdot (n/d) = (m/d)n \equiv 0 \mod n$, so $\im \phi \subseteq \ZZ_n[m]$.
 Conversely, suppose $[x] \in \ZZ_n[m]$, so $n \divides mx$.
 Dividing by $d$ gives $(n/d) \divides (m/d)x$, and $\gcd(n/d, m/d) = 1$, so $(n/d)\divides x$.
 Hence $[x] \in \gens{[n/d]} = \im\phi$.

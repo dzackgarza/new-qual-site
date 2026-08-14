@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that a compact set in a Hausdorff space is closed.

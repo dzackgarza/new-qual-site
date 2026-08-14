@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Why is $(x^p - 1)/(x - 1)$ irreducible over $\QQ$?
 
+Why is $(x^p - 1)/(x - 1)$ irreducible over $\QQ$?

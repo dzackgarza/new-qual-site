@@ -14,7 +14,6 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Theorem 6.1"}
-If $\{f_n\}$ is a sequence of continuous functions on $E$ and $f_n\to f$ uniformly on $E$, then $f$ is
-continuous on $E$.
+::: {.theorem title="Theorem 6.1"}
+If $\{f_n\}$ is a sequence of continuous functions on $E$ and $f_n\to f$ uniformly on $E$, then $f$ is continuous on $E$.
 :::

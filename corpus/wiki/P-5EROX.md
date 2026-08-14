@@ -13,6 +13,7 @@ classification:
 relations: []
 review: draft
 ---
+
 Let $k$ be a field of characteristic zero and $A, B \in M_n(k)$ be two square $n\times n$ matrices over $k$ such that $AB - BA = A$.
 Prove that $\det A = 0$.
 

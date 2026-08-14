@@ -24,8 +24,7 @@ H &\rightarrow \correspond{E^H \definedas ~\text{The fixed field of $H$}} \\
 \correspond{\Gal(L/F) \definedas \theset{ \sigma \in \Gal(L/k) \suchthat \sigma(\alpha) = \alpha \,\, \forall \alpha \in F}} &\leftarrow F
 \]
 
-Note that $\Gal(L/F)$ consists of the automorphisms fixing $F$ **pointwise**.
-The setwise stabiliser $\theset{\sigma \suchthat \sigma(F) = F}$ is in general a strictly larger subgroup and is not what the correspondence uses.
+Note that $\Gal(L/F)$ consists of the automorphisms fixing $F$ **pointwise**. The setwise stabiliser $\theset{\sigma \suchthat \sigma(F) = F}$ is in general a strictly larger subgroup and is not what the correspondence uses.
 
 - This is contravariant with respect to subgroups/subfields.
 

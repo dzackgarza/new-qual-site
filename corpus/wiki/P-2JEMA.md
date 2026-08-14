@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-- Show that $\Inn(G) \cong G / Z(G)$
 
+- Show that $\Inn(G) \cong G / Z(G)$

@@ -13,6 +13,6 @@ classification:
 relations: []
 review: draft
 ---
+
 What is a semisimple algebra?
 State the structure theorem for semisimple algebras.
-

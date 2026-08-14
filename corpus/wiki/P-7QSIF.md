@@ -13,8 +13,8 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 2.5.6"}
-Let $G$ be a finite group and$H \trianglelefteq G$ a normal subgroup of order $p^k$. Show that $H$ is
-contained in every Sylow $p$-subgroup of $G$.
-:::
 
+::: {.problem title="Hungerford 2.5.6"}
+Let $G$ be a finite group and$H \trianglelefteq G$ a normal subgroup of order $p^k$.
+Show that $H$ is contained in every Sylow $p$-subgroup of $G$.
+:::

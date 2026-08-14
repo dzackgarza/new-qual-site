@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Define lower central series, upper central series, nilpotent and solvable groups.
 
+Define lower central series, upper central series, nilpotent and solvable groups.

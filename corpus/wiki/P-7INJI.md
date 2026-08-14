@@ -13,7 +13,6 @@ classification:
 relations: []
 review: draft
 ---
+
 Discuss representations of $\ZZ$, the infinite cyclic group.
 What is the group algebra of $\ZZ$?
-
-

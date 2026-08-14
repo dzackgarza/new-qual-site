@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that the diagonal map $\Delta(x) = (x, x)$ is continuous.

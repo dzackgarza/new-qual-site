@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 ---
-Suppose that a map $f : S^3 \times S^3 \to \RP^3$ is not surjective. 
+
+Suppose that a map $f : S^3 \times S^3 \to \RP^3$ is not surjective.
 
 Prove that $f$ is homotopic to a constant function.
-

@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-State/prove the Cayley–Hamilton theorem.
 
+State/prove the Cayley–Hamilton theorem.

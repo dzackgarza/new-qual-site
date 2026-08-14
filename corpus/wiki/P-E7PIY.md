@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-State the fundamental theorem of symmetric polynomials.
 
+State the fundamental theorem of symmetric polynomials.

@@ -12,12 +12,11 @@ classification:
 relations: []
 review: draft
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that any map between compact Hausdorff spaces must be proper.
 :::
 
-:::{.solution}
+::: {.solution}
 If $Y$ is compact Hausdorff, $U$ is compact iff $U$ is closed, and by continuity closed sets pull back.
 :::
-
-

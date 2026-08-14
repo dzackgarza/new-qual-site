@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What are the possible images of the unit circle under a linear transformation of $\RR^2$?
 
+What are the possible images of the unit circle under a linear transformation of $\RR^2$?

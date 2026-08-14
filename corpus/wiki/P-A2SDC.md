@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Prove that a subgroup of index two is normal.
 
+Prove that a subgroup of index two is normal.

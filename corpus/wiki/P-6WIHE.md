@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Draw the subgroup lattice for $S_3$.
 
+Draw the subgroup lattice for $S_3$.

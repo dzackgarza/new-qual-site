@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Find all normal subgroups of $A_4$.
 
+Find all normal subgroups of $A_4$.

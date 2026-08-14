@@ -13,6 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What is the connection between the structure theorem for modules over a
-PID and conjugacy classes in the general linear group over a field?
 
+What is the connection between the structure theorem for modules over a PID and conjugacy classes in the general linear group over a field?

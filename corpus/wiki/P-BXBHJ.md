@@ -12,4 +12,6 @@ classification:
 relations: []
 review: draft
 ---
-- How do you compute the totient $\phi(p)$ for $p$ prime? Or $\phi(n)$ for $n$ composite?
+
+- How do you compute the totient $\phi(p)$ for $p$ prime?
+  Or $\phi(n)$ for $n$ composite?

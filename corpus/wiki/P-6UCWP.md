@@ -12,10 +12,10 @@ classification:
 relations: []
 review: draft
 ---
-Let $C$ be cylinder. 
-Let $I$ and $J$ be disjoint closed intervals contained in $\partial C$. 
 
-What is the Euler characteristic of the surface $S$ obtained by identifying $I$ and $J$? 
+Let $C$ be cylinder.
+Let $I$ and $J$ be disjoint closed intervals contained in $\partial C$.
+
+What is the Euler characteristic of the surface $S$ obtained by identifying $I$ and $J$?
 
 Can all surface with nonempty boundary and with this Euler characteristic be obtained from this construction?
-

@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Find a non-symmetric polynomial whose square is symmetric.
 
+Find a non-symmetric polynomial whose square is symmetric.

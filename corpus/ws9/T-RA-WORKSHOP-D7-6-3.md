@@ -14,9 +14,6 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Theorem 6.3"}
-If $\alpha$ is monotonically increasing on $[a,b]$, $f_n\in\mathcal R(\alpha)$ for all $n$, and
-$f_n\to f$ uniformly on $[a,b]$, then $f\in\mathcal R(\alpha)$, $\lim_{n\to\infty}\int_a^b f_n\,d\alpha$
-exists, and
-$$\lim_{n\to\infty}\int_a^b f_n\,d\alpha=\int_a^b f\,d\alpha.$$
+::: {.theorem title="Theorem 6.3"}
+If $\alpha$ is monotonically increasing on $[a,b]$, $f_n\in\mathcal R(\alpha)$ for all $n$, and $f_n\to f$ uniformly on $[a,b]$, then $f\in\mathcal R(\alpha)$, $\lim_{n\to\infty}\int_a^b f_n\,d\alpha$ exists, and $$\lim_{n\to\infty}\int_a^b f_n\,d\alpha=\int_a^b f\,d\alpha.$$
 :::

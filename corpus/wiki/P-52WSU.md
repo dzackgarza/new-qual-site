@@ -11,5 +11,5 @@ classification:
 relations: []
 review: draft
 ---
-What is a Toeplitz operator?
 
+What is a Toeplitz operator?

@@ -13,6 +13,6 @@ classification:
 relations: []
 review: draft
 ---
+
 Let $f$ be a degree 4 polynomial with integer coefficients.
 What's the smallest finite field in which $f$ necessarily has four roots?
-

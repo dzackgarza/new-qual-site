@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Prove that the continuous image of a connected set is connected.
 
+Prove that the continuous image of a connected set is connected.

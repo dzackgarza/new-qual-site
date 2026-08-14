@@ -13,6 +13,6 @@ classification:
 relations: []
 review: draft
 ---
+
 Is the discriminant of a polynomial always a polynomial in the coefficients?
 What does this have to do with symmetric polynomials?
-

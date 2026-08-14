@@ -13,8 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 5.6.11"}
-If $f \in K[x]$ is irreducible of degree $m > 0$ and $\mathrm{char}(K)$ does not divide $m$, then $f$ is
-separable.
-:::
 
+::: {.problem title="Hungerford 5.6.11"}
+If $f \in K[x]$ is irreducible of degree $m > 0$ and $\mathrm{char}(K)$ does not divide $m$, then $f$ is separable.
+:::

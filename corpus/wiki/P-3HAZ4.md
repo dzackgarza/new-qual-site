@@ -11,5 +11,5 @@ classification:
 relations: []
 review: draft
 ---
-- Show that $C_G(G) = Z(G)$.
 
+- Show that $C_G(G) = Z(G)$.

@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that if a matrix is diagonalizable, its minimal polynomial is squarefree.

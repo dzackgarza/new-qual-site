@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Do you know a PID that's not Euclidean?
 
+Do you know a PID that's not Euclidean?

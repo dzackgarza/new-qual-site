@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that any countable space with the discrete topology is separable.

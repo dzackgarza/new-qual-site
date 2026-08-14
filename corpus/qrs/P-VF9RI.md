@@ -21,7 +21,7 @@ the following integral is independent of the path in this disk
 joining these points:
 $$v(x,y) = \int_{a,b}^{x,y} ( -\frac{\partial u}{\partial y}dx +  \frac{\partial u}{\partial x}dy).$$\
 
-(b) \hfill
+(b)
 
     (i) Prove that $u(x,y)+i v(x,y)$ is an analytic function in this
 disc.

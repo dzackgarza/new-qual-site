@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Show that a sequentially compact space is totally bounded.
 
+Show that a sequentially compact space is totally bounded.

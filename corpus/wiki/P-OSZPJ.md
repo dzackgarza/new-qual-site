@@ -13,8 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-Describe a cell complex structure on the torus $T = S^1 \times S^1$ and use
-this to compute the homology groups of $T$. 
+
+Describe a cell complex structure on the torus $T = S^1 \times S^1$ and use this to compute the homology groups of $T$.
 
 > To justify your answer you will need to consider the attaching maps in detail.
-

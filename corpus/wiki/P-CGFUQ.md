@@ -13,14 +13,13 @@ classification:
 relations: []
 review: draft
 ---
-:::{.problem}
+
+::: {.problem}
 Let $R$ be a commutative ring.
 
-1.  Say what it means for $R$ to be a unique factorization domain (UFD).
+1. Say what it means for $R$ to be a unique factorization domain (UFD).
 
-2.  Say what it means for $R$ to be a principal ideal domain (PID)
+2. Say what it means for $R$ to be a principal ideal domain (PID)
 
-3.  Give an example of a UFD that is not a PID. Prove that it is not a
-    PID.
+3. Give an example of a UFD that is not a PID. Prove that it is not a PID.
 :::
-

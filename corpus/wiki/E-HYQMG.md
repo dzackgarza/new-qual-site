@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Show that $X$ is Hausdorff iff $\Delta(X)$ is closed in $X\cross X$.

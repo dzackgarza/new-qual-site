@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Give an example of a PID with a unique prime ideal.
 
+Give an example of a PID with a unique prime ideal.

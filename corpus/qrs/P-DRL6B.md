@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that a matrix representing a linear map $T:V\to V$ is diagonalizable iff $V$ is a direct sum of eigenspaces $V = \bigoplus_i \ker(T -\lambda_i I)$.

@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-Give an example, with explanation, of a closed curve in a surfaces which is not nullhomotopic but is nullhomologous.
 
+Give an example, with explanation, of a closed curve in a surfaces which is not nullhomotopic but is nullhomologous.

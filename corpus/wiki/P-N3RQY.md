@@ -12,5 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-Compute the homology of the subset $X \subset \RR^3$ formed as the union of the unit sphere, the $z\dash$axis, and the $xy\dash$plane.
 
+Compute the homology of the subset $X \subset \RR^3$ formed as the union of the unit sphere, the $z\dash$axis, and the $xy\dash$plane.

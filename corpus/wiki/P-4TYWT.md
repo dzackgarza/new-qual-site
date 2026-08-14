@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
-- Show that a group of order $p^2 q^2$ has a normal Sylow subgroup. 
+
+- Show that a group of order $p^2 q^2$ has a normal Sylow subgroup.

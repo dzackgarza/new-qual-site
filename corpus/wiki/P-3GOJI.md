@@ -12,5 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that for $X$ an arbitrary topological space, the one-point compactification $\hat X$ (with its corresponding topology) is compact.
+
 - Prove that path-connected implies connected

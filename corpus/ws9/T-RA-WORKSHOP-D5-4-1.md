@@ -12,7 +12,6 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="Theorem 4.1"}
-If $f:[a,b]\to\mathbb R$ has a local maximum or minimum at $c\in(a,b)$ and $f'(c)$ exists, then
-$f'(c)=0$.
+::: {.theorem title="Theorem 4.1"}
+If $f:[a,b]\to\mathbb R$ has a local maximum or minimum at $c\in(a,b)$ and $f'(c)$ exists, then $f'(c)=0$.
 :::

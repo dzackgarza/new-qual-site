@@ -12,7 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
 Consider the simple operator on C given by multiplication by a complex number.
 It decomposes into a stretch and a rotation.
 What is the generalisation of this to operators on a Hilbert space?
-

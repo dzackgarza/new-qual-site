@@ -12,4 +12,5 @@ classification:
 relations: []
 review: draft
 ---
+
 Prove that $X, Y$ are Hausdorff iff $X\cross Y$ is Hausdorff.

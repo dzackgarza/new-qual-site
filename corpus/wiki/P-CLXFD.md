@@ -13,5 +13,5 @@ classification:
 relations: []
 review: draft
 ---
-What are the Galois groups of irreducible cubics?
 
+What are the Galois groups of irreducible cubics?

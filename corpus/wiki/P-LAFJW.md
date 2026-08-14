@@ -13,24 +13,29 @@ classification:
 relations: []
 review: draft
 ---
+
 Compute $H_*$ of the complement of a knotted solid torus in $S^3$.
 
-:::{.solution}
+::: {.solution}
 
 \envlist
-:::{.concept}
+::: {.concept}
 \envlist
 
 - $H_*(T^2) = [\ZZ, \ZZ^2, \ZZ, 0\rightarrow]$
-- $N^{(1)} \homotopic S^1$, so $H_{\geq 2}(N) = 0$.
-- A SES $0\to A\to B \to F \to 0$ with $F$ free splits.
-- $0\to A \to B \mapsvia{\cong} C \to D \to 0$ implies $A = D = 0$.
 
+- $N^{(1)} \homotopic S^1$, so $H_{\geq 2}(N) = 0$.
+
+- A SES $0\to A\to B \to F \to 0$ with $F$ free splits.
+
+- $0\to A \to B \mapsvia{\cong} C \to D \to 0$ implies $A = D = 0$.
 :::
 
-Let $N$ be the knotted solid torus, so that $\del N = T^2$, and let $X = S^3 - N$. Then
+Let $N$ be the knotted solid torus, so that $\del N = T^2$, and let $X = S^3 - N$.
+Then
 
 - $S^3 = N \union_{T^2} X$
+
 - $N \cap X = T^2$
 
 and we apply Mayer-Vietoris to the reduced homology of $S^3$:
@@ -92,15 +97,14 @@ We then deduce:
   \]
   which is thus an isomorphism.
 
-- $H_2(X) = H_3(X) = 0$ by examining the SES spanning lines 3 and 2: 
+- $H_2(X) = H_3(X) = 0$ by examining the SES spanning lines 3 and 2:
   \[
   0 \injects H_3(X) \injects \ZZ \mapsvia{\cong_{\del_3}} \ZZ \surjects H_2(X) \surjects 0
   \]
   Claim: \( \bd_3 \) must be an isomorphism.
   If this is true, $H_3(X) \cong \ker \bd_3 = 0$ and $H_2(X) \cong \coker(\bd_3) \da \ZZ/\im(\bd_3) \cong \ZZ/\ZZ = 0$.
 
-:::{.remark}
+::: {.remark}
 Why is this true?
 :::
-
 :::

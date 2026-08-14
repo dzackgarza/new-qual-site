@@ -13,4 +13,5 @@ classification:
 relations: []
 review: draft
 ---
+
 - Show that if $x, y$ are in the same orbit, then their stabilizers are conjugate.
