@@ -6,7 +6,9 @@ title: "Is there a covering map from $X_3 = \\theset{x^2 + y^2 = 1} \\cup \\thes
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

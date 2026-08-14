@@ -6,7 +6,10 @@ title: "Use cellular homology to calculate the homology groups of $S^n \\times S
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
+  - product-topology
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that $S^1 \\times S^1$ is not the union of two disks (where there\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - surfaces
+  - mayer-vietoris
 relations: []
 review: draft
 ---

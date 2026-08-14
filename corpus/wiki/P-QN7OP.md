@@ -6,7 +6,10 @@ title: "Let $X$ be a topological space. Prove that $X$ is connected if and\u2026
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

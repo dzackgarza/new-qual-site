@@ -6,7 +6,9 @@ title: "Compute the integral homology groups of the space $X = Y \\cup Z$ which\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations: []
 review: draft
 ---

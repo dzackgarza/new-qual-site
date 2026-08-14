@@ -6,7 +6,10 @@ title: "Let $L$ be the union of the $z$-axis and the unit circle in the $xy\\das
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
+  - homotopy
 relations: []
 review: draft
 ---

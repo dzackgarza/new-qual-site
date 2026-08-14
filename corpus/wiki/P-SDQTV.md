@@ -6,7 +6,10 @@ title: "Give the definitions of covering space and deck\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
+  - surfaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Prove that if $A$ is a retract of the topological space $X$, then for\u2
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homology
 relations: []
 review: draft
 ---

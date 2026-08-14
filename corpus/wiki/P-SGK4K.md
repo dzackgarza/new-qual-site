@@ -6,7 +6,10 @@ title: "Let $A$ denote a subset of points of $S^2$ that looks exactly like the\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - homotopy
+  - homeomorphisms
 relations: []
 review: draft
 ---

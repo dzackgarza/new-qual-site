@@ -6,7 +6,9 @@ title: "Prove or disprove: Every continuous map from $S^2$ to $S^2$ has a\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - degree
 relations: []
 review: draft
 ---

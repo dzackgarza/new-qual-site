@@ -6,7 +6,10 @@ title: "Show that $S^2 \\cross \\RP^4 \\not\\homotopic S^4 \\cross \\RP^2$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homotopy
+  - product-topology
 relations: []
 review: draft
 ---

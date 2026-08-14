@@ -6,7 +6,10 @@ title: "Use covering space theory to show that $\\ZZ_2 \\ast \\ZZ$ (that is, the
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
+  - fundamental-group
 relations: []
 review: draft
 ---

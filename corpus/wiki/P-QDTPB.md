@@ -6,7 +6,9 @@ title: "Let $f$ be the map of $S^1 \\times [0, 1]$ to itself defined by"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - fundamental-group
 relations: []
 review: draft
 ---

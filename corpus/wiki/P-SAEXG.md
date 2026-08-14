@@ -6,7 +6,10 @@ title: "How many path-connected 2-fold covering spaces does $S^1 \\vee \\RP 2$ h
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

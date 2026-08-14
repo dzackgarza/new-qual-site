@@ -6,7 +6,9 @@ title: "Figure 8 Here we have: $C_3 = \\emptyset$ $C_1 = [12], [23], [13], [34],
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

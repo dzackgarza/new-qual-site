@@ -6,7 +6,9 @@ title: "Main idea: just algebraic manipulations using the $\\pi_1$ functor\u2026
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

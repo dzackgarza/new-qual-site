@@ -6,7 +6,9 @@ title: If $(X,d)$ is a metric space, and $A,B \subseteq X$ are non-empty, then w
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

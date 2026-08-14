@@ -6,7 +6,10 @@ title: "Let $f : X \\to Y$ be a continuous function between topological spaces."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
+  - counterexamples
 relations: []
 review: draft
 ---
