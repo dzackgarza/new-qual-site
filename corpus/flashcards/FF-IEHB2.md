@@ -6,7 +6,9 @@ title: 'What is the Euler characteristic in terms of genus?'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations: []
 review: draft
 ---

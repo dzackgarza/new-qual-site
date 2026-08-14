@@ -6,7 +6,8 @@ title: "Connected: A space $X$ is connected iff there does not exist a\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

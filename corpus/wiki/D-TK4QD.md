@@ -6,7 +6,10 @@ title: "Intersection Pairing"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - poincare-duality
+  - cohomology
+  - manifolds
 relations: []
 review: draft
 ---

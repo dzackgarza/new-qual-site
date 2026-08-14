@@ -6,7 +6,8 @@ title: "Show that if $X$ is locally path connected, then"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $S$ be a connected surface, and let $U$ be a connected open subset\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - connectedness
+  - fundamental-group
 relations: []
 review: draft
 ---

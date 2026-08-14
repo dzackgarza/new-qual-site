@@ -6,7 +6,9 @@ title: "Suppose that X has universal cover $p : \\tilde X \\to X$ and let $A \\s
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

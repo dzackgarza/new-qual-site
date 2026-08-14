@@ -6,7 +6,9 @@ title: "Prove that the product of two connected topological spaces is connecte\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - product-topology
 relations: []
 review: draft
 ---

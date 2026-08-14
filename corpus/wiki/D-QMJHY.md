@@ -6,7 +6,9 @@ title: "Weak Homotopy Equivalence"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - cell-complexes
 relations: []
 review: draft
 ---

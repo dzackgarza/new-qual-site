@@ -6,7 +6,9 @@ title: "Prove that the Euler characteristic of a compact surface with boundary\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations: []
 review: draft
 ---

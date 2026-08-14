@@ -6,7 +6,9 @@ title: 'What is $ \chi(A\# B) $?'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations: []
 review: draft
 ---

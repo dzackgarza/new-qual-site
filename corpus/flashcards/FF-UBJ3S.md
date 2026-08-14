@@ -6,7 +6,9 @@ title: 'Kunneth isomorphism (nice case)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations: []
 review: draft
 ---

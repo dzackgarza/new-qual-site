@@ -6,7 +6,10 @@ title: "Show that an injective continuous map from a compact space\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - homeomorphisms
 relations: []
 review: draft
 ---

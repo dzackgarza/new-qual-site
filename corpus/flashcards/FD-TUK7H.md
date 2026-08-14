@@ -6,7 +6,10 @@ title: 'Neighborhood Basis'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - bases
+  - countability
+  - point-set
 relations:
 - kind: variant-of
   target: FD-QCNG5

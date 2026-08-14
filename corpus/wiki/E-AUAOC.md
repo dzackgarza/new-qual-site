@@ -6,7 +6,10 @@ title: "Show that $S^n$ is not a strong deformation retract of $\\BB^{n+1}$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homology
+  - homotopy
 relations: []
 review: draft
 ---

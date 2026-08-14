@@ -6,7 +6,11 @@ title: "Show that a compact Hausdorff space is is metrizable iff it\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
+  - countability
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

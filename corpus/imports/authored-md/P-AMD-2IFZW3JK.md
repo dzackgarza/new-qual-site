@@ -6,7 +6,10 @@ title: Show that the Mayer-Vietoris sequence is natural, i.e.
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
+  - homological-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Topological Notions in Analysis"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - limits
 relations: []
 review: draft
 ---

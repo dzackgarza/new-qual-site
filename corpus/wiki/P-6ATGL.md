@@ -6,7 +6,9 @@ title: "Let $A \\subset X$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - connectedness
 relations: []
 review: draft
 ---

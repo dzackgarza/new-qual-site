@@ -6,7 +6,9 @@ title: "- Show that for $X$ an arbitrary topological space, the one-point comp\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - connectedness
 relations: []
 review: draft
 ---

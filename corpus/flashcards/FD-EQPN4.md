@@ -6,7 +6,8 @@ title: 'Definition: the indiscrete topology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
 relations: []
 review: draft
 ---

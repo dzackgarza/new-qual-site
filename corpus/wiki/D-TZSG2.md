@@ -6,7 +6,9 @@ title: "Direct Sum"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - modules
+  - category-theory
 relations: []
 review: draft
 ---

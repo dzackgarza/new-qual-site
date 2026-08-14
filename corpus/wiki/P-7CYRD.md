@@ -6,7 +6,10 @@ title: "Suppose $(X, d)$ is a metric space. State criteria for continuity of a\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - metric-spaces
+  - convergence
 relations: []
 review: draft
 ---

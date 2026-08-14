@@ -6,7 +6,9 @@ title: "Suppose the space $X$ is obtained by attaching a 2-cell to the\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

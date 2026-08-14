@@ -6,7 +6,9 @@ title: "Let $A \\subset X$ be a connected subspace."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - closure
 relations: []
 review: draft
 ---

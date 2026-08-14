@@ -6,7 +6,8 @@ title: "Path Components"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

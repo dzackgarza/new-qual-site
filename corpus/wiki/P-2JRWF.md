@@ -6,7 +6,9 @@ title: "Let $X$ and $Y$ be finite connected simplicial complexes and let $f : X 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - homology
 relations: []
 review: draft
 ---

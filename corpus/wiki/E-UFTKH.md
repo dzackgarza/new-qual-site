@@ -6,7 +6,8 @@ title: "Show that if $A_i \\subseteq X$, then $\\cl_X(\\union_i A_i) = \\union_i
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
 relations: []
 review: draft
 ---

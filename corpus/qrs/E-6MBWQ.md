@@ -6,7 +6,9 @@ title: "Show that if $X$ is metrizable, then $X$ is compact"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
 relations: []
 review: draft
 ---

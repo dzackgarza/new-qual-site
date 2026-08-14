@@ -6,7 +6,9 @@ title: "Describe, as explicitly as you can, two different (non-homeomorphic) c\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
 relations: []
 review: draft
 ---

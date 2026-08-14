@@ -6,7 +6,9 @@ title: "Spring 2021, 3"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

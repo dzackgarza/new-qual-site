@@ -6,7 +6,9 @@ title: "Local Degree"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homology
 relations: []
 review: draft
 ---

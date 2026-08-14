@@ -6,7 +6,9 @@ title: "Show that if $X$ is Hausdorff and $A\\subseteq X$ is compact then $A$ is
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

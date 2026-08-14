@@ -6,7 +6,9 @@ title: "Show that: Connected does not imply path connected Connected\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations: []
 review: draft
 ---

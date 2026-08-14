@@ -6,7 +6,10 @@ title: "Let $S^2 \\to \\RP^2$ be the universal covering map."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
+  - degree
 relations: []
 review: draft
 ---

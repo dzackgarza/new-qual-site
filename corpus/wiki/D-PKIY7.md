@@ -6,7 +6,9 @@ title: "Projective Resolution"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - modules
 relations: []
 review: draft
 ---

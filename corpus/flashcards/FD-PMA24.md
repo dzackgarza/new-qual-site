@@ -6,7 +6,9 @@ title: 'Definition: Limit Point Compactness'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - limits
 relations: []
 review: draft
 ---

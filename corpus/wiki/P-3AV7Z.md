@@ -6,7 +6,10 @@ title: "Facts used: Construction of Moore Spaces $\\tilde H_n(\\Sigma X) = \\til
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
+  - degree
 relations: []
 review: draft
 ---

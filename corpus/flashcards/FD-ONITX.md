@@ -6,7 +6,9 @@ title: 'Local homeomorphism'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - covering-spaces
 relations: []
 review: draft
 ---

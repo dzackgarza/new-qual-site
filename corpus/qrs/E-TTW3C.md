@@ -6,7 +6,10 @@ title: "Show that if $f: A\\to B$ is a continuous map between metric spaces an\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - uniform-continuity
+  - metric-spaces
 relations: []
 review: draft
 ---

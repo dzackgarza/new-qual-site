@@ -6,7 +6,11 @@ title: "Write down (without proof) a presentation for $\\pi_1 (\\Sigma_2 , p)$ w
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - groups
+  - covering-spaces
 relations: []
 review: draft
 ---

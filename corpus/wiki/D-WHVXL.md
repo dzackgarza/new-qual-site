@@ -6,7 +6,9 @@ title: "Proper: A map $f:X\\to Y$ is proper if pullbacks of compact sets are com
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

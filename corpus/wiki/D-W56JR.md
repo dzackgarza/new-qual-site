@@ -6,7 +6,10 @@ title: "Paracompact: A refinement of an open cover $\\mcu \\covers X$ is an open
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - paracompactness
+  - compactness
+  - point-set
 relations: []
 review: draft
 ---

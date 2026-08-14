@@ -6,7 +6,9 @@ title: "Show that any infinite set with the cofinite topology is compact."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
 relations: []
 review: draft
 ---

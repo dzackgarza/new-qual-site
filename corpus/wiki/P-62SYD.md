@@ -6,7 +6,9 @@ title: "Facts used: $\\pi_{\\geq 2}(\\tilde X) \\cong \\pi_{\\geq 2}(X)$ Structu
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - homotopy
 relations: []
 review: draft
 ---

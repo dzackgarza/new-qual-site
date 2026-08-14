@@ -6,7 +6,9 @@ title: "Kronecker Pairing"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homology
 relations: []
 review: draft
 ---

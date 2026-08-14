@@ -6,7 +6,10 @@ title: "Hausdorff: A topological space $X$ is Hausdorff or $T_2$ iff points can 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - separation-axioms
+  - point-set
 relations: []
 review: draft
 ---

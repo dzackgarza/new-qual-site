@@ -6,7 +6,9 @@ title: "Show that a compact set in a Hausdorff space is closed."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

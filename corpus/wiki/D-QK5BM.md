@@ -6,7 +6,10 @@ title: "Euler Characteristic"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

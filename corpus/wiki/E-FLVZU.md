@@ -6,7 +6,8 @@ title: "What does it mean for a topological space to be compact?"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

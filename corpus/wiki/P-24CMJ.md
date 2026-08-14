@@ -6,7 +6,9 @@ title: "Compute $\\pi_1(S^1 \\vee S^1)$"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

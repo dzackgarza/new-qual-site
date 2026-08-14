@@ -6,7 +6,10 @@ title: "Spring 2021, 2"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - product-topology
+  - connectedness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

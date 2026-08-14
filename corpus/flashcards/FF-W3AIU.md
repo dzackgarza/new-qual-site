@@ -6,7 +6,9 @@ title: 'Euler Characteristics of Surfaces: $S^n, \Sigma_g, \RP^2, K$.'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations: []
 review: draft
 ---

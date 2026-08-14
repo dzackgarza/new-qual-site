@@ -6,7 +6,9 @@ title: "5. WLOG, assume $p_0, p_1$ are the north and south poles of $S^2$. We\u2
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homotopy
 relations: []
 review: draft
 ---

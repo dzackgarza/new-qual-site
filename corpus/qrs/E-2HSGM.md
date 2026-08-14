@@ -6,7 +6,9 @@ title: "Show that $[0, 1]$ is compact."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

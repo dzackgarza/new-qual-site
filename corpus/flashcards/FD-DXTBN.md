@@ -6,7 +6,9 @@ title: 'Definition: Sequentially Compact'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - convergence
 relations: []
 review: draft
 ---

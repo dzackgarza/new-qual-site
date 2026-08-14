@@ -6,7 +6,10 @@ title: "Let $X = S^n\\cross I$ with its ends glued together by a map $S^n \\circ
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - degree
 relations: []
 review: draft
 ---

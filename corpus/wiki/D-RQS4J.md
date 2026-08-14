@@ -6,7 +6,10 @@ title: "Cap Product"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cohomology
+  - homology
+  - poincare-duality
 relations: []
 review: draft
 ---

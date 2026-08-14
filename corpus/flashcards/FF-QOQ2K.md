@@ -6,7 +6,9 @@ title: "$H_ K$: $[\\mathbb{Z}, \\mathbb{Z} \\times \\mathbb{Z}_2, 0, 0, 0, 0\\ri
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - surfaces
 relations: []
 review: draft
 ---

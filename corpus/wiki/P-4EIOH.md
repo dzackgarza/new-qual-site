@@ -6,7 +6,10 @@ title: "Spring 2021, 6"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

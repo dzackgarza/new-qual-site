@@ -6,7 +6,8 @@ title: "Retract: Retract: A subspace $A \\subset X$ is a retract of $X$ iff ther
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
 relations: []
 review: draft
 ---

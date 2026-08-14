@@ -6,7 +6,9 @@ title: 'Definition: separable'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
 relations:
 - kind: variant-of
   target: FD-Q7EEG

@@ -6,7 +6,9 @@ title: "Use the Brouwer fixed point theorem to show that an $n \\times n$ matri\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - linear-algebra
 relations: []
 review: draft
 ---

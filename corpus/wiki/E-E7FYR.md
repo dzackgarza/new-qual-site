@@ -6,7 +6,9 @@ title: "- $X$ is compact"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - limits
 relations: []
 review: draft
 ---

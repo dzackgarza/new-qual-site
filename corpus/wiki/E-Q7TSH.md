@@ -6,7 +6,9 @@ title: "Show that any countable space with the discrete topology is separable."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
 relations: []
 review: draft
 ---

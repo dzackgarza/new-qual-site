@@ -6,7 +6,9 @@ title: "Homology of product of spheres"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - product-topology
 relations: []
 review: draft
 ---

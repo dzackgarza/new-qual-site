@@ -6,7 +6,10 @@ title: "- Show that $M$ is orientable if $\\pi_1(M)$ has no subgroup of index 2\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - orientation
+  - covering-spaces
+  - manifolds
 relations: []
 review: draft
 ---

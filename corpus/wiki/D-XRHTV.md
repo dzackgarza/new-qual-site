@@ -6,7 +6,8 @@ title: "Topology: Using open sets: closed under arbitrary unions and finite\u202
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
 relations: []
 review: draft
 ---

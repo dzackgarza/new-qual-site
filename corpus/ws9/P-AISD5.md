@@ -6,7 +6,8 @@ title: Let $X$ be a compact space, and let $A_1 \supseteq A_2 \supseteq \cdots$ 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

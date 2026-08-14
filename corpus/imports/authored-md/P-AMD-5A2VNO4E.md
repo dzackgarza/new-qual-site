@@ -6,7 +6,10 @@ title: Classify the letters of the alphabet up to homeomorphism, and up to…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - homotopy
+  - classification
 relations: []
 review: draft
 ---

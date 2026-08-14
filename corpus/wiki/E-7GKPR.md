@@ -6,7 +6,9 @@ title: "Show that if $X$ is a metric space and $A\\subseteq X$ is compact then $
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: Show that $\mathbb{R}$ and $\mathbb{R}^2$ (with their usual topologies) a
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - connectedness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

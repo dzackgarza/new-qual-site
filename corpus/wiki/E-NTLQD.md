@@ -6,7 +6,9 @@ title: "Show that a finite product or union compact spaces is again\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
 relations: []
 review: draft
 ---

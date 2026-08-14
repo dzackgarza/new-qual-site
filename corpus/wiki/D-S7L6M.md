@@ -6,7 +6,9 @@ title: "Exact Functor"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - category-theory
 relations: []
 review: draft
 ---

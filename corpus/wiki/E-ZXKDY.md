@@ -6,7 +6,9 @@ title: "Show that if $f$ is not surjective then $\\deg f = 0$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homology
 relations: []
 review: draft
 ---

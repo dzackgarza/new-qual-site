@@ -6,7 +6,9 @@ title: "Inverse Limit"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - category-theory
+  - homological-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Manifold"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - manifolds
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

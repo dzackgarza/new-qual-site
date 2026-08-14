@@ -6,7 +6,9 @@ title: "Show that a connected, normal topological space with more than a singl\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - separation-axioms
 relations: []
 review: draft
 ---

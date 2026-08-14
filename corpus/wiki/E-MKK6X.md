@@ -6,7 +6,10 @@ title: "Show that the minimal uncountable order with the order topology is not\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - counterexamples
 relations: []
 review: draft
 ---

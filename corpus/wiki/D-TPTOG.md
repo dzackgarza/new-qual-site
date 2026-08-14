@@ -6,7 +6,9 @@ title: "Mapping Path Space"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - function-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that every compact metric space is complete."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - completeness
+  - metric-spaces
 relations: []
 review: draft
 ---

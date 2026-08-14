@@ -6,7 +6,9 @@ title: "Prove that $X, Y$ are Hausdorff iff $X\\cross Y$ is Hausdorff."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - product-topology
 relations: []
 review: draft
 ---

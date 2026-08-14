@@ -6,7 +6,10 @@ title: "For which compact connected surfaces $\\Sigma$ (with or without boundar\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - surfaces
+  - euler-characteristic
 relations: []
 review: draft
 ---

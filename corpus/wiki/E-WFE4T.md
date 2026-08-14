@@ -6,7 +6,9 @@ title: "- Every sequence in $X$ has a convergent subsequence in $X$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - convergence
 relations: []
 review: draft
 ---

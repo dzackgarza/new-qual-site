@@ -6,7 +6,10 @@ title: "Main Idea: Deformation retract $M$ onto its center circle; two\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - retracts
+  - surfaces
 relations: []
 review: draft
 ---

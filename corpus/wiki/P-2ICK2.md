@@ -6,7 +6,10 @@ title: "Facts Used $\\pi_1(\\bigvee^k S^1) = \\ZZ^{\\ast k}$ $\\tilde X \\surjec
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - groups
 relations: []
 review: draft
 ---

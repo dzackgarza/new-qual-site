@@ -6,7 +6,8 @@ title: "Prove that $X$ is connected iff the only clopen subsets are $\\emptyset,
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Hausdorff Space'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - separation-axioms
 relations: []
 review: draft
 ---

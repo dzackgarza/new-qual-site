@@ -6,7 +6,8 @@ title: "Relative homotopy groups"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---

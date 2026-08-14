@@ -6,7 +6,10 @@ title: 'Let $p : \widetilde{X} \to X$ be a covering map, with $X$ and $\widetild
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - group-actions
 relations: []
 review: draft
 ---

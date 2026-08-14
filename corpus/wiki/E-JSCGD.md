@@ -6,7 +6,8 @@ title: "Show that if $X$ is compact and $A\\subseteq X$ is closed then $A$ is co
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

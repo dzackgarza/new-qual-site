@@ -6,7 +6,10 @@ title: "Describe the 3-fold connected covering spaces of $S^1 \\lor S^1$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - groups
 relations: []
 review: draft
 ---

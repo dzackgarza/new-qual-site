@@ -6,7 +6,9 @@ title: "Let $X = S_1 \\cup S_2 \\subset \\RR^3$ be the union of two spheres of r
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations: []
 review: draft
 ---

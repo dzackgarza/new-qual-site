@@ -6,7 +6,10 @@ title: "Useful facts: $X \\surjects_{\\times p} Y$ induces $\\chi(X) = p\\chi(Y)
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - covering-spaces
+  - group-actions
 relations: []
 review: draft
 ---

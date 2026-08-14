@@ -6,7 +6,9 @@ title: "Show that any map between compact Hausdorff spaces must be proper."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

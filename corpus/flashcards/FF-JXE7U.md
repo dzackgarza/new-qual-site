@@ -6,7 +6,9 @@ title: 'Prove $ \mathop{\mathrm{Hom}}_R(R, A) \cong A $.'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - modules
+  - homological-algebra
 relations: []
 review: draft
 ---

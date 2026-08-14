@@ -6,7 +6,10 @@ title: "Show that $\\RR$ is separable."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - euclidean-spaces
 relations: []
 review: draft
 ---

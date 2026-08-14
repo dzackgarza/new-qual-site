@@ -6,7 +6,9 @@ title: "Main Idea: Using a funky deformation retract."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - homotopy
 relations: []
 review: draft
 ---

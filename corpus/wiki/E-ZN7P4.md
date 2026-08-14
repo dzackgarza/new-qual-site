@@ -6,7 +6,9 @@ title: "Prove that the continuous image of a connected set is connected."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - continuity
 relations: []
 review: draft
 ---

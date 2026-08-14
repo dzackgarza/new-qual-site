@@ -6,7 +6,9 @@ title: 'Definition: Totally Bounded'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - compactness
 relations: []
 review: draft
 ---

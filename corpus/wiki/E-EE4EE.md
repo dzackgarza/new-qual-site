@@ -6,7 +6,9 @@ title: "- What is an interior point? An isolated point? A limit point?"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - limits
 relations: []
 review: draft
 ---

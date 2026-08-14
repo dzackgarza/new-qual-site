@@ -6,7 +6,10 @@ title: "Main Idea Homotopies on maps $S^1\\into X$ are cylinders, find a way to\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - quotient-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Constant Map"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - homotopy
 relations: []
 review: draft
 ---

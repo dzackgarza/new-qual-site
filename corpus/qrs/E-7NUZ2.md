@@ -6,7 +6,9 @@ title: "Let $A\\subset X$ with $A$ closed and $X$ compact, and show that $A$ is 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

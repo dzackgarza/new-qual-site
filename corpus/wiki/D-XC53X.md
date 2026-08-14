@@ -6,7 +6,9 @@ title: "Degree of a Map of Spheres"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homology
 relations: []
 review: draft
 ---

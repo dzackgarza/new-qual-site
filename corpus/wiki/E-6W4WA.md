@@ -6,7 +6,8 @@ title: "What does it mean for $E\\subseteq X$ to be a dense subspace?"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - density
 relations: []
 review: draft
 ---

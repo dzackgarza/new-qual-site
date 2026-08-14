@@ -6,7 +6,9 @@ title: "Give an example of a space that is compact but not\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
 relations: []
 review: draft
 ---

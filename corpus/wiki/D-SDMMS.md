@@ -6,7 +6,9 @@ title: "Lebesgue Number"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

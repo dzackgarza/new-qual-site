@@ -6,7 +6,8 @@ title: 'Let $p(x) = \sum_i^na_ix^i$, view $p: \CC \union \infty \selfmap$…'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
 relations: []
 review: draft
 ---

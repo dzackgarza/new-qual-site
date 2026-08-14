@@ -6,7 +6,10 @@ title: "Let $p : X \\to Y$ be a covering space, where $X$ is compact, path-conn\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - compactness
 relations: []
 review: draft
 ---

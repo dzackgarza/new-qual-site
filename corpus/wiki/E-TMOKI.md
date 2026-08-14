@@ -6,7 +6,10 @@ title: "Show that the set $(x, y) \\in \\RR^2$ such that at least one of $x, y$\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - euclidean-spaces
+  - subspace-topology
 relations: []
 review: draft
 ---

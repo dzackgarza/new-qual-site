@@ -6,7 +6,11 @@ title: "Show that if $X$ is second countable and Hausdorff, or a metric space\u2
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - countability
+  - convergence
+  - metric-spaces
 relations: []
 review: draft
 ---

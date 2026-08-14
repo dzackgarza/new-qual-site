@@ -6,7 +6,9 @@ title: "- Come up with 6 different topologies on $\\RR^d$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - euclidean-spaces
 relations: []
 review: draft
 ---

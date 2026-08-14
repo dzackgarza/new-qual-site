@@ -6,7 +6,9 @@ title: "Show that $\\RR/\\QQ$ has the indiscrete topology."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - point-set
 relations: []
 review: draft
 ---

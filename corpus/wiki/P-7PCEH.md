@@ -6,7 +6,10 @@ title: "Let $A$ be a subspace of a topological space $X$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - fundamental-group
+  - groups
 relations: []
 review: draft
 ---

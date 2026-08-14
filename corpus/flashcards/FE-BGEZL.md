@@ -6,7 +6,10 @@ title: 'Give an example of a function $f: \RR^n \to \RR$ that is continuous in e
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - counterexamples
+  - euclidean-spaces
 relations:
 - kind: variant-of
   target: FE-U5AQQ

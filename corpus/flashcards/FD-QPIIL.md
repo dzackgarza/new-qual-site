@@ -6,7 +6,10 @@ title: 'Definition: Closed Surfaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - manifolds
+  - compactness
 relations: []
 review: draft
 ---

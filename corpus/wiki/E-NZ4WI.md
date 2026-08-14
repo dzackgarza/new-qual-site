@@ -6,7 +6,9 @@ title: "Give an example of spaces $A\\subseteq B \\subseteq X$ such that $A$ is\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - subspace-topology
+  - point-set
 relations: []
 review: draft
 ---

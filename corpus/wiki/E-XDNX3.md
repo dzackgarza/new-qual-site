@@ -6,7 +6,9 @@ title: "Let $A$ be a compact subspace of a Hausdorff space $X$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

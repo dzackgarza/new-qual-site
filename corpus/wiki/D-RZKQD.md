@@ -6,7 +6,10 @@ title: "Suspension"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homotopy
+  - homology
 relations: []
 review: draft
 ---

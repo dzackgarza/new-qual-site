@@ -6,7 +6,9 @@ title: "Let $X$ be a compact space and let $f : X \\times R \\to R$ be a continu
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

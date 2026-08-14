@@ -6,7 +6,9 @@ title: "Basis for a topology"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - bases
+  - point-set
 relations: []
 review: draft
 ---

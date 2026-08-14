@@ -6,7 +6,10 @@ title: "Show that a closed subset of a Hausdorff space need not be compact."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

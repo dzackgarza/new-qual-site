@@ -6,7 +6,9 @@ title: "Closed Sets: A set $U \\subseteq X$ is closed in $X$ if and only if its 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - closure
 relations: []
 review: draft
 ---

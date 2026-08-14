@@ -6,7 +6,8 @@ title: "What is the closure of a subspace $E\\subseteq X$?"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
 relations: []
 review: draft
 ---

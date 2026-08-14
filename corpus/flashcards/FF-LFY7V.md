@@ -6,7 +6,8 @@ title: 'Homology of real projective space, $ H_* {\mathbf{RP}}^2 $'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations: []
 review: draft
 ---

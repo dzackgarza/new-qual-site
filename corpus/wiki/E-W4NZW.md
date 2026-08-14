@@ -6,7 +6,9 @@ title: "Show that $\\RR$ with the cofinite topology is compact."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - point-set
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Poincar\u00e9 Duality"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - poincare-duality
+  - manifolds
+  - cohomology
+  - orientation
 relations: []
 review: draft
 ---

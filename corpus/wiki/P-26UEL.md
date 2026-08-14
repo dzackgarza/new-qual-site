@@ -6,7 +6,10 @@ title: "Let $M$ and $N$ be finite CW complexes."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - euler-characteristic
+  - product-topology
 relations: []
 review: draft
 ---

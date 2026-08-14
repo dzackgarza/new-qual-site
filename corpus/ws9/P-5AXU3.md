@@ -6,7 +6,10 @@ title: Show that if $X$ is path-connected, locally path-connected space, with $\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

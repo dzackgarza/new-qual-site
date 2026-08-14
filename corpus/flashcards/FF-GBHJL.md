@@ -6,7 +6,9 @@ title: 'Classification of Closed Surfaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Show that the diagonal map $\\Delta(x) = (x, x)$ is continuous."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - product-topology
 relations: []
 review: draft
 ---

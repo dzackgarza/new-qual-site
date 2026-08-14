@@ -6,7 +6,9 @@ title: "Second Countable"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - countability
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Is every product (finite or infinite) of Hausdorff spaces Hausdorff?"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - product-topology
 relations: []
 review: draft
 ---

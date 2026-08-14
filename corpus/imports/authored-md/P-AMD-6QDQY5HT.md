@@ -6,7 +6,9 @@ title: "Let $CA$ be the cone on $A$, show that $\\tilde H_(X \\union CA) \\cong 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

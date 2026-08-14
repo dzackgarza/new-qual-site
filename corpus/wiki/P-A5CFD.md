@@ -6,7 +6,11 @@ title: "If $f$ is a function from $X$ to $Y$ , consider the graph"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - hausdorff-spaces
+  - compactness
+  - product-topology
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Let $X$ be an arbitrary topological space, and compute $\\pi_1(\\Sigma X
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

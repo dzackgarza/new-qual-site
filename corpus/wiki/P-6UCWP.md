@@ -6,7 +6,9 @@ title: "Let $C$ be cylinder."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Euler Characteristic 2'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Closure of a set"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - point-set
 relations: []
 review: draft
 ---

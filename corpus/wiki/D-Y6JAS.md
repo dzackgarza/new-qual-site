@@ -6,7 +6,10 @@ title: "Limit Point"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - limits
+  - closure
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that $\\RR$ is not homeomorphic to $[0, \\infty)$."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - connectedness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

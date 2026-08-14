@@ -6,7 +6,9 @@ title: "Refinement"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - paracompactness
 relations: []
 review: draft
 ---

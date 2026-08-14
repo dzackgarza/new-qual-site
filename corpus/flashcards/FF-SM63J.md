@@ -6,7 +6,10 @@ title: 'Euler Characteristic 0'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

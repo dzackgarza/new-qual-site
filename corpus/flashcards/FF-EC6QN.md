@@ -6,7 +6,9 @@ title: "$H_ K$: $[\\mathbb{Z}, \\mathbb{Z} \\oplus \\mathbb{Z}_2, 0, 0, 0, 0 \\r
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - surfaces
 relations:
 - kind: variant-of
   target: FF-QOQ2K

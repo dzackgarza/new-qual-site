@@ -6,7 +6,9 @@ title: "Show that a sequentially compact space is totally bounded."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

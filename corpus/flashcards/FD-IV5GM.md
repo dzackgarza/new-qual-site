@@ -6,7 +6,8 @@ title: 'Definition: the discrete topology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
 relations:
 - kind: variant-of
   target: FD-AHIOS

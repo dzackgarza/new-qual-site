@@ -6,7 +6,9 @@ title: "Prove that for any $f: S^2 \\to \\mathbb{R}^2$, there exists $x\\in S^2$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - degree
 relations: []
 review: draft
 ---

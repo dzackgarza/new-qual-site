@@ -6,7 +6,9 @@ title: "What is a separable space?"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
 relations: []
 review: draft
 ---

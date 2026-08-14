@@ -6,7 +6,9 @@ title: "Connected: A space $X$ is disconnected iff There exists a separation of 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations: []
 review: draft
 ---

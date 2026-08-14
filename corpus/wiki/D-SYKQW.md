@@ -6,7 +6,9 @@ title: "Closed manifold"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - manifolds
+  - compactness
 relations: []
 review: draft
 ---

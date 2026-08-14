@@ -6,7 +6,10 @@ title: "Uniform Continuity"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - uniform-continuity
+  - metric-spaces
+  - continuity
 relations: []
 review: draft
 ---

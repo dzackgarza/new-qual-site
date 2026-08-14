@@ -6,7 +6,10 @@ title: Let $X$ be a topological space. A set $A \subseteq X$ is called nowhere d
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - density
+  - closure
+  - point-set
 relations: []
 review: draft
 ---

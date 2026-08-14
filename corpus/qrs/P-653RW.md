@@ -6,7 +6,10 @@ title: "Let $S^1$ denote the unit circle in $C$, $X$ be any topological space\u2
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homotopy
+  - conjugacy
 relations: []
 review: draft
 ---

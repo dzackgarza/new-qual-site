@@ -6,7 +6,10 @@ title: "Describe the topological classification of all compact connected surfa\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - classification
+  - surfaces
+  - euler-characteristic
 relations: []
 review: draft
 ---

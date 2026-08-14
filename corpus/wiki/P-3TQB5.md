@@ -6,7 +6,9 @@ title: "In each part of this problem $X$ is a compact topological space."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Simplicial Map"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
 relations: []
 review: draft
 ---

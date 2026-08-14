@@ -6,7 +6,9 @@ title: "Show that a quotient of a compact space is again compact."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - quotient-spaces
 relations: []
 review: draft
 ---

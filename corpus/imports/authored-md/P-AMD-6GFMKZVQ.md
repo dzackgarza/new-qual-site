@@ -6,7 +6,9 @@ title: Compute a presentation of $\pi_1(T)$ and prove it is isomorphic to…
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
 relations: []
 review: draft
 ---

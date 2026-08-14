@@ -6,7 +6,8 @@ title: "Let $X$ be a compact space and let $A$ be a closed subspace."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
 relations: []
 review: draft
 ---

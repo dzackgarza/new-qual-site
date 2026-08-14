@@ -6,7 +6,9 @@ title: 'For $f: S^n\circlearrowleft$, show $\deg f = \deg \Sigma f$'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homotopy
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "Long exact sequence"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
+  - homology
 relations: []
 review: draft
 ---

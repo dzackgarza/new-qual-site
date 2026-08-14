@@ -6,7 +6,10 @@ title: "Loop Space"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - function-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

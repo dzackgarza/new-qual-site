@@ -6,7 +6,9 @@ title: 'Euler Characteristic: Formula Involving Genus'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
 relations: []
 review: draft
 ---

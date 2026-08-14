@@ -6,7 +6,10 @@ title: "Let $M$ be the mobius strip, identified as $I\\cross I / (t,0) \\sim (1-
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - retracts
+  - surfaces
 relations: []
 review: draft
 ---

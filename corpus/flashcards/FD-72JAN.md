@@ -6,7 +6,9 @@ title: 'Definition: Limit Point'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - limits
 relations: []
 review: draft
 ---

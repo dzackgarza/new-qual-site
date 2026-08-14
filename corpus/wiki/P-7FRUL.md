@@ -6,7 +6,9 @@ title: "Facts used: $H_(T^2) = [\\ZZ, \\ZZ^2, \\ZZ, 0\\rightarrow]$ $N^{(1)} \\h
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
 relations: []
 review: draft
 ---

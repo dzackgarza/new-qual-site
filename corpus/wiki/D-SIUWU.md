@@ -6,7 +6,8 @@ title: "Short exact sequence"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
 relations: []
 review: draft
 ---

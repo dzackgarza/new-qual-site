@@ -6,7 +6,9 @@ title: "Normal covering space (a.k.a. 'regular')"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - group-actions
 relations: []
 review: draft
 ---

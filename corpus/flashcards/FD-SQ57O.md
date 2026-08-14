@@ -6,7 +6,9 @@ title: 'Definition: Dense'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - density
+  - closure
 relations: []
 review: draft
 ---

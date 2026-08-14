@@ -6,7 +6,8 @@ title: "Show that for $A\\subseteq X$, $\\cl_X(A)$ is the smallest closed subset
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
 relations: []
 review: draft
 ---

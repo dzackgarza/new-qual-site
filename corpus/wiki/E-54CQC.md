@@ -6,7 +6,10 @@ title: "Show that a local homeomorphism between compact Hausdorff spaces is a\u2
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - compactness
+  - homeomorphisms
 relations: []
 review: draft
 ---

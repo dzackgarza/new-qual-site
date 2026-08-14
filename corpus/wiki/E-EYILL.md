@@ -6,7 +6,10 @@ title: "No fixed points implies homotopic to antipodal"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - fixed-points
+  - homotopy
 relations: []
 review: draft
 ---

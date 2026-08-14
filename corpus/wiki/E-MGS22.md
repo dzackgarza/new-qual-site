@@ -6,7 +6,9 @@ title: "Let $f : X \\to Y$ be a continuous function, with $X$ compact."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - continuity
 relations: []
 review: draft
 ---

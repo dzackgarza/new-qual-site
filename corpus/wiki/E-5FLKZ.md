@@ -6,7 +6,8 @@ title: "Show that every first countable space is second countable."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
 relations: []
 review: draft
 ---

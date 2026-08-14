@@ -6,7 +6,9 @@ title: "Show that $[0, 1]$ is connected."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

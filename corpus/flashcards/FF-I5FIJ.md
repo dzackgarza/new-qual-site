@@ -6,7 +6,10 @@ title: '$ \chi(\Sigma) = 0 \implies\cdots $'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - surfaces
+  - classification
 relations: []
 review: draft
 ---

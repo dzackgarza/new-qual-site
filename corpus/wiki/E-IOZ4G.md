@@ -6,7 +6,9 @@ title: "Show that any space with the indiscrete topology is separable."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
 relations: []
 review: draft
 ---

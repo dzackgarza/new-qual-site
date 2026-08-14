@@ -6,7 +6,10 @@ title: "Show that every metric space is Hausdorff in its metric topology."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - hausdorff-spaces
+  - separation-axioms
 relations: []
 review: draft
 ---

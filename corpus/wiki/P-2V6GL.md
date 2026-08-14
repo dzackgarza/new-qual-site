@@ -6,7 +6,9 @@ title: "- Find a space that is connected but not locally connected."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - counterexamples
 relations: []
 review: draft
 ---

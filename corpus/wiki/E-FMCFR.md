@@ -6,7 +6,10 @@ title: "Show that a continuous map from a compact space to a\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - continuity
 relations: []
 review: draft
 ---
