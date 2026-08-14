@@ -6,9 +6,11 @@ title: "What groups have nontrivial automorphisms?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - groups
 relations: []
 review: draft
 ---
-What groups have nontrivial automorphisms?
 
+What groups have nontrivial automorphisms?

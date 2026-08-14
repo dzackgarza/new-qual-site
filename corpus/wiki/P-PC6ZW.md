@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring with 1. Suppose that $M$ is a free $R\\das
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - bases
+  - tensor-products
 relations: []
 review: draft
 ---

@@ -6,9 +6,10 @@ title: "- Show that $Z(G) = \\bigcap_{a\\in G} C_G(a)$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---
-- Show that $Z(G) = \bigcap_{a\in G} C_G(a)$.
 
+- Show that $Z(G) = \bigcap_{a\in G} C_G(a)$.

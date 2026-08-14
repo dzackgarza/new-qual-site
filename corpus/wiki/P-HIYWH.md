@@ -6,7 +6,10 @@ title: "Show that if $K/F$ is the splitting field of a separable\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - separability
 relations: []
 review: draft
 ---

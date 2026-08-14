@@ -6,8 +6,12 @@ title: "- Show that any quadratic extension of a field $F$ with $\\ch(F)\\neq 2$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - characteristic
 relations: []
 review: draft
 ---
+
 - Show that any quadratic extension of a field $F$ with $\ch(F)\neq 2$ is Galois.

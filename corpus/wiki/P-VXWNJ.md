@@ -6,12 +6,15 @@ title: "Hungerford 2.2.1"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - structure-theorem
+  - classification
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 2.2.1"}
-Let $G$ be a finite abelian group that is not cyclic. Show that $G$ contains a subgroup isomorphic to
-$\mathbb{Z}_p \oplus \mathbb{Z}_p$ for some prime $p$.
-:::
 
+::: {.problem title="Hungerford 2.2.1"}
+Let $G$ be a finite abelian group that is not cyclic.
+Show that $G$ contains a subgroup isomorphic to $\mathbb{Z}_p \oplus \mathbb{Z}_p$ for some prime $p$.
+:::

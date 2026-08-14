@@ -6,9 +6,10 @@ title: "What is Frobenius reciprocity?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
 relations: []
 review: draft
 ---
-What is Frobenius reciprocity?
 
+What is Frobenius reciprocity?

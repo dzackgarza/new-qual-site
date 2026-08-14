@@ -6,9 +6,12 @@ title: "Which groups of order 4 can be realised as a Galois group over $\\QQ$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - classification
+  - abelian-groups
 relations: []
 review: draft
 ---
-Which groups of order 4 can be realised as a Galois group over $\QQ$?
 
+Which groups of order 4 can be realised as a Galois group over $\QQ$?

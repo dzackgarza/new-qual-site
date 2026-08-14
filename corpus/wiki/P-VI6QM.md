@@ -6,7 +6,10 @@ title: "Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7 sub\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - cyclic-groups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: '> Note: let $[x]_m$ denote the equivalence class of $x \mod m$.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - cyclic-groups
+  - homomorphisms
 relations: []
 review: draft
 ---

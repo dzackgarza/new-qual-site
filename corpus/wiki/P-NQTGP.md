@@ -6,11 +6,14 @@ title: "Consider the minimal polynomial $f(x)$ for a primitive $m$th root of u\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - number-theory
+  - finite-fields
 relations: []
 review: draft
 ---
+
 Consider the minimal polynomial $f(x)$ for a primitive $m$th root of unity.
 Prove that if $p$ divides $f(a)$ for some integer $a$ and $\gcd(p, m) = 1$ then $m$ divides $p - 1$.
 Use this fact to show that there are infinitely many primes congruent to $1 \mod m$.
-

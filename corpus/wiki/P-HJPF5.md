@@ -6,11 +6,14 @@ title: "If you have a $\\ZZ/5\\ZZ$ action on a complex vector space, what does t
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - cyclic-groups
+  - diagonalization
 relations: []
 review: draft
 ---
+
 If you have a $\ZZ/5\ZZ$ action on a complex vector space, what does this action look like?
 What about an $S_3$ action?
 A dihedral group of any order?
-

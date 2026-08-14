@@ -6,7 +6,10 @@ title: "Let $f (x)$ be an irreducible polynomial of degree 4 in $\\QQ[x]$ whos\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - permutations
 relations: []
 review: draft
 ---

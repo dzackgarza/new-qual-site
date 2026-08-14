@@ -6,7 +6,10 @@ title: "Let $G=S_5$, the symmetric group on 5 elements. Identify"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - permutations
+  - partitions
 relations: []
 review: draft
 ---

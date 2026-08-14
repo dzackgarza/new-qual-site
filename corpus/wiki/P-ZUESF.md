@@ -6,7 +6,9 @@ title: "Here, since $n_p \\divides q$, we must have $n_p < q$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---

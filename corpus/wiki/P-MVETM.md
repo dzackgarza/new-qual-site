@@ -6,7 +6,10 @@ title: Suppose all irreducible polynomials in $F[x]$ are separable.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

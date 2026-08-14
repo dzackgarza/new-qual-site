@@ -6,9 +6,12 @@ title: "What are the subgroups of \\( \\ZZ^2 \\)?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - abelian-groups
+  - free-modules
 relations: []
 review: draft
 ---
-What are the subgroups of \( \ZZ^2 \)?
 
+What are the subgroups of \( \ZZ^2 \)?

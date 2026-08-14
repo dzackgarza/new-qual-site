@@ -6,8 +6,12 @@ title: "- Prove that if $R$ is an integral domain, then $R[t]$ is again an int\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-domains
+  - polynomials
+  - rings
 relations: []
 review: draft
 ---
+
 - Prove that if $R$ is an integral domain, then $R[t]$ is again an integral domain.

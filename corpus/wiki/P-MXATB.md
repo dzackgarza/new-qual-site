@@ -6,7 +6,10 @@ title: "Let $\\tau \\definedas (t_1, t_2)$ denote the transposition and $\\sigma
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-presentations
+  - conjugacy
 relations: []
 review: draft
 ---

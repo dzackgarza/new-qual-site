@@ -6,7 +6,10 @@ title: "Note that we can't have $T^j = 0$ for any $j\\leq 4$, since then $T^5 = 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - nilpotence
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

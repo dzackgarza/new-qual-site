@@ -6,9 +6,12 @@ title: "Prove that $SL_2(Z)$ is not solvable."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - matrix-groups
+  - free-groups
 relations: []
 review: draft
 ---
-Prove that $SL_2(Z)$ is not solvable.
 
+Prove that $SL_2(Z)$ is not solvable.

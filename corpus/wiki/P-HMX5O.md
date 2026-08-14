@@ -6,10 +6,11 @@ title: "Give two definitions of \"induced representation\"."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
 relations: []
 review: draft
 ---
+
 Give two definitions of "induced representation".
 Why are they equivalent?
-

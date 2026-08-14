@@ -6,7 +6,10 @@ title: '1. $AX=B$ has a solution $\iff \rank(A) = \rank(C)$:'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rank-and-nullity
+  - linear-algebra
+  - matrices
 relations: []
 review: draft
 ---

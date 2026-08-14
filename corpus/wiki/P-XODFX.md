@@ -6,11 +6,14 @@ title: "Suppose $D$ is an integral domain and the fundamental theorem holds fo\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - principal-ideal-domains
+  - modules
 relations: []
 review: draft
 ---
+
 Suppose $D$ is an integral domain and the fundamental theorem holds for finitely-generated modules over $D$ (i.e. they are all direct sums of finitely many cyclic modules).
 
 Does $D$ have to be a PID?
-

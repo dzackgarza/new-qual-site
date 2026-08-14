@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group and $p$ a prime number such that there\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

@@ -6,9 +6,12 @@ title: "State and prove the Jordan-Holder theorem for finite groups."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - simple-groups
+  - classification
 relations: []
 review: draft
 ---
-State and prove the Jordan-Holder theorem for finite groups.
 
+State and prove the Jordan-Holder theorem for finite groups.

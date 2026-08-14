@@ -6,7 +6,10 @@ title: "We prove a slightly stronger statement, namely:"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - abelian-groups
+  - rings
 relations: []
 review: draft
 ---

@@ -6,11 +6,14 @@ title: "How do you use Galois theory (or just field theory) to prove the impos\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - geometry
+  - galois-theory
 relations: []
 review: draft
 ---
+
 How do you use Galois theory (or just field theory) to prove the impossibility of trisecting an angle?
 Doubling a cube?
 Squaring a circle?
-

@@ -6,11 +6,14 @@ title: "Hungerford 2.7.10"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - nilpotent-groups
+  - permutations
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 2.7.10"}
+
+::: {.problem title="Hungerford 2.7.10"}
 Show that $S_n$ is solvable for$n\leq 4$ but $S_3$ and $S_4$ are not nilpotent.
 :::
-

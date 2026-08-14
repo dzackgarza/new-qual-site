@@ -6,9 +6,14 @@ title: "- Identify $\\Aut(\\ZZ/p)$ and $\\Aut(\\prod_{i=1}^n \\ZZ/p)$ for $p$ a 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - cyclic-groups
+  - matrix-groups
 relations: []
 review: draft
 ---
+
 - Identify $\Aut(\ZZ/p)$ and $\Aut(\prod_{i=1}^n \ZZ/p)$ for $p$ a prime.
-	- Identify $\Aut(\ZZ/n)$ for $n$ composite.
+
+  - Identify $\Aut(\ZZ/n)$ for $n$ composite.

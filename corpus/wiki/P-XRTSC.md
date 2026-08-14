@@ -6,7 +6,10 @@ title: "Lemma: The rank-nullity theorem holds over division rings."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rank-and-nullity
+  - free-modules
+  - matrices
 relations: []
 review: draft
 ---

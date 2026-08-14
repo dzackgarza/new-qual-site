@@ -6,7 +6,10 @@ title: "Hungerford 7.5.2"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - determinants
+  - modules
 relations: []
 review: draft
 ---

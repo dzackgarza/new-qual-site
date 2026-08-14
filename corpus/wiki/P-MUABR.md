@@ -6,7 +6,8 @@ title: "Show that if $L/K/F$ with $K/F$ algebraic and $L/K$ algebraic then $L$ i
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Show that $x^{p^n} - x = \\prod f_i(x)$ over all irreducible monic $f_i$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - factorization
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

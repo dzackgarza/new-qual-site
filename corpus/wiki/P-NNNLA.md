@@ -6,7 +6,10 @@ title: "Let $\\zeta = e^{2\\pi i/8}$. What is the degree of $\\QQ(\\zeta)/\\QQ$?
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - galois-theory
 relations: []
 review: draft
 ---

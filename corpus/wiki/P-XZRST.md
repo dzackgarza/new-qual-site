@@ -6,9 +6,12 @@ title: "Does $L_1$ have a natural multiplication with which it becomes an alge\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - convolution
+  - algebras
+  - function-spaces
 relations: []
 review: draft
 ---
-Does $L_1$ have a natural multiplication with which it becomes an algebra?
 
+Does $L_1$ have a natural multiplication with which it becomes an algebra?

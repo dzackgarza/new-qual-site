@@ -6,10 +6,14 @@ title: "What is a separable extension?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
+  - finite-fields
 relations: []
 review: draft
 ---
+
 What is a separable extension?
 Can $\QQ$ have a non-separable extension?
 How about $\ZZ/p\ZZ$?
@@ -19,4 +23,3 @@ Of finite fields?
 Prove it.
 
 Give an example of a field extension that's not separable.
-

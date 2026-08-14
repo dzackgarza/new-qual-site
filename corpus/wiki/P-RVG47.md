@@ -6,9 +6,10 @@ title: "Do you know a Lie group that has no faithful finite-dimensional repres\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
 relations: []
 review: draft
 ---
-Do you know a Lie group that has no faithful finite-dimensional representations?
 
+Do you know a Lie group that has no faithful finite-dimensional representations?

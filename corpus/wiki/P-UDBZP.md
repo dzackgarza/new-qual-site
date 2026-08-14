@@ -6,8 +6,12 @@ title: "Prove that any nondegenerate matrix $X\\in M_n(\\RR)$ can be written as\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - inner-product-spaces
+  - bases
 relations: []
 review: draft
 ---
+
 Prove that any nondegenerate matrix $X\in M_n(\RR)$ can be written as $X = UT$ where $U$ is orthogonal and $T$ is upper triangular.

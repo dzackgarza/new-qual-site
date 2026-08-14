@@ -6,9 +6,12 @@ title: "Prove a finitely-generated torsion-free abelian group is free abelian."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - torsion
+  - abelian-groups
 relations: []
 review: draft
 ---
-Prove a finitely-generated torsion-free abelian group is free abelian.
 
+Prove a finitely-generated torsion-free abelian group is free abelian.

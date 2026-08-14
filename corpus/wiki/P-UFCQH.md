@@ -6,9 +6,12 @@ title: "If two real matrices are conjugate in $\\Mat(n\\times n, \\CC)$, are the
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - canonical-forms
+  - matrices
 relations: []
 review: draft
 ---
-If two real matrices are conjugate in $\Mat(n\times n, \CC)$, are they necessarily conjugate in $\Mat(n \cross N, R)$ as well?
 
+If two real matrices are conjugate in $\Mat(n\times n, \CC)$, are they necessarily conjugate in $\Mat(n \cross N, R)$ as well?

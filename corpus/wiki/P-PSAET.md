@@ -6,9 +6,12 @@ title: "- Determine the orders $\\size \\GL_n(\\FF_p)$ and $\\size \\SL_n(\\FF_p
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - finite-fields
+  - determinants
 relations: []
 review: draft
 ---
-- Determine the orders $\size \GL_n(\FF_p)$ and $\size \SL_n(\FF_p)$.
 
+- Determine the orders $\size \GL_n(\FF_p)$ and $\size \SL_n(\FF_p)$.

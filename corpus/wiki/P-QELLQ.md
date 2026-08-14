@@ -6,9 +6,12 @@ title: "Prove the Hilbert basis theorem."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - polynomials
+  - ideals
 relations: []
 review: draft
 ---
-Prove the Hilbert basis theorem.
 
+Prove the Hilbert basis theorem.

@@ -6,9 +6,11 @@ title: "Prove that all finite integral domains are fields."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-domains
+  - fields
 relations: []
 review: draft
 ---
-Prove that all finite integral domains are fields.
 
+Prove that all finite integral domains are fields.

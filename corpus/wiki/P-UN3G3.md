@@ -6,9 +6,12 @@ title: "How do you determine the number and sizes of the blocks for Jordan can\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
+  - eigenvalues-and-eigenvectors
 relations: []
 review: draft
 ---
-How do you determine the number and sizes of the blocks for Jordan canonical form?
 
+How do you determine the number and sizes of the blocks for Jordan canonical form?

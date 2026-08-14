@@ -6,9 +6,12 @@ title: "Give a polynomial with $S_3$ as its Galois group."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - permutations
 relations: []
 review: draft
 ---
-Give a polynomial with $S_3$ as its Galois group.
 
+Give a polynomial with $S_3$ as its Galois group.

@@ -6,9 +6,12 @@ title: "What do you know about representations of $\\SO(2)$? $\\SO(3)$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - matrix-groups
 relations: []
 review: draft
 ---
-What do you know about representations of $\SO(2)$? $\SO(3)$?
 
+What do you know about representations of $\SO(2)$?
+$\SO(3)$?

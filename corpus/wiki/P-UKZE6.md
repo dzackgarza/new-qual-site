@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring with 1. some positive integer $n$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jacobson-radical
+  - maximal-ideals
+  - nilpotence
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Give generators and relations for the non-commutative group $G$ of or\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-presentations
+  - semidirect-products
+  - classification
 relations: []
 review: draft
 ---

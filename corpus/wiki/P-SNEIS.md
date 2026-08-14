@@ -6,7 +6,9 @@ title: "Prove the fundamental theorem of cosets: for $xH, yH\\in G/H$, $xH = yH 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

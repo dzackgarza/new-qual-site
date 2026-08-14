@@ -6,8 +6,12 @@ title: "- Show that the transitive subgroups of $S_3$ are $S_3, A_3$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - subgroups
+  - group-actions
 relations: []
 review: draft
 ---
+
 - Show that the transitive subgroups of $S_3$ are $S_3, A_3$

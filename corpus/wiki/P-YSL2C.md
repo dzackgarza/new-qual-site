@@ -6,9 +6,12 @@ title: "What are the conjugacy classes of $\\SL_2(\\RR)$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - matrix-groups
+  - jordan-canonical-form
 relations: []
 review: draft
 ---
-What are the conjugacy classes of $\SL_2(\RR)$?
 
+What are the conjugacy classes of $\SL_2(\RR)$?

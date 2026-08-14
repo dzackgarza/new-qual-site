@@ -6,7 +6,10 @@ title: "Define prime ideal, give an example of a nontrivial ideal in\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - maximal-ideals
+  - ideals
 relations: []
 review: draft
 ---

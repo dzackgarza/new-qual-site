@@ -6,7 +6,10 @@ title: "Let $p$ be a prime number and let $F$ be a field of characteristic $p$\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - irreducibility-criteria
+  - characteristic
+  - polynomials
 relations: []
 review: draft
 ---

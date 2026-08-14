@@ -6,7 +6,10 @@ title: Since $(r, s) = (1)$, we can find $t_1, t_2 \in R$ such that
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - cyclic-groups
+  - torsion
 relations: []
 review: draft
 ---

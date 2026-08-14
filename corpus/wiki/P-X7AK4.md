@@ -6,7 +6,10 @@ title: "If $L/K$ is a finite field extension which is both separable and a sp\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - separability
+  - splitting-fields
 relations: []
 review: draft
 ---

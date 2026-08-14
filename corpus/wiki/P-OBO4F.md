@@ -6,9 +6,11 @@ title: "- Prove that if $\\size G = n$, then $g^n = e$ for every $g\\in G$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - cyclic-groups
 relations: []
 review: draft
 ---
-- Prove that if $\size G = n$, then $g^n = e$ for every $g\in G$
 
+- Prove that if $\size G = n$, then $g^n = e$ for every $g\in G$

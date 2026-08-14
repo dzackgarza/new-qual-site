@@ -6,9 +6,13 @@ title: "- Prove that if $\\size G$ is prime, then $G$ is cyclic"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cyclic-groups
+  - classification
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---
+
 - Prove that if $\size G$ is prime, then $G$ is cyclic
-	> Assume there are two distinct generators and reach a contradiction.
+  > Assume there are two distinct generators and reach a contradiction.

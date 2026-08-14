@@ -6,7 +6,10 @@ title: "Let $f\\in \\QQ[x]$ be an irreducible polynomial and $L$ a finite Galoi\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - irreducibility-criteria
+  - field-extensions
 relations: []
 review: draft
 ---

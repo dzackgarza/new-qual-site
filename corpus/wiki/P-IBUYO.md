@@ -6,11 +6,13 @@ title: "If $M$ is free abelian, how can I put quotients of M in some standard\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - smith-normal-form
+  - structure-theorem
+  - euclidean-domains
 relations: []
 review: draft
 ---
-If $M$ is free abelian, how can I put quotients of M in some standard form?
-What was crucial about the integers here (abelian groups being modules over $\ZZ$)?
-How does the procedure simplify if the ring is a Euclidean domain, not just a PID?
 
+If $M$ is free abelian, how can I put quotients of M in some standard form?
+What was crucial about the integers here (abelian groups being modules over $\ZZ$)? How does the procedure simplify if the ring is a Euclidean domain, not just a PID?

@@ -6,9 +6,12 @@ title: "Are there two nonisomorphic groups with the same representations?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - character-theory
+  - counterexamples
 relations: []
 review: draft
 ---
-Are there two nonisomorphic groups with the same representations?
 
+Are there two nonisomorphic groups with the same representations?

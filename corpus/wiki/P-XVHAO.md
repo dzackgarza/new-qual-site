@@ -6,8 +6,11 @@ title: "- Show that $[A_4, A_4] \\cong \\ZZ_2^2$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - commutators
+  - permutations
 relations: []
 review: draft
 ---
+
 - Show that $[A_4, A_4] \cong \ZZ_2^2$

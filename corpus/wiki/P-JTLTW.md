@@ -6,7 +6,10 @@ title: Then $\size G = p^3$ and $G$ is a $p\dash$group.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - centralizers-and-normalizers
+  - normal-subgroups
 relations: []
 review: draft
 ---

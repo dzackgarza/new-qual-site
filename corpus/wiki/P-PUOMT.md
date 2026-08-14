@@ -6,9 +6,12 @@ title: "- Show that in a $p$ group, every normal subgroup intersects the cente\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - normal-subgroups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---
-- Show that in a $p$ group, every normal subgroup intersects the center nontrivially.
 
+- Show that in a $p$ group, every normal subgroup intersects the center nontrivially.

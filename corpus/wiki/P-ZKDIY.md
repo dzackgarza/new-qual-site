@@ -6,7 +6,10 @@ title: "Let $x,y \\in \\mathbb{C}$ and consider the matrix"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - rank-and-nullity
 relations: []
 review: draft
 ---

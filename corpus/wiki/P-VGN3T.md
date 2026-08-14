@@ -6,7 +6,10 @@ title: "For a ring $R$, let $U(R)$ denote the multiplicative group of units in\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - integral-domains
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

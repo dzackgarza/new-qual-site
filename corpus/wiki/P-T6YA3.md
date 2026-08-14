@@ -6,7 +6,10 @@ title: "Since $R/(p)$ is a field, we just need to show that $A/pA \\actson R/(p)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - vector-spaces
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

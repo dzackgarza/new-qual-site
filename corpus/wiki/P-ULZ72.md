@@ -6,9 +6,12 @@ title: "If $\\chi(g)$ is real for every character $\\chi$, what can you say abou
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
+  - conjugacy
 relations: []
 review: draft
 ---
-If $\chi(g)$ is real for every character $\chi$, what can you say about $g$?
 
+If $\chi(g)$ is real for every character $\chi$, what can you say about $g$?

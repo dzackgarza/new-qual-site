@@ -6,7 +6,10 @@ title: "A ring \\( R \\) is called simple if its only two-sided ideals are $0$\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - ideals
+  - semisimplicity
 relations: []
 review: draft
 ---

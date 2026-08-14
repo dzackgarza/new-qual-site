@@ -6,10 +6,12 @@ title: "Describe all the conjugacy classes of $3 \\times 3$ matrices with ratio\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - rational-canonical-form
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---
-Describe all the conjugacy classes of $3 \times 3$ matrices with rational entries which satisfy the equation \(A^4 - A^3 - A + 1 = 0\).
-Give a representative in each class.
 
+Describe all the conjugacy classes of $3 \times 3$ matrices with rational entries which satisfy the equation \(A^4 - A^3 - A + 1 = 0\). Give a representative in each class.

@@ -6,9 +6,15 @@ title: "- Define what a composition series is, and state what it means for a g\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - nilpotent-groups
+  - solvable-groups
 relations: []
 review: draft
 ---
--  Define what a composition series is, and state what it means for a group to be simple, solvable, or nilpotent.
-	- How are the derived and lower/upper central series defined? What type(s) of the groups above does each series correspond to?
+
+- Define what a composition series is, and state what it means for a group to be simple, solvable, or nilpotent.
+
+  - How are the derived and lower/upper central series defined?
+    What type(s) of the groups above does each series correspond to?

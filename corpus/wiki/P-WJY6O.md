@@ -6,8 +6,11 @@ title: "- Show that $G$ nilpotent $\\implies G$ solvable"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - solvable-groups
 relations: []
 review: draft
 ---
+
 - Show that $G$ nilpotent $\implies G$ solvable

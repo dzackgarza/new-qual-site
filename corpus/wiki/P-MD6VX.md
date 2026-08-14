@@ -6,9 +6,12 @@ title: "Why is the character table a square?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
+  - conjugacy
 relations: []
 review: draft
 ---
-Why is the character table a square?
 
+Why is the character table a square?

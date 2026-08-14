@@ -6,9 +6,12 @@ title: "Do you know about Dedekind domains and class numbers?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---
-Do you know about Dedekind domains and class numbers?
 
+Do you know about Dedekind domains and class numbers?

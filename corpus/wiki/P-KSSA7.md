@@ -6,7 +6,10 @@ title: "Show that the Galois group of $x^n - 2$ is $D_n$, the dihedral group on 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - roots-of-unity
 relations: []
 review: draft
 ---

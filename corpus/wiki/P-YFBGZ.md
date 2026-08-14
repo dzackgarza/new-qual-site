@@ -6,9 +6,12 @@ title: "What are the radical ideals in $\\ZZ$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - nilpotence
+  - prime-ideals
 relations: []
 review: draft
 ---
-What are the radical ideals in $\ZZ$?
 
+What are the radical ideals in $\ZZ$?

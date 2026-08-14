@@ -6,9 +6,10 @@ title: "If you have a representation of $H$, a subgroup of a group $G$, how ca\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
 relations: []
 review: draft
 ---
-If you have a representation of $H$, a subgroup of a group $G$, how can you induce a representation of $G$?
 
+If you have a representation of $H$, a subgroup of a group $G$, how can you induce a representation of $G$?

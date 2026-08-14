@@ -6,7 +6,10 @@ title: Let $M$ be a finitely generated module over $R$ a PID.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - modules
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "What is the Jordan normal form over $\\mathbb{C}$ of a $7 \\times 7$ mat
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - trace
 relations: []
 review: draft
 ---

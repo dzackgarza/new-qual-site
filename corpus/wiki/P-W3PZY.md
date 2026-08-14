@@ -6,7 +6,10 @@ title: "Let $f(x) \\in F[x]$ be irreducible, then since $p(x) \\definedas \\gcd(
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

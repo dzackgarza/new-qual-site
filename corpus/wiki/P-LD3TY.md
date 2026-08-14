@@ -6,9 +6,12 @@ title: "Explain geometrically how you diagonalise a quadratic form."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - quadratic-forms
+  - diagonalization
+  - geometry
 relations: []
 review: draft
 ---
-Explain geometrically how you diagonalise a quadratic form.
 
+Explain geometrically how you diagonalise a quadratic form.

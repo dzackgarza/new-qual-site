@@ -6,7 +6,10 @@ title: "Let $\\{e_1, \\cdots, e_n \\}$ be a basis of a real vector space $V$ and
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - determinants
+  - structure-theorem
 relations: []
 review: draft
 ---

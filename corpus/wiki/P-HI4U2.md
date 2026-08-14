@@ -6,21 +6,24 @@ title: "What are the following objects?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - polynomials
+  - fields
 relations: []
 review: draft
 ---
+
 What are the following objects?
 
 - $K(x)$
+
 - $K[x]$
+
 - $K( \alpha)$
+
 - $K[ \alpha]$
 
-
-
-:::{.solution}
+::: {.solution}
 ![](../../assets/10_Algebra/999_Review/image/SmartSelect_20210419-233949_Xodo_Docs.jpg)
 :::
-
-

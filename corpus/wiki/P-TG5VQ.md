@@ -6,9 +6,12 @@ title: "For a linear ODE with constant coefficients, how would you solve it us\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---
-For a linear ODE with constant coefficients, how would you solve it using linear algebra?
 
+For a linear ODE with constant coefficients, how would you solve it using linear algebra?

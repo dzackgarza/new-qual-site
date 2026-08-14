@@ -6,8 +6,12 @@ title: "- How many elements in $\\Aut(\\ZZ/20)$ have order 4?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - cyclic-groups
+  - number-theory
 relations: []
 review: draft
 ---
+
 - How many elements in $\Aut(\ZZ/20)$ have order 4?

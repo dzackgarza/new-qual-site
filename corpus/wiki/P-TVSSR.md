@@ -6,9 +6,12 @@ title: "Compute the Galois group of $x^3 + 6x + 3$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - permutations
 relations: []
 review: draft
 ---
-Compute the Galois group of $x^3 + 6x + 3$.
 
+Compute the Galois group of $x^3 + 6x + 3$.

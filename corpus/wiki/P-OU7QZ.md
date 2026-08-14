@@ -6,9 +6,12 @@ title: "Show that if $f$ is an irreducible quintic with precisely two non-real\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - polynomials
 relations: []
 review: draft
 ---
-Show that if $f$ is an irreducible quintic with precisely two non-real roots, then its Galois group is $S_5$.
 
+Show that if $f$ is an irreducible quintic with precisely two non-real roots, then its Galois group is $S_5$.

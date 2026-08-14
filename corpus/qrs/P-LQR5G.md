@@ -6,13 +6,16 @@ title: "Hungerford 2.5.9"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 2.5.9"}
-Let $\left| G \right| = p^n q$ for some primes $p > q$. Show that $G$ contains a unique normal subgroup of
-index $q$.
+
+::: {.problem title="Hungerford 2.5.9"}
+Let $\left| G \right| = p^n q$ for some primes $p > q$.
+Show that $G$ contains a unique normal subgroup of index $q$.
 :::
 
 ### Qual Problems

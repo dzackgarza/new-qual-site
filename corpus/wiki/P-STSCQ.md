@@ -6,9 +6,11 @@ title: "What are all possible orders of elements of $\\SL_2(Z)$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - cyclic-groups
 relations: []
 review: draft
 ---
-What are all possible orders of elements of $\SL_2(Z)$?
 
+What are all possible orders of elements of $\SL_2(Z)$?

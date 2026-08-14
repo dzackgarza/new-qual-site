@@ -6,10 +6,14 @@ title: "- Suppose $\\size G = pq$ with $p, q\\geq 2$ prime, and let $H\\leq G$ b
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - cyclic-groups
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---
+
 - Suppose $\size G = pq$ with $p, q\geq 2$ prime, and let $H\leq G$ be a proper subgroup.
   Prove that $H$ must be cyclic.
 

@@ -6,9 +6,12 @@ title: "Give an example of a UFD which is not a Euclidean domain."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - euclidean-domains
+  - factorization
+  - counterexamples
 relations: []
 review: draft
 ---
-Give an example of a UFD which is not a Euclidean domain.
 
+Give an example of a UFD which is not a Euclidean domain.

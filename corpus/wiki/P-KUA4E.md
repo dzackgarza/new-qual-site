@@ -6,7 +6,10 @@ title: "We'll use the fact that $H \\normal N(H)$ for any subgroup $H$ (followi\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - centralizers-and-normalizers
+  - normal-subgroups
 relations: []
 review: draft
 ---

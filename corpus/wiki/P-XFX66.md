@@ -6,12 +6,15 @@ title: "Hungerford 7.3.1"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - determinants
+  - modules
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 7.3.1"}
-Let $B$ be an $R$-module. Show that if $r+r\neq 0$ for all $r\neq 0 \in R$, then an $n$-linear form
-$B^n\to R$ is alternating $\iff$ it is skew-symmetric.
-:::
 
+::: {.problem title="Hungerford 7.3.1"}
+Let $B$ be an $R$-module.
+Show that if $r+r\neq 0$ for all $r\neq 0 \in R$, then an $n$-linear form $B^n\to R$ is alternating $\iff$ it is skew-symmetric.
+:::

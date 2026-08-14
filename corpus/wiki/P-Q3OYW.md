@@ -6,9 +6,12 @@ title: "Are there separable polynomials of any degree over any field?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - polynomials
+  - fields
 relations: []
 review: draft
 ---
-Are there separable polynomials of any degree over any field?
 
+Are there separable polynomials of any degree over any field?

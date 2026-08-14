@@ -6,8 +6,12 @@ title: "- Determine all pairs $n, p\\in \\ZZ^{\\geq 1}$ such that $\\SL_n(\\FF_p
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - matrix-groups
+  - finite-fields
 relations: []
 review: draft
 ---
+
 - Determine all pairs $n, p\in \ZZ^{\geq 1}$ such that $\SL_n(\FF_p)$ is solvable.

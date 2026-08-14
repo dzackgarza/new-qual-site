@@ -6,7 +6,10 @@ title: "Let $F$ be a finite field with $q$ elements. Let $n$ be a positive\u2026
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - roots-of-unity
+  - cyclic-groups
 relations: []
 review: draft
 ---

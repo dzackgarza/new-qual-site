@@ -6,7 +6,10 @@ title: "Similarly, since $R/(p)$ is a field, it suffices to show that $R/(p)\\ac
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - torsion
+  - fields
 relations: []
 review: draft
 ---

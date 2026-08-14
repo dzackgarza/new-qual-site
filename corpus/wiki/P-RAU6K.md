@@ -6,9 +6,12 @@ title: "Give an example of a cubic with Galois group $S_3$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - polynomials
+  - permutations
 relations: []
 review: draft
 ---
-Give an example of a cubic with Galois group $S_3$.
 
+Give an example of a cubic with Galois group $S_3$.

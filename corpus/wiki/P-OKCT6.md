@@ -6,8 +6,12 @@ title: "How many groups are there up to isomorphism of order $pq$ where $p<q$\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations: []
 review: draft
 ---
+
 How many groups are there up to isomorphism of order $pq$ where $p<q$ are prime integers?

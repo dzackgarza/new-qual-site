@@ -6,7 +6,10 @@ title: 'For arbitrary $x, y \in A$, we need to check the following:'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - rings
+  - homomorphisms
 relations: []
 review: draft
 ---

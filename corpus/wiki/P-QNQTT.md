@@ -6,7 +6,10 @@ title: Let $f(x) \in \QQ[x]$ be an irreducible polynomial of degree 5.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - polynomials
 relations: []
 review: draft
 ---

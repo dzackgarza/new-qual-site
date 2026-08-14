@@ -6,9 +6,13 @@ title: "- State the class equation."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - class-equation
+  - orbit-stabilizer
+  - conjugacy
 relations: []
 review: draft
 ---
+
 - State the class equation.
-	Can you derive this from orbit-stabilizer?
+  Can you derive this from orbit-stabilizer?

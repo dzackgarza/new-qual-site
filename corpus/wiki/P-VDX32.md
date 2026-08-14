@@ -6,9 +6,11 @@ title: "What is a matrix algebra?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - algebras
+  - matrices
 relations: []
 review: draft
 ---
-What is a matrix algebra?
 
+What is a matrix algebra?

@@ -6,10 +6,12 @@ title: "Suppose you have a finite p-group, and you have a representation of th\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - p-groups
+  - characteristic
 relations: []
 review: draft
 ---
-Suppose you have a finite p-group, and you have a representation of this group on a finite-dimensional vector space over a finite field of characteristic p.
-What can you say about it?
 
+Suppose you have a finite p-group, and you have a representation of this group on a finite-dimensional vector space over a finite field of characteristic p. What can you say about it?

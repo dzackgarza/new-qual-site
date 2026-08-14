@@ -6,8 +6,12 @@ title: "- Show that no group of order $p^2 q^2$ is simple for $p<q$ primes."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
+  - classification
 relations: []
 review: draft
 ---
+
 - Show that no group of order $p^2 q^2$ is simple for $p<q$ primes.

@@ -6,7 +6,9 @@ title: "Prove the Cayley-Hamilton theorem."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - linear-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: "An element $x\\in M$ is torsion iff there exists some nonzero $r\\in R$ 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - modules
 relations: []
 review: draft
 ---

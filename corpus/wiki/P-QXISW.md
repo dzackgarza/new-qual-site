@@ -6,9 +6,12 @@ title: "Let $p$ be a prime. Show that $S_p = \\gens{\\tau, \\sigma}$ where $\\ta
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - group-presentations
 relations: []
 review: draft
 ---
-Let $p$ be a prime. Show that $S_p = \gens{\tau, \sigma}$ where $\tau$ is a transposition and $\sigma$ is a $p\dash$cycle.
 
+Let $p$ be a prime.
+Show that $S_p = \gens{\tau, \sigma}$ where $\tau$ is a transposition and $\sigma$ is a $p\dash$cycle.

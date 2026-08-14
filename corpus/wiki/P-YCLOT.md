@@ -6,7 +6,10 @@ title: "(Important) Classify all groups of order $p^2$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - p-groups
+  - abelian-groups
 relations: []
 review: draft
 ---

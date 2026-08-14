@@ -6,10 +6,16 @@ title: "- Prove the \"Recognizing direct products\" theorem: if $H, K$ are norma
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - direct-products
+  - normal-subgroups
+  - isomorphism-theorems
 relations: []
 review: draft
 ---
+
 - Prove the "Recognizing direct products" theorem: if $H, K$ are normal in $G$ with $H \intersect K = \emptyset$ and $HK = G$, then $G\cong H\cross K$.
-	- Hint: write down a map $H\cross K\to G$ and follow your nose!
-	- How can you generalize this to 3 or more subgroups?
+
+  - Hint: write down a map $H\cross K\to G$ and follow your nose!
+
+  - How can you generalize this to 3 or more subgroups?

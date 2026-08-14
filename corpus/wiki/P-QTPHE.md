@@ -6,12 +6,14 @@ title: "Hungerford 7.1.7"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - canonical-forms
+  - smith-normal-form
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 7.1.7"}
-Show that similarity is an equivalence relation on $M_n(R)$, and \*equivalence\* is an equivalence
-relation on $M_{m\times n}(R)$.
-:::
 
+::: {.problem title="Hungerford 7.1.7"}
+Show that similarity is an equivalence relation on $M_n(R)$, and \*equivalence\* is an equivalence relation on $M_{m\times n}(R)$.
+:::

@@ -6,9 +6,12 @@ title: "What is a Kummer extension?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - roots-of-unity
+  - cyclic-groups
 relations: []
 review: draft
 ---
-What is a Kummer extension?
 
+What is a Kummer extension?

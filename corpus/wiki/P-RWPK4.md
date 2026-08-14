@@ -6,7 +6,10 @@ title: "Let $p$ be a prime number. Let $A$ be a $p \\times p$ matrix over a fiel
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - characteristic
 relations: []
 review: draft
 ---

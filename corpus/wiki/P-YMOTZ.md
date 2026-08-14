@@ -6,7 +6,10 @@ title: "Classify the abelian groups of order 36."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - abelian-groups
 relations: []
 review: draft
 ---

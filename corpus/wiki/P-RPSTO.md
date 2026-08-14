@@ -6,11 +6,16 @@ title: "- Show that if $G$ is solvable, then $G$ contains a nontrivial normal\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - normal-subgroups
+  - commutators
 relations: []
 review: draft
 ---
+
 - Show that if $G$ is solvable, then $G$ contains a nontrivial normal subroup.
-	- What does this mean on the Galois theory side?
+
+  - What does this mean on the Galois theory side?
 
 > Hint: consider the derived series.

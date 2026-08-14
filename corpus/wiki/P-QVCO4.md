@@ -6,7 +6,10 @@ title: "Identifying $R \\cross F = F[x] \\oplus F \\cong F[x] \\oplus \\frac{F[x
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - smith-normal-form
+  - modules
 relations: []
 review: draft
 ---

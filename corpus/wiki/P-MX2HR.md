@@ -6,7 +6,10 @@ title: "Define what it means for a group $G$ to be solvable."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - sylow-theory
+  - classification
 relations: []
 review: draft
 ---

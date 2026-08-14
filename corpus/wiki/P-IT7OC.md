@@ -6,10 +6,13 @@ title: "A subgroup $H$ of a group $G$ that meets every conjugacy class is in f\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---
+
 A subgroup $H$ of a group $G$ that meets every conjugacy class is in fact $G$.
 Why is that true?
-

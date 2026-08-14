@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group and $H<G$ a subgroup. Let"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - centralizers-and-normalizers
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

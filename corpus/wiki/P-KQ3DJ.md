@@ -6,9 +6,11 @@ title: "What is a projective module?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - projective-modules
+  - modules
 relations: []
 review: draft
 ---
-What is a projective module?
 
+What is a projective module?

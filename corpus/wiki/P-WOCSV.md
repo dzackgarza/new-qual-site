@@ -6,11 +6,13 @@ title: "Suppose I asked you to classify groups of order 4."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - galois-theory
+  - abelian-groups
 relations: []
 review: draft
 ---
-Suppose I asked you to classify groups of order 4.
-Why isn't there anything else?
-Which of those could be realised as a Galois group over $\QQ$?
 
+Suppose I asked you to classify groups of order 4. Why isn't there anything else?
+Which of those could be realised as a Galois group over $\QQ$?

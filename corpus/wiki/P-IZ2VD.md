@@ -6,7 +6,10 @@ title: "Let $F = \\FF_p$ , where $p$ is a prime number. Show that if $\\pi(x) \\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - field-extensions
 relations: []
 review: draft
 ---

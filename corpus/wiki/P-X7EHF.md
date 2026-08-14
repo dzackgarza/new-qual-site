@@ -6,7 +6,10 @@ title: Let $R$ be a commutative ring with $1\neq 0$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - prime-ideals
+  - zorns-lemma
 relations: []
 review: draft
 ---

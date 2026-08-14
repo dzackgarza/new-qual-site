@@ -6,9 +6,12 @@ title: "Discuss groups of order 55."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations: []
 review: draft
 ---
-Discuss groups of order 55.
 
+Discuss groups of order 55.

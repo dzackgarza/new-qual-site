@@ -6,7 +6,10 @@ title: 'Let $\phi: A \to A$ be a module endomorphism on a simple module $A$.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
+  - homomorphisms
 relations: []
 review: draft
 ---

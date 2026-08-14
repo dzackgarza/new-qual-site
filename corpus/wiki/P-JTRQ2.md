@@ -6,9 +6,11 @@ title: "What is an injective module?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - homological-algebra
 relations: []
 review: draft
 ---
-What is an injective module?
 
+What is an injective module?

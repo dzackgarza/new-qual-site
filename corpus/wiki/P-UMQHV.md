@@ -6,12 +6,15 @@ title: "Let $k$ be a field of characteristic $p\\neq 0$ and $f\\in k[x]$ irreduc
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - irreducibility-criteria
 relations: []
 review: draft
 ---
-Let $k$ be a field of characteristic $p\neq 0$ and $f\in k[x]$ irreducible. 
-Show that $f(x) = g(x^{p^d})$ where $g(x) \in k[x]$ is irreducible and separable. 
+
+Let $k$ be a field of characteristic $p\neq 0$ and $f\in k[x]$ irreducible.
+Show that $f(x) = g(x^{p^d})$ where $g(x) \in k[x]$ is irreducible and separable.
 
 Conclude that every root of $f$ has the same multiplicity $p^d$ in the splitting field of $f$ over $k$.
-

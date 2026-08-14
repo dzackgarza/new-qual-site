@@ -6,7 +6,10 @@ title: "Let $R$ be a rng (a ring without 1) which contains an element $u$ suc\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - zorns-lemma
 relations: []
 review: draft
 ---

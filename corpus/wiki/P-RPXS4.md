@@ -6,9 +6,12 @@ title: "How many irreducible polynomials are there of degree 4 over \\( \\FF_2 \
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - factorization
 relations: []
 review: draft
 ---
-How many irreducible polynomials are there of degree 4 over \( \FF_2 \)?
 
+How many irreducible polynomials are there of degree 4 over \( \FF_2 \)?

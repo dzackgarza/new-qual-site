@@ -6,9 +6,12 @@ title: "State the structure theorem for simple rings."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - semisimplicity
+  - rings
+  - structure-theorem
 relations: []
 review: draft
 ---
-State the structure theorem for simple rings.
 
+State the structure theorem for simple rings.

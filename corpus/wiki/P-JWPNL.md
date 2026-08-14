@@ -6,7 +6,9 @@ title: "Define a simple group."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - simple-groups
+  - sylow-theory
 relations: []
 review: draft
 ---

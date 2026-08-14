@@ -6,7 +6,10 @@ title: "Show that the kernel of the map $G\\to \\aut(G)$ given by $g\\mapsto (h\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - centralizers-and-normalizers
+  - homomorphisms
 relations: []
 review: draft
 ---

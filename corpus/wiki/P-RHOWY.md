@@ -6,11 +6,14 @@ title: "Talk about solvability by radicals."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - galois-theory
+  - simple-groups
 relations: []
 review: draft
 ---
+
 Talk about solvability by radicals.
 Why is $S_5$ not solvable?
 Why is $A_5$ simple?
-

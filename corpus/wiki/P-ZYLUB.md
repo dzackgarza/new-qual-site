@@ -6,7 +6,9 @@ title: "Give the $4 \\times 4$ Jordan forms with minimal polynomial $(x - 1)(x -
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

@@ -6,8 +6,11 @@ title: "- Prove that for every $g\\in G$, the order of $g$ divides the order of\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - cyclic-groups
 relations: []
 review: draft
 ---
+
 - Prove that for every $g\in G$, the order of $g$ divides the order of $G$.

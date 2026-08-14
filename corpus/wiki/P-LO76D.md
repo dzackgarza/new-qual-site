@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group and let $N \\trianglelefteq G$,"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - isomorphism-theorems
 relations: []
 review: draft
 ---

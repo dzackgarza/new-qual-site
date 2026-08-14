@@ -6,9 +6,12 @@ title: "What can you say about the eigenspaces of two matrices that commute wi\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - diagonalization
+  - matrices
 relations: []
 review: draft
 ---
-What can you say about the eigenspaces of two matrices that commute with each other?
 
+What can you say about the eigenspaces of two matrices that commute with each other?

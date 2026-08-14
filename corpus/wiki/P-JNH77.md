@@ -6,10 +6,12 @@ title: "Can you prove the fundamental theorem of algebra using Galois theory?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - fields
 relations: []
 review: draft
 ---
+
 Can you prove the fundamental theorem of algebra using Galois theory?
 What do you need from analysis to do so?
-

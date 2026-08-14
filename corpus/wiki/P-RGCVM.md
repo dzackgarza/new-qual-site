@@ -6,7 +6,10 @@ title: "Show that two $3\\times 3$ matrices over $\\CC$ are similar $\\iff$ thei
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - canonical-forms
+  - minimal-and-characteristic-polynomials
+  - jordan-canonical-form
 relations: []
 review: draft
 ---

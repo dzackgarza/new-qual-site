@@ -6,12 +6,14 @@ title: "Define the \"radical\" of an ideal."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - nilpotence
+  - geometry
 relations: []
 review: draft
 ---
+
 Define the "radical" of an ideal.
 Prove it is an ideal.
 Prove that the ideal of all polynomials vanishing on the zero set of $I$ is $\sqrt{I}$.
-
-

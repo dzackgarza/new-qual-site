@@ -6,10 +6,13 @@ title: "Which numbers are constructible?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - geometry
+  - galois-theory
 relations: []
 review: draft
 ---
+
 Which numbers are constructible?
 Give an example of a non-constructible number whose degree is nevertheless a power of 2.
-

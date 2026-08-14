@@ -6,7 +6,10 @@ title: "Is the following map an isomorphism?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - rings
+  - polynomials
 relations: []
 review: draft
 ---

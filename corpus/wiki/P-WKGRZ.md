@@ -6,10 +6,13 @@ title: "Suppose a $p\\dash$group acts on a set whose cardinality is not divisib\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - group-actions
+  - orbit-stabilizer
 relations: []
 review: draft
 ---
+
 Suppose a $p\dash$group acts on a set whose cardinality is not divisible by $p$ ($p$ prime).
 Prove that there is a fixed point for the action.
-

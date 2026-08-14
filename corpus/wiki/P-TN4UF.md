@@ -6,10 +6,12 @@ title: "How do you prove that any finite-dimensional representation of a compa\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - semisimplicity
+  - inner-product-spaces
 relations: []
 review: draft
 ---
-How do you prove that any finite-dimensional representation of a compact
-Lie group is equivalent to a unitary one?
 
+How do you prove that any finite-dimensional representation of a compact Lie group is equivalent to a unitary one?

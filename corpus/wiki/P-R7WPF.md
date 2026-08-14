@@ -6,11 +6,13 @@ title: "Do you know an example of a local ring?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - local-rings
+  - valuation-rings
 relations: []
 review: draft
 ---
+
 Do you know an example of a local ring?
 Another one?
 What about completions?
-

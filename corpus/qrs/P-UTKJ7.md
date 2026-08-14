@@ -6,7 +6,10 @@ title: "Define $f(x) \\da x^4 + 4x^2 + 64 \\in \\QQ[x]$ Find the splitting field
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

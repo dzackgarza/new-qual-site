@@ -6,7 +6,10 @@ title: "Let $n\\geq 3$ and $\\zeta_n$ be a primitive $n$th root of unity. Show t
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - galois-theory
 relations: []
 review: draft
 ---

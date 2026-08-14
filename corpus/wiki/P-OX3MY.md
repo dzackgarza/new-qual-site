@@ -6,7 +6,10 @@ title: "Suppose $T: V \\to V$ is not invertible, then $\\dim \\im T < n$ and $\\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rank-and-nullity
+  - linear-algebra
+  - matrices
 relations: []
 review: draft
 ---

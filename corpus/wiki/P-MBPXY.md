@@ -6,10 +6,13 @@ title: "Which is the connection between Hom and tensor product?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - tensor-products
+  - representation-theory
+  - modules
 relations: []
 review: draft
 ---
+
 Which is the connection between Hom and tensor product?
 What is this called in representation theory?
-

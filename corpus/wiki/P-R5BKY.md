@@ -6,10 +6,13 @@ title: "Is the additive group of the reals isomorphic to the multiplicative gr\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - homomorphisms
+  - counterexamples
 relations: []
 review: draft
 ---
+
 Is the additive group of the reals isomorphic to the multiplicative group of the positive reals?
 Is the same result true with reals replaced by rationals?
-

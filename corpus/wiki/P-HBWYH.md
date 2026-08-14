@@ -6,16 +6,15 @@ title: "Let $E$ be an extension field of $F$ and $\\alpha\\in E$ be algebraic of
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - polynomials
 relations: []
 review: draft
 ---
+
 Let $E$ be an extension field of $F$ and $\alpha\in E$ be algebraic of odd degree over $F$.
 
-a.
-Show that $F(\alpha) = F(\alpha^2)$.
+a. Show that $F(\alpha) = F(\alpha^2)$.
 
-b.
-Prove that $\alpha^{2020}$ is algebraic of odd degree over $F$.
-
-
+b. Prove that $\alpha^{2020}$ is algebraic of odd degree over $F$.

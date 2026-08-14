@@ -6,21 +6,25 @@ title: "Let $x = [\\QQ(\\zeta + \\zeta\\inv) : \\QQ]$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - galois-theory
 relations: []
 review: draft
 ---
-Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$. 
+
+Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$.
 
 Noting that
 $$
 \zeta(\zeta + \zeta\inv) = \zeta^2 + 1,
 $$
 
-if we let 
+if we let
 $$
 f(x) = x^2 - (\zeta + \zeta\inv)x + 1 \in \QQ(\zeta + \zeta\inv)[x], 
-$$ 
+$$
 then $f(\zeta) = 0$.
 
 Since $\QQ(\zeta + \zeta\inv) \subset \RR$, $\QQ(\zeta)$ is a proper extension over this field, so if $d \definedas [\QQ(\zeta) : \QQ(\zeta + \zeta\inv)]$ then $d > 1$.
@@ -35,5 +39,5 @@ We thus have
 ,\end{align*}
 \]
 
-and so $x = \frac{\phi(n)}{2}$ as desired. $\qed$
-
+and so $x = \frac{\phi(n)}{2}$ as desired.
+$\qed$

@@ -6,7 +6,10 @@ title: "Let $F$ be a field and $n$ a positive integer, and consider $A=\\left[\\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - characteristic
 relations: []
 review: draft
 ---

@@ -6,10 +6,13 @@ title: "Tell me about group rings."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-rings
+  - representation-theory
+  - algebras
 relations: []
 review: draft
 ---
+
 Tell me about group rings.
 What do you know about them?
-

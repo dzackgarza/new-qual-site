@@ -6,7 +6,10 @@ title: "What does factorisation over $\\QQ[x]$ say about factorisation over $\\Z
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - polynomials
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

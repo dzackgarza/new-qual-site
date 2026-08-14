@@ -6,18 +6,19 @@ title: "Let $R$ and $S$ be commutative rings with multiplicative"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - homomorphisms
+  - integral-domains
 relations: []
 review: draft
 ---
-:::{.problem}
-Let $R$ and $S$ be commutative rings with multiplicative
-identity.
 
-1.  Prove that when $R$ is a field, every non-zero ring homomorphism
-    $\phi: R\to S$ is injective.
+::: {.problem}
+Let $R$ and $S$ be commutative rings with multiplicative identity.
 
-2.  Does (a) still hold if we only assume that $R$ is a domain? If so,
-    prove it, and if not provide a counterexample.
+1. Prove that when $R$ is a field, every non-zero ring homomorphism $\phi: R\to S$ is injective.
+
+2. Does (a) still hold if we only assume that $R$ is a domain?
+   If so, prove it, and if not provide a counterexample.
 :::
-

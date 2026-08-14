@@ -6,8 +6,12 @@ title: "- Show that every subgroup of order 5 in $S_5$ is a transitive subgrou\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - subgroups
+  - group-actions
 relations: []
 review: draft
 ---
+
 - Show that every subgroup of order 5 in $S_5$ is a transitive subgroup.

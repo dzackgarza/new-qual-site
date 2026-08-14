@@ -6,8 +6,10 @@ title: "- Show that an $m\\dash$cycle is an odd permutation iff $m$ is an even\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---
+
 - Show that an $m\dash$cycle is an odd permutation iff $m$ is an even number.

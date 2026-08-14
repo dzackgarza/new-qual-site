@@ -6,9 +6,12 @@ title: "What are the conjugacy classes in $\\GL_2(\\CC)$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - jordan-canonical-form
+  - matrix-groups
 relations: []
 review: draft
 ---
-What are the conjugacy classes in $\GL_2(\CC)$?
 
+What are the conjugacy classes in $\GL_2(\CC)$?

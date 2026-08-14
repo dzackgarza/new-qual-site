@@ -6,8 +6,13 @@ title: "- Does diagonalizable imply invertible? The converse?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - matrices
+  - counterexamples
 relations: []
 review: draft
 ---
-- Does diagonalizable imply invertible? The converse?
+
+- Does diagonalizable imply invertible?
+  The converse?

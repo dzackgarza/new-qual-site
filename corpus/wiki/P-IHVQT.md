@@ -6,11 +6,14 @@ title: "What is a tensor product?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - tensor-products
+  - vector-spaces
+  - modules
 relations: []
 review: draft
 ---
+
 What is a tensor product?
 What is the universal property?
 What do the tensors look like in the case of vector spaces?
-

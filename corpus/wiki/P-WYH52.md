@@ -6,9 +6,12 @@ title: "Start constructing the character table for $S_5$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
+  - permutations
 relations: []
 review: draft
 ---
-Start constructing the character table for $S_5$.
 
+Start constructing the character table for $S_5$.

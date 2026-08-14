@@ -6,9 +6,12 @@ title: "When do the powers of a matrix tend to zero?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - matrices
+  - nilpotence
 relations: []
 review: draft
 ---
-When do the powers of a matrix tend to zero?
 
+When do the powers of a matrix tend to zero?

@@ -6,7 +6,10 @@ title: "Prove that the cokernel of $A\\in \\mat(n\\times n, \\ZZ)$ is finite $\\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - determinants
+  - modules
 relations: []
 review: draft
 ---

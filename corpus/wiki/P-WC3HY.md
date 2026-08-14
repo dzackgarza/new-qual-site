@@ -6,12 +6,19 @@ title: "- State definitions of the following:"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - orbit-stabilizer
 relations: []
 review: draft
 ---
+
 - State definitions of the following:
-	- Group action
-	- Orbit
-	- Stabilizer
-	- Fixed points
+
+  - Group action
+
+  - Orbit
+
+  - Stabilizer
+
+  - Fixed points

@@ -6,9 +6,12 @@ title: "Write the character table for $S_4$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
+  - permutations
 relations: []
 review: draft
 ---
-Write the character table for $S_4$.
 
+Write the character table for $S_4$.

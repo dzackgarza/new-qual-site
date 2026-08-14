@@ -6,8 +6,12 @@ title: "- Classify the five groups of order 12."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations: []
 review: draft
 ---
+
 - Classify the five groups of order 12.

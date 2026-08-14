@@ -6,12 +6,14 @@ title: "Hungerford 2.8.3"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroup-series
+  - normal-subgroups
+  - simple-groups
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 2.8.3"}
-Show that if $N$ is a simple normal subgroup of a group $G$ and $G/N$ has a composition series, then $G$ has
-a composition series.
-:::
 
+::: {.problem title="Hungerford 2.8.3"}
+Show that if $N$ is a simple normal subgroup of a group $G$ and $G/N$ has a composition series, then $G$ has a composition series.
+:::

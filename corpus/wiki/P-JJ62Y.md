@@ -6,7 +6,10 @@ title: Let $K$ denote the splitting field of $x^5 - 2$ over $\QQ$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - matrix-groups
 relations: []
 review: draft
 ---

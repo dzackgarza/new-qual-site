@@ -6,7 +6,10 @@ title: "Let $\\begin{aligned}M &= \\{(w, x, y, z) \\in \\ZZ^4 \\suchthat w + x +
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - smith-normal-form
+  - free-modules
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Suppose $F = K[\\alpha_1, \\cdots, \\alpha_n]$ where $\\alpha_1^{n_1} \\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - solvable-groups
 relations: []
 review: draft
 ---

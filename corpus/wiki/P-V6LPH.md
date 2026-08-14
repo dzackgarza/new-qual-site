@@ -6,7 +6,10 @@ title: "Let $G$ be a group of order 30. Show that $G$ contains normal\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - group-presentations
 relations: []
 review: draft
 ---

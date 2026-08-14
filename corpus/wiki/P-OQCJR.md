@@ -6,7 +6,10 @@ title: "We want to show that $A\\vector x = \\vector 0$ has a nontrivial soluti\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rank-and-nullity
+  - linear-algebra
+  - matrices
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $F$ be a field and let $f(x) \\in F[x]$. Define what a splitting fie
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - finite-fields
+  - galois-theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "- Let $G_1, G_2$ be groups and $H_2 \\leq G_2$ a subgroup."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - isomorphism-theorems
+  - normal-subgroups
+  - homomorphisms
 relations: []
 review: draft
 ---

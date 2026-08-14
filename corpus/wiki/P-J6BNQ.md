@@ -6,7 +6,10 @@ title: "Let $K$ be a Galois extension of $\\QQ$ with Galois group $G$, and let\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - subgroups
 relations: []
 review: draft
 ---

@@ -6,9 +6,12 @@ title: "Find all primes in the ring of Gaussian integers."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - prime-ideals
+  - number-theory
 relations: []
 review: draft
 ---
-Find all primes in the ring of Gaussian integers.
 
+Find all primes in the ring of Gaussian integers.

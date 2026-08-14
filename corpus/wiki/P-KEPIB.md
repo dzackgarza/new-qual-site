@@ -6,8 +6,10 @@ title: "- Show that every finite field extension is algebraic."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---
+
 - Show that every finite field extension is algebraic.

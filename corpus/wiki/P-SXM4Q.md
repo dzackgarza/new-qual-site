@@ -6,7 +6,10 @@ title: "Let $s\\in G$, and state the definition of the centralizer of $C_G(s)$ o
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - subgroups
+  - normal-subgroups
 relations: []
 review: draft
 ---

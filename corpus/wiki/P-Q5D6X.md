@@ -6,9 +6,12 @@ title: "What is the number of invertible matrices over $\\ZZ/p\\ZZ$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrix-groups
+  - finite-fields
+  - bases
 relations: []
 review: draft
 ---
-What is the number of invertible matrices over $\ZZ/p\ZZ$?
 
+What is the number of invertible matrices over $\ZZ/p\ZZ$?

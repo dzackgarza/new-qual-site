@@ -6,9 +6,12 @@ title: "What is the Galois group of the polynomial $x^n - 1$ over $\\QQ$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - roots-of-unity
+  - abelian-groups
 relations: []
 review: draft
 ---
-What is the Galois group of the polynomial $x^n - 1$ over $\QQ$?
 
+What is the Galois group of the polynomial $x^n - 1$ over $\QQ$?

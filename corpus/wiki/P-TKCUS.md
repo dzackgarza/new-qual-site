@@ -6,8 +6,12 @@ title: "- Show that $x^{p^d} - x \\divides x^{p^n} - x \\iff d \\divides n$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - polynomials
+  - factorization
 relations: []
 review: draft
 ---
+
 - Show that $x^{p^d} - x \divides x^{p^n} - x \iff d \divides n$

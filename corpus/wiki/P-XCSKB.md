@@ -6,7 +6,10 @@ title: "Let $R$ be a ring and $M$ an $R\\dash$module. $\\tor(M) = \\{m \\in M \\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - torsion
+  - modules
+  - integral-domains
 relations: []
 review: draft
 ---

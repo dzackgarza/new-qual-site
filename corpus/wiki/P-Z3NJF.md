@@ -6,11 +6,14 @@ title: "What is the symmetry group of a tetrahedron?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - geometry
+  - permutations
 relations: []
 review: draft
 ---
+
 What is the symmetry group of a tetrahedron?
 Cube?
 Icosahedron?
-

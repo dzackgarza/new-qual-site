@@ -6,17 +6,17 @@ title: "Hungerford 5.3.12"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - field-extensions
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 5.3.12"}
+
+::: {.problem title="Hungerford 5.3.12"}
 Let $E$ be an intermediate field extension in $K \leq E \leq F$.
 
-1.  Show that if $u\in F$ is separable over over $K$, then $u$ is
-    separable over $E$.
+1. Show that if $u\in F$ is separable over over $K$, then $u$ is separable over $E$.
 
-2.  Show that if $F$ is separable over $K$, then $F$ is separable over
-    $E$ and $E$ is separable over $K$.
+2. Show that if $F$ is separable over $K$, then $F$ is separable over $E$ and $E$ is separable over $K$.
 :::
-

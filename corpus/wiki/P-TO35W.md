@@ -6,9 +6,11 @@ title: "Give an example of an Artinian ring."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - rings
 relations: []
 review: draft
 ---
-Give an example of an Artinian ring.
 
+Give an example of an Artinian ring.

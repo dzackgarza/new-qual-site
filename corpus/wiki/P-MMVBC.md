@@ -6,9 +6,11 @@ title: "Find the Galois group of $x^4 - 2$ over Q."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
 relations: []
 review: draft
 ---
-Find the Galois group of $x^4 - 2$ over Q.
 
+Find the Galois group of $x^4 - 2$ over Q.

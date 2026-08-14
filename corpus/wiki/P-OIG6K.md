@@ -6,9 +6,12 @@ title: "If an irreducible cubic polynomial has Galois group NOT contained in A\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - classification
+  - permutations
 relations: []
 review: draft
 ---
-If an irreducible cubic polynomial has Galois group NOT contained in A3, does it necessarily have to be all of $S_3$?
 
+If an irreducible cubic polynomial has Galois group NOT contained in A3, does it necessarily have to be all of $S_3$?

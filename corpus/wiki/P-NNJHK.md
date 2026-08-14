@@ -6,7 +6,10 @@ title: "We want to show that if $A, B$ are $R\\dash$modules then $X = (\\hom_{R\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - homomorphisms
+  - abelian-groups
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $f(x) = x^4 - 5 \\in \\QQ[x]$. Compute the Galois group of $f$ over 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

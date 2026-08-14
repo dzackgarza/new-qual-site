@@ -6,7 +6,10 @@ title: "The splitting field of this polynomial is $\\QQ(\\sqrt[3]2, \\sqrt 3, \\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

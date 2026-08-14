@@ -6,9 +6,12 @@ title: "What are the group characters of the multiplicative group of a finite\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - finite-fields
+  - cyclic-groups
 relations: []
 review: draft
 ---
-What are the group characters of the multiplicative group of a finite field?
 
+What are the group characters of the multiplicative group of a finite field?

@@ -6,16 +6,17 @@ title: "What does it mean for an element to be algebraic or transcendental?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - transcendence
+  - field-extensions
 relations: []
 review: draft
 ---
+
 What does it mean for an element to be algebraic or transcendental?
 Which is $x\in \CC(x)$?
 What is an example of a clearly non-algebraic element of a field?
 
-
-:::{.solution}
+::: {.solution}
 ![](../../assets/10_Algebra/999_Review/image/SmartSelect_20210419-233920_Xodo_Docs.jpg)
 :::
-

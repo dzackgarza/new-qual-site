@@ -6,10 +6,13 @@ title: "State/describe Hilbert's Nullstellensatz."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - geometry
+  - maximal-ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---
+
 State/describe Hilbert's Nullstellensatz.
 Sketch a proof.
-

@@ -6,10 +6,12 @@ title: "What is the character table?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - representation-theory
 relations: []
 review: draft
 ---
+
 What is the character table?
 What field do its entries lie in?
-

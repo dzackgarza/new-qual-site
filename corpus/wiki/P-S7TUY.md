@@ -6,10 +6,13 @@ title: "What is an irreducible variety?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - geometry
+  - prime-ideals
+  - commutative-algebra
 relations: []
 review: draft
 ---
+
 What is an irreducible variety?
 Give an example of a non-irreducible one.
-

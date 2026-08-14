@@ -6,7 +6,10 @@ title: "Let $K$ be a Galois extension of $F$, and let $F \\subset E \\subset K$ 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - sylow-theory
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---

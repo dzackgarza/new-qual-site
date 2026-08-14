@@ -6,7 +6,10 @@ title: "Show that if $\\theset{\\vector v_i}$ is a basis for $V$ where $\\dim(V)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - minimal-and-characteristic-polynomials
+  - bases
 relations: []
 review: draft
 ---

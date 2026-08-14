@@ -6,7 +6,10 @@ title: "The extension $\\QQ(\\zeta_{43})$ is the splitting field of the cycloto\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - galois-theory
+  - cyclic-groups
 relations: []
 review: draft
 ---

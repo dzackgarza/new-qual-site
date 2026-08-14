@@ -6,11 +6,13 @@ title: "Is normality transitive?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - counterexamples
+  - subgroups
 relations: []
 review: draft
 ---
+
 Is normality transitive?
 That is, is a normal subgroup of a normal subgroup normal in the biggest group?
-
-

@@ -6,9 +6,12 @@ title: "Given a finite abelian group with at most n elements of order divisibl\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - cyclic-groups
+  - classification
 relations: []
 review: draft
 ---
-Given a finite abelian group with at most n elements of order divisible by n, prove it's cyclic.
 
+Given a finite abelian group with at most n elements of order divisible by n, prove it's cyclic.

@@ -6,7 +6,9 @@ title: "Noting that applying a row operation to $A$ is the same as taking the\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - linear-algebra
+  - matrices
 relations: []
 review: draft
 ---

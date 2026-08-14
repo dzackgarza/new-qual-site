@@ -6,9 +6,12 @@ title: "What is the Galois group of $x^7 - 1$ over the rationals?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - roots-of-unity
+  - cyclic-groups
 relations: []
 review: draft
 ---
-What is the Galois group of $x^7 - 1$ over the rationals?
 
+What is the Galois group of $x^7 - 1$ over the rationals?

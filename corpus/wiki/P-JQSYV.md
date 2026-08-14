@@ -6,11 +6,14 @@ title: "Hungerford 2.6.9"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 2.6.9"}
+
+::: {.problem title="Hungerford 2.6.9"}
 Classify up to isomorphism all groups of order 18. Do the same for orders 20 and 30.
 :::
-

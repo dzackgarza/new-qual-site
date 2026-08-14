@@ -6,7 +6,10 @@ title: "Injectivity: We have the following situation: {=latex}\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - exact-sequences
+  - homological-algebra
+  - modules
 relations: []
 review: draft
 ---

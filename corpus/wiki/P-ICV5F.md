@@ -6,9 +6,12 @@ title: "Prove that the eigenvalues of a Hermitian matrix are real and those of\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - inner-product-spaces
+  - matrices
 relations: []
 review: draft
 ---
-Prove that the eigenvalues of a Hermitian matrix are real and those of a unitary matrix are unitary.
 
+Prove that the eigenvalues of a Hermitian matrix are real and those of a unitary matrix are unitary.

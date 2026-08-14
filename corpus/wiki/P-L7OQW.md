@@ -6,7 +6,10 @@ title: "Give an example showing that normality is not transitive\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - counterexamples
+  - subgroups
 relations: []
 review: draft
 ---

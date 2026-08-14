@@ -6,7 +6,10 @@ title: "Let $R$ be a ring with $1$ and let $M$ be a left \\(R\\dash\\)module."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - ideals
+  - nakayamas-lemma
 relations: []
 review: draft
 ---

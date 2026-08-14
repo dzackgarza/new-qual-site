@@ -6,7 +6,10 @@ title: "Show that the transitive subgroups of $S_4$ are $S_4, A_4, D_4, \\ZZ_2^2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
+  - subgroups
+  - group-actions
 relations: []
 review: draft
 ---

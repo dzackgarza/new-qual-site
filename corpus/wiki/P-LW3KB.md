@@ -6,7 +6,10 @@ title: "Let $V$ be a vector space over a field $F$ and $V\\dual$ its dual."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - dual-spaces
+  - vector-spaces
 relations: []
 review: draft
 ---

@@ -6,8 +6,11 @@ title: "- Show that the center of $S_n$ for $n\\geq 4$ is nontrivial."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - permutations
 relations: []
 review: draft
 ---
+
 - Show that the center of $S_n$ for $n\geq 4$ is nontrivial.

@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group with $n$ distinct conjugacy classes. Let\u2026
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - centralizers-and-normalizers
+  - class-equation
 relations: []
 review: draft
 ---

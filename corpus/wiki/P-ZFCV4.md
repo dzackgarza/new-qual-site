@@ -6,10 +6,13 @@ title: "Tell me a condition on the Galois group which is implied by irreducibi\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - group-actions
+  - irreducibility-criteria
 relations: []
 review: draft
 ---
+
 Tell me a condition on the Galois group which is implied by irreducibility of the polynomial.
 What happens when the polynomial has a root in the base field?
-

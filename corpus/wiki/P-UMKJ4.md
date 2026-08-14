@@ -6,7 +6,10 @@ title: "The goal is to show that any matrix $A \\in M(m\\times n, R)$ is equival
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - smith-normal-form
+  - canonical-forms
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

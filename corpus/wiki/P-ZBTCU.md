@@ -6,8 +6,11 @@ title: "- State the 3 Sylow theorems"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - p-groups
 relations: []
 review: draft
 ---
+
 - State the 3 Sylow theorems

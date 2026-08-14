@@ -6,7 +6,10 @@ title: "How many monic irreducible polynomials over $\\FF_p$ of prime degree\u20
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - factorization
 relations: []
 review: draft
 ---

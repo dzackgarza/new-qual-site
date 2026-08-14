@@ -6,7 +6,10 @@ title: "Let $K$ be the splitting field of $x^4-2$ over $\\QQ$ and set $G = \\gal
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - normal-subgroups
 relations: []
 review: draft
 ---

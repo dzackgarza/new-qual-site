@@ -6,7 +6,10 @@ title: "Do you know what the quaternion group is? How many elements\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - groups
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

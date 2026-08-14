@@ -6,9 +6,12 @@ title: "Discuss sufficient conditions on a polynomial of degree 5 to have Galo\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - polynomials
 relations: []
 review: draft
 ---
-Discuss sufficient conditions on a polynomial of degree 5 to have Galois group $S_5$ over $\QQ$ and prove your statements.
 
+Discuss sufficient conditions on a polynomial of degree 5 to have Galois group $S_5$ over $\QQ$ and prove your statements.

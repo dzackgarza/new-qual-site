@@ -6,10 +6,12 @@ title: "Calculate the Galois group of $x^5 - 2$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - roots-of-unity
 relations: []
 review: draft
 ---
+
 Calculate the Galois group of $x^5 - 2$.
-
-

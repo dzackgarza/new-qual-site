@@ -6,10 +6,14 @@ title: "What is a Lie group?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - semisimplicity
+  - algebras
 relations: []
 review: draft
 ---
+
 What is a Lie group?
 Define a unitary representation.
 What is the Peter–Weyl theorem?
@@ -22,4 +26,3 @@ When is a representation of $\ZZ$ completely reducible?
 Why?
 
 Which are the indecomposable modules?
-

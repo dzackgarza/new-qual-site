@@ -6,15 +6,17 @@ title: "Hungerford 5.8.3"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - number-theory
+  - roots-of-unity
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 5.8.3"}
+
+::: {.problem title="Hungerford 5.8.3"}
 Let $\phi$ be the Euler function.
 
-1.  $\phi(n)$ is even for $n>2$.
+1. $\phi(n)$ is even for $n>2$.
 
-2.  find all $n>0$ such that $\phi(n)=2$.
+2. find all $n>0$ such that $\phi(n)=2$.
 :::
-

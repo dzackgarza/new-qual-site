@@ -6,8 +6,13 @@ title: "- . Assume that $G$ is a group of order $231 = 3\\times 7\\times 11$. Sh
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---
-- . Assume that $G$ is a group of order $231 = 3\times 7\times 11$. Show that $G$ contains a normal Sylow 7-subgroup and a central Sylow 11-subgroup.
+
+- . Assume that $G$ is a group of order $231 = 3\times 7\times 11$.
+  Show that $G$ contains a normal Sylow 7-subgroup and a central Sylow 11-subgroup.

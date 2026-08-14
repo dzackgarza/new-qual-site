@@ -6,7 +6,10 @@ title: "Let $R$ be an algebra over $\\mathbb{C}$ which is finite-dimensional as\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - algebras
+  - maximal-ideals
+  - classification
 relations: []
 review: draft
 ---

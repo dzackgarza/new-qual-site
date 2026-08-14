@@ -6,8 +6,11 @@ title: "- Show that any finite integral domain is a field."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-domains
+  - fields
 relations: []
 review: draft
 ---
+
 - Show that any finite integral domain is a field.

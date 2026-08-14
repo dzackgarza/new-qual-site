@@ -6,7 +6,10 @@ title: Let $F\subset C$ be a field extension with $C$ algebraically closed.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - fields
+  - zorns-lemma
 relations: []
 review: draft
 ---

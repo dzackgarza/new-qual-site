@@ -6,8 +6,12 @@ title: "- Identify $\\Aut_\\Grp(\\bigoplus_{i=1}^n \\ZZ/p)$ as a matrix group an
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - matrix-groups
+  - finite-fields
 relations: []
 review: draft
 ---
+
 - Identify $\Aut_\Grp(\bigoplus_{i=1}^n \ZZ/p)$ as a matrix group and determine its size.

@@ -6,7 +6,10 @@ title: "Let $u = \\sqrt{2 + \\sqrt{2}}$, $v = \\sqrt{2 - \\sqrt{2}}$, and $E = \
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - field-extensions
 relations: []
 review: draft
 ---

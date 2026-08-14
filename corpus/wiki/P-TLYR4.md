@@ -6,9 +6,12 @@ title: "Classify (finite-dimensional) division algebras over $\\RR$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - algebras
+  - semisimplicity
+  - classification
 relations: []
 review: draft
 ---
-Classify (finite-dimensional) division algebras over $\RR$.
 
+Classify (finite-dimensional) division algebras over $\RR$.

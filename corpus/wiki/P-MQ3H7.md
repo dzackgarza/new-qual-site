@@ -6,9 +6,12 @@ title: "For any matrix A over the complex numbers, can you solve $B^2 = A$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - matrices
+  - diagonalization
 relations: []
 review: draft
 ---
-For any matrix A over the complex numbers, can you solve $B^2 = A$?
 
+For any matrix A over the complex numbers, can you solve $B^2 = A$?

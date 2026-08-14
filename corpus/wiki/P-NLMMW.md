@@ -6,10 +6,14 @@ title: "- If $\\size G = pq$, is $G$ necessarily nilpotent?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotent-groups
+  - classification
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---
+
 - If $\size  G = pq$, is $G$ necessarily nilpotent?
-	
-	> Hint: consider $Z(S_3)$.
+
+  > Hint: consider $Z(S_3)$.

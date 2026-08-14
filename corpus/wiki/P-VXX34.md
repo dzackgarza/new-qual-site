@@ -6,7 +6,10 @@ title: "Show that if $G \\actson X$ is a group action, then the stabilizer $G_x$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - subgroups
+  - group-actions
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $M=\\left(\\begin{array}{ll}{a} & {b} \\\\ {c} & {d}\\end{array}\\ri
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - rings
+  - determinants
 relations: []
 review: draft
 ---

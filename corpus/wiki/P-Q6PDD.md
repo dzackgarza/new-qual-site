@@ -6,12 +6,12 @@ title: "Show that the eigenvalues of a Hermitian matrix $A$ are real and that\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - inner-product-spaces
+  - diagonalization
 relations: []
 review: draft
 ---
+
 Show that the eigenvalues of a Hermitian matrix $A$ are real and that $A = PDP\inv$ where $P$ is an invertible matrix with orthogonal columns.
-
-
-
-

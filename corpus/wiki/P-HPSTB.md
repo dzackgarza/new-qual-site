@@ -6,8 +6,12 @@ title: "- Show that inner automorphisms send conjugate subgroups to conjugate\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - conjugacy
+  - subgroups
 relations: []
 review: draft
 ---
+
 - Show that inner automorphisms send conjugate subgroups to conjugate subgroups.

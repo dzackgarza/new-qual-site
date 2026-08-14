@@ -6,7 +6,10 @@ title: "Give an example of a tower of field extensions $F \\subseteq E \\subsete
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - field-extensions
 relations: []
 review: draft
 ---

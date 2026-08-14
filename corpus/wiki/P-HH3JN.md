@@ -6,9 +6,12 @@ title: "Prove that symmetric matrices have real eigenvalues and can be diagona\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - inner-product-spaces
 relations: []
 review: draft
 ---
-Prove that symmetric matrices have real eigenvalues and can be diagonalised by orthogonal matrices.
 
+Prove that symmetric matrices have real eigenvalues and can be diagonalised by orthogonal matrices.

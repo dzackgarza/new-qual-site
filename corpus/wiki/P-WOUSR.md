@@ -6,9 +6,11 @@ title: "- Show that $\\Out(A_4)$ is nontrivial."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - permutations
 relations: []
 review: draft
 ---
-- Show that $\Out(A_4)$ is nontrivial.
 
+- Show that $\Out(A_4)$ is nontrivial.

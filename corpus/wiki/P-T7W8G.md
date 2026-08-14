@@ -6,7 +6,10 @@ title: "Suppose every element in $F$ admits a $p$th root in $F$, and suppose \u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - irreducibility-criteria
 relations: []
 review: draft
 ---

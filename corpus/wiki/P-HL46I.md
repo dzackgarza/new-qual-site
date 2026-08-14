@@ -6,10 +6,13 @@ title: "What is a ring of integers?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - integral-extensions
+  - number-theory
+  - commutative-algebra
 relations: []
 review: draft
 ---
+
 What is a ring of integers?
 What does “integral over $\ZZ$” mean?
-

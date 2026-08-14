@@ -6,7 +6,10 @@ title: "The claim is that every element in $M \\definedas R^n/\\im A$ is torsio\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - smith-normal-form
+  - torsion
 relations: []
 review: draft
 ---

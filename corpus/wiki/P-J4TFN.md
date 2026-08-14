@@ -6,9 +6,12 @@ title: "If a linear transformation preserves a nondegenerate alternating form\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - eigenvalues-and-eigenvectors
+  - matrix-groups
 relations: []
 review: draft
 ---
-If a linear transformation preserves a nondegenerate alternating form and has $k$ as an eigenvalue, prove that $1/k$ is also an eigenvalue.
 
+If a linear transformation preserves a nondegenerate alternating form and has $k$ as an eigenvalue, prove that $1/k$ is also an eigenvalue.

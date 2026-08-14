@@ -6,9 +6,12 @@ title: "What group-theoretic construct relates the stabiliser of two points?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - conjugacy
+  - group-actions
 relations: []
 review: draft
 ---
-What group-theoretic construct relates the stabiliser of two points?
 
+What group-theoretic construct relates the stabiliser of two points?

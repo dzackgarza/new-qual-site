@@ -6,7 +6,10 @@ title: "Define a map \\begin{align} \\phi: Z(R) &\\to Z(M_n(R) \\\\ r &\\mapsto 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - matrices
+  - isomorphism-theorems
 relations: []
 review: draft
 ---

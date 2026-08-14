@@ -6,7 +6,10 @@ title: '> Note: Let $X\dual \definedas \hom_R(X, R)$ denote the dual.'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - dual-spaces
+  - modules
+  - homomorphisms
 relations: []
 review: draft
 ---

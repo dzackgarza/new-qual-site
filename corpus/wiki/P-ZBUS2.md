@@ -6,10 +6,14 @@ title: "Do you know any representation theory?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - character-theory
+  - permutations
 relations: []
 review: draft
 ---
+
 Do you know any representation theory?
 What about representations of \(A_4\)?
 
@@ -18,4 +22,3 @@ What else is there?
 How many irreducible representations do we have?
 What are their degrees?
 Write the character table of \(A_4\).
-

@@ -6,13 +6,16 @@ title: "Group representations: What's special about using $\\CC$ in the definit\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-rings
+  - representation-theory
+  - characteristic
 relations: []
 review: draft
 ---
+
 Group representations: What's special about using $\CC$ in the definition of group algebra?
 
 Is it possible to work over other fields?
 
 What goes wrong if the characteristic of the field divides the order of the group?
-

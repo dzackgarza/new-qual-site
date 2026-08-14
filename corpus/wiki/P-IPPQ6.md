@@ -6,10 +6,12 @@ title: "Consider a nonconstant function between two compact Riemann Surfaces."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - geometry
 relations: []
 review: draft
 ---
+
 Consider a nonconstant function between two compact Riemann Surfaces.
 How is it related to Galois theory?
-

@@ -6,11 +6,14 @@ title: "- Let $H\\leq G$ be a subgroup (not necessarily normal)."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---
+
 - Let $H\leq G$ be a subgroup (not necessarily normal).
   Prove that any two cosets $xH, yH\in G/H$ have the same cardinality.
-	
-	> Define a map $m_g: G\to G$ where $x\mapsto gx$, restrict to $m_h:H\surjects gH$, inverse $(m_g)\inv = m_{g\inv}$
+
+  > Define a map $m_g: G\to G$ where $x\mapsto gx$, restrict to $m_h:H\surjects gH$, inverse $(m_g)\inv = m_{g\inv}$

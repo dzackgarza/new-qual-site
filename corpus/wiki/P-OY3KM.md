@@ -6,9 +6,12 @@ title: "Define \u201cNoetherian ring\u201d. give an example."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - noetherian-rings
+  - ideals
 relations: []
 review: draft
 ---
-Define “Noetherian ring”. give an example.
 
+Define “Noetherian ring”.
+give an example.

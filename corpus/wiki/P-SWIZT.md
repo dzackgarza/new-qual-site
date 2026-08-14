@@ -6,9 +6,11 @@ title: "When do conjugacy classes in $S_n$ split in $A_n$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - conjugacy
+  - permutations
 relations: []
 review: draft
 ---
-When do conjugacy classes in $S_n$ split in $A_n$?
 
+When do conjugacy classes in $S_n$ split in $A_n$?

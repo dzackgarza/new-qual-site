@@ -6,11 +6,14 @@ title: "List all groups of order 14 up to isomorphism."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - classification
+  - sylow-theory
+  - semidirect-products
 relations: []
 review: draft
 ---
-:::{.problem}
+
+::: {.problem}
 List all groups of order 14 up to isomorphism.
 :::
-

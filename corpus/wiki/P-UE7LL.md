@@ -6,7 +6,10 @@ title: "Note that if either $p=1$ or $q=1$, $G$ is a $p\\dash$group, which is \u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - classification
 relations: []
 review: draft
 ---

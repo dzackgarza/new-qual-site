@@ -6,9 +6,12 @@ title: "Is a ring of formal power series a UFD?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - rings
+  - local-rings
 relations: []
 review: draft
 ---
-Is a ring of formal power series a UFD?
 
+Is a ring of formal power series a UFD?

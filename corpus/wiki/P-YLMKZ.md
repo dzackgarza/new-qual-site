@@ -6,9 +6,12 @@ title: "Can a polynomial over a division ring have more roots than its degree?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - rings
+  - counterexamples
 relations: []
 review: draft
 ---
-Can a polynomial over a division ring have more roots than its degree?
 
+Can a polynomial over a division ring have more roots than its degree?

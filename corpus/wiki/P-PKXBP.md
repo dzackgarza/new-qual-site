@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group whose order is divisible by a prime\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - p-groups
 relations: []
 review: draft
 ---

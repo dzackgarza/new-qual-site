@@ -6,11 +6,13 @@ title: "Let $\\OO$ be the ring of integers of $\\QQ(d)$, where $d > 0$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - prime-ideals
+  - number-theory
+  - commutative-algebra
 relations: []
 review: draft
 ---
+
 Let $\OO$ be the ring of integers of $\QQ(d)$, where $d > 0$.
 What can you say about the quotient of O by one of its prime ideals?
-
-

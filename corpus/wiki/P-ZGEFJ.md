@@ -6,7 +6,9 @@ title: "In order for $IS$ to be a submodule of $A$, we need to show the follo\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - ideals
 relations: []
 review: draft
 ---

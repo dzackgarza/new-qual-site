@@ -6,7 +6,10 @@ title: "Let $M$ be an $n \\times n$ matrix such that $M_{ij} = 1$ for all $i, j$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - diagonalization
+  - matrices
 relations: []
 review: draft
 ---

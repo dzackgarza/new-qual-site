@@ -6,9 +6,12 @@ title: "Compute the Galois group of $p(x) = x^7 - 3$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - roots-of-unity
 relations: []
 review: draft
 ---
-Compute the Galois group of $p(x) = x^7 - 3$.
 
+Compute the Galois group of $p(x) = x^7 - 3$.

@@ -6,10 +6,14 @@ title: "Let $R$ be a nonzero commutative ring without unit such that $R$ does\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - maximal-ideals
+  - ideals
+  - zorns-lemma
 relations: []
 review: draft
 ---
+
 Let $R$ be a nonzero commutative ring without unit such that $R$ does not contain a proper maximal ideal.
 Prove that for all $x\in R$, the ideal $xR$ is proper.
 

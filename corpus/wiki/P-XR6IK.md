@@ -6,10 +6,12 @@ title: "For each prime p, give a polynomial of degree p that is irreducible ov\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - irreducibility-criteria
+  - polynomials
 relations: []
 review: draft
 ---
-For each prime p, give a polynomial of degree p that is irreducible over \( \FF_p \).
-You can do it in a “uniform” way.
 
+For each prime p, give a polynomial of degree p that is irreducible over \( \FF_p \). You can do it in a “uniform” way.

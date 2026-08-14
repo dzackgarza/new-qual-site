@@ -6,10 +6,12 @@ title: "What's the Galois group of $x^2 + 1$ over Q?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - integral-extensions
+  - number-theory
 relations: []
 review: draft
 ---
-What's the Galois group of $x^2 + 1$ over Q?
-What's the integral closure of $\ZZ$ in $\QQ(i)$?
 
+What's the Galois group of $x^2 + 1$ over Q? What's the integral closure of $\ZZ$ in $\QQ(i)$?

@@ -6,7 +6,10 @@ title: "Recall that for a given positive integer $n$, the cyclotomic\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

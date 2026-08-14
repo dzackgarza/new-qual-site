@@ -6,9 +6,12 @@ title: "If we think of the Galois group of a polynomial as contained in $S_n$,\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - symmetric-functions
 relations: []
 review: draft
 ---
-If we think of the Galois group of a polynomial as contained in $S_n$, when is it contained in $A_n$?
 
+If we think of the Galois group of a polynomial as contained in $S_n$, when is it contained in $A_n$?

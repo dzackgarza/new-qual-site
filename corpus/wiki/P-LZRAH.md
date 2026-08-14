@@ -6,9 +6,12 @@ title: "If the traces of all powers of a matrix A are 0, what can you say abou\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - trace
+  - nilpotence
+  - eigenvalues-and-eigenvectors
 relations: []
 review: draft
 ---
-If the traces of all powers of a matrix A are 0, what can you say about A?
 
+If the traces of all powers of a matrix A are 0, what can you say about A?

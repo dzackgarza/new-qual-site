@@ -6,12 +6,14 @@ title: "A subgroup of a finitely-generated free abelian group is?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - free-groups
+  - abelian-groups
 relations: []
 review: draft
 ---
+
 A subgroup of a finitely-generated free abelian group is?
 
-A subgroup of a finitely-generated free group is..?
-Prove your answers.
-
+A subgroup of a finitely-generated free group is..? Prove your answers.

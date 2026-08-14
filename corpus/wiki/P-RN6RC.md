@@ -6,8 +6,11 @@ title: "- If $\\theset{\\alpha_i}_{i=1}^n \\subset F$ are algebraic over $K$, sh
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - rings
 relations: []
 review: draft
 ---
+
 - If $\theset{\alpha_i}_{i=1}^n \subset F$ are algebraic over $K$, show that $K[\alpha_1, \cdots, \alpha_n] = K(\alpha_1, \cdots, \alpha_n)$.

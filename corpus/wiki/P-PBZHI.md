@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group. Show that there exists a field\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - permutations
 relations: []
 review: draft
 ---

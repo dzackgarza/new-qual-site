@@ -6,7 +6,10 @@ title: "Let $G$ be a group containing a subgroup $H$ not equal to $G$ of\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - group-actions
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---

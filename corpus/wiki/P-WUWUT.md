@@ -6,19 +6,20 @@ title: "Hungerford 2.1.10"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - abelian-groups
+  - free-modules
+  - counterexamples
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 2.1.10"}
+
+::: {.problem title="Hungerford 2.1.10"}
 \envlist
 
-1.  Show that the additive group of rationals $\mathbb Q$ is not
-    finitely generated.
+1. Show that the additive group of rationals $\mathbb Q$ is not finitely generated.
 
-2.  Show that $\mathbb Q$ is not free.
+2. Show that $\mathbb Q$ is not free.
 
-3.  Conclude that Exercise 9 is false if the hypothesis "finitely
-    generated" is omitted.
+3. Conclude that Exercise 9 is false if the hypothesis "finitely generated" is omitted.
 :::
-

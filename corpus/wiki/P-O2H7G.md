@@ -6,7 +6,10 @@ title: "Show that if $H, K \\leq G$ are subgroups and $H \\in N_G(H)$, then $HK$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - subgroups
+  - centralizers-and-normalizers
+  - counterexamples
 relations: []
 review: draft
 ---

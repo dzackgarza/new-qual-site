@@ -6,7 +6,10 @@ title: "Compute the Galois group of $x^n - 1 \\in \\QQ[x]$ as a function of $n$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - roots-of-unity
+  - abelian-groups
 relations: []
 review: draft
 ---

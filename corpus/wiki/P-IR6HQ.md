@@ -6,12 +6,13 @@ title: "Hungerford 7.4.4"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - linear-algebra
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 7.4.4"}
-Show that if $q$ is the minimal polynomial of a linear transformation $\phi: E\to E$ with $\dim_k E = n$
-then $\deg q \leq n$.
-:::
 
+::: {.problem title="Hungerford 7.4.4"}
+Show that if $q$ is the minimal polynomial of a linear transformation $\phi: E\to E$ with $\dim_k E = n$ then $\deg q \leq n$.
+:::

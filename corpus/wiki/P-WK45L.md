@@ -6,9 +6,11 @@ title: "What's the Galois group of $x^2 + 9$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
 relations: []
 review: draft
 ---
-What's the Galois group of $x^2 + 9$?
 
+What's the Galois group of $x^2 + 9$?

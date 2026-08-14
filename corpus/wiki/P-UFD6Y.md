@@ -6,8 +6,11 @@ title: "- Show that the center of $S_3$ is trivial."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - permutations
 relations: []
 review: draft
 ---
+
 - Show that the center of $S_3$ is trivial.

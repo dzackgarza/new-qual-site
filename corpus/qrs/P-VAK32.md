@@ -6,8 +6,12 @@ title: "- Show that a nilpotent operator is diagonalizable."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - diagonalization
+  - linear-algebra
 relations: []
 review: draft
 ---
+
 - Show that a nilpotent operator is diagonalizable.

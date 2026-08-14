@@ -6,10 +6,13 @@ title: "Talk about Jordan canonical form."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - canonical-forms
+  - rational-canonical-form
 relations: []
 review: draft
 ---
+
 Talk about Jordan canonical form.
 What happens when the field is not algebraically closed?
-

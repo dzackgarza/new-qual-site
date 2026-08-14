@@ -6,7 +6,10 @@ title: "Let $A = (a_{ij})$ and consider $\\vector \\epsilon_{ij}$, the matrix w\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - matrices
+  - rings
 relations: []
 review: draft
 ---

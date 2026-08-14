@@ -6,7 +6,10 @@ title: "Show that a group of order $p^2 q^2$ where $q$ does not divide $p^2-1$ a
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - abelian-groups
+  - classification
 relations: []
 review: draft
 ---

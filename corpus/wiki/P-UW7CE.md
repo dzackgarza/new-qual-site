@@ -6,9 +6,13 @@ title: "Let $A\\in M_n(\\CC)$ with $A^2 = A$. Show that $A$ is similar to a diag
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations: []
 review: draft
 ---
-Let $A\in M_n(\CC)$ with $A^2 = A$. Show that $A$ is similar to a diagonal matrix, and exhibit an explicit diagonal matrix similar to $A$.
 
+Let $A\in M_n(\CC)$ with $A^2 = A$.
+Show that $A$ is similar to a diagonal matrix, and exhibit an explicit diagonal matrix similar to $A$.

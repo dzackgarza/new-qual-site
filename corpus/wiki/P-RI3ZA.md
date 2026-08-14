@@ -6,7 +6,10 @@ title: "False: take $K \\leq L \\leq M$ as $\\QQ \\leq \\QQ(\\sqrt[3]2) \\leq \\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - splitting-fields
+  - counterexamples
 relations: []
 review: draft
 ---

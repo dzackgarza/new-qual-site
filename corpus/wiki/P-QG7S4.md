@@ -6,9 +6,12 @@ title: "- Show that $N_G(H) / C_G(H) \\cong A \\leq Aut(H)$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - automorphisms
+  - isomorphism-theorems
 relations: []
 review: draft
 ---
-- Show that $N_G(H) / C_G(H) \cong A \leq Aut(H)$
 
+- Show that $N_G(H) / C_G(H) \cong A \leq Aut(H)$

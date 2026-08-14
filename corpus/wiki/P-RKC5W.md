@@ -6,9 +6,11 @@ title: "- Show that $\\Inn(G) \\normal Aut(G)$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - normal-subgroups
 relations: []
 review: draft
 ---
-- Show that $\Inn(G) \normal Aut(G)$
 
+- Show that $\Inn(G) \normal Aut(G)$

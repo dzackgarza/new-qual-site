@@ -6,10 +6,12 @@ title: "Prove that there is no simple group of order 160."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
+  - classification
 relations: []
 review: draft
 ---
-Prove that there is no simple group of order 160.
-What can you say about the structure of groups of that order?
 
+Prove that there is no simple group of order 160. What can you say about the structure of groups of that order?

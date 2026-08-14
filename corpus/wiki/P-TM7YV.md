@@ -6,7 +6,10 @@ title: "Let $f(x) = g(x) h(x) \\in \\QQ[x]$ and $E,B,C/\\QQ$ be the splitting fi
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - normal-subgroups
+  - direct-products
 relations: []
 review: draft
 ---

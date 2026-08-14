@@ -6,7 +6,10 @@ title: "Consider the following matrix:"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations: []
 review: draft
 ---

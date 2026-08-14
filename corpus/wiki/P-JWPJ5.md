@@ -6,11 +6,14 @@ title: "How many irreducible representations does $S_n$ have?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - partitions
+  - permutations
 relations: []
 review: draft
 ---
+
 How many irreducible representations does $S_n$ have?
 
 What classical function in mathematics does this number relate to?
-

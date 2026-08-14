@@ -6,9 +6,10 @@ title: "- Show directly that any $k\\dash$cycle is a product of transpositions,\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - permutations
 relations: []
 review: draft
 ---
-- Show directly that any $k\dash$cycle is a product of transpositions, and determine how many transpositions are needed.
 
+- Show directly that any $k\dash$cycle is a product of transpositions, and determine how many transpositions are needed.

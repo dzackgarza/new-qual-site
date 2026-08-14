@@ -6,9 +6,12 @@ title: "What are the cyclic extensions of (prime) order $p$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - cyclic-groups
+  - field-extensions
 relations: []
 review: draft
 ---
-What are the cyclic extensions of (prime) order $p$?
 
+What are the cyclic extensions of (prime) order $p$?

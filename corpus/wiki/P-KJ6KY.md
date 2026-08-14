@@ -6,9 +6,12 @@ title: "What are all the matrices that commute with a given Jordan block?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - matrices
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---
-What are all the matrices that commute with a given Jordan block?
 
+What are all the matrices that commute with a given Jordan block?

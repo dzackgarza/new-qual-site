@@ -6,9 +6,11 @@ title: "Is a polynomial ring over a UFD again a UFD?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - factorization
+  - polynomials
 relations: []
 review: draft
 ---
-Is a polynomial ring over a UFD again a UFD?
 
+Is a polynomial ring over a UFD again a UFD?

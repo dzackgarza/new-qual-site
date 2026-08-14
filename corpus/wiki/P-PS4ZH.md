@@ -6,10 +6,12 @@ title: "Say you have a field extension with only finitely many intermediate fi\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - separability
 relations: []
 review: draft
 ---
+
 Say you have a field extension with only finitely many intermediate fields.
 Show that it is a simple extension.
-

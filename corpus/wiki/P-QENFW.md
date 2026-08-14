@@ -6,9 +6,11 @@ title: "What are the symmetric polynomials?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - symmetric-functions
+  - polynomials
 relations: []
 review: draft
 ---
-What are the symmetric polynomials?
 
+What are the symmetric polynomials?

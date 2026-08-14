@@ -6,9 +6,11 @@ title: "Which finite groups are Galois groups for some field extension?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - classification
 relations: []
 review: draft
 ---
-Which finite groups are Galois groups for some field extension?
 
+Which finite groups are Galois groups for some field extension?

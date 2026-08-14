@@ -6,7 +6,10 @@ title: "Let $R$ be a commutative ring, and let $M$ be an $R\\dash$module. An $R\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - maximal-ideals
+  - roots-of-unity
 relations: []
 review: draft
 ---

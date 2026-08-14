@@ -6,9 +6,11 @@ title: "State and prove Eisenstein's Criterion."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - irreducibility-criteria
+  - polynomials
 relations: []
 review: draft
 ---
-State and prove Eisenstein's Criterion.
 
+State and prove Eisenstein's Criterion.

@@ -6,7 +6,10 @@ title: "Supposing that $\\dim V = n$, let $\\mathcal B \\definedas \\theset{\\ve
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bases
+  - vector-spaces
+  - direct-products
 relations: []
 review: draft
 ---

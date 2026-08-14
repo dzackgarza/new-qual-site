@@ -6,7 +6,10 @@ title: "State the three Sylow theorems."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - abelian-groups
+  - classification
 relations: []
 review: draft
 ---

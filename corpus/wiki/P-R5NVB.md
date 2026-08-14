@@ -6,7 +6,10 @@ title: "Let $A=\\left[\\begin{array}{ccc} 2 & 0 & 0 \\\\ 4 & 6 & 1 \\\\ -16 & -1
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "In both cases, we will need the characteristic polynomials $\\chi_A(x)$\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - minimal-and-characteristic-polynomials
+  - structure-theorem
 relations: []
 review: draft
 ---

@@ -6,10 +6,13 @@ title: "What is a perfect field and why is this important?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - fields
+  - counterexamples
 relations: []
 review: draft
 ---
+
 What is a perfect field and why is this important?
 Give an example of a non-perfect field.
-

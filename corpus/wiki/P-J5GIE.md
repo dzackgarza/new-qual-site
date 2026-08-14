@@ -6,7 +6,10 @@ title: "Let $R$ be a ring with unity."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - torsion
+  - exact-sequences
 relations: []
 review: draft
 ---

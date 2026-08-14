@@ -6,7 +6,10 @@ title: "Consider the space of functions from the natural numbers to $\\CC$ endo\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - convolution
+  - number-theory
 relations: []
 review: draft
 ---

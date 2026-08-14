@@ -6,15 +6,19 @@ title: "Mod by nilradical to kill nilpotents"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - ideals
+  - rings
 relations: []
 review: draft
 ---
-:::{.problem title="Mod by nilradical to kill nilpotents"}
+
+::: {.problem title="Mod by nilradical to kill nilpotents"}
 $R/ \nilrad{R}$ has no nonzero nilpotent elements.
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 \[
 a + \nilrad{R} \text{ nilpotent } &\implies (a+ \nilrad{R})^n \definedas a^n + \nilrad{R}= \nilrad{R} \\

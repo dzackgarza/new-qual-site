@@ -6,7 +6,10 @@ title: "Let m $A \\da \\begin{bmatrix} 4 & 1 & -1 \\\\ -6 & -1 & 2 \\\\ 2 & 1 & 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - minimal-and-characteristic-polynomials
 relations: []
 review: draft
 ---

@@ -6,10 +6,12 @@ title: "How does one prove the structure theorem for modules over PID?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - principal-ideal-domains
+  - abelian-groups
 relations: []
 review: draft
 ---
-How does one prove the structure theorem for modules over PID?
-What is the module and what is the PID in the case of abelian groups?
 
+How does one prove the structure theorem for modules over PID? What is the module and what is the PID in the case of abelian groups?

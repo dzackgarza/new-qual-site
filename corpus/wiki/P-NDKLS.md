@@ -6,9 +6,12 @@ title: "What are the irreducible representations of finite abelian groups?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - abelian-groups
+  - character-theory
 relations: []
 review: draft
 ---
-What are the irreducible representations of finite abelian groups?
 
+What are the irreducible representations of finite abelian groups?

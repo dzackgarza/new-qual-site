@@ -6,9 +6,11 @@ title: "What is a nilpotent matrix?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nilpotence
+  - matrices
 relations: []
 review: draft
 ---
-What is a nilpotent matrix?
 
+What is a nilpotent matrix?

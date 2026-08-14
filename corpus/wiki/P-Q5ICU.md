@@ -6,19 +6,19 @@ title: "Hungerford 7.5.7"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - linear-algebra
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 7.5.7"}
+
+::: {.problem title="Hungerford 7.5.7"}
 \envlist
 
-1.  Let $\phi,\psi$ be endomorphisms of a finite-dimensional vector
-    space $E$ such that $\phi\psi = \psi \phi$. Show that if $E$ has a
-    basis of eigenvectors of $\psi$, then it has a basis of eigenvectors
-    for both $\psi$ and $\phi$ simultaneously.
+1. Let $\phi,\psi$ be endomorphisms of a finite-dimensional vector space $E$ such that $\phi\psi = \psi \phi$.
+   Show that if $E$ has a basis of eigenvectors of $\psi$, then it has a basis of eigenvectors for both $\psi$ and $\phi$ simultaneously.
 
-2.  Interpret the previous part as a statement about matrices similar to
-    a diagonal matrix.
+2. Interpret the previous part as a statement about matrices similar to a diagonal matrix.
 :::
-

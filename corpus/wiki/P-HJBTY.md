@@ -6,10 +6,13 @@ title: "What $3 \\times 3$ matrices over the rationals (up to similarity) satis\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rational-canonical-form
+  - minimal-and-characteristic-polynomials
+  - matrices
 relations: []
 review: draft
 ---
+
 What $3 \times 3$ matrices over the rationals (up to similarity) satisfy $f (A) = 0$, where $f (x) = (x^2 + 2)(x - 1)^3$?
 List all possible rational forms.
-

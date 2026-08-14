@@ -6,7 +6,10 @@ title: "Now we'll take the tensor product of two abelian groups\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - tensor-products
+  - abelian-groups
+  - cyclic-groups
 relations: []
 review: draft
 ---

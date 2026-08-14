@@ -6,7 +6,9 @@ title: "What is the Galois group of $\\QQ\\qty{ \\sqrt{n_1}, \\cdots, \\sqrt{n_m
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
 relations: []
 review: draft
 ---

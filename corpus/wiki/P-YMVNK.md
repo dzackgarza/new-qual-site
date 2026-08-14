@@ -6,7 +6,10 @@ title: "Suppose $X$ is a $G\\dash$set, so there is a permutation action of $G$ o
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - orbit-stabilizer
+  - conjugacy
+  - group-actions
 relations: []
 review: draft
 ---

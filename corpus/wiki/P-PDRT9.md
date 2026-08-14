@@ -6,7 +6,10 @@ title: "Since proper subfields will correspond to intermediate extensions whi\u2
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - cyclic-groups
+  - field-extensions
 relations: []
 review: draft
 ---

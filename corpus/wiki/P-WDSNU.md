@@ -6,9 +6,11 @@ title: "What's the regular representation?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - representation-theory
+  - group-rings
 relations: []
 review: draft
 ---
-What's the regular representation?
 
+What's the regular representation?

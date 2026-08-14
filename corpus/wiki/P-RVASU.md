@@ -6,16 +6,21 @@ title: "What are the subgroups of the free group $F_2$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-groups
+  - subgroups
+  - normal-subgroups
 relations: []
 review: draft
 ---
+
 What are the subgroups of the free group $F_2$?
 How many generators can you have?
 
-Can you find one with 3 generators? 4 generators? Countably many generators?
+Can you find one with 3 generators?
+4 generators?
+Countably many generators?
 
 Is the subgroup with 4 generators you found normal?
 Why?
 Can you find a normal one?
-

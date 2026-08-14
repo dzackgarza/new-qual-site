@@ -6,12 +6,14 @@ title: "Hungerford 5.3.5"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - splitting-fields
+  - permutations
+  - field-extensions
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 5.3.5"}
-Show that if $f\in K[x]$ has degree $n$ and $F$ is a splitting field of $f$ over $K$, the $[F: K]$ divides
-$n!$.
-:::
 
+::: {.problem title="Hungerford 5.3.5"}
+Show that if $f\in K[x]$ has degree $n$ and $F$ is a splitting field of $f$ over $K$, the $[F: K]$ divides $n!$.
+:::

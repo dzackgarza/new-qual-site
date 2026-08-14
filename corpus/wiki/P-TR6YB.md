@@ -6,7 +6,10 @@ title: "Use the Class Equation (equivalently, the conjugation action of a grou\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - class-equation
+  - p-groups
+  - abelian-groups
 relations: []
 review: draft
 ---

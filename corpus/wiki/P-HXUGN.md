@@ -6,9 +6,11 @@ title: "What is the relation between Euclidean domains and PIDs?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - euclidean-domains
+  - principal-ideal-domains
 relations: []
 review: draft
 ---
-What is the relation between Euclidean domains and PIDs?
 
+What is the relation between Euclidean domains and PIDs?

@@ -6,9 +6,12 @@ title: "What Galois group would you expect a cubic to have?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - classification
+  - polynomials
 relations: []
 review: draft
 ---
-What Galois group would you expect a cubic to have?
 
+What Galois group would you expect a cubic to have?

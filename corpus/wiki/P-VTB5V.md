@@ -6,9 +6,14 @@ title: "- Show that for an ideal $I\\normal R$, its radical is the intersection\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - ideals
+  - prime-ideals
+  - nilpotence
 relations: []
 review: draft
 ---
+
 - Show that for an ideal $I\normal R$, its radical is the intersection of all prime ideals containing $I$.
+
 - Show that $\rad{I}$ is the intersection of all prime ideals containing $I$.

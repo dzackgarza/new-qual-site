@@ -6,10 +6,13 @@ title: "Can you show that all groups of order $p^n$ for $p$ prime are solvable\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - solvable-groups
+  - sylow-theory
 relations: []
 review: draft
 ---
+
 Can you show that all groups of order $p^n$ for $p$ prime are solvable?
 Do you know how to do this for groups of order $p^r q^s$?
-

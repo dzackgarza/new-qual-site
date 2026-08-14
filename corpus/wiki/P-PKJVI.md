@@ -6,8 +6,13 @@ title: "- Show that a group of order $pq$ where $p > q$. Show that $G$ has a n\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - classification
 relations: []
 review: draft
 ---
-- Show that a group of order $pq$ where $p > q$. Show that $G$ has a nontrivial proper normal subgroup, 
+
+- Show that a group of order $pq$ where $p > q$.
+  Show that $G$ has a nontrivial proper normal subgroup,

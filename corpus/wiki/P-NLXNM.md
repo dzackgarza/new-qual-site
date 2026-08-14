@@ -6,7 +6,10 @@ title: "Let $G$ be a finite group and $p$ a prime number. Let"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
+  - group-actions
 relations: []
 review: draft
 ---

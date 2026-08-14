@@ -6,7 +6,10 @@ title: "Definition: We say $A \\sim B$ in $M_n(R)$ $\\iff$ there exists an inver
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - matrices
+  - canonical-forms
+  - smith-normal-form
 relations: []
 review: draft
 ---

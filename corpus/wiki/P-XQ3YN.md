@@ -6,9 +6,12 @@ title: "Show that a field $k$ of characteristic $p\\neq 0$ is perfect $\\iff$ fo
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - separability
+  - characteristic
+  - fields
 relations: []
 review: draft
 ---
-Show that a field $k$ of characteristic $p\neq 0$ is perfect $\iff$ for every $x\in k$ there exists a $y\in k$ such that $y^p=x$.
 
+Show that a field $k$ of characteristic $p\neq 0$ is perfect $\iff$ for every $x\in k$ there exists a $y\in k$ such that $y^p=x$.

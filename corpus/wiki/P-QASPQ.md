@@ -6,11 +6,14 @@ title: "- Show that $H~\\text{char}~G \\Rightarrow H \\unlhd G$"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - normal-subgroups
+  - subgroups
 relations: []
 review: draft
 ---
-- Show that $H~\text{char}~G \Rightarrow H \unlhd G$
-  
-  > Thus "characteristic" is a strictly stronger condition than normality
 
+- Show that $H~\text{char}~G \Rightarrow H \unlhd G$
+
+  > Thus "characteristic" is a strictly stronger condition than normality

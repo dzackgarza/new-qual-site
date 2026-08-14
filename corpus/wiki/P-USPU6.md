@@ -6,8 +6,12 @@ title: "- Show that any finite abelian group is isomorphic to the direct produ\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - abelian-groups
+  - direct-products
 relations: []
 review: draft
 ---
+
 - Show that any finite abelian group is isomorphic to the direct product of its Sylow subgroups

@@ -6,7 +6,10 @@ title: "Hungerford 4.2.4"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - vector-spaces
+  - principal-ideal-domains
 relations: []
 review: draft
 ---

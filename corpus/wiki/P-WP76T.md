@@ -6,8 +6,12 @@ title: "- Show that every maximal subgroup of a $p\\dash$group has index $p$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - subgroups
+  - cosets-and-lagrange
 relations: []
 review: draft
 ---
+
 - Show that every maximal subgroup of a $p\dash$group has index $p$.

@@ -6,7 +6,10 @@ title: "Let $K$ be a Galois extension of a field $F$ with $[K: F] = 2015$. Prove
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - galois-theory
+  - sylow-theory
 relations: []
 review: draft
 ---

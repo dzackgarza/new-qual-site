@@ -6,7 +6,8 @@ title: "Show that if $\\alpha, \\beta$ are algebraic over $F$, then $\\alpha\\pm
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
 relations: []
 review: draft
 ---

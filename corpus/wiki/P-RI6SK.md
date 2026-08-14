@@ -6,7 +6,10 @@ title: "Let $O_P(G)$ be the intersection of all Sylow $p\\dash$subgroups of $G$.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - normal-subgroups
+  - p-groups
 relations: []
 review: draft
 ---

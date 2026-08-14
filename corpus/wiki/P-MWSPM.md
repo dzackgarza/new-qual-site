@@ -6,8 +6,12 @@ title: "- Show that a finitely generated module over a Noetherian local ring i\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - nakayamas-lemma
+  - free-modules
+  - homological-algebra
 relations: []
 review: draft
 ---
+
 - Show that a finitely generated module over a Noetherian local ring is flat iff it is free using Nakayama and Tor.

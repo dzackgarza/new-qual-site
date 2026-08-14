@@ -6,7 +6,10 @@ title: "Spring 2021"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - polynomials
+  - rings
+  - integral-domains
 relations: []
 review: draft
 ---

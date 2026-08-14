@@ -6,8 +6,11 @@ title: "- Prove that the minimal polynomial divides the characteristic polynom\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - linear-algebra
 relations: []
 review: draft
 ---
+
 - Prove that the minimal polynomial divides the characteristic polynomial.

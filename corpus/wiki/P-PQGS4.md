@@ -6,7 +6,10 @@ title: "Let $F_1, F_2$ be free, so they have bases $\\mathcal B_1 = \\theset{\\v
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - bases
+  - direct-products
 relations: []
 review: draft
 ---

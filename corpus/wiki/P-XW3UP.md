@@ -6,9 +6,12 @@ title: "What's the stabiliser of a point in the unit disk under the group of c\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - group-actions
+  - orbit-stabilizer
+  - geometry
 relations: []
 review: draft
 ---
-What's the stabiliser of a point in the unit disk under the group of conformal automorphisms?
 
+What's the stabiliser of a point in the unit disk under the group of conformal automorphisms?

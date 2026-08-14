@@ -6,10 +6,14 @@ title: "Let $F$ be a field and $T$ an $n\\times n$ matrix with entries in $F$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - minimal-and-characteristic-polynomials
+  - irreducibility-criteria
+  - linear-algebra
 relations: []
 review: draft
 ---
+
 Let $F$ be a field and $T$ an $n\times n$ matrix with entries in $F$.
 Let $I$ be the ideal consisting of all polynomials $f\in F[x]$ such that $f(T) =0$.
 

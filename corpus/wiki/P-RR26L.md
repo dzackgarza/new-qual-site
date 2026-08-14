@@ -6,7 +6,10 @@ title: "Suppose $A^* = A$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - eigenvalues-and-eigenvectors
+  - diagonalization
+  - inner-product-spaces
 relations: []
 review: draft
 ---

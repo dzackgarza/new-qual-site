@@ -6,11 +6,14 @@ title: "- Show that every normal subgroup of a $p\\dash$group is contained in t\
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - p-groups
+  - normal-subgroups
+  - centralizers-and-normalizers
 relations: []
 review: draft
 ---
-- Show that every normal subgroup of a $p\dash$group is contained in the center.
-  
-  > Hint: Consider $G/Z(G)$.
 
+- Show that every normal subgroup of a $p\dash$group is contained in the center.
+
+  > Hint: Consider $G/Z(G)$.

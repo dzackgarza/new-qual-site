@@ -6,7 +6,10 @@ title: Let $E$ be a free module over $R$ an integral domain.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-modules
+  - torsion
+  - integral-domains
 relations: []
 review: draft
 ---

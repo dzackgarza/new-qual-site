@@ -6,7 +6,10 @@ title: "The elementary divisors are given by:"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - canonical-forms
+  - modules
 relations: []
 review: draft
 ---

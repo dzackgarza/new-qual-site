@@ -6,7 +6,10 @@ title: "What is the maximal real field in a cyclotomic extension $\\QQ(\\zeta_n)
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - roots-of-unity
+  - field-extensions
+  - galois-theory
 relations: []
 review: draft
 ---

@@ -6,9 +6,11 @@ title: "Do you know Witt's theorem on real quadratic forms?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - quadratic-forms
+  - bilinear-forms
 relations: []
 review: draft
 ---
-Do you know Witt's theorem on real quadratic forms?
 
+Do you know Witt's theorem on real quadratic forms?

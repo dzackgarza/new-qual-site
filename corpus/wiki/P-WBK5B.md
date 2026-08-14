@@ -6,8 +6,11 @@ title: "- Show that for $n\\neq 6$, $\\Aut(S_n) = \\Inn(S^n)$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - automorphisms
+  - permutations
 relations: []
 review: draft
 ---
+
 - Show that for $n\neq 6$, $\Aut(S_n) = \Inn(S^n)$.

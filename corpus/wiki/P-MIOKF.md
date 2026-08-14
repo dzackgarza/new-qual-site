@@ -6,10 +6,12 @@ title: "Can it happen that a proper subfield of C is isomorphic to C?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - fields
+  - transcendence
+  - automorphisms
 relations: []
 review: draft
 ---
-Can it happen that a proper subfield of C is isomorphic to C?
-How?
 
+Can it happen that a proper subfield of C is isomorphic to C? How?

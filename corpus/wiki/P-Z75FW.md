@@ -6,9 +6,11 @@ title: "Show that there exist no simple groups of order 148."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - simple-groups
 relations: []
 review: draft
 ---
-Show that there exist no simple groups of order 148.
 
+Show that there exist no simple groups of order 148.

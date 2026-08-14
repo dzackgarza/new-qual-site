@@ -6,7 +6,10 @@ title: "Since $n_p \\neq 1$ by assumption, we must have $n_p = q$. Now conside\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - sylow-theory
+  - classification
+  - simple-groups
 relations: []
 review: draft
 ---

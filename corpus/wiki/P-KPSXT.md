@@ -6,9 +6,11 @@ title: "Do you know an example of a flat module?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - homological-algebra
 relations: []
 review: draft
 ---
-Do you know an example of a flat module?
 
+Do you know an example of a flat module?

@@ -6,11 +6,14 @@ title: "Talk about the possible subgroups of $\\ZZ^3$."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - structure-theorem
+  - abelian-groups
+  - free-modules
 relations: []
 review: draft
 ---
+
 Talk about the possible subgroups of $\ZZ^3$.
 Now suppose that you have a subgroup of $\ZZ^3$.
 What theorem tells you something about the structure of the quotient group?
-

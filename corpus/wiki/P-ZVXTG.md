@@ -6,9 +6,12 @@ title: "What's the relation between the number of conjugacy classes in a finit\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - character-theory
+  - conjugacy
+  - representation-theory
 relations: []
 review: draft
 ---
-What's the relation between the number of conjugacy classes in a finite group and the number of irreducible representations?
 
+What's the relation between the number of conjugacy classes in a finite group and the number of irreducible representations?

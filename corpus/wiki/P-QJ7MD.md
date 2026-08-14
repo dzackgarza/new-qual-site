@@ -6,7 +6,10 @@ title: "(Important) Show that if $H\\leq G$ and $[G: H] = 2$ then $H$ is normal.
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

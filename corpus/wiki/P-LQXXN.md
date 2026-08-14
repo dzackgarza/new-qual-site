@@ -6,11 +6,13 @@ title: "Hungerford 5.1.8"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - field-extensions
+  - polynomials
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 5.1.8"}
+
+::: {.problem title="Hungerford 5.1.8"}
 Show that if $u\in F$ is algebraic of odd degree over $K$, then so is $u^2$, and moreover $K(u) = K(u^2)$.
 :::
-

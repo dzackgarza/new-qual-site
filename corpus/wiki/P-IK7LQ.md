@@ -6,11 +6,13 @@ title: "Hungerford 1.9.1"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - free-groups
+  - torsion
 relations: []
 review: draft
 ---
-:::{.problem title="Hungerford 1.9.1"}
+
+::: {.problem title="Hungerford 1.9.1"}
 Show that every non-identity element in a free group $F$ has infinite order.
 :::
-

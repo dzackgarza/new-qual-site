@@ -6,7 +6,10 @@ title: "How do you construct a polynomial over $\\QQ$ whose Galois group\u2026"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - permutations
+  - polynomials
 relations: []
 review: draft
 ---

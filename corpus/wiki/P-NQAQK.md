@@ -6,7 +6,10 @@ title: "Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$ . Make 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - modules
+  - semisimplicity
+  - linear-algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $H$ be a normal subgroup of a finite group $G$ where the order\u2026
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - normal-subgroups
+  - cosets-and-lagrange
+  - subgroups
 relations: []
 review: draft
 ---

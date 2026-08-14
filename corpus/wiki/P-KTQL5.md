@@ -6,10 +6,12 @@ title: "What is the centre of $S_n$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - centralizers-and-normalizers
+  - permutations
 relations: []
 review: draft
 ---
+
 What is the centre of $S_n$?
 Prove it.
-

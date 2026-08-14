@@ -6,7 +6,9 @@ title: "Let $R$ be a ring with the property that for every $a \\in R, a^2 = a$. 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - rings
+  - characteristic
 relations: []
 review: draft
 ---

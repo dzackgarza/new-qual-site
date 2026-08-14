@@ -6,7 +6,10 @@ title: "Show that any group of order 2020 is solvable."
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - solvable-groups
+  - classification
+  - structure-theorem
 relations: []
 review: draft
 ---

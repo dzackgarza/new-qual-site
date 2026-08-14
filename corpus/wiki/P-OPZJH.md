@@ -6,9 +6,11 @@ title: "What is the multiplicative group of $\\FF_9$?"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - finite-fields
+  - cyclic-groups
 relations: []
 review: draft
 ---
-What is the multiplicative group of $\FF_9$?
 
+What is the multiplicative group of $\FF_9$?

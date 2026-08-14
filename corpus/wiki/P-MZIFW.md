@@ -6,9 +6,12 @@ title: "To which operators does the spectral theorem for symmetric matrices ge\u
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - diagonalization
+  - inner-product-spaces
+  - functional-analysis
 relations: []
 review: draft
 ---
-To which operators does the spectral theorem for symmetric matrices generalise?
 
+To which operators does the spectral theorem for symmetric matrices generalise?

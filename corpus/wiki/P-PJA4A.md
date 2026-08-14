@@ -6,7 +6,10 @@ title: "Suppose that $F\\subset E$ are fields such that $E/F$ is Galois and $\\a
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - galois-theory
+  - field-extensions
+  - normal-subgroups
 relations: []
 review: draft
 ---
