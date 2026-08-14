@@ -6,7 +6,10 @@ title: "Goursat"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-theorem
+  - contour-integration
+  - holomorphic-functions
 relations: []
 review: draft
 ---

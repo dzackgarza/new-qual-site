@@ -6,7 +6,10 @@ title: "Holomorphic implies analytic"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - holomorphic-functions
+  - cauchy-integral-formula
 relations: []
 review: draft
 ---

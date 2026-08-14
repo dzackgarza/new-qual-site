@@ -6,7 +6,8 @@ title: "Implicit Function Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - calculus
 relations:
 - kind: related-to
   target: T-QMGPN
