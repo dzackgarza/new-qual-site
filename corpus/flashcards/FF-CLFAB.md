@@ -7,7 +7,8 @@ classification:
   areas:
   - real-analysis
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
 relations: []
 review: draft
 ---

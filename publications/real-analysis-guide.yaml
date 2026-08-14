@@ -409,6 +409,7 @@ sections:
             - stone-weierstrass
             - polynomials
             - trigonometry
+            - roots-of-unity
             - counterexamples
           limit: 9
           review:
@@ -428,7 +429,7 @@ sections:
       - query:
           kind: fact
           topics: *funcseq
-          limit: 17
+          limit: 28
           review:
             mode: any
       - query:
