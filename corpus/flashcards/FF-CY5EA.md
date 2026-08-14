@@ -14,5 +14,5 @@ review: draft
 ---
 
 ::: {.fact title="Definition: Torsion element"}
-$m\in M$ is torsion iff $ \tor(m)\neq 0 $.
+$m\in M$ is torsion iff there exists a nonzero $r\in R$ with $rm = 0$, equivalently $\mathrm{Ann}(m)\neq 0$.
 :::

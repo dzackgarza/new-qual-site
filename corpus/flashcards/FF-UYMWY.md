@@ -13,5 +13,6 @@ review: draft
 ---
 
 ::: {.fact title="What is the one-step submodule test?"}
-If $ r\in R,\, m,n \in M \implies rm + n \in M $ then $ M $ is a submodule.
+Let $N\subseteq M$ be nonempty.
+If $r\in R,\, m,n \in N \implies rm + n \in N$, then $N$ is a submodule of $M$.
 :::

@@ -16,7 +16,7 @@ review: draft
 Four properties:
 
 - $r(x+y) = rx + ry$
-- $(r+s)x = rs + sx$
+- $(r+s)x = rx + sx$
 - $(rs)x= r(s(x))$
 - $1_Rx = x$
 

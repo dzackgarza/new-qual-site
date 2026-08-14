@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NNJHK
 kind: problem
-title: "We want to show that if $A, B$ are $R\\dash$modules then $X = (\\hom_{R\\dash\\text{mod}}(A, B), +$ is an abelian\u2026"
+title: "$\\hom_R(A, B)$ under pointwise addition is an abelian group"
 classification:
   areas:
   - algebra
@@ -13,14 +13,16 @@ classification:
 relations: []
 review: draft
 ---
-We want to show that if $A, B$ are $R\dash$modules then $X = (\hom_{R\dash\text{mod}}(A, B), +$ is an abelian group.
+We want to show that if $A, B$ are $R\dash$modules then $X = (\hom_{R\dash\text{mod}}(A, B), +)$ is an abelian group.
 Let $f, g, h \in X$, we then need to show the following:
 
 a. Closure: $f + g \in X$
 b. Associativity: $f + (g + h) = (f + g) + h$
-c. Identity: $\id \in X$
-d. Inverses: $f\inv \in X$
+c. Identity: the zero map $\vector 0 \in X$
+d. Inverses: $-f \in X$
 e. Commutativity: $f + g = g + f$
+
+The group operation is pointwise addition, so the identity is the zero map and the inverse of $f$ is $-f$, not $\id$ and $f\inv$.
 
 Closure: 
 This follows from the definition, because $(f + g) \actson x \definedas f(x) + g(x)$ pointwise, which is well-defined homomorphism $A \to B$.
@@ -42,12 +44,12 @@ Then
 $$(f + \vector 0)\actson x = f(x) + 0 = f(x) = 0 + f(x) = (\vector 0 + f) \actson x.$$
 
 Inverses:
-Given $f\in X$, we can define $-f: A \to B$ as $-f(x) = -x$.
+Given $f\in X$, we can define $-f: A \to B$ by $(-f)(x) \definedas -\left( f(x) \right)$, which is again a module morphism.
 Then
 \[
 \begin{align*}
-(f + -f) \actson x = f(x) + -f(x) &= f(x) - f(x) = x - x = 0 = \vector 0 \actson x \\
-(-f + f) \actson x = -f(x) + f(x) &= -f(x) + f(x) = -x + x = 0 = \vector 0 \actson x
+(f + (-f)) \actson x &= f(x) + (-f)(x) = f(x) - f(x) = 0 = \vector 0 \actson x \\
+((-f) + f) \actson x &= (-f)(x) + f(x) = -f(x) + f(x) = 0 = \vector 0 \actson x
 .\end{align*}
 \]
 
