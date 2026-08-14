@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import posixpath
 import re
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import cast
@@ -61,6 +62,62 @@ class WikiPage:
     title: str
     blocks: list[pf.Block]
     search_text: str
+
+
+# Obsidian anchors a block by putting `^<id>` on the line after it. Pandoc has
+# no such syntax and reads it as an ordinary paragraph, so the marker reached the
+# page as literal text and every `...#^<id>` link into it dangled.
+BLOCK_MARKER = re.compile(r"\A\^[0-9a-zA-Z]+\Z")
+
+
+def anchor_block_markers(element: pf.Element, doc: pf.Doc) -> pf.Element | pf.RawBlock:
+    """Turn a block-id marker paragraph into the anchor it was standing in for.
+
+    The anchor keeps the marker's own spelling, `^<id>`, so the authored links
+    resolve as written instead of every one of them needing a rewrite.
+    """
+    del doc
+    if not isinstance(element, pf.Para) or len(element.content) != 1:
+        return element
+    head = element.content[0]
+    if not isinstance(head, pf.Str) or not BLOCK_MARKER.match(head.text):
+        return element
+    return pf.RawBlock(f'<span id="{head.text}"></span>', format="html")
+
+
+# `\cref[label]{text}` is a LaTeX cross-reference. Pandoc reads it as raw TeX
+# and the HTML writer drops raw TeX whole, so both the reference and the words
+# it was made of left the page -- ten of them as empty list items.
+CREF = re.compile(r"\\cref\[([^\]]*)\]\{([^}]*)\}")
+
+
+def _text_inlines(text: str) -> list[pf.Inline]:
+    parts = text.split(" ")
+    inlines: list[pf.Inline] = []
+    for index, part in enumerate(parts):
+        if index:
+            inlines.append(pf.Space())
+        if part:
+            inlines.append(pf.Str(part))
+    return inlines
+
+
+def unpack_cross_references(element: pf.Element, doc: pf.Doc) -> pf.Element | list[pf.Inline]:
+    """Replace a `\\cref` with the words it displays.
+
+    It is not turned into a link. The labels these name -- `CauchyTheorem` and
+    the like -- are defined nowhere: `\\label{}` does not occur in `wiki/` at
+    all, so there is no target to resolve against, and choosing which page each
+    one meant is a reading decision rather than a transport one. The text is
+    restored and `parse_pages` names every one it restored.
+    """
+    del doc
+    if not isinstance(element, pf.RawInline) or cast(str, getattr(element, "format")) != "tex":
+        return element
+    match = CREF.fullmatch(cast(str, getattr(element, "text")).strip())
+    if match is None:
+        return element
+    return _text_inlines(match.group(2))
 
 
 def discover(root: Path) -> list[Path]:
@@ -122,10 +179,11 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             errors.append(Diagnostic("card-unreadable", str(path), str(exc)))
 
     parsed: list[WikiPage] = []
+    restored: list[str] = []
     for offset in range(0, len(prepared), WIKI_BATCH_SIZE):
         batch = prepared[offset : offset + WIKI_BATCH_SIZE]
         results = pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN, citations)
-        for (path, source_rel, metadata, _), result in zip(batch, results, strict=True):
+        for (path, source_rel, metadata, body), result in zip(batch, results, strict=True):
             if isinstance(result, PandocFailure):
                 errors.append(Diagnostic("card-unreadable", str(path), result.error))
                 continue
@@ -133,7 +191,13 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             if warnings:
                 errors.extend(_citation_diagnostic(warning, path) for warning in warnings)
                 continue
-            document = from_ast(result.output).walk(drop_path_captions)
+            restored.extend(f"{source_rel.as_posix()}: \\cref[{label}]" for label, _ in CREF.findall(body))
+            document = (
+                from_ast(result.output)
+                .walk(drop_path_captions)
+                .walk(anchor_block_markers)
+                .walk(unpack_cross_references)
+            )
             for key in CITEPROC_METADATA:
                 document.metadata.content.pop(key, None)
             parsed.append(
@@ -146,6 +210,13 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
                     search_text=pf.stringify(document).strip(),
                 )
             )
+    if restored:
+        print(
+            f"{len(restored)} cross-reference(s) restored as plain text; no \\label defines their targets:",
+            file=sys.stderr,
+        )
+        for entry in restored:
+            print(f"  {entry}", file=sys.stderr)
     return parsed, errors
 
 
@@ -159,6 +230,60 @@ class AmbiguousPageReference(ValueError):
     def __init__(self, raw: str) -> None:
         self.raw = raw
         super().__init__(f"ambiguous wiki page reference: {raw}")
+
+
+def _resolved_or_dropped(page: WikiPage, fragment: str, unresolved: list[str]) -> str:
+    """The fragment under the id the target page emits, or nothing at all.
+
+    A fragment naming no heading and no anchor is an authored reference to a
+    block that is not there. The page half of the link is still right, so the
+    link keeps working and loses only its fragment; which block was meant is a
+    reading decision, and inventing one here would be a guess. Every one is
+    named on stderr instead.
+    """
+    ids, by_text = _page_anchors(page)
+    if fragment in ids:
+        return f"#{fragment}"
+    slug = by_text.get(_fragment_key(fragment))
+    if slug is not None:
+        return f"#{slug}"
+    unresolved.append(f"{page.source_rel.as_posix()}#{fragment}")
+    return ""
+
+
+# Pandoc's smart punctuation turns the apostrophe in a heading into `’`, and the
+# link into that heading is still typed with `'`. The two spell one heading.
+SMART_PUNCTUATION = str.maketrans({"’": "'", "‘": "'", "“": '"', "”": '"', "–": "-", "—": "-"})
+
+
+def _fragment_key(value: str) -> str:
+    return value.translate(SMART_PUNCTUATION).strip().casefold()
+
+
+def _page_anchors(page: WikiPage) -> tuple[set[str], dict[str, str]]:
+    """The ids the page emits, and its heading text under the id Pandoc gave it.
+
+    Obsidian addresses a heading by its text, `[[Page#Green's Theorem]]`, and
+    Pandoc addresses it by a slug, `greens-theorem`. Reading the id off the
+    parsed header is exact; re-deriving the slug from the text would be a guess
+    at Pandoc's algorithm.
+    """
+    ids: set[str] = set()
+    by_text: dict[str, str] = {}
+
+    def collect(element: pf.Element, doc: pf.Doc) -> pf.Element:
+        del doc
+        if isinstance(element, pf.Header) and element.identifier:
+            ids.add(element.identifier)
+            by_text[_fragment_key(pf.stringify(element))] = element.identifier
+        elif isinstance(element, pf.RawBlock):
+            found = re.search(r'id="([^"]+)"', cast(str, getattr(element, "text")))
+            if found:
+                ids.add(found.group(1))
+        return element
+
+    pf.Doc(*page.blocks).walk(collect)
+    return ids, by_text
 
 
 def _normal_key(value: str) -> str:
@@ -268,6 +393,7 @@ def _canonical_target(
     by_normalized: dict[str, list[WikiPage]],
     by_stem: dict[str, list[WikiPage]],
     assets: AssetCatalog,
+    unresolved: list[str],
 ) -> str:
     parsed = urlsplit(raw)
     if parsed.scheme or parsed.netloc or raw.startswith(("#", "data:", "mailto:")):
@@ -283,7 +409,10 @@ def _canonical_target(
         if suffix and suffix not in {".md", ".html"}:
             target = _asset_target(path, assets).as_posix()
         else:
-            target = _page_target(page, path, by_key, by_normalized, by_stem).route.as_posix()
+            destination = _page_target(page, path, by_key, by_normalized, by_stem)
+            target = destination.route.as_posix()
+            if parsed.fragment:
+                return target + _resolved_or_dropped(destination, unquote(parsed.fragment), unresolved)
     if parsed.fragment:
         target += f"#{parsed.fragment}"
     return target
@@ -298,6 +427,7 @@ def resolve_links(
 
     by_key, by_normalized, by_stem = _page_indexes(pages)
     errors: list[Diagnostic] = []
+    unresolved: list[str] = []
 
     def visit(page: WikiPage, element: pf.Element) -> pf.Element:
         if isinstance(element, pf.Link) or isinstance(element, IMAGE_ELEMENT):
@@ -311,6 +441,7 @@ def resolve_links(
                     by_normalized,
                     by_stem,
                     assets,
+                    unresolved,
                 )
                 if isinstance(element, IMAGE_ELEMENT) and target.startswith(("wiki/", "tag/", "exam/", "guide/")):
                     element = pf.Link(
@@ -332,6 +463,13 @@ def resolve_links(
 
     for page in pages:
         page.blocks = [cast(pf.Block, visit(page, block)) for block in page.blocks]
+    if unresolved:
+        print(
+            f"{len(unresolved)} reference(s) kept their page and dropped a fragment naming no block:",
+            file=sys.stderr,
+        )
+        for entry in sorted(set(unresolved)):
+            print(f"  {entry}", file=sys.stderr)
     return errors
 
 

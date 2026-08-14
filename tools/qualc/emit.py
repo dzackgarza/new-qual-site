@@ -44,9 +44,11 @@ from .publication import (
 )
 from .static_site import (
     AssetCatalog,
+    AuthoredPage,
     EndReading,
     MiddleReading,
     NavigationLink,
+    NavigationParent,
     NodeParent,
     PageChrome,
     PublicationNavigation,
@@ -148,16 +150,33 @@ def _owned_class(class_name: str) -> str:
     return class_name
 
 
+# A `title=` on a hint, solution or occurrence would land inside the `<details>`
+# those become, below the summary that already names them.
+TITLED_KINDS = set(DIV_CLASS_TO_KIND.values()) - {"hint", "solution"}
+
+
+def _title_html(title: str) -> str:
+    """The authored `title=` as body text, so it is read rather than hovered.
+
+    It goes in the body and not in a CSS `content: attr(...)` because the titles
+    carry mathematics -- `$p\\dash$-subgroup` and the like -- and `attr()` would
+    print that as its source. In the body MathJax typesets it like any other
+    `$...$` on the page.
+    """
+    return f'<p class="qual-section-title">{html.escape(title)}</p>'
+
+
 def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
     if isinstance(el, pf.Div):
         owned = [c for c in el.classes if c in OWNED]
         el.classes = [_owned_class(class_name) for class_name in el.classes]
         if owned:
+            kind = DIV_CLASS_TO_KIND[owned[0]]
             el.classes.append(SECTION_CLASS)
-            # The label is the kind alone. The authored `title=` often contains
-            # mathematics, and a CSS `content: attr(...)` renders it as literal
-            # source; showing `$p\dash$subgroup` is worse than showing nothing.
-            el.attributes["data-label"] = DIV_CLASS_TO_KIND[owned[0]].title()
+            el.attributes["data-label"] = kind.title()
+            title = el.attributes.get("title", "").strip()
+            if title and kind in TITLED_KINDS:
+                el.content.insert(0, pf.RawBlock(_title_html(title), format="html"))
     return el
 
 
@@ -242,6 +261,92 @@ def _blocks(card: sqlite3.Row) -> list[pf.Block]:
     spoiling the problem it was supposed to hide behind a summary.
     """
     return list(from_ast(card["ast"]).walk(_rename).content)
+
+
+def _wiki_branch(page: WikiPage) -> str:
+    """The subject a page belongs to: its top directory, or the wiki root."""
+    parts = page.source_rel.parts
+    return parts[0] if len(parts) > 1 else ""
+
+
+def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
+    """Breadcrumbs and reading order for every authored page, by route.
+
+    A page's trail is the directory path it is filed under, which is the
+    hierarchy the author built and the one the subtitle already shows. Reading
+    order is filename order within the branch, which is what the tree merge at
+    `fd37c3d1` preserved when it sorted the named tree into the numbered one.
+
+    A directory carries a `NavigationLink` with no target: it names a level of
+    the trail but has no page of its own to link to.
+    """
+    navigation: dict[str, PublicationNavigation] = {}
+    for branch in sorted({_wiki_branch(page) for page in pages}):
+        members = sorted(
+            (page for page in pages if _wiki_branch(page) == branch),
+            key=lambda page: page.source_rel.as_posix(),
+        )
+        links: dict[str, NavigationLink] = {}
+        for page in members:
+            parent: NavigationParent = RootParent()
+            for depth in range(1, len(page.source_rel.parts)):
+                key = "/".join(page.source_rel.parts[:depth])
+                if key not in links:
+                    links[key] = NavigationLink(
+                        key=key,
+                        title=page.source_rel.parts[depth - 1].replace("_", " "),
+                        target=None,
+                        parent=parent,
+                    )
+                parent = NodeParent(key)
+            links[page.route.as_posix()] = NavigationLink(
+                key=page.route.as_posix(),
+                title=page.title,
+                target=page.route,
+                parent=parent,
+            )
+        ordered = tuple(links.values())
+        for index, page in enumerate(members):
+            previous = members[index - 1] if index else None
+            following = members[index + 1] if index + 1 < len(members) else None
+            key = page.route.as_posix()
+            position: StartReading | MiddleReading | EndReading
+            if previous is None and following is not None:
+                position = StartReading(following=links[following.route.as_posix()])
+            elif following is None and previous is not None:
+                position = EndReading(previous=links[previous.route.as_posix()])
+            elif previous is not None and following is not None:
+                position = MiddleReading(
+                    previous=links[previous.route.as_posix()],
+                    following=links[following.route.as_posix()],
+                )
+            else:
+                # A branch of one page has nowhere to go; it keeps its trail.
+                continue
+            navigation[key] = PublicationNavigation(
+                links=ordered,
+                current_key=key,
+                position=position,
+            )
+    return navigation
+
+
+def _wiki_chrome(
+    navigation: dict[str, PublicationNavigation],
+    page: WikiPage,
+) -> PageChrome:
+    found = navigation.get(page.route.as_posix())
+    return AuthoredPage(found) if found else StandardPage()
+
+
+def _wiki_blocks(page: WikiPage) -> list[pf.Block]:
+    """An authored wiki page gets the same section labelling a card gets.
+
+    Only the card path ran `_rename`, so every `:::{.remark}`, `:::{.proof}`
+    and `:::{.fact}` on the wiki reached the reader as unmarked prose: the
+    label rule in `styles.css` keys on the `qual-section` class this adds.
+    """
+    return list(pf.Doc(*page.blocks).walk(_rename).content)
 
 
 # --- raw-JSON tag-page path -------------------------------------------------
@@ -360,8 +465,12 @@ def _rename_json(node: object) -> None:
             owned = [c for c in attr[1] if c in OWNED]
             attr[1] = [_owned_class(class_name) for class_name in attr[1]]
             if owned:
+                kind = DIV_CLASS_TO_KIND[owned[0]]
                 attr[1].append(SECTION_CLASS)
-                attr[2].append(["data-label", DIV_CLASS_TO_KIND[owned[0]].title()])
+                attr[2].append(["data-label", kind.title()])
+                title = next((value.strip() for key, value in attr[2] if key == "title"), "")
+                if title and kind in TITLED_KINDS:
+                    node["c"][1].insert(0, {"t": "RawBlock", "c": ["html", _title_html(title)]})
         _rename_json(node.get("c"))
 
 
@@ -1678,14 +1787,15 @@ def project(
         assets,
     )
     if wiki_pages:
+        wiki_navigation = _wiki_navigation(wiki_pages)
         wiki_items: list[PageItem] = [
             (
                 (
                     {"title": page.title, "subtitle": page.source_rel.as_posix()},
-                    page.blocks,
+                    _wiki_blocks(page),
                 ),
                 out / "wiki" / page.source_rel.with_suffix(".qmd"),
-                StandardPage(),
+                _wiki_chrome(wiki_navigation, page),
             )
             for page in wiki_pages
         ]

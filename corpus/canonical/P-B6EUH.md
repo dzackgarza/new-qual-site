@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebra
+  - orbit-stabilizer
+  - conjugacy
+  - burnside-s-lemma
 relations: []
 review: draft
 ---

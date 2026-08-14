@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebra
+  - classification
+  - sylow-theory
+  - abelian-groups
 relations: []
 review: draft
 ---

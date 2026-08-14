@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebra
+  - galois-theory
+  - field-extensions
+  - counterexamples
 relations: []
 review: draft
 ---

@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebra
+  - structure-theorem
+  - smith-normal-form
+  - free-modules
 relations: []
 review: draft
 ---

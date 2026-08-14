@@ -6,7 +6,10 @@ title: "Quadratic Form"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - quadratic-forms
+  - bilinear-forms
+  - diagonalization
 relations:
 - kind: related-to
   target: D-NRRIT

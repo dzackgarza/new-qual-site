@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebra
+  - integral-domains
+  - rings
+  - modules
 relations: []
 review: draft
 ---

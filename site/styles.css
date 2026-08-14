@@ -246,6 +246,9 @@ mjx-container[display="true"] {
   color: var(--muted);
   font-family: var(--bs-font-monospace);
   font-size: 0.85rem;
+  /* A wiki page's subtitle is its source path, and the deep ones are longer
+     than a narrow column. Without this the path sets the page width. */
+  overflow-wrap: anywhere;
 }
 
 .page-facts {
@@ -470,6 +473,13 @@ div.qual-section::before {
   font-weight: 600;
   opacity: 0.65;
   font-size: 0.85rem;
+}
+
+/* The authored `title=`, emitted as body text so its mathematics typesets.
+   It sits under the kind label and reads as the rest of that heading. */
+div.qual-section > .qual-section-title {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
 }
 
 details.reveal {

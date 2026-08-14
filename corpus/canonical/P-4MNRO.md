@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebra
+  - jordan-canonical-form
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 ---

@@ -36,7 +36,9 @@ NavigationParent = RootParent | NodeParent
 class NavigationLink:
     key: str
     title: str
-    target: Path
+    # A directory in the authored wiki names a level of the trail but has no page
+    # of its own, so it appears in a breadcrumb as text rather than as a link.
+    target: Path | None
     parent: NavigationParent
 
 
@@ -76,7 +78,19 @@ class SubjectPage:
     navigation: PublicationNavigation
 
 
-PageChrome = StandardPage | SubjectPage
+@dataclass(frozen=True)
+class AuthoredPage:
+    """A wiki page: the trail down to it, and where reading goes next.
+
+    It carries no study-path sidebar. A guide is a curated handful of sections
+    and lists them all; a wiki branch runs to 105 pages, and putting that on
+    every page of the branch is a table of contents, not navigation.
+    """
+
+    navigation: PublicationNavigation
+
+
+PageChrome = StandardPage | SubjectPage | AuthoredPage
 
 
 def build_asset_catalog(root: Path) -> AssetCatalog:
@@ -126,6 +140,8 @@ def _navigation_link(
     relative_path: Path,
     link: NavigationLink,
 ) -> str:
+    if link.target is None:
+        return f"<span>{escape(link.title)}</span>"
     target = escape(_relative_url(relative_path, link.target))
     return f'<a href="{target}">{escape(link.title)}</a>'
 
@@ -134,6 +150,8 @@ def _current_navigation_link(
     relative_path: Path,
     link: NavigationLink,
 ) -> str:
+    if link.target is None:
+        return f'<span aria-current="page">{escape(link.title)}</span>'
     target = escape(_relative_url(relative_path, link.target))
     return f'<a href="{target}" aria-current="page">{escape(link.title)}</a>'
 
@@ -143,6 +161,8 @@ def _reading_navigation_link(
     link: NavigationLink,
     relation: Literal["prev", "next"],
 ) -> str:
+    if link.target is None:
+        raise ValueError(f"reading order points at a directory, which has no page: {link.key}")
     target = escape(_relative_url(relative_path, link.target))
     return f'<a href="{target}" rel="{relation}">{escape(link.title)}</a>'
 
@@ -334,6 +354,11 @@ def page_document(
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
             reading_order_html = _reading_order(relative_path, navigation)
             layout_class = "page-layout subject-layout"
+        case AuthoredPage(navigation=navigation):
+            subject_html = ""
+            breadcrumb_html = _breadcrumbs(relative_path, navigation)
+            reading_order_html = _reading_order(relative_path, navigation)
+            layout_class = "page-layout"
     return f"""<!doctype html>
 <html lang="en">
 <head>

@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebra
+  - modules
+  - semisimplicity
+  - linear-algebra
 relations: []
 review: draft
 ---

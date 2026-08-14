@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebra
+  - group-actions
+  - orbit-stabilizer
+  - permutations
 relations: []
 review: draft
 ---

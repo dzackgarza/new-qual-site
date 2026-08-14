@@ -6,7 +6,10 @@ title: "Nondegenerate Bilinear Form"
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - bilinear-forms
+  - inner-product-spaces
+  - vector-spaces
 relations:
 - kind: related-to
   target: D-O4WWN
