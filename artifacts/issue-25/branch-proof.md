@@ -70,6 +70,16 @@ Foot navigation reads `PREVIOUS Group Actions and Counting` / `NEXT Permutation 
 
 **Canonical Forms.** The panels return the whole run of canonical-form problems and exercises with their displayed matrices typeset, and the last panel returns the solution card `S-WTH5Z`.
 
+**Narrow width.** All eighteen routes swept at 375x812 with `artifacts/issue-23/narrow-width-overflow`, the publisher lane's script, reused unchanged against the same emitted site:
+
+```
+pages_loaded: 18
+mathjax_did_not_settle: 0
+pages_overflowing_375px: 0
+```
+
+Zero is the whole result: no route has a document wider than the viewport, so there is no widest-element attribution to report. Sylow Theory was also read at 375 by eye -- the study path collapses to a card above the article with every label wrapping in full, the five-step breadcrumb wraps to two lines, and the lede reflows.
+
 ## What this does not claim
 
 The guide is not proved to be the only correct decomposition of the subject; the seventeen sections and their order are a reading judgment, and the section ledes say where that judgment was exercised.
@@ -80,7 +90,7 @@ The findings below are what reading 2,073 previously unclassified cards turned u
 
 Search, the generator, the exam routes, and hint and solution disclosure states were not exercised.
 
-Mobile widths were not inspected; all renders were at 1440.
+Only two widths were measured, 1440 and 375; nothing between or beyond them.
 
 The 50 source cards are unclassified by decision, not by omission, and the decision is stated above rather than deferred.
 
