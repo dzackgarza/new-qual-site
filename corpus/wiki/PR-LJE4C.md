@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-LJE4C
 kind: proposition
-title: "Third Isomorphism Theorem"
+title: "Correspondence Theorem for Ideals"
 classification:
   areas:
   - algebra
@@ -13,7 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-:::{.proposition title="Third Isomorphism Theorem"}
+:::{.proposition title="Correspondence Theorem for Ideals"}
 For $I\in \Id(R)$, the canonical quotient map $\phi: R \to R/I$ induces a bijective correspondence:
 \[
 \correspond{
@@ -35,10 +35,11 @@ S/I \leq R/I
 
 - Every ideal in $\Id(R/I)$ is of the form $\bar{S} \da S/I$ for some $S\in \Id(R)$ containing $I$.
 
-- If $I, J \in \Id(R)$ with $I \subseteq J \subseteq R$ then there is an isomorphism
+- The **third isomorphism theorem** is the last bullet only: if $I, J \in \Id(R)$ with $I \subseteq J \subseteq R$ then there is an isomorphism
 \[
 {R/I \over J/I} \mveq {R\over J}
 .\]
 
-Moreover, $A\leq R$ is a subring containing $I$ iff $A/I \in \Id(R/I)$.
+Moreover, $A\leq R$ is a subring containing $I$ iff $A/I$ is a subring of $R/I$.
+The correspondence carries subrings to subrings and ideals to ideals; a subring of $R$ containing $I$ need not be an ideal.
 :::

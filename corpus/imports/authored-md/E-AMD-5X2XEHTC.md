@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-5X2XEHTC
 kind: exercise
-title: Show that a nilpotent operator is diagonalizable.
+title: Show that a nilpotent operator is diagonalizable if and only if it is the zero operator.
 classification:
   areas:
   - algebra
@@ -15,5 +15,5 @@ review: draft
 ---
 
 ::: {.exercise}
-Show that a nilpotent operator is diagonalizable.
+Show that a nilpotent operator is diagonalizable if and only if it is the zero operator.
 :::

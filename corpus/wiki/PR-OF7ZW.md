@@ -25,7 +25,8 @@ For a linear operator on a vector space of nonzero finite dimension, TFAE:
 
 - The operator has a matrix similar to a companion matrix.
 
-- There exists a *cyclic vector* $\vector v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 1, 2, \cdots} = V.$
+- There exists a *cyclic vector* $\vector v$ such that $\spanof_k\theset{T^j \vector v \suchthat j = 0, 1, 2, \cdots} = V.$
 
-- $T$ has $\dim V$ distinct eigenvalues
+**Not** equivalent: "$T$ has $\dim V$ distinct eigenvalues".
+That is sufficient but not necessary: a single Jordan block of size $\dim V$ has minimal polynomial equal to its characteristic polynomial and only one eigenvalue.
 :::

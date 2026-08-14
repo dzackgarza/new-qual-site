@@ -14,6 +14,8 @@ review: draft
 ---
 :::{.definition title="General Linear Group"}
 \[
-\GL_n(\RR) = \ts{ A \st A = \bar{A} }
+\GL_n(\RR) = \ts{ A \in M_n(\RR) \st \det A \neq 0 }
 .\]
+
+Equivalently, the matrices admitting a two-sided inverse over $\RR$.
 :::

@@ -19,8 +19,11 @@ J \da
 \begin{bmatrix}
 0 & 1_n
 \\
-1_n & 0
+-1_n & 0
 \end{bmatrix}
 .\]
+
+The block $-1_n$ is essential: $J$ must be **antisymmetric**.
+Taking $J$ symmetric, with $+1_n$ in the lower left, defines an orthogonal group for a split quadratic form instead.
 
 :::
