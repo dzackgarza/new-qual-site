@@ -41,35 +41,35 @@ sections:
           kind: problem
           topics:
             - zorns-lemma
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - zorns-lemma
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - number-theory
-          limit: 22
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - chinese-remainder-theorem
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - misc
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: groups-and-subgroups
@@ -117,140 +117,140 @@ sections:
           kind: definition
           topics:
             - subgroups
-          limit: 16
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - groups
-          limit: 60
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - subgroups
-          limit: 63
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - cosets-and-lagrange
-          limit: 33
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - cyclic-groups
-          limit: 60
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - normal-subgroups
-          limit: 104
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - homomorphisms
-          limit: 20
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - isomorphism-theorems
-          limit: 10
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - subgroups
-          limit: 20
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics:
             - groups
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics:
             - subgroups
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: corollary
           topics:
             - cosets-and-lagrange
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics:
             - cosets-and-lagrange
-          limit: 5
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - groups
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - cosets-and-lagrange
-          limit: 9
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - cyclic-groups
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - normal-subgroups
-          limit: 30
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - groups
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: strategy
           topics:
             - groups
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: hint
           topics:
             - groups
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: group-actions-and-counting
@@ -292,105 +292,105 @@ sections:
           kind: problem
           topics:
             - group-actions
-          limit: 49
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - orbit-stabilizer
-          limit: 24
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - conjugacy
-          limit: 42
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - centralizers-and-normalizers
-          limit: 65
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - class-equation
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - burnside-s-lemma
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - centralizers-and-normalizers
-          limit: 28
+          limit: 500
           review:
             mode: any
       - query:
           kind: definition
           topics:
             - group-actions
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics:
             - group-actions
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: theorem
           topics:
             - orbit-stabilizer
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: corollary
           topics:
             - class-equation
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: corollary
           topics:
             - burnside-s-lemma
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - orbit-stabilizer
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - burnside-s-lemma
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - group-actions
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: sylow-theory
@@ -425,28 +425,28 @@ sections:
           kind: problem
           topics:
             - sylow-theory
-          limit: 106
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - p-groups
-          limit: 49
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - sylow-theory
-          limit: 24
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - p-groups
-          limit: 18
+          limit: 500
           review:
             mode: any
   - slug: permutation-groups
@@ -481,35 +481,35 @@ sections:
           kind: problem
           topics:
             - permutations
-          limit: 86
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - simple-groups
-          limit: 34
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - partitions
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - permutations
-          limit: 26
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - simple-groups
-          limit: 10
+          limit: 500
           review:
             mode: any
   - slug: series-and-solvability
@@ -549,42 +549,42 @@ sections:
           kind: problem
           topics:
             - subgroup-series
-          limit: 10
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - solvable-groups
-          limit: 33
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - nilpotent-groups
-          limit: 15
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - commutators
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - solvable-groups
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - nilpotent-groups
-          limit: 6
+          limit: 500
           review:
             mode: any
   - slug: products-and-classification
@@ -627,77 +627,77 @@ sections:
           kind: problem
           topics:
             - group-presentations
-          limit: 21
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - free-groups
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - direct-products
-          limit: 15
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - semidirect-products
-          limit: 24
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - automorphisms
-          limit: 32
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - abelian-groups
-          limit: 60
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - classification
-          limit: 91
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - classification
-          limit: 16
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - abelian-groups
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - automorphisms
-          limit: 10
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - direct-products
-          limit: 4
+          limit: 500
           review:
             mode: any
   - slug: rings-and-ideals
@@ -745,112 +745,112 @@ sections:
           kind: definition
           topics:
             - rings
-          limit: 28
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - rings
-          limit: 64
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - ideals
-          limit: 62
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - prime-ideals
-          limit: 25
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - maximal-ideals
-          limit: 25
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - integral-domains
-          limit: 23
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - characteristic
-          limit: 19
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - ideals
-          limit: 25
+          limit: 500
           review:
             mode: any
       - query:
           kind: definition
           topics:
             - prime-ideals
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: definition
           topics:
             - maximal-ideals
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - rings
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - prime-ideals
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - maximal-ideals
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - integral-domains
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - integral-domains
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - maximal-ideals
-          limit: 2
+          limit: 500
           review:
             mode: any
   - slug: factorization-and-polynomials
@@ -900,77 +900,77 @@ sections:
           kind: definition
           topics:
             - factorization
-          limit: 14
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - factorization
-          limit: 23
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - principal-ideal-domains
-          limit: 33
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - euclidean-domains
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - polynomials
-          limit: 78
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - irreducibility-criteria
-          limit: 31
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - symmetric-functions
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - polynomials
-          limit: 15
+          limit: 500
           review:
             mode: any
       - query:
           kind: definition
           topics:
             - polynomials
-          limit: 14
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - factorization
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - principal-ideal-domains
-          limit: 6
+          limit: 500
           review:
             mode: any
   - slug: commutative-algebra
@@ -1026,126 +1026,126 @@ sections:
           kind: problem
           topics:
             - commutative-algebra
-          limit: 19
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - localization
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - local-rings
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - noetherian-rings
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - nilpotence
-          limit: 26
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - jacobson-radical
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - primary-decomposition
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - valuation-rings
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - integral-extensions
-          limit: 5
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - geometry
-          limit: 17
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - nakayamas-lemma
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - local-rings
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - nilpotence
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - noetherian-rings
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - nakayamas-lemma
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - nilpotence
-          limit: 4
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - jacobson-radical
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - geometry
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: modules
@@ -1198,63 +1198,63 @@ sections:
           kind: problem
           topics:
             - modules
-          limit: 97
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - free-modules
-          limit: 22
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - projective-modules
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - torsion
-          limit: 24
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - exact-sequences
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - homological-algebra
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - tensor-products
-          limit: 5
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - modules
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: fact
           topics:
             - modules
-          limit: 7
+          limit: 500
           review:
             mode: any
   - slug: structure-theorem
@@ -1283,21 +1283,21 @@ sections:
           kind: problem
           topics:
             - structure-theorem
-          limit: 46
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - smith-normal-form
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - structure-theorem
-          limit: 3
+          limit: 500
           review:
             mode: any
   - slug: fields-and-extensions
@@ -1367,105 +1367,105 @@ sections:
           kind: definition
           topics:
             - field-extensions
-          limit: 28
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - field-extensions
-          limit: 130
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - fields
-          limit: 56
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - splitting-fields
-          limit: 69
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - separability
-          limit: 27
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - finite-fields
-          limit: 55
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - roots-of-unity
-          limit: 43
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - transcendence
-          limit: 5
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - field-extensions
-          limit: 24
+          limit: 500
           review:
             mode: any
       - query:
           kind: definition
           topics:
             - fields
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics:
             - fields
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics:
             - finite-fields
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics:
             - separability
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - fields
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - finite-fields
-          limit: 8
+          limit: 500
           review:
             mode: any
   - slug: galois-theory
@@ -1509,35 +1509,35 @@ sections:
           kind: definition
           topics:
             - galois-theory
-          limit: 9
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - galois-theory
-          limit: 171
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - galois-theory
-          limit: 17
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics:
             - galois-theory
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - galois-theory
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: linear-algebra
@@ -1598,147 +1598,147 @@ sections:
           kind: problem
           topics:
             - linear-algebra
-          limit: 39
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - vector-spaces
-          limit: 12
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - bases
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - matrices
-          limit: 66
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - matrix-groups
-          limit: 26
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - determinants
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - trace
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - rank-and-nullity
-          limit: 13
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - dual-spaces
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - eigenvalues-and-eigenvectors
-          limit: 38
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - diagonalization
-          limit: 30
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - inner-product-spaces
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - bilinear-forms
-          limit: 11
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - quadratic-forms
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - functional-analysis
-          limit: 3
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - counterexamples
-          limit: 31
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - matrices
-          limit: 7
+          limit: 500
           review:
             mode: any
       - query:
           kind: proposition
           topics:
             - dual-spaces
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: example
           topics:
             - matrices
-          limit: 2
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - diagonalization
-          limit: 10
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - bilinear-forms
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: canonical-forms
@@ -1781,49 +1781,49 @@ sections:
           kind: problem
           topics:
             - canonical-forms
-          limit: 20
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - minimal-and-characteristic-polynomials
-          limit: 43
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - jordan-canonical-form
-          limit: 38
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - rational-canonical-form
-          limit: 16
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - jordan-canonical-form
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: exercise
           topics:
             - minimal-and-characteristic-polynomials
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - jordan-canonical-form
-          limit: 1
+          limit: 500
           review:
             mode: any
   - slug: semisimplicity-and-representations
@@ -1847,55 +1847,55 @@ sections:
           kind: definition
           topics:
             - semisimplicity
-          limit: 8
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - semisimplicity
-          limit: 30
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - algebras
-          limit: 18
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - group-rings
-          limit: 6
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - representation-theory
-          limit: 50
+          limit: 500
           review:
             mode: any
       - query:
           kind: problem
           topics:
             - character-theory
-          limit: 17
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - semisimplicity
-          limit: 1
+          limit: 500
           review:
             mode: any
       - query:
           kind: solution
           topics:
             - character-theory
-          limit: 1
+          limit: 500
           review:
             mode: any
