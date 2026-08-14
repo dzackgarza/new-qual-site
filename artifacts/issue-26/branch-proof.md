@@ -48,7 +48,7 @@ The table is the pinned-build measurement:
 | proposition | 103 | 103 |
 | theorem | 95 | 96 |
 | definition | 71 | 71 |
-| fact | 39 | 50 |
+| fact | 50 | 50 |
 | exercise | 48 | 49 |
 | solution | 36 | 36 |
 | example | 14 | 14 |
@@ -57,11 +57,10 @@ The table is the pinned-build measurement:
 | corollary | 4 | 4 |
 | lemma | 2 | 2 |
 
-934 of the 954 reached at the pinned revision.
-Nine of the twenty misses are exactly the nine this lane deferred, listed under nonclaims below.
-The other eleven are trigonometric-value flashcards (`FF-ATMHV FF-CIESS FF-CLFAB FF-SF7VN FF-TGHJ5 FF-TGTS7 FF-VT2E7 FF-W2TS2 FF-XEQFR FF-YBIQV FF-ZQFSR`) that entered the area in `1d49862a`, the math-flashcards ingest, after this lane's classification sweep had finished; they carry no topic yet, so no panel can match them.
-They are new unclassified cards in the area, not deferrals of this lane, and classifying them belongs to whoever owns that ingest.
-The count is a measurement at one revision of a corpus other lanes are still growing, which is why the revision is pinned.
+945 of the 954 reached, and the nine misses are exactly the nine this lane deferred, listed under nonclaims below.
+The pin at `093fe0a4` first measured 934: eleven trigonometric-value flashcards (`FF-ATMHV FF-CIESS FF-CLFAB FF-SF7VN FF-TGHJ5 FF-TGTS7 FF-VT2E7 FF-W2TS2 FF-XEQFR FF-YBIQV FF-ZQFSR`) had entered the area in `1d49862a` and been missed by the original enumeration, so they carried no topic and no panel could match them.
+They were classified afterwards in `1001bdbb`, which also gave the function-sequences section the `roots-of-unity` topic and raised its fact panel from 17 to 28; the table above is the re-measurement at that commit, verified in a clean worktree.
+No card of a page-bearing kind in the area is now unreachable except by deliberate deferral.
 
 The method that makes this checkable: the twelve sections partition the topic vocabulary.
 Every topic carried by any Real-Analysis-area card belongs to exactly one section, and each section carries one panel per card kind present under its topics, with the panel limit set to the exact count.
