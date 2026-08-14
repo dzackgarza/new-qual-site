@@ -6,7 +6,9 @@ title: 'The closure of a connected set is connected'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - closure
 relations: []
 review: draft
 ---

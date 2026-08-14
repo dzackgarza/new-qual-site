@@ -6,7 +6,9 @@ title: 'The Hausdorff criterion for a product of two spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - hausdorff-spaces
+  - product-topology
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'A wedge of two spheres as a covering space (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

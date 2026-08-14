@@ -6,7 +6,10 @@ title: 'Collapse the boundary of a Möbius band'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - quotient-spaces
+  - classification
 relations: []
 review: draft
 ---

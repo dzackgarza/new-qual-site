@@ -6,7 +6,10 @@ title: 'Fundamental groups of punctured products and a wedge of projective plane
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
+  - homotopy
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'A torus with a disk attached along the diagonal'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
+  - cell-complexes
 relations: []
 review: draft
 ---

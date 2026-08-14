@@ -6,7 +6,10 @@ title: 'Connected covering spaces of the sphere with antipodal poles identified'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - covering-spaces
+  - quotient-spaces
 relations: []
 review: draft
 ---

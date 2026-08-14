@@ -6,7 +6,9 @@ title: 'Relative openness in an open subspace'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - subspace-topology
+  - point-set
 relations: []
 review: draft
 ---

@@ -6,7 +6,11 @@ title: "Compute the homology and cohomology of a closed, connected, oriented 3\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - poincare-duality
+  - homology
+  - cohomology
+  - manifolds
 relations: []
 review: draft
 ---

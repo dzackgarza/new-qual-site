@@ -6,7 +6,9 @@ title: 'No finite-sheeted covering of the circle has the stated index'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

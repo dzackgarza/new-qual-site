@@ -6,7 +6,9 @@ title: 'A compact set meets each fiber of a cover in finitely many points'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - compactness
 relations: []
 review: draft
 ---

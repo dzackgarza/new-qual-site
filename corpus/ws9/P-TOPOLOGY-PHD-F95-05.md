@@ -6,7 +6,9 @@ title: 'Compactness of the closed unit interval'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

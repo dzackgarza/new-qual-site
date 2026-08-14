@@ -6,7 +6,10 @@ title: 'A deformation-retract exercise in the complement of a circle'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

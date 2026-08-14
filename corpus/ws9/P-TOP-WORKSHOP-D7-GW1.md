@@ -6,7 +6,10 @@ title: 'Realize a presented group as a fundamental group (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - cell-complexes
+  - groups
 relations: []
 review: draft
 ---

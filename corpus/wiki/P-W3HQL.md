@@ -6,7 +6,10 @@ title: "For any natural number $g$ let $\\Sigma_g$ denote the (compact, orienta\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - surfaces
+  - euler-characteristic
 relations: []
 review: draft
 ---

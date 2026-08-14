@@ -6,7 +6,9 @@ title: 'The open unit interval is not compact'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Hausdorffness of the radial quotient of the closed disk'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

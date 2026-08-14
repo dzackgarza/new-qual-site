@@ -6,7 +6,10 @@ title: "State the Mayer-Vietoris theorem."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
+  - manifolds
 relations: []
 review: draft
 ---

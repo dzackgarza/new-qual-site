@@ -6,7 +6,9 @@ title: 'Infinite sets and limit points in compact spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - limits
 relations: []
 review: draft
 ---

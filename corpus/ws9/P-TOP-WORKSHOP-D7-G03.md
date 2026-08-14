@@ -6,7 +6,10 @@ title: 'A quotient identifying points of a torus and a sphere'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - quotient-spaces
 relations: []
 review: draft
 ---

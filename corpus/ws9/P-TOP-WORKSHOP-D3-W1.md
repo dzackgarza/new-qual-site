@@ -6,7 +6,9 @@ title: 'Metric spaces are Hausdorff (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

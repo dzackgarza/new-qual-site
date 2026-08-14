@@ -6,7 +6,10 @@ title: "Show that if $M^\\text{orientable} \\mapsvia{\\pi_k} M^\\text{non-orient
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - orientation
+  - covering-spaces
+  - manifolds
 relations: []
 review: draft
 ---

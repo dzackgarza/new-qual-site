@@ -6,7 +6,9 @@ title: 'Euler characteristic of the n-sphere from a standard triangulation'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - euler-characteristic
+  - cell-complexes
 relations: []
 review: draft
 ---

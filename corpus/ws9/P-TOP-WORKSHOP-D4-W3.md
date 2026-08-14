@@ -6,7 +6,10 @@ title: 'Spaces in which open sets are compact (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - counterexamples
+  - point-set
 relations: []
 review: draft
 ---

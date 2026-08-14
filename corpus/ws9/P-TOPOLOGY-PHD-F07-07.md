@@ -6,7 +6,9 @@ title: 'The real line is not compact'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

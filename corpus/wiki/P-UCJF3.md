@@ -6,7 +6,9 @@ title: "Prove the following portion of van Kampen's theorem."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - van-kampen
+  - fundamental-group
 relations: []
 review: draft
 ---

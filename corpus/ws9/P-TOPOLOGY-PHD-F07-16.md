@@ -6,7 +6,10 @@ title: 'S^1 is a retract of the Möbius band'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - surfaces
+  - quotient-spaces
 relations: []
 review: draft
 ---

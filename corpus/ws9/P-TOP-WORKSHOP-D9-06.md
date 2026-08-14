@@ -6,7 +6,9 @@ title: 'Use the Meyer–Vietoris sequence to calculate the homology of a wedge'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - mayer-vietoris
+  - homology
 relations: []
 review: draft
 ---

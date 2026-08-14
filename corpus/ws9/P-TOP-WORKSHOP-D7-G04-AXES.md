@@ -6,7 +6,10 @@ title: 'The fundamental group of three-dimensional space with its axes removed'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
+  - homotopy
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Products of closed sets and the product topology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - product-topology
+  - closure
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'The compact-complement topology is coarser than a Hausdorff topology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - point-set
 relations: []
 review: draft
 ---

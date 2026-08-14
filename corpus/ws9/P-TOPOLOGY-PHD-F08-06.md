@@ -6,7 +6,9 @@ title: 'Closed-map and open-map criteria for identification maps'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - continuity
 relations: []
 review: draft
 ---

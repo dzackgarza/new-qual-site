@@ -6,7 +6,10 @@ title: 'Build a Δ-complex and chain complex after identifying the vertices of a
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - homology
+  - quotient-spaces
 relations: []
 review: draft
 ---

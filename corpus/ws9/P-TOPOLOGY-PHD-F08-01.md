@@ -6,7 +6,9 @@ title: 'Compact subsets of metric spaces are closed and bounded'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - metric-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Seifert–van Kampen and the spheres'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - van-kampen
+  - fundamental-group
 relations: []
 review: draft
 ---

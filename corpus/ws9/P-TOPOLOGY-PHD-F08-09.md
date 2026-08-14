@@ -6,7 +6,9 @@ title: 'Connectedness of the real line'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

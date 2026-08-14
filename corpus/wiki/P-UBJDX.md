@@ -6,7 +6,10 @@ title: "Let $X$ be $T^2$ with a 2-cell attached to the interior along a longit\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - covering-spaces
+  - cell-complexes
 relations: []
 review: draft
 ---

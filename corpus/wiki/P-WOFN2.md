@@ -6,7 +6,10 @@ title: "Let $X$ consist of two copies of the solid torus $\\DD^2 \\times S^1$, g
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
+  - manifolds
 relations: []
 review: draft
 ---

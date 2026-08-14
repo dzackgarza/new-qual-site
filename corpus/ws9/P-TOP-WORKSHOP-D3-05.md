@@ -6,7 +6,9 @@ title: 'Completely normal spaces and normal subsets'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - subspace-topology
 relations: []
 review: draft
 ---

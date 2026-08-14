@@ -6,7 +6,9 @@ title: 'The pasting lemma for two closed subspaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - continuity
+  - subspace-topology
 relations: []
 review: draft
 ---

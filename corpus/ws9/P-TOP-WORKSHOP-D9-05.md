@@ -6,7 +6,9 @@ title: 'Compute the homology of the complement of two unlinked circles in R3'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations: []
 review: draft
 ---

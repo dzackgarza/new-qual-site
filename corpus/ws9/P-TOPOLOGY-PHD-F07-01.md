@@ -6,7 +6,9 @@ title: 'Open balls in a metric space are open'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - point-set
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'All fibers of a cover over a connected base have the same finite cardina
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - connectedness
 relations: []
 review: draft
 ---

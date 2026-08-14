@@ -6,7 +6,9 @@ title: 'Separating a closed set and a compact set in a regular space'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - compactness
 relations: []
 review: draft
 ---

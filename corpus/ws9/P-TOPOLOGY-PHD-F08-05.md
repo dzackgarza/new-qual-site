@@ -6,7 +6,9 @@ title: 'Closed subsets of compact spaces and compact subsets of Hausdorff spaces
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

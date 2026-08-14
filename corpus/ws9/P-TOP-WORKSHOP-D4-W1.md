@@ -6,7 +6,9 @@ title: 'A neighborhood characterization of closure (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
+  - point-set
 relations: []
 review: draft
 ---

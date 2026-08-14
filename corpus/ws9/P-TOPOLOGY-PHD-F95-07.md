@@ -6,7 +6,10 @@ title: 'Invariance of dimension for R, R^2, and R^3'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - euclidean-spaces
+  - fundamental-group
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Compute the homology of a sphere with its polar interval adjoined'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - mayer-vietoris
 relations: []
 review: draft
 ---

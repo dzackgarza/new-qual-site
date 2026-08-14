@@ -6,7 +6,9 @@ title: 'A continuous bijective open (or closed) map is a homeomorphism (workshop
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homeomorphisms
+  - continuity
 relations: []
 review: draft
 ---

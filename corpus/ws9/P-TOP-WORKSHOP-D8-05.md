@@ -6,7 +6,9 @@ title: 'A pathwise continuity criterion for a lift into a cover'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - continuity
 relations: []
 review: draft
 ---

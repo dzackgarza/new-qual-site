@@ -6,7 +6,10 @@ title: 'Countable dense products in the product topology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - product-topology
 relations: []
 review: draft
 ---

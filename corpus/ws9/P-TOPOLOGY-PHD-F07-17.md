@@ -6,7 +6,9 @@ title: 'Homology of the hollow sphere S^2'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

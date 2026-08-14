@@ -6,7 +6,10 @@ title: 'Compute the fundamental group and homology of a degree-four circle mappi
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - quotient-spaces
 relations: []
 review: draft
 ---

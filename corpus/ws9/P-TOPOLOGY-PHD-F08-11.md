@@ -6,7 +6,9 @@ title: 'Connected components in a locally connected space are open'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - point-set
 relations: []
 review: draft
 ---

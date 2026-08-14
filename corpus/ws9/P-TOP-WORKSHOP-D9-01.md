@@ -6,7 +6,10 @@ title: 'Compute the homology of a torus with each boundary collapsed'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - quotient-spaces
+  - surfaces
 relations: []
 review: draft
 ---

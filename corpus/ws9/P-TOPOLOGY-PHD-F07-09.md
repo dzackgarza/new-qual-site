@@ -6,7 +6,10 @@ title: 'Closed subspaces of locally compact Hausdorff spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - subspace-topology
 relations: []
 review: draft
 ---

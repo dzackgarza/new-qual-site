@@ -6,7 +6,10 @@ title: 'A diagonal in the countable-closed and finite-complement topologies'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - product-topology
+  - closure
 relations: []
 review: draft
 ---

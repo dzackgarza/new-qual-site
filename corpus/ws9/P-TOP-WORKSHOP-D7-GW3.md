@@ -6,7 +6,10 @@ title: 'Compute the torus fundamental group in two ways (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - surfaces
+  - van-kampen
 relations: []
 review: draft
 ---

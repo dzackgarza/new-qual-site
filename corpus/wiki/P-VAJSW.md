@@ -6,7 +6,10 @@ title: "Prove that every compact, Hausdorff topological space is normal."
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - separation-axioms
 relations: []
 review: draft
 ---

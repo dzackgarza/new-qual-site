@@ -6,7 +6,10 @@ title: "What is the degree of the antipodal map on the $n$-sphere?"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - cell-complexes
+  - covering-spaces
 relations: []
 review: draft
 ---

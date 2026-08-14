@@ -6,7 +6,10 @@ title: 'Nonhomeomorphic spaces with isomorphic nontrivial fundamental groups (wa
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homeomorphisms
+  - counterexamples
 relations: []
 review: draft
 ---

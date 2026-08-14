@@ -6,7 +6,9 @@ title: "Let $U \\subset \\RR^n$ be an open set which is bounded in the standard\
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - hausdorff-spaces
 relations: []
 review: draft
 ---

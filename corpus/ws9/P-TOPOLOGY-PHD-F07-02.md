@@ -6,7 +6,9 @@ title: 'Continuity of the metric function'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - continuity
 relations: []
 review: draft
 ---

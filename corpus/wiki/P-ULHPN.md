@@ -6,7 +6,8 @@ title: "Compute $\\ext(\\ZZ \\oplus \\ZZ/2 \\oplus \\ZZ/3, \\ZZ \\oplus \\ZZ/4 \
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homological-algebra
 relations: []
 review: draft
 ---

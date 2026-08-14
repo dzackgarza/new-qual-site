@@ -6,7 +6,10 @@ title: 'A complete bipartite graph with 2-cells attached along four-edge cycles'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - cell-complexes
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

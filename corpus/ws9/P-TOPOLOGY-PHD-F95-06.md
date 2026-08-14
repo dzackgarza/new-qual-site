@@ -6,7 +6,10 @@ title: 'Strong deformation retracts induce fundamental-group isomorphisms'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - fundamental-group
+  - homotopy
 relations: []
 review: draft
 ---

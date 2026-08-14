@@ -6,7 +6,10 @@ title: 'The finite-complement topology and the identity map (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - continuity
+  - point-set
 relations: []
 review: draft
 ---

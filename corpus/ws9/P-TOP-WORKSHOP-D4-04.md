@@ -6,7 +6,10 @@ title: 'A compact union of two Hausdorff subspaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - hausdorff-spaces
+  - counterexamples
 relations: []
 review: draft
 ---

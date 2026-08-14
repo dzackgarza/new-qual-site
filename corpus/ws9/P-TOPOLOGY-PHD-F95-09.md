@@ -6,7 +6,10 @@ title: 'Universal cover and fundamental group of a wedge with RP^2'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - fundamental-group
+  - van-kampen
 relations: []
 review: draft
 ---

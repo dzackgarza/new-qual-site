@@ -6,7 +6,10 @@ title: 'Projection from a product with a compact factor is closed'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - product-topology
+  - continuity
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: "Let $X$ be the topological space constructed by attaching a closed 2-d\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fixed-points
+  - covering-spaces
+  - cell-complexes
 relations: []
 review: draft
 ---

@@ -6,7 +6,10 @@ title: 'Compute the fundamental group and homology of the complement of a circle
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - homology
+  - homotopy
 relations: []
 review: draft
 ---

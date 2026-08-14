@@ -6,7 +6,9 @@ title: 'Covering maps are open maps'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - continuity
 relations: []
 review: draft
 ---

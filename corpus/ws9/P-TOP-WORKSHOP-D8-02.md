@@ -6,7 +6,9 @@ title: 'The pullback of a covering map is a covering map'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - product-topology
 relations: []
 review: draft
 ---

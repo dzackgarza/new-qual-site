@@ -6,7 +6,10 @@ title: 'A separable metric space is second countable'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - countability
+  - density
+  - metric-spaces
 relations: []
 review: draft
 ---

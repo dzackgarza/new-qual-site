@@ -6,7 +6,8 @@ title: 'Associativity of the product of loop homotopy classes'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
 relations: []
 review: draft
 ---

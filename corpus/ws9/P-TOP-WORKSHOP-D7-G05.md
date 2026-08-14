@@ -6,7 +6,10 @@ title: 'An index-four subgroup and covering space of a free group'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - covering-spaces
+  - groups
+  - cell-complexes
 relations: []
 review: draft
 ---

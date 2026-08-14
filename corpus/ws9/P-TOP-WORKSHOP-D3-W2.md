@@ -6,7 +6,8 @@ title: 'The separation-axiom implication chain (workshop warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
 relations: []
 review: draft
 ---

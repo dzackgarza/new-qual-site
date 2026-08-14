@@ -6,7 +6,8 @@ title: 'Monotonicity of closure'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - closure
 relations: []
 review: draft
 ---

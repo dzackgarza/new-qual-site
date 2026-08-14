@@ -6,7 +6,9 @@ title: 'Connectedness from connected fibers of a quotient map'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - connectedness
+  - quotient-spaces
 relations: []
 review: draft
 ---

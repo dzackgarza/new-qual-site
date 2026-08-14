@@ -6,7 +6,9 @@ title: "Main Idea: Linear homotopy fails continuity without the\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - degree
+  - homotopy
 relations: []
 review: draft
 ---

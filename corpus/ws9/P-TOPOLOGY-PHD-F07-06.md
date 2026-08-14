@@ -6,7 +6,9 @@ title: 'Compactness of the closed interval from the open-cover definition'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - compactness
+  - euclidean-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Continuity of a coordinatewise map between products'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - product-topology
+  - continuity
 relations: []
 review: draft
 ---

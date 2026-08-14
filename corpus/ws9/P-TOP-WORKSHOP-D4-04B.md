@@ -6,7 +6,9 @@ title: 'The unit sphere quotient by height fibers is an interval'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - homeomorphisms
 relations: []
 review: draft
 ---

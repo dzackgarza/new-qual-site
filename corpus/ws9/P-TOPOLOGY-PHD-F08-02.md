@@ -6,7 +6,10 @@ title: 'Complete subspaces of complete metric spaces'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - completeness
+  - metric-spaces
+  - subspace-topology
 relations: []
 review: draft
 ---

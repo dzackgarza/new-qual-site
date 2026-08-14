@@ -6,7 +6,9 @@ title: "Define an equivalence relation $\\sim$ on $\\RR$ by $x \\sim y$ if and o
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - point-set
 relations: []
 review: draft
 ---

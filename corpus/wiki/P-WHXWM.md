@@ -6,7 +6,9 @@ title: "- Prove the following implications of separation axioms, and show that\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - separation-axioms
+  - counterexamples
 relations: []
 review: draft
 ---

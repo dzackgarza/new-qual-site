@@ -6,7 +6,9 @@ title: "Compute $H_0$ and $H_1$ of the complete graph $K_5$ formed by taking f\u
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

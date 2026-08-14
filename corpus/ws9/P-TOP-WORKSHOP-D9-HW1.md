@@ -6,7 +6,8 @@ title: 'Compute the homology groups of all spheres (warm-up)'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
 relations: []
 review: draft
 ---

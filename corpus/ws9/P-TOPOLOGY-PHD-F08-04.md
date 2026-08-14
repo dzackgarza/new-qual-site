@@ -6,7 +6,9 @@ title: 'Continuity of the distance to a subset'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - metric-spaces
+  - continuity
 relations: []
 review: draft
 ---

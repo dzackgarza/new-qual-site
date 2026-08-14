@@ -6,7 +6,10 @@ title: 'The fundamental group of the triangular parachute'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - cell-complexes
+  - van-kampen
 relations: []
 review: draft
 ---

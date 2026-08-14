@@ -6,7 +6,10 @@ title: 'Fundamental group of two spheres with corresponding poles identified'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - van-kampen
+  - fundamental-group
+  - quotient-spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,9 @@ title: 'Non-surjective maps into a sphere are homotopic'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
+  - degree
 relations: []
 review: draft
 ---

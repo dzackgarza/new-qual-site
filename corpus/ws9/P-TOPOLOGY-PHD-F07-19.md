@@ -6,7 +6,10 @@ title: 'Removing a point from a connected manifold of dimension at least 3'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - manifolds
+  - van-kampen
 relations: []
 review: draft
 ---

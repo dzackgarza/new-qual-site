@@ -6,7 +6,10 @@ title: "The polygonal symbol of a certain surface without boundary\u2026"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - surfaces
+  - classification
+  - euler-characteristic
 relations: []
 review: draft
 ---

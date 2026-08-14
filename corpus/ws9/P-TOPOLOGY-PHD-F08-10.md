@@ -6,7 +6,9 @@ title: 'The rational-translation quotient of R has the indiscrete topology'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - quotient-spaces
+  - point-set
 relations: []
 review: draft
 ---

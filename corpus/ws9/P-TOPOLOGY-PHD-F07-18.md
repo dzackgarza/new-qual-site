@@ -6,7 +6,10 @@ title: 'Fundamental group of a sphere with three points removed'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - fundamental-group
+  - van-kampen
+  - surfaces
 relations: []
 review: draft
 ---

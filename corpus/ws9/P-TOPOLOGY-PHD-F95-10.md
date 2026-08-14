@@ -6,7 +6,9 @@ title: 'The projective plane does not retract to the circle'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - retracts
+  - fundamental-group
 relations: []
 review: draft
 ---

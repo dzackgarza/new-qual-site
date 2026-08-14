@@ -6,7 +6,8 @@ title: 'A pair of maps from S^1 to S^2 are homotopic'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homotopy
 relations: []
 review: draft
 ---
