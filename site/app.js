@@ -80,7 +80,9 @@
         row.hidden = !terms.every((term) => row.dataset.search.includes(term));
       }
     };
-    problemFilter.value = new URLSearchParams(location.search).get("q") ?? "";
+    // No `q` in the URL is a real state, not a missing value: it means no filter.
+    const query = new URLSearchParams(location.search).get("q");
+    problemFilter.value = query === null ? "" : query;
     applyFilter();
     problemFilter.addEventListener("input", () => {
       applyFilter();

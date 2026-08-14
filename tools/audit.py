@@ -113,7 +113,9 @@ def check_degenerate_titles(parsed: list[ParsedCard]) -> Check:
     for item in parsed:
         if item.card.id in flagged or item.card.kind in COMPOSED_KINDS:
             continue
-        shared.setdefault(item.card.title, []).append(item.card.id)
+        if item.card.title not in shared:
+            shared[item.card.title] = []
+        shared[item.card.title].append(item.card.id)
     for title, ids in shared.items():
         if len(ids) < 2 or len({bodies[i].strip() for i in ids}) < 2:
             continue

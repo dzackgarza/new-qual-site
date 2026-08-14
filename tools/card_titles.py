@@ -364,7 +364,15 @@ def main(argv: list[str] | None = None) -> int:
     titles = retitle(statements, pinned)
     titles.update(_sitting_titles(meta, before))
     changed = [card_id for card_id, card in meta.items() if card_id in titles and titles[card_id] != str(card["title"])]
-    after = {card_id: degenerate(titles.get(card_id, str(card["title"])), authored_title(bodies[card_id])) for card_id, card in meta.items()}
+    # A card is absent from `titles` when it was never a retitle candidate; its
+    # current title is what the "after" verdict must judge.
+    after = {
+        card_id: degenerate(
+            titles[card_id] if card_id in titles else str(card["title"]),
+            authored_title(bodies[card_id]),
+        )
+        for card_id, card in meta.items()
+    }
     for label, verdicts in (("before", before), ("after", after)):
         counts = collections.Counter(reason for reason in verdicts.values() if reason)
         print(f"degenerate {label}: {sum(counts.values())} of {len(verdicts)}  {dict(counts)}")

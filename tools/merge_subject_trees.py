@@ -120,16 +120,24 @@ def inventory() -> tuple[dict[str, list[Path]], dict[str, list[Path]]]:
         rel = path.relative_to(WIKI)
         top = rel.parts[0]
         if top in SUBJECT_OF:
-            numbered.setdefault(SUBJECT_OF[top], []).append(rel)
+            subject = SUBJECT_OF[top]
+            if subject not in numbered:
+                numbered[subject] = []
+            numbered[subject].append(rel)
         elif top in NAMED_ROOTS:
-            named.setdefault(top, []).append(rel)
+            if top not in named:
+                named[top] = []
+            named[top].append(rel)
     return numbered, named
 
 
 def _index(pool: list[Path], of_name: Callable[[str], str]) -> dict[str, list[Path]]:
     out: dict[str, list[Path]] = {}
     for rel in pool:
-        out.setdefault(of_name(rel.name), []).append(rel)
+        name = of_name(rel.name)
+        if name not in out:
+            out[name] = []
+        out[name].append(rel)
     return out
 
 
@@ -287,7 +295,9 @@ def merge_text(base_text: str, incoming_text: str) -> tuple[str, list[str], list
         if at < 0:
             tail.extend(pending)
         else:
-            inserts.setdefault(at, []).extend(pending)
+            if at not in inserts:
+                inserts[at] = []
+            inserts[at].extend(pending)
         pending.clear()
 
     for block in segment(incoming_text):

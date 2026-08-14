@@ -221,7 +221,8 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
             topic = slug(tag)
             if not topic:
                 raise ValueError(f"MakeMeAQual row {sequence} has an empty topic slug for {tag!r}")
-            topic = aliases.get(topic, topic)
+            if topic in aliases:
+                topic = aliases[topic]
             if topic not in registered:
                 unregistered.setdefault(topic, sequence)
             if topic not in topics:
