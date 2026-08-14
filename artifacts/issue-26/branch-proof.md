@@ -44,7 +44,7 @@ The table is the pinned-build measurement:
 
 | kind | reached | in area |
 | --- | ---: | ---: |
-| problem | 510 | 517 |
+| problem | 511 | 517 |
 | proposition | 103 | 103 |
 | theorem | 95 | 96 |
 | definition | 71 | 71 |
@@ -57,13 +57,14 @@ The table is the pinned-build measurement:
 | corollary | 4 | 4 |
 | lemma | 2 | 2 |
 
-945 of the 954 reached, and the nine misses are exactly the nine this lane deferred, listed under nonclaims below.
+946 of the 954 reached, and the eight misses are cards this lane deferred, listed under nonclaims below; the ninth deferral, `P-RA-WORKSHOP-D3-SEQ-15`, was classified by another lane and is now reached.
 The pin at `093fe0a4` first measured 934: eleven trigonometric-value flashcards (`FF-ATMHV FF-CIESS FF-CLFAB FF-SF7VN FF-TGHJ5 FF-TGTS7 FF-VT2E7 FF-W2TS2 FF-XEQFR FF-YBIQV FF-ZQFSR`) had entered the area in `1d49862a` and been missed by the original enumeration, so they carried no topic and no panel could match them.
-They were classified afterwards in `1001bdbb`, which also gave the function-sequences section the `roots-of-unity` topic and raised its fact panel from 17 to 28; the table above is the re-measurement at that commit, verified in a clean worktree.
+They were classified afterwards in `1001bdbb`, which also gave the function-sequences section the `roots-of-unity` topic; the table above is a re-measurement after the panel cap, verified in a clean worktree.
 No card of a page-bearing kind in the area is now unreachable except by deliberate deferral.
 
 The method that makes this checkable: the twelve sections partition the topic vocabulary.
-Every topic carried by any Real-Analysis-area card belongs to exactly one section, and each section carries one panel per card kind present under its topics, with the panel limit set to the exact count.
+Every topic carried by any Real-Analysis-area card belongs to exactly one section, and each section carries one panel per card kind present under its topics, every panel capped uniformly at 500 against a largest panel of 158.
+The panels first carried limits equal to their exact match counts, which made each one a tripwire that would silently drop the next card added to its section; `1bb9750e` replaced all ninety-five with the cap, so reachability is decided by the topic partition rather than by numbers that age.
 A card carrying topics from several sections appears in several, which is wanted; a card carrying none would be unreachable, which is why the classification had to come first.
 
 ## Source pages and the occurrence layer
@@ -115,15 +116,16 @@ The heading is emitted by shared site code rather than by the manifest, so this 
 
 ## What this does not claim
 
-The nine cards below are unclassified and therefore unreachable from the guide.
-Seven hold only screenshot links where a problem statement should be, one is a bare cross-reference to another card, and one asks the reader to prove three theorems that do not exist in the corpus:
+The eight cards below are unclassified and therefore unreachable from the guide.
+Seven hold only screenshot links where a problem statement should be, and one is a bare cross-reference to another card:
 
 ```
 P-4FH62  P-FYFEC  P-HKQHN  P-NLNZ3  P-VLG4M     screenshot-only problem cards
 E-IAQ6D  T-TRW6N                                 screenshot-only exercise and theorem
 P-XKFPD                                          body is only "See \cref{hilbert_space_exam_question}"
-P-RA-WORKSHOP-D3-SEQ-15                          "Prove Theorems 2.1, 2.2, and 2.3"
 ```
+
+A ninth, `P-RA-WORKSHOP-D3-SEQ-15`, was deferred here for asking the reader to prove three theorems absent from the corpus; another lane has since classified it, so it is reached and the missing theorems remain a finding rather than a reachability gap.
 
 Eight occurrence cards are likewise unclassified: six mirror the deferred problems above, and three instantiate problems whose own area is complex-analysis or topology and so belong to another lane's adjudication.
 
