@@ -6,7 +6,9 @@ title: P-AG7QC at UGA complex-analysis Fall 2019
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
+  - polynomials
 relations:
 - kind: instance-of
   target: P-AG7QC

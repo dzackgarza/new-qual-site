@@ -6,7 +6,10 @@ title: P-7UTDI at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - open-mapping-theorem
+  - maximum-modulus-principle
 relations:
 - kind: instance-of
   target: P-7UTDI

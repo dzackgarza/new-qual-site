@@ -6,7 +6,9 @@ title: P-7E2Z6 at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
 relations:
 - kind: instance-of
   target: P-7E2Z6

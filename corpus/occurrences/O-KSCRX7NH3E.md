@@ -6,7 +6,10 @@ title: P-F7HCN at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - convergence-tests
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-F7HCN

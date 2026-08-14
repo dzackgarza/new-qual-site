@@ -6,7 +6,10 @@ title: P-DKYVD at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - contour-integration
+  - residues
 relations:
 - kind: instance-of
   target: P-DKYVD

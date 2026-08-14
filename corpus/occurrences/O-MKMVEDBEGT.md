@@ -6,7 +6,11 @@ title: P-FIOQC at Spring 2020 HW 3
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - residues
+  - trigonometry
+  - poles
 relations:
 - kind: instance-of
   target: P-FIOQC

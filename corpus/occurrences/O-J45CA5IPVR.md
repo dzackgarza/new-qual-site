@@ -6,7 +6,11 @@ title: P-KHNIB at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - poles
 relations:
 - kind: instance-of
   target: P-KHNIB

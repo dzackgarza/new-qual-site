@@ -6,7 +6,10 @@ title: P-GK4F6 at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - morera
+  - holomorphic-functions
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-GK4F6

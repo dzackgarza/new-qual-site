@@ -6,7 +6,10 @@ title: P-AQRVL at UGA complex-analysis Fall 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
+  - power-series
 relations:
 - kind: instance-of
   target: P-AQRVL

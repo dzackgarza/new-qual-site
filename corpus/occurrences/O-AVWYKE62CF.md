@@ -6,7 +6,10 @@ title: P-PBXAK at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - harmonic-functions
+  - open-mapping-theorem
 relations:
 - kind: instance-of
   target: P-PBXAK

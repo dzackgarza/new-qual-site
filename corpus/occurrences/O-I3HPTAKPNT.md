@@ -6,7 +6,10 @@ title: P-2HNMA at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - pdes
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-2HNMA

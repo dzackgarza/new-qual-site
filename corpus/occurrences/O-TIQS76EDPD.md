@@ -6,7 +6,11 @@ title: P-VUVYD at UGA complex-analysis Spring 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - cauchy-riemann
+  - entire-functions
+  - polynomials
 relations:
 - kind: instance-of
   target: P-VUVYD

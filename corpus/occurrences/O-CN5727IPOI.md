@@ -6,7 +6,10 @@ title: P-EH22O at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - conformal-maps
+  - integrals
 relations:
 - kind: instance-of
   target: P-EH22O

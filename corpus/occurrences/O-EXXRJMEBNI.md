@@ -6,7 +6,10 @@ title: P-JTON2 at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
+  - cauchy-riemann
 relations:
 - kind: instance-of
   target: P-JTON2

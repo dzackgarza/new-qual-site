@@ -6,7 +6,11 @@ title: P-3JE4U at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations:
 - kind: instance-of
   target: P-3JE4U

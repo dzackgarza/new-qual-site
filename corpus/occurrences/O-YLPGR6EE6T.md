@@ -6,7 +6,11 @@ title: P-SLXYN at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - liouville-s-theorem
+  - entire-functions
+  - residues
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-SLXYN

@@ -6,7 +6,10 @@ title: P-QUXEB at Spring 2020 HW 2.3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - convergence-tests
+  - series-of-functions
 relations:
 - kind: instance-of
   target: P-QUXEB

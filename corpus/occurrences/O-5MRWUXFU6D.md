@@ -6,7 +6,11 @@ title: P-TZCW3 at Spring 20202 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - maximum-modulus-principle
+  - polynomials
+  - zeros
 relations:
 - kind: instance-of
   target: P-TZCW3

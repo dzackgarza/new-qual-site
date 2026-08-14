@@ -6,7 +6,9 @@ title: P-FOYTY at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-FOYTY

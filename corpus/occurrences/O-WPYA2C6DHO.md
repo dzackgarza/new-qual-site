@@ -6,7 +6,10 @@ title: P-C3XJT at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations:
 - kind: instance-of
   target: P-C3XJT

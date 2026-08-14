@@ -6,7 +6,11 @@ title: P-QC7BY at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - contour-integration
+  - holomorphic-functions
+  - morera
 relations:
 - kind: instance-of
   target: P-QC7BY

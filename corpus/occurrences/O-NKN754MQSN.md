@@ -6,7 +6,10 @@ title: P-Z4CIU at UGA complex-analysis Fall 2016
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations:
 - kind: instance-of
   target: P-Z4CIU

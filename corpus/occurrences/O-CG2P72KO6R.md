@@ -6,7 +6,11 @@ title: P-NV44D at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-NV44D

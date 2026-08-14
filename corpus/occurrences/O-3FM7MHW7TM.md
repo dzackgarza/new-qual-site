@@ -6,7 +6,10 @@ title: P-IZW2T at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
+  - essential-singularities
 relations:
 - kind: instance-of
   target: P-IZW2T

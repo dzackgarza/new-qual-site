@@ -6,7 +6,11 @@ title: P-GLF66 at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-GLF66

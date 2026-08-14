@@ -6,7 +6,11 @@ title: P-YZ4WV at Spring 2020 HW 3.4 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - essential-singularities
+  - singularities
+  - identity-theorem
+  - zeros
 relations:
 - kind: instance-of
   target: P-YZ4WV

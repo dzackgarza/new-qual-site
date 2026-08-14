@@ -6,7 +6,10 @@ title: P-7ENEI at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - poles
+  - laurent-series
 relations:
 - kind: instance-of
   target: P-7ENEI

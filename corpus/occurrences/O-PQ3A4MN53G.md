@@ -6,7 +6,10 @@ title: P-JYIUP at Spring 2020 HW 2 #2.6.2 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations:
 - kind: instance-of
   target: P-JYIUP

@@ -6,7 +6,11 @@ title: P-JFDQJ at Spring 2020 HW 3 #3.8.9 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations:
 - kind: instance-of
   target: P-JFDQJ

@@ -6,7 +6,9 @@ title: P-KNLBB at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-continuity
+  - counterexamples
 relations:
 - kind: instance-of
   target: P-KNLBB

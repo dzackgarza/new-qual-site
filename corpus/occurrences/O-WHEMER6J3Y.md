@@ -6,7 +6,8 @@ title: P-MV7O6 at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
 relations:
 - kind: instance-of
   target: P-MV7O6

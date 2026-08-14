@@ -6,7 +6,10 @@ title: P-HOGMY at UGA complex-analysis Fall 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - schwarz-lemma
+  - fixed-points
+  - sequences-of-functions
 relations:
 - kind: instance-of
   target: P-HOGMY

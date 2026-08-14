@@ -6,7 +6,10 @@ title: E-T5ERF at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - mean-value-property
+  - cauchy-estimates
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: E-T5ERF

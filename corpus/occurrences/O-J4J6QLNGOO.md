@@ -6,7 +6,11 @@ title: P-YZ4WV at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - essential-singularities
+  - singularities
+  - identity-theorem
+  - zeros
 relations:
 - kind: instance-of
   target: P-YZ4WV

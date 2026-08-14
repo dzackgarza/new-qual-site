@@ -6,7 +6,9 @@ title: P-352KP at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - contour-integration
+  - limits
 relations:
 - kind: instance-of
   target: P-352KP

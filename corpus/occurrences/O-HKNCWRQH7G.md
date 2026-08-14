@@ -6,7 +6,9 @@ title: P-22T5H at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - maximum-modulus-principle
 relations:
 - kind: instance-of
   target: P-22T5H

@@ -6,7 +6,11 @@ title: P-677HF at Spring 2020 HW 2, SS 2.6.10 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - polynomials
+  - counterexamples
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-677HF

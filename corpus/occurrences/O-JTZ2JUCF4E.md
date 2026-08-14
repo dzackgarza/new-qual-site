@@ -6,7 +6,11 @@ title: P-FBOFF at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - casorati-weierstrass
+  - poles
+  - singularities
+  - meromorphic-functions
 relations:
 - kind: instance-of
   target: P-FBOFF

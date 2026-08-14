@@ -6,7 +6,9 @@ title: E-YEIQ5 at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - maximum-modulus-principle
 relations:
 - kind: instance-of
   target: E-YEIQ5

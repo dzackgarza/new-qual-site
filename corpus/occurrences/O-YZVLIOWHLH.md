@@ -6,7 +6,9 @@ title: P-S5FOO at UGA complex-analysis Fall 2016
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - norms
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-S5FOO

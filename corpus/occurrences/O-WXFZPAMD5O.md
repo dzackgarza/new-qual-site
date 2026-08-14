@@ -6,7 +6,11 @@ title: P-AW6IK at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - singularities
+  - counterexamples
+  - residues
 relations:
 - kind: instance-of
   target: P-AW6IK

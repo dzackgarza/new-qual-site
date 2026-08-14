@@ -6,7 +6,11 @@ title: P-RKKCE at UGA complex-analysis Fall 2016
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - hyperbolic-functions
 relations:
 - kind: instance-of
   target: P-RKKCE

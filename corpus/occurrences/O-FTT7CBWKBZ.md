@@ -6,7 +6,10 @@ title: P-PMH4D at UGA complex-analysis Fall 2019
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations:
 - kind: instance-of
   target: P-PMH4D

@@ -6,7 +6,10 @@ title: P-YEZTR at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - poles
+  - convergence-tests
 relations:
 - kind: instance-of
   target: P-YEZTR

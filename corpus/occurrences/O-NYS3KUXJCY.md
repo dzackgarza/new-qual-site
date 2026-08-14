@@ -6,7 +6,10 @@ title: P-IP6QO at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations:
 - kind: instance-of
   target: P-IP6QO

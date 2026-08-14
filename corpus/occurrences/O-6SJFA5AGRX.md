@@ -6,7 +6,11 @@ title: P-P5VOR at UGA complex-analysis Fall 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations:
 - kind: instance-of
   target: P-P5VOR

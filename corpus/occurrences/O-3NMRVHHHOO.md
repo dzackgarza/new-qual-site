@@ -6,7 +6,11 @@ title: P-GLF66 at Spring 2020 HW 3
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-GLF66

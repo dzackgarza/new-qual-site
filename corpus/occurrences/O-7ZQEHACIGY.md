@@ -6,7 +6,11 @@ title: P-2RS4X at Spring 2020 HW 3 #3.8.2 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - poles
+  - integrals
 relations:
 - kind: instance-of
   target: P-2RS4X

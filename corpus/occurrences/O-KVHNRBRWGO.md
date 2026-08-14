@@ -6,7 +6,10 @@ title: P-JTON2 at UGA complex-analysis May 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
+  - cauchy-riemann
 relations:
 - kind: instance-of
   target: P-JTON2

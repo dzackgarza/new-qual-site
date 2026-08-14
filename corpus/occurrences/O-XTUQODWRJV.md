@@ -6,7 +6,10 @@ title: P-BTUCW at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - argument-principle
+  - zeros
 relations:
 - kind: instance-of
   target: P-BTUCW

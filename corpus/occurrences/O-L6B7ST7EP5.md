@@ -6,7 +6,10 @@ title: P-4KVTJ at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - residues
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-4KVTJ

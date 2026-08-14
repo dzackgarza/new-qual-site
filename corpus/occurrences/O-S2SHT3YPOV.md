@@ -6,7 +6,9 @@ title: P-UYWZ5 at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - geometry
+  - polynomials
 relations:
 - kind: instance-of
   target: P-UYWZ5

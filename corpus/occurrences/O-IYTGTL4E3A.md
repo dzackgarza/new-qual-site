@@ -6,7 +6,10 @@ title: P-4PTIX at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - fixed-points
+  - schwarz-lemma
+  - blaschke-factors
 relations:
 - kind: instance-of
   target: P-4PTIX

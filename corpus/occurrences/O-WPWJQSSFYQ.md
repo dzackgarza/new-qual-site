@@ -6,7 +6,10 @@ title: P-37Z7J at UGA complex-analysis Fall 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
+  - zeros
 relations:
 - kind: instance-of
   target: P-37Z7J

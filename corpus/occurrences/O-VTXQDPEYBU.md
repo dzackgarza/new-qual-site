@@ -6,7 +6,10 @@ title: P-4ZZYV at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - polynomials
+  - singularities
 relations:
 - kind: instance-of
   target: P-4ZZYV

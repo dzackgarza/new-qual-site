@@ -6,7 +6,10 @@ title: P-EQGG7 at Spring 20202 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-EQGG7

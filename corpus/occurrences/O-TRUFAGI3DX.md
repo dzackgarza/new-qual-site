@@ -6,7 +6,9 @@ title: P-B4HPX at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-B4HPX

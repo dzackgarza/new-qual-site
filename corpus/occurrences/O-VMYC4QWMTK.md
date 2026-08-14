@@ -6,7 +6,10 @@ title: P-OFI4Y at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations:
 - kind: instance-of
   target: P-OFI4Y

@@ -6,7 +6,10 @@ title: P-KZD2Y at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations:
 - kind: instance-of
   target: P-KZD2Y

@@ -6,7 +6,11 @@ title: P-IRNN2 at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - argument-principle
+  - zeros
+  - biholomorphisms
 relations:
 - kind: instance-of
   target: P-IRNN2

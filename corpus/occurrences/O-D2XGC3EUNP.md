@@ -6,7 +6,11 @@ title: E-BV7DD at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - polynomials
+  - uniform-convergence
+  - laurent-series
 relations:
 - kind: instance-of
   target: E-BV7DD

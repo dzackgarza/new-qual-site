@@ -6,7 +6,10 @@ title: P-ZX7FP at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - contour-integration
+  - residues
+  - limits
 relations:
 - kind: instance-of
   target: P-ZX7FP

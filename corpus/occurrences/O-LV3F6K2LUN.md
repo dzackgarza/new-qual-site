@@ -6,7 +6,10 @@ title: P-X7WUF at UGA complex-analysis Fall 2016
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - poles
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-X7WUF

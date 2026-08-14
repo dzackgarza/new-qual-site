@@ -6,7 +6,10 @@ title: E-35I3B at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - schwarz-lemma
+  - uniform-convergence
+  - series-of-functions
 relations:
 - kind: instance-of
   target: E-35I3B

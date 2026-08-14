@@ -6,7 +6,12 @@ title: P-PQOTX at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
+  - poles
 relations:
 - kind: instance-of
   target: P-PQOTX

@@ -6,7 +6,11 @@ title: P-ACDEH at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - polynomials
+  - liouville-s-theorem
+  - cauchy-estimates
 relations:
 - kind: instance-of
   target: P-ACDEH

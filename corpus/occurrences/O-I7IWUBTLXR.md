@@ -6,7 +6,11 @@ title: P-SWLWB at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-SWLWB

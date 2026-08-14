@@ -6,7 +6,10 @@ title: P-MICNK at UGA complex-analysis Spring 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations:
 - kind: instance-of
   target: P-MICNK

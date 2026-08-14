@@ -6,7 +6,10 @@ title: P-E6RSX at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations:
 - kind: instance-of
   target: P-E6RSX

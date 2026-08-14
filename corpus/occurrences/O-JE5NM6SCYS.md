@@ -6,7 +6,9 @@ title: P-UQOCE at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-UQOCE

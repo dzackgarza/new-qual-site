@@ -6,7 +6,11 @@ title: P-JWOJ5 at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - mean-value-property
+  - integrals
+  - complex-logarithm
 relations:
 - kind: instance-of
   target: P-JWOJ5

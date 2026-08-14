@@ -6,7 +6,10 @@ title: P-R424U at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - blaschke-factors
+  - integrals
+  - conformal-maps
 relations:
 - kind: instance-of
   target: P-R424U

@@ -6,7 +6,11 @@ title: P-VQUPX at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - cauchy-integral-formula
+  - uniform-convergence
+  - entire-functions
 relations:
 - kind: instance-of
   target: P-VQUPX

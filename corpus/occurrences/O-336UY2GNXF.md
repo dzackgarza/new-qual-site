@@ -6,7 +6,10 @@ title: P-ZOZJ5 at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations:
 - kind: instance-of
   target: P-ZOZJ5

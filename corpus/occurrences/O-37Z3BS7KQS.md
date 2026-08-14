@@ -6,7 +6,10 @@ title: P-NA636 at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - polynomials
+  - singularities
 relations:
 - kind: instance-of
   target: P-NA636

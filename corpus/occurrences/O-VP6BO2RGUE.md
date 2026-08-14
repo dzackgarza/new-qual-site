@@ -6,7 +6,11 @@ title: P-ZSAPA at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - residues
+  - zeros
+  - power-series
 relations:
 - kind: instance-of
   target: P-ZSAPA

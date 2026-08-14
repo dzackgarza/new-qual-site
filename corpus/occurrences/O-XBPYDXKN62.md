@@ -6,7 +6,11 @@ title: P-PSIBT at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - complex-logarithm
 relations:
 - kind: instance-of
   target: P-PSIBT

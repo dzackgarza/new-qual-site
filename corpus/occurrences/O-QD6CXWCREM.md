@@ -6,7 +6,11 @@ title: P-Z45BG at Spring 20202 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
+  - argument-principle
 relations:
 - kind: instance-of
   target: P-Z45BG

@@ -6,7 +6,11 @@ title: P-FQJMB at UGA complex-analysis Spring 2019
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - entire-functions
+  - power-series
+  - identity-theorem
 relations:
 - kind: instance-of
   target: P-FQJMB

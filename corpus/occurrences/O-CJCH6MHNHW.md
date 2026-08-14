@@ -6,7 +6,9 @@ title: P-ALI5T at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - maximum-modulus-principle
 relations:
 - kind: instance-of
   target: P-ALI5T

@@ -6,7 +6,10 @@ title: P-TYKXH at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
+  - holomorphic-functions
+  - residues
 relations:
 - kind: instance-of
   target: P-TYKXH

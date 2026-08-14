@@ -6,7 +6,10 @@ title: P-DQPYN at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - polynomials
+  - zeros
 relations:
 - kind: instance-of
   target: P-DQPYN

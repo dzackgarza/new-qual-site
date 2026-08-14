@@ -6,7 +6,10 @@ title: P-DFHS3 at UGA complex-analysis May 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations:
 - kind: instance-of
   target: P-DFHS3

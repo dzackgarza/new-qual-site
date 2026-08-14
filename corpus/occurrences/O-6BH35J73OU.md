@@ -6,7 +6,10 @@ title: P-NVJN5 at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - removable-singularities
+  - morera
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-NVJN5

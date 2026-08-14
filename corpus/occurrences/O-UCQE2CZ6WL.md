@@ -6,7 +6,11 @@ title: P-36DLV at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - polynomials
+  - liouville-s-theorem
+  - zeros
 relations:
 - kind: instance-of
   target: P-36DLV

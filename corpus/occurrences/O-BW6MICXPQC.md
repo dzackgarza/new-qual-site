@@ -6,7 +6,10 @@ title: P-4YOJC at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - entire-functions
+  - polynomials
 relations:
 - kind: instance-of
   target: P-4YOJC

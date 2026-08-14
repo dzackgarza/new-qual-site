@@ -6,7 +6,10 @@ title: P-7UIYI at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - convergence-tests
+  - power-series
+  - sequences-of-numbers
 relations:
 - kind: instance-of
   target: P-7UIYI

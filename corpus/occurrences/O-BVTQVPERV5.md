@@ -6,7 +6,9 @@ title: P-WNOA2 at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-estimates
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-WNOA2

@@ -6,7 +6,9 @@ title: P-22T5H at Spring 2020 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - open-mapping-theorem
+  - maximum-modulus-principle
 relations:
 - kind: instance-of
   target: P-22T5H

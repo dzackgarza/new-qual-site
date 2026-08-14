@@ -6,7 +6,10 @@ title: P-ZNVSP at UGA complex-analysis May 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - schwarz-reflection
+  - picard
+  - open-mapping-theorem
 relations:
 - kind: instance-of
   target: P-ZNVSP

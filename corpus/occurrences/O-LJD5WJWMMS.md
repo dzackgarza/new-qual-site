@@ -6,7 +6,9 @@ title: P-XA3WA at UGA complex-analysis Spring 2009
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations:
 - kind: instance-of
   target: P-XA3WA

@@ -6,7 +6,11 @@ title: P-6VN3T at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - blaschke-factors
+  - entire-functions
+  - zeros
 relations:
 - kind: instance-of
   target: P-6VN3T

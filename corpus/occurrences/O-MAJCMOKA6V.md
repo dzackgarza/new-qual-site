@@ -6,7 +6,10 @@ title: P-5SR2D at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - schwarz-reflection
+  - cauchy-riemann
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-5SR2D

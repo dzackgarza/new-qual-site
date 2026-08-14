@@ -6,7 +6,10 @@ title: P-W23PS at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
 relations:
 - kind: instance-of
   target: P-W23PS

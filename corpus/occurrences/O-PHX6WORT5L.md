@@ -6,7 +6,10 @@ title: P-YHARF at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - poles
+  - convergence-tests
 relations:
 - kind: instance-of
   target: P-YHARF

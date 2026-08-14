@@ -6,7 +6,10 @@ title: P-43AXY at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - polynomials
+  - zeros
 relations:
 - kind: instance-of
   target: P-43AXY

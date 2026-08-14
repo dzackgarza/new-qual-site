@@ -6,7 +6,10 @@ title: P-6PMCN at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - poles
+  - principal-parts
 relations:
 - kind: instance-of
   target: P-6PMCN

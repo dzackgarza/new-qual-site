@@ -6,7 +6,10 @@ title: P-KGHOG at UGA complex-analysis May 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - integrals
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-KGHOG

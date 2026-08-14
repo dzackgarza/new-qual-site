@@ -6,7 +6,11 @@ title: P-AORDL at Spring 20202 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - essential-singularities
+  - singularities
+  - identity-theorem
+  - zeros
 relations:
 - kind: instance-of
   target: P-AORDL

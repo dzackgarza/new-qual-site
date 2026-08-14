@@ -6,7 +6,10 @@ title: P-GAPV3 at UGA complex-analysis Spring 2014
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - gamma-function
+  - holomorphic-functions
+  - residues
 relations:
 - kind: instance-of
   target: P-GAPV3

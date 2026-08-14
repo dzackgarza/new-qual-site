@@ -6,7 +6,10 @@ title: P-SQBZN at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - holomorphic-functions
+  - contour-integration
+  - cauchy-integral-formula
 relations:
 - kind: instance-of
   target: P-SQBZN

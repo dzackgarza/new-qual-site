@@ -6,7 +6,9 @@ title: P-EMHMR at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - laurent-series
+  - power-series
 relations:
 - kind: instance-of
   target: P-EMHMR

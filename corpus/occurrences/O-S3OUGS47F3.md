@@ -6,7 +6,9 @@ title: P-DAI2Z at UGA complex-analysis May 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
 relations:
 - kind: instance-of
   target: P-DAI2Z

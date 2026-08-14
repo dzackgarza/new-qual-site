@@ -6,7 +6,11 @@ title: P-2UVDX at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - contour-integration
+  - entire-functions
+  - integrals
+  - identity-theorem
 relations:
 - kind: instance-of
   target: P-2UVDX

@@ -6,7 +6,11 @@ title: P-EA222 at UGA complex-analysis Spring 2019
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - meromorphic-functions
+  - liouville-s-theorem
+  - poles
+  - entire-functions
 relations:
 - kind: instance-of
   target: P-EA222

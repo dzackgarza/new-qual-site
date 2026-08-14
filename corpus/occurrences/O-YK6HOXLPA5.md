@@ -6,7 +6,10 @@ title: P-B7CIT at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
+  - open-mapping-theorem
+  - zeros
 relations:
 - kind: instance-of
   target: P-B7CIT

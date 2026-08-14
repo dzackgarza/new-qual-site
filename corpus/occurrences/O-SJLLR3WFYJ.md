@@ -6,7 +6,10 @@ title: P-VH7IY at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - complex-logarithm
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-VH7IY

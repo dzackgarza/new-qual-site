@@ -6,7 +6,11 @@ title: P-FIOQC at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - residues
+  - trigonometry
+  - poles
 relations:
 - kind: instance-of
   target: P-FIOQC

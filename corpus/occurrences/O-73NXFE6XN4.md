@@ -6,7 +6,11 @@ title: P-IV4XE at UGA complex-analysis Spring 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
+  - integrals
+  - hyperbolic-functions
 relations:
 - kind: instance-of
   target: P-IV4XE

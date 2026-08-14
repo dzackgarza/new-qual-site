@@ -6,7 +6,11 @@ title: P-K3HOZ at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - identity-theorem
+  - schwarz-reflection
+  - mean-value-property
 relations:
 - kind: instance-of
   target: P-K3HOZ

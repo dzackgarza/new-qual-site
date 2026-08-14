@@ -6,7 +6,10 @@ title: P-KWIEG at Spring 20202 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
 relations:
 - kind: instance-of
   target: P-KWIEG

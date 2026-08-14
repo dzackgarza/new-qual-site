@@ -6,7 +6,10 @@ title: P-BGJFV at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - blaschke-factors
+  - maximum-modulus-principle
+  - zeros
 relations:
 - kind: instance-of
   target: P-BGJFV

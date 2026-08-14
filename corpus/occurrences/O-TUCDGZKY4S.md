@@ -6,7 +6,9 @@ title: P-V7ULH at Spring 2020 HW 2.2 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - power-series
+  - cauchy-integral-formula
 relations:
 - kind: instance-of
   target: P-V7ULH

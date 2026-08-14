@@ -6,7 +6,10 @@ title: E-BVT72 at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - zeros
+  - identity-theorem
+  - counterexamples
 relations:
 - kind: instance-of
   target: E-BVT72

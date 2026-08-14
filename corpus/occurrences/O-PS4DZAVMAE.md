@@ -6,7 +6,10 @@ title: P-B3LJA at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
+  - entire-functions
 relations:
 - kind: instance-of
   target: P-B3LJA

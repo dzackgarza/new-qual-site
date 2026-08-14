@@ -6,7 +6,10 @@ title: P-CZQLT at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
+  - cauchy-integral-formula
 relations:
 - kind: instance-of
   target: P-CZQLT

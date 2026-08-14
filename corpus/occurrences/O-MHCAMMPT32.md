@@ -6,7 +6,10 @@ title: P-3AEDF at UGA complex-analysis Fall 2016
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - harmonic-functions
+  - cauchy-riemann
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-3AEDF

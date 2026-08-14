@@ -6,7 +6,10 @@ title: P-WASE4 at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - polynomials
+  - zeros
 relations:
 - kind: instance-of
   target: P-WASE4

@@ -6,7 +6,10 @@ title: P-ZRUZR at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - trigonometry
+  - polynomials
+  - zeros
 relations:
 - kind: instance-of
   target: P-ZRUZR

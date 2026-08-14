@@ -6,7 +6,12 @@ title: E-OS574 at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - meromorphic-functions
+  - principal-parts
+  - poles
+  - liouville-s-theorem
+  - trigonometry
 relations:
 - kind: instance-of
   target: E-OS574

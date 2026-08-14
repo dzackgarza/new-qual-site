@@ -6,7 +6,11 @@ title: P-EDU3Q at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - uniform-convergence
+  - sequences-of-functions
+  - entire-functions
+  - complex-logarithm
 relations:
 - kind: instance-of
   target: P-EDU3Q

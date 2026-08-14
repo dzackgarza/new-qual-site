@@ -6,7 +6,11 @@ title: P-XKOQR at UGA complex-analysis Fall 2019
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - biholomorphisms
+  - open-mapping-theorem
+  - argument-principle
+  - rouche
 relations:
 - kind: instance-of
   target: P-XKOQR

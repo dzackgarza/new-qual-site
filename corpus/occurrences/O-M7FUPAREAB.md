@@ -6,7 +6,9 @@ title: P-BJP24 at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-integral-formula
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-BJP24

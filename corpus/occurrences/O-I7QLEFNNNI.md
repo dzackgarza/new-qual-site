@@ -6,7 +6,8 @@ title: P-DLF3X at Spring 2020 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - maximum-modulus-principle
 relations:
 - kind: instance-of
   target: P-DLF3X

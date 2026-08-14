@@ -6,7 +6,11 @@ title: P-OO3WX at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
+  - uniform-convergence
 relations:
 - kind: instance-of
   target: P-OO3WX

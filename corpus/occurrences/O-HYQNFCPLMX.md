@@ -6,7 +6,11 @@ title: P-BZNEO at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - principal-parts
+  - poles
+  - residues
+  - polynomials
 relations:
 - kind: instance-of
   target: P-BZNEO

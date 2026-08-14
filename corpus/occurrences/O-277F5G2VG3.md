@@ -6,7 +6,11 @@ title: P-2ZMDH at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - residues
+  - zeros
+  - power-series
 relations:
 - kind: instance-of
   target: P-2ZMDH

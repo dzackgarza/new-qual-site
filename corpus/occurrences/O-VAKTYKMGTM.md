@@ -6,7 +6,10 @@ title: P-XKYOG at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - cauchy-riemann
+  - complex-logarithm
+  - holomorphic-functions
 relations:
 - kind: instance-of
   target: P-XKYOG

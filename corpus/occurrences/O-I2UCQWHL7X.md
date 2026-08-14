@@ -6,7 +6,11 @@ title: P-TVUOV at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - rouche
+  - zeros
+  - polynomials
+  - argument-principle
 relations:
 - kind: instance-of
   target: P-TVUOV

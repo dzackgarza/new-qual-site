@@ -6,7 +6,12 @@ title: P-SLWIE at UGA complex-analysis May 2021
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - meromorphic-functions
+  - poles
+  - principal-parts
+  - identity-theorem
+  - trigonometry
 relations:
 - kind: instance-of
   target: P-SLWIE

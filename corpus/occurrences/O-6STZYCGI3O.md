@@ -6,7 +6,9 @@ title: P-H4HKX at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - residues
+  - contour-integration
 relations:
 - kind: instance-of
   target: P-H4HKX
