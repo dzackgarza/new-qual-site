@@ -163,7 +163,10 @@ sections:
       worksheets. Metric spaces and topology come first because the rest of the subject is
       stated in their language, then sequences and series, then the three calculus days,
       then sequences and series of functions, where uniform convergence separates what the
-      earlier days could assume.
+      earlier days could assume. The twenty numbered results the worksheets state and then
+      set problems against follow the sittings: they carry no occurrence, so no sitting
+      page lists them, and this is the only place in the branch they can be read. Their
+      numbering runs 3.1 to 6.7 with 6.6 absent, which is how the source has it.
     items:
       - ref: SRC-RA-WORKSHOP-D2-METRIC
       - ref: SRC-RA-WORKSHOP-D3-SEQUENCES
@@ -172,6 +175,28 @@ sections:
       - ref: SRC-RA-WORKSHOP-D6-INTEGRAL
       - ref: SRC-RA-WORKSHOP-D7-SEQUENCES
       - ref: SRC-RA-WORKSHOP-D8-MISC
+      # The numbered results the worksheets state and then set problems against.
+      # They carry no occurrence, so no sitting page lists them.
+      - ref: T-RA-WORKSHOP-D4-3-1
+      - ref: T-RA-WORKSHOP-D4-3-2
+      - ref: T-RA-WORKSHOP-D4-3-3
+      - ref: T-RA-WORKSHOP-D4-3-4
+      - ref: T-RA-WORKSHOP-D4-3-5
+      - ref: T-RA-WORKSHOP-D5-4-1
+      - ref: T-RA-WORKSHOP-D5-4-2
+      - ref: T-RA-WORKSHOP-D5-4-3
+      - ref: T-RA-WORKSHOP-D6-5-1
+      - ref: T-RA-WORKSHOP-D6-5-2
+      - ref: T-RA-WORKSHOP-D6-5-3
+      - ref: T-RA-WORKSHOP-D6-5-4
+      - ref: T-RA-WORKSHOP-D6-5-5
+      - ref: D-RA-WORKSHOP-D7-CONVERGENCE
+      - ref: T-RA-WORKSHOP-D7-6-1
+      - ref: T-RA-WORKSHOP-D7-6-2
+      - ref: T-RA-WORKSHOP-D7-6-3
+      - ref: T-RA-WORKSHOP-D7-6-4
+      - ref: T-RA-WORKSHOP-D7-6-5
+      - ref: T-RA-WORKSHOP-D7-6-7
   - slug: topology-sittings
     title: Topology Workshop Sittings
     parent: topology
