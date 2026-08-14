@@ -43,7 +43,7 @@ H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bi
 [[T-FBMYQ]]
 
 
-:::{.fact title="Assorted facts}
+:::{.fact title="Assorted facts"}
 \envlist
 
 - $H_{n}(X) = 0 \iff X$ has no $n\dash$cells.
