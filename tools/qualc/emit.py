@@ -1657,9 +1657,9 @@ title: Generate a practice set
 </div>
 <script>
 const QDATA=__GENDATA__;
+const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
 const label=(value)=>value.replaceAll("-"," ").replace(/\\b\\w/g,(letter)=>letter.toUpperCase());
 const AREAS=Object.fromEntries([...new Set(QDATA.flatMap(q=>q.areas))].map((area)=>[area,label(area)]));
-const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
 const topics=[...new Set(QDATA.flatMap(q=>q.topics))].filter(Boolean).sort();
 const years=[...new Set(QDATA.flatMap(q=>q.years))].filter(Boolean).sort((a,b)=>Number(b)-Number(a));
 document.getElementById("gen-areas").innerHTML=Object.entries(AREAS)
