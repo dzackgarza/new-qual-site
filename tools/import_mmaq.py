@@ -297,17 +297,9 @@ def existing_problems(
             by_fingerprint[fingerprint].append((card_id, str(path.relative_to(root))))
     collapse_path = root / "sources/g3-collapse-map.jsonl"
     if collapse_path.exists():
-        retired_to_survivor = {
-            item["retired"]: item["survivor"]
-            for line in collapse_path.read_text().splitlines()
-            if (item := json.loads(line))
-        }
+        retired_to_survivor = {item["retired"]: item["survivor"] for line in collapse_path.read_text().splitlines() if (item := json.loads(line))}
         for fingerprint, candidates in by_fingerprint.items():
-            survivors = [
-                candidate
-                for candidate in candidates
-                if retired_to_survivor.get(candidate[0], candidate[0]) == candidate[0]
-            ]
+            survivors = [candidate for candidate in candidates if retired_to_survivor.get(candidate[0], candidate[0]) == candidate[0]]
             if survivors:
                 by_fingerprint[fingerprint] = survivors
     return dict(by_fingerprint)
