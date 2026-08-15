@@ -925,6 +925,6 @@ sections:
       - query:
           kind: problem
           topics: []
-          limit: 500
+          limit: 1000
           review:
             mode: any
