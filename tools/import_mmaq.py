@@ -184,6 +184,14 @@ def _source_bytes(root: Path, input_path: Path | None) -> tuple[bytes, dict[str,
     return data, manifest
 
 
+class ImportProblem(ValueError):
+    """A named import failure: `code` is the machine identity, the message is prose."""
+
+    def __init__(self, code: str, message: str) -> None:
+        super().__init__(f"{code}: {message}")
+        self.code = code
+
+
 def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, Any]], dict[str, str]]:
     data, source = _source_bytes(root, input_path)
     parsed = yaml.safe_load(data)
@@ -243,10 +251,11 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
         )
     if unregistered:
         listed = ", ".join(f"{topic!r} (row {row})" for topic, row in sorted(unregistered.items()))
-        raise ValueError(
-            f"unregistered-topic: {len(unregistered)} tag(s) are neither in vocabularies/topics.yaml nor "
+        raise ImportProblem(
+            "unregistered-topic",
+            f"{len(unregistered)} tag(s) are neither in vocabularies/topics.yaml nor "
             f"aliased in vocabularies/topic-aliases.yaml: {listed}. Registering a topic or recording a "
-            f"merge is a curation act; this importer will not do it."
+            f"merge is a curation act; this importer will not do it.",
         )
     return records, source
 

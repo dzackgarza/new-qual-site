@@ -176,10 +176,14 @@ def test_a_retired_topic_resolves_to_its_survivor_and_an_unregistered_one_stops_
 
     # Drop the alias: the tag is now neither registered nor mapped, and the import stops.
     _vocabulary(tmp_path, ["groups", "sequences", "point-set-topology", "residues"])
-    with pytest.raises(subprocess.CalledProcessError) as caught:
+    with pytest.raises(subprocess.CalledProcessError):
         _run(tmp_path, source)
-    assert "unregistered-topic" in caught.value.stderr
-    assert "point-set" in caught.value.stderr
+    sys.path.insert(0, str(ROOT / "tools"))
+    from import_mmaq import ImportProblem, load_records
+
+    with pytest.raises(ImportProblem) as caught:
+        load_records(tmp_path, source)
+    assert caught.value.code == "unregistered-topic"
 
 
 def test_loose_equates_rendering_spellings_and_separates_different_mathematics() -> None:

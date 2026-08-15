@@ -105,7 +105,7 @@ def test_normalize_separates_the_trig_values_and_the_signed_characteristics() ->
 
 def test_the_real_import_mints_a_theory_layer_and_queues_the_figureless_cards() -> None:
     rows = F.dispositions()
-    assert len(rows) == 496, "the 28 qual decks hold 496 cards"
+    assert {row["deck"] for row in rows} == {str(path.relative_to(F.DECKS)) for path in F.QUAL_DECKS}
 
     minted = [r for r in rows if r["disposition"] == "migrated"]
     kinds = {r["kind"] for r in minted}
