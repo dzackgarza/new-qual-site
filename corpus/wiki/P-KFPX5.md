@@ -46,13 +46,11 @@ b.
 
 Homotopy lifting property:
 
-\begin{center}
 \begin{tikzcd}
                                                                    &  & \tilde X \arrow[dd, "\pi"] \\
                                                                    &  &                            \\
 Y\cross I \arrow[rr, "H"] \arrow[rruu, "\exists \tilde H", dashed] &  & X                         
 \end{tikzcd}
-\end{center}
 
 $\pi$ clearly induces a map $p_*$ on $\pi_1$ by functoriality, so we'll show that $\ker p_*$ is trivial.
 Let $\gamma: S^1 \to \tilde X \in \pi_1(\tilde X)$ and suppose $\alpha \definedas p_*(\gamma) = [e] \in \pi_1(X)$. 

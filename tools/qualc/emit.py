@@ -15,12 +15,15 @@ from __future__ import annotations
 import copy
 import html
 import json
+import os
 import re
 import shutil
 import sqlite3
+import subprocess
 from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
+from typing import cast
 
 import panflute as pf
 import yaml
@@ -272,6 +275,67 @@ def _reveal(
         *element.content,
         pf.RawBlock("</details>", format="html"),
     ]
+
+
+_TIKZCD_FILTER = Path.home() / ".pandoc" / "filters" / "tikzcd.lua"
+_TIKZCD_START = "\\begin{tikzcd}"
+
+
+def _compile_tikzcd_block(tex_source: str) -> str:
+    """Compile a single tikz/tikzcd block to an inline-SVG HTML fragment.
+
+    Uses the canonical pandoc lua filter at ``~/.pandoc/filters/tikzcd.lua``,
+    which compiles via ``pdflatex`` + ``pdf2svg`` and caches by SHA1 of the
+    source + template.  On a warm cache the only cost is pandoc startup.
+    """
+    result = subprocess.run(
+        [
+            "pandoc",
+            "--from",
+            "markdown",
+            "--to",
+            "html",
+            "--lua-filter",
+            str(_TIKZCD_FILTER),
+        ],
+        input=tex_source,
+        capture_output=True,
+        text=True,
+        timeout=120,
+        env={**os.environ, "HOME": str(Path.home())},
+    )
+    if result.returncode != 0:
+        raise RuntimeError(
+            f"tikzcd compilation failed (exit {result.returncode}): {result.stderr.strip()[:300]}"
+        )
+    return result.stdout
+
+
+def _compile_tikzcd(
+    element: pf.Element,
+    document: pf.Doc,
+) -> pf.Element | list[pf.Block] | None:
+    """Replace ``RawBlock("tex", tikzcd)`` with ``RawBlock("html", svg)``.
+
+    The pandoc server cannot run lua filters (PandocPure monad), so tikzcd
+    blocks are dropped silently during the server's HTML write.  This walk
+    pre-compiles them via the CLI filter so the SVG survives as a raw HTML
+    block that the server passes through verbatim.
+    """
+    del document
+    if not isinstance(element, pf.RawBlock):
+        return None
+    # panflute's RawBlock exposes .format and .text at runtime, but the type
+    # stubs do not declare them.  Use getattr to satisfy mypy without weakening
+    # the runtime check — the isinstance guard ensures the object is a RawBlock.
+    fmt = cast(str, getattr(element, "format", ""))
+    if fmt not in ("tex", "latex"):
+        return None
+    text = cast(str, getattr(element, "text", ""))
+    if _TIKZCD_START not in text:
+        return None
+    svg_html = _compile_tikzcd_block(text)
+    return pf.RawBlock(svg_html, format="html")
 
 
 def _blocks(card: sqlite3.Row) -> list[pf.Block]:
@@ -710,7 +774,10 @@ def _page_ast(page: Page) -> str:
 
 
 def _html_ast(ast: str) -> str:
-    return to_json(from_ast(ast).walk(_reveal))
+    doc = from_ast(ast)
+    doc = doc.walk(_compile_tikzcd)
+    doc = doc.walk(_reveal)
+    return to_json(doc)
 
 
 def _statement_ast(ast: str) -> str:

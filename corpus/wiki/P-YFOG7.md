@@ -42,7 +42,6 @@ We can explicitly identify the relevant automorphisms:
 \]
 We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2 = \gamma^2 = (\sigma\tau)^2 = [\sigma, \gamma] = [\tau, \gamma] = e}$, and obtain the following lattice:
 
-\[
 \begin{tikzcd}
                                             &  & {<\sigma, \tau, \gamma>}                       &                                                         &                                      &  &                                                 \\
                                             &  &                                                &                                                         &                                      &  &                                                 \\
@@ -52,7 +51,6 @@ We can then present $G = \generators{\sigma, \gamma, \tau \mid \sigma^3 = \tau^2
                                             &  &                                                &                                                         &                                      &  &                                                 \\
                                             &  &                                                & <e> \arrow[llluu] \arrow[luu] \arrow[ruu] \arrow[rrruu] &                                      &  &                                                
 \end{tikzcd}
-\]
 
 which, up to conjugacy, fix the following intermediate field extensions (Figure 3).
 
