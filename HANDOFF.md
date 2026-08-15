@@ -22,17 +22,19 @@ Do not mirror each issue update here.
 
 - [4. Dependency order](#4-dependency-order)
 
-- [5. GitHub reconciliation](#5-workstream-r1-reconcile-github-state)
+- [5. Issue completion work](#5-workstream-r1-issue-specific-completion-work)
 
-- [6. Issue closeout](#6-workstream-r2-issue-specific-closeout)
+- [6. Deployment proof](#6-workstream-r2-current-deployment-and-issue-30)
 
-- [7. Deployment proof](#7-workstream-r3-current-deployment-and-issue-30)
+- [7. Independent migration review](#7-workstream-r3-independent-source-migration-review)
 
-- [8. User decisions](#8-user-decisions-and-issue-routes)
+- [8. Record results](#8-workstream-r4-record-results-and-reconcile-github-state)
 
-- [9. Proof and stop rules](#9-proof-and-stop-rules)
+- [9. User decisions](#9-user-decisions-and-issue-routes)
 
-- [10. Final closure](#10-final-closure-order)
+- [10. Proof and stop rules](#10-proof-and-stop-rules)
+
+- [11. Final closure](#11-final-closure-order)
 
 ## 1. Result that the remaining work must deliver
 
@@ -111,8 +113,8 @@ Link the relevant artifact from the owning issue.
 The repository state described here is committed and pushed.
 The working tree was clean at `380a48d0`.
 
-The main remaining mismatch is public state.
-The newest proof and correction records are not yet reflected on GitHub.
+The remaining work is direct semantic, source, rendered, deployed, and independent-review work.
+Record each result on GitHub after the evidence exists.
 
 The following repository work exists and must not be repeated without a failed criterion:
 
@@ -155,89 +157,29 @@ Use this order unless a live issue records a newer dependency.
 R0  Verify repository, deployment, issue, and plan state
  |
  v
-R1  Reconcile GitHub issues with committed proof
+R1  Complete issue-specific semantic, source, and product work
+ |   (#5-#10, #23-#29, #41)
  |\
- | +--> R2  Finish issue-specific closeout checks
- |          (#5-#11, #23-#29, #41)
+ | +--> R2  Deploy current main and complete issue #30 replay
  |
- +----> R3  Deploy current main and complete issue #30 replay
- |
- +----> R4  Complete fresh independent review for issue #11
+ +----> R3  Complete fresh independent review for issue #11
              without using this handoff as the review frame
 
-R2 + R3 + R4
+R2 + R3
+ |
+ v
+R4  Record results and reconcile the owning GitHub issues
  |
  v
 R5  Reconcile issue #6 and roadmap issue #1
 ```
 
 Decision-gated work can run only after the user gives the named decision.
-Section 8 routes each decision.
+Section 9 routes each decision.
 
-## 5. Workstream R1: reconcile GitHub state
+## 5. Workstream R1: issue-specific completion work
 
-No GitHub updates from the final work batch have been posted.
-This is the first resume task.
-
-### 5.1 Publish content findings on issue #2
-
-Post the correction and finding records from the branch proofs and content reports.
-
-The comment must distinguish these classes:
-
-- corrected false statements;
-
-- source-backed corrections;
-
-- unresolved mathematical choices;
-
-- missing mathematics;
-
-- card-kind or source-structure defects;
-
-- duplicate candidates that still need reading.
-
-Do not describe issue #2 as complete.
-Its full structured-proof program remains open.
-
-### 5.2 Restore commit provenance on the owning issues
-
-Post the known cross-lane provenance facts on their issue owners.
-
-- Issue #26 must identify `65b926c5` as the Real Analysis classification commit.
-
-- Issue #24 must identify `0bed0189` as the Prelims branch-proof commit.
-
-- Issue #2 must identify the seven round-one fixes that carry another lane's commit hash.
-
-Use the existing reports for the exact mapping.
-Do not infer authorship from the commit summary alone.
-
-### 5.3 Update stale issue claims before closure
-
-Several issue bodies contain old inventory counts and old implementation claims.
-
-For each issue, compare its full acceptance text with current committed evidence.
-Then post one current evidence comment.
-
-The comment must include:
-
-- the exact repository revision;
-
-- the obligation under review;
-
-- the proof artifact or direct observation;
-
-- any nonclaim or residue;
-
-- the disposition of each unmet criterion.
-
-Close an issue only when its own acceptance text is fully satisfied.
-A parent issue, passing check, or proof count cannot replace that test.
-
-## 6. Workstream R2: issue-specific closeout
-
-### 6.1 Publisher and authored pages: issues #5 and #23
+### 5.1 Publisher and authored pages: issues #5 and #23
 
 Use `artifacts/issue-23/publisher-proof.md` as the primary proof record.
 
@@ -259,7 +201,7 @@ Do not replace the proof with a new count-only check.
 Issue #5 has a wider source-preservation claim.
 Close it only after its card-reference and authored-position criteria are also mapped.
 
-### 6.2 Subject branches: issues #24 through #29
+### 5.2 Subject branches: issues #24 through #29
 
 Read each `artifacts/issue-N/branch-proof.md` before posting a disposition.
 
@@ -284,13 +226,13 @@ Close #28 only if every required card is addressable under issue #28's meaning.
 
 The occurrence-layer interpretation is user-gated.
 Do not silently weaken “every extracted card is reachable.”
-Section 8 routes this decision to issue #6 and the branch issues.
+Section 9 routes this decision to issue #6 and the branch issues.
 
 Issue #6 remains open until its full acceptance is proved.
 Its body includes the full-site proof as its eighth child work unit.
 Therefore issue #30 must close before issue #6 can close.
 
-### 6.3 Source reconciliation: issues #7 and #8
+### 5.3 Source reconciliation: issues #7 and #8
 
 Issue #7 owns all `qual-review-and-solutions` bundles, variants, citations, and assets.
 
@@ -319,11 +261,11 @@ Before closing #8:
 
 - prove an isolated import does not change curated output;
 
-- settle the regeneration-versus-curation ownership decision in Section 8.
+- settle the regeneration-versus-curation ownership decision in Section 9.
 
 Do not use “508 rows exist” as the completion claim.
 
-### 6.4 Attachment extraction: issue #9
+### 5.4 Attachment extraction: issue #9
 
 The repository contains a frozen document inventory and page-level dispositions.
 
@@ -341,7 +283,7 @@ Issue #9 remains open for these required facts:
 
 Do not publish third-party material before the user decides its license status.
 
-### 6.5 Reader and generator: issues #10 and #41
+### 5.5 Reader and generator: issues #10 and #41
 
 Issue #41 now contains mostly presentation residue.
 Verify each item against the current rendered page before closing it.
@@ -358,9 +300,37 @@ Before closing #10:
 
 - inspect a diagram, citation, occurrence link, hint, and solution;
 
-- settle typed facets and `tikzcd` in Section 8.
+- settle typed facets and `tikzcd` in Section 9.
 
-### 6.6 Source archive closeout: issue #11
+## 6. Workstream R2: current deployment and issue #30
+
+The existing browser replay covers deployed revision `bba5c28a`. The existing deployment proof covers revision `95e2d626`. Neither proves the current published artifact.
+
+After R1, deploy the current `main` revision.
+Record the exact commit, workflow run, deployment URL, and deployed revision.
+
+Repeat issue #30 at the deployed boundary:
+
+- verify route and catalog manifests;
+
+- visit every subject branch root and terminal route;
+
+- exercise search, filters, occurrences, disclosure, diagrams, citations, and generation;
+
+- inspect 375, 768, 1024, and 1440 CSS-pixel snapshots;
+
+- inspect console and network results;
+
+- confirm local and deployed artifacts use the same revision;
+
+- state every unexercised path and nonclaim.
+
+Use the existing `artifacts/issue-30/replay-proof.md` format.
+Write a current proof instead of extending the stale verdict.
+
+Issue #30 closes only when its own proof list has no unmet criterion.
+
+## 7. Workstream R3: independent source migration review
 
 All five source repositories are already archived by owner decision.
 Do not repeat archive action.
@@ -395,38 +365,72 @@ The review must establish:
 
 - no unresolved evidence that contradicts permanent migration.
 
-After a passing review, reconcile issue #11 and the closeout plan.
+After a passing review, give the result to R4.
+R4 reconciles issue #11 and the closeout plan.
 Remove stale claims that no archive action occurred.
 
-## 7. Workstream R3: current deployment and issue #30
+## 8. Workstream R4: record results and reconcile GitHub state
 
-The existing browser replay covers deployed revision `bba5c28a`. The existing deployment proof covers revision `95e2d626`. Neither proves the current published artifact.
+Record current evidence only after R1, R2, or R3 produces it.
+GitHub comments do not replace the work or its proof.
 
-After R1, deploy the current `main` revision.
-Record the exact commit, workflow run, deployment URL, and deployed revision.
+### 8.1 Publish content findings on issue #2
 
-Repeat issue #30 at the deployed boundary:
+Post the correction and finding records from the branch proofs and content reports.
 
-- verify route and catalog manifests;
+The comment must distinguish these classes:
 
-- visit every subject branch root and terminal route;
+- corrected false statements;
 
-- exercise search, filters, occurrences, disclosure, diagrams, citations, and generation;
+- source-backed corrections;
 
-- inspect 375, 768, 1024, and 1440 CSS-pixel snapshots;
+- unresolved mathematical choices;
 
-- inspect console and network results;
+- missing mathematics;
 
-- confirm local and deployed artifacts use the same revision;
+- card-kind or source-structure defects;
 
-- state every unexercised path and nonclaim.
+- duplicate candidates that still need reading.
 
-Use the existing `artifacts/issue-30/replay-proof.md` format.
-Write a current proof instead of extending the stale verdict.
+Do not describe issue #2 as complete.
+Its full structured-proof program remains open.
 
-Issue #30 closes only when its own proof list has no unmet criterion.
+### 8.2 Restore commit provenance on the owning issues
 
-## 8. User decisions and issue routes
+Post the known cross-lane provenance facts on their issue owners.
+
+- Issue #26 must identify `65b926c5` as the Real Analysis classification commit.
+
+- Issue #24 must identify `0bed0189` as the Prelims branch-proof commit.
+
+- Issue #2 must identify the seven round-one fixes that carry another lane's commit hash.
+
+Use the existing reports for the exact mapping.
+Do not infer authorship from the commit summary alone.
+
+### 8.3 Reconcile issue claims after verification
+
+Several issue bodies contain old inventory counts and old implementation claims.
+
+For each issue, compare its full acceptance text with current committed evidence.
+Then post one current evidence comment.
+
+The comment must include:
+
+- the exact repository revision;
+
+- the obligation under review;
+
+- the proof artifact or direct observation;
+
+- any nonclaim or residue;
+
+- the disposition of each unmet criterion.
+
+Close an issue only when its own acceptance text is fully satisfied.
+A parent issue, passing check, or proof count cannot replace that test.
+
+## 9. User decisions and issue routes
 
 Ask for these decisions as one concise batch.
 Do not infer an answer from existing content.
@@ -455,7 +459,7 @@ Do not infer an answer from existing content.
 Record each answer on its owning issue.
 Do not keep the decision only in this file.
 
-## 9. Proof and stop rules
+## 10. Proof and stop rules
 
 - Read the mathematics before any classification, merge, title, or canonicality decision.
 
@@ -481,7 +485,7 @@ Do not keep the decision only in this file.
 
 Stop and ask the user only when:
 
-- a decision in Section 8 is required;
+- a decision in Section 9 is required;
 
 - two mathematical sources give inequivalent answers;
 
@@ -491,21 +495,19 @@ Stop and ask the user only when:
 
 - live issue requirements contradict and no owning decision resolves them.
 
-## 10. Final closure order
+## 11. Final closure order
 
 Use this order after all workstreams finish:
 
-1. Close satisfied leaf issues with current proof links.
+1. Reconcile and close satisfied issues #5 through #11, #23 through #29, and #41.
 
 2. Close issue #30 on the current deployed proof.
 
 3. Close issue #6 after all publisher and branch obligations hold.
 
-4. Reconcile issues #5 through #11 with their current acceptance text.
+4. Update roadmap issue #1 with remaining open work.
 
-5. Update roadmap issue #1 with remaining open work.
-
-6. Keep issue #2 open unless its full mathematics program is complete.
+5. Keep issue #2 open unless its full mathematics program is complete.
 
 The project is not complete while issue #1 has an unmet requirement.
 This handoff is not evidence that any issue is complete.
