@@ -7,6 +7,7 @@ import re
 import shutil
 import subprocess
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 
 import pytest
@@ -14,6 +15,54 @@ from conftest import diagnostic_codes
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
+
+
+class WikiNavigationParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__()
+        self.in_wiki_navigation = False
+        self.details: list[tuple[int, str, bool]] = []
+        self.links: list[tuple[str, str, bool]] = []
+        self._details_open: list[bool] = []
+        self._summary_text: list[str] | None = None
+        self._link: tuple[str, bool] | None = None
+        self._link_text: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+        if tag == "nav" and attributes.get("aria-label") == "Wiki":
+            self.in_wiki_navigation = True
+        elif self.in_wiki_navigation and tag == "details":
+            self._details_open.append("open" in attributes)
+        elif self.in_wiki_navigation and tag == "summary":
+            self._summary_text = []
+        elif self.in_wiki_navigation and tag == "a":
+            href = attributes["href"]
+            assert href is not None
+            self._link = (href, attributes.get("aria-current") == "page")
+            self._link_text = []
+
+    def handle_data(self, data: str) -> None:
+        if self._summary_text is not None:
+            self._summary_text.append(data)
+        if self._link is not None:
+            self._link_text.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if self.in_wiki_navigation and tag == "summary":
+            assert self._summary_text is not None
+            self.details.append((len(self._details_open), "".join(self._summary_text).strip(), self._details_open[-1]))
+            self._summary_text = None
+        elif self.in_wiki_navigation and tag == "a":
+            assert self._link is not None
+            href, current = self._link
+            self.links.append(("".join(self._link_text).strip(), href, current))
+            self._link = None
+            self._link_text = []
+        elif self.in_wiki_navigation and tag == "details":
+            self._details_open.pop()
+        elif self.in_wiki_navigation and tag == "nav":
+            self.in_wiki_navigation = False
 
 
 def fixture_repo(tmp_path: Path) -> Path:
@@ -62,6 +111,26 @@ def test_build_emits_every_authored_page_and_resolves_real_links(tmp_path: Path)
     page = next(record for record in records if record["url"] == "wiki/index.html")
     assert page["kind"] == "Page"
     assert "fixture index" in page["search"]
+
+
+def test_every_wiki_page_has_the_full_wiki_tree(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    wiki = work / "wiki"
+    (wiki / "algebra").mkdir()
+    (wiki / "algebra" / "groups.md").write_text("# Groups\n")
+    (wiki / "topology").mkdir()
+    (wiki / "topology" / "compactness.md").write_text("# Compactness\n")
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    page = work / "build" / "quarto" / "_site" / "wiki" / "algebra" / "groups.html"
+    navigation = WikiNavigationParser()
+    navigation.feed(page.read_text())
+
+    assert navigation.details == [(1, "algebra", True), (1, "topology", False)]
+    assert ("Groups", "groups.html", True) in navigation.links
+    assert ("Compactness", "../topology/compactness.html", False) in navigation.links
 
 
 @pytest.mark.parametrize(
