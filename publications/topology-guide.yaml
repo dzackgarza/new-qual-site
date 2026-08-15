@@ -779,3 +779,9 @@ sections:
           limit: 500
           review:
             mode: any
+      - query:
+          kind: problem
+          topics: []
+          limit: 500
+          review:
+            mode: any
