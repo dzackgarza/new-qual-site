@@ -69,9 +69,8 @@
     }
   });
 
-  // The page says the URL is the query, so it has to be: ?q= seeds the filter on
-  // load and tracks it as the reader types, which makes a filtered view
-  // shareable and bookmarkable.
+  // ?q= seeds the filter on load and tracks it as the reader types,
+  // which makes a filtered view shareable and bookmarkable.
   const problemFilter = document.querySelector("#problem-filter");
   if (problemFilter) {
     const facets = ["area", "topic", "institution", "year"].map((axis) => ({

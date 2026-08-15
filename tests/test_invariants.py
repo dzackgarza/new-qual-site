@@ -339,9 +339,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert "D-7TQ2M" in dependency_groups[0].text
     assert {"H-2JK8Q", "S-4WQ1R"} <= {link.text for link in backlink_groups[0].find_all("a")}
 
-    # A named card's appearances name the section that named it, and say so as
-    # an authored reference rather than as a catalog query -- the page records
-    # which of the two mechanisms put the card there.
+    # A named card's appearances name the section that named it.
     witness_slug = next(slug for slug, named in named_by_section.items() if named)
     witness_card = named_by_section[witness_slug][0]
     witness_appearances = read_html(site / "tag" / f"{witness_card}.html").root.find_all(
@@ -351,7 +349,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert len(witness_appearances) == 1
     witness_title = next(entry.title for entry in traversal if entry.key == witness_slug)
     assert witness_title in witness_appearances[0].text
-    assert "Authored reference" in witness_appearances[0].text
+    assert "Reference" in witness_appearances[0].text
 
     # A sitting links to its problems; the problem must link back to the sitting
     # it was set at, not merely name it.

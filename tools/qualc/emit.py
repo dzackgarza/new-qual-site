@@ -492,11 +492,11 @@ def _relation_groups_json(
     source = (
         '<div class="relation-groups" aria-label="Card relationships">'
         '<section class="relation-group" data-relation-group="dependencies">'
-        "<h2>Authored dependencies</h2>"
+        "<h2>Dependencies</h2>"
         f"{_card_relation_items(dependencies)}"
         "</section>"
         '<section class="relation-group" data-relation-group="appearances">'
-        "<h2>Derived appearances</h2>"
+        "<h2>Appearances</h2>"
         f"{_appearance_items(appearances[card_id])}"
         "</section>"
         '<section class="relation-group" data-relation-group="backlinks">'
@@ -1211,7 +1211,7 @@ def card_appearances(
                             Appearance(
                                 target_key=target_key,
                                 title=section.title,
-                                basis="Authored reference",
+                                basis="Reference",
                             )
                         )
                     case QueryItem(query=query):
@@ -1238,8 +1238,8 @@ def index_page(
     # the omission looks exactly like a count of zero.
     counts = Counter(r["kind"] for r in _rows(con, "select kind from cards"))
     labels = {
-        "problem": "Problems (canonical)",
-        "occurrence": "Occurrences (as they appeared)",
+        "problem": "Problems",
+        "occurrence": "Exam appearances",
         "source": "Sources",
     }
 
@@ -1251,12 +1251,9 @@ def index_page(
     output = _successful_outputs(
         pandoc.read_markdown(
             [
-                "A proof of concept: markdown cards in git compile to a semantic index, and\n"
-                "the site is one projection of that index.\n\n"
                 "| Cards | Count |\n|---|---|\n" + body + "\n\n"
                 "Start with [the problem browser](problems.html), a "
-                "[historical exam](exams.html), or a [study guide](guides.html) — the same "
-                "records, arranged three different ways.\n"
+                "[past exam](exams.html), or a [study guide](guides.html).\n"
             ],
             MARKDOWN,
         ),
@@ -1370,7 +1367,7 @@ def problem_browser_page(
     return {"title": "Problems"}, [
         pf.Para(
             *_inlines(
-                "Every problem in the corpus. Filter by any facet; the URL is the query.",
+                "Every problem in the corpus.",
                 inline_cache,
             )
         ),
@@ -1720,7 +1717,7 @@ title: Generate a practice set
   </form>
   <div id="gen-sheet">
     <p class="text-muted">Pick criteria and press <b>Generate set</b>.
-      A modern take on make-me-a-qual — problems are sampled from the corpus
+      Problems are sampled from the corpus
       and typeset here.</p>
   </div>
 </div>
@@ -1813,8 +1810,8 @@ def project(
         [
             "problems, in the order they appeared.",
             ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
-            "Every problem in the corpus. Filter by any facet; the URL is the query.",
-            "Historical sittings, each a fixed ordered list of occurrences.",
+            "Every problem in the corpus.",
+            "Past exams.",
         ]
     )
     inline_values.extend(_query_heading(item.query, topic_names) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
@@ -1906,7 +1903,7 @@ def project(
             link_list_page(
                 con,
                 "Exams",
-                "Historical sittings, each a fixed ordered list of occurrences.",
+                "Past exams.",
                 _rows(
                     con,
                     "select c.* from cards c join sources s on s.id=c.id join exam_sources e on e.id=s.id order by e.institution, s.year, c.id",
