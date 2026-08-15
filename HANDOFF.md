@@ -365,8 +365,7 @@ The review must establish:
 
 - no unresolved evidence that contradicts permanent migration.
 
-After a passing review, give the result to R4.
-R4 reconciles issue #11 and the closeout plan.
+After a passing review, give the result to R4. R4 reconciles issue #11 and the closeout plan.
 Remove stale claims that no archive action occurred.
 
 ## 8. Workstream R4: record results and reconcile GitHub state
