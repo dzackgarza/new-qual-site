@@ -1312,7 +1312,7 @@ def problem_browser_page(
             + "".join(
                 f'<label for="problem-{axis}">{axis.title()}</label>'
                 f'<select id="problem-{axis}" multiple size="5" data-problem-facet="{axis}">'
-                + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(value.replace('-', ' ').title())}</option>' for value in values)
+                + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(value.replace("-", " ").title())}</option>' for value in values)
                 + "</select>"
                 for axis, values in facet_values.items()
             )
