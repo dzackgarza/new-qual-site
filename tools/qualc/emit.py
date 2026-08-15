@@ -1575,19 +1575,22 @@ def _generate_data(
             topics[r["card_id"]].append(r["term"])
     insts: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
     years: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
+    sources: dict[str, dict[str, str]] = {problem["id"]: {} for problem in problems}
     for r in _rows(
         con,
         """
-        select o.problem_id pid, e.institution inst, s.year
+        select o.problem_id pid, e.institution inst, s.year, o.source_id, c.title source_title
         from occurrences o
         join exam_sources e on e.id=o.source_id
         join sources s on s.id=o.source_id
+        join cards c on c.id=o.source_id
         """,
     ):
         if r["pid"] in insts:
             insts[r["pid"]].add(r["inst"])
             if r["year"] is not None:
                 years[r["pid"]].add(str(r["year"]))
+            sources[r["pid"]][r["source_id"]] = r["source_title"]
     bodies = _successful_html_outputs(
         pandoc.write_html([_statement_ast(problem["ast"]) for problem in problems]),
         "generator statement HTML write",
@@ -1602,6 +1605,10 @@ def _generate_data(
                 "topics": topics[r["id"]],
                 "insts": sorted(insts[r["id"]]),
                 "years": sorted(years[r["id"]]),
+                "sources": [
+                    {"id": source_id, "title": title}
+                    for source_id, title in sorted(sources[r["id"]].items())
+                ],
                 "q": stmt,
             }
         )
@@ -1678,7 +1685,7 @@ document.getElementById("gen-go").onclick=()=>{
     &&(!inst||q.insts.includes(inst))
     &&(!topic||q.topics.includes(topic))
     &&(!year||q.years.includes(year))
-    &&(!needSrc||q.insts.length));
+    &&(!needSrc||q.sources.length));
   const pick=sample(pool,n);
   const sheet=document.getElementById("gen-sheet");
   if(!pick.length){sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}
@@ -1687,7 +1694,7 @@ document.getElementById("gen-go").onclick=()=>{
     pick.map((q,i)=>`<div class="q">
       <div class="qn">${i+1}.</div>
       <div class="qb">${q.q}
-        <div class="src">${q.insts.map(x=>x.toUpperCase()).join(", ")} ·
+        <div class="src">${q.sources.length?q.sources.map(s=>`<a href="exam/${s.id}.html">${s.title}</a>`).join(", "):"No recorded sitting"} ·
           <a href="tag/${q.id}.html">${q.id}</a>
         </div>
       </div>
