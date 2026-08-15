@@ -1,20 +1,15 @@
 ---
 schema: qual/card@1
-id: O-MMAQ-000173
-kind: occurrence
-title: UGA real-analysis Spring 2015, problem 3
+id: P-MMAQ-DBJ6FCA5N3
+kind: problem
+title: Let $\mu$ be a finite Borel measure on $\RR$ and $E \subset \RR$ Borel.
 classification:
   areas:
   - real-analysis
   topics:
   - measure-theory
-relations:
-- kind: instance-of
-  target: P-MMAQ-DBJ6FCA5N3
+relations: []
 review: draft
-payload:
-  source: SRC-UGA-RA-SPRING-2015
-  locator: '3'
 ---
 
 ::: problem

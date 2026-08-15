@@ -1,21 +1,16 @@
 ---
 schema: qual/card@1
-id: O-MMAQ-000100
-kind: occurrence
-title: UGA Complex Analysis undated collection, problem row-0100
+id: P-MMAQ-CEXDT22XWE
+kind: problem
+title: Let $u(x,y)$ be harmonic and have continuous partial derivatives of…
 classification:
   areas:
   - complex-analysis
   topics:
   - harmonic-functions
   - integrals
-relations:
-- kind: instance-of
-  target: P-MMAQ-CEXDT22XWE
+relations: []
 review: draft
-payload:
-  source: SRC-MMAQ-UGA-CA-EXTRA-NA
-  locator: row-0100
 ---
 
 ::: problem

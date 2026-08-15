@@ -189,7 +189,7 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
     parsed = yaml.safe_load(data)
     if not isinstance(parsed, list) or not parsed:
         raise ValueError("MakeMeAQual source must be a non-empty YAML list")
-    registered, aliases = topic_vocabulary(root)
+    registered, aliases, splits = topic_vocabulary(root)
     unregistered: dict[str, int] = {}
     records: list[dict[str, Any]] = []
     for sequence, raw in enumerate(parsed, start=1):
@@ -218,15 +218,15 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
             raise ValueError(f"MakeMeAQual row {sequence} has unknown season {season!r}")
         topics: list[str] = []
         for tag in tags:
-            topic = slug(tag)
-            if not topic:
+            raw_topic = slug(tag)
+            if not raw_topic:
                 raise ValueError(f"MakeMeAQual row {sequence} has an empty topic slug for {tag!r}")
-            if topic in aliases:
-                topic = aliases[topic]
-            if topic not in registered:
-                unregistered.setdefault(topic, sequence)
-            if topic not in topics:
-                topics.append(topic)
+            candidates = splits.get(raw_topic, [aliases.get(raw_topic, raw_topic)])
+            for topic in candidates:
+                if topic not in registered:
+                    unregistered.setdefault(topic, sequence)
+                if topic not in topics:
+                    topics.append(topic)
         records.append(
             {
                 "sequence": sequence,
@@ -456,7 +456,7 @@ def source_title(key: tuple[str, str, str, str]) -> str:
     return f"{university} {area} {date}"
 
 
-def topic_vocabulary(root: Path) -> tuple[set[str], dict[str, str]]:
+def topic_vocabulary(root: Path) -> tuple[set[str], dict[str, str], dict[str, list[str]]]:
     """Read the curated topic registry and its retirement aliases.
 
     Both files belong to the classification side. This importer consumes them
@@ -481,7 +481,21 @@ def topic_vocabulary(root: Path) -> tuple[set[str], dict[str, str]]:
         if item["survivor"] not in registered:
             raise ValueError(f"{alias_path}: alias {item['retired']!r} names unregistered survivor {item['survivor']!r}")
         aliases[item["retired"]] = item["survivor"]
-    return registered, aliases
+    split_path = root / "vocabularies/topic-splits.yaml"
+    split_entries = yaml.safe_load(split_path.read_text()) if split_path.exists() else []
+    split_entries = split_entries or []
+    splits: dict[str, list[str]] = {}
+    for item in split_entries:
+        if not isinstance(item, dict) or not isinstance(item.get("raw"), str) or not isinstance(item.get("topics"), list):
+            raise ValueError(f"{split_path} contains a malformed topic split")
+        raw = item["raw"]
+        topics = item["topics"]
+        if not topics or any(not isinstance(topic, str) or topic not in registered for topic in topics):
+            raise ValueError(f"{split_path}: split {raw!r} names an unregistered topic")
+        if raw in splits or raw in aliases or raw in registered:
+            raise ValueError(f"{split_path}: duplicate topic split {raw!r}")
+        splits[raw] = list(dict.fromkeys(topics))
+    return registered, aliases, splits
 
 
 def write_source(

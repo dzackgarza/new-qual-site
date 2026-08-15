@@ -1,8 +1,8 @@
 ---
 schema: qual/card@1
-id: O-MMAQ-000029
-kind: occurrence
-title: UGA Complex Analysis undated collection, problem row-0029
+id: P-MMAQ-MCDUALQXJP
+kind: problem
+title: Let $g$ be analytic for $|z|\leq 1$ and $|g(z)| < 1$ for $|z| = 1$.
 classification:
   areas:
   - complex-analysis
@@ -10,13 +10,8 @@ classification:
   - holomorphic-functions
   - analysis
   - conformal-maps
-relations:
-- kind: instance-of
-  target: P-MMAQ-MCDUALQXJP
+relations: []
 review: draft
-payload:
-  source: SRC-MMAQ-UGA-CA-EXTRA-NA
-  locator: row-0029
 ---
 
 ::: problem
