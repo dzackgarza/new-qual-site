@@ -40,9 +40,17 @@ Do not mirror each issue update here.
 
 Complete the publication and preservation roadmap in issue #1.
 
+The first priority is the foundational product layer.
+Close the shared publication, subject-branch, problem-explorer, and MakeMeAQual surfaces before treating source migration, rendered-page residue, or independent review as the main execution path.
+Those later workstreams depend on this layer.
+
 A reader must be able to do all of the following on the deployed site:
 
 - enter each subject branch;
+
+- browse the complete problem catalog with search and facet filters;
+
+- generate a MakeMeAQual practice set from the shared catalog;
 
 - read the authored mathematics in a supported order;
 
@@ -157,12 +165,17 @@ Use this order unless a live issue records a newer dependency.
 R0  Verify repository, deployment, issue, and plan state
  |
  v
-R1  Complete issue-specific semantic, source, and product work
- |   (#5-#10, #23-#29, #41)
- |\
- | +--> R2  Deploy current main and complete issue #30 replay
+R1  Complete the foundational product layer
+|   (#8, #10, #23-#29)
  |
- +----> R3  Complete fresh independent review for issue #11
+ v
+R1b Complete remaining semantic and source work
+|   (#5-#7, #9, #41)
+ |
+ v
+R2  Deploy current main and complete issue #30 replay
+ |
+ +--> R3  Complete fresh independent review for issue #11
              without using this handoff as the review frame
 
 R2 + R3
@@ -178,6 +191,22 @@ Decision-gated work can run only after the user gives the named decision.
 Section 9 routes each decision.
 
 ## 5. Workstream R1: issue-specific completion work
+
+### 5.0 Foundational product layer: issues #8, #10, and #23 through #29
+
+This is the first implementation priority.
+It establishes the shared substrate for every later workstream:
+
+- publish the authored corpus and every required subject branch;
+
+- make the full problem catalog reachable through the reader and explorer;
+
+- make search, facets, disclosure, and statements-only generation use that catalog;
+
+- make MakeMeAQual generation and its source provenance agree with the catalog.
+
+Do not close this layer from a page count or a successful build alone.
+Each issue must prove its user-facing behavior on the current revision.
 
 ### 5.1 Publisher and authored pages: issues #5 and #23
 
