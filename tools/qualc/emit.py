@@ -1605,10 +1605,7 @@ def _generate_data(
                 "topics": topics[r["id"]],
                 "insts": sorted(insts[r["id"]]),
                 "years": sorted(years[r["id"]]),
-                "sources": [
-                    {"id": source_id, "title": title}
-                    for source_id, title in sorted(sources[r["id"]].items())
-                ],
+                "sources": [{"id": source_id, "title": title} for source_id, title in sorted(sources[r["id"]].items())],
                 "q": stmt,
             }
         )
