@@ -293,7 +293,23 @@ def existing_problems(
             raise ValueError(f"problem card has invalid id: {path}")
         if fingerprint not in by_fingerprint:
             by_fingerprint[fingerprint] = []
-        by_fingerprint[fingerprint].append((card_id, str(path.relative_to(root))))
+        if all(existing_id != card_id for existing_id, _ in by_fingerprint[fingerprint]):
+            by_fingerprint[fingerprint].append((card_id, str(path.relative_to(root))))
+    collapse_path = root / "sources/g3-collapse-map.jsonl"
+    if collapse_path.exists():
+        retired_to_survivor = {
+            item["retired"]: item["survivor"]
+            for line in collapse_path.read_text().splitlines()
+            if (item := json.loads(line))
+        }
+        for fingerprint, candidates in by_fingerprint.items():
+            survivors = [
+                candidate
+                for candidate in candidates
+                if retired_to_survivor.get(candidate[0], candidate[0]) == candidate[0]
+            ]
+            if survivors:
+                by_fingerprint[fingerprint] = survivors
     return dict(by_fingerprint)
 
 
@@ -627,14 +643,14 @@ def reconcile(
             statement_hash = hashlib.sha256(record["question"].encode("utf-8")).hexdigest()
             prior_entry = prior[statement_hash] if statement_hash in prior else None
             prior_id = prior_entry["problem_id"] if prior_entry is not None else None
-            if len(current_candidates) == 1:
-                problem_id, _ = current_candidates[0]
-                operation = "current-output"
-                legacy = current_candidates
-            elif len(candidates) == 1:
+            if len(candidates) == 1:
                 problem_id, _ = candidates[0]
                 operation = "existing-exact"
                 legacy = candidates
+            elif len(current_candidates) == 1:
+                problem_id, _ = current_candidates[0]
+                operation = "current-output"
+                legacy = current_candidates
             elif len(candidates) > 1:
                 problem_id = opaque("P-MMAQ-", fingerprint)
                 operation = "ambiguous-exact"
@@ -660,7 +676,10 @@ def reconcile(
             problem_ids[fingerprint] = problem_id
             problem_operations[fingerprint] = operation
             if prior_entry is not None and problem_id == prior_id:
-                problem_matches[fingerprint] = prior_entry["match"]
+                prior_match = prior_entry["match"]
+                if len(candidates) == 1 and candidates[0][0] == prior_id:
+                    prior_match = "existing-exact"
+                problem_matches[fingerprint] = prior_match
                 problem_history[fingerprint] = list(zip(prior_entry["legacy_problem_ids"], prior_entry["legacy_problem_paths"], strict=True))
             else:
                 problem_matches[fingerprint] = operation

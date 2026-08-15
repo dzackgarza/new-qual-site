@@ -1,8 +1,8 @@
 {
-  "ambiguous_exact": 95,
-  "existing_exact": 158,
+  "ambiguous_exact": 0,
+  "existing_exact": 269,
   "joined_existing_sittings": 19,
-  "new_problems": 168,
+  "new_problems": 155,
   "occurrences": 508,
   "rows": 508,
   "source": {
