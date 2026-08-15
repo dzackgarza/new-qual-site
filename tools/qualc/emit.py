@@ -51,6 +51,7 @@ from .static_site import (
     NavigationLink,
     NavigationParent,
     NodeParent,
+    OnlyReading,
     PageChrome,
     PageTarget,
     PublicationNavigation,
@@ -94,10 +95,19 @@ def _successful_outputs(
     for index, result in enumerate(results):
         match result:
             case PandocFailure(error=error):
-                raise PandocBatchError(f"pandoc {operation} failed for item {index}: {error}")
-        warnings = [message.message for message in result.messages if message.verbosity == "WARNING" and not message.message.startswith(ignored)]
+                raise PandocBatchError(
+                    f"pandoc {operation} failed for item {index}: {error}"
+                )
+        warnings = [
+            message.message
+            for message in result.messages
+            if message.verbosity == "WARNING"
+            and not message.message.startswith(ignored)
+        ]
         if warnings:
-            raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
+            raise ValueError(
+                f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}"
+            )
         outputs.append(result.output)
     return outputs
 
@@ -115,10 +125,19 @@ def _successful_html_outputs(
     for index, result in enumerate(results):
         match result:
             case PandocFailure(error=error):
-                raise PandocBatchError(f"pandoc {operation} failed for item {index}: {error}")
-        warnings = [message.message for message in result.messages if message.verbosity == "WARNING" and not message.message.startswith(KNOWN_PANDOC_WARNINGS)]
+                raise PandocBatchError(
+                    f"pandoc {operation} failed for item {index}: {error}"
+                )
+        warnings = [
+            message.message
+            for message in result.messages
+            if message.verbosity == "WARNING"
+            and not message.message.startswith(KNOWN_PANDOC_WARNINGS)
+        ]
         if warnings:
-            raise ValueError(f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}")
+            raise ValueError(
+                f"pandoc {operation} warned for item {index}: {'; '.join(warnings)}"
+            )
         outputs.append(result.output)
     return outputs
 
@@ -273,7 +292,7 @@ def _wiki_branch(page: WikiPage) -> str:
 
 
 def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
-    """Breadcrumbs and reading order for every authored page, by route.
+    """The full wiki tree, breadcrumbs, and branch reading order, by route.
 
     A page's trail is the directory path it is filed under, which is the
     hierarchy the author built and the one the subtitle already shows. Reading
@@ -283,49 +302,51 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
     A directory carries a `NavigationLink` with no target: it names a level of
     the trail but has no page of its own to link to.
     """
-    navigation: dict[str, PublicationNavigation] = {}
-    for branch in sorted({_wiki_branch(page) for page in pages}):
-        members = sorted(
-            (page for page in pages if _wiki_branch(page) == branch),
-            key=lambda page: page.source_rel.as_posix(),
+    sorted_pages = sorted(pages, key=lambda page: page.source_rel.as_posix())
+    links: dict[str, NavigationLink] = {}
+    for page in sorted_pages:
+        parent: NavigationParent = RootParent()
+        for depth in range(1, len(page.source_rel.parts)):
+            key = "/".join(page.source_rel.parts[:depth])
+            if key not in links:
+                links[key] = NavigationLink(
+                    key=key,
+                    title=page.source_rel.parts[depth - 1].replace("_", " "),
+                    target=LevelOnly(),
+                    parent=parent,
+                )
+            parent = NodeParent(key)
+        links[page.route.as_posix()] = NavigationLink(
+            key=page.route.as_posix(),
+            title=page.title,
+            target=PageTarget(page.route),
+            parent=parent,
         )
-        links: dict[str, NavigationLink] = {}
-        for page in members:
-            parent: NavigationParent = RootParent()
-            for depth in range(1, len(page.source_rel.parts)):
-                key = "/".join(page.source_rel.parts[:depth])
-                if key not in links:
-                    links[key] = NavigationLink(
-                        key=key,
-                        title=page.source_rel.parts[depth - 1].replace("_", " "),
-                        target=LevelOnly(),
-                        parent=parent,
-                    )
-                parent = NodeParent(key)
-            links[page.route.as_posix()] = NavigationLink(
-                key=page.route.as_posix(),
-                title=page.title,
-                target=PageTarget(page.route),
-                parent=parent,
-            )
-        ordered = tuple(links.values())
+
+    navigation: dict[str, PublicationNavigation] = {}
+    ordered = tuple(links.values())
+    for branch in sorted({_wiki_branch(page) for page in sorted_pages}):
+        members = [page for page in sorted_pages if _wiki_branch(page) == branch]
         for index, page in enumerate(members):
             previous = members[index - 1] if index else None
             following = members[index + 1] if index + 1 < len(members) else None
-            key = page.route.as_posix()
-            position: StartReading | MiddleReading | EndReading
+            position: StartReading | MiddleReading | EndReading | OnlyReading
             if previous is None and following is not None:
-                position = StartReading(following=ReadingLink.of(links[following.route.as_posix()]))
+                position = StartReading(
+                    following=ReadingLink.of(links[following.route.as_posix()])
+                )
             elif following is None and previous is not None:
-                position = EndReading(previous=ReadingLink.of(links[previous.route.as_posix()]))
+                position = EndReading(
+                    previous=ReadingLink.of(links[previous.route.as_posix()])
+                )
             elif previous is not None and following is not None:
                 position = MiddleReading(
                     previous=ReadingLink.of(links[previous.route.as_posix()]),
                     following=ReadingLink.of(links[following.route.as_posix()]),
                 )
             else:
-                # A branch of one page has nowhere to go; it keeps its trail.
-                continue
+                position = OnlyReading()
+            key = page.route.as_posix()
             navigation[key] = PublicationNavigation(
                 links=ordered,
                 current_key=key,
@@ -471,9 +492,13 @@ def _rename_json(node: object) -> None:
                 kind = DIV_CLASS_TO_KIND[owned[0]]
                 attr[1].append(SECTION_CLASS)
                 attr[2].append(["data-label", kind.title()])
-                title = next((value.strip() for key, value in attr[2] if key == "title"), "")
+                title = next(
+                    (value.strip() for key, value in attr[2] if key == "title"), ""
+                )
                 if title and kind in TITLED_KINDS:
-                    node["c"][1].insert(0, {"t": "RawBlock", "c": ["html", _title_html(title)]})
+                    node["c"][1].insert(
+                        0, {"t": "RawBlock", "c": ["html", _title_html(title)]}
+                    )
         _rename_json(node.get("c"))
 
 
@@ -544,7 +569,9 @@ def plain_json(
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
+        "categories": sorted(
+            set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))
+        ),
     }
     return meta, body
 
@@ -778,7 +805,9 @@ def run_query(
     sql = "select distinct c.* from cards c join classifications a on a.card_id=c.id and a.axis='area' and a.term=?"
     args: list = [area]
     if query.topics:
-        sql += " join classifications t on t.card_id=c.id and t.axis='topic' and t.term in ({})".format(",".join("?" * len(query.topics)))
+        sql += " join classifications t on t.card_id=c.id and t.axis='topic' and t.term in ({})".format(
+            ",".join("?" * len(query.topics))
+        )
         args += list(query.topics)
     sql += " where c.kind=?"
     args.append(query.kind)
@@ -842,7 +871,9 @@ def problem_page(
     )
     if uses:
         blocks.append(pf.Header(pf.Str("Uses"), level=2))
-        blocks.append(pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses]))
+        blocks.append(
+            pf.BulletList(*[pf.ListItem(_link(u, inline_cache)) for u in uses])
+        )
 
     return {
         "title": card["title"],
@@ -859,7 +890,9 @@ def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
     return {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
+        "categories": sorted(
+            set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))
+        ),
     }, _blocks(card)
 
 
@@ -1043,8 +1076,14 @@ def _query_heading(query: PublicationQuery, topic_names: dict[str, str]) -> str:
     manifest, and `topics.yaml` already carries a name for each topic, so the
     heading restates the query rather than inventing a title for it.
     """
-    topics = ", ".join(topic_names[topic] if topic in topic_names else topic for topic in query.topics)
-    return f"{_plural(query.kind).title()}: {topics}" if topics else _plural(query.kind).title()
+    topics = ", ".join(
+        topic_names[topic] if topic in topic_names else topic for topic in query.topics
+    )
+    return (
+        f"{_plural(query.kind).title()}: {topics}"
+        if topics
+        else _plural(query.kind).title()
+    )
 
 
 def publication_section_page(
@@ -1067,7 +1106,9 @@ def publication_section_page(
             case QueryItem(query=query):
                 hits = run_query(con, query, manifest.area)
                 if not hits:
-                    raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
+                    raise ValueError(
+                        f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}"
+                    )
                 blocks.append(
                     pf.Div(
                         pf.Header(
@@ -1108,7 +1149,9 @@ def card_appearances(
     The sitting edge is the reverse of the 2,798 links an exam page already
     carries. Without it a problem page names the sitting it came from in the
     occurrence disclosure but offers no way to reach it."""
-    appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
+    appearances: dict[str, list[Appearance]] = {
+        row["id"]: [] for row in _rows(con, "select id from cards order by id")
+    }
     seen: set[tuple[str, str]] = set()
     for occurrence in _rows(
         con,
@@ -1153,7 +1196,9 @@ def card_appearances(
                     case QueryItem(query=query):
                         hits = run_query(con, query, manifest.area)
                         if not hits:
-                            raise ValueError(f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}")
+                            raise ValueError(
+                                f"publication query has no matches in area {manifest.area}: {manifest.id}/{section.slug}"
+                            )
                         for hit in hits:
                             appearances[hit["id"]].append(
                                 Appearance(
@@ -1181,9 +1226,14 @@ def index_page(
 
     def plural(kind: str) -> str:
         stem = kind.title()
-        return labels.get(kind) or (f"{stem[:-1]}ies" if stem.endswith("y") else f"{stem}s")
+        return labels.get(kind) or (
+            f"{stem[:-1]}ies" if stem.endswith("y") else f"{stem}s"
+        )
 
-    body = "\n".join(f"| {plural(kind)} | {n} |" for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
+    body = "\n".join(
+        f"| {plural(kind)} | {n} |"
+        for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    )
     output = _successful_outputs(
         pandoc.read_markdown(
             [
@@ -1207,7 +1257,9 @@ def listing_page(
     lede: str,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
-    return {"title": title, "listing": listing}, [pf.Para(*_inlines(lede, inline_cache))]
+    return {"title": title, "listing": listing}, [
+        pf.Para(*_inlines(lede, inline_cache))
+    ]
 
 
 def problem_browser_page(
@@ -1215,10 +1267,34 @@ def problem_browser_page(
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
     facet_values = {
-        "area": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='area'")}),
-        "topic": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='topic'")}),
-        "institution": sorted({row["institution"].upper() for row in _rows(con, "select institution from exam_sources")}),
-        "year": sorted({str(row["year"]) for row in _rows(con, "select year from sources where year is not null")}),
+        "area": sorted(
+            {
+                row["term"]
+                for row in _rows(
+                    con, "select term from classifications where axis='area'"
+                )
+            }
+        ),
+        "topic": sorted(
+            {
+                row["term"]
+                for row in _rows(
+                    con, "select term from classifications where axis='topic'"
+                )
+            }
+        ),
+        "institution": sorted(
+            {
+                row["institution"].upper()
+                for row in _rows(con, "select institution from exam_sources")
+            }
+        ),
+        "year": sorted(
+            {
+                str(row["year"])
+                for row in _rows(con, "select year from sources where year is not null")
+            }
+        ),
     }
     problems = _rows(
         con,
@@ -1270,7 +1346,12 @@ def problem_browser_page(
             if index:
                 source_links.append(pf.Str(","))
                 source_links.append(pf.Space())
-            source_links.append(pf.Link(*_inlines(source["title"], inline_cache), url=f"exam/{source['source_id']}.html"))
+            source_links.append(
+                pf.Link(
+                    *_inlines(source["title"], inline_cache),
+                    url=f"exam/{source['source_id']}.html",
+                )
+            )
         search = " ".join(
             str(value)
             for value in (
@@ -1287,7 +1368,9 @@ def problem_browser_page(
             pf.Div(
                 _link(problem, inline_cache, prefix="tag/"),
                 pf.Plain(pf.Str(facet_text or "Unclassified")),
-                pf.Plain(pf.Str("Sources: "), *source_links) if source_links else pf.Plain(pf.Str("Sources: none")),
+                pf.Plain(pf.Str("Sources: "), *source_links)
+                if source_links
+                else pf.Plain(pf.Str("Sources: none")),
                 classes=["problem-row"],
                 attributes={
                     "data-search": search,
@@ -1312,7 +1395,10 @@ def problem_browser_page(
             + "".join(
                 f'<label for="problem-{axis}">{axis.title()}</label>'
                 f'<select id="problem-{axis}" multiple size="5" data-problem-facet="{axis}">'
-                + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(value.replace("-", " ").title())}</option>' for value in values)
+                + "".join(
+                    f'<option value="{html.escape(value, quote=True)}">{html.escape(value.replace("-", " ").title())}</option>'
+                    for value in values
+                )
                 + "</select>"
                 for axis, values in facet_values.items()
             )
@@ -1394,16 +1480,22 @@ def mathjax_header(macros: dict) -> str:
         if not tex_name.startswith("\\") or tex_name == "\\":
             raise ValueError(f"invalid TeX macro name: {tex_name!r}")
         if not isinstance(definition, str):
-            raise TypeError(f"invalid definition for TeX macro {tex_name}: {definition!r}")
+            raise TypeError(
+                f"invalid definition for TeX macro {tex_name}: {definition!r}"
+            )
         name = tex_name[1:]
         if name in mathjax_macros:
             raise ValueError(f"duplicate MathJax macro name: {name}")
-        parameters = {int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)}
+        parameters = {
+            int(match.group(1)) for match in re.finditer(r"(?<!\\)#([1-9])", definition)
+        }
         if parameters:
             argument_count = max(parameters)
             expected = set(range(1, argument_count + 1))
             if parameters != expected:
-                raise ValueError(f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}")
+                raise ValueError(
+                    f"non-contiguous parameters for TeX macro {tex_name}: {sorted(parameters)}"
+                )
             mathjax_macros[name] = [definition, argument_count]
         else:
             mathjax_macros[name] = definition
@@ -1518,7 +1610,10 @@ def _search_records(
                 "kind": "Page",
                 "detail": "study guide",
                 "url": _publication_root_route(guide).as_posix(),
-                "search": " ".join([guide.title, guide.lede] + [section.title for section in guide.sections]).lower(),
+                "search": " ".join(
+                    [guide.title, guide.lede]
+                    + [section.title for section in guide.sections]
+                ).lower(),
             }
         )
         page_records.extend(
@@ -1564,7 +1659,9 @@ def _generate_data(
     first. `_html_ast` is the tag-page extraction and is wrong here: it hides
     answers behind a disclosure the reader can open, which on a printed practice
     sheet means printing them."""
-    problems = _rows(con, "select id, title, ast from cards where kind='problem' order by id")
+    problems = _rows(
+        con, "select id, title, ast from cards where kind='problem' order by id"
+    )
     areas: dict[str, list[str]] = {problem["id"]: [] for problem in problems}
     for r in _rows(con, "select card_id, term from classifications where axis='area'"):
         if r["card_id"] in areas:
@@ -1605,7 +1702,10 @@ def _generate_data(
                 "topics": topics[r["id"]],
                 "insts": sorted(insts[r["id"]]),
                 "years": sorted(years[r["id"]]),
-                "sources": [{"id": source_id, "title": title} for source_id, title in sorted(sources[r["id"]].items())],
+                "sources": [
+                    {"id": source_id, "title": title}
+                    for source_id, title in sorted(sources[r["id"]].items())
+                ],
                 "q": stmt,
             }
         )
@@ -1736,22 +1836,40 @@ def project(
     guides = load_publications(publications)
     link_targets = _link_targets(con, guides)
     link_targets.update(wiki_link_targets(wiki_pages or []))
-    (out / "wiki-manifest.json").write_text(json.dumps(_wiki_manifest(wiki_pages or []), ensure_ascii=False, indent=2) + "\n")
+    (out / "wiki-manifest.json").write_text(
+        json.dumps(_wiki_manifest(wiki_pages or []), ensure_ascii=False, indent=2)
+        + "\n"
+    )
     appearances = card_appearances(con, guides)
     assets = build_asset_catalog(site.parent / "assets")
-    inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
+    inline_values = [
+        row["title"] for row in _rows(con, "select distinct title from cards")
+    ]
     inline_values.extend(
         [
             "problems, in the order they appeared.",
-            ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
+            (
+                "Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."
+            ),
             "Every problem in the corpus. Filter by any facet; the URL is the query.",
             "Historical sittings, each a fixed ordered list of occurrences.",
         ]
     )
-    inline_values.extend(_query_heading(item.query, topic_names) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
+    inline_values.extend(
+        _query_heading(item.query, topic_names)
+        for guide in guides
+        for section in guide.sections
+        for item in section.items
+        if isinstance(item, QueryItem)
+    )
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
-    inline_values.extend(value for guide in guides for section in guide.sections for value in (section.title, section.lede))
+    inline_values.extend(
+        value
+        for guide in guides
+        for section in guide.sections
+        for value in (section.title, section.lede)
+    )
     inline_cache = build_inline_cache(pandoc, inline_values)
 
     jcache, api = load_json(con)
@@ -1759,7 +1877,9 @@ def project(
     for card in _rows(con, "select * from cards where kind='problem'"):
         meta, body = problem_json(con, card, jcache, appearances)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
-    for card in _rows(con, "select * from cards where kind not in ('problem','source','occurrence')"):
+    for card in _rows(
+        con, "select * from cards where kind not in ('problem','source','occurrence')"
+    ):
         meta, body = plain_json(con, card, jcache, appearances)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     write_json_pages(

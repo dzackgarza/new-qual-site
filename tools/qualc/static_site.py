@@ -9,7 +9,7 @@ import re
 from dataclasses import dataclass
 from html import escape
 from pathlib import Path
-from typing import Literal
+from typing import Literal, assert_never
 from urllib.parse import unquote, urlsplit
 
 
@@ -88,7 +88,12 @@ class EndReading:
     previous: ReadingLink
 
 
-ReadingPosition = StartReading | MiddleReading | EndReading
+@dataclass(frozen=True)
+class OnlyReading:
+    pass
+
+
+ReadingPosition = StartReading | MiddleReading | EndReading | OnlyReading
 
 
 @dataclass(frozen=True)
@@ -110,12 +115,7 @@ class SubjectPage:
 
 @dataclass(frozen=True)
 class AuthoredPage:
-    """A wiki page: the trail down to it, and where reading goes next.
-
-    It carries no study-path sidebar. A guide is a curated handful of sections
-    and lists them all; a wiki branch runs to 105 pages, and putting that on
-    every page of the branch is a table of contents, not navigation.
-    """
+    """A wiki page with its authored hierarchy and reading order."""
 
     navigation: PublicationNavigation
 
@@ -153,7 +153,9 @@ def _metadata(meta: dict[str, object]) -> str:
     for key, label in labels.items():
         value = meta.get(key)
         if isinstance(value, str) and value:
-            rows.append(f'<div class="page-fact"><dt>{escape(label)}</dt><dd>{escape(value)}</dd></div>')
+            rows.append(
+                f'<div class="page-fact"><dt>{escape(label)}</dt><dd>{escape(value)}</dd></div>'
+            )
     if not rows:
         return ""
     return '<dl class="page-facts">' + "".join(rows) + "</dl>"
@@ -203,24 +205,82 @@ def _subject_tree(
     relative_path: Path,
     navigation: PublicationNavigation,
 ) -> str:
+    roots, children = _navigation_structure(navigation)
+
+    def branch(links: list[NavigationLink]) -> str:
+        items: list[str] = []
+        for link in links:
+            nested = branch(children[link.key])
+            anchor = (
+                _current_navigation_link(relative_path, link)
+                if link.key == navigation.current_key
+                else _navigation_link(relative_path, link)
+            )
+            items.append("<li>" + anchor + nested + "</li>")
+        return f"<ol>{''.join(items)}</ol>" if items else ""
+
+    return f'<aside class="subject-sidebar"><nav aria-label="Subject"><strong class="subject-label">Study path</strong>{branch(roots)}</nav></aside>'
+
+
+def _navigation_structure(
+    navigation: PublicationNavigation,
+) -> tuple[list[NavigationLink], dict[str, list[NavigationLink]]]:
     roots: list[NavigationLink] = []
-    children: dict[str, list[NavigationLink]] = {link.key: [] for link in navigation.links}
+    children: dict[str, list[NavigationLink]] = {
+        link.key: [] for link in navigation.links
+    }
     for link in navigation.links:
         match link.parent:
             case RootParent():
                 roots.append(link)
             case NodeParent(key=parent_key):
                 children[parent_key].append(link)
+            case _ as unreachable:
+                assert_never(unreachable)
+    return roots, children
+
+
+def _wiki_tree(
+    relative_path: Path,
+    navigation: PublicationNavigation,
+) -> str:
+    roots, children = _navigation_structure(navigation)
+    by_key = {link.key: link for link in navigation.links}
+    open_directories: set[str] = set()
+    cursor = by_key[navigation.current_key]
+    while True:
+        match cursor.parent:
+            case RootParent():
+                break
+            case NodeParent(key=parent_key):
+                open_directories.add(parent_key)
+                cursor = by_key[parent_key]
+            case _ as unreachable:
+                assert_never(unreachable)
 
     def branch(links: list[NavigationLink]) -> str:
-        items = []
+        items: list[str] = []
         for link in links:
             nested = branch(children[link.key])
-            anchor = _current_navigation_link(relative_path, link) if link.key == navigation.current_key else _navigation_link(relative_path, link)
-            items.append("<li>" + anchor + nested + "</li>")
+            match link.target:
+                case LevelOnly():
+                    assert nested, f"wiki directory has no pages: {link.key}"
+                    open_attribute = " open" if link.key in open_directories else ""
+                    items.append(
+                        f"<li><details{open_attribute}><summary>{escape(link.title)}</summary>{nested}</details></li>"
+                    )
+                case PageTarget():
+                    anchor = (
+                        _current_navigation_link(relative_path, link)
+                        if link.key == navigation.current_key
+                        else _navigation_link(relative_path, link)
+                    )
+                    items.append("<li>" + anchor + nested + "</li>")
+                case _ as unreachable:
+                    assert_never(unreachable)
         return f"<ol>{''.join(items)}</ol>" if items else ""
 
-    return f'<aside class="subject-sidebar"><nav aria-label="Subject"><strong class="subject-label">Study path</strong>{branch(roots)}</nav></aside>'
+    return f'<aside class="subject-sidebar wiki-sidebar"><nav aria-label="Wiki"><strong class="subject-label">Wiki</strong>{branch(roots)}</nav></aside>'
 
 
 def _breadcrumbs(
@@ -241,7 +301,13 @@ def _breadcrumbs(
     return (
         '<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>'
         + "".join(
-            "<li>" + (_current_navigation_link(relative_path, link) if link.key == navigation.current_key else _navigation_link(relative_path, link)) + "</li>"
+            "<li>"
+            + (
+                _current_navigation_link(relative_path, link)
+                if link.key == navigation.current_key
+                else _navigation_link(relative_path, link)
+            )
+            + "</li>"
             for link in trail
         )
         + "</ol></nav>"
@@ -290,7 +356,15 @@ def _reading_order(
                 )
                 + "</span>"
             ]
-    return '<nav class="reading-order" aria-label="Reading order">' + "".join(links) + "</nav>"
+        case OnlyReading():
+            return ""
+        case _ as unreachable:
+            assert_never(unreachable)
+    return (
+        '<nav class="reading-order" aria-label="Reading order">'
+        + "".join(links)
+        + "</nav>"
+    )
 
 
 def _asset_source(raw_url: str, catalog: AssetCatalog) -> Path:
@@ -313,7 +387,10 @@ def _asset_source(raw_url: str, catalog: AssetCatalog) -> Path:
     matches = catalog.by_name[name]
     if len(matches) == 1:
         return matches[0]
-    raise ValueError(f"referenced asset is ambiguous: {raw_url} matches " + ", ".join(str(path) for path in matches))
+    raise ValueError(
+        f"referenced asset is ambiguous: {raw_url} matches "
+        + ", ".join(str(path) for path in matches)
+    )
 
 
 def _rewrite_body(
@@ -338,7 +415,11 @@ def _rewrite_body(
         attribute = match.group("attribute")
         raw_url = match.group("url")
         parsed = urlsplit(raw_url)
-        if parsed.scheme or parsed.netloc or raw_url.startswith(("#", "data:", "mailto:")):
+        if (
+            parsed.scheme
+            or parsed.netloc
+            or raw_url.startswith(("#", "data:", "mailto:"))
+        ):
             return match.group(0)
         if attribute == "href" and parsed.path in link_targets:
             target = link_targets[parsed.path]
@@ -374,7 +455,9 @@ def page_document(
     title = raw_title if isinstance(raw_title, str) else "Qual Corpus"
     raw_subtitle = meta.get("subtitle")
     subtitle = raw_subtitle if isinstance(raw_subtitle, str) else ""
-    subtitle_html = f'<p class="page-subtitle">{escape(subtitle)}</p>' if subtitle else ""
+    subtitle_html = (
+        f'<p class="page-subtitle">{escape(subtitle)}</p>' if subtitle else ""
+    )
     match chrome:
         case StandardPage():
             subject_html = ""
@@ -387,10 +470,10 @@ def page_document(
             reading_order_html = _reading_order(relative_path, navigation)
             layout_class = "page-layout subject-layout"
         case AuthoredPage(navigation=navigation):
-            subject_html = ""
+            subject_html = _wiki_tree(relative_path, navigation)
             breadcrumb_html = _breadcrumbs(relative_path, navigation)
             reading_order_html = _reading_order(relative_path, navigation)
-            layout_class = "page-layout"
+            layout_class = "page-layout subject-layout"
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -481,4 +564,6 @@ def write_page(
 
 
 def write_search_index(site_root: Path, records: list[dict[str, object]]) -> None:
-    (site_root / "search.json").write_text(json.dumps(records, ensure_ascii=False, separators=(",", ":")))
+    (site_root / "search.json").write_text(
+        json.dumps(records, ensure_ascii=False, separators=(",", ":"))
+    )

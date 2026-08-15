@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="3.257" timestamp="2026-08-15T20:06:01.078700+08:00" hostname="bahamut"><testcase classname="tests.test_wiki_publication" name="test_wiki_tree_is_complete_on_root_and_nested_pages" time="3.194" /></testsuite></testsuites>

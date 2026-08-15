@@ -51,7 +51,13 @@ class WikiNavigationParser(HTMLParser):
     def handle_endtag(self, tag: str) -> None:
         if self.in_wiki_navigation and tag == "summary":
             assert self._summary_text is not None
-            self.details.append((len(self._details_open), "".join(self._summary_text).strip(), self._details_open[-1]))
+            self.details.append(
+                (
+                    len(self._details_open),
+                    "".join(self._summary_text).strip(),
+                    self._details_open[-1],
+                )
+            )
             self._summary_text = None
         elif self.in_wiki_navigation and tag == "a":
             assert self._link is not None
@@ -76,8 +82,12 @@ def fixture_repo(tmp_path: Path) -> Path:
     (assets / "diagram.png").write_bytes(b"fixture image")
     wiki = work / "wiki"
     wiki.mkdir()
-    (wiki / "index.md").write_text("# Fixture index\n\nSee [[PRB-INDEXP|the index problem]] and [the details](details.md).\n\n![diagram](figures/diagram.png)\n")
-    (wiki / "details.md").write_text("# Fixture details\n\nThe page reference survived.\n")
+    (wiki / "index.md").write_text(
+        "# Fixture index\n\nSee [[PRB-INDEXP|the index problem]] and [the details](details.md).\n\n![diagram](figures/diagram.png)\n"
+    )
+    (wiki / "details.md").write_text(
+        "# Fixture details\n\nThe page reference survived.\n"
+    )
     return work
 
 
@@ -90,7 +100,9 @@ def run(command: str, root: Path) -> subprocess.CompletedProcess[str]:
     )
 
 
-def test_build_emits_every_authored_page_and_resolves_real_links(tmp_path: Path) -> None:
+def test_build_emits_every_authored_page_and_resolves_real_links(
+    tmp_path: Path,
+) -> None:
     work = fixture_repo(tmp_path)
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -99,13 +111,18 @@ def test_build_emits_every_authored_page_and_resolves_real_links(tmp_path: Path)
     site = output / "_site"
     manifest = json.loads((output / "wiki-manifest.json").read_text())
     assert {entry["source"] for entry in manifest} == {"index.md", "details.md"}
-    assert {entry["route"] for entry in manifest} == {"wiki/index.html", "wiki/details.html"}
+    assert {entry["route"] for entry in manifest} == {
+        "wiki/index.html",
+        "wiki/details.html",
+    }
 
     index = (site / "wiki" / "index.html").read_text()
     assert "../tag/PRB-INDEXP.html" in index
     assert 'href="details.html"' in index
     assert 'src="../assets/figures/diagram.png"' in index
-    assert (site / "assets" / "figures" / "diagram.png").read_bytes() == b"fixture image"
+    assert (
+        site / "assets" / "figures" / "diagram.png"
+    ).read_bytes() == b"fixture image"
 
     records = json.loads((site / "search.json").read_text())
     page = next(record for record in records if record["url"] == "wiki/index.html")
@@ -113,7 +130,7 @@ def test_build_emits_every_authored_page_and_resolves_real_links(tmp_path: Path)
     assert "fixture index" in page["search"]
 
 
-def test_every_wiki_page_has_the_full_wiki_tree(tmp_path: Path) -> None:
+def test_wiki_tree_is_complete_on_root_and_nested_pages(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     wiki = work / "wiki"
     (wiki / "algebra").mkdir()
@@ -131,6 +148,14 @@ def test_every_wiki_page_has_the_full_wiki_tree(tmp_path: Path) -> None:
     assert navigation.details == [(1, "algebra", True), (1, "topology", False)]
     assert ("Groups", "groups.html", True) in navigation.links
     assert ("Compactness", "../topology/compactness.html", False) in navigation.links
+
+    index_navigation = WikiNavigationParser()
+    index_navigation.feed((page.parents[1] / "index.html").read_text())
+
+    assert index_navigation.details == [(1, "algebra", False), (1, "topology", False)]
+    assert ("Fixture index", "index.html", True) in index_navigation.links
+    assert ("Groups", "algebra/groups.html", False) in index_navigation.links
+    assert ("Compactness", "topology/compactness.html", False) in index_navigation.links
 
 
 @pytest.mark.parametrize(
@@ -174,7 +199,9 @@ def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
     citeproc resolves it against `references.bib`: the reader gets an author-date
     reference in place and a bibliography entry to look it up in."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text("# Fixture index\n\nReferences: [@DF04], [@Smi].\n")
+    (work / "wiki" / "index.md").write_text(
+        "# Fixture index\n\nReferences: [@DF04], [@Smi].\n"
+    )
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -197,7 +224,9 @@ def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
     assert "Wiley, 2004" in text
     assert "Smith, R." in text
 
-    records = json.loads((work / "build" / "quarto" / "_site" / "search.json").read_text())
+    records = json.loads(
+        (work / "build" / "quarto" / "_site" / "search.json").read_text()
+    )
     index = next(record for record in records if record["url"] == "wiki/index.html")
     assert "dummit, d. s. and r. m. foote" in index["search"]
     # Pandoc records the citeproc request in the document metadata. The page is
@@ -206,11 +235,15 @@ def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
     assert "style.csl" not in index["search"]
 
 
-def test_check_rejects_a_citation_the_bibliography_does_not_define(tmp_path: Path) -> None:
+def test_check_rejects_a_citation_the_bibliography_does_not_define(
+    tmp_path: Path,
+) -> None:
     """citeproc renders a key it cannot resolve as `**key?**`, which would reach
     the page. The build stops at the named diagnostic instead."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text("# Fixture index\n\nSee [@bourbaki_1970].\n")
+    (work / "wiki" / "index.md").write_text(
+        "# Fixture index\n\nSee [@bourbaki_1970].\n"
+    )
     for path in (work / "wiki").rglob("*.md"):
         if path.name != "index.md":
             path.unlink()
@@ -218,12 +251,16 @@ def test_check_rejects_a_citation_the_bibliography_does_not_define(tmp_path: Pat
     assert diagnostic_codes(work) == ["unknown-citation"]
 
 
-def test_a_figure_captioned_with_its_own_filename_loses_the_caption(tmp_path: Path) -> None:
+def test_a_figure_captioned_with_its_own_filename_loses_the_caption(
+    tmp_path: Path,
+) -> None:
     """Pandoc's implicit-figure syntax makes the caption out of the alt text, and
     the authored vault wrote the attachment path there. A written caption is a
     caption and stays; a path is the file's name and is not one."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text("# Fixture index\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n")
+    (work / "wiki" / "index.md").write_text(
+        "# Fixture index\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n"
+    )
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
