@@ -185,11 +185,11 @@ def _source_bytes(root: Path, input_path: Path | None) -> tuple[bytes, dict[str,
 
 
 class ImportProblem(ValueError):
-    """A named import failure: `code` is the machine identity, the message is prose."""
+    """Named import failures: the subclass carries the identity."""
 
-    def __init__(self, code: str, message: str) -> None:
-        super().__init__(f"{code}: {message}")
-        self.code = code
+
+class UnregisteredTopic(ImportProblem):
+    """A topic that is neither registered nor aliased; registering is curation."""
 
 
 def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, Any]], dict[str, str]]:
@@ -251,11 +251,10 @@ def load_records(root: Path, input_path: Path | None) -> tuple[list[dict[str, An
         )
     if unregistered:
         listed = ", ".join(f"{topic!r} (row {row})" for topic, row in sorted(unregistered.items()))
-        raise ImportProblem(
-            "unregistered-topic",
+        raise UnregisteredTopic(
             f"{len(unregistered)} tag(s) are neither in vocabularies/topics.yaml nor "
             f"aliased in vocabularies/topic-aliases.yaml: {listed}. Registering a topic or recording a "
-            f"merge is a curation act; this importer will not do it.",
+            f"merge is a curation act; this importer will not do it."
         )
     return records, source
 

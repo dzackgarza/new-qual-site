@@ -179,11 +179,10 @@ def test_a_retired_topic_resolves_to_its_survivor_and_an_unregistered_one_stops_
     with pytest.raises(subprocess.CalledProcessError):
         _run(tmp_path, source)
     sys.path.insert(0, str(ROOT / "tools"))
-    from import_mmaq import ImportProblem, load_records
+    from import_mmaq import UnregisteredTopic, load_records
 
-    with pytest.raises(ImportProblem) as caught:
+    with pytest.raises(UnregisteredTopic):
         load_records(tmp_path, source)
-    assert caught.value.code == "unregistered-topic"
 
 
 def test_loose_equates_rendering_spellings_and_separates_different_mathematics() -> None:
