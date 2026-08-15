@@ -430,9 +430,44 @@ mjx-container[display="true"] {
   margin-top: 1rem;
 }
 
+.problem-filters {
+  display: grid;
+  grid-template-columns: minmax(14rem, 2fr) repeat(4, minmax(8rem, 1fr));
+  gap: 0.65rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.problem-filters label {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.problem-filters input,
+.problem-filters select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 0.25rem;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.problem-filters output {
+  grid-column: 1 / -1;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 .problem-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(9rem, auto);
+  grid-template-columns: minmax(0, 1fr) minmax(9rem, auto) minmax(12rem, 1fr);
   gap: 1rem;
   padding: 0.75rem 0.85rem;
   border: 1px solid var(--line);

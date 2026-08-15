@@ -74,17 +74,39 @@
   // shareable and bookmarkable.
   const problemFilter = document.querySelector("#problem-filter");
   if (problemFilter) {
+    const facets = ["area", "topic", "institution", "year"].map((axis) => ({
+      axis,
+      select: document.querySelector(`#problem-${axis}`),
+    }));
+    const selected = (select) =>
+      [...select.selectedOptions].map((option) => option.value);
+    const queryValues = (axis) => {
+      const value = new URLSearchParams(location.search).get(axis);
+      return value ? value.split(",").filter(Boolean) : [];
+    };
+    const setSelected = (select, values) => {
+      for (const option of select.options) option.selected = values.includes(option.value);
+    };
+    const matchesFacet = (row, axis, values) =>
+      !values.length || values.every((value) => row.dataset[axis].split(" ").includes(value));
     const applyFilter = () => {
       const terms = problemFilter.value.toLocaleLowerCase().trim().split(/\s+/);
+      let visible = 0;
       for (const row of document.querySelectorAll(".problem-row")) {
-        row.hidden = !terms.every((term) => row.dataset.search.includes(term));
+        const matchesSearch = !problemFilter.value.trim() || terms.every((term) => row.dataset.search.includes(term));
+        const matchesFacets = facets.every(({ axis, select }) => matchesFacet(row, axis, selected(select)));
+        row.hidden = !(matchesSearch && matchesFacets);
+        if (!row.hidden) visible += 1;
       }
+      const count = document.querySelector("#problem-count");
+      if (count) count.textContent = `${visible} problem${visible === 1 ? "" : "s"} shown`;
     };
     // No `q` in the URL is a real state, not a missing value: it means no filter.
     const query = new URLSearchParams(location.search).get("q");
     problemFilter.value = query === null ? "" : query;
+    for (const { axis, select } of facets) setSelected(select, queryValues(axis));
     applyFilter();
-    problemFilter.addEventListener("input", () => {
+    const updateUrl = () => {
       applyFilter();
       const url = new URL(location.href);
       if (problemFilter.value) {
@@ -92,8 +114,15 @@
       } else {
         url.searchParams.delete("q");
       }
+      for (const { axis, select } of facets) {
+        const values = selected(select);
+        if (values.length) url.searchParams.set(axis, values.join(","));
+        else url.searchParams.delete(axis);
+      }
       history.replaceState(null, "", url);
-    });
+    };
+    problemFilter.addEventListener("input", updateUrl);
+    for (const { select } of facets) select.addEventListener("change", updateUrl);
   }
 
   const headings = [

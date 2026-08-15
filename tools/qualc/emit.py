@@ -1214,6 +1214,12 @@ def problem_browser_page(
     con: sqlite3.Connection,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
+    facet_values = {
+        "area": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='area'")}),
+        "topic": sorted({row["term"] for row in _rows(con, "select term from classifications where axis='topic'")}),
+        "institution": sorted({row["institution"].upper() for row in _rows(con, "select institution from exam_sources")}),
+        "year": sorted({str(row["year"]) for row in _rows(con, "select year from sources where year is not null")}),
+    }
     problems = _rows(
         con,
         """
@@ -1233,9 +1239,23 @@ def problem_browser_page(
         order by c.title, c.id
         """,
     )
+    sources_by_problem: dict[str, list[sqlite3.Row]] = {}
+    for source in _rows(
+        con,
+        """
+        select distinct o.problem_id, o.source_id, s.title
+        from occurrences o join cards s on s.id=o.source_id
+        order by s.title
+        """,
+    ):
+        sources_by_problem.setdefault(source["problem_id"], []).append(source)
     rows: list[pf.Block] = []
     for problem in problems:
-        facets = " · ".join(
+        area_terms = (problem["areas"] or "").split()
+        topic_terms = (problem["topics"] or "").split()
+        institution_terms = (problem["institutions"] or "").split()
+        year_terms = (problem["years"] or "").split()
+        facet_text = " · ".join(
             value.replace("-", " ").title()
             for value in (
                 problem["areas"] or "",
@@ -1244,6 +1264,13 @@ def problem_browser_page(
             )
             if value
         )
+        source_rows = sources_by_problem.get(problem["id"], [])
+        source_links: list[pf.Inline] = []
+        for index, source in enumerate(source_rows):
+            if index:
+                source_links.append(pf.Str(","))
+                source_links.append(pf.Space())
+            source_links.append(pf.Link(*_inlines(source["title"], inline_cache), url=f"exam/{source['source_id']}.html"))
         search = " ".join(
             str(value)
             for value in (
@@ -1259,9 +1286,16 @@ def problem_browser_page(
         rows.append(
             pf.Div(
                 _link(problem, inline_cache, prefix="tag/"),
-                pf.Plain(pf.Str(facets or "Unclassified")),
+                pf.Plain(pf.Str(facet_text or "Unclassified")),
+                pf.Plain(pf.Str("Sources: "), *source_links) if source_links else pf.Plain(pf.Str("Sources: none")),
                 classes=["problem-row"],
-                attributes={"data-search": search},
+                attributes={
+                    "data-search": search,
+                    "data-area": " ".join(area_terms),
+                    "data-topic": " ".join(topic_terms),
+                    "data-institution": " ".join(institution_terms),
+                    "data-year": " ".join(year_terms),
+                },
             )
         )
     return {"title": "Problems"}, [
@@ -1272,7 +1306,17 @@ def problem_browser_page(
             )
         ),
         pf.RawBlock(
-            '<label for="problem-filter">Filter problems</label><input id="problem-filter" type="search" placeholder="Group theory, UGA, 2019…">',
+            '<div class="problem-filters">'
+            '<label for="problem-filter">Search</label>'
+            '<input id="problem-filter" type="search" placeholder="Group theory, UGA, 2019…">'
+            + "".join(
+                f'<label for="problem-{axis}">{axis.title()}</label>'
+                f'<select id="problem-{axis}" multiple size="5" data-problem-facet="{axis}">'
+                + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(value.replace('-', ' ').title())}</option>' for value in values)
+                + "</select>"
+                for axis, values in facet_values.items()
+            )
+            + '<output id="problem-count" aria-live="polite"></output></div>',
             format="html",
         ),
         pf.Div(*rows, classes=["problem-browser"]),
@@ -1525,13 +1569,25 @@ def _generate_data(
     for r in _rows(con, "select card_id, term from classifications where axis='area'"):
         if r["card_id"] in areas:
             areas[r["card_id"]].append(r["term"])
+    topics: dict[str, list[str]] = {problem["id"]: [] for problem in problems}
+    for r in _rows(con, "select card_id, term from classifications where axis='topic'"):
+        if r["card_id"] in topics:
+            topics[r["card_id"]].append(r["term"])
     insts: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
+    years: dict[str, set[str]] = {problem["id"]: set() for problem in problems}
     for r in _rows(
         con,
-        "select o.problem_id pid, e.institution inst from occurrences o join exam_sources e on e.id=o.source_id",
+        """
+        select o.problem_id pid, e.institution inst, s.year
+        from occurrences o
+        join exam_sources e on e.id=o.source_id
+        join sources s on s.id=o.source_id
+        """,
     ):
         if r["pid"] in insts:
             insts[r["pid"]].add(r["inst"])
+            if r["year"] is not None:
+                years[r["pid"]].add(str(r["year"]))
     bodies = _successful_html_outputs(
         pandoc.write_html([_statement_ast(problem["ast"]) for problem in problems]),
         "generator statement HTML write",
@@ -1543,7 +1599,9 @@ def _generate_data(
             {
                 "id": r["id"],
                 "areas": areas[r["id"]],
+                "topics": topics[r["id"]],
                 "insts": sorted(insts[r["id"]]),
+                "years": sorted(years[r["id"]]),
                 "q": stmt,
             }
         )
@@ -1580,6 +1638,8 @@ title: Generate a practice set
   <form class="gen-controls" onsubmit="return false">
     <div class="grp"><label class="h">Areas</label><div id="gen-areas"></div></div>
     <div class="grp"><label class="h">Institution</label><select id="gen-inst" class="form-select"></select></div>
+    <div class="grp"><label class="h">Topic</label><select id="gen-topic" class="form-select"></select></div>
+    <div class="grp"><label class="h">Year</label><select id="gen-year" class="form-select"></select></div>
     <div class="grp"><label class="h">Number of problems</label><input type="number" id="gen-n" value="8" min="1" max="40"></div>
     <div class="grp"><label class="opt"><input type="checkbox" id="gen-src"> Only from a recorded sitting</label></div>
     <button id="gen-go">Generate set</button>
@@ -1592,28 +1652,37 @@ title: Generate a practice set
   </div>
 </div>
 <script>
-const AREAS={"algebra":"Algebra","real-analysis":"Real Analysis","complex-analysis":"Complex Analysis","topology":"Topology"};
 const QDATA=__GENDATA__;
+const label=(value)=>value.replaceAll("-"," ").replace(/\\b\\w/g,(letter)=>letter.toUpperCase());
+const AREAS=Object.fromEntries([...new Set(QDATA.flatMap(q=>q.areas))].map((area)=>[area,label(area)]));
 const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
+const topics=[...new Set(QDATA.flatMap(q=>q.topics))].filter(Boolean).sort();
+const years=[...new Set(QDATA.flatMap(q=>q.years))].filter(Boolean).sort((a,b)=>Number(b)-Number(a));
 document.getElementById("gen-areas").innerHTML=Object.entries(AREAS)
   .map(([k,v])=>`<label class="opt"><input type="checkbox" class="ga"
     value="${k}"> ${v}</label>`)
   .join("");
 document.getElementById("gen-inst").innerHTML='<option value="">Any</option>'+insts.map(i=>`<option value="${i}">${i.toUpperCase()}</option>`).join("");
+document.getElementById("gen-topic").innerHTML='<option value="">Any</option>'+topics.map(t=>`<option value="${t}">${label(t)}</option>`).join("");
+document.getElementById("gen-year").innerHTML='<option value="">Any</option>'+years.map(y=>`<option value="${y}">${y}</option>`).join("");
 function sample(a,n){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a.slice(0,n);}
 document.getElementById("gen-go").onclick=()=>{
   const areas=[...document.querySelectorAll(".ga:checked")].map(c=>c.value);
   const inst=document.getElementById("gen-inst").value;
+  const topic=document.getElementById("gen-topic").value;
+  const year=document.getElementById("gen-year").value;
   const n=Math.max(1,Math.min(40,+document.getElementById("gen-n").value||8));
   const needSrc=document.getElementById("gen-src").checked;
   let pool=QDATA.filter(q=>q.q.length>10
     &&(!areas.length||q.areas.some(a=>areas.includes(a)))
     &&(!inst||q.insts.includes(inst))
+    &&(!topic||q.topics.includes(topic))
+    &&(!year||q.years.includes(year))
     &&(!needSrc||q.insts.length));
   const pick=sample(pool,n);
   const sheet=document.getElementById("gen-sheet");
   if(!pick.length){sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}
-  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst.toUpperCase():"");
+  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst.toUpperCase():"")+(topic?" · "+label(topic):"")+(year?" · "+year:"");
   sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${pick.length} problems · ${title}</p>`+
     pick.map((q,i)=>`<div class="q">
       <div class="qn">${i+1}.</div>
