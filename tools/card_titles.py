@@ -32,6 +32,7 @@ import argparse
 import collections
 import json
 import re
+from enum import Enum
 import sys
 from pathlib import Path
 
@@ -292,7 +293,17 @@ def _typesets(title: str) -> bool:
     )
 
 
-def degenerate(title: str, authored: str = "") -> str | None:
+class DegenerateReason(Enum):
+    """Why a derived title fails a reader. The value is the report wording."""
+
+    NO_TITLE = "no title"
+    DOES_NOT_TYPESET = "does not typeset"
+    IMAGE_NOT_TITLE = "an image is not a title"
+    MARKDOWN_MARKUP = "carries markdown markup"
+    NAMES_NOTHING = "names nothing"
+
+
+def degenerate(title: str, authored: str = "") -> DegenerateReason | None:
     """Why this title fails a reader, or None if it does not.
 
     An authored title is exempt from the floor. `Excision` and `Gram Matrix`
@@ -301,17 +312,17 @@ def degenerate(title: str, authored: str = "") -> str | None:
     """
     text = title.strip()
     if not text or text in {"?", "Untitled"}:
-        return "no title"
+        return DegenerateReason.NO_TITLE
     if not _typesets(text):
-        return "does not typeset"
+        return DegenerateReason.DOES_NOT_TYPESET
     if IMAGE.search(text) or re.search(r"\.(png|jpe?g|gif|svg)\b", text):
-        return "an image is not a title"
+        return DegenerateReason.IMAGE_NOT_TITLE
     if EMPHASIS.search(MATH.sub("", text)) or FOOTNOTE.search(text):
-        return "carries markdown markup"
+        return DegenerateReason.MARKDOWN_MARKUP
     if text == authored.strip():
         return None
     if readable(text) < FLOOR and not MATH.search(text):
-        return "names nothing"
+        return DegenerateReason.NAMES_NOTHING
     return None
 
 
@@ -330,7 +341,7 @@ def _front_matter(text: str) -> tuple[str, str]:
     return front, body
 
 
-def _sitting_titles(meta: dict[str, dict], degenerate_now: dict[str, str | None]) -> dict[str, str]:
+def _sitting_titles(meta: dict[str, dict], degenerate_now: dict[str, DegenerateReason | None]) -> dict[str, str]:
     """Occurrences named the way the corpus already names them.
 
     2,798 occurrence cards read `P-XYDVS at UGA algebra Spring 2020`. The 22

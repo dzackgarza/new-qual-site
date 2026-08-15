@@ -10,7 +10,7 @@ enumerator is statement rather than furniture; that is a separate question from
 what makes a line worth titling a card after, and the last test holds them apart.
 """
 
-from card_titles import degenerate, retitle, title_of
+from card_titles import DegenerateReason, degenerate, retitle, title_of
 from route_apply import NOT_A_TITLE
 
 
@@ -48,7 +48,7 @@ def test_a_short_authored_title_takes_the_statement_only_to_break_a_tie() -> Non
 def test_a_statement_of_only_a_figure_admits_it_rather_than_inventing_words() -> None:
     body = ':::{.exercise title="?"}\n![figure](../../assets/figures/2021-05-17.png)\n:::\n'
     assert title_of(body) == "Untitled"
-    assert degenerate(title_of(body)) == "no title"
+    assert degenerate(title_of(body)) == DegenerateReason.NO_TITLE
 
 
 def test_a_cut_never_falls_inside_the_mathematics() -> None:
@@ -74,22 +74,22 @@ def test_a_padded_delimiter_never_reaches_a_title() -> None:
     dropped: `$ \\cos(z) = \\cosh(?) $` renders as "(z) = (?)"."""
     body = ':::{.fact title="Angle addition: $ \\cosh(x+iy) = \\cdots $"}\nbody\n:::\n'
     assert title_of(body) == "Angle addition: $\\cosh(x+iy) = \\cdots$"
-    assert degenerate("Angle addition: $ \\cosh(x+iy) $") == "does not typeset"
+    assert degenerate("Angle addition: $ \\cosh(x+iy) $") == DegenerateReason.DOES_NOT_TYPESET
     assert degenerate("Angle addition: $\\cosh(x+iy)$") is None
 
 
 def test_degenerate_names_the_defects_a_reader_meets() -> None:
-    assert degenerate("Let") == "names nothing"
-    assert degenerate("?") == "no title"
-    assert degenerate("Show that $\\frac{a}{b") == "does not typeset"
-    assert degenerate("Show that $a &= b$") == "does not typeset"
-    assert degenerate("![[_attachments/Pasted image 20210517.png]]") == "an image is not a title"
-    assert degenerate("**Main Idea**: deformation retract") == "carries markdown markup"
+    assert degenerate("Let") == DegenerateReason.NAMES_NOTHING
+    assert degenerate("?") == DegenerateReason.NO_TITLE
+    assert degenerate("Show that $\\frac{a}{b") == DegenerateReason.DOES_NOT_TYPESET
+    assert degenerate("Show that $a &= b$") == DegenerateReason.DOES_NOT_TYPESET
+    assert degenerate("![[_attachments/Pasted image 20210517.png]]") == DegenerateReason.IMAGE_NOT_TITLE
+    assert degenerate("**Main Idea**: deformation retract") == DegenerateReason.MARKDOWN_MARKUP
 
 
 def test_degenerate_leaves_the_authors_own_naming_alone() -> None:
     """`Excision` is short, and it is exactly what that card is called."""
-    assert degenerate("Excision") == "names nothing"
+    assert degenerate("Excision") == DegenerateReason.NAMES_NOTHING
     assert degenerate("Excision", authored="Excision") is None
 
 

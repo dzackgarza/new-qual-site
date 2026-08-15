@@ -106,7 +106,7 @@ def check_degenerate_titles(parsed: list[ParsedCard]) -> Check:
         bodies[item.card.id] = body
         reason = degenerate(item.card.title, authored_title(body))
         if reason:
-            bad.append(f"{item.card.id}: {reason}: {item.card.title!r}")
+            bad.append(f"{item.card.id}: {reason.value}: {item.card.title!r}")
 
     flagged = {line.split(":", 1)[0] for line in bad}
     shared: dict[str, list[str]] = {}
