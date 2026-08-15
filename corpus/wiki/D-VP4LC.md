@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-VP4LC
 kind: definition
-title: "Kronecker Product"
+title: "Kronecker Pairing"
 classification:
   areas:
   - topology
@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-::: {.definition title="Kronecker Product"}
+::: {.definition title="Kronecker Pairing"}
 Evaluating a cochain on a chain, $\inner{\varphi}{\alpha} \da \varphi(\alpha)$, is compatible with the differentials, since $\inner{\delta\varphi}{\alpha} = \inner{\varphi}{\del\alpha}$.
 It therefore descends to a pairing on (co)homology,
 \[
