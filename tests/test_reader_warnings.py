@@ -47,6 +47,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from qualc.diagnostics import DiagnosticCode
 from qualc.model import parse_card, parse_cards
 
 # `\qty{3}` in text mode: correct physics-package usage, wrong package as far as
@@ -82,7 +83,7 @@ def test_a_reader_warning_fails_the_build(tmp_path: Path) -> None:
     parsed, errors = parse_cards([before, warning, after])
 
     assert [item.card.id for item in parsed] == ["E-BEFORE", "E-AFTER"]
-    assert [error.code for error in errors] == ["reader-warning"]
+    assert [error.code for error in errors] == [DiagnosticCode.READER_WARNING]
     assert errors[0].where == str(warning), "the diagnostic must name the file that warned"
 
 

@@ -16,6 +16,7 @@ from typing import get_args, get_type_hints
 
 import pytest
 from conftest import diagnostic_codes, fixture_repo, run_qualc
+from qualc.diagnostics import DiagnosticCode
 from qualc.model import Card
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -71,7 +72,7 @@ def test_unknown_textbook_is_rejected(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     card = work / "corpus" / "SRC-DUMMIT.md"
     card.write_text(card.read_text().replace("dummit-foote", "dumit-foot"))
-    assert diagnostic_codes(work) == ["unknown-textbook"]
+    assert diagnostic_codes(work) == [DiagnosticCode.UNKNOWN_TEXTBOOK]
 
 
 def test_every_card_reaches_a_page(tmp_path: Path) -> None:

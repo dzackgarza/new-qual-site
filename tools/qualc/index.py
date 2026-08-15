@@ -11,7 +11,7 @@ from pathlib import Path
 
 import yaml
 
-from .diagnostics import Diagnostic
+from .diagnostics import Diagnostic, DiagnosticCode
 from .model import (
     AcademicTerm,
     ContributedArtifact,
@@ -78,7 +78,7 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
         if p.card.id in by_id:
             errors.append(
                 Diagnostic(
-                    "duplicate-id",
+                    DiagnosticCode.DUPLICATE_ID,
                     p.source_path,
                     f"duplicate id {p.card.id}: also at {by_id[p.card.id].source_path}",
                 )
@@ -89,13 +89,13 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
         where = f"{p.source_path} ({p.card.id})"
         for area in p.card.classification.areas:
             if area not in vocab["areas"]:
-                errors.append(Diagnostic("unknown-area", where, f"unknown area {area!r}"))
+                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_AREA, where, f"unknown area {area!r}"))
         for topic in p.card.classification.topics:
             if topic not in vocab["topics"]:
-                errors.append(Diagnostic("unknown-topic", where, f"unknown topic {topic!r}"))
+                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_TOPIC, where, f"unknown topic {topic!r}"))
         for rel in p.card.relations:
             if rel.target not in by_id:
-                errors.append(Diagnostic("dangling-relation", where, f"dangling relation target {rel.target!r}"))
+                errors.append(Diagnostic(DiagnosticCode.DANGLING_RELATION, where, f"dangling relation target {rel.target!r}"))
         if isinstance(p.card, SourceCard):
             # One registry check per variant, matching the union. Only an exam
             # sitting has an institution; a textbook has a registry entry
@@ -103,7 +103,7 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
             # no registry to check against.
             payload = p.card.payload
             if isinstance(payload, ExamSource) and payload.institution not in vocab["institutions"]:
-                errors.append(Diagnostic("unknown-institution", where, f"unknown institution {payload.institution!r}"))
+                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_INSTITUTION, where, f"unknown institution {payload.institution!r}"))
             # `ExamSource.area` is the only payload area field, and it went
             # unchecked while `classification.areas` was checked. That is how
             # `prelim` entered 29 UGA source cards unregistered: nothing rejected
@@ -111,20 +111,20 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
             # know, so 419 cards ended up with `areas: []`. Registering `prelim`
             # fixed those 419; this is what stops the next one.
             if isinstance(payload, ExamSource) and payload.area not in vocab["areas"]:
-                errors.append(Diagnostic("unknown-area", where, f"unknown payload area {payload.area!r}"))
+                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_AREA, where, f"unknown payload area {payload.area!r}"))
             if isinstance(payload, TextbookSource) and payload.textbook not in vocab["textbooks"]:
-                errors.append(Diagnostic("unknown-textbook", where, f"unknown textbook {payload.textbook!r}"))
+                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_TEXTBOOK, where, f"unknown textbook {payload.textbook!r}"))
         if isinstance(p.card, OccurrenceCard):
             src = by_id.get(p.card.payload.source)
             if src is None:
-                errors.append(Diagnostic("occurrence-missing-source", where, f"names missing source {p.card.payload.source!r}"))
+                errors.append(Diagnostic(DiagnosticCode.OCCURRENCE_MISSING_SOURCE, where, f"names missing source {p.card.payload.source!r}"))
             elif not isinstance(src.card, SourceCard):
-                errors.append(Diagnostic("occurrence-source-not-a-source-card", where, f"{p.card.payload.source} is not a source card"))
+                errors.append(Diagnostic(DiagnosticCode.OCCURRENCE_SOURCE_NOT_A_SOURCE_CARD, where, f"{p.card.payload.source} is not a source card"))
             targets = [r.target for r in p.card.relations if r.kind == "instance-of"]
             if len(targets) != 1:
-                errors.append(Diagnostic("occurrence-instance-of-count", where, "occurrence needs exactly one instance-of relation"))
+                errors.append(Diagnostic(DiagnosticCode.OCCURRENCE_INSTANCE_OF_COUNT, where, "occurrence needs exactly one instance-of relation"))
             elif targets[0] in by_id and by_id[targets[0]].card.kind != "problem":
-                errors.append(Diagnostic("occurrence-instance-of-not-a-problem", where, "instance-of must target a problem"))
+                errors.append(Diagnostic(DiagnosticCode.OCCURRENCE_INSTANCE_OF_NOT_A_PROBLEM, where, "instance-of must target a problem"))
     return errors
 
 

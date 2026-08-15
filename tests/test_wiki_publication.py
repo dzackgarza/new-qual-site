@@ -12,6 +12,7 @@ from pathlib import Path
 
 import pytest
 from conftest import diagnostic_codes
+from qualc.diagnostics import DiagnosticCode
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
@@ -171,21 +172,21 @@ def test_wiki_tree_is_complete_on_root_and_nested_pages(tmp_path: Path) -> None:
 @pytest.mark.parametrize(
     ("pages", "code"),
     [
-        ({"index.md": "# Root\n\n[[does-not-exist]]\n"}, "page-reference-missing"),
+        ({"index.md": "# Root\n\n[[does-not-exist]]\n"}, DiagnosticCode.PAGE_REFERENCE_MISSING),
         (
             {
                 "index.md": "# Root\n\n[[same]]\n",
                 "a/same.md": "# A\n",
                 "b/same.md": "# B\n",
             },
-            "page-reference-ambiguous",
+            DiagnosticCode.PAGE_REFERENCE_AMBIGUOUS,
         ),
     ],
 )
 def test_check_rejects_missing_or_ambiguous_page_references(
     tmp_path: Path,
     pages: dict[str, str],
-    code: str,
+    code: DiagnosticCode,
 ) -> None:
     """A reference that resolves to nothing, and one that resolves to two pages,
     are different failures and must stay distinguishable. Asserting the code
@@ -250,7 +251,7 @@ def test_check_rejects_a_citation_the_bibliography_does_not_define(
         if path.name != "index.md":
             path.unlink()
 
-    assert diagnostic_codes(work) == ["unknown-citation"]
+    assert diagnostic_codes(work) == [DiagnosticCode.UNKNOWN_CITATION]
 
 
 def test_a_figure_captioned_with_its_own_filename_loses_the_caption(

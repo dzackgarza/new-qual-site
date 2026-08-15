@@ -25,6 +25,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from qualc.diagnostics import DiagnosticCode
+
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURE_CORPUS = Path(__file__).resolve().parent / "fixtures" / "kinds"
 
@@ -52,15 +54,15 @@ def run_qualc(command: str, root: Path, *, as_json: bool = False) -> subprocess.
     return subprocess.run(argv, capture_output=True, text=True)
 
 
-def diagnostic_codes(root: Path) -> list[str]:
+def diagnostic_codes(root: Path) -> list[DiagnosticCode]:
     """The codes `qualc check` reports, through the real CLI boundary.
 
-    Tests assert on these rather than on stderr wording: a code is the
-    diagnostic's identity, the message is presentation. Substring matching on
-    the message passes when it is reworded and passes when an unrelated
-    diagnostic happens to share a word.
+    Tests assert on the `DiagnosticCode` members rather than on stderr wording:
+    the member is the diagnostic's identity, the message is presentation.
+    Substring matching on the message passes when it is reworded and passes
+    when an unrelated diagnostic happens to share a word.
     """
     result = run_qualc("check", root, as_json=True)
     if result.returncode == 0:
         return []
-    return [entry["code"] for entry in json.loads(result.stderr)]
+    return [DiagnosticCode(entry["code"]) for entry in json.loads(result.stderr)]

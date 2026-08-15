@@ -1,38 +1,38 @@
 """Typed check diagnostics.
 
-Each failure carries a stable `code`, so tests assert which diagnostic fired
-and the wording stays free to change. The CLI owns presentation: `--json`
+Each failure carries a `DiagnosticCode` member, so tests assert which
+diagnostic fired and the wording stays free to change. The CLI owns presentation: `--json`
 emits the structured form for programs; the default human output is unchanged.
 """
 
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Literal
+from enum import Enum
 
-DiagnosticCode = Literal[
+
+class DiagnosticCode(Enum):
     # identity and registry
-    "duplicate-id",
-    "unknown-area",
-    "unknown-topic",
-    "unknown-institution",
-    "unknown-textbook",
+    DUPLICATE_ID = "duplicate-id"
+    UNKNOWN_AREA = "unknown-area"
+    UNKNOWN_TOPIC = "unknown-topic"
+    UNKNOWN_INSTITUTION = "unknown-institution"
+    UNKNOWN_TEXTBOOK = "unknown-textbook"
     # relations
-    "dangling-relation",
-    "occurrence-missing-source",
-    "occurrence-source-not-a-source-card",
-    "occurrence-instance-of-count",
-    "occurrence-instance-of-not-a-problem",
+    DANGLING_RELATION = "dangling-relation"
+    OCCURRENCE_MISSING_SOURCE = "occurrence-missing-source"
+    OCCURRENCE_SOURCE_NOT_A_SOURCE_CARD = "occurrence-source-not-a-source-card"
+    OCCURRENCE_INSTANCE_OF_COUNT = "occurrence-instance-of-count"
+    OCCURRENCE_INSTANCE_OF_NOT_A_PROBLEM = "occurrence-instance-of-not-a-problem"
     # reading
-    "card-unreadable",
-    "reader-warning",
-    "unmapped-div-class",
+    CARD_UNREADABLE = "card-unreadable"
+    READER_WARNING = "reader-warning"
+    UNMAPPED_DIV_CLASS = "unmapped-div-class"
     # pages
-    "page-reference-missing",
-    "page-reference-ambiguous",
-    "asset-unresolved",
-    "unknown-citation",
-]
+    PAGE_REFERENCE_MISSING = "page-reference-missing"
+    PAGE_REFERENCE_AMBIGUOUS = "page-reference-ambiguous"
+    ASSET_UNRESOLVED = "asset-unresolved"
+    UNKNOWN_CITATION = "unknown-citation"
 
 
 @dataclass(frozen=True)
@@ -41,7 +41,7 @@ class Diagnostic:
 
     `where` is a source path or a card id -- enough to find it. `detail` is for
     a human reading the terminal and is deliberately not part of the contract:
-    assert on `code`, never on `detail`.
+    assert on the `DiagnosticCode` member, never on `detail`.
     """
 
     code: DiagnosticCode
@@ -52,4 +52,4 @@ class Diagnostic:
         return f"{self.where}: {self.detail}"
 
     def as_dict(self) -> dict[str, str]:
-        return {"code": self.code, "where": self.where, "detail": self.detail}
+        return {"code": self.code.value, "where": self.where, "detail": self.detail}

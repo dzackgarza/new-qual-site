@@ -16,6 +16,7 @@ import sqlite3
 from pathlib import Path
 
 from conftest import ROOT, diagnostic_codes, fixture_repo, run_qualc
+from qualc.diagnostics import DiagnosticCode
 
 CARD = """---
 schema: qual/card@1
@@ -65,7 +66,7 @@ def test_unmapped_class_fails_the_build(tmp_path: Path) -> None:
     reworded without changing behaviour, and a substring can match a diagnostic
     that fired for an unrelated reason."""
     work = fixture_repo(tmp_path, {"typo.md": CARD})
-    assert diagnostic_codes(work) == ["unmapped-div-class"]
+    assert diagnostic_codes(work) == [DiagnosticCode.UNMAPPED_DIV_CLASS]
 
     # And the card is genuinely absent downstream, not merely complained about:
     # a build that reported the error and indexed the card anyway would pass an

@@ -20,7 +20,7 @@ from urllib.parse import unquote, urlsplit
 import panflute as pf
 import yaml
 
-from .diagnostics import Diagnostic
+from .diagnostics import Diagnostic, DiagnosticCode
 from .model import MARKDOWN, drop_path_captions, from_ast
 from .pandoc_batch import Citations, PandocFailure, PandocServer
 from .static_site import AssetCatalog, _asset_source
@@ -50,8 +50,8 @@ CITEPROC_METADATA = ("bibliography", "csl")
 
 def _citation_diagnostic(warning: str, path: Path) -> Diagnostic:
     if warning.startswith(CITEPROC_MISSING):
-        return Diagnostic("unknown-citation", str(path), warning)
-    return Diagnostic("reader-warning", str(path), warning)
+        return Diagnostic(DiagnosticCode.UNKNOWN_CITATION, str(path), warning)
+    return Diagnostic(DiagnosticCode.READER_WARNING, str(path), warning)
 
 
 @dataclass
@@ -176,7 +176,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             metadata, body = _split_front_matter(path.read_text(), path)
             prepared.append((path, path.relative_to(root), metadata, body))
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
-            errors.append(Diagnostic("card-unreadable", str(path), str(exc)))
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
 
     parsed: list[WikiPage] = []
     restored: list[str] = []
@@ -185,7 +185,7 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
         results = pandoc.read_markdown([body for _, _, _, body in batch], MARKDOWN, citations)
         for (path, source_rel, metadata, body), result in zip(batch, results, strict=True):
             if isinstance(result, PandocFailure):
-                errors.append(Diagnostic("card-unreadable", str(path), result.error))
+                errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error))
                 continue
             warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
             if warnings:
@@ -482,11 +482,11 @@ def resolve_links(
                 else:
                     setattr(element, "url", target)
             except MissingPageReference as exc:
-                errors.append(Diagnostic("page-reference-missing", str(page.source_path), str(exc)))
+                errors.append(Diagnostic(DiagnosticCode.PAGE_REFERENCE_MISSING, str(page.source_path), str(exc)))
             except AmbiguousPageReference as exc:
-                errors.append(Diagnostic("page-reference-ambiguous", str(page.source_path), str(exc)))
+                errors.append(Diagnostic(DiagnosticCode.PAGE_REFERENCE_AMBIGUOUS, str(page.source_path), str(exc)))
             except (OSError, ValueError) as exc:
-                errors.append(Diagnostic("asset-unresolved", str(page.source_path), str(exc)))
+                errors.append(Diagnostic(DiagnosticCode.ASSET_UNRESOLVED, str(page.source_path), str(exc)))
         if hasattr(element, "content"):
             element.content = [visit(page, child) if isinstance(child, pf.Element) else child for child in element.content]
         return element
