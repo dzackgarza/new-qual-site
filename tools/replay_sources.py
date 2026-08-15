@@ -30,6 +30,24 @@ class LedgerRow(TypedDict, total=False):
 
 
 @dataclass(frozen=True)
+class LedgerProblem:
+    kind: Literal["unknown-source", "duplicate-row", "missing-row", "untracked-path"]
+    repo: str
+    path: str | None
+
+    def describe(self) -> str:
+        match self.kind:
+            case "unknown-source":
+                return f"{self.repo}: ledger row names an unknown source"
+            case "duplicate-row":
+                return f"{self.repo}: duplicate ledger row for {self.path}"
+            case "missing-row":
+                return f"{self.repo}: missing ledger row for {self.path}"
+            case "untracked-path":
+                return f"{self.repo}: ledger row for untracked path {self.path}"
+
+
+@dataclass(frozen=True)
 class ReplayReport:
     target_commit: str
     source_revisions: tuple[SourceRevision, ...]
@@ -58,16 +76,16 @@ def _load_rows(path: Path) -> list[LedgerRow]:
     return rows
 
 
-def compare_ledger_rows(rows: list[LedgerRow], tracked_by_repo: dict[str, set[str]]) -> list[str]:
-    """Return source/ledger path differences without accepting a partial ledger."""
+def compare_ledger_rows(rows: list[LedgerRow], tracked_by_repo: dict[str, set[str]]) -> list[LedgerProblem]:
+    """Source/ledger path differences, without accepting a partial ledger."""
     by_repo: dict[str, list[str]] = {}
-    problems: list[str] = []
+    problems: list[LedgerProblem] = []
     known = set(tracked_by_repo)
     for row in rows:
         repo = row["repo"]
         path = row["path"]
         if repo not in known:
-            problems.append(f"{repo}: ledger row names an unknown source")
+            problems.append(LedgerProblem(kind="unknown-source", repo=repo, path=None))
         if repo not in by_repo:
             by_repo[repo] = []
         by_repo[repo].append(path)
@@ -75,10 +93,10 @@ def compare_ledger_rows(rows: list[LedgerRow], tracked_by_repo: dict[str, set[st
     for repo, tracked in tracked_by_repo.items():
         paths = by_repo[repo] if repo in by_repo else []
         duplicates = sorted({path for path in paths if paths.count(path) > 1})
-        problems.extend(f"{repo}: duplicate ledger row for {path}" for path in duplicates)
-        problems.extend(f"{repo}: missing ledger row for {path}" for path in sorted(tracked - set(paths)))
-        problems.extend(f"{repo}: ledger row for untracked path {path}" for path in sorted(set(paths) - tracked))
-    return sorted(problems)
+        problems.extend(LedgerProblem(kind="duplicate-row", repo=repo, path=path) for path in duplicates)
+        problems.extend(LedgerProblem(kind="missing-row", repo=repo, path=path) for path in sorted(tracked - set(paths)))
+        problems.extend(LedgerProblem(kind="untracked-path", repo=repo, path=path) for path in sorted(set(paths) - tracked))
+    return sorted(problems, key=LedgerProblem.describe)
 
 
 def resolve_target(root: Path, target: str) -> Path:
@@ -286,7 +304,7 @@ def replay(root: Path, clone_root: Path | None, candidate_path: Path | None) -> 
         tracked_by_repo = {name: _tracked(clone) for name, clone in clones.items()}
         problems = compare_ledger_rows(rows, tracked_by_repo)
         if problems:
-            raise RuntimeError("ledger/source comparison failed:\n" + "\n".join(problems))
+            raise RuntimeError("ledger/source comparison failed:\n" + "\n".join(problem.describe() for problem in problems))
         _verify_source_rows(root, clones, tracked_by_repo, rows)
         _verify_orphans(root)
         destination = candidate_path or working_root / "migration-ledger.candidate.jsonl"

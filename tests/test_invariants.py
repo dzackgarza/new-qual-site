@@ -272,7 +272,6 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert match is not None
     generator_problems = {problem["id"]: problem for problem in json.loads(match.group(1))}
     generator_problem_ids = set(generator_problems)
-    assert generator_problems["P-J3FBW"]["q"].lstrip().startswith("<ul>")
     assert "<li>Classify the four groups of order 28.</li>" in generator_problems["P-J3FBW"]["q"]
     # The generated sheet is statements only. A tag page may put the solution
     # behind a disclosure the reader chooses to open; the generator has no

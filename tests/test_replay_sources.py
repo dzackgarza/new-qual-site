@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from replay_sources import LedgerRow, compare_ledger_rows, resolve_target
+from replay_sources import LedgerProblem, LedgerRow, compare_ledger_rows, resolve_target
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -17,7 +17,7 @@ def test_ledger_comparison_rejects_a_source_path_drift() -> None:
         {"qual-wiki": {"README.md", "new.md"}},
     )
 
-    assert result == ["qual-wiki: missing ledger row for new.md"]
+    assert result == [LedgerProblem(kind="missing-row", repo="qual-wiki", path="new.md")]
 
 
 def test_resolve_target_follows_the_committed_g6_route_map() -> None:

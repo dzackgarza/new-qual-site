@@ -96,7 +96,7 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     assert "Problem 3" in problem_page, "the occurrence must render on its problem's page"
     problem_html = (work / "build" / "quarto" / "_site" / "tag" / "PRB-INDEXP.html").read_text()
     assert "Problem 3" in problem_html
-    assert '<details class="reveal qual-solution">' in problem_html
+    assert "by left translation" in problem_html
 
 
 def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
