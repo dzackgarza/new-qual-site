@@ -1,12 +1,12 @@
-"""Corpus projections.
+"""Corpus pages, emitted as QMD and HTML.
 
 Pages are composed as Pandoc ASTs and batch-written as both QMD and HTML.
-Nothing here assembles either projection by hand, so fencing, escaping, and
+Nothing here assembles either format by hand, so fencing, escaping, and
 math remain the writer's problem rather than a source of quoting bugs.
 
 Emitted documents carry only semantics: a card's blocks keep the classes their
 author wrote (`.problem`, `.solution`, `.hint`), plus attributes drawn from the
-catalog. The direct HTML projection owns the shared shell and presentation;
+catalog. The direct HTML output owns the shared shell and presentation;
 generated QMD remains available as an inspectable secondary artifact.
 """
 
@@ -428,7 +428,6 @@ def _wiki_blocks(page: WikiPage) -> list[pf.Block]:
 class Appearance:
     target_key: str
     title: str
-    basis: str
 
 
 def _card_relation_items(
@@ -457,7 +456,7 @@ def _appearance_items(appearances: list[Appearance]) -> str:
     return (
         "<ul>"
         + "".join(
-            f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a><small>{html.escape(appearance.basis)}</small></li>'
+            f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a></li>'
             for appearance in appearances
         )
         + "</ul>"
@@ -962,7 +961,7 @@ def source_page(
             pf.Str(str(len(items))),
             pf.Space(),
             *_inlines(
-                "problems, in the order they appeared.",
+                "problems.",
                 inline_cache,
             ),
         ),
@@ -1197,7 +1196,6 @@ def card_appearances(
             Appearance(
                 target_key=occurrence["source_id"],
                 title=title,
-                basis="Exam sitting",
             )
         )
     for manifest in manifests:
@@ -1211,7 +1209,6 @@ def card_appearances(
                             Appearance(
                                 target_key=target_key,
                                 title=section.title,
-                                basis="Reference",
                             )
                         )
                     case QueryItem(query=query):
@@ -1223,7 +1220,6 @@ def card_appearances(
                                 Appearance(
                                     target_key=target_key,
                                     title=section.title,
-                                    basis=f"Catalog query: {query.kind}",
                                 )
                             )
     return appearances
@@ -1808,7 +1804,7 @@ def project(
     inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
     inline_values.extend(
         [
-            "problems, in the order they appeared.",
+            "problems.",
             ("Assembled from a publication manifest: an ordered list of stable IDs and queries. Reordering it touches no card and no catalog row."),
             "Every problem in the corpus.",
             "Past exams.",

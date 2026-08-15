@@ -1,4 +1,4 @@
-"""GitHub Pages deploys the compiler's direct static projection."""
+"""GitHub Pages deploys the compiled site."""
 
 from __future__ import annotations
 

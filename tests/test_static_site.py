@@ -1,4 +1,4 @@
-"""The direct HTML projection resolves semantic links and owned assets."""
+"""The direct HTML output resolves semantic links and owned assets."""
 
 from __future__ import annotations
 

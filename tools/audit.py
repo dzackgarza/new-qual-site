@@ -171,7 +171,7 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
 
     The same holds one level up, for the same reason: `emit.source_page` renders
     every occurrence of a sitting on that sitting's own route, each linked to its
-    problem, "in the order they appeared". Naming a `source` card therefore
+    problem. Naming a `source` card therefore
     reaches its occurrences and their problems. This edge is here because the
     emitter draws it -- delete `source_page`'s listing and this edge goes too."""
     import panflute as pf

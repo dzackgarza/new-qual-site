@@ -1,6 +1,6 @@
-"""Validation + the derived index.
+"""Validation + the derived catalog.
 
-The SQLite catalog is never authoritative. It is a disposable projection of the
+The SQLite catalog is never authoritative. It is a disposable snapshot of the
 corpus at one commit, rebuilt from scratch every time.
 """
 

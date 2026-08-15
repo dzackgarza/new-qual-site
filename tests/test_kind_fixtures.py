@@ -102,7 +102,7 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
 def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
     """The source payload is a discriminated union and the catalog mirrors it
     rather than flattening it into one row with columns null for two kinds out
-    of three. This proves the projection: an exam reaches `exam_sources`, a
+    of three. This proves the catalog: an exam reaches `exam_sources`, a
     textbook `textbook_sources`, an artifact `artifact_sources`, and each
     reaches exactly one of them.
 

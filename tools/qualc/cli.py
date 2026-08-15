@@ -1,4 +1,4 @@
-"""qualc — discover, validate, index, emit. Nothing else belongs here."""
+"""qualc — discover, validate, index, emit."""
 
 from __future__ import annotations
 

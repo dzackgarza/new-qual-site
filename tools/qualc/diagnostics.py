@@ -1,14 +1,8 @@
 """Typed check diagnostics.
 
-Every check failure used to be a formatted string, so the only way a test could
-assert *which* diagnostic fired was substring matching on stderr. That passes
-when the message is reworded, passes when a different diagnostic happens to
-share a word, and says nothing about the failure's identity. Five tests were
-written that way.
-
-A `code` makes the identity explicit and machine-checkable, and leaves the
-wording free to change. The CLI owns presentation: `--json` emits the structured
-form for programs, and the default human output is unchanged.
+Each failure carries a stable `code`, so tests assert which diagnostic fired
+and the wording stays free to change. The CLI owns presentation: `--json`
+emits the structured form for programs; the default human output is unchanged.
 """
 
 from __future__ import annotations

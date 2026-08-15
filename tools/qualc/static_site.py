@@ -1,4 +1,4 @@
-"""Shared HTML shell for the compiler's direct static-site projection."""
+"""Shared HTML shell for the site pages."""
 
 from __future__ import annotations
 

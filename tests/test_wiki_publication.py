@@ -1,4 +1,4 @@
-"""The authored wiki is a first-class source projection, not a sidecar."""
+"""The authored wiki is a first-class source, not a sidecar."""
 
 from __future__ import annotations
 

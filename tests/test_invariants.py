@@ -349,7 +349,6 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert len(witness_appearances) == 1
     witness_title = next(entry.title for entry in traversal if entry.key == witness_slug)
     assert witness_title in witness_appearances[0].text
-    assert "Reference" in witness_appearances[0].text
 
     # A sitting links to its problems; the problem must link back to the sitting
     # it was set at, not merely name it.
