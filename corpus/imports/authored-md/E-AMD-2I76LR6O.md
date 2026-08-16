@@ -35,8 +35,7 @@ $$
 
 We claim that $G_y = g G_x g^{-1}$, meaning $G_y$ and $G_x$ are conjugate subgroups in $G$.
 
-1. **Show $g G_x g^{-1} \subseteq G_y$:**
-   Let $h \in G_x$, so $h \cdot x = x$.
+1. **Show $g G_x g^{-1} \subseteq G_y$:** Let $h \in G_x$, so $h \cdot x = x$.
    Consider the element $g h g^{-1} \in g G_x g^{-1}$.
    Acting on $y$:
    $$
@@ -45,9 +44,9 @@ We claim that $G_y = g G_x g^{-1}$, meaning $G_y$ and $G_x$ are conjugate subgro
    Thus $g h g^{-1} \in G_y$.
    This proves that $g G_x g^{-1} \subseteq G_y$.
 
-2. **Show $G_y \subseteq g G_x g^{-1}$:**
-   Let $k \in G_y$, so $k \cdot y = y$.
-   Consider the element $g^{-1} k g$. Acting on $x$:
+2. **Show $G_y \subseteq g G_x g^{-1}$:** Let $k \in G_y$, so $k \cdot y = y$.
+   Consider the element $g^{-1} k g$.
+   Acting on $x$:
    $$
    (g^{-1} k g) \cdot x = g^{-1} \cdot (k \cdot (g \cdot x)) = g^{-1} \cdot (k \cdot y) = g^{-1} \cdot y = g^{-1} \cdot (g \cdot x) = x.
    $$
