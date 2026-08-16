@@ -249,18 +249,14 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     route_of = {entry.key: entry.route for entry in traversal}
     assert sum(len(refs) for refs in named_by_section.values()) > 0
     for slug, named in named_by_section.items():
-        rendered = {
-            element.attrs["data-card-id"] for element in read_html(site / route_of[slug]).root.find_all("section") if "data-card-id" in element.attrs
-        }
+        rendered = {element.attrs["data-card-id"] for element in read_html(site / route_of[slug]).root.find_all("section") if "data-card-id" in element.attrs}
         assert set(named) <= rendered, f"{slug} drops named cards {sorted(set(named) - rendered)}"
 
     # The section carrying the most problem links is where a reader meets the
     # problem set, whatever the manifest calls it. Routes resolve relative to
     # the site root and so carry no leading slash: `tag/P-XXXXX.html`.
     def problem_links(route: Path) -> set[str]:
-        return {
-            Path(resolved).stem for link in read_html(site / route).root.find_all("a") if (resolved := resolved_link(route, link.attrs["href"])).startswith("tag/P-")
-        }
+        return {Path(resolved).stem for link in read_html(site / route).root.find_all("a") if (resolved := resolved_link(route, link.attrs["href"])).startswith("tag/P-")}
 
     applications_route = max(routes[1:], key=lambda route: len(problem_links(route)))
     application_problem_ids = problem_links(applications_route)

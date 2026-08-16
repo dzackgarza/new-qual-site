@@ -81,6 +81,7 @@ FILE_AREAS = {
     "Quals/Topology.md": ["topology"],
 }
 
+
 # The author's tag -> card kind. Highest-priority tag present wins, so
 # `theorem, proof` is a theorem and `definition, example, counterexample` is a
 # definition. An untagged card, or one tagged only with a subject word

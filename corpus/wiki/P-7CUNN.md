@@ -52,27 +52,21 @@ review: draft
 
 **Goal:** Evaluate indefinite integrals of rational functions using polynomial long division and partial fraction decomposition.
 
-<1>1. Evaluation of $\int \frac{x^3 + 4x^2}{x^2 + 4x + 3} \, dx$:
-    Proof:
-    <2>1. Long division: $x^3 + 4x^2 = x(x^2 + 4x + 3) - 3x$, so $\frac{x^3 + 4x^2}{x^2 + 4x + 3} = x - \frac{3x}{(x+1)(x+3)}$.
-    <2>2. Partial fractions: $-\frac{3x}{(x+1)(x+3)} = \frac{A}{x+1} + \frac{B}{x+3} \implies -3x = A(x+3) + B(x+1)$.
-        Setting $x = -1 \implies 3 = 2A \implies A = 3/2$.
-        Setting $x = -3 \implies 9 = -2B \implies B = -9/2$.
-    <2>3. Integrating: $\int \left(x + \frac{3/2}{x+1} - \frac{9/2}{x+3}\right) dx = \frac{1}{2}x^2 + \frac{3}{2}\ln|x+1| - \frac{9}{2}\ln|x+3| + C$.
+<1>1. Evaluation of $\int \frac{x^3 + 4x^2}{x^2 + 4x + 3} \, dx$: Proof: <2>1. Long division: $x^3 + 4x^2 = x(x^2 + 4x + 3) - 3x$, so $\frac{x^3 + 4x^2}{x^2 + 4x + 3} = x - \frac{3x}{(x+1)(x+3)}$.
+<2>2. Partial fractions: $-\frac{3x}{(x+1)(x+3)} = \frac{A}{x+1} + \frac{B}{x+3} \implies -3x = A(x+3) + B(x+1)$.
+Setting $x = -1 \implies 3 = 2A \implies A = 3/2$.
+Setting $x = -3 \implies 9 = -2B \implies B = -9/2$.
+<2>3. Integrating: $\int \left(x + \frac{3/2}{x+1} - \frac{9/2}{x+3}\right) dx = \frac{1}{2}x^2 + \frac{3}{2}\ln|x+1| - \frac{9}{2}\ln|x+3| + C$.
 
-<1>2. Evaluation of $\int \frac{2x^3 + 2x^2 - 9x - 1}{x^2 + x - 6} \, dx$:
-    Proof:
-    <2>1. Long division: $2x^3 + 2x^2 - 9x - 1 = 2x(x^2 + x - 6) + (3x - 1)$.
-    <2>2. Partial fractions: $\frac{3x-1}{(x+3)(x-2)} = \frac{A}{x+3} + \frac{B}{x-2} \implies 3x - 1 = A(x-2) + B(x+3)$.
-        Setting $x = 2 \implies 5 = 5B \implies B = 1$.
-        Setting $x = -3 \implies -10 = -5A \implies A = 2$.
-    <2>3. Integrating: $\int \left(2x + \frac{2}{x+3} + \frac{1}{x-2}\right) dx = x^2 + 2\ln|x+3| + \ln|x-2| + C$.
+<1>2. Evaluation of $\int \frac{2x^3 + 2x^2 - 9x - 1}{x^2 + x - 6} \, dx$: Proof: <2>1. Long division: $2x^3 + 2x^2 - 9x - 1 = 2x(x^2 + x - 6) + (3x - 1)$.
+<2>2. Partial fractions: $\frac{3x-1}{(x+3)(x-2)} = \frac{A}{x+3} + \frac{B}{x-2} \implies 3x - 1 = A(x-2) + B(x+3)$.
+Setting $x = 2 \implies 5 = 5B \implies B = 1$.
+Setting $x = -3 \implies -10 = -5A \implies A = 2$.
+<2>3. Integrating: $\int \left(2x + \frac{2}{x+3} + \frac{1}{x-2}\right) dx = x^2 + 2\ln|x+3| + \ln|x-2| + C$.
 
-<1>3. Evaluation of $\int \frac{3x^3 - 12x^2 + 15x - 5}{(x-2)^2} \, dx$:
-    Proof:
-    <2>1. Substitute $u = x - 2 \implies x = u + 2, dx = du$.
-    <2>2. $3(u+2)^3 - 12(u+2)^2 + 15(u+2) - 5 = 3(u^3 + 6u^2 + 12u + 8) - 12(u^2 + 4u + 4) + 15(u+2) - 5 = 3u^3 + 6u^2 + 3u + 1$.
-    <2>3. Dividing by $u^2$: $3u + 6 + \frac{3}{u} + \frac{1}{u^2}$.
-    <2>4. Integrating: $\frac{3}{2}u^2 + 6u + 3\ln|u| - \frac{1}{u} + C = \frac{3}{2}(x-2)^2 + 6(x-2) + 3\ln|x-2| - \frac{1}{x-2} + C = \frac{3}{2}x^2 + 3\ln|x-2| - \frac{1}{x-2} + C'$.
-    Q.E.D.
+<1>3. Evaluation of $\int \frac{3x^3 - 12x^2 + 15x - 5}{(x-2)^2} \, dx$: Proof: <2>1. Substitute $u = x - 2 \implies x = u + 2, dx = du$.
+<2>2. $3(u+2)^3 - 12(u+2)^2 + 15(u+2) - 5 = 3(u^3 + 6u^2 + 12u + 8) - 12(u^2 + 4u + 4) + 15(u+2) - 5 = 3u^3 + 6u^2 + 3u + 1$.
+<2>3. Dividing by $u^2$: $3u + 6 + \frac{3}{u} + \frac{1}{u^2}$.
+<2>4. Integrating: $\frac{3}{2}u^2 + 6u + 3\ln|u| - \frac{1}{u} + C = \frac{3}{2}(x-2)^2 + 6(x-2) + 3\ln|x-2| - \frac{1}{x-2} + C = \frac{3}{2}x^2 + 3\ln|x-2| - \frac{1}{x-2} + C'$.
+Q.E.D.
 :::

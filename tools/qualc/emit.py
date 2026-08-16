@@ -13,7 +13,6 @@ generated QMD remains available as an inspectable secondary artifact.
 from __future__ import annotations
 
 import copy
-from enum import Enum
 import html
 import json
 import os
@@ -23,6 +22,7 @@ import sqlite3
 import subprocess
 from collections import Counter
 from dataclasses import dataclass
+from enum import Enum
 from pathlib import Path
 from typing import cast
 
@@ -454,14 +454,7 @@ def _card_relation_items(
 def _appearance_items(appearances: list[Appearance]) -> str:
     if not appearances:
         return '<p class="relation-empty">None.</p>'
-    return (
-        "<ul>"
-        + "".join(
-            f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a></li>'
-            for appearance in appearances
-        )
-        + "</ul>"
-    )
+    return "<ul>" + "".join(f'<li><a href="{html.escape(appearance.target_key, quote=True)}">{html.escape(appearance.title)}</a></li>' for appearance in appearances) + "</ul>"
 
 
 def _relation_groups_json(
@@ -1247,11 +1240,7 @@ def index_page(
     body = "\n".join(f"| {plural(kind)} | {n} |" for kind, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])))
     output = _successful_outputs(
         pandoc.read_markdown(
-            [
-                "| Cards | Count |\n|---|---|\n" + body + "\n\n"
-                "Start with [the problem browser](problems.html), a "
-                "[past exam](exams.html), or a [study guide](guides.html).\n"
-            ],
+            ["| Cards | Count |\n|---|---|\n" + body + "\n\nStart with [the problem browser](problems.html), a [past exam](exams.html), or a [study guide](guides.html).\n"],
             MARKDOWN,
         ),
         "index-page read",
