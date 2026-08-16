@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - duality
+  - poincare-duality
   - manifolds
+  - cohomology
 relations:
 - kind: related-to
   target: T-QNYSB

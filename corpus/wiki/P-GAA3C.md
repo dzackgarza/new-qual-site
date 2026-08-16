@@ -6,7 +6,9 @@ title: "Does the converse hold?"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - closure
 relations: []
 review: draft
 ---

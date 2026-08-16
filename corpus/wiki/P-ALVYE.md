@@ -6,7 +6,9 @@ title: "5. $T\\union_f D^2$, where $f$ attaches inside the torus"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - cell-complexes
 relations: []
 review: draft
 ---

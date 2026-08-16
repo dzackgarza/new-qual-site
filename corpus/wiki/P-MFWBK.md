@@ -6,7 +6,9 @@ title: "$\\QQ$"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - point-set
+  - closure
 relations: []
 review: draft
 ---
