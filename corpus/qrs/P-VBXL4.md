@@ -23,7 +23,8 @@ Apply Rouché's Theorem to prove the Fundamental Theorem of Algebra: If $$P_n(z)
 
 Let $f(z) = a_n z^n$ and $g(z) = a_{n-1} z^{n-1} + \cdots + a_1 z + a_0$, so that $P_n(z) = f(z) + g(z)$.
 
-Consider the circle $C_R = \{z \in \CC : |z| = R\}$. On $C_R$:
+Consider the circle $C_R = \{z \in \CC : |z| = R\}$.
+On $C_R$:
 $$
 |f(z)| = |a_n| R^n,
 $$
