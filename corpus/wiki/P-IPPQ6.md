@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Consider a nonconstant function between two compact Riemann Surfaces.
 How is it related to Galois theory?
+:::

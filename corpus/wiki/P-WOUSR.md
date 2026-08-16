@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $\Out(A_4)$ is nontrivial.
+:::

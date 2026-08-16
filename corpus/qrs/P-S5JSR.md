@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - The splitting field of $x^n-2$ over $\QQ$ is $\QQ(2^{1/n}, \zeta_n)$.
   Show that the Galois group embeds into $\ZZ/n\ZZ \semidirect \qty{\ZZ/n\ZZ}\units$, and that it is dihedral of order $2n$ exactly when $\phi(n)=2$, that is for $n=3,4,6$.
   It is not $D_n$ for general $n$.
@@ -41,3 +42,4 @@ review: draft
 - Show that $\gal(x^{15}+2)/\QQ \cong S_2 \semidirect \ZZ/15\ZZ$ for $S_2$ a Sylow $2\dash$subgroup.
 
 - Show that $\gal(x^3+4x+2)/\QQ \cong S_3$, a symmetric group.
+:::

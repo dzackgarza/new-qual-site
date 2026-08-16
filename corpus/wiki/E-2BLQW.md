@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that:
 
 - Connected does not imply path connected
@@ -20,3 +21,4 @@ Show that:
 - Connected and locally path connected *does* imply path connected
 
 - Path connected implies connected
+:::

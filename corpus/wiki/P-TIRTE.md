@@ -12,6 +12,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 4. $\Leftarrow$: **Main Idea**: Projection and inclusion are homotopy inverses.
    One composition is equality, the other is just equality *up to homotopy*, but that's all we need!
 
@@ -41,3 +42,4 @@ $f: X \into \theset{x_0}$ and $g: \theset{x_0} \into X$ such that $f\circ g \hom
 Since $\theset{x_0}$ is a single point space, $f$ is necessarily a constant map (i.e. $f(x) = x_0$ for every $x\in X$.)
 But then $(g\circ f)(x) = g(x_0) = y_0$ for some constant $y_0 \in X$, so $g\circ f$ is a constant map.
 By assumption, $g\circ f \homotopic \id_X$, so the identity is homotopic to a constant map.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Are there two nonisomorphic groups with the same representations?
+:::

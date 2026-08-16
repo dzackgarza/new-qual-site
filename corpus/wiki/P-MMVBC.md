@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Find the Galois group of $x^4 - 2$ over Q.
+:::

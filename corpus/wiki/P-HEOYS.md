@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 How many ways can you color the tetrahedron with C colors if we identify symmetric colorings?
+:::

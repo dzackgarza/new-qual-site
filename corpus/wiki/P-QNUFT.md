@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. **Main idea**: just algebraic manipulations using the $\pi_1$ functor and unravelling definitions.
 
 Let $X$ be path connected and simply connected, and let $x,y \in X$ be two arbitrary points.
@@ -28,3 +29,4 @@ Lemma: If $f\homotopic g$, then $f\circ h \homotopic g \circ h$ for any $h$.
 
 But this says $\gamma\bar\alpha \homotopic c_x$ and $\alpha\bar\gamma \homotopic c_x$.
 But $\gamma \homotopic c_x \circ \gamma \homotopic (\alpha\bar\gamma) \circ \gamma \homotopic \alpha\circ (\bar\gamma \circ\gamma) \homotopic \alpha$, which is what we desired.
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \sqrt {1 -x^2} ~dx = \frac {1}{2} (\sin ^{-1} (x) + \frac {1}{2} \sin (2 \sin ^{-1} (x))) = \color {blue} {\frac {1}{2} (\sin ^{-1} (x) + x \sqrt {1 - x^2})}$
 
 - **Solution:** $\sin (u) = x​$, $\cos (u) ~du = dx​$
@@ -30,3 +31,4 @@ review: draft
   - **Solution:** $\int_{-1}^{1} (1+x)\sqrt {1-x^2} ~dx = \int_{-1}^{1} \sqrt {1-x^2} ~dx + \int_{-1}^{1} \sqrt {1-x^2} x ~dx = \frac {1}{2} \pi + \frac {2}{3} (1-x^2)^{\frac {3}{2}} |_{-1}^{1}$
 
   - **Used 2019**
+:::

@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $R$ be a ring with $1$ and let $M$ be a left \(R\dash\)module.
 If $I$ is a left ideal of $R$, define 
 \[
@@ -24,3 +26,4 @@ a. Prove that $IM \leq M$ is a submodule.
 
 b. Let $M, N$ be left \(R\dash\)modules, $I$ a nilpotent left ideal of $R$, and $f: M\to N$ an \(R\dash\)module morphism.
 Prove that if the induced morphism \( \bar{f}: M/IM \to N/IN \) is surjective, then $f$ is surjective.
+:::

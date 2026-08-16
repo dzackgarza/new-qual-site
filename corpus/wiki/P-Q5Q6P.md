@@ -13,4 +13,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Show that $S^1 \times S^1$ is not the union of two disks (where there is no assumption that the disks intersect along their boundaries).
+:::

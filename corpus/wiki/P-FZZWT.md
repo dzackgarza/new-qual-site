@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Do you know what a group representation is?
 Do you know what the trace of a group representation is?
+:::

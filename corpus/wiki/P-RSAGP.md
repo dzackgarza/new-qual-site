@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is a bilinear form on a vector space?
 When are two forms equivalent?
 What is an orthogonal matrix?
 What's special about them?
+:::

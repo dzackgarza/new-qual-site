@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Can a polynomial over a division ring have more roots than its degree?
+:::

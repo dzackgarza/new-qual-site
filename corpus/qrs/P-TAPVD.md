@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Write $f$ as $f(x,y)$, we are then given that $f_x, f_y \in C_0(\theset{0})$. It has the type
   $$
   f: \RR^2 \to \RR \\
@@ -70,4 +72,4 @@ $$
 D_{\vector u}(\vector p) = \inner{\nabla f(\vector p)}{\vector u}
 $$
   Since $\vector u$ was arbitrary, this shows that the directional derivative exists in any direction and is given by the above expression. $\qed$
-
+:::

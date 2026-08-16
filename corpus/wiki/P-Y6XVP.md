@@ -13,8 +13,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 3. $\displaystyle \int e^{(x + e^x)} ~dx = \color{blue} {e^{e^{x}}}​$
 
 - **Solution:** $u = e^x​$, $du = e^x ~dx​$
 
 - **Used 2018**
+:::

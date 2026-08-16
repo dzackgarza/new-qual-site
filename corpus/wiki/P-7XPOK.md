@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that any disjoint intervals is countable.
 
 - Show that every open $U \subseteq \RR$ is a countable union of disjoint open intervals.
@@ -23,3 +24,4 @@ review: draft
 - Show that that Cantor middle-thirds set is compact, totally disconnected, and perfect, with outer measure zero.
 
 - Prove the Borel-Cantelli lemma.
+:::

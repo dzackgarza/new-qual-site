@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $Z(G) = \bigcap_{a\in G} C_G(a)$.
+:::

@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 A subgroup of a finitely-generated free abelian group is?
 
 A subgroup of a finitely-generated free group is..? Prove your answers.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the groups of order 12? Can there be a group of order 12 with 2 nonisomorphic subgroups of the same order?
+:::

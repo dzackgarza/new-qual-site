@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that every compact set is closed and bounded.
 
 - Show that if a subset of a metric space is complete and totally bounded, then it is compact.
 
 - Show that if $K$ is compact and $F$ is closed with $K, F$ disjoint then $\dist(K, F) > 0$.
+:::

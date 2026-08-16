@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the centre of $S_n$?
 Prove it.
+:::

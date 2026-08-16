@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Useful facts:
 
 - $X \surjects_{\times p} Y$ induces $\chi(X) = p\chi(Y)$
@@ -27,3 +28,4 @@ Note that this is odd for any $n$.
 However, a free action of $\ZZ_2 \actson M$ would produce a double covering $M \surjects_{\times 2} M/\ZZ_2$, and multiplicativity of Euler characteristics would force $\chi(M) = 2 \chi(M/\ZZ_2)$ and thus $3-2n = 2k$ for some integer $k$.
 This would require $3-2n$ to be even, so we have a contradiction.
 $\qed$
+:::

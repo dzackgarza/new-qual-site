@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Consider the following matrix as a linear transformation from $V\definedas \CC^5$ to itself:
 \[
 A=\left(\begin{array}{ccccc}
@@ -32,3 +34,4 @@ Express $V$ in terms of a direct sum of indecomposable $\CC[x]\dash$modules.
 
 c.
 Find the Jordan canonical form of $A$.
+:::

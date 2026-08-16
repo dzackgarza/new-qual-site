@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 **Lemma**:
 The rank-nullity theorem holds over division rings.
 
@@ -109,3 +111,4 @@ $\impliedby$:
 By another similar argument, we find that $A$ represents a map $f_A: D^m \to D^n$, and since $\rank A = \dim \im A = n$, we find that $A$ represents a surjective map $f_A$.
 Surjective set maps have *right* inverses, so there is some $g_B: D^n \to D^m$ such that $f_A \circ g_B = \id_{D^n}$, and when translated to matrices this yields $AB = I_{n}$.
 $\qed$
+:::

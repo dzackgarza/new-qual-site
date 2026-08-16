@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that any normal $p\dash$ subgroup is contained in every Sylow $p\dash$subgroup of $G$.
+:::

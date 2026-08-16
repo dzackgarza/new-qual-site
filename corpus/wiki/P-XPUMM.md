@@ -13,5 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-Use the circle along which the connected sum is performed and the Mayer-Vietoris long exact sequence to compute the homology of $\RP^2 \# \RP^2$.
 
+::: problem
+Use the circle along which the connected sum is performed and the Mayer-Vietoris long exact sequence to compute the homology of $\RP^2 \# \RP^2$.
+:::

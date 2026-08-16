@@ -13,7 +13,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $G = <a, b>$ and $H \leq G$ where $H = <aba^{-1}b^{-1},~ a^2ba^{-2}b^{-1},~ a^{-1}bab^{-1},~ aba^{-2}b^{-1}a>$.
 To what well-known group is $H$ isomorphic?
 
 **Solution**:
+:::

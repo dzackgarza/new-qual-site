@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $\Inn(G) \cong G / Z(G)$
+:::

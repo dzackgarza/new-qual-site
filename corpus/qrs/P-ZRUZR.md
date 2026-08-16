@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Use $n$th roots of unity to show that
 \[
 2^{n-1} \sin\qty{\pi \over n} \sin\qty{2\pi \over n} \cdots \sin\qty{(n-1)\pi \over n} = n
@@ -23,3 +25,4 @@ Use $n$th roots of unity to show that
 1 - \cos(2\theta) &= 2\sin^2(\theta) \\
 2 \sin(2\theta) &= 2\sin(\theta) \cos(\theta)
 .\]
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Find all functions on the Riemann sphere that have a simple pole at $z=2$ and a double pole at $z=\infty$, but are analytic elsewhere.
+:::

@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 How many automorphisms does the complex field have?
 How can you extend a simple automorphism $\sqrt{2} \mapsto -\sqrt{2}$ of an algebraic field into $\CC$?
 How can you extend a subfield automorphism?
 What feature of $\CC$ allows you to?
+:::

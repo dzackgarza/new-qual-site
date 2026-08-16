@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Describe the 3-fold connected covering spaces of $S^1 \lor S^1$.
+:::

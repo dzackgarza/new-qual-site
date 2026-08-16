@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If a linear transformation preserves a nondegenerate alternating form and has $k$ as an eigenvalue, prove that $1/k$ is also an eigenvalue.
+:::

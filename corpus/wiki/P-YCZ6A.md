@@ -12,5 +12,7 @@ classification:
 relations: []
 review: draft
 ---
-Compute the homology groups of $S^2 \times S^2$.
 
+::: problem
+Compute the homology groups of $S^2 \times S^2$.
+:::

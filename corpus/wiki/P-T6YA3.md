@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Since $R/(p)$ is a field, we just need to show that $A/pA \actson R/(p)$ defines a module.
 
 $r\cdot(x + y) = rx + ry$:
@@ -55,3 +56,4 @@ $1\cdot x = x$:
 1_R + (p) \actson x + pA &= 1_R x + pA = x + pA
 .\end{align*}
 \]
+:::

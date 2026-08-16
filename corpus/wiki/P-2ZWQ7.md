@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Use the Brouwer fixed point theorem to show that an $n \times n$ matrix with nonnegative entries has a real eigenvalue.
+:::

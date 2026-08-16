@@ -11,6 +11,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 ![[Pasted image 20210527173251.png]]
 
 ![[_attachments/Pasted image 20210527173330.png]]
@@ -20,3 +21,4 @@ review: draft
 ![[_attachments/Pasted image 20210527173111.png]]
 
 ![[_attachments/Pasted image 20210527173427.png]]
+:::

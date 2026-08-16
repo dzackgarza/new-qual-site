@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 (1) Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence in $O$ such that $u(z_n) = 0$ and $\lim z_n \in O$.
 Prove or disprove that $u$ is identically zero.
 What if $O$ is a region?
@@ -29,3 +30,4 @@ What if $O$ is a region?
 > Theorem 5.6 on p.60 of Stein et al.
 
 > Hint: Verify the mean value property for your new function obtained by Schwarz reflection principle.
+:::

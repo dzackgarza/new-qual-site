@@ -12,4 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - Show that if $K$ is compact and $F$ is closed with $K, F$ disjoint then $\dist(K, F) > 0$.
+:::

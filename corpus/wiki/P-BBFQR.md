@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Useful facts:
 1. $\tilde X \surjects X$ induces $\pi_1(\tilde X) \injects \pi_1(X)$
 2. $\chi(\tilde X) = n \chi (X)$
@@ -33,4 +35,4 @@ Spaces
 	- Doesn't cover, would induce $\pi_1(K) \injects \pi_1(T^2) \implies \ZZ\semidirect \ZZ \injects \ZZ^2$ but this would be a non-abelian subgroup of an abelian group.
 - $T^2 \surjects K$
 	- Covers, #todo
-
+:::

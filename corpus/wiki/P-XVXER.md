@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the group of unit quaternions topologically?
 What does it have to do with $\SO(3)$?
+:::

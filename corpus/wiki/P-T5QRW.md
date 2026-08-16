@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a.
 What is the definition of a **regular** (or Galois) covering space?
 
@@ -22,3 +24,4 @@ State, without proof, a criterion in terms of the fundamental group for a coveri
 c.  
 Let $\Theta$ be the topological space formed as the union of a circle and its diameter (so this space looks exactly like the letter $\Theta$). 
 Give an example of a covering space of $\Theta$ that is not regular.
+:::

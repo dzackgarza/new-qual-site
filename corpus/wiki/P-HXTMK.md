@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 In both cases, we will need the characteristic polynomials $\chi_A(x)$, since $RCF(A)$ will depend on the invariant factors of $A$.
 We will also use the fact that over the algebraic closure $\overline \QQ$, the minimal and characteristic polnyomials must have the same roots.
 
@@ -102,4 +104,4 @@ C(d_2) =
 0 & 0 & 0 & 0 & 0 & 1 & 0 \\
 \end{array}\right]
 .\end{align*}
-
+:::

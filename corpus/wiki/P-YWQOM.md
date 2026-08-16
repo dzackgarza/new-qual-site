@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that every group of order $pqr$ with $p<q<r$ primes contains a normal Sylow subgroup.
 
   - Show that $G$ is never simple.
+:::

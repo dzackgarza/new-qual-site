@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Expand the following functions into Laurent series in the indicated
 regions:
 
@@ -22,4 +24,4 @@ $3 < |z| < + \infty$.
 
 (b)
 $\displaystyle f(z) = \sin \frac{z}{1-z}, \; \; 0 < |z-1| < + \infty$
-
+:::

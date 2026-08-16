@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Writing $f(x) = x^3 - 3x - 3 = \sum a_i x_i \in \QQ[x]$, we can conclude that $f$ is irreducible over $\QQ$ by Eisenstein with the prime $p=3$, since $p\divides a_0 = -3, a_1 = 3, a_2 = 0$, but $p^2 \nmid a_3 = 1$.
 
 We can check that $f(0) < 0$ and $f(10) > 0$, so $f$ has at least one real root.
@@ -27,3 +28,4 @@ The Galois group must be a transitive subgroup of $S_3$, which restricts the pos
 Since $A_3$ only contains 3-cycles, this possibility is ruled out.
 Thus the Galois group must be $S_3$.
 $\qed$
+:::

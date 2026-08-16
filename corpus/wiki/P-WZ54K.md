@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that $x^{p^n}-x$ is the product of all monic irreducible polynomials in $\FF_p[x]$ with degree dividing $n$.
+:::

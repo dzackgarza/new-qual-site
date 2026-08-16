@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that the splitting field of $f(x) = x^3-2$ is $\QQ(\sqrt[3]{2}, \zeta_2)$.
+:::

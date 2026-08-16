@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that there is no simple group of order 160. What can you say about the structure of groups of that order?
+:::

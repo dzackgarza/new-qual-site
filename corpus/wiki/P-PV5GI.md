@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 3. $\displaystyle \int \frac {\sqrt {1 + \ln (x)}}{x \ln (x)} ~dx = \color {blue} {2 \sqrt {1 + \ln (x)} + \ln (\sqrt {1 + \ln (x)} - 1) - \ln (\sqrt {1 + \ln (x)} + 1)}$
 
 - **Solution:** $u = \sqrt {1 + \ln (x)}$, $x = e^{u^2 - 1}$, $dx = 2u e^{u^2 - 1} ~du$
@@ -40,3 +41,4 @@ review: draft
 - **Solution:** $u = \frac {1}{3} \tan (x)$, $du = - \frac {1}{3} \sec ^2 (x) ~ dx$
 
 - **Solution:** $\frac {\sec ^2 (x)}{\sqrt {9 - \tan^2(x)}} ~dx = - \frac {1}{\sqrt {1 - u^2}} ~du$
+:::

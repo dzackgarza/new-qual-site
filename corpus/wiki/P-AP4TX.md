@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Define a map
 
 $$
@@ -64,3 +65,4 @@ We can then apply the first isomorphism theorem,
 $$
 \frac{\hom_\ZZ(\ZZ_m, A)}{\ker \phi_{\mathrm{ev}}} \cong \im \phi_{\mathrm{ev}} \implies \hom_\ZZ(\ZZ_m, A) \cong A[m].
 $$
+:::

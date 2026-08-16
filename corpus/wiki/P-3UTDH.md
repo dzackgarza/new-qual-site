@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $E\subset \CC$ denote the splitting field over $\QQ$ of the polynomial $x^3 - 11$.
 
 a.
@@ -25,3 +27,4 @@ Find the Galois group of $(x^3 - 11)(x^2 - 2)$ over $\QQ$.
 
 c.
 Prove that the minimal polynomial of $11^{1/3} + 2^{1/2}$ over $\QQ$ has degree 6.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that every subgroup of order 5 in $S_5$ is a transitive subgroup.
+:::

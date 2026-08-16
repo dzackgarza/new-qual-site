@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - (**Important**) Classify all groups of order $p^2$.
 
   > Must be abelian since quotient is cyclic.
@@ -22,3 +23,4 @@ review: draft
   > Then $\gens{a}\neq G$, so pick $b$ in its complement, it has order $p$.
   > Call these two subgroups $H, K$ Recognize direct products: abelian implies both are normal, $H \intersect K = \ts{1}$.
   > and $\size HK = \size H \size K / \size(H \intersect K) = p\cdot p/1 = p^2$
+:::

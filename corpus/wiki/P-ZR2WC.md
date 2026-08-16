@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 4. 
    - Definition of uniform convergence:
   $$
@@ -44,4 +46,4 @@ review: draft
       \end{align*}$$
 
       Applying this to $f = 0$, we have $f_n \rightrightarrows 0 \implies \int f_n \rightrightarrows \int 0 = 0$. $\qed$
-
+:::

@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a.
 Let $f, g\in L^1(\RR^n)$ and give a definition of $f\ast g$.
 
@@ -28,3 +30,4 @@ c. In parts:
     1. Define the *Fourier transform* of an integrable function $f$ on $\RR^n$.
     2. Give an outline of the proof of the Fourier inversion formula.
     3. Give an example of a function $f\in L^1(\RR^n)$ such that $\hat{f}$ is not in $L^1(\RR^n)$.
+:::

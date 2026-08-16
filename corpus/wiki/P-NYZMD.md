@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Consider $L^2([0, 1])$ and define
 \[
 e_0(x) &= 1 \\
@@ -27,3 +29,4 @@ h(x) = x - {1\over 6}
 .\]
 
 Compute $\norm{f - g}_2$.
+:::

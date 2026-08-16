@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Do you know about Dedekind domains and class numbers?
+:::

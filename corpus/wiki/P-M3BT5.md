@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $F = K[\alpha_1, \cdots, \alpha_n]$ where $\alpha_1^{n_1} \in K$ for some $n_1$ and for each $i$ we have $\alpha_i^{n_i} \in K[\alpha_1, \cdots, \alpha_{i-1}]$ for some powers $n_i$.
 We want to show that $F = E[\beta_1, \cdots \beta_m]$ where each $\beta_i$ satisfies a similar condition.
 
@@ -24,3 +25,4 @@ Then by assumption, there is some $m_1$ such that $\beta_1^{m_1} \in K[\alpha_1,
 
 Inductively letting $A_2 = A \setminus\theset{\beta_1}$ and repeating this process to construct $F_2, F_3, \ldots$ will yield radical extensions at every step, and since $A$ is finite, there is some $N$ such that $F_N = F$.
 But then $F$ is a radical extension over $E$ as desired.
+:::

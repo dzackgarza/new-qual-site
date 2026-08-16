@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Show that the set \( \ts{ u_k(j) \da \delta_{ij} } \subseteq \ell^2(\ZZ) \) and forms an orthonormal system.
+:::

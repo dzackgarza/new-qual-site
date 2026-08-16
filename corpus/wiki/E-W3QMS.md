@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - Do any example from [here](http://home.iitk.ac.in/~psraj/mth102/lecture_notes/comp8.pdf)
 
 - ![[_attachments/Pasted image 20210527174041.png]]
@@ -25,4 +27,4 @@ review: draft
 - ![[_attachments/Pasted image 20210527175840.png]]
 
 - ![[_attachments/Pasted image 20210527180104.png]]
-
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that every simple abelian group is cyclic.
+:::

@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that every continuous map $f : \RP^2 \to S^1$ is homotopic to a constant.
 
 > Hint: think about covering spaces.
+:::

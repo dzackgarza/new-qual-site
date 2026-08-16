@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What Galois stuff can you say about $x^{2n} - 2$?
+:::

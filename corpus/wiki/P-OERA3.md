@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Discuss sufficient conditions on a polynomial of degree 5 to have Galois group $S_5$ over $\QQ$ and prove your statements.
+:::

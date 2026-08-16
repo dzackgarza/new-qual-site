@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 (a) Let $z, w$ be complex numbers, such that $\bar{z} w \neq 1$.
 Prove that
 $$\abs{\frac{w - z}{1 - \bar{w} z}} < 1 \; \; \; \mbox{if} \; |z| < 1 \; \mbox{and}\; |w| < 1,$$
@@ -35,3 +37,4 @@ $F(w) = 0$.
 > Hint: Calculate $F \circ F$.
 
 ### Tie's Extra Questions: Fall 2015### Tie's Extra Questions: Fall 2015
+:::

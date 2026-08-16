@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. We need to show
     $$
     \forall \varepsilon \exists \delta(\varepsilon) \suchthat \quad \abs{x-2} < \delta \implies \abs{\frac 1 {3+x} - \frac 1 5} < \varepsilon
@@ -21,4 +23,4 @@ review: draft
     $$
     \abs{\frac 1 {3+x} - \frac 1 5} = \abs{\frac{x-2}{5(3+x)}} < \frac 1 {20} \abs{x-2} < \frac 1 {20} (20 \varepsilon) < \varepsilon. \qed
     $$
-
+:::

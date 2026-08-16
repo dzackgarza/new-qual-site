@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 2. We first note that we can rewrite the equation of the region to obtain something more familiar: $x^2 + y^2 = 2x \implies (x-1)^2 + y^2 = 1$, which is a translated circle. Integrating over this region will be easy compared to the line integral, so we apply Green's theorem:
 $$
 \int_C xe^x ~dx + ye^y +x^2 ~dy = \iint_D 2x ~dA.
@@ -34,4 +36,4 @@ $$
   = \frac 2 3 [(\pi + 0) - (0 + 0)]
   = \frac 2 3 \pi. \qed 
   $$
-
+:::

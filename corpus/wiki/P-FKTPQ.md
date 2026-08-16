@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the prime ideals and maximal ideals of $\ZZ[x]$?
+:::

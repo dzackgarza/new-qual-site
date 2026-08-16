@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Find all primes in the ring of Gaussian integers.
+:::

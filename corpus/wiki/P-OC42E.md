@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 **Injectivity**: We have the following situation:
 
 \begin{tikzcd}
@@ -96,3 +97,4 @@ Let $y \in B_3$; we want to then show that there exists an $x\in A_3$ such that 
 - Then $f(a_3) = f(x) - y \implies y = f(x) - f(a_3) = f(x - a_3)$ since $f$ is a homomorphism.
 
 - This shows that $x-a_3 \mapsto y$ under $f$, which is the element we wanted to produce.
+:::

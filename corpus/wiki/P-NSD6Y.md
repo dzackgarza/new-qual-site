@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that $\RR^2$ is not homeomorphic to $\RR^n$ for $n > 2$.
+:::

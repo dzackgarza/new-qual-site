@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 **Definition:** We say $A \sim B$ in $M_n(R)$ $\iff$ there exists an invertible $P$ such that $B=PAP\inv$.
 
 - Reflexive, $A\sim A$:
@@ -41,3 +42,4 @@ review: draft
 - Transitive, $A\sim B \& B\sim C \implies A \sim C$:
 
   If $B = PAQ, C = RBS$, then $C = R(PAQ)S = (RP) A (QS)$, so take $L = RP, M  = QS$ to yield $C = LAM$.
+:::

@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $R$ be an algebra over $\mathbb{C}$ which is finite-dimensional as a $\CC\dash$vector space. Recall that an ideal $I$ of $R$ can be considered as a $\CC\dash$subvector space of $R$. We define the codimension of $I$ in $R$ to be 
 \[
 \codim_R I \da 
@@ -28,5 +30,4 @@ Suppose that $\operatorname{dim}_{C} R=2$. Show that there exists a surjective h
 
 c.
 Classify such algebras $R$ for which $\dim_{\CC} R=2$, and list their maximal ideals.
-
-
+:::

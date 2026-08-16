@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that continuity of measure from above/below holds for outer measures.
 
 - Show that a countable union of null sets is null.
@@ -33,3 +34,4 @@ Integrability
 - Show that step functions are dense in $L^1$.
 
 - Show that smooth compactly supported functions are dense in $L^1$.
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Here $I$ is a left ideal of $R$, $S$ is a nonempty subset of the $R\dash$module $A$, and
 \[
 IS \definedas \theset{ \sum_{i=1}^n r_i a_i \suchthat n\geq 1,\ r_i \in I,\ a_i \in S }
@@ -42,3 +43,4 @@ and $r r_i \in I$ for each $i$, because $I$ is a *left* ideal and is therefore c
 This exhibits $rx$ as an element of $IS$.
 
 Finally $IS \neq \emptyset$ since $S\neq\emptyset$, so $IS$ is a submodule of $A$.
+:::

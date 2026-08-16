@@ -12,4 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - Show that every open $U \subseteq \RR$ is a countable union of disjoint open intervals.
+:::

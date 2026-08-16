@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Start constructing the character table for $S_5$.
+:::

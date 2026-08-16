@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. $AX=B$ has a solution $\iff \rank(A) = \rank(C)$:
 
 Note that we can only have $\rank C \geq \rank A$.
@@ -62,3 +64,4 @@ A \vector v_1 &= A \vector v_2 = \vector b \\
 ,\end{align*}
 
 which shows that any solution is unique.
+:::

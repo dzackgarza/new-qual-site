@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $G$ be a group of order 60 whose Sylow 3-subgroup is normal.
 
 a. Prove that $G$ is solvable.
 
 b. Prove that the Sylow 5-subgroup is also normal.
+:::

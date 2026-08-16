@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $V$ be a vector space over a field $F$ and $V\dual$ its dual.
 A *symmetric bilinear form* $(\wait, \wait)$ on $V$ is a map $V\cross V\to F$ satisfying
 \[
@@ -36,3 +38,4 @@ Define an injective linear map
 \psi: Y^{\perp}/X^{\perp} \injects (X/Y)\dual
 \]
 which is an isomorphism if $V$ is finite dimensional.
+:::

@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that a compact set in a Hausdorff space is closed.
+:::

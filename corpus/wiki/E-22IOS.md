@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that every metric space is Hausdorff in its metric topology.
+:::

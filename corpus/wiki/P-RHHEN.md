@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 State/describe Hilbert's Nullstellensatz.
 Sketch a proof.
+:::

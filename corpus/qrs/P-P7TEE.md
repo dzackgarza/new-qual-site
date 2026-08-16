@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $F$ be a field and $n$ a positive integer, and consider
 \[
 A=\left[\begin{array}{ccc}
@@ -25,4 +27,4 @@ A=\left[\begin{array}{ccc}
 Show that $A$ has a Jordan normal form over $F$ and find it.
 
 > Hint: treat the cases $n\cdot  1 \neq 0$ in $F$ and $n\cdot 1 = 0$ in $F$ separately.
-
+:::

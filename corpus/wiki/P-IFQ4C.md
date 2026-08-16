@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that the transitive subgroups of $S_3$ are $S_3, A_3$
+:::

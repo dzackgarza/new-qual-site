@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that the alternating group $A_n$ is simple for $n \geq 5$.
+:::

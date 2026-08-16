@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that every closed convex $K \subset H$ a Hilbert space has a unique element of minimal norm.
+:::

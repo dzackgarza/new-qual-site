@@ -14,9 +14,12 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Evaluate the integral
 \[
 \int_\RR {dx \over 1 + x^4}
 .\]
 
 What are the poles of ${1\over 1 + z^4}$ ?
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 16. Given an example of a finite extension of fields that has infinitely many intermediate fields.
+:::

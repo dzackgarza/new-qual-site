@@ -13,8 +13,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f: \RR \to \RR$ and suppose
 $$
 \forall x\in \RR,\quad f(x) \geq \limsup _{y \rightarrow x} f(y)
 $$
 Prove that $f$ is Borel measurable.
+:::

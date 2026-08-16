@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f(x) = x^4 - 5 \in \QQ[x]$.
 
 a. Compute the Galois group of $f$ over $\QQ$.
 
 b. Compute the Galois group of $f$ over $\QQ(\sqrt{5})$.
+:::

@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Define the "radical" of an ideal.
 Prove it is an ideal.
 Prove that the ideal of all polynomials vanishing on the zero set of $I$ is $\sqrt{I}$.
+:::

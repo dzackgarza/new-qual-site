@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $G$ be a group.
 An automorphism $\phi: G \rightarrow G$ is called *inner* if the automorphism is given by conjugation by a fixed group element $g$, i.e.,
 \[
@@ -32,3 +33,4 @@ d. Suppose that an automorphism $\phi \in \operatorname{Aut}\left(S_{n}\right)$ 
 Show that $\phi$ is inner.
 
 > Hint: Consider the images of generators $\phi((1,2)), \phi((2,3)), \cdots, \phi((n-1, n))$.
+:::

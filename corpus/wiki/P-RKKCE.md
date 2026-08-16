@@ -14,7 +14,9 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Compute the integral
 $\displaystyle{\int_{-\infty}^{\infty} \frac{e^{-2\pi ix\xi}}{\cosh\pi x}dx}$
 where $\displaystyle{\cosh z=\frac{e^{z}+e^{-z}}{2}}$.
-
+:::

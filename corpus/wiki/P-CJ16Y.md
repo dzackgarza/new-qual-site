@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \cos (x+\frac {\pi}{4}) \cos(x- \frac {\pi}{4}) ~dx = \color {blue} {\frac {1}{4} \sin(2x)}$
 
 - **Solution:** $\cos (x+\frac {\pi}{4}) \cos (x- \frac {\pi}{4}) = \frac {1}{2} (\cos ((x + \frac {\pi}{4}) + (x - \frac {\pi}{4})) + \cos ((x + \frac {\pi}{4}) - (x - \frac {\pi}{4}))) =  \frac {1}{2} \cos (2x)$
@@ -32,3 +33,4 @@ review: draft
 - **Solution:** $2 \cos (x) \sin (3x) = \sin (x + 3x) - \sin (x - 3x) = \sin (4x).+ \sin (2x)$
 
 - **Used 2018**
+:::

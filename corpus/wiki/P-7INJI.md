@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Discuss representations of $\ZZ$, the infinite cyclic group.
 What is the group algebra of $\ZZ$?
+:::

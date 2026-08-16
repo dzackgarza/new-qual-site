@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that the stabilizer of an element need not be a normal subgroup?
+:::

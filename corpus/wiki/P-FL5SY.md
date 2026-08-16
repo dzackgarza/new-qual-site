@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f(z)$ be bounded and analytic in $\CC$.
 Let $a\neq b$ be any fixed complex numbers.
 Show that the following limit exists:
@@ -22,3 +24,4 @@ Show that the following limit exists:
 .\]
 
 Use this to show that $f(z)$ must be constant.
+:::

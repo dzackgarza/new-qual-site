@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \frac {x + \sin(x)}{1 + \cos(x)}~dx = \color {blue} {\frac {x \sin (x)}{1 + \cos (x)}} = \color {blue} {x \tan \frac {x}{2}}$
 
 - **Solution:** $u = x$, $v = \frac {\sin (x)}{1 + \cos (x)}$, $du = dx$, $dv = \frac {\cos (x) + \cos ^2 (x) + \sin ^2 (x)}{(1 + \cos (x))^2} = \frac {1}{1 + \cos (x)} ~dx$
@@ -24,3 +25,4 @@ review: draft
 - **Solution:** $u = x$, $v = - \frac {1}{e^x + 1}$, $du = dx$, $dv = \frac {e^x}{(e^x + 1)^2} ~dx$
 
 - **Solution:** $- \frac {x}{e^x + 1} - \int - \frac {1}{e^x + 1} ~dx = - \frac {x}{e^x + 1} + \int (1 - \frac {e^x}{e^x + 1}) ~dx$
+:::

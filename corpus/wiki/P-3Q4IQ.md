@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 How many abelian groups are there of order 36?
+:::

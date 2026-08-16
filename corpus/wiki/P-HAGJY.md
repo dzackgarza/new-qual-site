@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 By part 1, $(\hom_{R\dash\text{mod}}(A, A), +)$ is an abelian group, We just need to check that $(\hom_R(A, A), \circ)$ is a monoid, i.e.:
 
 - Associativity: $f \circ (g\circ h) = (f\circ g) \circ h$
@@ -50,3 +51,4 @@ f\circ g \actson (r+s)(x+y) &= f(g((r+s)(x+y)))\\
 &= (f \actson (r+s)(x+y)) \circ (g \actson (r+s)(x+y))
 .\end{align*}
 \]
+:::

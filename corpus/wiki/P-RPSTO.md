@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if $G$ is solvable, then $G$ contains a nontrivial normal subroup.
 
   - What does this mean on the Galois theory side?
 
 > Hint: consider the derived series.
+:::

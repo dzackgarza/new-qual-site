@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \frac {x^2}{x^2+1} ~dx = \color{blue} {x - \tan ^{-1} (x)}$
 
 - **Solution:** $\frac {x^2}{x^2+1} = 1 - \frac {1}{x^2+1}$
@@ -50,3 +51,4 @@ review: draft
 - **Solution:** $\frac {2x^5 + 4x^3 + 4x}{(x^4+1)} = 2x + \frac {4x^3}{x^4 + 1} + \frac {2x}{x^4 + 1}$
 
 - **Used 2019**
+:::

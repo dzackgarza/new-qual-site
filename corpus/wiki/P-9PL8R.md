@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $r = sk$.
 Toward an application of the first isomorphism theorem, define a map
 \[
@@ -131,3 +132,4 @@ R/\ker \psi \cong \im \psi \implies R/(s) \cong A[s].
 $$
 
 $\qed$
+:::

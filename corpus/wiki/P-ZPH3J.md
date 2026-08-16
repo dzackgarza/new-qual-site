@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 View the torus $T$ as the quotient space $\RR^2 /\ZZ^2$.
 
 Let $A$ be a $2 \times 2$ matrix with $\ZZ$ coefficients.
@@ -26,3 +27,4 @@ Show that, with respect to a suitable basis for $H_1 (T ; \ZZ)$, the matrix $A$ 
 Find a necessary and sufficient condition on $A$ for $\mca$ to be homotopic to the identity.
 
 Find a necessary and sufficient condition on $A$ for $\mca$ to be homotopic to a map with no fixed points.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If $\chi(g)$ is real for every character $\chi$, what can you say about $g$?
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Since $n_p \neq 1$ by assumption, we must have $n_p = q$.
 Now consider sub-cases for $n_q$:
 
@@ -41,3 +42,4 @@ Now consider sub-cases for $n_q$:
 
 > The same union bound cannot be applied to the Sylow $p\dash$subgroups.
 > They have order $p^2$, which is not prime, so two distinct ones may meet in a subgroup of order $p$ and the count $n_p(p^2-1)$ would overcount.
+:::

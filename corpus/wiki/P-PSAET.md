@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Determine the orders $\size \GL_n(\FF_p)$ and $\size \SL_n(\FF_p)$.
+:::

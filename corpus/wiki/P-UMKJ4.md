@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 > Proof following http://sierra.nmsu.edu/morandi/notes/SmithNormalForm.pdf
 
 The goal is to show that any matrix $A \in M(m\times n, R)$ is *equivalent* to a matrix $D$ of the described form, so $A = PDQ$ for some matrices $P,Q$.
@@ -150,3 +152,4 @@ Since it is not necessarily the case that $d_N$ divides $z$ here, a small additi
 ![Image](../../assets/10_Algebra/500_Exercises/PSets/PSet%209/figures/2019-11-26-22%3A38.png)\
 
 This yields the desired form in the top-left $2\times 2$ block, zeroing out the first column and row, so the inductive hypothesis applies to the remaining block. $\qed$
+:::

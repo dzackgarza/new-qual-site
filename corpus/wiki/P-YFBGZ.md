@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the radical ideals in $\ZZ$?
+:::

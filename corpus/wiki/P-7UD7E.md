@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $(X, \mathcal M, \mu)$ be a measure space.
 For $f\in L^1(\mu)$ and $\lambda > 0$, define
 $$
@@ -25,3 +26,4 @@ Show that $\phi, \psi$ are Borel measurable and
 $$
 \int_{X}|f| ~d \mu=\int_{0}^{\infty}[\phi(\lambda)+\psi(\lambda)] ~d \lambda
 $$
+:::

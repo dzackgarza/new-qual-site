@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give the $4 \times 4$ Jordan forms with minimal polynomial $(x - 1)(x - 2)^2$.
+:::

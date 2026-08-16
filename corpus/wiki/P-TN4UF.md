@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 How do you prove that any finite-dimensional representation of a compact Lie group is equivalent to a unitary one?
+:::

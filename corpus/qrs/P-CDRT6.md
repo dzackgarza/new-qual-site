@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Does diagonalizable imply distinct eigenvalues?
+:::

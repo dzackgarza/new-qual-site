@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $[S_n, S_n] = A_n$
+:::

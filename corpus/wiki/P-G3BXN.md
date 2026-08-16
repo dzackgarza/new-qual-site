@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Is $\CC[x, y]$ a PID? Is \( \gens{ x, y }  \) a prime ideals in it?
+:::

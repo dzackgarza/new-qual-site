@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that $\RR$ is separable.
+:::

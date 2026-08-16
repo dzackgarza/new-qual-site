@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $\OO$ be the ring of integers of $\QQ(d)$, where $d > 0$.
 What can you say about the quotient of O by one of its prime ideals?
+:::

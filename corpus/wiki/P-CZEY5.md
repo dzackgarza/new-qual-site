@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $\phi(n) = 2$.
 Take a prime factorization of $n$, so we have
 $$
@@ -45,3 +46,4 @@ In summary, we've found that $\phi(n) = 2$ implies that
 
 This reduces the possibilities to the finite set $n \in \theset{6,3,4}$, and $\phi(6) = \phi(3) = \phi(4) = 2$.
 $\qed$
+:::

@@ -13,8 +13,10 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Show that a uniform limit of bounded functions is bounded.
 
 - Show that a uniform limit of continuous function is continuous.
 
   - I.e. if $f_n\to f$ uniformly with each $f_n$ continuous then $f$ is continuous.
+:::

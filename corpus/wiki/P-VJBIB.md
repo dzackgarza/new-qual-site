@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Parts
    1. If $A$ has two distinct eigenvalues, we will have $A = PDP\inv$ where $P$ is the matrix of eigenvectors and $D$ has eigenvalues on the diagonal. We can compute the characteristic polynomial
   $$
@@ -65,4 +67,4 @@ review: draft
 
       The second condition forces $y_2 \in \theset{0,1}$, and solving for $\lambda$ in this expression yields $\lambda = 1$ and so the first condition forces $y_1 = 0$. This leaves only one possibility, $\vector y = \thevector{0, 1}$, which is indeed the candidate from above. Thus the minimum value is 1. $\qed$
  
-
+:::

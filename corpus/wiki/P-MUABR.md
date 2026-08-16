@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if $L/K/F$ with $K/F$ algebraic and $L/K$ algebraic then $L$ is algebraic.
+:::

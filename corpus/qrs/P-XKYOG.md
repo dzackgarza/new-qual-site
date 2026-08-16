@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 equations take the form
 
 $$\frac{\partial u}{\partial r} = \frac{1}{r} \frac{\partial v}{\partial \theta}
@@ -25,4 +27,4 @@ defined by $$\log z = \log r + i \theta \; \;
 is a holomorphic function in the region
 $r>0, \; - \pi < \theta < \pi$. Also show that $\log z$ defined
 above is not continuous in $r>0$.
-
+:::

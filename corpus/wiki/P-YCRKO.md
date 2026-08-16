@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Define the derived series.
 Define the commutator.
 State and prove two nontrivial theorems about derived series.
+:::

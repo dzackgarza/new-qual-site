@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 5. Let $\delta = \min\theset{\frac 1 2, \sqrt{\frac \varepsilon 2}}$, then 
 $$\abs{x-1} < \frac 1 2 \implies \frac 1 2 < x < \frac 3 2 \implies \abs{x} > \frac 1 2 \implies \frac 1 {\abs x} < 2$$ and so
   $$\begin{align*}
@@ -23,4 +25,4 @@ $$\abs{x-1} < \frac 1 2 \implies \frac 1 2 < x < \frac 3 2 \implies \abs{x} > \f
   &= 2 \left(\frac{\varepsilon} 2\right) \\ 
   &= \varepsilon. \qed
   \end{align*}$$
-
+:::

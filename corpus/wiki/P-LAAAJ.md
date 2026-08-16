@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Is a polynomial ring over a UFD again a UFD?
+:::

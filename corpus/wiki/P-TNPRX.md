@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Give a necessary and sufficient condition for a cyclic group to be solvable.
+:::

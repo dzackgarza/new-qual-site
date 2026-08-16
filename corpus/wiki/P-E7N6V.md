@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - $\displaystyle \int\sqrt {x\cdot\sqrt[3]{x\cdot\sqrt[4]{x\cdot\sqrt[5]{x...}}}} dx = \frac {x^{e-1}}{e-1}$ --level 5 --talyor expansion....
 
 - $\displaystyle \int_{0}^{1} \frac {\sin({\ln(x)})}{\ln(x)} dx = \frac {\pi}{4}$ --level 5 --requires feynmann technique
@@ -32,3 +33,4 @@ review: draft
 
   - Solution: u-sub $u=1-x$, integration by parts with $u$ equals the square root term, "exotic" elementary antiderivative involving $\arcsin$, a nasty simplification.
     Probably too hard.
+:::

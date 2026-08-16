@@ -15,9 +15,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Show that
 \[
 \int_{0}^{2 \pi} \frac{d \theta}{(a+\cos \theta)^{2}}=\frac{2 \pi a}{\left(a^{2}-1\right)^{3 / 2}}, \quad \text { whenever } a>1
 .\]
-
-
+:::

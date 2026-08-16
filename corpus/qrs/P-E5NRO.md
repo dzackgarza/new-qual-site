@@ -12,6 +12,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $\mu$ be a finite Borel measure on $\RR$ and $E \subset \RR$ Borel.
 Prove that the following statements are equivalent:
 
@@ -24,3 +25,4 @@ $$
 $$
 H \subseteq E \subseteq V \quad \text{and}\quad \mu(V\setminus H) = 0
 $$
+:::

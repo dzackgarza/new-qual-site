@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $\mathcal H$ be a Hilbert space.
 
 1. Let $x\in \mathcal H$ and $\theset{u_n}_{n=1}^N$ be an orthonormal set.
@@ -20,4 +22,4 @@ Let $\mathcal H$ be a Hilbert space.
   \hat x \definedas \sum_{n=1}^N \inner{x}{u_n}u_n.
   $$
 2. Conclude that finite dimensional subspaces of $\mathcal H$ are always closed.
-
+:::

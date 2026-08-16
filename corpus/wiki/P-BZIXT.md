@@ -12,6 +12,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. Parts:
 
    1. Let $x, y \in X$ and suppose $f(x) = f(y)$.
@@ -29,3 +30,4 @@ review: draft
    $$
    ![](../../assets/00_Prelims/figures/2019-07-13-22-08-59.png) then $g(f(1)) = 1$, and this exhausts $X$.
    Since $\abs{X} \neq \abs{Y}$, these don't form a bijection -- in particular, $2\not\in\im f \subsetneq Y$.
+:::

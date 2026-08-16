@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Now we'll take the tensor product of two abelian groups, that is, $\ZZ\dash$modules.
 Take $\ZZ/p\ZZ$ and $\ZZ/q\ZZ$, where $p$ and $q$ are distinct primes.
 What is their tensor product?
+:::

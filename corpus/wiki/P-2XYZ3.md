@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that any finite division ring is a field (that is, prove commutativity).
 Give an example of a (necessarily infinite) division ring which is NOT a field.
+:::

@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that the kernel of a homomorphism is a normal subgroup.
+:::

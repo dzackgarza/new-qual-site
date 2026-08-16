@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of entire functions where
 
 - $f_n \to g$ pointwise for some $g:\CC\to\CC$.
@@ -26,3 +27,4 @@ Show that
 - $g$ is entire, and
 
 - $f_n\to g$ uniformly on every compact subset of $\CC$.
+:::

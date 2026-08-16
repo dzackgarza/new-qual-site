@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Note that we can't have $T^j = 0$ for any $j\leq 4$, since then $T^5 = T^{5-k}T^k = T^{5-k} 0 = 0$, contradicting $T^5 \neq 0$.
 
 So in fact $p_T(x) = x^6$ is the minimal polynomial of $T$, and since $V$ is 6 dimensional, the degree of the characteristic polynomial $\chi_T(x)$ is 6. Since $p_T \divides \chi_T$, and both are monic polynomials of degree 6, we in fact have
@@ -39,3 +40,4 @@ JCF(T) = J_0^6 =
 0 & 0 & 0 & 0 & 0 & 0\\
 \end{array}\right]
 $$
+:::

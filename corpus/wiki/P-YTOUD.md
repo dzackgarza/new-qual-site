@@ -12,4 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Show that a map $S^n \to S^n$ has a fixed point unless its degree is equal to the degree of the antipodal map $a : x \to -x$.
+:::

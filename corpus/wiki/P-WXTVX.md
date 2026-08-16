@@ -11,4 +11,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 - Show that $X$ is connected iff the only subsets of $X$ which are both closed and open are $\emptyset, X$.
+:::

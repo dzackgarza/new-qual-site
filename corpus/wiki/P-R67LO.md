@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int (\sin(x) + \cos(x))^2 ~dx = \color {blue} {x-\frac {1}{2}\cos(2x)}$
 
 - **Solution:** $(\sin(x) + \cos(x))^2 = 1 + 2 \sin(x) \cos(x)$
@@ -38,3 +39,4 @@ review: draft
 6. $\displaystyle \int \sin^3(x)\sqrt {\cos(x)} dx = \color {blue} {-\frac {2}{3}\cos ^{\frac {3}{2}}(x)+\frac {2}{7}\cos ^{\frac {7}{2}}(x)}$
 
 - **Solution:** $\sin^3(x)\cos ^{\frac {1}{2}} (x) ~dx = \sin (x) (1 - \cos ^2 (x)) \cos ^{\frac {1}{2}} (x) ~dx = - (\cos ^{\frac {1}{2}} (x) - \cos ^{\frac {5}{2}} (x)) ~d \cos (x)$
+:::

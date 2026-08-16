@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. 
 Assume $\displaystyle f(z) = \sum_{n=0}^\infty c_n z^n$ converges in $|z| < R$. 
 
@@ -23,4 +25,4 @@ $$
 
 2.
 Deduce Liouville's theorem from (1).
-
+:::

@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Prove that maximum principle for harmonic functions, i.e.
 
 a. If $u$ is a non-constant real-valued harmonic function in a region $\Omega$, then $u$ can not attain a maximum or a minimum in $\Omega$.
@@ -26,3 +28,4 @@ b. Suppose $\Omega$ is a region with compact closure $\bar \Omega$.
 > Hint: to prove (a), assume $u$ attains a local maximum at $z_0$.
 > Let $f$ be holomorphic near $z_0$ with $\Re(f) = u$, and show that $f$ is not an open map.
 > Then (a) implies (b).
+:::

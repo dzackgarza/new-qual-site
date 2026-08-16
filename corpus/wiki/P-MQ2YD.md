@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 What can you say about matrices that satisfy a given polynomial (over an algebraically closed field)?
 How many of them are there?
 What about over a finite field?
 How many such matrices are there then?
+:::

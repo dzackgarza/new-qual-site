@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Consider the space of functions from the natural numbers to $\CC$ endowed with the usual law of addition and the following analogue of the convolution product:
 
 \[
@@ -22,4 +24,4 @@ Consider the space of functions from the natural numbers to $\CC$ endowed with t
 
 Show that this is a ring.
 What does this ring remind you of and what can you say about it?
-
+:::

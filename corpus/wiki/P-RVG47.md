@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Do you know a Lie group that has no faithful finite-dimensional representations?
+:::

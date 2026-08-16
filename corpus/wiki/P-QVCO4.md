@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Identifying
 $$
 R \cross F = F[x] \oplus F \cong F[x] \oplus \frac{F[x]}{(f)}
@@ -34,3 +35,4 @@ x+1 & 0 \\
 \end{array}\right].
 \end{align*}
 \]
+:::

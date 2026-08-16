@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 An element $x\in M$ is *torsion* iff there exists some nonzero $r\in R$ such that $rm = 0$, or equivalently $\mathrm{Ann}(x) \neq 0$.
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 We start with a few known facts.
 Let $A=M$, the Mobius strip, and $B= D^2$, the solid disk.
 
@@ -159,3 +160,4 @@ We now have:
 0 &  &  &  &
 \end{tikzcd}
 ```
+:::

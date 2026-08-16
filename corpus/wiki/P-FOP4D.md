@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Is a square matrix always similar to its transpose?
+:::

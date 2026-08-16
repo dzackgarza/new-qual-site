@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 5. What is the companion matrix $M$ of the polynomial $f=x^{2}-x+2$ over $C$ ? Prove that $f$ is the minimal polynomial of $M$.
+:::

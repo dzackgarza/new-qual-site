@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Give an example of a space that is compact but not sequentially compact, and vice versa.
 
 #### Exercise
+:::

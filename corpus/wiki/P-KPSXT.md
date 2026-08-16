@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Do you know an example of a flat module?
+:::

@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that a continuous map from a compact space to a Hausdorff space is closed.
 
 #### Exercise
+:::

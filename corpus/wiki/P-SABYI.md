@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 How does one prove the structure theorem for modules over PID? What is the module and what is the PID in the case of abelian groups?
+:::

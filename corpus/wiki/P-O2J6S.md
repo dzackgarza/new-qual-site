@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 7. Generators of the subgroups:
 
 8. $\left< ab^{-1}, aba^{-2}, a^3b^{-1}a^{-2}, a^3\right>$
@@ -36,3 +37,4 @@ Relevant covers:
 4. ![1512965792844](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1512965792844.png)
 
 5. Let $T$ be a copy of the Cayley Tree on two on the two generators $a, b$, then: ![1512966232873](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1512966232873.png)
+:::

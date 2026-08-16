@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that an injective continuous map from a compact space to a Hausdorff space is an embedding (a homeomorphism onto its image).
 
 #### Exercise
+:::

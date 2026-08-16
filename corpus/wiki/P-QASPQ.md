@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $H~\text{char}~G \Rightarrow H \unlhd G$
 
   > Thus "characteristic" is a strictly stronger condition than normality
+:::

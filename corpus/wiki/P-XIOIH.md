@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $\GF(p^d) \leq \GF(p^n) \iff d\divides n$
+:::

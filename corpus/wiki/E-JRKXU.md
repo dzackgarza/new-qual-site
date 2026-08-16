@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 17. Let $u=\sqrt{3+\sqrt{2}}$.
     Is $\boldsymbol{Q}(u)$ a splitting field of $u$ over $\boldsymbol{Q}$ ? (MathSE)
+:::

@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $(X, \mathcal{M}, \mu)$ be a measure space and prove the following properties of $L^ \infty (X, \mathcal{M}, \mu)$:
 
 - If $f, g$ are measurable on $X$ then 
@@ -26,4 +28,4 @@ Let $(X, \mathcal{M}, \mu)$ be a measure space and prove the following propertie
 - $\norm{f_n - f}_{\infty } \converges{n\to \infty }\to 0 \iff$ there exists an $E\in \mathcal{M}$ such that $\mu(X\sm E) = 0$ and $f_n \to f$ uniformly on $E$. 
 
 - Simple functions are dense in $L^{\infty }$.
-
+:::

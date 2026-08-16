@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. For a division ring $D$, let $V_{i}$ be a finite dimensional vector space over $D$ for $i \in\{1, \ldots, k\}$.
    Suppose the sequence
 \[
@@ -21,3 +22,4 @@ review: draft
 \]
 is exact.
 Prove that $\sum_{i=1}^{k}(-1)^{i} \operatorname{dim}_{D} V_{i}=0$.
+:::

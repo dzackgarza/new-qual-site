@@ -12,6 +12,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Facts Used:
 
 1. $\ext(\ZZ, \ZZ_m) = \ZZ_m$
@@ -24,3 +25,4 @@ Break it up into a bigraded complex, take Ext of the pieces, and sum over the co
 
 So the answer is $\ZZ_2 \times \ZZ_2 \times \ZZ_3 = \ZZ_{12}$.
 $\qed$
+:::

@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 $\impliedby$: Suppose that $A\vector x = \vector b$ has a solution $\vector x$.
 
 Write $A = [\vector a_1, \vector a_2, \cdots \vector a_m]^t$ in block form with each $\vector a_i$ a row of $A$.
@@ -43,3 +45,4 @@ $$
 where $\vector a_i = [a_{i1}, a_{i2}, \cdots, a_{im}]$.
 
 But then $\vector a_i$ is the $i$th row of $A$, and $A\vector x = \vector b$ has a solution iff there is a $\vector x$ such that $\inner{\vector a_i}{\vector x} = b_i$ for all $i$, which is exactly what we've constructed.
+:::

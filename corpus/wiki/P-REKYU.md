@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if $N\normal D_n$ is a normal subgroup of a dihedral group, then $D_n/N$ is again a dihedral group.
+:::

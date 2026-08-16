@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 -- What does it mean for a series to converge? How can you check this?
 		- What does it mean for a series to converge *uniformly*? What do you have to show to prove it does *not* converge uniformly?
 - Show that if $\sum_{n\in \NN} a_n < \infty$ converges, then $$a_n \ctz{n}$$.
@@ -24,3 +26,4 @@ review: draft
 - State and prove the $p\dash$test.
 - What does it mean for a series to converge absolutely?
 	- Find a sequence that converges but not absolutely.
+:::

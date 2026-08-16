@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 We have the map
 
 \[
@@ -47,3 +48,4 @@ which is a nontrivial module homomorphisms.
 
 So any such $f$ appearing must be the zero map, and thus $\overline{\pi}$ is also the zero map.
 $\qed$
+:::

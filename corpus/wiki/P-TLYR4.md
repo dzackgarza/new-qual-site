@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Classify (finite-dimensional) division algebras over $\RR$.
+:::

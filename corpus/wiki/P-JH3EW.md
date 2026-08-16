@@ -12,9 +12,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 What is the Galois group of 
 \[
 \QQ\qty{ \sqrt{n_1}, \cdots, \sqrt{n_m} } \, / \, \QQ(\sqrt{n_1} + \cdots + \sqrt{n_m})
 ?\]
-
-
+:::

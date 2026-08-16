@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that every $p\dash$group is nilpotent.
+:::

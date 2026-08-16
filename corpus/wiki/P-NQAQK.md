@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$ .
 
 Make $V$ and $W$ into $F[x]\dash$modules via linear operators $T$ on $V$ and $S$ on $W$ by defining $X \cdot v = T (v)$ for all $v \in V$ and $X \cdot w = S(w)$ for all w $\in$ W .
@@ -29,3 +30,4 @@ Suppose that $V$ has dimension 2. Give an example of $F$, $T$ with $V_T$ simple.
 
 d. Assume $F$ is algebraically closed.
 Prove that if $V$ has dimension 2, then any $V_T$ is not simple.
+:::

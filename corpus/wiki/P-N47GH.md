@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Write the character table for $S_4$.
+:::

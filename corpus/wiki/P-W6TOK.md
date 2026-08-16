@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \frac {x}{x^4-16} ~dx = \color{blue} {\frac {1}{16} (\ln (x^2 - 4) - \ln (x^2 + 4))}$
 
 - **Solution:** $u =x^2$, $du = 2x ~dx$
@@ -29,3 +30,4 @@ review: draft
 - **Solution:** $- \frac {1}{2(x^2 + 1)} \tan ^{-1} (x) - \int - \frac {1}{2(x^2 + 1)^2} ~dx = - \frac {1}{2(x^2 + 1)} \tan ^{-1} (x) + \int \frac {1}{(\sec ^2 (u_2))^2} \cdot \sec ^2 (u_2) ~du_2 = - \frac {1}{2(x^2 + 1)} \tan ^{-1} (x) + \int \cos ^2 (u_2) ~du_2$
 
 - **Used 2019**
+:::

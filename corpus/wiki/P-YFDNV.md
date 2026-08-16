@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Classify real division algebras.
+:::

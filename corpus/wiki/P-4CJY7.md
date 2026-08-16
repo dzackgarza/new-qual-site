@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the characteristic and minimal polynomial of the Frobenius automorphism?
+:::

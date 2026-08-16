@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 How many abelian groups of order 200 are there?
+:::

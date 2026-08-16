@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Assume $(X,d)$ is a compact metric space.
 
 1.  
@@ -22,5 +24,4 @@ Prove that $X$ is both complete and separable.
 Suppose $\{x_k\}_{k=1}^\infty \subseteq X$ is a sequence such
 that the series $\sum_{k=1}^\infty d(x_k, x_{k+1})$ converges.
 Prove that the sequence $\{x_k\}_{k=1}^\infty$ converges in $X$.
-
-
+:::

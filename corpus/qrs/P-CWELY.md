@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. $V = \theset{\vector v \in \RR^3 \suchthat \inner{\vector v}{\thevector{3,4,5}} = \vector 0}$
    1. Subspace test: $V \subset X$ is a linear subspace iff $\theset{t\vector v_1 + \vector v_2 \suchthat t\in \RR, \vector v_i \in V} \subseteq V$.
    $$
@@ -30,3 +32,4 @@ review: draft
    So now we know that $\thevector{2,1,-2}, \thevector{0,-5,4} \in V$, and since $A$ is rank 2, they in fact span $V$. Thus we can take $A^T$, whose columns are these vectors. Then the columnspace of $A^T$ is $V$, and thus the linear map corresponding to $A^T$ has image $V$. $\qed$
    1. No, by rank nullity: $\abs{\im A} + \abs{\ker A} = \abs{\mathrm{domain} A}$, but $\abs{V} = 2$, so this would force the contradiction $2+2 = 3$.
    
+:::

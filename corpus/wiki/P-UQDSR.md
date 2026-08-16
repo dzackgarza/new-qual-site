@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show directly that any $k\dash$cycle is a product of transpositions, and determine how many transpositions are needed.
+:::

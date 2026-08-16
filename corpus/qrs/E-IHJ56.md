@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that if $X$ is Hausdorff and $A\subseteq X$ is compact then $A$ is closed.
+:::

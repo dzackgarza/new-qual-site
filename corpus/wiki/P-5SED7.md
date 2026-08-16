@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $R$ be a PID.
 
 a. Classify irreducible $R\dash$modules up to isomorphism.
 
 b. Classify indecomposable $R\dash$modules up to isomorphism.
+:::

@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 a. Show that any group of order 2020 is solvable.
 
 a. Give (without proof) a classification of all abelian groups of order 2020.
 
 c. Describe one nonabelian group of order 2020.
+:::

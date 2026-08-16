@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the representations of $S_3$?
 How do they restrict to $S_2$?
+:::

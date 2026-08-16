@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that any field morphism is either 0 or injective.
+:::

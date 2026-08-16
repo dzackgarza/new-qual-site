@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Tell me about group rings.
 What do you know about them?
+:::

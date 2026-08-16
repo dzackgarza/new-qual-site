@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 6. If $F$ is over $K$, and $E$ is an intermediate extension of $F$ over $K$, is $F$
+:::

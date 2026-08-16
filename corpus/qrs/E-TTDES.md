@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE:
 
 - $X$ is compact
@@ -22,3 +23,4 @@ Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE
 - Every infinite subset $A\subseteq X$ has a limit point in $X$.
 
 - Every sequence in $X$ has a convergent subsequence in $X$.
+:::

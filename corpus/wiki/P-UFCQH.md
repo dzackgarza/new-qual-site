@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If two real matrices are conjugate in $\Mat(n\times n, \CC)$, are they necessarily conjugate in $\Mat(n \cross N, R)$ as well?
+:::

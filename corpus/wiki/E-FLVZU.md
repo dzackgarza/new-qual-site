@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - What does it mean for a topological space to be **compact**?
+:::

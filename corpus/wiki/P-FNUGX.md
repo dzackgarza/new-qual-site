@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that a uniform limit of bounded functions is bounded.
 
 - Show that a uniform limit of continuous function is continuous.
@@ -34,3 +35,4 @@ review: draft
 - Prove that uniform convergence implies pointwise convergence implies a.e. convergence, but none of the implications may be reversed.
 
 - Show that $\sum {x^n \over n!}$ converges uniformly on any compact subset of $\RR$.
+:::

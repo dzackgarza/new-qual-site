@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that any group of prime order is cyclic and simple.
+:::

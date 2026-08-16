@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Use Rouche's theorem to prove the Fundamental Theorem of Algebra.
+:::

@@ -11,6 +11,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. 
    1. Negate $\forall x\in \RR,~\exists y\in \RR \suchthat \abs{x-y} \geq 2017$
    $$\exists x\in \RR \suchthat \forall y\in \RR,~ \abs{x-y} < 2017$$
@@ -25,4 +27,4 @@ so
 $$
 f: \RR \to \RR \text{ is not continuous } \iff \\ \exists (x,y) \in \RR^2, \exists \varepsilon \suchthat \forall \delta, \quad d(x,y) < \delta ~\&~ d(f(x), f(y)) \geq \varepsilon. \qed
 $$
-
+:::

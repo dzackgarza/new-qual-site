@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that the center of a $p\dash$group is nontrivial
+:::

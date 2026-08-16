@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Exhibit the rational and Jordan canonical forms for the following matrix $A\in M_4(\CC)$:
   \[
   A=\left(\begin{array}{cccc}
@@ -22,3 +24,4 @@ Exhibit the rational and Jordan canonical forms for the following matrix $A\in M
   -2 & 0 & -1 & -2
   \end{array}\right)
   .\]
+:::

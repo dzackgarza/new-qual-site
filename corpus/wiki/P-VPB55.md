@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Talk about Jordan canonical form.
 What happens when the field is not algebraically closed?
+:::

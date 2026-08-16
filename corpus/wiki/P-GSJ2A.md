@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the eigenvalues of a symmetric matrix?
+:::

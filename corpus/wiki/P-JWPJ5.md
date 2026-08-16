@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 How many irreducible representations does $S_n$ have?
 
 What classical function in mathematics does this number relate to?
+:::

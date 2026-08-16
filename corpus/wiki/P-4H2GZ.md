@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that for $H\leq G$, $C_H(x) = H \intersect C_G(x)$.
+:::

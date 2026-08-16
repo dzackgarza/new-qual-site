@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Say we can find a matrix $A$ such that $\exp(A) = B$ for $B$ in $SL_n(\RR)$.
 Does $A$ also have to be in $\SL_n(R)$?
 Does $A$ *need* to be in $SL_n(R)$?
+:::

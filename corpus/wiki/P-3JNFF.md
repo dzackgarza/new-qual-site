@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Find all normal subgroups of $A_4$.
+:::

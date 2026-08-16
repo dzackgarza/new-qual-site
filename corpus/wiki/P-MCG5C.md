@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $X$ be a CW complex and let $\pi : Y \to X$ be a covering space.
 
 Show that $Y$ is compact iff $X$ is compact and $\pi$ has finite degree.
@@ -24,3 +25,4 @@ Show show that $\chi (Y ) = d \chi (X)$.
 
 Let $\pi :\RP^N \to X$ be a covering map.
 Show that if $N$ is even, $\pi$ is a homeomorphism.
+:::

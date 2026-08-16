@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Describe the Galois theory of cyclotomic extensions.
+:::

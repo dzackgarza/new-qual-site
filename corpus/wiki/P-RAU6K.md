@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give an example of a cubic with Galois group $S_3$.
+:::

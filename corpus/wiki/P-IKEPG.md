@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Use the fact that $\sum_{i=1}^n i = \frac 1 2 n(n+1)$, so
 $$\begin{align*}
 \sum_{i=1}^{n+1} i^3 &= \sum_{i=1}^{n} i^3 + (n+1)^3 \\ 
@@ -23,4 +25,4 @@ $$\begin{align*}
 &= \left( \frac 1 2 (n+1)(n+2)\right)^2 \\
 &= \left( \sum_{i=1}^{n+1} i \right)^2. \qed
 \end{align*}$$
-
+:::

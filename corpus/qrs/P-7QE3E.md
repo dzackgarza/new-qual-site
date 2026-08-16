@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a.
 Let $F \subset \mathbb{R}$ be closed, and define
 \[
@@ -31,5 +33,4 @@ I(x):=\int_{\mathbb{R}} \frac{\delta_{F}(y)}{|x-y|^{2}} d y
 Prove that $I(x)=\infty$ if $x \not\in F$, however $I(x)<\infty$ for almost every $x \in F$. 
 
   > Hint: investigate $\int_{F} I(x) d x$.
-
-
+:::

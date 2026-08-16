@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
   1. Suppose $f_n \rightrightarrows g$ with each $f_n$ bounded; we want to show that all of the $f_n$ are uniformly bounded by some $M$, i.e.
   $$
   \exists M \suchthat \forall x\in \RR, \forall n\in \NN, \quad \abs{f_n(x)} \leq M.
@@ -25,4 +27,4 @@ review: draft
   $$
 
   by the above two statements. But $N<\infty$, so we can choose $M = \max\theset{M_1, M_2, \cdots M_{N-1}, 2\varepsilon + M_N}$ as a uniform bound. Then just take $\varepsilon \to 0$. (Maybe not necessary?)
-
+:::

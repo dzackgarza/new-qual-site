@@ -11,6 +11,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - ![[_attachments/Pasted image 20210517025227.png]]
 
 - ![[_attachments/Pasted image 20210517025152.png]]
@@ -34,3 +35,4 @@ review: draft
 - ![[_attachments/Pasted image 20210517030343.png]]
 
 - ![[_attachments/Pasted image 20210517030440.png]]
+:::

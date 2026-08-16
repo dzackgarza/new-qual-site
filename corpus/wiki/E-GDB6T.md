@@ -15,6 +15,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that a compact Hausdorff space is is metrizable iff it is second-countable.
 
 #### Exercise
+:::

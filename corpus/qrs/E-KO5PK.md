@@ -12,4 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - Prove continuity in $L^p$: If $f$ is uniformly continuous then for all $p$, $$\norm{\tau_h f - f}_p \converges{h\to 0}\to 0.$$ 
+:::

@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Prove the fundamental theorem of Algebra using
 
 a.  
@@ -21,4 +23,4 @@ Rouche's Theorem.
 
 b. 
 The maximum modulus principle.
-
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If $L/K$ is a finite field extension which is both separable and a splitting field of some polynomial in $K[x]$, then $[L: K] = \abs{\Gal}{L/ K}$.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 State and prove the Jordan-Holder theorem for finite groups.
+:::

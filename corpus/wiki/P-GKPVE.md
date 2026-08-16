@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Since $f$ is irreducible of degree $n$ and $u$ is a root of $f$, the minimal polynomial of $u$ over $K$ is in fact $f$, and thus the degree of the extension $K(u) / K$ is given by
 
 $$
@@ -24,3 +25,4 @@ To see that $K(u)$ is not Galois, we just note that since $f$ was irreducible, a
 
 To see that $\mathrm{Aut}(K(u)/ K)$ is trivial, note that any $K\dash$automorphism of $K(u)$ can only send $u$ to one of its conjugates.
 But the only conjugate of $u$ in $K(u)$ is $u$ itself, so only the identity automorphism can occur.
+:::

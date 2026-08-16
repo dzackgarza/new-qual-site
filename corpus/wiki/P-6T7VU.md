@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 **Lemma:**
 If $M$ is a cyclic module over a PID, then $M$ has exactly 1 invariant factor.
 
@@ -67,4 +69,4 @@ d_2 &= \gcd(r, s)
 
 which is what we wanted to show.
 $\qed$
-
+:::

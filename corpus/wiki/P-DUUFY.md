@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Let $H\leq G$ be a subgroup and $N\normal G$ be a normal subgroup.
   Show that $NH \leq G$ is a subgroup.
+:::

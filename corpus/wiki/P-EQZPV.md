@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $X$ be the topological space obtained by identifying three distinct points on $S^2$.
 Calculate $H_* (X; Z)$.
+:::

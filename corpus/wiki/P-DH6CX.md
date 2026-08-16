@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 - **Solution:** $u = \frac {1}{x}​$, $du = - \frac {1}{x^2}~dx ​$
 
 - **Used 2018**
+:::

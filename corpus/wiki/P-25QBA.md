@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Consider a translation-invariant subspace of $L_1$.
 What can you say about its relation to $L_2$ as a convolution algebra?
+:::

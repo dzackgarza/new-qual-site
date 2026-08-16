@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 We want to show that if $A, B$ are $R\dash$modules then $X = (\hom_{R\dash\text{mod}}(A, B), +)$ is an abelian group.
 Let $f, g, h \in X$, we then need to show the following:
 
@@ -61,3 +63,4 @@ Since $B$ is a module, by definition $(B, +)$ is an abelian group. Thus
 (f + g) \actson x &= f(x) + g(x) = g(x) + f(x) = (g+f)\actson x
 .\end{align*}
 \]
+:::

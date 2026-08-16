@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Use $n$-th roots of unity (i.e. solutions of $z^{n}-1=0$ ) to show that
 
 $$
@@ -24,4 +26,4 @@ $$
 z_{1}+z_{2}+\cdots+z_{n}=-c_{1} \\
 z_{1} z_{2} \cdots z_{n}=(-1)^{n} c_{n} \text { (not used) }
 $$
-
+:::

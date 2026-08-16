@@ -13,5 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-- Show that a uniform limit of continuous functions is continuous.
 
+::: problem
+- Show that a uniform limit of continuous functions is continuous.
+:::

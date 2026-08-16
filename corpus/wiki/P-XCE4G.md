@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f_n \colon [0,1) \to \mathbb{R}$ be the function defined by
 $$f_n(x):= \sum_{k=1}^n \frac{x^k}{1+x^k}.$$
 
@@ -32,4 +34,4 @@ $[0,a]$.
 
 3.  
 Prove that $f$ is differentiable on $(0,1)$.
-
+:::

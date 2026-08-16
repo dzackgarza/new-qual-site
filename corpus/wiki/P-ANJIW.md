@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 2. $\displaystyle \int \frac {xe^x\ln x - e^x}{x\ln^2 x} = \color {blue} {\frac {e^x}{\ln x}}$
 
 - **Used 2018**
@@ -22,3 +23,4 @@ review: draft
 - **Solution:** $\sin ^2 (x) + \cos ^2 (x) = 1$
 
 - **Used 2018**
+:::

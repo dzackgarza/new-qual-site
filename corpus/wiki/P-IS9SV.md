@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 For arbitrary $x, y \in A$, we need to check the following:
 
 a. $f\actson (x+y) = f\actson x + f \actson y$
@@ -55,3 +57,4 @@ For (d):
 \id_A \actson x &= \id_A(x) = x
 .\end{align*}
 \]
+:::

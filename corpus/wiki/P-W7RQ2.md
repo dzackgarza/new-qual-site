@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Show that for each \( \epsilon>0 \) the following function is the Fourier transform of an $L^1(\RR^n)$ function:
 \[
 F(\xi) \da \qty{1 \over 1 + \abs{\xi}^2}^{\epsilon}
@@ -27,3 +29,4 @@ f(x) &\da \int_0^{\infty } K_{\delta}(x) e^{-\pi \delta} \delta^{\epsilon - 1} \
 \implies \fourier{f}(\xi) &= \int_0^{\infty } e^{- \pi \delta \abs{\xi}^2} e^{ -\pi \delta} \delta^{\epsilon - 1}
 = \pi^{-s} \Gamma(\epsilon) F(\xi)
 .\]
+:::

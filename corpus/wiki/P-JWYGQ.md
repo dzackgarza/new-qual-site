@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - What is $[\QQ(2^{3\over 2}) : \QQ]$?
+:::

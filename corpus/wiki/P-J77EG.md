@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $M$ be an $n \times n$ matrix such that $M_{ij} = 1$ for all $i, j$, and consider the possible eigenvectors of $M$.
 
 We have 
@@ -56,4 +58,4 @@ JCF(M) = (n-1)J_0^{1} \oplus J_n^1 =
 0 & 0 & 0 & \cdots & n \\
 \end{array}\right]
 $$
-
+:::

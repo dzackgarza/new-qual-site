@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 2. Claim: take $\delta < \min(1, \sqrt{\frac{\varepsilon}{5}})$. Then $\abs{x-2} < \delta \implies 1 < x < 2 \implies 1 > \frac 1 x > \frac 1 2$, so in particular $\frac 1 x < 1$ and
    $$\begin{align*}
    \abs{x + \frac 1 x - \frac 5 2} &= \abs{\frac{2x^2 - 5x + 2}{2x}}\\
@@ -25,4 +27,4 @@ review: draft
    &= \varepsilon.
    \end{align*}$$
    $\qed$
-
+:::

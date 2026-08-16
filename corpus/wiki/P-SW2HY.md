@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $n$ be a natural number. Show that
 
 $$
@@ -19,4 +21,4 @@ $$
 $$
 
 is equal to 2 if $n$ is a multiple of 3 , and it is equal to $-1$ otherwise.
-
+:::

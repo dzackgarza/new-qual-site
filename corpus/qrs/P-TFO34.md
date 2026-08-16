@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that if $z\mapsto f(z)$ is analytic, then $z \mapsto \bar{f(\bar z)}$ is analytic.
+:::

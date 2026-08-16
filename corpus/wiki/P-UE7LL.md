@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Note that if either $p=1$ or $q=1$, $G$ is a $p\dash$group, which is a nontrivial center that is always normal.
 So assume $p\neq 1$ and $q\neq 1$.
 
@@ -35,3 +36,4 @@ $$
 
 If either $n_p =1$ or $n_q = 1$, we are done, so suppose $n_p \neq 1$ and $n_1 \neq 1$.
 This forces $n_p = q$, and we proceed by cases:
+:::

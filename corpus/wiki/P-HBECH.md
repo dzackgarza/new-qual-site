@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 How many surfaces are there, up to homeomorphism, which are:
 
 - Connected,
@@ -27,3 +28,4 @@ How many surfaces are there, up to homeomorphism, which are:
 - With Euler characteristic -3?
 
 Describe one representative from each class.
+:::

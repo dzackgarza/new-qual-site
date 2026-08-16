@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give an example of a PID with a unique prime ideal.
+:::

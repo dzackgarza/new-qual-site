@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the cyclic extensions of (prime) order $p$?
+:::

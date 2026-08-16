@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Consider the following matrix:
 \[
 B \da 
@@ -28,6 +30,4 @@ B \da
 a. Find the minimal polynomial of $B$.
 
 b. Find a $3\times 3$ matrix $J$ in Jordan canonical form such that $B = JPJ\inv$ where $P$ is an invertible matrix.
-
-
-
+:::

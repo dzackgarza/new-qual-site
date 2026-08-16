@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Are diagonalisable $N \times N$ matrices over the complex numbers dense in the space of all $N \times N$ matrices over the complex numbers?
 How about over another algebraically closed field if we use the Zariski topology?
+:::

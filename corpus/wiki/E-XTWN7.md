@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 4. Prove that as extensions of $\boldsymbol{Q}, \boldsymbol{Q}(x)$ is Galois over $\boldsymbol{Q}\left(x^{2}\right)$ but not over $\boldsymbol{Q}\left(x^{3}\right)$.
+:::

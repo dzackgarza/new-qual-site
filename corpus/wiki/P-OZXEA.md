@@ -13,9 +13,12 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Suppose $f(z)$ is entire and 
 \[
 \lim_{z\to\infty} {f(z) \over z} = 0
 .\]
 
 Show that $f(z)$ is a constant.
+:::

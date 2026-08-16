@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \ln (ax + b) ~dx = \color{blue} {\frac {ax + b}{a} \ln (ax + b) - x}$
 
 - **Solution:** $u = \ln (ax + b)​$, $v = x​$, $du = \frac {a}{ax + b} ~dx​$, $dv = dx​$
@@ -36,3 +37,4 @@ review: draft
   - **Used 2019**
 
   4. $\displaystyle \int \ln(x^2-1) ~dx =  \color{blue} { (x + 1) \ln(x + 1) + (x - 1) \ln(x - 1) - 2x}$
+:::

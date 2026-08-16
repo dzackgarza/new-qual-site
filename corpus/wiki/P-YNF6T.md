@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Suppose $\size G = pq$ with $p, q\geq 2$ prime, and let $H\leq G$ be a proper subgroup.
   Prove that $H$ must be cyclic.
 
 > Use (and prove) the classification of groups of order $p$.
+:::

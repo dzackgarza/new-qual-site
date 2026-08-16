@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 This is true.
 By the Galois correspondence, it suffices to show that $H \definedas \Gal(M/L)$ is a normal subgroup of $G \definedas \Gal(M/ K)$.
 To that end, let $\phi \in G$, so $\phi: M \to M$ is a lift of $\id_K$.
@@ -46,3 +47,4 @@ We thus have
 
 and so this composite fixes $L$ as desired.
 This $H \normal G$, which is what we wanted to show.
+:::

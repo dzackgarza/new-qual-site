@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is a semisimple algebra?
 State the structure theorem for semisimple algebras.
+:::

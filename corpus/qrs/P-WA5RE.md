@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $F$ be a field and let $f(x) \in F[x]$.
 
 a. Define what a splitting field of $f(x)$ over $F$ is.
@@ -24,3 +25,4 @@ Exhibit an explicit polynomial $g(x) \in F[x]$ such that $E/F$ is a splitting fi
 Fully justify your answer.
 
 c. Show that the extension $E/F$ in (b) is a Galois extension.
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is a separable extension?
 Can $\QQ$ have a non-separable extension?
 How about $\ZZ/p\ZZ$?
@@ -23,3 +24,4 @@ Of finite fields?
 Prove it.
 
 Give an example of a field extension that's not separable.
+:::

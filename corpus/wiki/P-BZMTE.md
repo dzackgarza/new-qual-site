@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 To see that $\phi(n)$ is even for all $n>2$, we can take a prime factorization of $n$ and write
 $$
 \phi(n) = \phi\left( \prod_{i=1}^m p_i^{k_i}\right) = \prod_{i=1}^m \phi(p_i^{k_i}) = \prod_{i=1}^m p_i^{k_i - 1}(p_i - 1)
@@ -28,3 +29,4 @@ Now split on whether $n$ has an odd prime factor.
 
 Either way $\phi(n)$ is even.
 The case split is necessary because $2-1 = 1$ is odd, so the factor $p_i - 1$ supplies no evenness when $p_i = 2$.
+:::

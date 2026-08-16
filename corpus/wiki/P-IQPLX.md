@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that an $m\dash$cycle is an odd permutation iff $m$ is an even number.
+:::

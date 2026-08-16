@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $[A_4, A_4] \cong \ZZ_2^2$
+:::

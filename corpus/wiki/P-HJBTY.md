@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What $3 \times 3$ matrices over the rationals (up to similarity) satisfy $f (A) = 0$, where $f (x) = (x^2 + 2)(x - 1)^3$?
 List all possible rational forms.
+:::

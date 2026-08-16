@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is a ring of integers?
 What does “integral over $\ZZ$” mean?
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that every maximal subgroup of a $p\dash$group is normal.
+:::

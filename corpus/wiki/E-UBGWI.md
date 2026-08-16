@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that for $A\subseteq X$, $\cl_X(A)$ is the smallest closed subset containing $A$.
+:::

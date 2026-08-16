@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $u(x,y)$ be harmonic and have continuous partial derivatives of order three in an open disc of radius $R>0$.
 
 a.
@@ -26,3 +28,4 @@ In parts:
 
 - Prove that $u(x,y)+i v(x,y)$ is an analytic function in this disc.
 - Prove that $v(x,y)$ is harmonic in this disc.
+:::

@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 (a) $f: D\rightarrow {\mathbb C}$ be a continuous function, where
 $D\subset {\mathbb C}$ is a domain.Let $\alpha:[a,b]\rightarrow D$
 be a smooth curve. Give a precise definition of the *complex line
@@ -27,4 +29,4 @@ $$\big | \int_{\alpha} f \big |\leq M \times \mbox{\textrm length}(\alpha).$$
 counterclockwise direction, where $R>1$. Provide an upper bound for
 $\big | \int_{C_R} \dfrac{\log{(z)} }{z^2} \big |,$ which depends
 [only]{.underline} on $R$ and other constants.
-
+:::

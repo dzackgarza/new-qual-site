@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Explain how the structure theorem for finitely-generated modules over a PID applies to a linear operator on a finite dimensional vector space.
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \frac {1}{\sin (x) + \cos (x)} ~dx = \color {blue}{\frac {1}{\sqrt {2}} (\ln (\tan (\frac {x}{2}) - 1 + \sqrt {2}) - \ln (\tan (\frac {x}{2}) - 1 - \sqrt {2}))} = \color {blue} {- \frac {1}{\sqrt {2}} \ln (\csc (x + \frac {\pi}{4}) - \cot (x + \frac {\pi}{4}))}$
 
 - **Solution:** $\frac {1}{\sin (x) + \cos (x)} ~dx = \frac {1}{\frac {2u}{1 + u^2} + \frac {1 - u^2}{1 + u^2}} \cdot  \frac {2}{1 + u^2} ~du = \frac {1 + u^2}{2u + 1 - u^2} \cdot  \frac {2}{1 + u^2} ~du = \frac {1}{\sqrt {2}} (\frac {1}{u + \sqrt {2} - 1} - \frac {1}{u - \sqrt {2} - 1}) ~du​$
@@ -44,3 +45,4 @@ review: draft
 3. $\displaystyle \int \frac {\sin (x)}{1-\sin(x)} ~dx = 2(- \frac {1}{\tan (\frac {x}{2}) - 1} - \tan ^{-1} (\tan (\frac {x}{2}))) = \color {blue} {- \frac {2}{\tan (\frac {x}{2}) - 1} - x} = \color {blue} {- \frac {2\sin(\frac {x}{2})}{\cos(\frac {x}{2}) -\sin(\frac {x}{2})} - x}$
 
 - **Solution:** $\frac {\sin(x)}{1 - \sin(x)} ~dx = \frac {\frac {2u}{1 + u^2}}{1 - \frac {2u}{1 + u^2}} \cdot \frac {2}{1 + u^2} ~du = \frac {2u}{1 + u^2 - 2u} \cdot \frac {2}{1 + u^2} ~du = 2(\frac {1}{(u - 1)^2} - \frac {1}{1 + u^2}) ~du$
+:::

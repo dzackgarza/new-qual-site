@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $G$ be a group of order 30.
 
 a. Show that $G$ has a subgroup of order 15.
@@ -24,3 +25,4 @@ c. Show that $G$ is isomorphic to some semidirect product $\ZZ_{15} \semidirect 
 
 d. Exhibit three nonisomorphic groups of order 30 and prove that they are not isomorphic.
 You are not required to use your answer to (c).
+:::

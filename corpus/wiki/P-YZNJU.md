@@ -13,8 +13,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Use de Moivre's theorem (i.e. $\left(e^{i \theta}\right)^{n}==\cos n \theta+i \sin n \theta$, or $\left.(\cos \theta+i \sin \theta)^{n}=\cos n \theta+i \sin n \theta\right)$ to find the sum
 
 $$
 \sin x+\sin 2 x+\cdots+\sin n x
 $$
+:::

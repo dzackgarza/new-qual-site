@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If you have an irreducible representation of a subgroup, is the induced representation of the whole group still irreducible?
+:::

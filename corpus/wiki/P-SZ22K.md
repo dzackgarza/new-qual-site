@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that all finite integral domains are fields.
+:::

@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a. 
 Show (without using 3.8.9 in the S&S) that
 \[
@@ -25,4 +27,4 @@ Show that this identity is equivalent to S&S 3.8.9:
 \[
 \int_0^1 \log(\sin(\pi x)) ~dx = -\log 2
 .\]
-
+:::

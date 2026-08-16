@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $X$ be the subspace of the unit cube $I^3$ consisting of the union of the 6 faces and the 4 internal diagonals.
 Compute $\pi_1(X)$.
 
 **Solution**:
+:::

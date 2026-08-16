@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Given a finite abelian group with at most n elements of order divisible by n, prove it's cyclic.
+:::

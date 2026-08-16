@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Define
 
 $$
@@ -30,4 +32,4 @@ $$
 \[
 E(z)=\sum_{n=0}^{\infty} \frac{z^{n}}{n !}
 .\]
-
+:::

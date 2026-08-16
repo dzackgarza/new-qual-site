@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $R$ be a ring with the following commutative diagram of $R\dash$modules, where each row represents a short exact sequence of $R\dash$modules:
 
 \begin{tikzcd}
@@ -22,3 +23,4 @@ Let $R$ be a ring with the following commutative diagram of $R\dash$modules, whe
 \end{tikzcd}
 
 Prove that if $\alpha$ and $\gamma$ are isomorphisms then $\beta$ is an isomorphism.
+:::

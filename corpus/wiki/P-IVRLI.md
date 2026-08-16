@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that $SL_2(Z)$ is not solvable.
+:::

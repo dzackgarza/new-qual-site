@@ -13,5 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
   - Give an example showing that this fails if $g$ is not bounded.
 - Show that if $f\in C^1$ then $f$ is equal to its Fourier *series*.
+:::

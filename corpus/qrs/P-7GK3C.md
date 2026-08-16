@@ -13,10 +13,12 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Prove that
 \[
 \max_{\abs z = 1} \abs{a_0 + a_1 z + \cdots + a_{n-1}z^{n-1} + z^n} \geq 1
 .\]
 
 > Hint: the first part of the problem asks for a statement of Rouche's theorem.
-
+:::

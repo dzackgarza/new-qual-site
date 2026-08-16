@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Classify finite fields, their subfields, and their field extensions.
 What are the automorphisms of a finite field?
+:::

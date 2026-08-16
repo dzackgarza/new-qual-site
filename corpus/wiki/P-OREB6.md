@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that a permutation is odd iff it has an odd number of even cycles.
+:::

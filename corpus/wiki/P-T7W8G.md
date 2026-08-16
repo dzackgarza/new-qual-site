@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose every element in $F$ admits a $p$th root in $F$, and suppose $f \in F[x]$ is an irreducible polynomial which is *not* separable, so it has a repeated root in $\overline F$.
 
 Supposing that $\gcd(f, f') = g(x)$ for any polynomial $g(x)$, this would imply that $g\divides f$.
@@ -63,3 +64,4 @@ from which it follows that $j \divides f$ in $F[x]$.
 But since $f$ was irreducible, this is a contradiction, and so $f$ could not have had a repeated root.
 Thus every irreducible polynomial is separable, which is what we wanted to show.
 $\qed$
+:::

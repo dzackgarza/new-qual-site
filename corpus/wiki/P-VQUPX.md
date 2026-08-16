@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Suppose $f$ is entire and has Taylor series $\sum a_n z^n$ about 0.
 
 a.
@@ -24,4 +26,4 @@ Apply (a) to show that the above Taylor series converges uniformly on every boun
 
 c.
 Determine those functions $f$ for which the above Taylor series converges uniformly on all of $\CC$.
-
+:::

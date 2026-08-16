@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $M$ and $N$ be finite CW complexes.
 
 a. Describe a cellular structure of $M \times N$ in terms of the cellular structures of $M$ and $N$.
 
 b. Show that the Euler characteristic of $M \times N$ is the product of the Euler characteristics of $M$ and $N$.
+:::

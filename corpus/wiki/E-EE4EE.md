@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - What is an interior point?
   An isolated point?
   A limit point?
+:::

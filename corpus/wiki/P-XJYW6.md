@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What can you say about the eigenspaces of two matrices that commute with each other?
+:::

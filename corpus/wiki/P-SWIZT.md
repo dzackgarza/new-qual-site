@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 When do conjugacy classes in $S_n$ split in $A_n$?
+:::

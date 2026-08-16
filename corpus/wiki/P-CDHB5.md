@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $A$ be an abelian group, and show $A$ is a $\ZZ\dash$module in a unique way.
+:::

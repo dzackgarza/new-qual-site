@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $K/F$ is a finite, normal, Galois extension.
+:::

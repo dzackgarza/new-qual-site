@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Show that
 \[
 \displaystyle \int_0^\infty \frac{x^{a-1}}{1+x^n} \dx 
@@ -21,3 +22,4 @@ Show that
 \]
 using complex analysis, $0 < a \leq n$.
 Here $n$ is a positive integer.
+:::

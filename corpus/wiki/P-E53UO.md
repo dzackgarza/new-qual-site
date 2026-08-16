@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 8. **Main Idea**: Show that both spaces are a deformation retract of the same space.
    (See Hatcher, Proposition 0.18, p. 25)
 
@@ -55,3 +56,4 @@ Formally, this would be given by $S^1 \times I \cup B^2 \cross \theset{p}$ for s
 Claim: choosing $p=0$ induces a deformation retract of $R$ onto $P$, and choosing $p=1$ induces a deformation retract of $R$ onto $Q$.
 
 Proof: ?
+:::

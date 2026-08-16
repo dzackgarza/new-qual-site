@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Let $O_P(G)$ be the intersection of all Sylow $p\dash$subgroups of $G$.
   Show that $O_p(G) \normal G$, is maximal among all normal $p\dash$subgroups of $G$
+:::

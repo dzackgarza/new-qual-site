@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that the Euler characteristic of a compact surface with boundary which has $k$ boundary components is less than or equal to $2 - k$.
+:::

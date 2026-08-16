@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the symmetry group of a tetrahedron?
 Cube?
 Icosahedron?
+:::

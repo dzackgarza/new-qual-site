@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc.
 
 a. 
@@ -24,3 +26,4 @@ Show that if $\abs{f(z)} = 1$ whenever $\abs{z} = 1$, then the image of $f$ cont
 
 b. 
 If $\abs{f(z)} \geq 1$ whenever $\abs{z} = 1$ and there exists a $z_0\in \DD$ such that $\abs{f(z_0)} < 1$, then the image of $f$ contains the unit disc.
+:::

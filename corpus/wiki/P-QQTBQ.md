@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove a finitely-generated torsion-free abelian group is free abelian.
+:::

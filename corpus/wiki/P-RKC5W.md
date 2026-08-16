@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $\Inn(G) \normal Aut(G)$
+:::

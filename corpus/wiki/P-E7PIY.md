@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 State the fundamental theorem of symmetric polynomials.
+:::

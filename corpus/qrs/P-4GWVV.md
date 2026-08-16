@@ -12,6 +12,9 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Find the conformal map that takes the upper half-plane comformally
 onto the half-strip $\{
 w=x+iy:\ -\pi/2<x<\pi/2\ y>0\}$.
+:::

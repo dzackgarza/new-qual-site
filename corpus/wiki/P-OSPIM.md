@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a. See \cref{equivalence_of_approximating_measures}
 
 b. Let $f_k$ be a sequence of extended real-valued Lebesgue measurable function.
@@ -25,5 +27,4 @@ b. Let $f_k$ be a sequence of extended real-valued Lebesgue measurable function.
 .\]
 
     ii. Carefully state Fatou's Lemma and deduce the Monotone Converge Theorem from it.
-
-
+:::

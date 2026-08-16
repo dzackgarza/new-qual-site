@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $R = \CC[x],~ M = \CC^2$, and
 $$
 A = 
@@ -84,3 +85,4 @@ It is then easy to see that $\CC^2$ is torsion as a module over $\CC[x]$, since 
 $$
 \forall~ \vector v\in \CC^2 \quad p(A) \actson \vector v = 0 \actson \vector v = 0.
 $$
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 How do you determine the number and sizes of the blocks for Jordan canonical form?
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - $\star$ Show that if $x$ is not a unit, then $x$ is contained in some maximal ideal.
+:::

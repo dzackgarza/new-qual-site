@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \frac {1}{e^x + e^{-x}} ~dx = \color{blue} {\tan ^{-1} e^x}​$
 
 - **Solution:** $u = e^x$, $du = e^x ~dx$
@@ -32,3 +33,4 @@ review: draft
 - **Another Solution:** $u = \sqrt {e^{2x} - 1}$, $x = \frac {1}{2} \ln (u^2 + 1)$, $dx = \frac {u}{u^2 + 1} ~du$
 
 - **Another Solution:** $\frac {1}{\sqrt {e^{2x}-1}} ~dx = \frac {1}{u} \cdot \frac {u ~du}{u^2 + 1} = \frac {1}{u^2 + 1} ~du$
+:::

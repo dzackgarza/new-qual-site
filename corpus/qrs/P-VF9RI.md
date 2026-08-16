@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $u(x,y)$ be harmonic and have continuous partial derivatives of
 order three in an open disc of radius $R>0$.
 
@@ -27,3 +29,4 @@ $$v(x,y) = \int_{a,b}^{x,y} ( -\frac{\partial u}{\partial y}dx +  \frac{\partial
 disc.
 
     (ii) Prove that $v(x,y)$ is harmonic in this disc.
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 4. Let $p: \tilde G \surjects G$ be such a covering, $a,b\in \tilde G$, we then want to show that $p(a)p(b) = p(a\star b)$ for some group operation $\star$ which we need to construct.
 
 Pick a basepoint $x\in G$ and any point $\tilde x \in p^{-1}(x)$.
@@ -26,3 +27,4 @@ Then by construction,
 
 $p(a\star b) = p(\tilde f(1)) = f(1) = (p\circ\alpha)(1)\cdot (p\circ\beta)(1) = p(a)p(b)$.
 (Need to show this is continuous, and doesn't depend on $\alpha,\beta$?)
+:::

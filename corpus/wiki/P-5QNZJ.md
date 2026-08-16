@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Let $f \in C_c^0(\RR^n)$, and show
 \[
 \lim _{t \to 0} \int_{\RR^n} |f(x+t) - f(x)| \, dx = 0
@@ -23,5 +25,4 @@ review: draft
 f\in L^1(\RR^n), \quad g\in L^\infty(\RR^n) \quad
 \implies f \ast g \text{ is bounded and uniformly continuous. }
 \]
-
-
+:::

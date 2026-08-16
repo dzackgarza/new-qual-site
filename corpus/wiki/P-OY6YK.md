@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \frac {x^2 + 2x + 1}{x\sqrt {x^2-1}}~dx = \color {blue} {2\ln(\sqrt {x^2-1}+x)+\sqrt {x^2-1}+\sec ^{-1} (x)}$
 
 - **Solution:** $\sec (u) = x$, $\tan (u) \sec (u) ~du = dx$
@@ -28,3 +29,4 @@ review: draft
 - **Solution:** $\frac {x+16}{\sqrt {x^2-4x+8}} ~dx = \frac {2 \tan (u) + 18}{2 \sec (u)} \cdot 2 \sec ^2 (u) ~du = 2 (\tan (u) \sec (u) + 9 \sec (u)) ~du$
 
 - **Used 2019**, *Unsolved*
+:::

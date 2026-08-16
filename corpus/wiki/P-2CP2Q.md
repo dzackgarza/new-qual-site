@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Compute the Galois group of $f(x) = x^3-3x -3\in \QQ[x]/\QQ$.
+:::

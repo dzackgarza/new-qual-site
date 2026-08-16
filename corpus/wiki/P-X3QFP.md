@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Classify the five groups of order 12.
+:::

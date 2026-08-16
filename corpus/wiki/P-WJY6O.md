@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $G$ nilpotent $\implies G$ solvable
+:::

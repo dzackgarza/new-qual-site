@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that if $\size G = n$, then $g^n = e$ for every $g\in G$
+:::

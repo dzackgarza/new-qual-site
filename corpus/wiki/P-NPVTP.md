@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that nilpotent groups have nontrivial centers.
+:::

@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $g\in L^\infty([0, 1])$.
 
 a. Prove
@@ -27,5 +29,4 @@ b. Prove that the map
 f &\mapsto \int_0^1 fg
 \]
   defines an element of $L^1([0, 1])\dual$ with $\norm{\Lambda_g}_{L^1([0, 1])\dual}= \norm{g}_{L^\infty([0, 1])}$.
-
-
+:::

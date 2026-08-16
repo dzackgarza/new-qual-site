@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 **Irreducible:** Let $a\in M$ be arbitrary; we can then consider the cyclic submodule $aR \normal M$.
 Since $M$ is irreducible, we must have $aR = 0$ or $aR = M$.
 If $aR = 0$ then $a$ must be $0$.
@@ -32,3 +33,4 @@ This means that if $M$ is indecomposable, we must have $M \cong R/(p^n)$ (with a
 Moreover, by the Chinese Remainder Theorem, $M$ can not be decomposed further.
 
 Thus all indecomposable module are of the form $R/(p^n)$ for some $n\geq 1$.
+:::

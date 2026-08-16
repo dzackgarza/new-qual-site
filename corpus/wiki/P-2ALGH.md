@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 3. $\displaystyle \int \ln ^2 (x) ~dx = \color{blue} {2 x - 2 x \ln (x) + x \ln ^2 (x)}​$
 
 - **Solution:** $u = \ln ^2 (x)​$, $v = x​$, $du = \frac {2 \ln (x)}{x} ~dx​$, $dv = dx​$
@@ -36,3 +37,4 @@ review: draft
    5. $\displaystyle \int xe^{-x} ~dx = \color {blue} {- (x + 1) e^ {-x}}$
 
    6. $\displaystyle \int_{0}^{\infty} x^3e^{-x^2} ~dx = \color {blue} {\frac {1}{2}}​$
+:::

@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Is the additive group of the reals isomorphic to the multiplicative group of the positive reals?
 Is the same result true with reals replaced by rationals?
+:::

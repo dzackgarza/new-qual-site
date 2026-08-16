@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Show that any disjoint intervals is countable.
+:::

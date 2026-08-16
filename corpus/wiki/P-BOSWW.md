@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that $A_n$ is normal in $S_n$.
+:::

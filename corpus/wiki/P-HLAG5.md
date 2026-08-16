@@ -12,5 +12,7 @@ classification:
 relations: []
 review: draft
 ---
-Let $f(z)=z+1 / z$. Describe the images of both the circle $|z|=r$ of radius $r(r \neq 0)$ and the ray $\arg z=\theta_{0}$ under $f$ in terms of well known curves.
 
+::: problem
+Let $f(z)=z+1 / z$. Describe the images of both the circle $|z|=r$ of radius $r(r \neq 0)$ and the ray $\arg z=\theta_{0}$ under $f$ in terms of well known curves.
+:::

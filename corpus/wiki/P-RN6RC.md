@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - If $\theset{\alpha_i}_{i=1}^n \subset F$ are algebraic over $K$, show that $K[\alpha_1, \cdots, \alpha_n] = K(\alpha_1, \cdots, \alpha_n)$.
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $X = S^1 \cross S^1$ and $A\subset X$ be a subspace with $A \cong S^1 \vee S^1$.
 Show that there is no retraction from $X$ to $A$.
 
@@ -30,3 +31,4 @@ This is a contradiction, because no such injection can exists.
 In particular, the commutator $[a,b]$ is nontrivial in the source.
 But $f(aba^{-1}b^{-1}) = f(a)f(b)f(a)^{-1}f(b)^{-1}$ since $f$ is a homomorphism, but since the target is a commutative group, this has to equal $f(a)f(a)^{-1} f(b)f(b)^{-1} = e$.
 So there is a non-trivial element in the kernel of $f$, and $f$ can not be injective - a contradiction.
+:::

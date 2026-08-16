@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Show that there exist no simple groups of order 148.
+:::

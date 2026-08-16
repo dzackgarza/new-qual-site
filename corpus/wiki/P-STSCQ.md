@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are all possible orders of elements of $\SL_2(Z)$?
+:::

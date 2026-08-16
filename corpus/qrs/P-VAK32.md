@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that a nilpotent operator is diagonalizable if and only if it is the zero operator.
+:::

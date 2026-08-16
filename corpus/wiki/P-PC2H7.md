@@ -12,6 +12,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 $\cos (x) + \cos (y) = 2 \cos (\frac {x + y}{2}) \cos (\frac {x - y}{2})​$
 
 $\cos (x) - \cos (y) = - 2 \sin (\frac {x + y}{2}) \sin (\frac {x - y}{2})​$
@@ -25,3 +26,4 @@ $\cos (x) \sin (y) = \frac {1}{2} (\sin (x + y) - \sin (x - y))$
 $\cos (x) \cos (y) = \frac {1}{2} (\cos (x + y) + \cos (x - y))$
 
 $\sin (x) \sin (y) = - \frac {1}{2} (\cos (x + y) - \cos (x - y))$
+:::

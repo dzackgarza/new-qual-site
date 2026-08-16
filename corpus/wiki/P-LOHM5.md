@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Let $p$ be a prime and $\abs{G} = p^3$.
   Prove that $G$ has a normal subgroup $N$ of order $p^2$.
 
@@ -24,3 +25,4 @@ review: draft
     - $\abs h = p$.
 
     > Hint: Sylow and semidirect products.
+:::

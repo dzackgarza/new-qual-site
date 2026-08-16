@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 6. **Main Idea**: Using a funky deformation retract.
    See Hatcher, PDF page 55, Example 1.23. Add picture!!
 
@@ -21,3 +22,4 @@ This can be done by moving points outside of $S^2$ towards the surface, and poin
 
 Then take a geodesic between the endpoints of the diameter on $S^2$, pick any point $p$ on the geodesic, and move both diameter points towards it.
 This yields $S^2 \vee S^1$ at the point $p$.
+:::

@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 15. Consider the polynomial $f=x^{3}-x+1$ in $\boldsymbol{F}_{3}[x]$.
     Prove that $f$ is irreducible.
     Calculate the degree of the splitting field of $f$ over $\boldsymbol{F}_{3}$ and the cardinality of the splitting field of $f$.
+:::

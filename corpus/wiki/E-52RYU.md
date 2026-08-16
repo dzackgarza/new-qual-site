@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 10. Let $F$ be the splitting field of $f \in K[x]$ over $K$.
     Prove that if $g \in K[x]$ is irreducible and has a root in $F$, then $g$ splits into linear factors over $F$.
+:::

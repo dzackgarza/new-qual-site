@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the Galois groups of irreducible cubics?
+:::

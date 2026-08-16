@@ -13,8 +13,9 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1.  
 Find an example of a metric space $X$ and a subset $E \subseteq X$
 such that $E$ is closed and bounded but not compact.
-
-
+:::

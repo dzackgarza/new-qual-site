@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Show that
 \[
 \int_{0}^{\infty} \sin \left(x^{2}\right) d x=\int_{0}^{\infty} \cos \left(x^{2}\right) d x=\frac{\sqrt{2 \pi}}{4}
@@ -22,3 +24,4 @@ Show that
 
 
 ![Image](../../assets/figures/2020-02-03-13%3A51.png)\
+:::

@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $\QQ$ is not finitely generated as a group.
+:::

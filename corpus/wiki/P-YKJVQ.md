@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that \( \gens{ 2, x }\normal \ZZ[x]  \) is not a principal ideal.
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - **Solution:** $x^3e^{-x^2} dx = \frac {1}{2} x^2 e^{-x^2} dx^2$
 
 - **Used 2019**
@@ -44,3 +45,4 @@ review: draft
   - **Used 2019**
 
 7. $\displaystyle \int e^x\cos(x) ~dx = \color {blue} {\frac {1}{2} e^x (\cos(x) +\sin(x))}$
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f \in L^1(\RR)$ and $g$ be a bounded measurable function on $\RR$.
 
 1. Show that the convolution $f\ast g$ is well-defined, bounded, and uniformly continuous on $\RR$.
@@ -22,3 +23,4 @@ Let $f \in L^1(\RR)$ and $g$ be a bounded measurable function on $\RR$.
 \[
 \frac{d}{d x}(f * g)=f *\left(\frac{d}{d x} g\right)
 \]
+:::

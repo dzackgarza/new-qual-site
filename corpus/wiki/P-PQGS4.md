@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $F_1, F_2$ be free, so they have bases $\mathcal B_1 = \theset{\vector b_{1, k}}, \mathcal B_2 = \theset{\vector b_{2, k}}$.
 Supposing that they have the invariant dimension property, we can assume that $\size\mathcal B_1 \definedas \rank F_1$ and similarly $\size\mathcal B_2 \definedas \rank F_2$.
 
@@ -41,3 +42,4 @@ x &= (0, 0) \\
 \]
 
 but since the $v_i$ were a basis of $F_1$ and the $w_j$ a basis of $F_2$, this forces $r_i = 0, w_j = 0$ for all $i, j$.
+:::

@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - Find a function that is differentiable but not continuously differentiable.
 - Prove the **uniform limit theorem**: a uniform limit of continuous function is continuous.
 - Show that the uniform limit of bounded functions is uniformly bounded.
@@ -28,4 +30,4 @@ review: draft
 
 - ![](../../assets/Workshops/Real%20Analysis/_attachments/Pasted%20image%2020210519152250.png)
 - ![](../../assets/Workshops/Real%20Analysis/_attachments/Pasted%20image%2020210519151915.png)
-
+:::

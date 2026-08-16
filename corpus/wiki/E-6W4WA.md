@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - What does it mean for $E\subseteq X$ to be a **dense** subspace?
+:::

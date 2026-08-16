@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Suppose $\phi\in L^1(\RR)$ with 
 \[  
 \int \phi(x) \, dx = \alpha
@@ -38,4 +40,4 @@ A_\delta f \to \alpha f \text{ in } L^1(\RR) \qtext{as} \delta\to 0^+
 \[  
 \lim_{y\to 0} \int_\RR \abs{f(x-y) - f(x)}\, dx = 0
 .\]
-
+:::

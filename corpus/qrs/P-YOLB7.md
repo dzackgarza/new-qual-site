@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove the Cayley-Hamilton theorem.
+:::

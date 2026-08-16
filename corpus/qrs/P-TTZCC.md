@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 The question provides some insight into Cauchy's theorem.
 Solve the problem without using the Cauchy theorem.
 
@@ -24,3 +25,4 @@ Solve the problem without using the Cauchy theorem.
 
 3. Show that if $|a|<r<|b|$, then $\displaystyle{\int_{\gamma}\frac{dz}{(z-a)(z-b)} dz=\frac{2\pi i}{a-b}}$.
    Here $\gamma$ denotes the circle centered at the origin, of radius $r$, with the positive orientation.
+:::

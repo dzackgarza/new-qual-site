@@ -14,7 +14,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Prove that the following series converges uniformly on the set $\theset{z \suchthat \Im(z) < \ln 2}$:
 \[
 \sum_{n=1}^\infty {\sin(nz) \over 2^n}
 .\]
+:::

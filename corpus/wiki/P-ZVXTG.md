@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What's the relation between the number of conjugacy classes in a finite group and the number of irreducible representations?
+:::

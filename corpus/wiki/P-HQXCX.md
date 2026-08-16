@@ -12,5 +12,7 @@ classification:
 relations: []
 review: draft
 ---
-Characterize positive integers $n$ such that $(1+i)^{n}=(1-i)^{n}$
 
+::: problem
+Characterize positive integers $n$ such that $(1+i)^{n}=(1-i)^{n}$
+:::

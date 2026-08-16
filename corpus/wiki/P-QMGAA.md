@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 How many monic irreducible polynomials over $\FF_p$ of prime degree $\ell$ are there?
 Justify your answer.
+:::

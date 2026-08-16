@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Given a skew-symmetric/skew-Hermitian matrix S, show that $U = (S + I)(S - I)-1$ is orthogonal/unitary.
 Then find an expression for $S$ in terms of $U$.
+:::

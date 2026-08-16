@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if a matrix is diagonalizable, its minimal polynomial is squarefree.
+:::

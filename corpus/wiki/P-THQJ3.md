@@ -13,8 +13,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $E \subseteq H$ a Hilbert space.
 
 a. Show that $E\perp \subseteq H$ is a closed subspace.
 
 b. Show that $(E^\perp)^\perp = \cl_H(E)$.
+:::

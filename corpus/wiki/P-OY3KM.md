@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Define “Noetherian ring”.
 give an example.
+:::

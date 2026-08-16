@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the Galois group of $x^7 - 1$ over the rationals?
+:::

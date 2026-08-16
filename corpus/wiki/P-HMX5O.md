@@ -12,5 +12,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give two definitions of "induced representation".
 Why are they equivalent?
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Facts used:
 
 - $H_*(T^2) = [\ZZ, \ZZ^2, \ZZ, 0\rightarrow]$
@@ -58,3 +59,4 @@ We then deduce:
 
 - $H_2(X) = H_3(X) = 0$ by examining the SES spanning lines 3 and 2: $$0 \injects H_3(X) \injects \ZZ \mapsvia{\cong_{\del_3}} \ZZ \surjects H_2(X) \surjects 0$$ Since $\del_3$ must be an isomorphism, this forces the edge terms to be zero.
   $\qed$
+:::

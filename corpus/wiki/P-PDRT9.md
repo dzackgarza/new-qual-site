@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Since proper subfields will correspond to intermediate extensions which will correspond to subgroups of the Galois group, this problem is reduced to counting the number of distinct subgroups of $\ZZ_{42}$.
 This is a cyclic group, so there is exactly one subgroup of order $d$ for each $d$ dividing 42. Since $42 = 2*3*7$, we have
 
@@ -28,3 +29,4 @@ This is a cyclic group, so there is exactly one subgroup of order $d$ for each $
 - A subgroup of order 14, corresponding to a field extension of degree 3,
 
 - A subgroup of order 21, corresponding to a field extension of degree 2.
+:::

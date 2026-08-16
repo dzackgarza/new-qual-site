@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Consider the function
 \[
 f(x) \da 
@@ -30,3 +32,4 @@ b. Show that there exists a $c>0$ such that for all $\abs{x} \leq 1/2$,
 Hf(x) \geq {c \over \abs{x} \log\qty{1\over \abs x} }
 .\]
 Conclude that $Hf$ is not locally integrable.
+:::

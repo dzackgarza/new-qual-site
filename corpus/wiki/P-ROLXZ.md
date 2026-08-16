@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 What can you say about the kernel of an irreducible representation?
 How about kernels of direct sums of irreducibles?
 What kind of functor is induction?
 Left or right exact?
+:::

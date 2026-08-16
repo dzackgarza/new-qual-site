@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - **Solution:** $\ln (x^2 - 1) = \ln (x + 1)(x - 1) = \ln (x + 1) + \ln (x - 1)​$
 
 2. $\displaystyle \int x^n \ln(x) ~dx =  \color{blue} { \frac {x^{n + 1}}{n + 1} (\ln (x) - \frac {1}{n + 1})}​$
@@ -44,3 +45,4 @@ review: draft
   - **Solution:** $u = \ln (x)$, $du = \frac {1}{x} ~dx$
 
   - THIS IS DIFFERENT FROM THE REST (u-sub)
+:::

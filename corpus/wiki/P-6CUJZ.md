@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - $Z(A_n) = 1$ for $n\geq 4$
+:::

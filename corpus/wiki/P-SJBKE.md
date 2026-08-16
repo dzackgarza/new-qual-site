@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is Frobenius reciprocity?
+:::

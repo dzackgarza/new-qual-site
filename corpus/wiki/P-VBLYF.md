@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the conjugacy classes in $\GL_2(\CC)$?
+:::

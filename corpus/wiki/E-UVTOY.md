@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 3. For a polynomial $f \in K[x]$, prove that if $r \in F$ is a root of $f$ then for any $\sigma \in \mathbf{A u t}_{K} F, \sigma(r)$ is also a root of $f$
+:::

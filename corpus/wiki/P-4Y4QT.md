@@ -13,8 +13,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $0<a<4$ and evaluate 
 \[
 \int_0^\infty \frac{x^{\alpha-1}}{1+x^3} ~dx
 \]
-
+:::

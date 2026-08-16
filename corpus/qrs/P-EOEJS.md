@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $N$ be a positive integer, and let $G$ be a finite group of order $N$.
 
 a. Let $\sym G$ be the set of all bijections from $G\to G$ viewed as a group under composition.
@@ -34,3 +35,4 @@ c. Suppose $N> 2$ and $n\equiv 2 \mod 4$.
 Prove that $G$ is not simple.
 
 > Hint: use part (b).
+:::

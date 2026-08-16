@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f: R \to R$ be an endomorphism of $R$ in the category of rings.
 We can then check that for any $r\in R$, we have $f(r) = f(r 1_R) = rf(1_R)$, which says that $f$ is given by right-multiplication by some fixed element $x_f \definedas f(1_R)$, i.e.
 \[
@@ -61,3 +62,4 @@ This is an endomorphism of $R$, and thus an element of $\hom_R(R, R)$.
 
 By the first isomorphism theorem for rings, we thus have $\hom_R(R, R) \cong R$.
 $\qed$
+:::

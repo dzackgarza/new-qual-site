@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 - Let $G_1, G_2$ be groups and $H_2 \leq G_2$ a subgroup.
   Suppose $\phi: G_1\to G_2$ is a group morphism.
   - Show that the image $\phi(G_1) \leq G_2$ is a subgroup of $G_2$
@@ -24,4 +26,4 @@ review: draft
   .\]
   - Prove the **first isomorphism theorem**: 
   $\phi$ is injective $\iff \ker \phi = \ts{ e_{G_1} }$.
-
+:::

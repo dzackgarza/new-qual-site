@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 (1) Show that the function $u=u(x,y)$ given by
     $$u(x,y)=\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx\quad \text{for}\ n\in {\mathbf N}$$
     is the solution on $D=\{(x,y)\ | x^2+y^2<1\}$ of the Cauchy problem for
@@ -21,4 +23,4 @@ review: draft
     u(x,0)=0,\quad \frac{\partial u}{\partial y}(x,0)=\frac{\sin nx}{n}.$$
 (2) Show that there exist points $(x,y)\in D$ such that
     $\displaystyle{\limsup_{n\to\infty} |u(x,y)|=\infty}$.
-
+:::

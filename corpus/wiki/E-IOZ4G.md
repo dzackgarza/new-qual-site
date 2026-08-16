@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that any space with the indiscrete topology is separable.
+:::

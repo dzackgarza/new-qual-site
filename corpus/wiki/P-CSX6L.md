@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Talk about conjugacy classes in the symmetric group $S_n$.
+:::

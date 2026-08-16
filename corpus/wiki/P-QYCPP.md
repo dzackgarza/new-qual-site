@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $G$ be the group of invertible $3\times 3$ matrices over $\FF_p$, for $p$ prime.
 What does basic group theory tell us about $G$?
 
@@ -22,3 +23,4 @@ Give a matrix form for the elements in this subgroup.
 
 Explain the conjugacy in terms of eigenvalues and eigenvectors.
 give a matrix form for the normaliser of the Sylow $p\dash$subgroup.
+:::

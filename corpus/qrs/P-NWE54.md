@@ -13,10 +13,12 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $x_0 = a, x_1 = b$, and set
 \[  
 x_n \definedas {x_{n-1} + x_{n-2} \over 2} \quad n\geq 2
 .\]
 
 Show that $\theset{x_n}$ is a Cauchy sequence and find its limit in terms of $a$ and $b$.
-
+:::

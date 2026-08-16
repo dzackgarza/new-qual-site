@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. We have $p_A(x) = (x+1)(x-1)(x) = x^3 - x$ and so by Cayley-Hamilton, $A^3 - A = 0 \implies A^3 = A$.
    $\qed$
+:::

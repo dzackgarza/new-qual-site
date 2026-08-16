@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the subgroups of \( \ZZ^2 \)?
+:::

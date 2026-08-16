@@ -13,5 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-- Show that every compact metrizable space has a countable basis.
 
+::: problem
+- Show that every compact metrizable space has a countable basis.
+:::

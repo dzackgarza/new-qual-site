@@ -13,4 +13,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 - Show that any holomorphic function $f$ can be uniformly approximated by polynomials.
+:::

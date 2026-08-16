@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 For topological spaces $X, Y$ the **mapping cone** $C(f )$ of a map $f : X \to Y$ is defined to be the quotient space 
 \[  
 (X \times [0, 1])\disjoint Y / \sim &\qtext{where}  \\ 
@@ -24,3 +26,4 @@ For topological spaces $X, Y$ the **mapping cone** $C(f )$ of a map $f : X \to Y
 Let $\phi_k : S^n \to S^n$ be a degree $k$ map for some integer $k$. 
 
 Find $H_i(C(\phi_k ))$ for all $i$.
+:::

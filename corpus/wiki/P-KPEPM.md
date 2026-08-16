@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Determine all pairs $n, p\in \ZZ^{\geq 1}$ such that $\SL_n(\FF_p)$ is solvable.
+:::

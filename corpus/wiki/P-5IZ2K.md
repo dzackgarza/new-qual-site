@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Find a non-symmetric polynomial whose square is symmetric.
+:::

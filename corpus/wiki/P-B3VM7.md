@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 a. State the **Lefschetz Fixed Point Theorem** for a finite simplicial complex $X$.
 
 b. Use degree theory to prove this theorem in case $X = S^n$.
+:::

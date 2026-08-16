@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 If $A,B$ are (skew)-symmetric, then $A^t = \pm A$ and $B^t = \pm B$ respectively.
 But then
 $$
@@ -20,3 +21,4 @@ $$
 $$
 
 which shows that $A+B$ is (skew)-symmetric.
+:::

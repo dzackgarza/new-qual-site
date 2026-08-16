@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \sin(x) \cos (\cos (x)) ~dx = \color{blue} {- \sin (\cos (x))}​$
 
 - **Solution:** $u = \cos (x)​$, $du = - \sin (x)~dx ​$
 
 - **Used 2018**
+:::

@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What's a Galois group that's not $S_n$ or $A_n$?
+:::

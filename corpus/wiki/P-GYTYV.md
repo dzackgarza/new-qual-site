@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $C_G(H) \subseteq N_G(H) \leq G$.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that the minimal uncountable order with the order topology is not separable.
+:::

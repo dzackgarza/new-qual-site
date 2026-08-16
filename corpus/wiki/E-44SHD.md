@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 2. Prove that if $A$ and $B$ are invertible matrices over a field $\boldsymbol{k}$, then $A+\lambda B$ is invertible for all but finitely many $\lambda \in \boldsymbol{k}$.
+:::

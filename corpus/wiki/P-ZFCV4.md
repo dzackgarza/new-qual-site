@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Tell me a condition on the Galois group which is implied by irreducibility of the polynomial.
 What happens when the polynomial has a root in the base field?
+:::

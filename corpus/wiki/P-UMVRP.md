@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What groups have nontrivial automorphisms?
+:::

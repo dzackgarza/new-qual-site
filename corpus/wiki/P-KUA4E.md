@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 We'll use the fact that $H \normal N(H)$ for any subgroup $H$ (following directly from the closure axioms for a subgroup), and thus 
 $$
 P \normal N(P) \quad \text{and}\quad N(P) \normal N^2(P).
@@ -32,4 +34,4 @@ Then $P' \definedas xPx\inv \in \mathrm{Syl}(p, N(P))$ as well, since all conjug
 
 But since $P \normal N(P)$, there is only *one* Sylow $p\dash$ subgroup of $N(P)$, namely $P$.
 This forces $P = P'$, i.e. $P = xPx\inv$, which says that $x \in N(P)$ as desired. $\qed$
-
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the conjugacy classes of $\SL_2(\RR)$?
+:::

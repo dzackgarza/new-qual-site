@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $A, B\subseteq \RR^n$ are connected and not disjoint.
 Prove that $A\union B$ is also connected.
+:::

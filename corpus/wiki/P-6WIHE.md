@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Draw the subgroup lattice for $S_3$.
+:::

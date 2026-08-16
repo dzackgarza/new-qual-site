@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Which groups of order 4 can be realised as a Galois group over $\QQ$?
+:::

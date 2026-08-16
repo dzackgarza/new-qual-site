@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Note that $8=2^3$ is a prime power $p^n$, so we can get this as a quotient of a polynomial algebra. In particular, since $p=2$, we'll want to look at $\FF_2[t]$, and we'll want to quotient it by a polynomial of degree $n=3$ that is irreducible in the base field $\FF_2$.
 
     We could use Rabin's test: $f$ is irreducible over $F$ iff
@@ -35,3 +37,4 @@ review: draft
   GF(8) = \frac{\FF_2[t]}{\generators{t^3+t+1}}. \qed
   $$
     **General Principle** Trinomials of the form $x^n + ax^{<n} + b$ with $a,b \in \FF_p$ are usually irreducible.
+:::

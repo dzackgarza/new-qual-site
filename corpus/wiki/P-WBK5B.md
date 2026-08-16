@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that for $n\neq 6$, $\Aut(S_n) = \Inn(S^n)$.
+:::

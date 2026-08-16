@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give an example of an Artinian ring.
+:::

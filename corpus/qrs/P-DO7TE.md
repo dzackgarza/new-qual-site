@@ -13,4 +13,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 - Show that $\sin(z)/z$ has no poles.
+:::

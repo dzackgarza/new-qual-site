@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - State the class equation.
   Can you derive this from orbit-stabilizer?
+:::

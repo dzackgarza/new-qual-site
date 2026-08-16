@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give a list without repetitions of all compact surfaces (orientable or non-orientable and with or without boundary) that have Euler characteristic negative one.
 
 Explain why there are no repetitions on your list.
+:::

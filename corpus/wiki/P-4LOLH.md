@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is a Noetherian ring?
 If I is an ideal in a Noetherian ring with a unit, what is the intersection of $I^n$ over all positive integers $n$?
+:::

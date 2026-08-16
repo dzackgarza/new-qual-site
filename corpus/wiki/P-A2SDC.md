@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that a subgroup of index two is normal.
+:::

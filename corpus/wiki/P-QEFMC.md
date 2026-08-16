@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Compute the Galois group of $x^n - 1 \in \QQ[x]$ as a function of $n$.
+:::

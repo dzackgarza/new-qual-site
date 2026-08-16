@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose you are given a finite Galois extension $K/\QQ$ by $f(x) \in \ZZ[x]$ such that $\deg(f ) = n$ and $\Gal(K/Q) = S_n$.
 What can you say about the roots?
+:::

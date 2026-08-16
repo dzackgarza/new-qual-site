@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Can you give me a polynomial whose Galois group is $\ZZ/3\ZZ$?
+:::

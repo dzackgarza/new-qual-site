@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give an interesting example of a non-normal subgroup.
 Is $\SO(2)$ normal inside $SL_2(R)$?
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Describe all the conjugacy classes of $3 \times 3$ matrices with rational entries which satisfy the equation \(A^4 - A^3 - A + 1 = 0\). Give a representative in each class.
+:::

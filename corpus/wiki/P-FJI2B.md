@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Classify finitely-generated modules over $\ZZ$, over PIDs, and over Dedekind rings.
+:::

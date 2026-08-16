@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that if $f: A\to B$ is a continuous map between metric spaces and $K\subset A$ is compact, then $\restrictionof{f}{K}$ is uniformly continuous.
 
 #### Exercise
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 3. $\Rightarrow$ Let $[\alpha] \in \pi_1(X\cross Y, (x_0, y_0))$ be an arbitrary loop in $X \cross Y$.
    Then $\alpha$ is equivalently a map $S^1 \into X \cross Y$.
    Considering $S^1$ to be a subset of $\RR^2$, we can parameterize $\alpha$ as $\alpha(z) = \alpha(x+iy) = (\alpha_x(x), \alpha_y(y))$ in components.
@@ -33,3 +34,4 @@ So this is actually a map $(a,b): S^1 \into X \cross Y$, or in other words, a lo
 Maps in both directions are continuous, since a vector function is continuous iff its component functions are continuous.
 
 This is well-defined, due to the fact that if $a \homotopic b$, then $p_X \circ a \homotopic p_X\circ b$, and $F = (f_x, f_y)$ is a homotopy iff its components functions are homotopies.
+:::

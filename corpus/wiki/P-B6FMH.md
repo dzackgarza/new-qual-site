@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 13. $\displaystyle \int_{0}^{1} \frac {1}{\sqrt {x(1-x)}} ~dx = 2 \sin ^{-1} (\sqrt {x}) |_{0}^{1} = \color {blue} {\pi}$
 
 - **Solution:** $u = \sqrt {x}$, $du = \frac {1}{2 \sqrt {x}} ~dx$
@@ -41,3 +42,4 @@ review: draft
 - **Solution:** $\frac {1}{x(x^2+1)} ~dx = \frac {1}{(\frac {1}{x^2} + 1)} \cdot \frac {1}{x^3} ~dx = - \frac {1}{2u} du$
 
 - **Used 2019**
+:::

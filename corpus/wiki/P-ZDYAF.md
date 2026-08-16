@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let
 \[
 M &= \{(w, x, y, z) \in \ZZ^4 \suchthat w + x + y + z \in 2\ZZ\} \\
@@ -40,4 +42,4 @@ d_1 u_1,~ d_2 u_2,~ d_3 u_3,~ d_4 u_4
 
 c.
 Use the previous part to describe $M/N$ as a direct sum of cyclic $\ZZ\dash$modules.
-
+:::

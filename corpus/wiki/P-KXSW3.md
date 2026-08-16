@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Let $G\leq H$ where $H$ is a finite $p\dash$group, and suppose $\phi: G\to H / [H, H]$ be defined by composing the inclusion $G\injects H$ with the natural quotient map $H \to H/[H, H]$.
 
   Prove that $G= H$ by induction on $\size H$ in the following way:
@@ -23,3 +24,4 @@ review: draft
   - Let $Z = Z(H)$ be the center of $H$.
     Using that $GZ = H$ by (1), show that $G \intersect Z \neq \emptyset$.
     Set $N \da G \intersect Z$ and apply (1) to conclude.
+:::

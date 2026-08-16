@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 By a theorem in class, this would force $\Gal(E/K)$ to be solvable, which would imply that $S_n$ is solvable -- but for $n\geq 5, S_n$ will not be solvable, a contradiction.
+:::

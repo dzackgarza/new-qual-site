@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a.
 What is the degree of the antipodal map on the $n$-sphere? 
 
@@ -23,4 +25,4 @@ Define a CW complex homeomorphic to the real projective $n\dash$space $\RP^n$.
 
 c.
 Let $\pi : \RP^n \to X$ be a covering map. Show that if $n$ is even, $\pi$ is a homeomorphism.
-
+:::

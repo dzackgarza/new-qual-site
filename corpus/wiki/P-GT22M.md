@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 We have $F \leq E \leq K$. Suppose that
 
 - $K / F$ is cyclic, so $\Gal(K / F)$ is a cyclic group,
@@ -32,3 +34,4 @@ b. $\Gal(E/F) \cong \Gal(K/F) / \Gal(K/E)$.
 Since $\Gal(K/F)$ is a cyclic group and every subgroup of a cyclic group is itself cyclic, (a) lets us conclude that (1) holds.
 
 Similarly, since $\Gal(K/F)$ is a cyclic group and every *quotient* of a cyclic group is cyclic, (b) lets us conclude (2).
+:::

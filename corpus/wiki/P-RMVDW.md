@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What does factorisation over $\QQ[x]$ say about factorisation over $\ZZ[x]$?
+:::

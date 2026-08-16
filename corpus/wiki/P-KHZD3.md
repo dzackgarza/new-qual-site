@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Is a ring of formal power series a UFD?
+:::

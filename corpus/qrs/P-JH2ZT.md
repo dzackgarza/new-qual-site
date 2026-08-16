@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that the minimal polynomial divides the characteristic polynomial.
+:::

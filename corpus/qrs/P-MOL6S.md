@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Denoting $D^n f \definedas \dd{^n f}{x^n}$ and noting that $D^1 D^n f = D^{n+1}f$, we have
   $$\begin{align*}
   D^0f &= xe^{2x} \\
@@ -30,4 +32,4 @@ review: draft
   =2^n e^{2x} + 2D^n f.
   $$
   $\qed$
-
+:::

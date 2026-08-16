@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $D$ is a domain and $f, g$ are analytic on $D$.
 
 Prove that if $fg = 0$ on $D$, then either $f \equiv 0$ or $g\equiv 0$ on $D$.
+:::

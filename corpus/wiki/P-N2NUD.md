@@ -11,6 +11,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 2. We need to show that $R$ is reflexive, transitive, and symmetric.
    1. Reflexive: this would say that $x\sim x \iff x^2-4x = x^2-4x$, which is true.
    2. Transitive: suppose $x\sim y$ and $y\sim z$, we want to show $x\sim z$. But we have
@@ -25,4 +27,4 @@ review: draft
    x^2-4x &= -4: &\theset{2} \\
    x^2-4x &=  5: &\theset{5}
    \end{align*}$$
-
+:::

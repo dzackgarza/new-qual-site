@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Show that if $f, g$ are continuous and compactly supported, then so is $f\ast g$.
+:::

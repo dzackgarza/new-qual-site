@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 To which operators does the spectral theorem for symmetric matrices generalise?
+:::

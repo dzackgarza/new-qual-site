@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Let $\vector w_i$ be the proposed new basis elements -- then $\theset{\vector w_i}$ will be a basis if it is linearly independent and spans $\RR^3$. Since there are already three vectors in this set, we only need to check that they are linearly independent.
   By definition, we have
   $$
@@ -50,4 +52,4 @@ review: draft
   $$
 
     and thus $\vector w_i$ will be linearly independent precisely if $A\vector c = \vector 0$ has only the trivial solution $\vector c = \vector 0$, which is precisely when $A$ has full rank, which happens iff $\det A \neq 0$. A quick calculation shows that $\det A = 3 \neq 0$, and so we are done. $\qed$
-
+:::

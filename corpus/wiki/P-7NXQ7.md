@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int_{1}^{2} \frac {1}{x\sqrt {x^2 -1}} dx = \color {blue} {\frac {\pi}{3}}$
 
 - **Solution:** $\sec ^{-1} (x) |_{1}^{2}$
+:::

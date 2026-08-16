@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $E \subset \RR$ be measurable with $m(E) < \infty$.
 Define
 \[
@@ -32,3 +33,4 @@ Show that
 \[
 \chi_{E \cap(E+x)}(y)=\chi_{E}(y) \chi_{E}(y-x)
 \]
+:::

@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Let $[G:H] = p$ be the smallest prime dividing the order of $G$.
   Show that $H$ must be normal in $G$.
+:::

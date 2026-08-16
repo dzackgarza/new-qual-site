@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Define a map
 
 \begin{align*}
@@ -26,3 +28,4 @@ It is also a homomorphism of $R\dash$modules, since $\phi(rx + y) = (rx + y) I_n
 
 
 Thus by the first isomorphism theorem, we have $Z(R) \cong Z(M_n(R))$.
+:::

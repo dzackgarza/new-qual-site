@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that any finite abelian group is isomorphic to the direct product of its Sylow subgroups
+:::

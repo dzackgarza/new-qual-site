@@ -15,7 +15,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 For $a> 0$, evaluate
 \[
 \int_0^{\pi/2} \frac{d\theta}{a + \sin^2 \theta}
 \]
+:::

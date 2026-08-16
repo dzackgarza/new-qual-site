@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 We prove a slightly stronger statement, namely:
 
 **Theorem:**
@@ -49,5 +51,4 @@ $$
 and so $\psi(x) = \phi(x)$ for every $x\in \ZZ$.
 But this precisely means that $\psi = \phi$ as ring homomorphisms.
 $\qed$
-
-
+:::

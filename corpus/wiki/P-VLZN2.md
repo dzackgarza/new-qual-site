@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if $f\in L^1$ then $\hat f$ is bounded and uniformly continuous.
 
 - Is it the case that $f\in L^1$ implies $\hat f\in L^1$?
@@ -31,3 +32,4 @@ review: draft
   - Give an example showing that this fails if $g$ is not bounded.
 
 - Show that if $f\in C^1$ then $f$ is equal to its Fourier *series*.
+:::

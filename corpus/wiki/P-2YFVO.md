@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if $f, g$ are continuous and compactly supported, then so is $f\ast g$.
 
 - Show that if $f\in L^1$ and $g$ is bounded, then  $f\ast g$ is bounded and uniformly continuous.
@@ -31,3 +32,4 @@ review: draft
   - $f\in L^1$ and $g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
 
 - Show that if $f\in L^1$ and $g'$ exists with $\dd{g}{x_i}$ all bounded, then $$\dd{}{x_i}(f\ast g) = f \ast \dd{g}{x_i}$$
+:::

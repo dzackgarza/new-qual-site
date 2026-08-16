@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a.
 Let $K$ denote the splitting field of $x^5 - 2$ over $\QQ$.
 Show that the Galois group of $K/\QQ$ is isomorphic to the group of invertible matrices
@@ -26,3 +28,4 @@ a & b \\
 
 b.
 Determine all intermediate fields between $K$ and $\QQ$ which are Galois over $\QQ$.
+:::

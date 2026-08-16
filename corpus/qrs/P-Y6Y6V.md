@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Does diagonalizable imply invertible?
   The converse?
+:::

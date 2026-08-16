@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give examples of simple groups.
 Are there infinitely many?
+:::

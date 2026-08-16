@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are all the matrices that commute with a given Jordan block?
+:::

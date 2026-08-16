@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Facts used:
 
 - Homotopy LES
@@ -47,3 +48,4 @@ where rows 3 and 4 force $\pi_3(E) \cong \ZZ$, rows 0 and 1 force $\pi_0(E) = \Z
 
 By Hurewicz, we thus have $H_3(E) = \pi_3(E) = \ZZ$.
 $\qed$
+:::

@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that $\left|z_{1}+z_{2}\right|^{2}+\left|z_{1}-z_{2}\right|^{2}=2\left(\left|z_{1}\right|^{2}+\left|z_{2}\right|^{2}\right)$ for any two complex numbers $z_{1}, z_{2}$, and explain the geometric meaning of this identity
+:::

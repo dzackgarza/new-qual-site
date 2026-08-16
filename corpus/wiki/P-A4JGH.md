@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Parts:
    1. Negating:
 $$\begin{align*}
@@ -33,4 +35,4 @@ In words: there is some $\varepsilon$ such that no matter what $N$ you choose, t
       In this case, $f(x) = 0$, so just need to show $\abs{f_n(x)} < \varepsilon$. To get $x^n < \varepsilon$, just take $n > \frac{\ln\varepsilon}{\ln x}$.
   Proof that $f_n$ does not converge uniformly:
      - Let $\varepsilon = \frac {1}{10}$ and $N$ be arbitrary, so $f_n(x) = x^N$. Then consider $x = \frac{9}{10}^{\frac 1 N}$, so $f_n(x) = \frac{9}{10}$, and we have $\abs{f_n(x)} = \frac 9 {10} \geq \frac 1 {10} = \varepsilon$. 
-
+:::

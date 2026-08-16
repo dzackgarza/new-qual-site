@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f\in L^1(\RR)$ and let \( \mathcal{U}\da \ts{(x, y) \in \RR^2 \st y > 0}  \) denote the upper half plane.
 For $(x, y) \in \mathcal{U}$ define 
 \[
@@ -35,3 +37,4 @@ b. Following the proof of the Lebesgue differentiation theorem, show that for $f
 \[
 u(x, y) \converges{y\to 0} \to f(x)
 .\]
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $N_G(H) / C_G(H) \cong A \leq Aut(H)$
+:::

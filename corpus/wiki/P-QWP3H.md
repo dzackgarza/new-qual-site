@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give a prime ideal in $\kk[x, y]$.
 Why is it prime?
 What is the variety it defines?
 What is the Nullstellensatz?
 Can you make some maximal ideals?
+:::

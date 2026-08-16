@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $S$ be the closed orientable surface of genus 2 and let $C$ be the commutator subgroup of $\pi_1 (S, \ast)$. Let $\tilde S$ be the cover corresponding to $C$. 
 Is the covering map $\tilde S \to S$ regular? 
 
@@ -22,3 +24,4 @@ Is the covering map $\tilde S \to S$ regular?
 What is the group of deck transformations?
 
 Give an example of a nontrivial element of $\pi_1 (S, \ast)$ which lifts to a trivial deck transformation.
+:::

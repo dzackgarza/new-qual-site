@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $Z(S_n) = 1$ for $n\geq 3$
+:::

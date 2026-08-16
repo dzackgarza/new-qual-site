@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Show that
 
   - $f_n: [a, b]\to \RR$ are continuously differentiable with derivatives $f_n'$
@@ -22,3 +23,4 @@ review: draft
   - There exists *at least one* point $x_0$ such that $\lim_n f_n(x_0)$ exists,
 
   - Then $f_n \to f$ uniformly to some differentiable $f$, and $f' = g$.
+:::

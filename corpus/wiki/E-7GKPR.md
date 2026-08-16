@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that if $X$ is a metric space and $A\subseteq X$ is compact then $A$ is bounded.
 
 #### Exercise
+:::

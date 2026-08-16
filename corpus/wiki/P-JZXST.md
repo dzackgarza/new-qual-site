@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 3. Draw CW square for $T$ and cut down the center to see two copies of $K$.
+:::

@@ -12,6 +12,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. Claim: this holds iff $f$ is injective iff $f$ has a left inverse.
 
    1. $\implies$: Suppose this holds, and let $x_1,x_2 \in X$.
@@ -27,3 +28,4 @@ review: draft
 
       Then $f(x) \definedas y \in f(S)$ since $x\in S$, but $f\inv (y) \in f\inv f(S)$ and so there is some $x'$ such that $f\inv (y) = x'$, where $x' \in f\inv(f(S))$.
       Since $x \in S-f\inv f(S)$ but $x' \in f\inv f (S)$, we have $x\neq x'$, and by definition we have $f(x) = y = f(x')$, we must conclude that $f$ is not injective.
+:::

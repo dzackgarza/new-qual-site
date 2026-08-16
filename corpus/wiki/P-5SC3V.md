@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Do you know a PID that's not Euclidean?
+:::

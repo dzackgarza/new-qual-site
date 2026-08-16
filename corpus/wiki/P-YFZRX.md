@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int x\sec ^{-1} (x) ~dx = \color {blue} {\frac {1}{2} (x^2 \sec ^{-1} (x) - \sqrt {x^2 - 1})}​$
 
 - **Solution:** $u = \sec ^{-1} (x)$, $v = \frac {1}{2} x^2$, $du = \frac {1}{x \sqrt {x^2-1}} ~dx$, $dv = x ~dx$
@@ -25,3 +26,4 @@ review: draft
 - **Solution:** $u = \csc ^{-1} (x)​$, $v = \frac {1}{2} x^2​$, $du = - \frac {1}{x \sqrt {x^2-1}} ~dx​$, $dv = x ~dx​$
 
 - **Solution:** $\frac {1}{2} x^2 \csc ^{-1} (x) - \int - \frac {1}{x \sqrt {x^2-1}} \cdot \frac {1}{2} x^2 ~dx​$
+:::

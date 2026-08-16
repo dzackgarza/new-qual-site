@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the possible images of the unit circle under a linear transformation of $\RR^2$?
+:::

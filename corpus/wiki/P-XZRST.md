@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Does $L_1$ have a natural multiplication with which it becomes an algebra?
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Compute the Galois group of $p(x) = x^7 - 3$.
+:::

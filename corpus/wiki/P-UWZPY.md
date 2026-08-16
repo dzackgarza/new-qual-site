@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If you have a representation of $H$, a subgroup of a group $G$, how can you induce a representation of $G$?
+:::

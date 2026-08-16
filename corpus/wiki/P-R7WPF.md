@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Do you know an example of a local ring?
 Another one?
 What about completions?
+:::

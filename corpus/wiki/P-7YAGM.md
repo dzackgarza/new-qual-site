@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Note that since $\zeta(\zeta+\zeta\inv) = \zeta^2 + 1$, we have the relation $\zeta^2  - (\zeta+\zeta\inv)\zeta + 1 = 0$.
 But then
 $$
@@ -31,3 +32,4 @@ This means that $g$ can not be linear and must have degree at least 2, but the a
 \]
 
 and so $m = \phi(n)/2$ as desired.
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - (**Important**) Show that if $H\leq G$ and $[G: H] = 2$ then $H$ is normal.
 
   > Index 2 implies partition into 2 left cosets: $H, gH$, or two right cosets $H, Hg'$ Note that $gH = G\sm H = Hg'$ Pick $x$, want to show that $xHx\inv = H$, so $xH = Hx$.
@@ -21,3 +22,4 @@ review: draft
   > Similarly $Hx \neq H \implies Hx = Hg'$, so $$xH = gH = G\sm H = Hg' = Hx$$
 
   - Suppose that the same result holds with 2 replaced by $p$ defined as the smallest prime factor of $\size G$
+:::

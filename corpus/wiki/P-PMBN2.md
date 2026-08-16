@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $L$ be the union of the $z$-axis and the unit circle in the $xy\dash$plane.
 Compute $\pi_1 (\RR^3 \backslash L, \ast)$.
+:::

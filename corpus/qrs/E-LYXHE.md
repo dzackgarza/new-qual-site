@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - If $f, g$ are compactly supported, is it necessarily the case that $f\ast g$ is compactly supported?
 
 - Show that under any of the following assumptions, $f\ast g$ vanishes at infinity:
@@ -22,3 +23,4 @@ review: draft
   - $f, g\in L^1$ with just $g$ bounded.
 
   - $f, g$ smooth and compactly supported (and in fact $f\ast g$ is smooth)
+:::

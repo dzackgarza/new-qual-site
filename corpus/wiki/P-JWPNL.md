@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Define a *simple group*. Prove that a group of order 56 can not be simple.
+:::

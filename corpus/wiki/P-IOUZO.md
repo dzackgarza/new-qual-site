@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 - Can every continuous function on $\bar \DD$ be uniformly approximated by polynomials in the variable $z$?
 
 > Hint: compare to Weierstrass for the real interval.
@@ -28,4 +30,4 @@ Prove that $f$ is a polynomial.
 ![[_attachments/Pasted image 20210527173005.png]]
 
 ![[_attachments/Pasted image 20210527173030.png]]
-
+:::

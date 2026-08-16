@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that symmetric matrices have real eigenvalues and can be diagonalised by orthogonal matrices.
+:::

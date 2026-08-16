@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - How many elements in $\Aut(\ZZ/20)$ have order 4?
+:::

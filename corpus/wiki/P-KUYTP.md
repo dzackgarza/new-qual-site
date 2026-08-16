@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Useful facts:
 - $ H_{k}(X\times Y) \cong \bigoplus _{{i+j=k}}H_{i}(X)\otimes H_{j}(Y) \bigoplus_{i+j=k-1}\tor(H_i(X), H_j(Y))$
 - $\tilde H_i(\Sigma X) = \tilde H_{i-1}(X)$
@@ -36,3 +38,4 @@ $$H_*(X) = [\ZZ, \ZZ\times \ZZ_3, \ZZ_3, \ZZ \times \ZZ_3, \ZZ^2 \times \ZZ_3, \
 and $$H^*(X)= [\ZZ, \ZZ, 0,\ZZ,\ZZ^2,0,0,\ZZ] \times [0, 0,\ZZ_3,\ZZ_3,\ZZ_3,\ZZ_3,\ZZ_3^2,0] \\ = [\ZZ, \ZZ, \ZZ_3,\ZZ\times \ZZ_3,\ZZ^2\times \ZZ_3,\ZZ_3,\ZZ_3^2,\ZZ].$$
 
 $\qed$
+:::

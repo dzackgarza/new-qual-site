@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $f:\RR\to\RR$ is continuous and $\lim_{x\to \pm \infty} f(x) = 0$.
 Prove that $f$ is uniformly continuous.
+:::

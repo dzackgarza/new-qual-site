@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Classify all groups of order $p^3$ for $p$ prime.
+:::

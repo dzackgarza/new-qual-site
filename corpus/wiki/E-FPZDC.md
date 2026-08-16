@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 -   Show that the gamma function is analytic in the half-plane $\Re (s)>0$, and is still given there by the integral formula above.
 
 -   Apply the formula in the previous question to show that
@@ -21,3 +23,4 @@ review: draft
 .$$
 
 > Hint: You may need $\displaystyle{\Gamma(1-s)=t \int_0^{\infty}e^{-vt}(vt)^{-s} dv}$ for $t>0$.
+:::

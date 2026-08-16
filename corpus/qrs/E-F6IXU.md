@@ -13,7 +13,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - $\star$: Prove continuity in $L^1$, i.e.
   \[
   f \in L^{1} \Longrightarrow \lim _{h \rightarrow 0} \int|f(x+h)-f(x)|=0
   .\]
+:::

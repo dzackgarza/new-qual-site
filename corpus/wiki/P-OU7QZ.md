@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Show that if $f$ is an irreducible quintic with precisely two non-real roots, then its Galois group is $S_5$.
+:::

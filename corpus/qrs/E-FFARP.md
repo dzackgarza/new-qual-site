@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Show that every compact set is closed and bounded.
+:::

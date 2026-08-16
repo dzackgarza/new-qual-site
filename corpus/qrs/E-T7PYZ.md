@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that $\RR$ with the cofinite topology is compact.
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 5. **Main Idea**: Deformation retract $M$ onto its center circle; two spaces that deformation retract onto a common space are themselves homotopy equivalent.
 
 Claim: $S^1 \cross I \homotopic S^1 \cross \theset{*}$ This is because $I$ is contractible, so $I \homotopic \theset{*}$.
@@ -37,3 +38,4 @@ Moreover, if $(x,y) \in U$, then $(x,y) = (\frac{1}{2}, y)$ and $F((x,y), t) = (
 This makes $F$ a deformation retract from $M$ onto $U$, and so $M \homotopic U$.
 
 But then, summarizing our results, we have $S^1 \cross I \homotopic S^1 \cross \theset{*} \cong S^1 \cross \theset{\frac{1}{2}} = U \homotopic M$, and so $S^1 \cross I \homotopic M$ as desired.
+:::

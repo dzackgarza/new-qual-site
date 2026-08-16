@@ -12,4 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Find all homotopy classes of maps from $S^1 \times \DD^2$ to itself such that every element of the homotopy class has a fixed point.
+:::

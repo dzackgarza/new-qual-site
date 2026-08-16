@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Say you have a field extension with only finitely many intermediate fields.
 Show that it is a simple extension.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 For a linear ODE with constant coefficients, how would you solve it using linear algebra?
+:::

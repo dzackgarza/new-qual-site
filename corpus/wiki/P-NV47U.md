@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $X$ be an arbitrary topological space, and compute $\pi_1(\Sigma X)$.
 
 **Solution**:
@@ -33,3 +34,4 @@ But $CX$ is contractible by the homotopy $H:CX \cross I \into CX$ where $H((c,s)
 So $\pi_1(U) = \pi_1(V) = 0​$.
 
 By Van Kampen, we have $\pi_1(X) = 0 \ast_{\pi_1(X)} 0 = 0.$
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \frac {x^3 + 4x^2}{x^2 + 4x + 3} ~dx = \color{blue} {\frac {1}{2} x^2 - \frac {9}{2} \ln (x + 3) + \frac {3}{2} \ln (x+1)}$
 
 - **Solution:** $\frac {x^3 + 4x^2}{x^2 + 4x + 3} = x - \frac {9}{2} \cdot \frac {1}{x + 3} + \frac {3}{2} \cdot \frac {1}{x + 1}$
@@ -44,3 +45,4 @@ review: draft
 7. $\displaystyle \int \frac {x^4 - 2x^3 - 8x^2 + 2x + 10 }{x^2 - 2x - 8} ~dx =  \color{blue} {\frac {1}{3} x^3 + 3 \ln (x - 4) - \ln (x + 2)}$
 
 - **Solution:** $\frac {x^4 - 2x^3 - 8x^2 + 2x + 10 }{x^2 - 2x - 8} = x^2 + 3 \cdot \frac {1}{x - 4} - \frac {1}{x + 2}$
+:::

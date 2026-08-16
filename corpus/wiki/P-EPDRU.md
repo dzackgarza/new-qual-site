@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $M$ be a finitely generated module over a PID $R$.
 
 a. $M_t$ be the set of torsion elements of $M$, and show that $M_t$ is a submodule of $M$.
@@ -21,3 +22,4 @@ a. $M_t$ be the set of torsion elements of $M$, and show that $M_t$ is a submodu
 b. Show that $M/M_t$ is torsion free.
 
 c. Prove that $M \cong M_t \oplus F$ where $F$ is a free module.
+:::

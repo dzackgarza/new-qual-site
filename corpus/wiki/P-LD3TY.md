@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Explain geometrically how you diagonalise a quadratic form.
+:::

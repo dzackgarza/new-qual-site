@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Show that continuity of measure from above/below holds for outer measures.
+:::

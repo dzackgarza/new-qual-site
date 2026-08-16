@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is an irreducible variety?
 Give an example of a non-irreducible one.
+:::

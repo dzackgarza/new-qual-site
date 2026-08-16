@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that the Quaternion group has only one element of order 2, namely $-1$.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Why is the character table a square?
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the group characters of the multiplicative group of a finite field?
+:::

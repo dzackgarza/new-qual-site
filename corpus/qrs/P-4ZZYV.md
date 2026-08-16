@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f$ be entire and suppose that $\lim_{z \rightarrow \infty} f(z) = \infty$.
 Show that $f$ is a polynomial.
+:::

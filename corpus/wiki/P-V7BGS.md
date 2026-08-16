@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that if $\size G$ is prime, then $G$ is cyclic
   > Assume there are two distinct generators and reach a contradiction.
+:::

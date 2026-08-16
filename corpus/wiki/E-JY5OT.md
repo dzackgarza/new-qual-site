@@ -13,9 +13,11 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Derive the reverse triangle inequality from the triangle inequality.
 
 - Let $E\subseteq \RR$.
   Define $\sup E$ and $\inf E$.
 
 - What is the **Archimedean** property?
+:::

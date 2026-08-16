@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Show that for $0 < p < q \leq \infty$, $\norm{a}_{\ell^q} \leq \norm{a}_{\ell^p}$ over $\CC$, where $\norm{a}_{\infty } \da \sup_j \abs{a_j}$.
+:::

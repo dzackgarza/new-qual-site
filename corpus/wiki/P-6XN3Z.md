@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $S^2 \to \RP^2$ be the universal covering map.
 
 Is this map null-homotopic?
 Give a proof of your answer.
+:::

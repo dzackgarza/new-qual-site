@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove the Hilbert basis theorem.
+:::

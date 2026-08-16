@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that any quadratic extension of a field $F$ with $\ch(F)\neq 2$ is Galois.
+:::

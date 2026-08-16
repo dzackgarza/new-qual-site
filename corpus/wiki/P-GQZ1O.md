@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $R$ is a domain, $M$ an $R\dash$module, and let
 $$
 T(M) = \theset{m \in M \suchthat rm = 0 \text{ for some $r\neq 0 \in R$}}.
@@ -40,3 +41,4 @@ a_m a_n (rm + n)
 
 where the commutativity of $r, a_n, a_m$ follows from the fact that these are all elements of $R$, which is a domain, and in particular is commutative.
 $\qed$
+:::

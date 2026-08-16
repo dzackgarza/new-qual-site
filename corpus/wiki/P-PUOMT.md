@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that in a $p$ group, every normal subgroup intersects the center nontrivially.
+:::

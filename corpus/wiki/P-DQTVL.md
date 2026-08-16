@@ -13,5 +13,7 @@ classification:
 relations: []
 review: draft
 ---
-Let $D$ be the region obtained by deleting the real interval $[0, 1)$ from $\DD$; find a conformal map from $D$ to $\DD$.
 
+::: problem
+Let $D$ be the region obtained by deleting the real interval $[0, 1)$ from $\DD$; find a conformal map from $D$ to $\DD$.
+:::

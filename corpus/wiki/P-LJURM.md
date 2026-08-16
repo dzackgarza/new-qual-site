@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give a polynomial with $S_3$ as its Galois group.
+:::

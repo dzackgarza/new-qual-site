@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Do polynomials in several variables form a PID?
+:::

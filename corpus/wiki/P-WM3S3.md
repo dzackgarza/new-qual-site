@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $A_n$ is simple for $n\geq 5$
+:::

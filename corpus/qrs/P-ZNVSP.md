@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $f: \HH\union \RR\to \CC$ satisfies the following:
 
 - $f(i) = i$
@@ -25,3 +26,4 @@ Suppose $f: \HH\union \RR\to \CC$ satisfies the following:
 - $f(z) \in \RR \iff z\in \RR$.
 
 Show that $f(\HH)$ is a dense subset of $\HH$.
+:::

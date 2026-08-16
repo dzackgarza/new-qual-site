@@ -12,4 +12,7 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - Show that $f=0$ a.e. iff $\int_E f = 0$ for every measurable set $E$.
+:::

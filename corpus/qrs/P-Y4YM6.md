@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that 
 
 - \( \norm{f_n}_2 \leq n^{-51 \over 100} \)  for all \( n\in \NN \),
@@ -26,5 +28,4 @@ Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that
 Prove that \( \sum_{n\in \NN} f_n \) converges in the Hilbert space \( L^2([0, 1]) \).
 
 > Hint: Plancherel's identity may be helpful.
-
-
+:::

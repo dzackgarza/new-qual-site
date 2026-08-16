@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f$ be differentiable on $[a, b]$.
 Say that $f$ is *uniformly differentiable* iff 
 
@@ -21,4 +23,4 @@ Say that $f$ is *uniformly differentiable* iff
 .\]
 
 Prove that $f$ is uniformly differentiable on $[a, b] \iff f'$ is continuous on $[a, b]$.
-
+:::

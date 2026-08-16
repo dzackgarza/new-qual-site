@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If the traces of all powers of a matrix A are 0, what can you say about A?
+:::

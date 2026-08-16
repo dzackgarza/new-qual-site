@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that for every $g\in G$, the order of $g$ divides the order of $G$.
+:::

@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f_n, f$ be analytic functions on the unit disk ${\mathbb D}$.
 Show that the following are equivalent.
 
@@ -21,4 +23,4 @@ $\mathbb D$.
 
 (ii) $\int_{|z|= r} |f_n(z) - f(z)| \, |dz|$ converges to $0$ if
 $0< r<1$.
-
+:::

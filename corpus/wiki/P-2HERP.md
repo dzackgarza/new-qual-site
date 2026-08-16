@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What can you say about the eigenvalues of a skew-symmetric matrix?
+:::

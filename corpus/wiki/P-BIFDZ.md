@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Find two groups $G\not\cong H$ where $\Aut G\cong \Aut H$.
+:::

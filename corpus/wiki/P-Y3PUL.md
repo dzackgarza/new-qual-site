@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Show that $\RP^2 \lor S^1$ is *not* homotopy equivalent to a compact surface (possibly with boundary).
+:::

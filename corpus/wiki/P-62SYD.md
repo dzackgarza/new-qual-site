@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Facts used:
 
 - $\pi_{\geq 2}(\tilde X) \cong \pi_{\geq 2}(X)$
@@ -22,3 +23,4 @@ Facts used:
 - $\RR^2 \surjects_p T^2 = S^1 \cross S^1$
 
 $\tilde X = \RR^2 \union_{\ZZ^2} S^2$, so $\pi_2(X) \cong \pi_2(\tilde X) = \prod_{i,j \in \ZZ^2} \ZZ = \ZZ^{\ZZ^2} = \ZZ^{\aleph_0}$.$\qed$
+:::

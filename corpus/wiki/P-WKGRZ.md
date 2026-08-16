@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose a $p\dash$group acts on a set whose cardinality is not divisible by $p$ ($p$ prime).
 Prove that there is a fixed point for the action.
+:::

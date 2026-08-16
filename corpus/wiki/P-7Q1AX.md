@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 **Lemma:** If $x \divides n$ and $x\divides m$ then $x\divides \gcd(m, n)$
 
 *Proof:* We have $x\divides km + \ell n$ for any integers $k, \ell$.
@@ -52,3 +53,4 @@ Then by the first isomorphism theorem, we have
 $$
 \frac{\ZZ}{\ker \phi} \cong \im \phi \implies \frac{\ZZ}{d\ZZ} \cong \ZZ_n[m].
 $$
+:::

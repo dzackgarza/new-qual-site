@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Prove that the continuous image of a connected set is connected.
+:::

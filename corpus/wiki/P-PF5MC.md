@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Calculate the Galois group of $x^5 - 2$.
+:::

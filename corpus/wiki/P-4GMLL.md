@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let
 \[
 A=\left(\begin{array}{ccc}
@@ -28,4 +30,4 @@ Find the Jordan canonical form $J$ of $A$.
 b.
 Find an invertible matrix $P$ such that $P\inv A P = J$.
 You do not need to compute $P\inv$.
-
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What's the stabiliser of a point in the unit disk under the group of conformal automorphisms?
+:::

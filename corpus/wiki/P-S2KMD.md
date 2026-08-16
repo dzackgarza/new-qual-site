@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if $N$ and $G/N$ are solvable, then $G$ is solvable.
+:::

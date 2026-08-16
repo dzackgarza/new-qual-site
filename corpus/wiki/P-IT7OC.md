@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 A subgroup $H$ of a group $G$ that meets every conjugacy class is in fact $G$.
 Why is that true?
+:::

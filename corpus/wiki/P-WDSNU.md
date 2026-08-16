@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What's the regular representation?
+:::

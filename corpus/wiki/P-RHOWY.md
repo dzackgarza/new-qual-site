@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Talk about solvability by radicals.
 Why is $S_5$ not solvable?
 Why is $A_5$ simple?
+:::

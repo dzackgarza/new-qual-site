@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Images and kernels of module homomorphisms are always submodules, so define
 \[
 \begin{align*}
@@ -29,3 +30,4 @@ This is a module homomorphism, and
 \ker \phi &\definedas \theset{a\in A \suchthat pA = 0} \definedas A[p]
 .\end{align*}
 \]
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $\tau \definedas (t_1, t_2)$ denote the transposition and $\sigma = (s_1, s_2 \cdots, s_p)$ denote the $p\dash$cycle, and let $S = \generators{\sigma, \tau}$.
 We would like to show that $S = S_p$, and since $S \subseteq S_p$ is clear, we just need to show that $S_p \subseteq S$.
 
@@ -62,3 +63,4 @@ $$
 so $\gamma \in J$.
 Then writing any arbitrary permutation as a product of disjoint cycles, we find that $S_p \subseteq J \subseteq S$, and so $S_p \subseteq S$ as desired.
 $\qed$
+:::

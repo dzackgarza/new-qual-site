@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $x = [\QQ(\zeta + \zeta\inv) : \QQ]$.
 
 Noting that
@@ -41,3 +42,4 @@ We thus have
 
 and so $x = \frac{\phi(n)}{2}$ as desired.
 $\qed$
+:::

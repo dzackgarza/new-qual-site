@@ -13,10 +13,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - $\star$: Show that if $X\subseteq \RR$ with $\mu(X) < \infty$ then
 \[  
 \norm{f}_p \converges{p\to\infty}\to \norm{f}_\infty
 .\]
-
-
-
+:::

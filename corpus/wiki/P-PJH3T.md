@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Here we examine
 
 $$
@@ -45,3 +46,4 @@ With all of this information, we finally have
 ```
 
 And so we find $H_*(\RP^2) = \ZZ \delta_0 + \ZZ_2\delta_1$
+:::

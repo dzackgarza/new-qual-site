@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 If you have a $\ZZ/5\ZZ$ action on a complex vector space, what does this action look like?
 What about an $S_3$ action?
 A dihedral group of any order?
+:::

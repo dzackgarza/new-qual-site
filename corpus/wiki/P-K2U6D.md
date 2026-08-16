@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - . Assume that $G$ is a group of order $231 = 3\times 7\times 11$.
   Show that $G$ contains a normal Sylow 7-subgroup and a central Sylow 11-subgroup.
+:::

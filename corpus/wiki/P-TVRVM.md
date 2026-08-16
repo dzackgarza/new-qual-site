@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 2. Base case: for $n=1$, we have $a_1 = 1 \leq a_2 = \frac{16} 3 \leq 10.$ Suppose this holds for $k < n$, then 
 $$
 a_{n-1} \leq a_n = \frac{a_{n-1}}{3} + 5 \implies 3a_{n-1} \leq a_{n-1} + 15 \implies a_{n-1} \leq \frac{15}{2}
@@ -61,4 +63,4 @@ $$
   a_{n+1} = \frac 1 3 a_n + 5 \implies \lim_{n\to\infty} a_{n+1} = \lim_{n\to\infty} \frac 1 3 a_n + 5 \\
   \implies L = \frac 1 3 L + 5 \implies \frac 2 3 L = 5 \implies L = \frac {15} 2
   $$
-
+:::

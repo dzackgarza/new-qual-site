@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What group-theoretic construct relates the stabiliser of two points?
+:::

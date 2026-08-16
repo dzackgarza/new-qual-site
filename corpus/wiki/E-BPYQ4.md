@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that $[0, 1]$ is compact.
 
 #### Exercise
+:::

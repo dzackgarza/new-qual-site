@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Suppose that $f$ is an analytic function in the region $D$ which
 contains the point $a$. Let
 $$F(z)= z-a-qf(z),\quad \text{where}\quad q \ \text{is a complex
@@ -34,4 +36,4 @@ i}\int_K \frac{G(z)}{F(z)} dz,}$ where $w$ is the zero from (1).\
 $\displaystyle{\frac{1}{F(z)}}$ can be represented as a convergent
 series with respect to $q$: $\displaystyle{
 \frac{1}{F(z)}=\sum_{n=0}^{\infty} \frac{(qf(z))^n}{(z-a)^{n+1}}.}$
-
+:::

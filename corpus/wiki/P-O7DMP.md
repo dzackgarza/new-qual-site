@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Define
 \[
 F(x) &\da \qty{ \sin(\pi x) \over \pi x}^2 \\
@@ -33,3 +35,4 @@ c. Give an example of a function $g\not \in L^1(\RR)$ which is the Fourier trans
 \[
 H(\xi) \da e^{2\pi i \xi} \int_0^1 y e^{2\pi i y \xi }\dy 
 .\]
+:::

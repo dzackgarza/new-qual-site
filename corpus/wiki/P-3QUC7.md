@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 2. **Main Idea** Homotopies on maps $S^1\into X$ are cylinders, find a way to continuously map a cylinder onto a disk given the existence of such a homotopy.
    Let $X$ be path connected, $\pi_1(X) = 0$, and let $f:S^1 \into X$ be arbitrary.
    Then $f(S^1) \subseteq X$ is a path in $X$, and since $\pi_1(X) = 0$, this path is homotopic to a point $x_0$.
@@ -43,3 +44,4 @@ Continuous as product of continuous functions, need to check injective/surjectiv
 Need to check injective/surjective, show that kernel is $S^1 \cross 1$, then use first isomorphism theorem.)
 
 But then $\hat H$ is exactly a continuous map from $D^2 \into X$, as desired.
+:::

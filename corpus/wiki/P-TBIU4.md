@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is a PID? What's an example of a UFD that is not a PID? Why?
 Is $k[x]$ a PID? Why?
+:::

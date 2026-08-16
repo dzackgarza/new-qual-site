@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $A = (a_{ij})$ and consider $\vector \epsilon_{ij}$, the matrix with a $1$ in the $i$th row and $j$th column and zeros elsewhere.
 
 Then, for a fixed $(i, j)$, if we write $A = [\vector a_1^t, \vector a_2^t, \cdots, \vector a_n^t]$ as a block matrix of column vectors, we have
@@ -77,3 +78,4 @@ the $n\times n$ zero matrix.
 But then by equating (for example) the $1,1$ entry of the matrix $(rs -sr) I_n$ with the corresponding entry in $0_n$, we find $rs - sr = 0_R$, which means $rs = sr \in R$.
 
 Now since $s\in R$ was arbitrary, we find that $r\in Z(R)$ as desired.
+:::

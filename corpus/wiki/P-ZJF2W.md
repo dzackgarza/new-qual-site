@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If we think of the Galois group of a polynomial as contained in $S_n$, when is it contained in $A_n$?
+:::

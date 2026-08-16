@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Prove that if \( E \subseteq \RR^n \) is a Lebesgue measurable set, then for any \( h \in \RR \) the set
 \[
 E+h \da \ts{x + h \st x\in E }
@@ -26,4 +28,4 @@ is a non-negative measurable function and
 \[
 \int f(x) \dx = \int f(x-h) \dx
 .\]
-
+:::

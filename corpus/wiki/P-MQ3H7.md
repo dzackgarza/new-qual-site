@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 For any matrix A over the complex numbers, can you solve $B^2 = A$?
+:::

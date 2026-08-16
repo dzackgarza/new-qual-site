@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Let $H, K \leq G$ a finite group, and without using the normalizers of $H$ or $K$, show that $\abs{HK} = \abs{H} \abs{K}/\abs{H\intersect K}$.
+:::

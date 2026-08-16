@@ -11,6 +11,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 \label{equivalence_of_approximating_measures}
 Let $E \subseteq \RR^n$ be bounded.
 Prove the following are equivalent: 
@@ -24,4 +26,4 @@ F \subseteq E \subseteq G && m(G\sm F) < \epsilon
 \[
 m(V\sm H) = 0
 .\]
-
+:::

@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 - If $\size  G = pq$, is $G$ necessarily nilpotent?
 
   > Hint: consider $Z(S_3)$.
+:::

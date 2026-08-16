@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Noting that applying a row operation to $A$ is the same as taking the product $E A$ for some elementary matrix $E$, we can write $A_1 = \left( \prod_{i=1}^\ell E_i \right) A$ and $B_1 = \left( \prod_{i=1}^\ell E_i \right) B$,
 
 thus
@@ -25,3 +26,4 @@ A \vector x &= \vector b \\
 \implies E_1 E_2 \cdots E_\ell A \vector x &= E_1 E_2 \cdots E_\ell A \vector b \\
 \implies A_1 \vector x &= B_1
 \end{align*}
+:::

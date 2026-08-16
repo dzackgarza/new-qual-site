@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - For each of the following group actions, identify what the orbits, stabilizers, and fixed points are.
   If possible, describe the kernel of each action, and its image in $\Sym(X)$.
 
@@ -24,3 +25,4 @@ review: draft
   - $G$ acting on its set of subgroups $X:=\ts{H\st H\leq G}$ by conjugation: $$g\cdot H := gHg\inv$$
 
   - For a fixed subgroup $H\leq G$, $G$ acting on the set of cosets $X := G/H$ by left-translation: $$g\cdot xH := (gx)H$$
+:::

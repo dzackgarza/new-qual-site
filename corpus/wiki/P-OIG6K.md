@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 If an irreducible cubic polynomial has Galois group NOT contained in A3, does it necessarily have to be all of $S_3$?
+:::

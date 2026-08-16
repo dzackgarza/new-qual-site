@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 State the structure theorem for semisimple Artinian rings.
+:::

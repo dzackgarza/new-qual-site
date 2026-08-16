@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Which numbers are constructible?
 Give an example of a non-constructible number whose degree is nevertheless a power of 2.
+:::

@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. Definitions:
   - $f: \RR^2 \to \RR, \quad (x,y) \mapsto z = f(x,y)$
   - Level curves are given by $f(x, y) = c$; 
@@ -40,4 +42,4 @@ review: draft
     \dd{g}{t}(t_0) =  \inner{\nabla f(\gamma(t_0))}{\dd{\gamma}{t}(t_0)} = \inner{\nabla f(\vector p)}{\gamma'(t_0)}
     $$
     but by the previous statement, $\dd{g}{t}(t_0) = 0$, which exacty says that the gradient of $f$ is orthogonal to $\gamma$ at $\vector p$. But $\vector p$ was an arbitrary point on the level surface, and $\gamma$ was an arbitrary curve through it. So $\nabla f$ is orthogonal to *every* level curve through $\vector p$, and this orthogonal to the tangent plane at $\vector p$, and thus normal to the surface at $\vector p$. Since $\vector p$ was an arbitrary point on the level curve, this holds everywhere on the level curve, and for arbitrary level curves. Thus $\nabla f$ is orthogonal to every level curve. $\qed$
-
+:::

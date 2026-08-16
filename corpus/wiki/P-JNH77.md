@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Can you prove the fundamental theorem of algebra using Galois theory?
 What do you need from analysis to do so?
+:::

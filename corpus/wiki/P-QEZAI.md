@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $Z(G) \subseteq C_G(H) \subseteq N_G(H)$.
+:::

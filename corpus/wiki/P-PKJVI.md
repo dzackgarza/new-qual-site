@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that a group of order $pq$ where $p > q$.
   Show that $G$ has a nontrivial proper normal subgroup,
+:::

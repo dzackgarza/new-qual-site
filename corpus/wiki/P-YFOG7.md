@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 The splitting field of this polynomial is $\QQ(\sqrt[3]2, \sqrt 3, \zeta_3)$ where $\zeta_3$ is a primitive third root of unity.
 
 To get the degree of this extension, we extend fields in the indicated order.
@@ -57,3 +58,4 @@ which, up to conjugacy, fix the following intermediate field extensions (Figure 
 ![Intermediate Field Extensions up to Conjugacy](../../assets/10_Algebra/500_Exercises/PSets/PSet%206/figures/2019-10-24-12%3A12.png)\
 
 $\qed$
+:::

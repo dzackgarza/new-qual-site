@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the symmetric polynomials?
+:::

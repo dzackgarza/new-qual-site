@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 Group representations: What's special about using $\CC$ in the definition of group algebra?
 
 Is it possible to work over other fields?
 
 What goes wrong if the characteristic of the field divides the order of the group?
+:::

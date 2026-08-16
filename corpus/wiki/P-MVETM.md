@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose all irreducible polynomials in $F[x]$ are separable.
 Then let $a\in K$ be arbitrary, we will show that there exists some $\beta \in K$ such that $\beta^p = a$.
 
@@ -53,3 +54,4 @@ $$
 where since $\beta^\ell, \beta^p \in F$, the entire RHS is in $F$, and thus the LHS $\beta\in F$ as well.
 
 But then $\alpha = \beta^p$ where $\beta \in F$, which is exactly what we wanted to show.
+:::

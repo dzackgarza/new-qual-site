@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What are the subgroups of the free group $F_2$?
 How many generators can you have?
 
@@ -24,3 +25,4 @@ Countably many generators?
 Is the subgroup with 4 generators you found normal?
 Why?
 Can you find a normal one?
+:::

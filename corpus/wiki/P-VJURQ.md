@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 How do you construct a polynomial over $\QQ$ whose Galois group is $S_n$?
 Do it for $n = 7$ in particular.
+:::

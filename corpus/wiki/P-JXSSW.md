@@ -15,10 +15,12 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 For the following functions, find the Laurent series about $0$ and classify their singularities there:
 \[
 {\sin^2(z) \over z} \\
 z \exp{1\over z^2} \\
 {1 \over z(4-z)}
 .\]
-
+:::

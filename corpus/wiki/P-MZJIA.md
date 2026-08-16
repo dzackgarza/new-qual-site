@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $C_G(H) \normal N_G(H)$ is a normal subgroup.
+:::

@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $\bar B(a, r)$ denote the closed disc of radius $r$ about $a\in \CC$.
 Let $f$ be holomorphic on an open set containing $\bar B(a, r)$ and let 
 \[  
@@ -22,4 +24,4 @@ Prove that
 \[  
 z\in \bar B\qty{a, {r\over 2}},\,z\neq a, \qquad {\abs{ f(z) - f(a)} \over \abs{z-a}} \leq {2M \over r}
 .\]
-
+:::

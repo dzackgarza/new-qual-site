@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Since all eigenvalues are roots of the minimal polynomial and complex roots occur in conjugate pairs, we must have
 $$
 \spec(L) = \theset{0, 1 \pm i, 1\pm 2i}.
@@ -27,3 +28,4 @@ Since the minimal polynomial $p_L(x)$ must divide the characteristic polynomial 
 $$
 p_L(x) = \chi_L(x).
 $$
+:::

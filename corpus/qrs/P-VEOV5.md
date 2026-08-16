@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:
 
 a. Prove that if $f$ is an entire function that satisfies
@@ -31,3 +32,4 @@ Prove that there exists a point $z\in S^1$ such that the product of the distance
 Conclude that there exists a point $w\in S^1$ such that the product of the above distances is *exactly* 1.
 
 d. Show that if the real part of an entire function is bounded, then $f$ is constant.
+:::

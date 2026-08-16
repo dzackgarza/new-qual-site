@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
+::: problem
 Is $\QQ(\sqrt[3]{21})$ normal?
 What is its splitting field?
 What is its Galois group?
 Draw the lattice of subfields.
+:::

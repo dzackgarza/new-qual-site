@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Use cellular homology to calculate the homology groups of $S^n \times S^m$.
+:::

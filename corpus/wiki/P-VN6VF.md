@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Give an example of a UFD which is not a Euclidean domain.
+:::

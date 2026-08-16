@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What's the Galois group of $x^2 + 1$ over Q? What's the integral closure of $\ZZ$ in $\QQ(i)$?
+:::

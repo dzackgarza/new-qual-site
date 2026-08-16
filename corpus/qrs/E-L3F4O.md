@@ -13,5 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: exercise
 - Show that that Cantor middle-thirds set is compact, totally disconnected, and perfect, with outer measure zero.
 - Prove the Borel-Cantelli lemma.
+:::

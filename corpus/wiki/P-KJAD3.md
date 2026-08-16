@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is a Lie group?
 Define a unitary representation.
 What is the Peter–Weyl theorem?
@@ -26,3 +27,4 @@ When is a representation of $\ZZ$ completely reducible?
 Why?
 
 Which are the indecomposable modules?
+:::

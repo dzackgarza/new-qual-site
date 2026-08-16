@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Facts used:
 
 - Construction of Moore Spaces
@@ -27,3 +28,4 @@ $$
 $$
 
 where $\deg \Phi_2 = 4$.$\qed$
+:::

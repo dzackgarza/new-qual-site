@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a.
 Classify the abelian groups of order 36.
 
@@ -27,4 +29,4 @@ Show that if $G$ has a normal subgroup $N$ such that $G/N$ is isomorphic to $A_4
 
 d.
 Show that the dihedral group of order 36 is a non-abelian group of order 36 whose Sylow-2 subgroup is not normal.
-
+:::

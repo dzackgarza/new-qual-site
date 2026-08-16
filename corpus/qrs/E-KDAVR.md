@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that if $X$ is compact and $A\subseteq X$ is closed then $A$ is compact.
+:::

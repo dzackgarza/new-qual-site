@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Prove that $z^4 + 2 z^3 - 2z + 10 =0$ has exactly one root in each
 open quadrant.
-
+:::

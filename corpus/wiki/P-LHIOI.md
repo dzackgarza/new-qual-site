@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Since $(r, s) = (1)$, we can find $t_1, t_2 \in R$ such that
 \[
 \begin{align*}
@@ -45,3 +46,4 @@ x &= (t_1 r + t_2 s)x \\
 
 So $x = 0$ and thus $A[s] = 0$.
 $\qed$
+:::

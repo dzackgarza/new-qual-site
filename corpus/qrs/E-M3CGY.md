@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Show that every open $U \subseteq \RR^n$ is a countable union of *almost* disjoint closed cubes.
+:::

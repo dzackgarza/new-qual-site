@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - **Solution:** $u_1 = \cos (x)​$, $v_1 = e^x​$, $du_1 = - \sin (x) ~dx​$, $dv_1 = e^x ~dx​$
 
 - **Solution:** $ u_2 = \sin (x)$, $v_2 = e^x$, $du_2 = \cos (x) ~dx$, $dv_2 = e^x ~dx$
@@ -27,3 +28,4 @@ review: draft
 - **Solution:** $u_2 = \cos (\ln (x))$, $v_2 = x$, $du_2 = \frac {- \sin (\ln (x))}{x}$, $dv_2 = dx$
 
 - **Solution:** $x \sin (\ln (x)) - \int \frac {\cos (\ln (x))}{x} \cdot x ~dx = x \sin (\ln (x)) - (x \cos (\ln (x)) - \int \frac {- \sin (\ln (x))}{x} \cdot x ~dx)​$
+:::

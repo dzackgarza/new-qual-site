@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 When do the powers of a matrix tend to zero?
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Let $I \normal R$, then since $R$ is a PID we have $I = (b)$ for some $b\in R$.
 We can write $(b) = Rb$; if $a\in I$ is an irreducible element, we'd like to show that $Rb = Ra$.
 
@@ -27,3 +28,4 @@ But then $x\in Rb \implies x = r'b = r'r\inv a \in Ra$, so $Rb \subseteq Ra$ and
 
 Otherwise, if $b$ is a unit, $a = rb \implies Ra = R$.
 But any ideal containing a unit is the entire ring, so $Rb = (b) = R$ as well, so again $Ra = I$.
+:::

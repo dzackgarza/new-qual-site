@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $G$ is solvable iff its derived series terminates.
+:::

@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $0 < \lambda < 1$ and construct a Cantor set $C_\lambda$ by successively removing middle intervals of length $\lambda$.
 
 Prove that $m(C_\lambda) = 0$.
+:::

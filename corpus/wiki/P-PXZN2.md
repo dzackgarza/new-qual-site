@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Which finite groups are Galois groups for some field extension?
+:::

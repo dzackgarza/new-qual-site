@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 To see that $\ZZ_m$ is a $\ZZ_{mk}$ module, we define an action
 
 \[
@@ -117,3 +118,4 @@ which makes sense and is well-defined because $\ZZ_m \injects \ZZ_{mk}$, and the
 
 So we have the desired bijection.
 $\qed$
+:::

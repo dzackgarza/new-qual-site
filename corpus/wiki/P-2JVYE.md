@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 State/prove/explain Schur's lemma.
+:::

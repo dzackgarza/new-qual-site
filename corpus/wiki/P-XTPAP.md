@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 7. **Main Idea**: Nothing to it.
    Homotopy:
 
@@ -148,3 +149,4 @@ Homeomorphisms: ignore ligatures!!
 7. $\theset{P, Q, S^1 \vee [0,1]}$ Both contain a nontrivial loop.
 
 8. $\theset{X, \bigvee_{i=1}^4 [0,1]}$ Can remove **one** point to separate into **four** components.
+:::

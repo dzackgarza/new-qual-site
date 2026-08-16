@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose you have a finite p-group, and you have a representation of this group on a finite-dimensional vector space over a finite field of characteristic p. What can you say about it?
+:::

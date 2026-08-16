@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 For each prime p, give a polynomial of degree p that is irreducible over \( \FF_p \). You can do it in a “uniform” way.
+:::

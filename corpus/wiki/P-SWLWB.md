@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Compute the following integrals.
 
 (i) $\displaystyle \int_0^\infty \frac{1}{(1 + x^n)^2} \, dx$, $n \geq 1$
@@ -30,3 +31,4 @@ Compute the following integrals.
 (vi) $\displaystyle \int_{- \infty}^{\infty} \frac{\sin \pi a}{\cosh \pi x + \cos \pi a} e^{- i x \xi} \, d x$, $0< a <1$, $\xi \in \mathbb R$
 
 (vii) $\displaystyle \int_{|z| = 1} \cot^2 z \, dz$.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Are there separable polynomials of any degree over any field?
+:::

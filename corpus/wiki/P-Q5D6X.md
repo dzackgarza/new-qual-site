@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the number of invertible matrices over $\ZZ/p\ZZ$?
+:::

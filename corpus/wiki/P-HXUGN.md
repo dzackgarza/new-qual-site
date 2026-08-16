@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the relation between Euclidean domains and PIDs?
+:::

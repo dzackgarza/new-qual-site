@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Is normality transitive?
 That is, is a normal subgroup of a normal subgroup normal in the biggest group?
+:::

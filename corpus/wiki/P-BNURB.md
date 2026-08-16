@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Compute the homology of the Klein bottle using the Mayer-Vietoris sequence and a decomposition $K = M \disjoint_f M$
+:::

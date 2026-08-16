@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 > Note: Let $X\dual \definedas \hom_R(X, R)$ denote the dual.
 
 We have maps
@@ -74,3 +75,4 @@ We then have
 \]
 
 which shows that these actions agree, and thus the diagram commutes.
+:::

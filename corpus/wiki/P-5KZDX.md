@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Definition: A field $F$ is *perfect* if every irreducible polynomial $f(x) \in F[x]$ is separable in $\overline{F}[x]$.
 
 Note that since $F$ is a finite field, $p$ must be a prime.
+:::

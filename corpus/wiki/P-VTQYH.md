@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that an irreducible $\pi(x)\in \FF_p[x]$ divides $x^{p^n}-x \iff \deg \pi(x)$ divides $n$.
+:::

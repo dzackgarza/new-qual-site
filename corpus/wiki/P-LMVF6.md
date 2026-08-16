@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that any finite tree is contractible, where a **tree** is a connected graph that contains no closed edge paths.
+:::

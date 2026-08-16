@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that the cokernel of $A\in \mat(n\times n, \ZZ)$ is finite $\iff \det A \neq 0$, and show that in this case $\abs{\coker(A)} = \abs{\det(A)}$.
+:::

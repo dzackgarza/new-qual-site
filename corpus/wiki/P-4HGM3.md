@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Classify all groups of order 8.
+:::

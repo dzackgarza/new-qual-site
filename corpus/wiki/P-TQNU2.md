@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f(x) \in \QQ[x]$ be a polynomial and $K$ be a splitting field of $f$ over $\QQ$.
 Assume that $[K:\QQ] = 1225$ and show that $f(x)$ is solvable by radicals.
+:::

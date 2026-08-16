@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Compute the homology of the one-point union of $S^1 \times S^1$ and $S^1$.
+:::

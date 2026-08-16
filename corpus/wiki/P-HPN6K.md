@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - $\ZZ$
 
 - $\ts{1}$
@@ -27,3 +28,4 @@ review: draft
 - Prove that $\RR^n$ is not homeomorphic to $\RR$ for any $n\geq 2$.
 
 - Is it true that the closure of a product is the product of the closures?
+:::

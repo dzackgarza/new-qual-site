@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Suppose $f:\DD\to\DD$ is analytic, has a single zero of order $k$ at $z=0$, and satsifies $\lim_{\abs z \to 1} \abs{f(z)} = 1$.
 Give with proof a formula for $f(z)$.
+:::

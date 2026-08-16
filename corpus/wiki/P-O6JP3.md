@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove that if $R$ is an integral domain, then $R[t]$ is again an integral domain.
+:::

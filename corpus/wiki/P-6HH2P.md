@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $M$ is orientable if $\pi_1(M)$ has no subgroup of index 2.
+:::

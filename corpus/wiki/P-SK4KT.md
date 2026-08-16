@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 3. 
    1. Since $A$ is $2\times 2$ and has 2 eigenvalues, noting that $\deg \chi_A(x) = 2$, we have $\chi_A(x) = (x-1)(x+1) = x^2 -1$. The minimal polynomial of $A$ divides $\chi_A(x)$, so we have $\chi_A(A) = 0$ and thus $A^2 - I_2 = 0 \implies A^2 = I_2$.
 
@@ -31,4 +33,4 @@ review: draft
    $$
    1. Every symmetric matrix with $A$ real spectrum admits a real eigendecomposition $\Lambda D \Lambda^T$, where $D$ is diagonal with entries the eigenvalues of $A$ and $\Lambda$ are orthogonal (which are also invertible). Here, we only need the fact that $A$ is diagonalizable by invertible matrices. In our case we have $[D^2]_{ii} = (\pm 1)^2 = 1$ so $D^2 = I_n$. Thus we have 
    $$A^2 = (\Lambda D \Lambda\inv)^2 = \Lambda D^2 \Lambda\inv = \Lambda I_n \Lambda\inv = I_n. \qed$$ 
-
+:::

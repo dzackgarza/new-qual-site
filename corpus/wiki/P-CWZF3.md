@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 We want to show that if $(p) \normal R$ is a prime ideal then $R/(p)$ is a field, so we'll proceed by letting $x + (p) \in R/(p)$ be arbitrary where $x\not \in (p)$ and producing a multiplicative inverse.
 
 Since $R$ is a principal ideal domain, prime ideals are maximal, so $(p)$ is maximal.
@@ -35,3 +36,4 @@ r + (p) \cdot x + (p) = rx + (p) = 1 + (p),
 $$
 
 which says that $(x + (p))\inv = r + (p)$ in $R/(p)$.
+:::

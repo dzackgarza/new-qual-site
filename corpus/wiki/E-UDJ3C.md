@@ -13,6 +13,8 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Let $A \subset X$ be a connected subspace.
 
 Show that if $B\subset X$ satisfies $A\subseteq B \subseteq \bar{A}$, then $B$ is connected.
+:::

@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Let $A$ be a compact subspace of a Hausdorff space $X$.
 Show that $A$ is closed.
+:::

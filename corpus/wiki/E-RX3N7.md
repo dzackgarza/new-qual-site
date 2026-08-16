@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 12. For $u=\sqrt{2+\sqrt{2}}$, What is the Galois group of $\boldsymbol{Q}(u)$ over $\boldsymbol{Q} ?$ What are the intermediate fields of the extension $\boldsymbol{Q}(u)$ over $\boldsymbol{Q}$ ?
+:::

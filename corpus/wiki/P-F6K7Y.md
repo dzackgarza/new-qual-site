@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \sec^3(x) ~dx = \color {blue} {\frac {1}{2} (\ln (\sec (x) + \tan (x)) + \tan (x) \sec (x))} = \color {blue} {\frac {1}{2} (\ln(\frac {\cos(\frac {x}{2}) +\sin(\frac {x}{2})}{\cos(\frac {x}{2}) -\sin(\frac {x}{2})}) + \tan (x) \sec (x))}$
 
 - **Solution:** $\frac {3 - 2}{3 - 1} \int \sec ^{3 - 2} (x) ~dx + \frac {1}{3 - 1} \tan (x) \sec ^{3 - 2} (x) = \frac {1}{2}  \int \sec (x) ~dx + \frac {1}{2} \tan (x) \sec (x)$
@@ -53,3 +54,4 @@ review: draft
 8. $\displaystyle \int \frac {2\sin^2 (x)}{\cos^3 (x)} ~dx = \color {blue} {- \ln(\tan (x) + \sec (x)) + \tan (x) \sec (x)} = \color {blue} {\ln(\sec (x) - \tan (x)) + \tan (x) \sec (x)} = \tan (x) \sec (x) - \frac {1}{2}(\ln (\sin (x)+1) - \ln (\sin (x)-1))???$
 
 - **Solution:** $\frac {2\sin^2 (x)}{\cos^3 (x)} = 2 \tan^2 (x) \sec (x) = 2 (\sec^2 (x) - 1) \sec (x) = 2(\sec^3 (x) -\sec (x))$
+:::

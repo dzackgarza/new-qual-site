@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Is the following function continuous, differentiable, continuously differentiable?
 \[  
 f: \RR^2 &\to \RR  \\
@@ -22,4 +24,4 @@ f(x, y) &=
 0 & \text{else}.
 \end{cases}
 \]
-
+:::

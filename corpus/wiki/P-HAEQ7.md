@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $T:V\to V$ be a linear transformation where $V$ is a finite-dimensional vector space over $\CC$.
 Prove the Cayley-Hamilton theorem: if $p(x)$ is the characteristic polynomial of $T$, then $p(T) = 0$.
 You may use canonical forms.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the maximal real field in a cyclotomic extension $\QQ(\zeta_n)/\QQ$?
+:::

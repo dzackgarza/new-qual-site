@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that localizing a ring at a prime ideal produces a local ring.
 
 - Show that $R$ is a local ring iff for every $x\in R$, either $x$ or $1-x$ is a unit.
@@ -25,3 +26,4 @@ review: draft
 - Show that every prime ideal is primary.
 
 - Show that every prime ideal is irreducible.
+:::

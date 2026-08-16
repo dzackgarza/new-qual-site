@@ -12,5 +12,7 @@ classification:
 relations: []
 review: draft
 ---
-Let $f(z)$ be an analytic function on $|z|<1$. Prove that $f(z)$ is necessarily a constant if $f(\bar{z})$ is also analytic.
 
+::: problem
+Let $f(z)$ be an analytic function on $|z|<1$. Prove that $f(z)$ is necessarily a constant if $f(\bar{z})$ is also analytic.
+:::

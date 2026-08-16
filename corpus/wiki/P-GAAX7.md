@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Since $G$ is a $p\dash$group, it has a nontrivial center.
 Since $p$ is prime and $Z(G)$ is a subgroup, this forces $\size Z(G) \in \theset{p, p^2}$, where $p^3$ is ruled out because this would make $G$ abelian.
 
@@ -30,3 +31,4 @@ We can thus conclude that $G' \leq Z(G)$.
 It can not be the case that $G' = \theset{e}$, since this would make $G$ abelian.
 This forces $G' = Z(G)$ as desired.
 $\qed$
+:::

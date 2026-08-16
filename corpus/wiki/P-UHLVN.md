@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What Galois group would you expect a cubic to have?
+:::

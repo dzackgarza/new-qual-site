@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Facts used:
 
 - $M$ closed, connected, oriented $\implies H_i(M)\cong H^{n-i}(M)$
@@ -40,3 +41,4 @@ Facts used:
 - By Poincare Duality, $H^*(M) = \widehat{H_*(M)} = [\ZZ, \ZZ^2, \ZZ^2, \ZZ, 0\rightarrow]$.
   (Where the hat denotes reversing the list.)
   $\qed$
+:::

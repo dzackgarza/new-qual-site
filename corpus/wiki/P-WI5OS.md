@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that the center of $S_n$ for $n\geq 4$ is trivial.
+:::

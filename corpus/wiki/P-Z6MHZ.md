@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is a Kummer extension?
+:::

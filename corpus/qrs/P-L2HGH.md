@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f\in L^1(\RR)$.
 Show that
 \[
@@ -22,3 +23,4 @@ m(E) < \delta
 \implies 
 \int _{E} |f(x)| \, dx < \varepsilon
 \]
+:::

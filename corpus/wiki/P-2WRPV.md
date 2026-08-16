@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $\phi: \ZZ^4 \to \ZZ^3$ be a linear map which in the standard basis $\mathcal B$ is represented by
 
 \begin{align*}
@@ -92,4 +94,4 @@ and thus
 \begin{align*}
 \ZZ^3/N \cong \frac{\ZZ \oplus \ZZ \oplus \ZZ}{\ZZ \oplus \ZZ \oplus 12\ZZ} \cong \ZZ/12\ZZ.
 .\end{align*}
-
+:::

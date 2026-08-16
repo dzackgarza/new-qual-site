@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that every nontrivial normal subgroup of a finite $p\dash$group meets the center nontrivially.
 
   > Hint: let $G$ act on the normal subgroup by conjugation and count the orbits.
+:::

@@ -15,4 +15,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if each $f_n$ is holomorphic on $\Omega$ and $F \definedas \sum f_n$ converges uniformly on every compact subset of $\Omega$, then $F$ is holomorphic.
+:::

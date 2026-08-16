@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f, g \in L^1(\RR)$ be Borel measurable.
 
 1. Show that
@@ -26,3 +27,4 @@ Let $f, g \in L^1(\RR)$ be Borel measurable.
 \[
 \|f * g\|_{1} \leq \|f\|_{1} \|g\|_{1}
 \]
+:::

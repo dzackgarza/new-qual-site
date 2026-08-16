@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 1. It will exactly be the row space of 
 $$
 A = \left(\begin{array}{rrrr}
@@ -27,4 +29,4 @@ where we could note that $R_3 = 2R_1 + R_2$ but $R_1 \neq \lambda R_2$ and so th
 0 & 0 & 0 & 0
 \end{array}\right)$$
 from which we find that $\vector v_1 = \thevector{1,0,-2,-3}$ and $\vector v_2 = \thevector{0,1,3,4}$ also do the job. $\qed$
-
+:::

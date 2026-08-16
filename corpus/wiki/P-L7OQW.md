@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Give an example showing that normality is not transitive: i.e. $H\normal K \normal G$ with $H$ *not* normal in $G$.
+:::

@@ -15,6 +15,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - If $f$ is continuous, is it necessarily the case that $f'$ is continuous?
 
 - If $f_n \to f$, is it necessarily the case that $f_n'$ converges to $f'$ (or at all)?
@@ -28,3 +29,4 @@ review: draft
 - Show that a subset of a metric space is closed iff it is complete.
 
 - Show that if $m(E) < \infty$ and $f_n\to f$ uniformly, then $\lim \int_E f_n = \int_E f$.
+:::

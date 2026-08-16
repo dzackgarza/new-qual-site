@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Compute the fundamental group, using any technique you like, of $\RP^2 \#\RP^2 \#\RP^2$.
+:::

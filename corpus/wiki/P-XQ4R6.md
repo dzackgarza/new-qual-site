@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 The elementary divisors are given by:
 
 \begin{align*}
@@ -29,5 +31,4 @@ d_3 &= (x-1)^3(x^2+1)^4(x+2) \\
 d_2 &= (x-1)(x^2+1)^2 \\
 d_1 &= (x^2+1)^2
 .\end{align*}
-
-
+:::

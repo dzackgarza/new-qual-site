@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the discriminant of a polynomial?
+:::

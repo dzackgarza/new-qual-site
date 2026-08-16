@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Supposing that $\dim V = n$, let $\mathcal B \definedas \theset{\vector b_k \mid 1 \leq k \leq n}$ be a basis for $V$, and define
 $$
 \vector e_i \definedas [0, 0, \cdots, 1, \cdots, 0] \in V^{\oplus m}
@@ -50,3 +51,4 @@ To see that it is linearly independent, supposing that $\vector x = \sum_i \sum_
 
 But for a fixed $i$, since $\theset{\vector b_k}$ was a basis for $V$, this means that $\alpha_{k, i} = 0$ for all $k$.
 But then $\alpha_{k, i} = 0$ for all pairs $i, k$.
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Can a convergent sequence of real numbers have a subsequence converging to a different limit?
 
 - What does it mean for a sequence of functions to converge **pointwise** and to converge **uniformly**?
@@ -25,3 +26,4 @@ review: draft
 - Prove the monotone convergence theorem for sequences.
 
 - Prove the Bolzano-Weierstrass Theorem.
+:::

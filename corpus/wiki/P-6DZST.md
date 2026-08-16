@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 5. WLOG, assume $p_0, p_1$ are the north and south poles of $S^2$.
    We can then form a deformation retract of $X$ onto the equator of $S^2$, which is equal to $S^1$.
    To do so, just move every point $x$ along the unique great circle connecting $x, p_0, p_1$, and proceed at linear speed towards the equator.
@@ -22,3 +23,4 @@ review: draft
    So $S^2 - \theset{p_0, p_1} \cong \RR^2 - \theset{p_1} \cong S^{1} \cross \RR$.
    But since $\RR$ is contractible, the last one is homotopic to $S^1 \cross \theset {0} \cong S^1$.
    **Alternatively**: use the lemma, then $k=2$ and so $S^2 - \theset{p_1, p_2} \homotopic \bigvee_{i=1}^{1}S^1 = S^1$.
+:::

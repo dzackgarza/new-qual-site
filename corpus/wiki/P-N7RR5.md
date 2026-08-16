@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Is it true that the interior of a product is the product of the interiors?
+:::

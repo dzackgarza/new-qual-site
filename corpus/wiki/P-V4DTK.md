@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What do you know about representations of $\SO(2)$?
 $\SO(3)$?
+:::

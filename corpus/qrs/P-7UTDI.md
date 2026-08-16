@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if it satisfies any of the following conditions:
 
 a. $\abs{f(z)}$ is constant.
@@ -21,3 +23,4 @@ c. $\arg(f(z))$ is constant.
 d. $\bar{f(z)}$ is analytic.
 
 How do you generalize (a) and (b)?
+:::

@@ -12,9 +12,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 What is the Galois group of 
 \[
 \QQ(\sqrt 2, \sqrt 3)\, / \, \QQ
 ?\]
-
-
+:::

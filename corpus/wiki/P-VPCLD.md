@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. Apply the spectral theorem: $D$ will have the eigenvalues on the diagonal, and $A$ will be the column of eigenvectors.
    Thus
 $$
@@ -21,3 +22,4 @@ A = \left[ \begin{array} { l l } { 2 } & { 1 } \\ { 1 } & { 1 } \end{array} \rig
 0 & -2
 \end{array}\right].
 $$
+:::

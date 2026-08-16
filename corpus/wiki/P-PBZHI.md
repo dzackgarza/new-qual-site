@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 a.
 Let $G$ be a finite group.
 Show that there exists a field extension $K/F$ with $\gal(K/F) = G$.
@@ -26,3 +28,4 @@ Prove that there exists an intermediate field $E$ of $K/F$ with $[E: F] = 3$.
 c.
 With $K/F$ as in (b), does an intermediate field $L$ necessarily exist satisfying $[L: F] = 2$?
 Give a proof or counterexample.
+:::

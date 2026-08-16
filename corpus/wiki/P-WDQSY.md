@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the Galois group of the polynomial $x^n - 1$ over $\QQ$?
+:::

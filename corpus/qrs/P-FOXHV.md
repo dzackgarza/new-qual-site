@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 a. Let $z, w \in \CC$ with $\bar z w \neq 1$.
 Prove that
 \[
@@ -28,3 +29,4 @@ b. Prove that for a fixed $w\in \DD$, the mapping $F: z\mapsto {w-z \over 1 - \b
 - $F(0) = w$ and $F(w) = 0$.
 
 - $\abs{z} = 1$ implies $\abs{F(z)} = 1$.
+:::

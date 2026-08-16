@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if $\alpha, \beta$ are algebraic over $F$, then $\alpha\pm \beta, \alpha\beta^{\pm 1}$ are all algebraic over $F$.
+:::

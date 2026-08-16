@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What's the Galois group of $x^4 - 3$?
+:::

@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Show that for every map $f: S^2 \to S^1$, there is a point $x\in S^2$ such that $f(x) = f(-x)$.
 
 **Solution**:
@@ -33,3 +34,4 @@ But $\pi_1(\RP 2) = \ZZ_2$ and $\pi_1(\RP 1) = \ZZ$, and $\tilde g_*: \ZZ^2 \int
 **Alternate Solution**
 
 Use covering space $\RR \surjects S^1$?
+:::

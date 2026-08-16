@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 - $\star$: Show that for $E\subseteq \RR^n$, TFAE: 
   1. $E$ is measurable
   2. $E = H\union Z$ here $H$ is $F_\sigma$ and $Z$ is null
@@ -30,4 +32,4 @@ review: draft
 \[  
 \norm{f}_p \converges{p\to\infty}\to \norm{f}_\infty
 .\]
-
+:::

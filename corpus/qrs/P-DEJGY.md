@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 (a) $f(z)= u(x,y) +i v(x,y)$ be analytic in a domain
 $D\subset {\mathbb C}$. Let $z_0=(x_0,y_0)$ be a point in $D$ which
 is in the intersection of the curves $u(x,y)= c_1$ and $v(x,y)=c_2$,
@@ -27,4 +29,4 @@ perpendicular.
   (ii)  What are the angles of intersections between the level curves
         $\mbox{\textrm Re}{(f)}=0$ and $\mbox{\textrm Im}{(f)}$? Is your answer in
         agreement with part a) of this question?
-
+:::

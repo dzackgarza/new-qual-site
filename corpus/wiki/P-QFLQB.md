@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. Figure 8 ![1513072050945](../../assets/40_Topology/650_UCSD_Qual_Questions/Quals/assets/1513072050945.png) Here we have: $C_3 = \emptyset$ $C_1 = [12], [23], [13], [34], [35], [45] \cong \ZZ^6$ $C_0 = [1], [2], [3],[4], [5] \cong \ZZ^5$
 
 So we have $C_2 \into C_1 \into C_0 \cong 0\xrightarrow{\del_2} \ZZ^6 \xrightarrow{\del_1} \ZZ^5\xrightarrow{\del_0} 0$
@@ -33,3 +34,4 @@ Since $\del_1\del_2 = 0$, anything in the image of $\del_2$ would have to go to 
 Since it's not actually the boundary of any 2-chain, it doesn't become trivial in homology.
 
 So we have $H_2 \into H_1 \into H_0 = 0 \into \ZZ^2 \into \ZZ$.
+:::

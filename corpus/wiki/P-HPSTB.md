@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that inner automorphisms send conjugate subgroups to conjugate subgroups.
+:::

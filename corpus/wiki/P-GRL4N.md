@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 The standard computation of $\det(xI - A) = 0$ shows that $\chi_A(x) = \det(xI - A) = (x-1)^2 (x+1)^2$, and so the eigenvalues of $A$ are $1, -1$.
 We want the minimal polynomial of $A$, which is given by $\prod(x-\lambda_i)^{\alpha_i}$ where $\alpha_i$ is the size of the **largest** Jordan block for $\lambda_i$.
 That exponent is not the geometric multiplicity $\dim E_{\lambda_i}$, which instead counts how **many** Jordan blocks $\lambda_i$ has.
@@ -77,4 +79,4 @@ RCF(A) &= C(d_1) \oplus C(d_2) =
 0  & 0 & 1 & -1 \\
 \end{array}\right]
 .\end{align*}
-
+:::

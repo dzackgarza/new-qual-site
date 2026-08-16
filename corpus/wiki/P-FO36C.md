@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Define lower central series, upper central series, nilpotent and solvable groups.
+:::

@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that if an ideal $I\normal R$ contains a unit then $I = R$.
 
 - Show that $R\units$ need not be closed under addition.
+:::

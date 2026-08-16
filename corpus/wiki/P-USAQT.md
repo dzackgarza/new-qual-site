@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that every proper ideal is contained in a maximal ideal
 
 - Show that if $x\in R$ a PID is a nonzero nonunit, then $x$ is irreducible $\iff \gens{x}\normal R$ is maximal.
@@ -41,3 +42,4 @@ review: draft
 - Show that if $\spec(R) \subseteq \maxspec(R)$ then $R$ is a UFD.
 
 - Show that if $R$ is Noetherian then every ideal is finitely generated.
+:::

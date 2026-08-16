@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f(x) \in F[x]$ be irreducible, then since $p(x) \definedas \gcd(f, f')$ must divide $f$ and $f$ is irreducible, the only possibilities are $p(x) = 1$ or $p(x) = f(x)$.
 
 If $p(x) = 1$, then $f$ is separable, so every root is distinct and $f$ itself is of the form $f(x^{p^e})$ where each $e=0$.
@@ -44,3 +45,4 @@ If $g$ is separable we are done; otherwise $g$ fulfills the same hypotheses of t
 To see that every root of $f$ has multiplicity $p^e$, note that if $f(\alpha) = 0$ then $g(\alpha^{p^e}) = 0$.
 But $g$ is separable, so $(x - \alpha^{p^e}) \divides g(x)$ in $K[x]$ and thus $(x^{p^e} - \alpha^{p^e}) \divides g(x^{p^e}) = f$ in $\overline{K}[x]$ where $\overline K$ is an algebraic closure of $K$.
 But then $x^{p^e} - \alpha^{p^e} = (x-\alpha)^{p^e} \divides f(x)$, which precisely says that $\alpha$ is a root of multiplicity $p^e$.
+:::

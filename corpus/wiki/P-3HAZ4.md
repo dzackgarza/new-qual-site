@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $C_G(G) = Z(G)$.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Can you have a degree 7 irreducible polynomial over \( \FF_p \)? How about a degree 14 irreducible polynomial?
+:::

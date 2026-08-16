@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let
 \[
 A=\left[\begin{array}{ccc}
@@ -32,3 +34,4 @@ c.
 Write down the minimal polynomial of $A$.
 
 > You should not need to compute $P\inv$.
+:::

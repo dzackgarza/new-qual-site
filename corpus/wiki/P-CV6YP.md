@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $ff(R[t]) = ff(R)(t)$.
+:::

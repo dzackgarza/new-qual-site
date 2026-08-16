@@ -12,7 +12,10 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $\nu, \mu$ be signed measures, and show that
 \[
 \nu \perp \mu \text{ and } \nu \ll \abs{ \mu} \implies \nu = 0
 .\]
+:::

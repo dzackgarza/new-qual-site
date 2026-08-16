@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that a finite CW complex must be Hausdorff.
+:::

@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 Prove that the eigenvalues of a Hermitian matrix are real and those of a unitary matrix are unitary.
+:::

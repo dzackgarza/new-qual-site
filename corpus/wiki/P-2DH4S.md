@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $V$ be a finite-dimensional $k\dash$vector space and $T:V\to V$ a non-invertible $k\dash$linear map.
 Show that there exists a $k\dash$linear map $S:V\to V$ with $T\circ S = 0$ but $S\circ T\neq 0$.
+:::

@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the Galois group of $x^2 - 2$?
 Why is $x^2 - 2$ irreducible?
+:::

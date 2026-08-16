@@ -13,5 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 If $L\vector x = \vector x$, then $\vector x$ is an eigenvector with eigenvalue $\lambda = 1$.
 Since $1 \not\in \spec(L)$, such an $\vector x$ can not exist, so $L$ has only one fixed point: namely $\vector x = \vector 0$.
+:::

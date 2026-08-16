@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that every $p\dash$group has a nontrivial center.
+:::

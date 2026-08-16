@@ -14,6 +14,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f$ be analytic on a region $R$ and suppose $f'(z_0) \neq 0$ for some $z_0 \in R$.
 Show that if $C$ is a circle of sufficiently small radius centered at $z_0$, then 
 \[
@@ -21,4 +23,4 @@ Show that if $C$ is a circle of sufficiently small radius centered at $z_0$, the
 .\]
 
 > Hint: use the inverse function theorem.
-
+:::

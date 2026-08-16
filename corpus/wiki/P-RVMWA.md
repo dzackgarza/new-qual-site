@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int \sin ^2 (x) ~dx = \color {blue} {\frac {1}{2} (x - \sin (x) \cos (x))}$
 
 - **Solution:** $\sin ^2 (x) = \frac {1 - \cos (2x)}{2}$
@@ -58,3 +59,4 @@ review: draft
 - **Solution:** $\cos ^4 (x) - \sin ^4 (x) = (\cos ^2 (x) - \sin ^2 (x)) (\cos ^2 (x) + \sin ^2 (x)) = \cos ^2 (x) - \sin ^2 (x) = \cos (2x)$
 
 - **Used 2019**
+:::

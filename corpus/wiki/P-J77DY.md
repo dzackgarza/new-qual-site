@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that no group of order $p^2 q^2$ is simple for $p<q$ primes.
+:::

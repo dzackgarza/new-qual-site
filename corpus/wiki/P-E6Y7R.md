@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 1. $\displaystyle \int x\sin^{-1}(\frac {1}{x}) ~dx = \color {blue} {\frac {1}{2} (x^2 \csc ^{-1} (x) + \sqrt {x^2 - 1})} = \color {blue} {\frac {1}{2} (x^2 \sin ^{-1} (\frac {1}{x}) + \sqrt {x^2 - 1})}$
 
 - **Solution:** $x \sin ^{-1} (\frac {1}{x}) = x \csc ^{-1} (x)$
@@ -35,3 +36,4 @@ review: draft
 - **Solution:** $- \frac {1}{2} x \cos (2x) - \int \sin (2x) ~dx$
 
 - **Used 2018**
+:::

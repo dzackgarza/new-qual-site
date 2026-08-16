@@ -12,4 +12,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 - What is $[\QQ(\sqrt 2 + \sqrt 3): \QQ]$?
+:::

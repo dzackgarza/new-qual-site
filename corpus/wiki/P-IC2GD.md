@@ -12,6 +12,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 ![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 13.png]]
 
 ![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 14.png]]
@@ -25,3 +26,4 @@ review: draft
 ![[image_2021-05-17-00-04-08.png]]
 
 ![[image_2021-05-17-00-04-23.png]]
+:::

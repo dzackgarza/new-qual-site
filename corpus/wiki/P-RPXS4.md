@@ -14,4 +14,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 How many irreducible polynomials are there of degree 4 over \( \FF_2 \)?
+:::

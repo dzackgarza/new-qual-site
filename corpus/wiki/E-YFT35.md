@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 19. Prove that $\boldsymbol{F}_{p^{n}}$ is the splitting field of $x^{p^{n}}-x$ over $\boldsymbol{F}_{p}$.
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 $\implies$: Suppose that whenever $A,B$ are symmetric then $AB$ is symmetric as well.
 
 We then have $(AB)^t = AB$ by assumption, and then by calculation we have $(AB^t) = B^t A^t = BA$, so $AB = BA$.
@@ -32,3 +33,4 @@ We have
 - $(B + B^t)^t = B^t + (B^t)^t = B^t + B = B + B^t$, so $B + B^t$ is symmetric,
 
 - $(B - B^t)^t = B^t - B = - (B + B^t)$, so $B-B^t$ is skew-symmetric
+:::

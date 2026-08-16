@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 State the standard Schwarz reflection principle involving reflection across the real axis.
 
 Give a linear fractional transformation $T$ mapping $\DD$ to $\HH$.
@@ -23,4 +25,4 @@ Let $g(z) = \bar z$, and show
 
 Suppose that $f$ is holomorphic on $\DD$, continuous on $\bar \DD$, and real on $S^1$.
 Show that $f$ must be constant.
-
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 11. $\displaystyle \int x\sqrt {x+1}~dx =  \color {blue} {\frac {2}{5} (x + 1)^{\frac {5}{2}} - \frac {2}{3} (x + 1)^{\frac {3}{2}}}$
 
 - **Solution:** $u = x + 1$, $du = dx$
@@ -20,3 +21,4 @@ review: draft
 - **Solution:** $x\sqrt {x + 1} ~dx = (u - 1) \sqrt {u} ~du = u^{\frac {3}{2}} - u^{- \frac {1}{2}} ~du$
 
 - **Used 2019**
+:::

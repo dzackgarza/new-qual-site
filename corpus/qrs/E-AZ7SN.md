@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 Show that if $f:X\to \RR$ and $X$ is compact then $f$ is bounded and attains its min/max.
+:::

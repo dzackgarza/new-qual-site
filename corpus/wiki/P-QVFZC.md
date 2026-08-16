@@ -11,6 +11,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $m_*(E)$ denote the Lebesgue outer measure of a set \( E \subseteq \RR^n \).
 
 a. Prove using the definition of Lebesgue outer measure that
@@ -22,4 +24,4 @@ b. Prove that for any \( E \subseteq \RR^n \) and any \( \epsilon> 0 \) there ex
 \[
 m_*(E) \leq m_*(G) \leq m_*(E) + \epsilon
 .\]
-
+:::

@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - State definitions of the following:
 
   - Group action
@@ -22,3 +23,4 @@ review: draft
   - Stabilizer
 
   - Fixed points
+:::

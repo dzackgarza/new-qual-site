@@ -12,9 +12,11 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Suppose $f:\DD\to \DD$ is analytic.
 Prove that 
 \[  
 \forall a\in \DD, \qquad {\abs{f'(a)} \over 1 - \abs{f(a)}^2 } \leq {1 \over 1 - \abs{a}^2}
 .\]
-
+:::

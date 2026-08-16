@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Is the discriminant of a polynomial always a polynomial in the coefficients?
 What does this have to do with symmetric polynomials?
+:::

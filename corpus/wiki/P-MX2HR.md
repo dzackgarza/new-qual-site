@@ -14,8 +14,10 @@ relations: []
 review: draft
 ---
 
+::: problem
 a. Define what it means for a group $G$ to be *solvable*.
 
 a. Show that every group $G$ of order 36 is solvable.
 
 > Hint: you can use that $S_4$ is solvable.
+:::

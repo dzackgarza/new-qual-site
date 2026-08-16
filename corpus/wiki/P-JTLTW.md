@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Then $\size G = p^3$ and $G$ is a $p\dash$group.
 But every $p\dash$group has a non-trivial center $Z(G) \leq G$, and the center is always a normal subgroup.
+:::

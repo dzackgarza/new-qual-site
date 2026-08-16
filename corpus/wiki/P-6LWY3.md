@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f_n(x) = n^\beta x(1-x^2)^n$, $x \in [0,1]$,
 $n \in \mathbb{N}$.
 
@@ -25,5 +27,4 @@ for every $\beta \in \mathbb{R}$.
 Show that the convergence in part (a) is uniform for all
 $\beta < \frac{1}{2}$, but not uniform for any
 $\beta \geq \frac{1}{2}$.
-
-
+:::

@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: problem
 What is the multiplicative group of $\FF_9$?
+:::

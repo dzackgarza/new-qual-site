@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 3. **Main Idea**: Linear homotopy fails continuity without the condition from (2), so use complex embedding to avoid the origin at $t=1/2$.
 
 Suppose $n$ is odd and define $f:S^n \to S^n$ to be the antipodal map.
@@ -26,3 +27,4 @@ This is a homotopy, since $H(z, 0) = P(z) = z$ (since $\norm{z} = 1$), so this i
 We also have $H(z, 1) = P(-z) = -z$, the antipodal map.
 
 This is well-defined, since $e^{i\pi t} > 0$ and $z \neq 0$, so the linear homotopy in ambient $\CC^m$ avoids the origin and thus the denominator when taking the projection is never zero.
+:::

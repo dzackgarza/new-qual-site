@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 > Note: let $[x]_m$ denote the equivalence class of $x \mod m$.
 
 Let $f\in \ZZ^* = \hom_\ZZ(\ZZ_m, \ZZ)$, so $f: \ZZ_m \to \ZZ$.
@@ -33,3 +34,4 @@ Since $f$ is a module homomorphism, we have $f([0]_m) = 0$, and in particular we
 which forces $f([1]) \in \ZZ[m] = \theset{0}$, so $f$ must be the zero map and $\ZZ^* = 0$.
 
 > Note: $\ZZ[m] = 0$ because $\ZZ$ is an integral domain, so $mx = 0$ forces $m=0$ or $x=0$.
+:::

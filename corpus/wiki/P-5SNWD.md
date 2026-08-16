@@ -14,6 +14,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Show that $H ~\text{char}~ K ~\text{char}~G \Rightarrow H ~\text{char}~ G$
 
   > So "characteristic" is a transitive relation for subgroups.
+:::

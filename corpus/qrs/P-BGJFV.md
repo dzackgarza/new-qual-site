@@ -13,6 +13,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Suppose $f$ is analytic in an open set containing the unit disc
 $\mathbb D$ and $|f(z)| =1$ when $|z|$=1. Show that either
 $f(z) = e^{i \theta}$ for some $\theta \in \mathbb R$ or there are
@@ -21,3 +23,4 @@ $\theta \in \mathbb R$ such that
 $\displaystyle f(z) = e^{i\theta} \prod_{k=1}^n \frac{z-z_k}{1 - \bar{z}_k z } \, .$
 
 > Also cf. Stein et al, 1.4.7, 3.8.17
+:::

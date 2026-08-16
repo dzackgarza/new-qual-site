@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Facts Used
 
 1. $\pi_1(\bigvee^k S^1) = \ZZ^{\ast k}$
@@ -32,3 +33,4 @@ Since $\tilde X$ is a covering space, $\pi_1(\tilde X) \injects \pi_1(S^1 \vee S
 By 4, we can restrict this to $n$ generators for any $n$ to get a subgroup, and $A\leq B \leq C \implies A \leq C$ as groups.
 
 Alternatively, just take a covering space of this form: ?? $\qed$
+:::

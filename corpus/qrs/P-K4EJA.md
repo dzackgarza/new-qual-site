@@ -12,6 +12,8 @@ classification:
 relations: []
 review: draft
 ---
+
+::: problem
 Let $f$ be a non-negative Lebesgue measurable function on $[1, \infty)$.
 
 a.
@@ -39,4 +41,4 @@ for all $t\in [1, \infty)$, then
 \[  
 \int_1^\infty {1\over f(x) \, dx} = \sum_{k=0}^\infty \int_{2^k}^{2^{k+1}} {1 \over f(x)}\,dx
 .\]
-
+:::

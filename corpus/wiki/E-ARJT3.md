@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - What is a **separable** space?
+:::

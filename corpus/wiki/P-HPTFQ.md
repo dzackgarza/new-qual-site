@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 - Prove Cauchy's theorem.
 
 > Induce on $\size G$.
@@ -22,3 +23,4 @@ review: draft
 > Use that $\size G = \size G/N \size N$ so $p$ divides $\size G/N$, apply IH to get an element of order $p$ in the quotient.
 > Then $y\not\in N$ but $y^p\in N$, so $\gens{y}\neq \gens{y^p}$ since $y^p\in N \implies \gens{y^p} \subseteq N$.
 > Get $p\divides \size \gens{y}$, apply IH.
+:::

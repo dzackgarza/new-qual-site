@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $E$ be a free module over $R$ an integral domain.
 Then $E$ has a basis $\theset{\vector e_i} \subseteq F$, so if $x \neq 0 \in E$, we have
 $$
@@ -48,3 +49,4 @@ $$
 
 while $q_1 p_2, ~q_2 p_1 \neq 0 \in \ZZ$.
 $\qed$
+:::

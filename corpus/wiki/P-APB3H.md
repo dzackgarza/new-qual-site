@@ -14,5 +14,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Take a finite field extension \( \FF_p^n \) over \( \FF_p \). What is Frobenius?
 What is its characteristic polynomial?
+:::

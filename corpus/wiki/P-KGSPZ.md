@@ -13,6 +13,7 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $(X, \mathcal M, \mu)$ be a measure space and suppose $f$ is a measurable function on $X$.
 Show that
 $$
@@ -23,3 +24,4 @@ $$
 \end{cases}
 $$
 and characterize the collection of functions of each type.
+:::

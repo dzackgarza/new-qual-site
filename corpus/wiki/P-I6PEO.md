@@ -12,6 +12,8 @@ relations: []
 review: draft
 ---
 
+::: problem
 Let $f$ be a function of bounded variation on $[a,b]$.
 Furthermore, assume that for some $c>0$, $|f(x)| \geq c$ on $[a,b]$.
 Show that $g(x) = 1/f(x)$ is of bounded variation on $[a,b]$.
+:::

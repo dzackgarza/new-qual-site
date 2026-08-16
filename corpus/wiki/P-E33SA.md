@@ -14,6 +14,7 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - What does it mean for a function to be **uniformly continuous** on a set?
 
 - Is it possible for a function $f:\RR\to \RR$ to be discontinuous precisely on the rationals $\QQ$?
@@ -22,3 +23,4 @@ review: draft
   - Can the set of discontinuities be precisely the irrationals $\RR\sm\QQ$?
 
 - Find a sequence of continuous functions that does *not* converge uniformly, but still has a pointwise limit that is continuous.
+:::

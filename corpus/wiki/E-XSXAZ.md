@@ -13,4 +13,6 @@ relations: []
 review: draft
 ---
 
+::: exercise
 - Come up with 6 different topologies on $\RR^d$.
+:::
