@@ -23,19 +23,16 @@ Find the radius of convergences for the power series expansion of $\sqrt{z}$ abo
 
 Let $f(z)$ be a branch of $\sqrt{z}$ defined and holomorphic in a neighborhood of $z_0 = 4 + 3i$ (for example, the principal branch).
 
-1. **Distance to the nearest singularity:**
-   The function $\sqrt{z} = \exp\left(\frac{1}{2} \log z\right)$ has a branch point (algebraic singularity) at $z = 0$.
+1. **Distance to the nearest singularity:** The function $\sqrt{z} = \exp\left(\frac{1}{2} \log z\right)$ has a branch point (algebraic singularity) at $z = 0$.
    By the general theory of power series in complex analysis, the radius of convergence $R$ of the Taylor series of a holomorphic function about $z_0$ equals the distance from $z_0$ to the nearest singularity of $f(z)$ (or the boundary of the domain of holomorphy).
 
-2. **Calculation:**
-   The nearest singularity to $z_0 = 4 + 3i$ is the branch point at $z = 0$.
+2. **Calculation:** The nearest singularity to $z_0 = 4 + 3i$ is the branch point at $z = 0$.
    The Euclidean distance is:
    $$
    R = |z_0 - 0| = |4 + 3i| = \sqrt{4^2 + 3^2} = \sqrt{16 + 9} = \sqrt{25} = 5.
    $$
 
-3. **Explicit Taylor Series Expansion Check:**
-   Writing $z = z_0 + (z - z_0) = z_0 \left(1 + \frac{z - z_0}{z_0}\right)$:
+3. **Explicit Taylor Series Expansion Check:** Writing $z = z_0 + (z - z_0) = z_0 \left(1 + \frac{z - z_0}{z_0}\right)$:
    $$
    \sqrt{z} = \sqrt{z_0} \left(1 + \frac{z - z_0}{z_0}\right)^{1/2} = \sqrt{z_0} \sum_{n=0}^\infty \binom{1/2}{n} \left(\frac{z - z_0}{z_0}\right)^n.
    $$
