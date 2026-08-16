@@ -6,7 +6,10 @@ title: "Lefschetz duality"
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - duality
+  - manifolds
 relations:
 - kind: related-to
   target: T-QNYSB
