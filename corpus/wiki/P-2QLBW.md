@@ -43,3 +43,28 @@ review: draft
     $$
     but by the previous statement, $\dd{g}{t}(t_0) = 0$, which exacty says that the gradient of $f$ is orthogonal to $\gamma$ at $\vector p$. But $\vector p$ was an arbitrary point on the level surface, and $\gamma$ was an arbitrary curve through it. So $\nabla f$ is orthogonal to *every* level curve through $\vector p$, and this orthogonal to the tangent plane at $\vector p$, and thus normal to the surface at $\vector p$. Since $\vector p$ was an arbitrary point on the level curve, this holds everywhere on the level curve, and for arbitrary level curves. Thus $\nabla f$ is orthogonal to every level curve. $\qed$
 :::
+
+::: {.solution}
+> **AI-Generated Solution** (Gemini 3.7 Flash)
+
+**Goal:** Prove that for a continuously differentiable function $f: \mathbb{R}^2 \to \mathbb{R}$, the gradient vector $\nabla f(\mathbf{p})$ at any point $\mathbf{p}$ on a level curve $C = \{(x,y) \in \mathbb{R}^2 \mid f(x,y) = c\}$ is orthogonal to the tangent vector of every smooth curve in $C$ passing through $\mathbf{p}$.
+
+<1>1. Let $\mathbf{p} = (x_0, y_0) \in C$ such that $f(\mathbf{p}) = c$. Let $\gamma: (-\varepsilon, \varepsilon) \to \mathbb{R}^2$ be a differentiable parametrized curve such that $\gamma(0) = \mathbf{p}$ and $\gamma(t) \in C$ for all $t \in (-\varepsilon, \varepsilon)$.
+    Proof: By definition of a smooth curve on the level set $C$.
+
+<1>2. The composite function $g(t) = (f \circ \gamma)(t) = f(\gamma(t))$ is constant on $(-\varepsilon, \varepsilon)$ with value $c$.
+    Proof: Since $\gamma(t) \in C$ for all $t$, $f(\gamma(t)) = c$ identically.
+
+<1>3. $g'(0) = 0$.
+    Proof: The derivative of a constant function is identically zero.
+
+<1>4. By the multivariable Chain Rule, $g'(0) = \nabla f(\gamma(0)) \cdot \gamma'(0) = \nabla f(\mathbf{p}) \cdot \gamma'(0)$.
+    Proof: Since $f$ is continuously differentiable and $\gamma$ is differentiable at $t=0$, the chain rule applies:
+    $$g'(0) = \left.\frac{d}{dt} f(x(t), y(t))\right|_{t=0} = \frac{\partial f}{\partial x}(\mathbf{p}) x'(0) + \frac{\partial f}{\partial y}(\mathbf{p}) y'(0) = \nabla f(\mathbf{p}) \cdot \gamma'(0).$$
+
+<1>5. $\nabla f(\mathbf{p}) \cdot \gamma'(0) = 0$.
+    Proof: Combining <1>3 and <1>4 gives $\nabla f(\mathbf{p}) \cdot \gamma'(0) = g'(0) = 0$.
+
+<1>6. Conclusion: $\nabla f(\mathbf{p})$ is orthogonal to the tangent vector $\gamma'(0)$ of any curve lying on the level set through $\mathbf{p}$.
+    Proof: Since two vectors with zero dot product are orthogonal by definition, and $\gamma$ was arbitrary. Q.E.D.
+:::
