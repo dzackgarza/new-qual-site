@@ -29,9 +29,9 @@ Show that if $M$ is $\generators{p}\dash$primary, then $S$ is pure if and only i
 ::: {.solution}
 > **AI-Generated Solution** (Gemini 3.7 Flash)
 
-**(a) Existence of $a \in R$ such that $atm = m$:**
-Since $M$ is $\langle p \rangle$-primary, there exists an integer $k > 0$ such that $p^k m = 0$.
-Since $R$ is a PID, every prime element is irreducible. Because $p \nmid t$, we have $\gcd(t, p^k) = 1$.
+**(a) Existence of $a \in R$ such that $atm = m$:** Since $M$ is $\langle p \rangle$-primary, there exists an integer $k > 0$ such that $p^k m = 0$.
+Since $R$ is a PID, every prime element is irreducible.
+Because $p \nmid t$, we have $\gcd(t, p^k) = 1$.
 By Bézout's identity in the PID $R$, there exist elements $a, b \in R$ such that:
 $$
 at + b p^k = 1.
@@ -46,18 +46,19 @@ Since $p^k m = 0$, we obtain $atm + 0 = m$, so $atm = m$.
 
 The forward direction ($\implies$) is immediate by setting $r = p^k$.
 
-For the reverse direction ($\Longleftarrow$):
-Assume $S \cap p^k M = p^k S$ for all $k \geq 0$.
-Let $r \in R$. If $r = 0$, $S \cap 0M = 0 = 0S$, which holds.
-So assume $r \neq 0$. Since $R$ is a PID (hence a UFD), we can factor $r$ as:
+For the reverse direction ($\Longleftarrow$): Assume $S \cap p^k M = p^k S$ for all $k \geq 0$.
+Let $r \in R$.
+If $r = 0$, $S \cap 0M = 0 = 0S$, which holds.
+So assume $r \neq 0$.
+Since $R$ is a PID (hence a UFD), we can factor $r$ as:
 $$
 r = u p^k t,
 $$
 where $u \in R^\times$ is a unit, $k \geq 0$, and $t \in R$ satisfies $\gcd(t, p) = 1$, i.e. $t \notin \langle p \rangle$.
 Note that multiplying by a unit preserves submodules, so $r M = p^k t M$ and $r S = p^k t S$.
 
-We always have $rS \subseteq S \cap rM$. To show $S \cap rM \subseteq rS$:
-Let $s \in S \cap rM$.
+We always have $rS \subseteq S \cap rM$.
+To show $S \cap rM \subseteq rS$: Let $s \in S \cap rM$.
 Then $s = rm = u p^k t m$ for some $m \in M$.
 In particular, $s = p^k(u t m) \in p^k M$.
 Since $s \in S$, we have $s \in S \cap p^k M$.
@@ -66,7 +67,8 @@ Thus, there exists $s' \in S$ such that:
 $$
 s = p^k s'.
 $$
-Now, consider $s' \in S$. Since $M$ is $\langle p \rangle$-primary, $S$ is also $\langle p \rangle$-primary.
+Now, consider $s' \in S$.
+Since $M$ is $\langle p \rangle$-primary, $S$ is also $\langle p \rangle$-primary.
 Since $t \notin \langle p \rangle$, by part (a) there exists $a \in R$ such that:
 $$
 a t s' = s'.

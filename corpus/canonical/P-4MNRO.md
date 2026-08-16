@@ -68,7 +68,8 @@ Compute $(A+I)^2$:
 $$
 (A+I)^2 = \begin{pmatrix} 1 & 1 & -2 \\ 1 & 2 & -3 \\ 1 & 2 & -3 \end{pmatrix}\begin{pmatrix} 1 & 1 & -2 \\ 1 & 2 & -3 \\ 1 & 2 & -3 \end{pmatrix} = \begin{pmatrix} 0 & -1 & 1 \\ 0 & -1 & 1 \\ 0 & -1 & 1 \end{pmatrix}.
 $$
-We choose $v_3$ such that $(A+I)^2 v_3 \neq 0$. Choose $v_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
+We choose $v_3$ such that $(A+I)^2 v_3 \neq 0$.
+Choose $v_3 = \begin{pmatrix} 0 \\ 0 \\ 1 \end{pmatrix}$.
 Then:
 $$
 v_2 = (A+I)v_3 = \begin{pmatrix} -2 \\ -3 \\ -3 \end{pmatrix},

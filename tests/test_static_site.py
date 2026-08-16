@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import json
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 
@@ -10,12 +12,20 @@ from qualc.emit import mathjax_header
 from qualc.static_site import StandardPage, build_asset_catalog, write_page
 
 
+def _mathjax_macros(header: str) -> dict[str, str]:
+    match = re.search(r"macros: (\{.*?\}), inlineMath", header)
+    assert match is not None, "the header must embed the macros JSON"
+    parsed: dict[str, str] = json.loads(match.group(1))
+    return parsed
+
+
 def test_mathjax_macro_names_omit_the_tex_escape() -> None:
     header = mathjax_header({r"\DD": r"\mathbb{D}", r"\inner": r"\langle #1,#2\rangle"})
 
-    assert '"DD": "\\\\mathbb{D}"' in header
-    assert '"\\\\DD":' not in header
-    assert '"inner": ["\\\\langle #1,#2\\\\rangle", 2]' in header
+    macros = _mathjax_macros(header)
+    assert macros["DD"] == r"\mathbb{D}"
+    assert r"\DD" not in macros
+    assert macros["inner"] == [r"\langle #1,#2\rangle", 2]
 
 
 class LinkCollector(HTMLParser):

@@ -21,6 +21,7 @@ from typing import ClassVar
 from urllib.parse import urljoin
 
 import yaml
+from qualc.emit import SearchRecordKind
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -262,7 +263,6 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
         }
 
     applications_route = max(routes[1:], key=lambda route: len(problem_links(route)))
-    applications = read_html(site / applications_route)
     application_problem_ids = problem_links(applications_route)
     # Without this the subset check below is satisfied by the empty set, which
     # is what a mismatched route prefix silently produced here before.
@@ -296,18 +296,18 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
 
     search_records = json.loads((site / "search.json").read_text())
     search = {record["url"]: record for record in search_records}
-    assert search[routes[1].as_posix()]["kind"] == "Page"
-    assert search["tag/T-SZRXI.html"]["kind"] == "Card"
-    assert search["tag/P-P2UAH.html"]["kind"] == "Problem"
+    assert SearchRecordKind(search[routes[1].as_posix()]["kind"]) == SearchRecordKind.PAGE
+    assert SearchRecordKind(search["tag/T-SZRXI.html"]["kind"]) == SearchRecordKind.CARD
+    assert SearchRecordKind(search["tag/P-P2UAH.html"]["kind"]) == SearchRecordKind.PROBLEM
     # A real query reaches all three kinds the index labels. The index is
     # emitted wiki-then-pages-then-cards with cards ordered by id and carries no
     # relevance ranking, so a leading slice of it would pin concatenation order
     # rather than anything this repository promises a reader.
     sylow_results = [record for record in search_records if "sylow" in record["search"]]
-    assert {record["kind"] for record in sylow_results} == {
-        "Page",
-        "Card",
-        "Problem",
+    assert {SearchRecordKind(record["kind"]) for record in sylow_results} == {
+        SearchRecordKind.PAGE,
+        SearchRecordKind.CARD,
+        SearchRecordKind.PROBLEM,
     }
 
     problem = read_html(site / "tag" / "P-P2UAH.html")

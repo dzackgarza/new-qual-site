@@ -47,3 +47,35 @@ $$
    1. No, by rank nullity: $\abs{\im A} + \abs{\ker A} = \abs{\mathrm{domain} A}$, but $\abs{V} = 2$, so this would force the contradiction $2+2 = 3$.
    
 :::
+
+::: {.solution}
+> **AI-Generated Solution** (Gemini 3.7 Flash)
+
+**Goal:**
+1. (a) Negate the statement: $\forall x \in \mathbb{R}, \, \exists y \in \mathbb{R} \text{ such that } |x-y| \ge 2017$.
+   (b) State and negate the $\varepsilon$-$\delta$ definition of continuity of $f: \mathbb{R} \to \mathbb{R}$.
+2. For $V = \{(x,y,z) \in \mathbb{R}^3 \mid 3x+4y+5z=0\}$:
+   (a) Show $V$ is a subspace.
+   (b) Find a linear map with kernel $V$.
+   (c) Find a linear map with image $V$.
+   (d) Determine if a linear map exists with both kernel and image equal to $V$.
+
+<1>1. Part 1(a): The negation is $\exists x \in \mathbb{R} \text{ such that } \forall y \in \mathbb{R}, \, |x-y| < 2017$.
+    Proof: By De Morgan's laws for quantifiers, $\neg(\forall x, P(x)) \iff \exists x, \neg P(x)$ and $\neg(\exists y, Q(y)) \iff \forall y, \neg Q(y)$, with $\neg(|x-y| \ge 2017) \iff |x-y| < 2017$.
+
+<1>2. Part 1(b): A function $f: \mathbb{R} \to \mathbb{R}$ is continuous iff $\forall x \in \mathbb{R}, \, \forall \varepsilon > 0, \, \exists \delta > 0, \, \forall y \in \mathbb{R} \, (|x-y|<\delta \implies |f(x)-f(y)|<\varepsilon)$. Its negation is:
+    $$\exists x \in \mathbb{R}, \, \exists \varepsilon > 0 \text{ such that } \forall \delta > 0, \, \exists y \in \mathbb{R} \text{ with } |x-y|<\delta \text{ and } |f(x)-f(y)| \ge \varepsilon.$$
+    Proof: By quantifier negation and the equivalence $\neg(p \implies q) \iff p \wedge \neg q$.
+
+<1>3. Part 2(a): $V$ is a subspace of $\mathbb{R}^3$.
+    Proof: $V = \ker(\phi)$ where $\phi(x,y,z) = 3x+4y+5z$ is a linear functional $\mathbb{R}^3 \to \mathbb{R}$. The kernel of any linear map is a subspace.
+
+<1>4. Part 2(b): $S = \begin{pmatrix} 3 & 4 & 5 \\ 0 & 0 & 0 \\ 0 & 0 & 0 \end{pmatrix}$ has $\ker(S) = V$.
+    Proof: $S(x,y,z)^T = (3x+4y+5z, 0, 0)^T = \mathbf{0} \iff (x,y,z) \in V$.
+
+<1>5. Part 2(c): $T = \begin{pmatrix} 4 & 5 & 0 \\ -3 & 0 & 0 \\ 0 & -3 & 0 \end{pmatrix}$ has $\operatorname{im}(T) = V$.
+    Proof: The columns $v_1 = (4,-3,0)^T$ and $v_2 = (5,0,-3)^T$ are linearly independent vectors in $V$. Since $\dim(V) = 2$, they span $V$.
+
+<1>6. Part 2(d): No linear map $U: \mathbb{R}^3 \to \mathbb{R}^3$ can have $\ker(U) = \operatorname{im}(U) = V$.
+    Proof: By Rank-Nullity, $\dim(\ker U) + \dim(\operatorname{im} U) = 3$. But if $\ker(U) = \operatorname{im}(U) = V$, then $\dim(V) + \dim(V) = 2 + 2 = 4 \neq 3$, contradiction. Q.E.D.
+:::

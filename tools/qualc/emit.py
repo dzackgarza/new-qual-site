@@ -13,6 +13,7 @@ generated QMD remains available as an inspectable secondary artifact.
 from __future__ import annotations
 
 import copy
+from enum import Enum
 import html
 import json
 import os
@@ -1448,6 +1449,14 @@ PROBLEMS_LISTING = {
 }
 
 
+class SearchRecordKind(Enum):
+    """The search index's record vocabulary: the value is the JSON wire string."""
+
+    CARD = "Card"
+    PAGE = "Page"
+    PROBLEM = "Problem"
+
+
 def mathjax_header(macros: dict) -> str:
     mathjax_macros: dict[str, object] = {}
     for tex_name, definition in macros.items():
@@ -1566,7 +1575,7 @@ def _search_records(
         card_records.append(
             {
                 "title": card["title"],
-                "kind": "Problem" if card["kind"] == "problem" else "Card",
+                "kind": (SearchRecordKind.PROBLEM if card["kind"] == "problem" else SearchRecordKind.CARD).value,
                 "detail": f"{card['kind']} · {card['id']}",
                 "url": f"{directory}/{card['id']}.html",
                 "search": search,
@@ -1577,7 +1586,7 @@ def _search_records(
         page_records.append(
             {
                 "title": guide.title,
-                "kind": "Page",
+                "kind": SearchRecordKind.PAGE.value,
                 "detail": "study guide",
                 "url": _publication_root_route(guide).as_posix(),
                 "search": " ".join([guide.title, guide.lede] + [section.title for section in guide.sections]).lower(),
@@ -1586,7 +1595,7 @@ def _search_records(
         page_records.extend(
             {
                 "title": section.title,
-                "kind": "Page",
+                "kind": SearchRecordKind.PAGE.value,
                 "detail": guide.title,
                 "url": _publication_section_route(guide, section).as_posix(),
                 "search": (f"{guide.title} {section.title} {section.lede}").lower(),

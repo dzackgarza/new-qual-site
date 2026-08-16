@@ -32,8 +32,8 @@ import argparse
 import collections
 import json
 import re
-from enum import Enum
 import sys
+from enum import Enum
 from pathlib import Path
 
 import yaml

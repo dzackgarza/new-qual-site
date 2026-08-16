@@ -31,8 +31,7 @@ $$
 \frac{1}{\pi} \int_0^\pi |\sin u| \, du = \frac{1}{\pi} [-\cos u]_0^\pi = \frac{2}{\pi}.
 $$
 
-**Step 1: Characteristic function of an interval $f = \mathbf{1}_{[a, b]} \subseteq [0, 1]$.**
-For $n \in \NN$, substitute $u = nx$:
+**Step 1: Characteristic function of an interval $f = \mathbf{1}_{[a, b]} \subseteq [0, 1]$.** For $n \in \NN$, substitute $u = nx$:
 $$
 \int_0^1 \mathbf{1}_{[a, b]}(x) |\sin nx| \, dx = \int_a^b |\sin nx| \, dx = \frac{1}{n} \int_{na}^{nb} |\sin u| \, du.
 $$
@@ -47,11 +46,10 @@ $$
 \lim_{n \to \infty} \int_a^b |\sin nx| \, dx = \frac{2}{\pi}(b - a) = \frac{2}{\pi} \int_0^1 \mathbf{1}_{[a, b]}(x) \, dx.
 $$
 
-**Step 2: Step functions.**
-By linearity, the result holds for all step functions $s(x) = \sum_{j=1}^m c_j \mathbf{1}_{[a_j, b_j]}(x)$.
+**Step 2: Step functions.** By linearity, the result holds for all step functions $s(x) = \sum_{j=1}^m c_j \mathbf{1}_{[a_j, b_j]}(x)$.
 
-**Step 3: General $f \in L^1([0, 1])$.**
-Step functions are dense in $L^1([0, 1])$. Given $\varepsilon > 0$, choose a step function $s$ such that $\|f - s\|_{L^1} < \varepsilon$.
+**Step 3: General $f \in L^1([0, 1])$.** Step functions are dense in $L^1([0, 1])$.
+Given $\varepsilon > 0$, choose a step function $s$ such that $\|f - s\|_{L^1} < \varepsilon$.
 Then:
 $$
 \left| \int_0^1 f(x) |\sin nx| \, dx - \frac{2}{\pi} \int_0^1 f(x) \, dx \right|

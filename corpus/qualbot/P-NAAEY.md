@@ -30,8 +30,8 @@ $$
 since translation is an isometry on $L^1(\RR)$: $\|g_n\|_1 = \int_\RR |g(x-n)|\, dx = \int_\RR |g(y)|\, dy = \|g\|_1$.
 Thus $\limsup_{n \to \infty} \|f + g_n\|_1 \leq \|f\|_1 + \|g\|_1$.
 
-To establish the reverse inequality for the $\liminf$:
-Let $\varepsilon > 0$. Since continuous functions with compact support $C_c(\RR)$ are dense in $L^1(\RR)$, there exist $f_0, g_0 \in C_c(\RR)$ such that:
+To establish the reverse inequality for the $\liminf$: Let $\varepsilon > 0$.
+Since continuous functions with compact support $C_c(\RR)$ are dense in $L^1(\RR)$, there exist $f_0, g_0 \in C_c(\RR)$ such that:
 $$
 \|f - f_0\|_1 < \varepsilon, \qquad \|g - g_0\|_1 < \varepsilon.
 $$

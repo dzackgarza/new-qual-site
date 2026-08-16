@@ -13,6 +13,7 @@ from pathlib import Path
 import pytest
 from conftest import diagnostic_codes
 from qualc.diagnostics import DiagnosticCode
+from qualc.emit import SearchRecordKind
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
@@ -137,7 +138,7 @@ def test_build_emits_every_authored_page_and_resolves_real_links(
 
     records = json.loads((site / "search.json").read_text())
     page = next(record for record in records if record["url"] == "wiki/index.html")
-    assert page["kind"] == "Page"
+    assert SearchRecordKind(page["kind"]) == SearchRecordKind.PAGE
     assert "fixture index" in page["search"]
 
 

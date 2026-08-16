@@ -78,11 +78,11 @@ def test_parse_keeps_the_back_verbatim_and_drops_only_the_list_syntax(tmp_path: 
 def test_kind_takes_the_highest_priority_tag_and_falls_back_to_fact(tmp_path: Path) -> None:
     sylow, free_module, example, untagged = _cards(tmp_path)
     # `important` is a study marker, not a kind, so `theorem` wins.
-    assert sylow.kind == "theorem"
-    assert free_module.kind == "definition"
-    assert example.kind == "example"
+    assert sylow.kind == F.FlashcardKind.THEOREM
+    assert free_module.kind == F.FlashcardKind.DEFINITION
+    assert example.kind == F.FlashcardKind.EXAMPLE
     # A result stated with no tag is a `fact`, never promoted to `theorem`.
-    assert untagged.kind == "fact"
+    assert untagged.kind == F.FlashcardKind.FACT
 
 
 def test_a_card_whose_back_is_only_a_figure_has_no_statement(tmp_path: Path) -> None:
@@ -109,11 +109,11 @@ def test_the_real_import_mints_a_theory_layer_and_queues_the_figureless_cards() 
 
     minted = [r for r in rows if r["disposition"] == "migrated"]
     kinds = {r["kind"] for r in minted}
-    assert {"definition", "theorem", "fact"} <= kinds
+    assert {F.FlashcardKind.DEFINITION, F.FlashcardKind.THEOREM, F.FlashcardKind.FACT} <= kinds
 
     queued = [r for r in rows if r["disposition"] == "queued"]
     assert queued, "the lost figures must leave queued rows, not incomplete cards"
-    assert all("figure" in r["reason"] for r in queued)
+    assert all(r["reason_kind"] == F.QueueReason.LOST_FIGURE for r in queued)
 
     # Every variant-of target is itself minted, so no relation dangles.
     ids = {r["id"] for r in minted}

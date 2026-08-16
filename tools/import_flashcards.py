@@ -31,6 +31,7 @@ import json
 import re
 import sys
 from dataclasses import dataclass
+from enum import Enum
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -86,23 +87,35 @@ FILE_AREAS = {
 # (`math`, `complex`, `important`), is a `fact`: a result stated without proof
 # is exactly what the kind means, and it is the honest floor rather than a
 # promotion to `theorem` the source does not support.
+class FlashcardKind(Enum):
+    """The deck-tag classification vocabulary: the value is the corpus kind string."""
+
+    DEFINITION = "definition"
+    THEOREM = "theorem"
+    PROPOSITION = "proposition"
+    EXAMPLE = "example"
+    PROOF = "proof"
+    STRATEGY = "strategy"
+    FACT = "fact"
+
+
 TAG_KIND = [
-    ("definition", ("definition", "definitions", "notation")),
-    ("theorem", ("theorem", "theorems")),
-    ("proposition", ("proposition",)),
-    ("example", ("example", "examples", "counterexample", "counterexamples")),
-    ("proof", ("proof",)),
-    ("strategy", ("technique",)),
-    ("fact", ("fact", "facts", "formula", "formulas", "identity", "problem")),
+    (FlashcardKind.DEFINITION, ("definition", "definitions", "notation")),
+    (FlashcardKind.THEOREM, ("theorem", "theorems")),
+    (FlashcardKind.PROPOSITION, ("proposition",)),
+    (FlashcardKind.EXAMPLE, ("example", "examples", "counterexample", "counterexamples")),
+    (FlashcardKind.PROOF, ("proof",)),
+    (FlashcardKind.STRATEGY, ("technique",)),
+    (FlashcardKind.FACT, ("fact", "facts", "formula", "formulas", "identity", "problem")),
 ]
 KIND_PREFIX = {
-    "definition": "FD",
-    "theorem": "FT",
-    "proposition": "FP",
-    "example": "FE",
-    "proof": "FR",
-    "strategy": "FS",
-    "fact": "FF",
+    FlashcardKind.DEFINITION: "FD",
+    FlashcardKind.THEOREM: "FT",
+    FlashcardKind.PROPOSITION: "FP",
+    FlashcardKind.EXAMPLE: "FE",
+    FlashcardKind.PROOF: "FR",
+    FlashcardKind.STRATEGY: "FS",
+    FlashcardKind.FACT: "FF",
 }
 
 ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567"
@@ -116,11 +129,11 @@ class DeckCard:
     tags: list[str]
 
     @property
-    def kind(self) -> str:
+    def kind(self) -> FlashcardKind:
         for kind, words in TAG_KIND:
             if any(t in words for t in self.tags):
                 return kind
-        return "fact"
+        return FlashcardKind.FACT
 
     @property
     def areas(self) -> list[str]:
@@ -264,12 +277,12 @@ def card_text(card: DeckCard, variant_of: str | None) -> str:
         "---\n"
         "schema: qual/card@1\n"
         f"id: {card.id}\n"
-        f"kind: {card.kind}\n"
+        f"kind: {card.kind.value}\n"
         f"title: {yaml_scalar(card.front)}\n"
         "classification:\n"
         "  areas:\n" + "".join(f"  - {a}\n" for a in card.areas) + "  topics: []\n" + relations + "review: draft\n"
         "---\n\n"
-        f'::: {{.{card.kind} title="{title}"}}\n'
+        f'::: {{.{card.kind.value} title="{title}"}}\n'
         f"{card.back}\n"
         ":::\n"
     )
@@ -277,6 +290,15 @@ def card_text(card: DeckCard, variant_of: str | None) -> str:
 
 def yaml_scalar(text: str) -> str:
     return "'" + text.replace("'", "''") + "'"
+
+
+class QueueReason(Enum):
+    """Why a deck card did not migrate: the value is the ledger wire string."""
+
+    SCRATCH = "scratch"
+    LOST_FIGURE = "lost-figure"
+    DUPLICATE_CORPUS = "duplicate-corpus"
+    DUPLICATE_DECK = "duplicate-deck"
 
 
 def dispositions() -> list[dict]:
@@ -305,29 +327,33 @@ def dispositions() -> list[dict]:
             if (card.front, card.back) == ("abcdefg", "asdasdsad"):
                 # The author's scratch deck `2021-12-18` holds one keyboard-mash
                 # card. It is not mathematics and there is nothing to queue.
-                row |= {"disposition": "dropped", "reason": "keyboard-mash scratch card, no mathematical content"}
+                row |= {"disposition": "dropped", "reason_kind": QueueReason.SCRATCH, "reason": "keyboard-mash scratch card, no mathematical content"}
             elif not figureless_body(card.back):
                 row |= {
                     "disposition": "queued",
+                    "reason_kind": QueueReason.LOST_FIGURE,
                     "reason": "back is a lost figure or a bare `?` with no prose statement; the 17 missing figures are tabled for TikZ re-authoring",
                 }
             elif key in titles:
                 row |= {
                     "disposition": "dropped",
+                    "reason_kind": QueueReason.DUPLICATE_CORPUS,
                     "reason": f"duplicates corpus card {titles[key]} (same normalized title)",
                 }
             elif key in seen and seen[key][1] == body:
                 row |= {
                     "disposition": "dropped",
+                    "reason_kind": QueueReason.DUPLICATE_DECK,
                     "reason": f"duplicates flashcard {seen[key][0]} (same front and same body, an earlier deck)",
                 }
             else:
-                row |= {"disposition": "migrated", "evidence": f"corpus/flashcards/{card.id}.md"}
+                evidence = f"corpus/flashcards/{card.id}.md"
                 if key in seen:
                     row["variant_of"] = seen[key][0]
-                    row["evidence"] += f", variant-of {seen[key][0]}"
+                    evidence += f", variant-of {seen[key][0]}"
                 else:
                     seen[key] = (card.id, body)
+                row |= {"disposition": "migrated", "evidence": evidence}
             rows.append(row)
     return rows
 
@@ -355,7 +381,7 @@ def main(argv: list[str]) -> int:
     rows = dispositions()
     if argv and argv[0] == "mint":
         print(f"minted {mint(rows)} cards -> {OUT}")
-        SIDECAR.write_text("\n".join(json.dumps(r) for r in rows) + "\n")
+        SIDECAR.write_text("\n".join(json.dumps({k: v.value if isinstance(v, Enum) else v for k, v in r.items()}) for r in rows) + "\n")
         print(f"wrote {len(rows)} card dispositions -> {SIDECAR}")
 
     from collections import Counter

@@ -22,40 +22,36 @@ Compute what happens when $dx_1$ is replaced with an arbitrary non-zero element 
 ::: {.solution}
 > **AI-Generated Solution** (Gemini 3.7 Flash)
 
-**Goal:** Let $\Lambda^* = \bigwedge^* V$ be the exterior algebra of an $n$-dimensional vector space $V$ with basis $\{dx_1, \dots, dx_n\}$ over a field $k$. For $\omega \in \Lambda^1$, define $d_\omega \colon \Lambda^p \to \Lambda^{p+1}$ by $d_\omega(\alpha) = \alpha \wedge \omega$.
+**Goal:** Let $\Lambda^* = \bigwedge^* V$ be the exterior algebra of an $n$-dimensional vector space $V$ with basis $\{dx_1, \dots, dx_n\}$ over a field $k$.
+For $\omega \in \Lambda^1$, define $d_\omega \colon \Lambda^p \to \Lambda^{p+1}$ by $d_\omega(\alpha) = \alpha \wedge \omega$.
+
 1. Show that for $\omega = dx_1$, $(\Lambda^*, d_{dx_1})$ is a chain complex with trivial cohomology (except at $\Lambda^0$ where $H^0=0$ if treated as reduced, or check all $H^p$).
+
 2. Compute the cohomology of $(\Lambda^*, d_\omega)$ for an arbitrary non-zero element $\omega \in \Lambda^1$.
 
 <1>1. Verify that $d_\omega \circ d_\omega = 0$ for any $\omega \in \Lambda^1$.
-  <2>1. For any $\alpha \in \Lambda^p$, $d_\omega(d_\omega(\alpha)) = (\alpha \wedge \omega) \wedge \omega = \alpha \wedge (\omega \wedge \omega)$.
-  <2>2. Since $\omega \in \Lambda^1$, $\omega \wedge \omega = -\omega \wedge \omega = 0$ in the exterior algebra (in characteristic 2, $\omega \wedge \omega = 0$ by definition of exterior algebra alternating product).
-  <2>3. Thus $d_\omega^2 = 0$, so $(\Lambda^*, d_\omega)$ is a cochain complex (chain complex indexed cohomologically).
-  <2>4. Proof: By associativity and the alternating property of the exterior product. Q.E.D.
+<2>1. For any $\alpha \in \Lambda^p$, $d_\omega(d_\omega(\alpha)) = (\alpha \wedge \omega) \wedge \omega = \alpha \wedge (\omega \wedge \omega)$.
+<2>2. Since $\omega \in \Lambda^1$, $\omega \wedge \omega = -\omega \wedge \omega = 0$ in the exterior algebra (in characteristic 2, $\omega \wedge \omega = 0$ by definition of exterior algebra alternating product).
+<2>3. Thus $d_\omega^2 = 0$, so $(\Lambda^*, d_\omega)$ is a cochain complex (chain complex indexed cohomologically).
+<2>4. Proof: By associativity and the alternating property of the exterior product.
+Q.E.D.
 
-<1>2. Show that $(\Lambda^*, d_{dx_1})$ has trivial homology / cohomology ($H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$).
-  <2>1. Decompose $V$ as $V = k \cdot dx_1 \oplus W$, where $W = \operatorname{span}_k\{dx_2, \dots, dx_n\}$.
-  <2>2. The exterior algebra decomposes as a tensor product: $\Lambda^* V \cong \Lambda^*(k \cdot dx_1) \otimes_k \Lambda^* W$.
-  <2>3. $\Lambda^*(k \cdot dx_1)$ is 2-dimensional, with $\Lambda^0(k \cdot dx_1) = k \cdot 1$ and $\Lambda^1(k \cdot dx_1) = k \cdot dx_1$.
-  <2>4. The differential $d_{dx_1}$ on $\Lambda^*(k \cdot dx_1)$ maps $1 \mapsto dx_1$ (isomorphism) and $dx_1 \mapsto 0$.
-  <2>5. Thus the complex $0 \to \Lambda^0(k \cdot dx_1) \xrightarrow{d_{dx_1}} \Lambda^1(k \cdot dx_1) \to 0$ is the exact sequence $0 \to k \xrightarrow{\cdot 1} k \to 0$, which has $H^0 = 0$ and $H^1 = 0$.
-  <2>6. By the Künneth formula for chain complexes of vector spaces over a field $k$:
-  $$H^*(\Lambda^* V, d_{dx_1}) \cong H^*(\Lambda^*(k \cdot dx_1), d_{dx_1}) \otimes_k \Lambda^* W \cong 0 \otimes_k \Lambda^* W = 0.$$
-  <2>7. Alternatively, define a contracting homotopy $h \colon \Lambda^p \to \Lambda^{p-1}$ by $h(\alpha + \beta \wedge dx_1) = \beta$ where $\alpha, \beta \in \Lambda^* W$.
-  Then $(d h + h d)(\alpha + \beta \wedge dx_1) = d(\beta) + h(\alpha \wedge dx_1) = \beta \wedge dx_1 + \alpha = \alpha + \beta \wedge dx_1 = \operatorname{id}$.
-  Since $\operatorname{id}$ is chain homotopic to 0, all homology groups vanish: $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p \in \{0, \dots, n\}$.
-  <2>8. Proof: By explicit contracting homotopy / Künneth theorem. Q.E.D.
+<1>2. Show that $(\Lambda^*, d_{dx_1})$ has trivial homology / cohomology ($H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p$). <2>1. Decompose $V$ as $V = k \cdot dx_1 \oplus W$, where $W = \operatorname{span}_k\{dx_2, \dots, dx_n\}$.
+<2>2. The exterior algebra decomposes as a tensor product: $\Lambda^* V \cong \Lambda^*(k \cdot dx_1) \otimes_k \Lambda^* W$.
+<2>3. $\Lambda^*(k \cdot dx_1)$ is 2-dimensional, with $\Lambda^0(k \cdot dx_1) = k \cdot 1$ and $\Lambda^1(k \cdot dx_1) = k \cdot dx_1$.
+<2>4. The differential $d_{dx_1}$ on $\Lambda^*(k \cdot dx_1)$ maps $1 \mapsto dx_1$ (isomorphism) and $dx_1 \mapsto 0$.
+<2>5. Thus the complex $0 \to \Lambda^0(k \cdot dx_1) \xrightarrow{d_{dx_1}} \Lambda^1(k \cdot dx_1) \to 0$ is the exact sequence $0 \to k \xrightarrow{\cdot 1} k \to 0$, which has $H^0 = 0$ and $H^1 = 0$.
+<2>6. By the Künneth formula for chain complexes of vector spaces over a field $k$: $$H^*(\Lambda^* V, d_{dx_1}) \cong H^*(\Lambda^*(k \cdot dx_1), d_{dx_1}) \otimes_k \Lambda^* W \cong 0 \otimes_k \Lambda^* W = 0.$$ <2>7. Alternatively, define a contracting homotopy $h \colon \Lambda^p \to \Lambda^{p-1}$ by $h(\alpha + \beta \wedge dx_1) = \beta$ where $\alpha, \beta \in \Lambda^* W$.
+Then $(d h + h d)(\alpha + \beta \wedge dx_1) = d(\beta) + h(\alpha \wedge dx_1) = \beta \wedge dx_1 + \alpha = \alpha + \beta \wedge dx_1 = \operatorname{id}$.
+Since $\operatorname{id}$ is chain homotopic to 0, all homology groups vanish: $H^p(\Lambda^*, d_{dx_1}) = 0$ for all $p \in \{0, \dots, n\}$.
+<2>8. Proof: By explicit contracting homotopy / Künneth theorem.
+Q.E.D.
 
 <1>3. Compute the homology when $dx_1$ is replaced with an arbitrary non-zero $\omega \in \Lambda^1 = V^*$.
-  <2>1. Let $\omega \in \Lambda^1$ be non-zero: $\omega = \sum_{i=1}^n c_i dx_i$ with some $c_j \neq 0$.
-  <2>2. Since $k$ is a field and $\omega \neq 0$, there exists an invertible linear transformation $T \colon V \to V$ such that $T^*(dx_1) = \omega$ (i.e. by completing $\{\omega\}$ to a basis $\{e_1 = \omega, e_2, \dots, e_n\}$ of $\Lambda^1$).
-  <2>3. The linear isomorphism $T$ induces an algebra automorphism $\bigwedge^* T \colon \Lambda^* V \to \Lambda^* V$ mapping $dx_1 \mapsto \omega$.
-  <2>4. The automorphism $\bigwedge^* T$ defines an isomorphism of chain complexes:
-  $$(\Lambda^* V, d_{dx_1}) \xrightarrow{\bigwedge^* T} (\Lambda^* V, d_\omega).$$
-  <2>5. Since isomorphic chain complexes have isomorphic homology groups, and $H^*(\Lambda^* V, d_{dx_1}) = 0$ by <1>2:
-  $$H^p(\Lambda^* V, d_\omega) \cong H^p(\Lambda^* V, d_{dx_1}) = 0 \quad \text{for all } p \in \{0, \dots, n\}.$$
-  <2>6. Proof: By change of basis and functoriality of homology. Q.E.D.
+<2>1. Let $\omega \in \Lambda^1$ be non-zero: $\omega = \sum_{i=1}^n c_i dx_i$ with some $c_j \neq 0$.
+<2>2. Since $k$ is a field and $\omega \neq 0$, there exists an invertible linear transformation $T \colon V \to V$ such that $T^*(dx_1) = \omega$ (i.e. by completing $\{\omega\}$ to a basis $\{e_1 = \omega, e_2, \dots, e_n\}$ of $\Lambda^1$). <2>3. The linear isomorphism $T$ induces an algebra automorphism $\bigwedge^* T \colon \Lambda^* V \to \Lambda^* V$ mapping $dx_1 \mapsto \omega$.
+<2>4. The automorphism $\bigwedge^* T$ defines an isomorphism of chain complexes: $$(\Lambda^* V, d_{dx_1}) \xrightarrow{\bigwedge^* T} (\Lambda^* V, d_\omega).$$ <2>5. Since isomorphic chain complexes have isomorphic homology groups, and $H^*(\Lambda^* V, d_{dx_1}) = 0$ by <1>2: $$H^p(\Lambda^* V, d_\omega) \cong H^p(\Lambda^* V, d_{dx_1}) = 0 \quad \text{for all } p \in \{0, \dots, n\}.$$ <2>6. Proof: By change of basis and functoriality of homology.
+Q.E.D.
 
-<1>4. Q.E.D.
-  <2>1. Proof: Steps <1>1–<1>3 show that for any non-zero element $\omega \in \Lambda^1$, the complex $(\Lambda^*, d_\omega)$ has trivial homology in all degrees.
+<1>4. Q.E.D. <2>1. Proof: Steps <1>1–<1>3 show that for any non-zero element $\omega \in \Lambda^1$, the complex $(\Lambda^*, d_\omega)$ has trivial homology in all degrees.
 :::
-

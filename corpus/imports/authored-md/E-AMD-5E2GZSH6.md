@@ -31,22 +31,19 @@ S = \{ (g, x) \in G \times X \mid g \cdot x = x \}
 $$
 in two different ways (double counting).
 
-1. **Summing over group elements $g \in G$:**
-   For a fixed $g \in G$, the number of elements $x \in X$ such that $(g, x) \in S$ is precisely the number of fixed points $|X^g|$.
+1. **Summing over group elements $g \in G$:** For a fixed $g \in G$, the number of elements $x \in X$ such that $(g, x) \in S$ is precisely the number of fixed points $|X^g|$.
    Therefore:
    $$
    |S| = \sum_{g \in G} |X^g|.
    $$
 
-2. **Summing over set elements $x \in X$:**
-   For a fixed $x \in X$, the number of elements $g \in G$ such that $(g, x) \in S$ is precisely the order of the stabilizer subgroup $|G_x|$.
+2. **Summing over set elements $x \in X$:** For a fixed $x \in X$, the number of elements $g \in G$ such that $(g, x) \in S$ is precisely the order of the stabilizer subgroup $|G_x|$.
    Therefore:
    $$
    |S| = \sum_{x \in X} |G_x|.
    $$
 
-3. **Partitioning $X$ into Orbits:**
-   Equating the two expressions for $|S|$:
+3. **Partitioning $X$ into Orbits:** Equating the two expressions for $|S|$:
    $$
    \sum_{g \in G} |X^g| = \sum_{x \in X} |G_x|.
    $$
@@ -64,8 +61,7 @@ in two different ways (double counting).
    \sum_{x \in X} |G_x| = \sum_{i=1}^k \left( \sum_{x \in \mathcal{O}_i} |G_x| \right) = \sum_{i=1}^k |G| = k \cdot |G| = |X/G| \cdot |G|.
    $$
 
-4. **Conclusion:**
-   Substituting back into the double counting equality:
+4. **Conclusion:** Substituting back into the double counting equality:
    $$
    \sum_{g \in G} |X^g| = |X/G| \cdot |G|.
    $$
