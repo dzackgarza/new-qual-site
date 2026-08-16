@@ -29,8 +29,9 @@ $$
 \int_0^1 f(x) P(x) \, dx = 0.
 $$
 
-2. By the **Stone-Weierstrass theorem**, the algebra of polynomials is uniformly dense in $C([0, 1])$. Thus, for any continuous function $g \in C([0, 1])$, there exists a sequence of polynomials $P_k \to g$ uniformly on $[0, 1]$.
-Since $f \in L^2([0, 1]) \subset L^1([0, 1])$, by the bounded convergence theorem (or Cauchy-Schwarz inequality):
+2. By the **Stone-Weierstrass theorem**, the algebra of polynomials is uniformly dense in $C([0, 1])$.
+   Thus, for any continuous function $g \in C([0, 1])$, there exists a sequence of polynomials $P_k \to g$ uniformly on $[0, 1]$.
+   Since $f \in L^2([0, 1]) \subset L^1([0, 1])$, by the bounded convergence theorem (or Cauchy-Schwarz inequality):
 $$
 \left| \int_0^1 f(x) g(x) \, dx - \int_0^1 f(x) P_k(x) \, dx \right| \leq \|f\|_{L^1} \|g - P_k\|_\infty \to 0,
 $$
@@ -40,7 +41,7 @@ $$
 $$
 
 3. Since $C([0, 1])$ is dense in $L^2([0, 1])$ under the $L^2$-norm, there exists a sequence $g_k \in C([0, 1])$ such that $g_k \to f$ in $L^2([0, 1])$.
-Using the continuity of the $L^2$ inner product:
+   Using the continuity of the $L^2$ inner product:
 $$
 \|f\|_{L^2}^2 = \langle f, f \rangle = \lim_{k \to \infty} \langle f, g_k \rangle = \lim_{k \to \infty} \int_0^1 f(x) g_k(x) \, dx = 0.
 $$

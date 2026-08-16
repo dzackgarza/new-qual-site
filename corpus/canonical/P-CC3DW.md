@@ -15,8 +15,8 @@ review: draft
 ---
 
 ::: problem
-Let $M$ be a square matrix over a field $K$. Use a suitable canonical
-form to show that $M$ is similar to its transpose $M^T$.
+Let $M$ be a square matrix over a field $K$.
+Use a suitable canonical form to show that $M$ is similar to its transpose $M^T$.
 :::
 
 ::: {.solution}
@@ -49,7 +49,8 @@ $$
 The characteristic and minimal polynomials of both $C$ and $C^T$ are equal to $p(x)$.
 Since $C^T$ has minimal polynomial $p(x)$ of degree equal to the dimension $d$, $C^T$ is also cyclic, and its single invariant factor is $p(x)$.
 
-4. By the uniqueness of the Rational Canonical Form, any two matrices over $K$ with the same invariant factors are similar over $K$. Since $C$ and $C^T$ have the identical list of invariant factors (namely, the single polynomial $p(x)$), $C$ is similar to $C^T$ over $K$.
+4. By the uniqueness of the Rational Canonical Form, any two matrices over $K$ with the same invariant factors are similar over $K$.
+   Since $C$ and $C^T$ have the identical list of invariant factors (namely, the single polynomial $p(x)$), $C$ is similar to $C^T$ over $K$.
 
 5. Taking the direct sum over all blocks gives $M \sim M^T$ over $K$.
 :::

@@ -21,7 +21,8 @@ Show that no finite group is the union of conjugates of a proper subgroup.
 
 Let $G$ be a finite group and let $H < G$ be a proper subgroup, so $[G : H] = k > 1$.
 
-1. The number of distinct conjugate subgroups of $H$ in $G$ is $[G : N_G(H)] \leq [G : H] = k$. Let these conjugates be $H_1, H_2, \ldots, H_m$, where $m \leq k$.
+1. The number of distinct conjugate subgroups of $H$ in $G$ is $[G : N_G(H)] \leq [G : H] = k$.
+   Let these conjugates be $H_1, H_2, \ldots, H_m$, where $m \leq k$.
 
 2. Each conjugate $H_i$ has order $\abs{H_i} = \abs H$, and every conjugate contains the identity element $e$.
 

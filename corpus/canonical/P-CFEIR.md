@@ -34,14 +34,12 @@ $$
 
 Define the integrand $g_h(x) = f(x) \frac{\cos(x(t+h)) - \cos(xt)}{h}$.
 
-1. **Pointwise limit:**
-   For each fixed $x \in \RR$, as $h \to 0$:
+1. **Pointwise limit:** For each fixed $x \in \RR$, as $h \to 0$:
    $$
    \lim_{h \to 0} g_h(x) = f(x) \frac{d}{dt}[\cos(xt)] = -x f(x) \sin(xt).
    $$
 
-2. **Dominating function:**
-   By the Mean Value Theorem applied to $u \mapsto \cos(xu)$, there exists $c$ between $t$ and $t+h$ such that:
+2. **Dominating function:** By the Mean Value Theorem applied to $u \mapsto \cos(xu)$, there exists $c$ between $t$ and $t+h$ such that:
    $$
    \left| \frac{\cos(x(t+h)) - \cos(xt)}{h} \right| = |-x \sin(xc)| \leq |x|.
    $$
@@ -51,8 +49,7 @@ Define the integrand $g_h(x) = f(x) \frac{\cos(x(t+h)) - \cos(xt)}{h}$.
    $$
    Since $xf(x) \in L^1(\RR)$, the dominating function $g(x) = |xf(x)|$ is integrable on $\RR$.
 
-3. **Application of Dominated Convergence Theorem:**
-   By the Lebesgue Dominated Convergence Theorem:
+3. **Application of Dominated Convergence Theorem:** By the Lebesgue Dominated Convergence Theorem:
    $$
    F'(t) = \lim_{h \to 0} \frac{F(t+h) - F(t)}{h} = \int_{-\infty}^\infty \lim_{h \to 0} g_h(x) \, dx = -\int_{-\infty}^\infty x f(x) \sin(xt) \, dx.
    $$
