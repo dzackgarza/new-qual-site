@@ -73,4 +73,16 @@ when $n$ is sufficiently large but
 $f(x_n) - f(x_{n+1}) | \not < \epsilon$. Therefore $f(x)$ is not
 uniformly continuous. ◻
 :::
+::: {.solution}
+> **AI-Generated Solution**
 
+<1>1. (Part 1) $f$ is continuous on $(0,1)$.
+    Proof: $f = p/q$ where $p(x) = x$ and $q(x) = 1 - x^2$ are continuous and $q(x) \ne 0$ on $(0,1)$; a quotient of continuous functions with nonzero denominator is continuous. (The card asks for an $\eps$--$\delta$ proof: for fixed $x_0 \in (0,1)$, $q$ is bounded away from $0$ near $x_0$ and the numerator is bounded, and
+    \[
+    \Big|\frac{x}{1-x^2} - \frac{x_0}{1-x_0^2}\Big| = \frac{|x - x_0|\cdot|1 + xx_0|}{(1-x^2)(1-x_0^2)},
+    \]
+    from which $\eps$--$\delta$ follows by keeping $x$ close to $x_0$ so $1-x^2$ stays bounded away from $0$.)
+<1>2. (Part 2) $f$ is NOT uniformly continuous on $(0,1)$.
+    Proof: $f$ is unbounded on $(0,1)$: as $x \to 1^-$, $f(x) = x/(1-x^2) \to +\infty$. A uniformly continuous function on a bounded interval is bounded: given $\eps = 1$, choose $\delta > 0$ with $|x-y| < \delta \Rightarrow |f(x)-f(y)| < 1$; covering $(0,1)$ by finitely many intervals of length $< \delta$ and chaining with the triangle inequality bounds $|f|$ by a constant depending only on one value of $f$. Since $f$ is unbounded, it cannot be uniformly continuous.
+<1>3. Q.E.D.
+:::

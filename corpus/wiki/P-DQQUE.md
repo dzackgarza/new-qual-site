@@ -29,3 +29,31 @@ Since $\inf E$ is a lower bound for $E$, $\inf E \leq \sup T_k$ for all $k \in \
 Thus, $$\inf E \leq \lim (\sup T_k) = \limsup a_k.$$ We have both inequalities, therefore $\limsup a_k = \inf E$.
 ◻
 :::
+::: {.solution}
+> **AI-Generated Solution**
+
+<1>1. Notation: $E = \{s \in \RR : \text{only finitely many } k \text{ have } a_k \ge s\}$; $(a_k)$ is bounded.
+    Proof: given.
+
+<1>2. For every $s \in E$: $s \ge \limsup_{k \to \infty} a_k$.
+    <2>1. Since only finitely many $a_k \ge s$, there is $N$ with $a_k < s$ for all $k \ge N$.
+        Proof: definition of $E$.
+    <2>2. $\sup_{k \ge N} a_k \le s$.
+        Proof: <2>1 says $s$ is an upper bound for $\{a_k : k \ge N\}$.
+    <2>3. $\limsup a_k = \inf_N \sup_{k \ge N} a_k \le \sup_{k \ge N} a_k \le s$.
+        Proof: <2>2 and the definition of $\limsup$ as the decreasing limit of the tails.
+    <2>4. Q.E.D.
+        Proof: $s \in E$ arbitrary.
+
+<1>3. Hence $\limsup a_k \le \inf E$.
+    Proof: <1>2 shows $\limsup a_k$ is a lower bound for $E$.
+
+<1>4. For every $k$: $\sup_{j \ge k} a_j \in E$.
+    Proof: the set $\{j : a_j \ge \sup_{j \ge k} a_j\}$ is contained in $\{1, \ldots, k-1\}$ (every $j \ge k$ has $a_j \le \sup_{j \ge k} a_j$), hence finite.
+
+<1>5. $\inf E \le \sup_{j \ge k} a_j$ for every $k$; letting $k \to \infty$ gives $\inf E \le \limsup a_k$.
+    Proof: <1>4 and the definition of $\inf$; the tails $\sup_{j \ge k} a_j$ decrease to $\limsup a_k$.
+
+<1>6. Q.E.D.: $\limsup a_k = \inf E$.
+    Proof: <1>3 and <1>5 give both inequalities.
+:::
