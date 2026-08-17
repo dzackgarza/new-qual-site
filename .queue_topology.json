@@ -1021,7 +1021,7 @@
     "kind": "exercise",
     "title": "Show that an injective continuous map from a compact space…",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-AZ7SN",
@@ -1029,7 +1029,7 @@
     "kind": "exercise",
     "title": "Show that if $f:X\\to \\RR$ and $X$ is compact then $f$ is bounded and attains…",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-FV5FI",
@@ -1037,7 +1037,7 @@
     "kind": "exercise",
     "title": "Show that if $X$ is a metric space and $A\\subseteq X$ is compact then $A$ is…",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-GNMUG",
@@ -1045,7 +1045,7 @@
     "kind": "exercise",
     "title": "Show that if $f:X\\to Y$ is continuous and $X$ is compact then $f(X)$ is compact.",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-IHJ56",
@@ -1053,7 +1053,7 @@
     "kind": "exercise",
     "title": "Show that if $X$ is Hausdorff and $A\\subseteq X$ is compact then $A$ is closed.",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-J3IO7",
@@ -1069,7 +1069,7 @@
     "kind": "exercise",
     "title": "Show that if $X$ is compact and $A\\subseteq X$ is closed then $A$ is compact.",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-T7PYZ",
@@ -1077,7 +1077,7 @@
     "kind": "exercise",
     "title": "Show that $\\RR$ with the cofinite topology is compact.",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-TRRUN",
@@ -1101,7 +1101,7 @@
     "kind": "exercise",
     "title": "Show that if $f: A\\to B$ is a continuous map between metric spaces an…",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-X36KD",

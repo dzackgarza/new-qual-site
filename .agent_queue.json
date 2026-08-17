@@ -4541,7 +4541,7 @@
     "kind": "problem",
     "title": "State Rouche's theorem.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-7DSGZ",
@@ -4549,7 +4549,7 @@
     "kind": "exercise",
     "title": "Show that an injective continuous map from a compact space\u2026",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-7EL3U",
@@ -4573,7 +4573,7 @@
     "kind": "exercise",
     "title": "Show that if $f:X\\to \\RR$ and $X$ is compact then $f$ is bounded and attains\u2026",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-BAOST",
@@ -4669,7 +4669,7 @@
     "kind": "exercise",
     "title": "Show that if $X$ is a metric space and $A\\subseteq X$ is compact then $A$ is\u2026",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-FZLDN",
@@ -4693,7 +4693,7 @@
     "kind": "exercise",
     "title": "Show that if $f:X\\to Y$ is continuous and $X$ is compact then $f(X)$ is compact.",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-GQEMZ",
@@ -4709,7 +4709,7 @@
     "kind": "exercise",
     "title": "Show that if $X$ is Hausdorff and $A\\subseteq X$ is compact then $A$ is closed.",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-IYBZP",
@@ -4741,7 +4741,7 @@
     "kind": "exercise",
     "title": "Show that if $X$ is compact and $A\\subseteq X$ is closed then $A$ is compact.",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-KO5PK",
@@ -4805,7 +4805,7 @@
     "kind": "exercise",
     "title": "Primitives imply vanishing integral",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-O742O",
@@ -4845,7 +4845,7 @@
     "kind": "exercise",
     "title": "Bounded Complex Analytic Functions form a Banach Space",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-SA3HI",
@@ -4869,7 +4869,7 @@
     "kind": "exercise",
     "title": "Show that $h(z) =z^5 + 3z + 1$ has 5 zeros in $\\abs z \\leq 2$.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-T7PYZ",
@@ -4877,7 +4877,7 @@
     "kind": "exercise",
     "title": "Show that $\\RR$ with the cofinite topology is compact.",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-TF33D",
@@ -4893,7 +4893,7 @@
     "kind": "exercise",
     "title": "Show that a real-valued holomorphic function must be constant.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-TJ3WM",
@@ -4901,7 +4901,7 @@
     "kind": "exercise",
     "title": "Show that $\\Aut_\\CC(\\CC) = \\ts{ z \\mapsto az+b\\st a\\in \\CC\\units, b\\in \\CC }$.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-TRRUN",
@@ -4925,7 +4925,7 @@
     "kind": "exercise",
     "title": "Show that if $f: A\\to B$ is a continuous map between metric spaces an\u2026",
     "area": "topology",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-TVBUC",
@@ -4949,7 +4949,7 @@
     "kind": "exercise",
     "title": "Injectivity relates to derivatives",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-UYQED",
@@ -4965,7 +4965,7 @@
     "kind": "exercise",
     "title": "Show that the complex zeros of $f(z) \\da \\sin(\\pi z)$ are exactly $\\ZZ$, and each is\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-VI5ZS",
@@ -4973,7 +4973,7 @@
     "kind": "exercise",
     "title": "Show that $\\del_{\\log}(fg) = \\del_{\\log} f + \\del_{\\log} g$, i.e.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "E-WURI3",
@@ -5021,7 +5021,7 @@
     "kind": "problem",
     "title": "(1) Show that the function $u=u(x,y)$ given by",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-2RS4X",
@@ -5029,7 +5029,7 @@
     "kind": "problem",
     "title": "Evaluate the integral $\\int_\\RR {dx \\over 1 + x^4}$",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-34ALC",
@@ -5037,7 +5037,7 @@
     "kind": "problem",
     "title": "Find all functions on the Riemann sphere that have a simple\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-352KP",
@@ -5045,7 +5045,7 @@
     "kind": "problem",
     "title": "Assume $f$ is continuous in the region: $x \\geq x_0, \\; 0 \\leq y \\leq b$ and the limit $\\displaystyle \\lim_{x \\rightarrow + \\infty} f(x + iy) = A$ exists\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-36DLV",
@@ -5053,7 +5053,7 @@
     "kind": "problem",
     "title": "Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3BNEC",
@@ -5069,7 +5069,7 @@
     "kind": "problem",
     "title": "Find a conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3CU65",
@@ -5085,7 +5085,7 @@
     "kind": "problem",
     "title": "Prove the following inequality, and explain when equality\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3JE4U",
@@ -5093,7 +5093,7 @@
     "kind": "problem",
     "title": "Compute the following integrals. (i)",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3MIIY",
@@ -5101,7 +5101,7 @@
     "kind": "problem",
     "title": "Compute the following integrals. \\(i\\) $\\displaystyle \\int_0^\\infty \\frac{\\sin x}{x} \\, dx$ (ii) $\\displaystyle \\int_0^\\infty (\\frac{\\sin x}{x})^2 \\, dx$ (iii)\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3OH6H",
@@ -5117,7 +5117,7 @@
     "kind": "problem",
     "title": "Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3YESG",
@@ -5125,7 +5125,7 @@
     "kind": "problem",
     "title": "State the standard Schwarz reflection principle involving\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-43AXY",
@@ -5181,7 +5181,7 @@
     "kind": "problem",
     "title": "Let $f$ be entire and suppose that $\\lim_{z \\rightarrow \\infty} f(z) = \\infty$. Show that $f$ is a polynomial.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-56PBT",
@@ -5253,7 +5253,7 @@
     "kind": "problem",
     "title": "Prove that $\\max_{\\abs z = 1} \\abs{a_0 + a_1 z + \\cdots + a_{n-1}z^{n-1} + z^n} \\geq 1$",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-7J6TM",
@@ -5261,7 +5261,7 @@
     "kind": "problem",
     "title": "Assume $f$ is an entire function such that $|f(z)|=1$ on $|z|=1$. Prove that $f(z)=e^{i \\theta} z^{n}$\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-7N3Y3",
@@ -5285,7 +5285,7 @@
     "kind": "problem",
     "title": "- Show that any power series is continuous on its domain of convergenc\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-7UTDI",
@@ -5325,7 +5325,7 @@
     "kind": "problem",
     "title": "Find all entire functions satisfying $\\abs{f(z)} \\leq \\abs{z}^{1\\over 2} \\quad\\text{ for } \\abs{z} > 10$",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-ACDEH",
@@ -5333,7 +5333,7 @@
     "kind": "problem",
     "title": "Let $f(z)$ be entire and assume that $f(z) \\leq M |z|^2$ outside some disk for some\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-AEWN6",
@@ -5373,7 +5373,7 @@
     "kind": "problem",
     "title": "Prove that the sequence $\\left(1+\\frac{z}{n}\\right)^{n}$ converges uniformly to $e^{z}$ on compact\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-B7CIT",
@@ -5381,7 +5381,7 @@
     "kind": "problem",
     "title": "Let $f$ and $g$ be non-zero analytic functions on a region $\\Omega$.\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-BGJFV",
@@ -5461,7 +5461,7 @@
     "kind": "problem",
     "title": "Let $f(z) \\in H({\\mathbb D})$, $\\text{Re}(f(z)) >0$, $f(0)= a>0$. Show that $|\\frac{f(z)-a}{f(z)+a}| \\leq |z|, \\; \\; \\; |f'(0)| \\leq 2a$",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-CWELY",
@@ -5493,7 +5493,7 @@
     "kind": "problem",
     "title": "Let $n\\in \\ZZ^{\\geq 0}$ and show that the equation $e^z = az^n$ has $n$ solutions in the open\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-DEJGY",
@@ -5557,7 +5557,7 @@
     "kind": "problem",
     "title": "Show that if $a>0$, then $\\int_{0}^{\\infty} \\frac{\\log x}{x^{2}+a^{2}} d x=\\frac{\\pi}{2 a} \\log a$",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-E5NRO",
@@ -5581,7 +5581,7 @@
     "kind": "problem",
     "title": "Find the number of roots of $z^4 - 6z + 3 =0$ in $|z|<1$ and $1 < |z| < 2$ respectively.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-EER5M",
@@ -5661,7 +5661,7 @@
     "kind": "problem",
     "title": "Prove the following: $\\sum_{n} nz^n$ does not converge at any point of $S^1$ $\\sum_n {z^n \\over n^2}$\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-F7Y7R",
@@ -5749,7 +5749,7 @@
     "kind": "problem",
     "title": "Show that if $f: D(0, R) \\rightarrow \\mathbb{C}$ is holomorphic, with $|f(z)| \\leq M$ for some $M>0$, then $\\left|\\frac{f(z)-f(0)}{M^{2}-\\overline{f(0)} f(z)}\\right| \\leq \\frac{|z|}{M R}$",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-G2RYI",
@@ -5861,7 +5861,7 @@
     "kind": "problem",
     "title": "Suppose $f:\\DD\\to \\DD$ is analytic. Prove that $\\forall a\\in \\DD, \\qquad {\\abs{f'(a)} \\over 1 - \\abs{f(a)}^2 } \\leq {1 \\over 1 - \\abs{a}^2}$",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-I2KZL",
@@ -5869,7 +5869,7 @@
     "kind": "problem",
     "title": "Prove that $f(z) = \\abs{z}^2$ has a derivative at $z=0$ and nowhere else.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-IZZ3T",
@@ -5917,7 +5917,7 @@
     "kind": "problem",
     "title": "Show that if $f$ is once complex differentiable at each point\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-JPP6O",
@@ -5949,7 +5949,7 @@
     "kind": "problem",
     "title": "Show that $\\int_{0}^{\\infty} \\frac{\\sin x}{x} d x=\\frac{\\pi}{2}$",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-K3HOZ",
@@ -6109,7 +6109,7 @@
     "kind": "problem",
     "title": "Suppose $D$ is a domain and $f, g$ are analytic on $D$. Prove that if $fg = 0$\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-NVJN5",
@@ -6357,7 +6357,7 @@
     "kind": "problem",
     "title": "Prove that if $z\\mapsto f(z)$ is analytic, then $z \\mapsto \\bar{f(\\bar z)}$ is analytic.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-TLNGT",
@@ -6685,7 +6685,7 @@
     "kind": "problem",
     "title": "Prove that $z^4 + 2z^3 -2z + 10$ has exactly one root in each open",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-ZAS5Z",
@@ -6733,7 +6733,7 @@
     "kind": "problem",
     "title": "Let $\\bar B(a, r)$ denote the closed disc of radius $r$ about $a\\in \\CC$. Let $f$ be\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-ZSAPA",
