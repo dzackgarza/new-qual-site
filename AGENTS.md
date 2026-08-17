@@ -61,6 +61,40 @@ a finding that the two cards are the same statement, and it must never be wired
 to anything that acts on that reading. A check whose name claims more than it
 measured is the same defect in smaller form.
 
+## This corpus is authored mathematics, not a database
+
+Every field on a card — title, solved, relations, classification, body — is
+content a human wrote or should write. A gap in a field is curation work, not a
+tooling problem. Start from that assumption and never invert it.
+
+The default agent error is to treat authored content as data to be derived: a
+title becomes "the opening of the statement, clipped," identity becomes "a
+fingerprint match," classification becomes "a tag lookup," solution status
+becomes "a flag to flip." Each inversion turns curation work into a heuristic
+that produces content passing a check while a human author was needed. The 1644
+card titles ending in `…` (issue #45), the `\mathbf{Q}`/`\mathbb{Q}` collapse in
+`loose()`, and the `collapse_duplicates.py` merges are what this looks like when
+it ships.
+
+If you find a tool that fills an authored field by heuristic, that tool is
+laundering, not a feature. Engage with its existence, not its implementation. Do
+not debate whether it should use regex or an AST. Do not improve its accuracy.
+Do not write tests for it. The question is whether a human should have written
+what the tool wrote. If a human should have, the tool is laundering.
+
+A test that asserts a heuristic's behavior as correct is proof-laundering. The
+test encodes the defect as desired behavior. `test_loose_equates` asserted that
+`\mathbf{Q}` and `\mathbb{Q}` normalize to the same fingerprint — it took the
+side of the bug against the corpus. A test that proves a heuristic works is not
+evidence that the heuristic should exist.
+
+Do not adopt a tool's vocabulary. "Mint," "upstream," "reconcile," "statement
+identity," "loose" — if a concept exists only because a heuristic named its own
+output, it is not a real concept. State what the tool does in plain terms: it
+generates text, it collapses notation, it clips sentences, it compares
+fingerprints. If the plain description is "it decides a semantic question a
+human should decide," that is the finding.
+
 # Solution status
 
 Every problem and exercise card declares `solved: true|false` in its own
