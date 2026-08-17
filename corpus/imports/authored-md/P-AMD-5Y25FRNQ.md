@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-5Y25FRNQ
 kind: problem
-title: 'Given: $A_n$ is simple for $n\geq 5$'
+title: $A_n$ ($n\geq 5$) has a subgroup of index $n$ but none of smaller index
 classification:
   areas:
   - algebra

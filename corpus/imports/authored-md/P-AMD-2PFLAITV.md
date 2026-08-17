@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-2PFLAITV
 kind: problem
-title: 'Show: $|G| < 60$ and $G$ nonabelian $\implies G$ is not simple.'
+title: Nonabelian groups of order less than $60$ are not simple
 classification:
   areas:
   - algebra

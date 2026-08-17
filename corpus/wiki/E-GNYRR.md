@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GNYRR
 kind: exercise
-title: "Prove Cayley-Hamilton in the following way."
+title: Cayley-Hamilton via invariant flags of an eigenbasis
 classification:
   areas:
   - algebra

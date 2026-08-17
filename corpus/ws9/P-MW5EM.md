@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MW5EM
 kind: problem
-title: "Consider the statement:"
+title: Negation, converse, and contrapositive of "if there exists a purple apple, then all lemons are pink"
 classification:
   areas:
   - prelim

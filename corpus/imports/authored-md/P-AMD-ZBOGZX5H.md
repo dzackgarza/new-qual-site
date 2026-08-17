@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ZBOGZX5H
 kind: problem
-title: For any space $X$, show that $H^1(X)$ is free abelian
+title: $H^1(X)$ is free abelian
 classification:
   areas:
   - topology

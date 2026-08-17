@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TIRTE
 kind: problem
-title: "$\\Leftarrow$: Main Idea: Projection and inclusion are homotopy inverses."
+title: Contractible if and only if the identity is nullhomotopic
 classification:
   areas:
   - topology

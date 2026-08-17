@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PGDJ2
 kind: problem
-title: How many zeros does the polynomial
+title: Zeros of $z^9+z^6+30z^5-3z+2$ in the annulus $1\le|z|\le 3$
 classification:
   areas:
   - real-analysis

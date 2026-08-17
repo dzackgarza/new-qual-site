@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FX46W
 kind: problem
-title: "Define \u201crepresentation\u201d of a group."
+title: 'Representations of finite groups: irreducibles, complete reducibility, and invariant inner products'
 classification:
   areas:
   - algebra

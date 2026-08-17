@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-S7C4CCIUTP
 kind: problem
-title: Use Green theorem or otherwise to prove the Cauchy theorem.
+title: Cauchy's theorem
 classification:
   areas:
   - complex-analysis

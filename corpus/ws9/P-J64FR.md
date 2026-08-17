@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J64FR
 kind: problem
-title: Consider the complex Hilbert space
+title: Boundedness of $f\mapsto f(1)$ on a weighted Hardy space, its Riesz representer, and the maximum of $\operatorname{Re}f(1)$ on $\{f:\|f\|\le 1,\,f(0)=0\}$
 classification:
   areas:
   - real-analysis

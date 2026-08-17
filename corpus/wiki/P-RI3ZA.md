@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RI3ZA
 kind: problem
-title: "False: take $K \\leq L \\leq M$ as $\\QQ \\leq \\QQ(\\sqrt[3]2) \\leq \\QQ(\\sqrt[3]2, \\zeta_3)$."
+title: Normality of field extensions is not transitive
 classification:
   areas:
   - algebra

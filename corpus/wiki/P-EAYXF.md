@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EAYXF
 kind: problem
-title: "$\\displaystyle \\int \\frac {e^x}{e^x + 1} ~dx = \\color{blue} {\\ln (e^x + 1)}\u200b$ Solution: $u = e^x + 1\u200b$, $du = e^x ~dx \u200b$ Used 2018 Used 2019"
+title: Evaluate $\int\frac{e^x}{e^x+1}\,dx$
 classification:
   areas:
   - prelim

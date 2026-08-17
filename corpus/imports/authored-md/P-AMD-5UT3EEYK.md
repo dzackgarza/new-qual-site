@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-5UT3EEYK
 kind: problem
-title: 'Show: TFAE; $\text{clos}(H)$ satisfies:'
+title: Equivalent characterizations of the normal closure of a subgroup
 classification:
   areas:
   - algebra

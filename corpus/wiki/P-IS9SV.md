@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IS9SV
 kind: problem
-title: 'For arbitrary $x, y \in A$, we need to check the following:'
+title: Evaluation makes $A$ a module over $\mathrm{End}(A)$
 classification:
   areas:
   - algebra

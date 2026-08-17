@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OZXQA
 kind: problem
-title: Determine the number of distinct solutions of the equation
+title: The number of distinct solutions of $e^{z^2}=5z^5$ in $|z|\le 1$
 classification:
   areas:
   - real-analysis

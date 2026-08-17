@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-FV5LNKN4
 kind: problem
-title: 'This identification space:'
+title: Cube with opposite faces identified
 classification:
   areas:
   - topology

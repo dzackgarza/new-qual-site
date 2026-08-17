@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CAEXKRPGEP
 kind: problem
-title: Consider the ring
+title: Units and maximal ideals of $C[0,1]$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ZO6DF2Q5
 kind: problem
-title: 'Write down the fundamental group of the following spaces:'
+title: Fundamental groups of punctured Euclidean spaces, spherical quotients, and the Hopf link complement
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HQ6DM
 kind: problem
-title: "Definition: We say $A \\sim B$ in $M_n(R)$ $\\iff$ there exists an invertible $P$ such that $B=PAP\\inv$."
+title: Similarity and equivalence of matrices are equivalence relations
 classification:
   areas:
   - algebra

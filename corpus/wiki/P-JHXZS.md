@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHXZS
 kind: problem
-title: "$\\displaystyle \\int 2018^x ~dx = \\color {blue} {\\frac {2018^x}{\\ln (2018)}}$ Used 2018"
+title: Evaluate $\int 2018^x\,dx$
 classification:
   areas:
   - prelim

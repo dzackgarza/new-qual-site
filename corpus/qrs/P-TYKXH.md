@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TYKXH
 kind: problem
-title: "For $s>0$, the gamma function is defined by $\\displaystyle{\\Gamma(s)=\\int_0^{\\infty} e^{-t}t^{s-1} dt}$."
+title: Analyticity of $\Gamma(s)$ for $\Re(s)>0$ and the reflection formula
 classification:
   areas:
   - complex-analysis

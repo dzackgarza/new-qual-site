@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FRWVZ
 kind: exercise
-title: "$\\int_{0}^{\\infty} \\frac{\\cos (x)}{x^{2}+b^{2}} d x=\\frac{\\pi \\mathrm{e}^{-b}}{2 b} .$ Extend to $\\int_\\RR$ using that $f$ is even."
+title: $\int_0^{\infty}\frac{\cos x}{x^2+b^2}\,dx=\frac{\pi e^{-b}}{2b}$
 classification:
   areas:
   - complex-analysis

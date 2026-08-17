@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-GEBWFMJF
 kind: problem
-title: Prove the Ham Sandwich theorem.
+title: Ham Sandwich theorem
 classification:
   areas:
   - topology

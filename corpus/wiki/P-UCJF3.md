@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCJF3
 kind: problem
-title: "Prove the following portion of van Kampen's theorem."
+title: 'van Kampen''s theorem: the surjection $\pi_1(A)*\pi_1(B)\to\pi_1(A\cup B)$'
 classification:
   areas:
   - topology

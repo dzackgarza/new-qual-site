@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7NQO2
 kind: problem
-title: "Useful facts: $X \\surjects_{\\times p} Y$ induces $\\chi(X) = p\\chi(Y)$"
+title: Euler characteristic obstructs a free $\ZZ_2$-action on a 4-manifold
 classification:
   areas:
   - topology

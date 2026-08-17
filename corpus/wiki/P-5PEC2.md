@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5PEC2
 kind: problem
-title: "Let's look at $\\SL_2(\\FF_3)$."
+title: Order, centre, and $\PSL_2(\FF_3)$ as a permutation group
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PPWDW
 kind: problem
-title: "Find a conformal map from the strip $\\theset{z\\in \\CC \\suchthat 0 < \\Im(z) < 1}$ to $\\HH$."
+title: A conformal map from the strip $\{0<\Im z<1\}$ onto $\HH$
 classification:
   areas:
   - complex-analysis

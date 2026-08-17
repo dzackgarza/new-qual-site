@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CZFJJ
 kind: problem
-title: "Consider the polynomial ring $\\mathbb{Z}[x]$."
+title: The quotients $\mathbb{Z}[x]/(2,x^2+3x-1)$ and $\mathbb{Z}[x]/(2,x^3+3x^2-x+4)$
 classification:
   areas:
   - prelim

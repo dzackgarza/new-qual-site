@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L7Z4E
 kind: problem
-title: "Show there is no homeomorphism $\\CP^2 \\mapsvia{f} \\CP^2$ such that $f(\\CP^1)$ is disjoint from $\\CP_1 \\subset \\CP_2$."
+title: No homeomorphism of $\CP^2$ takes $\CP^1$ off $\CP^1$
 classification:
   areas:
   - topology

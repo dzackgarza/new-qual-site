@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YCRKO
 kind: problem
-title: "Define the derived series."
+title: The derived series, the commutator, and two theorems on derived series
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZNZ4X
 kind: problem
-title: "Define the \"radical\" of an ideal."
+title: The radical of an ideal is an ideal, and $I(Z(I))=\sqrt{I}$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XAQEZ
 kind: problem
-title: "We start with a few known facts."
+title: Homology of $\RP^2$ via Mayer-Vietoris
 classification:
   areas:
   - topology

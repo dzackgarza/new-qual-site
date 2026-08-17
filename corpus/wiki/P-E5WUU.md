@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E5WUU
 kind: problem
-title: "$\\displaystyle \\int_0^1 \\int_y^1 \\sin (x^2) ~dx dy = \\color {blue} {\\sin ^2 (\\frac {1}{2})}$"
+title: Evaluate $\int_0^1\int_y^1\sin(x^2)\,dx\,dy$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N47GH
 kind: problem
-title: "Write the character table for $S_4$."
+title: The character table of $S_4$
 classification:
   areas:
   - algebra

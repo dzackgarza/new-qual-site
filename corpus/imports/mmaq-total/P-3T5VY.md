@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3T5VY
 kind: problem
-title: Find the number of zeroes, counting multiplicities, of the polynomial
+title: Number of zeros of $2z^5-6z^2-z+1$ in the annulus $1\leq|z|\leq 2$
 classification:
   areas:
   - complex-analysis

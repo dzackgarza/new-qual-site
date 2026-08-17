@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-7INMAFDG
 kind: problem
-title: 'This identification space:'
+title: Triangular prism with bases identified by a $2\pi/3$ rotation
 classification:
   areas:
   - topology

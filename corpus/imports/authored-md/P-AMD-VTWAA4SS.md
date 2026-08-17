@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-VTWAA4SS
 kind: problem
-title: "Given: $|G| = n, G$ cyclic, $\\sigma_i: G \\rightarrow G \\ni x \\mapsto x^i$"
+title: $\mathrm{Aut}(C_n)\cong(\ZZ/n\ZZ)^\times$ via $x\mapsto x^i$
 classification:
   areas:
   - algebra

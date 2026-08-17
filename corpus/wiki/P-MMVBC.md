@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMVBC
 kind: problem
-title: "Find the Galois group of $x^4 - 2$ over Q."
+title: The Galois group of $x^4-2$ over $\QQ$
 classification:
   areas:
   - algebra

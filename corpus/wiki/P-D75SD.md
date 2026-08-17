@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-D75SD
 kind: problem
-title: "$\\displaystyle \\int \\sin(x) \\cos (\\cos (x)) ~dx = \\color{blue} {- \\sin (\\cos (x))}\u200b$ Solution: $u = \\cos (x)\u200b$, $du = - \\sin (x)~dx \u200b$ Used 2018"
+title: Evaluate $\int\sin(x)\cos(\cos(x))\,dx$
 classification:
   areas:
   - prelim

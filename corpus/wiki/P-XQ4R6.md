@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XQ4R6
 kind: problem
-title: "The elementary divisors are given by:"
+title: Invariant factors from the elementary divisors $(x-1)^3$, $(x-1)$, $(x^2+1)^4$, $(x^2+1)^2$, $(x^2+1)^2$, and $(x+2)$
 classification:
   areas:
   - algebra

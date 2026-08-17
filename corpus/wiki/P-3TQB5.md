@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3TQB5
 kind: problem
-title: "In each part of this problem $X$ is a compact topological space."
+title: Nested closed versus open sets in a compact space
 classification:
   areas:
   - topology

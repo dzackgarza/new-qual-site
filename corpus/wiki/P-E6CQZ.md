@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E6CQZ
 kind: problem
-title: "Consider $\\SL_2(R)$ acting on $\\RR^2$ by matrix multiplication."
+title: Stabilizers for $\SL_2(\RR)$ acting on $\RR^2$ and by Möbius transformations
 classification:
   areas:
   - algebra

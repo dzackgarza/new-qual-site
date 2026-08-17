@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZCY6S
 kind: problem
-title: "What can you say about characters?"
+title: Character orthogonality and detecting irreducible constituents
 classification:
   areas:
   - algebra

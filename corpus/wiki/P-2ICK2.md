@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2ICK2
 kind: problem
-title: "Facts Used $\\pi_1(\\bigvee^k S^1) = \\ZZ^{\\ast k}$ $\\tilde X \\surjects X \\implies \\pi_1(\\tilde X) \\injects \\pi_1(X)$ Every subgroup $G \\leq \\pi_1(X)$ corresponds to a covering space $X_G \\surjects X$"
+title: Free group $F_2$ contains $F_n$ and $F_\infty$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XTPAP
 kind: problem
-title: "Main Idea: Nothing to it."
+title: Homotopy types of the letters of the alphabet
 classification:
   areas:
   - topology

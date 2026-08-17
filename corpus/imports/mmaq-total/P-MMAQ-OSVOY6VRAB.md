@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-OSVOY6VRAB
 kind: problem
-title: Describe the Galois group and the intermediate fields of the cyclotomic
+title: Galois group and intermediate fields of $\mathbb Q(\zeta_{12})/\mathbb Q$
 classification:
   areas:
   - algebra

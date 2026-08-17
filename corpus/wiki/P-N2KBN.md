@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N2KBN
 kind: problem
-title: "I give you two matrices over a field."
+title: Conjugacy of matrices over a field and over its algebraic closure
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-P5BF6
 kind: exercise
-title: "Notation: let $N$ or $N(R)$ be the set of nilpotents in $R$."
+title: Nilpotents, units, and zero-divisors in $R[x]$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HI4U2
 kind: problem
-title: "What are the following objects?"
+title: The rings and fields $K[x]$, $K(x)$, $K[\alpha]$, and $K(\alpha)$
 classification:
   areas:
   - algebra

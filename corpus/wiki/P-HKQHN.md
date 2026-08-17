@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HKQHN
 kind: problem
-title: "Fall 2016.2"
+title: Fall 2016.2 (image missing)
 classification:
   areas:
   - real-analysis

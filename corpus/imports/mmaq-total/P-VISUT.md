@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VISUT
 kind: problem
-title: This question concerns an extension $K$ of $\mathbb Q$ such that
+title: Unique Galois quartic $\QQ(\sqrt{d_1},\sqrt{d_2})$ in a nonabelian Galois octic $K/\QQ$; $d_1,d_2>0$ when $G=Q_8$
 classification:
   areas:
   - algebra

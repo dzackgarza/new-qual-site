@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YOLB7
 kind: problem
-title: "Prove the Cayley-Hamilton theorem."
+title: Cayley-Hamilton theorem
 classification:
   areas:
   - algebra

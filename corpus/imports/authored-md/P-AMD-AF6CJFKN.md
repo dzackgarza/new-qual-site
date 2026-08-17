@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-AF6CJFKN
 kind: problem
-title: Prove Cauchy's Theorem. Given $p\divides o(G) <\infty$
+title: Cauchy's theorem
 classification:
   areas:
   - algebra

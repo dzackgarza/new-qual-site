@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JTLTW
 kind: problem
-title: Then $\size G = p^3$ and $G$ is a $p\dash$group.
+title: Nontrivial centre of a group of order $p^3$
 classification:
   areas:
   - algebra

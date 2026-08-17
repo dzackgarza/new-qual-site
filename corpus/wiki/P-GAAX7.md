@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GAAX7
 kind: problem
-title: "Since $G$ is a $p\\dash$group, it has a nontrivial center."
+title: Derived subgroup equals the centre for nonabelian groups of order $p^3$
 classification:
   areas:
   - algebra

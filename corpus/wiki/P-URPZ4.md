@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-URPZ4
 kind: problem
-title: "Find the number of solutions to the following equation on $\\abs{z} < 1$: $6z^3 + 1 = -e^z$"
+title: The number of solutions of $6z^3+1=-e^z$ in $|z|<1$
 classification:
   areas:
   - complex-analysis

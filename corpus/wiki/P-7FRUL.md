@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7FRUL
 kind: problem
-title: "Facts used: $H_(T^2) = [\\ZZ, \\ZZ^2, \\ZZ, 0\\rightarrow]$ $N^{(1)} \\homotopic S^1$, so $H_{\\geq 2}(N) = 0$."
+title: Homology of the complement of a knotted solid torus in $S^3$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZJFFS
 kind: problem
-title: "Take a quadratic extension of a field of characteristic 0."
+title: Quadratic extensions in characteristic 0 are Galois; stacked quadratics need not be
 classification:
   areas:
   - algebra

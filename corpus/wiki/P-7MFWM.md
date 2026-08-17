@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7MFWM
 kind: problem
-title: "Say we can find a matrix $A$ such that $\\exp(A) = B$ for $B$ in $SL_n(\\RR)$."
+title: If $\exp(A)=B\in\SL_n(\RR)$, must $A\in\SL_n(\RR)$?
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-6TSC527D
 kind: problem
-title: 'This identification space:'
+title: Tetrahedron with pairwise face identifications
 classification:
   areas:
   - topology

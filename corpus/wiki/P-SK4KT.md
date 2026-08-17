@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SK4KT
 kind: problem
-title: "Since $A$ is $2\\times 2$ and has 2 eigenvalues, noting that $\\deg \\chi_A(x) = 2$, we have $\\chi_A(x) = (x-1)(x+1) = x^2 -1$."
+title: When does a matrix with eigenvalues $\pm 1$ satisfy $A^2=I$?
 classification:
   areas:
   - prelim

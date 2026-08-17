@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-WFZJNWCF
 kind: problem
-title: 'Given: $|G| < \infty$, $H \leq G$ maximal $\implies [G:H] = p$, a prime.'
+title: Finite groups whose maximal subgroups have prime index are solvable; $[G:H]\equiv 1\pmod p$ when $N_G(P)\le H$; the Sylow subgroup for the largest prime is normal
 classification:
   areas:
   - algebra

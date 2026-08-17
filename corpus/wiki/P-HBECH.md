@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HBECH
 kind: problem
-title: "How many surfaces are there, up to homeomorphism, which are:"
+title: Compact connected surfaces of Euler characteristic $-3$, possibly with boundary or nonorientable
 classification:
   areas:
   - topology

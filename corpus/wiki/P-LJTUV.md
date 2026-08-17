@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LJTUV
 kind: problem
-title: "Since $T^n = \\prod_nS^1$, we have $\\pi_1(T^n) = \\prod_n \\pi_1(S^1) = \\ZZ^n$."
+title: $\pi_i(T^n)=0$ for $i\geq 2$
 classification:
   areas:
   - topology

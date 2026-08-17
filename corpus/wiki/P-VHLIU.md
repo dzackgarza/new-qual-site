@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VHLIU
 kind: problem
-title: "Consider the following matrix:"
+title: Minimal polynomial and Jordan form of $\begin{pmatrix}1&3&3\\2&2&3\\-1&-2&-2\end{pmatrix}$
 classification:
   areas:
   - algebra

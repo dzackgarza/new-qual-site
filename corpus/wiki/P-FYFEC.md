@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FYFEC
 kind: problem
-title: "Fall 2018.5"
+title: Fall 2018.5 (image missing)
 classification:
   areas:
   - real-analysis

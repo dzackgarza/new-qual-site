@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-JXFYCMO7
 kind: problem
-title: 'Show $\tor_R^*(\cdot, \cdot)$ is symmetric in the following way:'
+title: $\mathrm{Tor}_R^*$ is symmetric
 classification:
   areas:
   - topology

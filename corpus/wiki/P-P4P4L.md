@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P4P4L
 kind: problem
-title: "Facts used: $M$ closed, connected, oriented $\\implies H_i(M)\\cong H^{n-i}(M)$"
+title: Homology of a closed oriented 3-manifold with $\pi_1=\ZZ^{*2}$
 classification:
   areas:
   - topology

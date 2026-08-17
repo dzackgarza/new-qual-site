@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GEVBZ
 kind: exercise
-title: "Prove the rank-nullity theorem using JCF."
+title: Rank-nullity theorem via Jordan canonical form
 classification:
   areas:
   - algebra

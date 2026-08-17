@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LHIOI
 kind: problem
-title: Since $(r, s) = (1)$, we can find $t_1, t_2 \in R$ such that
+title: If $A=Ra$ with $ra=0$ and $(r,s)=(1)$, then $A=sA$ and $A[s]=0$
 classification:
   areas:
   - algebra

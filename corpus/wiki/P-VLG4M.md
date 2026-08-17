@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VLG4M
 kind: problem
-title: "Spring 2012"
+title: Spring 2012 (image missing)
 classification:
   areas:
   - real-analysis

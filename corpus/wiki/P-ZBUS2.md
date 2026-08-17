@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZBUS2
 kind: problem
-title: "Do you know any representation theory?"
+title: Character table of $A_4$
 classification:
   areas:
   - algebra

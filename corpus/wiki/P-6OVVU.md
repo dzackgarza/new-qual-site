@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6OVVU
 kind: problem
-title: "Main Idea: Using a funky deformation retract."
+title: Deformation retract of $\RR^3\setminus S^1$ onto $S^2\vee S^1$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-AY43ETMO
 kind: exercise
-title: Argue that $A_n$ is simple for $n \geq 5$.
+title: $A_n$ is simple for $n\geq 5$
 classification:
   areas:
   - algebra

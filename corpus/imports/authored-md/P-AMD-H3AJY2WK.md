@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-H3AJY2WK
 kind: problem
-title: 'Given: $G \actson X$ transitively, $H \normal G$'
+title: Orbits of a normal subgroup in a transitive $G$-set
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NYUXU
 kind: problem
-title: "Given $H\\subseteq G$, let $S(H)= \\bigcup_{g\\in G} gHg^{-1}$, so $\\abs{S(H)}$ is the number of conjugates to $H$."
+title: Number of conjugates of a subgroup equals $[G:N_G(H)]$
 classification:
   areas:
   - algebra

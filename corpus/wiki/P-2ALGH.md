@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2ALGH
 kind: problem
-title: "$\\displaystyle \\int \\ln ^2 (x) ~dx = \\color{blue} {2 x - 2 x \\ln (x) + x \\ln ^2 (x)}\u200b$ Solution: $u = \\ln ^2 (x)\u200b$, $v = x\u200b$, $du = \\frac {2 \\ln (x)}{x} ~dx\u200b$, $dv = dx\u200b$"
+title: Evaluate $\int(\ln x)^2\,dx$ and $\int x^a e^{bx}\,dx$
 classification:
   areas:
   - prelim

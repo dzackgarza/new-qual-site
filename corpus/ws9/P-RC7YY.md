@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RC7YY
 kind: problem
-title: "Define unitary operator on a complex Hilbert space."
+title: Unitary operators, invertibility of $S-\lambda I$ for $|\lambda|<1$, and the positive harmonic function $\operatorname{Re}\langle(S+\lambda I)(S-\lambda I)^{-1}v,v\rangle$
 classification:
   areas:
   - real-analysis

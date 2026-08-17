@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-K5GCBZ3LXD
 kind: problem
-title: "Use $n$-th roots of unity (i.e. solutions of $z^n - 1 =0$) to show that $2^{n-1} \\sin\\frac{\\pi}{n} \\sin\\frac{2\\pi}{n} \\cdots \\sin\\frac{(n-1)\\pi}{n} = n \\;$"
+title: $2^{n-1}\prod_{k=1}^{n-1}\sin(k\pi/n)=n$
 classification:
   areas:
   - complex-analysis

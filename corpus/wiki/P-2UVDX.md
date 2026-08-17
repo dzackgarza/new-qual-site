@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2UVDX
 kind: problem
-title: "Prove by justifying all steps that for all $\\xi \\in {\\mathbb C}$ we have $\\displaystyle e^{- \\pi \\xi^2} = \\int_{- \\infty}^\\infty e^{- \\pi x^2} e^{2 \\pi i x \\xi} dx \\; .$"
+title: $e^{-\pi\xi^2}=\int_{-\infty}^\infty e^{-\pi x^2}e^{2\pi i x\xi}\,dx$ for all $\xi\in\CC$
 classification:
   areas:
   - complex-analysis

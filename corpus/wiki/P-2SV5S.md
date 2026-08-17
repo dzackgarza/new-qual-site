@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2SV5S
 kind: problem
-title: "Find the Laurent expansion of $f(z) = {z+1 \\over z(z-1)^2}$ about $z=0$ and $z=1$ respectively."
+title: Laurent expansions of $\frac{z+1}{z(z-1)^2}$ about $z=0$ and $z=1$
 classification:
   areas:
   - complex-analysis

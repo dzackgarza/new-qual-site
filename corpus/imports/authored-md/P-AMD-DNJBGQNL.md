@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-DNJBGQNL
 kind: problem
-title: 'Show: $Inn(G) ~\text{char}~ Aut(G)$'
+title: $Inn(G)$ is characteristic in $Aut(G)$
 classification:
   areas:
   - algebra

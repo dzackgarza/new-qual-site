@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z6THT
 kind: problem
-title: "Facts used: Homotopy LES Hurewicz $0\\to A\\to B \\to 0$ exact iff $A\\cong B$"
+title: Homotopy groups of the total space of $S^3\to E\to S^5$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QFLQB
 kind: problem
-title: "Figure 8 Here we have: $C_3 = \\emptyset$ $C_1 = [12], [23], [13], [34], [35], [45] \\cong \\ZZ^6$ $C_0 = [1], [2], [3],[4], [5] \\cong \\ZZ^5$"
+title: Simplicial homology of a figure-eight graph
 classification:
   areas:
   - topology

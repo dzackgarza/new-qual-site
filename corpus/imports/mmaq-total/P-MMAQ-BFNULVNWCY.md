@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-BFNULVNWCY
 kind: problem
-title: Consider the polynomial $f(x)=x^{10}+x^5+1\in\mathbb Q[x]$ with
+title: Irreducibility, degree, and Galois group of $x^{10}+x^5+1$ over $\QQ$
 classification:
   areas:
   - algebra

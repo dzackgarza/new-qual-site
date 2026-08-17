@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EZTGT
 kind: problem
-title: "Define p-adic numbers."
+title: $p$-adic numbers and valuations
 classification:
   areas:
   - algebra

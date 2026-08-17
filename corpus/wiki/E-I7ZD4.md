@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-I7ZD4
 kind: exercise
-title: "Prove Cayley-Hamilton using the JCF."
+title: Cayley-Hamilton via Jordan canonical form
 classification:
   areas:
   - algebra

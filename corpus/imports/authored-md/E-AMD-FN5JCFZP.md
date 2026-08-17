@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-FN5JCFZP
 kind: exercise
-title: Prove the Cayley-Hamilton theorem.
+title: Cayley-Hamilton theorem
 classification:
   areas:
   - algebra

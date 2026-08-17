@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ATOBPDNNIL
 kind: problem
-title: "For $n\\in \\NN$, define $e_{n}=\\left(1+\\frac{1}{n}\\right)^{n} \\quad \\text { and } \\quad E_{n}=\\left(1+\\frac{1}{n}\\right)^{n+1}$"
+title: Bernoulli's inequality and the sequences $(1+1/n)^n$, $(1+1/n)^{n+1}$
 classification:
   areas:
   - real-analysis

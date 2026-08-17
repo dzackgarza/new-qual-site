@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OY3KM
 kind: problem
-title: "Define \u201cNoetherian ring\u201d. give an example."
+title: Definition and an example of a Noetherian ring
 classification:
   areas:
   - algebra

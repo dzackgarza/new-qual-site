@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SB67D
 kind: problem
-title: "Is the following map an isomorphism?"
+title: Is $\ZZ[t]/(t^p-1)\to\ZZ[w]$, $t\mapsto w$, an isomorphism?
 classification:
   areas:
   - algebra

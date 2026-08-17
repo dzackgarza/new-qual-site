@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YZ2WZ
 kind: problem
-title: "This problem may be much harder than expected."
+title: Measurability of $\{(x,y):\mu\{z:f(x,z)=f(x,y)\}>0\}$
 classification:
   areas:
   - real-analysis

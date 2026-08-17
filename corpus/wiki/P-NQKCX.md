@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NQKCX
 kind: problem
-title: "Useful facts: $T^2 = e^0 + e^1_1 + e^1_2 + e^2$ as a CW complex."
+title: $\pi_2(T^2)$
 classification:
   areas:
   - topology

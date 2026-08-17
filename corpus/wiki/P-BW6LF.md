@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BW6LF
 kind: problem
-title: "Construct a space having $H_(X) = [\\ZZ, 0, 0, 0, 0, \\ZZ_4, 0, \\cdots]$."
+title: A space with $H_*(X)\cong(\ZZ,0,0,0,0,\ZZ_4,0,\ldots)$
 classification:
   areas:
   - topology

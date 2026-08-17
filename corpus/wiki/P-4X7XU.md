@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4X7XU
 kind: problem
-title: Find a conformal map that maps the region
+title: A conformal map from $\{\Re z>0,\ |z-1/2|>1/2\}$ onto $\HH$
 classification:
   areas:
   - complex-analysis

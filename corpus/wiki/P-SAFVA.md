@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SAFVA
 kind: problem
-title: "$\\displaystyle \\int \\ln (ax + b) ~dx = \\color{blue} {\\frac {ax + b}{a} \\ln (ax + b) - x}$ Solution: $u = \\ln (ax + b)\u200b$, $v = x\u200b$, $du = \\frac {a}{ax + b} ~dx\u200b$, $dv = dx\u200b$"
+title: Evaluate $\int\ln(ax+b)\,dx$
 classification:
   areas:
   - prelim

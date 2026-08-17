@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K7XDT
 kind: problem
-title: "Find a conformal map from $\\theset{z\\in \\CC\\suchthat \\abs{z-i} > 1,\\, \\Re(z) > 0}$ to $\\HH$."
+title: A conformal map from $\{\Re z>0,\ |z-i|>1\}$ onto $\HH$
 classification:
   areas:
   - complex-analysis

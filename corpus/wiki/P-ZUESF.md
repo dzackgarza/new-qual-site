@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZUESF
 kind: problem
-title: "Here, since $n_p \\divides q$, we must have $n_p < q$."
+title: $n_p=1$ when $n_p\mid q<p$
 classification:
   areas:
   - algebra

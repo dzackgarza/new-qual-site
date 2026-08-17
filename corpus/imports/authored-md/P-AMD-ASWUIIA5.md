@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ASWUIIA5
 kind: problem
-title: 'Given: $R$ a commutative ring, $G$ a finite group, $RG$ a group ring.'
+title: Class sums form an $R$-basis of the center of the group ring $RG$
 classification:
   areas:
   - algebra

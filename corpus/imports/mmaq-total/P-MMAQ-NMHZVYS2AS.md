@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-NMHZVYS2AS
 kind: problem
-title: 'Give definitions of the following terms:'
+title: Length of a module, composition series, and additivity of length along exact sequences
 classification:
   areas:
   - algebra

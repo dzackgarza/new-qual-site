@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KM66S
 kind: problem
-title: "Define a solvable group."
+title: Solvable groups, a nonabelian example, solvability of $A_4$, and normality of its index-$3$ subgroup
 classification:
   areas:
   - algebra

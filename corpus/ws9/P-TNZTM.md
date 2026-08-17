@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TNZTM
 kind: problem
-title: "Prove or disprove each of the following:"
+title: Whether $R[x]$ a PID implies $R$ is a field, conjugacy of cyclic subgroups of order $15$ in $S_8$, whether torsion-free $\mathbb{Z}$-modules are free, and whether degree-two extensions are Galois
 classification:
   areas:
   - prelim
