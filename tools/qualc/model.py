@@ -404,10 +404,11 @@ def to_json(document: pf.Doc) -> str:
 FILE_CAPTION = re.compile(r"\.(png|jpe?g|gif|svg|webp|pdf)$", re.IGNORECASE)
 
 
-LINKING_ELEMENTS = (
-    cast(type[pf.Element], vars(pf)["Link"]),
-    cast(type[pf.Element], vars(pf)["Image"]),
-)
+# panflute's stubs expose Link but not Image; both carry `.url`. Fetch Image
+# dynamically and narrow by isinstance against the tuple at runtime, then cast
+# for the attribute access mypy cannot narrow through the tuple.
+_Image = cast(type[pf.Element], vars(pf)["Image"])
+LINKING_ELEMENTS = (pf.Link, _Image)
 
 
 def _figure_targets(element: pf.Figure) -> list[str]:
@@ -417,7 +418,7 @@ def _figure_targets(element: pf.Figure) -> list[str]:
     def collect(node: pf.Element, doc: pf.Doc) -> pf.Element:
         del doc
         if isinstance(node, LINKING_ELEMENTS):
-            urls.append(cast(str, node.url))
+            urls.append(cast(pf.Link, node).url)
         return node
 
     pf.Doc(*element.content).walk(collect)
