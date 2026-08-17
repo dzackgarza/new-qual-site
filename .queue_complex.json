@@ -517,7 +517,7 @@
     "kind": "problem",
     "title": "Let $g$ be analytic for $|z|\\leq 1$ and $|g(z)| < 1$ for $|z| = 1$. Show that $g$ has a unique…",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-4QIWN",
@@ -533,7 +533,7 @@
     "kind": "problem",
     "title": "Apply Rouché's Theorem to prove the Fundamental Theorem of Algebra:",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-4ZZYV",
@@ -557,7 +557,7 @@
     "kind": "problem",
     "title": "Suppose $f: \\DD\\to \\HH$ is analytic and satisfies $f(0) = 2$. Find a sharp upper…",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-6YHN7",
@@ -717,7 +717,7 @@
     "kind": "problem",
     "title": "Suppose $f:\\DD\\to\\DD$ is analytic, has a single zero of order $k$ at $z=0$, and…",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-CIWAP",
@@ -957,7 +957,7 @@
     "kind": "problem",
     "title": "Suppose $f: \\CC\\to \\CC$ is entire and $\\abs{f(z)} \\leq \\abs{z}^{1\\over 2} \\quad\\text{ when } \\abs{z} > 10$ Prove that $f$ is constant.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-GPMVB",
@@ -1133,7 +1133,7 @@
     "kind": "problem",
     "title": "Find the number of roots of $p(z) = 4z^4 - 6z + 3$ in $\\abs{z} < 1$ an…",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-LLNJ7",
@@ -1189,7 +1189,7 @@
     "kind": "problem",
     "title": "Show that if $f$ is entire and $\\lim_{z\\to\\infty}f(z) = \\infty$, then",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-NC5CZ",
@@ -1269,7 +1269,7 @@
     "kind": "problem",
     "title": "Let $0<r<1$. Show that polynomials $P_n(z) = 1 + 2z + 3 z^2 + \\cdots + n z^{n-1}$ have no zeros in $|z|<r$ for all…",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-P2W6W",
@@ -1581,7 +1581,7 @@
     "kind": "problem",
     "title": "Suppose $\\theset{f_n}_{n\\in \\NN}$ is a sequence of entire functions where $f_n \\to g$ pointwise…",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-YV65T",

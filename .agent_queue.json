@@ -5157,7 +5157,7 @@
     "kind": "problem",
     "title": "Let $g$ be analytic for $|z|\\leq 1$ and $|g(z)| < 1$ for $|z| = 1$. Show that $g$ has a unique\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-4QIWN",
@@ -5173,7 +5173,7 @@
     "kind": "problem",
     "title": "Apply Rouch\u00e9's Theorem to prove the Fundamental Theorem of Algebra:",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-4ZZYV",
@@ -5221,7 +5221,7 @@
     "kind": "problem",
     "title": "Suppose $f: \\DD\\to \\HH$ is analytic and satisfies $f(0) = 2$. Find a sharp upper\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-6NMU2",
@@ -5445,7 +5445,7 @@
     "kind": "problem",
     "title": "Suppose $f:\\DD\\to\\DD$ is analytic, has a single zero of order $k$ at $z=0$, and\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-CIWAP",
@@ -5773,7 +5773,7 @@
     "kind": "problem",
     "title": "Suppose $f: \\CC\\to \\CC$ is entire and $\\abs{f(z)} \\leq \\abs{z}^{1\\over 2} \\quad\\text{ when } \\abs{z} > 10$ Prove that $f$ is constant.",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-GPMVB",
@@ -6013,7 +6013,7 @@
     "kind": "problem",
     "title": "Find the number of roots of $p(z) = 4z^4 - 6z + 3$ in $\\abs{z} < 1$ an\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-L2HGH",
@@ -6093,7 +6093,7 @@
     "kind": "problem",
     "title": "Show that if $f$ is entire and $\\lim_{z\\to\\infty}f(z) = \\infty$, then",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-NC5CZ",
@@ -6189,7 +6189,7 @@
     "kind": "problem",
     "title": "Let $0<r<1$. Show that polynomials $P_n(z) = 1 + 2z + 3 z^2 + \\cdots + n z^{n-1}$ have no zeros in $|z|<r$ for all\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-OS765",
@@ -6669,7 +6669,7 @@
     "kind": "problem",
     "title": "Suppose $\\theset{f_n}_{n\\in \\NN}$ is a sequence of entire functions where $f_n \\to g$ pointwise\u2026",
     "area": "complex-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-YV65T",
@@ -18709,7 +18709,7 @@
     "kind": "problem",
     "title": "Determine all entire functions $f$ (i.e., $f(z)$ is holomorphic on the\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-2SGBM",
@@ -18749,7 +18749,7 @@
     "kind": "problem",
     "title": "Show that the punctured unit disk $\\{z : 0 < |z| < 1\\}$ and the annulu\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3DGMZ",
@@ -18965,7 +18965,7 @@
     "kind": "problem",
     "title": "a. Define what is meant by a normal family of holomorphic functions on\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-7VK5X",
@@ -18981,7 +18981,7 @@
     "kind": "problem",
     "title": "Let $U$ be an open subset of $\\mathbb{C}$. We use the notion",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-ABRWU",
@@ -19069,7 +19069,7 @@
     "kind": "problem",
     "title": "Let $\\mu$ be Lebesgue measure on $\\mathbb{D}$. Let $H$ be the subspace\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-C53SG",
@@ -19117,7 +19117,7 @@
     "kind": "problem",
     "title": "Let $p_1,\\dots,p_n$ be distinct points in $\\mathbb{C}$ and let $U$ be\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-CQNPO",
@@ -19181,7 +19181,7 @@
     "kind": "problem",
     "title": "Let $f(z)$ be an analytic function on the entire complex plane $\\mathbb{C}$\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-E3HGI",
@@ -19277,7 +19277,7 @@
     "kind": "problem",
     "title": "Let $D \\subset \\mathbb{C}$ be the unit disk. Prove that every one-to-o\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-GB7EM",
@@ -19301,7 +19301,7 @@
     "kind": "problem",
     "title": "Let $f$ be a one-to-one analytic function defined on the unit disk $D$\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-GW4KD",
@@ -19469,7 +19469,7 @@
     "kind": "problem",
     "title": "Let $U \\subset \\mathbb{C}$ be an open set containing the closure $\\overline{D}$ of a unit disk.",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-JLPVR",
@@ -19541,7 +19541,7 @@
     "kind": "problem",
     "title": "Let $U \\subset \\mathbb{C}$ be an open set and",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-KBGYN",
@@ -19717,7 +19717,7 @@
     "kind": "problem",
     "title": "Let $U \\subset \\mathbb{C}$ be an open set containing $\\overline{D}(P,r)$.",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-OEFYN",
@@ -19765,7 +19765,7 @@
     "kind": "problem",
     "title": "Determine the number of distinct solutions of the equation",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-PAQ4K",
@@ -19805,7 +19805,7 @@
     "kind": "problem",
     "title": "How many zeros does the polynomial",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-PGDPX",
@@ -19877,7 +19877,7 @@
     "kind": "problem",
     "title": "Let $D = \\{z \\in \\mathbb{C} : |z| < 1\\}$ denote the unit disk. What is\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-QRCUN",
@@ -20813,7 +20813,7 @@
     "kind": "problem",
     "title": "Let $f(x) = \\frac{1}{x^2+1}$. Use residues to compute the Fourier tran\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RC7YY",
@@ -20837,7 +20837,7 @@
     "kind": "problem",
     "title": "Evaluate $\\int_0^\\infty \\frac{\\log x}{x^2+2}dx$ by contour integration\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RP7WR",
@@ -22197,7 +22197,7 @@
     "kind": "problem",
     "title": "Let $f$ be a holomorphic function in the punctured disk $\\{z : 0 < |z| < 2\\}$\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-TB7BG",
@@ -23373,7 +23373,7 @@
     "kind": "problem",
     "title": "Let $F(z)$ be a non-constant meromorphic function on the complex plane\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-UVJYB",
@@ -23509,7 +23509,7 @@
     "kind": "problem",
     "title": "Determine all holomorphic automorphisms of the upper half\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-Y2AZO",
@@ -23525,7 +23525,7 @@
     "kind": "problem",
     "title": "This problem is about the integral $I = \\int_0^\\infty \\frac{\\cos u\\, du}{u^4+1}$",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-Y5JK4",

@@ -2101,7 +2101,7 @@
     "kind": "problem",
     "title": "Determine all entire functions $f$ (i.e., $f(z)$ is holomorphic on the\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3A7RU",
@@ -2109,7 +2109,7 @@
     "kind": "problem",
     "title": "Show that the punctured unit disk $\\{z : 0 < |z| < 1\\}$ and the annulu\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-3GWIK",
@@ -2197,7 +2197,7 @@
     "kind": "problem",
     "title": "a. Define what is meant by a normal family of holomorphic functions on\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-7VK5X",
@@ -2213,7 +2213,7 @@
     "kind": "problem",
     "title": "Let $U$ be an open subset of $\\mathbb{C}$. We use the notion",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-AE7QC",
@@ -2245,7 +2245,7 @@
     "kind": "problem",
     "title": "Let $\\mu$ be Lebesgue measure on $\\mathbb{D}$. Let $H$ be the subspace\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-C53SG",
@@ -2269,7 +2269,7 @@
     "kind": "problem",
     "title": "Let $p_1,\\dots,p_n$ be distinct points in $\\mathbb{C}$ and let $U$ be\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-CTQ6G",
@@ -2293,7 +2293,7 @@
     "kind": "problem",
     "title": "Let $f(z)$ be an analytic function on the entire complex plane $\\mathbb{C}$\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-E3HGI",
@@ -2333,7 +2333,7 @@
     "kind": "problem",
     "title": "Let $D \\subset \\mathbb{C}$ be the unit disk. Prove that every one-to-o\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-GFCIL",
@@ -2349,7 +2349,7 @@
     "kind": "problem",
     "title": "Let $f$ be a one-to-one analytic function defined on the unit disk $D$\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-HHNOP",
@@ -2405,7 +2405,7 @@
     "kind": "problem",
     "title": "Let $U \\subset \\mathbb{C}$ be an open set containing the closure $\\overline{D}$ of a unit disk.",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-JNFJW",
@@ -2429,7 +2429,7 @@
     "kind": "problem",
     "title": "Let $U \\subset \\mathbb{C}$ be an open set and",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-MFYGZ",
@@ -2501,7 +2501,7 @@
     "kind": "problem",
     "title": "Let $U \\subset \\mathbb{C}$ be an open set containing $\\overline{D}(P,r)$.",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-OEFYN",
@@ -2517,7 +2517,7 @@
     "kind": "problem",
     "title": "Determine the number of distinct solutions of the equation",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-PAQ4K",
@@ -2533,7 +2533,7 @@
     "kind": "problem",
     "title": "How many zeros does the polynomial",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-PGDPX",
@@ -2581,7 +2581,7 @@
     "kind": "problem",
     "title": "Let $D = \\{z \\in \\mathbb{C} : |z| < 1\\}$ denote the unit disk. What is\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-QSYKP",
@@ -3509,7 +3509,7 @@
     "kind": "problem",
     "title": "Let $f(x) = \\frac{1}{x^2+1}$. Use residues to compute the Fourier tran\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RC7YY",
@@ -3525,7 +3525,7 @@
     "kind": "problem",
     "title": "Evaluate $\\int_0^\\infty \\frac{\\log x}{x^2+2}dx$ by contour integration\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-S3P7E",
@@ -3565,7 +3565,7 @@
     "kind": "problem",
     "title": "Let $f$ be a holomorphic function in the punctured disk $\\{z : 0 < |z| < 2\\}$\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-TCJBY",
@@ -3613,7 +3613,7 @@
     "kind": "problem",
     "title": "Let $F(z)$ be a non-constant meromorphic function on the complex plane\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-VAZ7S",
@@ -3661,7 +3661,7 @@
     "kind": "problem",
     "title": "Determine all holomorphic automorphisms of the upper half\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-Y2AZO",
@@ -3677,7 +3677,7 @@
     "kind": "problem",
     "title": "This problem is about the integral $I = \\int_0^\\infty \\frac{\\cos u\\, du}{u^4+1}$",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-YBT6I",
