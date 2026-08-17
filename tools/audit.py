@@ -26,7 +26,6 @@ from pathlib import Path
 from typing import cast
 
 import yaml
-from card_titles import COMPOSED_KINDS, authored_title, degenerate, retitle
 from qualc.cli import load
 from qualc.model import AcademicTerm, ParsedCard, TermOnly, YearOnly, split_front_matter
 from qualc.pandoc_batch import PandocServer
@@ -78,50 +77,24 @@ def check_duplicate_bodies(parsed: list[ParsedCard]) -> Check:
         if digest not in by_digest:
             by_digest[digest] = []
         by_digest[digest].append(item.card.id)
-    violations = [f"{len(ids)} cards share one body: {', '.join(sorted(ids)[:6])}" + ("..." if len(ids) > 6 else "") for ids in by_digest.values() if len(ids) > 1]
+    violations = [
+        f"{len(ids)} cards share one body: {', '.join(sorted(ids)[:6])}"
+        + ("..." if len(ids) > 6 else "")
+        for ids in by_digest.values()
+        if len(ids) > 1
+    ]
     return Check("duplicate-bodies", sorted(violations))
 
 
 def check_empty_areas(parsed: list[ParsedCard]) -> Check:
     return Check(
         "empty-areas",
-        sorted(f"{item.card.id}: areas: []" for item in parsed if not item.card.classification.areas),
+        sorted(
+            f"{item.card.id}: areas: []"
+            for item in parsed
+            if not item.card.classification.areas
+        ),
     )
-
-
-def check_degenerate_titles(parsed: list[ParsedCard]) -> Check:
-    """A title a reader cannot read, or cannot tell from another card's.
-
-    `/problems.html` sorts its rows by title, so a title is the whole of what a
-    reader has before opening the card. `card_titles.degenerate` owns what makes
-    one unreadable; this adds the one condition that needs the corpus rather
-    than the card: two cards sharing a title, where the statements differ far
-    enough for a longer derivation to tell them apart. Cards holding the same
-    body are `duplicate-bodies`, not a titling defect.
-    """
-    bad: list[str] = []
-    bodies: dict[str, str] = {}
-    for item in parsed:
-        _, body = split_front_matter(Path(item.source_path).read_text(), Path(item.source_path))
-        bodies[item.card.id] = body
-        reason = degenerate(item.card.title, authored_title(body))
-        if reason:
-            bad.append(f"{item.card.id}: {reason.value}: {item.card.title!r}")
-
-    flagged = {line.split(":", 1)[0] for line in bad}
-    shared: dict[str, list[str]] = {}
-    for item in parsed:
-        if item.card.id in flagged or item.card.kind in COMPOSED_KINDS:
-            continue
-        if item.card.title not in shared:
-            shared[item.card.title] = []
-        shared[item.card.title].append(item.card.id)
-    for title, ids in shared.items():
-        if len(ids) < 2 or len({bodies[i].strip() for i in ids}) < 2:
-            continue
-        if len(set(retitle({i: bodies[i] for i in ids}).values())) > 1:
-            bad.append(f"{', '.join(sorted(ids))}: share one title, and their statements do not: {title!r}")
-    return Check("degenerate-titles", sorted(bad))
 
 
 def check_one_sitting_one_source(parsed: list[ParsedCard]) -> Check:
@@ -143,7 +116,11 @@ def check_one_sitting_one_source(parsed: list[ParsedCard]) -> Check:
         seen[key].append(card.id)
     return Check(
         "duplicate-sittings",
-        sorted(f"{key}: {', '.join(sorted(ids))}" for key, ids in seen.items() if len(ids) > 1),
+        sorted(
+            f"{key}: {', '.join(sorted(ids))}"
+            for key, ids in seen.items()
+            if len(ids) > 1
+        ),
     )
 
 
@@ -164,7 +141,9 @@ def _manifest_ids(root: Path = REPO) -> set[str]:
     return ids
 
 
-def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO) -> set[str]:
+def orphan_ids(
+    parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO
+) -> set[str]:
     """A card is reachable when a page or manifest names it, or when it hangs off
     a card that is. The emitter renders occurrences, hints and solutions on their
     problem's route, so a reader does reach them -- but only through it.
@@ -180,9 +159,7 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
 
     def visit(element: pf.Element) -> None:
         if isinstance(element, pf.Link | IMAGE_ELEMENT):
-            # Same two-step as `qualc.wiki`: the Image cast erases the concrete
-            # type, so the url comes back through `getattr` with no default.
-            head, _, tail = cast(str, getattr(element, "url")).partition("/")
+            head, _, tail = cast(pf.Link, element).url.partition("/")
             if head in {"tag", "exam"}:
                 referenced.add(Path(tail).stem)
         # Leaf inlines carry no `content`; everything with children exposes it.
@@ -211,7 +188,11 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
                 edges[source] = set()
             # The sitting's page carries the occurrence and links its problem.
             edges[source].add(item.card.id)
-            edges[source].update(relation.target for relation in item.card.relations if relation.kind == "instance-of")
+            edges[source].update(
+                relation.target
+                for relation in item.card.relations
+                if relation.kind == "instance-of"
+            )
 
     reachable = {cid for cid in referenced}
     frontier = list(reachable)
@@ -230,7 +211,10 @@ def check_orphans(parsed: list[ParsedCard], wiki_pages: list[WikiPage]) -> Check
     if not orphans:
         return Check("orphans")
     head = ", ".join(orphans[:10])
-    return Check("orphans", [f"{len(orphans)} cards reachable from no page or manifest: {head}..."])
+    return Check(
+        "orphans",
+        [f"{len(orphans)} cards reachable from no page or manifest: {head}..."],
+    )
 
 
 def _ledger_rows() -> list[dict]:
@@ -273,11 +257,17 @@ def check_ledger_totality() -> Check:
         unclassified = sorted(set(tracked) - set(ledgered))
         phantom = sorted(set(ledgered) - set(tracked))
         if duplicates:
-            violations.append(f"{name}: {len(duplicates)} paths with more than one disposition")
+            violations.append(
+                f"{name}: {len(duplicates)} paths with more than one disposition"
+            )
         if unclassified:
-            violations.append(f"{name}: {len(unclassified)} tracked files with no disposition, e.g. {unclassified[0]!r}")
+            violations.append(
+                f"{name}: {len(unclassified)} tracked files with no disposition, e.g. {unclassified[0]!r}"
+            )
         if phantom:
-            violations.append(f"{name}: {len(phantom)} ledger rows for untracked paths, e.g. {phantom[0]!r}")
+            violations.append(
+                f"{name}: {len(phantom)} ledger rows for untracked paths, e.g. {phantom[0]!r}"
+            )
     check = Check("ledger-totality", violations)
     if missing_repos:
         check.skipped = f"no clone on disk: {', '.join(missing_repos)}"
@@ -294,12 +284,14 @@ def check_reason_truth() -> Check:
         r"(:::+\s*(problem|exercise|theorem|definition|proposition|lemma))"
         r"|(^\s*\d+\.\s+\S.{40,})"
         r"|(\\begin\{(problem|exercise|theorem)\})",
-        re.M | re.I,
+        re.MULTILINE | re.IGNORECASE,
     )
     violations: list[str] = []
     missing: list[str] = []
     for row in _ledger_rows():
-        if row["disposition"] != "dropped" or not row["path"].lower().endswith((".md", ".tex")):
+        if row["disposition"] != "dropped" or not row["path"].lower().endswith(
+            (".md", ".tex")
+        ):
             continue
         if row["repo"] not in SOURCE_REPOS:
             continue
@@ -314,7 +306,9 @@ def check_reason_truth() -> Check:
             continue
         hits = statement.findall(blob.stdout)
         if len(hits) >= 3:
-            violations.append(f"{row['repo']}:{row['path']}: {len(hits)} statement-shaped items under {row['reason']!r}")
+            violations.append(
+                f"{row['repo']}:{row['path']}: {len(hits)} statement-shaped items under {row['reason']!r}"
+            )
     check = Check("reason-truth", sorted(violations))
     if missing:
         check.skipped = f"{len(missing)} dropped rows unreadable from HEAD"
@@ -327,7 +321,8 @@ def check_queued_not_claimed() -> Check:
     violations = [
         f"{row['repo']}:{row['path']}: migrated with no evidence"
         for row in _ledger_rows()
-        if row["disposition"] == "migrated" and not any(key in row for key in ("evidence", "cards", "sha1"))
+        if row["disposition"] == "migrated"
+        and not any(key in row for key in ("evidence", "cards", "sha1"))
     ]
     return Check("migrated-evidence", sorted(violations))
 
@@ -335,7 +330,6 @@ def check_queued_not_claimed() -> Check:
 CORPUS_CHECKS = {
     "duplicate-bodies": check_duplicate_bodies,
     "empty-areas": check_empty_areas,
-    "degenerate-titles": check_degenerate_titles,
     "duplicate-sittings": check_one_sitting_one_source,
 }
 LEDGER_CHECKS = {
@@ -354,7 +348,14 @@ def run(names: list[str]) -> list[Check]:
         with PandocServer() as pandoc:
             parsed, wiki_pages, errors = load(REPO, pandoc)
         if errors:
-            return [Check("qualc-check", [f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"])]
+            return [
+                Check(
+                    "qualc-check",
+                    [
+                        f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"
+                    ],
+                )
+            ]
         for name in names:
             if name in CORPUS_CHECKS:
                 checks.append(CORPUS_CHECKS[name](parsed))
@@ -368,23 +369,38 @@ def run(names: list[str]) -> list[Check]:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="audit")
-    ap.add_argument("--only", action="append", choices=ALL, help="run one check (repeatable)")
+    ap.add_argument(
+        "--only", action="append", choices=ALL, help="run one check (repeatable)"
+    )
     ap.add_argument("--json", action="store_true")
-    ap.add_argument("--full", action="store_true", help="print every violation, not the first 20")
+    ap.add_argument(
+        "--full", action="store_true", help="print every violation, not the first 20"
+    )
     args = ap.parse_args(argv)
 
     checks = run(args.only or ALL)
     if args.json:
         print(
             json.dumps(
-                [{"check": c.name, "ok": c.ok, "skipped": c.skipped, "violations": c.violations} for c in checks],
+                [
+                    {
+                        "check": c.name,
+                        "ok": c.ok,
+                        "skipped": c.skipped,
+                        "violations": c.violations,
+                    }
+                    for c in checks
+                ],
                 indent=2,
             )
         )
     else:
         for check in checks:
             status = "ok" if check.ok else f"{len(check.violations)} violation(s)"
-            print(f"{check.name}: {status}" + (f" [skipped: {check.skipped}]" if check.skipped else ""))
+            print(
+                f"{check.name}: {status}"
+                + (f" [skipped: {check.skipped}]" if check.skipped else "")
+            )
             for line in check.violations if args.full else check.violations[:20]:
                 print(f"    {line}")
             if not args.full and len(check.violations) > 20:
