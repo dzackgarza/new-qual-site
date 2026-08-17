@@ -38,10 +38,6 @@ query sql: build
 sample-unsolved n="5":
     @rg --files-with-matches '^solved: false$' corpus | shuf -n {{ n }}
 
-# Reconcile every pinned make-me-a-qual row (additive; legacy generated imports stay until audited)
-import:
-    uv run python tools/import_mmaq.py --root .
-
 # Refresh the MathJax macro set from the author's pandoc preamble
 macros:
     uv run python tools/sync_macros.py

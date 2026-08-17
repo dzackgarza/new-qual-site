@@ -27,14 +27,20 @@ def load(
         errors = index.validate(parsed, index.load_vocabularies(root / "vocabularies"))
     wiki_pages: list[WikiPage] = []
     if not errors:
-        wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
+        wiki_pages, wiki_errors = parse_pages(
+            pandoc, root / "wiki", load_citations(root / "vocabularies")
+        )
         errors.extend(wiki_errors)
         card_routes = {}
         for item in parsed:
             if item.card.kind == "source":
                 card_routes[item.card.id] = Path("exam") / f"{item.card.id}.html"
             elif item.card.kind == "occurrence":
-                target = next(relation.target for relation in item.card.relations if relation.kind == "instance-of")
+                target = next(
+                    relation.target
+                    for relation in item.card.relations
+                    if relation.kind == "instance-of"
+                )
                 card_routes[item.card.id] = Path("tag") / f"{target}.html"
             else:
                 card_routes[item.card.id] = Path("tag") / f"{item.card.id}.html"
@@ -46,25 +52,23 @@ def load(
 
 
 def main(argv: list[str] | None = None) -> int:
-    arguments = list(sys.argv[1:] if argv is None else argv)
-    if arguments and arguments[0] == "replay-sources":
-        from replay_sources import main as replay_main
-
-        return replay_main(arguments[1:])
-
     ap = argparse.ArgumentParser(prog="qualc")
-    ap.add_argument("command", choices=["check", "build", "replay-sources"])
+    ap.add_argument("command", choices=["check", "build"])
     ap.add_argument("--root", type=Path, default=Path.cwd())
     # Diagnostics carry a stable `code`; `--json` exposes it so a caller can
     # assert which check failed instead of grepping the human wording.
-    ap.add_argument("--json", action="store_true", help="emit diagnostics as JSON on stderr")
+    ap.add_argument(
+        "--json", action="store_true", help="emit diagnostics as JSON on stderr"
+    )
     args = ap.parse_args(argv)
 
     with PandocServer() as pandoc:
         parsed, wiki_pages, errors = load(args.root, pandoc)
         if errors:
             if args.json:
-                print(json.dumps([error.as_dict() for error in errors]), file=sys.stderr)
+                print(
+                    json.dumps([error.as_dict() for error in errors]), file=sys.stderr
+                )
             else:
                 print(f"{len(errors)} error(s):", file=sys.stderr)
                 for error in errors:

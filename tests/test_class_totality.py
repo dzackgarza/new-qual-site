@@ -85,10 +85,5 @@ def test_section_inside_a_non_div_container_is_still_found(tmp_path: Path) -> No
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    kinds = [
-        k
-        for (k,) in con.execute(
-            "select section_kind from sections where card_id = 'S-QUOTE1'"
-        )
-    ]
+    kinds = [k for (k,) in con.execute("select section_kind from sections where card_id = 'S-QUOTE1'")]
     assert kinds == ["solution", "proof"], kinds
