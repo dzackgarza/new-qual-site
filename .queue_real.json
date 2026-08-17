@@ -3133,7 +3133,7 @@
     "kind": "problem",
     "title": "Failure of uniform convergence for $f(x^n)$ when endpoint values differ",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-07",
@@ -3141,7 +3141,7 @@
     "kind": "problem",
     "title": "Equicontinuity of the family $x/(1+nx^2)$ on compact intervals",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-08",
@@ -3149,7 +3149,7 @@
     "kind": "problem",
     "title": "The integral limit of $f(x^n)$",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-09",
@@ -3157,7 +3157,7 @@
     "kind": "problem",
     "title": "A uniformly bounded derivative gives equicontinuity",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-10",
@@ -3165,7 +3165,7 @@
     "kind": "problem",
     "title": "Vanishing high moments force a continuous function to vanish",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-11",
@@ -3173,7 +3173,7 @@
     "kind": "problem",
     "title": "Integrals of uniformly convergent continuous functions with a moving endpoint",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-12",
@@ -3181,7 +3181,7 @@
     "kind": "problem",
     "title": "Polynomial approximation with endpoint factors",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-13",
@@ -3189,7 +3189,7 @@
     "kind": "problem",
     "title": "A trigonometric integral limit",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-14",
@@ -3197,7 +3197,7 @@
     "kind": "problem",
     "title": "Uniform convergence along a convergent sequence of points",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-15",
@@ -3205,7 +3205,7 @@
     "kind": "problem",
     "title": "A series that is uniformly convergent away from zero but not near zero",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-W1",
@@ -3213,7 +3213,7 @@
     "kind": "problem",
     "title": "Stone\u2013Weierstrass and a polynomial algebra with high-degree terms",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-W2",
@@ -3221,7 +3221,7 @@
     "kind": "problem",
     "title": "Pointwise and uniform equicontinuity on a compact set",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-W3",
@@ -3229,7 +3229,7 @@
     "kind": "problem",
     "title": "Prove the uniform-limit continuity theorem directly",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-W4",
@@ -3237,7 +3237,7 @@
     "kind": "problem",
     "title": "Pointwise and uniform convergence of $x^n$ on $[0,1]$",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D7-W5",
@@ -3245,7 +3245,7 @@
     "kind": "problem",
     "title": "Equicontinuity upgrades pointwise convergence to uniform convergence",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-BV1",
@@ -3253,7 +3253,7 @@
     "kind": "problem",
     "title": "Every bounded-variation function is a difference of increasing functions",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-BV2",
@@ -3261,7 +3261,7 @@
     "kind": "problem",
     "title": "The reciprocal of a bounded-away-from-zero bounded-variation function",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-BV3",
@@ -3269,7 +3269,7 @@
     "kind": "problem",
     "title": "Determine whether x sin(1/x) has bounded variation",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-BV4",
@@ -3277,7 +3277,7 @@
     "kind": "problem",
     "title": "Bounded variation of a point-mass function with absolutely summable weights",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-INT1",
@@ -3285,7 +3285,7 @@
     "kind": "problem",
     "title": "A jump integrator evaluates a Riemann\u2013Stieltjes integral at zero",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-INT2",
@@ -3293,7 +3293,7 @@
     "kind": "problem",
     "title": "Split a Riemann\u2013Stieltjes integral at an interior point",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-INT3",
@@ -3301,7 +3301,7 @@
     "kind": "problem",
     "title": "Reduce a Riemann\u2013Stieltjes integral with a C1 integrator to a Riemann integral",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-METRIC1",
@@ -3309,7 +3309,7 @@
     "kind": "problem",
     "title": "A closed and bounded noncompact subset of a metric space",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-METRIC2",
@@ -3317,7 +3317,7 @@
     "kind": "problem",
     "title": "Characterize lower and upper semicontinuity by open inverse images and limits",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-METRIC3",
@@ -3325,7 +3325,7 @@
     "kind": "problem",
     "title": "A decreasing sequence of nonnegative continuous functions converges uniformly to zero",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-SEQ1",
@@ -3333,7 +3333,7 @@
     "kind": "problem",
     "title": "Radii of convergence for sums and coefficientwise products of power series",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-SEQ2",
@@ -3341,7 +3341,7 @@
     "kind": "problem",
     "title": "Uniform convergence of a variable-ratio geometric series on bounded intervals",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-SEQ3",
@@ -3349,7 +3349,7 @@
     "kind": "problem",
     "title": "Uniform convergence without the Weierstrass M-test",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA-WORKSHOP-D8-SEQ4",
@@ -3357,7 +3357,7 @@
     "kind": "problem",
     "title": "Uniform convergence and differentiability of a logarithmic-type series",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA16M1",
@@ -3365,7 +3365,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2016, problem 1",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA16M2",
