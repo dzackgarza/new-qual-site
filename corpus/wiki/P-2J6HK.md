@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2J6HK
 kind: problem
-title: "- Show that every group of order $p^2$ is abelian and classify them."
+title: Groups of order $p^2$ are abelian
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HYQCG
 kind: problem
-title: "- Define what a composition series is, and state what it means for a g\u2026"
+title: Composition series, solvability, and nilpotence
 classification:
   areas:
   - algebra

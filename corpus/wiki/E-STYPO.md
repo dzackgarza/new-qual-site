@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-STYPO
 kind: problem
-title: 21. Recall the definition of a perfect field. Give an example of an im…
+title: Finite fields are perfect; example of an imperfect field
 classification:
   areas:
   - algebra

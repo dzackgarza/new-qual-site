@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DIPLA
 kind: problem
-title: "- Show that if $K/E/F$ with $K/F$ Galois then $K/E$ is always Galois w\u2026"
+title: Fundamental theorem of Galois theory
 classification:
   areas:
   - algebra

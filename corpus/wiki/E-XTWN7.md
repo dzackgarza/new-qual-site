@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XTWN7
 kind: problem
-title: 4. Prove that as extensions of $\boldsymbol{Q}, \boldsymbol{Q}(x)$ is…
+title: $\mathbb{Q}(x)$ is Galois over $\mathbb{Q}(x^{2})$ but not over $\mathbb{Q}(x^{3})$
 classification:
   areas:
   - algebra

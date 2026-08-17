@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JPDRQ
 kind: exercise
-title: "- Can a convergent sequence of real numbers have a subsequence conver\u2026"
+title: Sequences, uniform convergence, and Bolzano-Weierstrass
 classification:
   areas:
   - real-analysis

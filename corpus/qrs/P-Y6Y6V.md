@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y6Y6V
 kind: problem
-title: "- Does diagonalizable imply invertible? The converse?"
+title: Neither diagonalizable nor invertible implies the other
 classification:
   areas:
   - algebra

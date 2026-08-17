@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KOQPF
 kind: problem
-title: "- Show that if $G$ is an infinite simple group, then $G$ can not have\u2026"
+title: Infinite simple groups have no finite-index subgroups
 classification:
   areas:
   - algebra

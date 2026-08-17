@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FWNW3
 kind: problem
-title: "- Show that any holomorphic function $f$ can be uniformly approximated\u2026"
+title: Uniform approximation of holomorphic functions by polynomials
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2V6GL
 kind: problem
-title: "- Find a space that is connected but not locally connected."
+title: Connected versus locally connected spaces
 classification:
   areas:
   - topology

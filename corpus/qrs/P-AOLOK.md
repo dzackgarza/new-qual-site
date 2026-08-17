@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-AOLOK
 kind: problem
-title: "- Show that if the minimal polynomial of a linear map $T$ is irreducib\u2026"
+title: Irreducible minimal polynomial implies every invariant subspace has an invariant
+  complement
 classification:
   areas:
   - algebra

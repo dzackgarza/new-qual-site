@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-K3OJW
 kind: exercise
-title: "- Let $G$ be a group of order $p$ with $v$ and $e$ positive integers,\u2026"
+title: Normal Sylow $p$-subgroup when $|G|=p^{e}v$ with $p>v$
 classification:
   areas:
   - algebra

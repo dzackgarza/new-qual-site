@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VAK32
 kind: problem
-title: "- Show that a nilpotent operator is diagonalizable if and only if it is the zero operator."
+title: A nilpotent operator is diagonalizable iff it is zero
 classification:
   areas:
   - algebra

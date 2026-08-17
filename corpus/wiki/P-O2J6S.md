@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O2J6S
 kind: problem
-title: "7. Generators of the subgroups:"
+title: Generators of covering subgroups of $S^1\vee S^1$
 classification:
   areas:
   - topology

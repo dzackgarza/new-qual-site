@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5YUW6
 kind: problem
-title: "- State the orbit-stabilizer theorem"
+title: Orbit-stabilizer theorem
 classification:
   areas:
   - algebra

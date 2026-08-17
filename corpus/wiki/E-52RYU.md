@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-52RYU
 kind: problem
-title: 10. Let $F$ be the splitting field of $f \in K[x]$ over $K$. Prove tha…
+title: Irreducible with a root in a splitting field splits completely
 classification:
   areas:
   - algebra

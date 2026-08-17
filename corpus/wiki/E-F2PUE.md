@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-F2PUE
 kind: problem
-title: 5. If $F$ is over $E$, and $E$ is $\quad$ over $K$ is $F$ necessarily…
+title: Transitivity of algebraic, normal, and separable extensions
 classification:
   areas:
   - algebra

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-5QNZJ
 kind: problem
-title: "1. Let $f \\in C_c^0(\\RR^n)$, and show"
+title: Translation is continuous in $L^1$; $L^1*L^\infty$ convolutions are bounded
+  and uniformly continuous
 classification:
   areas:
   - real-analysis

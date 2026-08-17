@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LG4RJ
 kind: problem
-title: "- Show that every $p\\dash$group is solvable."
+title: Every $p$-group is solvable
 classification:
   areas:
   - algebra

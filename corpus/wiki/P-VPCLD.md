@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VPCLD
 kind: problem
-title: "1. Apply the spectral theorem: $D$ will have the eigenvalues on the di\u2026"
+title: Spectral theorem diagonalization with eigenvalues $1$ and $-2$
 classification:
   areas:
   - prelim

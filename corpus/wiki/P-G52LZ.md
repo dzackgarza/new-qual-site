@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G52LZ
 kind: problem
-title: "- Show that every $p\\dash$group is nilpotent."
+title: Every $p$-group is nilpotent
 classification:
   areas:
   - algebra

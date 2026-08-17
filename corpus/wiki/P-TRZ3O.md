@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRZ3O
 kind: problem
-title: "- Identify $\\Aut(\\ZZ/p)$ and $\\Aut(\\prod_{i=1}^n \\ZZ/p)$ for $p$ a pri\u2026"
+title: $\Aut(\ZZ/p)$, $\Aut((\ZZ/p)^n)$, and $\Aut(\ZZ/n)$
 classification:
   areas:
   - algebra

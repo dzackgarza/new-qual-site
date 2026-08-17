@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HTYNB
 kind: problem
-title: '> Note: let $[x]_m$ denote the equivalence class of $x \mod m$.'
+title: $\operatorname{Hom}_{\ZZ}(\ZZ/m\ZZ, \ZZ) = 0$
 classification:
   areas:
   - algebra

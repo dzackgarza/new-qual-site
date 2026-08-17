@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3MHHW
 kind: problem
-title: "- Show that localizing a ring at a prime ideal produces a local ring."
+title: Local rings via localization and units; primes are primary and irreducible
 classification:
   areas:
   - algebra

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-UYQED
 kind: exercise
-title: "- Prove that uniform convergence implies pointwise convergence implies\u2026"
+title: Uniform, pointwise, and a.e. convergence, and uniform convergence of $\sum
+  x^n/n!$ on compacta
 classification:
   areas:
   - real-analysis

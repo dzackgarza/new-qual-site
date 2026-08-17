@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PUNDP
 kind: exercise
-title: "- Is it true that the converse to the DCT holds?"
+title: Convergence of integrals does not imply an integrable dominant
 classification:
   areas:
   - real-analysis

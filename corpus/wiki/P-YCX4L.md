@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YCX4L
 kind: problem
-title: "- Show that a continuous function on a compact set is uniformly contin\u2026"
+title: Continuous functions on compact sets are uniformly continuous
 classification:
   areas:
   - real-analysis

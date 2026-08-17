@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BQVDL
 kind: problem
-title: "- Let $[G:H] = p$ be the smallest prime dividing the order of $G$. Sho\u2026"
+title: A subgroup of index equal to the smallest prime dividing $|G|$ is normal
 classification:
   areas:
   - algebra

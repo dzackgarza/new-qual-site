@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MLBWS
 kind: problem
-title: 16. Given an example of a finite extension of fields that has infinite…
+title: Finite extension with infinitely many intermediate fields
 classification:
   areas:
   - algebra

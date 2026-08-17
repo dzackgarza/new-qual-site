@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6DZST
 kind: problem
-title: "5. WLOG, assume $p_0, p_1$ are the north and south poles of $S^2$. We\u2026"
+title: $S^2$ minus two points deformation retracts onto $S^1$
 classification:
   areas:
   - topology

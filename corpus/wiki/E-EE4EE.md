@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EE4EE
 kind: exercise
-title: "- What is an interior point? An isolated point? A limit point?"
+title: Interior, isolated, and limit points
 classification:
   areas:
   - topology

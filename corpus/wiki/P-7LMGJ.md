@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7LMGJ
 kind: problem
-title: "- Show that $G$ is solvable iff its derived series terminates."
+title: A group is solvable iff its derived series terminates
 classification:
   areas:
   - algebra

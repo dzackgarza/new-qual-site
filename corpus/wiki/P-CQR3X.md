@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CQR3X
 kind: problem
-title: "- Show if $G$ is finite, then $G$ is solvable $\\iff$ all of its compos\u2026"
+title: A finite group is solvable iff its composition factors have prime order
 classification:
   areas:
   - algebra

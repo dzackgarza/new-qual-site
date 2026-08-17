@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3KOGW
 kind: problem
-title: "- Assume $f(z)=\\sum_{n=0}^{\\infty} c_{n} z^{n}$ converges in $|z|<R$.\u2026"
+title: Mean-square identity for power series, and Liouville's theorem
 classification:
   areas:
   - complex-analysis

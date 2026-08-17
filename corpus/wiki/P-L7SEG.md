@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L7SEG
 kind: problem
-title: "- Let $G_1, G_2$ be groups and $H_2 \\leq G_2$ a subgroup."
+title: Image, kernel, and injectivity of group homomorphisms
 classification:
   areas:
   - algebra

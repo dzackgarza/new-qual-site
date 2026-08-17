@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-O73XQ
 kind: exercise
-title: "- Show that if $G/Z(G)$ is cyclic then $G$ is abelian."
+title: $G/Z(G)$ cyclic implies $G$ abelian; $G/N$ abelian iff $[G,G]\le N$
 classification:
   areas:
   - algebra

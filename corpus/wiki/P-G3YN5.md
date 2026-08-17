@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G3YN5
 kind: problem
-title: "1. State the structure theorem for finitely generated modules over a"
+title: Structure theorem for finitely generated modules over a PID
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BXBHJ
 kind: problem
-title: "- How do you compute the totient $\\phi(p)$ for $p$ prime? Or $\\phi(n)$\u2026"
+title: Euler totient of primes and composites
 classification:
   areas:
   - algebra

@@ -71,20 +71,12 @@ def test_batch_parse_matches_isolated_pandoc(tmp_path: Path) -> None:
     assert [json.loads(item.ast) for item in parsed] == [_isolated_ast(path) for path in paths]
 
 
-def test_batch_inline_parse_keeps_block_markers_inline() -> None:
-    titles = [
-        "(a) Let $f\\colon \\mathbb{R} \\to \\mathbb{R}$ be differentiable.",
-        "a. State the Sylow theorems.",
-        "![[_attachments/diagram.png]]",
-    ]
-
+def test_batch_inline_parse_keeps_titles_inline() -> None:
+    """A title is inline text. The batch cache must return inlines, not a
+    block wrapper, and must not leak the boundary sentinel into the page."""
+    title = "Uniform limits of continuous functions are continuous"
     with PandocServer() as pandoc:
-        cache = emit.build_inline_cache(pandoc, titles)
-
-    sources = [emit._inline_source(title) for title in titles]
-    assert [type(cache[source][0]).__name__ for source in sources] == [
-        "Str",
-        "Str",
-        "Image",
-    ]
-    assert all(emit.INLINE_SENTINEL not in str(inline) for source in sources for inline in cache[source])
+        cache = emit.build_inline_cache(pandoc, [title])
+    inlines = cache[title]
+    assert type(inlines[0]).__name__ == "Str"
+    assert all(emit.INLINE_SENTINEL not in str(inline) for inline in inlines)

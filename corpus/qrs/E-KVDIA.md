@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KVDIA
 kind: exercise
-title: "- $\\star$: Prove that the Lebesgue integral is dilation invariant, i.e\u2026"
+title: Dilation invariance of the Lebesgue integral
 classification:
   areas:
   - real-analysis

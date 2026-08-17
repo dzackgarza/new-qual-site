@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XSXAZ
 kind: exercise
-title: "- Come up with 6 different topologies on $\\RR^d$."
+title: Six topologies on $\mathbb{R}^{d}$
 classification:
   areas:
   - topology

@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-WZ54K
 kind: problem
-title: "- Prove that $x^{p^n}-x$ is the product of all monic irreducible polyn\u2026"
+title: $x^{p^n}-x$ is the product of monic irreducibles in $\FF_p[x]$ of degree dividing
+  $n$
 classification:
   areas:
   - algebra

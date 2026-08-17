@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-D6PI7
 kind: problem
-title: "- Show that if a matrix is diagonalizable, its minimal polynomial is s\u2026"
+title: Diagonalizable matrices have squarefree minimal polynomials
 classification:
   areas:
   - algebra

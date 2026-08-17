@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UZGDT
 kind: problem
-title: "- Show that if $A,B$ are diagonalizable and $[A, B] = 0$ then $A,B$ ar\u2026"
+title: Commuting diagonalizable matrices are simultaneously diagonalizable
 classification:
   areas:
   - algebra

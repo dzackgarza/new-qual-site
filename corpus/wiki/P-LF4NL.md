@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LF4NL
 kind: problem
-title: "5. Let $\\delta = \\min\\theset{\\frac 1 2, \\sqrt{\\frac \\varepsilon 2}}$,\u2026"
+title: $\lim_{x\to 1}\frac{x^2+1}{x}=2$
 classification:
   areas:
   - prelim

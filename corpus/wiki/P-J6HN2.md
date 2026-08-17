@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J6HN2
 kind: problem
-title: "- Prove Fatou's lemma using the Monotone Convergence Theorem."
+title: Fatou's lemma and summing series in $L^1$
 classification:
   areas:
   - real-analysis

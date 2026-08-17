@@ -660,13 +660,6 @@ def write_json_pages(
         )
 
 
-def _inline_source(markdown: str) -> str:
-    # A title is inline text, but some are lifted verbatim from a statement's
-    # first line and still carry a leading list/quote/heading marker, which
-    # pandoc parses as a block wrapper whose children are ListItems, not inlines.
-    return re.sub(r"^\s*([-*+]|\d+[.)]|>|#{1,6})\s+", "", markdown)
-
-
 INLINE_SENTINEL = "QUALINLINEBOUNDARY"
 
 
@@ -674,7 +667,7 @@ def build_inline_cache(
     pandoc: PandocServer,
     markdown_values: list[str],
 ) -> dict[str, list[pf.Inline]]:
-    sources = list(dict.fromkeys(_inline_source(value) for value in markdown_values))
+    sources = list(dict.fromkeys(markdown_values))
     outputs = _successful_outputs(
         pandoc.read_markdown(
             [INLINE_SENTINEL + source for source in sources],
@@ -706,7 +699,7 @@ def _inlines(
     markdown: str,
     cache: dict[str, list[pf.Inline]],
 ) -> list[pf.Inline]:
-    source = _inline_source(markdown)
+    source = markdown
     if source not in cache:
         raise ValueError(f"inline text was not batched: {source!r}")
     return copy.deepcopy(cache[source])

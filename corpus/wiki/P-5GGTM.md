@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5GGTM
 kind: problem
-title: "- Show that every field is simple."
+title: Every field is a simple ring
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-W3QMS
 kind: exercise
-title: "- Do any example from [here](http://home.iitk.ac.in/~psraj/mth102/lect\u2026"
+title: Holomorphic functions with vanishing derivative are constant
 classification:
   areas:
   - complex-analysis

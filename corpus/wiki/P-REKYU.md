@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-REKYU
 kind: problem
-title: "- Show that if $N\\normal D_n$ is a normal subgroup of a dihedral group\u2026"
+title: Quotients of dihedral groups are dihedral
 classification:
   areas:
   - algebra

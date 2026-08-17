@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JH2ZT
 kind: problem
-title: "- Prove that the minimal polynomial divides the characteristic polynom\u2026"
+title: Minimal polynomial divides the characteristic polynomial
 classification:
   areas:
   - algebra

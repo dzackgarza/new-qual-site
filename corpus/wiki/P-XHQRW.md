@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XHQRW
 kind: problem
-title: "- Show that if $f\\in C^1(\\RR)$ and both $\\lim_{x\\to \\infty} f(x)$ and\u2026"
+title: If $\lim_{x\to\infty}f(x)$ and $\lim_{x\to\infty}f'(x)$ exist, then $\lim f'=0$
 classification:
   areas:
   - real-analysis

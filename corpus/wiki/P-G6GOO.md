@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G6GOO
 kind: problem
-title: "6. General construction: construct a tree $T$ by picking a basepoint i\u2026"
+title: The infinite $3$-regular tree as a universal cover
 classification:
   areas:
   - topology

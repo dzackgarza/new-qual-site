@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AYZ4J
 kind: problem
-title: "- Analyze groups of order $p^2 q$."
+title: Groups of order $p^2q$
 classification:
   areas:
   - algebra

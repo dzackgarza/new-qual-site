@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N2NUD
 kind: problem
-title: "2. We need to show that $R$ is reflexive, transitive, and symmetric."
+title: Equivalence relation $x\sim y$ iff $x^2-4x=y^2-4y$
 classification:
   areas:
   - prelim

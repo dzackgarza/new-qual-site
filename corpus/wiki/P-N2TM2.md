@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N2TM2
 kind: problem
-title: "- For each of the following group actions, identify what the orbits, s\u2026"
+title: Orbits, stabilizers, and kernels of the standard $G$-actions
 classification:
   areas:
   - algebra

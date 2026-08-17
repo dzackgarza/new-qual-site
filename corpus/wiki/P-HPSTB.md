@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HPSTB
 kind: problem
-title: "- Show that inner automorphisms send conjugate subgroups to conjugate\u2026"
+title: Inner automorphisms preserve conjugacy of subgroups
 classification:
   areas:
   - algebra

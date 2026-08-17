@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VGFA7
 kind: problem
-title: "- Suppose $\\phi: S_n \\to G$ with $n$ even and $\\size G = m$ odd."
+title: Homomorphisms from $S_n$ to a group of odd order
 classification:
   areas:
   - algebra

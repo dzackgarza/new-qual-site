@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-F6IXU
 kind: exercise
-title: "- $\\star$: Prove continuity in $L^1$, i.e."
+title: Translation is continuous in $L^1$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2QLBW
 kind: problem
-title: "1. Definitions:"
+title: Gradient is orthogonal to level curves
 classification:
   areas:
   - prelim

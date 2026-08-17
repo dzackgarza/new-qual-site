@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WP76T
 kind: problem
-title: "- Show that every maximal subgroup of a $p\\dash$group has index $p$."
+title: Maximal subgroups of a $p$-group have index $p$
 classification:
   areas:
   - algebra

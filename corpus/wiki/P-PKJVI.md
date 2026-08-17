@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PKJVI
 kind: problem
-title: "- Show that a group of order $pq$ where $p > q$. Show that $G$ has a n\u2026"
+title: Groups of order $pq$ with $p>q$ have a proper nontrivial normal subgroup
 classification:
   areas:
   - algebra

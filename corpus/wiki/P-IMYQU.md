@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IMYQU
 kind: problem
-title: "2. Induct on $n$, integrate by parts and use L'Hopital:"
+title: $\int_0^\infty x^n e^{-x}\,dx = n!$
 classification:
   areas:
   - prelim

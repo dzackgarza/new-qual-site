@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UVTOY
 kind: problem
-title: 3. For a polynomial $f \in K[x]$, prove that if $r \in F$ is a root of…
+title: $K$-automorphisms permute the roots of polynomials in $K[x]$
 classification:
   areas:
   - algebra

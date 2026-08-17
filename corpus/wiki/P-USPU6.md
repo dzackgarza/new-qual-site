@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-USPU6
 kind: problem
-title: "- Show that any finite abelian group is isomorphic to the direct produ\u2026"
+title: A finite abelian group is the product of its Sylow subgroups
 classification:
   areas:
   - algebra

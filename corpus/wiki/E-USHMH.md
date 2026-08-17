@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-USHMH
 kind: exercise
-title: "Untitled"
+title: Product of sines $\sin(k\pi/n)$ via roots of unity
 classification:
   areas:
   - complex-analysis
@@ -15,6 +15,8 @@ solved: false
 ---
 
 ::: exercise
+Use $n$th roots of unity to show that $2^{n-1}\sin\frac{\pi}{n}\sin\frac{2\pi}{n}\cdots\sin\frac{(n-1)\pi}{n}=n$.
+
 - ![[_attachments/Pasted image 20210517025227.png]]
 
 - ![[_attachments/Pasted image 20210517025152.png]]

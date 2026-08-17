@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VTB5V
 kind: problem
-title: "- Show that for an ideal $I\\normal R$, its radical is the intersection\u2026"
+title: The radical of an ideal is the intersection of the primes containing it
 classification:
   areas:
   - algebra

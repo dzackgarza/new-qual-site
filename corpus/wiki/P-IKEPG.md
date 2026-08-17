@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IKEPG
 kind: problem
-title: "1. Use the fact that $\\sum_{i=1}^n i = \\frac 1 2 n(n+1)$, so"
+title: $\sum_{i=1}^n i^3 = \bigl(\sum_{i=1}^n i\bigr)^2$
 classification:
   areas:
   - prelim

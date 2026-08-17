@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-CIWAP
 kind: problem
-title: "- Show that if $f$ is holomorphic on $\\DD$ then $f$ has a power series\u2026"
+title: Holomorphic functions on the disk expand as power series uniformly on compact
+  subsets
 classification:
   areas:
   - complex-analysis

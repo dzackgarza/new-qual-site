@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MZZJH
 kind: problem
-title: "2. Theorem: if $M_g \\surjects M_h$ is an $n-$sheeted covering space, t\u2026"
+title: Genus of an $n$-sheeted cover of a closed surface
 classification:
   areas:
   - topology

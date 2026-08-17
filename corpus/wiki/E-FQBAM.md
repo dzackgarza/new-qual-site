@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FQBAM
 kind: problem
-title: 3. For the ring of $n \times n$ matrices over a commutative unital rin…
+title: $\det(A^{a})=\det(A)^{n-1}$ and $(A^{a})^{a}=\det(A)^{n-2}A$
 classification:
   areas:
   - algebra

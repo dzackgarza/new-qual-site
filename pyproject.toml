@@ -20,11 +20,7 @@ dev = ["pytest>=8", "types-PyYAML>=6"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-# `tools/` holds the importers as scripts, not a package. Most tests shell out
-# to them; a test that imports one directly needs them importable, and this is
-# pytest's own way to say so -- a `sys.path.insert` would need an import below
-# it and trip E402.
+# `tools/` is not a package. Tests that import `audit` or `sync_macros` need
+# that directory on the path; pytest's `pythonpath` is the way to say so -- a
+# `sys.path.insert` would need an import below it and trip E402.
 pythonpath = ["tools"]
-markers = [
-  "needs_source_clones: reads the source repos on disk; CI deselects it by name because it has no clones, and G9's archive gate runs it against fresh ones",
-]

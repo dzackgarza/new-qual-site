@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-N6DX3
 kind: exercise
-title: "- State the Cauchy-Riemann equations."
+title: Cauchy–Riemann equations and elementary complex analysis
 classification:
   areas:
   - complex-analysis

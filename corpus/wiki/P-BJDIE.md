@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BJDIE
 kind: problem
-title: "- What is the order of $\\GL_n(\\FF_p)$?"
+title: Order of $\GL_n(\FF_p)$
 classification:
   areas:
   - algebra

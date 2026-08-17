@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-L3F4O
 kind: exercise
-title: "- Show that that Cantor middle-thirds set is compact, totally disconne\u2026"
+title: Middle-thirds Cantor set is compact, totally disconnected, perfect, and null;
+  Borel–Cantelli lemma
 classification:
   areas:
   - real-analysis

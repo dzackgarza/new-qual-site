@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JY5OT
 kind: exercise
-title: '- Derive the reverse triangle inequality from the triangle inequality.'
+title: Reverse triangle inequality, $\sup$ and $\inf$, and the Archimedean property
 classification:
   areas:
   - real-analysis

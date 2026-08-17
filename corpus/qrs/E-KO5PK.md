@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KO5PK
 kind: exercise
-title: "- Prove continuity in $L^p$: If $f$ is uniformly continuous then for a\u2026"
+title: Translation is continuous in $L^p$ for uniformly continuous functions
 classification:
   areas:
   - real-analysis

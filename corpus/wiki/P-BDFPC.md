@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BDFPC
 kind: problem
-title: "1. Suppose $f \\colon [-1,1] \\to \\mathbb{R}$ is a bounded function"
+title: Riemann–Stieltjes integral against a jump, and vanishing of $g$ against $x^{3k+2}$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XFV6F
 kind: problem
-title: 15. Consider the polynomial $f=x^{3}-x+1$ in $\boldsymbol{F}_{3}[x]$.…
+title: Splitting field of $x^{3}-x+1$ over $\mathbb{F}_{3}$
 classification:
   areas:
   - algebra

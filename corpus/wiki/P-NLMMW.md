@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NLMMW
 kind: problem
-title: "- If $\\size G = pq$, is $G$ necessarily nilpotent?"
+title: Groups of order $pq$ need not be nilpotent
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SDQ4U
 kind: exercise
-title: "- Prove the following inclusions of $L^p$ spaces for $m(X) < \\infty$:"
+title: $L^p$ inclusions on finite measure spaces and $\ell^p$ inclusions on $\mathbb{Z}$
 classification:
   areas:
   - real-analysis

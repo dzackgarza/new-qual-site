@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-7J4VR
 kind: problem
-title: "- If $f$ is continuous, is it necessarily the case that $f'$ is contin\u2026"
+title: Limit interchange for derivatives and integrals; closed subsets of metric spaces
+  are complete
 classification:
   areas:
   - real-analysis

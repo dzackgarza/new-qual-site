@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FNJCM
 kind: problem
-title: "- Is every product (finite or infinite) of Hausdorff spaces Hausdorff?"
+title: Products of Hausdorff spaces; $\RR$ versus $[0,\infty)$
 classification:
   areas:
   - topology

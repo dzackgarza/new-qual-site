@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BQUGC
 kind: problem
-title: "- Show that $\\QQ$ is not finitely generated as a group."
+title: $\QQ$ is not a finitely generated group
 classification:
   areas:
   - algebra

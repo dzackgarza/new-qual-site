@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-LUH54
 kind: exercise
-title: "- Show that if $H, K \\normal G$ and $H\\intersect K = \\emptyset$, then\u2026"
+title: Trivially intersecting normal subgroups commute
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KOTV2
 kind: problem
-title: "1. It will exactly be the row space of"
+title: Basis for $\operatorname{span}\{(1,1,1,1),(3,4,6,7),(5,6,8,9)\}$
 classification:
   areas:
   - prelim

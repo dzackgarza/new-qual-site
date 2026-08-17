@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-ZORLW
 kind: problem
-title: "- Show that if $\\abs{f} = 0$ on $\\bd \\Omega$ then either $f$ is consta\u2026"
+title: Holomorphic functions vanishing on the boundary are constant or have an interior
+  zero
 classification:
   areas:
   - complex-analysis

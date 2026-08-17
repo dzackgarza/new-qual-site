@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JUZ6G
 kind: problem
-title: "- Show that $Z(G) = \\bigcap_{a\\in G} C_G(a)$."
+title: $Z(G) = \bigcap_{a \in G} C_G(a)$
 classification:
   areas:
   - algebra

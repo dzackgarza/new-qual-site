@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BQBZI
 kind: exercise
-title: "- $\\star$: Show that if $X\\subseteq \\RR$ with $\\mu(X) < \\infty$ then"
+title: $\|f\|_p\to\|f\|_\infty$ as $p\to\infty$ on finite measure spaces
 classification:
   areas:
   - real-analysis

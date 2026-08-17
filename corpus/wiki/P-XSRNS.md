@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XSRNS
 kind: problem
-title: "- Show that if $X = S^2 \\disjoint_{\\id} S^2$ is a pushout along the eq\u2026"
+title: Homology of two $2$-spheres glued along their equators
 classification:
   areas:
   - topology

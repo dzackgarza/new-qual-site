@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JRKXU
 kind: problem
-title: 17. Let $u=\sqrt{3+\sqrt{2}}$. Is $\boldsymbol{Q}(u)$ a splitting fiel…
+title: Whether $\mathbb{Q}(\sqrt{3+\sqrt{2}})$ is a splitting field over $\mathbb{Q}$
 classification:
   areas:
   - algebra

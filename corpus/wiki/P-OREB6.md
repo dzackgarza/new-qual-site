@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OREB6
 kind: problem
-title: "- Show that a permutation is odd iff it has an odd number of even cycl\u2026"
+title: A permutation is odd iff it has an odd number of even-length cycles
 classification:
   areas:
   - algebra

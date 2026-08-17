@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JWYGQ
 kind: problem
-title: "- What is $[\\QQ(2^{3\\over 2}) : \\QQ]$?"
+title: $[\QQ(2^{3/2}):\QQ]$
 classification:
   areas:
   - algebra

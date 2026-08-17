@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GWP4W
 kind: problem
-title: "- Prove that every simple abelian group is cyclic."
+title: Simple abelian groups are cyclic
 classification:
   areas:
   - algebra

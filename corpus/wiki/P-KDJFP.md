@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KDJFP
 kind: problem
-title: '1. $AX=B$ has a solution $\iff \rank(A) = \rank(C)$:'
+title: Existence and uniqueness of $AX=B$ by rank
 classification:
   areas:
   - algebra

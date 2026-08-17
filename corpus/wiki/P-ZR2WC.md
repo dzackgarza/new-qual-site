@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZR2WC
 kind: problem
-title: "- Definition of uniform convergence:"
+title: Uniform convergence and interchange of limits and integrals
 classification:
   areas:
   - prelim

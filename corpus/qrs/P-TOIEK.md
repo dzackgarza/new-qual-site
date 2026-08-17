@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOIEK
 kind: problem
-title: "1. Suppose $f_n \\rightrightarrows g$ with each $f_n$ bounded; we want\u2026"
+title: Uniformly convergent sequences of bounded functions are uniformly bounded
 classification:
   areas:
   - prelim

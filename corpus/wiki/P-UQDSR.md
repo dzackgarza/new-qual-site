@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UQDSR
 kind: problem
-title: "- Show directly that any $k\\dash$cycle is a product of transpositions,\u2026"
+title: A $k$-cycle as a product of transpositions
 classification:
   areas:
   - algebra

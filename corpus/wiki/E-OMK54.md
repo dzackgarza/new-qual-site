@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-OMK54
 kind: exercise
-title: "- Prove the Lebesgue integral is translation/dilation invariant."
+title: Translation invariance of Lebesgue integral, $L^{1}$ continuity, and regularity
+  of measurable sets
 classification:
   areas:
   - real-analysis

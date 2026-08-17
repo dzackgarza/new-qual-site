@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BBI5H
 kind: problem
-title: "3. $\\Rightarrow$ Let $[\\alpha] \\in \\pi_1(X\\cross Y, (x_0, y_0))$ be an\u2026"
+title: $\pi_1(X\times Y)\cong\pi_1(X)\times\pi_1(Y)$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DRL6B
 kind: problem
-title: "- Show that a matrix representing a linear map $T:V\\to V$ is diagonali\u2026"
+title: Diagonalizable iff the space is a direct sum of eigenspaces
 classification:
   areas:
   - algebra

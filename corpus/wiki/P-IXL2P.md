@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IXL2P
 kind: problem
-title: "8. This is just the Cayley graph over $\\ZZ \\cross \\ZZ$, or essentially\u2026"
+title: Cayley graph of $\ZZ \times \ZZ$ as a covering space
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GMYE2
 kind: exercise
-title: "- Find a function that is differentiable but not continuously differen\u2026"
+title: Uniform limits, differentiability counterexamples, and the Cantor set
 classification:
   areas:
   - real-analysis

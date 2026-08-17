@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CLHXQ
 kind: problem
-title: "2. $S^2$"
+title: Simplicial homology of $S^2$
 classification:
   areas:
   - topology

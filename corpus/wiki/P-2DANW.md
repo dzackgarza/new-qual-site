@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2DANW
 kind: problem
-title: "- Suppose $\\abs G = 240 = s^4 \\cdot 3 \\cdot 5$."
+title: 'Groups of order $240$: Sylow numbers and subgroups of order $15$'
 classification:
   areas:
   - algebra

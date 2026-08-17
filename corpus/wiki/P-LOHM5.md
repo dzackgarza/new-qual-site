@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LOHM5
 kind: problem
-title: "- Let $p$ be a prime and $\\abs{G} = p^3$."
+title: Groups of order $p^3$ have a normal subgroup of order $p^2$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EJHML
 kind: problem
-title: "- Show that a field with $p^n$ elements has exactly one subfield of si\u2026"
+title: Unique subfield of order $p^d$ in a field with $p^n$ elements
 classification:
   areas:
   - algebra

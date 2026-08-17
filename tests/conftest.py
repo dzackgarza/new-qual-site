@@ -9,12 +9,10 @@ corpus proves it identically and in about a second.
 `tests/fixtures/kinds` already exists for exactly this and `test_kind_fixtures`
 already uses it; this just makes the pattern shared.
 
-The real corpus is still the right input for two claims, and those keep it:
-`test_the_current_corpus_uses_only_mapped_classes` (the totality check is worth
-nothing if today's corpus does not satisfy it) and
+The real corpus is still the right input for
 `test_corpus_layout_is_semantically_inert` (the architectural claim is about this
-corpus's layout). Those two are ~85% of the suite's runtime; sharing their builds
-is the next real saving and needs its own change.
+corpus's layout). That test is most of the suite's runtime; sharing its build is
+the next real saving and needs its own change.
 """
 
 from __future__ import annotations

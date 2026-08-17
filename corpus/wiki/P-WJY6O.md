@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WJY6O
 kind: problem
-title: "- Show that $G$ nilpotent $\\implies G$ solvable"
+title: Nilpotent groups are solvable
 classification:
   areas:
   - algebra

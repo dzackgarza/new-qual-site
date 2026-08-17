@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SA3HI
 kind: exercise
-title: "- Show that if $K$ is compact and $F$ is closed with $K, F$ disjoint t\u2026"
+title: Disjoint compact and closed sets have positive distance
 classification:
   areas:
   - real-analysis

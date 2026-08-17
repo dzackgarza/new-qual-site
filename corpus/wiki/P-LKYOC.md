@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LKYOC
 kind: problem
-title: "11. First note that $\\pi_1(S^1\\cross S^1) \\cong \\ZZ^2$, the free abelian group o…"
+title: Winding-number isomorphism $\pi_1(T^2)\cong\ZZ^2$
 classification:
   areas:
   - topology

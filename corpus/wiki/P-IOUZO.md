@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-IOUZO
 kind: problem
-title: "- Can every continuous function on $\\bar \\DD$ be uniformly approximate\u2026"
+title: Polynomial approximation on $\bar\DD$ and entire functions with a vanishing
+  Taylor coefficient
 classification:
   areas:
   - complex-analysis

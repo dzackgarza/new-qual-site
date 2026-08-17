@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MNR6F
 kind: problem
-title: "1. Claim: this holds iff $f$ is injective iff $f$ has a left inverse."
+title: $f^{-1}(f(S))=S$ for all $S$ iff $f$ is injective
 classification:
   areas:
   - prelim

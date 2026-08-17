@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZBTCU
 kind: problem
-title: "- State the 3 Sylow theorems"
+title: The Sylow theorems
 classification:
   areas:
   - algebra

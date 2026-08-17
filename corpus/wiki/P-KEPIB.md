@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KEPIB
 kind: problem
-title: "- Show that every finite field extension is algebraic."
+title: Finite field extensions are algebraic
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-X3QFP
 kind: problem
-title: "- Classify the five groups of order 12."
+title: Classification of groups of order $12$
 classification:
   areas:
   - algebra

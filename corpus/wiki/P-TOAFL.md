@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOAFL
 kind: problem
-title: "- Classify all groups of order 10."
+title: Classification of groups of order $10$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5RZWO
 kind: problem
-title: "1. Lemma: $f$ is injective $\\iff f$ has a left inverse $f\\inv$ satisfy\u2026"
+title: Composition of injective maps is injective
 classification:
   areas:
   - prelim

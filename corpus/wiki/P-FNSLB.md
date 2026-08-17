@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FNSLB
 kind: problem
-title: "- Let $R$ be a Noetherian ring and $A,B$ algebras over $R$."
+title: Finite type over a Noetherian ring through a finite algebra
 classification:
   areas:
   - algebra

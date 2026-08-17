@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y6XVP
 kind: problem
-title: "3. $\\displaystyle \\int e^{(x + e^x)} ~dx = \\color{blue} {e^{e^{x}}}\u200b$"
+title: Antiderivative of $e^{x+e^x}$
 classification:
   areas:
   - prelim

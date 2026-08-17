@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-75GIT
 kind: problem
-title: 1. Suppose that for an extension field $F$ over $K$ and for $a \in F$,…
+title: $a$ is algebraic over $K(b)$ if $b$ is algebraic over $K(a)$ and transcendental
+  over $K$
 classification:
   areas:
   - algebra

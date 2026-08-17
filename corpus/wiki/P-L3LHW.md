@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L3LHW
 kind: problem
-title: "1. We need to show"
+title: $\lim_{x\to 2}\frac{1}{3+x}=\frac{1}{5}$
 classification:
   areas:
   - prelim

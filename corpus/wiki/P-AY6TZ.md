@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AY6TZ
 kind: problem
-title: "1. Any covering map $p: S^1\\cross S^1 \\into \\RP^2$ would induce an inj\u2026"
+title: The torus does not cover $\RP^2$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MLXNX
 kind: exercise
-title: "- Show that the function $u=u(x,y)$ given by"
+title: Hadamard's ill-posed Cauchy problem for Laplace's equation
 classification:
   areas:
   - complex-analysis

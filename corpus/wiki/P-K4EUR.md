@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K4EUR
 kind: problem
-title: "- Let $\\Lambda\\in L^2(X)\\dual$."
+title: Riesz representation for $L^2$
 classification:
   areas:
   - real-analysis

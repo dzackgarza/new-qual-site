@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4VJTF
 kind: problem
-title: "- Let $\\FF_p$ be the finite field with $p$ elements, where $p$ is a pr\u2026"
+title: Centers of $\GL_n(\FF_p)$ and $\SL_n(\FF_p)$ are scalar matrices
 classification:
   areas:
   - algebra

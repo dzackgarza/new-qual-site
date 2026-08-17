@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TGZ7D
 kind: problem
-title: 6. Suppose that $\phi$ and $\psi$ are commuting endomorphisms of a fin…
+title: Common eigenvectors and simultaneous diagonalization of commuting endomorphisms
 classification:
   areas:
   - algebra

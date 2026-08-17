@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ZHJGI
 kind: problem
-title: 22. For $n>2$ let $\zeta_{n}$ denote a primitive $n$ th root of unity…
+title: $[\mathbb{Q}(\zeta_{n}+\zeta_{n}^{-1}):\mathbb{Q}]=\varphi(n)/2$
 classification:
   areas:
   - algebra

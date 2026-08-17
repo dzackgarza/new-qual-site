@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YUGKU
 kind: exercise
-title: "- State the definition of the product topology, the subspace topology,\u2026"
+title: Product, subspace, and quotient topologies
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NPVTP
 kind: problem
-title: "- Show that nilpotent groups have nontrivial centers."
+title: Nilpotent groups have nontrivial centers
 classification:
   areas:
   - algebra

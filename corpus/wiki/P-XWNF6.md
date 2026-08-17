@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XWNF6
 kind: problem
-title: "7. Theorem: $\\pi_1(\\bigvee_{i=1}^k S^1) \\cong {\\Large{*}}_{i=1}^n\\ZZ$,\u2026"
+title: $\pi_1(\bigvee S^1)$ is free, and $S^2\not\cong S^3$
 classification:
   areas:
   - topology

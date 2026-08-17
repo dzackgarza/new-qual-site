@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FPMMA
 kind: problem
-title: "2. The gradient $\\nabla f = [y, x]$ will be orthogonal to level curves\u2026"
+title: Gradient of $xy$ and the nullspace of a $3\times 3$ matrix
 classification:
   areas:
   - prelim

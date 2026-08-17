@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2JG2B
 kind: problem
-title: 5. What is the companion matrix $M$ of the polynomial $f=x^{2}-x+2$ ov…
+title: Companion matrix of $x^{2}-x+2$ over $\mathbb{C}$
 classification:
   areas:
   - algebra

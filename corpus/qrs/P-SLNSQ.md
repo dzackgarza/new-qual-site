@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SLNSQ
 kind: problem
-title: "1. Note that $8=2^3$ is a prime power $p^n$, so we can get this as a q\u2026"
+title: $\mathbb{F}_8\cong\mathbb{F}_2[t]/\langle t^3+t+1\rangle$
 classification:
   areas:
   - prelim

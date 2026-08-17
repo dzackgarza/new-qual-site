@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-QFOPP
 kind: exercise
-title: "- $\\star$: Prove that the Lebesgue integral is translation invariant,\u2026"
+title: Translation invariance of the Lebesgue integral
 classification:
   areas:
   - real-analysis

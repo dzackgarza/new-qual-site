@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-73LXN
 kind: problem
-title: "- Identify all of the elements of the Galois group of $x^p-2$ for $p$\u2026"
+title: Galois group of $x^p-2$ over $\QQ$ for odd primes $p$
 classification:
   areas:
   - algebra

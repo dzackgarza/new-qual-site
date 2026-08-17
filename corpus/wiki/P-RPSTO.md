@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RPSTO
 kind: problem
-title: "- Show that if $G$ is solvable, then $G$ contains a nontrivial normal\u2026"
+title: Solvable groups have a nontrivial normal subgroup
 classification:
   areas:
   - algebra

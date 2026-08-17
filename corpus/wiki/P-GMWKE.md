@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GMWKE
 kind: problem
-title: "- Compute $H^*(S^2 \\vee S^2 \\vee S^4)$"
+title: Cohomology of $S^2 \vee S^2 \vee S^4$
 classification:
   areas:
   - topology

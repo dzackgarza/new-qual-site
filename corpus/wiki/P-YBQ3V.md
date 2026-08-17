@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YBQ3V
 kind: problem
-title: "- What property on a space guarantees that compact sets are closed"
+title: When compact sets are closed, and $\overline{A\times B}=\overline{A}\times\overline{B}$
 classification:
   areas:
   - topology

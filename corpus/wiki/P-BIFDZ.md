@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BIFDZ
 kind: problem
-title: "- Find two groups $G\\not\\cong H$ where $\\Aut G\\cong \\Aut H$."
+title: Non-isomorphic groups can have isomorphic automorphism groups
 classification:
   areas:
   - algebra

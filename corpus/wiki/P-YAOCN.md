@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YAOCN
 kind: problem
-title: "- Show that if $L/F$ and $\\alpha$ is algebraic over both $F$ and $L$,\u2026"
+title: The minimal polynomial over $L$ divides the minimal polynomial over $F$
 classification:
   areas:
   - algebra

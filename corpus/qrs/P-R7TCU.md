@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R7TCU
 kind: problem
-title: "1. We have $p_A(x) = (x+1)(x-1)(x) = x^3 - x$ and so by Cayley-Hamilto\u2026"
+title: A $3\times 3$ matrix with eigenvalues $-1,0,1$ satisfies $A^3=A$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TLOJE
 kind: problem
-title: "- Show that Abelian $\\implies$ nilpotent"
+title: Abelian groups are nilpotent
 classification:
   areas:
   - algebra

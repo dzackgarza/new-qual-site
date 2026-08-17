@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RN6RC
 kind: problem
-title: "- If $\\theset{\\alpha_i}_{i=1}^n \\subset F$ are algebraic over $K$, sho\u2026"
+title: $K[\alpha_1,\ldots,\alpha_n]=K(\alpha_1,\ldots,\alpha_n)$ for algebraic $\alpha_i$
 classification:
   areas:
   - algebra

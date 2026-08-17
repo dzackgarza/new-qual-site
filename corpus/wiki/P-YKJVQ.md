@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YKJVQ
 kind: problem
-title: "- Show that \\( \\gens{ 2, x }\\normal \\ZZ[x] \\) is not a principal ideal\u2026"
+title: $\langle 2,x\rangle$ is not principal in $\ZZ[x]$
 classification:
   areas:
   - algebra

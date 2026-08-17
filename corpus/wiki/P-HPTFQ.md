@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HPTFQ
 kind: problem
-title: "- Prove Cauchy's theorem."
+title: Cauchy's theorem
 classification:
   areas:
   - algebra

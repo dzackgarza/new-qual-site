@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TNPRX
 kind: problem
-title: "- Give a necessary and sufficient condition for a cyclic group to be s\u2026"
+title: When a cyclic group is solvable
 classification:
   areas:
   - algebra

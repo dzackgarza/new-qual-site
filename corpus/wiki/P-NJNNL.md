@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NJNNL
 kind: problem
-title: "- Show that if $f:X\\to Y$ is continuous and $X$ is compact then the im\u2026"
+title: Continuous images of compact spaces, and compact metric spaces are complete
 classification:
   areas:
   - topology

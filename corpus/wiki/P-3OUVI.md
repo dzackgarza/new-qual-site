@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3OUVI
 kind: problem
-title: "- Let $H, K \\leq G$ be subgroups with $H\\cong K$."
+title: Isomorphic subgroups need not have isomorphic quotients
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VWEPV
 kind: problem
-title: "1. Give the definition that a group $G$ must satisfy the be solvable."
+title: Solvable groups, and every group of order $36$ is solvable
 classification:
   areas:
   - algebra

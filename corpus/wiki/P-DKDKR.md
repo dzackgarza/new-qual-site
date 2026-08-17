@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DKDKR
 kind: problem
-title: "4. Let $p: \\tilde G \\surjects G$ be such a covering, $a,b\\in \\tilde G$\u2026"
+title: Lifting the group law to a covering of a topological group
 classification:
   areas:
   - topology

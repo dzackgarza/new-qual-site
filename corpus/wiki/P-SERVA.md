@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SERVA
 kind: problem
-title: "- Let $H\\leq G$ be a subgroup (not necessarily normal)."
+title: Cosets of a subgroup all have the same cardinality
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TPZHJ
 kind: problem
-title: 1. For a division ring $D$, let $V_{i}$ be a finite dimensional vector…
+title: $\sum(-1)^{i}\dim V_{i}=0$ for a finite exact sequence of vector spaces
 classification:
   areas:
   - algebra

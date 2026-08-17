@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AXWM3
 kind: problem
-title: 24. Prove that the Galois group of the polynomial $x^{n}-1$ over $Q$ i…
+title: Galois group of $x^{n}-1$ over $\mathbb{Q}$ is abelian
 classification:
   areas:
   - algebra

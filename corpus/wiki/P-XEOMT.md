@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XEOMT
 kind: problem
-title: "- Show that $[A_n, A_n] = A_n$ for $n\\geq 5$, so $A_{n\\geq 5}$ is nona\u2026"
+title: $[A_n,A_n]=A_n$ for $n\geq 5$
 classification:
   areas:
   - algebra

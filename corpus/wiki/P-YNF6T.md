@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YNF6T
 kind: problem
-title: "- Suppose $\\size G = pq$ with $p, q\\geq 2$ prime, and let $H\\leq G$ be\u2026"
+title: Proper subgroups of a group of order $pq$ are cyclic
 classification:
   areas:
   - algebra

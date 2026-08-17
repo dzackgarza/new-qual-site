@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EJN4Q
 kind: exercise
-title: "- Show that every open $U \\subseteq \\RR$ is a countable union of disjo\u2026"
+title: Open subsets of $\mathbb{R}$ are countable unions of disjoint open intervals
 classification:
   areas:
   - real-analysis

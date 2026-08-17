@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-V7BGS
 kind: problem
-title: "- Prove that if $\\size G$ is prime, then $G$ is cyclic"
+title: Groups of prime order are cyclic
 classification:
   areas:
   - algebra

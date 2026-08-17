@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7H5CP
 kind: problem
-title: "- Show that p-groups $\\implies$ nilpotent"
+title: $p$-groups are nilpotent
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OX7OF
 kind: problem
-title: "8. Here we go:"
+title: Induced maps on $\pi_1(S^1)$ of $z\mapsto z^n$, antipodal, and $\sin$ maps
 classification:
   areas:
   - topology

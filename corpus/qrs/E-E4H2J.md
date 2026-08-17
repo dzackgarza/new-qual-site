@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: E-E4H2J
 kind: exercise
-title: "- Show that if $f\\in L^1$ and $g$ is bounded, then $f\\ast g$ is bounde\u2026"
+title: Convolution of an $L^1$ function with a bounded function is bounded and uniformly
+  continuous
 classification:
   areas:
   - real-analysis

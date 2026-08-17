@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MWSPM
 kind: problem
-title: "- Show that a finitely generated module over a Noetherian local ring i\u2026"
+title: Finitely generated flat modules over Noetherian local rings are free
 classification:
   areas:
   - algebra

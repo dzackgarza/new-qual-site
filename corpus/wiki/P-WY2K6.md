@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WY2K6
 kind: problem
-title: "- Prove Lagrange's theorem."
+title: Lagrange's theorem
 classification:
   areas:
   - algebra

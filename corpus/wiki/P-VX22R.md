@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VX22R
 kind: problem
-title: "- Show that every nontrivial normal subgroup of a finite $p\\dash$group m\u2026"
+title: Nontrivial normal subgroups of a finite $p$-group meet the center
 classification:
   areas:
   - algebra

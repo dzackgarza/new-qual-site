@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EN5JE
 kind: problem
-title: "- Let $H, K \\leq G$ a finite group, and without using the normalizers\u2026"
+title: $|HK| = |H||K|/|H \cap K|$
 classification:
   areas:
   - algebra

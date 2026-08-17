@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PIN4T
 kind: problem
-title: 9. For a field $K$ take $f \in K[x]$ and let $n=\operatorname{deg} f$.…
+title: Degree of a splitting field of a degree-$n$ polynomial divides $n!$
 classification:
   areas:
   - algebra

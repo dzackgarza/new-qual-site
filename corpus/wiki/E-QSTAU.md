@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-QSTAU
 kind: problem
-title: 4. If $R$ is an integral domain and $A$ is an $n \times n$ matrix over…
+title: Nontrivial solutions of $Ax=0$ versus $\det A=0$ over an integral domain
 classification:
   areas:
   - algebra

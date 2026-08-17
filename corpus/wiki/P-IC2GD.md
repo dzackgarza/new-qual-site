@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IC2GD
 kind: problem
-title: "Untitled"
+title: A normal subgroup of smallest prime order lies in the center
 classification:
   areas:
   - algebra
@@ -14,6 +14,9 @@ solved: false
 ---
 
 ::: problem
+Let $H\unlhd G$ be a normal subgroup of a finite group $G$, where $|H|$ is the smallest prime $p$ dividing $|G|$.
+Prove that $H$ is contained in the center of $G$.
+
 ![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 13.png]]
 
 ![[Seminars and Talks/Workshops/Algebra/_attachments/Untitled 14.png]]

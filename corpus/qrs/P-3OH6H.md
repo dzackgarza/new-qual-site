@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3OH6H
 kind: problem
-title: "2. Claim: take $\\delta < \\min(1, \\sqrt{\\frac{\\varepsilon}{5}})$. Then\u2026"
+title: $\lim_{x\to 2}(x+1/x)=5/2$
 classification:
   areas:
   - prelim

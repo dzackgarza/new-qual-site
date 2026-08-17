@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FB5CY
 kind: problem
-title: "1. We want some power series centered at 4 with convergence radius 1,\u2026"
+title: Power series at $4$ with radius $1$ converging at one endpoint
 classification:
   areas:
   - prelim

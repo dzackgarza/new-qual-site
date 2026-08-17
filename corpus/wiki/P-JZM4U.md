@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JZM4U
 kind: problem
-title: "- State the class equation."
+title: The class equation
 classification:
   areas:
   - algebra

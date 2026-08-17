@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DUVZD
 kind: problem
-title: "- Let $\\sigma = (4\\, 2\\, 1)(6\\, 1\\, 3\\, 2) \\in S_6$ in cycle notation."
+title: Cycle type, order, and sign of $(4\,2\,1)(6\,1\,3\,2)$
 classification:
   areas:
   - algebra

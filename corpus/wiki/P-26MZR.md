@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-26MZR
 kind: problem
-title: "- Show that the Quaternion group has only one element of order 2, name\u2026"
+title: The quaternion group has a unique element of order $2$, namely $-1$
 classification:
   areas:
   - algebra

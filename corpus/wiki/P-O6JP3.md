@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O6JP3
 kind: problem
-title: "- Prove that if $R$ is an integral domain, then $R[t]$ is again an int\u2026"
+title: Polynomial rings over integral domains are integral domains
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OVRL2
 kind: problem
-title: "- Show that any finite integral domain is a field."
+title: Finite integral domains are fields
 classification:
   areas:
   - algebra

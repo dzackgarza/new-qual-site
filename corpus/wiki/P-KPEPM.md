@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KPEPM
 kind: problem
-title: "- Determine all pairs $n, p\\in \\ZZ^{\\geq 1}$ such that $\\SL_n(\\FF_p)$\u2026"
+title: Pairs $(n,p)$ for which $\SL_n(\FF_p)$ is solvable
 classification:
   areas:
   - algebra

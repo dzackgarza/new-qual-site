@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LFWBF
 kind: problem
-title: '> Note: Let $X\dual \definedas \hom_R(X, R)$ denote the dual.'
+title: Naturality of the bidual evaluation map
 classification:
   areas:
   - algebra

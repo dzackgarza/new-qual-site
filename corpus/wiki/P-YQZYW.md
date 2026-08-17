@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YQZYW
 kind: problem
-title: "- Compute all intermediate field extensions of $\\QQ(\\sqrt 2, \\sqrt 3)$\u2026"
+title: Intermediate fields of $\QQ(\sqrt{2},\sqrt{3})$ and $\QQ(\sqrt{2}+\sqrt{3})$
 classification:
   areas:
   - algebra

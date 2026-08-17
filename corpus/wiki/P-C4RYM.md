@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C4RYM
 kind: problem
-title: "- Prove Burnside's theorem."
+title: Burnside's lemma
 classification:
   areas:
   - algebra

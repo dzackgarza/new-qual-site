@@ -2,7 +2,8 @@
 schema: qual/card@1
 id: P-WJTPS
 kind: problem
-title: "2. We first note that we can rewrite the equation of the region to obt\u2026"
+title: Green's theorem for $\int_C xe^x\,dx+(ye^y+x^2)\,dy$ over the upper half of
+  $(x-1)^2+y^2=1$
 classification:
   areas:
   - prelim

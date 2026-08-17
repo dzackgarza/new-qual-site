@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WC3HY
 kind: problem
-title: "- State definitions of the following:"
+title: Group action, orbit, stabilizer, and fixed points
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PIW3Z
 kind: problem
-title: "- Use the Kunneth formula to compute $H^*(S^2\\cross S^2; \\ZZ)$."
+title: $H^*(S^2\times S^2;\ZZ)$ via Künneth
 classification:
   areas:
   - topology

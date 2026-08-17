@@ -32,12 +32,8 @@ jobs:
           git clone https://github.com/dzackgarza/pandoc-config.git ~/.pandoc
       - name: Install Python and project deps
         run: uv sync --frozen
-      # `needs_source_clones` is deselected because the runner has no clones of
-      # the five source repos. That is an exclusion, not a pass: G9's archive
-      # gate runs those three tests against fresh clones, and no source repo is
-      # archived until they are green there.
       - name: Run the test suite
-        run: uv run --group dev pytest -q -m "not needs_source_clones"
+        run: uv run --group dev pytest -q
   build:
     needs: test
     runs-on: ubuntu-latest

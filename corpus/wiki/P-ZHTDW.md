@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZHTDW
 kind: problem
-title: "- Identify $\\Aut_\\Grp(\\bigoplus_{i=1}^n \\ZZ/p)$ as a matrix group and\u2026"
+title: $\Aut((\ZZ/p)^n)$ as a matrix group
 classification:
   areas:
   - algebra

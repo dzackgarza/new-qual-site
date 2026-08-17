@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-4CL6A
 kind: exercise
-title: "- Show that if a subset of a metric space is complete and totally boun\u2026"
+title: Complete totally bounded subsets of a metric space are compact
 classification:
   areas:
   - real-analysis

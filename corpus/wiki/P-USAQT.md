@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-USAQT
 kind: problem
-title: "- Show that every proper ideal is contained in a maximal ideal"
+title: Ideals, $\spec$, $\maxspec$, and radicals
 classification:
   areas:
   - algebra
