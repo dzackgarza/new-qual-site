@@ -34,6 +34,10 @@ test:
 query sql: build
     @sqlite3 -box build/catalog.sqlite {{ quote(sql) }}
 
+# Print n random unsolved cards from the solution queue (.agent_queue.json)
+sample-unsolved n="5":
+    @jq -r '.[] | select(.status == "unsolved") | "\(.id)\t\(.area)\t\(.path)\t\(.title)"' .agent_queue.json | shuf -n {{ n }}
+
 # Reconcile every pinned make-me-a-qual row (additive; legacy generated imports stay until audited)
 import:
     uv run python tools/import_mmaq.py --root .
