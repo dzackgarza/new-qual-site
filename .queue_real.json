@@ -3373,7 +3373,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2016, problem 2",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA16M3",
@@ -3381,7 +3381,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2016, problem 3",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA16M4",
@@ -3389,7 +3389,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2016, problem 4",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA16M5",
@@ -3397,7 +3397,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2016, problem 5",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA16M6",
@@ -3405,7 +3405,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2016, problem 6",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA18M1",
@@ -3413,7 +3413,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2018, problem 1",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA18M2",
@@ -3421,7 +3421,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2018, problem 2",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA18M3",
@@ -3429,7 +3429,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2018, problem 3",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA18M4",
@@ -3437,7 +3437,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2018, problem 4",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA18M5",
@@ -3445,7 +3445,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2018, problem 5",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA18M6",
@@ -3453,7 +3453,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, May 2018, problem 6",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA19J1",
@@ -3461,7 +3461,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, January 2019, problem 1",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA19J2",
@@ -3469,7 +3469,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, January 2019, problem 2",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA19J3",
@@ -3477,7 +3477,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, January 2019, problem 3",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA19J4",
@@ -3485,7 +3485,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, January 2019, problem 4",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA19J5",
@@ -3493,7 +3493,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, January 2019, problem 5",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RA19J6",
@@ -3501,7 +3501,7 @@
     "kind": "problem",
     "title": "UGA analysis qualifying exam, January 2019, problem 6",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-RBVY6",
@@ -3581,7 +3581,7 @@
     "kind": "problem",
     "title": "Recall that the inner product on $L^2(\\mathbb{R}^d)$ is given by",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-ULNGG",
@@ -3637,7 +3637,7 @@
     "kind": "problem",
     "title": "a. Prove the Riemann-Lebesgue Lemma: if $f \\in L^1(\\mathbb{R}^d)$, the\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-WMJZB",
@@ -3645,7 +3645,7 @@
     "kind": "problem",
     "title": "Let $\\mathcal{H}$ be a Hilbert space equipped with an inner product $(\\cdot,\\cdot)$ and\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-WVJBX",
@@ -3653,7 +3653,7 @@
     "kind": "problem",
     "title": "Suppose $\\{f_n\\}_{n=1}^\\infty \\subset L^2(\\mathbb{R})$ is a sequence t\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-XYYHG",
@@ -3669,7 +3669,7 @@
     "kind": "problem",
     "title": "For $f:\\mathbb{R}\\to\\mathbb{R}$ in $L^1(\\mathbb{R})$, let $Mf$ be the\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-Y3MQA",
@@ -3685,7 +3685,7 @@
     "kind": "problem",
     "title": "Let $fg(x) := \\int_{-\\infty}^{+\\infty} f(y)g(x-y)dy$ denote the convolution of $f$ and $g$.",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-YHXGO",
@@ -3701,7 +3701,7 @@
     "kind": "problem",
     "title": "Determine whether there is a nonzero smooth compactly supported functi\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-YPGAW",
@@ -3709,7 +3709,7 @@
     "kind": "problem",
     "title": "For each natural number $n$, let $f_n : [0,1] \\to \\mathbb{R}$ be a seq\u2026",
     "area": "real-analysis",
-    "status": "unsolved"
+    "status": "solved"
   },
   {
     "id": "P-YQDFJ",
