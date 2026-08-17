@@ -63,10 +63,25 @@ measured is the same defect in smaller form.
 
 ## This corpus is authored content
 
-Every field on a card — title, solved, relations, classification, body — is
-authored content in a curated corpus. A tool that automatically creates, fills,
-normalizes, or silences a gap in that content is obviously wrong. A gap is
-curation work, not a tooling problem.
+This is a curated corpus of qualifying-exam mathematics, like the Stacks
+Project. Every card is hand-authored: a problem statement, a definition, a
+theorem, a solution, a hint. The fields on a card — title, classification,
+relations, body — are content a human wrote or will write.
+
+Good work on this corpus is reading mathematics, understanding what a statement
+says, and making curation decisions: writing a title that names the problem,
+classifying a card under the right topics, writing a solution, relating two
+cards that depend on each other. A gap in a field is curation work, not a
+tooling problem.
+
+## Heuristics have no place in this repo
+
+A heuristic is a proxy for intelligent work that hasn't been done yet. It
+produces plausible-looking output that fills a field, passes a check, and hides
+the gap that a human author needs to fill. That is the opposite of curation —
+it is manufacturing the appearance of curation. There is no scenario where a
+heuristic serves this corpus. If a field is empty, the field is empty; report
+it and a human will fill it.
 
 ## One-time tools do not stay in the repo
 
@@ -74,6 +89,14 @@ The migration is over. A tool that was used once to transport, route, split,
 merge, or repair content during migration is done. Delete it when the work is
 finished. Do not keep it, do not write tests for it, do not enshrine it as a
 recipe. Its output is committed corpus content; the tool itself is fossil.
+
+## What a tool may do
+
+A tool may render and transport: build the site, sync an external file into the
+repo, check that the corpus is internally consistent. A check may report a
+measurement — two cards hold the same bytes, a card has no solution, a title is
+unreadable — named for exactly what it measured. The measurement is a candidate
+for a human to read. It must never be wired to anything that acts on it.
 
 # Solution status
 
