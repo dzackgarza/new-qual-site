@@ -11,6 +11,7 @@ classification:
   - group-actions
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.exercise}

@@ -12,6 +12,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="?"}
 Suppose that $f$ is an analytic function in the region $D$ which

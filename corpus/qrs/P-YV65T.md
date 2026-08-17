@@ -12,6 +12,7 @@ classification:
   - casorati-weierstrass
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

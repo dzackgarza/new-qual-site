@@ -12,6 +12,7 @@ classification:
   - manifolds
 relations: []
 review: draft
+solved: true
 ---
 
 Compute $H_*$ of the complement of a knotted solid torus in $S^3$.

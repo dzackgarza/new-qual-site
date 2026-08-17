@@ -12,6 +12,7 @@ classification:
   - ideals
 relations: []
 review: draft
+solved: true
 ---
 
 Let $R$ be a PID and $(a_1) < (a_2) < \cdots$ be an ascending chain of ideals in $R$.

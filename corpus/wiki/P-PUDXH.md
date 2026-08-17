@@ -12,6 +12,7 @@ classification:
   - norms
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

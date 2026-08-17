@@ -12,6 +12,7 @@ classification:
   - centralizers-and-normalizers
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Prove that if $G$ is a $p\dash$group, every subgroup $N\normal G$ intersects the center $Z(G)$.

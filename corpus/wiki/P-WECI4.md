@@ -12,6 +12,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Arbitrary Rouché, $R\mathbb{D}$"}
 Find the number of zeros in $\abs{z} < R$ of 

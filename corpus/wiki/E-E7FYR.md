@@ -12,6 +12,7 @@ relations:
 - kind: related-to
   target: E-YAEMZ
 review: draft
+solved: false
 ---
 
 - $X$ is compact
@@ -19,5 +20,6 @@ review: draft
 - Every infinite subset $A\subseteq X$ has a limit point in $X$.
 
 ::: {.remark}
-These are the first two conditions of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without their stem. That card now carries the whole exercise; merging these bullets back into it is a canonicity decision rather than a truncation repair.
+These are the first two conditions of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without their stem.
+That card now carries the whole exercise; merging these bullets back into it is a canonicity decision rather than a truncation repair.
 :::

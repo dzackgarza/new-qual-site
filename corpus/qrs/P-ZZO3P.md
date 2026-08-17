@@ -13,6 +13,7 @@ classification:
   - entire-functions
 relations: []
 review: draft
+solved: true
 ---
 Prove the Fundamental Theorem of Algebra (using complex analysis).
 

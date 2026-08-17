@@ -12,6 +12,7 @@ classification:
   - canonical-forms
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

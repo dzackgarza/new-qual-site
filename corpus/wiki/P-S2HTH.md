@@ -12,6 +12,7 @@ classification:
   - partitions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem}
 Let $G=S_5$, the symmetric group on 5 elements. Identify

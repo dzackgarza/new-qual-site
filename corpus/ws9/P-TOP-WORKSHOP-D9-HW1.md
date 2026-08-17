@@ -10,8 +10,9 @@ classification:
   - homology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Compute the homology groups of $S^n$ for all $n\ge 0$.
 :::

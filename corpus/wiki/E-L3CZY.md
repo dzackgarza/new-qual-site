@@ -13,6 +13,7 @@ classification:
   - morera
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise title="?"}

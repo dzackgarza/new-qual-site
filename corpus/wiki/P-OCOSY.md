@@ -12,6 +12,7 @@ classification:
   - laurent-series
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Invert $\cos(z)$, one coefficient at a tiem"}
 Find $1/\cos(z)$ using this method.

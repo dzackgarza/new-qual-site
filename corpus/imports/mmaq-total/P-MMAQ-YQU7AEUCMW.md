@@ -10,6 +10,7 @@ classification:
   - fundamental-group
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

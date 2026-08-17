@@ -11,6 +11,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 
 What is an example of isomorphic but not equal fields?

@@ -11,6 +11,7 @@ classification:
   - biholomorphisms
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Special case of bijections"}
 Show that if $f: \Delta\to\Delta$ is a biholomorphism with $f(0) = 0$ then $f$ is a rotation.

@@ -11,10 +11,9 @@ classification:
   - matrices
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Determine the number of conjugacy classes of $16 \times 16$ matrices
-with entries in $\mathbb{Q}$ and minimal polynomial
-$(x^2+1)^2(x^3+2)^2$.
+Determine the number of conjugacy classes of $16 \times 16$ matrices with entries in $\mathbb{Q}$ and minimal polynomial $(x^2+1)^2(x^3+2)^2$.
 :::

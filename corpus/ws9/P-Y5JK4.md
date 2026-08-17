@@ -11,6 +11,7 @@ classification:
   - principal-ideal-domains
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}

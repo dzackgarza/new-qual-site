@@ -11,6 +11,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 5.3.12"}

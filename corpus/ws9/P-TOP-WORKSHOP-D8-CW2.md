@@ -11,8 +11,9 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove or disprove: $S^2\vee S^2$ is a covering space of $S^2$.
 :::

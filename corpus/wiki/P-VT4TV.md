@@ -12,6 +12,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Invert $\sin(z)$, one coefficient at a time"}
 Find $1/\sin(z)$ using this method.

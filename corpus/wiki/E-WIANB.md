@@ -13,10 +13,11 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="Bounded holomorphic functions form a Banach space"}
+
+::: {.exercise title="Bounded holomorphic functions form a Banach space"}
 For $\Omega\subseteq\CC$, show that $A(\CC)\definedas \theset{f: \Omega \to \CC \st f\text{ is holomorphic, bounded}}$ is a Banach space.
 
 > Hint: Apply Morera's Theorem and Cauchy's Theorem
-
 :::

@@ -12,6 +12,7 @@ classification:
   - irreducibility-criteria
 relations: []
 review: draft
+solved: true
 ---
 
 How do you construct finite fields with $p^n$ elements?

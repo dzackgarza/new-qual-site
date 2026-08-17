@@ -12,6 +12,7 @@ classification:
   - isomorphism-theorems
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem}
 Let $G$ be a finite group and let $N \trianglelefteq G$,

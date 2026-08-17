@@ -12,6 +12,7 @@ classification:
   - cauchy-integral-formula
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

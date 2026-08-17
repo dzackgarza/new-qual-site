@@ -13,6 +13,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

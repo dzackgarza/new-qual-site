@@ -13,6 +13,7 @@ classification:
   - sequences-of-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Fixed point convergence"}
 Suppose $f:\DD\to \DD$ with $f(a) = a$ a fixed point where $\abs{f'(a)} < 1$.

@@ -11,6 +11,7 @@ classification:
   - automorphisms
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

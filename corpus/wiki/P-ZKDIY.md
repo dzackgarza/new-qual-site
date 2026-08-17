@@ -12,6 +12,7 @@ classification:
   - rank-and-nullity
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem}
 Let $x,y \in \mathbb{C}$ and consider the matrix

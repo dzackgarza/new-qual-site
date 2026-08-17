@@ -12,6 +12,7 @@ classification:
   - contour-integration
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\gamma$ be a smooth curve joining two distinct points $a, b\in \CC$.

@@ -14,6 +14,7 @@ classification:
   - harmonic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="$1/1+a^2+2a\cos(\theta)$, Poisson kernels"}
 \[

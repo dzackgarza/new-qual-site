@@ -11,6 +11,7 @@ classification:
   - entire-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Modulus of $e^z$"}
 Show that $\abs{e^z} = e^{\Re(z)}$.

@@ -12,6 +12,7 @@ classification:
   - blaschke-factors
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

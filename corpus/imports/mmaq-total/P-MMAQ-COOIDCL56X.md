@@ -10,6 +10,7 @@ classification:
   - pdes
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

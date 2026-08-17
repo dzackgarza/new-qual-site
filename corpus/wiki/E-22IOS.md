@@ -12,6 +12,7 @@ classification:
   - separation-axioms
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise

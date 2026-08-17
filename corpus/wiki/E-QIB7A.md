@@ -13,6 +13,7 @@ classification:
   - mean-value-property
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 (1) Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence

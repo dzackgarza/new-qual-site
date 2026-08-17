@@ -12,6 +12,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Using the estimates"}
 Does there exist a map $f: \DD\to \DD$ with

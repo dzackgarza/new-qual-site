@@ -13,6 +13,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Assume $f$ is continuous in the region:

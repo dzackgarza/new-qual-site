@@ -12,6 +12,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Find the number of roots of $z^4 - 6z + 3 =0$ in $|z|<1$ and

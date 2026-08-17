@@ -12,6 +12,7 @@ classification:
   - power-series
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Convergence of a $\ZZ\dash$index series"}
 Find the radius of convergence for 

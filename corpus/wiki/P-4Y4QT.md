@@ -12,10 +12,11 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $0<a<4$ and evaluate 
+Let $0<a<4$ and evaluate
 \[
 \int_0^\infty \frac{x^{\alpha-1}}{1+x^3} ~dx
 \]

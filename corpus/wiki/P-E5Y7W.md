@@ -12,6 +12,7 @@ classification:
   - rings
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 4.1.7"}

@@ -12,6 +12,7 @@ classification:
   - limits
 relations: []
 review: draft
+solved: true
 ---
 Show that if $x_n$ is a decreasing sequence of positive real numbers such that $\sum_{n=1}^\infty x_n$ converges, then
 $$

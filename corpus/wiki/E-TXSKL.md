@@ -12,6 +12,7 @@ classification:
   - fatou
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Compute the following limits:

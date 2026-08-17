@@ -13,6 +13,7 @@ classification:
   - conformal-maps
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\displaystyle{\psi_{\alpha}(z)=\frac{\alpha-z}{1-\bar{\alpha}z}}$

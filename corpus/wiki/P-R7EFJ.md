@@ -11,6 +11,7 @@ classification:
   - fundamental-group
 relations: []
 review: draft
+solved: true
 ---
 
 Is there a covering map from

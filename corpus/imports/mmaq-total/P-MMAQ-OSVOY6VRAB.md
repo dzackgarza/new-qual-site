@@ -10,9 +10,9 @@ classification:
   - galois-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Describe the Galois group and the intermediate fields of the cyclotomic
-extension $\mathbb Q(\zeta_{12})/\mathbb Q$.
+Describe the Galois group and the intermediate fields of the cyclotomic extension $\mathbb Q(\zeta_{12})/\mathbb Q$.
 :::

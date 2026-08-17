@@ -10,6 +10,7 @@ classification:
   - cauchy-riemann
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Polar CR equations"}
 Show that in polar coordinates, the CR equations take the following form:

@@ -24,6 +24,9 @@ class DiagnosticCode(Enum):
     OCCURRENCE_SOURCE_NOT_A_SOURCE_CARD = "occurrence-source-not-a-source-card"
     OCCURRENCE_INSTANCE_OF_COUNT = "occurrence-instance-of-count"
     OCCURRENCE_INSTANCE_OF_NOT_A_PROBLEM = "occurrence-instance-of-not-a-problem"
+    # declared status versus corpus evidence
+    SOLVED_WITHOUT_EVIDENCE = "solved-without-evidence"
+    UNSOLVED_WITH_SOLUTION = "unsolved-with-solution"
     # reading
     CARD_UNREADABLE = "card-unreadable"
     READER_WARNING = "reader-warning"

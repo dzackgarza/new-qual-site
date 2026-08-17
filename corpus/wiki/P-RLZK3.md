@@ -12,6 +12,7 @@ classification:
   - geometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.warnings}
 The question as written on the original qual has several errors.

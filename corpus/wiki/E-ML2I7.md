@@ -12,6 +12,7 @@ classification:
   - harmonic-functions
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise

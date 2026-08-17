@@ -101,7 +101,9 @@ def _run(root: Path, source: Path) -> None:
     )
 
 
-def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_files(tmp_path: Path) -> None:
+def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_files(
+    tmp_path: Path,
+) -> None:
     """The real CLI owns row identity, date interpretation, and additive writes."""
 
     source = tmp_path / "Combined_Questions.yaml"
@@ -120,6 +122,7 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
         "classification": {"areas": ["algebra"], "topics": ["groups"]},
         "relations": [],
         "review": "draft",
+        "solved": False,
     }
     (legacy / "P-OLD.md").write_text(
         "---\n" + yaml.safe_dump(legacy_meta, sort_keys=False) + "---\n\n::: problem\nLet $G$ be a finite group. Prove that the identity is unique.\n:::\n"
@@ -144,7 +147,11 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
     assert ledger[3]["locator"] == "row-0004"
 
     sources = {path.stem: _meta(path)["payload"]["date"] for path in (tmp_path / "corpus/imports/mmaq-total").glob("SRC-*.md")}
-    assert sources["SRC-MMAQ-UGA-ALG-2018-SPRING"] == {"kind": "academic-term", "year": 2018, "term": "spring"}
+    assert sources["SRC-MMAQ-UGA-ALG-2018-SPRING"] == {
+        "kind": "academic-term",
+        "year": 2018,
+        "term": "spring",
+    }
     assert sources["SRC-MMAQ-NUS-RA-1970-SPRING"] == {"kind": "term", "term": "spring"}
     assert sources["SRC-MMAQ-UGA-TOP-UNKNOWN-NA"] == {"kind": "unknown"}
     assert sources["SRC-MMAQ-UGA-CA-EXTRA-NA"] == {"kind": "unknown"}
@@ -154,7 +161,9 @@ def test_importer_reconciles_rows_dates_and_idempotently_preserves_unrelated_fil
     assert _snapshot(tmp_path) == first
 
 
-def test_a_retired_topic_resolves_to_its_survivor_and_an_unregistered_one_stops_the_import(tmp_path: Path) -> None:
+def test_a_retired_topic_resolves_to_its_survivor_and_an_unregistered_one_stops_the_import(
+    tmp_path: Path,
+) -> None:
     """Registry merges are curation: the importer honours them and never writes them."""
 
     source = tmp_path / "Combined_Questions.yaml"

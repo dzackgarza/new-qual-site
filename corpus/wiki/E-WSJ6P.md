@@ -11,6 +11,7 @@ classification:
   - fubini-tonelli
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Let $(\Omega,\mcb)$ be a measurable space with a Borel $\sigma\dash$algebra and $\mu_n: \mcb \to [0, \infty]$ be a $\sigma\dash$additive measure for each $n$.

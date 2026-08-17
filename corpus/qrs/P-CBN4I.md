@@ -12,6 +12,7 @@ classification:
   - centralizers-and-normalizers
 relations: []
 review: draft
+solved: true
 ---
 For a prime $p$, let $G$ be a finite $p\dash$group and let $N$ be a normal subgroup of $G$ of order $p$.
 Prove that $N$ is contained in the center of $G$.

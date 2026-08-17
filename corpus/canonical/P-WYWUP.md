@@ -12,6 +12,7 @@ classification:
   - minimal-and-characteristic-polynomials
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

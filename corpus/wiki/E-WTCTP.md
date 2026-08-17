@@ -13,6 +13,7 @@ classification:
   - open-mapping-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Detecting injectivity using derivatives"}
 Show that if $z_0$ is a zero of $f'$ of order $n-1$, then $f$ is $n$-to-one in a neighborhood of $z_0$.

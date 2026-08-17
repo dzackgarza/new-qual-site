@@ -12,6 +12,7 @@ classification:
   - surfaces
 relations: []
 review: draft
+solved: true
 ---
 
 Let $X = S^1 \cross S^1$ and $A\subset X$ be a subspace with $A \cong S^1 \vee S^1$.

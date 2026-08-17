@@ -11,10 +11,14 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Define what it means for $(X,d)$ to be a metric space. Then $d:X\times X\to\mathbb R$: is $d$ continuous? Discuss. If you cannot answer in general do it for $X=\mathbb R$ with the usual topology.
+::: {.problem title="?"}
+Define what it means for $(X,d)$ to be a metric space.
+Then $d:X\times X\to\mathbb R$: is $d$ continuous?
+Discuss.
+If you cannot answer in general do it for $X=\mathbb R$ with the usual topology.
 :::
 
 ::: remark

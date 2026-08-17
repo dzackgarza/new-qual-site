@@ -12,6 +12,7 @@ classification:
   - matrices
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Compute $\JCF(A)$ for 

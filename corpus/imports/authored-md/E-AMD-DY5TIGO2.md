@@ -11,6 +11,7 @@ classification:
   - minimal-and-characteristic-polynomials
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise}

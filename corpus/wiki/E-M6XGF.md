@@ -12,6 +12,7 @@ classification:
   - group-actions
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise title="?"}

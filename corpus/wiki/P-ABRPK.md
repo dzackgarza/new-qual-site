@@ -13,6 +13,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f:\DD\to\DD$ is analytic and admits a continuous extension $\tilde f: \bar \DD \to \bar \DD$ such that $\abs{z} = 1 \implies \abs{f(z)} = 1$.

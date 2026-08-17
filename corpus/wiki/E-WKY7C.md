@@ -11,15 +11,14 @@ classification:
   - entire-functions
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="?"}
-Find all entire functions $f$ such that $f(x) = e^x$ on $\RR$.
 
+::: {.exercise title="?"}
+Find all entire functions $f$ such that $f(x) = e^x$ on $\RR$.
 :::
 
-:::{.solution}
+::: {.solution}
 The function $g(z) \da f(z) - e^z$ is entire and identically zero on $\RR$, which contains a limit point.
 So $g(z) \equiv 0$ on $\CC$, meaning $f(z) = e^z$ is the only such function.
-
 :::
-

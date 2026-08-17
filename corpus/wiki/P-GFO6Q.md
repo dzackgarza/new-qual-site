@@ -12,6 +12,7 @@ classification:
   - classification
 relations: []
 review: draft
+solved: true
 ---
 Let $R$ be an algebra over $\CC$ which is finite-dimensional as a $\CC\dash$vector space. Recall that an ideal $I$ of $R$ can be considered as a $\CC\dash$subvector space of $R$. We define the codimension of $I$ in $R$ to be 
 \[

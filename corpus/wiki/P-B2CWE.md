@@ -12,6 +12,7 @@ classification:
   - l1
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $\varphi\in L^1(\RR)$ with 

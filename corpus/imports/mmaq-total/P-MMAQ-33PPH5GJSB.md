@@ -12,6 +12,7 @@ classification:
   - tube-lemma
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

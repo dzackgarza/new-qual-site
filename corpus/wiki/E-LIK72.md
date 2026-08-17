@@ -13,14 +13,15 @@ classification:
   - riemann-surfaces
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="Finitely many poles"}
+
+::: {.exercise title="Finitely many poles"}
 Show that a meromorphic function on $\CP^1$ can have only finitely many poles.
 Show that moreover if $f$ is meromorphic on $\CC$ with infinitely many poles, then the poles must accumulate on an essential singularity at $z=\infty$.
-
 :::
 
-:::{.solution}
+::: {.solution}
 Since poles are isolated by definition, the set $P_f$ of poles of $f$ is a discrete subset of $\CP^1$, which is compact.
 Note $P_f$ is closed because being holomorphic is an open condition.
 Any discrete closed subset of a compact space is discrete and compact, thus necessarily finite.

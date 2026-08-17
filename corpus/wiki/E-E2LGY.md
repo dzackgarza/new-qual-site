@@ -13,6 +13,7 @@ classification:
   - morera
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of entire functions where

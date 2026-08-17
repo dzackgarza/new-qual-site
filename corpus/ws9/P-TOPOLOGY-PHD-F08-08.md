@@ -11,9 +11,9 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove that the open interval $(0,1)$ considered as a subset of $\mathbb R$ in the usual topology is not compact.
 :::
-

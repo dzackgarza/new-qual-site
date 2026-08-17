@@ -11,15 +11,16 @@ classification:
   - power-series
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="Orders of zeros"}
+
+::: {.exercise title="Orders of zeros"}
 Find the orders of zeros of the following functions:
 
 - $(e^z-1)^3$
-
 :::
 
-:::{.solution}
+::: {.solution}
 \envlist
 
 - $z=0$ of order 3: if $z_0$ is order $n$ for $f$, then it's order $kn$ for $f^k$.

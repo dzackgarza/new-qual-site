@@ -13,6 +13,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Integral computation"}
 Without using the residue formula, compute

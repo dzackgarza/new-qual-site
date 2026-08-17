@@ -12,6 +12,7 @@ classification:
   - normal-subgroups
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.exercise title="?"}

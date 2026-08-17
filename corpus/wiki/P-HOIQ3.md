@@ -12,6 +12,7 @@ classification:
   - point-set
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="?"}
 Let X be a noncompact locally compact Hausdorff space, with topology $\mct$. 

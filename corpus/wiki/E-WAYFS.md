@@ -13,6 +13,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Zeros of $\sin(\pi z)$ and singularities of $\csc(\pi z)$"}
 Show that the complex zeros of $f(z) \da \sin(\pi z)$ are exactly $\ZZ$, and each is order 1.

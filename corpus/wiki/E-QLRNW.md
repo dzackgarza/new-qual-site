@@ -13,6 +13,7 @@ classification:
   - power-series
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Uniform limits of derivatives, term-by-term differentiation"}
 Suppose $f_k: \Omega\to \CC$ is a sequence of differentiable functions converging locally uniformly to $f:\Omega\to \CC$.

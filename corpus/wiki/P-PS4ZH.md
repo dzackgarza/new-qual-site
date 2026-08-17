@@ -11,6 +11,7 @@ classification:
   - separability
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

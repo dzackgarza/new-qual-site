@@ -11,8 +11,9 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Give 4--6 different topologies on $\mathbb R$.
 :::

@@ -13,6 +13,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="True/false"}
 Prove that the following statements or true, or find a counterexample:

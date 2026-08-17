@@ -12,6 +12,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem}

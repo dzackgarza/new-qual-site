@@ -12,6 +12,7 @@ classification:
   - torsion
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 4.6.3"}

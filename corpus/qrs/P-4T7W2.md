@@ -12,6 +12,7 @@ classification:
   - classification
 relations: []
 review: draft
+solved: true
 ---
 Give generators and relations for the non-commutative group $G$ of order 63 containing an element of order $9 .$
 

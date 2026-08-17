@@ -11,6 +11,7 @@ classification:
   - metric-spaces
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $(X, d)$ is a compact metric space and $U$ is an open covering of $X$. 

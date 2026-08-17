@@ -12,6 +12,7 @@ classification:
   - hyperbolic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Cauchy formula and $\sinh$"}
 Compute

@@ -13,6 +13,7 @@ classification:
   - rouche
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 A holomorphic mapping $f: U \rightarrow V$ is a local bijection on $U$ if for every $z \in U$ there exists an open disc $D \subset U$ centered at $z$ so that $f: D \rightarrow f(D)$ is a bijection. Prove that a holomorphic map $f: U \rightarrow V$ is a local bijection if and only if $f^{\prime}(z) \neq 0$ for all $z \in U$.

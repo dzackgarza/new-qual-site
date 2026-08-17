@@ -12,6 +12,7 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $R$ be the intersection of the right half-plane and the outside of the circle $\abs{z - {1\over 2}} = {1\over 2}$ with the line segment $[1, 2]$ removed, i.e. 

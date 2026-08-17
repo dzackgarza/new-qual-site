@@ -12,6 +12,7 @@ classification:
   - centralizers-and-normalizers
 relations: []
 review: draft
+solved: true
 ---
 
 Let $G$ be a nonabelian group of order $p^3$ for $p$ prime.

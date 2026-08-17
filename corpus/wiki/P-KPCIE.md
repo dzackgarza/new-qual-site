@@ -12,6 +12,7 @@ classification:
   - convergence
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $x_0 = a, x_1 = b$, and set

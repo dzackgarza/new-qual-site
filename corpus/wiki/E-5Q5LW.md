@@ -11,6 +11,7 @@ classification:
   - schwarz-reflection
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}

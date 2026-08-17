@@ -11,13 +11,13 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="?"}
-Show that a real-valued holomorphic function is constant.
 
+::: {.exercise title="?"}
+Show that a real-valued holomorphic function is constant.
 :::
 
-:::{.solution}
+::: {.solution}
 Use that $\RR$ is not open in $\CC$ and apply the open mapping theorem to conclude: $f(\CC)$ must be open in $\CC$ if $f$ is holomorphic and nonconstant.
 :::
-

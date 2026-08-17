@@ -12,6 +12,7 @@ classification:
   - symmetric-functions
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

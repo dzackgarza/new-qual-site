@@ -12,6 +12,7 @@ classification:
   - cauchy-integral-formula
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\ts{f_n}_{n=1}^\infty$ is a sequence of holomorphic functions on $\DD$ and $f$ is also holomorphic on $\DD$. 

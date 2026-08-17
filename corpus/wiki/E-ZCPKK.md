@@ -11,6 +11,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Purely imaginary if on circle"}
 Show that ${z-1\over z+1}$ is purely imaginary $\iff z\in S^1$.

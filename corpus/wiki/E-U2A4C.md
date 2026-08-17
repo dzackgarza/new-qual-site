@@ -12,6 +12,7 @@ classification:
   - laurent-series
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Residues at $\infty$"}
 Compute

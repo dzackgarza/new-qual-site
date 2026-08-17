@@ -12,6 +12,7 @@ classification:
   - mean-value-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Show that $f'$ bounded implies $f$ is uniformly continuous.

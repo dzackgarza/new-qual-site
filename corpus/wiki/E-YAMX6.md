@@ -13,6 +13,7 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="$x^\alpha/(x+1)^2$"}
 \[

@@ -11,6 +11,7 @@ classification:
   - point-set
 relations: []
 review: draft
+solved: true
 ---
 
 Give an example of spaces $A\subseteq B \subseteq X$ such that $A$ is open in $B$ but $A$ is *not* open in $X$.

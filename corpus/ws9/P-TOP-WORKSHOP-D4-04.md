@@ -12,8 +12,10 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Let $X$ be a compact space. If $X=A\cup B$ with both $A$ and $B$ Hausdorff, must $X$ be Hausdorff?
+::: {.problem title="?"}
+Let $X$ be a compact space.
+If $X=A\cup B$ with both $A$ and $B$ Hausdorff, must $X$ be Hausdorff?
 :::

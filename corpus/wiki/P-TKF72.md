@@ -12,6 +12,7 @@ classification:
   - laurent-series
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $0\leq \alpha \leq 2\pi$ be a fixed angle.

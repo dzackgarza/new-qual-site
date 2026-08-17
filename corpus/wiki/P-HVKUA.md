@@ -11,6 +11,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let 

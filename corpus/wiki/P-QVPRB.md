@@ -12,6 +12,7 @@ classification:
   - modules
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="Hungerford 7.5.2"}
 Show that if $\phi$ is an endomorphism of a free $k$-module $E$ of finite rank, then

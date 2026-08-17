@@ -13,6 +13,7 @@ classification:
   - liouville-s-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f(z)$ be entire and assume that $f(z) \leq M |z|^2$ outside some

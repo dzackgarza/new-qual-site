@@ -11,6 +11,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Explicit Rouché, half-plane"}
 Find the number of solutions in $\ts{\Re(z) \leq 0}$ of

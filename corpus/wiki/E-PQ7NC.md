@@ -11,6 +11,7 @@ classification:
   - geometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Complement of the disc to $\mathbb{H}$"}
 Find a conformal map $\DD^c \intersect \HH \to \HH$.

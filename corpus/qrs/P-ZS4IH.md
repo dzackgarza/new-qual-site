@@ -11,6 +11,7 @@ classification:
   - schwarz-lemma
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

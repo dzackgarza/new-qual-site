@@ -11,11 +11,11 @@ classification:
   - closure
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Let $X$ be a compact space and let $\{C_\alpha\}_{\alpha\in A}$ be a collection of closed sets in $X$.
-Let $C=\bigcap_{\alpha\in A}C_\alpha$ and let $U$ be an open set containing $C$. Prove there is a finite
-set $\alpha_1,\ldots,\alpha_n$ in $A$ with
-$C_{\alpha_1}\cap\cdots\cap C_{\alpha_n}\subseteq U$.
+Let $C=\bigcap_{\alpha\in A}C_\alpha$ and let $U$ be an open set containing $C$.
+Prove there is a finite set $\alpha_1,\ldots,\alpha_n$ in $A$ with $C_{\alpha_1}\cap\cdots\cap C_{\alpha_n}\subseteq U$.
 :::

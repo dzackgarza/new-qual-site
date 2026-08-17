@@ -12,6 +12,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 Suppose $f$ is analytic, defined on all of $\CC$, and for each $z_0 \in \CC$ there is at least one coefficient in the expansion $f(z) = \sum_{n=0}^\infty c_n(z-z_0)^n$ is zero.
 Prove that $f$ is a polynomial.

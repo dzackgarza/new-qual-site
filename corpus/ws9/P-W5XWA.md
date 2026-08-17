@@ -12,8 +12,10 @@ classification:
   - norms
 relations: []
 review: draft
+solved: true
 ---
 
-:::{.problem title="?"}
-Assume that $(x_n)$ is a weakly converging sequence in a Hilbert space $H$. Show that there is a subsequence $(y_n)$ of $(x_n)$ so that $\frac1n\sum_{j=1}^n y_j$ converges in norm.
+::: {.problem title="?"}
+Assume that $(x_n)$ is a weakly converging sequence in a Hilbert space $H$.
+Show that there is a subsequence $(y_n)$ of $(x_n)$ so that $\frac1n\sum_{j=1}^n y_j$ converges in norm.
 :::

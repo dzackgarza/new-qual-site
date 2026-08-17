@@ -12,9 +12,9 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="Uniform limit theorem"}
+
+::: {.exercise title="Uniform limit theorem"}
 Show that a continuous function on a compact set is uniformly continuous.
-
 :::
-

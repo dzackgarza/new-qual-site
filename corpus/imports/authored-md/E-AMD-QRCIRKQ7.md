@@ -12,6 +12,7 @@ classification:
   - primary-decomposition
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise}

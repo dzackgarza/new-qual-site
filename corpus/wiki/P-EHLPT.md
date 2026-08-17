@@ -13,6 +13,7 @@ classification:
   - entire-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f(z)$ be bounded and analytic in $\mathbb C$. Let $a \neq b$ be any fixed complex numbers. Show that the following limit exists:

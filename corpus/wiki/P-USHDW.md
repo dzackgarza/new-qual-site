@@ -12,6 +12,7 @@ classification:
   - zorns-lemma
 relations: []
 review: draft
+solved: true
 ---
 
 Let $R$ be a commutative ring with multiplicative identity.

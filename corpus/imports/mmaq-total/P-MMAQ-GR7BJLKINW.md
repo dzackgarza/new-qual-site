@@ -12,8 +12,10 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Prove that the unit interval $I$ is compact. Be sure to explicitly state any properties of $\RR$ that you use.
+Prove that the unit interval $I$ is compact.
+Be sure to explicitly state any properties of $\RR$ that you use.
 :::

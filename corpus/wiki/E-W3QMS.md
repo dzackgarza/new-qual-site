@@ -11,6 +11,7 @@ classification:
   - contour-integration
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise
@@ -20,7 +21,7 @@ review: draft
 
 - Anything from the [homeworks](https://www.notion.so/Complex-Analysis-3ca8032a73fc4366836a9f5085f5e601)
 
-- Show that $f'=0 \implies f$ is constant using integrals and *primitives* (i.e. antiderivatives). 
+- Show that $f'=0 \implies f$ is constant using integrals and *primitives* (i.e. antiderivatives).
 
 > See S&S Corollary 3.4.
 

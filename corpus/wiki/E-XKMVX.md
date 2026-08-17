@@ -12,6 +12,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Combining with Rouche"}
 Use Rouché's theorem and the Schwarz lemma to prove the following: if $f:\DD\to \bar{ \DD}$ is holomorphic with $f(0) = 0$, then there are exactly $m$ solutions (counted with multiplicity) to $f(z) = (2z)^m$ in the disc $\abs{z} < 1/2$.

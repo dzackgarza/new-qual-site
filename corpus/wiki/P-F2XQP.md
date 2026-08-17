@@ -11,6 +11,7 @@ classification:
   - diagonalization
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

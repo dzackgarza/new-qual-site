@@ -11,9 +11,9 @@ classification:
   - product-topology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Show that if $A$ is a proper subset of a connected space $X$ and $B$ is a proper subset of a connected
-space $Y$, then $(X\times Y)\setminus(A\times B)$ is connected.
+::: {.problem title="?"}
+Show that if $A$ is a proper subset of a connected space $X$ and $B$ is a proper subset of a connected space $Y$, then $(X\times Y)\setminus(A\times B)$ is connected.
 :::

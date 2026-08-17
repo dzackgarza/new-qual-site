@@ -11,8 +11,10 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-A topological space $X$ is said to be regular if disjoint singleton and closed sets can be separated by disjoint open sets. Prove that in a regular space disjoint closed and compact sets can be separated by disjoint open sets.
+::: {.problem title="?"}
+A topological space $X$ is said to be regular if disjoint singleton and closed sets can be separated by disjoint open sets.
+Prove that in a regular space disjoint closed and compact sets can be separated by disjoint open sets.
 :::

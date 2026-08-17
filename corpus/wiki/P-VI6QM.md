@@ -12,6 +12,7 @@ classification:
   - cyclic-groups
 relations: []
 review: draft
+solved: true
 ---
 Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7 subgroups respectively.
 

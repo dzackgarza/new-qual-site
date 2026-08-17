@@ -12,6 +12,7 @@ classification:
   - smith-normal-form
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 7.1.7"}

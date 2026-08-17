@@ -12,6 +12,7 @@ classification:
   - nakayamas-lemma
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

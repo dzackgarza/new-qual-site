@@ -10,8 +10,10 @@ classification:
   - separation-axioms
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-What are the properties $T_0$--$T_4$? What other names are there for $T_2$--$T_4$?
+::: {.problem title="?"}
+What are the properties $T_0$--$T_4$?
+What other names are there for $T_2$--$T_4$?
 :::

@@ -11,8 +11,10 @@ classification:
   - group-actions
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-What is a deck transformation? Describe the deck transformations from one of the universal covers above.
+::: {.problem title="?"}
+What is a deck transformation?
+Describe the deck transformations from one of the universal covers above.
 :::

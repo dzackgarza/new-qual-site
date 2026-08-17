@@ -13,6 +13,7 @@ classification:
   - contour-integration
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 State and prove Green's Theorem for rectangles.

@@ -11,11 +11,11 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-(Purdue ’10) Prove or disprove: If $X$ is path connected, and $f:X\to Y$ is continuous, then $f(x)$ is
-path connected.
+::: {.problem title="?"}
+(Purdue ’10) Prove or disprove: If $X$ is path connected, and $f:X\to Y$ is continuous, then $f(x)$ is path connected.
 :::
 
 ::: remark

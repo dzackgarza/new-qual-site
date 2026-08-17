@@ -12,6 +12,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $c\in \CC$ with $\abs{c} < {1\over 3}$.

@@ -12,6 +12,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Residues using partial fractions/principal parts"}
 Find all residues of the following function by writing it as a sum of principal parts at its poles:

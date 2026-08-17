@@ -13,6 +13,7 @@ classification:
   - liouville-s-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f$ is entire and suppose that for some integer $n\geq 1$,

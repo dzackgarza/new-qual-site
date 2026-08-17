@@ -14,6 +14,7 @@ classification:
   - series-of-functions
 relations: []
 review: draft
+solved: false
 ---
 :::{.exercise title="Sum formulas: 1/(n-a)^2"}
 Show that

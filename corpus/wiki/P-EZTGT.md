@@ -12,6 +12,7 @@ classification:
   - local-rings
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

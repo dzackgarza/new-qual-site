@@ -13,6 +13,7 @@ classification:
   - biholomorphisms
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

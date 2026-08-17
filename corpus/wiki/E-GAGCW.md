@@ -11,6 +11,7 @@ classification:
   - blaschke-factors
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f:\DD\to \DD$ is analytic.

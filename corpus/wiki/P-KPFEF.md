@@ -12,6 +12,7 @@ classification:
   - limits
 relations: []
 review: draft
+solved: true
 ---
 a. Prove that if $g\in L^1(\RR)$ then
 \[

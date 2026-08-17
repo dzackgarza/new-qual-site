@@ -12,6 +12,7 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Prove that if $(X, d)$ is a compact metric space, $f : X \to X$ is a

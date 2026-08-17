@@ -13,6 +13,7 @@ classification:
   - residues
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Laurent expansions on annuli"}
 Find a Laurent expansion for $f(z) \da {1\over (z-3)(z-1)}$ on the 3 annular regions centered at $0$ where $f$ is holomorphic.

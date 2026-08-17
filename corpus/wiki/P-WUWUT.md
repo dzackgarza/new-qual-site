@@ -12,6 +12,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 2.1.10"}

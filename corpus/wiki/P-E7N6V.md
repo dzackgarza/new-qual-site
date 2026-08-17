@@ -12,6 +12,7 @@ classification:
   - misc
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

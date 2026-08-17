@@ -13,13 +13,14 @@ classification:
   - open-mapping-theorem
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="No bijective conformal maps from a disc to an annulus"}
-Show that there is no bijective conformal map from $A\da \ts{0< \abs{z} < 1}$ to $B\da \ts{1<\abs{z} < 2}$.
 
+::: {.exercise title="No bijective conformal maps from a disc to an annulus"}
+Show that there is no bijective conformal map from $A\da \ts{0< \abs{z} < 1}$ to $B\da \ts{1<\abs{z} < 2}$.
 :::
 
-:::{.solution}
+::: {.solution}
 Suppose toward a contradiction that such an injective map $f: A\to B$.
 Since $f(A) \subseteq B$ which is bounded, $f$ is bounded and thus any singularities in $A$ are removable.
 So $f$ extends holomorphically to $F: \DD\to \bar{B}$, and since $F$ is an open map, $F(\DD) \subseteq B$.
@@ -30,4 +31,3 @@ Since $F$ is open, $F(U), F(V)$ are open in $B$ and contain $w_0$.
 Then $F(U) \intersect F(V)$ is an open set containing $w_0$, so there is a disc $D_\eps(w_0)$ in $F(U)$ and $F(V)$.
 But then $F(\DD_\eps(w_0))$ is an open set intersecting $U$ and $V$, contradicting that they were disjoint.
 :::
-

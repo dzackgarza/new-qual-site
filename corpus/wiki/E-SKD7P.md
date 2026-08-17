@@ -12,6 +12,7 @@ classification:
   - convergence-tests
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Power series converge uniformly on their radius of convergence"}
 Show that any power series converges uniformly within its radius of convergence.

@@ -13,6 +13,7 @@ classification:
   - singularities
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Automorphisms of $\CC$"}
 Show that $\Aut(\CC) = \ts{ z \mapsto az+b\st a\in \CC\units, b\in \CC }$.

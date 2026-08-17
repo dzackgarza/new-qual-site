@@ -11,6 +11,7 @@ classification:
   - closure
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
@@ -19,5 +20,7 @@ Equip $A$ with the subspace topology, and write $\cl_X (B)$ or $\cl_A (B)$ for t
 
 Determine, with proof, the general relationship between $\cl_X (B) \cap A$ and $\cl_A (B)$
 
-> I.e., are they always equal? Is one always contained in the other but not conversely? Neither?
+> I.e., are they always equal?
+> Is one always contained in the other but not conversely?
+> Neither?
 :::

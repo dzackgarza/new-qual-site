@@ -12,6 +12,7 @@ classification:
   - principal-parts
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Laurent expansions about different points"}
 Find the Laurent expansion about $z=0$ and $z=1$ respectively of the following function:

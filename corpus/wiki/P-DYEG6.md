@@ -12,6 +12,7 @@ classification:
   - finite-fields
 relations: []
 review: draft
+solved: true
 ---
 Let $L/K$ be a finite extension of fields.
 

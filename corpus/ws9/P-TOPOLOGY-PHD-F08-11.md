@@ -11,10 +11,12 @@ classification:
   - point-set
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-A topological space $X$ is said to be locally connected if the connected components of each point form a base of neighborhoods of $X$. Prove that in a locally connected space the connected components of $X$ are open in $X$.
+::: {.problem title="?"}
+A topological space $X$ is said to be locally connected if the connected components of each point form a base of neighborhoods of $X$.
+Prove that in a locally connected space the connected components of $X$ are open in $X$.
 :::
 
 ::: remark

@@ -11,6 +11,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f:\RR\to\RR$ is continuous and $\lim_{x\to \pm \infty} f(x) = 0$.

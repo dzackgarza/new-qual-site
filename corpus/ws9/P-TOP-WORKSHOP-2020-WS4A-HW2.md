@@ -11,8 +11,9 @@ classification:
   - homology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Give a $\Delta$-complex structure for $S^1$, and use that to compute the homology groups for $S^1$.
 :::

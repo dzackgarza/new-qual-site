@@ -11,6 +11,7 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Cauchy-Riemann iff holomorphic"}
 Show that $f = u+iv$ with $u, v\in C^1(\RR)$ satisfying the Cauchy-Riemann equations on $\Omega$, then $f$ is holomorphic on $\Omega$ with

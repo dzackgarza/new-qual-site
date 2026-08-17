@@ -10,10 +10,9 @@ classification:
   - fields
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-For each prime number $p$ and each positive integer $n$, how many
-elements $\alpha$ are there in $\mathbb F_{p^n}$ such that
-$F_p(\alpha)=F_{p^6}$?
+For each prime number $p$ and each positive integer $n$, how many elements $\alpha$ are there in $\mathbb F_{p^n}$ such that $F_p(\alpha)=F_{p^6}$?
 :::

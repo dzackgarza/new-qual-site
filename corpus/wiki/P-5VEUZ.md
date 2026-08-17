@@ -13,6 +13,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of continuous functions $f_n: [0, 1]\to \RR$ such that 

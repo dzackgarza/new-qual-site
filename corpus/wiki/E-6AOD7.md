@@ -12,6 +12,7 @@ classification:
   - abelian-groups
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.exercise title="Applications of the class equation"}

@@ -10,6 +10,7 @@ classification:
   - schwarz-lemma
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Using the estimates"}
 Suppose $f: \DD\to \DD$ with $f(0) = 0$ and $\abs{f(z)} \leq \abs{e^z}$ when $\abs{z} = 1$.

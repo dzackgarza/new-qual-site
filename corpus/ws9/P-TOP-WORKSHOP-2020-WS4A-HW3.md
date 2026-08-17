@@ -10,8 +10,9 @@ classification:
   - homology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 What is the difference between the reduced homology and (non-reduced) homology?
 :::

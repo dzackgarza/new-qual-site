@@ -61,29 +61,19 @@ a finding that the two cards are the same statement, and it must never be wired
 to anything that acts on that reading. A check whose name claims more than it
 measured is the same defect in smaller form.
 
-# The outstanding solution queue
+# Solution status
 
-The working queue for [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
-(Lamport-style structured proofs for every problem) lives at the repository root
-as six tracked JSON dotfiles:
+Every problem and exercise card declares `solved: true|false` in its own
+frontmatter, and `just check` proves the declaration against the corpus:
+`true` requires a `solution` section on the card or an incoming `solves`
+relation from another card; `false` with either present fails the build.
+There is no queue file to maintain — a solutions commit flips the field on the
+same cards whose bodies it writes, and the check rejects any commit where the
+field and the content disagree.
 
-- `.agent_queue.json` — the master queue (the five area queues plus `P-P2UAH`).
-- `.queue_algebra.json`, `.queue_complex.json`, `.queue_real.json`,
-  `.queue_topology.json`, `.queue_other.json` — the per-area queues.
-
-Each entry is `{id, path, kind, title, area, status}`; `path` is the corpus card
-and `status` is `solved` or `unsolved`. A solutions commit appends the proof to
-the corpus card and flips the queue entry to `solved` in the same commit.
-
-These are dotfiles and easy to miss. Check them before claiming anything about
-solution coverage — GitHub has no batch issues under #2, so these files are the
-only concrete enumeration of remaining solution work. Counts change with every
-solutions commit:
-
-    jq -r 'group_by(.status) | map("\(.[0].status): \(length)") | .[]' .agent_queue.json
-
-The solution-sheet integration side of issue #2 lives in
-`sources/qual-review-and-solutions-ledgers/`.
+`just sample-unsolved` draws n random unsolved cards (default 5). The
+solution-sheet integration side of [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
+lives in `sources/qual-review-and-solutions-ledgers/`.
 
 * * *
 

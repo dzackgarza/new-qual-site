@@ -13,6 +13,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show that a uniform limit of continuous functions is continuous, and a uniform limit of uniformly continuous functions is uniformly continuous.

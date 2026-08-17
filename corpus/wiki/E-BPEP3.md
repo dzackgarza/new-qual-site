@@ -13,6 +13,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Find all entire functions with have poles at $\infty$.

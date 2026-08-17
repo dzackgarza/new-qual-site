@@ -12,6 +12,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 Find the Laurent expansion of
 \[

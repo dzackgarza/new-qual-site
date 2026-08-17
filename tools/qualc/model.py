@@ -146,6 +146,10 @@ SourcePayload = Annotated[
 
 class ProblemCard(Envelope):
     kind: Literal["problem"]
+    # Declared solution status. `check` proves it against the corpus: true
+    # requires a solution section on the card or an incoming `solves` relation,
+    # and false with either present is stale. No queue file maintains this.
+    solved: bool
 
 
 class OccurrenceCard(Envelope):
@@ -199,6 +203,7 @@ class ExampleCard(Envelope):
 
 class ExerciseCard(Envelope):
     kind: Literal["exercise"]
+    solved: bool
 
 
 class RemarkCard(Envelope):
@@ -396,10 +401,13 @@ def to_json(document: pf.Doc) -> str:
 # implicit-figure syntax makes the caption out of the alt text, and the authored
 # vault wrote the path there, so 93 figures across 22 pages were captioned
 # `_attachments/Pasted image 20211031235625.png`.
-FILE_CAPTION = re.compile(r"\.(png|jpe?g|gif|svg|webp|pdf)$", re.I)
+FILE_CAPTION = re.compile(r"\.(png|jpe?g|gif|svg|webp|pdf)$", re.IGNORECASE)
 
 
-LINKING_ELEMENTS = (cast(type[pf.Element], vars(pf)["Link"]), cast(type[pf.Element], vars(pf)["Image"]))
+LINKING_ELEMENTS = (
+    cast(type[pf.Element], vars(pf)["Link"]),
+    cast(type[pf.Element], vars(pf)["Image"]),
+)
 
 
 def _figure_targets(element: pf.Figure) -> list[str]:
@@ -409,7 +417,7 @@ def _figure_targets(element: pf.Figure) -> list[str]:
     def collect(node: pf.Element, doc: pf.Doc) -> pf.Element:
         del doc
         if isinstance(node, LINKING_ELEMENTS):
-            urls.append(cast(str, getattr(node, "url")))
+            urls.append(cast(str, node.url))
         return node
 
     pf.Doc(*element.content).walk(collect)

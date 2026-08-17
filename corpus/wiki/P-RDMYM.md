@@ -12,6 +12,7 @@ classification:
   - fubini-tonelli
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f, g \in L^1(\RR)$ be Borel measurable.

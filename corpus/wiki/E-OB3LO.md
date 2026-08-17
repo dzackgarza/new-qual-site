@@ -12,6 +12,7 @@ classification:
   - roots-of-unity
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show 

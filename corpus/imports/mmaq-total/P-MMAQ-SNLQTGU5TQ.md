@@ -11,9 +11,9 @@ classification:
   - vector-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Carefully state Zorn's lemma and use it to prove that every vector
-space has a basis.
+Carefully state Zorn's lemma and use it to prove that every vector space has a basis.
 :::

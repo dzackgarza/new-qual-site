@@ -12,6 +12,7 @@ classification:
   - zorns-lemma
 relations: []
 review: draft
+solved: true
 ---
 Let $R$ be a rng (a ring without 1) which contains an element $u$ such that for all $y\in R$, there exists an $x\in R$ such that $xu=y$.
 

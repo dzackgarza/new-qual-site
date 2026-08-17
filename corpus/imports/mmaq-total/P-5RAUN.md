@@ -11,11 +11,11 @@ classification:
   - representation-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Show that a finite simple group cannot have a 2-dimensional irreducible
-representation over $\mathbb C$.
+Show that a finite simple group cannot have a 2-dimensional irreducible representation over $\mathbb C$.
 
 > Hint: the determinant might prove useful.
 :::

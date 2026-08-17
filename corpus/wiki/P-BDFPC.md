@@ -12,6 +12,7 @@ classification:
   - stone-weierstrass
 relations: []
 review: draft
+solved: true
 ---
 1.  Suppose $f \colon [-1,1] \to \mathbb{R}$ is a bounded function
 that is continuous at $0$. Let $\alpha(x) = -1$ for

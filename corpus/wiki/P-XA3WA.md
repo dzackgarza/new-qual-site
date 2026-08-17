@@ -11,6 +11,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Find the number of roots on $\abs{z} \leq 1$ of

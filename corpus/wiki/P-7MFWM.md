@@ -12,6 +12,7 @@ classification:
   - trace
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

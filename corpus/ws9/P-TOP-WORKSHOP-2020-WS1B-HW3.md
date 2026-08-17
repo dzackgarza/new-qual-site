@@ -11,8 +11,9 @@ classification:
   - point-set
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Describe how to make a topology from a subbasis, and what (if any) requirements there are on the subbasis.
 :::

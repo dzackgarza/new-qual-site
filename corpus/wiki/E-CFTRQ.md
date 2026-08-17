@@ -12,6 +12,7 @@ classification:
   - riemann-surfaces
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Automorphisms of $\CP^1$"}
 Show that $\Aut(\CP^1) = \ts{{az+b\over cz+d} \st ad-bc\neq 0}$.

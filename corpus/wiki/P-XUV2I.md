@@ -12,6 +12,7 @@ classification:
   - series-of-numbers
 relations: []
 review: draft
+solved: true
 ---
 Let $\theset{a_n}$ be a sequence of real numbers such that
 \[

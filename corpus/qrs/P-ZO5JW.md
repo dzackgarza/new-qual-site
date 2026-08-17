@@ -13,6 +13,7 @@ classification:
   - singularities
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

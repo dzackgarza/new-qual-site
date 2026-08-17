@@ -12,6 +12,7 @@ classification:
   - contour-integration
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\gamma(t)$ be a piecewise smooth curve in $\mathbb{C}, t \in[0,1]$. Let $F(w)$ be a continuous function on $\gamma$. Show that $f(z)$ defined by

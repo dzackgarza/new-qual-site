@@ -12,6 +12,7 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.exercise title="?"}

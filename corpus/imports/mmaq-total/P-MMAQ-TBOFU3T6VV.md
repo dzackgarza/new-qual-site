@@ -11,6 +11,7 @@ classification:
   - commutative-algebra
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

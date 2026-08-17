@@ -12,6 +12,7 @@ classification:
   - singularities
 relations: []
 review: draft
+solved: false
 ---
 :::{.exercise title="Residues at infinity"}
 Use residues at infinity to evaluate

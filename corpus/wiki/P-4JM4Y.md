@@ -12,6 +12,7 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Unique fixed points"}
 Show that if $f$ is holomorphic on $\DD$ and continuous on $\bar\DD$ with $f(\bar \DD) \subseteq \DD$, then $f$ has a unique fixed point in $\DD$.

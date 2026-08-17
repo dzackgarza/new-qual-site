@@ -12,6 +12,7 @@ classification:
   - cosets-and-lagrange
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem}
 Let $G$ be a finite group and $H<G$ a subgroup. Let

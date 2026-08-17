@@ -11,9 +11,9 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that if $f$ is a differentiable contraction, $f$ is uniformly continuous.
-
 :::
-

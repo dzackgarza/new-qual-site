@@ -12,6 +12,7 @@ classification:
   - blaschke-factors
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Using the estimates"}
 Let $f\in \Hol(\DD)$.

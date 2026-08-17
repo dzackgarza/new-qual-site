@@ -12,6 +12,7 @@ classification:
   - linear-algebra
 relations: []
 review: draft
+solved: false
 ---
 :::{.exercise title="?"}
 Prove Cayley-Hamilton in the following way.

@@ -12,6 +12,7 @@ classification:
   - singularities
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Singularities of $1\over e^z - 1$"}
 Classify the singularities and compute the residues at any poles of the following function:

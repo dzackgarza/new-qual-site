@@ -11,6 +11,7 @@ classification:
   - connectedness
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Spring 2021, 7"}

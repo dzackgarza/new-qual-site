@@ -12,6 +12,7 @@ classification:
   - cauchy-estimates
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

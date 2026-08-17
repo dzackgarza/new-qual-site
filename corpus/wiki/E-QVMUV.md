@@ -12,6 +12,7 @@ classification:
   - convergence-tests
 relations: []
 review: draft
+solved: false
 ---
 :::{.exercise title="Cauchy integral formula for coefficients"}
 Show that if $f(z) \sum_{k\in \ZZ} c_k (z-z_0)^k$, then 

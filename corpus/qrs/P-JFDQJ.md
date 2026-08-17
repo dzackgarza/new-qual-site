@@ -13,6 +13,7 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

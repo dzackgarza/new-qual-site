@@ -12,6 +12,7 @@ classification:
   - groups
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem}
@@ -28,58 +29,58 @@ Show that all 3 presentations of $\pi_1(K)$ are isomorphic
 > **AI-Generated Solution** (Gemini 3.7 Flash)
 
 **Goal:** Prove that the following three descriptions of the fundamental group $\pi_1(K)$ of the Klein bottle $K$ are mutually isomorphic:
+
 1. $G_1 = \langle a, b \mid a b a b^{-1} = 1 \rangle$ (or $\langle a, b \mid a b a^{-1} b = 1 \rangle$) from the square polygonal identification,
+
 2. $G_2 = \langle c, d \mid c^2 = d^2 \rangle$ from gluing two Möbius strips along their boundary circles,
+
 3. $G_3 = \mathbb{Z} \rtimes \mathbb{Z}$ with operation $(m, n) \star (p, q) = (m + (-1)^n p, n + q)$.
 
 <1>1. Presentation 1: Square with sides glued.
-  <2>1. Standard polygonal representation of the Klein bottle: A square with boundary word $a b a^{-1} b$ (or equivalently $a b a b^{-1}$).
-  <2>2. By the cellular Seifert-van Kampen theorem, the 1-skeleton is $S^1 \vee S^1$ with generators $a, b$, and attaching the 2-cell along the boundary word yields the presentation:
-  $$G_1 = \langle a, b \mid a b a^{-1} b = 1 \rangle \cong \langle a, b \mid b a b^{-1} = a^{-1} \rangle.$$
-  <2>3. Proof: Cellular construction of the Klein bottle. Q.E.D.
+<2>1. Standard polygonal representation of the Klein bottle: A square with boundary word $a b a^{-1} b$ (or equivalently $a b a b^{-1}$). <2>2. By the cellular Seifert-van Kampen theorem, the 1-skeleton is $S^1 \vee S^1$ with generators $a, b$, and attaching the 2-cell along the boundary word yields the presentation: $$G_1 = \langle a, b \mid a b a^{-1} b = 1 \rangle \cong \langle a, b \mid b a b^{-1} = a^{-1} \rangle.$$ <2>3. Proof: Cellular construction of the Klein bottle.
+Q.E.D.
 
 <1>2. Presentation 2: Two Möbius strips glued along their boundary.
-  <2>1. Let $M_1, M_2$ be two Möbius strips.
-  <2>2. The core circle of $M_1$ generates $\pi_1(M_1) \cong \langle c \rangle \cong \mathbb{Z}$, and its boundary circle $\partial M_1 \cong S^1$ wraps twice around the core, representing $c^2 \in \pi_1(M_1)$.
-  <2>3. Similarly, the core circle of $M_2$ generates $\pi_1(M_2) \cong \langle d \rangle \cong \mathbb{Z}$, and its boundary circle $\partial M_2$ represents $d^2 \in \pi_1(M_2)$.
-  <2>4. Gluing $M_1$ and $M_2$ via a homeomorphism between their boundaries $\partial M_1 \sim \partial M_2$ gives the space $K = M_1 \cup_\partial M_2$.
-  <2>5. By the Seifert-van Kampen theorem on $M_1 \cup_\partial M_2$ with intersection $\partial M_1 \cong S^1$:
-  $$\pi_1(K) \cong \pi_1(M_1) *_{\pi_1(\partial M_1)} \pi_1(M_2) \cong \langle c \rangle *_{\langle t \rangle} \langle d \rangle,$$
-  where the amalgamating inclusions map $t \mapsto c^2$ and $t \mapsto d^2$.
-  <2>6. Thus:
-  $$G_2 = \langle c, d \mid c^2 = d^2 \rangle \cong \langle c, d \mid c^2 d^{-2} = 1 \rangle.$$
-  <2>7. Proof: By Seifert-van Kampen theorem for amalgamated free products. Q.E.D.
+<2>1. Let $M_1, M_2$ be two Möbius strips.
+<2>2. The core circle of $M_1$ generates $\pi_1(M_1) \cong \langle c \rangle \cong \mathbb{Z}$, and its boundary circle $\partial M_1 \cong S^1$ wraps twice around the core, representing $c^2 \in \pi_1(M_1)$.
+<2>3. Similarly, the core circle of $M_2$ generates $\pi_1(M_2) \cong \langle d \rangle \cong \mathbb{Z}$, and its boundary circle $\partial M_2$ represents $d^2 \in \pi_1(M_2)$.
+<2>4. Gluing $M_1$ and $M_2$ via a homeomorphism between their boundaries $\partial M_1 \sim \partial M_2$ gives the space $K = M_1 \cup_\partial M_2$.
+<2>5. By the Seifert-van Kampen theorem on $M_1 \cup_\partial M_2$ with intersection $\partial M_1 \cong S^1$: $$\pi_1(K) \cong \pi_1(M_1) *_{\pi_1(\partial M_1)} \pi_1(M_2) \cong \langle c \rangle *_{\langle t \rangle} \langle d \rangle,$$ where the amalgamating inclusions map $t \mapsto c^2$ and $t \mapsto d^2$.
+<2>6. Thus: $$G_2 = \langle c, d \mid c^2 = d^2 \rangle \cong \langle c, d \mid c^2 d^{-2} = 1 \rangle.$$ <2>7. Proof: By Seifert-van Kampen theorem for amalgamated free products.
+Q.E.D.
 
 <1>3. Isomorphism between $G_1$ and $G_2$.
-  <2>1. Define homomorphisms between $G_1 = \langle a, b \mid b a b^{-1} = a^{-1} \rangle$ and $G_2 = \langle c, d \mid c^2 = d^2 \rangle$:
-  - Define $\Phi \colon G_1 \to G_2$ by $\Phi(a) = c d^{-1}$ and $\Phi(b) = d$.
-    <3>1. Check the relator of $G_1$ under $\Phi$:
-    $$\Phi(b a b a^{-1}) = d (c d^{-1}) d (c d^{-1})^{-1} = d c (d c^{-1}) = \dots$$
-    Using $G_1 = \langle a, b \mid a^2 = b^2 \text{ via Tietze} \rangle$:
-    Alternatively, in $G_2$, let $a = c d^{-1}$ and $b = d$.
-    Then $b a b^{-1} = d (c d^{-1}) d^{-1} = d c d^{-2} = d c (c^{-2}) = d c^{-1} = (c d^{-1})^{-1} = a^{-1}$ (since $c^2 = d^2 \implies d c d^{-1} = c^{-1} \implies d c d^{-2} = d c^{-1}$).
-    Thus $\Phi(b a b^{-1} a) = a^{-1} a = 1$.
-    <3>2. Proof: Relator is satisfied in $G_2$. Q.E.D.
-  - Define $\Psi \colon G_2 \to G_1$ by $\Psi(c) = a b$ and $\Psi(d) = b$.
-    <3>1. Check the relator $c^2 = d^2$ under $\Psi$:
-    $$\Psi(c^2) = (a b)(a b) = a (b a b^{-1}) b^2 = a (a^{-1}) b^2 = b^2 = \Psi(d^2).$$
-    <3>2. Proof: Relator $c^2 = d^2$ is satisfied in $G_1$. Q.E.D.
-  <2>2. Check composition of $\Phi$ and $\Psi$:
-  - $\Psi(\Phi(a)) = \Psi(c d^{-1}) = (ab)(b^{-1}) = a$.
-  - $\Psi(\Phi(b)) = \Psi(d) = b$.
-  - $\Phi(\Psi(c)) = \Phi(ab) = (c d^{-1})(d) = c$.
-  - $\Phi(\Psi(d)) = \Phi(b) = d$.
+<2>1. Define homomorphisms between $G_1 = \langle a, b \mid b a b^{-1} = a^{-1} \rangle$ and $G_2 = \langle c, d \mid c^2 = d^2 \rangle$:
+
+- Define $\Phi \colon G_1 \to G_2$ by $\Phi(a) = c d^{-1}$ and $\Phi(b) = d$.
+  <3>1. Check the relator of $G_1$ under $\Phi$: $$\Phi(b a b a^{-1}) = d (c d^{-1}) d (c d^{-1})^{-1} = d c (d c^{-1}) = \dots$$ Using $G_1 = \langle a, b \mid a^2 = b^2 \text{ via Tietze} \rangle$: Alternatively, in $G_2$, let $a = c d^{-1}$ and $b = d$.
+  Then $b a b^{-1} = d (c d^{-1}) d^{-1} = d c d^{-2} = d c (c^{-2}) = d c^{-1} = (c d^{-1})^{-1} = a^{-1}$ (since $c^2 = d^2 \implies d c d^{-1} = c^{-1} \implies d c d^{-2} = d c^{-1}$). Thus $\Phi(b a b^{-1} a) = a^{-1} a = 1$.
+  <3>2. Proof: Relator is satisfied in $G_2$.
+  Q.E.D.
+
+- Define $\Psi \colon G_2 \to G_1$ by $\Psi(c) = a b$ and $\Psi(d) = b$.
+  <3>1. Check the relator $c^2 = d^2$ under $\Psi$: $$\Psi(c^2) = (a b)(a b) = a (b a b^{-1}) b^2 = a (a^{-1}) b^2 = b^2 = \Psi(d^2).$$ <3>2. Proof: Relator $c^2 = d^2$ is satisfied in $G_1$.
+  Q.E.D. <2>2. Check composition of $\Phi$ and $\Psi$:
+
+- $\Psi(\Phi(a)) = \Psi(c d^{-1}) = (ab)(b^{-1}) = a$.
+
+- $\Psi(\Phi(b)) = \Psi(d) = b$.
+
+- $\Phi(\Psi(c)) = \Phi(ab) = (c d^{-1})(d) = c$.
+
+- $\Phi(\Psi(d)) = \Phi(b) = d$.
   <2>3. Therefore, $\Phi$ and $\Psi$ are mutually inverse isomorphisms: $G_1 \cong G_2$.
-  <2>4. Proof: By Tietze transformations / explicit inverse homomorphisms. Q.E.D.
+  <2>4. Proof: By Tietze transformations / explicit inverse homomorphisms.
+  Q.E.D.
 
 <1>4. Isomorphism between $G_1$ and $G_3$.
-  <2>1. $G_3 = \mathbb{Z} \rtimes_\theta \mathbb{Z}$ with $\theta(n)(m) = (-1)^n m$.
-  <2>2. In $G_1 = \langle a, b \mid b a b^{-1} = a^{-1} \rangle$, the normal subgroup generated by $a$ is isomorphic to $\mathbb{Z}$, and the quotient $G_1 / \langle a \rangle \cong \langle b \rangle \cong \mathbb{Z}$.
-  <2>3. Conjugation by $b^n$ acts on $a^m$ by $b^n a^m b^{-n} = a^{(-1)^n m}$.
-  <2>4. Every element of $G_1$ uniquely factors as $a^m b^n$, and the map $a^m b^n \mapsto (m, n)$ defines an isomorphism $G_1 \xrightarrow{\cong} G_3$ with operation $(m, n) \star (p, q) = (m + (-1)^n p, n + q)$.
-  <2>5. Proof: Standard semidirect product characterization. Q.E.D.
+<2>1. $G_3 = \mathbb{Z} \rtimes_\theta \mathbb{Z}$ with $\theta(n)(m) = (-1)^n m$.
+<2>2. In $G_1 = \langle a, b \mid b a b^{-1} = a^{-1} \rangle$, the normal subgroup generated by $a$ is isomorphic to $\mathbb{Z}$, and the quotient $G_1 / \langle a \rangle \cong \langle b \rangle \cong \mathbb{Z}$.
+<2>3. Conjugation by $b^n$ acts on $a^m$ by $b^n a^m b^{-n} = a^{(-1)^n m}$.
+<2>4. Every element of $G_1$ uniquely factors as $a^m b^n$, and the map $a^m b^n \mapsto (m, n)$ defines an isomorphism $G_1 \xrightarrow{\cong} G_3$ with operation $(m, n) \star (p, q) = (m + (-1)^n p, n + q)$.
+<2>5. Proof: Standard semidirect product characterization.
+Q.E.D.
 
 <1>5. Conclusion: $G_1 \cong G_2 \cong G_3$.
-  <2>1. Proof: Steps <1>1–<1>4 prove that all three presentations/models describe the same group $\pi_1(K)$.
+<2>1. Proof: Steps <1>1–<1>4 prove that all three presentations/models describe the same group $\pi_1(K)$.
 :::
-

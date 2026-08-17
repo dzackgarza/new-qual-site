@@ -12,6 +12,7 @@ classification:
   - sequences-of-functions
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}
@@ -20,19 +21,16 @@ Show that $$\lim_{n\to\infty}f_n(x_n)=f(x).$$
 :::
 
 :::: {.solution}
-> **AI-Generated Solution**
-**Goal:** Show $f_n(x_n) \to f(x)$ given $f_n \to f$ uniformly on $[0,1]$, $f_n$ continuous, $x_n \to x$ in $[0,1]$.
+> **AI-Generated Solution** **Goal:** Show $f_n(x_n) \to f(x)$ given $f_n \to f$ uniformly on $[0,1]$, $f_n$ continuous, $x_n \to x$ in $[0,1]$.
 
 <1>1. $|f_n(x_n) - f(x)| \le |f_n(x_n) - f(x_n)| + |f(x_n) - f(x)|$.
-    Proof: triangle inequality.
+Proof: triangle inequality.
 
 <1>2. $|f_n(x_n) - f(x_n)| \le \|f_n - f\|_\infty \to 0$.
-    Proof: uniform convergence, and $x_n \in [0,1]$.
+Proof: uniform convergence, and $x_n \in [0,1]$.
 
 <1>3. $|f(x_n) - f(x)| \to 0$.
-    Proof: $f$ is continuous (uniform limit of continuous functions) and $x_n \to x$, so continuity of $f$ at $x$ gives $f(x_n) \to f(x)$.
+Proof: $f$ is continuous (uniform limit of continuous functions) and $x_n \to x$, so continuity of $f$ at $x$ gives $f(x_n) \to f(x)$.
 
-<1>4. Q.E.D.
-    Proof: <1>2 and <1>3 force the right side of <1>1 to $0$, so $f_n(x_n) \to f(x)$.
-
+<1>4. Q.E.D. Proof: <1>2 and <1>3 force the right side of <1>1 to $0$, so $f_n(x_n) \to f(x)$.
 :::

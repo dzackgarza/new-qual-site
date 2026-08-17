@@ -12,6 +12,7 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Disc minus a slit"}
 Find a conformal map

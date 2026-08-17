@@ -12,6 +12,7 @@ classification:
   - convergence-of-integrals
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

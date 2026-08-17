@@ -13,6 +13,7 @@ classification:
   - singularities
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Singularities of of $\sin(z)/z$"}
 Show that $\sin(z)/z$ has no poles.

@@ -12,6 +12,7 @@ classification:
   - characteristic
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $F$ be a field and $n$ a positive integer, and consider

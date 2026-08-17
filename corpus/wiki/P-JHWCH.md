@@ -12,6 +12,7 @@ classification:
   - continuity-of-measure
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

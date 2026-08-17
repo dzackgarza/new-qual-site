@@ -11,9 +11,10 @@ classification:
   - metric-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Prove that in a metric space a compact subset is closed and bounded. If you cannot do it for a general metric space do it for $\mathbb R^n$.
+::: {.problem title="?"}
+Prove that in a metric space a compact subset is closed and bounded.
+If you cannot do it for a general metric space do it for $\mathbb R^n$.
 :::
-

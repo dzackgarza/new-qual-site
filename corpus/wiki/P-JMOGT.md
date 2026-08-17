@@ -12,6 +12,7 @@ classification:
   - density
 relations: []
 review: draft
+solved: true
 ---
 Let $f\in L^1(\RR)$.
 Show that

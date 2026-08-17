@@ -11,9 +11,10 @@ classification:
   - homology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Use the Meyer-Vietoris sequence to calculate the homology of $X\vee Y$.
 :::
 

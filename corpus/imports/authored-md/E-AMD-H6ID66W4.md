@@ -12,6 +12,7 @@ classification:
   - integral-domains
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise}

@@ -12,6 +12,7 @@ classification:
   - subgroups
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show that $Z(G) \leq G$ is always characteristic.

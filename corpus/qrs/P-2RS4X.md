@@ -13,6 +13,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

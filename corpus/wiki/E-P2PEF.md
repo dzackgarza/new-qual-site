@@ -11,6 +11,7 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Holomorphic iff delbar vanishes"}
 Show that $f$ is holomorphic iff $\delbar f = 0$.

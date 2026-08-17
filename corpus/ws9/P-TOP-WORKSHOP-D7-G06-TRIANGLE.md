@@ -12,10 +12,10 @@ classification:
   - van-kampen
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-(June ’08) Let $X$ be the triangle parachute formed from the standard $2$-simplex $\Delta^2$ by identifying
-the three vertices with one another. Compute a presentation for $\pi_1(X)$ and show that $\pi_1(X)$ is
-isomorphic to a free group $F_n$ (and identify which $n$!).
+::: {.problem title="?"}
+(June ’08) Let $X$ be the triangle parachute formed from the standard $2$-simplex $\Delta^2$ by identifying the three vertices with one another.
+Compute a presentation for $\pi_1(X)$ and show that $\pi_1(X)$ is isomorphic to a free group $F_n$ (and identify which $n$!).
 :::

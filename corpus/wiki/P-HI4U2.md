@@ -12,6 +12,7 @@ classification:
   - fields
 relations: []
 review: draft
+solved: true
 ---
 
 What are the following objects?

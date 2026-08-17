@@ -12,6 +12,7 @@ classification:
   - principal-ideal-domains
 relations: []
 review: draft
+solved: true
 ---
 For a ring $R$, let $U(R)$ denote the multiplicative group of units in $R$. Recall that in an integral domain $R$, $r \in R$ is called *irreducible* if $r$ is not a unit in R, and the only divisors of $r$ have the form $ru$ with $u$ a unit in $R$. 
 

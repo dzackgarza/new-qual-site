@@ -12,6 +12,7 @@ classification:
   - principal-ideal-domains
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 7.2.5"}

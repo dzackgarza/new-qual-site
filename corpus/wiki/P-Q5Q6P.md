@@ -12,6 +12,7 @@ classification:
   - mayer-vietoris
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

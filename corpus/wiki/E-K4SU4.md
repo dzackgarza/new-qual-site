@@ -12,6 +12,7 @@ classification:
   - prime-ideals
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise title="?"}

@@ -12,6 +12,7 @@ classification:
   - cauchy-estimates
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Sublinear growth"}
 Suppose that $f$ is entire and $f$ has sublinear growth in the following sense:

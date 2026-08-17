@@ -11,6 +11,7 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="Integrability of a radial power"}
 Let $n\geq 1$ and $p\in\RR$. Show that

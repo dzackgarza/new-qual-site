@@ -12,6 +12,7 @@ classification:
   - exact-sequences
 relations: []
 review: draft
+solved: true
 ---
 Let $R$ be a ring with unity.
 

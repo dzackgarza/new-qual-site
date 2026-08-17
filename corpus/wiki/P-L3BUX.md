@@ -11,6 +11,7 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="?"}
 Let $(X, d)$ be a compact metric space, and let $f : X \to X$ be an isometry: 

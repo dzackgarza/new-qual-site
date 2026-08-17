@@ -11,6 +11,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Calculate the following limit, justifying each step of your calculation:

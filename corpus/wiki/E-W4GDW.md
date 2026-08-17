@@ -11,6 +11,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Find the conformal map that takes the upper half-plane conformally onto the half-strip 

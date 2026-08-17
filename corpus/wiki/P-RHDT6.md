@@ -11,6 +11,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: true
 ---
 Let $I$ be an index set and $\alpha: I \to (0, \infty)$.
 

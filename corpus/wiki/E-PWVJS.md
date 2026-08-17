@@ -12,6 +12,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show that $\logd(fg) = \logd f + \logd g$, i.e. 

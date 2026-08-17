@@ -11,11 +11,12 @@ classification:
   - torsion
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $R$ be an integral domain. Recall that if $M$ is an $R\dash$module, the *rank* of $M$ is
-defined to be the maximum number of $R\dash$linearly independent elements of $M$ .
+Let $R$ be an integral domain.
+Recall that if $M$ is an $R\dash$module, the *rank* of $M$ is defined to be the maximum number of $R\dash$linearly independent elements of $M$ .
 
 (a) Prove that for any $R\dash$module $M$, the rank of $\tor(M )$ is 0.
 

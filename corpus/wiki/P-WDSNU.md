@@ -11,6 +11,7 @@ classification:
   - group-rings
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

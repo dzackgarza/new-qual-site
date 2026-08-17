@@ -12,6 +12,7 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Holomorphic functions have harmonic components"}
 Show that if $f = u+iv$ is holomorphic then $u, v$ are harmonic.

@@ -10,10 +10,12 @@ classification:
   - geometry
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $z_{k}(k=1, \cdots, n)$ be complex numbers lying on the same side of a straight line passing through the origin. Show that
+Let $z_{k}(k=1, \cdots, n)$ be complex numbers lying on the same side of a straight line passing through the origin.
+Show that
 
 $$
 z_{1}+z_{2}+\cdots+z_{n} \neq 0, \quad 1 / z_{1}+1 / z_{2}+\cdots+1 / z_{n} \neq 0

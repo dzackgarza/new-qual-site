@@ -10,13 +10,13 @@ classification:
   - conformal-maps
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Find a conformal map from the upper half-disc to the upper half-plane.
 :::
 
-:::{.solution}
+::: {.solution}
 ![](../../assets/figures/2021-07-29_19-26-39.png)
 :::
-
-

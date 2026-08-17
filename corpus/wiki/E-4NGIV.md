@@ -11,11 +11,9 @@ classification:
   - entire-functions
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that an entire doubly periodic function is constant.
-
- 
-
 :::
-

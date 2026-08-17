@@ -10,6 +10,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

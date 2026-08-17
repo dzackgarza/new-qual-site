@@ -12,6 +12,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Complement of a segment"}
 Map $\CC\sm[-1, 1]$ to $\DD$.

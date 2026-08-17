@@ -12,6 +12,7 @@ classification:
   - class-equation
 relations: []
 review: draft
+solved: true
 ---
 Let $G$ be a finite group with $n$ distinct conjugacy classes.
 Let $g_1 \cdots g_n$ be representatives of the conjugacy classes of $G$.

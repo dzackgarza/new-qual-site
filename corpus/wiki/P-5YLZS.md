@@ -11,6 +11,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 Suppose $f(x)$ and $xf(x)$ are integrable on $\RR$.
 Define $F$ by

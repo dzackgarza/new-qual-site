@@ -13,6 +13,7 @@ classification:
   - laurent-series
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Bounded derivatives imply removable singularities"}
 Suppose $f$ is holomorphic on $\DD\smz$ and there exist $M, k$ such that

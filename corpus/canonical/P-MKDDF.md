@@ -12,6 +12,7 @@ classification:
   - modules
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

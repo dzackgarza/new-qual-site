@@ -11,6 +11,7 @@ classification:
   - measure-theory
 relations: []
 review: draft
+solved: true
 ---
 Let $(X, \mathcal M, \mu)$ be a measure space and suppose $\theset{E_n} \subset \mathcal M$ satisfies
 \[

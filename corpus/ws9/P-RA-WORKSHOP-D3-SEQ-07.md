@@ -12,6 +12,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}
@@ -32,12 +33,13 @@ $$
 > **AI-Generated Solution**
 
 <1>1. (a) Example with strict inequality.
-    Proof: take $a_n = 2 + (-1)^n$ and $b_n = 2 - (-1)^n$ for $n \ge 1$. Both are positive. The sequence $a_n$ alternates $3, 1, 3, 1, \ldots$, so $\liminf a_n = 1$; similarly $\liminf b_n = 1$. But $a_n b_n = (2+(-1)^n)(2-(-1)^n) = 4 - 1 = 3$ for every $n$, so $\liminf (a_n b_n) = 3 > 1\cdot 1 = (\liminf a_n)(\liminf b_n)$.
+Proof: take $a_n = 2 + (-1)^n$ and $b_n = 2 - (-1)^n$ for $n \ge 1$.
+Both are positive.
+The sequence $a_n$ alternates $3, 1, 3, 1, \ldots$, so $\liminf a_n = 1$; similarly $\liminf b_n = 1$.
+But $a_n b_n = (2+(-1)^n)(2-(-1)^n) = 4 - 1 = 3$ for every $n$, so $\liminf (a_n b_n) = 3 > 1\cdot 1 = (\liminf a_n)(\liminf b_n)$.
 <1>2. (b) If $a_n \to a$, then $\liminf (a_n b_n) = a\,\liminf b_n$.
-    Proof: since $a_n \to a$, for every $\epsilon > 0$ there is $N$ with $a - \epsilon < a_n < a + \epsilon$ for all $n \ge N$; the first finitely many terms do not affect any liminf. For $n \ge N$, $b_n > 0$ gives
-    \[(a - \epsilon)\,b_n < a_n b_n < (a + \epsilon)\,b_n.\]
-    Taking liminf over $n \ge N$ (equivalently over all $n$):
-    \[(a-\epsilon)\,\liminf b_n \le \liminf (a_n b_n) \le (a+\epsilon)\,\liminf b_n,\]
-    where we used that for positive $c$, $\liminf (c\,b_n) = c\,\liminf b_n$. Letting $\epsilon \to 0$ yields $\liminf(a_n b_n) = a\,\liminf b_n$.
+Proof: since $a_n \to a$, for every $\epsilon > 0$ there is $N$ with $a - \epsilon < a_n < a + \epsilon$ for all $n \ge N$; the first finitely many terms do not affect any liminf.
+For $n \ge N$, $b_n > 0$ gives \[(a - \epsilon)\,b_n < a_n b_n < (a + \epsilon)\,b_n.\] Taking liminf over $n \ge N$ (equivalently over all $n$): \[(a-\epsilon)\,\liminf b_n \le \liminf (a_n b_n) \le (a+\epsilon)\,\liminf b_n,\] where we used that for positive $c$, $\liminf (c\,b_n) = c\,\liminf b_n$.
+Letting $\epsilon \to 0$ yields $\liminf(a_n b_n) = a\,\liminf b_n$.
 <1>3. Q.E.D.
 :::

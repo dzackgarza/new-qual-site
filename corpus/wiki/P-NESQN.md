@@ -11,6 +11,7 @@ classification:
   - van-kampen
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

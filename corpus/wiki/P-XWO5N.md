@@ -12,6 +12,7 @@ classification:
   - schwarz-lemma
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 a. Let $z, w \in \CC$ with $\bar z w \neq 1$. 

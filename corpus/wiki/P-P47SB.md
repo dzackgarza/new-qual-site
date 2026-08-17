@@ -12,6 +12,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\mathbb{D}:=\{z:|z|<1\}$ denote the open unit disk. Suppose that $f(z): \mathbb{D} \rightarrow \mathbb{D}$ is holomorphic, and that there exists $a \in \mathbb{D} \backslash\{0\}$ such that $f(a)=f(-a)=0$.

@@ -12,6 +12,7 @@ classification:
   - fundamental-group
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Using algebraic topology"}
 Show that there is no continuous square root function defined on all of $\CC$.

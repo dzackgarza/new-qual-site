@@ -12,6 +12,7 @@ classification:
   - commutators
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

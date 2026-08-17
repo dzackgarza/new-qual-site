@@ -12,6 +12,7 @@ classification:
   - trigonometric-substitution
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

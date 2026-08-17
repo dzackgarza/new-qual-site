@@ -13,6 +13,7 @@ classification:
   - laurent-series
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

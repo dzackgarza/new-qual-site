@@ -11,8 +11,9 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 (May 2015) If $X=\mathbb R^n$ with the usual Euclidean topology and $U\subseteq X$ is an open, connected subspace of $X$, show that $U$ is also path connected.
 :::

@@ -12,6 +12,7 @@ classification:
   - modules
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 4.1.12"}

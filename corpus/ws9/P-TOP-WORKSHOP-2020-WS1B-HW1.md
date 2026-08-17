@@ -10,8 +10,9 @@ classification:
   - point-set
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 What is a topology on a set?
 :::

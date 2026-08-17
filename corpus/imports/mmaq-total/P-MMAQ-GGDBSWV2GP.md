@@ -10,13 +10,14 @@ classification:
   - groups
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-1.  Let $G$ be a group of order $n$. Suppose that for every divisor
-    $d$ of $n$, $G$ contains at most one subgroup of order $d$. Show
-    that $G$ is clyclic.
+1. Let $G$ be a group of order $n$.
+   Suppose that for every divisor $d$ of $n$, $G$ contains at most one subgroup of order $d$.
+   Show that $G$ is clyclic.
 
-2.  Let $F$ be a field. Show that every finite subgroup of the group
-    of units $F^\times$ is cyclic.
+2. Let $F$ be a field.
+   Show that every finite subgroup of the group of units $F^\times$ is cyclic.
 :::

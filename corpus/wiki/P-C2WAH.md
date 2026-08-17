@@ -12,6 +12,7 @@ classification:
   - ideals
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="Nilradical is intersection of primes"}

@@ -12,6 +12,7 @@ classification:
   - homotopy
 relations: []
 review: draft
+solved: true
 ---
 a.  
 Give the definition of a **covering space** $\hat{X}$

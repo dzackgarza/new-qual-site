@@ -11,6 +11,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f, g: [0, 1] \to \RR$ where $f$ is Riemann integrable and for $x, y\in [0, 1]$,

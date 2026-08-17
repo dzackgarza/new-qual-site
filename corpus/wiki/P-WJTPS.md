@@ -11,6 +11,7 @@ classification:
   - green-s-theorem
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

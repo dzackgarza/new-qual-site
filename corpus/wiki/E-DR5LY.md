@@ -13,6 +13,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Hadamard expansion of $\sin$"}
 Find a Hadamard expansion of $\sin(\pi z)$.

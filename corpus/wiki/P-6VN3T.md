@@ -13,6 +13,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Assume $f$ is an entire function such that $|f(z)|=1$ on $|z|=1$. Prove that $f(z)=e^{i \theta} z^{n}$, where $\theta$ is a real number and $n$ a non-negative integer. 

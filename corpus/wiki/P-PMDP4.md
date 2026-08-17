@@ -11,6 +11,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Prove that if $xf(x) \in L^1(\RR)$, then

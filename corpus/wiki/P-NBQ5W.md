@@ -12,6 +12,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Give an example of a function $f:\RR\to \RR$ that is everywhere differentiable but $f'$ is not continuous at 0.

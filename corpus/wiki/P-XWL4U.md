@@ -13,6 +13,7 @@ classification:
   - convergence-of-integrals
 relations: []
 review: draft
+solved: true
 ---
 Let $\{f_k\}$ be any sequence of functions in $L^2([0, 1])$ satisfying $\norm{f_k}_2 ≤ M$ for all $k ∈ \NN$.
   

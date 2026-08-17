@@ -11,6 +11,7 @@ classification:
   - conformal-maps
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Disc to upper half-plane, cross-ratio"}
 Find a conformal map $\HH \to \DD$ using cross-ratios.

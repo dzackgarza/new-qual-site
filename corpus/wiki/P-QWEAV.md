@@ -12,6 +12,7 @@ classification:
   - simple-groups
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $N$ be a positive integer, and let $G$ be a finite group of order $N$.

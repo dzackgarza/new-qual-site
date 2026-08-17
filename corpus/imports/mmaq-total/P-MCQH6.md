@@ -10,15 +10,15 @@ classification:
   - representation-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
 Let $G$ be the unique non-abelian group of order 21.
 
--   Describe all 1-dimensional complex representations of $G$.
+- Describe all 1-dimensional complex representations of $G$.
 
--   How many (non-isomorphic) irreducible complex representations
-    does $G$ have and what are their dimensions?
+- How many (non-isomorphic) irreducible complex representations does $G$ have and what are their dimensions?
 
--   Determine the character table of $G$.
+- Determine the character table of $G$.
 :::

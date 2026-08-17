@@ -12,6 +12,7 @@ classification:
   - jacobson-radical
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

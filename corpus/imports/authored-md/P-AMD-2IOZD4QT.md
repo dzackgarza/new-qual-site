@@ -12,6 +12,7 @@ classification:
   - burnside-s-lemma
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

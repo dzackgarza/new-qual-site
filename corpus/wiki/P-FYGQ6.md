@@ -10,6 +10,7 @@ classification:
   - series-of-functions
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem
@@ -20,28 +21,28 @@ Show by means of example that this inequality can be strict.
 > **AI-Generated Solution**
 
 <1>1. Claim: for $|x| < R_1 R_2$, the series $\sum a_n b_n x^n$ converges absolutely.
-    <2>1. Since $|x| < R_1 R_2$, choose $\lambda$ with $|x| < \lambda < R_1 R_2$, and set $u = R_1\sqrt{\lambda/(R_1 R_2)}$, $v = R_2\sqrt{\lambda/(R_1 R_2)}$; then $u < R_1$, $v < R_2$, and $uv = \lambda > |x|$.
-        Proof: $\sqrt{\lambda/(R_1R_2)} < 1$ by choice of $\lambda$; the product is $\lambda$.
-    <2>2. $\sum |a_n| u^n < \infty$ and $\sum |b_n| v^n < \infty$.
-        Proof: $u < R_1$ and $v < R_2$, and a power series converges absolutely strictly inside its radius of convergence.
-    <2>3. Hence $|a_n|u^n \to 0$ and $|b_n|v^n \to 0$ (terms of convergent series).
-        Proof: a necessary condition for convergence.
-    <2>4. Write $|a_n b_n x^n| = (|a_n|u^n)(|b_n|v^n)\left|\frac{x}{uv}\right|^n$. For large $n$, $|a_n|u^n \le 1$ and $|b_n|v^n \le 1$ (they tend to $0$), so $|a_n b_n x^n| \le \left|\frac{x}{\lambda}\right|^n$ for large $n$, and $\sum \left|\frac{x}{\lambda}\right|^n < \infty$ since $|x| < \lambda$.
-        Proof: <2>3 and the geometric series test.
+<2>1. Since $|x| < R_1 R_2$, choose $\lambda$ with $|x| < \lambda < R_1 R_2$, and set $u = R_1\sqrt{\lambda/(R_1 R_2)}$, $v = R_2\sqrt{\lambda/(R_1 R_2)}$; then $u < R_1$, $v < R_2$, and $uv = \lambda > |x|$.
+Proof: $\sqrt{\lambda/(R_1R_2)} < 1$ by choice of $\lambda$; the product is $\lambda$.
+<2>2. $\sum |a_n| u^n < \infty$ and $\sum |b_n| v^n < \infty$.
+Proof: $u < R_1$ and $v < R_2$, and a power series converges absolutely strictly inside its radius of convergence.
+<2>3. Hence $|a_n|u^n \to 0$ and $|b_n|v^n \to 0$ (terms of convergent series).
+Proof: a necessary condition for convergence.
+<2>4. Write $|a_n b_n x^n| = (|a_n|u^n)(|b_n|v^n)\left|\frac{x}{uv}\right|^n$.
+For large $n$, $|a_n|u^n \le 1$ and $|b_n|v^n \le 1$ (they tend to $0$), so $|a_n b_n x^n| \le \left|\frac{x}{\lambda}\right|^n$ for large $n$, and $\sum \left|\frac{x}{\lambda}\right|^n < \infty$ since $|x| < \lambda$.
+Proof: <2>3 and the geometric series test.
 
 <1>2. $R \ge R_1 R_2$.
-    Proof: <1>1 shows absolute convergence for every $|x| < R_1 R_2$, so the radius of $\sum a_nb_nx^n$ is at least $R_1R_2$.
+Proof: <1>1 shows absolute convergence for every $|x| < R_1 R_2$, so the radius of $\sum a_nb_nx^n$ is at least $R_1R_2$.
 
 <1>3. The inequality can be strict.
-    <2>1. Take $a_n = 1$ for $n$ even and $a_n = 0$ for $n$ odd; take $b_n = 0$ for $n$ even and $b_n = 1$ for $n$ odd.
-        Proof: explicit sequences.
-    <2>2. $R_1 = 1$ and $R_2 = 1$.
-        Proof: $|a_n|^{1/n} = 1$ along even indices (limsup $= 1$) and $0$ along odd; so $\limsup |a_n|^{1/n} = 1$, giving $R_1 = 1$ by Cauchy–Hadamard; likewise $R_2 = 1$ (the ones now sit on the odd indices).
-    <2>3. $a_n b_n = 0$ for every $n$, so the product series is identically $0$ and has radius $R = \infty$.
-        Proof: for each $n$, exactly one of $a_n, b_n$ is zero (they are supported on complementary index sets).
-    <2>4. $R = \infty > 1 = R_1 R_2$.
-        Proof: <2>2 and <2>3.
+<2>1. Take $a_n = 1$ for $n$ even and $a_n = 0$ for $n$ odd; take $b_n = 0$ for $n$ even and $b_n = 1$ for $n$ odd.
+Proof: explicit sequences.
+<2>2. $R_1 = 1$ and $R_2 = 1$.
+Proof: $|a_n|^{1/n} = 1$ along even indices (limsup $= 1$) and $0$ along odd; so $\limsup |a_n|^{1/n} = 1$, giving $R_1 = 1$ by Cauchy–Hadamard; likewise $R_2 = 1$ (the ones now sit on the odd indices).
+<2>3. $a_n b_n = 0$ for every $n$, so the product series is identically $0$ and has radius $R = \infty$.
+Proof: for each $n$, exactly one of $a_n, b_n$ is zero (they are supported on complementary index sets).
+<2>4. $R = \infty > 1 = R_1 R_2$.
+Proof: <2>2 and <2>3.
 
-<1>4. Q.E.D.
-    Proof: <1>2 gives $R \ge R_1R_2$; <1>3 exhibits strict inequality.
+<1>4. Q.E.D. Proof: <1>2 gives $R \ge R_1R_2$; <1>3 exhibits strict inequality.
 :::

@@ -12,6 +12,7 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f$ is analytic on $\DD^\circ$.

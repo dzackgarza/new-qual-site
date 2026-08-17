@@ -11,8 +11,10 @@ classification:
   - maximum-modulus-principle
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Assume $f(z)$ is analytic in region $D$ and $\Gamma$ is a rectifiable curve in $D$ with interior in $D$. Prove that if $f(z)$ is real for all $z \in \Gamma$, then $f(z)$ is a constant.
+Assume $f(z)$ is analytic in region $D$ and $\Gamma$ is a rectifiable curve in $D$ with interior in $D$.
+Prove that if $f(z)$ is real for all $z \in \Gamma$, then $f(z)$ is a constant.
 :::

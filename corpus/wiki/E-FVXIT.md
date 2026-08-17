@@ -12,6 +12,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f: \DD\to \HH$ is analytic and satisfies $f(0) = 2$.

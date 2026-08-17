@@ -13,6 +13,7 @@ classification:
   - limits
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 1. Give an example of a continuous $f\in L^1(\RR)$ such that $f(x) \not\to 0$ as$\abs x \to \infty$.

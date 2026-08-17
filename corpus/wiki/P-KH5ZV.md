@@ -12,6 +12,7 @@ classification:
   - measure-theory
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f\in L^1(\RR)$. Show that

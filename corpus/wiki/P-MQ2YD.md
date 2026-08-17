@@ -12,6 +12,7 @@ classification:
   - finite-fields
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

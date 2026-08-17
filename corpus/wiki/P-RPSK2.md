@@ -10,6 +10,7 @@ classification:
   - line-integrals
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

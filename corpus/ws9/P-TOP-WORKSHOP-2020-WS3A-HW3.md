@@ -11,8 +11,9 @@ classification:
   - surfaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Briefly describe the classification of compact surfaces without boundary.
 :::

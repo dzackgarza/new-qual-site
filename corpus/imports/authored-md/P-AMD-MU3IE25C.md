@@ -11,6 +11,7 @@ classification:
   - cosets-and-lagrange
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

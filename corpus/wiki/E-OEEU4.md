@@ -13,6 +13,7 @@ classification:
   - liouville-s-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Rudin 10.4"}
 Let $f$ be entire and suppose that for $\abs{z} \geq M$,

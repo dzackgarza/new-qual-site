@@ -12,6 +12,7 @@ classification:
   - abelian-groups
 relations: []
 review: draft
+solved: true
 ---
 a.
 Use the Class Equation (equivalently, the conjugation action of a group on itself) to prove that any $p\dash$group (a group whose order is a positive power of a prime integer $p$) has a nontrivial center.

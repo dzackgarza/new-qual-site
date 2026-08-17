@@ -11,6 +11,7 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f(z)$ be an analytic function on $|z|<1$.

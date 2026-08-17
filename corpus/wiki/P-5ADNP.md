@@ -11,6 +11,7 @@ classification:
   - subspace-topology
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="Fall 2011"}
 Let $X$ be a topological space, and $B \subset A \subset X$. 

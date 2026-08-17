@@ -11,9 +11,10 @@ classification:
   - point-set
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 For a set $A\subset X$, $\overline A$ is defined to be the intersection of all closed sets containing $A$.
 Using this definition, show: $x\in\overline A$ if and only if every open set $U$ containing $x$ intersects $A$.
 :::

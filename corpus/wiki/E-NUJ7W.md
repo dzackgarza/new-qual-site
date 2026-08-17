@@ -12,6 +12,7 @@ classification:
   - jordan-canonical-form
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise title="?"}

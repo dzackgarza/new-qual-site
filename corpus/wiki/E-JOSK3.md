@@ -12,6 +12,7 @@ classification:
   - singularities
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Orders of poles"}
 Determine the order of the pole of 

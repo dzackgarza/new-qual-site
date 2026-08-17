@@ -11,6 +11,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Geometrically describe the following subsets of $\CC$:

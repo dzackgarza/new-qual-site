@@ -12,6 +12,7 @@ classification:
   - cosets-and-lagrange
 relations: []
 review: draft
+solved: true
 ---
 
 Let $G$ be a group containing a subgroup $H$ not equal to $G$ of finite index.

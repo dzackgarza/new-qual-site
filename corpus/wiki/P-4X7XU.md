@@ -11,6 +11,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="Spring 2020.5"}
 Find a conformal map that maps the region 

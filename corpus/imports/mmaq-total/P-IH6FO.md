@@ -10,10 +10,9 @@ classification:
   - groups
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-There are five nonisomorphic groups of order 8. For
-each of those groups $G$, find the smallest positive integer n such that there is an
-injective homomorphism $\varphi: G\rightarrow S_n$.
+There are five nonisomorphic groups of order 8. For each of those groups $G$, find the smallest positive integer n such that there is an injective homomorphism $\varphi: G\rightarrow S_n$.
 :::

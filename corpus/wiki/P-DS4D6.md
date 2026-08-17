@@ -12,6 +12,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Show that a continuous function on a compact set is uniformly continuous.

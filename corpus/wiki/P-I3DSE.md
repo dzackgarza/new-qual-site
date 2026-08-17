@@ -11,6 +11,7 @@ classification:
   - measure-theory
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f$ be a non-negative Lebesgue measurable function on $[1, \infty)$.

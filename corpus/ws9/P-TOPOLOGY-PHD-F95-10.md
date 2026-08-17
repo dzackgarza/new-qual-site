@@ -11,9 +11,9 @@ classification:
   - fundamental-group
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove that $\mathbb{R}P^2$ cannot be retracted to $S^1$.
 :::
-

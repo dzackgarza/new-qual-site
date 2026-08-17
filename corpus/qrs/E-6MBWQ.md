@@ -13,6 +13,7 @@ relations:
 - kind: related-to
   target: E-2LZES
 review: draft
+solved: true
 ---
 
 ::: exercise

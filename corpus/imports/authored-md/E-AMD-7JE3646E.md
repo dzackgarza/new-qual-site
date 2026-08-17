@@ -12,6 +12,7 @@ classification:
   - characteristic
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.exercise}
@@ -21,61 +22,55 @@ Show that any quadratic extension of a field $F$ with $\ch(F)\neq 2$ is Galois.
 ::: {.solution}
 > **AI-Generated Solution** (Gemini 3.7 Flash)
 
-**Goal:** Let $F$ be a field with $\operatorname{char}(F) \neq 2$, and let $K/F$ be a field extension of degree $[K : F] = 2$. Prove that $K/F$ is a Galois extension.
+**Goal:** Let $F$ be a field with $\operatorname{char}(F) \neq 2$, and let $K/F$ be a field extension of degree $[K : F] = 2$.
+Prove that $K/F$ is a Galois extension.
 
-<1>1. Definition of a Galois extension:
-    A finite field extension $K/F$ is Galois if and only if it is both normal and separable.
-    Proof: Standard definition/characterization of finite Galois extensions.
+<1>1. Definition of a Galois extension: A finite field extension $K/F$ is Galois if and only if it is both normal and separable.
+Proof: Standard definition/characterization of finite Galois extensions.
 
-<1>2. Existence of a primitive generator $\alpha \in K \setminus F$:
-    <2>1. Since $[K : F] = 2 > 1$, $F \subsetneq K$, so there exists an element $\beta \in K \setminus F$.
-        Proof: By definition of a non-trivial vector space extension.
-    <2>2. The extension $F(\beta)$ satisfies $F \subsetneq F(\beta) \subseteq K$.
-        Proof: $\beta \in F(\beta)$ and $\beta \notin F$.
-    <2>3. By the Tower Law, $2 = [K : F] = [K : F(\beta)] \cdot [F(\beta) : F]$.
-        Proof: Degree multiplicativity for finite field extensions.
-    <2>4. Since $[F(\beta) : F] > 1$, we must have $[F(\beta) : F] = 2$ and $[K : F(\beta)] = 1$, so $K = F(\beta)$.
-        Proof: The only divisors of 2 are 1 and 2.
-    <2>5. The minimal polynomial $m_\beta(x) \in F[x]$ of $\beta$ over $F$ has degree $\deg(m_\beta) = [F(\beta) : F] = 2$.
-        Proof: Degree of the simple extension equals the degree of the minimal polynomial.
+<1>2. Existence of a primitive generator $\alpha \in K \setminus F$: <2>1. Since $[K : F] = 2 > 1$, $F \subsetneq K$, so there exists an element $\beta \in K \setminus F$.
+Proof: By definition of a non-trivial vector space extension.
+<2>2. The extension $F(\beta)$ satisfies $F \subsetneq F(\beta) \subseteq K$.
+Proof: $\beta \in F(\beta)$ and $\beta \notin F$.
+<2>3. By the Tower Law, $2 = [K : F] = [K : F(\beta)] \cdot [F(\beta) : F]$.
+Proof: Degree multiplicativity for finite field extensions.
+<2>4. Since $[F(\beta) : F] > 1$, we must have $[F(\beta) : F] = 2$ and $[K : F(\beta)] = 1$, so $K = F(\beta)$.
+Proof: The only divisors of 2 are 1 and 2. <2>5. The minimal polynomial $m_\beta(x) \in F[x]$ of $\beta$ over $F$ has degree $\deg(m_\beta) = [F(\beta) : F] = 2$.
+Proof: Degree of the simple extension equals the degree of the minimal polynomial.
 
-<1>3. Completing the square (using $\operatorname{char}(F) \neq 2$):
-    <2>1. Let $m_\beta(x) = x^2 + b x + c \in F[x]$ with $b, c \in F$.
-        Proof: $m_\beta(x)$ is monic of degree 2.
-    <2>2. Since $\operatorname{char}(F) \neq 2$, $2 \cdot 1_F \neq 0$, so $2$ is invertible in $F$.
-        Proof: In a field of characteristic $\neq 2$, the prime subfield is $\mathbb{Q}$ or $\mathbb{F}_p$ ($p \neq 2$), in which $2 \neq 0$.
-    <2>3. Define $\alpha = \beta + \frac{b}{2} \in K$.
-        Proof: $\frac{b}{2} \in F$, so $\alpha \in K$.
-    <2>4. $F(\alpha) = F(\beta) = K$.
-        Proof: $\beta = \alpha - \frac{b}{2} \in F(\alpha)$ and $\alpha = \beta + \frac{b}{2} \in F(\beta)$.
-    <2>5. $\alpha^2 = \left(\beta + \frac{b}{2}\right)^2 = \beta^2 + b \beta + \frac{b^2}{4} = -c + \frac{b^2}{4} \in F$.
-        Proof: Since $m_\beta(\beta) = \beta^2 + b \beta + c = 0$, we have $\beta^2 + b \beta = -c$.
-    <2>6. Set $d = \alpha^2 = \frac{b^2 - 4c}{4} \in F$. Then $\alpha \notin F$ is a root of the polynomial $f(x) = x^2 - d \in F[x]$.
-        Proof: $\alpha \notin F$ because if $\alpha \in F$, then $\beta = \alpha - \frac{b}{2} \in F$, contradicting $\beta \notin F$. Thus $f(x)$ is the minimal polynomial of $\alpha$ over $F$, and $d$ is not a square in $F$.
+<1>3. Completing the square (using $\operatorname{char}(F) \neq 2$): <2>1. Let $m_\beta(x) = x^2 + b x + c \in F[x]$ with $b, c \in F$.
+Proof: $m_\beta(x)$ is monic of degree 2. <2>2. Since $\operatorname{char}(F) \neq 2$, $2 \cdot 1_F \neq 0$, so $2$ is invertible in $F$.
+Proof: In a field of characteristic $\neq 2$, the prime subfield is $\mathbb{Q}$ or $\mathbb{F}_p$ ($p \neq 2$), in which $2 \neq 0$.
+<2>3. Define $\alpha = \beta + \frac{b}{2} \in K$.
+Proof: $\frac{b}{2} \in F$, so $\alpha \in K$.
+<2>4. $F(\alpha) = F(\beta) = K$.
+Proof: $\beta = \alpha - \frac{b}{2} \in F(\alpha)$ and $\alpha = \beta + \frac{b}{2} \in F(\beta)$.
+<2>5. $\alpha^2 = \left(\beta + \frac{b}{2}\right)^2 = \beta^2 + b \beta + \frac{b^2}{4} = -c + \frac{b^2}{4} \in F$.
+Proof: Since $m_\beta(\beta) = \beta^2 + b \beta + c = 0$, we have $\beta^2 + b \beta = -c$.
+<2>6. Set $d = \alpha^2 = \frac{b^2 - 4c}{4} \in F$.
+Then $\alpha \notin F$ is a root of the polynomial $f(x) = x^2 - d \in F[x]$.
+Proof: $\alpha \notin F$ because if $\alpha \in F$, then $\beta = \alpha - \frac{b}{2} \in F$, contradicting $\beta \notin F$.
+Thus $f(x)$ is the minimal polynomial of $\alpha$ over $F$, and $d$ is not a square in $F$.
 
-<1>4. $K/F$ is normal:
-    <2>1. The roots of $f(x) = x^2 - d$ are $\alpha$ and $-\alpha$.
-        Proof: $(-\alpha)^2 - d = \alpha^2 - d = 0$, and $(x - \alpha)(x + \alpha) = x^2 - \alpha^2 = x^2 - d$.
-    <2>2. Both roots $\alpha$ and $-\alpha$ belong to $K = F(\alpha)$.
-        Proof: Since $\alpha \in K$, its additive inverse $-\alpha$ is also in $K$.
-    <2>3. $K$ is the splitting field of the polynomial $f(x) \in F[x]$ over $F$.
-        Proof: $K = F(\alpha) = F(\alpha, -\alpha)$, and $f(x)$ factors into linear factors in $K[x]$.
-    <2>4. An extension is normal if and only if it is the splitting field of a polynomial. Thus $K/F$ is normal.
-        Proof: Standard characterization of normal extensions.
+<1>4. $K/F$ is normal: <2>1. The roots of $f(x) = x^2 - d$ are $\alpha$ and $-\alpha$.
+Proof: $(-\alpha)^2 - d = \alpha^2 - d = 0$, and $(x - \alpha)(x + \alpha) = x^2 - \alpha^2 = x^2 - d$.
+<2>2. Both roots $\alpha$ and $-\alpha$ belong to $K = F(\alpha)$.
+Proof: Since $\alpha \in K$, its additive inverse $-\alpha$ is also in $K$.
+<2>3. $K$ is the splitting field of the polynomial $f(x) \in F[x]$ over $F$.
+Proof: $K = F(\alpha) = F(\alpha, -\alpha)$, and $f(x)$ factors into linear factors in $K[x]$.
+<2>4. An extension is normal if and only if it is the splitting field of a polynomial.
+Thus $K/F$ is normal.
+Proof: Standard characterization of normal extensions.
 
-<1>5. $K/F$ is separable:
-    <2>1. The formal derivative of $f(x) = x^2 - d$ is $f'(x) = 2x$.
-        Proof: Standard polynomial derivative.
-    <2>2. The roots of $f'(x)$ in $K$ are only $x = 0$ (since $\operatorname{char}(F) \neq 2$ implies $2 \neq 0$).
-        Proof: $2x = 0 \implies x = 0$ in any field of characteristic $\neq 2$.
-    <2>3. Since $d \neq 0$ (as $\alpha \notin F \implies \alpha \neq 0$), $f(0) = -d \neq 0$, so $f(x)$ and $f'(x)$ have no common roots.
-        Proof: $\gcd(f, f') = 1$ in $F[x]$.
-    <2>4. The roots $\alpha$ and $-\alpha$ are distinct because $\alpha - (-\alpha) = 2\alpha \neq 0$ (as $2 \neq 0$ and $\alpha \neq 0$).
-        Proof: Since $\operatorname{char}(F) \neq 2$.
-    <2>5. Thus $f(x)$ is a separable polynomial over $F$, so $\alpha$ is separable over $F$, meaning $K = F(\alpha)$ is a separable extension of $F$.
-        Proof: A simple algebraic extension generated by a root of a separable irreducible polynomial is separable.
+<1>5. $K/F$ is separable: <2>1. The formal derivative of $f(x) = x^2 - d$ is $f'(x) = 2x$.
+Proof: Standard polynomial derivative.
+<2>2. The roots of $f'(x)$ in $K$ are only $x = 0$ (since $\operatorname{char}(F) \neq 2$ implies $2 \neq 0$). Proof: $2x = 0 \implies x = 0$ in any field of characteristic $\neq 2$.
+<2>3. Since $d \neq 0$ (as $\alpha \notin F \implies \alpha \neq 0$), $f(0) = -d \neq 0$, so $f(x)$ and $f'(x)$ have no common roots.
+Proof: $\gcd(f, f') = 1$ in $F[x]$.
+<2>4. The roots $\alpha$ and $-\alpha$ are distinct because $\alpha - (-\alpha) = 2\alpha \neq 0$ (as $2 \neq 0$ and $\alpha \neq 0$). Proof: Since $\operatorname{char}(F) \neq 2$.
+<2>5. Thus $f(x)$ is a separable polynomial over $F$, so $\alpha$ is separable over $F$, meaning $K = F(\alpha)$ is a separable extension of $F$.
+Proof: A simple algebraic extension generated by a root of a separable irreducible polynomial is separable.
 
 <1>6. Conclusion: Since $K/F$ is finite, normal (<1>4), and separable (<1>5), $K/F$ is Galois.
-    Proof: By <1>1.
+Proof: By <1>1.
 :::
-

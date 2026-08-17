@@ -10,6 +10,7 @@ classification:
   - bases
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise

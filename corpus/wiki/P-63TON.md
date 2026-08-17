@@ -12,6 +12,7 @@ classification:
   - integral-domains
 relations: []
 review: draft
+solved: true
 ---
 a.
 Let $R$ be an integral domain with quotient field $F$.

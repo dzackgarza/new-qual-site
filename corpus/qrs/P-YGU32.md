@@ -13,6 +13,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 Find all entire functions that satisfy
 \[

@@ -13,6 +13,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Entire functions satisfying a bound"}
 Find all entire functions $f$ that satisfy

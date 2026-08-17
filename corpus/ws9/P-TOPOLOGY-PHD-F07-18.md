@@ -12,8 +12,9 @@ classification:
   - surfaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Compute the fundamental group of the (surface of a) sphere when three points on it are removed.
 :::

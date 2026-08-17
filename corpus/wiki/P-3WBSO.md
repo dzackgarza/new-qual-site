@@ -10,6 +10,7 @@ classification:
   - number-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

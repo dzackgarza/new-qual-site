@@ -11,6 +11,7 @@ classification:
   - metric-spaces
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="Spring 2021, 3"}
 For nonempty subsets $A, B$ of a metric space $(X, d)$, define the **setwise distance** as 

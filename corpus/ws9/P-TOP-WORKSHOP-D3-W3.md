@@ -12,10 +12,10 @@ classification:
   - point-set
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Suppose $(X,\tau)$ is a topological space and let $(X,\tau')$ be the same set with the finite
-complement topology. Then $X$ is $T_1$ if and only if
-$\operatorname{id}:(X,\tau)\to(X,\tau')$ is continuous.
+::: {.problem title="?"}
+Suppose $(X,\tau)$ is a topological space and let $(X,\tau')$ be the same set with the finite complement topology.
+Then $X$ is $T_1$ if and only if $\operatorname{id}:(X,\tau)\to(X,\tau')$ is continuous.
 :::

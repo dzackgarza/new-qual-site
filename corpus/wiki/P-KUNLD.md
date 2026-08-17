@@ -12,6 +12,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Tangent from polynomial long division"}
 Find a Laurent expansion about $z_0=0$ for $f(z) = \tan(z)$ by using polynomial long division on the series expansions for $\sin(z)$ and $\cos(z)$.

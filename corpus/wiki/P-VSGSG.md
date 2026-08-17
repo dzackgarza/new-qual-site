@@ -11,6 +11,7 @@ classification:
   - simple-groups
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

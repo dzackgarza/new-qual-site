@@ -12,8 +12,9 @@ classification:
   - separation-axioms
 relations: []
 review: draft
+solved: false
 ---
-:::{.problem title="?"}
+
+::: {.problem title="?"}
 Prove that every compact, Hausdorff topological space is normal.
 :::
-

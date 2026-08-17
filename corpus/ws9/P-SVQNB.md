@@ -11,10 +11,10 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 
-:::{.problem title="?"}
-Let $f$ be an entire non-constant function that satisfies the functional equation
-$$f(1-z) = 1-f(z)$$
-for all $z\in\mathbb{C}$. Show that $f(\mathbb{C})=\mathbb{C}$.
+::: {.problem title="?"}
+Let $f$ be an entire non-constant function that satisfies the functional equation $$f(1-z) = 1-f(z)$$ for all $z\in\mathbb{C}$.
+Show that $f(\mathbb{C})=\mathbb{C}$.
 :::

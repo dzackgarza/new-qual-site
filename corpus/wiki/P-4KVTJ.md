@@ -12,6 +12,7 @@ classification:
   - contour-integration
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega_1$ and exterior $\Omega_2$.

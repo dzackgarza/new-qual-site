@@ -11,9 +11,9 @@ classification:
   - closure
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Show that for a topological space $X$, if every $x\in X$ has a neighborhood whose closure is a regular
-space, then $X$ is regular.
+::: {.problem title="?"}
+Show that for a topological space $X$, if every $x\in X$ has a neighborhood whose closure is a regular space, then $X$ is regular.
 :::

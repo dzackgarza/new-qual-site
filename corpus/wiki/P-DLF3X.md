@@ -10,11 +10,11 @@ classification:
   - maximum-modulus-principle
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $f$ be nonzero, analytic on a bounded region $\Omega$ and continuous
-on its closure $\overline \Omega$.
+Let $f$ be nonzero, analytic on a bounded region $\Omega$ and continuous on its closure $\overline \Omega$.
 
 Show that if $\abs{f(z)} \equiv M$ is constant for $z\in \partial \Omega$, then $f(z) \equiv Me^{i\theta}$ for some real constant $\theta$.
 :::

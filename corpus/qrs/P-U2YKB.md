@@ -12,6 +12,7 @@ classification:
   - sequences-of-functions
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

@@ -11,8 +11,9 @@ classification:
   - fundamental-group
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 State the Galois Correspondence Theorem for a path-connected, locally path-connected, and semilocally simply connected space $X$.
 :::

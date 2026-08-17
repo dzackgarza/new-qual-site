@@ -11,6 +11,7 @@ classification:
   - product-topology
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $X$ be a topological space and let

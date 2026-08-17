@@ -11,6 +11,7 @@ classification:
   - roots-of-unity
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 5.8.3"}

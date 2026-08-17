@@ -12,6 +12,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: true
 ---
 
 Let $f$ be a continuous real-valued function on $[0,1]$.
@@ -48,12 +49,13 @@ Therefore, we have that there exists $\xi\in[0,1]$ such that $\int_0^1 x^4 f(x)d
 > **AI-Generated Solution**
 
 <1>1. Let $m = \min_{[0,1]} f$ and $M = \max_{[0,1]} f$.
-    Proof: $f$ is continuous on the compact set $[0,1]$, so it attains its extrema.
+Proof: $f$ is continuous on the compact set $[0,1]$, so it attains its extrema.
 <1>2. $m/5 \le \int_0^1 x^4 f(x)\,dx \le M/5$.
-    Proof: $m \le f(x) \le M$ for all $x$, and $x^4 \ge 0$, so $m x^4 \le x^4 f(x) \le M x^4$; integrating and using $\int_0^1 x^4\,dx = 1/5$ gives the claim.
+Proof: $m \le f(x) \le M$ for all $x$, and $x^4 \ge 0$, so $m x^4 \le x^4 f(x) \le M x^4$; integrating and using $\int_0^1 x^4\,dx = 1/5$ gives the claim.
 <1>3. $5\int_0^1 x^4 f \in [m, M] = f([0,1])$.
-    Proof: by <1>2, $5\int_0^1 x^4 f \in [m, M]$. Since $f$ is continuous, its image $f([0,1])$ is the interval $[m, M]$ (intermediate value theorem / connectedness).
+Proof: by <1>2, $5\int_0^1 x^4 f \in [m, M]$.
+Since $f$ is continuous, its image $f([0,1])$ is the interval $[m, M]$ (intermediate value theorem / connectedness).
 <1>4. There is $\xi \in [0,1]$ with $\int_0^1 x^4 f(x)\,dx = \frac15 f(\xi)$.
-    Proof: by <1>3, $5\int_0^1 x^4f = f(\xi)$ for some $\xi \in [0,1]$.
+Proof: by <1>3, $5\int_0^1 x^4f = f(\xi)$ for some $\xi \in [0,1]$.
 <1>5. Q.E.D.
 :::

@@ -12,6 +12,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Laurent expanding tricky exponentials"}
 Find a Laurent expansion for

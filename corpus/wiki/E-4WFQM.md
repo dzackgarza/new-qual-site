@@ -13,6 +13,7 @@ classification:
   - meromorphic-functions
 relations: []
 review: draft
+solved: false
 ---
 :::{.exercise title="?"}
 Show that

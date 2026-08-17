@@ -13,6 +13,7 @@ classification:
   - entire-functions
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

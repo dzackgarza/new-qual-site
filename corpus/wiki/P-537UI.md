@@ -12,6 +12,7 @@ classification:
   - galois-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

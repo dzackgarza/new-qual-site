@@ -12,6 +12,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="?"}
 Suppose $f$ is analytic in an open set containing the unit disc $\mathbb D$ and $|f(z)| =1$ when $|z|$=1. Show that either $f(z) = e^{i \theta}$ for some $\theta \in \mathbb R$ or there are

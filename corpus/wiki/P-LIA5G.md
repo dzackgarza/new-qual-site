@@ -12,6 +12,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}

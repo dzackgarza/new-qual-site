@@ -12,6 +12,7 @@ classification:
   - harmonic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show that if $\Re(f(z)) \geq 0$ for all $z\in \CC$, then $f$ is constant.

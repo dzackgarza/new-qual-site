@@ -10,8 +10,9 @@ classification:
   - covering-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Explicitly prove that $\mathbb R$ is that universal cover of $S^1$.
 :::

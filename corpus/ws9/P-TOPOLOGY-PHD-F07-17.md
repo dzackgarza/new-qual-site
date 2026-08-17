@@ -11,8 +11,10 @@ classification:
   - cell-complexes
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Compute the first three homology groups of the hollow sphere $S^2$. You may use simplicial theory and a triangulation but do not simply say that $H_1(S^2)$ is the abelianization of $\pi_1(S^2)$.
+::: {.problem title="?"}
+Compute the first three homology groups of the hollow sphere $S^2$.
+You may use simplicial theory and a triangulation but do not simply say that $H_1(S^2)$ is the abelianization of $\pi_1(S^2)$.
 :::

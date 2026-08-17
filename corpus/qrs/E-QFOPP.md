@@ -11,6 +11,7 @@ classification:
   - measure-theory
 relations: []
 review: draft
+solved: true
 ---
 
 ::: exercise
@@ -21,27 +22,24 @@ review: draft
 > **AI-Generated Solution**
 
 <1>1. It suffices to prove the claim for non-negative measurable $f$: the general $f \in L^1$ case follows by linearity on positive and negative parts.
-    Proof: $\int \tau_h f = \int \tau_h f^+ - \int \tau_h f^-$, and $\tau_h(f^\pm) = (\tau_h f)^\pm$.
+Proof: $\int \tau_h f = \int \tau_h f^+ - \int \tau_h f^-$, and $\tau_h(f^\pm) = (\tau_h f)^\pm$.
 
 <1>2. The claim holds for indicators: $\int \tau_h \chi_E = m(E - h) = m(E)$.
-    Proof: $\tau_h\chi_E(x) = \chi_E(x + h)$, which equals $1$ iff $x \in E - h$; so $\tau_h\chi_E = \chi_{E - h}$ and $m(E - h) = m(E)$ by translation invariance of Lebesgue measure.
+Proof: $\tau_h\chi_E(x) = \chi_E(x + h)$, which equals $1$ iff $x \in E - h$; so $\tau_h\chi_E = \chi_{E - h}$ and $m(E - h) = m(E)$ by translation invariance of Lebesgue measure.
 
 <1>3. The claim holds for non-negative simple functions $s = \sum_i a_i\chi_{E_i}$.
-    Proof: $\int \tau_h s = \sum_i a_i\int \tau_h\chi_{E_i} = \sum_i a_i m(E_i) = \int s$ by <1>2 and linearity.
+Proof: $\int \tau_h s = \sum_i a_i\int \tau_h\chi_{E_i} = \sum_i a_i m(E_i) = \int s$ by <1>2 and linearity.
 
 <1>4. The claim holds for all non-negative measurable $f$.
-    <2>1. Choose simple functions $s_k \nearrow f$ pointwise.
-        Proof: standard approximation of a non-negative measurable function by simple functions.
-    <2>2. $\tau_h s_k \nearrow \tau_h f$ pointwise.
-        Proof: translation is a bijection of $\RR^n$ and $s_k \nearrow f$.
-    <2>3. $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
-        Proof: monotone convergence applied to <2>2, then <1>3, then monotone convergence applied to <2>1.
-    <2>4. Q.E.D.
-        Proof: <2>3.
+<2>1. Choose simple functions $s_k \nearrow f$ pointwise.
+Proof: standard approximation of a non-negative measurable function by simple functions.
+<2>2. $\tau_h s_k \nearrow \tau_h f$ pointwise.
+Proof: translation is a bijection of $\RR^n$ and $s_k \nearrow f$.
+<2>3. $\int \tau_h f = \lim_k \int \tau_h s_k = \lim_k \int s_k = \int f$.
+Proof: monotone convergence applied to <2>2, then <1>3, then monotone convergence applied to <2>1. <2>4. Q.E.D. Proof: <2>3.
 
 <1>5. The claim holds for all $f \in L^1$.
-    Proof: by <1>1, apply <1>4 to $f^+$ and $f^-$, both non-negative and integrable.
+Proof: by <1>1, apply <1>4 to $f^+$ and $f^-$, both non-negative and integrable.
 
-<1>6. Q.E.D.
-    Proof: <1>4 covers non-negative measurable $f$ and <1>5 covers signed integrable $f$.
+<1>6. Q.E.D. Proof: <1>4 covers non-negative measurable $f$ and <1>5 covers signed integrable $f$.
 :::

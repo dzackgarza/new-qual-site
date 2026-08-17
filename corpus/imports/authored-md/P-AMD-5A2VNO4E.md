@@ -12,6 +12,7 @@ classification:
   - classification
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem}

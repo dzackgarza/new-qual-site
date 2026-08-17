@@ -13,6 +13,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f = u + iv$ be an entire function such that $\Re(f(x+iy))$ is polynomial in $x$ and $y$.

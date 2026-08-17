@@ -12,6 +12,7 @@ classification:
   - characteristic
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

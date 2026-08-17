@@ -12,6 +12,7 @@ classification:
   - projective-modules
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

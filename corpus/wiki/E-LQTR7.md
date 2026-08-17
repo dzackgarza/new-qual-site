@@ -11,6 +11,7 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $S\definedas \theset{z\in \DD\suchthat \Im(z) \geq 0}$.

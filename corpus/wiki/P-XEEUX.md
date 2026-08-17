@@ -11,6 +11,7 @@ classification:
   - uniform-continuity
 relations: []
 review: draft
+solved: true
 ---
 Consider the function $f(x) = \frac{x}{1-x^2}$,
 $x \in (0,1)$.

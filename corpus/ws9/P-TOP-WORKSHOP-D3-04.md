@@ -12,8 +12,9 @@ classification:
   - metric-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Show that if the metric space $(X,d)$ is separable, then the metric topology on $X$ is second countable.
 :::

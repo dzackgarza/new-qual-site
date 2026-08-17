@@ -11,10 +11,10 @@ classification:
   - convergence-of-integrals
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 
 ![](../../assets/20_Real_Analysis/020_Integration/figures/2021-11-27_20-59-05.png)
-
 :::
-

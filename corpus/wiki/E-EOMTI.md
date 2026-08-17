@@ -13,6 +13,7 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="$\log(x) / (1+x^2)^2$"}
 \[

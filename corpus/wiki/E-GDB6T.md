@@ -13,6 +13,7 @@ classification:
   - hausdorff-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise

@@ -12,6 +12,7 @@ classification:
   - covering-spaces
 relations: []
 review: draft
+solved: true
 ---
 Show that any continuous map $f : \RP^2 \to S^1 \times S^1$ is necessarily null-homotopic.
 

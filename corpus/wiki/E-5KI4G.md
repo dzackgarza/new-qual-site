@@ -12,6 +12,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Determine where the following real-valued function is or is not uniformly convergent:

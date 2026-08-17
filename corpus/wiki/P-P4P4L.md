@@ -13,6 +13,7 @@ classification:
   - manifolds
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

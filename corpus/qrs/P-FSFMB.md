@@ -12,6 +12,7 @@ classification:
   - burnside-s-lemma
 relations: []
 review: draft
+solved: true
 ---
 For a finite group $G$, let $c(G)$ denote the number of conjugacy classes of $G$.
 

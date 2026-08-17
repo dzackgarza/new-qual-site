@@ -12,6 +12,7 @@ classification:
   - meromorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Cancelling poles"}
 Let $f$ be meromorphic on $\DD$ with no poles on $\bd\DD$.

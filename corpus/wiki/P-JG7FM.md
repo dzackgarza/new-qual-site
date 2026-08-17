@@ -12,6 +12,7 @@ classification:
   - galois-theory
 relations: []
 review: draft
+solved: true
 ---
 Let $n\geq 3$ and $\zeta_n$ be a primitive $n$th root of unity. Show that $[\QQ(\zeta_n + \zeta_n\inv): \QQ] = \phi(n)/2$ for $\phi$ the totient function.
 

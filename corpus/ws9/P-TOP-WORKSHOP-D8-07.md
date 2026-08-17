@@ -11,8 +11,10 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-(Purdue Jan ’07) Let $p:E\to B$ be a covering map. Prove that $p$ takes open sets to open sets.
+::: {.problem title="?"}
+(Purdue Jan ’07) Let $p:E\to B$ be a covering map.
+Prove that $p$ takes open sets to open sets.
 :::

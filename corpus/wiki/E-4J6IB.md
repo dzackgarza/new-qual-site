@@ -11,6 +11,7 @@ classification:
   - singularities
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="When bounds imply removability"}
 Suppose $f$ is holomorphic with $z_0 = 0$ an isolated singularity, and suppose there is some neighborhood of $0$ on which

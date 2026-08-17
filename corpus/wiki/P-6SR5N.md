@@ -13,6 +13,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Show 

@@ -12,10 +12,11 @@ classification:
   - surfaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Express a Klein bottle as the union of two annuli. 
+Express a Klein bottle as the union of two annuli.
 
 Use the Mayer Vietoris sequence and this decomposition to compute its homology.
 :::

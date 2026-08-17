@@ -13,6 +13,7 @@ classification:
   - hyperbolic-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\xi\in \RR$, evaluate

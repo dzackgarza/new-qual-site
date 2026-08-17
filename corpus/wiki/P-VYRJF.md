@@ -11,6 +11,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 Compute the following limit and justify your calculations:
 \[

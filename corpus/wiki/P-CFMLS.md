@@ -11,6 +11,7 @@ classification:
   - measure-theory
 relations: []
 review: draft
+solved: true
 ---
 Define
 $$

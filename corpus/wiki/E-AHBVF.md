@@ -11,6 +11,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Cosine expansion in $z\inv$"}
 Expand $f(z) = z^2\cos\qty{z\over 3}$ about $z=0$.

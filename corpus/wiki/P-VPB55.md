@@ -12,6 +12,7 @@ classification:
   - rational-canonical-form
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

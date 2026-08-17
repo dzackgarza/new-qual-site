@@ -13,6 +13,7 @@ classification:
   - lp-spaces
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

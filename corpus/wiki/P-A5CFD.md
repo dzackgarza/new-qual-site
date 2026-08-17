@@ -13,6 +13,7 @@ classification:
   - product-topology
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="?"}
 If $f$ is a function from $X$ to $Y$ , consider the graph 

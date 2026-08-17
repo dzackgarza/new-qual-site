@@ -13,6 +13,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Suppose $f$ is entire and for every $z$,

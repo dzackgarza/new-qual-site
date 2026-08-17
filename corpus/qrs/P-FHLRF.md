@@ -12,6 +12,7 @@ classification:
   - product-topology
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

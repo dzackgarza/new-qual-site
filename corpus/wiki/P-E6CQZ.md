@@ -12,6 +12,7 @@ classification:
   - orbit-stabilizer
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

@@ -11,8 +11,10 @@ classification:
   - point-set
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Let $B$ be an open subset of a topological space $X$. Prove that a subset $A\subset B$ is relatively open in $B$ if and only if $A$ is open in $X$.
+::: {.problem title="?"}
+Let $B$ be an open subset of a topological space $X$.
+Prove that a subset $A\subset B$ is relatively open in $B$ if and only if $A$ is open in $X$.
 :::

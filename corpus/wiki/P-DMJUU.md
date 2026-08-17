@@ -12,6 +12,7 @@ classification:
   - characteristic
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 5.6.11"}

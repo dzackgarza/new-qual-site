@@ -12,6 +12,7 @@ classification:
   - contour-integration
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Evaluating integrals"}
 Evaluate the following integrals using Cauchy's integral formula:

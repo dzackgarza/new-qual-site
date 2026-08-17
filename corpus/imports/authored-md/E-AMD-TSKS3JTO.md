@@ -12,6 +12,7 @@ classification:
   - irreducibility-criteria
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise}

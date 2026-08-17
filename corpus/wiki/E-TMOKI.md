@@ -12,6 +12,7 @@ classification:
   - subspace-topology
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise

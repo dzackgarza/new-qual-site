@@ -13,6 +13,7 @@ classification:
   - liouville-s-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"} 
 Show that if $f$ is entire and $\abs{f(z)} \in \bigo(\abs{z}^p)$ for $\abs{z}$ sufficiently large, then $f$ is a polynomial of degree at most $\floor{p}$.

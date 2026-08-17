@@ -12,6 +12,7 @@ classification:
   - l1
 relations: []
 review: draft
+solved: true
 ---
 a.
 Show that if $f$ is continuous with compact support on $\RR$, then 

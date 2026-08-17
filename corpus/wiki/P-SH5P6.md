@@ -12,6 +12,7 @@ classification:
   - separability
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 5.4.1"}

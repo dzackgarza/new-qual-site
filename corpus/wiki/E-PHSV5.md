@@ -12,6 +12,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show that if $f \in \FF_p[x]^{\irr}$ is degree $d$,

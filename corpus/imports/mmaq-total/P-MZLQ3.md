@@ -10,10 +10,10 @@ classification:
   - groups
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $p$, $q$ be two distinct primes. Prove that there is at most one
-non-abelian group of order $pq$ and describe the pairs $(p,q)$
-such that there is no non-abelian group of order $pq$.
+Let $p$, $q$ be two distinct primes.
+Prove that there is at most one non-abelian group of order $pq$ and describe the pairs $(p,q)$ such that there is no non-abelian group of order $pq$.
 :::

@@ -10,6 +10,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: true
 ---
 
 What is the degree of a field extension?

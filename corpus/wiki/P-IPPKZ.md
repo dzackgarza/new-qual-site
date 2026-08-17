@@ -12,6 +12,7 @@ classification:
   - integral-domains
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="Spring 2021"}
 Suppose that $f(x) \in (\ZZ/n\ZZ)[x]$ is a zero divisor.

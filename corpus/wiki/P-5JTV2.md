@@ -12,6 +12,7 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

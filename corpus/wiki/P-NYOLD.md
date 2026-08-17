@@ -13,6 +13,7 @@ classification:
   - differentiation
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

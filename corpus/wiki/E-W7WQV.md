@@ -12,8 +12,9 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
-Show that any holomorphic function $f$ can be uniformly approximated by polynomials.
 
+::: {.exercise title="?"}
+Show that any holomorphic function $f$ can be uniformly approximated by polynomials.
 :::

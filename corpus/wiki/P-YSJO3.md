@@ -12,6 +12,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Explicit Rouche, $2\mathbb{D}$"}
 Find the number of zeros in $\abs{z} < 2$ of

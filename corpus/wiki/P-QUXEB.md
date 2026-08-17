@@ -12,6 +12,7 @@ classification:
   - series-of-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Prove the following:

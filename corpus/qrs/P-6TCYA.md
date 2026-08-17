@@ -12,6 +12,7 @@ classification:
   - class-equation
 relations: []
 review: draft
+solved: true
 ---
 Let $P$ be a finite $p\dash$group.
 

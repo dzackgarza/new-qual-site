@@ -11,6 +11,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

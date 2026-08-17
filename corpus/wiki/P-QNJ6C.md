@@ -12,6 +12,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
 Let $f(x, y)$ on $[-1, 1]^2$ be defined by 
 $$

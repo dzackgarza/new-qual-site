@@ -11,6 +11,7 @@ classification:
   - fubini-tonelli
 relations: []
 review: draft
+solved: false
 ---
 :::{.warnings}
 This problem may be much harder than expected.

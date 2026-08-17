@@ -12,6 +12,7 @@ classification:
   - isomorphism-theorems
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise}

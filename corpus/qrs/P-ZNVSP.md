@@ -12,6 +12,7 @@ classification:
   - open-mapping-theorem
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

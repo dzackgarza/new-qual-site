@@ -11,9 +11,9 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-- Prove the following implications of separation axioms, and show that they are strict:
-![](../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520150233.png)
+- Prove the following implications of separation axioms, and show that they are strict: ![](../../assets/Workshops/Topology/_attachments/Pasted%20image%2020210520150233.png)
 :::

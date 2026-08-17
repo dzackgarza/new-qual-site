@@ -12,6 +12,7 @@ classification:
   - maximum-modulus-principle
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}

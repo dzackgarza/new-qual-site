@@ -14,6 +14,7 @@ classification:
   - riemann-surfaces
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Meromorphic functions on $\mathbb{CP}^1$ "}
 Show that the only meromorphic functions on $\CP^1$ are rational functions.

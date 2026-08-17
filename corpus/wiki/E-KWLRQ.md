@@ -13,6 +13,7 @@ classification:
   - cauchy-estimates
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$ such that 

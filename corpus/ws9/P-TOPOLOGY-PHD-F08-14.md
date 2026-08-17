@@ -11,9 +11,9 @@ classification:
   - degree
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove that if $f,g:X\to S^{n-1}$ are continuous and both not surjective then $f$ is homotopic to $g$.
 :::
-

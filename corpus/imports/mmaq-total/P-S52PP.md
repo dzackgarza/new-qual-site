@@ -12,15 +12,16 @@ classification:
   - modules
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $R$ be a commutative integral domain. Show that the following
-are equivalent:
+Let $R$ be a commutative integral domain.
+Show that the following are equivalent:
 
--   $R$ is a field;
+- $R$ is a field;
 
--   $R$ is a semi-simple ring;
+- $R$ is a semi-simple ring;
 
--   Any $R$-module is projective.
+- Any $R$-module is projective.
 :::

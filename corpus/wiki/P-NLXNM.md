@@ -12,6 +12,7 @@ classification:
   - group-actions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem}
 Let $G$ be a finite group and $p$ a prime number. Let

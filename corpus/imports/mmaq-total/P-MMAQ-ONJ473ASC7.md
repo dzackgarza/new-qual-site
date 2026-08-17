@@ -12,6 +12,7 @@ classification:
   - riesz-representation
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

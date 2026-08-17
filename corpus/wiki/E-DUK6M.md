@@ -12,6 +12,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="$xe^{2ix}/x^2-1$ "}
 \[

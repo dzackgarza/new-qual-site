@@ -12,6 +12,7 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

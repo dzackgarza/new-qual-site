@@ -12,6 +12,7 @@ classification:
   - direct-products
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 4.2.9"}

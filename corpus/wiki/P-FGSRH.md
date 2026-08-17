@@ -12,6 +12,7 @@ classification:
   - convergence
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Fall 2006, 7"}

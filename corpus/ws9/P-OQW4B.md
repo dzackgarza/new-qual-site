@@ -10,6 +10,7 @@ classification:
   - roots-of-unity
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="?"}

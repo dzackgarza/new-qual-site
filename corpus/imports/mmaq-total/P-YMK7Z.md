@@ -11,10 +11,10 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $F$ be a field, and let $R$ be the subring of $F[X]$ of
-polynomials with $X$ coefficient equal to $0$. Prove that $R$ is not
-a UFD.
+Let $F$ be a field, and let $R$ be the subring of $F[X]$ of polynomials with $X$ coefficient equal to $0$.
+Prove that $R$ is not a UFD.
 :::

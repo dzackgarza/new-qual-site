@@ -11,6 +11,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $n\in \ZZ^{\geq 0}$ and show that the equation

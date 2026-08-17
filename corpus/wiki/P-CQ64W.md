@@ -12,6 +12,7 @@ classification:
   - homology
 relations: []
 review: draft
+solved: true
 ---
 Describe the universal cover of $X = (S^1 \cross S^1) \vee S^2$ and compute $\pi_2(X)$.
 

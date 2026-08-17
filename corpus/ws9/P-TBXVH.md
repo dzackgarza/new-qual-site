@@ -11,6 +11,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="?"}

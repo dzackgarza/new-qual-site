@@ -11,6 +11,7 @@ classification:
   - metric-spaces
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}
@@ -22,10 +23,13 @@ If $K\cap F=\varnothing$, prove that there exists an $\epsilon>0$ so that $d(k,f
 > **AI-Generated Solution**
 
 <1>1. The function $x \mapsto d(x, F)$ is continuous.
-    Proof: $|d(x,F) - d(x',F)| \le d(x,x')$ by the triangle inequality (for any $f \in F$, $d(x,f) \le d(x,x') + d(x',f)$, so $d(x,F) \le d(x,x') + d(x',F)$, and symmetrically), so it is 1-Lipschitz, hence continuous.
+Proof: $|d(x,F) - d(x',F)| \le d(x,x')$ by the triangle inequality (for any $f \in F$, $d(x,f) \le d(x,x') + d(x',f)$, so $d(x,F) \le d(x,x') + d(x',F)$, and symmetrically), so it is 1-Lipschitz, hence continuous.
 <1>2. $d(\cdot, F)$ attains its minimum on $K$.
-    Proof: $K$ is compact and $x \mapsto d(x,F)$ is continuous (<1>1), so it attains a minimum at some $k_0 \in K$.
+Proof: $K$ is compact and $x \mapsto d(x,F)$ is continuous (<1>1), so it attains a minimum at some $k_0 \in K$.
 <1>3. The minimum is positive.
-    Proof: suppose $d(k_0, F) = 0$. Then there is a sequence $(f_n)$ in $F$ with $d(k_0, f_n) \to 0$, i.e. $f_n \to k_0$. Since $F$ is closed, $k_0 \in F$, contradicting $K \cap F = \varnothing$. Hence $\epsilon := d(k_0, F) > 0$, and by minimality $d(k, F) \ge \epsilon$ for every $k \in K$, i.e. $d(k, f) \ge \epsilon$ for all $k \in K$, $f \in F$.
+Proof: suppose $d(k_0, F) = 0$.
+Then there is a sequence $(f_n)$ in $F$ with $d(k_0, f_n) \to 0$, i.e. $f_n \to k_0$.
+Since $F$ is closed, $k_0 \in F$, contradicting $K \cap F = \varnothing$.
+Hence $\epsilon := d(k_0, F) > 0$, and by minimality $d(k, F) \ge \epsilon$ for every $k \in K$, i.e. $d(k, f) \ge \epsilon$ for all $k \in K$, $f \in F$.
 <1>4. Q.E.D.
 :::

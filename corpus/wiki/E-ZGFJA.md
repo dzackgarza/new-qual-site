@@ -12,6 +12,7 @@ classification:
   - maximum-modulus-principle
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="More juggling"}
 Suppose $f:\DD\to \DD$ with $f(0) = 0$ and that there exists an $r\in (0, 1)$ with $f(r) = f(-r) = 0$.

@@ -11,12 +11,13 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
 Determine the Galois groups of the following polynomials over $\mathbb Q$.
 
--   $f(x)=x^4+4x^2+1$
+- $f(x)=x^4+4x^2+1$
 
--   $f(x)=x^4+4x^2-5$.
+- $f(x)=x^4+4x^2-5$.
 :::

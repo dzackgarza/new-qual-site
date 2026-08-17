@@ -12,6 +12,7 @@ classification:
   - cyclic-groups
 relations: []
 review: draft
+solved: true
 ---
 Let $F$ be a finite field with $q$ elements.
 Let $n$ be a positive integer relatively prime to $q$ and let $\omega$ be a primitive $n$th root of unity in an extension field of $F$.

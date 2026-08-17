@@ -12,6 +12,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Applying Jordan's lemma"}
 Compute

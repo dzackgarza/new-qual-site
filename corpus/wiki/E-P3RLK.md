@@ -10,6 +10,7 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: true
 ---
 
 Let $A\subset X$ with $A$ closed and $X$ compact, and show that $A$ is compact.

@@ -11,8 +11,10 @@ classification:
   - homology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Give a $\Delta$-complex structure for a standard 2-simplex $\Delta$ and write down its chain complex. Explicitly describe the boundary homomorphisms.
+::: {.problem title="?"}
+Give a $\Delta$-complex structure for a standard 2-simplex $\Delta$ and write down its chain complex.
+Explicitly describe the boundary homomorphisms.
 :::

@@ -30,6 +30,7 @@ classification:
   - {topic}
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
@@ -103,7 +104,9 @@ def test_a_subject_guide_panel_lists_only_that_subject(tmp_path: Path) -> None:
     assert panels[0].attrs["data-count"] == "1"
 
 
-def test_a_panel_naming_several_topics_lists_a_problem_carrying_any_of_them(tmp_path: Path) -> None:
+def test_a_panel_naming_several_topics_lists_a_problem_carrying_any_of_them(
+    tmp_path: Path,
+) -> None:
     work = fixture_repo(
         tmp_path,
         {

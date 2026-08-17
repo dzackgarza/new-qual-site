@@ -12,6 +12,7 @@ classification:
   - cosets-and-lagrange
 relations: []
 review: draft
+solved: true
 ---
 Let $G$ be a finite group and $\pi: G\to \sym(G)$ the Cayley representation.
 

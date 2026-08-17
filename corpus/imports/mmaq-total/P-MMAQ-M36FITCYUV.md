@@ -13,6 +13,7 @@ classification:
   - fixed-points
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

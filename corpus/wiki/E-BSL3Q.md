@@ -12,8 +12,9 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
-Show that if $f$ is holomorphic on $\DD$ then $f$ has a power series expansion that converges uniformly on every compact $K\subset \DD$.
 
+::: {.exercise title="?"}
+Show that if $f$ is holomorphic on $\DD$ then $f$ has a power series expansion that converges uniformly on every compact $K\subset \DD$.
 :::

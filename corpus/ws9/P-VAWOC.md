@@ -11,6 +11,7 @@ classification:
   - power-series
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="?"}

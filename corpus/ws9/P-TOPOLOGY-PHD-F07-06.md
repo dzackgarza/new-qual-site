@@ -11,8 +11,10 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Define compactness for a topological space. Prove from your definition that the closed interval $[0,1]$ is compact.
+::: {.problem title="?"}
+Define compactness for a topological space.
+Prove from your definition that the closed interval $[0,1]$ is compact.
 :::

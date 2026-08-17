@@ -11,6 +11,7 @@ classification:
   - borel-cantelli
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

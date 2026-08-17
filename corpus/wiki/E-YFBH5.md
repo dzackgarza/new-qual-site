@@ -13,6 +13,7 @@ classification:
   - maximum-modulus-principle
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $f:\DD\to\DD$ is analytic, has a single zero of order $k$ at $z=0$, and satisfies $\lim_{\abs z \to 1} \abs{f(z)} = 1$.

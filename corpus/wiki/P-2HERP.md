@@ -12,6 +12,7 @@ classification:
   - bilinear-forms
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

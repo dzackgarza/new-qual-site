@@ -13,6 +13,7 @@ classification:
   - uniform-convergence
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $0<r<1$. Show that polynomials

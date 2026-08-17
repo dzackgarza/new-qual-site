@@ -11,8 +11,9 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove that $\mathbb R$ is not compact.
 :::

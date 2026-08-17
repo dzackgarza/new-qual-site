@@ -10,6 +10,7 @@ classification:
   - closure
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise

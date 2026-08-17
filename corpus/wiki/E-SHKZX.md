@@ -13,6 +13,7 @@ classification:
   - identity-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 1.

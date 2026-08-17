@@ -13,6 +13,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Computing residues: $1/z^2\sin(z)$"}
 Compute

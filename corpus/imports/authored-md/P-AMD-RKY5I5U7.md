@@ -12,6 +12,7 @@ classification:
   - homeomorphisms
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

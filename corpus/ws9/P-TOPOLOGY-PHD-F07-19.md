@@ -12,8 +12,10 @@ classification:
   - van-kampen
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-For the sake of this problem a manifold of dimension $n$ will be defined as a topological space in which each point has a neighborhood that is homeomorphic to $\mathbb R^n$. If $M$ is a connected manifold of dimension at least $3$ and $q\in M$, show that $\pi_1(M-\{q\})$ is isomorphic to $\pi_1(M)$.
+::: {.problem title="?"}
+For the sake of this problem a manifold of dimension $n$ will be defined as a topological space in which each point has a neighborhood that is homeomorphic to $\mathbb R^n$.
+If $M$ is a connected manifold of dimension at least $3$ and $q\in M$, show that $\pi_1(M-\{q\})$ is isomorphic to $\pi_1(M)$.
 :::

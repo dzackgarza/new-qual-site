@@ -12,6 +12,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $g\in L^\infty([0, 1])$

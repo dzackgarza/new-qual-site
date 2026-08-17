@@ -12,6 +12,7 @@ classification:
   - ideals
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="Jacobson radical is bigger than the nilradical"}
 The nilradical is contained in the Jacobson radical, i.e.

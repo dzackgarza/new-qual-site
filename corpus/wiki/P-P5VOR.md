@@ -13,6 +13,7 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $a \in \mathbb{R}$ with $0<a<3$. Evaluate 

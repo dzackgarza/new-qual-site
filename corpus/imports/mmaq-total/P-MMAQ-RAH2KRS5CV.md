@@ -12,6 +12,7 @@ classification:
   - completeness
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

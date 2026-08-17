@@ -12,6 +12,7 @@ classification:
   - factorization
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

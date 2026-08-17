@@ -12,6 +12,7 @@ classification:
   - power-series
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Expansion at an essential singularity"}
 Find a Laurent expansion at $z=0$ for

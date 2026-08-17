@@ -13,6 +13,7 @@ classification:
   - induction
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

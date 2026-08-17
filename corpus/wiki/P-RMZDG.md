@@ -13,6 +13,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:

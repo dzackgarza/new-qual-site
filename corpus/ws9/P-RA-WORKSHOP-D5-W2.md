@@ -11,6 +11,7 @@ classification:
   - mean-value-theorem
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}
@@ -21,10 +22,9 @@ review: draft
 > **AI-Generated Solution**
 
 <1>1. Show $f$ is differentiable everywhere with derivative $0$.
-    Proof: fix $y \in \mathbb{R}$. For $x \ne y$,
-    \[\left|\frac{f(x) - f(y)}{x - y}\right| \le \frac{(x-y)^2}{|x-y|} = |x - y| \to 0 \quad \text{as } x \to y.\]
-    Hence $f'(y) = \lim_{x\to y}\frac{f(x)-f(y)}{x-y}$ exists and equals $0$, for every $y$.
+Proof: fix $y \in \mathbb{R}$.
+For $x \ne y$, \[\left|\frac{f(x) - f(y)}{x - y}\right| \le \frac{(x-y)^2}{|x-y|} = |x - y| \to 0 \quad \text{as } x \to y.\] Hence $f'(y) = \lim_{x\to y}\frac{f(x)-f(y)}{x-y}$ exists and equals $0$, for every $y$.
 <1>2. Apply the zero-derivative theorem.
-    Proof: by the mean value theorem (D5-W1), a function differentiable on $\mathbb{R}$ with $f' \equiv 0$ is constant.
+Proof: by the mean value theorem (D5-W1), a function differentiable on $\mathbb{R}$ with $f' \equiv 0$ is constant.
 <1>3. Q.E.D.
 :::

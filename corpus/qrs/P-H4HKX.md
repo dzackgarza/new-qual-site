@@ -11,6 +11,7 @@ classification:
   - contour-integration
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

@@ -10,6 +10,7 @@ classification:
   - fubini-tonelli
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

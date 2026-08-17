@@ -11,6 +11,7 @@ classification:
   - blaschke-factors
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Show that if $f: D(0, R) \rightarrow \mathbb{C}$ is holomorphic, with $|f(z)| \leq M$ for some $M>0$, then

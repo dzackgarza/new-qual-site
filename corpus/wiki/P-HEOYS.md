@@ -12,6 +12,7 @@ classification:
   - permutations
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

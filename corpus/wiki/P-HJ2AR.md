@@ -12,6 +12,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: true
 ---
 Define
 \[

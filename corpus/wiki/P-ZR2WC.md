@@ -11,6 +11,7 @@ classification:
   - riemann-integrability
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

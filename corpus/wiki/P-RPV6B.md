@@ -12,6 +12,7 @@ classification:
   - maximum-modulus-principle
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if it satisfies any of the following conditions:

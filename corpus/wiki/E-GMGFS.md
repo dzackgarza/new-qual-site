@@ -13,6 +13,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Expansion at an essential singularity"}
 Find a Laurent expansion about $z=0$ of

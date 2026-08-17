@@ -12,9 +12,10 @@ classification:
   - homotopy
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Give the definitions of deformation retract and strong deformation retract for topological spaces. Compute the fundamental group of $\mathbb R^3-C$ where $C$ denotes the circle $x^2+y^2=1$, $z=0$.
+::: {.problem title="?"}
+Give the definitions of deformation retract and strong deformation retract for topological spaces.
+Compute the fundamental group of $\mathbb R^3-C$ where $C$ denotes the circle $x^2+y^2=1$, $z=0$.
 :::
-

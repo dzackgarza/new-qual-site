@@ -12,6 +12,7 @@ classification:
   - entire-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Laurent expanding exponentials"}
 Find a Laurent expansion that converges for $\abs{z} > 1$ of

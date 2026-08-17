@@ -12,6 +12,7 @@ classification:
   - sequences-of-numbers
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="?"}
 Let $a_n\neq 0$ and show that

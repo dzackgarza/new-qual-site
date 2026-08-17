@@ -14,6 +14,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Classifying singularities"}
 Classify the singularities at $z=0$ of the following

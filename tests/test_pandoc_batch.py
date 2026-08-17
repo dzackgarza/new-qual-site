@@ -22,6 +22,7 @@ classification:
   topics: [groups]
 relations: []
 review: draft
+solved: false
 ---
 
 # Shared heading {{#shared}}

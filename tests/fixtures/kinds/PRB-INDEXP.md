@@ -10,8 +10,10 @@ classification:
   - groups
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem
-Let $G$ be a finite $p\dash$group and $H \leq G$ with $[G:H] = p$. Show $H \normal G$.
+Let $G$ be a finite $p\dash$group and $H \leq G$ with $[G:H] = p$.
+Show $H \normal G$.
 :::

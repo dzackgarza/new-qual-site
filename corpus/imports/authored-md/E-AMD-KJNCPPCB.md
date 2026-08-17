@@ -12,6 +12,7 @@ classification:
   - nilpotence
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise}

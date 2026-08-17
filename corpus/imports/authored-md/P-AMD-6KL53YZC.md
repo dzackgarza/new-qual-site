@@ -11,6 +11,7 @@ classification:
   - homotopy
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem}

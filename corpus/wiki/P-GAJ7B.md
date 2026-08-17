@@ -12,6 +12,7 @@ classification:
   - group-presentations
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

@@ -10,6 +10,7 @@ classification:
   - conformal-maps
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

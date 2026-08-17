@@ -12,13 +12,13 @@ classification:
   - fundamental-group
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove by any method you know that:
 
 (a) $\mathbb R$ is not homeomorphic to $\mathbb R^2$.
 
 (b) $\mathbb R^2$ is not homeomorphic to $\mathbb R^3$.
 :::
-

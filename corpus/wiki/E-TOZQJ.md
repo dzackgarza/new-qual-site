@@ -13,6 +13,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Residue from Laurent expansion: $1/(z - \sin(z))$"}
 Use a direct Laurent expansion to show

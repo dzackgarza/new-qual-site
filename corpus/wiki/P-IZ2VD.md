@@ -12,6 +12,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: true
 ---
 Let $F = \FF_p$ , where $p$ is a prime number.
 

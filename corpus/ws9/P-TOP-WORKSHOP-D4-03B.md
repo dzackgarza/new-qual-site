@@ -12,10 +12,11 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-(Jan ’08 # B8) Suppose that $X$ is an arbitrary topological space and $Y$ is a compact space. Consider
-the projection map $\pi:X\times Y\to X$ defined by $\pi(x,y)=x$. Prove that if $X\times Y$ has the product
-topology, then $\pi$ is a closed map.
+::: {.problem title="?"}
+(Jan ’08 # B8) Suppose that $X$ is an arbitrary topological space and $Y$ is a compact space.
+Consider the projection map $\pi:X\times Y\to X$ defined by $\pi(x,y)=x$.
+Prove that if $X\times Y$ has the product topology, then $\pi$ is a closed map.
 :::

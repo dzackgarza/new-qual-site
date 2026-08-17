@@ -11,9 +11,10 @@ classification:
   - galois-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $K$ and $L$ be finite fields with $K \subseteq L$. Prove that
-$L$ is Galois over $K$ and that $\mathrm{Gal}(L/K)$ is cyclic.
+Let $K$ and $L$ be finite fields with $K \subseteq L$.
+Prove that $L$ is Galois over $K$ and that $\mathrm{Gal}(L/K)$ is cyclic.
 :::

@@ -12,6 +12,7 @@ classification:
   - characteristic
 relations: []
 review: draft
+solved: true
 ---
 Let $p$ be a prime number.
 Let $A$ be a $p \times p$ matrix over a field $F$ with 1 in all

@@ -10,6 +10,7 @@ classification:
   - liouville-s-theorem
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

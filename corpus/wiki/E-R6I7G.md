@@ -11,6 +11,7 @@ classification:
   - normal-subgroups
 relations: []
 review: draft
+solved: false
 ---
 :::{.exercise title="?"}
 Prove the "recognizing direct products" theorem.

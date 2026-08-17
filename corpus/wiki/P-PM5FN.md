@@ -12,6 +12,7 @@ classification:
   - cauchy-integral-formula
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $R>0$. Suppose $f$ is holomorphic on $\ts{z\st \abs{z} < 3R}$. Let

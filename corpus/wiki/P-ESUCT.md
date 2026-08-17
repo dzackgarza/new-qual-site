@@ -12,6 +12,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: true
 ---
 Let $\zeta_n$ denote a primitive $n$th root of 1 $\in \QQ$.
 You may assume the roots of the minimal polynomial $p_n(x)$ of $\zeta_n$ are exactly the primitive $n$th roots of 1.

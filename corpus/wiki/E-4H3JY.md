@@ -11,6 +11,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Disc to upper half-plane"}
 Find a conformal map from $\DD$ to $\HH$.

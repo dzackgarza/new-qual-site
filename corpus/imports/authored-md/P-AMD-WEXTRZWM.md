@@ -12,6 +12,7 @@ classification:
   - absolute-continuity
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem}

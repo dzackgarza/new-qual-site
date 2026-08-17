@@ -12,6 +12,7 @@ classification:
   - inner-product-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise title="?"}

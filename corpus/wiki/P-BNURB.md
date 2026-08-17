@@ -12,6 +12,7 @@ classification:
   - surfaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

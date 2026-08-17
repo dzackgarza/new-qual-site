@@ -12,6 +12,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: false
 ---
 :::{.exercise title="Schwarz-Pick Lemma"}
 Prove the following:

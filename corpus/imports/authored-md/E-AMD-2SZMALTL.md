@@ -11,6 +11,7 @@ classification:
   - nilpotent-groups
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.exercise}

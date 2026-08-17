@@ -12,8 +12,9 @@ classification:
   - surfaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 (June ’05) Show, using covering spaces, that the fundamental group of the Klein bottle is not abelian.
 :::

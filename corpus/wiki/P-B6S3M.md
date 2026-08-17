@@ -11,6 +11,7 @@ classification:
   - measure-theory
 relations: []
 review: draft
+solved: true
 ---
 Let $(X, \mathcal B, \mu)$ be a measure space with $\mu(X) = 1$ and $\{B_n\}_{n=1}^\infty$ be a sequence of $\mathcal B$-measurable subsets of $X$, and
 $$

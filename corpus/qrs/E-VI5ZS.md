@@ -12,6 +12,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show that $\del_{\log}(fg) = \del_{\log} f + \del_{\log} g$, i.e. 

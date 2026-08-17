@@ -12,6 +12,7 @@ classification:
   - stone-weierstrass
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}

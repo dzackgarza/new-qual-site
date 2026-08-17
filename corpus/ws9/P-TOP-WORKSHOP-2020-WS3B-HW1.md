@@ -10,9 +10,10 @@ classification:
   - covering-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Find the universal covers of these spaces:
 
 (a) $X=S^1$.

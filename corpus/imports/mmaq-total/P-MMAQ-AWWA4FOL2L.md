@@ -10,9 +10,11 @@ classification:
   - groups
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $G$ be a finite simple group. Assume that every proper subgroup
-of $G$ is abelian. Prove that then $G$ is cyclic of prime order.
+Let $G$ be a finite simple group.
+Assume that every proper subgroup of $G$ is abelian.
+Prove that then $G$ is cyclic of prime order.
 :::

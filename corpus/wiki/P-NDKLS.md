@@ -12,6 +12,7 @@ classification:
   - character-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

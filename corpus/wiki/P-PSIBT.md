@@ -13,15 +13,13 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: false
 ---
-:::{.problem title="?"}
+
+::: {.problem title="?"}
 Compute the following integral carefully justifying each step:
 
 \[
 \int_{0}^{\infty} \frac{\log x}{1+x^{3}} \text {. }
 \]
-
 :::
-
-
-

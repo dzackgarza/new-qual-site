@@ -13,6 +13,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="?"}
 Let $n\in \ZZ^{\geq 1}$ and $0<\theta<\pi$ and show that

@@ -13,13 +13,14 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
+
 Can every continuous function on $\bar \DD$ be uniformly approximated by polynomials in the variable $z$?
 
 > Hint: compare to Weierstrass for the real interval.
 
-
-:::{.solution}
+::: {.solution}
 No: polynomials are holomorphic and the uniform limit of holomorphic functions is holomorphic.
 However, $f(z) \da \bar{z}$ is continuous on $\bar\DD$ but not holomorphic.
 :::

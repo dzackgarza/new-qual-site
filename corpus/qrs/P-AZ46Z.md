@@ -12,6 +12,7 @@ classification:
   - tube-lemma
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="Fall 2010, 8"}
 Show that for any two topological spaces $X$ and $Y$ , $X \cross Y$ is compact if and only if both $X$ and $Y$ are compact.

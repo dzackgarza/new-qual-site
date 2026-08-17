@@ -14,6 +14,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

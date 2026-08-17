@@ -12,6 +12,7 @@ classification:
   - sequences-of-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show that if $f_n\to f$ uniformly then $\int_\gamma f_n\to \int_\gamma f$.

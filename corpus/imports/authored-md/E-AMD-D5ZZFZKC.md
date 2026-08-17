@@ -12,6 +12,7 @@ classification:
   - centralizers-and-normalizers
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.exercise}

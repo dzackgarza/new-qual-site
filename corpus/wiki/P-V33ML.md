@@ -11,6 +11,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 Let $f:\\RR^n\\to\\RR$ be measurable. Show that
 \[

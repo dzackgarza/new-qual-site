@@ -11,10 +11,13 @@ classification:
   - product-topology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Let $X$ be a set with two elements $\{a,b\}$. Give $X$ the indiscrete topology. Give $X\times\mathbb R$
-the product topology. Let $A\subset X\times\mathbb R$ be
-$(\{a\}\times[0,1])\cup(\{b\}\times(0,1))$. Prove that $A$ is compact.
+::: {.problem title="?"}
+Let $X$ be a set with two elements $\{a,b\}$.
+Give $X$ the indiscrete topology.
+Give $X\times\mathbb R$ the product topology.
+Let $A\subset X\times\mathbb R$ be $(\{a\}\times[0,1])\cup(\{b\}\times(0,1))$.
+Prove that $A$ is compact.
 :::

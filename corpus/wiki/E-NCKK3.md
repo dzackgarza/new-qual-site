@@ -11,6 +11,7 @@ classification:
   - cauchy-estimates
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\bar B(a, r)$ denote the closed disc of radius $r$ about $a\in \CC$.

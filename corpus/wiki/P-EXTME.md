@@ -12,6 +12,7 @@ classification:
   - rank-and-nullity
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="Hungerford 7.2.4"}
 \envlist

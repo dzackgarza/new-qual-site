@@ -11,6 +11,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: true
 ---
 
 What does it mean for an element to be algebraic or transcendental?

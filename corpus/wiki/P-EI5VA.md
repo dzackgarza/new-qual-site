@@ -12,6 +12,7 @@ classification:
   - burnside-s-lemma
 relations: []
 review: draft
+solved: true
 ---
 a.
 Suppose the group $G$ acts on the set $X$ . Show that the stabilizers of elements in the same orbit are conjugate.

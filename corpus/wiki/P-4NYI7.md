@@ -12,6 +12,7 @@ classification:
   - fubini-tonelli
 relations: []
 review: draft
+solved: true
 ---
 Let $f \geq 0$ be a measurable function on $\RR$.
 Show that

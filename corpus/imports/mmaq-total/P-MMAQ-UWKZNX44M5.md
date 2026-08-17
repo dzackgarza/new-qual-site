@@ -10,14 +10,14 @@ classification:
   - groups
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-1.  Let $G$ be a group, and $Z(G)$ the center of $G$. Prove that if
-    $G/Z(G)$ is cyclic, then $G$ is abelian.
+1. Let $G$ be a group, and $Z(G)$ the center of $G$.
+   Prove that if $G/Z(G)$ is cyclic, then $G$ is abelian.
 
-2.  Prove that a group of order $p^n$, where $p$ is a prime and
-    $n \geq 1$, has non-trivial center.
+2. Prove that a group of order $p^n$, where $p$ is a prime and $n \geq 1$, has non-trivial center.
 
-3.  Prove that a group of order $p^2$ must be abelian.
+3. Prove that a group of order $p^2$ must be abelian.
 :::

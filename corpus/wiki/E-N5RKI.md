@@ -11,8 +11,9 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
-Show that if $\abs{f} = 0$ on $\bd \Omega$ then either $f$ is constant or $f$ has a zero in $\Omega$.
 
+::: {.exercise title="?"}
+Show that if $\abs{f} = 0$ on $\bd \Omega$ then either $f$ is constant or $f$ has a zero in $\Omega$.
 :::

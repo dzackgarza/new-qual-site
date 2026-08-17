@@ -10,10 +10,9 @@ classification:
   - canonical-forms
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Use the rational canonical form to show that any square matrix $M$ over
-a field $k$ is similar to its transpose $M^t$, recalling that $p(M)=0$
-for some $p\in k[t]$ if and only if $p(M^t)=0$.
+Use the rational canonical form to show that any square matrix $M$ over a field $k$ is similar to its transpose $M^t$, recalling that $p(M)=0$ for some $p\in k[t]$ if and only if $p(M^t)=0$.
 :::

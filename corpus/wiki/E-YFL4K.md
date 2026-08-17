@@ -12,12 +12,13 @@ classification:
   - sequences-of-functions
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="Uniformly bounded but not equicontinuous"}
+
+::: {.exercise title="Uniformly bounded but not equicontinuous"}
 Produce a sequence that is uniformly bounded but not equicontinuous.
 :::
 
-:::{.solution}
+::: {.solution}
 $f_k(x) = (\sin k x)$ is uniformly bounded but not equicontinuous on $(0, 1)$ since it has no convergent subsequence on any compact subset.
 :::
-

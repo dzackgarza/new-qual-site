@@ -13,6 +13,7 @@ classification:
   - uniform-convergence
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 For each $n\in \ZZ^{\geq 1}$, let

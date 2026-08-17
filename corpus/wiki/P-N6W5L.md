@@ -13,6 +13,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Find the number of zeros $z$ with $\Re(z) > 0$ for the following function:

@@ -11,15 +11,15 @@ classification:
   - open-mapping-theorem
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="SS 3.2.15"}
+
+::: {.exercise title="SS 3.2.15"}
 Suppose $f$ is continuous and nonzero on $\bar\DD$ and holomorphic on $\DD$.
 Show that if $\abs{f(z)} = \abs{z}$ for all $\abs{z} = 1$ then $f$ is constant.
-
 :::
 
-:::{.solution}
+::: {.solution}
 If $f$ has no zeros in $\DD$, apply the MMP to $1/f$ to get $\abs{f} = 1$ on all of $\DD$.
 By Cauchy-Riemann (or the open mapping theorem), if $\abs{f}$ is constant, $f$ is constant.
 :::
-

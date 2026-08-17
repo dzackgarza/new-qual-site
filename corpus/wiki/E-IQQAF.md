@@ -13,6 +13,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="ML estimate for a semicircular contour"}
 Use a semicircular contour and the residue theorem to evaluate

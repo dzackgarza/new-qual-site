@@ -12,9 +12,11 @@ classification:
   - classification
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Define what is meant by a Möbius band. Identify the space obtained by identifying the boundary of a Möbius band to a point. Give a brief explanation.
+::: {.problem title="?"}
+Define what is meant by a Möbius band.
+Identify the space obtained by identifying the boundary of a Möbius band to a point.
+Give a brief explanation.
 :::
-

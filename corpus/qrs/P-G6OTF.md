@@ -12,6 +12,7 @@ classification:
   - roots-of-unity
 relations: []
 review: draft
+solved: true
 ---
 
 Let $R$ be a commutative ring, and let $M$ be an $R\dash$module.

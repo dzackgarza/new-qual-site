@@ -11,6 +11,7 @@ classification:
   - series-of-functions
 relations: []
 review: draft
+solved: true
 ---
 Let 
 \[

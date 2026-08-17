@@ -11,6 +11,7 @@ classification:
   - l1
 relations: []
 review: draft
+solved: true
 ---
 Let $f\in L^1([0, 1])$.
 Prove that

@@ -11,11 +11,11 @@ classification:
   - normal-families
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Show that if $\mcf$ is a family of differentiable functions with uniformly bounded derivatives, then $\mcf$ is equicontinuous.
 
 > Hint: apply the MVT.
-
 :::
-

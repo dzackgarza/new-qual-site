@@ -13,6 +13,7 @@ classification:
   - liouville-s-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Polynomial growth"}
 Suppose that $f$ is entire and has polynomial growth in the following sense:

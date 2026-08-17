@@ -12,6 +12,7 @@ classification:
   - class-equation
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

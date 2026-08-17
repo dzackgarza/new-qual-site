@@ -10,6 +10,7 @@ classification:
   - geometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Working with conjugates"}
 Find $\Re\qty{z+2\over z-1}$.

@@ -11,8 +11,9 @@ classification:
   - cauchy-integral-formula
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 ![image_2021-05-17-11-53-33](../../assets/Complex%20Analysis/Review%20Doc/sections/figures/image_2021-05-17-11-53-33.png)
 :::
-

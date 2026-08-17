@@ -13,6 +13,7 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

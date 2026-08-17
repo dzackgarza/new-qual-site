@@ -11,6 +11,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Residue of $1/z^2 + 1$"}
 Use the rational function formula to compute the residues at $z=\pm i$ of

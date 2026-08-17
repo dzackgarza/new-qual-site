@@ -11,6 +11,7 @@ classification:
   - homology
 relations: []
 review: draft
+solved: true
 ---
 
 Let $S^3 \to E \to S^5$ be a fiber bundle and compute $H_3(E)$.

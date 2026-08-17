@@ -13,6 +13,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $P, Q$ be polynomials with no common zeros. Assume $a$ is a root of

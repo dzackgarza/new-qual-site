@@ -12,6 +12,7 @@ classification:
   - galois-theory
 relations: []
 review: draft
+solved: true
 ---
 Let $\zeta = e^{2\pi i/8}$.
 

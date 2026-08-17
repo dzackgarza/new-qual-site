@@ -11,10 +11,9 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Optional: Explain why the “topologist’s sine wave”
-$$X=\{(0,0)\}\cup\{(x,\sin(1/x)):x>0\}$$
-is an example of a space which is connected but not path connected.
+::: {.problem title="?"}
+Optional: Explain why the “topologist’s sine wave” $$X=\{(0,0)\}\cup\{(x,\sin(1/x)):x>0\}$$ is an example of a space which is connected but not path connected.
 :::

@@ -11,8 +11,11 @@ classification:
   - closure
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Let $X$ be a topological space. Let $A\subset X$ be connected. Prove that the closure $\overline A$ of $A$ is connected.
+::: {.problem title="?"}
+Let $X$ be a topological space.
+Let $A\subset X$ be connected.
+Prove that the closure $\overline A$ of $A$ is connected.
 :::

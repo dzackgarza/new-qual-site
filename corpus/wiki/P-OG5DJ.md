@@ -12,6 +12,7 @@ classification:
   - field-extensions
 relations: []
 review: draft
+solved: true
 ---
 Let $f(x) = x^4 - 4x^2 + 2 \in \QQ[x]$.
 

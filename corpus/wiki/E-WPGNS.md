@@ -13,6 +13,7 @@ classification:
   - zeros
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f$ be entire and suppose that

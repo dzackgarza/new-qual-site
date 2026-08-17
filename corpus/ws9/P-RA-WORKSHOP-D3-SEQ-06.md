@@ -11,6 +11,7 @@ classification:
   - limits
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}
@@ -21,10 +22,6 @@ review: draft
 > **AI-Generated Solution**
 
 <1>1. Rationalize the expression.
-    Proof:
-    \[a_n = \sqrt n\,(\sqrt{n+1} - \sqrt n) = \sqrt n\cdot\frac{(n+1) - n}{\sqrt{n+1} + \sqrt n} = \frac{\sqrt n}{\sqrt{n+1} + \sqrt n} = \frac{1}{\sqrt{1 + 1/n} + 1}.\]
-<1>2. Take the limit.
-    Proof: $\sqrt{1 + 1/n} \to \sqrt{1} = 1$ by continuity of the square root, so
-    \[\lim_{n\to\infty} a_n = \frac{1}{1 + 1} = \frac12.\]
-<1>3. Q.E.D.
+Proof: \[a_n = \sqrt n\,(\sqrt{n+1} - \sqrt n) = \sqrt n\cdot\frac{(n+1) - n}{\sqrt{n+1} + \sqrt n} = \frac{\sqrt n}{\sqrt{n+1} + \sqrt n} = \frac{1}{\sqrt{1 + 1/n} + 1}.\] <1>2. Take the limit.
+Proof: $\sqrt{1 + 1/n} \to \sqrt{1} = 1$ by continuity of the square root, so \[\lim_{n\to\infty} a_n = \frac{1}{1 + 1} = \frac12.\] <1>3. Q.E.D.
 :::

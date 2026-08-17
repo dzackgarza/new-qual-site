@@ -13,6 +13,7 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

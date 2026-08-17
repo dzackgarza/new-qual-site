@@ -12,6 +12,7 @@ classification:
   - principal-parts
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Poles of derivatives"}
 Show that if $z_0$ is a pole of order $n$ of $f$, then it is a pole of order $n+k$ for $f^{(k)}$.

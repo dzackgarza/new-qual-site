@@ -11,8 +11,12 @@ classification:
   - hausdorff-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Let $D$ be the open unit disk in the complex plane that is $D:=\{z\mid |z|<1\}$. Let $\sim$ be an equivalence relation on $D$ defined by $z_1\sim z_2$ if $|z_1|=|z_2|$. Is the quotient space $D/\sim$ Hausdorff? Prove or disprove.
+::: {.problem title="?"}
+Let $D$ be the open unit disk in the complex plane that is $D:=\{z\mid |z|<1\}$.
+Let $\sim$ be an equivalence relation on $D$ defined by $z_1\sim z_2$ if $|z_1|=|z_2|$.
+Is the quotient space $D/\sim$ Hausdorff?
+Prove or disprove.
 :::

@@ -11,9 +11,9 @@ classification:
   - product-topology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Prove that the product topological space $X\times Y$ is Hausdorff if and only if $X$ and $Y$ are Hausdorff.
 :::
-

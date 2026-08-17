@@ -12,6 +12,7 @@ classification:
   - p-groups
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

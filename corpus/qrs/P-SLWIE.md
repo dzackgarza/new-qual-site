@@ -14,6 +14,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 Define
 \[

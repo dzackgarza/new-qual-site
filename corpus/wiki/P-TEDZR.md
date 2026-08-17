@@ -12,8 +12,10 @@ classification:
   - manifolds
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $X = S^1 \cross B^2 - L$ where $L$ is two linked solid torii inside a larger solid torus. Compute $H_*(X)$.
+Let $X = S^1 \cross B^2 - L$ where $L$ is two linked solid torii inside a larger solid torus.
+Compute $H_*(X)$.
 :::

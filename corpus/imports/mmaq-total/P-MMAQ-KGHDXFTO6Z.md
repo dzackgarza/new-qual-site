@@ -11,9 +11,10 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $F$ be a finite field. Show for any positive integer $n$ that
-there are irreducible polynomials of degree $n$ in $F[x]$.
+Let $F$ be a finite field.
+Show for any positive integer $n$ that there are irreducible polynomials of degree $n$ in $F[x]$.
 :::

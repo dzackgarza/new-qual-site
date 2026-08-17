@@ -10,10 +10,10 @@ classification:
   - modules
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
 Suppose $A$ is a commutative ring and $M$ is a finitely presented module.
-Given any surjection $\phi:A^n\rightarrow M$ from a finite free
-$A$-module, show that $\ker\phi$ is finitely generated.
+Given any surjection $\phi:A^n\rightarrow M$ from a finite free $A$-module, show that $\ker\phi$ is finitely generated.
 :::

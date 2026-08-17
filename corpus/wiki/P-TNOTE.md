@@ -12,6 +12,7 @@ classification:
   - borel-cantelli
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="Spring 2021, 1"}
 Let \( (X, \mathcal{M},\mu)  \) be a measure space and let $E_n \in \mathcal{M}$ be a measurable set for $n\geq 1$.

@@ -12,8 +12,9 @@ classification:
   - euclidean-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Construct an explicit deformation retraction from $\mathbb R^n\setminus\{0\}$ onto $S^{n-1}$.
 :::

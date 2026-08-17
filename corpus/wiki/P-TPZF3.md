@@ -12,6 +12,7 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: true
 ---
 Let $K$ be the set of numbers in $[0, 1]$ whose decimal expansions do not use the digit $4$.
 

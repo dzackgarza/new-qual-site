@@ -12,6 +12,7 @@ classification:
   - rings
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Quotient by nilradical is reduced"}
 Show $\nilrad{R} \normal R$ is an ideal and $A/\nilrad{R}$ is reduced.

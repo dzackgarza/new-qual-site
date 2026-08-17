@@ -13,6 +13,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="$1/(1+x^2)^2$"}
 \[

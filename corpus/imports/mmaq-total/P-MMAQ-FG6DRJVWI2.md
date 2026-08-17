@@ -12,10 +12,12 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
 a.  Prove that if the space $X$ is connected and locally path connected then $X$ is path connected.
 
-b.  Is the converse true? Prove or give a counterexample.
+b.  Is the converse true?
+Prove or give a counterexample.
 :::

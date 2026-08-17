@@ -11,10 +11,12 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $n$ be a natural number. Show that
+Let $n$ be a natural number.
+Show that
 
 $$
 [1 / 2(-1+\sqrt{3} i)]^{n}+[1 / 2(-1-\sqrt{3} i)]^{n}

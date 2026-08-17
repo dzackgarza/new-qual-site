@@ -11,6 +11,7 @@ classification:
   - maximum-modulus-principle
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="The equality case"}
 Suppose $f:\DD\to \DD$ and $f(0) = 0$.

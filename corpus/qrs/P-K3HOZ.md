@@ -13,6 +13,7 @@ classification:
   - mean-value-property
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

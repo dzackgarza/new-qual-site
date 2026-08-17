@@ -12,6 +12,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Find the number of zeros in $\abs{z} \in (1, 2)$ of

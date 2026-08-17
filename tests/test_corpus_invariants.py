@@ -20,9 +20,65 @@ import pytest
 from audit import check_ledger_totality, check_queued_not_claimed, check_reason_truth
 from qualc.diagnostics import DiagnosticCode
 from qualc.index import load_vocabularies, validate
-from qualc.model import ParsedCard, SourceCard
+from qualc.model import ParsedCard, ProblemCard, SolutionCard, SourceCard
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def _problem_card(card_id: str, *, solved: bool, sections: list[tuple[str, str]]) -> ParsedCard:
+    return ParsedCard(
+        card=ProblemCard.model_validate(
+            {
+                "schema": "qual/card@1",
+                "id": card_id,
+                "kind": "problem",
+                "title": "A problem",
+                "classification": {"areas": ["algebra"], "topics": ["groups"]},
+                "relations": [],
+                "review": "draft",
+                "solved": solved,
+            }
+        ),
+        ast="[]",
+        source_path="test",
+        sections=sections,
+    )
+
+
+def test_solved_declaration_must_match_evidence() -> None:
+    """`solved` is declared on the card and checked against the corpus: true
+    requires a solution section or an incoming solves relation, and false with
+    either present is stale. This is the guard that replaced the queue files,
+    which drifted (a "recommended skip" card was carried as solved)."""
+    vocab = load_vocabularies(ROOT / "vocabularies")
+
+    overclaimed = validate([_problem_card("P-NOEVID", solved=True, sections=[])], vocab)
+    assert [error.code for error in overclaimed] == [DiagnosticCode.SOLVED_WITHOUT_EVIDENCE]
+
+    underclaimed = validate(
+        [_problem_card("P-STALE", solved=False, sections=[("solution", "By induction…")])],
+        vocab,
+    )
+    assert [error.code for error in underclaimed] == [DiagnosticCode.UNSOLVED_WITH_SOLUTION]
+
+    solver = ParsedCard(
+        card=SolutionCard.model_validate(
+            {
+                "schema": "qual/card@1",
+                "id": "S-LINKER",
+                "kind": "solution",
+                "title": "A solution living on its own card",
+                "classification": {"areas": ["algebra"], "topics": ["groups"]},
+                "relations": [{"kind": "solves", "target": "P-LINKED"}],
+                "review": "draft",
+            }
+        ),
+        ast="[]",
+        source_path="test",
+        sections=[("solution", "By induction…")],
+    )
+    assert validate([_problem_card("P-LINKED", solved=True, sections=[]), solver], vocab) == []
+    assert validate([_problem_card("P-CLEAN", solved=False, sections=[])], vocab) == []
 
 
 def _source_card(area: str) -> ParsedCard:

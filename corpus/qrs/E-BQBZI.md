@@ -12,6 +12,7 @@ classification:
   - limits
 relations: []
 review: draft
+solved: true
 ---
 
 ::: exercise

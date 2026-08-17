@@ -11,6 +11,7 @@ classification:
   - conformal-maps
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Conformal maps to arbitrary points"}
 Find a Mobius transformation sending 

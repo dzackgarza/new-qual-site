@@ -11,8 +11,10 @@ classification:
   - hausdorff-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-What property on a space guarantees that compact sets are closed? What property on a space guarantees that closed sets are compact?
+::: {.problem title="?"}
+What property on a space guarantees that compact sets are closed?
+What property on a space guarantees that closed sets are compact?
 :::

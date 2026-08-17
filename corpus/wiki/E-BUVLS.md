@@ -11,6 +11,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Expanding Laurent series in different regions"}
 Expand $f(z) = {1\over z(z-1)}$ in both

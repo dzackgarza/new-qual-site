@@ -10,8 +10,9 @@ classification:
   - connectedness
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 If $X$ is a path connected space, then $X$ is connected.
 :::

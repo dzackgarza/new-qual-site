@@ -10,6 +10,7 @@ classification:
   - compactness
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise

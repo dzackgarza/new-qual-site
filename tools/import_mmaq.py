@@ -91,7 +91,7 @@ def loose(text: str) -> str:
     # re-emits a blockquote with its `>` markers. Neither is part of the
     # statement. `>` is dropped only where it opens a line, so a `>` inside
     # mathematics survives.
-    t = re.sub(r"^\s*>+\s?", "", t, flags=re.M)
+    t = re.sub(r"^\s*>+\s?", "", t, flags=re.MULTILINE)
     t = t.replace("`{=tex}", "").replace("`", "")
     t = t.replace(r"\[", "$$").replace(r"\]", "$$")
     t = _BB.sub(lambda m: r"\bb{" + m.group(1) + "}", t)
@@ -417,7 +417,11 @@ def native_sittings(root: Path, excluded_roots: tuple[Path, ...] = ()) -> dict[t
         payload = metadata["payload"]
         if payload["source_kind"] != "university-exam":
             continue
-        key = (payload["institution"], payload["area"], json.dumps(payload["date"], sort_keys=True))
+        key = (
+            payload["institution"],
+            payload["area"],
+            json.dumps(payload["date"], sort_keys=True),
+        )
         if key not in found:
             found[key] = []
         found[key].append((metadata["id"], metadata["title"]))
@@ -457,7 +461,11 @@ def corpus_ids(root: Path, excluded_roots: tuple[Path, ...] = ()) -> set[str]:
 
 def sitting_key(key: tuple[str, str, str, str]) -> tuple[str, str, str]:
     university, exam, year, season = key
-    return (university.lower(), AREA_SLUG[exam], json.dumps(date_spec(year, season), sort_keys=True))
+    return (
+        university.lower(),
+        AREA_SLUG[exam],
+        json.dumps(date_spec(year, season), sort_keys=True),
+    )
 
 
 def source_title(key: tuple[str, str, str, str]) -> str:
@@ -472,7 +480,9 @@ def source_title(key: tuple[str, str, str, str]) -> str:
     return f"{university} {area} {date}"
 
 
-def topic_vocabulary(root: Path) -> tuple[set[str], dict[str, str], dict[str, list[str]]]:
+def topic_vocabulary(
+    root: Path,
+) -> tuple[set[str], dict[str, str], dict[str, list[str]]]:
     """Read the curated topic registry and its retirement aliases.
 
     Both files belong to the classification side. This importer consumes them
@@ -557,6 +567,7 @@ def write_problem(
         "classification": {"areas": [area], "topics": topics},
         "relations": [],
         "review": "draft",
+        "solved": False,
     }
     path.write_text(card(metadata, body))
 
@@ -680,7 +691,13 @@ def reconcile(
                 if len(candidates) == 1 and candidates[0][0] == prior_id:
                     prior_match = "existing-exact"
                 problem_matches[fingerprint] = prior_match
-                problem_history[fingerprint] = list(zip(prior_entry["legacy_problem_ids"], prior_entry["legacy_problem_paths"], strict=True))
+                problem_history[fingerprint] = list(
+                    zip(
+                        prior_entry["legacy_problem_ids"],
+                        prior_entry["legacy_problem_paths"],
+                        strict=True,
+                    )
+                )
             else:
                 problem_matches[fingerprint] = operation
                 problem_history[fingerprint] = legacy
@@ -690,7 +707,13 @@ def reconcile(
 
     unique_fingerprints = list(problem_ids)
     unique_statements = [next(record["question"] for record in records if record["normalized"] == fingerprint) for fingerprint in unique_fingerprints]
-    problem_bodies = dict(zip(unique_fingerprints, converted_bodies(pandoc, unique_statements, "problem"), strict=True))
+    problem_bodies = dict(
+        zip(
+            unique_fingerprints,
+            converted_bodies(pandoc, unique_statements, "problem"),
+            strict=True,
+        )
+    )
     # Occurrence cards carry the source appearance in their envelope; the
     # statement itself remains a problem section, matching the existing corpus
     # convention and the renderer's occurrence reveal handling.
@@ -705,7 +728,13 @@ def reconcile(
             f"This source group contains {len(groups[key])} rows; no exam-term inference was made beyond "
             "the explicit `season` value."
         )
-    source_bodies = dict(zip(source_keys, converted_bodies(pandoc, source_body_texts, "remark"), strict=True))
+    source_bodies = dict(
+        zip(
+            source_keys,
+            converted_bodies(pandoc, source_body_texts, "remark"),
+            strict=True,
+        )
+    )
 
     for fingerprint, problem_id in problem_ids.items():
         operation = problem_operations[fingerprint]
@@ -733,7 +762,14 @@ def reconcile(
         if operation in {"ambiguous-exact", "new", "regenerate"}:
             area, topics = problem_details[fingerprint]
             statement = next(record["question"] for record in records if record["normalized"] == fingerprint)
-            write_problem(output / f"{problem_id}.md", statement, area, topics, problem_id, problem_bodies[fingerprint])
+            write_problem(
+                output / f"{problem_id}.md",
+                statement,
+                area,
+                topics,
+                problem_id,
+                problem_bodies[fingerprint],
+            )
 
     # A sitting the corpus already records keeps its own `source` card; this
     # import contributes its occurrences to it. Only a sitting no other source

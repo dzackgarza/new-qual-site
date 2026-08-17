@@ -12,10 +12,11 @@ classification:
   - quotient-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
-Let $X$ denote the quotient space formed from the sphere $S^2$ by identifying two distinct points. 
+Let $X$ denote the quotient space formed from the sphere $S^2$ by identifying two distinct points.
 
 Compute the fundamental group and the homology groups of $X$.
 :::

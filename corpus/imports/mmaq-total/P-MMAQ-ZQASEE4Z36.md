@@ -10,6 +10,7 @@ classification:
   - convergence-of-functions
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

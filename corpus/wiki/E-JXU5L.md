@@ -12,16 +12,15 @@ classification:
   - counterexamples
 relations: []
 review: draft
+solved: true
 ---
-:::{.problem title="?"}
-Show that the Dirichlet function $f(x) = \chi_{I \intersect \QQ}$ is not Riemann integrable and is everywhere discontinuous.
 
+::: {.problem title="?"}
+Show that the Dirichlet function $f(x) = \chi_{I \intersect \QQ}$ is not Riemann integrable and is everywhere discontinuous.
 :::
 
-:::{.solution}
+::: {.solution}
 Check $\sup f = 1$ and $\inf f = 0$ on every sub-interval, so $L(f, P) = 0$ and $U(f, P) = 1$ for every partition $P$ of $[0, 1]$.
 
 Discontinuity: #todo
-
 :::
-

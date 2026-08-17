@@ -12,6 +12,7 @@ classification:
   - entire-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Liouville"}
 Use a version of the Schwarz lemma to prove Liouville's theorem.

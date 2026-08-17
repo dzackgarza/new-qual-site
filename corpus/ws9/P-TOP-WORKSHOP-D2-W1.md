@@ -10,8 +10,9 @@ classification:
   - connectedness
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 If $X$ is a connected space if and only if $X$ and the empty set are the only open and closed sets.
 :::

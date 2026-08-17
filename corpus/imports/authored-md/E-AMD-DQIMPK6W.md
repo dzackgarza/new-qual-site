@@ -11,6 +11,7 @@ classification:
   - homomorphisms
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise}

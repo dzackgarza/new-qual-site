@@ -10,6 +10,7 @@ classification:
   - covering-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

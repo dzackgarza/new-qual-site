@@ -12,6 +12,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="?"}
 Let $X$ be a topological space.

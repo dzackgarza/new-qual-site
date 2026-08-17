@@ -12,6 +12,7 @@ classification:
   - geometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Consider the function $f(z)=\frac{1}{2}\left(z+\frac{1}{z}\right)$ for $z \in \mathbb{C} \backslash\{0\}$. Let $\mathbb{D}$ denote the open unit disc.

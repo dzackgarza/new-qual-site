@@ -11,6 +11,7 @@ classification:
   - conformal-maps
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Mobius transformations as cross-ratios"}
 Write a Mobius transformation $f(z) = {az+b\over cz + d}$ as a cross-ratio.

@@ -13,6 +13,7 @@ classification:
   - series-of-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that 

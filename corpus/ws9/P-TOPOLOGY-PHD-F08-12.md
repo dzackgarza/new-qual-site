@@ -11,9 +11,10 @@ classification:
   - limits
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-True or false: in a compact topological space every infinite set has a limit point. Justify your answer.
+::: {.problem title="?"}
+True or false: in a compact topological space every infinite set has a limit point.
+Justify your answer.
 :::
-

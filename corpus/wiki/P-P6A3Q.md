@@ -11,6 +11,7 @@ classification:
   - homotopy
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Spring 2021, 4"}

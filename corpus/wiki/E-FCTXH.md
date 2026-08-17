@@ -11,6 +11,7 @@ classification:
   - geometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Prove that

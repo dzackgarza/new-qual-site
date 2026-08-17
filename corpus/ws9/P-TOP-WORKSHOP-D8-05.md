@@ -11,13 +11,16 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-(Purdue Aug ’09) Let $p:E\to B$ be a covering map. Let $Y$ be locally path-connected. Let $g:Y\to E$ be
-a function such that
+::: {.problem title="?"}
+(Purdue Aug ’09) Let $p:E\to B$ be a covering map.
+Let $Y$ be locally path-connected.
+Let $g:Y\to E$ be a function such that
 
 - $p\circ g$ is continuous;
+
 - $g\circ\gamma$ is continuous for every path $\gamma$ in $Y$.
 
 Prove that $g$ is continuous.

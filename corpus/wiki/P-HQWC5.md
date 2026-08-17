@@ -13,6 +13,7 @@ classification:
   - rouche
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 For $k=1,2,\cdots, n$, suppose $\abs{a_k} < 1$ and

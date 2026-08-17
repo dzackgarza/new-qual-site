@@ -12,6 +12,7 @@ classification:
   - l-infty
 relations: []
 review: draft
+solved: true
 ---
 a. Prove Holder's inequality:
   let $f\in L^p, g\in L^q$ with $p, q$ conjugate, and show that

@@ -11,6 +11,7 @@ classification:
   - mean-value-theorem
 relations: []
 review: draft
+solved: true
 ---
 1.  
 Suppose that $f: [0,1] \to \mathbb{R}$ is differentiable and

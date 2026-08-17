@@ -13,6 +13,7 @@ classification:
   - metric-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: exercise

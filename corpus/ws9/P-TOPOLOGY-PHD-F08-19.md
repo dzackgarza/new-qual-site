@@ -11,9 +11,9 @@ classification:
   - cell-complexes
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Compute the Euler characteristic of the $n$-sphere $S^n$ using the standard triangulation of an $n$-simplex.
 :::
-

@@ -12,6 +12,7 @@ classification:
   - abelian-groups
 relations: []
 review: draft
+solved: true
 ---
 
 How many isomorphism classes are there of groups of order 45?

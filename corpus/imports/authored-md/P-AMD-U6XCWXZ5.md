@@ -12,6 +12,7 @@ classification:
   - semidirect-products
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

@@ -12,10 +12,11 @@ classification:
   - van-kampen
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-(Wisconsin Aug ’10) The graph $K$ has six vertices $a_1,a_2,a_3,b_1,b_2,b_3$ and nine edges $a_i b_j$
-for $i,j=1,2,3$. The space $X$ obtained from $K$ by attaching a $2$-cell along each loop formed by a
-cycle of four edges in $K$. Find $\pi_1(X)$.
+::: {.problem title="?"}
+(Wisconsin Aug ’10) The graph $K$ has six vertices $a_1,a_2,a_3,b_1,b_2,b_3$ and nine edges $a_i b_j$ for $i,j=1,2,3$.
+The space $X$ obtained from $K$ by attaching a $2$-cell along each loop formed by a cycle of four edges in $K$.
+Find $\pi_1(X)$.
 :::

@@ -11,6 +11,7 @@ classification:
   - radon-nikodym
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

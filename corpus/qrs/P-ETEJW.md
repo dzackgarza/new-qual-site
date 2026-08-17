@@ -12,6 +12,7 @@ classification:
   - structure-theorem
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 7.4.8)."}

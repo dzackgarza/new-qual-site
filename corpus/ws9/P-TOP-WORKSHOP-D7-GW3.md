@@ -12,8 +12,9 @@ classification:
   - van-kampen
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 Find $\pi_1(T^2)$, where $T^2=S^1\times S^1$ is the standard two torus, in TWO different ways.
 :::

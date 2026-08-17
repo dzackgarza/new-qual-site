@@ -12,6 +12,7 @@ classification:
   - sylow-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

@@ -12,6 +12,7 @@ classification:
   - series-of-numbers
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise title="?"}

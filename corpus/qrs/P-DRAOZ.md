@@ -12,6 +12,7 @@ classification:
   - uniform-continuity
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

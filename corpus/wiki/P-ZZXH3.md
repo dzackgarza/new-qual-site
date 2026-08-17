@@ -12,6 +12,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose that $f: \RR\to\RR$ is a continuous function that vanishes outside of some finite interval.

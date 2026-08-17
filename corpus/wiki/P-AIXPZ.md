@@ -12,6 +12,7 @@ classification:
   - separability
 relations: []
 review: draft
+solved: true
 ---
 Let $A$ be a square matrix over the complex numbers.
 Suppose that $A$ is nonsingular

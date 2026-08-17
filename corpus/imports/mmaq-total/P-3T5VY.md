@@ -12,6 +12,7 @@ classification:
   - rouche
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

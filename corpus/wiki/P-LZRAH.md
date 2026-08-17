@@ -12,6 +12,7 @@ classification:
   - eigenvalues-and-eigenvectors
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

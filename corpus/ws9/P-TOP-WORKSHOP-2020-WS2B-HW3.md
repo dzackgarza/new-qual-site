@@ -11,8 +11,10 @@ classification:
   - cell-complexes
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Let $X=D^2$, $Y=\{y\}$ a singleton, and $f:X\to Y$ be the constant function. Construct and describe the mapping cylinder.
+::: {.problem title="?"}
+Let $X=D^2$, $Y=\{y\}$ a singleton, and $f:X\to Y$ be the constant function.
+Construct and describe the mapping cylinder.
 :::

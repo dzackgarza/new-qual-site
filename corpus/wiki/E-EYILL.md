@@ -12,6 +12,7 @@ classification:
   - homotopy
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="No fixed points implies homotopic to antipodal"}
 Show that if $f: S^n\to S^n$ has no fixed points $\iff \deg f = (-1)^{n+1}$ and $f$ is homotopic to the antipodal map.

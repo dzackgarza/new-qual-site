@@ -12,6 +12,7 @@ classification:
   - hilbert-spaces
 relations: []
 review: draft
+solved: true
 ---
 
 :::{.problem title="?"}

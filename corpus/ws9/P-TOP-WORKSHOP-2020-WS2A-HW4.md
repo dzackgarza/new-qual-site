@@ -10,8 +10,10 @@ classification:
   - connectedness
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Show that if there is a path between two points, they lie in the same connected component. Why does this show that a path connected space is connected?
+::: {.problem title="?"}
+Show that if there is a path between two points, they lie in the same connected component.
+Why does this show that a path connected space is connected?
 :::

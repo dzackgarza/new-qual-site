@@ -12,6 +12,7 @@ classification:
   - ideals
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="Maximal implies prime"}
 Maximal $\implies$ prime, but generally not the converse.

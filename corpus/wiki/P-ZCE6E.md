@@ -12,6 +12,7 @@ classification:
   - fubini-tonelli
 relations: []
 review: draft
+solved: true
 ---
 Let $f$ be a non-negative function on $\RR^n$ and $\mathcal A = \{(x, t) ∈ \RR^n \times \RR : 0 ≤ t ≤ f (x)\}$.
 

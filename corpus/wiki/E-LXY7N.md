@@ -12,6 +12,7 @@ classification:
   - sequences-of-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="A non-equicontinuous sequence"}
 Exhibit a sequence of functions that is not equicontinuous.

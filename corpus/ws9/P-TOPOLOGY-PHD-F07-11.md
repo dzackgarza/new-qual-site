@@ -10,8 +10,10 @@ classification:
   - connectedness
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Define the term “connected component” for a topological space. Prove that a connected component is connected.
+::: {.problem title="?"}
+Define the term “connected component” for a topological space.
+Prove that a connected component is connected.
 :::

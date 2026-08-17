@@ -12,9 +12,10 @@ classification:
   - homeomorphisms
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Suppose that $X$ is compact and $Y$ is Hausdorff. Prove that every one-to-one, onto, continuous map
-$f:X\to Y$ is a homeomorphism.
+::: {.problem title="?"}
+Suppose that $X$ is compact and $Y$ is Hausdorff.
+Prove that every one-to-one, onto, continuous map $f:X\to Y$ is a homeomorphism.
 :::

@@ -12,6 +12,7 @@ classification:
   - conjugacy
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

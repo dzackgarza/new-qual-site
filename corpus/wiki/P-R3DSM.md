@@ -10,6 +10,7 @@ classification:
   - geometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Prove the following inequality, and explain when equality holds:

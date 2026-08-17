@@ -12,6 +12,7 @@ classification:
   - modules
 relations: []
 review: draft
+solved: true
 ---
 Let $R$ be a commutative ring.
 

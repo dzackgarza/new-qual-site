@@ -13,6 +13,7 @@ classification:
   - localization
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

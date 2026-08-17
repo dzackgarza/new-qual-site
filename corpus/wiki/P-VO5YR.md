@@ -12,6 +12,7 @@ classification:
   - trigonometry
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Invert $\sin(z)$ using geometric series"}
 Invert $\sin(z)$ using a geometric series, heeding the warning above.

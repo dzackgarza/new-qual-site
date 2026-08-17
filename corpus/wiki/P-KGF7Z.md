@@ -12,6 +12,7 @@ classification:
   - transcendence
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

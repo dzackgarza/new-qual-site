@@ -11,6 +11,7 @@ classification:
   - fractional-linear-transformations
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="$\mathbb{D}^c \intersect \mathbb{H}$ to $\mathbb{H}$"}
 Find a conformal map from $\DD^c \intersect \HH$ to $\HH$ using cross-ratios.

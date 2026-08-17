@@ -12,6 +12,7 @@ classification:
   - fixed-points
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $\left\{x_{n}\right\}_{n-1}^{\infty}$ be a sequence of real numbers such that $x_{1}>0$ and

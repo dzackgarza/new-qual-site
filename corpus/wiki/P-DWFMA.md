@@ -10,6 +10,7 @@ classification:
   - measure-theory
 relations: []
 review: draft
+solved: true
 ---
 Let $E\subset \RR$ be a Lebesgue measurable set.
 Show that there is a Borel set $B \subset E$ such that $m(E\setminus B) = 0$.

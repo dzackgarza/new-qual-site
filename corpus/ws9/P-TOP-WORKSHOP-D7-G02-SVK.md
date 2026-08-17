@@ -11,9 +11,10 @@ classification:
   - fundamental-group
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-State the Seifert–van Kampen Theorem and use it to show that $\pi_1(S^n)=0$ for $n>1$. Why doesn’t this
-argument work for $n=1$?
+::: {.problem title="?"}
+State the Seifert–van Kampen Theorem and use it to show that $\pi_1(S^n)=0$ for $n>1$.
+Why doesn’t this argument work for $n=1$?
 :::

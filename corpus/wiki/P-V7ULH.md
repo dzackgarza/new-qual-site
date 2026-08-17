@@ -11,6 +11,7 @@ classification:
   - cauchy-integral-formula
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f$ be a power series centered at the origin.

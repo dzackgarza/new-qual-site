@@ -12,6 +12,7 @@ classification:
   - residues
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

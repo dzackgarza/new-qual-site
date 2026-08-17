@@ -12,6 +12,7 @@ classification:
   - exact-sequences
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

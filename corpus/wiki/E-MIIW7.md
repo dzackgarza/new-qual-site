@@ -10,6 +10,7 @@ classification:
   - schwarz-lemma
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Schwarz with domain/codomain scaled"}
 If $f: \DD_R(a)\to\DD_M(0)$ with $f(a) = 0$, then 

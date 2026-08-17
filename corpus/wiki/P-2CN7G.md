@@ -12,6 +12,7 @@ classification:
   - hausdorff-spaces
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Spring 2021, 2"}

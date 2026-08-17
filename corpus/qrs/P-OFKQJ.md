@@ -13,6 +13,7 @@ classification:
   - holomorphic-functions
 relations: []
 review: draft
+solved: true
 ---
 
 ::: {.problem title="?"}

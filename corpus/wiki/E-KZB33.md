@@ -12,6 +12,7 @@ classification:
   - conformal-maps
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="?"}
 Show that if $f$ is injective, then $f'$ is nowhere vanishing and thus $f$ is conformal.

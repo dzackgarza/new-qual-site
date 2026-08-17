@@ -12,6 +12,7 @@ classification:
   - subgroups
 relations: []
 review: draft
+solved: true
 ---
 Let $H$ be a normal subgroup of a finite group $G$ where the order of $H$ and the index of $H$ in $G$ are relatively prime.
 Prove that no other subgroup of $G$ has the same order as $H$.

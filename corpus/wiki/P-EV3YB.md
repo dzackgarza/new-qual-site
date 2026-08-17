@@ -12,6 +12,7 @@ classification:
   - uniform-continuity
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Suppose $\theset{g_n}$ is a uniformly convergent sequence of functions from $\RR$ to $\RR$ and $f:\RR\to \RR$ is uniformly continuous.

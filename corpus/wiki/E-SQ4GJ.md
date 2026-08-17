@@ -12,6 +12,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Expansion for a reciprocal"}
 Find a power series expansion of 

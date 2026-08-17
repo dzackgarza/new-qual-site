@@ -12,6 +12,7 @@ classification:
   - blaschke-factors
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Find a conformal map

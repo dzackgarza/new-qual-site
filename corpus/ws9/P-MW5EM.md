@@ -10,6 +10,7 @@ classification:
   - logic-and-quantifiers
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="?"}

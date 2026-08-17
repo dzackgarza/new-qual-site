@@ -12,10 +12,12 @@ relations:
 - kind: related-to
   target: E-YAEMZ
 review: draft
+solved: false
 ---
 
 - Every sequence in $X$ has a convergent subsequence in $X$.
 
 ::: {.remark}
-This is the third condition of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without its stem. That card now carries the whole exercise; merging this bullet back into it is a canonicity decision rather than a truncation repair.
+This is the third condition of the list in `E-YAEMZ`, "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE", extracted without its stem.
+That card now carries the whole exercise; merging this bullet back into it is a canonicity decision rather than a truncation repair.
 :::

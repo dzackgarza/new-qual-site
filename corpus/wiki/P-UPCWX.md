@@ -12,6 +12,7 @@ classification:
   - uniform-continuity
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f$ be differentiable on $[a, b]$.

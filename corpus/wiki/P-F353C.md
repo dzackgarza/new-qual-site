@@ -12,6 +12,7 @@ classification:
   - ideals
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

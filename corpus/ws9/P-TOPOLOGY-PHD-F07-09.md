@@ -12,8 +12,10 @@ classification:
   - subspace-topology
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-A Hausdorff topological space is known to be locally compact if every point has a compact neighborhood. Prove that every closed subspace of a locally compact Hausdorff space is locally compact.
+::: {.problem title="?"}
+A Hausdorff topological space is known to be locally compact if every point has a compact neighborhood.
+Prove that every closed subspace of a locally compact Hausdorff space is locally compact.
 :::

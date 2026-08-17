@@ -12,6 +12,7 @@ classification:
   - series-of-functions
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Application of summation by parts"}
 Use summation by parts to show that $\sin(n)/n$ converges.

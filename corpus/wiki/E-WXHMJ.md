@@ -13,6 +13,7 @@ classification:
   - liouville-s-theorem
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Poles of elliptic functions"}
 Let $f$ be an elliptic function and $P$ be its fundamental parallelogram.

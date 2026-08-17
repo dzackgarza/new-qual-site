@@ -12,8 +12,10 @@ classification:
   - groups
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
-Let $G=\langle x,y\mid x^2yxy=1\rangle$. Describe a space $X$ that has $\pi_1(X)=G$.
+::: {.problem title="?"}
+Let $G=\langle x,y\mid x^2yxy=1\rangle$.
+Describe a space $X$ that has $\pi_1(X)=G$.
 :::

@@ -10,6 +10,7 @@ classification:
   - groups
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem}

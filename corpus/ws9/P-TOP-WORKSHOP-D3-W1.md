@@ -11,8 +11,9 @@ classification:
   - hausdorff-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 If $(X,d)$ is a metric space, then it is Hausdorff [see number 8].
 :::

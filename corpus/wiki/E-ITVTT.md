@@ -11,6 +11,7 @@ classification:
   - poles
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="Residue of $1/z^n+1$"}
 Find the residue at $\omega_n \da e^{\pi i \over n}$ of

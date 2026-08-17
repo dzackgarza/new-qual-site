@@ -12,6 +12,7 @@ classification:
   - maximal-ideals
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.exercise title="?"}

@@ -12,6 +12,7 @@ classification:
   - number-theory
 relations: []
 review: draft
+solved: false
 ---
 
 ::: {.problem title="Hungerford 5.8.9"}

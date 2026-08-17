@@ -12,16 +12,15 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 Suppose $f$ is entire and $f^{(n)}$ is bounded on $\CC$.
 Show that $f$ is a polynomial of degree at most $n$.
-
 :::
 
-:::{.solution}
+::: {.solution}
 By Liouville or MMP, $f^{(n)}$ is bounded and entire and thus constant.
 Integrating a constant $n$ times yields a polynomial of degree t most $n$.
-
 :::
-

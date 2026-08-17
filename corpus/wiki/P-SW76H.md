@@ -12,6 +12,7 @@ classification:
   - zorns-lemma
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

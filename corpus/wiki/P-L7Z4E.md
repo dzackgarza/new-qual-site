@@ -12,6 +12,7 @@ classification:
   - manifolds
 relations: []
 review: draft
+solved: true
 ---
 
 Show there is no homeomorphism $\CP^2 \mapsvia{f} \CP^2$ such that $f(\CP^1)$ is disjoint from $\CP_1 \subset \CP_2$.

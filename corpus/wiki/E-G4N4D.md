@@ -11,12 +11,10 @@ classification:
   - cauchy-integral-formula
 relations: []
 review: draft
+solved: false
 ---
-:::{.exercise title="?"}
+
+::: {.exercise title="?"}
 
 ![figures/image_2021-05-17-11-53-33.png](../../assets/figures/image_2021-05-17-11-53-33.png)
-
- 
-
 :::
-

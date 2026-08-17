@@ -34,6 +34,7 @@ classification:
   topics: [integrals]
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem
@@ -75,7 +76,12 @@ def test_the_subscript_survives_a_round_trip(card: Path) -> None:
     from qualc.model import from_ast
 
     doc = from_ast(parse_card(card).ast)
-    back: str = pf.convert_text(doc, input_format="panflute", output_format="markdown", extra_args=["--wrap=preserve"])
+    back: str = pf.convert_text(
+        doc,
+        input_format="panflute",
+        output_format="markdown",
+        extra_args=["--wrap=preserve"],
+    )
     assert "{=tex}" not in back, back
     assert "\\int_{\\mathbb{R}}" in back, back
 

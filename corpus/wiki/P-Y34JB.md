@@ -11,6 +11,7 @@ classification:
   - fubini-tonelli
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f$ be a measurable function on $\mathbb{R}$. Show that the graph of $f$ has measure zero in $\mathbb{R}^{2}$.

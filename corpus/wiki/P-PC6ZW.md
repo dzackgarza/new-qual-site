@@ -12,6 +12,7 @@ classification:
   - tensor-products
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $R$ be a commutative ring with 1.

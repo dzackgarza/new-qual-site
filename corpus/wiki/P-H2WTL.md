@@ -12,6 +12,7 @@ classification:
   - integrals
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 The question provides some insight into Cauchy's theorem. Solve the

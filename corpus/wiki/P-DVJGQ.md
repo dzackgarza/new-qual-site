@@ -10,6 +10,7 @@ classification:
   - calculus
 relations: []
 review: draft
+solved: false
 ---
 
 ::: problem

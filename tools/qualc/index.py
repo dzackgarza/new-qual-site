@@ -16,8 +16,10 @@ from .model import (
     AcademicTerm,
     ContributedArtifact,
     ExamSource,
+    ExerciseCard,
     OccurrenceCard,
     ParsedCard,
+    ProblemCard,
     SourceCard,
     TermOnly,
     TextbookSource,
@@ -85,8 +87,27 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
             )
         by_id[p.card.id] = p
 
+    solved_by = {rel.target for p in parsed for rel in p.card.relations if rel.kind == "solves"}
     for p in parsed:
         where = f"{p.source_path} ({p.card.id})"
+        if isinstance(p.card, ProblemCard | ExerciseCard):
+            evidence = p.card.id in solved_by or any(kind == "solution" for kind, _ in p.sections)
+            if p.card.solved and not evidence:
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.SOLVED_WITHOUT_EVIDENCE,
+                        where,
+                        "declared solved but no solution section or incoming solves relation",
+                    )
+                )
+            if not p.card.solved and evidence:
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.UNSOLVED_WITH_SOLUTION,
+                        where,
+                        "declared unsolved but a solution section or incoming solves relation exists",
+                    )
+                )
         for area in p.card.classification.areas:
             if area not in vocab["areas"]:
                 errors.append(Diagnostic(DiagnosticCode.UNKNOWN_AREA, where, f"unknown area {area!r}"))
@@ -95,7 +116,13 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                 errors.append(Diagnostic(DiagnosticCode.UNKNOWN_TOPIC, where, f"unknown topic {topic!r}"))
         for rel in p.card.relations:
             if rel.target not in by_id:
-                errors.append(Diagnostic(DiagnosticCode.DANGLING_RELATION, where, f"dangling relation target {rel.target!r}"))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.DANGLING_RELATION,
+                        where,
+                        f"dangling relation target {rel.target!r}",
+                    )
+                )
         if isinstance(p.card, SourceCard):
             # One registry check per variant, matching the union. Only an exam
             # sitting has an institution; a textbook has a registry entry
@@ -103,7 +130,13 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
             # no registry to check against.
             payload = p.card.payload
             if isinstance(payload, ExamSource) and payload.institution not in vocab["institutions"]:
-                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_INSTITUTION, where, f"unknown institution {payload.institution!r}"))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.UNKNOWN_INSTITUTION,
+                        where,
+                        f"unknown institution {payload.institution!r}",
+                    )
+                )
             # `ExamSource.area` is the only payload area field, and it went
             # unchecked while `classification.areas` was checked. That is how
             # `prelim` entered 29 UGA source cards unregistered: nothing rejected
@@ -111,20 +144,56 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
             # know, so 419 cards ended up with `areas: []`. Registering `prelim`
             # fixed those 419; this is what stops the next one.
             if isinstance(payload, ExamSource) and payload.area not in vocab["areas"]:
-                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_AREA, where, f"unknown payload area {payload.area!r}"))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.UNKNOWN_AREA,
+                        where,
+                        f"unknown payload area {payload.area!r}",
+                    )
+                )
             if isinstance(payload, TextbookSource) and payload.textbook not in vocab["textbooks"]:
-                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_TEXTBOOK, where, f"unknown textbook {payload.textbook!r}"))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.UNKNOWN_TEXTBOOK,
+                        where,
+                        f"unknown textbook {payload.textbook!r}",
+                    )
+                )
         if isinstance(p.card, OccurrenceCard):
             src = by_id.get(p.card.payload.source)
             if src is None:
-                errors.append(Diagnostic(DiagnosticCode.OCCURRENCE_MISSING_SOURCE, where, f"names missing source {p.card.payload.source!r}"))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.OCCURRENCE_MISSING_SOURCE,
+                        where,
+                        f"names missing source {p.card.payload.source!r}",
+                    )
+                )
             elif not isinstance(src.card, SourceCard):
-                errors.append(Diagnostic(DiagnosticCode.OCCURRENCE_SOURCE_NOT_A_SOURCE_CARD, where, f"{p.card.payload.source} is not a source card"))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.OCCURRENCE_SOURCE_NOT_A_SOURCE_CARD,
+                        where,
+                        f"{p.card.payload.source} is not a source card",
+                    )
+                )
             targets = [r.target for r in p.card.relations if r.kind == "instance-of"]
             if len(targets) != 1:
-                errors.append(Diagnostic(DiagnosticCode.OCCURRENCE_INSTANCE_OF_COUNT, where, "occurrence needs exactly one instance-of relation"))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.OCCURRENCE_INSTANCE_OF_COUNT,
+                        where,
+                        "occurrence needs exactly one instance-of relation",
+                    )
+                )
             elif targets[0] in by_id and by_id[targets[0]].card.kind != "problem":
-                errors.append(Diagnostic(DiagnosticCode.OCCURRENCE_INSTANCE_OF_NOT_A_PROBLEM, where, "instance-of must target a problem"))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.OCCURRENCE_INSTANCE_OF_NOT_A_PROBLEM,
+                        where,
+                        "instance-of must target a problem",
+                    )
+                )
     return errors
 
 
@@ -140,9 +209,18 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
             "insert into cards values (?,?,?,?,?,?)",
             (c.id, c.kind, c.title, c.review, p.source_path, p.ast),
         )
-        for axis, terms in (("area", c.classification.areas), ("topic", c.classification.topics)):
-            con.executemany("insert into classifications values (?,?,?)", [(c.id, axis, t) for t in terms])
-        con.executemany("insert into relations values (?,?,?)", [(c.id, r.kind, r.target) for r in c.relations])
+        for axis, terms in (
+            ("area", c.classification.areas),
+            ("topic", c.classification.topics),
+        ):
+            con.executemany(
+                "insert into classifications values (?,?,?)",
+                [(c.id, axis, t) for t in terms],
+            )
+        con.executemany(
+            "insert into relations values (?,?,?)",
+            [(c.id, r.kind, r.target) for r in c.relations],
+        )
         for ordinal, (kind, text) in enumerate(p.sections):
             con.execute("insert into sections values (?,?,?,?)", (c.id, kind, ordinal, text))
             con.execute("insert into search values (?,?,?)", (c.id, kind, text))
@@ -168,9 +246,15 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
                         (c.id, c.payload.institution, c.payload.area),
                     )
                 case TextbookSource():
-                    con.execute("insert into textbook_sources values (?,?)", (c.id, c.payload.textbook))
+                    con.execute(
+                        "insert into textbook_sources values (?,?)",
+                        (c.id, c.payload.textbook),
+                    )
                 case ContributedArtifact():
-                    con.execute("insert into artifact_sources values (?,?)", (c.id, c.payload.provenance))
+                    con.execute(
+                        "insert into artifact_sources values (?,?)",
+                        (c.id, c.payload.provenance),
+                    )
         if isinstance(c, OccurrenceCard):
             problem = next(r.target for r in c.relations if r.kind == "instance-of")
             con.execute(

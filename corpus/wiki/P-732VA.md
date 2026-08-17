@@ -11,6 +11,7 @@ classification:
   - subgroups
 relations: []
 review: draft
+solved: true
 ---
 Let $G$ be a group and $H, K < G$ be subgroups of finite index.
 Show that

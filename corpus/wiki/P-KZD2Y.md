@@ -12,6 +12,7 @@ classification:
   - polynomials
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Find the number of roots of $p(z) = z^4 - 6z + 3$ in $\abs{z} < 1$ and

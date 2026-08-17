@@ -10,6 +10,7 @@ classification:
   - functions-and-relations
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

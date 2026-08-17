@@ -12,6 +12,7 @@ classification:
   - contour-integration
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $f(z)$ be analytic in an open set $\Omega$ except possibly at a

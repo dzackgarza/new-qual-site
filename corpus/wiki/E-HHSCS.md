@@ -13,6 +13,7 @@ classification:
   - complex-logarithm
 relations: []
 review: draft
+solved: true
 ---
 :::{.exercise title="$\log(z)/1+z^a$"}
 \[

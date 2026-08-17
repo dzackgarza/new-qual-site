@@ -12,6 +12,7 @@ classification:
   - cohomology
 relations: []
 review: draft
+solved: true
 ---
 :::{.problem title="?"}
 Let $X$ be $S^1$ with two 2-cells attached via $z\mapsto z^5$ and $z\mapsto z^3$.

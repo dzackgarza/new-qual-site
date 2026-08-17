@@ -12,6 +12,7 @@ classification:
   - l1
 relations: []
 review: draft
+solved: true
 ---
 
 ::: problem

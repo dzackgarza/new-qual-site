@@ -10,14 +10,16 @@ classification:
   - maximum-modulus-principle
 relations: []
 review: draft
+solved: true
 ---
-:::{.problem title="?"}
-Let $f$ be analytic on a bounded domain $D$, and assume also that $f$ that is continuous and nowhere zero on the closure $\bar{D}$. 
+
+::: {.problem title="?"}
+Let $f$ be analytic on a bounded domain $D$, and assume also that $f$ that is continuous and nowhere zero on the closure $\bar{D}$.
 
 Show that if $|f(z)|=M$ (a constant) for $z$ on the boundary of $D$, then $f(z)=e^{i \theta} M$ for $z$ in $D$, where $\theta$ is a real constant.
 :::
 
-:::{.solution}
+::: {.solution}
 By the maximum modulus principle, $\abs{f} \leq M$ in $\bar{D}$.
 Since $f$ has no zeros in $\bar{D}$, $g\da 1/f$ is holomorphic on $D$ and continuous on $\bar{D}$.
 So the maximum modulus principle applies to $g$, and $M\inv \geq \abs{g} = 1/\abs{f}$, so $\abs{f} \leq M$.

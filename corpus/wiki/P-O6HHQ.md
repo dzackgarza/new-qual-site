@@ -12,6 +12,7 @@ classification:
   - principal-ideal-domains
 relations: []
 review: draft
+solved: false
 ---
 :::{.problem title="Hungerford 4.2.4"}
 Let $R$ be a principal ideal domain,$A$ a unitary left $R$-module, and $p\in R$ a prime (and thus

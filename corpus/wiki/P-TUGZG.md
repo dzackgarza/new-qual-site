@@ -12,6 +12,7 @@ classification:
   - continuity
 relations: []
 review: draft
+solved: true
 ---
 Let $\theset{f_n}$ be a sequence of continuous functions such that $\sum f_n$ converges uniformly.
 

@@ -11,8 +11,9 @@ classification:
   - hausdorff-spaces
 relations: []
 review: draft
+solved: false
 ---
 
-:::{.problem title="?"}
+::: {.problem title="?"}
 If $X$ is $T_2$ and $A\subseteq X$ is compact, then $A$ is closed.
 :::
