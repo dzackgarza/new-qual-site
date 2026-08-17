@@ -98,6 +98,10 @@ measurement — two cards hold the same bytes, a card has no solution, a title i
 unreadable — named for exactly what it measured. The measurement is a candidate
 for a human to read. It must never be wired to anything that acts on it.
 
+The build reads authored content and renders it. It does not derive fields. A
+build that derives titles, classifications, relations, or any other field is
+fabricating content, not rendering it.
+
 # Solution status
 
 Every problem and exercise card declares `solved: true|false` in its own
