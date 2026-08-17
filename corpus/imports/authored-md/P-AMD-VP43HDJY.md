@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-VP43HDJY
 kind: problem
-title: Describe a CW complex structure for the lens space $L(p, 1)$ and…
+title: CW structure, $\pi_1$, and homology of the lens space $L(p,1)$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-5LBXBRCH
 kind: exercise
-title: Show if $G$ is finite, then $G$ is solvable $\iff$ all of its…
+title: A finite group is solvable iff its composition factors have prime order
 classification:
   areas:
   - algebra

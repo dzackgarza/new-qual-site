@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-Z64PKFNYIN
 kind: problem
-title: (a) Let $f:{\mathbb C}\rightarrow {\mathbb C}$ be an entire
+title: An entire function with $|f(z)|\leq L|z|^m$ for large $|z|$ is a polynomial of degree at most $m$; an entire function with bounded real part is constant
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-LYXHE
 kind: exercise
-title: "If $f, g$ are compactly supported, is it necessarily the case that\u2026"
+title: Compact support and vanishing at infinity of convolutions
 classification:
   areas:
   - real-analysis

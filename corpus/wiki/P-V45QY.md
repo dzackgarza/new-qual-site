@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-V45QY
 kind: problem
-title: "Let $X$ be the topological space constructed by attaching a closed 2-d\u2026"
+title: Every continuous self-map of a $2$-disk attached to $S^1$ by a degree $d$ map has a fixed point, and the connected covering spaces of $X$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: L-ZXBBI
 kind: lemma
-title: "If $f:X\\to Y$ is a nonconstant holomorphic map between Riemann surface\u2026"
+title: Nonconstant holomorphic maps from compact Riemann surfaces
 classification:
   areas:
   - complex-analysis

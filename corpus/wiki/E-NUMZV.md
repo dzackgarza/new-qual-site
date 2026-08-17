@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NUMZV
 kind: exercise
-title: "Let $f(z)$ be entire and assume that $f(z) \\leq M |z|^2$ outside some disk for some\u2026"
+title: Entire functions of quadratic growth are polynomials of degree at most $2$
 classification:
   areas:
   - complex-analysis

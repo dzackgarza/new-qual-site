@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2ZO7O
 kind: exercise
-title: "Show that the nilradical is the intersection of all prime ideals."
+title: The nilradical is the intersection of all prime ideals
 classification:
   areas:
   - algebra

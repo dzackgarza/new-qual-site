@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-D7IX7C4G
 kind: problem
-title: 'Show that there is no map $f: S^2 \to S^1$ that commutes with the…'
+title: No map $S^2\to S^1$ commuting with the antipodal map
 classification:
   areas:
   - topology

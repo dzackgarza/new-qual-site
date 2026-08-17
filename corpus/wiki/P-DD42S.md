@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DD42S
 kind: problem
-title: "Let $E/F$ be a Galois field extension, and let $K/F$ be"
+title: An intermediate field of a Galois extension is normal iff its Galois group is a normal subgroup
 classification:
   areas:
   - algebra

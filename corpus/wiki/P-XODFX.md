@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XODFX
 kind: problem
-title: "Suppose $D$ is an integral domain and the fundamental theorem holds fo\u2026"
+title: Whether an integral domain must be a PID if every finitely generated module is a direct sum of cyclic modules
 classification:
   areas:
   - algebra

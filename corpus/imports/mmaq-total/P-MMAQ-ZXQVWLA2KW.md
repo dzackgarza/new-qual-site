@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ZXQVWLA2KW
 kind: problem
-title: Let $R=C([0,1])$ be the ring of all continuous real-valued functions
+title: Units of $C([0,1])$ are the nowhere-vanishing functions, and every maximal ideal is some $M_c=\{f:f(c)=0\}$
 classification:
   areas:
   - algebra

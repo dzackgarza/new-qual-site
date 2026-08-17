@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4YOJC
 kind: problem
-title: "Suppose $f$ is analytic, defined on all of $\\CC$, and for each $z_0 \\in \\CC$\u2026"
+title: An entire function with a vanishing Taylor coefficient at every point is a polynomial
 classification:
   areas:
   - complex-analysis

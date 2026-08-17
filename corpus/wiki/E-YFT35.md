@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YFT35
 kind: problem
-title: "Prove that $\\boldsymbol{F}_{p^{n}}$ is the splitting field of $x^{p^{n}}-x$ over $\\boldsymbol{F}_{p}$."
+title: $\mathbb{F}_{p^n}$ is the splitting field of $x^{p^n}-x$ over $\mathbb{F}_p$
 classification:
   areas:
   - algebra

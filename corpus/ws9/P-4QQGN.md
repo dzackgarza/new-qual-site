@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4QQGN
 kind: problem
-title: (1) Let $f(x)$ be a real valued function on the real line that is diff…
+title: Measurability of $f'$ and of the differentiability set of a continuous function
 classification:
   areas:
   - real-analysis

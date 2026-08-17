@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-CY7I27YM
 kind: exercise
-title: Show that if $L/K/F$ with $K/F$ algebraic and $L/K$ algebraic then…
+title: Algebraic extensions are transitive
 classification:
   areas:
   - algebra

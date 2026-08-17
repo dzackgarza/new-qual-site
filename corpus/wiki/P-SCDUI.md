@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SCDUI
 kind: problem
-title: "Assume that $\\abs b < 1$ and show that the following polynomial has\u2026"
+title: $z^3+3z^2+bz+b^2$ has exactly two roots in the unit disk when $|b|<1$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FE-YCVIU
 kind: example
-title: 'Give an example of a function that converges almost everywhere but not pointwise or in $L^1$.'
+title: The spikes $n\chi_{(0,1/n)}$ converge pointwise but not in $L^1$
 classification:
   areas:
   - real-analysis

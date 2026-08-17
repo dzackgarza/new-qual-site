@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JETLX
 kind: problem
-title: "Let $f\\in L^1((0, 2\\pi))$."
+title: $L^1((0,2\pi))$ functions as $g+h$ with $g\in L^2$ and $\|h\|_1$ arbitrarily small
 classification:
   areas:
   - real-analysis

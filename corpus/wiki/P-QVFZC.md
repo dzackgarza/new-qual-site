@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QVFZC
 kind: problem
-title: "Let $m_*(E)$ denote the Lebesgue outer measure of a set \\( E \\subseteq\u2026"
+title: Countable subadditivity and outer regularity of Lebesgue outer measure
 classification:
   areas:
   - real-analysis

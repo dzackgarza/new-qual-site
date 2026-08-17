@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4RQ6K
 kind: problem
-title: Let $R$ be a (commutative) principal ideal domain, let $M$ and $N$ be
+title: Kernel of a map of finitely generated free modules over a PID is a direct summand; the image need not be
 classification:
   areas:
   - algebra

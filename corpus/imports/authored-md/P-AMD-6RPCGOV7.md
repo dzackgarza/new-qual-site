@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-6RPCGOV7
 kind: problem
-title: 'Given a group $G = <A : R>$, show how to construct a CW-complex $X$…'
+title: Presentation complex of a group
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XJYW6
 kind: problem
-title: "What can you say about the eigenspaces of two matrices that commute wi\u2026"
+title: Eigenspaces of commuting matrices
 classification:
   areas:
   - algebra

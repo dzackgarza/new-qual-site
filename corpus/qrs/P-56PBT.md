@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-56PBT
 kind: problem
-title: "Let $\\FF$ be a finite field. Give (with proof) the decomposition\u2026"
+title: The additive group of a finite field and cyclicity of its multiplicative group
 classification:
   areas:
   - algebra

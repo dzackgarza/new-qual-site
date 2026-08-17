@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W6TOK
 kind: problem
-title: "$\\displaystyle \\int \\frac {x}{x^4-16} ~dx = \\color{blue} {\\frac {1}{16} (\\ln (x^2 - 4) - \\ln (x^2 + 4))}$ Solution: $u =x^2$, $du = 2x ~dx$ Solution\u2026"
+title: Antiderivatives of $\frac{x}{x^4-16}$ and $\frac{x\tan^{-1}x}{(x^2+1)^2}$
 classification:
   areas:
   - prelim

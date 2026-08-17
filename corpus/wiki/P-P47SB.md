@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P47SB
 kind: problem
-title: "Let $\\mathbb{D}:=\\{z:|z|<1\\}$ denote the open unit disk. Suppose that\u2026"
+title: $|f(0)|\le|a|^2$ for holomorphic $f:\DD\to\DD$ vanishing at $\pm a$, and the equality case
 classification:
   areas:
   - complex-analysis

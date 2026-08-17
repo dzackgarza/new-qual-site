@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BSGSM
 kind: exercise
-title: "Show that normal groups absorb conjugacy classes: if $N\\normal G$ and\u2026"
+title: Normal subgroups are unions of conjugacy classes
 classification:
   areas:
   - algebra

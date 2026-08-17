@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-THK2Z
 kind: exercise
-title: "Show that a real-valued holomorphic function must be constant."
+title: A real-valued holomorphic function is constant
 classification:
   areas:
   - complex-analysis

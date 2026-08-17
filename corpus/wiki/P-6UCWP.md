@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6UCWP
 kind: problem
-title: "Let $C$ be cylinder."
+title: Euler characteristic of a cylinder after identifying two disjoint closed intervals on the boundary, and which bordered surfaces arise
 classification:
   areas:
   - topology

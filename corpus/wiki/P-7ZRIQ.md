@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7ZRIQ
 kind: problem
-title: "Prove that $\\max_{\\abs z = 1} \\abs{a_0 + a_1 z + \\cdots + a_{n-1}z^{n-1} + z^n} \\geq 1$ Write $p(z) \\da a_0 + \\cdots + z^n$."
+title: Rouché's theorem and $\max_{|z|=1}|P(z)|\ge 1$ for a monic polynomial $P$
 classification:
   areas:
   - complex-analysis

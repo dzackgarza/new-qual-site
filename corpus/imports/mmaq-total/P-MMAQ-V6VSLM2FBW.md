@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-V6VSLM2FBW
 kind: problem
-title: a. Let $\mu$ be a measure on a measurable space $(X, \mathcal M)$…
+title: $\int g\,d\lambda=\int fg\,d\mu$ when $\lambda(E)=\int_E f\,d\mu$, and $\int_E x^2\,dm=0$ implies $m(E)=0$
 classification:
   areas:
   - real-analysis

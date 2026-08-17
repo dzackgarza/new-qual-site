@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JYIUP
 kind: problem
-title: "Show that $\\int_{0}^{\\infty} \\frac{\\sin x}{x} d x=\\frac{\\pi}{2}$"
+title: The Dirichlet integral $\int_0^\infty\frac{\sin x}{x}\,dx=\frac{\pi}{2}$
 classification:
   areas:
   - complex-analysis

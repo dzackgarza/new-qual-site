@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OU7QZ
 kind: problem
-title: "Show that if $f$ is an irreducible quintic with precisely two non-real\u2026"
+title: The Galois group of an irreducible quintic with two non-real roots is $S_5$
 classification:
   areas:
   - algebra

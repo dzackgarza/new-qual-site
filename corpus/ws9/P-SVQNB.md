@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SVQNB
 kind: problem
-title: Let $f$ be an entire non-constant function that satisfies the function…
+title: A nonconstant entire function with $f(1-z)=1-f(z)$ is surjective
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KBW6F
 kind: problem
-title: "Let $K$ be a Galois extension of $F$, and let $F \\subset E \\subset K$ be inclusions of\u2026"
+title: $[E:F]\equiv 1\pmod p$ if $\mathrm{Gal}(K/E)$ contains the normalizer of a Sylow $p$-subgroup
 classification:
   areas:
   - algebra

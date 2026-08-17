@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-4M7MSCEI
 kind: exercise
-title: "Show that $H ~\\text{char}~ K ~\\text{char}~G \\Rightarrow H ~\\text{char}~ G$"
+title: $H\operatorname{char} K\operatorname{char} G$ implies $H\operatorname{char} G$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LQEAV
 kind: problem
-title: "Show that for $0 < p < q \\leq \\infty$, $\\norm{a}_{\\ell^q} \\leq \\norm{a}_{\\ell^p}$ over $\\CC$, where $\\norm{a}_{\\infty } \\da \\sup_j \\abs{a_j}$."
+title: $\|a\|_{\ell^q}\le\|a\|_{\ell^p}$ for $0<p<q\le\infty$
 classification:
   areas:
   - real-analysis

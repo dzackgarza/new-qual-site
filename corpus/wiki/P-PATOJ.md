@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PATOJ
 kind: problem
-title: "Let $X$ be Hausdorff, and recall that the one-point\u2026"
+title: The one-point compactification of a Hausdorff space is compact
 classification:
   areas:
   - topology

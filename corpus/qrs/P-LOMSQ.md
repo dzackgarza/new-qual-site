@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LOMSQ
 kind: problem
-title: "Find a fractional linear transformation $T$ which maps $\\HH$ to $\\DD$\u2026"
+title: Cayley map $\mathbb{H}\to\mathbb{D}$ and the image of the first quadrant
 classification:
   areas:
   - complex-analysis

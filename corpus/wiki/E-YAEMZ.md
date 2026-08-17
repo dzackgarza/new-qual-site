@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YAEMZ
 kind: exercise
-title: "Show that if $X$ is second countable and Hausdorff, or a metric space, then TFAE:"
+title: Compactness, limit point compactness, and sequential compactness in second-countable Hausdorff or metric spaces
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KVFWY
 kind: problem
-title: "Suppose that $f: \\CC\\to\\CC$ is continuous everywhere and analytic on $\\CC\\setminus \\RR$ and\u2026"
+title: Continuous on $\CC$ and holomorphic off $\RR$ implies entire
 classification:
   areas:
   - complex-analysis

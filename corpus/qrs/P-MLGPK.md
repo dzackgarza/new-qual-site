@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MLGPK
 kind: problem
-title: "Let $R$ be a simple rng (a nonzero ring which is not assume to\u2026"
+title: Unique 2-divisibility and centrality in a simple rng without zero-divisors or 2-torsion
 classification:
   areas:
   - algebra

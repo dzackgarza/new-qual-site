@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JG7FM
 kind: problem
-title: "Let $n\\geq 3$ and $\\zeta_n$ be a primitive $n$th root of unity. Show t\u2026"
+title: $[\QQ(\zeta_n+\zeta_n^{-1}):\QQ]=\phi(n)/2$
 classification:
   areas:
   - algebra

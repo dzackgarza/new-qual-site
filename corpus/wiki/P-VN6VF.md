@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VN6VF
 kind: problem
-title: "Give an example of a UFD which is not a Euclidean domain."
+title: Example of a UFD that is not a Euclidean domain
 classification:
   areas:
   - algebra

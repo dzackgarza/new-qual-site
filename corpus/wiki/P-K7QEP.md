@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K7QEP
 kind: problem
-title: "Show that $L^2([0, 1]) \u2286 L^1([0, 1])$ and argue that $L^2([0, 1])$ in\u2026"
+title: $L^2([0,1])$ is dense in $L^1([0,1])$, and Riesz representation for $L^1([0,1])$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KUA4E
 kind: problem
-title: "We'll use the fact that $H \\normal N(H)$ for any subgroup $H$ (followi\u2026"
+title: $N(N(P))=N(P)$ for a Sylow $p$-subgroup
 classification:
   areas:
   - algebra

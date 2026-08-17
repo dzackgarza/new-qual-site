@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WNTXK
 kind: exercise
-title: "Suppose $f$ is entire and $f(\\CC) \\subseteq \\HH$."
+title: An entire function with values in $\HH$ is constant
 classification:
   areas:
   - complex-analysis

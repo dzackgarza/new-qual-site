@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DCR24
 kind: problem
-title: "Find Sylow subgroups $P_2, P_3$, and $P_5$ for the three primes $2, 3, 5$ dividing\u2026"
+title: Sylow subgroups of $A_5$, their normalizers, and subgroups of orders $6$, $10$, and $15$
 classification:
   areas:
   - prelim

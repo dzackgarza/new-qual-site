@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JVAGD
 kind: problem
-title: "Let $f : \\mathbb{R} \\to [0,\\infty)$ be a measurable function and $\\varphi : [0,\\infty) \\to [0,\\infty)$ be a monotonic\u2026"
+title: $\int \varphi\circ f=\int_0^\infty m(\{f>t\})\varphi'(t)\,dt$ for absolutely continuous monotonic $\varphi$ with $\varphi(0)=0$
 classification:
   areas:
   - real-analysis

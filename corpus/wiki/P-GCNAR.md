@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GCNAR
 kind: problem
-title: "Consider the following matrix as a linear transformation\u2026"
+title: Invariant factors, indecomposable $\CC[x]$-modules, and Jordan form of a $5\times 5$ matrix
 classification:
   areas:
   - algebra

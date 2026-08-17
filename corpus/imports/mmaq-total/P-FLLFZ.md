@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FLLFZ
 kind: problem
-title: Show that $\sqrt{2+\sqrt{2}}$ is a root of
+title: Galois groups of $\mathbb{Q}(\sqrt{2+\sqrt{2}})/\mathbb{Q}$ and of $x^3-5$
 classification:
   areas:
   - algebra

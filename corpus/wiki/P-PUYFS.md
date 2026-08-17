@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PUYFS
 kind: problem
-title: "Let $(X,d)$ be a metric space, $K\\subset X$ be"
+title: A compact set and a disjoint closed set in a metric space are positively separated
 classification:
   areas:
   - real-analysis

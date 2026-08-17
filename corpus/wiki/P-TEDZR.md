@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TEDZR
 kind: problem
-title: "Let $X = S^1 \\cross B^2 - L$ where $L$ is two linked solid torii insid\u2026"
+title: Homology of a solid torus minus two linked solid tori
 classification:
   areas:
   - topology

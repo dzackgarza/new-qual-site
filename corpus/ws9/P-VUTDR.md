@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VUTDR
 kind: problem
-title: Give an example of each of the following. Justification is not necessa…
+title: Examples of a PID, a UFD, a torsion-free module, and a vanishing tensor product
 classification:
   areas:
   - prelim

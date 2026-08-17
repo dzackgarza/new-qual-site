@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NCKK3
 kind: exercise
-title: "Let $\\bar B(a, r)$ denote the closed disc of radius $r$ about $a\\in \\CC$. Let $f$ be\u2026"
+title: Difference-quotient bound $|f(z)-f(a)|/|z-a|\le 2M/r$ on $\overline{B}(a,r/2)$
 classification:
   areas:
   - complex-analysis

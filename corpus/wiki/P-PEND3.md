@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PEND3
 kind: problem
-title: "Show that continuity of measure from above/below holds for\u2026"
+title: Continuity of outer measure, vanishing integrals, and density in $L^1$
 classification:
   areas:
   - real-analysis

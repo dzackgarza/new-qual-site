@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RJV7Q
 kind: problem
-title: "Let $f: \\RR \\to \\RR$ be Lebesgue measurable. Show that there is a sequence\u2026"
+title: Pointwise simple approximation of measurable functions, and Borel representatives
 classification:
   areas:
   - real-analysis

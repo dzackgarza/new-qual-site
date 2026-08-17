@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6LBCE
 kind: problem
-title: "Let $X = S_1 \\cup S_2 \\subset \\RR^3$ be the union of two spheres of ra\u2026"
+title: CW structure and cellular homology of two intersecting spheres in $\RR^3$
 classification:
   areas:
   - topology

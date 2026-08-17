@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HOJTU
 kind: problem
-title: "It is a fact that if $X$ is a single point then $H_1 (X) = \\theset{0}$\u2026"
+title: Why $H_1$ of a point vanishes in the singular chain complex
 classification:
   areas:
   - topology

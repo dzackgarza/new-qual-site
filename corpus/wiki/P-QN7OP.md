@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QN7OP
 kind: problem
-title: "Let $X$ be a topological space. Prove that $X$ is connected if and\u2026"
+title: Connectedness via maps to $\{0,1\}$, connected fibers over a connected Hausdorff space, and a noncompact counterexample
 classification:
   areas:
   - topology

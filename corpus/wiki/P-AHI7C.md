@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AHI7C
 kind: problem
-title: "Let $R$ be an integral domain and let $M$ be a nonzero torsion $R\\dash$\u2026"
+title: Annihilators of torsion modules over an integral domain
 classification:
   areas:
   - algebra

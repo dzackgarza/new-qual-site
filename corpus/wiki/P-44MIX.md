@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-44MIX
 kind: problem
-title: "Let $R = k[x]$ for $k$ a field and let $M$ be the $R\\dash$module given\u2026"
+title: Elementary divisors and invariant factors of a given $k[x]$-module
 classification:
   areas:
   - algebra

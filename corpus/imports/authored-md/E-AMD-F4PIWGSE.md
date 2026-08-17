@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-F4PIWGSE
 kind: exercise
-title: Suppose $\abs G = 240 = s^4 \cdot 3 \cdot 5$.
+title: Sylow subgroups of a group of order $240$, and subgroups of order $15$
 classification:
   areas:
   - algebra

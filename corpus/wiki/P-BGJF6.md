@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BGJF6
 kind: problem
-title: "A splitting field of $f$ over $F$ is an extension $L \\geq F$ that con\u2026"
+title: Definition of a splitting field
 classification:
   areas:
   - algebra

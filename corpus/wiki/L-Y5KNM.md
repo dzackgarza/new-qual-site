@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: L-Y5KNM
 kind: lemma
-title: "The minimal polynomial of $A$ is the invariant factor of\u2026"
+title: The minimal polynomial is the invariant factor of highest degree
 classification:
   areas:
   - algebra

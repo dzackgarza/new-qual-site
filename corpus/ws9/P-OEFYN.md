@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OEFYN
 kind: problem
-title: "Let $X$ and $Y$ be Hilbert spaces and $L : X \\to Y$ be a bounded linea…"
+title: Compact operators on Hilbert space are norm limits of finite-rank operators
 classification:
   areas:
   - real-analysis

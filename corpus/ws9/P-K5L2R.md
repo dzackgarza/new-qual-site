@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K5L2R
 kind: problem
-title: Let $K$ be the splitting field of $x^3 - 5$ over $\mathbb{Q}$.
+title: 'Splitting field of $x^3-5$ over $\QQ$: degree, Galois group, subfields, and which are Galois over $\QQ$'
 classification:
   areas:
   - prelim

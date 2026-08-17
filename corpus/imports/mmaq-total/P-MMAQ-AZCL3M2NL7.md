@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-AZCL3M2NL7
 kind: problem
-title: '(a) Let $f: D\rightarrow \mathbb C$ be a continuous function, where'
+title: The complex line integral, the $ML$-inequality, and a bound for $\int_{|z|=R}\frac{\log z}{z^2}\,dz$
 classification:
   areas:
   - complex-analysis

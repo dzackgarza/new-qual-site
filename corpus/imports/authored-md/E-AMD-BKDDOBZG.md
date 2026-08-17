@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-BKDDOBZG
 kind: exercise
-title: Show that if an ideal $I\normal R$ contains a unit then $I = R$.
+title: An ideal containing a unit is the whole ring
 classification:
   areas:
   - algebra

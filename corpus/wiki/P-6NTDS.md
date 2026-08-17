@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6NTDS
 kind: problem
-title: "Let $G$ be a nonabelian group of order $p^3$ for $p$ prime. Show that\u2026"
+title: $Z(G)=[G,G]$ for nonabelian groups of order $p^3$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UECFO
 kind: problem
-title: "Let $(\\pi, V)$ be a faithful finite-dimensional representation of $G$."
+title: Every irreducible representation of $G$ appears in a tensor power of a faithful finite-dimensional representation
 classification:
   areas:
   - algebra

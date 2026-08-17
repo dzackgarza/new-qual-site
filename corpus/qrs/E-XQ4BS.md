@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XQ4BS
 kind: exercise
-title: "Show that $h(z) = z + 3 + 2e^z$ has one root in $\\ts{ \\Re(z) \\leq 0}$."
+title: $z+3+2e^z$ has one root in $\{\Re z\le 0\}$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VYOWN
 kind: problem
-title: "$\\displaystyle \\int \\frac {x + \\sin(x)}{1 + \\cos(x)}~dx = \\color {blue} {\\frac {x \\sin (x)}{1 + \\cos (x)}} = \\color {blue} {x \\tan \\frac {x}{2}}$ Solution: $u = x$, $v = \\frac {\\sin (x)}{1 + \\cos (x)}$, $du = dx$\u2026"
+title: Antiderivatives of $\frac{x+\sin x}{1+\cos x}$ and $\frac{xe^x}{(e^x+1)^2}$
 classification:
   areas:
   - prelim

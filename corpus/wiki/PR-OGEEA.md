@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-OGEEA
 kind: proposition
-title: "Singleton sets in $\\RR$ are closed, and thus $\\QQ$ is an $F_\\sigma$ se\u2026"
+title: Singletons in $\RR$ are closed, so $\QQ$ is $F_\sigma$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C2FE5
 kind: problem
-title: "Let $R$ be a ring with the following commutative diagram of $R\\dash$mo\u2026"
+title: Short five lemma
 classification:
   areas:
   - algebra

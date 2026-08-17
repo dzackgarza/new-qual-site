@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YFOG7
 kind: problem
-title: "The splitting field of this polynomial is $\\QQ(\\sqrt[3]2, \\sqrt 3, \\zeta_3)$ where $\\zeta_3$ is a\u2026"
+title: Galois group $D_6$ and intermediate fields of $\QQ(\sqrt[3]{2},\sqrt{3},\zeta_3)/\QQ$
 classification:
   areas:
   - algebra

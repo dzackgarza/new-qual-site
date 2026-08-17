@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NRCTX
 kind: problem
-title: "Assume $f : [0,1] \\to \\mathbb{R}$ is uniformly continuous, increasing…"
+title: Convex increasing functions on $[0,1]$ are differentiable a.e. and satisfy the FTC
 classification:
   areas:
   - real-analysis

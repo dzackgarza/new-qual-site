@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-UWKZNX44M5
 kind: problem
-title: Let $G$ be a group, and $Z(G)$ the center of $G$. Prove that if
+title: If $G/Z(G)$ is cyclic then $G$ is abelian; $p$-groups have nontrivial center; groups of order $p^2$ are abelian
 classification:
   areas:
   - algebra

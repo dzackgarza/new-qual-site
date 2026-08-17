@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-N3EXQFJFIP
 kind: problem
-title: Let $X$ be a topological space, and $B \subset A \subset X$.
+title: $\mathrm{cl}_A(B)=\mathrm{cl}_X(B)\cap A$ for $B\subset A\subset X$
 classification:
   areas:
   - topology

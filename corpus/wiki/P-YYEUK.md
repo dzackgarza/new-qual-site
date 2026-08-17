@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YYEUK
 kind: problem
-title: "Let $f(z)$ be entire and assume that $\\abs{f(z)} \\leq M |z|^2$ outside\u2026"
+title: An entire function with $|f(z)|\leq M|z|^2$ outside a disk is a polynomial of degree at most $2$
 classification:
   areas:
   - complex-analysis

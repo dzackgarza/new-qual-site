@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-X7AK4
 kind: problem
-title: "If $L/K$ is a finite field extension which is both separable and a sp\u2026"
+title: A finite separable splitting field $L/K$ has $[L:K]=|\gal(L/K)|$
 classification:
   areas:
   - algebra

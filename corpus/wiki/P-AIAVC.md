@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AIAVC
 kind: problem
-title: "If you have two linear representations $\\pi_1$ and $\\pi_2$ of a finite\u2026"
+title: Whether representations conjugate at each $g\in G$ are isomorphic
 classification:
   areas:
   - algebra

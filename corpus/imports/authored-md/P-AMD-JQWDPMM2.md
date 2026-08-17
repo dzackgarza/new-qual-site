@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-JQWDPMM2
 kind: problem
-title: "Let $\\{a_n\\}_{n=1}^\\infty$ be a sequence of real numbers. Prove that if $\\displaystyle\\lim_{n\\to\u221e} a_n = 0$, then $\\displaystyle\\lim_{n\\to\u221e} a_1 + \\cdots + a_n = 0$."
+title: $\frac{1}{n}\sum_{k=1}^n a_k\to 0$ if $a_n\to 0$ or $\sum\frac{a_n}{n}$ converges
 classification:
   areas:
   - real-analysis

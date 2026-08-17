@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5YTY5
 kind: problem
-title: Let $\Delta$ be the triangle in $\mathbb{R}^2$ with vertices $(0,1)$,…
+title: The line integral $\int_\Delta y\,dx+2x\,dy$
 classification:
   areas:
   - prelim

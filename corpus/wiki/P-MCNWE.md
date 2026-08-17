@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MCNWE
 kind: problem
-title: "Define what it means for a finite extension of fields $E$ over $F$\u2026"
+title: Galois extensions, $\Gal(x^3-7/\QQ)$, and subfields of the splitting field
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HLKLH
 kind: problem
-title: "Let $f$ be non-constant and holomorphic in an open set containing the\u2026"
+title: A holomorphic function with $|f|=1$ on the unit circle, or $|f|\geq 1$ with an interior point of modulus less than $1$, covers the disc
 classification:
   areas:
   - complex-analysis

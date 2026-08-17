@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NESQN
 kind: problem
-title: "Let $A = S^n - \\theset{n_p = \\text{North Pole}}, B = S^n - \\theset{s_p = \\text{South Pole}}$. Then $A\\union B = S^n$ and $A\\intersect B = S^n - \\theset{n_p, s_p}$."
+title: $\pi_1(S^n)$ by van Kampen on the complements of the north and south poles
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YWMCT
 kind: problem
-title: "Show that $\\int_{\\RR_{\\geq 0}}{x^{-s} \\over x+1} = {\\pi \\over \\sin(\\pi s)}$ Sketch: see\u2026"
+title: $\int_0^\infty\frac{x^{-s}}{x+1}\,dx=\frac{\pi}{\sin(\pi s)}$
 classification:
   areas:
   - complex-analysis

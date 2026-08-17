@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O3LYK
 kind: problem
-title: "Let $U \\subset \\mathbb{C}$ be an open set containing $\\overline{D}(P,r)$."
+title: 'Rouché''s theorem: holomorphic functions uniformly close on a circle have the same number of zeros inside'
 classification:
   areas:
   - real-analysis

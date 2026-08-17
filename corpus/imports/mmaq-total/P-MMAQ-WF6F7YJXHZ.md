@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WF6F7YJXHZ
 kind: problem
-title: "Let $F$ be a field and let $V$ and $W$ be vector spaces over $F$ . Make $V$\u2026"
+title: $F[x]$-modules from linear operators, similarity, and simplicity in dimension $2$
 classification:
   areas:
   - algebra

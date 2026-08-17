@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-QSNCL
 kind: exercise
-title: "Can there be a function $f:I\\to \\RR$ that is continuous on $\\QQ$ and\u2026"
+title: No function continuous on $\QQ$ and discontinuous on $\RR\setminus\QQ$
 classification:
   areas:
   - real-analysis

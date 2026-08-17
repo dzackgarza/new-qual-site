@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MSHRB
 kind: problem
-title: "a. Prove that the operator $T : L^2([0,1]) \\to L^2([0,1])$ defined by…"
+title: Multiplication by $x$ on $L^2([0,1])$ is self-adjoint but not compact
 classification:
   areas:
   - real-analysis

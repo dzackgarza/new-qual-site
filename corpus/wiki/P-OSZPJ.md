@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OSZPJ
 kind: problem
-title: "Describe a cell complex structure on the torus $T = S^1 \\times S^1$ an\u2026"
+title: Cell structure and homology of the torus $S^1\times S^1$
 classification:
   areas:
   - topology

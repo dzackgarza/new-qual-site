@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O5JF6
 kind: problem
-title: Let $f \geq 0$ be a measurable function on $\RR$. Show that
+title: $\int_{\mathbb{R}} f=\int_0^\infty m(\{f>t\})\,dt$ for nonnegative measurable $f$
 classification:
   areas:
   - real-analysis

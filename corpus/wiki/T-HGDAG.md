@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-HGDAG
 kind: theorem
-title: "Baire: If $X$ is a complete metric space, $X$ is a Baire space: the\u2026"
+title: 'Baire category theorem: countable intersections of dense open sets in a complete metric space are dense'
 classification:
   areas:
   - topology

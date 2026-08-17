@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4PCPV
 kind: problem
-title: a. Suppose $A$ and $B$ are false statements. Is the statement
+title: 'Truth of $(A\implies B)\implies(A\vee B)$ when $A$ and $B$ are false, and the negation of: if all blockoids are split and some blockoid is nontrivial, then there is a short blockoid'
 classification:
   areas:
   - prelim

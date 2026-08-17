@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VG7GK
 kind: problem
-title: "Let $\\phi$ be a real-valued function defined on"
+title: $\int_0^1\cos x\frac{x\phi'(x)-\phi(x)+\phi(0)}{x^2}\,dx<\frac{3}{2}\|\phi''\|_\infty$
 classification:
   areas:
   - real-analysis

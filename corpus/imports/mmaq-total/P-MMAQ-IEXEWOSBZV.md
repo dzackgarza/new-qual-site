@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-IEXEWOSBZV
 kind: problem
-title: 'a. Prove that for every continuous map $f : S^2 \to S^2$ there is…'
+title: Every continuous map $S^2\to S^2$ meets $x$ or $-x$; a map $S^3\to S^3$ that meets neither
 classification:
   areas:
   - topology

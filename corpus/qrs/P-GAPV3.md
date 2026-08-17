@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GAPV3
 kind: problem
-title: "For $s>0$, the gamma function is defined by $\\displaystyle{\\Gamma(s)=\\int_0^{\\infty} e^{-t}t^{s-1} dt}$. Show that the\u2026"
+title: Holomorphy of $\Gamma$ on $\operatorname{Re}s>0$ and the reflection formula $\Gamma(s)\Gamma(1-s)=\pi/\sin(\pi s)$
 classification:
   areas:
   - complex-analysis

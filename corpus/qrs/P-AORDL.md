@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AORDL
 kind: problem
-title: "Let $f$ be non-constant, analytic in $\\abs{z} > 0$, where $f(z_n) = 0$"
+title: An isolated singularity at $0$ is essential if a nonconstant analytic $f$ on $|z|>0$ has zeros accumulating at $0$
 classification:
   areas:
   - complex-analysis

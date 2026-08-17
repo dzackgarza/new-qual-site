@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EHBDD
 kind: problem
-title: In this question, $R$ is a ring and $e \in R$ is an idempotent, so tha…
+title: Semisimplicity of $eRe$ for an idempotent $e$, Artin–Wedderburn, and $J(eRe)=eJ(R)e$
 classification:
   areas:
   - algebra

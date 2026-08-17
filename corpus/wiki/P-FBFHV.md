@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FBFHV
 kind: problem
-title: "Compute, by any means available, the fundamental group and all the hom\u2026"
+title: Fundamental group and homology of two $2$-spheres glued by a two-sheeted covering of equators
 classification:
   areas:
   - topology

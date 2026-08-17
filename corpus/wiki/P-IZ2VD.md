@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IZ2VD
 kind: problem
-title: "Let $F = \\FF_p$ , where $p$ is a prime number. Show that if $\\pi(x) \\in F[x]$ is\u2026"
+title: Irreducibles of degree $d$ over $\FF_p$ divide $x^{p^d}-x$, and divide $x^{p^n}-x$ only if $d$ divides $n$
 classification:
   areas:
   - algebra

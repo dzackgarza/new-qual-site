@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZDQO
 kind: problem
-title: "Let $p, q$ be distinct primes."
+title: No simple group of order $pq^k$ with $k$ the order of $q$ in $(\ZZ/p\ZZ)^\times$, nor of order $pq$
 classification:
   areas:
   - algebra

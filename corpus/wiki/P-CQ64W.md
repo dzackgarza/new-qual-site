@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CQ64W
 kind: problem
-title: "Describe the universal cover of $X = (S^1 \\cross S^1) \\vee S^2$ and co\u2026"
+title: Universal cover of $(S^1\times S^1)\vee S^2$ and $\pi_2$
 classification:
   areas:
   - topology

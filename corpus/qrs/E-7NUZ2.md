@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-7NUZ2
 kind: exercise
-title: "Let $A\\subset X$ with $A$ closed and $X$ compact, and show that $A$ is compact.\u2026"
+title: Closed subsets of compact spaces are compact
 classification:
   areas:
   - topology

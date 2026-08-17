@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-COY2N
 kind: problem
-title: "Let $f: [0, 1] \\to \\RR$ be continuous."
+title: $\sup_{\|g\|_1\le 1}\|fg\|_1=\|f\|_\infty$ for continuous $f$ on $[0,1]$
 classification:
   areas:
   - real-analysis

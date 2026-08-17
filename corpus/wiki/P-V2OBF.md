@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-V2OBF
 kind: problem
-title: "Describe each set in the $z$-plane in (a) and (b) below, where\u2026"
+title: The sets $|z-\alpha|+|z+\alpha|=k$ and $|z-\alpha|+|z+\alpha|\leq k$ for $2|\alpha|<k$
 classification:
   areas:
   - complex-analysis

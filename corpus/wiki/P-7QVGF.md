@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7QVGF
 kind: problem
-title: Show that if $f$ is continuous with compact support on $\RR$, then
+title: Continuity of translation in $L^1$ for $f\in C_c(\RR)$, and $L^1$-boundedness and convergence of the averages $\mathcal{A}_h f$
 classification:
   areas:
   - real-analysis

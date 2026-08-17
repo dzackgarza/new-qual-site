@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6ATGL
 kind: problem
-title: "Let $A \\subset X$."
+title: $H_0(X,A)=0$ if and only if $A$ meets every path-component of $X$
 classification:
   areas:
   - topology

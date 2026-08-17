@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IXED6
 kind: problem
-title: Suppose that $R$ is a principal-ideal domain and $a, b, c, d \in R$ wi…
+title: A generator of $(a)\vee(b)$ in a PID, and $x\equiv c\pmod{(a)}$, $x\equiv d\pmod{(b)}$ iff $c\equiv d\pmod{(a)\vee(b)}$
 classification:
   areas:
   - prelim

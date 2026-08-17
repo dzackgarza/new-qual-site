@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JXSSW
 kind: problem
-title: "For the following functions, find the Laurent series about $0$ and cla\u2026"
+title: Laurent series and singularities at $0$ of $\sin^2(z)/z$, $z\exp(1/z^2)$, and $1/(z(4-z))$
 classification:
   areas:
   - complex-analysis

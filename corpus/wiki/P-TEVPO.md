@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TEVPO
 kind: problem
-title: "Parts Suppose $\\exists M_g \\suchthat \\forall x,~ g(x) < M$."
+title: $\lim_{x\to 0}f(x)=0$ and $g$ bounded imply $f(x)g(x)\to 0$, with a counterexample if $g$ is unbounded
 classification:
   areas:
   - prelim

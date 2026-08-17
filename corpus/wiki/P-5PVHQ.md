@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5PVHQ
 kind: problem
-title: "Let $R$ be a commutative ring and $M$ an $R-$module."
+title: 'Torsion elements of an $R$-module: definition, an infinite cyclic example, and the torsion submodule over a domain'
 classification:
   areas:
   - algebra

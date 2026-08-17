@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HOGMY
 kind: problem
-title: "Suppose that $f: \\mathbb{D} \\rightarrow \\mathbb{D}$ is holomorphic and\u2026"
+title: Iterates of a holomorphic self-map of the disc fixing $0$ converge to $0$ or the identity
 classification:
   areas:
   - complex-analysis

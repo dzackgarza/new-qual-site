@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZCQLF
 kind: problem
-title: Let $L$ be a Galois extension of a field $K$ of degree 4.
+title: The number of intermediate fields of a degree-$4$ Galois extension, and of a degree-$4$ separable extension
 classification:
   areas:
   - algebra

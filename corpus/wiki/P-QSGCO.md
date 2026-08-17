@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QSGCO
 kind: problem
-title: "Given a normal subgroup $H$ of a finite group $G$, we lift all the rep\u2026"
+title: Representations of $G$ lifted from $G/H$ have common kernel $H$, and the commutator subgroup
 classification:
   areas:
   - algebra

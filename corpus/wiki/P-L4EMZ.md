@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L4EMZ
 kind: problem
-title: "Let $X$ be a topological space. State what it means for $X$ to be\u2026"
+title: Compactness of $\{0\}\cup\{1/n\}$ and of $(0,1]$
 classification:
   areas:
   - topology

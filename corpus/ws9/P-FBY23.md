@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FBY23
 kind: problem
-title: a. State the Cauchy integral formula and use it to evaluate the comple…
+title: Cauchy integral formula for $\oint_\gamma z^2/(z-i)\,dz$ on a circle about $i$
 classification:
   areas:
   - prelim

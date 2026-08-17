@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-QVSLML4F
 kind: problem
-title: Compute $H_*(X\cross S^n)$ in terms of $H_*(X)$
+title: Homology of $X\times S^n$ in terms of $H_*(X)$, and of $T^n$
 classification:
   areas:
   - topology

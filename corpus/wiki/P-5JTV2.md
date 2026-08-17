@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5JTV2
 kind: problem
-title: "Let $p : X \\to Y$ be a covering space, where $X$ is compact, path-conn\u2026"
+title: A covering with compact total space is finite-sheeted of degree $[\pi_1(Y):p_*\pi_1(X)]$
 classification:
   areas:
   - topology

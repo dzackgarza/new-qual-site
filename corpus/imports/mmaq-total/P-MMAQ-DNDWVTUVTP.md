@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-DNDWVTUVTP
 kind: problem
-title: (a) Let $f (x)$ be an irreducible polynomial of degree 4 in $\QQ[x]$…
+title: No intermediate fields in $\QQ[\theta]$ when $\mathrm{Gal}(K/\QQ)=S_4$; Galois quartics always have one
 classification:
   areas:
   - algebra

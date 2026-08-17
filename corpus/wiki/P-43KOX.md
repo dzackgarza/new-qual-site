@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-43KOX
 kind: problem
-title: "Prove that the product of two connected topological spaces is connecte\u2026"
+title: The product of two connected spaces is connected
 classification:
   areas:
   - topology

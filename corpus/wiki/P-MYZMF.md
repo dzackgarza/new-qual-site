@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MYZMF
 kind: problem
-title: "Let $f$ be analytic in a domain $D$ and fix $z_0 \\in D$ with $w_0 \\definedas f(z_0)$. Suppose $z_0$ is a\u2026"
+title: A holomorphic function is locally $m$-to-$1$ near a zero of multiplicity $m$
 classification:
   areas:
   - complex-analysis

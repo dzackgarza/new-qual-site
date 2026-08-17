@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-SCPS5BJPWE
 kind: problem
-title: 'Let $X$ be a CW complex and let $\pi : Y \to X$ be a covering space.'
+title: A covering of a CW complex is compact iff the base is compact and the degree is finite; $\chi(Y)=d\chi(X)$; a covering of $\RP^N$ is a homeomorphism if $N$ is even
 classification:
   areas:
   - topology

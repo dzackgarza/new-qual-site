@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-PTGAAH4QQF
 kind: problem
-title: Let $F$ be a field of characteristic zero, and let $K$
+title: An algebraic extension of a characteristic-zero field in which every polynomial over $F$ has a root is algebraically closed
 classification:
   areas:
   - algebra

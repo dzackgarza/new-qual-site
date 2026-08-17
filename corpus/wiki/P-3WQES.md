@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3WQES
 kind: problem
-title: "Identify (with proof, but of course you can appeal to the classificati\u2026"
+title: Closed surfaces with one $0$-cell and two $1$-cells
 classification:
   areas:
   - topology

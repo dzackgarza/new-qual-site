@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-COFTP
 kind: problem
-title: "Show that if $a>0$, then $\\int_{0}^{\\infty} \\frac{\\log x}{x^{2}+a^{2}} d x=\\frac{\\pi}{2 a} \\log a$"
+title: $\int_0^\infty\frac{\log x}{x^2+a^2}\,dx=\frac{\pi}{2a}\log a$ for $a>0$
 classification:
   areas:
   - complex-analysis

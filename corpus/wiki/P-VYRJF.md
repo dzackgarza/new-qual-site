@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VYRJF
 kind: problem
-title: "Compute the following limit and justify your calculations: $\\lim_{n\\to\\infty} \\int_0^n \\qty{1 + {x^2 \\over n}}^{-(n+1)} \\,dx$"
+title: $\lim_{n\to\infty}\int_0^n(1+x^2/n)^{-(n+1)}\,dx$
 classification:
   areas:
   - real-analysis

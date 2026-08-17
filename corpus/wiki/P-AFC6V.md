@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AFC6V
 kind: problem
-title: "Let $G$ be a group of order 96."
+title: A group of order $96$ has one or three Sylow $2$-subgroups, and a normal subgroup of order $32$ or $16$
 classification:
   areas:
   - algebra

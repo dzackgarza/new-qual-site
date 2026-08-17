@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-IPIKC
 kind: exercise
-title: "Show that if $\\abs{f(z)/z^n}$ is bounded for $\\abs{z}\\geq R$, then $f$\u2026"
+title: Entire functions with $|f(z)/z^{n}|$ bounded at infinity are polynomials of degree at most $n$
 classification:
   areas:
   - complex-analysis

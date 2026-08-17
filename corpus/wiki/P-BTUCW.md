@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BTUCW
 kind: problem
-title: "Prove the open mapping theorem for holomorphic functions: If $f$ is a\u2026"
+title: Open mapping theorem for holomorphic functions
 classification:
   areas:
   - complex-analysis

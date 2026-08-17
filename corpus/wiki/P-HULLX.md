@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HULLX
 kind: problem
-title: "Let $p, n$ be integers such that $p$ is prime and $p$ does not divide\u2026"
+title: Groups of order $p^m n$ are not simple for sufficiently large $m$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-6FSWY
 kind: definition
-title: "Retract: A retract $r$ of $B$ onto a subspace $A$ is a map $r:B\\to A$ that is a\u2026"
+title: Retract
 classification:
   areas:
   - topology

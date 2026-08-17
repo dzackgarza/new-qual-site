@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMCHV
 kind: problem
-title: "Define $f(x) = \\sum_{n=1}^{\\infty} \\frac{1}{n^{x}}$ Show that $f$ converges to a differentiable function on\u2026"
+title: Termwise differentiation of $\sum n^{-x}$ on $(1,\infty)$
 classification:
   areas:
   - real-analysis

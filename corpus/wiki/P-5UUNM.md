@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5UUNM
 kind: problem
-title: "Show that $Z(G) \\leq G$ is always characteristic."
+title: $Z(G)$ is characteristic in $G$
 classification:
   areas:
   - algebra

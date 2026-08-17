@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RP7WR
 kind: problem
-title: a. What finite groups $G$ can occur as collections of automorphisms of…
+title: Finite subgroups of field automorphism groups, and of finite-field automorphism groups
 classification:
   areas:
   - prelim

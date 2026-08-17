@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FYGQ6
 kind: problem
-title: "Prove that the radius of convergence, $R$, of"
+title: Radius of $\sum a_n b_n x^n$ at least the product of the radii of $\sum a_n x^n$ and $\sum b_n x^n$, strictly in an example
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MNEPM
 kind: problem
-title: "Let $X$ be a normed vector space."
+title: 'Linear functionals: definition, boundedness equivalent to continuity, and completeness of the dual'
 classification:
   areas:
   - real-analysis

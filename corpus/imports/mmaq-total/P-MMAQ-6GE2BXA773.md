@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-6GE2BXA773
 kind: problem
-title: Let $p$ be a positive prime number, $\mathbb F_p$ the field with $p$…
+title: Order of $\GL_2(\FF_p)$ and its subgroups of order $p$
 classification:
   areas:
   - algebra

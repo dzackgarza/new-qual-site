@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JLPVR
 kind: problem
-title: "Let $L \\subset \\mathbb{R}^2$ be the line spanned by the vector $\\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$."
+title: The projection onto the line $x+2y=0$ along $\operatorname{span}\{(1,2)\}$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-VI5ZS
 kind: exercise
-title: "Show that $\\del_{\\log}(fg) = \\del_{\\log} f + \\del_{\\log} g$, i.e."
+title: 'The logarithmic derivative of a product: $\frac{(fg)''}{fg}=\frac{f''}{f}+\frac{g''}{g}$'
 classification:
   areas:
   - complex-analysis

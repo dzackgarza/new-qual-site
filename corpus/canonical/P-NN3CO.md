@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NN3CO
 kind: problem
-title: Show that the field extension...
+title: Galois group of $\QQ(\sqrt{2+\sqrt{2}})/\QQ$
 classification:
   areas:
   - algebra

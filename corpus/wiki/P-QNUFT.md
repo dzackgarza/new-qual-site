@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QNUFT
 kind: problem
-title: "Main idea: just algebraic manipulations using the $\\pi_1$ functor\u2026"
+title: Paths with common endpoints in a simply connected space are homotopic
 classification:
   areas:
   - topology

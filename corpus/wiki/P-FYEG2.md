@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FYEG2
 kind: problem
-title: "Let $G$ be a finite group and $s, t\\in G$ be two distinct elements of\u2026"
+title: Two distinct involutions in a finite group generate a dihedral subgroup
 classification:
   areas:
   - algebra

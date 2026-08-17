@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SHNTG
 kind: problem
-title: Let $R$ be a ring (with unit).
+title: Definition of an ideal, the join $I\vee J$, the product $IJ\subseteq I\cap J$, and whether every ideal contained in $I$ and $J$ lies in $IJ$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-2U22PXH5Q6
 kind: problem
-title: "Let $(X, d)$ and $(Y, \\rho)$ be metric spaces, $f: X\\to Y$, and $x_0 \\in X$. Prove that the\u2026"
+title: Equivalence of $\varepsilon$-$\delta$ and sequential continuity at a point
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SKT7G
 kind: problem
-title: "Let $f:\\mathbb{R}\\to\\mathbb{R}$ be a"
+title: $\lim_{x\to\infty}f'(x)=0$ whenever $\lim f$ and $\lim f'$ exist at infinity; a counterexample when $\lim f'$ fails to exist
 classification:
   areas:
   - real-analysis

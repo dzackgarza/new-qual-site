@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ITOYB
 kind: problem
-title: "Similarly, since $R/(p)$ is a field, it suffices to show that $R/(p)\\actson A[p]$\u2026"
+title: The $p$-torsion $A[p]$ is an $R/(p)$-module
 classification:
   areas:
   - algebra

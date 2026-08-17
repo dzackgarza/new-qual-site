@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-Q6AYEND4IC
 kind: problem
-title: Let $R$ be an integral domain. Recall that if $M$ is an…
+title: Rank of $\mathrm{tor}(M)$ is zero; non-principal ideals are not free
 classification:
   areas:
   - algebra

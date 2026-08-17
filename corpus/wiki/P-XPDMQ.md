@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XPDMQ
 kind: problem
-title: "Main Idea: Exact same idea as 1, just a more complicated\u2026"
+title: Homotopy $H(x,t)=P(tf(x)+(1-t)g(x))$ when $f(x)\neq -g(x)$
 classification:
   areas:
   - topology

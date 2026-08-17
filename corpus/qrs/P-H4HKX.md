@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-H4HKX
 kind: problem
-title: "Assume $f$ is continuous in the region: $0< |z-a| \\leq R, \\; 0 \\leq \\arg(z-a) \\leq \\beta_0$\u2026"
+title: Integral over a vanishing circular arc equals $iA\beta_0$
 classification:
   areas:
   - complex-analysis

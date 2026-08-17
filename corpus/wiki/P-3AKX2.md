@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3AKX2
 kind: problem
-title: "Let $S$ be a connected surface, and let $U$ be a connected open subset\u2026"
+title: $p^{-1}(U)$ is connected iff $i_*:\pi_1(U)\to\pi_1(S)$ is surjective
 classification:
   areas:
   - topology

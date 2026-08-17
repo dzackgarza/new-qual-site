@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-T72Q6DK42M
 kind: problem
-title: "Let $\\{f_k\\}$ be any sequence of functions in $L^2([0, 1])$ satisfying $\\norm{f_k}_2 \\leq M$ for all $k \\in \\NN$."
+title: If $f_k\to f$ a.e. with $\|f_k\|_2\leq M$ on $[0,1]$, then $f\in L^2$, $\|f\|_2\leq M$, and $\int f_k\to\int f$
 classification:
   areas:
   - real-analysis

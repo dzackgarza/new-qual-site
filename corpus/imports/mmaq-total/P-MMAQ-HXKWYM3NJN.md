@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-HXKWYM3NJN
 kind: problem
-title: "Suppose that $f$ is holomorphic in an open set containing the\u2026"
+title: Nonvanishing Taylor coefficients and $c_n/c_{n+1}\to z_0$ for a pole on the unit circle
 classification:
   areas:
   - complex-analysis

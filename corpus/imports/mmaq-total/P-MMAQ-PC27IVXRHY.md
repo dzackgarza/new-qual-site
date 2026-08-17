@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-PC27IVXRHY
 kind: problem
-title: "Let $f, g \\in L^2(\\RR)$. Prove that the formula $h(x):=\\int_{-\\infty}^{\\infty} f(t) g(x-t) d t$ defines a uniformly\u2026"
+title: Convolution of two $L^2$ functions is uniformly continuous
 classification:
   areas:
   - real-analysis

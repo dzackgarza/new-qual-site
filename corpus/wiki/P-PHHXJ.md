@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PHHXJ
 kind: problem
-title: "$\\displaystyle \\int \\sqrt {1 -x^2} ~dx = \\frac {1}{2} (\\sin ^{-1} (x) + \\frac {1}{2} \\sin (2 \\sin ^{-1} (x))) = \\color {blue} {\\frac {1}{2} (\\sin ^{-1} (x) + x \\sqrt {1 - x^2})}$ Solution: $\\sin (u) = x\u200b$\u2026"
+title: Integrals of $\sqrt{1-x^2}$, $\sqrt{16-x^2}$ on $[-4,4]$, and $(1+x)\sqrt{1-x^2}$ on $[-1,1]$
 classification:
   areas:
   - prelim

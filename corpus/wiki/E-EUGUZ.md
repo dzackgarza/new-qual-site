@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EUGUZ
 kind: exercise
-title: "Show that if $f, g$ are entire with $\\abs{f(z)}\\leq \\abs{g(z)}$, then\u2026"
+title: Entire functions with $|f|\leq|g|$ are scalar multiples
 classification:
   areas:
   - complex-analysis

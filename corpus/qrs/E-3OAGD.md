@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3OAGD
 kind: exercise
-title: "$\\star$: Show that if $E\\subseteq \\RR^n$ is measurable then $m(E) = \\sup \\theset{ m(K) \\suchthat K\\subset E\\text{ compact}}$ iff for all $\\eps> 0$ there\u2026"
+title: Inner approximation of a finite-measure set by compact subsets
 classification:
   areas:
   - real-analysis

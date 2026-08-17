@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CJ16Y
 kind: problem
-title: "$\\displaystyle \\int \\cos (x+\\frac {\\pi}{4}) \\cos(x- \\frac {\\pi}{4}) ~dx = \\color {blue} {\\frac {1}{4} \\sin(2x)}$ Solution: $\\cos (x+\\frac {\\pi}{4}) \\cos (x- \\frac {\\pi}{4}) = \\frac {1}{2} (\\cos ((x + \\frac {\\pi}{4}) + (x - \\frac {\\pi}{4})) + \\cos ((x + \\frac {\\pi}{4}) - (x - \\frac {\\pi}{4}))) = \\frac {1}{2} \\cos (2x)$\u2026"
+title: Integrals of $\cos(x+\pi/4)\cos(x-\pi/4)$, $\sin(4x)\cos(3x)$, and $\cos x\cos 2x\sin 3x$
 classification:
   areas:
   - prelim

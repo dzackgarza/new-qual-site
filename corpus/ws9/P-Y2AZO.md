@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y2AZO
 kind: problem
-title: "For $f:\\mathbb{R}\\to\\mathbb{R}$ in $L^1(\\mathbb{R})$, let $Mf$ be the…"
+title: The Hardy–Littlewood weak-type $(1,1)$ inequality
 classification:
   areas:
   - real-analysis

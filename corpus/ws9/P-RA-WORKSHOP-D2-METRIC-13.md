@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-13
 kind: problem
-title: 'Verify that an induced norm metric satisfies the metric axioms'
+title: A norm induces a metric $d(x,y)=\|x-y\|$, but not every metric on a vector space arises from a norm
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UN3G3
 kind: problem
-title: "How do you determine the number and sizes of the blocks for Jordan can\u2026"
+title: The number and sizes of Jordan blocks
 classification:
   areas:
   - algebra

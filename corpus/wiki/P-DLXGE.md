@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DLXGE
 kind: problem
-title: "a. Let $S_1$ and $S_2$ be disjoint surfaces."
+title: Connected sum of surfaces, and $\pi_1(\RP^2\# T^2)$
 classification:
   areas:
   - topology

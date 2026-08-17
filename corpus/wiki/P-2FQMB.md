@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2FQMB
 kind: problem
-title: "Give an example of a $\\CC\\dash$algebra which is not semisimple."
+title: A non-semisimple $\CC$-algebra
 classification:
   areas:
   - algebra

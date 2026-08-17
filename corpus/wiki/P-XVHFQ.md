@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XVHFQ
 kind: problem
-title: "Let $f_n(x) = \\begin{cases} \\frac{1}{n} & x \\in (\\frac{1}{2^{n+1}}, \\frac{1}{2^n}] \\\\ 0 & \\text{ otherwise}.\\end{cases}$ Show that $\\sum_{n=1}^\\infty f_n$ does not satisfy the Weierstrass M-test but\u2026"
+title: $\sum f_n$ with $f_n=\frac1n$ on $(2^{-(n+1)},2^{-n}]$ converges uniformly without the Weierstrass $M$-test
 classification:
   areas:
   - real-analysis

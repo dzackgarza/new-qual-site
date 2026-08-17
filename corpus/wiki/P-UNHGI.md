@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UNHGI
 kind: problem
-title: "$\\displaystyle \\int \\frac {x+1}{x^2+2x+3} ~dx = \\color{blue} {\\frac 1 2 \\ln(x^2 + 2x + 3)}\u200b$ Solution: $u = x^2 + 2x + 3$\u2026"
+title: Antiderivative of $\frac{x+1}{x^2+2x+3}$
 classification:
   areas:
   - prelim

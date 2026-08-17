@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-L6SGU
 kind: definition
-title: "Compact: A topological space $(X, \\tau)$ is compact iff $X$ is Hausdorff and\u2026"
+title: Compact as Hausdorff and quasicompact
 classification:
   areas:
   - topology

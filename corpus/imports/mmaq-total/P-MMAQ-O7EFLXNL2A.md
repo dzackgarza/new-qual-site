@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-O7EFLXNL2A
 kind: problem
-title: "If $f$ is a nonnegative measurable function on $\\mathbb{R}$ and $p > 0$, show\u2026"
+title: Layer-cake formula $\int f^p=\int_0^\infty p t^{p-1}\,m(\{f>t\})\,dt$
 classification:
   areas:
   - real-analysis

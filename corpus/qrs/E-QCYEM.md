@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-QCYEM
 kind: exercise
-title: "Show that if $\\phi$ is an approximate identity, then $\\norm{f\\ast \\phi_t - f}_1 \\converges{t\\to 0}\\to 0$"
+title: $\|f\ast\phi_t-f\|_1\to 0$ as $t\to 0$ for an approximate identity $\phi$
 classification:
   areas:
   - real-analysis

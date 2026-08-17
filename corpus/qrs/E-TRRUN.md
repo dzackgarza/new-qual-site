@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TRRUN
 kind: exercise
-title: "Show that a compact Hausdorff space is is metrizable iff it\u2026"
+title: A compact Hausdorff space is metrizable iff it is second-countable
 classification:
   areas:
   - topology

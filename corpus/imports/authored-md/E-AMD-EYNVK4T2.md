@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-EYNVK4T2
 kind: exercise
-title: Show that an $m\dash$cycle is an odd permutation iff $m$ is an even…
+title: An $m$-cycle is odd iff $m$ is even
 classification:
   areas:
   - algebra

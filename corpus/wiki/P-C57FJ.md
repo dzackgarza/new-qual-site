@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C57FJ
 kind: problem
-title: "Suppose that $f$ is an analytic function in the region $D$ which\u2026"
+title: Unique zero of $z-a-qf(z)$ when $|q|$ is small, and a residue formula for $G(w)/F'(w)$
 classification:
   areas:
   - complex-analysis

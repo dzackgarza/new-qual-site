@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SGK4K
 kind: problem
-title: "Let $A$ denote a subset of points of $S^2$ that looks exactly like the\u2026"
+title: Quotient of $S^2$ by collapsing a letter $A$ to a point
 classification:
   areas:
   - topology

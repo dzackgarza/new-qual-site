@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GSTFL
 kind: problem
-title: "Suppose $\\theset{g_n}$ is a uniformly convergent sequence of functions\u2026"
+title: Uniformly continuous functions preserve uniform convergence of sequences
 classification:
   areas:
   - complex-analysis

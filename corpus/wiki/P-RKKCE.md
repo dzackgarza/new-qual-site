@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RKKCE
 kind: problem
-title: "Compute the integral"
+title: $\int_{-\infty}^{\infty}\frac{e^{-2\pi ix\xi}}{\cosh\pi x}\,dx$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GT22M
 kind: problem
-title: We have $F \leq E \leq K$. Suppose that
+title: If $K/F$ is cyclic and $E/F$ is normal then $E/F$ and $K/E$ are cyclic
 classification:
   areas:
   - algebra

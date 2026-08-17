@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-RAH2KRS5CV
 kind: problem
-title: "A metric space is said to be totally bounded if for every $\\eps > 0$\u2026"
+title: Total boundedness iff every sequence has a Cauchy subsequence; a closed bounded set that is not totally bounded
 classification:
   areas:
   - topology

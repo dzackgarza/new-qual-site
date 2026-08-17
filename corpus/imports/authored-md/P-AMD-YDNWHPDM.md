@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-YDNWHPDM
 kind: problem
-title: "Use $n$-th roots of unity (i.e. solutions of $z^n - 1 =0$) to show that $2^{n-1} \\sin\\frac{\\pi}{n} \\sin\\frac{2\\pi}{n} \\cdots \\sin\\frac{(n-1)\\pi}{n} = n \\;$\u2026"
+title: $2^{n-1}\prod_{k=1}^{n-1}\sin(k\pi/n)=n$, polar Cauchy–Riemann equations, and holomorphy of $\log z$
 classification:
   areas:
   - complex-analysis

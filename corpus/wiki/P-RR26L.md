@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RR26L
 kind: problem
-title: "Suppose $A^* = A$."
+title: Self-adjoint operators have real eigenvalues and are unitarily diagonalizable, and Schur's theorem
 classification:
   areas:
   - algebra

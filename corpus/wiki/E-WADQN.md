@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WADQN
 kind: exercise
-title: "Show that if $f:X\\to \\RR$ and $X$ is compact then $f$ is bounded and attains\u2026"
+title: Extreme value theorem
 classification:
   areas:
   - topology

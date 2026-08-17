@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZDYAF
 kind: problem
-title: "Let $\\begin{aligned}M &= \\{(w, x, y, z) \\in \\ZZ^4 \\suchthat w + x + y + z \\in 2\\ZZ\\} \\\\ N &= \\ts{ (w, x, y, z) \\in \\ZZ^4 \\suchthat 4\\divides (w - x),~ 4\\divides (x - y),~ 4\\divides ( y - z) }\\end{aligned}$ Show that $N$\u2026"
+title: Aligned bases for the even-sum submodule $M\subseteq\ZZ^4$ and the submodule $N$ defined by $4\mid(w-x)$, $4\mid(x-y)$, $4\mid(y-z)$, and the structure of $M/N$
 classification:
   areas:
   - algebra

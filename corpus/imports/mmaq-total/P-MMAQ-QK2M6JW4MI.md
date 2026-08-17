@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-QK2M6JW4MI
 kind: problem
-title: "Given a finite group $G$, recall that its regular\u2026"
+title: Irreducible representations of $\mathrm{GL}_2(\mathbb{F}_2)$, and reducibility of the adjoint representation in order $12$
 classification:
   areas:
   - algebra

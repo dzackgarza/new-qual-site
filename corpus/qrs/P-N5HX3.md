@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N5HX3
 kind: problem
-title: "Suppose $(X, d)$ is a compact metric space and $U$ is an open covering\u2026"
+title: Lebesgue number lemma
 classification:
   areas:
   - topology

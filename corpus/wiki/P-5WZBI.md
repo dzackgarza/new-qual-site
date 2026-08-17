@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5WZBI
 kind: problem
-title: "a. Using Sylow theory, show that every group of order $2p$ where $p$ i\u2026"
+title: Classification of groups of order $2p$
 classification:
   areas:
   - algebra

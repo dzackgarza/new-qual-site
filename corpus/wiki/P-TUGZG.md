@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TUGZG
 kind: problem
-title: "Let $\\theset{f_n}$ be a sequence of continuous functions such that $\\sum f_n$\u2026"
+title: A uniformly convergent series of continuous functions is continuous
 classification:
   areas:
   - real-analysis

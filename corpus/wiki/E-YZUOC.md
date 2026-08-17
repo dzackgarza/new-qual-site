@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YZUOC
 kind: exercise
-title: "Let $F$ be an analytic function inside and on a simple closed\u2026"
+title: Residue at a pole of order $m$, and $\oint_C e^\tau/(\tau^2+\pi^2)^2\,d\tau$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-3MQL7TPB
 kind: exercise
-title: Let $O_P(G)$ be the intersection of all Sylow $p\dash$subgroups of $G$.
+title: $O_p(G)$ is the unique maximal normal $p$-subgroup of $G$
 classification:
   areas:
   - algebra

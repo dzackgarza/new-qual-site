@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3UTDH
 kind: problem
-title: "Let $E\\subset \\CC$ denote the splitting field over $\\QQ$ of the polyn\u2026"
+title: Galois theory of $x^3-11$ and $11^{1/3}+\sqrt{2}$
 classification:
   areas:
   - algebra

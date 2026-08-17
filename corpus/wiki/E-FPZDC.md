@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FPZDC
 kind: exercise
-title: "Show that the gamma function is analytic in the half-plane $\\Re (s)>0$\u2026"
+title: Analyticity of $\Gamma$ on $\Re(s)>0$ and Euler's reflection formula
 classification:
   areas:
   - complex-analysis

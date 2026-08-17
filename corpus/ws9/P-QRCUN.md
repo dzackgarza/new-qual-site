@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QRCUN
 kind: problem
-title: If $(X,d)$ is a metric space, and $A,B \subseteq X$ are non-empty, then we define the distance…
+title: The distance between compact sets in a metric space is attained
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O4USN
 kind: problem
-title: "Let $\\nu, \\mu$ be signed measures, and show that"
+title: $\nu\perp\mu$ and $\nu\ll|\mu|$ implies $\nu=0$
 classification:
   areas:
   - real-analysis

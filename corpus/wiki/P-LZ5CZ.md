@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LZ5CZ
 kind: problem
-title: "Let $\\DD$ be a closed disk embedded in the torus $T = S^1 \\times S^1$\u2026"
+title: $H_i(T,B)$ for a torus and the boundary of an embedded disk
 classification:
   areas:
   - topology

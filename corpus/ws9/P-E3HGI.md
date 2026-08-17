@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E3HGI
 kind: problem
-title: Let $X$ be an infinite dimensional Banach space. What is the $w^*$-clo…
+title: The $w^*$-closure of the dual unit sphere of an infinite-dimensional Banach space
 classification:
   areas:
   - real-analysis

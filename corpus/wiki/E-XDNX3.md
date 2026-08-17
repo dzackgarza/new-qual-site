@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XDNX3
 kind: exercise
-title: "Let $A$ be a compact subspace of a Hausdorff space $X$."
+title: Compact subspaces of Hausdorff spaces are closed
 classification:
   areas:
   - topology

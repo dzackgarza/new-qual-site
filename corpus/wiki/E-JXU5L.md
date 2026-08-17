@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JXU5L
 kind: exercise
-title: "Show that the Dirichlet function $f(x) = \\chi_{I \\intersect \\QQ}$ is n\u2026"
+title: Dirichlet function is nowhere continuous and not Riemann integrable
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHWCH
 kind: problem
-title: "a. Prove that if $f, g\\in L^+(\\RR)$ then"
+title: $\int(f+g)=\int f+\int g$ on $L^+$, countable additivity, and $\mu_f(E_j)\to\mu_f(E)$ when $E_j\nearrow E$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-O5SOQ
 kind: exercise
-title: "Suppose $f$ is entire and for every $z$,"
+title: Entire functions with $|f(z)|\le|\sin z|$ are $c\sin z$ with $|c|\le 1$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MYZU2
 kind: problem
-title: "Let $\\theset{X_\\alpha \\mid \\alpha \\in A}$ be a family of connected sub\u2026"
+title: Union of connected subspaces sharing a point is connected
 classification:
   areas:
   - topology

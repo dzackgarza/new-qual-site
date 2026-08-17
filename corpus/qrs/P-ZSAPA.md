@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZSAPA
 kind: problem
-title: "Suppose that $f$ is an analytic function in the region $D$ which\u2026"
+title: Unique zero of $z-a-qf(z)$, a residue formula, and a series for $1/F$
 classification:
   areas:
   - complex-analysis

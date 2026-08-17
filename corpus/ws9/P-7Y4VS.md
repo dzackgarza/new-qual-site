@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7Y4VS
 kind: problem
-title: Let $U$ be an open subset of $\mathbb{C}$. We use the notion
+title: 'Holomorphic $L^2$ functions: $\sup_K|f|\le C_K\|f\|_{L^2}$, the $L^2$ unit ball is a normal family, and $L^2$ singularities at $0$ are removable'
 classification:
   areas:
   - real-analysis

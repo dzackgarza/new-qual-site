@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GKGSD
 kind: problem
-title: Let $f$ be a one-to-one analytic function defined on the unit disk $D$…
+title: A single-valued injective branch of $\sqrt{f(z^2)}$ for injective analytic $f$ with $f(0)=0$
 classification:
   areas:
   - real-analysis

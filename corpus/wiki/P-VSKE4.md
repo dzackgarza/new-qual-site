@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VSKE4
 kind: problem
-title: "Let $\\Omega \\subset \\CC$ be a connected open subset."
+title: Locally bounded holomorphic functions converging on a set with a limit point converge uniformly on compacta
 classification:
   areas:
   - complex-analysis

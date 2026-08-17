@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P7IWV
 kind: problem
-title: "Prove that $f(z) = z^4 + 2z^3 -2z + 10$ has exactly one root in each o\u2026"
+title: One root of $z^4+2z^3-2z+10$ in each open quadrant
 classification:
   areas:
   - complex-analysis

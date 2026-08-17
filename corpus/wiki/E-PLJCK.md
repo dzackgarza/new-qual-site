@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PLJCK
 kind: exercise
-title: "Suppose $f$ is entire and suppose that for some integer $n\\geq 1$, $\\lim_{z\\to \\infty} {f(z) \\over z^n} = 0$\u2026"
+title: Entire functions with $f(z)/z^{n}\to 0$ at infinity are polynomials of degree at most $n-1$
 classification:
   areas:
   - complex-analysis

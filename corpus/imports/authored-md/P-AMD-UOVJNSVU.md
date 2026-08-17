@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-UOVJNSVU
 kind: problem
-title: 'Given: $\mathcal{K}$ a conjugacy class in $S_n$,…'
+title: Splitting of conjugacy classes of $S_n$ under $A_n$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FJI2B
 kind: problem
-title: "Classify finitely-generated modules over $\\ZZ$, over PIDs, and over De\u2026"
+title: Classification of finitely generated modules over $\mathbb{Z}$, PIDs, and Dedekind rings
 classification:
   areas:
   - algebra

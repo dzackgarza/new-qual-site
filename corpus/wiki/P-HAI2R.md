@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HAI2R
 kind: problem
-title: "Let $f(x) = x^3 - 7$."
+title: Galois group and intermediate fields of $x^3-7$ over $\QQ$, and Galois groups over $\RR$ and $\FF_{13}$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FFLLF
 kind: problem
-title: "Let $f: [0, 1]\\to \\RR$ be continuous, and prove the Weierstrass approx\u2026"
+title: The Weierstrass approximation theorem
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-OZKMBBA4KA
 kind: problem
-title: Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7…
+title: Groups of order $105$ have a normal cyclic subgroup of order $35$
 classification:
   areas:
   - algebra

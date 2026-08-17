@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3YFNY
 kind: problem
-title: "Let $A$ be an $n \\times n$ matrix."
+title: Cyclic vectors, the commutant, and equality of minimal and characteristic polynomials
 classification:
   areas:
   - algebra

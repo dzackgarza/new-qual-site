@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CDHB5
 kind: problem
-title: "Let $A$ be an abelian group, and show $A$ is a $\\ZZ\\dash$module in a u\u2026"
+title: An abelian group is a $\ZZ$-module in a unique way
 classification:
   areas:
   - algebra

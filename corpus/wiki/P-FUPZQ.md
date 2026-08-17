@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FUPZQ
 kind: problem
-title: "Assume that $f$ is differentiable at $a$."
+title: $\lim_{x\to a}\frac{a^n f(x)-x^n f(a)}{x-a}=a^n f'(a)-na^{n-1}f(a)$
 classification:
   areas:
   - real-analysis

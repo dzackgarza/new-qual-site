@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MCQH6
 kind: problem
-title: Let $G$ be the unique non-abelian group of order 21.
+title: Character table of the nonabelian group of order $21$
 classification:
   areas:
   - algebra

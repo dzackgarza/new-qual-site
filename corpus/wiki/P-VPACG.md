@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VPACG
 kind: problem
-title: "Let $U \\subset \\RR^n$ be an open set which is bounded in the standard\u2026"
+title: The quotient $\RR^n/U$ by a bounded open set is not Hausdorff
 classification:
   areas:
   - topology

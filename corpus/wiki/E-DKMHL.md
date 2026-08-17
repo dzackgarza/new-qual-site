@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DKMHL
 kind: exercise
-title: "Show that the order of any element in a group divides the order of the\u2026"
+title: Element orders divide the group order
 classification:
   areas:
   - algebra

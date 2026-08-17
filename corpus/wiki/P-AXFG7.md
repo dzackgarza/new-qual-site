@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AXFG7
 kind: problem
-title: "Let $m_*$ denote the Lebesgue outer measure on \\( \\RR \\)."
+title: Every $E\subseteq\RR$ has a Borel hull of equal outer measure; Carathéodory-measurable sets are Borel minus null
 classification:
   areas:
   - real-analysis

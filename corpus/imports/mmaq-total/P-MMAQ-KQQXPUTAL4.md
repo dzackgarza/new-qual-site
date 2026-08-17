@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-KQQXPUTAL4
 kind: problem
-title: "For topological spaces $X, Y$ the mapping cone $C(f )$ of a map $f : X \\to Y$ is\u2026"
+title: Homology of the mapping cone of a degree-$k$ map $S^n\to S^n$
 classification:
   areas:
   - topology

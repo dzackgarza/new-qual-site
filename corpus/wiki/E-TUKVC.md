@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TUKVC
 kind: exercise
-title: "Suppose $f$ is analytic, defined on all of $\\CC$, and for each $z_0 \\in \\CC$\u2026"
+title: Entire functions with a vanishing Taylor coefficient at every point are polynomials
 classification:
   areas:
   - complex-analysis

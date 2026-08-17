@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-BTVLG2S2
 kind: exercise
-title: Let $H, K \leq G$ a finite group, and without using the normalizers…
+title: $|HK|=|H||K|/|H\cap K|$
 classification:
   areas:
   - algebra

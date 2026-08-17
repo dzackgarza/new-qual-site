@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7B2CW
 kind: problem
-title: Let $|G|=pq$ where $p$ and $q$ are prime, $p<q$.
+title: Groups of order $pq$ with $p<q$ primes are not simple, abelian if $p\nmid q-1$, and the possibilities when $p\mid q-1$
 classification:
   areas:
   - prelim

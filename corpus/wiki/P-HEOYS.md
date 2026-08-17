@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HEOYS
 kind: problem
-title: "How many ways can you color the tetrahedron with C colors if we identi\u2026"
+title: Colorings of a tetrahedron with $C$ colors up to symmetry
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UBGWI
 kind: exercise
-title: "Show that for $A\\subseteq X$, $\\cl_X(A)$ is the smallest closed subset\u2026"
+title: The closure is the smallest closed set containing $A$
 classification:
   areas:
   - topology

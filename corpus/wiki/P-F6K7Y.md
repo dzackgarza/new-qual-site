@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F6K7Y
 kind: problem
-title: "$\\displaystyle \\int \\sec^3(x) ~dx = \\color {blue} {\\frac {1}{2} (\\ln (\\sec (x) + \\tan (x)) + \\tan (x) \\sec (x))} = \\color {blue} {\\frac {1}{2} (\\ln(\\frac {\\cos(\\frac {x}{2}) +\\sin(\\frac {x}{2})}{\\cos(\\frac {x}{2}) -\\sin(\\frac {x}{2})}) + \\tan (x) \\sec (x))}$\u2026"
+title: Antiderivatives of powers of $\sec x$ and $\tan x$
 classification:
   areas:
   - prelim

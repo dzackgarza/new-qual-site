@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IDMYK
 kind: problem
-title: "Let $\\OO$ be the ring of integers of $\\QQ(d)$, where $d > 0$."
+title: Quotient of the ring of integers of $\QQ(d)$ by a prime ideal
 classification:
   areas:
   - algebra

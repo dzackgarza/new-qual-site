@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LRECB
 kind: problem
-title: "Let $K$ be a Galois extension of $F$, and let $F \\subset E \\subset K$ be inclusions of\u2026"
+title: $[E:F]\equiv 1\pmod{p}$ when $\Gal(K/E)$ contains $N_G(P)$
 classification:
   areas:
   - algebra

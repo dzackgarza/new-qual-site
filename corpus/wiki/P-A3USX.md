@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A3USX
 kind: problem
-title: "Suppose the space $X$ is obtained by attaching a 2-cell to the\u2026"
+title: Possible homology groups of a torus with a $2$-cell attached
 classification:
   areas:
   - topology

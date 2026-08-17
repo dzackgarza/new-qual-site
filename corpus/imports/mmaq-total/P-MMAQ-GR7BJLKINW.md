@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-GR7BJLKINW
 kind: problem
-title: Prove that the unit interval $I$ is compact. Be sure to explicitly…
+title: The unit interval is compact
 classification:
   areas:
   - topology

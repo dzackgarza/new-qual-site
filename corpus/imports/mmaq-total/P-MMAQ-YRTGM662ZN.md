@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-YRTGM662ZN
 kind: problem
-title: Let $V$ be a vector space over a field $F$. The evaluation map
+title: The evaluation map $V\to(V^\vee)^\vee$ is injective, and an isomorphism if and only if $V$ is finite-dimensional
 classification:
   areas:
   - algebra

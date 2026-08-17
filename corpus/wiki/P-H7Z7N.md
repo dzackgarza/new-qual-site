@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-H7Z7N
 kind: problem
-title: "Let $R$ be the intersection of the right half-plane and the outside of\u2026"
+title: A conformal map from a slit right half-plane minus a disc onto $\HH$
 classification:
   areas:
   - complex-analysis

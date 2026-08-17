@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-OZLCWMQK46
 kind: problem
-title: Let $f$ be a continuous function on $[0,1]$. Show that the following
+title: Absolute continuity of continuous $f$ on $[0,1]$ equivalent to mapping small-measure sets to small-measure sets and null sets to null sets
 classification:
   areas:
   - real-analysis

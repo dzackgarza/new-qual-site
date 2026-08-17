@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z6IW6
 kind: problem
-title: Let $G$ be a finite abelian group. Let $f:\mathbb Z^m\rightarrow G$ be a
+title: The kernel of a surjection $\ZZ^m\to G$ onto a finite abelian group is isomorphic to $\ZZ^m$, with $|\det A|=|G|$
 classification:
   areas:
   - algebra

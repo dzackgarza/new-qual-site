@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TBXVH
 kind: problem
-title: "Suppose $f: \\mathbb{R} \\to \\mathbb{R}$."
+title: The $\varepsilon$-$\delta$ definition of $\lim_{x\to a}f(x)=\ell$, and $\lim_{x\to 2}\frac{2x+1}{x^2+1}$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ULPU3
 kind: problem
-title: The Poisson kernel for $0\le \rho<1$ is the $2\pi$-periodic function o…
+title: Herglotz's theorem for positive harmonic functions on the disc
 classification:
   areas:
   - real-analysis

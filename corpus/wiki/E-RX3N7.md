@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-RX3N7
 kind: problem
-title: "For $u=\\sqrt{2+\\sqrt{2}}$, What is the Galois group of $\\boldsymbol{Q}(u)$ over $\\boldsymbol{Q} ?$ What are the\u2026"
+title: Galois group and intermediate fields of $\QQ(\sqrt{2+\sqrt{2}})/\QQ$
 classification:
   areas:
   - algebra

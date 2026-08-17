@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YEZTR
 kind: problem
-title: "Suppose that $f$ is holomorphic in an open set containing $\\DD$ except\u2026"
+title: $\lim a_n/a_{n+1}=z_0$ for the power series of a function with a pole at $z_0\in\partial\DD$
 classification:
   areas:
   - complex-analysis

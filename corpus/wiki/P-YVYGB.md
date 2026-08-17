@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YVYGB
 kind: problem
-title: "Let $S$ be the closed orientable surface of genus 2 and let $C$ be the\u2026"
+title: 'The commutator cover of a genus-$2$ surface: regularity, deck transformations, and a loop lifting trivially'
 classification:
   areas:
   - topology

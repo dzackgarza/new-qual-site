@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Q75IH
 kind: problem
-title: "Prove the following variant of the Lebesgue differentiation theorem: L…"
+title: The symmetric derivative of a singular measure vanishes Lebesgue-a.e.
 classification:
   areas:
   - real-analysis

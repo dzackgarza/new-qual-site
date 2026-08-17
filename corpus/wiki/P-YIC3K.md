@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YIC3K
 kind: problem
-title: "Let $f$ be a continuous real-valued function on"
+title: $\int_0^1 x^4 f(x)\,dx=\frac15 f(\xi)$ for continuous $f$ on $[0,1]$
 classification:
   areas:
   - real-analysis

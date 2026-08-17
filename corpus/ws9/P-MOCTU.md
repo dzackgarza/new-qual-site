@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MOCTU
 kind: problem
-title: Let $R$ be a PID with field of fractions $F$. Let $V$ be a vector spac…
+title: Free $R$-modules of rank at most $n$ in an $n$-dimensional vector space over a PID
 classification:
   areas:
   - prelim

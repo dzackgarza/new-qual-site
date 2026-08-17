@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-4CDCOPRN
 kind: problem
-title: "Let $X = S^n\\cross I$ with its ends glued together by a map $S^n \\circlearrowleft$ of degree $d$\u2026"
+title: Homology of the mapping torus of a degree-$d$ map $S^n\to S^n$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LG4GL
 kind: problem
-title: "Let $\\phi\\in L^\\infty(\\RR)$. Show that the following limit exists and\u2026"
+title: $\left(\int\frac{|\phi|^n}{1+x^2}\,dx\right)^{1/n}\to\|\phi\|_\infty$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E7N6V
 kind: problem
-title: "$\\displaystyle \\int\\sqrt {x\\cdot\\sqrt[3]{x\\cdot\\sqrt[4]{x\\cdot\\sqrt[5]{x...}}}} dx = \\frac {x^{e-1}}{e-1}$ --level 5 --talyor expansion...."
+title: Infinite nested-radical antiderivative and several trigonometric definite integrals
 classification:
   areas:
   - prelim

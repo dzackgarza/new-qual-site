@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-4WD576RU
 kind: exercise
-title: Show that if the minimal polynomial of a linear map $T$ is…
+title: An operator with irreducible minimal polynomial is semisimple
 classification:
   areas:
   - algebra

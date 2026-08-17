@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-EPSA3BOVMI
 kind: problem
-title: Let $\{e_1, \cdots, e_n \}$ be a basis of a real vector space $V$…
+title: Dual lattice of an integer Gram form, and $|\Lambda^\vee/\Lambda|=\det M$
 classification:
   areas:
   - algebra

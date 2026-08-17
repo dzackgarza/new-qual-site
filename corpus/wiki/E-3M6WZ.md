@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3M6WZ
 kind: exercise
-title: "Let $C$ and $C'$ be two circles and let $z_1 \\in C$, $z_2 \\notin C$, $z'_1 \\in C'$, $z'_2 \\notin C'$."
+title: Unique fractional linear transformation sending one circle to another with two prescribed values
 classification:
   areas:
   - complex-analysis

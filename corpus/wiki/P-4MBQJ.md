@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4MBQJ
 kind: problem
-title: "Let $R$ be a ring and $M$ an $R\\dash$module. Recall that $M$ is Noetherian\u2026"
+title: Proper submodules of a Noetherian module are finite intersections of intersection-indecomposable submodules
 classification:
   areas:
   - algebra

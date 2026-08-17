@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IIONX
 kind: problem
-title: "Find a fractional linear transformation $T$ which maps $\\HH$ to $\\DD$\u2026"
+title: A fractional linear transformation $\HH\to\DD$ and the image of the first quadrant
 classification:
   areas:
   - complex-analysis

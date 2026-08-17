@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DKYVD
 kind: problem
-title: "Without using Cauchy's integral formula, show that if $\\abs{a} < r < \\abs{b}$\u2026"
+title: $\int_\gamma\frac{dz}{(z-\alpha)(z-\beta)}=\frac{2\pi i}{\alpha-\beta}$ without Cauchy's formula
 classification:
   areas:
   - complex-analysis

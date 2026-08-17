@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FO6H7
 kind: problem
-title: "Let $F$ be a field and $V$ a finite dimensional $F\\dash$vector space,\u2026"
+title: Commuting diagonalizable operators are simultaneously diagonalizable
 classification:
   areas:
   - algebra

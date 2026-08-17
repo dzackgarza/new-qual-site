@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BPL7E
 kind: problem
-title: "Let \\( (X, \\mathcal{M}, \\mu) \\) be a finite measure space and let \\( \\\u2026"
+title: An a.e. convergent sequence in $L^1$ of a finite measure space is uniformly bounded off a small set
 classification:
   areas:
   - real-analysis

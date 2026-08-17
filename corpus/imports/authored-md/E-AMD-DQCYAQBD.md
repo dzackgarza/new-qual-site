@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-DQCYAQBD
 kind: exercise
-title: Show that if $N\normal D_n$ is a normal subgroup of a dihedral…
+title: Quotients of dihedral groups are dihedral
 classification:
   areas:
   - algebra

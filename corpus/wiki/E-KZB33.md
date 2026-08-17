@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KZB33
 kind: exercise
-title: "Show that if $f$ is injective, then $f'$ is nowhere vanishing and thus\u2026"
+title: Injective holomorphic maps have nonvanishing derivative
 classification:
   areas:
   - complex-analysis

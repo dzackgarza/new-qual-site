@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YMVNK
 kind: problem
-title: "Suppose $X$ is a $G\\dash$set, so there is a permutation action of $G$ on $X$."
+title: Stabilizer subgroups of two points in a $G$-set are conjugate
 classification:
   areas:
   - algebra

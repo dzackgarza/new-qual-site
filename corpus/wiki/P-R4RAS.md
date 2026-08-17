@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R4RAS
 kind: problem
-title: "Is the following function continuous, differentiable, continuously dif\u2026"
+title: Continuity, differentiability, and $C^1$ regularity of $\frac{xy}{\sqrt{x^2+y^2}}$
 classification:
   areas:
   - complex-analysis

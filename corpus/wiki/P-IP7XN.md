@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IP7XN
 kind: problem
-title: "Show that $z\\sin(z) = a$ has only real solutions."
+title: $z\sin z=a$ has only real solutions
 classification:
   areas:
   - complex-analysis

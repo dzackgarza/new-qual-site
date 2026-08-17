@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GN4CE
 kind: problem
-title: "Carefully state the definition of Noetherian for a\u2026"
+title: The subring of $\ZZ[x]$ of polynomials with even non-constant coefficients is not Noetherian
 classification:
   areas:
   - algebra

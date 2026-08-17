@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L3BUX
 kind: problem
-title: "Let $(X, d)$ be a compact metric space, and let $f : X \\to X$ be an is\u2026"
+title: Isometries of compact metric spaces are bijective
 classification:
   areas:
   - topology

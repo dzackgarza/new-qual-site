@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-HGDYVCO7CN
 kind: problem
-title: Let $K$ and $L$ be finite fields with $K \subseteq L$. Prove that
+title: A finite field extension of a finite field is Galois with cyclic Galois group
 classification:
   areas:
   - algebra

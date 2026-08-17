@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XQ3YN
 kind: problem
-title: "Show that a field $k$ of characteristic $p\\neq 0$ is perfect $\\iff$ fo\u2026"
+title: A field of characteristic $p\neq 0$ is perfect iff every element is a $p$-th power
 classification:
   areas:
   - algebra

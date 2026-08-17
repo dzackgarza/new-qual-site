@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-V6LPH
 kind: problem
-title: "Let $G$ be a group of order 30. Show that $G$ contains normal\u2026"
+title: 'Groups of order $30$: normal subgroups of orders $3$, $5$, and $15$, presentations, and classification'
 classification:
   areas:
   - algebra

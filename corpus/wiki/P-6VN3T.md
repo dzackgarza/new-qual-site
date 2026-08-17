@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6VN3T
 kind: problem
-title: "Assume $f$ is an entire function such that $|f(z)|=1$ on $|z|=1$. Prove that $f(z)=e^{i \\theta} z^{n}$\u2026"
+title: An entire function of modulus $1$ on the unit circle is $e^{i\theta}z^n$
 classification:
   areas:
   - complex-analysis

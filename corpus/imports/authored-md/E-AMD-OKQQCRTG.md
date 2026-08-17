@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-OKQQCRTG
 kind: exercise
-title: Show that p-groups $\implies$ nilpotent
+title: $p$-groups are nilpotent
 classification:
   areas:
   - algebra

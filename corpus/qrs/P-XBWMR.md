@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XBWMR
 kind: problem
-title: "Let $g$ be analytic for $|z|\\leq 1$ and $|g(z)| < 1$ for $|z| = 1$. Show that $g$ has a unique\u2026"
+title: Fixed points of holomorphic self-maps of the disc
 classification:
   areas:
   - complex-analysis

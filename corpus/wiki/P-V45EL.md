@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-V45EL
 kind: problem
-title: "Suppose you have a finite p-group, and you have a representation of th\u2026"
+title: Representations of a finite $p$-group on a vector space over a finite field of characteristic $p$
 classification:
   areas:
   - algebra

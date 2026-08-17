@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZSUAJ
 kind: problem
-title: "Let $R$ be a nonzero commutative ring without unit such that $R$ does\u2026"
+title: $xR$ is proper in a nonzero commutative ring without unit and with no proper maximal ideal
 classification:
   areas:
   - algebra

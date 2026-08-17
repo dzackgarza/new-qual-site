@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FE-BGEZL
 kind: example
-title: 'Give an example of a function $f: \RR^n \to \RR$ that is continuous in each variable but not continuous.'
+title: The function $xy/(x^2+y^2)$ is separately continuous but not jointly continuous
 classification:
   areas:
   - topology

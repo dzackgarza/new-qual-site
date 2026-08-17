@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-6ULIT
 kind: exercise
-title: "Show that a uniform limit of continuous functions is continuous, and a\u2026"
+title: Uniform limits preserve continuity and uniform continuity; pointwise limits need not
 classification:
   areas:
   - complex-analysis

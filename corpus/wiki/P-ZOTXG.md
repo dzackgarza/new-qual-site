@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZOTXG
 kind: problem
-title: "Let $f \\in L^1(\\RR)$ and $g$ be a bounded measurable function on $\\RR$\u2026"
+title: $L^1$ convolution with a bounded measurable function is bounded and uniformly continuous, and $(f*g)'=f*g'$ when $g'$ is bounded
 classification:
   areas:
   - real-analysis

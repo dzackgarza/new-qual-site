@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BCFIC
 kind: problem
-title: Find an analytic isomorphism from the open region between $|z| = 1$…
+title: Biholomorphism from the crescent $|z|<1$, $|z-\frac12|>\frac12$ to the upper half-plane
 classification:
   areas:
   - complex-analysis

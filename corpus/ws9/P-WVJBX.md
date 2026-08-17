@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WVJBX
 kind: problem
-title: Suppose $\{f_n\}_{n=1}^\infty \subset L^2(\mathbb{R})$ is a sequence t…
+title: $L^2$ convergence to $0$ implies a subsequence converging almost everywhere
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KC3PY
 kind: problem
-title: "Prove that if \\( E \\subseteq \\RR^n \\) is a Lebesgue measurable set, then for any \\( h \\in \\RR \\)\u2026"
+title: Translation invariance of Lebesgue measure and integrals
 classification:
   areas:
   - real-analysis

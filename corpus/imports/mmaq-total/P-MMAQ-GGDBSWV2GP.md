@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-GGDBSWV2GP
 kind: problem
-title: Let $G$ be a group of order $n$. Suppose that for every divisor
+title: A group with at most one subgroup of each order is cyclic, and finite subgroups of $F^\times$ are cyclic
 classification:
   areas:
   - algebra

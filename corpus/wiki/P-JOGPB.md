@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JOGPB
 kind: problem
-title: "Assume $f$ is continuous in the region: $0 < \\abs{z-a} \\leq R,\\quad 0 \\leq \\Arg(z-a) \\leq \\beta_0 \\qquad \\beta_0\\in (0, 2\\pi]$"
+title: $\lim_{r\to 0}\int_{\gamma_r}f=iA\beta_0$ when $(z-a)f(z)\to A$
 classification:
   areas:
   - complex-analysis

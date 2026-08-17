@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IOVNM
 kind: problem
-title: "Let $X$ be a compact Hausdorff space and suppose $R \\subset X \\times X$ is a closed\u2026"
+title: The quotient of a compact Hausdorff space by a closed equivalence relation is Hausdorff
 classification:
   areas:
   - topology

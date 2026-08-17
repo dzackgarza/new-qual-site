@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AISD5
 kind: problem
-title: Let $X$ be a compact space, and let $A_1 \supseteq A_2 \supseteq \cdots$ be a descending chain…
+title: Nested nonempty closed subsets of a compact space have nonempty intersection
 classification:
   areas:
   - topology

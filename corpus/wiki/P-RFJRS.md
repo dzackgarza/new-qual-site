@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RFJRS
 kind: problem
-title: "Let $f, g\\in L^1([0, 1])$, define $F(x) = \\int_0^x f(y)\\dy$ and $G(x) = \\int_0^x g(y)\\dy$, and show $\\int_0^1 F(x)g(x) \\,dx = F(1)G(1) - \\int_0^1 f(x) G(x) \\, dx$"
+title: $\int_0^1 Fg=F(1)G(1)-\int_0^1 fG$ for $F(x)=\int_0^x f$ and $G(x)=\int_0^x g$ with $f,g\in L^1([0,1])$
 classification:
   areas:
   - real-analysis

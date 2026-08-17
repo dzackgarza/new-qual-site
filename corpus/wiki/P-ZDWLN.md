@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZDWLN
 kind: problem
-title: "Let $f:\\RR^2\\to \\RR$."
+title: Real differentiability of $f:\RR^2\to\RR$ via linear maps, the inverse function theorem, and the Cauchy–Riemann criterion for complex differentiability
 classification:
   areas:
   - complex-analysis

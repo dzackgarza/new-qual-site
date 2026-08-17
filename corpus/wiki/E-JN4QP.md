@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JN4QP
 kind: exercise
-title: "Show that a continuous bijection from a compact space to a Hausdorff s\u2026"
+title: Continuous bijections from compact spaces to Hausdorff spaces are homeomorphisms
 classification:
   areas:
   - topology

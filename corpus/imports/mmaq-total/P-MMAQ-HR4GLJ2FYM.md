@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-HR4GLJ2FYM
 kind: problem
-title: "Let $\\theset{a_n}$ be a sequence of real numbers such that $\\theset{b_n} \\in \\ell^2(\\NN) \\implies \\sum a_n b_n < \\infty$ Show that $\\sum a_n^2 < \\infty$."
+title: $\sum a_n b_n<\infty$ for all $b\in\ell^2$ implies $\sum a_n^2<\infty$
 classification:
   areas:
   - real-analysis

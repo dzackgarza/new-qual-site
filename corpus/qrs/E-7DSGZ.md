@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-7DSGZ
 kind: exercise
-title: "Show that an injective continuous map from a compact space\u2026"
+title: An injective continuous map from a compact space to a Hausdorff space is an embedding
 classification:
   areas:
   - topology

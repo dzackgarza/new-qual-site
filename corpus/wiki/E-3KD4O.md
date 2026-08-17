@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3KD4O
 kind: exercise
-title: "Show that if $f$ is once complex differentiable at each point\u2026"
+title: Once complex-differentiable functions are holomorphic
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2LX4F
 kind: problem
-title: "Let $F$ be the field with 2 elements and $K$ a splitting field of $f(x) = x^6 + x^3 + 1$\u2026"
+title: Galois group of $x^6+x^3+1$ over $\FF_2$ and its intermediate fields
 classification:
   areas:
   - algebra

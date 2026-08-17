@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BH7BM
 kind: problem
-title: "Let $\\mathcal H$ be a Hilbert space."
+title: Orthogonal projection onto a finite orthonormal set is the best approximation; finite-dimensional subspaces of a Hilbert space are closed
 classification:
   areas:
   - real-analysis

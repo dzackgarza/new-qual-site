@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F6RAE
 kind: problem
-title: "Show that any normal $p\\dash$ subgroup is contained in every Sylow $p\\dash$\u2026"
+title: A normal $p$-subgroup is contained in every Sylow $p$-subgroup
 classification:
   areas:
   - algebra

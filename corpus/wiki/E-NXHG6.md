@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NXHG6
 kind: exercise
-title: "Show that every non-unit of $R$ is contained in a maximal ideal."
+title: Every non-unit of $R$ is contained in a maximal ideal
 classification:
   areas:
   - algebra

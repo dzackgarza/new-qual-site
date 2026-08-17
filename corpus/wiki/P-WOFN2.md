@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WOFN2
 kind: problem
-title: "Let $X$ consist of two copies of the solid torus $\\DD^2 \\times S^1$, g\u2026"
+title: Homology of two solid tori glued by the identity along the boundary torus
 classification:
   areas:
   - topology

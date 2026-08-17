@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PBXAK
 kind: problem
-title: "Prove that maximum principle for harmonic functions, i.e."
+title: Maximum principle for harmonic functions
 classification:
   areas:
   - complex-analysis

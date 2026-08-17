@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QXYTV
 kind: problem
-title: "Suppose that $f:[a,b]\\to\\mathbb{R}$ is"
+title: $\lim_{p\to\infty}\bigl(\int_a^b f^p\bigr)^{1/p}=\sup f$ for continuous $f\ge 0$ on $[a,b]$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Q5N2X
 kind: problem
-title: Let $K$ be the field $\mathbb Q(z)$ of rational functions in a…
+title: Irreducibility, splitting field, and Galois group of $x^n-z$ over $\mathbb{Q}(z)$
 classification:
   areas:
   - algebra

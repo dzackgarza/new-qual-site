@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E53UO
 kind: problem
-title: "Main Idea: Show that both spaces are a deformation retract\u2026"
+title: Attaching a $2$-cell along homotopic maps yields homotopy-equivalent spaces
 classification:
   areas:
   - topology

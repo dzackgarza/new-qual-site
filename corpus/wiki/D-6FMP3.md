@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-6FMP3
 kind: definition
-title: "Hausdorff: A topological space $X$ is Hausdorff iff points can be\u2026"
+title: Hausdorff space
 classification:
   areas:
   - topology

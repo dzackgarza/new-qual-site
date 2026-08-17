@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YHFCR
 kind: problem
-title: "Let $X$ be the subspace of the unit cube $I^3$ consisting of the\u2026"
+title: $\pi_1$ of the unit cube's faces union four space diagonals
 classification:
   areas:
   - topology

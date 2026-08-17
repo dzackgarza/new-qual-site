@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BH6X6
 kind: problem
-title: Define Prove that $m(E) = 0$.
+title: The set of reals with infinitely many rational approximations $|x-p/q|<q^{-3}$ has measure zero
 classification:
   areas:
   - real-analysis

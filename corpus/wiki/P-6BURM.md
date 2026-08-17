@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6BURM
 kind: problem
-title: "Let $n\\in \\ZZ^{\\geq 0}$ and show that the equation $e^z = az^n$ has $n$ solutions in the open\u2026"
+title: Number of solutions of $e^z=az^n$ in the unit disc when $|a|>e$ and when $|a|<1/e$
 classification:
   areas:
   - complex-analysis

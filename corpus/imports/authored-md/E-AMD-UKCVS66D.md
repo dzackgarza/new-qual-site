@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-UKCVS66D
 kind: exercise
-title: Show that any finite integral domain is a field.
+title: Finite integral domains are fields
 classification:
   areas:
   - algebra

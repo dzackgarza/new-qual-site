@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WMJZB
 kind: problem
-title: "Let $\\mathcal{H}$ be a Hilbert space equipped with an inner product $(\\cdot,\\cdot)$ and\u2026"
+title: Strong convergence iff weak convergence and convergence of norms, finite-dimensional equivalence of weak and strong convergence, and the Banach–Saks theorem
 classification:
   areas:
   - real-analysis

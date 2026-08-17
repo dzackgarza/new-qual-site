@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZDBML
 kind: problem
-title: "Define what it means for a finite extension of fields $E$ over $F$\u2026"
+title: Galois group and subfields of the splitting field of $x^3-7$
 classification:
   areas:
   - algebra

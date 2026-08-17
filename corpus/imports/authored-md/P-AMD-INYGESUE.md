@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-INYGESUE
 kind: problem
-title: "Show that $f(z) = z^2$ is uniformly continuous in any open disk $|z| < R$, where\u2026"
+title: Uniform continuity of $z^2$ and Hadamard's example for Laplace's equation
 classification:
   areas:
   - complex-analysis

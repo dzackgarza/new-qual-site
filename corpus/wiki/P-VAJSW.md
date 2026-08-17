@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VAJSW
 kind: problem
-title: "Prove that every compact, Hausdorff topological space is normal."
+title: Compact Hausdorff spaces are normal
 classification:
   areas:
   - topology

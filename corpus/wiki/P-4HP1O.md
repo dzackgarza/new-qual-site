@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4HP1O
 kind: problem
-title: "Prove that there is no sequence of polynomials that uniformly converg\u2026"
+title: Polynomials do not converge uniformly to $1/z$ on $S^1$
 classification:
   areas:
   - complex-analysis

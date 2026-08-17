@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VHDZL
 kind: problem
-title: "Let $f$ be a measurable function on $\\mathbb{R}$. Show that the graph of $f$\u2026"
+title: The graph of a measurable function $\mathbb{R}\to\mathbb{R}$ has measure zero in $\mathbb{R}^2$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-AIKDLY3MJC
 kind: problem
-title: Let $R$ be a commutative ring. Recall that an element $r$ of $R$ is
+title: The nilradical is the intersection of all primes; $N(\mathbb{Z}/(m))$ and $N(\mathbb{C}[x,y]/(y^2-x^3))$
 classification:
   areas:
   - algebra

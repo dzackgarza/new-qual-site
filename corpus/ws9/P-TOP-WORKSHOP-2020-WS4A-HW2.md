@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS4A-HW2
 kind: problem
-title: 'Compute the homology groups of S^1 from a Δ-complex structure'
+title: A $\Delta$-complex structure and homology of $S^1$
 classification:
   areas:
   - topology

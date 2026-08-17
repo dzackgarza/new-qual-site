@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XERC4
 kind: problem
-title: In each item, a commutative ring $R$ and an ideal $I \subseteq R$ are…
+title: Prime and maximal ideals $(x^2+1)$, $(6,x)$, and $(y^2-x^3)$
 classification:
   areas:
   - prelim

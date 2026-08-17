@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EV3YB
 kind: problem
-title: "Suppose $\\theset{g_n}$ is a uniformly convergent sequence of functions\u2026"
+title: A uniformly continuous map preserves uniform convergence under composition
 classification:
   areas:
   - complex-analysis

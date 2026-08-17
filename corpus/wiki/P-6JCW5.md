@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6JCW5
 kind: problem
-title: "Show that $\\GF(p^n)$ is the splitting field of $x^{p^n} - x \\in \\FF_p[x]$."
+title: $\GF(p^n)$ is the splitting field of $x^{p^n}-x$ over $\FF_p$
 classification:
   areas:
   - algebra

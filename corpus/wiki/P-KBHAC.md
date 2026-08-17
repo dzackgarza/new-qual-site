@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KBHAC
 kind: problem
-title: "Give a list without repetitions of all compact surfaces (orientable or\u2026"
+title: Compact surfaces of Euler characteristic $-1$
 classification:
   areas:
   - topology

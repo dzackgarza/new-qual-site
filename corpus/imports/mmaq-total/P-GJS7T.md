@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GJS7T
 kind: problem
-title: Prove that any square matrix is conjugate to its transpose matrix.
+title: A square matrix is conjugate to its transpose
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: L-W5S2W
 kind: lemma
-title: "The elementary divisors of $A$ are the minimal polynomials of the Jord\u2026"
+title: Elementary divisors are the minimal polynomials of the Jordan blocks
 classification:
   areas:
   - algebra

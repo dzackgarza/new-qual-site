@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GFCIL
 kind: problem
-title: "Let $I = [0,1]$ and denote $\\|\\cdot\\|_p$ the $p$-norm $\\|f\\|_p = \\left(\\int_I |f|^p\\right)^{1/p}$ for $1 \\le p < \\infty$ (we admit this is a norm) and $\\|f\\|_\\infty = \\operatorname{ess\\,sup}|f|$."
+title: $(C[0,1],\|\cdot\|_p)$ is not a Banach space, $L^p[0,1]$ is Banach, convolution has no smooth identity, Hölder's inequality, and Young's inequality $L^p*L^q\subset L^r$
 classification:
   areas:
   - real-analysis

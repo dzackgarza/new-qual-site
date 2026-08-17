@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5JBRJ
 kind: problem
-title: For each of the following statements, determine if it is true or false…
+title: $\mathbb{Q}(\sqrt[3]{2})$ in cyclotomic extensions, splitting fields over finite fields, and homomorphisms from $S_4$
 classification:
   areas:
   - prelim

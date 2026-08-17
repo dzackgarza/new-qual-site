@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ORQ7EBU3VD
 kind: problem
-title: "If $X$ is a topological space and $S \\subset X$, define in terms of open\u2026"
+title: Disconnectedness of a subset in terms of open sets and closures
 classification:
   areas:
   - topology

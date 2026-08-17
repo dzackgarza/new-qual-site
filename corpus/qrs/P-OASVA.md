@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OASVA
 kind: problem
-title: "Find all entire functions with have poles at $\\infty$."
+title: Entire functions with a pole at $\infty$ are the nonconstant polynomials
 classification:
   areas:
   - complex-analysis

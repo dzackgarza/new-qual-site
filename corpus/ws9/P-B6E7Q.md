@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B6E7Q
 kind: problem
-title: Let $G$ be a finite group. Adopt the usual notation for the character…
+title: $\ker\rho=\{g:\chi(g)=\chi(1)\}$; a character table of order $120$, and the table of $G/Z(G)$
 classification:
   areas:
   - algebra

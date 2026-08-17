@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LOXDS
 kind: problem
-title: "Show that if $E\\subset [0, 1]$ is uncountable, then there is some $t\\in \\RR$ such that $E\\intersect (-\\infty ,t)$\u2026"
+title: Uncountable $E\subset[0,1]$ is uncountable on both sides of some $t$
 classification:
   areas:
   - complex-analysis

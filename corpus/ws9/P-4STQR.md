@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4STQR
 kind: problem
-title: a) Define what it means for vectors $v_1, \ldots, v_n$ in a vector spa…
+title: A spanning set with no proper spanning subset is linearly independent
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-TCZ5SVI2BW
 kind: problem
-title: "Write down (without proof) a presentation for $\\pi_1 (\\Sigma_2 , p)$ where $\\Sigma_2$ is a\u2026"
+title: $\pi_1$ of a genus $2$ surface, and no covering map to the torus
 classification:
   areas:
   - topology

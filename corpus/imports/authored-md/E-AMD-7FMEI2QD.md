@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-7FMEI2QD
 kind: exercise
-title: Show that $R$ is a local ring iff for every $x\in R$, either $x$ or…
+title: A ring is local iff $x$ or $1-x$ is a unit for every $x$
 classification:
   areas:
   - algebra

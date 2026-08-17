@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NC5CZ
 kind: problem
-title: "Show that if each $f_n$ is holomorphic on $\\Omega$ and $F \\definedas \\sum f_n$ converges\u2026"
+title: Compactly uniform limits of holomorphic functions are holomorphic
 classification:
   areas:
   - complex-analysis

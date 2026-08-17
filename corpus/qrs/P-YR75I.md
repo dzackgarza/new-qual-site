@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YR75I
 kind: problem
-title: "Suppose $\\theset{f_n}_{n\\in \\NN}$ is a sequence of entire functions where $f_n \\to g$ pointwise\u2026"
+title: Entire functions converging uniformly on line segments converge uniformly on compacta
 classification:
   areas:
   - complex-analysis

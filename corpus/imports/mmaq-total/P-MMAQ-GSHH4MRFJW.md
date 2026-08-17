@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-GSHH4MRFJW
 kind: problem
-title: "Prove or disprove each of the following statements. If ${f_n}$ is a\u2026"
+title: Uniform convergence need not pass to integrals; $L^p$ convergence implies an a.e. subsequence
 classification:
   areas:
   - real-analysis

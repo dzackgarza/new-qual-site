@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6FHOE
 kind: problem
-title: "Let $f_{n}(x):=\\frac{x}{1+x^{n}}, \\quad x \\geq 0$ Show that this sequence converges pointwise and find\u2026"
+title: Pointwise limit, non-uniform convergence, and $\lim\int_0^\infty\frac{x}{1+x^n}\,dx$
 classification:
   areas:
   - real-analysis

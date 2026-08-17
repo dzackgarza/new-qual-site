@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T7IKN
 kind: problem
-title: "Let $f$ be a holomorphic function in the punctured disk $\\{z : 0 < |z| < 2\\}$\u2026"
+title: Removable singularity at $0$ under logarithmic growth, constancy when zero-free with $|f|=1$ on the unit circle, and whether $f=\alpha z^n$
 classification:
   areas:
   - real-analysis

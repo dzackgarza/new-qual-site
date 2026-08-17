@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S2SVK
 kind: problem
-title: "Prove that $\\left| \\frac{d^{n}}{d x^{n}} \\frac{\\sin x}{x}\\right| \\leq \\frac{1}{n}$ for all $x \\neq 0$ and positive integers $n$."
+title: $\bigl|\frac{d^n}{dx^n}\frac{\sin x}{x}\bigr|\le\frac1n$ for $x\neq 0$ and $n\ge 1$
 classification:
   areas:
   - real-analysis

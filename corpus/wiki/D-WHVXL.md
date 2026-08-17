@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-WHVXL
 kind: definition
-title: "Proper: A map $f:X\\to Y$ is proper if pullbacks of compact sets are compact\u2026"
+title: Proper map
 classification:
   areas:
   - topology

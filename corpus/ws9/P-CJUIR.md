@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CJUIR
 kind: problem
-title: "Let $R$ be the planar region between the circles $x^2 + y^2 = 4$ and $(x-1)^2 + y^2 = 1$, and\u2026"
+title: The line integral $\int_{\partial R} x\,dy+y\,dx$ on the upper region between $x^2+y^2=4$ and $(x-1)^2+y^2=1$
 classification:
   areas:
   - prelim

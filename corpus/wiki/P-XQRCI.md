@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XQRCI
 kind: problem
-title: "Let $f_n(x) = \\frac{x}{1+nx^2}$ for"
+title: Equicontinuity of $\bigl\{\frac{x}{1+nx^2}\bigr\}_{n\ge 1}$ on compact intervals
 classification:
   areas:
   - real-analysis

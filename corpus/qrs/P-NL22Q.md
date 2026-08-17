@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NL22Q
 kind: problem
-title: "Suppose $D$ is a domain and $f, g$ are analytic on $D$. Prove that if $fg = 0$\u2026"
+title: The ring of analytic functions on a domain is an integral domain
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NQTGP
 kind: problem
-title: "Consider the minimal polynomial $f(x)$ for a primitive $m$th root of u\u2026"
+title: Infinitely many primes congruent to $1\bmod m$ via cyclotomic polynomials
 classification:
   areas:
   - algebra

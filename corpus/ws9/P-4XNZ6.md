@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4XNZ6
 kind: problem
-title: Prove that the Hardy-Littlewood maximal function $f^*$ for an integrab…
+title: Weak-type $(1,1)$ bound for the Hardy–Littlewood maximal function
 classification:
   areas:
   - real-analysis

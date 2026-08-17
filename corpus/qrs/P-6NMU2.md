@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6NMU2
 kind: problem
-title: "Set $f(x) = x^3 - 5 \\in \\QQ[x]$. Find the splitting field $K$ of $f(x)$ over $\\QQ$. Find the Galois\u2026"
+title: Galois group and intermediate fields of the splitting field of $x^3-5$
 classification:
   areas:
   - algebra

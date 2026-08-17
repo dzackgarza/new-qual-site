@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FSSHC
 kind: problem
-title: Let $C$ denote the Banach space of all convergent sequences under the…
+title: Extreme points of the unit ball of convergent sequences, and whether the ball is their closed convex hull
 classification:
   areas:
   - real-analysis

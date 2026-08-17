@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NLXNM
 kind: problem
-title: "Let $G$ be a finite group and $p$ a prime number. Let"
+title: Conjugation on Sylow $p$-subgroups; $|G|$ divides $n_p!$ if $G$ is simple; no simple group of order $ap^k$ for $1\le a\le 4$
 classification:
   areas:
   - algebra

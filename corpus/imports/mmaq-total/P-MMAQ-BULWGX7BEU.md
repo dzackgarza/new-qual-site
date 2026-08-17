@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-BULWGX7BEU
 kind: problem
-title: "View the torus $T$ as the quotient space $\\RR^2 /\\ZZ^2$. Let $A$ be a $2 \\times 2$ matrix\u2026"
+title: 'Integer-matrix maps of the torus: induced homology, homotopy, and fixed points'
 classification:
   areas:
   - topology

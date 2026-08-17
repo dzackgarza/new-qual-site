@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DG3XG
 kind: problem
-title: "Let $K \\subset L \\subset M$ be a tower of finite degree"
+title: If $M/K$ is Galois, whether $L/K$ or $M/L$ is Galois
 classification:
   areas:
   - algebra

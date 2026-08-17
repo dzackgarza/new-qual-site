@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4NYI7
 kind: problem
-title: "Let $f \\geq 0$ be a measurable function on $\\RR$."
+title: $\int_{\RR} f=\int_0^\infty m(\{f>t\})\,dt$ for nonnegative measurable $f$
 classification:
   areas:
   - real-analysis

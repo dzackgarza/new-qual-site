@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3A7RU
 kind: problem
-title: "Show that the punctured unit disk $\\{z : 0 < |z| < 1\\}$ and the annulu…"
+title: The punctured unit disk is not conformally equivalent to $\{1<|z|<2\}$
 classification:
   areas:
   - real-analysis

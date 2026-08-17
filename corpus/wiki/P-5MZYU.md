@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5MZYU
 kind: problem
-title: "What are the possible images of the unit circle under a linear transfo\u2026"
+title: Images of the unit circle under linear transformations of $\mathbb{R}^2$
 classification:
   areas:
   - algebra

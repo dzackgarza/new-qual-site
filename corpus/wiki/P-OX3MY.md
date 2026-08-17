@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OX3MY
 kind: problem
-title: "Suppose $T: V \\to V$ is not invertible, then $\\dim \\im T < n$ and $\\dim \\ker T > 0$ by the Rank-Nullity\u2026"
+title: A non-invertible endomorphism $T$ admitting $S$ with $TS=0$ but $ST\neq 0$
 classification:
   areas:
   - algebra

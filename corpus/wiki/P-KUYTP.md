@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KUYTP
 kind: problem
-title: "Useful facts\u2026"
+title: Künneth computation of $H_*(L\times\Sigma L)$ and $H^*(L\times\Sigma L)$
 classification:
   areas:
   - topology

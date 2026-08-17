@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G5MEU
 kind: problem
-title: "Let $K = \\QQ[\\sqrt 2 + \\sqrt 5]$. Find $[K: \\QQ]$."
+title: Degree, Galois group, and intermediate fields of $\QQ(\sqrt{2}+\sqrt{5})/\QQ$
 classification:
   areas:
   - algebra

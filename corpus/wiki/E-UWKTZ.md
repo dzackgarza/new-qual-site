@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UWKTZ
 kind: exercise
-title: "Show that if $f$ is entire and $f(1/z)$ has a pole at $z=0$, then $f$\u2026"
+title: Entire functions for which $f(1/z)$ has a pole at $0$ are polynomials
 classification:
   areas:
   - complex-analysis

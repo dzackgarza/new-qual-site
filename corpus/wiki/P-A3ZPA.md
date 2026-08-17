@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A3ZPA
 kind: problem
-title: "Write down (without proof) a presentation for $\\pi_1 (\\Sigma_2 , p)$ w\u2026"
+title: Presentation of $\pi_1(\Sigma_2)$, a surjection onto $F_2$, and no covering $\Sigma_2\to S^1\times S^1$
 classification:
   areas:
   - topology

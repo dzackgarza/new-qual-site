@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NV47U
 kind: problem
-title: "Let $X$ be an arbitrary topological space, and compute $\\pi_1(\\Sigma X)$.\u2026"
+title: Fundamental group of the suspension $\Sigma X$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-R343ET3DCM
 kind: problem
-title: "Suppose the group $G$ acts on the set $A$. Assume this action is\u2026"
+title: Core of a stabilizer in a faithful transitive action; abelian transitive subgroups of $S_n$ have order $n$
 classification:
   areas:
   - algebra

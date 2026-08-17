@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PS4CG
 kind: problem
-title: "Since $n_p \\neq 1$ by assumption, we must have $n_p = q$. Now conside\u2026"
+title: A group of order $p^2 q$ has a unique Sylow $p$-subgroup
 classification:
   areas:
   - algebra

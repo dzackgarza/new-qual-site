@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KJBAM
 kind: problem
-title: "Prove that the free group on two generators contains a subgroup isomor\u2026"
+title: Free subgroup on five generators in $F_2$ via a cover of $S^1\vee S^1$
 classification:
   areas:
   - topology

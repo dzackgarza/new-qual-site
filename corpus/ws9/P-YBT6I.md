@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YBT6I
 kind: problem
-title: "Let $fg(x) := \\int_{-\\infty}^{+\\infty} f(y)g(x-y)dy$ denote the convolution of $f$ and $g$."
+title: Convolution of two $L^2$ functions is bounded and continuous, and convolution by an $L^1$ function is a bounded operator on $L^1$
 classification:
   areas:
   - real-analysis

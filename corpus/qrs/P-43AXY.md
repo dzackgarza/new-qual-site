@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-43AXY
 kind: problem
-title: "Prove that the following polynomial has its roots outside of\u2026"
+title: Roots of $z^3+2z+4$ lie outside the unit circle
 classification:
   areas:
   - complex-analysis

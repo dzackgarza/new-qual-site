@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2SGBM
 kind: problem
-title: Let $X$ be a topological space. A set $A \subseteq X$ is called nowhere dense if the closure…
+title: $\overline{U}\setminus U$ is nowhere dense for $U$ open
 classification:
   areas:
   - topology

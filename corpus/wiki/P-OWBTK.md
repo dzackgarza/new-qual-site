@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OWBTK
 kind: problem
-title: "Let $R$ be a ring with the property that for every $a \\in R, a^2 = a$. Prove\u2026"
+title: A ring of idempotents has characteristic $2$ and is commutative
 classification:
   areas:
   - algebra

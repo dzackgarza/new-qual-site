@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OOVED
 kind: problem
-title: "Suppose $f$ is analytic in an open set containing the unit disc\u2026"
+title: Holomorphic functions of modulus one on the circle are finite Blaschke products
 classification:
   areas:
   - complex-analysis

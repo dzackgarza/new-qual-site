@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A4JGH
 kind: problem
-title: "Parts: Negating\u2026"
+title: Negation of uniform convergence and the example $x^n$ on $[0,1]$
 classification:
   areas:
   - prelim

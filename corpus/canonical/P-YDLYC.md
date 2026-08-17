@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YDLYC
 kind: problem
-title: Show that no finite group is the union of conjugates of a proper...
+title: No finite group is the union of conjugates of a proper subgroup
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YTOGK
 kind: problem
-title: "Suppose that $\\begin{aligned}1\\leq p_j \\leq \\infty, && \\sum_{j=1}^n {1\\over p_j} = {1\\over r} \\leq 1\\end{aligned}$"
+title: Hölder's inequality $\bigl\|\prod f_j\bigr\|_r\le\prod\|f_j\|_{p_j}$ when $\sum 1/p_j=1/r\le 1$
 classification:
   areas:
   - real-analysis

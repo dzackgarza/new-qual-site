@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-I67ZI
 kind: problem
-title: "Let $Y$ be a closed subspace of a Banach space $X$, with norm $\\|\\cdot\\|$."
+title: Extension of an equivalent norm from a closed subspace of a Banach space to an equivalent norm on the whole space
 classification:
   areas:
   - real-analysis

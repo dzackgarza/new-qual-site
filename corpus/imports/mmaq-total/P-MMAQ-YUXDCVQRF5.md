@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-YUXDCVQRF5
 kind: problem
-title: 'Evaluate the following by the method of residues:'
+title: $\int_0^{\pi/2}\frac{1}{3+\sin^2 x}\,dx$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y4YM6
 kind: problem
-title: "Let \\( f_n \\in L^2([0, 1]) \\) for \\( n\\in \\NN \\), and assume that \\( \\norm{f_n}_2 \\leq n^{-51 \\over 100} \\) for all \\( n\\in \\NN \\), $\\hat{f}_n$ is supported in the\u2026"
+title: Convergence in $L^2([0,1])$ of a series with dyadic Fourier support
 classification:
   areas:
   - real-analysis

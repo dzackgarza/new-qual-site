@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PC6ZW
 kind: problem
-title: "Let $R$ be a commutative ring with 1. Suppose that $M$ is a free $R\\dash$\u2026"
+title: A finite free module remains free of the same rank after reducing modulo an ideal
 classification:
   areas:
   - algebra

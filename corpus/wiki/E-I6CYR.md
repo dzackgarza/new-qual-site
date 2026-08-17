@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-I6CYR
 kind: exercise
-title: "Show that $B(z, w) = {\\Gamma(z) \\Gamma(w) \\over \\Gamma(z+w)}$"
+title: $B(z,w)=\frac{\Gamma(z)\Gamma(w)}{\Gamma(z+w)}$
 classification:
   areas:
   - complex-analysis

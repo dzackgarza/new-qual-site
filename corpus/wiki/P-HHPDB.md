@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HHPDB
 kind: problem
-title: "Let $\\phi\\in L^1(\\RR^n)$ such that $\\int \\phi = 1$ and define $\\phi_t(x) = t^{-n}\\phi(t\\inv x)$."
+title: Uniform convergence $f*\phi_t\to f$ as $t\to 0$ for bounded uniformly continuous $f$ when $\int\phi=1$
 classification:
   areas:
   - real-analysis

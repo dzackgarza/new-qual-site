@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JP74P
 kind: problem
-title: "Let $f: \\RR \\to \\CC$ be continuous with period 1."
+title: 'Weyl''s equidistribution theorem: $\frac1N\sum_{n=1}^N f(n\alpha)\to\int_0^1 f$ for continuous $1$-periodic $f$ and irrational $\alpha$'
 classification:
   areas:
   - real-analysis

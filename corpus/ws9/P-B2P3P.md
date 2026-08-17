@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B2P3P
 kind: problem
-title: Let $V$ be a 5-dimensional vector space over a field $F$.
+title: Jordan and rational forms for characteristic polynomial $(x-1)^3(x-2)^2$ and minimal polynomial $(x-1)^2(x-2)$, and nilpotents on a $5$-dimensional space with a unique $2$-dimensional invariant subspace
 classification:
   areas:
   - algebra

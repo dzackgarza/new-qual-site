@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YHARF
 kind: problem
-title: "Suppose that $f$ is holomorphic in an open set containing the\u2026"
+title: Taylor coefficients of a function with a pole on the unit circle
 classification:
   areas:
   - complex-analysis

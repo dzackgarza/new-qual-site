@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HLAG5
 kind: problem
-title: "Let $f(z)=z+1 / z$. Describe the images of both the circle $|z|=r$ of\u2026"
+title: Images of circles $|z|=r$ and rays $\arg z=\theta_0$ under $z+1/z$
 classification:
   areas:
   - complex-analysis

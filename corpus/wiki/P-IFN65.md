@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IFN65
 kind: problem
-title: "Let $M$ be a compact orientable surface of genus $2$ without boundary."
+title: Freely homotopic loops on a closed genus-$2$ surface that are not homotopic rel basepoint
 classification:
   areas:
   - topology

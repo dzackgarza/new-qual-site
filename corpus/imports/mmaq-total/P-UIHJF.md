@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UIHJF
 kind: problem
-title: Suppose that $G$ is a finitely generated group. Let $n$
+title: A finitely generated group has finitely many subgroups of index $n$, and the possible numbers of index-$p$ subgroups of a finitely generated abelian group
 classification:
   areas:
   - algebra

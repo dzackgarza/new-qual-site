@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UE7LL
 kind: problem
-title: "Note that if either $p=1$ or $q=1$, $G$ is a $p\\dash$group, which is \u2026"
+title: Groups of order $p^2 q$ have a nontrivial normal subgroup
 classification:
   areas:
   - algebra

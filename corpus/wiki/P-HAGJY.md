@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HAGJY
 kind: problem
-title: "By part 1, $(\\hom_{R\\dash\\text{mod}}(A, A), +)$ is an abelian group, \u2026"
+title: $\End_R(A)$ is a ring
 classification:
   areas:
   - algebra

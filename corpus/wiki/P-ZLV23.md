@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZLV23
 kind: problem
-title: "Prove that there is no simple group of order 160."
+title: No simple group of order $160$, and the structure of groups of that order
 classification:
   areas:
   - algebra

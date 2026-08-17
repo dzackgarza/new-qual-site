@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5UQSK
 kind: problem
-title: "Let $M<\\infty$ and $\\mathcal{F} \\subseteq C[a,b]$."
+title: Equicontinuity on $[a,b]$ of differentiable functions with $|f(a)|\le M$ and $|f'|\le M$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-2265YNTCYS
 kind: problem
-title: Let $X = S_1 \cup S_2 \subset \RR^3$ be the union of two spheres of…
+title: Cellular homology of two intersecting 2-spheres in $\RR^3$
 classification:
   areas:
   - topology

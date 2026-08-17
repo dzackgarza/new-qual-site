@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-6GFMKZVQ
 kind: problem
-title: Compute a presentation of $\pi_1(T)$ and prove it is isomorphic to…
+title: $\pi_1(T^2)\cong\ZZ^2$
 classification:
   areas:
   - topology

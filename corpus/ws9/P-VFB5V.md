@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VFB5V
 kind: problem
-title: Let $p$ be prime, $n$ be a positive integer, $f(X) = X^{p^n} - X + 1$,…
+title: When $X^{p^n}-X+1$ is irreducible over $\mathbb{F}_p$
 classification:
   areas:
   - prelim

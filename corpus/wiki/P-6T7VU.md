@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6T7VU
 kind: problem
-title: "Lemma: If $M$ is a cyclic module over a PID, then $M$ has exactly\u2026"
+title: Invariant factors of $R/(r)\oplus R/(s)$ over a PID
 classification:
   areas:
   - algebra

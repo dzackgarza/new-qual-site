@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O3P7X
 kind: problem
-title: Let $R$ be a PID and $M$ be an $R\dash$module. Let $p$ be a prime element of $R$....
+title: Purity in $\langle p\rangle$-primary modules over a PID
 classification:
   areas:
   - algebra

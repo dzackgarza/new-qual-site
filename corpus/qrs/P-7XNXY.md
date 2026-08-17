@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7XNXY
 kind: problem
-title: "Use Rouche's theorem to prove the Fundamental Theorem of\u2026"
+title: Fundamental Theorem of Algebra via Rouché's theorem
 classification:
   areas:
   - complex-analysis

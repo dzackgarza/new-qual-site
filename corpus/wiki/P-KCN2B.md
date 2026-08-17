@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KCN2B
 kind: problem
-title: "Let $X$ be a topological space and let $\\Delta = \\theset{(x, y) \\in X \\times X \\mid x = y}$ Show that $X$ is a\u2026"
+title: $X$ is Hausdorff iff the diagonal is closed in $X\times X$
 classification:
   areas:
   - topology

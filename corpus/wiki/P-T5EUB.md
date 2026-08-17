@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T5EUB
 kind: problem
-title: "Let $G$ be a finite group and $p$ a prime number such that there\u2026"
+title: A normal $p$-subgroup lies in every Sylow $p$-subgroup, and $G$ has a nontrivial abelian normal subgroup of order divisible by $p$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-6NZKOJQKHK
 kind: problem
-title: Suppose $(X, d)$ is a compact metric space and $U$ is an open…
+title: Lebesgue number of an open covering of a compact metric space
 classification:
   areas:
   - topology

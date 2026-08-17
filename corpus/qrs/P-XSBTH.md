@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XSBTH
 kind: problem
-title: "Fall 2005: Prove that the unit interval $I$ is compact. Be sure to\u2026"
+title: Compactness of the unit interval
 classification:
   areas:
   - topology

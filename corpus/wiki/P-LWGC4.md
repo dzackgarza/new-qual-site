@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LWGC4
 kind: problem
-title: "Let $f = \\id_{\\RP^2} \\lor \\ast$ and $g = \\ast \\lor id_{S^1}$ be two ma\u2026"
+title: Fixed points of $\id_{\RP^2}\vee\ast$ and $\ast\vee\id_{S^1}$ on $\RP^2\vee S^1$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OCQHG
 kind: problem
-title: Let $R$ be a principal ideal domain that is not a field, and write
+title: The field of fractions of a PID that is not a field is not a finitely generated module
 classification:
   areas:
   - algebra

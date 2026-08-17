@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TG5VQ
 kind: problem
-title: "For a linear ODE with constant coefficients, how would you solve it us\u2026"
+title: Solving linear ODEs with constant coefficients using linear algebra
 classification:
   areas:
   - algebra

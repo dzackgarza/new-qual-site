@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-03
 kind: problem
-title: 'Compute the fundamental group and homology of the complement of a circle in R4'
+title: Fundamental group and homology of $\mathbb{R}^4\setminus S^1$
 classification:
   areas:
   - topology

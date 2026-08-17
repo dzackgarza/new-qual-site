@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QC76S
 kind: problem
-title: Let $E$ be a free module over $R$ an integral domain.
+title: Free modules over an integral domain are torsion-free; $\QQ$ is torsion-free but not free as a $\ZZ$-module
 classification:
   areas:
   - algebra

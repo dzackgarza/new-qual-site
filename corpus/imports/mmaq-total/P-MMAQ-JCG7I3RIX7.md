@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-JCG7I3RIX7
 kind: problem
-title: Let $G$ be a group (not necessarily finite) that contains
+title: A group with a subgroup of index $n$ has a normal subgroup $N$ with $n\leq[G:N]\leq n!$, and there is no simple group of order $36$
 classification:
   areas:
   - algebra

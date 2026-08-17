@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4RXD2
 kind: problem
-title: "Let $f_{n}(x) = a e^{-n a x} - b e^{-n b x} \\quad \\text{ where } 0 < a < b$ Show that $\\sum_{n=1}^{\\infty} \\left|f_{n}\\right|$ is not in $L^{1}([0, \\infty), m)$"
+title: '$f_n(x)=ae^{-nax}-be^{-nbx}$ with $0<a<b$: $\sum|f_n|\notin L^1([0,\infty))$ while $\sum f_n\in L^1$ with integral $\ln(b/a)$'
 classification:
   areas:
   - real-analysis

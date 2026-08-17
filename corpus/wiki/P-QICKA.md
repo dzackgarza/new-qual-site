@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QICKA
 kind: problem
-title: "Let $f : X \\to Y$ be a continuous function between topological spaces."
+title: Continuous images of compact sets are compact, while continuous images of closed sets need not be closed
 classification:
   areas:
   - topology

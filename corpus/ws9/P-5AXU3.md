@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5AXU3
 kind: problem
-title: Show that if $X$ is path-connected, locally path-connected space, with $\pi_1(X)$ finite…
+title: Maps $X\to S^1$ are nullhomotopic when $\pi_1(X)$ is finite
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ML25AJS7
 kind: problem
-title: "Let $f,g \\rightarrow S^n$ be such that $\\forall x\\in X, f(x) \\neq -g(x)$."
+title: Maps into $S^n$ that are nowhere antipodal are homotopic
 classification:
   areas:
   - topology

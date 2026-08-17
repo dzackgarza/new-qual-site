@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WOCSV
 kind: problem
-title: "Suppose I asked you to classify groups of order 4."
+title: Classification of groups of order $4$, and which arise as Galois groups over $\mathbb{Q}$
 classification:
   areas:
   - algebra

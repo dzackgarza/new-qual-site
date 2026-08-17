@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-IEVOKOECDS
 kind: problem
-title: "A ring R is called simple if its only two-sided ideals are $0$\u2026"
+title: Commutative simple rings are fields; $M_n(k)$ is simple
 classification:
   areas:
   - algebra

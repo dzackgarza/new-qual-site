@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-KB4OBOHW
 kind: problem
-title: Let $R = \ZZ[x,y]$, and $M = R/(x-y), N = R/(x,y)$. Construct free…
+title: $\operatorname{Ext}$ over $\ZZ[x,y]$ of $\ZZ[x,y]/(x-y)$ and $\ZZ[x,y]/(x,y)$
 classification:
   areas:
   - topology

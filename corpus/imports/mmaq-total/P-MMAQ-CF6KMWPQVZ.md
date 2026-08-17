@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CF6KMWPQVZ
 kind: problem
-title: If $f$ is a finite real valued measurable function on a measurable…
+title: The graph of a measurable function is measurable
 classification:
   areas:
   - real-analysis

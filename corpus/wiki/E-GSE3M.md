@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GSE3M
 kind: exercise
-title: "Show that $[0, 1]$ is connected."
+title: The interval $[0,1]$ is connected
 classification:
   areas:
   - topology

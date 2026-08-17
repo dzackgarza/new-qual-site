@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UDBZP
 kind: problem
-title: "Prove that any nondegenerate matrix $X\\in M_n(\\RR)$ can be written as\u2026"
+title: Every nondegenerate real matrix factors as $UT$ with $U$ orthogonal and $T$ upper triangular
 classification:
   areas:
   - algebra

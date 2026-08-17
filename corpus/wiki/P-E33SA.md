@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E33SA
 kind: exercise
-title: "What does it mean for a function to be uniformly continuous\u2026"
+title: Uniform continuity, sets of discontinuities, and non-uniform limits of continuous functions
 classification:
   areas:
   - real-analysis

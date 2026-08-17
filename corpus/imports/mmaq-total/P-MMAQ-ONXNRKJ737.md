@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ONXNRKJ737
 kind: problem
-title: Let $\mathbb F$ be a field of characteristic $p$, and $G$ a group of
+title: The sum of group elements is central and nilpotent in $\mathbb{F}[G]$ when $\mathrm{char}\,\mathbb{F}=p$ and $|G|=p^n$, so $\mathbb{F}[G]$ is not semisimple
 classification:
   areas:
   - algebra

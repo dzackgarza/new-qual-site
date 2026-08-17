@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TN4UF
 kind: problem
-title: "How do you prove that any finite-dimensional representation of a compa\u2026"
+title: Finite-dimensional representations of a compact Lie group are equivalent to unitary ones
 classification:
   areas:
   - algebra

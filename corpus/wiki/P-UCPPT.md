@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UCPPT
 kind: problem
-title: "Let $f(x) = x^2$ and $E \\subset [0, \\infty) \\definedas \\RR^+$. Show that $m^(E) = 0 \\iff m^(f(E)) = 0$"
+title: $m^*(E)=0$ iff $m^*(f(E))=0$ for $f(x)=x^2$ on $[0,\infty)$, and $E\mapsto f(E)$ bijects Lebesgue sets of $\RR^+$
 classification:
   areas:
   - real-analysis

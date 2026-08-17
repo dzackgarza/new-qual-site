@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QGCXS
 kind: problem
-title: "Use $n$-th roots of unity (i.e. solutions of $z^{n}-1=0$ ) to show tha\u2026"
+title: $\sum_{k=1}^{n-1}\cos\frac{2\pi k}{n}=-1$ and $\sum_{k=1}^{n-1}\sin\frac{2\pi k}{n}=0$, via roots of unity
 classification:
   areas:
   - complex-analysis

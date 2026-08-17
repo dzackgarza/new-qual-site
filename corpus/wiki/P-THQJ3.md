@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-THQJ3
 kind: problem
-title: "Let $E \\subseteq H$ a Hilbert space."
+title: $E^\perp$ is a closed subspace of a Hilbert space and $(E^\perp)^\perp=\overline{E}$
 classification:
   areas:
   - real-analysis

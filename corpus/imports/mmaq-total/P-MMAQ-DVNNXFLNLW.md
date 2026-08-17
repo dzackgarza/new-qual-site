@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-DVNNXFLNLW
 kind: problem
-title: Let $0<r<1$. Show that the polynomials
+title: $P_n(z)=\sum_{k=1}^n k z^{k-1}$ has no zeros in $|z|<r<1$ for all sufficiently large $n$
 classification:
   areas:
   - complex-analysis

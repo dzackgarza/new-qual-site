@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TGH5F
 kind: problem
-title: "Let $v_1, \\dots, v_k$ be vectors in $\\mathbb{R}^n$."
+title: A finite spanning set in $\RR^n$ contains a basis of its span
 classification:
   areas:
   - prelim

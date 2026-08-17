@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-D4X7R
 kind: problem
-title: "Let $A=\\left[\\begin{array}{lll}{0} & {1} & {-2} \\\\ {1} & {1} & {-3} \\\\ {1} & {2} & {-4}\\end{array}\\right] \\in M_{3}(\\mathbb{C})$ Find the Jordan canonical form $J$ of $A$."
+title: Jordan form of $\begin{pmatrix}0&1&-2\\1&1&-3\\1&2&-4\end{pmatrix}$ and a conjugating matrix
 classification:
   areas:
   - algebra

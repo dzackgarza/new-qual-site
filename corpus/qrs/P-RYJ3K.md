@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RYJ3K
 kind: problem
-title: "Give an example of a function $f:\\RR\\to \\RR$ that is everywhere\u2026"
+title: An everywhere differentiable function with $f'$ discontinuous at $0$
 classification:
   areas:
   - complex-analysis

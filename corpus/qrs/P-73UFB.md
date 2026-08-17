@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-73UFB
 kind: problem
-title: "Let $C$ and $C'$ be two circles and let $z_1 \\in C$, $z_2 \\notin C$,"
+title: Unique fractional linear transformation sending a circle $C$ to $C'$ with $f(z_1)=z'_1$ and $f(z_2)=z'_2$
 classification:
   areas:
   - complex-analysis

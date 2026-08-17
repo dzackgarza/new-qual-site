@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5JNC2
 kind: problem
-title: "Find the Laurent expansion of $f(z) = {z + 1 \\over z(z-1)}$ about $z=0$ and $z=1$ respectively. Let\u2026"
+title: Laurent expansions of $\frac{z+1}{z(z-1)}$ about $0$ and $1$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZR3OT
 kind: problem
-title: Let $K$ be the splitting field of $x^3 + 2$ over $\mathbb{Q}$.
+title: Galois group of the splitting field of $x^3+2$ over $\mathbb{Q}$, and the subextension $\mathbb{Q}(\zeta_3)$
 classification:
   areas:
   - prelim

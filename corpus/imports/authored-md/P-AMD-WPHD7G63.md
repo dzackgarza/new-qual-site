@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-WPHD7G63
 kind: problem
-title: "Suppose $f(x)$ and $xf(x)$ are integrable on $\\RR$. Define $F$ by $F(t):=\\int_{-\\infty}^{\\infty} f(x) \\cos (x t) d x$ Show that $F^{\\prime}(t)=-\\int_{-\\infty}^{\\infty} x f(x) \\sin (x t) d x$"
+title: $F'(t)=-\int_{-\infty}^{\infty} xf(x)\sin(xt)\,dx$ for $F(t)=\int_{-\infty}^{\infty} f(x)\cos(xt)\,dx$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R4EGZ
 kind: problem
-title: "Suppose that $f$ is continuous and $f(x)\\geq 0$"
+title: A continuous nonnegative $f$ on $[0,1]$ with $f(0)>0$ has $\int_0^1 f>0$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VA72Z
 kind: problem
-title: "Provide examples to show that the series $\\sum_{n=1}^{\\infty} a_n^2$ may or may not\u2026"
+title: Convergence of $\sum a_n^2$ under conditional and absolute convergence of $\sum a_n$
 classification:
   areas:
   - prelim

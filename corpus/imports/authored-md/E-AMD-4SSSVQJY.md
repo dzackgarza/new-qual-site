@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-4SSSVQJY
 kind: solution
-title: "Let $a\\in R$ and define $\\phi(x) = ax$."
+title: Every element of a finite ring is a unit or a zero-divisor
 classification:
   areas:
   - algebra

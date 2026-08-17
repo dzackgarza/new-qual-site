@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OZXEA
 kind: problem
-title: "Suppose $f(z)$ is entire and"
+title: An entire function with $f(z)/z\to 0$ as $z\to\infty$ is constant
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-GUMCQAGPXB
 kind: problem
-title: Show that the order of the group $\text{GL}_n(\mathbb F_q)$ of…
+title: Order of $\GL_n(\FF_q)$
 classification:
   areas:
   - algebra

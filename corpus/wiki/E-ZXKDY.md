@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ZXKDY
 kind: exercise
-title: "Show that if $f$ is not surjective then $\\deg f = 0$."
+title: Degree of a non-surjective map $S^n\to S^n$ is zero
 classification:
   areas:
   - topology

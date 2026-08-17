@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-6MBWQ
 kind: exercise
-title: "Show that for $X$ metrizable, compactness and sequential compactness agree"
+title: A metrizable space is compact if and only if it is sequentially compact
 classification:
   areas:
   - topology

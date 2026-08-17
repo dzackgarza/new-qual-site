@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KQTPV
 kind: exercise
-title: "Define $G \\definedas \\theset{z\\in \\CC\\suchthat \\Re(z) > 0, \\, \\abs{z-1} > 1}$ Find all of the injective conformal maps $G\\to \\DD$. These\u2026"
+title: Injective conformal maps from $\{\Re z>0,\ |z-1|>1\}$ onto $\mathbb{D}$
 classification:
   areas:
   - complex-analysis

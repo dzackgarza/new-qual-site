@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ES2H5QQF
 kind: problem
-title: 'Compute the following directly from chain complexes and check using UCT:'
+title: $H_*(\RP^n; \ZZ_2)$, $H_*(\RP^n; \ZZ_3)$, and $H^*(\RP^n; \ZZ_6)$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CTBJD
 kind: problem
-title: Let $p<q<r$ be prime integers. Show that a group of order
+title: Groups of order $pqr$ are not simple; simplicity of groups of order $12p$ for $p=5,7,11$
 classification:
   areas:
   - algebra

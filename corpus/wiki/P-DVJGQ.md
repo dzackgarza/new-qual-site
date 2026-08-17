@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DVJGQ
 kind: problem
-title: "State the most general version of the implicit function theorem for re\u2026"
+title: Implicit function theorem from the inverse function theorem
 classification:
   areas:
   - complex-analysis

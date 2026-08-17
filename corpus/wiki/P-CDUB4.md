@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CDUB4
 kind: problem
-title: "Why is $[K\\(alpha): K]$ equal to the degree of the minimal polynomial\u2026"
+title: $[K(\alpha):K]$ equals the degree of the minimal polynomial of algebraic $\alpha$
 classification:
   areas:
   - algebra

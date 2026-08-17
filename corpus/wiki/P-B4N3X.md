@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B4N3X
 kind: problem
-title: "Let $X$ and $Y$ be topological spaces and let $f : X \\to Y$ be a funct\u2026"
+title: A map continuous on each of two closed sets covering $X$ is continuous
 classification:
   areas:
   - topology

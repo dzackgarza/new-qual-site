@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHQKZ
 kind: problem
-title: Let $R$ be a ring with 1, and let $I$ be a two sided ideal of $R$. Let…
+title: $(R/I)\otimes_R M\cong M/IM$
 classification:
   areas:
   - prelim

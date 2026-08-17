@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KSQQ5
 kind: problem
-title: "Let $\\mcs, \\mct$ be topologies on a set $X$."
+title: The intersection of two topologies is a topology; the union need not be
 classification:
   areas:
   - topology

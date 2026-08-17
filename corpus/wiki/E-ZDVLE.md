@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ZDVLE
 kind: exercise
-title: "Show that if $\\Re(f(z)) \\geq 0$ for all $z\\in \\CC$, then $f$ is consta\u2026"
+title: Entire functions with nonnegative real part are constant
 classification:
   areas:
   - complex-analysis

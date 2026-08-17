@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ODRVC
 kind: problem
-title: "Give an example of a"
+title: $z^2$ is uniformly continuous on every disk $|z|<R$ but not on $\mathbb{C}$
 classification:
   areas:
   - complex-analysis

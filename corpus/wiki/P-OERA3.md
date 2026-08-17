@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OERA3
 kind: problem
-title: "Discuss sufficient conditions on a polynomial of degree 5 to have Galo\u2026"
+title: Sufficient conditions for a degree $5$ polynomial to have Galois group $S_5$ over $\QQ$
 classification:
   areas:
   - algebra

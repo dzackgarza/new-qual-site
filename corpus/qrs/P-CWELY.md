@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CWELY
 kind: problem
-title: "$V = \\theset{\\vector v \\in \\RR^3 \\suchthat \\inner{\\vector v}{\\thevector{3,4,5}} = \\vector 0}$ Subspace test: $V \\subset X$ is a linear subspace iff\u2026"
+title: The plane $3x+4y+5z=0$ as kernel or image of an endomorphism of $\mathbb{R}^3$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KNIPC
 kind: problem
-title: "Let $0<r<1$. Show that polynomials $P_n(z) = 1 + 2z + 3 z^2 + \\cdots + n z^{n-1}$ have no zeros in $|z|<r$ for all\u2026"
+title: $P_n(z)=\sum_{k=1}^n kz^{k-1}$ has no zeros in $|z|<r<1$ for large $n$
 classification:
   areas:
   - complex-analysis

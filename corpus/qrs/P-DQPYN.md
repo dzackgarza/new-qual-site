@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DQPYN
 kind: problem
-title: "Apply Rouch\u00e9's Theorem to prove the Fundamental Theorem of\u2026"
+title: The fundamental theorem of algebra via Rouché's theorem
 classification:
   areas:
   - complex-analysis

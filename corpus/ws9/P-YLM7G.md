@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YLM7G
 kind: problem
-title: "Suppose $A$, $B$, and $C$ are sets, and $f: B \\to C$ and $g: A \\to B$…"
+title: Composition of surjections is surjective, but the converse fails
 classification:
   areas:
   - prelim

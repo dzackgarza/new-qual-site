@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-JWY5GWNO
 kind: problem
-title: "Find a conformal map from $\\{ z: |z - 1/2| > 1/2, \\text{Re}(z)>0 \\}$ to $\\mathbb H$ from $\\{ z: |z - 1/2| > 1/2, |z| <1 \\}$ to $\\mathbb D$ from the\u2026"
+title: Conformal maps from circular lunes, slit discs, and half-discs
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DFUYC
 kind: exercise
-title: "Prove the \"recognizing direct products\" theorem. Can the\u2026"
+title: Recognizing direct products
 classification:
   areas:
   - algebra

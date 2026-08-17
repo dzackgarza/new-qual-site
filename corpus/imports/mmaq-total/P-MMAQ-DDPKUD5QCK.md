@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-DDPKUD5QCK
 kind: problem
-title: For a finite group $G$, let $c(G)$ denote the number of conjugacy…
+title: Commuting probability $c(G)/|G|$ and a class-equation bound
 classification:
   areas:
   - algebra

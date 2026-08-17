@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HXOHR
 kind: exercise
-title: "Let $X$ be a compact space and let $A$ be a closed subspace."
+title: Closed subsets of compact spaces are compact
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DE22H
 kind: problem
-title: Let $D = \QQ[x]$ and let $M$ be a $\QQ[x]\dash$module such that
+title: Elementary divisors and invariant factors of a given $\QQ[x]$-module
 classification:
   areas:
   - algebra

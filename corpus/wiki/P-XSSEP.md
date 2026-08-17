@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XSSEP
 kind: problem
-title: "Let $f\\in \\QQ[x]$ be an irreducible polynomial and $L$ a finite Galoi\u2026"
+title: Equal degrees of irreducible factors of $f\in\QQ[x]$ in $L[x]$ when $L/\QQ$ is Galois, and a counterexample otherwise
 classification:
   areas:
   - algebra

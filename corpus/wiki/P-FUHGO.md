@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FUHGO
 kind: problem
-title: "Give an example, with explanation, of a closed curve in a surfaces whi\u2026"
+title: A closed curve on a surface that is nullhomologous but not nullhomotopic
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZYPI3
 kind: problem
-title: a. State the structure theorem for finitely generated modules over a P…
+title: Finitely generated modules over a PID, groups of order $72$, and rational canonical form
 classification:
   areas:
   - prelim

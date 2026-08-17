@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6HPKO
 kind: problem
-title: "(Important) Prove that if $G/Z(G)$ is cyclic then $G$ is abelian."
+title: $G/Z(G)$ cyclic implies $G$ abelian
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-T5ERF
 kind: problem
-title: Let $f$ be holomorphic in a neighborhood of $D_r(z_0)$. Show that
+title: $\|f\|_{(\infty,s)}\le c\|f\|_{(1,r)}$ for holomorphic $f$ near $D_r(z_0)$
 classification:
   areas:
   - complex-analysis

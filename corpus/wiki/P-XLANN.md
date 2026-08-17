@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XLANN
 kind: problem
-title: "Let $g\\in L^\\infty([0, 1])$."
+title: $\|g\|_p\to\|g\|_\infty$ as $p\to\infty$ on $[0,1]$, and $\|\Lambda_g\|_{(L^1)^*}=\|g\|_\infty$
 classification:
   areas:
   - real-analysis

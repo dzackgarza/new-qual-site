@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BKCZH
 kind: problem
-title: "Suppose that $f: [0,1] \\to \\mathbb{R}$ is differentiable and"
+title: $|f'|\le k|f|$ and $f(0)=0$ imply $f\equiv 0$ on $[0,1]$
 classification:
   areas:
   - real-analysis

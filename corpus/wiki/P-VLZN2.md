@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VLZN2
 kind: problem
-title: "Show that if $f\\in L^1$ then $\\hat f$ is bounded and uniformly continuous. Is\u2026"
+title: 'Fourier transforms of $L^1$ functions: boundedness, uniqueness, the multiplication formula, and Fourier series of $C^1$ functions'
 classification:
   areas:
   - real-analysis

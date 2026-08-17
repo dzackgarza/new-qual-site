@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KXSW3
 kind: problem
-title: "Let $G\\leq H$ where $H$ is a finite $p\\dash$group, and suppose $\\phi: G\\to H / [H, H]$ be defined by\u2026"
+title: A subgroup of a finite $p$-group generating $H/[H,H]$ equals $H$
 classification:
   areas:
   - algebra

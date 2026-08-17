@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WAI3F
 kind: problem
-title: "Main Idea: Linear homotopy fails continuity without the\u2026"
+title: The antipodal map on $S^n$ is homotopic to the identity when $n$ is odd
 classification:
   areas:
   - topology

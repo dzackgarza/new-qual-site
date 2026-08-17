@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CIAF4
 kind: problem
-title: "Show that any finite index subgroup of a finitely generated free group\u2026"
+title: Finite-index subgroups of finitely generated free groups are free; infinite-index normal subgroups are not finitely generated
 classification:
   areas:
   - topology

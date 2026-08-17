@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZLNVG
 kind: problem
-title: "Let $G$ be a group of order 70."
+title: No simple group of order $70$, and three nonisomorphic groups of that order
 classification:
   areas:
   - algebra

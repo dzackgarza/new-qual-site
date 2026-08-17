@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2JRWF
 kind: problem
-title: "Let $X$ and $Y$ be finite connected simplicial complexes and let $f : X \\to Y$\u2026"
+title: Every map homotopic to $f\vee g:X\vee Y\to X\vee Y$ has a fixed point
 classification:
   areas:
   - topology

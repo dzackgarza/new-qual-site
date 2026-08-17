@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-SY44WBFUQF
 kind: problem
-title: Let $(f_n)$ be a sequence of holomorphic functions in a domain $D$.
+title: 'Weierstrass''s theorem: locally uniform limits of holomorphic functions are holomorphic, with locally uniform convergence of derivatives'
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HZ3G4
 kind: problem
-title: "Prove that the following series converges uniformly on the\u2026"
+title: Uniform convergence of $\sum\sin(nz)/2^n$ on $\{\Im z<\ln 2\}$
 classification:
   areas:
   - complex-analysis

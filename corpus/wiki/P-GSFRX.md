@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GSFRX
 kind: problem
-title: "Since all eigenvalues are roots of the minimal polynomial and complex\u2026"
+title: Minimal and characteristic polynomials of a $5\times 5$ real matrix with eigenvalues $0,1\pm i,1\pm 2i$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FMCFR
 kind: exercise
-title: "Show that a continuous map from a compact space to a\u2026"
+title: Continuous maps from compact spaces to Hausdorff spaces are closed
 classification:
   areas:
   - topology

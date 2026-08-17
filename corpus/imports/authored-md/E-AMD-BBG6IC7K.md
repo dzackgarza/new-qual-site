@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-BBG6IC7K
 kind: exercise
-title: Show that if $R$ is Noetherian then every ideal is finitely generated.
+title: Every ideal in a Noetherian ring is finitely generated
 classification:
   areas:
   - algebra

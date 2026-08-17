@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ROEFL
 kind: problem
-title: "Assume $f(z)$ is analytic in ${\\mathbb D}$ and $f(0)=0$ and is not a r\u2026"
+title: Uniform compact convergence of $\sum f^{n}$ for analytic $f$ on $\DD$ with $f(0)=0$ not a rotation
 classification:
   areas:
   - complex-analysis

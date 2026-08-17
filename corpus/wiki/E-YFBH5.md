@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YFBH5
 kind: exercise
-title: "Suppose $f:\\DD\\to\\DD$ is analytic, has a single zero of order $k$ at $z=0$, and\u2026"
+title: Analytic self-maps of the disc with a zero of order $k$ at $0$ and $|f|\to 1$ at the boundary
 classification:
   areas:
   - complex-analysis

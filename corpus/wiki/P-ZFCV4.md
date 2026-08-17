@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZFCV4
 kind: problem
-title: "Tell me a condition on the Galois group which is implied by irreducibi\u2026"
+title: Galois-group conditions implied by irreducibility of a polynomial, and by a root in the base field
 classification:
   areas:
   - algebra

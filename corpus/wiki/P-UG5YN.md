@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UG5YN
 kind: problem
-title: "Prove that, for $n \\geq 2$, every continuous map $f: \\RP^n \\to S^1$ is\u2026"
+title: Every continuous map $\RP^n\to S^1$ is null-homotopic for $n\geq 2$
 classification:
   areas:
   - topology

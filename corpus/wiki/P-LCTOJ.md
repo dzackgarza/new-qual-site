@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LCTOJ
 kind: problem
-title: "Let $X = \\RR^3 - \\Delta^{(1)}$, the complement of the skeleton of regu\u2026"
+title: $\pi_1$ and $H_*$ of $\RR^3$ minus a tetrahedron's $1$-skeleton
 classification:
   areas:
   - topology

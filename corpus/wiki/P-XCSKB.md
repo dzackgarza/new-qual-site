@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XCSKB
 kind: problem
-title: "Let $R$ be a ring and $M$ an $R\\dash$module. $\\tor(M) = \\{m \\in M \\suchthat \\exists r \\in R, ~r \\neq 0, ~rm = 0\\}$"
+title: Torsion elements form a submodule over an integral domain but not in general, and every module over a ring with zero-divisors has torsion
 classification:
   areas:
   - algebra

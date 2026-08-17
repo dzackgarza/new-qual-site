@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J2XEL
 kind: problem
-title: "Are diagonalisable $N \\times N$ matrices over the complex numbers dens\u2026"
+title: Diagonalizable matrices are dense over $\CC$ and Zariski-dense over an algebraically closed field
 classification:
   areas:
   - algebra

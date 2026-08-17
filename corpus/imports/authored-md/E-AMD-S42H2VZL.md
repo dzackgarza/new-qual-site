@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-S42H2VZL
 kind: exercise
-title: Show that disjoint cycles commute.
+title: Disjoint cycles commute
 classification:
   areas:
   - algebra

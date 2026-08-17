@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5VQ6H
 kind: problem
-title: Let $L^2 = L^2(\mathbb{R}^d)$ be the real Hilbert space endowed with i…
+title: Weak-plus-norm convergence is strong in $L^2$, and the unit ball is not strongly compact
 classification:
   areas:
   - real-analysis

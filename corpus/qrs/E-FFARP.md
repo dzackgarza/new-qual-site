@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FFARP
 kind: exercise
-title: "Show that every compact set is closed and bounded."
+title: Every compact set in a metric space is closed and bounded
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W3HQL
 kind: problem
-title: "For any natural number $g$ let $\\Sigma_g$ denote the (compact, orienta\u2026"
+title: The genera $g$ for which there is a covering $\Sigma_5\to\Sigma_g$
 classification:
   areas:
   - topology

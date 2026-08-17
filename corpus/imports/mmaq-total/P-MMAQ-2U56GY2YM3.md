@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-2U56GY2YM3
 kind: problem
-title: Let $X$ be a space obtained by attaching two 2-cells to the torus…
+title: Torus with two 2-cells attached along parallel circles
 classification:
   areas:
   - topology

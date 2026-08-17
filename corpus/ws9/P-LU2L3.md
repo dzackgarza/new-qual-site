@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LU2L3
 kind: problem
-title: For $n = 3, 4$, and 5, determine the number of similarity classes of m…
+title: Similarity classes of order-$8$ matrices in $M_n(\mathbb{Q})$ for $n=3,4,5$
 classification:
   areas:
   - prelim

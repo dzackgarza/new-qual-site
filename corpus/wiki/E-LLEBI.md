@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-LLEBI
 kind: problem
-title: "Let $f$ be a non-constant analytic function on $\\mathbb D$ with $f(\\mathbb D) \\subseteq \\mathbb D$."
+title: $\frac{|f(0)|-|z|}{1+|f(0)||z|}\le|f(z)|\le\frac{|f(0)|+|z|}{1-|f(0)||z|}$ for holomorphic $f:\mathbb{D}\to\mathbb{D}$
 classification:
   areas:
   - complex-analysis

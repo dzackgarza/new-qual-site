@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LMVF6
 kind: problem
-title: "Prove that any finite tree is contractible, where a tree is\u2026"
+title: Finite trees are contractible
 classification:
   areas:
   - topology

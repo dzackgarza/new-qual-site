@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ASHJM
 kind: problem
-title: "State the classification theorem for surfaces (compact, without bounda\u2026"
+title: Classification of compact surfaces, with $H_1$ and Euler characteristic
 classification:
   areas:
   - topology

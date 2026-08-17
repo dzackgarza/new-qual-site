@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OLLG3
 kind: problem
-title: "Noting that applying a row operation to $A$ is the same as taking the\u2026"
+title: Elementary matrices preserve solutions of $Ax=b$
 classification:
   areas:
   - algebra

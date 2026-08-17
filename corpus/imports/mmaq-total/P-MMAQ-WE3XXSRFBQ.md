@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WE3XXSRFBQ
 kind: problem
-title: i. Let $A$ be a subspace of a topological space $X$.
+title: Isomorphic fundamental groups of the figure eight and the theta space, with $\pi_1$ free on two generators
 classification:
   areas:
   - topology

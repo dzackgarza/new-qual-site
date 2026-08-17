@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-26UEL
 kind: problem
-title: "Let $M$ and $N$ be finite CW complexes."
+title: Cellular structure of a product of finite CW complexes and $\chi(M\times N)=\chi(M)\chi(N)$
 classification:
   areas:
   - topology

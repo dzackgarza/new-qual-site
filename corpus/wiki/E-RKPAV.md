@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-RKPAV
 kind: exercise
-title: "Prove that if $f$ is holomorphic on a connected open set $\\Omega$ and\u2026"
+title: Holomorphic functions satisfying $f^{2}=\overline{f}$ are constant
 classification:
   areas:
   - complex-analysis

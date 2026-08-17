@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PQ3FR
 kind: exercise
-title: "Suppose $\\mfm \\in \\mspec R$ is a proper maximal ideal."
+title: A ring is local if $R\setminus\mfm$ consists of units, or if $1+\mfm$ consists of units
 classification:
   areas:
   - algebra

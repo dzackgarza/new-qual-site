@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GT5L7
 kind: problem
-title: "Show that $\\ZZ^{\\ast 2}$ has subgroups isomorphic to $\\ZZ^{\\ast n}$ fo\u2026"
+title: $\ZZ^{*2}$ has subgroups isomorphic to $\ZZ^{*n}$ for every $n$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GKPVE
 kind: problem
-title: "Since $f$ is irreducible of degree $n$ and $u$ is a root of $f$, the \u2026"
+title: $K(u)/K$ is not Galois and $\Aut(K(u)/K)$ is trivial for a single root of an irreducible of degree $n$
 classification:
   areas:
   - algebra

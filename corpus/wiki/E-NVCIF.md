@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NVCIF
 kind: exercise
-title: "Show that there is an entire function $h$ such that"
+title: An entire function $h$ with $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{k\in\mathbb{Z}}\frac{1}{(z-k)^2}+h(z)$
 classification:
   areas:
   - complex-analysis

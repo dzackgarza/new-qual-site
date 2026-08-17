@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-US4ES
 kind: problem
-title: "Let $(X,d)$ be a metric space. A function"
+title: Continuity equivalent to lower and upper semicontinuity, and sequential characterization of lower semicontinuity
 classification:
   areas:
   - real-analysis

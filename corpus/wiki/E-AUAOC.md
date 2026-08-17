@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AUAOC
 kind: exercise
-title: "Show that $S^n$ is not a strong deformation retract of $\\BB^{n+1}$."
+title: $S^n$ is not a strong deformation retract of $B^{n+1}$
 classification:
   areas:
   - topology

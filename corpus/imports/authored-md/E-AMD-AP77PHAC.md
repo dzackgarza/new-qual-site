@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-AP77PHAC
 kind: exercise
-title: Show that $Z(G) \subseteq C_G(H) \subseteq N_G(H)$.
+title: $Z(G)\subseteq C_G(H)\subseteq N_G(H)$
 classification:
   areas:
   - algebra

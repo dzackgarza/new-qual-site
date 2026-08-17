@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WYWUP
 kind: problem
-title: Let $V$ be a finite dimensional vector space over a field (the field is...
+title: Fitting's lemma
 classification:
   areas:
   - algebra

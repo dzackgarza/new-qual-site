@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-7LZS7WZJ
 kind: exercise
-title: Show that if $p\in \QQ[x]$ and $r\in \QQ$ is a rational root, then…
+title: Rational roots of polynomials in $\QQ[x]$ are integers
 classification:
   areas:
   - algebra

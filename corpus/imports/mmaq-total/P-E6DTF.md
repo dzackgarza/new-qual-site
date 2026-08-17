@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E6DTF
 kind: problem
-title: Let $G$ be a finite group, $k$ an algebraically closed field, and $V$
+title: 'Schur''s lemma: $\operatorname{Hom}_{kG}(V,V)=k$ for an irreducible representation over an algebraically closed field'
 classification:
   areas:
   - algebra

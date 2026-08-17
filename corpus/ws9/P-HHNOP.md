@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HHNOP
 kind: problem
-title: "Let $X$ and $Y$ be Banach spaces."
+title: 'Compactness of $A:X\to Y$ when $X$ is reflexive and $X^*$ is separable: every bounded sequence has a subsequence $x_{n_j}=\phi+r_{n_j}$ with $Ar_{n_j}\to 0$'
 classification:
   areas:
   - real-analysis

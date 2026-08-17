@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O2H7G
 kind: problem
-title: "Show that if $H, K \\leq G$ are subgroups and $H \\leq N_G(K)$, then $HK$ is a subgroup."
+title: $HK$ is a subgroup when $H\le N_G(K)$; a counterexample when $K$ is not a subgroup
 classification:
   areas:
   - algebra

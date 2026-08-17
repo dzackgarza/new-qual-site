@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E54MV
 kind: problem
-title: "Writing $f(x) = x^3 - 3x - 3 = \\sum a_i x_i \\in \\QQ[x]$, we can conclu\u2026"
+title: Galois group of $x^3-3x-3$ over $\QQ$ is $S_3$
 classification:
   areas:
   - algebra

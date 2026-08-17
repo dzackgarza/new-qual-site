@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FIOQC
 kind: problem
-title: "Use the following formula to show that the complex zeros of $\\sin(\\pi z)$\u2026"
+title: Simple zeros of $\sin(\pi z)$ at the integers, and $\operatorname{Res}_{z=n}\frac{1}{\sin(\pi z)}$
 classification:
   areas:
   - complex-analysis

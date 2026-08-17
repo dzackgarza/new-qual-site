@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6XN3Z
 kind: problem
-title: "Let $S^2 \\to \\RP^2$ be the universal covering map."
+title: Whether the covering $S^2\to\RP^2$ is null-homotopic
 classification:
   areas:
   - topology

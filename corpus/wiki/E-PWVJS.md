@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PWVJS
 kind: exercise
-title: "Show that $\\logd(fg) = \\logd f + \\logd g$, i.e."
+title: 'The logarithmic derivative of a product: $\frac{(fg)''}{fg}=\frac{f''}{f}+\frac{g''}{g}$'
 classification:
   areas:
   - complex-analysis

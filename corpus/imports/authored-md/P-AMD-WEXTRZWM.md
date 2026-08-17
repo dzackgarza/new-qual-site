@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-WEXTRZWM
 kind: problem
-title: "Let $\\mathcal B$ denote the set of all Borel subsets of $\\RR$ and $\\mu : \\mathcal B \\to [0, \\infty)$ denote a\u2026"
+title: Continuity from above for a finite Borel measure, and $\varepsilon$-$\delta$ absolute continuity
 classification:
   areas:
   - real-analysis

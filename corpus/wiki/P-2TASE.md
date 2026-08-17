@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2TASE
 kind: problem
-title: "Important: Pick your favorite composite number $m = \\prod p_i^{e_i}$ and classify\u2026"
+title: Classification of abelian groups of a given composite order
 classification:
   areas:
   - algebra

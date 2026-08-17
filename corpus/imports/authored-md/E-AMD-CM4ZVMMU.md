@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-CM4ZVMMU
 kind: exercise
-title: Show that every group of order $p$ is cyclic.
+title: Groups of prime order are cyclic
 classification:
   areas:
   - algebra

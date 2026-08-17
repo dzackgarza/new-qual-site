@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DWFMA
 kind: problem
-title: "Let $E\\subset \\RR$ be a Lebesgue measurable set."
+title: Every Lebesgue measurable set contains a Borel set of full measure
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SZ22K
 kind: problem
-title: "Prove that all finite integral domains are fields."
+title: Finite integral domains are fields
 classification:
   areas:
   - algebra

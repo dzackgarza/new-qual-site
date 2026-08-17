@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FQRRXNYJJL
 kind: problem
-title: Let $f$ be an entire function and suppose that $|f(z)| \leq A|z|^2$
+title: An entire function with $|f(z)|\leq A|z|^2$ is a polynomial of degree at most $2$
 classification:
   areas:
   - complex-analysis

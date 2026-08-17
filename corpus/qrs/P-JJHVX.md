@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JJHVX
 kind: problem
-title: "Show that if $f$ is once complex differentiable at each point\u2026"
+title: Once complex differentiable implies holomorphic
 classification:
   areas:
   - complex-analysis

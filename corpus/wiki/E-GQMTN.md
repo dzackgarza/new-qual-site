@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GQMTN
 kind: exercise
-title: "Find all entire functions $f$ satisfying"
+title: There is no entire function with $|f(z)|\ge|z|+1$ for all $z$
 classification:
   areas:
   - complex-analysis

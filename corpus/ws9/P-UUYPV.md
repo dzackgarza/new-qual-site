@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UUYPV
 kind: problem
-title: Let $F(z)$ be a non-constant meromorphic function on the complex plane…
+title: An elliptic function has equally many zeros and poles in a period square
 classification:
   areas:
   - real-analysis

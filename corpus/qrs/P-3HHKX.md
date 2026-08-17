@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3HHKX
 kind: problem
-title: "Prove the following inequality, and explain when equality\u2026"
+title: Reverse triangle inequality $|z+w|\ge\bigl||z|-|w|\bigr|$
 classification:
   areas:
   - complex-analysis

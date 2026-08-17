@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-3LUW3P7R
 kind: exercise
-title: Show that $\Inn(G) \normal Aut(G)$
+title: $\Inn(G)$ is normal in $\Aut(G)$
 classification:
   areas:
   - algebra

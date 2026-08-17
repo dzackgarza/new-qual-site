@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-LUQWX7QK
 kind: exercise
-title: Show that $H~\text{char}~G \Rightarrow H \unlhd G$
+title: Characteristic subgroups are normal
 classification:
   areas:
   - algebra

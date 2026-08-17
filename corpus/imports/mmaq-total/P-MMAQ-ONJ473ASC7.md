@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ONJ473ASC7
 kind: problem
-title: a. Show that $L^2([0, 1]) \subseteq L^1([0, 1])$ and argue that…
+title: $L^2([0,1])$ is dense in $L^1$, and Riesz representation for $(L^1)^*$
 classification:
   areas:
   - real-analysis

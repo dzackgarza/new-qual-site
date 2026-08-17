@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ER23C
 kind: problem
-title: "Show that $P(z) \\da z^4 + 6z + 3$ has 3 zeros in $\\ts{1\\leq \\abs{z} \\leq 2}$."
+title: $z^4+6z+3$ has three zeros in $1\le|z|\le 2$
 classification:
   areas:
   - complex-analysis

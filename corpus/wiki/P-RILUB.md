@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RILUB
 kind: problem
-title: "What are the polynomials in two real variables that are invariant unde\u2026"
+title: $D_4$-invariant polynomials in two real variables
 classification:
   areas:
   - algebra

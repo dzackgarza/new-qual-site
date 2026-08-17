@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-05
 kind: problem
-title: 'Compute the homology of the complement of two unlinked circles in R3'
+title: Homology of the complement of two unlinked circles in $\mathbb{R}^3$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3TOOU
 kind: problem
-title: "Main Idea: Deformation retract $M$ onto its center circle; two\u2026"
+title: The Möbius band is homotopy equivalent to $S^1\times I$
 classification:
   areas:
   - topology

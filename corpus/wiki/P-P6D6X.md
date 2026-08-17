@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P6D6X
 kind: problem
-title: "Suppose that $f_n, f \\in L^1$, $f_n \\to f$ almost everywhere, and $\\int\\left|f_{n}\\right| \\rightarrow \\int|f|$."
+title: $f_n\to f$ almost everywhere in $L^1$ with $\int|f_n|\to\int|f|$ implies $\int f_n\to\int f$
 classification:
   areas:
   - real-analysis

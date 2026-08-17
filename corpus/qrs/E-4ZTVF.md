@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-4ZTVF
 kind: exercise
-title: "Show that a quotient of a compact space is again compact."
+title: A quotient of a compact space is compact
 classification:
   areas:
   - topology

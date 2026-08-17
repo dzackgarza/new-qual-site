@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UQOCE
 kind: problem
-title: "Let $f$ be analytic in a domain $D$ and $\\gamma$ be a closed curve in\u2026"
+title: $\int_\gamma\frac{f'(z)}{z-z_0}\,dz=\int_\gamma\frac{f(z)}{(z-z_0)^2}\,dz$
 classification:
   areas:
   - complex-analysis

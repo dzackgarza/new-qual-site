@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SAIVF
 kind: problem
-title: Let $f\in L^2([0, 1])$ and suppose
+title: A function in $L^2([0,1])$ orthogonal to every polynomial vanishes a.e.
 classification:
   areas:
   - real-analysis

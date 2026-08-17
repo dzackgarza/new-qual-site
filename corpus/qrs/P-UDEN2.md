@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UDEN2
 kind: problem
-title: "Let $f: {\\mathbb C} \\rightarrow {\\mathbb C}$ be an injective analytic\u2026"
+title: An injective entire function is affine, $f(z)=az+b$
 classification:
   areas:
   - complex-analysis

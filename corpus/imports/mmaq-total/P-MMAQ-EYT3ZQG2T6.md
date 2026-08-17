@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-EYT3ZQG2T6
 kind: problem
-title: "Assume $f$ is continuous in the region: $0< |z-a| \\leq R, \\; 0 \\leq \\arg(z-a) \\leq \\beta_0$\u2026"
+title: $\lim_{r\to 0}\int_{\gamma_r} f(z)\,dz=iA\beta_0$ when $(z-a)f(z)\to A$
 classification:
   areas:
   - complex-analysis

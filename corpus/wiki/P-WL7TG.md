@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WL7TG
 kind: problem
-title: "Let $M=\\left(\\begin{array}{ll}{a} & {b} \\\\ {c} & {d}\\end{array}\\right) \\quad \\text{and} \\quad N=\\left(\\begin{array}{cc}{x} & {u} \\\\ {-y} & {-v}\\end{array}\\right)$ over a commutative ring $R$, where $b$ and $x$ are units\u2026"
+title: If $b$ and $x$ are units, a $2\times 2$ product over a commutative ring that vanishes off the bottom-right corner is zero
 classification:
   areas:
   - algebra

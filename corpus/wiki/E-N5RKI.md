@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-N5RKI
 kind: exercise
-title: "Show that if $\\abs{f} = 0$ on $\\bd \\Omega$ then either $f$ is constant\u2026"
+title: Vanishing on $\partial\Omega$ implies constancy or an interior zero
 classification:
   areas:
   - complex-analysis

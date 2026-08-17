@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-YLL2URRQIV
 kind: problem
-title: Let $X$ be a topological space.
+title: Definition of compactness, and compactness of $\{0\}\cup\{1/n:n\in\ZZ^+\}$ and of $(0,1]$
 classification:
   areas:
   - topology

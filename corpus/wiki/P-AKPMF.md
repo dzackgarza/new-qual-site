@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AKPMF
 kind: problem
-title: "Let $1 \\leq p,q \\leq \\infty$ be conjugate exponents, and show that"
+title: $\|f\|_p=\sup_{\|g\|_q=1}|\int fg|$ for $f\in L^p(\RR^n)$ and conjugate exponents
 classification:
   areas:
   - real-analysis

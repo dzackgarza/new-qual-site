@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ID7CS
 kind: exercise
-title: "If $F$ is some (not necessarily Galois) field extension over $K$\u2026"
+title: $[F:K]=6$ and $\operatorname{Aut}_{K}F\cong S_{3}$ implies $F$ is a cubic splitting field
 classification:
   areas:
   - algebra

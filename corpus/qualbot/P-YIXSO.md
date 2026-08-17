@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YIXSO
 kind: problem
-title: "Prove that if $f : [0, 1] \\to \\mathbb{R}$ is continuous then"
+title: $\lim_{k\to\infty}\int_0^1 kx^{k-1}f(x)\,dx=f(1)$ for continuous $f$ on $[0,1]$
 classification:
   areas:
   - real-analysis

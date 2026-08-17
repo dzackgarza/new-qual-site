@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AUACU
 kind: problem
-title: "Prove that if $f'$ exists and is bounded on"
+title: A bounded derivative on $(a,b]$ implies $\lim_{x\to a^+}f(x)$ exists
 classification:
   areas:
   - real-analysis

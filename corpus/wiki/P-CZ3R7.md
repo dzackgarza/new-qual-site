@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CZ3R7
 kind: problem
-title: "Prove that if $c>0$, $\\abs{w_1} = c\\abs{w_2} \\implies \\abs{w_1 - c^2 w_2} = c\\abs{w_1 - w_2}$ Prove that if $c>0$ and $c\\neq 1$, with $z_1\\neq z_2$, then the\u2026"
+title: $|z-z_1|/|z-z_2|=c$ is a circle
 classification:
   areas:
   - complex-analysis

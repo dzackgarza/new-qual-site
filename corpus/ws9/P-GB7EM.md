@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GB7EM
 kind: problem
-title: a. Let $f$ be a real-valued function defined on $\mathbb{R}^n$. Define…
+title: Differentiability in $\mathbb{R}^n$, and $xy/(x^2+y^2)$ is not differentiable at the origin
 classification:
   areas:
   - prelim

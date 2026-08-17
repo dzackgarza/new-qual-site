@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-W4GDW
 kind: exercise
-title: "Find the conformal map that takes the upper half-plane conformally ont\u2026"
+title: A conformal map from $\HH$ onto $\{-\pi/2<\Re w<\pi/2,\,\Im w>0\}$
 classification:
   areas:
   - complex-analysis

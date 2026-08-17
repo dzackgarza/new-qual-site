@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SUDRI
 kind: exercise
-title: "Show that if $f$ is entire and $f(z) \\convergesto{z\\to\\infty} \\infty$\u2026"
+title: Entire functions with $f(z)\to\infty$ as $z\to\infty$ are polynomials
 classification:
   areas:
   - complex-analysis

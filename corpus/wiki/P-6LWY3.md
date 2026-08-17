@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6LWY3
 kind: problem
-title: "Let $f_n(x) = n^\\beta x(1-x^2)^n$, $x \\in [0,1]$,"
+title: Pointwise convergence of $n^\beta x(1-x^2)^n$ on $[0,1]$, uniform if and only if $\beta<\frac12$
 classification:
   areas:
   - real-analysis

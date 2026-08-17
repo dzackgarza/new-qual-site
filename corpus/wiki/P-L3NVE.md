@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L3NVE
 kind: problem
-title: "Let $X = S^1 \\cross S^1$ and $A\\subset X$ be a subspace with $A \\cong S^1 \\vee S^1$. Show that there is no\u2026"
+title: No retraction from the torus onto $S^1\vee S^1$
 classification:
   areas:
   - topology

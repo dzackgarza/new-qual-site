@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ZSDP5Q6E
 kind: problem
-title: Compute $H_*(X)$ for $X = S^3 - N$, with $N$ a knotted solid torus…
+title: Homology of the complement of a knotted solid torus in $S^3$
 classification:
   areas:
   - topology

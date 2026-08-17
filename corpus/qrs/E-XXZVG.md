@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XXZVG
 kind: exercise
-title: "Prove the uniform limit theorem for holomorphic functions\u2026"
+title: Uniform limit theorem for holomorphic functions
 classification:
   areas:
   - complex-analysis

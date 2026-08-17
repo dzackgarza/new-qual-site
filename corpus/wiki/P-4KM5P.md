@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4KM5P
 kind: problem
-title: "Show that the above is still true if $\\text{Re}(f(z)) >0$ is replaced\u2026"
+title: The same conclusion if $\operatorname{Re}(f(z))>0$ is replaced by $\operatorname{Re}(f(z))\ge 0$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5JYOH
 kind: problem
-title: "Describe the topological classification of all compact connected surfa\u2026"
+title: Classification of compact connected closed surfaces with $\chi(M)\ge -2$
 classification:
   areas:
   - topology

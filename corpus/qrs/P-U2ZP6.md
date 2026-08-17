@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-U2ZP6
 kind: problem
-title: "Can every continuous function on $\\bar \\DD$ be uniformly approximated\u2026"
+title: Polynomials in $z$ are not uniformly dense in $C(\overline{\mathbb{D}})$
 classification:
   areas:
   - complex-analysis

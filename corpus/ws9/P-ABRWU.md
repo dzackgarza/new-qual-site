@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ABRWU
 kind: problem
-title: "Let $f:\\mathbb{R}\\to\\mathbb{R}$ be a function and let $a$ be a real nu…"
+title: 'Contrapositive and converse of: a local minimum at $a$ implies $f''(a)=0$ or nondifferentiability at $a$'
 classification:
   areas:
   - prelim

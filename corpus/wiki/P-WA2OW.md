@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WA2OW
 kind: problem
-title: "Group representations: What's special about using $\\CC$ in the definit\u2026"
+title: The group algebra over $\CC$ versus other fields, and when the characteristic divides $|G|$
 classification:
   areas:
   - algebra

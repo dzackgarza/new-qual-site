@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KH5ZV
 kind: problem
-title: "Let $f\\in L^1(\\RR)$. Show that $\\forall\\varepsilon > 0 \\exists \\delta > 0 \\text{ such that } \\qquad m(E) < \\delta \\implies \\int _{E} |f(x)| \\, dx < \\varepsilon$ Note that if $m(E) = 0$ then $\\int_E f = 0$ for any $f$."
+title: Absolute continuity of $\int_E|f|$ for $f\in L^1(\RR)$
 classification:
   areas:
   - real-analysis

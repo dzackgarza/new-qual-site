@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-E2LGY
 kind: exercise
-title: "Suppose $\\theset{f_n}_{n\\in \\NN}$ is a sequence of entire functions where $f_n \\to g$ pointwise\u2026"
+title: Pointwise limits of entire functions, uniform on segments, are entire and compactly convergent
 classification:
   areas:
   - complex-analysis

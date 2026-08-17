@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TKF72
 kind: problem
-title: "Let $0\\leq \\alpha \\leq 2\\pi$ be a fixed angle."
+title: The integral of $f$ over a large circular arc of angle $\alpha$ tends to $iA\alpha$ when $zf(z)\to A$
 classification:
   areas:
   - complex-analysis

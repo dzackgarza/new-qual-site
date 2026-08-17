@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-GS7ONTMGVF
 kind: problem
-title: "Let $z, w$ be complex numbers, such that $\\bar{z} w \\neq 1$. Prove that $\\abs{\\frac{w - z}{1 - \\bar{w} z}} < 1 \\; \\; \\; \\mbox{if} \\; |z| < 1 \\; \\mbox{and}\\; |w| < 1$ and also\u2026"
+title: The disk automorphism $F(z)=\frac{w-z}{1-\bar{w}z}$
 classification:
   areas:
   - complex-analysis

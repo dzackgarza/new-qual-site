@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PCSZ2
 kind: problem
-title: "Suppose $J$ and $L$ are groups, and $\\varphi: L \\to \\mathrm{Aut}(J)$ i…"
+title: The semidirect product $J\rtimes_\varphi L$ is direct iff $\varphi$ is trivial
 classification:
   areas:
   - prelim

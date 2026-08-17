@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ONG5Z
 kind: problem
-title: "Suppose that $X \\subset Y$ and $X$ is a deformation retract of $Y$."
+title: A space with a path-connected deformation retract is path-connected
 classification:
   areas:
   - topology

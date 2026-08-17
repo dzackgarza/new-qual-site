@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EEUV6
 kind: problem
-title: "Let $\\Omega$ be the region inside the unit circle $\\abs{z} = 1$ and ou\u2026"
+title: An injective conformal map from $\{|z|<1\}\setminus\{|z-1/4|\le 1/4\}$ onto an annulus
 classification:
   areas:
   - complex-analysis

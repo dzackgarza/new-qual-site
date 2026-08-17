@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CYOVTO7I2K
 kind: problem
-title: "Let \\begin{align} R=\\mathbb Z[x]/(x^2+x+1). \\end{align}{=tex} Answer the following questions with suitable\u2026"
+title: Whether $\mathbb{Z}[x]/(x^2+x+1)$ is Noetherian, Artinian, or an integrally closed domain
 classification:
   areas:
   - algebra

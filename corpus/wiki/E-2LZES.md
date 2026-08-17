@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2LZES
 kind: exercise
-title: "Show that for $X$ metrizable, compactness, limit point compactness and sequential compactness agree"
+title: Compactness, limit point compactness, and sequential compactness are equivalent for metrizable spaces
 classification:
   areas:
   - topology

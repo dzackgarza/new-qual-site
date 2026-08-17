@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-IHJ56
 kind: exercise
-title: "Show that if $X$ is Hausdorff and $A\\subseteq X$ is compact then $A$ is closed."
+title: A compact subset of a Hausdorff space is closed
 classification:
   areas:
   - topology

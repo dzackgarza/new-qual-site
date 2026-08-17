@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-V3DIZ
 kind: problem
-title: "An element $x\\in M$ is torsion iff there exists some nonzero $r\\in R$ such\u2026"
+title: Torsion elements of a module
 classification:
   areas:
   - algebra

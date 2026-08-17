@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UBJDX
 kind: problem
-title: "Let $X$ be $T^2$ with a 2-cell attached to the interior along a longit\u2026"
+title: $\pi_2$ of a torus with a $2$-cell attached along a longitude
 classification:
   areas:
   - topology

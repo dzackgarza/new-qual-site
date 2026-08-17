@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PDAPQ
 kind: problem
-title: Give an example of each of the following. (You don't need to justify y…
+title: Examples of maximal ideals, prime non-maximal ideals, torsion-free modules, UFDs, and non-Noetherian rings
 classification:
   areas:
   - prelim

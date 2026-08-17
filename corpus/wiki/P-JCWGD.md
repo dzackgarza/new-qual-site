@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JCWGD
 kind: problem
-title: "Let $G$ be a finite group and $X$ a set on which $G$ acts."
+title: The stabilizer is a subgroup, and the orbit-stabilizer bijection $G\cdot x\simeq G/G_x$
 classification:
   areas:
   - algebra

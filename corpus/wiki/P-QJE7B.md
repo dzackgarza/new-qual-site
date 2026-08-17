@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QJE7B
 kind: problem
-title: "Let $\\vector w_i$ be the proposed new basis elements -- then $\\theset{\\vector w_i}$ will be a\u2026"
+title: $\{v_1+v_2,\, v_1+v_2+v_3,\, -v_2+2v_3\}$ is a basis of $\RR^3$ whenever $\{v_i\}$ is
 classification:
   areas:
   - prelim

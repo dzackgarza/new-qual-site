@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SD42B
 kind: problem
-title: Let $a_0, a_1, a_2, \ldots$ be a decreasing sequence of positive real…
+title: Bounds on alternating partial sums of a decreasing positive sequence
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XYDVS
 kind: problem
-title: "Let $H$ be a normal subgroup of a finite group $G$ where the order\u2026"
+title: A normal subgroup of order coprime to its index is unique of its order
 classification:
   areas:
   - algebra

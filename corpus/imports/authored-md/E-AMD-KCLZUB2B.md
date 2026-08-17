@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-KCLZUB2B
 kind: exercise
-title: Show that a matrix representing a linear map $T:V\to V$ is…
+title: A linear operator is diagonalizable iff $V$ is the direct sum of its eigenspaces
 classification:
   areas:
   - algebra

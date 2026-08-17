@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CCHG2
 kind: problem
-title: Let $f$ be a non-negative measurable function on $[0, 1]$. Show that
+title: $\lim_{p\to\infty}\|f\|_p=\|f\|_\infty$ for nonnegative measurable $f$ on $[0,1]$
 classification:
   areas:
   - real-analysis

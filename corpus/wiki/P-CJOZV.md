@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CJOZV
 kind: problem
-title: "Find all three-fold covers of the wedge of two copies of $\\RP^2$ .\u2026"
+title: Three-fold covers of $\RP^2\vee\RP^2$
 classification:
   areas:
   - topology

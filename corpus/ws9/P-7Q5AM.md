@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7Q5AM
 kind: problem
-title: Let $H$ be an infinite dimensional real Hilbert space.
+title: The unit sphere of an infinite-dimensional Hilbert space is weakly dense in the unit ball, and operators of norm $1$ converging strongly to $0$
 classification:
   areas:
   - real-analysis

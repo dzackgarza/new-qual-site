@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FKAJJ
 kind: problem
-title: "Let $G$ be a finite group acting on a set $X$."
+title: Orbit-stabilizer bijection $G/G_x\simeq G\cdot x$, and nontriviality of $Z(G)$ for finite $p$-groups
 classification:
   areas:
   - algebra

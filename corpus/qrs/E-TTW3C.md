@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TTW3C
 kind: exercise
-title: "Show that if $f: A\\to B$ is a continuous map between metric spaces an\u2026"
+title: A continuous map of metric spaces is uniformly continuous on compact subsets
 classification:
   areas:
   - topology

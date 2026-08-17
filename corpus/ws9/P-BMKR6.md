@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BMKR6
 kind: problem
-title: Prove that a normed vector space $(X, \|\cdot\|)$ is Banach if and onl…
+title: A normed space is Banach iff every absolutely convergent series converges
 classification:
   areas:
   - real-analysis

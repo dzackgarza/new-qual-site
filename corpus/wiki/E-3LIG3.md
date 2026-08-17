@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3LIG3
 kind: exercise
-title: "Suppose that $g$ is entire and satisfies the functional\u2026"
+title: Entire functions satisfying $g(1-z)=1-g(z)$ are surjective
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P3GIM
 kind: problem
-title: "Let $V$ be a finite dimensional vector space over a field (the field i\u2026"
+title: 'Fitting''s lemma: $V=U\oplus W$ with $\phi|_U$ nilpotent and $\phi|_W$ nonsingular'
 classification:
   areas:
   - algebra

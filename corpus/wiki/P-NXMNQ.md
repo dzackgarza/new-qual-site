@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NXMNQ
 kind: problem
-title: "Suppose that $f:\\mathbb{R}\\to\\mathbb{R}$ satisfies"
+title: $f:\mathbb{R}\to\mathbb{R}$ with $f(0)=0$ is differentiable at $0$ if and only if $f(x)=xg(x)$ for a function $g$ continuous at $0$
 classification:
   areas:
   - real-analysis

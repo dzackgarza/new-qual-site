@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JVZMJ
 kind: problem
-title: Write the negations of these sentences in as "smooth" a way as possibl…
+title: Smooth negations of a quantified inequality, the extreme value theorem, and a biconditional
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-DGLROO56SW
 kind: problem
-title: Show that the space $C^1([a, b])$ is a Banach space when equipped…
+title: $C^1([a,b])$ is Banach under $\|f\|_\infty+\|f'\|_\infty$
 classification:
   areas:
   - real-analysis

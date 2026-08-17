@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OFI4Y
 kind: problem
-title: "Suppose $n \\geq 2$. Use a wedge of angle $\\frac{2 \\pi}{n}$ to evaluate the integral $I=\\int_{0}^{\\infty} \\frac{1}{1+x^{n}} d x$"
+title: $\int_0^\infty\frac{dx}{1+x^n}=\frac{\pi}{n\sin(\pi/n)}$ by a wedge of angle $\frac{2\pi}{n}$
 classification:
   areas:
   - complex-analysis

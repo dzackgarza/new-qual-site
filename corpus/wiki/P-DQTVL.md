@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DQTVL
 kind: problem
-title: "Let $D$ be the region obtained by deleting the real interval $[0, 1)$\u2026"
+title: A conformal map from $\DD\setminus[0,1)$ to $\DD$
 classification:
   areas:
   - complex-analysis

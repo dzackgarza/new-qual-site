@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-7PAHX
 kind: exercise
-title: "Let $P, Q$ be polynomials with no common zeros. Assume $a$ is a root\u2026"
+title: Principal parts of $P/Q$ at simple and double poles
 classification:
   areas:
   - complex-analysis

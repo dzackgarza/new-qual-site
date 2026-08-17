@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TH3WN
 kind: problem
-title: Let $f=u+iv$ be differentiable (i.e. $f'(z)$ exists) with continuous partial...
+title: Cauchy–Riemann equations in polar coordinates
 classification:
   areas:
   - complex-analysis

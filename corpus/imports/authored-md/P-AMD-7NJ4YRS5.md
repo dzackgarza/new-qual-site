@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-7NJ4YRS5
 kind: problem
-title: Define $M$ as the group ring $R = \ZZ[\ZZ_2]$ with the action…
+title: $\operatorname{Tor}$ of the sign module over $\ZZ[\ZZ_2]$
 classification:
   areas:
   - topology

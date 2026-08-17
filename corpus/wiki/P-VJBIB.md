@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VJBIB
 kind: problem
-title: "Parts If $A$ has two distinct eigenvalues, we will have $A = PDP\\inv$ where $P$\u2026"
+title: Spectral theorem diagonalization with eigenvalues $6$ and $1$, and the minimum of $\langle Ax,x\rangle$ on the unit circle
 classification:
   areas:
   - prelim

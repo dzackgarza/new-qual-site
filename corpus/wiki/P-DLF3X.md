@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DLF3X
 kind: problem
-title: "Let $f$ be nonzero, analytic on a bounded region $\\Omega$ and continuo\u2026"
+title: A nonvanishing analytic function of constant modulus on $\partial\Omega$ is a unimodular constant
 classification:
   areas:
   - complex-analysis

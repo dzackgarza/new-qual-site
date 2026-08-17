@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UFRBU
 kind: problem
-title: "Let $\\{a_n\\}_{n=1}^\\infty \\subseteq \\mathbb{R}$"
+title: A function with absolutely summable spikes on $[0,1]$ has bounded variation
 classification:
   areas:
   - real-analysis

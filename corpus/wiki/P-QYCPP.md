@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QYCPP
 kind: problem
-title: "Let $G$ be the group of invertible $3\\times 3$ matrices over $\\FF_p$,\u2026"
+title: Sylow $p$-subgroups of $\GL_3(\FF_p)$, their conjugates, and their normalizers
 classification:
   areas:
   - algebra

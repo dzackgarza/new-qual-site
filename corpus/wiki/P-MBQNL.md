@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MBQNL
 kind: problem
-title: "Show that $\\int_{0}^{\\infty} \\frac{\\sin x}{x} d x=\\frac{\\pi}{2}$"
+title: $\int_0^\infty\frac{\sin x}{x}\,dx=\frac\pi 2$
 classification:
   areas:
   - complex-analysis

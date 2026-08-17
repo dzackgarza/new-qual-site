@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QB5KF
 kind: problem
-title: "Use covering space theory to show that $\\ZZ_2 \\ast \\ZZ$ (that is, the\u2026"
+title: Two non-isomorphic index-$2$ subgroups of $\ZZ_2*\ZZ$, via covering spaces
 classification:
   areas:
   - topology

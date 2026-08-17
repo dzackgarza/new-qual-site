@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J25XX
 kind: problem
-title: "Let $0 < \\lambda < 1$ and construct a Cantor set $C_\\lambda$ by succe\u2026"
+title: A middle-$\lambda$ Cantor set has measure zero
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WE7CK
 kind: problem
-title: "Let $R$ be an algebra over $\\mathbb{C}$ which is finite-dimensional as\u2026"
+title: Codimension of maximal ideals in a finite-dimensional $\mathbb{C}$-algebra, and the two-dimensional classification
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZBYD
 kind: problem
-title: "Let $L$ be a 3-manifold with homology $[\\ZZ, \\ZZ_3, 0, \\ZZ, \\ldots]$ a\u2026"
+title: Homology and cohomology of $L\times\Sigma L$ when $H_*(L)=(\ZZ,\ZZ_3,0,\ZZ)$
 classification:
   areas:
   - topology

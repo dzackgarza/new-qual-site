@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-X4OGHFHCQN
 kind: problem
-title: Let $K$ be the set of numbers in $[0, 1]$ whose decimal expansions…
+title: The $4$-free decimals in $[0,1]$ form a compact nowhere-dense perfect null set
 classification:
   areas:
   - real-analysis

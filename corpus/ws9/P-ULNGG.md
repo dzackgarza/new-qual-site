@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ULNGG
 kind: problem
-title: "[Reconstructed from solution \u2014 no problem statement page was\u2026"
+title: Almost every point of a finite-measure set lies in only finitely many of the sets $E_q=\bigcup_{0\le p\le q}\{x:|x-p/q|\le 1/q^3\}$
 classification:
   areas:
   - real-analysis

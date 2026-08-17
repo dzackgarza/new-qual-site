@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ELZ3Z
 kind: exercise
-title: "Show that $f'$ bounded implies $f$ is uniformly continuous."
+title: A function with bounded derivative is uniformly continuous
 classification:
   areas:
   - complex-analysis

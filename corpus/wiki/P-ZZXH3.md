@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZZXH3
 kind: problem
-title: "Suppose that $f: \\RR\\to\\RR$ is a continuous function that vanishes outside\u2026"
+title: The Fourier transform of a compactly supported continuous real function is entire
 classification:
   areas:
   - complex-analysis

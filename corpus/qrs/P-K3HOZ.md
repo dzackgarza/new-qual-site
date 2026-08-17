@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K3HOZ
 kind: problem
-title: "Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence in $O$ such\u2026"
+title: Identity theorem and Schwarz reflection for harmonic functions
 classification:
   areas:
   - complex-analysis

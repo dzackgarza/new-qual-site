@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5UTRCMYDS4
 kind: problem
-title: Let $(X, \mathcal M, \mu)$ be a measure space and suppose $f$ is a…
+title: $\lim_n\int_X f^n\,d\mu$ is $\infty$ or $\mu(f^{-1}(1))$
 classification:
   areas:
   - real-analysis

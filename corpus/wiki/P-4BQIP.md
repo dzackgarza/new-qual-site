@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4BQIP
 kind: problem
-title: "Let $G$ be a group of order $p^3$ for some prime $p$."
+title: Groups of order $p^3$ are abelian or have $|Z(G)|=p$
 classification:
   areas:
   - algebra

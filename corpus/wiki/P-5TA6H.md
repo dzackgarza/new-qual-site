@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5TA6H
 kind: problem
-title: "Let $a>0$ and calculate $\\int_0^\\infty {x\\sin(x) \\over x^2 + a^2} \\,dx$"
+title: $\int_0^\infty\frac{x\sin x}{x^2+a^2}\,dx$ for $a>0$
 classification:
   areas:
   - complex-analysis

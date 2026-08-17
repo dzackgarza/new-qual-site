@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HXZYI
 kind: problem
-title: "Let $X = S^2 / \\theset{p_1 = \\cdots = p_k }$ be the topological space\u2026"
+title: Fundamental group, Euler characteristic, and homology of $S^2$ with $k$ points identified
 classification:
   areas:
   - topology

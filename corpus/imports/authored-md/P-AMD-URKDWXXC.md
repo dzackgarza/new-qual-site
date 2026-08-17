@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-URKDWXXC
 kind: problem
-title: Compute $\tor(\QQ, A)$
+title: $\operatorname{Tor}(\mathbb{Q},A)$ and $\operatorname{Tor}(\mathbb{Q}/\mathbb{Z},A)$
 classification:
   areas:
   - topology

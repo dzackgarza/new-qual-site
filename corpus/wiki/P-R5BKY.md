@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R5BKY
 kind: problem
-title: "Is the additive group of the reals isomorphic to the multiplicative gr\u2026"
+title: $(\RR,+)\cong(\RR_{>0},\times)$, but not for $\QQ$
 classification:
   areas:
   - algebra

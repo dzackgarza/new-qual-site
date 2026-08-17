@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OFICU
 kind: problem
-title: "Let $f$ be a non-negative measurable function on $[0, 1]$. Show that $\\lim _{p \\rightarrow \\infty}\\left(\\int_{[0,1]} f(x)^{p} d x\\right)^{\\frac{1}{p}}=\\|f\\|_{\\infty}$\u2026"
+title: $\lim_{p\to\infty}\|f\|_p=\|f\|_\infty$ on $[0,1]$
 classification:
   areas:
   - real-analysis

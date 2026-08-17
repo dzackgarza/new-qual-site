@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LO76D
 kind: problem
-title: "Let $G$ be a finite group and let $N \\trianglelefteq G$,"
+title: If $Q/N$ is a Sylow $p$-subgroup of $G/N$ then $Q$ contains a Sylow $p$-subgroup of $G$, and every Sylow $p$-subgroup of $G/N$ is such an image
 classification:
   areas:
   - algebra

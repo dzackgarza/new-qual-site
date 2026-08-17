@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PA2XA
 kind: problem
-title: "Suppose that $f$ is holomorphic on a punctured open set $\\Omega\\setminus\\theset{w_0}$ and\u2026"
+title: $\int_T f=0$ when $f$ is holomorphic and bounded near an interior puncture of $T$
 classification:
   areas:
   - complex-analysis

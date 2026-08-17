@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A4HRU
 kind: problem
-title: "Images and kernels of module homomorphisms are always submodules, so \u2026"
+title: Image $pA$ and kernel $A[p]$ of multiplication by $p$
 classification:
   areas:
   - algebra

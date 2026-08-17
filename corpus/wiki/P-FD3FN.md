@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FD3FN
 kind: problem
-title: "Prove that for every continuous map $f : S^2 \\to S^2$ there is some $x$ such\u2026"
+title: Every continuous map $S^2\to S^2$ has a point with $f(x)=\pm x$, but maps $S^3\to S^3$ need not
 classification:
   areas:
   - topology

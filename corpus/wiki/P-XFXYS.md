@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XFXYS
 kind: problem
-title: "Let $R$ be a rng (a ring without 1) which contains an element $u$ suc\u2026"
+title: A rng with a surjective right-multiplication map has a maximal left ideal
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-33PPH5GJSB
 kind: problem
-title: Show that for any two topological spaces $X$ and $Y$ , $X \cross Y$…
+title: $X\times Y$ is compact iff $X$ and $Y$ are compact
 classification:
   areas:
   - topology

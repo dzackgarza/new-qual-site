@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-DM7JB
 kind: exercise
-title: "Find all functions on the Riemann sphere that have a simple\u2026"
+title: Functions on the Riemann sphere with a simple pole at $2$ and a double pole at infinity
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RVCR2
 kind: problem
-title: "Let $R$ be a commutative ring containing a field $k$,"
+title: Every element of a finite-dimensional $k$-algebra is integral over $k$, and a non-zero-divisor is a unit
 classification:
   areas:
   - algebra

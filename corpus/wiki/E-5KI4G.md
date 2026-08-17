@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5KI4G
 kind: exercise
-title: "Determine where the following real-valued function is or is not unifor\u2026"
+title: Uniform convergence of $\sin(nx)/(1+nx)$
 classification:
   areas:
   - complex-analysis

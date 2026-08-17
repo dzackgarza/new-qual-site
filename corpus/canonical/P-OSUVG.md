@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OSUVG
 kind: problem
-title: Let $f\in L^2([0, 1])$ and suppose Show that $f = 0$ almost everywhere.
+title: A function in $L^2([0,1])$ orthogonal to every polynomial vanishes a.e.
 classification:
   areas:
   - real-analysis

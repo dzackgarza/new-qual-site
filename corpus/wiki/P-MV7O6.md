@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MV7O6
 kind: problem
-title: "Let $\\Omega$ be a simply connected open set and let $\\gamma$ be a simp\u2026"
+title: Maximum modulus principle on the interior of a simple closed contour
 classification:
   areas:
   - complex-analysis

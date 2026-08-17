@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-DRJG6NKA57
 kind: problem
-title: For any integer $n \geq 2$ let $X_n$ denote the space formed by…
+title: Fundamental group and homology of $S^1$ with a $2$-cell attached by $z\mapsto z^n$
 classification:
   areas:
   - topology

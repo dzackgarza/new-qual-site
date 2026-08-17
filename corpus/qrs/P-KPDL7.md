@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KPDL7
 kind: problem
-title: "Show that for every map $f: S^2 \\to S^1$, there is a point $x\\in S^2$ such that $f(x) = f(-x)$.\u2026"
+title: Every map $S^2\to S^1$ identifies a pair of antipodal points
 classification:
   areas:
   - topology

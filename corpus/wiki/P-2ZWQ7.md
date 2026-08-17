@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2ZWQ7
 kind: problem
-title: "Use the Brouwer fixed point theorem to show that an $n \\times n$ matri\u2026"
+title: A nonnegative matrix has a real eigenvalue, via Brouwer
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RBVY6
 kind: problem
-title: Let $f(x) = \frac{1}{x^2+1}$. Use residues to compute the Fourier tran…
+title: Fourier transform of $1/(x^2+1)$ by residues
 classification:
   areas:
   - real-analysis

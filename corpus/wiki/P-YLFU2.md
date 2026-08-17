@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YLFU2
 kind: problem
-title: Let $M$ be a finitely generated module over $R$ a PID.
+title: 'Structure theorem for finitely generated modules over a PID: invariant factors and elementary divisors'
 classification:
   areas:
   - algebra

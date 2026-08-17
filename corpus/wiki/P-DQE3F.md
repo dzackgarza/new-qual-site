@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DQE3F
 kind: problem
-title: "Let \\( \\ts{ f_k }_{k=1}^{\\infty } \\subseteq L^2([0, 1]) \\) be a sequen\u2026"
+title: '$L^1$ convergence of an $L^2$ sequence: the limit, a.e. failure, and an a.e. subsequence'
 classification:
   areas:
   - real-analysis

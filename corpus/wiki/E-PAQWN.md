@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-PAQWN
 kind: exercise
-title: "Let Let $f:{\\mathbb C}\\rightarrow {\\mathbb C}$ be an entire function.\u2026"
+title: Polynomial growth of entire functions and Liouville for bounded real part
 classification:
   areas:
   - complex-analysis

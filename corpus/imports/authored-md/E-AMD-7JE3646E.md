@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-7JE3646E
 kind: exercise
-title: Show that any quadratic extension of a field $F$ with $\ch(F)\neq 2$…
+title: Quadratic extensions in characteristic not $2$ are Galois
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7UD7E
 kind: problem
-title: "Let $(X, \\mathcal M, \\mu)$ be a measure space. For $f\\in L^1(\\mu)$ and\u2026"
+title: Borel measurability of distribution functions and $\int|f|=\int_0^\infty(\phi+\psi)\,d\lambda$
 classification:
   areas:
   - real-analysis

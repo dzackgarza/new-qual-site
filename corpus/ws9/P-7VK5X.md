@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7VK5X
 kind: problem
-title: "If $A$ is a Borel subset of the line. Then $E=\\{(x,y):x-y\\in A\\}$ is a…"
+title: The set $\{(x,y):x-y\in A\}$ is Borel, and null if $A$ is
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YGU32
 kind: problem
-title: "Find all entire functions that satisfy $\\abs{f(z)} \\geq \\abs{z} \\quad \\forall z\\in \\CC$ Prove this list is\u2026"
+title: Entire functions satisfying $|f(z)|\ge|z|$
 classification:
   areas:
   - complex-analysis

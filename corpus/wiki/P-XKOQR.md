@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XKOQR
 kind: problem
-title: "A holomorphic mapping $f: U \\rightarrow V$ is a local bijection on $U$\u2026"
+title: A holomorphic map is a local bijection iff $f'\neq 0$
 classification:
   areas:
   - complex-analysis

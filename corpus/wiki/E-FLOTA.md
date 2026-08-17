@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FLOTA
 kind: exercise
-title: "Suppose $f: \\HH\\union \\RR\\to \\CC$ satisfies the following: $f(i) = i$ $f$ is continuous $f$ is\u2026"
+title: $f(\mathbb{H})$ is dense in $\mathbb{H}$ for maps real precisely on $\mathbb{R}$ with $f(i)=i$
 classification:
   areas:
   - complex-analysis

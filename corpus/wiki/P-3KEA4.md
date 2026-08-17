@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3KEA4
 kind: problem
-title: "For which compact connected surfaces $\\Sigma$ (with or without boundar\u2026"
+title: Compact surfaces with a fixed-point-free map homotopic to the identity
 classification:
   areas:
   - topology

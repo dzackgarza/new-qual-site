@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GYQLA
 kind: problem
-title: "Let $G$ be a finite group and $\\pi: G\\to \\sym(G)$ the Cayley representation. Prove\u2026"
+title: Left translation is an odd permutation iff its order is even and $|G|$ divided by the order is odd
 classification:
   areas:
   - algebra

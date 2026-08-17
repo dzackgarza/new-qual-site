@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-NFZKF2XH
 kind: problem
-title: "Let $\\displaystyle{\\psi_{\\alpha}(z)=\\frac{\\alpha-z}{1-\\bar{\\alpha}z}}$ with $|\\alpha|<1$ and ${\\mathbb D}=\\{z:\\ |z|<1\\}$. Prove that $\\displaystyle{\\frac{1}{\\pi}\\iint_{{\\mathbb D}} |\\psi'_{\\alpha}|^2 dx dy =1}$."
+title: $\frac{1}{\pi}\iint_{\mathbb D}|\psi_\alpha'|^2=1$, $\frac{1}{\pi}\iint_{\mathbb D}|\psi_\alpha'|=\frac{1-|\alpha|^2}{|\alpha|^2}\log\frac{1}{1-|\alpha|^2}$, and $f(z)=-\frac{1}{2}(z+\frac{1}{z})$ conformal from the half-disk to $\mathbb H$
 classification:
   areas:
   - complex-analysis

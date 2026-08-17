@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-USHDW
 kind: problem
-title: "Let $R$ be a commutative ring with multiplicative identity. Assume Zor\u2026"
+title: The nilradical is contained in every prime, primes avoiding powers of a non-nilpotent, and rings with a unique prime consist of nilpotents and units
 classification:
   areas:
   - algebra

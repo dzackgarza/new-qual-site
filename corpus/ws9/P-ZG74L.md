@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZG74L
 kind: problem
-title: Suppose $K$ is a field. Let $K(x)$ denote the field of rational functi…
+title: Fixed field of $\sigma(x)=1-1/x$ acting on $K(x)$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XH2QU
 kind: exercise
-title: "Show that $R[x]$ a PID $\\iff R$ is a field."
+title: $R[x]$ is a PID if and only if $R$ is a field
 classification:
   areas:
   - algebra

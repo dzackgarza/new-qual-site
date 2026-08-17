@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BSL3Q
 kind: exercise
-title: "Show that if $f$ is holomorphic on $\\DD$ then $f$ has a power series e\u2026"
+title: Power series of holomorphic functions on the disk converge uniformly on compacta
 classification:
   areas:
   - complex-analysis

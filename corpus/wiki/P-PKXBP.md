@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PKXBP
 kind: problem
-title: "Let $G$ be a finite group whose order is divisible by a prime\u2026"
+title: A normal $p$-subgroup lies in every Sylow $p$-subgroup, and in a maximal subgroup or with $p$-power index
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SLXYN
 kind: problem
-title: "Let $f(z)$ be bounded and analytic in $\\mathbb C$. Let $a \\neq b$ be"
+title: Liouville's theorem via $\lim_{R\to\infty}\int_{|z|=R}\frac{f(z)}{(z-a)(z-b)}\,dz$
 classification:
   areas:
   - complex-analysis

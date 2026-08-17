@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LZVDM
 kind: problem
-title: "Let $K$ be a field."
+title: The valuation ring of a discrete valuation, and the $p$-adic valuation on $\mathbb{Q}$
 classification:
   areas:
   - algebra

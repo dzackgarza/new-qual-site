@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KU6C3
 kind: problem
-title: For the cubic polynomial $x^3 - 3x + 2$, use the cubic formula describ…
+title: Cubic formula for the roots of $x^3-3x+2$
 classification:
   areas:
   - prelim

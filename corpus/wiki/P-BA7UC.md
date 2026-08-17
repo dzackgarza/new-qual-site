@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BA7UC
 kind: problem
-title: "Let $F$ be a field and let $f(x) \\in F[x]$. State the definition of a\u2026"
+title: Definition of a splitting field, and a finite extension of $\FF_q$ as a Galois splitting field
 classification:
   areas:
   - algebra

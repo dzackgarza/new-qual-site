@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TMOKI
 kind: exercise
-title: "Show that the set $(x, y) \\in \\RR^2$ such that at least one of $x, y$\u2026"
+title: The subspace of $\RR^2$ with at least one rational coordinate is connected
 classification:
   areas:
   - topology

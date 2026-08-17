@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6UKIC
 kind: problem
-title: "Show that if $x_n$ is a decreasing sequence of positive real\u2026"
+title: If a decreasing sequence of positive terms has convergent series, then $n x_n\to 0$
 classification:
   areas:
   - real-analysis

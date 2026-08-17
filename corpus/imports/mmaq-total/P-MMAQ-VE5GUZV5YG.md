@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-VE5GUZV5YG
 kind: problem
-title: 'Let $H$ be a subgroup of $S_n$ of index $n$. Prove:'
+title: An index-$n$ subgroup of $S_n$ is carried by an automorphism to the stabilizer of $n$, is isomorphic to $S_{n-1}$, and is maximal
 classification:
   areas:
   - algebra

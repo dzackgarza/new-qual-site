@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QCF34
 kind: problem
-title: "Let $R$ be a commutative ring with unit and let $M$ be an $R$-module.\u2026"
+title: The annihilator of a module is an ideal, every ideal is an annihilator, and a faithful module of torsion elements
 classification:
   areas:
   - algebra

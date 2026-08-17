@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TKNYL
 kind: problem
-title: Suppose that $G$ is a finite group of order 2013. Prove that $G$ has
+title: A group of order $2013=3\cdot 11\cdot 61$ has a cyclic normal subgroup of index $3$, and $11$ divides $|Z(G)|$
 classification:
   areas:
   - algebra

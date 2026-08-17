@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5XCMC
 kind: problem
-title: Let $P(x)$ and $Q(x)$ be open sentences containing the variable $x$, a…
+title: $\forall x(P\Rightarrow Q)$ implies $(\forall x\,P)\Rightarrow(\forall x\,Q)$, but not conversely
 classification:
   areas:
   - prelim

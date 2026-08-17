@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S4PJP
 kind: problem
-title: "Let $\\phi:\\mathbb{R}\\to\\mathbb{R}$ be a continuous function with compa…"
+title: Convolution $L^p\to L^q$ bounds for compactly supported continuous $\phi$, and failure for $p>q$
 classification:
   areas:
   - real-analysis

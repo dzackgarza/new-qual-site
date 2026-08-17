@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TBQBL
 kind: problem
-title: Indicate whether each of the following if-then statements is true, and…
+title: 'True-or-false: constructible roots, finite-field extensions, and Galois composita'
 classification:
   areas:
   - prelim

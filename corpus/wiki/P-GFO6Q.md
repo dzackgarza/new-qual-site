@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GFO6Q
 kind: problem
-title: "Let $R$ be an algebra over $\\CC$ which is finite-dimensional as a $\\CC\\dash$\u2026"
+title: Maximal ideals of finite-dimensional $\CC$-algebras have codimension $1$, and classification in dimension $2$
 classification:
   areas:
   - algebra

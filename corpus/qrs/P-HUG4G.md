@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HUG4G
 kind: problem
-title: "Suppose $f\\in C_\\CC^1(\\Omega)$ and $T\\subset \\Omega$ is a triangle wit\u2026"
+title: Cauchy's theorem via Green's theorem, and Goursat's theorem
 classification:
   areas:
   - complex-analysis

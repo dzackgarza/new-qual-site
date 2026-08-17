@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HJ2AR
 kind: problem
-title: "Define $f(x) \\da x^4 + 4x^2 + 64 \\in \\QQ[x]$ Find the splitting field $K$ of $f$ over $\\QQ$. Find the\u2026"
+title: Splitting field, Galois group, and correspondence for $x^4+4x^2+64$ over $\QQ$
 classification:
   areas:
   - algebra

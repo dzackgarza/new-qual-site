@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FS6II
 kind: problem
-title: "Carefully state Tonelli's theorem for a nonnegative function $F(x, t)$\u2026"
+title: Tonelli's theorem and the layer-cake representation of a nonnegative measurable function
 classification:
   areas:
   - real-analysis

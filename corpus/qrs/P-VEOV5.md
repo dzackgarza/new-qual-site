@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VEOV5
 kind: problem
-title: "Use the Cauchy inequalities or the maximum modulus principle\u2026"
+title: Polynomial growth of entire functions, vanishing in a sector, products of distances on $S^1$, and bounded real part
 classification:
   areas:
   - complex-analysis

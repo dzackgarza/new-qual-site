@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F5HG3
 kind: problem
-title: "Let $f, g \\in L^1(\\RR)$ be Borel measurable."
+title: Borel measurability of $f(x-y)g(y)$ and Young's inequality $\|f*g\|_1\le\|f\|_1\|g\|_1$
 classification:
   areas:
   - real-analysis

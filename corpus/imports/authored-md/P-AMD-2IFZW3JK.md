@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-2IFZW3JK
 kind: problem
-title: Show that the Mayer-Vietoris sequence is natural, i.e.
+title: Naturality of the Mayer–Vietoris sequence
 classification:
   areas:
   - topology

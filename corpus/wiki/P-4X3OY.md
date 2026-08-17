@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4X3OY
 kind: problem
-title: "Let $X$ be a compact space and let $f : X \\times R \\to R$ be a continu\u2026"
+title: Positivity of $f(x,0)$ persists for small $|t|$ when $X$ is compact
 classification:
   areas:
   - topology

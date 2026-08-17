@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NZ4WI
 kind: exercise
-title: "Give an example of spaces $A\\subseteq B \\subseteq X$ such that $A$ is\u2026"
+title: A set open in a subspace but not in the ambient space
 classification:
   areas:
   - topology

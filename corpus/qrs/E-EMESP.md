@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-EMESP
 kind: exercise
-title: "Prove that if $G$ is a $p\\dash$group, every subgroup $N\\normal G$ intersects the\u2026"
+title: Nontrivial normal subgroups of a $p$-group meet the center
 classification:
   areas:
   - algebra

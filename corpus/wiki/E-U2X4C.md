@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-U2X4C
 kind: exercise
-title: "Show that if $f$ is entire and $\\abs{f(z)} > 1$ for all $z$, then $f$\u2026"
+title: Entire functions with $|f(z)|>1$ are constant
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-CNWHF
 kind: exercise
-title: "Show that every compact metric space is complete."
+title: Compact metric spaces are complete
 classification:
   areas:
   - topology

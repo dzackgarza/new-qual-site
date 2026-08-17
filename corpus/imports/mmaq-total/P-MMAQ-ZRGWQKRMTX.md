@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ZRGWQKRMTX
 kind: problem
-title: Compute the integrals
+title: $\int_{|z-2|=1}\frac{e^z}{z(z-1)^2}\,dz$ and $\int_0^\infty\frac{\cos 2x}{x^2+2}\,dx$
 classification:
   areas:
   - complex-analysis

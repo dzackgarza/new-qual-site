@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YVA5W
 kind: problem
-title: Let $C$ be a circle in the $xy$-plane, oriented counterclockwise, and…
+title: The winding number of a circle about the origin
 classification:
   areas:
   - prelim

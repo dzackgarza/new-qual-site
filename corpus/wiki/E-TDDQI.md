@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TDDQI
 kind: exercise
-title: "Let $f(z) = \\sum_{n= -\\infty}^\\infty c_n z^n$ be analytic and one-to-o\u2026"
+title: Area of the image of an annulus under a univalent Laurent series
 classification:
   areas:
   - complex-analysis

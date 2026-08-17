@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SLWIE
 kind: problem
-title: "Show that $\\pi^2/\\sin^2(\\pi z)$ and $\\sum_{n\\in\\ZZ}(z-n)^{-2}$ agree, by comparing their singularities and singular parts"
+title: $\pi^2/\sin^2(\pi z)=\sum_{n\in\mathbb{Z}}(z-n)^{-2}$
 classification:
   areas:
   - complex-analysis

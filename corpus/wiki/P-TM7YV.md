@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TM7YV
 kind: problem
-title: "Let $f(x) = g(x) h(x) \\in \\QQ[x]$ and $E,B,C/\\QQ$ be the splitting fi\u2026"
+title: $\gal(E/B)$ and $\gal(E/C)$ for splitting fields of $f=gh$, $\gal(E/\QQ)\cong\gal(E/B)\times\gal(E/C)$ when $B\cap C=\QQ$, and $\gal(\QQ[\sqrt{2}+\sqrt{3}]/\QQ)$
 classification:
   areas:
   - algebra

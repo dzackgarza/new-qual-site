@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NIC7C
 kind: problem
-title: "Let $X,Y$ be Banach spaces and $T:X\\to Y$ be a one-to-one, bounded and…"
+title: Every functional on $X$ factors through an injective closed-range operator $T:X\to Y$
 classification:
   areas:
   - real-analysis

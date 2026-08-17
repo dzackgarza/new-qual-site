@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HAEQ7
 kind: problem
-title: "Let $T:V\\to V$ be a linear transformation where $V$ is a finite-dimen\u2026"
+title: Cayley-Hamilton theorem
 classification:
   areas:
   - algebra

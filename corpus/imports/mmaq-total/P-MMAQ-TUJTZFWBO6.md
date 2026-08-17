@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-TUJTZFWBO6
 kind: problem
-title: "Recall that a topological space is said to be connected if\u2026"
+title: Connectedness via clopen sets and the intermediate value theorem
 classification:
   areas:
   - topology

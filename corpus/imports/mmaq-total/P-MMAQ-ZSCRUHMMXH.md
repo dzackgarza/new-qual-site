@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ZSCRUHMMXH
 kind: problem
-title: Write $Y$ for the interval $[0, \infty)$, equipped with the usual…
+title: Retracts of $[0,\infty)$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UIXFV
 kind: problem
-title: "How would you work out the orders of the irreducible representations o\u2026"
+title: Dimensions of the irreducible representations of $D_n$, and $\sum_i(\dim V_i)^2=|G|$
 classification:
   areas:
   - algebra

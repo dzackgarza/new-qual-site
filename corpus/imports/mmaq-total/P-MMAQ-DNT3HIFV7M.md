@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-DNT3HIFV7M
 kind: problem
-title: Let $R = k[x,y]$ where $k$ is a field, and let $I=(x,y)R$.
+title: A projective resolution of $k\simeq R/(x,y)$ over $R=k[x,y]$ and $\mathrm{Tor}_i^R((x,y),k)$
 classification:
   areas:
   - algebra

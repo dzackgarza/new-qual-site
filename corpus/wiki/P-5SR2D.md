@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5SR2D
 kind: problem
-title: "Prove that if $z\\mapsto f(z)$ is analytic, then $z \\mapsto \\bar{f(\\bar z)}$ is analytic. It suffices\u2026"
+title: Analyticity of $z\mapsto\overline{f(\overline{z})}$
 classification:
   areas:
   - complex-analysis

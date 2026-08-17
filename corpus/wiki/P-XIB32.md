@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XIB32
 kind: problem
-title: "Suppose that $\\alpha$ is a root in $\\mathbb C$ of"
+title: Field homomorphisms from $\mathbb{Q}(\alpha)$ into $\mathbb{C}$, $\mathbb{R}$, and $\overline{\mathbb{Q}}$ for a root $\alpha$ of $x^{17}-2$
 classification:
   areas:
   - algebra

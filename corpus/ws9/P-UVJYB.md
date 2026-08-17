@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UVJYB
 kind: problem
-title: For a positive integer $n$, let $I_n$ denote the $n \times n$ identity…
+title: When eigenvalues $\pm 1$ imply $A^2=I$
 classification:
   areas:
   - prelim

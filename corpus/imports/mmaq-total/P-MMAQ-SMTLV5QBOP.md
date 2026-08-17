@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-SMTLV5QBOP
 kind: problem
-title: Let $f\in L^1([0,1])$. Show that
+title: $\lim_{p\to 0^+}\|f\|_p$ exists for $f\in L^1([0,1])$ and is zero if $m\{f=0\}>0$
 classification:
   areas:
   - real-analysis

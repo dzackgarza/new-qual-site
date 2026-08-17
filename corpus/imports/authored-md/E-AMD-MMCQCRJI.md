@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-MMCQCRJI
 kind: exercise
-title: Show that if $L/K$ is separable, then $L$ is normal $\iff$ there…
+title: Separable extensions are normal iff they are splitting fields
 classification:
   areas:
   - algebra

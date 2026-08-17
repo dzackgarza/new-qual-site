@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W5XWA
 kind: problem
-title: Assume that $(x_n)$ is a weakly converging sequence in a Hilbert space…
+title: The Banach–Saks theorem in Hilbert space
 classification:
   areas:
   - real-analysis

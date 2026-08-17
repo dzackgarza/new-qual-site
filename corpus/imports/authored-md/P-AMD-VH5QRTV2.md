@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-VH5QRTV2
 kind: problem
-title: Show that $T-D^1 := X \simeq S^1 \vee S^1$.
+title: $T-D^1\simeq S^1\vee S^1$ with no retraction onto the boundary
 classification:
   areas:
   - topology

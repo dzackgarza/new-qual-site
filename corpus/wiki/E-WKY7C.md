@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WKY7C
 kind: exercise
-title: "Find all entire functions $f$ such that $f(x) = e^x$ on $\\RR$."
+title: Entire functions agreeing with $e^x$ on $\RR$
 classification:
   areas:
   - complex-analysis

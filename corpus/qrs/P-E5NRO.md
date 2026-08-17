@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E5NRO
 kind: problem
-title: "Let $\\mu$ be a finite Borel measure on $\\RR$ and $E \\subset \\RR$ Borel\u2026"
+title: Equivalence of open-closed approximation and a $G_\delta$-$F_\sigma$ sandwich for finite Borel measures on $\mathbb{R}$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-JSCGD
 kind: exercise
-title: "Show that if $X$ is compact and $A\\subseteq X$ is closed then $A$ is compact."
+title: Closed subsets of compact spaces are compact
 classification:
   areas:
   - topology

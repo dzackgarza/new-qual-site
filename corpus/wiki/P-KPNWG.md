@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KPNWG
 kind: problem
-title: "Calculate the following limit, justifying each step of your calculatio\u2026"
+title: $\lim_{n\to\infty}\int_0^n\frac{\cos(x/n)}{x^2+\cos(x/n)}\,dx$
 classification:
   areas:
   - real-analysis

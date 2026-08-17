@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UKZE6
 kind: problem
-title: "Let $R$ be a commutative ring with 1. some positive integer $n$."
+title: Every proper ideal lies in a maximal ideal; $x\in J(R)$ iff $1+rx$ is a unit; $J(R)$ consists of the nilpotents when $R$ is finite
 classification:
   areas:
   - algebra

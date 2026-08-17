@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-KFLCBYQU
 kind: problem
-title: Let $x_0$ be the image of $0$, show that there is an order 6…
+title: Order-6 homeomorphism of the torus fixing the origin
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-7YJUIMVH
 kind: exercise
-title: Show that if $\theset{\vector v_i}$ is a basis for $V$ where…
+title: A linear operator cycling a basis has minimal polynomial $x^n-1$ and is diagonalizable
 classification:
   areas:
   - algebra

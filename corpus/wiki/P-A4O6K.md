@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A4O6K
 kind: problem
-title: "Suppose $\\{a_n\\}$ is a sequence of positive real"
+title: A divergent series of positive terms with $a_n\to 0$ has a subseries summing to any $x>0$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6KHMF
 kind: problem
-title: "Let $R$ be a commutative ring. Define a maximal ideal and prove\u2026"
+title: Maximal ideals, non-units, and prime annihilators of module elements
 classification:
   areas:
   - algebra

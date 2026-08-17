@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BZNEO
 kind: problem
-title: "Let $P, Q$ be polynomials with no common zeros. Assume $a$ is a root\u2026"
+title: Principal part of $P/Q$ at a simple or double root of $Q$
 classification:
   areas:
   - complex-analysis

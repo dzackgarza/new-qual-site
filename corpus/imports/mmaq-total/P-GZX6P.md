@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GZX6P
 kind: problem
-title: Let $K$ be a field of characteristic zero and $f\in K[x]$ an
+title: Galois group of an irreducible of degree $n$ embeds in $S_n$; examples with $G=S_n$, and the cubic case
 classification:
   areas:
   - algebra

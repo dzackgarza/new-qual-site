@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-I2MBC
 kind: problem
-title: "Now we'll take the tensor product of two abelian groups\u2026"
+title: $\ZZ/p\ZZ\otimes\ZZ/q\ZZ$ for distinct primes $p$ and $q$
 classification:
   areas:
   - algebra

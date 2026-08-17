@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NAAEY
 kind: problem
-title: "Let $f$ and $g$ be Lebesgue integrable on $\\mathbb{R}$."
+title: $\lim_{n\to\infty}\|f+g(\,\cdot\,-n)\|_1=\|f\|_1+\|g\|_1$ for $f,g\in L^1(\mathbb{R})$
 classification:
   areas:
   - real-analysis

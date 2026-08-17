@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OSPIM
 kind: problem
-title: "a. See \\cref{equivalence_of_approximating_measures}"
+title: Measurability of $\inf_k f_k$ and $\sup_k f_k$, Fatou's lemma, and the monotone convergence theorem from Fatou
 classification:
   areas:
   - real-analysis

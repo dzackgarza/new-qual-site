@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KBH2K
 kind: problem
-title: "Let $\\{a_n\\}_{n=1}^\\infty$ be a sequence of real numbers. Prove that if $\\displaystyle\\lim_{n\\to \\infty } a_n = 0$, then $\\lim _{n \\rightarrow \\infty} \\frac{a_{1}+\\cdots+a_{n}}{n}=0$\u2026"
+title: Cesàro means vanish if $a_n\to 0$ or $\sum a_n/n$ converges
 classification:
   areas:
   - real-analysis

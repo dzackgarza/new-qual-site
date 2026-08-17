@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-H4TDM
 kind: definition
-title: "Gram Matrix: For $b$ a bilinear form on a finite-dimensional $k\\dash$vector space $V$\u2026"
+title: Gram matrix of a bilinear form
 classification:
   areas:
   - algebra

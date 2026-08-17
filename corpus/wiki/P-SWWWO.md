@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SWWWO
 kind: problem
-title: "Let $F:\\RR^2\\to \\RR$ be continuously differentiable with $F(0, 0) = 0$\u2026"
+title: A $C^1$ function with $F(0,0)=0$ and $\|\nabla F(0,0)\|<1$ satisfies $|F|<r$ on some ball of radius $r$
 classification:
   areas:
   - complex-analysis

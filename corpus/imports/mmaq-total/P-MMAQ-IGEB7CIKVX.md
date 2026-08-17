@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-IGEB7CIKVX
 kind: problem
-title: "Let $R$ be a ring and $M$ an $R\\dash$module. Prove that if $R$ is an\u2026"
+title: When the torsion subset of a module is a submodule
 classification:
   areas:
   - algebra

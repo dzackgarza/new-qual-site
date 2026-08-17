@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J4TFN
 kind: problem
-title: "If a linear transformation preserves a nondegenerate alternating form\u2026"
+title: Eigenvalues of a linear map preserving a nondegenerate alternating form come in pairs $k,1/k$
 classification:
   areas:
   - algebra

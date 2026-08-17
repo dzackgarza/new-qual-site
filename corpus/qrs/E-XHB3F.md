@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XHB3F
 kind: exercise
-title: "Show that if $f$ is a measurable function, then $f=0$ a.e. iff $\\int f = 0$."
+title: Vanishing of $\int f$, integrability of bounded functions, and density of simple, step, and $C_c^\infty$ functions in $L^1$
 classification:
   areas:
   - real-analysis

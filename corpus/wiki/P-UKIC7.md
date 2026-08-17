@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UKIC7
 kind: problem
-title: "Suppose that $f,g:\\mathbb{R}\\to\\mathbb{R}$ are"
+title: Differentiable $f\le g$ with $f(x_0)=g(x_0)$ satisfy $f'(x_0)=g'(x_0)$
 classification:
   areas:
   - real-analysis

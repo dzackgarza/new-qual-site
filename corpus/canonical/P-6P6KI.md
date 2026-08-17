@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6P6KI
 kind: problem
-title: Let $G$ be a finite group and $\pi_0$, $\pi_1$ be two irreducible...
+title: Equivalence of irreducible representations versus equality of determinants
 classification:
   areas:
   - algebra

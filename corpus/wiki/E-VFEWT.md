@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-VFEWT
 kind: exercise
-title: "Show that if $J\\in \\Id(R)$ (with $J\\contains I$) is radical/prime/maxi\u2026"
+title: Radical, prime, and maximal ideals correspond under $R\to R/I$
 classification:
   areas:
   - algebra

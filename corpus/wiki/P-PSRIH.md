@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PSRIH
 kind: problem
-title: "Give generators and relations for the non-commutative group $G$ of or\u2026"
+title: Presentation of the nonabelian group of order $63$ with an element of order $9$
 classification:
   areas:
   - algebra

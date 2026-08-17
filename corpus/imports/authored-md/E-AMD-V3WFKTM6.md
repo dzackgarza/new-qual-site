@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-V3WFKTM6
 kind: exercise
-title: Show that $\maxspec(R) \subsetneq \spec(R)$ but the containment is…
+title: Proper containment $\maxspec(R)\subsetneq\spec(R)$
 classification:
   areas:
   - algebra

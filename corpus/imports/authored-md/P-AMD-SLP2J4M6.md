@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-SLP2J4M6
 kind: problem
-title: Show that $K$ can not be a topological group.
+title: $K$ is not a topological group
 classification:
   areas:
   - topology

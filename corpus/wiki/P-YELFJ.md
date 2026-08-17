@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YELFJ
 kind: problem
-title: "Let $R$ be a commutative ring and let $M$ be an"
+title: An ideal maximal among annihilators of nonzero elements of an $R$-module is prime
 classification:
   areas:
   - algebra

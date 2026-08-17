@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZAVLU
 kind: problem
-title: "Let $f$ be a holomorphic map of the open unit disc $\\DD$ to itself."
+title: Schwarz–Pick lemma
 classification:
   areas:
   - complex-analysis

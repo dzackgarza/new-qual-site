@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OW6CS
 kind: problem
-title: Give an example of each of the following or explain why no such exampl…
+title: Examples and non-examples in Galois theory
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2WRPV
 kind: problem
-title: "Let $\\phi: \\ZZ^4 \\to \\ZZ^3$ be a linear map which in the standard basi\u2026"
+title: Cokernel of a map $\ZZ^4\to\ZZ^3$ is $\ZZ/12\ZZ$
 classification:
   areas:
   - algebra

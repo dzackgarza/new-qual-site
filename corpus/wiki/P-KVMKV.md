@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KVMKV
 kind: problem
-title: "Is every complete bounded metric space compact? If so, give\u2026"
+title: Complete bounded metric spaces need not be compact
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UFCQH
 kind: problem
-title: "If two real matrices are conjugate in $\\Mat(n\\times n, \\CC)$, are they\u2026"
+title: Whether real matrices conjugate over $\CC$ are conjugate over $\RR$
 classification:
   areas:
   - algebra

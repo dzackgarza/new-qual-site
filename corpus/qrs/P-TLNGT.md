@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TLNGT
 kind: problem
-title: "Compute the following integrals. \\(i\\) $\\displaystyle \\int_0^\\infty \\frac{1}{(1 + x^n)^2} \\, dx$, $n \\geq 1$ (ii) $\\displaystyle \\int_0^\\infty \\frac{\\cos x}{(x^2 + a^2)^2} \\, dx$, $a \\in \\mathbb R$ (iii)\u2026"
+title: Residue evaluations of seven real and contour integrals
 classification:
   areas:
   - complex-analysis

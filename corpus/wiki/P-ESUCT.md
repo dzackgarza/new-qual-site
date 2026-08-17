@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ESUCT
 kind: problem
-title: "Let $\\zeta_n$ denote a primitive $n$th root of 1 $\\in \\QQ$. You may assume the\u2026"
+title: $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois with group $(\mathbb{Z}/n\mathbb{Z})^\times$, and the subfields of $\mathbb{Q}(\zeta_{20})$
 classification:
   areas:
   - algebra

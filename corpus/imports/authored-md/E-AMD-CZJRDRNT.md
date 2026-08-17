@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-CZJRDRNT
 kind: exercise
-title: Show that $\QQ(2^{1\over 3})$ and $\QQ(\zeta_3 2^{1\over 3})$
+title: $\QQ(2^{1/3})$ and $\QQ(\zeta_3 2^{1/3})$ are isomorphic but not equal
 classification:
   areas:
   - algebra

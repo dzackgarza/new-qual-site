@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-JGQ34HFYKE
 kind: problem
-title: Define a family $\mct$ of subsets of $\RR$ by saying that $A \in T$…
+title: The cofinite topology on $\RR$ is compact
 classification:
   areas:
   - topology

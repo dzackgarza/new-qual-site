@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TEEXE
 kind: problem
-title: "Let $\\mu$ be a finite Borel measure on $\\RR$ and $E \\subset \\RR$ Bore\u2026"
+title: Equivalent approximation of Borel sets by open and closed sets versus $G_\delta$ and $F_\sigma$ sets
 classification:
   areas:
   - real-analysis

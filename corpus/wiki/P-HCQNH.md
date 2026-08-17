@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCQNH
 kind: problem
-title: "Suppose that $U$ and $V$ are open subsets of a space $X$, with $X = U \\cup V$."
+title: A formula for $\chi(X)$ in terms of $\chi(U)$, $\chi(V)$, and $\chi(U\cap V)$
 classification:
   areas:
   - topology

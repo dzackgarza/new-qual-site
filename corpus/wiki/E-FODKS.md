@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FODKS
 kind: exercise
-title: "Let $I \\normal R$, then since $R$ is a PID we have $I = (b)$ for some\u2026"
+title: An irreducible generates any principal ideal containing it in a PID
 classification:
   areas:
   - algebra

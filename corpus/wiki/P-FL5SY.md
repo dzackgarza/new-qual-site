@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FL5SY
 kind: problem
-title: "Let $f(z)$ be bounded and analytic in $\\CC$."
+title: Liouville's theorem via $\lim_{R\to\infty}\int_{|z|=R}\frac{f(z)}{(z-a)(z-b)}\,dz$ for bounded entire $f$
 classification:
   areas:
   - complex-analysis

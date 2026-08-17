@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-JLRDZYFKOW
 kind: problem
-title: "Let $A$ be a square matrix over the complex numbers. Suppose\u2026"
+title: An invertible complex matrix is diagonalizable if a positive power is diagonalizable
 classification:
   areas:
   - algebra

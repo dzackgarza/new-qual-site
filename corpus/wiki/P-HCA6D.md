@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HCA6D
 kind: problem
-title: "Can there be a function $f:I\\to \\RR$ that is continuous on $\\QQ$ and\u2026"
+title: A function $f:I\to\RR$ continuous on $\QQ$ and discontinuous elsewhere
 classification:
   areas:
   - real-analysis

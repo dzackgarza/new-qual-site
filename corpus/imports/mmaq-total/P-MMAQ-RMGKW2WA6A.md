@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-RMGKW2WA6A
 kind: problem
-title: Let $\{u_n\}_{n=1}^\infty$ be an orthonormal sequence in a Hilbert…
+title: Bessel's inequality and Riesz–Fischer for orthonormal sequences
 classification:
   areas:
   - real-analysis

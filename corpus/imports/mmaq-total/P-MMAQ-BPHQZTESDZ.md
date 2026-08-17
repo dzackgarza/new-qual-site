@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-BPHQZTESDZ
 kind: problem
-title: (a) Show that in polar coordinates, the Cauchy-Riemann
+title: Polar Cauchy–Riemann equations, and holomorphy of $\log z$ on the slit plane
 classification:
   areas:
   - complex-analysis

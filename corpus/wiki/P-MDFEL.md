@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MDFEL
 kind: problem
-title: "Suppose that $X$ is a Hausdorff topological space and that $A \\subset X$.\u2026"
+title: Compact subsets of Hausdorff spaces are closed
 classification:
   areas:
   - topology

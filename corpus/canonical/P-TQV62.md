@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TQV62
 kind: problem
-title: Let $A$ be an $n \times n$ matrix. Suppose that $v$ is a column vector such...
+title: Cyclic vectors, the commutant, and equality of minimal and characteristic polynomials
 classification:
   areas:
   - algebra

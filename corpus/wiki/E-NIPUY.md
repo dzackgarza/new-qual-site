@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NIPUY
 kind: exercise
-title: "Show $f(x) = x^{-n}$ for $n\\in \\ZZ_{\\geq 0}$ is uniformly continuous o\u2026"
+title: Uniform continuity of $x^{-n}$ on $[0,\infty)$
 classification:
   areas:
   - complex-analysis

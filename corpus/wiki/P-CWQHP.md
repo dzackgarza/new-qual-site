@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CWQHP
 kind: problem
-title: "Let $G$ be a finite group and let $P$ be a sylow $p\\dash$subgroup for\u2026"
+title: $N(N(P))=N(P)$ for a Sylow $p$-subgroup
 classification:
   areas:
   - algebra

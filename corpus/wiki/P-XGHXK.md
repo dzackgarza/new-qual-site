@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XGHXK
 kind: problem
-title: "Main Idea: A linear homotopy projected onto the sphere\u2026"
+title: A non-surjective map into $S^n$ is nullhomotopic
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P2UAH
 kind: problem
-title: Let $G$ be a finite group whose order is divisible by a prime number...
+title: Normal $p$-subgroups, Sylow $p$-subgroups, and maximal subgroups
 classification:
   areas:
   - algebra

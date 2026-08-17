@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y2YJL
 kind: problem
-title: "Show that $\\int_{0}^{\\infty} \\sin \\left(x^{2}\\right) d x=\\int_{0}^{\\infty} \\cos \\left(x^{2}\\right) d x=\\frac{\\sqrt{2 \\pi}}{4}$"
+title: Fresnel integrals $\int_0^\infty\sin(x^2)\,dx=\int_0^\infty\cos(x^2)\,dx=\frac{\sqrt{2\pi}}{4}$
 classification:
   areas:
   - complex-analysis

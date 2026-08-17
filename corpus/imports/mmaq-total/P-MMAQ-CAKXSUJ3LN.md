@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CAKXSUJ3LN
 kind: problem
-title: Let $C_p$ denote the cyclic group of order $p$.
+title: Rational irreps of $C_p$ of dimensions $1$ and $p-1$, and abelian groups whose rational representations are absolutely irreducible
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VTCZF
 kind: problem
-title: "Show that if $f$ is holomorphic on a connected region $\\Omega$ and $f'\\equiv 0$ on $\\Omega$\u2026"
+title: A holomorphic function with vanishing derivative on a connected domain is constant
 classification:
   areas:
   - complex-analysis

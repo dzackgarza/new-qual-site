@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2HMGE
 kind: problem
-title: "Show that a connected, normal topological space with more than a singl\u2026"
+title: A connected normal space with more than one point is uncountable
 classification:
   areas:
   - topology

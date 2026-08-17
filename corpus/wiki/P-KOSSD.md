@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KOSSD
 kind: problem
-title: "Let $H$ be a normal subgroup of a finite group $G$ where the order\u2026"
+title: A normal subgroup of coprime order and index is the unique subgroup of that order
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QYLM3
 kind: problem
-title: "Let $X$ be a topological space obtained by attaching a 2-cell\u2026"
+title: Possible homology of $\RP^2$ with a $2$-cell attached
 classification:
   areas:
   - topology

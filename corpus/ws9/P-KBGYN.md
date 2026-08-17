@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KBGYN
 kind: problem
-title: Let $a$ be a real number other than 1. Use induction to show that for…
+title: $\sum_{k=0}^{n-1}a^k=(a^n-1)/(a-1)$
 classification:
   areas:
   - prelim

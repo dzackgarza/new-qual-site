@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4IWVY
 kind: problem
-title: "Irreducible: Let $a\\in M$ be arbitrary; we can then consider the\u2026"
+title: Irreducible modules over a PID are $R/(p)$ and indecomposable modules are $R/(p^n)$
 classification:
   areas:
   - algebra

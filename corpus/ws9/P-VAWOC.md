@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VAWOC
 kind: problem
-title: Work out the Taylor series for $f(x) = \ln x$ around $x=1$ and use it…
+title: Taylor series of $\ln x$ at $1$, approximating $\ln 1.1$
 classification:
   areas:
   - prelim

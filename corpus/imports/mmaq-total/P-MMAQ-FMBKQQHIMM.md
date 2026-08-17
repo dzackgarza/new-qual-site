@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FMBKQQHIMM
 kind: problem
-title: Let $S^1$ denote the unit circle in $C$, $X$ be any topological…
+title: Free homotopy of based loops iff conjugacy in $\pi_1$
 classification:
   areas:
   - topology

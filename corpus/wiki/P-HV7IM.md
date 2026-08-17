@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HV7IM
 kind: problem
-title: "Do you know what the quaternion group is? How many elements\u2026"
+title: Element orders in the quaternion group, and quadratic subfields of a $Q_8$-extension of $\QQ$
 classification:
   areas:
   - algebra

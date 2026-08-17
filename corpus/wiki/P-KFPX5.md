@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KFPX5
 kind: problem
-title: "Give the definition of a covering space $\\hat{X}$ (and covering map $p : \\hat{X} \\to X$\u2026"
+title: Covering maps inject on $\pi_1$ and are homeomorphisms if they induce $\pi_1$-isomorphisms
 classification:
   areas:
   - topology

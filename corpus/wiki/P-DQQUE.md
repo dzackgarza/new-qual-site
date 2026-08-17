@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DQQUE
 kind: problem
-title: "Let $\\{a_k\\}_{k=1}^\\infty$ be a bounded sequence of real numbers and"
+title: $\limsup a_k=\inf\{s:\text{only finitely many }a_k\ge s\}$
 classification:
   areas:
   - real-analysis

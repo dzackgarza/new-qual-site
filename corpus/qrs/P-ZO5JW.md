@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZO5JW
 kind: problem
-title: "Prove that all entire functions that are injective are of\u2026"
+title: Injective entire functions are of the form $az+b$
 classification:
   areas:
   - complex-analysis

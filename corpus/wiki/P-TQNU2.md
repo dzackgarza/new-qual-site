@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TQNU2
 kind: problem
-title: "Let $f(x) \\in \\QQ[x]$ be a polynomial and $K$ be a splitting field of\u2026"
+title: A polynomial over $\QQ$ whose splitting field has degree $1225$ is solvable by radicals
 classification:
   areas:
   - algebra

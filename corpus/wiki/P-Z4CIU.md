@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z4CIU
 kind: problem
-title: "Prove that all the roots of the complex polynomial $f(z) = z^7 - 5 z^3 +12 =0$ lie\u2026"
+title: All roots of $z^7-5z^3+12$ lie between $|z|=1$ and $|z|=2$
 classification:
   areas:
   - complex-analysis

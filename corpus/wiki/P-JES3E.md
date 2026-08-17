@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JES3E
 kind: problem
-title: "Show that the function $u=u(x,y)$ given by"
+title: $\frac{e^{ny}-e^{-ny}}{2n^2}\sin nx$ solves the Laplace Cauchy problem on the disk with data $\sin(nx)/n$, and $\limsup_n|u|=\infty$ at some points
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VXX34
 kind: problem
-title: "Show that if $G \\actson X$ is a group action, then the stabilizer $G_x$ of a\u2026"
+title: The stabilizer of a point under a group action is a subgroup
 classification:
   areas:
   - algebra

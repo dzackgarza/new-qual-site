@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G62KK
 kind: problem
-title: Let $D \subset \mathbb{C}$ be the unit disk. Prove that every one-to-o…
+title: Conformal automorphisms of the disk are linear fractional transformations
 classification:
   areas:
   - real-analysis

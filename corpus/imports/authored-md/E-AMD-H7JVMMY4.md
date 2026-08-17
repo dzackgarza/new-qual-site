@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-H7JVMMY4
 kind: exercise
-title: "Show that if $\\alpha, \\beta$ are algebraic over $F$, then $\\alpha\\pm \\beta, \\alpha\\beta^{\\pm 1}$ are all algebraic\u2026"
+title: Algebraicity of $\alpha\pm\beta$ and $\alpha\beta^{\pm 1}$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YZNJU
 kind: problem
-title: "Use de Moivre's theorem (i.e. $\\left(e^{i \\theta}\\right)^{n}==\\cos n \\theta+i \\sin n \\theta$, or $\\left.(\\cos \\theta+i \\sin \\theta)^{n}=\\cos n \\theta+i \\sin n \\theta\\right)$ to find the sum\u2026"
+title: The sum $\sum_{k=1}^n\sin kx$ via de Moivre's theorem
 classification:
   areas:
   - complex-analysis

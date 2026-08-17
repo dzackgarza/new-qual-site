@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-Q5ZWN3J46V
 kind: problem
-title: "Let $f, g: [a, b] \\to \\RR$ be measurable with $\\int_{a}^{b} f(x) ~d x=\\int_{a}^{b} g(x) ~d x$"
+title: If $\int_a^b f=\int_a^b g$ then either $f=g$ a.e. or $\int_E f>\int_E g$ for some measurable $E$
 classification:
   areas:
   - real-analysis

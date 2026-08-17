@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QM6M4
 kind: problem
-title: Let $K$ be a Galois extension of $\QQ$ with Galois group $G$, and let...
+title: Galois groups of the compositum and intersection of two splitting fields
 classification:
   areas:
   - algebra

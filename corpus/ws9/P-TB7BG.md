@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TB7BG
 kind: problem
-title: A square matrix $N$ over the complex numbers is nilpotent just in case…
+title: Jordan canonical form of a nilpotent matrix
 classification:
   areas:
   - prelim

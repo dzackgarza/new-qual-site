@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DAI2Z
 kind: problem
-title: "Let $n\\in \\ZZ^{\\geq 0}$ and show that the equation $e^z = az^n$ has $n$ solutions in the open\u2026"
+title: Number of solutions of $e^z=az^n$ in the unit disk
 classification:
   areas:
   - complex-analysis

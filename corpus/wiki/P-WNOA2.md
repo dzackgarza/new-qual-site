@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WNOA2
 kind: problem
-title: "Suppose that $f$ is holomorphic on the strip $S = \\theset{x+iy \\suchthat x\\in \\RR,~ -1<y<1}$ with $\\abs{f(z)} \\leq A \\qty{1 + \\abs z}^\\nu$ for $\\nu$ some\u2026"
+title: Cauchy estimates for a holomorphic function of polynomial growth on a strip
 classification:
   areas:
   - complex-analysis

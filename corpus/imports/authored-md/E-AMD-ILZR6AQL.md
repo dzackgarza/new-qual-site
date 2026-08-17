@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-ILZR6AQL
 kind: exercise
-title: Show that every field is simple.
+title: Every field is a simple ring
 classification:
   areas:
   - algebra

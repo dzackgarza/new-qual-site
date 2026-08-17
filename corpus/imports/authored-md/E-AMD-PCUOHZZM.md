@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-PCUOHZZM
 kind: exercise
-title: Show directly that any $k\dash$cycle is a product of transpositions,…
+title: A $k$-cycle as a product of transpositions
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HOUMA
 kind: problem
-title: "Let $(X,d)$ be an unbounded and connected metric space. Prove that"
+title: $\{x:d(x,x_0)=r\}$ is nonempty in an unbounded connected metric space
 classification:
   areas:
   - real-analysis

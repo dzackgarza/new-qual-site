@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DBY54
 kind: problem
-title: "Let $R$ be a commutative ring, and $S\\subset R$ be a nonempty subset t\u2026"
+title: Maximal ideals disjoint from a multiplicative set exist and are prime
 classification:
   areas:
   - algebra

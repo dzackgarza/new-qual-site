@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-HW1
 kind: problem
-title: 'Compute the homology groups of all spheres (warm-up)'
+title: Homology of $S^n$ for all $n\ge 0$
 classification:
   areas:
   - topology

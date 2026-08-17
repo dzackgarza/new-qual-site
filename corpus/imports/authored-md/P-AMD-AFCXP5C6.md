@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-AFCXP5C6
 kind: problem
-title: 'Show: $\QQ/\ZZ$ has, for each coset, exactly one representative in…'
+title: $\QQ/\ZZ$ as torsion in $\RR/\ZZ$ and as the roots of unity
 classification:
   areas:
   - algebra

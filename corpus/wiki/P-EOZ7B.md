@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EOZ7B
 kind: problem
-title: "Recall that a topological space is said to be connected if\u2026"
+title: A space is connected iff its only clopen subsets are $\emptyset$ and $X$, and the intermediate value theorem
 classification:
   areas:
   - topology

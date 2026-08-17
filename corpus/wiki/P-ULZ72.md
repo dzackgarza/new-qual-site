@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ULZ72
 kind: problem
-title: "If $\\chi(g)$ is real for every character $\\chi$, what can you say abou\u2026"
+title: Elements $g$ for which $\chi(g)$ is real for every character $\chi$
 classification:
   areas:
   - algebra

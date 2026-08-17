@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-TSJ7AKE5
 kind: exercise
-title: Given $H\subseteq G$, let $S(H)= \bigcup_{g\in G} gHg^{-1}$, so…
+title: The number of conjugates of $H$ equals $[G:N_G(H)]$
 classification:
   areas:
   - algebra

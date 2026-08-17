@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PY25U
 kind: problem
-title: "Let $C/F$ be an algebraic field extension. Prove that"
+title: An algebraic extension $C/F$ splits every polynomial over $F$ if and only if every algebraic extension of $F$ embeds in $C$
 classification:
   areas:
   - algebra

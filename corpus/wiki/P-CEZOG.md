@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CEZOG
 kind: problem
-title: "If $A$ is a cyclic module over a commutative ring $R$, so we have\u2026"
+title: Order of a cyclic module over a commutative ring
 classification:
   areas:
   - algebra

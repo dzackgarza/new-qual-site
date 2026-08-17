@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-H7ERV
 kind: problem
-title: Let $F$ be a field of characteristic zero and $\overline{F}$ be an alg…
+title: At most two $F$-conjugates of $L$ when $[K:F]=2$ and $L/K$ is finite Galois
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HYQMG
 kind: exercise
-title: "Show that $X$ is Hausdorff iff $\\Delta(X)$ is closed in $X\\cross X$."
+title: $X$ is Hausdorff if and only if $\Delta(X)$ is closed in $X\times X$
 classification:
   areas:
   - topology

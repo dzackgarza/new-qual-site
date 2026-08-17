@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6QWZI
 kind: problem
-title: "Let \\( (X, \\mathcal{M}, \\mu)  \\) be a finite measure space and let \\\
+title: Almost uniform boundedness of an a.e. convergent sequence in $L^1$ on a finite measure space
   (\u2026"
 classification:
   areas:

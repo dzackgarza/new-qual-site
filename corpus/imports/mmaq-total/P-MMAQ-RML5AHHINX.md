@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-RML5AHHINX
 kind: problem
-title: '(a) Let $f : \mathbb{R} \to \mathbb{R}$ be a differentiable function.'
+title: Darboux's theorem for $f'$ attaining $2$, and $f'(0)=\lim_{x\to 0}f'(x)$ when $f$ is continuous and the limit exists
 classification:
   areas:
   - real-analysis

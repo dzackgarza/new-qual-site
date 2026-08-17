@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NSKLO
 kind: problem
-title: "Consider just Lebesgue measurable functions $f:[0,1]\\to\\mathbb{R}$ tog…"
+title: Fatou's lemma, dominated convergence, and a counterexample to interchanging limit and integral
 classification:
   areas:
   - real-analysis

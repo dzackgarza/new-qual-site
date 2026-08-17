@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YQVRO
 kind: problem
-title: "Find all homotopy classes of maps from $S^1 \\times \\DD^2$ to itself su\u2026"
+title: Homotopy classes of self-maps of $S^1\times\DD^2$ in which every map has a fixed point
 classification:
   areas:
   - topology

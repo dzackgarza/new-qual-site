@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BGFKE
 kind: problem
-title: "Prove that the following polynomial has its roots outside of\u2026"
+title: Roots of $z^3+2z+4$ lie outside the unit disk
 classification:
   areas:
   - complex-analysis

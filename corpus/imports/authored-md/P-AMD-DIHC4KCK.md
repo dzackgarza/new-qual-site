@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-DIHC4KCK
 kind: problem
-title: "Let $\\{f_k\\}$ be any sequence of functions in $L^2([0, 1])$ satisfying $\\norm{f_k}_2 \\leq M$ for all $k \u2208 \\NN$."
+title: $L^2$-bounded a.e. convergent sequences remain in $L^2$ with $\int f_k\to\int f$
 classification:
   areas:
   - real-analysis

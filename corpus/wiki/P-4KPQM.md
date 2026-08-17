@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4KPQM
 kind: problem
-title: "Prove the fundamental theorem of Algebra using the maximum\u2026"
+title: The fundamental theorem of algebra via the maximum modulus principle
 classification:
   areas:
   - complex-analysis

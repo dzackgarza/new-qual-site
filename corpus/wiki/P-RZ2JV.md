@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RZ2JV
 kind: problem
-title: "Let $R$ be a commutative ring, and let $M$ be an $R\\dash$module. An $R\\dash$\u2026"
+title: Maximal submodules are those with simple quotient, and the roots of unity have no maximal submodule
 classification:
   areas:
   - algebra

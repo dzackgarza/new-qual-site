@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GPN39
 kind: problem
-title: "If $L\\vector x = \\vector x$, then $\\vector x$ is an eigenvector with \u2026"
+title: A linear operator with $1\notin\spec(L)$ has unique fixed point $0$
 classification:
   areas:
   - algebra

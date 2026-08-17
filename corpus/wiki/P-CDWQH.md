@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CDWQH
 kind: problem
-title: "Give a self-contained proof that the zeroth homology $H_0 (X)$ is isom\u2026"
+title: $H_0(X)\cong\ZZ$ for path-connected $X$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GQZ1O
 kind: problem
-title: Suppose $R$ is a domain, $M$ an $R\dash$module, and let
+title: The torsion subset of a module over an integral domain is a submodule
 classification:
   areas:
   - algebra

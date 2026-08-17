@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-L3CZY
 kind: exercise
-title: "Show that if each $f_n$ is holomorphic on $\\Omega$ and $F \\definedas \\sum f_n$ converges\u2026"
+title: Compactly convergent series of holomorphic functions are holomorphic
 classification:
   areas:
   - complex-analysis

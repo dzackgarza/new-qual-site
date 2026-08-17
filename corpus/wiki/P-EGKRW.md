@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EGKRW
 kind: problem
-title: "Let $I = (2, x)$ be an ideal in $R = \\ZZ[x]$, and show that $I$ is not\u2026"
+title: The ideal $(2,x)$ in $\mathbb{Z}[x]$ is not a direct sum of nontrivial cyclic modules
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-57CAX
 kind: problem
-title: "(a) Let Let $f:{\\mathbb C}\\rightarrow {\\mathbb C}$ be an entire"
+title: Polynomial growth of entire functions and Liouville for bounded real part
 classification:
   areas:
   - complex-analysis

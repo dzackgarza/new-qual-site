@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3JE4U
 kind: problem
-title: "Compute the following integrals. (i)"
+title: $\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx=\frac{\pi}{n\sin(\pi a/n)}$ and $\int_0^\infty\frac{\log x}{(1+x^2)^2}\,dx=-\frac{\pi}{4}$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-RQIXA5ILNE
 kind: problem
-title: "Let $f(x) = x^2$ and $E \\subset [0, \\infty) \\definedas \\RR^+$. Show that $m^(E) = 0 \\iff m^(f(E)) = 0$ Deduce that the map \\begin{align} \\phi: \\mathcal{L}(\\RR^+) &\\to \\mathcal{L}(\\RR^+) \\\\ E &\\mapsto f(E) \\end{align}\u2026"
+title: $x\mapsto x^2$ preserves null sets and permutes the measurable subsets of $[0,\infty)$
 classification:
   areas:
   - real-analysis

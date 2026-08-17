@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OK5P3
 kind: problem
-title: Let $\gamma$ be the closed path which goes counterclockwise around the…
+title: Line integral of $y\,dx+2x\,dy$ along a three-quarter circle closed by the axes
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MFYGZ
 kind: problem
-title: Let $f \in L^1(\mathbb{R}^d)$ and $M_f$ denote the Hardy-Littlewood ma…
+title: Weak-$(1,1)$ inequality for the Hardy–Littlewood maximal function
 classification:
   areas:
   - real-analysis

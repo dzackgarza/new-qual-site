@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HVKUA
 kind: problem
-title: "Let $X = \\theset{(0, y) \\mid - 1 \\leq y \\leq 1} \\cup \\theset{\\qty{x, s = \\sin\\qty{1 \\over x}} \\mid 0 < x \\leq 1}$ Prove that $X$ is connected but not path connected. $X$ is\u2026"
+title: The closed topologist's sine curve is connected but not path-connected
 classification:
   areas:
   - topology

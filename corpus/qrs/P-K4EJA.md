@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K4EJA
 kind: problem
-title: "Let $f$ be a non-negative Lebesgue measurable function on $[1, \\infty)$.\u2026"
+title: Cauchy-Schwarz for $f$ and $1/f$, and divergence of $\int_1^\infty dx/f$
 classification:
   areas:
   - real-analysis

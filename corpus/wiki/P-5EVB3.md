@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5EVB3
 kind: problem
-title: "Let $(X, \\mathcal{M}, \\mu)$ be a measure space and prove the following\u2026"
+title: Hölder, completeness, a.e. uniform convergence, and density of simple functions in $L^\infty$
 classification:
   areas:
   - real-analysis

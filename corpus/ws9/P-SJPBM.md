@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SJPBM
 kind: problem
-title: Let $Q$ be the closed unit square in $\mathbb{C}$ and let $R$ be the c…
+title: No corner-to-corner conformal homeomorphism from a square onto a $2\times 1$ rectangle
 classification:
   areas:
   - real-analysis

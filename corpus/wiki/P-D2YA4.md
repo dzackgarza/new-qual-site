@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-D2YA4
 kind: problem
-title: "Facts Used: $\\ext(\\ZZ, \\ZZ_m) = \\ZZ_m$ $\\ext(\\ZZ_m, \\ZZ) = 0$ $\\ext(\\prod_i A_i, \\prod_j B_j) = \\prod_i \\prod_j \\ext(A_i, B_j)$ Break it up into a bigraded complex, take Ext\u2026"
+title: $\ext(\ZZ\oplus\ZZ_2\oplus\ZZ_3,\ZZ\oplus\ZZ_4\oplus\ZZ_5)\cong\ZZ_{12}$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DY1KA
 kind: problem
-title: "By part (1), we know that these conditions uniquely specify their Jor\u2026"
+title: Matrices with the same Jordan form are similar
 classification:
   areas:
   - algebra

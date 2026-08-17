@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y3TRT
 kind: problem
-title: 'Let g : $[0, 1] \times [0, 1] \to [0, 1]$ be a continuous function…'
+title: A continuous solution of $f(x)=\int_0^x g(t,f(t))\,dt$
 classification:
   areas:
   - real-analysis

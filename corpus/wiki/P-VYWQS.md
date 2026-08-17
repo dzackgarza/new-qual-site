@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VYWQS
 kind: problem
-title: "Suppose that $R$ is a commutative ring. Show that an"
+title: An element of a commutative ring is noninvertible if and only if it lies in a maximal ideal
 classification:
   areas:
   - algebra

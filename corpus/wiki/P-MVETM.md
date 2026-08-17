@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MVETM
 kind: problem
-title: Suppose all irreducible polynomials in $F[x]$ are separable.
+title: If every irreducible in $F[x]$ is separable then every element of $F$ is a $p$-th power
 classification:
   areas:
   - algebra

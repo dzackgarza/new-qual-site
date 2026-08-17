@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WC2SP
 kind: problem
-title: A local ring is a commutative ring with 1 which has a unique maximal i…
+title: Units of a local ring, nonarchimedean valuation rings, and $R/M^n$
 classification:
   areas:
   - prelim

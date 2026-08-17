@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4GQEC
 kind: problem
-title: "Explain how the structure theorem for finitely-generated modules over\u2026"
+title: Structure theorem for PID-modules applied to a linear operator
 classification:
   areas:
   - algebra

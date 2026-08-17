@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TFXE2
 kind: problem
-title: "Let $f\\in L^1(\\RR^n)$ with $f\\neq 0$."
+title: $Hf(x)\ge\frac{c}{(1+|x|)^n}$ for $0\neq f\in L^1(\RR^n)$
 classification:
   areas:
   - real-analysis

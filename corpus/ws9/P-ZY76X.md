@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZY76X
 kind: problem
-title: Suppose the field $K$ is a Galois extension of the field $F$, such tha…
+title: Intermediate fields of a Galois extension with group $D_8$
 classification:
   areas:
   - prelim

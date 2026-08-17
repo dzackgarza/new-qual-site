@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VN3M2
 kind: problem
-title: "Compute the homology and cohomology of a closed, connected, oriented 3\u2026"
+title: Homology and cohomology of a closed oriented $3$-manifold with $\pi_1=\ZZ^{*2}$
 classification:
   areas:
   - topology

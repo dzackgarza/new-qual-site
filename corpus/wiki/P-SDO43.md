@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SDO43
 kind: problem
-title: "$R$ be a commutative ring with identity and let $n$ be a positive inte\u2026"
+title: Surjective $R$-linear endomorphisms of $R^n$ are injective, but injective ones need not be surjective
 classification:
   areas:
   - algebra

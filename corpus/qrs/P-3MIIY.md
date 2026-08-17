@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3MIIY
 kind: problem
-title: "Compute the following integrals. \\(i\\) $\\displaystyle \\int_0^\\infty \\frac{\\sin x}{x} \\, dx$ (ii) $\\displaystyle \\int_0^\\infty (\\frac{\\sin x}{x})^2 \\, dx$ (iii)\u2026"
+title: Dirichlet, Mellin, and logarithmic integrals by residues
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L52MJ
 kind: problem
-title: "Let $f(z)$ be analytic in an open set $\\Omega$ except possibly at a"
+title: $\int_\Delta f=0$ for triangles when $f$ is holomorphic off one point and bounded nearby
 classification:
   areas:
   - complex-analysis

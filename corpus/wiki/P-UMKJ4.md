@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMKJ4
 kind: problem
-title: "The goal is to show that any matrix $A \\in M(m\\times n, R)$ is equivalent to a\u2026"
+title: Smith normal form of a matrix over a PID
 classification:
   areas:
   - algebra

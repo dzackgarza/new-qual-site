@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-DCVAD27P
 kind: exercise
-title: Show that $\union_{\mfm \in \maxspec(R)} = R\setminus R\units$.
+title: The union of all maximal ideals is the set of non-units
 classification:
   areas:
   - algebra

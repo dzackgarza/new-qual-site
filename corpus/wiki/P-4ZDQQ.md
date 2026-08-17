@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4ZDQQ
 kind: problem
-title: "If $L/k$ is an abelian Galois extension of degree $540 = 2^2 \\times 3^3\\times 5$, what are the\u2026"
+title: Possible Galois groups of an abelian extension of degree $540$, and quadratic intermediate extensions $L/E$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-EPKBBEPST7
 kind: problem
-title: Let $\phi$ be a compactly supported smooth function that vanishes…
+title: $L^1$ approximation of the identity by $K_j=j\phi(jx)$
 classification:
   areas:
   - real-analysis

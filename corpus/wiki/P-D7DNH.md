@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-D7DNH
 kind: problem
-title: "Since $\\ZZ^4$ is a finitely generated module over the PID $\\ZZ$, the \u2026"
+title: $\ZZ^4/N\cong\ZZ\oplus\ZZ/(3)\oplus\ZZ/(6)\oplus\ZZ/(6)$ by Smith normal form
 classification:
   areas:
   - algebra

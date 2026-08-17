@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SQBZN
 kind: problem
-title: "Let $\\gamma(t)$ be a piecewise smooth curve in $\\mathbb{C}, t \\in[0,1]$. Let $F(w)$ be a continuous\u2026"
+title: Analyticity of $\int_\gamma\frac{F(w)}{w-z}\,dw$ off a piecewise smooth curve $\gamma$
 classification:
   areas:
   - complex-analysis

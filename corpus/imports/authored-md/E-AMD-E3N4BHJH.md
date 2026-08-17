@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-E3N4BHJH
 kind: solution
-title: Suppose $\mm$ is maximal, $ab\in \mm$, and $b\not\in \mm$.
+title: A maximal ideal is prime; $(0)$ in $\ZZ$ is prime but not maximal
 classification:
   areas:
   - algebra

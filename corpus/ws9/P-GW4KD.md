@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GW4KD
 kind: problem
-title: Let $n>1$ be an integer. Show that the automorphism group of the cycli…
+title: $\operatorname{Aut}(C_n)\cong(\mathbb{Z}/n\mathbb{Z})^\times$
 classification:
   areas:
   - prelim

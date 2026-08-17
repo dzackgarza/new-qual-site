@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CTQ6G
 kind: problem
-title: (1) $Y$ is metric space. Prove $y\in Y$ is isolated iff the complement…
+title: Isolated points iff the complement is not dense; countable complete metric spaces have dense isolated points
 classification:
   areas:
   - real-analysis

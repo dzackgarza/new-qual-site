@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-6QJD6P2HAX
 kind: problem
-title: "Let $R$ be a commutative ring with 1. Show that every proper\u2026"
+title: Maximal ideals, the Jacobson radical, and nilpotents in finite rings
 classification:
   areas:
   - algebra

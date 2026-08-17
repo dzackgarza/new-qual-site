@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5EFTFEKRDI
 kind: problem
-title: Let $f(x)$ be an irreducible polynomial of degree 5 over the field
+title: An irreducible quintic over $\mathbb{Q}$ with three real roots is not solvable by radicals, and a quadratic Galois subfield of its splitting field
 classification:
   areas:
   - algebra

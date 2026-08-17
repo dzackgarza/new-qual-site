@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-25AFH
 kind: problem
-title: "Let $\\mu$ be a measure on a measurable space $(X, \\mathcal M)$ and $f$\u2026"
+title: Integration against $f\,d\mu$, and $\int_E x^2\,dm=0$ implies $m(E)=0$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P7TEE
 kind: problem
-title: "Let $F$ be a field and $n$ a positive integer, and consider $A=\\left[\\begin{array}{ccc} 1 & \\dots & 1 \\\\ & \\ddots & \\\\ 1 & \\dots & 1 \\end{array}\\right] \\in M_{n}(F)$ Show\u2026"
+title: Jordan form of the all-ones matrix over a field
 classification:
   areas:
   - algebra

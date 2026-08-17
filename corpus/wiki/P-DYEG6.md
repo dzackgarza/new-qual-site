@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DYEG6
 kind: problem
-title: "Let $L/K$ be a finite extension of fields."
+title: Separable extensions, separability over finite fields, and an inseparable finite extension
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DX6EM
 kind: problem
-title: "Let $f \\colon [a,b] \\to \\mathbb{R}$. Suppose"
+title: A function of bounded variation is the difference of two increasing functions
 classification:
   areas:
   - real-analysis

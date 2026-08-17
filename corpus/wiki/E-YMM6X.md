@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YMM6X
 kind: exercise
-title: "Show that if $\\theset{f_n}$ is a sequence of holomorphic functions con\u2026"
+title: Weierstrass's theorem on locally uniform limits of holomorphic functions
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J5GIE
 kind: problem
-title: "Let $R$ be a ring with unity."
+title: Definitions of free and torsion-free modules; splitting of $0\to N\to M\to F\to 0$ when $F$ is free; finitely generated modules over a PID as torsion plus free
 classification:
   areas:
   - algebra

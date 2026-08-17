@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K6CAP
 kind: problem
-title: "Let $f, g \\in L^2(\\RR)$. Show that $\\lim _{n \\to \\infty} \\int _{\\RR} f(x) g(x+n) \\,dx = 0$"
+title: $\lim_{n\to\infty}\int_{\RR}f(x)g(x+n)\,dx=0$ for $f,g\in L^2(\RR)$
 classification:
   areas:
   - real-analysis

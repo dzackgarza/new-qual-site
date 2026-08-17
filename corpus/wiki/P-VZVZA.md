@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VZVZA
 kind: problem
-title: "Find all surfaces, orientable and non-orientable, which can\u2026"
+title: Surfaces covered by a closed surface of genus $2$
 classification:
   areas:
   - topology

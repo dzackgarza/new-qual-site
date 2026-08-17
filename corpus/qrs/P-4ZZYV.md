@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4ZZYV
 kind: problem
-title: "Let $f$ be entire and suppose that $\\lim_{z \\rightarrow \\infty} f(z) = \\infty$. Show that $f$ is a polynomial."
+title: Entire functions with $f(z)\to\infty$ as $z\to\infty$ are polynomials
 classification:
   areas:
   - complex-analysis

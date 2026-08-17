@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-UKGCIYDK
 kind: exercise
-title: Show that if $R$ is a local ring then $R\setminus R\units$ is a…
+title: Non-units in a local ring form a proper ideal contained in the Jacobson radical
 classification:
   areas:
   - algebra

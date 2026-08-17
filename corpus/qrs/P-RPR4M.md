@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RPR4M
 kind: problem
-title: "Assume $\\displaystyle f(z) = \\sum_{n=0}^\\infty c_n z^n$ converges in $|z| < R$."
+title: Parseval's identity for power series and Liouville's theorem
 classification:
   areas:
   - complex-analysis

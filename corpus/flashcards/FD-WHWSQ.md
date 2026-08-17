@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FD-WHWSQ
 kind: definition
-title: "Baire Space: $X$ is a Baire space iff whenever\u2026"
+title: Baire space
 classification:
   areas:
   - real-analysis

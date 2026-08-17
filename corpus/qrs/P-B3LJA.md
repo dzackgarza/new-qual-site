@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B3LJA
 kind: problem
-title: "Prove that the sequence $\\left(1+\\frac{z}{n}\\right)^{n}$ converges uniformly to $e^{z}$ on compact\u2026"
+title: Uniform convergence of $(1+z/n)^n$ to $e^z$ on compact subsets of $\mathbb{C}$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-GYGP2
 kind: exercise
-title: "Show that if $H < G$ is a proper subgroup, then $\\Union_{g\\in G} gHg\\inv \\subset G$ is a proper\u2026"
+title: The conjugates of a proper subgroup of a finite group do not cover the group
 classification:
   areas:
   - algebra

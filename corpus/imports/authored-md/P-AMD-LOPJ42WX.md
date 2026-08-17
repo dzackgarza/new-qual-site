@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-LOPJ42WX
 kind: problem
-title: Show that $x,y\in X$ path & simply-connected $\implies$ all paths…
+title: Paths in a simply connected space are homotopic rel endpoints
 classification:
   areas:
   - topology

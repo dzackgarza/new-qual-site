@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MICNK
 kind: problem
-title: "Let $a\\in \\CC$ and $n\\geq 2$."
+title: $az^n+z+1$ has a root in $|z|\le 2$
 classification:
   areas:
   - complex-analysis

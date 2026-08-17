@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L7OQW
 kind: problem
-title: "Give an example showing that normality is not transitive\u2026"
+title: Normality of subgroups is not transitive
 classification:
   areas:
   - algebra

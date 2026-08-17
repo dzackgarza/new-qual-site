@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5R3FT
 kind: problem
-title: "Let $c\\in \\CC$ with $\\abs{c} < {1\\over 3}$. Show that on the open set $\\theset{z\\in \\CC \\suchthat \\Re(z) < 1}$, the function $f(z) \\definedas ce^z$ has\u2026"
+title: Unique fixed point of $ce^z$ on $\{\operatorname{Re} z<1\}$ when $|c|<1/3$
 classification:
   areas:
   - complex-analysis

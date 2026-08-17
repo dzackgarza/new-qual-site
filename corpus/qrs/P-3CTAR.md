@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3CTAR
 kind: problem
-title: "Find a conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the\u2026"
+title: A conformal map from the lens $|z-1|<2\cap|z+1|<2$ onto the upper half-plane
 classification:
   areas:
   - complex-analysis

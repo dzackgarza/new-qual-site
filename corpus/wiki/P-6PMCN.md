@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6PMCN
 kind: problem
-title: "Let $\\displaystyle f(z) = \\frac{1}{z} + \\frac{1}{z^2 -1}$."
+title: Laurent series of $\frac{1}{z}+\frac{1}{z^2-1}$ on the largest annuli of validity
 classification:
   areas:
   - complex-analysis

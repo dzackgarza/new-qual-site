@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-HICDBVN4
 kind: exercise
-title: If $\theset{\alpha_i}_{i=1}^n \subset F$ are algebraic over $K$,…
+title: $K[\alpha_1,\ldots,\alpha_n]=K(\alpha_1,\ldots,\alpha_n)$ for algebraic $\alpha_i$
 classification:
   areas:
   - algebra

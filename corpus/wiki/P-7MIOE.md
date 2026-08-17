@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7MIOE
 kind: problem
-title: "Prove that the alternating group $A_n$ is simple for $n \\geq 5$."
+title: $A_n$ is simple for $n\geq 5$
 classification:
   areas:
   - algebra

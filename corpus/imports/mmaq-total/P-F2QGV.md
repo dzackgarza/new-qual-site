@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F2QGV
 kind: problem
-title: Find an analytic isomorphism from the open region between $x = 1$…
+title: Biholomorphism from the strip $1<\Re z<3$ to the upper half-disk
 classification:
   areas:
   - complex-analysis

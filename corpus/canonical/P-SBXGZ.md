@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SBXGZ
 kind: problem
-title: Let $R$ be a commutative ring, and let $M$ be an $R\dash$module. An...
+title: Maximal submodules and the group of all roots of unity
 classification:
   areas:
   - algebra

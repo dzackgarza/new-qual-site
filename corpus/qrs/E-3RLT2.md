@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3RLT2
 kind: exercise
-title: "Show that a sequentially compact space is totally bounded."
+title: A sequentially compact metric space is totally bounded
 classification:
   areas:
   - topology

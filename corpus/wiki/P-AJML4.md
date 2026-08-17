@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AJML4
 kind: problem
-title: "If you have an irreducible representation of a subgroup, is the induce\u2026"
+title: Whether inducing an irreducible representation of a subgroup remains irreducible
 classification:
   areas:
   - algebra

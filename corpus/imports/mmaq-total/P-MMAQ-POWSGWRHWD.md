@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-POWSGWRHWD
 kind: problem
-title: a. Show that a continuous bijection from a compact space to a…
+title: A continuous bijection from a compact space to a Hausdorff space is a homeomorphism
 classification:
   areas:
   - topology

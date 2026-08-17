@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-33EUS6QU7Y
 kind: problem
-title: Let X be a noncompact locally compact Hausdorff space, with topology…
+title: One-point compactification of a locally compact Hausdorff space
 classification:
   areas:
   - topology

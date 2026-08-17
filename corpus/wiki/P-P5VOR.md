@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P5VOR
 kind: problem
-title: "Let $a \\in \\mathbb{R}$ with $0<a<3$. Evaluate"
+title: $\int_0^\infty\frac{x^{a-1}}{1+x^3}\,dx$ for $0<a<3$
 classification:
   areas:
   - complex-analysis

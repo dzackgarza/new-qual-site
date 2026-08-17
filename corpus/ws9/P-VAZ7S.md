@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VAZ7S
 kind: problem
-title: "[Reconstructed from solution \u2014 no problem statement page was\u2026"
+title: $\lim_{p\to\infty}\|f\|_p=\|f\|_\infty$ on a finite measure space
 classification:
   areas:
   - real-analysis

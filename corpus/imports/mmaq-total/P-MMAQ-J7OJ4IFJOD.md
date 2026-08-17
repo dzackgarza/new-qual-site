@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-J7OJ4IFJOD
 kind: problem
-title: Define an equivalence relation $\sim$ on $\RR$ by $x \sim y$ if and…
+title: The quotient topology on $\RR/\QQ$ is indiscrete
 classification:
   areas:
   - topology

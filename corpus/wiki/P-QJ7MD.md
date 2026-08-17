@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QJ7MD
 kind: problem
-title: "(Important) Show that if $H\\leq G$ and $[G: H] = 2$ then $H$ is normal."
+title: A subgroup of index $2$ is normal; the same for index the smallest prime dividing $|G|$
 classification:
   areas:
   - algebra

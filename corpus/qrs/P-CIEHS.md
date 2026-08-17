@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CIEHS
 kind: problem
-title: "Suppose $f:\\DD\\to\\DD$ is analytic, has a single zero of order $k$ at $z=0$, and\u2026"
+title: Holomorphic self-maps of the disk with a zero of order $k$ at $0$ and $|f|\to 1$ at the boundary
 classification:
   areas:
   - complex-analysis

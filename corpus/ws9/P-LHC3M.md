@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LHC3M
 kind: problem
-title: "Let $f(x,y)$ be a differentiable function from $\\mathbb{R}^2$ to $\\mathbb{R}$ and let $g(t) = (x(t), y(t))$ be a\u2026"
+title: The chain rule for $f(g(t))$ and perpendicularity of $\nabla f$ to the tangent of an implicit level curve
 classification:
   areas:
   - prelim

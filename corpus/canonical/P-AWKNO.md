@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AWKNO
 kind: problem
-title: Use the Class Equation (equivalently, the conjugation action of a group...
+title: Nontrivial center of $p$-groups; groups of order $p^2$ and $5^2\cdot 7^2$
 classification:
   areas:
   - algebra

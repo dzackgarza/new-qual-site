@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N6W5L
 kind: problem
-title: "Find the number of zeros $z$ with $\\Re(z) > 0$ for the following funct\u2026"
+title: Number of zeros of $z^3-z+1$ in the right half-plane
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SJ47O
 kind: problem
-title: Let $G$ be a non-abelian group of order $p^3$ with $p$ a prime.
+title: Center, linear characters, and irreducible representations of a nonabelian group of order $p^3$
 classification:
   areas:
   - algebra

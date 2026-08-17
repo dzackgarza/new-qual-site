@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CZEY5
 kind: problem
-title: Suppose $\phi(n) = 2$. Take a prime factorization of $n$, so we have
+title: The integers $n$ with $\phi(n)=2$ are $3,4,6$
 classification:
   areas:
   - algebra

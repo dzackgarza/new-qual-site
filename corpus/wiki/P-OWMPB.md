@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OWMPB
 kind: problem
-title: "Let $F$ be a field and $T$ an $n\\times n$ matrix with entries in $F$."
+title: A polynomial $g$ with $g(T)=0$ is irreducible iff $k(T)$ is invertible for every nonzero $k$ of lower degree
 classification:
   areas:
   - algebra

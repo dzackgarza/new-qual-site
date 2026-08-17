@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-L3IVZR2LI6
 kind: problem
-title: Let $f \in C_c^0(\RR^n)$, and show
+title: Continuity of translation in $L^1(\RR^n)$ and bounded uniform continuity of $f\ast g$ for $f\in L^1$, $g\in L^\infty$
 classification:
   areas:
   - real-analysis

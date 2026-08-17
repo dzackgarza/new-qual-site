@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JKYJU
 kind: problem
-title: "Let $U \\subset \\mathbb{C}$ be an open set containing the closure $\\overline{D}$ of a unit disk."
+title: 'Hurwitz''s theorem: a locally uniform limit of holomorphic functions eventually has the same number of zeros in the disc'
 classification:
   areas:
   - real-analysis

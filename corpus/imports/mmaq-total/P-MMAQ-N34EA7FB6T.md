@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-N34EA7FB6T
 kind: problem
-title: Let $R$ and $S$ be commutative rings, and $f:R\rightarrow S$
+title: Inverse images of primes are prime, the nilradical is contained in every prime, and $\mathrm{Spec}(R/N)\to\mathrm{Spec}(R)$ is bijective
 classification:
   areas:
   - algebra

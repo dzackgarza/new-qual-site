@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-OF7ZW
 kind: proposition
-title: "For a linear operator on a vector space of nonzero finite dimension, T\u2026"
+title: Equivalent conditions for a finite-dimensional linear operator to be cyclic
 classification:
   areas:
   - algebra

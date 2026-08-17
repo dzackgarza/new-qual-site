@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-4WRRHZMI
 kind: exercise
-title: Prove that if $R$ is an integral domain, then $R[t]$ is again an…
+title: Polynomial rings over integral domains are integral domains
 classification:
   areas:
   - algebra

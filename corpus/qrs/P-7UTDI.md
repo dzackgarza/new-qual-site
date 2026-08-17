@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7UTDI
 kind: problem
-title: "Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if\u2026"
+title: Constancy of holomorphic functions of constant modulus, real part, argument, or conjugate
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-YQU7AEUCMW
 kind: problem
-title: "Let $V = \\DD^2 \\times S^1 = \\theset{ (z, e^{it}) \\suchthat \\norm z \\leq 1,~~ 0 \\leq t < 2\\pi}$ be the \"solid torus\" with boundary given by the torus $T = S^1 \\times S^1$\u2026"
+title: Fundamental group of two solid tori glued by $\phi_n$
 classification:
   areas:
   - topology

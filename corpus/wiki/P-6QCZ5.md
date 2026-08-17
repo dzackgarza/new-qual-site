@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6QCZ5
 kind: problem
-title: "Prove that if $f, g: \\RR^n\\to \\CC$ is both measurable then $F(x, y) \\definedas f(x)$ and $h(x, y)\\definedas f(x-y) g(y)$ is measurable on $\\RR^n\\cross \\RR^n$."
+title: Measurability of $f(x)$ and $f(x-y)g(y)$ on $\RR^n\times\RR^n$, and $\|f*g\|_p\le\|g\|_1\|f\|_p$ for $p=1,2,\infty$ when $f\in L^1\cap L^\infty$ and $g\in L^1$
 classification:
   areas:
   - real-analysis

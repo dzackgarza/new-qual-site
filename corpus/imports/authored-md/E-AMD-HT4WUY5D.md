@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-HT4WUY5D
 kind: exercise
-title: 'Give an example showing that normality is not transitive: i.e.…'
+title: Normality is not transitive
 classification:
   areas:
   - algebra

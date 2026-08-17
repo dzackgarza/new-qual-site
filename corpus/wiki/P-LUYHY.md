@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LUYHY
 kind: problem
-title: "Suppose $1\\leq p,q,r \\leq \\infty$ with"
+title: Young's convolution inequality
 classification:
   areas:
   - real-analysis

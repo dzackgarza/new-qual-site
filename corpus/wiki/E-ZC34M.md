@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ZC34M
 kind: exercise
-title: "Let $f: \\Omega\\to \\CC$ be holomorphic and suppose there is a $z_0 \\in \\Omega$ with $\\abs{f(z_0)}\\leq \\abs{f(z)}$ for all $z\\in \\Omega$."
+title: A holomorphic function attaining a minimum of $|f|$ vanishes there or is constant
 classification:
   areas:
   - complex-analysis

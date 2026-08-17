@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FG6DRJVWI2
 kind: problem
-title: a. Prove that if the space $X$ is connected and locally path…
+title: Connected locally path-connected spaces are path-connected
 classification:
   areas:
   - topology

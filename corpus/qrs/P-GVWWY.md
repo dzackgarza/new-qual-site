@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GVWWY
 kind: problem
-title: "Let $V$ be a finite-dimensional vector space over a field $k$ and $T:V\\to V$\u2026"
+title: Minimal and characteristic polynomials; Cayley-Hamilton
 classification:
   areas:
   - algebra

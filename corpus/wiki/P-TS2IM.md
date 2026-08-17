@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TS2IM
 kind: problem
-title: "Describe all the conjugacy classes of $3 \\times 3$ matrices with ratio\u2026"
+title: Conjugacy classes of $3\times 3$ rational matrices satisfying $A^4-A^3-A+1=0$
 classification:
   areas:
   - algebra

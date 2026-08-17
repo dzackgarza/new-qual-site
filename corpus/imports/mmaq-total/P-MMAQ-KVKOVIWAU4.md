@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-KVKOVIWAU4
 kind: problem
-title: Describe, as explicitly as you can, two different (non-homeomorphic)…
+title: Two non-homeomorphic double covers of $\RP^2\vee\RP^3$
 classification:
   areas:
   - topology

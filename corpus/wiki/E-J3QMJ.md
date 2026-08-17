@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-J3QMJ
 kind: exercise
-title: "Show that if $f$ is constant on any closed disk $r\\bar\\DD$ for $r<1$,\u2026"
+title: Constancy on a closed subdisk of $\mathbb{D}$ implies constancy on $\mathbb{D}$
 classification:
   areas:
   - complex-analysis

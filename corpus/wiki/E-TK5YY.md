@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TK5YY
 kind: exercise
-title: "Prove the Cayley-Hamilton theorem. Prove that the minimal\u2026"
+title: Cayley-Hamilton theorem, cokernels of integer matrices, and diagonalizability
 classification:
   areas:
   - algebra

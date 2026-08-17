@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FNUGX
 kind: problem
-title: "Show that a uniform limit of bounded functions is bounded.\u2026"
+title: Uniform limits of bounded and continuous functions, termwise differentiation, and $\sum x^n/n!$ on compacta
 classification:
   areas:
   - real-analysis

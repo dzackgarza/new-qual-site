@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7UD6U
 kind: problem
-title: "Let $G$ be a group and $H, K < G$ be subgroups of finite index. Show that\u2026"
+title: The index of the intersection of two finite-index subgroups
 classification:
   areas:
   - algebra

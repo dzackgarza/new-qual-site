@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JXIIG
 kind: problem
-title: Let $F$ be a field of characteristic not equal to 2.
+title: Quadratic extensions are $F(\sqrt{D})$ when $\operatorname{char} F\neq 2$, and $[F(\sqrt{D_1},\sqrt{D_2}):F]$
 classification:
   areas:
   - algebra

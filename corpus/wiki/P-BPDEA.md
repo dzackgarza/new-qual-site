@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BPDEA
 kind: problem
-title: "Give an example of a quotient map in which the domain is Hausdorff, bu\u2026"
+title: A quotient of a Hausdorff space that is not Hausdorff
 classification:
   areas:
   - topology

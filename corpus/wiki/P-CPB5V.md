@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CPB5V
 kind: problem
-title: "Let $R$ be a simple rng (a nonzero ring which is not assume to\u2026"
+title: Unique halves and centrality in a simple rng without zero-divisors or $2$-torsion
 classification:
   areas:
   - algebra

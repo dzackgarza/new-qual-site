@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-RG5FO
 kind: definition
-title: "Gram Matrix: Following Artin, let $\\inner{\\wait}{\\wait}$ be a bilinear form on a\u2026"
+title: Gram matrix of a bilinear form
 classification:
   areas:
   - algebra

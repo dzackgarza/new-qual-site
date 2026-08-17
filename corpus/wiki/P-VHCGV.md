@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VHCGV
 kind: problem
-title: "Let $A$ be an $n\\times n$ matrix with all entries equal to $0$ except\u2026"
+title: Jordan form of the $n\times n$ matrix with $2$'s on the superdiagonal, and a change-of-basis matrix
 classification:
   areas:
   - algebra

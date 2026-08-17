@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4MDI2
 kind: problem
-title: "If $F$ is some (not necessarily Galois) field extension over $K$\u2026"
+title: A degree-$6$ $S_3$-extension is a cubic splitting field, and Galois groups of joins and intersections
 classification:
   areas:
   - algebra

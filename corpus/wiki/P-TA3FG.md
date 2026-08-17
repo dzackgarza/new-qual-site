@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TA3FG
 kind: problem
-title: "Suppose $f$ is analytic on a region $\\Omega$ such that $\\DD \\subseteq \\Omega \\subseteq \\CC$ and $f(z) = \\sum_{n=0}^\\infty a_n z^n$ is a power\u2026"
+title: 'Power series of radius $1$: convergence on $S^1$ versus analyticity at every point of $S^1$'
 classification:
   areas:
   - complex-analysis

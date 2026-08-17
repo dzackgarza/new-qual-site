@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-2MV56W7X
 kind: exercise
-title: Show that the stabilizer of an element $G_x$ is a subgroup of $G$.
+title: The stabilizer of a point under a group action is a subgroup
 classification:
   areas:
   - algebra

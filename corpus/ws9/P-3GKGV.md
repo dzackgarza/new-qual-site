@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3GKGV
 kind: problem
-title: A ring is called left (resp. right) Artinian if every descending chain…
+title: Quotients of Artinian rings, Artinian domains are fields, and primes are maximal
 classification:
   areas:
   - prelim

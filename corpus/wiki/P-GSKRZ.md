@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GSKRZ
 kind: problem
-title: "Let $G$ be a group. An automorphism $\\phi: G \\rightarrow G$ is called\u2026"
+title: Inner automorphisms, and cycle-type-preserving automorphisms of $S_n$ are inner
 classification:
   areas:
   - algebra

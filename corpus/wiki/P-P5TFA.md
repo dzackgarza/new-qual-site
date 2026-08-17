@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P5TFA
 kind: problem
-title: "Let $f: [1, \\infty) \\to \\RR$ such that $f(1) = 1$ and"
+title: $\lim_{x\to\infty}f(x)\le 1+\frac\pi 4$ when $f(1)=1$ and $f'=1/(x^2+f^2)$
 classification:
   areas:
   - real-analysis

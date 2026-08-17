@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7ZIKP
 kind: problem
-title: "Give examples of maximal ideals in $K = R \\times R \\times R \\times \\cdots$, the product of\u2026"
+title: Maximal ideals in a countable product of copies of a commutative ring
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-COS2L
 kind: problem
-title: Let $p_1,\dots,p_n$ be distinct points in $\mathbb{C}$ and let $U$ be…
+title: Dimension and a basis of harmonic functions modulo real parts of analytic functions on $\mathbb{C}\setminus\{p_1,\dots,p_n\}$
 classification:
   areas:
   - real-analysis

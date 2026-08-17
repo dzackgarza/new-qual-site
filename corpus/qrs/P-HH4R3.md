@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HH4R3
 kind: problem
-title: "Let $\\gamma$ be a piecewise smooth simple closed curve with interior\u2026"
+title: Cauchy integral formula for a function holomorphic outside $\gamma$ with limit $A$ at infinity
 classification:
   areas:
   - complex-analysis

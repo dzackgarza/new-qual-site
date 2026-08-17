@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-27BNG
 kind: problem
-title: Suppose $K/F$ is a finite, normal, Galois extension.
+title: A finite normal Galois extension $K/F$
 classification:
   areas:
   - algebra

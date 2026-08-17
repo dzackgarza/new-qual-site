@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HHJEA
 kind: problem
-title: "Can you show that all groups of order $p^n$ for $p$ prime are solvable\u2026"
+title: Groups of order $p^n$ are solvable, and groups of order $p^r q^s$
 classification:
   areas:
   - algebra

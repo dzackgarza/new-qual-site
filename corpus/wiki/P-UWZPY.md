@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UWZPY
 kind: problem
-title: "If you have a representation of $H$, a subgroup of a group $G$, how ca\u2026"
+title: Induced representations of $G$ from a subgroup $H$
 classification:
   areas:
   - algebra

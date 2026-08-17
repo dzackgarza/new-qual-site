@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XW3UP
 kind: problem
-title: "What's the stabiliser of a point in the unit disk under the group of c\u2026"
+title: Stabilizer of a point in the unit disk under conformal automorphisms
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IT7OC
 kind: problem
-title: "A subgroup $H$ of a group $G$ that meets every conjugacy class is in f\u2026"
+title: A subgroup that meets every conjugacy class is the whole group
 classification:
   areas:
   - algebra

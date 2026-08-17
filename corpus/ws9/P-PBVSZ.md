@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PBVSZ
 kind: problem
-title: Let $A$ be a finite-dimensional algebra over a field $F$ equipped with…
+title: The element $\sum x_i y_i$ of an algebra with invariant form is well-defined and central
 classification:
   areas:
   - algebra

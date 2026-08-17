@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XRNHW
 kind: problem
-title: "Let $F \\subset \\mathbb{R}$ be closed, and define $\\delta_{F}(y):=\\inf _{x \\in F}|x-y|$ For $y \\notin F$, show that $\\int_{F}|x-y|^{-2} d x \\leq \\frac{2}{\\delta_F(y)}$ Let $F \\subset \\mathbb{R}$ be a\u2026"
+title: The bound $\int_F|x-y|^{-2}\,dx\leq 2/\delta_F(y)$, with $I(x)=\int\delta_F(y)/|x-y|^2\,dy$ infinite off $F$ and finite a.e. on $F$
 classification:
   areas:
   - real-analysis

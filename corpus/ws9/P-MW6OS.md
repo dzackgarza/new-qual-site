@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MW6OS
 kind: problem
-title: Let $\mathcal{H}$ be an infinite dimensional Hilbert space. Determine…
+title: Unit sequences in infinite-dimensional Hilbert space have weakly but not strongly convergent subsequences
 classification:
   areas:
   - real-analysis

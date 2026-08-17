@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OMOPR
 kind: problem
-title: "Prove that every continuous map $f : \\RP^2 \\to S^1$ is homotopic to a\u2026"
+title: Every continuous map $\RP^2\to S^1$ is homotopic to a constant
 classification:
   areas:
   - topology

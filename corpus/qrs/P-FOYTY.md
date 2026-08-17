@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FOYTY
 kind: problem
-title: "Let $f$ be a power series centered at the origin. Prove that $f$\u2026"
+title: A power series may be re-expanded about any point of its disk of convergence
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-M2NVE
 kind: problem
-title: "Prove that there does not exist a continuous map $f : S^2 \\to S^2$ fro\u2026"
+title: No continuous map $S^2\to S^2$ with $f(x)\perp x$
 classification:
   areas:
   - topology

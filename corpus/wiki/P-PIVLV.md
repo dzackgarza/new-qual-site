@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PIVLV
 kind: problem
-title: "Let $(X, \\mathcal{M}, \\mu)$ be a measure space and $0 < p < q< \\infty$\u2026"
+title: $L^q\subseteq L^p$ for $p<q$ implies no sets of arbitrarily large finite measure
 classification:
   areas:
   - real-analysis

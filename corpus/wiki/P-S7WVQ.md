@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S7WVQ
 kind: problem
-title: "Show that $S^2 \\cross \\RP^4 \\not\\homotopic S^4 \\cross \\RP^2$."
+title: $S^2\times\RP^4$ is not homotopy equivalent to $S^4\times\RP^2$
 classification:
   areas:
   - topology

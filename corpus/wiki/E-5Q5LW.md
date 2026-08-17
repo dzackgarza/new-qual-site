@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5Q5LW
 kind: exercise
-title: "Suppose $f$ is continuous and nonvanishing on $\\bar \\DD$, and\u2026"
+title: Nonvanishing holomorphic functions of modulus one on the circle are constant
 classification:
   areas:
   - complex-analysis

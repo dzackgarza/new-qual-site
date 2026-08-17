@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EH22O
 kind: problem
-title: Let $f(z) = \sum_{n=0}^\infty c_n z^n$ be analytic and one-to-one in
+title: Area of $f(\{|z|<r\})$ is $\pi\sum_{n=1}^\infty n|c_n|^2 r^{2n}$ for univalent $f(z)=\sum_{n=0}^\infty c_n z^n$
 classification:
   areas:
   - complex-analysis

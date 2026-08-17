@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3DGMZ
 kind: problem
-title: State the Sylow Theorems. Include information about the existence, ord…
+title: The Sylow theorems
 classification:
   areas:
   - prelim

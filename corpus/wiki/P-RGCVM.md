@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RGCVM
 kind: problem
-title: "Show that two $3\\times 3$ matrices over $\\CC$ are similar $\\iff$ their\u2026"
+title: Characteristic and minimal polynomials classify similarity of $3\times 3$ matrices over $\CC$, but not $4\times 4$
 classification:
   areas:
   - algebra

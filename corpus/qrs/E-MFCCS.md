@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MFCCS
 kind: exercise
-title: "Show that any disjoint intervals is countable."
+title: A pairwise disjoint family of intervals with nonempty interior in $\RR$ is countable
 classification:
   areas:
   - real-analysis

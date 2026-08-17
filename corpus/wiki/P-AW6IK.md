@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AW6IK
 kind: problem
-title: "Show by example that there exists a function $f(z)$ that is holomorphi\u2026"
+title: A function holomorphic on $0<|z|<1$ with $\int_{|z|=r}f=0$ for all $r<1$, but not holomorphic at $0$
 classification:
   areas:
   - complex-analysis

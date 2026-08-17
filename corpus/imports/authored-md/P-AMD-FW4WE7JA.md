@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-FW4WE7JA
 kind: problem
-title: 'Show that any non-surjective map $f: X \rightarrow S^n$ is homotopic…'
+title: Nonsurjective maps into $S^n$ are nullhomotopic
 classification:
   areas:
   - topology

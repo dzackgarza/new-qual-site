@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KHNIB
 kind: problem
-title: "Evaluate the integral $\\int_\\mathbb{R} {dx \\over 1 + x^4}$"
+title: $\int_{\RR}\frac{dx}{1+x^4}$ and the poles of $\frac{1}{1+z^4}$
 classification:
   areas:
   - complex-analysis

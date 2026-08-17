@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: L-C5DDK
 kind: lemma
-title: "Let $V$ be a vector space over $k$ an algebraically closed and $A \\in \\mathrm{End}(V)$."
+title: An endomorphism over an algebraically closed field has an eigenvector in every invariant subspace
 classification:
   areas:
   - algebra

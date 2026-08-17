@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LAFJW
 kind: problem
-title: "Compute $H_*$ of the complement of a knotted solid torus in $S^3$."
+title: Homology of the complement of a knotted solid torus in $S^3$
 classification:
   areas:
   - topology

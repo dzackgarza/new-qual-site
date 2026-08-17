@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SW2HY
 kind: problem
-title: "Let $n$ be a natural number. Show that"
+title: $\bigl(\frac12(-1+\sqrt{3}i)\bigr)^n+\bigl(\frac12(-1-\sqrt{3}i)\bigr)^n$ equals $2$ if $3\mid n$ and $-1$ otherwise
 classification:
   areas:
   - complex-analysis

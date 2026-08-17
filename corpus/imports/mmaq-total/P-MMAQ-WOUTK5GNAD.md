@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WOUTK5GNAD
 kind: problem
-title: If $f$ is a nonnegative measurable function on $[0, \pi]$ and…
+title: $\int_{\{f>\alpha\}}f^2\to 0$ as $\alpha\to\infty$ when $\int f^3<\infty$
 classification:
   areas:
   - real-analysis

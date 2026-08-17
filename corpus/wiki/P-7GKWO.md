@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7GKWO
 kind: problem
-title: "Suppose $F \\subseteq \\RR$ with $m(F^c) < \\infty$ and let \\( \\delta(x)\u2026"
+title: Continuity of $d(x,F)$ and finiteness of $\int\delta(y)/|x-y|^2\,dy$
 classification:
   areas:
   - real-analysis

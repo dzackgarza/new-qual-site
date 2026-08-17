@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-1IM1B
 kind: problem
-title: "If $A,B$ are (skew)-symmetric, then $A^t = \\pm A$ and $B^t = \\pm B$ r\u2026"
+title: The sum of (skew-)symmetric matrices is (skew-)symmetric
 classification:
   areas:
   - algebra

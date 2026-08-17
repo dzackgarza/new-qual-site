@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5FZWFKZKJ6
 kind: problem
-title: Let $G$ be a finite group and $\mathbb Z[G]$ the internal group algebra.
+title: Class sums form a $\mathbb{Z}$-basis of the center of $\mathbb{Z}[G]$, and $|C|\chi_\pi(C)/\dim V$ is an algebraic integer
 classification:
   areas:
   - algebra

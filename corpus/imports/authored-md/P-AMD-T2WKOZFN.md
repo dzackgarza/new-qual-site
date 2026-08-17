@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-T2WKOZFN
 kind: problem
-title: 'Let $\alpha: S^n \to S^n,~ \alpha(p) = -p$ be the antipodal map on…'
+title: Antipodal map on $S^n$ is homotopic to the identity for $n$ odd
 classification:
   areas:
   - topology

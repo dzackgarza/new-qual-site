@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-KJNCPPCB
 kind: exercise
-title: Show that $\rad{I}$ is the intersection of all prime ideals…
+title: The radical of an ideal is the intersection of the primes containing it
 classification:
   areas:
   - algebra

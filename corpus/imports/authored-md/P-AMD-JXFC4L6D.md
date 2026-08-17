@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-JXFC4L6D
 kind: problem
-title: Compute $H_*(\RP^2\cross \RP^3; \ZZ)$
+title: $H_*(\RP^2 \times \RP^3; \ZZ)$
 classification:
   areas:
   - topology

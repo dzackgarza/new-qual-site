@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WASE4
 kind: problem
-title: "Use Rouche's theorem to prove the Fundamental Theorem of\u2026"
+title: Rouché's theorem implies the Fundamental Theorem of Algebra
 classification:
   areas:
   - complex-analysis

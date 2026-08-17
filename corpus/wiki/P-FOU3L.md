@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FOU3L
 kind: problem
-title: "Let $R$ be a PID and $M$ be an $R\\dash$module. Let $p$ be a prime elem\u2026"
+title: Invertibility outside $\langle p\rangle$ and purity in $\langle p\rangle$-primary modules over a PID
 classification:
   areas:
   - algebra

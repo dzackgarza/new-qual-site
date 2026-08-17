@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5KAFLA57OE
 kind: problem
-title: Give an example of a quotient map in which the domain is Hausdorff,…
+title: A quotient of a Hausdorff space that is not Hausdorff
 classification:
   areas:
   - topology

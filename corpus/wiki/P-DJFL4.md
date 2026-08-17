@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DJFL4
 kind: problem
-title: "Since 0 is an eigenvalue, there exists an eigenvector $\\vector v$ suc\u2026"
+title: An endomorphism of $\RR^5$ with eigenvalue $0$ is neither injective nor surjective
 classification:
   areas:
   - algebra

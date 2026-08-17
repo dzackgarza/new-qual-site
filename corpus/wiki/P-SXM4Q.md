@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SXM4Q
 kind: problem
-title: "Let $s\\in G$, and state the definition of the centralizer of $C_G(s)$ of $s$ in $G$."
+title: The centralizer $C_G(s)$ is a subgroup in which $\langle s\rangle$ is normal
 classification:
   areas:
   - algebra

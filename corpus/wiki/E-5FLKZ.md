@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5FLKZ
 kind: exercise
-title: "Show that every second countable space is first countable."
+title: Second countable spaces are first countable
 classification:
   areas:
   - topology

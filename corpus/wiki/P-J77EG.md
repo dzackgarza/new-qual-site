@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J77EG
 kind: problem
-title: "Let $M$ be an $n \\times n$ matrix such that $M_{ij} = 1$ for all $i, j$, and consider the\u2026"
+title: Jordan form of the $n\times n$ all-ones matrix
 classification:
   areas:
   - algebra

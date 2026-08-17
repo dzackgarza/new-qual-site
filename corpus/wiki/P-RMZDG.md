@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RMZDG
 kind: problem
-title: "Use the Cauchy inequalities or the maximum modulus principle\u2026"
+title: Entire functions of polynomial growth, sector vanishing on the disc, products of distances on $S^1$, and constancy when the real part is bounded
 classification:
   areas:
   - complex-analysis

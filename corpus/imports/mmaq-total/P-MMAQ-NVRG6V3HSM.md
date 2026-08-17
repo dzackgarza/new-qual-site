@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-NVRG6V3HSM
 kind: problem
-title: Let $(X, \mathcal B, mu)$ be a measure space with $mu(X) = 1$ and…
+title: Borel–Cantelli lemmas
 classification:
   areas:
   - real-analysis

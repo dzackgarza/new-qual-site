@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TRSVD
 kind: problem
-title: Let $F$ be a field and $p(x)\in F[x]$ an irreducible polynomial.
+title: 'A root extension of an irreducible polynomial: existence, basis, and $\theta^{-1}$; irreducibility of $x^3+9x+6$ and the inverse of $1+\theta$'
 classification:
   areas:
   - algebra

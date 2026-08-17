@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FHQAB
 kind: problem
-title: "Show that if $f$ is holomorphic on $\\DD\\smz$ and $\\abs{f(z)} \\leq \\log\\qty{1\\over \\abs{z}}$, then $f\\equiv 0$."
+title: A holomorphic function on $\DD\setminus\{0\}$ with $|f(z)|\le\log(1/|z|)$ is identically zero
 classification:
   areas:
   - complex-analysis

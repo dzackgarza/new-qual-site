@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FVQWC
 kind: problem
-title: "What surface is represented by the $6\\dash$gon with edges identified a\u2026"
+title: The surface with polygonal symbol $xyzxy^{-1}z^{-1}$
 classification:
   areas:
   - topology

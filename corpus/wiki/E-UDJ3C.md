@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UDJ3C
 kind: exercise
-title: "Let $A \\subset X$ be a connected subspace."
+title: Sets between a connected subspace and its closure are connected
 classification:
   areas:
   - topology

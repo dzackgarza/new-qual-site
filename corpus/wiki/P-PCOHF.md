@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PCOHF
 kind: problem
-title: "Prove that every closed convex $K \\subset H$ a Hilbert space has a uni\u2026"
+title: Unique element of minimal norm in a closed convex subset of a Hilbert space
 classification:
   areas:
   - real-analysis

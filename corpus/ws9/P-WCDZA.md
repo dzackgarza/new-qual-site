@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WCDZA
 kind: problem
-title: "a. Prove the Riemann-Lebesgue Lemma: if $f \\in L^1(\\mathbb{R}^d)$, the…"
+title: The Riemann–Lebesgue lemma and the absence of an $L^1$ convolution identity
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BV7DD
 kind: problem
-title: "Let $p(z)$ be a polynomial, $R>0$ any positive number, and $m \\geq 1$ an integer.\u2026"
+title: Polynomials cannot uniformly approximate $z^{-m}$ on an annulus
 classification:
   areas:
   - complex-analysis

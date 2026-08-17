@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6PQRO
 kind: problem
-title: "Recall that the suspension of a topological space, denoted $SX$\u2026"
+title: A suspension is a union of two contractible subspaces, with $\pi_1(SX)=0$ and $H_n(X)\cong H_{n+1}(SX)$
 classification:
   areas:
   - topology

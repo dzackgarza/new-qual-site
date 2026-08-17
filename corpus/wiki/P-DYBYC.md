@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DYBYC
 kind: problem
-title: "Prove that a metric space $X$ is normal, i.e. if $A, B \\subset X$ are closed\u2026"
+title: Metric spaces are normal
 classification:
   areas:
   - topology

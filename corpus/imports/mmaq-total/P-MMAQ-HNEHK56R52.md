@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-HNEHK56R52
 kind: problem
-title: "Prove or disprove each of the following statements. If $f$ is\u2026"
+title: Improper nonnegative Riemann integrals in $L^1$, the Riemann–Lebesgue lemma, and continuous functions of unbounded variation
 classification:
   areas:
   - real-analysis

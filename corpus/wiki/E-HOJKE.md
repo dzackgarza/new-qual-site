@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HOJKE
 kind: exercise
-title: "Show that TFAE:"
+title: $A$ is a field iff $A$ is a simple ring iff every homomorphism from $A$ to a nonzero field is injective
 classification:
   areas:
   - algebra

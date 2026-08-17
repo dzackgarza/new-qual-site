@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RHDT6
 kind: problem
-title: "Let $I$ be an index set and $\\alpha: I \\to (0, \\infty)$. Show that $\\sum_{i \\in I} a(i):=\\sup _{\\substack{ J \\subset I \\\\ J \\text { finite }}} \\sum_{i \\in J} a(i)<\\infty \\implies I \\text{ is countable.}$"
+title: A summable family of positive terms has countable index set; $f(x)=\sum_{q\le x}a(q)$ is continuous precisely at irrationals
 classification:
   areas:
   - real-analysis

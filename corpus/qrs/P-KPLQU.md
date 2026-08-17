@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KPLQU
 kind: problem
-title: "State and prove Green's Theorem for rectangles. Use this to\u2026"
+title: Green's theorem for rectangles and Cauchy's theorem on a rectangle
 classification:
   areas:
   - complex-analysis

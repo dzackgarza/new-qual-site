@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-NEK7QHCS
 kind: problem
-title: Let $\theset{A_i}^n \in \mathbf{Ab}$ be finitely generated, show…
+title: Space with prescribed finitely generated homology groups
 classification:
   areas:
   - topology

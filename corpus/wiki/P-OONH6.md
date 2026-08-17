@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OONH6
 kind: problem
-title: "Find a conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the\u2026"
+title: Conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the upper half-plane
 classification:
   areas:
   - complex-analysis

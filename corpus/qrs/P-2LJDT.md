@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2LJDT
 kind: problem
-title: "Let $S = \\spanof_\\CC\\theset{\\chi_{(a, b)} \\suchthat a, b \\in \\RR}$ the complex linear span of characteristic functions of\u2026"
+title: The span of characteristic functions of open intervals is dense in $L^1(\mathbb{R})$
 classification:
   areas:
   - real-analysis

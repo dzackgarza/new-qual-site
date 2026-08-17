@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-V2VS5
 kind: exercise
-title: "Show that the complex zeros of $f(z) \\da \\sin(\\pi z)$ are exactly $\\ZZ$, and each is\u2026"
+title: Simple zeros of $\sin(\pi z)$ at the integers, and residues of $1/\sin(\pi z)$
 classification:
   areas:
   - complex-analysis

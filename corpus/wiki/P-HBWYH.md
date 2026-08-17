@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HBWYH
 kind: problem
-title: "Let $E$ be an extension field of $F$ and $\\alpha\\in E$ be algebraic of\u2026"
+title: $F(\alpha)=F(\alpha^2)$ when $\alpha$ has odd degree over $F$, and $\alpha^{2020}$ has odd degree
 classification:
   areas:
   - algebra

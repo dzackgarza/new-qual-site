@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CWG5L
 kind: problem
-title: "Let $f(z)$ be entire and assume values of $f(z)$ lie outside a"
+title: An entire function omitting a bounded open set is constant
 classification:
   areas:
   - complex-analysis

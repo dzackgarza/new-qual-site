@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-9PL8R
 kind: problem
-title: Suppose $r = sk$.
+title: $R/(k)\cong sA$ and $R/(s)\cong A[s]$ when $A=Ra$ is cyclic with annihilator $(r)$ and $r=sk$
 classification:
   areas:
   - algebra

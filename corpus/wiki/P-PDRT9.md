@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PDRT9
 kind: problem
-title: "Since proper subfields will correspond to intermediate extensions whi\u2026"
+title: Intermediate fields of a Galois extension with group $\ZZ_{42}$
 classification:
   areas:
   - algebra

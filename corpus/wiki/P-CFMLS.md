@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CFMLS
 kind: problem
-title: "Define $E:=\\left\\{x \\in \\mathbb{R}:\\left|x-\\frac{p}{q}\\right|<q^{-3} \\text { for infinitely many } p, q \\in \\mathbb{N}\\right\\}$ Prove that $m(E) = 0$."
+title: The set of reals with infinitely many rational approximations $|x-p/q|<q^{-3}$ has measure zero
 classification:
   areas:
   - real-analysis

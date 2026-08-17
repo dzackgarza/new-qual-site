@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BF8JM
 kind: problem
-title: "This is true. By the Galois correspondence, it suffices to show that \u2026"
+title: $\mathrm{Gal}(M/L)$ is normal in $\mathrm{Gal}(M/K)$
 classification:
   areas:
   - algebra

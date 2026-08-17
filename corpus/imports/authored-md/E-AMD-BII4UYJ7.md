@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-BII4UYJ7
 kind: exercise
-title: Show that every prime ideal is primary.
+title: Prime ideals are primary
 classification:
   areas:
   - algebra

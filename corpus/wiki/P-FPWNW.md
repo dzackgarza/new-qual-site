@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FPWNW
 kind: problem
-title: "a. Show that every group of order $p^2$ with $p$ prime is abelian."
+title: Groups of order $p^2$ are abelian; the Sylow theorems; groups of order $4225=5^2 13^2$ are abelian, with their isomorphism classes
 classification:
   areas:
   - algebra

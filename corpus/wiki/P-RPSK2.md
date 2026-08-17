@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RPSK2
 kind: problem
-title: "Parts We have $\\int_C F_1 dx + F_2 dy + \\cdots = \\int _ { C } \\vec { F } \\cdot d \\vec { r } = \\int _ { a } ^ { b } \\vec { F } ( \\vec { r } ( t ) ) \\cdot \\vec { r } ^ { \\prime } ( t ) d t$ and we can paramaterize a line\u2026"
+title: Line integral of $[2x+y,y]$ along the segment from $(3,5)$ to $(2,1)$, and non-conservativeness
 classification:
   areas:
   - prelim

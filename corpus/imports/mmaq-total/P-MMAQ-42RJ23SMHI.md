@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-42RJ23SMHI
 kind: problem
-title: Prove that a group of order $351=3^3\cdot 13$ cannot be simple.
+title: Groups of order $351=3^3\cdot 13$ are not simple; groups of order $33$ are cyclic
 classification:
   areas:
   - algebra

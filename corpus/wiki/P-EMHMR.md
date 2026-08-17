@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EMHMR
 kind: problem
-title: "Prove that if $f$ has two Laurent series expansions,"
+title: Uniqueness of Laurent series coefficients
 classification:
   areas:
   - complex-analysis

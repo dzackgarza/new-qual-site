@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CWRU6
 kind: problem
-title: "Let $f: \\RR \\to \\RR$ and suppose"
+title: $f(x)\ge\limsup_{y\to x}f(y)$ implies $f$ is Borel measurable
 classification:
   areas:
   - real-analysis

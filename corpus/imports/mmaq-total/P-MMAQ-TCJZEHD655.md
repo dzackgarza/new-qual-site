@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-TCJZEHD655
 kind: problem
-title: If $\limsup_{n\rightarrow \infty} a_n\leq l$, show that…
+title: If $\limsup a_n\le l$, then $\limsup\frac1n\sum_{i=1}^n a_i\le l$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EMIQC
 kind: problem
-title: "Let $R$ be a PID and $M$ a finitely generated $R\\dash$module."
+title: A filtration with cyclic quotients of a finitely generated module over a PID, and whether its length is unique
 classification:
   areas:
   - algebra

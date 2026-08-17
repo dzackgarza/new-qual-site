@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JNFJW
 kind: problem
-title: Let $\Omega$ be an open convex region in the complex plane. Assume $f$…
+title: Injectivity of holomorphic functions with $\operatorname{Re}(f')>0$, and the need for convexity
 classification:
   areas:
   - real-analysis

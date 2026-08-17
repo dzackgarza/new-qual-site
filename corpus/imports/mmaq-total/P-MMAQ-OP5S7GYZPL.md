@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-OP5S7GYZPL
 kind: problem
-title: Let $f$ be a non-constant analytic function on $\mathbb D$ with
+title: $\frac{|f(0)|-|z|}{1+|f(0)||z|}\leq|f(z)|\leq\frac{|f(0)|+|z|}{1-|f(0)||z|}$ for holomorphic $f:\mathbb{D}\to\mathbb{D}$
 classification:
   areas:
   - complex-analysis

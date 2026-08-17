@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BPEP3
 kind: exercise
-title: "Find all entire functions with have poles at $\\infty$. If $f$ is\u2026"
+title: Entire functions with a pole at infinity are polynomials
 classification:
   areas:
   - complex-analysis

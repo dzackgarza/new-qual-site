@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMNQD
 kind: problem
-title: Let $F \subset K \subset L$ be finite degree field extensions. For each of...
+title: Which of $K/F$, $L/K$, $L/F$ being Galois imply the others
 classification:
   areas:
   - algebra

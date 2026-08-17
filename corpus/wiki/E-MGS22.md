@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MGS22
 kind: exercise
-title: "Let $f : X \\to Y$ be a continuous function, with $X$ compact."
+title: The continuous image of a compact space is compact
 classification:
   areas:
   - topology

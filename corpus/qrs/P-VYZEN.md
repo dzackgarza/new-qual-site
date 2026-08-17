@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VYZEN
 kind: problem
-title: "Let $F$ be a finite field with $q$ elements. Let $n$ be a positive\u2026"
+title: $[F_q(\omega):F_q]$ is the multiplicative order of $q$ modulo $n$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FT-M5BHD
 kind: theorem
-title: 'Show that a continuous bijection from a compact space to a Hausdorff space is a homeomorphism.'
+title: A continuous bijection from a compact space to a Hausdorff space is a homeomorphism
 classification:
   areas:
   - topology

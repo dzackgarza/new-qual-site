@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRNXH
 kind: problem
-title: "Suppose $f$ is analytic on $\\DD^\\circ$. Determine with proof which of the\u2026"
+title: Which interpolations $f(1/n)$ are possible for a holomorphic function on the disk
 classification:
   areas:
   - complex-analysis

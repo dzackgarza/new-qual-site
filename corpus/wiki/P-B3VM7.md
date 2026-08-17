@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B3VM7
 kind: problem
-title: "State the Lefschetz Fixed Point Theorem for a finite\u2026"
+title: Lefschetz fixed-point theorem for finite simplicial complexes, and the case $X=S^n$
 classification:
   areas:
   - topology

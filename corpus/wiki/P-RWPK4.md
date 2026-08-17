@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RWPK4
 kind: problem
-title: "Let $p$ be a prime number. Let $A$ be a $p \\times p$ matrix over a field $F$ with\u2026"
+title: Jordan form over $\QQ$ and $\FF_p$ of the $p\times p$ matrix with zeros on the diagonal and ones elsewhere
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SAEXG
 kind: problem
-title: "How many path-connected 2-fold covering spaces does $S^1 \\vee \\RP 2$ have?\u2026"
+title: Path-connected $2$-fold covering spaces of $S^1\vee\RP^2$
 classification:
   areas:
   - topology

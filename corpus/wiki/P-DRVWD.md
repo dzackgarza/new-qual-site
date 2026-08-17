@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DRVWD
 kind: problem
-title: "Denote the points of $S^1 \\times I$ by $(z, t)$ where $z$ is a unit co\u2026"
+title: Cell structure, $\pi_1$, and $H_1$ of a quotient of $S^1\times I$
 classification:
   areas:
   - topology

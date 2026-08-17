@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-2TZAI
 kind: definition
-title: "Topology: Using open sets: closed under arbitrary unions and finite\u2026"
+title: Topology via open sets and closed sets
 classification:
   areas:
   - topology

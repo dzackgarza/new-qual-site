@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VSGSG
 kind: problem
-title: "Let $p,q$ be distinct primes, and let $k$ denote the"
+title: No simple group of order $pq^k$ when $k$ is least with $p\mid q^k-1$
 classification:
   areas:
   - algebra

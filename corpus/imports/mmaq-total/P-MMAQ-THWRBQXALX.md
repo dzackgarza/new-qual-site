@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-THWRBQXALX
 kind: problem
-title: 'a. Define what it means for a topological space to be:'
+title: Connected and locally connected spaces, and a connected space that is not locally connected
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-HS6DE
 kind: definition
-title: "Diameter: For a subset $A$ of a metric space $(X, d)$, the diameter of $A$ is\u2026"
+title: Diameter of a subset of a metric space
 classification:
   areas:
   - topology

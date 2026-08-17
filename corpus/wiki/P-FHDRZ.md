@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FHDRZ
 kind: problem
-title: "Let $f$ be a degree 4 polynomial with integer coefficients."
+title: The smallest finite field in which a degree $4$ polynomial with integer coefficients necessarily has four roots
 classification:
   areas:
   - algebra

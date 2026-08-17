@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-YJJSY
 kind: proposition
-title: "\\ts{f_n} \\subseteq L^1 \\text{ and } \\sum_n \\norm{f_n}_{L^1} < \\infty \\\u2026"
+title: $L^1$-summable series converge almost everywhere and in $L^1$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NYOLD
 kind: problem
-title: "Let $f\\in L^1(\\RR)$ and let \\( \\mathcal{U}\\da \\ts{(x, y) \\in \\RR^2 \\st y > 0} \\) denote the upper half plane."
+title: $\sup_{y>0}|f*P_y|\le C\,Hf$ and $f*P_y\to f$ a.e. for the Poisson kernel
 classification:
   areas:
   - real-analysis

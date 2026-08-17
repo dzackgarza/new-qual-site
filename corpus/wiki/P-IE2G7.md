@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IE2G7
 kind: problem
-title: "A topological space is totally disconnected if its only\u2026"
+title: Discrete spaces are totally disconnected, but not conversely
 classification:
   areas:
   - topology

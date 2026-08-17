@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RI6SK
 kind: problem
-title: "Let $O_P(G)$ be the intersection of all Sylow $p\\dash$subgroups of $G$. Show\u2026"
+title: $O_p(G)$ is the maximal normal $p$-subgroup of $G$
 classification:
   areas:
   - algebra

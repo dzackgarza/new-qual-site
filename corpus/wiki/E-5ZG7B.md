@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5ZG7B
 kind: exercise
-title: "Show that $\\RR/\\QQ$ has the indiscrete topology."
+title: $\mathbb{R}/\mathbb{Q}$ has the indiscrete topology
 classification:
   areas:
   - topology

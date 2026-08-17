@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-45CLI
 kind: problem
-title: "Let $G$ be a finite group and $\\pi: G\\to \\sym(G)$ the Cayley representation. Prove\u2026"
+title: Left translation is odd iff its order is even and $[G:\langle x\rangle]$ is odd
 classification:
   areas:
   - algebra

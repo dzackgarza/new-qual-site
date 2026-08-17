@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z74QX
 kind: problem
-title: "Let $X$ denote the quotient space formed from the sphere $S^2$ by iden\u2026"
+title: Fundamental group and homology of $S^2$ with two distinct points identified
 classification:
   areas:
   - topology

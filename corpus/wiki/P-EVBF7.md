@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EVBF7
 kind: problem
-title: "Let $F \\subset K \\subset L$ be finite degree field extensions."
+title: Galois-ness of $K/F$ and of $L/K$ when $L/F$ is Galois, and of $L/F$ when $K/F$ and $L/K$ are Galois
 classification:
   areas:
   - algebra

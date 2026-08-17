@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3PTP5
 kind: problem
-title: "Prove that a commutative ring with unit is a field if and only if its\u2026"
+title: A commutative unital ring is a field iff its only ideals are $\{0\}$ and $R$
 classification:
   areas:
   - algebra

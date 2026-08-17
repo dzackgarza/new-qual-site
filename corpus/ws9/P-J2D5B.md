@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J2D5B
 kind: problem
-title: The dihedral group $G = \langle a,b \mid a^3=b^2=1, bab=a^{-1}\rangle$…
+title: Invariants of a dihedral action on $\mathbb{C}[x,y]$
 classification:
   areas:
   - algebra

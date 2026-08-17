@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-TLP6GSQI
 kind: exercise
-title: Show that a finitely generated module over a Noetherian local ring…
+title: Finitely generated modules over a Noetherian local ring are flat iff free
 classification:
   areas:
   - algebra

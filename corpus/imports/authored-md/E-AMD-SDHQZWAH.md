@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-SDHQZWAH
 kind: exercise
-title: Show that the centralizer $G_G(H)$ of a subgroup is again a subgroup.
+title: The centralizer of a subgroup is a subgroup
 classification:
   areas:
   - algebra

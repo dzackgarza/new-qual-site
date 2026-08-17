@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A7YBX
 kind: problem
-title: "We want to show that every simple $R\\dash$module $M$ is cyclic, i.e. \u2026"
+title: Every simple $R$-module is cyclic
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4QQSW
 kind: problem
-title: "Give an example of a PID with a unique prime ideal."
+title: A PID with a unique prime ideal
 classification:
   areas:
   - algebra

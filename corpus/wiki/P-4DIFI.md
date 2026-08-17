@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4DIFI
 kind: problem
-title: "Prove that the Euler characteristic of a compact surface with boundary\u2026"
+title: Euler characteristic of a compact surface with $k$ boundary components is at most $2-k$
 classification:
   areas:
   - topology

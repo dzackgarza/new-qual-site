@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6EVID
 kind: problem
-title: 'Let $p : \widetilde{X} \to X$ be a covering map, with $X$ and $\widetilde{X}$ locally path-connected…'
+title: Deck transformations sending $y_0$ to $y_1$ iff $p_*(\pi_1(\widetilde{X},y_0))=p_*(\pi_1(\widetilde{X},y_1))$
 classification:
   areas:
   - topology

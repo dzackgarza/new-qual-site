@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LLCQX
 kind: problem
-title: "Let $X$ be the topological space formed by filling in two\u2026"
+title: $\pi_1$ and homology of a torus with two circles filled by disks
 classification:
   areas:
   - topology

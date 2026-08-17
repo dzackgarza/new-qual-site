@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5YZPH
 kind: problem
-title: "Let $G$ be a finite group, $H$ a $p\\dash$subgroup, and $P$ a sylow $p\\dash$subgroup\u2026"
+title: A $p$-subgroup acting on the cosets of a Sylow $p$-subgroup has a length-one orbit iff it lies in a conjugate
 classification:
   areas:
   - algebra

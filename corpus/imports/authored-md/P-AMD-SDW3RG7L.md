@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-SDW3RG7L
 kind: problem
-title: (1) Assume the infinite series
+title: Parseval's identity for power series and Liouville's theorem
 classification:
   areas:
   - complex-analysis

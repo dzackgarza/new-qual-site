@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B7CIT
 kind: problem
-title: "Let $f$ and $g$ be non-zero analytic functions on a region $\\Omega$.\u2026"
+title: Analytic functions of equal modulus differ by a unimodular constant
 classification:
   areas:
   - complex-analysis

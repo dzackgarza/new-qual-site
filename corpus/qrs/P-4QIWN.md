@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4QIWN
 kind: problem
-title: "Let $f(z)$ be a non-constant analytic function in $|z|>0$ such that"
+title: An isolated singularity at $0$ is essential if a nonconstant analytic $f$ on $|z|>0$ has zeros accumulating at $0$
 classification:
   areas:
   - complex-analysis

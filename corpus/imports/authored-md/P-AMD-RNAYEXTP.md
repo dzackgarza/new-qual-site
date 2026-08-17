@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-RNAYEXTP
 kind: problem
-title: 'For each of the following $f: S^1 \rightarrow S^1$, identify the…'
+title: Induced maps on $\pi_1(S^1)$ for $z^n$, antipodal, and $e^{2\pi i\sin\theta}$
 classification:
   areas:
   - topology

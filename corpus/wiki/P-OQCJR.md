@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OQCJR
 kind: problem
-title: "We want to show that $A\\vector x = \\vector 0$ has a nontrivial soluti\u2026"
+title: $Ax=0$ has a nontrivial solution iff $\rank(A)<m$
 classification:
   areas:
   - algebra

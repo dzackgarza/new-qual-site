@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MSIER
 kind: problem
-title: Let $(\Omega,\mathcal{A},\mu)$ be a finite measure space and $(f_n)$ b…
+title: Pointwise convergence versus convergence in measure on a finite measure space
 classification:
   areas:
   - real-analysis

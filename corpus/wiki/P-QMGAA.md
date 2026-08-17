@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QMGAA
 kind: problem
-title: "How many monic irreducible polynomials over $\\FF_p$ of prime degree\u2026"
+title: Number of monic irreducibles of prime degree $\ell$ over $\FF_p$
 classification:
   areas:
   - algebra

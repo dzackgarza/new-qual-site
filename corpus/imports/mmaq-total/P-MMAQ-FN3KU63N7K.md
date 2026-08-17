@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FN3KU63N7K
 kind: problem
-title: Let $R$ be a commutative algebra over $\mathbb C$. A derivation of…
+title: Derivations of $\CC[x]$ and simplicity of $\CC[x]$ as a Weyl module
 classification:
   areas:
   - algebra

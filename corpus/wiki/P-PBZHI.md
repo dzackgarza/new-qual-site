@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PBZHI
 kind: problem
-title: "Let $G$ be a finite group. Show that there exists a field\u2026"
+title: Every finite group is a Galois group, and intermediate fields of degrees $3$ and $2$ in a Galois extension of degree $12$
 classification:
   areas:
   - algebra

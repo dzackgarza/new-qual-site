@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6ASCF
 kind: problem
-title: "Let $M \\in M_5(R)$ be a $5\\times 5$ square matrix with"
+title: 'A real $5\times 5$ matrix with eigenvalues $0$, $1+i$, and $1+2i$: injectivity, characteristic and minimal polynomials, and fixed points'
 classification:
   areas:
   - algebra

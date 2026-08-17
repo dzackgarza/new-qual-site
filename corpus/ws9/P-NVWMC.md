@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NVWMC
 kind: problem
-title: a) Let $\gamma$ be a path in the plane $\mathbb{R}^2$. Define what is…
+title: Line integral of $2xy\,dx+(x^2+y^2)\,dy$ from $(1,0)$ to $(0,1)$
 classification:
   areas:
   - prelim

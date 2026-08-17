@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TX3CN
 kind: problem
-title: "Let $G$ be a group containing a subgroup $H$ not equal to $G$ of\u2026"
+title: A finite-index subgroup contains a finite-index normal subgroup contained in every conjugate
 classification:
   areas:
   - algebra

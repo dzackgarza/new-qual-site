@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: FF-YXTQY
 kind: fact
-title: 'Give an example of a set that is not nowhere dense.'
+title: $\{1/n\}$ and $\ZZ$ are nowhere dense; $\QQ$ is not
 classification:
   areas:
   - real-analysis

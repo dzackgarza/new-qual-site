@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-DAZEFKNWHG
 kind: problem
-title: Let $\phi\in L^\infty(\RR)$. Show that the following limit exists…
+title: $\lim_n\bigl(\int_{\RR}\frac{|\phi|^n}{1+x^2}\,dx\bigr)^{1/n}=\|\phi\|_\infty$
 classification:
   areas:
   - real-analysis

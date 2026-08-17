@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MSLD5
 kind: problem
-title: a. Suppose that for each positive integer $m$, we have a set $S_m$ of…
+title: Negation of a mixed-quantifier statement and a flawed inductive characterization
 classification:
   areas:
   - prelim

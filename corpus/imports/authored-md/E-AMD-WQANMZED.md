@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-WQANMZED
 kind: exercise
-title: Show that if $G \actson X$ is a group action, then the stabilizer…
+title: Stabilizers of group actions are subgroups
 classification:
   areas:
   - algebra

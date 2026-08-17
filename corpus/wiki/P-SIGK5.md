@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SIGK5
 kind: problem
-title: "Let $T$ be a $5\\times 5$ complex matrix with characteristic polynomial\u2026"
+title: Jordan forms of a $5\times 5$ matrix with characteristic polynomial $(x-3)^5$ and minimal polynomial $(x-3)^2$
 classification:
   areas:
   - algebra

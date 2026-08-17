@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JH5RI
 kind: problem
-title: "Give an example of a homotopy class of maps of $S^1 \\lor S^1$ each mem\u2026"
+title: Homotopy classes of self-maps of $S^1\vee S^1$ with and without fixed points
 classification:
   areas:
   - topology

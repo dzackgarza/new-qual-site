@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WO76I
 kind: problem
-title: Let and Show that $N$ is a $\ZZ\dash$submodule of $M$ . Find vectors...
+title: Invariant factors of an explicit pair of subgroups of $\ZZ^4$
 classification:
   areas:
   - algebra

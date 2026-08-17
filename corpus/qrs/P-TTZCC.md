@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TTZCC
 kind: problem
-title: "The question provides some insight into Cauchy's theorem.\u2026"
+title: Integrals of $z^n$ and of $\frac{1}{(z-a)(z-b)}$ on circles, without Cauchy's theorem
 classification:
   areas:
   - complex-analysis

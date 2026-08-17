@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VUVYD
 kind: problem
-title: "Let $f = u + iv$ be an entire function such that $\\Re(f(x+iy))$ is pol\u2026"
+title: An entire function with polynomial real part is a polynomial
 classification:
   areas:
   - complex-analysis

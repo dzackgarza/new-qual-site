@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IV4XE
 kind: problem
-title: "Let $\\xi\\in \\RR$, evaluate"
+title: $\int_{\RR}\frac{e^{i\xi x}}{\cosh x}\,dx$ for $\xi\in\RR$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JMXZA
 kind: problem
-title: Negate the following statements in a "non-cheap" way – especially, avo…
+title: Non-cheap negations of a quantified inequality and of continuity
 classification:
   areas:
   - prelim

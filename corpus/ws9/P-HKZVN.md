@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HKZVN
 kind: problem
-title: "Fix a measurable function $f : \\mathbb{R}^2 \\to \\mathbb{R}$ and, for e…"
+title: A measurable $f$ with integrable slices but unequal iterated integrals; Fubini and Tonelli
 classification:
   areas:
   - real-analysis

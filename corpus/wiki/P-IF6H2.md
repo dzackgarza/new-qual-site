@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IF6H2
 kind: problem
-title: "Compute the following integrals:"
+title: $\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx$ for $0<a<n$ and $\int_0^\infty\frac{\log x}{(1+x^2)^2}\,dx$
 classification:
   areas:
   - complex-analysis

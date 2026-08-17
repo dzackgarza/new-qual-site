@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T7W8G
 kind: problem
-title: "Suppose every element in $F$ admits a $p$th root in $F$, and suppose \u2026"
+title: Irreducible polynomials over a field in which every element has a $p$th root are separable
 classification:
   areas:
   - algebra

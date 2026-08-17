@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HWAMG
 kind: problem
-title: (a) Let $f$ be a real valued function on the unit interval $[0,1]$. Pr…
+title: The discontinuity set of a real function is $F_\sigma$; no function is continuous exactly on $\mathbb{Q}$
 classification:
   areas:
   - real-analysis

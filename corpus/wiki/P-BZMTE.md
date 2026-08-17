@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BZMTE
 kind: problem
-title: "To see that $\\phi(n)$ is even for all $n>2$, we can take a prime fact\u2026"
+title: $\phi(n)$ is even for $n>2$
 classification:
   areas:
   - algebra

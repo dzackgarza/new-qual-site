@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZWJ7K
 kind: problem
-title: 'a. Let $f: \RR \to \RR$.'
+title: Lower semicontinuity equivalent to $\{f>a\}$ open, and the supremum of an arbitrary family of lower semicontinuous functions is Borel measurable
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-X7EHF
 kind: problem
-title: Let $R$ be a commutative ring with $1\neq 0$.
+title: The nilradical is an ideal contained in every prime, primes avoiding powers of a non-nilpotent, and the nilradical is the intersection of all primes
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-OYTEKWVGZW
 kind: problem
-title: Let $\theset{X_\alpha \mid \alpha \in A}$ be a family of connected…
+title: A union of connected sets sharing a point is connected
 classification:
   areas:
   - topology

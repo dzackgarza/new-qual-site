@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IKJXT
 kind: problem
-title: "Let $f (x)$ be an irreducible polynomial of degree 4 in $\\QQ[x]$ whos\u2026"
+title: $\QQ[\theta]$ for an $S_4$-quartic has no intermediate fields, unlike Galois extensions of degree $4$
 classification:
   areas:
   - algebra

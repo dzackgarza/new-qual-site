@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-OBU6T
 kind: problem
-title: Let $f(z)$ be an analytic function on
+title: A bijective analytic map on $\mathbb{C}\setminus\{z_0\}$, bounded off a neighborhood of $z_0$, is a Möbius transformation $\frac{az+b}{cz+d}$ with $c\neq 0$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MCG5C
 kind: problem
-title: "Let $X$ be a CW complex and let $\\pi : Y \\to X$ be a covering space. Show that\u2026"
+title: Compactness and Euler characteristic of covering spaces, and coverings of even-dimensional $\RP^N$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2VQDC
 kind: problem
-title: "Prove Liouville's theorem: suppose $f:\\CC\\to\\CC$ is entire and bounded.\u2026"
+title: Liouville's theorem
 classification:
   areas:
   - complex-analysis

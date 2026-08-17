@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GRL4N
 kind: problem
-title: "The standard computation of $\\det(xI - A) = 0$ shows that $\\chi_A(x) = \\det(xI - A) = (x-1)^2 (x+1)^2$, and so the\u2026"
+title: Jordan and rational canonical forms for $\chi_A=(x-1)^2(x+1)^2$ and $p_A=(x-1)(x+1)^2$
 classification:
   areas:
   - algebra

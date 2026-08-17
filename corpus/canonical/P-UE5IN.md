@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UE5IN
 kind: problem
-title: "Compute the following limit and justify your calculations: $\\lim_{n \\rightarrow \\infty} \\int_{1}^{n} \\frac{d x}{\\left(1+\\frac{x}{n}\\right)^{n} \\sqrt[n]{x}}$"
+title: $\lim_{n\to\infty}\int_1^n(1+x/n)^{-n}x^{-1/n}\,dx=1/e$
 classification:
   areas:
   - real-analysis

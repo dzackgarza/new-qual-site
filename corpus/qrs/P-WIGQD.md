@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WIGQD
 kind: problem
-title: "Let $G$ be a finite group and $p$ a prime number such that there\u2026"
+title: A nontrivial normal $p$-subgroup lies in every Sylow $p$-subgroup, and $G$ has an abelian normal $p$-subgroup
 classification:
   areas:
   - algebra

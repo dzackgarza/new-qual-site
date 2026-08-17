@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XAHHJ
 kind: exercise
-title: "Let $p \\in \\mathbb{Z}$ be a prime number."
+title: Galois group of $x^p-2$ over $\QQ$
 classification:
   areas:
   - algebra

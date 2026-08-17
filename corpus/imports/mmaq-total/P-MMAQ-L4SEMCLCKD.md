@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-L4SEMCLCKD
 kind: problem
-title: "How many isomorphism classes are there of groups of order\u2026"
+title: Isomorphism classes of groups of order $45$
 classification:
   areas:
   - algebra

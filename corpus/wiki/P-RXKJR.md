@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RXKJR
 kind: problem
-title: "Let $T: V\\to V$ be a linear map from a 5-dimensional $\\CC\\dash$vector\u2026"
+title: Jordan forms of a $5$-dimensional operator annihilated by $(x+1)^2$
 classification:
   areas:
   - algebra

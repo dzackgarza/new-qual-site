@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SDQTV
 kind: problem
-title: "Give the definitions of covering space and deck\u2026"
+title: Covering spaces and deck transformations of the Klein bottle, Möbius band, and $\RP^2\times S^1$
 classification:
   areas:
   - topology

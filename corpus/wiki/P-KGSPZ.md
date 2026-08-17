@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KGSPZ
 kind: problem
-title: "Let $(X, \\mathcal M, \\mu)$ be a measure space and suppose $f$ is a mea\u2026"
+title: $\lim_n\int f^n$ is $\infty$ or $\mu(f^{-1}(1))$
 classification:
   areas:
   - real-analysis

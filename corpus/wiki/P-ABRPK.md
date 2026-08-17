@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ABRPK
 kind: problem
-title: "Suppose $f:\\DD\\to\\DD$ is analytic and admits a continuous extension $\\tilde f: \\bar \\DD \\to \\bar \\DD$ such\u2026"
+title: Self-maps of $\DD$ unimodular on the circle are finite Blaschke products
 classification:
   areas:
   - complex-analysis

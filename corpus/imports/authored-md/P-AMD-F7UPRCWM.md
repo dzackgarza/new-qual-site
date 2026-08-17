@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-F7UPRCWM
 kind: problem
-title: Show that $S^2 \not\cong S^3$.
+title: $S^2$ is not homeomorphic to $S^3$
 classification:
   areas:
   - topology

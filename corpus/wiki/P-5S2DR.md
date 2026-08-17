@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5S2DR
 kind: problem
-title: "Show that $\\alpha z e^z = 1$ where $\\abs{\\alpha} > e$ has exactly one\u2026"
+title: Unique solution of $\alpha ze^z=1$ in the unit disc when $|\alpha|>e$
 classification:
   areas:
   - complex-analysis

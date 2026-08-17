@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HIYWH
 kind: problem
-title: "Show that if $K/F$ is the splitting field of a separable\u2026"
+title: The splitting field of a separable polynomial is Galois
 classification:
   areas:
   - algebra

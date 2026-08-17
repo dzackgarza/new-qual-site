@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PMBN2
 kind: problem
-title: "Let $L$ be the union of the $z$-axis and the unit circle in the $xy\\dash$\u2026"
+title: Fundamental group of $\RR^3$ minus the $z$-axis and the unit circle in the $xy$-plane
 classification:
   areas:
   - topology

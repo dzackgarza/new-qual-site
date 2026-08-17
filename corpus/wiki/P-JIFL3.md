@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JIFL3
 kind: problem
-title: "Let $X$ be the space obtained as the quotient of a disjoint union of a\u2026"
+title: Homology of $S^2$ glued to a torus along an equatorial circle
 classification:
   areas:
   - topology

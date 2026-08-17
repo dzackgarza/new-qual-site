@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TZJQI
 kind: problem
-title: "Show that $E$ is measurable iff $E$ is regular."
+title: $E$ is measurable if and only if $E$ is regular
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SFDLG
 kind: problem
-title: "Show that in polar coordinates, the Cauchy-Riemann equations\u2026"
+title: Cauchy-Riemann equations in polar coordinates and the holomorphicity and discontinuity of $\Log z$
 classification:
   areas:
   - complex-analysis

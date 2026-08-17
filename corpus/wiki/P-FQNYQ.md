@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FQNYQ
 kind: problem
-title: "Let $X$ be a space obtained by attaching two 2-cells to the\u2026"
+title: Embedding, fundamental group, and homology of a torus with two $2$-cells attached along distinct meridians
 classification:
   areas:
   - topology

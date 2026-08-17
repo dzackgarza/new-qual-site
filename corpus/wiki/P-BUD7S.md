@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BUD7S
 kind: problem
-title: "Suppose $A, B \\subseteq \\RR^n$ are disjoint and compact. Prove that there exist $a\\in A, b\\in B$\u2026"
+title: Distance between disjoint compact sets in $\RR^n$ is attained
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LIA5G
 kind: problem
-title: "Suppose that $U$ is a bounded, open and simply connected domain\u2026"
+title: Maximum modulus principle and zeros when $|f|$ is constant on $\partial U$
 classification:
   areas:
   - complex-analysis

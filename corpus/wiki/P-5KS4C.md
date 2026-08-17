@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5KS4C
 kind: problem
-title: "By a theorem in class, this would force $\\Gal(E/K)$ to be solvable, w\u2026"
+title: Solvability of $\operatorname{Gal}(E/K)$ would imply solvability of $S_n$ for $n\ge 5$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MFVEZ
 kind: problem
-title: Consider the line integral $\int_C 2x\,dx + x^2y\,dy$, where $C$ is th…
+title: Line integral of $2x\,dx+x^2y\,dy$ on the unit square
 classification:
   areas:
   - prelim

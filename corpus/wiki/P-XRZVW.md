@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XRZVW
 kind: problem
-title: "$\\displaystyle \\int \\frac {1}{\\sqrt {x^2 + 25}} ~dx = \\ln (\\frac {x}{5} + \\sec (\\tan ^ {-1} (\\frac {x}{5}))) = \\color {blue} {\\ln(x + \\sqrt {x^2+25})}$ Solution: $\\tan (u) = \\frac {1}{5} x$\u2026"
+title: Antiderivatives of $\frac{1}{\sqrt{x^2+25}}$ and $\frac{1}{(1+x^2)^{3/2}}$
 classification:
   areas:
   - prelim

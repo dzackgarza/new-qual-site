@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-HX5MIXX5MT
 kind: problem
-title: a. Show that any compact connected surface with nonempty boundary is…
+title: Compact surfaces with boundary are homotopy equivalent to a wedge of circles
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-KRMOU3CI
 kind: exercise
-title: Show that every group of order $pqr$ with $p<q<r$ primes contains a…
+title: Groups of order $pqr$ have a normal Sylow subgroup
 classification:
   areas:
   - algebra

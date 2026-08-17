@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-J5JVJ
 kind: problem
-title: "Show that $\\int_{0}^{1} \\log (\\sin \\pi x) d x=-\\log 2$"
+title: $\int_0^1\log(\sin\pi x)\,dx=-\log 2$
 classification:
   areas:
   - complex-analysis

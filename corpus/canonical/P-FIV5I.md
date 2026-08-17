@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FIV5I
 kind: problem
-title: Let Show that this sequence converges pointwise and find its limit. Is...
+title: Pointwise convergence of $\frac{x}{1+x^n}$ and $\lim\int_0^\infty\frac{x}{1+x^n}\,dx$
 classification:
   areas:
   - real-analysis

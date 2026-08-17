@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K5GH3
 kind: problem
-title: Let $z=f(x,y)$ be a smooth surface. Show that the gradient is perpendi…
+title: The gradient is perpendicular to level curves
 classification:
   areas:
   - prelim

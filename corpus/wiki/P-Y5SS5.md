@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y5SS5
 kind: problem
-title: "Prove that if $D$ is a simply connected domain and $f(z)$ is holomorph\u2026"
+title: A nowhere-vanishing holomorphic function on a simply connected domain is of the form $e^g$
 classification:
   areas:
   - complex-analysis

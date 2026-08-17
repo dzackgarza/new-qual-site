@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-URS24
 kind: problem
-title: "Define an equivalence relation $\\sim$ on $\\RR$ by $x \\sim y$ if and on\u2026"
+title: Open subsets of the quotient space $\RR/\QQ$
 classification:
   areas:
   - topology

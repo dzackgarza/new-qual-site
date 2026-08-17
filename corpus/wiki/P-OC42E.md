@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OC42E
 kind: problem
-title: "Injectivity: We have the following situation: {=latex}\u2026"
+title: The four lemma
 classification:
   areas:
   - algebra

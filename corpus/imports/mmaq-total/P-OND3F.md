@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OND3F
 kind: problem
-title: Let $\overline{\mathbb F_p}$ denote the algebraic closure of…
+title: $\Gal(\overline{\mathbb{F}_p}/\mathbb{F}_p)$ has no nontrivial finite subgroups
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JOGCB
 kind: problem
-title: "Let $u = \\sqrt{2 + \\sqrt{2}}$, $v = \\sqrt{2 - \\sqrt{2}}$, and $E = \\QQ(u)$."
+title: Minimal polynomial of $\sqrt{2+\sqrt{2}}$; $\QQ(\sqrt{2+\sqrt{2}})$ as splitting field containing $\sqrt{2-\sqrt{2}}$; Galois group and intermediate fields
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HXTMK
 kind: problem
-title: "In both cases, we will need the characteristic polynomials $\\chi_A(x)$\u2026"
+title: Rational canonical forms for $m_A=(x-1)(x^2+1)^2$ and $m_A=(x^2+1)^2(x^3+1)$
 classification:
   areas:
   - algebra

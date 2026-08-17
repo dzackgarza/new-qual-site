@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4XOCE
 kind: problem
-title: "Let $H \\normal G$ be a normal subgroup of a finite group $G$, where the\u2026"
+title: A normal subgroup of smallest prime order lies in the center
 classification:
   areas:
   - algebra

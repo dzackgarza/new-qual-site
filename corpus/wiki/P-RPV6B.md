@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RPV6B
 kind: problem
-title: "Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if\u2026"
+title: An analytic function is constant if $|f|$, $\Re(f)$, or $\arg(f)$ is constant, or if $\overline{f}$ is analytic
 classification:
   areas:
   - complex-analysis

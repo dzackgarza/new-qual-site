@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YQASP
 kind: problem
-title: "Assume $f$ is continuous in the region $\\theset{x+iy \\suchthat x\\geq x_0, ~ 0\\leq y \\leq b}$, and the following\u2026"
+title: $\lim_{x\to+\infty}\int_{\gamma_x}f=iAb$ when $f(x+iy)\to A$ independently of $y$
 classification:
   areas:
   - complex-analysis

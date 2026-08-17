@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PUNEM
 kind: problem
-title: "[Reconstructed from solution \u2014 no problem statement page was\u2026"
+title: A function in $L^2([0,1])$ orthogonal to every polynomial vanishes a.e.
 classification:
   areas:
   - real-analysis

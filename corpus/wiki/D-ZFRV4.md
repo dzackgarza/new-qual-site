@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-ZFRV4
 kind: definition
-title: "Hausdorff: A topological space $X$ is Hausdorff or $T_2$ iff points can be\u2026"
+title: Hausdorff space
 classification:
   areas:
   - topology

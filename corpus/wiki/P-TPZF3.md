@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TPZF3
 kind: problem
-title: "Let $K$ be the set of numbers in $[0, 1]$ whose decimal expansions do\u2026"
+title: Numbers in $[0,1]$ with no decimal digit $4$ form a compact nowhere dense set with no isolated points and Lebesgue measure zero
 classification:
   areas:
   - real-analysis

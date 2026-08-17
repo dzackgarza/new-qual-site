@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K6LSY
 kind: problem
-title: "Prove or disprove each of the following statements. If $E \\subset \\mathbb{R}$ and\u2026"
+title: Finite interval covers versus Lebesgue outer measure, and Borel preimages under measurable functions
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GK4F6
 kind: problem
-title: "Let $\\gamma(t)$ be a piecewise smooth curve in $\\mathbb{C}, t \\in[0,1]$. Let $F(w)$ be a continuous\u2026"
+title: The integral $\int_\gamma F(w)/(w-z)\,dw$ is holomorphic off $\gamma$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-54CQC
 kind: exercise
-title: "Show that a local homeomorphism between compact Hausdorff spaces is a\u2026"
+title: Local homeomorphisms of compact Hausdorff spaces are covering maps
 classification:
   areas:
   - topology

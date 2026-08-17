@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YJFBZ
 kind: problem
-title: "For each $n\\in \\ZZ^{\\geq 1}$, let $P_n(z) = 1 + z + {1\\over 2!} z^2 + \\cdots + {1\\over n!}z^n$ Show that for sufficiently large $n$, the\u2026"
+title: Zeros of $P_n(z)=\sum_{k=0}^n z^k/k!$ and of $P_n-1$ in $|z|<10$ for large $n$
 classification:
   areas:
   - complex-analysis

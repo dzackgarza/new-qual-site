@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QDGDN
 kind: problem
-title: "Let $X$ and $Y$ be sets and let $f: X \\to Y$ and $g: Y \\to X$ be funct…"
+title: A left inverse forces $f$ injective and $g$ surjective
 classification:
   areas:
   - prelim

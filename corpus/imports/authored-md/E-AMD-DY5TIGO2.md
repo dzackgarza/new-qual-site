@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-DY5TIGO2
 kind: exercise
-title: Show that if a matrix is diagonalizable, its minimal polynomial is…
+title: Diagonalizable matrices have squarefree minimal polynomials
 classification:
   areas:
   - algebra

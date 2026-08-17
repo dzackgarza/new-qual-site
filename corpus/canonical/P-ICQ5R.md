@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ICQ5R
 kind: problem
-title: Let $f(x) = x^4 - 4x^2 + 2 \in \QQ[x]$. Find the splitting field $K$ of $f$,...
+title: Splitting field and Galois correspondence for $x^4-4x^2+2$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-V7ULH
 kind: problem
-title: "Let $f$ be a power series centered at the origin. Prove that $f$\u2026"
+title: A power series has an expansion about every point of its disc of convergence
 classification:
   areas:
   - complex-analysis

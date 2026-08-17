@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OUQ2Q
 kind: problem
-title: Suppose $A \in M_4(\mathbb{Q})$ is a 4-by-4 matrix of multiplicative o…
+title: $\mathbb{Q}[x]$-modules from order-$6$ matrices in $M_4(\mathbb{Q})$, and groups of order $24$
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XPUMM
 kind: problem
-title: "Use the circle along which the connected sum is performed and the Maye\u2026"
+title: Homology of $\RP^2\#\RP^2$ via Mayer–Vietoris
 classification:
   areas:
   - topology

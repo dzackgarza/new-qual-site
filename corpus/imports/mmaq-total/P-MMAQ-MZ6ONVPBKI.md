@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-MZ6ONVPBKI
 kind: problem
-title: 'Let $I$ be an index set and $\alpha: I \to (0, \infty)$.'
+title: A summable family of positive terms has countable index, and $f(x)=\sum_{q\leq x}a(q)$ is continuous precisely off $\QQ$
 classification:
   areas:
   - real-analysis

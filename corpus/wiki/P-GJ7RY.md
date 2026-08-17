@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GJ7RY
 kind: problem
-title: "Let $C([0, 1])$ denote the space of all continuous real-valued functio\u2026"
+title: $C([0,1])$ is complete in the uniform norm but not in the $L^1$ norm
 classification:
   areas:
   - real-analysis

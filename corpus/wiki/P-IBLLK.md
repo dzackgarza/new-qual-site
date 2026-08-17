@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IBLLK
 kind: problem
-title: "Let $X$ be the topological space obtained as the quotient of the spher\u2026"
+title: Homology of $S^2$ with equatorial antipodes identified
 classification:
   areas:
   - topology

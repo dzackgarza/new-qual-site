@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LYMLT
 kind: problem
-title: Let $X$ be the 2-sphere, and $A \subseteq X$ the equatorial circle in $X$. Show that there is no retraction…
+title: No retraction from $S^2$ onto an equatorial circle
 classification:
   areas:
   - topology

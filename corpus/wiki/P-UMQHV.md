@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMQHV
 kind: problem
-title: "Let $k$ be a field of characteristic $p\\neq 0$ and $f\\in k[x]$ irreduc\u2026"
+title: An irreducible over a field of characteristic $p$ is $g(x^{p^d})$ with $g$ irreducible and separable, and all roots have multiplicity $p^d$
 classification:
   areas:
   - algebra

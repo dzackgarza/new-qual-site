@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-17
 kind: problem
-title: "The polygonal symbol of a certain surface without boundary\u2026"
+title: The surface with polygonal symbol $xy^{-1}x^{-1}zwz^{-1}vyw^{-1}v^{-1}$, and classification of closed surfaces by even-sided polygons
 classification:
   areas:
   - topology

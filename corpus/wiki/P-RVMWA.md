@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RVMWA
 kind: problem
-title: "$\\displaystyle \\int \\sin ^2 (x) ~dx = \\color {blue} {\\frac {1}{2} (x - \\sin (x) \\cos (x))}$ Solution: $\\sin ^2 (x) = \\frac {1 - \\cos (2x)}{2}$\u2026"
+title: Antiderivatives of powers of $\sin x$ and $\cos x$
 classification:
   areas:
   - prelim

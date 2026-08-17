@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-55AME
 kind: problem
-title: 'Let $f\in L^1([0, 1])$. Prove that Hint: Begin with the case that $f$ is...'
+title: $\int_0^1 f(x)|\sin nx|\,dx\to\frac{2}{\pi}\int_0^1 f$ for $f\in L^1([0,1])$
 classification:
   areas:
   - real-analysis

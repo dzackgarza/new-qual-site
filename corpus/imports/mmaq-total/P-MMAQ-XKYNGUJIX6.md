@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-XKYNGUJIX6
 kind: problem
-title: Let $C([0, 1])$ denote the space of all continuous real-valued…
+title: $C([0,1])$ is complete under the uniform norm and incomplete under $L^1$
 classification:
   areas:
   - real-analysis

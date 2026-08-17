@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OKDFC
 kind: problem
-title: "Prove that a topological space that has a countable base for its topol\u2026"
+title: A countable base implies a countable dense subset, and the converse in metric spaces
 classification:
   areas:
   - topology

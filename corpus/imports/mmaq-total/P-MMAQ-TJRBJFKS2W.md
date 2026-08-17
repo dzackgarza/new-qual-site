@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-TJRBJFKS2W
 kind: problem
-title: "Let $F = \\FF_p$ , where $p$ is a prime number. Show that if $\\pi(x) \\in F[x]$ is\u2026"
+title: Irreducible polynomials over $\FF_p$ dividing $x^{p^n}-x$
 classification:
   areas:
   - algebra

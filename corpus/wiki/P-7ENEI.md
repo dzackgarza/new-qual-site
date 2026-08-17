@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7ENEI
 kind: problem
-title: "Suppose that $f$ is holomorphic in an open set containing the\u2026"
+title: $\lim_{n\to\infty}c_n=-\lim_{z\to 1}(z-1)f(z)$ for a simple pole at $z=1$
 classification:
   areas:
   - complex-analysis

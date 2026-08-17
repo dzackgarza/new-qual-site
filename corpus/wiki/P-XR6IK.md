@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XR6IK
 kind: problem
-title: "For each prime p, give a polynomial of degree p that is irreducible ov\u2026"
+title: An irreducible polynomial of degree $p$ over $\FF_p$ for each prime $p$
 classification:
   areas:
   - algebra

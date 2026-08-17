@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B2CWE
 kind: problem
-title: "Suppose $\\varphi\\in L^1(\\RR)$ with"
+title: Convolution against dilates of an $L^1$ kernel is bounded on $L^1$ and converges to $\alpha f$
 classification:
   areas:
   - real-analysis

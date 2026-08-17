@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5CQNK
 kind: problem
-title: Determine whether the following statements are true and false. If true…
+title: Positive derivative of monotone functions, and measurability of $f^{-1}(E)\cap\{f'>0\}$
 classification:
   areas:
   - real-analysis

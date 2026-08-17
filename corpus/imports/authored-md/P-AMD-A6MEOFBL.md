@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-A6MEOFBL
 kind: problem
-title: Show that all 3 presentations of $\pi_1(K)$ are isomorphic
+title: Three presentations of $\pi_1(K)$ are isomorphic
 classification:
   areas:
   - topology

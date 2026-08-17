@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZFIB
 kind: problem
-title: "Suppose $f: \\DD \\to \\CC$ is holomorphic and let $d \\definedas \\sup_{z, w\\in \\DD}\\abs{f(z) - f(w)}$ be the diameter of the\u2026"
+title: $2|f'(0)|\le\operatorname{diam} f(\DD)$, with equality iff $f$ is linear
 classification:
   areas:
   - complex-analysis

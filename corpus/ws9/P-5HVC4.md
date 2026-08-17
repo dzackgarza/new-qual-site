@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5HVC4
 kind: problem
-title: "Let $A = \\begin{bmatrix} 0 & 1 \\\\ 6 & -1 \\end{bmatrix}$. Prove that $A$ is diagonalizable and find a closed-form\u2026"
+title: Diagonalizability of $\begin{pmatrix}0&1\\6&-1\end{pmatrix}$ and a closed form for $A^k\begin{pmatrix}1\\7\end{pmatrix}$
 classification:
   areas:
   - prelim

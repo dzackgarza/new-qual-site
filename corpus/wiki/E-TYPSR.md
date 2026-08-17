@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TYPSR
 kind: exercise
-title: "Suppose $f$ is entire and $f^{(n)}$ is bounded on $\\CC$."
+title: An entire function with bounded $n$th derivative is a polynomial of degree at most $n$
 classification:
   areas:
   - complex-analysis

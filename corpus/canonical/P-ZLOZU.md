@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZLOZU
 kind: problem
-title: Let over a commutative ring $R$, where $b$ and $x$ are units of $R$. Prove...
+title: If $MN$ has three zero entries then $MN=0$
 classification:
   areas:
   - algebra

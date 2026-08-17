@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TVUOV
 kind: problem
-title: "Prove that $z^4 + 2 z^3 - 2z + 10 =0$ has exactly one root in each"
+title: $z^4+2z^3-2z+10$ has one root in each open quadrant
 classification:
   areas:
   - complex-analysis

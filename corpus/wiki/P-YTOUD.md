@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YTOUD
 kind: problem
-title: "Show that a map $S^n \\to S^n$ has a fixed point unless its degree is e\u2026"
+title: A map $S^n\to S^n$ has a fixed point unless its degree equals that of the antipodal map
 classification:
   areas:
   - topology

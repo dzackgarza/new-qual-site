@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BPSOU
 kind: exercise
-title: "Show that if $f$ is entire and $\\abs{f(z)} \\in \\bigo(\\abs{z}^p)$ for $\\abs{z}$ sufficiently large, then $f$\u2026"
+title: Entire $O(|z|^p)$ functions are polynomials of degree at most $\lfloor p\rfloor$
 classification:
   areas:
   - complex-analysis

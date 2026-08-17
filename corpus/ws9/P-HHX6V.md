@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HHX6V
 kind: problem
-title: Let $D$ be a commutative ring with unit. A submodule $N$ of the $D$-mo…
+title: Direct summands are pure; a pure submodule of a finitely generated torsion module over a PID is a direct summand
 classification:
   areas:
   - prelim

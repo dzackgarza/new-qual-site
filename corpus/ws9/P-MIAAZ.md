@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MIAAZ
 kind: problem
-title: Show that every continuous convex function $f$ defined on the closed u…
+title: A continuous convex function on the unit ball of a reflexive Banach space attains its minimum
 classification:
   areas:
   - real-analysis

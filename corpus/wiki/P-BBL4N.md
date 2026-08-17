@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BBL4N
 kind: problem
-title: Let $A \in \Mat(n\times n, \RR)$ be arbitrary.
+title: Elementary divisors, invariant factors, and minimal and characteristic polynomials of a given $\RR[x]$-module
 classification:
   areas:
   - algebra

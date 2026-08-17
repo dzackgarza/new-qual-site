@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CASNS
 kind: problem
-title: Let $\alpha,\beta$ denote the unique positive real $5^{\text{th}}$ root of 7...
+title: Degree of $\QQ(7^{1/5},5^{1/4})$ over $\QQ$
 classification:
   areas:
   - algebra

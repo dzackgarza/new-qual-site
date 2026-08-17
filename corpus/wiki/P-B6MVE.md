@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B6MVE
 kind: problem
-title: 'Let $f: R \to R$ be an endomorphism of $R$ in the category of rings.'
+title: $\mathrm{Hom}_R(R,R)\cong R^{\mathrm{op}}$
 classification:
   areas:
   - algebra

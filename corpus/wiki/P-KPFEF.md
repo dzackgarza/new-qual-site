@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KPFEF
 kind: problem
-title: "a. Prove that if $g\\in L^1(\\RR)$ then"
+title: Vanishing of $L^1$ tails without $f(x)\to 0$; a decreasing $f\in L^1([1,\infty))$ has $xf(x)\to 0$; $xf(x)\to 0$ need not imply integrability
 classification:
   areas:
   - real-analysis

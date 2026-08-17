@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WBB2M
 kind: problem
-title: "Let $F \\subset L$ be fields such that $L/F$ is a Galois"
+title: Intermediate fields of a $D_8$-extension with $E/F$ and $K/E$ Galois but $K/F$ not Galois
 classification:
   areas:
   - algebra

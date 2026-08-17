@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YHXGO
 kind: problem
-title: Let $A(\mathbb{D})$ be the $\mathbb{C}$-vector space of all holomorphi…
+title: Multiplicative linear functionals on $A(\mathbb{D})$ are point evaluations
 classification:
   areas:
   - real-analysis

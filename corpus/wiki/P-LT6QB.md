@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LT6QB
 kind: problem
-title: "Recall that for a given positive integer $n$, the cyclotomic\u2026"
+title: 'Cyclotomic fields $\QQ(\zeta_n)$: degree, Galois group, and quadratic subfields of $\QQ(\zeta_{2021})$'
 classification:
   areas:
   - algebra

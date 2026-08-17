@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CBN4I
 kind: problem
-title: "For a prime $p$, let $G$ be a finite $p\\dash$group and let $N$ be a normal\u2026"
+title: A normal subgroup of order $p$ in a finite $p$-group lies in the center
 classification:
   areas:
   - algebra

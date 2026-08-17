@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-I6PEO
 kind: problem
-title: "Let $f$ be a function of bounded variation on"
+title: $1/f$ has bounded variation on $[a,b]$ when $f$ does and $|f|\ge c>0$
 classification:
   areas:
   - real-analysis

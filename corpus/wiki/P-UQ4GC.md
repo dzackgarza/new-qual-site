@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UQ4GC
 kind: problem
-title: "Let $\\{e_1, \\cdots, e_n \\}$ be a basis of a real vector space $V$ and\u2026"
+title: 'The dual of an integer lattice: $\Lambda\subset\Lambda^\vee$, $\det M\neq 0$, and $|\Lambda^\vee/\Lambda|=\det M$'
 classification:
   areas:
   - algebra

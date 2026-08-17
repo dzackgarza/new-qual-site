@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LCEHH
 kind: problem
-title: "Give an example of a tower of field extensions $F \\subseteq E \\subseteq K \\subseteq L$, with $L/F$\u2026"
+title: A tower of extensions with Galois group $D_4$ in which normality is not transitive
 classification:
   areas:
   - algebra

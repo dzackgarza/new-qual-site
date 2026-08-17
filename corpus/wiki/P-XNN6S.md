@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XNN6S
 kind: problem
-title: 'Let $\phi: A \to A$ be a module endomorphism on a simple module $A$.'
+title: 'Schur''s lemma: endomorphisms of a simple module are zero or isomorphisms'
 classification:
   areas:
   - algebra

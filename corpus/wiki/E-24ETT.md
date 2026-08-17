@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-24ETT
 kind: exercise
-title: "Suppose $f, g: \\DD\\to \\Omega$ are holomorphic with $f$ injective and $f(0) = g(0)$. Show that $\\Forall 0 < r < 1,\\qquad g\\qty{\\theset{\\abs{z} < r}} \\subseteq f\\qty{\\theset{\\abs{z} < r}}$\u2026"
+title: $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ when $f$ is injective holomorphic and $f(0)=g(0)$
 classification:
   areas:
   - complex-analysis

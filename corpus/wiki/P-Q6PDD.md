@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Q6PDD
 kind: problem
-title: "Show that the eigenvalues of a Hermitian matrix $A$ are real and that\u2026"
+title: Eigenvalues of a Hermitian matrix are real, and $A=PDP^{-1}$ with orthogonal columns
 classification:
   areas:
   - algebra

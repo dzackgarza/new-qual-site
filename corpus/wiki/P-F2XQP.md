@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F2XQP
 kind: problem
-title: "Consider the simple operator on C given by multiplication by a complex\u2026"
+title: Polar decomposition of operators on a Hilbert space
 classification:
   areas:
   - algebra

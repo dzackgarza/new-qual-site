@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-2QRPHB25
 kind: problem
-title: "Let $X$ be an arbitrary topological space, and compute $\\pi_1(\\Sigma X)$."
+title: $\pi_1(\Sigma X)$ is trivial
 classification:
   areas:
   - topology

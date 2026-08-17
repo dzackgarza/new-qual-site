@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-KGHDXFTO6Z
 kind: problem
-title: Let $F$ be a finite field. Show for any positive integer $n$ that
+title: A finite field has irreducible polynomials of every positive degree
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-P2UWB
 kind: problem
-title: "Recall that a set $E \\subset \\mathbb{R}^{d}$ is measurable if for ever\u2026"
+title: Approximation of measurable sets by elementary sets, and $\lim_{n\to\infty}\int_E\sin(nt)\,dt=0$
 classification:
   areas:
   - real-analysis

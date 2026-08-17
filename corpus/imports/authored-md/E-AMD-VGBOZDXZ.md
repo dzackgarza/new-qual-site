@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-VGBOZDXZ
 kind: exercise
-title: Show that every nontrivial normal subgroup of a finite $p\dash$group me…
+title: Nontrivial normal subgroups of a finite $p$-group meet the center
 classification:
   areas:
   - algebra

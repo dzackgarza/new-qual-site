@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5EROX
 kind: problem
-title: "Let $k$ be a field of characteristic zero and $A, B \\in M_n(k)$ be two\u2026"
+title: $AB-BA=A$ implies $\det A=0$ in characteristic zero, but not in characteristic $2$
 classification:
   areas:
   - algebra

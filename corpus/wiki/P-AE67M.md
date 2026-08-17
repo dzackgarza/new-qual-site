@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AE67M
 kind: problem
-title: "Let $a_n(z)$ be an analytic sequence in a domain $D$ such that $\\displaystyle \\sum_{n=0}^\\infty |a_n(z)|$\u2026"
+title: Uniform convergence of $\sum|a_n'|$ on compacta from that of $\sum|a_n|$
 classification:
   areas:
   - complex-analysis

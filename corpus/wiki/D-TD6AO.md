@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-TD6AO
 kind: definition
-title: "Colimit: For a directed system $(X_{i}, f_{ij})$, the colimit is the object $X$ receiving…"
+title: Colimit of a directed system
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O5S6X
 kind: problem
-title: "Let $E \\subset \\RR$ be measurable with $m(E) < \\infty$. Define $f(x)=m(E \\cap(E+x))$ Show that $f\\in L^1(\\RR)$. $f$ is\u2026"
+title: The overlap $m(E\cap(E+x))$ is $L^1$, uniformly continuous, and vanishes at infinity
 classification:
   areas:
   - real-analysis

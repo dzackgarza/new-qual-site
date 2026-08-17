@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IYE3I
 kind: problem
-title: "Consider the function $f(z)=\\frac{1}{2}\\left(z+\\frac{1}{z}\\right)$ for\u2026"
+title: The Joukowski map $f(z)=\frac{1}{2}(z+\frac{1}{z})$ on the punctured disc and its exterior
 classification:
   areas:
   - complex-analysis

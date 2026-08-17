@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2DH4S
 kind: problem
-title: "Let $V$ be a finite-dimensional $k\\dash$vector space and $T:V\\to V$ a\u2026"
+title: A non-invertible endomorphism $T$ admitting $S$ with $TS=0$ but $ST\neq 0$
 classification:
   areas:
   - algebra

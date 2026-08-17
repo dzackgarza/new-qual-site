@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T6YA3
 kind: problem
-title: "Since $R/(p)$ is a field, we just need to show that $A/pA \\actson R/(p)$ defines a\u2026"
+title: The $R/(p)$-module structure on $A/pA$
 classification:
   areas:
   - algebra

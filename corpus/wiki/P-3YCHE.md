@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3YCHE
 kind: problem
-title: "Let $f(x) = x^4-2 \\in \\QQ[x]$."
+title: Galois group of $x^4-2$ over $\QQ$ and a non-Galois intermediate field
 classification:
   areas:
   - algebra

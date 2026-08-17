@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DRAOZ
 kind: problem
-title: "Let $f$ be differentiable on $[a, b]$. Say that $f$ is uniformly\u2026"
+title: Uniform differentiability on $[a,b]$ is equivalent to continuity of $f'$
 classification:
   areas:
   - complex-analysis

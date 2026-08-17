@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A4AIM
 kind: problem
-title: "Let $k$ be a field and let the group $G = \\GL(m, k) \\cross \\GL(n, k)$\u2026"
+title: Orbits of $\GL(m,k)\times\GL(n,k)$ acting by $(A,B)\cdot X=AXB^{-1}$
 classification:
   areas:
   - algebra

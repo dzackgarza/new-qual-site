@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DM6ET
 kind: problem
-title: "Let $A$ be an $n\\times n$ matrix over a field $F$ such"
+title: A diagonalizable matrix has a cyclic vector if and only if its eigenvalues are distinct
 classification:
   areas:
   - algebra

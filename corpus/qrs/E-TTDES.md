@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TTDES
 kind: exercise
-title: "Show that if $X$ is second countable and Hausdorff, or a metric space\u2026"
+title: Compact, limit-point compact, and sequentially compact coincide for second-countable Hausdorff or metric spaces
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OIG6K
 kind: problem
-title: "If an irreducible cubic polynomial has Galois group NOT contained in A\u2026"
+title: An irreducible cubic with Galois group not in $A_3$ has Galois group $S_3$
 classification:
   areas:
   - algebra

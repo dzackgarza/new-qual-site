@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PZCPD
 kind: problem
-title: "Let $z_{k}(k=1, \\cdots, n)$ be complex numbers lying on the same side\u2026"
+title: Complex numbers on one side of a line through the origin have nonzero sum and sum of reciprocals
 classification:
   areas:
   - complex-analysis

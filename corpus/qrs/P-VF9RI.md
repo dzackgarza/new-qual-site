@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VF9RI
 kind: problem
-title: Let $u(x,y)$ be harmonic and have continuous partial derivatives of
+title: Harmonic conjugate of a $C^3$ harmonic function on a disk
 classification:
   areas:
   - complex-analysis

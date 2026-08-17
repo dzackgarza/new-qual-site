@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B6EUH
 kind: problem
-title: Suppose the group $G$ acts on the set $X$ . Show that the stabilizers of...
+title: Conjugate stabilizers and a fixed-point-free element in a transitive action
 classification:
   areas:
   - algebra

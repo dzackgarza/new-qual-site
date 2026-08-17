@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-LJ7PF
 kind: exercise
-title: "Show that normal matrices are diagonalizable."
+title: Normal matrices are diagonalizable
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YPKW5
 kind: problem
-title: "Complete this definition: \"$f: \\RR^n\\to \\RR^m$ is real-differentiable\u2026"
+title: 'Real differentiability: definition, partials without differentiability, and real but nowhere complex differentiability'
 classification:
   areas:
   - complex-analysis

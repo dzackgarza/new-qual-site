@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7UIFE
 kind: problem
-title: "Let $\\varphi$ be a compactly supported smooth function that vanishes o\u2026"
+title: 'Approximate identity $K_j=j\varphi(jx)$: $f*K_j$ is smooth of compact support and converges in $L^1$'
 classification:
   areas:
   - real-analysis

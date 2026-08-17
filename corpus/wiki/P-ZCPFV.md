@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZCPFV
 kind: problem
-title: "Prove that if $f \\in \\mathcal{R}$ on $[a,b]$ and"
+title: $\int_a^b f\,d\alpha=\int_a^b f\alpha'\,dx$ when $f$ is Riemann integrable and $\alpha\in C^1[a,b]$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WBJMPR2DHX
 kind: problem
-title: Let $\mathbb F_2$ be the field with two elements.
+title: Order of $\mathrm{GL}_3(\mathbb{F}_2)$ and the number of elements of order $7$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HJBTY
 kind: problem
-title: "What $3 \\times 3$ matrices over the rationals (up to similarity) satis\u2026"
+title: Rational canonical forms of $3\times 3$ matrices over $\QQ$ annihilated by $(x^2+2)(x-1)^3$
 classification:
   areas:
   - algebra

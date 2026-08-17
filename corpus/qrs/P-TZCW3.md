@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TZCW3
 kind: problem
-title: "Prove the fundamental theorem of Algebra using Rouche's\u2026"
+title: Fundamental theorem of algebra via Rouché's theorem and the maximum modulus principle
 classification:
   areas:
   - complex-analysis

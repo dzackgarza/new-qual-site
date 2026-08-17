@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-P35KHOGFWR
 kind: problem
-title: Suppose $A$ is a commutative ring and $M$ is a finitely presented…
+title: Kernels of finite free presentations of finitely presented modules are finitely generated
 classification:
   areas:
   - algebra

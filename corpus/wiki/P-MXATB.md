@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MXATB
 kind: problem
-title: "Let $\\tau \\definedas (t_1, t_2)$ denote the transposition and $\\sigma = (s_1, s_2 \\cdots, s_p)$ denote the $p\\dash$cycle, and let $S = \\generators{\\sigma, \\tau}$."
+title: A $p$-cycle and a transposition generate $S_p$ for $p$ prime
 classification:
   areas:
   - algebra

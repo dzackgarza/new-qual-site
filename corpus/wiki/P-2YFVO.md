@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2YFVO
 kind: problem
-title: "Show that if $f, g$ are continuous and compactly supported, then\u2026"
+title: Support, uniform continuity, vanishing at infinity, and derivatives of convolutions
 classification:
   areas:
   - real-analysis

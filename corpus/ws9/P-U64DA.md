@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-U64DA
 kind: problem
-title: "Assume that $p$ is prime and $X^p - a$ is irreducible in $\\mathbb{Q}[X]$."
+title: Galois group of irreducible $X^p-a$ over $\mathbb{Q}$ is the group of maps $y\mapsto ky+l$ on $\mathbb{Z}/p\mathbb{Z}$ with $k\neq 0$
 classification:
   areas:
   - prelim

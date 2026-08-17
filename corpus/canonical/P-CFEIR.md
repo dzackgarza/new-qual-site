@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CFEIR
 kind: problem
-title: Suppose $f(x)$ and $xf(x)$ are integrable on $\RR$. Define $F$ by Show that
+title: $F'(t)=-\int xf(x)\sin(xt)\,dx$ for the cosine transform of integrable $f$ with $xf$ integrable
 classification:
   areas:
   - real-analysis

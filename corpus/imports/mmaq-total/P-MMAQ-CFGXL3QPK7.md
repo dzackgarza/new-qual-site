@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CFGXL3QPK7
 kind: problem
-title: Let $f$ be a meromorphic function in the plane such that
+title: A meromorphic function on $\CC$ with $|f(z)|\to\infty$ as $|z|\to\infty$ is rational
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WSJ6P
 kind: exercise
-title: "Let $(\\Omega,\\mcb)$ be a measurable space with a Borel $\\sigma\\dash$al\u2026"
+title: The sum of countably many measures is a measure
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-HXBFVZYTWW
 kind: problem
-title: a. Show that if $f$ is continuous with compact support on $\RR$, then
+title: Continuity of translation in $L^1$ for compactly supported continuous functions, and $L^1$ boundedness and convergence of averaging operators $\mathcal{A}_h$
 classification:
   areas:
   - real-analysis

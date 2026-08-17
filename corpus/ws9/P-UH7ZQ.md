@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UH7ZQ
 kind: problem
-title: Negate each of the following statements in the most informative way po…
+title: Negations of statements about odd integers and a sequential limit
 classification:
   areas:
   - prelim

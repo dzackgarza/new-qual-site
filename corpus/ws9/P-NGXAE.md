@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NGXAE
 kind: problem
-title: Let $K$ be the splitting field of $x^4 - 6$ over $\mathbb{Q}$.
+title: 'Splitting field of $x^4-6$ over $\QQ$: degree, Galois group, and the number of subfields of each degree, Galois or not'
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5SED7
 kind: problem
-title: "Let $R$ be a PID. Classify irreducible $R\\dash$modules up to\u2026"
+title: Irreducible and indecomposable modules over a PID
 classification:
   areas:
   - algebra

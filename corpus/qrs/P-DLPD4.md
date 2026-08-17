@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DLPD4
 kind: problem
-title: "Let $R$ be a commutative ring with 1. Suppose that $M$ is a free $R\\dash$\u2026"
+title: Invariance of rank for a finitely generated free module over a commutative ring
 classification:
   areas:
   - algebra

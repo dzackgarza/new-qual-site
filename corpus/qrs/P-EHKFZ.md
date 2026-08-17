@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EHKFZ
 kind: problem
-title: Let $f(z) = \sum_{n= -\infty}^\infty c_n z^n$ be analytic and
+title: Area of $f(\{r<|z|<R\})$ is $\pi\sum_{n=-\infty}^\infty n|c_n|^2(R^{2n}-r^{2n})$ for a univalent Laurent series
 classification:
   areas:
   - complex-analysis

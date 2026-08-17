@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MQ2YD
 kind: problem
-title: "What can you say about matrices that satisfy a given polynomial (over\u2026"
+title: Matrices satisfying a given polynomial over algebraically closed and finite fields
 classification:
   areas:
   - algebra

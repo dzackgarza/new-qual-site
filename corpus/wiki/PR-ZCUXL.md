@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-ZCUXL
 kind: proposition
-title: "The continuous image of a..."
+title: Compactness, separability, connectedness, and density under continuous maps
 classification:
   areas:
   - topology

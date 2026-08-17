@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EI5VA
 kind: problem
-title: "Suppose the group $G$ acts on the set $X$ . Show that the stabilizers\u2026"
+title: Stabilizers in an orbit are conjugate, conjugates of a proper subgroup do not cover $G$, and a transitive action on two or more points has a fixed-point-free element
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UE5L6
 kind: problem
-title: "Suppose $f$ is a continuous function satisfying the equation $f(x) = 5 + \\int_0^x 3f(t)\\,dt$\u2026"
+title: Continuous solutions of $f(x)=5+\int_0^x 3f(t)\,dt$
 classification:
   areas:
   - prelim

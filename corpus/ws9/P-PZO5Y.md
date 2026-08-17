@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PZO5Y
 kind: problem
-title: Let $\mu$ be a finite, positive, regular Borel measure supported on a…
+title: Newtonian and Cauchy potentials of a compactly supported measure
 classification:
   areas:
   - real-analysis

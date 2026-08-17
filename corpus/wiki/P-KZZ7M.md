@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KZZ7M
 kind: problem
-title: "Suppose $f_n:[0,1]\\to\\mathbb{R}$ are continuous"
+title: $\lim_{n\to\infty}\int_{1/n}^1 f_n=\int_0^1 f$ for uniform limits of continuous functions on $[0,1]$
 classification:
   areas:
   - real-analysis

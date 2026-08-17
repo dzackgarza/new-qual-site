@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3VOYM
 kind: problem
-title: Let $a > 0$ and calculate
+title: $\int_0^\infty\frac{x\sin x}{x^2+a^2}\,dx=\frac{\pi}{2}e^{-a}$ for $a>0$
 classification:
   areas:
   - complex-analysis

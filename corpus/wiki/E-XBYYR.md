@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XBYYR
 kind: exercise
-title: "State the standard Schwarz reflection principle involving\u2026"
+title: Schwarz reflection and holomorphic functions real on the unit circle
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WL4WF
 kind: problem
-title: "The extension $\\QQ(\\zeta_{43})$ is the splitting field of the cycloto\u2026"
+title: The cyclotomic extension $\QQ(\zeta_{43})/\QQ$ has Galois group $\ZZ_{42}$
 classification:
   areas:
   - algebra

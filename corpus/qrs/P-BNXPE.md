@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BNXPE
 kind: problem
-title: "Let $f_{n}(x) = n x(1-x)^{n}, \\quad n \\in \\NN$ Show that $f_n \\to 0$ pointwise but not uniformly on $[0, 1]$. Show that $\\lim _{n \\to \\infty} \\int _{0}^{1} n(1-x)^{n} \\sin x \\, dx = 0$\u2026"
+title: $nx(1-x)^n$ converges pointwise but not uniformly; $\int_0^1 n(1-x)^n\sin x\,dx\to 0$
 classification:
   areas:
   - real-analysis

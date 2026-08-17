@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HJPF5
 kind: problem
-title: "If you have a $\\ZZ/5\\ZZ$ action on a complex vector space, what does t\u2026"
+title: Linear actions of $\ZZ/5\ZZ$, $S_3$, and dihedral groups on complex vector spaces
 classification:
   areas:
   - algebra

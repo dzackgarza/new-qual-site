@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RMM73
 kind: problem
-title: Let $f$ be holomorphic in a neighborhood of $D_r(z_0)$. Show that for
+title: Holomorphic functions in a neighborhood of $D_r(z_0)$
 classification:
   areas:
   - complex-analysis

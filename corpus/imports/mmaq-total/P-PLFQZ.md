@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PLFQZ
 kind: problem
-title: Let $G$ be a group of (finite) order $n$. Show that any
+title: Irreducible $\CC G$-modules have dimension at least $\sqrt{|G|}$, with an example of dimension $\lfloor\sqrt{|G|}\rfloor$
 classification:
   areas:
   - algebra

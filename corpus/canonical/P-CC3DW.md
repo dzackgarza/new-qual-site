@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CC3DW
 kind: problem
-title: Let $M$ be a square matrix over a field $K$. Use a suitable canonical form...
+title: A square matrix is similar to its transpose
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-5VQHD
 kind: exercise
-title: "Show that if $f: A\\to B$ is a continuous map between metric spaces and\u2026"
+title: Heine–Cantor theorem
 classification:
   areas:
   - topology

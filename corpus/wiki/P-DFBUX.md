@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DFBUX
 kind: problem
-title: "Give an interesting example of a subgroup of the additive group of the\u2026"
+title: An interesting subgroup of $(\QQ,+)$
 classification:
   areas:
   - algebra

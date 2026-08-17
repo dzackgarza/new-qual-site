@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MXUIS
 kind: problem
-title: "Let $S_k$ be the space obtained by removing $k$ disjoint open disks fr\u2026"
+title: Fundamental group and classification of a sphere with $k$ Möbius bands attached
 classification:
   areas:
   - topology

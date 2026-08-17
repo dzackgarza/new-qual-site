@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-EKX7KY2GUH
 kind: problem
-title: State and prove the divergence theorem on any rectangle in…
+title: Divergence theorem on a rectangle in $\RR^2$
 classification:
   areas:
   - complex-analysis

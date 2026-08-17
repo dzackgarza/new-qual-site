@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-DY44M
 kind: theorem
-title: "Baire: $\\RR$ is a Baire space Thus $\\RR$ can not be written as a countable\u2026"
+title: 'Baire category theorem: $\RR$ is a Baire space'
 classification:
   areas:
   - real-analysis

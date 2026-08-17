@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-YHZCDPYO
 kind: exercise
-title: Show that $\text{rad}(IJ) = \text{rad}(I) \intersect \text{rad}(J)$
+title: $\mathrm{rad}(IJ)=\mathrm{rad}(I)\cap\mathrm{rad}(J)$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BHHKY
 kind: problem
-title: "Let $G$ be a group of order 30. Show that $G$ has a subgroup of\u2026"
+title: Classification of groups of order $30$
 classification:
   areas:
   - algebra

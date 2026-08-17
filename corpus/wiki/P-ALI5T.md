@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ALI5T
 kind: problem
-title: "Assume $f(z)$ is analytic in region $D$ and $\\Gamma$ is a rectifiable\u2026"
+title: A holomorphic function real-valued on a closed curve is constant
 classification:
   areas:
   - complex-analysis

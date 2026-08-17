@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F7HCN
 kind: problem
-title: "Prove the following: $\\sum_{n} nz^n$ does not converge at any point of $S^1$ $\\sum_n {z^n \\over n^2}$\u2026"
+title: Convergence of $\sum nz^n$, $\sum z^n/n^2$, and $\sum z^n/n$ on the unit circle
 classification:
   areas:
   - complex-analysis

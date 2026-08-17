@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XXLEK
 kind: problem
-title: "Recall that a topological space is regular if for every\u2026"
+title: Open sets in a second-countable regular space as countable unions of closed sets, with a continuous $f:X\to[0,1]$ positive on $U$
 classification:
   areas:
   - topology

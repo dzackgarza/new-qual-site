@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NRT2M
 kind: problem
-title: "Let $f = u+iv$ be complex-differentiable with continuous partial deriv\u2026"
+title: Cauchy-Riemann equations in polar coordinates
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TCJBY
 kind: problem
-title: Let $S$ be a closed subspace of $(C[0,1], \|\cdot\|_\infty)$. If $S$ i…
+title: A $C[0,1]$ subspace closed in both $\|\cdot\|_\infty$ and $\|\cdot\|_2$ is finite-dimensional
 classification:
   areas:
   - real-analysis

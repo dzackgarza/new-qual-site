@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-33FFQ
 kind: problem
-title: "Let $n$ be a positive integer and let $B$ denote the"
+title: Jordan form of the $n\times n$ all-ones matrix over $\CC$
 classification:
   areas:
   - algebra

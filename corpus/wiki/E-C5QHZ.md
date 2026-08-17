@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-C5QHZ
 kind: exercise
-title: "Show that if $\\mcf$ is a family of differentiable functions with unifo\u2026"
+title: Uniformly bounded derivatives imply equicontinuity
 classification:
   areas:
   - complex-analysis

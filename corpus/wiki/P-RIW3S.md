@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RIW3S
 kind: problem
-title: "Let $S^1$ denote the unit circle in $C$, $X$ be any topological space\u2026"
+title: Based maps $S^1\to X$ are freely homotopic iff they are conjugate in $\pi_1(X,x_0)$
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-M6XGF
 kind: exercise
-title: "Prove the Poincar\u00e9 theorem for groups: if $H\\leq G$ are possibly infin\u2026"
+title: Poincaré's theorem on finite-index subgroups
 classification:
   areas:
   - algebra

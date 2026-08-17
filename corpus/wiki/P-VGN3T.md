@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VGN3T
 kind: problem
-title: "For a ring $R$, let $U(R)$ denote the multiplicative group of units in\u2026"
+title: '$\ZZ[\sqrt{-5}]$ is not a PID: units $\pm 1$, and $3$ irreducible but not prime'
 classification:
   areas:
   - algebra

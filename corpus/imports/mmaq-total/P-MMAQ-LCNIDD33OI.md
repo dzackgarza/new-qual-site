@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-LCNIDD33OI
 kind: problem
-title: $R$ is a commutative ring with 1. Prove that if $I$ is a maximal
+title: $R/I$ is a field for maximal $I$; nonzero primes in a PID are maximal; $R/(p)$ is a field for prime $p$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3UMP3
 kind: problem
-title: "Suppose that $f$ is holomorphic in an open set containing the\u2026"
+title: $c_n\neq 0$ for large $n$ and $c_n/c_{n+1}\to z_0$ for a pole on the unit circle
 classification:
   areas:
   - complex-analysis

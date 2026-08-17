@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SMJE7
 kind: problem
-title: "Compute the following limit: $\\lim _{n \\rightarrow \\infty} \\int_{1}^{n} \\frac{n e^{-x}}{1+n x^{2}} \\, \\sin \\left(\\frac x n\\right) \\, dx$\u2026"
+title: The limit $\lim_{n\to\infty}\int_1^n \frac{n e^{-x}}{1+nx^2}\sin(x/n)\,dx$
 classification:
   areas:
   - real-analysis

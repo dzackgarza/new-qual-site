@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N3RQY
 kind: problem
-title: "Compute the homology of the subset $X \\subset \\RR^3$ formed as the uni\u2026"
+title: Homology of the unit sphere union the $z$-axis and the $xy$-plane
 classification:
   areas:
   - topology

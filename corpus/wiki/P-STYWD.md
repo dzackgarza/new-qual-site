@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-STYWD
 kind: problem
-title: "Let $f(x) = \\sum _{n=0}^{\\infty} \\frac{x^{n}}{n !}$ Describe the intervals on which $f$ does and does not\u2026"
+title: The series $\sum x^n/n!$ converges uniformly on bounded intervals but not on $\RR$
 classification:
   areas:
   - real-analysis

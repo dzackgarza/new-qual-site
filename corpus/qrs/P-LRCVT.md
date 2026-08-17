@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LRCVT
 kind: problem
-title: "Let $z, w$ be complex numbers, such that $\\bar{z} w \\neq 1$. Prove that $\\abs{\\frac{w - z}{1 - \\bar{w} z}} < 1 \\; \\; \\; \\mbox{if} \\; |z| < 1 \\; \\mbox{and}\\; |w| < 1$ and also\u2026"
+title: Blaschke factors as automorphisms of the disk
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TZFC7
 kind: exercise
-title: "Show that a uniform limit of bounded functions is bounded.\u2026"
+title: Uniform limits preserve boundedness and continuity
 classification:
   areas:
   - real-analysis

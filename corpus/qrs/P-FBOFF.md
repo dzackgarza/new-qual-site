@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FBOFF
 kind: problem
-title: '(1) Let $f$ be analytic in $\Omega: 0<|z-a|<r$ except at a'
+title: Dense values near an accumulation point of poles, versus Casorati–Weierstrass
 classification:
   areas:
   - complex-analysis

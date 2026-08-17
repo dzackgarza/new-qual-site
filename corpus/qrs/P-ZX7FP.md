@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZX7FP
 kind: problem
-title: "Let $f$ be a continuous function in the region $D=\\{z\\ | |z|>R, 0\\leq \\arg Z\\leq \\theta\\}\\quad\\text{where}\\quad 0\\leq \\theta \\leq 2\\pi$ If there exists\u2026"
+title: The large-arc integral of $f$ in a sector when $zf(z)\to k$
 classification:
   areas:
   - complex-analysis

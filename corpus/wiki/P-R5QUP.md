@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R5QUP
 kind: problem
-title: "What is the Jordan normal form over $\\mathbb{C}$ of a $7 \\times 7$ mat\u2026"
+title: Jordan form of a $7\times 7$ matrix from rank and trace conditions
 classification:
   areas:
   - algebra

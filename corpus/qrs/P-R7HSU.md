@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R7HSU
 kind: problem
-title: "Prove that the cokernel of $A\\in \\mat(n\\times n, \\ZZ)$ is finite $\\iff \\det A \\neq 0$, and show that in\u2026"
+title: The cokernel of $A\in M_n(\mathbb{Z})$ is finite iff $\det A\neq 0$, with order $|\det A|$
 classification:
   areas:
   - algebra

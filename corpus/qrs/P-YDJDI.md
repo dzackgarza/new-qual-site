@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YDJDI
 kind: problem
-title: "Let $G$ be a group containing a subgroup $H$ not equal to $G$ of\u2026"
+title: The core of a finite-index subgroup is a finite-index normal subgroup
 classification:
   areas:
   - algebra

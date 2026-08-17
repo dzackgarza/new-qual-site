@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ARFB8
 kind: problem
-title: Let $R = \CC[x],~ M = \CC^2$, and
+title: $\CC^2$ as a cyclic torsion $\CC[x]$-module via $\begin{pmatrix}1&2\\2&1\end{pmatrix}$
 classification:
   areas:
   - algebra

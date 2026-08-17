@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SZUXB
 kind: problem
-title: "Show that a group of order $p^2 q^2$ where $q$ does not divide $p^2-1$ and $p$\u2026"
+title: Groups of order $p^2q^2$ with $q\nmid(p^2-1)$ and $p\nmid(q^2-1)$ are abelian
 classification:
   areas:
   - algebra

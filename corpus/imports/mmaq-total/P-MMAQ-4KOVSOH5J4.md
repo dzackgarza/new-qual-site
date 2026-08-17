@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-4KOVSOH5J4
 kind: problem
-title: Let $G$ be a finite group.
+title: No finite group is the union of conjugates of a proper subgroup; a transitive action on more than one point has a fixed-point-free element
 classification:
   areas:
   - algebra

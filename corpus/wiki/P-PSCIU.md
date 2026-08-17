@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PSCIU
 kind: problem
-title: "Let $G$ be a finite group and $H<G$ a subgroup. Let"
+title: The number of subgroups conjugate to $H\le G$ divides $|G|$
 classification:
   areas:
   - algebra

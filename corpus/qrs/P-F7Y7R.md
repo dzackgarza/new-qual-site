@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F7Y7R
 kind: problem
-title: "Negate $\\forall x\\in \\RR,~\\exists y\\in \\RR \\suchthat \\abs{x-y} \\geq 2017$ $\\exists x\\in \\RR \\suchthat \\forall y\\in \\RR,~ \\abs{x-y} < 2017$ Note that $p\\implies q \\iff q \\vee \\neg p$, so we have\u2026"
+title: Negation of $\forall x\,\exists y\,|x-y|\ge 2017$ and of $\varepsilon$-$\delta$ continuity
 classification:
   areas:
   - prelim

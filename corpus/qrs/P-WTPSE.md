@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WTPSE
 kind: problem
-title: "Let $f_n, f$ be analytic functions on the unit disk ${\\mathbb D}$."
+title: Locally uniform convergence of holomorphic functions on $\mathbb{D}$ equivalent to $\int_{|z|=r}|f_n-f|\,|dz|\to 0$
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YQDFJ
 kind: problem
-title: "Suppose $f,g:[0,1]\\to\\mathbb{R}$ are both continuous and of bounded va…"
+title: A continuous bounded-variation path cannot fill the unit square
 classification:
   areas:
   - real-analysis

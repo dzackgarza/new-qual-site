@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OETKP
 kind: problem
-title: Let $R = C[0, 1]$ be the ring of continuous real-valued functions on the...
+title: Maximal ideals of $C[0,1]$ are point evaluations
 classification:
   areas:
   - algebra

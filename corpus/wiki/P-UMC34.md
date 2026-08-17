@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMC34
 kind: problem
-title: "Find all entire functions that satisfy $\\abs{f(z)} \\geq \\abs{z} \\quad \\forall z\\in \\CC$ Prove this list is\u2026"
+title: Entire functions satisfying $|f(z)|\geq|z|$ are the maps $cz$ with $|c|\geq 1$
 classification:
   areas:
   - complex-analysis

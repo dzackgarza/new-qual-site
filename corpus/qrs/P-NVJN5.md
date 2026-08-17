@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NVJN5
 kind: problem
-title: "Let $f(z)$ be analytic in an open set $\\Omega$ except possibly at a po\u2026"
+title: Triangle integrals vanish if $f$ is bounded near an isolated singularity
 classification:
   areas:
   - complex-analysis

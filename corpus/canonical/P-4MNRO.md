@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4MNRO
 kind: problem
-title: Let Find the Jordan canonical form J of A. Find an invertible matrix $P$...
+title: Jordan form of $\begin{pmatrix}0&1&-2\\1&1&-3\\1&2&-4\end{pmatrix}$
 classification:
   areas:
   - algebra

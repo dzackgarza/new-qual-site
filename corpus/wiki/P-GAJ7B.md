@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GAJ7B
 kind: problem
-title: "Let $G\\subset S_9$ be a Sylow-3 subgroup of the symmetric group on 9 l\u2026"
+title: Structure of a Sylow $3$-subgroup of $S_9$
 classification:
   areas:
   - algebra

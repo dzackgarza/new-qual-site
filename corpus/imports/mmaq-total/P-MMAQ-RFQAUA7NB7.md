@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-RFQAUA7NB7
 kind: problem
-title: "Prove or disprove each of the following statements. If $f$ is\u2026"
+title: Bounded variation, Brouwer on $[0,1]$, uniform limits of uniformly continuous functions, and the mean value theorem in $\RR^n$
 classification:
   areas:
   - real-analysis

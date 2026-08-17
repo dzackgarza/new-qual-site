@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y7C7Z
 kind: problem
-title: "Let $A$ and $B$ be circles bounding disjoint disks in the plane $z = 0$ in $\\RR^3$."
+title: Homology of the plane union a cylinder attached along two disjoint circles
 classification:
   areas:
   - topology

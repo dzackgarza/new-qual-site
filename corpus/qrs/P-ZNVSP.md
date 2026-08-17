@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZNVSP
 kind: problem
-title: "Suppose $f: \\HH\\union \\RR\\to \\CC$ satisfies the following: $f(i) = i$ $f$ is continuous $f$ is\u2026"
+title: Density of $f(\mathbb{H})$ for a holomorphic map of the half-plane real precisely on $\mathbb{R}$
 classification:
   areas:
   - complex-analysis

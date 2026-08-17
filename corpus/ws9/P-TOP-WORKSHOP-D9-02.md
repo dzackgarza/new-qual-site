@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-02
 kind: problem
-title: 'Compute the fundamental group and homology of a degree-four circle mapping torus'
+title: Fundamental group and homology of the mapping torus of $z\mapsto z^4$ on $S^1$
 classification:
   areas:
   - topology

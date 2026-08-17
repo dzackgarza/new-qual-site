@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5HMI7
 kind: problem
-title: "We can note that since $f$ has 4 roots, the Galois group $G$ of its sp\u2026"
+title: Galois group of a quartic with exactly two real roots is $S_4$ or $D_4$
 classification:
   areas:
   - algebra

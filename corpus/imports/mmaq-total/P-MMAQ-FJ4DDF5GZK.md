@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FJ4DDF5GZK
 kind: problem
-title: Let $K/F$ be a finite Galois extension and let $n=[K:F]$. There is a…
+title: The Galois module $K$ is the regular representation, and cyclic Kummer generators
 classification:
   areas:
   - algebra

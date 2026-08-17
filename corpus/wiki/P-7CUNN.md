@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7CUNN
 kind: problem
-title: "$\\displaystyle \\int \\frac {x^3 + 4x^2}{x^2 + 4x + 3} ~dx = \\color{blue} {\\frac {1}{2} x^2 - \\frac {9}{2} \\ln (x + 3) + \\frac {3}{2} \\ln (x+1)}$ Solution: $\\frac {x^3 + 4x^2}{x^2 + 4x + 3} = x - \\frac {9}{2} \\cdot \\frac {1}{x + 3} + \\frac {3}{2} \\cdot \\frac {1}{x + 1}$\u2026"
+title: Integrals of rational functions by long division and partial fractions
 classification:
   areas:
   - prelim

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QQLLL
 kind: problem
-title: Recall that an inner automorphism of a group is an automorphism…
+title: An outer automorphism of $S_6$ from a transitive embedding $S_5\hookrightarrow S_6$
 classification:
   areas:
   - algebra

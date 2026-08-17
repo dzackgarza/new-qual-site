@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XYYRM
 kind: problem
-title: "Facts used: Every homeomorphism induces isomorphisms on\u2026"
+title: No homeomorphism of $\CP^2$ sends $\CP^1$ to a disjoint copy of itself
 classification:
   areas:
   - topology

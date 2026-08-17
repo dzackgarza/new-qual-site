@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-06
 kind: problem
-title: 'Compute the limit of a square-root difference sequence'
+title: $\lim_{n\to\infty}\sqrt{n}(\sqrt{n+1}-\sqrt{n})=\frac12$
 classification:
   areas:
   - real-analysis

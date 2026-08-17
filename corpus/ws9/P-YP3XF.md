@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YP3XF
 kind: problem
-title: Determine whether there is a nonzero smooth compactly supported functi…
+title: No nonzero compactly supported smooth function has compactly supported Fourier transform
 classification:
   areas:
   - real-analysis

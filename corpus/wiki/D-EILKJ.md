@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-EILKJ
 kind: definition
-title: "Compact: A topological space $(X, \\tau)$ is compact iff every open cover has a\u2026"
+title: Compact space
 classification:
   areas:
   - topology

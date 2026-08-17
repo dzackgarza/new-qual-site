@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RGBUN
 kind: problem
-title: Evaluate $\int_0^\infty \frac{\log x}{x^2+2}dx$ by contour integration…
+title: Contour integral $\int_0^\infty\frac{\log x}{x^2+2}\,dx$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KUOXT
 kind: exercise
-title: "Show that if additionally $\\abs{\\phi(x)} \\leq c(1 + \\abs{x})^{-n-\\eps}$ for some $c,\\eps>0$, then this converges\u2026"
+title: Almost everywhere and uniform convergence of approximations to the identity
 classification:
   areas:
   - real-analysis

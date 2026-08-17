@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3YESG
 kind: problem
-title: "State the standard Schwarz reflection principle involving\u2026"
+title: Schwarz reflection across the real axis, and holomorphic functions real on the circle
 classification:
   areas:
   - complex-analysis

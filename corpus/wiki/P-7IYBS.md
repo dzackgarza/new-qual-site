@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7IYBS
 kind: problem
-title: "Note that if $A = 0$ or $I$ then $A$ is patently diagonal, so suppose\u2026"
+title: Matrices satisfying $A^2=A$ are diagonalizable
 classification:
   areas:
   - algebra

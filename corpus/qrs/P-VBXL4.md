@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VBXL4
 kind: problem
-title: "Apply Rouch\u00e9's Theorem to prove the Fundamental Theorem of\u2026"
+title: Fundamental theorem of algebra via Rouché's theorem
 classification:
   areas:
   - complex-analysis

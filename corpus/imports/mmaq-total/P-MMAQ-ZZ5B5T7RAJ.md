@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ZZ5B5T7RAJ
 kind: problem
-title: "Let $f_{n}(x)=n x(1-x)^{n}, \\quad n \\in \\mathbb{N}$ Show that $f_n \\to 0$ pointwise but not uniformly on $[0, 1]$."
+title: $nx(1-x)^n\to 0$ pointwise but not uniformly on $[0,1]$, and $\lim\int_0^1 n(1-x)^n\sin x\,dx=0$
 classification:
   areas:
   - real-analysis

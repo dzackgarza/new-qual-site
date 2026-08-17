@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-I73ZD
 kind: problem
-title: "Let $(M, d_M)$, $(N, d_N)$ be metric spaces. Define"
+title: The sum metric $d_M+d_N$ on $M\times N$, and compactness of a product of compact sets
 classification:
   areas:
   - real-analysis

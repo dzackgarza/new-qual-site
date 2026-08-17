@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YVNUD
 kind: problem
-title: "Let $f(z) \\in H({\\mathbb D})$, $\\text{Re}(f(z)) >0$ and $f(0)= a>0$."
+title: 'Schwarz lemma for holomorphic maps of the disk into the right half-plane: $\bigl|\frac{f(z)-a}{f(z)+a}\bigr|\le|z|$ and $|f''(0)|\le 2a$'
 classification:
   areas:
   - complex-analysis

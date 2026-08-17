@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FPWLY
 kind: problem
-title: Suppose that $f \colon [0,2] \to \mathbb{R}$ is continuous on
+title: $f(0)=f(2)=0$ and $f(c)=1$ imply $|f'|>1$ somewhere on $(0,2)$
 classification:
   areas:
   - real-analysis

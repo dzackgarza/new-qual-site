@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SMK7Q
 kind: problem
-title: "Suppose $f:\\DD\\to\\DD$ is analytic and admits a continuous extension $\\tilde f: \\bar \\DD \\to \\bar \\DD$ such\u2026"
+title: An analytic self-map of the disk with $|f|=1$ on the circle is a finite Blaschke product
 classification:
   areas:
   - complex-analysis

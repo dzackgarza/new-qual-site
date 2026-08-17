@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FC62S
 kind: problem
-title: Assume that $X$ is a reflexive Banach space and $\phi$ is a continuous…
+title: Every functional on a reflexive Banach space attains its norm; a counterexample in $\ell^1$
 classification:
   areas:
   - real-analysis

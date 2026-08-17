@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4KVTJ
 kind: problem
-title: "Let $\\gamma$ be a piecewise smooth simple closed curve with interior\u2026"
+title: Cauchy integral of $f$ on a simple closed curve, equal to $A$ inside and $-f(z)+A$ outside, when $\lim_{z\to\infty}f(z)=A$
 classification:
   areas:
   - complex-analysis

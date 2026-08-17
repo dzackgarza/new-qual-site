@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-ENQNQKRU6T
 kind: problem
-title: Let $R$ be a ring with the property that $a^2=a$ for all $a\in R$.
+title: 'Rings with $a^2=a$: Jacobson radical, characteristic, commutativity, and finite rings isomorphic to $(\ZZ/2\ZZ)^d$'
 classification:
   areas:
   - algebra

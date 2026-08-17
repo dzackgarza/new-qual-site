@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-XZWER
 kind: exercise
-title: "Show that $\\sin(z) = z$ has infinitely many solutions in $\\CC$."
+title: $\sin z=z$ has infinitely many solutions in $\CC$
 classification:
   areas:
   - complex-analysis

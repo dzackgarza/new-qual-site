@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HBWN6
 kind: problem
-title: "Let $f, g\\in L^1(\\RR)$."
+title: $f(y)g(x-y)\in L^1(\RR^2)$ and $\|f*g\|_1\le\|f\|_1\|g\|_1$ for $f,g\in L^1(\RR)$
 classification:
   areas:
   - real-analysis

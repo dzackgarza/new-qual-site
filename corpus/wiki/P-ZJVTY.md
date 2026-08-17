@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZJVTY
 kind: problem
-title: "The claim is that every element in $M \\definedas R^n/\\im A$ is torsio\u2026"
+title: $R^n/\im A$ is torsion iff $\operatorname{rank} A=n$ iff the Smith form of $A$ has $n$ nonzero invariant factors
 classification:
   areas:
   - algebra

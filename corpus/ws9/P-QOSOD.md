@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QOSOD
 kind: problem
-title: "Let $D = \\{z \\in \\mathbb{C} : |z| < 1\\}$ denote the unit disk. What is…"
+title: Maximum of $|f'(1/2)|$ for holomorphic self-maps of the disk with $f(1/2)=3/4$
 classification:
   areas:
   - real-analysis

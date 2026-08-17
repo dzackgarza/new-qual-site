@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IRNN2
 kind: problem
-title: "Let $f$ be analytic on a region $R$ and suppose $f'(z_0) \\neq 0$ for s\u2026"
+title: $\int_C \frac{dz}{f(z)-f(z_0)}=\frac{2\pi i}{f'(z_0)}$ for a small circle about a noncritical point
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O2PWG
 kind: problem
-title: "Show that every compact set is closed and bounded. Show that\u2026"
+title: Compact sets are closed and bounded, complete totally bounded sets are compact, and $\dist(K,F)>0$
 classification:
   areas:
   - real-analysis

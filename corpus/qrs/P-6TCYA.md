@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6TCYA
 kind: problem
-title: "Let $P$ be a finite $p\\dash$group. Prove that every nontrivial normal\u2026"
+title: Every nontrivial normal subgroup of a finite $p$-group meets the center
 classification:
   areas:
   - algebra

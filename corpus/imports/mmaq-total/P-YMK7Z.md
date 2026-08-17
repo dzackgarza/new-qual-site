@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YMK7Z
 kind: problem
-title: Let $F$ be a field, and let $R$ be the subring of $F[X]$ of
+title: The subring of $F[X]$ of polynomials with vanishing $X$-coefficient is not a UFD
 classification:
   areas:
   - algebra

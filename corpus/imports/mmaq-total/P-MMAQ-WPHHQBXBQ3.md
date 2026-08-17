@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WPHHQBXBQ3
 kind: problem
-title: Evaluate the improper integral
+title: $\int_0^\infty\frac{x^2}{(x^2+1)(x^2+4)}\,dx$
 classification:
   areas:
   - complex-analysis

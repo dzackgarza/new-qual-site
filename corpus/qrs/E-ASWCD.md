@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ASWCD
 kind: exercise
-title: "Show that continuity of measure from above/below holds for\u2026"
+title: Continuity of outer measure from above and below
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FCTXH
 kind: exercise
-title: "Prove that $\\displaystyle{f(z)=-\\frac{1}{2}\\left(z+\\frac{1}{z}\\right)}$ is a conformal map from the half disc $\\{z=x+iy:\\ |z|<1,\\ y>0\\}$ to $\\HH \\da \\{z=x+iy:\\ y>0\\}$."
+title: $f(z)=-\frac12\bigl(z+\frac1z\bigr)$ maps the upper half-disk conformally onto the upper half-plane
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IBUYO
 kind: problem
-title: "If $M$ is free abelian, how can I put quotients of M in some standard\u2026"
+title: Smith normal form of quotients of a free abelian group, and the Euclidean-domain case
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2TVO4
 kind: problem
-title: Let $p < q$ be two distinct odd primes such that $p \nmid q - 1$. Let…
+title: The splitting field of $(x^p-2)(x^q-2)$ over $\mathbb{Q}$
 classification:
   areas:
   - prelim

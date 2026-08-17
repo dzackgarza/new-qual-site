@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YPGAW
 kind: problem
-title: "For each natural number $n$, let $f_n : [0,1] \\to \\mathbb{R}$ be a seq…"
+title: $L^1$ convergence implies subsequence a.e. convergence, but not uniform convergence
 classification:
   areas:
   - real-analysis

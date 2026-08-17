@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EQGG7
 kind: problem
-title: "Prove that for $a> 0$, $z\\tan z - a$ has only real roots."
+title: $z\tan z-a$ has only real roots for $a>0$
 classification:
   areas:
   - complex-analysis

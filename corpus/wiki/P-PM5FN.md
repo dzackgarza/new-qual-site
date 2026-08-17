@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PM5FN
 kind: problem
-title: "Let $R>0$. Suppose $f$ is holomorphic on $\\ts{z\\st \\abs{z} < 3R}$. Let"
+title: Bounds relating $\sup_{|z|\le R}|f|$ and $\sup_{|z|\le R}|f'|$ for holomorphic $f$ on $|z|<3R$
 classification:
   areas:
   - complex-analysis

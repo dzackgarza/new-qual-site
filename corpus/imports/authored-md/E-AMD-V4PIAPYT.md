@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-V4PIAPYT
 kind: exercise
-title: Show that no group of order 36 is simple.
+title: No group of order 36 is simple
 classification:
   areas:
   - algebra

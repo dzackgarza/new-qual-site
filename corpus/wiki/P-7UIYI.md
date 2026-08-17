@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7UIYI
 kind: problem
-title: "Let $a_n\\neq 0$ and show that"
+title: $\lim|a_{n+1}/a_n|=L$ implies $\lim|a_n|^{1/n}=L$, and the ratio test for the radius of convergence
 classification:
   areas:
   - complex-analysis

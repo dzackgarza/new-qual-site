@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZSFKA
 kind: problem
-title: Let $O$ be the ring of integers of $\mathbf{Q}(\sqrt2)$. Show that $O$…
+title: The ring of integers of $\mathbb{Q}(\sqrt{2})$ is a Euclidean domain
 classification:
   areas:
   - prelim

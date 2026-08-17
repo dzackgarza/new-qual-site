@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EUIAS
 kind: problem
-title: "Let $U$ be a unitary operator on $H$ a Hilbert space, let $M \\da \\ts{x\\in H \\st Ux = x}$, let $P$\u2026"
+title: von Neumann's mean ergodic theorem for a unitary operator
 classification:
   areas:
   - real-analysis

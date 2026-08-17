@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5HMKSRNSGM
 kind: problem
-title: "Let $f_{n}(x)=a e^{-n a x}-b e^{-n b x} \\quad \\text{ where } 0 < a < b$ Show that $\\sum_{n=1}^{\\infty}\\left|f_{n}\\right| \\text { is not in } L^{1}([0, \\infty), m)$"
+title: $\sum|ae^{-nax}-be^{-nbx}|$ is not integrable, while $\sum(ae^{-nax}-be^{-nbx})$ has integral $\ln(b/a)$
 classification:
   areas:
   - real-analysis

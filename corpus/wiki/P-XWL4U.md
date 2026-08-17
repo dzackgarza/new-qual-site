@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XWL4U
 kind: problem
-title: "Let $\\{f_k\\}$ be any sequence of functions in $L^2([0, 1])$ satisfying\u2026"
+title: If $f_k\to f$ a.e. with $\|f_k\|_2\leq M$ on $[0,1]$, then $f\in L^2$, $\|f\|_2\leq M$, and $\int f_k\to\int f$
 classification:
   areas:
   - real-analysis

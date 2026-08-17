@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CV2MR
 kind: problem
-title: "Prove that $f(z) = \\abs{z}^2$ has a derivative at $z=0$ and nowhere else. The easy\u2026"
+title: $|z|^2$ is complex-differentiable only at $0$
 classification:
   areas:
   - complex-analysis

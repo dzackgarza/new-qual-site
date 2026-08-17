@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YZ3BU
 kind: problem
-title: "If $X$ is a topological space and $S \\subset X$, define in terms of open\u2026"
+title: Disconnectedness of a subspace via sets with disjoint ambient closures
 classification:
   areas:
   - topology

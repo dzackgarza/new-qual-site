@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C6SRA
 kind: problem
-title: For each of the following, either give an example or indicate that non…
+title: Examples of vanishing tensors over $\mathbf{Z}$ and $\mathbf{Q}$, torsion-free nonfree modules, maximal nonprime ideals, non-Noetherian rings, and non-ideal centers
 classification:
   areas:
   - prelim

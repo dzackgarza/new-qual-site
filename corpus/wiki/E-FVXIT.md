@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FVXIT
 kind: exercise
-title: "Suppose $f: \\DD\\to \\HH$ is analytic and satisfies $f(0) = 2$. Find a sharp upper\u2026"
+title: Sharp bound on $|f'(0)|$ for $f:\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
 classification:
   areas:
   - complex-analysis

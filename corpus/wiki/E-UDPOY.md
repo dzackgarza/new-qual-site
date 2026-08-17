@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-UDPOY
 kind: exercise
-title: "Suppose $f$ is holomorphic on $\\Delta^*$ and $\\Re(f) \\geq 0$."
+title: A holomorphic function on $\Delta^*$ with nonnegative real part has a removable singularity at $0$
 classification:
   areas:
   - complex-analysis

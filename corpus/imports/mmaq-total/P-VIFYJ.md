@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VIFYJ
 kind: problem
-title: Let $A = \CC[x,y]/(y^2-(x-1)^3 - (x-1)^2)$.
+title: $\CC[x,y]/(y^2-(x-1)^3-(x-1)^2)$ is a domain, its real points, and its integral closure
 classification:
   areas:
   - algebra

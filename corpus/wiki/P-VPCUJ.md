@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VPCUJ
 kind: problem
-title: "Let \\( \\ts{ f_k } _{k=1}^{\\infty } \\) be a sequence of extended real-v\u2026"
+title: The supremum and pointwise limit of measurable functions are measurable
 classification:
   areas:
   - real-analysis

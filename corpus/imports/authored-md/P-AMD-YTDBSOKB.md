@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-YTDBSOKB
 kind: problem
-title: For each of these actions of $\mathbb{Z}_2$ on $S^n$, compute…
+title: $\pi_1(S^n/\ZZ_2)$ for three $\ZZ_2$-actions
 classification:
   areas:
   - topology

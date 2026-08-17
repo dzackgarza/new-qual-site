@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZKKJ
 kind: problem
-title: "Let $R$ be a commutative ring with no nonzero nilpotent\u2026"
+title: Units of $R[x]$ for reduced $R$, and units of $\mathbb{Z}_4[x]$
 classification:
   areas:
   - algebra

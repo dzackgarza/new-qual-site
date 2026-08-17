@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JZSN3
 kind: problem
-title: "Let $p$ be a prime number and let $F$ be a field of characteristic $p$\u2026"
+title: $x^p-a$ is irreducible in characteristic $p$ if $a$ is not a $p$th power
 classification:
   areas:
   - algebra

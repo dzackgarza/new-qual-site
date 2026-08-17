@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BZIXT
 kind: problem
-title: "Parts: Let $x, y \\in X$ and suppose $f(x) = f(y)$."
+title: A left inverse forces $f$ injective and $g$ surjective, but neither need be bijective
 classification:
   areas:
   - prelim

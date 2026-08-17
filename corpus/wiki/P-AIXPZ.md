@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AIXPZ
 kind: problem
-title: "Let $A$ be a square matrix over the complex numbers. Suppose\u2026"
+title: Invertible matrices over $\CC$ with $A^{2019}$ diagonalizable are diagonalizable
 classification:
   areas:
   - algebra

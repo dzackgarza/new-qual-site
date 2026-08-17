@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CH37V
 kind: problem
-title: Let $\mathbb{R}/\mathbb{Z}$ denote the torus (whose elements we write…
+title: Equidistribution of $n\alpha\bmod 1$ for continuous functions and for interval indicators
 classification:
   areas:
   - real-analysis

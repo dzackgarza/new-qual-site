@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B4HPX
 kind: problem
-title: "Let $f(z)$ be an analytic function on $|z|<1$."
+title: Holomorphy of both $f(z)$ and $f(\bar{z})$ on the disk forces $f$ constant
 classification:
   areas:
   - complex-analysis

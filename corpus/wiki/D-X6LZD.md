@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-X6LZD
 kind: definition
-title: "Dense: A subspace $Q\\subset X$ is dense iff every neighborhood of every point\u2026"
+title: Dense subspace
 classification:
   areas:
   - topology

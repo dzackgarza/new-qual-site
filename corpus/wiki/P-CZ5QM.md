@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CZ5QM
 kind: problem
-title: "Assume $f_n \\in H(\\Omega)$ is a sequence of holomorphic functions on t\u2026"
+title: Locally bounded holomorphic sequences converging on a set with a limit point converge uniformly on compacta
 classification:
   areas:
   - complex-analysis

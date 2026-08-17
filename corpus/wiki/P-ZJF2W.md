@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZJF2W
 kind: problem
-title: "If we think of the Galois group of a polynomial as contained in $S_n$,\u2026"
+title: When the Galois group of a polynomial is contained in $A_n$
 classification:
   areas:
   - algebra

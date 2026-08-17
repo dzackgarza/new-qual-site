@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HH3JN
 kind: problem
-title: "Prove that symmetric matrices have real eigenvalues and can be diagona\u2026"
+title: Spectral theorem for real symmetric matrices
 classification:
   areas:
   - algebra

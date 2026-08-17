@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-TZW5UBV4BE
 kind: problem
-title: "Give the definition of a covering space $\\hat{X}$ (and covering map $p : \\hat{X} \\to X$\u2026"
+title: Covering maps inject on $\pi_1$, and a $\pi_1$-isomorphism is a homeomorphism
 classification:
   areas:
   - topology

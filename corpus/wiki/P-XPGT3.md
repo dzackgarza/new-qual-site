@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XPGT3
 kind: problem
-title: "Let $R$ be a ring with $1$ and let $M$ be a left \\(R\\dash\\)module."
+title: $IM$ is a submodule, and $f$ is surjective if $I$ is nilpotent and $\overline{f}:M/IM\to N/IN$ is surjective
 classification:
   areas:
   - algebra

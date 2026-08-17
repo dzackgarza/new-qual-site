@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VH7IY
 kind: problem
-title: "Show that in polar coordinates, the Cauchy-Riemann equations\u2026"
+title: Polar Cauchy–Riemann equations and holomorphy of the principal logarithm
 classification:
   areas:
   - complex-analysis

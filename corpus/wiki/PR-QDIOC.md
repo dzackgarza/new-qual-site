@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-QDIOC
 kind: proposition
-title: "The sequence $A \\mapsvia{f_1} B \\mapsvia{f_2} C$ is exact if and only\u2026"
+title: Exactness of $A\to B\to C$ iff $\im f_1=\ker f_2$
 classification:
   areas:
   - topology

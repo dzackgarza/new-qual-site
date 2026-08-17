@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PJA4A
 kind: problem
-title: "Suppose that $F\\subset E$ are fields such that $E/F$ is Galois and $\\abs{\\gal(E/F)} = 14$."
+title: Unique quadratic subfield of a Galois extension of degree $14$, and two distinct degree-$7$ subfields imply a nonabelian Galois group
 classification:
   areas:
   - algebra

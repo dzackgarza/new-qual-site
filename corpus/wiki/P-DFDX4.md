@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DFDX4
 kind: problem
-title: Let the power series series
+title: Power series $\sum a_n x^n$ and $\sum b_n x^n$ with radii of convergence $R_1$ and $R_2$
 classification:
   areas:
   - real-analysis

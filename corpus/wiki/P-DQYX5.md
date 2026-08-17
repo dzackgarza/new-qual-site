@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DQYX5
 kind: problem
-title: "Let $f, g\\in L^1(\\RR^n)$ and give a definition of $f\\ast g$."
+title: Convolution of $L^1$ functions, vanishing at infinity, and the Fourier inversion formula
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W5LVB
 kind: problem
-title: a. List all abelian groups of order 60.
+title: Abelian groups of order $60$, and $\mathbb{Q}[x]$-modules of dimension $4$ annihilated by $x^8-1$
 classification:
   areas:
   - prelim

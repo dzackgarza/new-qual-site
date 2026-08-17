@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WA5RE
 kind: problem
-title: "Let $F$ be a field and let $f(x) \\in F[x]$. Define what a splitting field of $f(x)$\u2026"
+title: Splitting fields, and finite extensions of finite fields as Galois splitting fields
 classification:
   areas:
   - algebra

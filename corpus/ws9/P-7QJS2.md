@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7QJS2
 kind: problem
-title: a. Define what is meant by a normal family of holomorphic functions on…
+title: Normal families of holomorphic functions, and derivatives of a normal family on the disk
 classification:
   areas:
   - real-analysis

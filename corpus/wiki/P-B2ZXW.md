@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-B2ZXW
 kind: problem
-title: "Let $f, g$ be Lebesgue integrable on $\\RR$ and let $g_n(x) \\da g(x- n)$. Prove that $\\lim_{n\\to \\infty } \\norm{f + g_n}_1 = \\norm{f}_1 + \\norm{g}_1$ For $f\\in L^1(X)$\u2026"
+title: $\lim_n\|f+g(\,\cdot\,-n)\|_1=\|f\|_1+\|g\|_1$ for $f,g\in L^1(\RR)$
 classification:
   areas:
   - real-analysis

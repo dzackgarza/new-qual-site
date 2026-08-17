@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AKPY4
 kind: problem
-title: "Suppose $D$ is a domain and $f, g$ are analytic on $D$. Prove that if $fg = 0$\u2026"
+title: If $fg=0$ on a domain then $f\equiv 0$ or $g\equiv 0$
 classification:
   areas:
   - complex-analysis

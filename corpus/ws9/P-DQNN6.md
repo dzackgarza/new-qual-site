@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DQNN6
 kind: problem
-title: We say a sequence $\{a_n\}$ in $[0,1]$ is equi-distributed if for all…
+title: Equidistribution on $[0,1]$ iff empirical measures converge weakly against $C[0,1]$
 classification:
   areas:
   - real-analysis

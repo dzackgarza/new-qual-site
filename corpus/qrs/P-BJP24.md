@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BJP24
 kind: problem
-title: "(Cauchy's formula for \"exterior\" region) Let $\\gamma$ be piecewise"
+title: Cauchy's formula for an exterior region
 classification:
   areas:
   - complex-analysis

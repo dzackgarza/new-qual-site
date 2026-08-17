@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VVXKF
 kind: problem
-title: "Let $G$ be a finite group of order $p^k m$ where $p$ is prime and $(p,m) = 1$."
+title: The number $n_p$ of Sylow $p$-subgroups, and a nonabelian simple group has no subgroup of index $\le 4$
 classification:
   areas:
   - prelim

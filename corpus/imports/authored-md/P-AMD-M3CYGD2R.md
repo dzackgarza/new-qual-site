@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-M3CYGD2R
 kind: problem
-title: 'Compute the homology of:'
+title: Homology of $\RP^2$, $T^2$, and $S^1 \cup_{z^n} B^2$
 classification:
   areas:
   - topology

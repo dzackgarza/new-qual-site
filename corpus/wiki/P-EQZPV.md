@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EQZPV
 kind: problem
-title: "Let $X$ be the topological space obtained by identifying three distinc\u2026"
+title: Homology of $S^2$ with three distinct points identified
 classification:
   areas:
   - topology

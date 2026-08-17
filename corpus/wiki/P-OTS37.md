@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OTS37
 kind: problem
-title: "Describe the left, right, and two-sided ideals in the ring of square m\u2026"
+title: Left, right, and two-sided ideals in $M_n(K)$, and simple ideals in $\End_K(V)$
 classification:
   areas:
   - algebra

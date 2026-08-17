@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2GXZ2
 kind: problem
-title: "Let $R$ be a commutative ring and $a\\in R$."
+title: $a\in R$ is not nilpotent if and only if $\phi(a)$ is a unit for some ring homomorphism $\phi:R\to S$
 classification:
   areas:
   - algebra

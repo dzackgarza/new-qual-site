@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-WFUONDWI
 kind: problem
-title: Let $\{u_n\}_{n=1}^∞$ be an orthonormal sequence in a Hilbert space…
+title: Bessel's inequality and the Riesz–Fischer theorem
 classification:
   areas:
   - real-analysis

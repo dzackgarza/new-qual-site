@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PQGS4
 kind: problem
-title: "Let $F_1, F_2$ be free, so they have bases $\\mathcal B_1 = \\theset{\\vector b_{1, k}}, \\mathcal B_2 = \\theset{\\vector b_{2, k}}$."
+title: $\operatorname{rank}(F_1\oplus F_2)=\operatorname{rank} F_1+\operatorname{rank} F_2$ for free modules with the invariant dimension property
 classification:
   areas:
   - algebra

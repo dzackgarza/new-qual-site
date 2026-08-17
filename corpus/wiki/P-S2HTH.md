@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S2HTH
 kind: problem
-title: "Let $G=S_5$, the symmetric group on 5 elements. Identify"
+title: Conjugacy classes in $S_5$ by cycle type, corresponding to partitions of $5$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QYKXK
 kind: problem
-title: This question concerns the polynomial ring $R=\mathbb Z[x,y]$ and…
+title: $(5,x^2+2)$ is prime in $\mathbb{Z}[x,y]$ with infinitely many maximal extensions
 classification:
   areas:
   - algebra

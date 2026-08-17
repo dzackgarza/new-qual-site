@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-U7G2X
 kind: problem
-title: "Let $M$ be a closed, connected, oriented 4-manifold such that $H_2(M; \\ZZ)$\u2026"
+title: A closed connected oriented $4$-manifold with $H_2(M;\ZZ)$ of rank $1$ admits no free $\ZZ_2$ action
 classification:
   areas:
   - topology

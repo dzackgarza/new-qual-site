@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-2SZMALTL
 kind: exercise
-title: Show that every $p\dash$group is nilpotent.
+title: Finite $p$-groups are nilpotent
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-SC7OQ4YJZ6
 kind: problem
-title: a. Use the Lefschetz fixed point theorem to show that any degree-one…
+title: Fixed points of degree-one maps $S^2\to S^2$
 classification:
   areas:
   - topology

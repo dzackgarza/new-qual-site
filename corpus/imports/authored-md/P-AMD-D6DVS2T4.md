@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-D6DVS2T4
 kind: problem
-title: "Let $f$ be a non-negative function on $\\RR^n$ and $\\mathcal A = \\{(x, t) \u2208 \\RR^n \\times \\RR : 0 \\leq t \\leq f (x)\\}$."
+title: A nonnegative $f$ is Lebesgue measurable iff its subgraph $\mathcal A$ is, and $m(\mathcal A)=\int f=\int_0^\infty m(\{f\ge t\})\,dt$
 classification:
   areas:
   - real-analysis

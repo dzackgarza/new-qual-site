@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QWEAV
 kind: problem
-title: "Let $N$ be a positive integer, and let $G$ be a finite group of\u2026"
+title: Cayley's theorem, the sign of left translation, and nonsimplicity of groups of order $N\equiv 2\pmod{4}$
 classification:
   areas:
   - algebra

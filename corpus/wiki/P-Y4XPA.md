@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Y4XPA
 kind: problem
-title: "Consider the space of functions from the natural numbers to $\\CC$ endo\u2026"
+title: The ring of arithmetic functions under Dirichlet convolution
 classification:
   areas:
   - algebra

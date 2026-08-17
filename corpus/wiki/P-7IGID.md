@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7IGID
 kind: problem
-title: "Describe, as explicitly as you can, two different (non-homeomorphic) c\u2026"
+title: Two non-homeomorphic connected double covers of $\RP^2\vee\RP^3$
 classification:
   areas:
   - topology

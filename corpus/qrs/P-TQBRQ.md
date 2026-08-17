@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TQBRQ
 kind: problem
-title: "Suppose $f$ is continuous and nonvanishing on $\\bar \\DD$, and\u2026"
+title: A nonvanishing holomorphic function with $|f|=1$ on the unit circle is constant
 classification:
   areas:
   - complex-analysis

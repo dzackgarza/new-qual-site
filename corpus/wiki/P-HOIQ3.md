@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HOIQ3
 kind: problem
-title: "Let X be a noncompact locally compact Hausdorff space, with\u2026"
+title: The one-point compactification of a locally compact Hausdorff space, and those of $(0,1)$ and $\RR^2$
 classification:
   areas:
   - topology

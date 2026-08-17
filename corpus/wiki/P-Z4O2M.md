@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z4O2M
 kind: problem
-title: "Let $R$ and $S$ be commutative rings with multiplicative"
+title: Every nonzero homomorphism from a field is injective, and whether the same holds for domains
 classification:
   areas:
   - algebra

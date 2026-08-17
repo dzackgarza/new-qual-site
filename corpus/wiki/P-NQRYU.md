@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NQRYU
 kind: problem
-title: "Let $A = (a_{ij})$ and consider $\\vector \\epsilon_{ij}$, the matrix w\u2026"
+title: The center of $M_n(R)$ is $Z(R)I_n$
 classification:
   areas:
   - algebra

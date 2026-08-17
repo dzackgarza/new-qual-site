@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IMVV7
 kind: problem
-title: Let $k$ and $n$ be positive integers with $k \le n$. Give the definiti…
+title: Permutations, combinations, and the number of injections from a $k$-set to an $n$-set
 classification:
   areas:
   - prelim

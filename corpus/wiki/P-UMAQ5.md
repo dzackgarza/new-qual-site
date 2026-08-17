@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMAQ5
 kind: problem
-title: "Give an example of a continuous $f\\in L^1(\\RR)$ such that $f(x) \\not\\to 0$\u2026"
+title: A continuous $f\in L^1(\RR)$ need not tend to $0$ at infinity, but a uniformly continuous one must
 classification:
   areas:
   - real-analysis

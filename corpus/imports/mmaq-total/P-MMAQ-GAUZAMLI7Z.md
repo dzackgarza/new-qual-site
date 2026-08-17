@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-GAUZAMLI7Z
 kind: problem
-title: For a ring $R$, let $U(R)$ denote the multiplicative group of units…
+title: $\ZZ[\sqrt{-5}]$ is not a PID
 classification:
   areas:
   - algebra

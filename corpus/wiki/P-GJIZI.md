@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GJIZI
 kind: problem
-title: "a. Show that $f\\in L^1(\\RR^n) \\implies \\abs{f(x)} < \\infty$ almost eve\u2026"
+title: $L^1$ functions are finite a.e., absolutely summable series in $L^1$, and a dominated-convergence limit
 classification:
   areas:
   - real-analysis

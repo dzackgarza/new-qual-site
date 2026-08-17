@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-OYP3Y
 kind: exercise
-title: "Show that any map between compact Hausdorff spaces must be proper."
+title: Continuous maps between compact Hausdorff spaces are proper
 classification:
   areas:
   - topology

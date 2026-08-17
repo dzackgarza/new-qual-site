@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-W7RQ2
 kind: problem
-title: "Show that for each \\( \\epsilon>0 \\) the following function is the Four\u2026"
+title: $(1+|\xi|^2)^{-\epsilon}$ is the Fourier transform of an $L^1$ function
 classification:
   areas:
   - real-analysis

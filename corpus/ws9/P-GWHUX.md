@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GWHUX
 kind: problem
-title: a. Determine the elementary divisors and invariant factors of the Abel…
+title: Elementary divisors and invariant factors of $\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9$; abelian groups of order $2700$
 classification:
   areas:
   - prelim

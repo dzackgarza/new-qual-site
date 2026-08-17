@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KVE3S
 kind: problem
-title: "Show that the space $C^1([a, b])$ is a Banach space when equipped with\u2026"
+title: $C^1([a,b])$ is Banach under $\sup|f|+\sup|f'|$
 classification:
   areas:
   - real-analysis

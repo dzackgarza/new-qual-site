@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LW3KB
 kind: problem
-title: "Let $V$ be a vector space over a field $F$ and $V\\dual$ its dual."
+title: $Y\subset X$ implies $X^\perp\subseteq Y^\perp$, and $Y^\perp/X^\perp\hookrightarrow(X/Y)^*$, for a nondegenerate symmetric bilinear form
 classification:
   areas:
   - algebra

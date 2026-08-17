@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-YUGGSYZGIM
 kind: problem
-title: Let $f(x)=a_nx^n+a_{n-1}x^{n-1}+\dots+a_0\in\mathbb Z[x]$
+title: $\ZZ[x]/(f)$ is a finitely generated $\ZZ$-module if and only if the leading coefficient of $f$ is $\pm 1$
 classification:
   areas:
   - algebra

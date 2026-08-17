@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E4XWH
 kind: problem
-title: "For each of the following, either give an example or explain\u2026"
+title: A nonabelian group with all proper subgroups normal, abelian groups with non-normal subgroups, groups of order $p^2$, missing subgroup orders, infinite torsion groups, and non-isomorphic subgroups of order $p^k$
 classification:
   areas:
   - prelim

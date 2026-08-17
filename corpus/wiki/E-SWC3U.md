@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SWC3U
 kind: exercise
-title: "Let $z, w$ be complex numbers, such that $\\bar{z} w \\neq 1$."
+title: $\bigl|\frac{w-z}{1-\bar{w}z}\bigr|$ on the closed disk, and $z\mapsto\frac{w-z}{1-\bar{w}z}$ is an automorphism of $\mathbb{D}$
 classification:
   areas:
   - complex-analysis

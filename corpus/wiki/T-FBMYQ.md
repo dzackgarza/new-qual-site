@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-FBMYQ
 kind: theorem
-title: "Excision: Given subspaces $Z \\subseteq A \\subseteq X$ with $\\cl_X(Z) \\subseteq A\\interior$, the inclusion of pairs induces isomorphisms…"
+title: Excision
 classification:
   areas:
   - topology

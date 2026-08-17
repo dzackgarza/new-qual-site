@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-IBDKWV2J
 kind: exercise
-title: Show that Abelian $\implies$ nilpotent
+title: Abelian groups are nilpotent
 classification:
   areas:
   - algebra

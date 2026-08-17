@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ZCJZC
 kind: exercise
-title: "Show that if $H < G$ is a proper subgroup, then $\\Union_{g\\in G} gHg\\inv \\subset G$ is a proper\u2026"
+title: The union of conjugates of a proper subgroup is a proper subset
 classification:
   areas:
   - algebra

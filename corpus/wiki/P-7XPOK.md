@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7XPOK
 kind: problem
-title: "Show that any disjoint intervals is countable. Show that\u2026"
+title: Countable disjoint intervals, open sets in $\RR$ and $\RR^n$, the Cantor set, and Borel–Cantelli
 classification:
   areas:
   - real-analysis

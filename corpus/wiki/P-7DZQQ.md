@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7DZQQ
 kind: problem
-title: "By the Galois correspondence, all intermediate fields will correspond\u2026"
+title: Unique intermediate field of each degree in a cyclic Galois extension
 classification:
   areas:
   - algebra

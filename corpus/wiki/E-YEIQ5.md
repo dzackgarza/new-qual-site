@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-YEIQ5
 kind: problem
-title: Let $f$ be an analytic function on a region $\Omega$. Show that $f$
+title: An analytic function sending a simple closed curve into $\RR$ is constant
 classification:
   areas:
   - complex-analysis

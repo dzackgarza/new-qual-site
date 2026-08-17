@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RVL3K
 kind: problem
-title: "Show that if $E\\subseteq \\RR^n$ is measurable with $\\mu(E) < \\infty$ and $f\\in L^p(X)$ then $\\norm{f}_{L^p(X)} \\converges{p\\to\\infty}\\to \\norm{f}_\\infty$ Is it true that\u2026"
+title: $L^p$ norms tend to $L^\infty$, the converse of dominated convergence, translation continuity, and $L^p$ inclusions
 classification:
   areas:
   - real-analysis

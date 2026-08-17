@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-RAVAC
 kind: exercise
-title: "Let $f$ be entire, and discuss (with proofs and examples) the\u2026"
+title: Singularities at infinity of entire functions with finitely or infinitely many zeros
 classification:
   areas:
   - complex-analysis

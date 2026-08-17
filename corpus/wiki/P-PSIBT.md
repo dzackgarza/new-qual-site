@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PSIBT
 kind: problem
-title: "Compute the following integral carefully justifying each step:"
+title: $\int_0^\infty\frac{\log x}{1+x^3}\,dx$
 classification:
   areas:
   - complex-analysis

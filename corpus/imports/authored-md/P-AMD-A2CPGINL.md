@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-A2CPGINL
 kind: problem
-title: Show that $\pi_1(K)$, the Klein bottle, is given by pairs $(m,n)$…
+title: $\pi_1$ of the Klein bottle as $\ZZ\rtimes\ZZ$, and the torus as double cover
 classification:
   areas:
   - topology

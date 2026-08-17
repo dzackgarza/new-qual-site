@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K4WSJ
 kind: problem
-title: "Prove that TFAE for a M\u00f6bius transformation $T$ given by $T(z) = {az + b \\over cz + d}$: $T$\u2026"
+title: Characterizations of Möbius transformations preserving $\RR\cup\{\infty\}$
 classification:
   areas:
   - complex-analysis

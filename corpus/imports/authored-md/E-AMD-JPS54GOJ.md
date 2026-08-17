@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-JPS54GOJ
 kind: exercise
-title: Show that a field with $p^n$ elements has exactly one subfield of…
+title: Unique subfield of order $p^d$ in a field with $p^n$ elements
 classification:
   areas:
   - algebra

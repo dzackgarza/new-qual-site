@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CGFUQ
 kind: problem
-title: "Let $R$ be a commutative ring."
+title: Definitions of UFD and PID, and a UFD that is not a PID
 classification:
   areas:
   - algebra

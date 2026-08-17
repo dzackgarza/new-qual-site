@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N2FQ7
 kind: problem
-title: "Let $X$ be the space formed by identifying the boundary of a"
+title: $\pi_1$ and homology of a torus with a Möbius band attached along a meridian
 classification:
   areas:
   - topology

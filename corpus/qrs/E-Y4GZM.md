@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-Y4GZM
 kind: exercise
-title: "Show that if $f, g$ are continuous and compactly supported, then\u2026"
+title: Convolution of continuous compactly supported functions is continuous and compactly supported
 classification:
   areas:
   - real-analysis

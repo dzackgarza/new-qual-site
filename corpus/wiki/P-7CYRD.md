@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7CYRD
 kind: problem
-title: "Suppose $(X, d)$ is a metric space. State criteria for continuity of a\u2026"
+title: Open-set, $\varepsilon$-$\delta$, and sequential criteria for continuity in a metric space
 classification:
   areas:
   - topology

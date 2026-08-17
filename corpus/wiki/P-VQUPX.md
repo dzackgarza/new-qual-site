@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VQUPX
 kind: problem
-title: "Suppose $f$ is entire and has Taylor series $\\sum a_n z^n$ about 0."
+title: Taylor coefficients of an entire function as contour integrals, uniform convergence on bounded sets, and uniform convergence on $\mathbb{C}$
 classification:
   areas:
   - complex-analysis

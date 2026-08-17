@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-W56JR
 kind: definition
-title: "Paracompact: A refinement of an open cover $\\mcu \\covers X$ is an open cover $\\mcv\\covers X$ such that\u2026"
+title: Paracompact space
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-4NMAR4LSEK
 kind: problem
-title: Let $a\in\mathbb N$, $a>0$. Compute the Galois group of the…
+title: Galois group of $x^5-5a^4x+a$ over $\QQ$
 classification:
   areas:
   - algebra

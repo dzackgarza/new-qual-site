@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-5TRAOGBWCB
 kind: problem
-title: Let $p$ be a prime, let $\mathbb F_p$ be the $p$-element field,
+title: $x^p-t$ is irreducible over $\mathbb{F}_p(t)$ and splits as a $p$-th power in its splitting field
 classification:
   areas:
   - algebra

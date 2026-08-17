@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KWLRQ
 kind: exercise
-title: "Suppose $f$ is entire and there exist $A, R >0$ and natural number $N$\u2026"
+title: Entire functions with $|f(z)|\ge A|z|^{N}$ at infinity are polynomials of degree at least $N$
 classification:
   areas:
   - complex-analysis

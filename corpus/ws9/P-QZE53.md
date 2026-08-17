@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QZE53
 kind: problem
-title: Let $\mu$ be a finite positive Borel measure on $\mathbb{C}$.
+title: Local integrability of $F(z)=\int_{\CC}\frac{1}{z-w}\,d\mu(w)$, integrability along almost every horizontal line, and $\mu(S)=\frac{1}{2\pi i}\int_{\partial S}F(z)\,dz$ for almost every axis-parallel square
 classification:
   areas:
   - real-analysis

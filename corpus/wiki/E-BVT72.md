@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-BVT72
 kind: problem
-title: (1) Explicitly write down an example of a non-zero analytic function i…
+title: A nonzero analytic function on the disk with infinitely many zeros
 classification:
   areas:
   - complex-analysis

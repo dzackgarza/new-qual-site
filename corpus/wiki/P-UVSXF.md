@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UVSXF
 kind: problem
-title: "$\\displaystyle \\int x\\sqrt {x+1}~dx = \\color {blue} {\\frac {2}{5} (x + 1)^{\\frac {5}{2}} - \\frac {2}{3} (x + 1)^{\\frac {3}{2}}}$ Solution: $u = x + 1$, $du = dx$ Solution\u2026"
+title: Antiderivative of $x\sqrt{x+1}$
 classification:
   areas:
   - prelim

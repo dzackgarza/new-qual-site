@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IT3OF
 kind: problem
-title: "For any integer $n \\geq 2$ let $X_n$ denote the space formed by attach\u2026"
+title: Fundamental group and homology of a $2$-cell attached to $S^1$ by $z\mapsto z^n$, and which $X_n$ is a surface
 classification:
   areas:
   - topology

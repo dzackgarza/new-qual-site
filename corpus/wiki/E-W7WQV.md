@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-W7WQV
 kind: exercise
-title: "Show that any holomorphic function $f$ can be uniformly approximated b\u2026"
+title: Uniform approximation of holomorphic functions by polynomials
 classification:
   areas:
   - complex-analysis

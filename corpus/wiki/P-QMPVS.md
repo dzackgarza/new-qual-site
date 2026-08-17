@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QMPVS
 kind: problem
-title: "a. Prove Holder's inequality:"
+title: Hölder's inequality, Minkowski's inequality, $L^\infty[0,1]$, and $\lim_{p\to\infty}\int_{[0,1]}f^p$
 classification:
   areas:
   - real-analysis

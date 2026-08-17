@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AK3OT
 kind: problem
-title: "Let \\( f_n \\in L^2([0, 1]) \\) for \\( n\\in \\NN \\), and assume that \\( \\norm{f_n}_2 \\leq n^{-51 \\over 100} \\) for all \\( n\\in \\NN \\), $\\hat{f}_n$ is supported in the\u2026"
+title: $L^2([0,1])$ convergence of $\sum f_n$ when $\|f_n\|_2\le n^{-51/100}$ and $\operatorname{supp}\hat f_n\subseteq[2^n,2^{n+1}]$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2GD4H
 kind: problem
-title: "Consider the polynomial $f(x) = x^4 - 7 \\in \\QQ[x]$ and let $E/\\QQ$ be\u2026"
+title: Galois group and intermediate fields of the splitting field of $x^4-7$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZZO3P
 kind: problem
-title: "Prove the Fundamental Theorem of Algebra (using complex\u2026"
+title: The Fundamental Theorem of Algebra
 classification:
   areas:
   - complex-analysis

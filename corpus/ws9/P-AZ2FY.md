@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZ2FY
 kind: problem
-title: For a Radon measure $\mu$, with $\int_{\mathbb{R}^n} d\mu = C$. Prove…
+title: A finite Radon measure satisfies $\mu(B_r(x))\le Cr/\varepsilon$ off a set of small $1$-Hausdorff content
 classification:
   areas:
   - real-analysis

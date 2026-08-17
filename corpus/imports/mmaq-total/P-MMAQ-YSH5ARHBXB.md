@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-YSH5ARHBXB
 kind: problem
-title: Let $R$ be a commutative ring with multiplicative identity. Assume…
+title: The nilradical is contained in every prime, and a unique prime implies every element is nilpotent or a unit
 classification:
   areas:
   - algebra

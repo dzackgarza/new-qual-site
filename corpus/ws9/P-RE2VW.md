@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RE2VW
 kind: problem
-title: Suppose $K/F$ is a Galois extension and that $\mathrm{Gal}(K/F)$ is is…
+title: Minimal polynomial degrees in a Galois extension with group $A_n$
 classification:
   areas:
   - prelim

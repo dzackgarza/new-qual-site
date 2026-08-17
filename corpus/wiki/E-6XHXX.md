@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-6XHXX
 kind: exercise
-title: "Show that $\\RR$ is separable."
+title: $\mathbb{R}$ is separable
 classification:
   areas:
   - topology

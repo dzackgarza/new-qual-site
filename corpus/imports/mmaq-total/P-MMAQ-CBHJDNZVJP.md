@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-CBHJDNZVJP
 kind: problem
-title: Let $R$ be a Noetherian ring. Prove that $R[x]$ and $R[[x]]$ are both
+title: Hilbert Basis Theorem for $R[x]$ and $R[[x]]$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-62SYD
 kind: problem
-title: "Facts used: $\\pi_{\\geq 2}(\\tilde X) \\cong \\pi_{\\geq 2}(X)$ Structure of the universal cover of a wedge\u2026"
+title: $\pi_2(\mathbb{R}^2\cup_{\mathbb{Z}^2}S^2)\cong\mathbb{Z}^{\aleph_0}$
 classification:
   areas:
   - topology

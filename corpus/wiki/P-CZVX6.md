@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CZVX6
 kind: problem
-title: "Let $V$ be a finite dimensional vector space over a field $F$ and let\u2026"
+title: Irreducible characteristic polynomial iff no proper invariant subspaces, and diagonalizability over $\overline{F}$ in characteristic $0$
 classification:
   areas:
   - algebra

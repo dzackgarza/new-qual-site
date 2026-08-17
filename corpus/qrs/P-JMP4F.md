@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JMP4F
 kind: problem
-title: "How many roots does the following polynomial have in the\u2026"
+title: Number of roots of $z^7-4z^3-1$ in $|z|<1$
 classification:
   areas:
   - complex-analysis

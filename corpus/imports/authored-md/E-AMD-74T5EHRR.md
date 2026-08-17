@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-74T5EHRR
 kind: exercise
-title: Show that $Z(S_n) = 1$ for $n\geq 3$
+title: The center of $S_n$ is trivial for $n\geq 3$
 classification:
   areas:
   - algebra

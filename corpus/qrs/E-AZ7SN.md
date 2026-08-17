@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AZ7SN
 kind: exercise
-title: "Show that if $f:X\\to \\RR$ and $X$ is compact then $f$ is bounded and attains\u2026"
+title: A continuous real-valued function on a compact space attains its bounds
 classification:
   areas:
   - topology

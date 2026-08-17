@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EA67C
 kind: problem
-title: Prove the absolute continuity of the Lebesgue integral; in other words…
+title: Absolute continuity of the Lebesgue integral
 classification:
   areas:
   - real-analysis

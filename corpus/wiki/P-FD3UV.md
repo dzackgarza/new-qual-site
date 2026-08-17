@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FD3UV
 kind: problem
-title: "Show that any continuous map $f : \\RP^2 \\to S^1 \\times S^1$ is necessa\u2026"
+title: Every continuous map $\mathbb{RP}^2\to S^1\times S^1$ is null-homotopic
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WWJLP32YTK
 kind: problem
-title: "Prove or disprove each of the following statements. If $f : [0, 1] \\to \\mathbb{R}$ is a\u2026"
+title: Lusin's theorem, Borel sections, and inner-outer approximation of measurable sets
 classification:
   areas:
   - real-analysis

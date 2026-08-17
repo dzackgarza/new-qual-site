@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-04
 kind: problem
-title: 'Compute the homology of a sphere with its polar interval adjoined'
+title: Homology of the unit sphere union the interval from $(0,0,-1)$ to $(0,0,1)$
 classification:
   areas:
   - topology

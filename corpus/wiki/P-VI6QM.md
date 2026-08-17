@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VI6QM
 kind: problem
-title: "Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7 sub\u2026"
+title: 'Groups of order $105$: normal Sylow $5$- and $7$-subgroups, a cyclic subgroup of order $35$, and cyclicity when the Sylow $3$-subgroup is normal'
 classification:
   areas:
   - algebra

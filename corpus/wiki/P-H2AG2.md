@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-H2AG2
 kind: problem
-title: "Show that the set \\( \\ts{ u_k(j) \\da \\delta_{ij} } \\subseteq \\ell^2(\\Z\u2026"
+title: The Kronecker sequences $u_k(j)=\delta_{kj}$ form an orthonormal system in $\ell^2(\ZZ)$
 classification:
   areas:
   - real-analysis

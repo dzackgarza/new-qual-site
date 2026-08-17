@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PAVWJ
 kind: problem
-title: "$\\displaystyle \\int \\frac {x^2}{x^2+1} ~dx = \\color{blue} {x - \\tan ^{-1} (x)}$ Solution: $\\frac {x^2}{x^2+1} = 1 - \\frac {1}{x^2+1}$\u2026"
+title: Integrals of rational functions with $x^2+1$ in the denominator
 classification:
   areas:
   - prelim

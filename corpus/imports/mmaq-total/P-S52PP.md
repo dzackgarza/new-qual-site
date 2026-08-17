@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S52PP
 kind: problem
-title: Let $R$ be a commutative integral domain. Show that the following
+title: A commutative integral domain is a field if and only if it is semisimple if and only if every module is projective
 classification:
   areas:
   - algebra

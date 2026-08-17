@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QMESO
 kind: problem
-title: "Prove that if $A$ is a retract of the topological space $X$, then for\u2026"
+title: $H_n(X)\cong H_n(A)\oplus G_n$ when $A$ is a retract of $X$
 classification:
   areas:
   - topology

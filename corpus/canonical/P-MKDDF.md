@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MKDDF
 kind: problem
-title: Let $R$ be a commutative ring. Let $r \in R$. Show that the...
+title: Commutative rings with finitely many zero-divisors
 classification:
   areas:
   - algebra

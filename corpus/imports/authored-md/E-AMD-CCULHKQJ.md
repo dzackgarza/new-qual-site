@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-CCULHKQJ
 kind: exercise
-title: Show that if $K/E/F$ with $K/F$ Galois then $K/E$ is always Galois…
+title: Fundamental theorem of Galois theory
 classification:
   areas:
   - algebra

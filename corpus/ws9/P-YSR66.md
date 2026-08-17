@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YSR66
 kind: problem
-title: (a) Let $X$ be a normed vector space and $Y$ be a closed liner subspac…
+title: Riesz's lemma and noncompactness of the infinite-dimensional unit ball
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4CJY7
 kind: problem
-title: "What are the characteristic and minimal polynomial of the Frobenius au\u2026"
+title: Characteristic and minimal polynomials of the Frobenius automorphism
 classification:
   areas:
   - algebra

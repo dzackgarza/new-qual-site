@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-63TON
 kind: problem
-title: "Let $R$ be an integral domain with quotient field $F$."
+title: A monic in $R[x]$ factoring into nonconstant monics in $F[x]$ with a factor outside $R[x]$ implies $R$ is not a UFD; $\ZZ[2\sqrt{2}]$ is not a UFD
 classification:
   areas:
   - algebra

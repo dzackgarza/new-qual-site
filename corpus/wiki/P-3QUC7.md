@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3QUC7
 kind: problem
-title: "Main Idea Homotopies on maps $S^1\\into X$ are cylinders, find a way to\u2026"
+title: Maps $S^1\to X$ extend over $D^2$ when $\pi_1(X)=0$
 classification:
   areas:
   - topology

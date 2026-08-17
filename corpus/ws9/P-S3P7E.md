@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S3P7E
 kind: problem
-title: Let $U \subseteq \mathbb{C}$ be an open set and
+title: The space $A^2(U)$ of square-integrable holomorphic functions is a Hilbert space
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PGDPX
 kind: problem
-title: Does there exist a nonempty measurable set $E \subset \mathbb{R}$ sati…
+title: A measurable set with a gap between any two points and no isolated points
 classification:
   areas:
   - real-analysis

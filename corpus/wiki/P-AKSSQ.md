@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AKSSQ
 kind: problem
-title: "Let $f$ be analytic on a bounded domain $D$, and assume also that $f$\u2026"
+title: A nowhere-vanishing holomorphic function of constant modulus on $\partial D$ is constant
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZCE6E
 kind: problem
-title: "Let $f$ be a non-negative function on $\\RR^n$ and $\\mathcal A = \\{(x, t) \u2208 \\RR^n \\times \\RR : 0 \u2264 t \u2264 f (x)\\}$."
+title: The subgraph of a nonnegative function is measurable if and only if the function is, and $m(\mathcal{A})=\int_{\RR^n}f=\int_0^\infty m(\{f\ge t\})\,dt$
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-LDJWILVY
 kind: exercise
-title: Show that if $H \leq N_G(K)$ then $HK \leq G$, and give a…
+title: If $H\le N_G(K)$ then $HK$ is a subgroup
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7YAGM
 kind: problem
-title: "Note that since $\\zeta(\\zeta+\\zeta\\inv) = \\zeta^2 + 1$, we have the r\u2026"
+title: $[\QQ(\zeta+\zeta^{-1}):\QQ]=\phi(n)/2$
 classification:
   areas:
   - algebra

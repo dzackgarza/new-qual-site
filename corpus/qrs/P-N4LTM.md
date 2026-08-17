@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-N4LTM
 kind: problem
-title: "Let $f$ be analytic in a domain $D$ and fix $z_0 \\in D$ with $w_0 \\definedas f(z_0)$. Suppose $z_0$ is a\u2026"
+title: 'Local mapping theorem: a zero of multiplicity $m$ splits into $m$ distinct nearby preimages'
 classification:
   areas:
   - complex-analysis

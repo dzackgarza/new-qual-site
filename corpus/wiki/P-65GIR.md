@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-65GIR
 kind: problem
-title: "Let $R$ be a PID and $(a_1) < (a_2) < \\cdots$ be an ascending chain of\u2026"
+title: Ascending chains of ideals in a PID stabilize
 classification:
   areas:
   - algebra

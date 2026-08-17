@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NNNLA
 kind: problem
-title: "Let $\\zeta = e^{2\\pi i/8}$. What is the degree of $\\QQ(\\zeta)/\\QQ$? How many quadratic subfields\u2026"
+title: Degree of $\QQ(\zeta_8)$, its quadratic subfields, and $[\QQ(\zeta_8,\sqrt[4]{2}):\QQ]$
 classification:
   areas:
   - algebra

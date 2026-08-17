@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-01
 kind: problem
-title: 'Compute the homology of a torus with each boundary collapsed'
+title: Homology of $T\times[-1,1]$ with each end $T\times\{\pm 1\}$ collapsed to a point
 classification:
   areas:
   - topology

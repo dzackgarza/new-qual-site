@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-DX7L7EFB
 kind: problem
-title: Identify $\pi_1(M, [(1, \frac{1}{2})])$, and identify the class of…
+title: $\pi_1$ of the Möbius strip and the class of the boundary
 classification:
   areas:
   - topology

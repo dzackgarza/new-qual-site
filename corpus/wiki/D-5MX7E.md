@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: D-5MX7E
 kind: definition
-title: "Colimit: For a diagram $F: I \\to \\mathcal C$, the colimit is an object $X$ together with…"
+title: Colimit
 classification:
   areas:
   - topology

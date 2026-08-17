@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-E2CRQ
 kind: problem
-title: "Suppose $A, B\\subseteq \\RR^n$ are connected and not disjoint. Prove that $A\\union B$ is also\u2026"
+title: The union of intersecting connected sets is connected
 classification:
   areas:
   - complex-analysis

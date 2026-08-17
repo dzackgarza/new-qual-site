@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EQFMD
 kind: problem
-title: "$\\displaystyle \\int \\frac {1-\\sin(x)}{1 + \\cos(x)} ~dx = \\color {blue} {\\tan (\\frac {x}{2}) - \\ln (1 + \\tan ^2 (\\frac {x}{2}))} = \\color {blue} {\\tan (\\frac {x}{2}) - 2 \\ln (\\sec (\\frac {x}{2}))} = \\color {blue} {\\tan (\\frac {x}{2}) + 2 \\ln (\\cos (\\frac {x}{2}))} = \\color {blue} {\\tan (\\frac {x}{2}) + \\ln (1+\\cos (x))}\u200b$\u2026"
+title: Antiderivatives of $\frac{1\pm\sin x}{1+\cos x}$ and $\frac{1}{1+\sin x+\cos x}$
 classification:
   areas:
   - prelim

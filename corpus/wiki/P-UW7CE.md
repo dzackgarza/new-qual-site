@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UW7CE
 kind: problem
-title: "Let $A\\in M_n(\\CC)$ with $A^2 = A$. Show that $A$ is similar to a diag\u2026"
+title: A complex matrix with $A^2=A$ is similar to a diagonal matrix
 classification:
   areas:
   - algebra

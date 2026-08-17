@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WPGNS
 kind: exercise
-title: "Let $f$ be entire and suppose that $\\lim_{z \\rightarrow \\infty} f(z) = \\infty$. Show that $f$ is a\u2026"
+title: Entire functions with $\lim_{z\to\infty}f(z)=\infty$ are polynomials
 classification:
   areas:
   - complex-analysis

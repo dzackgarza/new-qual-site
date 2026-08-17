@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-O4HLIPMOVO
 kind: problem
-title: Let $K$ and $L$ be finite fields. Show that $K$ is contained in $L$
+title: $K\subseteq L$ for finite fields iff $\#K=p^r$ and $\#L=p^s$ for the same prime $p$ with $r\leq s$
 classification:
   areas:
   - algebra

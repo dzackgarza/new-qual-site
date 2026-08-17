@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KB4GA
 kind: exercise
-title: "Let $R$ be a PID. Show primes are maximal, so $\\spec R \\subseteq \\mspec R$ and nonzero\u2026"
+title: Prime ideals, factorization, and chain conditions in PIDs
 classification:
   areas:
   - algebra

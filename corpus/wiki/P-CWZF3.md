@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CWZF3
 kind: problem
-title: "We want to show that if $(p) \\normal R$ is a prime ideal then $R/(p)$\u2026"
+title: $R/(p)$ is a field when $(p)$ is prime in a PID
 classification:
   areas:
   - algebra

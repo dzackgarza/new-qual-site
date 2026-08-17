@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EPDRU
 kind: problem
-title: "Let $M$ be a finitely generated module over a PID $R$."
+title: The torsion submodule of a finitely generated module over a PID splits as a direct summand
 classification:
   areas:
   - algebra

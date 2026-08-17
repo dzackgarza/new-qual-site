@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AR3HH
 kind: problem
-title: "Suppose $R$ is a commutative ring (with 1), $I$ is a proper ideal\u2026"
+title: $a+I$ is a unit in $R/I$ whenever $(a)+I=R$
 classification:
   areas:
   - prelim

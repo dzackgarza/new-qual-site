@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-SKENG27HFJ
 kind: problem
-title: "Let $p$ be a prime number. Let $A$ be a $p \\times p$ matrix over a field $F$ with\u2026"
+title: Jordan form of a $p\times p$ all-ones-off-diagonal matrix over $\QQ$ and $\FF_p$
 classification:
   areas:
   - algebra

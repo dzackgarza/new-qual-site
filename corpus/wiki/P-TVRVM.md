@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TVRVM
 kind: problem
-title: "Base case: for $n=1$, we have $a_1 = 1 \\leq a_2 = \\frac{16} 3 \\leq 10.$ Suppose this holds for $k < n$, then\u2026"
+title: The sequence $a_{n+1}=\frac{a_n}{3}+5$ with $a_1=1$ is increasing, bounded by $10$, and converges to $\frac{15}{2}$
 classification:
   areas:
   - prelim

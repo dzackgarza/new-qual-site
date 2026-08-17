@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-G2X5HB5VJS
 kind: problem
-title: Let $A$ be a commutative ring and $M$ a finitely generated $A$-module.
+title: Equivalence of $\mathrm{Ann}(M)\not\subset\mathfrak{p}$, $M_{\mathfrak{p}}=0$, and $M\otimes_A k(\mathfrak{p})=0$ for finitely generated modules
 classification:
   areas:
   - algebra

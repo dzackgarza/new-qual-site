@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OIH2N
 kind: problem
-title: "Start with the unit disk $\\DD^2$ and identify points on the boundary i\u2026"
+title: $\pi_1$ of $\DD^2$ with boundary identified under rotation by $\pi/2$
 classification:
   areas:
   - topology

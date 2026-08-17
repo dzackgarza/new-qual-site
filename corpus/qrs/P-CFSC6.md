@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CFSC6
 kind: problem
-title: "Suppose that $f\\in C([0,1])$ and that $\\displaystyle \\int_0^1 f(x)x^n\\,dx=0$ for all $n=99,100,101,\\ldots$. Show that $f\\equiv 0$.\\"
+title: A continuous function on $[0,1]$ orthogonal to $x^n$ for all $n\ge 99$ vanishes
 classification:
   areas:
   - real-analysis

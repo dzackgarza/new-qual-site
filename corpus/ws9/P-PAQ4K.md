@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PAQ4K
 kind: problem
-title: Assume that $f_1, f_2, \ldots$ is a sequence of positive continuous fu…
+title: Integral of a pointwise limit of positive functions of integral $1$
 classification:
   areas:
   - real-analysis

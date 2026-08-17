@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-NUJ7W
 kind: exercise
-title: "Show that a nonzero nilpotent matrix $A$ is not diagonalizable over an\u2026"
+title: Nonzero nilpotent matrices are not diagonalizable
 classification:
   areas:
   - algebra
