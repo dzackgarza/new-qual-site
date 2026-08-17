@@ -68,6 +68,13 @@ authored content in a curated corpus. A tool that automatically creates, fills,
 normalizes, or silences a gap in that content is obviously wrong. A gap is
 curation work, not a tooling problem.
 
+## One-time tools do not stay in the repo
+
+The migration is over. A tool that was used once to transport, route, split,
+merge, or repair content during migration is done. Delete it when the work is
+finished. Do not keep it, do not write tests for it, do not enshrine it as a
+recipe. Its output is committed corpus content; the tool itself is fossil.
+
 # Solution status
 
 Every problem and exercise card declares `solved: true|false` in its own
