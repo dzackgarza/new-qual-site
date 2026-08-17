@@ -43,9 +43,7 @@ REPO = Path(__file__).resolve().parent.parent
 # A bare enumerator, raw macro, hex hash, heading anchor, or image reference is
 # statement furniture, not a title. Drives the head/body split: a bare `a.` is
 # part (a)'s label, not its name.
-NOT_A_TITLE = re.compile(
-    r"^(\\\w+\s*$|\^[0-9a-f]{6}\s*$|#[\w/-]+\s*$|!\[[^\]]*\]\([^)]*\)\s*$)"
-)
+NOT_A_TITLE = re.compile(r"^(\\\w+\s*$|\^[0-9a-f]{6}\s*$|#[\w/-]+\s*$|!\[[^\]]*\]\([^)]*\)\s*$)")
 
 # A title carries at least FLOOR and at most BUDGET characters of prose. Both are
 # measured outside the mathematics: a formula is one glyph to a reader, and
@@ -59,17 +57,13 @@ CAP = 220
 AUTHORED_TITLE = re.compile(r'^:{3,}[^\n]*?\btitle="([^"]*)"')
 # Page furniture: fences, headings, tag lines, quotes, bare images, Obsidian
 # block anchors, layout macros, table rows.
-FURNITURE = re.compile(
-    r"^(:{3,}|#|>|!\[[^\]]*\]\([^)]*\)\s*$|\^[0-9a-f]{4,}\s*$|\\\w+\s*$|---\s*$|\|)"
-)
+FURNITURE = re.compile(r"^(:{3,}|#|>|!\[[^\]]*\]\([^)]*\)\s*$|\^[0-9a-f]{4,}\s*$|\\\w+\s*$|---\s*$|\|)")
 DISPLAY = re.compile(r"\$\$(.*?)\$\$|\\\[(.*?)\\\]", re.DOTALL)
 # A math span is one glyph to a reader and one token to the cut. A LaTeX
 # environment is math too: MathJax typesets `\begin{align*}...\end{align*}`
 # with no delimiters around it, and counting its source as prose cut titles in
 # the middle of an `\begin`.
-MATH = re.compile(
-    r"\$[^$]*\$|\\\(.*?\\\)|\\begin\{[a-zA-Z*]+\}.*?\\end\{[a-zA-Z*]+\}", re.DOTALL
-)
+MATH = re.compile(r"\$[^$]*\$|\\\(.*?\\\)|\\begin\{[a-zA-Z*]+\}.*?\\end\{[a-zA-Z*]+\}", re.DOTALL)
 # An inline span whose delimiters are padded, `$ x $`. Pandoc opens no math on
 # `$ `, so the span is printed rather than typeset.
 MATH_SPAN_PADDING = re.compile(r"\$[ \t]*([^$]*?)[ \t]*\$")
@@ -77,13 +71,9 @@ IMAGE = re.compile(r"!\[[^\]]*\]\([^)]*\)|!\[\[[^\]]*\]\]")
 EMPHASIS = re.compile(r"\*{1,3}(?=\S)|(?<=\S)\*{1,3}|`")
 # A footnote reference is a pointer to a note the title does not carry.
 FOOTNOTE = re.compile(r"\[\^[^\]]+\]")
-LEADIN = re.compile(
-    r"^\s*(?:[-*+](?:\s+|$)|\(?(?:[a-zA-Z]|\d{1,2}|[ivx]{1,4})[.)](?:\s+|$))+"
-)
+LEADIN = re.compile(r"^\s*(?:[-*+](?:\s+|$)|\(?(?:[a-zA-Z]|\d{1,2}|[ivx]{1,4})[.)](?:\s+|$))+")
 # `i.e.` and `Fig.` end a word, not a sentence.
-ABBREV = re.compile(
-    r"(?:\b(?:i\.e|e\.g|cf|etc|resp|vs|Ex|no|Thm|Def|Prop|Lem|Cor|Fig|Ch|pp)\.|\b[A-Z]\.)$"
-)
+ABBREV = re.compile(r"(?:\b(?:i\.e|e\.g|cf|etc|resp|vs|Ex|no|Thm|Def|Prop|Lem|Cor|Fig|Ch|pp)\.|\b[A-Z]\.)$")
 CLOSES = ".?!$"
 
 
@@ -102,9 +92,7 @@ def _inline_display(body: str) -> str:
         # "Misplaced &" once the block is inlined. `_macros.html` wraps such a
         # block in `aligned` before typesetting it; do the same here, so the
         # title keeps the formula instead of losing it.
-        if "&" in re.sub(
-            r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", "", inner, flags=re.DOTALL
-        ):
+        if "&" in re.sub(r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", "", inner, flags=re.DOTALL):
             inner = rf"\begin{{aligned}}{inner}\end{{aligned}}"
         return f" ${inner}$ " if inner else " "
 
@@ -143,17 +131,12 @@ def units(body: str) -> list[str]:
         line = EMPHASIS.sub("", FOOTNOTE.sub("", IMAGE.sub("", line))).strip()
         # A line holding nothing but a marker or an image is not a unit of the
         # statement; appending one leaves a title ending `... ring. 1.`
-        spent = (
-            not any(character.isalnum() for character in line)
-            or not LEADIN.sub("", line).strip()
-        )
+        spent = not any(character.isalnum() for character in line) or not LEADIN.sub("", line).strip()
         # A paragraph is wrapped prose -- the corpus wraps at 72 columns, and a
         # `$...$` straddling two of those lines is one math span, not two. A
         # list marker opens a new paragraph, so parts (a) and (b) stay apart.
         if spent or FURNITURE.match(line) or LEADIN.match(line):
-            out.extend(
-                _sentences(re.sub(r"\s+", " ", paragraph)) if paragraph.strip() else []
-            )
+            out.extend(_sentences(re.sub(r"\s+", " ", paragraph)) if paragraph.strip() else [])
             paragraph = "" if spent or FURNITURE.match(line) else line
             continue
         paragraph = f"{paragraph} {line}"
@@ -245,11 +228,7 @@ def _derive_title(body: str, sentences: int = 1) -> str:
         # `Let $A \in M_3(\CC)$` closes a clause but asks nothing; the title
         # goes on to the question. A statement that never offers that much
         # prose ends at the cut instead, and one that ends first ends there.
-        if (
-            clipped.endswith(tuple(CLOSES))
-            and readable(clipped) >= FLOOR
-            and remaining <= 0
-        ):
+        if clipped.endswith(tuple(CLOSES)) and readable(clipped) >= FLOOR and remaining <= 0:
             break
         if clipped.endswith("…"):
             break
@@ -263,9 +242,7 @@ def _derive_title(body: str, sentences: int = 1) -> str:
     return authored or candidate or "Untitled"
 
 
-def retitle(
-    bodies: dict[str, str], pinned: dict[str, str] | None = None
-) -> dict[str, str]:
+def retitle(bodies: dict[str, str], pinned: dict[str, str] | None = None) -> dict[str, str]:
     """Titles for a whole corpus, extended until no two cards share one.
 
     A pinned title stands: a card whose title already reads is left as its
@@ -276,10 +253,7 @@ def retitle(
     # collision: two cards both called `Dense` are one row twice to a reader, so
     # a pinned title that is not unique goes back to its own statement.
     depth = {card_id: 0 if card_id in pinned else 1 for card_id in bodies}
-    titles = {
-        card_id: pinned[card_id] if card_id in pinned else title_of(body)
-        for card_id, body in bodies.items()
-    }
+    titles = {card_id: pinned[card_id] if card_id in pinned else title_of(body) for card_id, body in bodies.items()}
     reach = {card_id: len(units(body)) for card_id, body in bodies.items()}
     for _ in range(12):
         counts = collections.Counter(titles.values())
@@ -314,9 +288,7 @@ def _typesets(title: str) -> bool:
     """
     braces = re.sub(r"\\.", "", title, flags=re.DOTALL)
     inline = "".join(match.group(0) for match in MATH.finditer(title))
-    aligned = re.sub(
-        r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", "", inline, flags=re.DOTALL
-    )
+    aligned = re.sub(r"\\begin\{([a-zA-Z*]+)\}.*?\\end\{\1\}", "", inline, flags=re.DOTALL)
     return (
         title.count("$") % 2 == 0
         and braces.count("{") == braces.count("}")
@@ -374,9 +346,7 @@ def _front_matter(text: str) -> tuple[str, str]:
     return front, body
 
 
-def _sitting_titles(
-    meta: dict[str, dict], degenerate_now: dict[str, DegenerateReason | None]
-) -> dict[str, str]:
+def _sitting_titles(meta: dict[str, dict], degenerate_now: dict[str, DegenerateReason | None]) -> dict[str, str]:
     """Occurrences named the way the corpus already names them.
 
     2,798 occurrence cards read `P-XYDVS at UGA algebra Spring 2020`. The 22
@@ -388,20 +358,14 @@ def _sitting_titles(
     for card_id, card in meta.items():
         if card["kind"] != "occurrence" or not degenerate_now[card_id]:
             continue
-        target = next(
-            relation["target"]
-            for relation in card["relations"]
-            if relation["kind"] == "instance-of"
-        )
+        target = next(relation["target"] for relation in card["relations"] if relation["kind"] == "instance-of")
         out[card_id] = f"{target} at {meta[card['payload']['source']]['title']}"
     return out
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(prog="card-titles")
-    parser.add_argument(
-        "--write", action="store_true", help="rewrite the corpus front matter"
-    )
+    parser.add_argument("--write", action="store_true", help="rewrite the corpus front matter")
     parser.add_argument("--root", type=Path, default=REPO)
     args = parser.parse_args(argv)
 
@@ -416,27 +380,12 @@ def main(argv: list[str] | None = None) -> int:
         card = yaml.safe_load(front)
         paths[card["id"]], meta[card["id"]], bodies[card["id"]] = path, card, body
 
-    statements = {
-        card_id: bodies[card_id]
-        for card_id in meta
-        if meta[card_id]["kind"] not in COMPOSED_KINDS
-    }
-    before = {
-        card_id: degenerate(str(card["title"]), authored_title(bodies[card_id]))
-        for card_id, card in meta.items()
-    }
-    pinned = {
-        card_id: str(meta[card_id]["title"])
-        for card_id in statements
-        if not before[card_id]
-    }
+    statements = {card_id: bodies[card_id] for card_id in meta if meta[card_id]["kind"] not in COMPOSED_KINDS}
+    before = {card_id: degenerate(str(card["title"]), authored_title(bodies[card_id])) for card_id, card in meta.items()}
+    pinned = {card_id: str(meta[card_id]["title"]) for card_id in statements if not before[card_id]}
     titles = retitle(statements, pinned)
     titles.update(_sitting_titles(meta, before))
-    changed = [
-        card_id
-        for card_id, card in meta.items()
-        if card_id in titles and titles[card_id] != str(card["title"])
-    ]
+    changed = [card_id for card_id, card in meta.items() if card_id in titles and titles[card_id] != str(card["title"])]
     # A card is absent from `titles` when it was never a retitle candidate; its
     # current title is what the "after" verdict must judge.
     after = {
@@ -448,9 +397,7 @@ def main(argv: list[str] | None = None) -> int:
     }
     for label, verdicts in (("before", before), ("after", after)):
         counts = collections.Counter(reason for reason in verdicts.values() if reason)
-        print(
-            f"degenerate {label}: {sum(counts.values())} of {len(verdicts)}  {dict(counts)}"
-        )
+        print(f"degenerate {label}: {sum(counts.values())} of {len(verdicts)}  {dict(counts)}")
     print(f"{len(changed)} retitled")
     if not args.write:
         for card_id, reason in after.items():
@@ -463,9 +410,7 @@ def main(argv: list[str] | None = None) -> int:
         # backslashes, and `re.sub` reads `\text` in a replacement string as an
         # escape and writes a tab.
         line = f"title: {json.dumps(titles[card_id])}"
-        paths[card_id].write_text(
-            f"---{TITLE_LINE.sub(lambda _: line, front, count=1)}---{body}"
-        )
+        paths[card_id].write_text(f"---{TITLE_LINE.sub(lambda _: line, front, count=1)}---{body}")
     return 0
 
 
