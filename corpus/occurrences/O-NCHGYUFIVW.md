@@ -6,7 +6,10 @@ title: P-ZZXH3 at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - entire-functions
+  - morera
+  - integrals
 relations:
 - kind: instance-of
   target: P-ZZXH3

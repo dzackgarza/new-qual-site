@@ -6,7 +6,9 @@ title: P-V33RL at UCSD topology Fall 2014
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - homology
+  - manifolds
 relations:
 - kind: instance-of
   target: P-V33RL

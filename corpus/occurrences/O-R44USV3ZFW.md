@@ -6,7 +6,8 @@ title: P-XKFPD at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - hilbert-spaces
 relations:
 - kind: instance-of
   target: P-XKFPD
