@@ -22,3 +22,17 @@ $$
 $$
 Prove that $f$ is continuous at $y$.
 :::
+
+:::: {.solution}
+> **AI-Generated Solution**
+
+<1>1. Prove the contrapositive: if $f$ is not continuous at $y$, the hypothesis fails.
+<1>2. Discontinuity gives a sequence violating the liminf condition.
+    Proof: suppose $f$ is discontinuous at $y$. Then there is $\epsilon > 0$ and a sequence $x_n \to y$ with $|f(x_n) - f(y)| \ge \epsilon$ for all $n$ (take $x_n \in (y - 1/n, y + 1/n)$ with $|f(x_n) - f(y)| \ge \epsilon$, which exists since $f$ is not continuous at $y$).
+<1>3. Compare the two liminfs.
+    Proof: for this sequence, $\liminf_{n\to\infty}|x_n - y| = 0$ (as $x_n \to y$), while $\liminf_{n\to\infty}|f(x_n) - f(y)| \ge \epsilon > 0$. Hence
+    \[\liminf |f(x_n) - f(y)| \ge \epsilon > 0 = \liminf |x_n - y|,\]
+    violating the hypothesis for this particular sequence.
+<1>4. Q.E.D.
+    Proof: contrapositive established: hypothesis ⟹ $f$ continuous at $y$.
+:::
