@@ -65,13 +65,6 @@ sections:
           limit: 500
           review:
             mode: any
-      - query:
-          kind: problem
-          topics:
-            - misc
-          limit: 500
-          review:
-            mode: any
   - slug: groups-and-subgroups
     title: Groups and Subgroups
     parent: preliminaries
