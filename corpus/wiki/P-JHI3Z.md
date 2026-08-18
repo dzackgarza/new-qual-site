@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHI3Z
 kind: problem
-title: "What is a nilpotent matrix?"
+title: Nilpotent matrix
 classification:
   areas:
   - algebra

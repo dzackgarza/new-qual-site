@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GILBI
 kind: problem
-title: "State/prove the Cayley\u2013Hamilton theorem."
+title: Cayley–Hamilton theorem
 classification:
   areas:
   - algebra

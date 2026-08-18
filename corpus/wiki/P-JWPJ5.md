@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JWPJ5
 kind: problem
-title: "How many irreducible representations does $S_n$ have?"
+title: Number of irreducible representations of $S_n$
 classification:
   areas:
   - algebra

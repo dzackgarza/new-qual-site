@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VPB55
 kind: problem
-title: "Talk about Jordan canonical form."
+title: Jordan canonical form over a non-algebraically closed field
 classification:
   areas:
   - algebra

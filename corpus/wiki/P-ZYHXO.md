@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZYHXO
 kind: problem
-title: "What does it mean to be algebraically closed?"
+title: Algebraically closed field
 classification:
   areas:
   - algebra

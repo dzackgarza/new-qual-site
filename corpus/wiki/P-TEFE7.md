@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TEFE7
 kind: problem
-title: "Is normality transitive?"
+title: Normality of subgroups is not transitive
 classification:
   areas:
   - algebra

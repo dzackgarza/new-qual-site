@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-STSCQ
 kind: problem
-title: "What are all possible orders of elements of $\\SL_2(Z)$?"
+title: Orders of elements of $\mathrm{SL}_2(\ZZ)$
 classification:
   areas:
   - algebra

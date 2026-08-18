@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OPZJH
 kind: problem
-title: "What is the multiplicative group of $\\FF_9$?"
+title: $(\FF_9)^\times$
 classification:
   areas:
   - algebra

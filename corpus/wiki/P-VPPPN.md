@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VPPPN
 kind: problem
-title: "State the Mayer-Vietoris theorem."
+title: Mayer–Vietoris and homology of two solid tori glued by $(z,w)\mapsto(zw^3,w)$
 classification:
   areas:
   - topology

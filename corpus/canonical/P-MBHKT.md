@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MBHKT
 kind: problem
-title: Classify all groups of order 18 up to isomorphism.
+title: Groups of order 18
 classification:
   areas:
   - algebra

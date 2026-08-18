@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7GW6D
 kind: problem
-title: "What's a Galois group that's not $S_n$ or $A_n$?"
+title: A Galois group that is neither $S_n$ nor $A_n$
 classification:
   areas:
   - algebra

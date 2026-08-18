@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DUXVY
 kind: problem
-title: "What is the degree of a field extension?"
+title: Degree of a field extension
 classification:
   areas:
   - algebra

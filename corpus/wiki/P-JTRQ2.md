@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JTRQ2
 kind: problem
-title: "What is an injective module?"
+title: Injective module
 classification:
   areas:
   - algebra

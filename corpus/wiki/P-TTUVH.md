@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TTUVH
 kind: problem
-title: "How do you construct finite fields with $p^n$ elements?"
+title: Finite fields with $p^n$ elements
 classification:
   areas:
   - algebra

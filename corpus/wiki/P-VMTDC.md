@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VMTDC
 kind: problem
-title: "State and prove Maschke's theorem."
+title: Maschke's theorem
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XRTSC
 kind: problem
-title: "Lemma: The rank-nullity theorem holds over division rings."
+title: Rank-nullity over division rings, and left inverses of rectangular matrices
 classification:
   areas:
   - algebra

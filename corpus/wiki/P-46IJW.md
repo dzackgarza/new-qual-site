@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-46IJW
 kind: problem
-title: "State the structure theorem for semisimple Artinian rings."
+title: Artin–Wedderburn theorem
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4MISE
 kind: problem
-title: "How many groups are there of order 15?"
+title: Groups of order 15
 classification:
   areas:
   - algebra

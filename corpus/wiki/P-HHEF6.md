@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HHEF6
 kind: problem
-title: "State and prove the Jordan-Holder theorem for finite groups."
+title: Jordan–Hölder theorem
 classification:
   areas:
   - algebra

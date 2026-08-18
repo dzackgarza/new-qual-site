@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZXWFU
 kind: problem
-title: "What is the maximal real field in a cyclotomic extension $\\QQ(\\zeta_n)/\\QQ$?"
+title: Maximal real subfield of $\QQ(\zeta_n)$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YKB6A
 kind: problem
-title: "Is Abelian Galois extension transitive?"
+title: Abelianness of Galois groups is not transitive
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A6JHJ
 kind: problem
-title: "Is \\(A_4\\) a simple group?"
+title: Whether $A_4$ is simple, and conjugacy in $S_4$ and $A_4$
 classification:
   areas:
   - algebra

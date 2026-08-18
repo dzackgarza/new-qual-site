@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WDSNU
 kind: problem
-title: "What's the regular representation?"
+title: Regular representation
 classification:
   areas:
   - algebra

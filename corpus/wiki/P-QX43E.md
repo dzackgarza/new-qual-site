@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QX43E
 kind: problem
-title: "When and how can we solve the matrix equation $\\exp(A) = B$?"
+title: Solving $\exp(A)=B$ over $\CC$ and over $\RR$
 classification:
   areas:
   - algebra

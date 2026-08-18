@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZZVXB
 kind: problem
-title: "What are the abelian groups of order 9?"
+title: Abelian groups of order 9, and groups of order 27
 classification:
   areas:
   - algebra

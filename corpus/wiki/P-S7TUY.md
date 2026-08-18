@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-S7TUY
 kind: problem
-title: "What is an irreducible variety?"
+title: Irreducible varieties
 classification:
   areas:
   - algebra

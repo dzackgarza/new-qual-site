@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HMX5O
 kind: problem
-title: "Give two definitions of \"induced representation\"."
+title: Induced representations
 classification:
   areas:
   - algebra

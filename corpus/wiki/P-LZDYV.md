@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LZDYV
 kind: problem
-title: "State van Kampen's theorem."
+title: van Kampen's theorem, and $\pi_1$ of glued tori, the Klein bottle, and wedges
 classification:
   areas:
   - topology

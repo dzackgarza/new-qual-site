@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MD6VX
 kind: problem
-title: "Why is the character table a square?"
+title: Why the character table is square
 classification:
   areas:
   - algebra

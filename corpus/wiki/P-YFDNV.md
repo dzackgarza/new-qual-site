@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YFDNV
 kind: problem
-title: "Classify real division algebras."
+title: Real division algebras
 classification:
   areas:
   - algebra

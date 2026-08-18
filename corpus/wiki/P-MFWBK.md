@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MFWBK
 kind: problem
-title: "$\\QQ$"
+title: $\QQ$ (statement incomplete)
 classification:
   areas:
   - topology

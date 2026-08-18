@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-F2YIN
 kind: problem
-title: "Talk about factorisation and primes in a polynomial ring."
+title: Factorisation in $R[x_1,\ldots,x_n]$
 classification:
   areas:
   - algebra

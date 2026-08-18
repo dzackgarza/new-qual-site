@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7INJI
 kind: problem
-title: "Discuss representations of $\\ZZ$, the infinite cyclic group."
+title: Representations and the group algebra of $\ZZ$
 classification:
   areas:
   - algebra

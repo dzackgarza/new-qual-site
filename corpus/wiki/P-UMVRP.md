@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UMVRP
 kind: problem
-title: "What groups have nontrivial automorphisms?"
+title: Groups with nontrivial automorphisms
 classification:
   areas:
   - algebra

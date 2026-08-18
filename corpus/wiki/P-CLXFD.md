@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CLXFD
 kind: problem
-title: "What are the Galois groups of irreducible cubics?"
+title: Galois groups of irreducible cubics
 classification:
   areas:
   - algebra

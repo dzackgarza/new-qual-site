@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3RGXW
 kind: problem
-title: "Talk about the isomorphism classes of subgroups of $\\QQ$."
+title: Isomorphism classes of subgroups of $\QQ$
 classification:
   areas:
   - algebra

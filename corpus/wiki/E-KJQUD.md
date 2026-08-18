@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-KJQUD
 kind: exercise
-title: "What is the closure of a subspace $E\\subseteq X$?"
+title: Closure of a subspace
 classification:
   areas:
   - topology

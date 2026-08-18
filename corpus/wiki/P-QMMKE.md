@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QMMKE
 kind: problem
-title: "Talk about the possible subgroups of $\\ZZ^3$."
+title: Subgroups of $\ZZ^3$ and the structure of the quotient
 classification:
   areas:
   - algebra

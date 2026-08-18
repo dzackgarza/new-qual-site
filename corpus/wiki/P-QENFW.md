@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QENFW
 kind: problem
-title: "What are the symmetric polynomials?"
+title: Symmetric polynomials
 classification:
   areas:
   - algebra

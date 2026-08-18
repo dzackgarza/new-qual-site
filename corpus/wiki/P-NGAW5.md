@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NGAW5
 kind: problem
-title: "State and prove Eisenstein's Criterion."
+title: Eisenstein's criterion
 classification:
   areas:
   - algebra

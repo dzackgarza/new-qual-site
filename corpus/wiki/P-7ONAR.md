@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7ONAR
 kind: problem
-title: "State/prove the Sylow theorems."
+title: Sylow theorems
 classification:
   areas:
   - algebra

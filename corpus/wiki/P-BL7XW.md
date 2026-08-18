@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BL7XW
 kind: problem
-title: "Classify all groups of order $p^3$ for $p$ prime."
+title: Groups of order $p^3$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YCLOT
 kind: problem
-title: "(Important) Classify all groups of order $p^2$."
+title: Groups of order $p^2$
 classification:
   areas:
   - algebra

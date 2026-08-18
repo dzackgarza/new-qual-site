@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZJT5A
 kind: problem
-title: "What is Galois theory?"
+title: Fundamental theorem of Galois theory, and the splitting field of $x^5-2$
 classification:
   areas:
   - algebra

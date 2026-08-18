@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IE52K
 kind: problem
-title: "State the three Sylow theorems."
+title: Sylow theorems, and groups of order 1225
 classification:
   areas:
   - algebra

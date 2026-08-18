@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FN7H4
 kind: problem
-title: "What is the Galois group of $x^2 - 2$?"
+title: Galois group of $x^2-2$
 classification:
   areas:
   - algebra

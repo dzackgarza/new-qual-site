@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KGF7Z
 kind: problem
-title: "How many automorphisms does the complex field have?"
+title: Automorphisms of $\CC$
 classification:
   areas:
   - algebra

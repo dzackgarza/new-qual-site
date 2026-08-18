@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4FVOI
 kind: problem
-title: "What is an example of isomorphic but not equal fields?"
+title: Isomorphic but unequal fields
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SRI2S
 kind: problem
-title: "What's the Galois group of $x^2 + 1$ over Q?"
+title: Galois group of $x^2+1$ and the Gaussian integers
 classification:
   areas:
   - algebra

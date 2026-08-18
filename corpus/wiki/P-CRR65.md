@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CRR65
 kind: problem
-title: "Tell me about the representations of $D_4$."
+title: Representations and character table of $D_4$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VBLYF
 kind: problem
-title: "What are the conjugacy classes in $\\GL_2(\\CC)$?"
+title: Conjugacy classes in $\mathrm{GL}_2(\CC)$
 classification:
   areas:
   - algebra

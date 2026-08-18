@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T3YQ4
 kind: problem
-title: "Do you know what the radical is?"
+title: Nilradical and infinitely many primes in $F[x]$
 classification:
   areas:
   - algebra

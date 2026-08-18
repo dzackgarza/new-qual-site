@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WVWEP
 kind: problem
-title: "How many elements does $\\gl_2(\\FF_q)$ have?"
+title: $|\mathrm{GL}_2(\FF_q)|$ and its representations
 classification:
   areas:
   - algebra

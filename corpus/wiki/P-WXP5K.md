@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WXP5K
 kind: problem
-title: "A subgroup of a finitely-generated free abelian group is?"
+title: Subgroups of finitely generated free abelian groups and of free groups
 classification:
   areas:
   - algebra

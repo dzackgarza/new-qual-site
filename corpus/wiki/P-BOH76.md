@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-BOH76
 kind: problem
-title: "What are the groups of order $p^2$?"
+title: Groups of order $p^2$ and of order $pq$
 classification:
   areas:
   - algebra

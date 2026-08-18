@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-UMIPZQM5
 kind: problem
-title: Find a free resolution of $\QQ$ as a $\ZZ$-module.
+title: A free resolution of $\QQ$ as a $\ZZ$-module
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7Q1AX
 kind: problem
-title: "Lemma: If $x \\divides n$ and $x\\divides m$ then $x\\divides \\gcd(m, n)$"
+title: $\ZZ_n[m]\cong\ZZ_{(m,n)}$
 classification:
   areas:
   - algebra

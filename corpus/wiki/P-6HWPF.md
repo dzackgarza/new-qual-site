@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6HWPF
 kind: problem
-title: "Can we solve general quadratic equations by radicals?"
+title: Solvability of polynomials by radicals
 classification:
   areas:
   - algebra

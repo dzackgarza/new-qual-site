@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UZDCX
 kind: problem
-title: "Why is every finite extension algebraic?"
+title: Finite extensions are algebraic
 classification:
   areas:
   - algebra

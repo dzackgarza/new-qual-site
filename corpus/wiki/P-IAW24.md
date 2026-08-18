@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IAW24
 kind: problem
-title: "Which numbers are constructible?"
+title: Constructible numbers
 classification:
   areas:
   - algebra

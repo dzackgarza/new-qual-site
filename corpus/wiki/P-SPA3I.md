@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SPA3I
 kind: problem
-title: "Give examples of simple groups."
+title: Examples of simple groups
 classification:
   areas:
   - algebra

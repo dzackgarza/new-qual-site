@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-DPYAI
 kind: problem
-title: "Lemma: $S^n - \\theset{p_i}_{i=1}^k = \\bigvee_{k-1}S^{n-1}$, i.e. $S^n$ minus $k$ points is equal to $k-1$ copies of of $S^{n-1}$."
+title: $S^n$ minus $k$ points is a wedge of $k-1$ spheres
 classification:
   areas:
   - topology

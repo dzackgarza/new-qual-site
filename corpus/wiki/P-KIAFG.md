@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KIAFG
 kind: problem
-title: "Do you know about Dedekind domains and class numbers?"
+title: Dedekind domains and class numbers
 classification:
   areas:
   - algebra

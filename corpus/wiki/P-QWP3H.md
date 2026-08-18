@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QWP3H
 kind: problem
-title: "Give a prime ideal in $\\kk[x, y]$."
+title: Prime ideals in $k[x,y]$ and the Nullstellensatz
 classification:
   areas:
   - algebra

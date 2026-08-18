@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SJBKE
 kind: problem
-title: "What is Frobenius reciprocity?"
+title: Frobenius reciprocity
 classification:
   areas:
   - algebra

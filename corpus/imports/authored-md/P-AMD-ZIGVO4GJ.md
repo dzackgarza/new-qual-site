@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ZIGVO4GJ
 kind: problem
-title: $R/ \nilrad{R}$ has no nonzero nilpotent elements.
+title: $R/\nilrad{R}$ is reduced
 classification:
   areas:
   - algebra

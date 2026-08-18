@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5EHW6
 kind: problem
-title: Classify all groups of order 2012 up to isomorphism.
+title: Groups of order 2012
 classification:
   areas:
   - algebra

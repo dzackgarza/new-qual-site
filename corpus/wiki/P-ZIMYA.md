@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZIMYA
 kind: problem
-title: "What is an algebraic closure of a field?"
+title: Algebraic closure
 classification:
   areas:
   - algebra

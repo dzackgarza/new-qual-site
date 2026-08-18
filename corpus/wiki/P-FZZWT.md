@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FZZWT
 kind: problem
-title: "Do you know what a group representation is?"
+title: Group representations and their traces
 classification:
   areas:
   - algebra

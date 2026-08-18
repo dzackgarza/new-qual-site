@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EQO46
 kind: problem
-title: "What are the groups of order 12?"
+title: Groups of order 12, and two nonisomorphic subgroups of the same order
 classification:
   areas:
   - algebra

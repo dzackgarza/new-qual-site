@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-FLVZU
 kind: exercise
-title: "What does it mean for a topological space to be compact?"
+title: Compact topological space
 classification:
   areas:
   - topology

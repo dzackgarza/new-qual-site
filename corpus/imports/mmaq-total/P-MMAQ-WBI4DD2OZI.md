@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-WBI4DD2OZI
 kind: problem
-title: State and prove Fatou's Lemma on a general measurable space.
+title: Fatou's lemma
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TBIU4
 kind: problem
-title: "What is a PID?"
+title: PIDs, and a UFD that is not a PID
 classification:
   areas:
   - algebra

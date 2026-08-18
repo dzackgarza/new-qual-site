@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-NAGQY
 kind: problem
-title: "What is the character table?"
+title: Character table
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OS4K7
 kind: problem
-title: "List all groups of order 14 up to isomorphism."
+title: Groups of order 14
 classification:
   areas:
   - algebra

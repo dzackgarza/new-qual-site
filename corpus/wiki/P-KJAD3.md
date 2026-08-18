@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KJAD3
 kind: problem
-title: "What is a Lie group?"
+title: Lie groups, Peter–Weyl, and representations of $\ZZ$
 classification:
   areas:
   - algebra

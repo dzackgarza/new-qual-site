@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RVASU
 kind: problem
-title: "What are the subgroups of the free group $F_2$?"
+title: Subgroups of $F_2$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WCV7R
 kind: problem
-title: "Give a careful proof that $\\CC[x, y]$ is not a PID."
+title: $\CC[x,y]$ is not a PID
 classification:
   areas:
   - algebra

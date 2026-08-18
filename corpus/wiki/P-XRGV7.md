@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XRGV7
 kind: problem
-title: "Express a Klein bottle as the union of two annuli."
+title: Klein bottle as two annuli, and its homology via Mayer–Vietoris
 classification:
   areas:
   - topology

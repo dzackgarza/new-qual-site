@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MBPXY
 kind: problem
-title: "Which is the connection between Hom and tensor product?"
+title: Hom–tensor adjunction
 classification:
   areas:
   - algebra

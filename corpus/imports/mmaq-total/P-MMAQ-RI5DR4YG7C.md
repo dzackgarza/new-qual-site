@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-RI5DR4YG7C
 kind: problem
-title: Find the minimal polynomial of $\sqrt2+\sqrt3$ over $\mathbb Q$.
+title: Minimal polynomial of $\sqrt{2}+\sqrt{3}$ over $\QQ$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RHOWY
 kind: problem
-title: "Talk about solvability by radicals."
+title: Solvability by radicals, $S_5$, and simplicity of $A_5$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RSAGP
 kind: problem
-title: "What is a bilinear form on a vector space?"
+title: Bilinear forms and orthogonal matrices
 classification:
   areas:
   - algebra

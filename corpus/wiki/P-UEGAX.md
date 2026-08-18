@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UEGAX
 kind: problem
-title: "What is the degree of the antipodal map on the $n$-sphere?"
+title: Degree of the antipodal map, a CW structure on $\RP^n$, and even-dimensional coverings
 classification:
   areas:
   - topology

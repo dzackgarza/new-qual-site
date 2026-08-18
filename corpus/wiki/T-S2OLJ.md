@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-S2OLJ
 kind: theorem
-title: "Every $f: B^n \\to B^n$ has a fixed point."
+title: Brouwer fixed-point theorem
 classification:
   areas:
   - topology

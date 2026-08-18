@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YFBGZ
 kind: problem
-title: "What are the radical ideals in $\\ZZ$?"
+title: Radical ideals in $\ZZ$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-47TTS
 kind: proposition
-title: "If $\\hat f = \\hat g$ then $f=g$ almost everywhere."
+title: Fourier transform is injective on $L^1$
 classification:
   areas:
   - real-analysis

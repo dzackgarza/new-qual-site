@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G2KO6
 kind: problem
-title: "State the Chinese remainder theorem in any form you like."
+title: Chinese remainder theorem
 classification:
   areas:
   - algebra

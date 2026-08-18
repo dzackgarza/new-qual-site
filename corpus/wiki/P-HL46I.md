@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HL46I
 kind: problem
-title: "What is a ring of integers?"
+title: Ring of integers and integrality over $\ZZ$
 classification:
   areas:
   - algebra

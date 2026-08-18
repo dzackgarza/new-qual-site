@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YMOTZ
 kind: problem
-title: "Classify the abelian groups of order 36."
+title: Abelian groups of order 36, and nonabelian groups of order 36
 classification:
   areas:
   - algebra

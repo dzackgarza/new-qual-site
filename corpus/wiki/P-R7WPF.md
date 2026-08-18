@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-R7WPF
 kind: problem
-title: "Do you know an example of a local ring?"
+title: Examples of local rings
 classification:
   areas:
   - algebra

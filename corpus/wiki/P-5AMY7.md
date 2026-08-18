@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5AMY7
 kind: problem
-title: "Can you have a degree 7 irreducible polynomial over \\( \\FF_p \\)?"
+title: Irreducible polynomials of degrees 7 and 14 over $\FF_p$
 classification:
   areas:
   - algebra

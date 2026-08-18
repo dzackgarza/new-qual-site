@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-TH4A2
 kind: exercise
-title: "Recall the definition of the join of two subgroups $H \\vee G$ (or $H+G$ )."
+title: Join of intermediate fields and $\mathrm{Aut}$ of a Galois extension
 classification:
   areas:
   - algebra

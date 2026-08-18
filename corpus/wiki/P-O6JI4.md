@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O6JI4
 kind: problem
-title: "What is the symmetry group of an icosahedron?"
+title: Symmetry group of the icosahedron
 classification:
   areas:
   - algebra

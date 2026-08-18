@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4LOLH
 kind: problem
-title: "What is a Noetherian ring?"
+title: Noetherian rings and $\bigcap I^n$
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PCLDH
 kind: problem
-title: "What is a separable extension?"
+title: Separable extensions
 classification:
   areas:
   - algebra

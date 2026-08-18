@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-ZDESK7TT
 kind: problem
-title: Orientable surface of genus $g$
+title: Word for the genus-$g$ orientable surface
 classification:
   areas:
   - topology

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-UHLVN
 kind: problem
-title: "What Galois group would you expect a cubic to have?"
+title: Galois groups of cubics
 classification:
   areas:
   - algebra

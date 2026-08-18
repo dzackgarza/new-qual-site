@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z3NJF
 kind: problem
-title: "What is the symmetry group of a tetrahedron?"
+title: Symmetry groups of the tetrahedron, cube, and icosahedron
 classification:
   areas:
   - algebra

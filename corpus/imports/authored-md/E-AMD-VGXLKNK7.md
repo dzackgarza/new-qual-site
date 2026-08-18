@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-VGXLKNK7
 kind: exercise
-title: Analyze groups of order $p^2 q$.
+title: Groups of order $p^2q$
 classification:
   areas:
   - algebra

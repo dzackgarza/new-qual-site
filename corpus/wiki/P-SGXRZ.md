@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SGXRZ
 kind: problem
-title: "What is a normal subgroup?"
+title: Normal subgroups
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XVXER
 kind: problem
-title: "What is the group of unit quaternions topologically?"
+title: Unit quaternions and $\mathrm{SO}(3)$
 classification:
   areas:
   - algebra

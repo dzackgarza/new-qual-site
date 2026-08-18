@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GIVPQ
 kind: problem
-title: "What is a semisimple algebra?"
+title: Semisimple algebras and the Artin–Wedderburn theorem
 classification:
   areas:
   - algebra

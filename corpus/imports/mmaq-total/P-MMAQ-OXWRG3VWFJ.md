@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-OXWRG3VWFJ
 kind: problem
-title: Classify all groups of order $2009=7^2\times 41$.
+title: Groups of order 2009 and their intermediate subgroups
 classification:
   areas:
   - algebra

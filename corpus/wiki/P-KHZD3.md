@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-KHZD3
 kind: problem
-title: "Is a ring of formal power series a UFD?"
+title: Whether a formal power series ring is a UFD
 classification:
   areas:
   - algebra

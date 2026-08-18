@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-LJURM
 kind: problem
-title: "Give a polynomial with $S_3$ as its Galois group."
+title: A polynomial with Galois group $S_3$
 classification:
   areas:
   - algebra

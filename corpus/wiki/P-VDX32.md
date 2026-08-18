@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VDX32
 kind: problem
-title: "What is a matrix algebra?"
+title: Matrix algebra
 classification:
   areas:
   - algebra

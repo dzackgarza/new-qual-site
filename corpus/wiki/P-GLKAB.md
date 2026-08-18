@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GLKAB
 kind: problem
-title: "What is the discriminant of a polynomial?"
+title: Discriminant of a polynomial
 classification:
   areas:
   - algebra

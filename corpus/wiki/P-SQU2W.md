@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-SQU2W
 kind: problem
-title: "What is a perfect field and why is this important?"
+title: Perfect fields
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7MSXM
 kind: problem
-title: "What's Cayley's theorem?"
+title: Cayley's theorem and embeddings into $S_m$ with $m<n$
 classification:
   areas:
   - algebra

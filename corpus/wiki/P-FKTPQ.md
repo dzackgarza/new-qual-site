@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FKTPQ
 kind: problem
-title: "What are the prime ideals and maximal ideals of $\\ZZ[x]$?"
+title: Prime and maximal ideals of $\ZZ[x]$
 classification:
   areas:
   - algebra

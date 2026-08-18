@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FEC3U
 kind: problem
-title: "What's the field with 25 elements?"
+title: The field with 25 elements
 classification:
   areas:
   - algebra

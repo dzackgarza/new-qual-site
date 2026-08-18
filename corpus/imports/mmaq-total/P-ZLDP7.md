@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ZLDP7
 kind: problem
-title: State Rouche's theorem.
+title: Rouché's theorem and local invertibility when $f'(0)\neq 0$
 classification:
   areas:
   - complex-analysis

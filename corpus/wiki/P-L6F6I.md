@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-L6F6I
 kind: problem
-title: "Describe all possible covering maps between $S^2, T^2, K$"
+title: Covering maps among $S^2$, $T^2$, and the Klein bottle
 classification:
   areas:
   - topology

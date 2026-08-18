@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HKG3F
 kind: problem
-title: "Classify groups of order 14."
+title: Groups of order 14
 classification:
   areas:
   - algebra

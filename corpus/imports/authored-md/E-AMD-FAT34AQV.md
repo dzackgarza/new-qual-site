@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-AMD-FAT34AQV
 kind: exercise
-title: Does diagonalizable imply distinct eigenvalues?
+title: Diagonalizable versus distinct eigenvalues
 classification:
   areas:
   - algebra

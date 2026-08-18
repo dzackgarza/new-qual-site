@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Z6MHZ
 kind: problem
-title: "What is a Kummer extension?"
+title: Kummer extension
 classification:
   areas:
   - algebra

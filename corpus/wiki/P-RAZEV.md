@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RAZEV
 kind: problem
-title: "What is Wedderburn's theorem?"
+title: Wedderburn's theorem and rational group algebras
 classification:
   areas:
   - algebra

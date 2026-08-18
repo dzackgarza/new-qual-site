@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MQ3H7
 kind: problem
-title: "For any matrix A over the complex numbers, can you solve $B^2 = A$?"
+title: Square roots of matrices over $\CC$
 classification:
   areas:
   - algebra

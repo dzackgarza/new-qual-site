@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PMGNP
 kind: problem
-title: "Do you know what the Ext functor of an abelian group is?"
+title: $\mathrm{Ext}$ of cyclic groups
 classification:
   areas:
   - algebra

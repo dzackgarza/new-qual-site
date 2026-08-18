@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-IHVQT
 kind: problem
-title: "What is a tensor product?"
+title: Tensor product
 classification:
   areas:
   - algebra

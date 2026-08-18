@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-Q5NH5
 kind: problem
-title: "Tell me about group rings."
+title: Group rings
 classification:
   areas:
   - algebra

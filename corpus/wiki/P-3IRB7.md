@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3IRB7
 kind: problem
-title: "Do polynomials in several variables form a PID?"
+title: Whether $k[x_1,\ldots,x_n]$ is a PID
 classification:
   areas:
   - algebra
