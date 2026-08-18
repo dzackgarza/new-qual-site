@@ -52,13 +52,13 @@ Dive into some topics here:
 
 - [[00_Prelims/Prelim Resources]]
 
-- [[010_Algebra]]
+- [[10_Algebra/010_Algebra]]
 
-- [[020_Real Analysis]]
+- [[20_Real_Analysis/020_Real Analysis]]
 
-- [[030_Complex Analysis]]
+- [[30_Complex_Analysis/030_Complex Analysis]]
 
-- [[040_Topology]]
+- [[40_Topology/040_Topology]]
 
 Do some #resources/reading:
 
