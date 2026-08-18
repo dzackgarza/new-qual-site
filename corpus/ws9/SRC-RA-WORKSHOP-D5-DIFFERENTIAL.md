@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-RA-WORKSHOP-D5-DIFFERENTIAL
-kind: source
+kind: collection
 title: 'Day 5: Differential Calculus'
 classification:
   areas:

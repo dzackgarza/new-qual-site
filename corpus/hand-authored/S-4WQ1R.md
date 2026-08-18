@@ -10,7 +10,7 @@ classification:
   - groups
 relations:
 - kind: solves
-  target: P-P2UAH
+  target: P-PKXBP
 - kind: uses
   target: D-7TQ2M
 review: draft

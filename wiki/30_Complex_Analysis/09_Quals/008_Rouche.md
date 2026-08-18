@@ -1,3 +1,7 @@
+---
+order: 8
+---
+
 # Rouche's Theorem (8155h)
 
 ## 1
@@ -8,7 +12,7 @@
 
 [[P-DJV6N]]
 
-[[P-UPES4]]
+[[P-5R3FT]]
 
 ## 4
 
@@ -40,7 +44,7 @@
 
 ### Tie's Extra Questions: Fall 2009
 
-[[P-DQPYN]]
+[[P-WASE4]]
 
 ### Spring 20202 HW 3 #  8
 

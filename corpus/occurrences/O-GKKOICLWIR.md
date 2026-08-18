@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-GKKOICLWIR
 kind: occurrence
-title: P-6UKIC at UGA real-analysis Fall 2020
+title: P-D6N7M at UGA real-analysis Fall 2020
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - limits
 relations:
 - kind: instance-of
-  target: P-6UKIC
+  target: P-D6N7M
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2020
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-6UKIC]] appeared at UGA real-analysis Fall 2020.
+[[P-D6N7M]] appeared at UGA real-analysis Fall 2020.
 :::

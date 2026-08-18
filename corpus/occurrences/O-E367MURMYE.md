@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-E367MURMYE
 kind: occurrence
-title: P-45CLI at UGA algebra Spring 2017
+title: P-GYQLA at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - cosets-and-lagrange
 relations:
 - kind: instance-of
-  target: P-45CLI
+  target: P-GYQLA
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2017
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-45CLI]] appeared at UGA algebra Spring 2017.
+[[P-GYQLA]] appeared at UGA algebra Spring 2017.
 :::

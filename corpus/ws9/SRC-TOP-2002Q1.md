@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-2002Q1
-kind: source
+kind: collection
 title: Topology and Algebraic Topology Ph.D. Qualifying Exam, January 18, 2002
 classification:
   areas:

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-SHUZMVPBJP
 kind: occurrence
-title: P-YIXSO at UGA real-analysis Spring 2020
+title: P-OW5VL at UGA real-analysis Spring 2020
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - stone-weierstrass
 relations:
 - kind: instance-of
-  target: P-YIXSO
+  target: P-OW5VL
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2020
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-YIXSO]] appeared at UGA real-analysis Spring 2020.
+[[P-OW5VL]] appeared at UGA real-analysis Spring 2020.
 :::

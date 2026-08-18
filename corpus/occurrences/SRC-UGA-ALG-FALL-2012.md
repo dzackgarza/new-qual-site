@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UGA-ALG-FALL-2012
-kind: source
+kind: collection
 title: UGA algebra Fall 2012
 classification:
   areas:
@@ -13,6 +13,15 @@ payload:
   source_kind: university-exam
   institution: uga
   area: algebra
+  problems:
+  - P-JCWGD
+  - P-V6LPH
+  - P-QNQTT
+  - P-TQNU2
+  - P-4IKKY
+  - P-4MBQJ
+  - P-5EROX
+  - P-UDBZP
   date:
     kind: academic-term
     term: fall
@@ -20,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Fall 2012. Recorded from the source corpus' exam-term annotations.
+UGA algebra Fall 2012. The paper is the current Quals posting `Algebra [Fall 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02012%5D.docx`).
 :::

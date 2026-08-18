@@ -1,3 +1,7 @@
+---
+order: 7
+---
+
 # Residues
 
 [[P-DFHS3]]
@@ -10,7 +14,7 @@
 
 [[P-HQCDF]]
 
-[[P-KNDGQ]]
+[[P-MBQNL]]
 
 [[P-Q7NED]]
 
@@ -54,7 +58,7 @@
 
 ### Spring 20202 HW 2 #  2.6.2
 
-[[P-JYIUP]]
+[[P-MBQNL]]
 
 ### Spring 20202 HW 3 #  3.8.1
 

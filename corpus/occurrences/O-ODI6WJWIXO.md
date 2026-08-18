@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-ODI6WJWIXO
 kind: occurrence
-title: P-ZAS5Z at UGA real-analysis Spring 2015
+title: P-GXAKN at UGA real-analysis Spring 2015
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - l1
 relations:
 - kind: instance-of
-  target: P-ZAS5Z
+  target: P-GXAKN
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-ZAS5Z]] appeared at UGA real-analysis Spring 2015.
+[[P-GXAKN]] appeared at UGA real-analysis Spring 2015.
 :::

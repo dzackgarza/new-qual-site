@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-RA-WORKSHOP-D8-MISC
-kind: source
+kind: collection
 title: 'Day 8: Miscellaneous Topics'
 classification:
   areas:

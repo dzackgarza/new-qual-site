@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-MMAQ-UW-ALG-2014-NA
-kind: source
+kind: collection
 title: UW Algebra 2014
 classification:
   areas:
@@ -13,11 +13,19 @@ payload:
   source_kind: university-exam
   institution: uw
   area: algebra
+  problems:
+  - P-MMAQ-JCG7I3RIX7
+  - P-MMAQ-5TRAOGBWCB
+  - P-MMAQ-TBOFU3T6VV
+  - P-MMAQ-ENQNQKRU6T
+  - P-OND3F
+  - P-MMAQ-CAKXSUJ3LN
+  - P-MMAQ-5FZWFKZKJ6
   date:
     kind: year
     year: 2014
 ---
 
 ::: remark
-Imported from [`make-me-a-qual Combined_Questions.yaml`](https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml) at revision `6190e0eeaf93ac471a2450444d0b70872b7b9dfa`. The verified source SHA-256 is `63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176`. This source group contains 7 rows; no exam-term inference was made beyond the explicit `season` value.
+Imported from [`make-me-a-qual Combined_Questions.yaml`](https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml) at revision `6190e0eeaf93ac471a2450444d0b70872b7b9dfa`. The verified source SHA-256 is `63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176`. This source group contains 7 rows; no exam-term inference was made beyond the explicit `season` value. The problem list is the sitting order in that YAML (exam numbers 1, 2, 3, 4, 6, 7, 8).
 :::

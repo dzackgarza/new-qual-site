@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-KVHNRBRWGO
 kind: occurrence
-title: P-JTON2 at UGA complex-analysis May 2021
+title: P-37Z7J at UGA complex-analysis May 2021
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - cauchy-riemann
 relations:
 - kind: instance-of
-  target: P-JTON2
+  target: P-37Z7J
 review: draft
 payload:
   source: SRC-UGA-CA-MAY-2021
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-JTON2]] appeared at UGA complex-analysis May 2021.
+[[P-37Z7J]] appeared at UGA complex-analysis May 2021.
 :::

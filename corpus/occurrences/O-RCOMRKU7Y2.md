@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-RCOMRKU7Y2
 kind: occurrence
-title: P-V33RL at UCSD topology Fall 2014
+title: P-TEDZR at UCSD topology Fall 2014
 classification:
   areas:
   - topology
@@ -11,7 +11,7 @@ classification:
   - manifolds
 relations:
 - kind: instance-of
-  target: P-V33RL
+  target: P-TEDZR
 review: draft
 payload:
   source: SRC-UCSD-TOP-FALL-2014
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-V33RL]] appeared at UCSD topology Fall 2014.
+[[P-TEDZR]] appeared at UCSD topology Fall 2014.
 :::

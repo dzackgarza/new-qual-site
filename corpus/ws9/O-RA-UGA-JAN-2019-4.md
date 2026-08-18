@@ -11,7 +11,7 @@ classification:
   - mean-value-theorem
 relations:
 - kind: instance-of
-  target: P-RA19J4
+  target: P-BKCZH
 review: draft
 payload:
   source: SRC-UGA-RA-JAN-2019
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-RA19J4]] appeared as problem 4 in the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/826, January 23, 2019.
+[[P-BKCZH]] appeared as problem 4 in the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/826, January 23, 2019.
 :::

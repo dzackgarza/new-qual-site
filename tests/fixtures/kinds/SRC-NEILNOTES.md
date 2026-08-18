@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-NEILNOTES
-kind: source
+kind: collection
 title: Handwritten algebra solution set, Fall 2019
 classification:
   areas:

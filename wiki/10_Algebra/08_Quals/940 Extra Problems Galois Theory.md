@@ -1,3 +1,10 @@
+---
+order: 940
+title: "Extra problems: Galois theory"
+---
+
+# Extra problems: Galois theory
+
 ## Galois Theory
 
 ### Theory

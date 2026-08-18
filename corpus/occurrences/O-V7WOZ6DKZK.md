@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-V7WOZ6DKZK
 kind: occurrence
-title: P-FSFMB at UGA algebra Spring 2019
+title: P-M6W74 at UGA algebra Spring 2019
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - burnside-s-lemma
 relations:
 - kind: instance-of
-  target: P-FSFMB
+  target: P-M6W74
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2019
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-FSFMB]] appeared at UGA algebra Spring 2019.
+[[P-M6W74]] appeared at UGA algebra Spring 2019.
 :::

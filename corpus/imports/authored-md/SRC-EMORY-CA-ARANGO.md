@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-EMORY-CA-ARANGO
-kind: source
+kind: collection
 title: Emory Quals, collected by Santiago Arango (complex analysis)
 classification:
   areas:

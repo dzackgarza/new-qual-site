@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-VPY4LFNUG2
 kind: occurrence
-title: P-KBW6F at UGA algebra Fall 2020
+title: P-LRECB at UGA algebra Fall 2020
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - centralizers-and-normalizers
 relations:
 - kind: instance-of
-  target: P-KBW6F
+  target: P-LRECB
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2020
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-KBW6F]] appeared at UGA algebra Fall 2020, problem 4.
+[[P-LRECB]] appeared at UGA algebra Fall 2020, problem 4.
 :::

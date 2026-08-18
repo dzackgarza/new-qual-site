@@ -12,14 +12,14 @@ classification:
   - fundamental-group
 relations: []
 review: draft
-solved: false
+solved: true
 ---
 
 ::: problem
 Show that for every map $f: S^2 \to S^1$, there is a point $x\in S^2$ such that $f(x) = f(-x)$.
+:::
 
-**Solution**:
-
+::: {.solution}
 Suppose towards a contradiction that $f$ does not possess this property, so there is no $x\in S^2$ such that $f(x) = f(-x)$.
 
 Then define $g: S^2 \into S^1$ by $g(x) = {f(x) - f(-x)}$; by assumption, this is a nontrivial map, i.e. $g(x) \neq 0$ for *any* $x\in S^2$.
@@ -31,7 +31,9 @@ This means $g$ is constant on the fibers of the quotient map $p: S^2 \into \RP 2
 Since $g$ was nontrivial, $\tilde g$ is nontrivial, and by functoriality of $\pi_1$, $\tilde g_*$ is nontrivial.
 
 But $\pi_1(\RP 2) = \ZZ_2$ and $\pi_1(\RP 1) = \ZZ$, and $\tilde g_*: \ZZ^2 \into \ZZ$ can only be the trivial homomorphism - a contradiction.
+:::
 
+::: {.remark}
 **Alternate Solution**
 
 Use covering space $\RR \surjects S^1$?

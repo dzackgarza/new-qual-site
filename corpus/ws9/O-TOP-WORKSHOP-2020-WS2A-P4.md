@@ -11,7 +11,7 @@ classification:
   - product-topology
 relations:
 - kind: instance-of
-  target: P-T19A2
+  target: P-KCN2B
 review: draft
 payload:
   source: SRC-TOP-WORKSHOP-2020-WS2A
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-The workshop page labels this problem “May 2019”; the canonical card is `P-T19A2`.
+The workshop page labels this problem “May 2019”; the canonical card is `P-KCN2B`.
 :::

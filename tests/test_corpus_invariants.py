@@ -6,7 +6,7 @@ enter through a payload, and that `solved` matches the evidence on the card.
 
 The `qualc check` gate is the reason the payload-area guard exists at all: it
 validated `classification.areas` against the registry and never `payload.area`,
-so `prelim` entered 29 UGA source cards unregistered, and the 419 cards that
+so `prelim` entered 29 UGA collection cards unregistered, and the 419 cards that
 should have inherited an area from them ended up with `areas: []` instead.
 """
 
@@ -16,7 +16,7 @@ from pathlib import Path
 
 from qualc.diagnostics import DiagnosticCode
 from qualc.index import load_vocabularies, validate
-from qualc.model import ParsedCard, ProblemCard, SolutionCard, SourceCard
+from qualc.model import CollectionCard, ParsedCard, ProblemCard, SolutionCard
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -77,13 +77,13 @@ def test_solved_declaration_must_match_evidence() -> None:
     assert validate([_problem_card("P-CLEAN", solved=False, sections=[])], vocab) == []
 
 
-def _source_card(area: str) -> ParsedCard:
+def _collection_card(area: str) -> ParsedCard:
     return ParsedCard(
-        card=SourceCard.model_validate(
+        card=CollectionCard.model_validate(
             {
                 "schema": "qual/card@1",
                 "id": "SRC-TEST",
-                "kind": "source",
+                "kind": "collection",
                 "title": "A sitting",
                 "classification": {"areas": ["algebra"], "topics": []},
                 "relations": [],
@@ -103,13 +103,13 @@ def _source_card(area: str) -> ParsedCard:
 
 
 def test_unregistered_payload_area_is_rejected() -> None:
-    """The injected violation: a source card whose payload names an area the
+    """The injected violation: a collection card whose payload names an area the
     registry does not know. Before this guard the corpus accepted it silently."""
     vocab = load_vocabularies(ROOT / "vocabularies")
 
-    errors = validate([_source_card("not-a-real-area")], vocab)
+    errors = validate([_collection_card("not-a-real-area")], vocab)
     assert [error.code for error in errors] == [DiagnosticCode.UNKNOWN_AREA], f"an unregistered payload.area must be rejected as unknown-area; got {[e.code for e in errors]}"
 
     # And the same card with a registered area passes, so the guard is not
-    # simply rejecting every source card.
-    assert validate([_source_card("algebra")], vocab) == []
+    # simply rejecting every collection card.
+    assert validate([_collection_card("algebra")], vocab) == []

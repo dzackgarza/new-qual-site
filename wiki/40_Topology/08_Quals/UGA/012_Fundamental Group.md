@@ -1,8 +1,10 @@
+---
+order: 12
+---
+
 # The Fundamental Group
 
 ## 1 (Spring '15)
-
-[[P-653RW]]
 
 [[P-RIW3S]]
 

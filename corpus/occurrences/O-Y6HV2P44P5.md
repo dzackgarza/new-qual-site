@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-Y6HV2P44P5
 kind: occurrence
-title: P-MDFEL at UGA topology Spring 2018
+title: P-SG462 at UGA topology Spring 2018
 classification:
   areas:
   - topology
@@ -11,7 +11,7 @@ classification:
   - hausdorff-spaces
 relations:
 - kind: instance-of
-  target: P-MDFEL
+  target: P-SG462
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2018
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-MDFEL]] appeared at UGA topology Spring 2018.
+[[P-SG462]] appeared at UGA topology Spring 2018.
 :::

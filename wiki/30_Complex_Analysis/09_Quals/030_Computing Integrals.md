@@ -150,7 +150,7 @@ status: in_progress
 
 ### $\sinc$
 
-[[P-KNDGQ]]
+[[P-MBQNL]]
 
 ### $\cos$ in numerator
 
@@ -214,4 +214,4 @@ status: in_progress
 
 ### Tie's Extra Questions: Spring 2015
 
-[[P-MTRGT]]
+[[P-R424U]]

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-CKZHM4IIAB
 kind: occurrence
-title: P-O6T63 at UGA real-analysis Fall 2015
+title: P-SMJE7 at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
@@ -11,7 +11,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-O6T63
+  target: P-SMJE7
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2015
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-O6T63]] appeared at UGA real-analysis Fall 2015.
+[[P-SMJE7]] appeared at UGA real-analysis Fall 2015.
 :::

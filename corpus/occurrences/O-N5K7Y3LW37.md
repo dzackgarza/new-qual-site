@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-N5K7Y3LW37
 kind: occurrence
-title: P-7XWID at UGA real-analysis Fall 2021
+title: P-JCEPZ at UGA real-analysis Fall 2021
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - fixed-points
 relations:
 - kind: instance-of
-  target: P-7XWID
+  target: P-JCEPZ
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2021
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-7XWID]] appeared at UGA real-analysis Fall 2021.
+[[P-JCEPZ]] appeared at UGA real-analysis Fall 2021.
 :::

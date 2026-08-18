@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UGA-FIX
-kind: source
+kind: collection
 title: UGA Algebra qualifying exam, Spring 2019
 classification:
   areas:

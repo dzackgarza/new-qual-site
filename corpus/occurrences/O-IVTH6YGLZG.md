@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-IVTH6YGLZG
 kind: occurrence
-title: P-UTKJ7 at UGA algebra Spring 2021
+title: P-HJ2AR at UGA algebra Spring 2021
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - field-extensions
 relations:
 - kind: instance-of
-  target: P-UTKJ7
+  target: P-HJ2AR
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2021
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-UTKJ7]] appeared at UGA algebra Spring 2021, problem 4.
+[[P-HJ2AR]] appeared at UGA algebra Spring 2021, problem 4.
 :::

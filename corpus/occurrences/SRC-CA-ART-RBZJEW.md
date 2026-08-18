@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-CA-ART-RBZJEW
-kind: source
+kind: collection
 title: QualBot image Conformal map 1 (complex-analysis)
 classification:
   areas:

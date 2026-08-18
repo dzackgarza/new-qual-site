@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-UCQE2CZ6WL
 kind: occurrence
-title: P-36DLV at UGA complex-analysis Fall 2009
+title: P-3WZXM at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - zeros
 relations:
 - kind: instance-of
-  target: P-36DLV
+  target: P-3WZXM
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2009
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-36DLV]] appeared at UGA complex-analysis Fall 2009.
+[[P-3WZXM]] appeared at UGA complex-analysis Fall 2009.
 :::

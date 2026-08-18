@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-ALG-ART-ZZB64L
-kind: source
+kind: collection
 title: Fall 2019 Midterm #4 (algebra)
 classification:
   areas:

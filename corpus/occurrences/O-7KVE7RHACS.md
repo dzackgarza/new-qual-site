@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-7KVE7RHACS
 kind: occurrence
-title: P-JPP6O at UGA algebra Spring 2021
+title: P-4XOCE at UGA algebra Spring 2021
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - conjugacy
 relations:
 - kind: instance-of
-  target: P-JPP6O
+  target: P-4XOCE
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2021
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-JPP6O]] appeared at UGA algebra Spring 2021.
+[[P-4XOCE]] appeared at UGA algebra Spring 2021.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-WX4O2I7PQQ
 kind: occurrence
-title: P-ZH565 at UGA algebra Spring 2016
+title: P-LL7UL at UGA algebra Spring 2016
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - sylow-theory
 relations:
 - kind: instance-of
-  target: P-ZH565
+  target: P-LL7UL
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2016
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-ZH565]] appeared at UGA algebra Spring 2016, problem 6.
+[[P-LL7UL]] appeared at UGA algebra Spring 2016, problem 6.
 :::

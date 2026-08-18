@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-CA-ART-T2NKIT
-kind: source
+kind: collection
 title: Spring 2020 HW 2 #2.6.1 (complex-analysis)
 classification:
   areas:

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-VOAHP3I4SD
 kind: occurrence
-title: P-BNXPE at UGA real-analysis Fall 2017
+title: P-DEFYR at UGA real-analysis Fall 2017
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - convergence-of-integrals
 relations:
 - kind: instance-of
-  target: P-BNXPE
+  target: P-DEFYR
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2017
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-BNXPE]] appeared at UGA real-analysis Fall 2017.
+[[P-DEFYR]] appeared at UGA real-analysis Fall 2017.
 :::

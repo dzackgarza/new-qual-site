@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-UNL-2017Q1
-kind: source
+kind: collection
 title: 'UNL Math 871-872 Topology Qualifying Exam, January 2017'
 classification:
   areas:

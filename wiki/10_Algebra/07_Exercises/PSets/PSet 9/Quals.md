@@ -1,4 +1,5 @@
 ---
+order: 100002
 title: "Problem Set 9 Qual Problems"
 ---
 
@@ -6,16 +7,13 @@ title: "Problem Set 9 Qual Problems"
 
 ## Part 1
 
-*Definition:*
-An element $r\in R$ is *irreducible* if whenever $r=st$, then either $s$ or $t$ is a unit.
+*Definition:* An element $r\in R$ is *irreducible* if whenever $r=st$, then either $s$ or $t$ is a unit.
 
-*Definition:*
-Two elements $r,s\in R$ are *associates* if $r = \ell s$ for some unit $\ell$.
+*Definition:* Two elements $r,s\in R$ are *associates* if $r = \ell s$ for some unit $\ell$.
 
 A ring $R$ is a *unique factorization domain* iff for every $r\in R$, there exists a set $\theset{p_i \mid 1\leq i \leq n}$ such that $r = u \prod_{i=1}^n p_i$ where $u$ is a unit and each $p_i$ is irreducible.
 
 Moreover, this factorization is unique in the sense that if $r = w \prod_{i=1}^n q_i$ for some $w$ a unit and $q_i$ irreducible elements, then each $q_i$ is an associate of some $p_i$.
-
 
 ## Part 2
 
@@ -26,8 +24,7 @@ A ring $R$ is a *principal ideal domain* iff whenever $I \normal R$ is an ideal 
 An example of a UFD that is not a PID is given by $R = k[x, y]$ for $k$ a field.
 
 That $R$ is a UFD follows from the fact that if $k$ is a field, then $k$ has no prime elements since every non-zero element is a unit.
-So the factorization condition holds vacuously for $k$, and $k$ is a UFD.
-But then we can use the following result:
+So the factorization condition holds vacuously for $k$, and $k$ is a UFD. But then we can use the following result:
 
 > **Theorem**: If $R$ is a UFD, then $R[x]$ is a UFD.
 
@@ -36,15 +33,15 @@ Since $k$ is a UFD, the theorem implies that $k[x]$ is a UFD, from which it foll
 To see that $R$ is not a PID, consider the ideal $I = (x, y)$, and suppose $I = (g)$ for some single $g\in k[x, y]$.
 
 Note that $I \neq R$, since $I$ contains no degree zero polynomials.
-Moreover, since $(x) \subset I = (g)$ (and similarly for $y$), we have $g\divides x$ and $g\divides y$, which forces $\deg g = 0$. 
+Moreover, since $(x) \subset I = (g)$ (and similarly for $y$), we have $g\divides x$ and $g\divides y$, which forces $\deg g = 0$.
 
 So in fact $g\in k$ and thus $g$ is invertible, but then $(g) = g\inv (g) = (1) = k$, so this forces $I = k \normal k[x, y]$.
 However, $x\not\in k$ (nor $y$), which is a contradiction.
 
-
 # Problem 2
 
 ## Lemma 1
+
 $A$ has $n$ distinct eigenvalues $\iff m_A(x) = \chi_A(x)$.
 
 *Proof:*
@@ -58,16 +55,16 @@ m_A(x) = \prod_i (x-\lambda_i)^{p_i} \\
 
 where $1 \leq p_i \leq q_i$ for every $i$.
 
-$\implies$:
-If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod_{i=1}^n (x-\lambda_i)$ in $\overline{k} [x]$. 
+$\implies$: If $A$ has $n$ distinct eigenvalues, then $\chi_A(x) = \prod_{i=1}^n (x-\lambda_i)$ in $\overline{k} [x]$.
 Noting that every exponent is 1, we have $q_i = 1$ for all $i$, which forces $p_i = 1$ and thus $m_A(x) = \chi_A(x)$.
 
-$\impliedby$:
-If $m_A(x) = \chi_A(x)$, then $p_i = q_i$ for all $i$.
-If we then consider $JCF(A)$, we have 
+$\impliedby$: If $m_A(x) = \chi_A(x)$, then $p_i = q_i$ for all $i$.
+If we then consider $JCF(A)$, we have
 
 - The number of Jordan block $J_{\lambda_i}$ is the dimension of the eigenspace $E_{\lambda_i}$,
+
 - $q_i =$ the sum of the sizes of all Jordan blocks $J_{\lambda_i}$, and
+
 - $p_i =$ the size of the largest Jordan block $J_{\lambda_i}$.
 
 Thus $p_i = q_i$ for every $i$ $\iff$ there is one Jordan block for every $\lambda_i$ $\iff$ $\dim E_{\lambda_i} = 1$ for every $i$.
@@ -77,16 +74,17 @@ Since $\chi_A(x)$ is a degree $n$ polynomial, this says that $\chi_A$ has $n$ di
 
 $\qed$
 
-
 ## Lemma 2
+
 Let $k[x] \actson V$ in the usual way with $A$ to obtain an invariant factor decomposition
 $$
 V = \frac{k[x]}{(f_1)} \oplus \frac{k[x]}{(f_2)} \oplus \cdots \oplus \frac{k[x]}{(f_k)}, \quad  f_1 \divides f_2 \divides \cdots \divides f_k.
 $$
 
-Then it is always the case that 
+Then it is always the case that
 
 - $m_A(x) = f_k(x)$, i.e. the minimal polynomial is the invariant factor of largest degree,
+
 - $\chi_A(x) = \prod_{i=1}^k f_i(x)$, i.e. the characteristic polynomial is the product of all of the invariant factors.
 
 $\qed$
@@ -95,10 +93,10 @@ $\qed$
 
 $(1) \implies (2)$:
 
-Suppose 
+Suppose
 $$
 V = \spanof_k\theset{\vector v, A\vector v, A^2 \vector v, \cdots A^{n-1}\vector v} \definedas \spanof_k \mathcal B
-$$ 
+$$
 where $\dim_k V = n$.
 
 Then $A^n \vector v$ is necessarily a linear combination of these basis elements, and in particular, there are coefficients $c_i$ (not all zero) such that
@@ -106,7 +104,7 @@ $$
 A^n \vector v = \sum_{i=0}^{n-1} c_i A^i \vector v.
 $$
 
-The consider computing the matrix of $A$ in $\mathcal B$ by considering the images of all basis elements under $A$. 
+The consider computing the matrix of $A$ in $\mathcal B$ by considering the images of all basis elements under $A$.
 
 Letting $\mathcal B = \theset{\vector w_i \definedas A^i \vector v \mid 0\leq i \leq n-1}$, we have
 \begin{align*}
@@ -124,16 +122,14 @@ This means that with respect to the basis $\mathcal B$, $A$ has the following ma
 \left[\begin{array}{ccccc}{0} & {0} & {\dots} & {0} & {c_{0}} \\ {1} & {0} & {\dots} & {0} & {c_{1}} \\ {0} & {1} & {\dots} & {0} & {c_{2}} \\ {} & {} & {\ddots} & {} & {\vdots} \\ {0} & {0} & {\dots} & {1} & {c_{n-1}}\end{array}\right]
 \end{align*}
 
-
 But this is the companion matrix for $p(x) = \sum_{i=0}^{n-1} c_i x^i$, which always satisfy the property that $p(x)$ equals both their characteristic *and* their minimal polynomial.
 
 Thus by lemma 1, the matrix $[A]_{\mathcal{B}}$ has distinct eigenvalues, and thus so does $A$.
 
-
 $(2) \implies (1)$:
 
-Suppose $A$ has distinct eigenvalues. 
-By Lemma 1, $\chi_A(x) = m_A(x)$, and so we have 
+Suppose $A$ has distinct eigenvalues.
+By Lemma 1, $\chi_A(x) = m_A(x)$, and so we have
 $$
 \chi_A(x) = f_k(x) = \prod_{i=1}^k f_i(x) = m_A(x),
 $$
@@ -145,10 +141,9 @@ $$
 V \cong \frac{k[x]}{(f_k)}, \quad \ann(V) = (f_k), \quad \deg f_k = n.
 $$
 
-
 If we now take the Rational Canonical Form of $A$, it follows that $RCF(A)$ has only a *single* block in a suitable ordered basis $\mathcal B = \theset{\vector w_0, \cdots, \vector w_{n-1}}$.
 
-So write $f_k(x) = \sum_{i=0}^n c_i x^i$; then $[A]_{\mathcal B}$ is the companion matrix to $f_k(x)$ in the basis $\mathcal B$, which by construction satisfies 
+So write $f_k(x) = \sum_{i=0}^n c_i x^i$; then $[A]_{\mathcal B}$ is the companion matrix to $f_k(x)$ in the basis $\mathcal B$, which by construction satisfies
 $$
 A = \left[\begin{array}{ccccc}{0} & {0} & {\dots} & {0} & {c_{0}} \\ {1} & {0} & {\dots} & {0} & {c_{1}} \\ {0} & {1} & {\dots} & {0} & {c_{2}} \\ {} & {} & {\ddots} & {} & {\vdots} \\ {0} & {0} & {\dots} & {1} & {c_{n-1}}\end{array}\right] 
 \implies
@@ -185,7 +180,6 @@ M\vector v =
 1 \left[\begin{array}{cc} 0 \\ 1 \\ 0 \end{array}\right]
 ,\end{align*}
 
-
 which shows that $\vector v$ is an eigenvector of $M$ with eigenvalue $\lambda = 1$.
 
 ## Part 2
@@ -212,7 +206,6 @@ Thus
 \begin{align*}
 \rank(M) = \begin{cases} 3 & xy = 1 \\ 2 & \text{else.} \end{cases}
 \end{align*}
-
 
 ## Part 3
 

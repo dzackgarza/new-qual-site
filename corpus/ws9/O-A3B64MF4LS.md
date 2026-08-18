@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-A3B64MF4LS
 kind: occurrence
-title: P-QDGDN at UGA prelim Fall 2017
+title: P-BZIXT at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
@@ -10,7 +10,7 @@ classification:
   - functions-and-relations
 relations:
 - kind: instance-of
-  target: P-QDGDN
+  target: P-BZIXT
 review: draft
 payload:
   source: SRC-UGA-PRELIM-FALL-2017
@@ -18,5 +18,5 @@ payload:
 ---
 
 ::: remark
-[[P-QDGDN]] appeared at UGA prelim Fall 2017.
+[[P-BZIXT]] appeared at UGA prelim Fall 2017.
 :::

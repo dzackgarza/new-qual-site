@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-RA-WORKSHOP-D6-INTEGRAL
-kind: source
+kind: collection
 title: 'Day 6: Integral Calculus'
 classification:
   areas:

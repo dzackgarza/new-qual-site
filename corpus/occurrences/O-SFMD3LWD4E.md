@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-SFMD3LWD4E
 kind: occurrence
-title: P-OO3WX at UGA complex-analysis Spring 2015
+title: P-KNIPC at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - uniform-convergence
 relations:
 - kind: instance-of
-  target: P-OO3WX
+  target: P-KNIPC
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-OO3WX]] appeared at UGA complex-analysis Spring 2015.
+[[P-KNIPC]] appeared at UGA complex-analysis Spring 2015.
 :::

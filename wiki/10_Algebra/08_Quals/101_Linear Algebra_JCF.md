@@ -1,3 +1,7 @@
+---
+order: 101
+---
+
 # Linear Algebra: Canonical Forms
 
 ## Fall 2021 #3
@@ -49,8 +53,6 @@
 [[P-4GMLL]]
 
 ## Spring 2015 #6
-
-[[P-P7TEE]]
 
 [[P-POJFX]]
 

@@ -1,3 +1,7 @@
+---
+order: 0
+---
+
 # Undergraduate Analysis: Uniform Convergence
 
 ## Fall 2018 # 1
@@ -48,15 +52,13 @@
 
 ## Fall 2019 # 1
 
-[[P-QOC7V]]
 
 ## Fall 2018 # 4
 
-[[P-NVVZJ]]
+[[P-CN673]]
 
 ## Fall 2017 # 4
 
-[[P-BNXPE]]
 
 ## Spring 2017 # 3
 
@@ -74,7 +76,6 @@
 
 ## Fall 2020 \# 1
 
-[[P-6UKIC]]
 
 ## Fall 2020 \# 3
 

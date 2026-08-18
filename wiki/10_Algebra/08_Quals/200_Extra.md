@@ -1,11 +1,10 @@
+---
+order: 200
+---
+
 # Extra Problems
 
-> Many many fundamental problems here: <https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/groups/>
-
-> Tons of extra fundamental problems here: <https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/groups/>
-
-> (DZG): these are just random extra problems that I found and dropped in.
-> There is likely a ton of overlap/redundancy!
+> Extra drill, including problems from <https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/groups/>. There is overlap with other lists in this folder.
 
 ## Linear Algebra
 

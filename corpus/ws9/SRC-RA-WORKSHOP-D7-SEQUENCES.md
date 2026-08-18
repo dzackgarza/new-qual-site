@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-RA-WORKSHOP-D7-SEQUENCES
-kind: source
+kind: collection
 title: 'Day 7: Sequences and Series of Functions'
 classification:
   areas:

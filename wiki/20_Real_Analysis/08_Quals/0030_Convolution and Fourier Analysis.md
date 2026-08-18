@@ -1,3 +1,7 @@
+---
+order: 30
+---
+
 # $L^2$ and Fourier Analysis
 
 ## Spring 2020 # 6
@@ -6,7 +10,6 @@
 
 ## Fall 2017 # 5
 
-[[P-L44W5]]
 
 ## Spring 2017 # 5
 

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-CA-ART-NIANAP
-kind: source
+kind: collection
 title: Spring 2020 HW 2, SS 2.6.10 (complex-analysis)
 classification:
   areas:

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-OJWZQI2GLP
 kind: occurrence
-title: P-NSKLO at UCLA real-analysis Fall 2010
+title: P-4KTFN at UCLA real-analysis Fall 2010
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - counterexamples
 relations:
 - kind: instance-of
-  target: P-NSKLO
+  target: P-4KTFN
 review: draft
 payload:
   source: SRC-UCLA-RA-FALL-2010
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-NSKLO]] appeared at UCLA real-analysis Fall 2010.
+[[P-4KTFN]] appeared at UCLA real-analysis Fall 2010.
 :::

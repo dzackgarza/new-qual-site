@@ -12,7 +12,7 @@ from .diagnostics import Diagnostic
 from .model import ParsedCard, discover, parse_cards_with
 from .pandoc_batch import PandocServer
 from .static_site import build_asset_catalog
-from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links
+from .wiki import WikiPage, link_citations, load_citations, parse_pages, resolve_links, validate_wiki_tree
 
 
 def load(
@@ -31,7 +31,7 @@ def load(
         errors.extend(wiki_errors)
         card_routes = {}
         for item in parsed:
-            if item.card.kind == "source":
+            if item.card.kind == "collection":
                 card_routes[item.card.id] = Path("exam") / f"{item.card.id}.html"
             elif item.card.kind == "occurrence":
                 target = next(relation.target for relation in item.card.relations if relation.kind == "instance-of")
@@ -40,6 +40,7 @@ def load(
                 card_routes[item.card.id] = Path("tag") / f"{item.card.id}.html"
         if wiki_pages:
             assets = build_asset_catalog(root / "assets")
+            errors.extend(validate_wiki_tree(wiki_pages))
             errors.extend(resolve_links(wiki_pages, card_routes, assets))
             link_citations(wiki_pages, card_routes)
     return parsed, wiki_pages, errors

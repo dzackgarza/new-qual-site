@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UGA-ALG-FALL-2017
-kind: source
+kind: collection
 title: UGA algebra Fall 2017
 classification:
   areas:
@@ -13,6 +13,14 @@ payload:
   source_kind: university-exam
   institution: uga
   area: algebra
+  problems:
+  - P-DXHST
+  - P-YMOTZ
+  - P-OS765
+  - P-IKJXT
+  - P-ZOYZH
+  - P-VGN3T
+  - P-NQAQK
   date:
     kind: academic-term
     term: fall
@@ -20,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Fall 2017. Recorded from the source corpus' exam-term annotations.
+UGA algebra Fall 2017. The paper is the current Quals posting `Algebra [Fall 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02017%5D.docx`).
 :::

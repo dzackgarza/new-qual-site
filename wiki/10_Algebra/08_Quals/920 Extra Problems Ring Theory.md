@@ -1,3 +1,10 @@
+---
+order: 920
+title: "Extra problems: ring theory"
+---
+
+# Extra problems: ring theory
+
 ## Ring Theory
 
 ### Basic Structure

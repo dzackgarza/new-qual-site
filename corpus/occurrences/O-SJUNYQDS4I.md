@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-SJUNYQDS4I
 kind: occurrence
-title: P-FU6SE at UGA complex-analysis Fall 2009
+title: P-ZX7FP at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - limits
 relations:
 - kind: instance-of
-  target: P-FU6SE
+  target: P-ZX7FP
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2009
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-FU6SE]] appeared at UGA complex-analysis Fall 2009.
+[[P-ZX7FP]] appeared at UGA complex-analysis Fall 2009.
 :::

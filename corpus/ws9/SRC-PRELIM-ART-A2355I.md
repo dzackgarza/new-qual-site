@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-PRELIM-ART-A2355I
-kind: source
+kind: collection
 title: UGA (undated) (prelim)
 classification:
   areas:

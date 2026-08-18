@@ -50,7 +50,6 @@ from .static_site import (
     AssetCatalog,
     AuthoredPage,
     EndReading,
-    LevelOnly,
     MiddleReading,
     NavigationLink,
     NavigationParent,
@@ -71,6 +70,8 @@ from .static_site import (
 from .wiki import (
     WIKI_BATCH_SIZE,
     WikiPage,
+    incoming_wiki_links,
+    wiki_card_mentions,
 )
 from .wiki import (
     link_targets as wiki_link_targets,
@@ -336,69 +337,86 @@ def _wiki_branch(page: WikiPage) -> str:
     return parts[0] if len(parts) > 1 else ""
 
 
-def _wiki_level_title(segment: str) -> str:
-    """A directory label: the folder name without the numeric sort key.
+def _wiki_node(page: WikiPage) -> tuple[str, NavigationParent]:
+    parts = page.source_rel.parts
+    if page.source_rel.stem.lower() == "index" and len(parts) > 1:
+        parent_parts = parts[:-2]
+        parent: NavigationParent = RootParent() if not parent_parts else NodeParent("/".join(parent_parts))
+        return "/".join(parts[:-1]), parent
+    parent_parts = parts[:-1]
+    parent = RootParent() if not parent_parts else NodeParent("/".join(parent_parts))
+    return page.route.as_posix(), parent
 
-    `10_Algebra` and `020_Groups` sort the tree; the reader sees Algebra and
-    Groups. Underscores stay as spaces, matching the rest of the wiki nav.
-    """
-    stripped = re.sub(r"^(?:\d+[._\- ]*)+", "", segment)
-    label = (stripped or segment).replace("_", " ").strip()
-    return label or segment
+
+def _wiki_parent_key(link: NavigationLink) -> str:
+    match link.parent:
+        case RootParent():
+            return ""
+        case NodeParent(key=key):
+            return key
+
+
+def _wiki_reading_members(
+    ordered: tuple[NavigationLink, ...],
+    pages_by_key: dict[str, WikiPage],
+) -> dict[str, list[WikiPage]]:
+    children: dict[str, list[NavigationLink]] = {link.key: [] for link in ordered}
+    roots: list[NavigationLink] = []
+    for link in ordered:
+        match link.parent:
+            case RootParent():
+                roots.append(link)
+            case NodeParent(key=parent_key):
+                children[parent_key].append(link)
+    members: dict[str, list[WikiPage]] = {}
+
+    def walk(nodes: list[NavigationLink]) -> None:
+        for link in nodes:
+            page = pages_by_key[link.key]
+            members.setdefault(_wiki_branch(page), []).append(page)
+            walk(children[link.key])
+
+    walk(roots)
+    return members
 
 
 def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
     """The full wiki tree, breadcrumbs, and branch reading order, by route.
 
-    A page's trail is the directory path it is filed under, which is the
-    hierarchy the author built and the one the subtitle already shows. Reading
-    order is filename order within the branch, which is what the tree merge at
-    `fd37c3d1` preserved when it sorted the named tree into the numbered one.
-
-    A directory is a `LevelOnly` node unless it contains `index.md`, which is
-    that directory in the tree: the folder title and route come from the page,
-    and the page is not listed again among the children.
+    A page's trail is the directory path it is filed under. Labels and sibling
+    order come from that page's `title` and `order`. A directory is in the tree
+    only through its `index.md`, which is that directory: the folder title,
+    order, and route come from the page, and the page is not listed again among
+    the children. Reading order is depth-first over that same ordered tree,
+    within the top-level branch.
     """
-    sorted_pages = sorted(pages, key=lambda page: page.source_rel.as_posix())
     links: dict[str, NavigationLink] = {}
     page_keys: dict[str, str] = {}
-    for page in sorted_pages:
-        parent: NavigationParent = RootParent()
-        for depth in range(1, len(page.source_rel.parts)):
-            key = "/".join(page.source_rel.parts[:depth])
-            if key not in links:
-                links[key] = NavigationLink(
-                    key=key,
-                    title=_wiki_level_title(page.source_rel.parts[depth - 1]),
-                    target=LevelOnly(),
-                    parent=parent,
-                )
-            parent = NodeParent(key)
-        route_key = page.route.as_posix()
-        directory_parts = page.source_rel.parts[:-1]
-        if page.source_rel.stem.lower() == "index" and directory_parts:
-            dir_key = "/".join(directory_parts)
-            directory = links[dir_key]
-            links[dir_key] = NavigationLink(
-                key=dir_key,
-                title=page.title,
-                target=PageTarget(page.route),
-                parent=directory.parent,
-            )
-            page_keys[route_key] = dir_key
-        else:
-            links[route_key] = NavigationLink(
-                key=route_key,
-                title=page.title,
-                target=PageTarget(page.route),
-                parent=parent,
-            )
-            page_keys[route_key] = route_key
+    pages_by_key: dict[str, WikiPage] = {}
+    for page in pages:
+        key, parent = _wiki_node(page)
+        links[key] = NavigationLink(
+            key=key,
+            title=page.title,
+            target=PageTarget(page.route),
+            parent=parent,
+        )
+        page_keys[page.route.as_posix()] = key
+        pages_by_key[key] = page
 
+    ordered = tuple(
+        sorted(
+            links.values(),
+            key=lambda link: (
+                _wiki_parent_key(link),
+                pages_by_key[link.key].order,
+                link.title,
+                link.key,
+            ),
+        )
+    )
     navigation: dict[str, PublicationNavigation] = {}
-    ordered = tuple(links.values())
-    for branch in sorted({_wiki_branch(page) for page in sorted_pages}):
-        members = [page for page in sorted_pages if _wiki_branch(page) == branch]
+    for members in _wiki_reading_members(ordered, pages_by_key).values():
         for index, page in enumerate(members):
             previous = members[index - 1] if index else None
             following = members[index + 1] if index + 1 < len(members) else None
@@ -414,10 +432,10 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
                 )
             else:
                 position = OnlyReading()
-            key = page.route.as_posix()
-            navigation[key] = PublicationNavigation(
+            route_key = page.route.as_posix()
+            navigation[route_key] = PublicationNavigation(
                 links=ordered,
-                current_key=page_keys[key],
+                current_key=page_keys[route_key],
                 position=position,
             )
     return navigation
@@ -431,14 +449,34 @@ def _wiki_chrome(
     return AuthoredPage(found) if found else StandardPage()
 
 
-def _wiki_blocks(page: WikiPage) -> list[pf.Block]:
+def _wiki_incoming_html(sources: list[WikiPage]) -> str:
+    if not sources:
+        return ""
+    items = "".join(
+        f'<li><a href="{html.escape(page.route.as_posix(), quote=True)}">{html.escape(page.title)}</a></li>'
+        for page in sources
+    )
+    return (
+        '<section class="relation-group" data-relation-group="wiki-backlinks">'
+        "<h2>What links to this</h2>"
+        f"<ul>{items}</ul>"
+        "</section>"
+    )
+
+
+def _wiki_blocks(page: WikiPage, incoming: list[WikiPage]) -> list[pf.Block]:
     """An authored wiki page gets the same section labelling a card gets.
 
     Only the card path ran `_rename`, so every `:::{.remark}`, `:::{.proof}`
     and `:::{.fact}` on the wiki reached the reader as unmarked prose: the
     label rule in `styles.css` keys on the `qual-section` class this adds.
+    Incoming wikilinks are inverted from the resolved graph, not authored.
     """
-    return list(pf.Doc(*page.blocks).walk(_rename).content)
+    blocks = list(pf.Doc(*page.blocks).walk(_rename).content)
+    html_block = _wiki_incoming_html(incoming)
+    if html_block:
+        blocks.append(pf.RawBlock(html_block, format="html"))
+    return blocks
 
 
 # --- raw-JSON tag-page path -------------------------------------------------
@@ -488,6 +526,7 @@ def _relation_groups_json(
     con: sqlite3.Connection,
     card_id: str,
     appearances: dict[str, list[Appearance]],
+    wiki_mentions: list[WikiPage],
 ) -> dict:
     dependencies = _rows(
         con,
@@ -523,6 +562,7 @@ def _relation_groups_json(
         "<h2>Backlinks</h2>"
         f"{_card_relation_items(backlinks)}"
         "</section>"
+        f"{_wiki_incoming_html(wiki_mentions)}"
         "</div>"
     )
     return {"t": "RawBlock", "c": ["html", source]}
@@ -567,13 +607,20 @@ def problem_json(
     card: sqlite3.Row,
     jcache: dict,
     appearances: dict[str, list[Appearance]],
+    wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
     facets = _rows(
         con,
-        "select distinct e.institution, s.year from occurrences o join sources s on s.id=o.source_id join exam_sources e on e.id=s.id where o.problem_id=?",
+        """
+        select distinct e.institution, s.year
+        from collection_problems cp
+        join sources s on s.id=cp.collection_id
+        left join exam_sources e on e.id=s.id
+        where cp.problem_id=?
+        """,
         (card["id"],),
     )
-    institutions = sorted({f["institution"].upper() for f in facets})
+    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
     years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
     areas = _terms(con, card["id"], "area")
     topics = _terms(con, card["id"], "topic")
@@ -600,7 +647,7 @@ def problem_json(
             rb = _dup(jcache[rel["id"]])
             _rename_json(rb)
             body += rb
-    body.append(_relation_groups_json(con, card["id"], appearances))
+    body.append(_relation_groups_json(con, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
@@ -618,10 +665,11 @@ def plain_json(
     card: sqlite3.Row,
     jcache: dict,
     appearances: dict[str, list[Appearance]],
+    wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
     body = _dup(jcache[card["id"]])
     _rename_json(body)
-    body.append(_relation_groups_json(con, card["id"], appearances))
+    body.append(_relation_groups_json(con, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
@@ -883,14 +931,20 @@ def problem_page(
         "select o.*, c.ast, s.title as source_title from occurrences o join cards c on c.id=o.id join cards s on s.id=o.source_id where o.problem_id=? order by o.id",
         (card["id"],),
     )
-    # Institution facets come from exam_sources: only a sitting has one. A
+    # Institution facets come from exam collections that list this problem. A
     # problem cited from a textbook contributes a year but no institution.
     facets = _rows(
         con,
-        "select distinct e.institution, s.year from occurrences o join sources s on s.id=o.source_id join exam_sources e on e.id=s.id where o.problem_id=?",
+        """
+        select distinct e.institution, s.year
+        from collection_problems cp
+        join sources s on s.id=cp.collection_id
+        left join exam_sources e on e.id=s.id
+        where cp.problem_id=?
+        """,
         (card["id"],),
     )
-    institutions = sorted({f["institution"].upper() for f in facets})
+    institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
     years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
     areas = _terms(con, card["id"], "area")
     topics = _terms(con, card["id"], "topic")
@@ -940,47 +994,75 @@ def plain_page(con: sqlite3.Connection, card: sqlite3.Row) -> Page:
     }, _blocks(card)
 
 
-def source_page(
+def collection_page(
     con: sqlite3.Connection,
     src: sqlite3.Row,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
-    items = _rows(
+    listed = _rows(
         con,
-        "select o.locator, c.* from occurrences o join cards c on c.id=o.problem_id where o.source_id=? order by cast(o.locator as integer), o.locator",
+        """
+        select section_ordinal, section_name, ordinal, problem_id
+        from collection_problems
+        where collection_id=?
+        order by coalesce(section_ordinal, -1), ordinal
+        """,
         (src["id"],),
     )
-    # The locator is printed, not encoded in list numbering. A locator is a
-    # free-text label on the original sheet -- `3a`, `II.4`, `Problem 3` are all
-    # real -- so numbering the list by it either crashes or, worse, renumbers
-    # the sheet silently. A bullet carrying the label says what was actually
-    # printed on the exam.
-    listing = pf.Div(
-        pf.BulletList(
-            *[
-                pf.ListItem(
-                    pf.Plain(
-                        pf.Strong(pf.Str(i["locator"])),
-                        pf.Space(),
-                        *_link(i, inline_cache).content,
-                    )
-                )
-                for i in items
-            ]
-        ),
-        classes=["qual-exam-listing"],
+    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
+        con, listed, inline_cache
     )
-    return {"title": src["title"], "subtitle": src["id"]}, [
+
+
+def _collection_listing(
+    con: sqlite3.Connection,
+    listed: list[sqlite3.Row],
+    inline_cache: dict[str, list[pf.Inline]],
+) -> list[pf.Block]:
+    """The collection card's `problems:` / `sections:` list is the page body.
+
+    Position is the list index. An empty list is an unfilled collection, not a
+    cue to invent contents from somewhere else.
+    """
+
+    def card_item(problem_id: str) -> pf.ListItem:
+        matches = _rows(con, "select * from cards where id=?", (problem_id,))
+        if matches:
+            return pf.ListItem(_link(matches[0], inline_cache))
+        return pf.ListItem(pf.Plain(pf.Code(problem_id)))
+
+    blocks: list[pf.Block] = [
         pf.Para(
-            pf.Str(str(len(items))),
+            pf.Str(str(len(listed))),
             pf.Space(),
-            *_inlines(
-                "problems.",
-                inline_cache,
-            ),
-        ),
-        listing,
+            *_inlines("problems.", inline_cache),
+        )
     ]
+    if not listed:
+        return blocks
+
+    by_section: list[tuple[str | None, list[str]]] = []
+    for row in listed:
+        name = row["section_name"]
+        if not by_section or by_section[-1][0] != name:
+            by_section.append((name, []))
+        by_section[-1][1].append(row["problem_id"])
+
+    for name, pids in by_section:
+        if name:
+            blocks.append(pf.Header(*_inlines(name, inline_cache), level=2))
+        blocks.append(
+            pf.Div(
+                pf.OrderedList(
+                    *[card_item(pid) for pid in pids],
+                    start=1,
+                    style="Decimal",
+                    delimiter="Period",
+                ),
+                classes=["qual-exam-listing"],
+            )
+        )
+    return blocks
 
 
 def _publication_root_route(
@@ -1180,36 +1262,26 @@ def card_appearances(
     con: sqlite3.Connection,
     manifests: list[PublicationManifest],
 ) -> dict[str, list[Appearance]]:
-    """Where each card shows up: guide sections, and for a problem, its sittings.
+    """Where each card shows up: guide sections, and for a problem, the
+    collections that list it.
 
-    The sitting edge is the reverse of the 2,798 links an exam page already
-    carries. Without it a problem page names the sitting it came from in the
-    occurrence disclosure but offers no way to reach it."""
+    The sitting edge is the reverse of the collection page: a problem is on an
+    exam exactly when that exam's `problems:` (or a textbook section) names it.
+    Position is the list index."""
     appearances: dict[str, list[Appearance]] = {row["id"]: [] for row in _rows(con, "select id from cards order by id")}
-    seen: set[tuple[str, str]] = set()
-    for occurrence in _rows(
+    for row in _rows(
         con,
         """
-        select o.problem_id, o.source_id, o.locator, c.title
-        from occurrences o join cards c on c.id=o.source_id
-        order by c.title, o.locator = '?', o.locator, o.id
+        select cp.problem_id, cp.collection_id, cp.ordinal, c.title
+        from collection_problems cp
+        join cards c on c.id=cp.collection_id
+        order by c.title, coalesce(cp.section_ordinal, -1), cp.ordinal
         """,
     ):
-        # One link per sitting. A problem recorded twice at the same sitting is
-        # usually one occurrence with a locator and one without; ordering puts
-        # the located one first, so that is the row that survives.
-        key = (occurrence["problem_id"], occurrence["source_id"])
-        if key in seen:
-            continue
-        seen.add(key)
-        locator = occurrence["locator"]
-        title = occurrence["title"]
-        if locator and locator != "?":
-            title += f", problem {locator}"
-        appearances[occurrence["problem_id"]].append(
+        appearances[row["problem_id"]].append(
             Appearance(
-                target_key=occurrence["source_id"],
-                title=title,
+                target_key=row["collection_id"],
+                title=f"{row['title']}, problem {row['ordinal'] + 1}",
             )
         )
     for manifest in manifests:
@@ -1250,7 +1322,7 @@ def index_page(
     labels = {
         "problem": "Problems",
         "occurrence": "Exam appearances",
-        "source": "Sources",
+        "collection": "Collections",
     }
 
     def plural(kind: str) -> str:
@@ -1296,11 +1368,11 @@ def problem_browser_page(
           (select group_concat(term, ' ') from classifications
            where card_id=c.id and axis='topic') as topics,
           (select group_concat(distinct upper(e.institution))
-           from occurrences o join exam_sources e on e.id=o.source_id
-           where o.problem_id=c.id) as institutions,
+           from collection_problems cp join exam_sources e on e.id=cp.collection_id
+           where cp.problem_id=c.id) as institutions,
           (select group_concat(distinct s.year)
-           from occurrences o join sources s on s.id=o.source_id
-           where o.problem_id=c.id and s.year is not null) as years
+           from collection_problems cp join sources s on s.id=cp.collection_id
+           where cp.problem_id=c.id and s.year is not null) as years
         from cards c
         where c.kind='problem'
         order by c.title, c.id
@@ -1310,8 +1382,8 @@ def problem_browser_page(
     for source in _rows(
         con,
         """
-        select distinct o.problem_id, o.source_id, s.title
-        from occurrences o join cards s on s.id=o.source_id
+        select distinct cp.problem_id, cp.collection_id as source_id, s.title
+        from collection_problems cp join cards s on s.id=cp.collection_id
         order by s.title
         """,
     ):
@@ -1537,7 +1609,7 @@ def _link_targets(
         targets[target.as_posix()] = target
 
     for card in _rows(con, "select id, kind from cards where kind != 'occurrence'"):
-        directory = "exam" if card["kind"] == "source" else "tag"
+        directory = "exam" if card["kind"] == "collection" else "tag"
         add(card["id"], Path(directory) / f"{card['id']}.html")
     for occurrence in _rows(con, "select id, problem_id from occurrences"):
         add(occurrence["id"], Path("tag") / f"{occurrence['problem_id']}.html")
@@ -1571,7 +1643,7 @@ def _search_records(
         """,
     )
     for card in cards:
-        directory = "exam" if card["kind"] == "source" else "tag"
+        directory = "exam" if card["kind"] == "collection" else "tag"
         search = " ".join(
             (
                 card["id"],
@@ -1659,15 +1731,16 @@ def _generate_data(
     for r in _rows(
         con,
         """
-        select o.problem_id pid, e.institution inst, s.year, o.source_id, c.title source_title
-        from occurrences o
-        join exam_sources e on e.id=o.source_id
-        join sources s on s.id=o.source_id
-        join cards c on c.id=o.source_id
+        select cp.problem_id pid, e.institution inst, s.year, cp.collection_id as source_id, c.title source_title
+        from collection_problems cp
+        join sources s on s.id=cp.collection_id
+        join cards c on c.id=cp.collection_id
+        left join exam_sources e on e.id=cp.collection_id
         """,
     ):
         if r["pid"] in insts:
-            insts[r["pid"]].add(r["inst"])
+            if r["inst"]:
+                insts[r["pid"]].add(r["inst"])
             if r["year"] is not None:
                 years[r["pid"]].add(str(r["year"]))
             sources[r["pid"]][r["source_id"]] = r["source_title"]
@@ -1818,6 +1891,8 @@ def project(
     link_targets.update(wiki_link_targets(wiki_pages or []))
     (out / "wiki-manifest.json").write_text(json.dumps(_wiki_manifest(wiki_pages or []), ensure_ascii=False, indent=2) + "\n")
     appearances = card_appearances(con, guides)
+    mentions = wiki_card_mentions(wiki_pages or [])
+    incoming_pages = incoming_wiki_links(wiki_pages or [])
     assets = build_asset_catalog(site.parent / "assets")
     inline_values = [row["title"] for row in _rows(con, "select distinct title from cards")]
     inline_values.extend(
@@ -1832,15 +1907,22 @@ def project(
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
     inline_values.extend(value for guide in guides for section in guide.sections for value in (section.title, section.lede))
+    inline_values.extend(
+        row["section_name"]
+        for row in _rows(
+            con,
+            "select distinct section_name from collection_problems where section_name is not null",
+        )
+    )
     inline_cache = build_inline_cache(pandoc, inline_values)
 
     jcache, api = load_json(con)
     tag_pages: list[tuple[Path, dict, list]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
-        meta, body = problem_json(con, card, jcache, appearances)
+        meta, body = problem_json(con, card, jcache, appearances, mentions)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
-    for card in _rows(con, "select * from cards where kind not in ('problem','source','occurrence')"):
-        meta, body = plain_json(con, card, jcache, appearances)
+    for card in _rows(con, "select * from cards where kind not in ('problem','collection','occurrence')"):
+        meta, body = plain_json(con, card, jcache, appearances, mentions)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     write_json_pages(
         pandoc,
@@ -1853,10 +1935,10 @@ def project(
     )
 
     pages: list[PageItem] = []
-    for src in _rows(con, "select * from cards where kind='source'"):
+    for src in _rows(con, "select * from cards where kind='collection'"):
         pages.append(
             (
-                source_page(con, src, inline_cache),
+                collection_page(con, src, inline_cache),
                 out / "exam" / f"{src['id']}.qmd",
                 StandardPage(),
             )
@@ -1968,7 +2050,7 @@ def project(
             (
                 (
                     {"title": page.title, "subtitle": page.source_rel.as_posix()},
-                    _wiki_blocks(page),
+                    _wiki_blocks(page, incoming_pages[page.route.as_posix()]),
                 ),
                 out / "wiki" / page.source_rel.with_suffix(".qmd"),
                 _wiki_chrome(wiki_navigation, page),

@@ -11,7 +11,7 @@ classification:
   - convergence-of-functions
 relations:
 - kind: instance-of
-  target: P-RA-WORKSHOP-D3-SEQ-08
+  target: P-C3MKZ
 review: draft
 payload:
   source: SRC-RA-WORKSHOP-D3-SEQUENCES

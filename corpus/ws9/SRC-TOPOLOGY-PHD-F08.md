@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOPOLOGY-PHD-F08
-kind: source
+kind: collection
 title: 'Topology Ph.D. Qualifying Exam, F08phdtop.pdf'
 classification:
   areas:

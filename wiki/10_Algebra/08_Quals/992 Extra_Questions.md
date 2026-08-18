@@ -1,7 +1,11 @@
+---
+order: 992
+---
+
 # Even More Algebra Questions
 
 ::: {.remark}
-(DZG): These all come from a random PDF I found, but I couldn't find the original author/source!
+Source: a PDF whose author is not identified.
 :::
 
 ## Groups

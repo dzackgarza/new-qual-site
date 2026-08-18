@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-GGDSXGWRIR
 kind: occurrence
-title: P-UYKBG at UGA algebra Fall 2016
+title: P-FYEG2 at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - subgroups
 relations:
 - kind: instance-of
-  target: P-UYKBG
+  target: P-FYEG2
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2016
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-UYKBG]] appeared at UGA algebra Fall 2016.
+[[P-FYEG2]] appeared at UGA algebra Fall 2016.
 :::

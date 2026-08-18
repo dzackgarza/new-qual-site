@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-LMXS73IVTX
 kind: occurrence
-title: P-FJ4VQ at UGA complex-analysis Spring 2015
+title: P-3WZXM at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - liouville-s-theorem
 relations:
 - kind: instance-of
-  target: P-FJ4VQ
+  target: P-3WZXM
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-FJ4VQ]] appeared at UGA complex-analysis Spring 2015.
+[[P-3WZXM]] appeared at UGA complex-analysis Spring 2015.
 :::

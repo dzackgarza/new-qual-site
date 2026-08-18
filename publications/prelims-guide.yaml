@@ -32,7 +32,6 @@ sections:
       - ref: P-ARI3E
       - ref: P-CEU5R
       - ref: P-F7Y7R
-      - ref: P-JMXZA
       - ref: P-JVZMJ
       - ref: P-MSLD5
       - ref: P-MW5EM
@@ -42,7 +41,6 @@ sections:
       - ref: P-BZIXT
       - ref: P-MNR6F
       - ref: P-N2NUD
-      - ref: P-QDGDN
       - ref: P-YLM7G
       - ref: P-2WRUJ
       - ref: P-3DZXT
@@ -192,7 +190,6 @@ sections:
       - ref: P-FPMMA
       - ref: P-GB7EM
       - ref: P-HUKW5
-      - ref: P-K5GH3
       - ref: P-LHC3M
       - ref: P-TAPVD
       - ref: P-TWH7U
@@ -221,7 +218,6 @@ sections:
       field with enough roots, and nilpotence is the case where the only eigenvalue is zero.
     items:
       - ref: P-4STQR
-      - ref: P-B34X5
       - ref: P-CWELY
       - ref: P-QJE7B
       - ref: P-TGH5F
@@ -234,7 +230,6 @@ sections:
       - ref: P-R7TCU
       - ref: P-SK4KT
       - ref: P-TB7BG
-      - ref: P-UVJYB
       - ref: P-VJBIB
       - ref: P-VPCLD
       - ref: P-CSEAZ

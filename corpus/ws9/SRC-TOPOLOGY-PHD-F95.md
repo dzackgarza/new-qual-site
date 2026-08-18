@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOPOLOGY-PHD-F95
-kind: source
+kind: collection
 title: 'Topology Qualifying Exam, F95phdtop.pdf'
 classification:
   areas:

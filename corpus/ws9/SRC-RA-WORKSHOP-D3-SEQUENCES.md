@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-RA-WORKSHOP-D3-SEQUENCES
-kind: source
+kind: collection
 title: 'Day 3: Sequences and Series'
 classification:
   areas:

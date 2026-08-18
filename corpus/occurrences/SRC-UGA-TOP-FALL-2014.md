@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UGA-TOP-FALL-2014
-kind: source
+kind: collection
 title: UGA topology Fall 2014
 classification:
   areas:
@@ -13,6 +13,15 @@ payload:
   source_kind: university-exam
   institution: uga
   area: topology
+  problems:
+  - P-7N24X
+  - P-4URWK
+  - P-B4N3X
+  - P-NSD6Y
+  - P-OMOPR
+  - P-S6EYF
+  - P-3WQES
+  - P-23S3Z
   date:
     kind: academic-term
     term: fall
@@ -20,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2014. Recorded from the source corpus' exam-term annotations.
+UGA topology Fall 2014. The paper is the current Quals posting `Topology [Fall 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

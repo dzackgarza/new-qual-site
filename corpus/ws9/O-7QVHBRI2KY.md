@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-7QVHBRI2KY
 kind: occurrence
-title: P-K5GH3 at UGA prelim Fall 2017
+title: P-2QLBW at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
@@ -11,7 +11,7 @@ classification:
   - differentiation
 relations:
 - kind: instance-of
-  target: P-K5GH3
+  target: P-2QLBW
 review: draft
 payload:
   source: SRC-UGA-PRELIM-FALL-2017
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-K5GH3]] appeared at UGA prelim Fall 2017.
+[[P-2QLBW]] appeared at UGA prelim Fall 2017.
 :::

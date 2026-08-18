@@ -1,5 +1,8 @@
+---
+order: 100001
+---
 
-> DZG: this comes from some tex file that I found when studying for quals, so is definitely not my own content! I've just copied it here for extra practice.
+> Source: a TeX file used while studying for quals; not original to this corpus. Extra practice, presented as a May 2016 sitting.
 
 # May 2016 Qual
 
@@ -45,7 +48,6 @@
 
 [[P-VACDU]]
 
-
 ##  (January 2009, 4a) 
 
 [[P-YACKS]]
@@ -56,7 +58,6 @@
 
 ## 5?
 [[P-HOUMA]]
-
 
 # Sequences and Series
 
@@ -106,31 +107,25 @@
 
 [[P-VO7MI]]
 
-
 ##  (January 2006 2b) 
 
 [[P-FUPZQ]]
-
 
 ##  (June 2007 3a) 
 
 [[P-UKIC7]]
 
-
 ##  (June 2008 3a) 
 
 [[P-AUACU]]
-
 
 ##  (January 2012 4b, extended) 
 
 [[P-SKT7G]]
 
-
 ##  (June 2012 1a) 
 
 [[P-NXMNQ]]
-
 
 # Integral Calculus
 
@@ -138,16 +133,13 @@
 
 [[P-R4EGZ]]
 
-
 ##  (June 2005 1b) 
 
 [[P-2B2T5]]
 
-
 ##  (January 2010 5) 
 
 [[P-QXYTV]]
-
 
 ##  (January 2009 4b) 
 
@@ -157,7 +149,6 @@
 
 [[P-VG7GK]]
 
-
 # Sequences and Series of Functions
 
 ## (June 2010 \#6a)
@@ -166,18 +157,15 @@
 
 [[P-7P5F5]]
 
-
 ##  (January 2008 5a) 
 
 ##  (January 2005 \#4, June 2010 \#6b)
 
 [[P-XQRCI]]
 
-
 ##  (January 2005 4, June 2010 6b) 
 
 [[P-AITX4]]
-
 
 ##  (January 2020 4a) 
 
@@ -187,16 +175,13 @@
 
 [[P-5UQSK]]
 
-
 ##  (June 2005 5) 
 
 [[P-AIDWR]]
 
-
 ##  (January 2005 3b) 
 
 [[P-KZZ7M]]
-
 
 # Miscellaneous Topics
 
@@ -206,21 +191,17 @@
 
 [[P-DX6EM]]
 
-
 ##  (January 2007, 6a) 
 
 [[P-I6PEO]]
-
 
 ##  (January 2017, 2a) 
 
 [[P-FTV4U]]
 
-
 ##  (January 2020, 6a) 
 
 [[P-UFRBU]]
-
 
 ## Metric Spaces and Topology {#metric-spaces-and-topology-1 .unnumbered}
 
@@ -229,7 +210,6 @@
 ##  (May 2017 6) 
 
 [[P-US4ES]]
-
 
 ##  (January 2017 3) 
 
@@ -243,20 +223,15 @@
 ##  (January 2009 \#4b)
 ##  (June 2009 \#5b)
 
-
-
 [[P-3SSNK]]
-
 
 ##  (June 2017 2) 
 
 [[P-DEYSQ]]
 
-
 ##  (Spring 2017 7) 
 
 [[P-ZCPFV]]
-
 
 # Sequences and Series (and of Functions) 
 
@@ -271,26 +246,20 @@
 ## ?
 [[P-FYGQ6]]
 
-
-
 ## ?
 [[P-4E6U3]]
-
 
 ##  (January 2006 4a) 
 
 [[P-XVHFQ]]
 
-
 ##  ?
 
 [[P-XCE4G]]
 
-
 ## January 2019 Qualifying Exam {#january-2019-qualifying-exam .unnumbered}
 
 [[P-BKCZH]]
-
 
 This document is a collection of solutions to various problems written
 up by the participants of the May 2020 Analysis Qualifying Exam

@@ -2,14 +2,13 @@
 order: 7
 ---
 
-# Holomorphicity 
+# Holomorphicity
 
 ## Fall 2019.6
 
 ^430a0a
 
 [[P-XKOQR]]
-
 
 ## Spring 2020 HW 1.7
 
@@ -18,8 +17,6 @@ order: 7
 ## Spring 2020 HW 1.8
 
 [[P-RPV6B]]
-
-
 
 ## Spring 2020 HW 1.9
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-3OSDJ4JIHN
 kind: occurrence
-title: P-2LJDT at UGA real-analysis Fall 2017
+title: P-CKY3L at UGA real-analysis Fall 2017
 classification:
   areas:
   - real-analysis
@@ -11,7 +11,7 @@ classification:
   - l1
 relations:
 - kind: instance-of
-  target: P-2LJDT
+  target: P-CKY3L
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2017
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-2LJDT]] appeared at UGA real-analysis Fall 2017.
+[[P-CKY3L]] appeared at UGA real-analysis Fall 2017.
 :::

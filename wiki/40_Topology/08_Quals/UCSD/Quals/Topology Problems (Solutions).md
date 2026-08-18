@@ -1,4 +1,5 @@
 ---
+order: 100001
 title: Topology Qual Problems
 ---
 
@@ -84,7 +85,6 @@ title: Topology Qual Problems
   10. $\mathbb{R}^2 - H$, the Hopf link
 11. Prove that the homophony group is trivial.
 
-
 ## Mayer Vietoris (Sheet 7)
 
 1. Compute the homology of:
@@ -128,9 +128,6 @@ title: Topology Qual Problems
     \end{CD}
     $$
 
-
-
-
 ## Cellular Homology (Sheet 8)
 
 Compute the homology of these spaces
@@ -150,8 +147,6 @@ Compute the homology of these spaces
 8. This identification space:
    ![assets/1518395458668](assets/1518395458668.png)
 9. Describe a CW complex structure for the lens space $L(p, 1)$ and compute $\pi_1, H_*$ for it.
-
-
 
 ## Degree
 
@@ -209,8 +204,7 @@ Compute the homology of these spaces
 
 ## Cohomology Ring (Sheet 12)
 
-Todo 
-
+This sitting's notes stop at the Ext/Tor sheet above; there is no Sheet 12 in the source.
 
 # Topology Problems: Solutions
 
@@ -258,8 +252,6 @@ Todo
 [[P-63J4S]]
 
 ## Simplicial Homology
-
-1. Todo 
 
 [[P-QFLQB]]
 [[P-CLHXQ]]

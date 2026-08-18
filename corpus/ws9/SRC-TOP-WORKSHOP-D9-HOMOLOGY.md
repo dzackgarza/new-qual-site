@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-WORKSHOP-D9-HOMOLOGY
-kind: source
+kind: collection
 title: 'Topology Qual Workshop Day 9: Homology'
 classification:
   areas:

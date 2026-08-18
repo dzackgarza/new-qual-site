@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-RA-WORKSHOP-D2-METRIC
-kind: source
+kind: collection
 title: 'Day 2: Metric Spaces and Topology'
 classification:
   areas:

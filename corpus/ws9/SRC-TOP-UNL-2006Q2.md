@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-UNL-2006Q2
-kind: source
+kind: collection
 title: 'UNL Mathematics Qualifying Exam 970/971, June 2006'
 classification:
   areas:

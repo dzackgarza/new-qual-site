@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-TKYWQVPHMJ
 kind: occurrence
-title: P-7UD6U at UGA algebra Fall 2014
+title: P-732VA at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
@@ -11,7 +11,7 @@ classification:
   - subgroups
 relations:
 - kind: instance-of
-  target: P-7UD6U
+  target: P-732VA
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2014
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-7UD6U]] appeared at UGA algebra Fall 2014.
+[[P-732VA]] appeared at UGA algebra Fall 2014.
 :::

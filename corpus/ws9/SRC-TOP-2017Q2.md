@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-2017Q2
-kind: source
+kind: collection
 title: 'Math 871-872 Qualifying Exam, May 2017'
 classification:
   areas:

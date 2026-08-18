@@ -1,3 +1,7 @@
+---
+order: 15
+---
+
 # Homology and Degree Theory
 
 ## 1 (Spring '09)

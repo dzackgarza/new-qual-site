@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-S34A4DE3LG
 kind: occurrence
-title: P-CBN4I at UGA algebra Spring 2015
+title: P-EHPA5 at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - centralizers-and-normalizers
 relations:
 - kind: instance-of
-  target: P-CBN4I
+  target: P-EHPA5
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-CBN4I]] appeared at UGA algebra Spring 2015.
+[[P-EHPA5]] appeared at UGA algebra Spring 2015.
 :::

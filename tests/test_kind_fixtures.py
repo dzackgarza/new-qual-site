@@ -99,9 +99,51 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     assert "Problem 3" in problem_html
     assert "by left translation" in problem_html
 
+    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
+    assert "Problem 3" not in exam_qmd
+    textbook_qmd = (work / "build" / "quarto" / "exam" / "SRC-DUMMIT.qmd").read_text()
+    assert "0 problems." in textbook_qmd
+
+
+def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
+    """An exam page is the collection's `problems:` list, in list order.
+
+    An empty list publishes empty. Filling it does not pull locators off
+    occurrence cards.
+    """
+    work = fixture_repo(tmp_path)
+    (work / "corpus" / "P-INDEXP.md").write_text(
+        (work / "corpus" / "PRB-INDEXP.md")
+        .read_text()
+        .replace("PRB-INDEXP", "P-INDEXP")
+        .replace("solved: true", "solved: false")
+    )
+    exam = work / "corpus" / "SRC-UGA-FIX.md"
+    exam.write_text(
+        exam.read_text().replace(
+            "  area: algebra\n  date:\n",
+            "  area: algebra\n  problems:\n  - P-INDEXP\n  date:\n",
+        )
+    )
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
+    assert "P-INDEXP" in exam_qmd
+    assert "Problem 3" not in exam_qmd
+    con = sqlite3.connect(work / "build" / "catalog.sqlite")
+    assert [
+        row[0]
+        for row in con.execute(
+            "select problem_id from collection_problems where collection_id='SRC-UGA-FIX' order by ordinal"
+        )
+    ] == ["P-INDEXP"]
+    assert list(
+        con.execute("select problem_id from collection_problems where collection_id='SRC-DUMMIT'")
+    ) == []
+
 
 def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
-    """The source payload is a discriminated union and the catalog mirrors it
+    """The collection payload is a discriminated union and the catalog mirrors it
     rather than flattening it into one row with columns null for two kinds out
     of three. This proves the catalog: an exam reaches `exam_sources`, a
     textbook `textbook_sources`, an artifact `artifact_sources`, and each
@@ -122,7 +164,7 @@ def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
     }
     for variant, table in tables.items():
         ids = {i for (i,) in con.execute("select id from sources where source_kind = ?", (variant,))}
-        assert ids, f"no fixture exercises the {variant!r} source variant"
+        assert ids, f"no fixture exercises the {variant!r} collection variant"
         projected = {i for (i,) in con.execute(f"select id from {table}")}
         assert ids == projected, f"{variant} rows must project into {table}"
         for other in set(tables.values()) - {table}:

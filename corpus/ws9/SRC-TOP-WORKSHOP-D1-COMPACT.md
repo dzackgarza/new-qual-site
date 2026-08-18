@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-WORKSHOP-D1-COMPACT
-kind: source
+kind: collection
 title: 'Topology Qual Workshop Day 1: Compactness'
 classification:
   areas:

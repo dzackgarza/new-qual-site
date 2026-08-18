@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-PRXB7PMNGA
 kind: occurrence
-title: P-P7TEE at UGA algebra Spring 2015
+title: P-POJFX at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - characteristic
 relations:
 - kind: instance-of
-  target: P-P7TEE
+  target: P-POJFX
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-P7TEE]] appeared at UGA algebra Spring 2015.
+[[P-POJFX]] appeared at UGA algebra Spring 2015.
 :::

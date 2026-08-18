@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UGA-PRELIM-JUNE-2015
-kind: source
+kind: collection
 title: UGA prelim June 2015
 classification:
   areas:
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim June 2015. Recorded from the source corpus' exam-term annotations.
+UGA prelim June 2015. Recorded from the source corpus' exam-term annotations. The department Quals directory has no prelim posting, and there is no native sitting transcription or worked copy of this paper, so `problems:` is left empty.
 :::

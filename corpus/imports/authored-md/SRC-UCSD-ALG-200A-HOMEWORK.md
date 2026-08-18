@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UCSD-ALG-200A-HOMEWORK
-kind: source
+kind: collection
 title: UCSD Math 200A Homework Question Compendium
 classification:
   areas:

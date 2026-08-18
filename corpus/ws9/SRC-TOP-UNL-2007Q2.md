@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-UNL-2007Q2
-kind: source
+kind: collection
 title: UNL Mathematics Qualifying Exam 871/872, June 2007
 classification:
   areas:

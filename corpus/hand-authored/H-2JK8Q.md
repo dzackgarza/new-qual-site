@@ -10,7 +10,7 @@ classification:
   - groups
 relations:
 - kind: hints-at
-  target: P-P2UAH
+  target: P-PKXBP
 review: reviewed
 ---
 

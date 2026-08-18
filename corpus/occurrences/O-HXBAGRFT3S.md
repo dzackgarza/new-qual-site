@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-HXBAGRFT3S
 kind: occurrence
-title: P-DGAQM at UGA algebra Fall 2019
+title: P-ESUCT at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - field-extensions
 relations:
 - kind: instance-of
-  target: P-DGAQM
+  target: P-ESUCT
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2019
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-DGAQM]] appeared at UGA algebra Fall 2019, problem 7.
+[[P-ESUCT]] appeared at UGA algebra Fall 2019, problem 7.
 :::

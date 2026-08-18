@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-H3YSRDO33Y
 kind: occurrence
-title: P-3NKLK at UGA topology Fall 2011
+title: P-5ADNP at UGA topology Fall 2011
 classification:
   areas:
   - topology
@@ -11,7 +11,7 @@ classification:
   - subspace-topology
 relations:
 - kind: instance-of
-  target: P-3NKLK
+  target: P-5ADNP
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2011
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-3NKLK]] appeared at UGA topology Fall 2011.
+[[P-5ADNP]] appeared at UGA topology Fall 2011.
 :::

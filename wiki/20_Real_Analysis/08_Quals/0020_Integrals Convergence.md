@@ -1,3 +1,7 @@
+---
+order: 20
+---
+
 # Integrals: Convergence
 
 ## Fall 2019 # 2
@@ -14,13 +18,11 @@
 
 ## Spring 2018 # 2
 
-[[P-RHNMI]]
 
 ## Fall 2016 # 3
 
 ## Fall 2015 # 3
 
-[[P-O6T63]]
 
 ## Fall 2015 # 4
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-C6FJRNOHXO
 kind: occurrence
-title: P-DQPYN at UGA complex-analysis Fall 2011
+title: P-WASE4 at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - zeros
 relations:
 - kind: instance-of
-  target: P-DQPYN
+  target: P-WASE4
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2011
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-DQPYN]] appeared at UGA complex-analysis Fall 2011.
+[[P-WASE4]] appeared at UGA complex-analysis Fall 2011.
 :::

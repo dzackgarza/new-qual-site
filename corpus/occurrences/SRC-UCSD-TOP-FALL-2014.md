@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UCSD-TOP-FALL-2014
-kind: source
+kind: collection
 title: UCSD topology Fall 2014
 classification:
   areas:
@@ -13,6 +13,12 @@ payload:
   source_kind: university-exam
   institution: ucsd
   area: topology
+  problems:
+  - P-LCTOJ
+  - P-TEDZR
+  - P-AZBYD
+  - P-U7G2X
+  - P-UBJDX
   date:
     kind: academic-term
     term: fall
@@ -20,5 +26,5 @@ payload:
 ---
 
 ::: remark
-UCSD topology Fall 2014. Recorded from the source corpus' exam-term annotations.
+UCSD topology Fall 2014. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/291_UCSD_Fall 2014.md.source`.
 :::

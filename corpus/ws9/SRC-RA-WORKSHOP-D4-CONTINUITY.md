@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-RA-WORKSHOP-D4-CONTINUITY
-kind: source
+kind: collection
 title: 'Day 4: Continuity of Functions'
 classification:
   areas:

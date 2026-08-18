@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-37Z3BS7KQS
 kind: occurrence
-title: P-NA636 at UGA complex-analysis Spring 2020
+title: P-4ZZYV at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - singularities
 relations:
 - kind: instance-of
-  target: P-NA636
+  target: P-4ZZYV
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2020
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-NA636]] appeared at UGA complex-analysis Spring 2020.
+[[P-4ZZYV]] appeared at UGA complex-analysis Spring 2020.
 :::

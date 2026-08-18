@@ -1,16 +1,16 @@
+---
+order: 11
+---
+
 # General Topology
 
 ## Topologies, Subspaces, Closures, and Maps
 
 ### Fall '11
 
-[[P-3NKLK]]
-
 [[P-5ADNP]]
 
 ### 6 (Fall '05)
-
-[[P-XSBTH]]
 
 [[P-DHIWH]]
 
@@ -41,8 +41,6 @@
 [[P-QN7OP]]
 
 ### ? (Spring '10)
-
-[[P-YZ3BU]]
 
 [[P-MHQ6A]]
 
@@ -89,8 +87,6 @@
 [[P-L3BUX]]
 
 ### 4 (Spring '05)
-
-[[P-N5HX3]]
 
 [[P-FZIG3]]
 
@@ -160,7 +156,7 @@
 
 ### 30 (Spring '18)
 
-[[P-MDFEL]]
+[[P-SG462]]
 
 ### 31 (Spring '09)
 

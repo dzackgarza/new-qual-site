@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UGA-CA-SPRING-2021
-kind: source
+kind: collection
 title: UGA complex-analysis Spring 2021
 classification:
   areas:
@@ -13,6 +13,14 @@ payload:
   source_kind: university-exam
   institution: uga
   area: complex-analysis
+  problems:
+  - P-RLZK3
+  - P-IV4XE
+  - P-3WZXM
+  - P-VUVYD
+  - P-ZAVLU
+  - P-CZQLT
+  - P-H7Z7N
   date:
     kind: academic-term
     term: spring
@@ -20,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Spring 2021. Recorded from the source corpus' exam-term annotations.
+UGA complex-analysis Spring 2021. The paper is the current Quals posting `Complex Analysis [Spring 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #3 is listed as `P-3WZXM`.
 :::

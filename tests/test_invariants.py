@@ -200,6 +200,9 @@ def catalog_rows(root: Path) -> dict[str, list[tuple]]:
         "relations": con.execute("select * from relations order by 1,2,3").fetchall(),
         "occurrences": con.execute("select * from occurrences order by id").fetchall(),
         "sources": con.execute("select * from sources order by id").fetchall(),
+        "collection_problems": con.execute(
+            "select * from collection_problems order by collection_id, coalesce(section_ordinal, -1), ordinal"
+        ).fetchall(),
         "sections": con.execute("select * from sections order by 1,3").fetchall(),
     }
 
@@ -346,14 +349,17 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert witness_title in witness_appearances[0].text
 
     # A sitting links to its problems; the problem must link back to the sitting
-    # it was set at, not merely name it.
-    problem_appearances = problem.root.find_all(
+    # that lists it.
+    problem_appearances = read_html(site / "tag" / "P-EMPDB.html").root.find_all(
         "section",
         **{"data-relation-group": "appearances"},
     )
     assert len(problem_appearances) == 1
-    assert "exam/SRC-UGA-ALG-FALL-2018.html" in {resolved_link(Path("tag/P-P2UAH.html"), link.attrs["href"]) for link in problem_appearances[0].find_all("a")}
-    assert "UGA algebra Fall 2018, problem 1" in problem_appearances[0].text
+    assert "exam/SRC-UGA-CA-FALL-2021.html" in {
+        resolved_link(Path("tag/P-EMPDB.html"), link.attrs["href"])
+        for link in problem_appearances[0].find_all("a")
+    }
+    assert "UGA complex-analysis Fall 2021, problem 1" in problem_appearances[0].text
 
     # Republish the same card under a different section, then flatten the corpus
     # underneath it. Publication structure and source layout must both move

@@ -60,6 +60,7 @@ class WikiPage:
     source_rel: Path
     route: Path
     title: str
+    order: int
     blocks: list[pf.Block]
     search_text: str
 
@@ -152,6 +153,36 @@ def _title(document: pf.Doc, metadata: dict[str, object], path: Path) -> str:
     return path.stem.replace("_", " ")
 
 
+def _order(metadata: dict[str, object], path: Path) -> int | Diagnostic:
+    if "order" not in metadata:
+        return Diagnostic(DiagnosticCode.PAGE_MISSING_ORDER, str(path), "page has no order")
+    value = metadata["order"]
+    if isinstance(value, bool) or not isinstance(value, int):
+        return Diagnostic(DiagnosticCode.PAGE_MISSING_ORDER, str(path), "order must be an integer")
+    return value
+
+
+def validate_wiki_tree(pages: list[WikiPage]) -> list[Diagnostic]:
+    """A directory is in the tree only when it has an index.md that names it."""
+    indexed = {
+        page.source_rel.parent.as_posix()
+        for page in pages
+        if page.source_rel.stem.lower() == "index" and len(page.source_rel.parts) > 1
+    }
+    needed: set[str] = set()
+    for page in pages:
+        for depth in range(1, len(page.source_rel.parts)):
+            needed.add("/".join(page.source_rel.parts[:depth]))
+    return [
+        Diagnostic(
+            DiagnosticCode.PAGE_DIRECTORY_MISSING_INDEX,
+            f"wiki/{directory}",
+            "directory has no index.md",
+        )
+        for directory in sorted(needed - indexed)
+    ]
+
+
 def _without_first_title(document: pf.Doc) -> list[pf.Block]:
     blocks = list(document.content)
     for index, block in enumerate(blocks):
@@ -195,12 +226,17 @@ def parse_pages(pandoc: PandocServer, root: Path, citations: Citations) -> tuple
             document = from_ast(result.output).walk(drop_path_captions).walk(anchor_block_markers).walk(unpack_cross_references)
             for key in CITEPROC_METADATA:
                 document.metadata.content.pop(key, None)
+            order = _order(metadata, path)
+            if isinstance(order, Diagnostic):
+                errors.append(order)
+                continue
             parsed.append(
                 WikiPage(
                     source_path=path,
                     source_rel=source_rel,
                     route=Path("wiki") / source_rel.with_suffix(".html"),
                     title=_title(document, metadata, path),
+                    order=order,
                     blocks=_without_first_title(document),
                     search_text=pf.stringify(document).strip(),
                 )
@@ -377,16 +413,16 @@ def _page_target(
 
 # A citation is still a `Cite` at this point, carrying the bib keys it names;
 # the `<span class="citation">` is what the HTML writer makes of it later. The
-# textbook source cards are keyed on the same string, uppercased, so the
+# textbook collection cards are keyed on the same string, uppercased, so the
 # reference reaches its card without a lookup table.
 TEXTBOOK_CARD = "SRC-TEXT-{}"
 
 
 def link_citations(pages: list[WikiPage], card_routes: dict[str, Path]) -> int:
-    """Point every citation at the source card for the work it cites.
+    """Point every citation at the collection card for the work it cites.
 
     A citation rendered as `[DuFo04]` and stopped there; the reader had no way
-    from the reference to the book. A key with no source card is left as it is
+    from the reference to the book. A key with no collection card is left as it is
     rather than linked into nothing.
     """
     linked = 0
@@ -505,6 +541,57 @@ def resolve_links(
 
 def link_targets(pages: list[WikiPage]) -> dict[str, Path]:
     return {page.route.as_posix(): page.route for page in pages}
+
+
+def _link_paths(page: WikiPage) -> list[str]:
+    """Canonical href paths already written onto the page by resolve_links."""
+    paths: list[str] = []
+
+    def collect(element: pf.Element, doc: pf.Doc) -> pf.Element:
+        del doc
+        if isinstance(element, pf.Link):
+            path = urlsplit(cast(str, getattr(element, "url"))).path
+            if path:
+                paths.append(path)
+        return element
+
+    pf.Doc(*page.blocks).walk(collect)
+    return paths
+
+
+def incoming_wiki_links(pages: list[WikiPage]) -> dict[str, list[WikiPage]]:
+    """Wiki pages that wikilink to each page, keyed by that page's route."""
+    by_route = {page.route.as_posix(): page for page in pages}
+    incoming: dict[str, list[WikiPage]] = {route: [] for route in by_route}
+    for source in pages:
+        seen: set[str] = set()
+        source_route = source.route.as_posix()
+        for path in _link_paths(source):
+            if path not in by_route or path == source_route or path in seen:
+                continue
+            seen.add(path)
+            incoming[path].append(source)
+    for sources in incoming.values():
+        sources.sort(key=lambda page: (page.title, page.route.as_posix()))
+    return incoming
+
+
+def wiki_card_mentions(pages: list[WikiPage]) -> dict[str, list[WikiPage]]:
+    """Wiki pages that wikilink to each card, keyed by card id."""
+    mentions: dict[str, list[WikiPage]] = {}
+    for source in pages:
+        seen: set[str] = set()
+        for path in _link_paths(source):
+            if not path.startswith(("tag/", "exam/")):
+                continue
+            card_id = Path(path).stem
+            if card_id in seen:
+                continue
+            seen.add(card_id)
+            mentions.setdefault(card_id, []).append(source)
+    for sources in mentions.values():
+        sources.sort(key=lambda page: (page.title, page.route.as_posix()))
+    return mentions
 
 
 def search_records(pages: list[WikiPage]) -> list[dict[str, object]]:

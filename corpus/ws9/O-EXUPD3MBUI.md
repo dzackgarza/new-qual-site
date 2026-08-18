@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-EXUPD3MBUI
 kind: occurrence
-title: P-UVJYB at UGA prelim Fall 2017
+title: P-SK4KT at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
@@ -11,7 +11,7 @@ classification:
   - matrices
 relations:
 - kind: instance-of
-  target: P-UVJYB
+  target: P-SK4KT
 review: draft
 payload:
   source: SRC-UGA-PRELIM-FALL-2017
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-UVJYB]] appeared at UGA prelim Fall 2017.
+[[P-SK4KT]] appeared at UGA prelim Fall 2017.
 :::

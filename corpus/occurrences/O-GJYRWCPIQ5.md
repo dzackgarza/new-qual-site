@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-GJYRWCPIQ5
 kind: occurrence
-title: P-ZRUZR at UGA complex-analysis Spring 2020
+title: P-37Z7J at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - zeros
 relations:
 - kind: instance-of
-  target: P-ZRUZR
+  target: P-37Z7J
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2020
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-ZRUZR]] appeared at UGA complex-analysis Spring 2020.
+[[P-37Z7J]] appeared at UGA complex-analysis Spring 2020.
 :::

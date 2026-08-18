@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-WORKSHOP-D2-CONNECTED
-kind: source
+kind: collection
 title: 'Topology Qual Workshop Day 2: Connectedness and Path Connectedness'
 classification:
   areas:

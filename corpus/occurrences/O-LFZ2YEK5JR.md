@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-LFZ2YEK5JR
 kind: occurrence
-title: P-WIGQD at UGA algebra Spring 2012
+title: P-T5EUB at UGA algebra Spring 2012
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - centralizers-and-normalizers
 relations:
 - kind: instance-of
-  target: P-WIGQD
+  target: P-T5EUB
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2012
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-WIGQD]] appeared at UGA algebra Spring 2012.
+[[P-T5EUB]] appeared at UGA algebra Spring 2012.
 :::

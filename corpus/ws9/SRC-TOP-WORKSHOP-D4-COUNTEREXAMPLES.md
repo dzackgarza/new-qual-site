@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-WORKSHOP-D4-COUNTEREXAMPLES
-kind: source
+kind: collection
 title: 'Topology Qual Workshop Day 4: Counterexamples and Assorted Problems'
 classification:
   areas:

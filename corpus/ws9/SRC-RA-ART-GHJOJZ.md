@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-RA-ART-GHJOJZ
-kind: source
+kind: collection
 title: JHU (undated) (real-analysis)
 classification:
   areas:

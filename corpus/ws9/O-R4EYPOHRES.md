@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-R4EYPOHRES
 kind: occurrence
-title: P-PUNEM at UGA real-analysis January 2018
+title: P-SAIVF at UGA real-analysis January 2018
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - l2
 relations:
 - kind: instance-of
-  target: P-PUNEM
+  target: P-SAIVF
 review: draft
 payload:
   source: SRC-UGA-RA-JANUARY-2018
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-PUNEM]] appeared at UGA real-analysis January 2018, problem 2018.
+[[P-SAIVF]] appeared at UGA real-analysis January 2018, problem 2018.
 :::

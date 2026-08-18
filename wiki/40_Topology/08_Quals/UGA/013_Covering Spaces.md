@@ -1,3 +1,7 @@
+---
+order: 13
+---
+
 # Covering Spaces
 
 ## 1 (Spring 11/Spring '14)

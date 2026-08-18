@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-M4VBQJLBCC
 kind: occurrence
-title: P-G6OTF at UGA algebra Fall 2018
+title: P-RZ2JV at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - roots-of-unity
 relations:
 - kind: instance-of
-  target: P-G6OTF
+  target: P-RZ2JV
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2018
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-G6OTF]] appeared at UGA algebra Fall 2018.
+[[P-RZ2JV]] appeared at UGA algebra Fall 2018.
 :::

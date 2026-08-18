@@ -1,3 +1,7 @@
+---
+order: 10
+---
+
 # Measure Theory: Sets
 
 ## Spring 2020 # 2

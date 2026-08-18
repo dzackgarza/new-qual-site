@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-SGFQLUQ2RJ
 kind: occurrence
-title: P-KPDL7 at UCSD topology Fall 2017
+title: P-DDUA3 at UCSD topology Fall 2017
 classification:
   areas:
   - topology
@@ -12,7 +12,7 @@ classification:
   - fundamental-group
 relations:
 - kind: instance-of
-  target: P-KPDL7
+  target: P-DDUA3
 review: draft
 payload:
   source: SRC-UCSD-TOP-FALL-2017
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-KPDL7]] appeared at UCSD topology Fall 2017.
+[[P-DDUA3]] appeared at UCSD topology Fall 2017.
 :::

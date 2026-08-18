@@ -18,12 +18,9 @@ order: 50
 
 [[P-UMC34]]
 
-
 ## Entire functions with an asymptotic bound
 
 [[P-4TU4Y]]
-
-
 
 ## Tie's Extra Questions: Fall 2009
 
@@ -32,6 +29,3 @@ order: 50
 ## Tie's Extra Questions: Fall 2015
 
 [[P-EHLPT]]
-
-
-

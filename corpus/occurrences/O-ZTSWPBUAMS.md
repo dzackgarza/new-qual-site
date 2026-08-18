@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-ZTSWPBUAMS
 kind: occurrence
-title: P-AF5PR at UGA complex-analysis Spring 2014
+title: P-PMH4D at UGA complex-analysis Spring 2014
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-AF5PR
+  target: P-PMH4D
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2014
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-AF5PR]] appeared at UGA complex-analysis Spring 2014.
+[[P-PMH4D]] appeared at UGA complex-analysis Spring 2014.
 :::

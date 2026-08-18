@@ -34,6 +34,8 @@ class DiagnosticCode(Enum):
     # pages
     PAGE_REFERENCE_MISSING = "page-reference-missing"
     PAGE_REFERENCE_AMBIGUOUS = "page-reference-ambiguous"
+    PAGE_MISSING_ORDER = "page-missing-order"
+    PAGE_DIRECTORY_MISSING_INDEX = "page-directory-missing-index"
     ASSET_UNRESOLVED = "asset-unresolved"
     UNKNOWN_CITATION = "unknown-citation"
 

@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-DUMMIT
-kind: source
+kind: collection
 title: Dummit and Foote, Abstract Algebra
 classification:
   areas:

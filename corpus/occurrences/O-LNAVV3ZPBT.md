@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-LNAVV3ZPBT
 kind: occurrence
-title: P-YZ3BU at UGA topology Spring 2010
+title: P-MHQ6A at UGA topology Spring 2010
 classification:
   areas:
   - topology
@@ -12,7 +12,7 @@ classification:
   - subspace-topology
 relations:
 - kind: instance-of
-  target: P-YZ3BU
+  target: P-MHQ6A
 review: draft
 payload:
   source: SRC-UGA-TOP-SPRING-2010
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-YZ3BU]] appeared at UGA topology Spring 2010.
+[[P-MHQ6A]] appeared at UGA topology Spring 2010.
 :::

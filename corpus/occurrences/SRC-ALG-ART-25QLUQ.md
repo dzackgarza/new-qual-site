@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-ALG-ART-25QLUQ
-kind: source
+kind: collection
 title: Fall 2019 Midterm #5 (algebra)
 classification:
   areas:

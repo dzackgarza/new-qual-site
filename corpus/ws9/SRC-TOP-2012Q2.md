@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-2012Q2
-kind: source
+kind: collection
 title: 'Topology Qualifying Examination, Math 871/872, June 2012'
 classification:
   areas:

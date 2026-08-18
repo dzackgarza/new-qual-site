@@ -11,7 +11,7 @@ classification:
   - convergence-of-functions
 relations:
 - kind: instance-of
-  target: P-RA19J3
+  target: P-C3MKZ
 review: draft
 payload:
   source: SRC-UGA-RA-JAN-2019
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-RA19J3]] appeared as problem 3 in the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/826, January 23, 2019.
+[[P-C3MKZ]] appeared as problem 3 in the Masters and Ph.D. Qualifying Exam, Analysis: Math 825/826, January 23, 2019.
 :::

@@ -568,11 +568,9 @@ details.reveal.qual-occurrence > summary {
   opacity: 0.8;
 }
 
-/* The exam listing prints each problem's own locator, so the list marker would
-   be a second, competing number. */
-div.qual-exam-listing ul {
-  list-style: none;
-  padding-left: 0;
+/* Position on the collection page is the list index. */
+div.qual-exam-listing ol {
+  padding-left: 1.5rem;
 }
 div.qual-exam-listing li {
   margin-block: 0.35rem;

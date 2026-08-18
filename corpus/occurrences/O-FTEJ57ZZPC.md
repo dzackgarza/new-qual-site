@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-FTEJ57ZZPC
 kind: occurrence
-title: P-XYDVS at UGA algebra Spring 2020
+title: P-KOSSD at UGA algebra Spring 2020
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - subgroups
 relations:
 - kind: instance-of
-  target: P-XYDVS
+  target: P-KOSSD
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2020
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-XYDVS]] appeared at UGA algebra Spring 2020.
+[[P-KOSSD]] appeared at UGA algebra Spring 2020.
 :::

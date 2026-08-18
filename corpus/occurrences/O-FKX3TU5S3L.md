@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-FKX3TU5S3L
 kind: occurrence
-title: P-VYZEN at UGA algebra Fall 2019
+title: P-CGBXN at UGA algebra Fall 2019
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - cyclic-groups
 relations:
 - kind: instance-of
-  target: P-VYZEN
+  target: P-CGBXN
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2019
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-VYZEN]] appeared at UGA algebra Fall 2019, problem 4.
+[[P-CGBXN]] appeared at UGA algebra Fall 2019, problem 4.
 :::

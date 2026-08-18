@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UCSD-TOP-JUSTIN
-kind: source
+kind: collection
 title: UCSD Topology Qual Problems (Justin)
 classification:
   areas:

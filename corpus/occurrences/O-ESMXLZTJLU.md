@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-ESMXLZTJLU
 kind: occurrence
-title: P-E6RSX at UGA complex-analysis Fall 2015
+title: P-YZBES at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - polynomials
 relations:
 - kind: instance-of
-  target: P-E6RSX
+  target: P-YZBES
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-E6RSX]] appeared at UGA complex-analysis Fall 2015.
+[[P-YZBES]] appeared at UGA complex-analysis Fall 2015.
 :::

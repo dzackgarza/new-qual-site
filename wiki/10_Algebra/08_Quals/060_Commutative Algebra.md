@@ -1,3 +1,7 @@
+---
+order: 60
+---
+
 # Commutative Algebra
 
 ## UFDs, PIDs, etc
@@ -52,7 +56,7 @@
 
 ### Fall 2018 #7
 
-[[P-ENAHU]] [[P-G263Z]]
+[[P-G263Z]]
 
 ## Zorn's Lemma
 
@@ -93,8 +97,6 @@
 [[P-ZOYZH]]
 
 ### Spring 2016 #8
-
-[[P-MLGPK]]
 
 [[P-CPB5V]]
 

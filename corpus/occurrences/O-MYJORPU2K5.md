@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-MYJORPU2K5
 kind: occurrence
-title: P-EOEJS at UGA algebra Spring 2015
+title: P-QWEAV at UGA algebra Spring 2015
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - simple-groups
 relations:
 - kind: instance-of
-  target: P-EOEJS
+  target: P-QWEAV
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-EOEJS]] appeared at UGA algebra Spring 2015.
+[[P-QWEAV]] appeared at UGA algebra Spring 2015.
 :::

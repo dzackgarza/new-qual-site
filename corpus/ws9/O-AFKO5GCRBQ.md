@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-AFKO5GCRBQ
 kind: occurrence
-title: P-JMXZA at UGA prelim Fall 2017
+title: P-F7Y7R at UGA prelim Fall 2017
 classification:
   areas:
   - prelim
@@ -10,7 +10,7 @@ classification:
   - logic-and-quantifiers
 relations:
 - kind: instance-of
-  target: P-JMXZA
+  target: P-F7Y7R
 review: draft
 payload:
   source: SRC-UGA-PRELIM-FALL-2017
@@ -18,5 +18,5 @@ payload:
 ---
 
 ::: remark
-[[P-JMXZA]] appeared at UGA prelim Fall 2017.
+[[P-F7Y7R]] appeared at UGA prelim Fall 2017.
 :::

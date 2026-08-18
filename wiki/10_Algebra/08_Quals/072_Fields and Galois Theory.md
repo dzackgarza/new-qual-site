@@ -1,3 +1,7 @@
+---
+order: 72
+---
+
 # Galois Theory
 
 ## General Galois Extensions
@@ -8,7 +12,7 @@
 
 ### Fall 2020 #4
 
-[[P-KBW6F]] [[P-LRECB]]
+[[P-LRECB]]
 
 ### Fall 2019 Midterm #9
 
@@ -50,13 +54,9 @@
 
 ### Fall 2020 #3
 
-[[P-ZDBML]]
-
 [[P-MCNWE]]
 
 ### Spring 2021 #4
-
-[[P-UTKJ7]]
 
 [[P-HJ2AR]]
 
@@ -112,7 +112,7 @@
 
 ### Fall 2019 #7
 
-[[P-DGAQM]] [[P-ESUCT]]
+[[P-ESUCT]]
 
 ### Fall 2018 #3
 
@@ -131,8 +131,6 @@
 [[P-WA5RE]]
 
 ### Spring 2016 #6
-
-[[P-ZH565]]
 
 [[P-LL7UL]]
 
@@ -160,7 +158,7 @@
 
 ### Fall 2019 #4
 
-[[P-VYZEN]] [[P-CGBXN]]
+[[P-CGBXN]]
 
 ### Spring 2019 #2
 

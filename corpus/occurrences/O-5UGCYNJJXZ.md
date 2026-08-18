@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-5UGCYNJJXZ
 kind: occurrence
-title: P-CFEIR at UGA real-analysis Fall 2018
+title: P-5YLZS at UGA real-analysis Fall 2018
 classification:
   areas:
   - real-analysis
@@ -10,7 +10,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-CFEIR
+  target: P-5YLZS
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2018
@@ -18,5 +18,5 @@ payload:
 ---
 
 ::: remark
-[[P-CFEIR]] appeared at UGA real-analysis Fall 2018, problem 3.
+[[P-5YLZS]] appeared at UGA real-analysis Fall 2018, problem 3.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-PQ3A4MN53G
 kind: occurrence
-title: P-JYIUP at Spring 2020 HW 2 #2.6.2 (complex-analysis)
+title: P-MBQNL at Spring 2020 HW 2 #2.6.2 (complex-analysis)
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-JYIUP
+  target: P-MBQNL
 review: draft
 payload:
   source: SRC-CA-ART-MTZNSB
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-JYIUP]] appeared at Spring 2020 HW 2 #2.6.2 (complex-analysis), problem 2.
+[[P-MBQNL]] appeared at Spring 2020 HW 2 #2.6.2 (complex-analysis), problem 2.
 :::

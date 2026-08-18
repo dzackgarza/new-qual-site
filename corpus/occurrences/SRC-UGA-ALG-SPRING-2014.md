@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UGA-ALG-SPRING-2014
-kind: source
+kind: collection
 title: UGA algebra Spring 2014
 classification:
   areas:
@@ -13,6 +13,14 @@ payload:
   source_kind: university-exam
   institution: uga
   area: algebra
+  problems:
+  - P-HULLX
+  - P-GAJ7B
+  - P-SW76H
+  - P-3UTDH
+  - P-2GXZ2
+  - P-SDO43
+  - P-24L43
   date:
     kind: academic-term
     term: spring
@@ -20,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Spring 2014. Recorded from the source corpus' exam-term annotations.
+UGA algebra Spring 2014. The paper is the current Quals posting `Algebra [Spring 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BSpring%C2%A02014%5D.docx`).
 :::

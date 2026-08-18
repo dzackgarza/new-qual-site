@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-UGA-PRELIM-2018
-kind: source
+kind: collection
 title: UGA prelim 2018
 classification:
   areas:
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim 2018. Recorded from the source corpus' exam-term annotations.
+UGA prelim 2018. Recorded from the source corpus' exam-term annotations. The department Quals directory has no prelim posting, and there is no native sitting transcription or worked copy of this paper, so `problems:` is left empty.
 :::

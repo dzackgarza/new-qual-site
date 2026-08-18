@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-Q5IQWTIJYU
 kind: occurrence
-title: P-HPRVA at UGA real-analysis Spring 2014
+title: P-UMAQ5 at UGA real-analysis Spring 2014
 classification:
   areas:
   - real-analysis
@@ -13,7 +13,7 @@ classification:
   - limits
 relations:
 - kind: instance-of
-  target: P-HPRVA
+  target: P-UMAQ5
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2014
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-HPRVA]] appeared at UGA real-analysis Spring 2014.
+[[P-UMAQ5]] appeared at UGA real-analysis Spring 2014.
 :::

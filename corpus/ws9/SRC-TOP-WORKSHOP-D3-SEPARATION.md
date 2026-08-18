@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-WORKSHOP-D3-SEPARATION
-kind: source
+kind: collection
 title: 'Topology Qual Workshop Day 3: Separation Axioms'
 classification:
   areas:

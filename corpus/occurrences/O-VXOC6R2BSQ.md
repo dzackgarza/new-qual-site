@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-VXOC6R2BSQ
 kind: occurrence
-title: P-RYI7M at UGA real-analysis Spring 2018
+title: P-P6D6X at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - lp-spaces
 relations:
 - kind: instance-of
-  target: P-RYI7M
+  target: P-P6D6X
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2018
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-RYI7M]] appeared at UGA real-analysis Spring 2018.
+[[P-P6D6X]] appeared at UGA real-analysis Spring 2018.
 :::

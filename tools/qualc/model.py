@@ -15,7 +15,7 @@ from typing import Annotated, Literal, cast
 
 import panflute as pf
 import yaml
-from pydantic import BaseModel, ConfigDict, Field, TypeAdapter
+from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, field_validator
 
 from .diagnostics import Diagnostic, DiagnosticCode
 from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer
@@ -108,21 +108,62 @@ class OccurrencePayload(Strict):
     locator: str
 
 
+# Problem ids are `P-` followed by uppercase alphanumerics, with optional
+# internal hyphens (e.g. `P-MMCHV`, `P-MMAQ-AWWA4FOL2L`). A list entry that does
+# not match is a typo, not a problem card, and must fail the build.
+PROBLEM_ID_RE = re.compile(r"^P-[A-Z0-9]+(?:-[A-Z0-9]+)*$")
+
+
+def _check_problem_ids(v: list[str]) -> list[str]:
+    for pid in v:
+        if not PROBLEM_ID_RE.match(pid):
+            raise ValueError(f"not a problem id: {pid!r}")
+    return v
+
+
 class ExamSource(Strict):
-    """A sitting of a qualifying exam."""
+    """A sitting of a qualifying exam.
+
+    `problems` is the exam's table of contents: the problem IDs in order of
+    appearance. Position is the list index, so it is queryable without scraping
+    prose. Empty until the exam is curated.
+    """
 
     source_kind: Literal["university-exam"]
     institution: str
     area: str
     date: DateSpec
+    problems: list[str] = []
+
+    @field_validator("problems")
+    @classmethod
+    def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
+        return _check_problem_ids(v)
+
+
+class TextbookSection(Strict):
+    """A named grouping (chapter / section) of a textbook's problems."""
+
+    name: str
+    problems: list[str] = []
+
+    @field_validator("problems")
+    @classmethod
+    def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
+        return _check_problem_ids(v)
 
 
 class TextbookSource(Strict):
-    """A cited book. Carries no institution -- a textbook is not sat anywhere."""
+    """A cited book. Carries no institution -- a textbook is not sat anywhere.
+
+    `sections` groups the book's problems by chapter / section; within a section
+    the problem IDs are ordered and position is the index.
+    """
 
     source_kind: Literal["textbook"]
     textbook: str
     date: DateSpec
+    sections: list[TextbookSection] = []
 
 
 class ContributedArtifact(Strict):
@@ -131,11 +172,20 @@ class ContributedArtifact(Strict):
     `provenance` is required and free text because the honest answer is often a
     sentence ("Neil's Fall 2019 solution set, origin unrecorded"). Requiring it
     stops an artifact entering the corpus with no account of where it came from.
+
+    `problems` is the artifact's table of contents, in order of appearance.
+    Empty until curated.
     """
 
     source_kind: Literal["contributed-artifact"]
     provenance: str
     date: DateSpec
+    problems: list[str] = []
+
+    @field_validator("problems")
+    @classmethod
+    def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
+        return _check_problem_ids(v)
 
 
 SourcePayload = Annotated[
@@ -157,8 +207,14 @@ class OccurrenceCard(Envelope):
     payload: OccurrencePayload
 
 
-class SourceCard(Envelope):
-    kind: Literal["source"]
+class CollectionCard(Envelope):
+    """An exam sitting, textbook, or contributed artifact.
+
+    The card is the collection: it houses the ordered problem list. Occurrences
+    may still point at it until that layer is removed.
+    """
+
+    kind: Literal["collection"]
     payload: SourcePayload
 
 
@@ -250,7 +306,7 @@ class SloganCard(Envelope):
 Card = Annotated[
     ProblemCard
     | OccurrenceCard
-    | SourceCard
+    | CollectionCard
     | SolutionCard
     | HintCard
     | DefinitionCard

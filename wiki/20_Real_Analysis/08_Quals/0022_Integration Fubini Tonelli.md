@@ -1,4 +1,9 @@
-# Fubini-Tonelli
+---
+order: 22
+title: Fubini-Tonelli (shorter sitting list)
+---
+
+# Fubini-Tonelli (shorter sitting list)
 
 ## Spring 2020 # 4
 

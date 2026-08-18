@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-DDSRAQ4QV6
 kind: occurrence
-title: P-GPMVB at UGA complex-analysis Fall 2016
+title: P-Z4CIU at UGA complex-analysis Fall 2016
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - polynomials
 relations:
 - kind: instance-of
-  target: P-GPMVB
+  target: P-Z4CIU
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2016
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-GPMVB]] appeared at UGA complex-analysis Fall 2016.
+[[P-Z4CIU]] appeared at UGA complex-analysis Fall 2016.
 :::

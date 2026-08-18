@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: S-B63IF
 kind: solution
-title: Solution to P-NSKLO
+title: Solution to P-4KTFN
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - counterexamples
 relations:
 - kind: solves
-  target: P-NSKLO
+  target: P-4KTFN
 review: draft
 ---
 

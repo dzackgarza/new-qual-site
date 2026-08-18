@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-QKBOWLRKVA
 kind: occurrence
-title: P-VBXL4 at UGA complex-analysis Spring 2014
+title: P-WASE4 at UGA complex-analysis Spring 2014
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - zeros
 relations:
 - kind: instance-of
-  target: P-VBXL4
+  target: P-WASE4
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2014
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-VBXL4]] appeared at UGA complex-analysis Spring 2014.
+[[P-WASE4]] appeared at UGA complex-analysis Spring 2014.
 :::

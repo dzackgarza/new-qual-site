@@ -1,3 +1,7 @@
+---
+order: 100
+---
+
 # Linear Algebra: Diagonalizability
 
 ## Fall 2017 #7

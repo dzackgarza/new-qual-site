@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-CA-ART-GGHAFU
-kind: source
+kind: collection
 title: Spring 2020 HW 3 #3.8.2 (complex-analysis)
 classification:
   areas:

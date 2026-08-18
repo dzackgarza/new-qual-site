@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-EBUI5NR2XX
 kind: occurrence
-title: P-BPL7E at UGA real-analysis Spring 2021
+title: P-6QWZI at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-BPL7E]] appeared at UGA real-analysis Spring 2021.
+[[P-6QWZI]] appeared at UGA real-analysis Spring 2021.
 :::

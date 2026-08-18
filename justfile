@@ -15,6 +15,10 @@ default:
 check:
     uv run qualc check
 
+# Report wiki filesystem measurements as candidates to read (not a gate)
+doctor *args:
+    uv run python tools/wiki_doctor.py {{ args }}
+
 # Compile the corpus: catalog.sqlite + QMD and static HTML projections
 build:
     uv run qualc build

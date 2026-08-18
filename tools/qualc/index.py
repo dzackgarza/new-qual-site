@@ -14,13 +14,13 @@ import yaml
 from .diagnostics import Diagnostic, DiagnosticCode
 from .model import (
     AcademicTerm,
+    CollectionCard,
     ContributedArtifact,
     ExamSource,
     ExerciseCard,
     OccurrenceCard,
     ParsedCard,
     ProblemCard,
-    SourceCard,
     TermOnly,
     TextbookSource,
     YearOnly,
@@ -49,6 +49,13 @@ create table sources (
 create table exam_sources (id text primary key, institution text not null, area text not null);
 create table textbook_sources (id text primary key, textbook text not null);
 create table artifact_sources (id text primary key, provenance text not null);
+create table collection_problems (
+  collection_id text not null,
+  section_ordinal integer,
+  section_name text,
+  ordinal integer not null,
+  problem_id text not null
+);
 create table occurrences (
   id text primary key, problem_id text not null, source_id text not null, locator text not null
 );
@@ -123,7 +130,7 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                         f"dangling relation target {rel.target!r}",
                     )
                 )
-        if isinstance(p.card, SourceCard):
+        if isinstance(p.card, CollectionCard):
             # One registry check per variant, matching the union. Only an exam
             # sitting has an institution; a textbook has a registry entry
             # instead; an artifact's provenance is free text by design and has
@@ -169,12 +176,12 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                         f"names missing source {p.card.payload.source!r}",
                     )
                 )
-            elif not isinstance(src.card, SourceCard):
+            elif not isinstance(src.card, CollectionCard):
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.OCCURRENCE_SOURCE_NOT_A_SOURCE_CARD,
                         where,
-                        f"{p.card.payload.source} is not a source card",
+                        f"{p.card.payload.source} is not a collection card",
                     )
                 )
             targets = [r.target for r in p.card.relations if r.kind == "instance-of"]
@@ -225,7 +232,7 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
             con.execute("insert into sections values (?,?,?,?)", (c.id, kind, ordinal, text))
             con.execute("insert into search values (?,?,?)", (c.id, kind, text))
 
-        if isinstance(c, SourceCard):
+        if isinstance(c, CollectionCard):
             d = c.payload.date
             con.execute(
                 "insert into sources values (?,?,?,?,?)",
@@ -245,16 +252,32 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
                         "insert into exam_sources values (?,?,?)",
                         (c.id, c.payload.institution, c.payload.area),
                     )
+                    for ordinal, pid in enumerate(c.payload.problems):
+                        con.execute(
+                            "insert into collection_problems values (?,?,?,?,?)",
+                            (c.id, None, None, ordinal, pid),
+                        )
                 case TextbookSource():
                     con.execute(
                         "insert into textbook_sources values (?,?)",
                         (c.id, c.payload.textbook),
                     )
+                    for section_ordinal, section in enumerate(c.payload.sections):
+                        for ordinal, pid in enumerate(section.problems):
+                            con.execute(
+                                "insert into collection_problems values (?,?,?,?,?)",
+                                (c.id, section_ordinal, section.name, ordinal, pid),
+                            )
                 case ContributedArtifact():
                     con.execute(
                         "insert into artifact_sources values (?,?)",
                         (c.id, c.payload.provenance),
                     )
+                    for ordinal, pid in enumerate(c.payload.problems):
+                        con.execute(
+                            "insert into collection_problems values (?,?,?,?,?)",
+                            (c.id, None, None, ordinal, pid),
+                        )
         if isinstance(c, OccurrenceCard):
             problem = next(r.target for r in c.relations if r.kind == "instance-of")
             con.execute(

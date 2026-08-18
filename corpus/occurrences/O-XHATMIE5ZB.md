@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-XHATMIE5ZB
 kind: occurrence
-title: P-CZ5QM at UGA complex-analysis Spring 2015
+title: P-VSKE4 at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - identity-theorem
 relations:
 - kind: instance-of
-  target: P-CZ5QM
+  target: P-VSKE4
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-CZ5QM]] appeared at UGA complex-analysis Spring 2015.
+[[P-VSKE4]] appeared at UGA complex-analysis Spring 2015.
 :::

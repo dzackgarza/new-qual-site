@@ -1,3 +1,7 @@
+---
+order: 21
+---
+
 # Integrals: Approximation
 
 ## Spring 2018 # 3
@@ -42,19 +46,15 @@
 
 ## Fall 2017 # 3
 
-[[P-2LJDT]]
 
 ## Spring 2015 # 4
 
-[[P-ZAS5Z]]
 
 ## Fall 2014 # 3
 
-[[P-L2HGH]]
 
 ## Spring 2014 # 1
 
-[[P-HPRVA]]
 
 ## Spring 2021 # 4
 

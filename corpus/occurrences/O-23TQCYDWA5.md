@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-23TQCYDWA5
 kind: occurrence
-title: P-DLPD4 at UGA algebra Spring 2017
+title: P-PC6ZW at UGA algebra Spring 2017
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - modules
 relations:
 - kind: instance-of
-  target: P-DLPD4
+  target: P-PC6ZW
 review: draft
 payload:
   source: SRC-UGA-ALG-SPRING-2017
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-DLPD4]] appeared at UGA algebra Spring 2017.
+[[P-PC6ZW]] appeared at UGA algebra Spring 2017.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-ABFLO33NU4
 kind: occurrence
-title: P-LFIZY at UGA real-analysis Spring 2018
+title: P-OFICU at UGA real-analysis Spring 2018
 classification:
   areas:
   - real-analysis
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-LFIZY]] appeared at UGA real-analysis Spring 2018.
+[[P-OFICU]] appeared at UGA real-analysis Spring 2018.
 :::

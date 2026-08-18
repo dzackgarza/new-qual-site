@@ -4,15 +4,12 @@ order: 0
 
 # Preface
 
-I'd like to thank the following individuals for their contributions to this document:
+Thanks to:
 
-- Edward Azoff, for supplying a problem sheet broken out by topic.
+- Edward Azoff, for a problem sheet broken out by topic.
 
-- Mentzelos Melistas, for explaining and documenting many solutions to these questions.
+- Mentzelos Melistas, for explaining and documenting many solutions.
 
-- Jingzhi Tie, for supplying many additional problems and solutions.
-> On notation: I sometimes use $f_x \definedas \dd{f}{x}$ to denote partial derivatives, and $\bd_z^n f$ as $f^{(n)}(z)$.
+- Jingzhi Tie, for many additional problems and solutions. Notation used with those problems: $f_x \definedas \dd{f}{x}$ for partial derivatives, and $\bd_z^n f$ as $f^{(n)}(z)$.
 
-- Jingzhi Tie, for supplying **many** additional problems and solutions.
-
-- Swaroop Hegde for supplying a number of proofs
+- Swaroop Hegde, for a number of proofs.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-NSXWCKPU3C
 kind: occurrence
-title: P-XSBTH at UGA topology Fall 2005
+title: P-DHIWH at UGA topology Fall 2005
 classification:
   areas:
   - topology
@@ -11,7 +11,7 @@ classification:
   - euclidean-spaces
 relations:
 - kind: instance-of
-  target: P-XSBTH
+  target: P-DHIWH
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2005
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-XSBTH]] appeared at UGA topology Fall 2005.
+[[P-DHIWH]] appeared at UGA topology Fall 2005.
 :::

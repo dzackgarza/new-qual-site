@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-WORKSHOP-2020-WS1A
-kind: source
+kind: collection
 title: 'Topology Qualifying Exam Workshop, May 2020, Worksheet 1'
 classification:
   areas:

@@ -1,3 +1,7 @@
+---
+order: 95
+---
+
 # Extra Questions from Jingzhi Tie
 
 [[P-NVJN5]]
@@ -44,7 +48,7 @@
 
 ### Tie's Extra Questions: Fall 2011
 
-[[P-AF5PR]]
+[[P-PMH4D]]
 
 ### Tie's Extra Questions: Fall 2011
 
@@ -52,7 +56,7 @@
 
 ### Tie's Extra Questions: Fall 2011
 
-[[P-DQPYN]]
+[[P-WASE4]]
 
 ### Tie's Extra Questions: Fall 2011
 
@@ -94,7 +98,7 @@
 
 ### Tie's Extra Questions: Spring 2014
 
-[[P-AF5PR]]
+[[P-PMH4D]]
 
 ### Tie's Extra Questions: Spring 2014
 
@@ -102,7 +106,7 @@
 
 ### Tie's Extra Questions: Spring 2014
 
-[[P-VBXL4]]
+[[P-WASE4]]
 
 ### Tie's Extra Questions: Spring 2014
 
@@ -130,7 +134,7 @@
 
 [[P-LRCVT]]
 
-[[P-JTON2]] [[P-XKYOG]]
+[[P-37Z7J]] [[P-XKYOG]]
 
 ### Tie's Extra Questions: Fall 2015### Tie's Extra Questions: Fall 2015
 
@@ -170,7 +174,7 @@
 
 ### Tie's Extra Questions: Fall 2015### Tie's Extra Questions: Fall 2015
 
-[[P-E6RSX]]
+[[P-YZBES]]
 
 ### Tie's Extra Questions: Fall 2015### Tie's Extra Questions: Fall 2015
 
@@ -220,7 +224,7 @@
 
 ### Tie's Extra Questions: Spring 2015
 
-[[P-FJ4VQ]]
+[[P-3WZXM]]
 
 ### Tie's Extra Questions: Spring 2015
 
@@ -248,7 +252,7 @@
 
 ### Tie's Extra Questions: Spring 2015
 
-[[P-OO3WX]]
+[[P-KNIPC]]
 
 ### Tie's Extra Questions: Spring 2015
 
@@ -280,7 +284,7 @@
 
 ### Tie's Extra Questions: Spring 2015
 
-[[P-CZ5QM]]
+[[P-VSKE4]]
 
 ### Tie's Extra Questions: Spring 2015
 
@@ -300,7 +304,7 @@
 
 ### Tie's Extra Questions: Spring 2015
 
-[[P-OO3WX]]
+[[P-KNIPC]]
 
 ### Tie's Extra Questions: Spring 2015
 
@@ -310,7 +314,7 @@
 
 [[P-R424U]]
 
-[[P-N3R5A]]
+[[P-UGCNF]]
 
 ### Tie's Extra Questions: Spring 2015
 
@@ -322,7 +326,7 @@
 
 ### Tie's Extra Questions: Spring 2015
 
-[[P-OO3WX]]
+[[P-KNIPC]]
 
 ### Tie's Extra Questions: Spring 2015
 
@@ -334,7 +338,7 @@ any $s<r$, there exists a constant $c>0$ such that $$\|f\|_{(\infty, s)} \leq c 
 
 ### Tie's Extra Questions: Fall 2016
 
-[[P-VF9RI]]
+[[P-3AEDF]]
 
 ### Tie's Extra Questions: Fall 2016
 
@@ -350,7 +354,7 @@ any $s<r$, there exists a constant $c>0$ such that $$\|f\|_{(\infty, s)} \leq c 
 
 ### Tie's Extra Questions: Fall 2016
 
-[[P-GPMVB]]
+[[P-Z4CIU]]
 
 ### Tie's Extra Questions: Fall 2016
 

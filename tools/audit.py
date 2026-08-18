@@ -21,7 +21,16 @@ from typing import cast
 
 import yaml
 from qualc.cli import load
-from qualc.model import AcademicTerm, ParsedCard, TermOnly, YearOnly, split_front_matter
+from qualc.model import (
+    AcademicTerm,
+    ContributedArtifact,
+    ExamSource,
+    ParsedCard,
+    TermOnly,
+    TextbookSource,
+    YearOnly,
+    split_front_matter,
+)
 from qualc.pandoc_batch import PandocServer
 from qualc.wiki import IMAGE_ELEMENT, WikiPage
 
@@ -46,10 +55,10 @@ def _body_digest(path: Path) -> str:
     return hashlib.sha1(body.strip().encode()).hexdigest()
 
 
-# A source or occurrence card has no mathematics of its own -- its body is a
+# A collection or occurrence card has no mathematics of its own -- its body is a
 # provenance remark, and the same remark on two different exam sittings is
 # correct, not a duplicate. Duplicate *sittings* are `duplicate-sittings`.
-BODYLESS_KINDS = {"source", "occurrence"}
+BODYLESS_KINDS = {"collection", "occurrence"}
 
 
 def check_duplicate_bodies(parsed: list[ParsedCard]) -> Check:
@@ -87,7 +96,7 @@ def check_one_sitting_one_source(parsed: list[ParsedCard]) -> Check:
     seen: dict[tuple[str, str, str, int | None, str | None], list[str]] = {}
     for item in parsed:
         card = item.card
-        if card.kind != "source" or card.payload.source_kind != "university-exam":
+        if card.kind != "collection" or card.payload.source_kind != "university-exam":
             continue
         date = card.payload.date
         # One branch per date variant, matching the union: a case without a year
@@ -132,11 +141,11 @@ def orphan_ids(
     a card that is. The emitter renders occurrences, hints and solutions on their
     problem's route, so a reader does reach them -- but only through it.
 
-    The same holds one level up, for the same reason: `emit.source_page` renders
-    every occurrence of a sitting on that sitting's own route, each linked to its
-    problem. Naming a `source` card therefore
-    reaches its occurrences and their problems. This edge is here because the
-    emitter draws it -- delete `source_page`'s listing and this edge goes too."""
+    The same holds one level up, for the same reason: `emit.collection_page`
+    renders the collection's `problems:` / `sections:` list, each linked to its
+    problem. Naming a `collection` card therefore reaches the problems it lists.
+    This edge is here because the emitter draws it -- an empty list reaches
+    nothing, and that is the unfilled collection, not a missing fallback."""
     import panflute as pf
 
     referenced: set[str] = set(_manifest_ids(root))
@@ -166,17 +175,21 @@ def orphan_ids(
                 if relation.target not in edges:
                     edges[relation.target] = set()
                 edges[relation.target].add(item.card.id)
-        if item.card.kind == "occurrence":
-            source = item.card.payload.source
-            if source not in edges:
-                edges[source] = set()
-            # The sitting's page carries the occurrence and links its problem.
-            edges[source].add(item.card.id)
-            edges[source].update(
-                relation.target
-                for relation in item.card.relations
-                if relation.kind == "instance-of"
-            )
+        if item.card.kind == "collection":
+            listed: list[str]
+            match item.card.payload:
+                case ExamSource() | ContributedArtifact():
+                    listed = list(item.card.payload.problems)
+                case TextbookSource():
+                    listed = [
+                        pid
+                        for section in item.card.payload.sections
+                        for pid in section.problems
+                    ]
+                case _:
+                    listed = []
+            if listed:
+                edges.setdefault(item.card.id, set()).update(listed)
 
     reachable = {cid for cid in referenced}
     frontier = list(reachable)
@@ -201,10 +214,69 @@ def check_orphans(parsed: list[ParsedCard], wiki_pages: list[WikiPage]) -> Check
     )
 
 
+def check_collection_lists_problems(parsed: list[ParsedCard]) -> Check:
+    """Every exam/textbook collection card must list its problems.
+
+    An empty `problems` (exam) or `sections` (textbook) is an unfilled
+    collection. This check reports that measurement. It does not license filling
+    the list from anywhere other than the exam or book.
+    """
+    check = Check("collection-lists-problems")
+    for pc in parsed:
+        card = pc.card
+        if card.kind != "collection":
+            continue
+        if isinstance(card.payload, ExamSource):
+            if not card.payload.problems:
+                check.violations.append(f"{card.id}: exam collection lists no problems")
+        elif isinstance(card.payload, TextbookSource):
+            if not card.payload.sections:
+                check.violations.append(f"{card.id}: textbook collection has no sections")
+        elif isinstance(card.payload, ContributedArtifact):
+            if not card.payload.problems:
+                check.violations.append(f"{card.id}: artifact collection lists no problems")
+    return check
+
+
+def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
+    """Every problem id a collection card lists must exist and be a problem card.
+
+    The exam/textbook `problems` metadata is the corpus's table of contents; a
+    dangling or mistyped id is a link a reader cannot reach, so it fails the
+    build rather than rendering as a dead wikilink.
+    """
+    ids: dict[str, str] = {pc.card.id: pc.card.kind for pc in parsed}
+    check = Check("collection-problem-references")
+    for pc in parsed:
+        card = pc.card
+        if card.kind != "collection":
+            continue
+        pids: list[str] = []
+        if isinstance(card.payload, ExamSource):
+            pids = card.payload.problems
+        elif isinstance(card.payload, TextbookSource):
+            for section in card.payload.sections:
+                pids.extend(section.problems)
+        elif isinstance(card.payload, ContributedArtifact):
+            pids = card.payload.problems
+        else:
+            continue
+        for pid in pids:
+            if pid not in ids:
+                check.violations.append(f"{card.id}: lists unknown problem {pid}")
+            elif ids[pid] != "problem":
+                check.violations.append(
+                    f"{card.id}: lists {pid} which is kind {ids[pid]!r}, not 'problem'"
+                )
+    return check
+
+
 CHECKS = {
     "duplicate-bodies": check_duplicate_bodies,
     "empty-areas": check_empty_areas,
     "duplicate-sittings": check_one_sitting_one_source,
+    "collection-lists-problems": check_collection_lists_problems,
+    "collection-problem-references": check_collection_problem_references,
 }
 ALL = list(CHECKS) + ["orphans"]
 

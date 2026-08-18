@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-BY6C4BA4FA
 kind: occurrence
-title: P-ENAHU at UGA algebra Fall 2018
+title: P-G263Z at UGA algebra Fall 2018
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - modules
 relations:
 - kind: instance-of
-  target: P-ENAHU
+  target: P-G263Z
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2018
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-ENAHU]] appeared at UGA algebra Fall 2018.
+[[P-G263Z]] appeared at UGA algebra Fall 2018.
 :::

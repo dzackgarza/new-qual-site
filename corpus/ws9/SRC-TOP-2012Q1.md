@@ -1,7 +1,7 @@
 ---
 schema: qual/card@1
 id: SRC-TOP-2012Q1
-kind: source
+kind: collection
 title: 'Math 871–872 Qualifying Exam, January 2012'
 classification:
   areas:

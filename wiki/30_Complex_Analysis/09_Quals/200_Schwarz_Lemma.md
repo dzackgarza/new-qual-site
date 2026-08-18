@@ -24,11 +24,9 @@ status: completed
 
 [[P-BSATZ]]
 
-
 ## Scaling Schwarz
 
-[[E-NCKK3]]
-
+[[P-ZS4IH]]
 
 ## Bounding derivatives
 
@@ -62,17 +60,13 @@ status: completed
 
 [[P-ABRPK]]
 
-
-
 ### Tie's Extra Questions: Fall 2009
 
 [[E-6ROMA]]
 
-
 ### Tie's Extra Questions: Fall 2015 (Blaschke factor properties)
 
 [[E-SWC3U]]
-
 
 ## Tie's Extra Questions: Spring 2015
 
