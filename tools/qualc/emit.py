@@ -336,6 +336,17 @@ def _wiki_branch(page: WikiPage) -> str:
     return parts[0] if len(parts) > 1 else ""
 
 
+def _wiki_level_title(segment: str) -> str:
+    """A directory label: the folder name without the numeric sort key.
+
+    `10_Algebra` and `020_Groups` sort the tree; the reader sees Algebra and
+    Groups. Underscores stay as spaces, matching the rest of the wiki nav.
+    """
+    stripped = re.sub(r"^(?:\d+[._\- ]*)+", "", segment)
+    label = (stripped or segment).replace("_", " ").strip()
+    return label or segment
+
+
 def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
     """The full wiki tree, breadcrumbs, and branch reading order, by route.
 
@@ -344,11 +355,13 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
     order is filename order within the branch, which is what the tree merge at
     `fd37c3d1` preserved when it sorted the named tree into the numbered one.
 
-    A directory carries a `NavigationLink` with no target: it names a level of
-    the trail but has no page of its own to link to.
+    A directory is a `LevelOnly` node unless it contains `index.md`, which is
+    that directory in the tree: the folder title and route come from the page,
+    and the page is not listed again among the children.
     """
     sorted_pages = sorted(pages, key=lambda page: page.source_rel.as_posix())
     links: dict[str, NavigationLink] = {}
+    page_keys: dict[str, str] = {}
     for page in sorted_pages:
         parent: NavigationParent = RootParent()
         for depth in range(1, len(page.source_rel.parts)):
@@ -356,17 +369,31 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
             if key not in links:
                 links[key] = NavigationLink(
                     key=key,
-                    title=page.source_rel.parts[depth - 1].replace("_", " "),
+                    title=_wiki_level_title(page.source_rel.parts[depth - 1]),
                     target=LevelOnly(),
                     parent=parent,
                 )
             parent = NodeParent(key)
-        links[page.route.as_posix()] = NavigationLink(
-            key=page.route.as_posix(),
-            title=page.title,
-            target=PageTarget(page.route),
-            parent=parent,
-        )
+        route_key = page.route.as_posix()
+        directory_parts = page.source_rel.parts[:-1]
+        if page.source_rel.stem.lower() == "index" and directory_parts:
+            dir_key = "/".join(directory_parts)
+            directory = links[dir_key]
+            links[dir_key] = NavigationLink(
+                key=dir_key,
+                title=page.title,
+                target=PageTarget(page.route),
+                parent=directory.parent,
+            )
+            page_keys[route_key] = dir_key
+        else:
+            links[route_key] = NavigationLink(
+                key=route_key,
+                title=page.title,
+                target=PageTarget(page.route),
+                parent=parent,
+            )
+            page_keys[route_key] = route_key
 
     navigation: dict[str, PublicationNavigation] = {}
     ordered = tuple(links.values())
@@ -377,20 +404,20 @@ def _wiki_navigation(pages: list[WikiPage]) -> dict[str, PublicationNavigation]:
             following = members[index + 1] if index + 1 < len(members) else None
             position: StartReading | MiddleReading | EndReading | OnlyReading
             if previous is None and following is not None:
-                position = StartReading(following=ReadingLink.of(links[following.route.as_posix()]))
+                position = StartReading(following=ReadingLink.of(links[page_keys[following.route.as_posix()]]))
             elif following is None and previous is not None:
-                position = EndReading(previous=ReadingLink.of(links[previous.route.as_posix()]))
+                position = EndReading(previous=ReadingLink.of(links[page_keys[previous.route.as_posix()]]))
             elif previous is not None and following is not None:
                 position = MiddleReading(
-                    previous=ReadingLink.of(links[previous.route.as_posix()]),
-                    following=ReadingLink.of(links[following.route.as_posix()]),
+                    previous=ReadingLink.of(links[page_keys[previous.route.as_posix()]]),
+                    following=ReadingLink.of(links[page_keys[following.route.as_posix()]]),
                 )
             else:
                 position = OnlyReading()
             key = page.route.as_posix()
             navigation[key] = PublicationNavigation(
                 links=ordered,
-                current_key=key,
+                current_key=page_keys[key],
                 position=position,
             )
     return navigation

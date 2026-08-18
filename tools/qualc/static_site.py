@@ -261,7 +261,11 @@ def _wiki_tree(
                     items.append(f"<li><details{open_attribute}><summary>{escape(link.title)}</summary>{nested}</details></li>")
                 case PageTarget():
                     anchor = _current_navigation_link(relative_path, link) if link.key == navigation.current_key else _navigation_link(relative_path, link)
-                    items.append("<li>" + anchor + nested + "</li>")
+                    if nested:
+                        open_attribute = " open" if link.key in open_directories or link.key == navigation.current_key else ""
+                        items.append(f"<li><details{open_attribute}><summary>{anchor}</summary>{nested}</details></li>")
+                    else:
+                        items.append("<li>" + anchor + "</li>")
                 case _ as unreachable:
                     assert_never(unreachable)
         return f"<ol>{''.join(items)}</ol>" if items else ""

@@ -170,6 +170,47 @@ def test_wiki_tree_is_complete_on_root_and_nested_pages(tmp_path: Path) -> None:
     assert ("Compactness", "topology/compactness.html", False) in index_navigation.links
 
 
+def test_wiki_directory_label_omits_sort_prefix(tmp_path: Path) -> None:
+    """Numeric prefixes are vault sort keys. The sidebar shows the subject."""
+    work = fixture_repo(tmp_path)
+    wiki = work / "wiki"
+    (wiki / "10_Algebra").mkdir()
+    (wiki / "10_Algebra" / "groups.md").write_text("# Groups\n")
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    navigation = WikiNavigationParser()
+    navigation.feed(
+        (work / "build" / "quarto" / "_site" / "wiki" / "10_Algebra" / "groups.html").read_text()
+    )
+    assert (1, "Algebra", True) in navigation.details
+    assert (1, "10 Algebra", True) not in navigation.details
+
+
+def test_wiki_index_page_is_the_directory_node(tmp_path: Path) -> None:
+    """A folder's index.md is that folder in the tree, not a sibling of its children."""
+    work = fixture_repo(tmp_path)
+    wiki = work / "wiki"
+    (wiki / "10_Algebra").mkdir()
+    (wiki / "10_Algebra" / "index.md").write_text("---\ntitle: Algebra\n---\n\n# Syllabus\n")
+    (wiki / "10_Algebra" / "groups.md").write_text("# Groups\n")
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site" / "wiki"
+    navigation = WikiNavigationParser()
+    navigation.feed((site / "10_Algebra" / "groups.html").read_text())
+
+    titles = [title for title, _, _ in navigation.links]
+    assert titles.count("Algebra") == 1
+    assert "Syllabus" not in titles
+    assert ("Algebra", "index.html", False) in navigation.links
+    assert ("Groups", "groups.html", True) in navigation.links
+    assert (1, "Algebra", True) in navigation.details
+
+
 @pytest.mark.parametrize(
     ("pages", "code"),
     [

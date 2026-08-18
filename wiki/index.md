@@ -14,15 +14,15 @@ Try some #resources/problem_collections, or help me with unsolved ones:
 
   - [[00_Solutions|Ring Theory Solutions]]
 
-  - [[10_Algebra/500_Exercises/9960 UGA Problems|UGA Algebra Course PSets]]
+  - [[10_Algebra/07_Exercises/9960 UGA Problems|UGA Algebra Course PSets]]
 
 - Real Analysis
 
-  - [[20_Real_Analysis/000_Resources/20_Solutions|Real Analysis Solutions]]
+  - [[20_Real_Analysis/11_Resources/20_Solutions|Real Analysis Solutions]]
 
 - Complex Analysis
 
-  - [[30_Complex_Analysis/000_Resources/20_Solutions|Complex Analysis Solutions]]
+  - [[30_Complex_Analysis/12_Resources/20_Solutions|Complex Analysis Solutions]]
 
 - Topology
 
@@ -52,13 +52,13 @@ Dive into some topics here:
 
 - [[00_Prelims/Prelim Resources]]
 
-- [[10_Algebra/010_Algebra]]
+- [[10_Algebra/index]]
 
-- [[20_Real_Analysis/020_Real Analysis]]
+- [[20_Real_Analysis/index]]
 
-- [[30_Complex_Analysis/030_Complex Analysis]]
+- [[30_Complex_Analysis/index]]
 
-- [[40_Topology/040_Topology]]
+- [[40_Topology/index]]
 
 Do some #resources/reading:
 
@@ -66,19 +66,19 @@ Do some #resources/reading:
 
 - [[15_Books_Notes|Real analysis notes]]
 
-- [[30_Complex_Analysis/000_Resources/00_Books_Notes|Complex analysis notes]]
+- [[30_Complex_Analysis/12_Resources/00_Books_Notes|Complex analysis notes]]
 
-- [[40_Topology/000_Resources/00_Books_Notes|Topology notes]]
+- [[40_Topology/11_Resources/00_Books_Notes|Topology notes]]
 
 ## My Work
 
-- Real Analysis qual work: [[20_Real_Analysis/600_Qual_Questions_UGA/0000_Preface|Real Analysis qual work]]
+- Real Analysis qual work: [[20_Real_Analysis/08_Quals/0000_Preface|Real Analysis qual work]]
 
-- Algebra qual work: [[10_Algebra/600_Qual_Questions_UGA/000_Preface]]
+- Algebra qual work: [[10_Algebra/08_Quals/000_Preface]]
 
-- Complex qual work: [[30_Complex_Analysis/999_Quals/000_Preface|Complex qual work]]
+- Complex qual work: [[30_Complex_Analysis/09_Quals/000_Preface|Complex qual work]]
 
-- Topology qual work: [[40_Topology/600_UGA_Qual_Questions/000_Preface]]
+- Topology qual work: [[40_Topology/08_Quals/UGA/000_Preface]]
 
 ## Relevant Searches
 
