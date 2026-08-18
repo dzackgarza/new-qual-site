@@ -7,6 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
+  - fourier-analysis
+  - differentiation
   - integrals
 relations: []
 review: draft

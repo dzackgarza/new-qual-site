@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - p-groups
+  - sylow-theory
+  - centralizers-and-normalizers
 relations: []
 review: draft
 solved: false

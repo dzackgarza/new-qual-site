@@ -7,6 +7,8 @@ classification:
   areas:
   - algebra
   topics:
+  - jacobson-radical
+  - characteristic
   - rings
 relations: []
 review: draft

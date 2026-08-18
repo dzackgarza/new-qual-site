@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
+  - field-extensions
+  - characteristic
 relations: []
 review: draft
 solved: false

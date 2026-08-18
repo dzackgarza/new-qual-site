@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - conjugacy
+  - subgroups
 relations: []
 review: draft
 solved: true

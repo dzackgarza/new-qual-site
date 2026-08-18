@@ -8,6 +8,7 @@ classification:
   - algebra
   topics:
   - modules
+  - free-modules
 relations: []
 review: draft
 solved: false

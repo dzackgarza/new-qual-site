@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - linear-algebra
+  - bilinear-forms
+  - dual-spaces
+  - matrices
 relations: []
 review: draft
 solved: false

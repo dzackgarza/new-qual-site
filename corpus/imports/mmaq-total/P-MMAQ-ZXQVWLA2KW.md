@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
+  - maximal-ideals
   - rings
+  - compactness
 relations: []
 review: draft
 solved: false

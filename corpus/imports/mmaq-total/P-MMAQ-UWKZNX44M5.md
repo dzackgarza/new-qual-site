@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - p-groups
+  - cyclic-groups
 relations: []
 review: draft
 solved: false

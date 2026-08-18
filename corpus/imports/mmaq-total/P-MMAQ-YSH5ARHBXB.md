@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
+  - prime-ideals
+  - nilpotence
+  - zorns-lemma
 relations: []
 review: draft
 solved: false

@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - linear-algebra
+  - diagonalization
+  - eigenvalues-and-eigenvectors
+  - matrices
 relations: []
 review: draft
 solved: false

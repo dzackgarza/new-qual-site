@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
+  - factorization
   - polynomials
 relations: []
 review: draft

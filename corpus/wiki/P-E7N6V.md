@@ -9,7 +9,7 @@ classification:
   topics:
   - integrals
   - improper-integrals
-  - misc
+  - u-substitution
 relations: []
 review: draft
 solved: false

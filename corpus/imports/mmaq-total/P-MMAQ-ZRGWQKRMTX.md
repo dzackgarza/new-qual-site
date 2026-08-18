@@ -7,6 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
+  - residues
+  - contour-integration
   - integrals
 relations: []
 review: draft

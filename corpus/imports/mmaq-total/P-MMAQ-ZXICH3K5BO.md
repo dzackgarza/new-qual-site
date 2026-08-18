@@ -7,6 +7,7 @@ classification:
   areas:
   - algebra
   topics:
+  - characteristic
   - rings
 relations: []
 review: draft

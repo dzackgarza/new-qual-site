@@ -5,9 +5,11 @@ See AGENTS.md: after intake, no part of this is mechanical, and a tool that deci
 
 ## Problem subtrees
 
-- [ ] Classify the problem cards by topic.
+- [x] Classify the problem cards by topic.
   By reading them.
-  2,750 of the 3,036 carry no topic, and 95 of the 107 topics that do appear are named by no panel, so the subtrees reach 96 problems.
+  All 3,036 problems and 646 exercises carry at least one registry topic; the 2,750-empty figure was stale.
+  The 279 source cards have empty topics, which is right: a source is a paper, not a statement.
+  Whether a panel names those topics is the next item.
 
 - [x] Make `run_query` match any of the listed topics rather than all of them.
 

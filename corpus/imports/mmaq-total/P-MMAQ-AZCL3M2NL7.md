@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - integrals
+  - line-integrals
+  - contour-integration
+  - complex-logarithm
 relations: []
 review: draft
 solved: true

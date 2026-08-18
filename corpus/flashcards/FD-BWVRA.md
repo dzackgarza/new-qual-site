@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - misc
+  - functions-and-relations
 relations: []
 review: draft
 ---

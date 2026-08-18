@@ -8,6 +8,8 @@ classification:
   - topology
   topics:
   - homology
+  - surfaces
+  - cell-complexes
 relations: []
 review: draft
 solved: false

@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - classification
+  - sylow-theory
+  - cyclic-groups
 relations: []
 review: draft
 solved: false

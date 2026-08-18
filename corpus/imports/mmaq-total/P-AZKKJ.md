@@ -7,6 +7,8 @@ classification:
   areas:
   - algebra
   topics:
+  - polynomials
+  - nilpotence
   - rings
 relations: []
 review: draft

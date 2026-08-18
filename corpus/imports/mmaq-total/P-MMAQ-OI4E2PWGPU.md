@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - integrals
+  - contour-integration
+  - cauchy-integral-theorem
+  - residues
 relations: []
 review: draft
 solved: true

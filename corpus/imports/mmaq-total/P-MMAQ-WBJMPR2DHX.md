@@ -7,8 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - groups
+  - matrix-groups
+  - simple-groups
+  - finite-fields
 relations: []
 review: draft
 solved: false

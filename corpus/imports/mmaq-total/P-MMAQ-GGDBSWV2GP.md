@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - cyclic-groups
+  - subgroups
+  - fields
 relations: []
 review: draft
 solved: false

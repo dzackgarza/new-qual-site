@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - subgroups
+  - abelian-groups
+  - group-actions
 relations: []
 review: draft
 solved: false

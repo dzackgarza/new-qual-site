@@ -7,6 +7,8 @@ classification:
   areas:
   - algebra
   topics:
+  - principal-ideal-domains
+  - free-modules
   - modules
 relations: []
 review: draft

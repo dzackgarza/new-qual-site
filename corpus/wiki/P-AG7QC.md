@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - geometry
-  - polynomials
 relations: []
 review: draft
 solved: true

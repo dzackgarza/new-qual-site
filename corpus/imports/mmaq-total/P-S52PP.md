@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - fields
-  - modules
+  - integral-domains
+  - semisimplicity
+  - projective-modules
 relations: []
 review: draft
 solved: false

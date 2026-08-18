@@ -7,6 +7,8 @@ classification:
   areas:
   - algebra
   topics:
+  - torsion
+  - integral-domains
   - modules
 relations: []
 review: draft

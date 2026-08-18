@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
+  - euclidean-domains
+  - principal-ideal-domains
 relations: []
 review: draft
 solved: false

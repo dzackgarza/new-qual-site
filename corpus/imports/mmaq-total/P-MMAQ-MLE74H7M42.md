@@ -7,7 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
+  - finite-fields
+  - classification
 relations: []
 review: draft
 solved: false

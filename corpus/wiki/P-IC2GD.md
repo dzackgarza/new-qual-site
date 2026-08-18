@@ -7,7 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - misc
+  - normal-subgroups
+  - p-groups
+  - conjugacy
 relations: []
 review: draft
 solved: false
