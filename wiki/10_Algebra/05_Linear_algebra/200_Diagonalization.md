@@ -1,3 +1,7 @@
+---
+order: 200
+---
+
 # Diagonalizability
 
 :::{.remark}
@@ -65,5 +69,4 @@ If $A$ is diagonalizable, every elementary divisor is linear, so every invariant
 But the minimal polynomial is just the largest invariant factor.
 
 :::
-
 

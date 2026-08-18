@@ -1,4 +1,5 @@
 ---
+order: 100004
 title: Problem Set 8
 ---
 
@@ -51,7 +52,6 @@ Since every $g_n$ has compact support, say $\mathrm{supp}(g_n) \definedas E_n$, 
 This follows from $\norm{1}_p^p = \int_X \abs {1}^p = \int_X 1 = m(X)$ and taking $p$th roots.
 $\qed$
 
-
 By Holder with $p=q=2$, we can now write
 
 \[
@@ -84,7 +84,6 @@ $$
 m(X) < \infty \implies L^\infty(X) \subseteq L^2(X) \subseteq L^1(X).
 $$
 
-
 **The Inclusions Are Strict:**
 
 1. $\exists f \in L^1(X)\setminus L^2(X)$: 
@@ -111,7 +110,6 @@ $$
 
 while $\norm{f}_\infty > M$ for any finite $M$, since $f$ is unbounded in neighborhoods of 0, so $\norm{f}_\infty = \infty$.
 
-
 ### Part ii
 
 1. $\exists f \in L^2(X)\setminus L^1(X)$ when $m(X) = \infty$:
@@ -123,7 +121,6 @@ Take $X = [1, \infty)$ and let $f(x) = x\inv$, then
 \norm{f}_1 &= \int_0^\infty x^{-1} \to\infty \qquad\text{by the $p$ test}
 .\end{align*}
 
-
 2. $\exists f \in L^\infty(X)\setminus L^2(X)$ when $m(X) = \infty$:
 
 Take $X = \RR$ and $f(x) = 1$. then
@@ -133,11 +130,9 @@ Take $X = \RR$ and $f(x) = 1$. then
 \norm{f}_2^2 &= \int_\RR 1 \to \infty
 .\end{align*}
 
-
 3. $L^2(X) \subseteq L^1(X) \implies m(X) < \infty$:
 
 Let $f = \chi_X$, by assumption we can find a constant $M$ such that $\norm{\chi_X}_2 \leq M \norm{\chi_X}_1$. 
-
 
 Then pick a sequence of sets $E_k \nearrow X$ such that $m(E_k) < \infty$ for all $k$, $\chi_{E_k} \nearrow \chi_X$, and thus $\norm{ \chi_{E_k}}_p \leq M \norm{\chi_E}_p$. 
 By the lemma, $\norm{\chi_{E_k}}_p = m(E_k)^{1/p}$, so we have
@@ -148,7 +143,6 @@ By the lemma, $\norm{\chi_{E_k}}_p = m(E_k)^{1/p}$, so we have
 &\implies m(E_k)^{-1/2} \leq M \\
 &\implies m(E_k) \leq M^2 < \infty
 .\end{align*}
-
 
 and by continuity of measure, we have $\lim_K m(E_k) = m(X) \leq M^2 < \infty$.
 $\qed$
@@ -170,7 +164,6 @@ Note that taking square roots in (1) immediately yields
 \|f\|_{L^{2}(X)} \leq\|f\|_{L^{1}(X)}^{1 / 2}\|f\|_{L^{\infty}(X)}^{1 / 2}
 .\end{align*}
 
-
 2. $L^2(X) \subset L^1(X) + L^\infty(X)$:
 
 Let $f\in L^2(X)$, then write $S = \theset{x \suchthat \abs{f(x)} \geq 1}$ and $f = \chi_{S} f + \chi_{S^c} f \definedas g + h$.
@@ -182,7 +175,6 @@ $$
 and so $g\in L^1(X)$.
 
 To see that $h \in L^\infty(X)$, we just note that $h$ is bounded by 1 by construction, and so $\norm{h}_\infty \leq 1 < \infty$.
-
 
 # Problem 3
 
@@ -297,10 +289,8 @@ H &\surjects \ell^2(\NN) \\
 
 is a surjection, and for every $\vector a \in \ell^2(\NN)$, we can pull back to some $\vector x \in H$ such that $\norm{\vector x}_H = \norm{\vector a}_{\ell^2(\NN)}$.
 
-
 Following the proof in Neil's notes, let $\vector a \in \ell^2(\NN)$ be given by $\vector a = \theset{a_j}$, and define $S_N = \sum_{n=1}^N a_n \vector u_n$.
 We then have
-
 
 \begin{align*}
 \norm{S_N - S_M}_H 
@@ -341,7 +331,6 @@ $$
 $$
 
 and since $\theset{\vector u_n}$ is a basis, we can apply Parseval's identity to obtain
-
 
 \begin{align*}
 \norm{\vector x}_H^2 = \sum_{n=1}^\infty \abs{\inner{\vector x}{\vector u_n}} \definedas \sum_{n=1}^\infty \abs{a_n} 
@@ -398,7 +387,6 @@ which shows that $\norm{L}_H = \pi/\sqrt 6$.
 which shows that $L$ is unbounded, and thus can not be a continuous linear functional.
 $\qed$
 
-
 # Problem 6
 
 We can use the fact that $\Lambda_p \in (L^p)\dual \cong L^q$, where this is an isometric isomorphism given by the map
@@ -413,7 +401,6 @@ $$
 \norm{\Lambda}_{(L^p)\dual} = \norm{g}_{L^q}.
 $$
 In this case, we can identify $\Lambda_p = I(g)$, where $g(x) = x^2$ and we can verify that $g\in L^q$ by computing its norm:
-
 
 \begin{align*}
 \norm{g}_{L^q}^q 

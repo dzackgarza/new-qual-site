@@ -80,8 +80,6 @@ Behold:
 
 :::
 
-
-
 # Exercises
 
 [[E-M3IWM]]

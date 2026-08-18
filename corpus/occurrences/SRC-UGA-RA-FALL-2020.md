@@ -13,7 +13,12 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
-  problems: []
+  problems:
+  - P-D6N7M
+  - P-ZWJ7K
+  - P-I3DSE
+  - P-PMDP4
+  - P-B2CWE
   date:
     kind: academic-term
     term: fall
@@ -21,5 +26,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Fall 2020. Recorded from the source corpus' exam-term annotations. The paper is the current Quals posting `Real Analysis [Fall 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Fall 2020. The catalog PDF `Real_Qual_Fall2020.pdf` currently 404s. `problems:` is left empty: exam #1 (a decreasing positive sequence with convergent series satisfies $n x_n\to 0$) is stated by `P-D6N7M`.
+UGA real-analysis Fall 2020. The paper is the current Quals posting `Real Analysis [Fall 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Fall 2020. The catalog PDF `Real_Qual_Fall2020.pdf` currently 404s. The list is the sitting order on that paper.
 :::

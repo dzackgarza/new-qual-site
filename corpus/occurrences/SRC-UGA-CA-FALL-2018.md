@@ -14,7 +14,13 @@ payload:
   institution: uga
   area: complex-analysis
   problems:
+  - P-8CA28
   - P-ER23C
+  - P-8CA29
+  - P-8CA30
+  - P-8CA31
+  - P-8CA32
+  - P-8CA33
   date:
     kind: academic-term
     term: fall
@@ -22,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2018. Official department PDF: <https://www.math.uga.edu/sites/default/files/inline-files/Complex%20Fall%202018pdf.pdf> (404). The paper is the current Quals posting under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #2 is listed as `P-ER23C`. Exam #1 (Laurent series of $1/((z-1)(z-2))$ in $1<|z|<2$), #3 (vertical half-strip onto $\mathbb{H}$), #4 ($\int_0^\infty\cos(ax)/(x^4+5x^2+4)\,dx$), #5 (entire maps sending unbounded sequences to unbounded sequences), #6 (bounded sets of periods of a meromorphic function), and #7 (holomorphic square root of an even-degree polynomial outside a large disk) have no matching P-card.
+UGA complex-analysis Fall 2018. The paper is the current Quals posting `Complex Analysis [Fall 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BFall%C2%A02018%5D.docx`). The catalog PDF `https://www.math.uga.edu/sites/default/files/inline-files/Complex%20Fall%202018pdf.pdf` currently 404s. The list is the sitting order on that paper.
 :::

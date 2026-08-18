@@ -13,7 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
-  problems: []
+  problems:
+  - P-VXO5U
+  - P-J25XX
+  - P-J745K
+  - P-O5S6X
+  - P-7UD7E
+  - P-WWNJC
   date:
     kind: academic-term
     term: spring
@@ -21,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2016. The paper is the current Quals posting `Real Analysis [Spring 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02016%5D.docx`). The catalog PDF `RealAnalysisQualSpring2016.pdf` currently 404s. `problems:` is left empty: exam #1 matches both `P-VXO5U` and `P-FKKSH`.
+UGA real-analysis Spring 2016. The paper is the current Quals posting `Real Analysis [Spring 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02016%5D.docx`), headed January 2016. The catalog PDF `RealAnalysisQualSpring2016.pdf` currently 404s. The list is the sitting order on that paper.
 :::

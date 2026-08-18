@@ -43,7 +43,6 @@ A **$p\dash$group** is a group $G$ such that every element is order $p^k$ for so
 
 > For full proofs (some of which I've borrowed), see Keith Conrad's notes: <https://kconrad.math.uconn.edu/blurbs/grouptheory/sylowpf.pdf>
 
-
 :::{.remark}
 Some setup and notation: assume
 
@@ -52,7 +51,6 @@ Some setup and notation: assume
 - $n_p$ the number of Sylow$\dash p$ subgroups.
 
 :::
-
 
 ### Sylow 1 (Cauchy for Prime Powers)
 
@@ -89,7 +87,6 @@ xH \in \Fix_H(G/H)
 - Use the subgroup correspondence: $L\leq N_G(H)/H$ corresponds to some $L' \leq G$ with $H \subseteq L' \subseteq N_G(H)$ and $L = L'/H$.
   Now use that $\size L = p$ implies $\size(L' / H) = [L':H] = p$, so $\size L' = [L':H]\size H = p\size H = p^{i+1}$ as desired.
 
-
 :::
 
 ### Sylow 2 (Sylows are Conjugate)
@@ -123,11 +120,9 @@ where we now get equality since these sets have the same cardinality.
 
 :::
 
-
 ### Sylow 3 (Numerical Constraints)
 
 [[T-S5T5C]]
-
 
 :::{.proof title="of Sylow 3"}
 \envlist
@@ -173,6 +168,5 @@ Inductively this yields a chain $H \subsetneq H^1 \subsetneq \cdots$, and by Zor
 :::
 
 ## Exercises
-
 
 [[E-K3OJW]]

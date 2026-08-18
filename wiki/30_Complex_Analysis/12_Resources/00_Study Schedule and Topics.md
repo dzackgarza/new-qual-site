@@ -1,4 +1,5 @@
 ---
+order: 0
 title: "Study Schedule and Topics"
 ---
 
@@ -51,7 +52,7 @@ title: "Study Schedule and Topics"
 
 - Week 6 (June 23): **Entire functions**
 	- [[30_Complex_Analysis/02_Cauchy/020 Liouville|Liouville's theorem]]
-	- [[30_Complex_Analysis/13_Unsorted/090_Appendix FTA Proofs|The fundamental theorem of algebra]]
+	- [[30_Complex_Analysis/13_Appendices/090_Appendix FTA Proofs|The fundamental theorem of algebra]]
 
 - Week 7 (June 30): **Roots**
 	- [[30_Complex_Analysis/03_Zeros_and_poles/020_Argument Principle|Argument principle]]
@@ -82,8 +83,8 @@ title: "Study Schedule and Topics"
 	- $\mathrm{SL}_2(\mathbf{R})$, modularity and elliptic curves
 	- The hyperbolic metric
 	- Riemann surfaces
-	- [[30_Complex_Analysis/13_Unsorted/Special Functions|Special functions]]: 
-		- The [[30_Complex_Analysis/13_Unsorted/Special Functions#The Gamma Function|Gamma function]], [[30_Complex_Analysis/13_Unsorted/Special Functions#Riemann Zeta|zeta functions]] and [[30_Complex_Analysis/13_Unsorted/Special Functions#Elliptic Functions|elliptic functions]]
+	- [[30_Complex_Analysis/13_Appendices/Special Functions|Special functions]]: 
+		- The [[30_Complex_Analysis/13_Appendices/Special Functions#The Gamma Function|Gamma function]], [[30_Complex_Analysis/13_Appendices/Special Functions#Riemann Zeta|zeta functions]] and [[30_Complex_Analysis/13_Appendices/Special Functions#Elliptic Functions|elliptic functions]]
 	- Canonical products
 	- Dirichlet's problem
 	- Hurwitz's theorem

@@ -14,10 +14,13 @@ payload:
   institution: uga
   area: complex-analysis
   problems:
-  - P-ZX7FP
+  - P-TKF72
   - P-4BJMK
   - P-3KOGW
   - P-WASE4
+  - P-8CA34
+  - P-8CA35
+  - P-8CA36
   date:
     kind: academic-term
     term: spring
@@ -25,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Spring 2014. The paper is the current Quals posting `Complex Analysis [Spring 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #1 is listed as `P-ZX7FP`. Exam #3 is listed as `P-3KOGW`. Exam #4 is listed as `P-WASE4`. Exam #5 (Möbius sending a line and a circle to concentric circles), #6 (more than one disk fixed point implies the identity), and #7 (isolated singularity with $\Re f$ bounded above is removable) have no matching P-card.
+UGA complex-analysis Spring 2014. The paper is the current Quals posting `Complex Analysis [Spring 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BSpring%C2%A02014%5D.docx`). The list is the sitting order on that paper.
 :::

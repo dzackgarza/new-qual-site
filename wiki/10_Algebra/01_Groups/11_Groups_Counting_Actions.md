@@ -1,3 +1,8 @@
+---
+order: 11
+title: Counting theorems
+---
+
 ## Counting Theorems
 
 [[T-F4O3E]]
@@ -78,7 +83,6 @@ For any group action, the kernel is the intersection of all stabilizers:
 :::
 
 [[D-KGGWK]]
-
 
 [[PR-GSDKO]]
 
@@ -238,7 +242,6 @@ Proceed by partitioning the sum up according to which orbit each term comes from
 .\]
 
 :::
-
 
 ### Conjugation on Subgroups
 

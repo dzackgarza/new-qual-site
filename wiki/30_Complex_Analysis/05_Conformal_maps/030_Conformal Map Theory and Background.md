@@ -1,4 +1,5 @@
 ---
+order: 30
 title: "Theory and Background: Conformal Maps"
 sort: 0
 ---
@@ -69,7 +70,6 @@ This yields a quick way of finding $f\inv$: invert the matrix and ignore the det
 An LFT that fixes three points is the identity.
 
 :::
-
 
 ## Blaschke Factors
 

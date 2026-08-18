@@ -1,5 +1,8 @@
-# Conformal Maps / Linear Fractional Transformations
+---
+order: 30
+---
 
+# Conformal Maps / Linear Fractional Transformations
 
 ![](../../../../assets/assets/figures/2021-10-29_02-33-08.png)
 
@@ -36,7 +39,6 @@ This can be weakened: an injective holomorphic map satisfies $f'(z) \neq 0$ and 
 
 [[T-55MPA]]
 
-
 ## By Type
 
 :::{.remark title="Notation"}
@@ -56,8 +58,6 @@ This can be weakened: an injective holomorphic map satisfies $f'(z) \neq 0$ and 
 
 [[T-2KGOX]]
 
-
-
 [[PR-FL6T7]]
 
 :::{.remark}
@@ -70,7 +70,6 @@ This is just a composition of the above map with the flip $z\mapsto -z$:
 \[
 - {i-z \over i + z} = {z-i \over i+z} = {z-i \over z+i}
 .\]
-
 
 :::
 
@@ -90,7 +89,6 @@ Circles of radius $R$ are mapped to vertical line segments connecting $\ln(R) + 
 
 :::
 
-
 :::{.remark}
 One can find other specific images of the logarithm:
 \[
@@ -105,23 +103,12 @@ For the upper half-disc to the negative horizontal half-strip:
 
 :::
 
-
 [[PR-TQDIL]]
-
 
 [[PR-FRVPJ]]
 
-
 [[PR-KKU6N]]
 
-
-
-
-
-
-
-
 ## Exercises
-
 
 [[E-YCHOS]]

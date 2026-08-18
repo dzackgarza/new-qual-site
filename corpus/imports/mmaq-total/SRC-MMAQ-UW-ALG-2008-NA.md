@@ -16,16 +16,17 @@ payload:
   problems:
   - P-MMAQ-5EFTFEKRDI
   - P-MMAQ-KGHDXFTO6Z
-  - P-MMAQ-GUMCQAGPXB
+  - P-BJDIE
   - P-FF2O5
   - P-MMAQ-NCN7KYH27J
   - P-PLFQZ
-  - P-MMAQ-R6TGCO3TVO
+  - P-CC3DW
   date:
     kind: year
     year: 2008
 ---
 
 ::: remark
-Imported from [`make-me-a-qual Combined_Questions.yaml`](https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml) at revision `6190e0eeaf93ac471a2450444d0b70872b7b9dfa`. The verified source SHA-256 is `63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176`. This source group contains 7 rows; no exam-term inference was made beyond the explicit `season` value. The problem list is the sitting order in that YAML (exam numbers 1, 2, 3, 5, 6, 7, 8).
+Imported from [`make-me-a-qual Combined_Questions.yaml`](https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml) at revision `6190e0eeaf93ac471a2450444d0b70872b7b9dfa`. The verified source SHA-256 is `63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176`. This source group contains 7 rows; no exam-term inference was made beyond the explicit `season` value.
+The problem list is the sitting order in that YAML (exam numbers 1, 2, 3, 5, 6, 7, 8).
 :::

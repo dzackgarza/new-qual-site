@@ -1,4 +1,5 @@
 ---
+order: 35
 sort: 99
 title: "Exercises: Conformal Maps"
 ---

@@ -90,7 +90,11 @@ We can plug in known information and deduce some maps:
 
 We then deduce:
 
-- $H_0(X) = \ZZ$: ? (Appeal to some path-connectedness argument?)
+- $H_0(X) = \ZZ$ by the splitting of the line 0 SES
+  \[
+  0 \to \ZZ \to \ZZ \cross H_0(X) \to \ZZ \to 0
+  \]
+  yielding $\ZZ \cross H_0(X) \cong \ZZ \times \ZZ$.
 
 - $H_1(X) = \ZZ$ using the SES appearing on the first row:
   \[

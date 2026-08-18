@@ -108,10 +108,11 @@ class OccurrencePayload(Strict):
     locator: str
 
 
-# Problem ids are `P-` followed by uppercase alphanumerics, with optional
-# internal hyphens (e.g. `P-MMCHV`, `P-MMAQ-AWWA4FOL2L`). A list entry that does
-# not match is a typo, not a problem card, and must fail the build.
-PROBLEM_ID_RE = re.compile(r"^P-[A-Z0-9]+(?:-[A-Z0-9]+)*$")
+# Collection-list ids are `P-` or `E-` followed by uppercase alphanumerics, with
+# optional internal hyphens (e.g. `P-MMCHV`, `P-MMAQ-AWWA4FOL2L`, `E-BV7DD`).
+# Wiki exercise survivors of an exam item keep the `E-` id. A list entry that
+# matches neither is a typo and must fail the build.
+PROBLEM_ID_RE = re.compile(r"^[PE]-[A-Z0-9]+(?:-[A-Z0-9]+)*$")
 
 
 def _check_problem_ids(v: list[str]) -> list[str]:

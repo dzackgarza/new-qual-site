@@ -1,6 +1,6 @@
 ---
-title: Topology 
-order: 30
+title: Topology
+order: 40
 ---
 
 # Topology

@@ -19,7 +19,7 @@ title: "Extra problems: group theory"
 
 [[P-O5YG6]]
 
-[[P-GNFIW]] [[P-G52LZ]] [[P-LG4RJ]] [[P-WP76T]] [[P-2EMAW]] [[P-AH376]] [[P-2J6HK]] [[P-VX22R]] [[P-RI6SK]] [[P-2M2P2]] [[P-2BYEN]] [[P-PUOMT]]
+[[P-GNFIW]] [[P-G52LZ]] [[P-LG4RJ]] [[P-WP76T]] [[P-2EMAW]] [[P-V7BGS]] [[P-2J6HK]] [[P-67U4W]] [[P-RI6SK]] [[P-2M2P2]] [[P-2BYEN]] [[P-PUOMT]]
 
 ### Symmetric Groups
 
@@ -57,7 +57,7 @@ Specific Groups
 
 ### Series of Groups
 
-[[P-WM3S3]] [[P-TNPRX]] [[P-GWP4W]] [[P-BZEYY]] [[P-ZFVEO]] [[P-CQR3X]] [[P-S2KMD]] [[P-S333B]] [[P-7LMGJ]] [[P-MMYH6]] [[P-WJY6O]] [[P-NPVTP]] [[P-TLOJE]] [[P-7H5CP]]
+[[P-7MIOE]] [[P-TNPRX]] [[P-GWP4W]] [[P-BZEYY]] [[P-ZFVEO]] [[P-CQR3X]] [[P-S2KMD]] [[P-S333B]] [[P-7LMGJ]] [[P-MMYH6]] [[P-WJY6O]] [[P-NPVTP]] [[P-TLOJE]] [[P-7H5CP]]
 
 ### Misc
 

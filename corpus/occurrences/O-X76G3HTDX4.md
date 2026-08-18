@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-X76G3HTDX4
 kind: occurrence
-title: P-XBWMR at UGA complex-analysis Fall 2009
+title: P-4PTIX at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - blaschke-factors
 relations:
 - kind: instance-of
-  target: P-XBWMR
+  target: P-4PTIX
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2009
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-XBWMR]] appeared at UGA complex-analysis Fall 2009.
+[[P-4PTIX]] appeared at UGA complex-analysis Fall 2009.
 :::

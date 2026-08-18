@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-K5XUM
 kind: problem
-title: "Fall 2010, 8"
+title: "$X\\times Y$ is compact if and only if $X$ and $Y$ are compact"
 classification:
   areas:
   - topology
@@ -14,7 +14,7 @@ relations: []
 review: draft
 solved: true
 ---
-:::{.problem title="Fall 2010, 8"}
+:::{.problem title="?"}
 Show that for any two topological spaces $X$ and $Y$ , $X \cross Y$ is compact if and only if both $X$ and $Y$ are compact.
 
 :::

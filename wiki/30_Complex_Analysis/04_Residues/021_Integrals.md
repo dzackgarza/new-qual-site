@@ -1,3 +1,7 @@
+---
+order: 21
+---
+
 # Integrals
 
 [See this very detailed note](https://math.mit.edu/~jorloff/18.04/notes/topic9.pdf).

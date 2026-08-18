@@ -15,9 +15,14 @@ payload:
   date:
     kind: year
     year: 2002
+  sections:
+  - name: Chapter 0
+    problems:
+    - P-TOP-WORKSHOP-2020-WS2B-HW2
 ---
 
 ::: remark
-Hatcher, *Algebraic Topology*, Cambridge University Press, 2002. Cited in the authored wiki as `[@Hat02]`; the work itself is in `vocabularies/references.bib` and the book is registered as `hatcher` in `vocabularies/textbooks.yaml`.
-Source used: the author’s free PDF (local Zotero copy of *Algebraic Topology*, 2002) together with its extracted full text. `sections:` is empty: the first exercises of the book are Chapter 0 Exercises 1–29, and Exercise 1 (explicit deformation retraction of the punctured torus onto longitude and meridian circles) has no matching problem card. `P-TOP-WORKSHOP-2020-WS2B-HW2` states Chapter 0 Exercise 2, not Exercise 1.
+Hatcher, *Algebraic Topology*, Cambridge University Press, 2002. Cited in the authored wiki as `[@Hat02]`; the work itself is in `vocabularies/references.bib` and the book is registered as `hatcher` in `vocabularies/textbooks.yaml`. `sections:` is the book order of associated existing problem cards.
+`P-TOP-WORKSHOP-2020-WS2B-HW2` states Chapter 0 Exercise 2 (explicit deformation retraction of $\mathbb{R}^n\setminus\{0\}$ onto $S^{n-1}$). Theorem and proposition cards titled by Hatcher numbers (Hatcher 1.12, 1.30, 1.31, …) are statements from the text, not exercises, and are omitted.
+Other problem cards that only cite Hatcher in a remark or proof are omitted.
 :::

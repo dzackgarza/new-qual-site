@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-TGF7PJHF5A
 kind: occurrence
-title: P-2HNMA at UGA complex-analysis Fall 2009
+title: P-JES3E at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - counterexamples
 relations:
 - kind: instance-of
-  target: P-2HNMA
+  target: P-JES3E
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2009
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-2HNMA]] appeared at UGA complex-analysis Fall 2009.
+[[P-JES3E]] appeared at UGA complex-analysis Fall 2009.
 :::

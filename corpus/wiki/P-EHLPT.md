@@ -28,11 +28,13 @@ Use this to show that $f(z)$ must be a constant (Liouville's theorem).
 :::{.solution}
 Apply PFD and use that $f$ is holomorphic to apply Cauchy's formula over a curve of radius $R$ enclosing $a$ and $b$:
 \[
+{1 \over (z-a)(z-b)} = {1 \over a-b}\qty{{1 \over z-a} - {1 \over z-b}},
+\]
+so
+\[
 \int_\gamma {f(z) \over (z-a)(z-b)}\dz
-&= \int_\gamma f(z)\qty{{a-b \over z-a} + {b-a\over z-b} } \dz\\
-&= (a-b)\inv \int_\gamma {f(z) \over z-a} \dz + (b-a)\inv \int_\gamma {f(z) \over z-b}\dz \\ 
-&= (a-b)\inv \cdot 2\pi i f(a) + (b-a)\cdot 2\pi i f(b)\\
-&= 2\pi i\qty{f(a) - f(b) \over a-b }
+&= {1 \over a-b}\qty{\int_\gamma {f(z) \over z-a}\dz - \int_\gamma {f(z) \over z-b}\dz} \\
+&= {2\pi i \over a-b}\qty{f(a) - f(b)}
 .\]
 Since $f$ is bounded, this number is finite and independent of $R$, so taking $R\to\infty$ preserves this equality.
 On the other hand, if $\abs{f(z)}\leq M$, then we can estimate this integral directly as 

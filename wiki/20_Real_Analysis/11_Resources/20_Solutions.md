@@ -1,5 +1,8 @@
+---
+order: 20
+---
+
 # Solutions
-#resources/solutions 
 
 ## Collections
 
@@ -32,6 +35,7 @@ Huge bank of undergrad/grad questions:
 - [https://www.math.lsu.edu/gradfiles/AnalysisTestBank_2009.pdf](https://www.math.lsu.edu/gradfiles/AnalysisTestBank_2009.pdf)
 
 - [Berkeley undergrad pset solutions](https://math.berkeley.edu/~vvdatar/m104su18/Assignments/Solutions_A6.pdf)
+
   - Lots of uniform convergence.
 
 - [midpracsol.pdf](attachments/midpracsol.pdf)

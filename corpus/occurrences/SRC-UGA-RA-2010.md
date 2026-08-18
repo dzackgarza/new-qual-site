@@ -13,11 +13,15 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems: []
   date:
     kind: year
     year: 2010
 ---
 
 ::: remark
-UGA real-analysis 2010. Recorded from the source corpus' exam-term annotations. `problems:` is left empty: the current Quals listing at https://www.math.uga.edu/past-qualifying-exams-1 has Spring 2010 and Fall 2010 Real Analysis postings, not a year-only sitting, and the expected Quals file `Real Analysis [2010].docx` (regular space and NBSP) 404s under https://www.math.uga.edu/sites/default/files/Quals/. Native Real Analysis material under `assets/ws9/` is by topic, not this sitting. Order was not taken from occurrence cards.
+UGA real-analysis 2010 (year-only).
+Extra_Questions has January 2010 and June 2010 fragments, not a year-only paper.
+`600_Qual_Questions_UGA/9010_Extra_Problems.md.source` tags "2010 6.1" and similar are course problem-set numbers, not this sitting.
+`.tmp-uga-ra-empty/` has Spring 2010 and Fall 2010 Quals files (separate sittings), not `Real Analysis [2010]`. No year-only 2010 exam was found in Extra_Questions, `wiki/20_Real_Analysis/08_Quals/`, or `.tmp-uga-ra-empty/`.
 :::

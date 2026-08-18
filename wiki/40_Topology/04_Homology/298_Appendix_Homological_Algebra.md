@@ -1,3 +1,7 @@
+---
+order: 298
+---
+
 # Appendix: Homological Algebra
 
 ## Exact Sequences
@@ -17,7 +21,13 @@ Some useful results:
 
 - $0\to A \to B \mapsvia{\cong} C \to D\to 0$ iff $A = D = 0$.
 
-  - Todo: Proof
+  - *Proof.* Write $f\colon A\to B$ and $h\colon C\to D$, and let $g\colon B\to C$ be the given isomorphism.
+    Exactness at $B$ says $\im f = \ker g$.
+    An isomorphism has trivial kernel, so $\im f = 0$; exactness at $A$ says $f$ is injective, so $A=0$.
+    Exactness at $C$ says $\im g = \ker h$.
+    An isomorphism is surjective, so $\ker h = C$ and $h=0$.
+    Exactness at $D$ says $\im h = D$, hence $D=0$.
+    Conversely, if $A=D=0$ the sequence is $0\to 0\to B\xrightarrow{\cong} C\to 0\to 0$, which is exact.
 
 - $0\to A\to B \to C \to 0$ splits iff $C$ is free.
 

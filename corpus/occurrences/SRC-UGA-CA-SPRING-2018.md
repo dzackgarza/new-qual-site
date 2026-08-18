@@ -14,7 +14,12 @@ payload:
   institution: uga
   area: complex-analysis
   problems:
+  - P-8CA17
+  - P-8CA18
   - P-4ZZYV
+  - P-8CA19
+  - P-8CA20
+  - P-8CA21
   - P-FBOFF
   date:
     kind: academic-term
@@ -23,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Spring 2018. Official department PDF: <https://www.math.uga.edu/sites/default/files/inline-files/ComplexQual_Spring18.pdf> (404). The paper is the current Quals posting under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #3 is listed as `P-4ZZYV`. Exam #7 is listed as `P-FBOFF`. Exam #1 (conformal map of $|z-1|<1/2$ onto $|z+1|>1$), #2 (growth $|z|^{1/2}+|z|^{-1/2}$ on $\mathbb{C}\setminus\{0\}$), #4 ($\int_0^\infty\log x/(1+x^4)\,dx$), #5 (Schwarz bound $f(1/2)=3/4$, $f'(1/2)=2/3$), and #6 ($e^z=z+\lambda$ in the left half-plane) have no matching P-card.
+UGA complex-analysis Spring 2018. The paper is the current Quals posting `Complex Analysis [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BSpring%C2%A02018%5D.docx`). The catalog PDF `https://www.math.uga.edu/sites/default/files/inline-files/ComplexQual_Spring18.pdf` currently 404s. The list is the sitting order on that paper.
 :::

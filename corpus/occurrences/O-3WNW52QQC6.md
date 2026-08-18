@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-3WNW52QQC6
 kind: occurrence
-title: P-RFF3J at UGA complex-analysis Fall 2011
+title: P-KNLBB at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
@@ -11,7 +11,7 @@ classification:
   - counterexamples
 relations:
 - kind: instance-of
-  target: P-RFF3J
+  target: P-KNLBB
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2011
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-RFF3J]] appeared at UGA complex-analysis Fall 2011.
+[[P-KNLBB]] appeared at UGA complex-analysis Fall 2011.
 :::

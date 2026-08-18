@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-G6QZTJI3EQ
 kind: occurrence
-title: P-QNJ6C at UGA real-analysis Spring 2017
+title: P-QNJ6C at UGA real-analysis January 2017
 classification:
   areas:
   - real-analysis
@@ -15,10 +15,10 @@ relations:
   target: P-QNJ6C
 review: draft
 payload:
-  source: SRC-UGA-RA-SPRING-2017
+  source: SRC-UGA-RA-JANUARY-2017
   locator: "?"
 ---
 
 ::: remark
-[[P-QNJ6C]] appeared at UGA real-analysis Spring 2017.
+[[P-QNJ6C]] appeared at UGA real-analysis January 2017.
 :::

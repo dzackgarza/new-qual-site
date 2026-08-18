@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-ZDLWHBSN3T
 kind: occurrence
-title: P-JFDQJ at Spring 2020 HW 3 #3.8.9 (complex-analysis)
+title: P-J5JVJ at Spring 2020 HW 3 #3.8.9 (complex-analysis)
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - complex-logarithm
 relations:
 - kind: instance-of
-  target: P-JFDQJ
+  target: P-J5JVJ
 review: draft
 payload:
   source: SRC-CA-ART-2JI4YD
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-JFDQJ]] appeared at Spring 2020 HW 3 #3.8.9 (complex-analysis), problem 3.
+[[P-J5JVJ]] appeared at Spring 2020 HW 3 #3.8.9 (complex-analysis), problem 3.
 :::

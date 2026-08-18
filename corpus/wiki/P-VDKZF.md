@@ -21,8 +21,7 @@ Show without using Picard's theorems that $f(z)$ is a constant.
 :::
 
 ::: {.solution}
-We have $\abs{f(z)}\geq M$ for some $M$, so $\abs{1/f(z)} \leq M\inv$ is bounded, and we claim it is entire as well.
-This follows from the fact that $1/f$ has singularities at the zeros of $f$, but these are removable since $1/f$ is bounded in every neighborhood of each such zero.
-So $1/f$ extends to a holomorphic function.
-But now $1/f =c$ is constant by Liouville, which forces $f= 1/c$ to be constant.
+Choose $w_0 \in \Omega$ and $\varepsilon > 0$ with $\overline{D_\varepsilon(w_0)} \subseteq \Omega$.
+Then $\abs{f(z) - w_0} \geq \varepsilon$ for every $z$, so $g(z) \da 1/(f(z)-w_0)$ is entire and bounded by $1/\varepsilon$.
+By Liouville, $g$ is constant, hence $f$ is constant.
 :::

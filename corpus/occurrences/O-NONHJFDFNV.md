@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-NONHJFDFNV
 kind: occurrence
-title: P-Y37R6 at UGA complex-analysis Spring 2014
+title: P-4PTIX at UGA complex-analysis Spring 2014
 classification:
   areas:
   - complex-analysis
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-Y37R6]] appeared at UGA complex-analysis Spring 2014.
+[[P-4PTIX]] appeared at UGA complex-analysis Spring 2014.
 :::

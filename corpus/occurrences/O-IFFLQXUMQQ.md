@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-IFFLQXUMQQ
 kind: occurrence
-title: P-MKF4V at UGA real-analysis Spring 2020
+title: P-XL7MP at UGA real-analysis Spring 2020
 classification:
   areas:
   - real-analysis
@@ -13,7 +13,7 @@ classification:
   - series-of-functions
 relations:
 - kind: instance-of
-  target: P-MKF4V
+  target: P-XL7MP
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2020
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-MKF4V]] appeared at UGA real-analysis Spring 2020.
+[[P-XL7MP]] appeared at UGA real-analysis Spring 2020.
 :::

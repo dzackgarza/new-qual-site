@@ -13,7 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
-  problems: []
+  problems:
+  - P-MMCHV
+  - P-OPH7A
+  - P-JMOGT
+  - P-L7G3D
+  - P-LG4GL
+  - P-K6CAP
   date:
     kind: academic-term
     term: fall
@@ -21,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Fall 2016. The paper is the current Quals posting `Real Analysis [Fall 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BFall%C2%A02016%5D.docx`). The catalog PDF `RealAnalysis_Fall2016.pdf` currently 404s. `problems:` is left empty: exam #1 matches `P-MMCHV`.
+UGA real-analysis Fall 2016. The paper is the current Quals posting `Real Analysis [Fall 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BFall%C2%A02016%5D.docx`). The catalog PDF `RealAnalysis_Fall2016.pdf` currently 404s. The list is the sitting order on that paper.
 :::

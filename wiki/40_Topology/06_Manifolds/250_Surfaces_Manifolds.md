@@ -1,3 +1,7 @@
+---
+order: 250
+---
+
 # Surfaces and Manifolds
 
 :::{.remark}
@@ -40,16 +44,31 @@ Examples, general procedure?
 
 [[PR-QV4U5]]
 
-:::{.proof}
-Todo
+:::{.proof title="Inclusion-exclusion for $\chi$"}
+Assume $U,V,U\cap V,X$ have finitely generated homology, so that Euler characteristics are defined.
+Mayer–Vietoris is the long exact sequence
+\[
+\cdots
+\to H_n(U\cap V)
+\to H_n(U)\oplus H_n(V)
+\to H_n(X)
+\to H_{n-1}(U\cap V)
+\to \cdots
+.\]
+For any long exact sequence of finitely generated abelian groups the alternating sum of ranks vanishes, so
+\[
+\chi(U\cap V) - \bigl(\chi(U)+\chi(V)\bigr) + \chi(X)
+= 0
+,\]
+which is the stated identity.
 
 :::
-
 
 [[C-CT2NX]]
 
 :::{.proof}
-Set $U= A, B=V$, then by definition of the connect sum, $A\cap B = \SS^2$ where $\chi(\SS^2) = 2$
+Set $U\simeq A$ and $V\simeq B$ so that $U\cap V\simeq S^2$.
+Inclusion-exclusion then gives $\chi(A\# B)=\chi(A)+\chi(B)-\chi(S^2)=\chi(A)+\chi(B)-2$.
 
 :::
 
@@ -57,19 +76,33 @@ Set $U= A, B=V$, then by definition of the connect sum, $A\cap B = \SS^2$ where 
 
 [[PR-LIXWH]]
 
-:::{.proof}
-Todo
+:::{.proof title="Klein bottle as two projective planes"}
+Removing an open disc from $\RP^2$ leaves a Möbius strip (the projective plane is a Möbius strip with a disc glued along the boundary).
+The connected sum $\RP^2\#\RP^2$ is therefore two Möbius strips glued along their boundary circles.
+That gluing is the standard decomposition of the Klein bottle: $\KK$ is two Möbius bands identified along $\partial$.
 
 :::
-
 
 [[PR-BDH3V]]
 
-:::{.proof}
-Todo
+:::{.proof title="Crosscap plus Klein versus crosscap plus torus"}
+The classification theorem [[T-NBARV]] includes the relation $3\RP^2 = \RP^2 \# \TT^2$.
+From [[PR-LIXWH]], $\KK\cong \RP^2\#\RP^2$, so
+\[
+\RP^2 \# \KK
+\cong \RP^2 \# \RP^2 \# \RP^2
+\cong \RP^2 \# \TT^2
+.\]
+Equivalently: both sides are closed nonorientable surfaces with
+\[
+\chi(\RP^2\#\KK)
+= 1+0-2
+= -1
+= \chi(\RP^2\#\TT^2)
+,\]
+and there is a unique such surface up to homeomorphism.
 
 :::
-
 
 ## Manifolds
 
@@ -89,19 +122,25 @@ Can use point-set style techniques like removing points, i.e. $H_1(X, X-\pt)$; t
 
 [[PR-TU4G5]]
 
-:::{.proof title="?"}
-Todo.
-Uses Poincaré duality?
+:::{.proof title="Odd-dimensional closed manifolds"}
+Work with rational homology, so Poincaré duality reads $H^k(M;\QQ)\cong H_{n-k}(M;\QQ)$ and the Betti numbers satisfy $b_k(M)=b_{n-k}(M)$.
+Then
+\[
+\chi(M)
+= \sum_{k=0}^n (-1)^k b_k
+= \sum_{k=0}^n (-1)^k b_{n-k}
+= (-1)^n \sum_{k=0}^n (-1)^{n-k} b_{n-k}
+= (-1)^n \chi(M)
+.\]
+If $n$ is odd then $\chi(M)=-\chi(M)$, so $\chi(M)=0$.
 
 :::
-
 
 [[PR-3FB24]]
 
 [[PR-BQKHS]]
 
 [[T-QNYSB]]
-
 
 ### 3-Manifolds, and Knot Complements
 
@@ -114,11 +153,28 @@ Every $\CC\dash$manifold is canonically orientable.
 
 [[PR-6HORN]]
 
-:::{.proof title="?"}
-Todo
+:::{.proof title="Knot complements"}
+Papakyriakopoulos's sphere theorem implies that an irreducible orientable $3$-manifold with infinite fundamental group is aspherical.
+A knot complement $S^3\setminus K$ is an open irreducible $3$-manifold with $\pi_1$ infinite (a knot group is never trivial), so $\pi_j(S^3\setminus K)=0$ for $j\geq 2$: it is a $K(\pi,1)$.
+
+For the wedge: $\RR^3\setminus K$ is $S^3\setminus (K\cup\theset{\infty})$.
+A small sphere about the point at infinity is homotopically independent of the knot complement, and
+\[
+\RR^3\setminus K
+\simeq
+(S^3\setminus K) \vee S^2
+.\]
+
+If $K$ is nullhomologous in a $3$-manifold $X$, Mayer–Vietoris for $X = \bigl(X\setminus\nu(K)\bigr)\cup \nu(K)$ has intersection a torus.
+The solid torus $\nu(K)\simeq S^1$ kills the meridian, while $[K]=0$ in $H_1(X)$ means the longitude dies in $H_1(X)$.
+The remaining generator of $H_1(T^2)$ survives in $H_1(X\setminus\nu(K))$ as a $\ZZ$ factor, and
+\[
+H_1\bigl(X\setminus\nu(K)\bigr)
+\cong
+H_1(X)\times\ZZ
+.\]
 
 :::
-
 
 [[PR-WCHFF]]
 

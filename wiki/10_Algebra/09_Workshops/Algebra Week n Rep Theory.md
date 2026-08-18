@@ -1,11 +1,19 @@
-Tags: 
-#qual_algebra #qualifying_exam 
+---
+order: 100005
+---
 
 - Representations are modules
+
 - Simple
+
 - Semisimple
+
 - Irreducible
+
 - Indecomposable
+
 - Maschke's theorem
+
 - Schur's lemma
+
 - Character tables

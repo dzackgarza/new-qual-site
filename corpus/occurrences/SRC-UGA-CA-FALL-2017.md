@@ -13,7 +13,14 @@ payload:
   source_kind: university-exam
   institution: uga
   area: complex-analysis
-  problems: []
+  problems:
+  - P-8CA01
+  - P-8CA02
+  - P-8CA03
+  - P-8CA04
+  - P-8CA05
+  - P-8CA06
+  - P-8CA07
   date:
     kind: academic-term
     term: fall
@@ -21,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2017. Official department PDF: <https://www.math.uga.edu/sites/default/files/ComplexAnaQual2017.pdf> (404). The paper is the current Quals posting under `https://www.math.uga.edu/sites/default/files/Quals/`. `problems:` is empty because exam items #1–#7 have no matching P-card ($w=z^2$ images of $y=\sqrt{3}x$ and $x+y=1$; mean-value formula and maximum modulus; uniform limits of analytic series on a star-shaped domain; Laurent series of $(z-\sin z)/z^3$ and $z/((z+1)(z+2))$; $\int_0^\infty\cos(5x)/(x^2+1)\,dx$; Schwarz bounds for a zero of order $m$; power series with strictly decreasing coefficients bounded below).
+UGA complex-analysis Fall 2017. The paper is the current Quals posting `Complex Analysis [Fall 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BFall%C2%A02017%5D.docx`). The catalog PDF `https://www.math.uga.edu/sites/default/files/ComplexAnaQual2017.pdf` currently 404s. The list is the sitting order on that paper.
 :::

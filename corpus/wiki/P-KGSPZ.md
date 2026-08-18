@@ -15,7 +15,7 @@ solved: true
 ---
 
 ::: problem
-Let $(X, \mathcal M, \mu)$ be a measure space and suppose $f$ is a measurable function on $X$.
+Let $(X, \mathcal M, \mu)$ be a finite measure space and suppose $f$ is a non-negative measurable function on $X$.
 Show that
 $$
 \lim _{n \rightarrow \infty} \int_{X} f^{n} ~d \mu =

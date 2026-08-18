@@ -12,10 +12,15 @@ classification:
   - matrices
 relations: []
 review: draft
-solved: false
+solved: true
 ---
 
 ::: problem
+Let $V$ be a finite-dimensional $k\dash$vector space and $T:V\to V$ a non-invertible $k\dash$linear map.
+Show that there exists a $k\dash$linear map $S:V\to V$ with $T\circ S = 0$ but $S\circ T\neq 0$.
+:::
+
+::: {.solution}
 Suppose $T: V \to V$ is not invertible, then $\dim \im T < n$ and $\dim \ker T > 0$ by the Rank-Nullity theorem.
 This means that there is a nontrivial $\vector v \in \ker T$, and a nontrivial vector $\vector w \in \im(T)$, so let $S$ be the matrix formed by the outer product $\vector v \vector w^t$.
 Since $\vector w \in \im(T)$, fix an $\vector x_0$ with $T\vector x_0 = \vector w$; this is the vector the second computation will use.
@@ -23,7 +28,7 @@ Since $\vector w \in \im(T)$, fix an $\vector x_0$ with $T\vector x_0 = \vector 
 We then consider how $ST$ acts on vectors $\vector x$:
 
 \begin{align*}
-TS\vector x 
+TS\vector x
 &= T\vector v \vector w^t \vector x  \\
 &= (T\vector v )\vector w^t \vector x  \\
 &= \vector 0 \vector w^t \vector x \\
@@ -35,7 +40,7 @@ where $\mathbf{0_n}$ is the $n\times n$ matrix of all zeros.
 
 For the other order, evaluate at the specific vector $\vector x_0$:
 \begin{align*}
-ST\vector x_0 
+ST\vector x_0
 &= S \vector w \\
 &= \vector v \vector w^t \vector w \\
 &= \inner{\vector w}{\vector w} \vector v \\

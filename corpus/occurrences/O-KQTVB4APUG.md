@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-KQTVB4APUG
 kind: occurrence
-title: P-I2KZL at UGA complex-analysis Spring 2020
+title: P-CV2MR at UGA complex-analysis Spring 2020
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - counterexamples
 relations:
 - kind: instance-of
-  target: P-I2KZL
+  target: P-CV2MR
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2020
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-I2KZL]] appeared at UGA complex-analysis Spring 2020.
+[[P-CV2MR]] appeared at UGA complex-analysis Spring 2020.
 :::

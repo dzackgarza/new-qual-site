@@ -14,6 +14,9 @@ payload:
   institution: uga
   area: complex-analysis
   problems:
+  - P-8CB03
+  - P-8CB04
+  - P-8CB05
   - P-IZW2T
   - P-4ZZYV
   - P-YZBES
@@ -25,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2015. The paper is the current Quals posting `Complex Analysis [Fall 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #5 is listed as `P-4ZZYV`. Exam #6 is listed as `P-YZBES`. Exam #7 is listed as `P-YVNUD`; unused `P-CPLIB` and `P-MMAQ-6OFHCGNFSD` state the same item. Exam #1 ($\int_0^\infty\cos x/(1+x^4)\,dx$), #2 (compact convergence of analytic functions and their derivatives), and #3 (conformal map of the slit upper half-plane) have no matching P-card.
+UGA complex-analysis Fall 2015. The paper is the current Quals posting `Complex Analysis [Fall 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BFall%C2%A02015%5D.docx`). The list is the sitting order on that paper.
 :::

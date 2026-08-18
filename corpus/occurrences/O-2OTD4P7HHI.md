@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-2OTD4P7HHI
 kind: occurrence
-title: P-KVE3S at UGA real-analysis Spring 2017
+title: P-KVE3S at UGA real-analysis January 2017
 classification:
   areas:
   - real-analysis
@@ -15,10 +15,10 @@ relations:
   target: P-KVE3S
 review: draft
 payload:
-  source: SRC-UGA-RA-SPRING-2017
+  source: SRC-UGA-RA-JANUARY-2017
   locator: "5"
 ---
 
 ::: remark
-[[P-KVE3S]] appeared at UGA real-analysis Spring 2017, problem 5.
+[[P-KVE3S]] appeared at UGA real-analysis January 2017, problem 5.
 :::

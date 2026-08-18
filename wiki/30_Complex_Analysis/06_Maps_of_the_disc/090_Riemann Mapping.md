@@ -1,3 +1,7 @@
+---
+order: 90
+---
+
 # Riemann Mapping
 
 :::{.slogan}
@@ -46,7 +50,6 @@ h'_w(w) &= {1\over 1 - \abs{w}^2}
 - Show $h\in \mcf$ by showing $h(z_0) = 0$, is analytic, and non-constant.
   Apply Hurwitz's theorem to conclude $h$ is injective as a uniform limit of injective functions.
 - Show $h$ is surjective by showing $\abs{h'(z_0)} \geq \abs{g'(z_0)}$ (contrapositive to earlier step).
-
 
 ![](../../../../assets/assets/figures/2021-12-14_16-34-14.png)
 

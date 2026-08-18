@@ -1,13 +1,14 @@
+---
+order: 16
+---
+
 # Counting Zeros and Poles
 
 ## Argument Principle
 
-
-
 [[D-IA5FS]]
 
 [[E-VI5ZS]]
-
 
 :::{.remark}
 Note that the logarithmic derivative picks up the valuation:
@@ -58,9 +59,7 @@ Make the change of variables $w = f(z)$, then $z=\gamma(t) \mapsto w = (f\circ \
 = {1\over 2\pi i} \int_{f\circ \gamma} {1\over w} \dw \da \Ind_{w=0} (f\circ \gamma)(w)
 .\]
 
-
 :::
-
 
 :::{.example title="Using the index version of the argument principle"}
 Let $f(z) = z^2 + z = z(z+1)$.
@@ -79,11 +78,7 @@ The number of zeros/poles are determined by a dominating function.
 
 :::
 
-
-
-
 ![](../../../../assets/assets/figures/2021-10-29_01-39-19.png)
-
 
 ![](../../../../assets/assets/figures/2021-10-29_01-39-43.png)
 
@@ -91,11 +86,7 @@ The number of zeros/poles are determined by a dominating function.
 [[E-XQ4BS]]
 [[C-FRF33]]
 
-
-
 [[C-GM57K]]
-
-
 
 [[C-YQUHR]]
 

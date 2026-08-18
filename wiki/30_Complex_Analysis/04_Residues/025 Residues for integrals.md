@@ -1,4 +1,5 @@
 ---
+order: 25
 sort: 025
 title: Residues for Integrals
 ---
@@ -98,7 +99,6 @@ If $f(z) \approx \cos(z), \sin(z), \tan(z), \cdots$: check if $\displaystyle\int
   \lim_{x\to 0} {x\ln(x) \over x^n + c} = 0 
   .\]
   Note that you can't drop the constant!
-
 
 - $\int_{\RR_{\geq 0}} f(x) \log(x)$: indented semicircular contours
 

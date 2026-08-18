@@ -142,7 +142,7 @@ status: in_progress
 
 ### $\sin$ in numerator
 
-[[P-5TA6H]]
+[[P-IP6QO]]
 
 ### $\sin$ in numerator
 
@@ -186,7 +186,7 @@ status: in_progress
 
 ### Tie's Extra Questions: Fall 2011
 
-[[P-ZOZJ5]]
+[[P-IP6QO]]
 
 ## Unsorted
 
@@ -206,7 +206,7 @@ status: in_progress
 
 ### Zeros using residue theorem
 
-[[P-C57FJ]]
+[[P-2ZMDH]]
 
 ### Tie's Extra Questions: Fall 2009
 

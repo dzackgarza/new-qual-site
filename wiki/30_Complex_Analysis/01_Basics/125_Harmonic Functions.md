@@ -10,9 +10,7 @@ order: 125
 
 [[D-OAFF5]]
 
-
 [[PR-UWGI6]]
-
 
 :::{.proof title="?"}
 Define
@@ -38,14 +36,10 @@ F(r) = {1\over 2\pi} \int_{[-\pi, \pi]} u(z_0 + re^{it}) \ds \too \int_{[-\pi, \
 
 :::
 
-
 :::{.remark}
 An important use: if $u$ satisfies the mean value property on every disc and is continuous, then $u$ is automatically harmonic.
 
 :::
-
-
-
 
 ## Exercises: Harmonic Functions
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-OSEMRDIM73
 kind: occurrence
-title: P-4QIWN at UGA complex-analysis Fall 2015
+title: P-YZ4WV at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - zeros
 relations:
 - kind: instance-of
-  target: P-4QIWN
+  target: P-YZ4WV
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2015
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-4QIWN]] appeared at UGA complex-analysis Fall 2015.
+[[P-YZ4WV]] appeared at UGA complex-analysis Fall 2015.
 :::

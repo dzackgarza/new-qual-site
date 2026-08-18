@@ -33,37 +33,52 @@ where
 .\]
 :::
 
-:::{.problem title="Alternative version"}
-Let $f$ be a continuous function in the region
-$$
-D=\{z \suchthat  \abs{z}>R, 0\leq \arg z\leq \theta\}\quad\text{where}\quad 1\leq \theta \leq 2\pi
-.$$ 
-If there exists $k$ such that
-$\displaystyle{\lim_{z\to\infty} zf(z)=k}$ for $z$ in the region $D$.
-Show that 
-$$
-\lim_{R'\to\infty} \int_{L} f(z) dz=i\theta k
-,$$ 
-where $L$ is the part of the circle $|z|=R'$ which lies in the region $D$.
+::: {.solution}
+> **AI-Generated Solution** (Gemini 3.7 Flash)
 
-:::
+**Goal:** Let $S = \{z \in \mathbb{C} : 0 < |z-a| \leq R, 0 \leq \arg(z-a) \leq \beta_0\}$ with $0 < \beta_0 \leq 2\pi$.
+Let $f: S \to \mathbb{C}$ be continuous with $\lim_{z \to a, z \in S} (z-a) f(z) = A \in \mathbb{C}$.
+Prove that along the circular arcs $\gamma_r(t) = a + r e^{it}$ ($t \in [0, \beta_0]$), $$\lim_{r \to 0^+} \int_{\gamma_r} f(z) \, dz = i A \beta_0.$$
 
-:::{.solution}
-Without loss of generality take $a=0$.
-Since $zf(z) \to A$ as $z\to 0$, $z=0$ is a simple pole of $f$ and we can write $f(z) = c_{-1}z\inv + c_0 + c_1z + \cdots$.
-Then
-\[
-\int_{\gamma_r} f(z)\dz 
-&= \int_{\gamma_r} \sum_{k\geq -1} c_k z^k \dz \\
-&= \sum_{k\geq -1} c_k \int_{\gamma_r} z^k \dz \\
-&= c_{-1}\int_{\gamma_r}{1\over z}\dz \\
-&= c_{-1}\int_{0}^{\beta_0} {1\over re^{i t}} ire^{it} \dt \qquad z= re^{it}, \dz = ire^{it} \dt \\
-&= i c_{-1}\int_{0}^{\beta_0} \dt \\
-&= i c_{-1}\beta_0
-.\]
-Now use that
-\[
-zf(z) = c_{-1} + c_0z + \cdots \convergesto{z\to 0} c_{-1} = A
-,\]
-so the integral is $iA\beta_0$.
+* * *
+
+### Step 1: Parametrize the Integral and Isolate the Main Term
+
+<1>1. **Parametrize $\int_{\gamma_r} \frac{A}{z-a}\,dz$.** <2>1. With $\gamma_r(t) = a + r e^{it}$ for $t \in [0, \beta_0]$, $dz = i r e^{it} dt$.
+*Proof:* Derivative of parametrization.
+<2>2. The integral of the simple pole term is: $$\int_{\gamma_r} \frac{A}{z-a} \, dz = \int_0^{\beta_0} \frac{A}{r e^{it}} \cdot i r e^{it} \, dt = i A \int_0^{\beta_0} dt = i A \beta_0.$$ *Proof:* Direct cancellation of $r e^{it}$ and integration of constant $1$.
+<2>3. Q.E.D.
+
+<1>2. **Express $f(z)$ as $\frac{A}{z-a} + \frac{g(z)}{z-a}$ where $g(z) = (z-a)f(z) - A$.** <2>1. Define $g(z) = (z-a)f(z) - A$ for $z \in S$.
+*Proof:* Algebraic definition.
+<2>2. By the hypothesis $\lim_{z \to a, z \in S} (z-a)f(z) = A$, we have $\lim_{z \to a, z \in S} g(z) = 0$.
+*Proof:* Definition of limit.
+<2>3. For any $z \in S$, $f(z) = \frac{A + g(z)}{z-a} = \frac{A}{z-a} + \frac{g(z)}{z-a}$.
+*Proof:* Dividing $g(z) + A = (z-a)f(z)$ by $z-a \neq 0$.
+<2>4. Q.E.D.
+
+* * *
+
+### Step 2: Bound the Error Term
+
+<1>3. **Show that $\lim_{r \to 0^+} \int_{\gamma_r} \frac{g(z)}{z-a}\,dz = 0$.** <2>1. Let $\varepsilon > 0$ be given.
+*Proof:* Standard epsilon-delta argument.
+<2>2. Since $\lim_{z \to a, z \in S} g(z) = 0$, there exists $\delta > 0$ (with $\delta \leq R$) such that for all $z \in S$ with $0 < |z-a| < \delta$, $|g(z)| < \frac{\varepsilon}{\beta_0}$.
+*Proof:* Definition of limit of a function.
+<2>3. For any $r \in (0, \delta)$, the entire arc $\gamma_r$ is contained in $\{z \in S : 0 < |z-a| = r < \delta\}$.
+*Proof:* Modulus of $z - a = r e^{it}$ is $r < \delta$.
+<2>4. On $\gamma_r$, $\left| \frac{g(z)}{z-a} \right| = \frac{|g(z)|}{r} < \frac{\varepsilon}{\beta_0 r}$.
+*Proof:* Division by $|z-a| = r$.
+<2>5. The length of the arc $\gamma_r$ is $L(\gamma_r) = r \beta_0$.
+*Proof:* Arc length of circular sector of angle $\beta_0$ and radius $r$.
+<2>6. By the $ML$-inequality: $$\left| \int_{\gamma_r} \frac{g(z)}{z-a} \, dz \right| \leq \left( \sup_{z \in \gamma_r} \left| \frac{g(z)}{z-a} \right| \right) \cdot L(\gamma_r) \leq \frac{\varepsilon}{\beta_0 r} \cdot (r \beta_0) = \varepsilon.$$ *Proof:* $ML$-inequality for contour integrals.
+<2>7. Since $\varepsilon > 0$ was arbitrary, $\lim_{r \to 0^+} \int_{\gamma_r} \frac{g(z)}{z-a} \, dz = 0$.
+*Proof:* Squeeze theorem / epsilon-delta definition of limit.
+<2>8. Q.E.D.
+
+* * *
+
+### Step 3: Conclusion
+
+<1>4. **$\lim_{r \to 0^+} \int_{\gamma_r} f(z)\,dz = i A \beta_0$.** <2>1. By linearity of the line integral: $$\int_{\gamma_r} f(z) \, dz = \int_{\gamma_r} \frac{A}{z-a} \, dz + \int_{\gamma_r} \frac{g(z)}{z-a} \, dz = i A \beta_0 + \int_{\gamma_r} \frac{g(z)}{z-a} \, dz.$$ *Proof:* Follows from <1>1.<2>2 and <1>2.<2>3. <2>2. Taking the limit as $r \to 0^+$ on both sides: $$\lim_{r \to 0^+} \int_{\gamma_r} f(z) \, dz = i A \beta_0 + \lim_{r \to 0^+} \int_{\gamma_r} \frac{g(z)}{z-a} \, dz = i A \beta_0 + 0 = i A \beta_0.$$ *Proof:* Follows from <1>3.<2>7. <2>3. Q.E.D.
 :::

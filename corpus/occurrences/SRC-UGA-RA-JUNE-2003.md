@@ -13,11 +13,14 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-VACDU
   date:
     kind: year
     year: 2003
 ---
 
 ::: remark
-UGA real-analysis June 2003. Recorded from the source corpus' exam-term annotations. No Quals posting `Real Analysis [June 2003].docx` (ordinary space or NBSP) is on `https://www.math.uga.edu/sites/default/files/Quals/`; the department previous-years table lists Fall 2003 and Spring 2003 Real Analysis as n/a. `problems:` is left empty: the exam paper was not found.
+UGA real-analysis June 2003. Extra_Questions (`assets/ws9/qual-wiki/native/20_Real_Analysis/600_Qual_Questions_UGA/Extra_Questions.md.source`) has item (June 2003, 1b,c) only; part 1a and items 2 and later were not in Extra_Questions, `wiki/20_Real_Analysis/08_Quals/`, `.tmp-uga-ra-empty/` (`analysis_2003-2007.txt`, `analysis_2008-2013.txt`, `analysis_2014-2016.txt`), or the other `600_Qual_Questions_UGA` files.
+The prefix is exam-number order from Extra_Questions.
 :::

@@ -54,7 +54,7 @@ order: 80
 
 ### Fall 2019 Final #6
 
-[[P-2DH4S]]
+[[P-OX3MY]]
 
 ### Fall 2019 Final #7
 
@@ -96,7 +96,7 @@ order: 80
 
 ### Fall 2016 #6
 
-[[P-GP7TS]]
+[[P-DURCM]]
 
 ### Spring 2016 #4
 

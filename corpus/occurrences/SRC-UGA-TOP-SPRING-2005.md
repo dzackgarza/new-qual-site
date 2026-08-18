@@ -18,7 +18,10 @@ payload:
   - P-2HMGE
   - P-A5CFD
   - P-LLCQX
+  - P-8TS01
   - P-RZFB4
+  - P-8TS02
+  - P-8TS03
   - P-E247B
   date:
     kind: academic-term
@@ -27,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2005. The paper is the current Quals posting `Topology [Spring 2005].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #5 (a pentagon with identified edges: $\pi_1$ and the universal cover) has no matching P-card. Exam #7 (the covering $S^1\to S^1$ of degree $n$ is not null-homotopic) has no matching P-card. Exam #8 (an integer matrix induces a self-map of the torus, and maps homotopic to it) has no matching P-card.
+UGA topology Spring 2005. The paper is the current Quals posting `Topology [Spring 2005].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

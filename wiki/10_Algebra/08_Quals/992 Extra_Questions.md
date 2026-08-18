@@ -28,7 +28,7 @@ Source: a PDF whose author is not identified.
 
 ### Question 1.5
 
-[[P-TEFE7]]
+[[P-L7OQW]]
 
 ### Question 1.6.
 
@@ -938,7 +938,7 @@ Source: a PDF whose author is not identified.
 
 ### Question 6.47
 
-[[P-SZ22K]]
+[[P-OVRL2]]
 
 ### Question 6.48
 

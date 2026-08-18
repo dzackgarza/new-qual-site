@@ -13,6 +13,12 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-CFMLS
+  - P-6FHOE
+  - P-OFICU
+  - P-SAIVF
+  - P-P6D6X
   date:
     kind: academic-term
     term: spring
@@ -20,5 +26,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2018. Recorded from the source corpus' exam-term annotations. `problems:` is left empty: the current Quals posting `Real Analysis [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02018%5D.docx`) is headed January 2018 and is the January 2018 paper, not a distinct Spring sitting. No other Quals file for this card. Native Real Analysis material under `assets/ws9/` is by topic, not this sitting. Order was not taken from occurrence cards.
+UGA real-analysis Spring 2018. The sitting order is the migrated Qual Progress TOC in `assets/ws9/qual-wiki/native/20_Real_Analysis/Real Analysis Qual Progress.md` (same blocks on `wiki/90_Archives/Tracking/Real Analysis Qual Progress.md` and the `[[P-…]]` links under Spring 2018.1–.5 in `wiki/20_Real_Analysis/08_Quals/`). That is the same five items as `SRC-UGA-RA-JANUARY-2018`.
 :::

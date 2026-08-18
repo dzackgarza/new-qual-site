@@ -13,7 +13,13 @@ payload:
   source_kind: university-exam
   institution: jhu
   area: real-analysis
-  problems: []
+  problems:
+  - P-8XT12
+  - P-8XT13
+  - P-MW6OS
+  - P-8XT14
+  - P-GKGSD
+  - P-JKYJU
   date:
     kind: academic-term
     term: fall
@@ -21,5 +27,5 @@ payload:
 ---
 
 ::: remark
-JHU real-analysis Fall 2016. Recorded from the source corpus' exam-term annotations. The paper is the sitting headed `Qualifying Exam - Analysis - Fall 2016` in `assets/attachments/JHU Years of Analysis Exams.pdf` (also https://math.jhu.edu/gradexam/analysisexams.pdf). `problems:` is left empty: exam #1 ($L^2([0,1])$ convergence implies an a.e. subsequence) has no matching P- card. Unique matches later on the paper are #3 `P-MW6OS`, #5 `P-GKGSD`, #6 `P-JKYJU`.
+JHU real-analysis Fall 2016. The paper is the sitting headed `Qualifying Exam - Analysis - Fall 2016` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). The list is the sitting order on that paper.
 :::

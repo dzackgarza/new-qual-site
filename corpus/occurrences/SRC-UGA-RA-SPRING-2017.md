@@ -13,6 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-TPZF3
+  - P-25AFH
+  - P-4RXD2
+  - P-QNJ6C
+  - P-BXD6O
+  - P-KVE3S
   date:
     kind: academic-term
     term: spring
@@ -20,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2017. Recorded from the source corpus' exam-term annotations. `problems:` is left empty: the current Quals posting `Real Analysis [Spring 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02017%5D.docx`) is headed January 2017 and is the January 2017 paper, not a distinct Spring sitting. No other Quals file for this card. Native Real Analysis material under `assets/ws9/` is by topic, not this sitting. Order was not taken from occurrence cards.
+UGA real-analysis Spring 2017. The sitting order is the migrated Qual Progress TOC in `assets/ws9/qual-wiki/native/20_Real_Analysis/Real Analysis Qual Progress.md` (same blocks on `wiki/90_Archives/Tracking/Real Analysis Qual Progress.md` and the `[[P-…]]` links under Spring 2017.1–.6 in `wiki/20_Real_Analysis/08_Quals/`). That is the same six items as `SRC-UGA-RA-JANUARY-2017`. Extra_Questions also tags (Spring 2017 7) as `P-ZCPFV`; Qual Progress stops at six, so that tag is named here and not appended.
 :::

@@ -35,4 +35,8 @@ and similarly
 so just adjust the original $\eps$ chosen by the continuity of $f$ to $\eps/2$.
 :::
 
+:::{.solution title="Sequential compactness"}
+Suppose, toward a contradiction, that $f$ is not uniformly continuous on a compact metric space $K$. Then there is $\eps > 0$ such that for every $n \in \NN$ there exist $x_n, y_n \in K$ with $d(x_n, y_n) < 1/n$ but $|f(x_n) - f(y_n)| \ge \eps$. Compactness of $K$ gives a subsequence $x_{n_j} \to x \in K$; then $d(y_{n_j}, x) \le d(y_{n_j}, x_{n_j}) + d(x_{n_j}, x) \to 0$, so $y_{n_j} \to x$ as well. Continuity of $f$ at $x$ forces $|f(x_{n_j}) - f(y_{n_j})| \to 0$, contradicting $|f(x_{n_j}) - f(y_{n_j})| \ge \eps$.
+:::
+
 

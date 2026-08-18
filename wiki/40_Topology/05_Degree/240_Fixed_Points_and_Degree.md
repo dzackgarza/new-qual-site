@@ -1,3 +1,7 @@
+---
+order: 240
+---
+
 # Fixed Points and Degree Theory
 
 :::{.fact title="Useful properties of the degree of a map between spheres"}
@@ -27,9 +31,7 @@ H_{x_i}: \RR^{n+1} &\to \RR^{n+1} \\
 
 :::
 
-
 [[E-EYILL]]
-
 
 [[E-ZXKDY]]
 [[T-BX4LD]]
@@ -39,7 +41,6 @@ H_{x_i}: \RR^{n+1} &\to \RR^{n+1} \\
 :::{.proof title="?"}
 
 :::
-
 
 [[T-VQTR6]]
 

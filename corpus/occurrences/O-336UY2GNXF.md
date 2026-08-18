@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-336UY2GNXF
 kind: occurrence
-title: P-ZOZJ5 at UGA complex-analysis Fall 2011
+title: P-IP6QO at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-ZOZJ5
+  target: P-IP6QO
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2011
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-ZOZJ5]] appeared at UGA complex-analysis Fall 2011.
+[[P-IP6QO]] appeared at UGA complex-analysis Fall 2011.
 :::

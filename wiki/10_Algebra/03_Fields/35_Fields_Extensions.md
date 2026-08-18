@@ -1,3 +1,7 @@
+---
+order: 35
+---
+
 # Field Theory: Extensions and Towers
 
 ## Basics
@@ -50,7 +54,6 @@ But then \( \alpha \) is the root of the polynomial \( f \).
 
 - $\QQ(\zeta_k)$ is normal for $\zeta_k$ any primitive $k$th root of unity.
 
-
 - A normal non-separable extension: $\FF_p(x, y) \slice{\FF_p (x^p, y^p)}$.
   This has finite degree $p^2$ but infinitely many subfields?
 
@@ -91,7 +94,6 @@ $\impliedby$:
   But $[L(a): L] = 1$.
 
 :::
-
 
 :::{.proposition}
 $\abs{\aut(L/k)} \leq [L: k]$ with equality precisely when $L/k$ is normal.
@@ -295,7 +297,6 @@ $\implies$:
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsOSxbMSwwLCJMIl0sWzEsMiwiSyJdLFsxLDQsImsiXSxbMywzLCJGXFxkYSBrKFxcYWxwaGEsIFMpIFxcaW50ZXJzZWN0IEsiXSxbMywxLCJrKFxcYWxwaGEsIFMpIl0sWzAsMCwiXFxhbHBoYVxcaW4iXSxbMCwyLCJmXFxpbiBLW3hdIl0sWzQsMywiZlxcaW4gRlt4XSJdLFs0LDEsIlxcbmkgXFxhbHBoYSJdLFsyLDMsInMiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDQsInMiLDIseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFsxLDAsInMiLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6ImJvdHRvbSJ9fX1dLFszLDEsIiIsMSx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoiYm90dG9tIn19fV0sWzIsMSwicyIsMCx7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoiYm90dG9tIn19fV0sWzQsMCwiIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJib3R0b20ifX19XV0=)
 
-
 - Let $f(x) \da \min_{\alpha, K}(x)$ be the minimal polynomial of $\alpha$ *over the intermediate extension* $K$, which by assumption is separable since $L/K$ is separable.
   - So $f\in K[x]$, and letting $S$ be the finite set of coefficients of $f$, $S \subseteq K$.
   - Note that each coefficient $s\in S$ is separable over $k$ since $K/k$ is separable by assumption.
@@ -303,7 +304,6 @@ $\implies$:
   Note $K/k$ is separable and $F \subseteq K$, so $F/k$ is separable.
 - Moreover $k(\alpha, S)/F$ is separable, since the minimal polynomial of $\alpha$ over $F$ is still $f$. 
 - Now $k(\alpha, S) / F /K$ is a tower of finite extensions where $k(\alpha, S)/F$ and $F/k$ are separable, so this reduces to the finite case.
-
 
 :::
 
@@ -324,7 +324,6 @@ $\implies$:
 - Now use the tower $F(S)/F/k$ to obtain $F(S)/k$ separable, which is $EF/k$.
 
 :::
-
 
 ## Galois Extensions
 
@@ -371,12 +370,9 @@ Since $L/K$ is Galois, every $f\in \Gal(K/k)$ lifts to $\Gal(L/k)$, making $\rho
 
 :::
 
-
-
 ## Fundamental Theorem of Galois Theory
 
 [[T-NLPZY]]
-
 
 :::{.remark}
 A trick for remembering the degree/index correspondence:
@@ -399,7 +395,6 @@ A trick for remembering the degree/index correspondence:
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMCwyLCJFIl0sWzAsMCwiSyJdLFswLDQsIkYiXSxbNCwwLCIxIl0sWzQsMiwiSCBcXGRhIFxcR2FsKEsvRSlcXGhzcGFjZXs0ZW19Il0sWzQsNCwiRyBcXGRhIFxcR2FsKEsvRilcXGhzcGFjZXs0ZW19Il0sWzIsMCwiW0U6Rl0iLDAseyJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFswLDEsIltLOkVdIiwwLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbMiwxLCJbSzpGXSIsMix7ImN1cnZlIjo1LCJzdHlsZSI6eyJ0YWlsIjp7Im5hbWUiOiJob29rIiwic2lkZSI6InRvcCJ9fX1dLFszLDQsIltIOjFdIiwyLHsic3R5bGUiOnsidGFpbCI6eyJuYW1lIjoiaG9vayIsInNpZGUiOiJ0b3AifX19XSxbNCw1LCJbRzpIXSIsMix7InN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzMsNSwiW0c6MV0iLDAseyJjdXJ2ZSI6LTUsInN0eWxlIjp7InRhaWwiOnsibmFtZSI6Imhvb2siLCJzaWRlIjoidG9wIn19fV0sWzgsNCwiXFxHYWwoSy9cXHdhaXQpIiwyLHsib2Zmc2V0Ijo1LCJzaG9ydGVuIjp7InNvdXJjZSI6MjB9fV1d)
 
 :::
-
 
 [[T-SGY3O]]
 
@@ -459,19 +454,16 @@ For $L/F/k$: $L/k$ normal/algebraic/Galois $\implies L/F$ normal/algebraic/Galoi
 
 :::
 
-
 :::{.remark}
 If $L/K/k$ with $\alpha$ algebraic over $L$, then $\alpha$ is algebraic over $K$ and $\min_{\alpha, L}$ divides $\min_{\alpha, K}$ (so minimal polynomials only get smaller in extensions).
 
 :::
-
 
 ### Normal Extensions
 
 [[C-4GQK3]]
 
 #### Issues with Normal Towers
-
 
 :::{.example title="Normal extensions are not transitive: failure of lower transitivity, forward implication"}
 One can similarly produce towers where the total extension is normal but the lower iterate is not normal: take

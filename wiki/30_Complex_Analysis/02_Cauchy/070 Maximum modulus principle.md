@@ -1,3 +1,7 @@
+---
+order: 70
+---
+
 # Maximum modulus principle
 
 [[T-BYNL5]]

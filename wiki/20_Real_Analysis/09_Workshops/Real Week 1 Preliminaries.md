@@ -1,8 +1,7 @@
 ---
+order: 100001
 title: "Real Analysis Qual Prep Week 1: Preliminaries"
 ---
-
-Tags: #qualifying_exam #active_projects #qual_real_analysis
 
 # Week 1: Preliminaries
 

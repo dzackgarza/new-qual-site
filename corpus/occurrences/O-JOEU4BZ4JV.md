@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-JOEU4BZ4JV
 kind: occurrence
-title: P-BGJFV at UGA complex-analysis Spring 2015
+title: P-OOVED at UGA complex-analysis Spring 2015
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - zeros
 relations:
 - kind: instance-of
-  target: P-BGJFV
+  target: P-OOVED
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-BGJFV]] appeared at UGA complex-analysis Spring 2015.
+[[P-OOVED]] appeared at UGA complex-analysis Spring 2015.
 :::

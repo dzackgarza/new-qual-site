@@ -14,7 +14,11 @@ payload:
   institution: uga
   area: complex-analysis
   problems:
+  - P-8CB06
   - P-34ALC
+  - P-ZUQU7
+  - P-BFLEH
+  - P-VQUPX
   - P-ZNVSP
   date:
     kind: academic-term
@@ -23,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Spring 2011. The paper is the current Quals posting `Complex Analysis [Spring 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (headed January 2011). Exam #2 is listed as `P-34ALC`. Exam #6 is listed as `P-ZNVSP`. Exam #1 (real differentiability), #3 (conformal maps of $G$ onto $\mathbb{D}$), #4 ($\int_0^\infty(\cos x-\cos 4x)/x^2\,dx$), and #5 (Taylor coefficients and uniform convergence of the power series) have no matching P-card.
+UGA complex-analysis Spring 2011. The paper is the current Quals posting `Complex Analysis [Spring 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BSpring%C2%A02011%5D.docx`), headed January 2011. The list is the sitting order on that paper.
 :::

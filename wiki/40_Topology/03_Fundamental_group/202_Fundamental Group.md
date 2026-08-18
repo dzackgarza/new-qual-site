@@ -1,3 +1,7 @@
+---
+order: 202
+---
+
 # Theorems: Algebraic Topology
 
 ## General Homotopies
@@ -22,7 +26,6 @@ So let $f, g: Z \into X$ be any continuous functions into $X$. Then define $H: Z
 
 :::
 
-
 ## Fundamental Group
 
 ### Definition
@@ -34,16 +37,11 @@ Elements of the fundamental group are *homotopy classes of loops*, and every con
 
 :::
 
-
-
-
-
 ### Conjugacy in $\pi_{1}$:
 
 - See Hatcher 1.19, p.28
 - See Hatcher's proof that $\pi_{1}$ is a group
 - See change of basepoint map
-
 
 ### Calculating $\pi_1$ 
 
@@ -106,13 +104,10 @@ $\Leftarrow$: Suppose $\pi_{1}(X) = 0$. Then there is just one element in the fu
 
 :::
 
-
 :::{.fact}
 For a graph $G$, we always have $\pi_{1}(G) \cong \ZZ^n$ where $n = |E(G - T)|$, the complement of the set of edges in any maximal tree. Equivalently, $n = 1-\chi(G)$. Moreover, $X \homotopic \bigvee^n S^1$ in this case.
 
 :::
-
-
 
 ## General Homotopy Theory
 
@@ -137,12 +132,10 @@ Individual maps may not work: take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ whi
 
 [[T-HZUM7]]
 
-
 :::{.fact title="Unsorted facts about higher homotopy groups"}
 \envlist
 
 - $\pi_{i\geq 2}(X)$ is always abelian.
-
 
 	* $X$ simply connected $\implies \pi_{k}(X) \cong H_{k}(X)$ up to and including the first nonvanishing $H_{k}$
 
@@ -163,14 +156,11 @@ Individual maps may not work: take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ whi
 
 - In general, homotopy groups behave nicely under homotopy pull-backs (e.g., fibrations and products), but not homotopy push-outs (e.g., cofibrations and wedges). Homology is the opposite.
 
-
 - Constructing a $K(\pi, 1)$: since $\pi = \left< S \mid R\right> = F(S)/R$, take $\bigvee^{|S|} S^1 \union_{|R|} e^2$. In English, wedge a circle for each generator and attach spheres for relations.
-
 
 :::
 
 [^pullbacks]: More generally, in $\mathbf{Top}$, we can look at $A \from \pt \to B$ -- then $A\cross B$ is the pullback and $A \vee B$ is the pushout. In this case, homology $h: \mathbf{Top} \to \mathbf{Grp}$ takes pushouts to pullbacks but doesn't behave well with pullbacks. Similarly, while $\pi$ takes pullbacks to pullbacks, it doesn't behave nicely with pushouts.
-
 
 [^homotopyproduct]: This follows because $X\cross Y \surjects X$ is a fiber bundle, so use LES in homotopy and the fact that $\pi_{i\geq 2} \in \mathbf{Ab}$.
 

@@ -1,4 +1,5 @@
 ---
+order: 30
 sort: 025
 title: "Exercises: Contour integration" 
 ---
@@ -6,7 +7,6 @@ title: "Exercises: Contour integration"
 # Exercises: Contour Integration
 
 ## Residues
-
 
 [[E-QF7KI]]
 

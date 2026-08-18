@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-2HM4SUDA52
 kind: occurrence
-title: P-FKKSH at UGA real-analysis Spring 2016
+title: P-VXO5U at UGA real-analysis Spring 2016
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - limits
 relations:
 - kind: instance-of
-  target: P-FKKSH
+  target: P-VXO5U
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2016
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-FKKSH]] appeared at UGA real-analysis Spring 2016.
+[[P-VXO5U]] appeared at UGA real-analysis Spring 2016.
 :::

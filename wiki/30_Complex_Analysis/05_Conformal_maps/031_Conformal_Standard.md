@@ -1,4 +1,5 @@
 ---
+order: 31
 title: "Standard Examples: Conformal Maps"
 sort: 10
 ---
@@ -70,7 +71,6 @@ Pictures of the situation:
 
 ![](../../../../assets/assets/figures/2021-12-10_16-47-30.png)
 
-
 :::
 
 [[PR-3CDLG]]
@@ -97,7 +97,6 @@ In general, $z\mapsto z+z\inv$ has the following effects:
 - $\DD^c \intersect \HH$ is mapped to $\HH$
 - $\DD^c$ is mapped to $\CC\sm[-2, 2]$
 
-
 :::
 
 [[PR-IK6LA]]
@@ -105,6 +104,4 @@ In general, $z\mapsto z+z\inv$ has the following effects:
 [[PR-OTMIR]]
 
 [[PR-3LBLV]]
-
-
 

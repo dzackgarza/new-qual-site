@@ -1,12 +1,9 @@
 ---
+order: 100001
 title: "Algebra Qual Prep Week 1: Groups Warmup"
 ---
 
-Tags: #qual_algebra
-
 # Week 1: Finite Groups
-
-[See the Presentation Schedule](https://www.notion.so/df531651418e43a9918f8d6c0cc0c706)
 
 ## Week 1 Topics
 
@@ -37,7 +34,6 @@ Tags: #qual_algebra
 - Structure:
 	- Cyclic -> Abelian -> Nilpotent -> Solvable ->  All Groups
 
-
 ## Review Exercises 
 
 - State the definitions of the following:
@@ -63,7 +59,6 @@ For everything that follows, assume $G$ is a finite group.
 - $e$ or $e_G$ denotes the identity element of $G$.
 - Multiplicative notation is generally used everywhere to denote the (possibly noncommutative) binary operation
 - $G/H$ is the set of left cosets of $G$ by $H$.
-
 
 ### Cosets
 
@@ -107,4 +102,4 @@ For everything that follows, assume $G$ is a finite group.
 
 ## Qual Problems
 
-[[P-IC2GD]]
+[[P-4XOCE]]

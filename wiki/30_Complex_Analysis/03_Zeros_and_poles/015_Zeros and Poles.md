@@ -1,11 +1,14 @@
-# Zeros and Singularities
+---
+order: 15
+title: Zeros, poles, and examples
+---
 
+# Zeros, poles, and examples
 
 :::{.remark}
 On notation: for an analytic function $f$ expanded as a power series about $a$, write $v_a(f)$ as the $a\dash$adic valuation of $f$: expanding $f(z) = \sum_{k\in \ZZ} a_k (z-a)^k$ about $a$, define $v_a(f) = n$ iff $a_n\neq 0$ but $a_{\leq n} = 0$.
 
 :::
-
 
 [[D-VAXQT]]
 
@@ -52,8 +55,6 @@ A similar example: $\qty{z(z-1)}^{1\over 2}$ has two branch singularities at $z=
 
 :::
 
-
-
 [[T-LZ6KG]]
 
 :::{.proof title="?"}
@@ -69,18 +70,13 @@ This is valid for $z\neq z_0$, but the right-hand side is analytic. (?)
 
 ![](../../../../assets/assets/figures/2021-10-29_01-31-06.png)
 
-
 [[T-TNR7B]]
 
-
 [[D-65VIK]]
-
-
 
 [[D-R4BDD]]
 
 [[D-OUJVC]]
-
 
 [[D-VKP6N]]
 
@@ -101,24 +97,16 @@ and use that it's bounded to conclude that $z_0$ is either removable or a pole f
 
 :::
 
-
 [[D-BPBSQ]]
 
 [[D-7DFVJ]]
 
-
 [[T-UBWL2]]
-
 
 :::{.proof title="?"}
 Consider $f(z) - P(z)$, subtracting off the principal part at each pole $z_0$, to get a bounded entire function and apply Liouville.
 
 :::
-
-
-
-
-
 
 [[T-KOZO4]]
 

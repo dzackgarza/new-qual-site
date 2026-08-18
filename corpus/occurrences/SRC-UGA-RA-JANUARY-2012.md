@@ -13,6 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-8RA32
+  - P-8RA33
+  - P-8RA34
+  - P-8RA35
+  - P-8RA36
+  - P-8RA37
   date:
     kind: academic-term
     term: spring
@@ -20,5 +27,7 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis January 2012. Recorded from the source corpus' exam-term annotations. The paper is the current Quals posting `Real Analysis [Spring 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02012%5D.docx`), headed January 2012. `problems:` is left empty: exam #1 ($f_n(x)=x/(1+nx^2)$ converges uniformly, and $f'(x)=\lim f_n'(x)$ holds for $x\neq 0$ and fails at $x=0$) has no matching corpus problem card. `P-XQRCI` uses the same family but asks equicontinuity on compact intervals.
+UGA real-analysis January 2012. The paper is the current Quals posting `Real Analysis [Spring 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02012%5D.docx`), headed January 2012. The expected Quals files `Real Analysis [January 2012].docx` (regular space and NBSP) 404. Exam #1 uses $f_n(x)=x/(1+nx^2)$ for uniform convergence and interchange of derivatives; `P-XQRCI` asks equicontinuity of that family on compact intervals and was not used.
+`SRC-UGA-RA-SPRING-2012` lists the same six items.
+The list is the sitting order on that paper.
 :::

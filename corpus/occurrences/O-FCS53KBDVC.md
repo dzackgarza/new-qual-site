@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-FCS53KBDVC
 kind: occurrence
-title: P-CWQHP at Fall 2019 Midterm (algebra)
+title: P-KUA4E at Fall 2019 Midterm (algebra)
 classification:
   areas:
   - algebra
@@ -11,7 +11,7 @@ classification:
   - centralizers-and-normalizers
 relations:
 - kind: instance-of
-  target: P-CWQHP
+  target: P-KUA4E
 review: draft
 payload:
   source: SRC-ALG-ART-QHGA3N
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-CWQHP]] appeared at Fall 2019 Midterm (algebra).
+[[P-KUA4E]] appeared at Fall 2019 Midterm (algebra).
 :::

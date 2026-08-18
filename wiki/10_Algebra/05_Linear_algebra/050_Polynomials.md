@@ -1,3 +1,7 @@
+---
+order: 50
+---
+
 # Polynomials in Linear Algebra
 
 ## Using Canonical Forms
@@ -7,7 +11,6 @@
 [[L-Y5KNM]]
 
 [[PR-OF7ZW]]
-
 
 ## Minimal / Characteristic Polynomials
 
@@ -48,6 +51,4 @@ which forces $\min_A(\lambda_i) = 0$.
 ## Finding Minimal Polynomials
 
 [[PR-UFVPY]]
-
-
 

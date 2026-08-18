@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-IRTZP7SVCU
 kind: occurrence
-title: P-4KM5P at UGA complex-analysis Fall 2015
+title: P-YVNUD at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - fractional-linear-transformations
 relations:
 - kind: instance-of
-  target: P-4KM5P
+  target: P-YVNUD
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-4KM5P]] appeared at UGA complex-analysis Fall 2015.
+[[P-YVNUD]] appeared at UGA complex-analysis Fall 2015.
 :::

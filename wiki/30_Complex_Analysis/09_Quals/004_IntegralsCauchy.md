@@ -16,7 +16,7 @@ order: 4
 
 [[P-KGHOG]]
 
-[[P-GHVIO]]
+[[P-2DXZW]]
 
 [[P-OND4D]]
 
@@ -26,17 +26,17 @@ order: 4
 
 ## 10
 
-[[P-3W7LA]]
+[[P-2VQDC]]
 
 # Extra
 
 ## ?
 
-[[P-H4HKX]]
+[[P-JOGPB]]
 
 ### Tie's Extra Questions: Fall 2009
 
-[[P-ZX7FP]]
+[[P-TKF72]]
 
 ### Spring 2020 HW 2 #  2.6.5
 

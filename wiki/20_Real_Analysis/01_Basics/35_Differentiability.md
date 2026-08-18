@@ -28,9 +28,5 @@ f'(x) = 2x\sin\qty{1\over x^2 } - \qty{2\over x}\cos\qty{1\over x^2} \chi_{x\neq
 .\]
 now take the sequence $x_n \da 1/\sqrt{k\pi}$ to get $f'(x_n) = 2\sqrt{k\pi}(-1)^k \convergesto{n\to\infty}\infty$.
 
-
 :::
-
-
-
 

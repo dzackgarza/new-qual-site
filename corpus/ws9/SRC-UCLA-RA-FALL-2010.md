@@ -15,6 +15,17 @@ payload:
   area: real-analysis
   problems:
   - P-4KTFN
+  - P-8XT68
+  - P-AE7QC
+  - P-625QO
+  - P-CH37V
+  - P-J64FR
+  - P-8XT49
+  - P-YHXGO
+  - P-8XT69
+  - P-3A7RU
+  - P-8XT70
+  - P-8XT71
   date:
     kind: academic-term
     term: fall
@@ -22,5 +33,5 @@ payload:
 ---
 
 ::: remark
-UCLA real-analysis Fall 2010. The paper is https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-10F.pdf (ANALYSIS QUALIFYING EXAM, FALL 2010, twelve problems). Exam #1 is `P-4KTFN`. Exam #2 has no matching P-card, so the rest of the TOC is not written. Later unique cards exist for #3 `P-AE7QC`, #4 `P-625QO`, #5 `P-CH37V`, #6 `P-J64FR`, and #8 `P-YHXGO`.
+UCLA real-analysis Fall 2010. The paper is https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-10F.pdf (ANALYSIS QUALIFYING EXAM, FALL 2010). The list is the sitting order on that paper.
 :::

@@ -1,3 +1,7 @@
+---
+order: 20
+---
+
 # Argument Principle
 
 [[D-WHYOA]]
@@ -66,7 +70,6 @@ Make the change of variables $w = f(z)$, then $z=\gamma(t) \mapsto w = (f\circ \
 {1\over 2\pi i }\int_{\gamma} \logd f(z) \dz 
 = {1\over 2\pi i} \int_{f\circ \gamma} {1\over w} \dw \da \Index_{w=0} (f\circ \gamma)(w)
 .\]
-
 
 :::
 

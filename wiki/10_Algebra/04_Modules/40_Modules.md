@@ -1,3 +1,7 @@
+---
+order: 40
+---
+
 # Modules
 
 ## Definitions and Basics
@@ -6,13 +10,11 @@
 
 [[D-7563L]]
 
-
 [[PR-TAPZF]]
 
 [[D-JUYFQ]]
 
 [[PR-JBDUI]]
-
 
 :::{.remark}
 Quotients of modules are easier to reason about additively, writing $M/N = \ts{x + N}$ as cosets.
@@ -32,17 +34,14 @@ Then $(x + N) + (y + N) = (x+y) + N$ and $(x+N)(y+N) = (xy) + N$.
 
 [[PR-RIJSC]]
 
-
 ## Exact Sequences
 
 [[D-BJYH3]]
-
 
 :::{.remark}
 Note that $C\cong B/d_1(A)$ always, but $B$ is not a direct sum of the outer terms unless the sequence splits.
 
 :::
-
 
 [[D-3JJJN]]
 
@@ -227,7 +226,6 @@ Since $m \neq 0_R$, this forces $\alpha = 0_R$, which allows $\theset{m}$ to be 
 
 :::
 
-
 :::{.remark}
 This says every module $M$ decomposes as $M \cong F_M \oplus M_t$ where $F_M$ is free (and thus torsionfree) and $M_t$ is torsion, and moreover $F_M \cong M/M_t$.
 
@@ -239,7 +237,6 @@ This splits since $F$ is free and thus projective, so $F\cong M \oplus M_t$.
 
 :::
 
-
 ## Algebraic Properties
 
 [[D-B5X33]]
@@ -248,20 +245,13 @@ This splits since $F$ is free and thus projective, so $F\cong M \oplus M_t$.
 [[PR-BHUO6]]
 [[PR-TGFTL]]
 
-
 [[PR-LPJLD]]
-
 
 [[PR-5PDNQ]]
 
-
 [[PR-GXII2]]
 
-
 [[PR-KX7L7]]
-
-
-
 
 :::{.example title="Computing tensor products"}
 $\ZZ/2 \tensor_\ZZ \ZZ/3 = 0$:
@@ -280,7 +270,6 @@ $\ZZ/2 \tensor_\ZZ \ZZ/3 = 0$:
 	\arrow["{\proj_2}"{description}, from=1-5, to=3-5]
 	\arrow["\cong", dashed, from=1-7, to=3-7]
 \end{tikzcd}
-
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsOCxbMiwwLCJcXFpaIFxcdGVuc29yX1xcWlogXFxaWi8zIl0sWzQsMCwiXFxaWiBcXHRlbnNvcl9cXFpaIFxcWlovMyJdLFsyLDIsIlxcWlovMyJdLFs0LDIsIlxcWlovMyJdLFs2LDIsIjAiXSxbNiwwLCJcXFpaLzMgXFx0ZW5zb3JfXFxaWiBcXFpaLzIiXSxbMCwyLCIwIl0sWzAsMCwiMCJdLFsyLDMsIihcXHdhaXQgXFx0aW1lcyAyKSJdLFswLDEsIihcXHdhaXQgXFx0aW1lcyAyKSBcXGNyb3NzIFxcb25lIl0sWzMsNF0sWzEsNV0sWzcsMF0sWzYsMl0sWzAsMiwiXFxwcm9qXzIiLDFdLFsxLDMsIlxccHJval8yIiwxXSxbNSw0LCJcXGNvbmciLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XV0=)
 

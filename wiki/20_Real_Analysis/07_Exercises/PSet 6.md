@@ -1,4 +1,5 @@
 ---
+order: 100002
 title: "Assignment 6: The Fourier Transform"
 ---
 
@@ -32,9 +33,7 @@ which follows from continuity in $L^1$ since $f(x - \xi') \to f(x)$ as $\xi' \to
 
 It thus only remains to show that the hint holds.
 
-> Note: Sorry, I couldn't figure out how to prove the hint!!
-
-
+> The hint is not proved here.
 
 # Problem 2
 
@@ -176,7 +175,6 @@ We have
 ## (b)
 Let $G(x) = e^{-\pi x^2}$ and $\del_\xi$ be the operator that differentiates with respect to $\xi$. 
 
-
 Then 
 \[
 \begin{align*}
@@ -230,7 +228,6 @@ which is patently zero.
 It follows that $\frac{\hat G(\xi)}{G(\xi)} = c_0$ for some constant $c_0$, from which it follows that $\hat G(\xi) = c_0 G(\xi)$.
 
 Using the fact that $G(0) = 1$ by direct evaluation and $\hat G(0) = \int G(x) ~dx = 1$, we can conclude that $c_0 = 1$ and thus $\hat G(\xi) = G(\xi)$.
-
 
 # Problem 5
 
@@ -349,7 +346,6 @@ where the first term is obtained by directly evaluating the integral, and the se
 > they are all measurable on $\RR^n$ and $\RR$ respectively 
 > But then taking cylinders on everything in sight yields measurable functions, and the product of measurable functions is measurable. 
 
-
 If another interchange of integrals is justified, we can compute
 
 \[
@@ -370,7 +366,6 @@ If another interchange of integrals is justified, we can compute
 &\coloneqq F(\xi) \norm{f}_1
 .\end{align*}
 \]
-
 
 > To see that the interchange is justified, note that 
 \[

@@ -1,3 +1,7 @@
+---
+order: 520
+---
+
 # Matrix Counterexamples
 
 ![attachments/Pasted image 20211129205548.png](../../../assets/attachments/Pasted%20image%2020211129205548.png)

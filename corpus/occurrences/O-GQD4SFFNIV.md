@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-GQD4SFFNIV
 kind: occurrence
-title: P-TPZF3 at UGA real-analysis Spring 2017
+title: P-TPZF3 at UGA real-analysis January 2017
 classification:
   areas:
   - real-analysis
@@ -15,10 +15,10 @@ relations:
   target: P-TPZF3
 review: draft
 payload:
-  source: SRC-UGA-RA-SPRING-2017
+  source: SRC-UGA-RA-JANUARY-2017
   locator: "?"
 ---
 
 ::: remark
-[[P-TPZF3]] appeared at UGA real-analysis Spring 2017.
+[[P-TPZF3]] appeared at UGA real-analysis January 2017.
 :::

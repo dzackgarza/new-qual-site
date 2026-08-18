@@ -30,12 +30,16 @@ b. Prove that for a fixed $w\in \DD$, the mapping $F: z\mapsto {w-z \over 1 - \b
 - $F(0) = w$ and $F(w) = 0$.
 
 - $\abs{z} = 1$ implies $\abs{F(z)} = 1$.
+
+- $F: \DD \to \DD$ is bijective.
+
+> Hint: Calculate $F \circ F$.
 :::
 
 ::: {.solution}
 > **AI-Generated Solution**
 
-**Goal:** (a) Show $\abs{\frac{w - z}{1 - \bar w z}} < 1$ for $\abs z, \abs w < 1$ (with equality when $\abs z = 1$ or $\abs w = 1$), for $\bar z w \neq 1$; (b) show $F(z) = \frac{w - z}{1 - \bar w z}$ maps $\DD$ to itself, is holomorphic, sends $0 \mapsto w$, $w \mapsto 0$, and the circle to the circle.
+**Goal:** (a) Show $\abs{\frac{w - z}{1 - \bar w z}} < 1$ for $\abs z, \abs w < 1$ (with equality when $\abs z = 1$ or $\abs w = 1$), for $\bar z w \neq 1$; (b) show $F(z) = \frac{w - z}{1 - \bar w z}$ maps $\DD$ to itself, is holomorphic, sends $0 \mapsto w$, $w \mapsto 0$, the circle to the circle, and is bijective.
 
 <1>1. Compute $\abs{w - z}^2 - \abs{1 - \bar w z}^2 = (\abs w^2 - 1)(1 - \abs z^2)$.
 Proof: $\abs{w - z}^2 = \abs w^2 + \abs z^2 - w\bar z - \bar w z$ and $\abs{1 - \bar w z}^2 = 1 + \abs w^2 \abs z^2 - \bar w z - w \bar z$; subtracting gives $\abs w^2 + \abs z^2 - 1 - \abs w^2\abs z^2 = (\abs w^2 - 1)(1 - \abs z^2)$.
@@ -56,5 +60,14 @@ Proof: $F(0) = \frac{w - 0}{1 - 0} = w$, and $F(w) = \frac{w - w}{1 - \bar w w} 
 <1>6. (b): $F$ maps $\DD$ into itself and $\abs z = 1 \implies \abs{F(z)} = 1$.
 Proof: By <1>2, $\abs{F(z)} < 1$ for $\abs z < 1$; by <1>3 with the roles as given, $\abs{F(z)} = 1$ for $\abs z = 1$ (equality case $\abs z = 1$).
 
-<1>7. Q.E.D. Proof: <1>2–<1>3 prove (a) and <1>4–<1>6 prove (b).
+<1>7. (b): $F: \DD \to \DD$ is bijective.
+Proof: $F(F(z)) = \frac{w - F(z)}{1 - \bar w F(z)}$.
+Clearing the inner denominator $1 - \bar w z$ gives
+\[
+F(F(z)) = \frac{w(1 - \bar w z) - (w - z)}{(1 - \bar w z) - \bar w(w - z)} = \frac{z(1 - \abs w^2)}{1 - \abs w^2} = z
+\]
+for $\abs w < 1$.
+Thus $F \circ F = \mathrm{id}_{\DD}$, so $F$ is a bijection.
+
+<1>8. Q.E.D. Proof: <1>2–<1>3 prove (a) and <1>4–<1>7 prove (b).
 :::

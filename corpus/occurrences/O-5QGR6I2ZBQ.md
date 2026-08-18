@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-5QGR6I2ZBQ
 kind: occurrence
-title: P-AORDL at Spring 20202 HW 3 (complex-analysis)
+title: P-YZ4WV at Spring 20202 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - zeros
 relations:
 - kind: instance-of
-  target: P-AORDL
+  target: P-YZ4WV
 review: draft
 payload:
   source: SRC-CA-ART-RY4G4M
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-AORDL]] appeared at Spring 20202 HW 3 (complex-analysis), problem 3.
+[[P-YZ4WV]] appeared at Spring 20202 HW 3 (complex-analysis), problem 3.
 :::

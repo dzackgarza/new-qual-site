@@ -13,7 +13,6 @@ where $\arg(z)$ is the multivalued function $\arg(z) = \Arg(z) + 2\pi n$ where $
 Note that it's not necessarily true that if $z=x+iy$ that $\Arg(z) = \arctan\qty{y\over x}$, because $\arctan$ is also multivalued.
 There is a formula based on which quadrant $z$ is in:
 
-
 ![](../../../../assets/assets/figures/2021-12-19_02-35-23.png)
 
 Note that $\Arg(0)$ is undefined, so that $\Arg(z)$ makes sense on $\CC \sm (-\infty, 0]$, where $(\infty, 0]$ is a **branch cut**. 
@@ -33,7 +32,6 @@ Note that
 \[
 f_2(z) = \sqrt{r}e^{i{\Arg(z) + 2\pi \over 2} } = \sqrt{r} e^{i{\Arg(z) \over 2}}e^{i\pi} = -\sqrt{r}e^{i{\Arg(z) \over 2}} = -f_1(z)
 .\]
-
 
 :::
 

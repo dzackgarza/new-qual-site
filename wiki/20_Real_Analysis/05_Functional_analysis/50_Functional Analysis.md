@@ -111,11 +111,9 @@ For all $x, y\in H$,
 \norm{x}^2 \qed
 .\]
 
-
 :::
 
 [[T-5AALA]]
-
 
 [[T-LDCZB]]
 
@@ -152,7 +150,6 @@ $$\Lambda(u) = \Lambda(\Lambda(x) z - \Lambda(z) x) = \Lambda(x) \Lambda(z) - \L
 \implies \norm{y-y'} &= 0 \\
 \implies y-y' &= \vector 0 \implies y = y'
 .\]
-
 
 :::
 

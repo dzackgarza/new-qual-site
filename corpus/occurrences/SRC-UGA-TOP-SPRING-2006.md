@@ -17,6 +17,7 @@ payload:
   - P-7CYRD
   - P-VAJSW
   - P-KM7Z4
+  - P-8TS04
   - P-OIH2N
   - P-6XN3Z
   - P-3H47Q
@@ -29,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2006. The paper is the current Quals posting `Topology [Spring 2006].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #4 (a $\pi_1$-criterion for a regular covering, with a non-regular example) has no matching P-card; `P-T5QRW` merges that with a Spring 2012 theta-graph example.
+UGA topology Spring 2006. The paper is the current Quals posting `Topology [Spring 2006].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

@@ -17,6 +17,7 @@ payload:
   - P-KSQQ5
   - P-DYBYC
   - P-MXUIS
+  - P-8TF40
   - P-BNSGA
   - P-23NY2
   - P-IBLLK
@@ -28,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2016. The paper is the current Quals posting `Topology [Fall 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #4 (a covering space of $\mathbb{CP}^n$ is homeomorphic to $\mathbb{CP}^n$) has no matching P-card.
+UGA topology Fall 2016. The paper is the current Quals posting `Topology [Fall 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

@@ -1,3 +1,7 @@
+---
+order: 100
+---
+
 # Point-Set
 
 ## Summary and Topics
@@ -152,8 +156,6 @@ Then no tube about $y=0$ is entirely contained within $N$:
 
 [[PR-VGX2B]]
 
-
 ## Exercises
-
 
 [[E-OYP3Y]]

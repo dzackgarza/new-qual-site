@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-EHTQ6MBK6S
 kind: occurrence
-title: P-GP7TS at UGA algebra Fall 2016
+title: P-DURCM at UGA algebra Fall 2016
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - projective-modules
 relations:
 - kind: instance-of
-  target: P-GP7TS
+  target: P-DURCM
 review: draft
 payload:
   source: SRC-UGA-ALG-FALL-2016
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-GP7TS]] appeared at UGA algebra Fall 2016.
+[[P-DURCM]] appeared at UGA algebra Fall 2016.
 :::

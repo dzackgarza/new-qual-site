@@ -1,11 +1,15 @@
 ---
-title: Algebra 
+title: Algebra
 order: 10
 ---
 
-# Syllabus
+# Algebra
 
-## Group Theory
+The UGA algebra qualifying exam: the official topic list, then a twelve-week study sequence used in a summer workshop. Students are expected to know proofs and to carry out the standard computations (Jordan and rational canonical form of a given matrix, Galois group of a given polynomial).
+
+## Syllabus
+
+### Group Theory
 
 - Subgroups and quotient groups
 
@@ -37,7 +41,7 @@ order: 10
 
 > References: 1,3,4
 
-## Linear Algebra
+### Linear Algebra
 
 - Determinants
 
@@ -63,7 +67,7 @@ order: 10
 
 > References: 1,2,4
 
-## Foundations
+### Foundations
 
 - Zorn's Lemma and its uses in various existence theorems such as that of
 
@@ -73,7 +77,7 @@ order: 10
 
 > References: 1,3,4
 
-## Rings and Modules
+### Rings and Modules
 
 - Basic properties of ideals and quotient rings
 
@@ -91,7 +95,7 @@ order: 10
 
 > References: 1,3,4
 
-## Field Theory
+### Field Theory
 
 - Algebraic extensions of fields
 
@@ -105,168 +109,146 @@ order: 10
 
 > References: 1,3,4
 
-As a general rule, students are responsible for knowing both the theory (proofs) and practical applications (e.g. how to find the Jordan or rational canonical form of a given matrix, or the Galois group of a given polynomial) of the topics mentioned.
-
-## References
+### References
 
 1. David Dummit and Richard Foote, Abstract Algebra, Wiley, 2003.
 
 2. Kenneth Hoffman and Ray Kunze, Linear Algebra, Prentice-Hall, 1971.
 
-3. Thomas W. Hungerford, Algebra, Springer, 1974.
+3. Thomas Hungerford, Algebra, Springer, 1974.
 
 4. Roy Smith, [Algebra Course Notes](http://www.math.uga.edu/~roy/) (843-1 through 845-3),
 
-* * *
+The [UGA algebra study guide](https://www.math.uga.edu/sites/default/files/PDFs/Graduate/QualsStudyGuides/Algebra_12%3A2016.pdf) (December 2016) lists the same core, compressed: Sylow, $p$-groups, solvable groups, free groups; tensor products, determinants, Jordan form, PIDs, UFDs, polynomial rings; splitting fields, separable and inseparable extensions; fundamental theorem of Galois theory, finite fields, cyclotomic fields. Extra topics named there are representations of finite groups (character theory, induced representations, the group ring) and the basics of Lie groups and Lie algebras (exponential map, nilpotent and semisimple Lie algebras and groups).
 
-# Notion Page
+## A twelve-week study sequence
 
-## Scheduling
+This sequence was given as a summer workshop. The calendar dates below are that sitting's (weeks of 18 May through 10 August, quals Monday–Tuesday 16–17 August). The week contents are the study path.
 
-- Week 1 (May 18): Preliminary Review
+### Week 1 (18 May): Preliminary review
 
-  - Subgroups, quotients, isomorphism theorems, cosets, index of a subgroup
+- Subgroups, quotients, isomorphism theorems, cosets, index of a subgroup
 
-    - One step subgroup test
+  - One step subgroup test
 
-  - Cauchy, Lagrange
+- Cauchy, Lagrange
 
-  - Everything about: cyclic, symmetric, alternating, dihedral groups of order ≤ 20
+- Everything about: cyclic, symmetric, alternating, dihedral groups of order ≤ 20
 
-  - Especially useful problems: if G is nonabelian of order $p^3$, then $Z(G) = [G, G]$)
+- Especially useful problems: if G is nonabelian of order $p^3$, then $Z(G) = [G, G]$)
 
-- Week 2 (May 25): Finite Groups
+### Week 2 (25 May): Finite groups
 
-  - Special types of groups, the symmetric group, p-groups
+- Special types of groups, the symmetric group, p-groups
 
-  - Series of groups, solvable, simple, nilpotent; Jordan-Holder theorem
+- Series of groups, solvable, simple, nilpotent; Jordan-Holder theorem
 
-  - Group actions, orbit-stabilizer, class equation,
+- Group actions, orbit-stabilizer, class equation,
 
-  - Cayley representation, permutation representation
+- Cayley representation, permutation representation
 
-  - FTFGAG: The Fundamental Theorem of Finitely Generated Abelian Groups
+- FTFGAG: The Fundamental Theorem of Finitely Generated Abelian Groups
 
-    - Invariant factors
+  - Invariant factors
 
-    - Elementary divisors
+  - Elementary divisors
 
-    - How to go back and forth
+  - How to go back and forth
 
-  - Recognition of direct products and semidirect products
+- Recognition of direct products and semidirect products
 
-- Week 3 (June 1): Sylow Theorems
+### Week 3 (1 June): Sylow theorems
 
-  - Showing groups are abelian
+- Showing groups are abelian
 
-  - Classification: isomorphism classes of groups of a given order, recognizing direct and semidirect products
+- Classification: isomorphism classes of groups of a given order, recognizing direct and semidirect products
 
-- Week 4 (June 8): Rings and Commutative Algebra
+### Week 4 (8 June): Rings and commutative algebra
 
-  - Morphisms, Ideals, quotients, zero divisors, isomorphism theorems, CRT
+- Morphisms, Ideals, quotients, zero divisors, isomorphism theorems, CRT
 
-  - Irreducible and prime elements, nilpotent, units
+- Irreducible and prime elements, nilpotent, units
 
-  - Radical, nilradical, spec and maxspec
+- Radical, nilradical, spec and maxspec
 
-  - Special types: domains, integral domains, Euclidean ⇒ PID ⇒ UFD ⇒?, Dedekind domains, Noetherian, Artinian
+- Special types: domains, integral domains, Euclidean ⇒ PID ⇒ UFD ⇒?, Dedekind domains, Noetherian, Artinian
 
-  - Zorn's lemma arguments
+- Zorn's lemma arguments
 
-  - Bonus optional stuff: localization
+- Bonus optional stuff: localization
 
-- Week 5 (June 15): Modules and Homological Algebra
+### Week 5 (15 June): Modules and homological algebra
 
-  - Morphisms, submodules, isomorphism theorems, principal ideals
+- Morphisms, submodules, isomorphism theorems, principal ideals
 
-  - Free and projective, free rank, torsion submodule, annihilators
+- Free and projective, free rank, torsion submodule, annihilators
 
-  - Tensor product
+- Tensor product
 
-  - SESs and splitting
+- SESs and splitting
 
-  - Flat and torsionfree
+- Flat and torsionfree
 
-  - Classification theorem for modules over a PID, elementary divisors and invariant factors
+- Classification theorem for modules over a PID, elementary divisors and invariant factors
 
-  - $M/IM$ stuff, $R[x]$ modules
+- $M/IM$ stuff, $R[x]$ modules
 
-- Week 6 (June 22): Field Theory
+### Week 6 (22 June): Field theory
 
-  - Finite and algebraic extensions, degrees, towers
+- Finite and algebraic extensions, degrees, towers
 
-  - Finite fields
+- Finite fields
 
-  - Separable and normal extensions, splitting fields
+- Separable and normal extensions, splitting fields
 
-  - Irreducible polynomials
+- Irreducible polynomials
 
-  - Algebraic closure
+- Algebraic closure
 
-  - Primitive element theorem, perfect fields, Frobenius
+- Primitive element theorem, perfect fields, Frobenius
 
-- Week 7 (June 29): Galois Theory and Number Theory
+### Week 7 (29 June): Galois theory and number theory
 
-  - Fundamental theorem
+- Fundamental theorem
 
-  - Computing Galois groups
+- Computing Galois groups
 
-  - Solvability by radicals
+- Solvability by radicals
 
-  - Cyclotomic polynomials, primitive roots
+- Cyclotomic polynomials, primitive roots
 
-  - Properties in towers (normal, separable, Galois, etc)
+- Properties in towers (normal, separable, Galois, etc)
 
-  - Bonus: rings of integers, splitting of primes, p-adics?
+- Bonus: rings of integers, splitting of primes, p-adics?
 
-- Week 8 (July 6) Linear Algebra
+### Week 8 (6 July): Linear algebra
 
-  - Bases, Singularity and invertibility, determinant and trace, rank-nullity (all over arbitrary fields)
+- Bases, Singularity and invertibility, determinant and trace, rank-nullity (all over arbitrary fields)
 
-  - Eigenstuff, minimal and characteristic polynomials
+- Eigenstuff, minimal and characteristic polynomials
 
-  - Canonical forms (RCF, JCF), decomposition into $F[x]$-modules
+- Canonical forms (RCF, JCF), decomposition into $F[x]$-modules
 
-  - Spectral theorem, Cayley-Hamilton
+- Spectral theorem, Cayley-Hamilton
 
-  - Similarity, diagonalizability, simultaneously diagonalizable operators
+- Similarity, diagonalizability, simultaneously diagonalizable operators
 
-  - (Bonus) Quadratic and bilinear forms, lattices, Gram matrix, special types of matrices (Hermitian, symmetric, orthogonal, unitary, etc)
+- (Bonus) Quadratic and bilinear forms, lattices, Gram matrix, special types of matrices (Hermitian, symmetric, orthogonal, unitary, etc)
 
-- Week 9 (July 13): More linear algebra, or (Bonus) Representation Theory of Finite Groups
+### Week 9 (13 July): More linear algebra, or representation theory of finite groups
 
-  - Maschke's theorem
+- Maschke's theorem
 
-  - Orthogonality of characters, character tables
+- Orthogonality of characters, character tables
 
-  - Schur's lemma
+- Schur's lemma
 
-- Week 10  (July 20): **Buffer**
+### Week 10 (20 July): Buffer
 
-- Week 11 (July 27): **Buffer**
+### Week 11 (27 July): Buffer
 
-- Week 12 (August 3): **No meeting (Mock AMS)**
+### Week 12 (3 August): No meeting (Mock AMS)
 
-- Week 13 (August 10): **Timed practice exam**
+### Week 13 (10 August): Timed practice exam
 
-- **Quals:** Monday and Tuesday August 16-17
-
-* * *
-
-- Topics
-
-  - See the [UGA official study guide](https://www.math.uga.edu/sites/default/files/PDFs/Graduate/QualsStudyGuides/Algebra_12%3A2016.pdf)
-
-  - Group theory: Sylow theorems, p-groups, solvable groups, free groups.
-
-  - Rings and modules: tensor products, determinants, Jordan canonical form, PID’s, UFD’s, polynomials rings.
-
-  - Field theory: splitting fields, separable and inseparable extensions.
-
-  - Galois theory: Fundamental theorems of Galois theory, finite fields, cyclotomic fields.
-
-  - Extra Topics
-
-    - Representations of Finite Groups: character theory, induced representations, structure of the group ring.
-
-    - Basics of Lie groups and Lie algebras: exponential map, nilpotent and semi-simple Lie algebras and Lie groups.
+### Quals: Monday and Tuesday 16–17 August

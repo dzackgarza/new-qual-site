@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-ETEJW
 kind: problem
-title: "Hungerford 7.4.8)."
+title: Rational and Jordan forms with given minimal polynomials over $\mathbb{Q}$ and $\mathbb{C}$
 classification:
   areas:
   - algebra
@@ -15,11 +15,7 @@ review: draft
 solved: false
 ---
 
-::: {.problem title="Hungerford 7.4.8)."}
-Show that $A\in M_n(K)$ is similar to a diagonal matrix $\iff$ the elementary divisors of $A$ are all linear.
-:::
-
-::: {.problem title="Hungerford 7.4.10"}
+::: problem
 Find all possible rational canonical forms for a matrix $A\in M_n(\Bbb Q)$ such that
 
 1. $A$ is $6\times 6$ with minimal polynomial $q(x) = (x-2)^2(x+3)$.

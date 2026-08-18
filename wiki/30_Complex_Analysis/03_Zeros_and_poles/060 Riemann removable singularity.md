@@ -1,3 +1,7 @@
+---
+order: 60
+---
+
 # Removable Singularities
 
 [[T-AL6OT]]

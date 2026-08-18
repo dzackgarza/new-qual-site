@@ -20,6 +20,8 @@ payload:
   - P-N2FQ7
   - P-4XONF
   - P-G23Y5
+  - P-8TF01
+  - P-C3NSR
   date:
     kind: academic-term
     term: fall
@@ -27,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2004. The paper is the current Quals posting `Topology [Fall 2004].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #1 is listed as `P-HOIQ3`; `P-MMAQ-33EUS6QU7Y` states the same item and is unused. Exam #7 (a map $S^n\to S^n$ orthogonal to the position vector is homotopic to the antipodal map) has no matching P-card. Exam #8 (existence of a point with $f(x)=\pm x$) has no matching P-card.
+UGA topology Fall 2004. The paper is the current Quals posting `Topology [Fall 2004].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

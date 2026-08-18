@@ -1,8 +1,9 @@
 ---
+order: 100001
 title: Problem Set 9
 ---
 
-> Note: I use the convention that $\vector a$ denotes a column vector and $\vector a^t$ a row vector, and if $A$ is a matrix, then $(A)_{ij} = a_{ij}$ denotes the entry in the $i$th row and $j$th column.
+> Note: column vectors are written $\vector a$ and row vectors $\vector a^t$; if $A$ is a matrix, then $(A)_{ij} = a_{ij}$ is the entry in the $i$th row and $j$th column.
 
 # Problem 1
 

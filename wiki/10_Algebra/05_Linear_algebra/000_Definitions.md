@@ -1,3 +1,7 @@
+---
+order: 0
+---
+
 # Definitions
 
 ::: {.remark}
@@ -18,7 +22,12 @@ V &\cong \bigoplus _{j=1}^m k[x] / \gens{ p_i(x)^{e_i} } && \text{ with } p_i \t
 
 - The $p_i$ are the **elementary divisors** of $T$.
 
-  - Todo: what can you read off of this...?
+  - Grouping equal primes, the factors $p(x)^e$ are the cyclic summands in the primary decomposition.
+  - Over an algebraically closed field (or after splitting), each $p_i(x)=x-\lambda$, and $(x-\lambda)^e$ is a Jordan block of size $e$ for eigenvalue $\lambda$.
+  - The characteristic polynomial is the product of all elementary divisors.
+  - The minimal polynomial is the lcm of the elementary divisors: for each distinct $p$, take the highest power $p^e$ that occurs.
+  - The geometric multiplicity of $\lambda$ is the number of elementary divisors that are powers of $x-\lambda$ (the number of Jordan blocks).
+  - The size of the largest Jordan block for $\lambda$ is the largest such exponent $e$.
 :::
 
 [[D-5BR4D]]

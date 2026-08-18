@@ -3,7 +3,6 @@ order: 120
 title: "Holomorphy and Calculus"
 ---
 
-
 :::{.fact}
 Useful facts:
 \[
@@ -34,7 +33,6 @@ Integral of a complex exponential:
 \[
 \int_{\gamma} f(z) \dz = \int_0^{2\pi } f(Re^{i\theta}) \, iRe^{i\theta} \dtheta
 .\]
-
 
 :::
 
@@ -82,7 +80,6 @@ For example,
 
 # Holomorphy
 
-
 :::{.remark}
 Let $f:\CC\to \CC$ satisfy CR and consider it as a map $f:\RR^2\to\RR^2$, writing $f(x+iy) = u(x, y) + iv(x, y)$, the Jacobian is 
 \[
@@ -117,11 +114,30 @@ which is a complex number that depends on $\theta$ and is thus not a single valu
 
 [[PR-Y36BS]]
 
-#todo proof
+:::{.proof title="Holomorphic iff linear approximation"}
+If $f'(z_0)$ exists, set $a\da f'(z_0)$ and
+\[
+\psi(h)
+\da
+\begin{cases}
+\dfrac{f(z_0+h)-f(z_0)}{h}-a & h\neq 0,\\
+0 & h=0.
+\end{cases}
+\]
+Then $\psi(h)\to 0$ as $h\to 0$ by definition of $f'(z_0)$, and $f(z_0+h)-f(z_0)-ah = h\psi(h)$.
 
+Conversely, if such an $a$ and $\psi$ exist, then for $h\neq 0$
+\[
+\frac{f(z_0+h)-f(z_0)}{h}
+= a + \psi(h)
+\to a
+,\]
+so $f'(z_0)=a$.
+Continuity of $f$ at $z_0$ is the same identity: $f(z_0+h)=f(z_0)+h\bigl(a+\psi(h)\bigr)\to f(z_0)$.
+
+:::
 
 # Wirtinger Calculus
-
 
 :::{.remark}
 Some properties:
@@ -133,7 +149,6 @@ Some properties:
   - E.g. $\del \exp\qty{ - \abs{z}^2 } = \del \exp\qty{-z\bar z} = e^{-\abs{z}^2}\cdot \del(z\bar z) = \bar z e^{-\abs{z}^2}$.
 
 :::
-
 
 # Exercises
 

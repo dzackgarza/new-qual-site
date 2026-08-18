@@ -198,8 +198,6 @@ u_{xx} - v_{yx} = 0 \implies u_{xx} + u_{yy} = 0 \\ \\
 v_{xx} + u_{yx} = 0 \implies v_{xx} + v_{yy} = 0 \\ \\
 .\]
 
-
-
 :::
 ### Exercises
 [[E-UVNVV]]
@@ -409,9 +407,7 @@ What the roots look like:
 
 ![](../../../../assets/assets/figures/2021-12-12_21-48-27.png)
 
-
 :::
-
 
 # Preliminaries
 - Since $\CC$ is a field, $\CC[x]$ is a UFD.

@@ -13,7 +13,14 @@ payload:
   source_kind: university-exam
   institution: jhu
   area: real-analysis
-  problems: []
+  problems:
+  - P-WVJBX
+  - P-5CQNK
+  - P-8XT08
+  - P-O3LYK
+  - P-8XT09
+  - P-8XT10
+  - P-8XT11
   date:
     kind: academic-term
     term: fall
@@ -21,5 +28,5 @@ payload:
 ---
 
 ::: remark
-JHU real-analysis Fall 2015. Recorded from the source corpus' exam-term annotations. The paper is the sitting headed `QUALIFYING EXAM - ANALYSIS - FALL 2015` in `assets/attachments/JHU Years of Analysis Exams.pdf` (also https://math.jhu.edu/gradexam/analysisexams.pdf). `problems:` is left empty: exam #3 (tensor products of an $L^2(\mathbb{R}^d)$ orthonormal basis form an orthonormal basis of $L^2(\mathbb{R}^d\times\mathbb{R}^d)$) has no matching P- card. Unique matches on the paper are #1 `P-WVJBX`, #2 `P-5CQNK`, #4 `P-O3LYK`.
+JHU real-analysis Fall 2015. The paper is the sitting headed `QUALIFYING EXAM - ANALYSIS - FALL 2015` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). The list is the sitting order on that paper.
 :::

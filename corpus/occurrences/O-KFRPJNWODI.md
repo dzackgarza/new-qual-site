@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-KFRPJNWODI
 kind: occurrence
-title: P-Y4YM6 at UGA real-analysis Spring 2021
+title: P-AK3OT at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
@@ -13,7 +13,7 @@ classification:
   - series-of-functions
 relations:
 - kind: instance-of
-  target: P-Y4YM6
+  target: P-AK3OT
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2021
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-Y4YM6]] appeared at UGA real-analysis Spring 2021.
+[[P-AK3OT]] appeared at UGA real-analysis Spring 2021.
 :::

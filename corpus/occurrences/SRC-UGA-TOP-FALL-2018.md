@@ -20,6 +20,7 @@ payload:
   - P-UCJF3
   - P-KN75K
   - P-6UCWP
+  - P-8TF44
   - P-N3RQY
   date:
     kind: academic-term
@@ -28,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2018. The paper is the current Quals posting `Topology [Fall 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #7 (a 3-sheeted normal cover of $S^1\vee S^1$, and a path-connected 3-sheeted non-normal cover) has no matching P-card; `P-4XONF` asks for all 3-fold connected covers.
+UGA topology Fall 2018. The paper is the current Quals posting `Topology [Fall 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

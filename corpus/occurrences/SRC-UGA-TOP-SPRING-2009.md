@@ -17,6 +17,8 @@ payload:
   - P-L3BUX
   - P-AT75W
   - P-2HMGE
+  - P-8TS09
+  - P-8TS10
   - P-MCG5C
   - P-HBECH
   - P-ZPH3J
@@ -27,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2009. The paper is the current Quals posting `Topology [Spring 2009].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #IV ($\pi_1$ and homology of $(S^1\times S^1)\vee S^1$) has no matching P-card; `P-K6HWV` states only the homology. Exam #V (degree of the antipodal map, a CW structure on $\RP^n$, and the integral homology of $\RP^n$) has no matching P-card; `P-UEGAX` replaces the homology computation with a covering-space clause from exam #VI.
+UGA topology Spring 2009. The paper is the current Quals posting `Topology [Spring 2009].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

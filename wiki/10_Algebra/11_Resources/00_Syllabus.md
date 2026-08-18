@@ -1,13 +1,11 @@
+---
+order: 0
+---
+
 # Topics and Remarks
 
 ::: {.remark}
-(DZG) on the structure of these notes: these are *extremely* disorganized at the moment, and only reflect some amalgamation of all of the random notes I made to myself while studying for qualifying exams.
-As a result, things are bound to be out of order, and likely useless pedagogically unless you've seen most of the material before.
-Moreover, this has been a long-running document (started in my undergrad years, so pre-2018), and since I've forgotten and rewritten certain things at various points, there may even be duplicated material (e.g. propositions stated/proved in multiple places, repeated exercises or statements, etc).
-
-In any case, I'd love to hear if you do find it useful!
-Readers are welcome to email me with any questions, comments, errors/typos, suggestions for improvement, or just to say hello!
-😄
+These notes are an amalgamation of algebra-qual study notes, begun before 2018. They are not in pedagogical order and assume the material has already been seen. The same proposition or exercise may appear more than once, rewritten at different times.
 :::
 
 ::: {.remark}

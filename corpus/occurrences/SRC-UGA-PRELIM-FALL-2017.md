@@ -29,5 +29,7 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2017. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2017 Fall.md.source` (the wiki worked copy `wiki/00_Prelims/Worked_Exams/2017 Fall.md` is the same sitting). The department Quals directory has no prelim posting. `P-ARI3E` glues exam #1 and #2 and is not on the list.
+UGA prelim Fall 2017. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2017 Fall.md.source` (the wiki worked copy `wiki/00_Prelims/Worked_Exams/2017 Fall.md` is the same sitting).
+The department Quals directory has no prelim posting.
+The list is the sitting order on that paper.
 :::

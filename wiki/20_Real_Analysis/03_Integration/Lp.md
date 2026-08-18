@@ -1,3 +1,7 @@
+---
+order: 100002
+---
+
 # $L^p$ Spaces
 
 :::{.warnings}
@@ -40,8 +44,6 @@ We also have
 ?
 
 :::
-
-
 
 :::{.proof title="$p=2$ case"}
 Use Riesz Representation for Hilbert spaces.

@@ -1,3 +1,7 @@
+---
+order: 202
+---
+
 # Examples: Algebraic Topology
 
 ## Standard Spaces and Modifications
@@ -8,13 +12,12 @@
 \SS^n &\da \ts{ \vector x \in \RR^{n+1} \st \norm{\vector x} = 1} = \bd \DD^n \\
 .\]
 
-> Note: I'll immediately drop the blackboard notation, this is just to emphasize that they're "canonical" objects.
+> Note: blackboard-bold here marks the canonical objects; the rest of the notes drop it.
 
 The sphere can be constructed in several equivalent ways:
 
 - $S^n \cong D^n / \bd D^n$: collapsing the boundary of a disc is homeomorphic to a sphere.
 - $S^n \cong D^n \Disjoint_{\bd D^n} D^n$: gluing two discs along their boundary.
-
 
 Note the subtle differences in dimension: $S^n$ is a manifold of dimension $n$ embedded in a space of dimension $n+1$.
 
@@ -34,7 +37,6 @@ Note the subtle differences in dimension: $S^n$ is a manifold of dimension $n$ e
 
 ![Low Dimensional Discs/Balls vs Spheres](../../../assets/40_Topology/figures/image_2021-01-10-23-20-27.png)
 
-
 :::
 
 :::{.example title="Real Projective Space"}
@@ -45,7 +47,6 @@ Constructed in one of several equivalent ways:
 
 One can also define $\RP^ \infty \da \directlim_{n} \RP^n$.
 Fits into a fiber bundle of the form
-
 
 \begin{tikzcd}
 S^0 

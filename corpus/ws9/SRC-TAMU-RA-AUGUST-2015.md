@@ -13,12 +13,22 @@ payload:
   source_kind: university-exam
   institution: tamu
   area: real-analysis
-  problems: []
+  problems:
+  - P-8XT81
+  - P-C53SG
+  - P-8XT82
+  - P-8XT83
+  - P-8XT84
+  - P-NIC7C
+  - P-8XT85
+  - P-8XT86
+  - P-8XT87
+  - P-8XT88
   date:
     kind: year
     year: 2015
 ---
 
 ::: remark
-TAMU real-analysis August 2015. Recorded from the source corpus' exam-term annotations. The paper is the department posting https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/a15.pdf (Qualifying Examination in Real Variables, August 2015, ten problems). `problems:` is left empty: exam #1 (Borel $f:\mathbb{R}\to\mathbb{R}$, each translate $f_t(x)=f(t+x)$ is Borel in $x$) has no matching P- card. Unique matches among later problems are #2 `P-C53SG` and #6 `P-NIC7C`. Order was not taken from occurrence cards.
+TAMU real-analysis August 2015. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/a15.pdf (Qualifying Examination in Real Variables, August 2015). The list is the sitting order on that paper.
 :::

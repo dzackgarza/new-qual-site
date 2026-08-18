@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-HLU36BC4OG
 kind: occurrence
-title: P-25AFH at UGA real-analysis Spring 2017
+title: P-25AFH at UGA real-analysis January 2017
 classification:
   areas:
   - real-analysis
@@ -15,10 +15,10 @@ relations:
   target: P-25AFH
 review: draft
 payload:
-  source: SRC-UGA-RA-SPRING-2017
+  source: SRC-UGA-RA-JANUARY-2017
   locator: "2"
 ---
 
 ::: remark
-[[P-25AFH]] appeared at UGA real-analysis Spring 2017, problem 2.
+[[P-25AFH]] appeared at UGA real-analysis January 2017, problem 2.
 :::

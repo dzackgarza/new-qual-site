@@ -13,7 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
-  problems: []
+  problems:
+  - P-OW5VL
+  - P-AXFG7
+  - P-KPFEF
+  - P-HBWN6
+  - P-VYRJF
+  - P-XL7MP
   date:
     kind: academic-term
     term: spring
@@ -21,5 +27,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2020. Recorded from the source corpus' exam-term annotations. The paper is the current Quals posting `Real Analysis [Spring 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Spring 2020. The catalog PDF `RealAnalysisQual_Spring2020.pdf` currently 404s. `problems:` is left empty: exam #1 ($\lim_{k\to\infty}\int_0^1 kx^{k-1}f(x)\,dx=f(1)$ for continuous $f$ on $[0,1]$) is stated by `P-OW5VL`.
+UGA real-analysis Spring 2020. Recorded from the source corpus' exam-term annotations.
+The paper is the current Quals posting `Real Analysis [Spring 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Spring 2020. The catalog PDF `RealAnalysisQual_Spring2020.pdf` currently 404s. The list is the sitting order on that paper.
 :::

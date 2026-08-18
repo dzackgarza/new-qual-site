@@ -20,8 +20,6 @@ order: 11
 
 ### 8 (Fall '10).
 
-[[P-AZ46Z]]
-
 [[P-K5XUM]]
 
 ### 12 (Spring '06).

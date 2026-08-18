@@ -13,6 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-8RA22
+  - P-8RA23
+  - P-8RA24
+  - P-8RA25
+  - P-8RA26
+  - P-8RA27
   date:
     kind: academic-term
     term: spring
@@ -20,5 +27,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis January 2010. Recorded from the source corpus' exam-term annotations. The paper is the current Quals posting `Real Analysis [Spring 2010].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02010%5D.docx`), headed January 6, 2010. `problems:` is left empty: exam #1 (a real polynomial attains a global minimum of $|f|$) has no matching corpus problem card.
+UGA real-analysis January 2010. The paper is the current Quals posting `Real Analysis [Spring 2010].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02010%5D.docx`), headed January 6, 2010. The expected Quals files `Real Analysis [January 2010].docx` (regular space and NBSP) 404. Exam #6 is the $p$-norm limit for bounded measurable functions on $[0,1]$; `P-OFICU` takes nonnegative measurable $f$ and `P-QXYTV` takes continuous $f\ge 0$ on $[a,b]$, and neither was used.
+The list is the sitting order on that paper.
 :::

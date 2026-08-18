@@ -18,6 +18,7 @@ payload:
   - P-PMH4D
   - P-KNIPC
   - P-FBOFF
+  - P-8CA27
   - P-R424U
   date:
     kind: academic-term
@@ -26,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Spring 2015. The paper is the current Quals posting `Complex Analysis [Spring 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #1 is listed as `P-UGCNF`. Exam #2 is listed as `P-PMH4D`. Exam #3 is listed as `P-KNIPC`. Exam #6 is listed as `P-R424U`. Exam #5 (entire function sending a circle into $\mathbb{R}$) has no matching P-card.
+UGA complex-analysis Spring 2015. The paper is the current Quals posting `Complex Analysis [Spring 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BSpring%C2%A02015%5D.docx`). The list is the sitting order on that paper.
 :::

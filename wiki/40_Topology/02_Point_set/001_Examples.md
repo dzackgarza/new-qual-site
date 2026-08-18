@@ -1,9 +1,10 @@
+---
+order: 1
+---
+
 # Examples
 
-
-
 ## Point-Set
-
 
 [[D-SN2OH]]
 
@@ -26,8 +27,6 @@
   Every point is a boundary point and an accumulation point.
 
 :::
-
-
 
 ### Common Spaces and Operations
 
@@ -59,8 +58,6 @@ Examples of some more exotic spaces that show up less frequently:
 - The Alexander Horned sphere
 
 :::
-
-
 
 :::{.example title="Non-Hausdorff spaces"}
 The following spaces are non-Hausdorff:
@@ -107,7 +104,6 @@ Some common operations that combine spaces:\
 -  Identifying a finite number of points
 
 :::
-
 
 ### Alternative Topologies
 

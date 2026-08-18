@@ -68,7 +68,6 @@ Things to know well:
 
 For just the statements of most of these theorems: [[attachments/ComplexAnalysisNotes.pdf|see this doc]].
 
-
 ## Common tricks
 
 - Virtually any time: consider $1/f(z)$ and $f(1/z)$.
@@ -136,8 +135,6 @@ Some other useful facts about the hyperbolic exponentials:
 - $\cosh$ has zeros at $\ts{i\pi\qty{2k+1\over 2}} = \ts{i \qty{\pi/2 + k\pi}}$, i.e. $\cdots, -\pi/2, \pi/2, 3\pi/2,\cdots$, the half-integers.
 - $\sinh$ has zeros at $\ts{i\pi k}$, i.e. the integers.
 
-
-
 :::
 :::{.fact}
 Some computations that come up frequently:
@@ -182,7 +179,6 @@ Integral of a complex exponential:
 	- Express $f$ as a convergent power series
 
 - Holomorphic functions have isolated zeros.
-
 
 ## Arithmetic
 
@@ -266,7 +262,6 @@ Some silly arithmetic tricks:
 - $f$ is polynomial when:
 	- $f^{(n)} =0$ for every $n$ large enough (e.g. using Cauchy's inequality)
 	- $f$ is entire and only has poles at $\infty$.
-
 
 ## Series
 

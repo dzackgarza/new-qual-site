@@ -13,7 +13,13 @@ payload:
   source_kind: university-exam
   institution: jhu
   area: real-analysis
-  problems: []
+  problems:
+  - P-JVAGD
+  - P-WMJZB
+  - P-8XT43
+  - P-8XT44
+  - P-8XT45
+  - P-8XT46
   date:
     kind: academic-term
     term: spring
@@ -21,5 +27,5 @@ payload:
 ---
 
 ::: remark
-JHU real-analysis Spring 2017. Recorded from the source corpus' exam-term annotations. The paper is the sitting headed `Qualifying Exam - Analysis - Spring 2017` in `assets/attachments/JHU Years of Analysis Exams.pdf` (also https://math.jhu.edu/gradexam/analysisexams.pdf). `problems:` is left empty: exam #3 (if $\sum m(E_k)<\infty$ on $\mathbb{R}^k$, a.e. $x$ lies in finitely many $E_k$) has no matching P- card; `P-QZT5B` is the abstract Borel–Cantelli lemma, not this Lebesgue statement. Unique matches for earlier problems are #1 `P-JVAGD`, #2 `P-WMJZB`.
+JHU real-analysis Spring 2017. The paper is the sitting headed `Qualifying Exam - Analysis - Spring 2017` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). The list is the sitting order on that paper.
 :::

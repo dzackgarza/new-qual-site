@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-DYRCHGSWY4
 kind: occurrence
-title: P-BBFQR at UCSD topology Summer 2003
+title: P-L6F6I at UCSD topology Summer 2003
 classification:
   areas:
   - topology
@@ -12,7 +12,7 @@ classification:
   - surfaces
 relations:
 - kind: instance-of
-  target: P-BBFQR
+  target: P-L6F6I
 review: draft
 payload:
   source: SRC-UCSD-TOP-SUMMER-2003
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-BBFQR]] appeared at UCSD topology Summer 2003.
+[[P-L6F6I]] appeared at UCSD topology Summer 2003.
 :::

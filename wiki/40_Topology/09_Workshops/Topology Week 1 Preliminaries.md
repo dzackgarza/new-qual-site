@@ -1,8 +1,7 @@
 ---
+order: 100001
 title: "Topology Qual Prep Week 1: Point-Set"
 ---
-
-Tags: #qual_topology #qualifying_exam
 
 # Topics
 

@@ -19,7 +19,7 @@ payload:
   - P-OKCT6
   - P-6NMU2
   - P-QMGAA
-  - P-GP7TS
+  - P-DURCM
   - P-MX2HR
   date:
     kind: academic-term

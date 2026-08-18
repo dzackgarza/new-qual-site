@@ -13,7 +13,17 @@ payload:
   source_kind: university-exam
   institution: tamu
   area: real-analysis
-  problems: []
+  problems:
+  - P-8XT100
+  - P-8XT101
+  - P-8XT102
+  - P-8XT103
+  - P-YSR66
+  - P-8XT104
+  - P-YQDFJ
+  - P-8XT105
+  - P-8XT106
+  - P-8XT107
   date:
     kind: academic-term
     term: spring
@@ -21,5 +31,6 @@ payload:
 ---
 
 ::: remark
-TAMU real-analysis January 2016. Recorded from the source corpus' exam-term annotations. The paper is the department posting https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j16.pdf (Real Analysis Qualiftying Exam, January 2016, ten problems). `problems:` is left empty: exam #1 (measurable $E\subset[0,1]$ with $m(E\cap J)\ge\alpha\,m(J)$ for all subintervals $J$, prove $m(E)=1$) has no matching P- card. Unique matches among later problems are #5 `P-YSR66` and #7 `P-YQDFJ`. Order was not taken from occurrence cards.
+TAMU real-analysis January 2016. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j16.pdf (Real Analysis Qualiftying Exam, January 2016; spelling as on the paper).
+The list is the sitting order on that paper.
 :::

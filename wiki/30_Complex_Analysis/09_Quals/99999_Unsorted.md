@@ -6,7 +6,7 @@ order: 99999
 
 ## Tie's Extra Questions: Fall 2015
 
-[[P-YVNUD]] [[P-4KM5P]]
+[[P-YVNUD]]
 
 ## Tie's Extra Questions: Spring 2015
 

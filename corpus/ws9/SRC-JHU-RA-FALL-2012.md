@@ -13,7 +13,15 @@ payload:
   source_kind: university-exam
   institution: jhu
   area: real-analysis
-  problems: []
+  problems:
+  - P-PGDJ2
+  - P-RBVY6
+  - P-QOSOD
+  - P-8XT01
+  - P-YPGAW
+  - P-4KTFN
+  - P-YBT6I
+  - P-I753O
   date:
     kind: academic-term
     term: fall
@@ -21,5 +29,5 @@ payload:
 ---
 
 ::: remark
-JHU real-analysis Fall 2012. Recorded from the source corpus' exam-term annotations. The paper is the sitting headed `ANALYSIS QUALIFYING EXAM, FALL 2012` in `assets/attachments/JHU Years of Analysis Exams.pdf` (also https://math.jhu.edu/gradexam/analysisexams.pdf). `problems:` is left empty: exam #4 (continuous $f:\mathbb{C}\to\mathbb{C}$, holomorphic on $\mathbb{C}\setminus I$ for $I=[0,1]$, prove entire) has no matching P- card. Unique matches for the other problems are #1 `P-PGDJ2`, #2 `P-RBVY6`, #3 `P-QOSOD`, #5 `P-YPGAW`, #6 `P-4KTFN`, #7 `P-YBT6I`, #8 `P-I753O`.
+JHU real-analysis Fall 2012. The paper is the sitting headed `ANALYSIS QUALIFYING EXAM, FALL 2012` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). The list is the sitting order on that paper.
 :::

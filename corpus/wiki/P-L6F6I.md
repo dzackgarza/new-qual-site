@@ -47,7 +47,7 @@ Spaces
 - $K \surjects T^2$
 	- Doesn't cover, would induce $\pi_1(K) \injects \pi_1(T^2) \implies \ZZ\semidirect \ZZ \injects \ZZ^2$ but this would be a non-abelian subgroup of an abelian group.
 - $T^2 \surjects K$
-  - ?
+	- Covers, #todo
 
 :::{.remark}
 Not complete!

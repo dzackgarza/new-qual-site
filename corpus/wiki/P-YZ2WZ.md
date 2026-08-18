@@ -11,7 +11,7 @@ classification:
   - fubini-tonelli
 relations: []
 review: draft
-solved: false
+solved: true
 ---
 :::{.warnings}
 This problem may be much harder than expected.
@@ -19,6 +19,7 @@ Recommended skip.
 :::
 
 
+::: problem
 Let $f: \RR \cross \RR \to \RR$ be a measurable function and for $x\in \RR$ define the set
 \[
 E_x \da \ts{ y\in \RR \st \mu\qty{ z\in \RR \st f(x,z) = f(x, y) } > 0 } 
@@ -29,6 +30,8 @@ E \da \Union_{x\in \RR} \ts{ x } \cross E_x
 .\]
 
 > Hint: consider the measurable function $h(x,y,z) \da f(x, y) - f(x, z)$.
+:::
+
 ::: {.solution}
 > **AI-Generated Solution**
 

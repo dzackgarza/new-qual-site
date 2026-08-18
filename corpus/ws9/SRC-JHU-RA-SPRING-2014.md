@@ -13,7 +13,15 @@ payload:
   source_kind: university-exam
   institution: jhu
   area: real-analysis
-  problems: []
+  problems:
+  - P-8XT27
+  - P-4NYI7
+  - P-8XT28
+  - P-MSHRB
+  - P-8XT29
+  - P-8XT30
+  - P-8XT31
+  - P-8XT32
   date:
     kind: academic-term
     term: spring
@@ -21,5 +29,5 @@ payload:
 ---
 
 ::: remark
-JHU real-analysis Spring 2014. Recorded from the source corpus' exam-term annotations. The paper is the sitting headed `QUALIFYING EXAM - ANALYSIS - SPRING 2014` in `assets/attachments/JHU Years of Analysis Exams.pdf` (also https://math.jhu.edu/gradexam/analysisexams.pdf). `problems:` is left empty: exam #1 (dominated a.e. convergence implies almost-uniform convergence on a closed subset, without Egoroff) has no matching P- card. A unique match later on the paper is #4 `P-MSHRB`.
+JHU real-analysis Spring 2014. The paper is the sitting headed `QUALIFYING EXAM - ANALYSIS - SPRING 2014` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). The list is the sitting order on that paper.
 :::

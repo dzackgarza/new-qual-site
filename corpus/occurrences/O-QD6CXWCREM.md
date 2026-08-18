@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-QD6CXWCREM
 kind: occurrence
-title: P-Z45BG at Spring 20202 HW 3 (complex-analysis)
+title: P-TVUOV at Spring 20202 HW 3 (complex-analysis)
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - argument-principle
 relations:
 - kind: instance-of
-  target: P-Z45BG
+  target: P-TVUOV
 review: draft
 payload:
   source: SRC-CA-ART-RY4G4M
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-Z45BG]] appeared at Spring 20202 HW 3 (complex-analysis), problem 3.
+[[P-TVUOV]] appeared at Spring 20202 HW 3 (complex-analysis), problem 3.
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-ZXJ2DLFJPN
 kind: occurrence
-title: P-CFSC6 at UGA real-analysis June 2005
+title: P-AIDWR at UGA real-analysis June 2005
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-CFSC6
+  target: P-AIDWR
 review: draft
 payload:
   source: SRC-UGA-RA-JUNE-2005
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-CFSC6]] appeared at UGA real-analysis June 2005.
+[[P-AIDWR]] appeared at UGA real-analysis June 2005.
 :::

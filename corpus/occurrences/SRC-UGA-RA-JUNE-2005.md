@@ -13,11 +13,15 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-8RB01
   date:
     kind: year
     year: 2005
 ---
 
 ::: remark
-UGA real-analysis June 2005. Recorded from the source corpus' exam-term annotations. No Quals posting `Real Analysis [June 2005].docx` (ordinary space or NBSP) is on `https://www.math.uga.edu/sites/default/files/Quals/`; the department previous-years table lists Fall 2005 Real Analysis as n/a. `problems:` is left empty: the exam paper was not found.
+UGA real-analysis June 2005. Extra_Questions (`assets/ws9/qual-wiki/native/20_Real_Analysis/600_Qual_Questions_UGA/Extra_Questions.md.source`) has item 1 as (June 2005 1a) and (June 2005 1b), then (June 2005 3b) and (June 2005 5). Item 2 is a hole, so 3b and 5 are not listed.
+Item 2 was not in Extra_Questions, `wiki/20_Real_Analysis/08_Quals/`, `.tmp-uga-ra-empty/` (`analysis_2003-2007.txt`, `analysis_2008-2013.txt`, `analysis_2014-2016.txt`), or the other `600_Qual_Questions_UGA` files.
+The prefix is exam-number order from Extra_Questions.
 :::

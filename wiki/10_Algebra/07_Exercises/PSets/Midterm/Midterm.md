@@ -1,5 +1,6 @@
 ---
-title: Midterm 
+order: 1
+title: Midterm problems
 ---
 
 # Problem 1

@@ -4,10 +4,6 @@ order: 30
 
 # $L^2$ and Fourier Analysis
 
-## Spring 2020 # 6
-
-[[P-MKF4V]]
-
 ## Fall 2017 # 5
 
 
@@ -16,10 +12,6 @@ order: 30
 ## Spring 2015 # 6
 
 ## Fall 2014 # 5
-
-## Fall 2020 \# 5
-
-[[P-KRYFQ]]
 
 ## Fall 2020.5
 

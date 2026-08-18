@@ -88,7 +88,6 @@ where each group with $a_k$ has $2^k$ terms.
     the sequence $\theset{f_k(x)}$ is Cauchy in $\RR$.
     So define $f(x) \definedas \lim_k f_k(x)$.
 
-
 3.  Show that $\norm{f_k - f} \to 0$:
   \[
   \abs{f_k(x) - f_j(x)} < \varepsilon ~\forall x \implies \lim_{j} \abs{f_k(x) - f_j(x)} <\varepsilon ~\forall x

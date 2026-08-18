@@ -21,5 +21,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis January 2020. Recorded from the source corpus' exam-term annotations. `problems:` is left empty: the current Quals listing at https://www.math.uga.edu/past-qualifying-exams-1 has no January 2020 Real Analysis file, and `Real Analysis [January 2020].docx` (regular space and NBSP) 404s under https://www.math.uga.edu/sites/default/files/Quals/. Spring 2020 is a separate Quals sitting (`Real Analysis [Spring 2020].docx`, headed Spring 2020) and was not used as this paper. The catalog PDF `RealAnalysisQual_Spring2020.pdf` currently 404s. Native RA material under `assets/ws9/` is by topic, not this sitting. Order was not taken from occurrence cards.
+UGA real-analysis January 2020. Extra_Questions (`assets/ws9/qual-wiki/native/20_Real_Analysis/600_Qual_Questions_UGA/Extra_Questions.md.source`) has (January 2020 4a) and (January 2020, 6a) only; item 1 was not in Extra_Questions, `wiki/20_Real_Analysis/08_Quals/`, `.tmp-uga-ra-empty/` (`analysis_2003-2007.txt`, `analysis_2008-2013.txt`, `analysis_2014-2016.txt`, `JAN-2019.txt`), or the other `600_Qual_Questions_UGA` files.
+Spring 2020 is a different sitting (`SRC-UGA-RA-SPRING-2020`). `problems:` is left empty so the list does not start at 4.
 :::

@@ -1,4 +1,5 @@
 ---
+order: 999
 sort: 999
 title: "Exercises: Singularities"
 ---
@@ -29,7 +30,7 @@ title: "Exercises: Singularities"
 
 [[E-WXHMJ]]
 
-## Poles 
+## Poles
 
 [[E-LIK72]]
 
@@ -57,10 +58,9 @@ title: "Exercises: Singularities"
 
 [[E-JUT2P]]
 
-[[E-KUGNH]]
-[[E-4J6IB]]
+[[E-KUGNH]] [[E-4J6IB]]
 
-## Singularities at Infinity 
+## Singularities at Infinity
 
 [[E-W2CWJ]]
 

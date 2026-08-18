@@ -15,10 +15,14 @@ payload:
   area: topology
   problems:
   - P-IT3OF
+  - P-8TS17
   - P-CDWQH
   - P-FD3FN
   - P-HCQNH
+  - P-LMVF6
+  - P-8TS18
   - P-L4EMZ
+  - P-8TS19
   date:
     kind: academic-term
     term: spring
@@ -26,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2012. The paper is the current Quals posting `Topology [Spring 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #2 (definition of a normal covering, and a non-normal cover of the theta graph) has no matching P-card; `P-T5QRW` merges that with a $\pi_1$-criterion from another sitting. Exam #6 (definition of Hausdorff, and a compact subset of a Hausdorff space is closed) has no matching P-card; `P-SG462` states only the second part. Exam #8 (path-connected implies connected, and the converse) has no matching P-card.
+UGA topology Spring 2012. The paper is the current Quals posting `Topology [Spring 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

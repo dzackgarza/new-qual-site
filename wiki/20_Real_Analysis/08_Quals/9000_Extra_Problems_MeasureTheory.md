@@ -30,7 +30,7 @@ Uniform Convergence [[E-TZFC7]] [[E-7EL3U]] [[E-UYQED]] Measure Theory [[E-ASWCD
 
 ## Continuity
 
-[[P-YCX4L]]
+[[P-DS4D6]]
 
 ## Differentiation
 

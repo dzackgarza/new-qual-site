@@ -27,7 +27,7 @@ Big: $M(z) = -4z^3$.
 Small: $m(z) = z^7 - 1$.
 Then on $\abs{z} = 1$,
 \[
-\abs{m(z)} = \abs{z^7-1} \leq \abs{z}^7 + 1 = 2 < 4 = \abs{-4z^4}
+\abs{m(z)} = \abs{z^7-1} \leq \abs{z}^7 + 1 = 2 < 4 = \abs{-4z^3}
 ,\]
 so $f$ and $M$ have the same number of zeros: three.
 :::

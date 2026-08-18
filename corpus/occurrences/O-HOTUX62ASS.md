@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-HOTUX62ASS
 kind: occurrence
-title: P-K4EJA at UGA real-analysis Fall 2020
+title: P-I3DSE at UGA real-analysis Fall 2020
 classification:
   areas:
   - real-analysis
@@ -11,7 +11,7 @@ classification:
   - measure-theory
 relations:
 - kind: instance-of
-  target: P-K4EJA
+  target: P-I3DSE
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2020
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-K4EJA]] appeared at UGA real-analysis Fall 2020.
+[[P-I3DSE]] appeared at UGA real-analysis Fall 2020.
 :::

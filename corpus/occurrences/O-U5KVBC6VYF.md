@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-U5KVBC6VYF
 kind: occurrence
-title: P-KRYFQ at UGA real-analysis Fall 2020
+title: P-B2CWE at UGA real-analysis Fall 2020
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - l1
 relations:
 - kind: instance-of
-  target: P-KRYFQ
+  target: P-B2CWE
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2020
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-KRYFQ]] appeared at UGA real-analysis Fall 2020.
+[[P-B2CWE]] appeared at UGA real-analysis Fall 2020.
 :::

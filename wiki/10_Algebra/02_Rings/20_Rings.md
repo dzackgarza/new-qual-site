@@ -1,22 +1,20 @@
-# Ring Theory
+---
+order: 20
+---
 
+# Ring Theory
 
 [[PR-PZZUO]]
 
-
 [[PR-ZDWKC]]
 
-
 [[D-A7MC4]]
-
 
 :::{.example title="?"}
 
 - $\gens{p, q} = \gens{\gcd(p, q)} \normal \ZZ$.
 
 :::
-
-
 
 ## Isomorphism Theorems
 
@@ -27,19 +25,13 @@ These are all basically the same for modules.
 
 [[PR-Z3YWJ]]
 
-
 [[PR-GGCEU]]
-
 
 [[PR-LJE4C]]
 
-
 [[E-VFEWT]]
 
-
-
 ## Important Techniques
-
 
 [[PR-DDDXH]]
 
@@ -54,10 +46,7 @@ This forces $x=r\inv$.
 
 :::
 
-
-
 [[PR-76BDN]]
-
 
 :::{.proof title="of 1"}
 Use the ideal correspondence theorem: $\Id(R/\mfm)$ are ideals of $R$ containing $\mfm$:
@@ -69,7 +58,6 @@ Use the ideal correspondence theorem: $\Id(R/\mfm)$ are ideals of $R$ containing
 .\]
 
 :::
-
 
 :::{.proof title="of 2"}
 $\impliedby$:
@@ -94,9 +82,6 @@ xy \da (a+\mfp)(b+\mfp) \da ab + \mfp = 0 \mod \mfp
 .\]
 Since $R/\mfp$ is a domain, assuming $x\neq 0 \mod \mfp$ we have $y = 0 \mod \mfp$, so $y\in \mfp$.
 
-
-
-
 :::
 
 :::{.remark}
@@ -107,16 +92,10 @@ I \text{ maximal } \iff R/I \in \Field {\color{blue} \implies } R/I \in \mathsf{
 
 :::
 
-
 :::{.fact}
 If $\mfm$ is maximal and $x \in R\sm \mfm$ then $\mfm + Rx = R = \gens{ 1}$.
 
 :::
-
-
-
-
-
 
 ## Undergrad Review
 
@@ -129,7 +108,6 @@ Notation:
 :::
 
 ### Basics 
-
 
 [[D-GURUB]]
 
@@ -164,9 +142,7 @@ Important notes:
 
 [[D-GOFWL]]
 
-
 [[D-O26OY]]
-
 
 ### Elements  
 
@@ -188,7 +164,6 @@ If $R$ is a UFD, then irreducible $\implies$ prime, so this is an iff.
 
 ### Ideals
 
-
 :::{.example title="of specs"}
 \envlist
 
@@ -199,7 +174,6 @@ If $R$ is a UFD, then irreducible $\implies$ prime, so this is an iff.
   - $\mfm \da \ts{ f = \sum_I a_I x^I\in \kxn \st a_0 = 0  } \in \mspec \kxn$ (i.e. this is the ideal of polynomials with no constant term).
 
 :::
-
 
 [[PR-RHQZT]]
 
@@ -230,10 +204,6 @@ But $[y^3]$ is not prime since it divides $[x^2]$ but doesn't divide $[x]$.
 [[D-CXXCG]]
 
 [[D-7XH2R]]
-
-
-
-
 
 :::{.example title="Some counterexamples"}
 Some examples.
@@ -309,7 +279,6 @@ Every field is an integral domain, but e.g. $\ZZ$ is an integral domain that is 
 
 [[D-NKRGN]]
 
-
 ### Others
 
 [[D-TZXBO]]
@@ -344,7 +313,6 @@ Motivation: if $R = \OO_{X, x}$ is the ring of germs at $x$ of an algebraic vari
 [[PR-GEHJF]]
 
 [[E-XH2QU]]
-
 
 :::{.example title="?"}
 A polynomial ring over a PID is not necessarily a PID: take $\gens{2, x} \normal \ZZ[x]$.
@@ -394,7 +362,6 @@ Sketch proofs of the inclusions:
 
 :::
 
-
 ## Radicals
 
 [[D-JLCOX]]
@@ -406,7 +373,6 @@ In general, "radical" refers to "bad elements" of some type to be quotiented out
 
 [[D-GIGM2]]
 
-
 :::{.fact}
 The binomial expansion works in any ring:
 \[
@@ -417,7 +383,6 @@ This is useful when considering nilpotents or radicals.
 
 :::
 
-
 [[E-P5BF6]]
 
 [[D-C2IM4]]
@@ -425,7 +390,6 @@ This is useful when considering nilpotents or radicals.
 [[E-JAPBK]]
 
 [[E-2ZO7O]]
-
 
 [[D-2IO6Q]]
 
@@ -436,7 +400,6 @@ This is useful when considering nilpotents or radicals.
 [[D-4KM4P]]
 
 [[D-CYAJI]]
-
 
 [[T-ZOTWN]]
 

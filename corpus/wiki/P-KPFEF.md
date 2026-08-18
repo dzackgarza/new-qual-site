@@ -14,7 +14,7 @@ relations: []
 review: draft
 solved: true
 ---
-a. Prove that if $g\in L^1(\RR)$ then
+a. Prove that if $f\in L^1(\RR)$ then
 \[
 \lim_{N\to \infty} \int _{\abs{x} \geq N} \abs{f(x)} \, dx = 0
 ,\]

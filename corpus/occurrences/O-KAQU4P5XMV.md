@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-KAQU4P5XMV
 kind: occurrence
-title: P-UDEN2 at UGA complex-analysis Spring 2014
+title: P-ZRVTI at UGA complex-analysis Spring 2014
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - casorati-weierstrass
 relations:
 - kind: instance-of
-  target: P-UDEN2
+  target: P-ZRVTI
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2014
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-UDEN2]] appeared at UGA complex-analysis Spring 2014.
+[[P-ZRVTI]] appeared at UGA complex-analysis Spring 2014.
 :::

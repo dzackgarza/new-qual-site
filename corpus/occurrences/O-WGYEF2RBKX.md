@@ -8,7 +8,6 @@ classification:
   - prelim
   topics:
   - multivariable-calculus
-  - linear-algebra
 relations:
 - kind: instance-of
   target: P-FPMMA

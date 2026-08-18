@@ -13,7 +13,14 @@ payload:
   source_kind: university-exam
   institution: jhu
   area: real-analysis
-  problems: []
+  problems:
+  - P-8XT04
+  - P-MFYGZ
+  - P-OEFYN
+  - P-8XT05
+  - P-8XT06
+  - P-8XT07
+  - P-G62KK
   date:
     kind: academic-term
     term: fall
@@ -21,5 +28,5 @@ payload:
 ---
 
 ::: remark
-JHU real-analysis Fall 2014. Recorded from the source corpus' exam-term annotations. The paper is the sitting headed `Qualifying Exam - Analysis - Fall 2014` in `assets/attachments/JHU Years of Analysis Exams.pdf` (also https://math.jhu.edu/gradexam/analysisexams.pdf). `problems:` is left empty: exam #1 ($f_n\to f$ a.e. on the unit square with $\int|f_n|\to\int|f|$, prove $L^1$ convergence on subsets and on $Q$) has no matching P- card. Unique matches later on the paper are #2 `P-MFYGZ`, #3 `P-OEFYN`, #7 `P-G62KK`.
+JHU real-analysis Fall 2014. The paper is the sitting headed `Qualifying Exam - Analysis - Fall 2014` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). The list is the sitting order on that paper.
 :::

@@ -129,7 +129,6 @@ q &= \frac p {p-1}
 \leq \norm{f}_p + \norm{g}_p 
 .\]
 
-
 :::
   
 [[PR-2P7FZ]]
@@ -143,7 +142,6 @@ q &= \frac p {p-1}
 .\]
 
 :::
-
 
 ## Inequalities that appear in proofs 
 
@@ -168,6 +166,5 @@ q &= \frac p {p-1}
 :::
 
 [[PR-2C3SZ]]
-
 
 - $\sqrt{x + y} \leq \sqrt{x} + \sqrt{y}$.

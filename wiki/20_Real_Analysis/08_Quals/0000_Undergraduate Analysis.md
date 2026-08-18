@@ -70,7 +70,7 @@ order: 0
 
 ## Spring 2016 # 1
 
-[[P-FKKSH]]
+[[P-VXO5U]]
 
 ## Fall 2015 # 1
 
@@ -79,7 +79,7 @@ order: 0
 
 ## Fall 2020 \# 3
 
-[[P-K4EJA]]
+[[P-I3DSE]]
 
 ## Unsorted
 
@@ -149,7 +149,7 @@ order: 0
 
 ^6ae65c
 
-[[P-VXO5U]] 4. $\lim _{n \to \infty} e_{n} = \lim _{n \to \infty} E_{n}$.
+[[P-VXO5U]]
 
 ## Fall 2015.1
 

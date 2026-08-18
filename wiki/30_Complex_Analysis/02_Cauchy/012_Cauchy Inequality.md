@@ -1,3 +1,7 @@
+---
+order: 12
+---
+
 # Cauchy's Inequality
 
 [[T-22RQZ]]
@@ -30,5 +34,4 @@ The $n$th Taylor coefficient of an analytic function is at most $\sup_{\abs z = 
 ## Exercises
 
 [[E-BPSOU]]
-
 

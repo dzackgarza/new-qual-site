@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-IYGVLLPLHC
 kind: occurrence
-title: P-AZ46Z at UGA topology Fall 2010
+title: P-K5XUM at UGA topology Fall 2010
 classification:
   areas:
   - topology
@@ -12,7 +12,7 @@ classification:
   - tube-lemma
 relations:
 - kind: instance-of
-  target: P-AZ46Z
+  target: P-K5XUM
 review: draft
 payload:
   source: SRC-UGA-TOP-FALL-2010
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-AZ46Z]] appeared at UGA topology Fall 2010.
+[[P-K5XUM]] appeared at UGA topology Fall 2010.
 :::

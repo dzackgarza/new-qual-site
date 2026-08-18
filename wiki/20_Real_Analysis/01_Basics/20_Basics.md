@@ -1,8 +1,9 @@
 ---
 order: 20
+title: Theorems
 ---
 
-# Basics
+# Theorems
 
 ## Theorems
 
@@ -26,8 +27,20 @@ Take an open cover by $\delta_x/2$ balls, extract a finite subcover, take $\delt
 
 [[PR-25GM2]]
 
-::: {.proof title="?"}
-Todo.
+::: {.proof title="Compact iff sequentially compact, metric spaces"}
+Let $(X,d)$ be a metric space.
+
+- Compact $\implies$ sequentially compact.
+  If a sequence $\theset{x_n}$ takes only finitely many values, some value occurs infinitely often and that constant subsequence converges.
+  Otherwise pass to infinitely many distinct terms and write $S$ for their set.
+  If no subsequence of $\theset{x_n}$ converges in $X$, then $S$ has no limit point in $X$, so $S$ is closed and discrete: each $s\in S$ has a ball $B_s$ with $B_s\cap S = \theset{s}$.
+  Then $\theset{B_s}_{s\in S}$ together with $X\setminus S$ is an open cover with no finite subcover, so $X$ is not compact.
+
+- Sequentially compact $\implies$ compact.
+  A sequentially compact metric space is complete: a Cauchy sequence has a convergent subsequence, hence converges to the same limit.
+  It is totally bounded: if not, some $\eps>0$ admits a sequence with $d(x_i,x_j)\geq \eps$ for $i\neq j$, and that sequence has no Cauchy (hence no convergent) subsequence.
+  Complete and totally bounded metric spaces are compact: if an open cover $\mathcal{U}$ had no finite subcover, total boundedness would produce a nested sequence of nonempty closed sets $F_n$ with $\operatorname{diam} F_n \to 0$ and no $F_n$ covered by finitely many members of $\mathcal{U}$; completeness supplies a point of $\intersect_n F_n$, which lies in some $U\in\mathcal{U}$, and for large $n$ one has $F_n\subset U$.
+
 :::
 
 [[PR-FKJCO]]

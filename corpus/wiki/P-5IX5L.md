@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5IX5L
 kind: problem
-title: "Hungerford 2.5.9"
+title: Unique normal subgroup of index $q$ when $|G|=p^n q$ with $p>q$
 classification:
   areas:
   - algebra

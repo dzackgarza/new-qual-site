@@ -1,4 +1,5 @@
 ---
+order: 100002
 title: "Problem Set 10"
 ---
 
@@ -32,7 +33,6 @@ Let $f(x) = \det(P + xQ) \in R[x]$, then $f$ is a polynomial in $x$ which is not
 To see that $f \not \equiv 0$, we can use that fact that $P$ is invertible to evaluate $f(0) = \det(P) \neq 0$.
 
 We can now note that $f$ has finite degree, and thus finitely many zeroes in $R$.
-
 
 # Problem 3
 
@@ -108,7 +108,6 @@ Noting that
 q(x) &= x^3-x^2-8x+12
 ,\end{align*}
 
-
 these choices correspond to the matrices
 
 \begin{align*}
@@ -183,16 +182,12 @@ R_4: &J_2^1 \oplus J_2^1 \oplus J_2^1 \oplus J_2^2 \oplus J_3 \\ \\
 R_5: &J_2^2 \oplus J_3^1 \oplus J_3^1 \oplus J_3^1 \oplus J_3^1 \\
 .\end{align*}
 
-
-
-
 ## Part 2
 
 We'll first exhibit the possibilities over $\CC$, then show what subset can be obtained over $\QQ$.
 
 Over $\CC$, we have $x^2 + 1 = (x-i)(x+i)$.
 By the same argument used in Part 1, we know that $q(x)$ is the largest invariant factor, and since $\deg q = 3$, the degrees of the remaining factors must sum to 4 (since the degree $\chi_A$ will be 7, and it's the product of these factors).
-
 
 We also know that the degrees must forma weakly decreasing partition of $4$, which are
 
@@ -204,7 +199,6 @@ We also know that the degrees must forma weakly decreasing partition of $4$, whi
   - This also must satisfy $a_1 = a_2$, so there are ${3 \choose 2}/2 = 3$ possibilities
 
 The possibilities are thus
-
 
 \begin{align*}
 R_1: a_1 = (x-i) && a_2 = (x-i) && a_3 = (x-i) && a_4 = (x-i) && a_5 = q(x) \\
@@ -230,7 +224,6 @@ It is then easy to see that if $A$ is taken over $\QQ$ instead, only form $R_3$ 
 Let $n J_\lambda^k$ denote $J_\lambda^k \oplus J_\lambda^k \oplus \cdots \oplus J_\lambda^k$, where $n$ copies appear in the direct sum corresponding to $n$ Jordan blocks.
 We can immediately obtain the corresponding Jordan forms:
 
-
 \begin{align*}
 R_1: 5 J_i^1 \oplus J_{-i}^1 \oplus J_7^1 \\
 R_2: 5 J_{-i}^1 \oplus J_{i}^1 \oplus J_7^1\\
@@ -245,7 +238,6 @@ R_{10}:  3J_i^1 \oplus 3J_{-i}^1 \oplus J_7^1 \\
 R_{11}:  J_i^1 \oplus 3J_{-i}^1 \oplus 3J_7^1 \\
 R_{12}:  3J_i^1 \oplus J_{-i}^1 \oplus 3J_7^1
 .\end{align*}
-
 
 # Problem 6
 
@@ -274,7 +266,6 @@ Letting $\lambda_i$ denote the eigenvalues of $\phi$, write
 $$
 V = \bigoplus_i V_{\lambda_i}.
 $$
-
 
 Now let $\vector v$ be an eigenvector corresponding to $\lambda_i$. 
 We have $\phi(\vector v) = \lambda_i \vector v$, and

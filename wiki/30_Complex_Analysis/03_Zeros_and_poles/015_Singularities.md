@@ -1,4 +1,9 @@
-# Zeros and Singularities
+---
+order: 15
+title: Isolated singularities
+---
+
+# Isolated singularities
 
 ## Definitions
 
@@ -93,17 +98,13 @@ The function $G(z) \da 1/\sin(\pi/z)$ has a non-isolated singularity at 0 and is
 
 ## Zeros
 
-
 [[T-YKVFQ]]
-
 
 :::{.remark}
 Why this is useful: every infinite subset of a disk has a limit point.
 So e.g. if $f$ is holomorphic and has infinitely many zeros in $\DD$, $f$ is identically zero by the identity principle.
 
 :::
-
-
 
 [[PR-5A64G]]
 
@@ -152,7 +153,6 @@ $\contradiction$
 
 [[PR-ITZIT]]
 
-
 ## Poles
 
 [[D-AUD6K]]
@@ -191,5 +191,4 @@ Then $f(z^2) = z^{-2m} h(z^z)$ and $h(z^2)\mid_{z=0} = h(0) \neq 0$.
 :::
 
 [[D-C3JIU]]
-
 

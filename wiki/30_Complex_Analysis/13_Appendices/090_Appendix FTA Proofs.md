@@ -1,3 +1,7 @@
+---
+order: 90
+---
+
 # Proofs of the Fundamental Theorem of Algebra
 
 ### Argument Principle
@@ -88,7 +92,6 @@ N(0) = {1\over 2\pi i} \oint_{\abs{\xi} = R} g(\xi) \,d\xi
   - $p$ is entire and thus continuous, and since $\bar{D}_r(0)$ is a compact set, $p$ achieves a min $A$ there
   - Set $C \da \min(A, B)$, then $\abs{p(z)} \geq C$ on all of $\CC$ and thus $\abs{1/p(z)} \leq C$ everywhere. 
   - So $1/p(z)$ is bounded an entire and thus constant by Liouville's theorem -- but this forces $p$ to be constant. $\contradiction$
-
 
 :::
 

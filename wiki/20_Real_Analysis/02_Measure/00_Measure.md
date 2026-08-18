@@ -43,7 +43,6 @@ Idea: break into disjoint annuli!
 
   ![image_2021-05-28-23-29-31.png](../../../../assets/assets/figures/image_2021-05-28-23-29-31.png)
 
-
 :::
 
 :::{.proof title="of continuity of measure from below, detailed"}
@@ -89,7 +88,6 @@ F_1 = F \disjoint \Disjoint_{k=1}^{\infty} E_k
   \implies \mu(X) &= \mu(A) + \mu(X\sm A) && \text{countable additivity} \\
   \implies \mu(X) -\mu(A) &= \mu(X\sm A) && \text{if } \mu(A) < \infty 
   .\]
-
 
 - Now use that $\mu(F_1)<\infty$ to justify subtracting it from both sides:
 \[
@@ -178,10 +176,16 @@ Take the cone on $f$ to get $F(x, y) = f(x)$, then compose $F$ with the linear t
 
 [[PR-Z5VSQ]]
 
-:::{.proof title="?"}
-By counterexample: there is a homeomorphism that takes that Cantor set (measure zero) to a fat Cantor set.
+:::{.proof title="Homeomorphisms need not preserve measurability"}
+Let $C\subseteq[0,1]$ be the middle-thirds Cantor set, so $C$ is compact with $m(C)=0$, and let $c\colon[0,1]\to[0,1]$ be the Cantor–Lebesgue function (constant on each complementary interval of $C$, $c(0)=0$, $c(1)=1$).
+The map $g(x)\da x+c(x)$ is continuous and strictly increasing (each increment of $x$ is at least the increment of $x$), hence a homeomorphism $[0,1]\to[0,2]$.
 
-#todo Expand
+On each complementary interval of $C$, $c$ is constant, so $g$ translates that interval.
+Thus $m(g([0,1]\setminus C)) = m([0,1]\setminus C) = 1$, and therefore $m(g(C)) = 2-1 = 1$.
+In particular $g(C)$ has positive measure, so it contains a non-Lebesgue-measurable subset $A$ (Vitali).
+Set $B\da g^{-1}(A)$.
+Then $B\subseteq C$, so $m_*(B)=0$ and $B$ is Lebesgue measurable, while $g(B)=A$ is not.
+The homeomorphism $g$ therefore sends a measurable set to a non-measurable set.
 
 :::
 

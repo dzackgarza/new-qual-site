@@ -13,7 +13,18 @@ payload:
   source_kind: university-exam
   institution: tamu
   area: real-analysis
-  problems: []
+  problems:
+  - P-8XT108
+  - P-8XT109
+  - P-8XT110
+  - P-DQNN6
+  - P-TCJBY
+  - P-8XT111
+  - P-8XT112
+  - P-8XT113
+  - P-8XT114
+  - P-FSSHC
+  - P-MIAAZ
   date:
     kind: academic-term
     term: spring
@@ -21,5 +32,5 @@ payload:
 ---
 
 ::: remark
-TAMU real-analysis January 2017. Recorded from the source corpus' exam-term annotations. The paper is the department posting https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j17.pdf (Real Analysis Qualifying Exam, January, 2017, eleven problems). `problems:` is left empty: exam #1 ($\mu\{|f_n|>1/n\}<n^{-3/2}$ implies $f_n\to 0$ a.e., from the definition of a.e. convergence) has no matching P- card. Unique matches among later problems are #4 `P-DQNN6`, #5 `P-TCJBY`, #10 `P-FSSHC`, and #11 `P-MIAAZ`. Order was not taken from occurrence cards.
+TAMU real-analysis January 2017. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j17.pdf (Real Analysis Qualifying Exam, January, 2017). The list is the sitting order on that paper.
 :::

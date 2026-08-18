@@ -1,3 +1,7 @@
+---
+order: 230
+---
+
 # Homology
 
 ## Useful Facts
@@ -42,7 +46,6 @@ H_{n}\qty{\prod_{j=1}^k X_{j}} = \bigoplus_{\mathbf{x} \in \mathcal{P}(n,k)} \bi
 
 [[T-FBMYQ]]
 
-
 :::{.fact title="Assorted facts"}
 \envlist
 
@@ -76,7 +79,6 @@ H_{i}(S^n) =
 :::{.example title="Surfaces"}
 
 :::
-
 
 ## Mayer-Vietoris
 
@@ -140,12 +142,10 @@ H_{n}(X^{(k)},X^{(k-1)}) \cong \begin{cases}\ZZ[\theset{e^n}]~ &k=n,\\ 0 &\text{
 
 :::
 
-
 ## Exercises
 
 [[P-S7WVQ]]
 
 [[E-AUAOC]]
-
 
 [^kunneth]: The generalization of Kunneth is as follows: write $\mathcal{P}(n, k)$ be the set of partitions of $n$ into $k$ parts, i.e. $\mathbf{x} \in \mathcal{P}(n,k) \implies \mathbf{x} = (x_{1}, x_{2}, \ldots, x_{k})$ where $\sum x_{i}  = n$. Then

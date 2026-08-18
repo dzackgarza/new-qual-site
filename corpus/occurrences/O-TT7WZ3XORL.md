@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-TT7WZ3XORL
 kind: occurrence
-title: P-E5NRO at UGA real-analysis Spring 2015
+title: P-Q7WNK at UGA real-analysis Spring 2015
 classification:
   areas:
   - real-analysis
@@ -10,7 +10,7 @@ classification:
   - measure-theory
 relations:
 - kind: instance-of
-  target: P-TEEXE
+  target: P-Q7WNK
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2015
@@ -18,5 +18,5 @@ payload:
 ---
 
 ::: remark
-[[P-E5NRO]] appeared at UGA real-analysis Spring 2015.
+[[P-Q7WNK]] appeared at UGA real-analysis Spring 2015.
 :::

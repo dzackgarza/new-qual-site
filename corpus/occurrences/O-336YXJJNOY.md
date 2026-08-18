@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-336YXJJNOY
 kind: occurrence
-title: P-2GD4H at UGA algebra Fall 2014
+title: P-EP64S at UGA algebra Fall 2014
 classification:
   areas:
   - algebra
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-2GD4H]] appeared at UGA algebra Fall 2014, problem 3.
+[[P-EP64S]] appeared at UGA algebra Fall 2014, problem 3.
 :::

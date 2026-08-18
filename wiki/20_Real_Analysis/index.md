@@ -8,7 +8,7 @@ order: 20
 ## Undergraduate Analysis
 
 > - **References**
->
+>   
 >   - Rudin: Chapters 2, 3, 4, 5, 7
 >
 >   - Folland: Section 0.6
@@ -32,7 +32,7 @@ order: 20
 ## Measure and Integration
 
 > - **References**:
->
+>   
 >   - Folland, Chapters 1, 2
 >
 >   - Stein and Shakarchi, Chapters 1, 2, 6
@@ -68,7 +68,7 @@ order: 20
 ## Function Spaces
 
 > - **References**:
->
+>   
 >   - Folland: Sections 5.2, 5.5, 6.2;
 >
 >   - Stein and Shakarchi: Chapter 4.
@@ -88,7 +88,7 @@ order: 20
 ## Hilbert space and $L^2$ spaces:
 
 > - **References**:
->
+>   
 >   - Folland: Sections 5.2, 5.5, 6.2;
 >
 >   - Stein and Shakarchi: Chapter 4.

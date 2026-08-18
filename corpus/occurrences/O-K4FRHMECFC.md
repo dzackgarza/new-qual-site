@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-K4FRHMECFC
 kind: occurrence
-title: P-3VOYM at UGA complex-analysis May 2021
+title: P-IP6QO at UGA complex-analysis May 2021
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-3VOYM
+  target: P-IP6QO
 review: draft
 payload:
   source: SRC-UGA-CA-MAY-2021
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-3VOYM]] appeared at UGA complex-analysis May 2021.
+[[P-IP6QO]] appeared at UGA complex-analysis May 2021.
 :::

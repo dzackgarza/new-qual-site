@@ -1,3 +1,7 @@
+---
+order: 36
+---
+
 # Galois Theory
 
 > Some useful exercises and solutions: <https://feog.github.io/chap4.pdf>
@@ -30,7 +34,6 @@
 - De-nesting radicals:
 
 ![figures/2021-08-15_00-44-15.png](../../../../assets/assets/figures/2021-08-15_00-44-15.png)
-
 
 :::
 
@@ -143,7 +146,6 @@ Take $f(x) \da 2x^5 -4x^2-3$, then for $g(x) \da 3x^5 +4x^2 - 2$ Eisenstein appl
 
 :::
 
-
 :::{.remark title="mod $p$ reduction checks to find a good $p$ for Eisenstein"}
 If $f(x) \equiv b(x+a)^n\mod p$ for some $p$ where $n\da \deg f$, then Eisenstein may work on $f(x-a)$ using the prime $p$.
 Note the change in signs/reverse translation.
@@ -160,7 +162,6 @@ f(x) \da x^3 + x^2 -48 x + 128 \leadsto f(x)\equiv (x-3)^3 \mod 5
 and Eisenstein on $f(x+3)$ with $p=5$ works.
 
 :::
-
 
 ## Computing
 
@@ -197,7 +198,6 @@ d\divides [\SF(f): \QQ]
   - Example: $x^4-5x^2+5$ has two pairs.
 
 :::
-
 
 ### Transitive Subgroups
 
@@ -276,7 +276,6 @@ $n=4$:
 
 :::
 
-
 :::{.fact title="Recognizing cycle types"}
 The following are the cycle types that can occur:
 
@@ -284,9 +283,7 @@ The following are the cycle types that can occur:
 
 :::
 
-
 [[PR-5PI25]]
-
 
 :::{.remark title="Other useful facts to reason about $A_n$"}
 \envlist
@@ -347,7 +344,6 @@ f(x) &\equiv (x-1)(x^3+x^2+x-1) \mod 3 &\implies \text{type } (1,3) \\
 
 So $G$ contains a 4-cycle and a 3-cycle.
 This is enough to show $G = A_4$.
-
 
 :::
 
@@ -419,7 +415,6 @@ f(x) = ax^3 + bx^2 + cx + d \implies \Delta = b²c² - 4ac³ - 4b³d - 27a²d² 
 \[
 f(t) = t³ + pt + q \implies \Delta = -4p³-27q²
 .\]
-
 
 :::
 
@@ -497,7 +492,6 @@ G \subseteq \gens{(1, 2), (3, 4)} = \ts{\id, (1,2), (3,4), (1,2)(3,4)} \cong C_2
 :::
 
 ### Cubics
-
 
 :::{.remark}
 Tricks/reminders:
@@ -579,12 +573,9 @@ So $G(f) = S_3$.
 
 :::
 
-
 ### Quartics
 
-
 [[D-4DWC5]]
-
 
 [[PR-E4T3S]]
 
@@ -649,7 +640,6 @@ Degree 3:
     - Note that there is exactly one real root and one conjugate pair, so $G$ contains a transposition $(23)$.
     - There is a 3-cycle $(123)$ given by fixing $\omega$ and sending $\zeta_3 \mapsto \zeta_3\omega$, and this is enough to generate $D_3 \cong S_3$.
 
-
 Degree 4:
 
 - $G(x^4-1) = C_2$:
@@ -674,12 +664,10 @@ Degree 4:
   \sigma(r_3) &= \sigma(ir_2) = ir_3 = i(ir_2) = -r_2 = r_4
     .\]
 
-
 General cases:
 
 - $G(x^p-1) = C_p\units$:
   - ?
-
 
 :::
 
@@ -696,7 +684,6 @@ General cases:
 - $G(x^4+2) = D_4$: 
   - The roots are $\zeta_8^k \omega$ for $\omega = 2^{1\over 4}, k = 1,3,5,7$ coprime to 8. 
   - The splitting field is $\QQ(\zeta_8, \omega) = \QQ(\zeta_4, \omega)$.
-
 
 - $G(x^4+3) = D_4$:
   - The roots are $\zeta_8^k, \omega$ for $\omega = 3^{1\over 4}, k=1,3,5,7$ coprime to 8.

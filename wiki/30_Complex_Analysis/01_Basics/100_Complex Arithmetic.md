@@ -14,13 +14,13 @@ order: 100
 [[P-43AXY]]
 
 ## Spring 2020 HW 1 # 4
-[[P-DMNOQ]]
+[[P-CZ3R7]]
 
 ## Spring 2020 HW 1 # 5
 [[P-FOXHV]]
 
 ## Spring 2020 HW 1 # 6
-[[P-ZRUZR]]
+[[P-37Z7J]]
 
 ## Spring 2020 HW 1 # 11
 [[P-UYWZ5]]
@@ -28,7 +28,7 @@ order: 100
 # Holomorphicity
 
 ## Spring 2020 HW 1 # 7
-[[P-I2KZL]]
+[[P-CV2MR]]
 
 ## Spring 2020 HW 1 # 8
 [[P-7UTDI]]
@@ -56,7 +56,6 @@ order: 100
 
 ### Spring 20202 HW 2 #  5
 [[P-LLNJ7]]
-
 
 :::{.fact title="The balancing exponentials trick"}
 There are formulas:
@@ -88,7 +87,6 @@ e^{-i\pi \over 2}+ e^{-3i\pi \over 2}
 .\]
 
 :::
-
 
 :::{.fact title="Some useful facts about basic complex algebra"}
 \[
@@ -136,9 +134,6 @@ Some other useful facts about the hyperbolic exponentials:
 f(z) &\da \cosh(z) \implies f^{(n)}(z) = {e^z + (-1)^n e^{-z}\over 2} \\
 f(z) &\da \sinh(z) \implies f^{(n)}(z) = {e^z - (-1)^{n} e^{-z}\over 2} 
 .\]
-
-
-
 
 :::
 

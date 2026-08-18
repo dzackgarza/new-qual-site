@@ -1,3 +1,7 @@
+---
+order: 10
+---
+
 # Cauchy-Goursat
 
 [[D-6DAXB]]
@@ -87,7 +91,6 @@ Apply Stokes':
 \[
 \oint_{\partial D} f(z) d z=\int_{D} d(f(z) d z)=\int_{D}\left(\frac{\partial f}{\partial z} d z+\frac{\partial f}{\partial \bar{z}} d \bar{z}\right) \wedge d z=\int_{D} \frac{\partial f}{\partial z} d z \wedge d z+0 d \bar{z} \wedge d z=0
 .\]
-
 
 :::
 

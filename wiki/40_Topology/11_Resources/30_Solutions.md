@@ -1,3 +1,6 @@
+---
+order: 30
+---
 
 # Solutions (Topology)
 
@@ -11,7 +14,6 @@
 
 [https://folk.ntnu.no/gereonq/MA3403H2018/](https://folk.ntnu.no/gereonq/MA3403H2018/)
 
-
 ## Hatcher Solutions
 
 [](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)[https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)
@@ -22,9 +24,11 @@
 
 **Note:** The superscript * denotes a missing solution, a partial solution, or a solution that’s wrong and has yet to be corrected.
 
-1.  This proof is, for all intents and purposes, complete. As noted on the page itself, however, the proof contains methodologies borrowed from other sources which, at face value, seem overly complicated. This is a reminder for me to go back and try simplifying the proof given the insight gained from the original.
-    
-2.  This solution is done. I’d like to go back and attempt to draw some sort of construction to illustrate the proof I mentioned for at least .
-    
-3.  This solution is done using a cheap, accurate method. It’s then redone using a laborious, perhaps-inaccurate-but-also-very-unwieldy method that doesn’t adapt well to the general case. It’s then ended by naively linking to a potential online solution that I didn’t bother to elaborate upon within the write-up itself. This note is an indication that future-decent-topologist-me should come back and try to nail this thing down.
+Status on the first three writeups:
+
+1. Essentially complete, but uses methods borrowed from other sources that look overly complicated; it can probably be simplified.
+
+2. Complete; a figure illustrating the construction is still missing.
+
+3. Complete by a short accurate method, then redone by a laborious and possibly inaccurate method that does not adapt to the general case, and closed with an unelaborated link to an online solution.
 

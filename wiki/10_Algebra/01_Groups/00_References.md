@@ -1,8 +1,7 @@
 ---
+order: 0
 title: Algebra Group and Ring Theory Resources
 ---
-
-Tags: #resources/solutions #resources/problem_collections #resources/pdfs
 
 # Solutions
 
@@ -51,18 +50,27 @@ Ring Theory: [https://people.math.sc.edu/mcnulty/qfers/rng.pdf](https://people.m
 [Ring Theory Qual Problems.pdf](attachments/Ring_Theory_Qual_Problems.pdf)
 
 - Week 2: Finite group theory (1/25)
-    - [Problems for discussion](https://www.mit.edu/~fengt/GroupTheory.pdf), collected together in [one file](https://www.mit.edu/~fengt/FiniteGroupsProblems.pdf).
-    - Dan Litt's [notes](https://www.mit.edu/~fengt/alggroups.pdf) on finite linear groups.
-    - Extra problems for practice: Spring 2010 M1, Spring 2012 A10, Fall 2013 M2, Spring 2014 A5, Fall 2014 A1, Fall 2015 M1, Spring 2016 M1, Spring 2016 A3, Fall 2016 M1.
-    - [Hints/Solutions](https://www.mit.edu/~fengt/GroupTheorySolns.pdf).
-    
+
+  - [Problems for discussion](https://www.mit.edu/~fengt/GroupTheory.pdf), collected together in [one file](https://www.mit.edu/~fengt/FiniteGroupsProblems.pdf).
+
+  - Dan Litt's [notes](https://www.mit.edu/~fengt/alggroups.pdf) on finite linear groups.
+
+  - Extra problems for practice: Spring 2010 M1, Spring 2012 A10, Fall 2013 M2, Spring 2014 A5, Fall 2014 A1, Fall 2015 M1, Spring 2016 M1, Spring 2016 A3, Fall 2016 M1.
+
+  - [Hints/Solutions](https://www.mit.edu/~fengt/GroupTheorySolns.pdf).
+
 - Week 4: Ring theory (2/22)
-    - [Problems for discussion](https://www.mit.edu/~fengt/Rings.pdf), collected together in [one file](https://www.mit.edu/~fengt/RingProblems.pdf).
-    - Extra problems for practice: Fall 2016 A6
-    - [Hints/Solutions](https://www.mit.edu/~fengt/RingsSolns.pdf).
+
+  - [Problems for discussion](https://www.mit.edu/~fengt/Rings.pdf), collected together in [one file](https://www.mit.edu/~fengt/RingProblems.pdf).
+
+  - Extra problems for practice: Fall 2016 A6
+
+  - [Hints/Solutions](https://www.mit.edu/~fengt/RingsSolns.pdf).
 
 - Week 6: Commutative algebra (3/8)
-    - [Problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), collected together in [one file](https://www.mit.edu/~fengt/CAlgProblems.pdf).
-    - Extra problems for practice: 2015 Spring M5
-    - [Hints/Solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf).
 
+  - [Problems for discussion](https://www.mit.edu/~fengt/CommutativeAlg.pdf), collected together in [one file](https://www.mit.edu/~fengt/CAlgProblems.pdf).
+
+  - Extra problems for practice: 2015 Spring M5
+
+  - [Hints/Solutions](https://www.mit.edu/~fengt/CAlgSolns.pdf).

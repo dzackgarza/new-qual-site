@@ -14,11 +14,14 @@ payload:
   institution: uga
   area: complex-analysis
   problems:
+  - P-8CA14
   - P-3AEDF
   - P-AEWN6
   - P-57CAX
   - P-Z4CIU
+  - P-8CA15
   - P-MBQNL
+  - P-8CA16
   date:
     kind: academic-term
     term: fall
@@ -26,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2016. The paper is the current Quals posting `Complex Analysis [Fall 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #2 is listed as `P-3AEDF`. Exam #5 is listed as `P-Z4CIU`. Exam #7 is listed as `P-MBQNL`. Exam #1 (Cayley map of the first quadrant onto the upper half-disk), #6 (Hurwitz: injective limit is injective or constant), and #8 (hyperbolic derivative of $\mathrm{Aut}(\Delta)$ and two fixed points) have no matching P-card.
+UGA complex-analysis Fall 2016. The paper is the current Quals posting `Complex Analysis [Fall 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BFall%C2%A02016%5D.docx`). The list is the sitting order on that paper.
 :::

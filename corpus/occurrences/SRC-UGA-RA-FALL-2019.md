@@ -13,7 +13,12 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
-  problems: []
+  problems:
+  - P-KBH2K
+  - P-S2SVK
+  - P-B6S3M
+  - P-X3MW2
+  - P-7QVGF
   date:
     kind: academic-term
     term: fall
@@ -21,5 +26,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Fall 2019. Recorded from the source corpus' exam-term annotations. The paper is the current Quals posting `Real Analysis [Fall 2019].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed August 2019. The catalog PDF `RealAnalysis_Fall2019.pdf` currently 404s. `problems:` is left empty: exam #1 (Cesàro means vanish if $a_n\to 0$ or $\sum a_n/n$ converges) is stated by `P-KBH2K`.
+UGA real-analysis Fall 2019. The paper is the current Quals posting `Real Analysis [Fall 2019].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed August 2019. The catalog PDF `RealAnalysis_Fall2019.pdf` currently 404s. The list is the sitting order on that paper.
 :::

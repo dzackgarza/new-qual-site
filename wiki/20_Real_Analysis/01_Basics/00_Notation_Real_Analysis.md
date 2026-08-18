@@ -15,4 +15,3 @@ order: 0
 | $X$                                                                                    | Generally a topological (or metric) space           |
 | $\del_x f = \dd{}{x}f = \dd{f}{x}$                                                     | The partial derivative of $f$ wrt $x$                                                    |
 
-

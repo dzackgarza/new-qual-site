@@ -6,13 +6,13 @@ order: 11
 
 ### Spring 20202 HW 3 #  4
 
-[[P-AORDL]]
+[[P-YZ4WV]]
 
-[[P-UDEN2]]
+[[P-ZRVTI]]
 
 ### Tie's Extra Questions: Fall 2009
 
-[[P-EER5M]]
+[[P-ZRVTI]]
 
 ### Spring 20202 HW 3 #  3.8.14
 

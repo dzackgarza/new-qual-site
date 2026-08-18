@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-6B5HEARIT5
 kind: occurrence
-title: P-EMPDB at UGA complex-analysis Fall 2021
+title: P-B4HPX at UGA complex-analysis Fall 2021
 classification:
   areas:
   - complex-analysis
@@ -11,7 +11,7 @@ classification:
   - holomorphic-functions
 relations:
 - kind: instance-of
-  target: P-EMPDB
+  target: P-B4HPX
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2021
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-EMPDB]] appeared at UGA complex-analysis Fall 2021.
+[[P-B4HPX]] appeared at UGA complex-analysis Fall 2021.
 :::

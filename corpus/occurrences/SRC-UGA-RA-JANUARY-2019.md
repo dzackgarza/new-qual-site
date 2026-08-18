@@ -13,6 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-RA19J1
+  - P-RA19J2
+  - P-C3MKZ
+  - P-BKCZH
+  - P-RA19J5
+  - P-RA19J6
   date:
     kind: academic-term
     term: spring
@@ -20,5 +27,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis January 2019. Recorded from the source corpus' exam-term annotations. `problems:` is left empty: the expected Quals files `Real Analysis [January 2019].docx` (regular space and NBSP) 404 under https://www.math.uga.edu/sites/default/files/Quals/. The Spring 2019 posting `Real Analysis [Spring 2019].docx` is headed Spring 2019 (five problems) and is a different paper. The January 23, 2019 sitting is the Quals transcription `assets/attachments/Day_9_January_2019_Qual.pdf`, already the source for `SRC-UGA-RA-JAN-2019`; that paper is not listed a second time here. Native Real Analysis material under `assets/ws9/` is by topic, not a distinct January 2019 Quals file. Order was not taken from occurrence cards.
+UGA real-analysis January 2019. Same sitting as `SRC-UGA-RA-JAN-2019`: the January 23, 2019 paper in `.tmp-uga-ra-empty/JAN-2019.txt`. Extra_Questions (`assets/ws9/qual-wiki/native/20_Real_Analysis/600_Qual_Questions_UGA/Extra_Questions.md.source`) has only item 4 of this paper.
+The list is the sitting order on that paper.
 :::

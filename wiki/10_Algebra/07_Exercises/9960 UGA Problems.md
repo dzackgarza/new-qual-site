@@ -1,6 +1,8 @@
-# UGA Fall 2019 Problem Sets
+---
+order: 9960
+---
 
-#resources/problem_collections
+# UGA Fall 2019 Problem Sets
 
 ## Problem Set One
 
@@ -30,7 +32,7 @@
 
 ### Qual Problems
 
-[[P-Z4O2M]] [[P-4AN7V]] [[P-VYWQS]] [[P-VWEPV]]
+[[P-Z4O2M]] [[P-4AN7V]] [[P-VYWQS]] [[P-MX2HR]]
 
 ## Problem Set Four
 
@@ -96,7 +98,7 @@
 
 ### Exercises
 
-[[P-LQR5G]] [[P-QTTDE]] [[P-ETEJW]]
+[[P-5IX5L]] [[P-N2MCE]] [[P-ETEJW]]
 
 [[P-XFX66]] [[P-73JT5]] [[P-IR6HQ]] [[P-YV744]] [[P-3ECUR]] [[P-QVPRB]] [[P-Q5ICU]]
 

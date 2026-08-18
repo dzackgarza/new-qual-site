@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-UJX4J7AHZ3
 kind: occurrence
-title: P-UZMFT at UGA complex-analysis Spring 2014
+title: P-IP6QO at UGA complex-analysis Spring 2014
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-UZMFT
+  target: P-IP6QO
 review: draft
 payload:
   source: SRC-UGA-CA-SPRING-2014
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-UZMFT]] appeared at UGA complex-analysis Spring 2014.
+[[P-IP6QO]] appeared at UGA complex-analysis Spring 2014.
 :::

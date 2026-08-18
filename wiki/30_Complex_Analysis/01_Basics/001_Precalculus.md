@@ -33,7 +33,6 @@ The sum of the interior angles of an $n\dash$gon is $(n-2)\pi$, where each angle
 
 :::
 
-
 :::{.remark}
 Another way to distinguish: write $f(x, y) = Ax^2 + Bxy + Cy^2 + \cdots$, then consider the discriminant $\Delta = B^2 - 4AC$:
 
@@ -43,7 +42,6 @@ Another way to distinguish: write $f(x, y) = Ax^2 + Bxy + Cy^2 + \cdots$, then c
 - $\Delta > 0 \iff$ hyperbola
 
 :::
-
 
 :::{.remark}
 Some useful parametric equations:
@@ -78,12 +76,9 @@ Some useful parametric equations:
 
 - Lines: $\bar{a}z + a\bar{z} + c = 0$.
 
-
 :::
 
-
 ## Algebra
-
 
 :::{.remark}
 Some useful numerology that comes up when trying to estimate when poles fall within a disc:
@@ -96,7 +91,6 @@ Some useful numerology that comes up when trying to estimate when poles fall wit
 - $\pi \approx 3.14159$
 
 :::
-
 
 :::{.fact title="Completing the square"}
 \envlist

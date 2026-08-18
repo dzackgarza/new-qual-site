@@ -1,3 +1,7 @@
+---
+order: 220
+---
+
 # Covering Spaces
 
 Some pictures to keep in mind when it comes to covers and path lifting: 
@@ -155,7 +159,6 @@ Any subgroup $H \leq \pi_1(S^1; 1) = \ZZ$ is of the form $H = n\ZZ$, so intermed
 
 > [Link to Diagram](https://q.uiver.app/?q=WzAsNixbMSwwLCJcXFpaIl0sWzMsMCwiXFxoYXR7U14xfSA9IFxcUlIiXSxbMywyLCJTXjEiXSxbMCwxLCJuXFxaWiJdLFsyLDEsIlxcaGF0e1NeMX0vblxcWlogXFxjb25nIFNeMSJdLFsyLDMsIlNeMSJdLFswLDFdLFsxLDJdLFszLDRdLFs0LDVdLFszLDAsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs0LDEsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRhc2hlZCJ9fX1dLFs1LDIsIiIsMSx7InN0eWxlIjp7ImJvZHkiOnsibmFtZSI6ImRvdHRlZCJ9fX1dXQ==)
 
-
 \begin{tikzcd}
 n\ZZ \cong \ZZ
   \ar[r] 
@@ -178,8 +181,6 @@ S^1
 \CC\units
 \end{tikzcd}
 
-
-
 \begin{tikzcd}
  \ZZ^{\times n}
   \ar[r] 
@@ -190,7 +191,6 @@ S^1
 & 
 \TT^n 
 \end{tikzcd}
-
 
 \begin{tikzcd}
 \ZZ/2
@@ -203,7 +203,6 @@ S^1
 \RP^n 
 \end{tikzcd}
 
-
 \begin{tikzcd}
 \ZZ^{\ast n} 
   \ar[r] 
@@ -215,7 +214,6 @@ S^1
 (S^1)^{\wedgeprod n}
 \end{tikzcd}
 given by the $n\dash$valent Cayley graph covering a wedge of circles.
-
 
 ![For $n=2$](../../../../assets/assets/40_Topology/figures/2021-07-03_16-55-01.png)
 
@@ -230,7 +228,6 @@ given by the $n\dash$valent Cayley graph covering a wedge of circles.
 \CC
 \end{tikzcd}
 
-
 \begin{tikzcd}
 \ZZ/q
   \ar[r] 
@@ -241,7 +238,6 @@ given by the $n\dash$valent Cayley graph covering a wedge of circles.
 & 
 L(p, q)
 \end{tikzcd}
-
 
 - $T^2 \mapsvia{\times 2} \KK$
 

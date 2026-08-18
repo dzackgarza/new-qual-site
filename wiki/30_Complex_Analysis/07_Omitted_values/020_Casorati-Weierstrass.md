@@ -1,3 +1,7 @@
+---
+order: 20
+---
+
 # Casorati-Weierstrass
 
 [[T-C5VEI]]
@@ -44,7 +48,6 @@ In detail, from Gamelin:
 ![](../../../../assets/assets/figures/2021-10-29_01-31-06.png)
 
 # Exercises
-
 
 [[E-HEJJK]]
 

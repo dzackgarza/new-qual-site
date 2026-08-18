@@ -157,9 +157,7 @@ Take $N\da E\setminus K$, then $m(N) = 0$.
 
 :::
 
-
 # Quintessential Qual Problems
-
 
 [[E-OMK54]]
 [[PR-6NDTF]]
@@ -173,7 +171,6 @@ $\implies$:
 - Then the cylinders $F(x, y) = f(x)$ and $G(x, y) = f(y)$ are both measurable on $\RR^{n+1}$.
 - Write $\mathcal{A} = \theset{G \leq F} \intersect \theset{G \geq 0}$; both are measurable.
 
-
 $\impliedby$:
 
 - Let $A$ be measurable in $\RR^{n+1}$.
@@ -182,6 +179,4 @@ $\impliedby$:
 - Then explicitly, $f(x) = \chi_{A}$, which makes $f$ a measurable function.
 
 :::
-
-
 

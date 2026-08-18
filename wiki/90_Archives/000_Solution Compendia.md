@@ -1,3 +1,8 @@
+---
+order: 1
+title: Solution Compendia
+---
+
 # Solution Compendia
 
 [http://jaypantone.com/courses/gradnotes/FirstYearAlgebra.pdf](http://jaypantone.com/courses/gradnotes/FirstYearAlgebra.pdf)
@@ -34,10 +39,10 @@
 
 [https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01MA-sol.pdf](https://www.math.umd.edu/old/graduate/exams/Math600/alg-summer01MA-sol.pdf)
 
----
+* * *
 
 [Henry(1996-2011) - Google Drive](https://drive.google.com/drive/folders/0B1RIs0n1fB8SZFAwVVVOSDdpQ2s)
 
----
+* * *
 
 [https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf](https://www.uvm.edu/sites/default/files/2008.09_algebra_solutions_0.pdf)

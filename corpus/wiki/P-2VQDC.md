@@ -31,4 +31,5 @@ The main idea:
 &\convergesto{R\to\infty}0
 .\]
 So $f'\equiv 0$.
+Since $\CC$ is connected, $f'\equiv 0$ implies $f$ is constant.
 :::

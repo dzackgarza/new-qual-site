@@ -29,7 +29,6 @@ sections:
       - ref: P-5XCMC
       - ref: P-A4JGH
       - ref: P-ABRWU
-      - ref: P-ARI3E
       - ref: P-CEU5R
       - ref: P-F7Y7R
       - ref: P-JVZMJ
@@ -219,6 +218,7 @@ sections:
     items:
       - ref: P-4STQR
       - ref: P-CWELY
+      - ref: P-KBQZ5
       - ref: P-QJE7B
       - ref: P-TGH5F
       - ref: P-KOTV2

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-2W73CD6SZF
 kind: occurrence
-title: P-NAAEY at UGA real-analysis Spring 2021
+title: P-B2ZXW at UGA real-analysis Spring 2021
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - norms
 relations:
 - kind: instance-of
-  target: P-NAAEY
+  target: P-B2ZXW
 review: draft
 payload:
   source: SRC-UGA-RA-SPRING-2021
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-NAAEY]] appeared at UGA real-analysis Spring 2021.
+[[P-B2ZXW]] appeared at UGA real-analysis Spring 2021.
 :::

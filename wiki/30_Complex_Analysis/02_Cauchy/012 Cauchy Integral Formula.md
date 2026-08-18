@@ -1,3 +1,7 @@
+---
+order: 12
+---
+
 # Cauchy's Integral Formula
 
 > See [reference](http://home.iitk.ac.in/~psraj/mth102/lecture_notes/comp8.pdf)

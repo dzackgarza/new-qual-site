@@ -1,11 +1,12 @@
 ---
+order: 700
 title: "Real Analysis Source Archive"
 ---
 
 # Real Analysis Source Archive
 
 Every recorded sitting and contributed artifact in this subject, by institution and then by date.
-Each entry links to that source's own page, which lists its problems in the order they appeared.
+Each entry links to that collection's own page, which lists its problems in the order they appeared.
 
 ## EMORY
 
@@ -164,6 +165,21 @@ Each entry links to that source's own page, which lists its problems in the orde
 [[SRC-UGA-RA-SPRING-2021]]
 
 [[SRC-UGA-RA-FALL-2021]]
+
+Official exam PDFs as posted by the department. The UGA exams listed above are the imported sittings.
+
+- [Fall 2021](https://www.math.uga.edu/sites/default/files/inline-files/Real_Analysis_Qual-Fall2021.pdf)
+- [Spring 2021](https://www.math.uga.edu/sites/default/files/inline-files/RealAnalysis_Qual_Spring2021.pdf)
+- [Fall 2020](https://www.math.uga.edu/sites/default/files/inline-files/Real_Qual_Fall2020.pdf)
+- [Spring 2020](https://www.math.uga.edu/sites/default/files/inline-files/RealAnalysisQual_Spring2020.pdf)
+- [Fall 2019](https://www.math.uga.edu/sites/default/files/RealAnalysis_Fall2019.pdf)
+- [Spring 2019](https://www.math.uga.edu/sites/default/files/RealAnalysisQual_Sp19.pdf)
+- [Fall 2018](https://www.math.uga.edu/sites/default/files/inline-files/Real%20Analysis%20Fall%202018.pdf)
+- [Spring 2018](https://www.math.uga.edu/sites/default/files/inline-files/RealQual_Spring_2018.pdf)
+- [Fall 2017](https://www.math.uga.edu/sites/default/files/RealAnaQual2017.pdf)
+- [Spring 2017](https://www.math.uga.edu/sites/default/files/RealAnalysis_spring2017.pdf)
+- [Fall 2016](https://www.math.uga.edu/sites/default/files/RealAnalysis_Fall2016.pdf)
+- [Spring 2016](https://www.math.uga.edu/sites/default/files/RealAnalysisQualSpring2016.pdf)
 
 ## Contributed artifacts
 

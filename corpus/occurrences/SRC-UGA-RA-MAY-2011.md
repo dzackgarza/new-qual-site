@@ -13,11 +13,14 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems: []
   date:
     kind: year
     year: 2011
 ---
 
 ::: remark
-UGA real-analysis May 2011. Recorded from the source corpus' exam-term annotations. `problems:` is left empty: the expected Quals files `Real Analysis [May 2011].docx` (regular space and NBSP) 404 under https://www.math.uga.edu/sites/default/files/Quals/. The Fall 2011 posting `Real Analysis [Fall 2011].docx` is headed August 2011, which is a different sitting. Native Real Analysis material under `assets/ws9/` is by topic, not this sitting. Order was not taken from occurrence cards.
+UGA real-analysis May 2011. Extra_Questions (`assets/ws9/qual-wiki/native/20_Real_Analysis/600_Qual_Questions_UGA/Extra_Questions.md.source`) has (May 2011 4a) only; item 1 was not in Extra_Questions, `wiki/20_Real_Analysis/08_Quals/`, `.tmp-uga-ra-empty/` (`analysis_2003-2007.txt`, `analysis_2008-2013.txt`, `analysis_2014-2016.txt`, `SPRING-2011-nbsp.txt`), or the other `600_Qual_Questions_UGA` files.
+Fall 2011 is a different sitting.
+`problems:` is left empty so the list does not start at 4.
 :::

@@ -13,6 +13,7 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems: []
   date:
     kind: academic-term
     term: spring
@@ -20,5 +21,7 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis January 2005. Recorded from the source corpus' exam-term annotations. No Quals posting `Real Analysis [January 2005].docx` or `Real Analysis [Spring 2005].docx` (ordinary space or NBSP) is on `https://www.math.uga.edu/sites/default/files/Quals/`; the department previous-years table lists Spring 2005 Real Analysis as n/a. `problems:` is left empty: the exam paper was not found.
+UGA real-analysis January 2005. Extra_Questions (`assets/ws9/qual-wiki/native/20_Real_Analysis/600_Qual_Questions_UGA/Extra_Questions.md.source`) has (January 2005 3b) and (January 2005 4, June 2010 6b) only; item 1 was not in Extra_Questions, `wiki/20_Real_Analysis/08_Quals/`, `.tmp-uga-ra-empty/` (`analysis_2003-2007.txt`, `analysis_2008-2013.txt`, `analysis_2014-2016.txt`, `analysis_jan2014.txt`), or the other `600_Qual_Questions_UGA` files.
+Combined Analysis Spring 2005 is the older combined-exam format and was not used.
+`problems:` is left empty so the list does not start at 3.
 :::

@@ -14,8 +14,13 @@ payload:
   institution: uga
   area: topology
   problems:
+  - P-8TF12
   - P-CI7E2
+  - P-8TF13
+  - P-EQZPV
+  - P-8TF14
   - P-YQVRO
+  - P-8TF15
   - P-DRVWD
   date:
     kind: academic-term
@@ -24,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2009. The paper is the current Quals posting `Topology [Fall 2009].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #1 (a path-connected space is connected) has no matching P-card. Exam #2 (connected and locally path-connected implies path-connected) has no matching P-card; `P-B2VGV` also asks the converse. Exam #3 (which of $(0,1)\times(0,1)$, $[0,1)\times[0,1)$, and $[0,1]\times[0,1]$ are homeomorphic) has no matching P-card. Exam #5 ($S^1$ with three distinct points identified) has no matching P-card. Exam #6 (classification of compact surfaces, and identifying the drawn surface) has no matching P-card. Exam #8 (universal cover of $\RP^2\times S^1$ and its deck transformations) has no matching P-card; that statement is one part of the larger card `P-SDQTV`.
+UGA topology Fall 2009. The paper is the current Quals posting `Topology [Fall 2009].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

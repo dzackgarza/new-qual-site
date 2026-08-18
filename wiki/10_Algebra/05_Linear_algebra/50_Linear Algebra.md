@@ -1,5 +1,8 @@
-# Linear Algebra
+---
+order: 50
+---
 
+# Linear Algebra
 
 :::{.remark}
 Algorithm for SNF: D&F page 479.
@@ -46,7 +49,6 @@ One can expand determinants along rows:
 \det(A) = \sum_{j=1}^n (-1)^{i+j} a_{ij} \det \minor_A(i, j)
 .\]
 
-
 Also useful, a matrix can be inverted by computing the adjugate:
 \[
 A\inv = {1\over \det A} \operatorname{adj}(A) && \adj(A)_{ij} \da (-1)^{i+j} \det \minor_A(j, i)
@@ -86,7 +88,6 @@ a_1^k & & * \\
 \end{array}\right)
 .\]
 
-
 Traces of products can be commuted: $\trace(AB) = \trace(BA)$, so similar matrices have identical traces since $\trace(PJP\inv) = \trace{PP\inv J} = \trace{J}$.
 
 The coefficients of the characteristic polynomial are elementary symmetric functions in the eigenvalues:
@@ -124,7 +125,12 @@ V &\cong \bigoplus _{j=1}^m k[x] / \gens{ p_i(x)^{e_i} } && \text{ with } p_i \t
   - The largest invariant factor $q_n$ is the **minimal polynomial** of $T$.
   - The product $\prod_{i=1}^n q_i(x)$ is the **characteristic polynomial** of $T$.
 - The $p_i$ are the **elementary divisors** of $T$.
-  - Todo: what can you read off of this...?
+  - Grouping equal primes, the factors $p(x)^e$ are the cyclic summands in the primary decomposition.
+  - Over an algebraically closed field (or after splitting), each $p_i(x)=x-\lambda$, and $(x-\lambda)^e$ is a Jordan block of size $e$ for eigenvalue $\lambda$.
+  - The characteristic polynomial is the product of all elementary divisors.
+  - The minimal polynomial is the lcm of the elementary divisors: for each distinct $p$, take the highest power $p^e$ that occurs.
+  - The geometric multiplicity of $\lambda$ is the number of elementary divisors that are powers of $x-\lambda$ (the number of Jordan blocks).
+  - The size of the largest Jordan block for $\lambda$ is the largest such exponent $e$.
 
 :::
 
@@ -300,13 +306,6 @@ M_1 =
  &  &  & 1 & -a_{n-1}
 \end{bmatrix}
 .\]
-
-
-
-
-
-
-
 
 :::
 

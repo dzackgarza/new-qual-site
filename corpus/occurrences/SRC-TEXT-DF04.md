@@ -18,6 +18,6 @@ payload:
 ---
 
 ::: remark
-Dummit and Foote, *Abstract Algebra*, 3rd edition, Wiley, 2004. Cited in the authored wiki as `[@DF04]`; the work itself is in `vocabularies/references.bib` and the book is registered as `dummit-foote` in `vocabularies/textbooks.yaml`.
-Source used: local Zotero copy of the 3rd edition (extracted full text of the 2004 book). `sections:` is empty: the first exercises of the book are §0.1 Exercises 1–7, and Exercise 1 (which of the listed $2\times 2$ matrices commute with $M=\begin{pmatrix}1&1\\0&1\end{pmatrix}$) has no matching problem card.
+Dummit and Foote, *Abstract Algebra*, 3rd edition, Wiley, 2004. Cited in the authored wiki as `[@DF04]`; the work itself is in `vocabularies/references.bib` and the book is registered as `dummit-foote` in `vocabularies/textbooks.yaml`. `sections:` is empty after searching `corpus/wiki`, `corpus/`, and the authored `wiki/` notes for Dummit, DF04, and D&F exercise numbers.
+The hits are syllabus citations and definition/theorem/proof remarks that point at D&F sections or pages; none of them is a problem card that states a Dummit–Foote exercise.
 :::

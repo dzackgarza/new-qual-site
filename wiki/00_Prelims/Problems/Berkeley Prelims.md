@@ -1,4 +1,6 @@
-Tags: #resources/problem_collections #resources/solutions 
+---
+order: 100001
+---
 
 # Berkeley Prelims
 
@@ -205,7 +207,6 @@ Tags: #resources/problem_collections #resources/solutions
 [Spring 2019 prelim.pdf](attachments/Spring_2019_prelim.pdf)
 
 [Spring_2019_prelim_solutions.pdf](attachments/Spring_2019_prelim_solutions.pdf)
-#resources/solutions 
 
 [Summer77.pdf](attachments/Summer77.pdf)
 

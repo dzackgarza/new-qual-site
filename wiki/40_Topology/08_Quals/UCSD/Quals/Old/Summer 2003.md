@@ -6,7 +6,7 @@ order: 100003
 
 # 1. Describe all possible covering maps between $S^2, T^2, K$
 
-[[P-BBFQR]]
+[[P-L6F6I]]
 
 ## 2. Show that $\ZZ^{\ast 2}$ has subgroups isomorphic to $\ZZ^{\ast n}$ for every $n$.
 
@@ -18,7 +18,7 @@ order: 100003
 
 ## 4. Compute the complement of a knotted solid torus in $S^3$.
 
-[[P-7FRUL]]
+[[P-LAFJW]]
 
 ## 5. Compute the homology and cohomology of a closed, connected, oriented 3-manifold $M$ with $\pi_1(M) = \ZZ^{\ast 2}$.
 

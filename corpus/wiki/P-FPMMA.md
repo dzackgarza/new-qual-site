@@ -2,20 +2,26 @@
 schema: qual/card@1
 id: P-FPMMA
 kind: problem
-title: Gradient of $xy$ and the nullspace of a $3\times 3$ matrix
+title: The gradient of $xy$ is orthogonal to its level curves
 classification:
   areas:
   - prelim
   topics:
   - multivariable-calculus
-  - linear-algebra
 relations: []
 review: draft
-solved: false
+solved: true
 ---
 
 ::: problem
-2. The gradient $\nabla f = [y, x]$ will be orthogonal to level curves: ![](../../assets/00_Prelims/figures/2019-06-16-23-42-19.png)
+Let $f(x,y) = xy$.
+Show that $\nabla f$ is orthogonal to the level curves of $f$.
+:::
 
-3. $A = \left[ \begin{array} { r r r } { 1 } & { - 2 } & { 1 } \\ { 0 } & { 5 } & { - 3 } \\ { 0 } & { 0 } & { 0 } \end{array} \right]$; a straightforward computation of $\mathrm{nullspace}(A)$ shows that $\ker A = \mathrm{span}(\thevector{1,3,5})$.
+::: {.solution}
+$\nabla f = (y, x)$.
+Along a level curve $f(x,y) = c$ one may take a parametrization $\gamma$ with $f(\gamma(t)) = c$, so $\frac{d}{dt}f(\gamma(t)) = 0$.
+By the chain rule this inner product is $\langle \nabla f(\gamma(t)), \gamma'(t)\rangle$, hence $\nabla f$ is orthogonal to every tangent of the level curve.
+
+![](../../assets/00_Prelims/figures/2019-06-16-23-42-19.png)
 :::

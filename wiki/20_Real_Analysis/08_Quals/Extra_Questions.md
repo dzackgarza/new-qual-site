@@ -169,8 +169,6 @@ order: 100001
 
 ##  (January 2020 4a) 
 
-##  (June 2005 \#5)
-[[P-CFSC6]]
 ##  (January 2005 \#3b)
 
 [[P-5UQSK]]

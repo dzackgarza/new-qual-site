@@ -1,3 +1,7 @@
+---
+order: 30
+---
+
 # General Field Theory
 
 :::{.remark}
@@ -12,7 +16,6 @@ The most useful tricks of the trade:
 
 :::
 
-
 :::{.remark}
 The most useful tricks of the trade:
 
@@ -23,7 +26,6 @@ The most useful tricks of the trade:
   E.g. if $\alpha$ is a root of any irreducible $f$, take the tower $\SF(\alpha, k)/k(\alpha)/k$: then the degree of $\min_{\alpha, k}(x)\in k[x]$ divides the degree of the extension $[\SF(\alpha, k) :  k]$.
 
 :::
-
 
 ## Basics: Polynomials
 
@@ -179,9 +181,7 @@ This has no roots in $k$.
 
 ## Cyclotomic Polynomials
 
-
 [[D-JX3YC]]
-
 
 :::{.remark}
 \envlist
@@ -194,8 +194,6 @@ This has no roots in $k$.
 
 :::
 
-
-
 :::{.example title="Some totient values"}
 \[
 \phi(1) &= 1 \\
@@ -206,15 +204,11 @@ This has no roots in $k$.
 \phi(8) &= 4 \\
 .\]
 
-
 :::
-
-
 
 [[D-BLV6F]]
 
 [[D-IPR4B]]
-
 
 [[PR-JLDJ6]]
 
@@ -246,9 +240,7 @@ k\divides n \implies \Phi_{n}(x) &= \Phi_{n\over k}\left(x^{k}\right)
 
 [[E-LUR7G]]
 
-
 [[E-6OUJV]]
-
 
 [[E-OB3LO]]
 

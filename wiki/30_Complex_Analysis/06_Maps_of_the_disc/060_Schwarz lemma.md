@@ -1,3 +1,7 @@
+---
+order: 60
+---
+
 # Schwarz
 
 ## Hyperbolic Translations / Blaschke Factors
@@ -80,7 +84,6 @@ Being an involution: check $\psi_a(\psi_a(z))$ satisfies the Schwarz lemma and h
 
 :::{.proof title="of Schwarz, alternative"}
 
-
 ![](../../../../assets/assets/figures/2021-12-14_16-30-35.png)
 
 ![](../../../../assets/assets/figures/2021-12-14_16-30-46.png)
@@ -92,8 +95,6 @@ Being an involution: check $\psi_a(\psi_a(z))$ satisfies the Schwarz lemma and h
 ## Blaschke Factors
 
 [[E-IVHVW]]
-
-
 
 ## Schwarz-Fu
 
@@ -132,5 +133,4 @@ Being an involution: check $\psi_a(\psi_a(z))$ satisfies the Schwarz lemma and h
 [[E-MCTII]]
 
 [[E-3OJLH]]
-
 

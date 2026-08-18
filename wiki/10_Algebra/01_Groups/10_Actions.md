@@ -62,7 +62,6 @@ Also, $x\in \Fix$ iff $\Orb(x) = \ts{x}$ and $\Stab_G(x) = G$.
 
 :::
 
-
 :::{.fact}
 For any group action, the kernel is the intersection of all stabilizers:
 \[
@@ -72,7 +71,6 @@ For any group action, the kernel is the intersection of all stabilizers:
 :::
 
 [[D-KGGWK]]
-
 
 [[PR-GSDKO]]
 
@@ -233,7 +231,6 @@ Proceed by partitioning the sum up according to which orbit each term comes from
 
 :::
 
-
 ### Conjugation on Subgroups
 
 :::{.example title="?"}
@@ -309,5 +306,4 @@ G/K \cong K' \leq S_p \implies \size (G/K)\divides p!
 :::
 
 [[E-M6XGF]]
-
 

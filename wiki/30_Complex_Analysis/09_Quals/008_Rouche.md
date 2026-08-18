@@ -16,7 +16,7 @@ order: 8
 
 ## 4
 
-[[P-JMP4F]]
+[[P-IHU2C]]
 
 ## 5
 
@@ -28,15 +28,11 @@ order: 8
 
 [[P-JIQVA]]
 
-[[P-7GK3C]]
-
-[[P-7XNXY]]
-
-# Extras
-
-## ?
+[[P-7ZRIQ]]
 
 [[P-4RGCT]]
+
+# Extras
 
 ## ?
 
@@ -56,7 +52,7 @@ order: 8
 
 ### Spring 20202 HW 3 #  12
 
-[[P-Z45BG]]
+[[P-TVUOV]]
 
 ### Spring 20202 HW 3 #  13
 

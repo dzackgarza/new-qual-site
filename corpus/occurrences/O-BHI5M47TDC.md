@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-BHI5M47TDC
 kind: occurrence
-title: P-ZX7FP at UGA complex-analysis Fall 2011
+title: P-TKF72 at UGA complex-analysis Fall 2011
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - limits
 relations:
 - kind: instance-of
-  target: P-ZX7FP
+  target: P-TKF72
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2011
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-ZX7FP]] appeared at UGA complex-analysis Fall 2011.
+[[P-TKF72]] appeared at UGA complex-analysis Fall 2011.
 :::

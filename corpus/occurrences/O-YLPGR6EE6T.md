@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-YLPGR6EE6T
 kind: occurrence
-title: P-SLXYN at UGA complex-analysis Fall 2015
+title: P-EHLPT at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
@@ -13,7 +13,7 @@ classification:
   - contour-integration
 relations:
 - kind: instance-of
-  target: P-SLXYN
+  target: P-EHLPT
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2015
@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-[[P-SLXYN]] appeared at UGA complex-analysis Fall 2015.
+[[P-EHLPT]] appeared at UGA complex-analysis Fall 2015.
 :::

@@ -18,6 +18,6 @@ payload:
 ---
 
 ::: remark
-Munkres, *Topology*, 2nd edition, Prentice Hall, 2000. Cited in the authored wiki as `[@Mun00]`; the work itself is in `vocabularies/references.bib` and the book is registered as `munkres` in `vocabularies/textbooks.yaml`.
-Source used: local Zotero copy of the 2nd edition (2000). `sections:` is empty: the first exercises of the book are §1 Exercises 1–10, and Exercise 1 (check the distributive laws for $\cup$ and $\cap$ and DeMorgan’s laws) has no matching problem card.
+Munkres, *Topology*, 2nd edition, Prentice Hall, 2000. Cited in the authored wiki as `[@Mun00]`; the work itself is in `vocabularies/references.bib` and the book is registered as `munkres` in `vocabularies/textbooks.yaml`. `sections:` is empty after searching `corpus/` and the authored `wiki/` notes for Munkres, Mun00, and section.exercise numbers.
+The hits are theorem/definition cards (for example Munkres 18.1) and exam problems that cite a Munkres page in a remark (`P-MHQ6A`, `P-L4EMZ`); none of them is a problem card that states a Munkres exercise.
 :::

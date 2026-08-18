@@ -1,4 +1,5 @@
 ---
+order: 20
 sort: 020
 title: Residues
 ---
@@ -28,7 +29,6 @@ What to use when:
   \frac{\pi\left(i^{a}-(-i)^{a}\right)}{\left(1-1^{a}\right)}=\pi \frac{\omega-\omega^{3}}{1-\omega^{4}}=\frac{\pi}{\omega+\omega^{-1}}=\frac{\pi}{2 \cos (\pi a / 2)}
   ,\]
   where for $a = 1/3$ this yields $\pi/\sqrt 3$.
-
 
 :::
 ## Basics

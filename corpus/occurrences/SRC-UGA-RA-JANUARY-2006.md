@@ -13,6 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-8RA01
+  - P-8RA02
+  - P-8RA03
+  - P-8RA04
+  - P-8RA05
+  - P-8RA06
   date:
     kind: academic-term
     term: spring
@@ -20,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis January 2006. Recorded from the source corpus' exam-term annotations. The paper is the current Quals posting `Real Analysis [Spring 2006].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02006%5D.docx`; headed January 6, 2006). `problems:` is left empty: exam #1 (recursive sequence $a_{n+1}=\sqrt{2a_n}$, $a_0>0$, prove convergence and find the limit) has no matching P- card. Exam #2–#6 likewise have no matching cards.
+UGA real-analysis January 2006. The paper is the current Quals posting `Real Analysis [Spring 2006].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02006%5D.docx`), headed January 6, 2006. The expected Quals files `Real Analysis [January 2006].docx` (regular space and NBSP) 404. The list is the sitting order on that paper.
 :::

@@ -14,6 +14,8 @@ payload:
   institution: uga
   area: topology
   problems:
+  - P-8TS26
+  - P-8TS27
   - P-Q5Q6P
   - P-7XSR6
   - P-CIAF4
@@ -28,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2017. The paper is the current Quals posting `Topology [Spring 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #1 ($H_0$ of the space in Figure 1) has no matching P-card. Exam #2 (the annulus with identifications in Figure 2: surface, orientability, which surface) has no matching P-card.
+UGA topology Spring 2017. The paper is the current Quals posting `Topology [Spring 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

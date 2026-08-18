@@ -13,6 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-8RA32
+  - P-8RA33
+  - P-8RA34
+  - P-8RA35
+  - P-8RA36
+  - P-8RA37
   date:
     kind: academic-term
     term: spring
@@ -20,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2012. Recorded from the source corpus' exam-term annotations. `problems:` is left empty: the current Quals posting `Real Analysis [Spring 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` is headed January 2012 and is the January 2012 paper, not a distinct Spring sitting. No other Quals file for this card. Native Real Analysis material under `assets/ws9/` is by topic, not this sitting. Order was not taken from occurrence cards.
+UGA real-analysis Spring 2012. The migrated Quals file `.tmp-uga-ra-empty/SPRING-2012-nbsp.txt` (and `Real_Analysis_Spring_NBSP_2012.docx`) is headed January 2012; that paper order is already on `SRC-UGA-RA-JANUARY-2012`. This collection lists the same six items. Extra_Questions tags (January 2012 4b, extended) as `P-SKT7G`, which is not exam #4 on that paper (`P-8RA35`).
 :::

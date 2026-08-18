@@ -1,3 +1,7 @@
+---
+order: 100004
+---
+
 # Special Functions
 
 ## Transforms
@@ -71,7 +75,15 @@ The residues:
 
 # Elliptic Functions
 
-#todo
+An **elliptic function** (relative to a lattice $\Lambda=\omega_1\ZZ+\omega_2\ZZ$ with $\omega_1/\omega_2\notin\RR$) is a meromorphic function $f$ on $\CC$ satisfying $f(z+\omega)=f(z)$ for every $\omega\in\Lambda$.
+Entire elliptic functions are constant: they are bounded on a fundamental parallelogram, hence bounded on $\CC$, hence constant by Liouville.
+
+[[E-4NGIV]]
+
+The Weierstrass $\wp$ function is the basic example: a meromorphic elliptic function with a double pole at each lattice point and no other poles.
+A nonconstant elliptic function has at least two poles, counted with multiplicity, in each fundamental parallelogram (the residues around the parallelogram sum to zero by cancellation of opposite sides).
+
+[[E-WXHMJ]]
 
 ## Infinite Series and Products
 
@@ -81,9 +93,7 @@ The residues:
 
 :::
 
-
 [[T-2WJ4U]]
-
 
 [[E-DR5LY]]
 [[T-IEJFA]]

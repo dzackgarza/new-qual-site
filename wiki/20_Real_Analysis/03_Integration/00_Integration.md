@@ -1,3 +1,7 @@
+---
+order: 0
+---
+
 # Integration
 
 :::{.remark title="A common proof technique"}
@@ -45,9 +49,7 @@ But then $k\da \chi_B \circ g\inv$ is not $\mcl\dash$measurable, since $k\inv(1)
 
 [[PR-EWXRO]]
 
-
 [[D-553MO]]
-
 
 [[PR-KTKT6]]
 
@@ -86,17 +88,38 @@ Measurable, non-negative, increasing pointwise a.e. allows commuting limits and 
 
 :::
 
-:::{.proof title="of MCT, todo"}
-:::
+:::{.proof title="of MCT"}
+Write $f\da \lim_n f_n\in[0,\infty]$, which exists almost everywhere by monotonicity, and set $f=0$ on the null set where the limit fails.
+The integrals $\int f_n$ are increasing in $[0,\infty]$, so $\alpha\da \lim_n \int f_n$ exists in $[0,\infty]$, and $f_n\leq f$ gives $\alpha\leq \int f$.
 
-#todo Proof
+For the reverse inequality, let $0\leq \varphi\leq f$ be simple and fix $0<c<1$.
+The sets $E_n\da \theset{x\st f_n(x)\geq c\varphi(x)}$ increase to the set where $f\geq c\varphi$, which is almost all of $X$ because $f_n\nearrow f$ and $c\varphi < \varphi\leq f$ wherever $\varphi>0$.
+Then
+\[
+\int f_n
+\geq \int_{E_n} f_n
+\geq c\int_{E_n}\varphi
+,\]
+and continuity of measure from below (each simple $\varphi$ is a finite linear combination of indicators of finite-measure sets, or the identity $\int_{E_n}\varphi\to\int\varphi$ in $[0,\infty]$) yields $\alpha\geq c\int\varphi$.
+Let $c\nearrow 1$, then take the supremum over simple $\varphi\leq f$, to conclude $\alpha\geq \int f$.
+
+:::
 
 [[T-IJQQG]]
 
-:::{.proof title="of DCT, todo"}
-:::
+:::{.proof title="of DCT"}
+The pointwise limit $f$ is measurable, and $\abs{f}\leq g$ almost everywhere, so $f\in L^1$.
+The functions $2g-\abs{f_n-f}$ are nonnegative and converge pointwise almost everywhere to $2g$, so Fatou's lemma (below) gives
+\[
+\int 2g
+= \int \liminf_n \bigl(2g-\abs{f_n-f}\bigr)
+\leq \liminf_n \int \bigl(2g-\abs{f_n-f}\bigr)
+= \int 2g - \limsup_n \int \abs{f_n-f}
+.\]
+Thus $\limsup_n \int \abs{f_n-f}\leq 0$, so $\int\abs{f_n-f}\to 0$.
+Then $\abs{\int f_n - \int f} \leq \int\abs{f_n-f}\to 0$.
 
-#todo Proof
+:::
 
 [[T-WYX24]]
 
@@ -174,6 +197,17 @@ so the DCT applies to $g_n$ and
 [[T-LDJNS]]
 
 :::{.proof title="of Fatou"}
+Let $g_n\da \inf_{k\geq n} f_k$.
+Then $0\leq g_n\nearrow \liminf_k f_k$, so the monotone convergence theorem gives
+\[
+\int \liminf_n f_n
+= \lim_n \int g_n
+\leq \liminf_n \int f_n
+,\]
+because $g_n\leq f_n$ for each $n$.
+
+The companion inequality $\limsup_n \int f_n \leq \int \limsup_n f_n$ is false in general: $f_n = n\chi_{[0,1/n]}$ has $\int f_n=1$ and $\limsup_n f_n=0$ almost everywhere.
+It does hold if $0\leq f_n\leq g$ with $g\in L^1$, by applying the liminf form to $g-f_n$.
 
 :::
 [[T-6PRW3]]
@@ -200,7 +234,25 @@ so the DCT applies to $g_n$ and
 :::
 [[PR-EHIXY]]
 
-#todo Prove
+:::{.proof title="Absolute $L^1$ summability"}
+Nonnegativity of $\abs{f_k}$ and the monotone convergence theorem give
+\[
+\int \sum_k \abs{f_k}
+= \sum_k \int \abs{f_k}
+= \sum_k \norm{f_k}_1
+< \infty
+,\]
+so $\sum_k \abs{f_k(x)}<\infty$ for almost every $x$, and $\sum_k f_k(x)$ converges absolutely almost everywhere.
+The partial sums $F_N\da\sum_{k=1}^N f_k$ are Cauchy in $L^1$:
+\[
+\norm{F_{N+M}-F_N}_1
+\leq \sum_{k=N+1}^{N+M} \norm{f_k}_1
+,\]
+which is a tail of a convergent series.
+Completeness of $L^1$ supplies $F\in L^1$ with $F_N\to F$ in $L^1$.
+A subsequence then converges to $F$ almost everywhere, hence $F=\sum_k f_k$ almost everywhere.
+
+:::
 
 :::{.example title="Using Fatou to compute the limit of a sequence of integrals"}
 \[
@@ -237,7 +289,7 @@ Note that MCT might work, but showing that this is non-decreasing in $n$ is diff
 
 :::{.proof title="?"}
 Define $F_N = \sum^N f_k$ and $F = \lim_N F_N$, then $\norm{F_N}_1 \leq \sum^N \norm{f_k} < \infty$ so $F\in L^1$ and $\norm{F_N - F}_1 \to 0$ so the sum converges in $L^1$.
-Almost everywhere convergence: ?
+Almost everywhere: $\sum \abs{f_k}$ has finite integral by monotone convergence, hence is finite almost everywhere, so $\sum f_k$ converges absolutely almost everywhere, and the $L^1$ limit agrees with that pointwise sum.
 
 :::
 

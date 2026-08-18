@@ -14,6 +14,7 @@ payload:
   institution: uga
   area: topology
   problems:
+  - P-8TS28
   - P-VPACG
   - P-SG462
   - P-A3ZPA
@@ -28,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2018. The paper is the current Quals posting `Topology [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #1 (a map into a product is continuous iff the compositions with the projections are, and a product of path-connected spaces is path-connected) has no matching P-card.
+UGA topology Spring 2018. The paper is the current Quals posting `Topology [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

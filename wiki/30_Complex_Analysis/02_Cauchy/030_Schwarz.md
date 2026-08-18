@@ -1,4 +1,9 @@
-# Schwarz Reflection
+---
+order: 30
+title: Schwarz lemma
+---
+
+# Schwarz lemma
 
 ## Schwarz
 

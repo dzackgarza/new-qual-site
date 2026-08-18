@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-FAJ2CKDSNE
 kind: occurrence
-title: P-F5HG3 at UGA real-analysis Fall 2015
+title: P-RDMYM at UGA real-analysis Fall 2015
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - fubini-tonelli
 relations:
 - kind: instance-of
-  target: P-F5HG3
+  target: P-RDMYM
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-F5HG3]] appeared at UGA real-analysis Fall 2015.
+[[P-RDMYM]] appeared at UGA real-analysis Fall 2015.
 :::

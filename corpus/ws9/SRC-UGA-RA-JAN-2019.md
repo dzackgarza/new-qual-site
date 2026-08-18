@@ -13,12 +13,20 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
+  problems:
+  - P-RA19J1
+  - P-RA19J2
+  - P-C3MKZ
+  - P-BKCZH
+  - P-RA19J5
+  - P-RA19J6
   date:
     kind: year
     year: 2019
 ---
 
 ::: remark
-The problem statements are transcribed from the rendered source page; review remains draft. The paper is the sitting transcription `assets/attachments/Day_9_January_2019_Qual.pdf` (Masters and Ph.D. Qualifying Exam, Analysis: Math 825/826, Wednesday, January 23, 2019). The expected Quals files `Real Analysis [January 2019].docx` (regular space and NBSP) 404 under https://www.math.uga.edu/sites/default/files/Quals/; the Spring 2019 posting is headed Spring 2019 and is a different paper. `problems:` is left empty: exam #3 ($\sum x^n/(1+n|x|^n)$) is stated by `P-C3MKZ`; exam #4 ($|f'|\le k|f|$ and $f(0)=0$ imply $f\equiv 0$) is stated by `P-BKCZH`. Exam #1, #2, #5, and #6 are `P-RA19J1`, `P-RA19J2`, `P-RA19J5`, and `P-RA19J6`.
+The problem statements are transcribed from the rendered source page; review remains draft.
+The paper is the sitting transcription `assets/attachments/Day_9_January_2019_Qual.pdf` (Masters and Ph.D. Qualifying Exam, Analysis: Math 825/826, Wednesday, January 23, 2019). The expected Quals files `Real Analysis [January 2019].docx` (regular space and NBSP) 404 under https://www.math.uga.edu/sites/default/files/Quals/; the Spring 2019 posting is headed Spring 2019 and is a different paper.
+The list is the sitting order on that paper.
 :::
-

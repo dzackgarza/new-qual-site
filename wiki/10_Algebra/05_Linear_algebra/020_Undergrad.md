@@ -1,3 +1,7 @@
+---
+order: 20
+---
+
 # Undergrad Review
 
 :::{.fact title="Undergrad reminders"}
@@ -24,7 +28,6 @@ One can expand determinants along rows:
 \[
 \det(A) = \sum_{j=1}^n (-1)^{i+j} a_{ij} \det \minor_A(i, j)
 .\]
-
 
 Also useful, a matrix can be inverted by computing the adjugate:
 \[
@@ -65,7 +68,6 @@ a_1^k & & * \\
 \end{array}\right)
 .\]
 
-
 Traces of products can be commuted: $\trace(AB) = \trace(BA)$, so similar matrices have identical traces since $\trace(PJP\inv) = \trace{PP\inv J} = \trace{J}$.
 
 The coefficients of the characteristic polynomial are elementary symmetric functions in the eigenvalues:
@@ -87,5 +89,4 @@ f(x) = (x-2)(x^2-4x+4) = (x-2)^3
 .\]
 
 :::
-
 

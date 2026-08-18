@@ -1,3 +1,7 @@
+---
+order: 0
+---
+
 # Preface
 
 References:
@@ -11,7 +15,6 @@ Some fun resources:
 
 ## Notation
 
-
 :::{.warnings}
 \envlist
 
@@ -20,7 +23,6 @@ Some fun resources:
 - If left unspecified, homology is always taken with $\ZZ\dash$coefficients.
 
 :::
-
 
 | Notation                                             | Definition                          |
 |------------------------------------------------------|-------------------------------------|
@@ -34,9 +36,8 @@ Some fun resources:
 | $G=1$                                                | The trivial abelian group           |
 | $G=0$                                                | The trivial nonabelian group        |
 
-
 :::{.remark}
-I use $e_G$ or $1_G, 0_G$ to denote identity elements in a group $G$.
+These notes use $e_G$ or $1_G, 0_G$ to denote identity elements in a group $G$.
 
 :::
 
@@ -46,7 +47,7 @@ $A\oplus B$ denotes a **direct sum**: the subset of $A\cross B$ where only finit
 Both the product and direct sum have coordinate-wise operations.
 For finite index sets $\abs{J}< \infty$, the direct sum and product coincide, but in general there is only an injection $\bigoplus_j X_i \injects \prod_j X_j$.
 In the direct sum $\bigoplus_j X_j$ have only finitely many nonzero entries, while the product allows *infinitely* many nonzero entries.
-So in general, I always use the product notation.
+So in general these notes use the product notation.
 
 :::
 
@@ -80,7 +81,7 @@ x = 2a_1 + 4a_2 + a_1 - a_2 = 3a_1 + 3a_2
 
 :::{.remark title="on indexing conventions and list notation"}
 Spaces are assumed to be connected and path connected, so $\pi_0(X) = H_0(X) = \ZZ$.
-So I virtually never consider anything occurring at index zero in these notes.
+So these notes virtually never consider anything occurring at index zero.
 
 Graded objects such as $\pi_*, H_*, H^*$ are sometimes represented as lists, which always start indexing at 1.
 Examples: 

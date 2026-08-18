@@ -17,6 +17,9 @@ payload:
   - P-JW4A4
   - P-5R3FT
   - P-ZS4IH
+  - P-TA3FG
+  - P-8CB01
+  - P-8CB02
   date:
     kind: academic-term
     term: fall
@@ -24,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2011. The paper is the current Quals posting `Complex Analysis [Fall 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (headed August 12, 2011). Exam #2 is listed as `P-5R3FT`. Exam #3 is listed as `P-ZS4IH`. Exam #4 (power series on the unit circle), #5 (implicit function for $x^2-2y+y^3=0$), and #6 (meromorphic function real on the circle, or a conformal map onto an annulus) have no matching P-card.
+UGA complex-analysis Fall 2011. The paper is the current Quals posting `Complex Analysis [Fall 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BFall%C2%A02011%5D.docx`), headed August 12, 2011. The list is the sitting order on that paper.
 :::

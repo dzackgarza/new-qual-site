@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-MKIT3SS2QK
 kind: occurrence
-title: P-2DH4S at Fall 2019 Final (algebra)
+title: P-OX3MY at Fall 2019 Final (algebra)
 classification:
   areas:
   - algebra
@@ -12,7 +12,7 @@ classification:
   - vector-spaces
 relations:
 - kind: instance-of
-  target: P-2DH4S
+  target: P-OX3MY
 review: draft
 payload:
   source: SRC-ALG-ART-HEACCB
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-2DH4S]] appeared at Fall 2019 Final (algebra).
+[[P-OX3MY]] appeared at Fall 2019 Final (algebra).
 :::

@@ -25,6 +25,8 @@ Prove that
 :::
 
 :::{.solution}
+Rouché's theorem: if $f,g$ are holomorphic on a domain containing a simple closed contour $\gamma$ and $\abs{g(z)} < \abs{f(z)}$ for all $z\in\gamma$, then $f$ and $f+g$ have the same number of zeros (counting multiplicity) inside $\gamma$.
+
 Write $p(z) \da a_0 + \cdots + z^n$.
 Toward a contradiction, suppose not so that $\abs{p(z)} < 1$ on $\abs{z} = 1$.
 Then

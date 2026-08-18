@@ -1,5 +1,8 @@
-#  CW and Simplicial Complexes
+---
+order: 225
+---
 
+#  CW and Simplicial Complexes
 
 :::{.warnings}
 The maps go *down* in degree for cellular chain complexes! I.e., 
@@ -9,14 +12,12 @@ C_*(X) = (0 \from C_0 \from C_1 \from \cdots )
 
 :::
 
-
 [[PR-QJZDT]]
 
 :::{.remark}
 This is nontrivial, it's the content of the *Eilenberg-Zilber theorem*.
 
 :::
-
 
 :::{.example title="?"}
 Let $X= S^a \cross S^b$, so $p_{S^a}(t) = 1 + t^a$ and $p_{S^b}(t) = 1 + t^b$, then $p_X(t) = 1 + t^a + t^b + t^{a+b}$, so $X$ has 
@@ -27,7 +28,6 @@ Let $X= S^a \cross S^b$, so $p_{S^a}(t) = 1 + t^a$ and $p_{S^b}(t) = 1 + t^b$, t
 - One $(a+b)\dash$cell
 
 :::
-
 
 [[E-GTNVU]]
 
@@ -80,7 +80,6 @@ This fails - for example, the specification of a simplex $[1,2,1]$ does not uniq
 
 :::
 
-
 ## Cellular Homology
 
 * $S^n$ has the CW complex structure of 2 $k$-cells for each $0\leq k \leq n$.
@@ -126,7 +125,6 @@ How to compute:
 .\]
   
 6. Or look at elementary divisors, say $n_{i}$, then the image is isomorphic to $\bigoplus n_{i} \ZZ$
-
 
 ## Constructing a CW Complex with Prescribed Homology
 

@@ -1,17 +1,14 @@
 ---
+order: 100001
 creation date: 2021-10-11 17:52
 modification date: Tuesday 19th October 2021 22:33:13
 title: Algebra Fields Review 1
 aliases: [Algebra Fields Review 1]
 ---
 
-Tags: #todo #qualifying_exam #qual_algebra
-
 # Algebra Fields Review
 
 # Review
-
-Tags: #field_theory #galois_theory #qualifying_exam #reading_notes
 
 Exercises
 

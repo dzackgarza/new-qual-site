@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-BJYOGEQUTE
 kind: occurrence
-title: P-O5K7C at Spring 2020 HW 2 #2.6.1 (complex-analysis)
+title: P-Y2YJL at Spring 2020 HW 2 #2.6.1 (complex-analysis)
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-O5K7C
+  target: P-Y2YJL
 review: draft
 payload:
   source: SRC-CA-ART-T2NKIT
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-O5K7C]] appeared at Spring 2020 HW 2 #2.6.1 (complex-analysis), problem 2.
+[[P-Y2YJL]] appeared at Spring 2020 HW 2 #2.6.1 (complex-analysis), problem 2.
 :::

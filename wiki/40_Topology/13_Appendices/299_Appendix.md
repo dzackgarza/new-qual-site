@@ -1,3 +1,7 @@
+---
+order: 299
+---
+
 # Appendix: Unsorted Stuff
 
 * Assorted info about other Lie Groups:
@@ -13,14 +17,10 @@
 
 * $\pi_k(SP_n) = \ZZ/2\ZZ\cdot\indic{k = 4,5\mod 8} + \ZZ\cdot\indic{k = 3,7 \mod 8}$
 
-
-
 * Groups and Group Actions
 	* $\pi_0(G) = G$ for $G$ a discrete topological group.
 	* $\pi_k(G/H) = \pi_k(G)$ if $\pi_k(H) = \pi_{k-1}(H) = 0$.
 	* $\pi_1(X/G) = \pi_0(G)$ when $G$ acts freely/transitively on $X$.
-
-
 
 ## Cap and Cup Products
 
@@ -114,7 +114,6 @@ LES of pair $(A,B) \implies \cdots H_n(B) \into H_n(A) \into H_n(A,B) \into H_{n
 
 - $SU(n): \pi_k U_n$ is $\ZZ$ in odd degrees and $\pi_1 U_n = 0$.
 - $U_n: \pi_k(U_n)$ is $\ZZ/2\ZZ$ in degrees?
-
 
 ## Higher Homotopy
 

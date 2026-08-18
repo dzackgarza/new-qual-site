@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-2PSOLTIQYQ
 kind: occurrence
-title: P-H4HKX at UGA complex-analysis Fall 2009
+title: P-JOGPB at UGA complex-analysis Fall 2009
 classification:
   areas:
   - complex-analysis
@@ -11,7 +11,7 @@ classification:
   - contour-integration
 relations:
 - kind: instance-of
-  target: P-H4HKX
+  target: P-JOGPB
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2009
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-H4HKX]] appeared at UGA complex-analysis Fall 2009.
+[[P-JOGPB]] appeared at UGA complex-analysis Fall 2009.
 :::

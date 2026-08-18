@@ -1,8 +1,7 @@
 ---
+order: 100002
 title: "Complex Analysis Qual Prep Week 2: Things Named After Cauchy"
 ---
-
-Tags: #qualifying_exam #active_projects
 
 # Topics
 
@@ -96,4 +95,4 @@ Jordan's Lemma: ![[_attachments/Pasted image 20210527182026.png]]
 
 # Qual Problems
 
-[[P-FWVKJ]]
+[[P-AQRVL]]

@@ -12,7 +12,7 @@ order: 1
 
 [[P-GSTFL]]
 
-[[P-DRAOZ]]
+[[P-UPCWX]]
 
 [[P-F6C26]]
 
@@ -48,7 +48,7 @@ order: 1
 
 ## ?
 
-[[P-ODRVC]] [[P-JES3E]]
+[[P-KNLBB]] [[P-JES3E]]
 
 ### Tie's Extra Questions: Fall 2009
 

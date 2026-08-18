@@ -2,9 +2,7 @@
 order: 30
 ---
 
-
 # Classification
-
 
 ## Automorphism Groups
 
@@ -12,7 +10,6 @@ order: 30
 Some facts about common automorphism groups, and how to count and reason about them.
 Homs among various cyclic groups $C_m$ and any of their automorphism groups $\Aut(C_m)$ are **completely** classified, so for example $\Hom(C_m, C_n), \Hom(C_m, \Aut(C_n)), \Hom(\Aut(C_m), C_n)$, etc.
 There's a good reference here: <https://www.whitman.edu/documents/Academics/Mathematics/SeniorProject_BrianSloan.pdf>
-
 
 Let $\varphi$ be the totient function, and note that a cyclic group $C_n$ has precisely $\phi(n)$ choices of generators.
 One can compute
@@ -35,11 +32,9 @@ In fact, $C_n\units$ cyclic iff $n=2,4,p^k, 2p^k$ for $p$ an odd prime.
 
 :::
 
-
 - For $p$ an odd prime, $\Aut(C_p) \cong C_p\units \cong C_{p-1}$ is cyclic.
 
 - For $p^k$ an odd prime power, $\Aut(C_{p^k}) \cong C_{\varphi(p^k)}$ is cyclic.
-
 
 - For $2^k$ with $k\geq 1$, $C_{2^k}\units \cong C_{2}\times C_{2^{k-2}}$.
 
@@ -59,8 +54,6 @@ C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}}
   &\cong \qty{C_2 \cross C_{2^{\ell-2}} } \cross \prod_{\substack{k=1 \\ p_k\neq 2} }^\ell C_{m_k} &&  m_k \da p_k^{n_k-1}(p_k-1)
   .\]
 
-
-
 - $\Aut(C_p^n) \cong \GL_n(\FF_p)$ which has size
 \[
 \# \GL_n(\FF_p) = \prod_{k=0}^{n-1}(p^n-p^k) = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n-p^{n-1})
@@ -70,9 +63,7 @@ C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}}
 - $\Aut(C_m^n)$ for $m$ not prime: no clue!
   For $n=2$, this seems to be a wreath product $\Aut(C_m) \wr C_2$.
 
-
 - Counting homs: $\# \Hom_\Grp(C_n, C_m) = \gcd(n ,m)$.
-
 
 -  If $\sigma \in \Aut(H)$ and $\tau \in \Aut(N)$, then \(N \semidirect_\psi H \cong N \semidirect_{\tau \circ \psi \circ \sigma} H\).
   - So if $\GL_n$ shows up in a semidirect product, it suffices to consider similarity classes of matrices (i.e. just use canonical forms).
@@ -246,7 +237,6 @@ Assemble these into a table, grouped by prime factor $p_i$, being careful not to
 | $p_1^{e_2}$ | $p_2^{f_1}$ | $p_3^{g_2}$ |             |
 | $p_1^{e_3}$ | $p_2^{f_2}$ | $p_3^{g_3}$ | $p_4^{h_1}$ |
 
-
 For elementary divisors: take columns, which just amounts to listing them again:
 \[
 &\quad \ZZ/p_1^{e_1} \cross \ZZ/p_1^{e_2} \cross \ZZ/p_1^{e_3} \\
@@ -317,7 +307,6 @@ Reading down columns, left to right (merging nothing) yields elementary divisors
 \cong
 \ZZ_2 \times \ZZ_2 \times \ZZ_{2^3} \times \ZZ_{5^2} \times \ZZ_7
 .\]
-
 
 :::
 

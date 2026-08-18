@@ -1,8 +1,7 @@
 ---
+order: 100002
 title: "Algebra Qual Prep Week 2: Finite Group Theory"
 ---
-
-Tags: #qualifying_exam #active_projects #qual_algebra
 
 # Week 2: Finite Groups
 
@@ -81,7 +80,7 @@ Tags: #qualifying_exam #active_projects #qual_algebra
 
 ### Warmup
 
-[[P-O2H7G]] [[P-P4KA6]] [[P-WC3HY]] [[P-5YUW6]] [[P-JZM4U]] [[P-2DITY]] [[P-2TASE]] [[P-6XW74]] [[P-HYQCG]]
+[[P-O2H7G]] [[P-P4KA6]] [[P-WC3HY]] [[P-5YUW6]] [[P-JZM4U]] [[P-3PD4W]] [[P-2TASE]] [[P-6XW74]] [[P-HYQCG]]
 
 ### Group Actions
 

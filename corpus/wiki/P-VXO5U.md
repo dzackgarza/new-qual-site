@@ -34,6 +34,7 @@ Use this to show the following:
 1. The sequence $e_n$ is increasing.
 2. The sequence $E_n$ is decreasing.
 3. $2 < e_n < E_n < 4$.
+4. $\lim _{n \to \infty} e_{n} = \lim _{n \to \infty} E_{n}$.
 :::
 
 
@@ -77,6 +78,8 @@ Use this to show the following:
     \]
     Hence $E_{n+1} < E_n$.
 <1>5. $2 < e_n < E_n < 4$ for $n \ge 2$.
-    Proof: $e_1 = 2$ and $e_n$ is increasing (<1>3), so $e_n \ge 2$, with $e_2 = 9/4 > 2$; $E_1 = 4$ and $E_n$ is decreasing (<1>4), so $E_n \le 4$, with $E_2 = 27/8 < 4$; and $e_n < E_n$ by <1>1. Hence $2 < e_n < E_n < 4$ for all $n \ge 2$. (For $n = 1$: $2 = e_1 < E_1 = 4$.)
-<1>6. Q.E.D.
+    Proof: $e_1 = 2$ and $e_n$ is increasing (<1>3), so $e_n \ge 2$, with $e_2 = 9/4 > 2$; $E_1 = 4$ and $E_n$ is decreasing (<1>4), so $E_n \le 4$, with $E_2 = 27/8 < 4$; and $e_n < E_n$ by <1>1.     Hence $2 < e_n < E_n < 4$ for all $n \ge 2$. (For $n = 1$: $2 = e_1 < E_1 = 4$.)
+<1>6. $\lim_{n\to\infty} e_n = \lim_{n\to\infty} E_n$.
+    Proof: $e_n$ is increasing and bounded above (by $E_n \le 4$), and $E_n$ is decreasing and bounded below (by $e_n \ge 2$), so both sequences converge. Also $E_n - e_n = e_n/n$, and $0 < e_n/n \le 4/n \to 0$ by <1>5, so the limits are equal.
+<1>7. Q.E.D.
 :::

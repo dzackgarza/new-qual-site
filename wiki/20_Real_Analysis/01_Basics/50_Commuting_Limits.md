@@ -30,7 +30,6 @@ and $f_n'(0) \to 1$.
 :::
 [[PR-UZVC3]]
 
-
 :::{.example title="Limits of doubly indexed sequences need not commute"}
 \[
 \lim_{m\to \infty}\lim_{n\to\infty} a_{mn}
@@ -97,7 +96,6 @@ Note that uniform convergence of $f_n$ and $f_n'$ is sufficient to guarantee tha
 Even worse: every continuous function is a uniform limit of polynomials by the Weierstrass approximation theorem.
 
 :::
-
 
 :::{.example title="?"}
 \[  

@@ -18,6 +18,7 @@ payload:
   - P-3TQB5
   - P-6PQRO
   - P-KJBAM
+  - P-8TS25
   - P-KBHAC
   - P-2ZWQ7
   - P-FUHGO
@@ -28,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2016. The paper is the current Quals posting `Topology [Spring 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #5 (cell structure and homology of the mapping torus of $z\mapsto z^3$) has no matching P-card.
+UGA topology Spring 2016. The paper is the current Quals posting `Topology [Spring 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

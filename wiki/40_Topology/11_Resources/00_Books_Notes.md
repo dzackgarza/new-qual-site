@@ -1,11 +1,17 @@
+---
+order: 0
+---
+
 # Topology References
-#resources/reading
 
 # Books
 
 - A. Hatcher: Algebraic Topology,
+
 - W. Fulton: Algebraic Topology,
+
 - E. Spanier: Algebraic Topology,
+
 - Greenberg and Harper: Algebraic Topology: A First Course
 
 # Notes
@@ -27,4 +33,3 @@
 [Separation_defintions.pdf](attachments/Separation_defintions.pdf)
 
 [http://www.math.lsa.umich.edu/~ikriz/math2020atqr.html](http://www.math.lsa.umich.edu/~ikriz/math2020atqr.html)
-    

@@ -58,9 +58,6 @@ For any $p$ dividing the order of $G$, $\mathrm{Syl}_p(G)$ denotes the *set* of 
 
 :::
 
-
-
-
 ## Definitions
 
 :::{.fact}
@@ -166,7 +163,6 @@ Conversely, if $C(h_i) \subseteq H$ for all $h_i \in H$, then $gh_ig\inv \in H$ 
 
 [[E-P4LG6]]
 
-
 ## Centralizing and Centers
 
 [[D-PX64W]]
@@ -189,7 +185,6 @@ So $[x, \wait]_{\lieh} = 0$ for central $x$ and $\im [x, \wait]_{\lieh} \subsete
 [[D-NK7G7]]
 
 [[E-O73XQ]]
-
 
 ## Cosets
 
@@ -427,7 +422,7 @@ Summary of useful qual tips:
 ## Big List of Notation
 
 :::{.remark title="Notation"}
-I use the following notation throughout:
+These notes use the following notation throughout:
 
 +--------------------------------------+------------------------------------------------------------------------------------------------------------------+
 | Notation                             | Definition                                                                                                       |

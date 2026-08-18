@@ -1,8 +1,7 @@
 ---
+order: 100001
 title: "Complex Analysis Qual Prep Week 1: Preliminaries"
 ---
-
-Tags: #qualifying_exam #active_projects #qual_complex_analysis
 
 # Week 1: Preliminaries
 

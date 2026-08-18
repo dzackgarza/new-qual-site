@@ -1,4 +1,5 @@
 ---
+order: 40
 title: Open Mapping Theorem
 ---
 

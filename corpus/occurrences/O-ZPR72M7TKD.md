@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-ZPR72M7TKD
 kind: occurrence
-title: P-HEMGC at UGA real-analysis Fall 2020
+title: P-PMDP4 at UGA real-analysis Fall 2020
 classification:
   areas:
   - real-analysis
@@ -11,7 +11,7 @@ classification:
   - integrals
 relations:
 - kind: instance-of
-  target: P-HEMGC
+  target: P-PMDP4
 review: draft
 payload:
   source: SRC-UGA-RA-FALL-2020
@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-[[P-HEMGC]] appeared at UGA real-analysis Fall 2020.
+[[P-PMDP4]] appeared at UGA real-analysis Fall 2020.
 :::

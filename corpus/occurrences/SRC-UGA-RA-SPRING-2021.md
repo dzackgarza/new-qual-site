@@ -13,7 +13,13 @@ payload:
   source_kind: university-exam
   institution: uga
   area: real-analysis
-  problems: []
+  problems:
+  - P-TNOTE
+  - P-KPNWG
+  - P-6QWZI
+  - P-B2ZXW
+  - P-AK3OT
+  - P-YZ2WZ
   date:
     kind: academic-term
     term: spring
@@ -21,5 +27,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2021. Recorded from the source corpus' exam-term annotations. The paper is the current Quals posting `Real Analysis [Spring 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed January 2021. The catalog PDF `RealAnalysis_Qual_Spring2021.pdf` currently 404s. `problems:` is left empty: exam #3 (an a.e. convergent $L^1$ sequence on a finite measure space is uniformly bounded off a small set) is stated by `P-6QWZI`.
+UGA real-analysis Spring 2021. Recorded from the source corpus' exam-term annotations.
+The paper is the current Quals posting `Real Analysis [Spring 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed January 2021. The catalog PDF `RealAnalysis_Qual_Spring2021.pdf` currently 404s. The list is the sitting order on that paper.
 :::

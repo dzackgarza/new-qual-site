@@ -103,7 +103,6 @@ Remembering that $\sum_{1\leq k \leq n} k = n(n+1)/2$: realize as counting a tri
 
 ![](figures/2021-12-11_22-15-41.png)
 
-
 Write $k^2 = k(k+1) - k$ to get
 \[
 \sum k^2 = \sum k(k+1) - \sum k = {n(n+1/2)(n+2/2) \over 3}
@@ -267,5 +266,4 @@ which is useful for generating the first few low order terms of a series expansi
 :::
 
 [[P-KUNLD]]
-
 

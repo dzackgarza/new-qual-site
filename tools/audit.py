@@ -70,23 +70,14 @@ def check_duplicate_bodies(parsed: list[ParsedCard]) -> Check:
         if digest not in by_digest:
             by_digest[digest] = []
         by_digest[digest].append(item.card.id)
-    violations = [
-        f"{len(ids)} cards share one body: {', '.join(sorted(ids)[:6])}"
-        + ("..." if len(ids) > 6 else "")
-        for ids in by_digest.values()
-        if len(ids) > 1
-    ]
+    violations = [f"{len(ids)} cards share one body: {', '.join(sorted(ids)[:6])}" + ("..." if len(ids) > 6 else "") for ids in by_digest.values() if len(ids) > 1]
     return Check("duplicate-bodies", sorted(violations))
 
 
 def check_empty_areas(parsed: list[ParsedCard]) -> Check:
     return Check(
         "empty-areas",
-        sorted(
-            f"{item.card.id}: areas: []"
-            for item in parsed
-            if not item.card.classification.areas
-        ),
+        sorted(f"{item.card.id}: areas: []" for item in parsed if not item.card.classification.areas),
     )
 
 
@@ -109,11 +100,7 @@ def check_one_sitting_one_source(parsed: list[ParsedCard]) -> Check:
         seen[key].append(card.id)
     return Check(
         "duplicate-sittings",
-        sorted(
-            f"{key}: {', '.join(sorted(ids))}"
-            for key, ids in seen.items()
-            if len(ids) > 1
-        ),
+        sorted(f"{key}: {', '.join(sorted(ids))}" for key, ids in seen.items() if len(ids) > 1),
     )
 
 
@@ -134,9 +121,7 @@ def _manifest_ids(root: Path = REPO) -> set[str]:
     return ids
 
 
-def orphan_ids(
-    parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO
-) -> set[str]:
+def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO) -> set[str]:
     """A card is reachable when a page or manifest names it, or when it hangs off
     a card that is. The emitter renders occurrences, hints and solutions on their
     problem's route, so a reader does reach them -- but only through it.
@@ -181,13 +166,7 @@ def orphan_ids(
                 case ExamSource() | ContributedArtifact():
                     listed = list(item.card.payload.problems)
                 case TextbookSource():
-                    listed = [
-                        pid
-                        for section in item.card.payload.sections
-                        for pid in section.problems
-                    ]
-                case _:
-                    listed = []
+                    listed = [pid for section in item.card.payload.sections for pid in section.problems]
             if listed:
                 edges.setdefault(item.card.id, set()).update(listed)
 
@@ -259,14 +238,12 @@ def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
                 pids.extend(section.problems)
         elif isinstance(card.payload, ContributedArtifact):
             pids = card.payload.problems
-        else:
-            continue
         for pid in pids:
             if pid not in ids:
                 check.violations.append(f"{card.id}: lists unknown problem {pid}")
-            elif ids[pid] != "problem":
+            elif ids[pid] not in ("problem", "exercise"):
                 check.violations.append(
-                    f"{card.id}: lists {pid} which is kind {ids[pid]!r}, not 'problem'"
+                    f"{card.id}: lists {pid} which is kind {ids[pid]!r}, not 'problem' or 'exercise'"
                 )
     return check
 
@@ -288,9 +265,7 @@ def run(names: list[str]) -> list[Check]:
         return [
             Check(
                 "qualc-check",
-                [
-                    f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"
-                ],
+                [f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"],
             )
         ]
     checks: list[Check] = []
@@ -304,13 +279,9 @@ def run(names: list[str]) -> list[Check]:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="audit")
-    ap.add_argument(
-        "--only", action="append", choices=ALL, help="run one check (repeatable)"
-    )
+    ap.add_argument("--only", action="append", choices=ALL, help="run one check (repeatable)")
     ap.add_argument("--json", action="store_true")
-    ap.add_argument(
-        "--full", action="store_true", help="print every violation, not the first 20"
-    )
+    ap.add_argument("--full", action="store_true", help="print every violation, not the first 20")
     args = ap.parse_args(argv)
 
     checks = run(args.only or ALL)

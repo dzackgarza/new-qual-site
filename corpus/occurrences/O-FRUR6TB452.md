@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: O-FRUR6TB452
 kind: occurrence
-title: P-CPLIB at UGA complex-analysis Fall 2015
+title: P-YVNUD at UGA complex-analysis Fall 2015
 classification:
   areas:
   - complex-analysis
@@ -12,7 +12,7 @@ classification:
   - fractional-linear-transformations
 relations:
 - kind: instance-of
-  target: P-CPLIB
+  target: P-YVNUD
 review: draft
 payload:
   source: SRC-UGA-CA-FALL-2015
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-[[P-CPLIB]] appeared at UGA complex-analysis Fall 2015.
+[[P-YVNUD]] appeared at UGA complex-analysis Fall 2015.
 :::

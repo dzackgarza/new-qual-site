@@ -1,3 +1,7 @@
+---
+order: 900
+---
+
 # Exercises
 
 [[E-LJ7PF]]
@@ -7,4 +11,3 @@
 [[E-NUJ7W]]
 
 [[E-GNYRR]]
-

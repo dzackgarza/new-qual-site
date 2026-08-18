@@ -14,10 +14,13 @@ payload:
   institution: uga
   area: topology
   problems:
+  - P-8TF24
   - P-SGK4K
+  - P-8TF25
   - P-Y7C7Z
   - P-QB5KF
   - P-LWGC4
+  - P-8TF26
   - P-DRVWD
   date:
     kind: academic-term
@@ -26,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2012. The paper is the current Quals posting `Topology [Fall 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper. Exam #1 ($X=\{(x,\sin(1/x))\mid x>0\}$ union the segment $\{0\}\times[-1,1]$ is not path-connected) has no matching P-card; `P-HVKUA` asks connectedness as well, and uses the bounded closed sine curve. Exam #3 (a continuous bijection of connected spaces that is not a homeomorphism) has no matching P-card. Exam #7 (identify the drawn surface via the classification) has no matching P-card.
+UGA topology Fall 2012. The paper is the current Quals posting `Topology [Fall 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

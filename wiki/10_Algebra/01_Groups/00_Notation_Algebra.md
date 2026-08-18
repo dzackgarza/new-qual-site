@@ -48,9 +48,6 @@ N_G(H) && \text{Normalizer of a subgroup} \\
 && \da \Aut(G) / \Inn(G) \from \Aut(G) 
 .\]
 
-
-
-
 ## Group Actions
 
 \[
@@ -70,6 +67,4 @@ X/G && \text{Set of orbits} \\
 &&
 \da \theset{x\in X \suchthat g\cdot x = x\, \forall g\in G} \subseteq X 
 .\]
-
-
 
