@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2012. The paper is the current Quals posting `Topology [Fall 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2012.txt`. Exam #8 lists [[P-DRVWD]]; the paper asks $\pi_1$ and $H_*$, while the card (Fall 2009 #8) asks $\pi_1$ and $H_1$ of the same mapping torus $z\mapsto z^2$.
+UGA topology Fall 2012. The paper is the current Quals posting `Topology [Fall 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2012.txt`. The list is the sitting order on that paper. Exam #8 lists [[P-DRVWD]] (same mapping torus as Fall 2009 #8).
 :::

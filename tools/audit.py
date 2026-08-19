@@ -163,8 +163,10 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
         if item.card.kind == "collection":
             listed: list[str]
             match item.card.payload:
-                case ExamSource() | ContributedArtifact():
+                case ExamSource():
                     listed = list(item.card.payload.problems)
+                case ContributedArtifact():
+                    listed = item.card.payload.listed_problem_ids()
                 case TextbookSource():
                     listed = [pid for section in item.card.payload.sections for pid in section.problems]
             if listed:
@@ -212,7 +214,7 @@ def check_collection_lists_problems(parsed: list[ParsedCard]) -> Check:
             if not card.payload.sections:
                 check.violations.append(f"{card.id}: textbook collection has no sections")
         elif isinstance(card.payload, ContributedArtifact):
-            if not card.payload.problems:
+            if not card.payload.problems and not card.payload.sections:
                 check.violations.append(f"{card.id}: artifact collection lists no problems")
     return check
 
@@ -237,7 +239,7 @@ def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
             for section in card.payload.sections:
                 pids.extend(section.problems)
         elif isinstance(card.payload, ContributedArtifact):
-            pids = card.payload.problems
+            pids = card.payload.listed_problem_ids()
         for pid in pids:
             if pid not in ids:
                 check.violations.append(f"{card.id}: lists unknown problem {pid}")

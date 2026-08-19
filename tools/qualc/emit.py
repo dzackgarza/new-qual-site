@@ -963,13 +963,18 @@ def collection_page(
         """,
         (src["id"],),
     )
-    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(con, listed, inline_cache)
+    completion_rows = _rows(con, "select completion from sources where id=?", (src["id"],))
+    completion = completion_rows[0]["completion"] if completion_rows else "complete"
+    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
+        con, listed, inline_cache, completion
+    )
 
 
 def _collection_listing(
     con: sqlite3.Connection,
     listed: list[sqlite3.Row],
     inline_cache: dict[str, list[pf.Inline]],
+    completion: str = "complete",
 ) -> list[pf.Block]:
     """The collection card's `problems:` / `sections:` list is the page body.
 
@@ -983,13 +988,22 @@ def _collection_listing(
             return pf.ListItem(_link(matches[0], inline_cache))
         return pf.ListItem(pf.Plain(pf.Code(problem_id)))
 
-    blocks: list[pf.Block] = [
+    blocks: list[pf.Block] = []
+    if completion == "incomplete":
+        blocks.append(
+            pf.Para(
+                pf.Str(
+                    "This collection is incomplete; listed items are a prefix of the source, and further extraction is pending."
+                )
+            )
+        )
+    blocks.append(
         pf.Para(
             pf.Str(str(len(listed))),
             pf.Space(),
             *_inlines("problems.", inline_cache),
         )
-    ]
+    )
     if not listed:
         return blocks
 

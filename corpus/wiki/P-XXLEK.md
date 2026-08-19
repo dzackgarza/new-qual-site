@@ -21,5 +21,5 @@ Let $X$ be a regular space that has a countable basis for its topology, and let 
 
 a. Show that $U$ is a countable union of closed subsets of $X$.
 
-b. Show that there is a continuous function $f : X \to [0,1]$ such that $f (x) > 0$ for $x \in U$ and $f (x) = 0$ for $x \in U$.
+b. Show that there is a continuous function $f : X \to [0,1]$ such that $f (x) > 0$ for $x \in U$ and $f (x) = 0$ for $x \notin U$.
 :::

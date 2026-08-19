@@ -11,12 +11,19 @@ classification:
   - eigenvalues-and-eigenvectors
 relations: []
 review: draft
-solved: false
+solved: true
 ---
 
 ::: problem
-1. Parts
-   1. If $A$ has two distinct eigenvalues, we will have $A = PDP\inv$ where $P$ is the matrix of eigenvectors and $D$ has eigenvalues on the diagonal. We can compute the characteristic polynomial
+Take
+\[
+A := \begin{pmatrix} 2 & -2 \\ -2 & 5 \end{pmatrix}.
+\]
+Find an orthogonal matrix $P$ for which $P^{-1}AP$ is diagonal. Then find the minimum value of the dot products $Ax \cdot x$ as $x$ ranges through the unit vectors in $\mathbb{R}^2$.
+:::
+
+::: solution
+If $A$ has two distinct eigenvalues, we will have $A = PDP\inv$ where $P$ is the matrix of eigenvectors and $D$ has eigenvalues on the diagonal. We can compute the characteristic polynomial
   $$
   p_\chi(x) = x^2 - (\Tr A)x + \det A = x^2 - 7x + 6 = (x-6)(x-1),
   $$
@@ -38,14 +45,14 @@ solved: false
 
       We can compute $PP^T = \mathrm{diag}(5,5)$, so $P$ can be made orthogonal by replacing $P$ with $(1/\sqrt 5) P$. With this replacement, a quick computation shows that $PDP^T = A$.
 
-   1. We will use the fact that $A = PDP\inv$ where since $A$ is symmetric and $P$ is orthogonal. We can write
+   We will use the fact that $A = PDP\inv$ where since $A$ is symmetric and $P$ is orthogonal. We can write
    $$
-   \inner{A\vector x}{\vector x} = \vector x^T A^T \vector x = \vector x^T (PDP^T)^T \vector x 
+   \inner{A\vector x}{\vector x} = \vector x^T A^T \vector x = \vector x^T (PDP^T)^T \vector x
    = (P^T \vector x)^T D (P^T\vector x) = \vector y^T D \vector y = \inner{\vector y}{ D\vector y},
    $$
-   where $\vector x\in S^2 \implies P^T\vector x \definedas \vector y \in S^2$ since $P^T$ is both orthogonal and full-rank (and thus a bijection $S^2 \selfmap$).
+   where $\vector x\in S^2 \implies P^T \vector x \definedas \vector y \in S^2$ since $P^T$ is both orthogonal and full-rank (and thus a bijection $S^2 \selfmap$).
 
-      We can now expand 
+      We can now expand
     $$
     \inner{\vector y}{D \vector y} = \sum_{i=1}^2 y_i \lambda_i y_i = \sum_{i=1}^2 \lambda_i y_i^2
     $$
@@ -67,5 +74,4 @@ solved: false
       $$
 
       The second condition forces $y_2 \in \theset{0,1}$, and solving for $\lambda$ in this expression yields $\lambda = 1$ and so the first condition forces $y_1 = 0$. This leaves only one possibility, $\vector y = \thevector{0, 1}$, which is indeed the candidate from above. Thus the minimum value is 1. $\qed$
- 
 :::

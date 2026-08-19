@@ -57,6 +57,40 @@ def test_every_kind_parses(kind: str) -> None:
     assert parse_card(fixture).card.kind == kind
 
 
+def test_collection_completion_defaults_to_complete() -> None:
+    from qualc.model import parse_card
+
+    card = parse_card(FIXTURES / "SRC-DUMMIT.md").card
+    assert card.kind == "collection"
+    assert card.completion == "complete"
+
+
+def test_incomplete_completion_parses(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    path = tmp_path / "SRC-DUMMIT.md"
+    path.write_text(
+        (FIXTURES / "SRC-DUMMIT.md").read_text().replace(
+            "review: draft\n", "review: draft\ncompletion: incomplete\n", 1
+        )
+    )
+    card = parse_card(path).card
+    assert card.completion == "incomplete"
+
+
+def test_unknown_completion_is_rejected(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    path = tmp_path / "SRC-DUMMIT.md"
+    path.write_text(
+        (FIXTURES / "SRC-DUMMIT.md").read_text().replace(
+            "review: draft\n", "review: draft\ncompletion: todo\n", 1
+        )
+    )
+    with pytest.raises(ValueError):
+        parse_card(path)
+
+
 def test_check_is_green_over_all_fixtures(tmp_path: Path) -> None:
     result = subprocess.run(
         [sys.executable, "-m", "qualc", "check", "--root", str(fixture_repo(tmp_path))],

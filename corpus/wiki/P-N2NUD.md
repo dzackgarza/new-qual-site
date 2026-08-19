@@ -10,11 +10,19 @@ classification:
   - functions-and-relations
 relations: []
 review: draft
-solved: false
+solved: true
 ---
 
 ::: problem
-2. We need to show that $R$ is reflexive, transitive, and symmetric.
+Take $A = \{0, 1, 2, 3, 4, 5\}$. Define a relation $R$ on $A$ by $x\, R\, y$ if and only if $x^2 - 4x = y^2 - 4y$.
+
+a. Prove that $R$ is an equivalence relation.
+
+b. Exhibit the partition of $A$ whose members are the equivalence classes of $R$.
+:::
+
+::: solution
+We need to show that $R$ is reflexive, transitive, and symmetric.
    1. Reflexive: this would say that $x\sim x \iff x^2-4x = x^2-4x$, which is true.
    2. Transitive: suppose $x\sim y$ and $y\sim z$, we want to show $x\sim z$. But we have
    $$

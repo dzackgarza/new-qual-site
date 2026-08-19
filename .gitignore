@@ -7,3 +7,5 @@ _site/
 
 # Agent worktrees created by the Claude Code Agent tool live here.
 .claude/
+
+.tmp*

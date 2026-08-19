@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2009. The paper is the current Quals posting `Topology [Fall 2009].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2009.txt`. Exam #8 lists [[P-DRVWD]] (the identification is $z\mapsto z^2$; the card writes $z_2$). Fall 2012 #8 is the same space asking $H_*$ rather than $H_1$.
+UGA topology Fall 2009. The paper is the current Quals posting `Topology [Fall 2009].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2009.txt`. The list is the sitting order on that paper. Exam #8 is the mapping torus $z\mapsto z^2$, listed as the complete statement [[P-DRVWD]] (Fall 2012 #8 asks $\pi_1$ and $H_*$ of the same space; Fall 2009 asked $\pi_1$ and $H_1$).
 :::

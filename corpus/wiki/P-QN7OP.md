@@ -22,8 +22,8 @@ Prove that $X$ is connected if and only if there is no continuous
 nonconstant map to the discrete two-point space $\theset{0, 1}$.
 
 b.
-Suppose in addition that $X$ is compact and $Y$ is a connected Hausdorff space. 
-Suppose further that there is a continuous map $f : X \to Y$ such that 
+Suppose in addition that $X$ is compact and $Y$ is a connected Hausdorff space.
+Suppose further that there is a surjective continuous map $f : X \to Y$ such that
 every preimage $f\inv (y)$ for $y \in Y$, is a connected subset of $X$. 
 
 Show that $X$ is connected.

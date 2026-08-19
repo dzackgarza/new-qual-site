@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3SSNK
 kind: problem
-title: "(June 2014 1)Define $\\alpha \\colon [-1,1] \\to \\mathbb{R}$ by"
+title: Riemann–Stieltjes integral against a jump at $0$
 classification:
   areas:
   - real-analysis

@@ -30,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2021. The paper is the current Quals posting `Topology [Spring 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (no local dump; converted from that posting). The paper asks for 8 of 9 problems; the list is the full paper order. Exam #3 lists [[P-A33VH]]; part (b) of the card asserts $A\cap B=\emptyset$ when the paper has $A\cap B\neq\emptyset$. Exam #6(a) on [[P-4EIOH]] swaps vertices/edges (paper: two vertices and three edges). Exam #9 lists [[P-C3NSR]] (same statement as Fall 2004 #8).
+UGA topology Spring 2021. The paper is the current Quals posting `Topology [Spring 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (no local dump; converted from that posting). The paper asks for 8 of 9 problems; the list is the full paper order. Exam #9 lists [[P-C3NSR]] (same statement as Fall 2004 #8).
 :::

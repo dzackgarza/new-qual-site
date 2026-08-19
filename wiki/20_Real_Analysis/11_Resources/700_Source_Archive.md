@@ -80,41 +80,23 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 ## UGA
 
-[[SRC-UGA-RA-SUMMER-2003]]
-
 [[SRC-UGA-RA-SPRING-2005]]
-
-[[SRC-UGA-RA-SUMMER-2005]]
 
 [[SRC-UGA-RA-SPRING-2006]]
 
 [[SRC-UGA-RA-SPRING-2007]]
 
-[[SRC-UGA-RA-SUMMER-2007]]
-
 [[SRC-UGA-RA-SPRING-2008]]
-
-[[SRC-UGA-RA-SUMMER-2008]]
 
 [[SRC-UGA-RA-SPRING-2009]]
 
-[[SRC-UGA-RA-SUMMER-2009]]
-
 [[SRC-UGA-RA-SPRING-2010]]
-
-[[SRC-UGA-RA-SUMMER-2010]]
 
 [[SRC-UGA-RA-SPRING-2011]]
 
 [[SRC-UGA-RA-SPRING-2012]]
 
-[[SRC-UGA-RA-SUMMER-2012]]
-
-[[SRC-UGA-RA-SUMMER-2013]]
-
 [[SRC-UGA-RA-SPRING-2014]]
-
-[[SRC-UGA-RA-SUMMER-2014]]
 
 [[SRC-UGA-RA-FALL-2014]]
 
@@ -127,8 +109,6 @@ Each entry links to that collection's own page, which lists its problems in the 
 [[SRC-UGA-RA-FALL-2016]]
 
 [[SRC-UGA-RA-SPRING-2017]]
-
-[[SRC-UGA-RA-SUMMER-2017]]
 
 [[SRC-UGA-RA-FALL-2017]]
 

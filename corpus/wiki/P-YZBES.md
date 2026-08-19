@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YZBES
 kind: problem
-title: "Find the number of roots of $z^4 - 6z + 3 =0$ in $|z|<1$ and $1 < |z| < 2$ respectively. On $\\abs{z} \\leq 1$: Big: $M(z) = -6z$"
+title: Number of roots of $z^4-6z+3=0$ in $|z|<1$, $1<|z|<2$, and $|z|>2$
 classification:
   areas:
   - complex-analysis
@@ -15,8 +15,7 @@ review: draft
 solved: true
 ---
 :::{.problem title="?"}
-Find the number of roots of $z^4 - 6z + 3 =0$ in $|z|<1$ and
-$1 < |z| < 2$ respectively.
+Find the number of roots of $z^4 - 6z + 3 =0$ in $|z|<1$, $1 < |z| < 2$, and $|z|>2$ respectively.
 :::
 
 :::{.solution}
@@ -42,6 +41,6 @@ Then on $\abs{z} = 2$,
 ,\]
 so $4 = Z_M = Z_f$ here.
 
-Thus there are $4-1 = 3$ zeros in $1 \leq \abs{z} \leq 2$.
+Thus there are $4-1 = 3$ zeros in $1 \leq \abs{z} \leq 2$, and none in $\abs{z}>2$.
 :::
 

@@ -43,7 +43,8 @@ create table relations (source_id text not null, kind text not null, target_id t
 -- cases that lack them; `date_kind` says which case, so null is never ambiguous.
 create table sources (
   id text primary key, source_kind text not null,
-  date_kind text not null, year integer, term text
+  date_kind text not null, year integer, term text,
+  completion text not null
 );
 create table exam_sources (id text primary key, institution text not null, area text not null);
 create table textbook_sources (id text primary key, textbook text not null);
@@ -196,13 +197,14 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
         if isinstance(c, CollectionCard):
             d = c.payload.date
             con.execute(
-                "insert into sources values (?,?,?,?,?)",
+                "insert into sources values (?,?,?,?,?,?)",
                 (
                     c.id,
                     c.payload.source_kind,
                     d.kind,
                     d.year if isinstance(d, AcademicTerm | YearOnly) else None,
                     d.term if isinstance(d, AcademicTerm | TermOnly) else None,
+                    c.completion,
                 ),
             )
             # One branch per variant, no fallback: a new source kind added to the
@@ -234,11 +236,19 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
                         "insert into artifact_sources values (?,?)",
                         (c.id, c.payload.provenance),
                     )
-                    for ordinal, pid in enumerate(c.payload.problems):
-                        con.execute(
-                            "insert into collection_problems values (?,?,?,?,?)",
-                            (c.id, None, None, ordinal, pid),
-                        )
+                    if c.payload.sections:
+                        for section_ordinal, section in enumerate(c.payload.sections):
+                            for ordinal, pid in enumerate(section.problems):
+                                con.execute(
+                                    "insert into collection_problems values (?,?,?,?,?)",
+                                    (c.id, section_ordinal, section.name, ordinal, pid),
+                                )
+                    else:
+                        for ordinal, pid in enumerate(c.payload.problems):
+                            con.execute(
+                                "insert into collection_problems values (?,?,?,?,?)",
+                                (c.id, None, None, ordinal, pid),
+                            )
 
     con.commit()
     con.close()

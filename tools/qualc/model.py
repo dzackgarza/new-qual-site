@@ -15,7 +15,7 @@ from typing import Annotated, Literal, cast
 
 import panflute as pf
 import yaml
-from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, field_validator
+from pydantic import BaseModel, ConfigDict, Field, TypeAdapter, field_validator, model_validator
 
 from .diagnostics import Diagnostic, DiagnosticCode
 from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer
@@ -79,6 +79,12 @@ RelationKind = Literal[
 # pass, and claiming it on import would assert a review that never happened.
 Review = Literal["draft", "reviewed", "verified"]
 
+# Whether a collection's listed problems are the whole source, or a prefix
+# still being extracted. Omitted YAML is `complete`, so existing filled exams
+# do not need a field. `incomplete` is the remaining-work signal on a
+# collection whose source is only partly on the card.
+Completion = Literal["complete", "incomplete"]
+
 
 class Classification(Strict):
     areas: list[str]
@@ -136,8 +142,8 @@ class ExamSource(Strict):
         return _check_problem_ids(v)
 
 
-class TextbookSection(Strict):
-    """A named grouping (chapter / section) of a textbook's problems."""
+class CollectionSection(Strict):
+    """A named grouping of a collection's problems (chapter, workshop day, …)."""
 
     name: str
     problems: list[str] = []
@@ -158,7 +164,7 @@ class TextbookSource(Strict):
     source_kind: Literal["textbook"]
     textbook: str
     date: DateSpec
-    sections: list[TextbookSection] = []
+    sections: list[CollectionSection] = []
 
 
 class ContributedArtifact(Strict):
@@ -168,19 +174,33 @@ class ContributedArtifact(Strict):
     sentence ("Neil's Fall 2019 solution set, origin unrecorded"). Requiring it
     stops an artifact entering the corpus with no account of where it came from.
 
-    `problems` is the artifact's table of contents, in order of appearance.
-    Empty until curated.
+    A single-sheet artifact lists `problems` in order of appearance. A packet
+    (a workshop, a multi-day handout) lists `sections` instead, one named
+    grouping per sheet. It is one collection either way; the days are not
+    collections. Empty until curated.
     """
 
     source_kind: Literal["contributed-artifact"]
     provenance: str
     date: DateSpec
     problems: list[str] = []
+    sections: list[CollectionSection] = []
 
     @field_validator("problems")
     @classmethod
     def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
         return _check_problem_ids(v)
+
+    @model_validator(mode="after")
+    def _problems_or_sections(self) -> ContributedArtifact:
+        if self.problems and self.sections:
+            raise ValueError("an artifact lists problems or sections, not both")
+        return self
+
+    def listed_problem_ids(self) -> list[str]:
+        if self.sections:
+            return [pid for section in self.sections for pid in section.problems]
+        return list(self.problems)
 
 
 SourcePayload = Annotated[
@@ -202,10 +222,15 @@ class CollectionCard(Envelope):
 
     The card is the collection: it houses the ordered problem list. Appearances
     on a problem page are generated from that list.
+
+    `completion` is `incomplete` when the list is a prefix of the source and
+    further extraction is pending; it is not a substitute for listing the
+    problems that have already been written.
     """
 
     kind: Literal["collection"]
     payload: SourcePayload
+    completion: Completion = "complete"
 
 
 # Every remaining kind is envelope plus prose body. They are separate classes

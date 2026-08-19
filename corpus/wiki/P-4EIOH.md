@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4EIOH
 kind: problem
-title: "Spring 2021, 6"
+title: Fundamental group and homology of the theta graph and of three disks on a circle
 classification:
   areas:
   - topology
@@ -15,10 +15,10 @@ review: draft
 solved: false
 ---
 
-::: {.problem title="Spring 2021, 6"}
+::: {.problem}
 For each of the following spaces, compute the fundamental group and the homology groups.
 
-a. The graph $\Theta$ consisting of two edges and three vertices connecting them.
+a. The graph $\Theta$ consisting of two vertices and three edges connecting them.
 
 b. The 2-dimensional cell complex $\Theta_2$ consisting of a closed circle and three 2-dimensional disks each having boundary running once around that circle.
 :::

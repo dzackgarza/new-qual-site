@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2004. The paper is the current Quals posting `Topology [Fall 2004].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2004.txt`. Exam #3(b) on [[P-QN7OP]] omits the paper's word "surjective". Exam #8 lists [[P-C3NSR]] (same statement as Spring 2021 #9).
+UGA topology Fall 2004. The paper is the current Quals posting `Topology [Fall 2004].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2004.txt`. The list is the sitting order on that paper. Exam #8 lists [[P-C3NSR]] (same statement as Spring 2021 #9).
 :::

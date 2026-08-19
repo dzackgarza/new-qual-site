@@ -30,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2007 (paper dated January 3, 2007). The paper is the current Quals posting `Topology [Spring 2007].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2007.txt`. Exam #7 on [[P-3AKX2]] writes "homeomorphism $i_*$" for the paper's homomorphism.
+UGA topology Spring 2007 (paper dated January 3, 2007). The paper is the current Quals posting `Topology [Spring 2007].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2007.txt`. The list is the sitting order on that paper.
 :::

@@ -28,6 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2015. The paper is the current Quals posting `Complex Analysis [Fall 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BFall%C2%A02015%5D.docx`). The local dump is `.tmp-uga-ca-exams/FALL-2015.md`. The list is the sitting order on that paper. There are no holes.
-Exam #6 is listed as `P-YZBES` (the paper also asks the count in $|z|>2$; that card states only $|z|<1$ and $1<|z|<2$).
+UGA complex-analysis Fall 2015. The paper is the current Quals posting `Complex Analysis [Fall 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BFall%C2%A02015%5D.docx`). The local dump is `.tmp-uga-ca-exams/FALL-2015.md`. The list is the sitting order on that paper.
 :::
