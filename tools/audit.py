@@ -123,7 +123,7 @@ def _manifest_ids(root: Path = REPO) -> set[str]:
 
 def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO) -> set[str]:
     """A card is reachable when a page or manifest names it, or when it hangs off
-    a card that is. The emitter renders occurrences, hints and solutions on their
+    a card that is. The emitter renders hints and solutions on their
     problem's route, so a reader does reach them -- but only through it.
 
     The same holds one level up, for the same reason: `emit.collection_page`
@@ -242,9 +242,7 @@ def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
             if pid not in ids:
                 check.violations.append(f"{card.id}: lists unknown problem {pid}")
             elif ids[pid] not in ("problem", "exercise"):
-                check.violations.append(
-                    f"{card.id}: lists {pid} which is kind {ids[pid]!r}, not 'problem' or 'exercise'"
-                )
+                check.violations.append(f"{card.id}: lists {pid} which is kind {ids[pid]!r}, not 'problem' or 'exercise'")
     return check
 
 

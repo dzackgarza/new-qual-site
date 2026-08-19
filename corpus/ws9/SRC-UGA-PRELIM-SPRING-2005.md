@@ -13,6 +13,15 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-5XCMC
+  - P-6POHT
+  - P-S05X3
+  - P-S05C4
+  - P-S05T5
+  - P-S05A6
+  - P-OQW4B
+  - P-VA72Z
   date:
     kind: academic-term
     term: spring
@@ -20,8 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Spring 2005. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Spring 2005 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Spring 2005. The paper is the migrated sitting scan `grad_prelim_Spring05.pdf` (wiki attachments). The list is the sitting order on that paper. Exam #1, #2, #7, and #8 are `P-5XCMC`, `P-6POHT`, `P-OQW4B`, and `P-VA72Z`. The remaining items are minted as `P-S05X3`, `P-S05C4`, `P-S05T5`, `P-S05A6`.
 :::

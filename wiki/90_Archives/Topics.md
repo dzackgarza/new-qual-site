@@ -1,7 +1,11 @@
+---
+order: 100
+title: Topics
+---
+
 Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.html#past)
 [UCLA Prelims and Quals](https://secure.math.ucla.edu/gradquals/hbquals.php)
 [Berkeley Prelims](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
-
 
 # Undergraduate / Prelim Level
 
@@ -18,7 +22,6 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Ordinary differential equations; 
 - Stokes’ theorem
 -  Differential of a smoothing mapping between open subsets in Euclidean spaces. Matrix of partial derivatives. Inverse and implicit functions. Multivariable Riemann integration.
-
 
 ## Linear Algebra
 - adjoints of linear transformations 
@@ -61,7 +64,6 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - Vector spaces
 - Finite dimensional vector spaces (over R) and linear maps between them – subspaces, quotient spaces, dimension, bases, matrix representations. Positive definite inner products, orthonormal bases, extensions of orthonormal subsets. Eigenvalues and eigenvectors for automorphisms. Characteristic polynomial.
 
-
 ## Algebra (Artin, Herstein)
 - automorphisms
 - cyclic groups
@@ -92,7 +94,6 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 - unique factorization domains
 - units
 - Definitions of groups, rings, fields, and modules over a ring. Homomorphisms of these objects. Subgroups, normal subgroups, quotient groups. Cyclic groups, finite abelian groups (structure theorem). Ideals, prime and maximal and their quotients — basic examples Z, k[X], rings of algebraic integers. Field extensions, splitting fields of polynomials, normal extensions.
-
 
 ## Real Analysis (Rudin)
 - Accumulation points
@@ -193,8 +194,6 @@ Many Various Topics: [Harvard Page](http://www.math.harvard.edu/graduate/index.h
 ## Topology
 - Open and closed sets, continuous functions. Connectedness, compactness, Hausdorff, normality. Metric spaces, Rn. Heine-Borel theorem.
 
-
-
 ---
 
 # Graduate Level
@@ -256,7 +255,6 @@ First 6 chapters (220 pages) of D&F.
 - symmetric groups and subgroups
 - transpositions
 
-
 ### Commutative Ring Theory
 Chapters 7-9 in D&F
 - basic theorems about factorization and UFD's 
@@ -298,7 +296,6 @@ Chapters 7-9 in D&F
 - Unique Factorization Domains
 - Zorn's lemma
 
-
 ### Field Theory 
 Chapters 13-14 in D&F
 - algebraic and transcendental extensions
@@ -337,7 +334,6 @@ Chapters 13-14 in D&F
 - the Fundamental Theorem of Galois Theory
 - the Fundamental Theorem of Symmetric Functions
 
-
 ### Module Theory:
 Sections 10.1,2,3 and 12.1,2,3.
 - direct sums 
@@ -351,7 +347,6 @@ Sections 10.1,2,3 and 12.1,2,3.
 - the Fundamental Theorem of Finitely Generated Modules over a P.I.D.
 - the Isomorphism Theorems
 
-
 ### Noncommutative Ring Theory
 - Artin-Wedderburn theorem; 
 - group rings
@@ -360,7 +355,6 @@ Sections 10.1,2,3 and 12.1,2,3.
 - Krull-Schmidt theorem; 
 - non-semisimple rings
 - Semisimple rings
-
 
 ### Representations of Groups
 - character tables
@@ -372,7 +366,6 @@ Sections 10.1,2,3 and 12.1,2,3.
 - parametrization of complex representations by characters
 - Peter-Weyl theorem
 - Schur orthogonality
-
 
 ---
 
@@ -483,7 +476,6 @@ Sections 10.1,2,3 and 12.1,2,3.
 Guillemin and Pollack Differential Topology
 Spivak Differential Geometry
 
-
 ### Differential topology: 
 - degree theory
 - Ehresmann's theorem that proper submersions are locally trivial fibrations
@@ -499,7 +491,6 @@ Spivak Differential Geometry
 - transversality
 - vector bundles in general
 - vector fields 
-
 
 ### Differential geometry: 
 - de Rham cohomology

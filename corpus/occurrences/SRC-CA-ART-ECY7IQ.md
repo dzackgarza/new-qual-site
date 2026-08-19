@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Spring 2020 HW 3 #3.8.7
+  problems:
+  - P-PQOTX
   date:
     kind: academic-term
     term: spring

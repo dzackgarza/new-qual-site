@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Fall 2019 Midterm #8
+  problems:
+  - P-UMQHV
   date:
     kind: academic-term
     term: fall

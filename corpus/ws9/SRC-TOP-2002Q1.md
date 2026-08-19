@@ -14,6 +14,16 @@ payload:
   provenance: >-
     Ph.D. Qualifying Exam, Topology and Algebraic Topology, Math 970-971,
     January 18, 2002; institution is not named on the source page.
+  problems:
+  - P-AISD5
+  - P-2SGBM
+  - P-EZ2B2
+  - P-QRCUN
+  - P-4WCFE
+  - P-5AXU3
+  - P-FRRZE
+  - P-LYMLT
+  - P-6EVID
   date:
     kind: year
     year: 2002

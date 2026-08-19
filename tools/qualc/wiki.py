@@ -164,11 +164,7 @@ def _order(metadata: dict[str, object], path: Path) -> int | Diagnostic:
 
 def validate_wiki_tree(pages: list[WikiPage]) -> list[Diagnostic]:
     """A directory is in the tree only when it has an index.md that names it."""
-    indexed = {
-        page.source_rel.parent.as_posix()
-        for page in pages
-        if page.source_rel.stem.lower() == "index" and len(page.source_rel.parts) > 1
-    }
+    indexed = {page.source_rel.parent.as_posix() for page in pages if page.source_rel.stem.lower() == "index" and len(page.source_rel.parts) > 1}
     needed: set[str] = set()
     for page in pages:
         for depth in range(1, len(page.source_rel.parts)):

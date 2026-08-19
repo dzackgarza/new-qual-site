@@ -1,5 +1,6 @@
 ---
 title: Complex Analysis Qualifying Exam
+order: 3
 ---
 
 # Progress

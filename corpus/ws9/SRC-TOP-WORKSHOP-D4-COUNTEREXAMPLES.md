@@ -12,6 +12,18 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: 'Topology Qual Workshop Day 4: Counterexamples; page 2 heading: Assorted Problems.'
+  problems:
+  - P-TOP-WORKSHOP-D4-W1
+  - P-TOP-WORKSHOP-D4-W2
+  - P-TOP-WORKSHOP-D4-W3
+  - P-T09A2
+  - P-T08A1
+  - P-TOP-WORKSHOP-D4-03
+  - P-TOP-WORKSHOP-D4-04
+  - P-T10A1
+  - P-T08A3
+  - P-TOP-WORKSHOP-D4-03B
+  - P-TOP-WORKSHOP-D4-04B
   date:
     kind: unknown
 ---

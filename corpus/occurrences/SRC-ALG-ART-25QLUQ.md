@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Fall 2019 Midterm #5
+  problems:
+  - P-6NTDS
   date:
     kind: academic-term
     term: fall

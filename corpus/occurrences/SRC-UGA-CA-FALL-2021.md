@@ -15,12 +15,12 @@ payload:
   area: complex-analysis
   problems:
   - P-B4HPX
-  - P-SQBZN
-  - P-OFI4Y
-  - P-B3LJA
-  - P-7J6TM
-  - P-FWZWG
-  - P-3CTAR
+  - P-GK4F6
+  - P-W23PS
+  - P-EDU3Q
+  - P-6VN3T
+  - P-BSATZ
+  - P-OONH6
   date:
     kind: academic-term
     term: fall

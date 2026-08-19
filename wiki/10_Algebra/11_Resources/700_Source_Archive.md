@@ -86,7 +86,27 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 [[SRC-MMAQ-UW-ALG-EXTRA-NA]]
 
+## Wesleyan
+
+[[SRC-WESLEYAN-ALG-SUMMER-2013]]
+
 ## Contributed artifacts
+
+[[SRC-ART-ALG-SUMMER-2007]]
+
+[[SRC-ART-ALG-SUMMER-2008]]
+
+[[SRC-ART-ALG-SUMMER-2009]]
+
+[[SRC-ART-ALG-SUMMER-2010]]
+
+[[SRC-ART-ALG-SUMMER-2011]]
+
+[[SRC-ART-ALG-SUMMER-2012]]
+
+[[SRC-ART-ALG-SUMMER-2014]]
+
+[[SRC-ART-ALG-SUMMER-2015]]
 
 [[SRC-ALG-ART-25QLUQ]]
 

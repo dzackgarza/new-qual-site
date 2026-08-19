@@ -12,6 +12,15 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Math 871–872 Qualifying Exam, January 2012.
+  problems:
+  - P-T12A1
+  - P-T12A2
+  - P-T12A3
+  - P-T12A4
+  - P-T12B1
+  - P-T12B2
+  - P-T12B3
+  - P-T12B4
   date:
     kind: year
     year: 2012

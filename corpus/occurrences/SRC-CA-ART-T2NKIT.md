@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Spring 2020 HW 2 #2.6.1
+  problems:
+  - P-Y2YJL
   date:
     kind: academic-term
     term: spring

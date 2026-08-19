@@ -12,6 +12,13 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Spring 20202 HW 3
+  problems:
+  - P-YZ4WV
+  - P-TVUOV
+  - P-ZO5JW
+  - P-TZCW3
+  - P-KWIEG
+  - P-EQGG7
   date:
     kind: academic-term
     term: spring

@@ -38,7 +38,8 @@ order: 15
 
 - [[cambride_analysis_ii.pdf|Cambridge analysis notes]]
 
-UGA Math 8100 as posted by Lyall. These are that course's sheets, not a live syllabus.
+UGA Math 8100 as posted by Lyall.
+These are that course's sheets, not a live syllabus.
 
 - Fall 2021: [HW1](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW1.pdf), [HW2](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW2.pdf), [HW3](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW3.pdf), [HW4](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW4.pdf), [HW5](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW5.pdf), [HW6](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW6.pdf), [HW7](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW7.pdf), [HW8](http://alpha.math.uga.edu/~lyall/8100Fall2021/HW8.pdf), [Exam 1](http://alpha.math.uga.edu/~lyall/8100Fall2021/Exam1.pdf)
 

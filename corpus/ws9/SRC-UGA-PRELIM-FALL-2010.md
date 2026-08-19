@@ -13,6 +13,16 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-UH7ZQ
+  - P-3DZXT
+  - P-F10IJ
+  - P-TBXVH
+  - P-F10LI
+  - P-F10CR
+  - P-5HVC4
+  - P-F10IL
+  - P-F10AT
   date:
     kind: academic-term
     term: fall
@@ -20,8 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2010. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Fall 2010 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Fall 2010. The paper is the migrated sitting scan `grad_prelim_Fall10.pdf` (wiki attachments). The list is the sitting order on that paper. The paper is the August 10, 2010 sitting. Exam #1, #2, #4, and #7 are `P-UH7ZQ`, `P-3DZXT`, `P-TBXVH`, and `P-5HVC4`. The remaining items are minted as `P-F10IJ`, `P-F10LI`, `P-F10CR`, `P-F10IL`, `P-F10AT`.
 :::

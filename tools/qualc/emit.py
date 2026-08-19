@@ -452,16 +452,8 @@ def _wiki_chrome(
 def _wiki_incoming_html(sources: list[WikiPage]) -> str:
     if not sources:
         return ""
-    items = "".join(
-        f'<li><a href="{html.escape(page.route.as_posix(), quote=True)}">{html.escape(page.title)}</a></li>'
-        for page in sources
-    )
-    return (
-        '<section class="relation-group" data-relation-group="wiki-backlinks">'
-        "<h2>What links to this</h2>"
-        f"<ul>{items}</ul>"
-        "</section>"
-    )
+    items = "".join(f'<li><a href="{html.escape(page.route.as_posix(), quote=True)}">{html.escape(page.title)}</a></li>' for page in sources)
+    return f'<section class="relation-group" data-relation-group="wiki-backlinks"><h2>What links to this</h2><ul>{items}</ul></section>'
 
 
 def _wiki_blocks(page: WikiPage, incoming: list[WikiPage]) -> list[pf.Block]:
@@ -627,21 +619,6 @@ def problem_json(
 
     body = _dup(jcache[card["id"]])
     _rename_json(body)
-    for occ in _rows(
-        con,
-        "select o.*, s.title as source_title from occurrences o join cards s on s.id=o.source_id where o.problem_id=? order by o.id",
-        (card["id"],),
-    ):
-        blocks = _dup(jcache[occ["id"]])
-        for b in blocks:
-            if b.get("t") == "Div":
-                kv = [
-                    ["source", occ["source_title"]],
-                    ["locator", occ["locator"]],
-                    ["occurrence", occ["id"]],
-                ]
-                b["c"][0] = [b["c"][0][0], ["qual-occurrence"], kv]
-        body += blocks
     for kind in ("hints-at", "solves"):
         for rel in _related(con, card["id"], kind):
             rb = _dup(jcache[rel["id"]])
@@ -926,11 +903,6 @@ def problem_page(
     card: sqlite3.Row,
     inline_cache: dict[str, list[pf.Inline]],
 ) -> Page:
-    occurrences = _rows(
-        con,
-        "select o.*, c.ast, s.title as source_title from occurrences o join cards c on c.id=o.id join cards s on s.id=o.source_id where o.problem_id=? order by o.id",
-        (card["id"],),
-    )
     # Institution facets come from exam collections that list this problem. A
     # problem cited from a textbook contributes a year but no institution.
     facets = _rows(
@@ -950,17 +922,6 @@ def problem_page(
     topics = _terms(con, card["id"], "topic")
 
     blocks = _blocks(card)
-
-    for occ in occurrences:
-        for block in from_ast(occ["ast"]).content:
-            if isinstance(block, pf.Div):
-                block.classes = ["qual-occurrence"]
-                block.attributes = {
-                    "source": occ["source_title"],
-                    "locator": occ["locator"],
-                    "occurrence": occ["id"],
-                }
-            blocks.append(block)
 
     for kind in ("hints-at", "solves"):
         for rel in _related(con, card["id"], kind):
@@ -1009,9 +970,7 @@ def collection_page(
         """,
         (src["id"],),
     )
-    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
-        con, listed, inline_cache
-    )
+    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(con, listed, inline_cache)
 
 
 def _collection_listing(

@@ -1,5 +1,6 @@
 ---
 title: Topology Qualifying Exam
+order: 7
 ---
 
 # Progress

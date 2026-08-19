@@ -13,6 +13,16 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-F05DM
+  - P-F05PR
+  - P-HOBOM
+  - P-3373K
+  - P-YVA5W
+  - P-LHC3M
+  - P-SD42B
+  - P-F05AB
+  - P-F05BN
   date:
     kind: academic-term
     term: fall
@@ -20,8 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2005. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Fall 2005 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Fall 2005. The paper is the migrated sitting scan `grad_prelim_Fall05.pdf` (wiki attachments). The list is the sitting order on that paper. Exam #3–#7 are `P-HOBOM`, `P-3373K`, `P-YVA5W`, `P-LHC3M`, and `P-SD42B`. The remaining items are minted as `P-F05DM`, `P-F05PR`, `P-F05AB`, `P-F05BN`.
 :::

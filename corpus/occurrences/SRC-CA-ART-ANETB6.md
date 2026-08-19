@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Spring 2020 HW 3 #7
+  problems:
+  - P-4Y4QT
   date:
     kind: academic-term
     term: spring

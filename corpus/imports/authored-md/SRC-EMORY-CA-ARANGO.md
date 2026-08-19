@@ -13,6 +13,8 @@ payload:
   source_kind: contributed-artifact
   provenance: 'make-me-a-qual `Questions/Archive/Emory/main.md`, whose front matter reads `title: Emory
     Quals` / `author: Santiago Arango`.'
+  problems:
+  - P-AMD-OOYYQNH5
   date:
     kind: unknown
 ---

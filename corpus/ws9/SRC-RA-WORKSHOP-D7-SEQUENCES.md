@@ -12,6 +12,22 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: 'Day 7: Sequences and Series of Functions.'
+  problems:
+  - P-RA-WORKSHOP-D7-W1
+  - P-RA-WORKSHOP-D7-W2
+  - P-RA-WORKSHOP-D7-W3
+  - P-RA-WORKSHOP-D7-W4
+  - P-RA-WORKSHOP-D7-W5
+  - P-7P5F5
+  - P-XQRCI
+  - P-AITX4
+  - P-5UQSK
+  - P-AIDWR
+  - P-KZZ7M
+  - P-RA-WORKSHOP-D7-12
+  - P-RA-WORKSHOP-D7-13
+  - P-RA-WORKSHOP-D7-14
+  - P-RA-WORKSHOP-D7-15
   date:
     kind: unknown
 ---

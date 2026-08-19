@@ -40,7 +40,6 @@ Let $(X,d)$ be a metric space.
   A sequentially compact metric space is complete: a Cauchy sequence has a convergent subsequence, hence converges to the same limit.
   It is totally bounded: if not, some $\eps>0$ admits a sequence with $d(x_i,x_j)\geq \eps$ for $i\neq j$, and that sequence has no Cauchy (hence no convergent) subsequence.
   Complete and totally bounded metric spaces are compact: if an open cover $\mathcal{U}$ had no finite subcover, total boundedness would produce a nested sequence of nonempty closed sets $F_n$ with $\operatorname{diam} F_n \to 0$ and no $F_n$ covered by finitely many members of $\mathcal{U}$; completeness supplies a point of $\intersect_n F_n$, which lies in some $U\in\mathcal{U}$, and for large $n$ one has $F_n\subset U$.
-
 :::
 
 [[PR-FKJCO]]

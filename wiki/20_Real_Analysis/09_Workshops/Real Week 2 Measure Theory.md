@@ -157,10 +157,10 @@ Some things that qual questions are commonly based on:
 
 > Suggested by Peter Woolfitt!
 
-[[P-VLG4M]]
+[[P-8RA35]]
 
-[[P-HKQHN]]
+[[P-OPH7A]]
 
-[[P-FYFEC]]
+[[P-4NYI7]]
 
-[[P-NLNZ3]]
+[[P-ZCE6E]]

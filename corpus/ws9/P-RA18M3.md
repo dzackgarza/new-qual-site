@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA18M3
 kind: problem
-title: 'UGA analysis qualifying exam, May 2018, problem 3'
+title: 'UNL analysis qualifying exam, May 2018, problem 3'
 classification:
   areas:
   - real-analysis

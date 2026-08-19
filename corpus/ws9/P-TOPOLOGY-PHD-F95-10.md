@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-10
 kind: problem
-title: 'The projective plane does not retract to the circle'
+title: '$\mathbb R^2$ does not retract onto $S^1$'
 classification:
   areas:
   - topology
@@ -15,5 +15,5 @@ solved: false
 ---
 
 ::: {.problem title="?"}
-Prove that $\mathbb{R}P^2$ cannot be retracted to $S^1$.
+Prove that $\mathbb R^2$ cannot be retracted to $S^1$.
 :::

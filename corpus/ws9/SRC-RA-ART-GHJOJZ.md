@@ -12,6 +12,14 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: JHU (undated)
+  problems:
+  - P-S3P7E
+  - P-3GWIK
+  - P-7Y4VS
+  - P-BMKR6
+  - P-4BJMK
+  - P-GFCIL
+  - P-5VQ6H
   date:
     kind: unknown
 ---

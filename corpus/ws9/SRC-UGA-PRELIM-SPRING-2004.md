@@ -13,6 +13,15 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-S04FG
+  - P-S04KT
+  - P-4STQR
+  - P-S04DG
+  - P-S04LM
+  - P-S04SQ
+  - P-UE5L6
+  - P-FPWV6
   date:
     kind: academic-term
     term: spring
@@ -20,8 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Spring 2004. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Spring 2004 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Spring 2004. The paper is the migrated sitting scan `grad_prelim_Spring04.pdf` (wiki attachments). The list is the sitting order on that paper. Exam #3, #7, and #8 are `P-4STQR`, `P-UE5L6`, and `P-FPWV6`. The remaining items are minted as `P-S04FG`, `P-S04KT`, `P-S04DG`, `P-S04LM`, `P-S04SQ`.
 :::

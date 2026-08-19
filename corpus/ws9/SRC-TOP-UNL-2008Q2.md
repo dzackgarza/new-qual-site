@@ -12,6 +12,15 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: UNL Mathematics Qualifying Exam 871/872, June 2008.
+  problems:
+  - P-T08A1
+  - P-T08A2
+  - P-T08A3
+  - P-T08A4
+  - P-T08B1
+  - P-T08B2
+  - P-T08B3
+  - P-T08B4
   date:
     kind: year
     year: 2008

@@ -46,15 +46,11 @@ order: 21
 
 ## Fall 2017 # 3
 
-
 ## Spring 2015 # 4
-
 
 ## Fall 2014 # 3
 
-
 ## Spring 2014 # 1
-
 
 ## Spring 2021 # 4
 

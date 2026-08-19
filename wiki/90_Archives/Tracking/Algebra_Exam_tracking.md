@@ -1,5 +1,6 @@
 ---
 title: Algebra Qualifying Exam
+order: 1
 ---
 
 | Exam                        | Typeset   | Imported to MakeMeAQual   | Solutions   |

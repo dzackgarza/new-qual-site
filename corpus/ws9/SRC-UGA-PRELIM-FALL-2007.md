@@ -13,6 +13,14 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-4PCPV
+  - P-2WRUJ
+  - P-YLM7G
+  - P-F07LM
+  - P-5YTY5
+  - P-F04T5
+  - P-F07EX
   date:
     kind: academic-term
     term: fall
@@ -20,8 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2007. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Fall 2007 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Fall 2007. The paper is the migrated sitting scan `grad_prelim_Fall07.pdf` (wiki attachments). The list is the sitting order on that paper. The paper is the August 10, 2007 sitting (7 problems). Exam #1, #2, #3, and #5 are `P-4PCPV`, `P-2WRUJ`, `P-YLM7G`, and `P-5YTY5`. Exam #6 reuses `P-F04T5` (same independence-preservation statement as Fall 2004 #5). The remaining items are minted as `P-F07LM` and `P-F07EX`.
 :::

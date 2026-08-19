@@ -13,6 +13,16 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-S06CA
+  - P-S06N3
+  - P-S06EZ
+  - P-JLPVR
+  - P-S06Q5
+  - P-S06G6
+  - P-I3UPP
+  - P-S06F8
+  - P-S06FN
   date:
     kind: academic-term
     term: spring
@@ -20,8 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Spring 2006. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Spring 2006 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Spring 2006. The paper is the migrated sitting scan `grad_prelim_Spring06.pdf` (wiki attachments). The list is the sitting order on that paper. Exam #4 and #7 are `P-JLPVR` and `P-I3UPP`. The remaining items are minted as `P-S06CA`, `P-S06N3`, `P-S06EZ`, `P-S06Q5`, `P-S06G6`, `P-S06F8`, `P-S06FN`.
 :::

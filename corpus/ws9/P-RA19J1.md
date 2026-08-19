@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA19J1
 kind: problem
-title: 'UGA analysis qualifying exam, January 2019, problem 1'
+title: 'UNL analysis qualifying exam, January 2019, problem 1'
 classification:
   areas:
   - real-analysis

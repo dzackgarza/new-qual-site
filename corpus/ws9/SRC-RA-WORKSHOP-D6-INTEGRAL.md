@@ -12,6 +12,17 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: 'Day 6: Integral Calculus.'
+  problems:
+  - P-RA-WORKSHOP-D6-W1
+  - P-RA-WORKSHOP-D6-W2
+  - P-RA-WORKSHOP-D6-W3
+  - P-RA-WORKSHOP-D6-W4
+  - P-R4EGZ
+  - P-2B2T5
+  - P-QXYTV
+  - P-YIC3K
+  - P-VG7GK
+  - P-RA-WORKSHOP-D6-10
   date:
     kind: unknown
 ---

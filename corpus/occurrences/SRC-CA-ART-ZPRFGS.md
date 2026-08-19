@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Spring 2020 HW 2.5
+  problems:
+  - P-YQASP
   date:
     kind: academic-term
     term: spring

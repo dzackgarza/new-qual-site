@@ -225,4 +225,3 @@ order: 100001
 [Summer84.pdf](attachments/Summer84.pdf)
 
 [Summer85.pdf](attachments/Summer85.pdf)
-

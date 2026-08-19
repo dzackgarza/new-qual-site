@@ -12,6 +12,15 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Math 871–872 Qualifying Exam, June 2011.
+  problems:
+  - P-T11A1
+  - P-T08A2
+  - P-T11A3
+  - P-T11A4
+  - P-T11B1
+  - P-T11B2
+  - P-T11B3
+  - P-T11B4
   date:
     kind: year
     year: 2011

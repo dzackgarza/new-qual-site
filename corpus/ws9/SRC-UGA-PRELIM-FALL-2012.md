@@ -13,6 +13,16 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-JVZMJ
+  - P-F12PD
+  - P-F12NA
+  - P-F12FE
+  - P-F12LM
+  - P-F12IN
+  - P-UU43Q
+  - P-F12FN
+  - P-AR3HH
   date:
     kind: academic-term
     term: fall
@@ -20,9 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2012. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Fall 2012 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
-Wiki `Fall 2012 #1`–`#8` in `wiki/10_Algebra/08_Quals/` are algebra-qual statements (e.g. [[P-JCWGD]] on group actions, [[P-QNQTT]] on Galois theory), not this sitting's prelim cards ([[P-AR3HH]], [[P-JVZMJ]], [[P-UU43Q]]).
+UGA prelim Fall 2012. The paper is the migrated sitting scan `grad_prelim_Fall12.pdf` (wiki attachments). The list is the sitting order on that paper. Exam #1, #7, and #9 are `P-JVZMJ`, `P-UU43Q`, and `P-AR3HH`. The remaining items are minted as `P-F12PD`, `P-F12NA`, `P-F12FE`, `P-F12LM`, `P-F12IN`, `P-F12FN`.
 :::

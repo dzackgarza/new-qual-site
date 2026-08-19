@@ -12,6 +12,15 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Math 871-872 Qualifying Exam, May 2019.
+  problems:
+  - P-T19A1
+  - P-KCN2B
+  - P-T19A3
+  - P-T19A4
+  - P-T19B1
+  - P-T19B2
+  - P-T19B3
+  - P-T19B4
   date:
     kind: year
     year: 2019

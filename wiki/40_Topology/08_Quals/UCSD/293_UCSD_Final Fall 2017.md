@@ -16,8 +16,6 @@ order: 293
 
 [[P-IWMWM]]
 
-[[P-VROCX]]
-
 [[P-SAEXG]]
 
 [[P-LMEKH]]

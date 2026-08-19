@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Spring 2020 HW 3 #10
+  problems:
+  - P-NV44D
   date:
     kind: academic-term
     term: spring

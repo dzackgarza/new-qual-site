@@ -6,7 +6,6 @@ order: 30
 
 ## Fall 2017 # 5
 
-
 ## Spring 2017 # 5
 
 ## Spring 2015 # 6

@@ -12,6 +12,15 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Math 871-872 Qualifying Exam, January 2020.
+  problems:
+  - P-T20A1
+  - P-T20A2
+  - P-T20A3
+  - P-T20A4
+  - P-T20B1
+  - P-T20B2
+  - P-T20B3
+  - P-T20B4
   date:
     kind: year
     year: 2020

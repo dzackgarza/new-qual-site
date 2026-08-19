@@ -27,5 +27,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2012. The migrated Quals file `.tmp-uga-ra-empty/SPRING-2012-nbsp.txt` (and `Real_Analysis_Spring_NBSP_2012.docx`) is headed January 2012; that paper order is already on `SRC-UGA-RA-JANUARY-2012`. This collection lists the same six items. Extra_Questions tags (January 2012 4b, extended) as `P-SKT7G`, which is not exam #4 on that paper (`P-8RA35`).
+UGA real-analysis Spring 2012. The migrated Quals file `.tmp-uga-ra-empty/SPRING-2012-nbsp.txt` (and `Real_Analysis_Spring_NBSP_2012.docx`) is headed January 2012; January is this Spring sitting.
+Extra_Questions tags (January 2012 4b, extended) as `P-SKT7G`, which is not exam #4 on that paper (`P-8RA35`).
 :::

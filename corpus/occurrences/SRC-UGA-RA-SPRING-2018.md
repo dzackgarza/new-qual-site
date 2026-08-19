@@ -26,5 +26,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2018. The sitting order is the migrated Qual Progress TOC in `assets/ws9/qual-wiki/native/20_Real_Analysis/Real Analysis Qual Progress.md` (same blocks on `wiki/90_Archives/Tracking/Real Analysis Qual Progress.md` and the `[[P-…]]` links under Spring 2018.1–.5 in `wiki/20_Real_Analysis/08_Quals/`). That is the same five items as `SRC-UGA-RA-JANUARY-2018`.
+UGA real-analysis Spring 2018. The sitting order is the migrated Qual Progress TOC in `assets/ws9/qual-wiki/native/20_Real_Analysis/Real Analysis Qual Progress.md` (same blocks on `wiki/90_Archives/Tracking/Real Analysis Qual Progress.md` and the `[[P-…]]` links under Spring 2018.1–.5 in `wiki/20_Real_Analysis/08_Quals/`).
 :::

@@ -12,6 +12,15 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Math 871-872 Qualifying Exam, May 2013.
+  problems:
+  - P-T13A1
+  - P-T13A2
+  - P-T13A3
+  - P-T13A4
+  - P-T13B1
+  - P-T13B2
+  - P-T13B3
+  - P-T13B4
   date:
     kind: year
     year: 2013

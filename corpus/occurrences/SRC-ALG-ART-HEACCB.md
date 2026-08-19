@@ -12,6 +12,15 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Fall 2019 Final
+  problems:
+  - P-Q6PDD
+  - P-EGKRW
+  - P-OX3MY
+  - P-5SED7
+  - P-CDHB5
+  - P-UW7CE
+  - P-44MIX
+  - P-2B4GV
   date:
     kind: academic-term
     term: fall

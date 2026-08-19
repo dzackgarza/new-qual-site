@@ -1,31 +1,31 @@
 ---
-creation date: 2021-10-11 02:43
-modification date: Monday 11th October 2021 02:43:54
+order: 30
 title: Workshop Index
-aliases: [Workshop Index]
 ---
 
-Tags: #todo #MOC #my_talks #qualifying_exam  #active_projects 
+# Qual workshop index
 
-# Qual Workshop Index
+Week-by-week qual-prep sessions, also filed under each subject.
 
-> See Notion site: 
-<https://wandering-cushion-859.notion.site/Complex-Analysis-3ca8032a73fc4366836a9f5085f5e601>
+The earlier table of contents listed a Complex “Week n misc” page that is not in this corpus.
 
 ## Complex Analysis
 
-- Qual Complex Analysis
+The earlier table of contents also named the Qual Complex Analysis deck, now under [[90_Archives/Flashcards/Complex_Analysis/index|Flashcards]].
+
+- [[30_Complex_Analysis/10_Workshops/index|Workshops]]
 - [[30_Complex_Analysis/10_Workshops/Complex Week 1 Preliminaries]]
-- [[30_Complex_Analysis/10_Workshops/Complex Week 1 Preliminaries]]
-- Projects/Quals/Complex Week n Misc
+- [[30_Complex_Analysis/10_Workshops/Complex Week 2 Cauchy]]
 
 ## Real Analysis
 
+- [[20_Real_Analysis/09_Workshops/index|Workshops]]
 - [[20_Real_Analysis/09_Workshops/Real Week 1 Preliminaries]]
 - [[20_Real_Analysis/09_Workshops/Real Week 2 Measure Theory]]
 
 ## Algebra
 
+- [[10_Algebra/09_Workshops/index|Workshops]]
 - [[10_Algebra/09_Workshops/Algebra Week 1 Groups Warmup]]
 - [[10_Algebra/09_Workshops/Algebra Week 2 Finite Group Theory]]
 - [[10_Algebra/09_Workshops/Algebra Week 3 Sylow Theory]]
@@ -35,34 +35,7 @@ Tags: #todo #MOC #my_talks #qualifying_exam  #active_projects
 
 ## Topology
 
-- Qual Topology
+The earlier table of contents also named the Qual Topology deck, now under [[90_Archives/Flashcards/Topology/index|Flashcards]].
+
+- [[40_Topology/09_Workshops/index|Workshops]]
 - [[40_Topology/09_Workshops/Topology Week 1 Preliminaries]]
-
-
-# Auto Indexes
-
-## Complex Analysis
-
-```query
-tag:qual_complex_analysis
-```
-
-
-## Real Analysis
-
-```query
-tag:qual_real_analysis
-```
-
-
-## Algebra
-
-```query
-tag:qual_algebra
-```
-
-## Topology
-
-```query
-tag:qual_real_analysis
-```

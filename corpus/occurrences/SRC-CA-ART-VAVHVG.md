@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Spring 2020 HW 2.3
+  problems:
+  - P-QUXEB
   date:
     kind: academic-term
     term: spring

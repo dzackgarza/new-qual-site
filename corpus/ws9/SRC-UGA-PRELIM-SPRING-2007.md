@@ -13,6 +13,15 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-CEU5R
+  - P-S07IN
+  - P-S07LM
+  - P-S07TY
+  - P-OK5P3
+  - P-CQNPO
+  - P-S07KR
+  - P-S07SP
   date:
     kind: academic-term
     term: spring
@@ -20,8 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Spring 2007. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Spring 2007 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Spring 2007. The paper is the migrated sitting scan `grad_prelim_Spring07.pdf` (wiki attachments). The list is the sitting order on that paper. Exam #1, #5, and #6 are `P-CEU5R`, `P-OK5P3`, and `P-CQNPO`. The remaining items are minted as `P-S07IN`, `P-S07LM`, `P-S07TY`, `P-S07KR`, `P-S07SP`.
 :::

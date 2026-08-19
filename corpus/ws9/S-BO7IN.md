@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: S-BO7IN
 kind: solution
-title: Solution to P-E3HGI
+title: Solution to P-8XT77
 classification:
   areas:
   - real-analysis
@@ -12,7 +12,7 @@ classification:
   - weak-convergence
 relations:
 - kind: solves
-  target: P-E3HGI
+  target: P-8XT77
 review: draft
 ---
 

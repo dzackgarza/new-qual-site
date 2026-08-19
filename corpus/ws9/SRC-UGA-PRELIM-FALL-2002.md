@@ -13,6 +13,15 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-MSLD5
+  - P-C2GOF
+  - P-S10CN
+  - P-A12ND
+  - P-TGH5F
+  - P-KU6C3
+  - P-IMVV7
+  - P-FBY23
   date:
     kind: academic-term
     term: fall
@@ -20,8 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2002. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Fall 2002 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Fall 2002. The paper is the migrated sitting scan `grad_prelim_Fall02.pdf` (wiki attachments). The list is the sitting order on that paper (work 7 of 8). Exam #2 (continuity of a composition), #3 (series $\sum 1/10^n$), and #4 (a $2\times 2$ matrix that is not diagonalizable) are minted as `P-C2GOF`, `P-S10CN`, `P-A12ND`. The remaining items, read against the paper, are `P-MSLD5`, `P-TGH5F`, `P-KU6C3`, `P-IMVV7`, `P-FBY23`.
 :::

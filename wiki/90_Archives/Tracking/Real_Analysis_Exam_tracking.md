@@ -1,5 +1,6 @@
 ---
 title: Real Analysis Qualifying Exam
+order: 6
 ---
 
 # Progress

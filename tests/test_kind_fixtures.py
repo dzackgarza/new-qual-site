@@ -78,8 +78,9 @@ def test_unknown_textbook_is_rejected(tmp_path: Path) -> None:
 def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     """A kind that indexes but never renders is data the reader cannot get to.
 
-    Occurrences are the one deliberate exception: they render inline on the
-    problem they instantiate, so they are checked for there instead.
+    The occurrence fixture has no route of its own. Appearances on a problem
+    page come from collection `problems:` / `sections:` lists, not from
+    inlining occurrence cards.
     """
     work = fixture_repo(tmp_path)
     subprocess.run(
@@ -93,10 +94,7 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     assert ids - rendered == {"OCC-INDEXP"}, ids - rendered
     assert ids - rendered_html == {"OCC-INDEXP"}, ids - rendered_html
 
-    problem_page = (work / "build" / "quarto" / "tag" / "PRB-INDEXP.qmd").read_text()
-    assert "Problem 3" in problem_page, "the occurrence must render on its problem's page"
     problem_html = (work / "build" / "quarto" / "_site" / "tag" / "PRB-INDEXP.html").read_text()
-    assert "Problem 3" in problem_html
     assert "by left translation" in problem_html
 
     exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
@@ -112,12 +110,7 @@ def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
     occurrence cards.
     """
     work = fixture_repo(tmp_path)
-    (work / "corpus" / "P-INDEXP.md").write_text(
-        (work / "corpus" / "PRB-INDEXP.md")
-        .read_text()
-        .replace("PRB-INDEXP", "P-INDEXP")
-        .replace("solved: true", "solved: false")
-    )
+    (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP").replace("solved: true", "solved: false"))
     exam = work / "corpus" / "SRC-UGA-FIX.md"
     exam.write_text(
         exam.read_text().replace(
@@ -131,15 +124,8 @@ def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
     assert "P-INDEXP" in exam_qmd
     assert "Problem 3" not in exam_qmd
     con = sqlite3.connect(work / "build" / "catalog.sqlite")
-    assert [
-        row[0]
-        for row in con.execute(
-            "select problem_id from collection_problems where collection_id='SRC-UGA-FIX' order by ordinal"
-        )
-    ] == ["P-INDEXP"]
-    assert list(
-        con.execute("select problem_id from collection_problems where collection_id='SRC-DUMMIT'")
-    ) == []
+    assert [row[0] for row in con.execute("select problem_id from collection_problems where collection_id='SRC-UGA-FIX' order by ordinal")] == ["P-INDEXP"]
+    assert list(con.execute("select problem_id from collection_problems where collection_id='SRC-DUMMIT'")) == []
 
 
 def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:

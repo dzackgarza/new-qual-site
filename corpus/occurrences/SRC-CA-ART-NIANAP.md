@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Spring 2020 HW 2, SS 2.6.10
+  problems:
+  - P-677HF
   date:
     kind: academic-term
     term: spring

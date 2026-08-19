@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Fall 2019 Midterm #1
+  problems:
+  - P-4IKVH
   date:
     kind: academic-term
     term: fall

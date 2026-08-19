@@ -12,6 +12,9 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: UGA (undated)
+  problems:
+  - P-VAWOC
+  - P-HUKW5
   date:
     kind: unknown
 ---

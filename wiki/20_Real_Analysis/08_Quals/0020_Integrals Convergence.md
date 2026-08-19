@@ -18,11 +18,9 @@ order: 20
 
 ## Spring 2018 # 2
 
-
 ## Fall 2016 # 3
 
 ## Fall 2015 # 3
-
 
 ## Fall 2015 # 4
 

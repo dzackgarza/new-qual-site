@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: QualBot image Conformal map 1
+  problems:
+  - P-OONH6
   date:
     kind: unknown
 ---

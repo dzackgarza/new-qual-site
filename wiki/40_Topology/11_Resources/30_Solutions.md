@@ -31,4 +31,3 @@ Status on the first three writeups:
 2. Complete; a figure illustrating the construction is still missing.
 
 3. Complete by a short accurate method, then redone by a laborious and possibly inaccurate method that does not adapt to the general case, and closed with an unelaborated link to an online solution.
-

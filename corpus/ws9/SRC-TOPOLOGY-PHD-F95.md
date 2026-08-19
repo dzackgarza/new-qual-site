@@ -12,6 +12,17 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: 'F95phdtop.pdf; 23 September 1995.'
+  problems:
+  - P-TOPOLOGY-PHD-F95-01
+  - P-T08A2
+  - P-TOPOLOGY-PHD-F95-03
+  - P-TOPOLOGY-PHD-F95-04
+  - P-TOPOLOGY-PHD-F95-05
+  - P-TOPOLOGY-PHD-F95-06
+  - P-TOPOLOGY-PHD-F95-07
+  - P-TOPOLOGY-PHD-F95-08
+  - P-TOPOLOGY-PHD-F95-09
+  - P-TOPOLOGY-PHD-F95-10
   date:
     kind: academic-term
     year: 1995

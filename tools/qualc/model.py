@@ -32,7 +32,7 @@ class Strict(BaseModel):
 class AcademicTerm(Strict):
     kind: Literal["academic-term"]
     year: int
-    term: Literal["spring", "fall"]
+    term: Literal["spring", "summer", "fall"]
 
 
 class YearOnly(Strict):
@@ -49,7 +49,7 @@ class TermOnly(Strict):
     """
 
     kind: Literal["term"]
-    term: Literal["spring", "fall"]
+    term: Literal["spring", "summer", "fall"]
 
 
 class UnknownDate(Strict):
@@ -211,8 +211,9 @@ class OccurrenceCard(Envelope):
 class CollectionCard(Envelope):
     """An exam sitting, textbook, or contributed artifact.
 
-    The card is the collection: it houses the ordered problem list. Occurrences
-    may still point at it until that layer is removed.
+    The card is the collection: it houses the ordered problem list. Appearances
+    on a problem page are generated from that list. Occurrence cards are not
+    filing.
     """
 
     kind: Literal["collection"]

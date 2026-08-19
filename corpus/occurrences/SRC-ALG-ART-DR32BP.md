@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Fall 2019 Midterm #9
+  problems:
+  - P-JG7FM
   date:
     kind: academic-term
     term: fall

@@ -5,7 +5,8 @@ order: 0
 # Topics and Remarks
 
 ::: {.remark}
-These notes are an amalgamation of algebra-qual study notes, begun before 2018. They are not in pedagogical order and assume the material has already been seen. The same proposition or exercise may appear more than once, rewritten at different times.
+These notes are an amalgamation of algebra-qual study notes, begun before 2018. They are not in pedagogical order and assume the material has already been seen.
+The same proposition or exercise may appear more than once, rewritten at different times.
 :::
 
 ::: {.remark}

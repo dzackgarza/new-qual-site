@@ -16,7 +16,7 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 [[SRC-JHU-RA-FALL-2012]]
 
-[[SRC-JHU-RA-MAY-2013]]
+[[SRC-JHU-RA-SPRING-2013]]
 
 [[SRC-JHU-RA-FALL-2013]]
 
@@ -46,17 +46,27 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 ## TAMU
 
-[[SRC-TAMU-RA-AUGUST-2014]]
+[[SRC-TAMU-RA-FALL-2014]]
 
-[[SRC-TAMU-RA-AUGUST-2015]]
+[[SRC-TAMU-RA-SPRING-2015]]
 
-[[SRC-TAMU-RA-JANUARY-2015]]
+[[SRC-TAMU-RA-FALL-2015]]
 
-[[SRC-TAMU-RA-AUGUST-2016]]
+[[SRC-TAMU-RA-SPRING-2016]]
 
-[[SRC-TAMU-RA-JANUARY-2016]]
+[[SRC-TAMU-RA-FALL-2016]]
 
-[[SRC-TAMU-RA-JANUARY-2017]]
+[[SRC-TAMU-RA-SPRING-2017]]
+
+## UNL
+
+[[SRC-UNL-RA-SUMMER-2016]]
+
+[[SRC-UNL-RA-SUMMER-2018]]
+
+[[SRC-UNL-RA-SPRING-2019]]
+
+[[SRC-UNL-RA-SUMMER-2019]]
 
 ## UCLA
 
@@ -70,93 +80,65 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 ## UGA
 
-[[SRC-UGA-RA-JUNE-2003]]
+[[SRC-UGA-RA-SUMMER-2003]]
 
-[[SRC-UGA-RA-JANUARY-2005]]
+[[SRC-UGA-RA-SPRING-2005]]
 
-[[SRC-UGA-RA-JUNE-2005]]
+[[SRC-UGA-RA-SUMMER-2005]]
 
-[[SRC-UGA-RA-JANUARY-2006]]
+[[SRC-UGA-RA-SPRING-2006]]
 
-[[SRC-UGA-RA-JANUARY-2007]]
+[[SRC-UGA-RA-SPRING-2007]]
 
-[[SRC-UGA-RA-JUNE-2007]]
+[[SRC-UGA-RA-SUMMER-2007]]
 
-[[SRC-UGA-RA-JANUARY-2008]]
+[[SRC-UGA-RA-SPRING-2008]]
 
-[[SRC-UGA-RA-JUNE-2008]]
+[[SRC-UGA-RA-SUMMER-2008]]
 
-[[SRC-UGA-RA-JANUARY-2009]]
+[[SRC-UGA-RA-SPRING-2009]]
 
-[[SRC-UGA-RA-JUNE-2009]]
+[[SRC-UGA-RA-SUMMER-2009]]
 
-[[SRC-UGA-RA-2010]]
+[[SRC-UGA-RA-SPRING-2010]]
 
-[[SRC-UGA-RA-JANUARY-2010]]
+[[SRC-UGA-RA-SUMMER-2010]]
 
-[[SRC-UGA-RA-JUNE-2010]]
-
-[[SRC-UGA-RA-JANUARY-2011]]
-
-[[SRC-UGA-RA-MAY-2011]]
-
-[[SRC-UGA-RA-JANUARY-2012]]
-
-[[SRC-UGA-RA-JUNE-2012]]
+[[SRC-UGA-RA-SPRING-2011]]
 
 [[SRC-UGA-RA-SPRING-2012]]
 
-[[SRC-UGA-RA-JUNE-2013]]
+[[SRC-UGA-RA-SUMMER-2012]]
 
-[[SRC-UGA-RA-JANUARY-2014]]
-
-[[SRC-UGA-RA-JUNE-2014]]
+[[SRC-UGA-RA-SUMMER-2013]]
 
 [[SRC-UGA-RA-SPRING-2014]]
 
-[[SRC-UGA-RA-FALL-2014]]
+[[SRC-UGA-RA-SUMMER-2014]]
 
-[[SRC-UGA-RA-NOVEMBER-2014]]
+[[SRC-UGA-RA-FALL-2014]]
 
 [[SRC-UGA-RA-SPRING-2015]]
 
 [[SRC-UGA-RA-FALL-2015]]
 
-[[SRC-UGA-RA-MAY-2016]]
-
 [[SRC-UGA-RA-SPRING-2016]]
 
 [[SRC-UGA-RA-FALL-2016]]
 
-[[SRC-UGA-RA-JANUARY-2017]]
-
-[[SRC-UGA-RA-JUNE-2017]]
-
-[[SRC-UGA-RA-MAY-2017]]
-
 [[SRC-UGA-RA-SPRING-2017]]
 
+[[SRC-UGA-RA-SUMMER-2017]]
+
 [[SRC-UGA-RA-FALL-2017]]
-
-[[SRC-UGA-RA-JANUARY-2018]]
-
-[[SRC-UGA-RA-MAY-2018]]
 
 [[SRC-UGA-RA-SPRING-2018]]
 
 [[SRC-UGA-RA-FALL-2018]]
 
-[[SRC-UGA-RA-JAN-2019]]
-
-[[SRC-UGA-RA-JANUARY-2019]]
-
-[[SRC-UGA-RA-MAY-2019]]
-
 [[SRC-UGA-RA-SPRING-2019]]
 
 [[SRC-UGA-RA-FALL-2019]]
-
-[[SRC-UGA-RA-JANUARY-2020]]
 
 [[SRC-UGA-RA-SPRING-2020]]
 
@@ -166,19 +148,31 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 [[SRC-UGA-RA-FALL-2021]]
 
-Official exam PDFs as posted by the department. The UGA exams listed above are the imported sittings.
+Official exam PDFs as posted by the department.
+The UGA exams listed above are the imported sittings.
 
 - [Fall 2021](https://www.math.uga.edu/sites/default/files/inline-files/Real_Analysis_Qual-Fall2021.pdf)
+
 - [Spring 2021](https://www.math.uga.edu/sites/default/files/inline-files/RealAnalysis_Qual_Spring2021.pdf)
+
 - [Fall 2020](https://www.math.uga.edu/sites/default/files/inline-files/Real_Qual_Fall2020.pdf)
+
 - [Spring 2020](https://www.math.uga.edu/sites/default/files/inline-files/RealAnalysisQual_Spring2020.pdf)
+
 - [Fall 2019](https://www.math.uga.edu/sites/default/files/RealAnalysis_Fall2019.pdf)
+
 - [Spring 2019](https://www.math.uga.edu/sites/default/files/RealAnalysisQual_Sp19.pdf)
+
 - [Fall 2018](https://www.math.uga.edu/sites/default/files/inline-files/Real%20Analysis%20Fall%202018.pdf)
+
 - [Spring 2018](https://www.math.uga.edu/sites/default/files/inline-files/RealQual_Spring_2018.pdf)
+
 - [Fall 2017](https://www.math.uga.edu/sites/default/files/RealAnaQual2017.pdf)
+
 - [Spring 2017](https://www.math.uga.edu/sites/default/files/RealAnalysis_spring2017.pdf)
+
 - [Fall 2016](https://www.math.uga.edu/sites/default/files/RealAnalysis_Fall2016.pdf)
+
 - [Spring 2016](https://www.math.uga.edu/sites/default/files/RealAnalysisQualSpring2016.pdf)
 
 ## Contributed artifacts

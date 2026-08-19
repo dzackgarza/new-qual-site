@@ -5,7 +5,8 @@ order: 10
 
 # Algebra
 
-The UGA algebra qualifying exam: the official topic list, then a twelve-week study sequence used in a summer workshop. Students are expected to know proofs and to carry out the standard computations (Jordan and rational canonical form of a given matrix, Galois group of a given polynomial).
+The UGA algebra qualifying exam: the official topic list, then a twelve-week study sequence used in a summer workshop.
+Students are expected to know proofs and to carry out the standard computations (Jordan and rational canonical form of a given matrix, Galois group of a given polynomial).
 
 ## Syllabus
 
@@ -119,11 +120,14 @@ The UGA algebra qualifying exam: the official topic list, then a twelve-week stu
 
 4. Roy Smith, [Algebra Course Notes](http://www.math.uga.edu/~roy/) (843-1 through 845-3),
 
-The [UGA algebra study guide](https://www.math.uga.edu/sites/default/files/PDFs/Graduate/QualsStudyGuides/Algebra_12%3A2016.pdf) (December 2016) lists the same core, compressed: Sylow, $p$-groups, solvable groups, free groups; tensor products, determinants, Jordan form, PIDs, UFDs, polynomial rings; splitting fields, separable and inseparable extensions; fundamental theorem of Galois theory, finite fields, cyclotomic fields. Extra topics named there are representations of finite groups (character theory, induced representations, the group ring) and the basics of Lie groups and Lie algebras (exponential map, nilpotent and semisimple Lie algebras and groups).
+The [UGA algebra study guide](https://www.math.uga.edu/sites/default/files/PDFs/Graduate/QualsStudyGuides/Algebra_12%3A2016.pdf) (December 2016) lists the same core, compressed: Sylow, $p$-groups, solvable groups, free groups; tensor products, determinants, Jordan form, PIDs, UFDs, polynomial rings; splitting fields, separable and inseparable extensions; fundamental theorem of Galois theory, finite fields, cyclotomic fields.
+Extra topics named there are representations of finite groups (character theory, induced representations, the group ring) and the basics of Lie groups and Lie algebras (exponential map, nilpotent and semisimple Lie algebras and groups).
 
 ## A twelve-week study sequence
 
-This sequence was given as a summer workshop. The calendar dates below are that sitting's (weeks of 18 May through 10 August, quals Monday–Tuesday 16–17 August). The week contents are the study path.
+This sequence was given as a summer workshop.
+The calendar dates below are that sitting's (weeks of 18 May through 10 August, quals Monday–Tuesday 16–17 August).
+The week contents are the study path.
 
 ### Week 1 (18 May): Preliminary review
 

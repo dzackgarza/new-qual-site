@@ -19,6 +19,14 @@ ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
 
 
+def wiki_md(body: str, *, order: int = 0, title: str | None = None) -> str:
+    lines = ["---", f"order: {order}"]
+    if title is not None:
+        lines.append(f"title: {title}")
+    lines.extend(["---", "", body])
+    return "\n".join(lines) if body.endswith("\n") else "\n".join(lines) + "\n"
+
+
 class LinkCollector(HTMLParser):
     def __init__(self) -> None:
         super().__init__()
@@ -89,6 +97,42 @@ class WikiNavigationParser(HTMLParser):
             self.in_wiki_navigation = False
 
 
+class WikiBacklinkParser(HTMLParser):
+    """The generated incoming-link section, not the sidebar and not the page body."""
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.titles: list[str] = []
+        self.hrefs: list[str] = []
+        self._in_section = False
+        self._link_href: str | None = None
+        self._link_text: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        attributes = dict(attrs)
+        if tag == "section" and attributes.get("data-relation-group") == "wiki-backlinks":
+            self._in_section = True
+        elif self._in_section and tag == "a":
+            href = attributes["href"]
+            assert href is not None
+            self._link_href = href
+            self._link_text = []
+
+    def handle_data(self, data: str) -> None:
+        if self._link_href is not None:
+            self._link_text.append(data)
+
+    def handle_endtag(self, tag: str) -> None:
+        if self._in_section and tag == "a":
+            assert self._link_href is not None
+            self.titles.append("".join(self._link_text).strip())
+            self.hrefs.append(self._link_href)
+            self._link_href = None
+            self._link_text = []
+        elif self._in_section and tag == "section":
+            self._in_section = False
+
+
 def fixture_repo(tmp_path: Path) -> Path:
     work = tmp_path / "repo"
     for sub in ("vocabularies", "site"):
@@ -100,8 +144,8 @@ def fixture_repo(tmp_path: Path) -> Path:
     (assets / "diagram.png").write_bytes(b"fixture image")
     wiki = work / "wiki"
     wiki.mkdir()
-    (wiki / "index.md").write_text("# Fixture index\n\nSee [[PRB-INDEXP|the index problem]] and [the details](details.md).\n\n![diagram](figures/diagram.png)\n")
-    (wiki / "details.md").write_text("# Fixture details\n\nThe page reference survived.\n")
+    (wiki / "index.md").write_text(wiki_md("# Fixture index\n\nSee [[PRB-INDEXP|the index problem]] and [the details](details.md).\n\n![diagram](figures/diagram.png)\n"))
+    (wiki / "details.md").write_text(wiki_md("# Fixture details\n\nThe page reference survived.\n", order=1))
     return work
 
 
@@ -142,13 +186,45 @@ def test_build_emits_every_authored_page_and_resolves_real_links(
     assert "fixture index" in page["search"]
 
 
+def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Path) -> None:
+    """Who points at a page is the inverse of the wikilinks already resolved.
+
+    The markdown does not list incoming links. The fixture index points at
+    details.md and at PRB-INDEXP; those targets must show that, and a page
+    nothing cites must not grow a handwritten 'linked from' list.
+    """
+    work = fixture_repo(tmp_path)
+    assert "What links to this" not in (work / "wiki" / "details.md").read_text()
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    site = work / "build" / "quarto" / "_site"
+    details = WikiBacklinkParser()
+    details.feed((site / "wiki" / "details.html").read_text())
+    assert details.titles == ["Fixture index"]
+    assert details.hrefs == ["index.html"]
+
+    index = WikiBacklinkParser()
+    index.feed((site / "wiki" / "index.html").read_text())
+    assert index.titles == []
+    assert index.hrefs == []
+
+    card = WikiBacklinkParser()
+    card.feed((site / "tag" / "PRB-INDEXP.html").read_text())
+    assert card.titles == ["Fixture index"]
+    assert card.hrefs == ["../wiki/index.html"]
+
+
 def test_wiki_tree_is_complete_on_root_and_nested_pages(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     wiki = work / "wiki"
     (wiki / "algebra").mkdir()
-    (wiki / "algebra" / "groups.md").write_text("# Groups\n")
+    (wiki / "algebra" / "index.md").write_text(wiki_md("# Algebra\n", order=2, title="Algebra"))
+    (wiki / "algebra" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
     (wiki / "topology").mkdir()
-    (wiki / "topology" / "compactness.md").write_text("# Compactness\n")
+    (wiki / "topology" / "index.md").write_text(wiki_md("# Topology\n", order=3, title="Topology"))
+    (wiki / "topology" / "compactness.md").write_text(wiki_md("# Compactness\n", order=1))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -157,35 +233,36 @@ def test_wiki_tree_is_complete_on_root_and_nested_pages(tmp_path: Path) -> None:
     navigation = WikiNavigationParser()
     navigation.feed(page.read_text())
 
-    assert navigation.details == [(1, "algebra", True), (1, "topology", False)]
+    assert navigation.details == [(1, "Algebra", True), (1, "Topology", False)]
     assert ("Groups", "groups.html", True) in navigation.links
     assert ("Compactness", "../topology/compactness.html", False) in navigation.links
 
     index_navigation = WikiNavigationParser()
     index_navigation.feed((page.parents[1] / "index.html").read_text())
 
-    assert index_navigation.details == [(1, "algebra", False), (1, "topology", False)]
+    assert index_navigation.details == [(1, "Algebra", False), (1, "Topology", False)]
     assert ("Fixture index", "index.html", True) in index_navigation.links
     assert ("Groups", "algebra/groups.html", False) in index_navigation.links
     assert ("Compactness", "topology/compactness.html", False) in index_navigation.links
 
 
-def test_wiki_directory_label_omits_sort_prefix(tmp_path: Path) -> None:
-    """Numeric prefixes are vault sort keys. The sidebar shows the subject."""
+def test_wiki_sidebar_uses_title_and_order_metadata(tmp_path: Path) -> None:
+    """A folder's label and place among siblings are the index page's title and order."""
     work = fixture_repo(tmp_path)
     wiki = work / "wiki"
-    (wiki / "10_Algebra").mkdir()
-    (wiki / "10_Algebra" / "groups.md").write_text("# Groups\n")
+    (wiki / "z-first").mkdir()
+    (wiki / "z-first" / "index.md").write_text(wiki_md("# First\n", order=10, title="First"))
+    (wiki / "z-first" / "note.md").write_text(wiki_md("# First note\n", order=1))
+    (wiki / "a-second").mkdir()
+    (wiki / "a-second" / "index.md").write_text(wiki_md("# Second\n", order=20, title="Second"))
+    (wiki / "a-second" / "note.md").write_text(wiki_md("# Second note\n", order=1))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
 
     navigation = WikiNavigationParser()
-    navigation.feed(
-        (work / "build" / "quarto" / "_site" / "wiki" / "10_Algebra" / "groups.html").read_text()
-    )
-    assert (1, "Algebra", True) in navigation.details
-    assert (1, "10 Algebra", True) not in navigation.details
+    navigation.feed((work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text())
+    assert navigation.details == [(1, "First", False), (1, "Second", False)]
 
 
 def test_wiki_index_page_is_the_directory_node(tmp_path: Path) -> None:
@@ -193,8 +270,8 @@ def test_wiki_index_page_is_the_directory_node(tmp_path: Path) -> None:
     work = fixture_repo(tmp_path)
     wiki = work / "wiki"
     (wiki / "10_Algebra").mkdir()
-    (wiki / "10_Algebra" / "index.md").write_text("---\ntitle: Algebra\n---\n\n# Syllabus\n")
-    (wiki / "10_Algebra" / "groups.md").write_text("# Groups\n")
+    (wiki / "10_Algebra" / "index.md").write_text(wiki_md("# Syllabus\n", order=2, title="Algebra"))
+    (wiki / "10_Algebra" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -214,12 +291,14 @@ def test_wiki_index_page_is_the_directory_node(tmp_path: Path) -> None:
 @pytest.mark.parametrize(
     ("pages", "code"),
     [
-        ({"index.md": "# Root\n\n[[does-not-exist]]\n"}, DiagnosticCode.PAGE_REFERENCE_MISSING),
+        ({"index.md": wiki_md("# Root\n\n[[does-not-exist]]\n")}, DiagnosticCode.PAGE_REFERENCE_MISSING),
         (
             {
-                "index.md": "# Root\n\n[[same]]\n",
-                "a/same.md": "# A\n",
-                "b/same.md": "# B\n",
+                "index.md": wiki_md("# Root\n\n[[same]]\n"),
+                "a/index.md": wiki_md("# A folder\n", order=1, title="A"),
+                "a/same.md": wiki_md("# A\n", order=1),
+                "b/index.md": wiki_md("# B folder\n", order=2, title="B"),
+                "b/same.md": wiki_md("# B\n", order=1),
             },
             DiagnosticCode.PAGE_REFERENCE_AMBIGUOUS,
         ),
@@ -246,13 +325,27 @@ def test_check_rejects_missing_or_ambiguous_page_references(
     assert diagnostic_codes(work) == [code]
 
 
+def test_check_rejects_a_page_with_no_order(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "index.md").write_text("# Root\n")
+    (work / "wiki" / "details.md").unlink()
+    assert diagnostic_codes(work) == [DiagnosticCode.PAGE_MISSING_ORDER]
+
+
+def test_check_rejects_a_directory_with_no_index_page(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "algebra").mkdir()
+    (work / "wiki" / "algebra" / "groups.md").write_text(wiki_md("# Groups\n", order=1))
+    assert diagnostic_codes(work) == [DiagnosticCode.PAGE_DIRECTORY_MISSING_INDEX]
+
+
 def test_a_citation_renders_against_the_bibliography(tmp_path: Path) -> None:
     """Pandoc reads `[@key]` as a citation and leaves the key as the element's
     own text, so without citeproc the reader is shown `[@dummit_foote_2004]`.
     citeproc resolves it against `references.bib`: the reader gets an author-date
     reference in place and a bibliography entry to look it up in."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text("# Fixture index\n\nReferences: [@DF04], [@Smi].\n")
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nReferences: [@DF04], [@Smi].\n"))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr
@@ -288,7 +381,7 @@ def test_check_rejects_a_citation_the_bibliography_does_not_define(
     """citeproc renders a key it cannot resolve as `**key?**`, which would reach
     the page. The build stops at the named diagnostic instead."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text("# Fixture index\n\nSee [@bourbaki_1970].\n")
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\nSee [@bourbaki_1970].\n"))
     for path in (work / "wiki").rglob("*.md"):
         if path.name != "index.md":
             path.unlink()
@@ -303,7 +396,7 @@ def test_a_figure_captioned_with_its_own_filename_loses_the_caption(
     the authored vault wrote the attachment path there. A written caption is a
     caption and stays; a path is the file's name and is not one."""
     work = fixture_repo(tmp_path)
-    (work / "wiki" / "index.md").write_text("# Fixture index\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n")
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n![figures/diagram.png](figures/diagram.png)\n\n![The Tube Lemma](figures/diagram.png)\n"))
 
     result = run("build", work)
     assert result.returncode == 0, result.stderr

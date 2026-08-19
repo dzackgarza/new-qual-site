@@ -12,6 +12,20 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: 'Day 5: Differential Calculus.'
+  problems:
+  - P-RA-WORKSHOP-D5-W1
+  - P-RA-WORKSHOP-D5-W2
+  - P-RA-WORKSHOP-D5-W3
+  - P-VO7MI
+  - P-FUPZQ
+  - P-UKIC7
+  - P-AUACU
+  - P-SKT7G
+  - P-NXMNQ
+  - P-RA-WORKSHOP-D5-10
+  - P-RA-WORKSHOP-D5-11
+  - P-RA-WORKSHOP-D5-12
+  - P-RA-WORKSHOP-D5-13
   date:
     kind: unknown
 ---

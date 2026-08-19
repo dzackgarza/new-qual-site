@@ -12,6 +12,8 @@ review: draft
 payload:
   source_kind: contributed-artifact
   provenance: Fall 2019 Midterm #10
+  problems:
+  - P-567ZZ
   date:
     kind: academic-term
     term: fall

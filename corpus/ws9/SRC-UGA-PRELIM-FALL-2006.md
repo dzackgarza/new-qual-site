@@ -13,6 +13,16 @@ payload:
   source_kind: university-exam
   institution: uga
   area: prelim
+  problems:
+  - P-MW5EM
+  - P-F06EV
+  - P-F06DT
+  - P-F06PD
+  - P-F06DN
+  - P-V4VXC
+  - P-TWH7U
+  - P-CJUIR
+  - P-F06PG
   date:
     kind: academic-term
     term: fall
@@ -20,8 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2006. Recorded from the source corpus' exam-term annotations.
-`problems:` is left empty: this sitting's occurrence locators are `?`, and the instance-of problem statements were not found under a numbered heading of the form `Fall 2006 #3` in `wiki/00_Prelims/` (Worked_Exams lists only Fall 2014–2017; Integral Practice has no tags for this sitting), `assets/ws9/qual-wiki/native/00_Prelims/`, `/home/dzack/gitclones/qual-wiki/00_Prelims/`, `wiki/90_Archives/Flashcards/Prelims/`, math-flashcards `decks/Qual Basics/`, or Analysis-Qual-Compendium (real-analysis quals, not prelims).
-Native papers in `assets/ws9/qual-review-and-solutions/native/Prelims/` are Fall 2014–2017 only.
-Order was not taken from occurrence cards.
+UGA prelim Fall 2006. The paper is the migrated sitting scan `grad_prelim_Fall06.pdf` (wiki attachments). The list is the sitting order on that paper. Exam #1, #6, #7, and #8 are `P-MW5EM`, `P-V4VXC`, `P-TWH7U`, and `P-CJUIR`. The remaining items are minted as `P-F06EV`, `P-F06DT`, `P-F06PD`, `P-F06DN`, `P-F06PG`.
 :::
