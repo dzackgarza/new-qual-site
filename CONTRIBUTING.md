@@ -40,8 +40,8 @@ Read the relevant cards before changing their titles, classifications, relations
 Make semantic decisions from the mathematics, not from filenames or text similarity.
 
 A canonical problem states one mathematical problem.
-An exam occurrence preserves one historical wording, source, and location.
-Keep distinct exam appearances when they contain different wording or source information.
+An exam or textbook collection lists those problems in the order they appeared.
+Appearances on a problem page are generated from that list.
 
 Use an existing card of the same kind as the format example.
 The compiler rejects unknown fields, unknown card kinds, invalid relations, and unregistered vocabulary.

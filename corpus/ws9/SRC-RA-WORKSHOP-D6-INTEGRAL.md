@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-The Riemann–Stieltjes context, theorem statements, warm-ups, and problem statements were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used. The bibliography and author-citation notes remain source context.
+UNL real-analysis workshop Day 6. The sheet is `assets/attachments/Day_6_Integral_Calculus.pdf`. Four warm-ups then six numbered problems. The list is sheet order. Riemann–Stieltjes definitions and theorems in the preamble are source context, not cards.
 :::

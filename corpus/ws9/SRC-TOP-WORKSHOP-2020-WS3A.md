@@ -17,7 +17,7 @@ payload:
   - P-TOP-WORKSHOP-2020-WS3A-HW2
   - P-TOP-WORKSHOP-2020-WS3A-HW3
   - P-T12Q2-5
-  - P-TOP-WORKSHOP-2020-WS3A-P2
+  - P-T17Q2-5
   - P-T19Q1-5
   - P-T19B1
   date:
@@ -26,5 +26,5 @@ payload:
 ---
 
 ::: remark
-The theme, warm-ups, problem statements, and wrap-up prompts were transcribed directly from the rendered source page; no OCR or `pdftotext` output was used.
+May 2020 Topology Qualifying Exam Workshop Worksheet 3A. The sheet is `assets/attachments/Topology_Workshop_Worksheet_3A.pdf`. Three warm-ups, then four exam reprints. Part 2 #2 is the May 2017 central-element-from-homotopy card `P-T17Q2-5` (also on `SRC-TOP-2017Q2`); `P-TOP-WORKSHOP-2020-WS3A-P2` is the same statement and is not listed twice.
 :::

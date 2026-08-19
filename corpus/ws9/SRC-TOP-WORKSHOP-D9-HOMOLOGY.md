@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-The warm-ups and problem statements were transcribed directly from the rendered source page; no OCR or `pdftotext` output was used.
+UNL topology workshop Day 9. The source is `assets/attachments/Day_9_-_Homology.pdf`. Two warm-ups then eight numbered problems. Warm-up 2 is the torus-homology computation listed as the January 2006 exam card `P-T06Q1-9` (that card asks the same computation via Mayer–Vietoris). Item 8 is the May 2013 $\Delta$-complex card `P-T13B3`. Qual reprints stay on this workshop as well as on their sittings.
 :::

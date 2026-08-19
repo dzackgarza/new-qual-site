@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Fall 2020. The paper is the current Quals posting `Algebra [Fall 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`.
+UGA algebra Fall 2020. Source: `.tmp-uga-alg-exams/FALL-2020.txt` of the Quals posting `Algebra [Fall 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

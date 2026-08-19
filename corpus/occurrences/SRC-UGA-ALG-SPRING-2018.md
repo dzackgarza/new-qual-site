@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Spring 2018. The paper is the current Quals posting `Algebra [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BSpring%C2%A02018%5D.docx`). Exam #1 lists [[P-TR6YB]].
+UGA algebra Spring 2018. Source: `.tmp-uga-alg-exams/SPRING-2018.txt` of the Quals posting `Algebra [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BSpring%C2%A02018%5D.docx`). The list is the sitting order on that paper.
 :::

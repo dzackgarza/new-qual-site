@@ -18,7 +18,6 @@ from .model import (
     ContributedArtifact,
     ExamSource,
     ExerciseCard,
-    OccurrenceCard,
     ParsedCard,
     ProblemCard,
     TermOnly,
@@ -55,9 +54,6 @@ create table collection_problems (
   section_name text,
   ordinal integer not null,
   problem_id text not null
-);
-create table occurrences (
-  id text primary key, problem_id text not null, source_id text not null, locator text not null
 );
 create table sections (
   card_id text not null, section_kind text not null, ordinal integer not null, text text not null
@@ -166,41 +162,6 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                         f"unknown textbook {payload.textbook!r}",
                     )
                 )
-        if isinstance(p.card, OccurrenceCard):
-            src = by_id.get(p.card.payload.source)
-            if src is None:
-                errors.append(
-                    Diagnostic(
-                        DiagnosticCode.OCCURRENCE_MISSING_SOURCE,
-                        where,
-                        f"names missing source {p.card.payload.source!r}",
-                    )
-                )
-            elif not isinstance(src.card, CollectionCard):
-                errors.append(
-                    Diagnostic(
-                        DiagnosticCode.OCCURRENCE_SOURCE_NOT_A_SOURCE_CARD,
-                        where,
-                        f"{p.card.payload.source} is not a collection card",
-                    )
-                )
-            targets = [r.target for r in p.card.relations if r.kind == "instance-of"]
-            if len(targets) != 1:
-                errors.append(
-                    Diagnostic(
-                        DiagnosticCode.OCCURRENCE_INSTANCE_OF_COUNT,
-                        where,
-                        "occurrence needs exactly one instance-of relation",
-                    )
-                )
-            elif targets[0] in by_id and by_id[targets[0]].card.kind != "problem":
-                errors.append(
-                    Diagnostic(
-                        DiagnosticCode.OCCURRENCE_INSTANCE_OF_NOT_A_PROBLEM,
-                        where,
-                        "instance-of must target a problem",
-                    )
-                )
     return errors
 
 
@@ -278,12 +239,6 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
                             "insert into collection_problems values (?,?,?,?,?)",
                             (c.id, None, None, ordinal, pid),
                         )
-        if isinstance(c, OccurrenceCard):
-            problem = next(r.target for r in c.relations if r.kind == "instance-of")
-            con.execute(
-                "insert into occurrences values (?,?,?,?)",
-                (c.id, problem, c.payload.source, c.payload.locator),
-            )
 
     con.commit()
     con.close()

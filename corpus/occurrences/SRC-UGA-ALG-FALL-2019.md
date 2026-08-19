@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Fall 2019. The paper is the current Quals posting `Algebra [Fall 2019].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #1 lists [[P-P3RNI]]. Exam #4 lists [[P-CGBXN]]. Exam #7 lists [[P-ESUCT]].
+UGA algebra Fall 2019. Source: `.tmp-uga-alg-exams/FALL-2019.txt` of the Quals posting `Algebra [Fall 2019].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

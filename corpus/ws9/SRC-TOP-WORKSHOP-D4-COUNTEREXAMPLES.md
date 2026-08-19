@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-Problem statements and warm-ups were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used. Page 1 also contains an unnumbered “Tips” list, which is retained as source context rather than normalized into problem cards.
+UNL topology workshop Day 4. The source is `assets/attachments/Day_4_-_Counterexample_Problems.pdf`. Page 1: three warm-ups and four counterexample problems; page 2 heading “Assorted Problems” has four more. The list is that order. The unnumbered Tips list is source context, not cards. Qual reprints stay on this workshop as well as on their sittings.
 :::

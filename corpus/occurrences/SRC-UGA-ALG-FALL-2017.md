@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Fall 2017. The paper is the current Quals posting `Algebra [Fall 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02017%5D.docx`).
+UGA algebra Fall 2017. Source: `.tmp-uga-alg-exams/FALL-2017.txt` of the Quals posting `Algebra [Fall 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02017%5D.docx`). The list is the sitting order on that paper.
 :::

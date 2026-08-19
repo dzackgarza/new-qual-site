@@ -31,6 +31,5 @@ payload:
 ---
 
 ::: remark
-TAMU real-analysis Spring 2015. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j15.pdf (REAL ANALYSIS QUALIFYING EXAMINATION, JANUARY 2015). The list is the sitting order on that paper.
-Exam #10 is the same equivalent-norm extension as August 2015 #8 (`P-8XT86`).
+TAMU real-analysis Spring 2015. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j15.pdf (REAL ANALYSIS QUALIFYING EXAMINATION, JANUARY 2015). Transcript: `.tmp-papers/tamu-j15.txt`. Ten numbered questions; the list is the sitting order on that paper. No holes. Exam #10 is the same equivalent-norm extension as August 2015 #8 (`P-8XT86`).
 :::

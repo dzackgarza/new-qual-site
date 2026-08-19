@@ -27,6 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2020. Recorded from the source corpus' exam-term annotations.
-The paper is the current Quals posting `Real Analysis [Spring 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Spring 2020. The catalog PDF `RealAnalysisQual_Spring2020.pdf` currently 404s. The list is the sitting order on that paper.
+UGA real-analysis Spring 2020. The paper is the current Quals posting `Real Analysis [Spring 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Spring 2020. The local dump is `.tmp-uga-ra-exams/SPRING-2020.txt`. The catalog PDF `RealAnalysisQual_Spring2020.pdf` currently 404s. The list is the sitting order on that paper.
 :::

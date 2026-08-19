@@ -32,5 +32,5 @@ payload:
 ---
 
 ::: remark
-The problems were transcribed directly from the two rendered source pages; no OCR or `pdftotext` output was used. Topic headings and the source numbering are retained through occurrence locators.
+UNL real-analysis workshop Day 8. The sheet is `assets/attachments/Day_8_Miscellaneous_Topics.pdf`. Four bounded-variation items, three metric/topology items, three integral items, then four sequences items. The list is sheet order under those headings.
 :::

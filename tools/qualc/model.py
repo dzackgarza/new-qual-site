@@ -65,7 +65,6 @@ DateSpec = Annotated[
 # --- envelope ---------------------------------------------------------------
 
 RelationKind = Literal[
-    "instance-of",
     "solves",
     "hints-at",
     "uses",
@@ -101,11 +100,6 @@ class Envelope(Strict):
 
 
 # --- payloads ---------------------------------------------------------------
-
-
-class OccurrencePayload(Strict):
-    source: str
-    locator: str
 
 
 # Collection-list ids are `P-` or `E-` followed by uppercase alphanumerics, with
@@ -203,17 +197,11 @@ class ProblemCard(Envelope):
     solved: bool
 
 
-class OccurrenceCard(Envelope):
-    kind: Literal["occurrence"]
-    payload: OccurrencePayload
-
-
 class CollectionCard(Envelope):
     """An exam sitting, textbook, or contributed artifact.
 
     The card is the collection: it houses the ordered problem list. Appearances
-    on a problem page are generated from that list. Occurrence cards are not
-    filing.
+    on a problem page are generated from that list.
     """
 
     kind: Literal["collection"]
@@ -307,7 +295,6 @@ class SloganCard(Envelope):
 
 Card = Annotated[
     ProblemCard
-    | OccurrenceCard
     | CollectionCard
     | SolutionCard
     | HintCard

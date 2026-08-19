@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-Problem statements and warm-ups were transcribed directly from the rendered source page; no OCR or `pdftotext` output was used. The Purdue warm-up is preserved with the source's printed $f(x)$ wording rather than silently changing it to $f(X)$.
+UNL topology workshop Day 2. The source is `assets/attachments/Day_2_-_Connectedness_Problems.pdf` (not `day_2_connected_path_connnected.pdf`, a different sheet). Three warm-ups then eight numbered problems. The list is sheet order. The Purdue warm-up is kept with the printed $f(x)$ wording. Qual reprints (`P-T08A2`, `P-T07A2`, `P-T06Q1-5`, `P-T05A3`, `P-T10A4`) stay on this workshop as well as on their sittings.
 :::

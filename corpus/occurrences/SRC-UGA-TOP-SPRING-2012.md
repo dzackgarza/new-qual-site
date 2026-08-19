@@ -30,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2012. The paper is the current Quals posting `Topology [Spring 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Spring 2012 (paper dated Thursday, January 5th). The paper is the current Quals posting `Topology [Spring 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2012.txt`. Exam #5 lists [[P-HCQNH]] (the Euler characteristic formula also stated as Spring 2015 #8).
 :::

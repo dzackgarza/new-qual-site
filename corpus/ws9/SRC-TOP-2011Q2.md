@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-This source card is provisional. Its problem statements require a fresh transcription directly from the rendered source page before they can be treated as complete.
+UNL Math 871–872 qualifying exam, June 2011. The paper is `assets/attachments/2011Q2_Topology_Qual.pdf`. Do three from Section A and three from Section B; eight questions. The list is A1–A4, B5–B8 in paper order. A2 is the same quotient-with-connected-fibers statement as June 2008 A2, so the card is `P-T08A2`. No holes.
 :::

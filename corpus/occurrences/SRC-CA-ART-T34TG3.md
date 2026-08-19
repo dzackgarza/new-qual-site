@@ -25,5 +25,5 @@ payload:
 ---
 
 ::: remark
-Spring 2020 HW 3 (complex-analysis). Recorded from the source corpus' exam-term annotations.
+Fragment of Spring 2020 HW 3 maximum-modulus annotations from `wiki/30_Complex_Analysis/09_Quals/040_Maximum_Modulus.md`. Not a complete homework sheet: other HW 3 items live on their own `SRC-CA-ART-*` cards. The list is the five cards this artifact carries. Nothing was invented to fill holes.
 :::

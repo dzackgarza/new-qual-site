@@ -29,9 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2014. Recorded from the source corpus' exam-term annotations.
-The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2014 Fall.md.source` (the wiki worked copy `wiki/00_Prelims/Worked_Exams/2014 Fall.md` is the same sitting).
-The department Quals directory has no prelim posting.
-The list is the sitting order on that paper.
-Exam #1 (quantifier translations of surjective, not injective, uniformly continuous, and not uniformly continuous) is minted as `P-8PR01`. Later items, read against the paper, are `P-TVRVM`, `P-TEVPO`, `P-QJE7B`, `P-WJTPS`, `P-VJBIB`, `P-N2NUD`, `P-34W2F`.
+UGA prelim Fall 2014. The paper is `assets/attachments/grad_prelim_Fall14.pdf` (headed Department of Mathematics, Preliminary Examination, August 12, 2014). Eight questions; the list is sitting order. Worked writeups: `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2014 Fall.md.source`. Card-body garbles relative to the PDF (same sitting items, not extra questions): `P-8PR01` asks for quantifiers while the paper asks for those four definitions in words without logical symbols or “not”; `P-QJE7B` has $\{v_1+v_2,\,v_1+v_2+v_3,\,-v_2+2v_3\}$ while the paper asks $\{v_1+v_2,\,v_2-v_3,\,v_2+2v_3\}$.
 :::

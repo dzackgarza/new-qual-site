@@ -30,5 +30,5 @@ payload:
 ---
 
 ::: remark
-Problem statements and warm-ups were transcribed directly from the rendered source page; no OCR or `pdftotext` output was used. The warm-up statement with $A\subseteq Y$ is preserved verbatim even though the surrounding hypothesis introduces $X$; it is not silently corrected.
+Topology Qual Workshop Day 1: Compactness. The source is `assets/attachments/Day_1_-_Compactness_Problems.pdf` (not the 2016 sheet `day_1_compactness.pdf`). Three warm-ups then nine numbered items; the list is sheet order, including exam cards reused from UNL sittings (`P-T11A1`, `P-AISD5`, `P-T05A2`, `P-T06Q1-4`, `P-T05A4`, `P-T11A4`). The warm-up with $A\subseteq Y$ is preserved verbatim. No holes.
 :::

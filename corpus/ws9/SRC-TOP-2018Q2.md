@@ -27,6 +27,6 @@ payload:
 ---
 
 ::: remark
-The problem statements are transcribed from the rendered source page; review remains draft.
+UNL Math 871–872 qualifying exam, May 2018. The paper is `assets/attachments/2018Q2_Topology_Qual.pdf`. Eight questions; the list is paper order. No holes.
 :::
 

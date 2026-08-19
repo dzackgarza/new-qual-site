@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-This source card is provisional. Its problem statements require a fresh transcription directly from the rendered source page before they can be treated as complete.
+UNL Math 970/971 qualifying exam, June 2005. The paper is `assets/attachments/2005Q2_Topology_Qual.pdf`. Do three from Section A and three from Section B; eight questions on the paper. The list is A1–A4, B5–B8 in paper order. No holes.
 :::

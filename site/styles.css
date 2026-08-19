@@ -522,8 +522,8 @@ mjx-container[display="true"] {
    written by the emitter off the same class map the indexer uses, so a new card
    kind is labelled without touching this file — and cannot be added here and
    nowhere else, which is how `.theorem` and `.concept` came to render as plain
-   prose. Hints, solutions and occurrences never reach this rule: reveal.lua
-   replaces those divs with a collapsed <details>. */
+   prose. Hints and solutions never reach this rule: reveal.lua replaces those
+   divs with a collapsed <details>. */
 div.qual-section {
   border-left: 3px solid var(--bs-border-color);
   padding: 0.1rem 0 0.1rem 1rem;
@@ -562,10 +562,6 @@ details.reveal[open] > summary {
   margin-bottom: 0.5rem;
   border-bottom: 1px solid var(--bs-border-color);
   padding-bottom: 0.35rem;
-}
-details.reveal.qual-occurrence > summary {
-  font-weight: 500;
-  opacity: 0.8;
 }
 
 /* Position on the collection page is the list index. */

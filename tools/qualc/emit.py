@@ -148,8 +148,8 @@ def _terms(con: sqlite3.Connection, card_id: str, axis: str) -> list[str]:
 # exists to preserve, lost at the last step.
 OWNED = {cls: f"qual-{kind}" for cls, kind in DIV_CLASS_TO_KIND.items()}
 
-# The class carrying the label. `reveal.lua` replaces the hint, solution and
-# occurrence divs outright, so those never reach this rule.
+# The class carrying the label. `reveal.lua` replaces the hint and solution
+# divs outright, so those never reach this rule.
 SECTION_CLASS = "qual-section"
 
 
@@ -159,7 +159,7 @@ def _owned_class(class_name: str) -> str:
     return class_name
 
 
-# A `title=` on a hint, solution or occurrence would land inside the `<details>`
+# A `title=` on a hint or solution would land inside the `<details>`
 # those become, below the summary that already names them.
 TITLED_KINDS = set(DIV_CLASS_TO_KIND.values()) - {"hint", "solution"}
 
@@ -192,7 +192,6 @@ def _rename(el: pf.Element, doc: pf.Doc) -> pf.Element:
 REVEAL_LABELS = {
     "qual-hint": "Hint",
     "qual-solution": "Solution",
-    "qual-occurrence": "As it appeared",
 }
 
 # Authored div classes whose content answers the problem instead of stating it.
@@ -247,12 +246,6 @@ def _reveal(
     if reveal_class is None:
         return None
     summary = REVEAL_LABELS[reveal_class]
-    if reveal_class == "qual-occurrence":
-        if "source" in element.attributes:
-            summary = element.attributes["source"]
-        locator = element.attributes.get("locator")
-        if locator:
-            summary += f", problem {locator}"
     opening = f'<details class="reveal {reveal_class}"><summary>{html.escape(summary)}</summary>'
     return [
         pf.RawBlock(opening, format="html"),
@@ -475,11 +468,11 @@ def _wiki_blocks(page: WikiPage, incoming: list[WikiPage]) -> list[pf.Block]:
 #
 # The 3,200 tag pages are the bulk of the build. Composing them through panflute
 # means one pandoc process per card to load and one per page to write -- an hour.
-# Their bodies are only a card's own blocks plus, for a problem, its inlined
-# occurrences and any solution or hint. No `uses` link, no title parsing: every
-# piece is already pandoc JSON in the catalog. These pages are assembled as JSON
-# and written in bounded batches through one persistent Pandoc server. The other
-# pages use the same writer boundary after Panflute composition.
+# Their bodies are only a card's own blocks plus, for a problem, any solution
+# or hint. No `uses` link, no title parsing: every piece is already pandoc JSON
+# in the catalog. These pages are assembled as JSON and written in bounded
+# batches through one persistent Pandoc server. The other pages use the same
+# writer boundary after Panflute composition.
 
 
 @dataclass(frozen=True)
@@ -535,7 +528,7 @@ def _relation_groups_json(
         """
         select c.id, c.title, r.kind as relation_kind
         from relations r join cards c on c.id=r.source_id
-        where r.target_id=? and r.kind != 'instance-of'
+        where r.target_id=?
         order by r.kind, c.title, c.id
         """,
         (card_id,),
@@ -1280,7 +1273,6 @@ def index_page(
     counts = Counter(r["kind"] for r in _rows(con, "select kind from cards"))
     labels = {
         "problem": "Problems",
-        "occurrence": "Exam appearances",
         "collection": "Collections",
     }
 
@@ -1567,11 +1559,9 @@ def _link_targets(
         targets[key] = target
         targets[target.as_posix()] = target
 
-    for card in _rows(con, "select id, kind from cards where kind != 'occurrence'"):
+    for card in _rows(con, "select id, kind from cards"):
         directory = "exam" if card["kind"] == "collection" else "tag"
         add(card["id"], Path(directory) / f"{card['id']}.html")
-    for occurrence in _rows(con, "select id, problem_id from occurrences"):
-        add(occurrence["id"], Path("tag") / f"{occurrence['problem_id']}.html")
     for guide in guides:
         add(_publication_root_target_key(guide), _publication_root_route(guide))
         for section in guide.sections:
@@ -1597,7 +1587,6 @@ def _search_records(
           coalesce((select group_concat(text, ' ') from sections
                     where card_id=c.id), '') as body
         from cards c
-        where c.kind != 'occurrence'
         order by c.id
         """,
     )
@@ -1880,7 +1869,7 @@ def project(
     for card in _rows(con, "select * from cards where kind='problem'"):
         meta, body = problem_json(con, card, jcache, appearances, mentions)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
-    for card in _rows(con, "select * from cards where kind not in ('problem','collection','occurrence')"):
+    for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
         meta, body = plain_json(con, card, jcache, appearances, mentions)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     write_json_pages(

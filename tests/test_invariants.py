@@ -198,7 +198,6 @@ def catalog_rows(root: Path) -> dict[str, list[tuple]]:
         "cards": con.execute("select id, kind, title, review, ast from cards order by id").fetchall(),
         "classifications": con.execute("select * from classifications order by 1,2,3").fetchall(),
         "relations": con.execute("select * from relations order by 1,2,3").fetchall(),
-        "occurrences": con.execute("select * from occurrences order by id").fetchall(),
         "sources": con.execute("select * from sources order by id").fetchall(),
         "collection_problems": con.execute("select * from collection_problems order by collection_id, coalesce(section_ordinal, -1), ordinal").fetchall(),
         "sections": con.execute("select * from sections order by 1,3").fetchall(),

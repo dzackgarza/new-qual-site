@@ -33,5 +33,5 @@ payload:
 ---
 
 ::: remark
-Wesleyan University PhD Qualifying Exam, Written Part: Algebra, July 10, 2013 (Hovey and Scowcroft). The paper is the sitting headed Wesleyan University, Department of Mathematics, PhD Qualifying Exam, Written Part: Algebra, Profs. Hovey and Scowcroft, July 10, 2013 on `assets/attachments/algebra_2010-2015_prelims.pdf` (pages 6-8). Not a UGA exam. The list is the sitting order on the packet.
+Wesleyan University PhD Qualifying Exam, Written Part: Algebra, July 10, 2013 (Hovey and Scowcroft). The paper is pages 6–8 of the scan `assets/attachments/algebra_2010-2015_prelims.pdf`. Three parts (Groups, Rings, Fields), four problems each; the examinee does problem 1 and two of 2–4 in each part. The list is the twelve problems in paper order. No holes.
 :::

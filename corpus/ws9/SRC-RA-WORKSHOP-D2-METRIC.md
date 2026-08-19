@@ -31,5 +31,5 @@ payload:
 ---
 
 ::: remark
-The rendered pages contain definitions and theorem statements as context, followed by warm-ups, problems, and additional problems. The problem statements were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used.
+Day 2: Metric spaces and topology. The source is `assets/attachments/Day_2_Metric_Spaces_and_Topology.pdf`. Definitions and theorems are context, not listed. The list is five warm-ups, five numbered problems (including UNL May 2019 #1 as `P-I73ZD`), then three additional problems, in sheet order. No holes.
 :::

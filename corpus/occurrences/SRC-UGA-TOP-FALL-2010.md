@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2010. The paper is the current Quals posting `Topology [Fall 2010].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Fall 2010. The paper is the current Quals posting `Topology [Fall 2010].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2010.txt`.
 :::

@@ -55,10 +55,10 @@ def _body_digest(path: Path) -> str:
     return hashlib.sha1(body.strip().encode()).hexdigest()
 
 
-# A collection or occurrence card has no mathematics of its own -- its body is a
+# A collection card has no mathematics of its own -- its body is a
 # provenance remark, and the same remark on two different exam sittings is
 # correct, not a duplicate. Duplicate *sittings* are `duplicate-sittings`.
-BODYLESS_KINDS = {"collection", "occurrence"}
+BODYLESS_KINDS = {"collection"}
 
 
 def check_duplicate_bodies(parsed: list[ParsedCard]) -> Check:
@@ -150,9 +150,9 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
         for block in page.blocks:
             visit(block)
 
-    # Close under attachment: an occurrence/solution/hint is read on the route of
+    # Close under attachment: a solution or hint is read on the route of
     # the card it points at.
-    attaches = {"instance-of", "solves", "hints-at", "variant-of"}
+    attaches = {"solves", "hints-at", "variant-of"}
     edges: dict[str, set[str]] = {}
     for item in parsed:
         for relation in item.card.relations:

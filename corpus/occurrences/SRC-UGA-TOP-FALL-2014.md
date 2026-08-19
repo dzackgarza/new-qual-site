@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2014. The paper is the current Quals posting `Topology [Fall 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Fall 2014. The paper is the current Quals posting `Topology [Fall 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (no local dump; converted from that posting). Exam #8 lists [[P-23S3Z]] (Brouwer on $B^2$; same statement as Fall 2016 #8).
 :::

@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-Part 1 and Part 3 are discussion prompts. The two Part 2 problem lists were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used.
+Topology Qualifying Exam Workshop, May 2020, Worksheet 1. The source is `assets/attachments/Topology_Workshop_Worksheet_1A.pdf`. Part 1 and Part 3 are discussion prompts. Part 2 reprints the May 2016 UNL topology qual; the list is that paper’s eight questions (`P-T16A1`–`P-T16B4`), also filed on `SRC-TOP-UNL-2016Q2`. No holes.
 :::

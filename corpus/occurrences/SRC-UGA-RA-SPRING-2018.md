@@ -26,5 +26,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2018. The sitting order is the migrated Qual Progress TOC in `assets/ws9/qual-wiki/native/20_Real_Analysis/Real Analysis Qual Progress.md` (same blocks on `wiki/90_Archives/Tracking/Real Analysis Qual Progress.md` and the `[[P-…]]` links under Spring 2018.1–.5 in `wiki/20_Real_Analysis/08_Quals/`).
+UGA real-analysis Spring 2018. The paper is the current Quals posting `Real Analysis [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02018%5D.docx`), headed January 2018. The local dump is `.tmp-uga-ra-empty/SPRING-2018-nbsp.txt`. The catalog PDF `RealQual_Spring_2018.pdf` currently 404s. The list is the sitting order on that paper.
+Extra_Questions tags (January 2018) as `P-DX6EM`, which is not an item on this paper.
 :::

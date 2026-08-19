@@ -30,5 +30,5 @@ payload:
 ---
 
 ::: remark
-Problem statements and warm-ups were transcribed directly from the rendered source page; no OCR or `pdftotext` output was used.
+UNL topology workshop Day 3. The source is `assets/attachments/Day_3_-_Separation_Problems.pdf` (not `day_3_sep_counterex_defn.pdf`). Three warm-ups then nine numbered problems. The list is sheet order. Qual reprints (`P-T06Q2-5`, `P-T12A4`, `P-T11A3`, `P-T09A4`) stay on this workshop as well as on their sittings.
 :::

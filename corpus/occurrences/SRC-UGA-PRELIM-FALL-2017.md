@@ -29,7 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2017. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2017 Fall.md.source` (the wiki worked copy `wiki/00_Prelims/Worked_Exams/2017 Fall.md` is the same sitting).
-The department Quals directory has no prelim posting.
-The list is the sitting order on that paper.
+UGA prelim Fall 2017. The paper is the scan `assets/attachments/grad_prelim_Fall17.pdf` (2017 Graduate Preliminary Exam; text recovered by OCR). Eight questions; the list is sitting order. Worked writeups: `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2017 Fall.md.source`. No holes.
 :::

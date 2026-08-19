@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2007. The paper is the current Quals posting `Topology [Fall 2007].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Fall 2007. The paper is the current Quals posting `Topology [Fall 2007].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2007.txt`. Exam #4 lists [[P-FD3UV]] (same statement as Spring 2013 #6).
 :::

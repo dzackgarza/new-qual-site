@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-The theme, warm-ups, problem statements, and wrap-up prompts were transcribed directly from the rendered source page; no OCR or `pdftotext` output was used.
+May 2020 Topology Qualifying Exam Workshop Worksheet 2 (file `Topology_Workshop_Worksheet_1B.pdf`). The sheet is `assets/attachments/Topology_Workshop_Worksheet_1B.pdf`. Four warm-ups then five exam reprints (June 2010 min of continuous functions, June 2011 image of compact, June 2012 factorization of a continuous map, May 2015 section implies quotient, May 2020 lower-limit compactness). Wrap-up prompts are not problem cards.
 :::

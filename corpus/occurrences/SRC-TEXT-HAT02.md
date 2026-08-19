@@ -23,6 +23,6 @@ payload:
 
 ::: remark
 Hatcher, *Algebraic Topology*, Cambridge University Press, 2002. Cited in the authored wiki as `[@Hat02]`; the work itself is in `vocabularies/references.bib` and the book is registered as `hatcher` in `vocabularies/textbooks.yaml`. `sections:` is the book order of associated existing problem cards.
-`P-TOP-WORKSHOP-2020-WS2B-HW2` states Chapter 0 Exercise 2 (explicit deformation retraction of $\mathbb{R}^n\setminus\{0\}$ onto $S^{n-1}$). Theorem and proposition cards titled by Hatcher numbers (Hatcher 1.12, 1.30, 1.31, …) are statements from the text, not exercises, and are omitted.
+`P-TOP-WORKSHOP-2020-WS2B-HW2` is Hatcher's Chapter 0 radial deformation retraction of $\mathbb{R}^n\setminus\{0\}$ onto $S^{n-1}$ (Example 0.1 in the 2002 text), as printed on May 2020 Worksheet 2B; it is also listed on `SRC-TOP-WORKSHOP-2020-WS2B`. Theorem and proposition cards titled by Hatcher numbers (Hatcher 1.12, 1.30, 1.31, …) are statements from the text, not exercises, and are omitted.
 Other problem cards that only cite Hatcher in a remark or proof are omitted.
 :::

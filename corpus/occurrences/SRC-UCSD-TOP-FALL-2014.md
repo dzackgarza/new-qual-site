@@ -26,5 +26,5 @@ payload:
 ---
 
 ::: remark
-UCSD topology Fall 2014. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/291_UCSD_Fall 2014.md.source`.
+UCSD topology Fall 2014. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/291_UCSD_Fall 2014.md.source` (wiki copy `wiki/40_Topology/08_Quals/UCSD/291_UCSD_Fall 2014.md`). Five numbered questions; the list is exam order. No holes.
 :::

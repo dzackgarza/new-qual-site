@@ -33,5 +33,5 @@ payload:
 ---
 
 ::: remark
-UCLA real-analysis Fall 2009. The paper is https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-09F.pdf (ANALYSIS QUALIFYING EXAM, FALL 2009). The list is the sitting order on that paper.
+UCLA real-analysis Fall 2009. The paper is https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-09F.pdf (ANALYSIS QUALIFYING EXAM, FALL 2009). Local dump `.tmp-papers/ucla-analysis-09F.txt` is empty (form-feeds only); the PDF was read instead. Twelve numbered questions; the list is the sitting order on that paper. No holes.
 :::

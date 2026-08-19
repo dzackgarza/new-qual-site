@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Spring 2011. The paper is the current Quals posting `Complex Analysis [Spring 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BSpring%C2%A02011%5D.docx`), headed January 2011. The list is the sitting order on that paper.
+UGA complex-analysis Spring 2011. The paper is the current Quals posting `Complex Analysis [Spring 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BSpring%C2%A02011%5D.docx`), headed January 2011. The local dump is `.tmp-uga-ca-exams/SPRING-2011.md`. The list is the sitting order on that paper. There are no holes.
 :::

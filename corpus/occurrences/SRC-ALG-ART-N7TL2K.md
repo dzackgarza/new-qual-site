@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-Fall 2019 Midterm #10 (algebra). Recorded from the source corpus' exam-term annotations.
+Fall 2019 algebra midterm #10. Same card `P-567ZZ` as on `SRC-ALG-ART-QHGA3N`. Source: wiki exam-term heading, not a sitting PDF.
 :::

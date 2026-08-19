@@ -30,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Fall 2013. The paper is the current Quals posting `Topology [Fall 2013].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Fall 2013. The paper is the current Quals posting `Topology [Fall 2013].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2013.txt`. Exam #1 lists [[P-8TF27]] (same statement as Fall 2015 #1). Exam #2 lists [[P-8TF28]] (same "give an example" prompt as Spring 2008 #2).
 :::

@@ -30,7 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2016. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2016 Fall.md.source` (the wiki worked copy `wiki/00_Prelims/Worked_Exams/2016 Fall.md` is the same sitting).
-The department Quals directory has no prelim posting.
-The list is the sitting order on that paper.
+UGA prelim Fall 2016. The paper is `assets/attachments/grad_prelim_Fall16.pdf` (Mathematics Preliminary Exam, Fall 2016). Nine questions; the list is sitting order. Worked writeups: `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2016 Fall.md.source`. No holes.
 :::

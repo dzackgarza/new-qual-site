@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2011. The paper is the current Quals posting `Topology [Spring 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Spring 2011. The paper is the current Quals posting `Topology [Spring 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2011.txt`. Exam #8(b) on [[P-XXLEK]] writes $f(x)=0$ for $x\in U$; the paper has $x\notin U$.
 :::

@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-This source card is provisional. Its problem statements require a fresh transcription directly from the rendered source page before they can be treated as complete.
+UNL Math 970/971 qualifying exam, June 2006. The paper is `assets/attachments/2006Q2_Topology_Qual.pdf`. Ten questions (A1–A5, B6–B10); the list is paper order. No holes.
 :::

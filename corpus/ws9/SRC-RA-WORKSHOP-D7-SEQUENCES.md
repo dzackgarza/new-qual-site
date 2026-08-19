@@ -33,5 +33,5 @@ payload:
 ---
 
 ::: remark
-The convergence definitions, theorem statements, warm-ups, and problem statements were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used. The bibliography and Remark 6.6 discussion remain source context.
+UNL real-analysis workshop Day 7. The sheet is `assets/attachments/Day_7_Sequences_and_Series_of_Functions.pdf`. Five warm-ups, six numbered problems, then four more. The list is sheet order. Convergence definitions and theorems in the preamble are source context, not cards.
 :::

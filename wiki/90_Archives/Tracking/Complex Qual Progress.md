@@ -4,7 +4,7 @@ order: 2
 ---
 
 > Index of UGA Complex Analysis qual sittings, with links to the official exam PDFs and to the problems in this wiki.
-> (Structured occurrence data lives in the `O-*` / `SRC-*` cards.)
+> Collection cards (`SRC-*`) hold the sitting order.
 
 # Qual Problems ToDo
 

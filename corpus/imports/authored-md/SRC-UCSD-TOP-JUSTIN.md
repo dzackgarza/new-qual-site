@@ -97,6 +97,6 @@ payload:
     kind: unknown
 ---
 
-::: {.remark}
-Collected statements routed from Questions/Topology/UCSD/Justin's Problems.md; 81 cards.
+::: remark
+Collected statements from make-me-a-qual `Questions/Topology/UCSD/Justin's Problems.pdf` (the `.md` named in provenance is not in the tree). The PDF has image-only placeholders under Van Kampen; those are not listed. Two items exact-match existing cards `P-WOFN2` (solid tori glued along the boundary) and `P-LAFJW` (complement of a knotted solid torus, also on `SRC-UCSD-TOP-SUMMER-2003`). The list is PDF order of the 79 authored cards. The migration manifest’s “81 statements” counted the image placeholders.
 :::

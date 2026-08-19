@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-This source card is provisional. Its problem statements require a fresh transcription directly from the rendered source page before they can be treated as complete.
+UNL Math 871–872 qualifying exam, January 2020. The paper is `assets/attachments/2020Q1_Topology_Qual.pdf`. Eight questions (A1–A4, B1–B4); the list is paper order. No holes.
 :::

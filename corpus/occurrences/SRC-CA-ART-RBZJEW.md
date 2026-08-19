@@ -19,5 +19,5 @@ payload:
 ---
 
 ::: remark
-QualBot image Conformal map 1 (complex-analysis). Recorded from the source corpus' exam-term annotations.
+QualBot conformal-map image artifact. One card `P-OONH6`. Not a homework sheet and not a Quals sitting. Nothing was invented.
 :::

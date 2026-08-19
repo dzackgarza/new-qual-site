@@ -33,5 +33,5 @@ payload:
 ---
 
 ::: remark
-The warm-ups, numbered problems, and covering-space follow-ups were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used.
+UNL topology workshop Day 7. The source is `assets/attachments/Day_7_-_Fundamental_Groups.pdf` (not `day_5_fundamental_group.pdf`). Three warm-ups, ten numbered problems, then two covering-space follow-ups. The list is sheet order. Qual reprints stay on this workshop as well as on their sittings.
 :::

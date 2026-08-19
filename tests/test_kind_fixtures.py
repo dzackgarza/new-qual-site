@@ -78,9 +78,8 @@ def test_unknown_textbook_is_rejected(tmp_path: Path) -> None:
 def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     """A kind that indexes but never renders is data the reader cannot get to.
 
-    The occurrence fixture has no route of its own. Appearances on a problem
-    page come from collection `problems:` / `sections:` lists, not from
-    inlining occurrence cards.
+    Appearances on a problem page come from collection `problems:` / `sections:`
+    lists.
     """
     work = fixture_repo(tmp_path)
     subprocess.run(
@@ -91,14 +90,12 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
     rendered = {p.stem for p in (work / "build" / "quarto").rglob("*.qmd")}
     rendered_html = {p.stem for p in (work / "build" / "quarto" / "_site").rglob("*.html")}
     ids = {line.split(": ", 1)[1].strip() for p in FIXTURES.glob("*.md") for line in p.read_text().splitlines() if line.startswith("id: ")}
-    assert ids - rendered == {"OCC-INDEXP"}, ids - rendered
-    assert ids - rendered_html == {"OCC-INDEXP"}, ids - rendered_html
+    assert ids <= rendered, ids - rendered
+    assert ids <= rendered_html, ids - rendered_html
 
     problem_html = (work / "build" / "quarto" / "_site" / "tag" / "PRB-INDEXP.html").read_text()
     assert "by left translation" in problem_html
 
-    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
-    assert "Problem 3" not in exam_qmd
     textbook_qmd = (work / "build" / "quarto" / "exam" / "SRC-DUMMIT.qmd").read_text()
     assert "0 problems." in textbook_qmd
 
@@ -106,8 +103,7 @@ def test_every_card_reaches_a_page(tmp_path: Path) -> None:
 def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
     """An exam page is the collection's `problems:` list, in list order.
 
-    An empty list publishes empty. Filling it does not pull locators off
-    occurrence cards.
+    An empty list publishes empty. Filling it does not invent locators.
     """
     work = fixture_repo(tmp_path)
     (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP").replace("solved: true", "solved: false"))

@@ -33,9 +33,6 @@ def load(
         for item in parsed:
             if item.card.kind == "collection":
                 card_routes[item.card.id] = Path("exam") / f"{item.card.id}.html"
-            elif item.card.kind == "occurrence":
-                target = next(relation.target for relation in item.card.relations if relation.kind == "instance-of")
-                card_routes[item.card.id] = Path("tag") / f"{target}.html"
             else:
                 card_routes[item.card.id] = Path("tag") / f"{item.card.id}.html"
         if wiki_pages:

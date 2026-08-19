@@ -28,5 +28,6 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2021. The department PDF at `https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2021.pdf` returns 404. The problem list is the sitting order in `assets/ws9/qual-review-and-solutions/native/Complex Analysis/UGA Question (no solutions)/sections/9999_2021_Fall.md.source`.
+UGA complex-analysis Fall 2021. The department PDF at `https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2021.pdf` returns 404. The paper is the current Quals posting `Complex Analysis [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The local dump is `.tmp-uga-ca-exams/FALL-2021.txt`. The sitting transcription `assets/ws9/qual-review-and-solutions/native/Complex Analysis/UGA Question (no solutions)/sections/9999_2021_Fall.md.source` matches that paper except for exam #3. The list is the sitting order on that paper. There are no holes.
+Exam #3 is listed as `P-W23PS` (the Quals posting asks $\int_{-\infty}^{\infty}(1+x^n)^{-1}\,dx$; that card and the archive transcription ask $\int_0^{\infty}$).
 :::

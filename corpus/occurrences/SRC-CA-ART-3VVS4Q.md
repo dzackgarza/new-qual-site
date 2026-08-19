@@ -21,5 +21,5 @@ payload:
 ---
 
 ::: remark
-Spring 2020 HW 3 #3.8.6 (complex-analysis). Recorded from the source corpus' exam-term annotations.
+Spring 2020 HW 3, Stein–Shakarchi §3.8.6. Source: wiki heading `wiki/30_Complex_Analysis/09_Quals/030_Computing Integrals.md` (also `007_Residues.md`). One numbered homework item, one card `P-4M6DM`. No homework PDF is in attachments.
 :::

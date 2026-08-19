@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UCSD topology Summer 2003. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/292_UCSD_Summer 2003.md.source`.
+UCSD topology Summer 2003. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/292_UCSD_Summer 2003.md.source` (wiki copy `wiki/40_Topology/08_Quals/UCSD/292_UCSD_Summer 2003.md`). Nine numbered questions; the list is exam order. No holes.
 :::

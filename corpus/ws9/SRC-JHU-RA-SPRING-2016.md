@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-JHU real-analysis Spring 2016. The paper is the sitting headed `QUALIFYING EXAM SPRING 2016 - ANALYSIS` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). The list is the sitting order on that paper.
+JHU real-analysis Spring 2016. The paper is the sitting headed `QUALIFYING EXAM SPRING 2016 - ANALYSIS` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). Transcript: `.tmp-papers/jhu-analysisexams.txt`. Seven numbered questions; the list is the sitting order on that paper. No holes. Exam #5 is the same disk-automorphism fixed-point item as UGA complex-analysis Spring 2014 (`P-8CA35`); the card carries UGA partial-credit wording absent from the JHU paper.
 :::

@@ -27,5 +27,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Spring 2017. The sitting order is the migrated Qual Progress TOC in `assets/ws9/qual-wiki/native/20_Real_Analysis/Real Analysis Qual Progress.md` (same blocks on `wiki/90_Archives/Tracking/Real Analysis Qual Progress.md` and the `[[P-…]]` links under Spring 2017.1–.6 in `wiki/20_Real_Analysis/08_Quals/`). Extra_Questions also tags (Spring 2017 7) as `P-ZCPFV`; Qual Progress stops at six, so that tag is named here and not appended.
+UGA real-analysis Spring 2017. The paper is the current Quals posting `Real Analysis [Spring 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02017%5D.docx`), headed January 2017. The local dump is `.tmp-uga-ra-exams/JANUARY-2017.txt` (same paper as `.tmp-uga-ra-empty/Real_Analysis_Spring_NBSP_2017.docx`). The catalog PDF `RealAnalysis_spring2017.pdf` currently 404s. The list is the sitting order on that paper.
+Extra_Questions tags (Spring 2017 7) as `P-ZCPFV`, (January 2017 2a) as `P-FTV4U`, and (January 2017 3) as `P-U354O`; none of those statements is an item on this paper.
 :::

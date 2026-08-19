@@ -25,5 +25,5 @@ payload:
 ---
 
 ::: remark
-JHU (undated) (real-analysis). Recorded from the source corpus' exam-term annotations.
+Undated contributed real-analysis artifact labeled JHU in provenance. Seven cards starting with $A^2(U)$ as a Hilbert space (`P-S3P7E`). Not a JHU Quals sitting paper in `assets/attachments`; the list is the artifact’s recorded order. Nothing was invented.
 :::

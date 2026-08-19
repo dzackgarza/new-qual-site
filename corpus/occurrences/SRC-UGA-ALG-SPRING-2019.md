@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Spring 2019. The paper is the current Quals posting `Algebra [Spring 2019].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #1 lists [[P-AIXPZ]]. Exam #4 lists [[P-M6W74]].
+UGA algebra Spring 2019. Source: `.tmp-uga-alg-exams/SPRING-2019.txt` of the Quals posting `Algebra [Spring 2019].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

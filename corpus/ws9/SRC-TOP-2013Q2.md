@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-This source card is provisional. Its problem statements require a fresh transcription directly from the rendered source page before they can be treated as complete.
+UNL Math 871–872 qualifying exam, May 2013. The paper is `assets/attachments/2013Q2_Topology_Qual.pdf`. Eight questions (A then B); the list is paper order. No holes.
 :::

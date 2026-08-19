@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UCSD topology Fall 2017. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/293_UCSD_Final Fall 2017.md.source`.
+UCSD topology Fall 2017 final. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/293_UCSD_Final Fall 2017.md.source` (wiki copy `wiki/40_Topology/08_Quals/UCSD/293_UCSD_Final Fall 2017.md`). Six numbered questions; the list is exam order. No holes.
 :::

@@ -20,6 +20,5 @@ payload:
 ---
 
 ::: remark
-UGA (undated) (prelim).
-Recorded from the source corpus' exam-term annotations.
+Undated two-problem prelim artifact (`P-VAWOC` Taylor series of $\ln x$ at 1; `P-HUKW5` Jacobian of polar coordinates at the origin). No sitting PDF was found; distinct from `SRC-PRELIM-ART-INTEGRAL-PRACTICE`. The list is the two cards the artifact carries. Nothing was invented.
 :::

@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2019. The listed department PDF 404s. The paper is the current Quals posting `Complex Analysis Fall 2019.docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #1 is listed as `P-PMH4D`.
+UGA complex-analysis Fall 2019. The listed department PDF `ComplexQual_Fall2019.pdf` currently 404s. The paper is the current Quals posting `Complex Analysis [Fall 2019].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The local dump is `.tmp-uga-ca-exams/FALL-2019.txt`. The list is the sitting order on that paper. There are no holes.
 :::

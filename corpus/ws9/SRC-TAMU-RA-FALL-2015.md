@@ -31,5 +31,5 @@ payload:
 ---
 
 ::: remark
-TAMU real-analysis Fall 2015. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/a15.pdf (Qualifying Examination in Real Variables, August 2015). The list is the sitting order on that paper.
+TAMU real-analysis Fall 2015. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/a15.pdf (Qualifying Examination in Real Variables, August 2015). Transcript: `.tmp-papers/tamu-a15.txt`. Ten numbered questions; the list is the sitting order on that paper. No holes. Exam #8 is the same equivalent-norm extension as January 2015 #10 (`P-8XT86`).
 :::

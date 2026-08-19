@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Fall 2013. The paper is the current Quals posting `Algebra [Fall 2013].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02013%5D.docx`). Exam #8 (define solvable; prove $S_4$ is solvable) and exam #9 ($T^2=I$ is diagonalizable except in characteristic 2) have no matching problem card.
+UGA algebra Fall 2013. Source: `.tmp-uga-alg-exams/FALL-2013.txt` of the Quals posting `Algebra [Fall 2013].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02013%5D.docx`). The list is the sitting order on that paper. Exam #8 (define solvable; prove $S_4$ is solvable) and exam #9 ($T^2=I$ is diagonalizable except in characteristic 2) have no matching problem card.
 :::

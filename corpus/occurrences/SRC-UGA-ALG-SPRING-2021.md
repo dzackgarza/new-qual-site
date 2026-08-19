@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Spring 2021. The paper is the current Quals posting `Algebra [Spring 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. Exam #2 lists [[P-4XOCE]]. Exam #4 lists [[P-HJ2AR]].
+UGA algebra Spring 2021. Source: `.tmp-uga-alg-exams/SPRING-2021.txt` of the Quals posting `Algebra [Spring 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

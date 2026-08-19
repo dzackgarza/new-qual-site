@@ -30,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2015. Recorded from the source corpus' exam-term annotations. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2015 Fall.md.source` (the wiki worked copy `wiki/00_Prelims/Worked_Exams/2015 Fall.md` is the same sitting). The department Quals directory has no prelim posting.
+UGA prelim Fall 2015. The paper is `assets/attachments/grad_prelim_Fall15.pdf` (Graduate Preliminary Exam, Fall 2015). Nine equally weighted questions; the list is sitting order. Worked writeups: `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2015 Fall.md.source`. No holes.
 :::

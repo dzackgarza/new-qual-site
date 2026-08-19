@@ -31,6 +31,5 @@ payload:
 ---
 
 ::: remark
-TAMU real-analysis Spring 2016. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j16.pdf (Real Analysis Qualiftying Exam, January 2016; spelling as on the paper).
-The list is the sitting order on that paper.
+TAMU real-analysis Spring 2016. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j16.pdf (Real Analysis Qualiftying Exam, January 2016; spelling as on the paper). Transcript: `.tmp-papers/tamu-j16.txt`. Ten numbered questions; the list is the sitting order on that paper. No holes.
 :::

@@ -15,7 +15,7 @@ payload:
   area: topology
   problems:
   - P-SG462
-  - P-HVKUA
+  - P-8TF28
   - P-BPDEA
   - P-JH5RI
   - P-YVYGB
@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2008. The paper is the current Quals posting `Topology [Spring 2008].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Spring 2008. The paper is the current Quals posting `Topology [Spring 2008].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (no local dump; converted from that posting). Exam #2 lists [[P-8TF28]] (the paper asks for an example of a connected non-path-connected space; [[P-HVKUA]] is Fall 2005 #1, the specified closed topologist's sine curve).
 :::

@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Fall 2014. The paper is the current Quals posting `Algebra [Fall 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02014%5D.docx`).
+UGA algebra Fall 2014. Source: `.tmp-uga-alg-exams/FALL-2014.txt` of the Quals posting `Algebra [Fall 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02014%5D.docx`). The list is the sitting order on that paper.
 :::

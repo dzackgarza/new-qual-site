@@ -31,5 +31,5 @@ payload:
 ---
 
 ::: remark
-The theorem statements, warm-ups, and problem statements were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used. The bibliography and theorem citations remain source context.
+UNL real-analysis workshop Day 5. The sheet is `assets/attachments/Day_5_Differential_Calculus.pdf`. Three warm-ups, six numbered problems, then four more. The list is sheet order. Theorem statements in the preamble are source context, not cards.
 :::

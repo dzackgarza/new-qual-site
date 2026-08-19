@@ -27,5 +27,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Fall 2021. The paper is the current Quals posting `Algebra [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; the sitting transcription `assets/ws9/qual-review-and-solutions/native/Algebra/UGA Questions (no solutions)/sections/9999_2021_Fall.md.source` matches that paper. Exam #2 lists [[P-PSRIH]]. Exam #5 lists [[P-GFO6Q]].
+UGA algebra Fall 2021. Source: `.tmp-uga-alg-exams/FALL-2021.txt` of the Quals posting `Algebra [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
 :::

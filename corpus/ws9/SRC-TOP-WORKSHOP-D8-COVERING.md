@@ -32,5 +32,5 @@ payload:
 ---
 
 ::: remark
-The warm-ups and problem statements were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used.
+UNL topology workshop Day 8. The source is `assets/attachments/Day_8_-_Covering_Spaces.pdf`. Two warm-ups then twelve numbered problems. The list is sheet order. Item 12 is the May 2013 poles-identified sphere transcription `P-TOP-WORKSHOP-D8-12`; the exam sitting card for the same statement is `P-T13B1` on `SRC-TOP-2013Q2` and on `SRC-TOP-WORKSHOP-2020-WS5`.
 :::

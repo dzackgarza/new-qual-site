@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2014. The paper is the current Quals posting `Topology [Spring 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Spring 2014. The paper is the current Quals posting `Topology [Spring 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2014.txt`. Exam #2 lists [[P-KCN2B]] (same diagonal/Hausdorff statement as Spring 2021 #1).
 :::

@@ -26,5 +26,5 @@ payload:
 ---
 
 ::: remark
-Spring 20202 HW 3 (complex-analysis). Recorded from the source corpus' exam-term annotations.
+Fragment labeled “Spring 20202 HW 3” in wiki Rouché/Riemann-mapping headings (`wiki/30_Complex_Analysis/09_Quals/008_Rouche.md`, `011 Riemann Mapping and Casorati.md`). Not a complete homework sheet. The list is the six cards this artifact carries. Nothing was invented to fill holes.
 :::

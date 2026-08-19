@@ -29,6 +29,5 @@ payload:
 ---
 
 ::: remark
-Imported from [`make-me-a-qual Combined_Questions.yaml`](https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml) at revision `6190e0eeaf93ac471a2450444d0b70872b7b9dfa`. The verified source SHA-256 is `63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176`. This source group contains 10 rows; no exam-term inference was made beyond the explicit `season` value.
-The problem list is the sitting order in that YAML (file order; every exam number is 0). Row 7 is `P-G2RYI` (qrs); row 8 is `P-8XT37` (ws9). Wiki cards `E-YMM6X` and `E-N6PDJ` are exercises of the same statements and are not listed.
+Imported from [`make-me-a-qual Combined_Questions.yaml`](https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml) at revision `6190e0eeaf93ac471a2450444d0b70872b7b9dfa`. The verified source SHA-256 is `63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176`. This source group is the 10 YAML rows with `university: Emory`, `exam: Complex_Analysis`, `year: 0`, in file order (every exam number is 0). Row 7 is `P-G2RYI` (qrs); row 8 is `P-8XT37` (ws9). Wiki cards `E-YMM6X` and `E-N6PDJ` are exercises of the same statements and are not listed.
 :::

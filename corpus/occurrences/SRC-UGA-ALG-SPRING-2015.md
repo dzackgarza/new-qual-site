@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA algebra Spring 2015. The paper is the current Quals posting `Algebra [Spring 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BSpring%C2%A02015%5D.docx`).
+UGA algebra Spring 2015. Source: `.tmp-uga-alg-exams/SPRING-2015.txt` of the Quals posting `Algebra [Spring 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BSpring%C2%A02015%5D.docx`). The list is the sitting order on that paper.
 :::

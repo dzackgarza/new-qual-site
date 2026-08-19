@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-The theme, warm-ups, problem statements, and wrap-up prompts were transcribed directly from the rendered source page; no OCR or `pdftotext` output was used.
+May 2020 Topology Qualifying Exam Workshop Worksheet 4A. The sheet is `assets/attachments/Topology_Workshop_Worksheet_4A.pdf`. Four warm-ups then five exam reprints (May 2015 homology of $S^1\times(S^1\vee S^1)$, January 2017 at-most-one-simplex cyclic homology, May 2018 two 2-simplices, January 2019 two spheres along the equator, May 2019 cone and suspension). Wrap-up prompts are not problem cards.
 :::

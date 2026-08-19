@@ -28,5 +28,5 @@ payload:
 ---
 
 ::: remark
-JHU real-analysis Fall 2013. The paper is the sitting headed `QUALIFYING EXAM - ANALYSIS - FALL 2013` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). The list is the sitting order on that paper.
+JHU real-analysis Fall 2013. The paper is the sitting headed `QUALIFYING EXAM - ANALYSIS - FALL 2013` in https://math.jhu.edu/gradexam/analysisexams.pdf (department compilation of analysis exams; a Wayback Machine copy at https://web.archive.org/web/2020/https://math.jhu.edu/gradexam/analysisexams.pdf was used after the live URL returned 403). Transcript: `.tmp-papers/jhu-analysisexams.txt`. Seven numbered questions; the list is the sitting order on that paper. No holes.
 :::

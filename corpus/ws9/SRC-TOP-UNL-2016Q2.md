@@ -27,6 +27,6 @@ payload:
 ---
 
 ::: remark
-The problem statements are transcribed from the rendered source page; review remains draft.
+UNL Math topology qualifying exam, May 2016. The paper is `assets/attachments/2016Q2_Topology_Qual.pdf`. Eight questions; the list is paper order. The same eight cards are on `SRC-TOP-WORKSHOP-2020-WS1A` (May 2020 Worksheet 1 reprints this paper). No holes.
 :::
 

@@ -34,5 +34,5 @@ payload:
 ---
 
 ::: remark
-The rendered pages contain limsup/liminf information and convergence-test theorems as context, followed by warm-ups and problems. The problem statements were transcribed directly from the rendered source pages; no OCR or `pdftotext` output was used.
+UNL real-analysis workshop Day 3. The sheet is `assets/attachments/Day_3_Sequences_and_Series.pdf`. Five warm-ups, six numbered problems, then five more problems (theorems-to-prove included). The list is sheet order. Qual reprints stay on this workshop even when also filed on a sitting. Theorems in the “Relevant information” block are source context, not cards.
 :::

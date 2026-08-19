@@ -29,5 +29,5 @@ payload:
 ---
 
 ::: remark
-UGA topology Spring 2018. The paper is the current Quals posting `Topology [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
+UGA topology Spring 2018. The paper is the current Quals posting `Topology [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2018.txt`. Exam #3 lists [[P-SG462]] (compact subsets of Hausdorff spaces are closed).
 :::
