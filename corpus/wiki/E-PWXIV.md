@@ -6,6 +6,8 @@ title: Properties of eleven standard spaces
 classification:
   areas:
   - topology
+  topics:
+  - Topological Spaces
 relations: []
 review: draft
 solved: false

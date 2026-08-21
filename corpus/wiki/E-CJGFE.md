@@ -6,6 +6,8 @@ title: Heredity of the seventeen basic properties
 classification:
   areas:
   - topology
+  topics:
+  - Topological Spaces
 relations: []
 review: draft
 solved: false

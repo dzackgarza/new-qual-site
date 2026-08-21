@@ -13,7 +13,7 @@ review: draft
 solved: false
 ---
 
-Here is an application of Theorem 46.11 to quotient maps. (Compare Exercise 11 of §29.)
+Here is an application of Theorem 46.11 to quotient maps. (Compare [[E-S57IX]].)
 
 Theorem. If $p: A \to B$ is a quotient map and $X$ is locally compact Hausdorff, then $i_X \times p: X \times A \to X \times B$ is a quotient map.
 

@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://search.worldcat.org/isbn/9780131816299
 source:
@@ -567,6 +567,116 @@ source:
     - E-T179H
     - E-3CFLD
     - E-H238X
+  - name: '68'
+    problems:
+    - E-8NCA4
+    - E-175IG
+    - E-UZY87
+    - E-OWZBO
+  - name: '69'
+    problems:
+    - E-2P51H
+    - E-66MV0
+    - E-9IP2I
+    - E-FS62I
+  - name: '70'
+    problems:
+    - E-0EZ4U
+    - E-1DM8W
+    - E-XUJ8N
+  - name: '71'
+    problems:
+    - E-IQT74
+    - E-5DDIL
+    - E-HQ8N3
+    - E-9LY2B
+    - E-KKI5A
+  - name: '72'
+    problems:
+    - E-FFNIM
+    - E-2B91X
+    - E-5Y4F7
+  - name: '73'
+    problems:
+    - E-W5KED
+    - E-VYYH3
+    - E-A7HJX
+    - E-J8QUX
+  - name: '74'
+    problems:
+    - E-2NLYP
+    - E-J500G
+    - E-160XR
+    - E-F8ETH
+    - E-8EX2G
+    - E-HC37E
+    - E-B74TA
+  - name: '75'
+    problems:
+    - E-MYMF4
+    - E-II4JY
+    - E-4349Q
+    - E-04W6Q
+  - name: '76'
+    problems:
+    - E-TUPHD
+    - E-BUVJI
+  - name: '77'
+    problems:
+    - E-ECKDI
+    - E-X04YN
+    - E-L0BW8
+    - E-A3WS1
+  - name: '78'
+    problems:
+    - E-3BSN7
+    - E-RKSXA
+    - E-YI3QM
+    - E-J5IB5
+    - E-SANDE
+  - name: '79'
+    problems:
+    - E-CEDQ9
+    - E-VFXN4
+    - E-CCLL5
+    - E-XFMJA
+    - E-J7FPE
+    - E-KZUFG
+    - E-UYQU1
+  - name: '80'
+    problems:
+    - E-LV54B
+  - name: '81'
+    problems:
+    - E-CGJJG
+    - E-79XXG
+    - E-W9088
+    - E-4RF8O
+    - E-QXEP8
+    - E-4WKOG
+  - name: '82'
+    problems:
+    - E-YZ8XN
+    - E-I9R8B
+    - E-8Q9TN
+    - E-QVJ8J
+    - E-SF828
+    - E-74C1G
+    - E-VLQ5H
+  - name: '83'
+    problems:
+    - E-NKQPS
+    - E-OQRAL
+  - name: '84'
+    problems:
+    - E-S0QDW
+    - E-MW9PV
+    - E-44O6O
+  - name: '85'
+    problems:
+    - E-AL52O
+    - E-CLZ18
+    - E-8IBEP
 ---
 
 ::: remark

@@ -6,6 +6,8 @@ title: Paracompactness and topological completeness in the basics review
 classification:
   areas:
   - topology
+  topics:
+  - Topological Spaces
 relations: []
 review: draft
 solved: false
