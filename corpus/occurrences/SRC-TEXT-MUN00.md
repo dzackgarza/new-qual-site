@@ -232,7 +232,36 @@ source:
     - E-TRFP3
   - name: '30'
     problems:
+    - E-8VZD4
+    - E-8HR3A
+    - E-9TQ6L
+    - E-4TG52
+    - E-99H07
+    - E-W7FNF
+    - E-JW56I
+    - E-0GRG4
+    - E-52GF4
+    - E-QWNYJ
+    - E-JPU5E
+    - E-NWR5K
+    - E-N5AYS
+    - E-18MBF
+    - E-432BL
+    - E-MC21D
+    - E-KZPIX
+    - E-V98N5
     - E-5FLKZ
+  - name: '31'
+    problems:
+    - E-71YOD
+    - E-TTX65
+    - E-E5ZWY
+    - E-7ML5F
+    - E-DWC4M
+    - E-AHENA
+    - E-Y4MFU
+    - E-WVNJ2
+    - E-X4TVL
 ---
 
 ::: remark
