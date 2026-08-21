@@ -166,13 +166,13 @@ All paths are under `/home/dzack/Zotero/storage/<attachment-key>/`.
 - [x] Abelian groups / generators for abelian groups — items 1–6 in cards (item 0 is a reading task)
 - [x] Euclidean domains — all of 1–9 in cards
 - [x] Finitely generated abelian groups and $k[X]$ modules — all of 1–4 in cards
-- [ ] Jordan forms — exercises 1 and 2(i)–(ii) in cards; remaining: 2(iii), 3, 4 (matrix displays corrupted in the extraction; read from the scanned packet)
+- [x] Jordan forms — all of 1–4 in cards
 - [x] Noetherian rings — all of 1–10 in cards
 - [x] Normality and localization — all in cards (sheet items 3, 4, 5 share one card)
 - [x] Sylow subgroups — all of 1–10 in cards
 - [x] Cycles in $S(n)$ and commutators — all of 1–10 in cards
 - [x] Galois groups — concrete problems in cards; the ten prelim pointers (UGA prelims 1997–2006) not yet represented
-- [ ] Fall 2006 midterm and final exam — in the packet but not represented; candidates for their own sitting collection
+- [x] Fall 2006 midterm and final exam — all problems in cards
 
 **Notes:**
 - The hosted MinerU API failed repeatedly on this file; the extraction was produced by a local MinerU pipeline run.

@@ -47,6 +47,8 @@ source:
     problems:
     - E-SMI-8000E-JF1
     - E-SMI-8000E-JF2
+    - E-SMI-8000E-JF3
+    - E-SMI-8000E-JF4
   - name: 8000e Noetherian rings
     problems:
     - E-SMI-8000E-NR1
@@ -99,12 +101,31 @@ source:
     - E-SMI-8000E-GG4
     - E-SMI-8000E-GG5
     - E-SMI-8000E-GG6
+  - name: 8000 Fall 2006 midterm
+    problems:
+    - E-SMI-8000E-MT1
+    - E-SMI-8000E-MT2
+    - E-SMI-8000E-MT3
+    - E-SMI-8000E-MT4
+    - E-SMI-8000E-MT5
+    - E-SMI-8000E-MT6
+  - name: 8000 Fall 2006 final
+    problems:
+    - E-SMI-8000E-FEA
+    - E-SMI-8000E-FEB
+    - E-SMI-8000E-FEC
+    - E-SMI-8000E-FED
+    - E-SMI-8000E-FEE
+    - E-SMI-8000E-FEF
+    - E-SMI-8000E-FEG
+    - E-SMI-8000E-FEH
+    - E-SMI-8000E-FEI
 ---
 
 ::: remark
-Roy Smith, *Algebra Course Notes* (843-1 through 845-3). Course notes with no publication year, so the date is recorded as unknown. Cited in the authored wiki as `[@Smi]`. Provenance href is the Fall 2006 Math 8000 homework/tests packet `8000e.pdf` (12 pages).
+Course notes with no publication year, so the date is recorded as unknown. Provenance is the Fall 2006 Math 8000 homework/tests packet `8000e.pdf` (12 pages).
 
-Listed: abelian groups (all), Euclidean domains (all), finitely generated modules (all), Noetherian rings (all), normality and localization (all), Sylow (all), cycles and commutators (all), and the concrete Galois problems. Jordan forms lists exercises 1 and 2 (parts i, ii); exercises 2(iii), 3, and 4 await readable matrix data. The Galois block's ten prelim pointers (specific UGA prelim problems from 1997–2006) are not yet represented. The packet also contains a Fall 2006 midterm and final exam, not represented here.
+Listed: abelian groups, Euclidean domains, finitely generated modules, Jordan forms, Noetherian rings, normality and localization, Sylow, cycles and commutators, the concrete Galois problems, and the Fall 2006 midterm and final exams.
 
-Also remaining: the separate 843–845 course notes cited on the syllabus (not this PDF). Problem cards about Smith normal form are a different Smith.
+Remaining: the separate 843–845 course notes cited on the syllabus (a different document from this PDF).
 :::

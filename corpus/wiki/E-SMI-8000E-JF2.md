@@ -23,4 +23,13 @@ M_t = \ts{v \in M : \text{for some } r > 0, \ (T - t)^r v = 0}
 $$
 
 is the primary subspace of $M$ corresponding to the root $t$, prove that $\dim(M_t) = m_t$.
+
+(iii) Use determinants to compute $\mathrm{ch}(t)$ for these matrices:
+
+$$
+A = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}, \quad
+B = \begin{bmatrix} 3 & 1 & 0 \\ 0 & 2 & 1 \\ 0 & 1 & 2 \end{bmatrix}, \quad
+C = \begin{bmatrix} 1 & -1 & 4 \\ 3 & 2 & -1 \\ 2 & 1 & -1 \end{bmatrix}, \quad
+D = \begin{bmatrix} 1 & -2 & -1 & 0 \\ 1 & 0 & -3 & 0 \\ -1 & -2 & 1 & 0 \\ 1 & 2 & 1 & 2 \end{bmatrix}.
+$$
 :::
