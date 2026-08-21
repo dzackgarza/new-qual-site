@@ -342,6 +342,37 @@ source:
     - E-7NRBE
     - E-F68KP
     - E-LS2QW
+  - name: '39'
+    problems:
+    - E-BNX60
+    - E-PDDBF
+    - E-9IGGV
+    - E-6O8B6
+    - E-A38F6
+    - E-L77XX
+  - name: '40'
+    problems:
+    - E-HE912
+    - E-IY4BS
+    - E-Y5K11
+    - E-G27Q3
+    - E-18P82
+  - name: '41'
+    problems:
+    - E-LRJKU
+    - E-94C75
+    - E-R1V61
+    - E-76OHA
+    - E-MTDPP
+    - E-KVFCT
+    - E-S4J3T
+    - E-QNT4A
+    - E-QIADW
+    - E-GZX7B
+  - name: '42'
+    problems:
+    - E-LZX97
+    - E-I61EM
 ---
 
 ::: remark
