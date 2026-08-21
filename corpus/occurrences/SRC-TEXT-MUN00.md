@@ -262,6 +262,31 @@ source:
     - E-Y4MFU
     - E-WVNJ2
     - E-X4TVL
+  - name: '32'
+    problems:
+    - E-DUQHF
+    - E-L4UAO
+    - E-L4NKO
+    - E-NEFI2
+    - E-GP176
+    - E-TZ1IN
+    - E-RIGIX
+    - E-LEJYZ
+    - E-BAZND
+    - E-QBVO3
+  - name: '33'
+    problems:
+    - E-7GVUH
+    - E-YT6Q8
+    - E-24TY3
+    - E-0MY4M
+    - E-G5JJ7
+    - E-1P97G
+    - E-TBLM7
+    - E-QJLUO
+    - E-EDUVQ
+    - E-F46JG
+    - E-OHHSA
 ---
 
 ::: remark
