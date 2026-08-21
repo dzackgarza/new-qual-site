@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §22 Supplementary"}
 
-
-Let $H$ be a subspace of the topological group $G$. Show that if $H$ is also a subgroup of $G$, then both $H$ and $\overline{H}$ are topological groups.
+Let $H$ be a subspace of the topological group $G$.
+Show that if $H$ is also a subgroup of $G$, then both $H$ and $\overline{H}$ are topological groups.
 :::

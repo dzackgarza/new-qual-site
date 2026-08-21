@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that a simplicial map $f: K \to L$ is a homotopy equivalence if $f^{-1}(x)$ is contractible for all $x \in L$.
-

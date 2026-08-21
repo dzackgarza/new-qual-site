@@ -14,4 +14,3 @@ solved: false
 ---
 
 Construct a CW complex $X$ with prescribed homotopy groups $\pi_i(X)$ and prescribed actions of $\pi_1(X)$ on the $\pi_i(X)$'s.
-

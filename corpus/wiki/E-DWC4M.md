@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §31.5"}
 
-
-Let $f, g: X \to Y$ be continuous; assume that $Y$ is Hausdorff. Show that $\ts{x \mid f(x) = g(x)}$ is closed in $X$.
+Let $f, g: X \to Y$ be continuous; assume that $Y$ is Hausdorff.
+Show that $\ts{x \mid f(x) = g(x)}$ is closed in $X$.
 :::

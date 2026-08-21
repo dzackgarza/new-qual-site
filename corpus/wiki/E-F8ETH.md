@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §74.4"}
 
-
-(a) Show that the Klein bottle is homeomorphic to $P^2 \# P^2$. [Hint: Split the square in Figure 74.11 along a diagonal, flip one of the resulting triangular pieces over, and paste the two pieces together along the edge labelled $b$.]
+(a) Show that the Klein bottle is homeomorphic to $P^2 \# P^2$.
+[Hint: Split the square in Figure 74.11 along a diagonal, flip one of the resulting triangular pieces over, and paste the two pieces together along the edge labelled $b$.]
 
 (b) Show how to picture the 4-fold projective plane as an immersed surface in $\mathbb{R}^3$.
 :::

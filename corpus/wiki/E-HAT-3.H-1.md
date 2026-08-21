@@ -14,4 +14,3 @@ solved: false
 ---
 
 Compute $H_*(S^1; E)$ and $H^*(S^1; E)$ for $E \to S^1$ the nontrivial bundle with fiber $\mathbb{Z}$.
-

@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §53.1"}
 
-
-Let $Y$ have the discrete topology. Show that if $p: X \times Y \to X$ is projection on the first coordinate, then $p$ is a covering map.
+Let $Y$ have the discrete topology.
+Show that if $p: X \times Y \to X$ is projection on the first coordinate, then $p$ is a covering map.
 :::

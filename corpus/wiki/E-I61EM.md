@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §42.2"}
 
-
 (a) Show that for each $x \in S_\Omega$, the section of $S_\Omega$ by $x$ has a countable basis and hence is metrizable.
 
 (b) Conclude that $S_\Omega$ is not paracompact.

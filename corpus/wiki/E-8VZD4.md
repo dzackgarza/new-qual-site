@@ -15,8 +15,9 @@ solved: false
 
 ::: {.exercise title="Munkres §30.1"}
 
+(a) A $G_\delta$ set in a space $X$ is a set $A$ that equals a countable intersection of open sets of $X$.
+Show that in a first-countable $T_1$ space, every one-point set is a $G_\delta$ set.
 
-(a) A $G_\delta$ set in a space $X$ is a set $A$ that equals a countable intersection of open sets of $X$. Show that in a first-countable $T_1$ space, every one-point set is a $G_\delta$ set.
-
-(b) There is a familiar space in which every one-point set is a $G_\delta$ set, which nevertheless does not satisfy the first countability axiom. What is it?
+(b) There is a familiar space in which every one-point set is a $G_\delta$ set, which nevertheless does not satisfy the first countability axiom.
+What is it?
 :::

@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Show that a direct limit $\varinjlim G_\alpha$ of torsionfree abelian groups $G_\alpha$ is torsionfree. More generally, show that any finitely generated subgroup of $\varinjlim G_\alpha$ is realized as a subgroup of some $G_\alpha$.
-
+Show that a direct limit $\varinjlim G_\alpha$ of torsionfree abelian groups $G_\alpha$ is torsionfree.
+More generally, show that any finitely generated subgroup of $\varinjlim G_\alpha$ is realized as a subgroup of some $G_\alpha$.

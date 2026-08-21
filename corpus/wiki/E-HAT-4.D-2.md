@@ -14,4 +14,3 @@ solved: false
 ---
 
 Apply the Leray–Hirsch theorem to the bundle $S^1 \to S^\infty/\mathbb{Z}_p \to \mathbb{CP}^\infty$ to compute $H^*(K(\mathbb{Z}_p, 1); \mathbb{Z}_p)$ from $H^*(\mathbb{CP}^\infty; \mathbb{Z}_p)$.
-

@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §77.3"}
 
-
-The proof of the classification theorem provides an algorithm for taking a proper labelling scheme for a polygonal region and reducing it to one of the four standard forms indicated in the theorem. The appropriate equivalences are the following:
+The proof of the classification theorem provides an algorithm for taking a proper labelling scheme for a polygonal region and reducing it to one of the four standard forms indicated in the theorem.
+The appropriate equivalences are the following:
 
 (i) $[y_0]a[y_1]a[y_2] \sim aa[y_0 y_1^{-1} y_2]$.
 

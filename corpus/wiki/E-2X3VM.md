@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §24.8"}
 
-
 (a) Is a product of path-connected spaces necessarily path connected?
 
 (b) If $A \subset X$ and $A$ is path connected, is $\overline{A}$ necessarily path connected?

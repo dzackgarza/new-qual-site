@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §29.6"}
 
-
 Show that the one-point compactification of $\mathbb{R}$ is homeomorphic with the circle $S^1$.
 :::

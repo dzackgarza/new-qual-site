@@ -762,5 +762,6 @@ source:
 ---
 
 ::: remark
-`sections:` lists the book's exercises in book order. Theorem and definition cards are not included in this exercise list.
+`sections:` lists the book's exercises in book order.
+Theorem and definition cards are not included in this exercise list.
 :::

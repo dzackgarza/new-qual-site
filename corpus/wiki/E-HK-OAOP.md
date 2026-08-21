@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: {.exercise title="Hoffman and Kunze 1.6.6"}
-Suppose $A$ is a $2 \times 1$ matrix and that $B$ is a $1 \times 2$ matrix. Prove that $C = AB$ is not invertible.
+Suppose $A$ is a $2 \times 1$ matrix and that $B$ is a $1 \times 2$ matrix.
+Prove that $C = AB$ is not invertible.
 :::

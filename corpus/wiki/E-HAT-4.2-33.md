@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that if there were fiber bundles $S^{n-1} \to S^{2n-1} \to S^n$ for all $n$, then the groups $\pi_i(S^n)$ would be finitely generated free abelian groups computable by induction, and nonzero for $i \geq n \geq 2$.
-

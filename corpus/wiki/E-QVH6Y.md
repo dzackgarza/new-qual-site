@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §38.3"}
 
-
 Under what conditions does a metrizable space have a metrizable compactification?
 :::

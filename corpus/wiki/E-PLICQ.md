@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §52.3"}
 
-
-Let $x_0$ and $x_1$ be points of the path-connected space $X$. Show that $\pi_1(X, x_0)$ is abelian if and only if for every pair $\alpha$ and $\beta$ of paths from $x_0$ to $x_1$, we have $\hat{\alpha} = \hat{\beta}$.
+Let $x_0$ and $x_1$ be points of the path-connected space $X$.
+Show that $\pi_1(X, x_0)$ is abelian if and only if for every pair $\alpha$ and $\beta$ of paths from $x_0$ to $x_1$, we have $\hat{\alpha} = \hat{\beta}$.
 :::

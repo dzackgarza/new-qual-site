@@ -16,18 +16,23 @@ solved: false
 
 ::: {.exercise title="Munkres §32.9"}
 
-
 Prove the following.
 
-Theorem. If $J$ is uncountable, then $\mathbb{R}^J$ is not normal.
+Theorem.
+If $J$ is uncountable, then $\mathbb{R}^J$ is not normal.
 
-Proof. (This proof is due to A. H. Stone, as adapted in [S-S].) Let $X = (\mathbb{Z}_+)^J$; it will suffice to show that $X$ is not normal, since $X$ is a closed subspace of $\mathbb{R}^J$. We use functional notation for the elements of $X$, so that the typical element of $X$ is a function $\mathbf{x}: J \to \mathbb{Z}_+$.
+Proof.
+(This proof is due to A. H. Stone, as adapted in [S-S].) Let $X = (\mathbb{Z}_+)^J$; it will suffice to show that $X$ is not normal, since $X$ is a closed subspace of $\mathbb{R}^J$.
+We use functional notation for the elements of $X$, so that the typical element of $X$ is a function $\mathbf{x}: J \to \mathbb{Z}_+$.
 
-(a) If $\mathbf{x} \in X$ and if $B$ is a finite subset of $J$, let $U(\mathbf{x}, B)$ denote the set consisting of all those elements $\mathbf{y}$ of $X$ such that $\mathbf{y}(\alpha) = \mathbf{x}(\alpha)$ for $\alpha \in B$. Show the sets $U(\mathbf{x}, B)$ are a basis for $X$.
+(a) If $\mathbf{x} \in X$ and if $B$ is a finite subset of $J$, let $U(\mathbf{x}, B)$ denote the set consisting of all those elements $\mathbf{y}$ of $X$ such that $\mathbf{y}(\alpha) = \mathbf{x}(\alpha)$ for $\alpha \in B$.
+Show the sets $U(\mathbf{x}, B)$ are a basis for $X$.
 
-(b) Define $P_n$ to be the subset of $X$ consisting of those $\mathbf{x}$ such that on the set $J - \mathbf{x}^{-1}(n)$, the map $\mathbf{x}$ is injective. Show that $P_1$ and $P_2$ are closed and disjoint.
+(b) Define $P_n$ to be the subset of $X$ consisting of those $\mathbf{x}$ such that on the set $J - \mathbf{x}^{-1}(n)$, the map $\mathbf{x}$ is injective.
+Show that $P_1$ and $P_2$ are closed and disjoint.
 
-(c) Suppose $U$ and $V$ are open sets containing $P_1$ and $P_2$, respectively. Given a sequence $\alpha_1, \alpha_2, \ldots$ of distinct elements of $J$, and a sequence
+(c) Suppose $U$ and $V$ are open sets containing $P_1$ and $P_2$, respectively.
+Given a sequence $\alpha_1, \alpha_2, \ldots$ of distinct elements of $J$, and a sequence
 
 $$
 0 = n_0 < n_1 < n_2 < \dots
@@ -66,7 +71,9 @@ $$
 \mathbf{y}(\alpha) = 2 \quad \text{for all other values of } \alpha.
 $$
 
-Choose $B$ so that $U(\mathbf{y}, B) \subset V$. Then choose $i$ so that $B \cap A$ is contained in the set $B_i$. Show that
+Choose $B$ so that $U(\mathbf{y}, B) \subset V$.
+Then choose $i$ so that $B \cap A$ is contained in the set $B_i$.
+Show that
 
 $$
 U(\mathbf{x}_{i+1}, B_{i+1}) \cap U(\mathbf{y}, B)

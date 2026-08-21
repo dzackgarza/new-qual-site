@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §13.7"}
 
-
 Consider the following topologies on $\mathbb{R}$:
 
 $\mathcal{T}_1$ = the standard topology,

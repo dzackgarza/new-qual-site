@@ -26,5 +26,6 @@ Show that for $X$ metrizable, the following are equivalent:
 :::
 
 ::: {.remark}
-The original exercise read "Show that if $X$ is metrizable, then $X$ is compact", which is false ($\RR$ is metrizable and not compact). The equivalence above repairs it; the neighbouring exercises suggest the intended statement.
+The original exercise read "Show that if $X$ is metrizable, then $X$ is compact", which is false ($\RR$ is metrizable and not compact).
+The equivalence above repairs it; the neighbouring exercises suggest the intended statement.
 :::

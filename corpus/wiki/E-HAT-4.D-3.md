@@ -14,4 +14,3 @@ solved: false
 ---
 
 Use the Leray–Hirsch theorem as in Corollary 4D.3 to compute $H^*(V_n(\mathbb{C}^k); \mathbb{Z}) \approx \Lambda_\mathbb{Z}[x_{2k-2n+1}, x_{2k-2n+3}, \ldots, x_{2k-1}]$ and similarly in the quaternionic case.
-

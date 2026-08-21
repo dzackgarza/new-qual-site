@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §1.5"}
 
-
-Let $\mathcal{A}$ be a nonempty collection of sets. Determine the truth of each of the following statements and of their converses:
+Let $\mathcal{A}$ be a nonempty collection of sets.
+Determine the truth of each of the following statements and of their converses:
 
 (a) $x \in \bigcup_{A \in \mathcal{A}} A \Rightarrow x \in A$ for at least one $A \in \mathcal{A}$ .
 

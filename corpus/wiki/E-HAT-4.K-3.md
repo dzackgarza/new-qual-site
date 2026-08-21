@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that $SP_n(I) = \Delta^n$.
-

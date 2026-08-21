@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §2.4"}
 
-
 Let $f: A \to B$ and $g: B \to C$ .
 
 (a) If $C_0 \subset C$, show that $(g \circ f)^{-1}(C_0) = f^{-1}(g^{-1}(C_0))$ .

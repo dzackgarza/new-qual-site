@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §2.1"}
 
-
 Let $f: A \to B$ . Let $A_0 \subset A$ and $B_0 \subset B$ .
 
 (a) Show that $A_0 \subset f^{-1}(f(A_0))$ and that equality holds if $f$ is injective.

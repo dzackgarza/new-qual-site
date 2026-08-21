@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §5.1"}
 
-
 Show there is a bijective correspondence of $A \times B$ with $B \times A$ .
 :::

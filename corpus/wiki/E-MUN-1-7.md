@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §1.7"}
 
-
 Given sets $A, B$, and $C$, express each of the following sets in terms of $A, B$, and $C$, using the symbols $\cup, \cap,$ and $-$ .
 
 $$

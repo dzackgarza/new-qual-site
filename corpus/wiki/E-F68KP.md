@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §38.9"}
 
-
 (a) If $X$ is normal and $y$ is a point of $\beta(X) - X$, show that $y$ is not the limit of a sequence of points of $X$.
 
 (b) Show that if $X$ is completely regular and noncompact, then $\beta(X)$ is not metrizable.

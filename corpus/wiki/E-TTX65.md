@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §31.2"}
 
-
 Show that if $X$ is normal, every pair of disjoint closed sets have neighborhoods whose closures are disjoint.
 :::

@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that if a path-connected, locally path-connected space $X$ has $\pi_1(X)$ finite, then every map $X \to S^1$ is nullhomotopic.
-

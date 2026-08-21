@@ -15,12 +15,15 @@ solved: false
 
 ::: {.exercise title="Munkres §9.6"}
 
-
-Most of the famous paradoxes of naive set theory are associated in some way or other with the concept of the "set of all sets." None of the rules we have given for forming sets allows us to consider such a set. And for good reason—the concept itself is self-contradictory. For suppose that $\mathcal{A}$ denotes the "set of all sets."
+Most of the famous paradoxes of naive set theory are associated in some way or other with the concept of the "set of all sets."
+None of the rules we have given for forming sets allows us to consider such a set.
+And for good reason—the concept itself is self-contradictory.
+For suppose that $\mathcal{A}$ denotes the "set of all sets."
 
 (a) Show that $\mathcal{P}(\mathcal{A})\subset \mathcal{A}$ ; derive a contradiction.
 
-(b) (Russell's paradox.) Let $\mathcal{B}$ be the subset of $\mathcal{A}$ consisting of all sets that are not elements of themselves;
+(b) (Russell's paradox.)
+Let $\mathcal{B}$ be the subset of $\mathcal{A}$ consisting of all sets that are not elements of themselves;
 
 $$
 \mathcal {B} = \{A \mid A \in \mathcal {A} \text { and } A \notin A \}.

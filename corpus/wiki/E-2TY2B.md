@@ -15,20 +15,23 @@ solved: false
 
 ::: {.exercise title="Munkres §43.9"}
 
-
-Let $(X, d)$ be a metric space. Show that there is an isometric imbedding $h$ of $X$ into a complete metric space $(Y, D)$, as follows. Let $\tilde{X}$ denote the set of all Cauchy sequences
+Let $(X, d)$ be a metric space.
+Show that there is an isometric imbedding $h$ of $X$ into a complete metric space $(Y, D)$, as follows.
+Let $\tilde{X}$ denote the set of all Cauchy sequences
 
 $$
 \mathbf{x} = (x_1, x_2, \dots)
 $$
 
-of points of $X$. Define $\mathbf{x} \sim \mathbf{y}$ if
+of points of $X$.
+Define $\mathbf{x} \sim \mathbf{y}$ if
 
 $$
 d(x_n, y_n) \to 0.
 $$
 
-Let $[\mathbf{x}]$ denote the equivalence class of $\mathbf{x}$; and let $Y$ denote the set of these equivalence classes. Define a metric $D$ on $Y$ by the equation
+Let $[\mathbf{x}]$ denote the equivalence class of $\mathbf{x}$; and let $Y$ denote the set of these equivalence classes.
+Define a metric $D$ on $Y$ by the equation
 
 $$
 D([\mathbf{x}], [\mathbf{y}]) = \lim_{n \to \infty} d(x_n, y_n).

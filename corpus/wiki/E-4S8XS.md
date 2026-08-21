@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §29 Supplementary"}
 
-
 Show that if $X$ is Hausdorff, a net in $X$ converges to at most one point.
 :::

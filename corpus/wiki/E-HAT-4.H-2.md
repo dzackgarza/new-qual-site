@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Consider a pushout diagram where $B$ is $B$ with $X$ attached along $A$ via $f$. Show that if $A \hookrightarrow X$ is a cofibration, so is $B \hookrightarrow B \sqcup_f X$.
-
+Consider a pushout diagram where $B$ is $B$ with $X$ attached along $A$ via $f$.
+Show that if $A \hookrightarrow X$ is a cofibration, so is $B \hookrightarrow B \sqcup_f X$.

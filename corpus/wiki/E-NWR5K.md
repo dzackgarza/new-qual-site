@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §30.12"}
 
-
-Let $f: X \to Y$ be a continuous open map. Show that if $X$ satisfies the first or the second countability axiom, then $f(X)$ satisfies the same axiom.
+Let $f: X \to Y$ be a continuous open map.
+Show that if $X$ satisfies the first or the second countability axiom, then $f(X)$ satisfies the same axiom.
 :::

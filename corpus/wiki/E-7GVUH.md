@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §33.1"}
 
-
 Examine the proof of the Urysohn lemma, and show that for given $r$,
 
 $$

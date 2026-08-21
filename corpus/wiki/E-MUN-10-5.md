@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §10.5"}
 
-
 Show the well-ordering theorem implies the choice axiom.
 :::

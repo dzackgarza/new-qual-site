@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §10.1"}
 
-
 Show that every well-ordered set has the least upper bound property.
 :::

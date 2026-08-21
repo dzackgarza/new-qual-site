@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §45.6"}
 
-
 Show that our proof of Ascoli's theorem goes through if $\mathbb{R}^n$ is replaced by any metric space in which all closed bounded subspaces are compact.
 :::

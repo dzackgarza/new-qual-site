@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §30.7"}
 
-
-Which of our four countability axioms does $S_\Omega$ satisfy? What about $\overline{S}_\Omega$?
+Which of our four countability axioms does $S_\Omega$ satisfy?
+What about $\overline{S}_\Omega$?
 :::

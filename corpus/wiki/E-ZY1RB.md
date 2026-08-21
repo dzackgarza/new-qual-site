@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §24.4"}
 
-
-Let $X$ be an ordered set in the order topology. Show that if $X$ is connected, then $X$ is a linear continuum.
+Let $X$ be an ordered set in the order topology.
+Show that if $X$ is connected, then $X$ is a linear continuum.
 :::

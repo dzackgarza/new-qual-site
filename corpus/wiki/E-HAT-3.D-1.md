@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Show that a topological group with a finite-dimensional CW structure is an orientable manifold. [Consider the homeomorphisms $x \mapsto gx$ or $x \mapsto xg$ for fixed $g$ and varying $x$ in the group.]
-
+Show that a topological group with a finite-dimensional CW structure is an orientable manifold.
+[Consider the homeomorphisms $x \mapsto gx$ or $x \mapsto xg$ for fixed $g$ and varying $x$ in the group.]

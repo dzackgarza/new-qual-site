@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that $H_{n+1}(K(G, n); \mathbb{Z}) = 0$ if $n > 1$.
-

@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §71.5"}
 
-
-Let $S_n$ be the circle of radius $n$ in $\mathbb{R}^2$ whose center is at the point $(n, 0)$. Let $Y$ be the subspace of $\mathbb{R}^2$ that is the union of these circles; let $p$ be their common point.
+Let $S_n$ be the circle of radius $n$ in $\mathbb{R}^2$ whose center is at the point $(n, 0)$.
+Let $Y$ be the subspace of $\mathbb{R}^2$ that is the union of these circles; let $p$ be their common point.
 
 (a) Show that $Y$ is not homeomorphic to a countably infinite wedge $X$ of circles, nor to the space of Example 1.
 

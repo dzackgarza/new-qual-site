@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Show there is a Moore space $M(G, 1)$ with $\pi_1\bigl(M(G, 1)\bigr) \approx G$ iff $H_2(K(G, 1); \mathbb{Z}) = 0$. In particular, there is no $M(\mathbb{Z}^n, 1)$ with fundamental group $\mathbb{Z}^n$, free abelian of rank $n$, if $n \geq 2$.
-
+Show there is a Moore space $M(G, 1)$ with $\pi_1\bigl(M(G, 1)\bigr) \approx G$ iff $H_2(K(G, 1); \mathbb{Z}) = 0$.
+In particular, there is no $M(\mathbb{Z}^n, 1)$ with fundamental group $\mathbb{Z}^n$, free abelian of rank $n$, if $n \geq 2$.

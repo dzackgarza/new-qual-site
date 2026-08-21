@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §17.10"}
 
-
 Show that every order topology is Hausdorff.
 :::

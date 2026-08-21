@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §9.2"}
 
-
 Find if possible a choice function for each of the following collections, without using the choice axiom:
 
 (a) The collection $\mathcal{A}$ of nonempty subsets of $\mathbb{Z}_{+}$ .

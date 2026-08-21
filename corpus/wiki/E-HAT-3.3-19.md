@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Show that a direct limit of countable abelian groups over a countable indexing set is countable. Apply this to show that if $X$ is an open set in $\mathbb{R}^n$ then $H_i(X; \mathbb{Z})$ is countable for all $i$.
-
+Show that a direct limit of countable abelian groups over a countable indexing set is countable.
+Apply this to show that if $X$ is an open set in $\mathbb{R}^n$ then $H_i(X; \mathbb{Z})$ is countable for all $i$.

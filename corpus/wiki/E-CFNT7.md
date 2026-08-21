@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §48.1"}
 
-
-Let $X$ equal the countable union $\bigcup B_n$. Show that if $X$ is a nonempty Baire space, at least one of the sets $\overline{B}_n$ has a nonempty interior.
+Let $X$ equal the countable union $\bigcup B_n$.
+Show that if $X$ is a nonempty Baire space, at least one of the sets $\overline{B}_n$ has a nonempty interior.
 :::

@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §32.7"}
 
-
-Which of the following spaces are completely normal? Justify your answers.
+Which of the following spaces are completely normal?
+Justify your answers.
 
 (a) A subspace of a completely normal space.
 

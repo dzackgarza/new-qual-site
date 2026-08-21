@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §50 Supplementary"}
 
-
 Consider the following conditions on a locally $m$-euclidean space $X$:
 
 (i) $X$ is compact Hausdorff.

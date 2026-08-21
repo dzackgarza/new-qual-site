@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §32.4"}
 
-
 Show that every regular Lindelöf space is normal.
 :::

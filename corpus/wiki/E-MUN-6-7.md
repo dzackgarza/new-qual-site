@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §6.7"}
 
-
 If $A$ and $B$ are finite, show that the set of all functions $f: A \to B$ is finite.
 :::

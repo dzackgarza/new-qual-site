@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §41.1"}
 
-
 Give an example to show that if $X$ is paracompact, it does not follow that for every open covering $\mathcal{A}$ of $X$, there is a locally finite subcollection of $\mathcal{A}$ that covers $X$.
 :::

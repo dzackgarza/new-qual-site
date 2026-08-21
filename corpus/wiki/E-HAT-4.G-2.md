@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that if $X$ is a complex of spaces in which all the maps are homeomorphisms, then the projection $\Delta X \to \Gamma$ is a fiber bundle.
-

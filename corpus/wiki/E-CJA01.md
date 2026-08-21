@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §28.2"}
 
-
 Show that $[0, 1]$ is not limit point compact as a subspace of $\mathbb{R}_\ell$.
 :::

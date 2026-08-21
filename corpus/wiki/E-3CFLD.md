@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §67.5"}
 
-
 Give an example of a free abelian group $G$ of rank $n$ having a subgroup $H$ of rank $n$ for which $H \neq G$.
 :::

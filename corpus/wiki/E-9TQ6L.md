@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §30.3"}
 
-
-Let $X$ have a countable basis; let $A$ be an uncountable subset of $X$. Show that uncountably many points of $A$ are limit points of $A$.
+Let $X$ have a countable basis; let $A$ be an uncountable subset of $X$.
+Show that uncountably many points of $A$ are limit points of $A$.
 :::

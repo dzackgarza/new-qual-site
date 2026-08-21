@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §19.5"}
 
-
-One of the implications stated in Theorem 19.6 holds for the box topology. Which one?
+One of the implications stated in Theorem 19.6 holds for the box topology.
+Which one?
 :::

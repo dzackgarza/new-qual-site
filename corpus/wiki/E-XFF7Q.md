@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §20.6"}
 
-
-Let $\bar{\rho}$ be the uniform metric on $\mathbb{R}^\omega$. Given $\mathbf{x} = (x_1, x_2, \ldots) \in \mathbb{R}^\omega$ and given $0 < \epsilon < 1$, let
+Let $\bar{\rho}$ be the uniform metric on $\mathbb{R}^\omega$.
+Given $\mathbf{x} = (x_1, x_2, \ldots) \in \mathbb{R}^\omega$ and given $0 < \epsilon < 1$, let
 
 $$
 U(\mathbf{x}, \epsilon) = (x_1 - \epsilon, x_1 + \epsilon) \times \dots \times (x_n - \epsilon, x_n + \epsilon) \times \dots.

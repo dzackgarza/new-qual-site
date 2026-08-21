@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §77.2"}
 
-
 (a) Write down the sequence of elementary operations required to carry out the arguments indicated in Figures 77.1 and 77.2.
 
 (b) Write down the sequence of elementary operations required to carry out the arguments indicated in Figures 77.3, 77.4, and 77.5.

@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §29.5"}
 
-
 If $f: X_1 \to X_2$ is a homeomorphism of locally compact Hausdorff spaces, show $f$ extends to a homeomorphism of their one-point compactifications.
 :::

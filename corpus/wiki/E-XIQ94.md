@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §54.2"}
 
-
 In defining the map $\overline{F}$ in the proof of Lemma 54.2, why were we so careful about the order in which we considered the small rectangles?
 :::

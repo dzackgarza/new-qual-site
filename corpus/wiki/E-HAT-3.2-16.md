@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ and $Y$ are finite CW complexes such that $H^*(X; \mathbb{Z})$ and $H^*(Y; \mathbb{Z})$ contain no elements of order a power of a given prime $p$, then the same is true for $X \times Y$. [Apply Theorem 3.15 with coefficients in various fields.]
-
+Show that if $X$ and $Y$ are finite CW complexes such that $H^*(X; \mathbb{Z})$ and $H^*(Y; \mathbb{Z})$ contain no elements of order a power of a given prime $p$, then the same is true for $X \times Y$.
+[Apply Theorem 3.15 with coefficients in various fields.]

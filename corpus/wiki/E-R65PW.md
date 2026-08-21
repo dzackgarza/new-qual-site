@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §26.3"}
 
-
 Show that a finite union of compact subspaces of $X$ is compact.
 :::

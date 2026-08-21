@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §1.6"}
 
-
 Write the contrapositive of each of the statements of Exercise 5.
 :::

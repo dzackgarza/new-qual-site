@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §38.7"}
 
-
 Let $X$ be a discrete space; consider the space $\beta(X)$.
 
 (a) Show that if $A \subset X$, then $\overline{A}$ and $\overline{X - A}$ are disjoint, where the closures are taken in $\beta(X)$.

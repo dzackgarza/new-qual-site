@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §82.1"}
 
-
 Show that a simply connected space is semilocally simply connected.
 :::

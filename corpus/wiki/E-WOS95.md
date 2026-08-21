@@ -15,8 +15,10 @@ solved: false
 
 ::: {.exercise title="Munkres §52.6"}
 
-
-Show that if $X$ is path connected, the homomorphism induced by a continuous map is independent of base point, up to isomorphisms of the groups involved. More precisely, let $h: X \to Y$ be continuous, with $h(x_0) = y_0$ and $h(x_1) = y_1$. Let $\alpha$ be a path in $X$ from $x_0$ to $x_1$, and let $\beta = h \circ \alpha$. Show that
+Show that if $X$ is path connected, the homomorphism induced by a continuous map is independent of base point, up to isomorphisms of the groups involved.
+More precisely, let $h: X \to Y$ be continuous, with $h(x_0) = y_0$ and $h(x_1) = y_1$.
+Let $\alpha$ be a path in $X$ from $x_0$ to $x_1$, and let $\beta = h \circ \alpha$.
+Show that
 
 $$
 \hat{\beta} \circ (h_{x_0})_* = (h_{x_1})_* \circ \hat{\alpha}.

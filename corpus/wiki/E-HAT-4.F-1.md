@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Assuming the first two axioms for a homology theory on the CW category, show that the direct limit axiom implies the wedge sum axiom. Show that the converse also holds for countable CW complexes.
-
+Assuming the first two axioms for a homology theory on the CW category, show that the direct limit axiom implies the wedge sum axiom.
+Show that the converse also holds for countable CW complexes.

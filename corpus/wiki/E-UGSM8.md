@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §47.3"}
 
-
 Show that the general version of Ascoli's theorem implies the classical version (Theorem 45.4) when $X$ is Hausdorff.
 :::

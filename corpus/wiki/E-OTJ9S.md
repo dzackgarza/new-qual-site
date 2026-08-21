@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §18.4"}
 
-
 Given $x_0 \in X$ and $y_0 \in Y$, show that the maps $f: X \to X \times Y$ and $g: Y \to X \times Y$ defined by
 
 $$

@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §62.2"}
 
-
-Let $A$ be a compact contractible subspace of $S^2$. Show that $A$ does not separate $S^2$.
+Let $A$ be a compact contractible subspace of $S^2$.
+Show that $A$ does not separate $S^2$.
 :::

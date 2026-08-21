@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show there is no fiber bundle $S^7 \to S^{23} \to \mathbb{OP}^2$.
-

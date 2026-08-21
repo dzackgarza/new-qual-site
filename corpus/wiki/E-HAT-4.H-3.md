@@ -14,4 +14,3 @@ solved: false
 ---
 
 For fibrations $E_1 \to B$ and $E_2 \to B$, show that a fiber-preserving map $E_1 \to E_2$ that is a homotopy equivalence is in fact a fiber homotopy equivalence.
-

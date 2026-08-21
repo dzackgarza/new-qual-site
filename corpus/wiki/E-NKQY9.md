@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §13.8"}
 
-
 (a) Apply Lemma 13.2 to show that the countable collection
 
 $$

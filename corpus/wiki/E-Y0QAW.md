@@ -16,6 +16,7 @@ solved: false
 
 ::: {.exercise title="Munkres §25.8"}
 
-
-Let $p: X \to Y$ be a quotient map. Show that if $X$ is locally connected, then $Y$ is locally connected. [Hint: If $C$ is a component of the open set $U$ of $Y$, show that $p^{-1}(C)$ is a union of components of $p^{-1}(U)$.]
+Let $p: X \to Y$ be a quotient map.
+Show that if $X$ is locally connected, then $Y$ is locally connected.
+[Hint: If $C$ is a component of the open set $U$ of $Y$, show that $p^{-1}(C)$ is a union of components of $p^{-1}(U)$.]
 :::

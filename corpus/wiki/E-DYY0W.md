@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §29.9"}
 
-
 Show that if $G$ is a locally compact topological group and $H$ is a subgroup, then $G/H$ is locally compact.
 :::

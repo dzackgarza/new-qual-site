@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §55.3"}
 
-
 Show that if $A$ is a nonsingular 3 by 3 matrix having nonnegative entries, then $A$ has a positive real eigenvalue.
 :::

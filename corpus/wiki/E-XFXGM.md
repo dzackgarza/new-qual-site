@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §21.3"}
 
-
 Let $X_n$ be a metric space with metric $d_n$, for $n \in \mathbb{Z}_+$.
 
 (a) Show that
@@ -27,7 +26,8 @@ $$
 
 is a metric for the product space $X_1 \times \cdots \times X_n$.
 
-(b) Let $\bar{d}_i = \min\ts{d_i, 1}$. Show that
+(b) Let $\bar{d}_i = \min\ts{d_i, 1}$.
+Show that
 
 $$
 D(x, y) = \sup\ts{\bar{d}_i(x_i, y_i)/i}

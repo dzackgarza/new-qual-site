@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §26.4"}
 
-
-Show that every compact subspace of a metric space is bounded in that metric and is closed. Find a metric space in which not every closed bounded subspace is compact.
+Show that every compact subspace of a metric space is bounded in that metric and is closed.
+Find a metric space in which not every closed bounded subspace is compact.
 :::

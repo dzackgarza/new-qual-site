@@ -15,8 +15,9 @@ solved: false
 
 ::: {.exercise title="Munkres §36.4"}
 
-
 An indexed family $\ts{A_\alpha}$ of subsets of $X$ is said to be a point-finite indexed family if each $x \in X$ belongs to $A_\alpha$ for only finitely many values of $\alpha$.
 
-Lemma (The shrinking lemma). Let $X$ be a normal space; let $\ts{U_1, U_2, \ldots}$ be a point-finite indexed open covering of $X$. Then there exists an indexed open covering $\ts{V_1, V_2, \ldots}$ of $X$ such that $\overline{V}_n \subset U_n$ for each $n$.
+Lemma (The shrinking lemma).
+Let $X$ be a normal space; let $\ts{U_1, U_2, \ldots}$ be a point-finite indexed open covering of $X$.
+Then there exists an indexed open covering $\ts{V_1, V_2, \ldots}$ of $X$ such that $\overline{V}_n \subset U_n$ for each $n$.
 :::

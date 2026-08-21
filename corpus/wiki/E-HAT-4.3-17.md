@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that $X$ is an H-space with multiplication the composition of loops.
-

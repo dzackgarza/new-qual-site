@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §17.3"}
 
-
 Show that if $A$ is closed in $X$ and $B$ is closed in $Y$, then $A \times B$ is closed in $X \times Y$.
 :::

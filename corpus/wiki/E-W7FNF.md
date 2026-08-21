@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §30.6"}
 
-
 Show that $\mathbb{R}_\ell$ and $I_0^2$ are not metrizable.
 :::

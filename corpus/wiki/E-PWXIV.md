@@ -15,12 +15,12 @@ solved: false
 
 ::: {.exercise title="Munkres §36 Supplementary"}
 
-
 Consider the following properties a space may satisfy:
 
 (1) connected, (2) path connected, (3) locally connected, (4) locally path connected, (5) compact, (6) limit point compact, (7) locally compact Hausdorff, (8) Hausdorff, (9) regular, (10) completely regular, (11) normal, (12) first-countable, (13) second-countable, (14) Lindelöf, (15) has a countable dense subset, (16) locally metrizable, (17) metrizable.
 
-For each of the following spaces, determine (if you can) which of these properties it satisfies. (Assume the Tychonoff theorem if you need it.)
+For each of the following spaces, determine (if you can) which of these properties it satisfies.
+(Assume the Tychonoff theorem if you need it.)
 
 (a) $S_\Omega$
 

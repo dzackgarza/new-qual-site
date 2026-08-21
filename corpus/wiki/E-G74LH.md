@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §25.4"}
 
-
-Let $X$ be locally path connected. Show that every connected open set in $X$ is path connected.
+Let $X$ be locally path connected.
+Show that every connected open set in $X$ is path connected.
 :::

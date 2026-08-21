@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Show that for a covering space action of a group $G$ on a simply-connected space $Y$, $\pi_1(Y/G)$ is isomorphic to $G$. [If $Y$ is locally path-connected, this is a special case of part (c) of Proposition 1.40.]
-
+Show that for a covering space action of a group $G$ on a simply-connected space $Y$, $\pi_1(Y/G)$ is isomorphic to $G$.
+[If $Y$ is locally path-connected, this is a special case of part (c) of Proposition 1.40.]

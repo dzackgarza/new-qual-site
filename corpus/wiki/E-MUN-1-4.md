@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §1.4"}
 
-
-Let $A$ and $B$ be sets of real numbers. Write the negation of each of the following statements:
+Let $A$ and $B$ be sets of real numbers.
+Write the negation of each of the following statements:
 
 (a) For every $a \in A$, it is true that $a^2 \in B$ .
 

@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §18.12"}
 
-
 Let $F: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ be defined by the equation
 
 $$

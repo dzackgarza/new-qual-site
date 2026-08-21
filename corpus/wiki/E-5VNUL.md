@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §62.1"}
 
-
 Give an example to show that the conclusion of the Borsuk lemma need not hold if $f$ is not injective.
 :::

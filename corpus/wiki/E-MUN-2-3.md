@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §2.3"}
 
-
 Show that (b), (c), (f), and (g) of Exercise 2 hold for arbitrary unions and intersections.
 :::

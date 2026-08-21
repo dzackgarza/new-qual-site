@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §6.2"}
 
-
 Show that if $B$ is not finite and $B \subset A$, then $A$ is not finite.
 :::

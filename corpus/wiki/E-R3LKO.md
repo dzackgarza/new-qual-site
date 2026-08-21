@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §58.7"}
 
-
-Let $A$ be a subspace of $X$; let $j: A \to X$ be the inclusion map, and let $f: X \to A$ be a continuous map. Suppose there is a homotopy $H: X \times I \to X$ between the map $j \circ f$ and the identity map of $X$.
+Let $A$ be a subspace of $X$; let $j: A \to X$ be the inclusion map, and let $f: X \to A$ be a continuous map.
+Suppose there is a homotopy $H: X \times I \to X$ between the map $j \circ f$ and the identity map of $X$.
 
 (a) Show that if $f$ is a retraction, then $j_*$ is an isomorphism.
 

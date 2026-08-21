@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that if $\varphi: X \to Y$ is a homotopy equivalence, then the induced homomorphisms $\varphi_*: \pi_n(X, x_0) \to \pi_n(Y, \varphi(x_0))$ are isomorphisms for all $n$.
-

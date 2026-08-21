@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §46.6"}
 
-
-Show that in the compact-open topology, $\mathcal{C}(X, Y)$ is Hausdorff if $Y$ is Hausdorff, and regular if $Y$ is regular. [Hint: If $\overline{U} \subset V$, then $\overline{S(C, U)} \subset S(C, V)$.]
+Show that in the compact-open topology, $\mathcal{C}(X, Y)$ is Hausdorff if $Y$ is Hausdorff, and regular if $Y$ is regular.
+[Hint: If $\overline{U} \subset V$, then $\overline{S(C, U)} \subset S(C, V)$.]
 :::

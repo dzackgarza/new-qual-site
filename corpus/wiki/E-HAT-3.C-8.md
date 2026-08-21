@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that the tensor product of two Hopf algebras is a Hopf algebra.
-

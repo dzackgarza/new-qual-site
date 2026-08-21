@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §17.17"}
 
-
 Consider the lower limit topology on $\mathbb{R}$ and the topology given by the basis $\mathcal{C}$ of Exercise 8 of §13. Determine the closures of the intervals $A = (0, \sqrt{2})$ and $B = (\sqrt{2}, 3)$ in these two topologies.
 :::

@@ -14,4 +14,3 @@ solved: false
 ---
 
 Given a covering space action of a group $G$ on an orientable manifold $M$ by orientation-preserving homeomorphisms, show that $M/G$ is also orientable.
-

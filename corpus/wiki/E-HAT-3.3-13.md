@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Let $M_h' \subset M_g$ be a compact subsurface of genus $h$ with one boundary circle, so $M_h'$ is homeomorphic to $M_h$ with an open disk removed. Show there is no retraction $M_g \to M_h'$ if $h > g/2$.
-
+Let $M_h' \subset M_g$ be a compact subsurface of genus $h$ with one boundary circle, so $M_h'$ is homeomorphic to $M_h$ with an open disk removed.
+Show there is no retraction $M_g \to M_h'$ if $h > g/2$.

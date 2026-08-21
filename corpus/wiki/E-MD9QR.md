@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §25.3"}
 
-
-Show that the ordered square is locally connected but not locally path connected. What are the path components of this space?
+Show that the ordered square is locally connected but not locally path connected.
+What are the path components of this space?
 :::

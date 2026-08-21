@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §22.1"}
 
-
 Check the details of Example 3 of §22: for the map $p: \mathbb{R} \to A = \ts{a, b, c}$ defined by
 
 $$

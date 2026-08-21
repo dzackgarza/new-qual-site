@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that every graph product of groups can be realized by a graph whose vertices are partitioned into two subsets, with every oriented edge going from a vertex in the first subset to a vertex in the second subset.
-

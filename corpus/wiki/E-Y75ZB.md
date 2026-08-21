@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §16.6"}
 
-
 Show that the countable collection
 
 $$

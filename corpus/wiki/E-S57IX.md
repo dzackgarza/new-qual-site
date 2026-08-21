@@ -16,8 +16,8 @@ solved: false
 
 ::: {.exercise title="Munkres §29.11"}
 
-
-(a) Lemma. If $p: X \to Y$ is a quotient map and if $Z$ is a locally compact Hausdorff space, then the map
+(a) Lemma.
+If $p: X \to Y$ is a quotient map and if $Z$ is a locally compact Hausdorff space, then the map
 
 $$
 \pi = p \times i_Z: X \times Z \to Y \times Z
@@ -29,5 +29,7 @@ is a quotient map.
 
 An entirely different proof of this result will be outlined in the exercises of §46.
 
-(b) Theorem. Let $p: A \to B$ and $q: C \to D$ be quotient maps. If $B$ and $C$ are locally compact Hausdorff spaces, then $p \times q: A \times C \to B \times D$ is a quotient map.
+(b) Theorem.
+Let $p: A \to B$ and $q: C \to D$ be quotient maps.
+If $B$ and $C$ are locally compact Hausdorff spaces, then $p \times q: A \times C \to B \times D$ is a quotient map.
 :::

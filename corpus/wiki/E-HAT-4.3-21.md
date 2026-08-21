@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that in the Postnikov tower of an H-space, all the spaces are H-spaces and the maps are H-maps, commuting with the multiplication, up to homotopy.
-

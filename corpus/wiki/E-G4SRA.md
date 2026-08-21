@@ -16,8 +16,8 @@ solved: false
 
 ::: {.exercise title="Munkres §18.10"}
 
-
-Let $f: A \to B$ and $g: C \to D$ be continuous functions. Let us define a map $f \times g: A \times C \to B \times D$ by the equation
+Let $f: A \to B$ and $g: C \to D$ be continuous functions.
+Let us define a map $f \times g: A \times C \to B \times D$ by the equation
 
 $$
 (f \times g)(a \times c) = f(a) \times g(c).

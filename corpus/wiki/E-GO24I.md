@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §29.1"}
 
-
 Show that the rationals $\mathbb{Q}$ are not locally compact.
 :::

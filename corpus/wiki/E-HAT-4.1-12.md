@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that an $n$-connected, $n$-dimensional CW complex is contractible.
-

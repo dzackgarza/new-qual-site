@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §52.1"}
 
-
 A subset $A$ of $\mathbb{R}^n$ is said to be star convex if for some point $a_0$ of $A$, all the line segments joining $a_0$ to other points of $A$ lie in $A$.
 
 (a) Find a star convex set that is not convex.

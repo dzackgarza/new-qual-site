@@ -14,4 +14,3 @@ solved: false
 ---
 
 Use the extension lemma to show that a CW complex retracts onto any contractible subcomplex.
-

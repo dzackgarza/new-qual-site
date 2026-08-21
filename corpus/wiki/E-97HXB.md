@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §58.6"}
 
-
 Show that a retract of a contractible space is contractible.
 :::

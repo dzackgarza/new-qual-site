@@ -14,4 +14,3 @@ solved: false
 ---
 
 Analyze what happens when the number of handles in the basic building block for the Alexander horned sphere is doubled, as in the figure at the right.
-

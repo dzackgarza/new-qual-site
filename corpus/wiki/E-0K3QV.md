@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §29.7"}
 
-
 Show that the one-point compactification of $S_\Omega$ is homeomorphic with $\overline{S}_\Omega$.
 :::

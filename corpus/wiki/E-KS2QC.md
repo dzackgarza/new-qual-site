@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §60.4"}
 
-
-The space $P^1$ and the covering map $p: S^1 \to P^1$ are familiar ones. What are they?
+The space $P^1$ and the covering map $p: S^1 \to P^1$ are familiar ones.
+What are they?
 :::

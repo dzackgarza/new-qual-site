@@ -14,4 +14,3 @@ solved: false
 ---
 
 From the fact that $\operatorname{Tor}(A, B) = 0$ if $A$ is free, deduce that $\operatorname{Tor}(A, B) = 0$ if $A$ is torsionfree by applying the previous problem to the directed system of finitely generated subgroups $A_\alpha$ of $A$.
-

@@ -15,6 +15,7 @@ solved: false
 
 ::: {.exercise title="Munkres §36.2"}
 
-
-Let $X$ be a compact Hausdorff space. Suppose that for each $x \in X$, there is a neighborhood $U$ of $x$ and a positive integer $k$ such that $U$ can be imbedded in $\mathbb{R}^k$. Show that $X$ can be imbedded in $\mathbb{R}^N$ for some positive integer $N$.
+Let $X$ be a compact Hausdorff space.
+Suppose that for each $x \in X$, there is a neighborhood $U$ of $x$ and a positive integer $k$ such that $U$ can be imbedded in $\mathbb{R}^k$.
+Show that $X$ can be imbedded in $\mathbb{R}^N$ for some positive integer $N$.
 :::

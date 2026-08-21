@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §46.3"}
 
-
 Show that the set $\mathcal{B}(\mathbb{R}, \mathbb{R})$ of bounded functions $f: \mathbb{R} \to \mathbb{R}$ is closed in $\mathbb{R}^{\mathbb{R}}$ in the uniform topology, but not in the topology of compact convergence.
 :::

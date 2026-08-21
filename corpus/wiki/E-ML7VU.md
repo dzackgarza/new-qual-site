@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §50.3"}
 
-
 Show that the topologist's sine curve has dimension 1.
 :::

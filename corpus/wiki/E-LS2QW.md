@@ -15,8 +15,9 @@ solved: false
 
 ::: {.exercise title="Munkres §38.10"}
 
-
-We have constructed a correspondence $X \to \beta(X)$ that assigns, to each completely regular space, its Stone-Čech compactification. Now let us assign, to each continuous map $f: X \to Y$ of completely regular spaces, the unique continuous map $\beta(f): \beta(X) \to \beta(Y)$ that extends the map $i \circ f$, where $i: Y \to \beta(Y)$ is the inclusion map. Verify the following:
+We have constructed a correspondence $X \to \beta(X)$ that assigns, to each completely regular space, its Stone-Čech compactification.
+Now let us assign, to each continuous map $f: X \to Y$ of completely regular spaces, the unique continuous map $\beta(f): \beta(X) \to \beta(Y)$ that extends the map $i \circ f$, where $i: Y \to \beta(Y)$ is the inclusion map.
+Verify the following:
 
 (i) If $\mathsf{l}_X: X \to X$ is the identity map of $X$, then $\beta(\mathsf{l}_X)$ is the identity map of $\beta(X)$.
 

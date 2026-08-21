@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §36 Supplementary"}
 
-
 After studying Chapters 6 and 7, repeat Exercises 1–6 of the Supplementary Exercises (Review of the Basics) for the following properties:
 
 (18) paracompact

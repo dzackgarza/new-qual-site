@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-In the situation of the relative lifting problem, suppose one has two different lifts $W \to X$ that agree on the subspace $A \subset W$. Show that the obstructions to finding a homotopy rel $A$ between these two lifts lie in the groups $H^n(W, A; \pi_n F)$.
-
+In the situation of the relative lifting problem, suppose one has two different lifts $W \to X$ that agree on the subspace $A \subset W$.
+Show that the obstructions to finding a homotopy rel $A$ between these two lifts lie in the groups $H^n(W, A; \pi_n F)$.

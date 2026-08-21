@@ -15,12 +15,14 @@ solved: false
 
 ::: {.exercise title="Munkres §73.2"}
 
-
 Prove the following.
 
-Theorem. If $G$ is a finitely presented group, then there is a compact Hausdorff space $X$ whose fundamental group is isomorphic to $G$.
+Theorem.
+If $G$ is a finitely presented group, then there is a compact Hausdorff space $X$ whose fundamental group is isomorphic to $G$.
 
-Proof. Suppose $G$ has a presentation consisting of $n$ generators and $m$ relations. Let $A$ be the wedge of $n$ circles; form an adjunction space $X$ from the union of $A$ and $m$ copies $B_1, \ldots, B_m$ of the unit ball by means of a continuous map $f: \bigcup \operatorname{Bd} B_i \to A$.
+Proof.
+Suppose $G$ has a presentation consisting of $n$ generators and $m$ relations.
+Let $A$ be the wedge of $n$ circles; form an adjunction space $X$ from the union of $A$ and $m$ copies $B_1, \ldots, B_m$ of the unit ball by means of a continuous map $f: \bigcup \operatorname{Bd} B_i \to A$.
 
 (a) Show that $X$ is Hausdorff.
 

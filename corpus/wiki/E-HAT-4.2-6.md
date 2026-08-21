@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that the relative form of the Hurewicz theorem in dimension $n$ implies the absolute form in dimension $n-1$ by considering the pair $(CX, X)$ where $CX$ is the cone on $X$.
-

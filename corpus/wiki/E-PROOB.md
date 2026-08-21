@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §50.9"}
 
-
-Corollary. Every $m$-manifold has topological dimension at most $m$.
+Corollary.
+Every $m$-manifold has topological dimension at most $m$.
 :::

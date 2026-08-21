@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §48.6"}
 
-
 Show that the irrationals are a Baire space.
 :::

@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §1.9"}
 
-
 Formulate and prove DeMorgan's laws for arbitrary unions and intersections.
 :::

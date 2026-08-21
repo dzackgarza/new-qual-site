@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that a map $f: X \to Y$ of connected CW complexes is a homotopy equivalence if it induces an isomorphism on $\pi_1$ and its homotopy fiber $F_f$ has $\tilde{H}_*(F_f; \mathbb{Z}) = 0$.
-

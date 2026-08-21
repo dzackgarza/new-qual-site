@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §1.1"}
 
-
 Check the distributive laws for $\cup$ and $\cap$ and DeMorgan's laws.
 :::

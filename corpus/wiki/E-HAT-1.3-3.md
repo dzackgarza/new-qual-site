@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Let $p: \tilde{X} \to X$ be a covering space with $p^{-1}(x)$ finite and nonempty for all $x \in X$. Show that $\tilde{X}$ is compact Hausdorff if $X$ is compact Hausdorff.
-
+Let $p: \tilde{X} \to X$ be a covering space with $p^{-1}(x)$ finite and nonempty for all $x \in X$.
+Show that $\tilde{X}$ is compact Hausdorff if $X$ is compact Hausdorff.

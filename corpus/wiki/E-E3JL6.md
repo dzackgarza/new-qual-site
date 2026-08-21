@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §17.11"}
 
-
 Show that the product of two Hausdorff spaces is Hausdorff.
 :::

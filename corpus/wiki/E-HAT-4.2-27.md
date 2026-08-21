@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that the image of the map $\pi_2(X, x_0) \to \pi_2(X, A, x_0)$ lies in the center of $\pi_2(X, A, x_0)$.
-

@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §58.10"}
 
-
 Suppose that to every map $h: S^n \to S^n$ we have assigned an integer, denoted by $\deg h$ and called the degree of $h$, such that:
 
 (i) Homotopic maps have the same degree.
@@ -28,9 +27,11 @@ Suppose that to every map $h: S^n \to S^n$ we have assigned an integer, denoted 
 
 (a) There is no retraction $r: B^{n+1} \to S^n$.
 
-(b) If $h: S^n \to S^n$ has degree different from $(-1)^{n+1}$, then $h$ has a fixed point. [Hint: Show that if $h$ has no fixed point, then $h$ is homotopic to the antipodal map $a(x) = -x$.]
+(b) If $h: S^n \to S^n$ has degree different from $(-1)^{n+1}$, then $h$ has a fixed point.
+[Hint: Show that if $h$ has no fixed point, then $h$ is homotopic to the antipodal map $a(x) = -x$.]
 
 (c) If $h: S^n \to S^n$ has degree different from 1, then $h$ maps some point $x$ to its antipode $-x$.
 
-(d) If $S^n$ has a nonvanishing tangent vector field $v$, then $n$ is odd. [Hint: If $v$ exists, show the identity map is homotopic to the antipodal map.]
+(d) If $S^n$ has a nonvanishing tangent vector field $v$, then $n$ is odd.
+[Hint: If $v$ exists, show the identity map is homotopic to the antipodal map.]
 :::

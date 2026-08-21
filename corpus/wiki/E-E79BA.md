@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §59.3"}
 
-
 (a) Show that $\mathbb{R}^1$ and $\mathbb{R}^n$ are not homeomorphic if $n > 1$.
 
 (b) Show that $\mathbb{R}^2$ and $\mathbb{R}^n$ are not homeomorphic if $n > 2$.

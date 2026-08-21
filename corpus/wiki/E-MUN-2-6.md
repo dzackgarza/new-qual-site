@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §2.6"}
 
-
 Let $f: \mathbb{R} \to \mathbb{R}$ be the function $f(x) = x^3 - x$ . By restricting the domain and range of $f$ appropriately, obtain from $f$ a bijective function $g$ . Draw the graphs of $g$ and $g^{-1}$ . (There are several possible choices for $g$ .)
 :::

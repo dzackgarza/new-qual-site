@@ -14,4 +14,3 @@ solved: false
 ---
 
 For an H-space $(X, x_0)$ with multiplication $\mu: X \times X \to X$, show that the group operation in $\pi_n(X, x_0)$ can also be defined by the rule $(f + g)(x) = \mu\bigl(f(x), g(x)\bigr)$.
-

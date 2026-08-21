@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §6.5"}
 
-
 If $A \times B$ is finite, does it follow that $A$ and $B$ are finite?
 :::

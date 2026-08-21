@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §50 Supplementary"}
 
-
 Show that the long line ([[E-PQHZN]]) is locally 1-euclidean and satisfies (iv) but not (iii) of Exercise 2.
 :::

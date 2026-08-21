@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §58.2"}
 
-
-For each of the following spaces, the fundamental group is either trivial, infinite cyclic, or isomorphic to the fundamental group of the figure eight. Determine for each space which of the three alternatives holds.
+For each of the following spaces, the fundamental group is either trivial, infinite cyclic, or isomorphic to the fundamental group of the figure eight.
+Determine for each space which of the three alternatives holds.
 
 (a) The "solid torus," $B^2 \times S^1$.
 

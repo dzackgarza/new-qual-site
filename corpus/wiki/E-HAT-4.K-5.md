@@ -22,4 +22,3 @@ A map $p: E \to B$ with $B$ not necessarily path-connected is defined to be a qu
 (iii) The restriction of $p$ over each path-component of $B$ is a quasifibration according to the definition in this section.
 
 Show these three conditions are equivalent, and prove Lemma 4K.3 for quasifibrations over non-path-connected base spaces.
-

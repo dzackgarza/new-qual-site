@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §50.2"}
 
-
 Show that any connected $T_1$ space having more than one point has dimension at least 1.
 :::

@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §34.8"}
 
-
-Show that a regular Lindelöf space is metrizable if it is locally metrizable. [Hint: A closed subspace of a Lindelöf space is Lindelöf.] Regularity is essential; where do you use it in the proof?
+Show that a regular Lindelöf space is metrizable if it is locally metrizable.
+[Hint: A closed subspace of a Lindelöf space is Lindelöf.] Regularity is essential; where do you use it in the proof?
 :::

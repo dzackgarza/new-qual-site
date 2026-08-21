@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §17.9"}
 
-
 Let $A \subset X$ and $B \subset Y$.
 Show that in the space $X \times Y$,
 

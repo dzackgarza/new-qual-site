@@ -15,6 +15,7 @@ solved: false
 
 ::: {.exercise title="Munkres §32.6"}
 
-
-A space $X$ is said to be completely normal if every subspace of $X$ is normal. Show that $X$ is completely normal if and only if for every pair $A, B$ of separated sets in $X$ (that is, sets such that $\overline{A} \cap B = \varnothing$ and $A \cap \overline{B} = \varnothing$), there exist disjoint open sets containing them. [Hint: If $X$ is completely normal, consider $X - (\overline{A} \cap \overline{B})$.]
+A space $X$ is said to be completely normal if every subspace of $X$ is normal.
+Show that $X$ is completely normal if and only if for every pair $A, B$ of separated sets in $X$ (that is, sets such that $\overline{A} \cap B = \varnothing$ and $A \cap \overline{B} = \varnothing$), there exist disjoint open sets containing them.
+[Hint: If $X$ is completely normal, consider $X - (\overline{A} \cap \overline{B})$.]
 :::

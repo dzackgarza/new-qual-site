@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that the coproduct in the Hopf algebra $H_*(X; R)$ dual to $H^*(X; R)$ is induced by the diagonal map $X \to X \times X$, $x \mapsto (x, x)$.
-

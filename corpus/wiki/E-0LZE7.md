@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §58.4"}
 
-
-Let $X$ be the figure eight and let $Y$ be the theta space. Describe maps $f: X \to Y$ and $g: Y \to X$ that are homotopy inverse to each other.
+Let $X$ be the figure eight and let $Y$ be the theta space.
+Describe maps $f: X \to Y$ and $g: Y \to X$ that are homotopy inverse to each other.
 :::

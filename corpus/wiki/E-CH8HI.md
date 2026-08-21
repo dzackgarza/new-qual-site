@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §16.5"}
 
-
 Let $X$ and $X'$ denote a single set in the topologies $\mathcal{T}$ and $\mathcal{T}'$, respectively; let $Y$ and $Y'$ denote a single set in the topologies $\mathcal{U}$ and $\mathcal{U}'$, respectively.
 Assume these sets are nonempty.
 

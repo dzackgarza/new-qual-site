@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §75.2"}
 
-
 If $K$ is the Klein bottle, calculate $H_1(K)$ directly.
 :::

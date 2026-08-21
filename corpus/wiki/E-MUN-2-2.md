@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §2.2"}
 
-
 Let $f: A \to B$ and let $A_i \subset A$ and $B_i \subset B$ for $i = 0$ and $i = 1$ . Show that $f^-$
 
 preserves inclusions, unions, intersections, and differences of sets:

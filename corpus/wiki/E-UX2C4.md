@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §28.3"}
 
-
 Let $X$ be limit point compact.
 
 (a) If $f: X \to Y$ is continuous, does it follow that $f(X)$ is limit point compact?
@@ -24,5 +23,7 @@ Let $X$ be limit point compact.
 
 (c) If $X$ is a subspace of the Hausdorff space $Z$, does it follow that $X$ is closed in $Z$?
 
-We comment that it is not in general true that the product of two limit point compact spaces is limit point compact, even if the Hausdorff condition is assumed. But the examples are fairly sophisticated. See [S-S], Example 112.
+We comment that it is not in general true that the product of two limit point compact spaces is limit point compact, even if the Hausdorff condition is assumed.
+But the examples are fairly sophisticated.
+See [S-S], Example 112.
 :::

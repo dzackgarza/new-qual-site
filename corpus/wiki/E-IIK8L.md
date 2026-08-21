@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §17.18"}
 
-
 Determine the closures of the following subsets of the ordered square (the unit square $I \times I$ in the dictionary order topology):
 
 $$

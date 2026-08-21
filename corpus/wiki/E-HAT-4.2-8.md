@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show the suspension of an acyclic CW complex is contractible.
-

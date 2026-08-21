@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §41.7"}
 
-
 Let $X$ be a regular space.
 
 (a) If $X$ is a finite union of closed paracompact subspaces of $X$, then $X$ is paracompact.

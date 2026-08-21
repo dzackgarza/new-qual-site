@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §50 Supplementary"}
 
-
-There is a space that is locally 2-euclidean and satisfies (v) but not (iv) of Exercise 2. It is constructed as follows. Let $A$ be the following subspace of $\mathbb{R}^3$:
+There is a space that is locally 2-euclidean and satisfies (v) but not (iv) of Exercise 2. It is constructed as follows.
+Let $A$ be the following subspace of $\mathbb{R}^3$:
 
 $$
 A = \ts{(x, y, 0) \mid x > 0}.
@@ -28,7 +28,8 @@ $$
 B_c = \ts{(x, y, c) \mid x \leq 0}.
 $$
 
-Let $X$ be the set that is the union of $A$ and all the spaces $B_c$, for $c$ real. Topologize $X$ by taking as a basis all sets of the following three types:
+Let $X$ be the set that is the union of $A$ and all the spaces $B_c$, for $c$ real.
+Topologize $X$ by taking as a basis all sets of the following three types:
 
 (i) $U$, where $U$ is open in $A$.
 
@@ -66,11 +67,13 @@ defines a homeomorphism of $\mathbb{R}^2$ with the subspace $A \cup B_c$ of $X$.
 
 (e) Show that $X$ is Hausdorff.
 
-(f) Show that $X$ is not normal. [Hint: The subspace
+(f) Show that $X$ is not normal.
+[Hint: The subspace
 
 $$
 L = \ts{(0, 0, c) \mid c \in \mathbb{R}}
 $$
 
-of $X$ is closed and discrete. Compare Example 3 of §31.]
+of $X$ is closed and discrete.
+Compare Example 3 of §31.]
 :::

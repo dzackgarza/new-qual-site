@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §17.21"}
 
-
 Consider the collection of all subsets $A$ of the topological space $X$.
 The operations of closure $A \to \overline{A}$ and complementation $A \to X - A$ are functions from this collection to itself.
 

@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that $SP_2(S^1)$ is a Möbius band, and that this is consistent with the description of $SP_2(S^n)$ as a mapping cone given in Example 4K.5.
-

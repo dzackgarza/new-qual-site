@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §79.7"}
 
-
-Let $p: \overline{G} \to G$ be a homomorphism of topological groups that is a covering map. Show that if $G$ is abelian, so is $\overline{G}$.
+Let $p: \overline{G} \to G$ be a homomorphism of topological groups that is a covering map.
+Show that if $G$ is abelian, so is $\overline{G}$.
 :::

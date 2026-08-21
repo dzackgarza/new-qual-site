@@ -15,6 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §59.1"}
 
-
-Let $X$ be the union of two copies of $S^2$ having a single point in common. What is the fundamental group of $X$? Prove that your answer is correct. [Be careful! The union of two simply connected spaces having a point in common is not necessarily simply connected. See [S], p. 59.]
+Let $X$ be the union of two copies of $S^2$ having a single point in common.
+What is the fundamental group of $X$?
+Prove that your answer is correct.
+[Be careful! The union of two simply connected spaces having a point in common is not necessarily simply connected. See [S], p. 59.]
 :::

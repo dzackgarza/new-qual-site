@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §71.3"}
 
-
 What can you say about the fundamental group of $X \vee Y$ if $X$ is homeomorphic to $S^1$ and $Y$ is homeomorphic to $S^2$?
 :::

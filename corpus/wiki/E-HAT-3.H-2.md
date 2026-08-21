@@ -14,4 +14,3 @@ solved: false
 ---
 
 Compute the homology groups with local coefficients $H_n(M; M_{\mathbb{Z}})$ for a closed nonorientable surface $M$.
-

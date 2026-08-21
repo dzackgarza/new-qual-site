@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §32.3"}
 
-
 Show that every locally compact Hausdorff space is regular.
 :::

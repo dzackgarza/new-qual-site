@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that a linear projection of a 2-simplex onto one of its edges is a fibration but not a fiber bundle.
-

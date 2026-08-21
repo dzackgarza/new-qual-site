@@ -17,8 +17,8 @@ solved: false
 
 ::: {.exercise title="Munkres §18.8"}
 
-
-Let $Y$ be an ordered set in the order topology. Let $f, g: X \to Y$ be continuous.
+Let $Y$ be an ordered set in the order topology.
+Let $f, g: X \to Y$ be continuous.
 
 (a) Show that the set $\ts{x \mid f(x) \leq g(x)}$ is closed in $X$.
 
@@ -28,5 +28,6 @@ $$
 h(x) = \min\ts{f(x), g(x)}.
 $$
 
-Show that $h$ is continuous. [Hint: Use the pasting lemma.]
+Show that $h$ is continuous.
+[Hint: Use the pasting lemma.]
 :::

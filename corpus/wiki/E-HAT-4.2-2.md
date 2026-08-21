@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show the action of $\pi_1(\mathbb{RP}^n)$ on $\pi_n(\mathbb{RP}^n) \approx \mathbb{Z}$ is trivial for $n$ odd and nontrivial for $n$ even.
-

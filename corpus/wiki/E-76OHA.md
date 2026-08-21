@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §41.4"}
 
-
 (a) Show that if $X$ has the discrete topology, then $X$ is paracompact.
 
 (b) Show that if $f: X \to Y$ is continuous and $X$ is paracompact, the subspace $f(X)$ of $Y$ need not be paracompact.

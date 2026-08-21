@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §23.11"}
 
-
-Let $p: X \to Y$ be a quotient map. Show that if each set $p^{-1}(\ts{y})$ is connected, and if $Y$ is connected, then $X$ is connected.
+Let $p: X \to Y$ be a quotient map.
+Show that if each set $p^{-1}(\ts{y})$ is connected, and if $Y$ is connected, then $X$ is connected.
 :::

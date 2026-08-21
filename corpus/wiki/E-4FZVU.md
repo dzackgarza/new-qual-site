@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §20.4"}
 
-
 Consider the product, uniform, and box topologies on $\mathbb{R}^\omega$.
 
 (a) In which topologies are the following functions from $\mathbb{R}$ to $\mathbb{R}^\omega$ continuous?

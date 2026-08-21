@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Show that $\operatorname{Ext}(A, \mathbb{Q}) = 0$ for all $A$. [Consider the homology with $\mathbb{Q}$ coefficients of a Moore space $M(A, n)$.]
-
+Show that $\operatorname{Ext}(A, \mathbb{Q}) = 0$ for all $A$.
+[Consider the homology with $\mathbb{Q}$ coefficients of a Moore space $M(A, n)$.]

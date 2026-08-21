@@ -16,8 +16,8 @@ solved: false
 
 ::: {.exercise title="Munkres §35.3"}
 
-
-Let $X$ be metrizable. Show that the following are equivalent:
+Let $X$ be metrizable.
+Show that the following are equivalent:
 
 (i) $X$ is bounded under every metric that gives the topology of $X$.
 

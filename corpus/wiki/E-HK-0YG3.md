@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: {.exercise title="Hoffman and Kunze 1.4.10"}
-Suppose R and $R'$ are $2 \times 3$ row-reduced echelon matrices and that the systems RX = 0 and $R'X = 0$ have exactly the same solutions. Prove that $R = R'$ .
+Suppose R and $R'$ are $2 \times 3$ row-reduced echelon matrices and that the systems RX = 0 and $R'X = 0$ have exactly the same solutions.
+Prove that $R = R'$ .
 :::

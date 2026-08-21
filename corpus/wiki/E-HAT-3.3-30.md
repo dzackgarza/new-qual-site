@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that the boundary of an $R$-orientable manifold is also $R$-orientable.
-

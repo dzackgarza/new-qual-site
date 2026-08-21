@@ -15,8 +15,9 @@ solved: false
 
 ::: {.exercise title="Munkres §21.5"}
 
-
-Theorem. Let $x_n \to x$ and $y_n \to y$ in the space $\mathbb{R}$. Then
+Theorem.
+Let $x_n \to x$ and $y_n \to y$ in the space $\mathbb{R}$.
+Then
 
 $$
 \begin{array}{c}

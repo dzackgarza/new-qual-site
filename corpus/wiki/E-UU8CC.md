@@ -15,12 +15,15 @@ solved: false
 
 ::: {.exercise title="Munkres §58.9"}
 
-
 We define the degree of a continuous map $h: S^1 \to S^1$ as follows.
 
-Let $b_0$ be the point $(1, 0)$ of $S^1$; choose a generator $\gamma$ for the infinite cyclic group $\pi_1(S^1, b_0)$. If $x_0$ is any point of $S^1$, choose a path $\alpha$ in $S^1$ from $b_0$ to $x_0$, and define $\gamma(x_0) = \hat{\alpha}(\gamma)$. Then $\gamma(x_0)$ generates $\pi_1(S^1, x_0)$. The element $\gamma(x_0)$ is independent of the choice of the path $\alpha$, since the fundamental group of $S^1$ is abelian.
+Let $b_0$ be the point $(1, 0)$ of $S^1$; choose a generator $\gamma$ for the infinite cyclic group $\pi_1(S^1, b_0)$.
+If $x_0$ is any point of $S^1$, choose a path $\alpha$ in $S^1$ from $b_0$ to $x_0$, and define $\gamma(x_0) = \hat{\alpha}(\gamma)$.
+Then $\gamma(x_0)$ generates $\pi_1(S^1, x_0)$.
+The element $\gamma(x_0)$ is independent of the choice of the path $\alpha$, since the fundamental group of $S^1$ is abelian.
 
-Now given $h: S^1 \to S^1$, choose $x_0 \in S^1$ and let $h(x_0) = x_1$. Consider the homomorphism
+Now given $h: S^1 \to S^1$, choose $x_0 \in S^1$ and let $h(x_0) = x_1$.
+Consider the homomorphism
 
 $$
 h_*: \pi_1(S^1, x_0) \to \pi_1(S^1, x_1).
@@ -32,7 +35,8 @@ $$
 h_*(\gamma(x_0)) = d \cdot \gamma(x_1)
 $$
 
-for some integer $d$, if the group is written additively. The integer $d$ is called the degree of $h$ and is denoted by $\deg h$.
+for some integer $d$, if the group is written additively.
+The integer $d$ is called the degree of $h$ and is denoted by $\deg h$.
 
 The degree of $h$ is independent of the choice of the generator $\gamma$; choosing the other generator would merely change the sign of both sides.
 

@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §17.20"}
 
-
 Find the boundary and the interior of each of the following subsets of $\mathbb{R}^2$.
 
 (a) $A = \ts{x \times y \mid y = 0}$

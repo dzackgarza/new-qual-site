@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: {.exercise title="Hoffman and Kunze 1.6.7"}
-Let $A$ be an $n \times n$ (square) matrix. Prove the following two statements:
+Let $A$ be an $n \times n$ (square) matrix.
+Prove the following two statements:
 
 (a) If $A$ is invertible and $AB = 0$ for some $n \times n$ matrix $B$, then $B = 0$ .
 

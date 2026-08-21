@@ -14,4 +14,3 @@ solved: false
 ---
 
 Use cellular approximation to show that the $n$-skeleta of homotopy equivalent CW complexes without cells of dimension $n+1$ are also homotopy equivalent.
-

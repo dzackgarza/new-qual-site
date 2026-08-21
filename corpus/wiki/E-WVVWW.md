@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §44.2"}
 
-
 Show there is a continuous surjective map $f: \mathbb{R} \to \mathbb{R}^n$.
 :::

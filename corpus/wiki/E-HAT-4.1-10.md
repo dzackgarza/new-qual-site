@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show the 'quasi-circle' described in Exercise 7 in §1.3 has trivial homotopy groups but is not contractible, hence does not have the homotopy type of a CW complex.
-

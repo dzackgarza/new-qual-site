@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §17.6"}
 
-
 Let $A$, $B$, and $A_\alpha$ denote subsets of a space $X$.
 Prove the following:
 

@@ -14,4 +14,3 @@ solved: false
 ---
 
 Construct nonnormal covering spaces of the Klein bottle by a Klein bottle and by a torus.
-

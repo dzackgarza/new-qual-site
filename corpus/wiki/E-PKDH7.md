@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §47.1"}
 
-
-Which of the following subsets of $\mathcal{C}(\mathbb{R}, \mathbb{R})$ are pointwise bounded? Which are equicontinuous?
+Which of the following subsets of $\mathcal{C}(\mathbb{R}, \mathbb{R})$ are pointwise bounded?
+Which are equicontinuous?
 
 (a) The collection $\ts{f_n}$, where $f_n(x) = x + \sin nx$.
 

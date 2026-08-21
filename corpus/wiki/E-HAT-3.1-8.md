@@ -12,9 +12,11 @@ relations: []
 review: draft
 solved: false
 ---
+
 # E-HAT-3.1-8
 
-Many basic homology arguments work just as well for cohomology even though maps go in the opposite direction. Verify this in the following cases:
+Many basic homology arguments work just as well for cohomology even though maps go in the opposite direction.
+Verify this in the following cases:
 
 (a) Compute $H^i(S^n; G)$ by induction on $n$ in two ways: using the long exact sequence of a pair, and using the Mayer–Vietoris sequence.
 

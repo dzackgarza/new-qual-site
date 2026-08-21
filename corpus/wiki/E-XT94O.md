@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §17.15"}
 
-
 Show that the $T_1$ axiom is equivalent to the condition that for each pair of points of $X$, each has a neighborhood not containing the other.
 :::

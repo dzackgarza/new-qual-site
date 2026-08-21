@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Show that a map between simply-connected CW complexes is a homotopy equivalence if its mapping cone is contractible. Use the preceding exercise to give an example where this fails in the nonsimply-connected case.
-
+Show that a map between simply-connected CW complexes is a homotopy equivalence if its mapping cone is contractible.
+Use the preceding exercise to give an example where this fails in the nonsimply-connected case.

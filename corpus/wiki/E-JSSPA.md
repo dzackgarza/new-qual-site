@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §67.1"}
 
-
-Suppose that $G = \sum G_\alpha$. Show this sum is direct if and only if the equation
+Suppose that $G = \sum G_\alpha$.
+Show this sum is direct if and only if the equation
 
 $$
 x_{\alpha_1} + \dots + x_{\alpha_n} = 0

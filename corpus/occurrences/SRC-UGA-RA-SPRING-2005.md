@@ -28,5 +28,6 @@ source:
 ---
 
 ::: remark
-Extra_Questions tags (January 2005 3b) as `P-KZZ7M` and (January 2005 4, June 2010 6b) as `P-AITX4`; neither statement is an item on this paper. The wiki Extra_Questions headings also place `P-5UQSK` and `P-XQRCI` under those January 2005 tags; the native source has those as (January 2020 4a) and (January 2008 5a).
+Extra_Questions tags (January 2005 3b) as `P-KZZ7M` and (January 2005 4, June 2010 6b) as `P-AITX4`; neither statement is an item on this paper.
+The wiki Extra_Questions headings also place `P-5UQSK` and `P-XQRCI` under those January 2005 tags; the native source has those as (January 2020 4a) and (January 2008 5a).
 :::

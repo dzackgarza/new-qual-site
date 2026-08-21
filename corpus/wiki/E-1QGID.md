@@ -16,12 +16,12 @@ solved: false
 
 ::: {.exercise title="Munkres §27.3"}
 
-
 Recall that $\mathbb{R}_K$ denotes $\mathbb{R}$ in the $K$-topology.
 
 (a) Show that $[0, 1]$ is not compact as a subspace of $\mathbb{R}_K$.
 
-(b) Show that $\mathbb{R}_K$ is connected. [Hint: $(-\infty, 0)$ and $(0, \infty)$ inherit their usual topologies as subspaces of $\mathbb{R}_K$.]
+(b) Show that $\mathbb{R}_K$ is connected.
+[Hint: $(-\infty, 0)$ and $(0, \infty)$ inherit their usual topologies as subspaces of $\mathbb{R}_K$.]
 
 (c) Show that $\mathbb{R}_K$ is not path connected.
 :::

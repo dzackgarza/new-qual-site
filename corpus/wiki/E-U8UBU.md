@@ -16,10 +16,13 @@ solved: false
 
 ::: {.exercise title="Munkres §22 Supplementary"}
 
+Let $H$ be a subgroup of the topological group $G$.
+If $x \in G$, define $xH = \ts{x \cdot h \mid h \in H}$; this set is called a left coset of $H$ in $G$.
+Let $G/H$ denote the collection of left cosets of $H$ in $G$; it is a partition of $G$.
+Give $G/H$ the quotient topology.
 
-Let $H$ be a subgroup of the topological group $G$. If $x \in G$, define $xH = \ts{x \cdot h \mid h \in H}$; this set is called a left coset of $H$ in $G$. Let $G/H$ denote the collection of left cosets of $H$ in $G$; it is a partition of $G$. Give $G/H$ the quotient topology.
-
-(a) Show that if $\alpha \in G$, the map $f_\alpha(x) = \alpha \cdot x$ induces a homeomorphism of $G/H$ carrying $xH$ to $(\alpha \cdot x)H$. Conclude that $G/H$ is a homogeneous space.
+(a) Show that if $\alpha \in G$, the map $f_\alpha(x) = \alpha \cdot x$ induces a homeomorphism of $G/H$ carrying $xH$ to $(\alpha \cdot x)H$.
+Conclude that $G/H$ is a homogeneous space.
 
 (b) Show that if $H$ is a closed set in the topology of $G$, then one-point sets are closed in $G/H$.
 

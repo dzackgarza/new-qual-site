@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §20.9"}
 
-
-Show that the euclidean metric $d$ on $\mathbb{R}^n$ is a metric, as follows. If $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$ and $c \in \mathbb{R}$, define
+Show that the euclidean metric $d$ on $\mathbb{R}^n$ is a metric, as follows.
+If $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$ and $c \in \mathbb{R}$, define
 
 $$
 \begin{array}{c}
@@ -28,9 +28,11 @@ $$
 
 (a) Show that $\mathbf{x} \cdot (\mathbf{y} + \mathbf{z}) = (\mathbf{x} \cdot \mathbf{y}) + (\mathbf{x} \cdot \mathbf{z})$.
 
-(b) Show that $\abs{\mathbf{x} \cdot \mathbf{y}} \leq \norm{\mathbf{x}} \, \norm{\mathbf{y}}$. [Hint: If $\mathbf{x}, \mathbf{y} \neq 0$, let $a = 1/\norm{\mathbf{x}}$ and $b = 1/\norm{\mathbf{y}}$, and use the fact that $\norm{a\mathbf{x} \pm b\mathbf{y}} \geq 0$.]
+(b) Show that $\abs{\mathbf{x} \cdot \mathbf{y}} \leq \norm{\mathbf{x}} \, \norm{\mathbf{y}}$.
+[Hint: If $\mathbf{x}, \mathbf{y} \neq 0$, let $a = 1/\norm{\mathbf{x}}$ and $b = 1/\norm{\mathbf{y}}$, and use the fact that $\norm{a\mathbf{x} \pm b\mathbf{y}} \geq 0$.]
 
-(c) Show that $\norm{\mathbf{x} + \mathbf{y}} \leq \norm{\mathbf{x}} + \norm{\mathbf{y}}$. [Hint: Compute $(\mathbf{x} + \mathbf{y}) \cdot (\mathbf{x} + \mathbf{y})$ and apply (b).]
+(c) Show that $\norm{\mathbf{x} + \mathbf{y}} \leq \norm{\mathbf{x}} + \norm{\mathbf{y}}$.
+[Hint: Compute $(\mathbf{x} + \mathbf{y}) \cdot (\mathbf{x} + \mathbf{y})$ and apply (b).]
 
 (d) Verify that $d$ is a metric.
 :::

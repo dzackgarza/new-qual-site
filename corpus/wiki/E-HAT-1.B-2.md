@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Let $X$ be a connected CW complex and $G$ a group such that every homomorphism $\pi_1(X) \to G$ is trivial. Show that every map $X \to K(G,1)$ is nullhomotopic.
-
+Let $X$ be a connected CW complex and $G$ a group such that every homomorphism $\pi_1(X) \to G$ is trivial.
+Show that every map $X \to K(G,1)$ is nullhomotopic.

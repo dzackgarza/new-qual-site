@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §17.12"}
 
-
 Show that a subspace of a Hausdorff space is Hausdorff.
 :::

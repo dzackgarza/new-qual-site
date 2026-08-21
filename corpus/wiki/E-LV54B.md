@@ -15,10 +15,11 @@ solved: false
 
 ::: {.exercise title="Munkres §80.1"}
 
-
 Let $q: X \to Y$ and $r: Y \to Z$ be maps; let $p = r \circ q$.
 
-(a) Let $q$ and $r$ be covering maps. Show that if $Z$ has a universal covering space, then $p$ is a covering map. Compare [[E-PBG3W]].
+(a) Let $q$ and $r$ be covering maps.
+Show that if $Z$ has a universal covering space, then $p$ is a covering map.
+Compare [[E-PBG3W]].
 
 (b) Give an example where $q$ and $r$ are covering maps but $p$ is not.
 :::

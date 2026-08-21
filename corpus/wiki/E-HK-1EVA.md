@@ -20,5 +20,6 @@ $$
 A = \left[ \begin{array}{c c} a & b \\ c & d \end{array} \right]
 $$
 
-be a $2 \times 2$ matrix with complex entries. Suppose that $A$ is row-reduced and also that $a + b + c + d = 0$ . Prove that there are exactly three such matrices.
+be a $2 \times 2$ matrix with complex entries.
+Suppose that $A$ is row-reduced and also that $a + b + c + d = 0$ . Prove that there are exactly three such matrices.
 :::

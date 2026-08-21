@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that $\operatorname{Tor}(A, B)$ is always a torsion group, and that $\operatorname{Tor}(A, B)$ contains an element of order $n$ if both $A$ and $B$ contain elements of order $n$.
-

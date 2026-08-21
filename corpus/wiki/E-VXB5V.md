@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §50.1"}
 
-
 Show that any discrete space has dimension 0.
 :::

@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §29 Supplementary"}
 
-
 Suppose that
 
 $$

@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §5.2"}
 
-
 (a) Show that if $n > 1$ there is bijective correspondence of
 
 $$

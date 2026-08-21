@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §18.6"}
 
-
 Find a function $f: \mathbb{R} \to \mathbb{R}$ that is continuous at precisely one point.
 :::

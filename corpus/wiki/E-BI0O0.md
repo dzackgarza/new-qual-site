@@ -17,7 +17,6 @@ solved: false
 
 ::: {.exercise title="Munkres §17.19"}
 
-
 If $A \subset X$, we define the boundary of $A$ by the equation
 
 $$

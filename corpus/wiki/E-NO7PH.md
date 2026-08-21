@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §48.11"}
 
-
 Determine whether or not $\mathbb{R}_\ell$ is a Baire space.
 :::

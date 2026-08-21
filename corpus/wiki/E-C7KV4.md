@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §13.6"}
 
-
 Show that the topologies of $\mathbb{R}_\ell$ and $\mathbb{R}_K$ are not comparable.
 :::

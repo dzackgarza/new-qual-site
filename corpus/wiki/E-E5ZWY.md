@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §31.3"}
 
-
 Show that every order topology is regular.
 :::

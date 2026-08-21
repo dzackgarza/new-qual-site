@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that $\operatorname{Ext}(\mathbb{Z}_{p^\infty}, \mathbb{Z}_p) \approx \mathbb{Z}_p$.
-

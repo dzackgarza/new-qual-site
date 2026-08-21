@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Using the CW structure on $SO(n)$, show that $\pi_1 SO(n) \approx \mathbb{Z}_2$ for $n \geq 3$. Find a loop representing a generator, and describe how twice this loop is nullhomotopic.
-
+Using the CW structure on $SO(n)$, show that $\pi_1 SO(n) \approx \mathbb{Z}_2$ for $n \geq 3$.
+Find a loop representing a generator, and describe how twice this loop is nullhomotopic.

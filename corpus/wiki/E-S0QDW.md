@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §84.1"}
 
-
 Give an example to show that the second part of Lemma 84.2 need not hold if $T$ is infinite.
 :::

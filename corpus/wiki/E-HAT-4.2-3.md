@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-Let $X$ be obtained from a lens space of dimension $2n+1$ by deleting a point. Compute $\pi_{2n}(X)$ as a module over $\mathbb{Z}[\pi_1(X)]$.
-
+Let $X$ be obtained from a lens space of dimension $2n+1$ by deleting a point.
+Compute $\pi_{2n}(X)$ as a module over $\mathbb{Z}[\pi_1(X)]$.

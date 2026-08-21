@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §61.1"}
 
-
 Give examples to show that a simple closed curve in the torus may or may not separate the torus.
 :::

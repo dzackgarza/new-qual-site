@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that $[X, S^n] \approx H^n(X; \mathbb{Z})$ if $X$ is an $n$-dimensional CW complex.
-

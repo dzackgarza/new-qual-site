@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §21.10"}
 
-
 Using the closed set formulation of continuity (Theorem 18.1), show that the following are closed subsets of $\mathbb{R}^2$:
 
 $$

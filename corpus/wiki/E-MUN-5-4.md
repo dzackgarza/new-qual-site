@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §5.4"}
 
-
 Let $m, n \in \mathbb{Z}_{+}$ . Let $X \neq \varnothing$ .
 
 (a) If $m \leq n$, find an injective map $f: X^m \to X^n$ .

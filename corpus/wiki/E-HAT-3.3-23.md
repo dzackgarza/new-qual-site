@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that for a locally compact $\Delta$-complex $X$ the simplicial and singular cohomology groups $H_c^i(X; G)$ are isomorphic.
-

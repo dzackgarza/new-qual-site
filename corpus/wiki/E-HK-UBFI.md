@@ -20,5 +20,6 @@ $$
 \begin{array}{r l} x _ {1} - & x _ {2} + 2 x _ {3} = 1 \\ 2 x _ {1} & + 2 x _ {3} = 1 \\ x _ {1} - 3 x _ {2} + 4 x _ {3} = 2. \end{array}
 $$
 
-Does this system have a solution? If so, describe explicitly all solutions.
+Does this system have a solution?
+If so, describe explicitly all solutions.
 :::

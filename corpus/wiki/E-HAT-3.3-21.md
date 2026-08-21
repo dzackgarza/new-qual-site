@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-For a space $X$, let $X^+$ be the one-point compactification. If the added point, denoted $\infty$, has a neighborhood in $X^+$ that is a cone with $\infty$ the cone point, show that the evident map $H_c^n(X; G) \to H^n(X^+, \infty; G)$ is an isomorphism for all $n$.
-
+For a space $X$, let $X^+$ be the one-point compactification.
+If the added point, denoted $\infty$, has a neighborhood in $X^+$ that is a cone with $\infty$ the cone point, show that the evident map $H_c^n(X; G) \to H^n(X^+, \infty; G)$ is an isomorphism for all $n$.

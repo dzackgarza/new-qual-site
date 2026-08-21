@@ -14,4 +14,3 @@ solved: false
 ---
 
 If a connected CW complex $X$ retracts onto a subcomplex $A$, show that $\Sigma X \simeq \Sigma A \lor \Sigma(X/A)$.
-

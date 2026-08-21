@@ -14,4 +14,3 @@ solved: false
 ---
 
 Given a map $f: A \to B$ and a homotopy equivalence $g: C \to A$, show that the fibrations $E_f \to B$ and $E_{fg} \to B$ are fiber homotopy equivalent.
-

@@ -28,5 +28,6 @@ source:
 ---
 
 ::: remark
-`.tmp-uga-ra-empty/JAN-2019.txt` is a different exam (Masters/Ph.D. Qualifying Exam, Math 825/826, January 23, 2019), not this Quals posting. Extra_Questions "January 2019 Qualifying Exam" `P-BKCZH` is an item on that other paper, not this one.
+`.tmp-uga-ra-empty/JAN-2019.txt` is a different exam (Masters/Ph.D. Qualifying Exam, Math 825/826, January 23, 2019), not this Quals posting.
+Extra_Questions "January 2019 Qualifying Exam" `P-BKCZH` is an item on that other paper, not this one.
 :::

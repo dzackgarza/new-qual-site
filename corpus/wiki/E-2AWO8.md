@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §46.2"}
 
-
-Prove Theorem 46.7. Let $X$ be a space; let $(Y, d)$ be a metric space. For the function space $Y^X$, one has the following inclusions of topologies:
+Prove Theorem 46.7. Let $X$ be a space; let $(Y, d)$ be a metric space.
+For the function space $Y^X$, one has the following inclusions of topologies:
 
 $$
 (\text{uniform}) \supset (\text{compact convergence}) \supset (\text{pointwise convergence}).

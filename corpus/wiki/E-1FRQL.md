@@ -16,8 +16,8 @@ solved: false
 
 ::: {.exercise title="Munkres §48.9"}
 
-
-Let $g: \mathbb{Z}_+ \to \mathbb{Q}$ be a bijective function; let $x_n = g(n)$. Define $f: \mathbb{R} \to \mathbb{R}$ as follows:
+Let $g: \mathbb{Z}_+ \to \mathbb{Q}$ be a bijective function; let $x_n = g(n)$.
+Define $f: \mathbb{R} \to \mathbb{R}$ as follows:
 
 $$
 \begin{array}{ll}
@@ -26,5 +26,6 @@ f(x) = 0 & \text{for } x \notin \mathbb{Q}.
 \end{array}
 $$
 
-Show that $f$ is continuous at each irrational and discontinuous at each rational. Can you find a sequence of continuous functions $f_n$ converging to $f$?
+Show that $f$ is continuous at each irrational and discontinuous at each rational.
+Can you find a sequence of continuous functions $f_n$ converging to $f$?
 :::

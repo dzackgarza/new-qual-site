@@ -15,6 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §79.1"}
 
-
-Show that if $n > 1$, every continuous map $f: S^n \to S^1$ is nulhomotopic. [Hint: Use the lifting lemma.]
+Show that if $n > 1$, every continuous map $f: S^n \to S^1$ is nulhomotopic.
+[Hint: Use the lifting lemma.]
 :::

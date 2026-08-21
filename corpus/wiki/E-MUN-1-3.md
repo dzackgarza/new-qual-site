@@ -15,7 +15,6 @@ solved: false
 
 ::: {.exercise title="Munkres §1.3"}
 
-
 (a) Write the contrapositive and converse of the following statement: "If $x < 0$, then $x^2 - x > 0$," and determine which (if any) of the three statements are true.
 
 (b) Do the same for the statement "If $x > 0$, then $x^2 - x > 0$ ."

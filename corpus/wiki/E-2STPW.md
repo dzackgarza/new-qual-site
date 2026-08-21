@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §55.2"}
 
-
 Show that if $h: S^1 \to S^1$ is nulhomotopic, then $h$ has a fixed point and $h$ maps some point $x$ to its antipode $-x$.
 :::

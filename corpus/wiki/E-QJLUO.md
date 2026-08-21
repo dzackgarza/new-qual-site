@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §33.8"}
 
-
-Let $X$ be completely regular; let $A$ and $B$ be disjoint closed subsets of $X$. Show that if $A$ is compact, there is a continuous function $f: X \to [0, 1]$ such that $f(A) = \ts{0}$ and $f(B) = \ts{1}$.
+Let $X$ be completely regular; let $A$ and $B$ be disjoint closed subsets of $X$.
+Show that if $A$ is compact, there is a continuous function $f: X \to [0, 1]$ such that $f(A) = \ts{0}$ and $f(B) = \ts{1}$.
 :::

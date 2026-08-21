@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §23.8"}
 
-
 Determine whether or not $\mathbb{R}^\omega$ is connected in the uniform topology.
 :::

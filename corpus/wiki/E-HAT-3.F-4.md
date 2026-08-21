@@ -13,5 +13,5 @@ review: draft
 solved: false
 ---
 
-An abelian group $G$ is defined to be divisible if the map $G \xrightarrow{n} G$, $g \mapsto ng$, is surjective for all $n > 1$. Show that a group is divisible if it is a quotient of a direct sum of $\mathbb{Q}$'s. Deduce from the previous problem that if $G$ is divisible then $\operatorname{Ext}(A, G) = 0$ for all $A$.
-
+An abelian group $G$ is defined to be divisible if the map $G \xrightarrow{n} G$, $g \mapsto ng$, is surjective for all $n > 1$.
+Show that a group is divisible if it is a quotient of a direct sum of $\mathbb{Q}$'s. Deduce from the previous problem that if $G$ is divisible then $\operatorname{Ext}(A, G) = 0$ for all $A$.

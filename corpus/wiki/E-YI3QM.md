@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §78.3"}
 
-
 Show that the closed unit ball in $\mathbb{R}^2$ is a 2-manifold with boundary.
 :::

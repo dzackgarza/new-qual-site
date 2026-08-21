@@ -16,7 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §29.2"}
 
-
 Let $\ts{X_\alpha}$ be an indexed family of nonempty spaces.
 
 (a) Show that if $\prod X_\alpha$ is locally compact, then each $X_\alpha$ is locally compact and $X_\alpha$ is compact for all but finitely many values of $\alpha$.

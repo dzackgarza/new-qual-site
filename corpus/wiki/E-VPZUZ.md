@@ -16,6 +16,7 @@ solved: false
 
 ::: {.exercise title="Munkres §47.5"}
 
-
-Let $(Y, d)$ be a metric space; let $f_n: X \to Y$ be a sequence of continuous functions; let $f: X \to Y$ be a function (not necessarily continuous). Suppose $f_n$ converges to $f$ in the topology of pointwise convergence. Show that if $\ts{f_n}$ is equicontinuous, then $f$ is continuous and $f_n$ converges to $f$ in the topology of compact convergence.
+Let $(Y, d)$ be a metric space; let $f_n: X \to Y$ be a sequence of continuous functions; let $f: X \to Y$ be a function (not necessarily continuous).
+Suppose $f_n$ converges to $f$ in the topology of pointwise convergence.
+Show that if $\ts{f_n}$ is equicontinuous, then $f$ is continuous and $f_n$ converges to $f$ in the topology of compact convergence.
 :::

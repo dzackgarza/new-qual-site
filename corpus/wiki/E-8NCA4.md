@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §68.1"}
 
-
 Check the details of Example 1 of §68.
 :::

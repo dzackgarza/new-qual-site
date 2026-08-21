@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §27.4"}
 
-
 Show that a connected metric space having more than one point is uncountable.
 :::

@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §18.1"}
 
-
 Prove that for functions $f: \mathbb{R} \to \mathbb{R}$, the $\epsilon$-$\delta$ definition of continuity implies the open set definition.
 :::

@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §50 Supplementary"}
 
-
 Show that $\mathbb{R}$ is locally 1-euclidean and satisfies (ii) but not (i) of Exercise 2.
 :::

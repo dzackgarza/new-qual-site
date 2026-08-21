@@ -15,6 +15,5 @@ solved: false
 
 ::: {.exercise title="Munkres §32.1"}
 
-
 Show that a closed subspace of a normal space is normal.
 :::

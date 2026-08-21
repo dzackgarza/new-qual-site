@@ -16,6 +16,6 @@ solved: false
 
 ::: {.exercise title="Munkres §21.1"}
 
-
-Let $A \subset X$. If $d$ is a metric for the topology of $X$, show that $d \mid A \times A$ is a metric for the subspace topology on $A$.
+Let $A \subset X$.
+If $d$ is a metric for the topology of $X$, show that $d \mid A \times A$ is a metric for the subspace topology on $A$.
 :::

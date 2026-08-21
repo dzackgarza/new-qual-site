@@ -14,4 +14,3 @@ solved: false
 ---
 
 Find all the connected 2-sheeted and 3-sheeted covering spaces of $S^1 \vee S^1$, up to isomorphism of covering spaces without basepoints.
-

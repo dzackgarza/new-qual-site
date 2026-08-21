@@ -14,4 +14,3 @@ solved: false
 ---
 
 Show that all Whitehead products in a path-connected H-space are trivial.
-

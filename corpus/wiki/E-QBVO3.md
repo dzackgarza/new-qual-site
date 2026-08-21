@@ -16,6 +16,5 @@ solved: false
 
 ::: {.exercise title="Munkres §32.10"}
 
-
 Is every topological group normal?
 :::
