@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
+  - Cauchy-Riemann
 relations: []
 review: draft
 solved: true

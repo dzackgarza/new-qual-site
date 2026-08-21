@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - linear-algebra
-  - matrices
-  - canonical-forms
+  - Linear Algebra
+  - Matrices
+  - Canonical Forms
 relations: []
 review: draft
 solved: true
