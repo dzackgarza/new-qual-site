@@ -287,6 +287,61 @@ source:
     - E-EDUVQ
     - E-F46JG
     - E-OHHSA
+  - name: '34'
+    problems:
+    - E-013M4
+    - E-LESK3
+    - E-MUH7R
+    - E-RX228
+    - E-FGRFM
+    - E-TFUF2
+    - E-MQTBP
+    - E-KK77N
+    - E-QGR6H
+  - name: '35'
+    problems:
+    - E-QSI4Y
+    - E-DM2U0
+    - E-3JLUV
+    - E-H5NO6
+    - E-9RR0I
+    - E-ZYJGG
+    - E-OI7VN
+    - E-Z964O
+    - E-HYC1G
+  - name: '36'
+    problems:
+    - E-V76F1
+    - E-POA5M
+    - E-X1QM4
+    - E-5VWPC
+    - E-29WP0
+    - E-PWXIV
+    - E-873VF
+    - E-4KGM4
+    - E-CJGFE
+    - E-57O2M
+    - E-DX7N2
+    - E-1CMTE
+  - name: '37'
+    problems:
+    - E-KIH81
+    - E-TTFVV
+    - E-CTM3H
+    - E-9OT3C
+    - E-8T3QS
+  - name: '38'
+    problems:
+    - E-4WQEM
+    - E-UB4PP
+    - E-QVH6Y
+    - E-QZUV0
+    - E-TTTSP
+    - E-9O8YW
+    - E-L2EHD
+    - E-7NRBE
+    - E-F68KP
+    - E-LS2QW
 ---
 
 ::: remark
