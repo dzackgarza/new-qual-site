@@ -118,6 +118,35 @@ source:
     - E-WWROF
     - E-1841E
     - E-YTG4V
+  - name: '22'
+    problems:
+    - E-3SU0X
+    - E-RWKRJ
+    - E-LEE5L
+    - E-BBGSH
+    - E-JZMX6
+    - E-KIN90
+    - E-Q5WSL
+    - E-MH2FB
+    - E-0S3OA
+    - E-1KV5G
+    - E-U8UBU
+    - E-P5AAV
+    - E-PFQIX
+  - name: '23'
+    problems:
+    - E-O13MH
+    - E-LEN3V
+    - E-BZW5J
+    - E-Z13JH
+    - E-W6ZTU
+    - E-LY1GZ
+    - E-O5T9Y
+    - E-5CS9C
+    - E-0B5CJ
+    - E-F01YX
+    - E-4T2MK
+    - E-XW377
   - name: '30'
     problems:
     - E-5FLKZ
