@@ -373,6 +373,54 @@ source:
     problems:
     - E-LZX97
     - E-I61EM
+  - name: '43'
+    problems:
+    - E-S7K3V
+    - E-8QHNV
+    - E-MPI86
+    - E-O0XAB
+    - E-PCAYG
+    - E-AY5GK
+    - E-9TP29
+    - E-4P6A6
+    - E-2TY2B
+    - E-M23QZ
+  - name: '44'
+    problems:
+    - E-SADP0
+    - E-WVVWW
+    - E-ER6ZN
+    - E-YQUO1
+  - name: '45'
+    problems:
+    - E-OD5RT
+    - E-5QSZ7
+    - E-4289E
+    - E-ARGEV
+    - E-I41R1
+    - E-D6DOE
+    - E-3C4WF
+    - E-T8UBC
+  - name: '46'
+    problems:
+    - E-R4S34
+    - E-2AWO8
+    - E-CQHYY
+    - E-Q4E68
+    - E-CEDW5
+    - E-KNC0V
+    - E-WHB87
+    - E-0HGNK
+    - E-MPUGI
+    - E-KS2BT
+    - E-0GM3H
+  - name: '47'
+    problems:
+    - E-PKDH7
+    - E-Y3MSR
+    - E-UGSM8
+    - E-CT4NT
+    - E-VPZUZ
 ---
 
 ::: remark
