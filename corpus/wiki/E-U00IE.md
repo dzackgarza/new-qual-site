@@ -1,0 +1,20 @@
+---
+schema: qual/card@1
+id: E-U00IE
+kind: exercise
+title: Well-ordered sets times the half-open interval are linear continua
+classification:
+  areas:
+  - topology
+  topics:
+  - Order Topology
+relations: []
+review: draft
+solved: false
+---
+
+Show that if $X$ is a well-ordered set, then $X \times [0, 1)$ in the dictionary order is a linear continuum.
+
+::: {.remark}
+Munkres, *Topology*, §24 Exercise 6.
+:::

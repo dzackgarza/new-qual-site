@@ -21,7 +21,7 @@ All paths are under `/home/dzack/Zotero/storage/<attachment-key>/`.
 | Collection ID | Textbook | Exercises in corpus | `completion` |
 | --- | --- | --- | --- |
 | `SRC-TEXT-HK71` | Hoffman & Kunze | 6 (§1.2, §2.1) | incomplete |
-| `SRC-TEXT-MUN00` | Munkres | 111 (§13, §16–§23, §30) | incomplete |
+| `SRC-TEXT-MUN00` | Munkres | 182 (§13, §16–§29, §30) | incomplete |
 | `SRC-TEXT-HAT02` | Hatcher | 1 (Ch. 0) | incomplete |
 | `SRC-TEXT-DF04` | Dummit & Foote | 1 (§5.5) | incomplete |
 | `SRC-TEXT-HUN74` | Hungerford | 67 (Chs. I–VII) | — |
@@ -60,7 +60,7 @@ All paths are under `/home/dzack/Zotero/storage/<attachment-key>/`.
 | --- | --- | --- | --- |
 | 1 | Set Theory and Logic | §1–§11 (11) | — |
 | 2 | Topological Spaces and Continuous Functions | §12–§22 (11) | §13 (8), §16 (10), §17 (21), §18 (13), §19 (10), §20 (11), §21 (12) |
-| 3 | Connectedness and Compactness | §23–§29 (7) | §23 (12) |
+| 3 | Connectedness and Compactness | §23–§29 (7) | §23 (12), §24 (12), §25 (10), §26 (13), §27 (6), §28 (7), §29 (23, incl. nets) |
 | 4 | Countability and Separation Axioms | §30–§36 (7) | §30 (1 ex: `E-5FLKZ`) |
 | 5 | The Tychonoff Theorem | §37–§38 (2) | — |
 | 6 | Metrization Theorems and Paracompactness | §39–§42 (4) | — |
