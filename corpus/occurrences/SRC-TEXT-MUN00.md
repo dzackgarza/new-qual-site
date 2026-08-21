@@ -535,6 +535,38 @@ source:
     - E-5CC0M
     - E-KS2QC
     - E-UMMOE
+  - name: '61'
+    problems:
+    - E-5WDER
+    - E-LP6WS
+  - name: '62'
+    problems:
+    - E-5VNUL
+    - E-OSQTJ
+    - E-AGJM5
+    - E-MAH4O
+    - E-81J56
+    - E-APRPU
+  - name: '63'
+    problems:
+    - E-HQSSE
+    - E-4E1C9
+    - E-XJMHL
+  - name: '64'
+    problems:
+    - E-41BN2
+  - name: '66'
+    problems:
+    - E-LHQJE
+    - E-3FN03
+  - name: '67'
+    problems:
+    - E-JSSPA
+    - E-SRFW8
+    - E-UVWDX
+    - E-T179H
+    - E-3CFLD
+    - E-H238X
 ---
 
 ::: remark
