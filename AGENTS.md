@@ -139,6 +139,11 @@ fabricating content, not rendering it.
 
 # Collection provenance
 
+The corpus has two tiers: collections and problems. A collection is the only
+card that carries `provenance:`. A problem carries no provenance; where a
+problem comes from follows from backlinks — every collection whose
+`source.problems` lists it. Collection cards live in `corpus/collections/`.
+
 A collection is a source document, not an exam sitting. One PDF is one
 collection. If that PDF *is* a single sitting's problem set, the collection is
 that sitting. If the PDF is a compilation of several papers, the collection is
