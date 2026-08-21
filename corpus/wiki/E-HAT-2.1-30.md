@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.1-30
 kind: exercise
-title: Five-lemma: if all but one map in commutative diagram are isomorphisms, so is the remaining one
+title: 'Five-lemma: if all but one map in commutative diagram are isomorphisms, so is the remaining one'
 classification:
   areas:
   - topology

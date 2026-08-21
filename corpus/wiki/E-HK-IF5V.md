@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HK-IF5V
 kind: exercise
-title: "Solutions to a homogeneous system over $\CC$"
+title: Solutions to a homogeneous system over $\CC$
 classification:
   areas:
   - algebra

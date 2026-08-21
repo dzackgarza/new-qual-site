@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-2
 kind: exercise
-title: "Laws of inequalities for $\mathbb{R}$"
+title: Laws of inequalities for $\mathbb{R}$
 classification:
   areas:
   - topology
@@ -14,7 +14,6 @@ solved: false
 ---
 
 ::: {.exercise title="Munkres §4.2"}
-
 
 Prove the following "laws of inequalities" for $\mathbb{R}$, using axioms (1)-(6) along with the results of Exercise 1:
 

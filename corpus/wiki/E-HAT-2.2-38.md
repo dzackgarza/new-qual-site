@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.2-38
 kind: exercise
-title: Algebraic lemma: diagram with two exact rows and isomorphisms every third vertical map yields long exact sequence
+title: 'Algebraic lemma: diagram with two exact rows and isomorphisms every third vertical map yields long exact sequence'
 classification:
   areas:
   - topology

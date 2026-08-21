@@ -1,3 +1,17 @@
+---
+schema: qual/card@1
+id: E-HAT-3.1-5
+kind: exercise
+title: Hatcher Section 3.1 Exercise 5
+classification:
+  areas:
+  - topology
+  topics:
+  - Cohomology
+relations: []
+review: draft
+solved: false
+---
 # E-HAT-3.1-5
 
 Regarding a cochain $\varphi \in C^1(X; G)$ as a function from paths in $X$ to $G$, show that if $\varphi$ is a cocycle, then

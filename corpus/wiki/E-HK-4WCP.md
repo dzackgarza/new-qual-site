@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HK-4WCP
 kind: exercise
-title: "Row-reducing a $3 \times 2$ matrix over $\CC$"
+title: Row-reducing a $3 \times 2$ matrix over $\CC$
 classification:
   areas:
   - algebra

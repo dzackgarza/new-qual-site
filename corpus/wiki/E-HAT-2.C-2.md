@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HAT-2.C-2
 kind: exercise
-title: Lefschetz fixed point theorem: map $S^n \to S^n$ has fixed point unless degree equals antipodal degree
+title: 'Lefschetz fixed point theorem: map $S^n \to S^n$ has fixed point unless degree equals antipodal degree'
 classification:
   areas:
   - topology

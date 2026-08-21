@@ -1,3 +1,17 @@
+---
+schema: qual/card@1
+id: E-HAT-3.1-11
+kind: exercise
+title: Hatcher Section 3.1 Exercise 11
+classification:
+  areas:
+  - topology
+  topics:
+  - Cohomology
+relations: []
+review: draft
+solved: false
+---
 # E-HAT-3.1-11
 
 Let $X$ be a Moore space $M(\mathbb{Z}_m, n)$ obtained from $S^n$ by attaching a cell $e^{n+1}$ by a map of degree $m$.

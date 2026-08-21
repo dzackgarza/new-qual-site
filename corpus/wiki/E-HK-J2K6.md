@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HK-J2K6
 kind: exercise
-title: "Row-reduction and factorization over $\CC$"
+title: Row-reduction and factorization over $\CC$
 classification:
   areas:
   - algebra

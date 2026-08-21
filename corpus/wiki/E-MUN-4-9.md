@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-9
 kind: exercise
-title: "Archimedean property and density of $\mathbb{Q}$ in $\mathbb{R}$"
+title: Archimedean property and density of $\mathbb{Q}$ in $\mathbb{R}$
 classification:
   areas:
   - topology
@@ -14,7 +14,6 @@ solved: false
 ---
 
 ::: {.exercise title="Munkres §4.9"}
-
 
 (a) Show that every nonempty subset of $\mathbb{Z}$ that is bounded above has a largest element.
 

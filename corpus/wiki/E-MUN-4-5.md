@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-5
 kind: exercise
-title: "Closure properties of $\mathbb{Z}$ and $\mathbb{Z}_+$"
+title: Closure properties of $\mathbb{Z}$ and $\mathbb{Z}_+$
 classification:
   areas:
   - topology
@@ -14,7 +14,6 @@ solved: false
 ---
 
 ::: {.exercise title="Munkres §4.5"}
-
 
 Prove the following properties of $\mathbb{Z}$ and $\mathbb{Z}_{+}$ :
 

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-7-5
 kind: exercise
-title: "Countability of function spaces and subsets of $\mathbb{Z}_+$"
+title: Countability of function spaces and subsets of $\mathbb{Z}_+$
 classification:
   areas:
   - topology
@@ -15,8 +15,8 @@ solved: false
 
 ::: {.exercise title="Munkres §7.5"}
 
-
-Determine, for each of the following sets, whether or not it is countable. Justify your answers.
+Determine, for each of the following sets, whether or not it is countable.
+Justify your answers.
 
 (a) The set $A$ of all functions $f:\{0,1\} \to \mathbb{Z}_{+}$ .
 
@@ -28,7 +28,8 @@ Determine, for each of the following sets, whether or not it is countable. Justi
 
 (e) The set E of all functions $f : Z_{+} \to \{0, 1\}$ .
 
-(f) The set $F$ of all functions $f: \mathbb{Z}_{+} \to \{0,1\}$ that are "eventually zero." [We say that $f$ is eventually zero if there is a positive integer $N$ such that $f(n) = 0$ for all $n \geq N$ .]
+(f) The set $F$ of all functions $f: \mathbb{Z}_{+} \to \{0,1\}$ that are "eventually zero."
+[We say that $f$ is eventually zero if there is a positive integer $N$ such that $f(n) = 0$ for all $n \geq N$ .]
 
 (g) The set $G$ of all functions $f: \mathbb{Z}_{+} \to \mathbb{Z}_{+}$ that are eventually 1.
 

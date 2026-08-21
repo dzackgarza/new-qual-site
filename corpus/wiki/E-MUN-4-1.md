@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-4-1
 kind: exercise
-title: "Laws of algebra for $\mathbb{R}$ from the field axioms"
+title: Laws of algebra for $\mathbb{R}$ from the field axioms
 classification:
   areas:
   - topology
@@ -14,7 +14,6 @@ solved: false
 ---
 
 ::: {.exercise title="Munkres §4.1"}
-
 
 Prove the following "laws of algebra" for $\mathbb{R}$, using only axioms (1)-(5):
 
