@@ -31,7 +31,3 @@ source:
     year: 2014
     term: fall
 ---
-
-::: remark
-TAMU real-analysis Fall 2014. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/a14.pdf (Qualifying Examination in Real Variables, August 2014). Transcript: `.tmp-papers/tamu-a14.txt`. Ten numbered questions; the list is the sitting order on that paper. No holes.
-:::

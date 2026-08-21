@@ -28,7 +28,3 @@ source:
     term: spring
     year: 2018
 ---
-
-::: remark
-UGA complex-analysis Spring 2018. The paper is the current Quals posting `Complex Analysis [Spring 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BSpring%C2%A02018%5D.docx`). The local dump is `.tmp-uga-ca-exams/SPRING-2018.txt`. The catalog PDF `https://www.math.uga.edu/sites/default/files/inline-files/ComplexQual_Spring18.pdf` currently 404s. The list is the sitting order on that paper. There are no holes.
-:::

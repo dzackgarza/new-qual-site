@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-In the proof of normality of a linear graph $X$, why did we assume that every vertex of $X$ belongs either to $B$ or to $C$?
+::: {.exercise title="Munkres §83.1"}
 
-::: {.remark}
-Munkres, *Topology*, §83 Exercise 1.
+
+In the proof of normality of a linear graph $X$, why did we assume that every vertex of $X$ belongs either to $B$ or to $C$?
 :::

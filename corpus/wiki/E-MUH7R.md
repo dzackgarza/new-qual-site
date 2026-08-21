@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be a compact Hausdorff space. Show that $X$ is metrizable if and only if $X$ has a countable basis.
+::: {.exercise title="Munkres §34.3"}
 
-::: {.remark}
-Munkres, *Topology*, §34 Exercise 3.
+
+Let $X$ be a compact Hausdorff space. Show that $X$ is metrizable if and only if $X$ has a countable basis.
 :::

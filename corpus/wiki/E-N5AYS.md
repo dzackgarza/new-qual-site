@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ has a countable dense subset, every collection of disjoint open sets in $X$ is countable.
+::: {.exercise title="Munkres §30.13"}
 
-::: {.remark}
-Munkres, *Topology*, §30 Exercise 13.
+
+Show that if $X$ has a countable dense subset, every collection of disjoint open sets in $X$ is countable.
 :::

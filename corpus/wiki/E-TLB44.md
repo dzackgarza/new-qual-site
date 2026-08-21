@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §16.3"}
+
+
 Consider the set $Y = [-1, 1]$ as a subspace of $\mathbb{R}$.
 Which of the following sets are open in $Y$?
 Which are open in $\mathbb{R}$?
@@ -36,7 +39,4 @@ $$
 $$
 E = \ts{x \mid 0 < \abs{x} < 1 \text{ and } 1/x \notin \mathbb{Z}_+}.
 $$
-
-::: {.remark}
-Munkres, *Topology*, §16 Exercise 3.
 :::

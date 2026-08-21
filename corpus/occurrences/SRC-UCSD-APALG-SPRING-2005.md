@@ -28,7 +28,3 @@ source:
     term: spring
     year: 2005
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam dated May 23, 2005 (six problems, 20 points each). The list is the paper order.
-:::

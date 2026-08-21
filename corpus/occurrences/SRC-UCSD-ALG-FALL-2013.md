@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2013
 ---
-
-::: remark
-UCSD Algebra qualifying exam, Fall 2013 (seven problems). The list is the paper order.
-:::

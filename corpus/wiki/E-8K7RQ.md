@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-What are the components and path components of $\mathbb{R}_\ell$? What are the continuous maps $f: \mathbb{R} \to \mathbb{R}_\ell$?
+::: {.exercise title="Munkres §25.1"}
 
-::: {.remark}
-Munkres, *Topology*, §25 Exercise 1.
+
+What are the components and path components of $\mathbb{R}_\ell$? What are the continuous maps $f: \mathbb{R} \to \mathbb{R}_\ell$?
 :::

@@ -32,7 +32,3 @@ source:
     term: spring
     year: 2024
 ---
-
-::: remark
-UCSD Applied Algebra (Math 202) qualifying exam dated May 23, 2024 (ten problems, 10 points each). On the department qualifying-exams page the paper is linked as `SP24 math 202 exam.pdf` but hosted under the `algebra-math200/` directory; the header identifies Applied Algebra. The list is the paper order.
-:::

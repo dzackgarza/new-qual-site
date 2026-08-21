@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that a closed subspace of a normal space is normal.
+::: {.exercise title="Munkres §32.1"}
 
-::: {.remark}
-Munkres, *Topology*, §32 Exercise 1.
+
+Show that a closed subspace of a normal space is normal.
 :::

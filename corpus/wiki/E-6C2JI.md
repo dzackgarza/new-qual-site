@@ -13,12 +13,12 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §59.4"}
+
+
 Assume the hypotheses of Theorem 59.1.
 
 (a) What can you say about the fundamental group of $X$ if $j_*$ is the trivial homomorphism? If both $i_*$ and $j_*$ are trivial?
 
 (b) Give an example where $i_*$ and $j_*$ are trivial but neither $U$ nor $V$ have trivial fundamental groups.
-
-::: {.remark}
-Munkres, *Topology*, §59 Exercise 4.
 :::

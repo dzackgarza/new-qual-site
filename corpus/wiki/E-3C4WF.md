@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §45.7"}
+
+
 Let $(X, d)$ be a metric space. If $A \subset X$ and $\epsilon > 0$, let $U(A, \epsilon)$ be the $\epsilon$-neighborhood of $A$. Let $\mathcal{H}$ be the collection of all (nonempty) closed, bounded subsets of $X$. If $A, B \in \mathcal{H}$, define
 
 $$
@@ -27,7 +30,4 @@ $$
 (c) Show that if $(X, d)$ is totally bounded, so is $(\mathcal{H}, D)$. [Hint: Given $\epsilon$, choose $\delta < \epsilon$ and let $S$ be a finite subset of $X$ such that the collection $\ts{B_d(x, \delta) \mid x \in S}$ covers $X$. Let $\mathcal{A}$ be the collection of all nonempty subsets of $S$; show that $\ts{B_D(A, \epsilon) \mid A \in \mathcal{A}}$ covers $\mathcal{H}$.]
 
 (d) Theorem. If $X$ is compact in the metric $d$, then the space $\mathcal{H}$ is compact in the Hausdorff metric $D$.
-
-::: {.remark}
-Munkres, *Topology*, §45 Exercise 7 (starred in the text).
 :::

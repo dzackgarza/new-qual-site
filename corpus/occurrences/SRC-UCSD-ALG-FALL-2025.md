@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2025
 ---
-
-::: remark
-UCSD Algebra qualifying exam; department file `FA25 - Algebra Qualifying Exam.pdf`. The paper header reads Summer 2025 (seven problems; point values 8+7+7+6+6+6+10; total 50). The list is the paper order.
-:::

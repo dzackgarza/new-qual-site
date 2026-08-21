@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §82 Supplementary"}
+
+
 Prove the following.
 
 Theorem. Let $X$ be a space that is path connected, locally path connected, and semilocally simply connected. If $X$ is regular with a countable basis, then $\pi_1(X, x_0)$ is countable.
@@ -36,7 +39,4 @@ $$
 $$
 
 (c) Show that $[f] = [g_1] * \dots * [g_n]$.
-
-::: {.remark}
-Munkres, *Topology*, §82 Supplementary Exercises (Topological Properties and $\pi_1$) Exercise 2.
 :::

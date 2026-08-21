@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2016
 ---
-
-::: remark
-UGA algebra Spring 2016. Source: `.tmp-uga-alg-exams/SPRING-2016.txt` of the Quals posting `Algebra [Spring 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BSpring%C2%A02016%5D.docx`). The list is the sitting order on that paper.
-:::

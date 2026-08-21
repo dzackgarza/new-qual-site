@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Calculate $H_1(P^2 \# T)$. Assuming that the list of compact surfaces given in Theorem 75.5 is a complete list, to which of these surfaces is $P^2 \# T$ homeomorphic?
+::: {.exercise title="Munkres §75.1"}
 
-::: {.remark}
-Munkres, *Topology*, §75 Exercise 1.
+
+Calculate $H_1(P^2 \# T)$. Assuming that the list of compact surfaces given in Theorem 75.5 is a complete list, to which of these surfaces is $P^2 \# T$ homeomorphic?
 :::

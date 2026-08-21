@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the rationals $\mathbb{Q}$ are not locally compact.
+::: {.exercise title="Munkres §29.1"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Exercise 1.
+
+Show that the rationals $\mathbb{Q}$ are not locally compact.
 :::

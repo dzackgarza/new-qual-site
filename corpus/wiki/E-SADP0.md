@@ -13,12 +13,12 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §44.1"}
+
+
 Given $n$, show there is a continuous surjective map $g: I \to I^n$. [Hint: Consider
 
 $$
 f \times f: I \times I \to I^2 \times I^2.]
 $$
-
-::: {.remark}
-Munkres, *Topology*, §44 Exercise 1.
 :::

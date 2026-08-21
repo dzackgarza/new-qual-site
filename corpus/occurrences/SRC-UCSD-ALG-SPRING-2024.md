@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2024
 ---
-
-::: remark
-UCSD Algebra (Math 200) qualifying exam; department file `SP24 math 200 exam.pdf`. The paper header reads Spring 2024 (seven problems, 8 points each; total 56). The list is the paper order.
-:::

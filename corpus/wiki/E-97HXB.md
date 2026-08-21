@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that a retract of a contractible space is contractible.
+::: {.exercise title="Munkres §58.6"}
 
-::: {.remark}
-Munkres, *Topology*, §58 Exercise 6.
+
+Show that a retract of a contractible space is contractible.
 :::

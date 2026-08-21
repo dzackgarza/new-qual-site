@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §46.7"}
+
+
 Show that if $Y$ is locally compact Hausdorff, then composition of maps
 
 $$
@@ -20,7 +23,4 @@ $$
 $$
 
 is continuous, provided the compact-open topology is used throughout. [Hint: If $g \circ f \in S(C, U)$, find $V$ such that $f(C) \subset V$ and $g(\overline{V}) \subset U$.]
-
-::: {.remark}
-Munkres, *Topology*, §46 Exercise 7.
 :::

@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2012
 ---
-
-::: remark
-UGA topology Fall 2012. The paper is the current Quals posting `Topology [Fall 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2012.txt`. The list is the sitting order on that paper. Exam #8 lists [[P-DRVWD]] (same mapping torus as Fall 2009 #8).
-:::

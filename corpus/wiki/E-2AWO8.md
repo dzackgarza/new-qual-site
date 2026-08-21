@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §46.2"}
+
+
 Prove Theorem 46.7. Let $X$ be a space; let $(Y, d)$ be a metric space. For the function space $Y^X$, one has the following inclusions of topologies:
 
 $$
@@ -20,7 +23,4 @@ $$
 $$
 
 If $X$ is compact, the first two coincide, and if $X$ is discrete, the second two coincide.
-
-::: {.remark}
-Munkres, *Topology*, §46 Exercise 2.
 :::

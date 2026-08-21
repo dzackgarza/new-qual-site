@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §13.4"}
+
+
 (a) If $\ts{\mathcal{T}_\alpha}$ is a family of topologies on $X$, show that $\bigcap \mathcal{T}_\alpha$ is a topology on $X$.
 Is $\bigcup \mathcal{T}_\alpha$ a topology on $X$?
 
@@ -26,7 +29,4 @@ $$
 $$
 
 Find the smallest topology containing $\mathcal{T}_1$ and $\mathcal{T}_2$, and the largest topology contained in $\mathcal{T}_1$ and $\mathcal{T}_2$.
-
-::: {.remark}
-Munkres, *Topology*, §13 Exercise 4.
 :::

@@ -25,7 +25,3 @@ source:
     term: fall
     year: 2007
 ---
-
-::: remark
-UCSD Algebra / Applied Algebra Qual, Part 1: Matrix Theory, dated September 12, 2007 (three problems, 12+12+16 points). The linked PDF is this Part 1 cover sheet and problem list only; the score table also lists Part 2 (40) and B.C. (120), which are not present in the file. The list is the paper order.
-:::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that the long line ([[E-PQHZN]]) is locally 1-euclidean and satisfies (iv) but not (iii) of Exercise 2.
+::: {.exercise title="Munkres §50 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Supplementary Exercises (Locally Euclidean Spaces) Exercise 5.
+
+Show that the long line ([[E-PQHZN]]) is locally 1-euclidean and satisfies (iv) but not (iii) of Exercise 2.
 :::

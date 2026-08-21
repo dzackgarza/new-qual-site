@@ -33,9 +33,3 @@ source:
     term: fall
     year: 2019
 ---
-
-::: remark
-UGA algebra Fall 2019 qualifying exam. Source: `.tmp-uga-alg-exams/FALL-2019.txt` of the Quals posting `Algebra [Fall 2019].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
-
-The Fall 2019 algebra course midterm (`SRC-ALG-ART-QHGA3N`) and course final (`SRC-ALG-ART-HEACCB`) are separate documents, not this sitting.
-:::

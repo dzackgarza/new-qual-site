@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2019
 ---
-
-::: remark
-UCSD Algebra qualifying exam dated Fall 2019 (seven problems, 85 points total). The list is the paper order.
-:::

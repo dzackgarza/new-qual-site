@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $C$ be a simple closed curve in $\mathbb{R}^2 - 0$; let $j: C \to \mathbb{R}^2 - 0$ be the inclusion mapping. Show that $j_*$ is trivial if $0$ lies in the unbounded component of $\mathbb{R}^2 - C$, and is nontrivial otherwise. (In fact, $j_*$ is an isomorphism in the latter case, as we shall prove in §65.)
+::: {.exercise title="Munkres §62.4"}
 
-::: {.remark}
-Munkres, *Topology*, §62 Exercise 4.
+
+Let $C$ be a simple closed curve in $\mathbb{R}^2 - 0$; let $j: C \to \mathbb{R}^2 - 0$ be the inclusion mapping. Show that $j_*$ is trivial if $0$ lies in the unbounded component of $\mathbb{R}^2 - C$, and is nontrivial otherwise. (In fact, $j_*$ is an isomorphism in the latter case, as we shall prove in §65.)
 :::

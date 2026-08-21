@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §82 Supplementary"}
+
+
 Let $X$ be a space; let $\mathcal{A}$ be an open covering of $X$. Under what conditions does there exist an open covering $\mathcal{B}$ of $X$ refining $\mathcal{A}$ such that for each pair $B, B'$ of elements of $\mathcal{B}$ that have nonempty intersection, the union $B \cup B'$ lies in an element of $\mathcal{A}$?
 
 (a) Show that such a covering $\mathcal{B}$ exists if $X$ is metrizable. [Hint: Choose $\epsilon(x)$ so that $B(x, 3\epsilon(x))$ lies in an element of $\mathcal{A}$. Let $\mathcal{B}$ consist of the open sets $B(x, \epsilon(x))$.]
@@ -22,7 +25,4 @@ Let $X$ be a space; let $\mathcal{A}$ be an open covering of $X$. Under what con
 $$
 B_J = \bigcap_{j \in J} A_j - \bigcup_{j \notin J} \overline{C}_j.]
 $$
-
-::: {.remark}
-Munkres, *Topology*, §82 Supplementary Exercises (Topological Properties and $\pi_1$) Exercise 1.
 :::

@@ -30,5 +30,5 @@ source:
 ---
 
 ::: remark
-UGA prelim Fall 2007. The paper is the migrated sitting scan `grad_prelim_Fall07.pdf` (wiki attachments). The list is the sitting order on that paper. The paper is the August 10, 2007 sitting (7 problems). Exam #1, #2, #3, and #5 are `P-4PCPV`, `P-2WRUJ`, `P-YLM7G`, and `P-5YTY5`. Exam #6 reuses `P-F04T5` (same independence-preservation statement as Fall 2004 #5). The remaining items are minted as `P-F07LM` and `P-F07EX`.
+UGA prelim Fall 2007. The list is the sitting order on that paper. The paper is the August 10, 2007 sitting (7 problems). Exam #1, #2, #3, and #5 are `P-4PCPV`, `P-2WRUJ`, `P-YLM7G`, and `P-5YTY5`. Exam #6 reuses are `P-F04T5` (same independence-preservation statement as Fall 2004 #5). The remaining items are `P-F07LM` and `P-F07EX`.
 :::

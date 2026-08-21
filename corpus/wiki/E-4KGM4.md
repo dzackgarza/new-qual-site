@@ -13,10 +13,10 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §36 Supplementary"}
+
+
 Consider the seventeen properties listed in Exercise 1 of the Supplementary Exercises (Review of the Basics).
 
 Which of these properties does a compact Hausdorff space have?
-
-::: {.remark}
-Munkres, *Topology*, §36 Supplementary Exercises (Review of the Basics) Exercise 3.
 :::

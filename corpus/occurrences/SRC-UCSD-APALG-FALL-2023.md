@@ -34,7 +34,3 @@ source:
     term: fall
     year: 2023
 ---
-
-::: remark
-UCSD Applied Algebra Fall 2023 sitting in three department PDFs: Part A (`qual-23-Fall.pdf`, four questions), Part B (`202BQualF23.pdf`, four problems), Part C (`PartCFall2023.pdf`, two questions). The list is Part A, then Part B, then Part C, in paper order within each part. All three provenance PDFs were readable.
-:::

@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Given $n$ and $\epsilon$, define a continuous function $f: I \to \mathbb{R}$ such that $f \in U_n$ and $\abs{f(x)} \leq \epsilon$ for all $x$.
+::: {.exercise title="Munkres §49.2"}
 
-::: {.remark}
-Munkres, *Topology*, §49 Exercise 2.
+
+Given $n$ and $\epsilon$, define a continuous function $f: I \to \mathbb{R}$ such that $f \in U_n$ and $\abs{f(x)} \leq \epsilon$ for all $x$.
 :::

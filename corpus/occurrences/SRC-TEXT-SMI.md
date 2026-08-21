@@ -123,9 +123,9 @@ source:
 ---
 
 ::: remark
-Course notes with no publication year, so the date is recorded as unknown. Provenance is the Fall 2006 Math 8000 homework/tests packet `8000e.pdf` (12 pages).
+Course notes with no publication year, so the date is recorded as unknown.
 
-Listed: abelian groups, Euclidean domains, finitely generated modules, Jordan forms, Noetherian rings, normality and localization, Sylow, cycles and commutators, the concrete Galois problems, and the Fall 2006 midterm and final exams.
+Listed: abelian groups, Euclidean domains, finitely generated modules, Jordan forms, Noetherian rings, normality and localization, Sylow, cycles and commutators, and the concrete Galois problems.
 
 Remaining: the separate 843–845 course notes cited on the syllabus (a different document from this PDF).
 :::

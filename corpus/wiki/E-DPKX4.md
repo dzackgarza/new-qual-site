@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that $(X_1 \times \cdots \times X_{n-1}) \times X_n$ is homeomorphic with $X_1 \times \cdots \times X_n$.
+::: {.exercise title="Munkres §19.4"}
 
-::: {.remark}
-Munkres, *Topology*, §19 Exercise 4.
+
+Show that $(X_1 \times \cdots \times X_{n-1}) \times X_n$ is homeomorphic with $X_1 \times \cdots \times X_n$.
 :::

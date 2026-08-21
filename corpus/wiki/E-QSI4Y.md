@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the Tietze extension theorem implies the Urysohn lemma.
+::: {.exercise title="Munkres §35.1"}
 
-::: {.remark}
-Munkres, *Topology*, §35 Exercise 1.
+
+Show that the Tietze extension theorem implies the Urysohn lemma.
 :::

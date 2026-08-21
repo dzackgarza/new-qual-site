@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the general version of Ascoli's theorem implies the classical version (Theorem 45.4) when $X$ is Hausdorff.
+::: {.exercise title="Munkres §47.3"}
 
-::: {.remark}
-Munkres, *Topology*, §47 Exercise 3.
+
+Show that the general version of Ascoli's theorem implies the classical version (Theorem 45.4) when $X$ is Hausdorff.
 :::

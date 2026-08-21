@@ -17,7 +17,7 @@ from typing import get_args, get_type_hints
 import pytest
 from conftest import diagnostic_codes, fixture_repo, run_qualc
 from qualc.diagnostics import DiagnosticCode
-from qualc.model import Card
+from qualc.model import Card, CollectionCard, CompilationSource
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES = Path(__file__).resolve().parent / "fixtures" / "kinds"
@@ -61,7 +61,7 @@ def test_collection_completion_defaults_to_complete() -> None:
     from qualc.model import parse_card
 
     card = parse_card(FIXTURES / "SRC-DUMMIT.md").card
-    assert card.kind == "collection"
+    assert isinstance(card, CollectionCard)
     assert card.completion == "complete"
     assert card.provenance == []
 
@@ -72,6 +72,7 @@ def test_incomplete_completion_parses(tmp_path: Path) -> None:
     path = tmp_path / "SRC-DUMMIT.md"
     path.write_text((FIXTURES / "SRC-DUMMIT.md").read_text().replace("review: draft\n", "review: draft\ncompletion: incomplete\n", 1))
     card = parse_card(path).card
+    assert isinstance(card, CollectionCard)
     assert card.completion == "incomplete"
 
 
@@ -98,6 +99,7 @@ def test_collection_provenance_parses(tmp_path: Path) -> None:
         )
     )
     card = parse_card(path).card
+    assert isinstance(card, CollectionCard)
     assert card.provenance == [
         "https://example.org/source.pdf",
         "assets/attachments/notes.pdf",
@@ -126,6 +128,8 @@ def test_compilation_sections_are_the_listing(tmp_path: Path) -> None:
         )
     )
     parsed = parse_card(card).card
+    assert isinstance(parsed, CollectionCard)
+    assert isinstance(parsed.source, CompilationSource)
     assert parsed.source.sections[0].name == "Day 1"
     assert parsed.source.listed_problem_ids() == ["P-INDEXP"]
     result = run_qualc("build", work)
@@ -149,6 +153,8 @@ def test_compilation_section_may_list_a_collection(tmp_path: Path) -> None:
         )
     )
     parsed = parse_card(card).card
+    assert isinstance(parsed, CollectionCard)
+    assert isinstance(parsed.source, CompilationSource)
     assert parsed.source.sections[0].problems == ["SRC-UGA-FIX"]
     assert parsed.source.listed_problem_ids() == []
     result = run_qualc("build", work)

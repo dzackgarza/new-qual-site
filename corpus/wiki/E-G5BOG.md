@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that a subspace of a Hausdorff space is Hausdorff.
+::: {.exercise title="Munkres §17.12"}
 
-::: {.remark}
-Munkres, *Topology*, §17 Exercise 12.
+
+Show that a subspace of a Hausdorff space is Hausdorff.
 :::

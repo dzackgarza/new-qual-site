@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2015
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam, Spring 2015 (`202Qual.pdf`). Seven problems in paper order; the instructions require Problems 1–4 and two among 5–7.
-:::

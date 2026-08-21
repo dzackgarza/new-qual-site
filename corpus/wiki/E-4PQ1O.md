@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §29 Supplementary"}
+
+
 Suppose that
 
 $$
@@ -21,7 +24,4 @@ $$
 $$
 
 Show that $(x_\alpha \times y_\alpha) \to x \times y$ in $X \times Y$.
-
-::: {.remark}
-Munkres, *Topology*, §29 Supplementary Exercises (Nets) Exercise 4.
 :::

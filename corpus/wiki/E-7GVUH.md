@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §33.1"}
+
+
 Examine the proof of the Urysohn lemma, and show that for given $r$,
 
 $$
@@ -20,7 +23,4 @@ f^{-1}(r) = \bigcap_{p > r} U_p - \bigcup_{q < r} U_q,
 $$
 
 where $p, q$ range over the rationals.
-
-::: {.remark}
-Munkres, *Topology*, §33 Exercise 1.
 :::

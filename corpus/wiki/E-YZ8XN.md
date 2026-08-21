@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that a simply connected space is semilocally simply connected.
+::: {.exercise title="Munkres §82.1"}
 
-::: {.remark}
-Munkres, *Topology*, §82 Exercise 1.
+
+Show that a simply connected space is semilocally simply connected.
 :::

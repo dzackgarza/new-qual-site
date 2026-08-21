@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §76.2"}
+
+
 Consider the space $X$ obtained from two polygonal regions by means of the labelling schemes $w_1 = abcc$ and $w_2 = c^{-1}c^{-1}ab$. The sequence of elementary operations
 
 $$
@@ -33,7 +36,4 @@ abcc \text{ and } c^{-1}c^{-1}ab & \to abcc^{-1}ab \text{ by pasting} \\
 $$
 
 indicates that $X$ is homeomorphic to $P^2$. But these two spaces are not homeomorphic. Which (if either) argument is correct?
-
-::: {.remark}
-Munkres, *Topology*, §76 Exercise 2.
 :::

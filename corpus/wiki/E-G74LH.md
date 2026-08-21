@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be locally path connected. Show that every connected open set in $X$ is path connected.
+::: {.exercise title="Munkres §25.4"}
 
-::: {.remark}
-Munkres, *Topology*, §25 Exercise 4.
+
+Let $X$ be locally path connected. Show that every connected open set in $X$ is path connected.
 :::

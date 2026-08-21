@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Prove that if $X$ is an ordered set in which every closed interval is compact, then $X$ has the least upper bound property.
+::: {.exercise title="Munkres §27.1"}
 
-::: {.remark}
-Munkres, *Topology*, §27 Exercise 1.
+
+Prove that if $X$ is an ordered set in which every closed interval is compact, then $X$ has the least upper bound property.
 :::

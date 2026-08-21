@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the closed unit ball in $\mathbb{R}^2$ is a 2-manifold with boundary.
+::: {.exercise title="Munkres §78.3"}
 
-::: {.remark}
-Munkres, *Topology*, §78 Exercise 3.
+
+Show that the closed unit ball in $\mathbb{R}^2$ is a 2-manifold with boundary.
 :::

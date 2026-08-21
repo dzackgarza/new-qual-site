@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §16.6"}
+
+
 Show that the countable collection
 
 $$
@@ -21,7 +24,4 @@ $$
 $$
 
 is a basis for $\mathbb{R}^2$.
-
-::: {.remark}
-Munkres, *Topology*, §16 Exercise 6.
 :::

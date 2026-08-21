@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §20.10"}
+
+
 Let $X$ denote the subset of $\mathbb{R}^\omega$ consisting of all sequences $(x_1, x_2, \ldots)$ such that $\sum x_i^2$ converges. (You may assume the standard facts about infinite series. In case they are not familiar to you, we shall give them in Exercise 11 of the next section.)
 
 (a) Show that if $\mathbf{x}, \mathbf{y} \in X$, then $\sum \abs{x_i y_i}$ converges. [Hint: Use (b) of Exercise 9 to show that the partial sums are bounded.]
@@ -26,7 +29,4 @@ d(\mathbf{x}, \mathbf{y}) = \left[ \sum_{i=1}^{\infty} (x_i - y_i)^2 \right]^{1/
 $$
 
 is a well-defined metric on $X$.
-
-::: {.remark}
-Munkres, *Topology*, §20 Exercise 10.
 :::

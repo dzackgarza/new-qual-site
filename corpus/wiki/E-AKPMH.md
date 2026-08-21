@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the irrationals are a Baire space.
+::: {.exercise title="Munkres §48.6"}
 
-::: {.remark}
-Munkres, *Topology*, §48 Exercise 6.
+
+Show that the irrationals are a Baire space.
 :::

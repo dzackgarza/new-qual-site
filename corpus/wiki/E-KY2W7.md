@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that $\mathbb{R} \times \mathbb{R}$ in the dictionary order topology is metrizable.
+::: {.exercise title="Munkres §20.2"}
 
-::: {.remark}
-Munkres, *Topology*, §20 Exercise 2.
+
+Show that $\mathbb{R} \times \mathbb{R}$ in the dictionary order topology is metrizable.
 :::

@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ is a well-ordered set, then $X \times [0, 1)$ in the dictionary order is a linear continuum.
+::: {.exercise title="Munkres §24.6"}
 
-::: {.remark}
-Munkres, *Topology*, §24 Exercise 6.
+
+Show that if $X$ is a well-ordered set, then $X \times [0, 1)$ in the dictionary order is a linear continuum.
 :::

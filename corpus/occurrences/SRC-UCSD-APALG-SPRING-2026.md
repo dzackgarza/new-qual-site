@@ -32,7 +32,3 @@ source:
     term: spring
     year: 2026
 ---
-
-::: remark
-UCSD Applied Algebra (Math 202 A/B/C) qualifying exam, Spring 2026 (ten problems). The cover defines Hilbert space and algebra for the sitting. The list is the paper order.
-:::

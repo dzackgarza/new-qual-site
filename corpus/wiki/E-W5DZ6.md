@@ -14,13 +14,13 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §17.9"}
+
+
 Let $A \subset X$ and $B \subset Y$.
 Show that in the space $X \times Y$,
 
 $$
 \overline{A \times B} = \overline{A} \times \overline{B}.
 $$
-
-::: {.remark}
-Munkres, *Topology*, §17 Exercise 9.
 :::

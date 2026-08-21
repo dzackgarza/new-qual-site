@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §37.5"}
+
+
 Here is a proof of the Tychonoff theorem that relies on the well-ordering theorem rather than on Zorn's lemma. First, prove the following version of the tube lemma; then prove the theorem.
 
 Lemma. Let $\mathcal{A}$ be a collection of basis elements for the topology of the product space $X \times Y$, such that no finite subcollection of $\mathcal{A}$ covers $X \times Y$. If $X$ is compact, there is a point $x \in X$ such that no finite subcollection of $\mathcal{A}$ covers the slice $\ts{x} \times Y$.
@@ -43,7 +46,4 @@ $$
 then $\mathcal{A}$ actually covers $Y_\alpha$ for some $\alpha < \beta$. [Hint: If $\beta$ has an immediate predecessor in $J$, let $\alpha$ be that immediate predecessor. Otherwise, for each $A \in \mathcal{A}$, let $J_A$ denote the set of those indices $i < \beta$ for which $\pi_i(A) \neq X_i$; the union of the sets $J_A$, for $A \in \mathcal{A}$, is finite; let $\alpha$ be the largest element of this union.]
 
 (b) Assume $\mathcal{A}$ is a collection of basis elements for $X$ such that no finite subcollection of $\mathcal{A}$ covers $X$. Show that one can choose points $p_i \in X_i$ for all $i$, such that for each $\alpha$, the space $Y_\alpha$ defined in (a) cannot be finitely covered by $\mathcal{A}$. When $\alpha$ is the largest element of $J$, one has a contradiction. [Hint: If $\alpha$ is the smallest element of $J$, use the preceding lemma to choose $p_\alpha$. If $p_i$ is defined for all $i < \beta$, note that (a) implies that the space $Z_\beta$ cannot be finitely covered by $\mathcal{A}$ and use the lemma to find $p_\beta$.]
-
-::: {.remark}
-Munkres, *Topology*, §37 Exercise 5 (starred in the text).
 :::

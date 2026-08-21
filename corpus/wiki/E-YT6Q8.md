@@ -14,10 +14,10 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §33.2"}
+
+
 (a) Show that a connected normal space having more than one point is uncountable.
 
 (b) Show that a connected regular space having more than one point is uncountable. [Hint: Any countable space is Lindelöf.]
-
-::: {.remark}
-Munkres, *Topology*, §33 Exercise 2.
 :::

@@ -28,6 +28,5 @@ source:
 ---
 
 ::: remark
-UGA real-analysis Spring 2008. The paper is the current Quals posting `Real Analysis [Spring 2008].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02008%5D.docx`), headed January 2008. The expected Quals files `Real Analysis [January 2008].docx` (regular space and NBSP) 404. Exam #5 is $L^1(\mathbb{R})$ convergence implying a subsequence a.e.; `P-YPGAW` is the $[0,1]$ statement with an extra uniform-convergence counterexample and was not used.
-The list is the sitting order on that paper.
+Exam #5 is $L^1(\mathbb{R})$ convergence implying a subsequence a.e.; `P-YPGAW` is the $[0,1]$ statement with an extra uniform-convergence counterexample and was not used.
 :::

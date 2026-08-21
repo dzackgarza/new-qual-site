@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that every locally compact Hausdorff space is regular.
+::: {.exercise title="Munkres §32.3"}
 
-::: {.remark}
-Munkres, *Topology*, §32 Exercise 3.
+
+Show that every locally compact Hausdorff space is regular.
 :::

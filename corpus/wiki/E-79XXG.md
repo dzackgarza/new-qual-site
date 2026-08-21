@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §81.2"}
+
+
 Let $X = A \vee B$ be the wedge of two circles.
 
 (a) Let $E$ be the space pictured in Figure 81.4; let $p: E \to X$ wrap each arc $A_1$ and $A_2$ around $A$ and map $B_1$ and $B_2$ homeomorphically onto $B$. Show that $p$ is a regular covering map.
@@ -22,7 +25,4 @@ Let $X = A \vee B$ be the wedge of two circles.
 (c) Repeat (b) for the covering pictured in Figure 81.6.
 
 (d) Repeat (b) for the covering pictured in Figure 81.7.
-
-::: {.remark}
-Munkres, *Topology*, §81 Exercise 2.
 :::

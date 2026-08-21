@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show there is a continuous surjective map $f: \mathbb{R} \to \mathbb{R}^n$.
+::: {.exercise title="Munkres §44.2"}
 
-::: {.remark}
-Munkres, *Topology*, §44 Exercise 2.
+
+Show there is a continuous surjective map $f: \mathbb{R} \to \mathbb{R}^n$.
 :::

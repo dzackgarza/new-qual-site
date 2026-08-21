@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2011
 ---
-
-::: remark
-UCSD Algebra (Math 200) qualifying exam, Fall 2011 (eight problems). The list is the paper order.
-:::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that the one-point compactification of $S_\Omega$ is homeomorphic with $\overline{S}_\Omega$.
+::: {.exercise title="Munkres §29.7"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Exercise 7.
+
+Show that the one-point compactification of $S_\Omega$ is homeomorphic with $\overline{S}_\Omega$.
 :::

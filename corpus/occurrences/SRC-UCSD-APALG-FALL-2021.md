@@ -32,7 +32,3 @@ source:
     term: fall
     year: 2021
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam dated Tuesday September 7th, 2021, in one department PDF (`FA21-Applied-Algebra.pdf`) containing Part A (four questions), Part B (four problems), and Part C (two questions). The list is Part A, then Part B, then Part C, in paper order within each part.
-:::

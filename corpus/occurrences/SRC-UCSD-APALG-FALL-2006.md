@@ -26,7 +26,3 @@ source:
     term: fall
     year: 2006
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam dated September 5, 2006 (Part I; four problems, 20 points each). The list is the paper order: Questions 1.1, 1.2, 2.1, 2.2.
-:::

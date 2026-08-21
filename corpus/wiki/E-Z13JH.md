@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ is an infinite set, it is connected in the finite complement topology.
+::: {.exercise title="Munkres §23.4"}
 
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 4.
+
+Show that if $X$ is an infinite set, it is connected in the finite complement topology.
 :::

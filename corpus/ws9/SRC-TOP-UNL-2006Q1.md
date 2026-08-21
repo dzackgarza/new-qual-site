@@ -30,9 +30,3 @@ source:
   institution: unl
   area: topology
 ---
-
-::: remark
-UNL Mathematics Qualifying Exam 970/971, January 2006.
-
-UNL Math 970/971 qualifying exam, January 2006. The paper is `assets/attachments/2006Q1_Topology_Qual.pdf`. Nine questions (A1–A5, B6–B9); the list is paper order. No holes.
-:::

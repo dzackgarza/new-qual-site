@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2012
 ---
-
-::: remark
-UGA algebra Fall 2012. Source: `.tmp-uga-alg-exams/FALL-2012.txt` of the Quals posting `Algebra [Fall 2012].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02012%5D.docx`). The local dump was missing at the start of this audit and was filled from that posting. The list is the sitting order on that paper.
-:::

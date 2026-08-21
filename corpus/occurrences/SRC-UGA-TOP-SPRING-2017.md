@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2017
 ---
-
-::: remark
-UGA topology Spring 2017. The paper is the current Quals posting `Topology [Spring 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2017.txt`. Exam #1 lists [[P-8TS26]] ($H_0$ of the closed topologist's sine curve drawn as Figure 1).
-:::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Prove Theorem 19.4: if each space $X_\alpha$ is a Hausdorff space, then $\prod X_\alpha$ is a Hausdorff space in both the box and product topologies.
+::: {.exercise title="Munkres §19.3"}
 
-::: {.remark}
-Munkres, *Topology*, §19 Exercise 3.
+
+Prove Theorem 19.4: if each space $X_\alpha$ is a Hausdorff space, then $\prod X_\alpha$ is a Hausdorff space in both the box and product topologies.
 :::

@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2015
 ---
-
-::: remark
-UGA algebra Fall 2015. Source: `.tmp-uga-alg-exams/FALL-2015.txt` of the Quals posting `Algebra [Fall 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02015%5D.docx`). The list is the sitting order on that paper.
-:::

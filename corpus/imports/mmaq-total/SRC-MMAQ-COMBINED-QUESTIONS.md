@@ -466,9 +466,3 @@ source:
     - P-MMAQ-WV7QEYSPXM
   area: algebra
 ---
-
-::: remark
-Combined_Questions.yaml intake grouping (SHA-256 63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176, revision 6190e0eeaf93ac471a2450444d0b70872b7b9dfa). Envelope provenance is empty until each section's sitting paper is listed.
-
-Intake grouping from make-me-a-qual `Combined_Questions.yaml` (42 source groups). Nineteen rows join official sitting collections already in the corpus and are not repeated here. Envelope provenance is empty until each group's sitting paper is listed. The YAML is not collection provenance.
-:::

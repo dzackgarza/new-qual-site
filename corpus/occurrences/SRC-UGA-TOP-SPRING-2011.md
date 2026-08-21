@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2011
 ---
-
-::: remark
-UGA topology Spring 2011. The paper is the current Quals posting `Topology [Spring 2011].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2011.txt`. The list is the sitting order on that paper.
-:::

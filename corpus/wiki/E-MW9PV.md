@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-What is the cardinality of a system of free generators for the fundamental group of the complete graph on $n$ vertices? of the utilities graph? (See §64.)
+::: {.exercise title="Munkres §84.2"}
 
-::: {.remark}
-Munkres, *Topology*, §84 Exercise 2.
+
+What is the cardinality of a system of free generators for the fundamental group of the complete graph on $n$ vertices? of the utilities graph? (See §64.)
 :::

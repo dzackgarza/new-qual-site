@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2005
 ---
-
-::: remark
-UGA prelim Fall 2005. The paper is the migrated sitting scan `grad_prelim_Fall05.pdf` (wiki attachments). The list is the sitting order on that paper. Exam #3–#7 are `P-HOBOM`, `P-3373K`, `P-YVA5W`, `P-LHC3M`, and `P-SD42B`. The remaining items are minted as `P-F05DM`, `P-F05PR`, `P-F05AB`, `P-F05BN`.
-:::

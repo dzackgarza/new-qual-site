@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Determine whether or not $\mathbb{R}_\ell$ is a Baire space.
+::: {.exercise title="Munkres §48.11"}
 
-::: {.remark}
-Munkres, *Topology*, §48 Exercise 11.
+
+Determine whether or not $\mathbb{R}_\ell$ is a Baire space.
 :::

@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $\ts{A_\alpha}$ be a collection of connected subspaces of $X$; let $A$ be a connected subspace of $X$. Show that if $A \cap A_\alpha \neq \varnothing$ for all $\alpha$, then $A \cup (\bigcup A_\alpha)$ is connected.
+::: {.exercise title="Munkres §23.3"}
 
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 3.
+
+Let $\ts{A_\alpha}$ be a collection of connected subspaces of $X$; let $A$ be a connected subspace of $X$. Show that if $A \cap A_\alpha \neq \varnothing$ for all $\alpha$, then $A \cup (\bigcup A_\alpha)$ is connected.
 :::

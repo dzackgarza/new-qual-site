@@ -31,7 +31,3 @@ source:
     term: spring
     year: 2023
 ---
-
-::: remark
-UCSD Applied Algebra Spring 2023 sitting in two department PDFs: Part A (`Applied Algebra Part A SP23.pdf`, four questions, dated Tuesday May 23rd) and Part B (`Applied Algebra Part B SP23.pdf`, four problems). The list is Part A, then Part B, in paper order within each part. Both provenance PDFs were readable.
-:::

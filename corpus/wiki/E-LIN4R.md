@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §24.5"}
+
+
 Consider the following sets in the dictionary order. Which are linear continua?
 
 (a) $\mathbb{Z}_+ \times [0, 1)$
@@ -22,7 +25,4 @@ Consider the following sets in the dictionary order. Which are linear continua?
 (c) $[0, 1) \times [0, 1]$
 
 (d) $[0, 1] \times [0, 1)$
-
-::: {.remark}
-Munkres, *Topology*, §24 Exercise 5.
 :::

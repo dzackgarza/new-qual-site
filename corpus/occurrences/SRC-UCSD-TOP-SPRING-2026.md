@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2026
 ---
-
-::: remark
-UCSD Topology qualifying exam, Wednesday May 13th (Spring 2026 sitting). Seven problems in sitting order from `SP26_290_Topology_Qual.pdf`.
-:::

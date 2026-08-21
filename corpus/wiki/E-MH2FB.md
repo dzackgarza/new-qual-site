@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $H$ denote a group that is also a topological space satisfying the $T_1$ axiom. Show that $H$ is a topological group if and only if the map of $H \times H$ into $H$ sending $x \times y$ into $x \cdot y^{-1}$ is continuous.
+::: {.exercise title="Munkres §22 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §22 Supplementary Exercises (Topological Groups) Exercise 1.
+
+Let $H$ denote a group that is also a topological space satisfying the $T_1$ axiom. Show that $H$ is a topological group if and only if the map of $H \times H$ into $H$ sending $x \times y$ into $x \cdot y^{-1}$ is continuous.
 :::

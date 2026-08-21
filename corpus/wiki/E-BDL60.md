@@ -13,10 +13,10 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §26.2"}
+
+
 (a) Show that in the finite complement topology on $\mathbb{R}$, every subspace is compact.
 
 (b) If $\mathbb{R}$ has the topology consisting of all sets $A$ such that $\mathbb{R} - A$ is either countable or all of $\mathbb{R}$, is $[0, 1]$ a compact subspace?
-
-::: {.remark}
-Munkres, *Topology*, §26 Exercise 2.
 :::

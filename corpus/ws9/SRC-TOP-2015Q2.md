@@ -28,9 +28,3 @@ source:
   institution: unl
   area: topology
 ---
-
-::: remark
-Math 871-872 Qualifying Exam, May 2015.
-
-UNL Math 871–872 qualifying exam, May 2015. The paper is `assets/attachments/2015Q2_Topology_Qual.pdf`. Eight questions; the list is paper order. No holes.
-:::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that every order topology is Hausdorff.
+::: {.exercise title="Munkres §17.10"}
 
-::: {.remark}
-Munkres, *Topology*, §17 Exercise 10.
+
+Show that every order topology is Hausdorff.
 :::

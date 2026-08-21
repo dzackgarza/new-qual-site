@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Give examples to show that a simple closed curve in the torus may or may not separate the torus.
+::: {.exercise title="Munkres §61.1"}
 
-::: {.remark}
-Munkres, *Topology*, §61 Exercise 1.
+
+Give examples to show that a simple closed curve in the torus may or may not separate the torus.
 :::

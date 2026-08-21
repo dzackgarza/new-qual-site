@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Recall that a space $X$ is said to be contractible if the identity map of $X$ to itself is nulhomotopic. Show that $X$ is contractible if and only if $X$ has the homotopy type of a one-point space.
+::: {.exercise title="Munkres §58.5"}
 
-::: {.remark}
-Munkres, *Topology*, §58 Exercise 5.
+
+Recall that a space $X$ is said to be contractible if the identity map of $X$ to itself is nulhomotopic. Show that $X$ is contractible if and only if $X$ has the homotopy type of a one-point space.
 :::

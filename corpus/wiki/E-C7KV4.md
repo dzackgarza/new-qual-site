@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the topologies of $\mathbb{R}_\ell$ and $\mathbb{R}_K$ are not comparable.
+::: {.exercise title="Munkres §13.6"}
 
-::: {.remark}
-Munkres, *Topology*, §13 Exercise 6.
+
+Show that the topologies of $\mathbb{R}_\ell$ and $\mathbb{R}_K$ are not comparable.
 :::

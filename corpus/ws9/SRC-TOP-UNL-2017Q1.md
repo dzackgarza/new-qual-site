@@ -29,9 +29,3 @@ source:
   institution: unl
   area: topology
 ---
-
-::: remark
-UNL Math 871-872 Topology Qualifying Exam, January 2017.
-
-UNL Math 871–872 qualifying exam, January 2017. The paper is `assets/attachments/2017Q1_Topology_Qual.pdf`. Eight questions; the list is paper order. No holes.
-:::

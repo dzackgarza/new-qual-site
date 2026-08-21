@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §13.3"}
+
+
 Show that the collection $\mathcal{T}_c$ given in Example 4 of §12 is a topology on the set $X$.
 Is the collection
 
@@ -21,7 +24,4 @@ $$
 $$
 
 a topology on $X$?
-
-::: {.remark}
-Munkres, *Topology*, §13 Exercise 3.
 :::

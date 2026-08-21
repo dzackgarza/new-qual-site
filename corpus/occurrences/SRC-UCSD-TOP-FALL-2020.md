@@ -22,7 +22,3 @@ source:
     term: fall
     year: 2020
 ---
-
-::: remark
-The PDF heading is “QUALIFYING EXAMS / September 9 2020”. The department sample page also labels this same file `SP21`. That is not a Spring 2021 paper, and no distinct Spring 2021 topology PDF was found. Problem list not yet extracted.
-:::

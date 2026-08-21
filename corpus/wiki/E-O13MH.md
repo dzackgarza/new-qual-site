@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $\mathcal{T}$ and $\mathcal{T}'$ be two topologies on $X$. If $\mathcal{T}' \supset \mathcal{T}$, what does connectedness of $X$ in one topology imply about connectedness in the other?
+::: {.exercise title="Munkres §23.1"}
 
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 1.
+
+Let $\mathcal{T}$ and $\mathcal{T}'$ be two topologies on $X$. If $\mathcal{T}' \supset \mathcal{T}$, what does connectedness of $X$ in one topology imply about connectedness in the other?
 :::

@@ -13,12 +13,12 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §41.7"}
+
+
 Let $X$ be a regular space.
 
 (a) If $X$ is a finite union of closed paracompact subspaces of $X$, then $X$ is paracompact.
 
 (b) If $X$ is a countable union of closed paracompact subspaces whose interiors cover $X$, show $X$ is paracompact.
-
-::: {.remark}
-Munkres, *Topology*, §41 Exercise 7 (starred in the text).
 :::

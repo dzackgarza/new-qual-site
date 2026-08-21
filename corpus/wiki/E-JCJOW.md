@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §19.9"}
+
+
 Show that the choice axiom is equivalent to the statement that for any indexed family $\ts{A_\alpha}_{\alpha \in J}$ of nonempty sets, with $J \neq 0$, the cartesian product
 
 $$
@@ -20,7 +23,4 @@ $$
 $$
 
 is not empty.
-
-::: {.remark}
-Munkres, *Topology*, §19 Exercise 9.
 :::

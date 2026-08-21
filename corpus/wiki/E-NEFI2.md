@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that every regular Lindelöf space is normal.
+::: {.exercise title="Munkres §32.4"}
 
-::: {.remark}
-Munkres, *Topology*, §32 Exercise 4.
+
+Show that every regular Lindelöf space is normal.
 :::

@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the space constructed in [[E-VYYH3]] is in fact metrizable. [Hint: The quotient map is a perfect map.]
+::: {.exercise title="Munkres §73.4"}
 
-::: {.remark}
-Munkres, *Topology*, §73 Exercise 4.
+
+Show that the space constructed in [[E-VYYH3]] is in fact metrizable. [Hint: The quotient map is a perfect map.]
 :::

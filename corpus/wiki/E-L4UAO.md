@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that if $\prod X_\alpha$ is Hausdorff, or regular, or normal, then so is $X_\alpha$. (Assume that each $X_\alpha$ is nonempty.)
+::: {.exercise title="Munkres §32.2"}
 
-::: {.remark}
-Munkres, *Topology*, §32 Exercise 2.
+
+Show that if $\prod X_\alpha$ is Hausdorff, or regular, or normal, then so is $X_\alpha$. (Assume that each $X_\alpha$ is nonempty.)
 :::

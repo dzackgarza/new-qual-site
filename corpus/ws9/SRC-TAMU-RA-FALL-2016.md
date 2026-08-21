@@ -31,7 +31,3 @@ source:
     year: 2016
     term: fall
 ---
-
-::: remark
-TAMU real-analysis Fall 2016. The paper is https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/a16.pdf (Real Analysis Qualifying Exam, August, 2016). Transcript: `.tmp-papers/tamu-a16.txt`. Ten numbered questions; the list is the sitting order on that paper. No holes.
-:::

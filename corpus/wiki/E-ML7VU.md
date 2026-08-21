@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the topologist's sine curve has dimension 1.
+::: {.exercise title="Munkres §50.3"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Exercise 3.
+
+Show that the topologist's sine curve has dimension 1.
 :::

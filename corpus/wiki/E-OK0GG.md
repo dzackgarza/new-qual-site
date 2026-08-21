@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §17.6"}
+
+
 Let $A$, $B$, and $A_\alpha$ denote subsets of a space $X$.
 Prove the following:
 
@@ -21,7 +24,4 @@ Prove the following:
 (b) $\overline{A \cup B} = \overline{A} \cup \overline{B}$.
 
 (c) $\overline{\bigcup A_\alpha} \supset \bigcup \overline{A}_\alpha$; give an example where equality fails.
-
-::: {.remark}
-Munkres, *Topology*, §17 Exercise 6.
 :::

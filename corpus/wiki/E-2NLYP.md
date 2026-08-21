@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Find a presentation for the fundamental group of $P^2 \# T$.
+::: {.exercise title="Munkres §74.1"}
 
-::: {.remark}
-Munkres, *Topology*, §74 Exercise 1.
+
+Find a presentation for the fundamental group of $P^2 \# T$.
 :::

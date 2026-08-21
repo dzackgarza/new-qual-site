@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §20.9"}
+
+
 Show that the euclidean metric $d$ on $\mathbb{R}^n$ is a metric, as follows. If $\mathbf{x}, \mathbf{y} \in \mathbb{R}^n$ and $c \in \mathbb{R}$, define
 
 $$
@@ -30,7 +33,4 @@ $$
 (c) Show that $\norm{\mathbf{x} + \mathbf{y}} \leq \norm{\mathbf{x}} + \norm{\mathbf{y}}$. [Hint: Compute $(\mathbf{x} + \mathbf{y}) \cdot (\mathbf{x} + \mathbf{y})$ and apply (b).]
 
 (d) Verify that $d$ is a metric.
-
-::: {.remark}
-Munkres, *Topology*, §20 Exercise 9.
 :::

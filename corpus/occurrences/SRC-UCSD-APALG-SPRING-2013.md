@@ -35,7 +35,3 @@ source:
     term: spring
     year: 2013
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam dated Tuesday May 28th, 2013, in one department PDF (`SP13_202_Applied_Algebra_Qual.pdf`) containing Part I (four questions) and Part II (nine problems). The list is Part I, then Part II, in paper order within each part.
-:::

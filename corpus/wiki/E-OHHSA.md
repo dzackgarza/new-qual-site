@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §33.11"}
+
+
 Define a set $X$ as follows. For each even integer $m$, let $L_m$ denote the line segment $m \times [-1, 0]$ in the plane. For each odd integer $n$ and each integer $k \geq 2$, let $C_{n,k}$ denote the union of the line segments $(n + 1 - 1/k) \times [-1, 0]$ and $(n - 1 + 1/k) \times [-1, 0]$ and the semicircle
 
 $$
@@ -40,7 +43,4 @@ $$
 Conclude that $f(a) = f(b)$.
 
 (c) Show that $X$ is regular but not completely regular.
-
-::: {.remark}
-Munkres, *Topology*, §33 Exercise 11 (starred in the text). The example is due to John Thomas [T].
 :::

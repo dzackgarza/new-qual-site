@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-The Möbius band $M$ is not a surface, but what is called a "surface with boundary". Show that $M$ is homeomorphic to the space obtained by deleting an open disc from $P^2$.
+::: {.exercise title="Munkres §74.5"}
 
-::: {.remark}
-Munkres, *Topology*, §74 Exercise 5.
+
+The Möbius band $M$ is not a surface, but what is called a "surface with boundary". Show that $M$ is homeomorphic to the space obtained by deleting an open disc from $P^2$.
 :::

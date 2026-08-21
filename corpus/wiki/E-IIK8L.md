@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §17.18"}
+
+
 Determine the closures of the following subsets of the ordered square (the unit square $I \times I$ in the dictionary order topology):
 
 $$
@@ -35,7 +38,4 @@ $$
 $$
 E = \ts{\tfrac{1}{2} \times y \mid 0 < y < 1}.
 $$
-
-::: {.remark}
-Munkres, *Topology*, §17 Exercise 18.
 :::

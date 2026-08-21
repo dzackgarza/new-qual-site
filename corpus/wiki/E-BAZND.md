@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §32.9"}
+
+
 Prove the following.
 
 Theorem. If $J$ is uncountable, then $\mathbb{R}^J$ is not normal.
@@ -70,7 +73,4 @@ U(\mathbf{x}_{i+1}, B_{i+1}) \cap U(\mathbf{y}, B)
 $$
 
 is not empty.
-
-::: {.remark}
-Munkres, *Topology*, §32 Exercise 9 (starred in the text).
 :::

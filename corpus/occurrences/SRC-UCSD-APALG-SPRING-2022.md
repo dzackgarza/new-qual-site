@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2022
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam, May 16, 2022. Eight problems in sitting order from `SP22-202ABC-Applied.pdf`.
-:::

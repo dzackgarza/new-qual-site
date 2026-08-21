@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2010
 ---
-
-::: remark
-UGA topology Spring 2010. The paper is the current Quals posting `Topology [Spring 2010].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2010.txt`. The list is the sitting order on that paper. Exam #3 is [[P-S10I3]] (surjection); Spring 2009 #1 is the bijection statement [[P-L3BUX]].
-:::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Corollary. Every $m$-manifold can be imbedded in $\mathbb{R}^{2m+1}$ as a closed subspace.
+::: {.exercise title="Munkres §50.7"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Exercise 7.
+
+Corollary. Every $m$-manifold can be imbedded in $\mathbb{R}^{2m+1}$ as a closed subspace.
 :::

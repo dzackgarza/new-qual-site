@@ -28,7 +28,3 @@ source:
     term: spring
     year: 2019
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam dated May 13, 2019. The cover sheet lists ten problems at 10 points each. On the department PDF, pages labeled 1–4 contain only the problem number and are otherwise blank (no statement text). Problems 5–10 are extracted as `P-APAS19E`–`J` (letters match the printed problem numbers). Problems 1–4 remain unextracted until a source with those statements is found.
-:::

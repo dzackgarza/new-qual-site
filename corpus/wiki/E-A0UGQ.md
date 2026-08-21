@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Find a function $f: \mathbb{R} \to \mathbb{R}$ that is continuous at precisely one point.
+::: {.exercise title="Munkres §18.6"}
 
-::: {.remark}
-Munkres, *Topology*, §18 Exercise 6.
+
+Find a function $f: \mathbb{R} \to \mathbb{R}$ that is continuous at precisely one point.
 :::

@@ -31,5 +31,5 @@ source:
 ---
 
 ::: remark
-UGA topology Spring 2013. The paper is the current Quals posting `Topology [Spring 2013].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2013.txt`. Exam #6 lists [[P-FD3UV]] (same statement as Fall 2007 #4).
+Exam #6 lists [[P-FD3UV]] (same statement as Fall 2007 #4).
 :::

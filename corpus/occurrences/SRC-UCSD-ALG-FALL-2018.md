@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2018
 ---
-
-::: remark
-UCSD Algebra qualifying exam labeled Summer 2018 (seven problems, 100 points total). The list is the paper order.
-:::

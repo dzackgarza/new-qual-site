@@ -117,7 +117,7 @@ class CardBase(Strict):
 # that is another source lists that collection (`SRC-…`) instead of copying its
 # problem list. A list entry that matches neither is a typo and must fail the
 # build.
-PROBLEM_ID_RE = re.compile(r"^[PE]-[A-Z0-9]+(?:-[A-Z0-9]+)*$")
+PROBLEM_ID_RE = re.compile(r"^[PE]-[A-Z0-9.]+(?:-[A-Z0-9.]+)*$")
 COLLECTION_ID_RE = re.compile(r"^SRC-[A-Z0-9]+(?:-[A-Z0-9]+)*$")
 
 

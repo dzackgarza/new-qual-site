@@ -90,9 +90,3 @@ source:
     - P-S2FLD
   area: algebra
 ---
-
-::: remark
-Photocopy `algebra_2010-2015_prelims.pdf` (15 pages).
-
-Pages 6–8 are headed Wesleyan University, Department of Mathematics, PhD Qualifying Exam, Written Part: Algebra, July 10, 2013 (Hovey and Scowcroft). Three parts (Groups, Rings, Fields), four problems each; the examinee does problem 1 and two of 2–4 in each part.
-:::

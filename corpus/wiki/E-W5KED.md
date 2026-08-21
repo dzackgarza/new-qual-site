@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §73.1"}
+
+
 Find spaces whose fundamental groups are isomorphic to the following groups. (Here $\mathbb{Z}/n$ denotes the additive group of integers modulo $n$.)
 
 (a) $\mathbb{Z}/n \times \mathbb{Z}/m$
@@ -22,7 +25,4 @@ Find spaces whose fundamental groups are isomorphic to the following groups. (He
 (c) $\mathbb{Z}/n * \mathbb{Z}/m$. (See [[E-5DDIL]].)
 
 (d) $\mathbb{Z}/n_1 * \mathbb{Z}/n_2 * \cdots * \mathbb{Z}/n_k$
-
-::: {.remark}
-Munkres, *Topology*, §73 Exercise 1.
 :::

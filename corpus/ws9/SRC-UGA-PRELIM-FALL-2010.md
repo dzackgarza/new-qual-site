@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2010
 ---
-
-::: remark
-UGA prelim Fall 2010. The paper is the migrated sitting scan `grad_prelim_Fall10.pdf` (wiki attachments). The list is the sitting order on that paper. The paper is the August 10, 2010 sitting. Exam #1, #2, #4, and #7 are `P-UH7ZQ`, `P-3DZXT`, `P-TBXVH`, and `P-5HVC4`. The remaining items are minted as `P-F10IJ`, `P-F10LI`, `P-F10CR`, `P-F10IL`, `P-F10AT`.
-:::

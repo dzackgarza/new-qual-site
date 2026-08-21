@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §46.11"}
+
+
 Let $(Y, d)$ be a metric space; let $X$ be a space. Define a topology on $\mathcal{C}(X, Y)$ as follows. Given $f \in \mathcal{C}(X, Y)$, and given a positive continuous function $\delta: X \to \mathbb{R}_+$ on $X$, let
 
 $$
@@ -26,7 +29,4 @@ $$
 (c) Show that if $X$ is compact, the fine and uniform topologies agree.
 
 (d) Show that if $X$ is discrete, then $\mathcal{C}(X, Y) = Y^X$ and the fine and box topologies agree.
-
-::: {.remark}
-Munkres, *Topology*, §46 Exercise 11.
 :::

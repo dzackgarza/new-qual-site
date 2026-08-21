@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §23.9"}
+
+
 Let $A$ be a proper subset of $X$, and let $B$ be a proper subset of $Y$. If $X$ and $Y$ are connected, show that
 
 $$
@@ -21,7 +24,4 @@ $$
 $$
 
 is connected.
-
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 9.
 :::

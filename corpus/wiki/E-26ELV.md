@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §50.6"}
+
+
 Prove the following.
 
 Theorem. Let $X$ be a locally compact Hausdorff space with a countable basis, such that every compact subspace of $X$ has topological dimension at most $m$. Then $X$ is homeomorphic to a closed subspace of $\mathbb{R}^{2m+1}$.
@@ -36,7 +39,4 @@ Show that $U_\epsilon(C)$ is open in $\mathcal{C}(X, \mathbb{R}^N)$.
 (e) Show there exists a map $f: X \to \mathbb{R}^N$ such that $f(x) \to \infty$ as $x \to \infty$. [Hint: Write $X$ as the union of compact subspaces $C_n$ such that $C_n \subset \operatorname{Int} C_{n+1}$ for each $n$.]
 
 (f) Let $C_n$ be as in (e). Use the fact that $\bigcap U_{1/n}(C_n)$ is dense in $\mathcal{C}(X, \mathbb{R}^N)$ to complete the proof.
-
-::: {.remark}
-Munkres, *Topology*, §50 Exercise 6.
 :::

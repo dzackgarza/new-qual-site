@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §21.5"}
+
+
 Theorem. Let $x_n \to x$ and $y_n \to y$ in the space $\mathbb{R}$. Then
 
 $$
@@ -30,7 +33,4 @@ x_n / y_n \to x/y.
 $$
 
 [Hint: Apply Lemma 21.4; recall from the exercises of §19 that if $x_n \to x$ and $y_n \to y$, then $x_n \times y_n \to x \times y$.]
-
-::: {.remark}
-Munkres, *Topology*, §21 Exercise 5.
 :::

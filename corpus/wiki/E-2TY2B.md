@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §43.9"}
+
+
 Let $(X, d)$ be a metric space. Show that there is an isometric imbedding $h$ of $X$ into a complete metric space $(Y, D)$, as follows. Let $\tilde{X}$ denote the set of all Cauchy sequences
 
 $$
@@ -46,7 +49,4 @@ Show that $h$ is an isometric imbedding.
 (d) Show that if $A$ is a dense subset of a metric space $(Z, \rho)$, and if every Cauchy sequence in $A$ converges in $Z$, then $Z$ is complete.
 
 (e) Show that $(Y, D)$ is complete.
-
-::: {.remark}
-Munkres, *Topology*, §43 Exercise 9.
 :::

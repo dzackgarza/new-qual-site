@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §29.11"}
+
+
 (a) Lemma. If $p: X \to Y$ is a quotient map and if $Z$ is a locally compact Hausdorff space, then the map
 
 $$
@@ -27,7 +30,4 @@ is a quotient map.
 An entirely different proof of this result will be outlined in the exercises of §46.
 
 (b) Theorem. Let $p: A \to B$ and $q: C \to D$ be quotient maps. If $B$ and $C$ are locally compact Hausdorff spaces, then $p \times q: A \times C \to B \times D$ is a quotient map.
-
-::: {.remark}
-Munkres, *Topology*, §29 Exercise 11 (starred in the text).
 :::

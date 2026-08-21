@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §50 Supplementary"}
+
+
 There is a space that is locally 2-euclidean and satisfies (v) but not (iv) of Exercise 2. It is constructed as follows. Let $A$ be the following subspace of $\mathbb{R}^3$:
 
 $$
@@ -70,7 +73,4 @@ L = \ts{(0, 0, c) \mid c \in \mathbb{R}}
 $$
 
 of $X$ is closed and discrete. Compare Example 3 of §31.]
-
-::: {.remark}
-Munkres, *Topology*, §50 Supplementary Exercises (Locally Euclidean Spaces) Exercise 6 (starred in the text).
 :::

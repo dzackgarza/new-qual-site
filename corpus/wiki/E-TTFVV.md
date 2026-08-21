@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §37.2"}
+
+
 A collection $\mathcal{A}$ of subsets of $X$ has the countable intersection property if every countable intersection of elements of $\mathcal{A}$ is nonempty. Show that $X$ is a Lindelöf space if and only if for every collection $\mathcal{A}$ of subsets of $X$ having the countable intersection property,
 
 $$
@@ -21,7 +24,4 @@ $$
 $$
 
 is nonempty.
-
-::: {.remark}
-Munkres, *Topology*, §37 Exercise 2.
 :::

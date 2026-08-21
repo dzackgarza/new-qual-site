@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §21.3"}
+
+
 Let $X_n$ be a metric space with metric $d_n$, for $n \in \mathbb{Z}_+$.
 
 (a) Show that
@@ -31,7 +34,4 @@ D(x, y) = \sup\ts{\bar{d}_i(x_i, y_i)/i}
 $$
 
 is a metric for the product space $\prod X_i$.
-
-::: {.remark}
-Munkres, *Topology*, §21 Exercise 3.
 :::

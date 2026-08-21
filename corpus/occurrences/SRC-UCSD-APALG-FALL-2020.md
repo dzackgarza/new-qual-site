@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2020
 ---
-
-::: remark
-UCSD Math 202 Qualifying Exam dated Friday September 4, 2020 (eight problems, 25 points each). The list is the paper order.
-:::

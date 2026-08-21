@@ -15,8 +15,8 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ is Lindelöf and $Y$ is compact, then $X \times Y$ is Lindelöf.
+::: {.exercise title="Munkres §30.14"}
 
-::: {.remark}
-Munkres, *Topology*, §30 Exercise 14.
+
+Show that if $X$ is Lindelöf and $Y$ is compact, then $X \times Y$ is Lindelöf.
 :::

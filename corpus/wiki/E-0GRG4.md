@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Which of our four countability axioms does $\mathbb{R}^\omega$ in the uniform topology satisfy?
+::: {.exercise title="Munkres §30.8"}
 
-::: {.remark}
-Munkres, *Topology*, §30 Exercise 8.
+
+Which of our four countability axioms does $\mathbb{R}^\omega$ in the uniform topology satisfy?
 :::

@@ -27,7 +27,3 @@ source:
     term: spring
     year: 2016
 ---
-
-::: remark
-UGA real-analysis Spring 2016. The paper is the current Quals posting `Real Analysis [Spring 2016].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BSpring%C2%A02016%5D.docx`), headed January 2016. The catalog PDF `RealAnalysisQualSpring2016.pdf` currently 404s. The list is the sitting order on that paper.
-:::

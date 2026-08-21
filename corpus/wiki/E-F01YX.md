@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §23.10"}
+
+
 Let $\ts{X_\alpha}_{\alpha \in J}$ be an indexed family of connected spaces; let $X$ be the product space
 
 $$
@@ -27,7 +30,4 @@ Let $\mathbf{a} = (a_\alpha)$ be a fixed point of $X$.
 (b) Show that the union $Y$ of the spaces $X_K$ is connected.
 
 (c) Show that $X$ equals the closure of $Y$; conclude that $X$ is connected.
-
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 10.
 :::

@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2020
 ---
-
-::: remark
-UCSD Algebra fall qualifying exam dated August 31, 2020 (seven problems, 15 points each). The list is the paper order.
-:::

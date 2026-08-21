@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be a space that is locally $m$-euclidean. Show that $X$ is metrizable if and only if $X$ is paracompact Hausdorff.
+::: {.exercise title="Munkres §50 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Supplementary Exercises (Locally Euclidean Spaces) Exercise 8.
+
+Let $X$ be a space that is locally $m$-euclidean. Show that $X$ is metrizable if and only if $X$ is paracompact Hausdorff.
 :::

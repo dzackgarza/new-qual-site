@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2015
 ---
-
-::: remark
-UCSD Algebra qualifying exam, Spring 2015 (eight problems). The list is the paper order.
-:::

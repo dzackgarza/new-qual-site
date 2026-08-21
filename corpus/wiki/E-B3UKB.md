@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ is a Hausdorff space that is locally compact at the point $x$, then for each neighborhood $U$ of $x$, there is a neighborhood $V$ of $x$ such that $\overline{V}$ is compact and $\overline{V} \subset U$.
+::: {.exercise title="Munkres §29.10"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Exercise 10.
+
+Show that if $X$ is a Hausdorff space that is locally compact at the point $x$, then for each neighborhood $U$ of $x$, there is a neighborhood $V$ of $x$ such that $\overline{V}$ is compact and $\overline{V} \subset U$.
 :::

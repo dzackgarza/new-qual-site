@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be the quotient space obtained from $B^2$ by identifying each point $x$ of $S^1$ with its antipode $-x$. Show that $X$ is homeomorphic to the projective plane $P^2$.
+::: {.exercise title="Munkres §60.2"}
 
-::: {.remark}
-Munkres, *Topology*, §60 Exercise 2.
+
+Let $X$ be the quotient space obtained from $B^2$ by identifying each point $x$ of $S^1$ with its antipode $-x$. Show that $X$ is homeomorphic to the projective plane $P^2$.
 :::

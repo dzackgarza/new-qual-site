@@ -27,7 +27,3 @@ source:
     term: fall
     year: 2021
 ---
-
-::: remark
-UGA algebra Fall 2021. Source: `.tmp-uga-alg-exams/FALL-2021.txt` of the Quals posting `Algebra [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The list is the sitting order on that paper.
-:::

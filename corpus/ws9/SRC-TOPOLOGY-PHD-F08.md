@@ -40,9 +40,3 @@ source:
   institution: unl
   area: topology
 ---
-
-::: remark
-F08phdtop.pdf.
-
-Both pages are headed January 17, 2009.
-:::

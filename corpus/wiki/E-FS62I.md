@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $G = G_1 \oplus G_2$, where $G_1$ and $G_2$ are cyclic of orders $m$ and $n$, respectively, then $m$ and $n$ are not uniquely determined by $G$ in general. [Hint: If $m$ and $n$ are relatively prime, show that $G$ is cyclic of order $mn$.]
+::: {.exercise title="Munkres §69.4"}
 
-::: {.remark}
-Munkres, *Topology*, §69 Exercise 4.
+
+Show that if $G = G_1 \oplus G_2$, where $G_1$ and $G_2$ are cyclic of orders $m$ and $n$, respectively, then $m$ and $n$ are not uniquely determined by $G$ in general. [Hint: If $m$ and $n$ are relatively prime, show that $G$ is cyclic of order $mn$.]
 :::

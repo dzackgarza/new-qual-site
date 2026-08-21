@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be a locally compact Hausdorff space. Let $Y$ be the one-point compactification of $X$. Is it true that if $X$ has a countable basis, then $Y$ is metrizable? Is it true that if $Y$ is metrizable, then $X$ has a countable basis?
+::: {.exercise title="Munkres §34.5"}
 
-::: {.remark}
-Munkres, *Topology*, §34 Exercise 5.
+
+Let $X$ be a locally compact Hausdorff space. Let $Y$ be the one-point compactification of $X$. Is it true that if $X$ has a countable basis, then $Y$ is metrizable? Is it true that if $Y$ is metrizable, then $X$ has a countable basis?
 :::

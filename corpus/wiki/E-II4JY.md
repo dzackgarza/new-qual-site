@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-If $K$ is the Klein bottle, calculate $H_1(K)$ directly.
+::: {.exercise title="Munkres §75.2"}
 
-::: {.remark}
-Munkres, *Topology*, §75 Exercise 2.
+
+If $K$ is the Klein bottle, calculate $H_1(K)$ directly.
 :::

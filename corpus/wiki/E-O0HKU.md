@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that if $f: X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdorff, then $f$ is a closed map (that is, $f$ carries closed sets to closed sets).
+::: {.exercise title="Munkres §26.6"}
 
-::: {.remark}
-Munkres, *Topology*, §26 Exercise 6.
+
+Show that if $f: X \to Y$ is continuous, where $X$ is compact and $Y$ is Hausdorff, then $f$ is a closed map (that is, $f$ carries closed sets to closed sets).
 :::

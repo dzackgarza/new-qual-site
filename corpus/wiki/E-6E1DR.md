@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Corollary. A space $X$ can be imbedded as a closed subspace of $\mathbb{R}^N$ for some $N$ if and only if $X$ is locally compact and Hausdorff with a countable basis, and has finite topological dimension.
+::: {.exercise title="Munkres §50.11"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Exercise 11.
+
+Corollary. A space $X$ can be imbedded as a closed subspace of $\mathbb{R}^N$ for some $N$ if and only if $X$ is locally compact and Hausdorff with a countable basis, and has finite topological dimension.
 :::

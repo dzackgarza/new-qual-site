@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ is regular, every pair of points of $X$ have neighborhoods whose closures are disjoint.
+::: {.exercise title="Munkres §31.1"}
 
-::: {.remark}
-Munkres, *Topology*, §31 Exercise 1.
+
+Show that if $X$ is regular, every pair of points of $X$ have neighborhoods whose closures are disjoint.
 :::

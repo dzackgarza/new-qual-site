@@ -22,7 +22,3 @@ source:
     term: spring
     year: 2026
 ---
-
-::: remark
-UCSD department sample qualifying exam. Problem list not yet extracted.
-:::

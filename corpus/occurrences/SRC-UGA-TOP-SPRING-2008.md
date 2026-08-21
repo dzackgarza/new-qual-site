@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2008
 ---
-
-::: remark
-UGA topology Spring 2008. The paper is the current Quals posting `Topology [Spring 2008].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (no local dump; converted from that posting). Exam #2 lists [[P-8TF28]] (the paper asks for an example of a connected non-path-connected space; [[P-HVKUA]] is Fall 2005 #1, the specified closed topologist's sine curve).
-:::

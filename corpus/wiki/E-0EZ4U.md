@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §70.1"}
+
+
 Suppose that the homomorphism $i_*$ induced by inclusion $i: U \cap V \to X$ is trivial.
 
 (a) Show that $j_1$ and $j_2$ induce an epimorphism
@@ -24,7 +27,4 @@ $$
 where $N_1$ is the least normal subgroup of $\pi_1(U, x_0)$ containing image $i_1$, and $N_2$ is the least normal subgroup of $\pi_1(V, x_0)$ containing image $i_2$.
 
 (b) Show that $h$ is an isomorphism. [Hint: Use Theorem 70.1 to define a left inverse for $h$.]
-
-::: {.remark}
-Munkres, *Topology*, §70 Exercise 1.
 :::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $A$ and $B$ be disjoint compact subspaces of the Hausdorff space $X$. Show that there exist disjoint open sets $U$ and $V$ containing $A$ and $B$, respectively.
+::: {.exercise title="Munkres §26.5"}
 
-::: {.remark}
-Munkres, *Topology*, §26 Exercise 5.
+
+Let $A$ and $B$ be disjoint compact subspaces of the Hausdorff space $X$. Show that there exist disjoint open sets $U$ and $V$ containing $A$ and $B$, respectively.
 :::

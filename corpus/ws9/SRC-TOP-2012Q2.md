@@ -29,9 +29,3 @@ source:
   institution: unl
   area: topology
 ---
-
-::: remark
-Topology Qualifying Examination, Math 871/872, June 2012.
-
-UNL Math 871/872 qualifying exam, June 2012. The paper is `assets/attachments/2012Q2_Topology_Qual.pdf`. Eight questions (A then B); the list is paper order. No holes.
-:::

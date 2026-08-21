@@ -40,9 +40,3 @@ source:
   institution: unl
   area: topology
 ---
-
-::: remark
-F07phdtop.pdf.
-
-Page 2 continues the same paper (Part One questions 9–12, then Part Two). The running header “January 2007” is leftover from another printing.
-:::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $A \subset X$. Show that if $C$ is a connected subspace of $X$ that intersects both $A$ and $X - A$, then $C$ intersects $\operatorname{Bd} A$.
+::: {.exercise title="Munkres §23.6"}
 
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 6.
+
+Let $A \subset X$. Show that if $C$ is a connected subspace of $X$ that intersects both $A$ and $X - A$, then $C$ intersects $\operatorname{Bd} A$.
 :::

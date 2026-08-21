@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §32.7"}
+
+
 Which of the following spaces are completely normal? Justify your answers.
 
 (a) A subspace of a completely normal space.
@@ -28,7 +31,4 @@ Which of the following spaces are completely normal? Justify your answers.
 (f) A regular space with a countable basis.
 
 (g) The space $\mathbb{R}_\ell$.
-
-::: {.remark}
-Munkres, *Topology*, §32 Exercise 7.
 :::

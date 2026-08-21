@@ -29,9 +29,3 @@ source:
   institution: unl
   area: topology
 ---
-
-::: remark
-Math 871-872 Qualifying Exam, May 2017.
-
-UNL Math 871–872 qualifying exam, May 2017. The paper is `assets/attachments/2017Q2_Topology_Qual.pdf`. Eight questions (A1–A4, B5–B8); the list is paper order. A3 is the same compact-to-Hausdorff surjection-is-quotient statement as June 2006 Q1, so the card is `P-T06Q2-1`. No holes.
-:::

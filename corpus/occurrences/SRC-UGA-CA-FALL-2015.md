@@ -28,7 +28,3 @@ source:
     term: fall
     year: 2015
 ---
-
-::: remark
-UGA complex-analysis Fall 2015. The paper is the current Quals posting `Complex Analysis [Fall 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Complex%20Analysis%20%5BFall%C2%A02015%5D.docx`). The local dump is `.tmp-uga-ca-exams/FALL-2015.md`. The list is the sitting order on that paper.
-:::

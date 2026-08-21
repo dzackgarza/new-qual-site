@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that $\mathbb{R}$ is locally 1-euclidean and satisfies (ii) but not (i) of Exercise 2.
+::: {.exercise title="Munkres §50 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Supplementary Exercises (Locally Euclidean Spaces) Exercise 3.
+
+Show that $\mathbb{R}$ is locally 1-euclidean and satisfies (ii) but not (i) of Exercise 2.
 :::

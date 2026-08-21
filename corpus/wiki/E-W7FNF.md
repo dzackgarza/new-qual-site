@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that $\mathbb{R}_\ell$ and $I_0^2$ are not metrizable.
+::: {.exercise title="Munkres §30.6"}
 
-::: {.remark}
-Munkres, *Topology*, §30 Exercise 6. $I_0^2$ denotes the ordered square with its smallest corner deleted.
+
+Show that $\mathbb{R}_\ell$ and $I_0^2$ are not metrizable.
 :::

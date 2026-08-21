@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-The space $P^1$ and the covering map $p: S^1 \to P^1$ are familiar ones. What are they?
+::: {.exercise title="Munkres §60.4"}
 
-::: {.remark}
-Munkres, *Topology*, §60 Exercise 4.
+
+The space $P^1$ and the covering map $p: S^1 \to P^1$ are familiar ones. What are they?
 :::

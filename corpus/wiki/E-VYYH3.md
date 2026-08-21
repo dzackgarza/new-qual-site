@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §73.2"}
+
+
 Prove the following.
 
 Theorem. If $G$ is a finitely presented group, then there is a compact Hausdorff space $X$ whose fundamental group is isomorphic to $G$.
@@ -26,7 +29,4 @@ Proof. Suppose $G$ has a presentation consisting of $n$ generators and $m$ relat
 (c) Proceed by induction on $m$, using the algebraic result stated in the following exercise.
 
 The construction outlined in this exercise is a standard one in algebraic topology; the space $X$ is called a two-dimensional CW complex.
-
-::: {.remark}
-Munkres, *Topology*, §73 Exercise 2.
 :::

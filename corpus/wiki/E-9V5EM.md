@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Define $f_n: [0,1] \to \mathbb{R}$ by the equation $f_n(x) = x^n$. Show that the sequence $(f_n(x))$ converges for each $x \in [0,1]$, but that the sequence $(f_n)$ does not converge uniformly.
+::: {.exercise title="Munkres §21.6"}
 
-::: {.remark}
-Munkres, *Topology*, §21 Exercise 6.
+
+Define $f_n: [0,1] \to \mathbb{R}$ by the equation $f_n(x) = x^n$. Show that the sequence $(f_n(x))$ converges for each $x \in [0,1]$, but that the sequence $(f_n)$ does not converge uniformly.
 :::

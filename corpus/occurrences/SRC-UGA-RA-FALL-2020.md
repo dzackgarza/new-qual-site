@@ -26,7 +26,3 @@ source:
     term: fall
     year: 2020
 ---
-
-::: remark
-UGA real-analysis Fall 2020. The paper is the current Quals posting `Real Analysis [Fall 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Fall 2020. The catalog PDF `Real_Qual_Fall2020.pdf` currently 404s. The list is the sitting order on that paper.
-:::

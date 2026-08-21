@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Find a point-finite open covering $\mathcal{A}$ of $\mathbb{R}$ that is not locally finite. (The collection $\mathcal{A}$ is point-finite if each point of $\mathbb{R}$ lies in only finitely many elements of $\mathcal{A}$.)
+::: {.exercise title="Munkres §39.2"}
 
-::: {.remark}
-Munkres, *Topology*, §39 Exercise 2.
+
+Find a point-finite open covering $\mathcal{A}$ of $\mathbb{R}$ that is not locally finite. (The collection $\mathcal{A}$ is point-finite if each point of $\mathbb{R}$ lies in only finitely many elements of $\mathcal{A}$.)
 :::

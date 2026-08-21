@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2025
 ---
-
-::: remark
-UCSD Topology (Math 290) qualifying exam from `SP25_290_Topology_Qual.pdf` (PDF booklet heading: Summer 2025). Eight problems in sitting order.
-:::

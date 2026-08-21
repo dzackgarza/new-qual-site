@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Consider the covering map indicated in Figure 60.3 of the text. Here, $p$ wraps $A_1$ around $A$ twice and wraps $B_1$ around $B$ twice; $p$ maps $A_0$ and $B_0$ homeomorphically onto $A$ and $B$, respectively. Use this covering space to show that the fundamental group of the figure eight is not abelian.
+::: {.exercise title="Munkres §60.5"}
 
-::: {.remark}
-Munkres, *Topology*, §60 Exercise 5.
+
+Consider the covering map indicated in Figure 60.3 of the text. Here, $p$ wraps $A_1$ around $A$ twice and wraps $B_1$ around $B$ twice; $p$ maps $A_0$ and $B_0$ homeomorphically onto $A$ and $B$, respectively. Use this covering space to show that the fundamental group of the figure eight is not abelian.
 :::

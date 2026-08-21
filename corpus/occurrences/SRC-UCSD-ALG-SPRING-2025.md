@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2025
 ---
-
-::: remark
-UCSD Algebra (Math 200) qualifying exam; department file `SP25_200_Algebra_Qual.pdf`. The paper header reads Spring 2025 (seven problems; point values 5+8+8+5+5+6+8; total 45). The list is the paper order.
-:::

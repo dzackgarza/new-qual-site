@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2014
 ---
-
-::: remark
-Headed August 12, 2014.
-:::

@@ -32,7 +32,3 @@ source:
     term: fall
     year: 2025
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam dated September 10, 2025 (ten problems, 10 points each). The list is the paper order.
-:::

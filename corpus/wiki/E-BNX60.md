@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §39.1"}
+
+
 Check the statements in Example 1 of §39: the collection
 
 $$
@@ -26,7 +29,4 @@ $$
 $$
 
 are locally finite in $(0, 1)$ but not in $\mathbb{R}$.
-
-::: {.remark}
-Munkres, *Topology*, §39 Exercise 1.
 :::

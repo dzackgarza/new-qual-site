@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2018
 ---
-
-::: remark
-UGA topology Fall 2018. The paper is the current Quals posting `Topology [Fall 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2018.txt`. The list is the sitting order on that paper.
-:::

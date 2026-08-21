@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that a connected metric space having more than one point is uncountable.
+::: {.exercise title="Munkres §27.4"}
 
-::: {.remark}
-Munkres, *Topology*, §27 Exercise 4.
+
+Show that a connected metric space having more than one point is uncountable.
 :::

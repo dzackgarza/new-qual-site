@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Corollary. Every closed subspace of $\mathbb{R}^N$ has topological dimension at most $N$.
+::: {.exercise title="Munkres §50.10"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Exercise 10.
+
+Corollary. Every closed subspace of $\mathbb{R}^N$ has topological dimension at most $N$.
 :::

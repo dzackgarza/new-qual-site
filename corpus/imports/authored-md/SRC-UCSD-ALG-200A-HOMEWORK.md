@@ -75,7 +75,3 @@ source:
     kind: unknown
   area: algebra
 ---
-
-::: remark
-Authored compendium titled "Math 200A Homework Question Compendium"; no department homework sheet PDF identified. The make-me-a-qual markdown wrapper is not collection provenance.
-:::

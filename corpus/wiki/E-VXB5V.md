@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that any discrete space has dimension 0.
+::: {.exercise title="Munkres §50.1"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Exercise 1.
+
+Show that any discrete space has dimension 0.
 :::

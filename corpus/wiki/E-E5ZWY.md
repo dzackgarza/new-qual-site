@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that every order topology is regular.
+::: {.exercise title="Munkres §31.3"}
 
-::: {.remark}
-Munkres, *Topology*, §31 Exercise 3.
+
+Show that every order topology is regular.
 :::

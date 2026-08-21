@@ -30,5 +30,5 @@ source:
 ---
 
 ::: remark
-UGA complex-analysis Spring 2021. The paper is the current Quals posting `Complex Analysis [Spring 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The local dump is `.tmp-uga-ca-exams/SPRING-2021.txt`. The list is the sitting order on that paper. Exam #1 is [[P-RLZK3]] (the Poincaré identity; the Quals dump writes $|z_1-\bar z_1 z_2|^2$ for $|1-\bar z_1 z_2|^2$).
+Exam #1 is [[P-RLZK3]] (the Poincaré identity; the Quals dump writes $|z_1-\bar z_1 z_2|^2$ for $|1-\bar z_1 z_2|^2$).
 :::

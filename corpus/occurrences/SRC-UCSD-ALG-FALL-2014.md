@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2014
 ---
-
-::: remark
-UCSD Algebra qualifying exam, Fall 2014 (eight problems; cover sheet totals 85 points). The list is the paper order.
-:::

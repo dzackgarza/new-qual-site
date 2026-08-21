@@ -28,7 +28,3 @@ source:
     term: fall
     year: 2014
 ---
-
-::: remark
-Fall 2014 sitting inside Justin Roberts' compilation `SRC-UCSD-TOP-290QUALS` (section 16; printed p. 407). That compilation owns the packet PDF; this card has no separate sitting sheet. The list is the eight-problem sitting in printed order.
-:::

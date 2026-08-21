@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be a locally compact space. If $f: X \to Y$ is continuous, does it follow that $f(X)$ is locally compact? What if $f$ is both continuous and open? Justify your answer.
+::: {.exercise title="Munkres §29.3"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Exercise 3.
+
+Let $X$ be a locally compact space. If $f: X \to Y$ is continuous, does it follow that $f(X)$ is locally compact? What if $f$ is both continuous and open? Justify your answer.
 :::

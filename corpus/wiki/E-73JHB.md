@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the one-point compactification of $\mathbb{Z}_+$ is homeomorphic with the subspace $\ts{0} \cup \ts{1/n \mid n \in \mathbb{Z}_+}$ of $\mathbb{R}$.
+::: {.exercise title="Munkres §29.8"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Exercise 8.
+
+Show that the one-point compactification of $\mathbb{Z}_+$ is homeomorphic with the subspace $\ts{0} \cup \ts{1/n \mid n \in \mathbb{Z}_+}$ of $\mathbb{R}$.
 :::

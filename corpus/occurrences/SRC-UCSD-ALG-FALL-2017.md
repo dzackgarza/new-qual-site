@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2017
 ---
-
-::: remark
-UCSD Algebra qualifying exam dated Thursday September 14th (eight problems, 10 points each). The list is the paper order. The department URL basename is `Algebra.pdf`.
-:::

@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §25.2"}
+
+
 (a) What are the components and path components of $\mathbb{R}^\omega$ (in the product topology)?
 
 (b) Consider $\mathbb{R}^\omega$ in the uniform topology. Show that $\mathbf{x}$ and $\mathbf{y}$ lie in the same component of $\mathbb{R}^\omega$ if and only if the sequence
@@ -25,7 +28,4 @@ $$
 is bounded. [Hint: It suffices to consider the case where $\mathbf{y} = 0$.]
 
 (c) Give $\mathbb{R}^\omega$ the box topology. Show that $\mathbf{x}$ and $\mathbf{y}$ lie in the same component of $\mathbb{R}^\omega$ if and only if the sequence $\mathbf{x} - \mathbf{y}$ is "eventually zero." [Hint: If $\mathbf{x} - \mathbf{y}$ is not eventually zero, show there is a homeomorphism $h$ of $\mathbb{R}^\omega$ with itself such that $h(\mathbf{x})$ is bounded and $h(\mathbf{y})$ is unbounded.]
-
-::: {.remark}
-Munkres, *Topology*, §25 Exercise 2.
 :::

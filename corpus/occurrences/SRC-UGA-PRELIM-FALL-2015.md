@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2015
 ---
-
-::: remark
-Nine equally weighted questions.
-:::

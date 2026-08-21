@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §58.9"}
+
+
 We define the degree of a continuous map $h: S^1 \to S^1$ as follows.
 
 Let $b_0$ be the point $(1, 0)$ of $S^1$; choose a generator $\gamma$ for the infinite cyclic group $\pi_1(S^1, b_0)$. If $x_0$ is any point of $S^1$, choose a path $\alpha$ in $S^1$ from $b_0$ to $x_0$, and define $\gamma(x_0) = \hat{\alpha}(\gamma)$. Then $\gamma(x_0)$ generates $\pi_1(S^1, x_0)$. The element $\gamma(x_0)$ is independent of the choice of the path $\alpha$, since the fundamental group of $S^1$ is abelian.
@@ -42,7 +45,4 @@ The degree of $h$ is independent of the choice of the generator $\gamma$; choosi
 (d) Compute the degrees of the constant map, the identity map, the reflection map $\rho(x_1, x_2) = (x_1, -x_2)$, and the map $h(z) = z^n$, where $z$ is a complex number.
 
 (e) Show that if $h, k: S^1 \to S^1$ have the same degree, they are homotopic.
-
-::: {.remark}
-Munkres, *Topology*, §58 Exercise 9 (starred in the text).
 :::

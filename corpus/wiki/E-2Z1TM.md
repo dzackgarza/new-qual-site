@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §54.4"}
+
+
 Consider the covering map $p: \mathbb{R} \times \mathbb{R}_+ \to \mathbb{R}^2 - 0$ of Example 6 of §53. Find liftings of the paths
 
 $$
@@ -28,7 +31,4 @@ h(t) = f * g.
 $$
 
 Sketch these paths and their liftings.
-
-::: {.remark}
-Munkres, *Topology*, §54 Exercise 4.
 :::

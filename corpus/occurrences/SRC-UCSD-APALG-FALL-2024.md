@@ -32,7 +32,3 @@ source:
     term: fall
     year: 2024
 ---
-
-::: remark
-UCSD Applied Algebra (Math 202) qualifying exam, September 10, 2024. Ten problems in sitting order from `FA24_202_Applied_Algebra_Qual.pdf`.
-:::

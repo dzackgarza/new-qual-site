@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-If $\mathcal{T}$ and $\mathcal{T}'$ are topologies on $X$ and $\mathcal{T}'$ is strictly finer than $\mathcal{T}$, what can you say about the corresponding subspace topologies on the subset $Y$ of $X$?
+::: {.exercise title="Munkres §16.2"}
 
-::: {.remark}
-Munkres, *Topology*, §16 Exercise 2.
+
+If $\mathcal{T}$ and $\mathcal{T}'$ are topologies on $X$ and $\mathcal{T}'$ is strictly finer than $\mathcal{T}$, what can you say about the corresponding subspace topologies on the subset $Y$ of $X$?
 :::

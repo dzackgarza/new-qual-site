@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Consider the nine topologies on the set $X = \ts{a, b, c}$ indicated in Example 1 of §12. Compare them; that is, for each pair of topologies, determine whether they are comparable, and if so, which is the finer.
+::: {.exercise title="Munkres §13.2"}
 
-::: {.remark}
-Munkres, *Topology*, §13 Exercise 2.
+
+Consider the nine topologies on the set $X = \ts{a, b, c}$ indicated in Example 1 of §12. Compare them; that is, for each pair of topologies, determine whether they are comparable, and if so, which is the finer.
 :::

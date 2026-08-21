@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $G_1$ is a subgroup of $G$, there may be no subgroup $G_2$ of $G$ such that $G = G_1 \oplus G_2$. [Hint: Set $G = \mathbb{Z}$ and $G_1 = 2\mathbb{Z}$.]
+::: {.exercise title="Munkres §67.2"}
 
-::: {.remark}
-Munkres, *Topology*, §67 Exercise 2.
+
+Show that if $G_1$ is a subgroup of $G$, there may be no subgroup $G_2$ of $G$ such that $G = G_1 \oplus G_2$. [Hint: Set $G = \mathbb{Z}$ and $G_1 = 2\mathbb{Z}$.]
 :::

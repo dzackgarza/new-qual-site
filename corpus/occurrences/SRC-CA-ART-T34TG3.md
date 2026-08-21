@@ -42,7 +42,3 @@ source:
     year: 2020
   area: complex-analysis
 ---
-
-::: remark
-Spring 2020 HW 3. No homework sheet PDF identified for this collection. `assets/attachments/8150-hw3.pdf` is Math 8150 Spring 2021 Assignment 3 and does not match this problem list.
-:::

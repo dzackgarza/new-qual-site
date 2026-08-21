@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §37.3"}
+
+
 Consider the three statements:
 
 (i) If $X$ is a set and $\mathcal{A}$ is a collection of subsets of $X$ having the countable intersection property, then there is a collection $\mathcal{D}$ of subsets of $X$ such that $\mathcal{D} \supset \mathcal{A}$ and $\mathcal{D}$ is maximal with respect to the countable intersection property.
@@ -27,7 +30,4 @@ Consider the three statements:
 (b) Show that (ii) holds.
 
 (c) Products of Lindelöf spaces need not be Lindelöf (see §30). Therefore (i) does not hold. If one attempts to generalize the proof of Lemma 37.1 to the countable intersection property, at what point does the proof break down?
-
-::: {.remark}
-Munkres, *Topology*, §37 Exercise 3.
 :::

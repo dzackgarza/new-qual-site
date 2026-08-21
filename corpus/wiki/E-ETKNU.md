@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Examine the proof of the imbedding theorem in the case $m = 1$ and show that the map $g$ of part (2) actually maps $X$ onto a linear graph in $\mathbb{R}^3$.
+::: {.exercise title="Munkres §50.5"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Exercise 5.
+
+Examine the proof of the imbedding theorem in the case $m = 1$ and show that the map $g$ of part (2) actually maps $X$ onto a linear graph in $\mathbb{R}^3$.
 :::

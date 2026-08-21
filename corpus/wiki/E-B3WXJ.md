@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $A$ is a retract of $B^2$, then every continuous map $f: A \to A$ has a fixed point.
+::: {.exercise title="Munkres §55.1"}
 
-::: {.remark}
-Munkres, *Topology*, §55 Exercise 1.
+
+Show that if $A$ is a retract of $B^2$, then every continuous map $f: A \to A$ has a fixed point.
 :::

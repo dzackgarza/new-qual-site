@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be a space that is locally $m$-euclidean. Show that if $X$ is metrizable, then each component of $X$ is an $m$-manifold.
+::: {.exercise title="Munkres §50 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §50 Supplementary Exercises (Locally Euclidean Spaces) Exercise 9.
+
+Let $X$ be a space that is locally $m$-euclidean. Show that if $X$ is metrizable, then each component of $X$ is an $m$-manifold.
 :::

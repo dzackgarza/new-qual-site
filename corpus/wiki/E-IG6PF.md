@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that $\mathbb{R}^J$ is a Baire space in the box, product, and uniform topologies.
+::: {.exercise title="Munkres §48.12"}
 
-::: {.remark}
-Munkres, *Topology*, §48 Exercise 12.
+
+Show that $\mathbb{R}^J$ is a Baire space in the box, product, and uniform topologies.
 :::

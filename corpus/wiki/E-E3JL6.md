@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that the product of two Hausdorff spaces is Hausdorff.
+::: {.exercise title="Munkres §17.11"}
 
-::: {.remark}
-Munkres, *Topology*, §17 Exercise 11.
+
+Show that the product of two Hausdorff spaces is Hausdorff.
 :::

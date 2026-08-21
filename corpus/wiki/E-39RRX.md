@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §20.8"}
+
+
 Let $X$ be the subset of $\mathbb{R}^\omega$ consisting of all sequences $\mathbf{x}$ such that $\sum x_i^2$ converges. Then the formula
 
 $$
@@ -37,7 +40,4 @@ H = \prod_{n \in \mathbb{Z}_+} [0, 1/n]
 $$
 
 is contained in $X$; it is called the Hilbert cube. Compare the four topologies that $H$ inherits as a subspace of $X$.
-
-::: {.remark}
-Munkres, *Topology*, §20 Exercise 8.
 :::

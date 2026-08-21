@@ -28,7 +28,3 @@ source:
     kind: year
     year: 2003
 ---
-
-::: remark
-Summer 2003 sitting inside Justin Roberts' compilation `SRC-UCSD-TOP-290QUALS` (section 3; printed p. 394). That compilation owns the packet PDF; this card has no separate sitting sheet.
-:::

@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2024
 ---
-
-::: remark
-UCSD Algebra (Math 200) qualifying exam; department file `FA24_200_Algebra_Qual.pdf`. The paper header reads Summer 2024 (seven problems, 10 points each; total 70). The list is the paper order.
-:::

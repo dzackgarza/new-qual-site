@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §24.12"}
+
+
 Recall that $S_\Omega$ denotes the minimal uncountable well-ordered set. Let $L$ denote the ordered set $S_\Omega \times [0, 1)$ in the dictionary order, with its smallest element deleted. The set $L$ is a classical example in topology called the long line.
 
 Theorem. The long line is path connected and locally homeomorphic to $\mathbb{R}$, but it cannot be imbedded in $\mathbb{R}$.
@@ -29,7 +32,4 @@ Theorem. The long line is path connected and locally homeomorphic to $\mathbb{R}
 (e) Show that every point of $L$ has a neighborhood homeomorphic with an open interval in $\mathbb{R}$.
 
 (f) Show that $L$ cannot be imbedded in $\mathbb{R}$, or indeed in $\mathbb{R}^n$ for any $n$. [Hint: Any subspace of $\mathbb{R}^n$ has a countable basis for its topology.]
-
-::: {.remark}
-Munkres, *Topology*, §24 Exercise 12 (starred in the text).
 :::

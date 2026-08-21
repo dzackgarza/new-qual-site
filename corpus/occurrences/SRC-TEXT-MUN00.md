@@ -19,6 +19,88 @@ source:
     kind: year
     year: 2000
   sections:
+  - name: '1'
+    problems:
+    - E-MUN-1-1
+    - E-MUN-1-2
+    - E-MUN-1-3
+    - E-MUN-1-4
+    - E-MUN-1-5
+    - E-MUN-1-6
+    - E-MUN-1-7
+    - E-MUN-1-8
+    - E-MUN-1-9
+    - E-MUN-1-10
+  - name: '2'
+    problems:
+    - E-MUN-2-1
+    - E-MUN-2-2
+    - E-MUN-2-3
+    - E-MUN-2-4
+    - E-MUN-2-5
+    - E-MUN-2-6
+  - name: '4'
+    problems:
+    - E-MUN-4-1
+    - E-MUN-4-2
+    - E-MUN-4-3
+    - E-MUN-4-4
+    - E-MUN-4-5
+    - E-MUN-4-6
+    - E-MUN-4-7
+    - E-MUN-4-8
+    - E-MUN-4-9
+    - E-MUN-4-10
+    - E-MUN-4-11
+  - name: '5'
+    problems:
+    - E-MUN-5-1
+    - E-MUN-5-2
+    - E-MUN-5-3
+    - E-MUN-5-4
+    - E-MUN-5-5
+  - name: '6'
+    problems:
+    - E-MUN-6-1
+    - E-MUN-6-2
+    - E-MUN-6-3
+    - E-MUN-6-4
+    - E-MUN-6-5
+    - E-MUN-6-6
+    - E-MUN-6-7
+  - name: '7'
+    problems:
+    - E-MUN-7-1
+    - E-MUN-7-2
+    - E-MUN-7-3
+    - E-MUN-7-4
+    - E-MUN-7-5
+    - E-MUN-7-6
+    - E-MUN-7-7
+    - E-MUN-7-8
+    - E-MUN-7-9
+  - name: '9'
+    problems:
+    - E-MUN-9-1
+    - E-MUN-9-2
+    - E-MUN-9-3
+    - E-MUN-9-4
+    - E-MUN-9-5
+    - E-MUN-9-6
+    - E-MUN-9-7
+  - name: '10'
+    problems:
+    - E-MUN-10-1
+    - E-MUN-10-2
+    - E-MUN-10-3
+    - E-MUN-10-4
+    - E-MUN-10-5
+    - E-MUN-10-6
+    - E-MUN-10-7
+    - E-MUN-10-8
+    - E-MUN-10-9
+    - E-MUN-10-10
+    - E-MUN-10-11
   - name: '13'
     problems:
     - E-KTHV8
@@ -680,8 +762,5 @@ source:
 ---
 
 ::: remark
-Munkres, *Topology*, 2nd edition, Prentice Hall, 2000. Cited in the authored wiki as `[@Mun00]`; the work itself is in `vocabularies/references.bib` and the book is registered as `munkres` in `vocabularies/textbooks.yaml`. `sections:` is the book order of associated existing problem and exercise cards.
-Theorem and definition cards titled or sourced by Munkres numbers are omitted from this exercise list: `T-FA6VI` (Munkres 18.1), `T-3FJK4` (Theorems 26.2 and 26.3), `T-JFADP` (Theorem 26.3), `T-7DICT` (Theorem 26.9), `D-ASXW6` and `D-UHTGH` (Theorems 17.4–17.5), `D-KJBAK` (§17), `D-9KQZT` (§18), `D-Q5272` (definitions; the remark *cites* §26 Exercise 6 but the card is not that exercise), `D-J6XOC` and `D-Z7I7F` (§51). `T-QMGPN` and `T-TUXBP` cite Munkres, *Analysis on Manifolds*, a different registered book.
-Exam problems that only cite a Munkres page in a remark are omitted: `P-MHQ6A` (p. 148), `P-L4EMZ` (p. 164). `E-2LZES` and `E-YAEMZ` (with fragments `E-E7FYR`, `E-WFE4T`) cite §28 Theorem 28.2; their statements are that theorem, not a book exercise.
-`E-JN4QP` states the compact-to-Hausdorff homeomorphism fact with no attribution as a Munkres exercise.
+`sections:` lists the book's exercises in book order. Theorem and definition cards are not included in this exercise list.
 :::

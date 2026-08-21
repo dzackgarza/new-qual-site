@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §19.10"}
+
+
 Let $A$ be a set; let $\ts{X_\alpha}_{\alpha \in J}$ be an indexed family of spaces; and let $\ts{f_\alpha}_{\alpha \in J}$ be an indexed family of functions $f_\alpha: A \to X_\alpha$.
 
 (a) Show there is a unique coarsest topology $\mathcal{T}$ on $A$ relative to which each of the functions $f_\alpha$ is continuous.
@@ -35,7 +38,4 @@ f(a) = (f_\alpha(a))_{\alpha \in J};
 $$
 
 let $Z$ denote the subspace $f(A)$ of the product space $\prod X_\alpha$. Show that the image under $f$ of each element of $\mathcal{T}$ is an open set of $Z$.
-
-::: {.remark}
-Munkres, *Topology*, §19 Exercise 10.
 :::

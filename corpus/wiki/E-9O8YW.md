@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be completely regular. Show that $X$ is connected if and only if $\beta(X)$ is connected. [Hint: If $X = A \cup B$ is a separation of $X$, let $f(x) = 0$ for $x \in A$ and $f(x) = 1$ for $x \in B$.]
+::: {.exercise title="Munkres §38.6"}
 
-::: {.remark}
-Munkres, *Topology*, §38 Exercise 6.
+
+Let $X$ be completely regular. Show that $X$ is connected if and only if $\beta(X)$ is connected. [Hint: If $X = A \cup B$ is a separation of $X$, let $f(x) = 0$ for $x \in A$ and $f(x) = 1$ for $x \in B$.]
 :::

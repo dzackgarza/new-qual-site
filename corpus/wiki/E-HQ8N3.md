@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-What can you say about the fundamental group of $X \vee Y$ if $X$ is homeomorphic to $S^1$ and $Y$ is homeomorphic to $S^2$?
+::: {.exercise title="Munkres §71.3"}
 
-::: {.remark}
-Munkres, *Topology*, §71 Exercise 3.
+
+What can you say about the fundamental group of $X \vee Y$ if $X$ is homeomorphic to $S^1$ and $Y$ is homeomorphic to $S^2$?
 :::

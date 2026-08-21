@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that a finite union of compact subspaces of $X$ is compact.
+::: {.exercise title="Munkres §26.3"}
 
-::: {.remark}
-Munkres, *Topology*, §26 Exercise 3.
+
+Show that a finite union of compact subspaces of $X$ is compact.
 :::

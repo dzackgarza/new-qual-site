@@ -28,7 +28,3 @@ source:
     term: spring
     year: 2020
 ---
-
-::: remark
-UGA complex-analysis Spring 2020. The listed department PDF `ComplexQual_Spring2020.pdf` currently 404s. The paper is the current Quals posting `Complex Analysis [Spring 2020].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The local dump is `.tmp-uga-ca-exams/SPRING-2020.txt`. The list is the sitting order on that paper. There are no holes.
-:::

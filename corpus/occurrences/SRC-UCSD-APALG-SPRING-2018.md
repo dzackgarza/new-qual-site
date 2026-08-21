@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2018
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam dated May 24, 2018 (eight problems, 25 points each). The list is the paper order.
-:::

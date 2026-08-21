@@ -70,15 +70,3 @@ source:
     problems: []
   area: algebra
 ---
-
-::: remark
-Photocopy `algebra_2003-2009_prelims.pdf` (48 pages). Pages 7–18 are solutions to the June 11, 2008 exam, not further exam items. Page 22 is blank.
-
-Filled so far: Summer 2009 (pp. 1–2, twelve problems), June 11, 2008 (pp. 3–6, twelve problems), Summer 2007 (pp. 19–21, thirteen problems).
-
-Remaining empty sections (problem cards not yet listed):
-- Algebra Qualifying Exam of July 12, 2006 — PDF pp. 23 and 25 (pp. 24 and 26 blank); exam problems 1–12 (Sections I–III)
-- Algebra Preliminary Examination, Summer 2005 — PDF pp. 27–28 (p. 28 blank); exam problems 1–6
-- ALGEBRA PRELIMINARY EXAM – 2004 — PDF pp. 29–38; Groups (1)–(4), Rings (1)–(3), Fields (1)–(4)
-- Algebra Preliminary Examination, July 28, 2003 — PDF pp. 39–48; exam problems 1–9
-:::

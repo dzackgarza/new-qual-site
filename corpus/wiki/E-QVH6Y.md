@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Under what conditions does a metrizable space have a metrizable compactification?
+::: {.exercise title="Munkres §38.3"}
 
-::: {.remark}
-Munkres, *Topology*, §38 Exercise 3.
+
+Under what conditions does a metrizable space have a metrizable compactification?
 :::

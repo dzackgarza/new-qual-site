@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-What goes wrong with the "path-lifting lemma" (Lemma 54.1) for the local homeomorphism of Example 2 of §53?
+::: {.exercise title="Munkres §54.1"}
 
-::: {.remark}
-Munkres, *Topology*, §54 Exercise 1.
+
+What goes wrong with the "path-lifting lemma" (Lemma 54.1) for the local homeomorphism of Example 2 of §53?
 :::

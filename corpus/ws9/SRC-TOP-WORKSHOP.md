@@ -145,7 +145,3 @@ source:
     - P-T13B3
   area: topology
 ---
-
-::: remark
-UNL topology qual-prep packet. Numbered days; no Day 5 or Day 6 among the extracted sheets.
-:::

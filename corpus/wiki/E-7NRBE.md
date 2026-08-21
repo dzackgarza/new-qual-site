@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that $\beta(\mathbb{Z}_+)$ has cardinality at least as great as $I^I$, where $I = [0, 1]$. [Hint: The space $I^I$ has a countable dense subset.]
+::: {.exercise title="Munkres §38.8"}
 
-::: {.remark}
-Munkres, *Topology*, §38 Exercise 8.
+
+Show that $\beta(\mathbb{Z}_+)$ has cardinality at least as great as $I^I$, where $I = [0, 1]$. [Hint: The space $I^I$ has a countable dense subset.]
 :::

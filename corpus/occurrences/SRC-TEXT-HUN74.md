@@ -9,6 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
+completion: incomplete
 provenance:
 - https://doi.org/10.1007/978-1-4612-6101-8
 source:
@@ -136,7 +137,3 @@ source:
     - P-QVPRB
     - P-Q5ICU
 ---
-
-::: remark
-Hungerford, *Algebra*, Graduate Texts in Mathematics 73, Springer, 1974. Cited in the authored wiki as `[@Hun74]`; the work itself is in `vocabularies/references.bib` and the book is registered as `hungerford` in `vocabularies/textbooks.yaml`. `sections:` is the book order of the 67 problem cards already in `corpus/wiki` whose problem headings are Hungerford chapter.section.exercise numbers (Hungerford 1.6.3 through Hungerford 7.5.7). It is the associated existing cards, not a complete exercise list for GTM 73.
-:::

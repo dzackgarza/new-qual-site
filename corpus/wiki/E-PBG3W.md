@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $q: X \to Y$ and $r: Y \to Z$ be covering maps; let $p = r \circ q$. Show that if $r^{-1}(z)$ is finite for each $z \in Z$, then $p$ is a covering map.
+::: {.exercise title="Munkres §53.4"}
 
-::: {.remark}
-Munkres, *Topology*, §53 Exercise 4.
+
+Let $q: X \to Y$ and $r: Y \to Z$ be covering maps; let $p = r \circ q$. Show that if $r^{-1}(z)$ is finite for each $z \in Z$, then $p$ is a covering map.
 :::

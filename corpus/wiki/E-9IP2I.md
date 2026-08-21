@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §69.3"}
+
+
 Prove the following.
 
 Theorem. Let $G = G_1 * G_2$, where $G_1$ and $G_2$ are cyclic of orders $m$ and $n$, respectively. Then $m$ and $n$ are uniquely determined by $G$.
@@ -22,7 +25,4 @@ Theorem. Let $G = G_1 * G_2$, where $G_1$ and $G_2$ are cyclic of orders $m$ and
 (b) Determine the largest integer $k$ such that $G$ has an element of order $k$. (See [[E-175IG]].)
 
 (c) Prove the theorem.
-
-::: {.remark}
-Munkres, *Topology*, §69 Exercise 3.
 :::

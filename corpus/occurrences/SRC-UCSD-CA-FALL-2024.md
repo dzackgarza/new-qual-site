@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2024
 ---
-
-::: remark
-UCSD Complex Analysis (Math 220) qualifying exam, Fall 2024 (seven problems, 10 points each). The list is the paper order.
-:::

@@ -22,7 +22,3 @@ source:
     term: summer
     year: 2015
 ---
-
-::: remark
-The PDF heading is “Summer 2015”. The department sample page labels this file `FA15`. Problem list not yet extracted.
-:::

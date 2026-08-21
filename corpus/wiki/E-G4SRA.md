@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §18.10"}
+
+
 Let $f: A \to B$ and $g: C \to D$ be continuous functions. Let us define a map $f \times g: A \times C \to B \times D$ by the equation
 
 $$
@@ -21,7 +24,4 @@ $$
 $$
 
 Show that $f \times g$ is continuous.
-
-::: {.remark}
-Munkres, *Topology*, §18 Exercise 10.
 :::

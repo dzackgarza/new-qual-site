@@ -19,9 +19,6 @@ source:
     kind: year
     year: 2002
   sections:
-  - name: Chapter 0
-    problems:
-    - P-TOP-WORKSHOP-2020-WS2B-HW2
   - name: '1.1'
     problems:
     - E-HAT-1.1-1
@@ -68,6 +65,41 @@ source:
     - E-HAT-1.2-20
     - E-HAT-1.2-21
     - E-HAT-1.2-22
+  - name: '1.3'
+    problems:
+    - E-HAT-1.3-1
+    - E-HAT-1.3-2
+    - E-HAT-1.3-3
+    - E-HAT-1.3-4
+    - E-HAT-1.3-5
+    - E-HAT-1.3-6
+    - E-HAT-1.3-7
+    - E-HAT-1.3-8
+    - E-HAT-1.3-9
+    - E-HAT-1.3-10
+    - E-HAT-1.3-11
+    - E-HAT-1.3-12
+    - E-HAT-1.3-13
+    - E-HAT-1.3-14
+    - E-HAT-1.3-15
+    - E-HAT-1.3-16
+    - E-HAT-1.3-17
+    - E-HAT-1.3-18
+    - E-HAT-1.3-19
+    - E-HAT-1.3-20
+    - E-HAT-1.3-21
+    - E-HAT-1.3-22
+    - E-HAT-1.3-23
+    - E-HAT-1.3-24
+    - E-HAT-1.3-25
+    - E-HAT-1.3-26
+    - E-HAT-1.3-27
+    - E-HAT-1.3-28
+    - E-HAT-1.3-29
+    - E-HAT-1.3-30
+    - E-HAT-1.3-31
+    - E-HAT-1.3-32
+    - E-HAT-1.3-33
   - name: '1.A'
     problems:
     - E-HAT-1.A-1
@@ -84,6 +116,17 @@ source:
     - E-HAT-1.A-12
     - E-HAT-1.A-13
     - E-HAT-1.A-14
+  - name: '1.B'
+    problems:
+    - E-HAT-1.B-1
+    - E-HAT-1.B-2
+    - E-HAT-1.B-3
+    - E-HAT-1.B-4
+    - E-HAT-1.B-5
+    - E-HAT-1.B-6
+    - E-HAT-1.B-7
+    - E-HAT-1.B-8
+    - E-HAT-1.B-9
   - name: '2.1'
     problems:
     - E-HAT-2.1-1
@@ -181,6 +224,19 @@ source:
     - E-HAT-2.A-9
     - E-HAT-2.A-10
     - E-HAT-2.A-11
+  - name: '2.B'
+    problems:
+    - E-HAT-2.B-1
+    - E-HAT-2.B-2
+    - E-HAT-2.B-3
+    - E-HAT-2.B-4
+    - E-HAT-2.B-5
+    - E-HAT-2.B-6
+    - E-HAT-2.B-7
+    - E-HAT-2.B-8
+    - E-HAT-2.B-9
+    - E-HAT-2.B-10
+    - E-HAT-2.B-11
   - name: '2.C'
     problems:
     - E-HAT-2.C-1
@@ -189,8 +245,290 @@ source:
     - E-HAT-2.C-4
     - E-HAT-2.C-5
     - E-HAT-2.C-6
+  - name: '3.1'
+    problems:
+    - E-HAT-3.1-1
+    - E-HAT-3.1-2
+    - E-HAT-3.1-3
+    - E-HAT-3.1-4
+    - E-HAT-3.1-5
+    - E-HAT-3.1-6
+    - E-HAT-3.1-7
+    - E-HAT-3.1-8
+    - E-HAT-3.1-9
+    - E-HAT-3.1-10
+    - E-HAT-3.1-11
+    - E-HAT-3.1-12
+    - E-HAT-3.1-13
+  - name: '3.2'
+    problems:
+    - E-HAT-3.2-1
+    - E-HAT-3.2-2
+    - E-HAT-3.2-3
+    - E-HAT-3.2-4
+    - E-HAT-3.2-5
+    - E-HAT-3.2-6
+    - E-HAT-3.2-7
+    - E-HAT-3.2-8
+    - E-HAT-3.2-9
+    - E-HAT-3.2-10
+    - E-HAT-3.2-11
+    - E-HAT-3.2-12
+    - E-HAT-3.2-13
+    - E-HAT-3.2-14
+    - E-HAT-3.2-15
+    - E-HAT-3.2-16
+    - E-HAT-3.2-18
+  - name: '3.3'
+    problems:
+    - E-HAT-3.3-1
+    - E-HAT-3.3-2
+    - E-HAT-3.3-3
+    - E-HAT-3.3-4
+    - E-HAT-3.3-5
+    - E-HAT-3.3-6
+    - E-HAT-3.3-7
+    - E-HAT-3.3-8
+    - E-HAT-3.3-9
+    - E-HAT-3.3-10
+    - E-HAT-3.3-11
+    - E-HAT-3.3-12
+    - E-HAT-3.3-13
+    - E-HAT-3.3-14
+    - E-HAT-3.3-15
+    - E-HAT-3.3-16
+    - E-HAT-3.3-17
+    - E-HAT-3.3-18
+    - E-HAT-3.3-19
+    - E-HAT-3.3-20
+    - E-HAT-3.3-21
+    - E-HAT-3.3-22
+    - E-HAT-3.3-23
+    - E-HAT-3.3-24
+    - E-HAT-3.3-25
+    - E-HAT-3.3-26
+    - E-HAT-3.3-27
+    - E-HAT-3.3-28
+    - E-HAT-3.3-29
+    - E-HAT-3.3-30
+    - E-HAT-3.3-31
+    - E-HAT-3.3-32
+    - E-HAT-3.3-33
+    - E-HAT-3.3-34
+    - E-HAT-3.3-35
+  - name: '3.A'
+    problems:
+    - E-HAT-3.A-1
+    - E-HAT-3.A-2
+    - E-HAT-3.A-3
+    - E-HAT-3.A-4
+    - E-HAT-3.A-5
+    - E-HAT-3.A-6
+  - name: '3.B'
+    problems:
+    - E-HAT-3.B-1
+    - E-HAT-3.B-2
+    - E-HAT-3.B-3
+    - E-HAT-3.B-4
+    - E-HAT-3.B-5
+  - name: '3.C'
+    problems:
+    - E-HAT-3.C-1
+    - E-HAT-3.C-2
+    - E-HAT-3.C-3
+    - E-HAT-3.C-4
+    - E-HAT-3.C-5
+    - E-HAT-3.C-6
+    - E-HAT-3.C-7
+    - E-HAT-3.C-8
+    - E-HAT-3.C-9
+    - E-HAT-3.C-10
+    - E-HAT-3.C-11
+    - E-HAT-3.C-12
+    - E-HAT-3.C-13
+    - E-HAT-3.C-14
+    - E-HAT-3.C-15
+    - E-HAT-3.C-16
+  - name: '3.D'
+    problems:
+    - E-HAT-3.D-1
+    - E-HAT-3.D-2
+    - E-HAT-3.D-3
+  - name: '3.E'
+    problems:
+    - E-HAT-3.E-1
+    - E-HAT-3.E-2
+    - E-HAT-3.E-3
+    - E-HAT-3.E-4
+  - name: '3.F'
+    problems:
+    - E-HAT-3.F-1
+    - E-HAT-3.F-2
+    - E-HAT-3.F-3
+    - E-HAT-3.F-4
+    - E-HAT-3.F-5
+    - E-HAT-3.F-6
+    - E-HAT-3.F-7
+    - E-HAT-3.F-8
+    - E-HAT-3.F-9
+  - name: '3.H'
+    problems:
+    - E-HAT-3.H-1
+    - E-HAT-3.H-2
+    - E-HAT-3.H-3
+    - E-HAT-3.H-4
+    - E-HAT-3.H-5
+    - E-HAT-3.H-6
+  - name: '4.1'
+    problems:
+    - E-HAT-4.1-1
+    - E-HAT-4.1-2
+    - E-HAT-4.1-3
+    - E-HAT-4.1-4
+    - E-HAT-4.1-5
+    - E-HAT-4.1-6
+    - E-HAT-4.1-7
+    - E-HAT-4.1-8
+    - E-HAT-4.1-9
+    - E-HAT-4.1-10
+    - E-HAT-4.1-11
+    - E-HAT-4.1-12
+    - E-HAT-4.1-13
+    - E-HAT-4.1-14
+    - E-HAT-4.1-15
+    - E-HAT-4.1-16
+    - E-HAT-4.1-17
+    - E-HAT-4.1-18
+    - E-HAT-4.1-19
+    - E-HAT-4.1-20
+    - E-HAT-4.1-21
+    - E-HAT-4.1-22
+    - E-HAT-4.1-23
+  - name: '4.2'
+    problems:
+    - E-HAT-4.2-1
+    - E-HAT-4.2-2
+    - E-HAT-4.2-3
+    - E-HAT-4.2-4
+    - E-HAT-4.2-5
+    - E-HAT-4.2-6
+    - E-HAT-4.2-7
+    - E-HAT-4.2-8
+    - E-HAT-4.2-9
+    - E-HAT-4.2-10
+    - E-HAT-4.2-11
+    - E-HAT-4.2-12
+    - E-HAT-4.2-13
+    - E-HAT-4.2-14
+    - E-HAT-4.2-15
+    - E-HAT-4.2-16
+    - E-HAT-4.2-17
+    - E-HAT-4.2-18
+    - E-HAT-4.2-19
+    - E-HAT-4.2-20
+    - E-HAT-4.2-21
+    - E-HAT-4.2-22
+    - E-HAT-4.2-23
+    - E-HAT-4.2-24
+    - E-HAT-4.2-25
+    - E-HAT-4.2-26
+    - E-HAT-4.2-27
+    - E-HAT-4.2-28
+    - E-HAT-4.2-29
+    - E-HAT-4.2-30
+    - E-HAT-4.2-31
+    - E-HAT-4.2-32
+    - E-HAT-4.2-33
+    - E-HAT-4.2-34
+    - E-HAT-4.2-35
+    - E-HAT-4.2-36
+    - E-HAT-4.2-37
+    - E-HAT-4.2-38
+    - E-HAT-4.2-39
+  - name: '4.3'
+    problems:
+    - E-HAT-4.3-1
+    - E-HAT-4.3-2
+    - E-HAT-4.3-3
+    - E-HAT-4.3-4
+    - E-HAT-4.3-5
+    - E-HAT-4.3-6
+    - E-HAT-4.3-7
+    - E-HAT-4.3-8
+    - E-HAT-4.3-9
+    - E-HAT-4.3-10
+    - E-HAT-4.3-11
+    - E-HAT-4.3-12
+    - E-HAT-4.3-13
+    - E-HAT-4.3-14
+    - E-HAT-4.3-15
+    - E-HAT-4.3-16
+    - E-HAT-4.3-17
+    - E-HAT-4.3-18
+    - E-HAT-4.3-19
+    - E-HAT-4.3-20
+    - E-HAT-4.3-21
+    - E-HAT-4.3-22
+    - E-HAT-4.3-23
+    - E-HAT-4.3-24
+  - name: '4.A'
+    problems:
+    - E-HAT-4.A-1
+    - E-HAT-4.A-2
+    - E-HAT-4.A-3
+    - E-HAT-4.A-4
+    - E-HAT-4.A-5
+  - name: '4.B'
+    problems:
+    - E-HAT-4.B-1
+    - E-HAT-4.B-2
+  - name: '4.D'
+    problems:
+    - E-HAT-4.D-1
+    - E-HAT-4.D-2
+    - E-HAT-4.D-3
+    - E-HAT-4.D-4
+    - E-HAT-4.D-5
+    - E-HAT-4.D-6
+    - E-HAT-4.D-7
+    - E-HAT-4.D-8
+    - E-HAT-4.D-9
+    - E-HAT-4.D-10
+  - name: '4.F'
+    problems:
+    - E-HAT-4.F-1
+    - E-HAT-4.F-2
+    - E-HAT-4.F-3
+  - name: '4.G'
+    problems:
+    - E-HAT-4.G-1
+    - E-HAT-4.G-2
+    - E-HAT-4.G-3
+    - E-HAT-4.G-4
+  - name: '4.H'
+    problems:
+    - E-HAT-4.H-1
+    - E-HAT-4.H-2
+    - E-HAT-4.H-3
+    - E-HAT-4.H-4
+  - name: '4.I'
+    problems:
+    - E-HAT-4.I-1
+    - E-HAT-4.I-2
+    - E-HAT-4.I-3
+  - name: '4.K'
+    problems:
+    - E-HAT-4.K-1
+    - E-HAT-4.K-2
+    - E-HAT-4.K-3
+    - E-HAT-4.K-4
+    - E-HAT-4.K-5
+    - E-HAT-4.K-6
+  - name: '4.L'
+    problems:
+    - E-HAT-4.L-1
+    - E-HAT-4.L-2
+    - E-HAT-4.L-3
+    - E-HAT-4.L-4
+    - E-HAT-4.L-5
 ---
-
-::: remark
-Hatcher, *Algebraic Topology*, Cambridge University Press, 2002. Cited in the authored wiki as `[@Hat02]`; the work itself is in `vocabularies/references.bib` and the book is registered as `hatcher` in `vocabularies/textbooks.yaml`. `sections:` lists the exercises extracted so far, in book order. Remaining: §1.3, §1.B, §§3.1–3.3, §3.A–3.H, §§4.1–4.3, §4.A–4.L.
-:::

@@ -25,5 +25,6 @@ source:
 ---
 
 ::: remark
-`sections:` lists the book's exercises in book order. The one listed problem states §5.5 Exercise 6: $K$ cyclic, $\varphi_1(K)$ and $\varphi_2(K)$ conjugate in $\Aut(H)$, an explicit isomorphism $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2}K$, with hint $\psi(h,k)=(\sigma(h),k^a)$.
+`sections:` lists the book's exercises in book order.
+The one listed problem states §5.5 Exercise 6: $K$ cyclic, $\varphi_1(K)$ and $\varphi_2(K)$ conjugate in $\Aut(H)$, an explicit isomorphism $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2}K$, with hint $\psi(h,k)=(\sigma(h),k^a)$.
 :::

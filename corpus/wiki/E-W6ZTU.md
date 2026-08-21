@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-A space is totally disconnected if its only connected subspaces are one-point sets. Show that if $X$ has the discrete topology, then $X$ is totally disconnected. Does the converse hold?
+::: {.exercise title="Munkres §23.5"}
 
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 5.
+
+A space is totally disconnected if its only connected subspaces are one-point sets. Show that if $X$ has the discrete topology, then $X$ is totally disconnected. Does the converse hold?
 :::

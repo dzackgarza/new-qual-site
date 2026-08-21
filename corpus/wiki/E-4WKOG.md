@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §81.6"}
+
+
 Prove the following.
 
 Theorem. Let $X$ be a locally compact Hausdorff space; let $G$ be a group of homeomorphisms of $X$ such that the action of $G$ is fixed-point free. Suppose that for each compact subspace $C$ of $X$, there are only finitely many elements $g$ of $G$ such that the intersection $C \cap g(C)$ is nonempty. Then the action of $G$ is properly discontinuous, and $X/G$ is locally compact Hausdorff.
@@ -24,7 +27,4 @@ Theorem. Let $X$ be a locally compact Hausdorff space; let $G$ be a group of hom
 (c) Show that the action of $G$ is properly discontinuous.
 
 (d) Show that $X/G$ is locally compact.
-
-::: {.remark}
-Munkres, *Topology*, §81 Exercise 6.
 :::

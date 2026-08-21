@@ -31,7 +31,3 @@ source:
     term: spring
     year: 2016
 ---
-
-::: remark
-UCSD Algebra qualifying exam, Spring 2016 (nine problems; department file `200Quals16v2.pdf`). The list is the paper order.
-:::

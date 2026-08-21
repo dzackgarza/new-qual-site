@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Give $\mathbb{R}^\omega$ the box topology. Let $\mathbb{Q}^\infty$ denote the subspace consisting of sequences of rationals that end in an infinite string of 0's. Which of our four countability axioms does this space satisfy?
+::: {.exercise title="Munkres §30.17"}
 
-::: {.remark}
-Munkres, *Topology*, §30 Exercise 17 (starred in the text).
+
+Give $\mathbb{R}^\omega$ the box topology. Let $\mathbb{Q}^\infty$ denote the subspace consisting of sequences of rationals that end in an infinite string of 0's. Which of our four countability axioms does this space satisfy?
 :::

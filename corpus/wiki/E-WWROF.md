@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §21.10"}
+
+
 Using the closed set formulation of continuity (Theorem 18.1), show that the following are closed subsets of $\mathbb{R}^2$:
 
 $$
@@ -29,7 +32,4 @@ B^2 = \ts{x \times y \mid x^2 + y^2 \leq 1}.
 $$
 
 The set $B^2$ is called the (closed) unit ball in $\mathbb{R}^2$.
-
-::: {.remark}
-Munkres, *Topology*, §21 Exercise 10.
 :::

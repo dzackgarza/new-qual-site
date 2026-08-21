@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS13G
 kind: problem
-title: Quaternion group of order $8$: conjugacy classes and character table
+title: "Quaternion group of order $8$: conjugacy classes and character table"
 classification:
   areas:
   - applied-algebra

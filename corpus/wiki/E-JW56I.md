@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Which of our four countability axioms does $S_\Omega$ satisfy? What about $\overline{S}_\Omega$?
+::: {.exercise title="Munkres §30.7"}
 
-::: {.remark}
-Munkres, *Topology*, §30 Exercise 7.
+
+Which of our four countability axioms does $S_\Omega$ satisfy? What about $\overline{S}_\Omega$?
 :::

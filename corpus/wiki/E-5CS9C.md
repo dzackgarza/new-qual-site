@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Determine whether or not $\mathbb{R}^\omega$ is connected in the uniform topology.
+::: {.exercise title="Munkres §23.8"}
 
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 8.
+
+Determine whether or not $\mathbb{R}^\omega$ is connected in the uniform topology.
 :::

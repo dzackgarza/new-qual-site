@@ -14,9 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §16.9"}
+
+
 Show that the dictionary order topology on the set $\mathbb{R} \times \mathbb{R}$ is the same as the product topology $\mathbb{R}_d \times \mathbb{R}$, where $\mathbb{R}_d$ denotes $\mathbb{R}$ in the discrete topology.
 Compare this topology with the standard topology on $\mathbb{R}^2$.
-
-::: {.remark}
-Munkres, *Topology*, §16 Exercise 9.
 :::

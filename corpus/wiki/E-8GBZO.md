@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-One of the implications stated in Theorem 19.6 holds for the box topology. Which one?
+::: {.exercise title="Munkres §19.5"}
 
-::: {.remark}
-Munkres, *Topology*, §19 Exercise 5. Theorem 19.6 states that $f: A \to \prod X_\alpha$, $f(a) = (f_\alpha(a))_{\alpha \in J}$, is continuous if and only if each coordinate function $f_\alpha$ is continuous.
+
+One of the implications stated in Theorem 19.6 holds for the box topology. Which one?
 :::

@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2024
 ---
-
-::: remark
-UCSD Complex Analysis (Math 220) qualifying exam dated May 20, 2024 (seven problems, 10 points each). On the department qualifying-exams page this paper is linked as `SP24 math 220 exam.pdf` but hosted under the `algebra-math200/` directory; the header identifies Complex Analysis. The list is the paper order.
-:::

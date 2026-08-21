@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $\ts{A_n}$ be a sequence of connected subspaces of $X$, such that $A_n \cap A_{n+1} \neq \varnothing$ for all $n$. Show that $\bigcup A_n$ is connected.
+::: {.exercise title="Munkres §23.2"}
 
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 2.
+
+Let $\ts{A_n}$ be a sequence of connected subspaces of $X$, such that $A_n \cap A_{n+1} \neq \varnothing$ for all $n$. Show that $\bigcup A_n$ is connected.
 :::

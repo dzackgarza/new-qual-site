@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §27.6"}
+
+
 Let $A_0$ be the closed interval $[0, 1]$ in $\mathbb{R}$. Let $A_1$ be the set obtained from $A_0$ by deleting its "middle third" $(\tfrac{1}{3}, \tfrac{2}{3})$. Let $A_2$ be the set obtained from $A_1$ by deleting its "middle thirds" $(\tfrac{1}{9}, \tfrac{2}{9})$ and $(\tfrac{7}{9}, \tfrac{8}{9})$. In general, define $A_n$ by the equation
 
 $$
@@ -36,7 +39,4 @@ is called the Cantor set; it is a subspace of $[0, 1]$.
 (d) Show that $C$ has no isolated points.
 
 (e) Conclude that $C$ is uncountable.
-
-::: {.remark}
-Munkres, *Topology*, §27 Exercise 6.
 :::

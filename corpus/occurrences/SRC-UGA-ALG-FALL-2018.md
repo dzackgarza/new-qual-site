@@ -28,7 +28,3 @@ source:
     term: fall
     year: 2018
 ---
-
-::: remark
-UGA algebra Fall 2018. Source: `.tmp-uga-alg-exams/FALL-2018.txt` of the Quals posting `Algebra [Fall 2018].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02018%5D.docx`). The list is the sitting order on that paper.
-:::

@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2024
 ---
-
-::: remark
-UCSD Topology (Math 290) qualifying exam, Fall 2024. Eight problems in sitting order from `FA24_290_Topology_Qual.pdf`.
-:::

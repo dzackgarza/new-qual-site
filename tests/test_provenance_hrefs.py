@@ -91,6 +91,7 @@ def _serve() -> tuple[ThreadingHTTPServer, str]:
     thread = Thread(target=server.serve_forever, daemon=True)
     thread.start()
     host, port = server.server_address[:2]
+    assert isinstance(host, str)
     return server, f"http://{host}:{port}"
 
 
@@ -119,9 +120,7 @@ def test_dead_path_is_not_a_file_under_the_repo(tmp_path: Path) -> None:
         "SRC-DEAD",
         ["assets/attachments/missing.pdf"],
     )
-    assert _findings(tmp_path, "dead-provenance-hrefs") == [
-        "SRC-DEAD: assets/attachments/missing.pdf -> not a file"
-    ]
+    assert _findings(tmp_path, "dead-provenance-hrefs") == ["SRC-DEAD: assets/attachments/missing.pdf -> not a file"]
     assert _findings(tmp_path, "empty-provenance") == []
 
 
@@ -145,9 +144,7 @@ def test_http_status_is_the_get_status_code(tmp_path: Path) -> None:
             "SRC-GONE",
             [f"{origin}/missing.pdf"],
         )
-        assert _findings(tmp_path, "dead-provenance-hrefs") == [
-            f"SRC-GONE: {origin}/missing.pdf -> 404"
-        ]
+        assert _findings(tmp_path, "dead-provenance-hrefs") == [f"SRC-GONE: {origin}/missing.pdf -> 404"]
         assert _findings(tmp_path, "empty-provenance") == []
     finally:
         server.shutdown()
@@ -222,7 +219,9 @@ def test_duplicate_http_hrefs_are_fetched_once(tmp_path: Path) -> None:
     thread = Thread(target=server.serve_forever, daemon=True)
     thread.start()
     try:
-        origin = f"http://{server.server_address[0]}:{server.server_address[1]}"
+        addr = server.server_address
+        assert isinstance(addr[0], str)
+        origin = f"http://{addr[0]}:{addr[1]}"
         href = f"{origin}/shared.pdf"
         _collection(tmp_path / "corpus" / "SRC-A.md", "SRC-A", [href])
         _collection(tmp_path / "corpus" / "SRC-B.md", "SRC-B", [href])
@@ -244,9 +243,7 @@ def test_shared_provenance_href_is_the_same_string_on_two_collections(
         "SRC-C",
         ["assets/attachments/other.pdf"],
     )
-    assert _findings(tmp_path, "shared-provenance-hrefs") == [
-        f"{pdf}: SRC-A, SRC-B"
-    ]
+    assert _findings(tmp_path, "shared-provenance-hrefs") == [f"{pdf}: SRC-A, SRC-B"]
 
 
 def test_markdown_provenance_href_is_an_href_whose_path_ends_in_md(
@@ -356,9 +353,7 @@ def test_collection_area_without_problem_cards_is_the_area_on_no_problem(
         areas=["algebra"],
         kind="exercise",
     )
-    assert _findings(tmp_path, "collection-area-without-problem-cards") == [
-        "SRC-STAT: statistics"
-    ]
+    assert _findings(tmp_path, "collection-area-without-problem-cards") == ["SRC-STAT: statistics"]
 
 
 def test_exits_zero_with_findings_and_is_not_a_gate(tmp_path: Path) -> None:
@@ -388,15 +383,9 @@ def test_exits_zero_with_findings_and_is_not_a_gate(tmp_path: Path) -> None:
     empty = next(item for item in payload if item["check"] == "empty-provenance")
     dead = next(item for item in payload if item["check"] == "dead-provenance-hrefs")
     shared = next(item for item in payload if item["check"] == "shared-provenance-hrefs")
-    markdown = next(
-        item for item in payload if item["check"] == "markdown-provenance-hrefs"
-    )
+    markdown = next(item for item in payload if item["check"] == "markdown-provenance-hrefs")
     image = next(item for item in payload if item["check"] == "image-provenance-hrefs")
-    no_problems = next(
-        item
-        for item in payload
-        if item["check"] == "collection-area-without-problem-cards"
-    )
+    no_problems = next(item for item in payload if item["check"] == "collection-area-without-problem-cards")
     assert empty["findings"] == ["SRC-EMPTY"]
     assert empty["ok"] is False
     assert empty["measured"] == 2

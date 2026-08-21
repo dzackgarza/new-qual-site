@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Check the details of the proof of Theorem 34.2 (the imbedding theorem for a space admitting a countable family of continuous functions that separates points from closed sets).
+::: {.exercise title="Munkres §34.6"}
 
-::: {.remark}
-Munkres, *Topology*, §34 Exercise 6.
+
+Check the details of the proof of Theorem 34.2 (the imbedding theorem for a space admitting a countable family of continuous functions that separates points from closed sets).
 :::

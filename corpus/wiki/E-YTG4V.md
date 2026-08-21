@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §21.12"}
+
+
 Prove continuity of the algebraic operations on $\mathbb{R}$, as follows. Use the metric $d(a, b) = \abs{a - b}$ on $\mathbb{R}$ and the metric on $\mathbb{R}^2$ given by the equation
 
 $$
@@ -41,7 +44,4 @@ $$
 (c) Show that the operation of taking reciprocals is a continuous map from $\mathbb{R} - \ts{0}$ to $\mathbb{R}$. [Hint: Show the inverse image of the interval $(a, b)$ is open. Consider five cases, according as $a$ and $b$ are positive, negative, or zero.]
 
 (d) Show that the subtraction and quotient operations are continuous.
-
-::: {.remark}
-Munkres, *Topology*, §21 Exercise 12.
 :::

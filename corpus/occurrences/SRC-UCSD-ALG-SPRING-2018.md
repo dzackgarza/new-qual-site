@@ -22,7 +22,3 @@ source:
     term: spring
     year: 2018
 ---
-
-::: remark
-UCSD department sample qualifying exam. Problem list not yet extracted.
-:::

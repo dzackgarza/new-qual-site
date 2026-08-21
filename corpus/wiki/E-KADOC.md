@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $p: E \to B$ be a covering map, with $E$ path connected. Show that if $B$ is simply connected, then $p$ is a homeomorphism.
+::: {.exercise title="Munkres §54.8"}
 
-::: {.remark}
-Munkres, *Topology*, §54 Exercise 8.
+
+Let $p: E \to B$ be a covering map, with $E$ path connected. Show that if $B$ is simply connected, then $p$ is a homeomorphism.
 :::

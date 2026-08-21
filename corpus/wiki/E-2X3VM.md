@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §24.8"}
+
+
 (a) Is a product of path-connected spaces necessarily path connected?
 
 (b) If $A \subset X$ and $A$ is path connected, is $\overline{A}$ necessarily path connected?
@@ -20,7 +23,4 @@ solved: false
 (c) If $f: X \to Y$ is continuous and $X$ is path connected, is $f(X)$ necessarily path connected?
 
 (d) If $\ts{A_\alpha}$ is a collection of path-connected subspaces of $X$ and if $\bigcap A_\alpha \neq \varnothing$, is $\bigcup A_\alpha$ necessarily path connected?
-
-::: {.remark}
-Munkres, *Topology*, §24 Exercise 8.
 :::

@@ -28,7 +28,3 @@ source:
     term: spring
     year: 2014
 ---
-
-::: remark
-UGA algebra Spring 2014. Source: `.tmp-uga-alg-exams/SPRING-2014.txt` of the Quals posting `Algebra [Spring 2014].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BSpring%C2%A02014%5D.docx`). The local dump was missing at the start of this audit and was filled from that posting. The list is the sitting order on that paper.
-:::

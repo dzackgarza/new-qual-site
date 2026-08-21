@@ -31,5 +31,5 @@ source:
 ---
 
 ::: remark
-UGA topology Spring 2015. The paper is the current Quals posting `Topology [Spring 2015].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (no local dump; converted from that posting). Exam #1 lists [[P-43KOX]] (same statement as Spring 2016 #1). Exam #8 lists [[P-HCQNH]] (the formula $\chi(X)=\chi(U)+\chi(V)-\chi(U\cap V)$ also asked as Spring 2012 #5).
+Exam #1 lists [[P-43KOX]] (same statement as Spring 2016 #1). Exam #8 lists [[P-HCQNH]] (the formula $\chi(X)=\chi(U)+\chi(V)-\chi(U\cap V)$ also asked as Spring 2012 #5).
 :::

@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $h, h': X \to Y$ are homotopic and $k, k': Y \to Z$ are homotopic, then $k \circ h$ and $k' \circ h'$ are homotopic.
+::: {.exercise title="Munkres §51.1"}
 
-::: {.remark}
-Munkres, *Topology*, §51 Exercise 1.
+
+Show that if $h, h': X \to Y$ are homotopic and $k, k': Y \to Z$ are homotopic, then $k \circ h$ and $k' \circ h'$ are homotopic.
 :::

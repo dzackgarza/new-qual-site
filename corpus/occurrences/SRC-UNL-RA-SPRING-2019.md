@@ -29,6 +29,5 @@ source:
 ---
 
 ::: remark
-UNL Math 825/826 qualifying exam, January 23, 2019. The paper is `assets/attachments/Day_9_January_2019_Qual.pdf` (same series as the Avery Hall 825/826 paper of May 26, 2016). Extra_Questions transcribes only item 4. UGA Spring 2019 is the departmental Quals paper (`SRC-UGA-RA-SPRING-2019`).
-The list is the sitting order on the UNL paper.
+UNL Math 825/826 qualifying exam, January 23, 2019. UGA Spring 2019 is the departmental Quals paper (`SRC-UGA-RA-SPRING-2019`).
 :::

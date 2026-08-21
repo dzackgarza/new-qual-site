@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Check that the preceding exercises remain correct if condition (2) is omitted from the definition of directed set. Many mathematicians use the term "directed set" in this more general sense.
+::: {.exercise title="Munkres §29 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Supplementary Exercises (Nets) Exercise 12.
+
+Check that the preceding exercises remain correct if condition (2) is omitted from the definition of directed set. Many mathematicians use the term "directed set" in this more general sense.
 :::

@@ -14,9 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §16.8"}
+
+
 If $L$ is a straight line in the plane, describe the topology $L$ inherits as a subspace of $\mathbb{R}_\ell \times \mathbb{R}$ and as a subspace of $\mathbb{R}_\ell \times \mathbb{R}_\ell$.
 In each case it is a familiar topology.
-
-::: {.remark}
-Munkres, *Topology*, §16 Exercise 8.
 :::

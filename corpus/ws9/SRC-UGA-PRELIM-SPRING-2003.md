@@ -29,7 +29,3 @@ source:
     term: spring
     year: 2003
 ---
-
-::: remark
-UGA prelim Spring 2003. The paper is the migrated sitting scan `grad_prelim_Spring03.pdf` (wiki attachments). The list is the sitting order on that paper (work 7 of 8). Exam #7 and #8 are `P-GB7EM` and `P-MFVEZ`. Items #1–#6 are minted as `P-SP3SP`, `P-SP3A3`, `P-SP3SQ`, `P-SP3LN`, `P-SP3LC`, `P-SP3DS`.
-:::

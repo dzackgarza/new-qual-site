@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §18.12"}
+
+
 Let $F: \mathbb{R} \times \mathbb{R} \to \mathbb{R}$ be defined by the equation
 
 $$
@@ -29,7 +32,4 @@ $$
 (b) Compute the function $g: \mathbb{R} \to \mathbb{R}$ defined by $g(x) = F(x \times x)$.
 
 (c) Show that $F$ is not continuous.
-
-::: {.remark}
-Munkres, *Topology*, §18 Exercise 12.
 :::

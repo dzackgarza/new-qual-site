@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §38.7"}
+
+
 Let $X$ be a discrete space; consider the space $\beta(X)$.
 
 (a) Show that if $A \subset X$, then $\overline{A}$ and $\overline{X - A}$ are disjoint, where the closures are taken in $\beta(X)$.
@@ -20,7 +23,4 @@ Let $X$ be a discrete space; consider the space $\beta(X)$.
 (b) Show that if $U$ is open in $\beta(X)$, then $\overline{U}$ is open in $\beta(X)$.
 
 (c) Show that $\beta(X)$ is totally disconnected.
-
-::: {.remark}
-Munkres, *Topology*, §38 Exercise 7.
 :::

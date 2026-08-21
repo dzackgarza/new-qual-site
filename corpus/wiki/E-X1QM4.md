@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be a Hausdorff space such that each point of $X$ has a neighborhood that is homeomorphic with an open subset of $\mathbb{R}^m$. Show that if $X$ is compact, then $X$ is an $m$-manifold.
+::: {.exercise title="Munkres §36.3"}
 
-::: {.remark}
-Munkres, *Topology*, §36 Exercise 3.
+
+Let $X$ be a Hausdorff space such that each point of $X$ has a neighborhood that is homeomorphic with an open subset of $\mathbb{R}^m$. Show that if $X$ is compact, then $X$ is an $m$-manifold.
 :::

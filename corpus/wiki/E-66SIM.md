@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that every locally compact Hausdorff space is a Baire space.
+::: {.exercise title="Munkres §48.3"}
 
-::: {.remark}
-Munkres, *Topology*, §48 Exercise 3.
+
+Show that every locally compact Hausdorff space is a Baire space.
 :::

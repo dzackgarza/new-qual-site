@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $G$ be a group of homeomorphisms of $X$. The action of $G$ on $X$ is said to be fixed-point free if no element of $G$ other than the identity $e$ has a fixed point. Show that if $X$ is Hausdorff, and if $G$ is a finite group of homeomorphisms of $X$ whose action is fixed-point free, then the action of $G$ is properly discontinuous.
+::: {.exercise title="Munkres §81.4"}
 
-::: {.remark}
-Munkres, *Topology*, §81 Exercise 4.
+
+Let $G$ be a group of homeomorphisms of $X$. The action of $G$ on $X$ is said to be fixed-point free if no element of $G$ other than the identity $e$ has a fixed point. Show that if $X$ is Hausdorff, and if $G$ is a finite group of homeomorphisms of $X$ whose action is fixed-point free, then the action of $G$ is properly discontinuous.
 :::

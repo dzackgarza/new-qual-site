@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-If $A$ is a connected subspace of $X$, does it follow that $\operatorname{Int} A$ and $\operatorname{Bd} A$ are connected? Does the converse hold? Justify your answers.
+::: {.exercise title="Munkres §24.11"}
 
-::: {.remark}
-Munkres, *Topology*, §24 Exercise 11.
+
+If $A$ is a connected subspace of $X$, does it follow that $\operatorname{Int} A$ and $\operatorname{Bd} A$ are connected? Does the converse hold? Justify your answers.
 :::

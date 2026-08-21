@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §21.9"}
+
+
 Let $f_n: \mathbb{R} \to \mathbb{R}$ be the function
 
 $$
@@ -24,7 +27,4 @@ Let $f: \mathbb{R} \to \mathbb{R}$ be the zero function.
 (a) Show that $f_n(x) \to f(x)$ for each $x \in \mathbb{R}$.
 
 (b) Show that $f_n$ does not converge uniformly to $f$. (This shows that the converse of Theorem 21.6 does not hold; the limit function $f$ may be continuous even though the convergence is not uniform.)
-
-::: {.remark}
-Munkres, *Topology*, §21 Exercise 9.
 :::

@@ -114,9 +114,3 @@ source:
     - P-T13B4
   area: topology
 ---
-
-::: remark
-May 2020 Topology Qualifying Exam Workshop worksheets in assets/attachments/.
-
-Worksheet 1 is the May 2016 UNL topology qualifying exam. Worksheet 5 is the May 2013 exam. Wrap-up prompts are not problem cards.
-:::

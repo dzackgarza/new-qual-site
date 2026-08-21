@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that given a collection $\mathcal{C}$ of spaces, the relation of homotopy equivalence is an equivalence relation on $\mathcal{C}$.
+::: {.exercise title="Munkres §58.3"}
 
-::: {.remark}
-Munkres, *Topology*, §58 Exercise 3.
+
+Show that given a collection $\mathcal{C}$ of spaces, the relation of homotopy equivalence is an equivalence relation on $\mathcal{C}$.
 :::

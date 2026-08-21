@@ -26,7 +26,3 @@ source:
     term: spring
     year: 2006
 ---
-
-::: remark
-UCSD MA/PhD Qualifying Examination in Applied Algebra: Part I, examiners Philip Gill and Cristian Popescu, dated Wednesday May 31, 2006 (four questions #1.1, #1.2, #2.1, #2.2; 20 points each). The linked PDF is Part I only. The list is the paper order.
-:::

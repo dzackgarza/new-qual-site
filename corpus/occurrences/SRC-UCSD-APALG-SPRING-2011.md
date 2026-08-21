@@ -33,5 +33,5 @@ source:
 ---
 
 ::: remark
-UCSD Applied Algebra Qualifying Exam Part II dated May 27, 2011 (nine problems). The list is the paper order. Problem 2 on the paper is labeled (d) then (b). Problem 5(b) and its note write $S_4\times S_4$ for the product whose factors are indexed by partitions of $4$ and $3$.
+Problem 2 on the paper is labeled (d) then (b). Problem 5(b) and its note write $S_4\times S_4$ for the product whose factors are indexed by partitions of $4$ and $3$.
 :::

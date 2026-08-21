@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Theorem. Let $f: X \to Y$. Then $f$ is continuous if and only if for every convergent net $(x_\alpha)$ in $X$, converging to $x$, say, the net $(f(x_\alpha))$ converges to $f(x)$.
+::: {.exercise title="Munkres §29 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Supplementary Exercises (Nets) Exercise 7.
+
+Theorem. Let $f: X \to Y$. Then $f$ is continuous if and only if for every convergent net $(x_\alpha)$ in $X$, converging to $x$, say, the net $(f(x_\alpha))$ converges to $f(x)$.
 :::

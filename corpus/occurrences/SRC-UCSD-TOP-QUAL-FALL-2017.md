@@ -26,5 +26,5 @@ source:
 ---
 
 ::: remark
-Math 290 qualifying exam; the PDF heading is “Fall 2017”. This is not the Math 290A course final filed as `SRC-UCSD-TOP-FALL-2017` (unit-cube faces and diagonals, $\pi_1(\Sigma X)$, no retraction $T^2\to S^1\vee S^1$). Problem list not yet extracted.
+Math 290 qualifying exam; the PDF heading is "Fall 2017". This is not the Math 290A course final (unit-cube faces and diagonals, $\pi_1(\Sigma X)$, no retraction $T^2\to S^1\vee S^1$).
 :::

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-APAS13K
 kind: problem
-title: Parametric surface $x=u-2v$, $y=uv$, $z=v$: Gröbner basis and variety
+title: "Parametric surface $x=u-2v$, $y=uv$, $z=v$: Gröbner basis and variety"
 classification:
   areas:
   - applied-algebra

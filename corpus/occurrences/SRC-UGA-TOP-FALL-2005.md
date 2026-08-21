@@ -32,5 +32,5 @@ source:
 ---
 
 ::: remark
-UGA topology Fall 2005. The paper is the current Quals posting `Topology [Fall 2005].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/FALL-2005.txt`. Exam #9 lists [[P-8TF06]] (same covering-space/Klein-bottle statement as Fall 2006 #5).
+Exam #9 lists [[P-8TF06]] (same covering-space/Klein-bottle statement as Fall 2006 #5).
 :::

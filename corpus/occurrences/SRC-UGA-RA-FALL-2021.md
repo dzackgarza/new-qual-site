@@ -26,8 +26,3 @@ source:
     term: fall
     year: 2021
 ---
-
-::: remark
-UGA real-analysis Fall 2021. The paper is the current Quals posting `Real Analysis [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Fall 2021. List order was checked against the qual notes transcription under qual-review-and-solutions; those notes are not collection provenance.
-The catalog PDF `Real_Analysis_Qual-Fall2021.pdf` currently 404s. The list is the sitting order on that paper.
-:::

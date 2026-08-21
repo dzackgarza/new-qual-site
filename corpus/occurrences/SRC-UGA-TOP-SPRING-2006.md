@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2006
 ---
-
-::: remark
-UGA topology Spring 2006. The paper is the current Quals posting `Topology [Spring 2006].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`; local dump `.tmp-uga-top-exams/SPRING-2006.txt`.
-:::

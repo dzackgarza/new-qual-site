@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §36 Supplementary"}
+
+
 Consider the following properties a space may satisfy:
 
 (1) connected, (2) path connected, (3) locally connected, (4) locally path connected, (5) compact, (6) limit point compact, (7) locally compact Hausdorff, (8) Hausdorff, (9) regular, (10) completely regular, (11) normal, (12) first-countable, (13) second-countable, (14) Lindelöf, (15) has a countable dense subset, (16) locally metrizable, (17) metrizable.
@@ -40,7 +43,4 @@ For each of the following spaces, determine (if you can) which of these properti
 (j) $\mathbb{R}^I$ in the product topology, where $I = [0, 1]$
 
 (k) $\mathbb{R}_K$
-
-::: {.remark}
-Munkres, *Topology*, §36 Supplementary Exercises (Review of the Basics) Exercise 1.
 :::

@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §26.11"}
+
+
 Theorem. Let $X$ be a compact Hausdorff space. Let $\mathcal{A}$ be a collection of closed connected subsets of $X$ that is simply ordered by proper inclusion. Then
 
 $$
@@ -27,7 +30,4 @@ $$
 $$
 
 is not empty.]
-
-::: {.remark}
-Munkres, *Topology*, §26 Exercise 11.
 :::

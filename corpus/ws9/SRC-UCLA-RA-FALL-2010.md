@@ -33,7 +33,3 @@ source:
     term: fall
     year: 2010
 ---
-
-::: remark
-UCLA real-analysis Fall 2010. The paper is https://ww3.math.ucla.edu/wp-content/uploads/2021/09/analysis-10F.pdf (ANALYSIS QUALIFYING EXAM, FALL 2010). Local dump `.tmp-papers/ucla-analysis-10F.txt` is empty (form-feeds only); the PDF was read instead. Twelve numbered questions; the list is the sitting order on that paper. No holes. Exam #1 is the same Fatou/DCT item as JHU Fall 2012 #6 (`P-4KTFN`). Exam #7 is the same entire-extension item as JHU Spring 2019 #2.2 (`P-8XT49`). Exam #10 is the same punctured-disk/annulus item as JHU Spring 2019 #2.4 (`P-3A7RU`).
-:::

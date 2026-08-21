@@ -15,9 +15,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §16.10"}
+
+
 Let $I = [0, 1]$.
 Compare the product topology on $I \times I$, the dictionary order topology on $I \times I$, and the topology $I \times I$ inherits as a subspace of $\mathbb{R} \times \mathbb{R}$ in the dictionary order topology.
-
-::: {.remark}
-Munkres, *Topology*, §16 Exercise 10.
 :::

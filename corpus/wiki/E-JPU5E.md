@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Let $f: X \to Y$ be continuous. Show that if $X$ is Lindelöf, or if $X$ has a countable dense subset, then $f(X)$ satisfies the same condition.
+::: {.exercise title="Munkres §30.11"}
 
-::: {.remark}
-Munkres, *Topology*, §30 Exercise 11.
+
+Let $f: X \to Y$ be continuous. Show that if $X$ is Lindelöf, or if $X$ has a countable dense subset, then $f(X)$ satisfies the same condition.
 :::

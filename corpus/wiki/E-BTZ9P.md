@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-If $f_n$ is a sequence of continuous functions $f_n: \mathbb{R} \to \mathbb{R}$ such that $f_n(x) \to f(x)$ for each $x \in \mathbb{R}$, show that $f$ is continuous at uncountably many points of $\mathbb{R}$.
+::: {.exercise title="Munkres §48.8"}
 
-::: {.remark}
-Munkres, *Topology*, §48 Exercise 8.
+
+If $f_n$ is a sequence of continuous functions $f_n: \mathbb{R} \to \mathbb{R}$ such that $f_n(x) \to f(x)$ for each $x \in \mathbb{R}$, show that $f$ is continuous at uncountably many points of $\mathbb{R}$.
 :::

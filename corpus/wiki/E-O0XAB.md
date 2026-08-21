@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the metric space $(X, d)$ is complete if and only if for every nested sequence $A_1 \supset A_2 \supset \cdots$ of nonempty closed sets of $X$ such that $\operatorname{diam} A_n \to 0$, the intersection of the sets $A_n$ is nonempty.
+::: {.exercise title="Munkres §43.4"}
 
-::: {.remark}
-Munkres, *Topology*, §43 Exercise 4.
+
+Show that the metric space $(X, d)$ is complete if and only if for every nested sequence $A_1 \supset A_2 \supset \cdots$ of nonempty closed sets of $X$ such that $\operatorname{diam} A_n \to 0$, the intersection of the sets $A_n$ is nonempty.
 :::

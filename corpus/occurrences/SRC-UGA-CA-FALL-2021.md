@@ -30,5 +30,5 @@ source:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2021. The department PDF at `https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2021.pdf` returns 404. The paper is the current Quals posting `Complex Analysis [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The local dump is `.tmp-uga-ca-exams/FALL-2021.txt`. List order was checked against the qual notes transcription under qual-review-and-solutions; those notes are not collection provenance. Exam #3 is the wedge integral from $0$ to $\infty$ on [[P-W23PS]].
+Exam #3 is the wedge integral from $0$ to $\infty$ on [[P-W23PS]].
 :::

@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §13.8"}
+
+
 (a) Apply Lemma 13.2 to show that the countable collection
 
 $$
@@ -28,7 +31,4 @@ $$
 $$
 
 is a basis that generates a topology different from the lower limit topology on $\mathbb{R}$.
-
-::: {.remark}
-Munkres, *Topology*, §13 Exercise 8.
 :::

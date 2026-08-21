@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §33.10"}
+
+
 Prove the following.
 
 Theorem. Every topological group is completely regular.
@@ -37,7 +40,4 @@ $$
 for all $k$ and $n$. Proceed as in the Urysohn lemma.
 
 This exercise is adapted from [M-Z], to which the reader is referred for further results on topological groups.
-
-::: {.remark}
-Munkres, *Topology*, §33 Exercise 10 (starred in the text).
 :::

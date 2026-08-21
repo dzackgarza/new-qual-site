@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §79.6"}
+
+
 Prove the following.
 
 Theorem. Let $G$ be a topological group with multiplication operation $m: G \times G \to G$ and identity element $e$. Assume $p: \overline{G} \to G$ is a covering map. Given $\tilde{e}$ with $p(\tilde{e}) = e$, there is a unique multiplication operation on $\overline{G}$ that makes it into a topological group such that $\tilde{e}$ is the identity element and $p$ is a homomorphism.
@@ -37,7 +40,4 @@ $$
 are equal.
 
 (e) Complete the proof.
-
-::: {.remark}
-Munkres, *Topology*, §79 Exercise 6 (starred in the text).
 :::

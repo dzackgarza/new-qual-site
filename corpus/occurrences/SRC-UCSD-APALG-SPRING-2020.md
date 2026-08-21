@@ -30,7 +30,3 @@ source:
     term: spring
     year: 2020
 ---
-
-::: remark
-UCSD Math 202 qualifying exam dated June 3, 2020 (eight problems, 25 points each). The list is the paper order.
-:::

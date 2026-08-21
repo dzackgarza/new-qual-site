@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that if $A$ is a deformation retract of $X$, and $B$ is a deformation retract of $A$, then $B$ is a deformation retract of $X$.
+::: {.exercise title="Munkres §58.1"}
 
-::: {.remark}
-Munkres, *Topology*, §58 Exercise 1.
+
+Show that if $A$ is a deformation retract of $X$, and $B$ is a deformation retract of $A$, then $B$ is a deformation retract of $X$.
 :::

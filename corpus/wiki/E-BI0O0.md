@@ -15,6 +15,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §17.19"}
+
+
 If $A \subset X$, we define the boundary of $A$ by the equation
 
 $$
@@ -29,7 +32,4 @@ $$
 
 (d) If $U$ is open, is it true that $U = \operatorname{Int}(\overline{U})$?
 Justify your answer.
-
-::: {.remark}
-Munkres, *Topology*, §17 Exercise 19.
 :::

@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2022
 ---
-
-::: remark
-UCSD Applied Algebra qualifying exam, Friday September 2, 2022. Eight problems in sitting order from `FA22_APPLIED_202ABC.pdf`.
-:::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ is an infinite wedge of circles, then $X$ does not satisfy the first countability axiom.
+::: {.exercise title="Munkres §71.4"}
 
-::: {.remark}
-Munkres, *Topology*, §71 Exercise 4.
+
+Show that if $X$ is an infinite wedge of circles, then $X$ does not satisfy the first countability axiom.
 :::

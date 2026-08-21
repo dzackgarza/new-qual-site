@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §58.2"}
+
+
 For each of the following spaces, the fundamental group is either trivial, infinite cyclic, or isomorphic to the fundamental group of the figure eight. Determine for each space which of the three alternatives holds.
 
 (a) The "solid torus," $B^2 \times S^1$.
@@ -40,7 +43,4 @@ The following subsets of $\mathbb{R}^2$:
 (k) $S^1 \cup (\mathbb{R} \times 0)$
 
 (l) $\mathbb{R}^2 - (\mathbb{R}_+ \times 0)$
-
-::: {.remark}
-Munkres, *Topology*, §58 Exercise 2.
 :::

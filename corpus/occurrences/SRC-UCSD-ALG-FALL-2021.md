@@ -29,7 +29,3 @@ source:
     term: fall
     year: 2021
 ---
-
-::: remark
-UCSD Algebra qualifying exam, Fall 2021 (seven problems, 15 points each). The list is the paper order.
-:::

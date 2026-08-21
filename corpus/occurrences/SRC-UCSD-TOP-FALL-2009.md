@@ -22,7 +22,3 @@ source:
     term: fall
     year: 2009
 ---
-
-::: remark
-UCSD department sample qualifying exam. Problem list not yet extracted.
-:::

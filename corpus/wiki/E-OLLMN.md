@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that if $A$ is closed in $Y$ and $Y$ is closed in $X$, then $A$ is closed in $X$.
+::: {.exercise title="Munkres §17.2"}
 
-::: {.remark}
-Munkres, *Topology*, §17 Exercise 2.
+
+Show that if $A$ is closed in $Y$ and $Y$ is closed in $X$, then $A$ is closed in $X$.
 :::

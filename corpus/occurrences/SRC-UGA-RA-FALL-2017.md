@@ -27,7 +27,3 @@ source:
     term: fall
     year: 2017
 ---
-
-::: remark
-UGA real-analysis Fall 2017. The paper is the current Quals posting `Real Analysis [Fall 2017].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Real%20Analysis%20%5BFall%C2%A02017%5D.docx`), headed August 2017. The list is the sitting order on that paper.
-:::

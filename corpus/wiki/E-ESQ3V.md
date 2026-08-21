@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that $[0, 1]^\omega$ is not locally compact in the uniform topology.
+::: {.exercise title="Munkres §29.4"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Exercise 4.
+
+Show that $[0, 1]^\omega$ is not locally compact in the uniform topology.
 :::

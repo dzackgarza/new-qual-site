@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Show that if $X$ is Hausdorff, a net in $X$ converges to at most one point.
+::: {.exercise title="Munkres §29 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §29 Supplementary Exercises (Nets) Exercise 5.
+
+Show that if $X$ is Hausdorff, a net in $X$ converges to at most one point.
 :::

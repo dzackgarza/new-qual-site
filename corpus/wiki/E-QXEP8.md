@@ -13,6 +13,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §81.5"}
+
+
 Consider $S^3$ as the space of all pairs of complex numbers $(z_1, z_2)$ satisfying the equation $\abs{z_1}^2 + \abs{z_2}^2 = 1$. Given relatively prime positive integers $n$ and $k$, define $h: S^3 \to S^3$ by the equation
 
 $$
@@ -24,7 +27,4 @@ $$
 (b) Show that if $L(n, k)$ and $L(n', k')$ are homeomorphic, then $n = n'$. [It is a theorem that $L(n, k)$ and $L(n', k')$ are homeomorphic if and only if $n = n'$ and either $k \equiv k' \pmod{n}$ or $kk' \equiv 1 \pmod{n}$. The proof is decidedly nontrivial.]
 
 (c) Show that $L(n, k)$ is a compact 3-manifold.
-
-::: {.remark}
-Munkres, *Topology*, §81 Exercise 5.
 :::

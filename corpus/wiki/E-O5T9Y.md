@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Is the space $\mathbb{R}_\ell$ connected? Justify your answer.
+::: {.exercise title="Munkres §23.7"}
 
-::: {.remark}
-Munkres, *Topology*, §23 Exercise 7.
+
+Is the space $\mathbb{R}_\ell$ connected? Justify your answer.
 :::

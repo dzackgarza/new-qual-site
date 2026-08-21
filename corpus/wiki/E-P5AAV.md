@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-The integers $\mathbb{Z}$ are a normal subgroup of $(\mathbb{R}, +)$. The quotient $\mathbb{R}/\mathbb{Z}$ is a familiar topological group; what is it?
+::: {.exercise title="Munkres §22 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §22 Supplementary Exercises (Topological Groups) Exercise 6.
+
+The integers $\mathbb{Z}$ are a normal subgroup of $(\mathbb{R}, +)$. The quotient $\mathbb{R}/\mathbb{Z}$ is a familiar topological group; what is it?
 :::

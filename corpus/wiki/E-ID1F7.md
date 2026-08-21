@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Prove the following "theorem of meteorology": at any given moment in time, there exists a pair of antipodal points on the surface of the earth at which both the temperature and the barometric pressure are equal.
+::: {.exercise title="Munkres §57.1"}
 
-::: {.remark}
-Munkres, *Topology*, §57 Exercise 1.
+
+Prove the following "theorem of meteorology": at any given moment in time, there exists a pair of antipodal points on the surface of the earth at which both the temperature and the barometric pressure are equal.
 :::

@@ -14,6 +14,9 @@ review: draft
 solved: false
 ---
 
+::: {.exercise title="Munkres §31.8"}
+
+
 Let $X$ be a space; let $G$ be a topological group. An action of $G$ on $X$ is a continuous map $\alpha: G \times X \to X$ such that, denoting $\alpha(g \times x)$ by $g \cdot x$, one has:
 
 (i) $e \cdot x = x$ for all $x \in X$.
@@ -25,7 +28,4 @@ Define $x \sim g \cdot x$ for all $x$ and $g$; the resulting quotient space is d
 Theorem. Let $G$ be a compact topological group; let $X$ be a topological space; let $\alpha$ be an action of $G$ on $X$. If $X$ is Hausdorff, or regular, or normal, or locally compact, or second-countable, so is $X/G$.
 
 [Hint: See Exercise 13 of §26.]
-
-::: {.remark}
-Munkres, *Topology*, §31 Exercise 8.
 :::

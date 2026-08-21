@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Is every topological group normal?
+::: {.exercise title="Munkres §32.10"}
 
-::: {.remark}
-Munkres, *Topology*, §32 Exercise 10.
+
+Is every topological group normal?
 :::

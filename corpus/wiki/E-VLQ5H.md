@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Let $X$ be the infinite earring (see Example 1 of §80). Show that $X$ is a compact Hausdorff space with a countable basis whose fundamental group is uncountable. [Hint: Let $r_n: X \to C_n$ be a retraction. Given a sequence $a_1, a_2, \ldots$ of zeros and ones, show there exists a loop $f$ in $X$ such that, for each $n$, the element $(r_n)_*[f]$ is trivial if and only if $a_n = 0$.]
+::: {.exercise title="Munkres §82 Supplementary"}
 
-::: {.remark}
-Munkres, *Topology*, §82 Supplementary Exercises (Topological Properties and $\pi_1$) Exercise 5.
+
+Let $X$ be the infinite earring (see Example 1 of §80). Show that $X$ is a compact Hausdorff space with a countable basis whose fundamental group is uncountable. [Hint: Let $r_n: X \to C_n$ be a retraction. Given a sequence $a_1, a_2, \ldots$ of zeros and ones, show there exists a loop $f$ in $X$ such that, for each $n$, the element $(r_n)_*[f]$ is trivial if and only if $a_n = 0$.]
 :::

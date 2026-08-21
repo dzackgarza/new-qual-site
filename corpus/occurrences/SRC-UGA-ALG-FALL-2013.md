@@ -30,7 +30,3 @@ source:
     term: fall
     year: 2013
 ---
-
-::: remark
-UGA algebra Fall 2013. Source: `.tmp-uga-alg-exams/FALL-2013.txt` of the Quals posting `Algebra [Fall 2013].docx` under `https://www.math.uga.edu/sites/default/files/Quals/` (filename uses a non-breaking space: `Algebra%20%5BFall%C2%A02013%5D.docx`). The list is the sitting order on that paper. Exam #8 and #9 are `P-F13S8` and `P-F13T9`, minted from that paper. `P-6URED` asks that $S_4$ is solvable and nonabelian, which is not this item.
-:::

@@ -14,8 +14,8 @@ review: draft
 solved: false
 ---
 
-Give $[0, 1]^\omega$ the uniform topology. Find an infinite subset of this space that has no limit point.
+::: {.exercise title="Munkres §28.1"}
 
-::: {.remark}
-Munkres, *Topology*, §28 Exercise 1.
+
+Give $[0, 1]^\omega$ the uniform topology. Find an infinite subset of this space that has no limit point.
 :::

@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Give an example to show that the conclusion of the Borsuk lemma need not hold if $f$ is not injective.
+::: {.exercise title="Munkres §62.1"}
 
-::: {.remark}
-Munkres, *Topology*, §62 Exercise 1.
+
+Give an example to show that the conclusion of the Borsuk lemma need not hold if $f$ is not injective.
 :::

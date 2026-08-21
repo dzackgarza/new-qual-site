@@ -13,8 +13,8 @@ review: draft
 solved: false
 ---
 
-Show that the Euler number of a finite linear graph $X$ is a topological invariant of $X$. [Hint: First consider the case where $X$ is connected.]
+::: {.exercise title="Munkres §85.1"}
 
-::: {.remark}
-Munkres, *Topology*, §85 Exercise 1.
+
+Show that the Euler number of a finite linear graph $X$ is a topological invariant of $X$. [Hint: First consider the case where $X$ is connected.]
 :::
