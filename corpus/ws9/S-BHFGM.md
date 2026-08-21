@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - measure-theory
-  - convergence-of-integrals
+  - Density
+  - Measure Theory
+  - Convergence of Integrals
 relations:
 - kind: solves
   target: P-DQNN6

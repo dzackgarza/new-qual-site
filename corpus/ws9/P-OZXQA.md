@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - rouche
-  - holomorphic-functions
+  - Rouché
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

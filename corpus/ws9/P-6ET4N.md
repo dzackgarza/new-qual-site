@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-6ET4N
 kind: problem
-title: Rational and Jordan canonical forms of a $3\times 3$ real matrix; abelian groups of order $360$
+title: Rational and Jordan canonical forms of a $3\times 3$ real matrix; abelian groups
+  of order $360$
 classification:
   areas:
   - prelim
   topics:
-  - jordan-canonical-form
-  - rational-canonical-form
-  - matrices
+  - Jordan Canonical Form
+  - Rational Canonical Form
+  - Matrices
 relations: []
 review: draft
 solved: false

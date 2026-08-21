@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-4KTFN
 kind: problem
-title: Fatou's lemma, the dominated convergence theorem, and a sequence with $f_n\to 0$ a.e. but $\int f_n\to 1$
+title: Fatou's lemma, the dominated convergence theorem, and a sequence with $f_n\to
+  0$ a.e. but $\int f_n\to 1$
 classification:
   areas:
   - real-analysis
   topics:
-  - fatou
-  - convergence-of-integrals
-  - counterexamples
+  - Fatou
+  - Convergence of Integrals
+  - Counterexamples
 relations: []
 review: draft
 solved: true

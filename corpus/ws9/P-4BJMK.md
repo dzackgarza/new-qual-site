@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - contour-integration
-  - integrals
-  - riemann-integrability
+  - Contour Integration
+  - Integrals
+  - Riemann Integrability
 relations: []
 review: draft
 solved: true

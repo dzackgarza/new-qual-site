@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - multivariable-calculus
+  - Multivariable Calculus
 relations: []
 review: draft
 solved: false

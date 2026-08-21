@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: D-RA-WORKSHOP-D7-CONVERGENCE
 kind: definition
-title: 'Pointwise and uniform convergence of function sequences and series'
+title: Pointwise and uniform convergence of function sequences and series
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - uniform-convergence
-  - sequences-of-functions
-  - series-of-functions
+  - Convergence of Functions
+  - Uniform Convergence
+  - Sequences of Functions
+  - Series of Functions
 relations: []
 review: draft
 ---

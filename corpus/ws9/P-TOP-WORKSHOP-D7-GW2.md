@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-GW2
 kind: problem
-title: 'Nonhomeomorphic spaces with isomorphic nontrivial fundamental groups (warm-up)'
+title: Nonhomeomorphic spaces with isomorphic nontrivial fundamental groups (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homeomorphisms
-  - counterexamples
+  - Fundamental Group
+  - Homeomorphisms
+  - Counterexamples
 relations: []
 review: draft
 solved: false

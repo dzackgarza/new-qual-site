@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-5JBRJ
 kind: problem
-title: $\mathbb{Q}(\sqrt[3]{2})$ in cyclotomic extensions, splitting fields over finite fields, and homomorphisms from $S_4$
+title: $\mathbb{Q}(\sqrt[3]{2})$ in cyclotomic extensions, splitting fields over finite
+  fields, and homomorphisms from $S_4$
 classification:
   areas:
   - prelim
   topics:
-  - fields
-  - finite-fields
-  - counterexamples
+  - Fields
+  - Finite Fields
+  - Counterexamples
 relations: []
 review: draft
 solved: false

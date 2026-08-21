@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - local-rings
-  - maximal-ideals
+  - Local Rings
+  - Maximal Ideals
 relations: []
 review: draft
 solved: false

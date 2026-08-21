@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - maximal-functions
-  - measure-theory
-  - l1
+  - Maximal Functions
+  - Measure Theory
+  - L¹
 relations: []
 review: draft
 solved: true

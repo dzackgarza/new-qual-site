@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - ideals
-  - rings
+  - Ideals
+  - Rings
 relations: []
 review: draft
 solved: false

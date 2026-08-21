@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA19J5
 kind: problem
-title: 'UNL analysis qualifying exam, January 2019, problem 5'
+title: UNL analysis qualifying exam, January 2019, problem 5
 classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - integrals
+  - Riemann Integrability
+  - Integrals
 relations: []
 review: draft
 solved: true

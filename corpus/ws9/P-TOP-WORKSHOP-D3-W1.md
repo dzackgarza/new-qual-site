@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-W1
 kind: problem
-title: 'Metric spaces are Hausdorff (workshop warm-up)'
+title: Metric spaces are Hausdorff (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - metric-spaces
-  - hausdorff-spaces
+  - Metric Spaces
+  - Hausdorff Spaces
 relations: []
 review: draft
 solved: false

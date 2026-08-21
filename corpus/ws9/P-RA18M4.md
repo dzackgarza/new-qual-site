@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA18M4
 kind: problem
-title: 'UNL analysis qualifying exam, May 2018, problem 4'
+title: UNL analysis qualifying exam, May 2018, problem 4
 classification:
   areas:
   - real-analysis
   topics:
-  - metric-spaces
-  - function-spaces
-  - arzela-ascoli
+  - Metric Spaces
+  - Function Spaces
+  - Arzelà-Ascoli
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-7Y4VS
 kind: problem
-title: 'Holomorphic $L^2$ functions: $\sup_K|f|\le C_K\|f\|_{L^2}$, the $L^2$ unit ball is a normal family, and $L^2$ singularities at $0$ are removable'
+title: 'Holomorphic $L^2$ functions: $\sup_K|f|\le C_K\|f\|_{L^2}$, the $L^2$ unit
+  ball is a normal family, and $L^2$ singularities at $0$ are removable'
 classification:
   areas:
   - real-analysis
   topics:
-  - holomorphic-functions
-  - normal-families
-  - l2
+  - Holomorphic Functions
+  - Normal Families
+  - L²
 relations: []
 review: draft
 solved: true

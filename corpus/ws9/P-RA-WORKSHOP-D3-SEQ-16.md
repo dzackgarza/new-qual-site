@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-16
 kind: problem
-title: 'Interchange two nonnegative double-series summations'
+title: Interchange two nonnegative double-series summations
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - fubini-tonelli
+  - Series of Numbers
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true

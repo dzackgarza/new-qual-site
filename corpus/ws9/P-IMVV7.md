@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-IMVV7
 kind: problem
-title: Permutations, combinations, and the number of injections from a $k$-set to an $n$-set
+title: Permutations, combinations, and the number of injections from a $k$-set to
+  an $n$-set
 classification:
   areas:
   - prelim
   topics:
-  - combinatorics
+  - Combinatorics
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-5VQ6H
 kind: problem
-title: Weak-plus-norm convergence is strong in $L^2$, and the unit ball is not strongly compact
+title: Weak-plus-norm convergence is strong in $L^2$, and the unit ball is not strongly
+  compact
 classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - l2
-  - hilbert-spaces
+  - Weak Convergence
+  - L²
+  - Hilbert Spaces
 relations: []
 review: draft
 solved: true

@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - meromorphic-functions
-  - argument-principle
+  - Meromorphic Functions
+  - Argument Principle
 relations: []
 review: draft
 solved: true

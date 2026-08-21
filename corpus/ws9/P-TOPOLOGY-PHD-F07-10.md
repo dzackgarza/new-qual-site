@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-10
 kind: problem
-title: 'The closure of a connected set is connected'
+title: The closure of a connected set is connected
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - closure
+  - Connectedness
+  - Closure
 relations: []
 review: draft
 solved: false

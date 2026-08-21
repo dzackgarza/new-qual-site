@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA18M6
 kind: problem
-title: 'UNL analysis qualifying exam, May 2018, problem 6'
+title: UNL analysis qualifying exam, May 2018, problem 6
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - continuity
-  - counterexamples
+  - Uniform Convergence
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true

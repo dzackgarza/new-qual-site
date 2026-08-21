@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-LHC3M
 kind: problem
-title: The chain rule for $f(g(t))$ and perpendicularity of $\nabla f$ to the tangent of an implicit level curve
+title: The chain rule for $f(g(t))$ and perpendicularity of $\nabla f$ to the tangent
+  of an implicit level curve
 classification:
   areas:
   - prelim
   topics:
-  - multivariable-calculus
-  - differentiation
+  - Multivariable Calculus
+  - Differentiation
 relations: []
 review: draft
 solved: false

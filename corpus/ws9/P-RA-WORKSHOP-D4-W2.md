@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-W2
 kind: problem
-title: 'A continuous self-map of an interval has a fixed point'
+title: A continuous self-map of an interval has a fixed point
 classification:
   areas:
   - real-analysis
   topics:
-  - fixed-points
-  - continuity
+  - Fixed Points
+  - Continuity
 relations: []
 review: draft
 solved: true

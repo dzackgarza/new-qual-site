@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-15
 kind: problem
-title: 'A series that is uniformly convergent away from zero but not near zero'
+title: A series that is uniformly convergent away from zero but not near zero
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - series-of-functions
+  - Uniform Convergence
+  - Series of Functions
 relations: []
 review: draft
 solved: true

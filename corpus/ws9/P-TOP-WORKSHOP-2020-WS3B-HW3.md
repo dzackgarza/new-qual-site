@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-HW3
 kind: problem
-title: 'State the Galois correspondence theorem for universal covers (warm-up)'
+title: State the Galois correspondence theorem for universal covers (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

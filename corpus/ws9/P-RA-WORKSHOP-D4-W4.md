@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-W4
 kind: problem
-title: 'A limit at negative infinity'
+title: A limit at negative infinity
 classification:
   areas:
   - real-analysis
   topics:
-  - limits
+  - Limits
 relations: []
 review: draft
 solved: true

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-05
 kind: problem
-title: 'Completely normal spaces and normal subsets'
+title: Completely normal spaces and normal subsets
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - subspace-topology
+  - Separation Axioms
+  - Subspace Topology
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - hilbert-spaces
-  - norms
+  - Weak Convergence
+  - Hilbert Spaces
+  - Norms
 relations:
 - kind: solves
   target: P-W5XWA

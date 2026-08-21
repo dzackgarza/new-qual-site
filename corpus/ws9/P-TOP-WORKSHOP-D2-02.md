@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D2-02
 kind: problem
-title: 'Removing a product of proper subsets from a product of connected spaces'
+title: Removing a product of proper subsets from a product of connected spaces
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - product-topology
+  - Connectedness
+  - Product Topology
 relations: []
 review: draft
 solved: false

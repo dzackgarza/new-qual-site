@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - l1
-  - convolution
+  - Fourier Analysis
+  - L¹
+  - Convolution
 relations: []
 review: draft
 solved: true

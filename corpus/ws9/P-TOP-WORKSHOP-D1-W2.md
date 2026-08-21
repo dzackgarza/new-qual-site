@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D1-W2
 kind: problem
-title: 'Compactness warm-up statement with $A\subseteq Y$ (verbatim source wording)'
+title: Compactness warm-up statement with $A\subseteq Y$ (verbatim source wording)
 classification:
   areas:
   - topology
   topics:
-  - compactness
+  - Compactness
 relations: []
 review: draft
 solved: false

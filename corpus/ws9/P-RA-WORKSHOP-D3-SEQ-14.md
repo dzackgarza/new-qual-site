@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-14
 kind: problem
-title: 'Use an epsilon–delta proof for a quotient of convergent sequences'
+title: Use an epsilon–delta proof for a quotient of convergent sequences
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 solved: true

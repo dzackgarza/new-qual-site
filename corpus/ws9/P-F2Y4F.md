@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-F2Y4F
 kind: problem
-title: "$(\\mathbb{Z}/2\\mathbb{Z})[y]/(y^4+y^3+y^2+y+1)$ is a field over which $x^4+x+1$ and $x^2+x+1$ split and $x^3+x+1$ is irreducible"
+title: $(\mathbb{Z}/2\mathbb{Z})[y]/(y^4+y^3+y^2+y+1)$ is a field over which $x^4+x+1$
+  and $x^2+x+1$ split and $x^3+x+1$ is irreducible
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - irreducibility-criteria
-  - polynomials
+  - Finite Fields
+  - Irreducibility Criteria
+  - Polynomials
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-19
 kind: problem
-title: 'Removing a point from a connected manifold of dimension at least 3'
+title: Removing a point from a connected manifold of dimension at least 3
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - manifolds
-  - van-kampen
+  - Fundamental Group
+  - Manifolds
+  - van Kampen
 relations: []
 review: draft
 solved: false

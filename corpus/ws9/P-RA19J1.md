@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA19J1
 kind: problem
-title: 'UNL analysis qualifying exam, January 2019, problem 1'
+title: UNL analysis qualifying exam, January 2019, problem 1
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - uniform-convergence
-  - equicontinuity
+  - Convergence of Functions
+  - Uniform Convergence
+  - Equicontinuity
 relations: []
 review: draft
 solved: true

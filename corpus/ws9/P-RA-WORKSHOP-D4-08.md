@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-08
 kind: problem
-title: 'Continuity and uniform continuity of a rational function'
+title: Continuity and uniform continuity of a rational function
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - uniform-continuity
+  - Continuity
+  - Uniform Continuity
 relations: []
 review: draft
 solved: true

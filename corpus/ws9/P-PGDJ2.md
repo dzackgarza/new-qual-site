@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - rouche
-  - polynomials
+  - Rouché
+  - Polynomials
 relations: []
 review: draft
 solved: true

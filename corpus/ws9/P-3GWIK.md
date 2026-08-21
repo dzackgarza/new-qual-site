@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l2
-  - compactness
-  - hilbert-spaces
+  - L²
+  - Compactness
+  - Hilbert Spaces
 relations: []
 review: draft
 solved: true

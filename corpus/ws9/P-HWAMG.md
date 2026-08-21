@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-HWAMG
 kind: problem
-title: The discontinuity set of a real function is $F_\sigma$; no function is continuous exactly on $\mathbb{Q}$
+title: The discontinuity set of a real function is $F_\sigma$; no function is continuous
+  exactly on $\mathbb{Q}$
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - counterexamples
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true

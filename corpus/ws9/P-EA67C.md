@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - continuity-of-measure
-  - l1
-  - measure-theory
+  - Continuity of Measure
+  - L¹
+  - Measure Theory
 relations: []
 review: draft
 solved: true

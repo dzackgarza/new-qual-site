@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-04
 kind: problem
-title: 'Continuity of the distance to a subset'
+title: Continuity of the distance to a subset
 classification:
   areas:
   - topology
   topics:
-  - metric-spaces
-  - continuity
+  - Metric Spaces
+  - Continuity
 relations: []
 review: draft
 solved: false

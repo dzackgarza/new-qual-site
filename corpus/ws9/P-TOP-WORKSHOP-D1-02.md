@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D1-02
 kind: problem
-title: 'Cartesian products of locally compact spaces (closure formulation)'
+title: Cartesian products of locally compact spaces (closure formulation)
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - product-topology
+  - Compactness
+  - Product Topology
 relations: []
 review: draft
 solved: false

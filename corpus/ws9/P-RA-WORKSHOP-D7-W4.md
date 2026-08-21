@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-W4
 kind: problem
-title: 'Pointwise and uniform convergence of $x^n$ on $[0,1]$'
+title: Pointwise and uniform convergence of $x^n$ on $[0,1]$
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - convergence-of-functions
-  - compactness
+  - Uniform Convergence
+  - Convergence of Functions
+  - Compactness
 relations: []
 review: draft
 solved: true

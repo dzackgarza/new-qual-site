@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-11
 kind: problem
-title: 'A contraction image containing a bounded set'
+title: A contraction image containing a bounded set
 classification:
   areas:
   - real-analysis
   topics:
-  - fixed-points
-  - metric-spaces
-  - completeness
+  - Fixed Points
+  - Metric Spaces
+  - Completeness
 relations: []
 review: draft
 solved: true

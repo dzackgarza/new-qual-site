@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2A-P1
 kind: problem
-title: 'An open connected subset of Euclidean space is path connected'
+title: An open connected subset of Euclidean space is path connected
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - euclidean-spaces
+  - Connectedness
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: false

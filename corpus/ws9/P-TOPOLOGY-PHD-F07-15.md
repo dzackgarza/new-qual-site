@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-15
 kind: problem
-title: The surface with polygonal symbol $xyzx^{-1}zy^{-1}$, and classification of closed surfaces by even-sided polygons
+title: The surface with polygonal symbol $xyzx^{-1}zy^{-1}$, and classification of
+  closed surfaces by even-sided polygons
 classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - classification
-  - euler-characteristic
+  - Surfaces
+  - Classification
+  - Euler Characteristic
 relations: []
 review: draft
 solved: false

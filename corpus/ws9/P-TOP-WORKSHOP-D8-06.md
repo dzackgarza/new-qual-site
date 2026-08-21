@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-06
 kind: problem
-title: 'A compact set meets each fiber of a cover in finitely many points'
+title: A compact set meets each fiber of a cover in finitely many points
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - compactness
+  - Covering Spaces
+  - Compactness
 relations: []
 review: draft
 solved: false

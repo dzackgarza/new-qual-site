@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-13
 kind: problem
-title: 'Prove the ratio test from the root test'
+title: Prove the ratio test from the root test
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - convergence-tests
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 solved: true

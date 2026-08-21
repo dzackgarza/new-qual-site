@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-O3LYK
 kind: problem
-title: 'Rouché''s theorem: holomorphic functions uniformly close on a circle have the same number of zeros inside'
+title: 'Rouché''s theorem: holomorphic functions uniformly close on a circle have
+  the same number of zeros inside'
 classification:
   areas:
   - real-analysis
   topics:
-  - rouche
-  - holomorphic-functions
+  - Rouché
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

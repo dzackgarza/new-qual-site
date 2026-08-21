@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-03
 kind: problem
-title: 'A local closure condition implies regularity'
+title: A local closure condition implies regularity
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - closure
+  - Separation Axioms
+  - Closure
 relations: []
 review: draft
 solved: false

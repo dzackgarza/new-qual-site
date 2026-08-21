@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
+  - Conformal Maps
+  - Biholomorphisms
 relations: []
 review: draft
 solved: true

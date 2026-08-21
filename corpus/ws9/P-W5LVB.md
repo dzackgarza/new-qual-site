@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-W5LVB
 kind: problem
-title: Abelian groups of order $60$, and $\mathbb{Q}[x]$-modules of dimension $4$ annihilated by $x^8-1$
+title: Abelian groups of order $60$, and $\mathbb{Q}[x]$-modules of dimension $4$
+  annihilated by $x^8-1$
 classification:
   areas:
   - prelim
   topics:
-  - abelian-groups
-  - modules
-  - structure-theorem
+  - Abelian Groups
+  - Modules
+  - Structure Theorem
 relations: []
 review: draft
 solved: false

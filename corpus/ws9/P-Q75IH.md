@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - measure-theory
+  - Differentiation
+  - Measure Theory
 relations: []
 review: draft
 solved: true

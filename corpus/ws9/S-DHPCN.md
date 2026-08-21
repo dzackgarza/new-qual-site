@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - fubini-tonelli
+  - Measure Theory
+  - Fubini-Tonelli
 relations:
 - kind: solves
   target: P-7VK5X

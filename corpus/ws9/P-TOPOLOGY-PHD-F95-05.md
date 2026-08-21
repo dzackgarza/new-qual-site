@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-05
 kind: problem
-title: 'Compactness of the closed unit interval'
+title: Compactness of the closed unit interval
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - euclidean-spaces
+  - Compactness
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: false

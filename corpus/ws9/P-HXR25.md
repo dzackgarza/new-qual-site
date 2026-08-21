@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HXR25
 kind: problem
-title: Irreducibility of a degree-$4$ polynomial over $\mathbb{F}_p$ via $\gcd(f,x^{p^2}-x)$, and its Galois group
+title: Irreducibility of a degree-$4$ polynomial over $\mathbb{F}_p$ via $\gcd(f,x^{p^2}-x)$,
+  and its Galois group
 classification:
   areas:
   - prelim
   topics:
-  - finite-fields
-  - irreducibility-criteria
-  - polynomials
+  - Finite Fields
+  - Irreducibility Criteria
+  - Polynomials
 relations: []
 review: draft
 solved: false

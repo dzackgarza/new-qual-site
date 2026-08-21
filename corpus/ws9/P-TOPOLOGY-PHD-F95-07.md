@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-07
 kind: problem
-title: 'Invariance of dimension for R, R^2, and R^3'
+title: Invariance of dimension for R, R^2, and R^3
 classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - euclidean-spaces
-  - fundamental-group
+  - Homeomorphisms
+  - Euclidean Spaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

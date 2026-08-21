@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-KA5KL
 kind: problem
-title: The space $A^2(U)$ of square-integrable holomorphic functions is a Hilbert space
+title: The space $A^2(U)$ of square-integrable holomorphic functions is a Hilbert
+  space
 classification:
   areas:
   - real-analysis
   topics:
-  - holomorphic-functions
-  - hilbert-spaces
-  - completeness
+  - Holomorphic Functions
+  - Hilbert Spaces
+  - Completeness
 relations: []
 review: draft
 solved: true

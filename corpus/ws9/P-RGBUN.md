@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - contour-integration
-  - residues
-  - integrals
+  - Contour Integration
+  - Residues
+  - Integrals
 relations: []
 review: draft
 solved: true

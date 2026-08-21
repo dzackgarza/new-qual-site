@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - rational-canonical-form
-  - matrices
+  - Rational Canonical Form
+  - Matrices
 relations: []
 review: draft
 solved: false

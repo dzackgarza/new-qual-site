@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G04-AXES
 kind: problem
-title: 'The fundamental group of three-dimensional space with its axes removed'
+title: The fundamental group of three-dimensional space with its axes removed
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - homotopy
+  - Fundamental Group
+  - van Kampen
+  - Homotopy
 relations: []
 review: draft
 solved: false

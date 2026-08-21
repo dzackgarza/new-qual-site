@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
-  - counterexamples
+  - Logic and Quantifiers
+  - Counterexamples
 relations: []
 review: draft
 solved: false

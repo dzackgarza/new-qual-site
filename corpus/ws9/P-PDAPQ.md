@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PDAPQ
 kind: problem
-title: Examples of maximal ideals, prime non-maximal ideals, torsion-free modules, UFDs, and non-Noetherian rings
+title: Examples of maximal ideals, prime non-maximal ideals, torsion-free modules,
+  UFDs, and non-Noetherian rings
 classification:
   areas:
   - prelim
   topics:
-  - maximal-ideals
-  - prime-ideals
-  - counterexamples
+  - Maximal Ideals
+  - Prime Ideals
+  - Counterexamples
 relations: []
 review: draft
 solved: false

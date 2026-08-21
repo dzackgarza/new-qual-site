@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-O84SY
 kind: problem
-title: "A group of order $84$ with $28$ Sylow $3$-subgroups has a normal Sylow $7$-subgroup $K$ with $|Z_G(K)|=28$"
+title: A group of order $84$ with $28$ Sylow $3$-subgroups has a normal Sylow $7$-subgroup
+  $K$ with $|Z_G(K)|=28$
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - centralizers-and-normalizers
-  - groups
+  - Sylow Theory
+  - Centralizers and Normalizers
+  - Groups
 relations: []
 review: draft
 solved: false

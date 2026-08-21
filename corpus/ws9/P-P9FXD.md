@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-P9FXD
 kind: problem
-title: A $p$-group acting on a finite set of order not divisible by $p$ has a fixed point
+title: A $p$-group acting on a finite set of order not divisible by $p$ has a fixed
+  point
 classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - group-actions
-  - fixed-points
+  - p-Groups
+  - Group Actions
+  - Fixed Points
 relations: []
 review: draft
 solved: false

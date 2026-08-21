@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-03
 kind: problem
-title: 'The Klein bottle has a nonabelian fundamental group'
+title: The Klein bottle has a nonabelian fundamental group
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
-  - surfaces
+  - Covering Spaces
+  - Fundamental Group
+  - Surfaces
 relations: []
 review: draft
 solved: false

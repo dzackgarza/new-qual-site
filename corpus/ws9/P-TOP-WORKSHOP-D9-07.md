@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-07
 kind: problem
-title: 'Build a Δ-complex and chain complex after identifying the vertices of a 2-simplex'
+title: Build a Δ-complex and chain complex after identifying the vertices of a 2-simplex
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homology
-  - quotient-spaces
+  - Cell Complexes
+  - Homology
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

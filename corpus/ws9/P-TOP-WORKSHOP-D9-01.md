@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-01
 kind: problem
-title: Homology of $T\times[-1,1]$ with each end $T\times\{\pm 1\}$ collapsed to a point
+title: Homology of $T\times[-1,1]$ with each end $T\times\{\pm 1\}$ collapsed to a
+  point
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - quotient-spaces
-  - surfaces
+  - Homology
+  - Quotient Spaces
+  - Surfaces
 relations: []
 review: draft
 solved: false

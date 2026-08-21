@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-H3PWT
 kind: problem
-title: "Degree of a compositum when the factors have coprime degrees, and a counterexample without coprimeness"
+title: Degree of a compositum when the factors have coprime degrees, and a counterexample
+  without coprimeness
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - degree
+  - Field Extensions
+  - Degree
 relations: []
 review: draft
 solved: false

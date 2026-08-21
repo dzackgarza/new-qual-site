@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-7B2CW
 kind: problem
-title: Groups of order $pq$ with $p<q$ primes are not simple, abelian if $p\nmid q-1$, and the possibilities when $p\mid q-1$
+title: Groups of order $pq$ with $p<q$ primes are not simple, abelian if $p\nmid q-1$,
+  and the possibilities when $p\mid q-1$
 classification:
   areas:
   - prelim
   topics:
-  - groups
-  - simple-groups
-  - sylow-theory
+  - Groups
+  - Simple Groups
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

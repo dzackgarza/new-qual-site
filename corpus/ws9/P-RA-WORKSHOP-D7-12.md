@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-12
 kind: problem
-title: 'Polynomial approximation with endpoint factors'
+title: Polynomial approximation with endpoint factors
 classification:
   areas:
   - real-analysis
   topics:
-  - stone-weierstrass
-  - uniform-convergence
-  - polynomials
+  - Stone-Weierstrass
+  - Uniform Convergence
+  - Polynomials
 relations: []
 review: draft
 solved: true

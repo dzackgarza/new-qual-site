@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JVAGD
 kind: problem
-title: $\int \varphi\circ f=\int_0^\infty m(\{f>t\})\varphi'(t)\,dt$ for absolutely continuous monotonic $\varphi$ with $\varphi(0)=0$
+title: $\int \varphi\circ f=\int_0^\infty m(\{f>t\})\varphi'(t)\,dt$ for absolutely
+  continuous monotonic $\varphi$ with $\varphi(0)=0$
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - integrals
-  - absolute-continuity
+  - Measure Theory
+  - Integrals
+  - Absolute Continuity
 relations: []
 review: draft
 solved: true

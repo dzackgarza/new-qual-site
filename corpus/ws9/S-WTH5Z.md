@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - rational-canonical-form
-  - nilpotence
+  - Jordan Canonical Form
+  - Rational Canonical Form
+  - Nilpotence
 relations:
 - kind: solves
   target: P-B2P3P

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-AZ2FY
 kind: problem
-title: A finite Radon measure satisfies $\mu(B_r(x))\le Cr/\varepsilon$ off a set of small $1$-Hausdorff content
+title: A finite Radon measure satisfies $\mu(B_r(x))\le Cr/\varepsilon$ off a set
+  of small $1$-Hausdorff content
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 solved: true

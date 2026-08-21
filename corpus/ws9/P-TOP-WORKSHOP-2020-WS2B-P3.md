@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2B-P3
 kind: problem
-title: 'Homotopy is compatible with composition, but cancellation can fail'
+title: Homotopy is compatible with composition, but cancellation can fail
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - counterexamples
+  - Homotopy
+  - Counterexamples
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-VVXKF
 kind: problem
-title: The number $n_p$ of Sylow $p$-subgroups, and a nonabelian simple group has no subgroup of index $\le 4$
+title: The number $n_p$ of Sylow $p$-subgroups, and a nonabelian simple group has
+  no subgroup of index $\le 4$
 classification:
   areas:
   - prelim
   topics:
-  - sylow-theory
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

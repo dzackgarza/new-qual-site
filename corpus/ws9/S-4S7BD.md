@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - entire-functions
-  - holomorphic-functions
+  - Entire Functions
+  - Holomorphic Functions
 relations:
 - kind: solves
   target: P-SVQNB

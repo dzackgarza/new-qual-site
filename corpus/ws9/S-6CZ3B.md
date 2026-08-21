@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - algebras
-  - centralizers-and-normalizers
+  - Bilinear Forms
+  - Algebras
+  - Centralizers and Normalizers
 relations:
 - kind: solves
   target: P-PBVSZ

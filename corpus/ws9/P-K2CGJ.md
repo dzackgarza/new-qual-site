@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-K2CGJ
 kind: problem
-title: Conjugacy class size equals the index of the centralizer; restriction to a subgroup of index $2$
+title: Conjugacy class size equals the index of the centralizer; restriction to a
+  subgroup of index $2$
 classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - centralizers-and-normalizers
-  - class-equation
+  - Conjugacy
+  - Centralizers and Normalizers
+  - Class Equation
 relations: []
 review: draft
 solved: false

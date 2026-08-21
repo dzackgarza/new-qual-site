@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-01
 kind: problem
-title: 'Compact subsets of metric spaces are closed and bounded'
+title: Compact subsets of metric spaces are closed and bounded
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - metric-spaces
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 solved: false

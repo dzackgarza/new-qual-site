@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-P4
 kind: problem
-title: 'Lift maps between simply connected covering spaces'
+title: Lift maps between simply connected covering spaces
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - homotopy
+  - Covering Spaces
+  - Homotopy
 relations: []
 review: draft
 solved: false

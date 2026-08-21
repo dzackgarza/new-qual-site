@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - differentiation
-  - integrals
-  - continuity
+  - Differentiation
+  - Integrals
+  - Continuity
 relations: []
 review: draft
 solved: false

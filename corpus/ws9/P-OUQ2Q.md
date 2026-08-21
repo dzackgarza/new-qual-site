@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-OUQ2Q
 kind: problem
-title: $\mathbb{Q}[x]$-modules from order-$6$ matrices in $M_4(\mathbb{Q})$, and groups of order $24$
+title: $\mathbb{Q}[x]$-modules from order-$6$ matrices in $M_4(\mathbb{Q})$, and groups
+  of order $24$
 classification:
   areas:
   - prelim
   topics:
-  - rational-canonical-form
-  - modules
-  - matrices
+  - Rational Canonical Form
+  - Modules
+  - Matrices
 relations: []
 review: draft
 solved: false

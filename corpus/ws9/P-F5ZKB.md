@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-F5ZKB
 kind: problem
-title: "A finite field has $p^n$ elements; subfields of a field of size $3^{12}$; an infinite field of characteristic $3$"
+title: A finite field has $p^n$ elements; subfields of a field of size $3^{12}$; an
+  infinite field of characteristic $3$
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - fields
+  - Finite Fields
+  - Fields
 relations: []
 review: draft
 solved: false

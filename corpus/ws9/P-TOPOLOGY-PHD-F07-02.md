@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-02
 kind: problem
-title: 'Continuity of the metric function'
+title: Continuity of the metric function
 classification:
   areas:
   - topology
   topics:
-  - metric-spaces
-  - continuity
+  - Metric Spaces
+  - Continuity
 relations: []
 review: draft
 solved: false

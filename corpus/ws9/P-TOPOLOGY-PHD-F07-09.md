@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-09
 kind: problem
-title: 'Closed subspaces of locally compact Hausdorff spaces'
+title: Closed subspaces of locally compact Hausdorff spaces
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - subspace-topology
+  - Compactness
+  - Hausdorff Spaces
+  - Subspace Topology
 relations: []
 review: draft
 solved: false

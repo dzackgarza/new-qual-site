@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D5-11
 kind: problem
-title: 'A function vanishing at both endpoints has a large derivative'
+title: A function vanishing at both endpoints has a large derivative
 classification:
   areas:
   - real-analysis
   topics:
-  - mean-value-theorem
-  - differentiation
+  - Mean Value Theorem
+  - Differentiation
 relations: []
 review: draft
 solved: true

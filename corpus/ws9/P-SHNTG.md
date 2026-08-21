@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-SHNTG
 kind: problem
-title: Definition of an ideal, the join $I\vee J$, the product $IJ\subseteq I\cap J$, and whether every ideal contained in $I$ and $J$ lies in $IJ$
+title: Definition of an ideal, the join $I\vee J$, the product $IJ\subseteq I\cap
+  J$, and whether every ideal contained in $I$ and $J$ lies in $IJ$
 classification:
   areas:
   - prelim
   topics:
-  - ideals
-  - rings
+  - Ideals
+  - Rings
 relations: []
 review: draft
 solved: false

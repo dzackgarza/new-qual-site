@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-13
 kind: problem
-title: 'A pair of maps from S^1 to S^2 are homotopic'
+title: A pair of maps from S^1 to S^2 are homotopic
 classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 solved: false

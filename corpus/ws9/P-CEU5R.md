@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-CEU5R
 kind: problem
-title: Contrapositive and negation of "if all birds swim or some fish fly, then no whales walk"
+title: Contrapositive and negation of "if all birds swim or some fish fly, then no
+  whales walk"
 classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
+  - Logic and Quantifiers
 relations: []
 review: draft
 solved: false

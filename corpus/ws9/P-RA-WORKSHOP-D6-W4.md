@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D6-W4
 kind: problem
-title: 'Vanishing Stieltjes integrals force a monotone integrator to be constant'
+title: Vanishing Stieltjes integrals force a monotone integrator to be constant
 classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - integrals
+  - Riemann Integrability
+  - Integrals
 relations: []
 review: draft
 solved: true

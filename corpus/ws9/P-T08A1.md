@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - point-set
-  - product-topology
+  - Point-Set Topology
+  - Product Topology
 relations: []
 review: draft
 solved: false

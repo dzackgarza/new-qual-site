@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JKYJU
 kind: problem
-title: 'Hurwitz''s theorem: a locally uniform limit of holomorphic functions eventually has the same number of zeros in the disc'
+title: 'Hurwitz''s theorem: a locally uniform limit of holomorphic functions eventually
+  has the same number of zeros in the disc'
 classification:
   areas:
   - real-analysis
   topics:
-  - hurwitz
-  - holomorphic-functions
-  - uniform-convergence
+  - Hurwitz
+  - Holomorphic Functions
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true

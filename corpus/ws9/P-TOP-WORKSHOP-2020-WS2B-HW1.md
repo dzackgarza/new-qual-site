@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2B-HW1
 kind: problem
-title: 'Determine retractions and deformation retractions in basic spaces (warm-up)'
+title: Determine retractions and deformation retractions in basic spaces (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - retracts
-  - homotopy
+  - Retracts
+  - Homotopy
 relations: []
 review: draft
 solved: false

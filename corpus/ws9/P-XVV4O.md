@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - cosets-and-lagrange
-  - counterexamples
+  - Cosets and Lagrange
+  - Counterexamples
 relations: []
 review: draft
 solved: false

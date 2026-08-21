@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-06
 kind: problem
-title: 'Strong deformation retracts induce fundamental-group isomorphisms'
+title: Strong deformation retracts induce fundamental-group isomorphisms
 classification:
   areas:
   - topology
   topics:
-  - retracts
-  - fundamental-group
-  - homotopy
+  - Retracts
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 solved: false

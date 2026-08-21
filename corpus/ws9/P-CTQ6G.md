@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-CTQ6G
 kind: problem
-title: Isolated points iff the complement is not dense; countable complete metric spaces have dense isolated points
+title: Isolated points iff the complement is not dense; countable complete metric
+  spaces have dense isolated points
 classification:
   areas:
   - real-analysis
   topics:
-  - metric-spaces
-  - completeness
-  - density
+  - Metric Spaces
+  - Completeness
+  - Density
 relations: []
 review: draft
 solved: true

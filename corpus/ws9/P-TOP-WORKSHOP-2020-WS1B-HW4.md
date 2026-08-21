@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS1B-HW4
 kind: problem
-title: 'Give distinct topologies on R (warm-up)'
+title: Give distinct topologies on R (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - euclidean-spaces
+  - Point-Set Topology
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: false

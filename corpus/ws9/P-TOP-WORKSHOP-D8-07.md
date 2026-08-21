@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-07
 kind: problem
-title: 'Covering maps are open maps'
+title: Covering maps are open maps
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - continuity
+  - Covering Spaces
+  - Continuity
 relations: []
 review: draft
 solved: false

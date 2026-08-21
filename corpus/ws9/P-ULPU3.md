@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - harmonic-functions
-  - measure-theory
-  - integrals
+  - Harmonic Functions
+  - Measure Theory
+  - Integrals
 relations: []
 review: draft
 solved: true

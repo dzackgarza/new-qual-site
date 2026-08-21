@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-15
 kind: problem
-title: 'Prove the monotone, nth-term, and Cauchy condensation theorems'
+title: Prove the monotone, nth-term, and Cauchy condensation theorems
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - sequences-of-numbers
-  - convergence
+  - Series of Numbers
+  - Sequences of Numbers
+  - Convergence
 relations: []
 review: draft
 solved: true

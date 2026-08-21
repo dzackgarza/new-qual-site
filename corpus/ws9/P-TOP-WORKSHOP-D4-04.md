@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D4-04
 kind: problem
-title: 'A compact union of two Hausdorff subspaces'
+title: A compact union of two Hausdorff subspaces
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - counterexamples
+  - Compactness
+  - Hausdorff Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-S5SYL
 kind: problem
-title: "Sylow $2$-subgroup of $S_5$, Sylow $5$-subgroup of $S_{15}$, and Sylow $p$-subgroups of $S_p$"
+title: Sylow $2$-subgroup of $S_5$, Sylow $5$-subgroup of $S_{15}$, and Sylow $p$-subgroups
+  of $S_p$
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - groups
+  - Sylow Theory
+  - Groups
 relations: []
 review: draft
 solved: false

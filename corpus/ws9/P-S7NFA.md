@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-S7NFA
 kind: problem
-title: "Definition of a splitting field, and $[E:F] \\le n!$ without the fundamental theorem"
+title: Definition of a splitting field, and $[E:F] \le n!$ without the fundamental
+  theorem
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - field-extensions
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

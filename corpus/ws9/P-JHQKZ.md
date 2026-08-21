@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - modules
-  - ideals
+  - Modules
+  - Ideals
 relations: []
 review: draft
 solved: false

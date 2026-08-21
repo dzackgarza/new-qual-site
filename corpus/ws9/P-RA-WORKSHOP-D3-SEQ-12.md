@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-12
 kind: problem
-title: 'A bounded positive multiplier preserves convergence of a positive series'
+title: A bounded positive multiplier preserves convergence of a positive series
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - sequences-of-numbers
+  - Series of Numbers
+  - Sequences of Numbers
 relations: []
 review: draft
 solved: true

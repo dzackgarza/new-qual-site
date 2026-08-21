@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D9-06
 kind: problem
-title: 'Use the Meyer–Vietoris sequence to calculate the homology of a wedge'
+title: Use the Meyer–Vietoris sequence to calculate the homology of a wedge
 classification:
   areas:
   - topology
   topics:
-  - mayer-vietoris
-  - homology
+  - Mayer-Vietoris
+  - Homology
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-W3
 kind: problem
-title: 'Prove the uniform-limit continuity theorem directly'
+title: Prove the uniform-limit continuity theorem directly
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - continuity
-  - convergence-of-functions
+  - Uniform Convergence
+  - Continuity
+  - Convergence of Functions
 relations:
 - kind: uses
   target: T-RA-WORKSHOP-D7-6-1

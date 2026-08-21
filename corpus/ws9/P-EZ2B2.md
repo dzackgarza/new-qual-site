@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - closure
+  - Connectedness
+  - Closure
 relations: []
 review: draft
 solved: false

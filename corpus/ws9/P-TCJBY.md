@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TCJBY
 kind: problem
-title: A $C[0,1]$ subspace closed in both $\|\cdot\|_\infty$ and $\|\cdot\|_2$ is finite-dimensional
+title: A $C[0,1]$ subspace closed in both $\|\cdot\|_\infty$ and $\|\cdot\|_2$ is
+  finite-dimensional
 classification:
   areas:
   - real-analysis
   topics:
-  - function-spaces
-  - norms
-  - closure
+  - Function Spaces
+  - Norms
+  - Closure
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-B6E7Q
 kind: problem
-title: $\ker\rho=\{g:\chi(g)=\chi(1)\}$; a character table of order $120$, and the table of $G/Z(G)$
+title: $\ker\rho=\{g:\chi(g)=\chi(1)\}$; a character table of order $120$, and the
+  table of $G/Z(G)$
 classification:
   areas:
   - algebra
   topics:
-  - character-theory
-  - representation-theory
-  - conjugacy
+  - Character Theory
+  - Representation Theory
+  - Conjugacy
 relations: []
 review: draft
 solved: true

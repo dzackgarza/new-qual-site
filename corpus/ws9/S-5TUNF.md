@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - function-spaces
-  - norms
-  - closure
+  - Function Spaces
+  - Norms
+  - Closure
 relations:
 - kind: solves
   target: P-TCJBY

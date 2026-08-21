@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-HW5
 kind: problem
-title: 'Analyze the Babylonian square-root iteration (warm-up)'
+title: Analyze the Babylonian square-root iteration (warm-up)
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
-  - fixed-points
+  - Sequences of Numbers
+  - Limits
+  - Fixed Points
 relations: []
 review: draft
 solved: true

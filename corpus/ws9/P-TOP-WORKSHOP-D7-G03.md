@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G03
 kind: problem
-title: 'A quotient identifying points of a torus and a sphere'
+title: A quotient identifying points of a torus and a sphere
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - fundamental-group
-  - quotient-spaces
+  - Cell Complexes
+  - Fundamental Group
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

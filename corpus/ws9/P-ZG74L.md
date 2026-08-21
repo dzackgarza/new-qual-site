@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - galois-theory
-  - automorphisms
-  - fields
+  - Galois Theory
+  - Automorphisms
+  - Fields
 relations: []
 review: draft
 solved: false

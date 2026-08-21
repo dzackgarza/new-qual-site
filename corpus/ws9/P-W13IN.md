@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-W13IN
 kind: problem
-title: "A subgroup of index $n$ contains a normal subgroup $K$ with $[G:K]$ dividing $n!$"
+title: A subgroup of index $n$ contains a normal subgroup $K$ with $[G:K]$ dividing
+  $n!$
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - group-actions
-  - cosets-and-lagrange
+  - Normal Subgroups
+  - Group Actions
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - noetherian-rings
-  - rings
-  - modules
+  - Noetherian Rings
+  - Rings
+  - Modules
 relations: []
 review: draft
 solved: false

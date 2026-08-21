@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - integrals
-  - norms
+  - Lp Spaces
+  - Integrals
+  - Norms
 relations:
 - kind: solves
   target: P-625QO

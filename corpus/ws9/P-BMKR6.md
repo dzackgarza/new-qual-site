@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - completeness
-  - norms
-  - series-of-functions
+  - Completeness
+  - Norms
+  - Series of Functions
 relations: []
 review: draft
 solved: true

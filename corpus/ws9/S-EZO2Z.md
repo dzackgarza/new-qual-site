@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
+  - Functional Analysis
 relations:
 - kind: solves
   target: P-MIAAZ

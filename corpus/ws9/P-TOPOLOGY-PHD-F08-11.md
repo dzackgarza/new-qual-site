@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-11
 kind: problem
-title: 'Connected components in a locally connected space are open'
+title: Connected components in a locally connected space are open
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - point-set
+  - Connectedness
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

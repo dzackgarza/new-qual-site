@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - euclidean-spaces
+  - Continuity
+  - Euclidean Spaces
 relations: []
 review: draft
 ---

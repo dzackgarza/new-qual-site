@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QSYKP
 kind: problem
-title: $\|v\|_{L^\infty([0,1]^2)}\le C\|v-\Delta v\|_{L^2([0,1]^2)}$ for trigonometric polynomials $v$
+title: $\|v\|_{L^\infty([0,1]^2)}\le C\|v-\Delta v\|_{L^2([0,1]^2)}$ for trigonometric
+  polynomials $v$
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - pdes
-  - norms
+  - Fourier Analysis
+  - PDEs
+  - Norms
 relations: []
 review: draft
 solved: true

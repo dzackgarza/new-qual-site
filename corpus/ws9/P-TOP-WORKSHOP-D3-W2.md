@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-W2
 kind: problem
-title: 'The separation-axiom implication chain (workshop warm-up)'
+title: The separation-axiom implication chain (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
+  - Separation Axioms
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-15
 kind: problem
-title: 'Associativity of the product of loop homotopy classes'
+title: Associativity of the product of loop homotopy classes
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

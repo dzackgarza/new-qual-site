@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - conformal-maps
-  - counterexamples
+  - Conformal Maps
+  - Counterexamples
 relations:
 - kind: solves
   target: P-SJPBM

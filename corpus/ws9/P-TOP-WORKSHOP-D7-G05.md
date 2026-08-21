@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G05
 kind: problem
-title: 'An index-four subgroup and covering space of a free group'
+title: An index-four subgroup and covering space of a free group
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - groups
-  - cell-complexes
+  - Covering Spaces
+  - Groups
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

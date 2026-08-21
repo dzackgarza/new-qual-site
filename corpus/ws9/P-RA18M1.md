@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA18M1
 kind: problem
-title: 'UNL analysis qualifying exam, May 2018, problem 1'
+title: UNL analysis qualifying exam, May 2018, problem 1
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - series-of-numbers
-  - limits
+  - Sequences of Numbers
+  - Series of Numbers
+  - Limits
 relations: []
 review: draft
 solved: true

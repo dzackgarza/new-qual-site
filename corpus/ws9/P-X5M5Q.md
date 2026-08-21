@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-X5M5Q
 kind: problem
-title: "Splitting field of $x^5-5$ over $\\mathbb{Q}$: degree, Galois group, subfields, and which are Galois"
+title: 'Splitting field of $x^5-5$ over $\mathbb{Q}$: degree, Galois group, subfields,
+  and which are Galois'
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - galois-theory
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

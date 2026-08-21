@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-16
 kind: problem
-title: 'S^1 is a retract of the Möbius band'
+title: S^1 is a retract of the Möbius band
 classification:
   areas:
   - topology
   topics:
-  - retracts
-  - surfaces
-  - quotient-spaces
+  - Retracts
+  - Surfaces
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

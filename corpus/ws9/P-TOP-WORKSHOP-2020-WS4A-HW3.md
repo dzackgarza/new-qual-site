@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS4A-HW3
 kind: problem
-title: 'Reduced versus non-reduced homology'
+title: Reduced versus non-reduced homology
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 solved: false

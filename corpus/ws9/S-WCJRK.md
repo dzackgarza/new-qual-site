@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - pdes
-  - norms
+  - Fourier Analysis
+  - PDEs
+  - Norms
 relations:
 - kind: solves
   target: P-QSYKP

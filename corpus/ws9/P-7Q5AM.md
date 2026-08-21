@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-7Q5AM
 kind: problem
-title: The unit sphere of an infinite-dimensional Hilbert space is weakly dense in the unit ball, and operators of norm $1$ converging strongly to $0$
+title: The unit sphere of an infinite-dimensional Hilbert space is weakly dense in
+  the unit ball, and operators of norm $1$ converging strongly to $0$
 classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - hilbert-spaces
-  - functional-analysis
+  - Weak Convergence
+  - Hilbert Spaces
+  - Functional Analysis
 relations: []
 review: draft
 solved: true

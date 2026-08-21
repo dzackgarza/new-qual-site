@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MW6OS
 kind: problem
-title: Unit sequences in infinite-dimensional Hilbert space have weakly but not strongly convergent subsequences
+title: Unit sequences in infinite-dimensional Hilbert space have weakly but not strongly
+  convergent subsequences
 classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - hilbert-spaces
-  - compactness
+  - Weak Convergence
+  - Hilbert Spaces
+  - Compactness
 relations: []
 review: draft
 solved: true

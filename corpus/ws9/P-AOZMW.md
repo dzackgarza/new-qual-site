@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - series-of-numbers
-  - convergence-tests
-  - power-series
+  - Series of Numbers
+  - Convergence Tests
+  - Power Series
 relations: []
 review: draft
 solved: false

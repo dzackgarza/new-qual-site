@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-OK5P3
 kind: problem
-title: Line integral of $y\,dx+2x\,dy$ along a three-quarter circle closed by the axes
+title: Line integral of $y\,dx+2x\,dy$ along a three-quarter circle closed by the
+  axes
 classification:
   areas:
   - prelim
   topics:
-  - line-integrals
-  - green-s-theorem
+  - Line Integrals
+  - Green's Theorem
 relations: []
 review: draft
 solved: false

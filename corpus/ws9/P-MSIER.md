@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - measure-theory
-  - counterexamples
+  - Convergence of Functions
+  - Measure Theory
+  - Counterexamples
 relations: []
 review: draft
 solved: true

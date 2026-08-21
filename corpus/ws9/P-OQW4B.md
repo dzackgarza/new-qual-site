@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - roots-of-unity
+  - Roots of Unity
 relations: []
 review: draft
 solved: false

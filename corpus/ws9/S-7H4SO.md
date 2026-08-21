@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - character-theory
-  - representation-theory
-  - simple-groups
+  - Character Theory
+  - Representation Theory
+  - Simple Groups
 relations:
 - kind: solves
   target: P-B6E7Q

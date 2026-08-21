@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- https://artsci.tamu.edu/mathematics/_files/_docs/phd/quals/nreal/j16.pdf
+source:
   source_kind: university-exam
   institution: tamu
   area: real-analysis

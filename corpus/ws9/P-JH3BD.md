@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JH3BD
 kind: problem
-title: Factorizations of $x^5-1$, $x^6-1$, and related polynomials over $\mathbf{C}$, $\mathbf{Q}$, and finite fields
+title: Factorizations of $x^5-1$, $x^6-1$, and related polynomials over $\mathbf{C}$,
+  $\mathbf{Q}$, and finite fields
 classification:
   areas:
   - prelim
   topics:
-  - factorization
-  - polynomials
-  - irreducibility-criteria
+  - Factorization
+  - Polynomials
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

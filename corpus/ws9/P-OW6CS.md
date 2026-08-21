@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - galois-theory
-  - counterexamples
+  - Galois Theory
+  - Counterexamples
 relations: []
 review: draft
 solved: false

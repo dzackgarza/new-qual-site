@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - integral-extensions
-  - algebras
+  - Group Actions
+  - Integral Extensions
+  - Algebras
 relations:
 - kind: solves
   target: P-J2D5B

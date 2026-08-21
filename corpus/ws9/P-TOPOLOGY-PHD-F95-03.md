@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-03
 kind: problem
-title: 'Products of closed sets and the product topology'
+title: Products of closed sets and the product topology
 classification:
   areas:
   - topology
   topics:
-  - product-topology
-  - closure
+  - Product Topology
+  - Closure
 relations: []
 review: draft
 solved: false

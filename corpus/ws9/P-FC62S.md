@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FC62S
 kind: problem
-title: Every functional on a reflexive Banach space attains its norm; a counterexample in $\ell^1$
+title: Every functional on a reflexive Banach space attains its norm; a counterexample
+  in $\ell^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - norms
-  - counterexamples
+  - Functional Analysis
+  - Norms
+  - Counterexamples
 relations: []
 review: draft
 solved: true

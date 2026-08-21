@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MW5EM
 kind: problem
-title: Negation, converse, and contrapositive of "if there exists a purple apple, then all lemons are pink"
+title: Negation, converse, and contrapositive of "if there exists a purple apple,
+  then all lemons are pink"
 classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
+  - Logic and Quantifiers
 relations: []
 review: draft
 solved: false

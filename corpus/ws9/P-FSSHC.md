@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FSSHC
 kind: problem
-title: Extreme points of the unit ball of convergent sequences, and whether the ball is their closed convex hull
+title: Extreme points of the unit ball of convergent sequences, and whether the ball
+  is their closed convex hull
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - functional-analysis
-  - norms
+  - Dual Spaces
+  - Functional Analysis
+  - Norms
 relations: []
 review: draft
 solved: true

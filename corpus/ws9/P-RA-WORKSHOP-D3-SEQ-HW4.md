@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-HW4
 kind: problem
-title: 'Select a convergent subseries from a sequence tending to zero (warm-up)'
+title: Select a convergent subseries from a sequence tending to zero (warm-up)
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - sequences-of-numbers
+  - Series of Numbers
+  - Sequences of Numbers
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PBVSZ
 kind: problem
-title: The element $\sum x_i y_i$ of an algebra with invariant form is well-defined and central
+title: The element $\sum x_i y_i$ of an algebra with invariant form is well-defined
+  and central
 classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - algebras
-  - centralizers-and-normalizers
+  - Bilinear Forms
+  - Algebras
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: true

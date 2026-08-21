@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - holomorphic-functions
-  - counterexamples
+  - Holomorphic Functions
+  - Counterexamples
 relations:
 - kind: solves
   target: P-JNFJW

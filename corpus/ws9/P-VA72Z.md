@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-VA72Z
 kind: problem
-title: Convergence of $\sum a_n^2$ under conditional and absolute convergence of $\sum a_n$
+title: Convergence of $\sum a_n^2$ under conditional and absolute convergence of $\sum
+  a_n$
 classification:
   areas:
   - prelim
   topics:
-  - series-of-numbers
-  - convergence-tests
-  - counterexamples
+  - Series of Numbers
+  - Convergence Tests
+  - Counterexamples
 relations: []
 review: draft
 solved: false

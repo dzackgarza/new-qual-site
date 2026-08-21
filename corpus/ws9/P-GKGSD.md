@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-GKGSD
 kind: problem
-title: A single-valued injective branch of $\sqrt{f(z^2)}$ for injective analytic $f$ with $f(0)=0$
+title: A single-valued injective branch of $\sqrt{f(z^2)}$ for injective analytic
+  $f$ with $f(0)=0$
 classification:
   areas:
   - real-analysis
   topics:
-  - holomorphic-functions
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

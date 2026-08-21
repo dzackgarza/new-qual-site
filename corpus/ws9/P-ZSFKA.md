@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - euclidean-domains
-  - number-theory
+  - Euclidean Domains
+  - Number Theory
 relations: []
 review: draft
 solved: false

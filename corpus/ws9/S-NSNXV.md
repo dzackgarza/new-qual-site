@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - normal-subgroups
-  - field-extensions
+  - Galois Theory
+  - Normal Subgroups
+  - Field Extensions
 relations:
 - kind: solves
   target: P-LCEHH

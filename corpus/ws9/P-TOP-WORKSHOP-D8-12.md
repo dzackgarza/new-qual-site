@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-12
 kind: problem
-title: 'Connected covering spaces of the sphere with antipodal poles identified'
+title: Connected covering spaces of the sphere with antipodal poles identified
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - covering-spaces
-  - quotient-spaces
+  - Homotopy
+  - Covering Spaces
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

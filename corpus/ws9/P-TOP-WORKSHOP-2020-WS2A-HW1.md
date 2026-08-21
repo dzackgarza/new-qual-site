@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2A-HW1
 kind: problem
-title: 'List the separation properties T0 through T4 (warm-up)'
+title: List the separation properties T0 through T4 (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
+  - Separation Axioms
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l2
-  - convergence-of-functions
-  - measure-theory
+  - L²
+  - Convergence of Functions
+  - Measure Theory
 relations: []
 review: draft
 solved: true

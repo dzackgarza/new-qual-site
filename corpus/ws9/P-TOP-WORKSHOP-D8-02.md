@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-02
 kind: problem
-title: 'The pullback of a covering map is a covering map'
+title: The pullback of a covering map is a covering map
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - product-topology
+  - Covering Spaces
+  - Product Topology
 relations: []
 review: draft
 solved: false

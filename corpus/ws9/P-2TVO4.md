@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - splitting-fields
-  - galois-theory
-  - roots-of-unity
+  - Splitting Fields
+  - Galois Theory
+  - Roots of Unity
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA19J6
 kind: problem
-title: 'UNL analysis qualifying exam, January 2019, problem 6'
+title: UNL analysis qualifying exam, January 2019, problem 6
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - continuity
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 solved: true

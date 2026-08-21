@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - cell-complexes
+  - Fundamental Group
+  - van Kampen
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fatou
-  - convergence-of-integrals
-  - counterexamples
+  - Fatou
+  - Convergence of Integrals
+  - Counterexamples
 relations:
 - kind: solves
   target: P-4KTFN

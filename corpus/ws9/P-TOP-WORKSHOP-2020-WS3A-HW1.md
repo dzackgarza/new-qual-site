@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3A-HW1
 kind: problem
-title: 'Construct cell complexes for the sphere and torus (warm-up)'
+title: Construct cell complexes for the sphere and torus (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - surfaces
+  - Cell Complexes
+  - Surfaces
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-HHX6V
 kind: problem
-title: Direct summands are pure; a pure submodule of a finitely generated torsion module over a PID is a direct summand
+title: Direct summands are pure; a pure submodule of a finitely generated torsion
+  module over a PID is a direct summand
 classification:
   areas:
   - prelim
   topics:
-  - modules
-  - free-modules
+  - Modules
+  - Free Modules
 relations: []
 review: draft
 solved: false

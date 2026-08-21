@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - abelian-groups
-  - structure-theorem
+  - Abelian Groups
+  - Structure Theorem
 relations:
 - kind: solves
   target: P-GWHUX

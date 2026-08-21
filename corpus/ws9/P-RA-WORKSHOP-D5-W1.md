@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D5-W1
 kind: problem
-title: 'A function with zero derivative is constant'
+title: A function with zero derivative is constant
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - mean-value-theorem
+  - Differentiation
+  - Mean Value Theorem
 relations: []
 review: draft
 solved: true

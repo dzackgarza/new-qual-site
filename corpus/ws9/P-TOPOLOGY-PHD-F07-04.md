@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-04
 kind: problem
-title: 'Relative openness in an open subspace'
+title: Relative openness in an open subspace
 classification:
   areas:
   - topology
   topics:
-  - subspace-topology
-  - point-set
+  - Subspace Topology
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

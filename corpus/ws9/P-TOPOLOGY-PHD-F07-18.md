@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-18
 kind: problem
-title: 'Fundamental group of a sphere with three points removed'
+title: Fundamental group of a sphere with three points removed
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - surfaces
+  - Fundamental Group
+  - van Kampen
+  - Surfaces
 relations: []
 review: draft
 solved: false

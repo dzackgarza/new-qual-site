@@ -2,15 +2,17 @@
 schema: qual/card@1
 id: P-GFCIL
 kind: problem
-title: $(C[0,1],\|\cdot\|_p)$ is not a Banach space, $L^p[0,1]$ is Banach, convolution has no smooth identity, Hölder's inequality, and Young's inequality $L^p*L^q\subset L^r$
+title: $(C[0,1],\|\cdot\|_p)$ is not a Banach space, $L^p[0,1]$ is Banach, convolution
+  has no smooth identity, Hölder's inequality, and Young's inequality $L^p*L^q\subset
+  L^r$
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - norms
-  - completeness
-  - convolution
+  - Lp Spaces
+  - Norms
+  - Completeness
+  - Convolution
 relations: []
 review: draft
 solved: true

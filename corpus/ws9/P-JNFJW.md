@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-JNFJW
 kind: problem
-title: Injectivity of holomorphic functions with $\operatorname{Re}(f')>0$, and the need for convexity
+title: Injectivity of holomorphic functions with $\operatorname{Re}(f')>0$, and the
+  need for convexity
 classification:
   areas:
   - real-analysis
   topics:
-  - holomorphic-functions
-  - counterexamples
+  - Holomorphic Functions
+  - Counterexamples
 relations: []
 review: draft
 solved: true

@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - holomorphic-functions
-  - functional-analysis
+  - Holomorphic Functions
+  - Functional Analysis
 relations:
 - kind: solves
   target: P-YHXGO

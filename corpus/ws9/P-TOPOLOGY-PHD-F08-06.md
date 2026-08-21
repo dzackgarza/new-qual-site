@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-06
 kind: problem
-title: 'Closed-map and open-map criteria for identification maps'
+title: Closed-map and open-map criteria for identification maps
 classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - continuity
+  - Quotient Spaces
+  - Continuity
 relations: []
 review: draft
 solved: false

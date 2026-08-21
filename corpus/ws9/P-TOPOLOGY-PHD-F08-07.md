@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-07
 kind: problem
-title: 'The Hausdorff criterion for a product of two spaces'
+title: The Hausdorff criterion for a product of two spaces
 classification:
   areas:
   - topology
   topics:
-  - hausdorff-spaces
-  - product-topology
+  - Hausdorff Spaces
+  - Product Topology
 relations: []
 review: draft
 solved: false

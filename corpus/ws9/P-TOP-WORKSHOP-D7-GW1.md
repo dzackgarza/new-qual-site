@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-GW1
 kind: problem
-title: 'Realize a presented group as a fundamental group (workshop warm-up)'
+title: Realize a presented group as a fundamental group (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - cell-complexes
-  - groups
+  - Fundamental Group
+  - Cell Complexes
+  - Groups
 relations: []
 review: draft
 solved: false

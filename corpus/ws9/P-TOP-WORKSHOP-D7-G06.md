@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G06
 kind: problem
-title: 'A torus with a disk attached along the diagonal'
+title: A torus with a disk attached along the diagonal
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - cell-complexes
+  - Fundamental Group
+  - van Kampen
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

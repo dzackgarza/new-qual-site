@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-RP7WR
 kind: problem
-title: Finite subgroups of field automorphism groups, and of finite-field automorphism groups
+title: Finite subgroups of field automorphism groups, and of finite-field automorphism
+  groups
 classification:
   areas:
   - prelim
   topics:
-  - galois-theory
-  - automorphisms
-  - fields
+  - Galois Theory
+  - Automorphisms
+  - Fields
 relations: []
 review: draft
 solved: false

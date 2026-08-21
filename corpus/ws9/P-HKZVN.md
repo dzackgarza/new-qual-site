@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HKZVN
 kind: problem
-title: A measurable $f$ with integrable slices but unequal iterated integrals; Fubini and Tonelli
+title: A measurable $f$ with integrable slices but unequal iterated integrals; Fubini
+  and Tonelli
 classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - counterexamples
-  - integrals
+  - Fubini-Tonelli
+  - Counterexamples
+  - Integrals
 relations: []
 review: draft
 solved: true

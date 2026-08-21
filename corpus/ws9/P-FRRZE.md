@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - homotopy
+  - Fundamental Group
+  - van Kampen
+  - Homotopy
 relations: []
 review: draft
 solved: false

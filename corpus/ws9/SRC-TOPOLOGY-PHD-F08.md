@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: SRC-TOPOLOGY-PHD-F08
 kind: collection
-title: 'Topology Ph.D. Qualifying Exam, F08phdtop.pdf'
+title: Topology Ph.D. Qualifying Exam, January 17, 2009
 classification:
   areas:
   - topology
   topics: []
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: 'F08phdtop.pdf.'
+provenance:
+- assets/attachments/F08phdtop.pdf
+source:
+  source_kind: university-exam
   problems:
   - P-TOPOLOGY-PHD-F08-01
   - P-TOPOLOGY-PHD-F08-02
@@ -34,11 +35,14 @@ payload:
   - P-TOPOLOGY-PHD-F08-19
   date:
     kind: academic-term
-    year: 2008
-    term: fall
+    year: 2009
+    term: spring
+  institution: unl
+  area: topology
 ---
 
 ::: remark
-The problem statements were transcribed directly from the two rendered source pages; no OCR or `pdftotext` output was used. Both pages are headed “January 17, 2009”; the second-page header also says “Page 2 of ??”.
-:::
+F08phdtop.pdf.
 
+Both pages are headed January 17, 2009.
+:::

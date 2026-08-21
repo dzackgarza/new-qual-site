@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D6-W1
 kind: problem
-title: 'Products of bounded Riemann-integrable functions'
+title: Products of bounded Riemann-integrable functions
 classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - integrals
+  - Riemann Integrability
+  - Integrals
 relations: []
 review: draft
 solved: true

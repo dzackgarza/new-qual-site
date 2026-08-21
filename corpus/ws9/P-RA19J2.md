@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA19J2
 kind: problem
-title: 'UNL analysis qualifying exam, January 2019, problem 2'
+title: UNL analysis qualifying exam, January 2019, problem 2
 classification:
   areas:
   - real-analysis
   topics:
-  - function-spaces
-  - compactness
-  - closure
+  - Function Spaces
+  - Compactness
+  - Closure
 relations: []
 review: draft
 solved: true

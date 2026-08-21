@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - sylow-theory
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

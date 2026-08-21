@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D5-10
 kind: problem
-title: 'A differential inequality with zero initial value'
+title: A differential inequality with zero initial value
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - mean-value-theorem
+  - Differentiation
+  - Mean Value Theorem
 relations: []
 review: draft
 solved: true

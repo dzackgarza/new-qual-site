@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - integrals
+  - Density
+  - Integrals
 relations:
 - kind: solves
   target: P-CH37V

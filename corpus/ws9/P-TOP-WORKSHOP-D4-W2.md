@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D4-W2
 kind: problem
-title: 'A continuous bijective open (or closed) map is a homeomorphism (workshop warm-up)'
+title: A continuous bijective open (or closed) map is a homeomorphism (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - continuity
+  - Homeomorphisms
+  - Continuity
 relations: []
 review: draft
 solved: false

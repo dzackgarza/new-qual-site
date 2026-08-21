@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA18M5
 kind: problem
-title: 'UNL analysis qualifying exam, May 2018, problem 5'
+title: UNL analysis qualifying exam, May 2018, problem 5
 classification:
   areas:
   - real-analysis
   topics:
-  - equicontinuity
-  - uniform-convergence
-  - compactness
+  - Equicontinuity
+  - Uniform Convergence
+  - Compactness
 relations: []
 review: draft
 solved: true

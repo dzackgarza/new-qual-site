@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-19
 kind: problem
-title: 'Euler characteristic of the n-sphere from a standard triangulation'
+title: Euler characteristic of the n-sphere from a standard triangulation
 classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - cell-complexes
+  - Euler Characteristic
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

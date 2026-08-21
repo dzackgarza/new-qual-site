@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - semidirect-products
-  - automorphisms
+  - Semidirect Products
+  - Automorphisms
 relations: []
 review: draft
 solved: false

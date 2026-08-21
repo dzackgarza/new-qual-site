@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - density
-  - closure
-  - point-set
+  - Density
+  - Closure
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

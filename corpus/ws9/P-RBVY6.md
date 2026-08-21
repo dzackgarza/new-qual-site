@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - residues
-  - contour-integration
+  - Fourier Analysis
+  - Residues
+  - Contour Integration
 relations: []
 review: draft
 solved: true

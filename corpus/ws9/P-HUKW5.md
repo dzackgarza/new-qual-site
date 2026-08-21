@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-HUKW5
 kind: problem
-title: The Jacobian matrix of a map $\mathbb{R}^n\to\mathbb{R}^m$, and the Jacobian of $(r\cos\theta,r\sin\theta)$ at the origin
+title: The Jacobian matrix of a map $\mathbb{R}^n\to\mathbb{R}^m$, and the Jacobian
+  of $(r\cos\theta,r\sin\theta)$ at the origin
 classification:
   areas:
   - prelim
   topics:
-  - multivariable-calculus
-  - differentiation
+  - Multivariable Calculus
+  - Differentiation
 relations: []
 review: draft
 solved: false

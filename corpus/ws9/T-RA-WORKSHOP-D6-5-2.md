@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - integrals
+  - Integrals
 relations: []
 review: draft
 ---

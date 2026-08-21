@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-10
 kind: problem
-title: 'A continuous real function cannot take every value exactly twice'
+title: A continuous real function cannot take every value exactly twice
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - counterexamples
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true

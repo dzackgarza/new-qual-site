@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - differentiation
-  - continuity
+  - Integrals
+  - Differentiation
+  - Continuity
 relations: []
 review: draft
 ---

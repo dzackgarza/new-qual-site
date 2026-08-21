@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - norms
-  - compactness
+  - Functional Analysis
+  - Norms
+  - Compactness
 relations: []
 review: draft
 solved: true

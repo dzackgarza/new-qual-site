@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D8-SEQ1
 kind: problem
-title: 'Radii of convergence for sums and coefficientwise products of power series'
+title: Radii of convergence for sums and coefficientwise products of power series
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
+  - Series of Functions
 relations: []
 review: draft
 solved: true

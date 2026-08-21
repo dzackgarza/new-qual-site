@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - functional-analysis
-  - weak-convergence
+  - Dual Spaces
+  - Functional Analysis
+  - Weak Convergence
 relations:
 - kind: solves
   target: P-8XT77

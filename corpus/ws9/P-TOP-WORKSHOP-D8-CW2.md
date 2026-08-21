@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-CW2
 kind: problem
-title: 'A wedge of two spheres as a covering space (warm-up)'
+title: A wedge of two spheres as a covering space (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - counterexamples
+  - Covering Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: false

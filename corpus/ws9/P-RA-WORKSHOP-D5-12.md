@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D5-12
 kind: problem
-title: 'A two-sided sequence quotient converges to the derivative'
+title: A two-sided sequence quotient converges to the derivative
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - sequences-of-numbers
-  - limits
+  - Differentiation
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 solved: true

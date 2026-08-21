@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - l1
-  - l-infty
+  - Weak Convergence
+  - L¹
+  - L∞
 relations:
 - kind: solves
   target: P-AE7QC

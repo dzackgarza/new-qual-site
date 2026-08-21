@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - continuity
+  - Continuity
 relations: []
 review: draft
 ---

@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - induction
-  - series-of-numbers
+  - Induction
+  - Series of Numbers
 relations: []
 review: draft
 solved: false

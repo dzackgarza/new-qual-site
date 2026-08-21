@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - hilbert-spaces
-  - functional-analysis
+  - Weak Convergence
+  - Hilbert Spaces
+  - Functional Analysis
 relations:
 - kind: solves
   target: P-7Q5AM

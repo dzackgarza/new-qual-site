@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D5-W2
 kind: problem
-title: 'A quadratic difference bound forces constancy'
+title: A quadratic difference bound forces constancy
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - mean-value-theorem
+  - Differentiation
+  - Mean Value Theorem
 relations: []
 review: draft
 solved: true

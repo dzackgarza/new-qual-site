@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - automorphisms
-  - cyclic-groups
+  - Automorphisms
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

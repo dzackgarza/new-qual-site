@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-08
 kind: problem
-title: 'Continuity of a coordinatewise map between products'
+title: Continuity of a coordinatewise map between products
 classification:
   areas:
   - topology
   topics:
-  - product-topology
-  - continuity
+  - Product Topology
+  - Continuity
 relations: []
 review: draft
 solved: false

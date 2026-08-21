@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-5XCMC
 kind: problem
-title: $\forall x(P\Rightarrow Q)$ implies $(\forall x\,P)\Rightarrow(\forall x\,Q)$, but not conversely
+title: $\forall x(P\Rightarrow Q)$ implies $(\forall x\,P)\Rightarrow(\forall x\,Q)$,
+  but not conversely
 classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
+  - Logic and Quantifiers
 relations: []
 review: draft
 solved: false

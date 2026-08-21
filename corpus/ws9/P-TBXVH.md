@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-TBXVH
 kind: problem
-title: The $\varepsilon$-$\delta$ definition of $\lim_{x\to a}f(x)=\ell$, and $\lim_{x\to 2}\frac{2x+1}{x^2+1}$
+title: The $\varepsilon$-$\delta$ definition of $\lim_{x\to a}f(x)=\ell$, and $\lim_{x\to
+  2}\frac{2x+1}{x^2+1}$
 classification:
   areas:
   - prelim
   topics:
-  - limits
-  - continuity
+  - Limits
+  - Continuity
 relations: []
 review: draft
 solved: false

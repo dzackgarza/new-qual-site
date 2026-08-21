@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-T7IKN
 kind: problem
-title: Removable singularity at $0$ under logarithmic growth, constancy when zero-free with $|f|=1$ on the unit circle, and whether $f=\alpha z^n$
+title: Removable singularity at $0$ under logarithmic growth, constancy when zero-free
+  with $|f|=1$ on the unit circle, and whether $f=\alpha z^n$
 classification:
   areas:
   - real-analysis
   topics:
-  - singularities
-  - holomorphic-functions
+  - Singularities
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

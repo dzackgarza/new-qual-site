@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-YBT6I
 kind: problem
-title: Convolution of two $L^2$ functions is bounded and continuous, and convolution by an $L^1$ function is a bounded operator on $L^1$
+title: Convolution of two $L^2$ functions is bounded and continuous, and convolution
+  by an $L^1$ function is a bounded operator on $L^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - l2
-  - l1
+  - Convolution
+  - L²
+  - L¹
 relations: []
 review: draft
 solved: true

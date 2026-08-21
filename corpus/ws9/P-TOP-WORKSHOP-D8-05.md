@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-05
 kind: problem
-title: 'A pathwise continuity criterion for a lift into a cover'
+title: A pathwise continuity criterion for a lift into a cover
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - continuity
+  - Covering Spaces
+  - Continuity
 relations: []
 review: draft
 solved: false

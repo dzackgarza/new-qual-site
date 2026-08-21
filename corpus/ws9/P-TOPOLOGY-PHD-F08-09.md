@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-09
 kind: problem
-title: 'Connectedness of the real line'
+title: Connectedness of the real line
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - euclidean-spaces
+  - Connectedness
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: false

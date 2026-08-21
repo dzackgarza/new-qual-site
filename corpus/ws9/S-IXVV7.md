@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - geometry
-  - commutative-algebra
-  - maximal-ideals
+  - Geometry
+  - Commutative Algebra
+  - Maximal Ideals
 relations:
 - kind: solves
   target: P-DLFQC

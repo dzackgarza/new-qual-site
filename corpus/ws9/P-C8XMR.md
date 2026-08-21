@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-C8XMR
 kind: problem
-title: Elements of a Galois extension of degree $2^n$ are constructible; a root of an irreducible quartic with splitting-field degree $24$ is not
+title: Elements of a Galois extension of degree $2^n$ are constructible; a root of
+  an irreducible quartic with splitting-field degree $24$ is not
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 solved: false

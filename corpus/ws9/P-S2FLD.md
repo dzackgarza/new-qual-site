@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-S2FLD
 kind: problem
-title: "Whether $\\mathbb{Q}(\\sqrt[3]{2})$ and $\\mathbb{Q}(\\sqrt{2}+\\sqrt{5})$ are splitting fields over $\\mathbb{Q}$"
+title: Whether $\mathbb{Q}(\sqrt[3]{2})$ and $\mathbb{Q}(\sqrt{2}+\sqrt{5})$ are splitting
+  fields over $\mathbb{Q}$
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - field-extensions
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

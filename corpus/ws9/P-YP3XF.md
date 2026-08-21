@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-YP3XF
 kind: problem
-title: No nonzero compactly supported smooth function has compactly supported Fourier transform
+title: No nonzero compactly supported smooth function has compactly supported Fourier
+  transform
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - counterexamples
+  - Fourier Analysis
+  - Counterexamples
 relations: []
 review: draft
 solved: true

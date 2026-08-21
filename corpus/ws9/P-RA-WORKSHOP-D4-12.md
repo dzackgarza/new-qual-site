@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-12
 kind: problem
-title: 'A sequential liminf condition implies continuity at a point'
+title: A sequential liminf condition implies continuity at a point
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - limits
+  - Continuity
+  - Limits
 relations: []
 review: draft
 solved: true

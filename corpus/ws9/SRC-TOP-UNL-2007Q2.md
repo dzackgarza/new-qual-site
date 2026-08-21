@@ -9,9 +9,10 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: UNL Mathematics Qualifying Exam 871/872, June 2007.
+provenance:
+- assets/attachments/2007Q2_Topology_Qual.pdf
+source:
+  source_kind: university-exam
   problems:
   - P-T07A1
   - P-T07A2
@@ -24,8 +25,12 @@ payload:
   date:
     kind: year
     year: 2007
+  institution: unl
+  area: topology
 ---
 
 ::: remark
+UNL Mathematics Qualifying Exam 871/872, June 2007.
+
 UNL Math 871/872 qualifying exam, June 2007. The paper is `assets/attachments/2007Q2_Topology_Qual.pdf`. Eight questions (A1–A4, B1–B4); the list is paper order. No holes.
 :::

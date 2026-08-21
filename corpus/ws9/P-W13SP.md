@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-W13SP
 kind: problem
-title: "A subgroup of index equal to the smallest prime dividing $|G|$ is normal"
+title: A subgroup of index equal to the smallest prime dividing $|G|$ is normal
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - group-actions
-  - cosets-and-lagrange
+  - Normal Subgroups
+  - Group Actions
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: false

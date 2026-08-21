@@ -2,14 +2,16 @@
 schema: qual/card@1
 id: P-B2P3P
 kind: problem
-title: Jordan and rational forms for characteristic polynomial $(x-1)^3(x-2)^2$ and minimal polynomial $(x-1)^2(x-2)$, and nilpotents on a $5$-dimensional space with a unique $2$-dimensional invariant subspace
+title: Jordan and rational forms for characteristic polynomial $(x-1)^3(x-2)^2$ and
+  minimal polynomial $(x-1)^2(x-2)$, and nilpotents on a $5$-dimensional space with
+  a unique $2$-dimensional invariant subspace
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - rational-canonical-form
-  - nilpotence
+  - Jordan Canonical Form
+  - Rational Canonical Form
+  - Nilpotence
 relations: []
 review: draft
 solved: true

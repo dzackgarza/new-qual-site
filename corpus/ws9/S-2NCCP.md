@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - integrals
-  - fubini-tonelli
+  - Measure Theory
+  - Integrals
+  - Fubini-Tonelli
 relations:
 - kind: solves
   target: P-QZE53

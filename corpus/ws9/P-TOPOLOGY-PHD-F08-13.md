@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-13
 kind: problem
-title: 'Collapse the boundary of a Möbius band'
+title: Collapse the boundary of a Möbius band
 classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - quotient-spaces
-  - classification
+  - Surfaces
+  - Quotient Spaces
+  - Classification
 relations: []
 review: draft
 solved: false

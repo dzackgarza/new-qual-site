@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-12
 kind: problem
-title: 'Infinite sets and limit points in compact spaces'
+title: Infinite sets and limit points in compact spaces
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - limits
+  - Compactness
+  - Limits
 relations: []
 review: draft
 solved: false

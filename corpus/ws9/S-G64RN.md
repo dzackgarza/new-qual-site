@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - riesz-representation
-  - series-of-functions
+  - Hilbert Spaces
+  - Riesz Representation
+  - Series of Functions
 relations:
 - kind: solves
   target: P-J64FR

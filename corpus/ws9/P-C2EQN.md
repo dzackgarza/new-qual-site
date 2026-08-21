@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-C2EQN
 kind: problem
-title: "The class equation, and a nontrivial normal subgroup of a $p$-group meets the center"
+title: The class equation, and a nontrivial normal subgroup of a $p$-group meets the
+  center
 classification:
   areas:
   - algebra
   topics:
-  - class-equation
-  - p-groups
-  - normal-subgroups
+  - Class Equation
+  - p-Groups
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

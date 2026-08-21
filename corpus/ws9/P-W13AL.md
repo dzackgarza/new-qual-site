@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-W13AL
 kind: problem
-title: "Algebraic elements form a subfield, and the minimal polynomial of $2\\sqrt{2}-\\sqrt{3}$"
+title: Algebraic elements form a subfield, and the minimal polynomial of $2\sqrt{2}-\sqrt{3}$
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - polynomials
+  - Field Extensions
+  - Polynomials
 relations: []
 review: draft
 solved: false

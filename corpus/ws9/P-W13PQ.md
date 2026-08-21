@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-W13PQ
 kind: problem
-title: "Sylow's theorem, and groups of order $pq$ are cyclic when $p \\nmid q-1$"
+title: Sylow's theorem, and groups of order $pq$ are cyclic when $p \nmid q-1$
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - cyclic-groups
+  - Sylow Theory
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

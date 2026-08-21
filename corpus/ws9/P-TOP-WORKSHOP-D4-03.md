@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D4-03
 kind: problem
-title: 'The compact-complement topology is coarser than a Hausdorff topology'
+title: The compact-complement topology is coarser than a Hausdorff topology
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - point-set
+  - Compactness
+  - Hausdorff Spaces
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

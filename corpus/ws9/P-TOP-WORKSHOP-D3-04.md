@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-04
 kind: problem
-title: 'A separable metric space is second countable'
+title: A separable metric space is second countable
 classification:
   areas:
   - topology
   topics:
-  - countability
-  - density
-  - metric-spaces
+  - Countability
+  - Density
+  - Metric Spaces
 relations: []
 review: draft
 solved: false

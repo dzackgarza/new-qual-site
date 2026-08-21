@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - convergence-of-integrals
-  - integrals
+  - Uniform Convergence
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 ---

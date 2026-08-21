@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MIAAZ
 kind: problem
-title: A continuous convex function on the unit ball of a reflexive Banach space attains its minimum
+title: A continuous convex function on the unit ball of a reflexive Banach space attains
+  its minimum
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
+  - Functional Analysis
 relations: []
 review: draft
 solved: true

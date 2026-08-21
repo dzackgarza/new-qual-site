@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-Y5JK4
 kind: problem
-title: Every Euclidean domain is a principal ideal domain, and $\mathbb{Z}[i]/(\alpha)$ has representatives of norm less than $N(\alpha)$ and is finite
+title: Every Euclidean domain is a principal ideal domain, and $\mathbb{Z}[i]/(\alpha)$
+  has representatives of norm less than $N(\alpha)$ and is finite
 classification:
   areas:
   - prelim
   topics:
-  - euclidean-domains
-  - principal-ideal-domains
+  - Euclidean Domains
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: true

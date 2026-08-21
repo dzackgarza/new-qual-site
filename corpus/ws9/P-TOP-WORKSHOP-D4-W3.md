@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D4-W3
 kind: problem
-title: 'Spaces in which open sets are compact (workshop warm-up)'
+title: Spaces in which open sets are compact (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - counterexamples
-  - point-set
+  - Compactness
+  - Counterexamples
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

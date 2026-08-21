@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - integral-extensions
-  - algebras
+  - Group Actions
+  - Integral Extensions
+  - Algebras
 relations: []
 review: draft
 solved: true

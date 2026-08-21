@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-K5L2R
 kind: problem
-title: 'Splitting field of $x^3-5$ over $\QQ$: degree, Galois group, subfields, and which are Galois over $\QQ$'
+title: 'Splitting field of $x^3-5$ over $\QQ$: degree, Galois group, subfields, and
+  which are Galois over $\QQ$'
 classification:
   areas:
   - prelim
   topics:
-  - splitting-fields
-  - galois-theory
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

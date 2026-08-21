@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-NGXAE
 kind: problem
-title: 'Splitting field of $x^4-6$ over $\QQ$: degree, Galois group, and the number of subfields of each degree, Galois or not'
+title: 'Splitting field of $x^4-6$ over $\QQ$: degree, Galois group, and the number
+  of subfields of each degree, Galois or not'
 classification:
   areas:
   - prelim
   topics:
-  - splitting-fields
-  - galois-theory
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-ZYPI3
 kind: problem
-title: Finitely generated modules over a PID, groups of order $72$, and rational canonical form
+title: Finitely generated modules over a PID, groups of order $72$, and rational canonical
+  form
 classification:
   areas:
   - prelim
   topics:
-  - structure-theorem
-  - modules
+  - Structure Theorem
+  - Modules
 relations: []
 review: draft
 solved: false

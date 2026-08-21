@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G04
 kind: problem
-title: 'A torus with a disk attached along one circle factor'
+title: A torus with a disk attached along one circle factor
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - cell-complexes
+  - Fundamental Group
+  - van Kampen
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

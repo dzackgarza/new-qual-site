@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - nilpotence
-  - jordan-canonical-form
-  - matrices
+  - Nilpotence
+  - Jordan Canonical Form
+  - Matrices
 relations: []
 review: draft
 solved: true

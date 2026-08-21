@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-GB7EM
 kind: problem
-title: Differentiability in $\mathbb{R}^n$, and $xy/(x^2+y^2)$ is not differentiable at the origin
+title: Differentiability in $\mathbb{R}^n$, and $xy/(x^2+y^2)$ is not differentiable
+  at the origin
 classification:
   areas:
   - prelim
   topics:
-  - multivariable-calculus
-  - differentiation
-  - continuity
+  - Multivariable Calculus
+  - Differentiation
+  - Continuity
 relations: []
 review: draft
 solved: false

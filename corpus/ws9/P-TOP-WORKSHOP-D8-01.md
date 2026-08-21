@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-01
 kind: problem
-title: 'Uniqueness of lifts into a covering space'
+title: Uniqueness of lifts into a covering space
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
+  - Covering Spaces
 relations: []
 review: draft
 solved: false

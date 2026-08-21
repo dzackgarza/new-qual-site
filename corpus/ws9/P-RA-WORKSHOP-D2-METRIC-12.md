@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-12
 kind: problem
-title: 'Prove the finite-or-countable interval decomposition of open subsets of R'
+title: Prove the finite-or-countable interval decomposition of open subsets of R
 classification:
   areas:
   - real-analysis
   topics:
-  - euclidean-spaces
-  - measure-theory
+  - Euclidean Spaces
+  - Measure Theory
 relations: []
 review: draft
 solved: true

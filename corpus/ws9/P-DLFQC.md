@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - geometry
-  - commutative-algebra
-  - maximal-ideals
+  - Geometry
+  - Commutative Algebra
+  - Maximal Ideals
 relations: []
 review: draft
 solved: true

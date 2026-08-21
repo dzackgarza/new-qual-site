@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - compactness
-  - continuity
+  - Uniform Continuity
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 ---

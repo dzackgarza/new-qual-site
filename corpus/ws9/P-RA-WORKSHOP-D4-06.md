@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-06
 kind: problem
-title: 'Uniform continuity of the logarithm on $(0,1]$'
+title: Uniform continuity of the logarithm on $(0,1]$
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - counterexamples
+  - Uniform Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true

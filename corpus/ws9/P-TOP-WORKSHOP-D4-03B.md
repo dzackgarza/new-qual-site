@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D4-03B
 kind: problem
-title: 'Projection from a product with a compact factor is closed'
+title: Projection from a product with a compact factor is closed
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - product-topology
-  - continuity
+  - Compactness
+  - Product Topology
+  - Continuity
 relations: []
 review: draft
 solved: false

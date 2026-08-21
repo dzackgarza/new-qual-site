@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-W3
 kind: problem
-title: 'The finite-complement topology and the identity map (workshop warm-up)'
+title: The finite-complement topology and the identity map (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - continuity
-  - point-set
+  - Separation Axioms
+  - Continuity
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

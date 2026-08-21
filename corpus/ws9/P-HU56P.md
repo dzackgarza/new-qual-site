@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-HU56P
 kind: problem
-title: 'Frattini''s argument: $G=KN_G(P)$ for a Sylow $p$-subgroup $P$ of a normal subgroup $K$'
+title: 'Frattini''s argument: $G=KN_G(P)$ for a Sylow $p$-subgroup $P$ of a normal
+  subgroup $K$'
 classification:
   areas:
   - prelim
   topics:
-  - sylow-theory
-  - normal-subgroups
+  - Sylow Theory
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

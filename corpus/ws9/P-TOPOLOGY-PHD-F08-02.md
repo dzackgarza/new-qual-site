@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-02
 kind: problem
-title: 'Complete subspaces of complete metric spaces'
+title: Complete subspaces of complete metric spaces
 classification:
   areas:
   - topology
   topics:
-  - completeness
-  - metric-spaces
-  - subspace-topology
+  - Completeness
+  - Metric Spaces
+  - Subspace Topology
 relations: []
 review: draft
 solved: false

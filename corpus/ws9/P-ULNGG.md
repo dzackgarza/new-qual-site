@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-ULNGG
 kind: problem
-title: Almost every point of a finite-measure set lies in only finitely many of the sets $E_q=\bigcup_{0\le p\le q}\{x:|x-p/q|\le 1/q^3\}$
+title: Almost every point of a finite-measure set lies in only finitely many of the
+  sets $E_q=\bigcup_{0\le p\le q}\{x:|x-p/q|\le 1/q^3\}$
 classification:
   areas:
   - real-analysis
   topics:
-  - borel-cantelli
-  - measure-theory
+  - Borel-Cantelli
+  - Measure Theory
 relations: []
 review: draft
 solved: true

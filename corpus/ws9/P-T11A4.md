@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - separation-axioms
+  - Compactness
+  - Hausdorff Spaces
+  - Separation Axioms
 relations: []
 review: draft
 solved: false

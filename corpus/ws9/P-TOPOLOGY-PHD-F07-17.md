@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-17
 kind: problem
-title: 'Homology of the hollow sphere S^2'
+title: Homology of the hollow sphere S^2
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - cell-complexes
+  - Homology
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

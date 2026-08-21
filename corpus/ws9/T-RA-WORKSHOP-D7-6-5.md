@@ -7,10 +7,10 @@ classification:
   areas:
   - real-analysis
   topics:
-  - arzela-ascoli
-  - compactness
-  - function-spaces
-  - equicontinuity
+  - Arzelà-Ascoli
+  - Compactness
+  - Function Spaces
+  - Equicontinuity
 relations: []
 review: draft
 ---

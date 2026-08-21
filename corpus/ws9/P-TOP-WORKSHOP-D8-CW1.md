@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-CW1
 kind: problem
-title: 'The real line as the universal cover of the circle (warm-up)'
+title: The real line as the universal cover of the circle (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
+  - Covering Spaces
 relations: []
 review: draft
 solved: false

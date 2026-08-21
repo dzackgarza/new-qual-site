@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-14
 kind: problem
-title: 'Uniform convergence along a convergent sequence of points'
+title: Uniform convergence along a convergent sequence of points
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - continuity
-  - sequences-of-functions
+  - Uniform Convergence
+  - Continuity
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true

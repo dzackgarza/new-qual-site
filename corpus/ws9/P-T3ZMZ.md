@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-T3ZMZ
 kind: problem
-title: "$A/mA \\cong A \\otimes_{\\mathbb{Z}} (\\mathbb{Z}/m\\mathbb{Z})$"
+title: $A/mA \cong A \otimes_{\mathbb{Z}} (\mathbb{Z}/m\mathbb{Z})$
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - tensor-products
+  - Modules
+  - Tensor Products
 relations: []
 review: draft
 solved: false

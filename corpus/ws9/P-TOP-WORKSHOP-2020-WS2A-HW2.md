@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2A-HW2
 kind: problem
-title: 'Separate consecutive separation axioms by examples (warm-up)'
+title: Separate consecutive separation axioms by examples (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - counterexamples
+  - Separation Axioms
+  - Counterexamples
 relations: []
 review: draft
 solved: false

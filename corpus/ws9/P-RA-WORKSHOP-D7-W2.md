@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-W2
 kind: problem
-title: 'Pointwise and uniform equicontinuity on a compact set'
+title: Pointwise and uniform equicontinuity on a compact set
 classification:
   areas:
   - real-analysis
   topics:
-  - equicontinuity
-  - compactness
-  - uniform-continuity
+  - Equicontinuity
+  - Compactness
+  - Uniform Continuity
 relations: []
 review: draft
 solved: true

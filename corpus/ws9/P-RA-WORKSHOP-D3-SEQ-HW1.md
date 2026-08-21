@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-HW1
 kind: problem
-title: 'Uniqueness of the limit of a real sequence (warm-up)'
+title: Uniqueness of the limit of a real sequence (warm-up)
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 solved: true

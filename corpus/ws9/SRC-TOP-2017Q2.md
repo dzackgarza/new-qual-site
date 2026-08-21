@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: SRC-TOP-2017Q2
 kind: collection
-title: 'Math 871-872 Qualifying Exam, May 2017'
+title: Math 871-872 Qualifying Exam, May 2017
 classification:
   areas:
   - topology
   topics: []
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: Math 871-872 Qualifying Exam, May 2017.
+provenance:
+- assets/attachments/2017Q2_Topology_Qual.pdf
+source:
+  source_kind: university-exam
   problems:
   - P-T17Q2-1
   - P-T17Q2-2
@@ -22,11 +23,15 @@ payload:
   - P-T17Q2-7
   - P-T17Q2-8
   date:
-    kind: year
+    kind: academic-term
+    term: summer
     year: 2017
+  institution: unl
+  area: topology
 ---
 
 ::: remark
+Math 871-872 Qualifying Exam, May 2017.
+
 UNL Math 871–872 qualifying exam, May 2017. The paper is `assets/attachments/2017Q2_Topology_Qual.pdf`. Eight questions (A1–A4, B5–B8); the list is paper order. A3 is the same compact-to-Hausdorff surjection-is-quotient statement as June 2006 Q1, so the card is `P-T06Q2-1`. No holes.
 :::
-

@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
+  - Differentiation
 relations: []
 review: draft
 ---

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - integral-domains
-  - characteristic
+  - Integral Domains
+  - Characteristic
 relations: []
 review: draft
 solved: false

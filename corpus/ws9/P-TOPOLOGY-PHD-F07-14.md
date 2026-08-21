@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-14
 kind: problem
-title: 'Path homotopy and simple connectedness'
+title: Path homotopy and simple connectedness
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 solved: false

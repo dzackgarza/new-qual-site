@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - metric-spaces
+  - Separation Axioms
+  - Metric Spaces
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-CJUIR
 kind: problem
-title: The line integral $\int_{\partial R} x\,dy+y\,dx$ on the upper region between $x^2+y^2=4$ and $(x-1)^2+y^2=1$
+title: The line integral $\int_{\partial R} x\,dy+y\,dx$ on the upper region between
+  $x^2+y^2=4$ and $(x-1)^2+y^2=1$
 classification:
   areas:
   - prelim
   topics:
-  - line-integrals
-  - green-s-theorem
+  - Line Integrals
+  - Green's Theorem
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,16 @@
 schema: qual/card@1
 id: P-TNZTM
 kind: problem
-title: Whether $R[x]$ a PID implies $R$ is a field, conjugacy of cyclic subgroups of order $15$ in $S_8$, whether torsion-free $\mathbb{Z}$-modules are free, and whether degree-two extensions are Galois
+title: Whether $R[x]$ a PID implies $R$ is a field, conjugacy of cyclic subgroups
+  of order $15$ in $S_8$, whether torsion-free $\mathbb{Z}$-modules are free, and
+  whether degree-two extensions are Galois
 classification:
   areas:
   - prelim
   topics:
-  - counterexamples
-  - modules
-  - principal-ideal-domains
+  - Counterexamples
+  - Modules
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS4A-HW4
 kind: problem
-title: 'Mayer–Vietoris homology sequence for an open cover'
+title: Mayer–Vietoris homology sequence for an open cover
 classification:
   areas:
   - topology
   topics:
-  - mayer-vietoris
-  - homology
+  - Mayer-Vietoris
+  - Homology
 relations: []
 review: draft
 solved: false

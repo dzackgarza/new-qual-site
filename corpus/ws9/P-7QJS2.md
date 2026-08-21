@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-7QJS2
 kind: problem
-title: Normal families of holomorphic functions, and derivatives of a normal family on the disk
+title: Normal families of holomorphic functions, and derivatives of a normal family
+  on the disk
 classification:
   areas:
   - real-analysis
   topics:
-  - normal-families
-  - holomorphic-functions
+  - Normal Families
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

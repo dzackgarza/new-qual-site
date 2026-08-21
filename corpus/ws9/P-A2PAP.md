@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-A2PAP
 kind: problem
-title: "$A/A[p]$ versus $A^p$, and $A/A^p \\cong A[p]$ when $A$ is finite"
+title: $A/A[p]$ versus $A^p$, and $A/A^p \cong A[p]$ when $A$ is finite
 classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - groups
+  - Abelian Groups
+  - Groups
 relations: []
 review: draft
 solved: false

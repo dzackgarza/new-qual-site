@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - groups
-  - counterexamples
+  - Groups
+  - Counterexamples
 relations: []
 review: draft
 solved: false

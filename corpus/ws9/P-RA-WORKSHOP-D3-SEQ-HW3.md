@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-HW3
 kind: problem
-title: 'Conditional convergence with divergent square series prevents absolute convergence (warm-up)'
+title: Conditional convergence with divergent square series prevents absolute convergence
+  (warm-up)
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
+  - Series of Numbers
 relations: []
 review: draft
 solved: true

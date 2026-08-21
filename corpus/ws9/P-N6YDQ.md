@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-N6YDQ
 kind: problem
-title: "Splitting field of $x^5-3$ over $\\mathbb{Q}$: cyclotomic subfield, Galois group over $\\mathbb{Q}(\\zeta_5)$, and degree"
+title: 'Splitting field of $x^5-3$ over $\mathbb{Q}$: cyclotomic subfield, Galois
+  group over $\mathbb{Q}(\zeta_5)$, and degree'
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - galois-theory
-  - roots-of-unity
+  - Splitting Fields
+  - Galois Theory
+  - Roots of Unity
 relations: []
 review: draft
 solved: false

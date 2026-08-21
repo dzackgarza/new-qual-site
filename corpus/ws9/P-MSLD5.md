@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
+  - Logic and Quantifiers
 relations: []
 review: draft
 solved: false

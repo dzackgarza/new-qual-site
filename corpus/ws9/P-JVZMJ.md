@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JVZMJ
 kind: problem
-title: Smooth negations of a quantified inequality, the extreme value theorem, and a biconditional
+title: Smooth negations of a quantified inequality, the extreme value theorem, and
+  a biconditional
 classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
+  - Logic and Quantifiers
 relations: []
 review: draft
 solved: false

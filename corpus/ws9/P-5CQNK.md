@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - absolute-continuity
-  - differentiation
-  - measure-theory
+  - Absolute Continuity
+  - Differentiation
+  - Measure Theory
 relations: []
 review: draft
 solved: true

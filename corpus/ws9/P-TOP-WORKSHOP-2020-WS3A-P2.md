@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3A-P2
 kind: problem
-title: 'A homotopy of the identity forces the represented element to be central'
+title: A homotopy of the identity forces the represented element to be central
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 solved: false

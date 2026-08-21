@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - norms
-  - compactness
+  - Functional Analysis
+  - Norms
+  - Compactness
 relations:
 - kind: solves
   target: P-YSR66

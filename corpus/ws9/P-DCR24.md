@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-DCR24
 kind: problem
-title: Sylow subgroups of $A_5$, their normalizers, and subgroups of orders $6$, $10$, and $15$
+title: Sylow subgroups of $A_5$, their normalizers, and subgroups of orders $6$, $10$,
+  and $15$
 classification:
   areas:
   - prelim
   topics:
-  - sylow-theory
-  - centralizers-and-normalizers
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

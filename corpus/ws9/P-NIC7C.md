@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-NIC7C
 kind: problem
-title: Every functional on $X$ factors through an injective closed-range operator $T:X\to Y$
+title: Every functional on $X$ factors through an injective closed-range operator
+  $T:X\to Y$
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - functional-analysis
-  - norms
+  - Dual Spaces
+  - Functional Analysis
+  - Norms
 relations: []
 review: draft
 solved: true

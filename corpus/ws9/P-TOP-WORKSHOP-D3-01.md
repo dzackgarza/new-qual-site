@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-01
 kind: problem
-title: 'A Hausdorff quotient without a countable basis'
+title: A Hausdorff quotient without a countable basis
 classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - hausdorff-spaces
-  - countability
+  - Quotient Spaces
+  - Hausdorff Spaces
+  - Countability
 relations: []
 review: draft
 solved: false

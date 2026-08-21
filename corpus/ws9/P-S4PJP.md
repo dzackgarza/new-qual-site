@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-S4PJP
 kind: problem
-title: Convolution $L^p\to L^q$ bounds for compactly supported continuous $\phi$, and failure for $p>q$
+title: Convolution $L^p\to L^q$ bounds for compactly supported continuous $\phi$,
+  and failure for $p>q$
 classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - lp-spaces
-  - norms
+  - Convolution
+  - Lp Spaces
+  - Norms
 relations: []
 review: draft
 solved: true

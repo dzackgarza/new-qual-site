@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D3-SEQ-HW2
 kind: problem
-title: 'A limit point is the limit of a sequence from the set (warm-up)'
+title: A limit point is the limit of a sequence from the set (warm-up)
 classification:
   areas:
   - real-analysis
   topics:
-  - metric-spaces
-  - sequences-of-numbers
-  - closure
+  - Metric Spaces
+  - Sequences of Numbers
+  - Closure
 relations: []
 review: draft
 solved: true

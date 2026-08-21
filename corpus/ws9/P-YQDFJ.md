@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - variation
-  - continuity
+  - Variation
+  - Continuity
 relations: []
 review: draft
 solved: true

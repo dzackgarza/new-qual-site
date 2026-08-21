@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-W1
 kind: problem
-title: 'Uniform continuity and a continuous non-uniformly-continuous example'
+title: Uniform continuity and a continuous non-uniformly-continuous example
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - counterexamples
+  - Uniform Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true

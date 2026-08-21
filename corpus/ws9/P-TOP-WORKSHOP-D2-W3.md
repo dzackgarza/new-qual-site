@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D2-W3
 kind: problem
-title: 'Image of a path-connected space under a continuous map (verbatim warm-up)'
+title: Image of a path-connected space under a continuous map (verbatim warm-up)
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - continuity
+  - Connectedness
+  - Continuity
 relations: []
 review: draft
 solved: false

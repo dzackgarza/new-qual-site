@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-09
 kind: problem
-title: 'Continuity of a running supremum'
+title: Continuity of a running supremum
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
+  - Continuity
 relations: []
 review: draft
 solved: true

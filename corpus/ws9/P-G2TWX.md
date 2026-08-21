@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-G2TWX
 kind: problem
-title: "A Galois tower that is not Galois, and a finite-dimensional inseparable extension"
+title: A Galois tower that is not Galois, and a finite-dimensional inseparable extension
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - counterexamples
+  - Galois Theory
+  - Field Extensions
+  - Counterexamples
 relations: []
 review: draft
 solved: false

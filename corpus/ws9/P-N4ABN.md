@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-N4ABN
 kind: problem
-title: "If $A$ and $B$ are normal and $G/A$, $G/B$ are abelian then $G/(A \\cap B)$ is abelian"
+title: If $A$ and $B$ are normal and $G/A$, $G/B$ are abelian then $G/(A \cap B)$
+  is abelian
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - abelian-groups
+  - Normal Subgroups
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

@@ -9,9 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: 'wiki/00_Prelims/Problems/Integral Practice.md (frontmatter title "Integral Sheet"). The "Used 2018" and "Used 2019" tags are annotations on that sheet, not exam sittings.'
+provenance: []
+source:
+  source_kind: homework
   problems:
   - P-JHXZS
   - P-OSVPH
@@ -76,8 +76,11 @@ payload:
   - P-E7N6V
   date:
     kind: unknown
+  area: prelim
 ---
 
 ::: remark
-Integral Practice prelim drill sheet. Problems listed in wiki page order from `wiki/00_Prelims/Problems/Integral Practice.md`. The empty year-only cards SRC-UGA-PRELIM-2018 and SRC-UGA-PRELIM-2019 were not sittings; their attached cards were **Used 2018** / **Used 2019** tags on this sheet. Distinct from SRC-PRELIM-ART-A2355I (undated two-problem artifact P-VAWOC, P-HUKW5). Problem cards were not discarded.
+Integral Practice drill sheet; original paper not found.
+
+Tags **Used 2018** / **Used 2019** on this sheet are not exam sittings. Distinct from `SRC-PRELIM-ART-A2355I`.
 :::

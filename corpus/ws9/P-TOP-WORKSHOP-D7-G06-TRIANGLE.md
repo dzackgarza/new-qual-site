@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G06-TRIANGLE
 kind: problem
-title: 'The fundamental group of the triangular parachute'
+title: The fundamental group of the triangular parachute
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - cell-complexes
-  - van-kampen
+  - Fundamental Group
+  - Cell Complexes
+  - van Kampen
 relations: []
 review: draft
 solved: false

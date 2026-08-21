@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - compactness
+  - Continuity
+  - Compactness
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-HW1
 kind: problem
-title: 'State the open-cover definition of compactness (warm-up)'
+title: State the open-cover definition of compactness (warm-up)
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - metric-spaces
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 solved: true

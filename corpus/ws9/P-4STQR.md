@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - vector-spaces
-  - bases
+  - Vector Spaces
+  - Bases
 relations: []
 review: draft
 solved: false

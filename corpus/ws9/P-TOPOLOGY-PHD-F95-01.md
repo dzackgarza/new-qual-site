@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-01
 kind: problem
-title: 'The pasting lemma for two closed subspaces'
+title: The pasting lemma for two closed subspaces
 classification:
   areas:
   - topology
   topics:
-  - continuity
-  - subspace-topology
+  - Continuity
+  - Subspace Topology
 relations: []
 review: draft
 solved: false

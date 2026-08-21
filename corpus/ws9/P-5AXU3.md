@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
-  - homotopy
+  - Covering Spaces
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 solved: false

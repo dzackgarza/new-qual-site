@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-11
 kind: problem
-title: 'A monotone increasing function has at most countably many jump discontinuities'
+title: A monotone increasing function has at most countably many jump discontinuities
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - limits
-  - countability
+  - Continuity
+  - Limits
+  - Countability
 relations: []
 review: draft
 solved: true

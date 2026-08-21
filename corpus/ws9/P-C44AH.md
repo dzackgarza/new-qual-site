@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - holomorphic-functions
-  - l2
-  - completeness
+  - Holomorphic Functions
+  - L²
+  - Completeness
 relations: []
 review: draft
 solved: true

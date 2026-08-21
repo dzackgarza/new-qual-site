@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PQG5I
 kind: problem
-title: Compactness of $\{x\in\ell^2:\sum n|x_n|^2\le 1\}$ and attainment of $\int_0^{2\pi}\bigl|\sum x_n e^{in\theta}\bigr|\frac{d\theta}{2\pi}$ on this set
+title: Compactness of $\{x\in\ell^2:\sum n|x_n|^2\le 1\}$ and attainment of $\int_0^{2\pi}\bigl|\sum
+  x_n e^{in\theta}\bigr|\frac{d\theta}{2\pi}$ on this set
 classification:
   areas:
   - real-analysis
   topics:
-  - l2
-  - compactness
-  - hilbert-spaces
+  - L²
+  - Compactness
+  - Hilbert Spaces
 relations: []
 review: draft
 solved: true

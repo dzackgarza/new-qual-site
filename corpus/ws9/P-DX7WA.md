@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-DX7WA
 kind: problem
-title: Jensen's formula and $\sum |a_n|^{-(\lambda+\epsilon)}<\infty$ for entire $f$ with $|f(z)|\le Ce^{|z|^\lambda}$
+title: Jensen's formula and $\sum |a_n|^{-(\lambda+\epsilon)}<\infty$ for entire $f$
+  with $|f(z)|\le Ce^{|z|^\lambda}$
 classification:
   areas:
   - real-analysis
   topics:
-  - entire-functions
-  - integrals
+  - Entire Functions
+  - Integrals
 relations: []
 review: draft
 solved: true

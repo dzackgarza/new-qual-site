@@ -2,17 +2,17 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-W1
 kind: problem
-title: 'Stone–Weierstrass and a polynomial algebra with high-degree terms'
+title: Stone–Weierstrass and a polynomial algebra with high-degree terms
 classification:
   areas:
   - real-analysis
   topics:
-  - stone-weierstrass
-  - polynomials
-  - function-spaces
+  - Stone-Weierstrass
+  - Polynomials
+  - Function Spaces
 relations:
-  - kind: uses
-    target: T-RA-WORKSHOP-D7-6-7
+- kind: uses
+  target: T-RA-WORKSHOP-D7-6-7
 review: draft
 solved: true
 ---

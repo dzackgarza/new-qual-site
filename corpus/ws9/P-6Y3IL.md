@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-6Y3IL
 kind: problem
-title: Weak $L^2$ convergence with $\sup_x(1+|x|)^d|f_j(x)|\le M$ implies strong $L^2$ convergence, and necessity of the bound
+title: Weak $L^2$ convergence with $\sup_x(1+|x|)^d|f_j(x)|\le M$ implies strong $L^2$
+  convergence, and necessity of the bound
 classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - l2
-  - hilbert-spaces
+  - Weak Convergence
+  - L²
+  - Hilbert Spaces
 relations: []
 review: draft
 solved: true

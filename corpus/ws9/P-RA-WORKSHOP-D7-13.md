@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-13
 kind: problem
-title: 'A trigonometric integral limit'
+title: A trigonometric integral limit
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - integrals
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D2-METRIC-HW5
 kind: problem
-title: 'Classify two sets as open, closed, or compact in their metric spaces (warm-up)'
+title: Classify two sets as open, closed, or compact in their metric spaces (warm-up)
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - function-spaces
-  - metric-spaces
+  - Compactness
+  - Function Spaces
+  - Metric Spaces
 relations: []
 review: draft
 solved: true

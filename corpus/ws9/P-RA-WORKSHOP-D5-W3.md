@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D5-W3
 kind: problem
-title: 'A nonzero derivative gives local injectivity'
+title: A nonzero derivative gives local injectivity
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - continuity
+  - Differentiation
+  - Continuity
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,16 @@
 schema: qual/card@1
 id: P-QZE53
 kind: problem
-title: Local integrability of $F(z)=\int_{\CC}\frac{1}{z-w}\,d\mu(w)$, integrability along almost every horizontal line, and $\mu(S)=\frac{1}{2\pi i}\int_{\partial S}F(z)\,dz$ for almost every axis-parallel square
+title: Local integrability of $F(z)=\int_{\CC}\frac{1}{z-w}\,d\mu(w)$, integrability
+  along almost every horizontal line, and $\mu(S)=\frac{1}{2\pi i}\int_{\partial S}F(z)\,dz$
+  for almost every axis-parallel square
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - integrals
-  - fubini-tonelli
+  - Measure Theory
+  - Integrals
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true

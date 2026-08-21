@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-C1CYC
 kind: problem
-title: "A finite abelian group is cyclic iff it has a unique subgroup of each order dividing $|A|$"
+title: A finite abelian group is cyclic iff it has a unique subgroup of each order
+  dividing $|A|$
 classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - cyclic-groups
+  - Abelian Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-WMJZB
 kind: problem
-title: Strong convergence iff weak convergence and convergence of norms, finite-dimensional equivalence of weak and strong convergence, and the Banach–Saks theorem
+title: Strong convergence iff weak convergence and convergence of norms, finite-dimensional
+  equivalence of weak and strong convergence, and the Banach–Saks theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - hilbert-spaces
-  - counterexamples
+  - Weak Convergence
+  - Hilbert Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: true

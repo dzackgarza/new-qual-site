@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - functional-analysis
-  - norms
+  - Dual Spaces
+  - Functional Analysis
+  - Norms
 relations:
 - kind: solves
   target: P-NIC7C

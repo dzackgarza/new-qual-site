@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - finite-fields
-  - field-extensions
+  - Finite Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

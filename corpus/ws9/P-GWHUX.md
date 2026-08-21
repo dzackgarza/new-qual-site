@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-GWHUX
 kind: problem
-title: Elementary divisors and invariant factors of $\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9$; abelian groups of order $2700$
+title: Elementary divisors and invariant factors of $\mathbf{Z}_{15}\times\mathbf{Z}_{20}\times\mathbf{Z}_9$;
+  abelian groups of order $2700$
 classification:
   areas:
   - prelim
   topics:
-  - abelian-groups
-  - structure-theorem
+  - Abelian Groups
+  - Structure Theorem
 relations: []
 review: draft
 solved: true

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - l2
-  - hilbert-spaces
+  - Weak Convergence
+  - L²
+  - Hilbert Spaces
 relations: []
 review: draft
 solved: true

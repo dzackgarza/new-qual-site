@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - lp-spaces
-  - norms
+  - Convolution
+  - Lp Spaces
+  - Norms
 relations:
 - kind: solves
   target: P-S4PJP

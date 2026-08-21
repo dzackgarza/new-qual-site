@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D6-10
 kind: problem
-title: 'Prove Theorem 5.3'
+title: Prove Theorem 5.3
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - riemann-integrability
+  - Integrals
+  - Riemann Integrability
 relations:
 - kind: uses
   target: T-RA-WORKSHOP-D6-5-3

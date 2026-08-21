@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G02-SVK
 kind: problem
-title: 'Seifert–van Kampen and the spheres'
+title: Seifert–van Kampen and the spheres
 classification:
   areas:
   - topology
   topics:
-  - van-kampen
-  - fundamental-group
+  - van Kampen
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

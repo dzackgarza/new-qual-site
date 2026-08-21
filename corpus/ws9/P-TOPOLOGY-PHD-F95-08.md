@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-08
 kind: problem
-title: 'Fundamental group of two spheres with corresponding poles identified'
+title: Fundamental group of two spheres with corresponding poles identified
 classification:
   areas:
   - topology
   topics:
-  - van-kampen
-  - fundamental-group
-  - quotient-spaces
+  - van Kampen
+  - Fundamental Group
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

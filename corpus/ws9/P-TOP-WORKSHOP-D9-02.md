@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homology
-  - quotient-spaces
+  - Fundamental Group
+  - Homology
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

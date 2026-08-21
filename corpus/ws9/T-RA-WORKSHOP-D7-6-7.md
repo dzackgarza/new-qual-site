@@ -7,10 +7,10 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - function-spaces
-  - polynomials
-  - uniform-convergence
+  - Density
+  - Function Spaces
+  - Polynomials
+  - Uniform Convergence
 relations: []
 review: draft
 ---

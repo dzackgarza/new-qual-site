@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - counterexamples
-  - differentiation
-  - continuity
+  - Counterexamples
+  - Differentiation
+  - Continuity
 relations: []
 review: draft
 solved: false

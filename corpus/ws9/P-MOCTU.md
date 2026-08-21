@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MOCTU
 kind: problem
-title: Free $R$-modules of rank at most $n$ in an $n$-dimensional vector space over a PID
+title: Free $R$-modules of rank at most $n$ in an $n$-dimensional vector space over
+  a PID
 classification:
   areas:
   - prelim
   topics:
-  - modules
-  - free-modules
-  - principal-ideal-domains
+  - Modules
+  - Free Modules
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

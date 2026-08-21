@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-08
 kind: problem
-title: 'The open unit interval is not compact'
+title: The open unit interval is not compact
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - euclidean-spaces
+  - Compactness
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: false

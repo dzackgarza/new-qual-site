@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-SJPBM
 kind: problem
-title: No corner-to-corner conformal homeomorphism from a square onto a $2\times 1$ rectangle
+title: No corner-to-corner conformal homeomorphism from a square onto a $2\times 1$
+  rectangle
 classification:
   areas:
   - real-analysis
   topics:
-  - conformal-maps
-  - counterexamples
+  - Conformal Maps
+  - Counterexamples
 relations: []
 review: draft
 solved: true

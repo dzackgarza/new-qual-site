@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-04
 kind: problem
-title: 'All fibers of a cover over a connected base have the same finite cardinality'
+title: All fibers of a cover over a connected base have the same finite cardinality
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - connectedness
+  - Covering Spaces
+  - Connectedness
 relations: []
 review: draft
 solved: false

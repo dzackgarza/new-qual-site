@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D3-06
 kind: problem
-title: 'Countable dense products in the product topology'
+title: Countable dense products in the product topology
 classification:
   areas:
   - topology
   topics:
-  - countability
-  - density
-  - product-topology
+  - Countability
+  - Density
+  - Product Topology
 relations: []
 review: draft
 solved: false

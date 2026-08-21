@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-RK2VH
 kind: problem
-title: "Sylow theorems; groups of order $105$ have a normal subgroup of order $35$, and both Sylow $5$- and $7$-subgroups are normal"
+title: Sylow theorems; groups of order $105$ have a normal subgroup of order $35$,
+  and both Sylow $5$- and $7$-subgroups are normal
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - groups
+  - Sylow Theory
+  - Normal Subgroups
+  - Groups
 relations: []
 review: draft
 solved: false

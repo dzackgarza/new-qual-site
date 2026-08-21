@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-U2KLF
 kind: problem
-title: "Splitting field of $x^3-7$ over $\\mathbb{Q}$: Galois group, subfields, and which are Galois"
+title: 'Splitting field of $x^3-7$ over $\mathbb{Q}$: Galois group, subfields, and
+  which are Galois'
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - galois-theory
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

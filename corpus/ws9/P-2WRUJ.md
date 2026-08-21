@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - induction
-  - combinatorics
+  - Induction
+  - Combinatorics
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F95-09
 kind: problem
-title: 'Universal cover and fundamental group of a wedge with RP^2'
+title: Universal cover and fundamental group of a wedge with RP^2
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
-  - van-kampen
+  - Covering Spaces
+  - Fundamental Group
+  - van Kampen
 relations: []
 review: draft
 solved: false

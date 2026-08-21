@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-AE7QC
 kind: problem
-title: Weak $L^1$ and weak-$*$ $L^\infty$ convergence of $\exp(\sin(2\pi nx))$ on $[0,1]$
+title: Weak $L^1$ and weak-$*$ $L^\infty$ convergence of $\exp(\sin(2\pi nx))$ on
+  $[0,1]$
 classification:
   areas:
   - real-analysis
   topics:
-  - weak-convergence
-  - l1
-  - l-infty
+  - Weak Convergence
+  - L¹
+  - L∞
 relations: []
 review: draft
 solved: true

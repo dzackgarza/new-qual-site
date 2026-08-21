@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D4-04B
 kind: problem
-title: 'The unit sphere quotient by height fibers is an interval'
+title: The unit sphere quotient by height fibers is an interval
 classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - homeomorphisms
+  - Quotient Spaces
+  - Homeomorphisms
 relations: []
 review: draft
 solved: false

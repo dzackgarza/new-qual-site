@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-FBY23
 kind: problem
-title: Cauchy integral formula for $\oint_\gamma z^2/(z-i)\,dz$ on a circle about $i$
+title: Cauchy integral formula for $\oint_\gamma z^2/(z-i)\,dz$ on a circle about
+  $i$
 classification:
   areas:
   - prelim
   topics:
-  - cauchy-integral-formula
-  - contour-integration
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 solved: false

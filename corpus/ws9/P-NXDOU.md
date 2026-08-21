@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - factorization
-  - integral-domains
+  - Factorization
+  - Integral Domains
 relations: []
 review: draft
 solved: false

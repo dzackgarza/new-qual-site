@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G01
 kind: problem
-title: 'Fundamental groups of punctured products and a wedge of projective planes'
+title: Fundamental groups of punctured products and a wedge of projective planes
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - homotopy
+  - Fundamental Group
+  - van Kampen
+  - Homotopy
 relations: []
 review: draft
 solved: false

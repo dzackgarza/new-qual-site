@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - retracts
-  - homology
-  - fundamental-group
+  - Retracts
+  - Homology
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

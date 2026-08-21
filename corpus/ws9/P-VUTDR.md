@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - integral-domains
-  - principal-ideal-domains
-  - counterexamples
+  - Integral Domains
+  - Principal Ideal Domains
+  - Counterexamples
 relations: []
 review: draft
 solved: false

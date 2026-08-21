@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-DQNN6
 kind: problem
-title: Equidistribution on $[0,1]$ iff empirical measures converge weakly against $C[0,1]$
+title: Equidistribution on $[0,1]$ iff empirical measures converge weakly against
+  $C[0,1]$
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - measure-theory
-  - convergence-of-integrals
+  - Density
+  - Measure Theory
+  - Convergence of Integrals
 relations: []
 review: draft
 solved: true

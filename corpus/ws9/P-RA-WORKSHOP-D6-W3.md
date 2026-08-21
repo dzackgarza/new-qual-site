@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D6-W3
 kind: problem
-title: 'Epsilon-delta continuity and differentiability of an integral of $1/t$'
+title: Epsilon-delta continuity and differentiability of an integral of $1/t$
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - differentiation
-  - integrals
+  - Continuity
+  - Differentiation
+  - Integrals
 relations: []
 review: draft
 solved: true

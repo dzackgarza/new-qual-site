@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-05
 kind: problem
-title: 'Hausdorffness of the radial quotient of the open disk'
+title: Hausdorffness of the radial quotient of the open disk
 classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - hausdorff-spaces
+  - Quotient Spaces
+  - Hausdorff Spaces
 relations: []
 review: draft
 solved: false

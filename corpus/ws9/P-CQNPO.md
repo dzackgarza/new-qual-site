@@ -2,14 +2,16 @@
 schema: qual/card@1
 id: P-CQNPO
 kind: problem
-title: A $C^\infty$ function vanishing on $(-\infty,0]$ but not on $(0,\infty)$, an infinite-dimensional vector space over $\ZZ/2\ZZ$, a non-diagonalizable matrix in $M_2(\CC)$, and a power series with radius of convergence $0$
+title: A $C^\infty$ function vanishing on $(-\infty,0]$ but not on $(0,\infty)$, an
+  infinite-dimensional vector space over $\ZZ/2\ZZ$, a non-diagonalizable matrix in
+  $M_2(\CC)$, and a power series with radius of convergence $0$
 classification:
   areas:
   - prelim
   topics:
-  - counterexamples
-  - differentiation
-  - series-of-functions
+  - Counterexamples
+  - Differentiation
+  - Series of Functions
 relations: []
 review: draft
 solved: false

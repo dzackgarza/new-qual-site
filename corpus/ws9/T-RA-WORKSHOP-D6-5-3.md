@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - riemann-integrability
+  - Integrals
+  - Riemann Integrability
 relations: []
 review: draft
 ---

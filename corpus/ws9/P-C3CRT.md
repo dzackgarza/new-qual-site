@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - chinese-remainder-theorem
-  - rings
+  - Ideals
+  - Chinese Remainder Theorem
+  - Rings
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D7-G02
 kind: problem
-title: 'A complete bipartite graph with 2-cells attached along four-edge cycles'
+title: A complete bipartite graph with 2-cells attached along four-edge cycles
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - fundamental-group
-  - van-kampen
+  - Cell Complexes
+  - Fundamental Group
+  - van Kampen
 relations: []
 review: draft
 solved: false

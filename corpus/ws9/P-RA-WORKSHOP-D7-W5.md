@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D7-W5
 kind: problem
-title: 'Equicontinuity upgrades pointwise convergence to uniform convergence'
+title: Equicontinuity upgrades pointwise convergence to uniform convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - equicontinuity
-  - uniform-convergence
-  - compactness
+  - Equicontinuity
+  - Uniform Convergence
+  - Compactness
 relations: []
 review: draft
 solved: true

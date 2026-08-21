@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- assets/attachments/grad_prelim_Fall05.pdf
+source:
   source_kind: university-exam
   institution: uga
   area: prelim

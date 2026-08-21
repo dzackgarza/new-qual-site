@@ -2,14 +2,16 @@
 schema: qual/card@1
 id: P-QB2KS
 kind: problem
-title: Prime but not maximal ideals, finitely generated torsion-free modules that are not free, torsion-free modules over a PID that are not free, Euclidean domains that are not UFDs, UFDs that are not PIDs, and non-Noetherian domains
+title: Prime but not maximal ideals, finitely generated torsion-free modules that
+  are not free, torsion-free modules over a PID that are not free, Euclidean domains
+  that are not UFDs, UFDs that are not PIDs, and non-Noetherian domains
 classification:
   areas:
   - prelim
   topics:
-  - rings
-  - ideals
-  - counterexamples
+  - Rings
+  - Ideals
+  - Counterexamples
 relations: []
 review: draft
 solved: false

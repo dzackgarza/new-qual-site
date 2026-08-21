@@ -2,16 +2,21 @@
 schema: qual/card@1
 id: SRC-TOP-UNL-2008Q2
 kind: collection
-title: 'UNL Mathematics Qualifying Exam 871/872, June 2008'
+title: UNL Mathematics Qualifying Exam 871/872, June 2008
 classification:
   areas:
   - topology
   topics: []
-relations: []
+relations:
+- kind: related-to
+  target: SRC-TOP-2011Q2
+- kind: related-to
+  target: SRC-TOPOLOGY-PHD-F95
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: UNL Mathematics Qualifying Exam 871/872, June 2008.
+provenance:
+- assets/attachments/2008Q2_Topology_Qual.pdf
+source:
+  source_kind: university-exam
   problems:
   - P-T08A1
   - P-T08A2
@@ -24,8 +29,12 @@ payload:
   date:
     kind: year
     year: 2008
+  institution: unl
+  area: topology
 ---
 
 ::: remark
-UNL Math 871/872 qualifying exam, June 2008. The paper is `assets/attachments/2008Q2_Topology_Qual.pdf`. Eight questions (A1–A4 then Section B); the list is paper order. A2 is `P-T08A2`, reused on June 2011 A2. No holes.
+UNL Mathematics Qualifying Exam 871/872, June 2008.
+
+UNL Math 871/872 qualifying exam, June 2008. Eight questions (A1–A4 then Section B); the list is paper order. A2 is the quotient map with connected fibers (`P-T08A2`), also June 2011 A2 and Section I.2 of the 23 September 1995 topology qualifying exam. No holes.
 :::

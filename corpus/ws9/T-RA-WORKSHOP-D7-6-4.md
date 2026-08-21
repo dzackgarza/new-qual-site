@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - differentiation
-  - convergence-of-functions
+  - Uniform Convergence
+  - Differentiation
+  - Convergence of Functions
 relations: []
 review: draft
 ---

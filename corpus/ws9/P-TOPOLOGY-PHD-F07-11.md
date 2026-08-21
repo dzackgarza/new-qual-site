@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-11
 kind: problem
-title: 'Connected components are connected'
+title: Connected components are connected
 classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 solved: false

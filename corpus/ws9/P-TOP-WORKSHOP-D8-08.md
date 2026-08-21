@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D8-08
 kind: problem
-title: 'The universal cover and an index-two subgroup of the infinite dihedral group'
+title: The universal cover and an index-two subgroup of the infinite dihedral group
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - groups
-  - cell-complexes
+  - Covering Spaces
+  - Groups
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

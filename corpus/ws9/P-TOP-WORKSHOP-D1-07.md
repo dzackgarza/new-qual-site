@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D1-07
 kind: problem
-title: 'A continuous bijection from compact to Hausdorff is a homeomorphism'
+title: A continuous bijection from compact to Hausdorff is a homeomorphism
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - homeomorphisms
+  - Compactness
+  - Hausdorff Spaces
+  - Homeomorphisms
 relations: []
 review: draft
 solved: false

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: SRC-TOP-UNL-2009Q2
 kind: collection
-title: 'UNL Mathematics Qualifying Exam, Math 871/872, June 2009'
+title: UNL Mathematics Qualifying Exam, Math 871/872, June 2009
 classification:
   areas:
   - topology
   topics: []
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: UNL Mathematics Qualifying Exam, Math 871/872, June 2009.
+provenance:
+- assets/attachments/2009Q2_Topology_Qual.pdf
+source:
+  source_kind: university-exam
   problems:
   - P-T09A1
   - P-T09A2
@@ -24,8 +25,12 @@ payload:
   date:
     kind: year
     year: 2009
+  institution: unl
+  area: topology
 ---
 
 ::: remark
+UNL Mathematics Qualifying Exam, Math 871/872, June 2009.
+
 UNL Math 871/872 qualifying exam, June 2009. The paper is `assets/attachments/2009Q2_Topology_Qual.pdf`. Eight questions (A then B); the list is paper order. B2 is `P-T09B2`, reused on January 2019 B6. No holes.
 :::

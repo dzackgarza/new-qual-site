@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-COS2L
 kind: problem
-title: Dimension and a basis of harmonic functions modulo real parts of analytic functions on $\mathbb{C}\setminus\{p_1,\dots,p_n\}$
+title: Dimension and a basis of harmonic functions modulo real parts of analytic functions
+  on $\mathbb{C}\setminus\{p_1,\dots,p_n\}$
 classification:
   areas:
   - real-analysis
   topics:
-  - harmonic-functions
+  - Harmonic Functions
 relations: []
 review: draft
 solved: true

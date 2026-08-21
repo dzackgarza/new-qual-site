@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D1-W1
 kind: problem
-title: 'A compact subset of a $T_2$ space is closed (workshop warm-up)'
+title: A compact subset of a $T_2$ space is closed (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
+  - Compactness
+  - Hausdorff Spaces
 relations: []
 review: draft
 solved: false

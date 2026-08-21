@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D2-06
 kind: problem
-title: 'A union of connected subsets with nonempty intersection is connected'
+title: A union of connected subsets with nonempty intersection is connected
 classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 solved: false

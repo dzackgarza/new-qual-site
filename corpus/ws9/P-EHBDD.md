@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - semisimplicity
-  - jacobson-radical
-  - rings
+  - Semisimplicity
+  - Jacobson Radical
+  - Rings
 relations: []
 review: draft
 solved: true

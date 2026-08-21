@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D4-W1
 kind: problem
-title: 'A neighborhood characterization of closure (workshop warm-up)'
+title: A neighborhood characterization of closure (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - closure
-  - point-set
+  - Closure
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

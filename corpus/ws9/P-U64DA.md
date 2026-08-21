@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-U64DA
 kind: problem
-title: Galois group of irreducible $X^p-a$ over $\mathbb{Q}$ is the group of maps $y\mapsto ky+l$ on $\mathbb{Z}/p\mathbb{Z}$ with $k\neq 0$
+title: Galois group of irreducible $X^p-a$ over $\mathbb{Q}$ is the group of maps
+  $y\mapsto ky+l$ on $\mathbb{Z}/p\mathbb{Z}$ with $k\neq 0$
 classification:
   areas:
   - prelim
   topics:
-  - galois-theory
-  - irreducibility-criteria
+  - Galois Theory
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

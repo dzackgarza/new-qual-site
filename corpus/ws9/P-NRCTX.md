@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-NRCTX
 kind: problem
-title: Convex increasing functions on $[0,1]$ are differentiable a.e. and satisfy the FTC
+title: Convex increasing functions on $[0,1]$ are differentiable a.e. and satisfy
+  the FTC
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - absolute-continuity
-  - variation
+  - Differentiation
+  - Absolute Continuity
+  - Variation
 relations: []
 review: draft
 solved: true

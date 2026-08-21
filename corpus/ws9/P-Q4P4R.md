@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-Q4P4R
 kind: problem
-title: "Galois groups over $\\mathbb{Q}$ of $x^4+4$ and $x^3+x^2-2x-1$"
+title: Galois groups over $\mathbb{Q}$ of $x^4+4$ and $x^3+x^2-2x-1$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - polynomials
+  - Galois Theory
+  - Polynomials
 relations: []
 review: draft
 solved: false

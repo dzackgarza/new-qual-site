@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-W3
 kind: problem
-title: 'An epsilon-delta proof for the cube-root function'
+title: An epsilon-delta proof for the cube-root function
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
+  - Continuity
 relations: []
 review: draft
 solved: true

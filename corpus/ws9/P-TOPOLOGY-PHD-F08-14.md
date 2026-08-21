@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-14
 kind: problem
-title: 'Non-surjective maps into a sphere are homotopic'
+title: Non-surjective maps into a sphere are homotopic
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - degree
+  - Homotopy
+  - Degree
 relations: []
 review: draft
 solved: false

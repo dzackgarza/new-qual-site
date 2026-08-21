@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA18M2
 kind: problem
-title: 'UNL analysis qualifying exam, May 2018, problem 2'
+title: UNL analysis qualifying exam, May 2018, problem 2
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - convergence-of-functions
+  - Series of Functions
+  - Convergence of Functions
 relations: []
 review: draft
 solved: true

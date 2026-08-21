@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-ABRWU
 kind: problem
-title: 'Contrapositive and converse of: a local minimum at $a$ implies $f''(a)=0$ or nondifferentiability at $a$'
+title: 'Contrapositive and converse of: a local minimum at $a$ implies $f''(a)=0$
+  or nondifferentiability at $a$'
 classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
-  - differentiation
+  - Logic and Quantifiers
+  - Differentiation
 relations: []
 review: draft
 solved: false

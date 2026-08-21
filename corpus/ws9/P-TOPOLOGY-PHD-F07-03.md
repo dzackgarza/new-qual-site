@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-03
 kind: problem
-title: 'A diagonal in the countable-closed and finite-complement topologies'
+title: A diagonal in the countable-closed and finite-complement topologies
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - product-topology
-  - closure
+  - Point-Set Topology
+  - Product Topology
+  - Closure
 relations: []
 review: draft
 solved: false

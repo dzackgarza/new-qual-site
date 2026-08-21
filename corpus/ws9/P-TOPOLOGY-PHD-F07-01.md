@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F07-01
 kind: problem
-title: 'Open balls in a metric space are open'
+title: Open balls in a metric space are open
 classification:
   areas:
   - topology
   topics:
-  - metric-spaces
-  - point-set
+  - Metric Spaces
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

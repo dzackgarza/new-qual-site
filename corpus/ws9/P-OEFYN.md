@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - hilbert-spaces
-  - compactness
+  - Functional Analysis
+  - Hilbert Spaces
+  - Compactness
 relations: []
 review: draft
 solved: true

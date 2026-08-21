@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D1-09
 kind: problem
-title: 'A finite intersection of closed sets contained in a prescribed open neighborhood'
+title: A finite intersection of closed sets contained in a prescribed open neighborhood
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - closure
+  - Compactness
+  - Closure
 relations: []
 review: draft
 solved: false

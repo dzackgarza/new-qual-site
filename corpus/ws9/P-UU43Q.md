@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - line-integrals
+  - Line Integrals
 relations: []
 review: draft
 solved: false

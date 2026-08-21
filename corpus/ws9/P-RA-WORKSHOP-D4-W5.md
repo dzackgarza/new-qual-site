@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-W5
 kind: problem
-title: 'A liminf-limsup bound for real sequences'
+title: A liminf-limsup bound for real sequences
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 solved: true

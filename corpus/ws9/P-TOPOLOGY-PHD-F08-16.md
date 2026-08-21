@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-16
 kind: problem
-title: 'A deformation-retract exercise in the complement of a circle'
+title: A deformation-retract exercise in the complement of a circle
 classification:
   areas:
   - topology
   topics:
-  - retracts
-  - fundamental-group
-  - homotopy
+  - Retracts
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 solved: false

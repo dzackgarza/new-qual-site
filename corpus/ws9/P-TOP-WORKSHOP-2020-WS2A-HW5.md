@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS2A-HW5
 kind: problem
-title: 'Analyze the topologist’s sine wave (warm-up)'
+title: Analyze the topologist’s sine wave (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - counterexamples
+  - Connectedness
+  - Counterexamples
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D2-W2
 kind: problem
-title: 'Path-connected spaces are connected (workshop warm-up)'
+title: Path-connected spaces are connected (workshop warm-up)
 classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 solved: false

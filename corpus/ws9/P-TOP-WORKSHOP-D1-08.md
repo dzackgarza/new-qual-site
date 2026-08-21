@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-D1-08
 kind: problem
-title: 'A compact subset of a product with the indiscrete two-point space'
+title: A compact subset of a product with the indiscrete two-point space
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - product-topology
+  - Compactness
+  - Product Topology
 relations: []
 review: draft
 solved: false

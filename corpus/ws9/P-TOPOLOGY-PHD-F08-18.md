@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-18
 kind: problem
-title: 'No finite-sheeted covering of the circle has the stated index'
+title: No finite-sheeted covering of the circle has the stated index
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

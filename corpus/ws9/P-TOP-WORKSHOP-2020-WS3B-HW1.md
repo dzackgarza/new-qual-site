@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-TOP-WORKSHOP-2020-WS3B-HW1
 kind: problem
-title: 'Find universal covers of a circle and a wedge of circles (warm-up)'
+title: Find universal covers of a circle and a wedge of circles (warm-up)
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
+  - Covering Spaces
 relations: []
 review: draft
 solved: false

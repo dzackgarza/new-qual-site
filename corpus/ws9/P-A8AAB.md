@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-A8AAB
 kind: problem
-title: If $A \oplus A \cong B \oplus B$ for finitely generated modules over a PID then $A \cong B$
+title: If $A \oplus A \cong B \oplus B$ for finitely generated modules over a PID
+  then $A \cong B$
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - principal-ideal-domains
+  - Modules
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - ideals
-  - polynomials
-  - rings
+  - Ideals
+  - Polynomials
+  - Rings
 relations: []
 review: draft
 solved: false

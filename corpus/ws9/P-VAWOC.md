@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - taylor-series
-  - power-series
+  - Taylor Series
+  - Power Series
 relations: []
 review: draft
 solved: false
