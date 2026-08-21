@@ -64,6 +64,60 @@ source:
     - E-BI0O0
     - E-ZB4N9
     - E-Z93SH
+  - name: '18'
+    problems:
+    - E-PLSGP
+    - E-K9POS
+    - E-F972S
+    - E-OTJ9S
+    - E-BB4BN
+    - E-A0UGQ
+    - E-MGLSK
+    - E-ZHWI8
+    - E-2CPNC
+    - E-G4SRA
+    - E-20CHL
+    - E-Q7W4S
+    - E-FNMUB
+  - name: '19'
+    problems:
+    - E-DMMQW
+    - E-R3NOE
+    - E-NBS6F
+    - E-DPKX4
+    - E-8GBZO
+    - E-AH7RC
+    - E-PKY0P
+    - E-AWEWJ
+    - E-JCJOW
+    - E-UAMGV
+  - name: '20'
+    problems:
+    - E-37RI3
+    - E-KY2W7
+    - E-ZEESK
+    - E-4FZVU
+    - E-FB9OZ
+    - E-XFF7Q
+    - E-1XT8N
+    - E-39RRX
+    - E-UDRRC
+    - E-XDJRZ
+    - E-X3SLC
+  - name: '21'
+    problems:
+    - E-OW8A0
+    - E-DE8TQ
+    - E-XFXGM
+    - E-KD56B
+    - E-AFAON
+    - E-9V5EM
+    - E-KNLQ0
+    - E-ZPC0X
+    - E-BTI7W
+    - E-WWROF
+    - E-1841E
+    - E-YTG4V
   - name: '30'
     problems:
     - E-5FLKZ

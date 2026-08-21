@@ -21,7 +21,7 @@ All paths are under `/home/dzack/Zotero/storage/<attachment-key>/`.
 | Collection ID | Textbook | Exercises in corpus | `completion` |
 | --- | --- | --- | --- |
 | `SRC-TEXT-HK71` | Hoffman & Kunze | 6 (§1.2, §2.1) | incomplete |
-| `SRC-TEXT-MUN00` | Munkres | 40 (§13, §16, §17, §30) | incomplete |
+| `SRC-TEXT-MUN00` | Munkres | 86 (§13, §16–§21, §30) | incomplete |
 | `SRC-TEXT-HAT02` | Hatcher | 1 (Ch. 0) | incomplete |
 | `SRC-TEXT-DF04` | Dummit & Foote | 1 (§5.5) | incomplete |
 | `SRC-TEXT-HUN74` | Hungerford | 67 (Chs. I–VII) | — |
@@ -59,7 +59,7 @@ All paths are under `/home/dzack/Zotero/storage/<attachment-key>/`.
 | Ch | Title | Sections | In corpus |
 | --- | --- | --- | --- |
 | 1 | Set Theory and Logic | §1–§11 (11) | — |
-| 2 | Topological Spaces and Continuous Functions | §12–§22 (11) | §13 (8), §16 (10), §17 (21) |
+| 2 | Topological Spaces and Continuous Functions | §12–§22 (11) | §13 (8), §16 (10), §17 (21), §18 (13), §19 (10), §20 (11), §21 (12) |
 | 3 | Connectedness and Compactness | §23–§29 (7) | — |
 | 4 | Countability and Separation Axioms | §30–§36 (7) | §30 (1 ex: `E-5FLKZ`) |
 | 5 | The Tychonoff Theorem | §37–§38 (2) | — |
@@ -178,7 +178,7 @@ Introduction + 10 chapters, 70 sections.
 
 - Hatcher's extraction was attached under a human-chosen title (`Hatcher - 2002 - Algebraic Topology.md`) rather than the loop's `<KEY>_extracted.md` convention.
 
-- The Munkres extraction is missing the exercise blocks for §12, §14, and §15; those sections' exercises cannot be authored from it.
+- The Munkres extraction is complete: §12, §14, and §15 have no exercises in the book.
 
 - Dummit & Foote has two PDF children: `A4FFDNKB_extracted.md` (MinerU extraction) and a second PDF titled `Abstract_algebra_fulltext`.
 
