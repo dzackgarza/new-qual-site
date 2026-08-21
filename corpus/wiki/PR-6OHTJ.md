@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-6OHTJ
 kind: proposition
-title: "p-tests"
+title: p-tests
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - series-of-numbers
-  - convergence-tests
+  - Integrals
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 ---
+
 :::{.proposition title="p-tests"}
 Let $n$ be a fixed dimension and set $B = \theset{x\in \RR^n \suchthat \norm{x} \leq 1}$. 
 \[

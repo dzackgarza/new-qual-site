@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: T-N6PYS
 kind: theorem
-title: "Maps from compact to Hausdorff spaces, Lee A.52"
+title: Maps from compact to Hausdorff spaces, Lee A.52
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - quotient-spaces
-  - homeomorphisms
+  - Compactness
+  - Hausdorff Spaces
+  - Quotient Spaces
+  - Homeomorphisms
 relations: []
 review: draft
 ---

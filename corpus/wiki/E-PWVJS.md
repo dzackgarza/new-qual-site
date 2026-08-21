@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - argument-principle
-  - poles
-  - zeros
+  - Argument Principle
+  - Poles
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show that $\logd(fg) = \logd f + \logd g$, i.e. 
 \[

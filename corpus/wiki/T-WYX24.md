@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-WYX24
 kind: theorem
-title: "Generalized DCT"
+title: Generalized DCT
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - integrals
-  - l1
+  - Convergence of Integrals
+  - Integrals
+  - L¹
 relations: []
 review: draft
 ---

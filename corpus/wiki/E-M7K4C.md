@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-M7K4C
 kind: exercise
-title: "Cauchy formula and principal parts"
+title: Cauchy formula and principal parts
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - residues
-  - principal-parts
-  - contour-integration
+  - Cauchy Integral Formula
+  - Residues
+  - Principal Parts
+  - Contour Integration
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Cauchy formula and principal parts"}
 Compute
 \[

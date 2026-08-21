@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - variation
-  - series-of-numbers
+  - Variation
+  - Series of Numbers
 relations: []
 review: draft
 solved: true

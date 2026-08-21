@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-6NA4D
 kind: problem
-title: "Hungerford 2.8.9"
+title: Hungerford 2.8.9
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - sylow-theory
+  - Solvable Groups
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

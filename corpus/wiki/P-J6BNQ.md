@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-J6BNQ
 kind: problem
-title: Galois groups of the compositum and intersection of two splitting fields over $\QQ$
+title: Galois groups of the compositum and intersection of two splitting fields over
+  $\QQ$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - subgroups
+  - Galois Theory
+  - Field Extensions
+  - Subgroups
 relations: []
 review: draft
 solved: true
 ---
+
 Let $K$ be a Galois extension of $\QQ$ with Galois group $G$, and let $E_1 , E_2$ be intermediate fields of $K$ which are the splitting fields of irreducible $f_i (x) \in \QQ[x]$. 
 
 Let $E = E_1 E_2 \subset K$. 

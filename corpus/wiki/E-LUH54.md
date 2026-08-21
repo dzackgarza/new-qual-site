@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - commutators
-  - direct-products
+  - Normal Subgroups
+  - Commutators
+  - Direct Products
 relations: []
 review: draft
 solved: false

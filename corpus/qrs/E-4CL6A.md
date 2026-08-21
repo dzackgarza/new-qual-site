@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - completeness
-  - metric-spaces
+  - Compactness
+  - Completeness
+  - Metric Spaces
 relations: []
 review: draft
 solved: true

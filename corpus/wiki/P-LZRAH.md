@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - trace
-  - nilpotence
-  - eigenvalues-and-eigenvectors
+  - Trace
+  - Nilpotence
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 solved: false

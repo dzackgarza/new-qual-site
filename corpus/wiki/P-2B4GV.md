@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-2B4GV
 kind: problem
-title: "Consider the $\\ZZ\\dash$submodule $N$ of $\\ZZ^3$ spanned by"
+title: Consider the $\ZZ\dash$submodule $N$ of $\ZZ^3$ spanned by
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - smith-normal-form
-  - modules
+  - Structure Theorem
+  - Smith Normal Form
+  - Modules
 relations: []
 review: draft
 solved: false

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-MBDTR
 kind: definition
-title: "Uniform boundedness and equicontinuity"
+title: Uniform boundedness and equicontinuity
 classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - normal-families
+  - Equicontinuity
+  - Normal Families
 relations: []
 review: draft
 ---
+
 :::{.definition title="Uniform boundedness and equicontinuity"}
 A family $\mcf$ of holomorphic functions is **uniformly bounded on compact subsets of $\Omega$** iff for each compact $K \subseteq \Omega$ if
 \[

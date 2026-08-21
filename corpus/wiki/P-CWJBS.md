@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-CWJBS
 kind: problem
-title: A compact metric space is complete and separable, and sequences with summable consecutive distances converge
+title: A compact metric space is complete and separable, and sequences with summable
+  consecutive distances converge
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - completeness
-  - metric-spaces
+  - Compactness
+  - Completeness
+  - Metric Spaces
 relations: []
 review: draft
 solved: true

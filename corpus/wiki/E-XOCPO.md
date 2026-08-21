@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-XOCPO
 kind: exercise
-title: "Laurent expanding exponentials"
+title: Laurent expanding exponentials
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - power-series
-  - entire-functions
+  - Laurent Series
+  - Power Series
+  - Entire Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Laurent expanding exponentials"}
 Find a Laurent expansion that converges for $\abs{z} > 1$ of
 \[

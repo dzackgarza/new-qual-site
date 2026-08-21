@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-IGLFV
 kind: proposition
-title: "Classification of groups of order $p^2$"
+title: Classification of groups of order $p^2$
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - p-groups
-  - abelian-groups
+  - Classification
+  - p-Groups
+  - Abelian Groups
 relations: []
 review: draft
 ---

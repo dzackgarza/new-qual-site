@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-GPCW2
 kind: exercise
-title: "$1/(x-a)\\sqrt{1-x^2}$"
+title: $1/(x-a)\sqrt{1-x^2}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/(x-a)\sqrt{1-x^2}$ "}
 \[
 I \da \int_{-1}^1 {1\over (x-a) \sqrt{1-x^2} }\dx = {\pi \over \sqrt{a^2-1}}

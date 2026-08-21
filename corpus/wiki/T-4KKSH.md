@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-4KKSH
 kind: theorem
-title: "m(X) < \\infty \\implies \\lim_{p\\to\\infty} \\norm{f}_p = \\norm{f}_\\infty"
+title: m(X) < \infty \implies \lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - l-infty
-  - limits
+  - Lp Spaces
+  - L∞
+  - Limits
 relations: []
 review: draft
 ---
+
 :::{.theorem title="?"}
 \[
 m(X) < \infty \implies \lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty 

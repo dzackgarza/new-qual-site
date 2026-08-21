@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-VZNMF
 kind: definition
-title: "Normal Family"
+title: Normal Family
 classification:
   areas:
   - complex-analysis
   topics:
-  - normal-families
-  - uniform-convergence
+  - Normal Families
+  - Uniform Convergence
 relations: []
 review: draft
 ---

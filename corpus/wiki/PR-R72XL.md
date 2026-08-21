@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - point-set
+  - Separation Axioms
+  - Point-Set Topology
 relations: []
 review: draft
 ---

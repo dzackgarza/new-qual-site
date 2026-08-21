@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-reflection
-  - holomorphic-functions
+  - Schwarz Reflection
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $S\definedas \theset{z\in \DD\suchthat \Im(z) \geq 0}$.
 Suppose $f:S\to \CC$ is continuous on $S$, real on $S\intersect \RR$, and holomorphic on $S^\circ$.

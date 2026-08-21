@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-EQFMD
 kind: problem
-title: Antiderivatives of $\frac{1\pm\sin x}{1+\cos x}$ and $\frac{1}{1+\sin x+\cos x}$
+title: Antiderivatives of $\frac{1\pm\sin x}{1+\cos x}$ and $\frac{1}{1+\sin x+\cos
+  x}$
 classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - trigonometry
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-63TON
 kind: problem
-title: A monic in $R[x]$ factoring into nonconstant monics in $F[x]$ with a factor outside $R[x]$ implies $R$ is not a UFD; $\ZZ[2\sqrt{2}]$ is not a UFD
+title: A monic in $R[x]$ factoring into nonconstant monics in $F[x]$ with a factor
+  outside $R[x]$ implies $R$ is not a UFD; $\ZZ[2\sqrt{2}]$ is not a UFD
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - polynomials
-  - integral-domains
+  - Factorization
+  - Polynomials
+  - Integral Domains
 relations: []
 review: draft
 solved: true
 ---
+
 a.
 Let $R$ be an integral domain with quotient field $F$.
 Suppose that $p(x), a(x), b(x)$ are monic polynomials in $F[x]$ with $p(x) = a(x) b(x)$ and with $p(x) \in R[x]$, $a(x)$ not in $R[x]$, and both $a(x), b(x)$ not constant.

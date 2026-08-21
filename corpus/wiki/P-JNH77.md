@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-JNH77
 kind: problem
-title: "Can you prove the fundamental theorem of algebra using Galois theory?"
+title: Can you prove the fundamental theorem of algebra using Galois theory?
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - fields
+  - Galois Theory
+  - Fields
 relations: []
 review: draft
 solved: false

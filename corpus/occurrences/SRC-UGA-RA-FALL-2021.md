@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- https://www.math.uga.edu/sites/default/files/Quals/Real%20Analysis%20%5BFall%202021%5D.docx
+source:
   source_kind: university-exam
   institution: uga
   area: real-analysis
@@ -26,6 +28,6 @@ payload:
 ---
 
 ::: remark
-UGA real-analysis Fall 2021. The paper is the current Quals posting `Real Analysis [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Fall 2021; the sitting transcription `assets/ws9/qual-review-and-solutions/native/Real Analysis/UGA Questions (no solutions)/sections/9999_2021_Fall.md.source` matches that paper.
+UGA real-analysis Fall 2021. The paper is the current Quals posting `Real Analysis [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`, headed Fall 2021. List order was checked against the qual notes transcription under qual-review-and-solutions; those notes are not collection provenance.
 The catalog PDF `Real_Analysis_Qual-Fall2021.pdf` currently 404s. The list is the sitting order on that paper.
 :::

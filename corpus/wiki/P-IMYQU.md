@@ -7,10 +7,10 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - improper-integrals
-  - integration-by-parts
-  - induction
+  - Integrals
+  - Improper Integrals
+  - Integration by Parts
+  - Induction
 relations: []
 review: draft
 solved: false

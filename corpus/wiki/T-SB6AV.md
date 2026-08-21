@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-SB6AV
 kind: theorem
-title: "Recognizing Semidirect Products"
+title: Recognizing Semidirect Products
 classification:
   areas:
   - algebra
   topics:
-  - semidirect-products
-  - normal-subgroups
-  - automorphisms
+  - Semidirect Products
+  - Normal Subgroups
+  - Automorphisms
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Recognizing Semidirect Products"}
 We have $G \cong N \semidirect_\psi H$ when
 

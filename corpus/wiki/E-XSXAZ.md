@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - point-set
-  - euclidean-spaces
+  - Point-Set Topology
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: false

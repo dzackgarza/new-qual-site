@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-V7JRG
 kind: theorem
-title: "Zorn's Lemma"
+title: Zorn's Lemma
 classification:
   areas:
   - algebra
   topics:
-  - zorns-lemma
+  - Zorn's Lemma
 relations: []
 review: draft
 ---

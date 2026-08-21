@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-6LWY3
 kind: problem
-title: Pointwise convergence of $n^\beta x(1-x^2)^n$ on $[0,1]$, uniform if and only if $\beta<\frac12$
+title: Pointwise convergence of $n^\beta x(1-x^2)^n$ on $[0,1]$, uniform if and only
+  if $\beta<\frac12$
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - uniform-convergence
+  - Convergence of Functions
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-NYXUQ
 kind: problem
-title: "What group-theoretic construct relates the stabiliser of two points?"
+title: What group-theoretic construct relates the stabiliser of two points?
 classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - conjugacy
-  - group-actions
+  - Orbit-Stabilizer
+  - Conjugacy
+  - Group Actions
 relations: []
 review: draft
 solved: false

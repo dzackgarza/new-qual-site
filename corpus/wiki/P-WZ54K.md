@@ -8,9 +8,9 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - factorization
-  - irreducibility-criteria
+  - Finite Fields
+  - Factorization
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-RPOGQ
 kind: definition
-title: "$F_\\sigma$ and $G_\\delta$ Sets"
+title: $F_\sigma$ and $G_\delta$ Sets
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-SVF2W
 kind: theorem
-title: "Continuation Principle / Identity Theorem"
+title: Continuation Principle / Identity Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - zeros
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 ---

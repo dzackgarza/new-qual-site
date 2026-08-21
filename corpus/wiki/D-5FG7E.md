@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-5FG7E
 kind: definition
-title: "Fixed Field"
+title: Fixed Field
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 ---
+
 :::{.definition title="Fixed Field"}
 For $H \leq \Aut_{\Fieldsover{k}}(L)$,
 \[

@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - mean-value-theorem
+  - Differentiation
+  - Mean Value Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 1.  
 Suppose that $f: [0,1] \to \mathbb{R}$ is differentiable and
 $f(0) = 0$. Assume that there is a $k > 0$ such that

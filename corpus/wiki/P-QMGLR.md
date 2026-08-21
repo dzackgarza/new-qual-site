@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-QMGLR
 kind: problem
-title: $\alpha\pm\beta$ and $\alpha\beta^{\pm 1}$ are algebraic over $F$ whenever $\alpha$ and $\beta$ are
+title: $\alpha\pm\beta$ and $\alpha\beta^{\pm 1}$ are algebraic over $F$ whenever
+  $\alpha$ and $\beta$ are
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
+  - Field Extensions
 relations: []
 review: draft
 solved: false

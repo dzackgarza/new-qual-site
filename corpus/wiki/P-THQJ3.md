@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - closure
+  - Hilbert Spaces
+  - Closure
 relations: []
 review: draft
 solved: true

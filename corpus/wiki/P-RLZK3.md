@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-RLZK3
 kind: problem
-title: "The question as written on the original qual has several errors."
+title: The question as written on the original qual has several errors.
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - schwarz-lemma
-  - geometry
+  - Blaschke Factors
+  - Schwarz Lemma
+  - Geometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.warnings}
 The question as written on the original qual has several errors.
 What is below is the correct version of the inequality.

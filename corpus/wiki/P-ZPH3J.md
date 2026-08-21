@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-ZPH3J
 kind: problem
-title: Integer-matrix maps of the torus, the induced map on $H_1$, and homotopy to the identity or to a fixed-point-free map
+title: Integer-matrix maps of the torus, the induced map on $H_1$, and homotopy to
+  the identity or to a fixed-point-free map
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - surfaces
-  - fixed-points
-  - homotopy
+  - Homology
+  - Surfaces
+  - Fixed Points
+  - Homotopy
 relations: []
 review: draft
 solved: false

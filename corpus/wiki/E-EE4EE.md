@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - point-set
-  - limits
+  - Point-Set Topology
+  - Limits
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - metric-spaces
-  - completeness
+  - Density
+  - Metric Spaces
+  - Completeness
 relations: []
 review: draft
 ---

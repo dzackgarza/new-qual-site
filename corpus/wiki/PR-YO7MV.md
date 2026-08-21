@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-YO7MV
 kind: proposition
-title: "Markov/Chebyshev's Inequality"
+title: Markov/Chebyshev's Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - lp-spaces
-  - integrals
+  - Measure Theory
+  - Lp Spaces
+  - Integrals
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Markov/Chebyshev's Inequality"}
 The most often used form here:
 \[  

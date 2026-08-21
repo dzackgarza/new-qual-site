@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-KRKV7
 kind: definition
-title: "The Quaternion Group"
+title: The Quaternion Group
 classification:
   areas:
   - algebra
   topics:
-  - groups
-  - group-presentations
+  - Groups
+  - Group Presentations
 relations: []
 review: draft
 ---

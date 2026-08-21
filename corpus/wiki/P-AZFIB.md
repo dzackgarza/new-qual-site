@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - schwarz-lemma
-  - cauchy-integral-formula
+  - Cauchy Estimates
+  - Schwarz Lemma
+  - Cauchy Integral Formula
 relations: []
 review: draft
 solved: false

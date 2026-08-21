@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - classification
+  - Galois Theory
+  - Classification
 relations: []
 review: draft
 solved: false

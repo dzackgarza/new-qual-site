@@ -8,8 +8,8 @@ classification:
   areas:
   - prelim
   topics:
-  - line-integrals
-  - green-s-theorem
+  - Line Integrals
+  - Green's Theorem
 relations: []
 review: draft
 solved: true

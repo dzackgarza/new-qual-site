@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-KLTBZ
 kind: definition
-title: "Real (multivariate) differentiable"
+title: Real (multivariate) differentiable
 classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
-  - cauchy-riemann
+  - Calculus
+  - Cauchy-Riemann
 relations: []
 review: draft
 ---
+
 :::{.definition title="Real (multivariate) differentiable"}
 A function $F: \RR^n\to \RR^m$ is **real-differentiable** at $\vector p$ iff there exists a linear transformation $A$ such that
 \[

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - integral-extensions
-  - number-theory
-  - commutative-algebra
+  - Integral Extensions
+  - Number Theory
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

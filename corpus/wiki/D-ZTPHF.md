@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-ZTPHF
 kind: definition
-title: "Order"
+title: Order
 classification:
   areas:
   - algebra
   topics:
-  - cyclic-groups
-  - groups
+  - Cyclic Groups
+  - Groups
 relations: []
 review: draft
 ---

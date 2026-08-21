@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-WASJF
 kind: problem
-title: "Hungerford 7.2.2"
+title: Hungerford 7.2.2
 classification:
   areas:
   - algebra
   topics:
-  - rank-and-nullity
-  - matrices
-  - linear-algebra
+  - Rank and Nullity
+  - Matrices
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-2MJRE
 kind: definition
-title: "Nowhere Dense Sets"
+title: Nowhere Dense Sets
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - closure
+  - Density
+  - Closure
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - fields
-  - characteristic
+  - Roots of Unity
+  - Fields
+  - Characteristic
 relations: []
 review: draft
 solved: false

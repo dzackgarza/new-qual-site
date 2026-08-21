@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - cyclic-groups
+  - Matrix Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-OHEFT
 kind: theorem
-title: "Nilpotent Implies Maximal Normals"
+title: Nilpotent Implies Maximal Normals
 classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - normal-subgroups
-  - subgroups
+  - Nilpotent Groups
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 ---

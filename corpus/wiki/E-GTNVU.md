@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-GTNVU
 kind: exercise
-title: "Homology of product of spheres"
+title: Homology of product of spheres
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - product-topology
+  - Homology
+  - Product Topology
 relations: []
 review: draft
 solved: false

@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-3OJLH
 kind: exercise
-title: "The equality case"
+title: The equality case
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - maximum-modulus-principle
+  - Schwarz Lemma
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="The equality case"}
 Suppose $f:\DD\to \DD$ and $f(0) = 0$.
 Show that

@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - maximal-functions
-  - l1
+  - Maximal Functions
+  - L¹
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-IWMWM
 kind: problem
-title: No retraction from $S^1\times S^1$ onto a subspace homeomorphic to $S^1\vee S^1$
+title: No retraction from $S^1\times S^1$ onto a subspace homeomorphic to $S^1\vee
+  S^1$
 classification:
   areas:
   - topology
   topics:
-  - retracts
-  - fundamental-group
-  - surfaces
+  - Retracts
+  - Fundamental Group
+  - Surfaces
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-EGKRW
 kind: problem
-title: The ideal $(2,x)$ in $\mathbb{Z}[x]$ is not a direct sum of nontrivial cyclic modules
+title: The ideal $(2,x)$ in $\mathbb{Z}[x]$ is not a direct sum of nontrivial cyclic
+  modules
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - ideals
-  - principal-ideal-domains
+  - Free Modules
+  - Ideals
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

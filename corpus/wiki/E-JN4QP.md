@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - homeomorphisms
+  - Compactness
+  - Hausdorff Spaces
+  - Homeomorphisms
 relations: []
 review: draft
 solved: true

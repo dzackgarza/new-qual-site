@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-SMK7Q
 kind: problem
-title: An analytic self-map of the disk with $|f|=1$ on the circle is a finite Blaschke product
+title: An analytic self-map of the disk with $|f|=1$ on the circle is a finite Blaschke
+  product
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - zeros
-  - maximum-modulus-principle
+  - Blaschke Factors
+  - Zeros
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: false

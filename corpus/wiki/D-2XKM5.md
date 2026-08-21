@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-2XKM5
 kind: definition
-title: "Relative cycles"
+title: Relative cycles
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - homological-algebra
+  - Homology
+  - Homological Algebra
 relations: []
 review: draft
 ---

@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - partial-fractions
+  - Integrals
+  - Partial Fractions
 relations: []
 review: draft
 solved: false

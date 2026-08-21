@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TO7DK
 kind: problem
-title: Splitting fields of separable polynomials are Galois, with the Galois correspondence and compositum
+title: Splitting fields of separable polynomials are Galois, with the Galois correspondence
+  and compositum
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - separability
+  - Galois Theory
+  - Splitting Fields
+  - Separability
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-PIO2B
 kind: theorem
-title: "Maschke's Theorem"
+title: Maschke's Theorem
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - semisimplicity
-  - characteristic
+  - Representation Theory
+  - Semisimplicity
+  - Characteristic
 relations: []
 review: draft
 ---

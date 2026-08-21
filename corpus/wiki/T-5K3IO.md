@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-5K3IO
 kind: theorem
-title: "Monotone Convergence"
+title: Monotone Convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - integrals
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Monotone Convergence"}
 If $f_n: X\to [0, \infty) \in L^+$ and $f_n \nearrow f$ almost everywhere, then
 $$

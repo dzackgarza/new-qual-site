@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: E-E7FYR
 kind: exercise
-title: "Compactness and limit points, the first two conditions of a TFAE list"
+title: Compactness and limit points, the first two conditions of a TFAE list
 classification:
   areas:
   - topology
   topics:
-  - compactness
+  - Compactness
 relations:
 - kind: related-to
   target: E-YAEMZ

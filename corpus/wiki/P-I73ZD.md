@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-I73ZD
 kind: problem
-title: The sum metric $d_M+d_N$ on $M\times N$, and compactness of a product of compact sets
+title: The sum metric $d_M+d_N$ on $M\times N$, and compactness of a product of compact
+  sets
 classification:
   areas:
   - real-analysis
   topics:
-  - metric-spaces
-  - compactness
+  - Metric Spaces
+  - Compactness
 relations: []
 review: draft
 solved: true
 ---
+
 Let $(M, d_M)$, $(N, d_N)$ be metric spaces. Define
 $d_{M \times N} \colon (M \times N) \times (M \times N) \to \mathbb{R}$
 by

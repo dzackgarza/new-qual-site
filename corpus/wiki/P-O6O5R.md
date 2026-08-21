@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-O6O5R
 kind: problem
-title: "Hungerford 4.2.9"
+title: Hungerford 4.2.9
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - bases
-  - direct-products
+  - Free Modules
+  - Bases
+  - Direct Products
 relations: []
 review: draft
 solved: false

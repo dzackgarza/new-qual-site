@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-KWWVL
 kind: definition
-title: "Saturated"
+title: Saturated
 classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - point-set
+  - Quotient Spaces
+  - Point-Set Topology
 relations: []
 review: draft
 ---

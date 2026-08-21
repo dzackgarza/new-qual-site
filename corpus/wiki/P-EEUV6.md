@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-EEUV6
 kind: problem
-title: An injective conformal map from $\{|z|<1\}\setminus\{|z-1/4|\le 1/4\}$ onto an annulus
+title: An injective conformal map from $\{|z|<1\}\setminus\{|z-1/4|\le 1/4\}$ onto
+  an annulus
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Biholomorphisms
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: false

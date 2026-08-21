@@ -8,9 +8,9 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - centralizers-and-normalizers
+  - Sylow Theory
+  - Normal Subgroups
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

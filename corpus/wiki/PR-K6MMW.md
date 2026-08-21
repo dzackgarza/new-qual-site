@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - jordan-canonical-form
-  - linear-algebra
+  - Nilpotence
+  - Jordan Canonical Form
+  - Linear Algebra
 relations: []
 review: draft
 ---

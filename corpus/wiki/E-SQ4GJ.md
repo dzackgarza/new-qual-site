@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-SQ4GJ
 kind: exercise
-title: "Expansion for a reciprocal"
+title: Expansion for a reciprocal
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - power-series
-  - poles
+  - Laurent Series
+  - Power Series
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Expansion for a reciprocal"}
 Find a power series expansion of 
 \[

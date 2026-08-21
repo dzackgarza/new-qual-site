@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-IZKCV
 kind: exercise
-title: "$1/x^4+1$, balancing exponentials"
+title: $1/x^4+1$, balancing exponentials
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - poles
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/x^4+1$, balancing exponentials"}
 \[
 \int_\RR {1 \over x^4 + 1} = {\pi \sqrt{2} \over 2} = {\pi \over \sqrt 2}

@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - zeros
-  - conformal-maps
+  - Biholomorphisms
+  - Zeros
+  - Conformal Maps
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show that if $f$ is injective, then $f'$ is nowhere vanishing and thus $f$ is conformal.
 

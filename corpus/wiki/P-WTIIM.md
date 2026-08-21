@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - semisimplicity
-  - rings
-  - structure-theorem
+  - Semisimplicity
+  - Rings
+  - Structure Theorem
 relations: []
 review: draft
 solved: false

@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $a \in \mathbb{R}$ with $0<a<3$. Evaluate 
 \[

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-3IWX2
 kind: definition
-title: "Cellular Map"
+title: Cellular Map
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
+  - Cell Complexes
 relations: []
 review: draft
 ---

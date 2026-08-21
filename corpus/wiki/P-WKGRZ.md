@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-WKGRZ
 kind: problem
-title: A $p$-group acting on a set of cardinality not divisible by $p$ has a fixed point
+title: A $p$-group acting on a set of cardinality not divisible by $p$ has a fixed
+  point
 classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - group-actions
-  - orbit-stabilizer
+  - p-Groups
+  - Group Actions
+  - Orbit-Stabilizer
 relations: []
 review: draft
 solved: false

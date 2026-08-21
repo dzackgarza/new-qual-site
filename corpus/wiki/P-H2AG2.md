@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-H2AG2
 kind: problem
-title: The Kronecker sequences $u_k(j)=\delta_{kj}$ form an orthonormal system in $\ell^2(\ZZ)$
+title: The Kronecker sequences $u_k(j)=\delta_{kj}$ form an orthonormal system in
+  $\ell^2(\ZZ)$
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - l2
+  - Hilbert Spaces
+  - L²
 relations: []
 review: draft
 solved: true

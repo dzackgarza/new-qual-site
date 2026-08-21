@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - measure-theory
+  - Lp Spaces
+  - Measure Theory
 relations: []
 review: draft
 solved: true

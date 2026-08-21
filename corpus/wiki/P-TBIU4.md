@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - factorization
-  - polynomials
+  - Principal Ideal Domains
+  - Factorization
+  - Polynomials
 relations: []
 review: draft
 solved: false

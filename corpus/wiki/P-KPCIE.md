@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - sequences-of-numbers
-  - completeness
-  - convergence
+  - Sequences of Numbers
+  - Completeness
+  - Convergence
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $x_0 = a, x_1 = b$, and set
 \[  

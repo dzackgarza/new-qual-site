@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - integral-extensions
-  - number-theory
+  - Galois Theory
+  - Integral Extensions
+  - Number Theory
 relations: []
 review: draft
 solved: false

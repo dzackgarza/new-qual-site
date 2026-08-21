@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-QX5QU
 kind: theorem
-title: "Kronecker-Weber"
+title: Kronecker-Weber
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - roots-of-unity
-  - abelian-groups
+  - Galois Theory
+  - Roots of Unity
+  - Abelian Groups
 relations: []
 review: draft
 ---

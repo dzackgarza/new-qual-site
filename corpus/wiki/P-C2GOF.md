@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - continuity
-  - functions-and-relations
+  - Continuity
+  - Functions and Relations
 relations: []
 review: draft
 solved: false

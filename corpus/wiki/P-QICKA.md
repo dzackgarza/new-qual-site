@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QICKA
 kind: problem
-title: Continuous images of compact sets are compact, while continuous images of closed sets need not be closed
+title: Continuous images of compact sets are compact, while continuous images of closed
+  sets need not be closed
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - continuity
-  - counterexamples
+  - Compactness
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: false

@@ -8,9 +8,9 @@ classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - semisimplicity
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Semisimplicity
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

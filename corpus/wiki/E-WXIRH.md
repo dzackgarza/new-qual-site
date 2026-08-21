@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-WXIRH
 kind: exercise
-title: "Integration by parts, special case"
+title: Integration by parts, special case
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - fubini-tonelli
+  - Integrals
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Integration by parts, special case"}
 \[
 F(x):=\int_{0}^{x} f(y) d y \quad \text { and } \quad G(x):=\int_{0}^{x} g(y) d y \\ 

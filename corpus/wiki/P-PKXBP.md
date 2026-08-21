@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-PKXBP
 kind: problem
-title: A normal $p$-subgroup lies in every Sylow $p$-subgroup, and in a maximal subgroup or with $p$-power index
+title: A normal $p$-subgroup lies in every Sylow $p$-subgroup, and in a maximal subgroup
+  or with $p$-power index
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - p-groups
+  - Sylow Theory
+  - Normal Subgroups
+  - p-Groups
 relations: []
 review: draft
 solved: true
 ---
+
 Let $G$ be a finite group whose order is divisible by a prime number $p$.
 Let $P$ be a normal $p\dash$subgroup of $G$
 (so $\abs P = p^c$ for some $c$).

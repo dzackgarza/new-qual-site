@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: C-YQUHR
 kind: corollary
-title: "Minimum modulus principle"
+title: Minimum modulus principle
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - holomorphic-functions
-  - zeros
+  - Maximum Modulus Principle
+  - Holomorphic Functions
+  - Zeros
 relations: []
 review: draft
 ---

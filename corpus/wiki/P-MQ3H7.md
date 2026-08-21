@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - matrices
-  - diagonalization
+  - Jordan Canonical Form
+  - Matrices
+  - Diagonalization
 relations: []
 review: draft
 solved: false

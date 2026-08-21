@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: P-ZRVTI
 kind: problem
-title: "Entire univalent functions are affine/linear"
+title: Entire univalent functions are affine/linear
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - casorati-weierstrass
-  - biholomorphisms
-  - singularities
+  - Entire Functions
+  - Casorati-Weierstrass
+  - Biholomorphisms
+  - Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Entire univalent functions are affine/linear"}
 Let $f: \mathbb{C} \rightarrow \mathbb{C}$ be an injective analytic (also called univalent) function. Show that there exist complex numbers $a \neq 0$ and $b$ such that $f(z)=a z+b$.
 

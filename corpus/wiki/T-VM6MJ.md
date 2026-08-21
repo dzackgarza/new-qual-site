@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-VM6MJ
 kind: theorem
-title: "Schwarz lemma, a useful alternative statement"
+title: Schwarz lemma, a useful alternative statement
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
+  - Schwarz Lemma
 relations: []
 review: draft
 ---

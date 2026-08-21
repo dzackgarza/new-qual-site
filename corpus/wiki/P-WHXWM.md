@@ -8,8 +8,8 @@ classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - counterexamples
+  - Separation Axioms
+  - Counterexamples
 relations: []
 review: draft
 solved: false

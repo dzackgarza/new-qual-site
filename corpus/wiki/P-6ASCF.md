@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-6ASCF
 kind: problem
-title: 'A real $5\times 5$ matrix with eigenvalues $0$, $1+i$, and $1+2i$: injectivity, characteristic and minimal polynomials, and fixed points'
+title: 'A real $5\times 5$ matrix with eigenvalues $0$, $1+i$, and $1+2i$: injectivity,
+  characteristic and minimal polynomials, and fixed points'
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - eigenvalues-and-eigenvectors
-  - rank-and-nullity
+  - Minimal and Characteristic Polynomials
+  - Eigenvalues and Eigenvectors
+  - Rank and Nullity
 relations: []
 review: draft
 solved: false

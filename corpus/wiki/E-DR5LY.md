@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-DR5LY
 kind: exercise
-title: "Hadamard expansion of $\\sin$"
+title: Hadamard expansion of $\sin$
 classification:
   areas:
   - complex-analysis
   topics:
-  - weierstrass-factorization
-  - entire-functions
-  - zeros
-  - trigonometry
+  - Weierstrass Factorization
+  - Entire Functions
+  - Zeros
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Hadamard expansion of $\sin$"}
 Find a Hadamard expansion of $\sin(\pi z)$.
 :::

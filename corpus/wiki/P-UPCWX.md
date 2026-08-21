@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
-  - continuity
-  - uniform-continuity
+  - Calculus
+  - Continuity
+  - Uniform Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f$ be differentiable on $[a, b]$.
 Say that $f$ is *uniformly differentiable* iff 

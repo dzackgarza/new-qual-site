@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - prime-ideals
-  - number-theory
-  - commutative-algebra
+  - Prime Ideals
+  - Number Theory
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

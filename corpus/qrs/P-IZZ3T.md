@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - riemann-integrability
-  - integrals
+  - Riemann Integrability
+  - Integrals
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-Q4LAQ
 kind: problem
-title: "Hungerford 7.2.5"
+title: Hungerford 7.2.5
 classification:
   areas:
   - algebra
   topics:
-  - smith-normal-form
-  - canonical-forms
-  - principal-ideal-domains
+  - Smith Normal Form
+  - Canonical Forms
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

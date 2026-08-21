@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - eigenvalues-and-eigenvectors
-  - matrices
-  - inner-product-spaces
+  - Eigenvalues and Eigenvectors
+  - Matrices
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

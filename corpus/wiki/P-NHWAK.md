@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - jacobson-radical
-  - ideals
-  - algebras
+  - Jacobson Radical
+  - Ideals
+  - Algebras
 relations: []
 review: draft
 solved: false

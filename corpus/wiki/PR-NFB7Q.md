@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-NFB7Q
 kind: proposition
-title: "Dense subspaces of $L^2(I)$"
+title: Dense subspaces of $L^2(I)$
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - lp-spaces
-  - l2
+  - Density
+  - Lp Spaces
+  - L²
 relations: []
 review: draft
 ---

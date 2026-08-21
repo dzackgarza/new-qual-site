@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-D4X7R
 kind: problem
-title: Jordan form of $\begin{pmatrix}0&1&-2\\1&1&-3\\1&2&-4\end{pmatrix}$ and a conjugating matrix
+title: Jordan form of $\begin{pmatrix}0&1&-2\\1&1&-3\\1&2&-4\end{pmatrix}$ and a conjugating
+  matrix
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - eigenvalues-and-eigenvectors
-  - matrices
+  - Jordan Canonical Form
+  - Eigenvalues and Eigenvectors
+  - Matrices
 relations: []
 review: draft
 solved: true

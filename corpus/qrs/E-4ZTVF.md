@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - quotient-spaces
+  - Compactness
+  - Quotient Spaces
 relations: []
 review: draft
 solved: true

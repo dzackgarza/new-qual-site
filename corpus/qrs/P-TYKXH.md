@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - gamma-function
-  - holomorphic-functions
-  - residues
+  - Gamma Function
+  - Holomorphic Functions
+  - Residues
 relations: []
 review: draft
 solved: false

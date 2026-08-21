@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-QDRB4
 kind: proposition
-title: "Galois is upper transitive, characterization of when lower transitivity holds"
+title: Galois is upper transitive, characterization of when lower transitivity holds
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - normal-subgroups
-  - field-extensions
+  - Galois Theory
+  - Normal Subgroups
+  - Field Extensions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Galois is upper transitive, characterization of when lower transitivity holds"}
 If $L/k$ is Galois, then $L/F$ is **always** Galois.
 Moreover, $F/k$ is Galois if and only if \( \Gal(L/F) \normal \Gal(L/k) \)

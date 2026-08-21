@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-SVJUN
 kind: theorem
-title: "Recognizing Direct Products"
+title: Recognizing Direct Products
 classification:
   areas:
   - algebra
   topics:
-  - direct-products
-  - normal-subgroups
+  - Direct Products
+  - Normal Subgroups
 relations: []
 review: draft
 ---

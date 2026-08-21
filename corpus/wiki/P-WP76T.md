@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - subgroups
-  - cosets-and-lagrange
+  - p-Groups
+  - Subgroups
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: false

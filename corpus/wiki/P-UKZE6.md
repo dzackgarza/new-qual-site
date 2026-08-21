@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-UKZE6
 kind: problem
-title: Every proper ideal lies in a maximal ideal; $x\in J(R)$ iff $1+rx$ is a unit; $J(R)$ consists of the nilpotents when $R$ is finite
+title: Every proper ideal lies in a maximal ideal; $x\in J(R)$ iff $1+rx$ is a unit;
+  $J(R)$ consists of the nilpotents when $R$ is finite
 classification:
   areas:
   - algebra
   topics:
-  - jacobson-radical
-  - maximal-ideals
-  - nilpotence
+  - Jacobson Radical
+  - Maximal Ideals
+  - Nilpotence
 relations: []
 review: draft
 solved: true
 ---
+
 Let $R$ be a commutative ring with 1.
 
 > Recall that $x \in R$ is nilpotent iff $xn = 0$ for

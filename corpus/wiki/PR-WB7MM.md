@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-WB7MM
 kind: proposition
-title: "Morphisms between groups finite and infinite groups"
+title: Morphisms between groups finite and infinite groups
 classification:
   areas:
   - topology
   topics:
-  - groups
-  - fundamental-group
+  - Groups
+  - Fundamental Group
 relations: []
 review: draft
 ---

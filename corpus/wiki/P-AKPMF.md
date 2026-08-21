@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - lp-spaces
-  - norms
+  - Dual Spaces
+  - Lp Spaces
+  - Norms
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-GZPXW
 kind: problem
-title: "Hungerford 5.8.9"
+title: Hungerford 5.8.9
 classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - field-extensions
-  - number-theory
+  - Roots of Unity
+  - Field Extensions
+  - Number Theory
 relations: []
 review: draft
 solved: false

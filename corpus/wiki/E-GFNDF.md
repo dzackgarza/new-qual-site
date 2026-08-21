@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - counterexamples
-  - sequences-of-functions
+  - Equicontinuity
+  - Counterexamples
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true

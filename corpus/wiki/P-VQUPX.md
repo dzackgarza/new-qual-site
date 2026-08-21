@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-VQUPX
 kind: problem
-title: Taylor coefficients of an entire function as contour integrals, uniform convergence on bounded sets, and uniform convergence on $\mathbb{C}$
+title: Taylor coefficients of an entire function as contour integrals, uniform convergence
+  on bounded sets, and uniform convergence on $\mathbb{C}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - cauchy-integral-formula
-  - uniform-convergence
-  - entire-functions
+  - Power Series
+  - Cauchy Integral Formula
+  - Uniform Convergence
+  - Entire Functions
 relations: []
 review: draft
 solved: false

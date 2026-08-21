@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - classification
-  - sylow-theory
-  - group-presentations
+  - Classification
+  - Sylow Theory
+  - Group Presentations
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - roots-of-unity
-  - cyclic-groups
+  - Galois Theory
+  - Roots of Unity
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

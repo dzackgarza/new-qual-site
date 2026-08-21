@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-GURUB
 kind: definition
-title: "Ring"
+title: Ring
 classification:
   areas:
   - algebra
   topics:
-  - rings
+  - Rings
 relations: []
 review: draft
 ---

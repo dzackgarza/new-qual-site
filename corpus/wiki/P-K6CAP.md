@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l2
-  - small-tails
-  - convergence-of-integrals
+  - L²
+  - Small Tails
+  - Convergence of Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f, g \in L^2(\RR)$. Show that
 \[
 \lim _{n \to \infty} \int _{\RR} f(x) g(x+n) \,dx = 0

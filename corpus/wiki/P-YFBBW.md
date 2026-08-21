@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-continuity
-  - continuity
+  - Uniform Continuity
+  - Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $f:\RR\to\RR$ is continuous and $\lim_{x\to \pm \infty} f(x) = 0$.
 Prove that $f$ is uniformly continuous.

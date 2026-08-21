@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - algebras
-  - semisimplicity
-  - classification
+  - Algebras
+  - Semisimplicity
+  - Classification
 relations: []
 review: draft
 solved: false

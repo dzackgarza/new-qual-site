@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - maximum-modulus-principle
+  - Open Mapping Theorem
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: false

@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - entire-functions
-  - power-series
-  - identity-theorem
+  - Cauchy-Riemann
+  - Entire Functions
+  - Power Series
+  - Identity Theorem
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - continuity
+  - Compactness
+  - Hausdorff Spaces
+  - Continuity
 relations: []
 review: draft
 solved: false

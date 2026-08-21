@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-C2WAH
 kind: problem
-title: "Nilradical is intersection of primes"
+title: Nilradical is intersection of primes
 classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - prime-ideals
-  - ideals
+  - Nilpotence
+  - Prime Ideals
+  - Ideals
 relations: []
 review: draft
 solved: true

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-WECI4
 kind: problem
-title: "Arbitrary Rouch\u00e9, $R\\mathbb{D}$"
+title: Arbitrary Rouché, $R\mathbb{D}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Arbitrary Rouché, $R\mathbb{D}$"}
 Find the number of zeros in $\abs{z} < R$ of 
 \[

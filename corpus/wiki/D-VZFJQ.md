@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-VZFJQ
 kind: definition
-title: "Path Components"
+title: Path Components
 classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 ---

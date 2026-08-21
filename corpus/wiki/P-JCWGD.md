@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JCWGD
 kind: problem
-title: The stabilizer is a subgroup, and the orbit-stabilizer bijection $G\cdot x\simeq G/G_x$
+title: The stabilizer is a subgroup, and the orbit-stabilizer bijection $G\cdot x\simeq
+  G/G_x$
 classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - group-actions
-  - cosets-and-lagrange
+  - Orbit-Stabilizer
+  - Group Actions
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: false

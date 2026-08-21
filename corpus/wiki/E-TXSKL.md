@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: E-TXSKL
 kind: exercise
-title: $\lim_{n\to\infty}\sum_{k\ge 1}k^{-2}\sin^n(k)$ and $\lim_{n\to\infty}\sum_{k\ge 1}k^{-1}e^{-k/n}$
+title: $\lim_{n\to\infty}\sum_{k\ge 1}k^{-2}\sin^n(k)$ and $\lim_{n\to\infty}\sum_{k\ge
+  1}k^{-1}e^{-k/n}$
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - series-of-numbers
-  - fatou
+  - Convergence of Integrals
+  - Series of Numbers
+  - Fatou
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Compute the following limits:
 

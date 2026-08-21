@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-KJC6W
 kind: definition
-title: "Closed Sets: A set is closed if and only if its complement is open."
+title: 'Closed Sets: A set is closed if and only if its complement is open.'
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - closure
+  - Point-Set Topology
+  - Closure
 relations: []
 review: draft
 ---

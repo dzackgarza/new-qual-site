@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-HTIL5
 kind: definition
-title: "Principal Ideal Domain"
+title: Principal Ideal Domain
 classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - ideals
+  - Principal Ideal Domains
+  - Ideals
 relations: []
 review: draft
 ---

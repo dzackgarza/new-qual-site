@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - trigonometry
+  - Rouché
+  - Zeros
+  - Trigonometry
 relations: []
 review: draft
 solved: false

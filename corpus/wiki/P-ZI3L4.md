@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - cell-complexes
-  - quotient-spaces
+  - Fundamental Group
+  - Cell Complexes
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

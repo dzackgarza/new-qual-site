@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-SS34F
 kind: definition
-title: "Invariant Factor Decomposition"
+title: Invariant Factor Decomposition
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - abelian-groups
-  - classification
+  - Structure Theorem
+  - Abelian Groups
+  - Classification
 relations: []
 review: draft
 ---
+
 :::{.definition title="Invariant Factor Decomposition"}
 If $G$ is a finitely generated abelian group, then there is a decomposition
 $$

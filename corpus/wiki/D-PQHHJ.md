@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-PQHHJ
 kind: definition
-title: "Reduced Ring"
+title: Reduced Ring
 classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - rings
+  - Nilpotence
+  - Rings
 relations: []
 review: draft
 ---

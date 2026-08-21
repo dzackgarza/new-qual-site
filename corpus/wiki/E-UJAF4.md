@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-UJAF4
 kind: exercise
-title: "Equicontinuity + pointwise convergence implies uniform convergence"
+title: Equicontinuity + pointwise convergence implies uniform convergence
 classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - uniform-convergence
-  - sequences-of-functions
-  - compactness
+  - Equicontinuity
+  - Uniform Convergence
+  - Sequences of Functions
+  - Compactness
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Equicontinuity + pointwise convergence implies uniform convergence"}
 Prove the following: if $\ts{f_n}$ is equicontinuous on $K$ a compact set and $f_n\to f$ pointwise, then $f_n\to f$ uniformly.
 

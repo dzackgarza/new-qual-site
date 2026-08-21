@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-Q6PDD
 kind: problem
-title: Eigenvalues of a Hermitian matrix are real, and $A=PDP^{-1}$ with orthogonal columns
+title: Eigenvalues of a Hermitian matrix are real, and $A=PDP^{-1}$ with orthogonal
+  columns
 classification:
   areas:
   - algebra
   topics:
-  - eigenvalues-and-eigenvectors
-  - inner-product-spaces
-  - diagonalization
+  - Eigenvalues and Eigenvectors
+  - Inner Product Spaces
+  - Diagonalization
 relations: []
 review: draft
 solved: false

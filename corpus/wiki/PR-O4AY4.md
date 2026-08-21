@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-O4AY4
 kind: proposition
-title: "$L^1$ functions are absolutely continuous."
+title: $L^1$ functions are absolutely continuous.
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity-of-measure
-  - l1
+  - Continuity of Measure
+  - L¹
 relations: []
 review: draft
 ---

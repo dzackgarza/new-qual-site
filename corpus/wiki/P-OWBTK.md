@@ -7,12 +7,13 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - characteristic
+  - Rings
+  - Characteristic
 relations: []
 review: draft
 solved: true
 ---
+
 Let $R$ be a ring with the property that for every $a \in R, a^2 = a$.
 
 a.

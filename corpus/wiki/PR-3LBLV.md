@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-3LBLV
 kind: proposition
-title: "Upper half-plane to centered vertical half-strip"
+title: Upper half-plane to centered vertical half-strip
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - trigonometry
+  - Conformal Maps
+  - Trigonometry
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Upper half-plane to centered vertical half-strip"}
 \[
 F: \HH &\to \qty{-{\pi \over 2}, {\pi \over 2}} \cross i\RR \\

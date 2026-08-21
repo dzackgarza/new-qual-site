@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - linear-maps
+  - Linear Maps
 relations: []
 review: draft
 solved: false

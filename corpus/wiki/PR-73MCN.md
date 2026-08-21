@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-73MCN
 kind: proposition
-title: "Splits Product of Irreducibles"
+title: Splits Product of Irreducibles
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - irreducibility-criteria
-  - polynomials
+  - Finite Fields
+  - Irreducibility Criteria
+  - Polynomials
 relations: []
 review: draft
 ---

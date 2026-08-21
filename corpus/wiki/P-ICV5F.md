@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ICV5F
 kind: problem
-title: Eigenvalues of Hermitian matrices are real, and eigenvalues of unitary matrices have modulus $1$
+title: Eigenvalues of Hermitian matrices are real, and eigenvalues of unitary matrices
+  have modulus $1$
 classification:
   areas:
   - algebra
   topics:
-  - eigenvalues-and-eigenvectors
-  - inner-product-spaces
-  - matrices
+  - Eigenvalues and Eigenvectors
+  - Inner Product Spaces
+  - Matrices
 relations: []
 review: draft
 solved: false

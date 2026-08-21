@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-AOJG3
 kind: definition
-title: "Cover"
+title: Cover
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - point-set
+  - Compactness
+  - Point-Set Topology
 relations: []
 review: draft
 ---

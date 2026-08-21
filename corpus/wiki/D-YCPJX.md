@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-YCPJX
 kind: definition
-title: "Orientation of a manifold"
+title: Orientation of a manifold
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - manifolds
-  - homology
+  - Orientation
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

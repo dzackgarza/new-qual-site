@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-TWF4F
 kind: proposition
-title: "f_k \\converges{\\ae}\\to f \\text{ and }"
+title: f_k \converges{\ae}\to f \text{ and }
 classification:
   areas:
   - real-analysis
   topics:
-  - fatou
-  - lp-spaces
-  - convergence-of-functions
+  - Fatou
+  - Lp Spaces
+  - Convergence of Functions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="?"}
 \[
 f_k \converges{\ae}\to f \text{ and }

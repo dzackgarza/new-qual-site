@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - polynomials
+  - Polynomials
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-4DIFI
 kind: problem
-title: Euler characteristic of a compact surface with $k$ boundary components is at most $2-k$
+title: Euler characteristic of a compact surface with $k$ boundary components is at
+  most $2-k$
 classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - surfaces
+  - Euler Characteristic
+  - Surfaces
 relations: []
 review: draft
 solved: false

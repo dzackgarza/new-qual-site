@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-2WJ4U
 kind: theorem
-title: "Hadamard factorization"
+title: Hadamard factorization
 classification:
   areas:
   - complex-analysis
   topics:
-  - weierstrass-factorization
-  - entire-functions
-  - zeros
+  - Weierstrass Factorization
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Hadamard factorization"}
 Write
 \[

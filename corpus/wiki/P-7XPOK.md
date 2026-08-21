@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-7XPOK
 kind: problem
-title: Countable disjoint intervals, open sets in $\RR$ and $\RR^n$, the Cantor set, and Borel–Cantelli
+title: Countable disjoint intervals, open sets in $\RR$ and $\RR^n$, the Cantor set,
+  and Borel–Cantelli
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - cantor-set
-  - borel-cantelli
+  - Measure Theory
+  - Cantor Set
+  - Borel-Cantelli
 relations: []
 review: draft
 solved: true

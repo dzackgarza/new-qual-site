@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-3PVRB
 kind: definition
-title: "The Infinity Norm / Essential supremum / Essentially bounded"
+title: The Infinity Norm / Essential supremum / Essentially bounded
 classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - norms
+  - L∞
+  - Norms
 relations: []
 review: draft
 ---
+
 :::{.definition title="The Infinity Norm / Essential supremum / Essentially bounded"}
 \[
 \norm{f}_\infty &\definedas \inf_{\alpha \geq 0} \theset{\alpha \suchthat \mu\qty{\theset{\abs{f} \geq \alpha}} = 0}

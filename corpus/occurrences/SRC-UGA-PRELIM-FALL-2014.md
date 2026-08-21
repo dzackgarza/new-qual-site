@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- assets/attachments/grad_prelim_Fall14.pdf
+source:
   source_kind: university-exam
   institution: uga
   area: prelim
@@ -29,5 +31,5 @@ payload:
 ---
 
 ::: remark
-UGA prelim Fall 2014. The paper is `assets/attachments/grad_prelim_Fall14.pdf` (headed Department of Mathematics, Preliminary Examination, August 12, 2014). Eight questions; the list is sitting order. Worked writeups: `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2014 Fall.md.source`.
+Headed August 12, 2014.
 :::

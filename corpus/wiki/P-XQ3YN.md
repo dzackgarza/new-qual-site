@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-XQ3YN
 kind: problem
-title: A field of characteristic $p\neq 0$ is perfect iff every element is a $p$-th power
+title: A field of characteristic $p\neq 0$ is perfect iff every element is a $p$-th
+  power
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - characteristic
-  - fields
+  - Separability
+  - Characteristic
+  - Fields
 relations: []
 review: draft
 solved: false

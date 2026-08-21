@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-DUK6M
 kind: exercise
-title: "$xe^{2ix}/x^2-1$"
+title: $xe^{2ix}/x^2-1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$xe^{2ix}/x^2-1$ "}
 \[
 I \da \int_\RR {xe^{2ix} \over x^2-1}\dx = i\pi \cos(2)

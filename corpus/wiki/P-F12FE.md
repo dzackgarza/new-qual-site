@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - functions-and-relations
-  - induction
+  - Functions and Relations
+  - Induction
 relations: []
 review: draft
 solved: false

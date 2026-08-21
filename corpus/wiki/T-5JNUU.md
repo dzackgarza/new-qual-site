@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-5JNUU
 kind: theorem
-title: "Rouch\u00e9's Theorem"
+title: Rouché's Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - winding-number
+  - Rouché
+  - Zeros
+  - Winding Number
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Rouché's Theorem" ref="Rouche"}
 If
 

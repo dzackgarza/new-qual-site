@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-4J6IB
 kind: exercise
-title: "When bounds imply removability"
+title: When bounds imply removability
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - singularities
+  - Removable Singularities
+  - Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="When bounds imply removability"}
 Suppose $f$ is holomorphic with $z_0 = 0$ an isolated singularity, and suppose there is some neighborhood of $0$ on which
 \[

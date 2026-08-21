@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - homomorphisms
-  - torsion
+  - Modules
+  - Homomorphisms
+  - Torsion
 relations: []
 review: draft
 solved: false

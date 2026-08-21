@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-ML2I7
 kind: exercise
-title: "$f(z)= u(x,y) +i v(x,y)$ be analytic in a domain"
+title: $f(z)= u(x,y) +i v(x,y)$ be analytic in a domain
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - cauchy-riemann
-  - harmonic-functions
+  - Conformal Maps
+  - Cauchy-Riemann
+  - Harmonic Functions
 relations: []
 review: draft
 solved: false

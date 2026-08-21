@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MVETM
 kind: problem
-title: If every irreducible in $F[x]$ is separable then every element of $F$ is a $p$-th power
+title: If every irreducible in $F[x]$ is separable then every element of $F$ is a
+  $p$-th power
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - characteristic
-  - irreducibility-criteria
+  - Separability
+  - Characteristic
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

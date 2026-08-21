@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-L7G3D
 kind: problem
-title: If $\mu(X\setminus E_n)\to 0$ then almost every point lies in infinitely many $E_n$
+title: If $\mu(X\setminus E_n)\to 0$ then almost every point lies in infinitely many
+  $E_n$
 classification:
   areas:
   - real-analysis
   topics:
-  - borel-cantelli
-  - measure-theory
+  - Borel-Cantelli
+  - Measure Theory
 relations: []
 review: draft
 solved: true
 ---
+
 Let $(X, \mathcal M, \mu)$ be a measure space and suppose $\theset{E_n} \subset \mathcal M$ satisfies
 \[
 \lim _{n \rightarrow \infty} \mu\left(X \backslash E_{n}\right)=0.

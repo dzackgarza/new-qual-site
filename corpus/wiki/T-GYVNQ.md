@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-GYVNQ
 kind: theorem
-title: "Wedderburn"
+title: Wedderburn
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - rings
-  - integral-domains
+  - Finite Fields
+  - Rings
+  - Integral Domains
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rational-canonical-form
-  - jordan-canonical-form
-  - matrices
+  - Rational Canonical Form
+  - Jordan Canonical Form
+  - Matrices
 relations: []
 review: draft
 solved: false

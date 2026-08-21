@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: L-MYZOX
 kind: lemma
-title: "Abel's Test"
+title: Abel's Test
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - power-series
+  - Convergence Tests
+  - Power Series
 relations: []
 review: draft
 ---

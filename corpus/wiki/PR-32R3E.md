@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-32R3E
 kind: proposition
-title: "Identification of Finite Fields as Splitting Fields"
+title: Identification of Finite Fields as Splitting Fields
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - splitting-fields
+  - Finite Fields
+  - Splitting Fields
 relations: []
 review: draft
 ---

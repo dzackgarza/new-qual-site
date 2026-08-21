@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-LZTNT
 kind: exercise
-title: "Essential singularities"
+title: Essential singularities
 classification:
   areas:
   - complex-analysis
   topics:
-  - essential-singularities
-  - casorati-weierstrass
-  - singularities
+  - Essential Singularities
+  - Casorati-Weierstrass
+  - Singularities
 relations: []
 review: draft
 solved: true

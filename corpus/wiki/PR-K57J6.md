@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-K57J6
 kind: proposition
-title: "Holomorphic functions have harmonic components"
+title: Holomorphic functions have harmonic components
 classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - cauchy-riemann
-  - holomorphic-functions
+  - Harmonic Functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

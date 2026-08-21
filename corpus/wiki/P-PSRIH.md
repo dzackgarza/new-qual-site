@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-PSRIH
 kind: problem
-title: Presentation of the nonabelian group of order $63$ with an element of order $9$
+title: Presentation of the nonabelian group of order $63$ with an element of order
+  $9$
 classification:
   areas:
   - algebra
   topics:
-  - group-presentations
-  - semidirect-products
-  - classification
+  - Group Presentations
+  - Semidirect Products
+  - Classification
 relations: []
 review: draft
 solved: true
 ---
+
 Give generators and relations for the non-commutative group $G$ of order 63 containing an element of order $9 .$
 
 :::{.solution}

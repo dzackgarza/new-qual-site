@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-NBQ5W
 kind: problem
-title: An everywhere differentiable function whose derivative is discontinuous at $0$
+title: An everywhere differentiable function whose derivative is discontinuous at
+  $0$
 classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
-  - counterexamples
-  - continuity
+  - Calculus
+  - Counterexamples
+  - Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Give an example of a function $f:\RR\to \RR$ that is everywhere differentiable but $f'$ is not continuous at 0.
 :::

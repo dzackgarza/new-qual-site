@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-GOFWL
 kind: definition
-title: "Ideal"
+title: Ideal
 classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - rings
+  - Ideals
+  - Rings
 relations: []
 review: draft
 ---

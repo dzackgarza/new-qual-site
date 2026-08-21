@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZJVTY
 kind: problem
-title: $R^n/\im A$ is torsion iff $\operatorname{rank} A=n$ iff the Smith form of $A$ has $n$ nonzero invariant factors
+title: $R^n/\im A$ is torsion iff $\operatorname{rank} A=n$ iff the Smith form of
+  $A$ has $n$ nonzero invariant factors
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - smith-normal-form
-  - torsion
+  - Structure Theorem
+  - Smith Normal Form
+  - Torsion
 relations: []
 review: draft
 solved: false

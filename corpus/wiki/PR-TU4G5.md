@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-TU4G5
 kind: proposition
-title: "Known Euler characteristics"
+title: Known Euler characteristics
 classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - manifolds
+  - Euler Characteristic
+  - Manifolds
 relations: []
 review: draft
 ---

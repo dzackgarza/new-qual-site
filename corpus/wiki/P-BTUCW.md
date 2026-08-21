@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - argument-principle
-  - zeros
+  - Open Mapping Theorem
+  - Argument Principle
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove the open mapping theorem for holomorphic functions: If $f$ is a non-constant holomorphic function on an open set $U$ in $\mathbb{C}$, then $f(U)$ is also an open set.
 :::

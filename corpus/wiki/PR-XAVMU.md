@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-XAVMU
 kind: proposition
-title: "Translation Invariance"
+title: Translation Invariance
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - measure-theory
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Translation Invariance"}
 The Lebesgue integral is translation invariant, i.e.
 \[

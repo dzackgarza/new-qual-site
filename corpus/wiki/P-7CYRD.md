@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-7CYRD
 kind: problem
-title: Open-set, $\varepsilon$-$\delta$, and sequential criteria for continuity in a metric space
+title: Open-set, $\varepsilon$-$\delta$, and sequential criteria for continuity in
+  a metric space
 classification:
   areas:
   - topology
   topics:
-  - continuity
-  - metric-spaces
-  - convergence
+  - Continuity
+  - Metric Spaces
+  - Convergence
 relations: []
 review: draft
 solved: false

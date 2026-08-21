@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-FG4DK
 kind: proposition
-title: "Killing homotopy"
+title: Killing homotopy
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - cell-complexes
-  - fundamental-group
+  - Homotopy
+  - Cell Complexes
+  - Fundamental Group
 relations: []
 review: draft
 ---

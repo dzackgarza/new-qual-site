@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-WFXQP
 kind: theorem
-title: "Residue formula: poles at infinity"
+title: 'Residue formula: poles at infinity'
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - singularities
+  - Residues
+  - Singularities
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Residue formula: poles at infinity"}
 \[
 \Res_{z=\infty}f(z) = \Res_{z=0} g(z) && g(z) \da -{1 \over z^2}f\qty{1\over z} 

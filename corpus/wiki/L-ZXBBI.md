@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - riemann-surfaces
-  - holomorphic-functions
-  - compactness
+  - Riemann Surfaces
+  - Holomorphic Functions
+  - Compactness
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - abelian-groups
-  - classification
+  - Sylow Theory
+  - Abelian Groups
+  - Classification
 relations: []
 review: draft
 solved: false

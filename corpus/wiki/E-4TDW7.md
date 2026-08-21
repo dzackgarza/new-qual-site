@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - polynomials
+  - Field Extensions
+  - Polynomials
 relations: []
 review: draft
 solved: false

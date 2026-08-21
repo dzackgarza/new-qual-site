@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- https://www.math.uga.edu/sites/default/files/Quals/Topology%20%5BFall%202010%5D.docx
+source:
   source_kind: university-exam
   institution: uga
   area: topology

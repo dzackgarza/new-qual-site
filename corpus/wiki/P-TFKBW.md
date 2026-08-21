@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TFKBW
 kind: problem
-title: A finite abelian group with at most $n$ elements of order divisible by $n$ is cyclic
+title: A finite abelian group with at most $n$ elements of order divisible by $n$
+  is cyclic
 classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - cyclic-groups
-  - classification
+  - Abelian Groups
+  - Cyclic Groups
+  - Classification
 relations: []
 review: draft
 solved: false

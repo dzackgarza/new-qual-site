@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-KTZZ5
 kind: proposition
-title: "Convergence implies convergence of inner products"
+title: Convergence implies convergence of inner products
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - inner-product-spaces
-  - convergence-of-functions
+  - Hilbert Spaces
+  - Inner Product Spaces
+  - Convergence of Functions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Convergence implies convergence of inner products"}
 If $x_k\to x$ and $y_k\to y$ in $H$, then $\inner{x_k}{y_k} \to \inner{x}{y}$.
 Proof:

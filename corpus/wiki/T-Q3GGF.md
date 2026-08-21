@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-Q3GGF
 kind: theorem
-title: "Schwarz Reflection"
+title: Schwarz Reflection
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-reflection
+  - Schwarz Reflection
 relations: []
 review: draft
 ---

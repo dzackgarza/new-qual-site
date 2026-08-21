@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-3FB24
 kind: proposition
-title: "Nondegenerate intersection pairings"
+title: Nondegenerate intersection pairings
 classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - manifolds
-  - cohomology
+  - Poincaré Duality
+  - Manifolds
+  - Cohomology
 relations: []
 review: draft
 ---

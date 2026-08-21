@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-PTEW6
 kind: problem
-title: "Hungerford 5.1.14"
+title: Hungerford 5.1.14
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - bases
-  - roots-of-unity
+  - Field Extensions
+  - Bases
+  - Roots of Unity
 relations: []
 review: draft
 solved: false

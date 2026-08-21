@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-TNBFZ
 kind: definition
-title: "Quotient Map"
+title: Quotient Map
 classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - continuity
+  - Quotient Spaces
+  - Continuity
 relations: []
 review: draft
 ---

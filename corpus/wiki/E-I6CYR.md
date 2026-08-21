@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - gamma-function
-  - integrals
-  - convolution
+  - Gamma Function
+  - Integrals
+  - Convolution
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="?"}
 Show that
 \[

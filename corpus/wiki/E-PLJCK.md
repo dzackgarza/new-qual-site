@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: E-PLJCK
 kind: exercise
-title: Entire functions with $f(z)/z^{n}\to 0$ at infinity are polynomials of degree at most $n-1$
+title: Entire functions with $f(z)/z^{n}\to 0$ at infinity are polynomials of degree
+  at most $n-1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - cauchy-estimates
-  - polynomials
-  - liouville-s-theorem
+  - Entire Functions
+  - Cauchy Estimates
+  - Polynomials
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $f$ is entire and suppose that for some integer $n\geq 1$,
 \[

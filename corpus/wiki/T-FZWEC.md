@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-FZWEC
 kind: theorem
-title: "Hurwitz"
+title: Hurwitz
 classification:
   areas:
   - complex-analysis
   topics:
-  - hurwitz
-  - zeros
-  - uniform-convergence
+  - Hurwitz
+  - Zeros
+  - Uniform Convergence
 relations: []
 review: draft
 ---

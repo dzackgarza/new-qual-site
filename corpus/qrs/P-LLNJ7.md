@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - limits
+  - Contour Integration
+  - Limits
 relations: []
 review: draft
 solved: false

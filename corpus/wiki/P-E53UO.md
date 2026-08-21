@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - cell-complexes
-  - retracts
+  - Homotopy
+  - Cell Complexes
+  - Retracts
 relations: []
 review: draft
 solved: false

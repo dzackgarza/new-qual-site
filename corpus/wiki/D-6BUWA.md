@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-6BUWA
 kind: definition
-title: "Singular Homology"
+title: Singular Homology
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 ---

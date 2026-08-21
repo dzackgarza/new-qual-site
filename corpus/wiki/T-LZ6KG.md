@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-LZ6KG
 kind: theorem
-title: "Extension over removable singularities"
+title: Extension over removable singularities
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - singularities
+  - Removable Singularities
+  - Singularities
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-R7HSU
 kind: problem
-title: The cokernel of $A\in M_n(\mathbb{Z})$ is finite iff $\det A\neq 0$, with order $|\det A|$
+title: The cokernel of $A\in M_n(\mathbb{Z})$ is finite iff $\det A\neq 0$, with order
+  $|\det A|$
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - determinants
-  - modules
+  - Structure Theorem
+  - Determinants
+  - Modules
 relations: []
 review: draft
 solved: false

@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - functional-analysis
+  - Hilbert Spaces
+  - Functional Analysis
 relations: []
 review: draft
 solved: true

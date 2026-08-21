@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - radon-nikodym
+  - Measure Theory
+  - Radon-Nikodym
 relations: []
 review: draft
 solved: true

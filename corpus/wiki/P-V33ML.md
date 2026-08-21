@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-V33ML
 kind: problem
-title: "Layer-cake formula for a measurable function"
+title: Layer-cake formula for a measurable function
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - integrals
+  - Measure Theory
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f:\\RR^n\\to\\RR$ be measurable. Show that
 \[
 \int_{\RR^n} \abs{ f} = \int_0^{\infty } m(A_t)\dt && A_t \da \ts{x\in \RR^n \st \abs{f(x)} > t}

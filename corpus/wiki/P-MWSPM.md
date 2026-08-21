@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nakayamas-lemma
-  - free-modules
-  - homological-algebra
+  - Nakayama's Lemma
+  - Free Modules
+  - Homological Algebra
 relations: []
 review: draft
 solved: false

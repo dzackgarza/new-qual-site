@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-HLKLH
 kind: problem
-title: A holomorphic function with $|f|=1$ on the unit circle, or $|f|\geq 1$ with an interior point of modulus less than $1$, covers the disc
+title: A holomorphic function with $|f|=1$ on the unit circle, or $|f|\geq 1$ with
+  an interior point of modulus less than $1$, covers the disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - open-mapping-theorem
-  - rouche
-  - zeros
+  - Maximum Modulus Principle
+  - Open Mapping Theorem
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 solved: false

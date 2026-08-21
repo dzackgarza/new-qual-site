@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-K5MLW
 kind: definition
-title: "Orientable manifold"
+title: Orientable manifold
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - manifolds
+  - Orientation
+  - Manifolds
 relations: []
 review: draft
 ---

@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - eigenvalues-and-eigenvectors
-  - trace
+  - Jordan Canonical Form
+  - Eigenvalues and Eigenvectors
+  - Trace
 relations: []
 review: draft
 solved: true
 ---
+
 What is the Jordan normal form over $\mathbb{C}$ of a $7 \times 7$ matrix $A$ which satisfies all of the following conditions:
 
 a.

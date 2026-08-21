@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-BUVLS
 kind: exercise
-title: "Expanding Laurent series in different regions"
+title: Expanding Laurent series in different regions
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - poles
+  - Laurent Series
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Expanding Laurent series in different regions"}
 Expand $f(z) = {1\over z(z-1)}$ in both
 

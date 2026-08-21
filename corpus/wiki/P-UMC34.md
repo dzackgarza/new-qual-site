@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-UMC34
 kind: problem
-title: Entire functions satisfying $|f(z)|\geq|z|$ are the maps $cz$ with $|c|\geq 1$
+title: Entire functions satisfying $|f(z)|\geq|z|$ are the maps $cz$ with $|c|\geq
+  1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - removable-singularities
-  - zeros
+  - Liouville's Theorem
+  - Entire Functions
+  - Removable Singularities
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find all entire functions that satisfy
 \[

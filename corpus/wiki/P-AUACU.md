@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - limits
-  - mean-value-theorem
+  - Differentiation
+  - Limits
+  - Mean Value Theorem
 relations: []
 review: draft
 solved: true

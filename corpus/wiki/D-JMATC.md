@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-JMATC
 kind: definition
-title: "Distinguished Classes"
+title: Distinguished Classes
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
+  - Field Extensions
 relations: []
 review: draft
 ---

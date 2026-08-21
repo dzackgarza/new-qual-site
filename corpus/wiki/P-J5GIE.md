@@ -2,18 +2,21 @@
 schema: qual/card@1
 id: P-J5GIE
 kind: problem
-title: Definitions of free and torsion-free modules; splitting of $0\to N\to M\to F\to 0$ when $F$ is free; finitely generated modules over a PID as torsion plus free
+title: Definitions of free and torsion-free modules; splitting of $0\to N\to M\to
+  F\to 0$ when $F$ is free; finitely generated modules over a PID as torsion plus
+  free
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - torsion
-  - exact-sequences
+  - Free Modules
+  - Torsion
+  - Exact Sequences
 relations: []
 review: draft
 solved: true
 ---
+
 Let $R$ be a ring with unity.
 
 a.

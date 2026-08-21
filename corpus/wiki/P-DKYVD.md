@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-DKYVD
 kind: problem
-title: $\int_\gamma\frac{dz}{(z-\alpha)(z-\beta)}=\frac{2\pi i}{\alpha-\beta}$ without Cauchy's formula
+title: $\int_\gamma\frac{dz}{(z-\alpha)(z-\beta)}=\frac{2\pi i}{\alpha-\beta}$ without
+  Cauchy's formula
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - contour-integration
-  - residues
+  - Laurent Series
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 solved: false

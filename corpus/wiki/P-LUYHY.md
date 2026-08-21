@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - lp-spaces
-  - norms
+  - Convolution
+  - Lp Spaces
+  - Norms
 relations: []
 review: draft
 solved: true

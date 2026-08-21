@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-IPPKZ
 kind: problem
-title: "Spring 2021"
+title: Spring 2021
 classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - rings
-  - integral-domains
+  - Polynomials
+  - Rings
+  - Integral Domains
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Spring 2021"}
 Suppose that $f(x) \in (\ZZ/n\ZZ)[x]$ is a zero divisor.
 Show that there is a nonzero $a\in \ZZ/n\ZZ$ with $af(x) = 0$.

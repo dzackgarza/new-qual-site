@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-6POU4
 kind: definition
-title: "Intersection Form"
+title: Intersection Form
 classification:
   areas:
   - topology
   topics:
-  - cohomology
-  - poincare-duality
-  - manifolds
+  - Cohomology
+  - Poincaré Duality
+  - Manifolds
 relations: []
 review: draft
 ---

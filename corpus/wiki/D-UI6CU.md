@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-UI6CU
 kind: definition
-title: "Field"
+title: Field
 classification:
   areas:
   - algebra
   topics:
-  - fields
-  - rings
+  - Fields
+  - Rings
 relations: []
 review: draft
 ---

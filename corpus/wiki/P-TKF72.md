@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-TKF72
 kind: problem
-title: The integral of $f$ over a large circular arc of angle $\alpha$ tends to $iA\alpha$ when $zf(z)\to A$
+title: The integral of $f$ over a large circular arc of angle $\alpha$ tends to $iA\alpha$
+  when $zf(z)\to A$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - laurent-series
+  - Residues
+  - Contour Integration
+  - Laurent Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $0\leq \alpha \leq 2\pi$ be a fixed angle.
 Suppose $f$ is continuous on the region $\Omega = \ts{\abs{z} \geq R, \Arg(z) \in [0, \alpha]}$ and $\lim_{z\to \infty} zf(z) = A$.

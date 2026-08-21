@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ROEFL
 kind: problem
-title: Uniform compact convergence of $\sum f^{n}$ for analytic $f$ on $\DD$ with $f(0)=0$ not a rotation
+title: Uniform compact convergence of $\sum f^{n}$ for analytic $f$ on $\DD$ with
+  $f(0)=0$ not a rotation
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - uniform-convergence
-  - series-of-functions
+  - Schwarz Lemma
+  - Uniform Convergence
+  - Series of Functions
 relations: []
 review: draft
 solved: true

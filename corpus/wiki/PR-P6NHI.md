@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-P6NHI
 kind: proposition
-title: "Comparison Test"
+title: Comparison Test
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - convergence-tests
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 ---

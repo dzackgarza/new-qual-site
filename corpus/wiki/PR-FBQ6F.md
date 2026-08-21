@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-FBQ6F
 kind: proposition
-title: "Functional equation for $\\Gamma$"
+title: Functional equation for $\Gamma$
 classification:
   areas:
   - complex-analysis
   topics:
-  - gamma-function
+  - Gamma Function
 relations: []
 review: draft
 ---

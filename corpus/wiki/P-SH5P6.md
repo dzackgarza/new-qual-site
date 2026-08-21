@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-SH5P6
 kind: problem
-title: "Hungerford 5.4.1"
+title: Hungerford 5.4.1
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - separability
+  - Galois Theory
+  - Splitting Fields
+  - Separability
 relations: []
 review: draft
 solved: false

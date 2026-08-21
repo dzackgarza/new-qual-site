@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-6VF7J
 kind: problem
-title: 'Power series of radius $1$: convergence on the circle versus analyticity on the circle'
+title: 'Power series of radius $1$: convergence on the circle versus analyticity on
+  the circle'
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - convergence-tests
-  - series-of-functions
+  - Power Series
+  - Convergence Tests
+  - Series of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 Suppose $f$ is analytic on a region $\Omega$ such that $\DD \subseteq \Omega \subseteq \CC$ and $f(z) = \sum_{n=0}^\infty a_n z^n$ is a power series with radius of convergence exactly 1.
 
 a.

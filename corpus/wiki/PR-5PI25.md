@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-5PI25
 kind: proposition
-title: "Recognizing $A_n$ or $S_n$"
+title: Recognizing $A_n$ or $S_n$
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - subgroups
-  - galois-theory
+  - Permutations
+  - Subgroups
+  - Galois Theory
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-DXHST
 kind: problem
-title: 'Faithful transitive actions: trivial core of a stabilizer, and abelian transitive subgroups of $S_n$'
+title: 'Faithful transitive actions: trivial core of a stabilizer, and abelian transitive
+  subgroups of $S_n$'
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - orbit-stabilizer
-  - permutations
+  - Group Actions
+  - Orbit-Stabilizer
+  - Permutations
 relations: []
 review: draft
 solved: false

@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-W6MWU
 kind: exercise
-title: "Disc to upper half-plane, cross-ratio"
+title: Disc to upper half-plane, cross-ratio
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
+  - Fractional Linear Transformations
+  - Conformal Maps
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Disc to upper half-plane, cross-ratio"}
 Find a conformal map $\HH \to \DD$ using cross-ratios.
 :::

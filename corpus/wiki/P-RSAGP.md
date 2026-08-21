@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - matrix-groups
-  - quadratic-forms
+  - Bilinear Forms
+  - Matrix Groups
+  - Quadratic Forms
 relations: []
 review: draft
 solved: false

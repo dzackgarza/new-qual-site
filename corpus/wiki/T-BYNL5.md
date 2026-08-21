@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-BYNL5
 kind: theorem
-title: "Maximum modulus principle"
+title: Maximum modulus principle
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
+  - Maximum Modulus Principle
 relations: []
 review: draft
 ---

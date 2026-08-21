@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-4ALS2
 kind: theorem
-title: "Montel's theorem"
+title: Montel's theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - montel
-  - normal-families
-  - equicontinuity
+  - Montel
+  - Normal Families
+  - Equicontinuity
 relations: []
 review: draft
 ---

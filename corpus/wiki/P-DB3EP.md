@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-DB3EP
 kind: problem
-title: Equivalence of $A\mathbf{x}=\mathbf{b}$ with the corresponding system of linear equations
+title: Equivalence of $A\mathbf{x}=\mathbf{b}$ with the corresponding system of linear
+  equations
 classification:
   areas:
   - algebra
   topics:
-  - linear-algebra
-  - matrices
-  - rank-and-nullity
+  - Linear Algebra
+  - Matrices
+  - Rank and Nullity
 relations: []
 review: draft
 solved: false

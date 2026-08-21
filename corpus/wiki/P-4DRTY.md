@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-4DRTY
 kind: problem
-title: "Is $\\QQ(\\sqrt[3]{21})$ normal?"
+title: Is $\QQ(\sqrt[3]{21})$ normal?
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - galois-theory
-  - field-extensions
+  - Splitting Fields
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 solved: false

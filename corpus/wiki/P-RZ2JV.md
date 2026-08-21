@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-RZ2JV
 kind: problem
-title: Maximal submodules are those with simple quotient, and the roots of unity have no maximal submodule
+title: Maximal submodules are those with simple quotient, and the roots of unity have
+  no maximal submodule
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - maximal-ideals
-  - roots-of-unity
+  - Modules
+  - Maximal Ideals
+  - Roots of Unity
 relations: []
 review: draft
 solved: true

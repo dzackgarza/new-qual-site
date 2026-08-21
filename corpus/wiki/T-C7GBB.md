@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-C7GBB
 kind: theorem
-title: "Zeros of derivative $f'$ lie in convex hull of zeros of $f$"
+title: Zeros of derivative $f'$ lie in convex hull of zeros of $f$
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
+  - Zeros
 relations: []
 review: draft
 ---

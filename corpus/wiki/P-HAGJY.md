@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - rings
-  - homomorphisms
+  - Modules
+  - Rings
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

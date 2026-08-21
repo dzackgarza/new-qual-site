@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-MENR4
 kind: definition
-title: "Eilenberg-MacLane Space"
+title: Eilenberg-MacLane Space
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - cohomology
-  - cell-complexes
+  - Homotopy
+  - Cohomology
+  - Cell Complexes
 relations: []
 review: draft
 ---

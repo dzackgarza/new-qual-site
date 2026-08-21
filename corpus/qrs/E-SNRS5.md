@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-SNRS5
 kind: exercise
-title: "\\int_\\RR {1 \\over (1+x^2)^2} \\dx"
+title: \int_\RR {1 \over (1+x^2)^2} \dx
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - poles
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 \[
 \int_\RR {1 \over (1+x^2)^2} \dx

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - normal-subgroups
-  - subgroups
+  - p-Groups
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 solved: false

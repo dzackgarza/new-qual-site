@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - commutators
-  - subgroups
+  - p-Groups
+  - Commutators
+  - Subgroups
 relations: []
 review: draft
 solved: false

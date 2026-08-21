@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-USHDW
 kind: problem
-title: The nilradical is contained in every prime, primes avoiding powers of a non-nilpotent, and rings with a unique prime consist of nilpotents and units
+title: The nilradical is contained in every prime, primes avoiding powers of a non-nilpotent,
+  and rings with a unique prime consist of nilpotents and units
 classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - prime-ideals
-  - zorns-lemma
+  - Nilpotence
+  - Prime Ideals
+  - Zorn's Lemma
 relations: []
 review: draft
 solved: true

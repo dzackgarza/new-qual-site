@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-AXBZQ
 kind: exercise
-title: "$x\\sin(x)/1+x^2$"
+title: $x\sin(x)/1+x^2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$x\sin(x)/1+x^2$"}
 \[
 I = \int_\RR {x\sin(x) \over 1 + x^2}\dx

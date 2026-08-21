@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-AQFRA
 kind: proposition
-title: "Upper-half-plane to sectors and back"
+title: Upper-half-plane to sectors and back
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Upper-half-plane to sectors and back"}
 \[
 F: \ts{z\st \Arg(z) \in \qty{0, {\pi \over n}} } &\to \HH \\

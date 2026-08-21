@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - separability
-  - field-extensions
+  - Splitting Fields
+  - Separability
+  - Field Extensions
 relations: []
 review: draft
 solved: false

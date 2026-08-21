@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - degree
-  - fundamental-group
+  - Degree
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

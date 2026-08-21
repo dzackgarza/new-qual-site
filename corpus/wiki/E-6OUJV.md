@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-6OUJV
 kind: exercise
-title: Irreducible polynomials in characteristic $p$ are $g(x^{p^k})$ for unique separable $g$
+title: Irreducible polynomials in characteristic $p$ are $g(x^{p^k})$ for unique separable
+  $g$
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - characteristic
-  - polynomials
+  - Separability
+  - Characteristic
+  - Polynomials
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - abelian-groups
-  - counterexamples
+  - Galois Theory
+  - Abelian Groups
+  - Counterexamples
 relations: []
 review: draft
 solved: false

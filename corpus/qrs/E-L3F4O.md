@@ -8,9 +8,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - cantor-set
-  - borel-cantelli
-  - measure-theory
+  - Cantor Set
+  - Borel-Cantelli
+  - Measure Theory
 relations: []
 review: draft
 solved: true

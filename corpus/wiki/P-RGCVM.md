@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-RGCVM
 kind: problem
-title: Characteristic and minimal polynomials classify similarity of $3\times 3$ matrices over $\CC$, but not $4\times 4$
+title: Characteristic and minimal polynomials classify similarity of $3\times 3$ matrices
+  over $\CC$, but not $4\times 4$
 classification:
   areas:
   - algebra
   topics:
-  - canonical-forms
-  - minimal-and-characteristic-polynomials
-  - jordan-canonical-form
+  - Canonical Forms
+  - Minimal and Characteristic Polynomials
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

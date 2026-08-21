@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-YYJTH
 kind: problem
-title: "Hungerford 4.2.8"
+title: Hungerford 4.2.8
 classification:
   areas:
   - algebra
   topics:
-  - vector-spaces
-  - bases
-  - direct-products
+  - Vector Spaces
+  - Bases
+  - Direct Products
 relations: []
 review: draft
 solved: false

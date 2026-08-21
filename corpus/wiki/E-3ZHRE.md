@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-3ZHRE
 kind: exercise
-title: "Entire functions satisfying a bound"
+title: Entire functions satisfying a bound
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - casorati-weierstrass
-  - counterexamples
+  - Liouville's Theorem
+  - Entire Functions
+  - Casorati-Weierstrass
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Entire functions satisfying a bound"}
 Find all entire functions $f$ that satisfy
 \[

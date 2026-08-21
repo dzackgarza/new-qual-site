@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-XMSIT
 kind: theorem
-title: "Schwarz Lemma"
+title: Schwarz Lemma
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - maximum-modulus-principle
+  - Schwarz Lemma
+  - Maximum Modulus Principle
 relations: []
 review: draft
 ---

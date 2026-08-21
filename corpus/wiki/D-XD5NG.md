@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-XD5NG
 kind: definition
-title: "Normal Closure"
+title: Normal Closure
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - splitting-fields
+  - Field Extensions
+  - Splitting Fields
 relations: []
 review: draft
 ---

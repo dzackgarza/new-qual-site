@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - manifolds
+  - Fundamental Group
+  - van Kampen
+  - Manifolds
 relations: []
 review: draft
 solved: false

@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: E-H3AV4
 kind: exercise
-title: A conformal map from the lens $\{|z-\lambda|<1\}\cap\{|z-\bar\lambda|<1\}$ onto $\mathbb{D}$, for $\lambda=\frac12(1+i\sqrt{3})$
+title: A conformal map from the lens $\{|z-\lambda|<1\}\cap\{|z-\bar\lambda|<1\}$
+  onto $\mathbb{D}$, for $\lambda=\frac12(1+i\sqrt{3})$
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $\lambda = {1\over 2}\qty{1 + i \sqrt{3}}$ and find a map 
 \[

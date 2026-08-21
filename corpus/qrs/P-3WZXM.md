@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-3WZXM
 kind: problem
-title: An entire function with $|f(z)|\ge A|z|^N$ at infinity is a polynomial of degree at least $N$
+title: An entire function with $|f(z)|\ge A|z|^N$ at infinity is a polynomial of degree
+  at least $N$
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - polynomials
-  - liouville-s-theorem
+  - Entire Functions
+  - Polynomials
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true

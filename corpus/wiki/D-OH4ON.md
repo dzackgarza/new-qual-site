@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-OH4ON
 kind: definition
-title: "Cycle"
+title: Cycle
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 ---

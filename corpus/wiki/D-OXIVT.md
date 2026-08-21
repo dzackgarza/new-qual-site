@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-OXIVT
 kind: definition
-title: "Field of fractions"
+title: Field of fractions
 classification:
   areas:
   - algebra
   topics:
-  - localization
-  - integral-domains
-  - fields
+  - Localization
+  - Integral Domains
+  - Fields
 relations: []
 review: draft
 ---
+
 :::{.definition title="Field of fractions"}
 For $R\in \CRing$ an integral domain, the **field of fractions** of $R$ can be constructed as 
 \[

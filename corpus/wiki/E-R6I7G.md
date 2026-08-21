@@ -7,12 +7,13 @@ classification:
   areas:
   - algebra
   topics:
-  - direct-products
-  - normal-subgroups
+  - Direct Products
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="?"}
 Prove the "recognizing direct products" theorem.
 Can the conditions be relaxed?

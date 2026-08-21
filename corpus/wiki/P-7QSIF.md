@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-7QSIF
 kind: problem
-title: "Hungerford 2.5.6"
+title: Hungerford 2.5.6
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - p-groups
+  - Sylow Theory
+  - Normal Subgroups
+  - p-Groups
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - smith-normal-form
-  - structure-theorem
-  - abelian-groups
+  - Smith Normal Form
+  - Structure Theorem
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - galois-theory
-  - field-extensions
+  - Splitting Fields
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 solved: false

@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - pdes
-  - counterexamples
+  - Harmonic Functions
+  - PDEs
+  - Counterexamples
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
  \envlist
 

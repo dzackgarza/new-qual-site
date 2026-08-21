@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-I3DSE
 kind: problem
-title: Product of averages of $f$ and $1/f$ is at least $1$, and $\int_1^\infty 1/f=\infty$ given $\int_1^t f\le t^2\log t$
+title: Product of averages of $f$ and $1/f$ is at least $1$, and $\int_1^\infty 1/f=\infty$
+  given $\int_1^t f\le t^2\log t$
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - measure-theory
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f$ be a non-negative Lebesgue measurable function on $[1, \infty)$.
 

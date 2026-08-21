@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-YPKW5
 kind: problem
-title: 'Real differentiability: definition, partials without differentiability, and real but nowhere complex differentiability'
+title: 'Real differentiability: definition, partials without differentiability, and
+  real but nowhere complex differentiability'
 classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
-  - cauchy-riemann
-  - counterexamples
+  - Calculus
+  - Cauchy-Riemann
+  - Counterexamples
 relations: []
 review: draft
 solved: false

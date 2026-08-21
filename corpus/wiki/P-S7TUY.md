@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - geometry
-  - prime-ideals
-  - commutative-algebra
+  - Geometry
+  - Prime Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

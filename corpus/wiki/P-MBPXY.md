@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - tensor-products
-  - representation-theory
-  - modules
+  - Tensor Products
+  - Representation Theory
+  - Modules
 relations: []
 review: draft
 solved: false

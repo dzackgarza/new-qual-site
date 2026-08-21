@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-HOJKE
 kind: exercise
-title: $A$ is a field iff $A$ is a simple ring iff every homomorphism from $A$ to a nonzero field is injective
+title: $A$ is a field iff $A$ is a simple ring iff every homomorphism from $A$ to
+  a nonzero field is injective
 classification:
   areas:
   - algebra
   topics:
-  - fields
-  - ideals
-  - homomorphisms
+  - Fields
+  - Ideals
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

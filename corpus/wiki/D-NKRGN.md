@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-NKRGN
 kind: definition
-title: "Euclidean Domain"
+title: Euclidean Domain
 classification:
   areas:
   - algebra
   topics:
-  - euclidean-domains
-  - factorization
-  - integral-domains
+  - Euclidean Domains
+  - Factorization
+  - Integral Domains
 relations: []
 review: draft
 ---

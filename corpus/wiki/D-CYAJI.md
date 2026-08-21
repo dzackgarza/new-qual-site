@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-CYAJI
 kind: definition
-title: "Semisimple Modules"
+title: Semisimple Modules
 classification:
   areas:
   - algebra
   topics:
-  - semisimplicity
-  - modules
+  - Semisimplicity
+  - Modules
 relations: []
 review: draft
 ---

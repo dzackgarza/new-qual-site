@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - irreducibility-criteria
-  - roots-of-unity
-  - polynomials
+  - Irreducibility Criteria
+  - Roots of Unity
+  - Polynomials
 relations: []
 review: draft
 solved: false

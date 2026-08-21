@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JP74P
 kind: problem
-title: 'Weyl''s equidistribution theorem: $\frac1N\sum_{n=1}^N f(n\alpha)\to\int_0^1 f$ for continuous $1$-periodic $f$ and irrational $\alpha$'
+title: 'Weyl''s equidistribution theorem: $\frac1N\sum_{n=1}^N f(n\alpha)\to\int_0^1
+  f$ for continuous $1$-periodic $f$ and irrational $\alpha$'
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - integrals
-  - fourier-analysis
+  - Density
+  - Integrals
+  - Fourier Analysis
 relations: []
 review: draft
 solved: true

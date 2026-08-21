@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-VGX2B
 kind: proposition
-title: "The rationals are neither open nor closed"
+title: The rationals are neither open nor closed
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - closure
-  - euclidean-spaces
+  - Point-Set Topology
+  - Closure
+  - Euclidean Spaces
 relations: []
 review: draft
 ---

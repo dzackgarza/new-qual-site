@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: E-6ULIT
 kind: exercise
-title: Uniform limits preserve continuity and uniform continuity; pointwise limits need not
+title: Uniform limits preserve continuity and uniform continuity; pointwise limits
+  need not
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - continuity
-  - uniform-continuity
-  - counterexamples
+  - Uniform Convergence
+  - Continuity
+  - Uniform Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show that a uniform limit of continuous functions is continuous, and a uniform limit of uniformly continuous functions is uniformly continuous.
 Show that this is not true if uniform convergence is weakened to pointwise convergence.

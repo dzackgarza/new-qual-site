@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - field-extensions
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

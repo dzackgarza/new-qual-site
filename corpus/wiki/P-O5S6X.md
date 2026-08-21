@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-O5S6X
 kind: problem
-title: The overlap $m(E\cap(E+x))$ is $L^1$, uniformly continuous, and vanishes at infinity
+title: The overlap $m(E\cap(E+x))$ is $L^1$, uniformly continuous, and vanishes at
+  infinity
 classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - uniform-continuity
-  - measure-theory
+  - Convolution
+  - Uniform Continuity
+  - Measure Theory
 relations: []
 review: draft
 solved: true

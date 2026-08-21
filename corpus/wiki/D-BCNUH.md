@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-BCNUH
 kind: definition
-title: "Topological Embedding"
+title: Topological Embedding
 classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - continuity
-  - point-set
+  - Homeomorphisms
+  - Continuity
+  - Point-Set Topology
 relations: []
 review: draft
 ---

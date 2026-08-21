@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-T7W8G
 kind: problem
-title: Irreducible polynomials over a field in which every element has a $p$th root are separable
+title: Irreducible polynomials over a field in which every element has a $p$th root
+  are separable
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - characteristic
-  - irreducibility-criteria
+  - Separability
+  - Characteristic
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

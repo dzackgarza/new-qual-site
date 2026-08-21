@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-IBUYO
 kind: problem
-title: Smith normal form of quotients of a free abelian group, and the Euclidean-domain case
+title: Smith normal form of quotients of a free abelian group, and the Euclidean-domain
+  case
 classification:
   areas:
   - algebra
   topics:
-  - smith-normal-form
-  - structure-theorem
-  - euclidean-domains
+  - Smith Normal Form
+  - Structure Theorem
+  - Euclidean Domains
 relations: []
 review: draft
 solved: false

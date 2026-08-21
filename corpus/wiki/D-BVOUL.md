@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-BVOUL
 kind: definition
-title: "Group Action"
+title: Group Action
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - groups
+  - Group Actions
+  - Groups
 relations: []
 review: draft
 ---

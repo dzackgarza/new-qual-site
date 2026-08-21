@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-3ECUR
 kind: problem
-title: "Hungerford 7.4.10"
+title: Hungerford 7.4.10
 classification:
   areas:
   - algebra
   topics:
-  - rational-canonical-form
-  - jordan-canonical-form
-  - minimal-and-characteristic-polynomials
+  - Rational Canonical Form
+  - Jordan Canonical Form
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

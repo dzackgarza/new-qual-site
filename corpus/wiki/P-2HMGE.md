@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - separation-axioms
+  - Connectedness
+  - Separation Axioms
 relations: []
 review: draft
 solved: false

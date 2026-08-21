@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-ZCPDD
 kind: proposition
-title: "Dimension vanishing for homology of manifolds"
+title: Dimension vanishing for homology of manifolds
 classification:
   areas:
   - topology
   topics:
-  - manifolds
-  - homology
-  - cohomology
+  - Manifolds
+  - Homology
+  - Cohomology
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-N7YFV
 kind: proposition
-title: "$L^1$ is not quite the dual of $L^\\infty$."
+title: $L^1$ is not quite the dual of $L^\infty$.
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - l-infty
-  - l1
+  - Dual Spaces
+  - L∞
+  - L¹
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - prime-ideals
-  - number-theory
+  - Factorization
+  - Prime Ideals
+  - Number Theory
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-EJKY7
 kind: problem
-title: $\pi_1$ and $H^*$ of $S^1$ with $2$-cells attached via $z^3$ and $z^5$; not homeomorphic to $S^2$
+title: $\pi_1$ and $H^*$ of $S^1$ with $2$-cells attached via $z^3$ and $z^5$; not
+  homeomorphic to $S^2$
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - fundamental-group
-  - cohomology
+  - Cell Complexes
+  - Fundamental Group
+  - Cohomology
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $X$ be $S^1$ with two 2-cells attached via $z\mapsto z^5$ and $z\mapsto z^3$.
 

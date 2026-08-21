@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-FA6VI
 kind: theorem
-title: "Characterizations of continuous maps, Munkres 18.1"
+title: Characterizations of continuous maps, Munkres 18.1
 classification:
   areas:
   - topology
   topics:
-  - continuity
-  - closure
-  - point-set
+  - Continuity
+  - Closure
+  - Point-Set Topology
 relations: []
 review: draft
 ---

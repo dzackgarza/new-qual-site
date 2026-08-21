@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-YR75I
 kind: problem
-title: Entire functions converging uniformly on line segments converge uniformly on compacta
+title: Entire functions converging uniformly on line segments converge uniformly on
+  compacta
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - uniform-convergence
-  - sequences-of-functions
-  - normal-families
+  - Entire Functions
+  - Uniform Convergence
+  - Sequences of Functions
+  - Normal Families
 relations: []
 review: draft
 solved: true

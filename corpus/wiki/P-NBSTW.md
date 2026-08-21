@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-NBSTW
 kind: problem
-title: "Find $\\tan$ using geometric series"
+title: Find $\tan$ using geometric series
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - trigonometry
-  - laurent-series
+  - Power Series
+  - Trigonometry
+  - Laurent Series
 relations: []
 review: draft
 solved: true

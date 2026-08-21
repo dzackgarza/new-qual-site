@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - commutators
-  - permutations
+  - Commutators
+  - Permutations
 relations: []
 review: draft
 solved: false

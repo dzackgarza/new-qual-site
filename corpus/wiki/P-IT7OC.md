@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - cosets-and-lagrange
-  - subgroups
+  - Conjugacy
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 solved: false

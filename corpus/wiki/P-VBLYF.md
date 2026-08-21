@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - jordan-canonical-form
-  - matrix-groups
+  - Conjugacy
+  - Jordan Canonical Form
+  - Matrix Groups
 relations: []
 review: draft
 solved: false

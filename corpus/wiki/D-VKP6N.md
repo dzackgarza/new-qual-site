@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: D-VKP6N
 kind: definition
-title: "Essential Singularity"
+title: Essential Singularity
 classification:
   areas:
   - complex-analysis
   topics:
-  - essential-singularities
-  - singularities
-  - laurent-series
-  - principal-parts
+  - Essential Singularities
+  - Singularities
+  - Laurent Series
+  - Principal Parts
 relations: []
 review: draft
 ---

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-Z66NC
 kind: exercise
-title: "\\int_{1}^{\\infty} \\frac{d x}{x \\sqrt{x^{2}-1}} = {\\pi \\over 2}"
+title: \int_{1}^{\infty} \frac{d x}{x \sqrt{x^{2}-1}} = {\pi \over 2}
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 \[
 \int_{1}^{\infty} \frac{d x}{x \sqrt{x^{2}-1}} = {\pi \over 2}

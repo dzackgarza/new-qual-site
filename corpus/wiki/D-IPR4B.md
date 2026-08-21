@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-IPR4B
 kind: definition
-title: "Cyclotomic Field"
+title: Cyclotomic Field
 classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - field-extensions
-  - fields
+  - Roots of Unity
+  - Field Extensions
+  - Fields
 relations: []
 review: draft
 ---

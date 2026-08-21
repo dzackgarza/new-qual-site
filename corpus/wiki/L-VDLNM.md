@@ -7,12 +7,13 @@ classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - structure-theorem
-  - canonical-forms
+  - Minimal and Characteristic Polynomials
+  - Structure Theorem
+  - Canonical Forms
 relations: []
 review: draft
 ---
+
 :::{.lemma title="?"}
 The characteristic polynomial is the *product of the invariant factors*, i.e.
 $$

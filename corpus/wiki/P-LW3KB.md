@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-LW3KB
 kind: problem
-title: $Y\subset X$ implies $X^\perp\subseteq Y^\perp$, and $Y^\perp/X^\perp\hookrightarrow(X/Y)^*$, for a nondegenerate symmetric bilinear form
+title: $Y\subset X$ implies $X^\perp\subseteq Y^\perp$, and $Y^\perp/X^\perp\hookrightarrow(X/Y)^*$,
+  for a nondegenerate symmetric bilinear form
 classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - dual-spaces
-  - vector-spaces
+  - Bilinear Forms
+  - Dual Spaces
+  - Vector Spaces
 relations: []
 review: draft
 solved: false

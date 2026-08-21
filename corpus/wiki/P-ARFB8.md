@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - cyclic-groups
-  - minimal-and-characteristic-polynomials
+  - Modules
+  - Cyclic Groups
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

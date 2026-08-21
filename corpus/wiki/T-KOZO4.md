@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-KOZO4
 kind: theorem
-title: "Riemann Extension Theorem"
+title: Riemann Extension Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - singularities
+  - Removable Singularities
+  - Singularities
 relations: []
 review: draft
 ---

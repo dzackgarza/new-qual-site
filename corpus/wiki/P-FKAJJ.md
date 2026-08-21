@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FKAJJ
 kind: problem
-title: Orbit-stabilizer bijection $G/G_x\simeq G\cdot x$, and nontriviality of $Z(G)$ for finite $p$-groups
+title: Orbit-stabilizer bijection $G/G_x\simeq G\cdot x$, and nontriviality of $Z(G)$
+  for finite $p$-groups
 classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - group-actions
-  - p-groups
+  - Orbit-Stabilizer
+  - Group Actions
+  - p-Groups
 relations: []
 review: draft
 solved: false

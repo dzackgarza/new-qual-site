@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - linear-algebra
+  - Fixed Points
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

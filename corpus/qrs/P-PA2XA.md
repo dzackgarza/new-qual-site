@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PA2XA
 kind: problem
-title: $\int_T f=0$ when $f$ is holomorphic and bounded near an interior puncture of $T$
+title: $\int_T f=0$ when $f$ is holomorphic and bounded near an interior puncture
+  of $T$
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - morera
-  - contour-integration
+  - Removable Singularities
+  - Morera
+  - Contour Integration
 relations: []
 review: draft
 solved: false

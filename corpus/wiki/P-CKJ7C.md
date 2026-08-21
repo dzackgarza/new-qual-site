@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - character-theory
-  - permutations
+  - Representation Theory
+  - Character Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

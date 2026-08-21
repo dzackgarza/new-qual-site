@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-VGN3T
 kind: problem
-title: '$\ZZ[\sqrt{-5}]$ is not a PID: units $\pm 1$, and $3$ irreducible but not prime'
+title: '$\ZZ[\sqrt{-5}]$ is not a PID: units $\pm 1$, and $3$ irreducible but not
+  prime'
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - integral-domains
-  - principal-ideal-domains
+  - Factorization
+  - Integral Domains
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: true
 ---
+
 For a ring $R$, let $U(R)$ denote the multiplicative group of units in $R$. Recall that in an integral domain $R$, $r \in R$ is called *irreducible* if $r$ is not a unit in R, and the only divisors of $r$ have the form $ru$ with $u$ a unit in $R$. 
 
 We call a non-zero, non-unit $r \in R$ *prime* in $R$ if $r \divides ab \implies r \divides a$ or $r \divides b$. 

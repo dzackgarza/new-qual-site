@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-OPK3N
 kind: theorem
-title: "Extreme Value Theorem"
+title: Extreme Value Theorem
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - continuity
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 ---

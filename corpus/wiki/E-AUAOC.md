@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - retracts
-  - homology
-  - homotopy
+  - Retracts
+  - Homology
+  - Homotopy
 relations: []
 review: draft
 solved: true

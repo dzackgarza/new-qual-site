@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-WUGPG
 kind: definition
-title: "Dedekind Domains"
+title: Dedekind Domains
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - ideals
-  - commutative-algebra
+  - Factorization
+  - Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 ---

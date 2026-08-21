@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: C-TODSQ
 kind: corollary
-title: "Sufficient condition for a sequence to converge to a holomorphic function"
+title: Sufficient condition for a sequence to converge to a holomorphic function
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - holomorphic-functions
-  - morera
+  - Uniform Convergence
+  - Sequences of Functions
+  - Holomorphic Functions
+  - Morera
 relations: []
 review: draft
 ---

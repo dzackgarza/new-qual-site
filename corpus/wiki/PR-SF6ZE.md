@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-SF6ZE
 kind: proposition
-title: "Tower law for subgroups"
+title: Tower law for subgroups
 classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - subgroups
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Tower law for subgroups"}
 \[
 K\leq H \leq G \implies [G: K] = [G:H] [H: K]

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-TS7TZ
 kind: definition
-title: "Fundamental Class"
+title: Fundamental Class
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - manifolds
-  - homology
+  - Orientation
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

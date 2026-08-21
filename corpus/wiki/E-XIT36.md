@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-XIT36
 kind: exercise
-title: "Application of summation by parts"
+title: Application of summation by parts
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - series-of-numbers
-  - trigonometry
+  - Convergence Tests
+  - Series of Numbers
+  - Trigonometry
 relations: []
 review: draft
 solved: false

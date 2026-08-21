@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - isomorphism-theorems
-  - normal-subgroups
-  - homomorphisms
+  - Isomorphism Theorems
+  - Normal Subgroups
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

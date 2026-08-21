@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-2JV43
 kind: proposition
-title: "a.e. convergence never implies $L^p$ convergence"
+title: a.e. convergence never implies $L^p$ convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - lp-spaces
-  - counterexamples
+  - Convergence of Functions
+  - Lp Spaces
+  - Counterexamples
 relations: []
 review: draft
 ---

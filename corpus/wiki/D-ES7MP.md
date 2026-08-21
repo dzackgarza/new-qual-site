@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-ES7MP
 kind: definition
-title: "Conjugate subgroups"
+title: Conjugate subgroups
 classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - subgroups
+  - Conjugacy
+  - Subgroups
 relations: []
 review: draft
 ---

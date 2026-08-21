@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-CFBSA
 kind: definition
-title: "Laplacian and Harmonic Functions"
+title: Laplacian and Harmonic Functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - pdes
+  - Harmonic Functions
+  - PDEs
 relations: []
 review: draft
 ---
+
 :::{.definition title="Laplacian and Harmonic Functions"}
 A real function of two variables $u(x, y)$ is **harmonic** iff it is in the kernel of the Laplacian operator:
 \[  

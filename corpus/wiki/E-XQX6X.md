@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-XQX6X
 kind: exercise
-title: "Liouville"
+title: Liouville
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - schwarz-lemma
-  - entire-functions
+  - Liouville's Theorem
+  - Schwarz Lemma
+  - Entire Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Liouville"}
 Use a version of the Schwarz lemma to prove Liouville's theorem.
 

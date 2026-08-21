@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-5EOQZ
 kind: definition
-title: "Locally Compact"
+title: Locally Compact
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - point-set
+  - Compactness
+  - Point-Set Topology
 relations: []
 review: draft
 ---

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-AZSMO
 kind: exercise
-title: "Sublinear growth"
+title: Sublinear growth
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - cauchy-estimates
+  - Liouville's Theorem
+  - Entire Functions
+  - Cauchy Estimates
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Sublinear growth"}
 Suppose that $f$ is entire and $f$ has sublinear growth in the following sense:
 \[

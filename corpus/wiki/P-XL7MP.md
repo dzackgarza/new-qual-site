@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-XL7MP
 kind: problem
-title: $L^2([0,1])\subseteq L^1([0,1])$, $\ell^1(\ZZ)\subseteq\ell^2(\ZZ)$, and uniform Fourier reconstruction when $\hat f\in\ell^1$
+title: $L^2([0,1])\subseteq L^1([0,1])$, $\ell^1(\ZZ)\subseteq\ell^2(\ZZ)$, and uniform
+  Fourier reconstruction when $\hat f\in\ell^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - lp-spaces
-  - uniform-convergence
-  - series-of-functions
+  - Fourier Analysis
+  - Lp Spaces
+  - Uniform Convergence
+  - Series of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 \envlist
 

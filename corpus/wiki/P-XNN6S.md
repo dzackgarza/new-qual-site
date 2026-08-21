@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
-  - homomorphisms
+  - Modules
+  - Semisimplicity
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

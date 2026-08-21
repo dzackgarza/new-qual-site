@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-ZOU5G
 kind: definition
-title: "CW Complex"
+title: CW Complex
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
+  - Cell Complexes
 relations: []
 review: draft
 ---

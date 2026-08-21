@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - permutations
+  - Simple Groups
+  - Permutations
 relations: []
 review: draft
 solved: false

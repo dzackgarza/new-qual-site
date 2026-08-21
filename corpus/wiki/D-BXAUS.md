@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-BXAUS
 kind: definition
-title: "Sigma finiteness"
+title: Sigma finiteness
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

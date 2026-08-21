@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - field-extensions
+  - Galois Theory
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: true
 ---
+
 a. Define what it means for a finite extension of fields $E$ over $F$ to be a *Galois* extension.
 
 b. Determine the Galois group of $f(x) = x^3 - 7$ over $\QQ$, and justify your answer carefully.

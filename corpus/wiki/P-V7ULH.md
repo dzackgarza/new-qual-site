@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - cauchy-integral-formula
+  - Power Series
+  - Cauchy Integral Formula
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f$ be a power series centered at the origin.
 Prove that $f$ has a power series expansion about any point in its disc of convergence.

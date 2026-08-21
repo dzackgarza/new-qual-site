@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-BHJGY
 kind: proposition
-title: "Number of sheets in a covering space, Hatcher 1.32"
+title: Number of sheets in a covering space, Hatcher 1.32
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Number of sheets in a covering space, Hatcher 1.32"}
 For $X, \tilde X$ both path-connected, 
 the number of sheets of a covering space is equal to the index

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-JGYK4
 kind: definition
-title: "Primary Ideal"
+title: Primary Ideal
 classification:
   areas:
   - algebra
   topics:
-  - primary-decomposition
-  - ideals
+  - Primary Decomposition
+  - Ideals
 relations: []
 review: draft
 ---

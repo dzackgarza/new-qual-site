@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-XWL4U
 kind: problem
-title: If $f_k\to f$ a.e. with $\|f_k\|_2\leq M$ on $[0,1]$, then $f\in L^2$, $\|f\|_2\leq M$, and $\int f_k\to\int f$
+title: If $f_k\to f$ a.e. with $\|f_k\|_2\leq M$ on $[0,1]$, then $f\in L^2$, $\|f\|_2\leq
+  M$, and $\int f_k\to\int f$
 classification:
   areas:
   - real-analysis
   topics:
-  - l2
-  - fatou
-  - egorov
-  - convergence-of-integrals
+  - L²
+  - Fatou
+  - Egorov
+  - Convergence of Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 Let $\{f_k\}$ be any sequence of functions in $L^2([0, 1])$ satisfying $\norm{f_k}_2 ≤ M$ for all $k ∈ \NN$.
   
 Prove that if $f_k \to f$ almost everywhere, then $f ∈ L^2([0, 1])$ with $\norm{f}_2 ≤ M$ and

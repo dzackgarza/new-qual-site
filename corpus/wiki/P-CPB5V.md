@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - ideals
-  - semisimplicity
+  - Rings
+  - Ideals
+  - Semisimplicity
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $R$ be a simple rng (a nonzero ring which is not assume to have a 1, whose only two-sided ideals are $(0)$ and $R$) satisfying the following two conditions:
 

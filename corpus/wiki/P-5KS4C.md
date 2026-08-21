@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-5KS4C
 kind: problem
-title: Solvability of $\operatorname{Gal}(E/K)$ would imply solvability of $S_n$ for $n\ge 5$
+title: Solvability of $\operatorname{Gal}(E/K)$ would imply solvability of $S_n$ for
+  $n\ge 5$
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - galois-theory
-  - permutations
+  - Solvable Groups
+  - Galois Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

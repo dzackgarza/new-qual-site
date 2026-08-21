@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - eigenvalues-and-eigenvectors
-  - rank-and-nullity
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
+  - Rank and Nullity
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem}
 Let $x,y \in \mathbb{C}$ and consider the matrix
 

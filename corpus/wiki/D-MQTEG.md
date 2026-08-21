@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-MQTEG
 kind: definition
-title: "Cocycle"
+title: Cocycle
 classification:
   areas:
   - topology
   topics:
-  - cohomology
+  - Cohomology
 relations: []
 review: draft
 ---

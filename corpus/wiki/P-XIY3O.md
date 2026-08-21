@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - green-s-theorem
-  - cauchy-integral-theorem
-  - cauchy-riemann
-  - contour-integration
+  - Green's Theorem
+  - Cauchy Integral Theorem
+  - Cauchy-Riemann
+  - Contour Integration
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 State and prove Green's Theorem for rectangles.
 Use this to prove Cauchy's Theorem for functions that are analytic in a rectangle.

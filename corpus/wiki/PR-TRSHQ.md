@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-TRSHQ
 kind: proposition
-title: "Showing one space can not cover another"
+title: Showing one space can not cover another
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
-  - surfaces
+  - Covering Spaces
+  - Fundamental Group
+  - Surfaces
 relations: []
 review: draft
 ---

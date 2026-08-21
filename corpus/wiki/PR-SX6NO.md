@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-SX6NO
 kind: proposition
-title: "Lipschitz implies uniformly continuous"
+title: Lipschitz implies uniformly continuous
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - metric-spaces
+  - Uniform Continuity
+  - Metric Spaces
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Lipschitz implies uniformly continuous"}
 If $f$ is Lipschitz on $X$, then $f$ is uniformly continuous on $X$.
 

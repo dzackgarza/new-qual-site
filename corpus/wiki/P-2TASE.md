@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - abelian-groups
-  - classification
+  - Structure Theorem
+  - Abelian Groups
+  - Classification
 relations: []
 review: draft
 solved: false

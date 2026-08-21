@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-KC6DS
 kind: exercise
-title: "$\\log(x) / x^2+a^2$"
+title: $\log(x) / x^2+a^2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$\log(x) / x^2+a^2$"}
 \[
 \int_0^\infty {\log(x) \over x^2+a^2}\dx &= {\pi\log(a)\over 2a} && a>0

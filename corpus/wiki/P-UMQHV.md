@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-UMQHV
 kind: problem
-title: An irreducible over a field of characteristic $p$ is $g(x^{p^d})$ with $g$ irreducible and separable, and all roots have multiplicity $p^d$
+title: An irreducible over a field of characteristic $p$ is $g(x^{p^d})$ with $g$
+  irreducible and separable, and all roots have multiplicity $p^d$
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - characteristic
-  - irreducibility-criteria
+  - Separability
+  - Characteristic
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

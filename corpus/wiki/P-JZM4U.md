@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - class-equation
-  - orbit-stabilizer
-  - conjugacy
+  - Class Equation
+  - Orbit-Stabilizer
+  - Conjugacy
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - direct-products
-  - normal-subgroups
-  - isomorphism-theorems
+  - Direct Products
+  - Normal Subgroups
+  - Isomorphism Theorems
 relations: []
 review: draft
 solved: false

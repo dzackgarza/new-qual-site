@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-PZCPD
 kind: problem
-title: Complex numbers on one side of a line through the origin have nonzero sum and sum of reciprocals
+title: Complex numbers on one side of a line through the origin have nonzero sum and
+  sum of reciprocals
 classification:
   areas:
   - complex-analysis
   topics:
-  - geometry
+  - Geometry
 relations: []
 review: draft
 solved: false

@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - polynomials
-  - zeros
+  - Rouché
+  - Polynomials
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Use Rouche's theorem to prove the Fundamental Theorem of Algebra.
 :::

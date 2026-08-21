@@ -7,10 +7,10 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homology
-  - van-kampen
-  - surfaces
+  - Fundamental Group
+  - Homology
+  - van Kampen
+  - Surfaces
 relations: []
 review: draft
 solved: false

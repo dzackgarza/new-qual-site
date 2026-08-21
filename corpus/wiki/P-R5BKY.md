@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - homomorphisms
-  - counterexamples
+  - Abelian Groups
+  - Homomorphisms
+  - Counterexamples
 relations: []
 review: draft
 solved: false

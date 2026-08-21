@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
-  - zorns-lemma
+  - Maximal Ideals
+  - Ideals
+  - Zorn's Lemma
 relations: []
 review: draft
 solved: true

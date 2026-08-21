@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - polynomials
-  - zeros
+  - Maximum Modulus Principle
+  - Polynomials
+  - Zeros
 relations: []
 review: draft
 solved: false

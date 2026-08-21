@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - p-groups
+  - Sylow Theory
+  - p-Groups
 relations: []
 review: draft
 solved: false

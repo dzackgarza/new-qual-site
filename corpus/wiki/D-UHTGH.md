@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-UHTGH
 kind: definition
-title: "Closure of a set"
+title: Closure of a set
 classification:
   areas:
   - topology
   topics:
-  - closure
-  - point-set
+  - Closure
+  - Point-Set Topology
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-DDOWW
 kind: theorem
-title: "Picard's big theorem"
+title: Picard's big theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - picard
-  - normal-families
-  - essential-singularities
+  - Picard
+  - Normal Families
+  - Essential Singularities
 relations: []
 review: draft
 ---

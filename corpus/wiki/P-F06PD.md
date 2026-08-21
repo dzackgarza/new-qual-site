@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - vector-spaces
-  - polynomials
+  - Vector Spaces
+  - Polynomials
 relations: []
 review: draft
 solved: false

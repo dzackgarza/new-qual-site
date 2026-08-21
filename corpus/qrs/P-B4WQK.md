@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - morera
-  - schwarz-reflection
-  - holomorphic-functions
+  - Morera
+  - Schwarz Reflection
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

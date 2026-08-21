@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-UNC54
 kind: problem
-title: "Hungerford 2.8.3"
+title: Hungerford 2.8.3
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - normal-subgroups
-  - simple-groups
+  - Subgroup Series
+  - Normal Subgroups
+  - Simple Groups
 relations: []
 review: draft
 solved: false

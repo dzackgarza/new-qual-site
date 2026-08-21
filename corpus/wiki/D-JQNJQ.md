@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-JQNJQ
 kind: definition
-title: "Elementary Divisor Decomposition"
+title: Elementary Divisor Decomposition
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - abelian-groups
-  - classification
+  - Structure Theorem
+  - Abelian Groups
+  - Classification
 relations: []
 review: draft
 ---
+
 :::{.definition title="Elementary Divisor Decomposition"}
 If $G$ is a finitely generated abelian group, then there is a unique list of **not necessarily distinct** prime powers $p_k^{e_k}$ such that
 \[

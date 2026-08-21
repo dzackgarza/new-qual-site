@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-EGHL6
 kind: definition
-title: "Perfect Pairing"
+title: Perfect Pairing
 classification:
   areas:
   - topology
   topics:
-  - modules
-  - linear-algebra
+  - Modules
+  - Linear Algebra
 relations: []
 review: draft
 ---

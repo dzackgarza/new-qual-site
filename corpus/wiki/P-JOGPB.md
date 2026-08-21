@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - laurent-series
-  - poles
+  - Residues
+  - Contour Integration
+  - Laurent Series
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Assume $f$ is continuous in the region:
 \[

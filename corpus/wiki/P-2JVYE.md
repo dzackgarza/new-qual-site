@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - semisimplicity
+  - Representation Theory
+  - Semisimplicity
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-Q5ICU
 kind: problem
-title: "Hungerford 7.5.7"
+title: Hungerford 7.5.7
 classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - eigenvalues-and-eigenvectors
-  - linear-algebra
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

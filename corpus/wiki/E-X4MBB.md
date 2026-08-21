@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-X4MBB
 kind: exercise
-title: "Finding complex roots"
+title: Finding complex roots
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
-  - polynomials
+  - Trigonometry
+  - Polynomials
 relations: []
 review: draft
 solved: true

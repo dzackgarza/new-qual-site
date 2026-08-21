@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-O4UD3
 kind: theorem
-title: "Heine-Cantor"
+title: Heine-Cantor
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - compactness
-  - continuity
+  - Uniform Continuity
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 ---

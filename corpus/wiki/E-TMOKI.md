@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - euclidean-spaces
-  - subspace-topology
+  - Connectedness
+  - Euclidean Spaces
+  - Subspace Topology
 relations: []
 review: draft
 solved: false

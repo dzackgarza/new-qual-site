@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- https://doi.org/10.1007/978-1-4612-6101-8
+source:
   source_kind: textbook
   textbook: hungerford
   date:

@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - homology
-  - euclidean-spaces
+  - Homeomorphisms
+  - Homology
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: false

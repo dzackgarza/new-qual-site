@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-MK2W6
 kind: proposition
-title: "Irreducible polynomials have separable splitting fields"
+title: Irreducible polynomials have separable splitting fields
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - splitting-fields
-  - irreducibility-criteria
+  - Separability
+  - Splitting Fields
+  - Irreducibility Criteria
 relations: []
 review: draft
 ---

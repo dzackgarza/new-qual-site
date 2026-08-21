@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - complex-numbers
+  - Complex Numbers
 relations: []
 review: draft
 solved: false

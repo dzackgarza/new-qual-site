@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - rings
-  - local-rings
+  - Factorization
+  - Rings
+  - Local Rings
 relations: []
 review: draft
 solved: false

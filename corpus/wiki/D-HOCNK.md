@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-HOCNK
 kind: definition
-title: "Homotopy Lifting Property"
+title: Homotopy Lifting Property
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - covering-spaces
+  - Homotopy
+  - Covering Spaces
 relations: []
 review: draft
 ---

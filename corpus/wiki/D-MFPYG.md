@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-MFPYG
 kind: definition
-title: "Hyperbolic translations/Blaschke factors"
+title: Hyperbolic translations/Blaschke factors
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - biholomorphisms
-  - fractional-linear-transformations
+  - Blaschke Factors
+  - Biholomorphisms
+  - Fractional Linear Transformations
 relations: []
 review: draft
 ---
+
 :::{.definition title="Hyperbolic translations/Blaschke factors"}
 For $a\in \DD$, the maps
 \[

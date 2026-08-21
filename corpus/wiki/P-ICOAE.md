@@ -7,15 +7,16 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
-  - poles
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
+  - Poles
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
 Suppose $a>b>0$ and calculate
 \[

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-7DICT
 kind: theorem
-title: "Cantor's Intersection Theorem"
+title: Cantor's Intersection Theorem
 classification:
   areas:
   - topology
   topics:
-  - compactness
+  - Compactness
 relations: []
 review: draft
 ---

@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - differentiation
+  - Integrals
+  - Differentiation
 relations: []
 review: draft
 solved: true

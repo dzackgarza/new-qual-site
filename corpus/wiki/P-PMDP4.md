@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - integrals
+  - Differentiation
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove that if $xf(x) \in L^1(\RR)$, then
 \[  

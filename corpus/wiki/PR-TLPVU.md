@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-TLPVU
 kind: proposition
-title: "Converting between elementary divisors and invariant factors"
+title: Converting between elementary divisors and invariant factors
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - abelian-groups
-  - classification
+  - Structure Theorem
+  - Abelian Groups
+  - Classification
 relations: []
 review: draft
 ---

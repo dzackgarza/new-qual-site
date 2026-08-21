@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-ABSJX
 kind: proposition
-title: "Transitivity of algebraic extensions, forward implication"
+title: Transitivity of algebraic extensions, forward implication
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
+  - Field Extensions
 relations: []
 review: draft
 ---

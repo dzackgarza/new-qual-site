@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - poles
-  - convergence-tests
+  - Power Series
+  - Poles
+  - Convergence Tests
 relations: []
 review: draft
 solved: false

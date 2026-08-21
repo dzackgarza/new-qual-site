@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-BEIVF
 kind: proposition
-title: "HK Subgroup Theorem"
+title: HK Subgroup Theorem
 classification:
   areas:
   - algebra
   topics:
-  - subgroups
-  - centralizers-and-normalizers
-  - normal-subgroups
+  - Subgroups
+  - Centralizers and Normalizers
+  - Normal Subgroups
 relations: []
 review: draft
 ---

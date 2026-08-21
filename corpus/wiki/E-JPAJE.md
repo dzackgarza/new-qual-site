@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-JPAJE
 kind: exercise
-title: "Mobius transformations as cross-ratios"
+title: Mobius transformations as cross-ratios
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
+  - Fractional Linear Transformations
+  - Conformal Maps
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Mobius transformations as cross-ratios"}
 Write a Mobius transformation $f(z) = {az+b\over cz + d}$ as a cross-ratio.
 

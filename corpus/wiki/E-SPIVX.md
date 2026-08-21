@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-SPIVX
 kind: exercise
-title: "$\\cos(x) / x^2 + b^2$"
+title: $\cos(x) / x^2 + b^2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$\cos(x) / x^2 + b^2$"}
 \[
 I \da \int_{0}^{\infty} \frac{\cos (x)}{x^{2}+b^{2}} d x=\frac{\pi \mathrm{e}^{-b}}{2 b}

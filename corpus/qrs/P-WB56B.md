@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-WB56B
 kind: problem
-title: An uncountable $E\subset[0,1]$ meets both $(-\infty,t)$ and $(t,\infty)$ in uncountable sets
+title: An uncountable $E\subset[0,1]$ meets both $(-\infty,t)$ and $(t,\infty)$ in
+  uncountable sets
 classification:
   areas:
   - complex-analysis
   topics:
-  - point-set
-  - counterexamples
+  - Point-Set Topology
+  - Counterexamples
 relations: []
 review: draft
 solved: false

@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-W2CWJ
 kind: exercise
-title: "Removable singularity at infinity iff constant"
+title: Removable singularity at infinity iff constant
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - removable-singularities
-  - singularities
+  - Liouville's Theorem
+  - Entire Functions
+  - Removable Singularities
+  - Singularities
 relations: []
 review: draft
 solved: true

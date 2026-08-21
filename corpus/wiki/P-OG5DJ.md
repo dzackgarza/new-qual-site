@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-OG5DJ
 kind: problem
-title: Splitting field, Galois group, and intermediate fields of $x^4-4x^2+2$ over $\QQ$
+title: Splitting field, Galois group, and intermediate fields of $x^4-4x^2+2$ over
+  $\QQ$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - field-extensions
+  - Galois Theory
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f(x) = x^4 - 4x^2 + 2 \in \QQ[x]$.
 
 a.

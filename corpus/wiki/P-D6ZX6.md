@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-D6ZX6
 kind: problem
-title: "Maximal implies prime"
+title: Maximal implies prime
 classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - prime-ideals
-  - ideals
+  - Maximal Ideals
+  - Prime Ideals
+  - Ideals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Maximal implies prime"}
 Maximal $\implies$ prime, but generally not the converse.
 :::

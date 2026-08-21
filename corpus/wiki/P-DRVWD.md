@@ -7,10 +7,10 @@ classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - fundamental-group
-  - homology
-  - quotient-spaces
+  - Cell Complexes
+  - Fundamental Group
+  - Homology
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

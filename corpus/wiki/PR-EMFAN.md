@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-EMFAN
 kind: proposition
-title: "Holomorphic functions are continuous."
+title: Holomorphic functions are continuous.
 classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - continuity
+  - Holomorphic Functions
+  - Continuity
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Holomorphic functions are continuous."}
 $f$ is holomorphic at $z_0$ iff there exists an $a\in \CC$ such that
 \[

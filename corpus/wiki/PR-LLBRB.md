@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-LLBRB
 kind: proposition
-title: "Big chain of inclusions"
+title: Big chain of inclusions
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - integral-domains
-  - factorization
+  - Rings
+  - Integral Domains
+  - Factorization
 relations: []
 review: draft
 ---

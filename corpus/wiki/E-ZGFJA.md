@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-ZGFJA
 kind: exercise
-title: "More juggling"
+title: More juggling
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - schwarz-lemma
-  - maximum-modulus-principle
+  - Blaschke Factors
+  - Schwarz Lemma
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="More juggling"}
 Suppose $f:\DD\to \DD$ with $f(0) = 0$ and that there exists an $r\in (0, 1)$ with $f(r) = f(-r) = 0$.
 Show that 

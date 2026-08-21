@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-6PRPK
 kind: problem
-title: A group of order $60$ with normal Sylow $3$-subgroup is solvable and has normal Sylow $5$-subgroup
+title: A group of order $60$ with normal Sylow $3$-subgroup is solvable and has normal
+  Sylow $5$-subgroup
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - sylow-theory
-  - normal-subgroups
+  - Solvable Groups
+  - Sylow Theory
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

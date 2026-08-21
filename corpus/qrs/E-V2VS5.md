@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: E-V2VS5
 kind: exercise
-title: Simple zeros of $\sin(\pi z)$ at the integers, and residues of $1/\sin(\pi z)$
+title: Simple zeros of $\sin(\pi z)$ at the integers, and residues of $1/\sin(\pi
+  z)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - residues
-  - trigonometry
-  - poles
+  - Zeros
+  - Residues
+  - Trigonometry
+  - Poles
 relations: []
 review: draft
 solved: true

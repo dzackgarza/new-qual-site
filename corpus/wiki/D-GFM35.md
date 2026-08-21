@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-GFM35
 kind: definition
-title: "Simply Connected"
+title: Simply Connected
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
-  - connectedness
+  - Fundamental Group
+  - Homotopy
+  - Connectedness
 relations: []
 review: draft
 ---

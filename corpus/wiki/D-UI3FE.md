@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: D-UI3FE
 kind: definition
-title: "Lens Space"
+title: Lens Space
 classification:
   areas:
   - topology
   topics:
-  - manifolds
-  - covering-spaces
-  - group-actions
-  - homology
+  - Manifolds
+  - Covering Spaces
+  - Group Actions
+  - Homology
 relations: []
 review: draft
 ---

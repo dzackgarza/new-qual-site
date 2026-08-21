@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - roots-of-unity
-  - field-extensions
+  - Splitting Fields
+  - Roots of Unity
+  - Field Extensions
 relations: []
 review: draft
 solved: false

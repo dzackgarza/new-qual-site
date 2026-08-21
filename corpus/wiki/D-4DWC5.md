@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-4DWC5
 kind: definition
-title: "Resolvent of a quartic"
+title: Resolvent of a quartic
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - polynomials
+  - Galois Theory
+  - Polynomials
 relations: []
 review: draft
 ---
+
 :::{.definition title="Resolvent of a quartic"}
 If 
 \[

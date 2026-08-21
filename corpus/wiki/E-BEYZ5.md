@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-BEYZ5
 kind: exercise
-title: "Proving functions are harmonic using components of holomorphic functions"
+title: Proving functions are harmonic using components of holomorphic functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - cauchy-riemann
-  - holomorphic-functions
+  - Harmonic Functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Proving functions are harmonic using components of holomorphic functions"}
 Show that if $u,v$ are harmonic conjugates, then
 

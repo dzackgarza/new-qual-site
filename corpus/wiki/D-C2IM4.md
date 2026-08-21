@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-C2IM4
 kind: definition
-title: "Nilradical"
+title: Nilradical
 classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - ideals
-  - commutative-algebra
+  - Nilpotence
+  - Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 ---
+
 :::{.definition title="Nilradical"}
 The **nilradical** of $R \in \CRing$ is
 \[

@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - rouche
-  - zeros
-  - argument-principle
+  - Blaschke Factors
+  - Rouché
+  - Zeros
+  - Argument Principle
 relations: []
 review: draft
 solved: false

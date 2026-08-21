@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - fields
-  - transcendence
+  - Automorphisms
+  - Fields
+  - Transcendence
 relations: []
 review: draft
 solved: false

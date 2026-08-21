@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: C-3S4XS
 kind: corollary
-title: "Term by Term Continuity Theorem"
+title: Term by Term Continuity Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - series-of-functions
-  - continuity
+  - Uniform Convergence
+  - Series of Functions
+  - Continuity
 relations: []
 review: draft
 ---

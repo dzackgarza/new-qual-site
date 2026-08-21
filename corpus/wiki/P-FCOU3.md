@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-FCOU3
 kind: problem
-title: "\\label{hilbert_space_exam_question}"
+title: \label{hilbert_space_exam_question}
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - l2
+  - Hilbert Spaces
+  - L²
 relations: []
 review: draft
 solved: true
 ---
+
 \label{hilbert_space_exam_question}
 
 Let $\theset{u_n}_{n=1}^\infty$ be an orthonormal sequence in a Hilbert space $H$.

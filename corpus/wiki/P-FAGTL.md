@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-FAGTL
 kind: problem
-title: "Explicit Rouch\u00e9, $\\mathbb{D}$"
+title: Explicit Rouché, $\mathbb{D}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Explicit Rouché, $\mathbb{D}$"}
 Find the number of zeros in $\abs{z} < 1$ of
 \[

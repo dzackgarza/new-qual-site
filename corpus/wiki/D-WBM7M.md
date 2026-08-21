@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-WBM7M
 kind: definition
-title: "Free module"
+title: Free module
 classification:
   areas:
   - topology
   topics:
-  - modules
-  - bases
+  - Modules
+  - Bases
 relations: []
 review: draft
 ---

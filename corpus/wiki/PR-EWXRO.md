@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-EWXRO
 kind: proposition
-title: "Closure of measurable functions under operations"
+title: Closure of measurable functions under operations
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

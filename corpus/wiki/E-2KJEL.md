@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-2KJEL
 kind: exercise
-title: "Determine $\\JCF(B)$ for"
+title: Determine $\JCF(B)$ for
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - matrices
-  - eigenvalues-and-eigenvectors
+  - Jordan Canonical Form
+  - Matrices
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="?"}
 Determine $\JCF(B)$ for
 \[

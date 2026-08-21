@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-3KCD6
 kind: theorem
-title: "Cauchy's Theorem"
+title: Cauchy's Theorem
 classification:
   areas:
   - algebra
   topics:
-  - groups
-  - cosets-and-lagrange
-  - p-groups
+  - Groups
+  - Cosets and Lagrange
+  - p-Groups
 relations: []
 review: draft
 ---

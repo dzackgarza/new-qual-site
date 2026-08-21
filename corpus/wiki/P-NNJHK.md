@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-NNJHK
 kind: problem
-title: "$\\hom_R(A, B)$ under pointwise addition is an abelian group"
+title: $\hom_R(A, B)$ under pointwise addition is an abelian group
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - homomorphisms
-  - abelian-groups
+  - Modules
+  - Homomorphisms
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

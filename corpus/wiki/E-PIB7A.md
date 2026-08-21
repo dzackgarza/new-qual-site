@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-PIB7A
 kind: exercise
-title: "Cancelling poles"
+title: Cancelling poles
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - poles
-  - meromorphic-functions
+  - Blaschke Factors
+  - Poles
+  - Meromorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Cancelling poles"}
 Let $f$ be meromorphic on $\DD$ with no poles on $\bd\DD$.
 Show that there exists a meromorphic $g$ with *no* poles in $\DD$ such that $\abs{f(z)} = \abs{g(z)}$ when $\abs{z} = 1$.

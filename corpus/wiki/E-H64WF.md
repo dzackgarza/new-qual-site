@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-H64WF
 kind: exercise
-title: "Line to circle"
+title: Line to circle
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
-  - trigonometry
+  - Fractional Linear Transformations
+  - Conformal Maps
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Line to circle"}
 Find a conformal map that sends $i\RR$ to $\abs{z-{1\over 2}} = {1\over 2}$.
 

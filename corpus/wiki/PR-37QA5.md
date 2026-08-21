@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-37QA5
 kind: proposition
-title: "Complex differentiable implies Cauchy-Riemann"
+title: Complex differentiable implies Cauchy-Riemann
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Complex differentiable implies Cauchy-Riemann"}
 If $f$ is differentiable at $z_0$, then the limit defining $f'(z_0)$ must exist when approaching from any direction.
 Identify $f(z) = f(x, y)$ and write $z_0 = x+ iy$, then first consider $h\in RR$, so $h = h_1 + ih_2$ with $h_2 = 0$.

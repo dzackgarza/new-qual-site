@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - polynomials
-  - symmetric-functions
+  - Galois Theory
+  - Polynomials
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

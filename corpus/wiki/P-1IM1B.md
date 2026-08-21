@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - bilinear-forms
+  - Matrices
+  - Bilinear Forms
 relations: []
 review: draft
 solved: false

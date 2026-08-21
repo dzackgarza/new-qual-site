@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - hausdorff-spaces
-  - separation-axioms
-  - point-set
+  - Hausdorff Spaces
+  - Separation Axioms
+  - Point-Set Topology
 relations: []
 review: draft
 ---

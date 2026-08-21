@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - cauchy-estimates
-  - entire-functions
+  - Liouville's Theorem
+  - Cauchy Estimates
+  - Entire Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove Liouville's theorem: suppose $f:\CC\to\CC$ is entire and bounded. 
 Use Cauchy's formula to prove that $f'\equiv 0$ and hence $f$ is constant.

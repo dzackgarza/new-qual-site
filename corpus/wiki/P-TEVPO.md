@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-TEVPO
 kind: problem
-title: $\lim_{x\to 0}f(x)=0$ and $g$ bounded imply $f(x)g(x)\to 0$, with a counterexample if $g$ is unbounded
+title: $\lim_{x\to 0}f(x)=0$ and $g$ bounded imply $f(x)g(x)\to 0$, with a counterexample
+  if $g$ is unbounded
 classification:
   areas:
   - prelim
   topics:
-  - limits
-  - counterexamples
+  - Limits
+  - Counterexamples
 relations: []
 review: draft
 solved: true

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-IYDZU
 kind: definition
-title: "Pointwise Convergence"
+title: Pointwise Convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - sequences-of-functions
+  - Convergence of Functions
+  - Sequences of Functions
 relations: []
 review: draft
 ---
+
 :::{.definition title="Pointwise Convergence"}
 A sequence of functions \( \ts{ f_j } \)  is said to **converge pointwise** to \( f \) if and only if 
 \[  

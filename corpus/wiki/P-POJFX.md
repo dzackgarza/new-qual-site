@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - eigenvalues-and-eigenvectors
-  - characteristic
+  - Jordan Canonical Form
+  - Eigenvalues and Eigenvectors
+  - Characteristic
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $F$ be a field and $n$ a positive integer, and consider
 \[

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-4RWAG
 kind: proposition
-title: "Cauchy criterion for sums"
+title: Cauchy criterion for sums
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - completeness
+  - Uniform Convergence
+  - Completeness
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Cauchy criterion for sums"}
 Uniformly Cauchy iff uniformly convergent, i.e.
 \[

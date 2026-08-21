@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-TDH2A
 kind: proposition
-title: "Lebesgue criterion"
+title: Lebesgue criterion
 classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - continuity
-  - measure-theory
+  - Riemann Integrability
+  - Continuity
+  - Measure Theory
 relations: []
 review: draft
 ---

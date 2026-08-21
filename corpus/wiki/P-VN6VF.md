@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - euclidean-domains
-  - factorization
-  - counterexamples
+  - Euclidean Domains
+  - Factorization
+  - Counterexamples
 relations: []
 review: draft
 solved: false

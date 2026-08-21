@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - linear-algebra
-  - matrices
-  - geometry
+  - Linear Algebra
+  - Matrices
+  - Geometry
 relations: []
 review: draft
 solved: false

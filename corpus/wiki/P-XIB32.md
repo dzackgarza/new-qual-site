@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-XIB32
 kind: problem
-title: Field homomorphisms from $\mathbb{Q}(\alpha)$ into $\mathbb{C}$, $\mathbb{R}$, and $\overline{\mathbb{Q}}$ for a root $\alpha$ of $x^{17}-2$
+title: Field homomorphisms from $\mathbb{Q}(\alpha)$ into $\mathbb{C}$, $\mathbb{R}$,
+  and $\overline{\mathbb{Q}}$ for a root $\alpha$ of $x^{17}-2$
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - splitting-fields
-  - roots-of-unity
+  - Field Extensions
+  - Splitting Fields
+  - Roots of Unity
 relations: []
 review: draft
 solved: false

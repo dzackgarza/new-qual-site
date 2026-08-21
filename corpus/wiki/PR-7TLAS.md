@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-7TLAS
 kind: proposition
-title: "Vertical half-strip to right half-disc"
+title: Vertical half-strip to right half-disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Vertical half-strip to right half-disc"}
 \[
 F: \qty{-{\pi \over 2}, {\pi \over 2}} \cross i\RR &\to \DD \intersect \ts{\Re(z) > 0} \\

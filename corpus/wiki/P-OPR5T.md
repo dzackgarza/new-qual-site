@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-OPR5T
 kind: problem
-title: "Given a skew-symmetric/skew-Hermitian matrix S, show that"
+title: Given a skew-symmetric/skew-Hermitian matrix S, show that
 classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - inner-product-spaces
-  - matrices
+  - Matrix Groups
+  - Inner Product Spaces
+  - Matrices
 relations: []
 review: draft
 solved: false

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-NQ64T
 kind: proposition
-title: "Radius of Convergence by the Root Test"
+title: Radius of Convergence by the Root Test
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - convergence-tests
+  - Power Series
+  - Convergence Tests
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Radius of Convergence by the Root Test"}
 For $f(z) = \sum_{k\in \NN} c_k z^k$, defining
 \[

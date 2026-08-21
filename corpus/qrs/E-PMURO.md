@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-PMURO
 kind: exercise
-title: "Sinc Function"
+title: Sinc Function
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Sinc Function"}
 Show
 \[

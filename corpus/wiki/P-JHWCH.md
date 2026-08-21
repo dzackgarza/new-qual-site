@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JHWCH
 kind: problem
-title: $\int(f+g)=\int f+\int g$ on $L^+$, countable additivity, and $\mu_f(E_j)\to\mu_f(E)$ when $E_j\nearrow E$
+title: $\int(f+g)=\int f+\int g$ on $L^+$, countable additivity, and $\mu_f(E_j)\to\mu_f(E)$
+  when $E_j\nearrow E$
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - measure-theory
-  - continuity-of-measure
+  - Integrals
+  - Measure Theory
+  - Continuity of Measure
 relations: []
 review: draft
 solved: true

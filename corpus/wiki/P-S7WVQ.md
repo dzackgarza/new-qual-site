@@ -7,13 +7,14 @@ classification:
   areas:
   - topology
   topics:
-  - cohomology
-  - homotopy
-  - product-topology
+  - Cohomology
+  - Homotopy
+  - Product Topology
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Show that $S^2 \cross \RP^4 \not\homotopic S^4 \cross \RP^2$.
 :::

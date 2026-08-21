@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-YEWUV
 kind: definition
-title: "Accumulation point"
+title: Accumulation point
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - limits
+  - Point-Set Topology
+  - Limits
 relations: []
 review: draft
 ---

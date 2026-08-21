@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-UMAQ5
 kind: problem
-title: A continuous $f\in L^1(\RR)$ need not tend to $0$ at infinity, but a uniformly continuous one must
+title: A continuous $f\in L^1(\RR)$ need not tend to $0$ at infinity, but a uniformly
+  continuous one must
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - l1
-  - counterexamples
-  - limits
+  - Uniform Continuity
+  - L¹
+  - Counterexamples
+  - Limits
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 1. Give an example of a continuous $f\in L^1(\RR)$ such that $f(x) \not\to 0$ as$\abs x \to \infty$.
 

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-IK6AM
 kind: proposition
-title: "Characterization of perfect fields"
+title: Characterization of perfect fields
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - fields
-  - characteristic
+  - Separability
+  - Fields
+  - Characteristic
 relations: []
 review: draft
 ---

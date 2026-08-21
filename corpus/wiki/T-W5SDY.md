@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-W5SDY
 kind: theorem
-title: "The operator norm on $X\\dual$ yields a Banach space"
+title: The operator norm on $X\dual$ yields a Banach space
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - norms
-  - completeness
+  - Dual Spaces
+  - Norms
+  - Completeness
 relations: []
 review: draft
 ---

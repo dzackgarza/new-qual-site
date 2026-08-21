@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-OSPIM
 kind: problem
-title: Measurability of $\inf_k f_k$ and $\sup_k f_k$, Fatou's lemma, and the monotone convergence theorem from Fatou
+title: Measurability of $\inf_k f_k$ and $\sup_k f_k$, Fatou's lemma, and the monotone
+  convergence theorem from Fatou
 classification:
   areas:
   - real-analysis
   topics:
-  - fatou
-  - measure-theory
-  - convergence-of-integrals
+  - Fatou
+  - Measure Theory
+  - Convergence of Integrals
 relations: []
 review: draft
 solved: true

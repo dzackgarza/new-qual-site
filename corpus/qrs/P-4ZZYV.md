@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - polynomials
-  - singularities
+  - Entire Functions
+  - Polynomials
+  - Singularities
 relations: []
 review: draft
 solved: true

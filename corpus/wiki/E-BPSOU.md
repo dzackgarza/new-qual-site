@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - cauchy-estimates
-  - polynomials
-  - liouville-s-theorem
+  - Entire Functions
+  - Cauchy Estimates
+  - Polynomials
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"} 
 Show that if $f$ is entire and $\abs{f(z)} \in \bigo(\abs{z}^p)$ for $\abs{z}$ sufficiently large, then $f$ is a polynomial of degree at most $\floor{p}$.
 

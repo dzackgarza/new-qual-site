@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-YOZX6
 kind: theorem
-title: "Folland 0.25"
+title: Folland 0.25
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - completeness
-  - metric-spaces
+  - Compactness
+  - Completeness
+  - Metric Spaces
 relations: []
 review: draft
 ---

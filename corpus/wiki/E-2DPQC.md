@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-2DPQC
 kind: exercise
-title: "Uniform limit of holomorphic is holomorphic"
+title: Uniform limit of holomorphic is holomorphic
 classification:
   areas:
   - complex-analysis
   topics:
-  - morera
-  - uniform-convergence
-  - sequences-of-functions
-  - holomorphic-functions
+  - Morera
+  - Uniform Convergence
+  - Sequences of Functions
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

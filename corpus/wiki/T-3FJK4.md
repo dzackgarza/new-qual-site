@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-3FJK4
 kind: theorem
-title: "Closed if and only if compact in compact Hausdorff spaces"
+title: Closed if and only if compact in compact Hausdorff spaces
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
+  - Compactness
+  - Hausdorff Spaces
 relations: []
 review: draft
 ---

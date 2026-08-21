@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-2P7FZ
 kind: proposition
-title: "Young's Inequality"
+title: Young's Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - lp-spaces
-  - norms
+  - Convolution
+  - Lp Spaces
+  - Norms
 relations: []
 review: draft
 ---

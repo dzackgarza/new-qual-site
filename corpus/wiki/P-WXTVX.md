@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 solved: false

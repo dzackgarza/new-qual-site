@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-E4WZ4
 kind: problem
-title: "Hungerford 2.2.12.b."
+title: Hungerford 2.2.12.b.
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - abelian-groups
-  - structure-theorem
+  - Classification
+  - Abelian Groups
+  - Structure Theorem
 relations: []
 review: draft
 solved: false

@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - entire-functions
-  - complex-logarithm
+  - Uniform Convergence
+  - Sequences of Functions
+  - Entire Functions
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove that the sequence $\left(1+\frac{z}{n}\right)^{n}$ converges uniformly to $e^{z}$ on compact subsets of $\mathbb{C}$. 
 

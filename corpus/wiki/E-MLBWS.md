@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - counterexamples
-  - separability
+  - Field Extensions
+  - Counterexamples
+  - Separability
 relations: []
 review: draft
 solved: false

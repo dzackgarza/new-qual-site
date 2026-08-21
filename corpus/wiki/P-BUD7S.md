@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - compactness
-  - metric-spaces
-  - euclidean-spaces
+  - Compactness
+  - Metric Spaces
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $A, B \subseteq \RR^n$ are disjoint and compact.
 Prove that there exist $a\in A, b\in B$ such that

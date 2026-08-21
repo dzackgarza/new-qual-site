@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - factorization
-  - roots-of-unity
+  - Polynomials
+  - Factorization
+  - Roots of Unity
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show 
 \[

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - subgroup-series
+  - Nilpotent Groups
+  - Subgroup Series
 relations: []
 review: draft
 ---

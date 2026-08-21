@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-JY5KT
 kind: definition
-title: "Companion Matrix"
+title: Companion Matrix
 classification:
   areas:
   - algebra
   topics:
-  - rational-canonical-form
-  - matrices
-  - minimal-and-characteristic-polynomials
+  - Rational Canonical Form
+  - Matrices
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 ---
+
 :::{.definition title="Companion Matrix"}
 Given a monic $p(x) = a_0 + a_1 x + a_2 x^2 + \cdots + a_{n-1} x^{n-1} + x^n$, the **companion matrix** of $p$ is given by
 \[

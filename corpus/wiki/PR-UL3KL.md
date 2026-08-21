@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-UL3KL
 kind: proposition
-title: "Homology of 3-manifolds"
+title: Homology of 3-manifolds
 classification:
   areas:
   - topology
   topics:
-  - manifolds
-  - homology
-  - orientation
+  - Manifolds
+  - Homology
+  - Orientation
 relations: []
 review: draft
 ---

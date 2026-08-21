@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-IQQAF
 kind: exercise
-title: "ML estimate for a semicircular contour"
+title: ML estimate for a semicircular contour
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="ML estimate for a semicircular contour"}
 Use a semicircular contour and the residue theorem to evaluate
 \[

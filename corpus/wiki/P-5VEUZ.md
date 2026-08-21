@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-5VEUZ
 kind: problem
-title: Monotone pointwise convergence to $0$ of continuous functions on $[0,1]$ is uniform
+title: Monotone pointwise convergence to $0$ of continuous functions on $[0,1]$ is
+  uniform
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - compactness
-  - continuity
+  - Uniform Convergence
+  - Sequences of Functions
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of continuous functions $f_n: [0, 1]\to \RR$ such that 
 \[  

@@ -2,20 +2,22 @@
 schema: qual/card@1
 id: E-PCVOI
 kind: exercise
-title: $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{n\in\mathbb{Z}}\frac{1}{(z-n)^2}$ by matching singularities, principal parts, and decay in a period strip
+title: $\frac{\pi^2}{\sin^2(\pi z)}=\sum_{n\in\mathbb{Z}}\frac{1}{(z-n)^2}$ by matching
+  singularities, principal parts, and decay in a period strip
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
-  - poles
-  - principal-parts
-  - identity-theorem
-  - trigonometry
+  - Meromorphic Functions
+  - Poles
+  - Principal Parts
+  - Identity Theorem
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Define
 \[

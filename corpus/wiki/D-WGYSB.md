@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-WGYSB
 kind: definition
-title: "Uniform Continuity"
+title: Uniform Continuity
 classification:
   areas:
   - topology
   topics:
-  - uniform-continuity
-  - metric-spaces
-  - continuity
+  - Uniform Continuity
+  - Metric Spaces
+  - Continuity
 relations: []
 review: draft
 ---
+
 :::{.definition title="Uniform Continuity"}
 For $f: (X, d_{x}) \to (Y, d_{Y})$ metric spaces, $f$ is **uniformly continuous** iff
 \[

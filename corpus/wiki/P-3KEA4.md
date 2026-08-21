@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - surfaces
-  - euler-characteristic
+  - Fixed Points
+  - Surfaces
+  - Euler Characteristic
 relations: []
 review: draft
 solved: false

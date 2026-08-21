@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-NKDKF
 kind: exercise
-title: "Primitives imply vanishing integral"
+title: Primitives imply vanishing integral
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - cauchy-integral-theorem
+  - Contour Integration
+  - Cauchy Integral Theorem
 relations: []
 review: draft
 solved: true

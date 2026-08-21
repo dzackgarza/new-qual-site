@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-RMZDG
 kind: problem
-title: Entire functions of polynomial growth, sector vanishing on the disc, products of distances on $S^1$, and constancy when the real part is bounded
+title: Entire functions of polynomial growth, sector vanishing on the disc, products
+  of distances on $S^1$, and constancy when the real part is bounded
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - maximum-modulus-principle
-  - entire-functions
-  - polynomials
+  - Cauchy Estimates
+  - Maximum Modulus Principle
+  - Entire Functions
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Use the Cauchy inequalities or the maximum modulus principle to solve the following problems:
 

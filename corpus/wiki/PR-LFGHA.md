@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-LFGHA
 kind: proposition
-title: "Classification of groups of order $p$"
+title: Classification of groups of order $p$
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - cyclic-groups
-  - groups
+  - Classification
+  - Cyclic Groups
+  - Groups
 relations: []
 review: draft
 ---

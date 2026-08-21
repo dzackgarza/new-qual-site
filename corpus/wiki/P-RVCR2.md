@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-RVCR2
 kind: problem
-title: Every element of a finite-dimensional $k$-algebra is integral over $k$, and a non-zero-divisor is a unit
+title: Every element of a finite-dimensional $k$-algebra is integral over $k$, and
+  a non-zero-divisor is a unit
 classification:
   areas:
   - algebra
   topics:
-  - algebras
-  - integral-extensions
-  - integral-domains
+  - Algebras
+  - Integral Extensions
+  - Integral Domains
 relations: []
 review: draft
 solved: false

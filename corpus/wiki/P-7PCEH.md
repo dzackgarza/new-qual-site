@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-7PCEH
 kind: problem
-title: Definition of deformation retract; isomorphic $\pi_1$ of the figure-eight and the theta space; $\pi_1$ of the theta space free on two generators
+title: Definition of deformation retract; isomorphic $\pi_1$ of the figure-eight and
+  the theta space; $\pi_1$ of the theta space free on two generators
 classification:
   areas:
   - topology
   topics:
-  - retracts
-  - fundamental-group
-  - groups
+  - Retracts
+  - Fundamental Group
+  - Groups
 relations: []
 review: draft
 solved: false

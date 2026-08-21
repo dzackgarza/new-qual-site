@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-HRU62
 kind: definition
-title: "Gluing Along a Map"
+title: Gluing Along a Map
 classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - cell-complexes
+  - Quotient Spaces
+  - Cell Complexes
 relations: []
 review: draft
 ---

@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 \[
 \int_{0}^{\infty} \frac{\cos (x)}{x^{2}+b^{2}} d x=\frac{\pi \mathrm{e}^{-b}}{2 b} .

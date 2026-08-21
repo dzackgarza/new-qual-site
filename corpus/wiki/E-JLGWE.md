@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-JLGWE
 kind: exercise
-title: "Extended Liouville theorem"
+title: Extended Liouville theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - cauchy-estimates
-  - polynomials
+  - Liouville's Theorem
+  - Entire Functions
+  - Cauchy Estimates
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Extended Liouville theorem"}
 Let $f$ be an entire function. Assume that for some $k \in \mathbb{N}$, and sufficiently large $|z|$, we have that $|f(z)| \leq A+B|z|^{k}$. Prove that $f$ is a polynomal of degree at most $k$.
 

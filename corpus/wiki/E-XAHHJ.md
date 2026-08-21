@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - roots-of-unity
+  - Galois Theory
+  - Splitting Fields
+  - Roots of Unity
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Let $p \in \mathbb{Z}$ be a prime number.
 Then describe the elements of the Galois group of the polynomial $x^{p}-2$.

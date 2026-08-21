@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - mean-value-theorem
-  - integrals
-  - continuity
+  - Mean Value Theorem
+  - Integrals
+  - Continuity
 relations: []
 review: draft
 solved: true

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - function-spaces
-  - completeness
-  - norms
+  - Function Spaces
+  - Completeness
+  - Norms
 relations: []
 review: draft
 solved: true

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-LXPI7
 kind: exercise
-title: "Constructing functions with specified singularities"
+title: Constructing functions with specified singularities
 classification:
   areas:
   - complex-analysis
   topics:
-  - singularities
-  - essential-singularities
-  - poles
-  - removable-singularities
+  - Singularities
+  - Essential Singularities
+  - Poles
+  - Removable Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Constructing functions with specified singularities"}
 Determine a function with
 

@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - power-series
+  - Power Series
 relations: []
 review: draft
 solved: false

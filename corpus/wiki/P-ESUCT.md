@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-ESUCT
 kind: problem
-title: $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois with group $(\mathbb{Z}/n\mathbb{Z})^\times$, and the subfields of $\mathbb{Q}(\zeta_{20})$
+title: $\mathbb{Q}(\zeta_n)/\mathbb{Q}$ is Galois with group $(\mathbb{Z}/n\mathbb{Z})^\times$,
+  and the subfields of $\mathbb{Q}(\zeta_{20})$
 classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - galois-theory
-  - field-extensions
+  - Roots of Unity
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 solved: true
 ---
+
 Let $\zeta_n$ denote a primitive $n$th root of 1 $\in \QQ$.
 You may assume the roots of the minimal polynomial $p_n(x)$ of $\zeta_n$ are exactly the primitive $n$th roots of 1.
 

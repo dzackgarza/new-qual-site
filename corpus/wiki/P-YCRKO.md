@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - commutators
-  - solvable-groups
+  - Subgroup Series
+  - Commutators
+  - Solvable Groups
 relations: []
 review: draft
 solved: false

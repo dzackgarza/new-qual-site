@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-UQ4GC
 kind: problem
-title: 'The dual of an integer lattice: $\Lambda\subset\Lambda^\vee$, $\det M\neq 0$, and $|\Lambda^\vee/\Lambda|=\det M$'
+title: 'The dual of an integer lattice: $\Lambda\subset\Lambda^\vee$, $\det M\neq
+  0$, and $|\Lambda^\vee/\Lambda|=\det M$'
 classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - determinants
-  - structure-theorem
+  - Bilinear Forms
+  - Determinants
+  - Structure Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 Let $\{e_1, \cdots, e_n \}$ be a basis of a real vector space $V$ and let
 \[
 \Lambda \definedas \theset{ \sum r_i e_i \mid r_i \in \ZZ}

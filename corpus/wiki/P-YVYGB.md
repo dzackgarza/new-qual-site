@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-YVYGB
 kind: problem
-title: 'The commutator cover of a genus-$2$ surface: regularity, deck transformations, and a loop lifting trivially'
+title: 'The commutator cover of a genus-$2$ surface: regularity, deck transformations,
+  and a loop lifting trivially'
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - group-actions
-  - surfaces
-  - fundamental-group
+  - Covering Spaces
+  - Group Actions
+  - Surfaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

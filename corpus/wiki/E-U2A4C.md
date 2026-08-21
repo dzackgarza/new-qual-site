@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-U2A4C
 kind: exercise
-title: "Residues at $\\infty$"
+title: Residues at $\infty$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - singularities
-  - laurent-series
+  - Residues
+  - Singularities
+  - Laurent Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Residues at $\infty$"}
 Compute
 \[

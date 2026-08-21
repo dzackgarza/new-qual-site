@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - blaschke-factors
-  - fractional-linear-transformations
+  - Schwarz Lemma
+  - Blaschke Factors
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f$ be a holomorphic map of the open unit disc $\DD$ to itself.
 Show that for any $z, w\in \DD$,

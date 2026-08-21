@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-FYX4I
 kind: definition
-title: "Composition Series"
+title: Composition Series
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - classification
+  - Subgroup Series
+  - Classification
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-YAEMZ
 kind: exercise
-title: Compactness, limit point compactness, and sequential compactness in second-countable Hausdorff or metric spaces
+title: Compactness, limit point compactness, and sequential compactness in second-countable
+  Hausdorff or metric spaces
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - countability
-  - metric-spaces
+  - Compactness
+  - Countability
+  - Metric Spaces
 relations: []
 review: draft
 solved: false

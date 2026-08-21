@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-ADLQN
 kind: proposition
-title: "Prime Subfields of Finite Fields"
+title: Prime Subfields of Finite Fields
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - characteristic
-  - classification
+  - Finite Fields
+  - Characteristic
+  - Classification
 relations: []
 review: draft
 ---

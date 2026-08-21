@@ -7,10 +7,11 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 ---
+
 :::{.definition title="Connected"}
 A space $X$ is **connected** iff there does not exist a disconnection $X = A\disjoint B$ with $A, B$ nonempty open sets.
 I.e. $X$ can not be written as the disjoint union of two proper nonempty open sets.

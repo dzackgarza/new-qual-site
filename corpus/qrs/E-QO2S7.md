@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-QO2S7
 kind: exercise
-title: "Bounded Complex Analytic Functions form a Banach Space"
+title: Bounded Complex Analytic Functions form a Banach Space
 classification:
   areas:
   - complex-analysis
   topics:
-  - function-spaces
-  - uniform-convergence
-  - morera
-  - holomorphic-functions
+  - Function Spaces
+  - Uniform Convergence
+  - Morera
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

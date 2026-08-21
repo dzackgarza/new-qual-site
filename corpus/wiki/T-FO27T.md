@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-FO27T
 kind: theorem
-title: "Bounded inverse"
+title: Bounded inverse
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - continuity
+  - Functional Analysis
+  - Continuity
 relations: []
 review: draft
 ---

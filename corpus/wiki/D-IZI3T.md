@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-IZI3T
 kind: definition
-title: "Homotopy Class"
+title: Homotopy Class
 classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-C3XJT
 kind: problem
-title: $\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx=\frac{\pi}{n\sin(a\pi/n)}$ for $0<a\le n$
+title: $\int_0^\infty\frac{x^{a-1}}{1+x^n}\,dx=\frac{\pi}{n\sin(a\pi/n)}$ for $0<a\le
+  n$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: false

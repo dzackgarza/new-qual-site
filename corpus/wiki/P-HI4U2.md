@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - polynomials
-  - fields
+  - Field Extensions
+  - Polynomials
+  - Fields
 relations: []
 review: draft
 solved: true

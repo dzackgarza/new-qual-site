@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - polynomials
-  - irreducibility-criteria
+  - Factorization
+  - Polynomials
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

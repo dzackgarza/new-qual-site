@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-FY3WB
 kind: problem
-title: The truncated exponential $\sum_{k=0}^n z^k/k!$ has no zeros in the open unit disk
+title: The truncated exponential $\sum_{k=0}^n z^k/k!$ has no zeros in the open unit
+  disk
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove that for every $n\in \ZZ^{\geq 0}$ the following polynomial has no roots in the open unit disc:
 \[

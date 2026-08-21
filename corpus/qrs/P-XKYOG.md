@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-XKYOG
 kind: problem
-title: "equations take the form"
+title: equations take the form
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - complex-logarithm
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Complex Logarithm
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-6PENU
 kind: proposition
-title: "Application: isomorphisms in the homology of spheres"
+title: 'Application: isomorphisms in the homology of spheres'
 classification:
   areas:
   - topology
   topics:
-  - cohomology
-  - homology
+  - Cohomology
+  - Homology
 relations: []
 review: draft
 ---

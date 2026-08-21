@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - metric-spaces
+  - Continuity
+  - Metric Spaces
 relations: []
 review: draft
 solved: true

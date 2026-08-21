@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: C-HWX2P
 kind: corollary
-title: "\\size G = \\size (G/H) \\size H \\da [G:H] \\, \\size H"
+title: \size G = \size (G/H) \size H \da [G:H] \, \size H
 classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - subgroups
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 ---
+
 :::{.corollary title="?"}
 \[
 \size  G = \size (G/H) \size H \da [G:H] \, \size  H

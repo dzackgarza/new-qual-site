@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - cyclic-groups
-  - field-extensions
+  - Galois Theory
+  - Cyclic Groups
+  - Field Extensions
 relations: []
 review: draft
 solved: false

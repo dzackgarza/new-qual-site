@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - determinants
-  - matrices
-  - polynomials
+  - Determinants
+  - Matrices
+  - Polynomials
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="?"}
 Consider the Vandermonde matrix:
 \[

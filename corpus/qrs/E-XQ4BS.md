@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 solved: true

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-LO7QM
 kind: theorem
-title: "Stokes Theorem"
+title: Stokes Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - green-s-theorem
-  - integrals
+  - Green's Theorem
+  - Integrals
 relations: []
 review: draft
 ---

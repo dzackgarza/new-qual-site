@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - bases
+  - Bases
 relations: []
 review: draft
 solved: false

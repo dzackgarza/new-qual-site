@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-YTOUD
 kind: problem
-title: A map $S^n\to S^n$ has a fixed point unless its degree equals that of the antipodal map
+title: A map $S^n\to S^n$ has a fixed point unless its degree equals that of the antipodal
+  map
 classification:
   areas:
   - topology
   topics:
-  - degree
-  - fixed-points
+  - Degree
+  - Fixed Points
 relations: []
 review: draft
 solved: false

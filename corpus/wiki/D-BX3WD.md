@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-BX3WD
 kind: definition
-title: "Universal Cover"
+title: Universal Cover
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 ---

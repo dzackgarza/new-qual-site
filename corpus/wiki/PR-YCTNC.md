@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-YCTNC
 kind: proposition
-title: "Separability is transitive."
+title: Separability is transitive.
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
+  - Separability
+  - Field Extensions
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-2ZOAV
 kind: proposition
-title: "PQR Theorem"
+title: PQR Theorem
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - classification
+  - Solvable Groups
+  - Classification
 relations: []
 review: draft
 ---

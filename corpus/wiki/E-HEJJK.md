@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-HEJJK
 kind: exercise
-title: "Entire functions missing a disc"
+title: Entire functions missing a disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - removable-singularities
+  - Liouville's Theorem
+  - Entire Functions
+  - Removable Singularities
 relations: []
 review: draft
 solved: true

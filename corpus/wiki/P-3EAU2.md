@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - zeros
-  - holomorphic-functions
+  - Identity Theorem
+  - Zeros
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $f$ is analytic on $\DD^\circ$.
 Determine with proof which of the following are possible:

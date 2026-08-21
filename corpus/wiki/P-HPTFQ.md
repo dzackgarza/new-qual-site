@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - cosets-and-lagrange
-  - p-groups
+  - Group Actions
+  - Cosets and Lagrange
+  - p-Groups
 relations: []
 review: draft
 solved: false

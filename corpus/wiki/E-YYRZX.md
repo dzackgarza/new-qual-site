@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-YYRZX
 kind: exercise
-title: "$e^{x/2} / 1+e^x,$ replication"
+title: $e^{x/2} / 1+e^x,$ replication
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$e^{x/2} / 1+e^x,$ replication"}
 \[
 I \da \int_\RR {e^{x\over 2}\over 1+e^x}\dx

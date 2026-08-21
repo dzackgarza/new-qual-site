@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-VUKHO
 kind: proposition
-title: "Cosets are equal or disjoint"
+title: Cosets are equal or disjoint
 classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - subgroups
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 ---

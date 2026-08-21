@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-JKH35
 kind: definition
-title: "Product topology"
+title: Product topology
 classification:
   areas:
   - topology
   topics:
-  - product-topology
-  - point-set
+  - Product Topology
+  - Point-Set Topology
 relations: []
 review: draft
 ---

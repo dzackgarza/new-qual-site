@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-5BLYU
 kind: theorem
-title: "Mean Value Property for Holomorphic Functions"
+title: Mean Value Property for Holomorphic Functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - mean-value-property
-  - cauchy-integral-formula
+  - Mean Value Property
+  - Cauchy Integral Formula
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Mean Value Property for Holomorphic Functions"}
 If $f$ is holomorphic on $D_r(z_0)$
 \[

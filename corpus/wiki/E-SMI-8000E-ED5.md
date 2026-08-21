@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-SMI-8000E-ED5
 kind: exercise
-title: Matrices over a Euclidean domain are diagonalizable by invertible row and column operations
+title: Matrices over a Euclidean domain are diagonalizable by invertible row and column
+  operations
 classification:
   areas:
   - algebra
   topics:
-  - euclidean-domains
-  - modules
-  - linear-algebra
+  - Euclidean Domains
+  - Modules
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

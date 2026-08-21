@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-VSKE4
 kind: problem
-title: Locally bounded holomorphic functions converging on a set with a limit point converge uniformly on compacta
+title: Locally bounded holomorphic functions converging on a set with a limit point
+  converge uniformly on compacta
 classification:
   areas:
   - complex-analysis
   topics:
-  - normal-families
-  - montel
-  - uniform-convergence
-  - identity-theorem
+  - Normal Families
+  - Montel
+  - Uniform Convergence
+  - Identity Theorem
 relations: []
 review: draft
 solved: true

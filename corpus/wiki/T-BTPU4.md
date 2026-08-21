@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-BTPU4
 kind: theorem
-title: "Seifert-van Kampen"
+title: Seifert-van Kampen
 classification:
   areas:
   - topology
   topics:
-  - van-kampen
-  - fundamental-group
+  - van Kampen
+  - Fundamental Group
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Seifert-van Kampen"}
 Suppose $X = U_{1} \union U_{2}$ where $U_1, U_2$, and $U \da U_{1} \intersect U_{2} \neq \emptyset$ are open and path-connected 
 [^path_connected_necessary]

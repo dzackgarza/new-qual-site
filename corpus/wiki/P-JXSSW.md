@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: P-JXSSW
 kind: problem
-title: Laurent series and singularities at $0$ of $\sin^2(z)/z$, $z\exp(1/z^2)$, and $1/(z(4-z))$
+title: Laurent series and singularities at $0$ of $\sin^2(z)/z$, $z\exp(1/z^2)$, and
+  $1/(z(4-z))$
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - singularities
-  - essential-singularities
-  - removable-singularities
-  - poles
+  - Laurent Series
+  - Singularities
+  - Essential Singularities
+  - Removable Singularities
+  - Poles
 relations: []
 review: draft
 solved: false

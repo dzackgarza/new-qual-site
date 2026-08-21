@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - eigenvalues-and-eigenvectors
-  - linear-algebra
+  - Eigenvalues and Eigenvectors
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

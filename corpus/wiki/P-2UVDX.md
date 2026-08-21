@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-2UVDX
 kind: problem
-title: $e^{-\pi\xi^2}=\int_{-\infty}^\infty e^{-\pi x^2}e^{2\pi i x\xi}\,dx$ for all $\xi\in\CC$
+title: $e^{-\pi\xi^2}=\int_{-\infty}^\infty e^{-\pi x^2}e^{2\pi i x\xi}\,dx$ for all
+  $\xi\in\CC$
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - entire-functions
-  - integrals
-  - identity-theorem
+  - Contour Integration
+  - Entire Functions
+  - Integrals
+  - Identity Theorem
 relations: []
 review: draft
 solved: false

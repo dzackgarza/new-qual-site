@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-JZNWV
 kind: exercise
-title: "$x/(x^2+4x+13)^2$"
+title: $x/(x^2+4x+13)^2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - poles
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$x/(x^2+4x+13)^2$"}
 
 \[

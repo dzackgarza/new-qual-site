@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-6SR5N
 kind: problem
-title: $\int_0^{2\pi}\frac{1}{a+\cos\theta}\,d\theta=\frac{2\pi}{\sqrt{a^2-1}}$ for $a>1$
+title: $\int_0^{2\pi}\frac{1}{a+\cos\theta}\,d\theta=\frac{2\pi}{\sqrt{a^2-1}}$ for
+  $a>1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Show 
 \[

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TX3CN
 kind: problem
-title: A finite-index subgroup contains a finite-index normal subgroup contained in every conjugate
+title: A finite-index subgroup contains a finite-index normal subgroup contained in
+  every conjugate
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - group-actions
-  - cosets-and-lagrange
+  - Normal Subgroups
+  - Group Actions
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: true

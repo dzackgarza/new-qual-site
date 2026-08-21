@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-QZBTX
 kind: problem
-title: "Hungerford 5.6.8"
+title: Hungerford 5.6.8
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - characteristic
-  - field-extensions
+  - Separability
+  - Characteristic
+  - Field Extensions
 relations: []
 review: draft
 solved: false

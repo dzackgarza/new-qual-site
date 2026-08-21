@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-ZT46D
 kind: definition
-title: "Separable polynomials"
+title: Separable polynomials
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - polynomials
+  - Separability
+  - Polynomials
 relations: []
 review: draft
 ---

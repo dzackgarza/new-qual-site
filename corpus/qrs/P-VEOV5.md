@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-VEOV5
 kind: problem
-title: Polynomial growth of entire functions, vanishing in a sector, products of distances on $S^1$, and bounded real part
+title: Polynomial growth of entire functions, vanishing in a sector, products of distances
+  on $S^1$, and bounded real part
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - maximum-modulus-principle
-  - entire-functions
-  - polynomials
+  - Cauchy Estimates
+  - Maximum Modulus Principle
+  - Entire Functions
+  - Polynomials
 relations: []
 review: draft
 solved: true

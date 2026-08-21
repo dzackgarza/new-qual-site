@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - ideals
-  - nakayamas-lemma
+  - Noetherian Rings
+  - Ideals
+  - Nakayama's Lemma
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - mayer-vietoris
-  - homology
-  - surfaces
+  - Mayer-Vietoris
+  - Homology
+  - Surfaces
 relations: []
 review: draft
 solved: false

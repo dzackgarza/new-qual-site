@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - picard
-  - entire-functions
+  - Picard
+  - Entire Functions
 relations: []
 review: draft
 solved: true

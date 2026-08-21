@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: E-MFCCS
 kind: exercise
-title: A pairwise disjoint family of intervals with nonempty interior in $\RR$ is countable
+title: A pairwise disjoint family of intervals with nonempty interior in $\RR$ is
+  countable
 classification:
   areas:
   - real-analysis
   topics:
-  - countability
-  - euclidean-spaces
+  - Countability
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: true

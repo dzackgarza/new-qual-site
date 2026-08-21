@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-S04SQ
 kind: problem
-title: The sequence $x_{n+1}=\frac14 x_n^2+1$ with $x_1=1$ is increasing and bounded by $2$
+title: The sequence $x_{n+1}=\frac14 x_n^2+1$ with $x_1=1$ is increasing and bounded
+  by $2$
 classification:
   areas:
   - prelim
   topics:
-  - sequences-of-numbers
-  - induction
+  - Sequences of Numbers
+  - Induction
 relations: []
 review: draft
 solved: false

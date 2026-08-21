@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-5YZPH
 kind: problem
-title: A $p$-subgroup acting on the cosets of a Sylow $p$-subgroup has a length-one orbit iff it lies in a conjugate
+title: A $p$-subgroup acting on the cosets of a Sylow $p$-subgroup has a length-one
+  orbit iff it lies in a conjugate
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - group-actions
-  - cosets-and-lagrange
+  - Sylow Theory
+  - Group Actions
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: false

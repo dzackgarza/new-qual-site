@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-TUXBP
 kind: theorem
-title: "Implicit Function Theorem"
+title: Implicit Function Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
+  - Calculus
 relations:
 - kind: related-to
   target: T-QMGPN

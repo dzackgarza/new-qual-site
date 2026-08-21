@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - multivariable-calculus
-  - differentiation
+  - Multivariable Calculus
+  - Differentiation
 relations: []
 review: draft
 solved: true

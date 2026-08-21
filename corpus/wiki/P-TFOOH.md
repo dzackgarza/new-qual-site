@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - morera
-  - uniform-convergence
-  - sequences-of-functions
-  - holomorphic-functions
+  - Morera
+  - Uniform Convergence
+  - Sequences of Functions
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of analytic functions on $\DD \definedas \theset{z\in \CC \suchthat \abs{z} < 1}$.
 

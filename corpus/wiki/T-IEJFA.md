@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-IEJFA
 kind: theorem
-title: "Weierstrass factorization"
+title: Weierstrass factorization
 classification:
   areas:
   - complex-analysis
   topics:
-  - weierstrass-factorization
-  - entire-functions
-  - zeros
+  - Weierstrass Factorization
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 ---

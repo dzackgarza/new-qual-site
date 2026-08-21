@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - paracompactness
-  - compactness
-  - point-set
+  - Paracompactness
+  - Compactness
+  - Point-Set Topology
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-5NV3N
 kind: definition
-title: "Central Series"
+title: Central Series
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - nilpotent-groups
+  - Subgroup Series
+  - Nilpotent Groups
 relations: []
 review: draft
 ---

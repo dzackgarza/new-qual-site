@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - hausdorff-spaces
-  - counterexamples
+  - Quotient Spaces
+  - Hausdorff Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: true

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - commutative-algebra
-  - integral-domains
+  - Factorization
+  - Commutative Algebra
+  - Integral Domains
 relations: []
 review: draft
 solved: false

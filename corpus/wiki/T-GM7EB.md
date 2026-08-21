@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-GM7EB
 kind: theorem
-title: "Nilpotents Have All Sylows Normal"
+title: Nilpotents Have All Sylows Normal
 classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - sylow-theory
-  - normal-subgroups
+  - Nilpotent Groups
+  - Sylow Theory
+  - Normal Subgroups
 relations: []
 review: draft
 ---

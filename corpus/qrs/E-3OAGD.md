@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - compactness
+  - Measure Theory
+  - Compactness
 relations: []
 review: draft
 solved: true

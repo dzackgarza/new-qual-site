@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - Groups
 relations: []
 review: reviewed
 ---

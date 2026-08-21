@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-5UQSK
 kind: problem
-title: Equicontinuity on $[a,b]$ of differentiable functions with $|f(a)|\le M$ and $|f'|\le M$
+title: Equicontinuity on $[a,b]$ of differentiable functions with $|f(a)|\le M$ and
+  $|f'|\le M$
 classification:
   areas:
   - real-analysis
   topics:
-  - equicontinuity
-  - differentiation
+  - Equicontinuity
+  - Differentiation
 relations: []
 review: draft
 solved: true

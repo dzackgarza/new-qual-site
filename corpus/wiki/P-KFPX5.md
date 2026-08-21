@@ -7,13 +7,14 @@ classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
-  - homotopy
+  - Covering Spaces
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 solved: true
 ---
+
 a.  
 Give the definition of a **covering space** $\hat{X}$
 (and **covering map** $p : \hat{X} \to X$) for a topological space $X$.

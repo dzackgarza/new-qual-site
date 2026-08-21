@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - essential-singularities
-  - principal-parts
+  - Laurent Series
+  - Essential Singularities
+  - Principal Parts
 relations: []
 review: draft
 solved: true
 ---
+
 Find the Laurent expansions about $z=0$ of the following functions:
 \[
 e^{1\over z} \hspace{8em} \cos \qty{1\over z}

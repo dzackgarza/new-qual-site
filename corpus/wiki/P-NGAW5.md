@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - irreducibility-criteria
-  - polynomials
+  - Irreducibility Criteria
+  - Polynomials
 relations: []
 review: draft
 solved: false

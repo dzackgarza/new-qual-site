@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-5BFVS
 kind: theorem
-title: "Duals for $L^p$ spaces"
+title: Duals for $L^p$ spaces
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - lp-spaces
+  - Dual Spaces
+  - Lp Spaces
 relations: []
 review: draft
 ---

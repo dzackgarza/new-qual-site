@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - normal-subgroups
-  - subgroups
+  - Automorphisms
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 solved: false

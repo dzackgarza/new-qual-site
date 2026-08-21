@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - eigenvalues-and-eigenvectors
-  - matrices
-  - nilpotence
+  - Eigenvalues and Eigenvectors
+  - Matrices
+  - Nilpotence
 relations: []
 review: draft
 solved: false

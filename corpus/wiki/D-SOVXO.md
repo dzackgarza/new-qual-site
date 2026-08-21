@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-SOVXO
 kind: definition
-title: "Homotopy"
+title: Homotopy
 classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 ---

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-2HIKG
 kind: exercise
-title: "$x^? / 1+x^2$"
+title: $x^? / 1+x^2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$x^? / 1+x^2$"}
 \[
 I\da \int_0^\infty {x^{1\over 3} \over 1 + x^2} \dx = {\pi \over \sqrt 3}

@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-ALZSD
 kind: problem
-title: Continuity from above for a finite Borel measure, and $\varepsilon$-$\delta$ absolute continuity
+title: Continuity from above for a finite Borel measure, and $\varepsilon$-$\delta$
+  absolute continuity
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity-of-measure
-  - measure-theory
-  - absolute-continuity
+  - Continuity of Measure
+  - Measure Theory
+  - Absolute Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 Let $\mathcal B$ denote the set of all Borel subsets of $\RR$ and $\mu : \mathcal B \to [0, \infty)$ denote a finite Borel measure on $\RR$.
   
 a. 

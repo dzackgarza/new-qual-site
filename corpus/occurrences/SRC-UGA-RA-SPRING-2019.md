@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- https://www.math.uga.edu/sites/default/files/Quals/Real%20Analysis%20%5BSpring%202019%5D.docx
+source:
   source_kind: university-exam
   institution: uga
   area: real-analysis

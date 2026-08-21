@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - set-theory
+  - Set Theory
 relations: []
 review: draft
 solved: false

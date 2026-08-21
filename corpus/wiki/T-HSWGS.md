@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-HSWGS
 kind: theorem
-title: "Automorphisms of the disc"
+title: Automorphisms of the disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - blaschke-factors
+  - Biholomorphisms
+  - Blaschke Factors
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Automorphisms of the disc"}
 What are the automorphisms of $\DD, \CC, \CP^1$?
 For the disc, it's known:

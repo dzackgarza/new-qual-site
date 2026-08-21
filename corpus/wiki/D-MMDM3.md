@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-MMDM3
 kind: definition
-title: "CW Cell"
+title: CW Cell
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
+  - Cell Complexes
 relations: []
 review: draft
 ---

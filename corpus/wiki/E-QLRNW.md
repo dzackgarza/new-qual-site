@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-QLRNW
 kind: exercise
-title: "Uniform limits of derivatives, term-by-term differentiation"
+title: Uniform limits of derivatives, term-by-term differentiation
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - cauchy-integral-formula
-  - power-series
+  - Uniform Convergence
+  - Sequences of Functions
+  - Cauchy Integral Formula
+  - Power Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Uniform limits of derivatives, term-by-term differentiation"}
 Suppose $f_k: \Omega\to \CC$ is a sequence of differentiable functions converging locally uniformly to $f:\Omega\to \CC$.
 Show that

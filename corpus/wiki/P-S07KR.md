@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - linear-maps
-  - matrices
+  - Linear Maps
+  - Matrices
 relations: []
 review: draft
 solved: false

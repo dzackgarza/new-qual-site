@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-BGNME
 kind: definition
-title: "Lower Central Series"
+title: Lower Central Series
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - nilpotent-groups
-  - commutators
+  - Subgroup Series
+  - Nilpotent Groups
+  - Commutators
 relations: []
 review: draft
 ---

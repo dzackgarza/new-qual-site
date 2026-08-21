@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-DEZSR
 kind: problem
-title: "Classify finite fields, their subfields, and their field extensions."
+title: Classify finite fields, their subfields, and their field extensions.
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - galois-theory
-  - automorphisms
+  - Finite Fields
+  - Galois Theory
+  - Automorphisms
 relations: []
 review: draft
 solved: false

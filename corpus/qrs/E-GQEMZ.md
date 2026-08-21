@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - differentiation
+  - Convolution
+  - Differentiation
 relations: []
 review: draft
 solved: true

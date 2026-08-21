@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-IT3OF
 kind: problem
-title: Fundamental group and homology of a $2$-cell attached to $S^1$ by $z\mapsto z^n$, and which $X_n$ is a surface
+title: Fundamental group and homology of a $2$-cell attached to $S^1$ by $z\mapsto
+  z^n$, and which $X_n$ is a surface
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - fundamental-group
-  - homology
-  - surfaces
+  - Cell Complexes
+  - Fundamental Group
+  - Homology
+  - Surfaces
 relations: []
 review: draft
 solved: false

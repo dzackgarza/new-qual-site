@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-O5NN7
 kind: definition
-title: "Orbit space"
+title: Orbit space
 classification:
   areas:
   - topology
   topics:
-  - group-actions
-  - quotient-spaces
+  - Group Actions
+  - Quotient Spaces
 relations: []
 review: draft
 ---

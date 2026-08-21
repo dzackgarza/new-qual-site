@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - permutations
+  - Automorphisms
+  - Permutations
 relations: []
 review: draft
 solved: false

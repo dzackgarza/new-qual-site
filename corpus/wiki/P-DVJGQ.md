@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - multivariable-calculus
+  - Multivariable Calculus
 relations: []
 review: draft
 solved: false

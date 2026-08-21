@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: T-ZZJDP
 kind: theorem
-title: "Riemann's removable singularity theorem"
+title: Riemann's removable singularity theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - singularities
-  - laurent-series
-  - principal-parts
+  - Removable Singularities
+  - Singularities
+  - Laurent Series
+  - Principal Parts
 relations: []
 review: draft
 ---

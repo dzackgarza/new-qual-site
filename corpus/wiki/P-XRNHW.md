@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-XRNHW
 kind: problem
-title: The bound $\int_F|x-y|^{-2}\,dx\leq 2/\delta_F(y)$, with $I(x)=\int\delta_F(y)/|x-y|^2\,dy$ infinite off $F$ and finite a.e. on $F$
+title: The bound $\int_F|x-y|^{-2}\,dx\leq 2/\delta_F(y)$, with $I(x)=\int\delta_F(y)/|x-y|^2\,dy$
+  infinite off $F$ and finite a.e. on $F$
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - integrals
-  - fubini-tonelli
+  - Measure Theory
+  - Integrals
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 a.
 Let $F \subset \mathbb{R}$ be closed, and define

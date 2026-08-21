@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-Y73BB
 kind: definition
-title: "Kronecker Pairing"
+title: Kronecker Pairing
 classification:
   areas:
   - topology
   topics:
-  - cohomology
-  - homology
+  - Cohomology
+  - Homology
 relations: []
 review: draft
 ---

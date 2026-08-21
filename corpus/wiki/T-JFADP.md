@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-JFADP
 kind: theorem
-title: "Compact in Hausdorff $\\implies$ closed"
+title: Compact in Hausdorff $\implies$ closed
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
+  - Compactness
+  - Hausdorff Spaces
 relations: []
 review: draft
 ---

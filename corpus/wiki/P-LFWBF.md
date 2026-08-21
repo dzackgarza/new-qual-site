@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - dual-spaces
-  - modules
-  - homomorphisms
+  - Dual Spaces
+  - Modules
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

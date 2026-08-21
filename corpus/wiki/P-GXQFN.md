@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-GXQFN
 kind: problem
-title: "Hungerford 5.4.12"
+title: Hungerford 5.4.12
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - classification
-  - permutations
+  - Galois Theory
+  - Classification
+  - Permutations
 relations: []
 review: draft
 solved: false

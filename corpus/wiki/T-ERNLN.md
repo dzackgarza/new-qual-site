@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-ERNLN
 kind: theorem
-title: "Uniform Limit Theorem"
+title: Uniform Limit Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - continuity
+  - Uniform Convergence
+  - Continuity
 relations: []
 review: draft
 ---

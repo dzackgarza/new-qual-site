@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-ZO73V
 kind: proposition
-title: "Towers are multiplicative in degree"
+title: Towers are multiplicative in degree
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
+  - Field Extensions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Towers are multiplicative in degree"}
 Let $L/F/k$ be a finite tower of field extensions.
 \[

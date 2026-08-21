@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - centralizers-and-normalizers
-  - finite-fields
+  - Matrix Groups
+  - Centralizers and Normalizers
+  - Finite Fields
 relations: []
 review: draft
 solved: false

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-T4LOC
 kind: definition
-title: "Dual Norm"
+title: Dual Norm
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - norms
+  - Dual Spaces
+  - Norms
 relations: []
 review: draft
 ---
+
 :::{.definition title="Dual Norm"}
 For $X$ a normed vector space and $L \in X\dual$, the **dual norm** or **operator norm** is defined by
 \[

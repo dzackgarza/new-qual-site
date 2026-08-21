@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-UBWVX
 kind: definition
-title: "Manifold"
+title: Manifold
 classification:
   areas:
   - topology
   topics:
-  - manifolds
-  - hausdorff-spaces
+  - Manifolds
+  - Hausdorff Spaces
 relations: []
 review: draft
 ---

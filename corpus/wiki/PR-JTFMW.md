@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - cantor-set
-  - density
-  - closure
+  - Cantor Set
+  - Density
+  - Closure
 relations: []
 review: draft
 ---

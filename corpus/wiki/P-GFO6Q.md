@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-GFO6Q
 kind: problem
-title: Maximal ideals of finite-dimensional $\CC$-algebras have codimension $1$, and classification in dimension $2$
+title: Maximal ideals of finite-dimensional $\CC$-algebras have codimension $1$, and
+  classification in dimension $2$
 classification:
   areas:
   - algebra
   topics:
-  - algebras
-  - maximal-ideals
-  - classification
+  - Algebras
+  - Maximal Ideals
+  - Classification
 relations: []
 review: draft
 solved: true
 ---
+
 Let $R$ be an algebra over $\CC$ which is finite-dimensional as a $\CC\dash$vector space. Recall that an ideal $I$ of $R$ can be considered as a $\CC\dash$subvector space of $R$. We define the codimension of $I$ in $R$ to be 
 \[
 \codim_R I \da 

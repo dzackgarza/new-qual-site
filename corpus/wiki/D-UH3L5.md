@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-UH3L5
 kind: definition
-title: "Deformation"
+title: Deformation
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - retracts
+  - Homotopy
+  - Retracts
 relations: []
 review: draft
 ---

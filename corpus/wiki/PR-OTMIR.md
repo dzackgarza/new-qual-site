@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-OTMIR
 kind: proposition
-title: "Upper half-disc to upper half-plane"
+title: Upper half-disc to upper half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Upper half-disc to upper half-plane"}
 \[
 F: \DD \intersect \HH &\to \HH \\

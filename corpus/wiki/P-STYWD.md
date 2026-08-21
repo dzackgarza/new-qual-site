@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-STYWD
 kind: problem
-title: The series $\sum x^n/n!$ converges uniformly on bounded intervals but not on $\RR$
+title: The series $\sum x^n/n!$ converges uniformly on bounded intervals but not on
+  $\RR$
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - series-of-functions
+  - Uniform Convergence
+  - Series of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 Let 
 \[
 f(x) = \sum _{n=0}^{\infty} \frac{x^{n}}{n !}.

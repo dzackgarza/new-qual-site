@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
-  - uniform-convergence
+  - Logic and Quantifiers
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true

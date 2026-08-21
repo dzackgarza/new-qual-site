@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-DY2B3
 kind: proposition
-title: "Useful properties of the Fourier transform"
+title: Useful properties of the Fourier transform
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - convolution
+  - Fourier Analysis
+  - Convolution
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Useful properties of the Fourier transform"}
 \[
 \widehat{f\ast g}(\xi)

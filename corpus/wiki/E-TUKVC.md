@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - entire-functions
-  - polynomials
-  - identity-theorem
+  - Power Series
+  - Entire Functions
+  - Polynomials
+  - Identity Theorem
 relations: []
 review: draft
 solved: true

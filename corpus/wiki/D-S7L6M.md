@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-S7L6M
 kind: definition
-title: "Exact Functor"
+title: Exact Functor
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - category-theory
+  - Homological Algebra
+  - Category Theory
 relations: []
 review: draft
 ---
+
 :::{.definition title="Exact Functor"}
 A functor $T$ is *right exact* if a short exact sequence 
 

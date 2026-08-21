@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-GSFRX
 kind: problem
-title: Minimal and characteristic polynomials of a $5\times 5$ real matrix with eigenvalues $0,1\pm i,1\pm 2i$
+title: Minimal and characteristic polynomials of a $5\times 5$ real matrix with eigenvalues
+  $0,1\pm i,1\pm 2i$
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - eigenvalues-and-eigenvectors
+  - Minimal and Characteristic Polynomials
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 solved: false

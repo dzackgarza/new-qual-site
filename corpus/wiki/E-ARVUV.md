@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-ARVUV
 kind: exercise
-title: "Sum formulas: $1/n^2+a^2$"
+title: 'Sum formulas: $1/n^2+a^2$'
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - series-of-numbers
-  - hyperbolic-functions
-  - meromorphic-functions
+  - Residues
+  - Series of Numbers
+  - Hyperbolic Functions
+  - Meromorphic Functions
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="Sum formulas: $1/n^2+a^2$"}
 Show that
 \[

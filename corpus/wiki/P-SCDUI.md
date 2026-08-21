@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Assume that $\abs b < 1$ and show that the following polynomial has exactly two roots (counting multiplicity) in $\abs{z} < 1$:
 \[

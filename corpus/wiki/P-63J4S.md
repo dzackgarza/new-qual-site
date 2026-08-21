@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - groups
+  - Covering Spaces
+  - Groups
 relations: []
 review: draft
 solved: false

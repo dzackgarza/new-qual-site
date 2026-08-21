@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-U5CHT
 kind: proposition
-title: "One-step subgroup test"
+title: One-step subgroup test
 classification:
   areas:
   - algebra
   topics:
-  - subgroups
+  - Subgroups
 relations: []
 review: draft
 ---

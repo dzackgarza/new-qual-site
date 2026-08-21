@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - sylow-theory
-  - classification
+  - Solvable Groups
+  - Sylow Theory
+  - Classification
 relations: []
 review: draft
 solved: false

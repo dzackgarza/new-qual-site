@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-QTJ7T
 kind: definition
-title: "Normal Family"
+title: Normal Family
 classification:
   areas:
   - complex-analysis
   topics:
-  - normal-families
+  - Normal Families
 relations:
 - kind: related-to
   target: D-VZNMF

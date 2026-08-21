@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-GYQLA
 kind: problem
-title: Left translation is an odd permutation iff its order is even and $|G|$ divided by the order is odd
+title: Left translation is an odd permutation iff its order is even and $|G|$ divided
+  by the order is odd
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - group-actions
-  - cosets-and-lagrange
+  - Permutations
+  - Group Actions
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: true
 ---
+
 Let $G$ be a finite group and $\pi: G\to \sym(G)$ the Cayley representation.
 
 > (Recall that this means that for an element $x\in G$, $\pi(x)$ acts by left translation on $G$.)

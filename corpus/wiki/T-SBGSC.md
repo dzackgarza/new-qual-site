@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-SBGSC
 kind: theorem
-title: "Symmetry Principle"
+title: Symmetry Principle
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-reflection
-  - holomorphic-functions
+  - Schwarz Reflection
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

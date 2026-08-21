@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-R4VKE
 kind: definition
-title: "Lebesgue Integral"
+title: Lebesgue Integral
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - measure-theory
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 ---
+
 :::{.definition title="Lebesgue Integral"}
 \[
 \int_X f \da \sup \ts{ \int s(x) \dmu \st 0\leq s \leq f, s\text{ simple } } 

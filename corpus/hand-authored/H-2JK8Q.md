@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - Groups
 relations:
 - kind: hints-at
   target: P-PKXBP

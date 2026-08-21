@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-PQ7NC
 kind: exercise
-title: "Complement of the disc to $\\mathbb{H}$"
+title: Complement of the disc to $\mathbb{H}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - geometry
+  - Conformal Maps
+  - Geometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Complement of the disc to $\mathbb{H}$"}
 Find a conformal map $\DD^c \intersect \HH \to \HH$.
 :::

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-GAPV3
 kind: problem
-title: Holomorphy of $\Gamma$ on $\operatorname{Re}s>0$ and the reflection formula $\Gamma(s)\Gamma(1-s)=\pi/\sin(\pi s)$
+title: Holomorphy of $\Gamma$ on $\operatorname{Re}s>0$ and the reflection formula
+  $\Gamma(s)\Gamma(1-s)=\pi/\sin(\pi s)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - gamma-function
-  - holomorphic-functions
-  - residues
+  - Gamma Function
+  - Holomorphic Functions
+  - Residues
 relations: []
 review: draft
 solved: false

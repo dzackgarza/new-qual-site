@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - counterexamples
+  - Convergence of Integrals
+  - Counterexamples
 relations: []
 review: draft
 solved: true

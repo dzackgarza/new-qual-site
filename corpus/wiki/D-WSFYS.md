@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-WSFYS
 kind: definition
-title: "Free product with amalgamation"
+title: Free product with amalgamation
 classification:
   areas:
   - topology
   topics:
-  - van-kampen
-  - groups
-  - fundamental-group
+  - van Kampen
+  - Groups
+  - Fundamental Group
 relations: []
 review: draft
 ---

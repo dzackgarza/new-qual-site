@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-AELHU
 kind: theorem
-title: "Little Picard"
+title: Little Picard
 classification:
   areas:
   - complex-analysis
   topics:
-  - picard
-  - entire-functions
+  - Picard
+  - Entire Functions
 relations: []
 review: draft
 ---

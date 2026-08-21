@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-5SNWD
 kind: problem
-title: $H\operatorname{char} K\operatorname{char} G$ implies $H\operatorname{char} G$
+title: $H\operatorname{char} K\operatorname{char} G$ implies $H\operatorname{char}
+  G$
 classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - subgroups
-  - normal-subgroups
+  - Automorphisms
+  - Subgroups
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

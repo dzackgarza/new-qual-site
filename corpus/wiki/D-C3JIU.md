@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: D-C3JIU
 kind: definition
-title: "Principal Part and Residue at poles"
+title: Principal Part and Residue at poles
 classification:
   areas:
   - complex-analysis
   topics:
-  - principal-parts
-  - residues
-  - poles
-  - laurent-series
+  - Principal Parts
+  - Residues
+  - Poles
+  - Laurent Series
 relations: []
 review: draft
 ---
+
 :::{.definition title="Principal Part and Residue at poles"}
 If $f$ has a pole of order $n$ at $z_0$, then there exist a holomorphic $G$ in a neighborhood of $z_0$ such that
 \[

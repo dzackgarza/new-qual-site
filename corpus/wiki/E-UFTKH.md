@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - closure
+  - Closure
 relations: []
 review: draft
 solved: false

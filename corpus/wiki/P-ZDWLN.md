@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-ZDWLN
 kind: problem
-title: Real differentiability of $f:\RR^2\to\RR$ via linear maps, the inverse function theorem, and the Cauchy–Riemann criterion for complex differentiability
+title: Real differentiability of $f:\RR^2\to\RR$ via linear maps, the inverse function
+  theorem, and the Cauchy–Riemann criterion for complex differentiability
 classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
-  - cauchy-riemann
+  - Calculus
+  - Cauchy-Riemann
 relations: []
 review: draft
 solved: false

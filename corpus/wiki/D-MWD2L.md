@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-MWD2L
 kind: definition
-title: "Galois/normal/regular covers"
+title: Galois/normal/regular covers
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - group-actions
+  - Covering Spaces
+  - Group Actions
 relations: []
 review: draft
 ---

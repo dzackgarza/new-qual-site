@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
-  - argument-principle
+  - Rouché
+  - Zeros
+  - Polynomials
+  - Argument Principle
 relations: []
 review: draft
 solved: true

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-L3MG4
 kind: exercise
-title: "$\\sqrt{x^2-1}$"
+title: $\sqrt{x^2-1}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$\sqrt{x^2-1}$ "}
 \[
 I\da \int_{-1}^1 \sqrt{1-x^2} \dx = {\pi \over 2}

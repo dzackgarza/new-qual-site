@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-HPN6K
 kind: problem
-title: "$\\ZZ$"
+title: $\ZZ$
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - closure
-  - homeomorphisms
+  - Point-Set Topology
+  - Closure
+  - Homeomorphisms
 relations: []
 review: draft
 solved: false

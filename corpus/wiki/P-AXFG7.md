@@ -2,16 +2,18 @@
 schema: qual/card@1
 id: P-AXFG7
 kind: problem
-title: Every $E\subseteq\RR$ has a Borel hull of equal outer measure; Carathéodory-measurable sets are Borel minus null
+title: Every $E\subseteq\RR$ has a Borel hull of equal outer measure; Carathéodory-measurable
+  sets are Borel minus null
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 solved: true
 ---
+
 Let $m_*$ denote the Lebesgue outer measure on \( \RR \).
 
 a.. 

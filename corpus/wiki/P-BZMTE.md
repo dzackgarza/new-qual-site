@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - number-theory
-  - roots-of-unity
+  - Number Theory
+  - Roots of Unity
 relations: []
 review: draft
 solved: false

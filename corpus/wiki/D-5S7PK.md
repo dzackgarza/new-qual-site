@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-5S7PK
 kind: definition
-title: "Pushout"
+title: Pushout
 classification:
   areas:
   - topology
   topics:
-  - category-theory
-  - van-kampen
+  - Category Theory
+  - van Kampen
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-5NODS
 kind: definition
-title: "Meager Sets"
+title: Meager Sets
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - countability
+  - Density
+  - Countability
 relations: []
 review: draft
 ---

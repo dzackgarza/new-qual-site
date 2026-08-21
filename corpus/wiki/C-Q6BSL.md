@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: C-Q6BSL
 kind: corollary
-title: "Better derivative formula that sometimes works for simple poles"
+title: Better derivative formula that sometimes works for simple poles
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - poles
+  - Residues
+  - Poles
 relations: []
 review: draft
 ---
+
 :::{.corollary title="Better derivative formula that sometimes works for simple poles"}
 
 If additionally $f=g/h$ where $h(z_0) = 0$ and $h'(z_0)\neq 0$,

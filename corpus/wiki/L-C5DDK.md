@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: L-C5DDK
 kind: lemma
-title: An endomorphism over an algebraically closed field has an eigenvector in every invariant subspace
+title: An endomorphism over an algebraically closed field has an eigenvector in every
+  invariant subspace
 classification:
   areas:
   - algebra
   topics:
-  - eigenvalues-and-eigenvectors
-  - linear-algebra
+  - Eigenvalues and Eigenvectors
+  - Linear Algebra
 relations: []
 review: draft
 ---

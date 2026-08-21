@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-XHEB6
 kind: problem
-title: An even-degree polynomial with positive leading coefficient attains a global minimum
+title: An even-degree polynomial with positive leading coefficient attains a global
+  minimum
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - polynomials
+  - Continuity
+  - Polynomials
 relations: []
 review: draft
 solved: true

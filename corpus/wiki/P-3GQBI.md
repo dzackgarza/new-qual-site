@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-3GQBI
 kind: problem
-title: "Hungerford 5.1.16"
+title: Hungerford 5.1.16
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - vector-spaces
-  - fields
+  - Field Extensions
+  - Vector Spaces
+  - Fields
 relations: []
 review: draft
 solved: false

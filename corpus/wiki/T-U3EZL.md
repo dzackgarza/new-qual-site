@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-U3EZL
 kind: theorem
-title: "Characterization of Prime Subfields"
+title: Characterization of Prime Subfields
 classification:
   areas:
   - algebra
   topics:
-  - fields
-  - characteristic
+  - Fields
+  - Characteristic
 relations: []
 review: draft
 ---

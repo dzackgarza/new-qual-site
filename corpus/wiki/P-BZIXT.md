@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-BZIXT
 kind: problem
-title: A left inverse forces $f$ injective and $g$ surjective, but neither need be bijective
+title: A left inverse forces $f$ injective and $g$ surjective, but neither need be
+  bijective
 classification:
   areas:
   - prelim
   topics:
-  - functions-and-relations
+  - Functions and Relations
 relations: []
 review: draft
 solved: true

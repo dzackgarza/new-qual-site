@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-FD3FN
 kind: problem
-title: Every continuous map $S^2\to S^2$ has a point with $f(x)=\pm x$, but maps $S^3\to S^3$ need not
+title: Every continuous map $S^2\to S^2$ has a point with $f(x)=\pm x$, but maps $S^3\to
+  S^3$ need not
 classification:
   areas:
   - topology
   topics:
-  - degree
-  - fixed-points
+  - Degree
+  - Fixed Points
 relations: []
 review: draft
 solved: false

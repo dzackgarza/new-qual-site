@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove that the following polynomial has its roots outside of the unit circle:
 \[

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-3QNBQ
 kind: theorem
-title: "Weierstrass Approximation"
+title: Weierstrass Approximation
 classification:
   areas:
   - real-analysis
   topics:
-  - stone-weierstrass
-  - density
-  - polynomials
+  - Stone-Weierstrass
+  - Density
+  - Polynomials
 relations: []
 review: draft
 ---

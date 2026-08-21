@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rational-canonical-form
-  - minimal-and-characteristic-polynomials
-  - matrices
+  - Rational Canonical Form
+  - Minimal and Characteristic Polynomials
+  - Matrices
 relations: []
 review: draft
 solved: false

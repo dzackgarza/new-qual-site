@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-KKJ6O
 kind: proposition
-title: "Continuity of Measure"
+title: Continuity of Measure
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity-of-measure
-  - measure-theory
+  - Continuity of Measure
+  - Measure Theory
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Continuity of Measure"}
 \[
 \text{Continuity from below:} \quad 

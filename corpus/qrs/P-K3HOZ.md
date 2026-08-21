@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - identity-theorem
-  - schwarz-reflection
-  - mean-value-property
+  - Harmonic Functions
+  - Identity Theorem
+  - Schwarz Reflection
+  - Mean Value Property
 relations: []
 review: draft
 solved: false

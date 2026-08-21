@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-IYE3I
 kind: problem
-title: The Joukowski map $f(z)=\frac{1}{2}(z+\frac{1}{z})$ on the punctured disc and its exterior
+title: The Joukowski map $f(z)=\frac{1}{2}(z+\frac{1}{z})$ on the punctured disc and
+  its exterior
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
-  - geometry
+  - Conformal Maps
+  - Biholomorphisms
+  - Geometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Consider the function $f(z)=\frac{1}{2}\left(z+\frac{1}{z}\right)$ for $z \in \mathbb{C} \backslash\{0\}$. Let $\mathbb{D}$ denote the open unit disc.
 

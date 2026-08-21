@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-4AN7V
 kind: problem
-title: "Determine for which integers the ring"
+title: Determine for which integers the ring
 classification:
   areas:
   - algebra
   topics:
-  - chinese-remainder-theorem
-  - fields
-  - rings
+  - Chinese Remainder Theorem
+  - Fields
+  - Rings
 relations: []
 review: draft
 solved: false

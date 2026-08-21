@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - classification
-  - surfaces
-  - euler-characteristic
+  - Classification
+  - Surfaces
+  - Euler Characteristic
 relations: []
 review: draft
 solved: false

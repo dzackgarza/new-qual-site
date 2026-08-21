@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-S2SVK
 kind: problem
-title: $\bigl|\frac{d^n}{dx^n}\frac{\sin x}{x}\bigr|\le\frac1n$ for $x\neq 0$ and $n\ge 1$
+title: $\bigl|\frac{d^n}{dx^n}\frac{\sin x}{x}\bigr|\le\frac1n$ for $x\neq 0$ and
+  $n\ge 1$
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - differentiation
+  - Integrals
+  - Differentiation
 relations: []
 review: draft
 solved: true
 ---
+
 Prove that
 \[
 \left| \frac{d^{n}}{d x^{n}} \frac{\sin x}{x}\right| \leq \frac{1}{n}

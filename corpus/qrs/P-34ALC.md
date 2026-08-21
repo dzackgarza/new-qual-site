@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-34ALC
 kind: problem
-title: Functions on the Riemann sphere with a simple pole at $2$ and a double pole at infinity
+title: Functions on the Riemann sphere with a simple pole at $2$ and a double pole
+  at infinity
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
-  - poles
-  - riemann-surfaces
+  - Meromorphic Functions
+  - Poles
+  - Riemann Surfaces
 relations: []
 review: draft
 solved: true

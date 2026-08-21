@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-QFOOL
 kind: exercise
-title: "Special case of bijections"
+title: Special case of bijections
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - biholomorphisms
+  - Schwarz Lemma
+  - Biholomorphisms
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Special case of bijections"}
 Show that if $f: \Delta\to\Delta$ is a biholomorphism with $f(0) = 0$ then $f$ is a rotation.
 

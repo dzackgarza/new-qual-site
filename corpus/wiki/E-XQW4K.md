@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-XQW4K
 kind: exercise
-title: "Showing singularities are removable"
+title: Showing singularities are removable
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - laurent-series
-  - trigonometry
-  - singularities
+  - Removable Singularities
+  - Laurent Series
+  - Trigonometry
+  - Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Showing singularities are removable"}
 Consider
 \[

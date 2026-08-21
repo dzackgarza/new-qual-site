@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-WWNJC
 kind: problem
-title: "Without using the Riesz Representation Theorem, compute"
+title: Without using the Riesz Representation Theorem, compute
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - l2
-  - norms
+  - Hilbert Spaces
+  - L²
+  - Norms
 relations: []
 review: draft
 solved: true

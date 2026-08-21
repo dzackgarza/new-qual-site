@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: D-QP7WI
 kind: definition
-title: "Poincar\u00e9 Duality"
+title: Poincaré Duality
 classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - manifolds
-  - cohomology
-  - orientation
+  - Poincaré Duality
+  - Manifolds
+  - Cohomology
+  - Orientation
 relations: []
 review: draft
 ---

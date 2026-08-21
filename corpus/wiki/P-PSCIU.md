@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - centralizers-and-normalizers
-  - cosets-and-lagrange
+  - Conjugacy
+  - Centralizers and Normalizers
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem}
 Let $G$ be a finite group and $H<G$ a subgroup. Let
 $n_H$ be the number of subgroups of $G$ that are conjugate to $H$. Show

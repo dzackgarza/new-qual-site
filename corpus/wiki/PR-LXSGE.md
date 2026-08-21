@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-LXSGE
 kind: proposition
-title: "Galois groups are transitive subgroups"
+title: Galois groups are transitive subgroups
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - permutations
-  - group-actions
+  - Galois Theory
+  - Permutations
+  - Group Actions
 relations: []
 review: draft
 ---

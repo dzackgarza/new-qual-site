@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - classification
+  - Sylow Theory
+  - Normal Subgroups
+  - Classification
 relations: []
 review: draft
 solved: true
 ---
+
 Let $G$ be a group of order $p^2q$ for $p, q$ prime. Show that $G$ has a nontrivial normal subgroup.
 
 :::{.solution}

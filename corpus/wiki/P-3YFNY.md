@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - rational-canonical-form
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Rational Canonical Form
+  - Linear Algebra
 relations: []
 review: draft
 solved: true
 ---
+
 Let $A$ be an $n \times n$ matrix.
 
 a.

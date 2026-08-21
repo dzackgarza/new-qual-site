@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-LX7GH
 kind: proposition
-title: "Prime and irreducible agree in a UFD"
+title: Prime and irreducible agree in a UFD
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - integral-domains
+  - Factorization
+  - Integral Domains
 relations: []
 review: draft
 ---

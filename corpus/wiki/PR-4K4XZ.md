@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-4K4XZ
 kind: proposition
-title: "Free implies torsionfree"
+title: Free implies torsionfree
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - torsion
-  - integral-domains
+  - Free Modules
+  - Torsion
+  - Integral Domains
 relations: []
 review: draft
 ---

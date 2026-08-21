@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-SKT7G
 kind: problem
-title: $\lim_{x\to\infty}f'(x)=0$ whenever $\lim f$ and $\lim f'$ exist at infinity; a counterexample when $\lim f'$ fails to exist
+title: $\lim_{x\to\infty}f'(x)=0$ whenever $\lim f$ and $\lim f'$ exist at infinity;
+  a counterexample when $\lim f'$ fails to exist
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - limits
-  - counterexamples
+  - Differentiation
+  - Limits
+  - Counterexamples
 relations: []
 review: draft
 solved: true

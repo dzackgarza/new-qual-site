@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 solved: false

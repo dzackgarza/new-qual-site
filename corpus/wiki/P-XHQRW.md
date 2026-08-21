@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - limits
+  - Differentiation
+  - Limits
 relations: []
 review: draft
 solved: true

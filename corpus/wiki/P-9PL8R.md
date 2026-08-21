@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-9PL8R
 kind: problem
-title: $R/(k)\cong sA$ and $R/(s)\cong A[s]$ when $A=Ra$ is cyclic with annihilator $(r)$ and $r=sk$
+title: $R/(k)\cong sA$ and $R/(s)\cong A[s]$ when $A=Ra$ is cyclic with annihilator
+  $(r)$ and $r=sk$
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - cyclic-groups
-  - isomorphism-theorems
+  - Modules
+  - Cyclic Groups
+  - Isomorphism Theorems
 relations: []
 review: draft
 solved: false

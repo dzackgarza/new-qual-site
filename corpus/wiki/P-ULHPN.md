@@ -7,11 +7,12 @@ classification:
   areas:
   - topology
   topics:
-  - homological-algebra
+  - Homological Algebra
 relations: []
 review: draft
 solved: true
 ---
+
 Compute $\ext(\ZZ \oplus \ZZ/2 \oplus  \ZZ/3, \ZZ \oplus  \ZZ/4 \oplus  \ZZ/5)$.
 
 :::{.solution}

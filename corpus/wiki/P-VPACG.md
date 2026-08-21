@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - hausdorff-spaces
+  - Quotient Spaces
+  - Hausdorff Spaces
 relations: []
 review: draft
 solved: false

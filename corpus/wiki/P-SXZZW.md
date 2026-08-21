@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-SXZZW
 kind: problem
-title: $\int_{|z|=1}\bigl(z+\frac1z\bigr)^{2n}\frac{dz}{z}$ and $\int_0^{2\pi}\cos^{2n}\theta\,d\theta=2\pi\frac{1\cdot 3\cdots(2n-1)}{2\cdot 4\cdots(2n)}$
+title: $\int_{|z|=1}\bigl(z+\frac1z\bigr)^{2n}\frac{dz}{z}$ and $\int_0^{2\pi}\cos^{2n}\theta\,d\theta=2\pi\frac{1\cdot
+  3\cdots(2n-1)}{2\cdot 4\cdots(2n)}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: true

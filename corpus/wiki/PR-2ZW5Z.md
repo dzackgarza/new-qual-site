@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-2ZW5Z
 kind: proposition
-title: "Properties of the norm"
+title: Properties of the norm
 classification:
   areas:
   - algebra
   topics:
-  - fields
-  - number-theory
+  - Fields
+  - Number Theory
 relations: []
 review: draft
 ---

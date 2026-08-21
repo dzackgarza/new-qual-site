@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-QGP7O
 kind: problem
-title: "Hungerford 2.1.9"
+title: Hungerford 2.1.9
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - abelian-groups
-  - torsion
+  - Free Modules
+  - Abelian Groups
+  - Torsion
 relations: []
 review: draft
 solved: false

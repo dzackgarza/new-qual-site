@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-KM2DV
 kind: definition
-title: "Normal Series"
+title: Normal Series
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - normal-subgroups
+  - Subgroup Series
+  - Normal Subgroups
 relations: []
 review: draft
 ---

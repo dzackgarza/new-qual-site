@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: C-BOM4E
 kind: corollary
-title: "Quadratic extensions of rationals"
+title: Quadratic extensions of rationals
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - galois-theory
-  - polynomials
+  - Field Extensions
+  - Galois Theory
+  - Polynomials
 relations: []
 review: draft
 ---

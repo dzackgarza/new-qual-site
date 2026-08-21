@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-TK4QD
 kind: definition
-title: "Intersection Pairing"
+title: Intersection Pairing
 classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - cohomology
-  - manifolds
+  - Poincaré Duality
+  - Cohomology
+  - Manifolds
 relations: []
 review: draft
 ---
+
 :::{.definition title="Intersection Pairing"}
 For a manifold $M$, a map on homology defined by
 \[

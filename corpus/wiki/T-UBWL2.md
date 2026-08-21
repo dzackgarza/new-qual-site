@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-UBWL2
 kind: theorem
-title: "Meromorphic implies rational"
+title: Meromorphic implies rational
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
+  - Meromorphic Functions
 relations: []
 review: draft
 ---

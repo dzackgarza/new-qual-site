@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-KW52R
 kind: definition
-title: "Comparability of topologies"
+title: Comparability of topologies
 classification:
   areas:
   - topology
   topics:
-  - point-set
+  - Point-Set Topology
 relations: []
 review: draft
 ---

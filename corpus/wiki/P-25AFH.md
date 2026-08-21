@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - radon-nikodym
-  - measure-theory
-  - integrals
+  - Radon-Nikodym
+  - Measure Theory
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 a. 
 Let $\mu$ be a measure on a measurable space $(X, \mathcal M)$ and $f$ a positive measurable function.
   

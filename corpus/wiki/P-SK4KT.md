@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - minimal-and-characteristic-polynomials
-  - matrices
+  - Minimal and Characteristic Polynomials
+  - Matrices
 relations: []
 review: draft
 solved: false

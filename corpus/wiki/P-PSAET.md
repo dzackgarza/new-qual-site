@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - finite-fields
-  - determinants
+  - Matrix Groups
+  - Finite Fields
+  - Determinants
 relations: []
 review: draft
 solved: false

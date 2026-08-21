@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - euler-characteristic
-  - product-topology
+  - Cell Complexes
+  - Euler Characteristic
+  - Product Topology
 relations: []
 review: draft
 solved: false

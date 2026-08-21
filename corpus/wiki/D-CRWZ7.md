@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-CRWZ7
 kind: definition
-title: "Simple modules"
+title: Simple modules
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
+  - Modules
+  - Semisimplicity
 relations: []
 review: draft
 ---

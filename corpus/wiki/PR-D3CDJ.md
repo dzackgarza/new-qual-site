@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-D3CDJ
 kind: proposition
-title: "Residue at infinity"
+title: Residue at infinity
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - singularities
+  - Residues
+  - Singularities
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Residue at infinity"}
 
 \[

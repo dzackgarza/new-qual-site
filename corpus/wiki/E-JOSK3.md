@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-JOSK3
 kind: exercise
-title: "Orders of poles"
+title: Orders of poles
 classification:
   areas:
   - complex-analysis
   topics:
-  - poles
-  - laurent-series
-  - singularities
+  - Poles
+  - Laurent Series
+  - Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Orders of poles"}
 Determine the order of the pole of 
 

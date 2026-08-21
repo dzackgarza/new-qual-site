@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - euclidean-domains
-  - principal-ideal-domains
+  - Euclidean Domains
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

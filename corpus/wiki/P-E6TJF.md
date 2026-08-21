@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - conjugacy
-  - group-actions
+  - Orbit-Stabilizer
+  - Conjugacy
+  - Group Actions
 relations: []
 review: draft
 solved: false

@@ -7,10 +7,10 @@ classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - l-infty
-  - lp-spaces
-  - riesz-representation
+  - Dual Spaces
+  - L∞
+  - Lp Spaces
+  - Riesz Representation
 relations: []
 review: draft
 solved: true

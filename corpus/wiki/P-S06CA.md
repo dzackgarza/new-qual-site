@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - sequences-of-numbers
+  - Sequences of Numbers
 relations: []
 review: draft
 solved: false

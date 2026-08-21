@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - classification
-  - quotient-spaces
+  - Surfaces
+  - Classification
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

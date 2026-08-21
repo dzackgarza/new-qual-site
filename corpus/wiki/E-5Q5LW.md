@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - schwarz-reflection
+  - Maximum Modulus Principle
+  - Schwarz Reflection
 relations: []
 review: draft
 solved: true

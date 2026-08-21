@@ -2,14 +2,16 @@
 schema: qual/card@1
 id: P-YVNUD
 kind: problem
-title: 'Schwarz lemma for holomorphic maps of the disk into the right half-plane: $\bigl|\frac{f(z)-a}{f(z)+a}\bigr|\le|z|$ and $|f''(0)|\le 2a$, also when $\operatorname{Re}f\ge 0$'
+title: 'Schwarz lemma for holomorphic maps of the disk into the right half-plane:
+  $\bigl|\frac{f(z)-a}{f(z)+a}\bigr|\le|z|$ and $|f''(0)|\le 2a$, also when $\operatorname{Re}f\ge
+  0$'
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - conformal-maps
-  - fractional-linear-transformations
+  - Schwarz Lemma
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true

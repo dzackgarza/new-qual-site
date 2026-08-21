@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - continuity
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 solved: false

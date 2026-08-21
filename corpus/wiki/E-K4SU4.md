@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - localization
-  - local-rings
-  - prime-ideals
+  - Localization
+  - Local Rings
+  - Prime Ideals
 relations: []
 review: draft
 solved: false

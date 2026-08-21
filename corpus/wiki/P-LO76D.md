@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-LO76D
 kind: problem
-title: If $Q/N$ is a Sylow $p$-subgroup of $G/N$ then $Q$ contains a Sylow $p$-subgroup of $G$, and every Sylow $p$-subgroup of $G/N$ is such an image
+title: If $Q/N$ is a Sylow $p$-subgroup of $G/N$ then $Q$ contains a Sylow $p$-subgroup
+  of $G$, and every Sylow $p$-subgroup of $G/N$ is such an image
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - isomorphism-theorems
+  - Sylow Theory
+  - Normal Subgroups
+  - Isomorphism Theorems
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem}
 Let $G$ be a finite group and let $N \trianglelefteq G$,
 and let $p$ be a prime number and $Q$ a subgroup of $G$ such that

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-5U7QZ
 kind: problem
-title: A sharp bound on $|f'(0)|$ for analytic maps $\mathbb{D}\to\mathbb{H}$ with $f(0)=2$
+title: A sharp bound on $|f'(0)|$ for analytic maps $\mathbb{D}\to\mathbb{H}$ with
+  $f(0)=2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - conformal-maps
-  - fractional-linear-transformations
+  - Schwarz Lemma
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true

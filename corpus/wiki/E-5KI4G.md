@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - counterexamples
+  - Uniform Convergence
+  - Sequences of Functions
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Determine where the following real-valued function is or is not uniformly convergent:
 \[

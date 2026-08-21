@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - cauchy-riemann
-  - entire-functions
-  - polynomials
+  - Harmonic Functions
+  - Cauchy-Riemann
+  - Entire Functions
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f = u + iv$ be an entire function such that $\Re(f(x+iy))$ is polynomial in $x$ and $y$.
 Show that $f(z)$ is polynomial in $z$.

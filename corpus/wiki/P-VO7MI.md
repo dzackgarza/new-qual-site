@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-VO7MI
 kind: problem
-title: "Use the definition of the derivative to prove that"
+title: Use the definition of the derivative to prove that
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
+  - Differentiation
 relations: []
 review: draft
 solved: true

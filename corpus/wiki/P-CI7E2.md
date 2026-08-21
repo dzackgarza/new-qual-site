@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - quotient-spaces
+  - Separation Axioms
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

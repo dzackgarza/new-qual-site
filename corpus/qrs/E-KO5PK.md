@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - uniform-continuity
+  - Lp Spaces
+  - Uniform Continuity
 relations: []
 review: draft
 solved: true

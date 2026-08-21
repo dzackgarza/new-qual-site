@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l1
-  - continuity
-  - density
+  - L¹
+  - Continuity
+  - Density
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f\in L^1(\RR)$.
 Show that
 \[

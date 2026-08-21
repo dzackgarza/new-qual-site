@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - linear-maps
-  - vector-spaces
+  - Linear Maps
+  - Vector Spaces
 relations: []
 review: draft
 solved: false

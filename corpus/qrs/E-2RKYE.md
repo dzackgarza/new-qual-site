@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-2RKYE
 kind: exercise
-title: "Trigonometric functions"
+title: Trigonometric functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Trigonometric functions"}
 \[
 \int_{0}^{2 \pi} \frac{d \theta}{1+a^{2}-2 a \cos (\theta)}

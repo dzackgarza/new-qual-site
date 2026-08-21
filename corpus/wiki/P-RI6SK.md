@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - p-groups
+  - Sylow Theory
+  - Normal Subgroups
+  - p-Groups
 relations: []
 review: draft
 solved: false

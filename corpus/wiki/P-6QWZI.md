@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: P-6QWZI
 kind: problem
-title: Almost uniform boundedness of an a.e. convergent sequence in $L^1$ on a finite measure space
-  (\u2026"
+title: Almost uniform boundedness of an a.e. convergent sequence in $L^1$ on a finite
+  measure space (\u2026"
 classification:
   areas:
   - real-analysis
   topics:
-  - egorov
-  - measure-theory
-  - l1
+  - Egorov
+  - Measure Theory
+  - L¹
 relations: []
 review: draft
 solved: true

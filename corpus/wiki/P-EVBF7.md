@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-EVBF7
 kind: problem
-title: Galois-ness of $K/F$ and of $L/K$ when $L/F$ is Galois, and of $L/F$ when $K/F$ and $L/K$ are Galois
+title: Galois-ness of $K/F$ and of $L/K$ when $L/F$ is Galois, and of $L/F$ when $K/F$
+  and $L/K$ are Galois
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - counterexamples
+  - Galois Theory
+  - Field Extensions
+  - Counterexamples
 relations: []
 review: draft
 solved: true

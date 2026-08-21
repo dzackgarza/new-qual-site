@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-MAGRK
 kind: definition
-title: "Approximations to the identity"
+title: Approximations to the identity
 classification:
   areas:
   - real-analysis
   topics:
-  - approximations-to-the-identity
-  - convolution
+  - Approximations to the Identity
+  - Convolution
 relations: []
 review: draft
 ---

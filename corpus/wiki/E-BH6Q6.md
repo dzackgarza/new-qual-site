@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-BH6Q6
 kind: exercise
-title: Fixed-point-free elements, quotients of $\mathbb{Z}^3$, groups of order $pq$, and cyclic Sylow $2$-subgroups
+title: Fixed-point-free elements, quotients of $\mathbb{Z}^3$, groups of order $pq$,
+  and cyclic Sylow $2$-subgroups
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - sylow-theory
-  - structure-theorem
+  - Group Actions
+  - Sylow Theory
+  - Structure Theorem
 relations: []
 review: draft
 solved: false

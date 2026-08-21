@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-TJ3WM
 kind: exercise
-title: Holomorphic automorphisms of $\CC$ are the maps $z\mapsto az+b$ with $a\neq 0$
+title: Holomorphic automorphisms of $\CC$ are the maps $z\mapsto az+b$ with $a\neq
+  0$
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - entire-functions
-  - singularities
+  - Biholomorphisms
+  - Entire Functions
+  - Singularities
 relations: []
 review: draft
 solved: true

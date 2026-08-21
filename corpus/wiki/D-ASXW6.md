@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-ASXW6
 kind: definition
-title: "Closure of a set"
+title: Closure of a set
 classification:
   areas:
   - topology
   topics:
-  - closure
-  - point-set
+  - Closure
+  - Point-Set Topology
 relations: []
 review: draft
 ---
+
 :::{.definition title="Closure of a set"}
 For $U \subseteq X$, the **closure of $U$ in $X$** is given by 
 \[

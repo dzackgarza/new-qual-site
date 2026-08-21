@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - matrices
-  - counterexamples
+  - Diagonalization
+  - Matrices
+  - Counterexamples
 relations: []
 review: draft
 solved: false

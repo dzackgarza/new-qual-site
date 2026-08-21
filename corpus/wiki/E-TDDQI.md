@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - conformal-maps
-  - integrals
+  - Laurent Series
+  - Conformal Maps
+  - Integrals
 relations: []
 review: draft
 solved: true

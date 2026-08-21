@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-WODYX
 kind: problem
-title: "Hungerford 5.4.10 a/g/h"
+title: Hungerford 5.4.10 a/g/h
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - field-extensions
+  - Galois Theory
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

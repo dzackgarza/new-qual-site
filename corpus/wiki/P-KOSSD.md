@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-KOSSD
 kind: problem
-title: A normal subgroup of coprime order and index is the unique subgroup of that order
+title: A normal subgroup of coprime order and index is the unique subgroup of that
+  order
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - cosets-and-lagrange
-  - subgroups
+  - Normal Subgroups
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 solved: true
 ---
+
 Let $H$ be a normal subgroup of a finite group $G$ where the order of $H$ and the index of $H$ in $G$ are relatively prime.
 Prove that no other subgroup of $G$ has the same order as $H$.
 

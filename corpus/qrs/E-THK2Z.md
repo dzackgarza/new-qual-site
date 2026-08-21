@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - cauchy-riemann
-  - holomorphic-functions
+  - Open Mapping Theorem
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

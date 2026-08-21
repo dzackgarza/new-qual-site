@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-O2PWG
 kind: problem
-title: Compact sets are closed and bounded, complete totally bounded sets are compact, and $\dist(K,F)>0$
+title: Compact sets are closed and bounded, complete totally bounded sets are compact,
+  and $\dist(K,F)>0$
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - metric-spaces
-  - completeness
+  - Compactness
+  - Metric Spaces
+  - Completeness
 relations: []
 review: draft
 solved: true

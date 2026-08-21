@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - normal-families
+  - Equicontinuity
+  - Normal Families
 relations: []
 review: draft
 solved: false

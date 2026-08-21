@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - permutations
+  - Normal Subgroups
+  - Permutations
 relations: []
 review: draft
 solved: false

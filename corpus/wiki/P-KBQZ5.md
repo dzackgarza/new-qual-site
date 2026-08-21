@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - linear-algebra
+  - Linear Algebra
 relations: []
 review: draft
 solved: true

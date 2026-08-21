@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - contour-integration
+  - Holomorphic Functions
+  - Contour Integration
 relations: []
 review: draft
 solved: false

@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - counterexamples
+  - Compactness
+  - Counterexamples
 relations: []
 review: draft
 solved: false

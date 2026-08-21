@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-6PQRO
 kind: problem
-title: A suspension is a union of two contractible subspaces, with $\pi_1(SX)=0$ and $H_n(X)\cong H_{n+1}(SX)$
+title: A suspension is a union of two contractible subspaces, with $\pi_1(SX)=0$ and
+  $H_n(X)\cong H_{n+1}(SX)$
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - homology
-  - fundamental-group
-  - quotient-spaces
+  - Homotopy
+  - Homology
+  - Fundamental Group
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - number-theory
-  - cyclic-groups
+  - Number Theory
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

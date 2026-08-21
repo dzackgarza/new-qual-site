@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-AKNDW
 kind: exercise
-title: "$1/(1+x^2)^2$"
+title: $1/(1+x^2)^2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - poles
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/(1+x^2)^2$"}
 \[
 \int_\RR {1 \over (1+x^2)^2} = {\pi \over 2}

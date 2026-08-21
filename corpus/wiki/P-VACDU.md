@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-VACDU
 kind: problem
-title: "(b) Show by example that the union of infinitely"
+title: (b) Show by example that the union of infinitely
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - metric-spaces
-  - counterexamples
+  - Compactness
+  - Metric Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: true

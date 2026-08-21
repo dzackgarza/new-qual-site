@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-INULL
 kind: definition
-title: "Unique Factorization Domain"
+title: Unique Factorization Domain
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - integral-domains
+  - Factorization
+  - Integral Domains
 relations: []
 review: draft
 ---
+
 :::{.definition title="Unique Factorization Domain"}
 A ring $R$ is a **unique factorization domain** iff $R$ is an integral domain and every $r\in R\smz$ admits a decomposition
 \[  

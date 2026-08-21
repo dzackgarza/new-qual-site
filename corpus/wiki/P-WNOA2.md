@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - holomorphic-functions
+  - Cauchy Estimates
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

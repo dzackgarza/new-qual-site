@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-Z4O2M
 kind: problem
-title: Every nonzero homomorphism from a field is injective, and whether the same holds for domains
+title: Every nonzero homomorphism from a field is injective, and whether the same
+  holds for domains
 classification:
   areas:
   - algebra
   topics:
-  - fields
-  - homomorphisms
-  - integral-domains
+  - Fields
+  - Homomorphisms
+  - Integral Domains
 relations: []
 review: draft
 solved: false

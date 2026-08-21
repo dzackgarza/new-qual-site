@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - smith-normal-form
-  - abelian-groups
+  - Structure Theorem
+  - Smith Normal Form
+  - Abelian Groups
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem}
 \envlist
 

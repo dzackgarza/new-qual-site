@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-X6IHG
 kind: problem
-title: The Lefschetz fixed-point theorem for degree-one maps $S^2\to S^2$, a fixed-point-free map $\RR^2\to\RR^2$, and a degree-one map with exactly one fixed point
+title: The Lefschetz fixed-point theorem for degree-one maps $S^2\to S^2$, a fixed-point-free
+  map $\RR^2\to\RR^2$, and a degree-one map with exactly one fixed point
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - degree
-  - counterexamples
+  - Fixed Points
+  - Degree
+  - Counterexamples
 relations: []
 review: draft
 solved: false

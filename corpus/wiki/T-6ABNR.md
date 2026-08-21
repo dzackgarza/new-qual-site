@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-6ABNR
 kind: theorem
-title: "Characterizations of Diagonalizability"
+title: Characterizations of Diagonalizability
 classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - minimal-and-characteristic-polynomials
+  - Diagonalization
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 ---

@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-RMH6X
 kind: problem
-title: "Horizontal strip to $\\mathbb{H}$"
+title: Horizontal strip to $\mathbb{H}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Horizontal strip to $\mathbb{H}$"}
 Find a conformal map from the strip $\theset{z\in \CC \suchthat 0 < \Im(z) < 1}$ to $\HH$.
 :::

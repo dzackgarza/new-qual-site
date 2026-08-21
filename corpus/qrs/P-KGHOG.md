@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - integrals
-  - holomorphic-functions
+  - Entire Functions
+  - Integrals
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-WNOWY
 kind: theorem
-title: "Borsuk-Ulam"
+title: Borsuk-Ulam
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - degree
+  - Fixed Points
+  - Degree
 relations: []
 review: draft
 ---

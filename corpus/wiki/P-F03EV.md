@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - eigenvalues
+  - Eigenvalues
 relations: []
 review: draft
 solved: false

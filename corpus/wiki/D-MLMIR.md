@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-MLMIR
 kind: definition
-title: "Boundary of a manifold"
+title: Boundary of a manifold
 classification:
   areas:
   - topology
   topics:
-  - manifolds
-  - homology
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

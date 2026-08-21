@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-I4YON
 kind: proposition
-title: "Opens are unions of almost disjoint intervals."
+title: Opens are unions of almost disjoint intervals.
 classification:
   areas:
   - real-analysis
   topics:
-  - euclidean-spaces
-  - measure-theory
+  - Euclidean Spaces
+  - Measure Theory
 relations: []
 review: draft
 ---

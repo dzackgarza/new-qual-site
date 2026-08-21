@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - entire-functions
+  - Identity Theorem
+  - Entire Functions
 relations: []
 review: draft
 solved: true

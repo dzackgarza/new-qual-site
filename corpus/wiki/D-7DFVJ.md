@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-7DFVJ
 kind: definition
-title: "Meromorphic"
+title: Meromorphic
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
-  - poles
+  - Meromorphic Functions
+  - Poles
 relations: []
 review: draft
 ---

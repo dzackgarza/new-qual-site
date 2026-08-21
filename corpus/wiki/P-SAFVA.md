@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - integration-by-parts
+  - Integrals
+  - Integration by Parts
 relations: []
 review: draft
 solved: false

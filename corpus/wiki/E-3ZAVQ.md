@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-3ZAVQ
 kind: exercise
-title: "Applying Jordan's lemma"
+title: Applying Jordan's lemma
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Applying Jordan's lemma"}
 Compute
 \[

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-RHIIP
 kind: problem
-title: "Hungerford 7.1.5"
+title: Hungerford 7.1.5
 classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - bilinear-forms
+  - Matrices
+  - Bilinear Forms
 relations: []
 review: draft
 solved: false

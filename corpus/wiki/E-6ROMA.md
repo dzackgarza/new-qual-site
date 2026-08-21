@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - fixed-points
-  - schwarz-lemma
-  - rouche
-  - blaschke-factors
+  - Fixed Points
+  - Schwarz Lemma
+  - Rouché
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $g$ be analytic for $|z|\leq 1$ and $|g(z)| < 1$ for $|z| = 1$.
 

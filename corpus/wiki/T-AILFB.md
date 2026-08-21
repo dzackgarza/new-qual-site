@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-AILFB
 kind: theorem
-title: "The Algorithm"
+title: The Algorithm
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - permutations
-  - classification
+  - Galois Theory
+  - Permutations
+  - Classification
 relations: []
 review: draft
 ---

@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - fixed-points
+  - Fixed Points
 relations: []
 review: draft
 ---

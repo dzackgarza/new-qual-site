@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-R5EN3
 kind: proposition
-title: "Covering spaces induce injections on $\\pi_1$, Hatcher 1.31"
+title: Covering spaces induce injections on $\pi_1$, Hatcher 1.31
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 ---

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-LCV2V
 kind: proposition
-title: "Limits of bounded functions need not be bounded"
+title: Limits of bounded functions need not be bounded
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - counterexamples
+  - Convergence of Functions
+  - Counterexamples
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Limits of bounded functions need not be bounded"}
 \[
 \lim_{n\to \infty}\sup_{x\in X} \abs{f_n(x) } \neq \sup_{x\in X} \abs{\lim_{n\to\infty} f_n(x) }

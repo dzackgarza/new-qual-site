@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - prime-ideals
-  - local-rings
+  - Principal Ideal Domains
+  - Prime Ideals
+  - Local Rings
 relations: []
 review: draft
 solved: false

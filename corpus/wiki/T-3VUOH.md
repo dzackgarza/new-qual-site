@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-3VUOH
 kind: theorem
-title: "Mayer-Vietoris"
+title: Mayer-Vietoris
 classification:
   areas:
   - topology
   topics:
-  - mayer-vietoris
-  - homology
-  - homological-algebra
+  - Mayer-Vietoris
+  - Homology
+  - Homological Algebra
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Mayer-Vietoris"}
 > Mnemonic: $X = A \union B \leadsto (\intersect, \oplus, \union)$
 

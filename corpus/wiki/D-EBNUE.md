@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-EBNUE
 kind: definition
-title: "Fundamental Group"
+title: Fundamental Group
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 ---

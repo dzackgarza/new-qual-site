@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-IOSZK
 kind: problem
-title: Jordan form of $\begin{pmatrix}4&1&-1\\-6&-1&2\\2&1&1\end{pmatrix}$, a conjugating matrix, and the minimal polynomial
+title: Jordan form of $\begin{pmatrix}4&1&-1\\-6&-1&2\\2&1&1\end{pmatrix}$, a conjugating
+  matrix, and the minimal polynomial
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - eigenvalues-and-eigenvectors
-  - minimal-and-characteristic-polynomials
+  - Jordan Canonical Form
+  - Eigenvalues and Eigenvectors
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 Let m
 \[
 A \da 

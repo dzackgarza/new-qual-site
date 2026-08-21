@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-OPH7A
 kind: problem
-title: 'Equal integrals of measurable functions: equality a.e. or a strict inequality on a subset'
+title: 'Equal integrals of measurable functions: equality a.e. or a strict inequality
+  on a subset'
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - measure-theory
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f, g: [a, b] \to \RR$ be measurable with
 $$
 \int_{a}^{b} f(x) ~d x=\int_{a}^{b} g(x) ~d x.

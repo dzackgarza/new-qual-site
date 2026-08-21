@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-HLPMX
 kind: proposition
-title: "Integrals distribute over disjoint sets"
+title: Integrals distribute over disjoint sets
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - measure-theory
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 ---

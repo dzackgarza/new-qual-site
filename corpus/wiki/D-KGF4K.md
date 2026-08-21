@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-KGF4K
 kind: definition
-title: "Embeddings and Lifts"
+title: Embeddings and Lifts
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - homomorphisms
+  - Field Extensions
+  - Homomorphisms
 relations: []
 review: draft
 ---

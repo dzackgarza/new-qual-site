@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-WQHMA
 kind: theorem
-title: "The Spectral Theorem"
+title: The Spectral Theorem
 classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - inner-product-spaces
-  - matrices
+  - Diagonalization
+  - Inner Product Spaces
+  - Matrices
 relations: []
 review: draft
 ---

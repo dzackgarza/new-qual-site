@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-YD6DH
 kind: definition
-title: "The Fundamental Group"
+title: The Fundamental Group
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 ---
+
 :::{.definition title="The Fundamental Group"}
 Given a pointed space $(X,x_{0})$, we define the fundamental group $\pi_{1}(X)$ as follows:
 

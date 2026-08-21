@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-WCHFF
 kind: proposition
-title: "Homology of knot complements in $S^3$"
+title: Homology of knot complements in $S^3$
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - manifolds
+  - Homology
+  - Manifolds
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Homology of knot complements in $S^3$"}
 For $K$ a knot,
 \[

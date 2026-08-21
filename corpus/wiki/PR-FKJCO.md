@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-FKJCO
 kind: proposition
-title: "A unit ball that is not compact"
+title: A unit ball that is not compact
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - function-spaces
-  - counterexamples
+  - Compactness
+  - Function Spaces
+  - Counterexamples
 relations: []
 review: draft
 ---

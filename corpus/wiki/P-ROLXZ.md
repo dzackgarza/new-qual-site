@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-ROLXZ
 kind: problem
-title: "What can you say about the kernel of an irreducible representation?"
+title: What can you say about the kernel of an irreducible representation?
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - semisimplicity
-  - exact-sequences
+  - Representation Theory
+  - Semisimplicity
+  - Exact Sequences
 relations: []
 review: draft
 solved: false

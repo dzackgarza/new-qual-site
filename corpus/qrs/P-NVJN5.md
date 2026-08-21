@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - morera
-  - contour-integration
+  - Removable Singularities
+  - Morera
+  - Contour Integration
 relations: []
 review: draft
 solved: true

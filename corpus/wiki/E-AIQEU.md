@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-AIQEU
 kind: exercise
-title: "$e^{ax}\\operatorname{sech}(z)$"
+title: $e^{ax}\operatorname{sech}(z)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - hyperbolic-functions
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Hyperbolic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$e^{ax}\operatorname{sech}(z)$ "}
 \[
 I \da \int_\RR {e^{ax} \over \cosh(x) }\dx = \pi \sec\qty{a\pi \over 2} && \abs{\Re(a)} < 1

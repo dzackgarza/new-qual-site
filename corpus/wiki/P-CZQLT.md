@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-CZQLT
 kind: problem
-title: Compact convergence of holomorphic functions on $\DD$ iff $\int_{|z|=r}|f_n-f|\,|dz|\to 0$
+title: Compact convergence of holomorphic functions on $\DD$ iff $\int_{|z|=r}|f_n-f|\,|dz|\to
+  0$
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - cauchy-integral-formula
+  - Uniform Convergence
+  - Sequences of Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $\ts{f_n}_{n=1}^\infty$ is a sequence of holomorphic functions on $\DD$ and $f$ is also holomorphic on $\DD$. 
 Show that the following are equivalent:

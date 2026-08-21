@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZSUAJ
 kind: problem
-title: $xR$ is proper in a nonzero commutative ring without unit and with no proper maximal ideal
+title: $xR$ is proper in a nonzero commutative ring without unit and with no proper
+  maximal ideal
 classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
-  - zorns-lemma
+  - Maximal Ideals
+  - Ideals
+  - Zorn's Lemma
 relations: []
 review: draft
 solved: false

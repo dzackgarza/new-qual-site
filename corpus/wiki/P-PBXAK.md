@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - harmonic-functions
-  - open-mapping-theorem
+  - Maximum Modulus Principle
+  - Harmonic Functions
+  - Open Mapping Theorem
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-OI5HX
 kind: proposition
-title: "L-infty functions are equivalent to bounded almost-everywhere functions"
+title: L-infty functions are equivalent to bounded almost-everywhere functions
 classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - measure-theory
+  - L∞
+  - Measure Theory
 relations: []
 review: draft
 ---

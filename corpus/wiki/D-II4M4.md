@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-II4M4
 kind: definition
-title: "Cone"
+title: Cone
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homotopy
-  - quotient-spaces
+  - Cell Complexes
+  - Homotopy
+  - Quotient Spaces
 relations: []
 review: draft
 ---
+
 :::{.definition title="Cone"}
 For a space $X$, defined as
 \[  

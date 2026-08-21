@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - matrices
+  - Nilpotence
+  - Matrices
 relations: []
 review: draft
 solved: false

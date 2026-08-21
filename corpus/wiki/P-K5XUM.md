@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-K5XUM
 kind: problem
-title: "$X\\times Y$ is compact if and only if $X$ and $Y$ are compact"
+title: $X\times Y$ is compact if and only if $X$ and $Y$ are compact
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - product-topology
-  - tube-lemma
+  - Compactness
+  - Product Topology
+  - Tube Lemma
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Show that for any two topological spaces $X$ and $Y$ , $X \cross Y$ is compact if and only if both $X$ and $Y$ are compact.
 

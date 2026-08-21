@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZFCV4
 kind: problem
-title: Galois-group conditions implied by irreducibility of a polynomial, and by a root in the base field
+title: Galois-group conditions implied by irreducibility of a polynomial, and by a
+  root in the base field
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - group-actions
-  - irreducibility-criteria
+  - Galois Theory
+  - Group Actions
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

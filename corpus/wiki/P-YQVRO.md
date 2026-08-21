@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-YQVRO
 kind: problem
-title: Homotopy classes of self-maps of $S^1\times\DD^2$ in which every map has a fixed point
+title: Homotopy classes of self-maps of $S^1\times\DD^2$ in which every map has a
+  fixed point
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - homotopy
+  - Fixed Points
+  - Homotopy
 relations: []
 review: draft
 solved: false

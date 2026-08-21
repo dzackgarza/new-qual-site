@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-VA3OK
 kind: exercise
-title: "Computing $\\zeta(2)$ by integration"
+title: Computing $\zeta(2)$ by integration
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - series-of-numbers
-  - trigonometry
-  - riemann-zeta
+  - Residues
+  - Series of Numbers
+  - Trigonometry
+  - Riemann Zeta
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="Computing $\zeta(2)$ by integration"}
 By computing
 \[

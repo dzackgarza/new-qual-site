@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-NTKTA
 kind: exercise
-title: "Sum formulas: $1/n^2$"
+title: 'Sum formulas: $1/n^2$'
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - series-of-numbers
-  - trigonometry
-  - meromorphic-functions
+  - Residues
+  - Series of Numbers
+  - Trigonometry
+  - Meromorphic Functions
 relations: []
 review: draft
 solved: false

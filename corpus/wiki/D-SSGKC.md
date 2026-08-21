@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-SSGKC
 kind: definition
-title: "Quadratic Form"
+title: Quadratic Form
 classification:
   areas:
   - algebra
   topics:
-  - quadratic-forms
-  - bilinear-forms
-  - diagonalization
+  - Quadratic Forms
+  - Bilinear Forms
+  - Diagonalization
 relations:
 - kind: related-to
   target: D-NRRIT

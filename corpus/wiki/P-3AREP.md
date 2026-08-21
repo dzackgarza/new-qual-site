@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - integrals
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 Compute the following limit and justify your calculations:
 \[
 \lim_{n \rightarrow \infty} \int_{1}^{n} \frac{d x}{\left(1+\frac{x}{n}\right)^{n} \sqrt[n]{x}}

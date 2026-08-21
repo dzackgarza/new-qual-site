@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-O5YG6
 kind: problem
-title: Distinct Sylow subgroups intersect trivially; normal subgroups of $p$-groups meet the center
+title: Distinct Sylow subgroups intersect trivially; normal subgroups of $p$-groups
+  meet the center
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - p-groups
-  - centralizers-and-normalizers
+  - Sylow Theory
+  - p-Groups
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

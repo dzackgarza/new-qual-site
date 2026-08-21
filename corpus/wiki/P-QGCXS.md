@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-QGCXS
 kind: problem
-title: $\sum_{k=1}^{n-1}\cos\frac{2\pi k}{n}=-1$ and $\sum_{k=1}^{n-1}\sin\frac{2\pi k}{n}=0$, via roots of unity
+title: $\sum_{k=1}^{n-1}\cos\frac{2\pi k}{n}=-1$ and $\sum_{k=1}^{n-1}\sin\frac{2\pi
+  k}{n}=0$, via roots of unity
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
-  - polynomials
+  - Trigonometry
+  - Polynomials
 relations: []
 review: draft
 solved: false

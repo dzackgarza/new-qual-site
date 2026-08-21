@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - number-theory
+  - Number Theory
 relations: []
 review: draft
 solved: false

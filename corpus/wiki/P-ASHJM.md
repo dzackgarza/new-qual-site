@@ -7,10 +7,10 @@ classification:
   areas:
   - topology
   topics:
-  - classification
-  - surfaces
-  - homology
-  - euler-characteristic
+  - Classification
+  - Surfaces
+  - Homology
+  - Euler Characteristic
 relations: []
 review: draft
 solved: false

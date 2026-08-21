@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-FS52P
 kind: definition
-title: "Flat"
+title: Flat
 classification:
   areas:
   - topology
   topics:
-  - modules
-  - homological-algebra
+  - Modules
+  - Homological Algebra
 relations: []
 review: draft
 ---

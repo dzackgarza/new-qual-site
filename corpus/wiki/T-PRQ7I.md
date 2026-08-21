@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-PRQ7I
 kind: theorem
-title: "Cantor's Nested Intervals Theorem"
+title: Cantor's Nested Intervals Theorem
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - completeness
-  - metric-spaces
+  - Compactness
+  - Completeness
+  - Metric Spaces
 relations: []
 review: draft
 ---

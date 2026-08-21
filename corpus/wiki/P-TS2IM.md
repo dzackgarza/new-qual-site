@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - rational-canonical-form
-  - minimal-and-characteristic-polynomials
+  - Conjugacy
+  - Rational Canonical Form
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

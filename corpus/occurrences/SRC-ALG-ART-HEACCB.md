@@ -2,16 +2,20 @@
 schema: qual/card@1
 id: SRC-ALG-ART-HEACCB
 kind: collection
-title: Fall 2019 Final (algebra)
+title: Fall 2019 algebra course final
 classification:
   areas:
   - algebra
   topics: []
-relations: []
+relations:
+- kind: related-to
+  target: SRC-UGA-ALG-FALL-2019
+- kind: related-to
+  target: SRC-ALG-ART-QHGA3N
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: Fall 2019 Final
+source:
+  source_kind: homework
+  area: algebra
   problems:
   - P-CDHB5
   - P-2B4GV
@@ -30,5 +34,5 @@ payload:
 ---
 
 ::: remark
-Fall 2019 algebra final. `assets/attachments/Algebra_Final_Solns.pdf` is Math 504 Autumn 2003, not this exam. The source is the authored wiki exam-term headings in `wiki/10_Algebra/08_Quals/080_Modules.md` (#1–#7, #10) and `101_Linear Algebra_JCF.md` (#8–#9). The list is final order #1–#10. `P-45V3F` and `P-5H7FG` were on those wiki headings and were missing from this collection.
+Algebra course final for Fall 2019, not the UGA algebra Fall 2019 qualifying exam (`SRC-UGA-ALG-FALL-2019`). Problem list is disjoint from that sitting and from the course midterm (`SRC-ALG-ART-QHGA3N`).
 :::

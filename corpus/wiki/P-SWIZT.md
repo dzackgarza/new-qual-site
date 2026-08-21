@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - permutations
+  - Conjugacy
+  - Permutations
 relations: []
 review: draft
 solved: false

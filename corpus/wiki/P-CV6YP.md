@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - localization
-  - polynomials
-  - integral-domains
+  - Localization
+  - Polynomials
+  - Integral Domains
 relations: []
 review: draft
 solved: false

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: P-A5CFD
 kind: problem
-title: "If $f$ is a function from $X$ to $Y$ , consider the graph"
+title: If $f$ is a function from $X$ to $Y$ , consider the graph
 classification:
   areas:
   - topology
   topics:
-  - continuity
-  - hausdorff-spaces
-  - compactness
-  - product-topology
+  - Continuity
+  - Hausdorff Spaces
+  - Compactness
+  - Product Topology
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
 If $f$ is a function from $X$ to $Y$ , consider the graph 
 $$

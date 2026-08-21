@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-EPDRU
 kind: problem
-title: The torsion submodule of a finitely generated module over a PID splits as a direct summand
+title: The torsion submodule of a finitely generated module over a PID splits as a
+  direct summand
 classification:
   areas:
   - algebra
   topics:
-  - torsion
-  - free-modules
-  - structure-theorem
+  - Torsion
+  - Free Modules
+  - Structure Theorem
 relations: []
 review: draft
 solved: false

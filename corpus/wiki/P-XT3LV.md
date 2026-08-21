@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-XT3LV
 kind: problem
-title: $[\QQ(\zeta+\zeta^{-1}):\QQ]=\varphi(n)/2$ for a primitive $n$th root of unity $\zeta$
+title: $[\QQ(\zeta+\zeta^{-1}):\QQ]=\varphi(n)/2$ for a primitive $n$th root of unity
+  $\zeta$
 classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - field-extensions
-  - galois-theory
+  - Roots of Unity
+  - Field Extensions
+  - Galois Theory
 relations: []
 review: draft
 solved: false

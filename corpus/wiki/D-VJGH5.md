@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-VJGH5
 kind: definition
-title: "Index of a subgroup"
+title: Index of a subgroup
 classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - subgroups
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 ---

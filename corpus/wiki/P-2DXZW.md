@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - liouville-s-theorem
-  - cauchy-estimates
+  - Entire Functions
+  - Liouville's Theorem
+  - Cauchy Estimates
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $f: \CC\to \CC$ is entire and
 \[

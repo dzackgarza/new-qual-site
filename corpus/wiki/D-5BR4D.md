@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-5BR4D
 kind: definition
-title: "Nondegenerate Bilinear Form"
+title: Nondegenerate Bilinear Form
 classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - inner-product-spaces
-  - vector-spaces
+  - Bilinear Forms
+  - Inner Product Spaces
+  - Vector Spaces
 relations:
 - kind: related-to
   target: D-O4WWN

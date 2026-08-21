@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - argument-principle
-  - open-mapping-theorem
-  - zeros
+  - Argument Principle
+  - Open Mapping Theorem
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f$ be analytic in a domain $D$ and fix $z_0 \in D$ with $w_0 \definedas f(z_0)$.
 Suppose $z_0$ is a zero of $f(z) - w_0$ with finite multiplicity $m$.

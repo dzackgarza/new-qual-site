@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-B2CWE
 kind: problem
-title: Convolution against dilates of an $L^1$ kernel is bounded on $L^1$ and converges to $\alpha f$
+title: Convolution against dilates of an $L^1$ kernel is bounded on $L^1$ and converges
+  to $\alpha f$
 classification:
   areas:
   - real-analysis
   topics:
-  - approximations-to-the-identity
-  - convolution
-  - l1
+  - Approximations to the Identity
+  - Convolution
+  - L¹
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $\varphi\in L^1(\RR)$ with 
 \[  

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-I2X3M
 kind: theorem
-title: "Cellular Approximation"
+title: Cellular Approximation
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homotopy
+  - Cell Complexes
+  - Homotopy
 relations: []
 review: draft
 ---

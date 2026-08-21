@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-6AOD7
 kind: exercise
-title: "Applications of the class equation"
+title: Applications of the class equation
 classification:
   areas:
   - algebra
   topics:
-  - class-equation
-  - p-groups
-  - abelian-groups
+  - Class Equation
+  - p-Groups
+  - Abelian Groups
 relations: []
 review: draft
 solved: true

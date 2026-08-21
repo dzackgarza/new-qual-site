@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-6PRW3
 kind: theorem
-title: "Tonelli (Non-Negative, Measurable)"
+title: Tonelli (Non-Negative, Measurable)
 classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - integrals
+  - Fubini-Tonelli
+  - Integrals
 relations: []
 review: draft
 ---

@@ -7,11 +7,12 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - counterexamples
+  - Connectedness
+  - Counterexamples
 relations: []
 review: draft
 ---
+
 :::{.definition title="Connected"}
 A space $X$ is **disconnected** iff 
 

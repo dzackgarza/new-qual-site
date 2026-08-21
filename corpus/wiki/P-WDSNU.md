@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - group-rings
+  - Representation Theory
+  - Group Rings
 relations: []
 review: draft
 solved: false

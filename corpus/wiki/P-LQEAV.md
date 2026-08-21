@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - norms
-  - series-of-numbers
+  - Lp Spaces
+  - Norms
+  - Series of Numbers
 relations: []
 review: draft
 solved: true

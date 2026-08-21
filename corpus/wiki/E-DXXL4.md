@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-DXXL4
 kind: exercise
-title: "Uniform limit theorem"
+title: Uniform limit theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-continuity
-  - continuity
-  - compactness
+  - Uniform Continuity
+  - Continuity
+  - Compactness
 relations: []
 review: draft
 solved: false

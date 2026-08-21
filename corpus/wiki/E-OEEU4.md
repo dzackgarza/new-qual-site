@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-OEEU4
 kind: exercise
-title: "Rudin 10.4"
+title: Rudin 10.4
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - cauchy-estimates
-  - polynomials
-  - liouville-s-theorem
+  - Entire Functions
+  - Cauchy Estimates
+  - Polynomials
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Rudin 10.4"}
 Let $f$ be entire and suppose that for $\abs{z} \geq M$,
 \[

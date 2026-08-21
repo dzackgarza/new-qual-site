@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-NT2T3
 kind: exercise
-title: "Singularities of $1\\over e^z - 1$"
+title: Singularities of $1\over e^z - 1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - poles
-  - residues
-  - singularities
+  - Poles
+  - Residues
+  - Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Singularities of $1\over e^z - 1$"}
 Classify the singularities and compute the residues at any poles of the following function:
 \[

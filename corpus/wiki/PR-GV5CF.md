@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-GV5CF
 kind: proposition
-title: "Simultaneous Diagonalizability"
+title: Simultaneous Diagonalizability
 classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - eigenvalues-and-eigenvectors
-  - matrices
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
+  - Matrices
 relations: []
 review: draft
 ---

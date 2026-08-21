@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-AHBVF
 kind: exercise
-title: "Cosine expansion in $z\\inv$"
+title: Cosine expansion in $z\inv$
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - trigonometry
+  - Laurent Series
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Cosine expansion in $z\inv$"}
 Expand $f(z) = z^2\cos\qty{z\over 3}$ about $z=0$.
 :::

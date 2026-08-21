@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-PB6UE
 kind: proposition
-title: "Consequence of Chebotarev density: checking irreducibility mod $p$"
+title: 'Consequence of Chebotarev density: checking irreducibility mod $p$'
 classification:
   areas:
   - algebra
   topics:
-  - irreducibility-criteria
-  - finite-fields
-  - polynomials
+  - Irreducibility Criteria
+  - Finite Fields
+  - Polynomials
 relations: []
 review: draft
 ---

@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-IK6LA
 kind: proposition
-title: "Disc complement to doubly slit plane"
+title: Disc complement to doubly slit plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Disc complement to doubly slit plane"}
 \[
 F: \DD^c \intersect \HH &\to \CC\sm[-2, 2] \\

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HJBTY
 kind: problem
-title: Rational canonical forms of $3\times 3$ matrices over $\QQ$ annihilated by $(x^2+2)(x-1)^3$
+title: Rational canonical forms of $3\times 3$ matrices over $\QQ$ annihilated by
+  $(x^2+2)(x-1)^3$
 classification:
   areas:
   - algebra
   topics:
-  - rational-canonical-form
-  - minimal-and-characteristic-polynomials
-  - matrices
+  - Rational Canonical Form
+  - Minimal and Characteristic Polynomials
+  - Matrices
 relations: []
 review: draft
 solved: false

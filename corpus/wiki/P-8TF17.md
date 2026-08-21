@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - counterexamples
+  - Connectedness
+  - Counterexamples
 relations: []
 review: draft
 solved: false

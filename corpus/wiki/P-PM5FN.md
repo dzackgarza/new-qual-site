@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-PM5FN
 kind: problem
-title: Bounds relating $\sup_{|z|\le R}|f|$ and $\sup_{|z|\le R}|f'|$ for holomorphic $f$ on $|z|<3R$
+title: Bounds relating $\sup_{|z|\le R}|f|$ and $\sup_{|z|\le R}|f'|$ for holomorphic
+  $f$ on $|z|<3R$
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - maximum-modulus-principle
-  - cauchy-integral-formula
+  - Cauchy Estimates
+  - Maximum Modulus Principle
+  - Cauchy Integral Formula
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $R>0$. Suppose $f$ is holomorphic on $\ts{z\st \abs{z} < 3R}$. Let
 $$

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-FM5FN
 kind: proposition
-title: "Composite Extensions"
+title: Composite Extensions
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Composite Extensions"}
 If $F/k$ is finite and Galois and $L/k$ is arbitrary, then $FL/L$ is Galois and
 \[

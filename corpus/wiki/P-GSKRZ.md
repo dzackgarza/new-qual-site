@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - permutations
-  - conjugacy
+  - Automorphisms
+  - Permutations
+  - Conjugacy
 relations: []
 review: draft
 solved: false

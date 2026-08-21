@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - riesz-representation
-  - lp-spaces
-  - density
+  - Riesz Representation
+  - Lp Spaces
+  - Density
 relations: []
 review: draft
 solved: true
 ---
+
 a.
 Show that $L^2([0, 1]) ⊆ L^1([0, 1])$ and argue that $L^2([0, 1])$ in fact forms a dense subset of $L^1([0, 1])$.
 

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-3VQBI
 kind: proposition
-title: "Simplifications of separability for finite extensions"
+title: Simplifications of separability for finite extensions
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
+  - Separability
+  - Field Extensions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Simplifications of separability for finite extensions"}
 If $L/k$ is a finite extension, then, TFAE:
 

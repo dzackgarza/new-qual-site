@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-QMVEB
 kind: definition
-title: "Normal Core of a subgroup"
+title: Normal Core of a subgroup
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - subgroups
-  - group-actions
+  - Normal Subgroups
+  - Subgroups
+  - Group Actions
 relations: []
 review: draft
 ---
+
 :::{.definition title="Normal Core of a subgroup"}
 The largest normal subgroup of $G$ contained in $H$:
 \[

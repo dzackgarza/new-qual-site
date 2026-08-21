@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-PW4Z6
 kind: proposition
-title: "Upper half-disc to first quadrant"
+title: Upper half-disc to first quadrant
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Upper half-disc to first quadrant"}
 \[
 \ts{ z \st \abs{z} < 1,\, \Im(z) > 0 } &\mapstofrom \ts{ w \st \Re(w)>0,\, \Im(w) > 0}  \\

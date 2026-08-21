@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FPWNW
 kind: problem
-title: Groups of order $p^2$ are abelian; the Sylow theorems; groups of order $4225=5^2 13^2$ are abelian, with their isomorphism classes
+title: Groups of order $p^2$ are abelian; the Sylow theorems; groups of order $4225=5^2
+  13^2$ are abelian, with their isomorphism classes
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - p-groups
-  - sylow-theory
+  - Classification
+  - p-Groups
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - removable-singularities
-  - zeros
+  - Liouville's Theorem
+  - Entire Functions
+  - Removable Singularities
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 Find all entire functions that satisfy
 \[
 \abs{f(z)} \geq \abs{z} \quad \forall z\in \CC

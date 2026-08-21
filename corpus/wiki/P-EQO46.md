@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
-  - subgroups
+  - Classification
+  - Groups
+  - Subgroups
 relations: []
 review: draft
 solved: false

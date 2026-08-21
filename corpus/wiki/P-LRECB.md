@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - sylow-theory
-  - centralizers-and-normalizers
+  - Galois Theory
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: true
 ---
+
 Let $K$ be a Galois extension of $F$, and let $F \subset E \subset K$ be inclusions of fields.
 Let $G \da \Gal(K/F)$ and $H \da \Gal(K/E)$, and suppose $H$ contains $N_G(P)$, where $P$ is a Sylow $p$-subgroup of $G$ for $p$ a prime.
 Prove that \( [E: F] \equiv 1 \mod p \).

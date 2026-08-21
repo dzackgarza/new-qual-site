@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: PR-TC76W
 kind: proposition
-title: "The four big counterexamples in convergence"
+title: The four big counterexamples in convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - uniform-convergence
-  - l1
-  - counterexamples
+  - Convergence of Functions
+  - Uniform Convergence
+  - L¹
+  - Counterexamples
 relations: []
 review: draft
 ---

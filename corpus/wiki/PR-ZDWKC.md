@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-ZDWKC
 kind: proposition
-title: "Ideal Operations"
+title: Ideal Operations
 classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - rings
+  - Ideals
+  - Rings
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
-  - direct-products
+  - Maximal Ideals
+  - Ideals
+  - Direct Products
 relations: []
 review: draft
 solved: false

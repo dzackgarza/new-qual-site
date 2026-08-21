@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-MCUTE
 kind: definition
-title: "Special Unitary Group"
+title: Special Unitary Group
 classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - determinants
-  - inner-product-spaces
+  - Matrix Groups
+  - Determinants
+  - Inner Product Spaces
 relations: []
 review: draft
 ---
+
 :::{.definition title="Special Unitary Group"}
 \[
 \SU_n(\CC) \da \ts{ A \in U_n(\CC) \st \det A = 1  } 

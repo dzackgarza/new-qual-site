@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-EPSKF
 kind: definition
-title: "Linear functionals"
+title: Linear functionals
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - functional-analysis
+  - Dual Spaces
+  - Functional Analysis
 relations: []
 review: draft
 ---
+
 :::{.definition title="Linear functionals"}
 A map $L: X \to \CC$ is a **linear functional** iff
 \[

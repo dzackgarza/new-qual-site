@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-ZCKLJ
 kind: proposition
-title: "Separable splitting fields are Galois"
+title: Separable splitting fields are Galois
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - separability
-  - splitting-fields
+  - Galois Theory
+  - Separability
+  - Splitting Fields
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Separable splitting fields are Galois"}
 If $L/k$ is separable, then
 \[

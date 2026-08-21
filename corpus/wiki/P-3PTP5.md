@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - ideals
-  - rings
+  - Fields
+  - Ideals
+  - Rings
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-A12ND
 kind: problem
-title: The $2\times 2$ matrix sending $(1,2)$ to $(5,-6)$ and $(0,1)$ to $(1,-1)$ is not diagonalizable
+title: The $2\times 2$ matrix sending $(1,2)$ to $(5,-6)$ and $(0,1)$ to $(1,-1)$
+  is not diagonalizable
 classification:
   areas:
   - prelim
   topics:
-  - matrices
-  - diagonalization
+  - Matrices
+  - Diagonalization
 relations: []
 review: draft
 solved: false

@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: C-CM7ZS
 kind: corollary
-title: "Burnside's Lemma"
+title: Burnside's Lemma
 classification:
   areas:
   - algebra
   topics:
-  - burnside-s-lemma
-  - group-actions
-  - orbit-stabilizer
+  - Burnside's Lemma
+  - Group Actions
+  - Orbit-Stabilizer
 relations: []
 review: draft
 ---
+
 :::{.corollary title="Burnside's Lemma"}
 For $G$ a finite group acting on $X$,
 \[

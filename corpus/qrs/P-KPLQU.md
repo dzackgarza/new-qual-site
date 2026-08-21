@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - green-s-theorem
-  - cauchy-integral-theorem
-  - contour-integration
+  - Green's Theorem
+  - Cauchy Integral Theorem
+  - Contour Integration
 relations: []
 review: draft
 solved: false

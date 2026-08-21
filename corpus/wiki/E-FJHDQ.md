@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-FJHDQ
 kind: exercise
-title: "The standard function juggling trick"
+title: The standard function juggling trick
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - conformal-maps
-  - fractional-linear-transformations
+  - Schwarz Lemma
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="The standard function juggling trick"}
 Show that if $f:\HH\to \DD$ is holomorphic and $f(i) = 0$ then $\abs{f(z)} \leq \abs{z-i\over z+i}$.
 

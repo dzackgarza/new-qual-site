@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-TLBPS
 kind: proposition
-title: "The derivative detects separability for irreducible polynomials"
+title: The derivative detects separability for irreducible polynomials
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - polynomials
-  - characteristic
+  - Separability
+  - Polynomials
+  - Characteristic
 relations: []
 review: draft
 ---
+
 :::{.proposition title="The derivative detects separability for irreducible polynomials"}
 \envlist
 

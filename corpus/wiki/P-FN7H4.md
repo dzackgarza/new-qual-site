@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - irreducibility-criteria
-  - splitting-fields
+  - Galois Theory
+  - Irreducibility Criteria
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

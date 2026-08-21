@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - cyclic-groups
-  - automorphisms
-  - number-theory
+  - Cyclic Groups
+  - Automorphisms
+  - Number Theory
 relations: []
 review: draft
 solved: false

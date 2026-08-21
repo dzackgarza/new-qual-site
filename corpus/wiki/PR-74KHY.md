@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-74KHY
 kind: proposition
-title: "Three points determine a M\u00f6bius transformation"
+title: Three points determine a Möbius transformation
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
+  - Fractional Linear Transformations
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Three points determine a Möbius transformation"}
 Given any three distinct points $z_1, z_2, z_3$, the following Möbius transformation sends them to $0, 1, \infty$ respectively, and is the unique one that does:
 \[

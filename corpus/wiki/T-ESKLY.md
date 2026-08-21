@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-ESKLY
 kind: theorem
-title: "The residue formula"
+title: The residue formula
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - poles
+  - Residues
+  - Poles
 relations: []
 review: draft
 ---
+
 :::{.theorem title="The residue formula"}
 If $f$ has a pole $z_0$ of order $n$, then
 \[  

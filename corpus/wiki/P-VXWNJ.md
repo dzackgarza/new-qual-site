@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-VXWNJ
 kind: problem
-title: "Hungerford 2.2.1"
+title: Hungerford 2.2.1
 classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - structure-theorem
-  - classification
+  - Abelian Groups
+  - Structure Theorem
+  - Classification
 relations: []
 review: draft
 solved: false

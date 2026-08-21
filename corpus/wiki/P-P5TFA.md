@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - limits
-  - integrals
+  - Differentiation
+  - Limits
+  - Integrals
 relations: []
 review: draft
 solved: true

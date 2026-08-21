@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-YKB3V
 kind: definition
-title: "Toy contour"
+title: Toy contour
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
+  - Contour Integration
 relations: []
 review: draft
 ---

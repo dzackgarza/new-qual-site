@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-9KQZT
 kind: definition
-title: "Homeomorphism"
+title: Homeomorphism
 classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - continuity
-  - point-set
+  - Homeomorphisms
+  - Continuity
+  - Point-Set Topology
 relations: []
 review: draft
 ---

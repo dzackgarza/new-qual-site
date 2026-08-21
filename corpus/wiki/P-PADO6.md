@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-PADO6
 kind: problem
-title: "Hungerford 1.6.3"
+title: Hungerford 1.6.3
 classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - permutations
+  - Conjugacy
+  - Permutations
 relations: []
 review: draft
 solved: false

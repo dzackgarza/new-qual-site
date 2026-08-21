@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - classification
-  - centralizers-and-normalizers
+  - Nilpotent Groups
+  - Classification
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

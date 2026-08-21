@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - ideals
+  - Nilpotence
+  - Ideals
 relations: []
 review: draft
 solved: false

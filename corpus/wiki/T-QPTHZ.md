@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-QPTHZ
 kind: theorem
-title: "Heine-Borel"
+title: Heine-Borel
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - euclidean-spaces
+  - Compactness
+  - Euclidean Spaces
 relations: []
 review: draft
 ---

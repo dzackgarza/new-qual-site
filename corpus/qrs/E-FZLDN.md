@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - cauchy-integral-formula
+  - Holomorphic Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 solved: false

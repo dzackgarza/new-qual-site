@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-HZUM7
 kind: theorem
-title: "Freudenthal Suspension"
+title: Freudenthal Suspension
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - cell-complexes
+  - Homotopy
+  - Cell Complexes
 relations: []
 review: draft
 ---

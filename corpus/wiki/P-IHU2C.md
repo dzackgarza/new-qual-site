@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 How many roots does the following polynomial have in the open disc $\abs{z} < 1$?
 \[

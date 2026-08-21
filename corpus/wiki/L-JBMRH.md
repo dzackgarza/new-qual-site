@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
+  - Sequences of Numbers
 relations: []
 review: draft
 ---

@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-SCTER
 kind: proposition
-title: "Limits of continuous functions need not be continuous"
+title: Limits of continuous functions need not be continuous
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - continuity
-  - counterexamples
+  - Convergence of Functions
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Limits of continuous functions need not be continuous"}
 \[
 \lim_{k\to \infty} \lim_{n\to\infty} f_n(x_k) \neq

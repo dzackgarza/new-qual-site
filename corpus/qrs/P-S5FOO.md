@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - norms
-  - holomorphic-functions
+  - Norms
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

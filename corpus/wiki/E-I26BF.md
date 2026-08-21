@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-I26BF
 kind: exercise
-title: "Injective implies nonvanishing derivative"
+title: Injective implies nonvanishing derivative
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - zeros
-  - open-mapping-theorem
+  - Biholomorphisms
+  - Zeros
+  - Open Mapping Theorem
 relations: []
 review: draft
 solved: true

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - rational-canonical-form
-  - structure-theorem
+  - Minimal and Characteristic Polynomials
+  - Rational Canonical Form
+  - Structure Theorem
 relations: []
 review: draft
 ---

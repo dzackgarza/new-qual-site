@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZOTXG
 kind: problem
-title: $L^1$ convolution with a bounded measurable function is bounded and uniformly continuous, and $(f*g)'=f*g'$ when $g'$ is bounded
+title: $L^1$ convolution with a bounded measurable function is bounded and uniformly
+  continuous, and $(f*g)'=f*g'$ when $g'$ is bounded
 classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - uniform-continuity
-  - differentiation
+  - Convolution
+  - Uniform Continuity
+  - Differentiation
 relations: []
 review: draft
 solved: true

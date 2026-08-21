@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - uniform-convergence
-  - riemann-integrability
+  - Uniform Convergence
+  - Riemann Integrability
 relations: []
 review: draft
 solved: false

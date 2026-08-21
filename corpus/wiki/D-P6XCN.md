@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-P6XCN
 kind: definition
-title: "Refinement"
+title: Refinement
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - paracompactness
+  - Compactness
+  - Paracompactness
 relations: []
 review: draft
 ---

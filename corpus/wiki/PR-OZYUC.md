@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-OZYUC
 kind: proposition
-title: "Characterization of normal algebraic extensions"
+title: Characterization of normal algebraic extensions
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - splitting-fields
-  - galois-theory
+  - Field Extensions
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 ---

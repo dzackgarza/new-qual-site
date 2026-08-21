@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-E6VI4
 kind: proposition
-title: "Application of translation action on cosets"
+title: Application of translation action on cosets
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - normal-subgroups
-  - cosets-and-lagrange
+  - Group Actions
+  - Normal Subgroups
+  - Cosets and Lagrange
 relations: []
 review: draft
 ---

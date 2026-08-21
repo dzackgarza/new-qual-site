@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RAYX2
 kind: problem
-title: "Produce sequences $\\{a_n\\},\\,\\{b_n\\}$ of"
+title: Produce sequences $\{a_n\},\,\{b_n\}$ of
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
-  - counterexamples
+  - Sequences of Numbers
+  - Limits
+  - Counterexamples
 relations: []
 review: draft
 solved: true

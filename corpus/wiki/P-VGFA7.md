@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - homomorphisms
-  - normal-subgroups
+  - Permutations
+  - Homomorphisms
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

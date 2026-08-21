@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-WTCTP
 kind: exercise
-title: "Detecting injectivity using derivatives"
+title: Detecting injectivity using derivatives
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - rouche
-  - argument-principle
-  - open-mapping-theorem
+  - Zeros
+  - Rouché
+  - Argument Principle
+  - Open Mapping Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Detecting injectivity using derivatives"}
 Show that if $z_0$ is a zero of $f'$ of order $n-1$, then $f$ is $n$-to-one in a neighborhood of $z_0$.
 

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-YLI6Y
 kind: theorem
-title: "Minimum modulus principle"
+title: Minimum modulus principle
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
+  - Maximum Modulus Principle
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-G3DCH
 kind: exercise
-title: "Orders of zeros"
+title: Orders of zeros
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - power-series
+  - Zeros
+  - Power Series
 relations: []
 review: draft
 solved: true

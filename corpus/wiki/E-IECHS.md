@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - counterexamples
+  - Compactness
+  - Hausdorff Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: false

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-UDYDX
 kind: exercise
-title: "$1/x^4+1$, half-line"
+title: $1/x^4+1$, half-line
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/x^4+1$, half-line"}
 \[
 I \da \int_0^\infty {1\over x^4 + 1 }\dx = {\pi \over 2\sqrt 2}

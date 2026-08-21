@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-OERA3
 kind: problem
-title: Sufficient conditions for a degree $5$ polynomial to have Galois group $S_5$ over $\QQ$
+title: Sufficient conditions for a degree $5$ polynomial to have Galois group $S_5$
+  over $\QQ$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - permutations
-  - polynomials
+  - Galois Theory
+  - Permutations
+  - Polynomials
 relations: []
 review: draft
 solved: false

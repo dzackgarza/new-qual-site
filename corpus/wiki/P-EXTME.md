@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-EXTME
 kind: problem
-title: "Hungerford 7.2.4"
+title: Hungerford 7.2.4
 classification:
   areas:
   - algebra
   topics:
-  - linear-algebra
-  - matrices
-  - rank-and-nullity
+  - Linear Algebra
+  - Matrices
+  - Rank and Nullity
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="Hungerford 7.2.4"}
 \envlist
 

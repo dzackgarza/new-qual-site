@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-6WMSR
 kind: proposition
-title: "Weak $M\\dash$Test"
+title: Weak $M\dash$Test
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - convergence-of-functions
+  - Series of Functions
+  - Convergence of Functions
 relations: []
 review: draft
 ---

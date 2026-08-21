@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - classification
+  - Simple Groups
+  - Classification
 relations: []
 review: draft
 solved: false

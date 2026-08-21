@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - polynomials
-  - poles
-  - singularities
+  - Entire Functions
+  - Polynomials
+  - Poles
+  - Singularities
 relations: []
 review: draft
 solved: true

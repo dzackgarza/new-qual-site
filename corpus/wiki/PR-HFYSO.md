@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-HFYSO
 kind: proposition
-title: "Zero in $L^1$ iff zero almost everywhere"
+title: Zero in $L^1$ iff zero almost everywhere
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - measure-theory
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Zero in $L^1$ iff zero almost everywhere"}
 For $f\in L^+$,
 \[

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-77SHB
 kind: theorem
-title: "Cayley Transform"
+title: Cayley Transform
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 ---

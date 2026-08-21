@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - permutations
-  - partitions
+  - Conjugacy
+  - Permutations
+  - Partitions
 relations: []
 review: draft
 solved: false

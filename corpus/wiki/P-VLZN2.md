@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-VLZN2
 kind: problem
-title: 'Fourier transforms of $L^1$ functions: boundedness, uniqueness, the multiplication formula, and Fourier series of $C^1$ functions'
+title: 'Fourier transforms of $L^1$ functions: boundedness, uniqueness, the multiplication
+  formula, and Fourier series of $C^1$ functions'
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - l1
-  - uniform-continuity
+  - Fourier Analysis
+  - L¹
+  - Uniform Continuity
 relations: []
 review: draft
 solved: true

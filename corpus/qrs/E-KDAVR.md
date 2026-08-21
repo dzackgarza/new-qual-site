@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
+  - Compactness
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-DU4UQ
 kind: definition
-title: "Gorenstein Rings"
+title: Gorenstein Rings
 classification:
   areas:
   - algebra
   topics:
-  - commutative-algebra
-  - noetherian-rings
-  - homological-algebra
+  - Commutative Algebra
+  - Noetherian Rings
+  - Homological Algebra
 relations: []
 review: draft
 ---

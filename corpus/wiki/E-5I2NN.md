@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-5I2NN
 kind: exercise
-title: "Using the estimates"
+title: Using the estimates
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - fixed-points
-  - blaschke-factors
+  - Schwarz Lemma
+  - Fixed Points
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Using the estimates"}
 Let $f\in \Hol(\DD)$.
 Show that if $f$ has a fixed point $a$ then $\abs{f'(a)} \leq 1$, and that 

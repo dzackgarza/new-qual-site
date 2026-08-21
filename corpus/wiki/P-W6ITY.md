@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-W6ITY
 kind: problem
-title: Functions in $L^p(0,\infty)$ precisely for $a<p<b$, for $a\le p\le b$, and for $p=a$
+title: Functions in $L^p(0,\infty)$ precisely for $a<p<b$, for $a\le p\le b$, and
+  for $p=a$
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - counterexamples
+  - Lp Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: true

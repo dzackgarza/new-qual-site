@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-LMEKH
 kind: problem
-title: The subgroup $\langle aba^{-1}b^{-1},\, a^2ba^{-2}b^{-1},\, a^{-1}bab^{-1},\, aba^{-2}b^{-1}a\rangle$ of the free group on two generators
+title: The subgroup $\langle aba^{-1}b^{-1},\, a^2ba^{-2}b^{-1},\, a^{-1}bab^{-1},\,
+  aba^{-2}b^{-1}a\rangle$ of the free group on two generators
 classification:
   areas:
   - topology
   topics:
-  - groups
-  - covering-spaces
+  - Groups
+  - Covering Spaces
 relations: []
 review: draft
 solved: false

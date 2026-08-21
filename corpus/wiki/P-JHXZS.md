@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
+  - Integrals
 relations: []
 review: draft
 solved: false

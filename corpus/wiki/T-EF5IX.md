@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-EF5IX
 kind: theorem
-title: "Lifting criterion for covers, Hatcher 1.33"
+title: Lifting criterion for covers, Hatcher 1.33
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 ---

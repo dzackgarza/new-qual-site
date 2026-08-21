@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - l2
-  - norms
+  - Fourier Analysis
+  - L²
+  - Norms
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Plancherel"}
 \[
 \norm{f}_{L^2}^2 &= \norm{\hat{f}}_{L^2} \\

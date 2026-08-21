@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-HFR32
 kind: definition
-title: "Homotopy Equivalence"
+title: Homotopy Equivalence
 classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 ---

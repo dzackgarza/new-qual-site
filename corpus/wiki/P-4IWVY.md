@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
-  - principal-ideal-domains
+  - Modules
+  - Semisimplicity
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

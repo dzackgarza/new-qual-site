@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-76BDN
 kind: proposition
-title: "Showing ideals are maximal/prime with quotients"
+title: Showing ideals are maximal/prime with quotients
 classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - prime-ideals
-  - ideals
+  - Maximal Ideals
+  - Prime Ideals
+  - Ideals
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-O26OY
 kind: definition
-title: "Characteristic"
+title: Characteristic
 classification:
   areas:
   - algebra
   topics:
-  - characteristic
-  - rings
+  - Characteristic
+  - Rings
 relations: []
 review: draft
 ---

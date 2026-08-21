@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - l-infty
-  - limits
+  - Lp Spaces
+  - L∞
+  - Limits
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f$ be a non-negative measurable function on $[0, 1]$. 
 
 Show that

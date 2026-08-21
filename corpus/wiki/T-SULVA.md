@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-SULVA
 kind: theorem
-title: "Hurwitz 2"
+title: Hurwitz 2
 classification:
   areas:
   - complex-analysis
   topics:
-  - hurwitz
-  - normal-families
-  - conformal-maps
+  - Hurwitz
+  - Normal Families
+  - Conformal Maps
 relations: []
 review: draft
 ---

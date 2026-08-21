@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - euclidean-spaces
+  - Measure Theory
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: true

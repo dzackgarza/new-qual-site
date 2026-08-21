@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-TTLXS
 kind: theorem
-title: "Closed graph"
+title: Closed graph
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - continuity
+  - Functional Analysis
+  - Continuity
 relations: []
 review: draft
 ---

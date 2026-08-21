@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: C-ILVEB
 kind: corollary
-title: "Every subgroup of a free group is free"
+title: Every subgroup of a free group is free
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
-  - groups
-  - cell-complexes
+  - Covering Spaces
+  - Fundamental Group
+  - Groups
+  - Cell Complexes
 relations: []
 review: draft
 ---

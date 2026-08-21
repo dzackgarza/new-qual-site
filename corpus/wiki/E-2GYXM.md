@@ -2,20 +2,21 @@
 schema: qual/card@1
 id: E-2GYXM
 kind: exercise
-title: "Sum formulas: 1/(n-a)^2"
+title: 'Sum formulas: 1/(n-a)^2'
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
-  - principal-parts
-  - poles
-  - trigonometry
-  - series-of-functions
+  - Meromorphic Functions
+  - Principal Parts
+  - Poles
+  - Trigonometry
+  - Series of Functions
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="Sum formulas: 1/(n-a)^2"}
 Show that
 \[

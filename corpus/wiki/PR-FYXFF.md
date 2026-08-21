@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-FYXFF
 kind: proposition
-title: "Useful computational trick"
+title: Useful computational trick
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - determinants
-  - trace
+  - Minimal and Characteristic Polynomials
+  - Determinants
+  - Trace
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Useful computational trick"}
 A trick for finding characteristic polynomials:
 \[

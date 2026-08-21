@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - classification
-  - p-groups
-  - groups
+  - Classification
+  - p-Groups
+  - Groups
 relations: []
 review: draft
 solved: false

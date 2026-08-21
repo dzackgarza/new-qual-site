@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-VTB25
 kind: problem
-title: Even-degree orientable covers of non-orientable manifolds, and $\pi_1$ without index-$2$ subgroups
+title: Even-degree orientable covers of non-orientable manifolds, and $\pi_1$ without
+  index-$2$ subgroups
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - covering-spaces
-  - manifolds
+  - Orientation
+  - Covering Spaces
+  - Manifolds
 relations: []
 review: draft
 solved: false

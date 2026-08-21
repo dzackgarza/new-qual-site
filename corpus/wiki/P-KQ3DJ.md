@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - projective-modules
-  - modules
+  - Projective Modules
+  - Modules
 relations: []
 review: draft
 solved: false

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - free-groups
-  - normal-subgroups
+  - Free Groups
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

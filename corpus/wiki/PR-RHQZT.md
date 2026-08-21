@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-RHQZT
 kind: proposition
-title: "Proper ideals contain no units"
+title: Proper ideals contain no units
 classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - rings
+  - Ideals
+  - Rings
 relations: []
 review: draft
 ---

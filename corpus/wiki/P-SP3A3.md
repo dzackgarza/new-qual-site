@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - matrices
+  - Matrices
 relations: []
 review: draft
 solved: false

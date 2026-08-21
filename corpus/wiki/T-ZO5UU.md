@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-ZO5UU
 kind: theorem
-title: "Jordan's Lemma"
+title: Jordan's Lemma
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - residues
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Jordan's Lemma"}
 
 For $\alpha > 0$,

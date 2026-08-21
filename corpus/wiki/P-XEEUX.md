@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-XEEUX
 kind: problem
-title: "Consider the function $f(x) = \\frac{x}{1-x^2}$,"
+title: Consider the function $f(x) = \frac{x}{1-x^2}$,
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - uniform-continuity
+  - Continuity
+  - Uniform Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 Consider the function $f(x) = \frac{x}{1-x^2}$,
 $x \in (0,1)$.
 

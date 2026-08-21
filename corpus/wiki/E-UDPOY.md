@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: E-UDPOY
 kind: exercise
-title: A holomorphic function on $\Delta^*$ with nonnegative real part has a removable singularity at $0$
+title: A holomorphic function on $\Delta^*$ with nonnegative real part has a removable
+  singularity at $0$
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - conformal-maps
-  - fractional-linear-transformations
-  - singularities
+  - Removable Singularities
+  - Conformal Maps
+  - Fractional Linear Transformations
+  - Singularities
 relations: []
 review: draft
 solved: true

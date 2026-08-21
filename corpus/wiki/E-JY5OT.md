@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - norms
-  - sequences-of-numbers
+  - Norms
+  - Sequences of Numbers
 relations: []
 review: draft
 solved: true

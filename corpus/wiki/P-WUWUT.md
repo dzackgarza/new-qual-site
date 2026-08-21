@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-WUWUT
 kind: problem
-title: "Hungerford 2.1.10"
+title: Hungerford 2.1.10
 classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - free-modules
-  - counterexamples
+  - Abelian Groups
+  - Free Modules
+  - Counterexamples
 relations: []
 review: draft
 solved: false

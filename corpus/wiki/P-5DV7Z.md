@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - u-substitution
+  - Integrals
+  - u-Substitution
 relations: []
 review: draft
 solved: true

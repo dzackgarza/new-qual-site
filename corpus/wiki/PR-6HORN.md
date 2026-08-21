@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-6HORN
 kind: proposition
-title: "Homotopy type of knot complements"
+title: Homotopy type of knot complements
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - manifolds
-  - homology
+  - Homotopy
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

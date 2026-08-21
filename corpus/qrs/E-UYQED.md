@@ -8,9 +8,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - convergence-of-functions
-  - series-of-functions
+  - Uniform Convergence
+  - Convergence of Functions
+  - Series of Functions
 relations: []
 review: draft
 solved: true

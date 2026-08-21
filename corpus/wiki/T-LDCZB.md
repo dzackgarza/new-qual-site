@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-LDCZB
 kind: theorem
-title: "Riesz Representation for Hilbert Spaces"
+title: Riesz Representation for Hilbert Spaces
 classification:
   areas:
   - real-analysis
   topics:
-  - riesz-representation
-  - hilbert-spaces
-  - dual-spaces
+  - Riesz Representation
+  - Hilbert Spaces
+  - Dual Spaces
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Riesz Representation for Hilbert Spaces"}
 If $\Lambda$ is a continuous linear functional on a Hilbert space $H$, then there exists a unique $y \in H$ such that
 \[

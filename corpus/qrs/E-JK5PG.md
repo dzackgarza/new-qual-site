@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-JK5PG
 kind: exercise
-title: "\\int_\\RR {1 \\over x^4 + 1} = {\\pi \\sqrt{2} \\over 2}"
+title: \int_\RR {1 \over x^4 + 1} = {\pi \sqrt{2} \over 2}
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - poles
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 \[
 \int_\RR {1 \over x^4 + 1} = {\pi \sqrt{2} \over 2}

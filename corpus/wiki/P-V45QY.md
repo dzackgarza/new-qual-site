@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-V45QY
 kind: problem
-title: Every continuous self-map of a $2$-disk attached to $S^1$ by a degree $d$ map has a fixed point, and the connected covering spaces of $X$
+title: Every continuous self-map of a $2$-disk attached to $S^1$ by a degree $d$ map
+  has a fixed point, and the connected covering spaces of $X$
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - covering-spaces
-  - cell-complexes
+  - Fixed Points
+  - Covering Spaces
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

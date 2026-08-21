@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-TM2Z4
 kind: exercise
-title: "Images of sequences of poles converge to anything"
+title: Images of sequences of poles converge to anything
 classification:
   areas:
   - complex-analysis
   topics:
-  - casorati-weierstrass
-  - poles
-  - singularities
-  - identity-theorem
+  - Casorati-Weierstrass
+  - Poles
+  - Singularities
+  - Identity Theorem
 relations: []
 review: draft
 solved: true

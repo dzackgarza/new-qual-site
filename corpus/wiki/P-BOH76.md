@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - classification
-  - p-groups
-  - semidirect-products
+  - Classification
+  - p-Groups
+  - Semidirect Products
 relations: []
 review: draft
 solved: false

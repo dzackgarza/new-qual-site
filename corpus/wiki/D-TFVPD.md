@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-TFVPD
 kind: definition
-title: "Mapping Cone"
+title: Mapping Cone
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homotopy
-  - quotient-spaces
+  - Cell Complexes
+  - Homotopy
+  - Quotient Spaces
 relations: []
 review: draft
 ---

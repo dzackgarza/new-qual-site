@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - improper-integrals
-  - u-substitution
+  - Integrals
+  - Improper Integrals
+  - u-Substitution
 relations: []
 review: draft
 solved: false

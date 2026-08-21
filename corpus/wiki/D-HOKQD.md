@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-HOKQD
 kind: definition
-title: "Limsup/Liminf"
+title: Limsup/Liminf
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 ---
+
 :::{.definition title="Limsup/Liminf"}
 \[  
 \limsup_n a_n = \lim_{n\to \infty} \sup_{j\geq n} a_j &= \inf_{n\geq 0} \sup_{j\geq n} a_j \\ 

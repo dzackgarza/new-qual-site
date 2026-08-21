@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - borel-cantelli
-  - measure-theory
+  - Borel-Cantelli
+  - Measure Theory
 relations: []
 review: draft
 solved: true

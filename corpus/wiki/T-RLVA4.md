@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-RLVA4
 kind: theorem
-title: "The Correspondence Theorem / 4th Isomorphism Theorem"
+title: The Correspondence Theorem / 4th Isomorphism Theorem
 classification:
   areas:
   - algebra
   topics:
-  - isomorphism-theorems
-  - normal-subgroups
-  - subgroups
+  - Isomorphism Theorems
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 ---
+
 :::{.theorem title="The Correspondence Theorem / 4th Isomorphism Theorem"}
 Suppose $N \normal G$, then there exists a correspondence:
 

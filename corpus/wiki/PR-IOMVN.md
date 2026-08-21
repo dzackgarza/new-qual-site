@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-IOMVN
 kind: proposition
-title: "Fixing transitivity of normality"
+title: Fixing transitivity of normality
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - automorphisms
-  - subgroups
+  - Normal Subgroups
+  - Automorphisms
+  - Subgroups
 relations: []
 review: draft
 ---

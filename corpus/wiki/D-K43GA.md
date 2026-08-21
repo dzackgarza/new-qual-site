@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-K43GA
 kind: definition
-title: "Contractible"
+title: Contractible
 classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 ---

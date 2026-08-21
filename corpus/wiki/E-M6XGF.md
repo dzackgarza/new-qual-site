@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - normal-subgroups
-  - group-actions
+  - Cosets and Lagrange
+  - Normal Subgroups
+  - Group Actions
 relations: []
 review: draft
 solved: false

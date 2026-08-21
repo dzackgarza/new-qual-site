@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: E-YFBH5
 kind: exercise
-title: Analytic self-maps of the disc with a zero of order $k$ at $0$ and $|f|\to 1$ at the boundary
+title: Analytic self-maps of the disc with a zero of order $k$ at $0$ and $|f|\to
+  1$ at the boundary
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - schwarz-lemma
-  - zeros
-  - maximum-modulus-principle
+  - Blaschke Factors
+  - Schwarz Lemma
+  - Zeros
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $f:\DD\to\DD$ is analytic, has a single zero of order $k$ at $z=0$, and satisfies $\lim_{\abs z \to 1} \abs{f(z)} = 1$.
 Give with proof a formula for $f(z)$.

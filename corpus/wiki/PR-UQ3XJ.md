@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-UQ3XJ
 kind: proposition
-title: "Order of $\\GL_n$"
+title: Order of $\GL_n$
 classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - finite-fields
-  - bases
+  - Matrix Groups
+  - Finite Fields
+  - Bases
 relations: []
 review: draft
 ---

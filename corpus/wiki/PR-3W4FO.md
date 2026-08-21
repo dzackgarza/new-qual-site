@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - uniform-continuity
-  - lp-spaces
+  - Convolution
+  - Uniform Continuity
+  - Lp Spaces
 relations: []
 review: draft
 ---
+
 :::{.proposition title="?"}
 \[
 (f, g) \in L^p\times L^q \implies f\convolve g \text{ uniformly continuous}

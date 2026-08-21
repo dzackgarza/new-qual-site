@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-NLXNM
 kind: problem
-title: Conjugation on Sylow $p$-subgroups; $|G|$ divides $n_p!$ if $G$ is simple; no simple group of order $ap^k$ for $1\le a\le 4$
+title: Conjugation on Sylow $p$-subgroups; $|G|$ divides $n_p!$ if $G$ is simple;
+  no simple group of order $ap^k$ for $1\le a\le 4$
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - simple-groups
-  - group-actions
+  - Sylow Theory
+  - Simple Groups
+  - Group Actions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem}
 Let $G$ be a finite group and $p$ a prime number. Let
 $X_p$ be the set of Sylow-$p$ subgroups of $G$ and $n_p$ be the

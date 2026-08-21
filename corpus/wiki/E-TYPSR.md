@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-TYPSR
 kind: exercise
-title: An entire function with bounded $n$th derivative is a polynomial of degree at most $n$
+title: An entire function with bounded $n$th derivative is a polynomial of degree
+  at most $n$
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - polynomials
+  - Liouville's Theorem
+  - Entire Functions
+  - Polynomials
 relations: []
 review: draft
 solved: true

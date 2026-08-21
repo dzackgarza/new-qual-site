@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-IM6MH
 kind: problem
-title: "Invert $2z-1$, one coefficient at a time"
+title: Invert $2z-1$, one coefficient at a time
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - laurent-series
+  - Power Series
+  - Laurent Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Invert $2z-1$, one coefficient at a time"}
 Let $A(z) \da 2z-1$ and find $1/A(z)$.
 :::

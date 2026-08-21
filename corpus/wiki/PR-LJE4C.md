@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-LJE4C
 kind: proposition
-title: "Correspondence Theorem for Ideals"
+title: Correspondence Theorem for Ideals
 classification:
   areas:
   - algebra
   topics:
-  - isomorphism-theorems
-  - ideals
-  - rings
+  - Isomorphism Theorems
+  - Ideals
+  - Rings
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Correspondence Theorem for Ideals"}
 For $I\in \Id(R)$, the canonical quotient map $\phi: R \to R/I$ induces a bijective correspondence:
 \[

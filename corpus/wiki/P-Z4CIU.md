@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove that all the roots of the complex polynomial
 $$f(z) = z^7 - 5 z^3 +12 =0$$ lie between the circles $|z|=1$ and $|z|=2$.

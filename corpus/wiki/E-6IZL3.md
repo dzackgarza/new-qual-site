@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-6IZL3
 kind: exercise
-title: "Bounded harmonic functions"
+title: Bounded harmonic functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - maximum-modulus-principle
+  - Harmonic Functions
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true

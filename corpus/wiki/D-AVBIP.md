@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-AVBIP
 kind: definition
-title: "Divisibility of Elements"
+title: Divisibility of Elements
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - rings
+  - Factorization
+  - Rings
 relations: []
 review: draft
 ---

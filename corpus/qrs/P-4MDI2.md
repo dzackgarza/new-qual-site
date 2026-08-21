@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-4MDI2
 kind: problem
-title: A degree-$6$ $S_3$-extension is a cubic splitting field, and Galois groups of joins and intersections
+title: A degree-$6$ $S_3$-extension is a cubic splitting field, and Galois groups
+  of joins and intersections
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - subgroups
+  - Galois Theory
+  - Field Extensions
+  - Subgroups
 relations: []
 review: draft
 solved: false

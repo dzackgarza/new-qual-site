@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-JIGMN
 kind: definition
-title: "Similar Matrices"
+title: Similar Matrices
 classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - canonical-forms
-  - jordan-canonical-form
+  - Matrices
+  - Canonical Forms
+  - Jordan Canonical Form
 relations: []
 review: draft
 ---

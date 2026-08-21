@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - stone-weierstrass
-  - density
-  - uniform-convergence
+  - Stone-Weierstrass
+  - Density
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true

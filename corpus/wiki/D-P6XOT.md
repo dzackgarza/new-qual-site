@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-P6XOT
 kind: definition
-title: "Chain in a poset"
+title: Chain in a poset
 classification:
   areas:
   - algebra
   topics:
-  - zorns-lemma
+  - Zorn's Lemma
 relations: []
 review: draft
 ---

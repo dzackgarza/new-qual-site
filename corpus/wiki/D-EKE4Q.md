@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-EKE4Q
 kind: definition
-title: "Normal subgroup"
+title: Normal subgroup
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - subgroups
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 ---

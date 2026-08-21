@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: D-5KDNB
 kind: definition
-title: "Alexander duality"
+title: Alexander duality
 classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - homology
-  - cohomology
-  - manifolds
+  - Poincaré Duality
+  - Homology
+  - Cohomology
+  - Manifolds
 relations: []
 review: draft
 ---

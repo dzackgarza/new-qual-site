@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 solved: false

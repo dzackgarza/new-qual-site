@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-ENWYG
 kind: exercise
-title: "Keyhole contour and ML estimate"
+title: Keyhole contour and ML estimate
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Keyhole contour and ML estimate"}
 Compute
 \[

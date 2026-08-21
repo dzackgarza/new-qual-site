@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - uniform-continuity
+  - Uniform Convergence
+  - Sequences of Functions
+  - Uniform Continuity
 relations: []
 review: draft
 solved: false

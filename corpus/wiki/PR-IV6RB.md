@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-IV6RB
 kind: proposition
-title: "JCF Algorithm for generalized eigenvectors"
+title: JCF Algorithm for generalized eigenvectors
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - eigenvalues-and-eigenvectors
-  - matrices
+  - Jordan Canonical Form
+  - Eigenvalues and Eigenvectors
+  - Matrices
 relations: []
 review: draft
 ---
+
 :::{.proposition title="JCF Algorithm for generalized eigenvectors"}
 The following algorithm always works for computing $\JCF(A)$:
 

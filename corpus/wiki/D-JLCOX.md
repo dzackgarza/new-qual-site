@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-JLCOX
 kind: definition
-title: "Radical of an Ideal"
+title: Radical of an Ideal
 classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - nilpotence
+  - Ideals
+  - Nilpotence
 relations: []
 review: draft
 ---
+
 :::{.definition title="Radical of an Ideal"}
 For an ideal $I\normal R$, the **radical** 
 \[

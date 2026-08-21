@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - determinants
-  - trace
+  - Matrix Groups
+  - Determinants
+  - Trace
 relations: []
 review: draft
 solved: false

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-4EVYE
 kind: proposition
-title: "The Cauchy condensation test"
+title: The Cauchy condensation test
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - convergence-tests
+  - Series of Numbers
+  - Convergence Tests
 relations: []
 review: draft
 ---
+
 :::{.proposition title="The Cauchy condensation test"}
 For $\ts{a_k}$ is a non-increasing sequence in $\RR$ then
 \[

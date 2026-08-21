@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-YQZI3
 kind: proposition
-title: "Meromorphic continuation of $\\Gamma$"
+title: Meromorphic continuation of $\Gamma$
 classification:
   areas:
   - complex-analysis
   topics:
-  - gamma-function
-  - meromorphic-functions
+  - Gamma Function
+  - Meromorphic Functions
 relations: []
 review: draft
 ---

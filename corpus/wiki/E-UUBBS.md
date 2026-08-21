@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-UUBBS
 kind: exercise
-title: "Lune between circles"
+title: Lune between circles
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Lune between circles"}
 
 Find a conformal map $L\to \DD$ where

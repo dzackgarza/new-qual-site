@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - canonical-forms
-  - smith-normal-form
+  - Matrices
+  - Canonical Forms
+  - Smith Normal Form
 relations: []
 review: draft
 solved: false

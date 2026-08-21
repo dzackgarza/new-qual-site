@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-ITVTT
 kind: exercise
-title: "Residue of $1/z^n+1$"
+title: Residue of $1/z^n+1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - poles
+  - Residues
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Residue of $1/z^n+1$"}
 Find the residue at $\omega_n \da e^{\pi i \over n}$ of
 \[

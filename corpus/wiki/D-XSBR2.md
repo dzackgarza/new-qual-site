@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-XSBR2
 kind: definition
-title: "Direct Product"
+title: Direct Product
 classification:
   areas:
   - topology
   topics:
-  - modules
-  - category-theory
+  - Modules
+  - Category Theory
 relations: []
 review: draft
 ---

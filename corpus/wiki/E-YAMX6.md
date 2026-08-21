@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-YAMX6
 kind: exercise
-title: "$x^\\alpha/(x+1)^2$"
+title: $x^\alpha/(x+1)^2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$x^\alpha/(x+1)^2$"}
 \[
 I \da \int_0^\infty {x^\alpha \over (x+1)^2}\dx && 0 < \alpha < 2

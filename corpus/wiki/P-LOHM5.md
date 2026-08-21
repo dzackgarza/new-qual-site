@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - sylow-theory
-  - semidirect-products
+  - p-Groups
+  - Sylow Theory
+  - Semidirect Products
 relations: []
 review: draft
 solved: false

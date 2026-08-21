@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-BJYH3
 kind: definition
-title: "Exact Sequences"
+title: Exact Sequences
 classification:
   areas:
   - algebra
   topics:
-  - exact-sequences
-  - homological-algebra
-  - modules
+  - Exact Sequences
+  - Homological Algebra
+  - Modules
 relations: []
 review: draft
 ---

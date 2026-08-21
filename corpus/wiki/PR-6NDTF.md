@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-6NDTF
 kind: proposition
-title: "Measurable Slices"
+title: Measurable Slices
 classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - measure-theory
+  - Fubini-Tonelli
+  - Measure Theory
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Measurable Slices"}
 Let $E$ be a measurable subset of $\RR^n$. Then
 

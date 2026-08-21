@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-MCG5C
 kind: problem
-title: Compactness and Euler characteristic of covering spaces, and coverings of even-dimensional $\RP^N$
+title: Compactness and Euler characteristic of covering spaces, and coverings of even-dimensional
+  $\RP^N$
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - euler-characteristic
-  - cell-complexes
-  - compactness
+  - Covering Spaces
+  - Euler Characteristic
+  - Cell Complexes
+  - Compactness
 relations: []
 review: draft
 solved: false

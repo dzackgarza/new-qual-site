@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - eigenvalues-and-eigenvectors
-  - inner-product-spaces
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

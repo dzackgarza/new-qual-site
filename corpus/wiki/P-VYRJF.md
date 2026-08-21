@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - integrals
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 Compute the following limit and justify your calculations:
 \[
 \lim_{n\to\infty} \int_0^n \qty{1 + {x^2 \over n}}^{-(n+1)} \,dx

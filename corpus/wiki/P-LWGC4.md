@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-LWGC4
 kind: problem
-title: Fixed points of $\id_{\RP^2}\vee\ast$ and $\ast\vee\id_{S^1}$ on $\RP^2\vee S^1$
+title: Fixed points of $\id_{\RP^2}\vee\ast$ and $\ast\vee\id_{S^1}$ on $\RP^2\vee
+  S^1$
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - homotopy
+  - Fixed Points
+  - Homotopy
 relations: []
 review: draft
 solved: false

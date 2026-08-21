@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-25GM2
 kind: proposition
-title: "Compact if and only if sequentially compact for metric spaces"
+title: Compact if and only if sequentially compact for metric spaces
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - metric-spaces
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 ---

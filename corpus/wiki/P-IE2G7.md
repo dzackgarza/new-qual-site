@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - point-set
+  - Connectedness
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-QQIQZ
 kind: definition
-title: "Units"
+title: Units
 classification:
   areas:
   - algebra
   topics:
-  - rings
+  - Rings
 relations: []
 review: draft
 ---

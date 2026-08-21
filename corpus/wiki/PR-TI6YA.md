@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-TI6YA
 kind: proposition
-title: "Rational Canonical Form"
+title: Rational Canonical Form
 classification:
   areas:
   - algebra
   topics:
-  - rational-canonical-form
-  - structure-theorem
-  - matrices
+  - Rational Canonical Form
+  - Structure Theorem
+  - Matrices
 relations: []
 review: draft
 ---

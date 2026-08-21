@@ -2,20 +2,21 @@
 schema: qual/card@1
 id: E-XPMW5
 kind: exercise
-title: "Classifying singularities"
+title: Classifying singularities
 classification:
   areas:
   - complex-analysis
   topics:
-  - singularities
-  - laurent-series
-  - removable-singularities
-  - essential-singularities
-  - poles
+  - Singularities
+  - Laurent Series
+  - Removable Singularities
+  - Essential Singularities
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Classifying singularities"}
 Classify the singularities at $z=0$ of the following
 \[

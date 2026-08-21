@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - geometry
-  - galois-theory
+  - Field Extensions
+  - Geometry
+  - Galois Theory
 relations: []
 review: draft
 solved: false

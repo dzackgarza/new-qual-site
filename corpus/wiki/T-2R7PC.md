@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-2R7PC
 kind: theorem
-title: "Lagrange and Cauchy Remainders"
+title: Lagrange and Cauchy Remainders
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - series-of-functions
+  - Differentiation
+  - Series of Functions
 relations: []
 review: draft
 ---

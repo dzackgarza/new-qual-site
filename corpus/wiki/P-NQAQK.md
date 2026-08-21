@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-NQAQK
 kind: problem
-title: $F[x]$-modules of linear operators, similarity, and simplicity in dimension $2$
+title: $F[x]$-modules of linear operators, similarity, and simplicity in dimension
+  $2$
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
-  - linear-algebra
+  - Modules
+  - Semisimplicity
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

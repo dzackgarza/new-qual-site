@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-4HEUB
 kind: definition
-title: "Indecomposable modules"
+title: Indecomposable modules
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
+  - Modules
+  - Semisimplicity
 relations: []
 review: draft
 ---

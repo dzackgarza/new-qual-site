@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-WUZSG
 kind: proposition
-title: "Testing Uniform Convergence: The Sup Norm Test"
+title: 'Testing Uniform Convergence: The Sup Norm Test'
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - norms
+  - Uniform Convergence
+  - Norms
 relations: []
 review: draft
 ---

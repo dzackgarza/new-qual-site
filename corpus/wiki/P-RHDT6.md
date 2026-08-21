@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-RHDT6
 kind: problem
-title: A summable family of positive terms has countable index set; $f(x)=\sum_{q\le x}a(q)$ is continuous precisely at irrationals
+title: A summable family of positive terms has countable index set; $f(x)=\sum_{q\le
+  x}a(q)$ is continuous precisely at irrationals
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - continuity
+  - Series of Numbers
+  - Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 Let $I$ be an index set and $\alpha: I \to (0, \infty)$.
 
 a.

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-KSSA7
 kind: problem
-title: "The Galois group of $x^n - 2$ over $\\QQ$"
+title: The Galois group of $x^n - 2$ over $\QQ$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - roots-of-unity
+  - Galois Theory
+  - Splitting Fields
+  - Roots of Unity
 relations: []
 review: draft
 solved: false

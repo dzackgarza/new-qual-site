@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - cauchy-riemann
-  - contour-integration
+  - Harmonic Functions
+  - Cauchy-Riemann
+  - Contour Integration
 relations: []
 review: draft
 solved: true

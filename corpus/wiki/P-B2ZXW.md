@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l1
-  - small-tails
-  - norms
+  - L¹
+  - Small Tails
+  - Norms
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f, g$ be Lebesgue integrable on $\RR$ and let $g_n(x) \da g(x- n)$.
 Prove that
 \[

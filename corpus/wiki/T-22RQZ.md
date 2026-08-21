@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-22RQZ
 kind: theorem
-title: "Cauchy's Inequality / Cauchy's Estimate"
+title: Cauchy's Inequality / Cauchy's Estimate
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - cauchy-integral-formula
+  - Cauchy Estimates
+  - Cauchy Integral Formula
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Cauchy's Inequality / Cauchy's Estimate" ref="CauchyInequality"}
 For $z_0 \in D_R(z_0) \subset \Omega$, setting $M \da \sup_{z\in \gamma}\abs{f(z)}$ so $\abs{f(z)}\leq M$ on $\gamma$
 \[

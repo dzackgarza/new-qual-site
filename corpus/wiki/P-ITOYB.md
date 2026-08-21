@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - torsion
-  - fields
+  - Modules
+  - Torsion
+  - Fields
 relations: []
 review: draft
 solved: false

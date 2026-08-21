@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - abelian-groups
-  - free-modules
+  - Structure Theorem
+  - Abelian Groups
+  - Free Modules
 relations: []
 review: draft
 solved: false

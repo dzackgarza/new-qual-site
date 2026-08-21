@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - bernoulli
-  - sequences-of-numbers
-  - limits
+  - Bernoulli
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 solved: true

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-4INET
 kind: theorem
-title: "Characterization of Nilpotent Groups"
+title: Characterization of Nilpotent Groups
 classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - subgroup-series
+  - Nilpotent Groups
+  - Subgroup Series
 relations: []
 review: draft
 ---

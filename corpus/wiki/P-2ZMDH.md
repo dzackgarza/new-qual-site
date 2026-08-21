@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - residues
-  - zeros
-  - power-series
+  - Rouché
+  - Residues
+  - Zeros
+  - Power Series
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-BF5L2
 kind: definition
-title: "$L^+$: Measurable non-negative functions."
+title: '$L^+$: Measurable non-negative functions.'
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

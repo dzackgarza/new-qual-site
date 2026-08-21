@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-WB4M5
 kind: definition
-title: "Separable degree"
+title: Separable degree
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
+  - Separability
+  - Field Extensions
 relations: []
 review: draft
 ---

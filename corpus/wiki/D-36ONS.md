@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-36ONS
 kind: definition
-title: "Chain Map"
+title: Chain Map
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
+  - Homological Algebra
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-K3QJY
 kind: problem
-title: "Using the LES in Homotopy"
+title: Using the LES in Homotopy
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - homology
+  - Homotopy
+  - Homology
 relations: []
 review: draft
 solved: true

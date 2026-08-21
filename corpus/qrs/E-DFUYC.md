@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - direct-products
-  - normal-subgroups
+  - Direct Products
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

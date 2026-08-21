@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - cyclic-groups
+  - Galois Theory
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

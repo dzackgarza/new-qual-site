@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-WL7TG
 kind: problem
-title: If $b$ and $x$ are units, a $2\times 2$ product over a commutative ring that vanishes off the bottom-right corner is zero
+title: If $b$ and $x$ are units, a $2\times 2$ product over a commutative ring that
+  vanishes off the bottom-right corner is zero
 classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - rings
-  - determinants
+  - Matrices
+  - Rings
+  - Determinants
 relations: []
 review: draft
 solved: true
 ---
+
 Let 
 \[
 M=\left(\begin{array}{ll}{a} & {b} \\ {c} & {d}\end{array}\right)

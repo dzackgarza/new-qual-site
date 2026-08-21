@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-BYIZA
 kind: definition
-title: "Ext Group"
+title: Ext Group
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - cohomology
+  - Homological Algebra
+  - Cohomology
 relations: []
 review: draft
 ---

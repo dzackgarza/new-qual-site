@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

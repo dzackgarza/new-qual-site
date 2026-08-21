@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-L5UH3
 kind: proposition
-title: "Right half-plane to Disc"
+title: Right half-plane to Disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Right half-plane to Disc"}
 \[
 \HH_{R} &\mapstofrom \DD \\

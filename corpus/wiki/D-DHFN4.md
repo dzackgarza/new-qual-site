@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-DHFN4
 kind: definition
-title: "Measurable Function"
+title: Measurable Function
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

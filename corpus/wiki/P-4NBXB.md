@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-4NBXB
 kind: problem
-title: "Find the number of zeros in $\\abs{z} \\in (1, 2)$ of"
+title: Find the number of zeros in $\abs{z} \in (1, 2)$ of
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Find the number of zeros in $\abs{z} \in (1, 2)$ of
 \[

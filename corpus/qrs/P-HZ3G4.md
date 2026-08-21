@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - convergence-tests
-  - series-of-functions
-  - trigonometry
+  - Uniform Convergence
+  - Convergence Tests
+  - Series of Functions
+  - Trigonometry
 relations: []
 review: draft
 solved: false

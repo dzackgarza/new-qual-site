@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - surfaces
+  - Fundamental Group
+  - Surfaces
 relations: []
 review: draft
 solved: false

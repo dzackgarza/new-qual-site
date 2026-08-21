@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-XA3WA
 kind: problem
-title: "Find the number of roots on $\\abs{z} \\leq 1$ of"
+title: Find the number of roots on $\abs{z} \leq 1$ of
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find the number of roots on $\abs{z} \leq 1$ of
 \[

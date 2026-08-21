@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - surfaces
-  - classification
+  - Homotopy
+  - Surfaces
+  - Classification
 relations: []
 review: draft
 solved: false

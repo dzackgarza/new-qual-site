@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-TAPVD
 kind: problem
-title: Directional derivatives exist and equal $\nabla f\cdot\mathbf{u}$ when the first partials are continuous
+title: Directional derivatives exist and equal $\nabla f\cdot\mathbf{u}$ when the
+  first partials are continuous
 classification:
   areas:
   - prelim
   topics:
-  - multivariable-calculus
-  - differentiation
+  - Multivariable Calculus
+  - Differentiation
 relations: []
 review: draft
 solved: true

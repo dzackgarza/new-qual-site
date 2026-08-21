@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-AIQG3
 kind: definition
-title: "Locally uniform convergence"
+title: Locally uniform convergence
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
+  - Uniform Convergence
+  - Sequences of Functions
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - convolution
-  - number-theory
+  - Rings
+  - Convolution
+  - Number Theory
 relations: []
 review: draft
 solved: false

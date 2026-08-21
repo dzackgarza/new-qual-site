@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - cauchy-estimates
-  - polynomials
-  - liouville-s-theorem
+  - Entire Functions
+  - Cauchy Estimates
+  - Polynomials
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f(z)$ be entire and assume that $f(z) \leq M |z|^2$ outside some
 disk for some constant $M$. Show that $f(z)$ is a polynomial in $z$ of degree $\leq 2$.

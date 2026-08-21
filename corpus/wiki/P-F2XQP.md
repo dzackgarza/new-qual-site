@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - functional-analysis
-  - diagonalization
+  - Functional Analysis
+  - Diagonalization
 relations: []
 review: draft
 solved: false

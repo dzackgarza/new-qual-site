@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-BEIHP
 kind: exercise
-title: "$1/1+\\sin^2$"
+title: $1/1+\sin^2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/1+\sin^2$"}
 \[
 \int_{[-\pi, \pi]} {1\over 1 + \sin^2(\theta)} \dtheta

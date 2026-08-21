@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-DDDXH
 kind: proposition
-title: "Fields are simple"
+title: Fields are simple
 classification:
   areas:
   - algebra
   topics:
-  - fields
-  - ideals
-  - rings
+  - Fields
+  - Ideals
+  - Rings
 relations: []
 review: draft
 ---

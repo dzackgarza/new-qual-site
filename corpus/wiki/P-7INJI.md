@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - group-rings
-  - cyclic-groups
+  - Representation Theory
+  - Group Rings
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - geometry
-  - permutations
+  - Group Actions
+  - Geometry
+  - Permutations
 relations: []
 review: draft
 solved: false

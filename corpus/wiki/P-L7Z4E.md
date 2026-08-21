@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - cohomology
-  - manifolds
+  - Poincaré Duality
+  - Cohomology
+  - Manifolds
 relations: []
 review: draft
 solved: true

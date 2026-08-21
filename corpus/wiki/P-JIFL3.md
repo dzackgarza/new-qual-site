@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - mayer-vietoris
-  - quotient-spaces
+  - Homology
+  - Mayer-Vietoris
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

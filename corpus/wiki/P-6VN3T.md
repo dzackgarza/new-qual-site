@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - blaschke-factors
-  - entire-functions
-  - zeros
+  - Maximum Modulus Principle
+  - Blaschke Factors
+  - Entire Functions
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Assume $f$ is an entire function such that $|f(z)|=1$ on $|z|=1$. Prove that $f(z)=e^{i \theta} z^{n}$, where $\theta$ is a real number and $n$ a non-negative integer. 
 

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-QYDVH
 kind: theorem
-title: "Orbit-Stabilizer"
+title: Orbit-Stabilizer
 classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - group-actions
+  - Orbit-Stabilizer
+  - Group Actions
 relations: []
 review: draft
 ---

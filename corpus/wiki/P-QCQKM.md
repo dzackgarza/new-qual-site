@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-QCQKM
 kind: problem
-title: "Hungerford 5.8.3"
+title: Hungerford 5.8.3
 classification:
   areas:
   - algebra
   topics:
-  - number-theory
-  - roots-of-unity
+  - Number Theory
+  - Roots of Unity
 relations: []
 review: draft
 solved: false

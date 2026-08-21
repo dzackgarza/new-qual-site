@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-A2LBX
 kind: exercise
-title: "$f: D\\rightarrow {\\mathbb C}$ be a continuous function, where"
+title: '$f: D\rightarrow {\mathbb C}$ be a continuous function, where'
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: false

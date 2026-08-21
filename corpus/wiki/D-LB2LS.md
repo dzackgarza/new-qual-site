@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-LB2LS
 kind: definition
-title: "The subspace topology"
+title: The subspace topology
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - subspace-topology
+  - Point-Set Topology
+  - Subspace Topology
 relations: []
 review: draft
 ---
+
 :::{.definition title="The subspace topology"}
 For $(X, \tau)$ a topological space and $U \subseteq X$ an arbitrary subset, the space $(U, \tau_U)$ is a topological space with a **subspace topology** defined by
 \[

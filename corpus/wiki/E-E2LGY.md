@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: E-E2LGY
 kind: exercise
-title: Pointwise limits of entire functions, uniform on segments, are entire and compactly convergent
+title: Pointwise limits of entire functions, uniform on segments, are entire and compactly
+  convergent
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - uniform-convergence
-  - sequences-of-functions
-  - morera
+  - Entire Functions
+  - Uniform Convergence
+  - Sequences of Functions
+  - Morera
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $\theset{f_n}_{n\in \NN}$ is a sequence of entire functions where
 

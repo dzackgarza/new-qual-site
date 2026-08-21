@@ -7,13 +7,14 @@ classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - surfaces
-  - fundamental-group
+  - Covering Spaces
+  - Surfaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: true
 ---
+
 Describe all possible covering maps between $S^2, T^2, K$
 
 :::{.solution}

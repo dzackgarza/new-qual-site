@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-QSTRJ
 kind: theorem
-title: "Krull"
+title: Krull
 classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
-  - zorns-lemma
+  - Maximal Ideals
+  - Ideals
+  - Zorn's Lemma
 relations: []
 review: draft
 ---

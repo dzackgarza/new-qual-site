@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homology
-  - cell-complexes
+  - Fundamental Group
+  - Homology
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

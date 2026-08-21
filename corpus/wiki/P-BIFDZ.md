@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - counterexamples
-  - classification
+  - Automorphisms
+  - Counterexamples
+  - Classification
 relations: []
 review: draft
 solved: false

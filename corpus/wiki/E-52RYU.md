@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - field-extensions
-  - irreducibility-criteria
+  - Splitting Fields
+  - Field Extensions
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

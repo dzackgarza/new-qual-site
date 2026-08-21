@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-WHYOA
 kind: definition
-title: "The logarithmic derivative"
+title: The logarithmic derivative
 classification:
   areas:
   - complex-analysis
   topics:
-  - argument-principle
-  - poles
-  - zeros
+  - Argument Principle
+  - Poles
+  - Zeros
 relations: []
 review: draft
 ---
+
 :::{.definition title="The logarithmic derivative"}
 The **logarithmic derivative** is defined as 
 \[

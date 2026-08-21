@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-JDDCP
 kind: definition
-title: "Free Product"
+title: Free Product
 classification:
   areas:
   - topology
   topics:
-  - groups
-  - van-kampen
+  - Groups
+  - van Kampen
 relations: []
 review: draft
 ---

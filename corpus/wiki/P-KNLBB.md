@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-continuity
-  - counterexamples
+  - Uniform Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 > Tie, Fall 2009
 
 :::{.problem title="?"}

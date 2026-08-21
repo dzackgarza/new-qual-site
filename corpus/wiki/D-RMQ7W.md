@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-RMQ7W
 kind: definition
-title: "Mapping Cylinder"
+title: Mapping Cylinder
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - retracts
-  - cell-complexes
+  - Homotopy
+  - Retracts
+  - Cell Complexes
 relations: []
 review: draft
 ---

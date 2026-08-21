@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-4F5TF
 kind: exercise
-title: "Integral computation"
+title: Integral computation
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - contour-integration
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Integral computation"}
 Compute
 \[

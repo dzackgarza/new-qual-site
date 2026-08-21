@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - cyclic-groups
-  - torsion
+  - Modules
+  - Cyclic Groups
+  - Torsion
 relations: []
 review: draft
 solved: false

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: C-XRC67
 kind: corollary
-title: "\\# G = \\#(G/H) \\#H \\da [G:H] \\, \\# H"
+title: \# G = \#(G/H) \#H \da [G:H] \, \# H
 classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - subgroups
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 ---
+
 :::{.corollary title="?"}
 \[
 \# G = \#(G/H) \#H \da [G:H] \, \# H

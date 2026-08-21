@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-V6UJ7
 kind: definition
-title: "Group Presentation"
+title: Group Presentation
 classification:
   areas:
   - algebra
   topics:
-  - group-presentations
-  - free-groups
-  - normal-subgroups
+  - Group Presentations
+  - Free Groups
+  - Normal Subgroups
 relations: []
 review: draft
 ---

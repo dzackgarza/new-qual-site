@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-IZ2VD
 kind: problem
-title: Irreducibles of degree $d$ over $\FF_p$ divide $x^{p^d}-x$, and divide $x^{p^n}-x$ only if $d$ divides $n$
+title: Irreducibles of degree $d$ over $\FF_p$ divide $x^{p^d}-x$, and divide $x^{p^n}-x$
+  only if $d$ divides $n$
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - irreducibility-criteria
-  - field-extensions
+  - Finite Fields
+  - Irreducibility Criteria
+  - Field Extensions
 relations: []
 review: draft
 solved: true
 ---
+
 Let $F = \FF_p$ , where $p$ is a prime number.
 
 a.

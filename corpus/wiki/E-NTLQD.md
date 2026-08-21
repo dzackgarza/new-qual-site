@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - product-topology
+  - Compactness
+  - Product Topology
 relations: []
 review: draft
 solved: false

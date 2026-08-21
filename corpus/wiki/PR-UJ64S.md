@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-UJ64S
 kind: proposition
-title: "Small Tails for Series of Functions"
+title: Small Tails for Series of Functions
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - small-tails
-  - uniform-convergence
+  - Series of Functions
+  - Small Tails
+  - Uniform Convergence
 relations: []
 review: draft
 ---

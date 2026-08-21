@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-AITX4
 kind: problem
-title: "If $f:[0,1]\\to\\mathbb{R}$ is"
+title: If $f:[0,1]\to\mathbb{R}$ is
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - continuity
+  - Convergence of Integrals
+  - Continuity
 relations: []
 review: draft
 solved: true

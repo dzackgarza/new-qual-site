@@ -7,12 +7,13 @@ classification:
   areas:
   - topology
   topics:
-  - hausdorff-spaces
-  - product-topology
+  - Hausdorff Spaces
+  - Product Topology
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $X$ be a topological space and let
 $$

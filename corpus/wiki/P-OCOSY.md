@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-OCOSY
 kind: problem
-title: "Invert $\\cos(z)$, one coefficient at a tiem"
+title: Invert $\cos(z)$, one coefficient at a tiem
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - trigonometry
-  - laurent-series
+  - Power Series
+  - Trigonometry
+  - Laurent Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Invert $\cos(z)$, one coefficient at a tiem"}
 Find $1/\cos(z)$ using this method.
 :::

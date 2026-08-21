@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-VI6QM
 kind: problem
-title: 'Groups of order $105$: normal Sylow $5$- and $7$-subgroups, a cyclic subgroup of order $35$, and cyclicity when the Sylow $3$-subgroup is normal'
+title: 'Groups of order $105$: normal Sylow $5$- and $7$-subgroups, a cyclic subgroup
+  of order $35$, and cyclicity when the Sylow $3$-subgroup is normal'
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - cyclic-groups
+  - Sylow Theory
+  - Normal Subgroups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: true
 ---
+
 Let $G$ be a group of order 105 and let $P, Q, R$ be Sylow 3, 5, 7 subgroups respectively.
 
 a.

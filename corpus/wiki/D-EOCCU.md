@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-EOCCU
 kind: definition
-title: "Prime Subfield"
+title: Prime Subfield
 classification:
   areas:
   - algebra
   topics:
-  - fields
-  - field-extensions
+  - Fields
+  - Field Extensions
 relations: []
 review: draft
 ---

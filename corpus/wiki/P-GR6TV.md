@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-GR6TV
 kind: problem
-title: "Find an example of a metric space $X$ and a subset $E \\subseteq X$"
+title: Find an example of a metric space $X$ and a subset $E \subseteq X$
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - metric-spaces
-  - counterexamples
+  - Compactness
+  - Metric Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: true

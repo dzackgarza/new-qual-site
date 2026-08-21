@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MQ2YD
 kind: problem
-title: Matrices satisfying a given polynomial over algebraically closed and finite fields
+title: Matrices satisfying a given polynomial over algebraically closed and finite
+  fields
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - matrices
-  - finite-fields
+  - Minimal and Characteristic Polynomials
+  - Matrices
+  - Finite Fields
 relations: []
 review: draft
 solved: false

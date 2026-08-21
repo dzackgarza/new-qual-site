@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-HL4KE
 kind: definition
-title: "Univalent functions"
+title: Univalent functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
+  - Conformal Maps
+  - Biholomorphisms
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fatou
-  - convergence-of-integrals
-  - l1
+  - Fatou
+  - Convergence of Integrals
+  - L¹
 relations: []
 review: draft
 solved: true

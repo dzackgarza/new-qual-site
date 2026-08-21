@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-LA2UI
 kind: theorem
-title: "Cauchy Integral Formula"
+title: Cauchy Integral Formula
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - power-series
-  - contour-integration
+  - Cauchy Integral Formula
+  - Power Series
+  - Contour Integration
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Cauchy Integral Formula" ref="CauchyIntegral"}
 Suppose $f$ is holomorphic on $\Omega$, then for any $z_0 \in \Omega$ and any open disc $\closure{D_R(z_0)}$ such that $\gamma \da \bd \closure{D_R(z_0)} \subseteq \Omega$,
 \[

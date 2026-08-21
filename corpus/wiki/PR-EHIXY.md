@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: PR-EHIXY
 kind: proposition
-title: $\sum\|f_k\|_1<\infty$ implies $\sum f_k$ converges almost everywhere and in $L^1$
+title: $\sum\|f_k\|_1<\infty$ implies $\sum f_k$ converges almost everywhere and in
+  $L^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - l1
+  - Series of Functions
+  - L¹
 relations: []
 review: draft
 ---

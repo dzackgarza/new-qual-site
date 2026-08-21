@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-W26VL
 kind: theorem
-title: "Structure theorem: automorphisms of the disc"
+title: 'Structure theorem: automorphisms of the disc'
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - blaschke-factors
+  - Biholomorphisms
+  - Blaschke Factors
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Structure theorem: automorphisms of the disc"}
 Every map $g\in \Aut(\DD)$ is of the form 
 

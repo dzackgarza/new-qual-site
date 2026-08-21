@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-LHZGV
 kind: problem
-title: "Log properties can fail"
+title: Log properties can fail
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
-  - counterexamples
+  - Complex Logarithm
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Log properties can fail"}
 Show that
 

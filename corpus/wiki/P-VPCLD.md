@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - diagonalization
-  - eigenvalues-and-eigenvectors
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 solved: false

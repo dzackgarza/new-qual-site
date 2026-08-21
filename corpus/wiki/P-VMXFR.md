@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-VMXFR
 kind: problem
-title: "Hungerford 1.6.4"
+title: Hungerford 1.6.4
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - group-presentations
+  - Permutations
+  - Group Presentations
 relations: []
 review: draft
 solved: false

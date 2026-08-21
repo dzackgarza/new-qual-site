@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-TZJKN
 kind: exercise
-title: "Holomorphic functions have harmonic components"
+title: Holomorphic functions have harmonic components
 classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - cauchy-riemann
-  - holomorphic-functions
+  - Harmonic Functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Holomorphic functions have harmonic components"}
 Show that if $f = u+iv$ is holomorphic then $u, v$ are harmonic.
 :::

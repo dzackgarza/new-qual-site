@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-ZQGR5
 kind: exercise
-title: "Radius of convergence"
+title: Radius of convergence
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - convergence-tests
+  - Power Series
+  - Convergence Tests
 relations: []
 review: draft
 solved: true

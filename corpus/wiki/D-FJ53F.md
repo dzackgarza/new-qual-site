@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-FJ53F
 kind: definition
-title: "Irreducible Ideal"
+title: Irreducible Ideal
 classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - primary-decomposition
+  - Ideals
+  - Primary Decomposition
 relations: []
 review: draft
 ---

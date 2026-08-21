@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-2KGOX
 kind: theorem
-title: "Classification of Conformal Maps"
+title: Classification of Conformal Maps
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Classification of Conformal Maps"}
 There are 8 major types of conformal maps:
 

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-GRXN4
 kind: exercise
-title: "True/false"
+title: True/false
 classification:
   areas:
   - complex-analysis
   topics:
-  - poles
-  - essential-singularities
-  - laurent-series
-  - counterexamples
+  - Poles
+  - Essential Singularities
+  - Laurent Series
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="True/false"}
 Prove that the following statements or true, or find a counterexample:
 

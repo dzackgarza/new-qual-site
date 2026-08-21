@@ -2,16 +2,18 @@
 schema: qual/card@1
 id: P-UCPPT
 kind: problem
-title: $m^*(E)=0$ iff $m^*(f(E))=0$ for $f(x)=x^2$ on $[0,\infty)$, and $E\mapsto f(E)$ bijects Lebesgue sets of $\RR^+$
+title: $m^*(E)=0$ iff $m^*(f(E))=0$ for $f(x)=x^2$ on $[0,\infty)$, and $E\mapsto
+  f(E)$ bijects Lebesgue sets of $\RR^+$
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f(x) = x^2$ and $E \subset [0, \infty) \definedas \RR^+$.
 
 1. Show that

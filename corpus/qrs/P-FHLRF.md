@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - product-topology
+  - Fundamental Group
+  - van Kampen
+  - Product Topology
 relations: []
 review: draft
 solved: false

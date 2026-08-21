@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - van-kampen
-  - fundamental-group
+  - van Kampen
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

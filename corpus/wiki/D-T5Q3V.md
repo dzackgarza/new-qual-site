@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-T5Q3V
 kind: definition
-title: "Loop Space"
+title: Loop Space
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - function-spaces
-  - fundamental-group
+  - Homotopy
+  - Function Spaces
+  - Fundamental Group
 relations: []
 review: draft
 ---

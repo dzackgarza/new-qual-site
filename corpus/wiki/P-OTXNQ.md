@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - point-set
-  - closure
+  - Point-Set Topology
+  - Closure
 relations: []
 review: draft
 solved: false

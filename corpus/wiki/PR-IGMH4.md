@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-IGMH4
 kind: proposition
-title: "Riemann-Lebesgue: Fourier transforms have small tails."
+title: 'Riemann-Lebesgue: Fourier transforms have small tails.'
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - l1
-  - small-tails
+  - Fourier Analysis
+  - L¹
+  - Small Tails
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Riemann-Lebesgue: Fourier transforms have small tails."}
 \[
 f\in L^1 \implies

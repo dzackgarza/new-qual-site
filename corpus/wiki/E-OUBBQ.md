@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-OUBBQ
 kind: exercise
-title: "Uniform continuity of $x^n$"
+title: Uniform continuity of $x^n$
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-continuity
-  - continuity
+  - Uniform Continuity
+  - Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Uniform continuity of $x^n$"}
 Show that $f(x) = x^n$ is uniformly continuous on any interval $[-M, M]$.
 

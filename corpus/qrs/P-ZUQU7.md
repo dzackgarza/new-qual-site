@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-ZUQU7
 kind: problem
-title: Injective conformal maps of $\{\operatorname{Re} z>0,\ |z-1|>1\}$ onto the disc
+title: Injective conformal maps of $\{\operatorname{Re} z>0,\ |z-1|>1\}$ onto the
+  disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
-  - fractional-linear-transformations
-  - blaschke-factors
+  - Conformal Maps
+  - Biholomorphisms
+  - Fractional Linear Transformations
+  - Blaschke Factors
 relations: []
 review: draft
 solved: false

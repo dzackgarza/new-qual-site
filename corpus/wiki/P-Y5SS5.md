@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-Y5SS5
 kind: problem
-title: A nowhere-vanishing holomorphic function on a simply connected domain is of the form $e^g$
+title: A nowhere-vanishing holomorphic function on a simply connected domain is of
+  the form $e^g$
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
-  - holomorphic-functions
+  - Complex Logarithm
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

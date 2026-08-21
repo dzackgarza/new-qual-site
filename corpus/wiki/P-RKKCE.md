@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - hyperbolic-functions
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Hyperbolic Functions
 relations: []
 review: draft
 solved: false

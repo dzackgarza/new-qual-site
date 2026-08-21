@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-QHFCK
 kind: proposition
-title: "Zeros of $\\zeta$"
+title: Zeros of $\zeta$
 classification:
   areas:
   - complex-analysis
   topics:
-  - riemann-zeta
-  - zeros
+  - Riemann Zeta
+  - Zeros
 relations: []
 review: draft
 ---

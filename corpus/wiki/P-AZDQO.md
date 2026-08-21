@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-AZDQO
 kind: problem
-title: No simple group of order $pq^k$ with $k$ the order of $q$ in $(\ZZ/p\ZZ)^\times$, nor of order $pq$
+title: No simple group of order $pq^k$ with $k$ the order of $q$ in $(\ZZ/p\ZZ)^\times$,
+  nor of order $pq$
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - simple-groups
-  - cyclic-groups
+  - Sylow Theory
+  - Simple Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-KUNLD
 kind: problem
-title: "Tangent from polynomial long division"
+title: Tangent from polynomial long division
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - power-series
-  - trigonometry
+  - Laurent Series
+  - Power Series
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Tangent from polynomial long division"}
 Find a Laurent expansion about $z_0=0$ for $f(z) = \tan(z)$ by using polynomial long division on the series expansions for $\sin(z)$ and $\cos(z)$.
 :::

@@ -7,13 +7,14 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - closure
-  - subspace-topology
+  - Connectedness
+  - Closure
+  - Subspace Topology
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 If $X$ is a topological space and $S \subset X$, define in terms of
 open subsets of $X$ what it means for $S$ **not** to be connected. 

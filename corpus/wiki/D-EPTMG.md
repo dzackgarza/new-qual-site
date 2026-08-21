@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-EPTMG
 kind: definition
-title: "Regular"
+title: Regular
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - point-set
+  - Separation Axioms
+  - Point-Set Topology
 relations: []
 review: draft
 ---

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-KGGWK
 kind: definition
-title: "Transitive Group Action"
+title: Transitive Group Action
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
+  - Group Actions
 relations: []
 review: draft
 ---

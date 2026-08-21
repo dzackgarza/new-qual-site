@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QJ7MD
 kind: problem
-title: A subgroup of index $2$ is normal; the same for index the smallest prime dividing $|G|$
+title: A subgroup of index $2$ is normal; the same for index the smallest prime dividing
+  $|G|$
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - cosets-and-lagrange
-  - subgroups
+  - Normal Subgroups
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 solved: false

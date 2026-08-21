@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-3GIQS
 kind: exercise
-title: "Map $\\DD^c \\intersect \\HH$ to $\\HH$, sending"
+title: Map $\DD^c \intersect \HH$ to $\HH$, sending
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Map $\DD^c \intersect \HH$ to $\HH$, sending 
 

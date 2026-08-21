@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - valuation-rings
-  - number-theory
-  - local-rings
+  - Valuation Rings
+  - Number Theory
+  - Local Rings
 relations: []
 review: draft
 solved: false

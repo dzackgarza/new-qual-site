@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: E-SHKZX
 kind: exercise
-title: If poles accumulate at $a$, then every $w\in\mathbb{C}$ is a sequential limit of $f$, versus Casorati–Weierstrass
+title: If poles accumulate at $a$, then every $w\in\mathbb{C}$ is a sequential limit
+  of $f$, versus Casorati–Weierstrass
 classification:
   areas:
   - complex-analysis
   topics:
-  - casorati-weierstrass
-  - poles
-  - singularities
-  - identity-theorem
+  - Casorati-Weierstrass
+  - Poles
+  - Singularities
+  - Identity Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 1.
 Let $f$ be analytic in $\Omega: 0<|z-a|<r$ except at a

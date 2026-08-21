@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HJPF5
 kind: problem
-title: Linear actions of $\ZZ/5\ZZ$, $S_3$, and dihedral groups on complex vector spaces
+title: Linear actions of $\ZZ/5\ZZ$, $S_3$, and dihedral groups on complex vector
+  spaces
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - cyclic-groups
-  - diagonalization
+  - Representation Theory
+  - Cyclic Groups
+  - Diagonalization
 relations: []
 review: draft
 solved: false

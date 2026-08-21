@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-2CZUM
 kind: proposition
-title: "Commuting derivatives with integrals, Folland 2.27"
+title: Commuting derivatives with integrals, Folland 2.27
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - convergence-of-integrals
-  - integrals
+  - Differentiation
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Commuting derivatives with integrals, Folland 2.27"}
 If $f:X\cross I \to \CC$ where $f_t: X\to \CC$ is integrable for each $t$, then if $\abs{f(x, t)} \leq \abs{g(x)}$ for some $g\in L^1$, then
 \[

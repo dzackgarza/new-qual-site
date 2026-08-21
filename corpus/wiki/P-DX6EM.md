@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - variation
+  - Variation
 relations: []
 review: draft
 solved: true

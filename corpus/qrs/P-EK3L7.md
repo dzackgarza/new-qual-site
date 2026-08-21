@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - power-series
-  - series-of-functions
+  - Convergence Tests
+  - Power Series
+  - Series of Functions
 relations: []
 review: draft
 solved: false

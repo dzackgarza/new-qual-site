@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-73UFB
 kind: problem
-title: Unique fractional linear transformation sending a circle $C$ to $C'$ with $f(z_1)=z'_1$ and $f(z_2)=z'_2$
+title: Unique fractional linear transformation sending a circle $C$ to $C'$ with $f(z_1)=z'_1$
+  and $f(z_2)=z'_2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
+  - Fractional Linear Transformations
+  - Conformal Maps
 relations: []
 review: draft
 solved: false

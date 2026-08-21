@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZVXTG
 kind: problem
-title: Equality of the number of conjugacy classes and the number of irreducible representations of a finite group
+title: Equality of the number of conjugacy classes and the number of irreducible representations
+  of a finite group
 classification:
   areas:
   - algebra
   topics:
-  - character-theory
-  - conjugacy
-  - representation-theory
+  - Character Theory
+  - Conjugacy
+  - Representation Theory
 relations: []
 review: draft
 solved: false

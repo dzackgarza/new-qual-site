@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-G55QF
 kind: exercise
-title: "$\\mathbb{D}^c \\intersect \\mathbb{H}$ to $\\mathbb{H}$"
+title: $\mathbb{D}^c \intersect \mathbb{H}$ to $\mathbb{H}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$\mathbb{D}^c \intersect \mathbb{H}$ to $\mathbb{H}$"}
 Find a conformal map from $\DD^c \intersect \HH$ to $\HH$ using cross-ratios.
 

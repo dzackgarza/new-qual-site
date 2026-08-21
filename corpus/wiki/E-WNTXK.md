@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - conformal-maps
-  - fractional-linear-transformations
+  - Liouville's Theorem
+  - Entire Functions
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true

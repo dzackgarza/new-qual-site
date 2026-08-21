@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - u-substitution
-  - trigonometric-substitution
+  - Integrals
+  - u-Substitution
+  - Trigonometric Substitution
 relations: []
 review: draft
 solved: false

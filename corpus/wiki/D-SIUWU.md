@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-SIUWU
 kind: definition
-title: "Short exact sequence"
+title: Short exact sequence
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
+  - Homological Algebra
 relations: []
 review: draft
 ---

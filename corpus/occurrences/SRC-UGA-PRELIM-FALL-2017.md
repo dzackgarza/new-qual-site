@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- assets/attachments/grad_prelim_Fall17.pdf
+source:
   source_kind: university-exam
   institution: uga
   area: prelim
@@ -28,6 +30,4 @@ payload:
     year: 2017
 ---
 
-::: remark
-UGA prelim Fall 2017. The paper is the scan `assets/attachments/grad_prelim_Fall17.pdf` (2017 Graduate Preliminary Exam; text recovered by OCR). Eight questions; the list is sitting order. Worked writeups: `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2017 Fall.md.source`. No holes.
-:::
+

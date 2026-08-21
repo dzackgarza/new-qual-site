@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-XEDSI
 kind: definition
-title: "Upper Central Series"
+title: Upper Central Series
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - nilpotent-groups
-  - centralizers-and-normalizers
+  - Subgroup Series
+  - Nilpotent Groups
+  - Centralizers and Normalizers
 relations: []
 review: draft
 ---

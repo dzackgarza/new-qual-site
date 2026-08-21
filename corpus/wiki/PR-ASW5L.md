@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-ASW5L
 kind: proposition
-title: "Principal Ideals are Free"
+title: Principal Ideals are Free
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - ideals
-  - principal-ideal-domains
+  - Free Modules
+  - Ideals
+  - Principal Ideal Domains
 relations: []
 review: draft
 ---

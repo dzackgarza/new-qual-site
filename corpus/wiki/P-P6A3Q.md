@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-P6A3Q
 kind: problem
-title: "Spring 2021, 4"
+title: Spring 2021, 4
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 solved: false

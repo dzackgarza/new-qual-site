@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - character-theory
-  - finite-fields
-  - cyclic-groups
+  - Character Theory
+  - Finite Fields
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-UEXBK
 kind: theorem
-title: "Closed subset of compact is compact"
+title: Closed subset of compact is compact
 classification:
   areas:
   - topology
   topics:
-  - compactness
+  - Compactness
 relations: []
 review: draft
 ---

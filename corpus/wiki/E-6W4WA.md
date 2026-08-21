@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - density
+  - Density
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-OM7TD
 kind: definition
-title: "$T_n$ Spaces (Separation Axioms)"
+title: $T_n$ Spaces (Separation Axioms)
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - separation-axioms
-  - counterexamples
+  - Point-Set Topology
+  - Separation Axioms
+  - Counterexamples
 relations: []
 review: draft
 ---

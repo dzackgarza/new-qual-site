@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-4H3JY
 kind: exercise
-title: "Disc to upper half-plane"
+title: Disc to upper half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Disc to upper half-plane"}
 Find a conformal map from $\DD$ to $\HH$.
 :::

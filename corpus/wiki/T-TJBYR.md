@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-TJBYR
 kind: theorem
-title: "Continuous image of compact is compact"
+title: Continuous image of compact is compact
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - continuity
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 ---

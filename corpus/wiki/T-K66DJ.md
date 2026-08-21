@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-K66DJ
 kind: theorem
-title: "Function value as a convolution"
+title: Function value as a convolution
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - contour-integration
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Function value as a convolution"}
 For any $p\in U$,
 \[

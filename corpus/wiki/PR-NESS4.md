@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-NESS4
 kind: proposition
-title: "NC Theorem"
+title: NC Theorem
 classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - automorphisms
-  - isomorphism-theorems
+  - Centralizers and Normalizers
+  - Automorphisms
+  - Isomorphism Theorems
 relations: []
 review: draft
 ---

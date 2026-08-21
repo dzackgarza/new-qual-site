@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-63VGL
 kind: problem
-title: $\int_T f=0$ if $f$ is holomorphic and bounded near a puncture inside the triangle $T$
+title: $\int_T f=0$ if $f$ is holomorphic and bounded near a puncture inside the triangle
+  $T$
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - morera
-  - contour-integration
+  - Removable Singularities
+  - Morera
+  - Contour Integration
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose that $f$ is holomorphic on a punctured open set $\Omega\setminus\theset{w_0}$ and let $T\subset \Omega$ be a triangle containing $w_0$.
 Prove that if $f$ is bounded near $w_0$, then $\int_T f(z) ~dz = 0$.

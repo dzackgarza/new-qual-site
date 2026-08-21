@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-FCYUM
 kind: exercise
-title: "Computing residues: $1/z^2\\sin(z)$"
+title: 'Computing residues: $1/z^2\sin(z)$'
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - laurent-series
-  - poles
-  - trigonometry
+  - Residues
+  - Laurent Series
+  - Poles
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Computing residues: $1/z^2\sin(z)$"}
 Compute
 \[

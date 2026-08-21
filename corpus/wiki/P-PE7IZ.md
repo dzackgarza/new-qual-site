@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PE7IZ
 kind: problem
-title: $\ZZ$ is initial among unital rings, so every abelian group has a unique $\ZZ$-module structure
+title: $\ZZ$ is initial among unital rings, so every abelian group has a unique $\ZZ$-module
+  structure
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - abelian-groups
-  - rings
+  - Modules
+  - Abelian Groups
+  - Rings
 relations: []
 review: draft
 solved: false

@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - countability
+  - Countability
 relations: []
 review: draft
 solved: false

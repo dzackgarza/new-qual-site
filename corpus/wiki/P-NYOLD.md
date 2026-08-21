@@ -7,10 +7,10 @@ classification:
   areas:
   - real-analysis
   topics:
-  - maximal-functions
-  - approximations-to-the-identity
-  - convolution
-  - differentiation
+  - Maximal Functions
+  - Approximations to the Identity
+  - Convolution
+  - Differentiation
 relations: []
 review: draft
 solved: true

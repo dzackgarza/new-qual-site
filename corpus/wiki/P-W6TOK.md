@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - u-substitution
-  - partial-fractions
+  - Integrals
+  - u-Substitution
+  - Partial Fractions
 relations: []
 review: draft
 solved: false

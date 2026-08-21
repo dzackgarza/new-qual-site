@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - surfaces
-  - van-kampen
+  - Fundamental Group
+  - Surfaces
+  - van Kampen
 relations: []
 review: draft
 solved: false

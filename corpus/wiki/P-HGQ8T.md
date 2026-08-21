@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-HGQ8T
 kind: problem
-title: For symmetric $A,B$, the product $AB$ is symmetric iff $AB=BA$; $BB^t$ and $B+B^t$ are symmetric
+title: For symmetric $A,B$, the product $AB$ is symmetric iff $AB=BA$; $BB^t$ and
+  $B+B^t$ are symmetric
 classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - bilinear-forms
+  - Matrices
+  - Bilinear Forms
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-FUIDU
 kind: exercise
-title: "Using the estimates"
+title: Using the estimates
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - blaschke-factors
-  - counterexamples
+  - Schwarz Lemma
+  - Blaschke Factors
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Using the estimates"}
 Does there exist a map $f: \DD\to \DD$ with
 

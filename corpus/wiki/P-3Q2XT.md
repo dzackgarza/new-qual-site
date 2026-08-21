@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - euclidean-domains
-  - factorization
-  - principal-ideal-domains
+  - Euclidean Domains
+  - Factorization
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: true
 ---
+
 a.
 Define a *Euclidean domain*.
 

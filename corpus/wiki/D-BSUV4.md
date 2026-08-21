@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-BSUV4
 kind: definition
-title: "Normal Matrix"
+title: Normal Matrix
 classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - inner-product-spaces
-  - diagonalization
+  - Matrices
+  - Inner Product Spaces
+  - Diagonalization
 relations: []
 review: draft
 ---

@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - integrals
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Calculate the following limit, justifying each step of your calculation:
 \[

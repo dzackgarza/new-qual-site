@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homology
-  - surfaces
+  - Fundamental Group
+  - Homology
+  - Surfaces
 relations: []
 review: draft
 solved: false

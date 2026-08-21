@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-WBB2M
 kind: problem
-title: Intermediate fields of a $D_8$-extension with $E/F$ and $K/E$ Galois but $K/F$ not Galois
+title: Intermediate fields of a $D_8$-extension with $E/F$ and $K/E$ Galois but $K/F$
+  not Galois
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - normal-subgroups
-  - field-extensions
+  - Galois Theory
+  - Normal Subgroups
+  - Field Extensions
 relations: []
 review: draft
 solved: false

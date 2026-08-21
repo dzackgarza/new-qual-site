@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: T-HRPNO
 kind: theorem
-title: "The Residue Theorem"
+title: The Residue Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - winding-number
-  - meromorphic-functions
+  - Residues
+  - Contour Integration
+  - Winding Number
+  - Meromorphic Functions
 relations: []
 review: draft
 ---
+
 :::{.theorem title="The Residue Theorem"}
 Let $f$ be meromorphic on a region $\Omega$ with poles \( \ts{ \elts{z}{N} } \).
 Then for any $\gamma \in \Omega\sm \ts{ \elts{z}{N} }$,

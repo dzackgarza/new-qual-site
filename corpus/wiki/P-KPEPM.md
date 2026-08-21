@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - matrix-groups
-  - finite-fields
+  - Solvable Groups
+  - Matrix Groups
+  - Finite Fields
 relations: []
 review: draft
 solved: false

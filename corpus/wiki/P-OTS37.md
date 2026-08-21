@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - semisimplicity
-  - matrices
+  - Ideals
+  - Semisimplicity
+  - Matrices
 relations: []
 review: draft
 solved: false

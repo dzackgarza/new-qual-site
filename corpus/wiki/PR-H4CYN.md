@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-H4CYN
 kind: proposition
-title: "Sufficient condition for Taylor convergence"
+title: Sufficient condition for Taylor convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - series-of-functions
+  - Differentiation
+  - Series of Functions
 relations: []
 review: draft
 ---

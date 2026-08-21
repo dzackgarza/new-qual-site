@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rank-and-nullity
-  - eigenvalues-and-eigenvectors
-  - linear-algebra
+  - Rank and Nullity
+  - Eigenvalues and Eigenvectors
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

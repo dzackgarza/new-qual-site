@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - poles
-  - principal-parts
+  - Laurent Series
+  - Poles
+  - Principal Parts
 relations: []
 review: draft
 solved: true
 ---
+
 Find the Laurent expansion of
 \[
 f(z) = {z + 1 \over z(z-1)}

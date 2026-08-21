@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-MCB7V
 kind: theorem
-title: "Locally equicontinuous iff normal when uniformly bounded"
+title: Locally equicontinuous iff normal when uniformly bounded
 classification:
   areas:
   - complex-analysis
   topics:
-  - normal-families
-  - equicontinuity
-  - montel
+  - Normal Families
+  - Equicontinuity
+  - Montel
 relations: []
 review: draft
 ---

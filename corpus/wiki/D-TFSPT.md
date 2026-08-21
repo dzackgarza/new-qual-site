@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-TFSPT
 kind: definition
-title: "Limit point"
+title: Limit point
 classification:
   areas:
   - complex-analysis
   topics:
-  - point-set
-  - limits
+  - Point-Set Topology
+  - Limits
 relations: []
 review: draft
 ---

@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - multivariable-calculus
+  - Integrals
+  - Multivariable Calculus
 relations: []
 review: draft
 solved: false

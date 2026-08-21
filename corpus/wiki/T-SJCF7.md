@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-SJCF7
 kind: theorem
-title: "Cayley-Hamilton"
+title: Cayley-Hamilton
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Linear Algebra
 relations: []
 review: draft
 ---

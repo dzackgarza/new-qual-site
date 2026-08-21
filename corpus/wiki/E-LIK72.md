@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-LIK72
 kind: exercise
-title: "Finitely many poles"
+title: Finitely many poles
 classification:
   areas:
   - complex-analysis
   topics:
-  - poles
-  - essential-singularities
-  - meromorphic-functions
-  - riemann-surfaces
+  - Poles
+  - Essential Singularities
+  - Meromorphic Functions
+  - Riemann Surfaces
 relations: []
 review: draft
 solved: true

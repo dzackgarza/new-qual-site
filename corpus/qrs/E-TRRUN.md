@@ -7,10 +7,10 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - metric-spaces
-  - countability
-  - hausdorff-spaces
+  - Compactness
+  - Metric Spaces
+  - Countability
+  - Hausdorff Spaces
 relations: []
 review: draft
 solved: false

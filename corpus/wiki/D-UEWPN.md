@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-UEWPN
 kind: definition
-title: "Long exact sequence"
+title: Long exact sequence
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - homology
+  - Homological Algebra
+  - Homology
 relations: []
 review: draft
 ---

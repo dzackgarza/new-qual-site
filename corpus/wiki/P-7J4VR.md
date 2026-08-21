@@ -8,10 +8,10 @@ classification:
   areas:
   - real-analysis
   topics:
-  - counterexamples
-  - convergence-of-functions
-  - differentiation
-  - completeness
+  - Counterexamples
+  - Convergence of Functions
+  - Differentiation
+  - Completeness
 relations: []
 review: draft
 solved: true

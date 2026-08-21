@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QJKMC
 kind: problem
-title: Jordan form of an operator on a $6$-dimensional space with $T^6=0$ and $T^5\neq 0$, and similarity of any two such operators
+title: Jordan form of an operator on a $6$-dimensional space with $T^6=0$ and $T^5\neq
+  0$, and similarity of any two such operators
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - nilpotence
-  - canonical-forms
+  - Jordan Canonical Form
+  - Nilpotence
+  - Canonical Forms
 relations: []
 review: draft
 solved: false

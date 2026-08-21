@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - convergence-tests
-  - series-of-functions
+  - Power Series
+  - Convergence Tests
+  - Series of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove the following:
 

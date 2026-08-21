@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-VW2Z3
 kind: definition
-title: "Quasicompact"
+title: Quasicompact
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
+  - Compactness
+  - Hausdorff Spaces
 relations: []
 review: draft
 ---

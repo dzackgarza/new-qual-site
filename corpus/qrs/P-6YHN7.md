@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-6YHN7
 kind: problem
-title: Schwarz lemma and $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ for holomorphic $f,g:\DD\to\Omega$ with $f$ injective and $f(0)=g(0)$
+title: Schwarz lemma and $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ for holomorphic $f,g:\DD\to\Omega$
+  with $f$ injective and $f(0)=g(0)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - biholomorphisms
-  - conformal-maps
+  - Schwarz Lemma
+  - Biholomorphisms
+  - Conformal Maps
 relations: []
 review: draft
 solved: false

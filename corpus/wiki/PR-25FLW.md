@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-25FLW
 kind: proposition
-title: "Algebraic extensions of perfect fields are separable"
+title: Algebraic extensions of perfect fields are separable
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
-  - fields
+  - Separability
+  - Field Extensions
+  - Fields
 relations: []
 review: draft
 ---

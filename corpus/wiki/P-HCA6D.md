@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - counterexamples
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true

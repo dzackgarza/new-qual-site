@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-5RWYR
 kind: definition
-title: "Linear Independence"
+title: Linear Independence
 classification:
   areas:
   - topology
   topics:
-  - modules
-  - linear-algebra
+  - Modules
+  - Linear Algebra
 relations: []
 review: draft
 ---

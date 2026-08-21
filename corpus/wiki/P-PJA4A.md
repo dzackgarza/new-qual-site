@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PJA4A
 kind: problem
-title: Unique quadratic subfield of a Galois extension of degree $14$, and two distinct degree-$7$ subfields imply a nonabelian Galois group
+title: Unique quadratic subfield of a Galois extension of degree $14$, and two distinct
+  degree-$7$ subfields imply a nonabelian Galois group
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - normal-subgroups
+  - Galois Theory
+  - Field Extensions
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

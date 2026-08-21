@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- assets/attachments/Day_9_January_2019_Qual.pdf
+source:
   source_kind: university-exam
   institution: unl
   area: real-analysis

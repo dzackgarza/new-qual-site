@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-ISZP3
 kind: theorem
-title: "Riemann's Removable Singularity Theorem"
+title: Riemann's Removable Singularity Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - singularities
+  - Removable Singularities
+  - Singularities
 relations: []
 review: draft
 ---

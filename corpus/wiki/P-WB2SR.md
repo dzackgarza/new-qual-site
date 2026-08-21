@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - bases
-  - vector-spaces
-  - direct-products
+  - Bases
+  - Vector Spaces
+  - Direct Products
 relations: []
 review: draft
 solved: false

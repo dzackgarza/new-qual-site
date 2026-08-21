@@ -2,20 +2,21 @@
 schema: qual/card@1
 id: E-CLSFF
 kind: exercise
-title: "Meromorphic functions on $\\mathbb{CP}^1$"
+title: Meromorphic functions on $\mathbb{CP}^1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
-  - principal-parts
-  - poles
-  - liouville-s-theorem
-  - riemann-surfaces
+  - Meromorphic Functions
+  - Principal Parts
+  - Poles
+  - Liouville's Theorem
+  - Riemann Surfaces
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Meromorphic functions on $\mathbb{CP}^1$ "}
 Show that the only meromorphic functions on $\CP^1$ are rational functions.
 

@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - l1
+  - Convolution
+  - L¹
 relations: []
 review: draft
 solved: true

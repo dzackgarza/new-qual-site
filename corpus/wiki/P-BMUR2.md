@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-BMUR2
 kind: problem
-title: "Hungerford 4.4.1"
+title: Hungerford 4.4.1
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - abelian-groups
-  - cyclic-groups
+  - Modules
+  - Abelian Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="Hungerford 4.4.1"}
 Show the following:
 

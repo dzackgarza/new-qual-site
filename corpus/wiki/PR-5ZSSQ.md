@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-5ZSSQ
 kind: proposition
-title: "Contraction principle"
+title: Contraction principle
 classification:
   areas:
   - complex-analysis
   topics:
-  - fixed-points
-  - metric-spaces
-  - completeness
+  - Fixed Points
+  - Metric Spaces
+  - Completeness
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Contraction principle"}
 If $(X, \abs{\wait})$ is a metric space and $f: X\to X$ with
 \[

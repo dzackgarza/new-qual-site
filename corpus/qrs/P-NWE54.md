@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - sequences-of-numbers
-  - completeness
-  - convergence
+  - Sequences of Numbers
+  - Completeness
+  - Convergence
 relations: []
 review: draft
 solved: false

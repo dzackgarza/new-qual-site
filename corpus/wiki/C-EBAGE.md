@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: C-EBAGE
 kind: corollary
-title: "Lipschitz implies uniformly continuous"
+title: Lipschitz implies uniformly continuous
 classification:
   areas:
   - topology
   topics:
-  - metric-spaces
-  - uniform-continuity
-  - continuity
+  - Metric Spaces
+  - Uniform Continuity
+  - Continuity
 relations: []
 review: draft
 ---

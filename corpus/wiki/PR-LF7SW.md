@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-LF7SW
 kind: proposition
-title: "Properties of Outer Measure"
+title: Properties of Outer Measure
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

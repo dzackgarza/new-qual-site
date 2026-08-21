@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-SMOHZ
 kind: exercise
-title: "Limit point of zeros is an essential singularity"
+title: Limit point of zeros is an essential singularity
 classification:
   areas:
   - complex-analysis
   topics:
-  - essential-singularities
-  - identity-theorem
-  - zeros
-  - singularities
+  - Essential Singularities
+  - Identity Theorem
+  - Zeros
+  - Singularities
 relations: []
 review: draft
 solved: true

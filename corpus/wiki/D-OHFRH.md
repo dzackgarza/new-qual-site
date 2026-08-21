@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-OHFRH
 kind: definition
-title: "Univalent"
+title: Univalent
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
+  - Conformal Maps
+  - Biholomorphisms
 relations: []
 review: draft
 ---

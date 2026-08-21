@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - nilpotence
-  - minimal-and-characteristic-polynomials
+  - Jordan Canonical Form
+  - Nilpotence
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

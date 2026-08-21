@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-QVMUV
 kind: exercise
-title: "Cauchy integral formula for coefficients"
+title: Cauchy integral formula for coefficients
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - cauchy-integral-formula
-  - convergence-tests
+  - Laurent Series
+  - Cauchy Integral Formula
+  - Convergence Tests
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="Cauchy integral formula for coefficients"}
 Show that if $f(z) \sum_{k\in \ZZ} c_k (z-z_0)^k$, then 
 \[

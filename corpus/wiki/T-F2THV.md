@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-F2THV
 kind: theorem
-title: "Uniform Boundedness"
+title: Uniform Boundedness
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - norms
+  - Functional Analysis
+  - Norms
 relations: []
 review: draft
 ---

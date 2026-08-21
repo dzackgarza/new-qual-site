@@ -7,12 +7,13 @@ classification:
   areas:
   - algebra
   topics:
-  - dual-spaces
-  - tensor-products
-  - vector-spaces
+  - Dual Spaces
+  - Tensor Products
+  - Vector Spaces
 relations: []
 review: draft
 ---
+
 :::{.proposition title="?"}
 If either of $\dim_k V, \dim_k W$ is finite, then
 \[

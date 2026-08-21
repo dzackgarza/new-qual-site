@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - countability
+  - Measure Theory
+  - Countability
 relations: []
 review: draft
 ---

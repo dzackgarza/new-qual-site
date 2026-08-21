@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-ZOTWN
 kind: theorem
-title: "Artin-Wedderburn?"
+title: Artin-Wedderburn?
 classification:
   areas:
   - algebra
   topics:
-  - semisimplicity
-  - rings
-  - algebras
+  - Semisimplicity
+  - Rings
+  - Algebras
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Artin-Wedderburn?"}
 If $R$ is a nonzero, unital, *semisimple* ring then 
 \[

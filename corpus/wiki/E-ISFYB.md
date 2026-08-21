@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-ISFYB
 kind: exercise
-title: "Uniformly bounded derivatives implies equicontinuous"
+title: Uniformly bounded derivatives implies equicontinuous
 classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - mean-value-theorem
-  - sequences-of-functions
+  - Equicontinuity
+  - Mean Value Theorem
+  - Sequences of Functions
 relations: []
 review: draft
 solved: false

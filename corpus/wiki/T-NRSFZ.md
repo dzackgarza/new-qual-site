@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-NRSFZ
 kind: theorem
-title: "Existence of $\\log(f)$ on domains"
+title: Existence of $\log(f)$ on domains
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
-  - holomorphic-functions
+  - Complex Logarithm
+  - Holomorphic Functions
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Existence of $\log(f)$ on domains"}
 If $\Omega$ is a connected domain with $f\in \OO\units(\Omega)$ an invertible regular function with 
 \[

@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-GW3Y7
 kind: problem
-title: "Explicit Rouch\u00e9, half-plane"
+title: Explicit Rouché, half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Explicit Rouché, half-plane"}
 Find the number of solutions in $\ts{\Re(z) \leq 0}$ of
 \[

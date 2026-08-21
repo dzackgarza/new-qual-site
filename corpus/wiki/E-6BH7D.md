@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-6BH7D
 kind: exercise
-title: "Upper half-disc to upper half-plane"
+title: Upper half-disc to upper half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true

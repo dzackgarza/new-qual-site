@@ -7,10 +7,10 @@ classification:
   areas:
   - topology
   topics:
-  - continuity
-  - compactness
-  - connectedness
-  - density
+  - Continuity
+  - Compactness
+  - Connectedness
+  - Density
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-IOVNM
 kind: problem
-title: The quotient of a compact Hausdorff space by a closed equivalence relation is Hausdorff
+title: The quotient of a compact Hausdorff space by a closed equivalence relation
+  is Hausdorff
 classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - hausdorff-spaces
-  - compactness
+  - Quotient Spaces
+  - Hausdorff Spaces
+  - Compactness
 relations: []
 review: draft
 solved: false

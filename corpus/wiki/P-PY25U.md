@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PY25U
 kind: problem
-title: An algebraic extension $C/F$ splits every polynomial over $F$ if and only if every algebraic extension of $F$ embeds in $C$
+title: An algebraic extension $C/F$ splits every polynomial over $F$ if and only if
+  every algebraic extension of $F$ embeds in $C$
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - zorns-lemma
-  - splitting-fields
+  - Field Extensions
+  - Zorn's Lemma
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

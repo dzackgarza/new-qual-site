@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - character-theory
-  - representation-theory
-  - conjugacy
+  - Character Theory
+  - Representation Theory
+  - Conjugacy
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-RPV6B
 kind: problem
-title: An analytic function is constant if $|f|$, $\Re(f)$, or $\arg(f)$ is constant, or if $\overline{f}$ is analytic
+title: An analytic function is constant if $|f|$, $\Re(f)$, or $\arg(f)$ is constant,
+  or if $\overline{f}$ is analytic
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - open-mapping-theorem
-  - maximum-modulus-principle
+  - Cauchy-Riemann
+  - Open Mapping Theorem
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if it satisfies any of the following conditions:
 

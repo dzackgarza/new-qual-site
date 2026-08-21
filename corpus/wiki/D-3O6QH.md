@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-3O6QH
 kind: definition
-title: "Separable spaces"
+title: Separable spaces
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - countability
+  - Point-Set Topology
+  - Countability
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-HWLVG
 kind: definition
-title: "Valuation Ring"
+title: Valuation Ring
 classification:
   areas:
   - algebra
   topics:
-  - valuation-rings
-  - integral-domains
-  - localization
+  - Valuation Rings
+  - Integral Domains
+  - Localization
 relations: []
 review: draft
 ---

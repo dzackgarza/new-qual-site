@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: false

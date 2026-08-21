@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-Q67AG
 kind: problem
-title: "Units or Zero Divisors"
+title: Units or Zero Divisors
 classification:
   areas:
   - algebra
   topics:
-  - integral-domains
-  - rings
-  - fields
+  - Integral Domains
+  - Rings
+  - Fields
 relations: []
 review: draft
 solved: true

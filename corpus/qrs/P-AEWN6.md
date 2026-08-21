@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-AEWN6
 kind: problem
-title: "(a) $f: D\\rightarrow {\\mathbb C}$ be a continuous function, where"
+title: '(a) $f: D\rightarrow {\mathbb C}$ be a continuous function, where'
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true

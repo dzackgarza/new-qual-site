@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-JKJG3
 kind: problem
-title: "Factor 6 in two different ways in $\\ZZ[\\sqrt{-5}]$"
+title: Factor 6 in two different ways in $\ZZ[\sqrt{-5}]$
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - ideals
-  - prime-ideals
+  - Factorization
+  - Ideals
+  - Prime Ideals
 relations: []
 review: draft
 solved: false

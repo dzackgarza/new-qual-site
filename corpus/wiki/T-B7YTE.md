@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-B7YTE
 kind: theorem
-title: "Abel's Theorem"
+title: Abel's Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - convergence-tests
+  - Power Series
+  - Convergence Tests
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Abel's Theorem"}
 If $\sum_{k=1}^\infty c_k z^j$ converges on $\abs{z} < 1$ then 
 \[

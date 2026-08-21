@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - covering-spaces
-  - cell-complexes
+  - Homotopy
+  - Covering Spaces
+  - Cell Complexes
 relations: []
 review: draft
 solved: true

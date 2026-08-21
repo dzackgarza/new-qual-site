@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - cell-complexes
-  - degree
+  - Homology
+  - Cell Complexes
+  - Degree
 relations: []
 review: draft
 solved: false

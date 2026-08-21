@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - continuity
+  - Integrals
+  - Continuity
 relations: []
 review: draft
 solved: true

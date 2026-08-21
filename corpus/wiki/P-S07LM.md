@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - limits
+  - Limits
 relations: []
 review: draft
 solved: false

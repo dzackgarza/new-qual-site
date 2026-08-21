@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - zeros
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 solved: true

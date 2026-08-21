@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-OSJ5S
 kind: theorem
-title: "Jordan-Holder"
+title: Jordan-Holder
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - simple-groups
-  - classification
+  - Subgroup Series
+  - Simple Groups
+  - Classification
 relations: []
 review: draft
 ---

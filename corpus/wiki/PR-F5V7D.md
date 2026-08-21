@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-F5V7D
 kind: proposition
-title: "No functions discontinuous on the irrationals"
+title: No functions discontinuous on the irrationals
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - counterexamples
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 ---

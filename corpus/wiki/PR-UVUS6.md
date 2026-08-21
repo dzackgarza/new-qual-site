@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-UVUS6
 kind: proposition
-title: "STFGMPID"
+title: STFGMPID
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - modules
-  - principal-ideal-domains
+  - Structure Theorem
+  - Modules
+  - Principal Ideal Domains
 relations: []
 review: draft
 ---

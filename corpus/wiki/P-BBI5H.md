@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - product-topology
+  - Fundamental Group
+  - Product Topology
 relations: []
 review: draft
 solved: false

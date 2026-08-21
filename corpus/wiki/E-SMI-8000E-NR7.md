@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - commutative-algebra
+  - Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

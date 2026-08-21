@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-QDTPB
 kind: problem
-title: The twist $f(e^{i\theta},s)=(e^{i(\theta+2\pi s)},s)$ of $S^1\times[0,1]$ is homotopic to the identity relative to one boundary circle but not both
+title: The twist $f(e^{i\theta},s)=(e^{i(\theta+2\pi s)},s)$ of $S^1\times[0,1]$ is
+  homotopic to the identity relative to one boundary circle but not both
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - fundamental-group
+  - Homotopy
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

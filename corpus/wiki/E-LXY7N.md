@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-LXY7N
 kind: exercise
-title: "A non-equicontinuous sequence"
+title: A non-equicontinuous sequence
 classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - counterexamples
-  - sequences-of-functions
+  - Equicontinuity
+  - Counterexamples
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="A non-equicontinuous sequence"}
 Exhibit a sequence of functions that is not equicontinuous.
 :::

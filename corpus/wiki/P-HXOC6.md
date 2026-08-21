@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - quadratic-forms
-  - bilinear-forms
+  - Quadratic Forms
+  - Bilinear Forms
 relations: []
 review: draft
 solved: false

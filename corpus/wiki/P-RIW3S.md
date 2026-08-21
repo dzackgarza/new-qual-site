@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
-  - conjugacy
+  - Fundamental Group
+  - Homotopy
+  - Conjugacy
 relations: []
 review: draft
 solved: true

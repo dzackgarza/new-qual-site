@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-FD7QM
 kind: problem
-title: "Hungerford 4.6.6"
+title: Hungerford 4.6.6
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - modules
-  - cyclic-groups
+  - Structure Theorem
+  - Modules
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

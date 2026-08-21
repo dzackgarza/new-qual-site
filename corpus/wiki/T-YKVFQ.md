@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-YKVFQ
 kind: theorem
-title: "Bolzano-Weierstrass property"
+title: Bolzano-Weierstrass property
 classification:
   areas:
   - complex-analysis
   topics:
-  - compactness
-  - sequences-of-numbers
+  - Compactness
+  - Sequences of Numbers
 relations: []
 review: draft
 ---

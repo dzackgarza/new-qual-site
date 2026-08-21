@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-4KVTJ
 kind: problem
-title: Cauchy integral of $f$ on a simple closed curve, equal to $A$ inside and $-f(z)+A$ outside, when $\lim_{z\to\infty}f(z)=A$
+title: Cauchy integral of $f$ on a simple closed curve, equal to $A$ inside and $-f(z)+A$
+  outside, when $\lim_{z\to\infty}f(z)=A$
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - residues
-  - contour-integration
+  - Cauchy Integral Formula
+  - Residues
+  - Contour Integration
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega_1$ and exterior $\Omega_2$.
 Assume $f'$ exists in an open set containing $\gamma$ and $\Omega_2$ with $\lim_{z\to \infty} f(z) = A$.

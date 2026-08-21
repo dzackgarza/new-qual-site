@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - uniform-convergence
-  - convergence-of-functions
+  - Sequences of Numbers
+  - Uniform Convergence
+  - Convergence of Functions
 relations: []
 review: draft
 solved: true

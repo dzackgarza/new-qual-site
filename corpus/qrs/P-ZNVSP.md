@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZNVSP
 kind: problem
-title: Density of $f(\mathbb{H})$ for a holomorphic map of the half-plane real precisely on $\mathbb{R}$
+title: Density of $f(\mathbb{H})$ for a holomorphic map of the half-plane real precisely
+  on $\mathbb{R}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-reflection
-  - picard
-  - open-mapping-theorem
+  - Schwarz Reflection
+  - Picard
+  - Open Mapping Theorem
 relations: []
 review: draft
 solved: true

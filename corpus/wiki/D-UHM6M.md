@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-UHM6M
 kind: definition
-title: "Second Countable"
+title: Second Countable
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - countability
+  - Point-Set Topology
+  - Countability
 relations: []
 review: draft
 ---

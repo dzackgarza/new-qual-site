@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-B4VTH
 kind: definition
-title: "Semisimple"
+title: Semisimple
 classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - matrices
-  - semisimplicity
+  - Diagonalization
+  - Matrices
+  - Semisimplicity
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-EHKFZ
 kind: problem
-title: Area of $f(\{r<|z|<R\})$ is $\pi\sum_{n=-\infty}^\infty n|c_n|^2(R^{2n}-r^{2n})$ for a univalent Laurent series
+title: Area of $f(\{r<|z|<R\})$ is $\pi\sum_{n=-\infty}^\infty n|c_n|^2(R^{2n}-r^{2n})$
+  for a univalent Laurent series
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - conformal-maps
-  - integrals
+  - Laurent Series
+  - Conformal Maps
+  - Integrals
 relations: []
 review: draft
 solved: false

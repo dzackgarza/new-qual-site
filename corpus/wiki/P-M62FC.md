@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-M62FC
 kind: problem
-title: Compact connected surfaces with nonempty boundary are homotopy equivalent to a wedge of circles
+title: Compact connected surfaces with nonempty boundary are homotopy equivalent to
+  a wedge of circles
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - surfaces
-  - classification
+  - Homotopy
+  - Surfaces
+  - Classification
 relations: []
 review: draft
 solved: false

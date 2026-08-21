@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-TPTOG
 kind: definition
-title: "Mapping Path Space"
+title: Mapping Path Space
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - function-spaces
+  - Homotopy
+  - Function Spaces
 relations: []
 review: draft
 ---

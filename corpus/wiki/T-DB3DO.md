@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: T-DB3DO
 kind: theorem
-title: "Improved Taylor Remainder Theorem"
+title: Improved Taylor Remainder Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
+  - Power Series
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Improved Taylor Remainder Theorem"}
 If $f$ is analytic on a region $\Omega$ containing $z_0$, then $f$ can be written as
 \[

@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - diagonalization
+  - Diagonalization
 relations: []
 review: draft
 solved: false

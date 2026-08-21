@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-JMRPA
 kind: definition
-title: "Neighborhood"
+title: Neighborhood
 classification:
   areas:
   - topology
   topics:
-  - point-set
+  - Point-Set Topology
 relations: []
 review: draft
 ---

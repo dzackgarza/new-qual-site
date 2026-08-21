@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - sylow-theory
-  - centralizers-and-normalizers
+  - Matrix Groups
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

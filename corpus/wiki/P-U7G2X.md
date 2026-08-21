@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-U7G2X
 kind: problem
-title: A closed connected oriented $4$-manifold with $H_2(M;\ZZ)$ of rank $1$ admits no free $\ZZ_2$ action
+title: A closed connected oriented $4$-manifold with $H_2(M;\ZZ)$ of rank $1$ admits
+  no free $\ZZ_2$ action
 classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - covering-spaces
-  - group-actions
-  - manifolds
+  - Euler Characteristic
+  - Covering Spaces
+  - Group Actions
+  - Manifolds
 relations: []
 review: draft
 solved: true

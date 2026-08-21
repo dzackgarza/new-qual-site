@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-QJZDT
 kind: proposition
-title: "Product CW structure"
+title: Product CW structure
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - product-topology
-  - homology
+  - Cell Complexes
+  - Product Topology
+  - Homology
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Product CW structure"}
 If $X, Y$ are CW complexes with $p_X(t), p_Y(t)$ the generating functions for the number of cells (so $[t^n] p_X(t) \da a_n$ is the number of $n\dash$cells in $X$), then the generating function for the product is 
 \[

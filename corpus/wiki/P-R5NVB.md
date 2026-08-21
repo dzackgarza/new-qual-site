@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - eigenvalues-and-eigenvectors
-  - minimal-and-characteristic-polynomials
+  - Jordan Canonical Form
+  - Eigenvalues and Eigenvectors
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

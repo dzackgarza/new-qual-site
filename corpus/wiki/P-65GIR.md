@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - noetherian-rings
-  - ideals
+  - Principal Ideal Domains
+  - Noetherian Rings
+  - Ideals
 relations: []
 review: draft
 solved: true

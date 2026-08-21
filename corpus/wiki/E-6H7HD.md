@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-6H7HD
 kind: exercise
-title: "Using algebraic topology"
+title: Using algebraic topology
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
-  - covering-spaces
-  - fundamental-group
+  - Complex Logarithm
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Using algebraic topology"}
 Show that there is no continuous square root function defined on all of $\CC$.
 

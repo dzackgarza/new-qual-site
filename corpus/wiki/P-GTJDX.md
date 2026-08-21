@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - schwarz-lemma
-  - biholomorphisms
+  - Blaschke Factors
+  - Schwarz Lemma
+  - Biholomorphisms
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 \envlist
 

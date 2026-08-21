@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-DQYX5
 kind: problem
-title: Convolution of $L^1$ functions, vanishing at infinity, and the Fourier inversion formula
+title: Convolution of $L^1$ functions, vanishing at infinity, and the Fourier inversion
+  formula
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - convolution
-  - l1
+  - Fourier Analysis
+  - Convolution
+  - L¹
 relations: []
 review: draft
 solved: true

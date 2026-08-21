@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- https://www.math.uga.edu/sites/default/files/Quals/Algebra%20%5BFall%202020%5D.docx
+source:
   source_kind: university-exam
   institution: uga
   area: algebra

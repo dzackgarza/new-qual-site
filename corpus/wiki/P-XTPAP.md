@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - classification
+  - Homotopy
+  - Classification
 relations: []
 review: draft
 solved: false

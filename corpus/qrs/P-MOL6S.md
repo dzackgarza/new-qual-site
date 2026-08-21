@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - taylor-series
-  - differentiation
+  - Taylor Series
+  - Differentiation
 relations: []
 review: draft
 solved: true

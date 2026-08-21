@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - mayer-vietoris
-  - homology
+  - Euler Characteristic
+  - Mayer-Vietoris
+  - Homology
 relations: []
 review: draft
 solved: false

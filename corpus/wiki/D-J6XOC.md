@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-J6XOC
 kind: definition
-title: "Path"
+title: Path
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - fundamental-group
+  - Connectedness
+  - Fundamental Group
 relations: []
 review: draft
 ---

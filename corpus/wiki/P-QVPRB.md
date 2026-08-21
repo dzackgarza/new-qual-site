@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-QVPRB
 kind: problem
-title: "Hungerford 7.5.2"
+title: Hungerford 7.5.2
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - determinants
-  - modules
+  - Minimal and Characteristic Polynomials
+  - Determinants
+  - Modules
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="Hungerford 7.5.2"}
 Show that if $\phi$ is an endomorphism of a free $k$-module $E$ of finite rank, then
 $p_\phi(\phi) = 0$.

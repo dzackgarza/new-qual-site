@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-UGCNF
 kind: problem
-title: $-\frac12\bigl(z+\frac1z\bigr)$ maps the upper half-disk conformally onto the upper half-plane
+title: $-\frac12\bigl(z+\frac1z\bigr)$ maps the upper half-disk conformally onto the
+  upper half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
+  - Conformal Maps
 relations: []
 review: draft
 solved: false

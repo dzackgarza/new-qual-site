@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - symmetric-functions
-  - polynomials
+  - Symmetric Functions
+  - Polynomials
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - convergence-tests
-  - small-tails
+  - Series of Numbers
+  - Convergence Tests
+  - Small Tails
 relations: []
 review: draft
 solved: true

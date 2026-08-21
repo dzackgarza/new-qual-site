@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-G5N6I
 kind: definition
-title: "Completeness"
+title: Completeness
 classification:
   areas:
   - real-analysis
   topics:
-  - completeness
-  - metric-spaces
+  - Completeness
+  - Metric Spaces
 relations: []
 review: draft
 ---

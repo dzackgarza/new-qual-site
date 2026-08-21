@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-4IXAO
 kind: definition
-title: "Orthonormal sequence"
+title: Orthonormal sequence
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - inner-product-spaces
+  - Hilbert Spaces
+  - Inner Product Spaces
 relations: []
 review: draft
 ---

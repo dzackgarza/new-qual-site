@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-JW63I
 kind: definition
-title: "Local orientation of a manifold"
+title: Local orientation of a manifold
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - manifolds
-  - homology
+  - Orientation
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

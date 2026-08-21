@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-SRY2V
 kind: theorem
-title: "Holomorphic implies analytic"
+title: Holomorphic implies analytic
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - holomorphic-functions
-  - cauchy-integral-formula
+  - Power Series
+  - Holomorphic Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 ---

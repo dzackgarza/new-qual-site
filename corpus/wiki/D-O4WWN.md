@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-O4WWN
 kind: definition
-title: "Nondegenerate Bilinear Form"
+title: Nondegenerate Bilinear Form
 classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - vector-spaces
+  - Bilinear Forms
+  - Vector Spaces
 relations: []
 review: draft
 ---

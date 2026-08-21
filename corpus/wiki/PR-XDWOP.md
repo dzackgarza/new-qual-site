@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-XDWOP
 kind: proposition
-title: "A consequence of Chebotarev Density: reading cycles from reduction mod $p$"
+title: 'A consequence of Chebotarev Density: reading cycles from reduction mod $p$'
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - permutations
-  - finite-fields
+  - Galois Theory
+  - Permutations
+  - Finite Fields
 relations: []
 review: draft
 ---

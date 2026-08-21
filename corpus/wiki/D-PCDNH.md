@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-PCDNH
 kind: definition
-title: "Conformal Map / Biholomorphism"
+title: Conformal Map / Biholomorphism
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
+  - Conformal Maps
+  - Biholomorphisms
 relations: []
 review: draft
 ---

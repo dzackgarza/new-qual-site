@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rank-and-nullity
-  - jordan-canonical-form
-  - linear-algebra
+  - Rank and Nullity
+  - Jordan Canonical Form
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

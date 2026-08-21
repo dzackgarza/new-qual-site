@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - series-of-numbers
-  - limits
+  - Sequences of Numbers
+  - Series of Numbers
+  - Limits
 relations: []
 review: draft
 solved: true
 ---
+
 Let $\{a_n\}_{n=1}^\infty$ be a sequence of real numbers.
 
 a.

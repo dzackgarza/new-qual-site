@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-SIGK5
 kind: problem
-title: Jordan forms of a $5\times 5$ matrix with characteristic polynomial $(x-3)^5$ and minimal polynomial $(x-3)^2$
+title: Jordan forms of a $5\times 5$ matrix with characteristic polynomial $(x-3)^5$
+  and minimal polynomial $(x-3)^2$
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - minimal-and-characteristic-polynomials
+  - Jordan Canonical Form
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

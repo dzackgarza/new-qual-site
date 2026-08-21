@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - ideals
-  - commutative-algebra
+  - Factorization
+  - Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

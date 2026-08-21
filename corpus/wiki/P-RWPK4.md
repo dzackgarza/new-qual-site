@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-RWPK4
 kind: problem
-title: Jordan form over $\QQ$ and $\FF_p$ of the $p\times p$ matrix with zeros on the diagonal and ones elsewhere
+title: Jordan form over $\QQ$ and $\FF_p$ of the $p\times p$ matrix with zeros on
+  the diagonal and ones elsewhere
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - eigenvalues-and-eigenvectors
-  - characteristic
+  - Jordan Canonical Form
+  - Eigenvalues and Eigenvectors
+  - Characteristic
 relations: []
 review: draft
 solved: true
 ---
+
 Let $p$ be a prime number.
 Let $A$ be a $p \times p$ matrix over a field $F$ with 1 in all
 entries except 0 on the main diagonal.

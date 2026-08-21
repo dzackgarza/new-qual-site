@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-4GWVV
 kind: problem
-title: A conformal map from the upper half-plane onto $\{-\pi/2<\Re w<\pi/2,\,\Im w>0\}$
+title: A conformal map from the upper half-plane onto $\{-\pi/2<\Re w<\pi/2,\,\Im
+  w>0\}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - trigonometry
+  - Conformal Maps
+  - Trigonometry
 relations: []
 review: draft
 solved: false

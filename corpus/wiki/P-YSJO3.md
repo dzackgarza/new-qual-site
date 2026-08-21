@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-YSJO3
 kind: problem
-title: "Explicit Rouche, $2\\mathbb{D}$"
+title: Explicit Rouche, $2\mathbb{D}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Explicit Rouche, $2\mathbb{D}$"}
 Find the number of zeros in $\abs{z} < 2$ of
 \[

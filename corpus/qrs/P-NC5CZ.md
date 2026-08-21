@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - series-of-functions
-  - holomorphic-functions
-  - morera
+  - Uniform Convergence
+  - Series of Functions
+  - Holomorphic Functions
+  - Morera
 relations: []
 review: draft
 solved: true

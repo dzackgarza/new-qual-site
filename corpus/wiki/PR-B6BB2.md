@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-B6BB2
 kind: proposition
-title: "Homology commutes with wedge products"
+title: Homology commutes with wedge products
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - cell-complexes
+  - Homology
+  - Cell Complexes
 relations: []
 review: draft
 ---

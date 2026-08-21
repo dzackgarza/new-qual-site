@@ -2,15 +2,18 @@
 schema: qual/card@1
 id: P-SWLWB
 kind: problem
-title: $\int_0^\infty\frac{dx}{(1+x^n)^2}$, $\int_0^\infty\frac{\cos x}{(x^2+a^2)^2}\,dx$, $\int_0^\pi\frac{d\theta}{a+\sin\theta}$, $\int_0^{\pi/2}\frac{d\theta}{a+\sin^2\theta}$, $\int_{|z|=2}\frac{dz}{(z^5-1)(z-3)}$, $\int_{-\infty}^{\infty}\frac{\sin(\pi a)\,e^{-ix\xi}}{\cosh(\pi x)+\cos(\pi a)}\,dx$, and $\int_{|z|=1}\cot^2 z\,dz$
+title: $\int_0^\infty\frac{dx}{(1+x^n)^2}$, $\int_0^\infty\frac{\cos x}{(x^2+a^2)^2}\,dx$,
+  $\int_0^\pi\frac{d\theta}{a+\sin\theta}$, $\int_0^{\pi/2}\frac{d\theta}{a+\sin^2\theta}$,
+  $\int_{|z|=2}\frac{dz}{(z^5-1)(z-3)}$, $\int_{-\infty}^{\infty}\frac{\sin(\pi a)\,e^{-ix\xi}}{\cosh(\pi
+  x)+\cos(\pi a)}\,dx$, and $\int_{|z|=1}\cot^2 z\,dz$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: false

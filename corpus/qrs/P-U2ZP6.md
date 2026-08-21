@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - polynomials
-  - counterexamples
-  - holomorphic-functions
+  - Uniform Convergence
+  - Polynomials
+  - Counterexamples
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

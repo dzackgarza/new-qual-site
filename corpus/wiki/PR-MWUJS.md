@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-MWUJS
 kind: proposition
-title: "Existence of complex log"
+title: Existence of complex log
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
-  - holomorphic-functions
+  - Complex Logarithm
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - quadratic-forms
-  - diagonalization
-  - geometry
+  - Quadratic Forms
+  - Diagonalization
+  - Geometry
 relations: []
 review: draft
 solved: false

@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-WOHZ6
 kind: problem
-title: Uniform convergence of $\sum\sin(nz)/2^n$ on $\{\Im z<\ln 2\}$ and on $|z|\le r$
+title: Uniform convergence of $\sum\sin(nz)/2^n$ on $\{\Im z<\ln 2\}$ and on $|z|\le
+  r$
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - convergence-tests
-  - series-of-functions
-  - trigonometry
+  - Uniform Convergence
+  - Convergence Tests
+  - Series of Functions
+  - Trigonometry
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
 Prove that the following series converges uniformly on the set $\theset{z \suchthat \Im(z) < \ln 2}$:
 \[

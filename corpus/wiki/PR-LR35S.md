@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-LR35S
 kind: proposition
-title: "Top homology for manifolds"
+title: Top homology for manifolds
 classification:
   areas:
   - topology
   topics:
-  - manifolds
-  - homology
-  - orientation
+  - Manifolds
+  - Homology
+  - Orientation
 relations: []
 review: draft
 ---

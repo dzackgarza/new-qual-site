@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - holomorphic-functions
+  - Open Mapping Theorem
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

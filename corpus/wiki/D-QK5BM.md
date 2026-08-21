@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-QK5BM
 kind: definition
-title: "Euler Characteristic"
+title: Euler Characteristic
 classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - homology
-  - cell-complexes
+  - Euler Characteristic
+  - Homology
+  - Cell Complexes
 relations: []
 review: draft
 ---

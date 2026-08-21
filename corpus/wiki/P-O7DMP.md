@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-O7DMP
 kind: problem
-title: $\widehat G=\bigl(\frac{\sin\pi\xi}{\pi\xi}\bigr)^2$ for the tent function $G$; $\widehat F$; an $L^1$ Fourier transform not in $L^1$
+title: $\widehat G=\bigl(\frac{\sin\pi\xi}{\pi\xi}\bigr)^2$ for the tent function
+  $G$; $\widehat F$; an $L^1$ Fourier transform not in $L^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - integrals
+  - Fourier Analysis
+  - Integrals
 relations: []
 review: draft
 solved: true

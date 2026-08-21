@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - riesz-representation
-  - l2
+  - Hilbert Spaces
+  - Riesz Representation
+  - L²
 relations: []
 review: draft
 solved: true

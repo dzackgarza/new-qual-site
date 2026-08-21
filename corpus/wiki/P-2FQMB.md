@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - semisimplicity
-  - algebras
-  - counterexamples
+  - Semisimplicity
+  - Algebras
+  - Counterexamples
 relations: []
 review: draft
 solved: false

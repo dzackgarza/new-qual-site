@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-TOK44
 kind: proposition
-title: "Root Test"
+title: Root Test
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - power-series
+  - Convergence Tests
+  - Power Series
 relations: []
 review: draft
 ---

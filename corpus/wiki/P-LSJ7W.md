@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-LSJ7W
 kind: problem
-title: "Consider the quotient space"
+title: Consider the quotient space
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - quotient-spaces
-  - manifolds
+  - Homology
+  - Quotient Spaces
+  - Manifolds
 relations: []
 review: draft
 solved: false

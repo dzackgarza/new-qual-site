@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - identity-theorem
-  - schwarz-reflection
-  - mean-value-property
+  - Harmonic Functions
+  - Identity Theorem
+  - Schwarz Reflection
+  - Mean Value Property
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 (1) Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence
 in $O$ such that $u(z_n) = 0$ and $\lim z_n \in O$. Prove or

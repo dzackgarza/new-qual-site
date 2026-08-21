@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PBZHI
 kind: problem
-title: Every finite group is a Galois group, and intermediate fields of degrees $3$ and $2$ in a Galois extension of degree $12$
+title: Every finite group is a Galois group, and intermediate fields of degrees $3$
+  and $2$ in a Galois extension of degree $12$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - permutations
+  - Galois Theory
+  - Field Extensions
+  - Permutations
 relations: []
 review: draft
 solved: false

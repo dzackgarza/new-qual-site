@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-BZ3KD
 kind: definition
-title: "The sign homomorphism"
+title: The sign homomorphism
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - homomorphisms
+  - Permutations
+  - Homomorphisms
 relations: []
 review: draft
 ---
+
 :::{.definition title="The sign homomorphism"}
 Writing a cycle as a product of transpositions,
 the map defined by

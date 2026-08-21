@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - differentiation
-  - induction
+  - Differentiation
+  - Induction
 relations: []
 review: draft
 solved: false

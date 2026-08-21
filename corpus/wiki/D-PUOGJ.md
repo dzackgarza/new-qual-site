@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-PUOGJ
 kind: definition
-title: "Simple Extensions"
+title: Simple Extensions
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
+  - Field Extensions
 relations: []
 review: draft
 ---

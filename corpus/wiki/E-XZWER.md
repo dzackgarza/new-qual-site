@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - picard
-  - entire-functions
-  - trigonometry
+  - Picard
+  - Entire Functions
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show that $\sin(z) = z$ has infinitely many solutions in $\CC$.
 

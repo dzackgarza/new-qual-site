@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - local-rings
-  - valuation-rings
+  - Local Rings
+  - Valuation Rings
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-RHJMK
 kind: definition
-title: "Projective Modules"
+title: Projective Modules
 classification:
   areas:
   - algebra
   topics:
-  - projective-modules
-  - modules
-  - homological-algebra
+  - Projective Modules
+  - Modules
+  - Homological Algebra
 relations: []
 review: draft
 ---

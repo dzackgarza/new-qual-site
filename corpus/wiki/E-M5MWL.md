@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-M5MWL
 kind: exercise
-title: "Primitive in the complement of a branch cut"
+title: Primitive in the complement of a branch cut
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - complex-logarithm
-  - cauchy-integral-theorem
+  - Residues
+  - Contour Integration
+  - Complex Logarithm
+  - Cauchy Integral Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Primitive in the complement of a branch cut"}
 Compute the following integrals:
 \[

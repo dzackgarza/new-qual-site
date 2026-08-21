@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-E4T3S
 kind: proposition
-title: "Classification for quartics"
+title: Classification for quartics
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - classification
-  - polynomials
+  - Galois Theory
+  - Classification
+  - Polynomials
 relations: []
 review: draft
 ---

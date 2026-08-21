@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-IJOPU
 kind: proposition
-title: "Reverse Triangle Inequality"
+title: Reverse Triangle Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - norms
+  - Norms
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Reverse Triangle Inequality"}
 \[  
 \abs{\norm{x} - \norm{y}} \leq \norm{x - y}

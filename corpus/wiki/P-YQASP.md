@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-YQASP
 kind: problem
-title: $\lim_{x\to+\infty}\int_{\gamma_x}f=iAb$ when $f(x+iy)\to A$ independently of $y$
+title: $\lim_{x\to+\infty}\int_{\gamma_x}f=iAb$ when $f(x+iy)\to A$ independently
+  of $y$
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - limits
+  - Contour Integration
+  - Limits
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Assume $f$ is continuous in the region $\theset{x+iy \suchthat x\geq x_0, ~ 0\leq y \leq b}$, and the following limit exists independent of $y$:
 \[

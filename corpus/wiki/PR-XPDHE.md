@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-XPDHE
 kind: proposition
-title: "Classification for cubics"
+title: Classification for cubics
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - classification
-  - polynomials
+  - Galois Theory
+  - Classification
+  - Polynomials
 relations: []
 review: draft
 ---

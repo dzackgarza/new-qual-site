@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-NYZMD
 kind: problem
-title: "Consider $L^2([0, 1])$ and define"
+title: Consider $L^2([0, 1])$ and define
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - l2
-  - polynomials
+  - Hilbert Spaces
+  - L²
+  - Polynomials
 relations: []
 review: draft
 solved: true

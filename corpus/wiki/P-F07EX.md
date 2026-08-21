@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-F07EX
 kind: problem
-title: 'Examples: an integral with a corner, a series with divergent squares, and a basis of a subspace of $\mathcal{P}_3$'
+title: 'Examples: an integral with a corner, a series with divergent squares, and
+  a basis of a subspace of $\mathcal{P}_3$'
 classification:
   areas:
   - prelim
   topics:
-  - counterexamples
-  - series-of-numbers
-  - polynomials
+  - Counterexamples
+  - Series of Numbers
+  - Polynomials
 relations: []
 review: draft
 solved: false

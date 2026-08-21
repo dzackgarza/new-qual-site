@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 solved: false

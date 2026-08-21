@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - group-actions
-  - cosets-and-lagrange
+  - Simple Groups
+  - Group Actions
+  - Cosets and Lagrange
 relations: []
 review: draft
 solved: false

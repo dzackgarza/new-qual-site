@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - quotient-spaces
+  - Homology
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-2GXZ2
 kind: problem
-title: $a\in R$ is not nilpotent if and only if $\phi(a)$ is a unit for some ring homomorphism $\phi:R\to S$
+title: $a\in R$ is not nilpotent if and only if $\phi(a)$ is a unit for some ring
+  homomorphism $\phi:R\to S$
 classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - localization
-  - rings
+  - Nilpotence
+  - Localization
+  - Rings
 relations: []
 review: draft
 solved: true

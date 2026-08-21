@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-Z3YWJ
 kind: proposition
-title: "First Isomorphism Theorem"
+title: First Isomorphism Theorem
 classification:
   areas:
   - algebra
   topics:
-  - isomorphism-theorems
-  - rings
-  - homomorphisms
+  - Isomorphism Theorems
+  - Rings
+  - Homomorphisms
 relations: []
 review: draft
 ---
+
 :::{.proposition title="First Isomorphism Theorem"}
 For any ring morphism $f:A\to B$ there is SES of rings
 \[

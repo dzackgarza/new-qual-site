@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-RZFB4
 kind: problem
-title: Connected $n$-fold covering spaces of the torus, and $3$-fold covering spaces of a torus minus a disk
+title: Connected $n$-fold covering spaces of the torus, and $3$-fold covering spaces
+  of a torus minus a disk
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - surfaces
-  - classification
+  - Covering Spaces
+  - Surfaces
+  - Classification
 relations: []
 review: draft
 solved: false

@@ -8,9 +8,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - l1
-  - counterexamples
+  - Fourier Analysis
+  - L¹
+  - Counterexamples
 relations: []
 review: draft
 solved: true

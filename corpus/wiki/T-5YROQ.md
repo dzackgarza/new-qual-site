@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-5YROQ
 kind: theorem
-title: "Small Tails in $L^1$"
+title: Small Tails in $L^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - small-tails
-  - l1
+  - Small Tails
+  - L¹
 relations: []
 review: draft
 ---

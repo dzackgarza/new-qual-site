@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-6BKXI
 kind: problem
-title: Convolution with an approximate identity converges in $L^1$, almost everywhere, and uniformly
+title: Convolution with an approximate identity converges in $L^1$, almost everywhere,
+  and uniformly
 classification:
   areas:
   - real-analysis
   topics:
-  - approximations-to-the-identity
-  - convolution
-  - l1
+  - Approximations to the Identity
+  - Convolution
+  - L¹
 relations: []
 review: draft
 solved: true

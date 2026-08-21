@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: C-KOFDQ
 kind: corollary
-title: "Maximum Modulus"
+title: Maximum Modulus
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - harmonic-functions
+  - Maximum Modulus Principle
+  - Harmonic Functions
 relations: []
 review: draft
 ---

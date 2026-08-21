@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-OWMPB
 kind: problem
-title: A polynomial $g$ with $g(T)=0$ is irreducible iff $k(T)$ is invertible for every nonzero $k$ of lower degree
+title: A polynomial $g$ with $g(T)=0$ is irreducible iff $k(T)$ is invertible for
+  every nonzero $k$ of lower degree
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - irreducibility-criteria
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Irreducibility Criteria
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

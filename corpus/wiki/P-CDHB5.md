@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - abelian-groups
+  - Modules
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

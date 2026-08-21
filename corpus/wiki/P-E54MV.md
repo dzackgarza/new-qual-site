@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - irreducibility-criteria
-  - permutations
+  - Galois Theory
+  - Irreducibility Criteria
+  - Permutations
 relations: []
 review: draft
 solved: false

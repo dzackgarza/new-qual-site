@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-YJFBZ
 kind: problem
-title: Zeros of $P_n(z)=\sum_{k=0}^n z^k/k!$ and of $P_n-1$ in $|z|<10$ for large $n$
+title: Zeros of $P_n(z)=\sum_{k=0}^n z^k/k!$ and of $P_n-1$ in $|z|<10$ for large
+  $n$
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
-  - uniform-convergence
+  - Rouché
+  - Zeros
+  - Polynomials
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 For each $n\in \ZZ^{\geq 1}$, let
 \[

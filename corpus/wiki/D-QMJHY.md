@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-QMJHY
 kind: definition
-title: "Weak Homotopy Equivalence"
+title: Weak Homotopy Equivalence
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - cell-complexes
+  - Homotopy
+  - Cell Complexes
 relations: []
 review: draft
 ---

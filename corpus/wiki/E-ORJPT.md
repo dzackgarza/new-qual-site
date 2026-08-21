@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - weierstrass-factorization
-  - convergence-tests
-  - series-of-numbers
+  - Weierstrass Factorization
+  - Convergence Tests
+  - Series of Numbers
 relations: []
 review: draft
 solved: false

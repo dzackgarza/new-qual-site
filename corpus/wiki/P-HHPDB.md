@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HHPDB
 kind: problem
-title: Uniform convergence $f*\phi_t\to f$ as $t\to 0$ for bounded uniformly continuous $f$ when $\int\phi=1$
+title: Uniform convergence $f*\phi_t\to f$ as $t\to 0$ for bounded uniformly continuous
+  $f$ when $\int\phi=1$
 classification:
   areas:
   - real-analysis
   topics:
-  - approximations-to-the-identity
-  - convolution
-  - uniform-convergence
+  - Approximations to the Identity
+  - Convolution
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true

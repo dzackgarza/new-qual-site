@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - solvable-groups
+  - p-Groups
+  - Solvable Groups
 relations: []
 review: draft
 solved: false

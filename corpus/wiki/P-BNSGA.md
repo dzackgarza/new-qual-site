@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - covering-spaces
+  - Fundamental Group
+  - van Kampen
+  - Covering Spaces
 relations: []
 review: draft
 solved: false

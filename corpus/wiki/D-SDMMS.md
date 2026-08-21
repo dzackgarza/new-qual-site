@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-SDMMS
 kind: definition
-title: "Lebesgue Number"
+title: Lebesgue Number
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - metric-spaces
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 ---
+
 :::{.definition title="Lebesgue Number"}
 For $(X, d)$ a compact metric space and $\theset{U_\alpha}\covers X$, there exists a **Lebesgue number** $\delta_{L} > 0$ which satisfies
 \[

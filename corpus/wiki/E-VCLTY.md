@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-VCLTY
 kind: exercise
-title: "Laurent expansions about different points"
+title: Laurent expansions about different points
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - poles
-  - principal-parts
+  - Laurent Series
+  - Poles
+  - Principal Parts
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Laurent expansions about different points"}
 Find the Laurent expansion about $z=0$ and $z=1$ respectively of the following function:
 \[

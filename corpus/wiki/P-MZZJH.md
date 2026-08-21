@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - surfaces
-  - euler-characteristic
+  - Covering Spaces
+  - Surfaces
+  - Euler Characteristic
 relations: []
 review: draft
 solved: false

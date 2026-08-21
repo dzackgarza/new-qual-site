@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - continuity
-  - stone-weierstrass
+  - Convergence of Integrals
+  - Continuity
+  - Stone-Weierstrass
 relations: []
 review: draft
 solved: true
 ---
+
 Prove that if $f: [0, 1] \to \RR$ is continuous then
 \[
 \lim_{k\to\infty} \int_0^1 kx^{k-1} f(x) \,dx = f(1)

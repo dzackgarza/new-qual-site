@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-OOHFS
 kind: proposition
-title: "Half-plane to Disc (Cayley Transform, very important)"
+title: Half-plane to Disc (Cayley Transform, very important)
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Half-plane to Disc (Cayley Transform, very important)"}
 \[
 \Psi: \HH&\mapstofrom \DD \\

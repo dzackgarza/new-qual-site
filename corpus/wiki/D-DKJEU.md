@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-DKJEU
 kind: definition
-title: "Linear fractional transformation / Mobius transformation"
+title: Linear fractional transformation / Mobius transformation
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
+  - Fractional Linear Transformations
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.definition title="Linear fractional transformation / Mobius transformation"}
 A map of the following form is a *linear fractional transformation*:
 \[

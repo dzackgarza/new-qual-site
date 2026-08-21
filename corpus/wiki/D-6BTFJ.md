@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-6BTFJ
 kind: definition
-title: "The symmetric group"
+title: The symmetric group
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - group-presentations
+  - Permutations
+  - Group Presentations
 relations: []
 review: draft
 ---
+
 :::{.definition title="The symmetric group"}
 The transposition presentation:
 \[

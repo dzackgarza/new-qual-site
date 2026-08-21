@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-MEWTS
 kind: theorem
-title: "Characterization of conformal maps"
+title: Characterization of conformal maps
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - blaschke-factors
-  - conformal-maps
+  - Biholomorphisms
+  - Blaschke Factors
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Characterization of conformal maps"}
 Conformal maps $\DD\to\DD$ have the form
 \[

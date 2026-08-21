@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-VUBCC
 kind: proposition
-title: "Zeros of holomorphic functions are isolated"
+title: Zeros of holomorphic functions are isolated
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - holomorphic-functions
+  - Zeros
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

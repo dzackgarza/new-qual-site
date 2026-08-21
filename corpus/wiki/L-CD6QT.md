@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: L-CD6QT
 kind: lemma
-title: "JCF from Minimal and Characteristic Polynomials"
+title: JCF from Minimal and Characteristic Polynomials
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - minimal-and-characteristic-polynomials
-  - eigenvalues-and-eigenvectors
+  - Jordan Canonical Form
+  - Minimal and Characteristic Polynomials
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 ---

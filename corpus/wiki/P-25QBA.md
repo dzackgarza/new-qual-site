@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-25QBA
 kind: problem
-title: Translation-invariant subspaces of $L^1$ as convolution algebras relative to $L^2$
+title: Translation-invariant subspaces of $L^1$ as convolution algebras relative to
+  $L^2$
 classification:
   areas:
   - algebra
   topics:
-  - convolution
-  - function-spaces
-  - algebras
+  - Convolution
+  - Function Spaces
+  - Algebras
 relations: []
 review: draft
 solved: false

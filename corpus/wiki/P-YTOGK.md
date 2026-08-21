@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-YTOGK
 kind: problem
-title: Hölder's inequality $\bigl\|\prod f_j\bigr\|_r\le\prod\|f_j\|_{p_j}$ when $\sum 1/p_j=1/r\le 1$
+title: Hölder's inequality $\bigl\|\prod f_j\bigr\|_r\le\prod\|f_j\|_{p_j}$ when $\sum
+  1/p_j=1/r\le 1$
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - norms
+  - Lp Spaces
+  - Norms
 relations: []
 review: draft
 solved: true

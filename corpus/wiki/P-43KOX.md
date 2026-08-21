@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - product-topology
+  - Connectedness
+  - Product Topology
 relations: []
 review: draft
 solved: true

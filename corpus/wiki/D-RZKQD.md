@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-RZKQD
 kind: definition
-title: "Suspension"
+title: Suspension
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homotopy
-  - homology
+  - Cell Complexes
+  - Homotopy
+  - Homology
 relations: []
 review: draft
 ---

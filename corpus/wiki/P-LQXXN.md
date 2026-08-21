@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-LQXXN
 kind: problem
-title: "Hungerford 5.1.8"
+title: Hungerford 5.1.8
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - polynomials
+  - Field Extensions
+  - Polynomials
 relations: []
 review: draft
 solved: false

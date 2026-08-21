@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-CIAF4
 kind: problem
-title: Finite-index subgroups of finitely generated free groups are free; infinite-index normal subgroups are not finitely generated
+title: Finite-index subgroups of finitely generated free groups are free; infinite-index
+  normal subgroups are not finitely generated
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - groups
-  - fundamental-group
+  - Covering Spaces
+  - Groups
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

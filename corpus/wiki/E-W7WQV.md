@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - uniform-convergence
-  - polynomials
+  - Power Series
+  - Uniform Convergence
+  - Polynomials
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-W2QAA
 kind: definition
-title: "Derived Series"
+title: Derived Series
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - solvable-groups
-  - commutators
+  - Subgroup Series
+  - Solvable Groups
+  - Commutators
 relations: []
 review: draft
 ---

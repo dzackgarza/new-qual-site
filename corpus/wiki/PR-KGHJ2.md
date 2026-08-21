@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-KGHJ2
 kind: proposition
-title: "Stabilizers of all orbit reps are conjugate"
+title: Stabilizers of all orbit reps are conjugate
 classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - conjugacy
-  - group-actions
+  - Orbit-Stabilizer
+  - Conjugacy
+  - Group Actions
 relations: []
 review: draft
 ---

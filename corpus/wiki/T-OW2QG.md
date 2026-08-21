@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-OW2QG
 kind: theorem
-title: "Hahn-Banach"
+title: Hahn-Banach
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - dual-spaces
+  - Functional Analysis
+  - Dual Spaces
 relations: []
 review: draft
 ---

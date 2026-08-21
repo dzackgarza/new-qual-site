@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - riemann-integrability
-  - continuity
-  - counterexamples
+  - Riemann Integrability
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true

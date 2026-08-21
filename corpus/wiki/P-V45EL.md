@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-V45EL
 kind: problem
-title: Representations of a finite $p$-group on a vector space over a finite field of characteristic $p$
+title: Representations of a finite $p$-group on a vector space over a finite field
+  of characteristic $p$
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - p-groups
-  - characteristic
+  - Representation Theory
+  - p-Groups
+  - Characteristic
 relations: []
 review: draft
 solved: false

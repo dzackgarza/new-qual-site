@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - continuity
+  - Uniform Convergence
+  - Continuity
 relations: []
 review: draft
 solved: true

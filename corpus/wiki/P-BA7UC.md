@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-BA7UC
 kind: problem
-title: Definition of a splitting field, and a finite extension of $\FF_q$ as a Galois splitting field
+title: Definition of a splitting field, and a finite extension of $\FF_q$ as a Galois
+  splitting field
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - finite-fields
-  - galois-theory
+  - Splitting Fields
+  - Finite Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

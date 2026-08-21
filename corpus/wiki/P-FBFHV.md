@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FBFHV
 kind: problem
-title: Fundamental group and homology of two $2$-spheres glued by a two-sheeted covering of equators
+title: Fundamental group and homology of two $2$-spheres glued by a two-sheeted covering
+  of equators
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homology
-  - covering-spaces
+  - Fundamental Group
+  - Homology
+  - Covering Spaces
 relations: []
 review: draft
 solved: false

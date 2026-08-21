@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-QBQLM
 kind: theorem
-title: "Construction of Finite Fields"
+title: Construction of Finite Fields
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - splitting-fields
-  - irreducibility-criteria
+  - Finite Fields
+  - Splitting Fields
+  - Irreducibility Criteria
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-4URWK
 kind: problem
-title: "Is every product (finite or infinite) of Hausdorff spaces Hausdorff?"
+title: Is every product (finite or infinite) of Hausdorff spaces Hausdorff?
 classification:
   areas:
   - topology
   topics:
-  - hausdorff-spaces
-  - product-topology
+  - Hausdorff Spaces
+  - Product Topology
 relations: []
 review: draft
 solved: false

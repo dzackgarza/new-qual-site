@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-TZN4M
 kind: proposition
-title: "Characterization of finite normal extensions as splitting fields"
+title: Characterization of finite normal extensions as splitting fields
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - field-extensions
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 ---

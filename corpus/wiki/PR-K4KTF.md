@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-K4KTF
 kind: proposition
-title: "Meromorphic continuation of $\\zeta$"
+title: Meromorphic continuation of $\zeta$
 classification:
   areas:
   - complex-analysis
   topics:
-  - riemann-zeta
-  - meromorphic-functions
+  - Riemann Zeta
+  - Meromorphic Functions
 relations: []
 review: draft
 ---

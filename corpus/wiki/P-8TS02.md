@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - homotopy
-  - degree
+  - Covering Spaces
+  - Homotopy
+  - Degree
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FS6II
 kind: problem
-title: Tonelli's theorem and the layer-cake representation of a nonnegative measurable function
+title: Tonelli's theorem and the layer-cake representation of a nonnegative measurable
+  function
 classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - measure-theory
-  - integrals
+  - Fubini-Tonelli
+  - Measure Theory
+  - Integrals
 relations: []
 review: draft
 solved: true

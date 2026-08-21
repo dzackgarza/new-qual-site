@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-SN2OH
 kind: definition
-title: "Topological Notions in Analysis"
+title: Topological Notions in Analysis
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - limits
+  - Point-Set Topology
+  - Limits
 relations: []
 review: draft
 ---

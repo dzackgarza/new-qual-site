@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-7UIPO
 kind: definition
-title: "Transitive Subgroup"
+title: Transitive Subgroup
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - permutations
-  - subgroups
+  - Group Actions
+  - Permutations
+  - Subgroups
 relations: []
 review: draft
 ---

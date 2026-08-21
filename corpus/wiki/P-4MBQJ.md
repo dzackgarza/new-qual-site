@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-4MBQJ
 kind: problem
-title: Proper submodules of a Noetherian module are finite intersections of intersection-indecomposable submodules
+title: Proper submodules of a Noetherian module are finite intersections of intersection-indecomposable
+  submodules
 classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - modules
-  - primary-decomposition
+  - Noetherian Rings
+  - Modules
+  - Primary Decomposition
 relations: []
 review: draft
 solved: false

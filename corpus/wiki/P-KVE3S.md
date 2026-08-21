@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - function-spaces
-  - norms
-  - completeness
+  - Function Spaces
+  - Norms
+  - Completeness
 relations: []
 review: draft
 solved: true
 ---
+
 Show that the space $C^1([a, b])$ is a Banach space when equipped with the norm
 \[
 \|f\|:=\sup _{x \in[a, b]}|f(x)|+\sup _{x \in[a, b]}\left|f^{\prime}(x)\right|.

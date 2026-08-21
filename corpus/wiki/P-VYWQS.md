@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-VYWQS
 kind: problem
-title: An element of a commutative ring is noninvertible if and only if it lies in a maximal ideal
+title: An element of a commutative ring is noninvertible if and only if it lies in
+  a maximal ideal
 classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
-  - rings
+  - Maximal Ideals
+  - Ideals
+  - Rings
 relations: []
 review: draft
 solved: false

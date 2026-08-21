@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-ALB7C
 kind: exercise
-title: "Poles of derivatives"
+title: Poles of derivatives
 classification:
   areas:
   - complex-analysis
   topics:
-  - poles
-  - laurent-series
-  - principal-parts
+  - Poles
+  - Laurent Series
+  - Principal Parts
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Poles of derivatives"}
 Show that if $z_0$ is a pole of order $n$ of $f$, then it is a pole of order $n+k$ for $f^{(k)}$.
 

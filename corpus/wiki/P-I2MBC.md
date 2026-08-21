@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - tensor-products
-  - abelian-groups
-  - cyclic-groups
+  - Tensor Products
+  - Abelian Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-4GDBQ
 kind: problem
-title: "Existence of multiple values in branches"
+title: Existence of multiple values in branches
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
-  - continuity
-  - counterexamples
+  - Complex Logarithm
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Existence of multiple values in branches"}
 Let $z_0 = r_0e^{i\pi} \in (-\infty, 0) \subseteq \RR$, and show that $z^{1\over 2}$ is not continuous along $(-\infty, 0)$ by computing
 \[

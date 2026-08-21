@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-JSZ77
 kind: definition
-title: "Regular ring"
+title: Regular ring
 classification:
   areas:
   - algebra
   topics:
-  - commutative-algebra
-  - local-rings
-  - noetherian-rings
+  - Commutative Algebra
+  - Local Rings
+  - Noetherian Rings
 relations: []
 review: draft
 ---

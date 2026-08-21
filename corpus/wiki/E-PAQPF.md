@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: E-PAQPF
 kind: exercise
-title: "Polar CR equations"
+title: Polar CR equations
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
+  - Cauchy-Riemann
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Polar CR equations"}
 Show that in polar coordinates, the CR equations take the following form:
 \[  

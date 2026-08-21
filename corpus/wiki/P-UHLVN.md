@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - classification
-  - polynomials
+  - Galois Theory
+  - Classification
+  - Polynomials
 relations: []
 review: draft
 solved: false

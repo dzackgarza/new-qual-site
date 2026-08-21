@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-DJZLY
 kind: proposition
-title: "Isomorphism theorems"
+title: Isomorphism theorems
 classification:
   areas:
   - algebra
   topics:
-  - isomorphism-theorems
-  - modules
-  - homomorphisms
+  - Isomorphism Theorems
+  - Modules
+  - Homomorphisms
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Isomorphism theorems"}
 \[
 M / \ker \phi &\cong \im \phi \\

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-JUYFQ
 kind: definition
-title: "Module Morphisms"
+title: Module Morphisms
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - homomorphisms
+  - Modules
+  - Homomorphisms
 relations: []
 review: draft
 ---

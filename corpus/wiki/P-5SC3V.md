@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - euclidean-domains
-  - counterexamples
+  - Principal Ideal Domains
+  - Euclidean Domains
+  - Counterexamples
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-EMISN
 kind: exercise
-title: "Power series are continuous"
+title: Power series are continuous
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - continuity
-  - uniform-convergence
+  - Power Series
+  - Continuity
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true

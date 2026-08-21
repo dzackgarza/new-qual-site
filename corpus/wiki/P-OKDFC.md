@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-OKDFC
 kind: problem
-title: A countable base implies a countable dense subset, and the converse in metric spaces
+title: A countable base implies a countable dense subset, and the converse in metric
+  spaces
 classification:
   areas:
   - topology
   topics:
-  - countability
-  - density
-  - metric-spaces
+  - Countability
+  - Density
+  - Metric Spaces
 relations: []
 review: draft
 solved: false

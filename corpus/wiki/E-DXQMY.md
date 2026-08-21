@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-DXQMY
 kind: exercise
-title: "Schwarz-Pick Lemma"
+title: Schwarz-Pick Lemma
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - blaschke-factors
-  - fractional-linear-transformations
+  - Schwarz Lemma
+  - Blaschke Factors
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="Schwarz-Pick Lemma"}
 Prove the following:
 suppose $\abs{f(z)}\leq 1$, then for all $z, w\in \DD$,

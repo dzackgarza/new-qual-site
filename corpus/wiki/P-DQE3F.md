@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-DQE3F
 kind: problem
-title: '$L^1$ convergence of an $L^2$ sequence: the limit, a.e. failure, and an a.e. subsequence'
+title: '$L^1$ convergence of an $L^2$ sequence: the limit, a.e. failure, and an a.e.
+  subsequence'
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - convergence-of-functions
-  - l1
+  - Lp Spaces
+  - Convergence of Functions
+  - L¹
 relations: []
 review: draft
 solved: true

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-EF2MZ
 kind: theorem
-title: "Sylow 2"
+title: Sylow 2
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - conjugacy
+  - Sylow Theory
+  - Conjugacy
 relations: []
 review: draft
 ---

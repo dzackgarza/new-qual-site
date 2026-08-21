@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - integrals
-  - l1
+  - Fubini-Tonelli
+  - Integrals
+  - L¹
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Define
 $$

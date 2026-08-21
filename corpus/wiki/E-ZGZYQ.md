@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-ZGZYQ
 kind: exercise
-title: "$\\sin(x)/x$ and $\\cos(x)/x$"
+title: $\sin(x)/x$ and $\cos(x)/x$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$\sin(x)/x$ and $\cos(x)/x$"}
 Compute
 \[

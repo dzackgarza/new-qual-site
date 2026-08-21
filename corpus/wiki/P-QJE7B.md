@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-QJE7B
 kind: problem
-title: $\{v_1+v_2,\, v_2-v_3,\, v_2+2v_3\}$ is a basis whenever $\{v_1,v_2,v_3\}$ is
+title: $\{v_1+v_2,\, v_2-v_3,\, v_2+2v_3\}$ is a basis whenever $\{v_1,v_2,v_3\}$
+  is
 classification:
   areas:
   - prelim
   topics:
-  - vector-spaces
-  - bases
+  - Vector Spaces
+  - Bases
 relations: []
 review: draft
 solved: true

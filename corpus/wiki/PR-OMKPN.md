@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-OMKPN
 kind: proposition
-title: "Separability test: identically zero derivative"
+title: 'Separability test: identically zero derivative'
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - polynomials
+  - Separability
+  - Polynomials
 relations: []
 review: draft
 ---

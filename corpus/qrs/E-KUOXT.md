@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - approximations-to-the-identity
-  - convolution
-  - uniform-convergence
+  - Approximations to the Identity
+  - Convolution
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true

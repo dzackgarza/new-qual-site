@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - cantor-set
-  - measure-theory
+  - Cantor Set
+  - Measure Theory
 relations: []
 review: draft
 solved: true

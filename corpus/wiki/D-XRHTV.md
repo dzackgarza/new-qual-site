@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - point-set
+  - Point-Set Topology
 relations: []
 review: draft
 ---

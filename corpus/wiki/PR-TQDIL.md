@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-TQDIL
 kind: proposition
-title: "Half-discs to half strips"
+title: Half-discs to half strips
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Half-discs to half strips"}
 \[
 F: (-{\pi\over 2}, {\pi \over 2}) \cross \RR^{>0} &\to \DD \intersect \HH \\

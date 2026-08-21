@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-BPBSQ
 kind: definition
-title: "Singularities at infinity"
+title: Singularities at infinity
 classification:
   areas:
   - complex-analysis
   topics:
-  - singularities
+  - Singularities
 relations: []
 review: draft
 ---

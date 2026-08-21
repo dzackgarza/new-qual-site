@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - holomorphic-functions
-  - meromorphic-functions
-  - harmonic-functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
+  - Meromorphic Functions
+  - Harmonic Functions
 relations: []
 review: draft
 solved: false

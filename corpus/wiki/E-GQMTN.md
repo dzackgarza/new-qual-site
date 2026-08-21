@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - counterexamples
+  - Liouville's Theorem
+  - Entire Functions
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Find all entire functions $f$ satisfying
 \[

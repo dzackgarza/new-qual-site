@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-TVKFM
 kind: definition
-title: "Topological Notions"
+title: Topological Notions
 classification:
   areas:
   - real-analysis
   topics:
-  - metric-spaces
-  - closure
+  - Metric Spaces
+  - Closure
 relations: []
 review: draft
 ---

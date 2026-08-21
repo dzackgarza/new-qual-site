@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-MNEPM
 kind: problem
-title: 'Linear functionals: definition, boundedness equivalent to continuity, and completeness of the dual'
+title: 'Linear functionals: definition, boundedness equivalent to continuity, and
+  completeness of the dual'
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - functional-analysis
-  - norms
-  - continuity
+  - Dual Spaces
+  - Functional Analysis
+  - Norms
+  - Continuity
 relations: []
 review: draft
 solved: true

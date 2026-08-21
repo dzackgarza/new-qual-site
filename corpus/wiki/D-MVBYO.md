@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-MVBYO
 kind: definition
-title: "Comparability of topologies"
+title: Comparability of topologies
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - continuity
+  - Point-Set Topology
+  - Continuity
 relations: []
 review: draft
 ---

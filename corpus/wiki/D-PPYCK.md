@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-PPYCK
 kind: definition
-title: "Equicontinuity"
+title: Equicontinuity
 classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - normal-families
+  - Equicontinuity
+  - Normal Families
 relations: []
 review: draft
 ---
+
 :::{.definition title="Equicontinuity"}
 A family $\mcf$ of holomorphic functions is **equicontinuous** on $K$ if 
 \[

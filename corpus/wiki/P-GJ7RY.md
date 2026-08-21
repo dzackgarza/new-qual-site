@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - function-spaces
-  - completeness
-  - norms
+  - Function Spaces
+  - Completeness
+  - Norms
 relations: []
 review: draft
 solved: true
 ---
+
 Let $C([0, 1])$ denote the space of all continuous real-valued functions on $[0, 1]$.
   
 a. Prove that $C([0, 1])$ is complete under the uniform norm $\norm{f}_u := \displaystyle\sup_{x\in [0,1]} |f (x)|$.

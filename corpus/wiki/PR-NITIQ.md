@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-NITIQ
 kind: proposition
-title: "Well-definedness of pole order"
+title: Well-definedness of pole order
 classification:
   areas:
   - complex-analysis
   topics:
-  - poles
+  - Poles
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Well-definedness of pole order"}
 In this case there exists a minimal $n$ and a holomorphic $h$ such that
 \[  

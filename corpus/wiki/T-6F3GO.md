@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: T-6F3GO
 kind: theorem
-title: "Arzel\u00e0-Ascoli (analog of Heine-Borel)"
+title: Arzelà-Ascoli (analog of Heine-Borel)
 classification:
   areas:
   - complex-analysis
   topics:
-  - arzela-ascoli
-  - equicontinuity
-  - compactness
-  - uniform-convergence
+  - Arzelà-Ascoli
+  - Equicontinuity
+  - Compactness
+  - Uniform Convergence
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Arzelà-Ascoli (analog of Heine-Borel)"}
 For $X$ compact Hausdorff, consider the Banach space $C(X; \RR)$ equipped with the *uniform norm* 
 \[

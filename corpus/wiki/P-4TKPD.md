@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - hausdorff-spaces
+  - Cell Complexes
+  - Hausdorff Spaces
 relations: []
 review: draft
 solved: false

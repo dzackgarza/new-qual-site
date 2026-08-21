@@ -7,12 +7,13 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - counterexamples
+  - Connectedness
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let 
 $$

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - exact-sequences
+  - Abelian Groups
+  - Exact Sequences
 relations: []
 review: draft
 solved: false

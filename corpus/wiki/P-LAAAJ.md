@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - polynomials
+  - Factorization
+  - Polynomials
 relations: []
 review: draft
 solved: false

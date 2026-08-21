@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - van-kampen
-  - fundamental-group
-  - quotient-spaces
+  - van Kampen
+  - Fundamental Group
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

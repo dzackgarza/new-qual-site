@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
+  - Hilbert Spaces
 relations: []
 review: draft
 solved: false

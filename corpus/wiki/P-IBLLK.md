@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - cell-complexes
-  - quotient-spaces
+  - Homology
+  - Cell Complexes
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

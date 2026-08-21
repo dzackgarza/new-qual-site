@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - series
+  - Series
 relations: []
 review: draft
 solved: false

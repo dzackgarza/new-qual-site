@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - finite-fields
-  - permutations
+  - Matrix Groups
+  - Finite Fields
+  - Permutations
 relations: []
 review: draft
 solved: false

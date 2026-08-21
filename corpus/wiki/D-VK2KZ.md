@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-VK2KZ
 kind: definition
-title: "Discrete Valuation Rings"
+title: Discrete Valuation Rings
 classification:
   areas:
   - algebra
   topics:
-  - valuation-rings
-  - local-rings
-  - principal-ideal-domains
+  - Valuation Rings
+  - Local Rings
+  - Principal Ideal Domains
 relations: []
 review: draft
 ---

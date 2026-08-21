@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: E-MIIW7
 kind: exercise
-title: "Schwarz with domain/codomain scaled"
+title: Schwarz with domain/codomain scaled
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
+  - Schwarz Lemma
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Schwarz with domain/codomain scaled"}
 If $f: \DD_R(a)\to\DD_M(0)$ with $f(a) = 0$, then 
 \[

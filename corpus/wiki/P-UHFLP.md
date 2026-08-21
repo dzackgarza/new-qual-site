@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-UHFLP
 kind: problem
-title: The space of continuous real functions on a complete metric space is complete in the max norm
+title: The space of continuous real functions on a complete metric space is complete
+  in the max norm
 classification:
   areas:
   - real-analysis
   topics:
-  - function-spaces
-  - completeness
-  - norms
+  - Function Spaces
+  - Completeness
+  - Norms
 relations: []
 review: draft
 solved: true
 ---
+
 Let $X$ be a complete metric space and define a norm
 $$
 \|f\|:=\max \{|f(x)|: x \in X\}.

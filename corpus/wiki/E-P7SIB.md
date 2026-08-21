@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: E-P7SIB
 kind: exercise
-title: "Trig identities"
+title: Trig identities
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Trig identities"}
 Find an identity for $\cos(4\theta)$ in terms of $\sin(\theta)$ and $\cos(\theta)$.
 :::

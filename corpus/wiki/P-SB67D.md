@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - rings
-  - polynomials
+  - Roots of Unity
+  - Rings
+  - Polynomials
 relations: []
 review: draft
 solved: false

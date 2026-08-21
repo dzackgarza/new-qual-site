@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-YZ4WV
 kind: problem
-title: An isolated singularity at $0$ is essential if a nonconstant analytic $f$ on $|z|>0$ has zeros accumulating at $0$
+title: An isolated singularity at $0$ is essential if a nonconstant analytic $f$ on
+  $|z|>0$ has zeros accumulating at $0$
 classification:
   areas:
   - complex-analysis
   topics:
-  - essential-singularities
-  - singularities
-  - identity-theorem
-  - zeros
+  - Essential Singularities
+  - Singularities
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 solved: true

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - smith-normal-form
-  - canonical-forms
-  - principal-ideal-domains
+  - Smith Normal Form
+  - Canonical Forms
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

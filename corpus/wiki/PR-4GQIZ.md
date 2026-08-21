@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-4GQIZ
 kind: proposition
-title: "Equivalent conditions for cyclic vectors"
+title: Equivalent conditions for cyclic vectors
 classification:
   areas:
   - algebra
   topics:
-  - rational-canonical-form
-  - minimal-and-characteristic-polynomials
-  - modules
+  - Rational Canonical Form
+  - Minimal and Characteristic Polynomials
+  - Modules
 relations: []
 review: draft
 ---

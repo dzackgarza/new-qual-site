@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-AGH3O
 kind: problem
-title: "Consider the function"
+title: Consider the function
 classification:
   areas:
   - real-analysis
   topics:
-  - maximal-functions
-  - l1
-  - counterexamples
+  - Maximal Functions
+  - L¹
+  - Counterexamples
 relations: []
 review: draft
 solved: true

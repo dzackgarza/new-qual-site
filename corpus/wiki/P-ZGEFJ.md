@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-ZGEFJ
 kind: problem
-title: "$IS$ is a submodule of $A$"
+title: $IS$ is a submodule of $A$
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - ideals
+  - Modules
+  - Ideals
 relations: []
 review: draft
 solved: false

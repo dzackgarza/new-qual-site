@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-TRW6N
 kind: theorem
-title: "Bounded Convergence"
+title: Bounded Convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - measure-theory
+  - Convergence of Integrals
+  - Measure Theory
 relations: []
 review: draft
 ---

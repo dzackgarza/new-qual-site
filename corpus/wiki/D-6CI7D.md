@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-6CI7D
 kind: definition
-title: "Local Orientation"
+title: Local Orientation
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - manifolds
-  - homology
+  - Orientation
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

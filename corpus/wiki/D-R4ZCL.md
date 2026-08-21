@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-R4ZCL
 kind: definition
-title: "Smash Product"
+title: Smash Product
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homotopy
-  - quotient-spaces
+  - Cell Complexes
+  - Homotopy
+  - Quotient Spaces
 relations: []
 review: draft
 ---

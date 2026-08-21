@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-JLDJ6
 kind: proposition
-title: "Computing Cyclotomic Polynomials"
+title: Computing Cyclotomic Polynomials
 classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - polynomials
-  - number-theory
+  - Roots of Unity
+  - Polynomials
+  - Number Theory
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Computing Cyclotomic Polynomials"}
 **Computing $\Phi_n$:**
 

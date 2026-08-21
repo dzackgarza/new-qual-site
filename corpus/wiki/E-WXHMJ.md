@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-WXHMJ
 kind: exercise
-title: "Poles of elliptic functions"
+title: Poles of elliptic functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
-  - poles
-  - residues
-  - liouville-s-theorem
+  - Meromorphic Functions
+  - Poles
+  - Residues
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Poles of elliptic functions"}
 Let $f$ be an elliptic function and $P$ be its fundamental parallelogram.
 Supposing that $f$ is nonconstant, show that $f$ has at least two poles in $P$ (counted with multiplicity).

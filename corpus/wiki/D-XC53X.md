@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-XC53X
 kind: definition
-title: "Degree of a Map of Spheres"
+title: Degree of a Map of Spheres
 classification:
   areas:
   - topology
   topics:
-  - degree
-  - homology
+  - Degree
+  - Homology
 relations: []
 review: draft
 ---

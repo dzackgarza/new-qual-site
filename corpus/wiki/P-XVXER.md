@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
-  - geometry
-  - matrix-groups
+  - Groups
+  - Geometry
+  - Matrix Groups
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-7DSGZ
 kind: exercise
-title: An injective continuous map from a compact space to a Hausdorff space is an embedding
+title: An injective continuous map from a compact space to a Hausdorff space is an
+  embedding
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - homeomorphisms
+  - Compactness
+  - Hausdorff Spaces
+  - Homeomorphisms
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-3WZH2
 kind: problem
-title: Implicit function theorem for $f(s,t)=ps^3-6st+t^2$ at $(1,3)$, over $\RR$ and $\CC$
+title: Implicit function theorem for $f(s,t)=ps^3-6st+t^2$ at $(1,3)$, over $\RR$
+  and $\CC$
 classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
-  - cauchy-riemann
-  - holomorphic-functions
+  - Calculus
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

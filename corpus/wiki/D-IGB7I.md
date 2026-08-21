@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-IGB7I
 kind: definition
-title: "Free rank"
+title: Free rank
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - bases
+  - Free Modules
+  - Bases
 relations: []
 review: draft
 ---

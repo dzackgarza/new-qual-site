@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-ULJAJ
 kind: proposition
-title: "Properties of hyperbolic translations / Blaschke factors"
+title: Properties of hyperbolic translations / Blaschke factors
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - biholomorphisms
+  - Blaschke Factors
+  - Biholomorphisms
 relations: []
 review: draft
 ---

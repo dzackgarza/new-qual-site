@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-2CN7G
 kind: problem
-title: "Spring 2021, 2"
+title: Spring 2021, 2
 classification:
   areas:
   - topology
   topics:
-  - product-topology
-  - connectedness
-  - hausdorff-spaces
+  - Product Topology
+  - Connectedness
+  - Hausdorff Spaces
 relations: []
 review: draft
 solved: false

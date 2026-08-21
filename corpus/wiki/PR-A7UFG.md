@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-A7UFG
 kind: proposition
-title: "$L^1$ is closed under convolution."
+title: $L^1$ is closed under convolution.
 classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - l1
+  - Convolution
+  - L¹
 relations: []
 review: draft
 ---

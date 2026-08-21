@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-XCDL5
 kind: proposition
-title: "Log: Upper half-plane to horizontal strip"
+title: 'Log: Upper half-plane to horizontal strip'
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Log: Upper half-plane to horizontal strip"}
 \[
 \HH &\mapstofrom \RR \cross (0, \pi) \\

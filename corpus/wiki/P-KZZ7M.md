@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-KZZ7M
 kind: problem
-title: $\lim_{n\to\infty}\int_{1/n}^1 f_n=\int_0^1 f$ for uniform limits of continuous functions on $[0,1]$
+title: $\lim_{n\to\infty}\int_{1/n}^1 f_n=\int_0^1 f$ for uniform limits of continuous
+  functions on $[0,1]$
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - convergence-of-integrals
+  - Uniform Convergence
+  - Convergence of Integrals
 relations: []
 review: draft
 solved: true

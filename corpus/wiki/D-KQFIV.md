@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-KQFIV
 kind: definition
-title: "Perfect Fields"
+title: Perfect Fields
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - fields
-  - finite-fields
+  - Separability
+  - Fields
+  - Finite Fields
 relations: []
 review: draft
 ---

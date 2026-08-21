@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-3CDLG
 kind: proposition
-title: "Upper half-plane to horizontal strip"
+title: Upper half-plane to horizontal strip
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Upper half-plane to horizontal strip"}
 \[
 F: \HH &\to \RR \times i(0, \pi) \\

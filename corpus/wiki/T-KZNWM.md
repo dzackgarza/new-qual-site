@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-KZNWM
 kind: theorem
-title: "Non-measurable sets exist"
+title: Non-measurable sets exist
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - counterexamples
+  - Measure Theory
+  - Counterexamples
 relations: []
 review: draft
 ---

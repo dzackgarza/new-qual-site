@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-56AFO
 kind: problem
-title: "Integrability of a radial power"
+title: Integrability of a radial power
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - euclidean-spaces
+  - Integrals
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Integrability of a radial power"}
 Let $n\geq 1$ and $p\in\RR$. Show that
 \[

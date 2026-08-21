@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-A4O6K
 kind: problem
-title: A divergent series of positive terms with $a_n\to 0$ has a subseries summing to any $x>0$
+title: A divergent series of positive terms with $a_n\to 0$ has a subseries summing
+  to any $x>0$
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - sequences-of-numbers
+  - Series of Numbers
+  - Sequences of Numbers
 relations: []
 review: draft
 solved: true

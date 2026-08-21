@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-3YESG
 kind: problem
-title: Schwarz reflection across the real axis, and holomorphic functions real on the circle
+title: Schwarz reflection across the real axis, and holomorphic functions real on
+  the circle
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-reflection
-  - fractional-linear-transformations
-  - maximum-modulus-principle
+  - Schwarz Reflection
+  - Fractional Linear Transformations
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true

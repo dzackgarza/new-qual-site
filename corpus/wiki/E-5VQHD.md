@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - uniform-continuity
-  - metric-spaces
+  - Compactness
+  - Uniform Continuity
+  - Metric Spaces
 relations: []
 review: draft
 solved: false

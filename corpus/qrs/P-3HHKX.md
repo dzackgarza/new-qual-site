@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - geometry
+  - Geometry
 relations: []
 review: draft
 solved: true

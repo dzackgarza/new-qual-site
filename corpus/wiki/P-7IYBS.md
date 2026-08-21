@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - jordan-canonical-form
-  - minimal-and-characteristic-polynomials
+  - Diagonalization
+  - Jordan Canonical Form
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

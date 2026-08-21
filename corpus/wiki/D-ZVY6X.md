@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-ZVY6X
 kind: definition
-title: "Local Degree"
+title: Local Degree
 classification:
   areas:
   - topology
   topics:
-  - degree
-  - homology
+  - Degree
+  - Homology
 relations: []
 review: draft
 ---

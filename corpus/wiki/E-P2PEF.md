@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-P2PEF
 kind: exercise
-title: "Holomorphic iff delbar vanishes"
+title: Holomorphic iff delbar vanishes
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Holomorphic iff delbar vanishes"}
 Show that $f$ is holomorphic iff $\delbar f = 0$.
 :::

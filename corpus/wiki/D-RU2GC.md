@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-RU2GC
 kind: definition
-title: "Simplicial Map"
+title: Simplicial Map
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homology
+  - Cell Complexes
+  - Homology
 relations: []
 review: draft
 ---

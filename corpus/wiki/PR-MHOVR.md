@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-MHOVR
 kind: proposition
-title: "Normal extensions are upper transitive, forward implication"
+title: Normal extensions are upper transitive, forward implication
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - splitting-fields
+  - Field Extensions
+  - Splitting Fields
 relations: []
 review: draft
 ---

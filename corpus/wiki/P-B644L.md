@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - subgroups
-  - centralizers-and-normalizers
-  - counterexamples
+  - Subgroups
+  - Centralizers and Normalizers
+  - Counterexamples
 relations: []
 review: draft
 solved: false

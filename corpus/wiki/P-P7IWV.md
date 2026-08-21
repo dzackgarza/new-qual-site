@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - argument-principle
-  - rouche
-  - zeros
-  - polynomials
+  - Argument Principle
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove that $f(z) = z^4 + 2z^3 -2z + 10$ has exactly one root in each open
 quadrant.

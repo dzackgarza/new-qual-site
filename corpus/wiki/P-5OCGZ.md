@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - trigonometric-substitution
+  - Integrals
+  - Trigonometric Substitution
 relations: []
 review: draft
 solved: true

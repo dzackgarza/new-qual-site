@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-3WX4Z
 kind: definition
-title: "Splitting an exact sequence"
+title: Splitting an exact sequence
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - groups
+  - Homological Algebra
+  - Groups
 relations: []
 review: draft
 ---

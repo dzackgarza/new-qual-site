@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-3EZG5
 kind: problem
-title: "Jacobson radical is bigger than the nilradical"
+title: Jacobson radical is bigger than the nilradical
 classification:
   areas:
   - algebra
   topics:
-  - jacobson-radical
-  - nilpotence
-  - ideals
+  - Jacobson Radical
+  - Nilpotence
+  - Ideals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Jacobson radical is bigger than the nilradical"}
 The nilradical is contained in the Jacobson radical, i.e.
 \[

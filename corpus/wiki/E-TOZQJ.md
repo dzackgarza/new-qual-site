@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-TOZQJ
 kind: exercise
-title: "Residue from Laurent expansion: $1/(z - \\sin(z))$"
+title: 'Residue from Laurent expansion: $1/(z - \sin(z))$'
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - laurent-series
-  - poles
-  - trigonometry
+  - Residues
+  - Laurent Series
+  - Poles
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Residue from Laurent expansion: $1/(z - \sin(z))$"}
 Use a direct Laurent expansion to show
 \[

@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-QC7BY
 kind: problem
-title: $f=u+iv$ is complex differentiable at $z_0$ iff $\lim_{r\to 0}\frac{1}{\pi r^2}\int_{|z-z_0|=r}f(z)\,dz=0$
+title: $f=u+iv$ is complex differentiable at $z_0$ iff $\lim_{r\to 0}\frac{1}{\pi
+  r^2}\int_{|z-z_0|=r}f(z)\,dz=0$
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - contour-integration
-  - holomorphic-functions
-  - morera
+  - Cauchy-Riemann
+  - Contour Integration
+  - Holomorphic Functions
+  - Morera
 relations: []
 review: draft
 solved: false

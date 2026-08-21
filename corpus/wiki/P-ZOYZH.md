@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - ideals
-  - semisimplicity
+  - Fields
+  - Ideals
+  - Semisimplicity
 relations: []
 review: draft
 solved: true

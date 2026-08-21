@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-L7LNZ
 kind: proposition
-title: "Uniform Limits Commute with Integrals"
+title: Uniform Limits Commute with Integrals
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - convergence-of-integrals
+  - Uniform Convergence
+  - Convergence of Integrals
 relations: []
 review: draft
 ---

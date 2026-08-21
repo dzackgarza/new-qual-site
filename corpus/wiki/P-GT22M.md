@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - cyclic-groups
-  - normal-subgroups
+  - Galois Theory
+  - Cyclic Groups
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

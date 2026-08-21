@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-GEHJF
 kind: proposition
-title: "Characterizations of Rings"
+title: Characterizations of Rings
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - fields
-  - factorization
+  - Rings
+  - Fields
+  - Factorization
 relations: []
 review: draft
 ---

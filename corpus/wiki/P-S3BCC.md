@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - centralizers-and-normalizers
-  - homomorphisms
+  - Automorphisms
+  - Centralizers and Normalizers
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - subspace-topology
-  - point-set
+  - Subspace Topology
+  - Point-Set Topology
 relations: []
 review: draft
 solved: true

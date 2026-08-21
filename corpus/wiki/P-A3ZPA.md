@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-A3ZPA
 kind: problem
-title: Presentation of $\pi_1(\Sigma_2)$, a surjection onto $F_2$, and no covering $\Sigma_2\to S^1\times S^1$
+title: Presentation of $\pi_1(\Sigma_2)$, a surjection onto $F_2$, and no covering
+  $\Sigma_2\to S^1\times S^1$
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - surfaces
-  - groups
-  - covering-spaces
+  - Fundamental Group
+  - Surfaces
+  - Groups
+  - Covering Spaces
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-EWOP5
 kind: proposition
-title: "Holomorphic functions have isolated zeros"
+title: Holomorphic functions have isolated zeros
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - identity-theorem
-  - holomorphic-functions
+  - Zeros
+  - Identity Theorem
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

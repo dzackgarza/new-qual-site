@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - l1
+  - Density
+  - L¹
 relations: []
 review: draft
 solved: true
 ---
+
 Let 
 $$
 S = \spanof_\CC\theset{\chi_{(a, b)} \suchthat a, b \in \RR},

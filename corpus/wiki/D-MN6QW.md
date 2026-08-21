@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-MN6QW
 kind: definition
-title: "Manifold with boundary"
+title: Manifold with boundary
 classification:
   areas:
   - topology
   topics:
-  - manifolds
+  - Manifolds
 relations: []
 review: draft
 ---

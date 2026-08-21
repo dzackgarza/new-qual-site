@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - matrices
-  - inner-product-spaces
+  - Diagonalization
+  - Matrices
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

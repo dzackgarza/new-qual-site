@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-HWN6T
 kind: definition
-title: "Quasi-isomorphism"
+title: Quasi-isomorphism
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - homology
+  - Homological Algebra
+  - Homology
 relations: []
 review: draft
 ---

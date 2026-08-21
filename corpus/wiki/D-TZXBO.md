@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-TZXBO
 kind: definition
-title: "Noetherian"
+title: Noetherian
 classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - ideals
+  - Noetherian Rings
+  - Ideals
 relations: []
 review: draft
 ---

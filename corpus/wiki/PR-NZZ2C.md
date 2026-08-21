@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: PR-NZZ2C
 kind: proposition
-title: Isolated zeros of $f'$ for nonconstant analytic $f$, and $f'=g'$ implies $f-g$ is constant
+title: Isolated zeros of $f'$ for nonconstant analytic $f$, and $f'=g'$ implies $f-g$
+  is constant
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - holomorphic-functions
+  - Zeros
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-5EVB3
 kind: problem
-title: Hölder, completeness, a.e. uniform convergence, and density of simple functions in $L^\infty$
+title: Hölder, completeness, a.e. uniform convergence, and density of simple functions
+  in $L^\infty$
 classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - norms
-  - density
-  - lp-spaces
+  - L∞
+  - Norms
+  - Density
+  - Lp Spaces
 relations: []
 review: draft
 solved: true

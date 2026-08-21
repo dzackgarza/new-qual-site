@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - conformal-maps
-  - fractional-linear-transformations
+  - Schwarz Lemma
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $f: \DD\to \HH$ is analytic and satisfies $f(0) = 2$.
 Find a sharp upper bound for $\abs{f'(0)}$, and prove it is sharp by example.

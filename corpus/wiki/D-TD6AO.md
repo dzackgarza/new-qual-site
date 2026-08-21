@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - category-theory
+  - Category Theory
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-N4I2S
 kind: problem
-title: "Hungerford 2.7.10"
+title: Hungerford 2.7.10
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - nilpotent-groups
-  - permutations
+  - Solvable Groups
+  - Nilpotent Groups
+  - Permutations
 relations: []
 review: draft
 solved: false

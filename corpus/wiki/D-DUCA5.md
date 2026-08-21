@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-DUCA5
 kind: definition
-title: "Generating Set"
+title: Generating Set
 classification:
   areas:
   - topology
   topics:
-  - modules
+  - Modules
 relations: []
 review: draft
 ---

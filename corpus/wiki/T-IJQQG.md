@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-IJQQG
 kind: theorem
-title: "Dominated Convergence"
+title: Dominated Convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - integrals
-  - l1
+  - Convergence of Integrals
+  - Integrals
+  - L¹
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Dominated Convergence"}
 If $f_n \in L^1$ and $f_n \to f$ almost everywhere with $\abs {f_n} \leq g$ for some $g\in L^1$, then $f\in L^1$ and
 \[

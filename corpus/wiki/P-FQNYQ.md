@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FQNYQ
 kind: problem
-title: Embedding, fundamental group, and homology of a torus with two $2$-cells attached along distinct meridians
+title: Embedding, fundamental group, and homology of a torus with two $2$-cells attached
+  along distinct meridians
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - fundamental-group
-  - homology
+  - Cell Complexes
+  - Fundamental Group
+  - Homology
 relations: []
 review: draft
 solved: false

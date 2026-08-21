@@ -7,10 +7,11 @@ classification:
   areas:
   - topology
   topics:
-  - metric-spaces
+  - Metric Spaces
 relations: []
 review: draft
 ---
+
 :::{.definition title="Diameter"}
 For a subset $A$ of a metric space $(X, d)$, the **diameter** of $A$ is defined as 
 \[

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-FGSRH
 kind: problem
-title: "Fall 2006, 7"
+title: Fall 2006, 7
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - metric-spaces
-  - convergence
+  - Compactness
+  - Metric Spaces
+  - Convergence
 relations: []
 review: draft
 solved: false

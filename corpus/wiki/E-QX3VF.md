@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-QX3VF
 kind: exercise
-title: "Entire functions with poles at infinity"
+title: Entire functions with poles at infinity
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - polynomials
-  - singularities
-  - poles
+  - Entire Functions
+  - Polynomials
+  - Singularities
+  - Poles
 relations: []
 review: draft
 solved: true

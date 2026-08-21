@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-6UHU7
 kind: definition
-title: "Deformation Retract"
+title: Deformation Retract
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - retracts
+  - Homotopy
+  - Retracts
 relations: []
 review: draft
 ---
+
 :::{.definition title="Deformation Retract"}
 A map $r$ in $A\mathrel{\textstyle\substack{\injects^{\iota}\\\textstyle\dashleftarrow_{r}}} X$ that is a retraction (so $r\circ \iota = \id_{A}$) *that also satisfies* $\iota \circ r \homotopic \id_{X}$.
 

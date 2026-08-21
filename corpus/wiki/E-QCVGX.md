@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-QCVGX
 kind: exercise
-title: "Laurent expanding tricky exponentials"
+title: Laurent expanding tricky exponentials
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - power-series
-  - poles
+  - Laurent Series
+  - Power Series
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Laurent expanding tricky exponentials"}
 Find a Laurent expansion for
 \[

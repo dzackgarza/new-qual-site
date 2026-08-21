@@ -7,10 +7,10 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - metric-spaces
-  - completeness
-  - counterexamples
+  - Compactness
+  - Metric Spaces
+  - Completeness
+  - Counterexamples
 relations: []
 review: draft
 solved: true

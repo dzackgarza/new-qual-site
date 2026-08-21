@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - permutations
+  - Centralizers and Normalizers
+  - Permutations
 relations: []
 review: draft
 solved: false

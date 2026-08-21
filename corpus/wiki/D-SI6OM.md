@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-SI6OM
 kind: definition
-title: "Deck transformation"
+title: Deck transformation
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - group-actions
-  - category-theory
+  - Covering Spaces
+  - Group Actions
+  - Category Theory
 relations: []
 review: draft
 ---
+
 :::{.definition title="Deck transformation"}
 Letting $\cat C \da \mathsf{Cov}(X) \leq \Top\slice X$ be the subcategory of the slice category over $X$ of covering maps $\tilde X\to X$, the group of **deck transformations** is given by
 \[

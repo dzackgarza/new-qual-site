@@ -8,9 +8,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - series-of-functions
-  - counterexamples
+  - Fourier Analysis
+  - Series of Functions
+  - Counterexamples
 relations: []
 review: draft
 solved: true

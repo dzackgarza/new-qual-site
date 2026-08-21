@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-EN5H4
 kind: theorem
-title: "$S_n$ is Solvable Exactly Below Degree Five"
+title: $S_n$ is Solvable Exactly Below Degree Five
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - permutations
+  - Solvable Groups
+  - Permutations
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-BQKHS
 kind: proposition
-title: "Orientation covers"
+title: Orientation covers
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - covering-spaces
-  - manifolds
+  - Orientation
+  - Covering Spaces
+  - Manifolds
 relations: []
 review: draft
 ---

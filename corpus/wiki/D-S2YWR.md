@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: D-S2YWR
 kind: definition
-title: "limsup of functions"
+title: limsup of functions
 classification:
   areas:
   - real-analysis
   topics:
-  - limits
+  - Limits
 relations: []
 review: draft
 ---
+
 :::{.definition title="limsup of functions"}
 For $f:A\to \RR$,
 \[

@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - maximum-modulus-principle
-  - polynomials
+  - Rouché
+  - Maximum Modulus Principle
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem}
 Prove that
 \[

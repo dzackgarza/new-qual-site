@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - blaschke-factors
+  - Schwarz Lemma
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true

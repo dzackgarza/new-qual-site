@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-7UFN3
 kind: definition
-title: "Homologous"
+title: Homologous
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 ---

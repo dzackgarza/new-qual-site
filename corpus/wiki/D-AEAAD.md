@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-AEAAD
 kind: definition
-title: "Continuous Map"
+title: Continuous Map
 classification:
   areas:
   - topology
   topics:
-  - continuity
-  - point-set
+  - Continuity
+  - Point-Set Topology
 relations: []
 review: draft
 ---

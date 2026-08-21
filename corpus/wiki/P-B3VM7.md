@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-B3VM7
 kind: problem
-title: Lefschetz fixed-point theorem for finite simplicial complexes, and the case $X=S^n$
+title: Lefschetz fixed-point theorem for finite simplicial complexes, and the case
+  $X=S^n$
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - degree
-  - homology
+  - Fixed Points
+  - Degree
+  - Homology
 relations: []
 review: draft
 solved: false

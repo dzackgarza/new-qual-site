@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-5AALA
 kind: theorem
-title: "Parseval"
+title: Parseval
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - l2
-  - bases
+  - Hilbert Spaces
+  - L²
+  - Bases
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Parseval"}
 Let $\ts{u_n}_{n\in A}$ be an orthonormal set in a Hilbert space $\mch$.
 TFAE:

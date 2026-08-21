@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - polynomials
-  - zeros
-  - entire-functions
+  - Liouville's Theorem
+  - Polynomials
+  - Zeros
+  - Entire Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove the Fundamental Theorem of Algebra (using complex analysis).
 :::

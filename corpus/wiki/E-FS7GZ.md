@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-FS7GZ
 kind: exercise
-title: "Radius of convergence"
+title: Radius of convergence
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - convergence-tests
-  - complex-logarithm
+  - Power Series
+  - Convergence Tests
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true

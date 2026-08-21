@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - splitting-fields
-  - irreducibility-criteria
+  - Finite Fields
+  - Splitting Fields
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: true

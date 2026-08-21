@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-XVHFQ
 kind: problem
-title: $\sum f_n$ with $f_n=\frac1n$ on $(2^{-(n+1)},2^{-n}]$ converges uniformly without the Weierstrass $M$-test
+title: $\sum f_n$ with $f_n=\frac1n$ on $(2^{-(n+1)},2^{-n}]$ converges uniformly
+  without the Weierstrass $M$-test
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - series-of-functions
-  - counterexamples
+  - Uniform Convergence
+  - Series of Functions
+  - Counterexamples
 relations: []
 review: draft
 solved: true

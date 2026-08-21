@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-QXER7
 kind: definition
-title: "Limit"
+title: Limit
 classification:
   areas:
   - topology
   topics:
-  - category-theory
+  - Category Theory
 relations: []
 review: draft
 ---

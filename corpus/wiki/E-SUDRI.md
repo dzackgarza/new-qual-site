@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - polynomials
-  - singularities
-  - casorati-weierstrass
+  - Entire Functions
+  - Polynomials
+  - Singularities
+  - Casorati-Weierstrass
 relations: []
 review: draft
 solved: true

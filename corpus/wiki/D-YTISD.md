@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-YTISD
 kind: definition
-title: "Normal covering space (a.k.a. 'regular')"
+title: Normal covering space (a.k.a. 'regular')
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - group-actions
+  - Covering Spaces
+  - Group Actions
 relations: []
 review: draft
 ---

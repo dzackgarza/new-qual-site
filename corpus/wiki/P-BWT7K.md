@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-BWT7K
 kind: problem
-title: "Hungerford 5.4.11"
+title: Hungerford 5.4.11
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - field-extensions
+  - Galois Theory
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

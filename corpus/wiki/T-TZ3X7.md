@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-TZ3X7
 kind: theorem
-title: "Kunneth"
+title: Kunneth
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - product-topology
-  - homological-algebra
+  - Homology
+  - Product Topology
+  - Homological Algebra
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Kunneth"}
 Let $X, Y$ be CW complexes and $R$ a PID. Then for each $k$ there is a natural short exact sequence
 \[

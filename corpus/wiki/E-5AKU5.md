@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-5AKU5
 kind: exercise
-title: "Uniform limit theorem for holomorphic functions"
+title: Uniform limit theorem for holomorphic functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - morera
-  - uniform-convergence
-  - sequences-of-functions
-  - holomorphic-functions
+  - Morera
+  - Uniform Convergence
+  - Sequences of Functions
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Uniform limit theorem for holomorphic functions"}
 Show that if $f_n\to f$ locally uniformly and each $f_n$ is holomorphic then $f$ is holomorphic.
 

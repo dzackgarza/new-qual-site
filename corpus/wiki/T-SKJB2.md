@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-SKJB2
 kind: theorem
-title: "Homotopy lifting property for covers, Hatcher 1.30"
+title: Homotopy lifting property for covers, Hatcher 1.30
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - homotopy
+  - Covering Spaces
+  - Homotopy
 relations: []
 review: draft
 ---

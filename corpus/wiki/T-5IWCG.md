@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-5IWCG
 kind: theorem
-title: "Functionals are continuous if and only if bounded"
+title: Functionals are continuous if and only if bounded
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - continuity
-  - norms
+  - Dual Spaces
+  - Continuity
+  - Norms
 relations: []
 review: draft
 ---

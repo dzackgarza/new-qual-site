@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-XR64P
 kind: definition
-title: "The Dirichlet Problem"
+title: The Dirichlet Problem
 classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - pdes
+  - Harmonic Functions
+  - PDEs
 relations: []
 review: draft
 ---

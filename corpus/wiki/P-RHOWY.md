@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - galois-theory
-  - simple-groups
+  - Solvable Groups
+  - Galois Theory
+  - Simple Groups
 relations: []
 review: draft
 solved: false

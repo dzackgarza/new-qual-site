@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - density
+  - Measure Theory
+  - Density
 relations: []
 review: draft
 solved: true

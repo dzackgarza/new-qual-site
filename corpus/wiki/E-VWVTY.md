@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-VWVTY
 kind: exercise
-title: "Convergence of a $\\ZZ\\dash$index series"
+title: Convergence of a $\ZZ\dash$index series
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - convergence-tests
-  - power-series
+  - Laurent Series
+  - Convergence Tests
+  - Power Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Convergence of a $\ZZ\dash$index series"}
 Find the radius of convergence for 
 \[

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-4MDS6
 kind: theorem
-title: "Riemann Mapping"
+title: Riemann Mapping
 classification:
   areas:
   - complex-analysis
   topics:
-  - riemann-mapping
-  - conformal-maps
-  - biholomorphisms
+  - Riemann Mapping
+  - Conformal Maps
+  - Biholomorphisms
 relations: []
 review: draft
 ---

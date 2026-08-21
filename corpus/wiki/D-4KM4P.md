@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-4KM4P
 kind: definition
-title: "Simple Modules"
+title: Simple Modules
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
+  - Modules
+  - Semisimplicity
 relations: []
 review: draft
 ---

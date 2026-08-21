@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - norms
-  - lp-spaces
+  - L∞
+  - Norms
+  - Lp Spaces
 relations: []
 review: draft
 solved: true

@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-5YLZS
 kind: problem
-title: $F'(t)=-\int_{-\infty}^{\infty} xf(x)\sin(xt)\,dx$ for $F(t)=\int_{-\infty}^{\infty} f(x)\cos(xt)\,dx$
+title: $F'(t)=-\int_{-\infty}^{\infty} xf(x)\sin(xt)\,dx$ for $F(t)=\int_{-\infty}^{\infty}
+  f(x)\cos(xt)\,dx$
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - integrals
+  - Differentiation
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 Suppose $f(x)$ and $xf(x)$ are integrable on $\RR$.
 Define $F$ by
 \[

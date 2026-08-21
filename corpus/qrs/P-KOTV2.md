@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - linear-algebra
-  - bases
-  - matrices
+  - Linear Algebra
+  - Bases
+  - Matrices
 relations: []
 review: draft
 solved: true

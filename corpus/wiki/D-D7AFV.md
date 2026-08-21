@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-D7AFV
 kind: definition
-title: "Isolated Point"
+title: Isolated Point
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - limits
+  - Point-Set Topology
+  - Limits
 relations: []
 review: draft
 ---

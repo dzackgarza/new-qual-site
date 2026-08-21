@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-VHCGV
 kind: problem
-title: Jordan form of the $n\times n$ matrix with $2$'s on the superdiagonal, and a change-of-basis matrix
+title: Jordan form of the $n\times n$ matrix with $2$'s on the superdiagonal, and
+  a change-of-basis matrix
 classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - nilpotence
-  - matrices
+  - Jordan Canonical Form
+  - Nilpotence
+  - Matrices
 relations: []
 review: draft
 solved: false

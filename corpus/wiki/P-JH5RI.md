@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - homotopy
+  - Fixed Points
+  - Homotopy
 relations: []
 review: draft
 solved: false

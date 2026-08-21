@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - cyclic-groups
-  - matrix-groups
+  - Automorphisms
+  - Cyclic Groups
+  - Matrix Groups
 relations: []
 review: draft
 solved: false

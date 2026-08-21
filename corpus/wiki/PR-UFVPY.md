@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-UFVPY
 kind: proposition
-title: "How to find the minimal polynomial"
+title: How to find the minimal polynomial
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Linear Algebra
 relations: []
 review: draft
 ---

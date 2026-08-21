@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-7JSLO
 kind: definition
-title: "Locally Path-Connected"
+title: Locally Path-Connected
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - point-set
+  - Connectedness
+  - Point-Set Topology
 relations: []
 review: draft
 ---

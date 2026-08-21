@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-YFVA2
 kind: proposition
-title: "Functional analytic properties of $L^1$ and $L^2$"
+title: Functional analytic properties of $L^1$ and $L^2$
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - hilbert-spaces
-  - completeness
+  - Lp Spaces
+  - Hilbert Spaces
+  - Completeness
 relations: []
 review: draft
 ---

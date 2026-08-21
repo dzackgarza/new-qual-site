@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: L-6QBOJ
 kind: lemma
-title: "Frattini's Argument"
+title: Frattini's Argument
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - centralizers-and-normalizers
-  - normal-subgroups
+  - Sylow Theory
+  - Centralizers and Normalizers
+  - Normal Subgroups
 relations: []
 review: draft
 ---

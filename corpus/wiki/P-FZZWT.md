@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - character-theory
-  - trace
+  - Representation Theory
+  - Character Theory
+  - Trace
 relations: []
 review: draft
 solved: false

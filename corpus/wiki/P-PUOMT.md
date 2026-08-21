@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - normal-subgroups
-  - centralizers-and-normalizers
+  - p-Groups
+  - Normal Subgroups
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

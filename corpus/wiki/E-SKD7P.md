@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-SKD7P
 kind: exercise
-title: "Power series converge uniformly on their radius of convergence"
+title: Power series converge uniformly on their radius of convergence
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - uniform-convergence
-  - convergence-tests
+  - Power Series
+  - Uniform Convergence
+  - Convergence Tests
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Power series converge uniformly on their radius of convergence"}
 Show that any power series converges uniformly within its radius of convergence.
 

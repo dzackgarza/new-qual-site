@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TN4UF
 kind: problem
-title: Finite-dimensional representations of a compact Lie group are equivalent to unitary ones
+title: Finite-dimensional representations of a compact Lie group are equivalent to
+  unitary ones
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - semisimplicity
-  - inner-product-spaces
+  - Representation Theory
+  - Semisimplicity
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

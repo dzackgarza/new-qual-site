@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-RBKAW
 kind: problem
-title: "Hungerford 5.9.1"
+title: Hungerford 5.9.1
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - solvable-groups
-  - galois-theory
+  - Field Extensions
+  - Solvable Groups
+  - Galois Theory
 relations: []
 review: draft
 solved: false

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-WE7UT
 kind: exercise
-title: "Residues and classifying singularities"
+title: Residues and classifying singularities
 classification:
   areas:
   - complex-analysis
   topics:
-  - singularities
-  - residues
-  - poles
-  - removable-singularities
+  - Singularities
+  - Residues
+  - Poles
+  - Removable Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Residues and classifying singularities"}
 Classify the singularities of 
 \[

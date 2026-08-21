@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-KM7Z4
 kind: problem
-title: "Spring 2006, 12"
+title: Spring 2006, 12
 classification:
   areas:
   - topology
   topics:
-  - retracts
-  - connectedness
+  - Retracts
+  - Connectedness
 relations: []
 review: draft
 solved: true

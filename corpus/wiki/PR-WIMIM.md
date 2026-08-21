@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-WIMIM
 kind: proposition
-title: "Ratio Test"
+title: Ratio Test
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - power-series
+  - Convergence Tests
+  - Power Series
 relations: []
 review: draft
 ---

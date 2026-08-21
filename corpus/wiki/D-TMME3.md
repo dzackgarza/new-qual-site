@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-TMME3
 kind: definition
-title: "Alternating Group"
+title: Alternating Group
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - subgroups
+  - Permutations
+  - Subgroups
 relations: []
 review: draft
 ---
+
 :::{.definition title="Alternating Group"}
 The **alternating group** is the subgroup of **even** permutations, i.e.
 \[

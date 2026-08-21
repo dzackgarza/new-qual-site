@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - vector-spaces
+  - Vector Spaces
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: L-WROBY
 kind: lemma
-title: "$pq$ groups have normals the size of the biggest prime"
+title: $pq$ groups have normals the size of the biggest prime
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - classification
+  - Sylow Theory
+  - Normal Subgroups
+  - Classification
 relations: []
 review: draft
 ---

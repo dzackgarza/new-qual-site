@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - countability
-  - density
+  - Countability
+  - Density
 relations: []
 review: draft
 solved: false

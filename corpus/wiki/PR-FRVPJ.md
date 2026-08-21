@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-FRVPJ
 kind: proposition
-title: "Half-disc to upper half-plane"
+title: Half-disc to upper half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Half-disc to upper half-plane"}
 \[
 F: ? &\mapstofrom ? \\

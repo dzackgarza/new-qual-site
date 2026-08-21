@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: D-MGRZP
 kind: definition
-title: "Nullhomotopic"
+title: Nullhomotopic
 classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 ---
+
 :::{.definition title="Nullhomotopic"}
 A map $X\mapsvia{f} Y$ is *nullhomotopic* if it is homotopic to a constant map $X \mapsvia{g} \theset{y_{0}}$; that is, there exists a homotopy 
 \[  

@@ -9,7 +9,10 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- https://web.archive.org/web/20220426161540/https://www.math.uga.edu/sites/default/files/ComplexQual_Sp19.pdf
+- assets/attachments/ComplexQual_Sp19.pdf
+source:
   source_kind: university-exam
   institution: uga
   area: complex-analysis
@@ -28,5 +31,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Spring 2019. The current Quals page does not list a Spring 2019 Complex Analysis paper. The paper is the Wayback copy of `ComplexQual_Sp19.pdf` (`20220426161540`). The local dump is `.tmp-uga-ca-exams/SPRING-2019.txt`. The catalog PDF `https://www.math.uga.edu/sites/default/files/ComplexQual_Sp19.pdf` currently 404s. The list is the sitting order on that paper. Exam #5 is the complete Schwarz–Pick statement [[P-ZAVLU]] (Spring 2021 #5 includes the equality case).
+Exam #5 is the complete Schwarz–Pick statement [[P-ZAVLU]]. Spring 2021 #5 includes the equality case.
 :::

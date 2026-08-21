@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-TKGVZ
 kind: definition
-title: "Gamma function"
+title: Gamma function
 classification:
   areas:
   - complex-analysis
   topics:
-  - gamma-function
-  - integrals
+  - Gamma Function
+  - Integrals
 relations: []
 review: draft
 ---
+
 :::{.definition title="Gamma function"}
 \[
 \Gamma(z) = \int_0^\infty t^{z-1}e^{-t} \dt

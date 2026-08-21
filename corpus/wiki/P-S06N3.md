@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - induction
-  - number-theory
+  - Induction
+  - Number Theory
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: E-PHSV5
 kind: exercise
-title: An irreducible $f\in\mathbb{F}_p[x]$ of degree $d$ divides $x^{p^n}-x$ if and only if $d$ divides $n$
+title: An irreducible $f\in\mathbb{F}_p[x]$ of degree $d$ divides $x^{p^n}-x$ if and
+  only if $d$ divides $n$
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - irreducibility-criteria
-  - field-extensions
+  - Finite Fields
+  - Irreducibility Criteria
+  - Field Extensions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show that if $f \in \FF_p[x]^{\irr}$ is degree $d$,
 \[

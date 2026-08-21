@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-IQ4OX
 kind: definition
-title: "Subgroup"
+title: Subgroup
 classification:
   areas:
   - algebra
   topics:
-  - subgroups
-  - groups
+  - Subgroups
+  - Groups
 relations: []
 review: draft
 ---

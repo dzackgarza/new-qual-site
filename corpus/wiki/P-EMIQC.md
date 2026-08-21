@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-EMIQC
 kind: problem
-title: A filtration with cyclic quotients of a finitely generated module over a PID, and whether its length is unique
+title: A filtration with cyclic quotients of a finitely generated module over a PID,
+  and whether its length is unique
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - modules
-  - principal-ideal-domains
+  - Structure Theorem
+  - Modules
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-WAYFS
 kind: exercise
-title: "Zeros of $\\sin(\\pi z)$ and singularities of $\\csc(\\pi z)$"
+title: Zeros of $\sin(\pi z)$ and singularities of $\csc(\pi z)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - residues
-  - trigonometry
-  - poles
+  - Zeros
+  - Residues
+  - Trigonometry
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Zeros of $\sin(\pi z)$ and singularities of $\csc(\pi z)$"}
 Show that the complex zeros of $f(z) \da \sin(\pi z)$ are exactly $\ZZ$, and each is order 1.
 Calculate the residue of $1/\sin(\pi x)$ at $z=n\in \ZZ$.

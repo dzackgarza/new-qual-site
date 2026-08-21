@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-5PVHQ
 kind: problem
-title: 'Torsion elements of an $R$-module: definition, an infinite cyclic example, and the torsion submodule over a domain'
+title: 'Torsion elements of an $R$-module: definition, an infinite cyclic example,
+  and the torsion submodule over a domain'
 classification:
   areas:
   - algebra
   topics:
-  - torsion
-  - modules
-  - integral-domains
+  - Torsion
+  - Modules
+  - Integral Domains
 relations: []
 review: draft
 solved: false

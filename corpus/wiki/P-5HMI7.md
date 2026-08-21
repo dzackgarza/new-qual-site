@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - permutations
-  - splitting-fields
+  - Galois Theory
+  - Permutations
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

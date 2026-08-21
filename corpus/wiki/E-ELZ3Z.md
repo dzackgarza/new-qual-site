@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-continuity
-  - calculus
-  - mean-value-theorem
+  - Uniform Continuity
+  - Calculus
+  - Mean Value Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Show that $f'$ bounded implies $f$ is uniformly continuous.
 

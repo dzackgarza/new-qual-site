@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-M3IWM
 kind: exercise
-title: "Stein/Shakarchi 1.20: Series convergence on the circle"
+title: 'Stein/Shakarchi 1.20: Series convergence on the circle'
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - power-series
-  - series-of-functions
+  - Convergence Tests
+  - Power Series
+  - Series of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Stein/Shakarchi 1.20: Series convergence on the circle"}
 Show that
 

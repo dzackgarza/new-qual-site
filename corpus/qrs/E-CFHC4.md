@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-CFHC4
 kind: exercise
-title: "\\int_\\RR {1 \\over (1+x)^2} = {\\pi \\over 2}"
+title: \int_\RR {1 \over (1+x)^2} = {\pi \over 2}
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
+  - Residues
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 \[
 \int_\RR {1 \over (1+x)^2} = {\pi \over 2}

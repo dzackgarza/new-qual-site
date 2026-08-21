@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
-  - geometry
+  - Trigonometry
+  - Geometry
 relations: []
 review: draft
 solved: false

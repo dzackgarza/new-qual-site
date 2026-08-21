@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - stone-weierstrass
-  - density
-  - integrals
+  - Stone-Weierstrass
+  - Density
+  - Integrals
 relations: []
 review: draft
 solved: true

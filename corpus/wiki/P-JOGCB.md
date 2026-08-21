@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JOGCB
 kind: problem
-title: Minimal polynomial of $\sqrt{2+\sqrt{2}}$; $\QQ(\sqrt{2+\sqrt{2}})$ as splitting field containing $\sqrt{2-\sqrt{2}}$; Galois group and intermediate fields
+title: Minimal polynomial of $\sqrt{2+\sqrt{2}}$; $\QQ(\sqrt{2+\sqrt{2}})$ as splitting
+  field containing $\sqrt{2-\sqrt{2}}$; Galois group and intermediate fields
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - field-extensions
+  - Galois Theory
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

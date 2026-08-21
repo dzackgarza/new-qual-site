@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-LZTAK
 kind: definition
-title: "Normal Field Extension"
+title: Normal Field Extension
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - splitting-fields
-  - galois-theory
+  - Field Extensions
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-DM6ET
 kind: problem
-title: A diagonalizable matrix has a cyclic vector if and only if its eigenvalues are distinct
+title: A diagonalizable matrix has a cyclic vector if and only if its eigenvalues
+  are distinct
 classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - eigenvalues-and-eigenvectors
-  - minimal-and-characteristic-polynomials
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

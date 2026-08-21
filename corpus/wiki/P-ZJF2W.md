@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - permutations
-  - symmetric-functions
+  - Galois Theory
+  - Permutations
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

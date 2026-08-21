@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-4EZMD
 kind: exercise
-title: "Define $A \\da \\ts{\\Re(z) > 0, \\Im(z) > 0}$."
+title: Define $A \da \ts{\Re(z) > 0, \Im(z) > 0}$.
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
+  - Conformal Maps
+  - Biholomorphisms
 relations: []
 review: draft
 solved: true

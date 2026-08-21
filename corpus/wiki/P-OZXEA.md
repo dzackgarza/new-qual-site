@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - cauchy-estimates
+  - Liouville's Theorem
+  - Entire Functions
+  - Cauchy Estimates
 relations: []
 review: draft
 solved: false

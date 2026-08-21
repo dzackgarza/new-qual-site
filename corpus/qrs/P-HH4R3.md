@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-HH4R3
 kind: problem
-title: Cauchy integral formula for a function holomorphic outside $\gamma$ with limit $A$ at infinity
+title: Cauchy integral formula for a function holomorphic outside $\gamma$ with limit
+  $A$ at infinity
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - contour-integration
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 solved: false

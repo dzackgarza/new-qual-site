@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-ZCE6E
 kind: problem
-title: The subgraph of a nonnegative function is measurable if and only if the function is, and $m(\mathcal{A})=\int_{\RR^n}f=\int_0^\infty m(\{f\ge t\})\,dt$
+title: The subgraph of a nonnegative function is measurable if and only if the function
+  is, and $m(\mathcal{A})=\int_{\RR^n}f=\int_0^\infty m(\{f\ge t\})\,dt$
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - integrals
-  - fubini-tonelli
+  - Measure Theory
+  - Integrals
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f$ be a non-negative function on $\RR^n$ and $\mathcal A = \{(x, t) ∈ \RR^n \times \RR : 0 ≤ t ≤ f (x)\}$.
 
 Prove the validity of the following two statements:

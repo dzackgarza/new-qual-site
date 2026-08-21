@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-YLFU2
 kind: problem
-title: 'Structure theorem for finitely generated modules over a PID: invariant factors and elementary divisors'
+title: 'Structure theorem for finitely generated modules over a PID: invariant factors
+  and elementary divisors'
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - modules
-  - principal-ideal-domains
+  - Structure Theorem
+  - Modules
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

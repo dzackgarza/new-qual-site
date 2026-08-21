@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-434DX
 kind: proposition
-title: "Formula for partitions"
+title: Formula for partitions
 classification:
   areas:
   - algebra
   topics:
-  - partitions
-  - number-theory
+  - Partitions
+  - Number Theory
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Formula for partitions"}
 There is a recurrence relation
 \[

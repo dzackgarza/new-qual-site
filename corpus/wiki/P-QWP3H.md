@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - prime-ideals
-  - maximal-ideals
-  - geometry
+  - Prime Ideals
+  - Maximal Ideals
+  - Geometry
 relations: []
 review: draft
 solved: false

@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: D-QYLPH
 kind: definition
-title: "Measures on measurable spaces"
+title: Measures on measurable spaces
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---
+
 :::{.definition title="Measures on measurable spaces"}
 If $(X, \mcm)$ is a measurable space, then a **measure** is a function $\mu: \mcm \to [0,\infty]$ such that 
 

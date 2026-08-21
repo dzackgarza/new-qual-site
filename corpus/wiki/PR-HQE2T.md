@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-HQE2T
 kind: proposition
-title: "Using universal covers"
+title: Using universal covers
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - group-actions
-  - fundamental-group
+  - Covering Spaces
+  - Group Actions
+  - Fundamental Group
 relations: []
 review: draft
 ---

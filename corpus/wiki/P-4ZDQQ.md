@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-4ZDQQ
 kind: problem
-title: Possible Galois groups of an abelian extension of degree $540$, and quadratic intermediate extensions $L/E$
+title: Possible Galois groups of an abelian extension of degree $540$, and quadratic
+  intermediate extensions $L/E$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - abelian-groups
-  - field-extensions
+  - Galois Theory
+  - Abelian Groups
+  - Field Extensions
 relations: []
 review: draft
 solved: false

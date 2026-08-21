@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-VJD54
 kind: problem
-title: "Hungerford 5.9.3"
+title: Hungerford 5.9.3
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - solvable-groups
-  - field-extensions
+  - Galois Theory
+  - Solvable Groups
+  - Field Extensions
 relations: []
 review: draft
 solved: false

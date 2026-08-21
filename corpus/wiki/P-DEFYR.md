@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - uniform-convergence
-  - convergence-of-integrals
+  - Convergence of Functions
+  - Uniform Convergence
+  - Convergence of Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 Let
 \[
 f_{n}(x) = n x(1-x)^{n}, \quad n \in \NN.

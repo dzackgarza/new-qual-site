@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - product-topology
-  - subspace-topology
-  - quotient-spaces
+  - Product Topology
+  - Subspace Topology
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

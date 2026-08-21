@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - norms
+  - Hilbert Spaces
+  - Norms
 relations: []
 review: draft
 solved: true

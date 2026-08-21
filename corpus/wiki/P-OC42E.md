@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - exact-sequences
-  - homological-algebra
-  - modules
+  - Exact Sequences
+  - Homological Algebra
+  - Modules
 relations: []
 review: draft
 solved: false

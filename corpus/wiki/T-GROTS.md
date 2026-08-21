@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-GROTS
 kind: theorem
-title: "Improved Taylor's Theorem"
+title: Improved Taylor's Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - cauchy-integral-formula
+  - Power Series
+  - Cauchy Integral Formula
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Improved Taylor's Theorem"}
 If $f$ is holomorphic on a region $\Omega$ with $\closure{ D_R(z_0)} \subseteq \Omega$, and for every $z\in D_r(z_0)$, $f$ has a power series expansion of the following form:
 \[

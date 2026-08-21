@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-7J6RO
 kind: problem
-title: "Hungerford 4.1.5"
+title: Hungerford 4.1.5
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
-  - cyclic-groups
+  - Modules
+  - Semisimplicity
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

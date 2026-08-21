@@ -7,10 +7,10 @@ classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - homology
-  - cohomology
-  - manifolds
+  - Poincaré Duality
+  - Homology
+  - Cohomology
+  - Manifolds
 relations: []
 review: draft
 solved: true

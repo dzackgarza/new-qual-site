@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-O6HHQ
 kind: problem
-title: "Hungerford 4.2.4"
+title: Hungerford 4.2.4
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - vector-spaces
-  - principal-ideal-domains
+  - Modules
+  - Vector Spaces
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="Hungerford 4.2.4"}
 Let $R$ be a principal ideal domain,$A$ a unitary left $R$-module, and $p\in R$ a prime (and thus
 irreducible) element. Define $$\begin{aligned}

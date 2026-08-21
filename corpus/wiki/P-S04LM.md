@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - continuity
-  - limits
+  - Continuity
+  - Limits
 relations: []
 review: draft
 solved: false

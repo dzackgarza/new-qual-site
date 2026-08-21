@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-LOISU
 kind: definition
-title: "Dimension of a manifold"
+title: Dimension of a manifold
 classification:
   areas:
   - topology
   topics:
-  - manifolds
-  - homology
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

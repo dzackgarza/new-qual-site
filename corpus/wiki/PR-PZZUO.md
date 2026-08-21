@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-PZZUO
 kind: proposition
-title: "Subring criteria"
+title: Subring criteria
 classification:
   areas:
   - algebra
   topics:
-  - rings
+  - Rings
 relations: []
 review: draft
 ---

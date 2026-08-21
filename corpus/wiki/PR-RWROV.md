@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-RWROV
 kind: proposition
-title: "$C(I)$ is complete"
+title: $C(I)$ is complete
 classification:
   areas:
   - real-analysis
   topics:
-  - function-spaces
-  - completeness
-  - norms
+  - Function Spaces
+  - Completeness
+  - Norms
 relations: []
 review: draft
 ---

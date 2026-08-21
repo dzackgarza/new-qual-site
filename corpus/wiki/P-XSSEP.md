@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-XSSEP
 kind: problem
-title: Equal degrees of irreducible factors of $f\in\QQ[x]$ in $L[x]$ when $L/\QQ$ is Galois, and a counterexample otherwise
+title: Equal degrees of irreducible factors of $f\in\QQ[x]$ in $L[x]$ when $L/\QQ$
+  is Galois, and a counterexample otherwise
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - irreducibility-criteria
-  - field-extensions
+  - Galois Theory
+  - Irreducibility Criteria
+  - Field Extensions
 relations: []
 review: draft
 solved: false

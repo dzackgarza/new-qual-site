@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- assets/attachments/grad_prelim_Fall16.pdf
+source:
   source_kind: university-exam
   institution: uga
   area: prelim
@@ -29,6 +31,4 @@ payload:
     year: 2016
 ---
 
-::: remark
-UGA prelim Fall 2016. The paper is `assets/attachments/grad_prelim_Fall16.pdf` (Mathematics Preliminary Exam, Fall 2016). Nine questions; the list is sitting order. Worked writeups: `assets/ws9/qual-review-and-solutions/native/Prelims/sections/2016 Fall.md.source`. No holes.
-:::
+

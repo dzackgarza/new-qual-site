@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-B2VGV
 kind: problem
-title: "Fall 2006, 13"
+title: Fall 2006, 13
 classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 solved: false

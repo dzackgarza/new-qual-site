@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-2KICH
 kind: definition
-title: "Weak Topology"
+title: Weak Topology
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - cell-complexes
+  - Point-Set Topology
+  - Cell Complexes
 relations: []
 review: draft
 ---

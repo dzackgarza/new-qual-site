@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TU4KT
 kind: problem
-title: 'Groups of order $2020$: solvability, classification of abelian groups, and a nonabelian example'
+title: 'Groups of order $2020$: solvability, classification of abelian groups, and
+  a nonabelian example'
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - classification
-  - structure-theorem
+  - Solvable Groups
+  - Classification
+  - Structure Theorem
 relations: []
 review: draft
 solved: false

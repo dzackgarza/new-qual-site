@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-7XH2R
 kind: definition
-title: "Maximal Ideal"
+title: Maximal Ideal
 classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
+  - Maximal Ideals
+  - Ideals
 relations: []
 review: draft
 ---

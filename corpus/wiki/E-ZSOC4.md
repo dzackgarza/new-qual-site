@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-ZSOC4
 kind: exercise
-title: "Forcing a map to be the identity"
+title: Forcing a map to be the identity
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - schwarz-lemma
-  - biholomorphisms
+  - Blaschke Factors
+  - Schwarz Lemma
+  - Biholomorphisms
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Forcing a map to be the identity"}
 Let $\psi_a$ be a Blaschke factor and use the Schwarz lemma to prove that $\psi_a \circ \psi_a = \id_\DD$.
 

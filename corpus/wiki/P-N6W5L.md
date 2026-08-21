@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - argument-principle
-  - zeros
-  - polynomials
+  - Rouché
+  - Argument Principle
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find the number of zeros $z$ with $\Re(z) > 0$ for the following function:
 \[

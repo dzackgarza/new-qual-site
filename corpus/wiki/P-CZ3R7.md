@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - geometry
-  - fractional-linear-transformations
+  - Geometry
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 \envlist
 

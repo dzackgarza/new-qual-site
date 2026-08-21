@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-MFDEJ
 kind: definition
-title: "$L^\\infty$"
+title: $L^\infty$
 classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - lp-spaces
+  - L∞
+  - Lp Spaces
 relations: []
 review: draft
 ---
+
 :::{.definition title="$L^\infty$"}
 \[
 L^\infty(X)

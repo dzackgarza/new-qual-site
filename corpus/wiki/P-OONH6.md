@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-OONH6
 kind: problem
-title: Conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the upper half-plane
+title: Conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the upper
+  half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find a conformal map from the intersection of $|z-1|<2$ and $|z+1|<2$ to the upper half plane.
 :::

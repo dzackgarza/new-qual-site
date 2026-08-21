@@ -7,13 +7,14 @@ classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - metric-spaces
-  - compactness
+  - Fixed Points
+  - Metric Spaces
+  - Compactness
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Prove that if $(X, d)$ is a compact metric space, $f : X \to X$ is a
 continuous map, and $C$ is a constant with $0 < C < 1$ such that 

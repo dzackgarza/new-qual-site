@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MLJMH
 kind: problem
-title: $L^\infty(\RR^n)$ is a Banach space, and $L^1\cap L^\infty\subset L^2$ with $\|f\|_2\le\|f\|_1^{1/2}\|f\|_\infty^{1/2}$
+title: $L^\infty(\RR^n)$ is a Banach space, and $L^1\cap L^\infty\subset L^2$ with
+  $\|f\|_2\le\|f\|_1^{1/2}\|f\|_\infty^{1/2}$
 classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - lp-spaces
-  - norms
+  - L∞
+  - Lp Spaces
+  - Norms
 relations: []
 review: draft
 solved: true

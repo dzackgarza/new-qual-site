@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-BSATZ
 kind: problem
-title: $\bigl|\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}\bigr|\le\frac{|z|}{MR}$ for $|f|\le M$ on $D(0,R)$
+title: $\bigl|\frac{f(z)-f(0)}{M^2-\overline{f(0)}f(z)}\bigr|\le\frac{|z|}{MR}$ for
+  $|f|\le M$ on $D(0,R)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - blaschke-factors
+  - Schwarz Lemma
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Show that if $f: D(0, R) \rightarrow \mathbb{C}$ is holomorphic, with $|f(z)| \leq M$ for some $M>0$, then
 \[

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-N6PDJ
 kind: exercise
-title: "Nonconstant entire functions have dense image"
+title: Nonconstant entire functions have dense image
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - casorati-weierstrass
+  - Liouville's Theorem
+  - Entire Functions
+  - Casorati-Weierstrass
 relations: []
 review: draft
 solved: true

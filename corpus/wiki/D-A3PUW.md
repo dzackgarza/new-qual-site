@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-A3PUW
 kind: definition
-title: "Cellular Homology"
+title: Cellular Homology
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - cell-complexes
-  - degree
+  - Homology
+  - Cell Complexes
+  - Degree
 relations: []
 review: draft
 ---

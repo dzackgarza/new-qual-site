@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-NSN6G
 kind: exercise
-title: "Locally uniform limit theorem for holomorphic functions"
+title: Locally uniform limit theorem for holomorphic functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - cauchy-estimates
-  - sequences-of-functions
-  - holomorphic-functions
+  - Uniform Convergence
+  - Cauchy Estimates
+  - Sequences of Functions
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Locally uniform limit theorem for holomorphic functions"}
 Prove that if $f_n\to f$ locally uniformly with $f_n$ holomorphic, then $f_n'\to f'$ locally uniformly and $f'$ is holomorphic.
 

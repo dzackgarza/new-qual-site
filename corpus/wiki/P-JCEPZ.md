@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
-  - fixed-points
+  - Sequences of Numbers
+  - Limits
+  - Fixed Points
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $\left\{x_{n}\right\}_{n-1}^{\infty}$ be a sequence of real numbers such that $x_{1}>0$ and
 \[

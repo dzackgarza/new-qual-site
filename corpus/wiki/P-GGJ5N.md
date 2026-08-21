@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-GGJ5N
 kind: problem
-title: $\sum\frac{a_n}{\beta+a_n}$ diverges whenever $\sum a_n$ diverges, for $a_n>0$ and $\beta>0$
+title: $\sum\frac{a_n}{\beta+a_n}$ diverges whenever $\sum a_n$ diverges, for $a_n>0$
+  and $\beta>0$
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
+  - Series of Numbers
 relations: []
 review: draft
 solved: true

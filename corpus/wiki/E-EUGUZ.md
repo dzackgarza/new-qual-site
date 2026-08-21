@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - removable-singularities
-  - entire-functions
+  - Liouville's Theorem
+  - Removable Singularities
+  - Entire Functions
 relations: []
 review: draft
 solved: true

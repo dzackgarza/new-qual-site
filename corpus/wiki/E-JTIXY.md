@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-JTIXY
 kind: exercise
-title: "SS 3.2.15"
+title: SS 3.2.15
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - open-mapping-theorem
+  - Maximum Modulus Principle
+  - Open Mapping Theorem
 relations: []
 review: draft
 solved: true

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-FMLK2
 kind: exercise
-title: "Derivatives detect multiplicity of zeros"
+title: Derivatives detect multiplicity of zeros
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - power-series
-  - holomorphic-functions
+  - Zeros
+  - Power Series
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Derivatives detect multiplicity of zeros"}
 Show that if $f$ is holomorphic in $\DD_r(a)$ and $a$ is a zero of $f$ of multiplicity $n$, then $f^{(k)}(a) = 0$ for $k\leq n-1$ and $f^{(n)}(a) \neq 0$.
 Show that this is an iff.

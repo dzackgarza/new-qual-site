@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-UDBZP
 kind: problem
-title: Every nondegenerate real matrix factors as $UT$ with $U$ orthogonal and $T$ upper triangular
+title: Every nondegenerate real matrix factors as $UT$ with $U$ orthogonal and $T$
+  upper triangular
 classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - inner-product-spaces
-  - bases
+  - Matrix Groups
+  - Inner Product Spaces
+  - Bases
 relations: []
 review: draft
 solved: false

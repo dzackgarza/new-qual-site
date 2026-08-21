@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-BNCTG
 kind: definition
-title: "Local homology"
+title: Local homology
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - manifolds
+  - Homology
+  - Manifolds
 relations: []
 review: draft
 ---

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: D-3KS2F
 kind: definition
-title: "Boundary: The boundary of a subset $A\\subseteq X$ is defined as $\\bd A \\da \\cl_X(A) \\sm \\interior{A}$."
+title: 'Boundary: The boundary of a subset $A\subseteq X$ is defined as $\bd A \da
+  \cl_X(A) \sm \interior{A}$.'
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - closure
+  - Point-Set Topology
+  - Closure
 relations: []
 review: draft
 ---

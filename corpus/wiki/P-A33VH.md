@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-A33VH
 kind: problem
-title: Setwise distance of compact sets is attained, and vanishes only on a nonempty intersection
+title: Setwise distance of compact sets is attained, and vanishes only on a nonempty
+  intersection
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - metric-spaces
+  - Compactness
+  - Metric Spaces
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem}
 For nonempty subsets $A, B$ of a metric space $(X, d)$, define the **setwise distance** as 
 \[

@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-QN7OP
 kind: problem
-title: Connectedness via maps to $\{0,1\}$, connected fibers over a connected Hausdorff space, and a noncompact counterexample
+title: Connectedness via maps to $\{0,1\}$, connected fibers over a connected Hausdorff
+  space, and a noncompact counterexample
 classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - compactness
-  - continuity
+  - Connectedness
+  - Compactness
+  - Continuity
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
 Let $X$ be a topological space.
 

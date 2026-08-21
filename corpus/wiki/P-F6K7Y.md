@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - integration-by-parts
-  - trigonometry
+  - Integrals
+  - Integration by Parts
+  - Trigonometry
 relations: []
 review: draft
 solved: false

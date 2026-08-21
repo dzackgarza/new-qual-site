@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-AKF2O
 kind: exercise
-title: "$1/(1+x^2)^{n+1}$"
+title: $1/(1+x^2)^{n+1}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - poles
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/(1+x^2)^{n+1}$ "}
 
 \[

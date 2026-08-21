@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-VWYRN
 kind: definition
-title: "Pullback"
+title: Pullback
 classification:
   areas:
   - topology
   topics:
-  - category-theory
+  - Category Theory
 relations: []
 review: draft
 ---

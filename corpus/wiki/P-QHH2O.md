@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - cell-complexes
-  - product-topology
+  - Homology
+  - Cell Complexes
+  - Product Topology
 relations: []
 review: draft
 solved: false

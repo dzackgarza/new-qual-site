@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-YYLPH
 kind: theorem
-title: "Hilbert Basis Theorem"
+title: Hilbert Basis Theorem
 classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - polynomials
-  - ideals
+  - Noetherian Rings
+  - Polynomials
+  - Ideals
 relations: []
 review: draft
 ---

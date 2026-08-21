@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - minimal-and-characteristic-polynomials
-  - galois-theory
+  - Finite Fields
+  - Minimal and Characteristic Polynomials
+  - Galois Theory
 relations: []
 review: draft
 solved: false

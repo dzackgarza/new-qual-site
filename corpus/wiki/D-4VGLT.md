@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-4VGLT
 kind: definition
-title: "Tor Group"
+title: Tor Group
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - modules
+  - Homological Algebra
+  - Modules
 relations: []
 review: draft
 ---
+
 :::{.definition title="Tor Group"}
 For an $R\dash$module
 \[

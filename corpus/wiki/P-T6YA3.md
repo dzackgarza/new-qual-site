@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - vector-spaces
-  - principal-ideal-domains
+  - Modules
+  - Vector Spaces
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

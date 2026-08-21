@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-E5Y7W
 kind: problem
-title: "Hungerford 4.1.7"
+title: Hungerford 4.1.7
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - homomorphisms
-  - rings
+  - Modules
+  - Homomorphisms
+  - Rings
 relations: []
 review: draft
 solved: false

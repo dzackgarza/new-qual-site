@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-OFMGU
 kind: theorem
-title: "Identity principle (Generalization)"
+title: Identity principle (Generalization)
 classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - zeros
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 ---

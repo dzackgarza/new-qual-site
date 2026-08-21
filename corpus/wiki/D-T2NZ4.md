@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-T2NZ4
 kind: definition
-title: "Simple Groups"
+title: Simple Groups
 classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - normal-subgroups
+  - Simple Groups
+  - Normal Subgroups
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - poles
-  - contour-integration
+  - Residues
+  - Poles
+  - Contour Integration
 relations: []
 review: draft
 solved: false

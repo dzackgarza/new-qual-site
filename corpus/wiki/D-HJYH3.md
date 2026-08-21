@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: D-HJYH3
 kind: definition
-title: "The Riemann Zeta Function"
+title: The Riemann Zeta Function
 classification:
   areas:
   - complex-analysis
   topics:
-  - riemann-zeta
+  - Riemann Zeta
 relations: []
 review: draft
 ---
+
 :::{.definition title="The Riemann Zeta Function"}
 
 ![](../../assets/30_Complex_Analysis/900 Unsorted/figures/2021-12-19_20-00-12.png)

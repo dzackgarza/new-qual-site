@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-AUD6K
 kind: definition
-title: "Poles (and associated terminology)"
+title: Poles (and associated terminology)
 classification:
   areas:
   - complex-analysis
   topics:
-  - poles
-  - laurent-series
-  - singularities
+  - Poles
+  - Laurent Series
+  - Singularities
 relations: []
 review: draft
 ---
+
 :::{.definition title="Poles (and associated terminology)"}
 Let $f$ be a meromorphic function with an isolated singularity at $z_0$.
 TFAE:

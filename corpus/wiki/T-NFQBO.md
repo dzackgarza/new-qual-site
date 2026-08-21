@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-NFQBO
 kind: theorem
-title: "Diamond Theorem / 2nd Isomorphism Theorem"
+title: Diamond Theorem / 2nd Isomorphism Theorem
 classification:
   areas:
   - algebra
   topics:
-  - isomorphism-theorems
-  - normal-subgroups
-  - subgroups
+  - Isomorphism Theorems
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Diamond Theorem / 2nd Isomorphism Theorem"}
 If $S \leq G$ and $N \normal G$, then
 \[

@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - uniform-convergence
-  - holomorphic-functions
+  - Power Series
+  - Uniform Convergence
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

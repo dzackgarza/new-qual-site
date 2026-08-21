@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-PIVFR
 kind: proposition
-title: "Borel Characterization of Measurable Sets"
+title: Borel Characterization of Measurable Sets
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

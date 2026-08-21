@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-2W5WN
 kind: theorem
-title: "UCT for Change of Group"
+title: UCT for Change of Group
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - homology
-  - cohomology
+  - Homological Algebra
+  - Homology
+  - Cohomology
 relations: []
 review: draft
 ---
+
 :::{.theorem title="UCT for Change of Group"}
 For changing coefficients from $\ZZ$ to $G$ an arbitrary group, there are short exact sequences
 

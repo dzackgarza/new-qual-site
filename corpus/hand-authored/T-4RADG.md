@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - Groups
 relations:
 - kind: uses
   target: D-7TQ2M

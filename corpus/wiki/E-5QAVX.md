@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-5QAVX
 kind: exercise
-title: "Using derivatives"
+title: Using derivatives
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - cauchy-estimates
-  - zeros
+  - Schwarz Lemma
+  - Cauchy Estimates
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Using derivatives"}
 Let $f:\DD\to \DD$ with $f(0) = f'(0) = 0$.
 Show that $\abs{f''(0)} \leq 2$ and describe all $f$ for which this is an equality.

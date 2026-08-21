@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-R4H6F
 kind: definition
-title: "Associate Elements"
+title: Associate Elements
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - rings
+  - Factorization
+  - Rings
 relations: []
 review: draft
 ---

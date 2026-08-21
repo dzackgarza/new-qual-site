@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-GPFKM
 kind: exercise
-title: "Estimating and conformal maps"
+title: Estimating and conformal maps
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - conformal-maps
-  - fractional-linear-transformations
+  - Schwarz Lemma
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Estimating and conformal maps"}
 Suppose $f:\HH\to \CC$ with $\abs{f(z)}< 1$ and $f(i) = 0$.
 Find an upper bound for $f(2i)$.

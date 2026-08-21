@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-QZEJM
 kind: proposition
-title: "Jordan's Lemma"
+title: Jordan's Lemma
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - residues
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---

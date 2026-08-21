@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-GIUR3
 kind: definition
-title: "Lefschetz duality"
+title: Lefschetz duality
 classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - manifolds
-  - cohomology
+  - Poincaré Duality
+  - Manifolds
+  - Cohomology
 relations:
 - kind: related-to
   target: T-QNYSB

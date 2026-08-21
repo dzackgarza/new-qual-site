@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-TO3IY
 kind: definition
-title: "Irreducible Element"
+title: Irreducible Element
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - rings
+  - Factorization
+  - Rings
 relations: []
 review: draft
 ---

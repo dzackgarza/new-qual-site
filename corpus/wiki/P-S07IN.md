@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - induction
+  - Induction
 relations: []
 review: draft
 solved: false

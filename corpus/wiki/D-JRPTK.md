@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-JRPTK
 kind: definition
-title: "Equivalent Matrices"
+title: Equivalent Matrices
 classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - canonical-forms
-  - linear-algebra
+  - Matrices
+  - Canonical Forms
+  - Linear Algebra
 relations: []
 review: draft
 ---

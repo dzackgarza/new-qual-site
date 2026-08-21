@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-DXWWU
 kind: proposition
-title: "Translation and Dilation Invariance"
+title: Translation and Dilation Invariance
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

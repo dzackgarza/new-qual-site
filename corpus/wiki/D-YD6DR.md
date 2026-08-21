@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-YD6DR
 kind: definition
-title: "R-orientability"
+title: R-orientability
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - manifolds
-  - homology
+  - Orientation
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-3B2YA
 kind: exercise
-title: "Evaluating integrals"
+title: Evaluating integrals
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - residues
-  - contour-integration
+  - Cauchy Integral Formula
+  - Residues
+  - Contour Integration
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Evaluating integrals"}
 Evaluate the following integrals using Cauchy's integral formula:
 

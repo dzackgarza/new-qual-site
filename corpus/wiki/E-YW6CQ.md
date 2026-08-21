@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - removable-singularities
-  - maximum-modulus-principle
+  - Open Mapping Theorem
+  - Removable Singularities
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true

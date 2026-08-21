@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-CTGON
 kind: definition
-title: "Open and Closed Maps"
+title: Open and Closed Maps
 classification:
   areas:
   - topology
   topics:
-  - continuity
-  - point-set
+  - Continuity
+  - Point-Set Topology
 relations: []
 review: draft
 ---

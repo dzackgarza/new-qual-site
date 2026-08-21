@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-AK3OT
 kind: problem
-title: $L^2([0,1])$ convergence of $\sum f_n$ when $\|f_n\|_2\le n^{-51/100}$ and $\operatorname{supp}\hat f_n\subseteq[2^n,2^{n+1}]$
+title: $L^2([0,1])$ convergence of $\sum f_n$ when $\|f_n\|_2\le n^{-51/100}$ and
+  $\operatorname{supp}\hat f_n\subseteq[2^n,2^{n+1}]$
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - l2
-  - hilbert-spaces
-  - series-of-functions
+  - Fourier Analysis
+  - L²
+  - Hilbert Spaces
+  - Series of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that 
 

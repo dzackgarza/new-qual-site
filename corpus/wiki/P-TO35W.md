@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - rings
+  - Noetherian Rings
+  - Rings
 relations: []
 review: draft
 solved: false

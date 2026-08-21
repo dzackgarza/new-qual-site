@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - smith-normal-form
-  - modules
+  - Structure Theorem
+  - Smith Normal Form
+  - Modules
 relations: []
 review: draft
 solved: false

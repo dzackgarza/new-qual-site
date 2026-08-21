@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-5WUAP
 kind: proposition
-title: "The $p\\dash$test"
+title: The $p\dash$test
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - series-of-numbers
+  - Convergence Tests
+  - Series of Numbers
 relations: []
 review: draft
 ---
+
 :::{.proposition title="The $p\dash$test"}
 Recall the **$p\dash$test**:
 \[

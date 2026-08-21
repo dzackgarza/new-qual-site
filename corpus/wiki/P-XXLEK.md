@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-XXLEK
 kind: problem
-title: Open sets in a second-countable regular space as countable unions of closed sets, with a continuous $f:X\to[0,1]$ positive on $U$
+title: Open sets in a second-countable regular space as countable unions of closed
+  sets, with a continuous $f:X\to[0,1]$ positive on $U$
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - countability
+  - Separation Axioms
+  - Countability
 relations: []
 review: draft
 solved: false

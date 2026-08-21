@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-2XFT4
 kind: proposition
-title: "Residue formula for higher order poles"
+title: Residue formula for higher order poles
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - poles
+  - Residues
+  - Poles
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Residue formula for higher order poles"}
 If $f$ has a pole $z_0$ of order $n$, then
 \[

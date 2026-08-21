@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-NKZBT
 kind: proposition
-title: "Commuting Sums with Integrals"
+title: Commuting Sums with Integrals
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - series-of-functions
-  - l1
+  - Convergence of Integrals
+  - Series of Functions
+  - L¹
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Commuting Sums with Integrals"}
 \[
 f_n \geq 0 \text{ and } \sum_n \int \abs{f_n} = \sum_n \norm{f_n}_{L^1} < \infty \implies \sum_n \int f_n = \int \sum_n f_n

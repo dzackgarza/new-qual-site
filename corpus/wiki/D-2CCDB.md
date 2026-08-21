@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-2CCDB
 kind: definition
-title: "Equicontinuity"
+title: Equicontinuity
 classification:
   areas:
   - real-analysis
   topics:
-  - equicontinuity
-  - function-spaces
+  - Equicontinuity
+  - Function Spaces
 relations: []
 review: draft
 ---
+
 :::{.definition title="Equicontinuity"}
 If $\mathcal F \subset C(X)$ is a family of continuous functions on $X$, then $\mathcal F$ *equicontinuous* at $x$ iff
 

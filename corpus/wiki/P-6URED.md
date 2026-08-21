@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - permutations
-  - subgroup-series
+  - Solvable Groups
+  - Permutations
+  - Subgroup Series
 relations: []
 review: draft
 solved: false

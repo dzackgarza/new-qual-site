@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-O44GI
 kind: theorem
-title: "When actions yield covering maps onto their quotients, Hatcher 1.40"
+title: When actions yield covering maps onto their quotients, Hatcher 1.40
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - group-actions
-  - fundamental-group
+  - Covering Spaces
+  - Group Actions
+  - Fundamental Group
 relations: []
 review: draft
 ---

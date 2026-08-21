@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-5EROX
 kind: problem
-title: $AB-BA=A$ implies $\det A=0$ in characteristic zero, but not in characteristic $2$
+title: $AB-BA=A$ implies $\det A=0$ in characteristic zero, but not in characteristic
+  $2$
 classification:
   areas:
   - algebra
   topics:
-  - trace
-  - determinants
-  - matrices
+  - Trace
+  - Determinants
+  - Matrices
 relations: []
 review: draft
 solved: false

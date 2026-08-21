@@ -9,21 +9,40 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: Spring 2020 HW 3
+provenance: []
+source:
+  source_kind: homework
   problems:
   - P-VEOV5
   - P-AKSSQ
   - P-PBXAK
   - P-HLKLH
   - P-22T5H
+  - P-FIOQC
+  - P-2RS4X
+  - P-PNCAW
+  - P-5LY53
+  - P-4M6DM
+  - P-PQOTX
+  - P-GLF66
+  - P-J5JVJ
+  - P-COFTP
+  - P-JWOJ5
+  - P-4Y4QT
+  - P-NV44D
+  - P-YZ4WV
+  - P-TVUOV
+  - P-ZO5JW
+  - P-TZCW3
+  - P-KWIEG
+  - P-EQGG7
   date:
     kind: academic-term
     term: spring
     year: 2020
+  area: complex-analysis
 ---
 
 ::: remark
-Fragment of Spring 2020 HW 3 maximum-modulus annotations from `wiki/30_Complex_Analysis/09_Quals/040_Maximum_Modulus.md`. Not a complete homework sheet: other HW 3 items live on their own `SRC-CA-ART-*` cards. The list is the five cards this artifact carries. Nothing was invented to fill holes.
+Spring 2020 HW 3. No homework sheet PDF identified for this collection. `assets/attachments/8150-hw3.pdf` is Math 8150 Spring 2021 Assignment 3 and does not match this problem list.
 :::

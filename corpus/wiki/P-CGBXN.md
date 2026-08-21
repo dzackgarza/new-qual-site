@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - roots-of-unity
-  - cyclic-groups
+  - Finite Fields
+  - Roots of Unity
+  - Cyclic Groups
 relations: []
 review: draft
 solved: true
 ---
+
 Let $F$ be a finite field with $q$ elements.
 Let $n$ be a positive integer relatively prime to $q$ and let $\omega$ be a primitive $n$th root of unity in an extension field of $F$.
 Let $E = F [\omega]$ and let $k = [E : F]$.

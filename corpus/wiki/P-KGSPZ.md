@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - measure-theory
+  - Convergence of Integrals
+  - Measure Theory
 relations: []
 review: draft
 solved: true

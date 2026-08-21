@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-C2ZOD
 kind: problem
-title: "Hungerford 5.3.8"
+title: Hungerford 5.3.8
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - fields
+  - Finite Fields
+  - Fields
 relations: []
 review: draft
 solved: false

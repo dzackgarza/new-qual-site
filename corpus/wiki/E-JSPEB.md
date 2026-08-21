@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: E-JSPEB
 kind: exercise
-title: "Using the estimates"
+title: Using the estimates
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
+  - Schwarz Lemma
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Using the estimates"}
 Suppose $f: \DD\to \DD$ with $f(0) = 0$ and $\abs{f(z)} \leq \abs{e^z}$ when $\abs{z} = 1$.
 Find an upper bound for $f\qty{1+i\over 2}$.

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-GMGFS
 kind: exercise
-title: "Expansion at an essential singularity"
+title: Expansion at an essential singularity
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - essential-singularities
-  - residues
-  - trigonometry
+  - Laurent Series
+  - Essential Singularities
+  - Residues
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Expansion at an essential singularity"}
 Find a Laurent expansion about $z=0$ of
 \[

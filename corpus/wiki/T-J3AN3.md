@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-J3AN3
 kind: theorem
-title: "Riesz-Fischer"
+title: Riesz-Fischer
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - l2
-  - bases
+  - Hilbert Spaces
+  - L²
+  - Bases
 relations: []
 review: draft
 ---

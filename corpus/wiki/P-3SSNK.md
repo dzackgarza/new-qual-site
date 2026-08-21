@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - integrals
-  - continuity
+  - Riemann Integrability
+  - Integrals
+  - Continuity
 relations: []
 review: draft
 solved: true

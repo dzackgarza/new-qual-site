@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-US4ES
 kind: problem
-title: Continuity equivalent to lower and upper semicontinuity, and sequential characterization of lower semicontinuity
+title: Continuity equivalent to lower and upper semicontinuity, and sequential characterization
+  of lower semicontinuity
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - metric-spaces
+  - Continuity
+  - Metric Spaces
 relations: []
 review: draft
 solved: true

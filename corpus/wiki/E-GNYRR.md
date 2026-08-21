@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - eigenvalues-and-eigenvectors
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Eigenvalues and Eigenvectors
+  - Linear Algebra
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="?"}
 Prove Cayley-Hamilton in the following way.
 Let $V = \spanof\ts{\vector v_1, \cdots, \vector v_n}$ and define the $i$th flag as $\Fil_i V \da \spanof\ts{\vector v_1, \cdots, \vector v_i}$ for all $1\leq i \leq n$, and set $\Fil_0 V \da \ts{0}$.

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-3JJJN
 kind: definition
-title: "Split Exact Sequences"
+title: Split Exact Sequences
 classification:
   areas:
   - algebra
   topics:
-  - exact-sequences
-  - homological-algebra
-  - modules
+  - Exact Sequences
+  - Homological Algebra
+  - Modules
 relations: []
 review: draft
 ---

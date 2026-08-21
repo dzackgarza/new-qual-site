@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
-  - uniform-convergence
+  - Rouché
+  - Zeros
+  - Polynomials
+  - Uniform Convergence
 relations: []
 review: draft
 solved: true

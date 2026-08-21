@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - polynomials
-  - liouville-s-theorem
-  - zeros
+  - Entire Functions
+  - Polynomials
+  - Liouville's Theorem
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f$ be entire and suppose that
 $\lim_{z \rightarrow \infty} f(z) = \infty$. Show that $f$ is a polynomial.

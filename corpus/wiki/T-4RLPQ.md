@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-4RLPQ
 kind: theorem
-title: "Sequentially compact if and only if complete and totally bounded"
+title: Sequentially compact if and only if complete and totally bounded
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - completeness
-  - metric-spaces
+  - Compactness
+  - Completeness
+  - Metric Spaces
 relations: []
 review: draft
 ---

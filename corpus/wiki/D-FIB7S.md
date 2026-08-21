@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-FIB7S
 kind: definition
-title: "p-groups"
+title: p-groups
 classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - groups
+  - p-Groups
+  - Groups
 relations: []
 review: draft
 ---

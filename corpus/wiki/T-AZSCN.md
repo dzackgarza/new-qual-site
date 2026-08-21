@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-AZSCN
 kind: theorem
-title: "Weierstrass $M\\dash$Test"
+title: Weierstrass $M\dash$Test
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - uniform-convergence
-  - series-of-functions
+  - Convergence Tests
+  - Uniform Convergence
+  - Series of Functions
 relations: []
 review: draft
 ---

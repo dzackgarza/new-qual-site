@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-VS4XE
 kind: exercise
-title: "Lune with only one intersection point"
+title: Lune with only one intersection point
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
-  - complex-logarithm
+  - Conformal Maps
+  - Fractional Linear Transformations
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Lune with only one intersection point"}
 Find a conformal map:
 \[

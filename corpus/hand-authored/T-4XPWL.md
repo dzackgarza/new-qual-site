@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-4XPWL
 kind: theorem
-title: "Laurent expansion on an annulus"
+title: Laurent expansion on an annulus
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - principal-parts
-  - singularities
+  - Laurent Series
+  - Principal Parts
+  - Singularities
 relations: []
 review: draft
 ---

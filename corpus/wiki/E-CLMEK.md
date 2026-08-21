@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-continuity
-  - continuity
+  - Uniform Continuity
+  - Continuity
 relations: []
 review: draft
 solved: false

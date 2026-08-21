@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-ZS4IH
 kind: problem
-title: A bound on the difference quotient of a holomorphic function on a half-radius disc
+title: A bound on the difference quotient of a holomorphic function on a half-radius
+  disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - schwarz-lemma
+  - Cauchy Estimates
+  - Schwarz Lemma
 relations: []
 review: draft
 solved: true

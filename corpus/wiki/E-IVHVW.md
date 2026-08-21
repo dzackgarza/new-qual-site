@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-IVHVW
 kind: exercise
-title: "Bounded above by Blaschke product"
+title: Bounded above by Blaschke product
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - schwarz-lemma
-  - zeros
-  - maximum-modulus-principle
+  - Blaschke Factors
+  - Schwarz Lemma
+  - Zeros
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Bounded above by Blaschke product"}
 Let $f: \DD\to \DD$ with $\ts{a_k}_{k\leq n}$ the zeros of $f$ in $\DD$.
 Show that

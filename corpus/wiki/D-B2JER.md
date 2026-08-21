@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-B2JER
 kind: definition
-title: "Cup Product"
+title: Cup Product
 classification:
   areas:
   - topology
   topics:
-  - cohomology
+  - Cohomology
 relations: []
 review: draft
 ---

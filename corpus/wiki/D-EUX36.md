@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-EUX36
 kind: definition
-title: "Homotopy Groups"
+title: Homotopy Groups
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - fundamental-group
+  - Homotopy
+  - Fundamental Group
 relations: []
 review: draft
 ---

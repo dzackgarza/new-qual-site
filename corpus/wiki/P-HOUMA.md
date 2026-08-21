@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - metric-spaces
-  - connectedness
+  - Metric Spaces
+  - Connectedness
 relations: []
 review: draft
 solved: true

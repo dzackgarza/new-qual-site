@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-IKJXT
 kind: problem
-title: $\QQ[\theta]$ for an $S_4$-quartic has no intermediate fields, unlike Galois extensions of degree $4$
+title: $\QQ[\theta]$ for an $S_4$-quartic has no intermediate fields, unlike Galois
+  extensions of degree $4$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - permutations
+  - Galois Theory
+  - Field Extensions
+  - Permutations
 relations: []
 review: draft
 solved: false

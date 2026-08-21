@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-PYJZO
 kind: exercise
-title: "Standard sector"
+title: Standard sector
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true

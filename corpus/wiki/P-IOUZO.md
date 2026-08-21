@@ -8,10 +8,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - polynomials
-  - power-series
-  - entire-functions
+  - Uniform Convergence
+  - Polynomials
+  - Power Series
+  - Entire Functions
 relations: []
 review: draft
 solved: false

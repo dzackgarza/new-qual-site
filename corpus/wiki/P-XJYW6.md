@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - eigenvalues-and-eigenvectors
-  - diagonalization
-  - matrices
+  - Eigenvalues and Eigenvectors
+  - Diagonalization
+  - Matrices
 relations: []
 review: draft
 solved: false

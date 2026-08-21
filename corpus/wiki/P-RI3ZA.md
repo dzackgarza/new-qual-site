@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - counterexamples
+  - Galois Theory
+  - Splitting Fields
+  - Counterexamples
 relations: []
 review: draft
 solved: false

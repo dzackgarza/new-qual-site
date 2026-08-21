@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - field-extensions
+  - Galois Theory
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: true
 ---
+
 Define
 \[
 f(x) \da x^4 + 4x^2 + 64 \in \QQ[x]

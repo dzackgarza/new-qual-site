@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-GXMDW
 kind: definition
-title: "Ring Morphism"
+title: Ring Morphism
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - homomorphisms
+  - Rings
+  - Homomorphisms
 relations: []
 review: draft
 ---

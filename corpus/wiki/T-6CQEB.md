@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-6CQEB
 kind: theorem
-title: "Cancellation / 3rd Isomorphism Theorem"
+title: Cancellation / 3rd Isomorphism Theorem
 classification:
   areas:
   - algebra
   topics:
-  - isomorphism-theorems
-  - normal-subgroups
+  - Isomorphism Theorems
+  - Normal Subgroups
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Cancellation / 3rd Isomorphism Theorem"}
 Suppose $N, K \leq G$ with $N \normal G$ and $N\subseteq K \subseteq G$.
 

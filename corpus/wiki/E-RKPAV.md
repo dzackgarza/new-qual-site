@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - cauchy-riemann
-  - holomorphic-functions
+  - Open Mapping Theorem
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Prove that if $f$ is holomorphic on a connected open set $\Omega$ and $f^2(z) = \bar{f(z)}$ then $f$ is constant.
 

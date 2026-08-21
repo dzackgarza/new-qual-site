@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-SFDLG
 kind: problem
-title: Cauchy-Riemann equations in polar coordinates and the holomorphicity and discontinuity of $\Log z$
+title: Cauchy-Riemann equations in polar coordinates and the holomorphicity and discontinuity
+  of $\Log z$
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - complex-logarithm
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Complex Logarithm
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 \envlist
 

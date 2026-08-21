@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-KQTPR
 kind: theorem
-title: "Open Mapping"
+title: Open Mapping
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - open-mapping-theorem
+  - Functional Analysis
+  - Open Mapping Theorem
 relations: []
 review: draft
 ---

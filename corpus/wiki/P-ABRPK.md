@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - schwarz-reflection
-  - maximum-modulus-principle
-  - zeros
+  - Blaschke Factors
+  - Schwarz Reflection
+  - Maximum Modulus Principle
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $f:\DD\to\DD$ is analytic and admits a continuous extension $\tilde f: \bar \DD \to \bar \DD$ such that $\abs{z} = 1 \implies \abs{f(z)} = 1$.
 

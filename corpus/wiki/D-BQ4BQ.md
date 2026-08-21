@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-BQ4BQ
 kind: definition
-title: "Commutator"
+title: Commutator
 classification:
   areas:
   - algebra
   topics:
-  - commutators
-  - normal-subgroups
-  - abelian-groups
+  - Commutators
+  - Normal Subgroups
+  - Abelian Groups
 relations: []
 review: draft
 ---
+
 :::{.definition title="Commutator"}
 The **commutator subgroup** of $G$ is denoted $[G, G] \leq G$.
 It is the subgroup *generated* by all elementary commutators:

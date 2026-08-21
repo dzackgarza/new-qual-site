@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-YELFJ
 kind: problem
-title: An ideal maximal among annihilators of nonzero elements of an $R$-module is prime
+title: An ideal maximal among annihilators of nonzero elements of an $R$-module is
+  prime
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - prime-ideals
-  - ideals
+  - Modules
+  - Prime Ideals
+  - Ideals
 relations: []
 review: draft
 solved: false

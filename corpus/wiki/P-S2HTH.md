@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - permutations
-  - partitions
+  - Conjugacy
+  - Permutations
+  - Partitions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem}
 Let $G=S_5$, the symmetric group on 5 elements. Identify
 all conjugacy classes of elements in $G$, provide a representative from

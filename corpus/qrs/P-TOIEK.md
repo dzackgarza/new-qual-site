@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - uniform-convergence
-  - sequences-of-functions
+  - Uniform Convergence
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true

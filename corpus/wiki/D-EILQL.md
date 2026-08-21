@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-EILQL
 kind: definition
-title: "Cochain"
+title: Cochain
 classification:
   areas:
   - topology
   topics:
-  - cohomology
+  - Cohomology
 relations: []
 review: draft
 ---

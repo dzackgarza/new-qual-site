@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-KKU6N
 kind: proposition
-title: "Upper half-plane to vertical half-strip"
+title: Upper half-plane to vertical half-strip
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - trigonometry
+  - Conformal Maps
+  - Trigonometry
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Upper half-plane to vertical half-strip"}
 \[
 ? &\mapstofrom ? \\

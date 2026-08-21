@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - galois-theory
-  - sylow-theory
+  - Solvable Groups
+  - Galois Theory
+  - Sylow Theory
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $K$ be a Galois extension of a field $F$ with $[K: F] = 2015$.
 Prove that $K$ is an extension by radicals of the field $F$.

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-GKPVE
 kind: problem
-title: $K(u)/K$ is not Galois and $\Aut(K(u)/K)$ is trivial for a single root of an irreducible of degree $n$
+title: $K(u)/K$ is not Galois and $\Aut(K(u)/K)$ is trivial for a single root of an
+  irreducible of degree $n$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - automorphisms
+  - Galois Theory
+  - Field Extensions
+  - Automorphisms
 relations: []
 review: draft
 solved: false

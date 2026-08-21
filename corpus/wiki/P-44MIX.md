@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - modules
-  - canonical-forms
+  - Structure Theorem
+  - Modules
+  - Canonical Forms
 relations: []
 review: draft
 solved: false

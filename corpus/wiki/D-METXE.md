@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - continuity
-  - point-set
+  - Continuity
+  - Point-Set Topology
 relations: []
 review: draft
 ---

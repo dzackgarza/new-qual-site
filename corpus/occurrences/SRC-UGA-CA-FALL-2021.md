@@ -9,7 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance:
+- https://www.math.uga.edu/sites/default/files/Quals/Complex%20Analysis%20%5BFall%202021%5D.docx
+source:
   source_kind: university-exam
   institution: uga
   area: complex-analysis
@@ -28,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UGA complex-analysis Fall 2021. The department PDF at `https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2021.pdf` returns 404. The paper is the current Quals posting `Complex Analysis [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The local dump is `.tmp-uga-ca-exams/FALL-2021.txt`. The sitting transcription `assets/ws9/qual-review-and-solutions/native/Complex Analysis/UGA Question (no solutions)/sections/9999_2021_Fall.md.source` matches that paper. The list is the sitting order on that paper. Exam #3 is the wedge integral from $0$ to $\infty$ on [[P-W23PS]].
+UGA complex-analysis Fall 2021. The department PDF at `https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2021.pdf` returns 404. The paper is the current Quals posting `Complex Analysis [Fall 2021].docx` under `https://www.math.uga.edu/sites/default/files/Quals/`. The local dump is `.tmp-uga-ca-exams/FALL-2021.txt`. List order was checked against the qual notes transcription under qual-review-and-solutions; those notes are not collection provenance. Exam #3 is the wedge integral from $0$ to $\infty$ on [[P-W23PS]].
 :::

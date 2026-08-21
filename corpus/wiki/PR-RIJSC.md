@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-RIJSC
 kind: proposition
-title: "Recognizing direct sums"
+title: Recognizing direct sums
 classification:
   areas:
   - algebra
   topics:
-  - modules
+  - Modules
 relations: []
 review: draft
 ---

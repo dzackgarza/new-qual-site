@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - matrices
-  - canonical-forms
+  - Group Actions
+  - Matrices
+  - Canonical Forms
 relations: []
 review: draft
 solved: false

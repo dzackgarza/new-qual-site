@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-FAIJX
 kind: definition
-title: "Mayer-Vietoris Sequence"
+title: Mayer-Vietoris Sequence
 classification:
   areas:
   - topology
   topics:
-  - mayer-vietoris
-  - homology
+  - Mayer-Vietoris
+  - Homology
 relations:
 - kind: related-to
   target: T-3VUOH

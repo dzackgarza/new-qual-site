@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-TZCW3
 kind: problem
-title: Fundamental theorem of algebra via Rouché's theorem and the maximum modulus principle
+title: Fundamental theorem of algebra via Rouché's theorem and the maximum modulus
+  principle
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - maximum-modulus-principle
-  - polynomials
-  - zeros
+  - Rouché
+  - Maximum Modulus Principle
+  - Polynomials
+  - Zeros
 relations: []
 review: draft
 solved: true

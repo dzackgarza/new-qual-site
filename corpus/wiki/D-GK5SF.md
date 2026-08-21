@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-GK5SF
 kind: definition
-title: "Minimal polynomial"
+title: Minimal polynomial
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Linear Algebra
 relations: []
 review: draft
 ---

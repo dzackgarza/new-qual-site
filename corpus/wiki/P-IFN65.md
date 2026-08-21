@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-IFN65
 kind: problem
-title: Freely homotopic loops on a closed genus-$2$ surface that are not homotopic rel basepoint
+title: Freely homotopic loops on a closed genus-$2$ surface that are not homotopic
+  rel basepoint
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
-  - surfaces
+  - Fundamental Group
+  - Homotopy
+  - Surfaces
 relations: []
 review: draft
 solved: false

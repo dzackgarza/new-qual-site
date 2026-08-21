@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-FL5SY
 kind: problem
-title: Liouville's theorem via $\lim_{R\to\infty}\int_{|z|=R}\frac{f(z)}{(z-a)(z-b)}\,dz$ for bounded entire $f$
+title: Liouville's theorem via $\lim_{R\to\infty}\int_{|z|=R}\frac{f(z)}{(z-a)(z-b)}\,dz$
+  for bounded entire $f$
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - cauchy-integral-formula
-  - residues
-  - entire-functions
+  - Liouville's Theorem
+  - Cauchy Integral Formula
+  - Residues
+  - Entire Functions
 relations: []
 review: draft
 solved: false

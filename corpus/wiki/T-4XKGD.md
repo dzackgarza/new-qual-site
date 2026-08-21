@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-4XKGD
 kind: theorem
-title: "Frattini's Argument"
+title: Frattini's Argument
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - centralizers-and-normalizers
-  - normal-subgroups
+  - Sylow Theory
+  - Centralizers and Normalizers
+  - Normal Subgroups
 relations: []
 review: draft
 ---

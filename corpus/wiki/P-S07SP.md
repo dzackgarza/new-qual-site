@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - spectral-theorem
-  - diagonalization
+  - Spectral Theorem
+  - Diagonalization
 relations: []
 review: draft
 solved: false

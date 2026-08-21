@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - power-series
-  - entire-functions
+  - Liouville's Theorem
+  - Power Series
+  - Entire Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 \envlist
 

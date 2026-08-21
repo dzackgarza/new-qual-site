@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-GDXFZ
 kind: definition
-title: "Proper: Several equivalent definitions."
+title: 'Proper: Several equivalent definitions.'
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - continuity
-  - point-set
+  - Compactness
+  - Continuity
+  - Point-Set Topology
 relations: []
 review: draft
 ---

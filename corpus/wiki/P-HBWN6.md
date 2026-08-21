@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - fubini-tonelli
-  - l1
+  - Convolution
+  - Fubini-Tonelli
+  - L¹
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f, g\in L^1(\RR)$. 
 Argue that $H(x, y) \definedas f(y) g(x-y)$ defines a function in $L^1(\RR^2)$ and deduce from this fact that
 \[

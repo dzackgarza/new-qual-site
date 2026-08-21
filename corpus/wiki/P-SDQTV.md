@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-SDQTV
 kind: problem
-title: Covering spaces and deck transformations of the Klein bottle, Möbius band, and $\RP^2\times S^1$
+title: Covering spaces and deck transformations of the Klein bottle, Möbius band,
+  and $\RP^2\times S^1$
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - group-actions
-  - surfaces
+  - Covering Spaces
+  - Group Actions
+  - Surfaces
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-6WOTK
 kind: proposition
-title: "Strict maximum principle, real version"
+title: Strict maximum principle, real version
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - harmonic-functions
+  - Maximum Modulus Principle
+  - Harmonic Functions
 relations: []
 review: draft
 ---

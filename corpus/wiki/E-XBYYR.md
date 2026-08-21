@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-reflection
-  - fractional-linear-transformations
-  - maximum-modulus-principle
+  - Schwarz Reflection
+  - Fractional Linear Transformations
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 a. 
 State the standard Schwarz reflection principle involving reflection across the real axis.

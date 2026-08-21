@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZJFFS
 kind: problem
-title: Quadratic extensions in characteristic 0 are Galois; stacked quadratics need not be
+title: Quadratic extensions in characteristic 0 are Galois; stacked quadratics need
+  not be
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - normal-subgroups
+  - Galois Theory
+  - Field Extensions
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

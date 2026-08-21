@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-E33SA
 kind: exercise
-title: Uniform continuity, sets of discontinuities, and non-uniform limits of continuous functions
+title: Uniform continuity, sets of discontinuities, and non-uniform limits of continuous
+  functions
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - continuity
-  - counterexamples
+  - Uniform Continuity
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: true

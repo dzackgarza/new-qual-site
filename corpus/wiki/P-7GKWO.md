@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - integrals
-  - continuity
+  - Measure Theory
+  - Integrals
+  - Continuity
 relations: []
 review: draft
 solved: true
 ---
+
 Suppose $F \subseteq \RR$ with $m(F^c) < \infty$ and let \( \delta(x) \da d(x, F) \) and
 \[
 I_F(x) \da \int_\RR { \delta(y) \over \abs{x-y}^2 } \dy

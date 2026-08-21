@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-5Y4MC
 kind: definition
-title: "Equicontinuous Family"
+title: Equicontinuous Family
 classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - sequences-of-functions
+  - Equicontinuity
+  - Sequences of Functions
 relations: []
 review: draft
 ---

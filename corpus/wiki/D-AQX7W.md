@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-AQX7W
 kind: definition
-title: "Basis of a Hilbert space"
+title: Basis of a Hilbert space
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - density
-  - bases
+  - Hilbert Spaces
+  - Density
+  - Bases
 relations: []
 review: draft
 ---

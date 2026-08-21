@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-UHWNM
 kind: proposition
-title: "Regularity of measure"
+title: Regularity of measure
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

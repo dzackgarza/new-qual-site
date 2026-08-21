@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZCPFV
 kind: problem
-title: $\int_a^b f\,d\alpha=\int_a^b f\alpha'\,dx$ when $f$ is Riemann integrable and $\alpha\in C^1[a,b]$
+title: $\int_a^b f\,d\alpha=\int_a^b f\alpha'\,dx$ when $f$ is Riemann integrable
+  and $\alpha\in C^1[a,b]$
 classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - integrals
-  - differentiation
+  - Riemann Integrability
+  - Integrals
+  - Differentiation
 relations: []
 review: draft
 solved: true

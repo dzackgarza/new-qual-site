@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-IR6HQ
 kind: problem
-title: "Hungerford 7.4.4"
+title: Hungerford 7.4.4
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

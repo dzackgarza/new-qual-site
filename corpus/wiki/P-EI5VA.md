@@ -2,18 +2,21 @@
 schema: qual/card@1
 id: P-EI5VA
 kind: problem
-title: Stabilizers in an orbit are conjugate, conjugates of a proper subgroup do not cover $G$, and a transitive action on two or more points has a fixed-point-free element
+title: Stabilizers in an orbit are conjugate, conjugates of a proper subgroup do not
+  cover $G$, and a transitive action on two or more points has a fixed-point-free
+  element
 classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - conjugacy
-  - burnside-s-lemma
+  - Orbit-Stabilizer
+  - Conjugacy
+  - Burnside's Lemma
 relations: []
 review: draft
 solved: true
 ---
+
 a.
 Suppose the group $G$ acts on the set $X$ . Show that the stabilizers of elements in the same orbit are conjugate.
 

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-EHL3O
 kind: proposition
-title: "Uniformly continuous $L^1$ functions vanish at infinity."
+title: Uniformly continuous $L^1$ functions vanish at infinity.
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - l1
-  - limits
+  - Uniform Continuity
+  - L¹
+  - Limits
 relations: []
 review: draft
 ---

@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-CTAKB
 kind: definition
-title: "Characters"
+title: Characters
 classification:
   areas:
   - algebra
   topics:
-  - character-theory
-  - representation-theory
-  - trace
+  - Character Theory
+  - Representation Theory
+  - Trace
 relations: []
 review: draft
 ---
+
 :::{.definition title="Characters"}
 The **character** of a representation $M$ is the trace of the map
 \[

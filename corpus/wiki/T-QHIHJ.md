@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-QHIHJ
 kind: theorem
-title: "Liouville's Theorem"
+title: Liouville's Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
+  - Liouville's Theorem
+  - Entire Functions
 relations: []
 review: draft
 ---

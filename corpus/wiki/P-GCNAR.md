@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-GCNAR
 kind: problem
-title: Invariant factors, indecomposable $\CC[x]$-modules, and Jordan form of a $5\times 5$ matrix
+title: Invariant factors, indecomposable $\CC[x]$-modules, and Jordan form of a $5\times
+  5$ matrix
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - jordan-canonical-form
-  - modules
+  - Structure Theorem
+  - Jordan Canonical Form
+  - Modules
 relations: []
 review: draft
 solved: false

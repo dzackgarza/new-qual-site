@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - l1
-  - fubini-tonelli
+  - Convolution
+  - L¹
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f, g \in L^1(\RR)$ be Borel measurable.
 

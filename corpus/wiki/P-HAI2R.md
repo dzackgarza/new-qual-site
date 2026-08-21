@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HAI2R
 kind: problem
-title: Galois group and intermediate fields of $x^3-7$ over $\QQ$, and Galois groups over $\RR$ and $\FF_{13}$
+title: Galois group and intermediate fields of $x^3-7$ over $\QQ$, and Galois groups
+  over $\RR$ and $\FF_{13}$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - finite-fields
+  - Galois Theory
+  - Splitting Fields
+  - Finite Fields
 relations: []
 review: draft
 solved: false

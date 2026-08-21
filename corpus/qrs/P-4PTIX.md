@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - fixed-points
-  - schwarz-lemma
-  - blaschke-factors
+  - Fixed Points
+  - Schwarz Lemma
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true

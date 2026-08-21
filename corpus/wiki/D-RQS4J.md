@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-RQS4J
 kind: definition
-title: "Cap Product"
+title: Cap Product
 classification:
   areas:
   - topology
   topics:
-  - cohomology
-  - homology
-  - poincare-duality
+  - Cohomology
+  - Homology
+  - Poincaré Duality
 relations: []
 review: draft
 ---

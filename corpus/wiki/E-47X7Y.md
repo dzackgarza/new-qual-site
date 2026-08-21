@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - centralizers-and-normalizers
-  - orbit-stabilizer
+  - Conjugacy
+  - Centralizers and Normalizers
+  - Orbit-Stabilizer
 relations: []
 review: draft
 solved: false

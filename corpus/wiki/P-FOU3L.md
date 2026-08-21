@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FOU3L
 kind: problem
-title: Invertibility outside $\langle p\rangle$ and purity in $\langle p\rangle$-primary modules over a PID
+title: Invertibility outside $\langle p\rangle$ and purity in $\langle p\rangle$-primary
+  modules over a PID
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - primary-decomposition
-  - principal-ideal-domains
+  - Modules
+  - Primary Decomposition
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: true

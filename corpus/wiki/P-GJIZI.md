@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-GJIZI
 kind: problem
-title: $L^1$ functions are finite a.e., absolutely summable series in $L^1$, and a dominated-convergence limit
+title: $L^1$ functions are finite a.e., absolutely summable series in $L^1$, and a
+  dominated-convergence limit
 classification:
   areas:
   - real-analysis
   topics:
-  - l1
-  - series-of-functions
-  - convergence-of-integrals
+  - L¹
+  - Series of Functions
+  - Convergence of Integrals
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-MTLQI
 kind: exercise
-title: "SS 1.13: Constant real/imaginary/magnitude implies constant"
+title: 'SS 1.13: Constant real/imaginary/magnitude implies constant'
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - open-mapping-theorem
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Open Mapping Theorem
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

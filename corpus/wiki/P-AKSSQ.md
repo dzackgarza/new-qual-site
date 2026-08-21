@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-AKSSQ
 kind: problem
-title: A nowhere-vanishing holomorphic function of constant modulus on $\partial D$ is constant
+title: A nowhere-vanishing holomorphic function of constant modulus on $\partial D$
+  is constant
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true

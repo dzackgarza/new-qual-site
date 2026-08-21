@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-WA2OW
 kind: problem
-title: The group algebra over $\CC$ versus other fields, and when the characteristic divides $|G|$
+title: The group algebra over $\CC$ versus other fields, and when the characteristic
+  divides $|G|$
 classification:
   areas:
   - algebra
   topics:
-  - group-rings
-  - representation-theory
-  - characteristic
+  - Group Rings
+  - Representation Theory
+  - Characteristic
 relations: []
 review: draft
 solved: false

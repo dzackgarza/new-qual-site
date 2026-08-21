@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-ZJQO4
 kind: problem
-title: "Hungerford 4.4.3"
+title: Hungerford 4.4.3
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - exact-sequences
-  - homological-algebra
+  - Modules
+  - Exact Sequences
+  - Homological Algebra
 relations: []
 review: draft
 solved: false

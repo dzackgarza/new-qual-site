@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-LGP2Q
 kind: definition
-title: "The Weierstrass $\\wp$ function"
+title: The Weierstrass $\wp$ function
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
+  - Meromorphic Functions
 relations: []
 review: draft
 ---

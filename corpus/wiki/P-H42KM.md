@@ -7,13 +7,14 @@ classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - cell-complexes
-  - van-kampen
+  - Fundamental Group
+  - Cell Complexes
+  - van Kampen
 relations: []
 review: draft
 solved: true
 ---
+
 For $f:X\to Y$, the *mapping cone* of $f$ is defined as
 \[  
 C_f \definedas \qty{X\cross I} \disjoint Y/\sim \\

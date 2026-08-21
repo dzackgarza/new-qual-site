@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-NQZUY
 kind: definition
-title: "$R\\dash$modules"
+title: $R\dash$modules
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - algebras
+  - Modules
+  - Algebras
 relations: []
 review: draft
 ---
+
 :::{.definition title="$R\dash$modules"}
 Four properties:
 

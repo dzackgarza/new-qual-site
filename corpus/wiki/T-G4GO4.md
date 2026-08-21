@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-G4GO4
 kind: theorem
-title: "The Tube Lemma"
+title: The Tube Lemma
 classification:
   areas:
   - topology
   topics:
-  - tube-lemma
-  - compactness
-  - product-topology
+  - Tube Lemma
+  - Compactness
+  - Product Topology
 relations: []
 review: draft
 ---

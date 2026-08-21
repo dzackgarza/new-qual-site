@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-2MTPE
 kind: proposition
-title: "Summation by Parts"
+title: Summation by Parts
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - series-of-numbers
+  - Convergence Tests
+  - Series of Numbers
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Summation by Parts"}
 Setting $A_n \da \sum_{k=1}^n b_k$ and $B_0 \da 0$,
 \[

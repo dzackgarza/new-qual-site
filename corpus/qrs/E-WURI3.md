@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - uniform-continuity
-  - l1
+  - Fourier Analysis
+  - Uniform Continuity
+  - L¹
 relations: []
 review: draft
 solved: true

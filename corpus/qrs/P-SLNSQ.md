@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - finite-fields
-  - irreducibility-criteria
+  - Finite Fields
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: true

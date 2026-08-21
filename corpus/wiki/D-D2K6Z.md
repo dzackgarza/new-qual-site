@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-D2K6Z
 kind: definition
-title: "Coboundary"
+title: Coboundary
 classification:
   areas:
   - topology
   topics:
-  - cohomology
-  - homological-algebra
+  - Cohomology
+  - Homological Algebra
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-7ALR2
 kind: definition
-title: "Precompact"
+title: Precompact
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - closure
+  - Compactness
+  - Closure
 relations: []
 review: draft
 ---

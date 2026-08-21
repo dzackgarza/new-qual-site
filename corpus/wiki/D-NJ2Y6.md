@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-NJ2Y6
 kind: definition
-title: "Simplicial Complex"
+title: Simplicial Complex
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homology
+  - Cell Complexes
+  - Homology
 relations: []
 review: draft
 ---

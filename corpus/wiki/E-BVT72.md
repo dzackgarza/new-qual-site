@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - identity-theorem
-  - counterexamples
+  - Zeros
+  - Identity Theorem
+  - Counterexamples
 relations: []
 review: draft
 solved: false

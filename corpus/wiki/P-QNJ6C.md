@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - integrals
-  - counterexamples
+  - Fubini-Tonelli
+  - Integrals
+  - Counterexamples
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f(x, y)$ on $[-1, 1]^2$ be defined by 
 $$
 f(x, y) = \begin{cases}

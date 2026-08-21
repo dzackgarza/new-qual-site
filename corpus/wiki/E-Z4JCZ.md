@@ -2,20 +2,21 @@
 schema: qual/card@1
 id: E-Z4JCZ
 kind: exercise
-title: "$1/1+a^2+2a\\cos(\\theta)$, Poisson kernels"
+title: $1/1+a^2+2a\cos(\theta)$, Poisson kernels
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
-  - harmonic-functions
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
+  - Harmonic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/1+a^2+2a\cos(\theta)$, Poisson kernels"}
 \[
 \int_{0}^{2 \pi} \frac{d \theta}{1+a^{2}-2 a \cos (\theta)}

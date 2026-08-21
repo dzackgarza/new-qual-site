@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - countability
-  - density
-  - euclidean-spaces
+  - Countability
+  - Density
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: false

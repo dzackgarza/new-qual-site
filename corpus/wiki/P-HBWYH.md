@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-HBWYH
 kind: problem
-title: $F(\alpha)=F(\alpha^2)$ when $\alpha$ has odd degree over $F$, and $\alpha^{2020}$ has odd degree
+title: $F(\alpha)=F(\alpha^2)$ when $\alpha$ has odd degree over $F$, and $\alpha^{2020}$
+  has odd degree
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - polynomials
+  - Field Extensions
+  - Polynomials
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-NZY3B
 kind: exercise
-title: "Complement of a segment"
+title: Complement of a segment
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Complex Logarithm
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Complement of a segment"}
 Map $\CC\sm[-1, 1]$ to $\DD$.
 

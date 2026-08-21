@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - functional-analysis
+  - Functional Analysis
 relations: []
 review: draft
 solved: false

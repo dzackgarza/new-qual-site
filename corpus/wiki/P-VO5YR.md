@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-VO5YR
 kind: problem
-title: "Invert $\\sin(z)$ using geometric series"
+title: Invert $\sin(z)$ using geometric series
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - power-series
-  - trigonometry
+  - Laurent Series
+  - Power Series
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Invert $\sin(z)$ using geometric series"}
 Invert $\sin(z)$ using a geometric series, heeding the warning above.
 :::

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - structure-theorem
-  - cyclic-groups
+  - Finite Fields
+  - Structure Theorem
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

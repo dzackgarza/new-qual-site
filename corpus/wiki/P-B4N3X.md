@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - continuity
-  - subspace-topology
+  - Continuity
+  - Subspace Topology
 relations: []
 review: draft
 solved: false

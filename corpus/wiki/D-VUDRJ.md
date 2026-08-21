@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-VUDRJ
 kind: definition
-title: "Relative homotopy groups"
+title: Relative homotopy groups
 classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 ---

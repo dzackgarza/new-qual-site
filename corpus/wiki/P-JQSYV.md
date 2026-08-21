@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-JQSYV
 kind: problem
-title: "Hungerford 2.6.9"
+title: Hungerford 2.6.9
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - sylow-theory
-  - semidirect-products
+  - Classification
+  - Sylow Theory
+  - Semidirect Products
 relations: []
 review: draft
 solved: false

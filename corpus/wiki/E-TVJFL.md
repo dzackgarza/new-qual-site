@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-TVJFL
 kind: exercise
-title: "Zero derivative implies constant"
+title: Zero derivative implies constant
 classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - cauchy-riemann
-  - connectedness
+  - Holomorphic Functions
+  - Cauchy-Riemann
+  - Connectedness
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: C-4GQK3
 kind: corollary
-title: "Normality satisfies the lifting property"
+title: Normality satisfies the lifting property
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - splitting-fields
-  - galois-theory
+  - Field Extensions
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 ---

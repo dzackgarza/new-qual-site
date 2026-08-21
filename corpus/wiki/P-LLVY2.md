@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-LLVY2
 kind: problem
-title: "Spring 2021, 8"
+title: Spring 2021, 8
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - surfaces
-  - classification
+  - Homotopy
+  - Surfaces
+  - Classification
 relations: []
 review: draft
 solved: false

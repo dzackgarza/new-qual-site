@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-4QNEW
 kind: definition
-title: "N-connected"
+title: N-connected
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - connectedness
-  - fundamental-group
+  - Homotopy
+  - Connectedness
+  - Fundamental Group
 relations: []
 review: draft
 ---

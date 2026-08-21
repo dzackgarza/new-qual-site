@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-V4MOK
 kind: proposition
-title: "Differentiating Under an Integral (non-negative)"
+title: Differentiating Under an Integral (non-negative)
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - convergence-of-integrals
-  - integrals
+  - Differentiation
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Differentiating Under an Integral (non-negative)"}
 If $\abs{\dd{}{t}f(x, t)} \leq g(x) \in L^1$, then letting $F(t) = \int f(x, t) ~dt$,
 \[

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-GRNXH
 kind: problem
-title: Which interpolations $f(1/n)$ are possible for a holomorphic function on the disk
+title: Which interpolations $f(1/n)$ are possible for a holomorphic function on the
+  disk
 classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - zeros
-  - holomorphic-functions
+  - Identity Theorem
+  - Zeros
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

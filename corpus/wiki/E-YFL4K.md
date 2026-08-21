@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-YFL4K
 kind: exercise
-title: "Uniformly bounded but not equicontinuous"
+title: Uniformly bounded but not equicontinuous
 classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - counterexamples
-  - sequences-of-functions
+  - Equicontinuity
+  - Counterexamples
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true

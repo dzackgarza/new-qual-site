@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-QF7KI
 kind: exercise
-title: "Residues at infinity"
+title: Residues at infinity
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - singularities
+  - Residues
+  - Contour Integration
+  - Singularities
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="Residues at infinity"}
 Use residues at infinity to evaluate
 \[

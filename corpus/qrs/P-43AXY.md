@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - polynomials
-  - zeros
+  - Rouché
+  - Polynomials
+  - Zeros
 relations: []
 review: draft
 solved: true

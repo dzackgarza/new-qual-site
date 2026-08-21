@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: C-O7CP3
 kind: corollary
-title: "The Class Equation"
+title: The Class Equation
 classification:
   areas:
   - algebra
   topics:
-  - class-equation
-  - conjugacy
-  - centralizers-and-normalizers
+  - Class Equation
+  - Conjugacy
+  - Centralizers and Normalizers
 relations: []
 review: draft
 ---
+
 :::{.corollary title="The Class Equation"}
 \[
 \size  {G} = \size  {Z(G)} + \sum_{\substack{\text{One $g$ from} \\ \text{each nontrivial} \\ \text{conj. class}}} [G: Z(g)]

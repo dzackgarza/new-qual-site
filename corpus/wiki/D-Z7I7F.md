@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-Z7I7F
 kind: definition
-title: "Homotopic"
+title: Homotopic
 classification:
   areas:
   - topology
   topics:
-  - homotopy
+  - Homotopy
 relations: []
 review: draft
 ---

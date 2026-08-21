@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - equicontinuity
-  - convergence-of-functions
+  - Equicontinuity
+  - Convergence of Functions
 relations: []
 review: draft
 solved: true

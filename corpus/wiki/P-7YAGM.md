@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - field-extensions
-  - galois-theory
+  - Roots of Unity
+  - Field Extensions
+  - Galois Theory
 relations: []
 review: draft
 solved: false

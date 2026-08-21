@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - separability
+  - Field Extensions
+  - Separability
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-3X3TO
 kind: proposition
-title: "Freshman's Dream"
+title: Freshman's Dream
 classification:
   areas:
   - algebra
   topics:
-  - characteristic
-  - fields
-  - finite-fields
+  - Characteristic
+  - Fields
+  - Finite Fields
 relations: []
 review: draft
 ---

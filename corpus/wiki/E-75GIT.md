@@ -8,8 +8,8 @@ classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - transcendence
+  - Field Extensions
+  - Transcendence
 relations: []
 review: draft
 solved: false

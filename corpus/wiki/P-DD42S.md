@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-DD42S
 kind: problem
-title: An intermediate field of a Galois extension is normal iff its Galois group is a normal subgroup
+title: An intermediate field of a Galois extension is normal iff its Galois group
+  is a normal subgroup
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - normal-subgroups
-  - field-extensions
+  - Galois Theory
+  - Normal Subgroups
+  - Field Extensions
 relations: []
 review: draft
 solved: false

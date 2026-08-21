@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-7ITXP
 kind: problem
-title: "\\label{equivalence_of_approximating_measures}"
+title: \label{equivalence_of_approximating_measures}
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 solved: true

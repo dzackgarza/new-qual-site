@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HV7IM
 kind: problem
-title: Element orders in the quaternion group, and quadratic subfields of a $Q_8$-extension of $\QQ$
+title: Element orders in the quaternion group, and quadratic subfields of a $Q_8$-extension
+  of $\QQ$
 classification:
   areas:
   - algebra
   topics:
-  - groups
-  - galois-theory
-  - field-extensions
+  - Groups
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-GN4CE
 kind: problem
-title: The subring of $\ZZ[x]$ of polynomials with even non-constant coefficients is not Noetherian
+title: The subring of $\ZZ[x]$ of polynomials with even non-constant coefficients
+  is not Noetherian
 classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - ideals
-  - polynomials
+  - Noetherian Rings
+  - Ideals
+  - Polynomials
 relations: []
 review: draft
 solved: true

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-ZJJ7G
 kind: definition
-title: "Torsion and torsionfree"
+title: Torsion and torsionfree
 classification:
   areas:
   - algebra
   topics:
-  - torsion
-  - modules
+  - Torsion
+  - Modules
 relations: []
 review: draft
 ---

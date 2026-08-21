@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: L-Q44MT
 kind: lemma
-title: "$p$ groups are solvable"
+title: $p$ groups are solvable
 classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - solvable-groups
+  - p-Groups
+  - Solvable Groups
 relations: []
 review: draft
 ---

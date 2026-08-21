@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-552IH
 kind: proposition
-title: "Extending the class of measurable functions."
+title: Extending the class of measurable functions.
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-CGFCU
 kind: theorem
-title: "Lusin's Theorem"
+title: Lusin's Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - continuity
+  - Measure Theory
+  - Continuity
 relations: []
 review: draft
 ---

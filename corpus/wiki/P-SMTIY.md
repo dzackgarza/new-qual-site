@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-SMTIY
 kind: problem
-title: "Hungerford 5.5.3"
+title: Hungerford 5.5.3
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - characteristic
-  - separability
+  - Finite Fields
+  - Characteristic
+  - Separability
 relations: []
 review: draft
 solved: false

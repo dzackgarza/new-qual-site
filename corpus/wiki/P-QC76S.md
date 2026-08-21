@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QC76S
 kind: problem
-title: Free modules over an integral domain are torsion-free; $\QQ$ is torsion-free but not free as a $\ZZ$-module
+title: Free modules over an integral domain are torsion-free; $\QQ$ is torsion-free
+  but not free as a $\ZZ$-module
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - torsion
-  - integral-domains
+  - Free Modules
+  - Torsion
+  - Integral Domains
 relations: []
 review: draft
 solved: false

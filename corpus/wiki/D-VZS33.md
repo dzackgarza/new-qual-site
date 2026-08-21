@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-VZS33
 kind: definition
-title: "Constant Map"
+title: Constant Map
 classification:
   areas:
   - topology
   topics:
-  - continuity
-  - homotopy
+  - Continuity
+  - Homotopy
 relations: []
 review: draft
 ---

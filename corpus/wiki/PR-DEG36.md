@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-DEG36
 kind: proposition
-title: "Finite fields are not algebraically closed"
+title: Finite fields are not algebraically closed
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - fields
+  - Finite Fields
+  - Fields
 relations: []
 review: draft
 ---

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - homological-algebra
+  - Modules
+  - Homological Algebra
 relations: []
 review: draft
 solved: false

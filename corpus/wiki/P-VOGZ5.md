@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - normal-subgroups
+  - Galois Theory
+  - Splitting Fields
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

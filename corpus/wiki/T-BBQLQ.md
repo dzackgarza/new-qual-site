@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-BBQLQ
 kind: theorem
-title: "Generalized Liouville"
+title: Generalized Liouville
 classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - riemann-surfaces
-  - compactness
+  - Liouville's Theorem
+  - Riemann Surfaces
+  - Compactness
 relations: []
 review: draft
 ---

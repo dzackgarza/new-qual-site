@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Complex Logarithm
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: false

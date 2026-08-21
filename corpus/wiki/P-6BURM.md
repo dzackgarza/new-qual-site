@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $n\in \ZZ^{\geq 0}$ and show that the equation
 \[

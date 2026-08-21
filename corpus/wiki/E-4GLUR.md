@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-4GLUR
 kind: exercise
-title: "Singularities of of $\\sin(z)/z$"
+title: Singularities of of $\sin(z)/z$
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - laurent-series
-  - trigonometry
-  - singularities
+  - Removable Singularities
+  - Laurent Series
+  - Trigonometry
+  - Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Singularities of of $\sin(z)/z$"}
 Show that $\sin(z)/z$ has no poles.
 

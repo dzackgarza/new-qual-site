@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: C-F2ZZQ
 kind: corollary
-title: "Identity principle"
+title: Identity principle
 classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - zeros
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 ---

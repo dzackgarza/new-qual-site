@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - exact-sequences
-  - vector-spaces
-  - rank-and-nullity
+  - Exact Sequences
+  - Vector Spaces
+  - Rank and Nullity
 relations: []
 review: draft
 solved: false

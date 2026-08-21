@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-AOQLK
 kind: exercise
-title: "Residues using partial fractions/principal parts"
+title: Residues using partial fractions/principal parts
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - principal-parts
-  - poles
+  - Residues
+  - Principal Parts
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Residues using partial fractions/principal parts"}
 Find all residues of the following function by writing it as a sum of principal parts at its poles:
 \[

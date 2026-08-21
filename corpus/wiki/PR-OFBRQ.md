@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-OFBRQ
 kind: proposition
-title: "Classification of quadratic extensions"
+title: Classification of quadratic extensions
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - classification
+  - Galois Theory
+  - Field Extensions
+  - Classification
 relations: []
 review: draft
 ---

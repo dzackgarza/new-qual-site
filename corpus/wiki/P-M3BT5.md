@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - solvable-groups
+  - Galois Theory
+  - Field Extensions
+  - Solvable Groups
 relations: []
 review: draft
 solved: false

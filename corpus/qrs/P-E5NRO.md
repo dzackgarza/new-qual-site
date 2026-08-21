@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-E5NRO
 kind: problem
-title: Equivalence of open-closed approximation and a $G_\delta$-$F_\sigma$ sandwich for finite Borel measures on $\mathbb{R}$
+title: Equivalence of open-closed approximation and a $G_\delta$-$F_\sigma$ sandwich
+  for finite Borel measures on $\mathbb{R}$
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 solved: true

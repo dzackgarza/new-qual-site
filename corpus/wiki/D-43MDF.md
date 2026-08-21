@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-43MDF
 kind: definition
-title: "Normalizers Grow"
+title: Normalizers Grow
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - nilpotent-groups
-  - subgroups
+  - Normal Subgroups
+  - Nilpotent Groups
+  - Subgroups
 relations: []
 review: draft
 ---

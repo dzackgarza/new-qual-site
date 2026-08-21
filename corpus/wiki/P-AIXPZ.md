@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - minimal-and-characteristic-polynomials
-  - separability
+  - Diagonalization
+  - Minimal and Characteristic Polynomials
+  - Separability
 relations: []
 review: draft
 solved: true
 ---
+
 Let $A$ be a square matrix over the complex numbers.
 Suppose that $A$ is nonsingular
 and that $A^{2019}$ is diagonalizable over $\CC$.

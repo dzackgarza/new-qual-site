@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TQNU2
 kind: problem
-title: A polynomial over $\QQ$ whose splitting field has degree $1225$ is solvable by radicals
+title: A polynomial over $\QQ$ whose splitting field has degree $1225$ is solvable
+  by radicals
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - galois-theory
-  - sylow-theory
+  - Solvable Groups
+  - Galois Theory
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

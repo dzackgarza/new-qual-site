@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-A4J4G
 kind: proposition
-title: "Subtraction of Measures"
+title: Subtraction of Measures
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

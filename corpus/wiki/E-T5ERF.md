@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - mean-value-property
-  - cauchy-estimates
-  - holomorphic-functions
+  - Mean Value Property
+  - Cauchy Estimates
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

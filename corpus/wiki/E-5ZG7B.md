@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - point-set
+  - Quotient Spaces
+  - Point-Set Topology
 relations: []
 review: draft
 solved: true

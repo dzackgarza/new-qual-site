@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-W3DSO
 kind: definition
-title: "Discriminant"
+title: Discriminant
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - polynomials
-  - symmetric-functions
+  - Galois Theory
+  - Polynomials
+  - Symmetric Functions
 relations: []
 review: draft
 ---
+
 :::{.definition title="Discriminant"}
 For $f = \sum a_k x^k$ monic,
 \[

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - determinants
-  - matrices
-  - integral-domains
+  - Determinants
+  - Matrices
+  - Integral Domains
 relations: []
 review: draft
 solved: false

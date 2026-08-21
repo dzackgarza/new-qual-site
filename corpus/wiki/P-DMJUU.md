@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-DMJUU
 kind: problem
-title: "Hungerford 5.6.11"
+title: Hungerford 5.6.11
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - irreducibility-criteria
-  - characteristic
+  - Separability
+  - Irreducibility Criteria
+  - Characteristic
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: E-G4N4D
 kind: exercise
-title: A holomorphic function with a vanishing Taylor coefficient at every point is a polynomial
+title: A holomorphic function with a vanishing Taylor coefficient at every point is
+  a polynomial
 classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - cauchy-integral-formula
+  - Holomorphic Functions
+  - Cauchy Integral Formula
 relations: []
 review: draft
 solved: false

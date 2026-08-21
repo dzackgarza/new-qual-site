@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-AQ6YR
 kind: proposition
-title: "Cross ratio construction of conformal maps"
+title: Cross ratio construction of conformal maps
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
+  - Fractional Linear Transformations
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Cross ratio construction of conformal maps"}
 Define generalized cross-ratios as
 \[

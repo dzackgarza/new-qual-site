@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-B3BDO
 kind: theorem
-title: "Goursat"
+title: Goursat
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-theorem
-  - contour-integration
-  - holomorphic-functions
+  - Cauchy Integral Theorem
+  - Contour Integration
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

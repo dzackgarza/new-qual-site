@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-MN6WQ
 kind: theorem
-title: "Commuting Sums with Integrals (integrable)"
+title: Commuting Sums with Integrals (integrable)
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - series-of-functions
-  - l1
+  - Convergence of Integrals
+  - Series of Functions
+  - L¹
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Commuting Sums with Integrals (integrable)"}
 If $\theset{f_n}$ integrable with either $\sum \int \abs{f_n} < \infty$ or $\int\sum \abs{f_n} < \infty$, then
 \[

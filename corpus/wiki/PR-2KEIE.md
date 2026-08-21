@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-2KEIE
 kind: proposition
-title: "$L^1$ functions are finite almost everywhere."
+title: $L^1$ functions are finite almost everywhere.
 classification:
   areas:
   - real-analysis
   topics:
-  - l1
-  - measure-theory
+  - L¹
+  - Measure Theory
 relations: []
 review: draft
 ---

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-JBDUI
 kind: proposition
-title: "One-step module morphism test"
+title: One-step module morphism test
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - homomorphisms
+  - Modules
+  - Homomorphisms
 relations: []
 review: draft
 ---
+
 :::{.proposition title="One-step module morphism test"}
 A map $\phi: M\to N$ is a morphism in $\rmod$ iff
 \[

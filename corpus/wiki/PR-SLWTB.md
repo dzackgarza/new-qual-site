@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-SLWTB
 kind: proposition
-title: "Classification of groups of order $pq$"
+title: Classification of groups of order $pq$
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - semidirect-products
-  - groups
+  - Classification
+  - Semidirect Products
+  - Groups
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Classification of groups of order $pq$"}
 If $G$ is a group of order $pq$ for primes $q<p$, write $P$ and $Q$ for its Sylow $p\dash$ and $q\dash$subgroups, so $P\cong C_p$ and $Q \cong C_q$.
 Note that $P\normal G$ in both cases, since $n_p \equiv 1 \mod p$ and $n_p \divides q < p$ force $n_p = 1$.

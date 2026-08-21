@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - trigonometry
-  - poles
+  - Residues
+  - Contour Integration
+  - Trigonometry
+  - Poles
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
 Let $n\in \ZZ^{\geq 1}$ and $0<\theta<\pi$ and show that
 \[

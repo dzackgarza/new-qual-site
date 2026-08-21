@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: D-OMBQT
 kind: definition
-title: "Complex log"
+title: Complex log
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
+  - Complex Logarithm
 relations: []
 review: draft
 ---
+
 :::{.definition title="Complex log"}
 Define
 \[

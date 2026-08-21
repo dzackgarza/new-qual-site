@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-UYOGE
 kind: definition
-title: "Lebesgue Measurability"
+title: Lebesgue Measurability
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

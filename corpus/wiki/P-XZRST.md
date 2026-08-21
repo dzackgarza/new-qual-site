@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - convolution
-  - algebras
-  - function-spaces
+  - Convolution
+  - Algebras
+  - Function Spaces
 relations: []
 review: draft
 solved: false

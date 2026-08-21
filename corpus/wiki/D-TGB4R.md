@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-TGB4R
 kind: definition
-title: "Local Ring"
+title: Local Ring
 classification:
   areas:
   - algebra
   topics:
-  - local-rings
-  - maximal-ideals
-  - fields
+  - Local Rings
+  - Maximal Ideals
+  - Fields
 relations: []
 review: draft
 ---

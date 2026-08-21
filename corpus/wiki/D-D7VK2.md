@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-D7VK2
 kind: definition
-title: "Principal Ideal"
+title: Principal Ideal
 classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - principal-ideal-domains
+  - Ideals
+  - Principal Ideal Domains
 relations: []
 review: draft
 ---

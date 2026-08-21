@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - inner-product-spaces
-  - functional-analysis
+  - Diagonalization
+  - Inner Product Spaces
+  - Functional Analysis
 relations: []
 review: draft
 solved: false

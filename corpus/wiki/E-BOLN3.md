@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - continuity
-  - product-topology
+  - Continuity
+  - Product Topology
 relations: []
 review: draft
 solved: false

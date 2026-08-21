@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-PHHXJ
 kind: problem
-title: Integrals of $\sqrt{1-x^2}$, $\sqrt{16-x^2}$ on $[-4,4]$, and $(1+x)\sqrt{1-x^2}$ on $[-1,1]$
+title: Integrals of $\sqrt{1-x^2}$, $\sqrt{16-x^2}$ on $[-4,4]$, and $(1+x)\sqrt{1-x^2}$
+  on $[-1,1]$
 classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - trigonometric-substitution
+  - Integrals
+  - Trigonometric Substitution
 relations: []
 review: draft
 solved: false

@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - polynomials
-  - singularities
-  - poles
+  - Entire Functions
+  - Polynomials
+  - Singularities
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find all entire functions with have poles at $\infty$.
 :::

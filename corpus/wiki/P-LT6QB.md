@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-LT6QB
 kind: problem
-title: 'Cyclotomic fields $\QQ(\zeta_n)$: degree, Galois group, and quadratic subfields of $\QQ(\zeta_{2021})$'
+title: 'Cyclotomic fields $\QQ(\zeta_n)$: degree, Galois group, and quadratic subfields
+  of $\QQ(\zeta_{2021})$'
 classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - galois-theory
-  - field-extensions
+  - Roots of Unity
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 solved: false

@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-DWOXP
 kind: proposition
-title: "Limits of differentiable functions need not be differentiable"
+title: Limits of differentiable functions need not be differentiable
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - uniform-convergence
-  - counterexamples
+  - Differentiation
+  - Uniform Convergence
+  - Counterexamples
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Limits of differentiable functions need not be differentiable"}
 \[
 \lim_{n\to \infty} \dd{}{x} f_n \neq \dd{}{n} \qty{\lim_{n\to \infty} f_n}

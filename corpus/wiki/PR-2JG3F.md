@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-2JG3F
 kind: proposition
-title: "Number of abelian groups is given by products of partition numbers"
+title: Number of abelian groups is given by products of partition numbers
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - abelian-groups
-  - partitions
+  - Classification
+  - Abelian Groups
+  - Partitions
 relations: []
 review: draft
 ---

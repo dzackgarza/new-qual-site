@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-BAD4E
 kind: definition
-title: "Orthogonal Group"
+title: Orthogonal Group
 classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - bilinear-forms
+  - Matrix Groups
+  - Bilinear Forms
 relations: []
 review: draft
 ---
+
 :::{.definition title="Orthogonal Group"}
 \[
 O_n(\CC) \da \ts{ A \st A^tA = A A^t = I}

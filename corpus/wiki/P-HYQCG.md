@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - nilpotent-groups
-  - solvable-groups
+  - Subgroup Series
+  - Nilpotent Groups
+  - Solvable Groups
 relations: []
 review: draft
 solved: false

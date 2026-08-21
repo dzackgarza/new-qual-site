@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-7QQUO
 kind: definition
-title: "Hilbert Space"
+title: Hilbert Space
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - norms
+  - Hilbert Spaces
+  - Norms
 relations: []
 review: draft
 ---

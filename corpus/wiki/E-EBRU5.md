@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-EBRU5
 kind: exercise
-title: "$1/\\sqrt{x^2-1}$"
+title: $1/\sqrt{x^2-1}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/\sqrt{x^2-1}$ "}
 \[
 I \da \int_0^1 {1\over \sqrt{x^2-1}}\dx = {i\pi \over 2}

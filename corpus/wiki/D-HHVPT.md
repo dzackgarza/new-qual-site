@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-HHVPT
 kind: definition
-title: "Continuity and Uniform Continuity"
+title: Continuity and Uniform Continuity
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - uniform-continuity
+  - Continuity
+  - Uniform Continuity
 relations: []
 review: draft
 ---
+
 :::{.definition title="Continuity and Uniform Continuity"}
 A function $f: \RR\to \RR$ is **continuous** on $X$ iff for all $x_0\in X$,
 \[

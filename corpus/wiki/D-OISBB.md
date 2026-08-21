@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-OISBB
 kind: definition
-title: "Path Lifting Property"
+title: Path Lifting Property
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - homotopy
+  - Covering Spaces
+  - Homotopy
 relations: []
 review: draft
 ---

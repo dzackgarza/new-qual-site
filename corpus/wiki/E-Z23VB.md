@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-Z23VB
 kind: exercise
-title: "Conformal maps to arbitrary points"
+title: Conformal maps to arbitrary points
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
+  - Fractional Linear Transformations
+  - Conformal Maps
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Conformal maps to arbitrary points"}
 Find a Mobius transformation sending 
 

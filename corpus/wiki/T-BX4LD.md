@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-BX4LD
 kind: theorem
-title: "Lefschetz Fixed Point"
+title: Lefschetz Fixed Point
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - homology
+  - Fixed Points
+  - Homology
 relations: []
 review: draft
 ---

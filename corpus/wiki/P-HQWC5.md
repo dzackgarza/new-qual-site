@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - argument-principle
-  - zeros
-  - rouche
+  - Blaschke Factors
+  - Argument Principle
+  - Zeros
+  - Rouché
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 For $k=1,2,\cdots, n$, suppose $\abs{a_k} < 1$ and
 \[

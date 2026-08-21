@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-XB3O7
 kind: proposition
-title: "Irreducible implies separable for perfect fields"
+title: Irreducible implies separable for perfect fields
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - fields
-  - irreducibility-criteria
+  - Separability
+  - Fields
+  - Irreducibility Criteria
 relations: []
 review: draft
 ---

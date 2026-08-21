@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - matrix-groups
-  - counterexamples
+  - Normal Subgroups
+  - Matrix Groups
+  - Counterexamples
 relations: []
 review: draft
 solved: false

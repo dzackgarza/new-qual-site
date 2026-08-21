@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-IGVTV
 kind: proposition
-title: "Convergent Sums Have Small Tails"
+title: Convergent Sums Have Small Tails
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-numbers
-  - small-tails
+  - Series of Numbers
+  - Small Tails
 relations: []
 review: draft
 ---

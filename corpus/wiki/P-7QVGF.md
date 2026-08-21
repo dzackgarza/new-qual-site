@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-7QVGF
 kind: problem
-title: Continuity of translation in $L^1$ for $f\in C_c(\RR)$, and $L^1$-boundedness and convergence of the averages $\mathcal{A}_h f$
+title: Continuity of translation in $L^1$ for $f\in C_c(\RR)$, and $L^1$-boundedness
+  and convergence of the averages $\mathcal{A}_h f$
 classification:
   areas:
   - real-analysis
   topics:
-  - approximations-to-the-identity
-  - convolution
-  - l1
+  - Approximations to the Identity
+  - Convolution
+  - L¹
 relations: []
 review: draft
 solved: true
 ---
+
 a.
 Show that if $f$ is continuous with compact support on $\RR$, then 
 \[

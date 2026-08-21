@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: E-WFE4T
 kind: exercise
-title: "Sequential compactness, the third condition of a TFAE list"
+title: Sequential compactness, the third condition of a TFAE list
 classification:
   areas:
   - topology
   topics:
-  - compactness
+  - Compactness
 relations:
 - kind: related-to
   target: E-YAEMZ

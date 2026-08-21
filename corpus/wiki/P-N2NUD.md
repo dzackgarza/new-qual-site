@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - functions-and-relations
+  - Functions and Relations
 relations: []
 review: draft
 solved: true

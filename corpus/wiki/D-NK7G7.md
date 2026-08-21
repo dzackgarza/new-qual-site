@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-NK7G7
 kind: definition
-title: "Center"
+title: Center
 classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - groups
-  - commutators
+  - Centralizers and Normalizers
+  - Groups
+  - Commutators
 relations: []
 review: draft
 ---
+
 :::{.definition title="Center"}
 The **center** of $G$ is defined as
 \[

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FJI2B
 kind: problem
-title: Classification of finitely generated modules over $\mathbb{Z}$, PIDs, and Dedekind rings
+title: Classification of finitely generated modules over $\mathbb{Z}$, PIDs, and Dedekind
+  rings
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - modules
-  - principal-ideal-domains
+  - Structure Theorem
+  - Modules
+  - Principal Ideal Domains
 relations: []
 review: draft
 solved: false

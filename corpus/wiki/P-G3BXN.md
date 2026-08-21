@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-G3BXN
 kind: problem
-title: "Is $\\CC[x, y]$ a PID?"
+title: Is $\CC[x, y]$ a PID?
 classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - prime-ideals
-  - polynomials
+  - Principal Ideal Domains
+  - Prime Ideals
+  - Polynomials
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - compactness
-  - homeomorphisms
+  - Covering Spaces
+  - Compactness
+  - Homeomorphisms
 relations: []
 review: draft
 solved: false

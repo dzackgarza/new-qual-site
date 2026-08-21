@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - principal-parts
-  - poles
-  - residues
-  - polynomials
+  - Principal Parts
+  - Poles
+  - Residues
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $P, Q$ be polynomials with no common zeros. Assume $a$ is a root of
 $Q$.

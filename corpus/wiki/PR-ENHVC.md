@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-ENHVC
 kind: proposition
-title: "Separability test: $\\gcd$ with derivative"
+title: 'Separability test: $\gcd$ with derivative'
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - polynomials
+  - Separability
+  - Polynomials
 relations: []
 review: draft
 ---

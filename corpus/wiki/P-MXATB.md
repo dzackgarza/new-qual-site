@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - group-presentations
-  - conjugacy
+  - Permutations
+  - Group Presentations
+  - Conjugacy
 relations: []
 review: draft
 solved: false

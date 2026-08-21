@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - homological-algebra
+  - Homological Algebra
 relations: []
 review: draft
 ---

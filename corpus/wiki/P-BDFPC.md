@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - integrals
-  - stone-weierstrass
+  - Riemann Integrability
+  - Integrals
+  - Stone-Weierstrass
 relations: []
 review: draft
 solved: true
 ---
+
 1.  Suppose $f \colon [-1,1] \to \mathbb{R}$ is a bounded function
 that is continuous at $0$. Let $\alpha(x) = -1$ for
 $x \in [-1,0]$ and $\alpha(x)=1$ for $x \in (0,1]$. Prove that

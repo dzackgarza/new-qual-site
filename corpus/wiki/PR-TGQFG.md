@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-TGQFG
 kind: proposition
-title: "Volumes of Rectangles"
+title: Volumes of Rectangles
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - euclidean-spaces
+  - Measure Theory
+  - Euclidean Spaces
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Volumes of Rectangles"}
 If $\ts{R_j} \covers R$ is a covering of $R$ by rectangles,
 \[

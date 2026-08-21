@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-3VEC5
 kind: definition
-title: "Acyclic"
+title: Acyclic
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - homological-algebra
+  - Homology
+  - Homological Algebra
 relations: []
 review: draft
 ---

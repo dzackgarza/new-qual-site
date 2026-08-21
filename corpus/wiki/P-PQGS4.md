@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PQGS4
 kind: problem
-title: $\operatorname{rank}(F_1\oplus F_2)=\operatorname{rank} F_1+\operatorname{rank} F_2$ for free modules with the invariant dimension property
+title: $\operatorname{rank}(F_1\oplus F_2)=\operatorname{rank} F_1+\operatorname{rank}
+  F_2$ for free modules with the invariant dimension property
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - bases
-  - direct-products
+  - Free Modules
+  - Bases
+  - Direct Products
 relations: []
 review: draft
 solved: false

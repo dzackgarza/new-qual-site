@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - degree
+  - Degree
 relations: []
 review: draft
 solved: false

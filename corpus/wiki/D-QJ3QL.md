@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-QJ3QL
 kind: definition
-title: "Integral Domain"
+title: Integral Domain
 classification:
   areas:
   - algebra
   topics:
-  - integral-domains
-  - rings
+  - Integral Domains
+  - Rings
 relations: []
 review: draft
 ---
+
 :::{.definition title="Integral Domain"}
 A ring is an **integral domain** if and only if it has no nonzero zero divisors:
 \[  

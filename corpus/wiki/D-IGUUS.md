@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-IGUUS
 kind: definition
-title: "Wedge Product"
+title: Wedge Product
 classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homology
-  - quotient-spaces
+  - Cell Complexes
+  - Homology
+  - Quotient Spaces
 relations: []
 review: draft
 ---

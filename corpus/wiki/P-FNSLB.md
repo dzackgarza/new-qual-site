@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - algebras
-  - commutative-algebra
+  - Noetherian Rings
+  - Algebras
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

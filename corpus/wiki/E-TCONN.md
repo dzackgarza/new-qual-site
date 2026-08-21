@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-TCONN
 kind: exercise
-title: "Fixed point convergence"
+title: Fixed point convergence
 classification:
   areas:
   - complex-analysis
   topics:
-  - fixed-points
-  - schwarz-lemma
-  - blaschke-factors
-  - sequences-of-functions
+  - Fixed Points
+  - Schwarz Lemma
+  - Blaschke Factors
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Fixed point convergence"}
 Suppose $f:\DD\to \DD$ with $f(a) = a$ a fixed point where $\abs{f'(a)} < 1$.
 Show that for any initial point $z_0$, the sequence $z_k \da f(z_{k-1})$ converges to $a$.

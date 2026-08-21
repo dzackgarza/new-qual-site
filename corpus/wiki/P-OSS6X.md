@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-OSS6X
 kind: problem
-title: "Spring 2021, 7"
+title: Spring 2021, 7
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - connectedness
+  - Homology
+  - Connectedness
 relations: []
 review: draft
 solved: false

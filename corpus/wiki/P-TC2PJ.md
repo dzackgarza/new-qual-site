@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - metric-spaces
-  - countability
+  - Compactness
+  - Metric Spaces
+  - Countability
 relations: []
 review: draft
 solved: false

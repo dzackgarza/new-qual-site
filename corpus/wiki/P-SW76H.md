@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-SW76H
 kind: problem
-title: The algebraic closure of $F$ in an algebraically closed extension $C$ is algebraically closed, and every algebraic $E/F$ embeds in $C$ over $F$
+title: The algebraic closure of $F$ in an algebraically closed extension $C$ is algebraically
+  closed, and every algebraic $E/F$ embeds in $C$ over $F$
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - fields
-  - zorns-lemma
+  - Field Extensions
+  - Fields
+  - Zorn's Lemma
 relations: []
 review: draft
 solved: false

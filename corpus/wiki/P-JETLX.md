@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JETLX
 kind: problem
-title: $L^1((0,2\pi))$ functions as $g+h$ with $g\in L^2$ and $\|h\|_1$ arbitrarily small
+title: $L^1((0,2\pi))$ functions as $g+h$ with $g\in L^2$ and $\|h\|_1$ arbitrarily
+  small
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - density
-  - l1
+  - Lp Spaces
+  - Density
+  - L¹
 relations: []
 review: draft
 solved: true

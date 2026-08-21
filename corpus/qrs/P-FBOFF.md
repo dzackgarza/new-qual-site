@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - casorati-weierstrass
-  - poles
-  - singularities
-  - meromorphic-functions
+  - Casorati-Weierstrass
+  - Poles
+  - Singularities
+  - Meromorphic Functions
 relations: []
 review: draft
 solved: false

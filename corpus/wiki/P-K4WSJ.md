@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - schwarz-reflection
-  - biholomorphisms
+  - Fractional Linear Transformations
+  - Schwarz Reflection
+  - Biholomorphisms
 relations: []
 review: draft
 solved: false

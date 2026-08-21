@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - lp-spaces
-  - limits
+  - L∞
+  - Lp Spaces
+  - Limits
 relations: []
 review: draft
 solved: true
 ---
+
 Let $\phi\in L^\infty(\RR)$. Show that the following limit exists and satisfies the equality
 \[
 \lim _{n \to \infty} \left(\int _{\mathbb{R}} \frac{|\phi(x)|^{n}}{1+x^{2}} \, dx \right) ^ {\frac{1}{n}} 

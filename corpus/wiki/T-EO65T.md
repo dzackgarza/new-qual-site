@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-EO65T
 kind: theorem
-title: "Casorati-Weierstrass"
+title: Casorati-Weierstrass
 classification:
   areas:
   - complex-analysis
   topics:
-  - casorati-weierstrass
-  - essential-singularities
+  - Casorati-Weierstrass
+  - Essential Singularities
 relations: []
 review: draft
 ---

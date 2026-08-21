@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: D-T6INB
 kind: definition
-title: "Complex fractional powers"
+title: Complex fractional powers
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
+  - Complex Logarithm
 relations: []
 review: draft
 ---
+
 :::{.definition title="Complex fractional powers"}
 Define
 \[

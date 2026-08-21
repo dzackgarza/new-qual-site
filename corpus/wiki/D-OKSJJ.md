@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-OKSJJ
 kind: definition
-title: "Inverse Limit"
+title: Inverse Limit
 classification:
   areas:
   - topology
   topics:
-  - category-theory
-  - homological-algebra
+  - Category Theory
+  - Homological Algebra
 relations: []
 review: draft
 ---

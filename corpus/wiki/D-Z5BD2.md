@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-Z5BD2
 kind: definition
-title: "del and delbar operators"
+title: del and delbar operators
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 ---
+
 :::{.definition title="del and delbar operators"}
 \[
 \del \da \del_z \da {1\over 2}\qty{\del_x - i \del_y}

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-GL7E6
 kind: theorem
-title: "Hurewicz"
+title: Hurewicz
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - homology
+  - Homotopy
+  - Homology
 relations: []
 review: draft
 ---

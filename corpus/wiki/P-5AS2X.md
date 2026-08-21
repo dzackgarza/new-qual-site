@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-5AS2X
 kind: problem
-title: "Hungerford 7.1.3"
+title: Hungerford 7.1.3
 classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - matrices
-  - rings
+  - Centralizers and Normalizers
+  - Matrices
+  - Rings
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-COC6C
 kind: definition
-title: "Coproduct"
+title: Coproduct
 classification:
   areas:
   - topology
   topics:
-  - category-theory
+  - Category Theory
 relations: []
 review: draft
 ---

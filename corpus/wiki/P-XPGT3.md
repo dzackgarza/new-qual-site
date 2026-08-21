@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-XPGT3
 kind: problem
-title: $IM$ is a submodule, and $f$ is surjective if $I$ is nilpotent and $\overline{f}:M/IM\to N/IN$ is surjective
+title: $IM$ is a submodule, and $f$ is surjective if $I$ is nilpotent and $\overline{f}:M/IM\to
+  N/IN$ is surjective
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - ideals
-  - nakayamas-lemma
+  - Modules
+  - Ideals
+  - Nakayama's Lemma
 relations: []
 review: draft
 solved: false

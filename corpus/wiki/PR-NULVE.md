@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-NULVE
 kind: proposition
-title: "Limsups/infs of measurable sets are measurable."
+title: Limsups/infs of measurable sets are measurable.
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - borel-cantelli
+  - Measure Theory
+  - Borel-Cantelli
 relations: []
 review: draft
 ---

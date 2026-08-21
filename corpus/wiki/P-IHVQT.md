@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - tensor-products
-  - vector-spaces
-  - modules
+  - Tensor Products
+  - Vector Spaces
+  - Modules
 relations: []
 review: draft
 solved: false

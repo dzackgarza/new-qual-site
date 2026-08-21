@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - symmetric-functions
-  - polynomials
+  - Group Actions
+  - Symmetric Functions
+  - Polynomials
 relations: []
 review: draft
 solved: false

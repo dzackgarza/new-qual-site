@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-DYEG6
 kind: problem
-title: Separable extensions, separability over finite fields, and an inseparable finite extension
+title: Separable extensions, separability over finite fields, and an inseparable finite
+  extension
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
-  - finite-fields
+  - Separability
+  - Field Extensions
+  - Finite Fields
 relations: []
 review: draft
 solved: true
 ---
+
 Let $L/K$ be a finite extension of fields.
 
 a.

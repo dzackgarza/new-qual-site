@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - geometry
+  - Conformal Maps
+  - Geometry
 relations: []
 review: draft
 solved: false

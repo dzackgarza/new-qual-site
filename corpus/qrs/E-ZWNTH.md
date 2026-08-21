@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-ZWNTH
 kind: exercise
-title: "Application of summation by parts"
+title: Application of summation by parts
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - power-series
-  - series-of-functions
+  - Convergence Tests
+  - Power Series
+  - Series of Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Application of summation by parts"}
 Use summation by parts to show that $\sin(n)/n$ converges.
 :::

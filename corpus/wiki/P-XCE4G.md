@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-XCE4G
 kind: problem
-title: Pointwise and locally uniform convergence of $\sum\frac{x^k}{1+x^k}$ on $[0,1)$, and differentiability of the sum
+title: Pointwise and locally uniform convergence of $\sum\frac{x^k}{1+x^k}$ on $[0,1)$,
+  and differentiability of the sum
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - uniform-convergence
-  - differentiation
+  - Series of Functions
+  - Uniform Convergence
+  - Differentiation
 relations: []
 review: draft
 solved: true

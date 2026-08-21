@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: L-75UZY
 kind: lemma
-title: "Function discontinuous on the rationals"
+title: Function discontinuous on the rationals
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - counterexamples
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 ---

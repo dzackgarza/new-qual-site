@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-GBL6P
 kind: proposition
-title: "Minimal equals characteristic iff cyclic"
+title: Minimal equals characteristic iff cyclic
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - rational-canonical-form
+  - Minimal and Characteristic Polynomials
+  - Rational Canonical Form
 relations: []
 review: draft
 ---

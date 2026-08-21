@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - metric-spaces
-  - hausdorff-spaces
-  - separation-axioms
+  - Metric Spaces
+  - Hausdorff Spaces
+  - Separation Axioms
 relations: []
 review: draft
 solved: false

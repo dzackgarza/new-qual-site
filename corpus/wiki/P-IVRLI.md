@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - matrix-groups
-  - free-groups
+  - Solvable Groups
+  - Matrix Groups
+  - Free Groups
 relations: []
 review: draft
 solved: false

@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
+  - Liouville's Theorem
+  - Entire Functions
 relations: []
 review: draft
 solved: false

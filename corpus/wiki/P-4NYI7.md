@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - integrals
-  - fubini-tonelli
+  - Measure Theory
+  - Integrals
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f \geq 0$ be a measurable function on $\RR$.
 Show that
 \[

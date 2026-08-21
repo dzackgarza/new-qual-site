@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-SDO43
 kind: problem
-title: Surjective $R$-linear endomorphisms of $R^n$ are injective, but injective ones need not be surjective
+title: Surjective $R$-linear endomorphisms of $R^n$ are injective, but injective ones
+  need not be surjective
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - rank-and-nullity
-  - modules
+  - Free Modules
+  - Rank and Nullity
+  - Modules
 relations: []
 review: draft
 solved: false

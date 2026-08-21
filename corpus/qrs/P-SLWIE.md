@@ -7,15 +7,16 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
-  - poles
-  - principal-parts
-  - identity-theorem
-  - trigonometry
+  - Meromorphic Functions
+  - Poles
+  - Principal Parts
+  - Identity Theorem
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 Define
 \[
 f(z) &= {\pi^2 \over \sin^2 \qty{\pi z} } \\

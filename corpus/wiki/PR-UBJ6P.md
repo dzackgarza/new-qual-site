@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-UBJ6P
 kind: proposition
-title: "Fundamental theorem of covering spaces, Hatcher 1.39"
+title: Fundamental theorem of covering spaces, Hatcher 1.39
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 ---

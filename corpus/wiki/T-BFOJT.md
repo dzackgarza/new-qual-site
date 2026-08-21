@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-BFOJT
 kind: theorem
-title: "Continuity in $L^1$"
+title: Continuity in $L^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - l1
-  - continuity
-  - equicontinuity
+  - L¹
+  - Continuity
+  - Equicontinuity
 relations: []
 review: draft
 ---

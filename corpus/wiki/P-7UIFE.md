@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-7UIFE
 kind: problem
-title: 'Approximate identity $K_j=j\varphi(jx)$: $f*K_j$ is smooth of compact support and converges in $L^1$'
+title: 'Approximate identity $K_j=j\varphi(jx)$: $f*K_j$ is smooth of compact support
+  and converges in $L^1$'
 classification:
   areas:
   - real-analysis
   topics:
-  - approximations-to-the-identity
-  - convolution
-  - l1
+  - Approximations to the Identity
+  - Convolution
+  - L¹
 relations: []
 review: draft
 solved: true
 ---
+
 Let $\varphi$ be a compactly supported smooth function that vanishes outside of an interval $[-N, N]$ such that $\int _{\RR} \varphi(x) \, dx = 1$.
 
 For $f\in L^1(\RR)$, define

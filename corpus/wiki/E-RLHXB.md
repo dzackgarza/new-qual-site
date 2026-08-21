@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-RLHXB
 kind: exercise
-title: "Integral computation"
+title: Integral computation
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - poles
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Poles
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Integral computation"}
 Without using the residue formula, compute
 \[

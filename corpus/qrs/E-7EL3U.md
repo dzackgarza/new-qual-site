@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: E-7EL3U
 kind: exercise
-title: If $f_n\in C^1[a,b]$ with $f_n'\to g$ uniformly and $f_n(x_0)$ convergent, then $f_n\to f$ uniformly with $f'=g$
+title: If $f_n\in C^1[a,b]$ with $f_n'\to g$ uniformly and $f_n(x_0)$ convergent,
+  then $f_n\to f$ uniformly with $f'=g$
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - differentiation
+  - Uniform Convergence
+  - Differentiation
 relations: []
 review: draft
 solved: true

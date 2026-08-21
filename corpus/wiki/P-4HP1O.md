@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - cauchy-integral-formula
-  - polynomials
-  - counterexamples
+  - Uniform Convergence
+  - Cauchy Integral Formula
+  - Polynomials
+  - Counterexamples
 relations: []
 review: draft
 solved: true

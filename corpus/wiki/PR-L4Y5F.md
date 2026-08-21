@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-L4Y5F
 kind: proposition
-title: "Residue formula for simple poles"
+title: Residue formula for simple poles
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - poles
+  - Residues
+  - Poles
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Residue formula for simple poles"}
 As a special case, if $z_0$ is a simple pole of $f$, then
 \[

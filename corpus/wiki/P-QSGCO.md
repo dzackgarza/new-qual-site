@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QSGCO
 kind: problem
-title: Representations of $G$ lifted from $G/H$ have common kernel $H$, and the commutator subgroup
+title: Representations of $G$ lifted from $G/H$ have common kernel $H$, and the commutator
+  subgroup
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - normal-subgroups
-  - commutators
+  - Representation Theory
+  - Normal Subgroups
+  - Commutators
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-TVRVM
 kind: problem
-title: The sequence $a_{n+1}=\frac{a_n}{3}+5$ with $a_1=1$ is increasing, bounded by $10$, and converges to $\frac{15}{2}$
+title: The sequence $a_{n+1}=\frac{a_n}{3}+5$ with $a_1=1$ is increasing, bounded
+  by $10$, and converges to $\frac{15}{2}$
 classification:
   areas:
   - prelim
   topics:
-  - induction
-  - sequences-of-numbers
+  - Induction
+  - Sequences of Numbers
 relations: []
 review: draft
 solved: true

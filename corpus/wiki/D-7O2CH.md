@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-7O2CH
 kind: definition
-title: "Division ring or skew field"
+title: Division ring or skew field
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - integral-domains
+  - Rings
+  - Integral Domains
 relations: []
 review: draft
 ---

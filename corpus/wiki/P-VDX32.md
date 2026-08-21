@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - algebras
-  - matrices
+  - Algebras
+  - Matrices
 relations: []
 review: draft
 solved: false

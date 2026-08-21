@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: E-Y4GZM
 kind: exercise
-title: Convolution of continuous compactly supported functions is continuous and compactly supported
+title: Convolution of continuous compactly supported functions is continuous and compactly
+  supported
 classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - continuity
+  - Convolution
+  - Continuity
 relations: []
 review: draft
 solved: true

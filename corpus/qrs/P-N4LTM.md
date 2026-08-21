@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-N4LTM
 kind: problem
-title: 'Local mapping theorem: a zero of multiplicity $m$ splits into $m$ distinct nearby preimages'
+title: 'Local mapping theorem: a zero of multiplicity $m$ splits into $m$ distinct
+  nearby preimages'
 classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - zeros
-  - argument-principle
+  - Open Mapping Theorem
+  - Zeros
+  - Argument Principle
 relations: []
 review: draft
 solved: false

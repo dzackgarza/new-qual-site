@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - maximum-modulus-principle
-  - zeros
+  - Blaschke Factors
+  - Maximum Modulus Principle
+  - Zeros
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
 Suppose $f$ is analytic in an open set containing the unit disc $\mathbb D$ and $|f(z)| =1$ when $|z|$=1. Show that either $f(z) = e^{i \theta}$ for some $\theta \in \mathbb R$ or there are
 finite number of $z_k \in \mathbb D$, $k \leq n$ and

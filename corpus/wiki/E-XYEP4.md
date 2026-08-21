@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-XYEP4
 kind: exercise
-title: "$1/x\\sqrt{x^2-1}$"
+title: $1/x\sqrt{x^2-1}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/x\sqrt{x^2-1}$ "}
 \[
 \int_{1}^{\infty} \frac{d x}{x \sqrt{x^{2}-1}} = {\pi \over 2}

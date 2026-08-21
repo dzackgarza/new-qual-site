@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - biholomorphisms
-  - blaschke-factors
+  - Conformal Maps
+  - Biholomorphisms
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Define
 \[  

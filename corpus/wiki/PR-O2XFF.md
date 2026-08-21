@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-O2XFF
 kind: proposition
-title: "The Weierstrass $M\\dash$Test"
+title: The Weierstrass $M\dash$Test
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - series-of-functions
+  - Uniform Convergence
+  - Series of Functions
 relations: []
 review: draft
 ---

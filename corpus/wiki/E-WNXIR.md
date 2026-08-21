@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-WNXIR
 kind: exercise
-title: "Holomorphic functions have discrete zeros"
+title: Holomorphic functions have discrete zeros
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - identity-theorem
-  - power-series
+  - Zeros
+  - Identity Theorem
+  - Power Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Holomorphic functions have discrete zeros"}
 If $f$ is holomorphic on $\Omega$ and not identically zero, then $f\inv(0) \intersect \Omega$ is discrete.
 

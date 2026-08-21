@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - casorati-weierstrass
-  - biholomorphisms
-  - singularities
+  - Entire Functions
+  - Casorati-Weierstrass
+  - Biholomorphisms
+  - Singularities
 relations: []
 review: draft
 solved: true

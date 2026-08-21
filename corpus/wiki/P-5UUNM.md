@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - automorphisms
-  - subgroups
+  - Centralizers and Normalizers
+  - Automorphisms
+  - Subgroups
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show that $Z(G) \leq G$ is always characteristic.
 :::

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-NLV6Q
 kind: proposition
-title: "$\\Gamma$ is holomorphic on the right half-plane"
+title: $\Gamma$ is holomorphic on the right half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - gamma-function
-  - holomorphic-functions
+  - Gamma Function
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-LIEMF
 kind: definition
-title: "Free Module"
+title: Free Module
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - modules
-  - bases
+  - Free Modules
+  - Modules
+  - Bases
 relations: []
 review: draft
 ---

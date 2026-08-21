@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-BPRD3
 kind: definition
-title: "Normal Closure of a Subgroup"
+title: Normal Closure of a Subgroup
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - subgroups
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 ---
+
 :::{.definition title="Normal Closure of a Subgroup"}
 The smallest normal subgroup of $G$ containing $H$:
 \[

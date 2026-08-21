@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true

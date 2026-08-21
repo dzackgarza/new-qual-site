@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - determinants
-  - matrices
-  - rings
+  - Determinants
+  - Matrices
+  - Rings
 relations: []
 review: draft
 solved: false

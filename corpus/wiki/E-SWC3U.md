@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: E-SWC3U
 kind: exercise
-title: $\bigl|\frac{w-z}{1-\bar{w}z}\bigr|$ on the closed disk, and $z\mapsto\frac{w-z}{1-\bar{w}z}$ is an automorphism of $\mathbb{D}$
+title: $\bigl|\frac{w-z}{1-\bar{w}z}\bigr|$ on the closed disk, and $z\mapsto\frac{w-z}{1-\bar{w}z}$
+  is an automorphism of $\mathbb{D}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - biholomorphisms
-  - schwarz-lemma
+  - Blaschke Factors
+  - Biholomorphisms
+  - Schwarz Lemma
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
 a.
 Let $z, w$ be complex numbers, such that $\bar{z} w \neq 1$.

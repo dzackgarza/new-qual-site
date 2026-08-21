@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - euclidean-spaces
+  - Compactness
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: true

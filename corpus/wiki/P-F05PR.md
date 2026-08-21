@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - differentiation
-  - continuity
+  - Differentiation
+  - Continuity
 relations: []
 review: draft
 solved: false

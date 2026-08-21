@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
-  - blaschke-factors
+  - Conformal Maps
+  - Fractional Linear Transformations
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find a conformal map
 

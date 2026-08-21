@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find the number of solutions to the following equation on $\abs{z} < 1$:
 \[

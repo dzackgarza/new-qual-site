@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - commutators
-  - permutations
-  - simple-groups
+  - Commutators
+  - Permutations
+  - Simple Groups
 relations: []
 review: draft
 solved: false

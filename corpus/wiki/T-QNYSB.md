@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-QNYSB
 kind: theorem
-title: "Lefschetz Duality"
+title: Lefschetz Duality
 classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - manifolds
-  - cohomology
+  - Poincaré Duality
+  - Manifolds
+  - Cohomology
 relations: []
 review: draft
 ---

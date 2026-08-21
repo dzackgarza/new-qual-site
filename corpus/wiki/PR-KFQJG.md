@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-KFQJG
 kind: proposition
-title: "Separability has the compositing property"
+title: Separability has the compositing property
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
+  - Separability
+  - Field Extensions
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ETEJW
 kind: problem
-title: Rational and Jordan forms with given minimal polynomials over $\mathbb{Q}$ and $\mathbb{C}$
+title: Rational and Jordan forms with given minimal polynomials over $\mathbb{Q}$
+  and $\mathbb{C}$
 classification:
   areas:
   - algebra
   topics:
-  - rational-canonical-form
-  - jordan-canonical-form
-  - structure-theorem
+  - Rational Canonical Form
+  - Jordan Canonical Form
+  - Structure Theorem
 relations: []
 review: draft
 solved: false

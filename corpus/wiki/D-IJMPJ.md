@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-IJMPJ
 kind: definition
-title: "Normal Families"
+title: Normal Families
 classification:
   areas:
   - complex-analysis
   topics:
-  - normal-families
-  - uniform-convergence
+  - Normal Families
+  - Uniform Convergence
 relations: []
 review: draft
 ---

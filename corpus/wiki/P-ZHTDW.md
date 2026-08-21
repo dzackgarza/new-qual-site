@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - matrix-groups
-  - finite-fields
+  - Automorphisms
+  - Matrix Groups
+  - Finite Fields
 relations: []
 review: draft
 solved: false

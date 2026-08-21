@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-BXAA5
 kind: proposition
-title: "General construction for wedge products"
+title: General construction for wedge products
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - cell-complexes
+  - Covering Spaces
+  - Cell Complexes
 relations: []
 review: draft
 ---

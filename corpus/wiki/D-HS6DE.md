@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - metric-spaces
+  - Metric Spaces
 relations: []
 review: draft
 ---

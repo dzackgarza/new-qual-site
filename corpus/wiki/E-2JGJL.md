@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-2JGJL
 kind: exercise
-title: "Line integrals"
+title: Line integrals
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - integrals
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 solved: true

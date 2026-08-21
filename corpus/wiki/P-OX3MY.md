@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rank-and-nullity
-  - linear-algebra
-  - matrices
+  - Rank and Nullity
+  - Linear Algebra
+  - Matrices
 relations: []
 review: draft
 solved: true

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - jordan-canonical-form
-  - canonical-forms
-  - rational-canonical-form
+  - Jordan Canonical Form
+  - Canonical Forms
+  - Rational Canonical Form
 relations: []
 review: draft
 solved: false

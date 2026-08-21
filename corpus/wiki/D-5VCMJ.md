@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-5VCMJ
 kind: definition
-title: "Interior Point"
+title: Interior Point
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - closure
+  - Point-Set Topology
+  - Closure
 relations: []
 review: draft
 ---

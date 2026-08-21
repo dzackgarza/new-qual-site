@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - counterexamples
-  - subgroups
+  - Normal Subgroups
+  - Counterexamples
+  - Subgroups
 relations: []
 review: draft
 solved: false

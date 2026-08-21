@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - winding-number
-  - integrals
+  - Contour Integration
+  - Winding Number
+  - Integrals
 relations: []
 review: draft
 solved: true

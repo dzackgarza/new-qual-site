@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-WH2YQ
 kind: exercise
-title: "Fix $a,b\\in \\CC$ and $\\theta$, and describe the locus"
+title: Fix $a,b\in \CC$ and $\theta$, and describe the locus
 classification:
   areas:
   - complex-analysis
   topics:
-  - geometry
-  - fractional-linear-transformations
+  - Geometry
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Fix $a,b\in \CC$ and $\theta$, and describe the locus
 \[

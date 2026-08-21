@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-C3NSR
 kind: problem
-title: "Spring 2021, 9"
+title: Spring 2021, 9
 classification:
   areas:
   - topology
   topics:
-  - degree
-  - fixed-points
+  - Degree
+  - Fixed Points
 relations: []
 review: draft
 solved: false

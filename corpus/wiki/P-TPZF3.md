@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-TPZF3
 kind: problem
-title: Numbers in $[0,1]$ with no decimal digit $4$ form a compact nowhere dense set with no isolated points and Lebesgue measure zero
+title: Numbers in $[0,1]$ with no decimal digit $4$ form a compact nowhere dense set
+  with no isolated points and Lebesgue measure zero
 classification:
   areas:
   - real-analysis
   topics:
-  - cantor-set
-  - measure-theory
-  - compactness
+  - Cantor Set
+  - Measure Theory
+  - Compactness
 relations: []
 review: draft
 solved: true
 ---
+
 Let $K$ be the set of numbers in $[0, 1]$ whose decimal expansions do not use the digit $4$.
 
 > We use the convention that when a decimal number ends with 4 but all other digits are

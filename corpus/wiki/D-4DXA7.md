@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-4DXA7
 kind: definition
-title: "$T_n$ Spaces (Separation Axioms)"
+title: $T_n$ Spaces (Separation Axioms)
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - separation-axioms
-  - hausdorff-spaces
+  - Point-Set Topology
+  - Separation Axioms
+  - Hausdorff Spaces
 relations: []
 review: draft
 ---

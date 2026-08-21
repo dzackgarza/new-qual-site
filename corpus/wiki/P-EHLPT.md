@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - cauchy-integral-formula
-  - residues
-  - entire-functions
+  - Liouville's Theorem
+  - Cauchy Integral Formula
+  - Residues
+  - Entire Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f(z)$ be bounded and analytic in $\mathbb C$. Let $a \neq b$ be any fixed complex numbers. Show that the following limit exists:
 $$

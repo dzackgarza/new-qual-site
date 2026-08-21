@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - abelian-groups
-  - direct-products
+  - Sylow Theory
+  - Abelian Groups
+  - Direct Products
 relations: []
 review: draft
 solved: false

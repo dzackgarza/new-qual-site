@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-QTPHE
 kind: problem
-title: "Hungerford 7.1.7"
+title: Hungerford 7.1.7
 classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - canonical-forms
-  - smith-normal-form
+  - Matrices
+  - Canonical Forms
+  - Smith Normal Form
 relations: []
 review: draft
 solved: false

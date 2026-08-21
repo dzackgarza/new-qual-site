@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-3QAC4
 kind: exercise
-title: "f and fbar holomorphic implies constant"
+title: f and fbar holomorphic implies constant
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="f and fbar holomorphic implies constant"}
 Show that if $f$ and $\bar{f}$ are both holomorphic on a domain $\Omega$, then $f$ is constant on $\Omega$.
 

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-KUGNH
 kind: exercise
-title: "Bounded derivatives imply removable singularities"
+title: Bounded derivatives imply removable singularities
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - casorati-weierstrass
-  - singularities
-  - laurent-series
+  - Removable Singularities
+  - Casorati-Weierstrass
+  - Singularities
+  - Laurent Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Bounded derivatives imply removable singularities"}
 Suppose $f$ is holomorphic on $\DD\smz$ and there exist $M, k$ such that
 \[

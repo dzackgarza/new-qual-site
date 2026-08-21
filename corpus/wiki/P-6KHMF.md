@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - prime-ideals
-  - modules
+  - Maximal Ideals
+  - Prime Ideals
+  - Modules
 relations: []
 review: draft
 solved: true
 ---
+
 Let $R$ be a commutative ring.
 
 a.

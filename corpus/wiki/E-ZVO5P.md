@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-ZVO5P
 kind: exercise
-title: "Primitives imply vanishing integral"
+title: Primitives imply vanishing integral
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - cauchy-integral-theorem
+  - Contour Integration
+  - Cauchy Integral Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Primitives imply vanishing integral"}
 Show that if $f$ has a primitive $F$ on $\Omega$ then $\displaystyle\int_\gamma f = 0$ for every closed curve $\gamma \subseteq \Omega$.
 

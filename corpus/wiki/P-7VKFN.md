@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
-  - group-presentations
-  - classification
+  - Groups
+  - Group Presentations
+  - Classification
 relations: []
 review: draft
 solved: false

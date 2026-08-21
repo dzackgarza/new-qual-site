@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-HWBWI
 kind: theorem
-title: "Picard's little theorem"
+title: Picard's little theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - picard
-  - entire-functions
+  - Picard
+  - Entire Functions
 relations: []
 review: draft
 ---

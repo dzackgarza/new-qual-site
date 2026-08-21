@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - countability
-  - density
-  - counterexamples
+  - Countability
+  - Density
+  - Counterexamples
 relations: []
 review: draft
 solved: false

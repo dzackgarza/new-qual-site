@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - matrix-groups
-  - orbit-stabilizer
+  - Group Actions
+  - Matrix Groups
+  - Orbit-Stabilizer
 relations: []
 review: draft
 solved: false

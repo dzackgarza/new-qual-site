@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-KX7L7
 kind: proposition
-title: "Tensoring preserves injections exactly when the factor is flat"
+title: Tensoring preserves injections exactly when the factor is flat
 classification:
   areas:
   - algebra
   topics:
-  - tensor-products
-  - exact-sequences
-  - vector-spaces
+  - Tensor Products
+  - Exact Sequences
+  - Vector Spaces
 relations: []
 review: draft
 ---

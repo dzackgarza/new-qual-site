@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - metric-spaces
+  - Density
+  - Metric Spaces
 relations: []
 review: draft
 ---

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-JKROF
 kind: exercise
-title: "$1/a+b\\cos(\\theta)$"
+title: $1/a+b\cos(\theta)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - trigonometry
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/a+b\cos(\theta)$"}
 \[
 \int_{0}^{2 \pi} \frac{d \theta}{a+b \cos \theta}=\frac{2 \pi}{\sqrt{a^{2}-b^{2}}}

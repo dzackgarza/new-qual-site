@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-T5EUB
 kind: problem
-title: A normal $p$-subgroup lies in every Sylow $p$-subgroup, and $G$ has a nontrivial abelian normal subgroup of order divisible by $p$
+title: A normal $p$-subgroup lies in every Sylow $p$-subgroup, and $G$ has a nontrivial
+  abelian normal subgroup of order divisible by $p$
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
-  - centralizers-and-normalizers
+  - Sylow Theory
+  - Normal Subgroups
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: true
 ---
+
 Let $G$ be a finite group and $p$ a prime number such that there is a normal subgroup $H\normal G$ with $\abs{H} = p^i > 1$.
 
 a.

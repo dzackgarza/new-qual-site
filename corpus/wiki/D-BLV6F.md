@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-BLV6F
 kind: definition
-title: "Cyclotomic Polynomials"
+title: Cyclotomic Polynomials
 classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - polynomials
-  - galois-theory
+  - Roots of Unity
+  - Polynomials
+  - Galois Theory
 relations: []
 review: draft
 ---
+
 :::{.definition title="Cyclotomic Polynomials"}
 Let $\zeta_n = e^{2\pi i/n}$, then the **$n$th cyclotomic polynomial** is given by
 $$

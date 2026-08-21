@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - mayer-vietoris
-  - homology
+  - Mayer-Vietoris
+  - Homology
 relations: []
 review: draft
 solved: false

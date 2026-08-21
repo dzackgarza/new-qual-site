@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-HHSCS
 kind: exercise
-title: "$\\log(z)/1+z^a$"
+title: $\log(z)/1+z^a$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$\log(z)/1+z^a$"}
 \[
 I\da \int_0^\infty {\log(x) \over 1+x^a}\dx 

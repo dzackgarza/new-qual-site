@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-VQTR6
 kind: theorem
-title: "Hairy Ball"
+title: Hairy Ball
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - degree
+  - Fixed Points
+  - Degree
 relations: []
 review: draft
 ---

@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-NFZRR
 kind: definition
-title: "Complex differentiable / holomorphic /entire"
+title: Complex differentiable / holomorphic /entire
 classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - entire-functions
+  - Holomorphic Functions
+  - Entire Functions
 relations: []
 review: draft
 ---
+
 :::{.definition title="Complex differentiable / holomorphic /entire"}
 A function $f: \CC\to \CC$ is **complex differentiable** or **holomorphic** at $z_0$ iff the following limit exists:
 \[

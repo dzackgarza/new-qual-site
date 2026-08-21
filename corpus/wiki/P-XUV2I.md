@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l2
-  - functional-analysis
-  - series-of-numbers
+  - L²
+  - Functional Analysis
+  - Series of Numbers
 relations: []
 review: draft
 solved: true
 ---
+
 Let $\theset{a_n}$ be a sequence of real numbers such that
 \[
 \theset{b_n} \in \ell^2(\NN) \implies \sum a_n b_n < \infty.

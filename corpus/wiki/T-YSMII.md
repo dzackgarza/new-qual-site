@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-YSMII
 kind: theorem
-title: "p-Test for Integrals"
+title: p-Test for Integrals
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - convergence-tests
+  - Integrals
+  - Convergence Tests
 relations: []
 review: draft
 ---
+
 :::{.theorem title="p-Test for Integrals"}
 \[
 \int_0^1 {1\over x^p} < \infty \iff  p < 1 \\

@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-XQ4BA
 kind: exercise
-title: "Automorphisms of $\\CC$"
+title: Automorphisms of $\CC$
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - entire-functions
-  - liouville-s-theorem
-  - singularities
+  - Biholomorphisms
+  - Entire Functions
+  - Liouville's Theorem
+  - Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Automorphisms of $\CC$"}
 Show that $\Aut(\CC) = \ts{ z \mapsto az+b\st a\in \CC\units, b\in \CC }$.
 

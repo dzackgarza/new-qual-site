@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - mean-value-theorem
-  - differentiation
+  - Mean Value Theorem
+  - Differentiation
 relations: []
 review: draft
 solved: true

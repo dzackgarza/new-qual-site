@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-IEZIG
 kind: problem
-title: "What does it mean for an element to be algebraic or transcendental?"
+title: What does it mean for an element to be algebraic or transcendental?
 classification:
   areas:
   - algebra
   topics:
-  - transcendence
-  - field-extensions
+  - Transcendence
+  - Field Extensions
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PMBN2
 kind: problem
-title: Fundamental group of $\RR^3$ minus the $z$-axis and the unit circle in the $xy$-plane
+title: Fundamental group of $\RR^3$ minus the $z$-axis and the unit circle in the
+  $xy$-plane
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - van-kampen
-  - homotopy
+  - Fundamental Group
+  - van Kampen
+  - Homotopy
 relations: []
 review: draft
 solved: false

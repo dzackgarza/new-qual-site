@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-MDJII
 kind: definition
-title: "Lebesgue Measurable Sets"
+title: Lebesgue Measurable Sets
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

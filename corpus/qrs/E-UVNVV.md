@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-UVNVV
 kind: exercise
-title: "Injectivity relates to derivatives"
+title: Injectivity relates to derivatives
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - open-mapping-theorem
-  - argument-principle
+  - Zeros
+  - Open Mapping Theorem
+  - Argument Principle
 relations: []
 review: draft
 solved: true

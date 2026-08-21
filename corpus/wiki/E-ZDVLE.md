@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - entire-functions
-  - harmonic-functions
+  - Liouville's Theorem
+  - Entire Functions
+  - Harmonic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show that if $\Re(f(z)) \geq 0$ for all $z\in \CC$, then $f$ is constant.
 

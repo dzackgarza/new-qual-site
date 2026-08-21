@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-Y22HZ
 kind: exercise
-title: "Uniform limit of holomorphic derivatives is the derivative"
+title: Uniform limit of holomorphic derivatives is the derivative
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - cauchy-estimates
-  - sequences-of-functions
+  - Uniform Convergence
+  - Cauchy Estimates
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true

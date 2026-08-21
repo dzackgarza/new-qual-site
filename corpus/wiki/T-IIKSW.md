@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: T-IIKSW
 kind: theorem
-title: "Measurable sets can be approximated by open/closed/compact sets."
+title: Measurable sets can be approximated by open/closed/compact sets.
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

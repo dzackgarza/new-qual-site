@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FHQAB
 kind: problem
-title: A holomorphic function on $\DD\setminus\{0\}$ with $|f(z)|\le\log(1/|z|)$ is identically zero
+title: A holomorphic function on $\DD\setminus\{0\}$ with $|f(z)|\le\log(1/|z|)$ is
+  identically zero
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - maximum-modulus-principle
-  - singularities
+  - Removable Singularities
+  - Maximum Modulus Principle
+  - Singularities
 relations: []
 review: draft
 solved: true

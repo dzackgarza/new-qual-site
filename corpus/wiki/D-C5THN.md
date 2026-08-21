@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-C5THN
 kind: definition
-title: "Product and box topologies"
+title: Product and box topologies
 classification:
   areas:
   - topology
   topics:
-  - product-topology
-  - point-set
-  - bases
+  - Product Topology
+  - Point-Set Topology
+  - Bases
 relations: []
 review: draft
 ---
+
 :::{.definition title="Product and box topologies"}
 Given a collection of spaces $\ts{ (X_i, \tau(X_i) ) }_{i\in I}$, the **box topology** is defined by 
 \[

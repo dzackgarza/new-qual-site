@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
+  - Series of Functions
 relations: []
 review: draft
 solved: true

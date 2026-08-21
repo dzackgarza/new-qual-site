@@ -7,9 +7,9 @@ classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - improper-integrals
-  - trigonometric-substitution
+  - Integrals
+  - Improper Integrals
+  - Trigonometric Substitution
 relations: []
 review: draft
 solved: true

@@ -2,17 +2,19 @@
 schema: qual/card@1
 id: P-5ADNP
 kind: problem
-title: $\operatorname{cl}_X(B)\cap A=\operatorname{cl}_A(B)$ for $B\subset A\subset X$
+title: $\operatorname{cl}_X(B)\cap A=\operatorname{cl}_A(B)$ for $B\subset A\subset
+  X$
 classification:
   areas:
   - topology
   topics:
-  - closure
-  - subspace-topology
+  - Closure
+  - Subspace Topology
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Fall 2011"}
 Let $X$ be a topological space, and $B \subset A \subset X$. 
 Equip $A$ with the subspace topology, and write $\cl_X (B)$ or $\cl_A (B)$ for the closure of $B$ as a subset of, respectively, $X$ or $A$. 

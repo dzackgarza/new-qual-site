@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-RPSK2
 kind: problem
-title: Line integral of $[2x+y,y]$ along the segment from $(3,5)$ to $(2,1)$, and non-conservativeness
+title: Line integral of $[2x+y,y]$ along the segment from $(3,5)$ to $(2,1)$, and
+  non-conservativeness
 classification:
   areas:
   - prelim
   topics:
-  - line-integrals
+  - Line Integrals
 relations: []
 review: draft
 solved: false

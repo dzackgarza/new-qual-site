@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-KZV2Z
 kind: exercise
-title: "$1/x^2+3x+2$"
+title: $1/x^2+3x+2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - contour-integration
-  - integrals
-  - complex-logarithm
+  - Residues
+  - Contour Integration
+  - Integrals
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="$1/x^2+3x+2$"}
 \[
 I\da \int_\RR {1\over x^2 + 3x+ 2 }\dx

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JWEN2
 kind: problem
-title: 'Dini''s theorem: monotone continuous functions decreasing to $0$ on $[0,1]$ converge uniformly'
+title: 'Dini''s theorem: monotone continuous functions decreasing to $0$ on $[0,1]$
+  converge uniformly'
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - continuity
+  - Uniform Convergence
+  - Sequences of Functions
+  - Continuity
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-NODFN
 kind: definition
-title: "Direct Limit"
+title: Direct Limit
 classification:
   areas:
   - topology
   topics:
-  - category-theory
-  - homological-algebra
-  - homology
+  - Category Theory
+  - Homological Algebra
+  - Homology
 relations: []
 review: draft
 ---

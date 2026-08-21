@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: E-TTDES
 kind: exercise
-title: Compact, limit-point compact, and sequentially compact coincide for second-countable Hausdorff or metric spaces
+title: Compact, limit-point compact, and sequentially compact coincide for second-countable
+  Hausdorff or metric spaces
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - countability
-  - convergence
-  - metric-spaces
+  - Compactness
+  - Countability
+  - Convergence
+  - Metric Spaces
 relations: []
 review: draft
 solved: false

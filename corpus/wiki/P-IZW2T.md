@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-IZW2T
 kind: problem
-title: "Expand the following functions into Laurent series in the indicated"
+title: Expand the following functions into Laurent series in the indicated
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - poles
-  - essential-singularities
+  - Laurent Series
+  - Poles
+  - Essential Singularities
 relations: []
 review: draft
 solved: false

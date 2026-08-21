@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-RR26L
 kind: problem
-title: Self-adjoint operators have real eigenvalues and are unitarily diagonalizable, and Schur's theorem
+title: Self-adjoint operators have real eigenvalues and are unitarily diagonalizable,
+  and Schur's theorem
 classification:
   areas:
   - algebra
   topics:
-  - eigenvalues-and-eigenvectors
-  - diagonalization
-  - inner-product-spaces
+  - Eigenvalues and Eigenvectors
+  - Diagonalization
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-UTFSY
 kind: proposition
-title: "Existence of maximal ideals"
+title: Existence of maximal ideals
 classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
-  - zorns-lemma
+  - Maximal Ideals
+  - Ideals
+  - Zorn's Lemma
 relations: []
 review: draft
 ---

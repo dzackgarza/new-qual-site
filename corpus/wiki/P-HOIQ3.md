@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-HOIQ3
 kind: problem
-title: The one-point compactification of a locally compact Hausdorff space, and those of $(0,1)$ and $\RR^2$
+title: The one-point compactification of a locally compact Hausdorff space, and those
+  of $(0,1)$ and $\RR^2$
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - point-set
+  - Compactness
+  - Hausdorff Spaces
+  - Point-Set Topology
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.problem title="?"}
 Let X be a noncompact locally compact Hausdorff space, with topology $\mct$. 
 Let $\tilde X = X \cup \theset{\infty}$ ($X$ with one point adjoined), and consider the family $\mcb$ of subsets of $\tilde X$ defined by

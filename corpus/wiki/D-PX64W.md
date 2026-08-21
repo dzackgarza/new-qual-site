@@ -7,12 +7,13 @@ classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - conjugacy
-  - group-actions
+  - Centralizers and Normalizers
+  - Conjugacy
+  - Group Actions
 relations: []
 review: draft
 ---
+
 :::{.definition title="Centralizer"}
 The **centralizer of an element** is defined as 
 \[

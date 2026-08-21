@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: C-GM57K
 kind: corollary
-title: "Maximum Modulus"
+title: Maximum Modulus
 classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
+  - Maximum Modulus Principle
 relations: []
 review: draft
 ---

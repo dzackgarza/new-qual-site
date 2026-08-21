@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - hausdorff-spaces
-  - product-topology
+  - Hausdorff Spaces
+  - Product Topology
 relations: []
 review: draft
 solved: false

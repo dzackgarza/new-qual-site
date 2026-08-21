@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-WOCSV
 kind: problem
-title: Classification of groups of order $4$, and which arise as Galois groups over $\mathbb{Q}$
+title: Classification of groups of order $4$, and which arise as Galois groups over
+  $\mathbb{Q}$
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - galois-theory
-  - abelian-groups
+  - Classification
+  - Galois Theory
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

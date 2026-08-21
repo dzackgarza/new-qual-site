@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-RHQC5
 kind: problem
-title: 'Weierstrass''s theorem: locally uniform limits of holomorphic functions are holomorphic'
+title: 'Weierstrass''s theorem: locally uniform limits of holomorphic functions are
+  holomorphic'
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
-  - holomorphic-functions
-  - morera
+  - Uniform Convergence
+  - Sequences of Functions
+  - Holomorphic Functions
+  - Morera
 relations: []
 review: draft
 solved: false

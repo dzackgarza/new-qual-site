@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-SLYE5
 kind: definition
-title: "Completeness of a Hilbert space"
+title: Completeness of a Hilbert space
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - bases
+  - Hilbert Spaces
+  - Bases
 relations: []
 review: draft
 ---

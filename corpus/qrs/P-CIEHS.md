@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-CIEHS
 kind: problem
-title: Holomorphic self-maps of the disk with a zero of order $k$ at $0$ and $|f|\to 1$ at the boundary
+title: Holomorphic self-maps of the disk with a zero of order $k$ at $0$ and $|f|\to
+  1$ at the boundary
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - schwarz-lemma
-  - zeros
+  - Blaschke Factors
+  - Schwarz Lemma
+  - Zeros
 relations: []
 review: draft
 solved: true

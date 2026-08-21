@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
-  - cyclic-groups
+  - Modules
+  - Semisimplicity
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - surfaces
-  - classification
+  - Cell Complexes
+  - Surfaces
+  - Classification
 relations: []
 review: draft
 solved: false

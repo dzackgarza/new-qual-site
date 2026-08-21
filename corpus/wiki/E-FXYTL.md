@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: E-FXYTL
 kind: exercise
-title: 'Holomorphic functions on a domain: $fg\equiv 0$ implies $f\equiv 0$ or $g\equiv 0$'
+title: 'Holomorphic functions on a domain: $fg\equiv 0$ implies $f\equiv 0$ or $g\equiv
+  0$'
 classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - zeros
+  - Identity Theorem
+  - Zeros
 relations: []
 review: draft
 solved: true

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: PR-TAPZF
 kind: proposition
-title: "The one-step submodule test"
+title: The one-step submodule test
 classification:
   areas:
   - algebra
   topics:
-  - modules
+  - Modules
 relations: []
 review: draft
 ---

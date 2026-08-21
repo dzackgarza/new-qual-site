@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-STPAM
 kind: definition
-title: "Exact Sequence"
+title: Exact Sequence
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
+  - Homological Algebra
 relations: []
 review: draft
 ---

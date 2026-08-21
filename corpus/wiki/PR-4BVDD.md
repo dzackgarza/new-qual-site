@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-4BVDD
 kind: proposition
-title: "Exponential is uniformly convergent in discs"
+title: Exponential is uniformly convergent in discs
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - power-series
-  - entire-functions
+  - Uniform Convergence
+  - Power Series
+  - Entire Functions
 relations: []
 review: draft
 ---

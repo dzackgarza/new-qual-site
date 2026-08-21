@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-R6LA3
 kind: definition
-title: "Singular Cochain"
+title: Singular Cochain
 classification:
   areas:
   - topology
   topics:
-  - cohomology
+  - Cohomology
 relations: []
 review: draft
 ---

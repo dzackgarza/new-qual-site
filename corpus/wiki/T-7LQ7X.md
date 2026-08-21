@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: T-7LQ7X
 kind: theorem
-title: "Properties of measures"
+title: Properties of measures
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Properties of measures"}
 Let $(X, \mcm, \mu)$ be a measure space.
 Then

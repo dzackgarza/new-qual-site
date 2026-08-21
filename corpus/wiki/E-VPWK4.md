@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - cosets-and-lagrange
-  - centralizers-and-normalizers
+  - Conjugacy
+  - Cosets and Lagrange
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

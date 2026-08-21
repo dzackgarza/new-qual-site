@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
-  - principal-parts
-  - removable-singularities
-  - trigonometry
+  - Meromorphic Functions
+  - Principal Parts
+  - Removable Singularities
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Show that there is an entire function $h$ such that
 \[

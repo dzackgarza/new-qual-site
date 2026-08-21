@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-OYP6J
 kind: proposition
-title: "Size of $\\GL_n(\\FF_p)$"
+title: Size of $\GL_n(\FF_p)$
 classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - finite-fields
-  - bases
+  - Matrix Groups
+  - Finite Fields
+  - Bases
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Size of $\GL_n(\FF_p)$"}
 \[
 \abs{\GL_n(\FF_p)} = (p^n-1)(p^n-p)(p^n-p^2)\cdots(p^n - p^{n-1})

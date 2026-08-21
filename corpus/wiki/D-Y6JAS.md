@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-Y6JAS
 kind: definition
-title: "Limit Point"
+title: Limit Point
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - limits
-  - closure
+  - Point-Set Topology
+  - Limits
+  - Closure
 relations: []
 review: draft
 ---

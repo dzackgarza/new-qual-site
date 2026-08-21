@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-7UTDI
 kind: problem
-title: Constancy of holomorphic functions of constant modulus, real part, argument, or conjugate
+title: Constancy of holomorphic functions of constant modulus, real part, argument,
+  or conjugate
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - open-mapping-theorem
-  - maximum-modulus-principle
+  - Cauchy-Riemann
+  - Open Mapping Theorem
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: false

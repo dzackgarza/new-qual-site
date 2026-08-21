@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-CJ16Y
 kind: problem
-title: Integrals of $\cos(x+\pi/4)\cos(x-\pi/4)$, $\sin(4x)\cos(3x)$, and $\cos x\cos 2x\sin 3x$
+title: Integrals of $\cos(x+\pi/4)\cos(x-\pi/4)$, $\sin(4x)\cos(3x)$, and $\cos x\cos
+  2x\sin 3x$
 classification:
   areas:
   - prelim
   topics:
-  - integrals
-  - trigonometry
+  - Integrals
+  - Trigonometry
 relations: []
 review: draft
 solved: false

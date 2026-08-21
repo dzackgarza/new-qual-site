@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-O6M2P
 kind: problem
-title: "Hungerford 5.3.5"
+title: Hungerford 5.3.5
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - permutations
-  - field-extensions
+  - Splitting Fields
+  - Permutations
+  - Field Extensions
 relations: []
 review: draft
 solved: false

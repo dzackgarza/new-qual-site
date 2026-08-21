@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-XODFX
 kind: problem
-title: Whether an integral domain must be a PID if every finitely generated module is a direct sum of cyclic modules
+title: Whether an integral domain must be a PID if every finitely generated module
+  is a direct sum of cyclic modules
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - principal-ideal-domains
-  - modules
+  - Structure Theorem
+  - Principal Ideal Domains
+  - Modules
 relations: []
 review: draft
 solved: false

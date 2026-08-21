@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - degree
-  - fixed-points
+  - Degree
+  - Fixed Points
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-PYYRK
 kind: proposition
-title: "Normal iff disjoint union of conjugacy classes"
+title: Normal iff disjoint union of conjugacy classes
 classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - conjugacy
+  - Normal Subgroups
+  - Conjugacy
 relations: []
 review: draft
 ---

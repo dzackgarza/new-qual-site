@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-LTRLV
 kind: proposition
-title: "Lipschitz $\\iff$ differentiable with bounded derivative."
+title: Lipschitz $\iff$ differentiable with bounded derivative.
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - uniform-continuity
+  - Differentiation
+  - Uniform Continuity
 relations: []
 review: draft
 ---

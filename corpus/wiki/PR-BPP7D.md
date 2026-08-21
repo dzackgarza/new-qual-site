@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: PR-BPP7D
 kind: proposition
-title: "Sector to Disc"
+title: Sector to Disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
+  - Conformal Maps
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Sector to Disc"}
 The unmotivated formula first:
 \[

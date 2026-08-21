@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - cohomology
-  - product-topology
-  - homology
+  - Cohomology
+  - Product Topology
+  - Homology
 relations: []
 review: draft
 solved: false

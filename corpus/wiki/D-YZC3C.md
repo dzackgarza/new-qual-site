@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-YZC3C
 kind: definition
-title: "Uniform Convergence"
+title: Uniform Convergence
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
+  - Uniform Convergence
+  - Sequences of Functions
 relations: []
 review: draft
 ---
+
 :::{.definition title="Uniform Convergence"}
 \[
 (\forall \varepsilon>0)\left(\exists n_{0} = n_0(\eps) \right)(\forall x \in S)\left(\forall n>n_{0}\right)\left(\left|f_{n}(x)-f(x)\right|<\varepsilon\right)

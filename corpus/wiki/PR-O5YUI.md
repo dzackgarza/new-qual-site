@@ -7,12 +7,13 @@ classification:
   areas:
   - algebra
   topics:
-  - dual-spaces
-  - tensor-products
-  - linear-algebra
+  - Dual Spaces
+  - Tensor Products
+  - Linear Algebra
 relations: []
 review: draft
 ---
+
 :::{.proposition title="?"}
 If $\dim_k V, \dim_k W < \infty$ then there is an isomorphism
 \[

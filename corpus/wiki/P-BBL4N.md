@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-BBL4N
 kind: problem
-title: Elementary divisors, invariant factors, and minimal and characteristic polynomials of a given $\RR[x]$-module
+title: Elementary divisors, invariant factors, and minimal and characteristic polynomials
+  of a given $\RR[x]$-module
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - minimal-and-characteristic-polynomials
-  - modules
+  - Structure Theorem
+  - Minimal and Characteristic Polynomials
+  - Modules
 relations: []
 review: draft
 solved: false

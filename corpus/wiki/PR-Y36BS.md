@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-Y36BS
 kind: proposition
-title: "Holomorphic implies continuous."
+title: Holomorphic implies continuous.
 classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - continuity
+  - Holomorphic Functions
+  - Continuity
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Holomorphic implies continuous."}
 $f$ is holomorphic at $z_0$ iff there exists an $a\in \CC$ such that
 \[  

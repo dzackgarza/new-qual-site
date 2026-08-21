@@ -7,10 +7,10 @@ classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - differentiation
-  - cantor-set
-  - counterexamples
+  - Uniform Convergence
+  - Differentiation
+  - Cantor Set
+  - Counterexamples
 relations: []
 review: draft
 solved: true

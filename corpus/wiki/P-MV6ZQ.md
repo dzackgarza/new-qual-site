@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-MV6ZQ
 kind: problem
-title: "Mod by nilradical to kill nilpotents"
+title: Mod by nilradical to kill nilpotents
 classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - ideals
-  - rings
+  - Nilpotence
+  - Ideals
+  - Rings
 relations: []
 review: draft
 solved: true

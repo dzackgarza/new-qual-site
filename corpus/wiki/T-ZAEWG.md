@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-ZAEWG
 kind: theorem
-title: "Uniformization"
+title: Uniformization
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniformization
-  - riemann-surfaces
-  - biholomorphisms
+  - Uniformization
+  - Riemann Surfaces
+  - Biholomorphisms
 relations: []
 review: draft
 ---

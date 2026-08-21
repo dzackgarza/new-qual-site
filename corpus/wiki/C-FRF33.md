@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: C-FRF33
 kind: corollary
-title: "Open Mapping"
+title: Open Mapping
 classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - holomorphic-functions
+  - Open Mapping Theorem
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

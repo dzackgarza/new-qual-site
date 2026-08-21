@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - matrices
-  - rings
+  - Centralizers and Normalizers
+  - Matrices
+  - Rings
 relations: []
 review: draft
 solved: false

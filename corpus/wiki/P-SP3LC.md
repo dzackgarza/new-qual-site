@@ -7,8 +7,8 @@ classification:
   areas:
   - prelim
   topics:
-  - linear-maps
-  - continuity
+  - Linear Maps
+  - Continuity
 relations: []
 review: draft
 solved: false

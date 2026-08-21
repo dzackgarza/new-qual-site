@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-Q7WNK
 kind: problem
-title: Equivalent approximation of Borel sets by open and closed sets versus $G_\delta$ and $F_\sigma$ sets for a finite Borel measure on $\RR^n$
+title: Equivalent approximation of Borel sets by open and closed sets versus $G_\delta$
+  and $F_\sigma$ sets for a finite Borel measure on $\RR^n$
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 solved: true

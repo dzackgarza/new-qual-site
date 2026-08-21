@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-C3MKZ
 kind: problem
-title: "Determine the values of $x\\in\\mathbb{R}$ for which"
+title: Determine the values of $x\in\mathbb{R}$ for which
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - convergence-of-functions
+  - Series of Functions
+  - Convergence of Functions
 relations: []
 review: draft
 solved: true

@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - integrals
-  - measure-theory
+  - Density
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 ---
+
 :::{.proposition title="?"}
 \[
 \inner{f}{\phi} \da \int f \cdot \phi = 0 \quad \forall \phi\in C_c^0 \implies f \eqae 0

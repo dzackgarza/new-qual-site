@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-KC4BS
 kind: definition
-title: "Moore Space"
+title: Moore Space
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - cell-complexes
+  - Homology
+  - Cell Complexes
 relations: []
 review: draft
 ---

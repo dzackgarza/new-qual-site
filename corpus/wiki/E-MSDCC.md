@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-MSDCC
 kind: exercise
-title: "On subgroups"
+title: On subgroups
 classification:
   areas:
   - algebra
   topics:
-  - subgroups
-  - cyclic-groups
-  - sylow-theory
+  - Subgroups
+  - Cyclic Groups
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

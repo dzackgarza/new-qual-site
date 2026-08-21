@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-XHB3F
 kind: exercise
-title: Vanishing of $\int f$, integrability of bounded functions, and density of simple, step, and $C_c^\infty$ functions in $L^1$
+title: Vanishing of $\int f$, integrability of bounded functions, and density of simple,
+  step, and $C_c^\infty$ functions in $L^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - l1
-  - measure-theory
+  - Density
+  - L¹
+  - Measure Theory
 relations: []
 review: draft
 solved: true

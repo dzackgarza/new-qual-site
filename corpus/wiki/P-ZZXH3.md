@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-ZZXH3
 kind: problem
-title: The Fourier transform of a compactly supported continuous real function is entire
+title: The Fourier transform of a compactly supported continuous real function is
+  entire
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - morera
-  - integrals
+  - Entire Functions
+  - Morera
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose that $f: \RR\to\RR$ is a continuous function that vanishes outside of some finite interval.
 For each $z\in \CC$, define

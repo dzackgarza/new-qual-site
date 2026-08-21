@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-XECJ3
 kind: theorem
-title: "Inverse Function Theorem"
+title: Inverse Function Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
-  - biholomorphisms
+  - Calculus
+  - Biholomorphisms
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Inverse Function Theorem"}
 For $f \in C^1(\RR; \RR)$ with $f'(a) \neq 0$, then $f$ is invertible in a neighborhood $U \ni a$, $g\da f\inv \in C^1(U; \RR)$, and at $b\da f(a)$ the derivative of $g$ is given by
 \[

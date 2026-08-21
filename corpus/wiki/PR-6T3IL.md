@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-6T3IL
 kind: proposition
-title: "Continuous on compact $\\implies$ uniformly continuous"
+title: Continuous on compact $\implies$ uniformly continuous
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - uniform-continuity
-  - continuity
+  - Compactness
+  - Uniform Continuity
+  - Continuity
 relations: []
 review: draft
 ---

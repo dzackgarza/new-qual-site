@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-2HIC2
 kind: problem
-title: $\int_0^1 Fg=F(1)G(1)-\int_0^1 fG$ for $F(x)=\int_0^x f$ and $G(x)=\int_0^x g$
+title: $\int_0^1 Fg=F(1)G(1)-\int_0^1 fG$ for $F(x)=\int_0^x f$ and $G(x)=\int_0^x
+  g$
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - fubini-tonelli
+  - Integrals
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true

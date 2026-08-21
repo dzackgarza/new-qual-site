@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-UECFO
 kind: problem
-title: Every irreducible representation of $G$ appears in a tensor power of a faithful finite-dimensional representation
+title: Every irreducible representation of $G$ appears in a tensor power of a faithful
+  finite-dimensional representation
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - tensor-products
-  - semisimplicity
+  - Representation Theory
+  - Tensor Products
+  - Semisimplicity
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: C-7S2CO
 kind: corollary
-title: "Formula for Laurent coefficients"
+title: Formula for Laurent coefficients
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - cauchy-integral-formula
-  - cauchy-estimates
-  - power-series
+  - Laurent Series
+  - Cauchy Integral Formula
+  - Cauchy Estimates
+  - Power Series
 relations: []
 review: draft
 ---
+
 :::{.corollary title="Formula for Laurent coefficients"}
 Differentiating under the integral above yields
 \[

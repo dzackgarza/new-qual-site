@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - canonical-forms
-  - conjugacy
+  - Structure Theorem
+  - Canonical Forms
+  - Conjugacy
 relations: []
 review: draft
 solved: false

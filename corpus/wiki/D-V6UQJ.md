@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-V6UQJ
 kind: definition
-title: "Analytic"
+title: Analytic
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - holomorphic-functions
+  - Power Series
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

@@ -7,12 +7,13 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - fubini-tonelli
+  - Measure Theory
+  - Fubini-Tonelli
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.warnings}
 This problem may be much harder than expected.
 Recommended skip.

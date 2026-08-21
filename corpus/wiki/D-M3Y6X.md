@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-M3Y6X
 kind: definition
-title: "Chain"
+title: Chain
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 ---

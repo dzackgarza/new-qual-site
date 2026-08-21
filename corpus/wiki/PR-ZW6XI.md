@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-ZW6XI
 kind: proposition
-title: "Polygon Models for Surfaces"
+title: Polygon Models for Surfaces
 classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - quotient-spaces
-  - classification
+  - Surfaces
+  - Quotient Spaces
+  - Classification
 relations: []
 review: draft
 ---

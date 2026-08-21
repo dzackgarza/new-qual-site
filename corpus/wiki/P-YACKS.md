@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-YACKS
 kind: problem
-title: "Consider the metric space $(\\mathbb{Q},d)$"
+title: Consider the metric space $(\mathbb{Q},d)$
 classification:
   areas:
   - real-analysis
   topics:
-  - compactness
-  - metric-spaces
-  - counterexamples
+  - Compactness
+  - Metric Spaces
+  - Counterexamples
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-WA5RE
 kind: problem
-title: Splitting fields, and finite extensions of finite fields as Galois splitting fields
+title: Splitting fields, and finite extensions of finite fields as Galois splitting
+  fields
 classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - finite-fields
-  - galois-theory
+  - Splitting Fields
+  - Finite Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-3UY5O
 kind: definition
-title: "Lefschetz Number"
+title: Lefschetz Number
 classification:
   areas:
   - topology
   topics:
-  - fixed-points
-  - homology
+  - Fixed Points
+  - Homology
 relations: []
 review: draft
 ---

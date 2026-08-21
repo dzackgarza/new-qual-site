@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-YNKCZ
 kind: theorem
-title: "Recognizing Generalized Direct Products"
+title: Recognizing Generalized Direct Products
 classification:
   areas:
   - algebra
   topics:
-  - direct-products
-  - normal-subgroups
+  - Direct Products
+  - Normal Subgroups
 relations: []
 review: draft
 ---

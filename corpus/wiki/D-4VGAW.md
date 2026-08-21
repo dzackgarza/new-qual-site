@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-4VGAW
 kind: definition
-title: "Deck transformation"
+title: Deck transformation
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - group-actions
+  - Covering Spaces
+  - Group Actions
 relations: []
 review: draft
 ---

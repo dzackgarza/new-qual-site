@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-RVL3K
 kind: problem
-title: $L^p$ norms tend to $L^\infty$, the converse of dominated convergence, translation continuity, and $L^p$ inclusions
+title: $L^p$ norms tend to $L^\infty$, the converse of dominated convergence, translation
+  continuity, and $L^p$ inclusions
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - l-infty
-  - norms
+  - Lp Spaces
+  - L∞
+  - Norms
 relations: []
 review: draft
 solved: true

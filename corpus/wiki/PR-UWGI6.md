@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-UWGI6
 kind: proposition
-title: "Mean Value Property"
+title: Mean Value Property
 classification:
   areas:
   - complex-analysis
   topics:
-  - mean-value-property
-  - harmonic-functions
+  - Mean Value Property
+  - Harmonic Functions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Mean Value Property"}
 If $u$ is harmonic on $\Omega$ then
 \[

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-YAODF
 kind: problem
-title: "Hungerford 5.6.1"
+title: Hungerford 5.6.1
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - characteristic
+  - Field Extensions
+  - Characteristic
 relations: []
 review: draft
 solved: false

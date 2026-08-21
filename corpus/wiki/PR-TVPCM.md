@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-TVPCM
 kind: proposition
-title: "Holomorphic iff delbar vanishes"
+title: Holomorphic iff delbar vanishes
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Holomorphic iff delbar vanishes"}
 $f$ is holomorphic at $z_0$ iff $\delbar f(z_0) = 0$:
 \[

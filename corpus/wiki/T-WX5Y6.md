@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-WX5Y6
 kind: theorem
-title: "Continuous bijections from compact to Hausdorff are homeomorphisms"
+title: Continuous bijections from compact to Hausdorff are homeomorphisms
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - homeomorphisms
+  - Compactness
+  - Hausdorff Spaces
+  - Homeomorphisms
 relations: []
 review: draft
 ---

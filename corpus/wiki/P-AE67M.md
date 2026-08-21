@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-convergence
-  - series-of-functions
-  - cauchy-estimates
-  - holomorphic-functions
+  - Uniform Convergence
+  - Series of Functions
+  - Cauchy Estimates
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

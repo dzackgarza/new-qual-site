@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-BTFTU
 kind: problem
-title: "Hungerford 5.1.1"
+title: Hungerford 5.1.1
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
+  - Field Extensions
 relations: []
 review: draft
 solved: false

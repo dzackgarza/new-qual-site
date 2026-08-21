@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-24CPI
 kind: proposition
-title: "Triangular Decomposition"
+title: Triangular Decomposition
 classification:
   areas:
   - algebra
   topics:
-  - semisimplicity
-  - nilpotence
-  - linear-algebra
+  - Semisimplicity
+  - Nilpotence
+  - Linear Algebra
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-F7Y7R
 kind: problem
-title: Negation of $\forall x\,\exists y\,|x-y|\ge 2017$ and of $\varepsilon$-$\delta$ continuity
+title: Negation of $\forall x\,\exists y\,|x-y|\ge 2017$ and of $\varepsilon$-$\delta$
+  continuity
 classification:
   areas:
   - prelim
   topics:
-  - logic-and-quantifiers
+  - Logic and Quantifiers
 relations: []
 review: draft
 solved: true

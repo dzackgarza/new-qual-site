@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-XFX66
 kind: problem
-title: "Hungerford 7.3.1"
+title: Hungerford 7.3.1
 classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - determinants
-  - modules
+  - Bilinear Forms
+  - Determinants
+  - Modules
 relations: []
 review: draft
 solved: false

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-WKURJ
 kind: definition
-title: "Basis for a topology"
+title: Basis for a topology
 classification:
   areas:
   - topology
   topics:
-  - bases
-  - point-set
+  - Bases
+  - Point-Set Topology
 relations: []
 review: draft
 ---

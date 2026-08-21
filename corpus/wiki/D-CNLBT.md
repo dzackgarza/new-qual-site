@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-CNLBT
 kind: definition
-title: "Oriented manifold"
+title: Oriented manifold
 classification:
   areas:
   - topology
   topics:
-  - orientation
-  - manifolds
-  - homology
+  - Orientation
+  - Manifolds
+  - Homology
 relations: []
 review: draft
 ---

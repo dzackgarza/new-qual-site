@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - connectedness
-  - euclidean-spaces
+  - Connectedness
+  - Euclidean Spaces
 relations: []
 review: draft
 solved: true

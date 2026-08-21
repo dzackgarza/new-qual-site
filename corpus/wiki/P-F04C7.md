@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - continuity
+  - Continuity
 relations: []
 review: draft
 solved: false

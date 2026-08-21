@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-XUREW
 kind: problem
-title: "Hungerford 2.4.9)."
+title: Hungerford 2.4.9).
 classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - abelian-groups
-  - cyclic-groups
+  - Centralizers and Normalizers
+  - Abelian Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

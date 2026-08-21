@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-VGNUI
 kind: exercise
-title: "Equality of different integrals"
+title: Equality of different integrals
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - contour-integration
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Equality of different integrals"}
 Suppose $f$ is holomorphic on $\Omega$, a simply connected region, and suppose $\gamma \subseteq \Omega$.
 Using the Cauchy integral formula, show that

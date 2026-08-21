@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: P-AT75W
 kind: problem
-title: "Spring 2009, 31"
+title: Spring 2009, 31
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - hausdorff-spaces
-  - homeomorphisms
-  - counterexamples
+  - Compactness
+  - Hausdorff Spaces
+  - Homeomorphisms
+  - Counterexamples
 relations: []
 review: draft
 solved: true

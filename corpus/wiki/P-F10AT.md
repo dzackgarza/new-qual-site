@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - inequalities
+  - Inequalities
 relations: []
 review: draft
 solved: false

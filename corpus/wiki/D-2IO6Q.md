@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-2IO6Q
 kind: definition
-title: "Jacobson Radical"
+title: Jacobson Radical
 classification:
   areas:
   - algebra
   topics:
-  - jacobson-radical
-  - ideals
-  - commutative-algebra
+  - Jacobson Radical
+  - Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 ---
+
 :::{.definition title="Jacobson Radical"}
 The **Jacobson radical** $\jacobsonrad{R}$ is the intersection of all maximal ideals, i.e.
 \[  

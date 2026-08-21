@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-QE3QK
 kind: problem
-title: "There is no simple group of order 148"
+title: There is no simple group of order 148
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - simple-groups
-  - normal-subgroups
+  - Sylow Theory
+  - Simple Groups
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

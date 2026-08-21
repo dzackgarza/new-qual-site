@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-S5JSR
 kind: problem
-title: "Galois theory exercises: splitting fields, intermediate extensions, finite fields"
+title: 'Galois theory exercises: splitting fields, intermediate extensions, finite
+  fields'
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - field-extensions
+  - Galois Theory
+  - Splitting Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
-  - polynomials
+  - Rouché
+  - Zeros
+  - Polynomials
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find the number of roots of $z^4 - 6z + 3 =0$ in $|z|<1$, $1 < |z| < 2$, and $|z|>2$ respectively.
 :::

@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - polynomials
-  - uniform-convergence
-  - laurent-series
+  - Maximum Modulus Principle
+  - Polynomials
+  - Uniform Convergence
+  - Laurent Series
 relations: []
 review: draft
 solved: true

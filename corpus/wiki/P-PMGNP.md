@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - homological-algebra
-  - abelian-groups
-  - exact-sequences
+  - Homological Algebra
+  - Abelian Groups
+  - Exact Sequences
 relations: []
 review: draft
 solved: false

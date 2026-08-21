@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: E-WNNSK
 kind: exercise
-title: "Working with conjugates"
+title: Working with conjugates
 classification:
   areas:
   - complex-analysis
   topics:
-  - geometry
+  - Geometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Working with conjugates"}
 Find $\Re\qty{z+2\over z-1}$.
 

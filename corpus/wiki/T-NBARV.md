@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-NBARV
 kind: theorem
-title: "Classification of Surfaces"
+title: Classification of Surfaces
 classification:
   areas:
   - topology
   topics:
-  - classification
-  - surfaces
-  - euler-characteristic
+  - Classification
+  - Surfaces
+  - Euler Characteristic
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Classification of Surfaces"}
 The set of surfaces under connect sum forms a monoid with the presentation
 \[  

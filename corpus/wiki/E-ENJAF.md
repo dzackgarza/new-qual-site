@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-ENJAF
 kind: exercise
-title: "Expansion at an essential singularity"
+title: Expansion at an essential singularity
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - essential-singularities
-  - power-series
+  - Laurent Series
+  - Essential Singularities
+  - Power Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Expansion at an essential singularity"}
 Find a Laurent expansion at $z=0$ for
 \[

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-V6LPH
 kind: problem
-title: 'Groups of order $30$: normal subgroups of orders $3$, $5$, and $15$, presentations, and classification'
+title: 'Groups of order $30$: normal subgroups of orders $3$, $5$, and $15$, presentations,
+  and classification'
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - sylow-theory
-  - group-presentations
+  - Classification
+  - Sylow Theory
+  - Group Presentations
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-XWO5N
 kind: problem
-title: The Blaschke factor $z\mapsto\frac{w-z}{1-\bar{w}z}$ as a biholomorphism of $\DD$
+title: The Blaschke factor $z\mapsto\frac{w-z}{1-\bar{w}z}$ as a biholomorphism of
+  $\DD$
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - biholomorphisms
-  - schwarz-lemma
+  - Blaschke Factors
+  - Biholomorphisms
+  - Schwarz Lemma
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 a. Let $z, w \in \CC$ with $\bar z w \neq 1$. 
 Prove that

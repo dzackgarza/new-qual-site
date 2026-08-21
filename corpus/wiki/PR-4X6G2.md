@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-4X6G2
 kind: proposition
-title: "Poincar\u00e9 Duality for manifolds"
+title: Poincaré Duality for manifolds
 classification:
   areas:
   - topology
   topics:
-  - poincare-duality
-  - manifolds
-  - cohomology
+  - Poincaré Duality
+  - Manifolds
+  - Cohomology
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Poincaré Duality for manifolds"}
 For $M^n$ a closed orientable manifold without boundary and $\FF$ a field,
 \[

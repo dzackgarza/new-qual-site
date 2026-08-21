@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-RIY2P
 kind: theorem
-title: "Small Tails in $L^1$"
+title: Small Tails in $L^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - small-tails
-  - l1
+  - Small Tails
+  - L¹
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Small Tails in $L^1$"}
 \[
 f\in L^1(\RR^d) \implies \norm{f}_{L^1(B_r(0)^c)} \convergesto{r\to\infty} 0

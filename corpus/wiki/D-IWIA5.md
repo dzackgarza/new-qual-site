@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: D-IWIA5
 kind: definition
-title: "Isolated singularities"
+title: Isolated singularities
 classification:
   areas:
   - complex-analysis
   topics:
-  - singularities
-  - poles
-  - essential-singularities
-  - removable-singularities
+  - Singularities
+  - Poles
+  - Essential Singularities
+  - Removable Singularities
 relations: []
 review: draft
 ---

@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-VDVNE
 kind: problem
-title: Singularities at infinity of entire functions with finitely or infinitely many zeros
+title: Singularities at infinity of entire functions with finitely or infinitely many
+  zeros
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - singularities
-  - essential-singularities
-  - zeros
+  - Entire Functions
+  - Singularities
+  - Essential Singularities
+  - Zeros
 relations: []
 review: draft
 solved: false

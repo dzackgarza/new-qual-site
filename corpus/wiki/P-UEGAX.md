@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-UEGAX
 kind: problem
-title: Degree of the antipodal map, a CW structure on $\RP^n$, and even-dimensional coverings
+title: Degree of the antipodal map, a CW structure on $\RP^n$, and even-dimensional
+  coverings
 classification:
   areas:
   - topology
   topics:
-  - degree
-  - cell-complexes
-  - covering-spaces
+  - Degree
+  - Cell Complexes
+  - Covering Spaces
 relations: []
 review: draft
 solved: false

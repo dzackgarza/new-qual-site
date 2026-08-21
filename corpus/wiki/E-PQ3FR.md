@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-PQ3FR
 kind: exercise
-title: A ring is local if $R\setminus\mfm$ consists of units, or if $1+\mfm$ consists of units
+title: A ring is local if $R\setminus\mfm$ consists of units, or if $1+\mfm$ consists
+  of units
 classification:
   areas:
   - algebra
   topics:
-  - local-rings
-  - maximal-ideals
-  - rings
+  - Local Rings
+  - Maximal Ideals
+  - Rings
 relations: []
 review: draft
 solved: true

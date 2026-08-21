@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: D-3AYJJ
 kind: definition
-title: "Localization"
+title: Localization
 classification:
   areas:
   - algebra
   topics:
-  - localization
-  - commutative-algebra
-  - rings
+  - Localization
+  - Commutative Algebra
+  - Rings
 relations: []
 review: draft
 ---
+
 :::{.definition title="Localization"}
 For $R\in \CRing$ and $S \subseteq R$ a *multiplicatively closed* subset, so $RS \subseteq S$ and $1_R\in S$, the **localization of $R$ at $S$** can be constructed as
 \[

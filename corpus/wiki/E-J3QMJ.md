@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - identity-theorem
-  - maximum-modulus-principle
+  - Identity Theorem
+  - Maximum Modulus Principle
 relations: []
 review: draft
 solved: true

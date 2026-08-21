@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-SF23E
 kind: proposition
-title: "Slit plane to horizontal strip"
+title: Slit plane to horizontal strip
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Slit plane to horizontal strip"}
 \[
 F: \CC\sm\RR_{\leq 0} &\to \RR \cross i(-\pi, \pi) \\

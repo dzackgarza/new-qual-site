@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-ITZIT
 kind: proposition
-title: "Factorization of zeros out of holomorphic functions"
+title: Factorization of zeros out of holomorphic functions
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - holomorphic-functions
+  - Zeros
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

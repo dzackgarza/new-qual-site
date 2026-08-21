@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - series-of-numbers
-  - trigonometry
-  - meromorphic-functions
+  - Residues
+  - Series of Numbers
+  - Trigonometry
+  - Meromorphic Functions
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="?"}
 Show that
 \[

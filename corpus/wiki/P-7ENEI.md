@@ -7,13 +7,14 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - poles
-  - laurent-series
+  - Power Series
+  - Poles
+  - Laurent Series
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose that $f$ is holomorphic in an open set containing the closed unit disc, except for a simple pole at $z=1$. Let $f(z)=\sum_{n=1}^{\infty} c_{n} z^{n}$ denote the power series in the open unit disc. Show that 
 \[

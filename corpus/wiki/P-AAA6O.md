@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - factorization
-  - number-theory
+  - Polynomials
+  - Factorization
+  - Number Theory
 relations: []
 review: draft
 solved: false

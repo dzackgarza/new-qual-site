@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: D-5JYEI
 kind: definition
-title: "Galois Extension and Galois Group"
+title: Galois Extension and Galois Group
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - separability
-  - splitting-fields
+  - Galois Theory
+  - Field Extensions
+  - Separability
+  - Splitting Fields
 relations: []
 review: draft
 ---
+
 :::{.definition title="Galois Extension and Galois Group"}
 Let $L/k$ be a finite field extension.
 The following are equivalent:

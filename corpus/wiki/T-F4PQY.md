@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-F4PQY
 kind: theorem
-title: "Fundamental theorem of covering spaces, Hatcher 1.39"
+title: Fundamental theorem of covering spaces, Hatcher 1.39
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Fundamental theorem of covering spaces, Hatcher 1.39"}
 For $\tilde X \mapsvia{p} X$ a covering space with
 

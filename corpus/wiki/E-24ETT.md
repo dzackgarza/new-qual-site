@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: E-24ETT
 kind: exercise
-title: $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ when $f$ is injective holomorphic and $f(0)=g(0)$
+title: $g(\{|z|<r\})\subseteq f(\{|z|<r\})$ when $f$ is injective holomorphic and
+  $f(0)=g(0)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - biholomorphisms
-  - conformal-maps
+  - Schwarz Lemma
+  - Biholomorphisms
+  - Conformal Maps
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Suppose $f, g: \DD\to \Omega$ are holomorphic with $f$ injective and $f(0) = g(0)$.
 

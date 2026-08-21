@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - stone-weierstrass
-  - density
-  - l2
+  - Stone-Weierstrass
+  - Density
+  - L²
 relations: []
 review: draft
 solved: true
 ---
+
 Let $f\in L^2([0, 1])$ and suppose
 $$
 \int _{[0,1]} f(x) x^{n} d x=0 \text { for all integers } n \geq 0.

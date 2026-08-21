@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-JJ62Y
 kind: problem
-title: Galois group of $x^5-2$ over $\QQ$ isomorphic to $\begin{pmatrix}a&b\\0&1\end{pmatrix}$ with $a\in\FF_5^\times$ and $b\in\FF_5$, and the Galois intermediate fields
+title: Galois group of $x^5-2$ over $\QQ$ isomorphic to $\begin{pmatrix}a&b\\0&1\end{pmatrix}$
+  with $a\in\FF_5^\times$ and $b\in\FF_5$, and the Galois intermediate fields
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - matrix-groups
+  - Galois Theory
+  - Splitting Fields
+  - Matrix Groups
 relations: []
 review: draft
 solved: false

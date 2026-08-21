@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-OVWHL
 kind: problem
-title: "Hungerford 5.3.13"
+title: Hungerford 5.3.13
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - separability
-  - splitting-fields
+  - Galois Theory
+  - Separability
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

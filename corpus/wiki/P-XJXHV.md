@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-XJXHV
 kind: problem
-title: "Hungerford 5.3.12"
+title: Hungerford 5.3.12
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
+  - Separability
+  - Field Extensions
 relations: []
 review: draft
 solved: false

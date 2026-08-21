@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-4GPEF
 kind: theorem
-title: "Fubini (Integrable)"
+title: Fubini (Integrable)
 classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - integrals
+  - Fubini-Tonelli
+  - Integrals
 relations: []
 review: draft
 ---

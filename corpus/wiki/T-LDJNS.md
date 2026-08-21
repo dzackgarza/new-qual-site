@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-LDJNS
 kind: theorem
-title: "Fatou"
+title: Fatou
 classification:
   areas:
   - real-analysis
   topics:
-  - fatou
-  - convergence-of-integrals
+  - Fatou
+  - Convergence of Integrals
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Fatou"}
 If $f_n$ is a sequence of nonnegative measurable functions, then
 \[

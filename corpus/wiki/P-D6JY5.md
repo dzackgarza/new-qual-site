@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - orientation
-  - covering-spaces
-  - manifolds
+  - Orientation
+  - Covering Spaces
+  - Manifolds
 relations: []
 review: draft
 solved: false

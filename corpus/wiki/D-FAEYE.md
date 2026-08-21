@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-FAEYE
 kind: definition
-title: "Connected Components"
+title: Connected Components
 classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 ---

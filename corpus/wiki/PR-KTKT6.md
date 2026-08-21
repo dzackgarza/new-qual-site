@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-KTKT6
 kind: proposition
-title: "Folland 2.10b"
+title: Folland 2.10b
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - density
-  - uniform-convergence
+  - Measure Theory
+  - Density
+  - Uniform Convergence
 relations: []
 review: draft
 ---

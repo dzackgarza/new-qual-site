@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - homomorphisms
-  - cyclic-groups
+  - Modules
+  - Homomorphisms
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

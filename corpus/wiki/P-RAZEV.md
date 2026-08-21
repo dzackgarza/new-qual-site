@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-rings
-  - semisimplicity
-  - algebras
+  - Group Rings
+  - Semisimplicity
+  - Algebras
 relations: []
 review: draft
 solved: false

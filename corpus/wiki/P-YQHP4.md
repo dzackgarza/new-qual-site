@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - rings
-  - counterexamples
+  - Ideals
+  - Rings
+  - Counterexamples
 relations: []
 review: draft
 solved: false

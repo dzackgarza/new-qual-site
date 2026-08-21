@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - torsion
-  - modules
-  - integral-domains
+  - Torsion
+  - Modules
+  - Integral Domains
 relations: []
 review: draft
 solved: false

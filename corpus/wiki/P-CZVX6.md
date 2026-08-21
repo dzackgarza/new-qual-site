@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-CZVX6
 kind: problem
-title: Irreducible characteristic polynomial iff no proper invariant subspaces, and diagonalizability over $\overline{F}$ in characteristic $0$
+title: Irreducible characteristic polynomial iff no proper invariant subspaces, and
+  diagonalizability over $\overline{F}$ in characteristic $0$
 classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - diagonalization
-  - irreducibility-criteria
+  - Minimal and Characteristic Polynomials
+  - Diagonalization
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: true
 ---
+
 Let $V$ be a finite dimensional vector space over a field $F$ and let $T: V\to V$ be a linear operator with characteristic polynomial $f(x) \in F[x]$.
 
 a.

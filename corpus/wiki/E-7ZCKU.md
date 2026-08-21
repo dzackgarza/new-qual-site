@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: E-7ZCKU
 kind: exercise
-title: "No bijective conformal maps from a disc to an annulus"
+title: No bijective conformal maps from a disc to an annulus
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - conformal-maps
-  - removable-singularities
-  - open-mapping-theorem
+  - Biholomorphisms
+  - Conformal Maps
+  - Removable Singularities
+  - Open Mapping Theorem
 relations: []
 review: draft
 solved: true

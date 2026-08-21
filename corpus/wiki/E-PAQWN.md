@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - cauchy-estimates
-  - polynomials
-  - liouville-s-theorem
+  - Entire Functions
+  - Cauchy Estimates
+  - Polynomials
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 a.
 Let Let $f:{\mathbb C}\rightarrow {\mathbb C}$ be an entire function. Assume the existence of a non-negative integer $m$, and of positive constants $L$ and $R$, such that for all $z$ with $|z|>R$ the inequality $$|f(z)| \leq L |z|^m$$ holds. 

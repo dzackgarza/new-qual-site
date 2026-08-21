@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - point-set
-  - counterexamples
+  - Point-Set Topology
+  - Counterexamples
 relations: []
 review: draft
 solved: false

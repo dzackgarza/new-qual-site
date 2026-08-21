@@ -8,9 +8,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - uniform-continuity
-  - l1
+  - Convolution
+  - Uniform Continuity
+  - L¹
 relations: []
 review: draft
 solved: true

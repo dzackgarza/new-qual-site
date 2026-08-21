@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QCF34
 kind: problem
-title: The annihilator of a module is an ideal, every ideal is an annihilator, and a faithful module of torsion elements
+title: The annihilator of a module is an ideal, every ideal is an annihilator, and
+  a faithful module of torsion elements
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - ideals
-  - torsion
+  - Modules
+  - Ideals
+  - Torsion
 relations: []
 review: draft
 solved: false

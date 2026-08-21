@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: E-PGGNF
 kind: exercise
-title: "Half disc to full disc"
+title: Half disc to full disc
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true

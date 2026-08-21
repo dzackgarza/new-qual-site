@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-RGDJ7
 kind: exercise
-title: "Cauchy formula and $\\sinh$"
+title: Cauchy formula and $\sinh$
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - contour-integration
-  - hyperbolic-functions
+  - Cauchy Integral Formula
+  - Contour Integration
+  - Hyperbolic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Cauchy formula and $\sinh$"}
 Compute
 \[

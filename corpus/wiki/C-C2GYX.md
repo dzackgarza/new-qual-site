@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: C-C2GYX
 kind: corollary
-title: "Inseparable iff polynomial in characteristic powers"
+title: Inseparable iff polynomial in characteristic powers
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - characteristic
-  - polynomials
+  - Separability
+  - Characteristic
+  - Polynomials
 relations: []
 review: draft
 ---

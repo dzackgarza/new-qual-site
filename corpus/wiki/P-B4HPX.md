@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-riemann
-  - holomorphic-functions
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f(z)$ be an analytic function on $|z|<1$.
 Prove that $f(z)$ is necessarily a constant if $f(\bar{z})$ is also analytic.

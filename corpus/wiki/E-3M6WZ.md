@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-3M6WZ
 kind: exercise
-title: Unique fractional linear transformation sending one circle to another with two prescribed values
+title: Unique fractional linear transformation sending one circle to another with
+  two prescribed values
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
-  - blaschke-factors
+  - Fractional Linear Transformations
+  - Conformal Maps
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true

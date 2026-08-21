@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: T-DS4VW
 kind: theorem
-title: "Term by Term Differentiability Theorem"
+title: Term by Term Differentiability Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - differentiation
-  - uniform-convergence
+  - Series of Functions
+  - Differentiation
+  - Uniform Convergence
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Term by Term Differentiability Theorem"}
 If $\ts{f_n}$ is a sequence of functions where
 

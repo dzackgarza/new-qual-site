@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-JWO2G
 kind: exercise
-title: "Modulus of $e^z$"
+title: Modulus of $e^z$
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-logarithm
-  - entire-functions
+  - Complex Logarithm
+  - Entire Functions
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Modulus of $e^z$"}
 Show that $\abs{e^z} = e^{\Re(z)}$.
 

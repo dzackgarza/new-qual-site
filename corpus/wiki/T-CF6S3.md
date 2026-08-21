@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-CF6S3
 kind: theorem
-title: "Eisenstein's Criterion"
+title: Eisenstein's Criterion
 classification:
   areas:
   - algebra
   topics:
-  - irreducibility-criteria
-  - polynomials
+  - Irreducibility Criteria
+  - Polynomials
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Eisenstein's Criterion"}
 If \[
 f(x) = \sum_{i=0}^n \alpha_i x^i = a_nx^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0 \in \QQ[x]

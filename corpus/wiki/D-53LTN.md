@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-53LTN
 kind: definition
-title: "Characteristic Subgroups"
+title: Characteristic Subgroups
 classification:
   areas:
   - algebra
   topics:
-  - subgroups
-  - automorphisms
-  - normal-subgroups
+  - Subgroups
+  - Automorphisms
+  - Normal Subgroups
 relations: []
 review: draft
 ---

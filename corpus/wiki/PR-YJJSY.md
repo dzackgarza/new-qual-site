@@ -7,11 +7,12 @@ classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - l1
+  - Series of Functions
+  - L¹
 relations: []
 review: draft
 ---
+
 :::{.proposition title="?"}
 \[
 \ts{f_n} \subseteq L^1 \text{ and } \sum_n \norm{f_n}_{L^1} < \infty \implies \sum_n f_n \text{ converges }\ae \text{ and in } L^1

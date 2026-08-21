@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-VJBIB
 kind: problem
-title: Spectral theorem diagonalization with eigenvalues $6$ and $1$, and the minimum of $\langle Ax,x\rangle$ on the unit circle
+title: Spectral theorem diagonalization with eigenvalues $6$ and $1$, and the minimum
+  of $\langle Ax,x\rangle$ on the unit circle
 classification:
   areas:
   - prelim
   topics:
-  - diagonalization
-  - eigenvalues-and-eigenvectors
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 solved: true

@@ -7,7 +7,7 @@ classification:
   areas:
   - prelim
   topics:
-  - uniform-convergence
+  - Uniform Convergence
 relations: []
 review: draft
 solved: false

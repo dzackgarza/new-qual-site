@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-AW6IK
 kind: problem
-title: A function holomorphic on $0<|z|<1$ with $\int_{|z|=r}f=0$ for all $r<1$, but not holomorphic at $0$
+title: A function holomorphic on $0<|z|<1$ with $\int_{|z|=r}f=0$ for all $r<1$, but
+  not holomorphic at $0$
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - singularities
-  - counterexamples
-  - residues
+  - Laurent Series
+  - Singularities
+  - Counterexamples
+  - Residues
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-5FGA7
 kind: proposition
-title: "Simple groups with a nontrivial subgroup embed into symmetric groups"
+title: Simple groups with a nontrivial subgroup embed into symmetric groups
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - simple-groups
-  - permutations
+  - Group Actions
+  - Simple Groups
+  - Permutations
 relations: []
 review: draft
 ---

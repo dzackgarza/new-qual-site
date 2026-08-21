@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-FYGQ6
 kind: problem
-title: Radius of $\sum a_n b_n x^n$ at least the product of the radii of $\sum a_n x^n$ and $\sum b_n x^n$, strictly in an example
+title: Radius of $\sum a_n b_n x^n$ at least the product of the radii of $\sum a_n
+  x^n$ and $\sum b_n x^n$, strictly in an example
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
+  - Series of Functions
 relations: []
 review: draft
 solved: true

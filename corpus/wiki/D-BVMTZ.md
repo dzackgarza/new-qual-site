@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-BVMTZ
 kind: definition
-title: "Reducible and Irreducible Polynomials"
+title: Reducible and Irreducible Polynomials
 classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - irreducibility-criteria
-  - factorization
+  - Polynomials
+  - Irreducibility Criteria
+  - Factorization
 relations: []
 review: draft
 ---

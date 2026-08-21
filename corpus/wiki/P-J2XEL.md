@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-J2XEL
 kind: problem
-title: Diagonalizable matrices are dense over $\CC$ and Zariski-dense over an algebraically closed field
+title: Diagonalizable matrices are dense over $\CC$ and Zariski-dense over an algebraically
+  closed field
 classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - matrices
-  - geometry
+  - Diagonalization
+  - Matrices
+  - Geometry
 relations: []
 review: draft
 solved: false

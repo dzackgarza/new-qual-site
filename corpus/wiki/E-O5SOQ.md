@@ -7,14 +7,15 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - liouville-s-theorem
-  - removable-singularities
-  - entire-functions
-  - trigonometry
+  - Liouville's Theorem
+  - Removable Singularities
+  - Entire Functions
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Suppose $f$ is entire and for every $z$,
 \[

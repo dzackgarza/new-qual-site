@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - cyclic-groups
+  - Finite Fields
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

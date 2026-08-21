@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-QMKXQ
 kind: theorem
-title: "Subgroups of Cyclic Groups"
+title: Subgroups of Cyclic Groups
 classification:
   areas:
   - algebra
   topics:
-  - cyclic-groups
-  - subgroups
-  - classification
+  - Cyclic Groups
+  - Subgroups
+  - Classification
 relations: []
 review: draft
 ---

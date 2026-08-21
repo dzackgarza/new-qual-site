@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - class-equation
-  - centralizers-and-normalizers
+  - p-Groups
+  - Class Equation
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="?"}
 Prove that if $G$ is a $p\dash$group, every subgroup $N\normal G$ intersects the center $Z(G)$.
 

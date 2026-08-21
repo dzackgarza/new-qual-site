@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-L35O7
 kind: proposition
-title: "$L^p$ spaces are Banach"
+title: $L^p$ spaces are Banach
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - completeness
-  - norms
+  - Lp Spaces
+  - Completeness
+  - Norms
 relations: []
 review: draft
 ---

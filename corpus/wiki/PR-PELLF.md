@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-PELLF
 kind: proposition
-title: "Upper half-disc to horizontal upper-left-half-strip"
+title: Upper half-disc to horizontal upper-left-half-strip
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Upper half-disc to horizontal upper-left-half-strip"}
 \[
 F: \DD \intersect \HH &\to \RR_{<0} \times i (0, i\pi) \\

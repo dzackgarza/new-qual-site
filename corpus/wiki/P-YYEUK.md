@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-YYEUK
 kind: problem
-title: An entire function with $|f(z)|\leq M|z|^2$ outside a disk is a polynomial of degree at most $2$
+title: An entire function with $|f(z)|\leq M|z|^2$ outside a disk is a polynomial
+  of degree at most $2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - cauchy-estimates
-  - polynomials
-  - liouville-s-theorem
+  - Entire Functions
+  - Cauchy Estimates
+  - Polynomials
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $f(z)$ be entire and assume that $\abs{f(z)} \leq M |z|^2$ outside of some disk for some constant $M$. 
 Show that $f(z)$ is a polynomial in $z$ of degree $\leq 2$.

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FX46W
 kind: problem
-title: 'Representations of finite groups: irreducibles, complete reducibility, and invariant inner products'
+title: 'Representations of finite groups: irreducibles, complete reducibility, and
+  invariant inner products'
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - semisimplicity
-  - inner-product-spaces
+  - Representation Theory
+  - Semisimplicity
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

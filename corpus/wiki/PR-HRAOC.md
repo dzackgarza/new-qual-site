@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-HRAOC
 kind: proposition
-title: "Existence of Smooth Compactly Supported Functions"
+title: Existence of Smooth Compactly Supported Functions
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - differentiation
+  - Density
+  - Differentiation
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Existence of Smooth Compactly Supported Functions"}
 There exist smooth compactly supported functions, e.g. take
 \[

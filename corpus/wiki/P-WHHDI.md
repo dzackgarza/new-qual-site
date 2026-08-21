@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-WHHDI
 kind: problem
-title: "Hungerford 4.4.9"
+title: Hungerford 4.4.9
 classification:
   areas:
   - algebra
   topics:
-  - dual-spaces
-  - modules
-  - homomorphisms
+  - Dual Spaces
+  - Modules
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

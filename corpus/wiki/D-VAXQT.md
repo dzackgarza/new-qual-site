@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: D-VAXQT
 kind: definition
-title: "Singularity"
+title: Singularity
 classification:
   areas:
   - complex-analysis
   topics:
-  - singularities
-  - poles
-  - essential-singularities
-  - removable-singularities
+  - Singularities
+  - Poles
+  - Essential Singularities
+  - Removable Singularities
 relations: []
 review: draft
 ---

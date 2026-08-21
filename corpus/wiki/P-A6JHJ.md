@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - conjugacy
-  - permutations
+  - Simple Groups
+  - Conjugacy
+  - Permutations
 relations: []
 review: draft
 solved: false

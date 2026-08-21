@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-HLDEY
 kind: definition
-title: "Conjugacy class"
+title: Conjugacy class
 classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - group-actions
+  - Conjugacy
+  - Group Actions
 relations: []
 review: draft
 ---
+
 :::{.definition title="Conjugacy class"}
 The **conjugacy class** of $h$ is defined as 
 \[

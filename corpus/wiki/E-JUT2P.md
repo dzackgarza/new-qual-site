@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-JUT2P
 kind: exercise
-title: "Removable singularities for derivatives"
+title: Removable singularities for derivatives
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - cauchy-estimates
-  - singularities
+  - Removable Singularities
+  - Cauchy Estimates
+  - Singularities
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Removable singularities for derivatives"}
 Suppose $f$ is meromorphic. Show that if $z_0$ is a removable singularity of $f$, then it is also a removable singularity of $f'$.
 Conversely, if $z_0$ is removable for $f'$, then it is also removable for $f$.

@@ -7,13 +7,14 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - density
-  - integrals
+  - L∞
+  - Density
+  - Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Let $g\in L^\infty([0, 1])$
 Prove that

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-PUDXH
 kind: problem
-title: $\int_0^\infty\bigl(\int_0^\infty f(y)\,dy\bigr)\frac{g(x)}{x}\,dx\le AB$ for nonnegative measurable $f,g$ on $[0,\infty)$
+title: $\int_0^\infty\bigl(\int_0^\infty f(y)\,dy\bigr)\frac{g(x)}{x}\,dx\le AB$ for
+  nonnegative measurable $f,g$ on $[0,\infty)$
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - fubini-tonelli
-  - norms
+  - Integrals
+  - Fubini-Tonelli
+  - Norms
 relations: []
 review: draft
 solved: true

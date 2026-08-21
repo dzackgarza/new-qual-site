@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - principal-parts
-  - poles
-  - residues
-  - polynomials
+  - Principal Parts
+  - Poles
+  - Residues
+  - Polynomials
 relations: []
 review: draft
 solved: false

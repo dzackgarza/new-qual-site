@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - torsion
-  - modules
+  - Torsion
+  - Modules
 relations: []
 review: draft
 solved: false

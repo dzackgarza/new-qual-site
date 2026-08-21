@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - semisimplicity
-  - characteristic
+  - Representation Theory
+  - Semisimplicity
+  - Characteristic
 relations: []
 review: draft
 solved: false

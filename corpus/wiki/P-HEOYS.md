@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - burnside-s-lemma
-  - group-actions
-  - permutations
+  - Burnside's Lemma
+  - Group Actions
+  - Permutations
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-4RXD2
 kind: problem
-title: '$f_n(x)=ae^{-nax}-be^{-nbx}$ with $0<a<b$: $\sum|f_n|\notin L^1([0,\infty))$ while $\sum f_n\in L^1$ with integral $\ln(b/a)$'
+title: '$f_n(x)=ae^{-nax}-be^{-nbx}$ with $0<a<b$: $\sum|f_n|\notin L^1([0,\infty))$
+  while $\sum f_n\in L^1$ with integral $\ln(b/a)$'
 classification:
   areas:
   - real-analysis
   topics:
-  - series-of-functions
-  - l1
-  - convergence-of-integrals
+  - Series of Functions
+  - L¹
+  - Convergence of Integrals
 relations: []
 review: draft
 solved: true
 ---
+
 Let
 \[
 f_{n}(x) = a e^{-n a x} - b e^{-n b x} \quad \text{ where } 0 < a < b.

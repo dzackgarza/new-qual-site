@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-PDYJC
 kind: proposition
-title: "Sector to sector"
+title: Sector to sector
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - complex-logarithm
+  - Conformal Maps
+  - Complex Logarithm
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Sector to sector"}
 For $0 < \alpha < 2$:
 \[

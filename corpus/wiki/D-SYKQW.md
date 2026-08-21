@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-SYKQW
 kind: definition
-title: "Closed manifold"
+title: Closed manifold
 classification:
   areas:
   - topology
   topics:
-  - manifolds
-  - compactness
+  - Manifolds
+  - Compactness
 relations: []
 review: draft
 ---

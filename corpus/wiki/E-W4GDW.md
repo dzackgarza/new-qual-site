@@ -7,12 +7,13 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - trigonometry
+  - Conformal Maps
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find the conformal map that takes the upper half-plane conformally onto the half-strip 
 \[

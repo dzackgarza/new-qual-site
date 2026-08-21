@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-SDEOY
 kind: theorem
-title: "Whitehead's Theorem"
+title: Whitehead's Theorem
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - cell-complexes
+  - Homotopy
+  - Cell Complexes
 relations: []
 review: draft
 ---

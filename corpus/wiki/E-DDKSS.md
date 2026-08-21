@@ -2,19 +2,20 @@
 schema: qual/card@1
 id: E-DDKSS
 kind: exercise
-title: "Polynomial growth"
+title: Polynomial growth
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - cauchy-estimates
-  - polynomials
-  - liouville-s-theorem
+  - Entire Functions
+  - Cauchy Estimates
+  - Polynomials
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Polynomial growth"}
 Suppose that $f$ is entire and has polynomial growth in the following sense:
 \[

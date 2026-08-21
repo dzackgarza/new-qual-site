@@ -7,13 +7,14 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - rings
-  - polynomials
+  - Nilpotence
+  - Rings
+  - Polynomials
 relations: []
 review: draft
 solved: false
 ---
+
 :::{.exercise title="?"}
 \envlist
 Notation: let $N$ or $N(R)$ be the set of nilpotents in $R$.

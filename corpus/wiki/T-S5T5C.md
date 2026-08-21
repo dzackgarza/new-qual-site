@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: T-S5T5C
 kind: theorem
-title: "Sylow 3"
+title: Sylow 3
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - centralizers-and-normalizers
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 ---

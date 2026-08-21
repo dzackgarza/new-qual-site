@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-NRRIT
 kind: definition
-title: "Quadratic Form"
+title: Quadratic Form
 classification:
   areas:
   - algebra
   topics:
-  - quadratic-forms
-  - bilinear-forms
-  - vector-spaces
+  - Quadratic Forms
+  - Bilinear Forms
+  - Vector Spaces
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-CPUQK
 kind: problem
-title: "Hungerford 4.1.12"
+title: Hungerford 4.1.12
 classification:
   areas:
   - algebra
   topics:
-  - exact-sequences
-  - homological-algebra
-  - modules
+  - Exact Sequences
+  - Homological Algebra
+  - Modules
 relations: []
 review: draft
 solved: false

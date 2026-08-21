@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-X73EB
 kind: definition
-title: "Path Connected"
+title: Path Connected
 classification:
   areas:
   - topology
   topics:
-  - connectedness
+  - Connectedness
 relations: []
 review: draft
 ---

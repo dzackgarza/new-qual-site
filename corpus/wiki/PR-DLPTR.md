@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - bases
-  - modules
+  - Free Modules
+  - Bases
+  - Modules
 relations: []
 review: draft
 ---

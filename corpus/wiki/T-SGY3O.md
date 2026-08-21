@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-SGY3O
 kind: theorem
-title: "Splitting + Perfect implies Galois"
+title: Splitting + Perfect implies Galois
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - splitting-fields
-  - galois-theory
+  - Separability
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 ---

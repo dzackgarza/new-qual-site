@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-YAYQB
 kind: exercise
-title: "Disc minus a slit"
+title: Disc minus a slit
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
-  - complex-logarithm
+  - Conformal Maps
+  - Fractional Linear Transformations
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Disc minus a slit"}
 Find a conformal map
 \[

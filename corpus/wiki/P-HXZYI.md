@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-HXZYI
 kind: problem
-title: Fundamental group, Euler characteristic, and homology of $S^2$ with $k$ points identified
+title: Fundamental group, Euler characteristic, and homology of $S^2$ with $k$ points
+  identified
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homology
-  - euler-characteristic
-  - quotient-spaces
+  - Fundamental Group
+  - Homology
+  - Euler Characteristic
+  - Quotient Spaces
 relations: []
 review: draft
 solved: false

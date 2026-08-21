@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: PR-YY3JG
 kind: proposition
-title: "Quotients by bigger subgroups yield smaller quotients"
+title: Quotients by bigger subgroups yield smaller quotients
 classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - subgroups
+  - Cosets and Lagrange
+  - Subgroups
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Quotients by bigger subgroups yield smaller quotients"}
 If $H\leq K \leq G$, then 
 \[

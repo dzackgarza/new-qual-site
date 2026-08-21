@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-H4ZVI
 kind: proposition
-title: "Convergence in $L^1$ implies convergence of norms"
+title: Convergence in $L^1$ implies convergence of norms
 classification:
   areas:
   - real-analysis
   topics:
-  - l1
-  - convergence-of-integrals
-  - norms
+  - L¹
+  - Convergence of Integrals
+  - Norms
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Convergence in $L^1$ implies convergence of norms"}
 If $f\in L^1$, then
 \[

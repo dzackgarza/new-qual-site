@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-4PIPW
 kind: problem
-title: "How many isomorphism classes of abelian groups of order 56 are there?"
+title: How many isomorphism classes of abelian groups of order 56 are there?
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - structure-theorem
-  - sylow-theory
+  - Classification
+  - Structure Theorem
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

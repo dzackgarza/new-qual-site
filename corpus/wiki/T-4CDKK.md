@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: T-4CDKK
 kind: theorem
-title: "Bessel's Inequality"
+title: Bessel's Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - l2
+  - Hilbert Spaces
+  - L²
 relations: []
 review: draft
 ---
+
 :::{.theorem title="Bessel's Inequality"}
 For any orthonormal set $\theset{u_{n}} \subseteq \mch$ a Hilbert space (not necessarily a basis),
 \[

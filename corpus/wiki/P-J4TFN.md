@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-J4TFN
 kind: problem
-title: Eigenvalues of a linear map preserving a nondegenerate alternating form come in pairs $k,1/k$
+title: Eigenvalues of a linear map preserving a nondegenerate alternating form come
+  in pairs $k,1/k$
 classification:
   areas:
   - algebra
   topics:
-  - bilinear-forms
-  - eigenvalues-and-eigenvectors
-  - matrix-groups
+  - Bilinear Forms
+  - Eigenvalues and Eigenvectors
+  - Matrix Groups
 relations: []
 review: draft
 solved: false

@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-FNUGX
 kind: problem
-title: Uniform limits of bounded and continuous functions, termwise differentiation, and $\sum x^n/n!$ on compacta
+title: Uniform limits of bounded and continuous functions, termwise differentiation,
+  and $\sum x^n/n!$ on compacta
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - convergence-of-functions
-  - differentiation
-  - series-of-functions
+  - Uniform Convergence
+  - Convergence of Functions
+  - Differentiation
+  - Series of Functions
 relations: []
 review: draft
 solved: true

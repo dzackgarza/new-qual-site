@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-BH7BM
 kind: problem
-title: Orthogonal projection onto a finite orthonormal set is the best approximation; finite-dimensional subspaces of a Hilbert space are closed
+title: Orthogonal projection onto a finite orthonormal set is the best approximation;
+  finite-dimensional subspaces of a Hilbert space are closed
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - closure
+  - Hilbert Spaces
+  - Closure
 relations: []
 review: draft
 solved: true

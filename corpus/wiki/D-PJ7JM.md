@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-PJ7JM
 kind: definition
-title: "Winding Number"
+title: Winding Number
 classification:
   areas:
   - complex-analysis
   topics:
-  - winding-number
-  - contour-integration
+  - Winding Number
+  - Contour Integration
 relations: []
 review: draft
 ---
+
 :::{.definition title="Winding Number"}
 For $\gamma \subseteq \Omega$ a closed curve not passing through a point $z_0$, the **winding number of $\gamma$ about $z_0$** (or the **index**) is defined as
 \[

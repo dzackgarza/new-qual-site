@@ -2,18 +2,20 @@
 schema: qual/card@1
 id: P-TR6YB
 kind: problem
-title: $p$-groups have nontrivial center, groups of order $p^2$ and $5^2\cdot 7^2$ are abelian, and the isomorphism classes of groups of order $5^2\cdot 7^2$
+title: $p$-groups have nontrivial center, groups of order $p^2$ and $5^2\cdot 7^2$
+  are abelian, and the isomorphism classes of groups of order $5^2\cdot 7^2$
 classification:
   areas:
   - algebra
   topics:
-  - class-equation
-  - p-groups
-  - abelian-groups
+  - Class Equation
+  - p-Groups
+  - Abelian Groups
 relations: []
 review: draft
 solved: true
 ---
+
 a.
 Use the Class Equation (equivalently, the conjugation action of a group on itself) to prove that any $p\dash$group (a group whose order is a positive power of a prime integer $p$) has a nontrivial center.
 

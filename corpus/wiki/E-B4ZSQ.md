@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: E-B4ZSQ
 kind: exercise
-title: "Finding harmonic conjugates"
+title: Finding harmonic conjugates
 classification:
   areas:
   - complex-analysis
   topics:
-  - harmonic-functions
-  - cauchy-riemann
+  - Harmonic Functions
+  - Cauchy-Riemann
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Finding harmonic conjugates"}
 Find a harmonic conjugate for
 \[

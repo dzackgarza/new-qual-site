@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QXYTV
 kind: problem
-title: $\lim_{p\to\infty}\bigl(\int_a^b f^p\bigr)^{1/p}=\sup f$ for continuous $f\ge 0$ on $[a,b]$
+title: $\lim_{p\to\infty}\bigl(\int_a^b f^p\bigr)^{1/p}=\sup f$ for continuous $f\ge
+  0$ on $[a,b]$
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - l-infty
-  - limits
+  - Lp Spaces
+  - L∞
+  - Limits
 relations: []
 review: draft
 solved: true

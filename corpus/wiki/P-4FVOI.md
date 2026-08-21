@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - counterexamples
+  - Fields
+  - Counterexamples
 relations: []
 review: draft
 solved: true

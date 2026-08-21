@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-GFHMD
 kind: problem
-title: "Spring 2021, 5"
+title: Spring 2021, 5
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - surfaces
+  - Covering Spaces
+  - Surfaces
 relations: []
 review: draft
 solved: false

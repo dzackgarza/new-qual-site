@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-reflection
-  - holomorphic-functions
+  - Schwarz Reflection
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

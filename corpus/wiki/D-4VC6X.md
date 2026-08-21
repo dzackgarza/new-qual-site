@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-4VC6X
 kind: definition
-title: "Primitive Polynomials"
+title: Primitive Polynomials
 classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - factorization
-  - irreducibility-criteria
+  - Polynomials
+  - Factorization
+  - Irreducibility Criteria
 relations: []
 review: draft
 ---

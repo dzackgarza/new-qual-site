@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-B3BVQ
 kind: definition
-title: "Locally Finite"
+title: Locally Finite
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - paracompactness
+  - Point-Set Topology
+  - Paracompactness
 relations: []
 review: draft
 ---

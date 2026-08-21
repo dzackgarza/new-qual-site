@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HOGMY
 kind: problem
-title: Iterates of a holomorphic self-map of the disc fixing $0$ converge to $0$ or the identity
+title: Iterates of a holomorphic self-map of the disc fixing $0$ converge to $0$ or
+  the identity
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - fixed-points
-  - sequences-of-functions
+  - Schwarz Lemma
+  - Fixed Points
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true

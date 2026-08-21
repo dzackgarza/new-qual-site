@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - calculus
-  - continuity
-  - counterexamples
+  - Calculus
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 solved: false

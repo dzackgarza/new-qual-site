@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-reflection
-  - cauchy-riemann
-  - holomorphic-functions
+  - Schwarz Reflection
+  - Cauchy-Riemann
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: true

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-KVAI3
 kind: definition
-title: "Homotopy Extension Property"
+title: Homotopy Extension Property
 classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - cell-complexes
-  - retracts
+  - Homotopy
+  - Cell Complexes
+  - Retracts
 relations: []
 review: draft
 ---

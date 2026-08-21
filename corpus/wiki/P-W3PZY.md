@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-W3PZY
 kind: problem
-title: In characteristic $p$, an irreducible polynomial is $g(x^{p^e})$ with $g$ separable, and every root has multiplicity $p^e$
+title: In characteristic $p$, an irreducible polynomial is $g(x^{p^e})$ with $g$ separable,
+  and every root has multiplicity $p^e$
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - characteristic
-  - irreducibility-criteria
+  - Separability
+  - Characteristic
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

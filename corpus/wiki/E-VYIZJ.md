@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-VYIZJ
 kind: exercise
-title: "Fixed points: multiple"
+title: 'Fixed points: multiple'
 classification:
   areas:
   - complex-analysis
   topics:
-  - fixed-points
-  - schwarz-lemma
-  - blaschke-factors
+  - Fixed Points
+  - Schwarz Lemma
+  - Blaschke Factors
 relations: []
 review: draft
 solved: true

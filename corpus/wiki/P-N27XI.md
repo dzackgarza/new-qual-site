@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - matrices
-  - isomorphism-theorems
+  - Centralizers and Normalizers
+  - Matrices
+  - Isomorphism Theorems
 relations: []
 review: draft
 solved: false

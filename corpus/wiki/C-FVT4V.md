@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: C-FVT4V
 kind: corollary
-title: "Injective implies holomorphic inverse"
+title: Injective implies holomorphic inverse
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
-  - conformal-maps
+  - Biholomorphisms
+  - Conformal Maps
 relations: []
 review: draft
 ---

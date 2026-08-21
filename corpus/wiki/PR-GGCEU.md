@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: PR-GGCEU
 kind: proposition
-title: "Second Isomorphism Theorem"
+title: Second Isomorphism Theorem
 classification:
   areas:
   - algebra
   topics:
-  - isomorphism-theorems
-  - rings
-  - ideals
+  - Isomorphism Theorems
+  - Rings
+  - Ideals
 relations: []
 review: draft
 ---
+
 :::{.proposition title="Second Isomorphism Theorem"}
 Let $R\in \Ring, S\leq R, I\in \Id(R)$, then there is an isomorphism:
 \[

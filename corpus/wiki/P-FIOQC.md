@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-FIOQC
 kind: problem
-title: Simple zeros of $\sin(\pi z)$ at the integers, and $\operatorname{Res}_{z=n}\frac{1}{\sin(\pi z)}$
+title: Simple zeros of $\sin(\pi z)$ at the integers, and $\operatorname{Res}_{z=n}\frac{1}{\sin(\pi
+  z)}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - zeros
-  - residues
-  - trigonometry
-  - poles
+  - Zeros
+  - Residues
+  - Trigonometry
+  - Poles
 relations: []
 review: draft
 solved: false

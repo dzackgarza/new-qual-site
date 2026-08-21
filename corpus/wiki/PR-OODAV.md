@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-OODAV
 kind: proposition
-title: "Equivalent conditions for splitting SESs"
+title: Equivalent conditions for splitting SESs
 classification:
   areas:
   - algebra
   topics:
-  - exact-sequences
-  - projective-modules
-  - homological-algebra
+  - Exact Sequences
+  - Projective Modules
+  - Homological Algebra
 relations: []
 review: draft
 ---

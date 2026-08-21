@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: D-EMJTU
 kind: definition
-title: "Neighborhood Basis"
+title: Neighborhood Basis
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - bases
-  - countability
+  - Point-Set Topology
+  - Bases
+  - Countability
 relations: []
 review: draft
 ---

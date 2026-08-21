@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-V6Z2K
 kind: problem
-title: $\Tr(A^{-1})=\overline{\Tr(A)}$ when $A$ generates a finite multiplicative group
+title: $\Tr(A^{-1})=\overline{\Tr(A)}$ when $A$ generates a finite multiplicative
+  group
 classification:
   areas:
   - algebra
   topics:
-  - trace
-  - matrix-groups
-  - eigenvalues-and-eigenvectors
+  - Trace
+  - Matrix Groups
+  - Eigenvalues and Eigenvectors
 relations: []
 review: draft
 solved: false

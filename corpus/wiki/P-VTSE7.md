@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-VTSE7
 kind: problem
-title: "Hungerford 2.5.8"
+title: Hungerford 2.5.8
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - direct-products
-  - normal-subgroups
+  - Sylow Theory
+  - Direct Products
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

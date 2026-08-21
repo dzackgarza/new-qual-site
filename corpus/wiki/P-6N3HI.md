@@ -2,17 +2,18 @@
 schema: qual/card@1
 id: P-6N3HI
 kind: problem
-title: "Find a conformal map from"
+title: Find a conformal map from
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="?"}
 Find a conformal map from 
 \[

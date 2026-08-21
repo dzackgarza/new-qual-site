@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-IK7LQ
 kind: problem
-title: "Hungerford 1.9.1"
+title: Hungerford 1.9.1
 classification:
   areas:
   - algebra
   topics:
-  - free-groups
-  - torsion
+  - Free Groups
+  - Torsion
 relations: []
 review: draft
 solved: false

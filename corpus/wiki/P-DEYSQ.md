@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-DEYSQ
 kind: problem
-title: "Prove : $f \\in \\mathcal{R}(\\alpha)$ on $[a,b]$ if and"
+title: 'Prove : $f \in \mathcal{R}(\alpha)$ on $[a,b]$ if and'
 classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - integrals
+  - Riemann Integrability
+  - Integrals
 relations: []
 review: draft
 solved: true

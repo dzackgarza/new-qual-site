@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-Q2IFX
 kind: proposition
-title: "Containment of Finite Fields"
+title: Containment of Finite Fields
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - field-extensions
+  - Finite Fields
+  - Field Extensions
 relations: []
 review: draft
 ---

@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-ZWJ7K
 kind: problem
-title: Lower semicontinuity equivalent to $\{f>a\}$ open, and the supremum of an arbitrary family of lower semicontinuous functions is Borel measurable
+title: Lower semicontinuity equivalent to $\{f>a\}$ open, and the supremum of an arbitrary
+  family of lower semicontinuous functions is Borel measurable
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - measure-theory
+  - Continuity
+  - Measure Theory
 relations: []
 review: draft
 solved: true

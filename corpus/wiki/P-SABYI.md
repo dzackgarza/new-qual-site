@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: P-SABYI
 kind: problem
-title: "How does one prove the structure theorem for modules over PID?"
+title: How does one prove the structure theorem for modules over PID?
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - principal-ideal-domains
-  - abelian-groups
+  - Structure Theorem
+  - Principal Ideal Domains
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-VT4TV
 kind: problem
-title: "Invert $\\sin(z)$, one coefficient at a time"
+title: Invert $\sin(z)$, one coefficient at a time
 classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - power-series
-  - trigonometry
+  - Laurent Series
+  - Power Series
+  - Trigonometry
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="Invert $\sin(z)$, one coefficient at a time"}
 Find $1/\sin(z)$ using this method.
 :::

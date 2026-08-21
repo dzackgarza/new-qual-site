@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-5KMYI
 kind: definition
-title: "Chain Homotopy"
+title: Chain Homotopy
 classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - homotopy
+  - Homological Algebra
+  - Homotopy
 relations: []
 review: draft
 ---

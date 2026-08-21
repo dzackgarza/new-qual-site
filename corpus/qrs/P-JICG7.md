@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-JICG7
 kind: problem
-title: An entire function with $f(z)/z^n\to 0$ at infinity is a polynomial of degree at most $n-1$
+title: An entire function with $f(z)/z^n\to 0$ at infinity is a polynomial of degree
+  at most $n-1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
-  - polynomials
-  - liouville-s-theorem
-  - cauchy-estimates
+  - Entire Functions
+  - Polynomials
+  - Liouville's Theorem
+  - Cauchy Estimates
 relations: []
 review: draft
 solved: true

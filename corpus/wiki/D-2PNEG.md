@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-2PNEG
 kind: definition
-title: "Free and Properly Discontinuous"
+title: Free and Properly Discontinuous
 classification:
   areas:
   - topology
   topics:
-  - group-actions
-  - covering-spaces
+  - Group Actions
+  - Covering Spaces
 relations: []
 review: draft
 ---

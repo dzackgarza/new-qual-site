@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: D-BUAYX
 kind: definition
-title: "Injection: A map $\\iota:A\\to B$ with a left inverse $f:B\\to A$ satisfying $f\\circ \\iota = \\id_A$."
+title: 'Injection: A map $\iota:A\to B$ with a left inverse $f:B\to A$ satisfying
+  $f\circ \iota = \id_A$.'
 classification:
   areas:
   - topology
   topics:
-  - category-theory
+  - Category Theory
 relations: []
 review: draft
 ---

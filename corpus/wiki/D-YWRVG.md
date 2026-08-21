@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: D-YWRVG
 kind: definition
-title: "Essential supremum and infimum, essentially bounded"
+title: Essential supremum and infimum, essentially bounded
 classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - norms
+  - L∞
+  - Norms
 relations: []
 review: draft
 ---

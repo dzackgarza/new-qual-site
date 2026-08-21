@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: PR-JW3QE
 kind: proposition
-title: "Commuting Sums with Integrals (non-negative)"
+title: Commuting Sums with Integrals (non-negative)
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - series-of-functions
-  - integrals
+  - Convergence of Integrals
+  - Series of Functions
+  - Integrals
 relations: []
 review: draft
 ---

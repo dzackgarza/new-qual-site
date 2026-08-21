@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: C-BKYF7
 kind: corollary
-title: "Uniformization"
+title: Uniformization
 classification:
   areas:
   - complex-analysis
   topics:
-  - uniformization
-  - riemann-mapping
-  - conformal-maps
+  - Uniformization
+  - Riemann Mapping
+  - Conformal Maps
 relations: []
 review: draft
 ---

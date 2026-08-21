@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: D-AWSKI
 kind: definition
-title: "Prime Element"
+title: Prime Element
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - rings
+  - Factorization
+  - Rings
 relations: []
 review: draft
 ---
+
 :::{.definition title="Prime Element"}
 A nonzero nonunit $p\in R$ is **prime** iff 
 \[  

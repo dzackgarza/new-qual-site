@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: T-QBTWN
 kind: theorem
-title: "The operator norm is a norm"
+title: The operator norm is a norm
 classification:
   areas:
   - real-analysis
   topics:
-  - dual-spaces
-  - norms
-  - hilbert-spaces
+  - Dual Spaces
+  - Norms
+  - Hilbert Spaces
 relations: []
 review: draft
 ---

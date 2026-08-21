@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - approximations-to-the-identity
-  - convolution
-  - l1
+  - Approximations to the Identity
+  - Convolution
+  - L¹
 relations: []
 review: draft
 solved: true

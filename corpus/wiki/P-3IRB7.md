@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - polynomials
-  - ideals
+  - Principal Ideal Domains
+  - Polynomials
+  - Ideals
 relations: []
 review: draft
 solved: false

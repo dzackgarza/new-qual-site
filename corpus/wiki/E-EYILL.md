@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: E-EYILL
 kind: exercise
-title: "No fixed points implies homotopic to antipodal"
+title: No fixed points implies homotopic to antipodal
 classification:
   areas:
   - topology
   topics:
-  - degree
-  - fixed-points
-  - homotopy
+  - Degree
+  - Fixed Points
+  - Homotopy
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.exercise title="No fixed points implies homotopic to antipodal"}
 Show that if $f: S^n\to S^n$ has no fixed points $\iff \deg f = (-1)^{n+1}$ and $f$ is homotopic to the antipodal map.
 :::

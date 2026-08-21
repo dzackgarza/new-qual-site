@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: D-ZWLD5
 kind: definition
-title: "Singular Chain"
+title: Singular Chain
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 ---

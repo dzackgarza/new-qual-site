@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: PR-GT5RS
 kind: proposition
-title: "Cauchy criterion for sums"
+title: Cauchy criterion for sums
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - completeness
+  - Uniform Convergence
+  - Completeness
 relations: []
 review: draft
 ---

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: T-HGDAG
 kind: theorem
-title: 'Baire category theorem: countable intersections of dense open sets in a complete metric space are dense'
+title: 'Baire category theorem: countable intersections of dense open sets in a complete
+  metric space are dense'
 classification:
   areas:
   - topology
   topics:
-  - completeness
-  - metric-spaces
-  - density
+  - Completeness
+  - Metric Spaces
+  - Density
 relations: []
 review: draft
 ---

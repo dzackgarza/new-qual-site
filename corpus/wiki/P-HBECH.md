@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-HBECH
 kind: problem
-title: Compact connected surfaces of Euler characteristic $-3$, possibly with boundary or nonorientable
+title: Compact connected surfaces of Euler characteristic $-3$, possibly with boundary
+  or nonorientable
 classification:
   areas:
   - topology
   topics:
-  - classification
-  - surfaces
-  - euler-characteristic
+  - Classification
+  - Surfaces
+  - Euler Characteristic
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-ZDYAF
 kind: problem
-title: Aligned bases for the even-sum submodule $M\subseteq\ZZ^4$ and the submodule $N$ defined by $4\mid(w-x)$, $4\mid(x-y)$, $4\mid(y-z)$, and the structure of $M/N$
+title: Aligned bases for the even-sum submodule $M\subseteq\ZZ^4$ and the submodule
+  $N$ defined by $4\mid(w-x)$, $4\mid(x-y)$, $4\mid(y-z)$, and the structure of $M/N$
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - smith-normal-form
-  - free-modules
+  - Structure Theorem
+  - Smith Normal Form
+  - Free Modules
 relations: []
 review: draft
 solved: true

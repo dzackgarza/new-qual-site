@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-7FMWE
 kind: problem
-title: The discriminant of a polynomial is a polynomial in the coefficients, via symmetric polynomials
+title: The discriminant of a polynomial is a polynomial in the coefficients, via symmetric
+  polynomials
 classification:
   areas:
   - algebra
   topics:
-  - symmetric-functions
-  - polynomials
-  - galois-theory
+  - Symmetric Functions
+  - Polynomials
+  - Galois Theory
 relations: []
 review: draft
 solved: false

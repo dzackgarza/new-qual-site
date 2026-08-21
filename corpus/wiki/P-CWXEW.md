@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: P-CWXEW
 kind: problem
-title: "Find a bijective conformal map from $G$ to $\\HH$, where"
+title: Find a bijective conformal map from $G$ to $\HH$, where
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: false

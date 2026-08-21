@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - singularities
-  - trigonometry
+  - Removable Singularities
+  - Singularities
+  - Trigonometry
 relations: []
 review: draft
 solved: false

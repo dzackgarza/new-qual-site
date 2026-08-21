@@ -2,18 +2,19 @@
 schema: qual/card@1
 id: P-TNOTE
 kind: problem
-title: "Spring 2021, 1"
+title: Spring 2021, 1
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - measure-theory
-  - borel-cantelli
+  - Uniform Convergence
+  - Measure Theory
+  - Borel-Cantelli
 relations: []
 review: draft
 solved: true
 ---
+
 :::{.problem title="Spring 2021, 1"}
 Let \( (X, \mathcal{M},\mu)  \) be a measure space and let $E_n \in \mathcal{M}$ be a measurable set for $n\geq 1$.
 Let $f_n \da \chi_{E_n}$ be the indicator function of the set $E_n$ and show that 
