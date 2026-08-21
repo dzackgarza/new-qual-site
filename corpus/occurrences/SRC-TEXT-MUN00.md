@@ -421,6 +421,47 @@ source:
     - E-UGSM8
     - E-CT4NT
     - E-VPZUZ
+  - name: '48'
+    problems:
+    - E-CFNT7
+    - E-0SFDE
+    - E-66SIM
+    - E-8KGS1
+    - E-CKXKK
+    - E-AKPMH
+    - E-F8UOA
+    - E-BTZ9P
+    - E-1FRQL
+    - E-VBWDH
+    - E-NO7PH
+    - E-IG6PF
+    - E-85UIY
+  - name: '49'
+    problems:
+    - E-YSJOS
+    - E-23ASH
+  - name: '50'
+    problems:
+    - E-VXB5V
+    - E-KWBI9
+    - E-ML7VU
+    - E-V4TJA
+    - E-ETKNU
+    - E-26ELV
+    - E-U9VN1
+    - E-MVB8P
+    - E-PROOB
+    - E-PYCIE
+    - E-6E1DR
+    - E-MI1BO
+    - E-OYPV7
+    - E-D1NXY
+    - E-ISSIW
+    - E-V4WKE
+    - E-1SW9Q
+    - E-XU2MN
+    - E-LOA25
+    - E-LI4O5
 ---
 
 ::: remark
