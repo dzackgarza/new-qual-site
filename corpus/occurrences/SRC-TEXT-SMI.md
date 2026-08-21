@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: incomplete
 provenance:
-- https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf
+- assets/attachments/8000e.pdf
 source:
   source_kind: textbook
   textbook: smith-course-notes
