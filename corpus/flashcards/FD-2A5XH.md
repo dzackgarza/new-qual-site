@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - integral-domains
-  - rings
+  - Integral Domains
+  - Rings
 relations: []
 review: draft
 ---

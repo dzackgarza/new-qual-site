@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-ESIOA
 kind: fact
-title: 'What is Krull''s Hauptidealsatz?'
+title: What is Krull's Hauptidealsatz?
 classification:
   areas:
   - algebra
   topics:
-  - krull-dimension
-  - prime-ideals
-  - noetherian-rings
+  - Krull Dimension
+  - Prime Ideals
+  - Noetherian Rings
 relations: []
 review: draft
 ---

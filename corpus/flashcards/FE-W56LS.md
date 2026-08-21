@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FE-W56LS
 kind: example
-title: 'Does $A^n=B^\n$ imply $A=B$?'
+title: Does $A^n=B^\n$ imply $A=B$?
 classification:
   areas:
   - algebra
   topics:
-  - matrices
-  - counterexamples
+  - Matrices
+  - Counterexamples
 relations:
 - kind: variant-of
   target: FE-ISVDM

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-CKSA3
 kind: fact
-title: 'What is Minkowski''s inequality?'
+title: What is Minkowski's inequality?
 classification:
   areas:
   - real-analysis
   topics:
-  - norms
-  - lp-spaces
+  - Norms
+  - Lp Spaces
 relations: []
 review: draft
 ---

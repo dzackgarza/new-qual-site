@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-7R4QC
 kind: definition
-title: 'Locally Compact'
+title: Locally Compact
 classification:
   areas:
   - topology
   topics:
-  - compactness
-  - counterexamples
+  - Compactness
+  - Counterexamples
 relations: []
 review: draft
 ---

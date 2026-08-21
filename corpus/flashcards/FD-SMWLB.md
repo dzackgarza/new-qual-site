@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-SMWLB
 kind: definition
-title: 'Nowhere Dense'
+title: Nowhere Dense
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - closure
+  - Density
+  - Closure
 relations: []
 review: draft
 ---

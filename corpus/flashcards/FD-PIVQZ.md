@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-PIVQZ
 kind: definition
-title: 'Even vs Odd Permutations'
+title: Even vs Odd Permutations
 classification:
   areas:
   - algebra
   topics:
-  - permutations
+  - Permutations
 relations: []
 review: draft
 ---

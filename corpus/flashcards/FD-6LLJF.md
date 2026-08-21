@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - rings
+  - Factorization
+  - Rings
 relations: []
 review: draft
 ---

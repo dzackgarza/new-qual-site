@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-5MASA
 kind: theorem
-title: 'Cauchy Inequalities'
+title: Cauchy Inequalities
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - cauchy-integral-formula
+  - Cauchy Estimates
+  - Cauchy Integral Formula
 relations:
 - kind: variant-of
   target: FT-REHJT

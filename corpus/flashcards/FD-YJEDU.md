@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-YJEDU
 kind: definition
-title: 'Conjugates of a root'
+title: Conjugates of a root
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 ---

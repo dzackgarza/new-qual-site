@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-2M3OC
 kind: fact
-title: 'Reverse Triangle Inequality'
+title: Reverse Triangle Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - norms
+  - Norms
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-QEQIY
 kind: definition
-title: 'Meagre Set'
+title: Meagre Set
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - countability
+  - Density
+  - Countability
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-UW3C7
 kind: fact
-title: 'Is the composition of Lebesgue measurable functions again Lebesgue measurable?'
+title: Is the composition of Lebesgue measurable functions again Lebesgue measurable?
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - cantor-set
-  - counterexamples
+  - Measure Theory
+  - Cantor Set
+  - Counterexamples
 relations: []
 review: draft
 ---

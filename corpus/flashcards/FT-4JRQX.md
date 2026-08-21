@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-4JRQX
 kind: theorem
-title: 'Tonelli'
+title: Tonelli
 classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - integrals
+  - Fubini-Tonelli
+  - Integrals
 relations: []
 review: draft
 ---

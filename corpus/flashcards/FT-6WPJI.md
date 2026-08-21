@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-6WPJI
 kind: theorem
-title: 'Baire Category Theorem'
+title: Baire Category Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - completeness
-  - metric-spaces
+  - Density
+  - Completeness
+  - Metric Spaces
 relations: []
 review: draft
 ---

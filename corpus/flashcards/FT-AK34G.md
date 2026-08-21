@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-AK34G
 kind: theorem
-title: 'Cauchy Integral Formula (Higher Derivatives)'
+title: Cauchy Integral Formula (Higher Derivatives)
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - contour-integration
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 ---

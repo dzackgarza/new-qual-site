@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-CIESS
 kind: fact
-title: '$\tan(\pi/4) = \cdots$'
+title: $\tan(\pi/4) = \cdots$
 classification:
   areas:
   - real-analysis
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

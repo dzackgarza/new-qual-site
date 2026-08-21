@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-V5ISD
 kind: definition
-title: 'Borel set'
+title: Borel set
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

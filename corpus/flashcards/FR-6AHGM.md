@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - measure-theory
+  - Integrals
+  - Measure Theory
 relations: []
 review: draft
 ---

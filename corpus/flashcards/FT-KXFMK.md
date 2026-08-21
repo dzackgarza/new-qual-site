@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FT-KXFMK
 kind: theorem
-title: 'Equivalent characterizations of measurability of a set'
+title: Equivalent characterizations of measurability of a set
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

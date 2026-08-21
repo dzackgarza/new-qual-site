@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-G56CW
 kind: definition
-title: 'Normal Space'
+title: Normal Space
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
+  - Separation Axioms
 relations: []
 review: draft
 ---

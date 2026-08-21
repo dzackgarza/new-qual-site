@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-BOIT5
 kind: fact
-title: 'Euler Characteristic -2'
+title: Euler Characteristic -2
 classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - surfaces
-  - classification
+  - Euler Characteristic
+  - Surfaces
+  - Classification
 relations: []
 review: draft
 ---

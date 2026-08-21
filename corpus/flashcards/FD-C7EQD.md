@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - poles
-  - singularities
+  - Poles
+  - Singularities
 relations: []
 review: draft
 ---

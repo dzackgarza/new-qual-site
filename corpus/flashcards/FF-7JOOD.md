@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-7JOOD
 kind: fact
-title: 'What is the diameter of set?'
+title: What is the diameter of set?
 classification:
   areas:
   - real-analysis
   topics:
-  - metric-spaces
+  - Metric Spaces
 relations: []
 review: draft
 ---

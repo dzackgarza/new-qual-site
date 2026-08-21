@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-3IKZZ
 kind: fact
-title: 'Maximum Length Lemma'
+title: Maximum Length Lemma
 classification:
   areas:
   - complex-analysis
   topics:
-  - contour-integration
-  - integrals
+  - Contour Integration
+  - Integrals
 relations: []
 review: draft
 ---

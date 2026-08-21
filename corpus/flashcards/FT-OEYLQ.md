@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-OEYLQ
 kind: theorem
-title: 'Open Mapping Theorem'
+title: Open Mapping Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - open-mapping-theorem
-  - holomorphic-functions
+  - Open Mapping Theorem
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

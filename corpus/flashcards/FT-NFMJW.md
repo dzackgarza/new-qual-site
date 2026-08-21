@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-NFMJW
 kind: theorem
-title: 'Parseval''s Identity'
+title: Parseval's Identity
 classification:
   areas:
   - real-analysis
   topics:
-  - hilbert-spaces
-  - l2
-  - fourier-analysis
+  - Hilbert Spaces
+  - L²
+  - Fourier Analysis
 relations: []
 review: draft
 ---

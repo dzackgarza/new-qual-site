@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-XZGIY
 kind: fact
-title: 'What is the Arzela-Ascoli theorem?'
+title: What is the Arzela-Ascoli theorem?
 classification:
   areas:
   - real-analysis
   topics:
-  - arzela-ascoli
-  - equicontinuity
-  - uniform-convergence
+  - Arzelà-Ascoli
+  - Equicontinuity
+  - Uniform Convergence
 relations: []
 review: draft
 ---

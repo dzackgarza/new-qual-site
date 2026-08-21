@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-HVSOB
 kind: definition
-title: 'Algebraic Field Extension'
+title: Algebraic Field Extension
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
+  - Field Extensions
 relations:
 - kind: variant-of
   target: FD-NS5RF

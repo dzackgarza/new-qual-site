@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-HGESN
 kind: definition
-title: '$G_\delta$ sets'
+title: $G_\delta$ sets
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

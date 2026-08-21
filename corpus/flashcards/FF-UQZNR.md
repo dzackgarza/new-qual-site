@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - laurent-series
-  - trigonometry
-  - power-series
+  - Laurent Series
+  - Trigonometry
+  - Power Series
 relations: []
 review: draft
 ---

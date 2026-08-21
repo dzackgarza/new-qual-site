@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-2P5VV
 kind: theorem
-title: 'Eisenstein''s Criterion'
+title: Eisenstein's Criterion
 classification:
   areas:
   - algebra
   topics:
-  - irreducibility-criteria
-  - polynomials
+  - Irreducibility Criteria
+  - Polynomials
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - continuity
-  - counterexamples
-  - euclidean-spaces
+  - Continuity
+  - Counterexamples
+  - Euclidean Spaces
 relations: []
 review: draft
 ---

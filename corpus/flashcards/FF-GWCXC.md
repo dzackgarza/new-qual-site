@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-GWCXC
 kind: fact
-title: 'Groups of Order 14'
+title: Groups of Order 14
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
+  - Classification
+  - Groups
 relations: []
 review: draft
 ---

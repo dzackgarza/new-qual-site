@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-SW76G
 kind: definition
-title: 'Semilocally Simply Connected'
+title: Semilocally Simply Connected
 classification:
   areas:
   - topology
   topics:
-  - covering-spaces
-  - fundamental-group
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 ---

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-HK72Z
 kind: fact
-title: 'Descartes'' Rule of Signs'
+title: Descartes' Rule of Signs
 classification:
   areas:
   - algebra
   topics:
-  - polynomials
+  - Polynomials
 relations: []
 review: draft
 ---

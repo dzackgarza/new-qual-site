@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-OOCQD
 kind: definition
-title: '(Lebesgue) Measurable Function'
+title: (Lebesgue) Measurable Function
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-XKATS
 kind: fact
-title: 'Series expansion for $\sinh(z)$'
+title: Series expansion for $\sinh(z)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - hyperbolic-functions
-  - power-series
+  - Hyperbolic Functions
+  - Power Series
 relations: []
 review: draft
 ---

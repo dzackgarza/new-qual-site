@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-OUWGL
 kind: definition
-title: 'Separable Field Extension'
+title: Separable Field Extension
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
+  - Separability
+  - Field Extensions
 relations: []
 review: draft
 ---

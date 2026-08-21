@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FT-O4DRR
 kind: theorem
-title: 'Caratheodory Characterization'
+title: Caratheodory Characterization
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

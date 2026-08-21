@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-UBJ3S
 kind: fact
-title: 'Kunneth isomorphism (nice case)'
+title: Kunneth isomorphism (nice case)
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - product-topology
+  - Homology
+  - Product Topology
 relations: []
 review: draft
 ---

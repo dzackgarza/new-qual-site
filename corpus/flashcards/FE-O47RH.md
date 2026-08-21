@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FE-O47RH
 kind: example
-title: 'Example of a conformal map that is not injective.'
+title: Example of a conformal map that is not injective.
 classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - counterexamples
+  - Conformal Maps
+  - Counterexamples
 relations: []
 review: draft
 ---

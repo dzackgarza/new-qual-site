@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-2EUYX
 kind: definition
-title: 'Indecomposable Module'
+title: Indecomposable Module
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
+  - Modules
+  - Semisimplicity
 relations: []
 review: draft
 ---

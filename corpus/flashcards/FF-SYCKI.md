@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-SYCKI
 kind: fact
-title: '$H_* \mathbb{RP}^2$'
+title: $H_* \mathbb{RP}^2$
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 ---

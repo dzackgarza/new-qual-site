@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-JRRRW
 kind: theorem
-title: 'Uniform Boundedness Principle'
+title: Uniform Boundedness Principle
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - norms
+  - Functional Analysis
+  - Norms
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-VON2D
 kind: fact
-title: 'What is a Baire space?'
+title: What is a Baire space?
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - metric-spaces
+  - Density
+  - Metric Spaces
 relations: []
 review: draft
 ---

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - polynomials
+  - Fields
+  - Polynomials
 relations: []
 review: draft
 ---

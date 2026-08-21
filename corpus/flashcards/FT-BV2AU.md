@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-BV2AU
 kind: theorem
-title: 'Small Tails and Absolute Continuity'
+title: Small Tails and Absolute Continuity
 classification:
   areas:
   - real-analysis
   topics:
-  - small-tails
-  - continuity-of-measure
-  - l1
+  - Small Tails
+  - Continuity of Measure
+  - L¹
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - splitting-fields
-  - polynomials
-  - field-extensions
+  - Splitting Fields
+  - Polynomials
+  - Field Extensions
 relations: []
 review: draft
 ---

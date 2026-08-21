@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-63IWC
 kind: fact
-title: 'What is equicontinuity? Uniform equicontinuity?'
+title: What is equicontinuity? Uniform equicontinuity?
 classification:
   areas:
   - real-analysis
   topics:
-  - equicontinuity
-  - metric-spaces
+  - Equicontinuity
+  - Metric Spaces
 relations: []
 review: draft
 ---

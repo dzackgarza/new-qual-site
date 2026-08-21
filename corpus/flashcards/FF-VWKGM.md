@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - metric-spaces
-  - compactness
+  - Metric Spaces
+  - Compactness
 relations: []
 review: draft
 ---

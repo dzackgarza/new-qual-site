@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-IAUQG
 kind: fact
-title: "What is the $M{\\hbox{-}}$test?"
+title: What is the $M{\hbox{-}}$test?
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - series-of-functions
+  - Uniform Convergence
+  - Series of Functions
 relations: []
 review: draft
 ---

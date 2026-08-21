@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-FZERI
 kind: theorem
-title: 'Rouche''s Theorem'
+title: Rouche's Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 ---

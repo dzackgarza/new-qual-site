@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-GJ6NR
 kind: theorem
-title: 'Fundamental Theorem of Galois Theory'
+title: Fundamental Theorem of Galois Theory
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - normal-subgroups
+  - Galois Theory
+  - Field Extensions
+  - Normal Subgroups
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-GNRTS
 kind: definition
-title: 'Noetherian Module'
+title: Noetherian Module
 classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - modules
+  - Noetherian Rings
+  - Modules
 relations: []
 review: draft
 ---

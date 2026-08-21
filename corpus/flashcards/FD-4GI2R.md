@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-4GI2R
 kind: definition
-title: 'Equicontinuity'
+title: Equicontinuity
 classification:
   areas:
   - complex-analysis
   topics:
-  - equicontinuity
-  - sequences-of-functions
+  - Equicontinuity
+  - Sequences of Functions
 relations: []
 review: draft
 ---

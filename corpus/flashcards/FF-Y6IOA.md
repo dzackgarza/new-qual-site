@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-Y6IOA
 kind: fact
-title: '$\arctan(0) = \cdots$'
+title: $\arctan(0) = \cdots$
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-QLRXX
 kind: fact
-title: 'Growth Rates of Common Functions'
+title: Growth Rates of Common Functions
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 ---

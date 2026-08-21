@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - singularities
+  - Removable Singularities
+  - Singularities
 relations:
 - kind: variant-of
   target: FD-BRJK5

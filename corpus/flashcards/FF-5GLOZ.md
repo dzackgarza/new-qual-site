@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-5GLOZ
 kind: fact
-title: 'Series expansion for $\csch(z) = {1\over \sinh(z)}$'
+title: Series expansion for $\csch(z) = {1\over \sinh(z)}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - hyperbolic-functions
-  - laurent-series
+  - Hyperbolic Functions
+  - Laurent Series
 relations: []
 review: draft
 ---

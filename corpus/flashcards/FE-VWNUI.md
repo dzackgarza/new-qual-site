@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: FE-VWNUI
 kind: example
-title: 'An analytic function with convergence radius 1 which converges at every point on $S^1$'
+title: An analytic function with convergence radius 1 which converges at every point
+  on $S^1$
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - series-of-functions
-  - counterexamples
+  - Power Series
+  - Series of Functions
+  - Counterexamples
 relations: []
 review: draft
 ---

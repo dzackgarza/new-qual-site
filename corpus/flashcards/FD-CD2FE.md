@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
+  - Maximal Ideals
+  - Ideals
 relations: []
 review: draft
 ---

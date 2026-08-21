@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-3K36R
 kind: fact
-title: 'What is Krull''s intersection theorem?'
+title: What is Krull's intersection theorem?
 classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - commutative-algebra
-  - local-rings
+  - Noetherian Rings
+  - Commutative Algebra
+  - Local Rings
 relations: []
 review: draft
 ---

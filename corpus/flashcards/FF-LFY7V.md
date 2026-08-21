@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-LFY7V
 kind: fact
-title: "Homology of real projective space, $H_ {\\mathbf{RP}}^2$"
+title: Homology of real projective space, $H_ {\mathbf{RP}}^2$
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 ---

@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-KNEDG
 kind: definition
-title: 'Four Properties of Outer Measure'
+title: Four Properties of Outer Measure
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

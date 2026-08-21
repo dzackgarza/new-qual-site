@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-ONITX
 kind: definition
-title: 'Local homeomorphism'
+title: Local homeomorphism
 classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - covering-spaces
+  - Homeomorphisms
+  - Covering Spaces
 relations: []
 review: draft
 ---

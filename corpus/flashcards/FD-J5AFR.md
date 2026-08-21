@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l-infty
-  - norms
+  - L∞
+  - Norms
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-XEQFR
 kind: fact
-title: '$e^{2\pi i \over 3} = \cdots$ in rectangular coordinates'
+title: $e^{2\pi i \over 3} = \cdots$ in rectangular coordinates
 classification:
   areas:
   - real-analysis
   - complex-analysis
   topics:
-  - trigonometry
-  - roots-of-unity
+  - Trigonometry
+  - Roots of Unity
 relations: []
 review: draft
 ---

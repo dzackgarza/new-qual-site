@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-JTWOB
 kind: definition
-title: 'Invariant Factors'
+title: Invariant Factors
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - canonical-forms
+  - Structure Theorem
+  - Canonical Forms
 relations: []
 review: draft
 ---

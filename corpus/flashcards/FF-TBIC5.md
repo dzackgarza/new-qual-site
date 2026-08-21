@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-TBIC5
 kind: fact
-title: 'Exponential expansions of $\sin(z)$'
+title: Exponential expansions of $\sin(z)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
-  - contour-integration
-  - residues
+  - Trigonometry
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---

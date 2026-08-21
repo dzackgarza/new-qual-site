@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - projective-modules
-  - free-modules
-  - modules
+  - Projective Modules
+  - Free Modules
+  - Modules
 relations: []
 review: draft
 ---

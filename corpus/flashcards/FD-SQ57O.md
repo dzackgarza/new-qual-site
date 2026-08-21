@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - density
-  - closure
+  - Density
+  - Closure
 relations: []
 review: draft
 ---

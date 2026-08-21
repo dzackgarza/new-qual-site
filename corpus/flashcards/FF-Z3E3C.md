@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-Z3E3C
 kind: fact
-title: 'Bernoulli''s Inequality'
+title: Bernoulli's Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - bernoulli
+  - Bernoulli
 relations: []
 review: draft
 ---

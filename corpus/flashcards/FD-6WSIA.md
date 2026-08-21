@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-6WSIA
 kind: definition
-title: 'Separable Extension'
+title: Separable Extension
 classification:
   areas:
   - algebra
   topics:
-  - separability
-  - field-extensions
+  - Separability
+  - Field Extensions
 relations: []
 review: draft
 ---

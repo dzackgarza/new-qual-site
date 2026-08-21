@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-ZQFSR
 kind: fact
-title: '$\sin(\pi/4) = \cdots$'
+title: $\sin(\pi/4) = \cdots$
 classification:
   areas:
   - real-analysis
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

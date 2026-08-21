@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-OR3BW
 kind: definition
-title: '$p\dash$group'
+title: $p\dash$group
 classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - groups
+  - p-Groups
+  - Groups
 relations: []
 review: draft
 ---

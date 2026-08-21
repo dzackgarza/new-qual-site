@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-QLQYF
 kind: fact
-title: 'What is a first category set? A second category?'
+title: What is a first category set? A second category?
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - countability
+  - Density
+  - Countability
 relations: []
 review: draft
 ---

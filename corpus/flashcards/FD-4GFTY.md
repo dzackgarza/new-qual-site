@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-4GFTY
 kind: definition
-title: "Definition of Galois group for a finite extension $K/F$."
+title: Definition of Galois group for a finite extension $K/F$.
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 ---

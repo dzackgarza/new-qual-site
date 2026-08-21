@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FR-EDJWQ
 kind: proof
-title: 'Relationship between continuity and differentiability'
+title: Relationship between continuity and differentiability
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - continuity
-  - counterexamples
+  - Differentiation
+  - Continuity
+  - Counterexamples
 relations: []
 review: draft
 ---

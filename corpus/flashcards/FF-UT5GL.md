@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-UT5GL
 kind: fact
-title: 'What is the Riesz Representation theorem?'
+title: What is the Riesz Representation theorem?
 classification:
   areas:
   - real-analysis
   topics:
-  - riesz-representation
-  - hilbert-spaces
-  - dual-spaces
+  - Riesz Representation
+  - Hilbert Spaces
+  - Dual Spaces
 relations: []
 review: draft
 ---

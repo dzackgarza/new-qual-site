@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-OQ6YZ
 kind: fact
-title: 'Holder''s Inequality'
+title: Holder's Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - norms
-  - lp-spaces
+  - Norms
+  - Lp Spaces
 relations: []
 review: draft
 ---

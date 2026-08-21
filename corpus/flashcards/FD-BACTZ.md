@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - essential-singularities
-  - singularities
+  - Essential Singularities
+  - Singularities
 relations: []
 review: draft
 ---

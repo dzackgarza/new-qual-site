@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - countability
+  - Density
+  - Countability
 relations: []
 review: draft
 ---

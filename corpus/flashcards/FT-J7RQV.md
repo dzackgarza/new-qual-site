@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-J7RQV
 kind: theorem
-title: 'Urysohn''s Lemma'
+title: Urysohn's Lemma
 classification:
   areas:
   - topology
   topics:
-  - separation-axioms
-  - continuity
+  - Separation Axioms
+  - Continuity
 relations:
 - kind: variant-of
   target: FT-52GNK

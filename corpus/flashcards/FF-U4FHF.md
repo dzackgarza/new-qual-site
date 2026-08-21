@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-U4FHF
 kind: fact
-title: 'What is a reduced ring?'
+title: What is a reduced ring?
 classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - rings
+  - Nilpotence
+  - Rings
 relations: []
 review: draft
 ---

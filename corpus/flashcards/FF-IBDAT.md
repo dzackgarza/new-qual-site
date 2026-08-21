@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-IBDAT
 kind: fact
-title: 'What is the going up theorem?'
+title: What is the going up theorem?
 classification:
   areas:
   - algebra
   topics:
-  - integral-extensions
-  - prime-ideals
-  - commutative-algebra
+  - Integral Extensions
+  - Prime Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 ---

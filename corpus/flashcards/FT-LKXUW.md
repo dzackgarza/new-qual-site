@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-LKXUW
 kind: theorem
-title: 'Cauchy Integral Formula for $f^{(n)}(z)$'
+title: Cauchy Integral Formula for $f^{(n)}(z)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - contour-integration
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 ---

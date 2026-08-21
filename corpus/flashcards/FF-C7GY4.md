@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-C7GY4
 kind: fact
-title: 'Where is ${1\over x^p}$ integrable in $\RR$? (Depending on $p$)'
+title: Where is ${1\over x^p}$ integrable in $\RR$? (Depending on $p$)
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - lp-spaces
+  - Integrals
+  - Lp Spaces
 relations: []
 review: draft
 ---

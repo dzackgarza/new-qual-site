@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-AI6XN
 kind: definition
-title: 'Limsup/Liminf of Sets'
+title: Limsup/Liminf of Sets
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - borel-cantelli
+  - Measure Theory
+  - Borel-Cantelli
 relations: []
 review: draft
 ---

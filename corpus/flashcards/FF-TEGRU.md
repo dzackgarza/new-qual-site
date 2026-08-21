@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-TEGRU
 kind: fact
-title: 'Groups of Order 6'
+title: Groups of Order 6
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
+  - Classification
+  - Groups
 relations: []
 review: draft
 ---

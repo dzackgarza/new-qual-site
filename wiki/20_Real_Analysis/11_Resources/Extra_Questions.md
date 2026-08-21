@@ -2,7 +2,7 @@
 order: 100001
 ---
 
-> Source: a TeX file used while studying for quals; not original to this corpus. This is a workshop dump, not a UGA Quals sitting. The opening May 2016 Qual block is the UNL Math 825/826 paper of May 26, 2016 (`SRC-UNL-RA-SUMMER-2016`). Later headings are the UNL packet's own tags (January / June / May), including UNL May 2019 #1 (`SRC-UNL-RA-SUMMER-2019`). The June tags are citations printed on Days 2–8; they are not UGA qualifying-exam sittings. UGA's posted archive is Fall and Spring only.
+> Source: a TeX file used while studying for quals; not original to this corpus. This is a workshop dump, not a UGA Quals sitting. The opening May 2016 Qual block is Day 1 of `SRC-RA-WORKSHOP`, which is the sitting `SRC-UNL-RA-SUMMER-2016`. Later headings are the UNL packet's own tags (January / June / May), including the Day 2 item tagged May 2019 #1. The June tags are citations printed on Days 2–8 of that packet; they are not UGA qualifying-exam sittings. UGA's posted archive is Fall and Spring only.
 
 # May 2016 Qual
 

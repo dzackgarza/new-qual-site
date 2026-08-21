@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-BBR6Q
 kind: definition
-title: '$F_\sigma$ sets'
+title: $F_\sigma$ sets
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

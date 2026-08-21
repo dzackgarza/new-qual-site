@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - egorov
-  - convergence-of-functions
-  - measure-theory
+  - Egorov
+  - Convergence of Functions
+  - Measure Theory
 relations: []
 review: draft
 ---

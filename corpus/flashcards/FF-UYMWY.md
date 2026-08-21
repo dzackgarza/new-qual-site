@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-UYMWY
 kind: fact
-title: 'What is the one-step submodule test?'
+title: What is the one-step submodule test?
 classification:
   areas:
   - algebra
   topics:
-  - modules
+  - Modules
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-CVEAI
 kind: definition
-title: 'Rank of a Free module'
+title: Rank of a Free module
 classification:
   areas:
   - algebra
   topics:
-  - free-modules
-  - bases
+  - Free Modules
+  - Bases
 relations: []
 review: draft
 ---

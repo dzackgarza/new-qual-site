@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FE-Z4VF2
 kind: example
-title: 'Example of a field extension that is not Galois.'
+title: Example of a field extension that is not Galois.
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - counterexamples
+  - Galois Theory
+  - Field Extensions
+  - Counterexamples
 relations: []
 review: draft
 ---

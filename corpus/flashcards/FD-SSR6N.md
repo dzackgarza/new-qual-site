@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-SSR6N
 kind: definition
-title: "Centralizer: $Z_G(S) = \\ts{g\\in G \\st gsg\\inv = s\\, \\forall s\\in S}$"
+title: 'Centralizer: $Z_G(S) = \ts{g\in G \st gsg\inv = s\, \forall s\in S}$'
 classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - subgroups
+  - Centralizers and Normalizers
+  - Subgroups
 relations: []
 review: draft
 ---

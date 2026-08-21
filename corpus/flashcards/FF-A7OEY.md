@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-A7OEY
 kind: fact
-title: '$\arctan(\infty) = \cdots$'
+title: $\arctan(\infty) = \cdots$
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

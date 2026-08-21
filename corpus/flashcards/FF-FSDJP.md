@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-FSDJP
 kind: fact
-title: 'What does small tails mean? Absolute continuity?'
+title: What does small tails mean? Absolute continuity?
 classification:
   areas:
   - real-analysis
   topics:
-  - small-tails
-  - continuity-of-measure
-  - l1
+  - Small Tails
+  - Continuity of Measure
+  - L¹
 relations: []
 review: draft
 ---

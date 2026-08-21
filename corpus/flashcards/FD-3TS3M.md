@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-3TS3M
 kind: definition
-title: 'First Countable'
+title: First Countable
 classification:
   areas:
   - topology
   topics:
-  - point-set
-  - countability
+  - Point-Set Topology
+  - Countability
 relations: []
 review: draft
 ---

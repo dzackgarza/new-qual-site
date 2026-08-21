@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-4GUYL
 kind: fact
-title: 'General form of maps in $\aut(\DD)$.'
+title: General form of maps in $\aut(\DD)$.
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - biholomorphisms
+  - Blaschke Factors
+  - Biholomorphisms
 relations: []
 review: draft
 ---

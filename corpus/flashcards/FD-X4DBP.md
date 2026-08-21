@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-X4DBP
 kind: definition
-title: 'Alternating Group'
+title: Alternating Group
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - homomorphisms
+  - Permutations
+  - Homomorphisms
 relations: []
 review: draft
 ---

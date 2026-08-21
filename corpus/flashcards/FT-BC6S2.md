@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-BC6S2
 kind: theorem
-title: 'Characterizations of Diagonalizability of a Square Matrix $M$'
+title: Characterizations of Diagonalizability of a Square Matrix $M$
 classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - minimal-and-characteristic-polynomials
-  - matrices
+  - Diagonalization
+  - Minimal and Characteristic Polynomials
+  - Matrices
 relations: []
 review: draft
 ---

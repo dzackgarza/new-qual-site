@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FD-L2TEC
 kind: definition
-title: 'Class Equation'
+title: Class Equation
 classification:
   areas:
   - algebra
   topics:
-  - class-equation
-  - conjugacy
-  - centralizers-and-normalizers
+  - Class Equation
+  - Conjugacy
+  - Centralizers and Normalizers
 relations: []
 review: draft
 ---

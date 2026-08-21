@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - cyclic-groups
+  - Roots of Unity
+  - Cyclic Groups
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-2AKVH
 kind: fact
-title: 'Factor $x^n + y^n$'
+title: Factor $x^n + y^n$
 classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - factorization
+  - Polynomials
+  - Factorization
 relations:
 - kind: variant-of
   target: FF-UC7SQ

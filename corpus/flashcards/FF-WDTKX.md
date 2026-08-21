@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-WDTKX
 kind: fact
-title: 'Nonorientable Surfaces'
+title: Nonorientable Surfaces
 classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - orientation
+  - Surfaces
+  - Orientation
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-SZR6O
 kind: fact
-title: 'What is a meagre set?'
+title: What is a meagre set?
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - countability
+  - Density
+  - Countability
 relations: []
 review: draft
 ---

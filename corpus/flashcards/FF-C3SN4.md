@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-C3SN4
 kind: fact
-title: 'Groups of Order 9'
+title: Groups of Order 9
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
-  - p-groups
+  - Classification
+  - Groups
+  - p-Groups
 relations: []
 review: draft
 ---

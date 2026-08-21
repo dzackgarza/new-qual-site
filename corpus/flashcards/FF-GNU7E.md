@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-GNU7E
 kind: fact
-title: 'What is the Borel-Cantelli lemma?'
+title: What is the Borel-Cantelli lemma?
 classification:
   areas:
   - real-analysis
   topics:
-  - borel-cantelli
-  - measure-theory
+  - Borel-Cantelli
+  - Measure Theory
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-I6XN6
 kind: fact
-title: 'Groups of Order 12'
+title: Groups of Order 12
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
+  - Classification
+  - Groups
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-AVBFU
 kind: fact
-title: 'Characterizations of $D_f$, the set of discontinuities of functions'
+title: Characterizations of $D_f$, the set of discontinuities of functions
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity
-  - countability
-  - measure-theory
+  - Continuity
+  - Countability
+  - Measure Theory
 relations: []
 review: draft
 ---

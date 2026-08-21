@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - manifolds
-  - compactness
+  - Surfaces
+  - Manifolds
+  - Compactness
 relations: []
 review: draft
 ---

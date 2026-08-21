@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-LXZIW
 kind: definition
-title: 'Characteristic of a ring'
+title: Characteristic of a ring
 classification:
   areas:
   - algebra
   topics:
-  - characteristic
-  - rings
+  - Characteristic
+  - Rings
 relations: []
 review: draft
 ---

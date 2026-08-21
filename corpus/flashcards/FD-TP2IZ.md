@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-TP2IZ
 kind: definition
-title: 'Normal Extension'
+title: Normal Extension
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - splitting-fields
+  - Field Extensions
+  - Splitting Fields
 relations: []
 review: draft
 ---

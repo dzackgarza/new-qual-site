@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-OL75S
 kind: fact
-title: 'Burnside''s Formula'
+title: Burnside's Formula
 classification:
   areas:
   - algebra
   topics:
-  - burnside-s-lemma
-  - group-actions
+  - Burnside's Lemma
+  - Group Actions
 relations: []
 review: draft
 ---

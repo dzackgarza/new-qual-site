@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - matrices
+  - Diagonalization
+  - Matrices
 relations: []
 review: draft
 ---

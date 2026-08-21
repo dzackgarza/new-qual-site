@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-HAMDC
 kind: fact
-title: 'Factor $x^n + a^n$'
+title: Factor $x^n + a^n$
 classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - factorization
+  - Polynomials
+  - Factorization
 relations: []
 review: draft
 ---

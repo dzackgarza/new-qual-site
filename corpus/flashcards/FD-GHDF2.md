@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-GHDF2
 kind: definition
-title: 'How to determine sign of a permutation'
+title: How to determine sign of a permutation
 classification:
   areas:
   - algebra
   topics:
-  - permutations
+  - Permutations
 relations: []
 review: draft
 ---

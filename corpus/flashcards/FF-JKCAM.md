@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-JKCAM
 kind: fact
-title: 'Groups of Order 20'
+title: Groups of Order 20
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
+  - Classification
+  - Groups
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-BSOZF
 kind: theorem
-title: 'Dirichlet''s Test'
+title: Dirichlet's Test
 classification:
   areas:
   - complex-analysis
   topics:
-  - convergence-tests
-  - series-of-numbers
+  - Convergence Tests
+  - Series of Numbers
 relations:
 - kind: variant-of
   target: FT-3ZL25

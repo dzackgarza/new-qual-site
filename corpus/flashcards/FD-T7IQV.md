@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-T7IQV
 kind: definition
-title: 'Solvable Group'
+title: Solvable Group
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - subgroup-series
+  - Solvable Groups
+  - Subgroup Series
 relations: []
 review: draft
 ---

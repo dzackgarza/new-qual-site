@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-BSYDE
 kind: fact
-title: 'What is a compact operator?'
+title: What is a compact operator?
 classification:
   areas:
   - real-analysis
   topics:
-  - functional-analysis
-  - compactness
+  - Functional Analysis
+  - Compactness
 relations: []
 review: draft
 ---

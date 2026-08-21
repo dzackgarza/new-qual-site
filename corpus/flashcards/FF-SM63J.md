@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-SM63J
 kind: fact
-title: 'Euler Characteristic 0'
+title: Euler Characteristic 0
 classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - surfaces
-  - classification
+  - Euler Characteristic
+  - Surfaces
+  - Classification
 relations: []
 review: draft
 ---

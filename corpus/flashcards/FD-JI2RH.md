@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-JI2RH
 kind: definition
-title: 'Functional characterization of injective functions.'
+title: Functional characterization of injective functions.
 classification:
   areas:
   - algebra
   topics:
-  - functions-and-relations
+  - Functions and Relations
 relations: []
 review: draft
 ---

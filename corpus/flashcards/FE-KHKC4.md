@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - l1
-  - counterexamples
+  - Uniform Convergence
+  - L¹
+  - Counterexamples
 relations: []
 review: draft
 ---

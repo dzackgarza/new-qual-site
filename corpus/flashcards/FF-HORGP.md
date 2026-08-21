@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-HORGP
 kind: fact
-title: 'Give several equivalent characterizations of completeness.'
+title: Give several equivalent characterizations of completeness.
 classification:
   areas:
   - real-analysis
   topics:
-  - completeness
-  - series-of-numbers
+  - Completeness
+  - Series of Numbers
 relations: []
 review: draft
 ---

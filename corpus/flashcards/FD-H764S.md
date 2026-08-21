@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-H764S
 kind: definition
-title: 'Elementary Divisors'
+title: Elementary Divisors
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - abelian-groups
+  - Structure Theorem
+  - Abelian Groups
 relations: []
 review: draft
 ---

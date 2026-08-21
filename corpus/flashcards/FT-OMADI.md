@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-OMADI
 kind: theorem
-title: 'Continuity of measure from above/below'
+title: Continuity of measure from above/below
 classification:
   areas:
   - real-analysis
   topics:
-  - continuity-of-measure
-  - measure-theory
+  - Continuity of Measure
+  - Measure Theory
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-QILDV
 kind: fact
-title: 'Give a categorical/homological corollary of Nakayama''s lemma.'
+title: Give a categorical/homological corollary of Nakayama's lemma.
 classification:
   areas:
   - algebra
   topics:
-  - nakayamas-lemma
-  - free-modules
-  - modules
+  - Nakayama's Lemma
+  - Free Modules
+  - Modules
 relations: []
 review: draft
 ---

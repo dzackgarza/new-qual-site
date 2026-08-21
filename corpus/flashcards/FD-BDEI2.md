@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-BDEI2
 kind: definition
-title: 'Deformation Retract'
+title: Deformation Retract
 classification:
   areas:
   - topology
   topics:
-  - retracts
-  - homotopy
+  - Retracts
+  - Homotopy
 relations: []
 review: draft
 ---

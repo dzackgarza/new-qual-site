@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-LF5ND
 kind: fact
-title: 'Series expansion for $\cosh(z)$'
+title: Series expansion for $\cosh(z)$
 classification:
   areas:
   - complex-analysis
   topics:
-  - hyperbolic-functions
-  - power-series
+  - Hyperbolic Functions
+  - Power Series
 relations: []
 review: draft
 ---

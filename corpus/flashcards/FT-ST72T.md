@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-ST72T
 kind: theorem
-title: 'Minkowski''s Inequality'
+title: Minkowski's Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - norms
-  - lp-spaces
+  - Norms
+  - Lp Spaces
 relations: []
 review: draft
 ---

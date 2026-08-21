@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-F3UU4
 kind: definition
-title: 'Uniform Convergence of a sequence of functions'
+title: Uniform Convergence of a sequence of functions
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - sequences-of-functions
+  - Uniform Convergence
+  - Sequences of Functions
 relations: []
 review: draft
 ---

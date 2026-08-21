@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-CQSNC
 kind: fact
-title: 'What is a regular ring? 2023-01-1'
+title: What is a regular ring? 2023-01-1
 classification:
   areas:
   - algebra
   topics:
-  - local-rings
-  - krull-dimension
-  - commutative-algebra
+  - Local Rings
+  - Krull Dimension
+  - Commutative Algebra
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-4ED3Q
 kind: theorem
-title: 'Continuity in $L^1$'
+title: Continuity in $L^1$
 classification:
   areas:
   - real-analysis
   topics:
-  - l1
-  - continuity
-  - density
+  - L¹
+  - Continuity
+  - Density
 relations: []
 review: draft
 ---

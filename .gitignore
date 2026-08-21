@@ -9,3 +9,6 @@ _site/
 .claude/
 
 .tmp*
+
+# Scratch space. Never part of the repo.
+tmp/

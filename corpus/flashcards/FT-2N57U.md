@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-2N57U
 kind: theorem
-title: 'Casorati-Weierstrass Theorem'
+title: Casorati-Weierstrass Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - casorati-weierstrass
-  - essential-singularities
-  - entire-functions
+  - Casorati-Weierstrass
+  - Essential Singularities
+  - Entire Functions
 relations: []
 review: draft
 ---

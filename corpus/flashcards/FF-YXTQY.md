@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - counterexamples
+  - Density
+  - Counterexamples
 relations: []
 review: draft
 ---

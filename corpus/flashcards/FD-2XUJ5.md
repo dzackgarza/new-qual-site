@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-2XUJ5
 kind: definition
-title: 'Locally homeomorphic'
+title: Locally homeomorphic
 classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - point-set
+  - Homeomorphisms
+  - Point-Set Topology
 relations: []
 review: draft
 ---

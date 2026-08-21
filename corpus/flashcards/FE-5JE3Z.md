@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FE-5JE3Z
 kind: example
-title: 'Example of a sequence of bounded functions whose pointwise limit is unbounded.'
+title: Example of a sequence of bounded functions whose pointwise limit is unbounded.
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - counterexamples
+  - Convergence of Functions
+  - Counterexamples
 relations: []
 review: draft
 ---

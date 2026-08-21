@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FS-THMMW
 kind: strategy
-title: 'Negating uniform convergence of a sequence of functions'
+title: Negating uniform convergence of a sequence of functions
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-convergence
-  - counterexamples
+  - Uniform Convergence
+  - Counterexamples
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FS-BM2PV
 kind: strategy
-title: 'How to commute a sum and an integral'
+title: How to commute a sum and an integral
 classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - convergence-of-integrals
-  - series-of-functions
+  - Fubini-Tonelli
+  - Convergence of Integrals
+  - Series of Functions
 relations: []
 review: draft
 ---

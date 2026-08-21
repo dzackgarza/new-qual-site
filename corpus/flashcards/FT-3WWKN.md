@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-3WWKN
 kind: theorem
-title: 'Four Characterizations of Galois extensions $K/F$.'
+title: Four Characterizations of Galois extensions $K/F$.
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - separability
+  - Galois Theory
+  - Field Extensions
+  - Separability
 relations: []
 review: draft
 ---

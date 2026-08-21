@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-SOE5P
 kind: fact
-title: '$\phi(p^k) = ?$'
+title: $\phi(p^k) = ?$
 classification:
   areas:
   - algebra
   topics:
-  - number-theory
+  - Number Theory
 relations: []
 review: draft
 ---

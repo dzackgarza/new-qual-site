@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-HJGPV
 kind: fact
-title: 'What is the geometric interpretation of Krull''s intersection theorem?'
+title: What is the geometric interpretation of Krull's intersection theorem?
 classification:
   areas:
   - algebra
   topics:
-  - krull-dimension
-  - local-rings
-  - geometry
+  - Krull Dimension
+  - Local Rings
+  - Geometry
 relations: []
 review: draft
 ---

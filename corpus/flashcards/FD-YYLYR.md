@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - separability
-  - fields
-  - finite-fields
+  - Separability
+  - Fields
+  - Finite Fields
 relations: []
 review: draft
 ---

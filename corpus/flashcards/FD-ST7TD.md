@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-ST7TD
 kind: definition
-title: 'Uniform Continuity'
+title: Uniform Continuity
 classification:
   areas:
   - real-analysis
   topics:
-  - uniform-continuity
-  - metric-spaces
+  - Uniform Continuity
+  - Metric Spaces
 relations: []
 review: draft
 ---

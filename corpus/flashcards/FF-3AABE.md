@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-3AABE
 kind: fact
-title: 'What is the reverse triangle inequality?'
+title: What is the reverse triangle inequality?
 classification:
   areas:
   - real-analysis
   topics:
-  - norms
+  - Norms
 relations: []
 review: draft
 ---

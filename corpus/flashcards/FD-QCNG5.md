@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FD-QCNG5
 kind: definition
-title: 'Neighborhood Basis'
+title: Neighborhood Basis
 classification:
   areas:
   - topology
   topics:
-  - bases
-  - countability
-  - point-set
+  - Bases
+  - Countability
+  - Point-Set Topology
 relations: []
 review: draft
 ---

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - roots-of-unity
-  - polynomials
+  - Roots of Unity
+  - Polynomials
 relations: []
 review: draft
 ---

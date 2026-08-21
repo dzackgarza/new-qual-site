@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: FE-3RPMC
 kind: example
-title: 'A sequence of functions that converges uniformly, pointwise, a.e., but not in $L^1$.'
+title: A sequence of functions that converges uniformly, pointwise, a.e., but not
+  in $L^1$.
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - l1
-  - counterexamples
+  - Convergence of Functions
+  - L¹
+  - Counterexamples
 relations: []
 review: draft
 ---

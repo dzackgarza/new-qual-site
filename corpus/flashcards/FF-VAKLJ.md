@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-VAKLJ
 kind: fact
-title: 'Order of the smallest nonabelian group'
+title: Order of the smallest nonabelian group
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
+  - Classification
+  - Groups
 relations: []
 review: draft
 ---

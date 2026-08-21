@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-JQSOK
 kind: theorem
-title: 'Arzela-Ascoli Theorem'
+title: Arzela-Ascoli Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - arzela-ascoli
-  - equicontinuity
-  - uniform-convergence
+  - Arzelà-Ascoli
+  - Equicontinuity
+  - Uniform Convergence
 relations: []
 review: draft
 ---

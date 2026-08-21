@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FD-IGEOR
 kind: definition
-title: '$G_x$'
+title: $G_x$
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - orbit-stabilizer
-  - subgroups
+  - Group Actions
+  - Orbit-Stabilizer
+  - Subgroups
 relations: []
 review: draft
 ---

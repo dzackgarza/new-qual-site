@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-T7OAO
 kind: theorem
-title: 'Fubini'
+title: Fubini
 classification:
   areas:
   - real-analysis
   topics:
-  - fubini-tonelli
-  - integrals
+  - Fubini-Tonelli
+  - Integrals
 relations: []
 review: draft
 ---

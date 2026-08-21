@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-EPR7J
 kind: theorem
-title: 'Rouché''s Theorem'
+title: Rouché's Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
-  - zeros
+  - Rouché
+  - Zeros
 relations: []
 review: draft
 ---

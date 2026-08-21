@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-6K35J
 kind: fact
-title: 'What is the geometric interpretation of Nakayama''s lemma?'
+title: What is the geometric interpretation of Nakayama's lemma?
 classification:
   areas:
   - algebra
   topics:
-  - nakayamas-lemma
-  - geometry
-  - modules
+  - Nakayama's Lemma
+  - Geometry
+  - Modules
 relations: []
 review: draft
 ---

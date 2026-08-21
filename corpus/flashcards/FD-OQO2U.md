@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - countability
-  - density
+  - Countability
+  - Density
 relations:
 - kind: variant-of
   target: FD-Q7EEG

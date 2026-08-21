@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FR-CSUMF
 kind: proof
-title: 'Proof of Borel-Cantelli Lemma'
+title: Proof of Borel-Cantelli Lemma
 classification:
   areas:
   - real-analysis
   topics:
-  - borel-cantelli
-  - measure-theory
+  - Borel-Cantelli
+  - Measure Theory
 relations: []
 review: draft
 ---

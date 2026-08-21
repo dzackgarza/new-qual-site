@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-7NMQR
 kind: theorem
-title: 'Recognizing Direct Products'
+title: Recognizing Direct Products
 classification:
   areas:
   - algebra
   topics:
-  - direct-products
-  - normal-subgroups
-  - subgroups
+  - Direct Products
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-ENSFJ
 kind: fact
-title: 'Series expansion for $\sech(z) = {1\over \cosh(z)}$'
+title: Series expansion for $\sech(z) = {1\over \cosh(z)}$
 classification:
   areas:
   - complex-analysis
   topics:
-  - hyperbolic-functions
-  - power-series
+  - Hyperbolic Functions
+  - Power Series
 relations: []
 review: draft
 ---

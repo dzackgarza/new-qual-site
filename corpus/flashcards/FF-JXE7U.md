@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - modules
-  - homological-algebra
+  - Modules
+  - Homological Algebra
 relations: []
 review: draft
 ---

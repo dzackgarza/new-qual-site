@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-BVM37
 kind: definition
-title: 'Irreducible Module'
+title: Irreducible Module
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - semisimplicity
+  - Modules
+  - Semisimplicity
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - l1
-  - continuity
-  - density
+  - L¹
+  - Continuity
+  - Density
 relations: []
 review: draft
 ---

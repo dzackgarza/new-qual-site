@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-MBUKG
 kind: fact
-title: 'Groups of Order 18'
+title: Groups of Order 18
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
+  - Classification
+  - Groups
 relations: []
 review: draft
 ---

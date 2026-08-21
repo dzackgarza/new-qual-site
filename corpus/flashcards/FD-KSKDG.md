@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
+  - Group Actions
 relations: []
 review: draft
 ---

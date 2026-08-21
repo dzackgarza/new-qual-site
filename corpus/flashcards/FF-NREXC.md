@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-NREXC
 kind: fact
-title: 'What is Nakayama''s lemma?'
+title: What is Nakayama's lemma?
 classification:
   areas:
   - algebra
   topics:
-  - nakayamas-lemma
-  - modules
-  - ideals
+  - Nakayama's Lemma
+  - Modules
+  - Ideals
 relations: []
 review: draft
 ---

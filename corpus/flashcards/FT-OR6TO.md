@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-OR6TO
 kind: theorem
-title: 'Riesz Representation Theorem'
+title: Riesz Representation Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - riesz-representation
-  - lp-spaces
-  - dual-spaces
+  - Riesz Representation
+  - Lp Spaces
+  - Dual Spaces
 relations: []
 review: draft
 ---

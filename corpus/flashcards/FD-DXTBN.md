@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - compactness
-  - convergence
+  - Compactness
+  - Convergence
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-OXN3Y
 kind: theorem
-title: 'Gauss'' Lemma'
+title: Gauss' Lemma
 classification:
   areas:
   - algebra
   topics:
-  - factorization
-  - polynomials
-  - irreducibility-criteria
+  - Factorization
+  - Polynomials
+  - Irreducibility Criteria
 relations: []
 review: draft
 ---

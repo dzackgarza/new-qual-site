@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-4XBYG
 kind: fact
-title: 'Cauchy-Schwarz Inequality'
+title: Cauchy-Schwarz Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - norms
-  - l2
-  - inner-product-spaces
+  - Norms
+  - L²
+  - Inner Product Spaces
 relations: []
 review: draft
 ---

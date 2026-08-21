@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-JGBSF
 kind: definition
-title: 'First and Second Category'
+title: First and Second Category
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - countability
+  - Density
+  - Countability
 relations: []
 review: draft
 ---

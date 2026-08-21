@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-HRUA3
 kind: fact
-title: 'What does it mean for a set to be nowhere dense?'
+title: What does it mean for a set to be nowhere dense?
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - closure
+  - Density
+  - Closure
 relations: []
 review: draft
 ---

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - ideals
-  - semisimplicity
+  - Rings
+  - Ideals
+  - Semisimplicity
 relations: []
 review: draft
 ---

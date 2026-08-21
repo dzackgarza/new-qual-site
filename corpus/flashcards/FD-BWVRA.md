@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-BWVRA
 kind: definition
-title: 'Functional characterization of surjective functions.'
+title: Functional characterization of surjective functions.
 classification:
   areas:
   - algebra
   topics:
-  - functions-and-relations
+  - Functions and Relations
 relations: []
 review: draft
 ---

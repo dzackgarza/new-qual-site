@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-5V4M2
 kind: theorem
-title: 'Cauchy Integral Formula (First Derivative)'
+title: Cauchy Integral Formula (First Derivative)
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
-  - contour-integration
+  - Cauchy Integral Formula
+  - Contour Integration
 relations: []
 review: draft
 ---

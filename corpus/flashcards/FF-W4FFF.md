@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-W4FFF
 kind: fact
-title: 'Cross-ratio map'
+title: Cross-ratio map
 classification:
   areas:
   - complex-analysis
   topics:
-  - fractional-linear-transformations
-  - conformal-maps
+  - Fractional Linear Transformations
+  - Conformal Maps
 relations: []
 review: draft
 ---

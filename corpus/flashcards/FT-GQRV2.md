@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-GQRV2
 kind: theorem
-title: 'Inclusions among $L^p$ spaces.'
+title: Inclusions among $L^p$ spaces.
 classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
-  - l-infty
-  - l1
+  - Lp Spaces
+  - L∞
+  - L¹
 relations: []
 review: draft
 ---

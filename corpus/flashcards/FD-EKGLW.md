@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - poles
-  - singularities
+  - Poles
+  - Singularities
 relations:
 - kind: variant-of
   target: FD-C7EQD

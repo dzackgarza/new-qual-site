@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-2OHYV
 kind: fact
-title: 'Standard parameterization of a circle in $\CC$'
+title: Standard parameterization of a circle in $\CC$
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
-  - contour-integration
+  - Trigonometry
+  - Contour Integration
 relations: []
 review: draft
 ---

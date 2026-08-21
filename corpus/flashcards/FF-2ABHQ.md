@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-2ABHQ
 kind: fact
-title: '$\arctan(\sqrt 3) = \cdots$'
+title: $\arctan(\sqrt 3) = \cdots$
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

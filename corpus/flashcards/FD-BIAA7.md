@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-BIAA7
 kind: definition
-title: 'The Schwarz lemma'
+title: The Schwarz lemma
 classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
-  - maximum-modulus-principle
+  - Schwarz Lemma
+  - Maximum Modulus Principle
 relations: []
 review: draft
 ---

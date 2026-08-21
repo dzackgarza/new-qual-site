@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-NOX4C
 kind: fact
-title: 'What are almost disjoint sets?'
+title: What are almost disjoint sets?
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

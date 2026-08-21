@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-CSABG
 kind: fact
-title: 'What is the Artin-Rees lemma?'
+title: What is the Artin-Rees lemma?
 classification:
   areas:
   - algebra
   topics:
-  - noetherian-rings
-  - modules
-  - ideals
+  - Noetherian Rings
+  - Modules
+  - Ideals
 relations: []
 review: draft
 ---

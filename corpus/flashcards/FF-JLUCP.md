@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-JLUCP
 kind: fact
-title: 'Double angle formulas involving $\tan$'
+title: Double angle formulas involving $\tan$
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

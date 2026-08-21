@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-X6C7Z
 kind: fact
-title: 'Give a geometric application of Nakayama''s lemma.'
+title: Give a geometric application of Nakayama's lemma.
 classification:
   areas:
   - algebra
   topics:
-  - nakayamas-lemma
-  - geometry
+  - Nakayama's Lemma
+  - Geometry
 relations: []
 review: draft
 ---

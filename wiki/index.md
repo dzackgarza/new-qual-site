@@ -14,6 +14,7 @@ Start at the syllabus for the exam you are sitting:
 - [[20_Real_Analysis/index|Real Analysis]]
 - [[30_Complex_Analysis/index|Complex Analysis]]
 - [[40_Topology/index|Topology]]
+- [[50_Applied_Algebra/index|Applied Algebra]]
 
 Each subject is a study path: core notes, then exercises, then past quals. Flashcards and source dumps are in [[90_Archives/index|Archives]].
 

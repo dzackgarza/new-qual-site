@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FE-YOIJM
 kind: example
-title: 'Is a composition of Lebesgue measurable functions measurable?'
+title: Is a composition of Lebesgue measurable functions measurable?
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - cantor-set
-  - counterexamples
+  - Measure Theory
+  - Cantor Set
+  - Counterexamples
 relations: []
 review: draft
 ---

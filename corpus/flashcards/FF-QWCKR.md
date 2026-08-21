@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-QWCKR
 kind: fact
-title: 'What is a quasiregular element in a ring?'
+title: What is a quasiregular element in a ring?
 classification:
   areas:
   - algebra
   topics:
-  - jacobson-radical
-  - rings
+  - Jacobson Radical
+  - Rings
 relations: []
 review: draft
 ---

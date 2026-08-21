@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-D7HOH
 kind: definition
-title: 'Convergence in Measure'
+title: Convergence in Measure
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - measure-theory
+  - Convergence of Functions
+  - Measure Theory
 relations: []
 review: draft
 ---

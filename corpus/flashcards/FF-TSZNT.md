@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-TSZNT
 kind: fact
-title: 'Groups of Order 4'
+title: Groups of Order 4
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
-  - p-groups
+  - Classification
+  - Groups
+  - p-Groups
 relations: []
 review: draft
 ---

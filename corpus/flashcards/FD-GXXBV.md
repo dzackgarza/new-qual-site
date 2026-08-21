@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - euclidean-domains
-  - factorization
+  - Euclidean Domains
+  - Factorization
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-QELG7
 kind: fact
-title: 'What is Krull''s theorem?'
+title: What is Krull's theorem?
 classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
-  - zorns-lemma
+  - Maximal Ideals
+  - Ideals
+  - Zorn's Lemma
 relations: []
 review: draft
 ---

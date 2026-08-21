@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FD-W3MQW
 kind: definition
-title: 'Stabilizer'
+title: Stabilizer
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - orbit-stabilizer
-  - subgroups
+  - Group Actions
+  - Orbit-Stabilizer
+  - Subgroups
 relations: []
 review: draft
 ---

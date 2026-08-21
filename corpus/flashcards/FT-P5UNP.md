@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-P5UNP
 kind: theorem
-title: 'Fatou''s Lemma'
+title: Fatou's Lemma
 classification:
   areas:
   - real-analysis
   topics:
-  - fatou
-  - convergence-of-integrals
+  - Fatou
+  - Convergence of Integrals
 relations: []
 review: draft
 ---

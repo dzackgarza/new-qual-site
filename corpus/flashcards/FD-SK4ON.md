@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-SK4ON
 kind: definition
-title: 'Annihilator of a module'
+title: Annihilator of a module
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - ideals
+  - Modules
+  - Ideals
 relations: []
 review: draft
 ---

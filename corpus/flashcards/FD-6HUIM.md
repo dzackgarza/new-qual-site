@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-6HUIM
 kind: definition
-title: 'Null Set'
+title: Null Set
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-45SK3
 kind: fact
-title: 'What is Nakayama''s lemma for a local ring?'
+title: What is Nakayama's lemma for a local ring?
 classification:
   areas:
   - algebra
   topics:
-  - nakayamas-lemma
-  - local-rings
-  - modules
+  - Nakayama's Lemma
+  - Local Rings
+  - Modules
 relations: []
 review: draft
 ---

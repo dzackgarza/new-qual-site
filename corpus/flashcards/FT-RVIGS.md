@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-RVIGS
 kind: theorem
-title: 'Fermat''s Little Theorem'
+title: Fermat's Little Theorem
 classification:
   areas:
   - algebra
   topics:
-  - number-theory
-  - finite-fields
+  - Number Theory
+  - Finite Fields
 relations: []
 review: draft
 ---

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-W2TS2
 kind: fact
-title: '$\cos(\pi/4) = \cdots$'
+title: $\cos(\pi/4) = \cdots$
 classification:
   areas:
   - real-analysis
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

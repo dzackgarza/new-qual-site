@@ -74,6 +74,41 @@ classifying a card under the right topics, writing a solution, relating two
 cards that depend on each other. A gap in a field is curation work, not a
 tooling problem.
 
+## Areas
+
+The corpus stores four core qualifying-exam areas: algebra, real analysis,
+complex analysis, and topology. Two additional exam tracks are registered as
+areas because they are whole sittings, not topics inside a core area: `prelim`
+(UGA) and `applied-algebra` (UCSD Math 202). Sitting identity is institution +
+area + date; Applied Algebra and Algebra share institution and term, so they
+cannot share `area: algebra`.
+
+Extensions live inside those areas, usually as topics: algebraic geometry,
+commutative algebra, differential geometry / manifolds, representation theory
+(filed in algebra), and number theory.
+
+Do not add numerical analysis, statistics, or probability. Those are out of
+scope for now. A department posting an exam in those subjects is not a reason
+to create a collection card. Applied Algebra is not numerical analysis.
+
+## Screenshots of notes
+
+The QualBot PNGs, and any similar crop, are screenshots of the author's
+typeset notes. They are not source documents. They are not assets.
+
+The notes are a compilation of real exam problems: they label which sitting
+and problem number each statement came from. That label is curation metadata,
+not collection provenance. Provenance is the sitting paper — department PDF,
+homework sheet, or packet under `assets/attachments/`.
+
+Do not store note screenshots under `assets/`. Do not list them as collection
+`provenance`. Do not keep a collection card whose only job is to wrap a
+screenshot.
+
+After the statement is on a problem card and linked to the sitting collection,
+delete the screenshot. Do not delete an unmatched screenshot to tidy the tree:
+until the sitting is identified, the image may be the only copy of the label.
+
 ## Heuristics have no place in this repo
 
 A heuristic is a proxy for intelligent work that hasn't been done yet. It
@@ -101,6 +136,89 @@ for a human to read. It must never be wired to anything that acts on it.
 The build reads authored content and renders it. It does not derive fields. A
 build that derives titles, classifications, relations, or any other field is
 fabricating content, not rendering it.
+
+# Collection provenance
+
+A collection is a source document, not an exam sitting. One PDF is one
+collection. If that PDF *is* a single sitting's problem set, the collection is
+that sitting. If the PDF is a compilation of several papers, the collection is
+the compilation; the sittings inside it are `sections` of that card, not
+separate collections. Do not split a compilation PDF into one collection per
+exam. (A workshop that is several sheet PDFs is already one compilation
+with one href per sheet and one section per sheet. A section that
+is another source — an exam paper that is its own collection — lists that
+collection instead of copying its problem list. The sitting collection owns
+that sheet's provenance href.)
+
+On a **collection** card, `provenance:` is a YAML list of hrefs (`https://` or
+repo-relative paths). Each href is the document the problems were extracted
+from: the official paper, the homework sheet, or — for a textbook collection —
+the book. A markdown file is not that document. A reader following the link
+must be able to verify the list against that document.
+
+Origin notes that are not links belong in a `::: remark` block on the card body,
+not in frontmatter.
+
+`just provenance` measures empty lists, hrefs that do not resolve, hrefs
+listed on more than one collection, hrefs whose path is a markdown file,
+hrefs whose path is an image file, hrefs whose path is under a forbidden
+source tree (`make-me-a-qual`, wiki copies, importer wrappers, and the
+like), and collections whose area appears on no problem or exercise card.
+It is not a gate. Filling the list so the measurement is quieter is
+fabricating a source.
+
+## What must not appear as a collection href
+
+None of the following is provenance, even if the file is in this repository or
+the wiki once named it as the source.
+
+- This project's wiki (`wiki/…`), wiki exam-term headings, or any page generated
+  from our cards. Grouping in the vault is not an independent document. Qual
+  notes record which sitting a problem came from; they are not the sitting
+  paper.
+- Qual-review-and-solutions compiled notes, generated TeX, pandoc tempfiles, or
+  a copy of wiki or QRS content parked under `assets/`. Same rule: use them to
+  identify the sitting; list the paper in `provenance`.
+- A solution writeup. A writeup of solutions is not the exam, the homework
+  sheet, or the source document.
+- A figure that appears inside a writeup.
+- A standalone problem image (`.png`, `.jpg`, and the like). An image file is
+  not the sitting paper. Screenshots of the author's notes are not assets;
+  see Screenshots of notes.
+- An importer wrapper: markdown generated from a PDF, authored MMAQ `.md`,
+  generated MMAQ `.tex`, or `Combined_Questions.pdf`. A markdown file is not
+  a collection href.
+- Any `dzackgarza` repository is not an independent source. A GitHub URL
+  under `dzackgarza`, a sibling clone, or a copy of that repo under `assets/`
+  is not a collection href. That includes `make-me-a-qual` and
+  `Combined_Questions.yaml`. This site's wiki is the same. A sitting paper
+  stored in `assets/attachments/` is the paper, not the repo.
+- A file that is a different sitting than the card claims.
+- A textbook catalog page or ISBN on a homework or exam collection. The
+  collection's document is the sheet. (A textbook collection may cite the book.)
+- Another collection card. Reprints of a published sitting go in `relations`
+  (`related-to`), not in `provenance`.
+- A dead GitHub URL to a deleted upstream. Vendor the actual source file into
+  this repo and point at that file.
+- Directory listings, pirated copies, or a live URL that does not serve the
+  paper.
+
+A compilation of photocopied sitting papers (for example
+`algebra_2010-2015_prelims.pdf`) is a source of truth if we did not compile it.
+The href is the packet. Unlabeled is fine: provenance is not a university.
+Read the pages for what they actually contain (heading, date, instructions,
+which sitting occupies which pages). Do not invent a department website, a
+compiler, or an institution the pages do not name. Do not treat the wiki
+attachments folder as a second source.
+
+An empty collection `provenance` list means no qualifying href is listed yet.
+Leave it empty. Hunt in this repo, sibling clones, and distinctive problem text
+on the web; if the sitting document is not found, the list stays empty.
+
+`::: remark` blocks render on the public site. They may discuss the mathematics
+or the contents of the card (for example which pages of a multi-institution
+scan this sitting occupies). They are not a dump of missing PDFs, wiki paths,
+or the state of the provenance field.
 
 # Solution status
 

@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-D5Q4S
 kind: fact
-title: 'Orientable Surfaces'
+title: Orientable Surfaces
 classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - orientation
+  - Surfaces
+  - Orientation
 relations: []
 review: draft
 ---

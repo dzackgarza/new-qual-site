@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-VTT7T
 kind: definition
-title: 'Normal family'
+title: Normal family
 classification:
   areas:
   - complex-analysis
   topics:
-  - normal-families
-  - uniform-convergence
+  - Normal Families
+  - Uniform Convergence
 relations: []
 review: draft
 ---

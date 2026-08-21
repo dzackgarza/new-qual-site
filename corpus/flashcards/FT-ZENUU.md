@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-ZENUU
 kind: theorem
-title: 'Sylow Theorems'
+title: Sylow Theorems
 classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - p-groups
+  - Sylow Theory
+  - p-Groups
 relations: []
 review: draft
 ---

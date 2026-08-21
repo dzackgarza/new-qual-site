@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-S2W5E
 kind: definition
-title: 'Cyclic Module'
+title: Cyclic Module
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - cyclic-groups
+  - Modules
+  - Cyclic Groups
 relations: []
 review: draft
 ---

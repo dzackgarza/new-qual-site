@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-LGWHM
 kind: theorem
-title: 'Riemann''s Removable Singularity Theorem'
+title: Riemann's Removable Singularity Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - removable-singularities
-  - singularities
+  - Removable Singularities
+  - Singularities
 relations:
 - kind: variant-of
   target: FT-5NI77

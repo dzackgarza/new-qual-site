@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: FE-GN3CF
 kind: example
-title: 'Example of a sequence of differentiable functions whose pointwise limit exists but is not differentiable.'
+title: Example of a sequence of differentiable functions whose pointwise limit exists
+  but is not differentiable.
 classification:
   areas:
   - real-analysis
   topics:
-  - differentiation
-  - convergence-of-functions
-  - counterexamples
+  - Differentiation
+  - Convergence of Functions
+  - Counterexamples
 relations: []
 review: draft
 ---

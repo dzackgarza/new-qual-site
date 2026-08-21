@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-S62UB
 kind: definition
-title: 'Zero Divisor'
+title: Zero Divisor
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - integral-domains
+  - Rings
+  - Integral Domains
 relations: []
 review: draft
 ---

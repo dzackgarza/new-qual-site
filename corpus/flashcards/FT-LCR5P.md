@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-LCR5P
 kind: theorem
-title: 'Dominated Convergence Theorem'
+title: Dominated Convergence Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-integrals
-  - integrals
+  - Convergence of Integrals
+  - Integrals
 relations: []
 review: draft
 ---

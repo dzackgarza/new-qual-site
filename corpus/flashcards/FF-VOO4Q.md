@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-VOO4Q
 kind: fact
-title: 'The generalized residue formula'
+title: The generalized residue formula
 classification:
   areas:
   - complex-analysis
   topics:
-  - residues
-  - poles
+  - Residues
+  - Poles
 relations: []
 review: draft
 ---

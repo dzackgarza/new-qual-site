@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - determinants
+  - Minimal and Characteristic Polynomials
+  - Determinants
 relations: []
 review: draft
 ---

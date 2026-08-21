@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-WV2QN
 kind: fact
-title: 'What is Young''s inequality?'
+title: What is Young's inequality?
 classification:
   areas:
   - real-analysis
   topics:
-  - convolution
-  - lp-spaces
-  - norms
+  - Convolution
+  - Lp Spaces
+  - Norms
 relations: []
 review: draft
 ---

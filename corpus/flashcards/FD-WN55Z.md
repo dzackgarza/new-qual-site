@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-WN55Z
 kind: definition
-title: 'Equivalent Characterizations of Completeness'
+title: Equivalent Characterizations of Completeness
 classification:
   areas:
   - real-analysis
   topics:
-  - completeness
-  - series-of-numbers
+  - Completeness
+  - Series of Numbers
 relations: []
 review: draft
 ---

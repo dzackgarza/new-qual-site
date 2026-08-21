@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FT-ITKJU
 kind: theorem
-title: 'Weierstrass Approximation Theorem'
+title: Weierstrass Approximation Theorem
 classification:
   areas:
   - real-analysis
   topics:
-  - stone-weierstrass
-  - density
-  - polynomials
+  - Stone-Weierstrass
+  - Density
+  - Polynomials
 relations: []
 review: draft
 ---

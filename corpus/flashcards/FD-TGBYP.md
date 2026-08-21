@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-TGBYP
 kind: definition
-title: 'Equicontinuous'
+title: Equicontinuous
 classification:
   areas:
   - real-analysis
   topics:
-  - equicontinuity
-  - metric-spaces
+  - Equicontinuity
+  - Metric Spaces
 relations: []
 review: draft
 ---

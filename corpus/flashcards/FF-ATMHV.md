@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-ATMHV
 kind: fact
-title: '$\sin(\pi/6) = \cdots$'
+title: $\sin(\pi/6) = \cdots$
 classification:
   areas:
   - real-analysis
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

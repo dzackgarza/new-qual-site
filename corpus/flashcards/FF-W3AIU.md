@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - euler-characteristic
-  - surfaces
+  - Euler Characteristic
+  - Surfaces
 relations: []
 review: draft
 ---

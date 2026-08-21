@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-NHZPF
 kind: definition
-title: 'Hausdorff Space'
+title: Hausdorff Space
 classification:
   areas:
   - topology
   topics:
-  - hausdorff-spaces
-  - separation-axioms
+  - Hausdorff Spaces
+  - Separation Axioms
 relations: []
 review: draft
 ---

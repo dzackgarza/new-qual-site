@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: FF-JKLWM
 kind: fact
-title: 'Inverting series: for $A(z) = \sum c_k z^k$ and $1/A(z) = \sum b_k z^k$, the formula for the $b_k$ in terms of $c_k$.'
+title: 'Inverting series: for $A(z) = \sum c_k z^k$ and $1/A(z) = \sum b_k z^k$, the
+  formula for the $b_k$ in terms of $c_k$.'
 classification:
   areas:
   - complex-analysis
   topics:
-  - power-series
-  - series-of-functions
+  - Power Series
+  - Series of Functions
 relations: []
 review: draft
 ---

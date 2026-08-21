@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FD-3BK6U
 kind: definition
-title: 'Chebyshev''s Inequality'
+title: Chebyshev's Inequality
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - lp-spaces
-  - integrals
+  - Measure Theory
+  - Lp Spaces
+  - Integrals
 relations: []
 review: draft
 ---

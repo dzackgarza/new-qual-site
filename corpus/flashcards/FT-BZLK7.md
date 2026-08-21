@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-BZLK7
 kind: theorem
-title: 'Riemann-Lebesgue Lemma'
+title: Riemann-Lebesgue Lemma
 classification:
   areas:
   - real-analysis
   topics:
-  - fourier-analysis
-  - l1
+  - Fourier Analysis
+  - L¹
 relations: []
 review: draft
 ---

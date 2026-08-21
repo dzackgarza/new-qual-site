@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-CLFAB
 kind: fact
-title: '$\cos(\pi/6) = \cdots$'
+title: $\cos(\pi/6) = \cdots$
 classification:
   areas:
   - real-analysis
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

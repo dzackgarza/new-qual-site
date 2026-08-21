@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-2UWAQ
 kind: definition
-title: 'Simple group'
+title: Simple group
 classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - normal-subgroups
+  - Simple Groups
+  - Normal Subgroups
 relations: []
 review: draft
 ---

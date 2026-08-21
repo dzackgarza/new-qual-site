@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-XRRNZ
 kind: definition
-title: 'Notation and definition of fixed points of a group action.'
+title: Notation and definition of fixed points of a group action.
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - orbit-stabilizer
+  - Group Actions
+  - Orbit-Stabilizer
 relations: []
 review: draft
 ---

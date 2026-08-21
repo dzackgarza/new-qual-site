@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - polynomials
+  - Fields
+  - Polynomials
 relations:
 - kind: variant-of
   target: FD-24RNF

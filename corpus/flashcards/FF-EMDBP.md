@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-EMDBP
 kind: fact
-title: '$p\dash$test for integrals.'
+title: $p\dash$test for integrals.
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - lp-spaces
+  - Integrals
+  - Lp Spaces
 relations: []
 review: draft
 ---

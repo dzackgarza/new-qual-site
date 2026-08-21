@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-MJEUU
 kind: fact
-title: '$H_* \mathbb{RP}^3$'
+title: $H_* \mathbb{RP}^3$
 classification:
   areas:
   - topology
   topics:
-  - homology
+  - Homology
 relations: []
 review: draft
 ---

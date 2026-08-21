@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: FE-VT5N3
 kind: example
-title: 'A sequence of functions that converges a.e. but not in $L^1$, uniformly, or pointwise'
+title: A sequence of functions that converges a.e. but not in $L^1$, uniformly, or
+  pointwise
 classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - l1
-  - counterexamples
+  - Convergence of Functions
+  - L¹
+  - Counterexamples
 relations: []
 review: draft
 ---

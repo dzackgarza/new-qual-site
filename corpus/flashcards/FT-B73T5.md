@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FT-B73T5
 kind: theorem
-title: 'Morera''s Theorem'
+title: Morera's Theorem
 classification:
   areas:
   - complex-analysis
   topics:
-  - morera
-  - holomorphic-functions
+  - Morera
+  - Holomorphic Functions
 relations: []
 review: draft
 ---

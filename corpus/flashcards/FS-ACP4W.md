@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FS-ACP4W
 kind: strategy
-title: 'Replacing a sequence of sets by a sequence of disjoint sets'
+title: Replacing a sequence of sets by a sequence of disjoint sets
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

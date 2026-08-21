@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-D2QPH
 kind: definition
-title: 'Limit definition of exponential function'
+title: Limit definition of exponential function
 classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-numbers
-  - limits
+  - Sequences of Numbers
+  - Limits
 relations: []
 review: draft
 ---

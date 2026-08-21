@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FD-PLAEO
 kind: definition
-title: 'Composition Series'
+title: Composition Series
 classification:
   areas:
   - algebra
   topics:
-  - subgroup-series
-  - simple-groups
+  - Subgroup Series
+  - Simple Groups
 relations: []
 review: draft
 ---

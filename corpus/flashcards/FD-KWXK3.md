@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-KWXK3
 kind: definition
-title: 'Algebraic Extension'
+title: Algebraic Extension
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
+  - Field Extensions
 relations: []
 review: draft
 ---

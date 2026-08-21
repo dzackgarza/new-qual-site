@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
-  - l1
-  - counterexamples
+  - Convergence of Functions
+  - L¹
+  - Counterexamples
 relations: []
 review: draft
 ---

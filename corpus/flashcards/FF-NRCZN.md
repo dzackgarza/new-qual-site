@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-NRCZN
 kind: fact
-title: 'What is a dense subset?'
+title: What is a dense subset?
 classification:
   areas:
   - real-analysis
   topics:
-  - density
-  - closure
+  - Density
+  - Closure
 relations: []
 review: draft
 ---

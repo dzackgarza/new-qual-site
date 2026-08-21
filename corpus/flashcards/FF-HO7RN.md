@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-HO7RN
 kind: fact
-title: 'Cauchy''s Integral Formula for Derivatives'
+title: Cauchy's Integral Formula for Derivatives
 classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-estimates
-  - cauchy-integral-formula
+  - Cauchy Estimates
+  - Cauchy Integral Formula
 relations: []
 review: draft
 ---

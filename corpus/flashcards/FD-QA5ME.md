@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FD-QA5ME
 kind: definition
-title: 'Definition of Outer Measure'
+title: Definition of Outer Measure
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

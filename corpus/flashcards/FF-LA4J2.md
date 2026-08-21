@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-LA4J2
 kind: fact
-title: 'What is the Caratheodory characterization of outer measure?'
+title: What is the Caratheodory characterization of outer measure?
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 ---

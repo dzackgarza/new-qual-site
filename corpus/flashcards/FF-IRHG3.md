@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FF-IRHG3
 kind: fact
-title: 'Groups of Order 16'
+title: Groups of Order 16
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
-  - p-groups
+  - Classification
+  - Groups
+  - p-Groups
 relations: []
 review: draft
 ---

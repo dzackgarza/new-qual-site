@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-GBHJL
 kind: fact
-title: 'Classification of Closed Surfaces'
+title: Classification of Closed Surfaces
 classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - classification
+  - Surfaces
+  - Classification
 relations: []
 review: draft
 ---

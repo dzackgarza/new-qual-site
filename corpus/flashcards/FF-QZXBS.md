@@ -2,15 +2,15 @@
 schema: qual/card@1
 id: FF-QZXBS
 kind: fact
-title: 'Types of isolated singularities'
+title: Types of isolated singularities
 classification:
   areas:
   - complex-analysis
   topics:
-  - singularities
-  - poles
-  - essential-singularities
-  - removable-singularities
+  - Singularities
+  - Poles
+  - Essential Singularities
+  - Removable Singularities
 relations: []
 review: draft
 ---

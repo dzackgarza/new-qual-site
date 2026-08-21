@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: FF-WDDTM
 kind: fact
-title: '$\arctan(1) = \cdots$'
+title: $\arctan(1) = \cdots$
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
+  - Trigonometry
 relations: []
 review: draft
 ---

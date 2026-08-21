@@ -2,13 +2,13 @@
 schema: qual/card@1
 id: FF-UC7SQ
 kind: fact
-title: 'Factor $x^n - y^n$'
+title: Factor $x^n - y^n$
 classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - factorization
+  - Polynomials
+  - Factorization
 relations: []
 review: draft
 ---

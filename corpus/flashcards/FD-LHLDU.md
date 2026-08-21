@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: FD-LHLDU
 kind: definition
-title: '$\gens{p}\dash$primary'
+title: $\gens{p}\dash$primary
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - primary-decomposition
-  - torsion
+  - Modules
+  - Primary Decomposition
+  - Torsion
 relations: []
 review: draft
 ---
