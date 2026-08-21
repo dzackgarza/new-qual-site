@@ -162,9 +162,17 @@ All paths are under `/home/dzack/Zotero/storage/<attachment-key>/`.
 **Collection card:** `SRC-TEXT-SMI`
 **Extraction:** Vendored PDF (`assets/attachments/8000e.pdf`) with vendored MinerU pipeline extraction (`assets/attachments/8000e_extracted.md`). Not in Zotero by decision — the packet has no canonical citation info.
 
-- [x] Extract `8000e.pdf` with MinerU and vendor the markdown
-- [ ] Extract the remaining `8000e.pdf` exercises into cards (see `SRC-TEXT-SMI` remark)
-- [ ] Locate the separate 843–845 course notes (different document from `8000e.pdf`)
+- [x] Abelian groups — items 1, 2, 6 in cards
+- [ ] Generators for abelian groups, and free abelian groups — items 1, 2 in cards; remaining: 0 (reading), 3, 4, 5
+- [ ] Euclidean domains — items 1, 5 in cards; remaining: 2–4, 6–9
+- [ ] Finitely generated abelian groups and $k[X]$ modules — remaining: all of 1–4
+- [ ] Jordan forms — remaining: all of 1–4
+- [ ] Noetherian rings — items 1, 7 in cards; remaining: 2–6, 8–10
+- [ ] Normality and localization — item 1 in cards; remaining: 2–8
+- [ ] Sylow subgroups — item 2 in cards; remaining: 1, 3–10
+- [ ] Cycles in $S(n)$ and commutators — item 1 in cards; remaining: 2–10
+- [ ] Galois groups — remaining: the five prelim pointers
+- [ ] Fall 2006 midterm — in the packet but not represented on the collection card; candidate for its own sitting collection
 
 **Notes:**
 - The hosted MinerU API failed repeatedly on this file; the extraction was produced by a local MinerU pipeline run.
