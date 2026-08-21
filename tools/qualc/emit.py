@@ -965,9 +965,15 @@ def collection_page(
     )
     completion_rows = _rows(con, "select completion from sources where id=?", (src["id"],))
     completion = completion_rows[0]["completion"] if completion_rows else "complete"
-    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(
-        con, listed, inline_cache, completion
-    )
+    provenance = [
+        row["href"]
+        for row in _rows(
+            con,
+            "select href from collection_provenance where collection_id=? order by ordinal",
+            (src["id"],),
+        )
+    ]
+    return {"title": src["title"], "subtitle": src["id"]}, _collection_listing(con, listed, inline_cache, completion, provenance)
 
 
 def _collection_listing(
@@ -975,6 +981,7 @@ def _collection_listing(
     listed: list[sqlite3.Row],
     inline_cache: dict[str, list[pf.Inline]],
     completion: str = "complete",
+    provenance: list[str] | None = None,
 ) -> list[pf.Block]:
     """The collection card's `problems:` / `sections:` list is the page body.
 
@@ -990,13 +997,10 @@ def _collection_listing(
 
     blocks: list[pf.Block] = []
     if completion == "incomplete":
-        blocks.append(
-            pf.Para(
-                pf.Str(
-                    "This collection is incomplete; listed items are a prefix of the source, and further extraction is pending."
-                )
-            )
-        )
+        blocks.append(pf.Para(pf.Str("This collection is incomplete; listed items are a prefix of the source, and further extraction is pending.")))
+    if provenance:
+        blocks.append(pf.Header(pf.Str("Provenance"), level=2))
+        blocks.append(pf.BulletList(*[pf.ListItem(pf.Plain(pf.Link(pf.Str(href), url=href))) for href in provenance]))
     blocks.append(
         pf.Para(
             pf.Str(str(len(listed))),
@@ -1159,16 +1163,15 @@ def _plural(kind: str) -> str:
     return f"{kind[:-1]}ies" if kind.endswith("y") else f"{kind}s"
 
 
-def _query_heading(query: PublicationQuery, topic_names: dict[str, str]) -> str:
+def _query_heading(query: PublicationQuery) -> str:
     """What a query panel holds, said in the author's own words.
 
     Every panel used to be headed `More from the catalog`, so a section with
     ten of them offered ten indistinguishable headings and nothing under them
     was addressable. The kind and the topics are already written in the
-    manifest, and `topics.yaml` already carries a name for each topic, so the
-    heading restates the query rather than inventing a title for it.
+    manifest, so the heading restates the query rather than inventing a title.
     """
-    topics = ", ".join(topic_names[topic] if topic in topic_names else topic for topic in query.topics)
+    topics = ", ".join(query.topics)
     return f"{_plural(query.kind).title()}: {topics}" if topics else _plural(query.kind).title()
 
 
@@ -1177,7 +1180,6 @@ def publication_section_page(
     manifest: PublicationManifest,
     section: PublicationSection,
     inline_cache: dict[str, list[pf.Inline]],
-    topic_names: dict[str, str],
 ) -> Page:
     blocks: list[pf.Block] = [
         pf.Para(*_inlines(section.lede, inline_cache)),
@@ -1196,7 +1198,7 @@ def publication_section_page(
                 blocks.append(
                     pf.Div(
                         pf.Header(
-                            *_inlines(_query_heading(query, topic_names), inline_cache),
+                            *_inlines(_query_heading(query), inline_cache),
                             level=2,
                         ),
                         pf.BulletList(
@@ -1314,6 +1316,22 @@ def listing_page(
     return {"title": title, "listing": listing}, [pf.Para(*_inlines(lede, inline_cache))]
 
 
+# Separates multi-valued facet terms in HTML data attributes. Topics are free
+# strings and may contain spaces, so space is not a usable delimiter.
+FACET_SEP = "|"
+
+
+def _facet_terms(joined: str | None) -> list[str]:
+    return [term for term in (joined or "").split(FACET_SEP) if term]
+
+
+def _facet_option_label(axis: str, value: str) -> str:
+    # Topics are authored display strings. Areas/institutions remain registry ids.
+    if axis in {"topic", "year"}:
+        return value
+    return value.replace("-", " ").title()
+
+
 def problem_browser_page(
     con: sqlite3.Connection,
     inline_cache: dict[str, list[pf.Inline]],
@@ -1326,18 +1344,22 @@ def problem_browser_page(
     }
     problems = _rows(
         con,
-        """
+        f"""
         select c.*,
-          (select group_concat(term, ' ') from classifications
+          (select group_concat(term, '{FACET_SEP}') from classifications
            where card_id=c.id and axis='area') as areas,
-          (select group_concat(term, ' ') from classifications
+          (select group_concat(term, '{FACET_SEP}') from classifications
            where card_id=c.id and axis='topic') as topics,
-          (select group_concat(distinct upper(e.institution))
-           from collection_problems cp join exam_sources e on e.id=cp.collection_id
-           where cp.problem_id=c.id) as institutions,
-          (select group_concat(distinct s.year)
-           from collection_problems cp join sources s on s.id=cp.collection_id
-           where cp.problem_id=c.id and s.year is not null) as years
+          (select group_concat(institution, '{FACET_SEP}') from (
+             select distinct upper(e.institution) as institution
+             from collection_problems cp join exam_sources e on e.id=cp.collection_id
+             where cp.problem_id=c.id
+           )) as institutions,
+          (select group_concat(year, '{FACET_SEP}') from (
+             select distinct s.year as year
+             from collection_problems cp join sources s on s.id=cp.collection_id
+             where cp.problem_id=c.id and s.year is not null
+           )) as years
         from cards c
         where c.kind='problem'
         order by c.title, c.id
@@ -1355,18 +1377,18 @@ def problem_browser_page(
         sources_by_problem.setdefault(source["problem_id"], []).append(source)
     rows: list[pf.Block] = []
     for problem in problems:
-        area_terms = (problem["areas"] or "").split()
-        topic_terms = (problem["topics"] or "").split()
-        institution_terms = (problem["institutions"] or "").split()
-        year_terms = (problem["years"] or "").split()
+        area_terms = _facet_terms(problem["areas"])
+        topic_terms = _facet_terms(problem["topics"])
+        institution_terms = _facet_terms(problem["institutions"])
+        year_terms = _facet_terms(problem["years"])
         facet_text = " · ".join(
-            value.replace("-", " ").title()
-            for value in (
-                problem["areas"] or "",
-                problem["institutions"] or "",
-                problem["years"] or "",
+            part
+            for part in (
+                ", ".join(_facet_option_label("area", a) for a in area_terms),
+                ", ".join(institution_terms),
+                ", ".join(year_terms),
             )
-            if value
+            if part
         )
         source_rows = sources_by_problem.get(problem["id"], [])
         source_links: list[pf.Inline] = []
@@ -1400,10 +1422,10 @@ def problem_browser_page(
                 classes=["problem-row"],
                 attributes={
                     "data-search": search,
-                    "data-area": " ".join(area_terms),
-                    "data-topic": " ".join(topic_terms),
-                    "data-institution": " ".join(institution_terms),
-                    "data-year": " ".join(year_terms),
+                    "data-area": FACET_SEP.join(area_terms),
+                    "data-topic": FACET_SEP.join(topic_terms),
+                    "data-institution": FACET_SEP.join(institution_terms),
+                    "data-year": FACET_SEP.join(year_terms),
                 },
             )
         )
@@ -1421,7 +1443,7 @@ def problem_browser_page(
             + "".join(
                 f'<label for="problem-{axis}">{axis.title()}</label>'
                 f'<select id="problem-{axis}" multiple size="5" data-problem-facet="{axis}">'
-                + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(value.replace("-", " ").title())}</option>' for value in values)
+                + "".join(f'<option value="{html.escape(value, quote=True)}">{html.escape(_facet_option_label(axis, value))}</option>' for value in values)
                 + "</select>"
                 for axis, values in facet_values.items()
             )
@@ -1773,17 +1795,18 @@ title: Generate a practice set
 <script>
 const QDATA=__GENDATA__;
 const insts=[...new Set(QDATA.flatMap(q=>q.insts))].filter(Boolean).sort();
+const escapeHtml=(value)=>String(value).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 const label=(value)=>value.replaceAll("-"," ").replace(/\\b\\w/g,(letter)=>letter.toUpperCase());
 const AREAS=Object.fromEntries([...new Set(QDATA.flatMap(q=>q.areas))].map((area)=>[area,label(area)]));
 const topics=[...new Set(QDATA.flatMap(q=>q.topics))].filter(Boolean).sort();
 const years=[...new Set(QDATA.flatMap(q=>q.years))].filter(Boolean).sort((a,b)=>Number(b)-Number(a));
 document.getElementById("gen-areas").innerHTML=Object.entries(AREAS)
   .map(([k,v])=>`<label class="opt"><input type="checkbox" class="ga"
-    value="${k}"> ${v}</label>`)
+    value="${escapeHtml(k)}"> ${escapeHtml(v)}</label>`)
   .join("");
-document.getElementById("gen-inst").innerHTML='<option value="">Any</option>'+insts.map(i=>`<option value="${i}">${i.toUpperCase()}</option>`).join("");
-document.getElementById("gen-topic").innerHTML='<option value="">Any</option>'+topics.map(t=>`<option value="${t}">${label(t)}</option>`).join("");
-document.getElementById("gen-year").innerHTML='<option value="">Any</option>'+years.map(y=>`<option value="${y}">${y}</option>`).join("");
+document.getElementById("gen-inst").innerHTML='<option value="">Any</option>'+insts.map(i=>`<option value="${escapeHtml(i)}">${escapeHtml(i.toUpperCase())}</option>`).join("");
+document.getElementById("gen-topic").innerHTML='<option value="">Any</option>'+topics.map(t=>`<option value="${escapeHtml(t)}">${escapeHtml(t)}</option>`).join("");
+document.getElementById("gen-year").innerHTML='<option value="">Any</option>'+years.map(y=>`<option value="${escapeHtml(y)}">${escapeHtml(y)}</option>`).join("");
 function sample(a,n){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a.slice(0,n);}
 document.getElementById("gen-go").onclick=()=>{
   const areas=[...document.querySelectorAll(".ga:checked")].map(c=>c.value);
@@ -1801,7 +1824,7 @@ document.getElementById("gen-go").onclick=()=>{
   const pick=sample(pool,n);
   const sheet=document.getElementById("gen-sheet");
   if(!pick.length){sheet.innerHTML='<p class="text-muted">No problems match. Loosen the criteria.</p>';return;}
-  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst.toUpperCase():"")+(topic?" · "+label(topic):"")+(year?" · "+year:"");
+  const title=(areas.length?areas.map(a=>AREAS[a]).join(", "):"All areas")+(inst?" · "+inst.toUpperCase():"")+(topic?" · "+topic:"")+(year?" · "+year:"");
   sheet.innerHTML=`<h2>Practice Set</h2><p style="text-align:center" class="text-muted">${pick.length} problems · ${title}</p>`+
     pick.map((q,i)=>`<div class="q">
       <div class="qn">${i+1}.</div>
@@ -1826,7 +1849,6 @@ def project(
     publications: Path,
     site: Path,
     macros: dict,
-    topic_names: dict[str, str],
     wiki_pages: list[WikiPage] | None = None,
 ) -> None:
     if out.exists():
@@ -1865,7 +1887,7 @@ def project(
             "Past exams.",
         ]
     )
-    inline_values.extend(_query_heading(item.query, topic_names) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
+    inline_values.extend(_query_heading(item.query) for guide in guides for section in guide.sections for item in section.items if isinstance(item, QueryItem))
     inline_values.extend(guide.title for guide in guides)
     inline_values.extend(guide.lede for guide in guides)
     inline_values.extend(value for guide in guides for section in guide.sections for value in (section.title, section.lede))
@@ -1941,7 +1963,6 @@ def project(
                     guide,
                     section,
                     inline_cache,
-                    topic_names,
                 ),
                 out / "guide" / guide.id / f"{section.slug}.qmd",
                 SubjectPage(_publication_navigation(guide, section.slug)),

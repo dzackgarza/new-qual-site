@@ -15,9 +15,10 @@ from .diagnostics import Diagnostic, DiagnosticCode
 from .model import (
     AcademicTerm,
     CollectionCard,
-    ContributedArtifact,
+    CompilationSource,
     ExamSource,
     ExerciseCard,
+    HomeworkSource,
     ParsedCard,
     ProblemCard,
     TermOnly,
@@ -48,13 +49,19 @@ create table sources (
 );
 create table exam_sources (id text primary key, institution text not null, area text not null);
 create table textbook_sources (id text primary key, textbook text not null);
-create table artifact_sources (id text primary key, provenance text not null);
+create table homework_sources (id text primary key, area text not null);
+create table compilation_sources (id text primary key, area text not null);
 create table collection_problems (
   collection_id text not null,
   section_ordinal integer,
   section_name text,
   ordinal integer not null,
   problem_id text not null
+);
+create table collection_provenance (
+  collection_id text not null,
+  ordinal integer not null,
+  href text not null
 );
 create table sections (
   card_id text not null, section_kind text not null, ordinal integer not null, text text not null
@@ -65,16 +72,10 @@ create virtual table search using fts5(card_id unindexed, section_kind unindexed
 
 def load_vocabularies(root: Path) -> dict[str, set[str]]:
     vocab = {}
-    for name in ("areas", "topics", "institutions", "textbooks"):
+    for name in ("areas", "institutions", "textbooks"):
         data = yaml.safe_load((root / f"{name}.yaml").read_text())
         vocab[name] = {entry["id"] for entry in data}
     return vocab
-
-
-def topic_names(root: Path) -> dict[str, str]:
-    """Each topic id under the display name the vocabulary already gives it."""
-    data = yaml.safe_load((root / "topics.yaml").read_text())
-    return {entry["id"]: entry["name"] for entry in data}
 
 
 def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagnostic]:
@@ -115,9 +116,6 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
         for area in p.card.classification.areas:
             if area not in vocab["areas"]:
                 errors.append(Diagnostic(DiagnosticCode.UNKNOWN_AREA, where, f"unknown area {area!r}"))
-        for topic in p.card.classification.topics:
-            if topic not in vocab["topics"]:
-                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_TOPIC, where, f"unknown topic {topic!r}"))
         for rel in p.card.relations:
             if rel.target not in by_id:
                 errors.append(
@@ -128,39 +126,30 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                     )
                 )
         if isinstance(p.card, CollectionCard):
-            # One registry check per variant, matching the union. Only an exam
-            # sitting has an institution; a textbook has a registry entry
-            # instead; an artifact's provenance is free text by design and has
-            # no registry to check against.
-            payload = p.card.payload
-            if isinstance(payload, ExamSource) and payload.institution not in vocab["institutions"]:
+            # One registry check per variant, matching the union.
+            source = p.card.source
+            if isinstance(source, ExamSource) and source.institution not in vocab["institutions"]:
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.UNKNOWN_INSTITUTION,
                         where,
-                        f"unknown institution {payload.institution!r}",
+                        f"unknown institution {source.institution!r}",
                     )
                 )
-            # `ExamSource.area` is the only payload area field, and it went
-            # unchecked while `classification.areas` was checked. That is how
-            # `prelim` entered 29 UGA source cards unregistered: nothing rejected
-            # it here, and no card could inherit an area the registry did not
-            # know, so 419 cards ended up with `areas: []`. Registering `prelim`
-            # fixed those 419; this is what stops the next one.
-            if isinstance(payload, ExamSource) and payload.area not in vocab["areas"]:
+            if isinstance(source, (ExamSource, HomeworkSource, CompilationSource)) and source.area not in vocab["areas"]:
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.UNKNOWN_AREA,
                         where,
-                        f"unknown payload area {payload.area!r}",
+                        f"unknown source area {source.area!r}",
                     )
                 )
-            if isinstance(payload, TextbookSource) and payload.textbook not in vocab["textbooks"]:
+            if isinstance(source, TextbookSource) and source.textbook not in vocab["textbooks"]:
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.UNKNOWN_TEXTBOOK,
                         where,
-                        f"unknown textbook {payload.textbook!r}",
+                        f"unknown textbook {source.textbook!r}",
                     )
                 )
     return errors
@@ -195,27 +184,30 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
             con.execute("insert into search values (?,?,?)", (c.id, kind, text))
 
         if isinstance(c, CollectionCard):
-            d = c.payload.date
+            d = c.source.date
             con.execute(
                 "insert into sources values (?,?,?,?,?,?)",
                 (
                     c.id,
-                    c.payload.source_kind,
+                    c.source.source_kind,
                     d.kind,
                     d.year if isinstance(d, AcademicTerm | YearOnly) else None,
                     d.term if isinstance(d, AcademicTerm | TermOnly) else None,
                     c.completion,
                 ),
             )
-            # One branch per variant, no fallback: a new source kind added to the
-            # union without a projection here is a mypy error, not a silent skip.
-            match c.payload:
+            for ordinal, href in enumerate(c.provenance):
+                con.execute(
+                    "insert into collection_provenance values (?,?,?)",
+                    (c.id, ordinal, href),
+                )
+            match c.source:
                 case ExamSource():
                     con.execute(
                         "insert into exam_sources values (?,?,?)",
-                        (c.id, c.payload.institution, c.payload.area),
+                        (c.id, c.source.institution, c.source.area),
                     )
-                    for ordinal, pid in enumerate(c.payload.problems):
+                    for ordinal, pid in enumerate(c.source.problems):
                         con.execute(
                             "insert into collection_problems values (?,?,?,?,?)",
                             (c.id, None, None, ordinal, pid),
@@ -223,28 +215,38 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
                 case TextbookSource():
                     con.execute(
                         "insert into textbook_sources values (?,?)",
-                        (c.id, c.payload.textbook),
+                        (c.id, c.source.textbook),
                     )
-                    for section_ordinal, section in enumerate(c.payload.sections):
+                    for section_ordinal, section in enumerate(c.source.sections):
                         for ordinal, pid in enumerate(section.problems):
                             con.execute(
                                 "insert into collection_problems values (?,?,?,?,?)",
                                 (c.id, section_ordinal, section.name, ordinal, pid),
                             )
-                case ContributedArtifact():
+                case HomeworkSource():
                     con.execute(
-                        "insert into artifact_sources values (?,?)",
-                        (c.id, c.payload.provenance),
+                        "insert into homework_sources values (?,?)",
+                        (c.id, c.source.area),
                     )
-                    if c.payload.sections:
-                        for section_ordinal, section in enumerate(c.payload.sections):
+                    for ordinal, pid in enumerate(c.source.problems):
+                        con.execute(
+                            "insert into collection_problems values (?,?,?,?,?)",
+                            (c.id, None, None, ordinal, pid),
+                        )
+                case CompilationSource():
+                    con.execute(
+                        "insert into compilation_sources values (?,?)",
+                        (c.id, c.source.area),
+                    )
+                    if c.source.sections:
+                        for section_ordinal, section in enumerate(c.source.sections):
                             for ordinal, pid in enumerate(section.problems):
                                 con.execute(
                                     "insert into collection_problems values (?,?,?,?,?)",
                                     (c.id, section_ordinal, section.name, ordinal, pid),
                                 )
                     else:
-                        for ordinal, pid in enumerate(c.payload.problems):
+                        for ordinal, pid in enumerate(c.source.problems):
                             con.execute(
                                 "insert into collection_problems values (?,?,?,?,?)",
                                 (c.id, None, None, ordinal, pid),

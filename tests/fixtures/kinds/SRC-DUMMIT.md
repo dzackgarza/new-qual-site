@@ -7,10 +7,10 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - Groups
 relations: []
 review: draft
-payload:
+source:
   source_kind: textbook
   textbook: dummit-foote
   date:

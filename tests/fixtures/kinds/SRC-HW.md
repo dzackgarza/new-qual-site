@@ -1,8 +1,8 @@
 ---
 schema: qual/card@1
-id: SRC-UGA-FIX
+id: SRC-HW
 kind: collection
-title: UGA Algebra qualifying exam, Spring 2019
+title: Algebra homework 3, Spring 2020
 classification:
   areas:
   - algebra
@@ -11,15 +11,14 @@ classification:
 relations: []
 review: draft
 source:
-  source_kind: university-exam
-  institution: uga
+  source_kind: homework
   area: algebra
   date:
     kind: academic-term
-    year: 2019
+    year: 2020
     term: spring
 ---
 
 ::: remark
-The exam-sitting variant: institution and area are both required.
+A homework sheet lists problems in `source.problems` once they are extracted.
 :::

@@ -15,7 +15,6 @@ class DiagnosticCode(Enum):
     # identity and registry
     DUPLICATE_ID = "duplicate-id"
     UNKNOWN_AREA = "unknown-area"
-    UNKNOWN_TOPIC = "unknown-topic"
     UNKNOWN_INSTITUTION = "unknown-institution"
     UNKNOWN_TEXTBOOK = "unknown-textbook"
     # relations

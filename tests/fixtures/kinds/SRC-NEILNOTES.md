@@ -7,12 +7,12 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
+  - Groups
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: Scanned solution set circulated in the Fall 2019 study group; author unrecorded.
+source:
+  source_kind: compilation
+  area: algebra
   date:
     kind: academic-term
     year: 2019
@@ -20,5 +20,5 @@ payload:
 ---
 
 ::: remark
-Provenance is a sentence because the honest answer is a sentence.
+Scanned solution set circulated in the Fall 2019 study group; author unrecorded.
 :::

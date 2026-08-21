@@ -2,10 +2,10 @@
 
 `test_invariants.py` owns the architectural claim that layout is inert.
 This file owns the injected-violation proof that an unregistered area cannot
-enter through a payload, and that `solved` matches the evidence on the card.
+enter through a source, and that `solved` matches the evidence on the card.
 
-The `qualc check` gate is the reason the payload-area guard exists at all: it
-validated `classification.areas` against the registry and never `payload.area`,
+The `qualc check` gate is the reason the source-area guard exists at all: it
+validated `classification.areas` against the registry and never `source.area`,
 so `prelim` entered 29 UGA collection cards unregistered, and the 419 cards that
 should have inherited an area from them ended up with `areas: []` instead.
 """
@@ -29,7 +29,7 @@ def _problem_card(card_id: str, *, solved: bool, sections: list[tuple[str, str]]
                 "id": card_id,
                 "kind": "problem",
                 "title": "A problem",
-                "classification": {"areas": ["algebra"], "topics": ["groups"]},
+                "classification": {"areas": ["algebra"], "topics": ["Groups"]},
                 "relations": [],
                 "review": "draft",
                 "solved": solved,
@@ -64,7 +64,7 @@ def test_solved_declaration_must_match_evidence() -> None:
                 "id": "S-LINKER",
                 "kind": "solution",
                 "title": "A solution living on its own card",
-                "classification": {"areas": ["algebra"], "topics": ["groups"]},
+                "classification": {"areas": ["algebra"], "topics": ["Groups"]},
                 "relations": [{"kind": "solves", "target": "P-LINKED"}],
                 "review": "draft",
             }
@@ -88,7 +88,7 @@ def _collection_card(area: str) -> ParsedCard:
                 "classification": {"areas": ["algebra"], "topics": []},
                 "relations": [],
                 "review": "draft",
-                "payload": {
+                "source": {
                     "source_kind": "university-exam",
                     "institution": "uga",
                     "area": area,
@@ -102,13 +102,13 @@ def _collection_card(area: str) -> ParsedCard:
     )
 
 
-def test_unregistered_payload_area_is_rejected() -> None:
-    """The injected violation: a collection card whose payload names an area the
+def test_unregistered_source_area_is_rejected() -> None:
+    """The injected violation: a collection card whose source names an area the
     registry does not know. Before this guard the corpus accepted it silently."""
     vocab = load_vocabularies(ROOT / "vocabularies")
 
     errors = validate([_collection_card("not-a-real-area")], vocab)
-    assert [error.code for error in errors] == [DiagnosticCode.UNKNOWN_AREA], f"an unregistered payload.area must be rejected as unknown-area; got {[e.code for e in errors]}"
+    assert [error.code for error in errors] == [DiagnosticCode.UNKNOWN_AREA], f"an unregistered source.area must be rejected as unknown-area; got {[e.code for e in errors]}"
 
     # And the same card with a registered area passes, so the guard is not
     # simply rejecting every collection card.

@@ -87,15 +87,27 @@ def test_obsidian_embed_syntax_is_bang_brackets_not_a_wikilink(tmp_path: Path) -
     assert _findings(tmp_path, "obsidian-embed-syntax") == ["wiki/embed.md"]
 
 
-def test_notion_hosts_are_the_two_domains_not_the_word_notion(tmp_path: Path) -> None:
+def test_notion_hosts_are_the_two_domains_not_lookalikes(tmp_path: Path) -> None:
     wiki = tmp_path / "wiki"
     _write(wiki / "so.md", "https://www.notion.so/abc\n")
     _write(wiki / "site.md", "https://team.notion.site/notes\n")
     _write(wiki / "word.md", "These used to live in Notion.\n")
+    _write(wiki / "mynotion.md", "See https://mynotion.so/page\n")
+    _write(wiki / "soccer.md", "https://notion.soccer/fixture\n")
     assert _findings(tmp_path, "notion-so-or-notion-site-urls") == [
         "wiki/site.md",
         "wiki/so.md",
     ]
+
+
+def test_hash_todo_is_standalone_marker_not_todolist_or_url_fragment(
+    tmp_path: Path,
+) -> None:
+    wiki = tmp_path / "wiki"
+    _write(wiki / "todo.md", "Proof. #todo finish the estimate.\n")
+    _write(wiki / "todolist.md", "See the #todolist for remaining work.\n")
+    _write(wiki / "fragment.md", "https://example.com/#todo\n")
+    assert _findings(tmp_path, "hash-todo-markers") == ["wiki/todo.md"]
 
 
 def test_line_shape_markers(tmp_path: Path) -> None:
@@ -130,10 +142,7 @@ def test_unreadable_front_matter_is_named_and_does_not_stop_other_checks(
     wiki.mkdir()
     (wiki / "broken.md").write_text("---\norder: [\n---\n")
     _write(wiki / "empty.md", "")
-    assert any(
-        finding.startswith("wiki/broken.md:")
-        for finding in _findings(tmp_path, "unreadable-wiki-pages")
-    )
+    assert any(finding.startswith("wiki/broken.md:") for finding in _findings(tmp_path, "unreadable-wiki-pages"))
     assert _findings(tmp_path, "empty-bodies") == ["wiki/empty.md"]
 
 
@@ -141,10 +150,7 @@ def test_doctor_exits_zero_with_findings_and_is_not_a_gate(tmp_path: Path) -> No
     _write(tmp_path / "wiki" / "empty.md", "")
     assert main(["--root", str(tmp_path), "--json"]) == 0
     # The CLI prints JSON to stdout; capture via run() rather than the print.
-    payload = [
-        {"check": check.name, "ok": check.ok, "findings": check.findings}
-        for check in run(ALL, root=tmp_path)
-    ]
+    payload = [{"check": check.name, "ok": check.ok, "findings": check.findings} for check in run(ALL, root=tmp_path)]
     dumped = json.dumps(payload)
     assert "empty-bodies" in dumped
     assert payload[ALL.index("empty-bodies")]["findings"] == ["wiki/empty.md"]

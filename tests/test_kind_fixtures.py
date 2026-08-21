@@ -63,17 +63,14 @@ def test_collection_completion_defaults_to_complete() -> None:
     card = parse_card(FIXTURES / "SRC-DUMMIT.md").card
     assert card.kind == "collection"
     assert card.completion == "complete"
+    assert card.provenance == []
 
 
 def test_incomplete_completion_parses(tmp_path: Path) -> None:
     from qualc.model import parse_card
 
     path = tmp_path / "SRC-DUMMIT.md"
-    path.write_text(
-        (FIXTURES / "SRC-DUMMIT.md").read_text().replace(
-            "review: draft\n", "review: draft\ncompletion: incomplete\n", 1
-        )
-    )
+    path.write_text((FIXTURES / "SRC-DUMMIT.md").read_text().replace("review: draft\n", "review: draft\ncompletion: incomplete\n", 1))
     card = parse_card(path).card
     assert card.completion == "incomplete"
 
@@ -82,12 +79,119 @@ def test_unknown_completion_is_rejected(tmp_path: Path) -> None:
     from qualc.model import parse_card
 
     path = tmp_path / "SRC-DUMMIT.md"
+    path.write_text((FIXTURES / "SRC-DUMMIT.md").read_text().replace("review: draft\n", "review: draft\ncompletion: todo\n", 1))
+    with pytest.raises(ValueError):
+        parse_card(path)
+
+
+def test_collection_provenance_parses(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    path = tmp_path / "SRC-DUMMIT.md"
     path.write_text(
-        (FIXTURES / "SRC-DUMMIT.md").read_text().replace(
-            "review: draft\n", "review: draft\ncompletion: todo\n", 1
+        (FIXTURES / "SRC-DUMMIT.md")
+        .read_text()
+        .replace(
+            "review: draft\n",
+            "review: draft\nprovenance:\n  - https://example.org/source.pdf\n  - assets/attachments/notes.pdf\n",
+            1,
         )
     )
+    card = parse_card(path).card
+    assert card.provenance == [
+        "https://example.org/source.pdf",
+        "assets/attachments/notes.pdf",
+    ]
+
+
+def test_empty_provenance_href_is_rejected(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    path = tmp_path / "SRC-DUMMIT.md"
+    path.write_text((FIXTURES / "SRC-DUMMIT.md").read_text().replace("review: draft\n", 'review: draft\nprovenance:\n  - ""\n', 1))
     with pytest.raises(ValueError):
+        parse_card(path)
+
+
+def test_compilation_sections_are_the_listing(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    work = fixture_repo(tmp_path)
+    (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP").replace("solved: true", "solved: false"))
+    card = work / "corpus" / "SRC-NEILNOTES.md"
+    card.write_text(
+        card.read_text().replace(
+            "    term: fall\n",
+            "    term: fall\n  sections:\n  - name: Day 1\n    problems:\n    - P-INDEXP\n",
+        )
+    )
+    parsed = parse_card(card).card
+    assert parsed.source.sections[0].name == "Day 1"
+    assert parsed.source.listed_problem_ids() == ["P-INDEXP"]
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-NEILNOTES.qmd").read_text()
+    assert "Day 1" in exam_qmd
+    con = sqlite3.connect(work / "build" / "catalog.sqlite")
+    rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEILNOTES' order by section_ordinal, ordinal").fetchall()
+    assert rows == [("Day 1", "P-INDEXP")]
+
+
+def test_compilation_section_may_list_a_collection(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    work = fixture_repo(tmp_path)
+    card = work / "corpus" / "SRC-NEILNOTES.md"
+    card.write_text(
+        card.read_text().replace(
+            "    term: fall\n",
+            "    term: fall\n  sections:\n  - name: Day 1\n    problems:\n    - SRC-UGA-FIX\n",
+        )
+    )
+    parsed = parse_card(card).card
+    assert parsed.source.sections[0].problems == ["SRC-UGA-FIX"]
+    assert parsed.source.listed_problem_ids() == []
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-NEILNOTES.qmd").read_text()
+    assert "Day 1" in exam_qmd
+    assert "SRC-UGA-FIX" in exam_qmd
+    con = sqlite3.connect(work / "build" / "catalog.sqlite")
+    rows = con.execute("select section_name, problem_id from collection_problems where collection_id='SRC-NEILNOTES'").fetchall()
+    assert rows == [("Day 1", "SRC-UGA-FIX")]
+
+
+def test_compilation_rejects_problems_and_sections(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    path = tmp_path / "SRC-NEILNOTES.md"
+    text = (
+        (FIXTURES / "SRC-NEILNOTES.md")
+        .read_text()
+        .replace(
+            "    term: fall\n",
+            "    term: fall\n  problems:\n  - PRB-INDEXP\n  sections:\n  - name: Day 1\n    problems:\n    - PRB-INDEXP\n",
+        )
+    )
+    path.write_text(text)
+    with pytest.raises(ValueError):
+        parse_card(path)
+
+
+def test_compilation_section_rejects_an_untyped_id(tmp_path: Path) -> None:
+    from qualc.model import parse_card
+
+    path = tmp_path / "SRC-NEILNOTES.md"
+    text = (
+        (FIXTURES / "SRC-NEILNOTES.md")
+        .read_text()
+        .replace(
+            "    term: fall\n",
+            "    term: fall\n  sections:\n  - name: Day 1\n    problems:\n    - NOT-AN-ID\n",
+        )
+    )
+    path.write_text(text)
+    with pytest.raises(ValueError, match="not a problem or collection id"):
         parse_card(path)
 
 
@@ -158,16 +262,33 @@ def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
     assert list(con.execute("select problem_id from collection_problems where collection_id='SRC-DUMMIT'")) == []
 
 
-def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
-    """The collection payload is a discriminated union and the catalog mirrors it
-    rather than flattening it into one row with columns null for two kinds out
-    of three. This proves the catalog: an exam reaches `exam_sources`, a
-    textbook `textbook_sources`, an artifact `artifact_sources`, and each
-    reaches exactly one of them.
+def test_collection_page_renders_provenance_links(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    exam = work / "corpus" / "SRC-UGA-FIX.md"
+    exam.write_text(
+        exam.read_text().replace(
+            "review: draft\n",
+            "review: draft\nprovenance:\n  - https://www.math.uga.edu/past-qualifying-exams-1\n  - https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf\n",
+            1,
+        )
+    )
+    result = run_qualc("build", work)
+    assert result.returncode == 0, result.stderr
+    exam_qmd = (work / "build" / "quarto" / "exam" / "SRC-UGA-FIX.qmd").read_text()
+    assert "Provenance" in exam_qmd
+    assert "https://www.math.uga.edu/past-qualifying-exams-1" in exam_qmd
+    assert "https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf" in exam_qmd
+    con = sqlite3.connect(work / "build" / "catalog.sqlite")
+    assert [row[0] for row in con.execute("select href from collection_provenance where collection_id='SRC-UGA-FIX' order by ordinal")] == [
+        "https://www.math.uga.edu/past-qualifying-exams-1",
+        "https://www.math.uga.edu/sites/default/files/inline-files/8000e.pdf",
+    ]
+    assert list(con.execute("select href from collection_provenance where collection_id='SRC-DUMMIT'")) == []
 
-    This replaces an assertion that the fixture set covered all three variant
-    names, which restated the schema back to itself and proved nothing about
-    where a variant ends up.
+
+def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
+    """The collection source is a discriminated union and the catalog mirrors it
+    rather than flattening it into one row with columns null for other kinds.
     """
     work = fixture_repo(tmp_path)
     assert run_qualc("build", work).returncode == 0
@@ -176,7 +297,8 @@ def test_each_source_variant_lands_in_its_own_table(tmp_path: Path) -> None:
     tables = {
         "university-exam": "exam_sources",
         "textbook": "textbook_sources",
-        "contributed-artifact": "artifact_sources",
+        "homework": "homework_sources",
+        "compilation": "compilation_sources",
     }
     for variant, table in tables.items():
         ids = {i for (i,) in con.execute("select id from sources where source_kind = ?", (variant,))}

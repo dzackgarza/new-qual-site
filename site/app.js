@@ -86,8 +86,9 @@
     const setSelected = (select, values) => {
       for (const option of select.options) option.selected = values.includes(option.value);
     };
+    // Topics are free strings and may contain spaces; facet values are joined with `|`.
     const matchesFacet = (row, axis, values) =>
-      !values.length || values.every((value) => row.dataset[axis].split(" ").includes(value));
+      !values.length || values.every((value) => row.dataset[axis].split("|").includes(value));
     const applyFilter = () => {
       const terms = problemFilter.value.toLocaleLowerCase().trim().split(/\s+/);
       let visible = 0;

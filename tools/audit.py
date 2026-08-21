@@ -22,9 +22,12 @@ from typing import cast
 import yaml
 from qualc.cli import load
 from qualc.model import (
+    COLLECTION_ID_RE,
+    PROBLEM_ID_RE,
     AcademicTerm,
-    ContributedArtifact,
+    CompilationSource,
     ExamSource,
+    HomeworkSource,
     ParsedCard,
     TermOnly,
     TextbookSource,
@@ -87,14 +90,14 @@ def check_one_sitting_one_source(parsed: list[ParsedCard]) -> Check:
     seen: dict[tuple[str, str, str, int | None, str | None], list[str]] = {}
     for item in parsed:
         card = item.card
-        if card.kind != "collection" or card.payload.source_kind != "university-exam":
+        if card.kind != "collection" or card.source.source_kind != "university-exam":
             continue
-        date = card.payload.date
+        date = card.source.date
         # One branch per date variant, matching the union: a case without a year
         # genuinely has none, and `None` here says which case, never "missing".
         year = date.year if isinstance(date, AcademicTerm | YearOnly) else None
         term = date.term if isinstance(date, AcademicTerm | TermOnly) else None
-        key = (card.payload.institution, card.payload.area, date.kind, year, term)
+        key = (card.source.institution, card.source.area, date.kind, year, term)
         if key not in seen:
             seen[key] = []
         seen[key].append(card.id)
@@ -162,13 +165,16 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
                 edges[relation.target].add(item.card.id)
         if item.card.kind == "collection":
             listed: list[str]
-            match item.card.payload:
-                case ExamSource():
-                    listed = list(item.card.payload.problems)
-                case ContributedArtifact():
-                    listed = item.card.payload.listed_problem_ids()
+            match item.card.source:
+                case ExamSource() | HomeworkSource():
+                    listed = list(item.card.source.problems)
+                case CompilationSource():
+                    if item.card.source.sections:
+                        listed = [entry for section in item.card.source.sections for entry in section.problems]
+                    else:
+                        listed = list(item.card.source.problems)
                 case TextbookSource():
-                    listed = [pid for section in item.card.payload.sections for pid in section.problems]
+                    listed = [pid for section in item.card.source.sections for pid in section.problems]
             if listed:
                 edges.setdefault(item.card.id, set()).update(listed)
 
@@ -207,24 +213,28 @@ def check_collection_lists_problems(parsed: list[ParsedCard]) -> Check:
         card = pc.card
         if card.kind != "collection":
             continue
-        if isinstance(card.payload, ExamSource):
-            if not card.payload.problems:
+        if isinstance(card.source, ExamSource):
+            if not card.source.problems:
                 check.violations.append(f"{card.id}: exam collection lists no problems")
-        elif isinstance(card.payload, TextbookSource):
-            if not card.payload.sections:
+        elif isinstance(card.source, TextbookSource):
+            if not card.source.sections:
                 check.violations.append(f"{card.id}: textbook collection has no sections")
-        elif isinstance(card.payload, ContributedArtifact):
-            if not card.payload.problems and not card.payload.sections:
-                check.violations.append(f"{card.id}: artifact collection lists no problems")
+        elif isinstance(card.source, HomeworkSource):
+            if not card.source.problems:
+                check.violations.append(f"{card.id}: homework collection lists no problems")
+        elif isinstance(card.source, CompilationSource):
+            if not card.source.problems and not card.source.sections:
+                check.violations.append(f"{card.id}: compilation collection lists no problems")
     return check
 
 
 def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
-    """Every problem id a collection card lists must exist and be a problem card.
+    """Every id a collection card lists must exist as the kind that id names.
 
-    The exam/textbook `problems` metadata is the corpus's table of contents; a
-    dangling or mistyped id is a link a reader cannot reach, so it fails the
-    build rather than rendering as a dead wikilink.
+    `P-`/`E-` entries are problem or exercise cards. `SRC-` entries on a
+    section are nested collections (a workshop day that is another source).
+    A dangling or mistyped id is a link a reader cannot reach, so it fails
+    the build rather than rendering as a dead wikilink.
     """
     ids: dict[str, str] = {pc.card.id: pc.card.kind for pc in parsed}
     check = Check("collection-problem-references")
@@ -232,19 +242,29 @@ def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
         card = pc.card
         if card.kind != "collection":
             continue
-        pids: list[str] = []
-        if isinstance(card.payload, ExamSource):
-            pids = card.payload.problems
-        elif isinstance(card.payload, TextbookSource):
-            for section in card.payload.sections:
-                pids.extend(section.problems)
-        elif isinstance(card.payload, ContributedArtifact):
-            pids = card.payload.listed_problem_ids()
-        for pid in pids:
-            if pid not in ids:
-                check.violations.append(f"{card.id}: lists unknown problem {pid}")
-            elif ids[pid] not in ("problem", "exercise"):
-                check.violations.append(f"{card.id}: lists {pid} which is kind {ids[pid]!r}, not 'problem' or 'exercise'")
+        entries: list[str] = []
+        if isinstance(card.source, ExamSource):
+            entries = list(card.source.problems)
+        elif isinstance(card.source, TextbookSource):
+            for section in card.source.sections:
+                entries.extend(section.problems)
+        elif isinstance(card.source, HomeworkSource):
+            entries = list(card.source.problems)
+        elif isinstance(card.source, CompilationSource):
+            if card.source.sections:
+                for section in card.source.sections:
+                    entries.extend(section.problems)
+            else:
+                entries = list(card.source.problems)
+        for entry in entries:
+            if entry not in ids:
+                check.violations.append(f"{card.id}: lists unknown id {entry}")
+            elif PROBLEM_ID_RE.match(entry):
+                if ids[entry] not in ("problem", "exercise"):
+                    check.violations.append(f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'problem' or 'exercise'")
+            elif COLLECTION_ID_RE.match(entry):
+                if ids[entry] != "collection":
+                    check.violations.append(f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'collection'")
     return check
 
 

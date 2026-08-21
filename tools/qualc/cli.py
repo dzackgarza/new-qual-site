@@ -75,7 +75,6 @@ def main(argv: list[str] | None = None) -> int:
             args.root / "publications",
             args.root / "site",
             json.loads((args.root / "vocabularies" / "macros.json").read_text()),
-            index.topic_names(args.root / "vocabularies"),
             wiki_pages,
         )
         print(f"wrote {db} and {args.root / 'build' / 'quarto'}")

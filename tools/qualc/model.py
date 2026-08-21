@@ -1,8 +1,10 @@
 """Card schema.
 
-One required envelope; `kind` selects an exact payload. This is a closed
-discriminated union, not one weak record with forty optional fields.
-Unknown metadata fields are rejected, so a typo fails the build.
+Every card has a minimal schema (`CardBase`). Collection and problem cards
+extend it, as do the other kinds. `kind` selects the source spec on
+collection cards. This is a closed discriminated union, not one weak
+record with forty optional fields. Unknown metadata fields are rejected, so
+a typo fails the build.
 """
 
 from __future__ import annotations
@@ -62,7 +64,7 @@ DateSpec = Annotated[
 ]
 
 
-# --- envelope ---------------------------------------------------------------
+# --- minimal card schema ----------------------------------------------------
 
 RelationKind = Literal[
     "solves",
@@ -88,6 +90,7 @@ Completion = Literal["complete", "incomplete"]
 
 class Classification(Strict):
     areas: list[str]
+    # Free author strings ("Linear Maps", "Sylow Theory"), not a registry of slugs.
     topics: list[str]
 
 
@@ -96,7 +99,7 @@ class Relation(Strict):
     target: str
 
 
-class Envelope(Strict):
+class CardBase(Strict):
     card_schema: Literal["qual/card@1"] = Field(alias="schema")
     id: str
     title: str
@@ -105,20 +108,30 @@ class Envelope(Strict):
     review: Review
 
 
-# --- payloads ---------------------------------------------------------------
+# --- source specs -----------------------------------------------------------
 
 
 # Collection-list ids are `P-` or `E-` followed by uppercase alphanumerics, with
 # optional internal hyphens (e.g. `P-MMCHV`, `P-MMAQ-AWWA4FOL2L`, `E-BV7DD`).
-# Wiki exercise survivors of an exam item keep the `E-` id. A list entry that
-# matches neither is a typo and must fail the build.
+# Wiki exercise survivors of an exam item keep the `E-` id. A workshop section
+# that is another source lists that collection (`SRC-…`) instead of copying its
+# problem list. A list entry that matches neither is a typo and must fail the
+# build.
 PROBLEM_ID_RE = re.compile(r"^[PE]-[A-Z0-9]+(?:-[A-Z0-9]+)*$")
+COLLECTION_ID_RE = re.compile(r"^SRC-[A-Z0-9]+(?:-[A-Z0-9]+)*$")
 
 
 def _check_problem_ids(v: list[str]) -> list[str]:
     for pid in v:
         if not PROBLEM_ID_RE.match(pid):
             raise ValueError(f"not a problem id: {pid!r}")
+    return v
+
+
+def _check_section_entry_ids(v: list[str]) -> list[str]:
+    for entry in v:
+        if not PROBLEM_ID_RE.match(entry) and not COLLECTION_ID_RE.match(entry):
+            raise ValueError(f"not a problem or collection id: {entry!r}")
     return v
 
 
@@ -143,15 +156,20 @@ class ExamSource(Strict):
 
 
 class CollectionSection(Strict):
-    """A named grouping of a collection's problems (chapter, workshop day, …)."""
+    """A named grouping of a collection's contents (chapter, workshop day, …).
+
+    Entries are problem ids, or another collection when that section *is* that
+    source (an exam paper inside a workshop packet). The nested collection
+    owns the problem list and the sheet's provenance href.
+    """
 
     name: str
     problems: list[str] = []
 
     @field_validator("problems")
     @classmethod
-    def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
-        return _check_problem_ids(v)
+    def _problems_are_list_ids(cls, v: list[str]) -> list[str]:
+        return _check_section_entry_ids(v)
 
 
 class TextbookSource(Strict):
@@ -167,21 +185,25 @@ class TextbookSource(Strict):
     sections: list[CollectionSection] = []
 
 
-class ContributedArtifact(Strict):
-    """A PDF, scan, or handwritten note contributed to the corpus.
+class HomeworkSource(Strict):
+    """A homework sheet or problem set."""
 
-    `provenance` is required and free text because the honest answer is often a
-    sentence ("Neil's Fall 2019 solution set, origin unrecorded"). Requiring it
-    stops an artifact entering the corpus with no account of where it came from.
+    source_kind: Literal["homework"]
+    area: str
+    date: DateSpec
+    problems: list[str] = []
 
-    A single-sheet artifact lists `problems` in order of appearance. A packet
-    (a workshop, a multi-day handout) lists `sections` instead, one named
-    grouping per sheet. It is one collection either way; the days are not
-    collections. Empty until curated.
-    """
+    @field_validator("problems")
+    @classmethod
+    def _problems_are_problem_ids(cls, v: list[str]) -> list[str]:
+        return _check_problem_ids(v)
 
-    source_kind: Literal["contributed-artifact"]
-    provenance: str
+
+class CompilationSource(Strict):
+    """A compilation PDF, workshop packet, or other multi-part document."""
+
+    source_kind: Literal["compilation"]
+    area: str
     date: DateSpec
     problems: list[str] = []
     sections: list[CollectionSection] = []
@@ -192,24 +214,24 @@ class ContributedArtifact(Strict):
         return _check_problem_ids(v)
 
     @model_validator(mode="after")
-    def _problems_or_sections(self) -> ContributedArtifact:
+    def _problems_or_sections(self) -> CompilationSource:
         if self.problems and self.sections:
-            raise ValueError("an artifact lists problems or sections, not both")
+            raise ValueError("a compilation lists problems or sections, not both")
         return self
 
     def listed_problem_ids(self) -> list[str]:
         if self.sections:
-            return [pid for section in self.sections for pid in section.problems]
+            return [pid for section in self.sections for pid in section.problems if PROBLEM_ID_RE.match(pid)]
         return list(self.problems)
 
 
-SourcePayload = Annotated[
-    ExamSource | TextbookSource | ContributedArtifact,
+SourceSpec = Annotated[
+    ExamSource | TextbookSource | HomeworkSource | CompilationSource,
     Field(discriminator="source_kind"),
 ]
 
 
-class ProblemCard(Envelope):
+class ProblemCard(CardBase):
     kind: Literal["problem"]
     # Declared solution status. `check` proves it against the corpus: true
     # requires a solution section on the card or an incoming `solves` relation,
@@ -217,8 +239,8 @@ class ProblemCard(Envelope):
     solved: bool
 
 
-class CollectionCard(Envelope):
-    """An exam sitting, textbook, or contributed artifact.
+class CollectionCard(CardBase):
+    """An exam, homework sheet, compilation, or textbook collection.
 
     The card is the collection: it houses the ordered problem list. Appearances
     on a problem page are generated from that list.
@@ -226,76 +248,91 @@ class CollectionCard(Envelope):
     `completion` is `incomplete` when the list is a prefix of the source and
     further extraction is pending; it is not a substitute for listing the
     problems that have already been written.
+
+    `provenance` is a list of links to source material: `https://` URLs or
+    repo-relative paths such as `assets/attachments/...`.
     """
 
     kind: Literal["collection"]
-    payload: SourcePayload
+    source: SourceSpec
     completion: Completion = "complete"
+    provenance: list[str] = []
+
+    @field_validator("provenance")
+    @classmethod
+    def _provenance_hrefs(cls, v: list[str]) -> list[str]:
+        hrefs = []
+        for href in v:
+            href = href.strip()
+            if not href:
+                raise ValueError("provenance href is empty")
+            hrefs.append(href)
+        return hrefs
 
 
-# Every remaining kind is envelope plus prose body. They are separate classes
+# Every remaining kind is CardBase plus a prose body. They are separate classes
 # rather than one class with a `kind` field because the union is what makes an
 # unknown kind a build failure instead of a silently accepted string.
-class SolutionCard(Envelope):
+class SolutionCard(CardBase):
     kind: Literal["solution"]
 
 
-class HintCard(Envelope):
+class HintCard(CardBase):
     kind: Literal["hint"]
 
 
-class DefinitionCard(Envelope):
+class DefinitionCard(CardBase):
     kind: Literal["definition"]
 
 
-class TheoremCard(Envelope):
+class TheoremCard(CardBase):
     kind: Literal["theorem"]
 
 
-class PropositionCard(Envelope):
+class PropositionCard(CardBase):
     kind: Literal["proposition"]
 
 
-class CorollaryCard(Envelope):
+class CorollaryCard(CardBase):
     kind: Literal["corollary"]
 
 
-class LemmaCard(Envelope):
+class LemmaCard(CardBase):
     kind: Literal["lemma"]
 
 
-class ProofCard(Envelope):
+class ProofCard(CardBase):
     kind: Literal["proof"]
 
 
-class ExampleCard(Envelope):
+class ExampleCard(CardBase):
     kind: Literal["example"]
 
 
-class ExerciseCard(Envelope):
+class ExerciseCard(CardBase):
     kind: Literal["exercise"]
     solved: bool
 
 
-class RemarkCard(Envelope):
+class RemarkCard(CardBase):
     kind: Literal["remark"]
 
 
-class StrategyCard(Envelope):
+class StrategyCard(CardBase):
     kind: Literal["strategy"]
 
 
-class ConceptCard(Envelope):
+class ConceptCard(CardBase):
     kind: Literal["concept"]
 
 
-class FactCard(Envelope):
+class FactCard(CardBase):
     """A result stated without proof -- cited, folkloric, or assumed."""
 
     kind: Literal["fact"]
 
 
-class ClaimCard(Envelope):
+class ClaimCard(CardBase):
     """A local assertion discharged by a surrounding argument.
 
     Measured never to occur at the top level in either prose repo, so a
@@ -306,13 +343,13 @@ class ClaimCard(Envelope):
     kind: Literal["claim"]
 
 
-class WarningCard(Envelope):
+class WarningCard(CardBase):
     """Editorial errata and caveats, often correcting the original exam's wording."""
 
     kind: Literal["warning"]
 
 
-class SloganCard(Envelope):
+class SloganCard(CardBase):
     """A one-line informal gloss of what a result really says."""
 
     kind: Literal["slogan"]

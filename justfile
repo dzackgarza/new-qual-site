@@ -19,6 +19,10 @@ check:
 doctor *args:
     uv run python tools/wiki_doctor.py {{ args }}
 
+# List collections with empty provenance, unresolved hrefs, shared hrefs, markdown hrefs, image hrefs, forbidden hrefs, and collection areas with no problem cards (not a gate)
+provenance *args:
+    uv run python tools/provenance_hrefs.py {{ args }}
+
 # Compile the corpus: catalog.sqlite + QMD and static HTML projections
 build:
     uv run qualc build
