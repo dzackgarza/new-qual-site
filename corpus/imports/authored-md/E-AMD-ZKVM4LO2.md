@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - cyclic-groups
-  - simple-groups
-  - classification
+  - Cyclic Groups
+  - Simple Groups
+  - Classification
 relations: []
 review: draft
 solved: false

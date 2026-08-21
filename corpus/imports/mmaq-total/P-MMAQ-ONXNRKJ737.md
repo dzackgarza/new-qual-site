@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-ONXNRKJ737
 kind: problem
-title: The sum of group elements is central and nilpotent in $\mathbb{F}[G]$ when $\mathrm{char}\,\mathbb{F}=p$ and $|G|=p^n$, so $\mathbb{F}[G]$ is not semisimple
+title: The sum of group elements is central and nilpotent in $\mathbb{F}[G]$ when
+  $\mathrm{char}\,\mathbb{F}=p$ and $|G|=p^n$, so $\mathbb{F}[G]$ is not semisimple
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - ideals
+  - Rings
+  - Ideals
 relations: []
 review: draft
 solved: false

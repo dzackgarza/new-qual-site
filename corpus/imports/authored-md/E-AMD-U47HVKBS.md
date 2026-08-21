@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - prime-ideals
-  - integral-domains
-  - ideals
+  - Prime Ideals
+  - Integral Domains
+  - Ideals
 relations: []
 review: draft
 solved: false

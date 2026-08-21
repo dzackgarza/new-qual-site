@@ -2,14 +2,16 @@
 schema: qual/card@1
 id: P-AMD-NFZKF2XH
 kind: problem
-title: $\frac{1}{\pi}\iint_{\mathbb D}|\psi_\alpha'|^2=1$, $\frac{1}{\pi}\iint_{\mathbb D}|\psi_\alpha'|=\frac{1-|\alpha|^2}{|\alpha|^2}\log\frac{1}{1-|\alpha|^2}$, and $f(z)=-\frac{1}{2}(z+\frac{1}{z})$ conformal from the half-disk to $\mathbb H$
+title: $\frac{1}{\pi}\iint_{\mathbb D}|\psi_\alpha'|^2=1$, $\frac{1}{\pi}\iint_{\mathbb
+  D}|\psi_\alpha'|=\frac{1-|\alpha|^2}{|\alpha|^2}\log\frac{1}{1-|\alpha|^2}$, and
+  $f(z)=-\frac{1}{2}(z+\frac{1}{z})$ conformal from the half-disk to $\mathbb H$
 classification:
   areas:
   - complex-analysis
   topics:
-  - blaschke-factors
-  - conformal-maps
-  - integrals
+  - Blaschke Factors
+  - Conformal Maps
+  - Integrals
 relations: []
 review: draft
 solved: true

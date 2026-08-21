@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - ideals
-  - commutative-algebra
+  - Rings
+  - Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

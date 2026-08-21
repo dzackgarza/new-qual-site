@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - polynomials
-  - factorization
+  - Finite Fields
+  - Polynomials
+  - Factorization
 relations: []
 review: draft
 solved: true

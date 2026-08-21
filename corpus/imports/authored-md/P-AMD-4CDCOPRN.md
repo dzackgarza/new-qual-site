@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - mayer-vietoris
-  - degree
+  - Homology
+  - Mayer-Vietoris
+  - Degree
 relations: []
 review: draft
 solved: true

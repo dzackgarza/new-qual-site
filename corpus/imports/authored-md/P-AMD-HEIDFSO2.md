@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-AMD-HEIDFSO2
 kind: problem
-title: $H_*(X; \QQ) = H_*(X;\ZZ)\otimes\QQ$ and $H^*(X; \ZZ) = \operatorname{Hom}(H_*(X; \ZZ), \QQ)$
+title: $H_*(X; \QQ) = H_*(X;\ZZ)\otimes\QQ$ and $H^*(X; \ZZ) = \operatorname{Hom}(H_*(X;
+  \ZZ), \QQ)$
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - cohomology
-  - homological-algebra
+  - Homology
+  - Cohomology
+  - Homological Algebra
 relations: []
 review: draft
 solved: false

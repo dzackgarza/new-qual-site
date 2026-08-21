@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - rings
+  - Ideals
+  - Rings
 relations: []
 review: draft
 solved: true

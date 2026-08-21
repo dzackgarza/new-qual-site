@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-OCQHG
 kind: problem
-title: The field of fractions of a PID that is not a field is not a finitely generated module
+title: The field of fractions of a PID that is not a field is not a finitely generated
+  module
 classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - modules
+  - Principal Ideal Domains
+  - Modules
 relations: []
 review: draft
 solved: false

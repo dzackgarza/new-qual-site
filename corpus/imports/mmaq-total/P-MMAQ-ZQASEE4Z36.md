@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-functions
+  - Convergence of Functions
 relations: []
 review: draft
 solved: true

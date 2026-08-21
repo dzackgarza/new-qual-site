@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - local-rings
-  - maximal-ideals
+  - Rings
+  - Local Rings
+  - Maximal Ideals
 relations: []
 review: draft
 solved: false

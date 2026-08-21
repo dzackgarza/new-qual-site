@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - nilpotent-groups
+  - Abelian Groups
+  - Nilpotent Groups
 relations: []
 review: draft
 solved: false

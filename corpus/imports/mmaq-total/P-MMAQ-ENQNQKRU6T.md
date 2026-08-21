@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-ENQNQKRU6T
 kind: problem
-title: 'Rings with $a^2=a$: Jacobson radical, characteristic, commutativity, and finite rings isomorphic to $(\ZZ/2\ZZ)^d$'
+title: 'Rings with $a^2=a$: Jacobson radical, characteristic, commutativity, and finite
+  rings isomorphic to $(\ZZ/2\ZZ)^d$'
 classification:
   areas:
   - algebra
   topics:
-  - jacobson-radical
-  - characteristic
-  - rings
+  - Jacobson Radical
+  - Characteristic
+  - Rings
 relations: []
 review: draft
 solved: false

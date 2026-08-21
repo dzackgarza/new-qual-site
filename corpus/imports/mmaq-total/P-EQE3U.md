@@ -7,10 +7,10 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - galois-theory
-  - linear-algebra
-  - matrices
+  - Fields
+  - Galois Theory
+  - Linear Algebra
+  - Matrices
 relations: []
 review: draft
 solved: false

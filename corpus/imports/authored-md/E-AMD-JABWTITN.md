@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - separability
+  - Galois Theory
+  - Splitting Fields
+  - Separability
 relations: []
 review: draft
 solved: false

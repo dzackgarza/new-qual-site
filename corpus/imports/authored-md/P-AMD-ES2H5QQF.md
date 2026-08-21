@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - cohomology
-  - homological-algebra
+  - Homology
+  - Cohomology
+  - Homological Algebra
 relations: []
 review: draft
 solved: true

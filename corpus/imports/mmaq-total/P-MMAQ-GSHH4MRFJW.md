@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-GSHH4MRFJW
 kind: problem
-title: Uniform convergence need not pass to integrals; $L^p$ convergence implies an a.e. subsequence
+title: Uniform convergence need not pass to integrals; $L^p$ convergence implies an
+  a.e. subsequence
 classification:
   areas:
   - real-analysis
   topics:
-  - integrals
-  - convergence-of-functions
-  - lp-spaces
+  - Integrals
+  - Convergence of Functions
+  - Lp Spaces
 relations: []
 review: draft
 solved: true

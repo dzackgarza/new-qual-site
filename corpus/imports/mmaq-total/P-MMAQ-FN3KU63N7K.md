@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - algebras
-  - modules
+  - Algebras
+  - Modules
 relations: []
 review: draft
 solved: false

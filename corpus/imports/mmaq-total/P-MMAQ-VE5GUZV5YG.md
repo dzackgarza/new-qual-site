@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-VE5GUZV5YG
 kind: problem
-title: An index-$n$ subgroup of $S_n$ is carried by an automorphism to the stabilizer of $n$, is isomorphic to $S_{n-1}$, and is maximal
+title: An index-$n$ subgroup of $S_n$ is carried by an automorphism to the stabilizer
+  of $n$, is isomorphic to $S_{n-1}$, and is maximal
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - subgroups
-  - automorphisms
+  - Permutations
+  - Subgroups
+  - Automorphisms
 relations: []
 review: draft
 solved: false

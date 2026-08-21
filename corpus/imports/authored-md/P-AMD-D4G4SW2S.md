@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - conjugacy
-  - subgroups
+  - Sylow Theory
+  - Conjugacy
+  - Subgroups
 relations: []
 review: draft
 solved: false

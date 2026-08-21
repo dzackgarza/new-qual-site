@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - permutations
-  - counterexamples
+  - Nilpotent Groups
+  - Permutations
+  - Counterexamples
 relations: []
 review: draft
 solved: false

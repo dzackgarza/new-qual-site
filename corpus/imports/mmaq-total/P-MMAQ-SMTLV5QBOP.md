@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - lp-spaces
+  - Lp Spaces
 relations: []
 review: draft
 solved: true

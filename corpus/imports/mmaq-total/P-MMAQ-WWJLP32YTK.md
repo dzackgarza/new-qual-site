@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-WWJLP32YTK
 kind: problem
-title: Lusin's theorem, Borel sections, and inner-outer approximation of measurable sets
+title: Lusin's theorem, Borel sections, and inner-outer approximation of measurable
+  sets
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 solved: true

@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

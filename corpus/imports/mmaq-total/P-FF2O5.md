@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-FF2O5
 kind: problem
-title: Two-generated modules over a PID are $R/(a)\oplus R/(b)$, and when two such sums are isomorphic
+title: Two-generated modules over a PID are $R/(a)\oplus R/(b)$, and when two such
+  sums are isomorphic
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - principal-ideal-domains
-  - modules
+  - Structure Theorem
+  - Principal Ideal Domains
+  - Modules
 relations: []
 review: draft
 solved: false

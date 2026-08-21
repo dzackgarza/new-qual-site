@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - subgroups
-  - group-actions
+  - Orbit-Stabilizer
+  - Subgroups
+  - Group Actions
 relations: []
 review: draft
 solved: true

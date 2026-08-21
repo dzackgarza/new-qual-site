@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - commutative-algebra
-  - polynomials
+  - Rings
+  - Commutative Algebra
+  - Polynomials
 relations: []
 review: draft
 solved: false

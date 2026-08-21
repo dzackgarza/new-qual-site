@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - homotopy
-  - classification
+  - Homeomorphisms
+  - Homotopy
+  - Classification
 relations: []
 review: draft
 solved: true

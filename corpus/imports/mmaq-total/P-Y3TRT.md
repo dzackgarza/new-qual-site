@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - sequences-of-functions
-  - arzela-ascoli
+  - Sequences of Functions
+  - Arzelà-Ascoli
 relations: []
 review: draft
 solved: true

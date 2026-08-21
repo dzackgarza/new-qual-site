@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - torsion
-  - abelian-groups
-  - subgroups
+  - Torsion
+  - Abelian Groups
+  - Subgroups
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - permutations
-  - simple-groups
+  - Normal Subgroups
+  - Permutations
+  - Simple Groups
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-5FZWFKZKJ6
 kind: problem
-title: Class sums form a $\mathbb{Z}$-basis of the center of $\mathbb{Z}[G]$, and $|C|\chi_\pi(C)/\dim V$ is an algebraic integer
+title: Class sums form a $\mathbb{Z}$-basis of the center of $\mathbb{Z}[G]$, and
+  $|C|\chi_\pi(C)/\dim V$ is an algebraic integer
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
+  - Representation Theory
 relations: []
 review: draft
 solved: false

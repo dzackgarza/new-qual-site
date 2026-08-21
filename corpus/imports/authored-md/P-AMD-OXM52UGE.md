@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - group-presentations
+  - Group Presentations
 relations: []
 review: draft
 solved: false

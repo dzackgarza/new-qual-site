@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - local-rings
-  - nilpotence
-  - rings
+  - Local Rings
+  - Nilpotence
+  - Rings
 relations: []
 review: draft
 solved: true

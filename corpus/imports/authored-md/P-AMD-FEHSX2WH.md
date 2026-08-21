@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - jacobson-radical
-  - nilpotence
-  - ideals
+  - Jacobson Radical
+  - Nilpotence
+  - Ideals
 relations: []
 review: draft
 solved: false

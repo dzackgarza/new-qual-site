@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - schwarz-lemma
+  - Schwarz Lemma
 relations: []
 review: draft
 solved: true

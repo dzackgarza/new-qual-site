@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - diagonalization
-  - linear-algebra
+  - Nilpotence
+  - Diagonalization
+  - Linear Algebra
 relations: []
 review: draft
 solved: true

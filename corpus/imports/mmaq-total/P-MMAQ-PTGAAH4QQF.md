@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-PTGAAH4QQF
 kind: problem
-title: An algebraic extension of a characteristic-zero field in which every polynomial over $F$ has a root is algebraically closed
+title: An algebraic extension of a characteristic-zero field in which every polynomial
+  over $F$ has a root is algebraically closed
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - splitting-fields
-  - galois-theory
+  - Field Extensions
+  - Splitting Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

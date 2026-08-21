@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - surfaces
-  - classification
-  - orientation
+  - Surfaces
+  - Classification
+  - Orientation
 relations: []
 review: draft
 solved: false

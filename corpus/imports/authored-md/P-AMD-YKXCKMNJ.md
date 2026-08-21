@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - fundamental-group
+  - Cell Complexes
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

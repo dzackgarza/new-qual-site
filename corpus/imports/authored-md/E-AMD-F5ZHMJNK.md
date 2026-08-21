@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - normal-subgroups
+  - Centralizers and Normalizers
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

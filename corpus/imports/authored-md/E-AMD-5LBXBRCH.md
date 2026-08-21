@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - subgroup-series
-  - classification
+  - Solvable Groups
+  - Subgroup Series
+  - Classification
 relations: []
 review: draft
 solved: true

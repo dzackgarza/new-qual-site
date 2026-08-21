@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - roots-of-unity
-  - abelian-groups
+  - Galois Theory
+  - Roots of Unity
+  - Abelian Groups
 relations: []
 review: draft
 solved: true

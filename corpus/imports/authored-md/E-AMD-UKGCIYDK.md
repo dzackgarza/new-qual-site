@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - local-rings
-  - jacobson-radical
-  - maximal-ideals
+  - Local Rings
+  - Jacobson Radical
+  - Maximal Ideals
 relations: []
 review: draft
 solved: false

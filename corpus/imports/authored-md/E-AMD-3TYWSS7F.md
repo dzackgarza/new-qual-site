@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - solvable-groups
+  - Nilpotent Groups
+  - Solvable Groups
 relations: []
 review: draft
 solved: true

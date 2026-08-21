@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - burnside-s-lemma
-  - group-actions
-  - partitions
+  - Burnside's Lemma
+  - Group Actions
+  - Partitions
 relations: []
 review: draft
 solved: false

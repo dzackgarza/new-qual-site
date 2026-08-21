@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - representation-theory
-  - galois-theory
-  - fields
+  - Representation Theory
+  - Galois Theory
+  - Fields
 relations: []
 review: draft
 solved: false

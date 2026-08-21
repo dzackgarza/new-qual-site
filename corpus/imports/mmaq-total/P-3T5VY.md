@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - polynomials
-  - rouche
+  - Holomorphic Functions
+  - Polynomials
+  - Rouché
 relations: []
 review: draft
 solved: true

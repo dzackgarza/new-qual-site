@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-AWWA4FOL2L
 kind: problem
-title: A finite simple group with all proper subgroups abelian is cyclic of prime order
+title: A finite simple group with all proper subgroups abelian is cyclic of prime
+  order
 classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - subgroups
-  - cyclic-groups
+  - Simple Groups
+  - Subgroups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

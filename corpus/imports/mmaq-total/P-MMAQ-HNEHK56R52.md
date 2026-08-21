@@ -2,16 +2,17 @@
 schema: qual/card@1
 id: P-MMAQ-HNEHK56R52
 kind: problem
-title: Improper nonnegative Riemann integrals in $L^1$, the Riemann–Lebesgue lemma, and continuous functions of unbounded variation
+title: Improper nonnegative Riemann integrals in $L^1$, the Riemann–Lebesgue lemma,
+  and continuous functions of unbounded variation
 classification:
   areas:
   - real-analysis
   topics:
-  - riemann-integrability
-  - integrals
-  - convergence-of-functions
-  - l1
-  - variation
+  - Riemann Integrability
+  - Integrals
+  - Convergence of Functions
+  - L¹
+  - Variation
 relations: []
 review: draft
 solved: true

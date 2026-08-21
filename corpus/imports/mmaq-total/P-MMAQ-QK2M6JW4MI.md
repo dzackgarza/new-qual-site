@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-QK2M6JW4MI
 kind: problem
-title: Irreducible representations of $\mathrm{GL}_2(\mathbb{F}_2)$, and reducibility of the adjoint representation in order $12$
+title: Irreducible representations of $\mathrm{GL}_2(\mathbb{F}_2)$, and reducibility
+  of the adjoint representation in order $12$
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
+  - Representation Theory
 relations: []
 review: draft
 solved: false

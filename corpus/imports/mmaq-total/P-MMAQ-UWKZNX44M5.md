@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-UWKZNX44M5
 kind: problem
-title: If $G/Z(G)$ is cyclic then $G$ is abelian; $p$-groups have nontrivial center; groups of order $p^2$ are abelian
+title: If $G/Z(G)$ is cyclic then $G$ is abelian; $p$-groups have nontrivial center;
+  groups of order $p^2$ are abelian
 classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - cyclic-groups
+  - p-Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

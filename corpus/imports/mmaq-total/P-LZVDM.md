@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - rings
-  - commutative-algebra
+  - Fields
+  - Rings
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

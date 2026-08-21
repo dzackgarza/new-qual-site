@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-CFGXL3QPK7
 kind: problem
-title: A meromorphic function on $\CC$ with $|f(z)|\to\infty$ as $|z|\to\infty$ is rational
+title: A meromorphic function on $\CC$ with $|f(z)|\to\infty$ as $|z|\to\infty$ is
+  rational
 classification:
   areas:
   - complex-analysis
   topics:
-  - meromorphic-functions
+  - Meromorphic Functions
 relations: []
 review: draft
 solved: true

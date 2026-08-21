@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
-  - representation-theory
+  - Groups
+  - Representation Theory
 relations: []
 review: draft
 solved: false

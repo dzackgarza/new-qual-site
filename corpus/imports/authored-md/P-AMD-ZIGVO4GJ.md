@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - ideals
-  - rings
+  - Nilpotence
+  - Ideals
+  - Rings
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - eigenvalues-and-eigenvectors
-  - counterexamples
+  - Diagonalization
+  - Eigenvalues and Eigenvectors
+  - Counterexamples
 relations: []
 review: draft
 solved: false

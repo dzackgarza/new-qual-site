@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-4KOVSOH5J4
 kind: problem
-title: No finite group is the union of conjugates of a proper subgroup; a transitive action on more than one point has a fixed-point-free element
+title: No finite group is the union of conjugates of a proper subgroup; a transitive
+  action on more than one point has a fixed-point-free element
 classification:
   areas:
   - algebra
   topics:
-  - groups
-  - group-actions
+  - Groups
+  - Group Actions
 relations: []
 review: draft
 solved: false

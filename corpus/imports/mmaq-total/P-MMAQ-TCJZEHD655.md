@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - convergence-of-numbers
+  - Convergence of Numbers
 relations: []
 review: draft
 solved: true

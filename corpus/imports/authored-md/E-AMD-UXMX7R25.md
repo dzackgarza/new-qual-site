@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - counterexamples
+  - Abelian Groups
+  - Counterexamples
 relations: []
 review: draft
 solved: false

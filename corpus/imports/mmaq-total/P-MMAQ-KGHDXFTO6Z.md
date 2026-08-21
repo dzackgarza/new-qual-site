@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - irreducibility-criteria
+  - Finite Fields
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

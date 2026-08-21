@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-AMD-WFZJNWCF
 kind: problem
-title: Finite groups whose maximal subgroups have prime index are solvable; $[G:H]\equiv 1\pmod p$ when $N_G(P)\le H$; the Sylow subgroup for the largest prime is normal
+title: Finite groups whose maximal subgroups have prime index are solvable; $[G:H]\equiv
+  1\pmod p$ when $N_G(P)\le H$; the Sylow subgroup for the largest prime is normal
 classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - sylow-theory
-  - centralizers-and-normalizers
+  - Solvable Groups
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

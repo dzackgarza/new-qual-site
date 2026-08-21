@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - degree
-  - homology
+  - Degree
+  - Homology
 relations: []
 review: draft
 solved: false

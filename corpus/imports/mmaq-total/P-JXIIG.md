@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-JXIIG
 kind: problem
-title: Quadratic extensions are $F(\sqrt{D})$ when $\operatorname{char} F\neq 2$, and $[F(\sqrt{D_1},\sqrt{D_2}):F]$
+title: Quadratic extensions are $F(\sqrt{D})$ when $\operatorname{char} F\neq 2$,
+  and $[F(\sqrt{D_1},\sqrt{D_2}):F]$
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - characteristic
+  - Field Extensions
+  - Characteristic
 relations: []
 review: draft
 solved: false

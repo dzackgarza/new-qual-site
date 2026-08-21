@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-AMD-YDNWHPDM
 kind: problem
-title: $2^{n-1}\prod_{k=1}^{n-1}\sin(k\pi/n)=n$, polar Cauchy–Riemann equations, and holomorphy of $\log z$
+title: $2^{n-1}\prod_{k=1}^{n-1}\sin(k\pi/n)=n$, polar Cauchy–Riemann equations, and
+  holomorphy of $\log z$
 classification:
   areas:
   - complex-analysis
   topics:
-  - trigonometry
-  - polynomials
-  - cauchy-riemann
-  - complex-logarithm
+  - Trigonometry
+  - Polynomials
+  - Cauchy-Riemann
+  - Complex Logarithm
 relations: []
 review: draft
 solved: true

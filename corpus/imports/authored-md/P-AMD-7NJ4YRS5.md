@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - modules
-  - rings
+  - Homological Algebra
+  - Modules
+  - Rings
 relations: []
 review: draft
 solved: true

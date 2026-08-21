@@ -2,15 +2,16 @@
 schema: qual/card@1
 id: P-MMAQ-G2X5HB5VJS
 kind: problem
-title: Equivalence of $\mathrm{Ann}(M)\not\subset\mathfrak{p}$, $M_{\mathfrak{p}}=0$, and $M\otimes_A k(\mathfrak{p})=0$ for finitely generated modules
+title: Equivalence of $\mathrm{Ann}(M)\not\subset\mathfrak{p}$, $M_{\mathfrak{p}}=0$,
+  and $M\otimes_A k(\mathfrak{p})=0$ for finitely generated modules
 classification:
   areas:
   - algebra
   topics:
-  - commutative-algebra
-  - modules
-  - ideals
-  - localization
+  - Commutative Algebra
+  - Modules
+  - Ideals
+  - Localization
 relations: []
 review: draft
 solved: false

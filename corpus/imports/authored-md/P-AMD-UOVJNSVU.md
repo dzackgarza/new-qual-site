@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - conjugacy
-  - permutations
-  - group-actions
+  - Conjugacy
+  - Permutations
+  - Group Actions
 relations: []
 review: draft
 solved: false

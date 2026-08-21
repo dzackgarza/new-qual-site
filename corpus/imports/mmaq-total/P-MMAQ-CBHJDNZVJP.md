@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - commutative-algebra
+  - Rings
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

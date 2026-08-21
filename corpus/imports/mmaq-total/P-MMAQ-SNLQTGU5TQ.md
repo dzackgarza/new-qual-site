@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - linear-algebra
-  - vector-spaces
+  - Linear Algebra
+  - Vector Spaces
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homotopy
-  - covering-spaces
-  - homology
+  - Homotopy
+  - Covering Spaces
+  - Homology
 relations: []
 review: draft
 solved: false

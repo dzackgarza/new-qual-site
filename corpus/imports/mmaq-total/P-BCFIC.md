@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-BCFIC
 kind: problem
-title: Biholomorphism from the crescent $|z|<1$, $|z-\frac12|>\frac12$ to the upper half-plane
+title: Biholomorphism from the crescent $|z|<1$, $|z-\frac12|>\frac12$ to the upper
+  half-plane
 classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
+  - Biholomorphisms
 relations: []
 review: draft
 solved: true

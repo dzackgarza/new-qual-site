@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-COOIDCL56X
 kind: problem
-title: Uniform continuity of $z^2$ on disks but not on $\mathbb{C}$, and a Cauchy problem for Laplace's equation
+title: Uniform continuity of $z^2$ on disks but not on $\mathbb{C}$, and a Cauchy
+  problem for Laplace's equation
 classification:
   areas:
   - complex-analysis
   topics:
-  - pdes
+  - PDEs
 relations: []
 review: draft
 solved: true

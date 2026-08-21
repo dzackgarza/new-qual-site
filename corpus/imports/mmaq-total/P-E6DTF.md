@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-E6DTF
 kind: problem
-title: 'Schur''s lemma: $\operatorname{Hom}_{kG}(V,V)=k$ for an irreducible representation over an algebraically closed field'
+title: 'Schur''s lemma: $\operatorname{Hom}_{kG}(V,V)=k$ for an irreducible representation
+  over an algebraically closed field'
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
+  - Representation Theory
 relations: []
 review: draft
 solved: false

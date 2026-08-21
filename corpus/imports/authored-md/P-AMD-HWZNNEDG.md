@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - homological-algebra
-  - groups
+  - Homological Algebra
+  - Groups
 relations: []
 review: draft
 solved: false

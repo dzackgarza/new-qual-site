@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - groups
+  - Abelian Groups
+  - Groups
 relations: []
 review: draft
 solved: false

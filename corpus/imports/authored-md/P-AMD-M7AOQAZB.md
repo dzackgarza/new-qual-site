@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-AMD-M7AOQAZB
 kind: problem
-title: A space with $H_*=(\ZZ,\ZZ_6,\ZZ_{12},\ZZ\oplus\ZZ_4)$ in degrees $0$–$3$ and vanishing above, and its cohomology
+title: A space with $H_*=(\ZZ,\ZZ_6,\ZZ_{12},\ZZ\oplus\ZZ_4)$ in degrees $0$–$3$ and
+  vanishing above, and its cohomology
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - cell-complexes
-  - cohomology
+  - Homology
+  - Cell Complexes
+  - Cohomology
 relations: []
 review: draft
 solved: false

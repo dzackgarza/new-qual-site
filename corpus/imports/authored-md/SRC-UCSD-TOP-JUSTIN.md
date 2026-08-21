@@ -9,10 +9,10 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: make-me-a-qual `Questions/Topology/UCSD/Justin's Problems.md`, titled "Topology Qual Problems";
-    attributed to Justin by the filename, which is the only attribution the file carries.
+provenance:
+- assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29.pdf
+source:
+  source_kind: compilation
   problems:
   - P-AMD-FW4WE7JA
   - P-AMD-ML25AJS7
@@ -95,8 +95,11 @@ payload:
   - P-AMD-HWZNNEDG
   date:
     kind: unknown
+  area: topology
 ---
 
 ::: remark
-Collected statements from make-me-a-qual `Questions/Topology/UCSD/Justin's Problems.pdf` (the `.md` named in provenance is not in the tree). The PDF has image-only placeholders under Van Kampen; those are not listed. Two items exact-match existing cards `P-WOFN2` (solid tori glued along the boundary) and `P-LAFJW` (complement of a knotted solid torus, also on `SRC-UCSD-TOP-SUMMER-2003`). The list is PDF order of the 79 authored cards. The migration manifest’s “81 statements” counted the image placeholders.
+Contributed sheet titled "Topology Qual Problems", Friday 29 May 2020, author D. Zack Garza. Vendored as `assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29.pdf` (SHA-256 ae61374c890851aa5d2fb7871fc78aecde9a2c308164de9d20bff68c253bc01d). The filename is the only place the name Justin appears.
+
+Image-only placeholders under Van Kampen are not listed. `P-WOFN2` (solid tori glued along the boundary) and `P-LAFJW` (complement of a knotted solid torus) also appear on `SRC-UCSD-TOP-SUMMER-2003`.
 :::

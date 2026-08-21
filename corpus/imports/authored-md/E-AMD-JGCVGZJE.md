@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - rings
-  - counterexamples
+  - Rings
+  - Counterexamples
 relations: []
 review: draft
 solved: false

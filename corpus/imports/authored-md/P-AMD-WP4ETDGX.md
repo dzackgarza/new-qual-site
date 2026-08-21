@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-AMD-WP4ETDGX
 kind: problem
-title: Reduced homology of a union of $n$ sets with nested contractible intersections vanishes in degrees $\geq n-1$
+title: Reduced homology of a union of $n$ sets with nested contractible intersections
+  vanishes in degrees $\geq n-1$
 classification:
   areas:
   - topology
   topics:
-  - homology
-  - mayer-vietoris
+  - Homology
+  - Mayer-Vietoris
 relations: []
 review: draft
 solved: false

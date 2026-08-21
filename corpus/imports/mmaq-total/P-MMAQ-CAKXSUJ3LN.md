@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-CAKXSUJ3LN
 kind: problem
-title: Rational irreps of $C_p$ of dimensions $1$ and $p-1$, and abelian groups whose rational representations are absolutely irreducible
+title: Rational irreps of $C_p$ of dimensions $1$ and $p-1$, and abelian groups whose
+  rational representations are absolutely irreducible
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
+  - Representation Theory
 relations: []
 review: draft
 solved: false

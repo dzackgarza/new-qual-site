@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - normal-subgroups
+  - Solvable Groups
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

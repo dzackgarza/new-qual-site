@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-CYOVTO7I2K
 kind: problem
-title: Whether $\mathbb{Z}[x]/(x^2+x+1)$ is Noetherian, Artinian, or an integrally closed domain
+title: Whether $\mathbb{Z}[x]/(x^2+x+1)$ is Noetherian, Artinian, or an integrally
+  closed domain
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - commutative-algebra
+  - Rings
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance: []
+source:
   source_kind: university-exam
   institution: ucsd
   area: topology
@@ -19,6 +20,9 @@ payload:
   - P-AZBYD
   - P-U7G2X
   - P-UBJDX
+  - P-9RRSR
+  - P-WZLJO
+  - P-5R1Y1
   date:
     kind: academic-term
     term: fall
@@ -26,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UCSD topology Fall 2014. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/291_UCSD_Fall 2014.md.source` (wiki copy `wiki/40_Topology/08_Quals/UCSD/291_UCSD_Fall 2014.md`). Five numbered questions; the list is exam order. No holes.
+Fall 2014 sitting inside Justin Roberts' compilation `SRC-UCSD-TOP-290QUALS` (section 16; printed p. 407). That compilation owns the packet PDF; this card has no separate sitting sheet. The list is the eight-problem sitting in printed order.
 :::

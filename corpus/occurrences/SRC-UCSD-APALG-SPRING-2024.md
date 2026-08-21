@@ -1,0 +1,38 @@
+---
+schema: qual/card@1
+id: SRC-UCSD-APALG-SPRING-2024
+kind: collection
+title: UCSD applied-algebra Spring 2024
+classification:
+  areas:
+  - applied-algebra
+  topics: []
+relations: []
+review: draft
+completion: complete
+provenance:
+- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP24%20math%20202%20exam%20.pdf
+source:
+  source_kind: university-exam
+  institution: ucsd
+  area: applied-algebra
+  problems:
+  - P-APAS24A
+  - P-APAS24B
+  - P-APAS24C
+  - P-APAS24D
+  - P-APAS24E
+  - P-APAS24F
+  - P-APAS24G
+  - P-APAS24H
+  - P-APAS24I
+  - P-APAS24J
+  date:
+    kind: academic-term
+    term: spring
+    year: 2024
+---
+
+::: remark
+UCSD Applied Algebra (Math 202) qualifying exam dated May 23, 2024 (ten problems, 10 points each). On the department qualifying-exams page the paper is linked as `SP24 math 202 exam.pdf` but hosted under the `algebra-math200/` directory; the header identifies Applied Algebra. The list is the paper order.
+:::

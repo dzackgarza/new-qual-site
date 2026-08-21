@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - subgroups
-  - normal-subgroups
+  - Nilpotent Groups
+  - Subgroups
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

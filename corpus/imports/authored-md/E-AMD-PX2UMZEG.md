@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - ideals
+  - Ideals
 relations: []
 review: draft
 solved: false

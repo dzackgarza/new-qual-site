@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-rings
-  - conjugacy
-  - centralizers-and-normalizers
+  - Group Rings
+  - Conjugacy
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - prime-ideals
-  - maximal-ideals
-  - factorization
+  - Prime Ideals
+  - Maximal Ideals
+  - Factorization
 relations: []
 review: draft
 solved: false

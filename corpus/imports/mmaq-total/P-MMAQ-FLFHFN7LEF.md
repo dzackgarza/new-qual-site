@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - integrals
-  - residues
+  - Integrals
+  - Residues
 relations: []
 review: draft
 solved: true

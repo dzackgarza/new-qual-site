@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - automorphisms
-  - cyclic-groups
-  - abelian-groups
+  - Automorphisms
+  - Cyclic Groups
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

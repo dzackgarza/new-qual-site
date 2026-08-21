@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-JCG7I3RIX7
 kind: problem
-title: A group with a subgroup of index $n$ has a normal subgroup $N$ with $n\leq[G:N]\leq n!$, and there is no simple group of order $36$
+title: A group with a subgroup of index $n$ has a normal subgroup $N$ with $n\leq[G:N]\leq
+  n!$, and there is no simple group of order $36$
 classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - simple-groups
-  - permutations
+  - Group Actions
+  - Simple Groups
+  - Permutations
 relations: []
 review: draft
 solved: false

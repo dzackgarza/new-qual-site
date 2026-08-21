@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-FSI2OIIHX5
 kind: problem
-title: The normalizer of a subgroup of order $p^k$ with $k<n$ in a group of order $p^nm$ properly contains the subgroup
+title: The normalizer of a subgroup of order $p^k$ with $k<n$ in a group of order
+  $p^nm$ properly contains the subgroup
 classification:
   areas:
   - algebra
   topics:
-  - p-groups
-  - sylow-theory
-  - centralizers-and-normalizers
+  - p-Groups
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

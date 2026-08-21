@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - modules
-  - commutative-algebra
+  - Modules
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

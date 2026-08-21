@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - orbit-stabilizer
-  - burnside-s-lemma
+  - Group Actions
+  - Orbit-Stabilizer
+  - Burnside's Lemma
 relations: []
 review: draft
 solved: false

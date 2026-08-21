@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
+provenance: []
+source:
   source_kind: university-exam
   institution: ucsd
   area: topology
@@ -29,5 +30,5 @@ payload:
 ---
 
 ::: remark
-UCSD topology Summer 2003. The paper is the sitting transcription `assets/ws9/qual-review-and-solutions/native/Topology/ReviewDoc/sections/292_UCSD_Summer 2003.md.source` (wiki copy `wiki/40_Topology/08_Quals/UCSD/292_UCSD_Summer 2003.md`). Nine numbered questions; the list is exam order. No holes.
+Summer 2003 sitting inside Justin Roberts' compilation `SRC-UCSD-TOP-290QUALS` (section 3; printed p. 394). That compilation owns the packet PDF; this card has no separate sitting sheet.
 :::

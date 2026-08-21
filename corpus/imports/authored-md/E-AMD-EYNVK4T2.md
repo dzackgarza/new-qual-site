@@ -7,7 +7,7 @@ classification:
   areas:
   - algebra
   topics:
-  - permutations
+  - Permutations
 relations: []
 review: draft
 solved: false

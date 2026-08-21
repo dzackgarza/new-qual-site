@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - normal-subgroups
-  - subgroups
+  - Cosets and Lagrange
+  - Normal Subgroups
+  - Subgroups
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-WBJMPR2DHX
 kind: problem
-title: Order of $\mathrm{GL}_3(\mathbb{F}_2)$ and the number of elements of order $7$
+title: Order of $\mathrm{GL}_3(\mathbb{F}_2)$ and the number of elements of order
+  $7$
 classification:
   areas:
   - algebra
   topics:
-  - matrix-groups
-  - simple-groups
-  - finite-fields
+  - Matrix Groups
+  - Simple Groups
+  - Finite Fields
 relations: []
 review: draft
 solved: false

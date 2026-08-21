@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-NMHZVYS2AS
 kind: problem
-title: Length of a module, composition series, and additivity of length along exact sequences
+title: Length of a module, composition series, and additivity of length along exact
+  sequences
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - homological-algebra
+  - Modules
+  - Homological Algebra
 relations: []
 review: draft
 solved: false

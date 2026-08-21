@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - cauchy-integral-formula
+  - Cauchy Integral Formula
 relations: []
 review: draft
 solved: true

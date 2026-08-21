@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - algebras
-  - group-actions
+  - Homology
+  - Algebras
+  - Group Actions
 relations: []
 review: draft
 solved: false

@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-4RQ6K
 kind: problem
-title: Kernel of a map of finitely generated free modules over a PID is a direct summand; the image need not be
+title: Kernel of a map of finitely generated free modules over a PID is a direct summand;
+  the image need not be
 classification:
   areas:
   - algebra
   topics:
-  - principal-ideal-domains
-  - free-modules
-  - modules
+  - Principal Ideal Domains
+  - Free Modules
+  - Modules
 relations: []
 review: draft
 solved: false

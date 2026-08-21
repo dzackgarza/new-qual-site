@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - conjugacy
-  - subgroups
+  - Normal Subgroups
+  - Conjugacy
+  - Subgroups
 relations: []
 review: draft
 solved: false

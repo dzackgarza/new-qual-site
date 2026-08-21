@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - solvable-groups
-  - cyclic-groups
+  - Solvable Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

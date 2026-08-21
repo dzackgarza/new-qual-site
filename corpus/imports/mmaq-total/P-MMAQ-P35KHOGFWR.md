@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-P35KHOGFWR
 kind: problem
-title: Kernels of finite free presentations of finitely presented modules are finitely generated
+title: Kernels of finite free presentations of finitely presented modules are finitely
+  generated
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - free-modules
+  - Modules
+  - Free Modules
 relations: []
 review: draft
 solved: false

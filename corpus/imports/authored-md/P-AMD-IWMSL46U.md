@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - cosets-and-lagrange
-  - groups
+  - Cosets and Lagrange
+  - Groups
 relations: []
 review: draft
 solved: false

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-PLFQZ
 kind: problem
-title: Irreducible $\CC G$-modules have dimension at least $\sqrt{|G|}$, with an example of dimension $\lfloor\sqrt{|G|}\rfloor$
+title: Irreducible $\CC G$-modules have dimension at least $\sqrt{|G|}$, with an example
+  of dimension $\lfloor\sqrt{|G|}\rfloor$
 classification:
   areas:
   - algebra
   topics:
-  - representation-theory
+  - Representation Theory
 relations: []
 review: draft
 solved: false

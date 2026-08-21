@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-FQRRXNYJJL
 kind: problem
-title: An entire function with $|f(z)|\leq A|z|^2$ is a polynomial of degree at most $2$
+title: An entire function with $|f(z)|\leq A|z|^2$ is a polynomial of degree at most
+  $2$
 classification:
   areas:
   - complex-analysis
   topics:
-  - entire-functions
+  - Entire Functions
 relations: []
 review: draft
 solved: true

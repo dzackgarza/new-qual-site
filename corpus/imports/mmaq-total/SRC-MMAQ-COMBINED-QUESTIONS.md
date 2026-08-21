@@ -1,0 +1,474 @@
+---
+schema: qual/card@1
+id: SRC-MMAQ-COMBINED-QUESTIONS
+kind: collection
+title: make-me-a-qual Combined_Questions.yaml
+classification:
+  areas:
+  - algebra
+  - complex-analysis
+  - real-analysis
+  - topology
+  topics: []
+relations: []
+review: draft
+provenance: []
+source:
+  source_kind: compilation
+  date:
+    kind: unknown
+  sections:
+  - name: EMORY Algebra undated collection
+    problems:
+    - P-MMAQ-M66PYTIML7
+    - P-MMAQ-FSI2OIIHX5
+    - P-MMAQ-VE5GUZV5YG
+    - P-MMAQ-42RJ23SMHI
+    - P-MMAQ-UWKZNX44M5
+    - P-MMAQ-4KOVSOH5J4
+    - P-MMAQ-ZZTHCGNHBS
+    - P-MMAQ-KKD3SEOV36
+    - P-MMAQ-GGDBSWV2GP
+    - P-MMAQ-O4HLIPMOVO
+    - P-MMAQ-HGDYVCO7CN
+    - P-MMAQ-HYVMMQ7TJW
+    - P-FLLFZ
+    - P-MMAQ-WEZIH3QOMQ
+    - P-YMK7Z
+    - P-MMAQ-LCNIDD33OI
+    - P-GJS7T
+    - P-MMAQ-5IB5NRPTEU
+    - P-MMAQ-YRTGM662ZN
+    - P-OCQHG
+    - P-MMAQ-SNLQTGU5TQ
+  - name: EMORY Complex Analysis undated collection
+    problems:
+    - P-MMAQ-FLFHFN7LEF
+    - P-MMAQ-ZTRBMIG65D
+    - P-MMAQ-FQRRXNYJJL
+    - P-MMAQ-ZMRHOSV3OG
+    - P-726HQ
+    - P-MMAQ-ZRGWQKRMTX
+    - P-G2RYI
+    - P-8XT37
+    - P-ZLDP7
+    - P-MMAQ-CFGXL3QPK7
+  - name: EMORY Real Analysis undated collection
+    problems:
+    - P-AYDDA
+    - P-MMAQ-WBI4DD2OZI
+    - P-MMAQ-ZQASEE4Z36
+    - P-MMAQ-SMTLV5QBOP
+    - P-MMAQ-OZLCWMQK46
+  - name: NUS Complex Analysis 1970 Spring
+    problems:
+    - P-3T5VY
+    - P-BCFIC
+    - P-MMAQ-S7C4CCIUTP
+    - P-MMAQ-EKX7KY2GUH
+    - P-F2QGV
+    - P-MMAQ-KF366R6HF2
+    - P-MMAQ-YUXDCVQRF5
+    - P-MMAQ-WPHHQBXBQ3
+  - name: NUS Real Analysis 1970 Spring
+    problems:
+    - P-MMAQ-RFQAUA7NB7
+    - P-R623W
+    - P-K6LSY
+    - P-MMAQ-CF6KMWPQVZ
+    - P-Y3TRT
+    - P-MMAQ-TCJZEHD655
+    - P-MMAQ-O7EFLXNL2A
+    - P-MMAQ-WOUTK5GNAD
+    - P-MMAQ-WWJLP32YTK
+    - P-MMAQ-GSHH4MRFJW
+    - P-MMAQ-HNEHK56R52
+    - P-MMAQ-RML5AHHINX
+  - name: UGA Complex Analysis undated collection
+    problems:
+    - P-3KOGW
+    - P-TKF72
+    - P-2ZMDH
+    - P-IP6QO
+    - P-TH3WN
+    - P-PMH4D
+    - P-TYKXH
+    - P-WASE4
+    - P-3WZXM
+    - P-ZRVTI
+    - P-4PTIX
+    - P-64ZUP
+    - P-VDKZF
+    - P-3KOGW
+    - P-ACDEH
+    - P-AE67M
+    - P-NVJN5
+    - P-JOGPB
+    - P-KNLBB
+    - P-JES3E
+    - P-3KOGW
+    - P-TKF72
+    - P-IP6QO
+    - P-TH3WN
+    - P-PMH4D
+    - P-TYKXH
+    - P-3WZXM
+    - P-ZRVTI
+    - P-4PTIX
+    - P-64ZUP
+    - P-VDKZF
+    - P-3KOGW
+    - P-ACDEH
+    - P-AE67M
+    - P-NVJN5
+    - P-JOGPB
+    - P-MMAQ-COOIDCL56X
+    - P-H2WTL
+    - P-3KOGW
+    - P-TKF72
+    - P-IP6QO
+    - P-TH3WN
+    - P-PMH4D
+    - P-GAPV3
+    - P-3WZXM
+    - P-ZRVTI
+    - P-4PTIX
+    - P-64ZUP
+    - P-ROMKF
+    - P-FOXHV
+    - P-37Z7J
+    - P-SFDLG
+    - P-352KP
+    - P-BJP24
+    - P-EHLPT
+    - P-2UVDX
+    - P-3UMP3
+    - P-YZ4WV
+    - P-4ZZYV
+    - P-IZW2T
+    - P-ALI5T
+    - P-YZBES
+    - P-TVUOV
+    - P-YVNUD
+    - P-ROEFL
+    - P-EH22O
+    - P-EHKFZ
+    - P-AE67M
+    - P-CZQLT
+    - P-B7CIT
+    - P-OOVED
+    - E-BV7DD
+    - P-6PMCN
+    - P-7N3Y3
+    - E-BVT72
+    - P-K3HOZ
+    - E-T5ERF
+    - P-FBOFF
+    - P-TLNGT
+    - P-3MIIY
+    - P-KNIPC
+    - E-YEIQ5
+    - E-OS574
+    - E-OBU6T
+    - P-ROEFL
+    - E-LLEBI
+    - P-K3P74
+    - P-73UFB
+    - P-VSKE4
+    - P-R424U
+    - P-UGCNF
+    - P-MV7O6
+    - P-3JE4U
+    - P-KNIPC
+    - E-DHPCV
+    - P-R424U
+    - P-MV7O6
+    - P-3JE4U
+    - E-DHPCV
+    - P-3AEDF
+    - P-DEJGY
+    - P-AEWN6
+    - P-57CAX
+    - P-Z4CIU
+    - P-X7WUF
+    - P-4GWVV
+    - P-RKKCE
+  - name: UGA Topology 2019
+    problems:
+    - P-XMOZA
+  - name: UGA Topology undated collection
+    problems:
+    - P-7CYRD
+    - P-L4EMZ
+    - P-L3BUX
+    - P-FZIG3
+    - P-5ADNP
+    - P-DHIWH
+    - P-FGSRH
+    - P-K5XUM
+    - P-EOZ7B
+    - P-HVKUA
+    - P-KM7Z4
+    - P-B2VGV
+    - P-MYZU2
+    - P-QN7OP
+    - P-MHQ6A
+    - P-IE2G7
+    - P-C62HS
+    - P-43KOX
+    - P-7N24X
+    - P-B4N3X
+    - P-4X3OY
+    - P-72DG6
+    - P-3TQB5
+    - P-KSQQ5
+    - P-QICKA
+    - P-G373O
+    - P-SG462
+    - P-AT75W
+    - P-KCN2B
+    - P-A5CFD
+    - P-HOIQ3
+    - P-DYBYC
+    - P-VAJSW
+    - P-2HMGE
+    - P-BPDEA
+    - P-IOVNM
+    - P-VPACG
+    - P-CI7E2
+    - P-URS24
+    - P-SGK4K
+    - P-OKDFC
+    - P-XXLEK
+    - P-RIW3S
+    - P-LZDYV
+    - P-UCJF3
+    - P-Z74QX
+    - P-OIH2N
+    - P-PMBN2
+    - P-BNSGA
+    - P-DLXGE
+    - P-D2RBT
+    - P-HZBSC
+    - P-MXUIS
+    - P-7PCEH
+    - P-KFPX5
+    - P-SDQTV
+    - P-T5QRW
+    - P-YVYGB
+    - P-4XONF
+    - P-CJOZV
+    - P-7IGID
+    - P-R7EFJ
+    - P-RZFB4
+    - P-3AKX2
+    - P-2HSIO
+    - P-OMOPR
+    - P-KJBAM
+    - P-QB5KF
+    - P-CIAF4
+    - P-5JTV2
+    - P-K6HWV
+    - P-VPPPN
+    - P-Y7C7Z
+    - P-S6EYF
+    - P-WOFN2
+    - P-XPUMM
+    - P-XRGV7
+    - P-EQZPV
+    - P-V4MD7
+    - P-N3RQY
+    - P-LLCQX
+    - P-LSJ7W
+    - P-CDWQH
+    - P-CDWQH
+    - P-YCZ6A
+    - P-23NY2
+    - P-QMESO
+    - P-3DTFZ
+    - P-KN75K
+    - P-UEGAX
+    - P-6ATGL
+    - P-LZ5CZ
+    - P-LZ5CZ
+    - P-ETP6C
+    - P-HCQNH
+    - P-OSZPJ
+    - P-N2FQ7
+    - P-3H47Q
+    - P-FQNYQ
+    - P-JIFL3
+    - P-HXZYI
+    - P-IBLLK
+    - P-FBFHV
+    - P-QHH2O
+    - P-DRVWD
+    - P-6LBCE
+    - P-26UEL
+    - P-A3USX
+    - P-V45QY
+    - P-QYLM3
+    - P-IT3OF
+    - P-MCG5C
+    - P-DFB3Y
+    - P-4TKPD
+    - P-ASHJM
+    - P-KBHAC
+    - P-5JYOH
+    - P-HBECH
+    - P-4DIFI
+    - P-22GH7
+    - P-M62FC
+    - P-G23Y5
+    - P-Y3PUL
+    - P-3WQES
+    - P-W3HQL
+    - P-VZVZA
+    - P-A3ZPA
+    - P-FUHGO
+    - P-IFN65
+    - P-6UCWP
+    - P-G57K4
+    - P-RQN6N
+    - P-B3VM7
+    - P-FD3FN
+    - P-YTOUD
+    - P-JH5RI
+    - P-OCUZ4
+    - P-YQVRO
+    - P-2JRWF
+    - P-LWGC4
+    - P-ZPH3J
+    - P-X6IHG
+    - P-3KEA4
+    - P-2ZWQ7
+    - P-NSD6Y
+    - P-LMVF6
+    - P-FD3UV
+    - P-UG5YN
+    - P-6XN3Z
+    - P-7XSR6
+    - P-M2NVE
+    - P-Q5Q6P
+    - P-ONG5Z
+    - P-E247B
+    - P-6PQRO
+  - name: UW Algebra 2005
+    problems:
+    - P-MMAQ-L3WFQPKGP5
+    - P-MMAQ-WBJMPR2DHX
+    - P-Z6IW6
+    - P-MMAQ-CAEXKRPGEP
+    - P-MMAQ-N34EA7FB6T
+    - P-MMAQ-BFNULVNWCY
+    - P-MMAQ-F2ZJO265HN
+  - name: UW Algebra 2006
+    problems:
+    - P-Q5N2X
+    - P-CTBJD
+    - P-MMAQ-FJ4DDF5GZK
+    - P-MMAQ-YUFSQW36WS
+    - P-IH6FO
+  - name: UW Algebra 2007
+    problems:
+    - P-MMAQ-PY65OT2X3L
+    - P-GZX6P
+    - P-MMAQ-2E54Q6DNML
+  - name: UW Algebra 2008
+    problems:
+    - P-MMAQ-5EFTFEKRDI
+    - P-MMAQ-KGHDXFTO6Z
+    - P-BJDIE
+    - P-FF2O5
+    - P-MMAQ-NCN7KYH27J
+    - P-PLFQZ
+    - P-CC3DW
+  - name: UW Algebra 2009
+    problems:
+    - P-MMAQ-OXWRG3VWFJ
+    - P-LZVDM
+    - P-JXIIG
+    - P-TRSVD
+    - P-MMAQ-AYM7VHT2LA
+    - P-E6DTF
+  - name: UW Algebra 2010
+    problems:
+    - P-MMAQ-6GE2BXA773
+    - P-MMAQ-NMHZVYS2AS
+    - P-MMAQ-ONXNRKJ737
+    - P-MMAQ-YUGGSYZGIM
+    - P-MMAQ-CAEXKRPGEP
+    - P-MMAQ-PTGAAH4QQF
+    - P-MCQH6
+  - name: UW Algebra 2011
+    problems:
+    - P-MMAQ-AIKDLY3MJC
+    - P-MMAQ-RQA4XXNOF3
+    - P-MMAQ-OSVOY6VRAB
+    - P-MMAQ-CYOVTO7I2K
+    - P-MMAQ-QK2M6JW4MI
+    - P-S52PP
+  - name: UW Algebra 2012
+    problems:
+    - P-5EHW6
+    - P-MMAQ-2ERSIB6V43
+    - P-4RQ6K
+    - P-MMAQ-6DSHSTLKLP
+  - name: UW Algebra 2013
+    problems:
+    - P-UIHJF
+    - P-TKNYL
+    - P-VISUT
+    - P-QYKXK
+  - name: UW Algebra 2014
+    problems:
+    - P-MMAQ-JCG7I3RIX7
+    - P-MMAQ-5TRAOGBWCB
+    - P-MMAQ-TBOFU3T6VV
+    - P-MMAQ-ENQNQKRU6T
+    - P-OND3F
+    - P-MMAQ-CAKXSUJ3LN
+    - P-MMAQ-5FZWFKZKJ6
+  - name: UW Algebra 2015
+    problems:
+    - P-EQE3U
+    - P-MMAQ-RI5DR4YG7C
+    - P-AZKKJ
+    - P-MZLQ3
+    - P-ZCQLF
+    - P-MMAQ-FN3KU63N7K
+    - P-SJ47O
+  - name: UW Algebra 2016
+    problems:
+    - P-MMAQ-AWWA4FOL2L
+    - P-MMAQ-4NMAR4LSEK
+    - P-QQLLL
+    - P-MMAQ-G2X5HB5VJS
+    - P-VIFYJ
+    - P-MMAQ-DNT3HIFV7M
+  - name: UW Algebra 2017
+    problems:
+    - P-MMAQ-CBHJDNZVJP
+    - P-MMAQ-MLE74H7M42
+    - P-MMAQ-P35KHOGFWR
+    - P-MMAQ-FBNP7JLLPX
+    - P-5RAUN
+  - name: UW Algebra 2018
+    problems:
+    - P-YDLYC
+    - P-MBHKT
+    - P-CASNS
+    - P-NN3CO
+    - P-CC3DW
+    - P-6P6KI
+  - name: UW Algebra undated collection
+    problems:
+    - P-MMAQ-WV7QEYSPXM
+  area: algebra
+---
+
+::: remark
+Combined_Questions.yaml intake grouping (SHA-256 63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176, revision 6190e0eeaf93ac471a2450444d0b70872b7b9dfa). Envelope provenance is empty until each section's sitting paper is listed.
+
+Intake grouping from make-me-a-qual `Combined_Questions.yaml` (42 source groups). Nineteen rows join official sitting collections already in the corpus and are not repeated here. Envelope provenance is empty until each group's sitting paper is listed. The YAML is not collection provenance.
+:::

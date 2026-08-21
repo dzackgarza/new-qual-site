@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - conformal-maps
-  - blaschke-factors
-  - fractional-linear-transformations
+  - Conformal Maps
+  - Blaschke Factors
+  - Fractional Linear Transformations
 relations: []
 review: draft
 solved: true

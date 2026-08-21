@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - rouche
+  - Rouché
 relations: []
 review: draft
 solved: true

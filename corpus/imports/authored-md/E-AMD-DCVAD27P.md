@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - rings
+  - Maximal Ideals
+  - Rings
 relations: []
 review: draft
 solved: false

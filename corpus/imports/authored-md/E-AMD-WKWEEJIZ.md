@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-AMD-WKWEEJIZ
 kind: exercise
-title: If $E/k$ and $F/k$ are Galois with $E\cap F=k$, then $EF/k$ is Galois with group $G(E/k)\times G(F/k)$
+title: If $E/k$ and $F/k$ are Galois with $E\cap F=k$, then $EF/k$ is Galois with
+  group $G(E/k)\times G(F/k)$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - direct-products
-  - field-extensions
+  - Galois Theory
+  - Direct Products
+  - Field Extensions
 relations: []
 review: draft
 solved: false

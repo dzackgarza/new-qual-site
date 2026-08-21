@@ -2,13 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-YUFSQW36WS
 kind: problem
-title: The group of upper-triangular unipotent $3\times 3$ matrices over $\mathbb{F}_p$ is nonabelian, $g^p=I$ for $p$ odd, and $D_8$ versus the quaternionic group for $p=2$
+title: The group of upper-triangular unipotent $3\times 3$ matrices over $\mathbb{F}_p$
+  is nonabelian, $g^p=I$ for $p$ odd, and $D_8$ versus the quaternionic group for
+  $p=2$
 classification:
   areas:
   - algebra
   topics:
-  - groups
-  - matrices
+  - Groups
+  - Matrices
 relations: []
 review: draft
 solved: false

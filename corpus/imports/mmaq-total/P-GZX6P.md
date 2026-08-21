@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-GZX6P
 kind: problem
-title: Galois group of an irreducible of degree $n$ embeds in $S_n$; examples with $G=S_n$, and the cubic case
+title: Galois group of an irreducible of degree $n$ embeds in $S_n$; examples with
+  $G=S_n$, and the cubic case
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - permutations
+  - Galois Theory
+  - Splitting Fields
+  - Permutations
 relations: []
 review: draft
 solved: false

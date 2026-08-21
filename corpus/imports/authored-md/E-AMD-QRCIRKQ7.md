@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - prime-ideals
-  - ideals
-  - primary-decomposition
+  - Prime Ideals
+  - Ideals
+  - Primary Decomposition
 relations: []
 review: draft
 solved: false

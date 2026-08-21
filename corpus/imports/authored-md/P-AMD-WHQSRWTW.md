@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - centralizers-and-normalizers
+  - Abelian Groups
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

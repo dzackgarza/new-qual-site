@@ -7,8 +7,8 @@ classification:
   areas:
   - topology
   topics:
-  - homology
-  - product-topology
+  - Homology
+  - Product Topology
 relations: []
 review: draft
 solved: true

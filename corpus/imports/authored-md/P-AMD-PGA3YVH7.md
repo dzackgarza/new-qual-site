@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - group-presentations
-  - commutators
+  - Group Presentations
+  - Commutators
 relations: []
 review: draft
 solved: false

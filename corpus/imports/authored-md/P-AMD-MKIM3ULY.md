@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - centralizers-and-normalizers
-  - abelian-groups
-  - cyclic-groups
+  - Centralizers and Normalizers
+  - Abelian Groups
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

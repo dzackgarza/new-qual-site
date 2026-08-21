@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-AMD-E67LQFU5
 kind: problem
-title: Tensor products $\ZZ_m\otimes\ZZ_n$, $\ZZ_{60}^4\otimes(\ZZ_{24}^3\oplus\ZZ_8^4\oplus\ZZ_{120})$, $\ZZ_n\otimes\QQ$, and $(\ZZ\oplus\ZZ_n)\otimes(\QQ/\ZZ)$
+title: Tensor products $\ZZ_m\otimes\ZZ_n$, $\ZZ_{60}^4\otimes(\ZZ_{24}^3\oplus\ZZ_8^4\oplus\ZZ_{120})$,
+  $\ZZ_n\otimes\QQ$, and $(\ZZ\oplus\ZZ_n)\otimes(\QQ/\ZZ)$
 classification:
   areas:
   - topology
   topics:
-  - modules
-  - homological-algebra
-  - groups
+  - Modules
+  - Homological Algebra
+  - Groups
 relations: []
 review: draft
 solved: true

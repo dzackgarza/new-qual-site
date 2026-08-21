@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - group-actions
-  - subgroups
+  - Normal Subgroups
+  - Group Actions
+  - Subgroups
 relations: []
 review: draft
 solved: false

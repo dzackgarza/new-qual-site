@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MZLQ3
 kind: problem
-title: At most one nonabelian group of order $pq$, and the pairs of distinct primes with none
+title: At most one nonabelian group of order $pq$, and the pairs of distinct primes
+  with none
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - sylow-theory
-  - semidirect-products
+  - Classification
+  - Sylow Theory
+  - Semidirect Products
 relations: []
 review: draft
 solved: false

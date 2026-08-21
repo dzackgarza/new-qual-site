@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - group-actions
-  - simple-groups
+  - Normal Subgroups
+  - Group Actions
+  - Simple Groups
 relations: []
 review: draft
 solved: false

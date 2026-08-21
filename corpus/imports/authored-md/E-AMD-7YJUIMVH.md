@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - diagonalization
-  - minimal-and-characteristic-polynomials
-  - bases
+  - Diagonalization
+  - Minimal and Characteristic Polynomials
+  - Bases
 relations: []
 review: draft
 solved: true

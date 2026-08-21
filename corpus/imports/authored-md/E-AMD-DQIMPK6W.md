@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - normal-subgroups
-  - homomorphisms
+  - Normal Subgroups
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

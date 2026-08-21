@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-AMD-WMKT2DK3
 kind: problem
-title: A path-connected space is simply connected iff every map $S^1\to X$ extends over $B^2$
+title: A path-connected space is simply connected iff every map $S^1\to X$ extends
+  over $B^2$
 classification:
   areas:
   - topology
   topics:
-  - fundamental-group
-  - homotopy
+  - Fundamental Group
+  - Homotopy
 relations: []
 review: draft
 solved: false

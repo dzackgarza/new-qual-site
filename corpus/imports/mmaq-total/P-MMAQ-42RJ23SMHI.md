@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-42RJ23SMHI
 kind: problem
-title: Groups of order $351=3^3\cdot 13$ are not simple; groups of order $33$ are cyclic
+title: Groups of order $351=3^3\cdot 13$ are not simple; groups of order $33$ are
+  cyclic
 classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - sylow-theory
-  - cyclic-groups
+  - Simple Groups
+  - Sylow Theory
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

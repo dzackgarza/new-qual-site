@@ -7,8 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - maximum-modulus-principle
-  - cauchy-integral-formula
+  - Maximum Modulus Principle
+  - Cauchy Integral Formula
 relations: []
 review: draft
 solved: true

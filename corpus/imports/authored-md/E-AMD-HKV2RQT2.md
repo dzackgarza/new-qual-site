@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - fields
-  - homomorphisms
+  - Fields
+  - Homomorphisms
 relations: []
 review: draft
 solved: false

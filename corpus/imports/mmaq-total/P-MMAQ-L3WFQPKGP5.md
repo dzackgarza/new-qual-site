@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
-  - automorphisms
+  - Groups
+  - Automorphisms
 relations: []
 review: draft
 solved: false

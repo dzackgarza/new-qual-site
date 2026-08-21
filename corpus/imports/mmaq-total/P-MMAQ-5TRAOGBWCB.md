@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-5TRAOGBWCB
 kind: problem
-title: $x^p-t$ is irreducible over $\mathbb{F}_p(t)$ and splits as a $p$-th power in its splitting field
+title: $x^p-t$ is irreducible over $\mathbb{F}_p(t)$ and splits as a $p$-th power
+  in its splitting field
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - splitting-fields
-  - irreducibility-criteria
+  - Finite Fields
+  - Splitting Fields
+  - Irreducibility Criteria
 relations: []
 review: draft
 solved: false

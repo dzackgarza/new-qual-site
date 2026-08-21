@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-TRSVD
 kind: problem
-title: 'A root extension of an irreducible polynomial: existence, basis, and $\theta^{-1}$; irreducibility of $x^3+9x+6$ and the inverse of $1+\theta$'
+title: 'A root extension of an irreducible polynomial: existence, basis, and $\theta^{-1}$;
+  irreducibility of $x^3+9x+6$ and the inverse of $1+\theta$'
 classification:
   areas:
   - algebra
   topics:
-  - field-extensions
-  - irreducibility-criteria
-  - bases
+  - Field Extensions
+  - Irreducibility Criteria
+  - Bases
 relations: []
 review: draft
 solved: false

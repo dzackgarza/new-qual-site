@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - argument-principle
-  - cauchy-integral-theorem
-  - integrals
-  - meromorphic-functions
+  - Argument Principle
+  - Cauchy Integral Theorem
+  - Integrals
+  - Meromorphic Functions
 relations: []
 review: draft
 solved: true

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - maximal-ideals
-  - ideals
-  - fields
+  - Maximal Ideals
+  - Ideals
+  - Fields
 relations: []
 review: draft
 solved: true

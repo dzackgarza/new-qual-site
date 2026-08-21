@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-GGDBSWV2GP
 kind: problem
-title: A group with at most one subgroup of each order is cyclic, and finite subgroups of $F^\times$ are cyclic
+title: A group with at most one subgroup of each order is cyclic, and finite subgroups
+  of $F^\times$ are cyclic
 classification:
   areas:
   - algebra
   topics:
-  - cyclic-groups
-  - subgroups
-  - fields
+  - Cyclic Groups
+  - Subgroups
+  - Fields
 relations: []
 review: draft
 solved: false

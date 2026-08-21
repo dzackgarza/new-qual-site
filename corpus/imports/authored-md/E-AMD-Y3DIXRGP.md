@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - orbit-stabilizer
-  - normal-subgroups
-  - counterexamples
+  - Orbit-Stabilizer
+  - Normal Subgroups
+  - Counterexamples
 relations: []
 review: draft
 solved: false

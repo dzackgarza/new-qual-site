@@ -7,8 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - fatou
+  - Measure Theory
+  - Fatou
 relations: []
 review: draft
 solved: true

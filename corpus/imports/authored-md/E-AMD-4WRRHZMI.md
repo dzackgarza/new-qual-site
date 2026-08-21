@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - integral-domains
-  - polynomials
-  - rings
+  - Integral Domains
+  - Polynomials
+  - Rings
 relations: []
 review: draft
 solved: true

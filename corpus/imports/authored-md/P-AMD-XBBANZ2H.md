@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - centralizers-and-normalizers
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

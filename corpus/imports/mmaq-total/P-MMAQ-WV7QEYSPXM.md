@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-WV7QEYSPXM
 kind: problem
-title: $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2}K$ when $K$ is cyclic and $\varphi_1(K)$, $\varphi_2(K)$ are conjugate
+title: $H\rtimes_{\varphi_1}K\cong H\rtimes_{\varphi_2}K$ when $K$ is cyclic and $\varphi_1(K)$,
+  $\varphi_2(K)$ are conjugate
 classification:
   areas:
   - algebra
   topics:
-  - classification
-  - groups
+  - Classification
+  - Groups
 relations: []
 review: draft
 solved: false

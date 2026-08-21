@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-VIFYJ
 kind: problem
-title: $\CC[x,y]/(y^2-(x-1)^3-(x-1)^2)$ is a domain, its real points, and its integral closure
+title: $\CC[x,y]/(y^2-(x-1)^3-(x-1)^2)$ is a domain, its real points, and its integral
+  closure
 classification:
   areas:
   - algebra
   topics:
-  - commutative-algebra
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

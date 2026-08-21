@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-AMD-GLBUESVX
 kind: exercise
-title: $x^{p^n}-x$ is the product of monic irreducibles in $\FF_p[x]$ of degree dividing $n$
+title: $x^{p^n}-x$ is the product of monic irreducibles in $\FF_p[x]$ of degree dividing
+  $n$
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - irreducibility-criteria
-  - factorization
+  - Finite Fields
+  - Irreducibility Criteria
+  - Factorization
 relations: []
 review: draft
 solved: false

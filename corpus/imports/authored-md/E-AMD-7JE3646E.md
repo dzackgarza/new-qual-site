@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - field-extensions
-  - characteristic
+  - Galois Theory
+  - Field Extensions
+  - Characteristic
 relations: []
 review: draft
 solved: true

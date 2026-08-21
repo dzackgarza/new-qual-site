@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - groups
-  - classification
+  - Groups
+  - Classification
 relations: []
 review: draft
 solved: false

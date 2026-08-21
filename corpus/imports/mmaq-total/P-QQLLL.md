@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-QQLLL
 kind: problem
-title: An outer automorphism of $S_6$ from a transitive embedding $S_5\hookrightarrow S_6$
+title: An outer automorphism of $S_6$ from a transitive embedding $S_5\hookrightarrow
+  S_6$
 classification:
   areas:
   - algebra
   topics:
-  - permutations
-  - automorphisms
-  - subgroups
+  - Permutations
+  - Automorphisms
+  - Subgroups
 relations: []
 review: draft
 solved: false

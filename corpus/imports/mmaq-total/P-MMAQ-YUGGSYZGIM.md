@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-YUGGSYZGIM
 kind: problem
-title: $\ZZ[x]/(f)$ is a finitely generated $\ZZ$-module if and only if the leading coefficient of $f$ is $\pm 1$
+title: $\ZZ[x]/(f)$ is a finitely generated $\ZZ$-module if and only if the leading
+  coefficient of $f$ is $\pm 1$
 classification:
   areas:
   - algebra
   topics:
-  - polynomials
-  - modules
+  - Polynomials
+  - Modules
 relations: []
 review: draft
 solved: false

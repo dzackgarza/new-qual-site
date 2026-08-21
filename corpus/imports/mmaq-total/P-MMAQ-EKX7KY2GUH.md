@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - green-s-theorem
+  - Green's Theorem
 relations: []
 review: draft
 solved: true

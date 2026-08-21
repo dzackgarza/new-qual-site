@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - integrals
-  - residues
-  - meromorphic-functions
+  - Integrals
+  - Residues
+  - Meromorphic Functions
 relations: []
 review: draft
 solved: true

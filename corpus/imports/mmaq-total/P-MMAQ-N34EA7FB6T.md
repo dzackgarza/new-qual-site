@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-MMAQ-N34EA7FB6T
 kind: problem
-title: Inverse images of primes are prime, the nilradical is contained in every prime, and $\mathrm{Spec}(R/N)\to\mathrm{Spec}(R)$ is bijective
+title: Inverse images of primes are prime, the nilradical is contained in every prime,
+  and $\mathrm{Spec}(R/N)\to\mathrm{Spec}(R)$ is bijective
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - commutative-algebra
-  - ideals
+  - Rings
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

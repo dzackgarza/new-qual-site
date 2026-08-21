@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-ZCQLF
 kind: problem
-title: The number of intermediate fields of a degree-$4$ Galois extension, and of a degree-$4$ separable extension
+title: The number of intermediate fields of a degree-$4$ Galois extension, and of
+  a degree-$4$ separable extension
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
+  - Galois Theory
 relations: []
 review: draft
 solved: false

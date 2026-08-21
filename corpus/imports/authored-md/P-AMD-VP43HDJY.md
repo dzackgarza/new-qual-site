@@ -7,10 +7,10 @@ classification:
   areas:
   - topology
   topics:
-  - cell-complexes
-  - homology
-  - fundamental-group
-  - manifolds
+  - Cell Complexes
+  - Homology
+  - Fundamental Group
+  - Manifolds
 relations: []
 review: draft
 solved: false

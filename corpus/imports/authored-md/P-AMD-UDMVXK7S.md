@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - classification
-  - semidirect-products
-  - sylow-theory
+  - Classification
+  - Semidirect Products
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

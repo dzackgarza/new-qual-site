@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-OZLCWMQK46
 kind: problem
-title: Absolute continuity of continuous $f$ on $[0,1]$ equivalent to mapping small-measure sets to small-measure sets and null sets to null sets
+title: Absolute continuity of continuous $f$ on $[0,1]$ equivalent to mapping small-measure
+  sets to small-measure sets and null sets to null sets
 classification:
   areas:
   - real-analysis
   topics:
-  - absolute-continuity
+  - Absolute Continuity
 relations: []
 review: draft
 solved: true

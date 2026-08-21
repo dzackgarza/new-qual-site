@@ -7,9 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
-  - lp-spaces
-  - integrals
+  - Measure Theory
+  - Lp Spaces
+  - Integrals
 relations: []
 review: draft
 solved: true

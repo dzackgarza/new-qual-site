@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - sylow-theory
-  - normal-subgroups
+  - Sylow Theory
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

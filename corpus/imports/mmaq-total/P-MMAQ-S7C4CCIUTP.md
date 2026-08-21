@@ -7,9 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - holomorphic-functions
-  - cauchy-integral-theorem
-  - green-s-theorem
+  - Holomorphic Functions
+  - Cauchy Integral Theorem
+  - Green's Theorem
 relations: []
 review: draft
 solved: true

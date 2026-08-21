@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-AMD-X6B3FWHG
 kind: problem
-title: The Frattini subgroup of a finite group is characteristic and nilpotent; $P/\Phi(P)$ is the largest elementary abelian quotient of a $p$-group
+title: The Frattini subgroup of a finite group is characteristic and nilpotent; $P/\Phi(P)$
+  is the largest elementary abelian quotient of a $p$-group
 classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - subgroups
-  - p-groups
+  - Nilpotent Groups
+  - Subgroups
+  - p-Groups
 relations: []
 review: draft
 solved: false

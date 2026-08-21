@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-RML5AHHINX
 kind: problem
-title: Darboux's theorem for $f'$ attaining $2$, and $f'(0)=\lim_{x\to 0}f'(x)$ when $f$ is continuous and the limit exists
+title: Darboux's theorem for $f'$ attaining $2$, and $f'(0)=\lim_{x\to 0}f'(x)$ when
+  $f$ is continuous and the limit exists
 classification:
   areas:
   - real-analysis
   topics:
-  - mean-value-theorem
-  - sequences-of-functions
+  - Mean Value Theorem
+  - Sequences of Functions
 relations: []
 review: draft
 solved: true

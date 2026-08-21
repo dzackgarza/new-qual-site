@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-UIHJF
 kind: problem
-title: A finitely generated group has finitely many subgroups of index $n$, and the possible numbers of index-$p$ subgroups of a finitely generated abelian group
+title: A finitely generated group has finitely many subgroups of index $n$, and the
+  possible numbers of index-$p$ subgroups of a finitely generated abelian group
 classification:
   areas:
   - algebra
   topics:
-  - subgroups
-  - abelian-groups
-  - group-actions
+  - Subgroups
+  - Abelian Groups
+  - Group Actions
 relations: []
 review: draft
 solved: false

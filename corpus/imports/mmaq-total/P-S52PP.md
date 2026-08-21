@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-S52PP
 kind: problem
-title: A commutative integral domain is a field if and only if it is semisimple if and only if every module is projective
+title: A commutative integral domain is a field if and only if it is semisimple if
+  and only if every module is projective
 classification:
   areas:
   - algebra
   topics:
-  - integral-domains
-  - semisimplicity
-  - projective-modules
+  - Integral Domains
+  - Semisimplicity
+  - Projective Modules
 relations: []
 review: draft
 solved: false

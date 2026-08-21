@@ -7,7 +7,7 @@ classification:
   areas:
   - topology
   topics:
-  - van-kampen
+  - van Kampen
 relations: []
 review: draft
 solved: true

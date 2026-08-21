@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - ideals
-  - prime-ideals
-  - nilpotence
+  - Ideals
+  - Prime Ideals
+  - Nilpotence
 relations: []
 review: draft
 solved: false

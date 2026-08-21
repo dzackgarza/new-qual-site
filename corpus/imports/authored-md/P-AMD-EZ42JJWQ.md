@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - p-groups
-  - groups
+  - Nilpotent Groups
+  - p-Groups
+  - Groups
 relations: []
 review: draft
 solved: false

@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - nilpotent-groups
-  - sylow-theory
-  - direct-products
+  - Nilpotent Groups
+  - Sylow Theory
+  - Direct Products
 relations: []
 review: draft
 solved: false

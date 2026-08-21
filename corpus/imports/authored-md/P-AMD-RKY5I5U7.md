@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - quotient-spaces
-  - surfaces
-  - homeomorphisms
+  - Quotient Spaces
+  - Surfaces
+  - Homeomorphisms
 relations: []
 review: draft
 solved: false

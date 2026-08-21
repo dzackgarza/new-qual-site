@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-YRTGM662ZN
 kind: problem
-title: The evaluation map $V\to(V^\vee)^\vee$ is injective, and an isomorphism if and only if $V$ is finite-dimensional
+title: The evaluation map $V\to(V^\vee)^\vee$ is injective, and an isomorphism if
+  and only if $V$ is finite-dimensional
 classification:
   areas:
   - algebra
   topics:
-  - linear-algebra
-  - vector-spaces
+  - Linear Algebra
+  - Vector Spaces
 relations: []
 review: draft
 solved: false

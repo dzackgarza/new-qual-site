@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-LCNIDD33OI
 kind: problem
-title: $R/I$ is a field for maximal $I$; nonzero primes in a PID are maximal; $R/(p)$ is a field for prime $p$
+title: $R/I$ is a field for maximal $I$; nonzero primes in a PID are maximal; $R/(p)$
+  is a field for prime $p$
 classification:
   areas:
   - algebra
   topics:
-  - rings
-  - ideals
+  - Rings
+  - Ideals
 relations: []
 review: draft
 solved: false

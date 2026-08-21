@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - simple-groups
-  - sylow-theory
-  - classification
+  - Simple Groups
+  - Sylow Theory
+  - Classification
 relations: []
 review: draft
 solved: false

@@ -9,10 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-payload:
-  source_kind: contributed-artifact
-  provenance: make-me-a-qual `Questions/Algebra/Extra/UCSD Algebra HW Questions.md`, titled "Math 200A
-    Homework Question Compendium". The file names no author.
+provenance: []
+source:
+  source_kind: homework
   problems:
   - P-AMD-Q626TCVB
   - P-AMD-IWMSL46U
@@ -74,8 +73,9 @@ payload:
   - P-AMD-6ESY7G3W
   date:
     kind: unknown
+  area: algebra
 ---
 
-::: {.remark}
-Collected statements routed from Questions/Algebra/Extra/UCSD Algebra HW Questions.md; 58 cards.
+::: remark
+Authored compendium titled "Math 200A Homework Question Compendium"; no department homework sheet PDF identified. The make-me-a-qual markdown wrapper is not collection provenance.
 :::

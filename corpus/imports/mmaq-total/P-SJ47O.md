@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-SJ47O
 kind: problem
-title: Center, linear characters, and irreducible representations of a nonabelian group of order $p^3$
+title: Center, linear characters, and irreducible representations of a nonabelian
+  group of order $p^3$
 classification:
   areas:
   - algebra
   topics:
-  - groups
-  - representation-theory
+  - Groups
+  - Representation Theory
 relations: []
 review: draft
 solved: false

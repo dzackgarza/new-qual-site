@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - splitting-fields
+  - Finite Fields
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

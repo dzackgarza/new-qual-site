@@ -41,7 +41,6 @@ sections:
       - ref: P-6XW74
       - ref: P-KXSW3
       - ref: P-KPEPM
-      - ref: P-IC2GD
       # Algebra Week 2 Finite Group Theory
       - ref: P-O2H7G
       - ref: P-P4KA6
@@ -82,10 +81,10 @@ sections:
     title: Real Analysis
     parent: GUIDE-WORKSHOPS
     lede: >-
-      Two sittings against the Real Analysis branch. The first works the preliminaries the
-      continuity section assumes; the second is measure theory, which the branch's
-      Riemann-Stieltjes section does not reach, so this is the only route to that material in
-      a reading order.
+      One sitting against the Real Analysis branch: the preliminaries the continuity
+      section assumes. The UNL workshop packet — topic sheets, three qualifying exams,
+      and the numbered results the worksheets state — follows under Real Analysis
+      Workshop Sittings.
     items:
       # Real Week 1 Preliminaries
       - ref: E-JY5OT
@@ -95,11 +94,6 @@ sections:
       - ref: P-E33SA
       - ref: E-GMYE2
       - ref: P-4FH62
-      # Real Week 2 Measure Theory
-      - ref: P-VLG4M
-      - ref: P-HKQHN
-      - ref: P-FYFEC
-      - ref: P-NLNZ3
   - slug: complex-analysis
     title: Complex Analysis
     parent: GUIDE-WORKSHOPS
@@ -115,7 +109,6 @@ sections:
       # Complex Week 2 Cauchy
       - ref: E-W3QMS
       - ref: P-IOUZO
-      - ref: P-FWVKJ
   - slug: topology
     title: Topology
     parent: GUIDE-WORKSHOPS
@@ -155,26 +148,16 @@ sections:
     title: Real Analysis Workshop Sittings
     parent: real-analysis
     lede: >-
-      The seven days of the Real Analysis workshop, extracted from the worksheets rather
-      than from the wiki week pages above, and the reason this branch is not just those
-      pages: each day is a sitting card whose route lists that day's problems in the order
-      they were set, with every problem linking to its canonical card in the Real Analysis
-      branch. The run is Day 2 through Day 8; there is no Day 1 among the extracted
-      worksheets. Metric spaces and topology come first because the rest of the subject is
-      stated in their language, then sequences and series, then the three calculus days,
-      then sequences and series of functions, where uniform convergence separates what the
-      earlier days could assume. The twenty numbered results the worksheets state and then
-      set problems against follow the sittings: they carry no occurrence, so no sitting
-      page lists them, and this is the only place in the branch they can be read. Their
-      numbering runs 3.1 to 6.7 with 6.6 absent, which is how the source has it.
+      The UNL real-analysis workshop packet as one collection, days as sections,
+      extracted from the worksheets rather than from the wiki week pages above.
+      Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying
+      exams; Days 2–8 are the topic sheets. The twenty numbered results the
+      worksheets state and then set problems against follow the packet: they
+      carry no occurrence, so no sitting page lists them, and this is the only
+      place in the branch they can be read. Their numbering runs 3.1 to 6.7 with
+      6.6 absent, which is how the source has it.
     items:
-      - ref: SRC-RA-WORKSHOP-D2-METRIC
-      - ref: SRC-RA-WORKSHOP-D3-SEQUENCES
-      - ref: SRC-RA-WORKSHOP-D4-CONTINUITY
-      - ref: SRC-RA-WORKSHOP-D5-DIFFERENTIAL
-      - ref: SRC-RA-WORKSHOP-D6-INTEGRAL
-      - ref: SRC-RA-WORKSHOP-D7-SEQUENCES
-      - ref: SRC-RA-WORKSHOP-D8-MISC
+      - ref: SRC-RA-WORKSHOP
       # The numbered results the worksheets state and then set problems against.
       # They carry no occurrence, so no sitting page lists them.
       - ref: T-RA-WORKSHOP-D4-3-1
@@ -201,27 +184,13 @@ sections:
     title: Topology Workshop Sittings
     parent: topology
     lede: >-
-      Fifteen Topology sittings, in two runs that cover the subject twice at different
-      depths. The numbered days follow the Topology branch's own order -- compactness,
-      connectedness, separation axioms, counterexamples, then fundamental groups, covering
-      spaces and homology -- with no Day 5 or Day 6 among the extracted worksheets. The
-      eight worksheets of the May 2020 workshop run the same ground again in one week,
-      pairing a warm-up sheet with a problem sheet at each stage. Each sitting's route
-      lists its problems in the order they were set and links each to its canonical card in
-      the Topology branch.
+      Two topology workshop packets. The numbered-day packet follows the Topology
+      branch's own order -- compactness, connectedness, separation axioms,
+      counterexamples, then fundamental groups, covering spaces and homology --
+      with no Day 5 or Day 6 among the extracted worksheets. The May 2020 packet
+      runs the same ground again in one week. Each collection lists its problems
+      by day or worksheet, in the order they were set, and links each to its
+      canonical card in the Topology branch.
     items:
-      - ref: SRC-TOP-WORKSHOP-D1-COMPACT
-      - ref: SRC-TOP-WORKSHOP-D2-CONNECTED
-      - ref: SRC-TOP-WORKSHOP-D3-SEPARATION
-      - ref: SRC-TOP-WORKSHOP-D4-COUNTEREXAMPLES
-      - ref: SRC-TOP-WORKSHOP-D7-GROUPS
-      - ref: SRC-TOP-WORKSHOP-D8-COVERING
-      - ref: SRC-TOP-WORKSHOP-D9-HOMOLOGY
-      - ref: SRC-TOP-WORKSHOP-2020-WS1A
-      - ref: SRC-TOP-WORKSHOP-2020-WS1B
-      - ref: SRC-TOP-WORKSHOP-2020-WS2A
-      - ref: SRC-TOP-WORKSHOP-2020-WS2B
-      - ref: SRC-TOP-WORKSHOP-2020-WS3A
-      - ref: SRC-TOP-WORKSHOP-2020-WS3B
-      - ref: SRC-TOP-WORKSHOP-2020-WS4A
-      - ref: SRC-TOP-WORKSHOP-2020-WS5
+      - ref: SRC-TOP-WORKSHOP
+      - ref: SRC-TOP-WORKSHOP-2020

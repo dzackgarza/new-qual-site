@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-MMAQ-O4HLIPMOVO
 kind: problem
-title: $K\subseteq L$ for finite fields iff $\#K=p^r$ and $\#L=p^s$ for the same prime $p$ with $r\leq s$
+title: $K\subseteq L$ for finite fields iff $\#K=p^r$ and $\#L=p^s$ for the same prime
+  $p$ with $r\leq s$
 classification:
   areas:
   - algebra
   topics:
-  - finite-fields
-  - field-extensions
+  - Finite Fields
+  - Field Extensions
 relations: []
 review: draft
 solved: false

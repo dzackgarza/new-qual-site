@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - group-actions
-  - p-groups
-  - orbit-stabilizer
+  - Group Actions
+  - p-Groups
+  - Orbit-Stabilizer
 relations: []
 review: draft
 solved: false

@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - burnside-s-lemma
-  - group-actions
+  - Burnside's Lemma
+  - Group Actions
 relations: []
 review: draft
 solved: true

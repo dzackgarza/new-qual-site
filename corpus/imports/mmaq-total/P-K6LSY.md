@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-K6LSY
 kind: problem
-title: Finite interval covers versus Lebesgue outer measure, and Borel preimages under measurable functions
+title: Finite interval covers versus Lebesgue outer measure, and Borel preimages under
+  measurable functions
 classification:
   areas:
   - real-analysis
   topics:
-  - measure-theory
+  - Measure Theory
 relations: []
 review: draft
 solved: true

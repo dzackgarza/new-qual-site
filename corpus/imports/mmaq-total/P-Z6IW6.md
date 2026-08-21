@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: P-Z6IW6
 kind: problem
-title: The kernel of a surjection $\ZZ^m\to G$ onto a finite abelian group is isomorphic to $\ZZ^m$, with $|\det A|=|G|$
+title: The kernel of a surjection $\ZZ^m\to G$ onto a finite abelian group is isomorphic
+  to $\ZZ^m$, with $|\det A|=|G|$
 classification:
   areas:
   - algebra
   topics:
-  - modules
-  - matrices
-  - groups
+  - Modules
+  - Matrices
+  - Groups
 relations: []
 review: draft
 solved: false

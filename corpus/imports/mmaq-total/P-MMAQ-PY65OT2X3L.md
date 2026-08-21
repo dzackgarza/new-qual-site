@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MMAQ-PY65OT2X3L
 kind: problem
-title: An irreducible of degree $7$ over $K$ with no zeros in a Galois extension $L$ remains irreducible in $L[x]$
+title: An irreducible of degree $7$ over $K$ with no zeros in a Galois extension $L$
+  remains irreducible in $L[x]$
 classification:
   areas:
   - algebra
   topics:
-  - galois-theory
+  - Galois Theory
 relations: []
 review: draft
 solved: false

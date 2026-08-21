@@ -2,14 +2,15 @@
 schema: qual/card@1
 id: E-AMD-RRYNGX7L
 kind: exercise
-title: The cokernel of $A\in M_n(\ZZ)$ is finite of order $|\det A|$ iff $\det A\neq 0$
+title: The cokernel of $A\in M_n(\ZZ)$ is finite of order $|\det A|$ iff $\det A\neq
+  0$
 classification:
   areas:
   - algebra
   topics:
-  - structure-theorem
-  - determinants
-  - modules
+  - Structure Theorem
+  - Determinants
+  - Modules
 relations: []
 review: draft
 solved: false

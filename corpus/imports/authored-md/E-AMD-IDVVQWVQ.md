@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - prime-ideals
-  - ideals
+  - Prime Ideals
+  - Ideals
 relations: []
 review: draft
 solved: false

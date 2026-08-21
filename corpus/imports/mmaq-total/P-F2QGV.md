@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - biholomorphisms
+  - Biholomorphisms
 relations: []
 review: draft
 solved: true

@@ -6,11 +6,11 @@
   "occurrences": 508,
   "rows": 508,
   "source": {
-    "path": "Combined_Questions.yaml",
+    "path": "assets/ws9/make-me-a-qual/Combined_Questions.yaml",
     "revision": "6190e0eeaf93ac471a2450444d0b70872b7b9dfa",
     "sha256": "63845aa447e86bdd9a32f02dd83d9f21ca823b250aebe1fcc0468b2758d49176",
     "source": "make-me-a-qual Combined_Questions.yaml",
-    "url": "https://raw.githubusercontent.com/dzackgarza/make-me-a-qual/6190e0eeaf93ac471a2450444d0b70872b7b9dfa/Combined_Questions.yaml"
+    "url": "assets/ws9/make-me-a-qual/Combined_Questions.yaml"
   },
   "source_groups": 42,
   "unique_statements": 481

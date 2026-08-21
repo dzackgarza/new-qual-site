@@ -7,8 +7,8 @@ classification:
   areas:
   - algebra
   topics:
-  - minimal-and-characteristic-polynomials
-  - linear-algebra
+  - Minimal and Characteristic Polynomials
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

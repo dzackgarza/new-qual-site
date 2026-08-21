@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - abelian-groups
-  - torsion
-  - cyclic-groups
+  - Abelian Groups
+  - Torsion
+  - Cyclic Groups
 relations: []
 review: draft
 solved: false

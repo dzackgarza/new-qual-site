@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-CTBJD
 kind: problem
-title: Groups of order $pqr$ are not simple; simplicity of groups of order $12p$ for $p=5,7,11$
+title: Groups of order $pqr$ are not simple; simplicity of groups of order $12p$ for
+  $p=5,7,11$
 classification:
   areas:
   - algebra
   topics:
-  - groups
-  - sylow-theory
+  - Groups
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

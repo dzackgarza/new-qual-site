@@ -7,9 +7,9 @@ classification:
   areas:
   - algebra
   topics:
-  - galois-theory
-  - splitting-fields
-  - roots-of-unity
+  - Galois Theory
+  - Splitting Fields
+  - Roots of Unity
 relations: []
 review: draft
 solved: true

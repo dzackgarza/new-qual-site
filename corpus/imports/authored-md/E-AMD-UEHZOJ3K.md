@@ -2,14 +2,14 @@
 schema: qual/card@1
 id: E-AMD-UEHZOJ3K
 kind: solution
-title: "Nilradical is the intersection of all prime ideals"
+title: Nilradical is the intersection of all prime ideals
 classification:
   areas:
   - algebra
   topics:
-  - nilpotence
-  - prime-ideals
-  - ideals
+  - Nilpotence
+  - Prime Ideals
+  - Ideals
 relations: []
 review: draft
 ---

@@ -7,10 +7,10 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - uniform-continuity
-  - harmonic-functions
-  - pdes
-  - counterexamples
+  - Uniform Continuity
+  - Harmonic Functions
+  - PDEs
+  - Counterexamples
 relations: []
 review: draft
 solved: true

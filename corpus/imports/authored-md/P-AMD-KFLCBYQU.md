@@ -7,9 +7,9 @@ classification:
   areas:
   - topology
   topics:
-  - homeomorphisms
-  - homology
-  - surfaces
+  - Homeomorphisms
+  - Homology
+  - Surfaces
 relations: []
 review: draft
 solved: false
