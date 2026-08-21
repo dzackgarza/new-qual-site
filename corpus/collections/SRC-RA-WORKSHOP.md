@@ -144,7 +144,12 @@ source:
 ---
 
 ::: remark
-UNL Math 825/826 qual-prep packet. Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying exams (those sittings are their own collections). Days 2–8 are topic sheets.
+UNL Math 825/826 qual-prep packet.
+Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying exams (those sittings are their own collections).
+Days 2–8 are topic sheets.
 
-UNL Math 825/826 qual-prep packet. Days 1, 9, and 10 are the exam papers `SRC-UNL-RA-SUMMER-2016`, `SRC-UNL-RA-SPRING-2019`, and `SRC-UNL-RA-SUMMER-2018`; those collections own the sheet PDFs. Days 2–8 are topic sheets; Day 2 labels one item `(May 2019, #1)`. Definitions and theorems printed on the sheets are source context, not listed. Extra_Questions transcribes this packet.
+UNL Math 825/826 qual-prep packet.
+Days 1, 9, and 10 are the exam papers `SRC-UNL-RA-SUMMER-2016`, `SRC-UNL-RA-SPRING-2019`, and `SRC-UNL-RA-SUMMER-2018`; those collections own the sheet PDFs.
+Days 2–8 are topic sheets; Day 2 labels one item `(May 2019, #1)`. Definitions and theorems printed on the sheets are source context, not listed.
+Extra_Questions transcribes this packet.
 :::

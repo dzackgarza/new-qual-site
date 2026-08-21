@@ -33,5 +33,6 @@ source:
 ::: remark
 Math 871-872 Qualifying Exam, January 2019.
 
-UNL Math 871–872 qualifying exam, January 2019. The paper is `assets/attachments/2019Q1_Topology_Qual.pdf`. Eight questions (A1–A4, B5–B8); the list is paper order. A1 is the same finer-topology-on-compact-Hausdorff statement as January 2006 Q4, so the card is `P-T06Q1-4`. B6 is the same covering-of-Hausdorff-is-Hausdorff statement as June 2009 B2, so the card is `P-T09B2`. No holes.
+UNL Math 871–872 qualifying exam, January 2019. The paper is `assets/attachments/2019Q1_Topology_Qual.pdf`. Eight questions (A1–A4, B5–B8); the list is paper order.
+A1 is the same finer-topology-on-compact-Hausdorff statement as January 2006 Q4, so the card is `P-T06Q1-4`. B6 is the same covering-of-Hausdorff-is-Hausdorff statement as June 2009 B2, so the card is `P-T09B2`. No holes.
 :::

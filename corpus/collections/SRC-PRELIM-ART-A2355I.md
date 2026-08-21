@@ -24,5 +24,6 @@ source:
 ::: remark
 UGA (undated)
 
-`P-VAWOC` is the Taylor series of $\ln x$ at 1; `P-HUKW5` is the Jacobian of polar coordinates at the origin. Distinct from `SRC-PRELIM-ART-INTEGRAL-PRACTICE`.
+`P-VAWOC` is the Taylor series of $\ln x$ at 1; `P-HUKW5` is the Jacobian of polar coordinates at the origin.
+Distinct from `SRC-PRELIM-ART-INTEGRAL-PRACTICE`.
 :::

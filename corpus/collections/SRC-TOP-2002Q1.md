@@ -33,5 +33,6 @@ source:
 ::: remark
 Ph.D. Qualifying Exam, Topology and Algebraic Topology, Math 970-971, January 18, 2002; institution is not named on the source page.
 
-Ph.D. Qualifying Exam, Topology and Algebraic Topology, Math 970–971, January 18, 2002. The paper is `assets/attachments/2002Q1_Topology_Qual.pdf`. Nine questions (A1–A5, B1–B4); the list is paper order. No holes.
+Ph.D. Qualifying Exam, Topology and Algebraic Topology, Math 970–971, January 18, 2002. The paper is `assets/attachments/2002Q1_Topology_Qual.pdf`. Nine questions (A1–A5, B1–B4); the list is paper order.
+No holes.
 :::
