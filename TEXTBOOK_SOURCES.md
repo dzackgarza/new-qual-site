@@ -61,16 +61,17 @@ All paths are under `/home/dzack/Zotero/storage/<attachment-key>/`.
 - [ ] §8.2 — Inner Product Spaces
 - [ ] §8.3 — Linear Functionals and Adjoints
 - [ ] §8.4 — Unitary Operators
-- [ ] §9.2 — Forms on Inner Product Spaces
-- [ ] §9.3 — Positive Forms
-- [ ] §9.5 — Spectral Theory
-- [ ] §10.1 — Bilinear Forms
-- [ ] §10.2 — Symmetric Bilinear Forms
-- [ ] §10.3 — Skew-Symmetric Bilinear Forms
-- [ ] §10.4 — Groups Preserving Bilinear Forms
+- [x] §9.2 — Forms on Inner Product Spaces
+- [x] §9.3 — Positive Forms
+- [x] §9.5 — Spectral Theory
+- [x] §10.1 — Bilinear Forms
+- [x] §10.2 — Symmetric Bilinear Forms
+- [x] §10.3 — Skew-Symmetric Bilinear Forms
+- [x] §10.4 — Groups Preserving Bilinear Forms
 
 **Notes:**
 - §§2.1, 3.1, 3.2, 3.5, 3.6 have exercises in the book but the MinerU extraction doesn't label them with an "Exercises" heading — exercises appear as inline numbered items at the end of the section text.
+- The `sections:` list on `SRC-TEXT-HK71` is the authoritative record; this checklist is derived from it and lags behind it. The card currently holds all 47 sections with exercises (§§1.2–10.4), so `completion` here is `incomplete` only in the sense that the book's exercises are not all written as cards — every section that has exercises in the extraction is listed on the card.
 
 ## Dummit & Foote, *Abstract Algebra*
 
@@ -162,17 +163,16 @@ All paths are under `/home/dzack/Zotero/storage/<attachment-key>/`.
 **Collection card:** `SRC-TEXT-SMI`
 **Extraction:** Vendored PDF (`assets/attachments/8000e.pdf`) with vendored MinerU pipeline extraction (`assets/attachments/8000e_extracted.md`). Not in Zotero by decision — the packet has no canonical citation info.
 
-- [x] Abelian groups — items 1, 2, 6 in cards
-- [ ] Generators for abelian groups, and free abelian groups — items 1, 2 in cards; remaining: 0 (reading), 3, 4, 5
-- [ ] Euclidean domains — items 1, 5 in cards; remaining: 2–4, 6–9
-- [ ] Finitely generated abelian groups and $k[X]$ modules — remaining: all of 1–4
-- [ ] Jordan forms — remaining: all of 1–4
-- [ ] Noetherian rings — items 1, 7 in cards; remaining: 2–6, 8–10
-- [ ] Normality and localization — item 1 in cards; remaining: 2–8
-- [ ] Sylow subgroups — item 2 in cards; remaining: 1, 3–10
-- [ ] Cycles in $S(n)$ and commutators — item 1 in cards; remaining: 2–10
-- [ ] Galois groups — remaining: the five prelim pointers
-- [ ] Fall 2006 midterm — in the packet but not represented on the collection card; candidate for its own sitting collection
+- [x] Abelian groups / generators for abelian groups — items 1–6 in cards (item 0 is a reading task)
+- [x] Euclidean domains — all of 1–9 in cards
+- [x] Finitely generated abelian groups and $k[X]$ modules — all of 1–4 in cards
+- [ ] Jordan forms — exercises 1 and 2(i)–(ii) in cards; remaining: 2(iii), 3, 4 (matrix displays corrupted in the extraction; read from the scanned packet)
+- [x] Noetherian rings — all of 1–10 in cards
+- [x] Normality and localization — all in cards (sheet items 3, 4, 5 share one card)
+- [x] Sylow subgroups — all of 1–10 in cards
+- [x] Cycles in $S(n)$ and commutators — all of 1–10 in cards
+- [x] Galois groups — concrete problems in cards; the ten prelim pointers (UGA prelims 1997–2006) not yet represented
+- [ ] Fall 2006 midterm and final exam — in the packet but not represented; candidates for their own sitting collection
 
 **Notes:**
 - The hosted MinerU API failed repeatedly on this file; the extraction was produced by a local MinerU pipeline run.
