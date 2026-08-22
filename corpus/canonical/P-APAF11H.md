@@ -11,6 +11,7 @@ relations: []
 review: draft
 solved: false
 ---
+
 ::: problem
 Let $I$ and $J$ be ideals in $k[x_1,\ldots,x_n]$ where $k$ is a field.
 
@@ -20,5 +21,6 @@ Let $I$ and $J$ be ideals in $k[x_1,\ldots,x_n]$ where $k$ is a field.
 
 (iii) Prove that $\sqrt{I\cap J}=\sqrt{I}\cap\sqrt{J}$.
 
-(iv) Let $I=\langle x^3y\rangle$ and $J=\langle xy^3+xy\rangle$ be ideals in $k[x,y]$. Find a Gröbner basis for $I\cap J$ relative to lexicographic order where $x>y$.
+(iv) Let $I=\langle x^3y\rangle$ and $J=\langle xy^3+xy\rangle$ be ideals in $k[x,y]$.
+Find a Gröbner basis for $I\cap J$ relative to lexicographic order where $x>y$.
 :::

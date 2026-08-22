@@ -11,6 +11,7 @@ relations: []
 review: draft
 solved: false
 ---
+
 ::: problem
 Let $I$ and $J$ be ideals in $k[x_1,\ldots,x_n]$ where $k$ is a field.
 

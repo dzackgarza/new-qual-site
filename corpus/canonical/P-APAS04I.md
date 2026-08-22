@@ -11,6 +11,7 @@ relations: []
 review: draft
 solved: false
 ---
+
 ::: problem
 Let $H$ be a subgroup of a finite group $G$ and $A\colon H\to GL(n,\mathbb{C})$ be a representation of $H$.
 
