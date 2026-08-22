@@ -19,7 +19,8 @@ Let $S_4$ denote the symmetric group on $4$ elements and $A_4$ denote the altern
 
 (a) Find the conjugacy classes of $A_4$.
 
-(b) Let $D=\{\varepsilon,(1,2)(3,4),(1,3)(2,4),(1,4)(2,3)\}$. Show that $D$ is a normal subgroup of $A_4$ and that $A_4/D$ is isomorphic to $\mathbb{Z}_3$.
+(b) Let $D=\{\varepsilon,(1,2)(3,4),(1,3)(2,4),(1,4)(2,3)\}$.
+Show that $D$ is a normal subgroup of $A_4$ and that $A_4/D$ is isomorphic to $\mathbb{Z}_3$.
 
 (c) Give the character table for $\mathbb{Z}_3$.
 

@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $\phi$ be a positive harmonic function on a simply connected region $G$. Prove that there are two harmonic functions $u,v$ on $G$ such that $\phi = e^u \sin v$.
+Let $\phi$ be a positive harmonic function on a simply connected region $G$.
+Prove that there are two harmonic functions $u,v$ on $G$ such that $\phi = e^u \sin v$.
 :::

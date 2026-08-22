@@ -15,9 +15,11 @@ solved: false
 ---
 
 ::: problem
-Suppose that $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$. Then $A^\lambda$ denotes the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$, and $S_{\lambda_1}\times\cdots\times S_{\lambda_k}$ denotes the Young subgroup of $S_n$ corresponding to $\lambda$.
+Suppose that $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a partition of $n$.
+Then $A^\lambda$ denotes the irreducible representation of the symmetric group $S_n$ such that the Frobenius image of $\chi^{A^\lambda}=\chi^\lambda$ is the Schur function $S_\lambda(x_1,\ldots,x_N)$ where $N>n$, and $S_{\lambda_1}\times\cdots\times S_{\lambda_k}$ denotes the Young subgroup of $S_n$ corresponding to $\lambda$.
 
-(a) Let $T$ denote the trivial representation on the Young subgroup $S_2\times S_3\times S_1$ of $S_6$ and $\mathrm{Alt}$ denote the alternating representation on the Young subgroup $S_2\times S_3\times S_1$ of $S_6$. Express the characters of
+(a) Let $T$ denote the trivial representation on the Young subgroup $S_2\times S_3\times S_1$ of $S_6$ and $\mathrm{Alt}$ denote the alternating representation on the Young subgroup $S_2\times S_3\times S_1$ of $S_6$.
+Express the characters of
 \[
 T\uparrow_{S_2\times S_3\times S_1}^{S_6}
 \quad\text{and}\quad

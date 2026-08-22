@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $k$ be an algebraically closed field and let $I\subseteq k[x,y]$ be an ideal. Suppose that the variety of $I$ is $V(I)=\{(1,0),(0,1)\}\subseteq k^2$.
+Let $k$ be an algebraically closed field and let $I\subseteq k[x,y]$ be an ideal.
+Suppose that the variety of $I$ is $V(I)=\{(1,0),(0,1)\}\subseteq k^2$.
 
 (a) Prove that $k[x,y]/I$ is a finite-dimensional $k$-vector space.
 

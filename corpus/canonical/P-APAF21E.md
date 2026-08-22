@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a finite group and let $V$ be an irreducible complex representation of $G$. If $g\in G$ lies in the center of $G$, show that there exists $c\in\mathbb{C}$ with
+Let $G$ be a finite group and let $V$ be an irreducible complex representation of $G$.
+If $g\in G$ lies in the center of $G$, show that there exists $c\in\mathbb{C}$ with
 \[
 g\cdot v=cv
 \]

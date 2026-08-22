@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $(V, \varphi)$ be a finite-dimensional unitary representation of a finite group $G$. State the definition of the space $V^G$ of $G$-invariant vectors in $V$, and prove that
+Let $(V, \varphi)$ be a finite-dimensional unitary representation of a finite group $G$.
+State the definition of the space $V^G$ of $G$-invariant vectors in $V$, and prove that
 \[
 P = \frac{1}{|G|} \sum_{g \in G} \varphi(g)
 \]

@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $E \subseteq \mathbb{R}$ be (Lebesgue) measurable and satisfy $E + r = E$ for every rational number $r$. Show that either $E$ or $E^c$ has measure 0.
+Let $E \subseteq \mathbb{R}$ be (Lebesgue) measurable and satisfy $E + r = E$ for every rational number $r$.
+Show that either $E$ or $E^c$ has measure 0.
 :::

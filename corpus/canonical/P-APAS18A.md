@@ -22,5 +22,6 @@ Let $A,B\in\mathbb{C}^{8\times 8}$ be two matrices such that
 \operatorname{rank} A^3=\operatorname{rank} B^3=2,\quad
 \operatorname{rank} A^4=\operatorname{rank} B^4=0.
 \]
-Determine whether $A$ and $B$ are similar to each other or not. If yes, explain why; if no, give a counterexample.
+Determine whether $A$ and $B$ are similar to each other or not.
+If yes, explain why; if no, give a counterexample.
 :::

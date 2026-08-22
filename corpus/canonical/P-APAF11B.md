@@ -32,13 +32,15 @@ C_5&=\{a^kb^2:k=0,\ldots,6\}.
 \end{align*}
 \]
 
-(b) Show that $H=\{a^k:k=0,\ldots,6\}$ is a normal subgroup of $G$ for which $G/H$ is isomorphic to $\mathbb{Z}_3$. Give the character table for the lifting of the $3$ linear characters of $G/H$ to $G$.
+(b) Show that $H=\{a^k:k=0,\ldots,6\}$ is a normal subgroup of $G$ for which $G/H$ is isomorphic to $\mathbb{Z}_3$.
+Give the character table for the lifting of the $3$ linear characters of $G/H$ to $G$.
 
 (c) Let $\chi$ be the linear character of $H$ given by
 \[
 \chi(a^k)=\eta^k\quad\text{for }k=0,\ldots,6
 \]
-where $\eta=e^{2\pi i/7}$. Show that $\chi\uparrow_H^G$ is an irreducible character of $G$.
+where $\eta=e^{2\pi i/7}$.
+Show that $\chi\uparrow_H^G$ is an irreducible character of $G$.
 
 (d) Use parts (b) and (c) to give a complete character table for $G$.
 :::

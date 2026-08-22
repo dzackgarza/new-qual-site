@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a finite $p$-group. Show that, if $H$ is a proper subgroup of $G$, then $H$ is a proper subgroup of its normalizer $N_G(H)$. (Hint: center of a finite $p$-group is non-trivial.)
+Let $G$ be a finite $p$-group.
+Show that, if $H$ is a proper subgroup of $G$, then $H$ is a proper subgroup of its normalizer $N_G(H)$.
+(Hint: center of a finite $p$-group is non-trivial.)
 :::

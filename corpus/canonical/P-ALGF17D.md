@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be a commutative ring with $1$. An $R$-module $M$ is called flat if whenever $f \colon N \to P$ is an injective $R$-linear map of $R$-modules then the induced map
+Let $R$ be a commutative ring with $1$.
+An $R$-module $M$ is called flat if whenever $f \colon N \to P$ is an injective $R$-linear map of $R$-modules then the induced map
 \[
 M \otimes_R N \longrightarrow M \otimes_R P
 \]

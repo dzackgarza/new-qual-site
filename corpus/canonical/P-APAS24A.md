@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ and let $x\in\mathbb{C}^n$, $x\neq 0$. Prove that if
+Let $A\in M_n(\mathbb{C})=\mathbb{C}^{n\times n}$ and let $x\in\mathbb{C}^n$, $x\neq 0$.
+Prove that if
 \[
 S=(\operatorname{span}\{x\})^\perp\subseteq\mathbb{C}^n
 \]

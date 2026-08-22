@@ -26,5 +26,6 @@ and for matrices $M$ and $N$, $M\otimes N$ is the Kronecker product of $M$ and $
 
 (c) Show that every irreducible representation of $G\times H$ is of the form $A\times B$ where $A$ is an irreducible representation of $G$ and $B$ is an irreducible representation of $H$.
 
-(d) Show that it is not always the case that if $C$ is a representation of $G\times H$, then $C$ is similar to a representation of the form $A\times B\colon G\times H\to\mathrm{GL}_n(\mathbb{C})$ where $A$ is a representation of $G$ and $B$ is a representation of $H$. (Hint: Consider the two-dimensional representations of $S_2\times S_2$.)
+(d) Show that it is not always the case that if $C$ is a representation of $G\times H$, then $C$ is similar to a representation of the form $A\times B\colon G\times H\to\mathrm{GL}_n(\mathbb{C})$ where $A$ is a representation of $G$ and $B$ is a representation of $H$.
+(Hint: Consider the two-dimensional representations of $S_2\times S_2$.)
 :::

@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $R\colon G\to\mathrm{GL}(H)$ be a linear representation of a compact group $G$ on a finite-dimensional Hilbert space $H$. Prove that, for all $g\in G$, the eigenvalues of $R(g)$ have modulus $1$.
+Let $R\colon G\to\mathrm{GL}(H)$ be a linear representation of a compact group $G$ on a finite-dimensional Hilbert space $H$.
+Prove that, for all $g\in G$, the eigenvalues of $R(g)$ have modulus $1$.
 :::

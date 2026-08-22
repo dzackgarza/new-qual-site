@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $L/K$ be a Galois extension with Galois group $S_3$. Prove or disprove that $L$ is the splitting field of an irreducible cubic polynomial with coefficients in $K$.
+Let $L/K$ be a Galois extension with Galois group $S_3$.
+Prove or disprove that $L$ is the splitting field of an irreducible cubic polynomial with coefficients in $K$.
 :::

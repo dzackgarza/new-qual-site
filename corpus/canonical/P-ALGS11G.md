@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be an integral domain. Prove or give an example to disprove (with justification):
+Let $R$ be an integral domain.
+Prove or give an example to disprove (with justification):
 
 (i) If $M$ is a torsion $R$-module, then $\mathrm{Ann}_R(M) \neq 0$.
 

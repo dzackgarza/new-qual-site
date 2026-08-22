@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $P$ be the Poincaré homology sphere, a 3-manifold whose fundamental group has order 120 and whose universal cover is $S^3$. Compute $\pi_3$ of the wedge sum $P \vee S^3$.
+Let $P$ be the Poincaré homology sphere, a 3-manifold whose fundamental group has order 120 and whose universal cover is $S^3$.
+Compute $\pi_3$ of the wedge sum $P \vee S^3$.
 :::

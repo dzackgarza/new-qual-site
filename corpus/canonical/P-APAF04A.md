@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-State and prove the Cayley-Hamilton Theorem. (You may use the Schur Decomposition Theorem.)
+State and prove the Cayley-Hamilton Theorem.
+(You may use the Schur Decomposition Theorem.)
 :::

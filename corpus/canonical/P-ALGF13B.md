@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $D$ be an integral domain. Prove that if $D[x]$ is a PID, then $D$ is a field.
+Let $D$ be an integral domain.
+Prove that if $D[x]$ is a PID, then $D$ is a field.
 :::

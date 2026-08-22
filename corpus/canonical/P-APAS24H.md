@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-State the definition of the standard representation of the symmetric group and compute its character in terms of the enumeration of fixed points in permutations. Using character theory or otherwise, prove that the standard representation is irreducible.
+State the definition of the standard representation of the symmetric group and compute its character in terms of the enumeration of fixed points in permutations.
+Using character theory or otherwise, prove that the standard representation is irreducible.
 :::

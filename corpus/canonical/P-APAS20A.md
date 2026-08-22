@@ -27,7 +27,8 @@ Let $\phi\colon\mathbb{C}^8\to\mathbb{C}^8$ be a linear map whose matrix with re
 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0
 \end{pmatrix},
 \]
-where $*$ represents an unknown value. Suppose moreover that we are told
+where $*$ represents an unknown value.
+Suppose moreover that we are told
 \[
 \dim\ker\phi=2,\qquad
 \dim\ker(\phi-\mathrm{id})=2,\qquad

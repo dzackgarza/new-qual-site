@@ -15,5 +15,7 @@ solved: false
 ---
 
 ::: problem
-Let $A,B\in\mathbb{R}^{n\times n}$ be two symmetric positive definite matrices. If $A-B$ is positive definite, is $B^{-1}-A^{-1}$ necessarily positive definite? If yes, give a proof; if no, give a counterexample.
+Let $A,B\in\mathbb{R}^{n\times n}$ be two symmetric positive definite matrices.
+If $A-B$ is positive definite, is $B^{-1}-A^{-1}$ necessarily positive definite?
+If yes, give a proof; if no, give a counterexample.
 :::

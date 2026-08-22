@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a finite-dimensional vector space over a scalar field, and let $Y, Z \subseteq X$ be two subspaces. For simplicity, you may further assume $Y \cap Z \neq \{0\}$ and $Y \not\subseteq Z$ and $Z \not\subseteq Y$. Prove
+Let $X$ be a finite-dimensional vector space over a scalar field, and let $Y, Z \subseteq X$ be two subspaces.
+For simplicity, you may further assume $Y \cap Z \neq \{0\}$ and $Y \not\subseteq Z$ and $Z \not\subseteq Y$.
+Prove
 \[
 \dim(Y + Z) = \dim(Y) + \dim(Z) - \dim(Y \cap Z),
 \]

@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $H$ be a subgroup of $G$ and $A\colon H\to\mathrm{GL}_n(\mathbb{C})$ be a representation of $H$. Let $\chi^A\colon H\to\mathbb{C}$ be the character of $A$. Define $\chi^{\overline{A}}\colon G\to\mathbb{C}$ by
+Let $H$ be a subgroup of $G$ and $A\colon H\to\mathrm{GL}_n(\mathbb{C})$ be a representation of $H$.
+Let $\chi^A\colon H\to\mathbb{C}$ be the character of $A$.
+Define $\chi^{\overline{A}}\colon G\to\mathbb{C}$ by
 \[
 \chi^{\overline{A}}(\sigma)=
 \begin{cases}

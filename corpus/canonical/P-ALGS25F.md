@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Suppose $p$ is an odd prime. Let $E$ be a splitting field of $x^p - 2x - 1$ over $\mathbb{F}_p$. Prove that
+Suppose $p$ is an odd prime.
+Let $E$ be a splitting field of $x^p - 2x - 1$ over $\mathbb{F}_p$.
+Prove that
 \[
 \operatorname{Gal}(E/\mathbb{F}_p) \simeq \langle 2 + p\mathbb{Z}\rangle \subseteq (\mathbb{Z}/p\mathbb{Z})^\times.
 \]

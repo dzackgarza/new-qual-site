@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $V$ be a finite-dimensional inner product space and $\alpha, \beta \colon V \to V$ two positive definite, self-adjoint linear maps. Define
+Let $V$ be a finite-dimensional inner product space and $\alpha, \beta \colon V \to V$ two positive definite, self-adjoint linear maps.
+Define
 \[
 \langle v, w \rangle_{\alpha} := \langle \alpha(v), w \rangle,
 \qquad
@@ -28,5 +29,6 @@ to be the two new inner products on $V$ associated with $\alpha$ and $\beta$ res
 
 (b) Prove that the linear map $\gamma = \alpha^{-1} \beta$ is self-adjoint with respect to the new inner product $\langle -, - \rangle_{\alpha}$.
 
-(c) By applying a spectral theorem to $\langle -, - \rangle_{\alpha}$ and $\gamma$, or otherwise, prove that there exists a basis $B = v_1, \ldots, v_n$ for $V$ that is orthogonal with respect to both $\langle -, - \rangle_{\alpha}$ and $\langle -, - \rangle_{\beta}$. (That is, $\langle \alpha(v_i), v_j \rangle = \langle \beta(v_i), v_j \rangle = 0$ for $1 \leq i \neq j \leq n$.)
+(c) By applying a spectral theorem to $\langle -, - \rangle_{\alpha}$ and $\gamma$, or otherwise, prove that there exists a basis $B = v_1, \ldots, v_n$ for $V$ that is orthogonal with respect to both $\langle -, - \rangle_{\alpha}$ and $\langle -, - \rangle_{\beta}$.
+(That is, $\langle \alpha(v_i), v_j \rangle = \langle \beta(v_i), v_j \rangle = 0$ for $1 \leq i \neq j \leq n$.)
 :::

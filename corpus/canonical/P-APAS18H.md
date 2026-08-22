@@ -21,5 +21,6 @@ A=\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}.
 
 (a) What is the Hilbert series of the invariant ring $\mathbb{R}[x,y]^G$?
 
-(b) Do there exist algebraically independent homogeneous polynomials $f_1,f_2\in\mathbb{R}[x,y]^G$ such that $\mathbb{R}[x,y]^G=\mathbb{R}[f_1,f_2]$? Why or why not?
+(b) Do there exist algebraically independent homogeneous polynomials $f_1,f_2\in\mathbb{R}[x,y]^G$ such that $\mathbb{R}[x,y]^G=\mathbb{R}[f_1,f_2]$?
+Why or why not?
 :::

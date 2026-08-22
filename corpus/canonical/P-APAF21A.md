@@ -19,7 +19,8 @@ Throughout, $M_n$ denotes the set of $n\times n$ matrices with complex component
 
 (a) State, but do not prove, the Schur decomposition theorem for a matrix $A\in M_n$.
 
-(b) Prove that for $A,B\in M_n$, if $x^HAx=x^HBx$ for all $x\in\mathbb{C}^n$, then $A=B$. Give an example for which $x^TAx=x^TBx$ for all $x\in\mathbb{C}^n$ but $A\neq B$.
+(b) Prove that for $A,B\in M_n$, if $x^HAx=x^HBx$ for all $x\in\mathbb{C}^n$, then $A=B$.
+Give an example for which $x^TAx=x^TBx$ for all $x\in\mathbb{C}^n$ but $A\neq B$.
 
 (c) Prove that $A$ is an orthogonal projection if and only if $A$ is Hermitian, i.e., $A=A^H$.
 :::

@@ -20,7 +20,9 @@ As on the exam: if $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a p
 
 (d) Prove that if $\lambda(x)$ is a linear character of a finite group $G$, then for any irreducible character $\chi$ of $G$, the function $\chi^*$ defined by $\chi^*(\sigma)=\lambda(\sigma)\chi(\sigma)$ for all $\sigma\in G$ is also an irreducible character of $G$.
 
-(b) Given a partition $\lambda$ of $n$, let $\ell(\lambda)$ denote the number of parts of $\lambda$ and $\lambda'$ denote its conjugate partition. Let $\chi^\lambda_\mu$ denote the value of the character of the irreducible representation $A^\lambda$ of $S_n$ at the conjugacy class indexed by the partition $\mu$. Show that
+(b) Given a partition $\lambda$ of $n$, let $\ell(\lambda)$ denote the number of parts of $\lambda$ and $\lambda'$ denote its conjugate partition.
+Let $\chi^\lambda_\mu$ denote the value of the character of the irreducible representation $A^\lambda$ of $S_n$ at the conjugacy class indexed by the partition $\mu$.
+Show that
 \[
 \chi^{\lambda'}_\mu=(-1)^{n-\ell(\mu)}\chi^\lambda_\mu.
 \]

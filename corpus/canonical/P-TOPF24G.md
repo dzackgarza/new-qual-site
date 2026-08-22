@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-What is the fundamental group of $X = \mathbb{RP}^3 \# \mathbb{RP}^3$? Give a description of the universal cover $\widetilde{X}$ of $X$ and use this to calculate $\pi_2(X)$.
+What is the fundamental group of $X = \mathbb{RP}^3 \# \mathbb{RP}^3$?
+Give a description of the universal cover $\widetilde{X}$ of $X$ and use this to calculate $\pi_2(X)$.
 :::

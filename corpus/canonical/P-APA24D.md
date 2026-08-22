@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $A \in M_{m,n}(\mathbb{C}) = \mathbb{C}^{m \times n}$. Prove
+Let $A \in M_{m,n}(\mathbb{C}) = \mathbb{C}^{m \times n}$.
+Prove
 \[
 \|A\|_1 = \max_{1 \leq j \leq n} \sum_{i=1}^{m} |a_{ij}|
 \]

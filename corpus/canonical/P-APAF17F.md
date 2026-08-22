@@ -25,7 +25,8 @@ into irreducible $S_5$-modules.
 
 (b) What is the dimension over $\mathbb{C}$ of the endomorphism algebra $\operatorname{End}_{S_5}(V)$?
 
-(c) For any permutation $\sigma\in S_5$, let $\operatorname{sign}(\sigma)$ be the sign of $\sigma$. Define a linear operator $\varphi\colon V\to V$ by
+(c) For any permutation $\sigma\in S_5$, let $\operatorname{sign}(\sigma)$ be the sign of $\sigma$.
+Define a linear operator $\varphi\colon V\to V$ by
 \[
 \varphi(v)=\frac{1}{5!}\sum_{\sigma\in S_5}\operatorname{sign}(\sigma)\,v.
 \]

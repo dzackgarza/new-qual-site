@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $H$ be a subgroup of $G$ and let $G=\tau_1 H+\cdots+\tau_k H$ be its coset decomposition. Define a permutation representation $L$ of $G$ by
+Let $H$ be a subgroup of $G$ and let $G=\tau_1 H+\cdots+\tau_k H$ be its coset decomposition.
+Define a permutation representation $L$ of $G$ by
 \begin{align}
 \sigma\langle\tau_1 H,\ldots,\tau_k H\rangle
 &=\langle\sigma\tau_1 H,\ldots,\sigma\tau_k H\rangle\\

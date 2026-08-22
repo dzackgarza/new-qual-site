@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $F$ be a field and $p$ be a prime. Suppose that the degree of any finite field extension $E/F$ is divisible by $p$. Prove that the degree of any finite separable extension $E/F$ is a power of $p$.
+Let $F$ be a field and $p$ be a prime.
+Suppose that the degree of any finite field extension $E/F$ is divisible by $p$.
+Prove that the degree of any finite separable extension $E/F$ is a power of $p$.
 :::

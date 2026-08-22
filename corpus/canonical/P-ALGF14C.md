@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $A$ be a Noetherian unital commutative ring. Prove that there is a finite collection of prime ideals $\mathfrak{p}_1, \ldots, \mathfrak{p}_n$ such that
+Let $A$ be a Noetherian unital commutative ring.
+Prove that there is a finite collection of prime ideals $\mathfrak{p}_1, \ldots, \mathfrak{p}_n$ such that
 \[
 \mathfrak{p}_1 \cdots \mathfrak{p}_n = (0).
 \]

@@ -15,5 +15,7 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be a commutative ring with unit, $M$ be an $R$-module and $I$ an ideal of $R$. Suppose that $M_{\mathfrak{m}} = 0$ for all maximal ideals $\mathfrak{m}$ of $R$ that contain $I$. Prove that $M = IM$.
+Let $R$ be a commutative ring with unit, $M$ be an $R$-module and $I$ an ideal of $R$.
+Suppose that $M_{\mathfrak{m}} = 0$ for all maximal ideals $\mathfrak{m}$ of $R$ that contain $I$.
+Prove that $M = IM$.
 :::

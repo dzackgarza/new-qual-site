@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Suppose $p < q < \ell$ are distinct primes. Prove that there is no simple group of order $pq\ell$.
+Suppose $p < q < \ell$ are distinct primes.
+Prove that there is no simple group of order $pq\ell$.
 :::

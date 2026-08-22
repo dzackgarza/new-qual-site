@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Suppose $p$ is a prime. Prove that $x^p - x + 1$ is irreducible in $\mathbb{F}_p[x]$.
+Suppose $p$ is a prime.
+Prove that $x^p - x + 1$ is irreducible in $\mathbb{F}_p[x]$.
 :::

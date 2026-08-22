@@ -18,7 +18,6 @@ solved: false
 $$
 
 | f (z) | \leq A | z - z _ {0} | ^ {- 1 + \epsilon}
-
 $$
 
 for some $\epsilon > 0$ , and all $z \ \mathrm { n e a r } \ z _ { 0 }$ . Show that the singularity of $f$ at $z _ { 0 }$ is removable.

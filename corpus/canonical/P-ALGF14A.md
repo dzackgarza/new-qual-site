@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a (not necessarily finite) nilpotent group. Prove that for any proper subgroup $H$ we have that $H \neq N_G(H)$.
+Let $G$ be a (not necessarily finite) nilpotent group.
+Prove that for any proper subgroup $H$ we have that $H \neq N_G(H)$.
 :::

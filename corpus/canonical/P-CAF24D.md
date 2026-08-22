@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function. Assume that
+Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function.
+Assume that
 
 (i) $f$ takes real values on the real axis,
 

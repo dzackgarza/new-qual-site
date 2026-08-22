@@ -23,4 +23,3 @@ Consider the monomial ideal $I = \langle x_2^2, \dots, x_n^2 \rangle$ in $\mathb
 
 (c) Determine the affine variety $V(I)$, and explain whether or not it is reducible.
 :::
-

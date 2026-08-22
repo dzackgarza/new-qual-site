@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a group whose center has index $n$. Show that every conjugacy class in $G$ has at most $n$ elements.
+Let $G$ be a group whose center has index $n$.
+Show that every conjugacy class in $G$ has at most $n$ elements.
 :::

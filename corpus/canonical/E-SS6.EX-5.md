@@ -18,6 +18,5 @@ solved: false
 $$
 
 | \Gamma (1 / 2 + i t) | = \sqrt {\frac {2 \pi}{e ^ {\pi t} + e ^ {- \pi t}}}, \quad \mathrm{whenever} t \in \mathbb {R}.
-
 $$
 :::

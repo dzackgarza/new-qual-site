@@ -18,7 +18,6 @@ solved: false
 $$
 
 | f (z) | \leq A e ^ {a | z | ^ {q}}
-
 $$
 
 where $1 / p + 1 / q = 1$

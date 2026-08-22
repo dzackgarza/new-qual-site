@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $s$ denote the Schur function. Express the product
+Let $s$ denote the Schur function.
+Express the product
 \[
 s_{2,1,1}\, s_{2,2,1}
 \]

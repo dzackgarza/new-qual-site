@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire nowhere zero function. Define $U = \{z : |f(z)| < 1\}$. If $U \neq \emptyset$, show that the connected components of $U$ are unbounded.
+Let $f : \mathbb{C} \to \mathbb{C}$ be an entire nowhere zero function.
+Define $U = \{z : |f(z)| < 1\}$.
+If $U \neq \emptyset$, show that the connected components of $U$ are unbounded.
 :::

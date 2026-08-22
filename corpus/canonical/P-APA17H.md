@@ -24,4 +24,3 @@ and let $G$ be the cyclic subgroup of $\mathrm{GL}_2(\mathbb{C})$ of order $4$ g
 
 (b) Describe a finite set of polynomials which generates $\mathbb{C}[x, y]^G$ as a $\mathbb{C}$-algebra (you need not compute this set explicitly).
 :::
-

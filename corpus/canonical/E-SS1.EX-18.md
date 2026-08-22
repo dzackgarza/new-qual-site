@@ -13,7 +13,8 @@ solved: false
 ---
 
 ::: exercise
-18. Let f be a power series centered at the origin. Prove that f has a power series expansion around any point in its disc of convergence.
+18. Let f be a power series centered at the origin.
+    Prove that f has a power series expansion around any point in its disc of convergence.
 
 [Hint: Write $z = z _ { 0 } + \left( z - z _ { 0 } \right)$ and use the binomial expansion for $z ^ { n } . ]$
 :::

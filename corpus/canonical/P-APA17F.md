@@ -20,4 +20,3 @@ Give examples of each of the following objects.
 
 (b) An infinite group $G$ and a $G$-module $V$ defined over the complex numbers $\mathbb{C}$ which is indecomposable but not irreducible.
 :::
-

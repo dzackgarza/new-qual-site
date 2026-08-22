@@ -15,5 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a group of order $2^n \cdot 11$ for some $n \geq 0$. Prove that $G$ is solvable. (Hint: Consider the cases $n < 10$ and $n \geq 10$ separately. In the latter case, define a group homomorphism $\varphi \colon G \to S_{11}$ and consider its kernel and image.)
+Let $G$ be a group of order $2^n \cdot 11$ for some $n \geq 0$.
+Prove that $G$ is solvable.
+(Hint: Consider the cases $n < 10$ and $n \geq 10$ separately.
+In the latter case, define a group homomorphism $\varphi \colon G \to S_{11}$ and consider its kernel and image.)
 :::

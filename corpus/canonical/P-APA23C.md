@@ -19,8 +19,8 @@ Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex entr
 
 Consider any $A \in M_{m,n}$.
 
-(a) Define $|A|$, the modulus of $A$. Prove that the eigenvalues of $|A|$ are the singular values of $A$.
+(a) Define $|A|$, the modulus of $A$.
+Prove that the eigenvalues of $|A|$ are the singular values of $A$.
 
 (b) Prove that if $m = n$, then $|A|$ and $|A^H|$ are similar.
 :::
-

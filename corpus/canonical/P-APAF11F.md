@@ -22,7 +22,8 @@ Let $\langle A,+,\cdot\rangle$ be a commutative ring with identity $1$ and let $
 
 (a) Prove that $\langle A,+,\cdot\rangle$ is an integral domain.
 
-(b) Let $A^+=\{a\in A:0<a\}$. Prove the following:
+(b) Let $A^+=\{a\in A:0<a\}$.
+Prove the following:
 
 (i) $A^+$ is closed under multiplication and addition.
 

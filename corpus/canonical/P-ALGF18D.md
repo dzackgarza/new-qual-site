@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $A$ be a unital commutative ring. Suppose $P$ and $Q$ are two projective $A$-modules. Prove that $P \otimes_A Q$ is a projective $A$-module.
+Let $A$ be a unital commutative ring.
+Suppose $P$ and $Q$ are two projective $A$-modules.
+Prove that $P \otimes_A Q$ is a projective $A$-module.
 :::

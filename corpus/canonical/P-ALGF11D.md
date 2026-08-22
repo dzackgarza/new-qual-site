@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Assume that $A$ is a commutative Noetherian ring, and let $a_n \in A$ for $n \geq 0$. Prove that the power series
+Assume that $A$ is a commutative Noetherian ring, and let $a_n \in A$ for $n \geq 0$.
+Prove that the power series
 \[
 f = \sum_{n=0}^\infty a_n x^n
 \]

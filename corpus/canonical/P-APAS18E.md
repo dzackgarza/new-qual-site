@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $A_4$ be the index two subgroup of $S_4$ consisting of even permutations. Find the character table of $A_4$.
+Let $A_4$ be the index two subgroup of $S_4$ consisting of even permutations.
+Find the character table of $A_4$.
 :::

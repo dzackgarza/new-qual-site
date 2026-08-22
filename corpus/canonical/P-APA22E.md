@@ -15,7 +15,9 @@ solved: false
 ---
 
 ::: problem
-Let $M_n$ be the set of perfect matchings of $\{1, 2, \ldots, 2n\}$, i.e., a decomposition of this set into disjoint $2$-element subsets. The permutation action of $S_{2n}$ induces an action on $M_n$. Let $k$ be a field.
+Let $M_n$ be the set of perfect matchings of $\{1, 2, \ldots, 2n\}$, i.e., a decomposition of this set into disjoint $2$-element subsets.
+The permutation action of $S_{2n}$ induces an action on $M_n$.
+Let $k$ be a field.
 
 (a) Describe a subgroup $H$ of $S_{2n}$ so that the permutation representation $k[M_n]$ is isomorphic to the induced representation of the trivial representation of $H$ to $S_{2n}$.
 

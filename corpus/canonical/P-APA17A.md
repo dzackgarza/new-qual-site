@@ -24,4 +24,3 @@ Let $A \in \mathbb{C}^{10 \times 10}$ be a matrix such that
 \]
 Determine all possibilities of Jordan's canonical form for $A$.
 :::
-

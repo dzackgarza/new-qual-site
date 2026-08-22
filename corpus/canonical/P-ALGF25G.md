@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $n$ be a positive integer, $p$ a prime, $p \nmid n$, and $\Phi_n(x)$ the $n$-th cyclotomic polynomial. Let $E_{n,p}$ denote the splitting field of $\Phi_n(x)$ over $\mathbb{F}_p$.
+Let $n$ be a positive integer, $p$ a prime, $p \nmid n$, and $\Phi_n(x)$ the $n$-th cyclotomic polynomial.
+Let $E_{n,p}$ denote the splitting field of $\Phi_n(x)$ over $\mathbb{F}_p$.
 
 (a) Prove that if $\zeta \in E_{n,p}$ is a zero of $\Phi_n(x)$, then the multiplicative order of $\zeta$ is $n$.
 

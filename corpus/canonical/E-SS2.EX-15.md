@@ -18,7 +18,6 @@ solved: false
 $$
 
 | f (z) | = 1 \quad \text { whenever } | z | = 1,
-
 $$
 
 then $f$ is constant.

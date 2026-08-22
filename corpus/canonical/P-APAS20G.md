@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $(H,U)$ be a unitary representation of a compact group $G$. Show that the operator
+Let $(H,U)$ be a unitary representation of a compact group $G$.
+Show that the operator
 \[
 P=\int_G U(g)\,dg
 \]

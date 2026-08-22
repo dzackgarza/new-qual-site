@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $P\in\mathbb{C}^{n\times n}$ be a positive definite Hermitian matrix. Show that
+Let $P\in\mathbb{C}^{n\times n}$ be a positive definite Hermitian matrix.
+Show that
 \[
 |x^*y|^2\leq(x^*Px)(y^*P^{-1}y)
 \]

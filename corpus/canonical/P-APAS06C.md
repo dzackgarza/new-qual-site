@@ -22,5 +22,6 @@ Let $p$ be a prime number.
 
 (c) Describe the non-abelian group you have constructed in (b) above via generators and relations.
 
-Note. As usual, $(\mathbb{Z}/p^2\mathbb{Z})^\times$ denotes the multiplicative group consisting of all the congruence classes $\hat{x}\in\mathbb{Z}/p^2\mathbb{Z}$ such that $\gcd(x,p)=1$.
+Note.
+As usual, $(\mathbb{Z}/p^2\mathbb{Z})^\times$ denotes the multiplicative group consisting of all the congruence classes $\hat{x}\in\mathbb{Z}/p^2\mathbb{Z}$ such that $\gcd(x,p)=1$.
 :::

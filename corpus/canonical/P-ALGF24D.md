@@ -31,7 +31,8 @@ $K := \ker f$, and so
 \[
 0 \to K \to A^n \to I \to 0
 \]
-is a short exact sequence of $A$-modules. Prove that there exist $\mathbf{k}_j := (b_{1j}, \ldots, b_{nj}) \in K$ and $y_j \in M$ for $j = 1, \ldots, m$ such that
+is a short exact sequence of $A$-modules.
+Prove that there exist $\mathbf{k}_j := (b_{1j}, \ldots, b_{nj}) \in K$ and $y_j \in M$ for $j = 1, \ldots, m$ such that
 \[
 b_{i1} y_1 + \cdots + b_{im} y_m = x_i
 \]
@@ -39,5 +40,6 @@ for every $i = 1, \ldots, n$; that means
 \[
 \mathbf{k}_1 y_1 + \cdots + \mathbf{k}_m y_m = (x_1, \ldots, x_n).
 \]
-(Hint. Use flatness and the SES above.)
+(Hint.
+Use flatness and the SES above.)
 :::

@@ -17,5 +17,6 @@ solved: false
 
 (a) Prove that if $f : \mathbb { D } \to \mathbb { D }$ is analytic and has two distinct fixed points, then f is the identity, that is, $f ( z ) = z { \mathrm { ~ f o r } }$ all $z \in \mathbb { D }$
 
-(b) Must every holomorphic function $f : \mathbb { D } \to \mathbb { D }$ have a fixed point? [Hint: Consider the upper half-plane.]
+(b) Must every holomorphic function $f : \mathbb { D } \to \mathbb { D }$ have a fixed point?
+[Hint: Consider the upper half-plane.]
 :::

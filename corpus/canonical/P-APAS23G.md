@@ -15,7 +15,9 @@ solved: false
 ---
 
 ::: problem
-The symmetric group $S_5$ acts on the set $X$ of ordered pairs $(i, j)$ of (not necessarily distinct!) elements of $\{1, 2, 3, 4, 5\}$. Let $\mathbb{C}[X]$ be the associated permutation representation.
+The symmetric group $S_5$ acts on the set $X$ of ordered pairs $(i, j)$ of (not necessarily distinct!)
+elements of $\{1, 2, 3, 4, 5\}$.
+Let $\mathbb{C}[X]$ be the associated permutation representation.
 
 (1) Find the decomposition of $\mathbb{C}[X]$ into irreducible $S_5$-modules.
 

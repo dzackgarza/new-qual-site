@@ -30,4 +30,3 @@ jk = i = -kj.
 \]
 Calculate the character table of $Q_8$.
 :::
-

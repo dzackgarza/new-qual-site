@@ -17,4 +17,3 @@ solved: false
 ::: problem
 Find the character table of the alternating group $A_4$ of even permutations in $S_4$.
 :::
-

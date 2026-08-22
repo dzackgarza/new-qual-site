@@ -21,7 +21,8 @@ As on the exam: if $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_k)$ is a p
 \[
 \bigl(A^{(1,1,2)}\times A^{(1,2)}\bigr)(\sigma,\tau)=A^{(1,1,2)}(\sigma)\otimes A^{(1,2)}(\tau)
 \]
-where for any matrices $A$ and $B$, $A\otimes B$ denotes the tensor product of $A$ and $B$. Decompose
+where for any matrices $A$ and $B$, $A\otimes B$ denotes the tensor product of $A$ and $B$.
+Decompose
 \[
 \bigl(A^{(1,1,2)}\times A^{(1,2)}\bigr)\uparrow_{S_4\times S_3}^{S_7}
 \]
@@ -37,7 +38,8 @@ Note: For parts (a) and (b) above, regard $S_4\times S_3$ as a subgroup of $S_7$
 S_4\times S_4=\{\sigma\in S_7:\sigma(1),\sigma(2),\sigma(3),\sigma(4)\in\{1,2,3,4\},\ \sigma(5),\sigma(6),\sigma(7)\in\{5,6,7\}\}.
 \]
 
-(c) Let $T$ denote the trivial representation. Decompose $T\uparrow_{S_1\times S_3\times S_3}^{S_7}$ as a sum of irreducible representations of $S_7$ where $S_1\times S_3\times S_3$ is the Young subgroup of $S_7$ consisting of all permutations $\sigma\in S_7$ such that
+(c) Let $T$ denote the trivial representation.
+Decompose $T\uparrow_{S_1\times S_3\times S_3}^{S_7}$ as a sum of irreducible representations of $S_7$ where $S_1\times S_3\times S_3$ is the Young subgroup of $S_7$ consisting of all permutations $\sigma\in S_7$ such that
 \[
 \sigma(1)=1,\qquad
 \sigma(2),\sigma(3),\sigma(4)\in\{2,3,4\},\qquad

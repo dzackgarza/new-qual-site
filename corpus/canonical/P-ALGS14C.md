@@ -17,5 +17,7 @@ solved: false
 ::: problem
 (a) Show that $\mathbb{Z}[i]$ is a PID.
 
-(b) Let $A$ be a proper subring of $\mathbb{Z}[i]$ which contains $\mathbb{Z}$. Suppose the field of fractions of $A$ is $\mathbb{Q}(i)$. Show that $A$ is NOT a unique factorization domain (UFD).
+(b) Let $A$ be a proper subring of $\mathbb{Z}[i]$ which contains $\mathbb{Z}$.
+Suppose the field of fractions of $A$ is $\mathbb{Q}(i)$.
+Show that $A$ is NOT a unique factorization domain (UFD).
 :::

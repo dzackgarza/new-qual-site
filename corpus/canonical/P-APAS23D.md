@@ -25,5 +25,6 @@ Throughout, $M_{m,n}$ denotes the set of $m \times n$ matrices with complex comp
 \]
 where $\sigma_1(A)$ is the largest singular value of $A$.
 
-(c) For any $A \in M_n$, define (i) the field of values $F(A)$; (ii) the spectral radius $\rho(A)$; and (iii) the numerical radius $\omega(A)$. Prove that $\rho(A) \le \omega(A) \le \sigma_1(A)$.
+(c) For any $A \in M_n$, define (i) the field of values $F(A)$; (ii) the spectral radius $\rho(A)$; and (iii) the numerical radius $\omega(A)$.
+Prove that $\rho(A) \le \omega(A) \le \sigma_1(A)$.
 :::

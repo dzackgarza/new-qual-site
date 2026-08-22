@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $G=\{g_1,\ldots,g_k\}$ be a finite group. Introduce variables $x_{g_1},\ldots,x_{g_k}$ and consider the $k\times k$ matrix
+Let $G=\{g_1,\ldots,g_k\}$ be a finite group.
+Introduce variables $x_{g_1},\ldots,x_{g_k}$ and consider the $k\times k$ matrix
 \[
 X=[x_{g_i g_j^{-1}}].
 \]

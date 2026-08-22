@@ -32,5 +32,6 @@ The sizes of the conjugacy classes are $|\gamma_1|=1$, $|\gamma_2|=56$, $|\gamma
 
 (a) Fill in the correct values for $\chi_6$.
 
-(b) For $1\le i\le 6$, let $V_i$ be a representation of $G$ whose character is $\chi_i$. Compute the dimension of the space of $G$-equivariant linear maps from $V_2\otimes V_5$ to $V_3\otimes V_5$.
+(b) For $1\le i\le 6$, let $V_i$ be a representation of $G$ whose character is $\chi_i$.
+Compute the dimension of the space of $G$-equivariant linear maps from $V_2\otimes V_5$ to $V_3\otimes V_5$.
 :::

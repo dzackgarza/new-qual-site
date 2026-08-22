@@ -20,10 +20,12 @@ Let $A, C \in M_n(\mathbb{C}) = \mathbb{C}^{n \times n}$ be Hermitian and suppos
   \[
   \lambda_1(A) \geq \lambda_2(A) \geq \cdots \geq \lambda_n(A);
   \]
+
 - The $n$ eigenvalues of $C$ are notated and ordered as follows:
   \[
   \lambda_1(C) \geq \lambda_2(C) \geq \cdots \geq \lambda_n(C);
   \]
+
 - We have $C = A + B B^H$ for some rank $2$ matrix $B \in M_{n,m}(\mathbb{C}) = \mathbb{C}^{n \times m}$ with $m \geq 2$.
   Note: $B^H = \overline{B}^T$.
 

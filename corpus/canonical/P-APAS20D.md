@@ -30,7 +30,8 @@ Here is the character table for some group of size $360$ (rows are characters, t
 \chi_7 & 10 & 1 & 1 & 0 & -2 & 0 & 0
 \end{array}
 \]
-Determine the sizes of its conjugacy classes. For your convenience, the divisors of $360$ are:
+Determine the sizes of its conjugacy classes.
+For your convenience, the divisors of $360$ are:
 \[
 1,2,3,4,5,6,8,9,10,12,15,18,20,24,30,36,40,45,60,72,90,120,180,360.
 \]

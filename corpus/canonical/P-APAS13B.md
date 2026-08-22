@@ -16,7 +16,8 @@ solved: false
 ::: problem
 (a) Prove that every $A\in M_n$ may be written uniquely as $A=S+iT$, where $S$ and $T$ are Hermitian.
 
-(b) For any $A\in M_n$, consider the unique expansion $A=S+iT$, where $S$ and $T$ are Hermitian. Prove that for any $\lambda\in\operatorname{eig}(A)$, it holds that
+(b) For any $A\in M_n$, consider the unique expansion $A=S+iT$, where $S$ and $T$ are Hermitian.
+Prove that for any $\lambda\in\operatorname{eig}(A)$, it holds that
 \[
 \lambda_n(S)\le\operatorname{Re}(\lambda)\le\lambda_1(S)
 \quad\text{and}\quad

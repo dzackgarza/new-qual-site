@@ -19,6 +19,6 @@ Consider the action of the symmetric group $S_4$ on the vector space $V = \mathb
 \[
 \sigma \cdot f(x_1, x_2, x_3, x_4) := f(x_{\sigma(1)}, x_{\sigma(2)}, x_{\sigma(3)}, x_{\sigma(4)})
 \]
-for $\sigma \in S_4$ and $f \in \mathbb{C}[x_1, x_2, x_3, x_4]$. Calculate the decomposition of $V$ into a direct sum of irreducible $S_4$-modules and determine the structure (as a product of matrix rings over $\mathbb{C}$) of the endomorphism algebra $\operatorname{End}_{S_4}(V)$.
+for $\sigma \in S_4$ and $f \in \mathbb{C}[x_1, x_2, x_3, x_4]$.
+Calculate the decomposition of $V$ into a direct sum of irreducible $S_4$-modules and determine the structure (as a product of matrix rings over $\mathbb{C}$) of the endomorphism algebra $\operatorname{End}_{S_4}(V)$.
 :::
-

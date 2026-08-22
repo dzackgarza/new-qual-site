@@ -15,5 +15,7 @@ solved: false
 ---
 
 ::: problem
-Suppose that $G$ is a group with $|G| = 2^k m$, where $m$ is odd and $k \geq 0$. Assume that $G$ has a cyclic Sylow $2$-subgroup. Prove that $G$ has a characteristic subgroup $H$ which has order $m$.
+Suppose that $G$ is a group with $|G| = 2^k m$, where $m$ is odd and $k \geq 0$.
+Assume that $G$ has a cyclic Sylow $2$-subgroup.
+Prove that $G$ has a characteristic subgroup $H$ which has order $m$.
 :::

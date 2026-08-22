@@ -17,7 +17,8 @@ solved: false
 ::: problem
 (a) Carefully state Zorn's Lemma.
 
-(b) Let $R$ be a commutative ring and let $X$ be any multiplicatively closed subset of $R$ which does not contain $0$. Show that $R$ has an ideal $I$ which is a maximal element of the collection of those ideals $J$ such that $J \cap X = \emptyset$.
+(b) Let $R$ be a commutative ring and let $X$ be any multiplicatively closed subset of $R$ which does not contain $0$.
+Show that $R$ has an ideal $I$ which is a maximal element of the collection of those ideals $J$ such that $J \cap X = \emptyset$.
 
 (c) If $X$ is not empty then prove that the ideal $I$ as in (b) must be a prime ideal.
 :::

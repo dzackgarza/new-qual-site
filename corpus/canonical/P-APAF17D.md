@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a finite group and let $X\colon G\to\mathrm{GL}_3(\mathbb{C})$ be an irreducible $3$-dimensional complex matrix representation of $G$. Let $A$ be the matrix
+Let $G$ be a finite group and let $X\colon G\to\mathrm{GL}_3(\mathbb{C})$ be an irreducible $3$-dimensional complex matrix representation of $G$.
+Let $A$ be the matrix
 \[
 A=\begin{pmatrix}
 1 & -12 & 4 \\

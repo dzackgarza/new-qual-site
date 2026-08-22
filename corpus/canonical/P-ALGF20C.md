@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Determine if each of the following rings is a unique factorization domain. For each case, you need give only a short justification or line of argument.
+Determine if each of the following rings is a unique factorization domain.
+For each case, you need give only a short justification or line of argument.
 
 (1) $\mathbb{Z}[2\sqrt{2}]$.
 

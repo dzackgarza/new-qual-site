@@ -15,11 +15,14 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a finite group and let $V$ be a finite-dimensional complex representation of $G$ with character $\chi$. Consider the operator $\sigma$ on $V \otimes V$ which swaps factors. Let $S^2(V)$ be the subspace invariant under $\sigma$.
+Let $G$ be a finite group and let $V$ be a finite-dimensional complex representation of $G$ with character $\chi$.
+Consider the operator $\sigma$ on $V \otimes V$ which swaps factors.
+Let $S^2(V)$ be the subspace invariant under $\sigma$.
 
 (a) Show that $S^2(V)$ is a $G$-subrepresentation of $V \otimes V$.
 
-(b) Let $\chi_2$ be the character of $S^2(V)$. Show that
+(b) Let $\chi_2$ be the character of $S^2(V)$.
+Show that
 \[
 \chi_2(g) = \frac{1}{2}\bigl(\chi(g)^2 + \chi(g^2)\bigr)
 \]

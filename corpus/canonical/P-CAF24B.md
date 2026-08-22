@@ -15,5 +15,7 @@ solved: false
 ---
 
 ::: problem
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function. Assume that for any $a \in \mathbb{R}$, at least one coefficient in the Taylor expansion of $f$ around $a$ is a rational number. Prove that $f$ is a polynomial.
+Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function.
+Assume that for any $a \in \mathbb{R}$, at least one coefficient in the Taylor expansion of $f$ around $a$ is a rational number.
+Prove that $f$ is a polynomial.
 :::

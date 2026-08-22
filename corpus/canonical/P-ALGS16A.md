@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $p$ be a prime number and let $G$ be a $p$-group. Prove that $G$ is nilpotent.
+Let $p$ be a prime number and let $G$ be a $p$-group.
+Prove that $G$ is nilpotent.
 :::

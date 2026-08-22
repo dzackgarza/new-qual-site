@@ -15,5 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $L/K$ be a Galois extension with finite Galois group $G$. Consider the natural action of the group $G$ on $L$. Let $H$ be a subgroup of $G$. Prove that there exists an element $\alpha \in L$ whose stabilizer is $H$.
+Let $L/K$ be a Galois extension with finite Galois group $G$.
+Consider the natural action of the group $G$ on $L$.
+Let $H$ be a subgroup of $G$.
+Prove that there exists an element $\alpha \in L$ whose stabilizer is $H$.
 :::

@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $L/K$ be an algebraic extension. Let
+Let $L/K$ be an algebraic extension.
+Let
 \[
 K^{\mathrm{ab}} = \{\alpha \in L \mid K[\alpha]/K \text{ is Galois and } \mathrm{Gal}(K[\alpha]/K) \text{ is abelian}\}.
 \]

@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be the set of the $20$ diagonals in a regular octogon. The dihedral group $D_8$ of octogon symmetries acts on $X$; let $V=\mathbb{C}[X]$ be the associated permutation representation of $D_8$.
+Let $X$ be the set of the $20$ diagonals in a regular octogon.
+The dihedral group $D_8$ of octogon symmetries acts on $X$; let $V=\mathbb{C}[X]$ be the associated permutation representation of $D_8$.
 
 (a) How many orbits are there in the action of $D_8$ on $X$?
 

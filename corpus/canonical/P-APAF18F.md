@@ -15,7 +15,9 @@ solved: false
 ---
 
 ::: problem
-For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible $S_n$-module. Let $H=S_3\times S_3\times S_1$, so that $H$ is a subgroup of $S_7$. Let $V$ be the induced representation
+For a partition $\lambda\vdash n$, let $S^\lambda$ be the corresponding irreducible $S_n$-module.
+Let $H=S_3\times S_3\times S_1$, so that $H$ is a subgroup of $S_7$.
+Let $V$ be the induced representation
 \[
 V=\bigl(S^{(3)}\otimes S^{(1,1,1)}\otimes S^{(1)}\bigr)\uparrow_H^{S_7}.
 \]

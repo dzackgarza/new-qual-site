@@ -16,9 +16,11 @@ solved: false
 ---
 
 ::: problem
-Suppose $A$ is a unital commutative ring and $I, J \trianglelefteq A$. Suppose $A/I$ is a flat $A$-module.
+Suppose $A$ is a unital commutative ring and $I, J \trianglelefteq A$.
+Suppose $A/I$ is a flat $A$-module.
 
-(a) Prove that $I$ is a flat $A$-module. (State carefully the general statement that you are using.)
+(a) Prove that $I$ is a flat $A$-module.
+(State carefully the general statement that you are using.)
 
 (b) Prove that there is an $A$-module isomorphism $\iota \colon I \otimes_A J \to IJ$ such that $\iota(a \otimes b) = ab$ for every $a \in I$ and $b \in J$.
 

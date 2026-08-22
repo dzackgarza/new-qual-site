@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $A\in\mathbb{C}^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\dots,\lambda_n\in\mathbb{C}$. If
+Let $A\in\mathbb{C}^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\dots,\lambda_n\in\mathbb{C}$.
+If
 \[
 \|A\|_F^2\leq|\lambda_1|^2+\cdots+|\lambda_n|^2,
 \]

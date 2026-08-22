@@ -22,5 +22,6 @@ Let $G$ be a group and let $Z(G)$ denote its center.
 
 (c) Construct a non-commutative group $G$ of cardinality (order) $16$ whose center $Z(G)$ is not cyclic.
 
-Note. As usual, $\operatorname{card}(X)$ denotes the cardinality of the set $X$.
+Note.
+As usual, $\operatorname{card}(X)$ denotes the cardinality of the set $X$.
 :::

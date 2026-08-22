@@ -16,9 +16,11 @@ solved: false
 ---
 
 ::: problem
-Write down the character table of the symmetric group $S_4$. If we let
+Write down the character table of the symmetric group $S_4$.
+If we let
 \[
 X:=\{\text{all $2$-element subsets of }\{1,2,3,4\}\},
 \]
-then $X$ carries a natural permutation action of $S_4$. Find the decomposition of $\mathbb{C}[X]$ into irreducibles.
+then $X$ carries a natural permutation action of $S_4$.
+Find the decomposition of $\mathbb{C}[X]$ into irreducibles.
 :::

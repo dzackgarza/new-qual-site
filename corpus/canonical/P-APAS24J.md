@@ -25,5 +25,6 @@ G=\left\{\begin{pmatrix}
 \colon
 \varepsilon_1,\varepsilon_2,\ldots,\varepsilon_n=\pm 1\right\}
 \]
-of diagonal matrices whose diagonal entries are $\pm 1$. Find the Hilbert series of the invariant ring $\mathbb{C}[x_1,x_2,\ldots,x_n]^G$.
+of diagonal matrices whose diagonal entries are $\pm 1$.
+Find the Hilbert series of the invariant ring $\mathbb{C}[x_1,x_2,\ldots,x_n]^G$.
 :::

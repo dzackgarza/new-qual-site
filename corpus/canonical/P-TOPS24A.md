@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be the union of four mutually tangent unit 2-spheres inside $\mathbb{R}^3$. Compute $H_*(X; \mathbb{Z})$.
+Let $X$ be the union of four mutually tangent unit 2-spheres inside $\mathbb{R}^3$.
+Compute $H_*(X; \mathbb{Z})$.
 :::

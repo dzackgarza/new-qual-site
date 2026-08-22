@@ -22,5 +22,6 @@ M = \begin{pmatrix} 1 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & 1 \end{pmatrix} \in M_3(F)
 \]
 where $F$ is an algebraically closed field.
 
-Find both the Jordan canonical form and rational canonical form of $M$. (The answer may depend on the characteristic of $F$).
+Find both the Jordan canonical form and rational canonical form of $M$.
+(The answer may depend on the characteristic of $F$).
 :::

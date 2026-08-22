@@ -15,6 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $A, B \in \mathbb{R}^{n \times n}$ be two real symmetric matrices. If $AB = BA$, show that there exists an orthogonal matrix $Q \in \mathbb{R}^{n \times n}$ such that $Q^T AQ$ and $Q^T BQ$ are both diagonal.
+Let $A, B \in \mathbb{R}^{n \times n}$ be two real symmetric matrices.
+If $AB = BA$, show that there exists an orthogonal matrix $Q \in \mathbb{R}^{n \times n}$ such that $Q^T AQ$ and $Q^T BQ$ are both diagonal.
 :::
-

@@ -19,5 +19,6 @@ Let $X$ be the set of triples $(i, j, k)$ of integers such that $i, j, k \in \{1
 \[
 \sigma \cdot (i, j, k) = (\sigma(i), \sigma(j), \sigma(k)).
 \]
-Let $V$ be the corresponding permutation representation over the complex numbers. When decomposed into a sum of irreducible representations, which Specht modules appear in $V$ and what are their multiplicities?
+Let $V$ be the corresponding permutation representation over the complex numbers.
+When decomposed into a sum of irreducible representations, which Specht modules appear in $V$ and what are their multiplicities?
 :::

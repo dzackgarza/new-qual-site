@@ -27,7 +27,8 @@ with the property that
 \]
 for all $v \in V$, $w \in W$.
 
-(ii) Let $V$ and $W$ be finite-dimensional of complex dimensions $m$ and $n$ respectively. Prove that
+(ii) Let $V$ and $W$ be finite-dimensional of complex dimensions $m$ and $n$ respectively.
+Prove that
 \[
 \det(\phi \otimes \psi) = \det(\phi)^n \det(\psi)^m.
 \]

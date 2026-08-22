@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $A$ be a finite-dimensional algebra over $\mathbb{C}$ and let $(V,\rho)$ be a finite-dimensional representation of $A$. Show that the isotypic decomposition of $(V,\rho)$ is multiplicity free if and only if $\mathrm{End}_A V$ is commutative.
+Let $A$ be a finite-dimensional algebra over $\mathbb{C}$ and let $(V,\rho)$ be a finite-dimensional representation of $A$.
+Show that the isotypic decomposition of $(V,\rho)$ is multiplicity free if and only if $\mathrm{End}_A V$ is commutative.
 :::

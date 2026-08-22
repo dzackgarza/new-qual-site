@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Consider a simple group $G$ with $60$ elements. Show that if $G$ has a subgroup $H$ of order $12$ then $G \cong A_5$.
+Consider a simple group $G$ with $60$ elements.
+Show that if $G$ has a subgroup $H$ of order $12$ then $G \cong A_5$.
 
 (Any simple group of order $60$ is isomorphic to $A_5$, but obviously you cannot use this fact, unless you prove it.)
 :::

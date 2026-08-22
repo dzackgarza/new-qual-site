@@ -21,5 +21,7 @@ solved: false
 
 (ii) Show that if $I$ and $J$ are comaximal, then $IJ=I\cap J$.
 
-(b) Suppose that $I$ and $J$ are ideals in $k[x_1,\ldots,x_n]$ where $k$ is field. Show that if $I\subseteq\sqrt{J}$, then there is an $m\ge 1$ such that $I^m\subseteq J$. (Hint: Use the Hilbert Basis Theorem.)
+(b) Suppose that $I$ and $J$ are ideals in $k[x_1,\ldots,x_n]$ where $k$ is field.
+Show that if $I\subseteq\sqrt{J}$, then there is an $m\ge 1$ such that $I^m\subseteq J$.
+(Hint: Use the Hilbert Basis Theorem.)
 :::

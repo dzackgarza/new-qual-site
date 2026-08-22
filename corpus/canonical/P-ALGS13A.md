@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Does there exist a non-Abelian group of order $2013 = (3)(11)(61)$? Justify your answer.
+Does there exist a non-Abelian group of order $2013 = (3)(11)(61)$?
+Justify your answer.
 :::

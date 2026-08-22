@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Suppose $\mathbb{C}^{10}$ has its usual inner product and $\phi,\psi\colon\mathbb{C}^{10}\to\mathbb{C}^{10}$ are two linear maps. Suppose that the singular values of $\phi$ are given by $\sigma_i(\phi)=11-i$ for $1\le i\le 10$; i.e.,
+Suppose $\mathbb{C}^{10}$ has its usual inner product and $\phi,\psi\colon\mathbb{C}^{10}\to\mathbb{C}^{10}$ are two linear maps.
+Suppose that the singular values of $\phi$ are given by $\sigma_i(\phi)=11-i$ for $1\le i\le 10$; i.e.,
 \[
 \sigma_1(\phi)=10,\ \sigma_2(\phi)=9,\ \sigma_3(\phi)=8,\ \ldots,\ \sigma_{10}(\phi)=1;
 \]

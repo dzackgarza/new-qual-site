@@ -21,4 +21,3 @@ Let $H$ be an $n$-dimensional Hilbert space and $A \colon H \to H$ a normal line
 
 (b) Express the coefficients of the characteristic polynomial of $A$ in terms of traces of exterior powers of $A$.
 :::
-

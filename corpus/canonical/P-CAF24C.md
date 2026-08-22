@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic. Assume that
+Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic.
+Assume that
 
 (i) $|f(z)| < 2$ for all $z \in \mathbb{D}$,
 

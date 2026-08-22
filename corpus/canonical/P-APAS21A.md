@@ -19,7 +19,8 @@ Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex componen
 
 (a) State, but do not prove, the Schur decomposition theorem for a matrix $A \in M_n$.
 
-(b) Let $(\lambda, x)$ be a simple eigenpair of $A \in M_n$ with $x^H x = 1$. Prove that there exists a nonsingular matrix $\begin{pmatrix} x & X \end{pmatrix}$ with inverse $\begin{pmatrix} y & Y \end{pmatrix}^H$ such that
+(b) Let $(\lambda, x)$ be a simple eigenpair of $A \in M_n$ with $x^H x = 1$.
+Prove that there exists a nonsingular matrix $\begin{pmatrix} x & X \end{pmatrix}$ with inverse $\begin{pmatrix} y & Y \end{pmatrix}^H$ such that
 \[
 \begin{pmatrix} y^H \\ Y^H \end{pmatrix}
 A

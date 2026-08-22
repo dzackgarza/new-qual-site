@@ -15,5 +15,7 @@ solved: false
 ---
 
 ::: problem
-Let $I\subseteq\mathbb{C}[x,y]$ be an ideal such that $\mathrm{V}(I)=\{(1,3)\}$. Prove that $\mathbb{C}[x,y]/I$ is a finite-dimensional vector space. Is this true if $\mathbb{C}[x,y]$ is replaced by $\mathbb{R}[x,y]$?
+Let $I\subseteq\mathbb{C}[x,y]$ be an ideal such that $\mathrm{V}(I)=\{(1,3)\}$.
+Prove that $\mathbb{C}[x,y]/I$ is a finite-dimensional vector space.
+Is this true if $\mathbb{C}[x,y]$ is replaced by $\mathbb{R}[x,y]$?
 :::

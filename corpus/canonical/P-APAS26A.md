@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $V$ and $W$ be Hilbert spaces, each of dimension at least two. Prove that the operator norm on $\operatorname{Hom}(V, W)$ is not induced by any scalar product on $\operatorname{Hom}(V, W)$.
+Let $V$ and $W$ be Hilbert spaces, each of dimension at least two.
+Prove that the operator norm on $\operatorname{Hom}(V, W)$ is not induced by any scalar product on $\operatorname{Hom}(V, W)$.
 
 Note: On this exam, a Hilbert space is a finite-dimensional complex vector space equipped with a scalar product.
 :::

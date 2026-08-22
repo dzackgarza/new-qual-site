@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $E/F$ be a finite Galois extension with Galois group $G = \operatorname{Gal}(E/F)$, and let $[G,G]$ denote the derived subgroup of $G$. Define the subfield
+Let $E/F$ be a finite Galois extension with Galois group $G = \operatorname{Gal}(E/F)$, and let $[G,G]$ denote the derived subgroup of $G$.
+Define the subfield
 \[
 F^{\mathrm{ab}} := \{e \in E \mid \theta(e) = e \text{ for all } \theta \in [G,G]\}.
 \]

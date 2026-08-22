@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $n \geq 3$ be an integer. Calculate the number of ordered pairs of permutations $(\sigma, \tau)$ in the symmetric group $S_n$ such that $\sigma\tau = \tau\sigma$. Your answer should be a simple formula involving known functions of $n$.
+Let $n \geq 3$ be an integer.
+Calculate the number of ordered pairs of permutations $(\sigma, \tau)$ in the symmetric group $S_n$ such that $\sigma\tau = \tau\sigma$.
+Your answer should be a simple formula involving known functions of $n$.
 :::

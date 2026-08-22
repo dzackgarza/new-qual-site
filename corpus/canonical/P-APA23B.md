@@ -19,7 +19,8 @@ Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex entries,
 
 (a) Prove that every $A \in M_n$ may be written uniquely as $A = S + iT$, where $S$ and $T$ are Hermitian.
 
-(b) For any $A \in M_n$, consider the unique expansion $A = S + iT$, where $S$ and $T$ are Hermitian. Prove that for any $\lambda \in \operatorname{eig}(A)$, it holds that
+(b) For any $A \in M_n$, consider the unique expansion $A = S + iT$, where $S$ and $T$ are Hermitian.
+Prove that for any $\lambda \in \operatorname{eig}(A)$, it holds that
 \[
 \lambda_n(S) \le \operatorname{Re}(\lambda) \le \lambda_1(S)
 \quad\text{and}\quad
@@ -27,4 +28,3 @@ Throughout, $M_n$ denotes the set of $n \times n$ matrices with complex entries,
 \]
 where $\lambda_1(C)$ and $\lambda_n(C)$ denote the largest and smallest eigenvalues of a Hermitian matrix $C \in M_n$.
 :::
-

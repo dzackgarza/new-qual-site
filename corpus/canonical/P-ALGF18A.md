@@ -15,5 +15,7 @@ solved: false
 ---
 
 ::: problem
-Suppose $p < q$ are two odd primes. Suppose $G$ is a group of order $2pq$. Prove that $G$ has normal subgroups $N_1$ and $N_2$ such that $|N_1| = pq$, $|N_2| = q$, and $N_2 \subseteq N_1$.
+Suppose $p < q$ are two odd primes.
+Suppose $G$ is a group of order $2pq$.
+Prove that $G$ has normal subgroups $N_1$ and $N_2$ such that $|N_1| = pq$, $|N_2| = q$, and $N_2 \subseteq N_1$.
 :::

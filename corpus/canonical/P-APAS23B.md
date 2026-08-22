@@ -20,7 +20,8 @@ Consider a Hermitian matrix $A \in M_n$.
 
 (a) Show that the eigenvalues of $A$ are real.
 
-(b) Assume that the eigenvalues of $A$ are ordered so that $\lambda_n \le \lambda_{n-1} \le \cdots \le \lambda_2 \le \lambda_1$. State, but do not prove, the Courant–Fischer theorem.
+(b) Assume that the eigenvalues of $A$ are ordered so that $\lambda_n \le \lambda_{n-1} \le \cdots \le \lambda_2 \le \lambda_1$.
+State, but do not prove, the Courant–Fischer theorem.
 
 (c) Prove that
 \[

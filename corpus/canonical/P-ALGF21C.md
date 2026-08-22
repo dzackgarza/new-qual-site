@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $\zeta \in \mathbb{C}$ be a primitive $n$th root of $1$ for some $n \geq 2$. Show that $\sqrt[3]{2} \notin \mathbb{Q}(\zeta)$. (Hint: use the fundamental theorem of Galois theory).
+Let $\zeta \in \mathbb{C}$ be a primitive $n$th root of $1$ for some $n \geq 2$.
+Show that $\sqrt[3]{2} \notin \mathbb{Q}(\zeta)$.
+(Hint: use the fundamental theorem of Galois theory).
 :::

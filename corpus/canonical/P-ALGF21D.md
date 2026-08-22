@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $F \subseteq K$ be an extension of fields with $[K : F] < \infty$. Show that if $K$ is a perfect field, then so is $F$.
+Let $F \subseteq K$ be an extension of fields with $[K : F] < \infty$.
+Show that if $K$ is a perfect field, then so is $F$.
 :::

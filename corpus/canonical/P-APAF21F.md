@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $\mathbb{Z}$ be the additive group of integers. Is every indecomposable $\mathbb{Z}$-module over the complex numbers irreducible?
+Let $\mathbb{Z}$ be the additive group of integers.
+Is every indecomposable $\mathbb{Z}$-module over the complex numbers irreducible?
 :::

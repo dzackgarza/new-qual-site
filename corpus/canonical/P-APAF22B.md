@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $V$ be a finite-dimensional complex inner product space of dimension $n$, and $\phi \colon V \to V$ a linear map. Suppose that $B$ is an orthonormal basis for $V$ such that the matrix
+Let $V$ be a finite-dimensional complex inner product space of dimension $n$, and $\phi \colon V \to V$ a linear map.
+Suppose that $B$ is an orthonormal basis for $V$ such that the matrix
 \[
 A = \mathcal{M}(\phi, B, B)
 =
@@ -26,9 +27,11 @@ A = \mathcal{M}(\phi, B, B)
 0 & 0 & \cdots & \lambda_n
 \end{pmatrix}
 \]
-is upper-triangular, i.e., a Schur decomposition. Finally let $\sigma_1 \geq \cdots \geq \sigma_n$ denote the singular values of $\phi$, with multiplicity.
+is upper-triangular, i.e., a Schur decomposition.
+Finally let $\sigma_1 \geq \cdots \geq \sigma_n$ denote the singular values of $\phi$, with multiplicity.
 
 (a) By considering $\|\phi\|_{\mathrm{Frob}}$, or otherwise, prove that $\sum_{i=1}^{n} |\lambda_i|^2 \leq \sum_{i=1}^{n} \sigma_i^2$.
 
-(b) Suppose now that $\sum_{i=1}^{n} |\lambda_i|^2 = \sum_{i=1}^{n} \sigma_i^2$. By considering $A$, or otherwise, prove that $\phi$ is normal.
+(b) Suppose now that $\sum_{i=1}^{n} |\lambda_i|^2 = \sum_{i=1}^{n} \sigma_i^2$.
+By considering $A$, or otherwise, prove that $\phi$ is normal.
 :::

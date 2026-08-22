@@ -15,7 +15,9 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a finite group. Let $p$ be a prime factor of the order $|G|$ of $G$. Let $\Omega = \{g \in G \mid g^p = 1\}$ and let $P$ be a Sylow $p$-subgroup of $G$.
+Let $G$ be a finite group.
+Let $p$ be a prime factor of the order $|G|$ of $G$.
+Let $\Omega = \{g \in G \mid g^p = 1\}$ and let $P$ be a Sylow $p$-subgroup of $G$.
 
 (a) Prove that $C_G(P) \cap \Omega$ is a nontrivial $p$-subgroup of $P$.
 (Hint: Consider $P\langle g\rangle$ for $g \in C_G(P) \cap \Omega$.)

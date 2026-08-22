@@ -20,14 +20,16 @@ Assume that the eigenvalues of a Hermitian matrix $A\in M_n$ are arranged in the
 \lambda_n(A)\le\cdots\le\lambda_2(A)\le\lambda_1(A).
 \]
 
-(a) Let $A\in M_n$ be Hermitian. Prove that
+(a) Let $A\in M_n$ be Hermitian.
+Prove that
 \[
 \lambda_n=\min_{x\neq 0}\frac{x^HAx}{x^Hx}.
 \]
 
 (b) Prove that every $A\in M_n$ may be written uniquely as $A=S+iT$, where $S$ and $T$ are Hermitian.
 
-(c) For any $A\in M_n$, consider the unique expansion $A=S+iT$, where $S$ and $T$ are Hermitian. Prove that for any $\lambda\in\operatorname{eig}(A)$, it holds that
+(c) For any $A\in M_n$, consider the unique expansion $A=S+iT$, where $S$ and $T$ are Hermitian.
+Prove that for any $\lambda\in\operatorname{eig}(A)$, it holds that
 \[
 \lambda_n(S)\le\operatorname{Re}(\lambda)\le\lambda_1(S)
 \quad\text{and}\quad

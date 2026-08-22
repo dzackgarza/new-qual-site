@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $U \subset \mathbb{C}$ be a bounded connected open set containing $0$, and $f : U \to U$ a holomorphic function which satisfies $f(0) = 0$ and $|f'(0)| < 1$. Write
+Let $U \subset \mathbb{C}$ be a bounded connected open set containing $0$, and $f : U \to U$ a holomorphic function which satisfies $f(0) = 0$ and $|f'(0)| < 1$.
+Write
 \[
 f^{(n)} = \underbrace{f \circ f \circ \cdots \circ f}_{n\text{ times}}.
 \]

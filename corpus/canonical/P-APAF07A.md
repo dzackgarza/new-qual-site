@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-State and prove the Singular Value Decomposition Theorem. (If you use the Polar Decomposition Theorem, then also state and prove it.)
+State and prove the Singular Value Decomposition Theorem.
+(If you use the Polar Decomposition Theorem, then also state and prove it.)
 :::

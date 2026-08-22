@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $A\in\mathbb{C}^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\ldots,\lambda_n\in\mathbb{C}$ and singular values $\sigma_1\geq\cdots\geq\sigma_n\geq 0$. Show that
+Let $A\in\mathbb{C}^{n\times n}$ be a matrix with eigenvalues $\lambda_1,\ldots,\lambda_n\in\mathbb{C}$ and singular values $\sigma_1\geq\cdots\geq\sigma_n\geq 0$.
+Show that
 \[
 |\lambda_1|^2+\cdots+|\lambda_n|^2\leq\sigma_1^2+\cdots+\sigma_n^2.
 \]
