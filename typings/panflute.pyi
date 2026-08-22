@@ -37,7 +37,9 @@ class Para(Block):
 class Header(Block):
     level: int
     identifier: str
-    def __init__(self, *args: Inline, level: int = ..., identifier: str = ...) -> None: ...
+    def __init__(
+        self, *args: Inline, level: int = ..., identifier: str = ...
+    ) -> None: ...
 
 class Div(Block):
     identifier: str
@@ -92,6 +94,12 @@ class Code(Inline):
 
 class Link(Inline):
     url: str
+    title: str
+    def __init__(self, *args: Inline, url: str = ..., title: str = ...) -> None: ...
+
+class Image(Inline):
+    url: str
+    title: str
     def __init__(self, *args: Inline, url: str = ..., title: str = ...) -> None: ...
 
 class Span(Inline):
@@ -128,6 +136,7 @@ class Figure(Block):
     ) -> None: ...
 
 class RawBlock(Block):
+    text: str
     def __init__(self, text: str, format: str = ...) -> None: ...
 
 class RawInline(Inline):
