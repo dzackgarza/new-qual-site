@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance: []
+provenance:
+- assets/attachments/UCSD_290_Qualifying_Exams.pdf
 source:
   source_kind: university-exam
   institution: ucsd
