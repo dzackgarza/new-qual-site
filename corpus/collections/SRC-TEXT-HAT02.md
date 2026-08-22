@@ -195,7 +195,6 @@ source:
     - E-HAT-2.2-31
     - E-HAT-2.2-32
     - E-HAT-2.2-33
-    - E-HAT-2.2-34
     - E-HAT-2.2-35
     - E-HAT-2.2-36
     - E-HAT-2.2-37
@@ -532,5 +531,10 @@ source:
     - E-HAT-4.L-4
     - E-HAT-4.L-5
 ---
+
+
+::: remark
+The §2.2 list skips number 34: Hatcher's errata withdrew that exercise, so the current book has no statement to extract for it.
+:::
 
 
