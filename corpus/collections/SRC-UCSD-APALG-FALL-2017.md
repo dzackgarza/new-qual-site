@@ -9,14 +9,22 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/Applied-Algebra.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: applied-algebra
-  problems: []
+  problems:
+  - P-APAF17A
+  - P-APAF17B
+  - P-APAF17C
+  - P-APAF17D
+  - P-APAF17E
+  - P-APAF17F
+  - P-APAF17G
+  - P-APAF17H
   date:
     kind: academic-term
     term: fall

@@ -16,7 +16,13 @@ source:
   source_kind: university-exam
   institution: ucsd
   area: applied-algebra
-  problems: []
+  problems:
+  - P-APAF11A
+  - P-APAF11B
+  - P-APAF11C
+  - P-APAF11D
+  - P-APAF11E
+  - P-APAF11F
   date:
     kind: academic-term
     term: fall

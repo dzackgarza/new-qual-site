@@ -16,7 +16,14 @@ source:
   source_kind: university-exam
   institution: ucsd
   area: applied-algebra
-  problems: []
+  problems:
+  - P-APAS04A
+  - P-APAS04B
+  - P-APAS04C
+  - P-APAS04D
+  - P-APAS04E
+  - P-APAS04F
+  - P-APAS04G
   date:
     kind: academic-term
     term: spring
