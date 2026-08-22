@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/SP04_202_Applied_Algebra_Qual.pdf
 source:
@@ -24,6 +24,13 @@ source:
   - P-APAS04E
   - P-APAS04F
   - P-APAS04G
+  - P-APAF11D
+  - P-APAS04H
+  - P-APAS04I
+  - P-APAS04J
+  - P-APAS04K
+  - P-APAS04L
+  - P-APAS04M
   date:
     kind: academic-term
     term: spring
