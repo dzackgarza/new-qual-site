@@ -38,7 +38,7 @@ Disposition each key by reading the cards and papers (merge / re-date / reclassi
 
 W1 complete. UNL: [W1 UNL year-only](d7a06f91-825b-4ca2-90ea-8555a5867e2c), [Review +88 −43](d7a06f91-825b-4ca2-90ea-8555a5867e2c#changes).
 
-## W2 — Empty provenance (11)
+## W2 — Empty provenance (12)
 
 Disposition each id: `href added` | `none found` | `expected empty (compilation owns paper)`. Leave empty when no qualifying href exists.
 
@@ -53,6 +53,7 @@ Disposition each id: `href added` | `none found` | `expected empty (compilation 
 | `SRC-PRELIM-ART-INTEGRAL-PRACTICE` | Integral Practice (prelim drill sheet) | none found |
 | `SRC-RA-ART-GHJOJZ` | JHU (undated) (real-analysis) | none found (archive packet already owned by `SRC-JHU-ANALYSIS-EXAMS`) |
 | `SRC-UCSD-ALG-200A-HOMEWORK` | UCSD Math 200A Homework Question Compendium | none found |
+| `SRC-TEXT-SS03` | Stein and Shakarchi, Complex Analysis | href added (WorldCat ISBN 9780691113852, verified via Open Library) |
 | `SRC-UCSD-TOP-FALL-2014` | UCSD topology Fall 2014 | expected empty (`SRC-UCSD-TOP-290QUALS`) |
 | `SRC-UCSD-TOP-SUMMER-2003` | UCSD topology Summer 2003 | expected empty (`SRC-UCSD-TOP-290QUALS`) |
 
@@ -140,7 +141,22 @@ Collections with empty problem lists remain measurable stubs; extracted APALG/AL
 - CA Source Archive `## UCSD`: **38** links
 - TOP Source Archive `## UCSD`: full corpus list (incl. QUAL/SUMMER/290QUALS)
 
-Remaining orphan work: AMD/ws9 clusters and any cards still off archives.
+Remaining orphan work: see the attach pass below; AMD + ws9 notes clusters remain honestly unattached pending source identification.
+
+### Attach pass (2026-08-23)
+
+| Cluster | Disposition |
+|---|---|
+| `P-TOP-WORKSHOP-2020-WS2A-P1`, `-WS2B-P3`, `-WS3A-P2`, `-WS3B-P4` | attached — listed on their `SRC-TOP-WORKSHOP-2020` sections; each statement verified against the worksheet PDF, canonical sitting card listed alongside |
+| `ST-DKYXZ` | attached — `ref:` on the algebra guide's Sylow Theory section, next to its target `T-3X5FF` |
+| `P-AMD-INYGESUE`, `-JWY5GWNO`, `-NFZKF2XH`, `-YDNWHPDM` | not yet attachable (re-confirmed) — multi-problem amalgams with solutions; no single sitting owns them; do not dump onto official papers |
+| ws9 algebra cluster: `P-B2P3P`, `P-B6E7Q`, `P-DLFQC`, `P-EHBDD`, `P-J2D5B`, `P-LCEHH`, `P-PBVSZ`, `P-ULNGG`, `P-VAZ7S` + their 9 `S-*` solutions | not yet attachable — reconstructions from the author's qual-prep notes; no sitting identified; local sitting-text hunt negative |
+| `P-E5NRO`, `P-TEEXE` | not yet attachable — same equivalence on ℝ; excluded from `SRC-UGA-RA-SPRING-2015` by prior review remark |
+| `P-UHFLP` | not yet attachable — QRS-derived, no sitting identified |
+
+## Topic gaps (17)
+
+All cleared. The 16 `E-SS*.PR-*` Stein–Shakarchi problem cards classified by reading each statement; nearest existing topic labels used, none minted. `E-HAT-2.2-34` was a content-free tombstone ("Deleted — see errata"): card removed, `SRC-TEXT-HAT02` §2.2 list skips 34 with a remark.
 
 ## W6 — Measurement hygiene
 
