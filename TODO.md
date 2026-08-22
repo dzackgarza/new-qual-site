@@ -24,7 +24,9 @@ AGENTS.md still governs: read to decide; do not invent provenance; no semantic a
 
 - `provenance-href-contains-other-area` deleted (path-substring area guess).
 
-- Shared TOP packet provenance: `SRC-UCSD-TOP-290QUALS` owns the compilation hrefs; Summer 2003 / Fall 2014 sittings correctly have `provenance: []`.
+- Shared TOP packet provenance: `assets/attachments/UCSD_290_Qualifying_Exams.pdf` stays listed on all three collections that extract from it — `SRC-UCSD-TOP-290QUALS` (whole packet), `SRC-UCSD-TOP-SUMMER-2003` (§3, printed p. 394), `SRC-UCSD-TOP-FALL-2014` (§16, printed p. 407).
+  An href names the document a card's problems were read from; all three name the same packet.
+  The shared-provenance-hrefs finding on this path is the expected state, not drift; emptying the sittings was rejected 2026-08-23.
 
 - Prior TODO provenance mega-table was stale.
   Textbooks (Hatcher, HK, Munkres, Hungerford, DF, Smith), Emory Arango, Justin TOP packet, UNL workshop sheets, many UGA prelims, and `SRC-UCSD-TOP-FALL-2017` already carry qualifying hrefs.
@@ -48,7 +50,7 @@ UNL: [W1 UNL year-only](d7a06f91-825b-4ca2-90ea-8555a5867e2c), [Review +88 −43
 
 ## W2 — Empty provenance (12)
 
-Disposition each id: `href added` | `none found` | `expected empty (compilation owns paper)`. Leave empty when no qualifying href exists.
+Disposition each id: `href added` | `none found`. Leave empty when no qualifying href exists.
 
 | ID | Title | Disposition |
 | --- | --- | --- |
@@ -62,8 +64,8 @@ Disposition each id: `href added` | `none found` | `expected empty (compilation 
 | `SRC-RA-ART-GHJOJZ` | JHU (undated) (real-analysis) | none found (archive packet already owned by `SRC-JHU-ANALYSIS-EXAMS`) |
 | `SRC-UCSD-ALG-200A-HOMEWORK` | UCSD Math 200A Homework Question Compendium | none found |
 | `SRC-TEXT-SS03` | Stein and Shakarchi, Complex Analysis | href added (WorldCat ISBN 9780691113852, verified via Open Library) |
-| `SRC-UCSD-TOP-FALL-2014` | UCSD topology Fall 2014 | expected empty (`SRC-UCSD-TOP-290QUALS`) |
-| `SRC-UCSD-TOP-SUMMER-2003` | UCSD topology Summer 2003 | expected empty (`SRC-UCSD-TOP-290QUALS`) |
+| `SRC-UCSD-TOP-FALL-2014` | UCSD topology Fall 2014 | keeps href — shared packet with `SRC-UCSD-TOP-290QUALS` (§16, printed p. 407) |
+| `SRC-UCSD-TOP-SUMMER-2003` | UCSD topology Summer 2003 | keeps href — shared packet with `SRC-UCSD-TOP-290QUALS` (§3, printed p. 394) |
 
 W2 dispositions (no fabricated hrefs): [W2 empty provenance hunts](89702238-cba8-46e3-9da1-75cf2d8a7b42).
 
