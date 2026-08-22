@@ -57,6 +57,7 @@ source:
     - P-TOP-WORKSHOP-2020-WS2A-HW3
     - P-TOP-WORKSHOP-2020-WS2A-HW4
     - P-TOP-WORKSHOP-2020-WS2A-HW5
+    - P-TOP-WORKSHOP-2020-WS2A-P1
     - P-T15A2
     - P-T17Q1-3
     - P-T18A3
@@ -69,6 +70,7 @@ source:
     - P-TOP-WORKSHOP-2020-WS2B-HW3
     - P-T15A4
     - P-T18A4
+    - P-TOP-WORKSHOP-2020-WS2B-P3
     - P-T19Q1-4
     - P-T10A4
     - P-T11A4
@@ -78,6 +80,7 @@ source:
     - P-TOP-WORKSHOP-2020-WS3A-HW2
     - P-TOP-WORKSHOP-2020-WS3A-HW3
     - P-T12Q2-5
+    - P-TOP-WORKSHOP-2020-WS3A-P2
     - P-T17Q2-5
     - P-T19Q1-5
     - P-T19B1
@@ -89,6 +92,7 @@ source:
     - P-T14B3
     - P-T18B3
     - P-T09B2
+    - P-TOP-WORKSHOP-2020-WS3B-P4
     - P-T19B2
     - P-T20B2
   - name: Worksheet 4A
