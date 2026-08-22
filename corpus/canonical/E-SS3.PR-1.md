@@ -6,7 +6,8 @@ title: "Suppose f is continuous and of moderate decrease, and  for all  Sh"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Entire Functions
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: "SS 2.PR-3: Morera's theorem for circles and toy contours"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Morera
+  - Contour Integration
 relations: []
 review: draft
 solved: false

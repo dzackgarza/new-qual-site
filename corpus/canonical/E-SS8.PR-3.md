@@ -6,7 +6,8 @@ title: "In contrast with the result in Lemma 1"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Series of Numbers
 relations: []
 review: draft
 solved: false

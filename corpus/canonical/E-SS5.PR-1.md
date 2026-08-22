@@ -6,7 +6,10 @@ title: "Prove that if f is holomorphic in the unit disc, bounded and not identic
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Zeros
+  - Blaschke Factors
+  - Entire Functions
 relations: []
 review: draft
 solved: false

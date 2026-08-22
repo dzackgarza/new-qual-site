@@ -6,7 +6,9 @@ title: "Besides the approach in Section 1"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Meromorphic Functions
+  - Uniform Convergence
 relations: []
 review: draft
 solved: false

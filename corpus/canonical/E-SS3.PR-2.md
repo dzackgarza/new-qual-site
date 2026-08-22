@@ -6,7 +6,9 @@ title: "Let u be a harmonic function in the unit disc that is continuous on its 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Harmonic Functions
+  - Mean Value Property
 relations: []
 review: draft
 solved: false

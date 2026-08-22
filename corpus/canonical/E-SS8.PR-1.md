@@ -6,7 +6,8 @@ title: "Let  be a complex-valued  function defined in the neighborhood of a poin
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Conformal Maps
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Suppose  as  , for some"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Entire Functions
 relations: []
 review: draft
 solved: false

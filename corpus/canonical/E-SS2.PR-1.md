@@ -6,7 +6,8 @@ title: "Here are some examples of analytic functions on the unit disc that canno
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Power Series
 relations: []
 review: draft
 solved: false
