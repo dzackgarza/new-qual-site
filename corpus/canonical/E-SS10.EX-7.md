@@ -2,13 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-7
 kind: exercise
-title: "Use the product formula for  to prove:
-
-(a) The “triangular number” identity
-
-
-
-"
+title: "SS 10.7: Triangular and septagonal number identities via the theta function"
 classification:
   areas:
   - complex-analysis

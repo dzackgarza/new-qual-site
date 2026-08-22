@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-9
 kind: exercise
-title: "Use the formula for  to prove the following:
-
-(a) If  where p is a prime of the "
+title: "SS 10.9: The two-squares theorem via the representation count r2(n)"
 classification:
   areas:
   - complex-analysis

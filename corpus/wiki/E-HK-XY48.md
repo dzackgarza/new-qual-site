@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HK-XY48
 kind: exercise
-title: "Inverse of a $4 \times 4$ upper-triangular matrix"
+title: 'Inverse of a $4 \times 4$ upper-triangular matrix'
 classification:
   areas:
   - algebra

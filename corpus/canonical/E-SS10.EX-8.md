@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-8
 kind: exercise
-title: Consider Pythagorean triples  with  , and with $a , b , c \in \math
+title: "SS 10.8: Parametrization of Pythagorean triples"
 classification:
   areas:
   - complex-analysis

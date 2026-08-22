@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS6.EX-12
 kind: exercise
-title: "This exercise gives two simple observations about  (a) Show that  is not $O ( e "
+title: "SS 6.12: Growth observations about the reciprocal Gamma function"
 classification:
   areas:
   - complex-analysis

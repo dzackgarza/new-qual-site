@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-2
 kind: exercise
-title: "Show that 
-
-[Hint: The integr"
+title: "SS 2.2: The integral of sin x over x"
 classification:
   areas:
   - complex-analysis

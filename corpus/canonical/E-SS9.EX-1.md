@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS9.EX-1
 kind: exercise
-title: 'Suppose that a meromorphic function  has two periods  and  , with $\omega _ { 2 '
+title: "SS 9.1: Periods of a meromorphic function with real ratio"
 classification:
   areas:
   - complex-analysis

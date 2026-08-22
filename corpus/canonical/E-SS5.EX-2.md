@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: E-SS5.EX-2
 kind: exercise
-title: "Find the order of growth of the following entire functions:
-
-(a)  where p is a p"
+title: "SS 5.2: Orders of growth of standard entire functions"
 classification:
   areas:
   - complex-analysis

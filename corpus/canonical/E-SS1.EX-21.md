@@ -2,11 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-21
 kind: exercise
-title: "Show that for  , one has
-
-
-
-{\frac {z}{1 - z ^ {2}}} + {\frac {z ^ {2}}{1 - z ^ "
+title: "SS 1.21: Two dyadic series identities for z/(1-z)"
 classification:
   areas:
   - complex-analysis

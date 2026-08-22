@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-14
 kind: exercise
-title: "Prove that all entire functions that are also injective take the form  with $a ,"
+title: "SS 3.14: Injective entire functions are affine"
 classification:
   areas:
   - complex-analysis

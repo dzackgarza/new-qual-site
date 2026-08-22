@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-5
 kind: exercise
-title: Prove that  is a conformal map from the half-disc $\left\
+title: "SS 8.5: A conformal map from the half-disc to the upper half-plane"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS4.EX-2
 kind: exercise
-title: If  with  , then for any positive integer n one has $f ^ { ( n ) } \in \mathfra
+title: "SS 4.2: Derivatives of functions of moderate decrease"
 classification:
   areas:
   - complex-analysis

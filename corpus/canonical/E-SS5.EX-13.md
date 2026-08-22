@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS5.EX-13
 kind: exercise
-title: Show that the equation  has infinitely many solutions in $\mathbb { C }
+title: "SS 5.13: The equation e^z = z has infinitely many solutions"
 classification:
   areas:
   - complex-analysis

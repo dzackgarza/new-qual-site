@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-2
 kind: exercise
-title: "Consider the Fibonacci numbers  , defined by the two initial values $F _ {"
+title: "SS 10.2: The generating function of the Fibonacci numbers"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HK-A9AS
 kind: exercise
-title: "Column space characterization for a $3 \times 3$ matrix"
+title: 'Column space characterization for a $3 \times 3$ matrix'
 classification:
   areas:
   - algebra

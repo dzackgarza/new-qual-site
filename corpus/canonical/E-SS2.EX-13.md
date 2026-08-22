@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-13
 kind: exercise
-title: "Suppose  is an analytic function defined everywhere in  and such that for each $"
+title: "SS 2.13: An entire function with a zero coefficient in every local expansion is a polynomial"
 classification:
   areas:
   - complex-analysis

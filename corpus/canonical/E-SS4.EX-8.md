@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS4.EX-8
 kind: exercise
-title: "Suppose  has compact support contained in  and let $\begin{array} { r } { f ( z "
+title: "SS 4.8: Compact support of a Fourier transform and coefficient growth"
 classification:
   areas:
   - complex-analysis

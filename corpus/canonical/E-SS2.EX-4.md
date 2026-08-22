@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-4
 kind: exercise
-title: Prove that for all  we have $e ^ { - \pi \xi ^ { 2 } } = \int _ { - \infty } ^ {
+title: "SS 2.4: The Gaussian is its own Fourier transform"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-19
 kind: exercise
-title: 'Prove that the complex plane slit along the union of the rays $\cup _ { k = 1 } '
+title: "SS 8.19: The plane slit along parallel rays is simply connected"
 classification:
   areas:
   - complex-analysis

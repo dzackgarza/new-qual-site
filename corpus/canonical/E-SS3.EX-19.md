@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-19
 kind: exercise
-title: "Prove the maximum principle for harmonic functions, that is:
-
-(a) If u is a non-"
+title: "SS 3.19: The maximum principle for harmonic functions"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-12
 kind: exercise
-title: 'A complex number  is a fixed point for the map $f : \mathbb { D } \to \mathbb { '
+title: "SS 8.12: Fixed points of holomorphic self-maps of the disc"
 classification:
   areas:
   - complex-analysis

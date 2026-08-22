@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS4.EX-5
 kind: exercise
-title: "More generally, let  be a rational function with (degree  (degreeP )+2 and $Q"
+title: "SS 4.5: Fourier transforms of rational functions by partial fractions"
 classification:
   areas:
   - complex-analysis

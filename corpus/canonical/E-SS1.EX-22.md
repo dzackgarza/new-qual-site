@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-22
 kind: exercise
-title: Let $\mathbb { N } = \{ 1 , 2 , 3 ,
+title: "SS 1.22: The integers are not a finite union of arithmetic progressions with distinct steps"
 classification:
   areas:
   - complex-analysis

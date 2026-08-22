@@ -2,11 +2,7 @@
 schema: qual/card@1
 id: E-SS10.EX-4
 kind: exercise
-title: "Using the generating formula for  , prove the recurrence formula
-
-
-
-\begin{array"
+title: "SS 10.4: Euler's recurrence for the partition function"
 classification:
   areas:
   - complex-analysis

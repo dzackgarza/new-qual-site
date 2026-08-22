@@ -2,11 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-13
 kind: exercise
-title: "The pseudo-hyperbolic distance between two points  is defined by
-
-
-
-\rho (z, w) "
+title: "SS 8.13: The pseudo-hyperbolic metric and the Schwarz-Pick inequality"
 classification:
   areas:
   - complex-analysis

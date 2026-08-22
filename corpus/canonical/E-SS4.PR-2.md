@@ -2,11 +2,7 @@
 schema: qual/card@1
 id: E-SS4.PR-2
 kind: exercise
-title: "The problem is to solve the diferential equation
-
-
-
-a _ {n} \frac {d ^ {n}}{d t "
+title: "SS 4.PR-2: Solving a linear ODE with the Fourier transform"
 classification:
   areas:
   - complex-analysis

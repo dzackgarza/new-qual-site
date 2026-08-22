@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-3
 kind: exercise
-title: "With  , where  and  , solve the equation $z ^ { n"
+title: "SS 1.3: Solutions of z^n = omega and their count"
 classification:
   areas:
   - complex-analysis

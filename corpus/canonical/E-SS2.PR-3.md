@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.PR-3
 kind: exercise
-title: Morera’s theorem states that if f is continuous in $\mathbb { C }
+title: "SS 2.PR-3: Morera's theorem for circles and toy contours"
 classification:
   areas:
   - complex-analysis

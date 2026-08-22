@@ -2,11 +2,7 @@
 schema: qual/card@1
 id: E-SS5.EX-10
 kind: exercise
-title: "Find the Hadamard products for:
-
-(a) 
-
-(b) cos πz"
+title: "SS 5.10: Hadamard products of e^z - 1 and cos pi-z"
 classification:
   areas:
   - complex-analysis

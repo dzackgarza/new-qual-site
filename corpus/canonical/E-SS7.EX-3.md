@@ -2,9 +2,7 @@
 schema: qual/card@1
 id: E-SS7.EX-3
 kind: exercise
-title: "In line with the previous exercise, we consider the Dirichlet series for 
-
-(a) P"
+title: "SS 7.3: The Dirichlet series of the Moebius function and 1/zeta"
 classification:
   areas:
   - complex-analysis

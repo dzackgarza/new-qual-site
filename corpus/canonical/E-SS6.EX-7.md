@@ -2,11 +2,7 @@
 schema: qual/card@1
 id: E-SS6.EX-7
 kind: exercise
-title: "The Beta function is defined for  and  by
-
-
-
-B"
+title: "SS 6.7: The Beta function and its relation to Gamma"
 classification:
   areas:
   - complex-analysis

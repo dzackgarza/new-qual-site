@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-MUN-5-1
 kind: exercise
-title: "Bijection between $A \times B$ and $B \times A$"
+title: 'Bijection between $A \times B$ and $B \times A$'
 classification:
   areas:
   - topology
