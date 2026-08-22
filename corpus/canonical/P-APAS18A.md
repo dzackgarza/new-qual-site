@@ -6,7 +6,9 @@ title: Similarity of $8\times 8$ matrices with prescribed ranks of powers
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

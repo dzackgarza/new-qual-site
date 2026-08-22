@@ -6,7 +6,10 @@ title: A matrix is unitarily diagonalizable if and only if it is normal
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Diagonalization
+  - Normal Operators
 relations: []
 review: draft
 solved: false

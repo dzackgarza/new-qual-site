@@ -6,7 +6,9 @@ title: Element with prescribed stabilizer under a finite Galois action
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
+  - Group Actions
 relations: []
 review: draft
 solved: false

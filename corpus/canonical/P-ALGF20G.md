@@ -6,7 +6,8 @@ title: Galois group and intermediate fields for splitting field of $x^4 - 4x^2 +
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

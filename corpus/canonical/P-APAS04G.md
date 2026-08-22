@@ -6,7 +6,10 @@ title: Character table of the order-$8$ group with $a^4=1$, $a^2=b^2$, $b^{-1}ab
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Group Theory
 relations: []
 review: draft
 solved: false

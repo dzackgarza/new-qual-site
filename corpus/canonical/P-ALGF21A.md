@@ -6,7 +6,8 @@ title: Presentation $\langle a,b \mid a^8=1,\, ba=a^{-1}b,\, b^2=a^4\rangle$ iso
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 solved: false

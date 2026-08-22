@@ -6,7 +6,9 @@ title: Unique subgroup of each dividing order implies a finite abelian group is 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

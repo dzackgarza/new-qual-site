@@ -6,7 +6,10 @@ title: Comaximal ideals, Nullstellensatz, and ideal intersection via an auxiliar
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

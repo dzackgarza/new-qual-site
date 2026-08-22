@@ -6,7 +6,8 @@ title: Subring of $\mathbb{Z}[T]$ missing degree one; fractions, integrality, UF
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

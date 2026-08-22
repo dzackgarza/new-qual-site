@@ -6,7 +6,9 @@ title: Symmetric square is a subrepresentation; character formula via $\chi(g^2)
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

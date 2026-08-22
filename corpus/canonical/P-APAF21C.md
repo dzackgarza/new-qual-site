@@ -6,7 +6,9 @@ title: Square root and modulus; singular values; PSD characterization; similarit
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Positive Definite Matrices
 relations: []
 review: draft
 solved: false

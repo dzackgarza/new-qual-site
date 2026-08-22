@@ -6,7 +6,9 @@ title: Induced $S_5$-module from $S^{(2)}\otimes S^{(2)}\otimes S^{(1)}$; $\oper
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

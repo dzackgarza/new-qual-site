@@ -6,7 +6,9 @@ title: Groups of order $2012$ via semidirect products; nontrivial center
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
 relations: []
 review: draft
 solved: false

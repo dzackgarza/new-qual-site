@@ -6,7 +6,9 @@ title: $|f|^2+|f|$ harmonic implies $f$ constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Harmonic Functions
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

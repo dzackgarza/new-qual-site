@@ -6,7 +6,8 @@ title: External tensor product of representations of a direct product of groups
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

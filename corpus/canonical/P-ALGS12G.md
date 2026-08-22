@@ -6,7 +6,8 @@ title: Irreducible $f$ divides $x^{q^n}-x$ iff $\deg f$ divides $n$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
 relations: []
 review: draft
 solved: false

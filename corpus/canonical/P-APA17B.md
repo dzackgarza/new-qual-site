@@ -6,7 +6,9 @@ title: Simultaneous orthogonal diagonalization of commuting real symmetric matri
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Diagonalization
 relations: []
 review: draft
 solved: false

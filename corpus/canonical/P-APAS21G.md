@@ -6,7 +6,9 @@ title: Dimension of the $S_n$-fixed subspace of $S^\lambda \otimes S^\mu$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

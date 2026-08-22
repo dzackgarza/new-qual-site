@@ -6,7 +6,8 @@ title: Every bivector in $\mathbb{C}^3 \wedge \mathbb{C}^3$ is decomposable
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Multilinear Algebra
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: $S_n$ has a subgroup with exactly $n$ Sylow $p$-subgroups
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

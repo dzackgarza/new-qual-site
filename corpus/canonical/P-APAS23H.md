@@ -6,7 +6,9 @@ title: Does the unipotent $\mathbb{Z}$-module $\mathbb{C}^2$ admit an invariant 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Modules
 relations: []
 review: draft
 solved: false

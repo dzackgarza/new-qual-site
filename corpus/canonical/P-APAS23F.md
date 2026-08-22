@@ -6,7 +6,9 @@ title: Rank of the $D_4$-averaging operator on $\mathbb{C}[X]$ for a $3\times 3$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

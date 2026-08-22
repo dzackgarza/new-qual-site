@@ -6,7 +6,8 @@ title: Abelian Galois group implies $E = F[\alpha_i]$; prime-degree case
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

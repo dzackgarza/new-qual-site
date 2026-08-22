@@ -6,7 +6,8 @@ title: Tensor product of projective modules is projective
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 solved: false

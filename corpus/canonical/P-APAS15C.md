@@ -6,7 +6,10 @@ title: Character table of $S_4$, Kronecker product of Specht modules, and its en
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

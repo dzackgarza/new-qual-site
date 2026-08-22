@@ -6,7 +6,9 @@ title: Finite variety implies finite-dimensional quotient; counterexample over a
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

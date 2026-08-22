@@ -6,7 +6,10 @@ title: No uniform rate in the Riemann–Lebesgue lemma on $[0,1]$
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Analysis
+  - Integrals
+  - Counterexamples
 relations: []
 review: draft
 solved: false

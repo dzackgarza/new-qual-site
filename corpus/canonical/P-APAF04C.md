@@ -6,7 +6,10 @@ title: Pseudo-inverse gives the minimal $2$-norm least-squares solution
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Linear Algebra
+  - Norms
 relations: []
 review: draft
 solved: false

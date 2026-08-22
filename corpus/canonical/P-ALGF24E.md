@@ -6,7 +6,9 @@ title: Support of a finitely generated module equals $V(\operatorname{ann}(M))$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

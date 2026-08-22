@@ -6,7 +6,9 @@ title: Rayleigh quotient minimum; unique Hermitian splitting and eigenvalue real
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Norms
 relations: []
 review: draft
 solved: false

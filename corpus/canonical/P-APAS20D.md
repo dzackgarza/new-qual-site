@@ -6,7 +6,10 @@ title: Conjugacy class sizes from a character table of a group of order $360$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Group Theory
 relations: []
 review: draft
 solved: false

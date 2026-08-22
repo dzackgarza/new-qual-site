@@ -6,7 +6,9 @@ title: Group of order $2pq$ has normal subgroups of orders $pq$ and $q$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

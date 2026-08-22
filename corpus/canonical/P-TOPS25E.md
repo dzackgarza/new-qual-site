@@ -6,7 +6,9 @@ title: Cohomology of $S^2 \times S^3$ versus $S^2 \vee S^3 \vee S^5$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Cohomology
+  - Higher Homotopy Groups
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: 'Sylow intersections and a bound on $[P : P \cap Q]$'
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

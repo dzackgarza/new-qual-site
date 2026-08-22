@@ -6,7 +6,9 @@ title: 'Intersections of ideals: elimination, varieties, radicals, and a Gröbne
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

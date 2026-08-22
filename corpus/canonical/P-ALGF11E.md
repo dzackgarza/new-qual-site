@@ -6,7 +6,8 @@ title: Galois group of $x^4 + bx^2 + c$ embeds in $D_4$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

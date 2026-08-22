@@ -6,7 +6,9 @@ title: Cyclotomic polynomials over $\mathbb{F}_p$ and $\operatorname{Gal}(E_{n,p
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

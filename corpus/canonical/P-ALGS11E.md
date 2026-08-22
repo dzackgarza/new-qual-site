@@ -6,7 +6,9 @@ title: Splitting field of $x^n - t$ over $k(t)$ in characteristic $p$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

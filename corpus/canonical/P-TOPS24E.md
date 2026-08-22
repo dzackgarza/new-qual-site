@@ -6,7 +6,8 @@ title: Compute $\operatorname{Tor}(M, \mathbb{Z}_2)$ for a presented abelian gro
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 solved: false

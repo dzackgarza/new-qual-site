@@ -6,7 +6,9 @@ title: Averaging projector onto the $G$-invariant subspace
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

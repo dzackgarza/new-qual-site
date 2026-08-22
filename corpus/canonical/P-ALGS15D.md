@@ -6,7 +6,9 @@ title: PID characterization via submodules of free modules
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Ideals
 relations: []
 review: draft
 solved: false

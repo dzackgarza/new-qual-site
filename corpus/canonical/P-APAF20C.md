@@ -6,7 +6,9 @@ title: Positive-definite square-root conjugation and diagonalizability of a prod
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Positive Definite Matrices
+  - Diagonalization
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Cover by localizations $A[f_i^{-1}]$ recovers an integral domain
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Localization
 relations: []
 review: draft
 solved: false

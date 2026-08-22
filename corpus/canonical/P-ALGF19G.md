@@ -6,7 +6,9 @@ title: Splitting field of $x^5 - 5$; non-abelian Galois; no root in $\mathbb{Q}[
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

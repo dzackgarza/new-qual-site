@@ -6,7 +6,8 @@ title: Artinian domains are fields; primes equal maximals in Artinian rings
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

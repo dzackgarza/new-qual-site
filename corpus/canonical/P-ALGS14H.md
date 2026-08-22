@@ -6,7 +6,8 @@ title: Irreducible factors of $X^{64}-X$ over $\mathbb{F}_2$ by degree
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
 relations: []
 review: draft
 solved: false

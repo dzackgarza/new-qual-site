@@ -6,7 +6,9 @@ title: Roots of $x^q - x + 1$ over $\mathbb{F}_q$; Galois degree $p$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

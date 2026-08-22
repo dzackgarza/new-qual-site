@@ -6,7 +6,10 @@ title: $D_8$-orbits on diagonals of a regular octogon; rank of the Reynolds oper
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Permutations
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Frobenius reciprocity and transitivity of induced representations
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

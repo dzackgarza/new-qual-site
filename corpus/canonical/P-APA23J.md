@@ -6,7 +6,9 @@ title: 'Monomial ideal $\langle x_2^2,\dots,x_n^2\rangle$: basis, Hilbert functi
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

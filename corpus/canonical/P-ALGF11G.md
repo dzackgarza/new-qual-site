@@ -6,7 +6,8 @@ title: Tensoring with $R/I$; dimension over $R/I$ for modules over a PID
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 solved: false

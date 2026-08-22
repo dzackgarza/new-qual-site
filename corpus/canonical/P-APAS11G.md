@@ -6,7 +6,9 @@ title: Co-maximal ideals, Nullstellensatz intersection, and radical containment
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Ideals
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

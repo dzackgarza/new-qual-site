@@ -6,7 +6,8 @@ title: Maximal abelian Galois subextension $K^{\mathrm{ab}}$ inside $L$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

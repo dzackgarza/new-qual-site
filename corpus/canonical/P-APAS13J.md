@@ -6,7 +6,9 @@ title: Gröbner basis, elimination, solutions, and quotient basis for a bivariat
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

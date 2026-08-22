@@ -6,7 +6,8 @@ title: Algebraic elements over $K$ in $L$ when $M \cap A = K$; degree bounds
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Extensions
 relations: []
 review: draft
 solved: false

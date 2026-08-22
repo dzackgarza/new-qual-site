@@ -6,7 +6,8 @@ title: Bounded harmonic function on the upper half-plane vanishing on the bounda
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Harmonic Functions
 relations: []
 review: draft
 solved: false

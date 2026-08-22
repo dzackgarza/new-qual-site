@@ -6,7 +6,8 @@ title: Singular Value Decomposition Theorem
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
 relations: []
 review: draft
 solved: false

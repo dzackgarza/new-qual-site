@@ -6,7 +6,9 @@ title: Group determinant via the regular representation and a circulant evaluati
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

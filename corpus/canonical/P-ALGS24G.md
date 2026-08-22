@@ -6,7 +6,9 @@ title: Galois orbits on the field with $729$ elements
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Galois Theory
 relations: []
 review: draft
 solved: false

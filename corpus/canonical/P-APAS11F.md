@@ -6,7 +6,9 @@ title: Conjugacy classes and character table of $A_4$ via $A_4/D\cong\mathbb{Z}_
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

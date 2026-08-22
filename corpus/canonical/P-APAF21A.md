@@ -6,7 +6,9 @@ title: Schur form; Hermitian quadratic forms determine a matrix; orthogonal proj
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

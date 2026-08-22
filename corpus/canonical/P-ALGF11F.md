@@ -6,7 +6,9 @@ title: Tower of Galois extensions when automorphisms extend
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Extensions
+  - Galois Theory
 relations: []
 review: draft
 solved: false

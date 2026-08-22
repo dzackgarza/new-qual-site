@@ -6,7 +6,10 @@ title: Murnaghan–Nakayama values of $A^{(1,4)}$ and restriction to $S_3\times 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
+  - Character Theory
 relations: []
 review: draft
 solved: false

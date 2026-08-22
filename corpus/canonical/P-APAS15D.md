@@ -6,7 +6,9 @@ title: Finite-group complex matrix representations are diagonalizable; infinite 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Diagonalization
 relations: []
 review: draft
 solved: false

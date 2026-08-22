@@ -6,7 +6,8 @@ title: Whether $\mathbb{F}_9$ embeds in $\mathbb{F}_{27}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
 relations: []
 review: draft
 solved: false

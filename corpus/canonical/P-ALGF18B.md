@@ -6,7 +6,9 @@ title: Matrix of $p$-power order in characteristic $p$ is unipotent; $g^p = I$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Finite Fields
 relations: []
 review: draft
 solved: false

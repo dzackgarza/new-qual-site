@@ -6,7 +6,9 @@ title: Localization of a UFD at a multiplicative system is a UFD
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Localization
 relations: []
 review: draft
 solved: false

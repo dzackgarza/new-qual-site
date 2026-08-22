@@ -6,7 +6,9 @@ title: Finite-dimensionality of $k[x,y]/I$ for a two-point variety; must $\dim<1
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

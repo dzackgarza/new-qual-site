@@ -6,7 +6,9 @@ title: Induced Specht product for $S_5$; dimensions of $\operatorname{End}_{S_5}
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

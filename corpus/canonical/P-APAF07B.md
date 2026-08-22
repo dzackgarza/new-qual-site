@@ -6,7 +6,9 @@ title: Schur Decomposition Theorem
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Diagonalization
 relations: []
 review: draft
 solved: false

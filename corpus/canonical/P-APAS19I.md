@@ -6,7 +6,8 @@ title: Center of a finite-dimensional $\mathbb{C}$-algebra acts by scalars
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

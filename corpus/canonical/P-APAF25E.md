@@ -6,7 +6,9 @@ title: Normal algebra elements are $X+iY$ with commuting selfadjoint parts
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

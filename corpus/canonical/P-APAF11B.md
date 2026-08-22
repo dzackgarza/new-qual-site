@@ -6,7 +6,10 @@ title: Character table of the nonabelian group of order $21$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Group Theory
 relations: []
 review: draft
 solved: false

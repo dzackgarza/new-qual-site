@@ -6,7 +6,8 @@ title: $K \otimes_F F[x]/(f)$; tensor product of simple extensions in characteri
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Extensions
 relations: []
 review: draft
 solved: false

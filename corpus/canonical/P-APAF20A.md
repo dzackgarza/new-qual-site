@@ -6,7 +6,9 @@ title: Jordan form of a map on $\mathbb{C}^{20}$ with $\phi^3=\phi^2$ and eight-
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

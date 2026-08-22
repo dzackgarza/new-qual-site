@@ -6,7 +6,8 @@ title: Hilbert series and polynomial generation of $\mathbb{R}[x,y]^G$ for a cyc
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

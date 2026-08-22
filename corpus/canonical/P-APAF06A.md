@@ -6,7 +6,8 @@ title: Eigenpair of algebraic and geometric multiplicity one yields a complement
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Unique prime ideal equivalent to units-or-nilpotents and $A/\mathfrak{n}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

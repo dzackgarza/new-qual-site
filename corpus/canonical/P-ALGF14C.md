@@ -6,7 +6,9 @@ title: Product of primes equals zero in a Noetherian ring
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

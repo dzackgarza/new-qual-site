@@ -6,7 +6,9 @@ title: Hom of torsion modules; torsion when f.g., counterexample if not
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Integral Domains
 relations: []
 review: draft
 solved: false

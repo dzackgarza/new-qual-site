@@ -6,7 +6,9 @@ title: Non-Sylow $p$-subgroup has $p$ dividing $|N_G(P)/P|$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

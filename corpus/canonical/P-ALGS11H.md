@@ -6,7 +6,10 @@ title: Noetherian localizations at a cover imply $A$ is Noetherian
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Noetherian Rings
+  - Localization
 relations: []
 review: draft
 solved: false

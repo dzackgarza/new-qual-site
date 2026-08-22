@@ -6,7 +6,9 @@ title: Schur decomposition; Hermitian vs transpose quadratic forms determine a m
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

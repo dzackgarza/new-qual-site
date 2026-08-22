@@ -6,7 +6,8 @@ title: Flat implies torsion-free; converse for f.g.\ modules over a PID
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 solved: false

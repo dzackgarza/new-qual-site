@@ -6,7 +6,8 @@ title: Galois group of the splitting field of $x^p - 2x - 1$ over $\mathbb{F}_p$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
 relations: []
 review: draft
 solved: false

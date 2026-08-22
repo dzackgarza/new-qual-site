@@ -6,7 +6,9 @@ title: Positive definiteness of $\phi-t\psi$ via the smallest eigenvalue of $\ps
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Positive Definite Matrices
+  - Hermitian Matrices
 relations: []
 review: draft
 solved: false

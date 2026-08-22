@@ -6,7 +6,9 @@ title: Induced Specht module from $S_3\times S_3\times S_1$ in $S_7$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

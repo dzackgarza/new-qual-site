@@ -6,7 +6,8 @@ title: Minimal generators for a kernel in $F_2$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

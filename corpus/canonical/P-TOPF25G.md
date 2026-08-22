@@ -6,7 +6,9 @@ title: $\mathbb{CP}^2$ not homotopy equivalent to $S^2 \vee S^4$; nontriviality 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Higher Homotopy Groups
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

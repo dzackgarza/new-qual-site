@@ -6,7 +6,9 @@ title: 'Polynomials with $p_n(0)=1$, $p_n''(0)=0$, pointwise tending to $0$ off 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Polynomials
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

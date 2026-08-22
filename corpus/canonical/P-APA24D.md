@@ -6,7 +6,9 @@ title: Induced matrix $1$-norm equals the maximum absolute column sum
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

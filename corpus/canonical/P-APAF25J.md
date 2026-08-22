@@ -6,7 +6,9 @@ title: Isomorphic finite subgroups of $\mathrm{GL}_2(\mathbb{C})$ with different
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
+  - Representation Theory
 relations: []
 review: draft
 solved: false

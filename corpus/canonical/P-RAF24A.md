@@ -6,7 +6,8 @@ title: Rationally invariant measurable set has measure zero or conull complement
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Measure Theory
 relations: []
 review: draft
 solved: false

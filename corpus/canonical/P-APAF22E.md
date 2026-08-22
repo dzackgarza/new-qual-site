@@ -6,7 +6,8 @@ title: Schur product $s_{2,1,1} s_{2,2,1}$ as a linear combination of Schur func
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

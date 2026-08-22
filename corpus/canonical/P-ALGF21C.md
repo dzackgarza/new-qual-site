@@ -6,7 +6,8 @@ title: $\sqrt[3]{2}$ not in a cyclotomic field $\mathbb{Q}(\zeta_n)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

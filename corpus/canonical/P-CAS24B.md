@@ -6,7 +6,8 @@ title: Sublevel set of a nowhere-zero entire function has unbounded components
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Entire Functions
 relations: []
 review: draft
 solved: false

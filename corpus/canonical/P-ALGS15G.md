@@ -6,7 +6,10 @@ title: Jordan and rational forms of the all-ones $3\times 3$ matrix
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
+  - Rational Canonical Form
 relations: []
 review: draft
 solved: false

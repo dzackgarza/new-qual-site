@@ -6,7 +6,8 @@ title: Proper subgroups of nilpotent groups are properly contained in their norm
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

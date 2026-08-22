@@ -6,7 +6,9 @@ title: Bound and value at $1/3$ imply no zeros in $|z|<1/7$
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Holomorphic Functions
+  - Zeros
 relations: []
 review: draft
 solved: false

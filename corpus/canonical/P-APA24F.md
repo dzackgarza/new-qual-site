@@ -6,7 +6,8 @@ title: A unitary representation is irreducible iff every nonzero vector is cycli
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

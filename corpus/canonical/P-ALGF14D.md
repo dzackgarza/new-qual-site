@@ -6,7 +6,9 @@ title: Irreducibility and primality of $2$ in $\mathbb{Z}[\sqrt{10}]$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Integral Domains
 relations: []
 review: draft
 solved: false

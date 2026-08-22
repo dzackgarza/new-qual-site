@@ -6,7 +6,8 @@ title: Hilbert series and algebra generators for invariants of a cyclic order-$4
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,10 @@ title: Character and irreducibility of the standard representation of $S_n$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

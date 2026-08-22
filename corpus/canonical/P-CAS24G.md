@@ -6,7 +6,9 @@ title: Polynomial of an isolated singularity preserves singularity type
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Poles
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

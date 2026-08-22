@@ -6,7 +6,9 @@ title: Positive-definiteness of $B^{-1}-A^{-1}$ when $A-B$ is positive definite
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Positive Definite Matrices
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

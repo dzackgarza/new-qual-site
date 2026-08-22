@@ -6,7 +6,10 @@ title: 'Fundamental group and $\pi_2$ of $\mathbb{RP}^3 \# \mathbb{RP}^3$'
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Covering Spaces
+  - Fundamental Group
+  - Higher Homotopy Groups
 relations: []
 review: draft
 solved: false

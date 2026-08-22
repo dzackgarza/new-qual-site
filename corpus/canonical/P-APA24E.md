@@ -6,7 +6,8 @@ title: A unital $*$-algebra is commutative iff every element is normal
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

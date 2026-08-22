@@ -6,7 +6,9 @@ title: Haar average of a unitary representation is projection onto invariants
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

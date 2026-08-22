@@ -6,7 +6,9 @@ title: Nilpotent matrices in $M_n(\mathbb{C})$ and similarity classes in $M_4(\m
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

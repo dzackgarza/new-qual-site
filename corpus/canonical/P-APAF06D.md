@@ -6,7 +6,8 @@ title: Finiteness and order of $\langle x,y\mid x^3=1,\,xyx^{-1}=y^n\rangle$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 solved: false

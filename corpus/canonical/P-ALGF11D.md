@@ -6,7 +6,9 @@ title: Nilpotence of a power series over a Noetherian ring
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Noetherian Rings
 relations: []
 review: draft
 solved: false

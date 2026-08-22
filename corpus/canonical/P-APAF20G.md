@@ -6,7 +6,8 @@ title: Eigenvalues of a compact-group representation have modulus one
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Frobenius-norm bound by eigenvalues forces normality
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
+  - Normal Operators
 relations: []
 review: draft
 solved: false

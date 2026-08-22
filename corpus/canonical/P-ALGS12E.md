@@ -6,7 +6,9 @@ title: Polynomials that force diagonalizability over an algebraically closed fie
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Diagonalization
 relations: []
 review: draft
 solved: false

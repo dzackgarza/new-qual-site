@@ -6,7 +6,8 @@ title: Number of commuting ordered pairs in $S_n$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Permutations
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Elementary symmetric polynomial in doubled variables, and a Schur coeffic
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

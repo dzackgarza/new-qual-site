@@ -6,7 +6,9 @@ title: Class-sum scalars $\omega_\alpha^\lambda$ and the transposition class in 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

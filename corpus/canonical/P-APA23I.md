@@ -6,7 +6,9 @@ title: Trace of exterior powers of a normal operator and characteristic polynomi
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Multilinear Algebra
 relations: []
 review: draft
 solved: false

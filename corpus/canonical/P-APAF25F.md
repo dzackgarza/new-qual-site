@@ -6,7 +6,9 @@ title: Character bound $|\chi(g)|\leq\dim V$ is sharp
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

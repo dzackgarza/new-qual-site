@@ -6,7 +6,9 @@ title: Long exact sequence of a mapping cone
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

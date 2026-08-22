@@ -6,7 +6,9 @@ title: Finitely generated projective or flat modules over a PID are free
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Projective Modules
 relations: []
 review: draft
 solved: false

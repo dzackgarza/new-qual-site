@@ -6,7 +6,8 @@ title: Homology of four mutually tangent unit 2-spheres
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 solved: false

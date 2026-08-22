@@ -6,7 +6,9 @@ title: Homology of $\mathbb{RP}^2 \times X$ with given $H_*(X)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
+  - Product Topology
 relations: []
 review: draft
 solved: false

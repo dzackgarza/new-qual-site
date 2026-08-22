@@ -6,7 +6,8 @@ title: Galois group of $x^6-3$ over $\mathbb{Q}$ is dihedral
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

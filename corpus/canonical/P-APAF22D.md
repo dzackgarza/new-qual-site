@@ -6,7 +6,9 @@ title: Specht modules in the permutation representation on triples in $\{1,\ldot
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

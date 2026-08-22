@@ -6,7 +6,9 @@ title: Gröbner basis for the ideal cut out by $x^2+y=-2$ and $2xy=y^2-2y$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

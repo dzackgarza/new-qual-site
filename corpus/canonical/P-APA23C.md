@@ -6,7 +6,9 @@ title: 'Modulus of a matrix: singular values and similarity of $|A|$ and $|A^H|$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Hermitian Matrices
 relations: []
 review: draft
 solved: false

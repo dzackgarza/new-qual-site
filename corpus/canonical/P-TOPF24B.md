@@ -6,7 +6,9 @@ title: Examples separating $\pi_2$ and $H_2$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Higher Homotopy Groups
+  - Homology
 relations: []
 review: draft
 solved: false

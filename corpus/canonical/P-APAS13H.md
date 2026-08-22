@@ -6,7 +6,9 @@ title: Induced trivial and alternating characters; Kronecker and outer products 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Maximal commutative subalgebras equal their centralizers; classify those 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Permutation representation on perfect matchings and a map onto $S^{(n,n)}
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

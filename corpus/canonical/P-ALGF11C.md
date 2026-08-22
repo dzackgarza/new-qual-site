@@ -6,7 +6,9 @@ title: Unit ideal generators give an injective map into a product of localizatio
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Localization
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Integral domain that is not a UFD; quotient of a UFD that is not a UFD
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

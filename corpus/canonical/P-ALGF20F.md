@@ -6,7 +6,9 @@ title: Localizing at generators of the unit ideal detects equality of modules
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Localization
 relations: []
 review: draft
 solved: false

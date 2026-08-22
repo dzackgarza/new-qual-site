@@ -6,7 +6,8 @@ title: Unique Sylow containing each $p$-subgroup; unique Sylow in $G/N$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Schur eigenvalues versus singular values; equality implies normality
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Normal Operators
 relations: []
 review: draft
 solved: false

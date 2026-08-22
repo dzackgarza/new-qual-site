@@ -6,7 +6,8 @@ title: Finitely generated module over a PID is flat iff torsion-free
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 solved: false

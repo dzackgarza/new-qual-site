@@ -6,7 +6,8 @@ title: Order-$3$ matrix group; homogeneous invariants; Hilbert series of $\mathb
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

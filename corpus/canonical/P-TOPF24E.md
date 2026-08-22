@@ -6,7 +6,9 @@ title: Commutators and maps of a one-holed torus
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Surfaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

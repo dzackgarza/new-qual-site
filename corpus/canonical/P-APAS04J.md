@@ -6,7 +6,8 @@ title: The prime ring of an integral domain is $\mathbb{Z}$ or $\mathbb{Z}_p$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Integral Domains
 relations: []
 review: draft
 solved: false

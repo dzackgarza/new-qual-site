@@ -6,7 +6,9 @@ title: Irreducible decomposition of homogeneous quadrics under $S_5$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

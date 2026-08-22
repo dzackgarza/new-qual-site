@@ -6,7 +6,9 @@ title: Group determinant factorization and the circulant determinant
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

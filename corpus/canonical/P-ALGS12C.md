@@ -6,7 +6,9 @@ title: Surjective endomorphisms of Noetherian rings are injective
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Noetherian Rings
 relations: []
 review: draft
 solved: false

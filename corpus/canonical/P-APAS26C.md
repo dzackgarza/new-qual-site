@@ -6,7 +6,9 @@ title: Maximal singular vectors of a $G$-map form a subrepresentation
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Singular Values
 relations: []
 review: draft
 solved: false

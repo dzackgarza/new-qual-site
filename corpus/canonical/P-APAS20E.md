@@ -6,7 +6,10 @@ title: Permutation representations of $S_7$ on $4$-subsets and ordered complemen
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Permutations
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

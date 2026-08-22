@@ -6,7 +6,10 @@ title: Jordan form of a companion-like $3\times 3$ matrix over $\mathbb{C}$ and 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
+  - Finite Fields
 relations: []
 review: draft
 solved: false

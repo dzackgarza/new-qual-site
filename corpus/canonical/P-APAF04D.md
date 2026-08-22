@@ -6,7 +6,9 @@ title: Twisting irreducible characters by a linear character; pointwise similari
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Entrywise $\ell^3$ decay of powers when all eigenvalues satisfy $|\lambda
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Norms
 relations: []
 review: draft
 solved: false

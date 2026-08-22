@@ -6,7 +6,8 @@ title: Schwarz–Pick type bound for positive real part on the disc
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
 relations: []
 review: draft
 solved: false

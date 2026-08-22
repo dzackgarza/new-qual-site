@@ -6,7 +6,8 @@ title: 'Entire function real on $\mathbb{R}$ and imaginary on $\operatorname{Re}
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

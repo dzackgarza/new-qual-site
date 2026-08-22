@@ -6,7 +6,9 @@ title: Irreducible factors of $x^{p^\ell} - x$ over $\mathbb{F}_p$; count of deg
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Polynomials
 relations: []
 review: draft
 solved: false

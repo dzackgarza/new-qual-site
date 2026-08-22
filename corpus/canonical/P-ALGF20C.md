@@ -6,7 +6,8 @@ title: Which of $\mathbb{Z}[2\sqrt{2}]$, $\mathbb{Z}[x,y]$, $\mathbb{Z}+x\mathbb
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Fundamental group of the 2-sphere minus ten points
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: No degree-1 map from lower to higher genus surface
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Surfaces
+  - Homology
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Inductions and Kronecker product of Specht modules of $S_5$, $S_7$, $S_8$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

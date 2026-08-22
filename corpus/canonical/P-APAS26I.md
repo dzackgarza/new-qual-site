@@ -6,7 +6,10 @@ title: Irreducible decomposition of the permutation representation of $S_n$; cha
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Permutations
+  - Character Theory
 relations: []
 review: draft
 solved: false

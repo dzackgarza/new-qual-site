@@ -6,7 +6,9 @@ title: Matrices near diagonalizable; orthonormal eigenbasis iff $A^HA=AA^H$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Diagonalization
+  - Normal Operators
 relations: []
 review: draft
 solved: false

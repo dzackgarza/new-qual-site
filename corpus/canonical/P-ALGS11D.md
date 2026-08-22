@@ -6,7 +6,8 @@ title: Subfields of the $7$th cyclotomic field
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

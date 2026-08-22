@@ -6,7 +6,9 @@ title: Jordan form from the rank sequence of a $10\times 10$ nilpotent matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

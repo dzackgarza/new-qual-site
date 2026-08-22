@@ -6,7 +6,9 @@ title: Characteristic Hall subgroup of odd order when Sylow $2$-subgroup is cycl
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

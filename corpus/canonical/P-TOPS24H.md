@@ -6,7 +6,8 @@ title: Closed 4-manifold homotopy equivalent to a suspension is a homology spher
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 solved: false

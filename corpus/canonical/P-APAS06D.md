@@ -6,7 +6,10 @@ title: Simple groups and subgroups of given index
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Permutations
+  - Classification
 relations: []
 review: draft
 solved: false

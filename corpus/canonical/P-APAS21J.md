@@ -6,7 +6,8 @@ title: Cayley graph of $B(n)$ and spectrum of its adjacency operator
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 solved: false

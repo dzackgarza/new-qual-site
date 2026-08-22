@@ -6,7 +6,8 @@ title: Compute $\operatorname{Ext}^1_{\mathbb{Z}}(\mathbb{Q} \oplus \mathbb{Z} \
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Invariant orthogonal complement implies an eigenvector of $A^H$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

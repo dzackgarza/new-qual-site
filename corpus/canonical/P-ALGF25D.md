@@ -6,7 +6,9 @@ title: Projective modules are flat
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Projective Modules
 relations: []
 review: draft
 solved: false

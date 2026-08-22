@@ -6,7 +6,9 @@ title: No simple group of order $120$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
 relations: []
 review: draft
 solved: false

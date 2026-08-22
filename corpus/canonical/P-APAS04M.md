@@ -6,7 +6,9 @@ title: Invariants of the order-four rotation; Molien series and Cohen–Macaulay
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

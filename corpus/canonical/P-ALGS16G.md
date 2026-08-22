@@ -6,7 +6,8 @@ title: Galois extension of $\mathbb{Q}$ with cyclic Galois group of order $4$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

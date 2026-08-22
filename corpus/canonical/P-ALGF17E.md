@@ -6,7 +6,9 @@ title: Companion-like matrix over $\mathbb{Q}(y)$ vs $\mathbb{F}_3(y)$; irreduci
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Field Extensions
 relations: []
 review: draft
 solved: false

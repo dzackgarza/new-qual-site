@@ -6,7 +6,9 @@ title: Diagonal similarity making a matrix norm close to the spectral radius
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

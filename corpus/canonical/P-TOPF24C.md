@@ -6,7 +6,9 @@ title: Presentation of $\pi_1$ of a mapping torus
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Fundamental Group
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

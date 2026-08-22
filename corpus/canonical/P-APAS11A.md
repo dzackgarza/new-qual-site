@@ -6,7 +6,9 @@ title: Schur's lemma converse, abelian simultaneous diagonalization, and central
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Diagonalization
 relations: []
 review: draft
 solved: false

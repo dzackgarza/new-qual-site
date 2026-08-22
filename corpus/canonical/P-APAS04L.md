@@ -6,7 +6,9 @@ title: Radical identities for ideals and radical-membership computations
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

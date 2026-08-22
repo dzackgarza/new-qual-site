@@ -6,7 +6,8 @@ title: Induced representations and Frobenius reciprocity
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

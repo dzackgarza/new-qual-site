@@ -6,7 +6,8 @@ title: Compute $\operatorname{Tor}(\mathbb{Z} \oplus \mathbb{Z}_4, \mathbb{Z}_6 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 solved: false

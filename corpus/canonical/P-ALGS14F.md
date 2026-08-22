@@ -6,7 +6,9 @@ title: Base change of $F[x]/(f)$ and $E \otimes_F E$ for finite Galois $E/F$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Galois Theory
 relations: []
 review: draft
 solved: false

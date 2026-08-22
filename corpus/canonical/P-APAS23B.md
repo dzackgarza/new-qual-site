@@ -6,7 +6,8 @@ title: Real eigenvalues of Hermitian matrices; Courant–Fischer; Rayleigh extre
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
 relations: []
 review: draft
 solved: false

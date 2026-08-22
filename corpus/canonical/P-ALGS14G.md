@@ -6,7 +6,8 @@ title: Galois group $S_3$ and splitting fields of irreducible cubics
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

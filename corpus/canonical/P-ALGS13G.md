@@ -6,7 +6,8 @@ title: Finite separable degrees are $p$-powers when all finite degrees are divis
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Extensions
 relations: []
 review: draft
 solved: false

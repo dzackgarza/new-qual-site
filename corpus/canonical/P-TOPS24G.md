@@ -6,7 +6,8 @@ title: Second homotopy group of a circle with 2-cells attached
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Higher Homotopy Groups
 relations: []
 review: draft
 solved: false

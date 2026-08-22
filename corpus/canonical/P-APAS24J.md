@@ -6,7 +6,8 @@ title: Hilbert series of invariants under diagonal $\pm 1$ matrices
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

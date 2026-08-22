@@ -6,7 +6,9 @@ title: Jordan form of a map from two partially known matrix representations
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Finite-dimensionality of $\mathbb{C}[x,y]/I$ when $\mathbf{V}(I)$ is a po
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

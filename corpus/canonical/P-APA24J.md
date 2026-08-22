@@ -6,7 +6,8 @@ title: Generators of the invariant ring for a given subgroup of $\operatorname{G
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

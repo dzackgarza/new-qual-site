@@ -6,7 +6,9 @@ title: Hermitian–skew Hermitian splitting and eigenvalue bounds for real and i
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Norms
 relations: []
 review: draft
 solved: false

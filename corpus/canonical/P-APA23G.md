@@ -6,7 +6,8 @@ title: Indecomposable modules for $C_4 \times C_3 \times C_2$ over $\mathbb{F}_3
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

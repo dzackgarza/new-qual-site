@@ -6,7 +6,8 @@ title: $A \otimes_{\mathbb{Z}} B$ is the coproduct in commutative unital rings
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Gröbner basis for the ideal cut out by $x^2+2y^2=2$ and $x^2-xy+y^2=1$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

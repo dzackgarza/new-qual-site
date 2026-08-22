@@ -6,7 +6,9 @@ title: Eigenvalues and eigenspaces of the $3$-cube adjacency operator
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Representation Theory
 relations: []
 review: draft
 solved: false

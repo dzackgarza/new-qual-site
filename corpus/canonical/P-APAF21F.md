@@ -6,7 +6,9 @@ title: Are indecomposable $\mathbb{Z}$-modules over $\mathbb{C}$ irreducible?
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Modules
 relations: []
 review: draft
 solved: false

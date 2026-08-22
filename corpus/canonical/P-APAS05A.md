@@ -6,7 +6,9 @@ title: Skew part map $T(X)=\frac12(X-X^T)$ on $M_n(\mathbb{R})$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Linear Transformations
 relations: []
 review: draft
 solved: false

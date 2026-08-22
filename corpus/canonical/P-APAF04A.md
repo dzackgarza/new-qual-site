@@ -6,7 +6,9 @@ title: State and prove the Cayley–Hamilton theorem
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Minimal and Characteristic Polynomials
 relations: []
 review: draft
 solved: false

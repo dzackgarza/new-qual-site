@@ -6,7 +6,8 @@ title: Conjugacy class size is at most the index of the center
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 solved: false

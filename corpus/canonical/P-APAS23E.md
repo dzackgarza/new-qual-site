@@ -6,7 +6,10 @@ title: Isomorphism $D_6 \cong S_3 \times C_2$ and the character table of $D_6$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Group Theory
 relations: []
 review: draft
 solved: false

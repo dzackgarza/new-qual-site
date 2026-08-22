@@ -6,7 +6,10 @@ title: No simple group of order $pq\ell$ for distinct primes $p < q < \ell$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

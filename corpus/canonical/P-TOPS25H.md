@@ -6,7 +6,8 @@ title: $\pi_3$ of the Poincaré homology sphere wedged with $S^3$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Higher Homotopy Groups
 relations: []
 review: draft
 solved: false

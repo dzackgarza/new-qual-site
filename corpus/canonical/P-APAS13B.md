@@ -6,7 +6,8 @@ title: Unique Hermitian splitting $A=S+iT$ and eigenvalue real/imaginary bounds
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: 'Nullstellensatz: statement, radical membership, and radicals of principa
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

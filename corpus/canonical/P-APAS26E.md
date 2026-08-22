@@ -6,7 +6,8 @@ title: A faithful state yields a faithful tracial state
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

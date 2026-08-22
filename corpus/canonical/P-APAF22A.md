@@ -6,7 +6,9 @@ title: Jordan form of a $10\times 10$ map with a partial upper-triangular matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

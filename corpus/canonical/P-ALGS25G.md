@@ -6,7 +6,9 @@ title: Fields where every proper finite extension has $p$-divisible degree
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Extensions
+  - Galois Theory
 relations: []
 review: draft
 solved: false

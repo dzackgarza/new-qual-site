@@ -6,7 +6,10 @@ title: Localization vanishing at generators of the unit ideal implies $M = 0$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Localization
+  - Modules
 relations: []
 review: draft
 solved: false

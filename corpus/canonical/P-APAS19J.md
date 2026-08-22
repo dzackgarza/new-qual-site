@@ -6,7 +6,8 @@ title: Multiplicity-free isotypic decomposition iff $\mathrm{End}_A V$ is commut
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

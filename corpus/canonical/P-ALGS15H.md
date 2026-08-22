@@ -6,7 +6,9 @@ title: Minimal polynomial via Galois orbit; Artin–Schreier normality and separ
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
+  - Field Extensions
 relations: []
 review: draft
 solved: false

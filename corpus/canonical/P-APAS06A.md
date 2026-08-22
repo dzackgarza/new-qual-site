@@ -6,7 +6,8 @@ title: Left–right eigenvector orthogonality and algebraic multiplicity
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

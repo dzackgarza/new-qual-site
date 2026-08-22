@@ -6,7 +6,9 @@ title: Homology of $X \times \mathbb{RP}^4$ with given $H_*(X)$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
+  - Product Topology
 relations: []
 review: draft
 solved: false

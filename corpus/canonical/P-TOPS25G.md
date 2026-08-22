@@ -6,7 +6,8 @@ title: No compact 4-manifold homotopy equivalent to $\Sigma\mathbb{RP}^3$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 solved: false

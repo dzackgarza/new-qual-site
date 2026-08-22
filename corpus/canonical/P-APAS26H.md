@@ -6,7 +6,9 @@ title: Convolution algebra of an odd-order group has a subalgebra not of subgrou
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Group Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,10 @@ title: Character table of $S_4$ and decomposition of $\mathbb{C}[X]$ for $2$-sub
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

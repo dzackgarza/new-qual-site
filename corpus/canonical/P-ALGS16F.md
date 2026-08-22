@@ -6,7 +6,8 @@ title: Solvability by radicals of $x^5 - 16x + 2 = 0$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

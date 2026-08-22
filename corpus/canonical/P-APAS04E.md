@@ -6,7 +6,9 @@ title: Induced trivial and Kronecker products of Specht modules in $S_6$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

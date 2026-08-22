@@ -6,7 +6,8 @@ title: Dimension formula for the sum of two subspaces
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Homotopy self-equivalences of $\mathbb{CP}^{2n}$ are orientation-preservi
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Cohomology
 relations: []
 review: draft
 solved: false

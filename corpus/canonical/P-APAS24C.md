@@ -6,7 +6,8 @@ title: Hermitian matrices are those with real quadratic forms $x^HAx$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
 relations: []
 review: draft
 solved: false

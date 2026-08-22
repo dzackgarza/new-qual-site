@@ -6,7 +6,8 @@ title: $p$-groups are nilpotent
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Averaged character formula $\frac{1}{|G|}\sum_h\chi(g_1hg_2h^{-1})=\frac{
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

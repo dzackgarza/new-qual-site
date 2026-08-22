@@ -6,7 +6,8 @@ title: Vanishing Hermitian quadratic form forces $A=0$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
 relations: []
 review: draft
 solved: false

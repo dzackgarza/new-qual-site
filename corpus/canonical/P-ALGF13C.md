@@ -6,7 +6,9 @@ title: Ideals contain a product of primes; finitely many minimal primes
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Euler characteristic of $\mathbb{RP}^n$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

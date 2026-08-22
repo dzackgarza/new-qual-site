@@ -6,7 +6,8 @@ title: 'Positive harmonic function as $e^u\sin v$ on a simply connected region'
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Harmonic Functions
 relations: []
 review: draft
 solved: false

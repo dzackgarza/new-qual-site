@@ -6,7 +6,9 @@ title: Unique subgroup of order the smallest prime divides is central
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Group Actions
 relations: []
 review: draft
 solved: false

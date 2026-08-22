@@ -6,7 +6,8 @@ title: Maximal abelian subextension as the fixed field of $[G,G]$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

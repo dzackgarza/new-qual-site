@@ -6,7 +6,9 @@ title: Gröbner basis, elimination, and solutions for a planar ideal
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

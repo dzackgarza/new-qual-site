@@ -6,7 +6,9 @@ title: Exactly two groups of order $3 \cdot 5 \cdot 13$ up to isomorphism
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
 relations: []
 review: draft
 solved: false

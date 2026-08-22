@@ -6,7 +6,9 @@ title: Hom of finitely generated projective modules is projective
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Projective Modules
 relations: []
 review: draft
 solved: false

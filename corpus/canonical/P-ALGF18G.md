@@ -6,7 +6,9 @@ title: Galois group of irreducible of prime degree; Sylow $p$ normalizer
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

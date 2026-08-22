@@ -6,7 +6,9 @@ title: Jordan form of a $4\times 4$ unipotent upper-triangular matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

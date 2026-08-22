@@ -6,7 +6,10 @@ title: Unique positive semidefinite square root; orthogonal projection via $\wid
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Positive Definite Matrices
+  - Singular Values
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

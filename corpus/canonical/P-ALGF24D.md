@@ -6,7 +6,9 @@ title: Flat module criterion via $I \otimes_A M \simeq IM$ and relations
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Matrix $p$- and Frobenius norms; diagonal $p$-norm; two explicit $\|B\|_2
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
 relations: []
 review: draft
 solved: false

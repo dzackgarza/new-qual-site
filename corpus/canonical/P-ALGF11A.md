@@ -6,7 +6,9 @@ title: Simple group of order $60$ with a subgroup of order $12$ is $A_5$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
+  - Classification
 relations: []
 review: draft
 solved: false

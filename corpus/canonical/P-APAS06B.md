@@ -6,7 +6,9 @@ title: Polar factorization $A=UH$ for tall $A\in M_{m,n}$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

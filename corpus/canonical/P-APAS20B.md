@@ -6,7 +6,9 @@ title: Singular values and Frobenius perturbation bound $\dim\ker(\phi+\psi)$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

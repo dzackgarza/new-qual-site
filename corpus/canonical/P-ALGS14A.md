@@ -6,7 +6,8 @@ title: Proper subgroups of finite $p$-groups are properly contained in their nor
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

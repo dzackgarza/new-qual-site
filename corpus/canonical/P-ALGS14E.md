@@ -6,7 +6,9 @@ title: Abelian groups injective as $\mathbb{Z}$-modules iff divisible
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Abelian Groups
 relations: []
 review: draft
 solved: false

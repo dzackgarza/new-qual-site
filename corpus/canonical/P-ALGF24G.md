@@ -6,7 +6,9 @@ title: Scaled roots in a characteristic-zero splitting field
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

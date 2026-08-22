@@ -6,7 +6,8 @@ title: Nonzero singular values of a one-hot column matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
 relations: []
 review: draft
 solved: false

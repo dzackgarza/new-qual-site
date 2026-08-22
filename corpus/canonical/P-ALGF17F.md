@@ -6,7 +6,8 @@ title: $\mathbb{Q}(\sqrt[3]{2})$ not contained in a tower of degree-$3$ Galois e
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

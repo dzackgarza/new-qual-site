@@ -6,7 +6,8 @@ title: Real linear independence over $\mathbb{C}$; real eigenvalues of real matr
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

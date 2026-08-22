@@ -6,7 +6,9 @@ title: Minimal normal subgroup of a finite solvable group; Hall subgroup of orde
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

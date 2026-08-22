@@ -6,7 +6,9 @@ title: Groups of order $117$ with an element of order $9$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Cohomology ring of $\mathbb{CP}^n$ and orientation under homotopy equival
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Cohomology
 relations: []
 review: draft
 solved: false

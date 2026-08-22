@@ -6,7 +6,8 @@ title: Subordinate norms; $\|xy^H\|$; Frobenius bound; Frobenius norm of $xy^H$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
 relations: []
 review: draft
 solved: false

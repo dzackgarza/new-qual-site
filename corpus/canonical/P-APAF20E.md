@@ -6,7 +6,9 @@ title: Irreducible decomposition of square-free cubic monomials under $S_6$, and
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

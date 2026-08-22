@@ -6,7 +6,9 @@ title: Centralizer meet $\Omega$ and $p$ dividing $|\Omega|$ for $g^p=1$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
+  - Group Actions
 relations: []
 review: draft
 solved: false

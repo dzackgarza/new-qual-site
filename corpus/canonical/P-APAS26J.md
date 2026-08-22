@@ -6,7 +6,8 @@ title: Centralizer of $\mathcal{C}(H)$ in $\mathcal{C}(G)$ via branching multipl
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

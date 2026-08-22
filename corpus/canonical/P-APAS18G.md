@@ -6,7 +6,8 @@ title: Linear independence of standard monomials for a Gröbner basis
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
 relations: []
 review: draft
 solved: false

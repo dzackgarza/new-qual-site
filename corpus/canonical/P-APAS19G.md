@@ -6,7 +6,8 @@ title: Real irreducible endomorphisms need not be scalar; complexification
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

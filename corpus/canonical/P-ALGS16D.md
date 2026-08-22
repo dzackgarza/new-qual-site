@@ -6,7 +6,9 @@ title: Noetherianity of $K[x,y]$ and a non-Noetherian subring
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Noetherian Rings
+  - Polynomials
 relations: []
 review: draft
 solved: false

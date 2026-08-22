@@ -6,7 +6,9 @@ title: Same character need not imply isomorphic representations of $\mathrm{GL}_
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

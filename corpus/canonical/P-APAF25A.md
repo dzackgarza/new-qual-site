@@ -6,7 +6,9 @@ title: Unitary form placing two distinct eigenvalues in a $2\times 2$ block
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

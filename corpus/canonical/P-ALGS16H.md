@@ -6,7 +6,9 @@ title: Ideal $(2,\sqrt{-6})$ in $\mathbb{Z}[\sqrt{-6}]$ is flat but not free
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Modules
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Module vanishing and flatness checked at maximal ideals
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Modules
 relations: []
 review: draft
 solved: false

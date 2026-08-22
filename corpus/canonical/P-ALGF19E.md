@@ -6,7 +6,9 @@ title: Ideal $\langle 3, 1+\sqrt{-5}\rangle$ in $\mathbb{Z}[\sqrt{-5}]$ is proje
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Modules
 relations: []
 review: draft
 solved: false

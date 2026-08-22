@@ -6,7 +6,8 @@ title: Rank inequalities for powers when $\operatorname{rank} A^2\leq\operatorna
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Zorn's lemma; maximal ideals missing a multiplicative set; primeness
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

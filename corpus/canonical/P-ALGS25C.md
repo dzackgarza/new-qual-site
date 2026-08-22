@@ -6,7 +6,8 @@ title: Annihilator and invariant factors of $F[x]/\langle x^n\rangle \otimes_F F
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 solved: false

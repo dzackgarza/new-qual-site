@@ -6,7 +6,10 @@ title: Character table of $S_3 \times S_2$ and restriction of $S^{(2,2,1)}$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Jordan form of a $7\times 7$ matrix with $A^5 = 2A^4 + A^3$, rank $5$, tr
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

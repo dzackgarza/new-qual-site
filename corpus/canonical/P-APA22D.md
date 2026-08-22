@@ -6,7 +6,9 @@ title: One-dimensional irreps and dimensions for a group of order $16$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

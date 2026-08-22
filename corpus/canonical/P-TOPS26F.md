@@ -6,7 +6,9 @@ title: $S^2 \vee S^1 \vee S^1$ not homotopy equivalent to $S^1 \times S^1$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

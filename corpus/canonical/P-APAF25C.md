@@ -6,7 +6,9 @@ title: Jordan forms with eigenvalues $-2,-3$ and $\operatorname{rank}((A+2I)^3)=
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Jordan Canonical Form
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

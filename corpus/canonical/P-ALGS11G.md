@@ -6,7 +6,9 @@ title: Torsion, free, and torsionfree modules over an integral domain
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Integral Domains
 relations: []
 review: draft
 solved: false

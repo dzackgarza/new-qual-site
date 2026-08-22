@@ -6,7 +6,8 @@ title: Compatible vector norm and eigenvalue bound by a consistent matrix norm
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
 relations: []
 review: draft
 solved: false

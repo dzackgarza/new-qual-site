@@ -6,7 +6,9 @@ title: Irreducibility of $x^p - x + 1$ over $\mathbb{F}_p$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Finite Fields
+  - Polynomials
 relations: []
 review: draft
 solved: false

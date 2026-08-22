@@ -6,7 +6,8 @@ title: Flat modules over domains are torsionfree; flat f.g. modules over a PID
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 solved: false

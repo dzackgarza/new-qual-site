@@ -6,7 +6,8 @@ title: Scalar products $\langle e_1^n,e_1^n\rangle$ and $\langle h_3 p_6,s_{5,4}
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

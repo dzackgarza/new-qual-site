@@ -6,7 +6,9 @@ title: Groups of order $2^n \cdot 11$ are solvable
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
 relations: []
 review: draft
 solved: false

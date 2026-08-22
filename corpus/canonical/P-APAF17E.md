@@ -6,7 +6,9 @@ title: Character table of the dihedral group $D_6$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

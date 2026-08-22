@@ -6,7 +6,9 @@ title: Non-abelian group of order $39$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
 relations: []
 review: draft
 solved: false

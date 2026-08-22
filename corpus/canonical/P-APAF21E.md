@@ -6,7 +6,9 @@ title: Central group elements act by scalars on an irreducible representation
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

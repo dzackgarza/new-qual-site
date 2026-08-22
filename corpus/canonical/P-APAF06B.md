@@ -6,7 +6,9 @@ title: Unique factorization $A=UH$ with orthonormal columns and Hermitian positi
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

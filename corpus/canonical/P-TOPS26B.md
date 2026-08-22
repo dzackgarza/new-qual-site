@@ -6,7 +6,9 @@ title: Finite 2-complex realizing a finitely presented group
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Fundamental Group
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

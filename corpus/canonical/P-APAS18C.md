@@ -6,7 +6,9 @@ title: Cauchy–Schwarz form $|x^*y|^2\leq(x^*Px)(y^*P^{-1}y)$ for positive defi
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Positive Definite Matrices
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

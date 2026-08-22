@@ -6,7 +6,9 @@ title: Units of $A[x]$ via units and nilradical of $A$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Polynomials
 relations: []
 review: draft
 solved: false

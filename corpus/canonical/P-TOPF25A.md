@@ -6,7 +6,9 @@ title: Homology of a torus sandwiched between two planes
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
+  - Surfaces
 relations: []
 review: draft
 solved: false

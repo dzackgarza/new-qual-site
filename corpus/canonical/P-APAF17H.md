@@ -6,7 +6,9 @@ title: Isomorphic subgroups of $\mathrm{GL}_2(\mathbb{C})$ need not have the sam
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
+  - Representation Theory
 relations: []
 review: draft
 solved: false

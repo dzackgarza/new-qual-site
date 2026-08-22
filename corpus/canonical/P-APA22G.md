@@ -6,7 +6,9 @@ title: Spectrum of the sum of all transpositions on the Specht module $S^{(4,2,1
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

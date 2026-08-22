@@ -6,7 +6,9 @@ title: Characteristic subgroups and self-normalizing Sylow normalizers
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
+  - Centralizers and Normalizers
 relations: []
 review: draft
 solved: false

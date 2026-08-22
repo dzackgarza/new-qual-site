@@ -6,7 +6,10 @@ title: Character table of $S_4$ via Murnaghan–Nakayama; restriction of $A^{(2,
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
+  - Character Theory
 relations: []
 review: draft
 solved: false

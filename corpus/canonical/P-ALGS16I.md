@@ -6,7 +6,9 @@ title: Local vanishing at maximals over $I$ implies $M = IM$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Modules
 relations: []
 review: draft
 solved: false

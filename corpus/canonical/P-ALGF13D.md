@@ -6,7 +6,8 @@ title: Injectivity of direct sums; projectivity after base change
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 solved: false

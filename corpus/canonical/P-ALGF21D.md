@@ -6,7 +6,8 @@ title: Finite extension of a perfect field is perfect below
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Extensions
 relations: []
 review: draft
 solved: false

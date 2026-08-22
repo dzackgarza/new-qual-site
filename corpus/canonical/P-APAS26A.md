@@ -6,7 +6,9 @@ title: Operator norm on $\operatorname{Hom}(V,W)$ is not induced by a scalar pro
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

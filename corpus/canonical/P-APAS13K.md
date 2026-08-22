@@ -6,7 +6,9 @@ title: "Parametric surface $x=u-2v$, $y=uv$, $z=v$: Gröbner basis and variety"
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

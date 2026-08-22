@@ -6,7 +6,8 @@ title: Extremal dimensions of $\ker(\phi^2)$ and $\ker((\phi-\mathrm{id})^2)$ fr
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

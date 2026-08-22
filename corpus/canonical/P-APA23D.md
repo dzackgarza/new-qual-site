@@ -6,7 +6,9 @@ title: Rayleigh quotient bounds; $p$-norm of a diagonal matrix; $\|aa^H\|_2$ and
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Norms
 relations: []
 review: draft
 solved: false

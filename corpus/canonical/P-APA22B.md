@@ -6,7 +6,10 @@ title: Unitary maps have singular values $1$; Frobenius and operator norms force
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Norms
+  - Diagonalization
 relations: []
 review: draft
 solved: false

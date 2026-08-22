@@ -6,7 +6,9 @@ title: Irreducible decomposition of cubic forms under $S_4$ and $\operatorname{E
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

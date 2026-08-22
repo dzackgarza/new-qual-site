@@ -6,7 +6,9 @@ title: Finite-index subgroups of finitely generated groups are finitely generate
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Covering Spaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Irreducibility of $f$ and vanishing of $\minpoly(\alpha_1+\alpha_2)$ at p
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Field Extensions
+  - Polynomials
 relations: []
 review: draft
 solved: false

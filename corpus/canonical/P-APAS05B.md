@@ -6,7 +6,9 @@ title: A triangular matrix is normal if and only if it is diagonal
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Normal Operators
+  - Diagonalization
 relations: []
 review: draft
 solved: false

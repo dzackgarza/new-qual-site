@@ -6,7 +6,9 @@ title: SVD; variational characterization of $\sigma_1$; field of values and nume
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

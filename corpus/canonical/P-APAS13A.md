@@ -6,7 +6,9 @@ title: Schur decomposition; Hermitian quadratic forms determine a matrix
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

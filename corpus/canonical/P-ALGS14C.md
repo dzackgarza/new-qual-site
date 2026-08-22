@@ -6,7 +6,9 @@ title: $\mathbb{Z}[i]$ is a PID; proper subrings with fraction field $\mathbb{Q}
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Integral Domains
 relations: []
 review: draft
 solved: false

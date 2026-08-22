@@ -6,7 +6,9 @@ title: Ideal $\langle 2, \sqrt{-10}\rangle$ in $\mathbb{Z}[\sqrt{-10}]$ is proje
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Modules
 relations: []
 review: draft
 solved: false

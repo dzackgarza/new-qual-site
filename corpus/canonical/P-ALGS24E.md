@@ -6,7 +6,9 @@ title: Nakayama and finitely generated projective modules over a local ring are 
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Projective Modules
 relations: []
 review: draft
 solved: false

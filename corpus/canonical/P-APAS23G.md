@@ -6,7 +6,9 @@ title: $S_5$ on ordered pairs; irreducible decomposition and $\dim \operatorname
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

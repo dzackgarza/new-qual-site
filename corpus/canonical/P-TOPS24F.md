@@ -6,7 +6,9 @@ title: Nonvanishing of $\pi_5(S^3 \vee S^3)$ via a 6-cell
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Higher Homotopy Groups
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

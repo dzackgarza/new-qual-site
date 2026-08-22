@@ -6,7 +6,9 @@ title: Absolute summability of Fourier coefficients controlled by $L^1$ and $L^p
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Analysis
+  - Integrals
 relations: []
 review: draft
 solved: false

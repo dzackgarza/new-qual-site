@@ -6,7 +6,9 @@ title: Charpoly equals minpoly iff rational form is a companion matrix
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Rational Canonical Form
 relations: []
 review: draft
 solved: false

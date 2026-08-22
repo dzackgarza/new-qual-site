@@ -6,7 +6,9 @@ title: Maximal non-finitely generated ideals are prime
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Ideals
 relations: []
 review: draft
 solved: false

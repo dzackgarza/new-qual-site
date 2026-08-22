@@ -6,7 +6,8 @@ title: Dual group of $C(d)$ and eigenvalues of its Cayley graph
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

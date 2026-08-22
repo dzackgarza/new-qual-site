@@ -6,7 +6,10 @@ title: "Quaternion group of order $8$: conjugacy classes and character table"
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Group Theory
 relations: []
 review: draft
 solved: false

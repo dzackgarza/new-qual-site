@@ -6,7 +6,10 @@ title: Reynolds operator with conjugate character on an irreducible complex $G$-
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

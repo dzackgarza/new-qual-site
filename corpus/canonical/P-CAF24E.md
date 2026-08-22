@@ -6,7 +6,9 @@ title: L1-bounded holomorphic functions on the disc have a locally uniform subse
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Normal Families
+  - Uniform Convergence
 relations: []
 review: draft
 solved: false

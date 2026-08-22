@@ -6,7 +6,8 @@ title: Compute $\operatorname{Ext}(\mathbb{Z} \oplus \mathbb{Z}_2 \oplus \mathbb
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 solved: false

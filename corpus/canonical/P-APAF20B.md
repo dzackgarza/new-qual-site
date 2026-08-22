@@ -6,7 +6,9 @@ title: Operator and Frobenius norms, eigenvalue bounds, and self-adjoint spectru
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
+  - Singular Values
 relations: []
 review: draft
 solved: false

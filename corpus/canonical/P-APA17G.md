@@ -6,7 +6,8 @@ title: Buchberger criterion and monomial basis for a lex Gröbner ideal in four 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
 relations: []
 review: draft
 solved: false

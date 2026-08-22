@@ -6,7 +6,9 @@ title: Unitary structure and character of $\mathcal{L}(V,W)$ as a $G$-representa
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

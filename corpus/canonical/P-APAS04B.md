@@ -6,7 +6,10 @@ title: Vanishing Hermitian forms; normality via norms and inner products
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Norms
+  - Normal Operators
 relations: []
 review: draft
 solved: false

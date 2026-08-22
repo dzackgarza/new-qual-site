@@ -6,7 +6,8 @@ title: Matrix $p$- and Frobenius norms; identities; rank-one norms; unitary inva
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Norms
 relations: []
 review: draft
 solved: false

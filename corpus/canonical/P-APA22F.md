@@ -6,7 +6,9 @@ title: Inner products of skew Schur functions and the number of SYT of shape $(5
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Symmetric Functions
+  - Representation Theory
 relations: []
 review: draft
 solved: false

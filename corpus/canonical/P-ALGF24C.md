@@ -6,7 +6,10 @@ title: $p$-elements in $\mathrm{GL}_n(\mathbb{F}_p)$ and conjugacy classes match
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Group Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

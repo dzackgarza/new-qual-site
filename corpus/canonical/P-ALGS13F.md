@@ -6,7 +6,9 @@ title: Splitting field of $x^p-2$ over $\mathbb{Q}$ and the Galois action
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
+  - Splitting Fields
 relations: []
 review: draft
 solved: false

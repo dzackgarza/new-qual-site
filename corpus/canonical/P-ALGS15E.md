@@ -6,7 +6,10 @@ title: Extension and contraction of ideals under localization
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Localization
+  - Ideals
 relations: []
 review: draft
 solved: false

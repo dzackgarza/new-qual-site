@@ -6,7 +6,8 @@ title: Matrix group presentation $\langle a,b \mid a^4=e,\, a^2=b^2,\, a^{-1}ba=
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: Irreducible representations of a direct product $G\times H$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

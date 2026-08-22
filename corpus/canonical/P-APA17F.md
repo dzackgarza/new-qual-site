@@ -6,7 +6,8 @@ title: 'Examples: real irreducible with non-scalar endomorphism; infinite indeco
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

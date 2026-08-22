@@ -6,7 +6,9 @@ title: Singular homology of $\mathbb{RP}^9 / \mathbb{RP}^4$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
+  - Cell Complexes
 relations: []
 review: draft
 solved: false

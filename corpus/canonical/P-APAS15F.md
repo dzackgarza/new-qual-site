@@ -6,7 +6,8 @@ title: Molien series for a cyclic subgroup of $\mathrm{GL}_3(\mathbb{C})$ and no
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

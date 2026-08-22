@@ -6,7 +6,8 @@ title: Center when $G/Z(G)$ is cyclic; center of a nonabelian group of order $p^
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 solved: false

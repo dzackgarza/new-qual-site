@@ -6,7 +6,8 @@ title: Ordered commutative ring is an integral domain; positive cone
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Integral Domains
 relations: []
 review: draft
 solved: false

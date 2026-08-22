@@ -6,7 +6,9 @@ title: Entire function with a rational Taylor coefficient at every real point is
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Power Series
+  - Entire Functions
 relations: []
 review: draft
 solved: false

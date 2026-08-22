@@ -6,7 +6,8 @@ title: Groups with $|\mathrm{Syl}_p(G)| = p+1$ and $|\mathrm{Syl}_q(G)| = q+1$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

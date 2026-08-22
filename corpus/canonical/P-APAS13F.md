@@ -6,7 +6,10 @@ title: Character $\chi^{(1,2^2)}$ on $S_5$; character table of $S_3\times S_2$; 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
+  - Character Theory
 relations: []
 review: draft
 solved: false

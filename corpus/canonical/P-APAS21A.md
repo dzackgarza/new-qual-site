@@ -6,7 +6,9 @@ title: Schur form; deflating a simple eigenpair and the angle between $x$ and $y
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

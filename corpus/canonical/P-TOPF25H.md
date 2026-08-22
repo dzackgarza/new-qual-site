@@ -6,7 +6,9 @@ title: No closed 3-manifold homotopy equivalent to $\Sigma\mathbb{RP}^2$
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
+  - Higher Homotopy Groups
 relations: []
 review: draft
 solved: false

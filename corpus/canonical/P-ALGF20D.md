@@ -6,7 +6,9 @@ title: Jordan form of the all-ones matrix over an algebraically closed field
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Jordan Canonical Form
 relations: []
 review: draft
 solved: false

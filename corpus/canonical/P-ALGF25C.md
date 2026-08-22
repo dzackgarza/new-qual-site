@@ -6,7 +6,9 @@ title: Lattices in $\mathbb{Q}^n$ and finite subgroups of $\mathrm{GL}_n(\mathbb
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Group Theory
 relations: []
 review: draft
 solved: false

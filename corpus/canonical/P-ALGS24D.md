@@ -6,7 +6,10 @@ title: Flat quotient $A/I$ implies $IJ = I \cap J$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
+  - Modules
+  - Ideals
 relations: []
 review: draft
 solved: false

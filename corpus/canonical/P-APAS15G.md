@@ -6,7 +6,9 @@ title: Reduced Gröbner bases and a linear basis for $\mathbb{C}[x,y]/I$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
+  - Ideals
 relations: []
 review: draft
 solved: false

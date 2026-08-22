@@ -6,7 +6,9 @@ title: Pointwise larger Euclidean action implies strictly larger singular values
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Singular Values
 relations: []
 review: draft
 solved: false

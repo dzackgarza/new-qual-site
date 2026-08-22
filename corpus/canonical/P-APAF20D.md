@@ -6,7 +6,9 @@ title: Missing character row for a group of order $168$ and equivariant maps of 
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

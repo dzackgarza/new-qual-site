@@ -6,7 +6,9 @@ title: $D[x]$ a PID forces $D$ to be a field
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Ideals
+  - Polynomials
 relations: []
 review: draft
 solved: false

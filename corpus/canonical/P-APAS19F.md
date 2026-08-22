@@ -6,7 +6,9 @@ title: Character table of $D_4$ and decomposition of $V\otimes V$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

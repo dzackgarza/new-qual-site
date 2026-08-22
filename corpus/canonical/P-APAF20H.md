@@ -6,7 +6,9 @@ title: Orthogonal complement of a $G$-invariant subspace is $G$-invariant
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Inner Product Spaces
 relations: []
 review: draft
 solved: false

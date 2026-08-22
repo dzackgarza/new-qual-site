@@ -6,7 +6,9 @@ title: Characters of complex representations of $S_n$ are real-valued
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Groups of order $p^2 q$ are solvable
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
 relations: []
 review: draft
 solved: false

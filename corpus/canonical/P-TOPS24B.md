@@ -6,7 +6,9 @@ title: Commensurability classes of closed connected surfaces
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Surfaces
+  - Fundamental Group
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Torsion elements of $\mathrm{GL}_n(\mathbb{Q})$ are diagonalizable and of
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Group Theory
 relations: []
 review: draft
 solved: false

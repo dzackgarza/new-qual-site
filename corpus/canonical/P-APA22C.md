@@ -6,7 +6,10 @@ title: Simultaneous orthogonal basis for two positive definite inner products
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Inner Product Spaces
+  - Diagonalization
 relations: []
 review: draft
 solved: false

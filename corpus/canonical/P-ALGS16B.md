@@ -6,7 +6,8 @@ title: Groups of order greater than $2$ have a nontrivial automorphism
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 solved: false

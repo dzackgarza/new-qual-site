@@ -6,7 +6,9 @@ title: 'Meromorphic function with poles in the disc and $|f-1|\le 1/|z|^2$ outsi
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Poles
+  - Holomorphic Functions
 relations: []
 review: draft
 solved: false

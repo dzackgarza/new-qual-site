@@ -6,7 +6,9 @@ title: Approximate rank-nullity for a nearly vanishing unit vector
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Norms
 relations: []
 review: draft
 solved: false

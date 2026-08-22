@@ -6,7 +6,8 @@ title: Sum of two simple bivectors is not a single exterior product
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Multilinear Algebra
 relations: []
 review: draft
 solved: false

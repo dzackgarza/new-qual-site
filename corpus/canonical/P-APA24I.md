@@ -6,7 +6,8 @@ title: Monomials outside leading terms of a Gröbner basis span the quotient
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Gröbner Bases
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Sum of $|\lambda_i|^2$ bounded by sum of $\sigma_i^2$; equality and norma
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Singular Values
+  - Normal Operators
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: $F[a]$ for companion of $x^3-1$; base change by algebraic closure
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Commutative Algebra
 relations: []
 review: draft
 solved: false

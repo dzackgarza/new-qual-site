@@ -6,7 +6,9 @@ title: Rayleigh min-characterization of $\lambda_n$; $p$-norm of a diagonal matr
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
+  - Norms
 relations: []
 review: draft
 solved: false

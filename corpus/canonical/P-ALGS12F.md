@@ -6,7 +6,8 @@ title: Galois group of $(x^3-2)(x^2-3)$ over $\mathbb{Q}$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Orthogonal projections onto $\operatorname{range}(C^H)$ and $\operatornam
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Inner Product Spaces
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

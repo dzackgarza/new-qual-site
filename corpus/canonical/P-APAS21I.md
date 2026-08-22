@@ -6,7 +6,9 @@ title: Characters of $B(n)$ take values in $\{\pm 1\}$; dual group of $B(n)$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Group Theory
 relations: []
 review: draft
 solved: false

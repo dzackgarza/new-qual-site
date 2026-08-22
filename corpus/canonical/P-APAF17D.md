@@ -6,7 +6,9 @@ title: Reynolds average of a matrix under an irreducible $\mathrm{GL}_3(\mathbb{
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Invariant Theory
 relations: []
 review: draft
 solved: false

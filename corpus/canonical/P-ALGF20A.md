@@ -6,7 +6,9 @@ title: Normal $N$ with $\gcd(m,\varphi(n))=1$; cyclic implies abelian; counterex
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Normal Subgroups
 relations: []
 review: draft
 solved: false

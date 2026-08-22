@@ -6,7 +6,10 @@ title: Groups of order $p^2 q^2$ with $p>q$ are solvable
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
+  - Sylow Theory
 relations: []
 review: draft
 solved: false

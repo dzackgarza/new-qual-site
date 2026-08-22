@@ -6,7 +6,9 @@ title: Submodules isomorphic to $A/\mathfrak{P}$ and existence when $A$ is Noeth
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
+  - Ideals
 relations: []
 review: draft
 solved: false

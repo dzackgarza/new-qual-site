@@ -6,7 +6,9 @@ title: Character values are real when $g$ is conjugate to $g^{-1}$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

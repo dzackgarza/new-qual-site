@@ -6,7 +6,10 @@ title: Murnaghan–Nakayama on $S_5$, Young-subgroup characters, and restriction
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
+  - Character Theory
 relations: []
 review: draft
 solved: false

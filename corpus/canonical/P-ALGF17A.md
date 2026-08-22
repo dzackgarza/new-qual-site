@@ -6,7 +6,9 @@ title: Groups of order $231$ as $\mathbb{Z}_{77} \rtimes \mathbb{Z}_3$; two isom
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
+  - Classification
 relations: []
 review: draft
 solved: false

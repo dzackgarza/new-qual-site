@@ -6,7 +6,8 @@ title: Haar integrals of $\operatorname{Tr} U$ and $|u_{11}|^2$ over $U(2)$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,9 @@ title: Permutation representation from cosets; fixed-point character on $S_n$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Permutations
 relations: []
 review: draft
 solved: false

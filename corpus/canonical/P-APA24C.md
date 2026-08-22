@@ -6,7 +6,8 @@ title: Eigenvalue interlacing for a Hermitian matrix plus a rank-$2$ update
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Hermitian Matrices
 relations: []
 review: draft
 solved: false

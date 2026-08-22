@@ -6,7 +6,10 @@ title: Twisting irreducible characters by linear characters, and conjugate-parti
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

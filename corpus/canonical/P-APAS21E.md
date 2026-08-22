@@ -6,7 +6,8 @@ title: $G$-invariant inner product implies complete reducibility
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

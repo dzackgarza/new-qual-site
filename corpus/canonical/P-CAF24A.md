@@ -6,7 +6,9 @@ title: Non-constant entire function takes positive real values at nonzero points
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Entire Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 solved: false

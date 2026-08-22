@@ -6,7 +6,10 @@ title: Character of the action on $k$-subsets; Frobenius image of $\chi^{(2,4)}$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
+  - Permutations
 relations: []
 review: draft
 solved: false

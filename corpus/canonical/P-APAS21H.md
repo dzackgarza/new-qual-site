@@ -6,7 +6,9 @@ title: Character table of $A_4$ and the Wedderburn decomposition of $\mathbb{C}[
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Character Theory
 relations: []
 review: draft
 solved: false

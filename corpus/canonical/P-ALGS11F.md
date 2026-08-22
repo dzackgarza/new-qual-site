@@ -6,7 +6,9 @@ title: Tensor product of linear maps and $\det(\phi \otimes \psi)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Multilinear Algebra
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

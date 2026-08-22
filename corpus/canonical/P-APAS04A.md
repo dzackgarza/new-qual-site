@@ -6,7 +6,9 @@ title: State and prove the Schur decomposition theorem
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
+  - Diagonalization
 relations: []
 review: draft
 solved: false

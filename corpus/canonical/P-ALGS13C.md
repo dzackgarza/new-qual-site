@@ -6,7 +6,8 @@ title: Elementary divisor $p^k$ yields a submodule isomorphic to $A/(p)$
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 solved: false

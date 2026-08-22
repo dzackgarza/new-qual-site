@@ -6,7 +6,8 @@ title: Schur's lemma for complex representations of finite groups
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
 relations: []
 review: draft
 solved: false

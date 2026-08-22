@@ -6,7 +6,9 @@ title: Conjugacy-class scalars $\omega_\alpha^\lambda$ in Specht modules; the ca
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false

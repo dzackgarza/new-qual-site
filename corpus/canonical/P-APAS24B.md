@@ -6,7 +6,8 @@ title: Gershgorin disks contain every eigenvalue
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 solved: false

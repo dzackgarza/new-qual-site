@@ -6,7 +6,9 @@ title: Induction from Young subgroups of $S_7$ and a Kronecker product on $S_4$
 classification:
   areas:
   - applied-algebra
-  topics: []
+  topics:
+  - Representation Theory
+  - Symmetric Functions
 relations: []
 review: draft
 solved: false
