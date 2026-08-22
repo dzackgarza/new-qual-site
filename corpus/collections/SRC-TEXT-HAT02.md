@@ -210,19 +210,6 @@ source:
     - E-HAT-2.3-2
     - E-HAT-2.3-3
     - E-HAT-2.3-4
-  - name: '2.A'
-    problems:
-    - E-HAT-2.A-1
-    - E-HAT-2.A-2
-    - E-HAT-2.A-3
-    - E-HAT-2.A-4
-    - E-HAT-2.A-5
-    - E-HAT-2.A-6
-    - E-HAT-2.A-7
-    - E-HAT-2.A-8
-    - E-HAT-2.A-9
-    - E-HAT-2.A-10
-    - E-HAT-2.A-11
   - name: '2.B'
     problems:
     - E-HAT-2.B-1
@@ -534,4 +521,6 @@ source:
 
 ::: remark
 The §2.2 list skips number 34: Hatcher's errata withdrew that exercise, so the current book has no statement to extract for it.
+
+Topic 2.A (Homology and Fundamental Group) carries no exercise set in the book, so this collection lists none for it; the exercise sets of chapter 2 are §2.1 (31), §2.2 (43, minus erratum 34), §2.3 (4), 2.B (11), and 2.C (9). The 2.C list here stops at number 6 — items 7–9 are not yet extracted.
 :::

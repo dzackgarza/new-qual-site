@@ -24,8 +24,7 @@ AGENTS.md still governs: read to decide; do not invent provenance; no semantic a
 
 - `provenance-href-contains-other-area` deleted (path-substring area guess).
 
-- Shared TOP packet provenance: `assets/attachments/UCSD_290_Qualifying_Exams.pdf` stays listed on all three collections that extract from it — `SRC-UCSD-TOP-290QUALS` (whole packet), `SRC-UCSD-TOP-SUMMER-2003` (§3, printed p. 394), `SRC-UCSD-TOP-FALL-2014` (§16, printed p. 407).
-  An href names the document a card's problems were read from; all three name the same packet.
+- Shared TOP packet provenance: `assets/attachments/UCSD_290_Qualifying_Exams.pdf` stays listed on all three collections that extract from it — `SRC-UCSD-TOP-290QUALS` (whole packet), `SRC-UCSD-TOP-SUMMER-2003` (§3, printed p. 394), `SRC-UCSD-TOP-FALL-2014` (§16, printed p. 407). An href names the document a card's problems were read from; all three name the same packet.
   The shared-provenance-hrefs finding on this path is the expected state, not drift; emptying the sittings was rejected 2026-08-23.
 
 - Prior TODO provenance mega-table was stale.
