@@ -203,7 +203,7 @@ v_{xx} + u_{yx} = 0 \implies v_{xx} + v_{yy} = 0 \\ \\
 [[E-UVNVV]]
 [[E-TVJFL]]
 [[E-3QAC4]]
-[[E-MTLQI]]
+[[E-SS1.EX-13]]
 
 ## Power Series
 ![](../../../../assets/assets/figures/2021-10-28_21-22-12.png)

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-17
 kind: exercise
-title: SS 3.2.15
+title: Image of a non-constant holomorphic map containing the unit disc
 classification:
   areas:
   - complex-analysis
@@ -11,15 +11,14 @@ classification:
   - Open Mapping Theorem
 relations: []
 review: draft
-solved: true
+solved: false
 ---
 
-::: {.exercise title="SS 3.2.15"}
-Suppose $f$ is continuous and nonzero on $\bar\DD$ and holomorphic on $\DD$.
-Show that if $\abs{f(z)} = \abs{z}$ for all $\abs{z} = 1$ then $f$ is constant.
-:::
+::: exercise
+17. Let $f$ be non-constant and holomorphic in an open set containing the closed unit disc.
 
-::: {.solution}
-If $f$ has no zeros in $\DD$, apply the MMP to $1/f$ to get $\abs{f} = 1$ on all of $\DD$.
-By Cauchy-Riemann (or the open mapping theorem), if $\abs{f}$ is constant, $f$ is constant.
+(a) Show that if $|f(z)| = 1$ whenever $|z| = 1$, then the image of $f$ contains the unit disc.
+[Hint: One must show that $f(z) = w_0$ has a root for every $w_0 \in \mathbb{D}$. To do this, it suffices to show that $f(z) = 0$ has a root (why?). Use the maximum modulus principle to conclude.]
+
+(b) If $|f(z)| \geq 1$ whenever $|z| = 1$ and there exists a point $z_0 \in \mathbb{D}$ such that $|f(z_0)| < 1$, then the image of $f$ contains the unit disc.
 :::

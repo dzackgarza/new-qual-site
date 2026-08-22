@@ -26,7 +26,6 @@ from .pandoc_batch import Citations, PandocFailure, PandocServer
 from .static_site import AssetCatalog, _asset_source
 
 WIKI_BATCH_SIZE = 8
-IMAGE_ELEMENT = cast(type[pf.Element], vars(pf)["Image"])
 
 
 def load_citations(root: Path) -> Citations:
@@ -304,7 +303,7 @@ def _page_anchors(page: WikiPage) -> tuple[set[str], dict[str, str]]:
             ids.add(element.identifier)
             by_text[_fragment_key(pf.stringify(element))] = element.identifier
         elif isinstance(element, pf.RawBlock):
-            found = re.search(r'id="([^"]+)"', cast(str, getattr(element, "text")))
+            found = re.search(r'id="([^"]+)"', element.text)
             if found:
                 ids.add(found.group(1))
         return element
@@ -461,6 +460,10 @@ def _canonical_target(
     if parsed.scheme or parsed.netloc or raw.startswith(("#", "data:", "mailto:")):
         return raw
     path = parsed.path
+    if path in card_routes:
+        # Exact card id: dotted ids like E-SS1.EX-19 are card ids, not paths,
+        # so stem-stripping below would truncate them at the last dot.
+        return card_routes[path].as_posix()
     card_key = Path(_normal_key(path)).stem
     if path.startswith("tag/"):
         card_key = Path(path).stem
@@ -492,8 +495,8 @@ def resolve_links(
     unresolved: list[str] = []
 
     def visit(page: WikiPage, element: pf.Element) -> pf.Element:
-        if isinstance(element, pf.Link) or isinstance(element, IMAGE_ELEMENT):
-            raw = cast(str, getattr(element, "url"))
+        if isinstance(element, (pf.Link, pf.Image)):
+            raw = element.url
             try:
                 target = _canonical_target(
                     page,
@@ -505,18 +508,30 @@ def resolve_links(
                     assets,
                     unresolved,
                 )
-                if isinstance(element, IMAGE_ELEMENT) and target.startswith(("wiki/", "tag/", "exam/", "guide/")):
+                if isinstance(element, pf.Image) and target.startswith(("wiki/", "tag/", "exam/", "guide/")):
                     element = pf.Link(
                         *cast(list[pf.Inline], element.content),
                         url=target,
-                        title=cast(str, getattr(element, "title")),
+                        title=element.title,
                     )
                 else:
-                    setattr(element, "url", target)
+                    element.url = target
             except MissingPageReference as exc:
-                errors.append(Diagnostic(DiagnosticCode.PAGE_REFERENCE_MISSING, str(page.source_path), str(exc)))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.PAGE_REFERENCE_MISSING,
+                        str(page.source_path),
+                        str(exc),
+                    )
+                )
             except AmbiguousPageReference as exc:
-                errors.append(Diagnostic(DiagnosticCode.PAGE_REFERENCE_AMBIGUOUS, str(page.source_path), str(exc)))
+                errors.append(
+                    Diagnostic(
+                        DiagnosticCode.PAGE_REFERENCE_AMBIGUOUS,
+                        str(page.source_path),
+                        str(exc),
+                    )
+                )
             except (OSError, ValueError) as exc:
                 errors.append(Diagnostic(DiagnosticCode.ASSET_UNRESOLVED, str(page.source_path), str(exc)))
         if hasattr(element, "content"):
@@ -546,7 +561,7 @@ def _link_paths(page: WikiPage) -> list[str]:
     def collect(element: pf.Element, doc: pf.Doc) -> pf.Element:
         del doc
         if isinstance(element, pf.Link):
-            path = urlsplit(cast(str, getattr(element, "url"))).path
+            path = urlsplit(element.url).path
             if path:
                 paths.append(path)
         return element
