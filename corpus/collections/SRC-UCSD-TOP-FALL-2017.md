@@ -13,7 +13,6 @@ relations:
 review: draft
 provenance:
 - assets/attachments/UCSD_290A_Final_Fall_2017.pdf
-- https://mathweb.ucsd.edu/~justin/290/290A-Fall2017-exam.pdf
 source:
   source_kind: homework
   area: topology

@@ -12,7 +12,6 @@ review: draft
 completion: incomplete
 provenance:
 - assets/attachments/UCSD_290_Qualifying_Exams.pdf
-- https://mathweb.ucsd.edu/~justin/290/290quals.pdf
 source:
   source_kind: compilation
   area: topology
