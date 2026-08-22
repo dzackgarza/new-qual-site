@@ -1,0 +1,19 @@
+---
+schema: qual/card@1
+id: E-SS8.EX-6
+kind: exercise
+title: "Give another proof of Lemma 1"
+classification:
+  areas:
+  - complex-analysis
+  topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
+relations: []
+review: draft
+solved: false
+---
+
+::: exercise
+6. Give another proof of Lemma 1.3 by showing directly that the Laplacian of $u \circ F$ is zero.
+
+[Hint: The real and imaginary parts of F satisfy the Cauchy-Riemann equations.]
+:::

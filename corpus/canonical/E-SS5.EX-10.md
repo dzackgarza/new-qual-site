@@ -1,0 +1,27 @@
+---
+schema: qual/card@1
+id: E-SS5.EX-10
+kind: exercise
+title: "Find the Hadamard products for:
+
+(a) 
+
+(b) cos πz"
+classification:
+  areas:
+  - complex-analysis
+  topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
+relations: []
+review: draft
+solved: false
+---
+
+::: exercise
+10. Find the Hadamard products for:
+
+(a) $e ^ { z } - 1$
+
+(b) cos πz.
+
+[Hint: The answers are $\scriptstyle e ^ { z / 2 } z \prod _ { n = 1 } ^ { \infty } ( 1 + z ^ { 2 } / 4 n ^ { 2 } \pi ^ { 2 } )$ and $\scriptstyle \prod _ { n = 0 } ^ { \infty } ( 1 - 4 z ^ { 2 } / ( 2 n + 1 ) ^ { 2 } )$ , respectively.]
+:::
