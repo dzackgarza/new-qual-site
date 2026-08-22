@@ -532,9 +532,6 @@ source:
     - E-HAT-4.L-5
 ---
 
-
 ::: remark
 The §2.2 list skips number 34: Hatcher's errata withdrew that exercise, so the current book has no statement to extract for it.
 :::
-
-
