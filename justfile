@@ -42,6 +42,10 @@ test:
 query sql: build
     @sqlite3 -box build/catalog.sqlite {{ quote(sql) }}
 
+# Report problem/exercise cards missing metadata (title, areas, topics, body)
+complete *args:
+    uv run python tools/card_completeness.py {{ args }}
+
 # Print n random unsolved problem/exercise cards (frontmatter solved: false)
 sample-unsolved n="5":
     @rg --files-with-matches '^solved: false$' corpus | shuf -n {{ n }}

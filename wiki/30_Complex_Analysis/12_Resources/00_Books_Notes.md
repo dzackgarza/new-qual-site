@@ -15,7 +15,7 @@ order: 0
 - Silverman, Richard.
   *Complex Analysis with Applications*
 
-- Stein and Shakarchi, *Complex Analysis* [Link to PDF](https://www.dropbox.com/s/exajprkvbqjxgx3/Complex%20Analysis%20%28Stein%20and%20Shakarchi%20II%29%20-%20Elias%20M.%20Stein%2C%20Rami%20Shakarchi.pdf?dl=0) #resources/textbooks
+- Stein and Shakarchi, *Complex Analysis* [@SS03] #resources/textbooks
 
 - Taylor, *Complex Analysis*
 

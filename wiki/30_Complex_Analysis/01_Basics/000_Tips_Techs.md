@@ -22,16 +22,16 @@ Some useful notation:
 Things to know well:
 
 - Estimates for derivatives, mean value theorem
-- \cref[CauchyTheorem]{Cauchy's Theorem}
-- \cref[CauchyIntegral]{Cauchy's Integral Formula}
-- \cref[CauchyInequality]{Cauchy's Inequality}
-- \cref[Morera]{Morera's Theorem}
-- \cref[Liouville]{Liouville's Theorem}
-- \cref[MaximumModulus]{Maximum Modulus Principle}
-- \cref[Rouche]{Rouché's Theorem}
-- \cref[SchwarzReflection]{The Schwarz Reflection Principle}
-- \cref[SchwarzLemma]{The Schwarz Lemma}
-- \cref[Casorati]{Casorati-Weierstrass Theorem}
+- [[30_Complex_Analysis/02_Cauchy/010_Cauchy_Theorem|Cauchy's Theorem]]
+- [[30_Complex_Analysis/02_Cauchy/012 Cauchy Integral Formula|Cauchy's Integral Formula]]
+- [[30_Complex_Analysis/02_Cauchy/012_Cauchy Inequality|Cauchy's Inequality]]
+- [[30_Complex_Analysis/02_Cauchy/050_Morera_Theorem|Morera's Theorem]]
+- [[30_Complex_Analysis/02_Cauchy/020 Liouville|Liouville's Theorem]]
+- [[30_Complex_Analysis/02_Cauchy/070 Maximum modulus principle|Maximum Modulus Principle]]
+- [[30_Complex_Analysis/03_Zeros_and_poles/030_Rouche|Rouché's Theorem]]
+- [[30_Complex_Analysis/02_Cauchy/030_Schwarz reflection principle|The Schwarz Reflection Principle]]
+- [[30_Complex_Analysis/02_Cauchy/030_Schwarz|The Schwarz Lemma]]
+- Casorati-Weierstrass Theorem (no page yet)
 - Properties of linear fractional transformations
 - Automorphisms of $\DD, \CC, \CP^1$.
 
