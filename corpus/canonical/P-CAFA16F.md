@@ -13,7 +13,8 @@ solved: false
 ---
 
 ::: problem
-For $k \geq 1$, let $a_k = 1 - 1/k^2$. For $n \geq 1$, define $f_n: \mathbb{D} \to \mathbb{D}$ by $f_n(z) = \prod_{k=1}^{n} \frac{a_k - z}{1 - a_k z}$.
+For $k \geq 1$, let $a_k = 1 - 1/k^2$.
+For $n \geq 1$, define $f_n: \mathbb{D} \to \mathbb{D}$ by $f_n(z) = \prod_{k=1}^{n} \frac{a_k - z}{1 - a_k z}$.
 
 (a) Prove that the sequence $\{f_n\}$ converges to an analytic function $f: \mathbb{D} \to \mathbb{D}$, uniformly on compact subsets of $\mathbb{D}$.
 

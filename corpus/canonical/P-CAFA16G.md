@@ -13,5 +13,7 @@ solved: false
 ---
 
 ::: problem
-Let $\gamma: [0, 1] \to \mathbb{C}$ be a path such that $\gamma(0) = 1$ and $\gamma(t) \neq 0$ for every $t \in [0, 1]$. Assume that $(f_t, D_t)_{0 \leq t \leq 1}$ is an analytic continuation of $f_0(z) = \log z$ along $\gamma$. Prove that $f_t$ is a branch of the logarithm for every $t \in [0, 1]$.
+Let $\gamma: [0, 1] \to \mathbb{C}$ be a path such that $\gamma(0) = 1$ and $\gamma(t) \neq 0$ for every $t \in [0, 1]$.
+Assume that $(f_t, D_t)_{0 \leq t \leq 1}$ is an analytic continuation of $f_0(z) = \log z$ along $\gamma$.
+Prove that $f_t$ is a branch of the logarithm for every $t \in [0, 1]$.
 :::
