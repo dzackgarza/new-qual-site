@@ -305,6 +305,15 @@ When a generation changes the file, commit the diff in the next commit.
 The queues are candidates to read — a measurement that disappears is not a
 disposition, so record the reason in `TODO.md`.
 
+# Running checks
+
+Most checks already run for you: the commit gate runs the immediate
+checks, and the push gate runs the full suite and refreshes `BACKLOG.md`
+first. Run `qualc check`, `pytest`, or any measurement tool by hand only
+sparingly — for instance while iterating on one known defect. Otherwise
+take work from the queues, do the semantic work on the cards, and commit
+as normal; the gates prove consistency.
+
 # Citation policy
 
 Never cite a source in prose. All citations must go through the bibliography:
