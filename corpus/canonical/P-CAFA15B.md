@@ -13,9 +13,11 @@ solved: false
 ---
 
 ::: problem
-Are the following statements true or false? Give a brief proof in each case.
+Are the following statements true or false?
+Give a brief proof in each case.
 
-(i) Let $f(z)$ be an entire function and let $u(z)$ and $v(z)$ be the real and imaginary parts of $f$. There is a non-constant function $f(z)$ such that $u^2 \leq v^2 + 2015$.
+(i) Let $f(z)$ be an entire function and let $u(z)$ and $v(z)$ be the real and imaginary parts of $f$.
+There is a non-constant function $f(z)$ such that $u^2 \leq v^2 + 2015$.
 
 (ii) If $f(z)$ is an entire function such that $g(z) = f(1/z)$ has a pole at zero, then $f$ is surjective.
 

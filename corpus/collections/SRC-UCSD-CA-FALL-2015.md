@@ -9,14 +9,20 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/Complex-Qual-F15.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CAFA15A
+  - P-CAFA15B
+  - P-CAFA15C
+  - P-CAFA15D
+  - P-CAFA15E
+  - P-CAFA15F
   date:
     kind: academic-term
     term: fall

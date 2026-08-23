@@ -13,7 +13,6 @@ solved: false
 ---
 
 ::: problem
-Suppose that $a_0, a_1, \ldots, a_n$ is a non-increasing sequence of real numbers, so that $a_0 \geq a_1 \geq a_2 \geq \cdots$. Show that the polynomial
-$$a_0 + a_1 z + a_2 z^2 + \cdots + a_n z^n$$
-has no roots inside the unit disc $|z| < 1$.
+Suppose that $a_0, a_1, \ldots, a_n$ is a non-increasing sequence of real numbers, so that $a_0 \geq a_1 \geq a_2 \geq \cdots$.
+Show that the polynomial $$a_0 + a_1 z + a_2 z^2 + \cdots + a_n z^n$$ has no roots inside the unit disc $|z| < 1$.
 :::

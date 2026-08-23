@@ -13,7 +13,8 @@ solved: false
 ---
 
 ::: problem
-Let $f(z)$ be a meromorphic function. A complex number $\omega$ is called a period of $f$ if $f(z + \omega) = f(z)$ for all $z$.
+Let $f(z)$ be a meromorphic function.
+A complex number $\omega$ is called a period of $f$ if $f(z + \omega) = f(z)$ for all $z$.
 
 (i) Show that if $\omega_1$ and $\omega_2$ are periods of $f$, then $n_1\omega_1 + n_2\omega_2$ is a period of $f$ for all integers $n_1$ and $n_2$.
 
