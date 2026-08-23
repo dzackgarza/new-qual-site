@@ -74,6 +74,25 @@ classifying a card under the right topics, writing a solution, relating two
 cards that depend on each other. A gap in a field is curation work, not a
 tooling problem.
 
+## Public audience and remarks
+
+The audience for this project is graduate students studying mathematics. The
+public-facing surface — essentially the body of every card — should contain
+only mathematical content: problem statements, definitions, theorems, solutions,
+hints, errata, notes on questions (e.g. noting that a question is starred), and
+contextual mathematical remarks (e.g. a remark explaining a reference to
+something else in the source).
+
+Internal process notes do NOT belong in `::: remark` blocks. Remarks render
+on the public site and are visible to readers. Do not discuss provenance,
+internal status, what is or isn't included, collection membership, missing
+sources, or any other curation concern in remarks. Those belong in git commit
+messages, repo-internal docs, or the vault.
+
+It is valid for a remark to note that a problem references something not
+included in the card (e.g. "this problem relies on Theorem X from the source")
+— that is mathematical context, not internal status.
+
 ## Areas
 
 The corpus stores four core qualifying-exam areas: algebra, real analysis,
@@ -155,6 +174,21 @@ is another source — an exam paper that is its own collection — lists that
 collection instead of copying its problem list. The sitting collection owns
 that sheet's provenance href.)
 
+## Provenance means external oracles
+
+Provenance is any externally authored source: textbooks, problem sheets, exams,
+external notes, or PDFs from other institutions. The entire point of provenance
+is to have an oracle that can be trusted more than self-authored content —
+something written by someone else, against which problem correctness can be
+checked and "blamed" if the problem is ill-defined or otherwise problematic.
+
+Provenance is NOT:
+- PDFs authored by the project maintainer
+- PDFs on the to-be-archived source repos being migrated into this repo (e.g.
+  MMAQ)
+- This project's wiki or any content derived from our own cards
+- Solution writeups, regardless of authorship
+
 On a **collection** card, `provenance:` is a YAML list of hrefs (`https://` or
 repo-relative paths). Each href is the document the problems were extracted
 from: the official paper, the homework sheet, or — for a textbook collection —
@@ -220,10 +254,55 @@ An empty collection `provenance` list means no qualifying href is listed yet.
 Leave it empty. Hunt in this repo, sibling clones, and distinctive problem text
 on the web; if the sitting document is not found, the list stays empty.
 
+## Problems may appear in multiple collections
+
+It is common and expected for a problem to appear in multiple collections. An
+exam may reuse a question from a textbook, the same problem may appear on
+different exams, or a compilation may contain overlapping problem sets. Each
+collection independently lists the problems it contains; the same problem card
+may be referenced by many collections. Do not merge, deduplicate, or suppress
+a problem card because it appears in multiple places — that is correct behavior,
+not redundancy.
+
 `::: remark` blocks render on the public site. They may discuss the mathematics
 or the contents of the card (for example which pages of a multi-institution
 scan this sitting occupies). They are not a dump of missing PDFs, wiki paths,
 or the state of the provenance field.
+
+# Data issues
+
+Completion of all solutions is a very low priority concern and is NOT a data
+issue. Solutions are authored content that will be filled in over time.
+
+Important data issues (roughly in order of urgency):
+1. Incorrect data — problem statements, titles, or classifications that are
+   simply wrong. This is the most urgent.
+2. Problem cards not appearing in any collection (orphaned problems)
+3. Collections containing no problems or an incomplete list of problems
+4. Missing or invalid provenance that prevents auditing
+
+Missing solutions, empty solution fields, and unsolved cards are authoring
+concerns, not data integrity problems.
+
+# Citation policy
+
+Never cite a source in prose. All citations must go through the bibliography:
+1. Find external oracles for bibtex information — never confabulate it from
+   memory.
+2. Integrate the entry into the bibliography.
+3. Cite using standard pandoc-crossref syntax.
+
+Never repeat the title, author, or year in prose. CSL controls and unifies the
+presentation of citations. Inline citation like `(Author, Year)` in prose is
+fabricating metadata; the bibliography handles this.
+
+# Card references to collections
+
+Do not have cards manually reference which collections they appear in. This is
+redundant: collections list their problems in `source.problems`, and backlinks
+are generated automatically to populate this information. Cards should not
+contain prose like "this problem appears in Exam X" or "see also collection Y"
+— the site renders this from collection relationships.
 
 # Solution status
 
