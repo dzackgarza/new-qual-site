@@ -13,5 +13,6 @@ solved: false
 ---
 
 ::: problem
-Let $\varphi: \mathbb{D} \setminus [0, 1) \to \mathbb{D}$ be a conformal bijection. Prove that $\varphi$ does not extend to a homeomorphism $\overline{\mathbb{D}} \to \overline{\mathbb{D}}$.
+Let $\varphi: \mathbb{D} \setminus [0, 1) \to \mathbb{D}$ be a conformal bijection.
+Prove that $\varphi$ does not extend to a homeomorphism $\overline{\mathbb{D}} \to \overline{\mathbb{D}}$.
 :::
