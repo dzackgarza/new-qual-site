@@ -35,7 +35,7 @@ from qualc.model import (
     split_front_matter,
 )
 from qualc.pandoc_batch import PandocServer
-from qualc.wiki import IMAGE_ELEMENT, WikiPage
+from qualc.wiki import WikiPage
 
 REPO = Path(__file__).resolve().parent.parent
 
@@ -139,7 +139,7 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
     referenced: set[str] = set(_manifest_ids(root))
 
     def visit(element: pf.Element) -> None:
-        if isinstance(element, pf.Link | IMAGE_ELEMENT):
+        if isinstance(element, (pf.Link, pf.Image)):
             head, _, tail = cast(pf.Link, element).url.partition("/")
             if head in {"tag", "exam"}:
                 referenced.add(Path(tail).stem)
