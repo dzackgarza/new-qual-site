@@ -13,6 +13,8 @@ solved: false
 ---
 
 ::: problem
-Assume that $f$ is an entire function. Let $M(r) = \sup_{|z|=r} |f(z)|$. Assume that the discrete sequence $\{a_n\}$ are zeros of $f$ and $f(0) = 1$. Show that
-$$k\log 2 \leq \log(M(2|a_k|)).$$
+Assume that $f$ is an entire function.
+Let $M(r) = \sup_{|z|=r} |f(z)|$.
+Assume that the discrete sequence $\{a_n\}$ are zeros of $f$ and $f(0) = 1$.
+Show that $$k\log 2 \leq \log(M(2|a_k|)).$$
 :::

@@ -13,5 +13,6 @@ solved: false
 ---
 
 ::: problem
-Suppose that $a_n \to \infty$ and $A_n$ are arbitrary complex numbers. Show that there exists an entire function $f(z)$ which satisfies $f(a_n) = A_n$.
+Suppose that $a_n \to \infty$ and $A_n$ are arbitrary complex numbers.
+Show that there exists an entire function $f(z)$ which satisfies $f(a_n) = A_n$.
 :::

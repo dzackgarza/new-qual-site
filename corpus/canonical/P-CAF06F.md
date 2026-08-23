@@ -13,5 +13,6 @@ solved: false
 ---
 
 ::: problem
-Let $f(z)$ be a holomorphic function in the disk $|z| < 2$. Show that $\sum_{n=1}^{\infty} \frac{f^{(n)}(z)}{n!}$ converges uniformly in any compact subset of the unit disk $|z| < 1$.
+Let $f(z)$ be a holomorphic function in the disk $|z| < 2$.
+Show that $\sum_{n=1}^{\infty} \frac{f^{(n)}(z)}{n!}$ converges uniformly in any compact subset of the unit disk $|z| < 1$.
 :::
