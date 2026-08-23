@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Suppose that $(\Omega, \mathcal{B}, \mu)$ is a measure space, $\Omega_n \in \mathcal{B}$ with $\Omega_n \uparrow \Omega$ and $\mu(\Omega_n) < \infty$ for all $n \in \mathbb{N}$. If $f : \Omega \to \mathbb{C}$ is a measurable function such that
+Suppose that $(\Omega, \mathcal{B}, \mu)$ is a measure space, $\Omega_n \in \mathcal{B}$ with $\Omega_n \uparrow \Omega$ and $\mu(\Omega_n) < \infty$ for all $n \in \mathbb{N}$.
+If $f : \Omega \to \mathbb{C}$ is a measurable function such that
 $$
 \int_\Omega |fg|\,d\mu < \infty \quad \text{for all } g \in L^{3/2}(\mu),
 $$

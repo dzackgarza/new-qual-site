@@ -25,5 +25,6 @@ $$
 
 1. Show $\mathcal{C}_p$ is precompact in $C([0,1])$ for all $p \in (1, \infty)$.
 
-2. Is $\mathcal{C}_1$ precompact in $C([0,1])$? You must justify your conclusion here.
+2. Is $\mathcal{C}_1$ precompact in $C([0,1])$?
+   You must justify your conclusion here.
 :::

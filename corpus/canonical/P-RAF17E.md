@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $g : \mathbb{R}^d \to \mathbb{R}^d$ be a measurable function which is essentially bounded, i.e. there exists $M < \infty$ such that $|g(x)| \leq M$ for $m$-a.e. $x \in \mathbb{R}^d$. For $f \in L^1(m) := L^1(\mathbb{R}^d, m)$, let
+Let $g : \mathbb{R}^d \to \mathbb{R}^d$ be a measurable function which is essentially bounded, i.e. there exists $M < \infty$ such that $|g(x)| \leq M$ for $m$-a.e. $x \in \mathbb{R}^d$.
+For $f \in L^1(m) := L^1(\mathbb{R}^d, m)$, let
 $$
 (f * g)(x) = \int_{\mathbb{R}^d} f(x-y)g(y)\,dy.
 $$

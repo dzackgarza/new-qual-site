@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/Real-Analysis.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: real-analysis
-  problems: []
+  problems:
+  - P-RAF17A
+  - P-RAF17B
+  - P-RAF17C
+  - P-RAF17D
+  - P-RAF17E
+  - P-RAF17F
+  - P-RAF17G
   date:
     kind: academic-term
     term: fall
