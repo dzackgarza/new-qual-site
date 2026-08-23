@@ -23,5 +23,6 @@ $$
 
 1. Under the further assumption that $h$ is continuous and $h(0) > 0$, show $g(x) = 0$ $m$-a.e.
 
-2. Is it still true that $g(x) = 0$ $m$-a.e. when $h$ is continuous with $h(1/2) = 0$? Justify your answer.
+2. Is it still true that $g(x) = 0$ $m$-a.e. when $h$ is continuous with $h(1/2) = 0$?
+   Justify your answer.
 :::

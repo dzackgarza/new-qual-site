@@ -23,5 +23,6 @@ $$
 \sup_{k \in \mathbb{R}} |\hat{f}^{(\ell)}(k)| \leq \frac{1}{\sqrt{2\pi}} \sqrt{\frac{2}{2\ell + 1}} \|f\|_2 \quad \forall \ell = 0, 1, 2, \ldots
 $$
 
-2. Let $\{f_n\}_{n=1}^\infty \subset L^2(\mathbb{R}, m)$ satisfy $\|f_n\|_2 \leq 1$ and $f_n(x) = 0$ for $|x| \geq 1$. Show that for each $0 < M < \infty$ there exists $1 \leq n_1 < n_2 < n_3 < \ldots$ in $\mathbb{N}$ such that $\{\hat{f}_{n_k}\}_{k=1}^\infty$ is uniformly convergent on $[-M, M]$ to some $g \in C([-M, M], \mathbb{C})$.
+2. Let $\{f_n\}_{n=1}^\infty \subset L^2(\mathbb{R}, m)$ satisfy $\|f_n\|_2 \leq 1$ and $f_n(x) = 0$ for $|x| \geq 1$.
+   Show that for each $0 < M < \infty$ there exists $1 \leq n_1 < n_2 < n_3 < \ldots$ in $\mathbb{N}$ such that $\{\hat{f}_{n_k}\}_{k=1}^\infty$ is uniformly convergent on $[-M, M]$ to some $g \in C([-M, M], \mathbb{C})$.
 :::
