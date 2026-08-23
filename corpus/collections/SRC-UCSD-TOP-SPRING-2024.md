@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-UCSD-TOP-SPRING-2024
 kind: collection
-title: UCSD topology Spring 2024
+title: UCSD topology Summer 2024
 classification:
   areas:
   - topology
@@ -27,7 +27,7 @@ source:
   - P-TOPS24H
   date:
     kind: academic-term
-    term: spring
+    term: summer
     year: 2024
 ---
 

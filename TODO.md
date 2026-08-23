@@ -171,6 +171,27 @@ Remaining orphan work: see the attach pass below; AMD + ws9 notes clusters remai
 | `P-E5NRO`, `P-TEEXE` | not yet attachable — same equivalence on ℝ; excluded from `SRC-UGA-RA-SPRING-2015` by prior review remark |
 | `P-UHFLP` | not yet attachable — QRS-derived, no sitting identified |
 
+## W8 — Duplicate bodies (16 pairs)
+
+The audit measurement is a candidate list, not a verdict. Read every pair against its source before acting: merge nothing, keep genuine cross-sitting reuse.
+
+### Resolved 2026-08-23
+
+| Pair(s) | Verdict | Evidence |
+| --- | --- | --- |
+| `E-HAT-2.A-1…11` ↔ `E-HAT-2.B-1…11` (7 flagged, all 11 affected) | §2.A cards deleted as phantoms — Hatcher topic 2.A has no exercise set; all eleven held §2.B texts. `SRC-TEXT-HAT02` section removed; remark records that chapter 2's sets are §2.1 (31), §2.2 (43 − erratum), §2.3 (4), 2.B (11), 2.C (9). | Printed chapter PDF (`hatcher/AT/ATch2.pdf`): Exercises blocks fall only after §2.1–§2.3 and topics 2.B, 2.C. |
+| `E-SS3.PR-1` ↔ `E-SS4.EX-1` | Both kept, bodies corrected. Book truth: Ch4 Ex 1 = moderate-decrease problem (`E-SS4.EX-1` already correct); true Ch3 Problem 1 = Koebe-Bieberbach — written onto `E-SS3.PR-1`. | MinerU extraction of Stein–Shakarchi *Complex Analysis* (Zotero `BHVGEQWD`). |
+| `E-SS8.PR-3` ↔ `E-SS9.EX-3` | Both kept, bodies corrected. Ch9 Ex 3 = lattice-sum problem (`E-SS9.EX-3` correct); true Ch8 Problem 3 = hyperbolic metric / Schwarz-Pick — written onto `E-SS8.PR-3`. | Same extraction. |
+| `E-JTIXY` ↔ `E-SS3.EX-17`, `E-M3IWM` ↔ `E-SS1.EX-19`, `E-MTLQI` ↔ `E-SS1.EX-13` | Notes-layer twins deleted; scoped cards hold the book items (Ch2 Ex 15 via new verification, Ch1 Ex 13, Ch1 Ex 19 — author's citations "SS 3.2.15"/"Stein-Shakarchi 1.20" decode as vol III ch 2 #15 / ch 1 items with off-by-one). Wiki guide links repointed to the surviving ids; renderer fixed so dotted ids link (`tools/qualc/wiki.py`). | Same extraction; four authored wiki pages updated. |
+| `P-APA24H` ↔ `P-APAS24H` | Genuine reuse — kept both, no merge. Standard-representation problem appears verbatim as FA24 #8 and SP24 #8. | Both department PDFs fetched and read. |
+| `P-APAF04C` ↔ `P-APAS04C` | Genuine reuse — kept both. Pseudo-inverse/SVD min-norm problem verbatim in FA04 (#3) and SP04 (#3), sittings three months apart. | Both department scans read (OCR text). |
+| `P-APAF07B` ↔ `P-APAS04A` | Genuine reuse — kept both. "State and prove the Schur Decomposition Theorem" is FA07 Part 1 #2 and SP04 #1. | FA07 OCR text + SP04 department scan. |
+| `P-TOPF25B` ↔ `P-TOPS24D` | Genuine reuse — kept both. Cube-with-180°-face-gluing homology problem verbatim, same figure labels (P/Q/R), as Fall 2025 #2 and Summer 2024 #4. | Both 290 department PDFs read. |
+
+Terminal state: `duplicate-bodies` rests at 4 violations — all verified genuine statement reuse across sittings; the measurement stays nonzero because the mathematics repeats.
+
+Adjacent fix from the same reads: `SP24_290_Topology_Qual.pdf` self-identifies as "**43. Summer 2024**"; `SRC-UCSD-TOP-SPRING-2024` title/date corrected to Summer 2024 (id unchanged — opaque handle). The compilation's section lists show UCSD 290 sittings come only in Fall/Summer flavors.
+
 ## Topic gaps (17)
 
 All cleared.
