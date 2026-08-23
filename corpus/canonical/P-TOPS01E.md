@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be the result of gluing up the edges of two solid pentagons in pairs, according to the picture shown. Compute the fundamental group and the homology groups of $X$. Is it a manifold?
+Let $X$ be the result of gluing up the edges of two solid pentagons in pairs, according to the picture shown.
+Compute the fundamental group and the homology groups of $X$.
+Is it a manifold?
 :::

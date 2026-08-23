@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be an $n$-dimensional manifold and $X_0$ its $R$-orientation sheaf. Give $R$ the discrete topology. If $X$ is $R$-orientable, prove $X_0$ is homeomorphic to $X \times R$.
+Let $X$ be an $n$-dimensional manifold and $X_0$ its $R$-orientation sheaf.
+Give $R$ the discrete topology.
+If $X$ is $R$-orientable, prove $X_0$ is homeomorphic to $X \times R$.
 :::

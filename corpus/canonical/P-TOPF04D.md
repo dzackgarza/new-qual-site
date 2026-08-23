@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $M$ be a compact connected nonorientable $3$-manifold. Show the first integral homology group of $M$ is infinite.
+Let $M$ be a compact connected nonorientable $3$-manifold.
+Show the first integral homology group of $M$ is infinite.
 :::

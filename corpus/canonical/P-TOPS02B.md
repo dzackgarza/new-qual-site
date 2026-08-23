@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $f : S^n \to S^n$ be a continuous function such that $f(-x) = f(x)$. Prove $\deg f$ is even.
+Let $f : S^n \to S^n$ be a continuous function such that $f(-x) = f(x)$.
+Prove $\deg f$ is even.
 :::

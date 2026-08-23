@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $M^n$ be a connected closed oriented manifold and assume that there is a degree one map $f : S^n \to M^n$. Show that $H_i(M; \mathbb{F}) = 0$ for all $0 < i < n$ and any field $\mathbb{F}$.
+Let $M^n$ be a connected closed oriented manifold and assume that there is a degree one map $f : S^n \to M^n$.
+Show that $H_i(M; \mathbb{F}) = 0$ for all $0 < i < n$ and any field $\mathbb{F}$.
 :::

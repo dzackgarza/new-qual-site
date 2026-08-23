@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a path connected topological space which is not compact. Show that $H^*_c(X) = 0$.
+Let $X$ be a path connected topological space which is not compact.
+Show that $H^*_c(X) = 0$.
 :::

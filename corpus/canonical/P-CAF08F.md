@@ -13,5 +13,8 @@ solved: false
 ---
 
 ::: problem
-Let $G \subset \mathbb{C}$ be open, connected, and simply connected, $G \neq \mathbb{C}$. Let $f \in H(G)$ with $f(G) \subset G$. Suppose there exist $a, b \in \mathbb{C}$, $a \neq b$ such that $f(a) = a$ and $f(b) = b$. Prove that $f(z) = z$ for all $z \in G$.
+Let $G \subset \mathbb{C}$ be open, connected, and simply connected, $G \neq \mathbb{C}$.
+Let $f \in H(G)$ with $f(G) \subset G$.
+Suppose there exist $a, b \in \mathbb{C}$, $a \neq b$ such that $f(a) = a$ and $f(b) = b$.
+Prove that $f(z) = z$ for all $z \in G$.
 :::

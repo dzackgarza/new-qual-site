@@ -14,6 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $u$ be a nonnegative real-valued harmonic function defined in $B(1; 2)$ with $u(1) = 1/3$. Prove that
-$$u(i) \leq 1 + \frac{2}{3}\sqrt{2}.$$
+Let $u$ be a nonnegative real-valued harmonic function defined in $B(1; 2)$ with $u(1) = 1/3$.
+Prove that $$u(i) \leq 1 + \frac{2}{3}\sqrt{2}.$$
 :::

@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a group of homeomorphisms acting freely on $S^{2n}$ so that for all $g \in G$, $gx = x$ for some $x$ if and only if $g = 1$. Prove $|G| \leq 2$.
+Let $G$ be a group of homeomorphisms acting freely on $S^{2n}$ so that for all $g \in G$, $gx = x$ for some $x$ if and only if $g = 1$.
+Prove $|G| \leq 2$.
 :::

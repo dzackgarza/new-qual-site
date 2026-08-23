@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $p : E \to X$ be a covering space and let $C \subset E$ be a connected component of $E$. Prove $p|_C : C \to X$ is also a covering space.
+Let $p : E \to X$ be a covering space and let $C \subset E$ be a connected component of $E$.
+Prove $p|_C : C \to X$ is also a covering space.
 :::

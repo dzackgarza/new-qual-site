@@ -9,14 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/FA08_290_Topology_Qual.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
-  problems: []
+  problems:
+  - P-TOPF08A
+  - P-TOPF08B
+  - P-TOPF08C
+  - P-TOPF08D
+  - P-TOPF08E
   date:
     kind: academic-term
     term: fall
