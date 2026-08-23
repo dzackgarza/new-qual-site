@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $Y$ be a space, let $f : Y \to Y$ be a self-mapping of $Y$, and let $X$ be the mapping torus of $f$, that is, the space obtained from $Y \times I$ by identifying $(y, 1) \sim (f(y), 0)$ for each point $y \in Y$. Prove that $H_*(X; \mathbb{Z}) \cong H_*(Y; \mathbb{Z}) / \operatorname{im}(\operatorname{id} - f_*)$, where $f_*$ is the induced map $H_*(Y; \mathbb{Z}) \to H_*(Y; \mathbb{Z})$.
+Let $Y$ be a space, let $f : Y \to Y$ be a self-mapping of $Y$, and let $X$ be the mapping torus of $f$, that is, the space obtained from $Y \times I$ by identifying $(y, 1) \sim (f(y), 0)$ for each point $y \in Y$.
+Prove that $H_*(X; \mathbb{Z}) \cong H_*(Y; \mathbb{Z}) / \operatorname{im}(\operatorname{id} - f_*)$, where $f_*$ is the induced map $H_*(Y; \mathbb{Z}) \to H_*(Y; \mathbb{Z})$.
 :::

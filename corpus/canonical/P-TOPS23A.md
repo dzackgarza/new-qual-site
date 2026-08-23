@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $p : S^3 \to S^2$ be the Hopf mapping, defined by sending $(Z, W) \in S^3 \subseteq \mathbb{C}^2$ to $Z/W \in \mathbb{C} \cup \{\infty\}$. Show that there does not exist a section, that is a map $s : S^2 \to S^3$ satisfying $p \circ s = \operatorname{id}_{S^2}$.
+Let $p : S^3 \to S^2$ be the Hopf mapping, defined by sending $(Z, W) \in S^3 \subseteq \mathbb{C}^2$ to $Z/W \in \mathbb{C} \cup \{\infty\}$.
+Show that there does not exist a section, that is a map $s : S^2 \to S^3$ satisfying $p \circ s = \operatorname{id}_{S^2}$.
 :::

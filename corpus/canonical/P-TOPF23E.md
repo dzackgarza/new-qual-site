@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-Let $K$ be the Klein bottle. Compute the homology groups $H_*(K \times K; \mathbb{Z})$ and cohomology groups $H^*(K \times K; \mathbb{Z})$ (you don't need to work out the ring structure on the cohomology).
+Let $K$ be the Klein bottle.
+Compute the homology groups $H_*(K \times K; \mathbb{Z})$ and cohomology groups $H^*(K \times K; \mathbb{Z})$ (you don't need to work out the ring structure on the cohomology).
 :::

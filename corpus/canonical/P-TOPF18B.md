@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be the space made by gluing the edges of a solid hexagon $H$ and a solid triangle $T$ according to the scheme pictured. Calculate $\pi_1(X)$ and $H_*(X; \mathbb{Z})$.
+Let $X$ be the space made by gluing the edges of a solid hexagon $H$ and a solid triangle $T$ according to the scheme pictured.
+Calculate $\pi_1(X)$ and $H_*(X; \mathbb{Z})$.
 :::

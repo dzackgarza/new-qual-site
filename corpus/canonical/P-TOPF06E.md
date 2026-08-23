@@ -17,7 +17,8 @@ solved: false
 ---
 
 ::: problem
-Let $M$ be a $2n$ dimensional compact manifold without boundary. Show that
+Let $M$ be a $2n$ dimensional compact manifold without boundary.
+Show that
 $$
 \sum_i \dim H^i(M; \mathbb{Z}/2) = \chi(M) \pmod{2}
 $$

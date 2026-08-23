@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-Compute the homotopy group $\pi_3(T^2 \vee S^3)$. Here $\vee$ means one-point union of two topological spaces (wedge) and $T^2$ denotes the $2$-dimensional torus.
+Compute the homotopy group $\pi_3(T^2 \vee S^3)$.
+Here $\vee$ means one-point union of two topological spaces (wedge) and $T^2$ denotes the $2$-dimensional torus.
 :::

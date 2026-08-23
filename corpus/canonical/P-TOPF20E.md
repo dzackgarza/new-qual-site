@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-For $n \geq 1$, take a point $p \in S^n$ and consider the subspace $A = \{(x, y) \in S^n \times S^n \mid x = p \text{ or } y = p\}$ of $S^n \times S^n$. Show that there does not exist a retraction of $S^n \times S^n$ to $A$.
+For $n \geq 1$, take a point $p \in S^n$ and consider the subspace $A = \{(x, y) \in S^n \times S^n \mid x = p \text{ or } y = p\}$ of $S^n \times S^n$.
+Show that there does not exist a retraction of $S^n \times S^n$ to $A$.
 :::

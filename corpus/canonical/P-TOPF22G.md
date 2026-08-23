@@ -17,5 +17,8 @@ solved: false
 ---
 
 ::: problem
-Let $K$ be a (perhaps knotted) subspace of $S^5$ which is homeomorphic to the $3$-sphere. Let $N$ be a closed regular neighbourhood of $K$, so that $N$ is a compact $5$-manifold-with-boundary and is homotopy-equivalent to $K$. Let $X$ be $S^5$ minus the interior of $N$, so that $X$ is also a compact $5$-manifold-with-boundary. By considering the relative cohomology $H^*(S^5, N)$ and applying excision and Lefschetz duality, calculate the homology of $X$.
+Let $K$ be a (perhaps knotted) subspace of $S^5$ which is homeomorphic to the $3$-sphere.
+Let $N$ be a closed regular neighbourhood of $K$, so that $N$ is a compact $5$-manifold-with-boundary and is homotopy-equivalent to $K$.
+Let $X$ be $S^5$ minus the interior of $N$, so that $X$ is also a compact $5$-manifold-with-boundary.
+By considering the relative cohomology $H^*(S^5, N)$ and applying excision and Lefschetz duality, calculate the homology of $X$.
 :::

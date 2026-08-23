@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $M$ be a connected, closed $n$-dimensional manifold. Show that $H_{n-1}(M; \mathbb{Z})$ is torsion-free if and only if $M$ is orientable.
+Let $M$ be a connected, closed $n$-dimensional manifold.
+Show that $H_{n-1}(M; \mathbb{Z})$ is torsion-free if and only if $M$ is orientable.
 :::

@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a $3$-dimensional simply-connected closed manifold (compact, no boundary). Show that $X$ is homotopy equivalent to $S^3$.
+Let $X$ be a $3$-dimensional simply-connected closed manifold (compact, no boundary).
+Show that $X$ is homotopy equivalent to $S^3$.
 :::

@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Complex.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CAFA21A
+  - P-CAFA21B
+  - P-CAFA21C
+  - P-CAFA21D
+  - P-CAFA21E
+  - P-CAFA21F
+  - P-CAFA21G
   date:
     kind: academic-term
     term: fall

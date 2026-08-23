@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a path connected CW complex whose fundamental group is finite. Show that any continuous map $f : X \to T^n$ is null homotopic. (Here $T^n = S^1 \times \cdots \times S^1$ is the $n$-dimensional torus.)
+Let $X$ be a path connected CW complex whose fundamental group is finite.
+Show that any continuous map $f : X \to T^n$ is null homotopic.
+(Here $T^n = S^1 \times \cdots \times S^1$ is the $n$-dimensional torus.)
 :::

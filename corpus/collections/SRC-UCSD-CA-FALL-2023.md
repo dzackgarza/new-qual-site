@@ -9,14 +9,22 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/QualFall23.pdf
+- https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA23-Complex.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CAFA23A
+  - P-CAFA23B
+  - P-CAFA23C
+  - P-CAFA23D
+  - P-CAFA23E
+  - P-CAFA23F
+  - P-CAFA23G
+  - P-CAFA23H
   date:
     kind: academic-term
     term: fall

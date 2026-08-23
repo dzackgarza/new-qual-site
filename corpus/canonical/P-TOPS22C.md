@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a $5$-dimensional simply-connected closed manifold. If $H_2(X) = 0$, show that $X$ is homotopy equivalent to $S^5$.
+Let $X$ be a $5$-dimensional simply-connected closed manifold.
+If $H_2(X) = 0$, show that $X$ is homotopy equivalent to $S^5$.
 :::

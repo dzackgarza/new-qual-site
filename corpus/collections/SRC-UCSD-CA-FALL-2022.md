@@ -9,14 +9,20 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_COMPLEX_220ABC.pdf
+- https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA22-Complex.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CAFA22A
+  - P-CAFA22B
+  - P-CAFA22C
+  - P-CAFA22D
+  - P-CAFA22E
+  - P-CAFA22F
   date:
     kind: academic-term
     term: fall

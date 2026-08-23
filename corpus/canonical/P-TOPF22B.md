@@ -18,5 +18,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be the space obtained from a torus by attaching discs along the two curves shown. Find the fundamental group of $X$, and identify the homology group $H_2(\widetilde{X})$ of the universal cover of $X$ as a module over the group ring $\mathbb{Z}[\pi_1(X)]$.
+Let $X$ be the space obtained from a torus by attaching discs along the two curves shown.
+Find the fundamental group of $X$, and identify the homology group $H_2(\widetilde{X})$ of the universal cover of $X$ as a module over the group ring $\mathbb{Z}[\pi_1(X)]$.
 :::

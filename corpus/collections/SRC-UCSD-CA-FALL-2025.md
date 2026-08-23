@@ -9,14 +9,20 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/QFall2025.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CAFA25A
+  - P-CAFA25B
+  - P-CAFA25C
+  - P-CAFA25D
+  - P-CAFA25E
+  - P-CAFA25F
   date:
     kind: academic-term
     term: fall

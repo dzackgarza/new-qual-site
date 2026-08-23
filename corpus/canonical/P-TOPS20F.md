@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Consider a continuous map $f : \mathbb{RP}^n \to \mathbb{RP}^n$, where $n$ is a positive even number. Show that $f$ has a fixed point.
+Consider a continuous map $f : \mathbb{RP}^n \to \mathbb{RP}^n$, where $n$ is a positive even number.
+Show that $f$ has a fixed point.
 :::

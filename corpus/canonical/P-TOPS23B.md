@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be the space obtained by gluing the boundary of a disc to the curve in the torus shown. Compute the second homotopy group $\pi_2(X)$.
+Let $X$ be the space obtained by gluing the boundary of a disc to the curve in the torus shown.
+Compute the second homotopy group $\pi_2(X)$.
 :::

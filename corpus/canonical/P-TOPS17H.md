@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-Let $M$ be a closed connected $3$-manifold with finite fundamental group. Show that its universal cover is homotopy-equivalent to $S^3$.
+Let $M$ be a closed connected $3$-manifold with finite fundamental group.
+Show that its universal cover is homotopy-equivalent to $S^3$.
 :::

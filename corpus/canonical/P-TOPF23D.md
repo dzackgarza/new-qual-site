@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-Show that a map $f : S^n \to S^n$ which has no fixed points must be homotopic to the antipodal map. Use this to deduce that a non-trivial finite group acting freely on $S^{2n}$ must be isomorphic to $\mathbb{Z}_2$.
+Show that a map $f : S^n \to S^n$ which has no fixed points must be homotopic to the antipodal map.
+Use this to deduce that a non-trivial finite group acting freely on $S^{2n}$ must be isomorphic to $\mathbb{Z}_2$.
 :::

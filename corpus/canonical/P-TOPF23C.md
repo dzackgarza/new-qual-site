@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-The torus $T$, the Klein bottle $K$ and the connect-sum $C = \mathbb{RP}^2 \# \mathbb{RP}^2$ all have isomorphic mod-$2$ homology groups. Compute the intersection forms (on the first homology with mod-$2$ coefficients) of these three spaces; to what extent are they distinguishable using these intersection forms?
+The torus $T$, the Klein bottle $K$ and the connect-sum $C = \mathbb{RP}^2 \# \mathbb{RP}^2$ all have isomorphic mod-$2$ homology groups.
+Compute the intersection forms (on the first homology with mod-$2$ coefficients) of these three spaces; to what extent are they distinguishable using these intersection forms?
 :::

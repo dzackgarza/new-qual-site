@@ -20,17 +20,21 @@ solved: false
 ---
 
 ::: problem
-Write down "True" or "False" for each of the following statements. No justification needed.
+Write down "True" or "False" for each of the following statements.
+No justification needed.
 
 (a) For any CW complex $X$, $H_*(X)$ is a finitely generated abelian group.
 
 (b) There exist two connected simply connected CW complexes $X$ and $Y$ such that they have isomorphic homotopy groups but non-isomorphic homology groups.
 
-(c) Denote by $\Sigma_g$ the orientable surface with genus $g$. Then $\Sigma_n$ is a covering space of $\Sigma_2$ for all $n \geq 3$.
+(c) Denote by $\Sigma_g$ the orientable surface with genus $g$.
+Then $\Sigma_n$ is a covering space of $\Sigma_2$ for all $n \geq 3$.
 
-(d) Let $M$ be a connected closed $n$-dimensional manifold. Then $H_{n-1}(M; \mathbb{Z})$ is free.
+(d) Let $M$ be a connected closed $n$-dimensional manifold.
+Then $H_{n-1}(M; \mathbb{Z})$ is free.
 
-(e) Let $R$ be a PID, and $M, N$ be $R$-modules. Then $\operatorname{Ext}^n_R(M, N) = 0$ for $n \geq 1$.
+(e) Let $R$ be a PID, and $M, N$ be $R$-modules.
+Then $\operatorname{Ext}^n_R(M, N) = 0$ for $n \geq 1$.
 
 (f) As a ring, $H^*(\mathbb{CP}^n; \mathbb{Z}) = \mathbb{Z}[\alpha]/(\alpha^{n+1})$, where $\alpha$ has degree $2$.
 

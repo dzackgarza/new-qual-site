@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $f : S^{2n+1} \to S^{2n+1}$ be a map satisfying $f(-x) = -f(x)$. Show that the degree of $f$ must be odd.
+Let $f : S^{2n+1} \to S^{2n+1}$ be a map satisfying $f(-x) = -f(x)$.
+Show that the degree of $f$ must be odd.
 :::

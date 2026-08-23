@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-Let $M^3$ be a closed path-connected non-orientable $3$-manifold. Show that its Euler characteristic is $0$ and that its fundamental group is infinite.
+Let $M^3$ be a closed path-connected non-orientable $3$-manifold.
+Show that its Euler characteristic is $0$ and that its fundamental group is infinite.
 :::

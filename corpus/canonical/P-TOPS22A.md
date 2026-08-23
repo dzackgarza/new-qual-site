@@ -24,9 +24,11 @@ solved: false
 ::: problem
 Let $X = \mathbb{RP}^3$ and $Y = S^1 \vee S^1$.
 
-(a) Let $A = X \vee Y$ be their wedge sum (one-point union). Provide a presentation of the group $\pi_1(A)$.
+(a) Let $A = X \vee Y$ be their wedge sum (one-point union).
+Provide a presentation of the group $\pi_1(A)$.
 
-(b) Let $B = X \times Y$ be their product. Provide a presentation of the group $\pi_1(B)$.
+(b) Let $B = X \times Y$ be their product.
+Provide a presentation of the group $\pi_1(B)$.
 
 (c) Compute $H_*(A; \mathbb{Z})$.
 
@@ -38,9 +40,12 @@ Let $X = \mathbb{RP}^3$ and $Y = S^1 \vee S^1$.
 
 (g) Compute $H^*(B; \mathbb{Z}/2)$ as a ring.
 
-(h) Are all maps $f : X \to Y$ null-homotopic? Explain your reason.
+(h) Are all maps $f : X \to Y$ null-homotopic?
+Explain your reason.
 
-(i) Are all maps $g : Y \to X$ null-homotopic? Explain your reason.
+(i) Are all maps $g : Y \to X$ null-homotopic?
+Explain your reason.
 
-(j) Let $C$ be a double cover ($2$-sheeted covering space) of $B$. Compute the Euler characteristic of $C$.
+(j) Let $C$ be a double cover ($2$-sheeted covering space) of $B$.
+Compute the Euler characteristic of $C$.
 :::

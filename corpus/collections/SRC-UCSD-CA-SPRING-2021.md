@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/220-Qual-SP21.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CASP21A
+  - P-CASP21B
+  - P-CASP21C
+  - P-CASP21D
+  - P-CASP21E
+  - P-CASP21F
+  - P-CASP21G
   date:
     kind: academic-term
     term: spring

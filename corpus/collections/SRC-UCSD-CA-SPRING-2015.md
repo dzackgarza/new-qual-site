@@ -9,14 +9,20 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/complex-15.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CASP15A
+  - P-CASP15B
+  - P-CASP15C
+  - P-CASP15D
+  - P-CASP15E
+  - P-CASP15F
   date:
     kind: academic-term
     term: spring

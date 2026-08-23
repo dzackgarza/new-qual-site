@@ -17,5 +17,7 @@ solved: false
 ---
 
 ::: problem
-Let $M$ be a closed, orientable, connected manifold of dimension $n$. Suppose there is a continuous map $f : S^n \to M$ with nonzero mapping degree. Show that $H_k(M; \mathbb{Q}) = H_k(S^n; \mathbb{Q})$ for any $k \geq 0$.
+Let $M$ be a closed, orientable, connected manifold of dimension $n$.
+Suppose there is a continuous map $f : S^n \to M$ with nonzero mapping degree.
+Show that $H_k(M; \mathbb{Q}) = H_k(S^n; \mathbb{Q})$ for any $k \geq 0$.
 :::

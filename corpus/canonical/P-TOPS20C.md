@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a $3$-dimensional CW complex obtained by attaching a single $3$-dimensional cell to $S^2$ via an attaching map of degree $3$. Compute the homology group $H_k(X \times X; \mathbb{Z})$ for all $k \geq 0$.
+Let $X$ be a $3$-dimensional CW complex obtained by attaching a single $3$-dimensional cell to $S^2$ via an attaching map of degree $3$.
+Compute the homology group $H_k(X \times X; \mathbb{Z})$ for all $k \geq 0$.
 :::

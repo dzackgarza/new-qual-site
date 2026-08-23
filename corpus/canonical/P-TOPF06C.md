@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-How many connected covering spaces does $\mathbb{RP}^2 \times \mathbb{RP}^2$ have? Can you identify any of them?
+How many connected covering spaces does $\mathbb{RP}^2 \times \mathbb{RP}^2$ have?
+Can you identify any of them?
 :::

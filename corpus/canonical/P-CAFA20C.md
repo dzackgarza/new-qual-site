@@ -14,7 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $f: \mathbb{C} \to \mathbb{C}$ be an entire function. Show that the series
-$$\sum_{n=0}^{\infty} \frac{f^{(n)}(z)}{n!}$$
-converges uniformly on compact subsets of $\mathbb{C}$.
+Let $f: \mathbb{C} \to \mathbb{C}$ be an entire function.
+Show that the series $$\sum_{n=0}^{\infty} \frac{f^{(n)}(z)}{n!}$$ converges uniformly on compact subsets of $\mathbb{C}$.
 :::

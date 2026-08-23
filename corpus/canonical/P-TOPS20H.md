@@ -17,5 +17,7 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be an $n$-dimensional closed smooth manifold. Suppose $X$ is simply connected and suppose $H_k(X; \mathbb{Z}) = H_k(S^n; \mathbb{Z})$ for all $k \geq 0$. Show that $X$ is homotopy equivalent to $S^n$.
+Let $X$ be an $n$-dimensional closed smooth manifold.
+Suppose $X$ is simply connected and suppose $H_k(X; \mathbb{Z}) = H_k(S^n; \mathbb{Z})$ for all $k \geq 0$.
+Show that $X$ is homotopy equivalent to $S^n$.
 :::

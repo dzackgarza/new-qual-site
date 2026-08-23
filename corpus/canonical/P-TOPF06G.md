@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-Let $M$ be a $4$-dimensional compact, connected, simply connected manifold without boundary such that $\chi(M) = k$. Assuming $M$ is orientable, calculate $H_i(M; \mathbb{Z})$ for $0 \leq i \leq 4$.
+Let $M$ be a $4$-dimensional compact, connected, simply connected manifold without boundary such that $\chi(M) = k$.
+Assuming $M$ is orientable, calculate $H_i(M; \mathbb{Z})$ for $0 \leq i \leq 4$.
 :::

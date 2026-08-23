@@ -18,5 +18,6 @@ Let $f$ be analytic on $\mathbb{D}$ with $|f(z)| \leq 1/2$ on $\mathbb{D}$ and $
 
 (a) Prove that $f(z)$ has no zeros in the disk $\{|z| < 2r\}$.
 
-(b) Can $f(z)$ have a zero on the circle $\{|z| = 2r\}$? If so, find all such functions $f(z)$.
+(b) Can $f(z)$ have a zero on the circle $\{|z| = 2r\}$?
+If so, find all such functions $f(z)$.
 :::

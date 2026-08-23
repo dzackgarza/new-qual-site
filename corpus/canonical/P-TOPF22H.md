@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be the space obtained by gluing pairs of faces of a standard cube $I^3$ as shown. Compute the homology $H_*(X; \mathbb{Z})$.
+Let $X$ be the space obtained by gluing pairs of faces of a standard cube $I^3$ as shown.
+Compute the homology $H_*(X; \mathbb{Z})$.
 :::
