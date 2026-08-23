@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a topological space. Suppose it is sequentially compact (i.e., any sequence has a convergent subsequence). Prove that it is countably compact (i.e., any countable open cover of $X$ has a finite subcover).
+Let $X$ be a topological space.
+Suppose it is sequentially compact (i.e., any sequence has a convergent subsequence).
+Prove that it is countably compact (i.e., any countable open cover of $X$ has a finite subcover).
 :::

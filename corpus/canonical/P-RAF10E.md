@@ -16,7 +16,8 @@ solved: false
 ::: problem
 Recall that a bounded linear operator $T : \mathcal{H} \to \mathcal{H}$ on a Hilbert space $\mathcal{H}$ is self-adjoint if $\langle Tv, w \rangle = \langle v, Tw \rangle$ for all vectors $v, w \in \mathcal{H}$.
 
-(a) Suppose that $T$ is a bounded self-adjoint operator such that $\|v\| \leq \|Tv\|$ for all $v \in \mathcal{H}$. Show that given any $y \in \mathcal{H}$, there exists $x \in \mathcal{H}$ such that $Tx = y$.
+(a) Suppose that $T$ is a bounded self-adjoint operator such that $\|v\| \leq \|Tv\|$ for all $v \in \mathcal{H}$.
+Show that given any $y \in \mathcal{H}$, there exists $x \in \mathcal{H}$ such that $Tx = y$.
 
 Hint: Prove first that the range of $T$ is a closed subspace of $\mathcal{H}$.
 

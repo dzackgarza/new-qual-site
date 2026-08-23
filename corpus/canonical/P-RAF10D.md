@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $Y$ be a closed subspace of $L^2([0,1])$ each of whose elements may be represented by a continuous function on $[0,1]$. Prove that there exists $C > 0$ so that
+Let $Y$ be a closed subspace of $L^2([0,1])$ each of whose elements may be represented by a continuous function on $[0,1]$.
+Prove that there exists $C > 0$ so that
 $$
 \|f\|_{L^\infty([0,1])} \leq C \|f\|_{L^2([0,1])}
 $$

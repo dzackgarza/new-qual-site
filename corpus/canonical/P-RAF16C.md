@@ -22,7 +22,8 @@ and the Fubini-Tonelli Theorem to evaluate the integral
 $$
 \int_0^\infty e^{-\alpha x} \frac{\sin(\beta x)}{x}\,dx,
 $$
-where $\alpha$ and $\beta$ are positive numbers. Be sure to verify the assumption in the Fubini-Tonelli Theorem.
+where $\alpha$ and $\beta$ are positive numbers.
+Be sure to verify the assumption in the Fubini-Tonelli Theorem.
 
 You may find the following formula useful:
 $$

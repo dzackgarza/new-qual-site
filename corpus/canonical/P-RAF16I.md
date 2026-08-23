@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$. Let $f \in L^\infty(\mu)$ with $\|f\|_\infty > 0$. Define
+Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$.
+Let $f \in L^\infty(\mu)$ with $\|f\|_\infty > 0$.
+Define
 $$
 \alpha_k = \int_X |f|^k\,d\mu \qquad \text{for } k = 1, 2, \ldots.
 $$

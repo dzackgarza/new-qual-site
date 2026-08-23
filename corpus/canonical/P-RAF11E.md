@@ -20,5 +20,6 @@ $$
 $$
 Show that the Fourier series of $f$ converges uniformly.
 
-Hint: Half credit will be given for the special case $\epsilon = 1/2$, which can be treated more directly. For the general case try computing $\int_0^{2\pi} |f(x+h) - f(x)|^2\,dx$ two different ways.
+Hint: Half credit will be given for the special case $\epsilon = 1/2$, which can be treated more directly.
+For the general case try computing $\int_0^{2\pi} |f(x+h) - f(x)|^2\,dx$ two different ways.
 :::

@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $f \in L^1(\mathbb{R})$. Prove that the function
+Let $f \in L^1(\mathbb{R})$.
+Prove that the function
 $$
 g(y) = \int_{\mathbb{R}} \sin(y^2 x)\,f(x)\,dx
 $$

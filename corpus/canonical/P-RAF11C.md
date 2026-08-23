@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-(a) Let $(X, \mathcal{M}, \mu)$ be a finite measure space. Suppose that $f_n \in L^1(d\mu)$ is a sequence of functions with the property that for every $\epsilon > 0$ there exists a $\delta > 0$ such that for all $E \in \mathcal{M}$:
+(a) Let $(X, \mathcal{M}, \mu)$ be a finite measure space.
+Suppose that $f_n \in L^1(d\mu)$ is a sequence of functions with the property that for every $\epsilon > 0$ there exists a $\delta > 0$ such that for all $E \in \mathcal{M}$:
 $$
 |E| < \delta \implies \sup_n \int_E |f_n|\,d\mu < \epsilon.
 $$
