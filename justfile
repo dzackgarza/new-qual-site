@@ -46,7 +46,7 @@ query sql: build
 complete *args:
     uv run python tools/card_completeness.py {{ args }}
 
-# Regenerate BACKLOG.md: measurement queues for outstanding work (not a gate)
+# Regenerate BACKLOG.md unless already current for HEAD (runs before every push)
 backlog:
     uv run python tools/backlog.py
 
@@ -62,8 +62,8 @@ macros:
 test-commit:
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-commit
 
-# Run the full project suite before pushing
-test-push:
+# Run the full project suite before pushing (refreshes BACKLOG.md first)
+test-push: backlog
     @just -f ~/ai-review-ci/justfiles/python.just -d . test-push
 
 # Run the CI acceptance gate

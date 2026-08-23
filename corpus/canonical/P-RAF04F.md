@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $f_n : \mathbb{R} \to \mathbb{R}$ be a sequence of absolutely continuous functions such that $f_n' \in L^1(\mathbb{R}, m)$ and $c := \lim_{n \to \infty} f_n(0)$ exists in $\mathbb{R}$. Further assume there exists $g \in L^1(\mathbb{R}, m)$ such that $\lim_{n \to \infty} \int_\mathbb{R} |g(x) - f_n'(x)| \, dx = 0$.
+Let $f_n : \mathbb{R} \to \mathbb{R}$ be a sequence of absolutely continuous functions such that $f_n' \in L^1(\mathbb{R}, m)$ and $c := \lim_{n \to \infty} f_n(0)$ exists in $\mathbb{R}$.
+Further assume there exists $g \in L^1(\mathbb{R}, m)$ such that $\lim_{n \to \infty} \int_\mathbb{R} |g(x) - f_n'(x)| \, dx = 0$.
 
 (a) Show that $f(x) := \lim_{n \to \infty} f_n(x)$ exists for all $x \in \mathbb{R}$.
 

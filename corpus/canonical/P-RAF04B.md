@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $g \in L^1(\mathbb{R}, m)$ be chosen so that $\int_\mathbb{R} g(x) \, dx = 3$. Find, with justification, the following limit:
+Let $g \in L^1(\mathbb{R}, m)$ be chosen so that $\int_\mathbb{R} g(x) \, dx = 3$.
+Find, with justification, the following limit:
 $$
 \lim_{n \to \infty} \int_\mathbb{R} g(x) \sin^2(nx) \, dx.
 $$

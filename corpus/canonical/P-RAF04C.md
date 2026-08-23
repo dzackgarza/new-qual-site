@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $f$ and $g$ be two real $L^2(\mathbb{R}, m)$-functions. Show
+Let $f$ and $g$ be two real $L^2(\mathbb{R}, m)$-functions.
+Show
 $$
 \lim_{n \to \infty} \int_\mathbb{R} f(x) g(x-n) \, dx = 0.
 $$

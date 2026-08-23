@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $G : \mathbb{R} \to \mathbb{R}$ be a bounded Borel measurable function. Define $f_0(t) = 1$ and $f_n : [-1, 1] \to \mathbb{R}$ inductively by $f_n(t) = \int_{-1}^1 G(f_{n-1}(s)) \, ds$.
+Let $G : \mathbb{R} \to \mathbb{R}$ be a bounded Borel measurable function.
+Define $f_0(t) = 1$ and $f_n : [-1, 1] \to \mathbb{R}$ inductively by $f_n(t) = \int_{-1}^1 G(f_{n-1}(s)) \, ds$.
 
 Show:
 

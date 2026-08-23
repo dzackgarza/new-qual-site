@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Suppose that $\{\nu_n\}_{n=1}^\infty$ are complex measures and $\mu$ is a finite positive measure on a measurable space $(X, \mathcal{M})$. Further let $|\nu_n|$ denote the total variation measure associated to $\nu_n$.
+Suppose that $\{\nu_n\}_{n=1}^\infty$ are complex measures and $\mu$ is a finite positive measure on a measurable space $(X, \mathcal{M})$.
+Further let $|\nu_n|$ denote the total variation measure associated to $\nu_n$.
 
 (a) If $\sum_{n=1}^\infty |\nu_n|(X) < \infty$, then $\nu := \sum_{n=1}^\infty \nu_n$ is a complex measure.
 

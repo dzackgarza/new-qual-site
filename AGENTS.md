@@ -298,11 +298,12 @@ concerns, not data integrity problems.
 
 Outstanding work is recorded so no agent has to rediscover it. `TODO.md`
 holds the authored dispositions. `BACKLOG.md` holds the current
-measurements; `just backlog` regenerates it from the named measurement
-tools and nothing else writes it. The queues are candidates to read — a
-measurement that disappears is not a disposition, so record the reason in
-`TODO.md`. Refresh `BACKLOG.md` in the same commit as any change that
-moves a measurement.
+measurements, generated from the named measurement tools; nothing else
+writes it. Generation is automatic — `just test-push` regenerates
+`BACKLOG.md` before the suite runs, so a push never ships a stale queue.
+When a generation changes the file, commit the diff in the next commit.
+The queues are candidates to read — a measurement that disappears is not a
+disposition, so record the reason in `TODO.md`.
 
 # Citation policy
 
