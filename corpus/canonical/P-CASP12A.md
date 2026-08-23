@@ -13,7 +13,9 @@ solved: false
 ---
 
 ::: problem
-Determine if each statement is true or false. If false, provide a counterexample. If true, give a brief proof.
+Determine if each statement is true or false.
+If false, provide a counterexample.
+If true, give a brief proof.
 
 1. If $f$ is an entire function satisfying $f(0) = 1$ and $f'(1/n) = f(1/n)$ for all integers $n \geq 1$, then $f(z) = e^z$ for all $z \in \mathbb{C}$.
 

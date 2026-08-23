@@ -9,14 +9,19 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/SP12_220_Complex_Analysis_Qual.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CASP12A
+  - P-CASP12B
+  - P-CASP12C
+  - P-CASP12D
+  - P-CASP12E
   date:
     kind: academic-term
     term: spring
