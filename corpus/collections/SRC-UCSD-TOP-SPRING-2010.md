@@ -9,14 +9,22 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP10_290_Topology_Qual.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
-  problems: []
+  problems:
+  - P-TOPS10A
+  - P-TOPS10B
+  - P-TOPS10C
+  - P-TOPS10D
+  - P-TOPS10E
+  - P-TOPS10F
+  - P-TOPS10G
+  - P-TOPS10H
   date:
     kind: academic-term
     term: spring
