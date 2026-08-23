@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $f \in L^1(\mathbb{R})$ and $x f(x) \in L^1(\mathbb{R})$. Prove that the Fourier transform $\hat{f}$ is differentiable at every point $\xi \in \mathbb{R}$.
+Let $f \in L^1(\mathbb{R})$ and $x f(x) \in L^1(\mathbb{R})$.
+Prove that the Fourier transform $\hat{f}$ is differentiable at every point $\xi \in \mathbb{R}$.
 :::

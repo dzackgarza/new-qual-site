@@ -16,5 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a Banach space and denote by $\mathcal{L}(X)$ the space of all linear and bounded operators from $X$ to $X$. Let $T \in \mathcal{L}(X)$ be a topological isomorphism, i.e., $T : X \to X$ is linear, bijective, and both $T$ and $T^{-1}$ are continuous. Let $S \in \mathcal{L}(X)$ be such that $\|(S - T)T^{-1}\| < 1$. Prove that $S : X \to X$ is also a topological isomorphism.
+Let $X$ be a Banach space and denote by $\mathcal{L}(X)$ the space of all linear and bounded operators from $X$ to $X$.
+Let $T \in \mathcal{L}(X)$ be a topological isomorphism, i.e., $T : X \to X$ is linear, bijective, and both $T$ and $T^{-1}$ are continuous.
+Let $S \in \mathcal{L}(X)$ be such that $\|(S - T)T^{-1}\| < 1$.
+Prove that $S : X \to X$ is also a topological isomorphism.
 :::
