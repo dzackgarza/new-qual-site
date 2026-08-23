@@ -13,5 +13,6 @@ solved: false
 ---
 
 ::: problem
-Suppose that a linear transformation carries one pair of concentric circles into another pair of concentric circles. Prove that the ratios of the radii must be the same.
+Suppose that a linear transformation carries one pair of concentric circles into another pair of concentric circles.
+Prove that the ratios of the radii must be the same.
 :::

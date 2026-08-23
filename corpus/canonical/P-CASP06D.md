@@ -13,5 +13,7 @@ solved: false
 ---
 
 ::: problem
-Assume that $f$ and $g$ are entire functions of finite order $\lambda$. Assume that for a sequence $a_n$, $f(a_n) = g(a_n)$ and $\sum |a_n|^{-(\lambda + \epsilon)} = \infty$ for some $\epsilon > 0$. Show that $f = g$.
+Assume that $f$ and $g$ are entire functions of finite order $\lambda$.
+Assume that for a sequence $a_n$, $f(a_n) = g(a_n)$ and $\sum |a_n|^{-(\lambda + \epsilon)} = \infty$ for some $\epsilon > 0$.
+Show that $f = g$.
 :::
