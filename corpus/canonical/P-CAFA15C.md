@@ -6,7 +6,8 @@ title: "Polynomial with non-increasing real coefficients has no roots inside the
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

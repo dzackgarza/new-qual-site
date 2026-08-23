@@ -6,7 +6,8 @@ title: "Linear transformations preserving concentric circles preserve the ratio 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

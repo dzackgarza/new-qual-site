@@ -6,7 +6,8 @@ title: "Solving the ∂-equation for compactly supported smooth functions"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

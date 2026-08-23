@@ -6,7 +6,8 @@ title: "Evaluation of the integral of x/(x^4+1) via residue theory"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

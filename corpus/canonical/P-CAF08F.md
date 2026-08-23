@@ -6,7 +6,8 @@ title: "A holomorphic self-map of a simply connected proper domain with two fixe
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

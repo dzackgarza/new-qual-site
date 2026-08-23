@@ -6,7 +6,8 @@ title: "Interpolation by entire functions at prescribed points"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

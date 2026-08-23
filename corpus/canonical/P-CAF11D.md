@@ -6,7 +6,8 @@ title: "Analytic functions on a strip that do not extend beyond any boundary poi
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

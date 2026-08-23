@@ -6,7 +6,8 @@ title: "Infinite Blaschke product converges but cannot be extended past the boun
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

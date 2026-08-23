@@ -6,7 +6,8 @@ title: "Subsequence convergence characterization and identity theorem for locall
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

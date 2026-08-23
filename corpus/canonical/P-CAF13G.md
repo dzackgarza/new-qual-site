@@ -6,7 +6,8 @@ title: "A holomorphic function on the upper half-plane vanishing on a boundary i
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

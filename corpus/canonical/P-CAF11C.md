@@ -6,7 +6,8 @@ title: "Schwarz-Pick type inequality for analytic functions mapping into the lef
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

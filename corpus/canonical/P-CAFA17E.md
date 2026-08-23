@@ -6,7 +6,8 @@ title: "The Riemann surface of the logarithm is simply connected"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "An entire function with f(z) → ∞ must be a polynomial"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

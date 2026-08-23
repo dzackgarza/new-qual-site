@@ -6,7 +6,8 @@ title: "Roots of z^n - e^{z-λ} = 0 via Rouché's theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

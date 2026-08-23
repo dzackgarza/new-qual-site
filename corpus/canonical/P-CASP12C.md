@@ -6,7 +6,8 @@ title: "Schwarz lemma type inequality for f(z) + f(-z)"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

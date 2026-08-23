@@ -6,7 +6,8 @@ title: "Periodic entire function with subexponential growth is constant"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

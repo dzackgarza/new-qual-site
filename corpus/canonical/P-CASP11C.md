@@ -6,7 +6,8 @@ title: "Analytic continuation along different paths yielding different germs (Mo
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

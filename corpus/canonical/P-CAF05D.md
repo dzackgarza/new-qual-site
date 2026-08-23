@@ -6,7 +6,8 @@ title: "Using Runge-type approximation to separate values outside a compact set"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

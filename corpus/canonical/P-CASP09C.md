@@ -6,7 +6,8 @@ title: "Partial fraction identity for four distinct complex numbers via residues
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

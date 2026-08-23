@@ -6,7 +6,8 @@ title: "Convergence of the series of derivatives of an analytic function"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

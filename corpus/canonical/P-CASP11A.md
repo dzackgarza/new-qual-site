@@ -6,7 +6,8 @@ title: "True or False: bounded functions on slit planes, analytic extensions, es
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

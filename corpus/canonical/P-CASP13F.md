@@ -6,7 +6,8 @@ title: "Identity theorem from boundary vanishing on an arc of a simply connected
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Conformal map from a simply connected region to a disk without using the
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

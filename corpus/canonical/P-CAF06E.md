@@ -6,7 +6,8 @@ title: "Counting roots of a polynomial in the right half-plane"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

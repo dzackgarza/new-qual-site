@@ -6,7 +6,8 @@ title: "True or False: Cauchy estimates, entire extensions, zero products, essen
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

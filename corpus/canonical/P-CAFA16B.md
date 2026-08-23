@@ -6,7 +6,8 @@ title: "Convergence of the series Σ f(z^n) for a self-map of the unit disk"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

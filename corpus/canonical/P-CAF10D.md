@@ -6,7 +6,8 @@ title: "Rational function and polynomial approximation of a rational function on
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

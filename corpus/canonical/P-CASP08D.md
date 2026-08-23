@@ -6,7 +6,8 @@ title: "Entire functions with polynomial growth and meromorphic functions with p
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Maximum modulus bounds on the coefficients of a polynomial"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Schwarz-Pick inequality for self-maps of the unit disk"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

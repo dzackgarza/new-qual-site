@@ -6,7 +6,8 @@ title: "Analytic functions with prescribed boundary modulus and zeros in a disk"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

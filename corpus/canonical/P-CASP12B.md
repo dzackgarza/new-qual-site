@@ -6,7 +6,8 @@ title: "Normal families characterized by coefficient bounds"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

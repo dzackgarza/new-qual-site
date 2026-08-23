@@ -6,7 +6,8 @@ title: "An L^2 harmonic function on C satisfies the mean value property and must
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Normal family of functions vanishing at a point has a convergent subsequ
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

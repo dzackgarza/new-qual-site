@@ -6,7 +6,8 @@ title: "Zero-free disk for bounded analytic functions and characterization of ex
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

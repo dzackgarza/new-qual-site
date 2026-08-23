@@ -6,7 +6,8 @@ title: "Counting roots of z^n + z^{-m} = w in a disk via Rouché's theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

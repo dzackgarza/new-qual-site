@@ -6,7 +6,8 @@ title: "True or False: metric space convergence, contour integrals, Picard's the
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

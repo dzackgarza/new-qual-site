@@ -6,7 +6,8 @@ title: "Blaschke-type condition for zeros of holomorphic functions in the upper 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Analytic square root of z^2 - 1 on the complement of [-1,1]"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Pointwise limit of analytic functions with uniformly bounded derivatives
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

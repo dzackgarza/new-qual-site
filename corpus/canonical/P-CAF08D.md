@@ -6,7 +6,8 @@ title: "Analytic continuation and maximum principle for power series with nonneg
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

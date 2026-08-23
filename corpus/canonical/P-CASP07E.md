@@ -6,7 +6,8 @@ title: "Infinite product convergence and zeros for products of (1 - α_n z^n)"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Schwarz lemma variants: identity for simply connected and bounded domain
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

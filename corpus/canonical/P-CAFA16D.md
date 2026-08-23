@@ -6,7 +6,8 @@ title: "An analytic function on the disk vanishing on an arc of the boundary is 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

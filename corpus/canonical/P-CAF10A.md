@@ -6,7 +6,8 @@ title: "True or False: analytic continuation, germs, subsequences, and domain au
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

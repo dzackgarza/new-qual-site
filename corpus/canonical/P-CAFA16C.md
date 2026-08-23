@@ -6,7 +6,8 @@ title: "Evaluation of the integral of log(x)/(x^2+1) via residues"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Removable singularity for bounded analytic functions on punctured neighb
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Points connected to infinity outside a compact set are not in its polyno
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

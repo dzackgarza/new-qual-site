@@ -6,7 +6,8 @@ title: "Vanishing of the contour integral of e^{iz}/log(z) over a quarter circle
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Minimum modulus principle for analytic functions on bounded domains"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

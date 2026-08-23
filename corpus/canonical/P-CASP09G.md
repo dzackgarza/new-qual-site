@@ -6,7 +6,8 @@ title: "Evaluation of the Fourier transform of (sin(x)/x)^2"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Counting zeros of z^7 + 2z^3 + 4 in the first quadrant"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

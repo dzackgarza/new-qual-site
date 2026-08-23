@@ -6,13 +6,14 @@ title: "Minimum modulus bound for holomorphic function approximating e^z/z"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false
 ---
 
 ::: problem
-Let $U \subset \mathbb{C}$ be an open set that contains the closed unit disc $\overline{\mathbb{D}} \subset U$. Show that for all holomorphic functions $f: U \to \mathbb{C}$ we have
-$$\max_{|z|=1} \left|f(z) - \frac{e^z}{z}\right| \geq 1.$$
+Let $U \subset \mathbb{C}$ be an open set that contains the closed unit disc $\overline{\mathbb{D}} \subset U$.
+Show that for all holomorphic functions $f: U \to \mathbb{C}$ we have $$\max_{|z|=1} \left|f(z) - \frac{e^z}{z}\right| \geq 1.$$
 :::

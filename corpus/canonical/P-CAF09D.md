@@ -6,7 +6,8 @@ title: "Uniform limit of analytic functions is analytic and derivatives converge
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

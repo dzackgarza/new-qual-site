@@ -6,7 +6,8 @@ title: "Counting roots of z^5(z-2) = w in the unit disk and in B(2,1)"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

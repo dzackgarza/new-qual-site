@@ -6,7 +6,8 @@ title: "Polynomial approximation for the reciprocal of a nonvanishing analytic f
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

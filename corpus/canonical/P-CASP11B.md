@@ -6,7 +6,8 @@ title: "Completeness of analytic functions with the sup norm on the boundary"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

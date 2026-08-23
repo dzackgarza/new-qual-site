@@ -6,7 +6,8 @@ title: "Counting zeros of a degree-7 polynomial in the unit disk"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

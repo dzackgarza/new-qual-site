@@ -6,7 +6,8 @@ title: "Analytic continuation of the logarithm along a path is always a branch o
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

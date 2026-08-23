@@ -6,7 +6,8 @@ title: "Jensen-type inequality for bounded analytic functions with prescribed ze
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "Derivative estimate for an analytic function at the origin"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

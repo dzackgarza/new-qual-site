@@ -6,7 +6,8 @@ title: "Zeros of a polynomial in a sublevel set and Schwarz lemma-type inequalit
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

@@ -6,7 +6,8 @@ title: "An entire function with real plus imaginary part bounded is constant"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

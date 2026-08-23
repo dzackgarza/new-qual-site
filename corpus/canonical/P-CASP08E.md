@@ -6,7 +6,8 @@ title: "Evaluation of the integral of x sin(x)/(x^2+a^2) via residues"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

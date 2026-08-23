@@ -6,7 +6,8 @@ title: "Statement and proof of the Weierstrass Product Theorem"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

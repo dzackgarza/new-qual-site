@@ -6,7 +6,8 @@ title: "True or False: infinite products, bounded functions on punctured plane, 
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

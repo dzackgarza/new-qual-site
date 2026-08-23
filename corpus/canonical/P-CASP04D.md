@@ -6,7 +6,8 @@ title: "Basin of attraction of a fixed point with contraction coefficient"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

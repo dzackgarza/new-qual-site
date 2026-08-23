@@ -6,7 +6,8 @@ title: "Zeros of a sum of sin functions at cube roots of unity"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

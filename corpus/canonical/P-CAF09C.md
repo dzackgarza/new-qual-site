@@ -6,7 +6,8 @@ title: "Evaluation of the infinite product prod(1 - 1/n^2) in two different ways
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

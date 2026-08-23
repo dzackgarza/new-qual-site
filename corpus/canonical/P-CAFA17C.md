@@ -6,7 +6,8 @@ title: "Bijective analytic map from a half-disk to the upper half-plane"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false

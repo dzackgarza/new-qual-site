@@ -6,7 +6,8 @@ title: "Evaluation of the sinc integral via residue calculus"
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Complex Analysis
 relations: []
 review: draft
 solved: false
