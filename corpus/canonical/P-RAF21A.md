@@ -21,5 +21,6 @@ Let $f \in C(\mathbb{R})$ and let $A \subseteq \mathbb{R}$ be a Borel set such t
 
 (a) If $A$ is closed and countable, show that $f$ is constant.
 
-(b) If $A$ has Lebesgue measure $0$, must $f$ be constant? Prove or find a counterexample.
+(b) If $A$ has Lebesgue measure $0$, must $f$ be constant?
+Prove or find a counterexample.
 :::

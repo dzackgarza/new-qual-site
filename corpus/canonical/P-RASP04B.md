@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Compute the values of the following two expressions. You must justify your answers.
+Compute the values of the following two expressions.
+You must justify your answers.
 
 (a) $\displaystyle\sum_{n=0}^{\infty} \int_0^\infty e^{-2x} \frac{(-1)^n}{(2n+1)!} x^{2n+1}\,dx.$
 

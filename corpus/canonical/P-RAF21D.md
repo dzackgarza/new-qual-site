@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let functions $f_n \in C([0, 1])$ satisfy $\sup_n |f_n(x)| < \infty$ for each $x \in [0, 1]$. Show that there are $0 \leq a < b \leq 1$ such that $\sup_n \|f_n \chi_{(a,b)}\|_u < \infty$.
+Let functions $f_n \in C([0, 1])$ satisfy $\sup_n |f_n(x)| < \infty$ for each $x \in [0, 1]$.
+Show that there are $0 \leq a < b \leq 1$ such that $\sup_n \|f_n \chi_{(a,b)}\|_u < \infty$.
 :::

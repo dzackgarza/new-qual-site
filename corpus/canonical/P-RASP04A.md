@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-In this problem $(X, \|\cdot\|)$ is an infinite dimensional normed space. Determine which of the following statements are true. For the true statements give a brief reason and for the false statements give a counterexample.
+In this problem $(X, \|\cdot\|)$ is an infinite dimensional normed space.
+Determine which of the following statements are true.
+For the true statements give a brief reason and for the false statements give a counterexample.
 
 (a) If $A = \mathbb{R} \setminus E$ and $m(E) = 0$, then $\bar{A} = \mathbb{R}$.
 
