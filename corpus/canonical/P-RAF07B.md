@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Recall that a measure $\mu$ is semifinite if for any $E \in \mathcal{M}$ with $\mu(E) = \infty$, there exists $F \in \mathcal{M}$ with $F \subset E$ and $0 < \mu(F) < \infty$. Show that if $\mu$ is semifinite, then for any $E \in \mathcal{M}$,
+Recall that a measure $\mu$ is semifinite if for any $E \in \mathcal{M}$ with $\mu(E) = \infty$, there exists $F \in \mathcal{M}$ with $F \subset E$ and $0 < \mu(F) < \infty$.
+Show that if $\mu$ is semifinite, then for any $E \in \mathcal{M}$,
 $$
 \mu(E) = \sup\{\mu(F) : F \in \mathcal{M},\; F \subset E,\; \mu(F) < \infty\}.
 $$

@@ -14,7 +14,11 @@ solved: false
 ---
 
 ::: problem
-True or false. For each part, determine if it is always true or sometimes false. If true give a brief proof. If false give a counterexample or disprove it. No credit if reason is missing or incorrect.
+True or false.
+For each part, determine if it is always true or sometimes false.
+If true give a brief proof.
+If false give a counterexample or disprove it.
+No credit if reason is missing or incorrect.
 
 (a) If $f : \mathbb{R} \to \mathbb{R}$ is continuous with $f \in L^1(\mathbb{R}, m)$, then $\lim_{x \to \infty} f(x) = 0$.
 

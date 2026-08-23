@@ -18,7 +18,9 @@ If $f \in L^1((-\infty, -\delta) \cup (\delta, \infty))$ for every $\delta > 0$,
 $$
 \mathrm{PV} \int_{-\infty}^{\infty} f(x)\,dx = \lim_{\delta \to 0} \left(\int_{-\infty}^{-\delta} + \int_{\delta}^{\infty}\right) f(x)\,dx,
 $$
-if the limit exists. For $\phi \in \mathcal{D}(\mathbb{R})$, put $\Lambda(\phi) = \int_{-\infty}^{\infty} \dot{\phi}(x) \log|x|\,dx$. Show that
+if the limit exists.
+For $\phi \in \mathcal{D}(\mathbb{R})$, put $\Lambda(\phi) = \int_{-\infty}^{\infty} \phi(x) \log|x|\,dx$.
+Show that
 
 (a) $\Lambda'(\phi) = \mathrm{PV} \int_{-\infty}^{\infty} \frac{\phi(x)}{x}\,dx$,
 

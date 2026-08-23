@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be two norms on the linear vector space $X$. Assume that every continuous linear functional of $(X, \|\cdot\|_1)$ is also a continuous linear functional of $(X, \|\cdot\|_2)$. Prove that there exists $\alpha > 0$ such that $\|x\|_1 \leq \alpha \|x\|_2$ for all $x \in X$.
+Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be two norms on the linear vector space $X$.
+Assume that every continuous linear functional of $(X, \|\cdot\|_1)$ is also a continuous linear functional of $(X, \|\cdot\|_2)$.
+Prove that there exists $\alpha > 0$ such that $\|x\|_1 \leq \alpha \|x\|_2$ for all $x \in X$.
 :::

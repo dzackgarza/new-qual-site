@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Suppose that on $\mathbb{R}^n$, $\phi(x) \leq C(1 + \|x\|)^{-n-\epsilon}$ for some positive $C$ and $\epsilon > 0$. Also assume that $\phi(x)$ is measurable. If $f \in L^p(\mathbb{R}^n)$ with $1 \leq p \leq \infty$, define
+Suppose that on $\mathbb{R}^n$, $\phi(x) \leq C(1 + \|x\|)^{-n-\epsilon}$ for some positive $C$ and $\epsilon > 0$.
+Also assume that $\phi(x)$ is measurable.
+If $f \in L^p(\mathbb{R}^n)$ with $1 \leq p \leq \infty$, define
 $$
 \mathcal{U}_\phi(f)(x) := \sup_{t > 0} \{f * \phi_t(x)\}
 $$
