@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Show that the function $e^x \sin(e^x)$ defines a tempered distribution on $\mathbb{R}$. (That is, show that the distribution it defines extends to a tempered distribution.)
+Show that the function $e^x \sin(e^x)$ defines a tempered distribution on $\mathbb{R}$.
+(That is, show that the distribution it defines extends to a tempered distribution.)
 :::

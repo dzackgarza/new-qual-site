@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $H$ be a Hilbert space. Suppose that there is a sequence $\{x_j\}$ in $H$ such that the finite linear combinations of the $x_j$ are dense in $H$ and
+Let $H$ be a Hilbert space.
+Suppose that there is a sequence $\{x_j\}$ in $H$ such that the finite linear combinations of the $x_j$ are dense in $H$ and
 $$
 |\langle x_j, x_k \rangle| \leq \frac{1}{1 + |j - k|}.
 $$

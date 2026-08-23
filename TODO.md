@@ -6,8 +6,7 @@ Updated 2026-08-21. Plan: `PLAN-CORPUS-DATA-ISSUES` (under `PLAN-QUAL-OUTSTANDIN
 Do not add provenance, problems, wiki links, or collection membership just to clear a finding.
 Honest empty / incomplete / unread is a valid disposition.
 
-Live measurement queues: `BACKLOG.md`, regenerated automatically before
-every push (`just test-push` runs it first; `just backlog` forces it).
+Live measurement queues: `BACKLOG.md`, regenerated automatically before every push (`just test-push` runs it first; `just backlog` forces it).
 
 AGENTS.md still governs: read to decide; do not invent provenance; no semantic automation.
 
