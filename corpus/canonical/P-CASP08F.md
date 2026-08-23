@@ -6,7 +6,7 @@ title: "Rational functions with prescribed limits on disjoint regions"
 classification:
   areas:
   - complex-analysis
-topics: []
+  topics: []
 relations: []
 review: draft
 solved: false

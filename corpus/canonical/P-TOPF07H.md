@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Show that the Euler characteristic of a closed orientable odd-dimensional manifold is zero. Is this still true if the manifold is non-orientable?
+Show that the Euler characteristic of a closed orientable odd-dimensional manifold is zero.
+Is this still true if the manifold is non-orientable?
 :::

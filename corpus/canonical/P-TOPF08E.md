@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-Calculate the mod $2$ cohomology ring of the space $X(m, n) = \mathbb{CP}^m \times \mathbb{RP}^n$ where $m, n$ are positive integers. Show that $X(m, n)$ is homotopy equivalent to $X(m', n')$ if and only if $(m, n) = (m', n')$.
+Calculate the mod $2$ cohomology ring of the space $X(m, n) = \mathbb{CP}^m \times \mathbb{RP}^n$ where $m, n$ are positive integers.
+Show that $X(m, n)$ is homotopy equivalent to $X(m', n')$ if and only if $(m, n) = (m', n')$.
 :::

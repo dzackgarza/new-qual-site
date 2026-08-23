@@ -13,5 +13,6 @@ solved: false
 ---
 
 ::: problem
-Suppose that $f_j \to f$ in $H(\{\operatorname{Im} z > 0\})$, with each $f_j$ one-to-one. If $f$ is not constant, show that $f$ is one-to-one.
+Suppose that $f_j \to f$ in $H(\{\operatorname{Im} z > 0\})$, with each $f_j$ one-to-one.
+If $f$ is not constant, show that $f$ is one-to-one.
 :::

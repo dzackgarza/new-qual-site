@@ -15,5 +15,8 @@ solved: false
 ---
 
 ::: problem
-Consider a solid cube. Four of the faces are identified together by means of rigid rotations, as pictured below. (For example, the face $ABCD$ is identified with $EFGH$ via an affine map preserving the order of vertices.) Compute the fundamental group of the resulting quotient space.
+Consider a solid cube.
+Four of the faces are identified together by means of rigid rotations, as pictured below.
+(For example, the face $ABCD$ is identified with $EFGH$ via an affine map preserving the order of vertices.)
+Compute the fundamental group of the resulting quotient space.
 :::

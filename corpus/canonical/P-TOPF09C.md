@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $Y$ be a space obtained by attaching a $4$-ball, via a degree $6$ map of its boundary, to a $3$-sphere. Calculate the integral homology $H^*(Y \times \mathbb{RP}^2; \mathbb{Z})$.
+Let $Y$ be a space obtained by attaching a $4$-ball, via a degree $6$ map of its boundary, to a $3$-sphere.
+Calculate the integral homology $H^*(Y \times \mathbb{RP}^2; \mathbb{Z})$.
 :::
