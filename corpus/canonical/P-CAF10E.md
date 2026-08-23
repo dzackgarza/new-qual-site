@@ -6,7 +6,7 @@ title: "Zeros of a polynomial in a sublevel set and Schwarz lemma-type inequalit
 classification:
   areas:
   - complex-analysis
-topics: []
+  topics: []
 relations: []
 review: draft
 solved: false
@@ -17,7 +17,9 @@ Let $p(z)$ be a nonconstant polynomial and let $G$ be a connected component of t
 
 (a) Show that $p(z)$ must have at least one zero in $G$.
 
-(b) Let $f(z)$ be analytic in $G$, satisfying $|f(z)| \leq 1$ there. Assume that $f(z)$ vanishes at every zero of $p(z)$ in $G$ and that the vanishing order of $f(z)$ at each such zero is at least that of $p(z)$. Show that:
+(b) Let $f(z)$ be analytic in $G$, satisfying $|f(z)| \leq 1$ there.
+Assume that $f(z)$ vanishes at every zero of $p(z)$ in $G$ and that the vanishing order of $f(z)$ at each such zero is at least that of $p(z)$.
+Show that:
 
 (i) $|f(z)| \leq |p(z)|$ in $G$.
 
