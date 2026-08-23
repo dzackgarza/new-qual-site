@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $q : S^3 \to \mathbb{RP}^3$ be the usual quotient map which identifies antipodal points. It can be used to attach a $4$-ball to $\mathbb{RP}^3$, forming a space $X = \mathbb{RP}^3 \cup_q B^4$. Compute $\pi_4(X)$.
+Let $q : S^3 \to \mathbb{RP}^3$ be the usual quotient map which identifies antipodal points.
+It can be used to attach a $4$-ball to $\mathbb{RP}^3$, forming a space $X = \mathbb{RP}^3 \cup_q B^4$.
+Compute $\pi_4(X)$.
 :::

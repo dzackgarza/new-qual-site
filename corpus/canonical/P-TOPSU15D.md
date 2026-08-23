@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $X_n$ be a space whose homology groups are given by $H_k(X_n; \mathbb{Z}) \cong \mathbb{Z}/k\mathbb{Z}$ for $0 \leq k \leq n$ and which vanish for $k > n$. Compute the homology $H_*(X_3 \times X_5; \mathbb{Z})$.
+Let $X_n$ be a space whose homology groups are given by $H_k(X_n; \mathbb{Z}) \cong \mathbb{Z}/k\mathbb{Z}$ for $0 \leq k \leq n$ and which vanish for $k > n$.
+Compute the homology $H_*(X_3 \times X_5; \mathbb{Z})$.
 :::
