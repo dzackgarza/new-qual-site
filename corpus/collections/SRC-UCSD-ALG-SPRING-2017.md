@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/ALGEBRA-EXAM.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: algebra
-  problems: []
+  problems:
+  - P-ALGS17A
+  - P-ALGS17B
+  - P-ALGS17C
+  - P-ALGS17D
+  - P-ALGS17E
+  - P-ALGS17F
+  - P-ALGS17G
   date:
     kind: academic-term
     term: spring

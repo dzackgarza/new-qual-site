@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/200-Qual-SP21.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: algebra
-  problems: []
+  problems:
+  - P-ALGS21A
+  - P-ALGS21B
+  - P-ALGS21C
+  - P-ALGS21D
+  - P-ALGS21E
+  - P-ALGS21F
+  - P-ALGS21G
   date:
     kind: academic-term
     term: spring

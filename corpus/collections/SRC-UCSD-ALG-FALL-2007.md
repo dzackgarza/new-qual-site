@@ -9,14 +9,20 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA07_200_Algebra_Qual.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: algebra
-  problems: []
+  problems:
+  - P-ALGF07A
+  - P-ALGF07B
+  - P-ALGF07C
+  - P-ALGF07D
+  - P-ALGF07E
+  - P-ALGF07F
   date:
     kind: academic-term
     term: fall

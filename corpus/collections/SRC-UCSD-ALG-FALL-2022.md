@@ -9,14 +9,20 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/FA_ALGEBRA_200ABC.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: algebra
-  problems: []
+  problems:
+  - P-ALGF22A
+  - P-ALGF22B
+  - P-ALGF22C
+  - P-ALGF22D
+  - P-ALGF22E
+  - P-ALGF22F
   date:
     kind: academic-term
     term: fall

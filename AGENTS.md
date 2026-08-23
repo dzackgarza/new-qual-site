@@ -144,6 +144,29 @@ merge, or repair content during migration is done. Delete it when the work is
 finished. Do not keep it, do not write tests for it, do not enshrine it as a
 recipe. Its output is committed corpus content; the tool itself is fossil.
 
+## PDF extraction
+
+**Never use `pdftotext` for extracting mathematics from PDFs.** It is a plain-text
+extractor from the early 2000s that destroys mathematical notation: it cannot
+handle superscripts, subscripts, integrals, summations, matrices, commutative
+diagrams, fractions, set-builder notation, or any non-ASCII mathematical symbol.
+The output is unreadable garbage for any exam, textbook, or homework sheet that
+contains actual mathematics. This is not a judgment call — pdftotext produces
+factually incorrect transcriptions of mathematical content.
+
+Always use modern OCR-aware extraction tools:
+- **MinerU** — preferred for typeset PDFs with mathematical notation
+- **MistralOCR** — for scanned or image-heavy documents
+- **Zotero extraction pipeline** — when the source is a Zotero item, use the
+  vendored extraction artifacts already on disk (see `TEXTBOOK_SOURCES.md`)
+
+These tools preserve mathematical structure: they recognize LaTeX output,
+mathematical symbols, and document layout. The extraction output is then a
+starting point for a human to read and correct, not a final transcription.
+
+If the source is scanned (image-based PDF), OCR is mandatory before any
+human reading — pdftotext cannot process scanned pages at all.
+
 ## What a tool may do
 
 A tool may render and transport: build the site, sync an external file into the
