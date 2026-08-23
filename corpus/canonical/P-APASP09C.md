@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $\tilde{x}$ be a least squares solution to $Ax = b$, where $A$ is $m \times n$ and $m \geq n$. Let $A^\dagger$ be the pseudo-inverse of $A$. Use the Singular Value Decomposition to show that $\tilde{x} = A^\dagger b$ is the minimum 2-norm least squares solution to $Ax = b$, i.e.\ show
+Let $\tilde{x}$ be a least squares solution to $Ax = b$, where $A$ is $m \times n$ and $m \geq n$.
+Let $A^\dagger$ be the pseudo-inverse of $A$.
+Use the Singular Value Decomposition to show that $\tilde{x} = A^\dagger b$ is the minimum 2-norm least squares solution to $Ax = b$, i.e.\ show
 
 (a) $\tilde{x}$ is a least squares solution,
 

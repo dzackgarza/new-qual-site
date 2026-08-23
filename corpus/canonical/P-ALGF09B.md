@@ -16,7 +16,8 @@ solved: false
 ::: problem
 Let $G$ be a group with $|G| = p(p+1)$, where $p$ is an odd prime and $(p+1) = 2^n$ is a power of 2. Suppose further that $G$ does not have a normal Sylow $p$-subgroup.
 
-(a) Show that $G$ has a normal subgroup $H$ of order $p+1$. Show that $G$ is isomorphic to a semidirect product $H \rtimes \mathbb{Z}_p$.
+(a) Show that $G$ has a normal subgroup $H$ of order $p+1$.
+Show that $G$ is isomorphic to a semidirect product $H \rtimes \mathbb{Z}_p$.
 
 (b) Prove that the subgroup $H$ in part (a) is abelian.
 

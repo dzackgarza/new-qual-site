@@ -20,5 +20,7 @@ Let $X$ and $Y$ be two independent variables.
 
 (b) Prove that the ring $R_2 := \mathbb{Q}[X,Y]/((Y^2 + X)^3)$ is not a local ring by giving examples (with proof) of two distinct maximal ideals in $R_2$.
 
-(c) Give an example of a prime ideal in $R_2$ which is not maximal. Are there such ideals in $R_1$? Justify your answers.
+(c) Give an example of a prime ideal in $R_2$ which is not maximal.
+Are there such ideals in $R_1$?
+Justify your answers.
 :::

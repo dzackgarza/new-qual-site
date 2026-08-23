@@ -14,7 +14,5 @@ solved: false
 ---
 
 ::: problem
-Show that
-$$e^{x_1 + x_2 + \cdots} = \sum_{\lambda} s_\lambda \cdot \frac{1}{h_\lambda}$$
-where $h_\lambda$ denotes the product of the hook lengths of $\lambda$.
+Show that $$e^{x_1 + x_2 + \cdots} = \sum_{\lambda} s_\lambda \cdot \frac{1}{h_\lambda}$$ where $h_\lambda$ denotes the product of the hook lengths of $\lambda$.
 :::

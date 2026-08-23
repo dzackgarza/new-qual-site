@@ -14,7 +14,7 @@ solved: false
 ---
 
 ::: problem
-Suppose $E/F$ is a separable extension and $[E:F] = n$. Suppose $\overline{E}$ is an algebraic closure of $E$. Prove that
-$$E \otimes_F \overline{E} \simeq \underbrace{\overline{E} \oplus \cdots \oplus \overline{E}}_{n \text{ times}}$$
-as rings.
+Suppose $E/F$ is a separable extension and $[E:F] = n$.
+Suppose $\overline{E}$ is an algebraic closure of $E$.
+Prove that $$E \otimes_F \overline{E} \simeq \underbrace{\overline{E} \oplus \cdots \oplus \overline{E}}_{n \text{ times}}$$ as rings.
 :::

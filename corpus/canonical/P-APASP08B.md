@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Show that if $f$ is a nilpotent element of the group algebra of a finite group $\Gamma$, then $\hat{f} = 0$. Hint: Use the Fourier transform.
+Show that if $f$ is a nilpotent element of the group algebra of a finite group $\Gamma$, then $\hat{f} = 0$.
+Hint: Use the Fourier transform.
 :::

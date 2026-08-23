@@ -20,8 +20,7 @@ Construct the group $G$ of $3 \times 3$ matrices by applying the Young natural r
 
 (1) Compute the Hilbert series $F_{\mathbb{R}[x]}(q)$ of the ring of $G$-invariants.
 
-(2) Rewrite it in the form
-$$F_{\mathbb{R}[x]}(q) = \frac{1 + q^d}{(1 - q^{d_1})(1 - q^{d_2})(1 - q^{d_3})}.$$
+(2) Rewrite it in the form $$F_{\mathbb{R}[x]}(q) = \frac{1 + q^d}{(1 - q^{d_1})(1 - q^{d_2})(1 - q^{d_3})}.$$
 
 (3) Calculate the first 10 terms of this series.
 
@@ -29,7 +28,8 @@ $$F_{\mathbb{R}[x]}(q) = \frac{1 + q^d}{(1 - q^{d_1})(1 - q^{d_2})(1 - q^{d_3})}
 
 (5) Compute the Gröbner basis of the ideal $(I_1, I_2, I_3)$.
 
-(6) Verify that $I_1, I_2, I_3$ are a system of parameters by checking that the quotient $\mathbb{Q}[x_1, x_2, x_3]/(I_1, I_2, I_3)$ has finite dimension. If not, go back to step (4).
+(6) Verify that $I_1, I_2, I_3$ are a system of parameters by checking that the quotient $\mathbb{Q}[x_1, x_2, x_3]/(I_1, I_2, I_3)$ has finite dimension.
+If not, go back to step (4).
 
 (7) Construct a $G$-invariant $\eta$ of degree $d$.
 
@@ -39,5 +39,6 @@ $$F_{\mathbb{R}[x]}(q) = \frac{1 + q^d}{(1 - q^{d_1})(1 - q^{d_2})(1 - q^{d_3})}
 
 (10) Compute the Jacobian of $I_1, I_2, I_3$ and construct its linear factors.
 
-(11) Assuming that there is a reflection group $G'$ that also leaves $I_1, I_2, I_3$ invariant, you could have predicted the number of these linear factors. Why?
+(11) Assuming that there is a reflection group $G'$ that also leaves $I_1, I_2, I_3$ invariant, you could have predicted the number of these linear factors.
+Why?
 :::

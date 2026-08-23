@@ -15,8 +15,5 @@ solved: false
 ---
 
 ::: problem
-Use the partial fraction package of Guoce Xin to compute the generating function
-$$F_{S_2}(x_1, x_2, x_3, x_4) = \sum_{p \in S_2} x_1^{p_1} x_2^{p_2} x_3^{p_3} x_4^{p_4}$$
-where the sum is over the compositions $p = (p_1, p_2, p_3, p_4)$ which are solutions of the Diophantine system
-$$\begin{cases} p_1 + p_2 - p_3 - p_4 = 0 \\ p_1 - p_2 + p_3 - p_4 = 0 \end{cases}$$
+Use the partial fraction package of Guoce Xin to compute the generating function $$F_{S_2}(x_1, x_2, x_3, x_4) = \sum_{p \in S_2} x_1^{p_1} x_2^{p_2} x_3^{p_3} x_4^{p_4}$$ where the sum is over the compositions $p = (p_1, p_2, p_3, p_4)$ which are solutions of the Diophantine system $$\begin{cases} p_1 + p_2 - p_3 - p_4 = 0 \\ p_1 - p_2 + p_3 - p_4 = 0 \end{cases}$$
 :::

@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be a ring with identity such that the identity map is the only ring automorphism of $R$. Prove that the set $N$ of all nilpotent elements of $R$ is an ideal of $R$.
+Let $R$ be a ring with identity such that the identity map is the only ring automorphism of $R$.
+Prove that the set $N$ of all nilpotent elements of $R$ is an ideal of $R$.
 
 Hint: $1 + n$, with $n$ a nilpotent element, is invertible.
 :::

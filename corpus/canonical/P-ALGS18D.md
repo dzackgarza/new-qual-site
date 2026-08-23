@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Suppose $A$ is a PID, and $M$ is a finitely generated $A$-module. Prove that $M$ is projective if and only if $M$ is free.
+Suppose $A$ is a PID, and $M$ is a finitely generated $A$-module.
+Prove that $M$ is projective if and only if $M$ is free.
 :::

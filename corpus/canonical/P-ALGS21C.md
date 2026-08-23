@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $f = x^6 - 5$. Let $K$ be the splitting field of $f$ over $F = \mathbb{Q}(\sqrt{5})$. Find the Galois group $\operatorname{Gal}(K/F)$ and show it is isomorphic to a familiar group.
+Let $f = x^6 - 5$.
+Let $K$ be the splitting field of $f$ over $F = \mathbb{Q}(\sqrt{5})$.
+Find the Galois group $\operatorname{Gal}(K/F)$ and show it is isomorphic to a familiar group.
 :::

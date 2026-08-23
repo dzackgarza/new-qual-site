@@ -15,6 +15,5 @@ solved: false
 ---
 
 ::: problem
-Give a representation-theoretic interpretation of the identity
-$$\omega_{\mu,\nu} = \cdots$$
+Give a representation-theoretic interpretation of the identity $$\omega_{\mu,\nu} = \cdots$$
 :::

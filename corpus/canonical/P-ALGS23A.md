@@ -18,7 +18,9 @@ Suppose $G$ is a group of order 55.
 
 (a) Classify possible structures of the group $G$.
 
-(b) Is $G$ always solvable? Justify your answer.
+(b) Is $G$ always solvable?
+Justify your answer.
 
-(c) Is $G$ always nilpotent? Justify your answer.
+(c) Is $G$ always nilpotent?
+Justify your answer.
 :::

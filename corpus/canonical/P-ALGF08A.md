@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a finite group of order a prime power. Show that $G$ is nilpotent.
+Let $G$ be a finite group of order a prime power.
+Show that $G$ is nilpotent.
 :::

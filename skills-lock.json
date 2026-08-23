@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "MinerU Document Extractor": {
+      "source": "opendatalab/mineru-ecosystem",
+      "sourceType": "github",
+      "skillPath": "skills/SKILL.md",
+      "computedHash": "9bb67e4a018a0dc6e94ebcec3067af436e86e6846f16788e68c8a688401c7d01"
+    }
+  }
+}

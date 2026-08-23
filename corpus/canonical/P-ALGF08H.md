@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be the polynomial ring in $n$ variables over the field $k$. Show that any maximal ideal in $R$ intersects the polynomial ring in each of the variables.
+Let $R$ be the polynomial ring in $n$ variables over the field $k$.
+Show that any maximal ideal in $R$ intersects the polynomial ring in each of the variables.
 
 Hint: Nullstellensatz.
 :::

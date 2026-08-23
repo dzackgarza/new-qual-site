@@ -15,7 +15,9 @@ solved: false
 ---
 
 ::: problem
-Suppose that $A$ is a unital commutative ring without any non-zero nilpotent elements. Let $N \in \operatorname{Mat}_n(A)$ be a nilpotent element. Prove that $N^n = 0$.
+Suppose that $A$ is a unital commutative ring without any non-zero nilpotent elements.
+Let $N \in \operatorname{Mat}_n(A)$ be a nilpotent element.
+Prove that $N^n = 0$.
 
 Hint: Prove that $N^n \in \operatorname{Mat}_n(\mathfrak{p})$ for all prime ideals $\mathfrak{p}$ in $A$.
 :::

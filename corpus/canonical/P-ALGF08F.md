@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be a commutative ring with identity and $S$ the set of non-zero-divisors of $R$. Using Zorn's Lemma, show that there is a prime ideal of $R$ that intersects $S$ trivially.
+Let $R$ be a commutative ring with identity and $S$ the set of non-zero-divisors of $R$.
+Using Zorn's Lemma, show that there is a prime ideal of $R$ that intersects $S$ trivially.
 :::

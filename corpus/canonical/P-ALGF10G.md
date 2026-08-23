@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be a commutative ring with identity and let $U$ be maximal among non-finitely generated ideals of $R$. Prove $U$ is a prime ideal.
+Let $R$ be a commutative ring with identity and let $U$ be maximal among non-finitely generated ideals of $R$.
+Prove $U$ is a prime ideal.
 :::

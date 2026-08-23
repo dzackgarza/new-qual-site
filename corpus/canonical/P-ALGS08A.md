@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a finite group and $H$ a proper subgroup. Show that $G$ is not the set-theoretic union of the conjugates of $H$.
+Let $G$ be a finite group and $H$ a proper subgroup.
+Show that $G$ is not the set-theoretic union of the conjugates of $H$.
 :::

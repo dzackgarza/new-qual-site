@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $K$ be a field with $|K| = 64$. Let $\mathbb{F}_2$ be the prime subfield of $K$. Let $G = \operatorname{Gal}(K/\mathbb{F}_2)$ act in the natural way on $K$, where for $\sigma \in G$ and $a \in K$ we have $\sigma \cdot a = \sigma(a)$.
+Let $K$ be a field with $|K| = 64$.
+Let $\mathbb{F}_2$ be the prime subfield of $K$.
+Let $G = \operatorname{Gal}(K/\mathbb{F}_2)$ act in the natural way on $K$, where for $\sigma \in G$ and $a \in K$ we have $\sigma \cdot a = \sigma(a)$.
 
 (a) Describe the orbits of this action and calculate how many distinct orbits there are of each size.
 

@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $F$ be a prime field, so that $F$ is either isomorphic to $\mathbb{Q}$ or $\mathbb{F}_p$ for a prime $p$. Show that the algebraic closure of $F$ is infinite-dimensional over $F$.
+Let $F$ be a prime field, so that $F$ is either isomorphic to $\mathbb{Q}$ or $\mathbb{F}_p$ for a prime $p$.
+Show that the algebraic closure of $F$ is infinite-dimensional over $F$.
 :::

@@ -18,7 +18,6 @@ Suppose $A$ is a unital commutative ring, and $\langle a_1, \ldots, a_m \rangle 
 
 (a) Prove that $\langle a_1^{k_1}, \ldots, a_m^{k_m} \rangle = A$ for any positive integers $k_i$'s.
 
-(b) Let $S_i := \{1, a_i, a_i^2, \ldots\}$ for any $1 \leq i \leq m$. Prove that
-$$\theta: A \to S_1^{-1}A \times \cdots \times S_m^{-1}A, \quad \theta(x) := \left(\frac{x}{1}, \ldots, \frac{x}{1}\right)$$
-is injective.
+(b) Let $S_i := \{1, a_i, a_i^2, \ldots\}$ for any $1 \leq i \leq m$.
+Prove that $$\theta: A \to S_1^{-1}A \times \cdots \times S_m^{-1}A, \quad \theta(x) := \left(\frac{x}{1}, \ldots, \frac{x}{1}\right)$$ is injective.
 :::

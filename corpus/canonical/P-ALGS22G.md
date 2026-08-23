@@ -16,7 +16,8 @@ solved: false
 ::: problem
 Let $k$ be a field and let $A$ be a finitely generated commutative $k$-algebra.
 
-(a) Suppose that $A$ is simple as an $A$-module. Prove that $A$ is a finite-dimensional $k$-vector space.
+(a) Suppose that $A$ is simple as an $A$-module.
+Prove that $A$ is a finite-dimensional $k$-vector space.
 
 (b) Show that $A$ is an Artinian ring if and only if $A$ is a finite-dimensional $k$-vector space.
 :::

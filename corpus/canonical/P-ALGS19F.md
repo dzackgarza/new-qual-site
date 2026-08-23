@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-(a) Suppose $D$ is an integral domain and $M$ is a flat $D$-module. Prove that $M$ is torsion-free.
+(a) Suppose $D$ is an integral domain and $M$ is a flat $D$-module.
+Prove that $M$ is torsion-free.
 
-(b) Suppose $D$ is a PID and $M$ is a finitely generated flat $D$-module. Prove that $M$ is a free $D$-module.
+(b) Suppose $D$ is a PID and $M$ is a finitely generated flat $D$-module.
+Prove that $M$ is a free $D$-module.
 :::

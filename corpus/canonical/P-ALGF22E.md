@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $I$ be an ideal of a commutative ring $R$. Suppose that $R/I$ is a flat $R$-module. Show that $I \cap J = IJ$ for all ideals $J$ of $R$.
+Let $I$ be an ideal of a commutative ring $R$.
+Suppose that $R/I$ is a flat $R$-module.
+Show that $I \cap J = IJ$ for all ideals $J$ of $R$.
 :::

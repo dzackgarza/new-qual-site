@@ -15,5 +15,7 @@ solved: false
 ---
 
 ::: problem
-Let $\sigma$ be an $(n-1)$-cycle in $S_n$. Determine all Young diagrams $\lambda$ with $n$ boxes for which $\chi^\lambda(\sigma) \neq 0$. Partial credit if you calculate all characters of an $(n-1)$-cycle for $n = 3, 4$.
+Let $\sigma$ be an $(n-1)$-cycle in $S_n$.
+Determine all Young diagrams $\lambda$ with $n$ boxes for which $\chi^\lambda(\sigma) \neq 0$.
+Partial credit if you calculate all characters of an $(n-1)$-cycle for $n = 3, 4$.
 :::

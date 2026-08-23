@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $n_i$, $0 \leq i \leq m$ be integers. Use the Chinese Remainder Theorem to prove there exists a unique polynomial $f(X) \in \mathbb{Q}[X]$ of degree $\leq m$ with $f(i) = n_i$ for $0 \leq i \leq m$.
+Let $n_i$, $0 \leq i \leq m$ be integers.
+Use the Chinese Remainder Theorem to prove there exists a unique polynomial $f(X) \in \mathbb{Q}[X]$ of degree $\leq m$ with $f(i) = n_i$ for $0 \leq i \leq m$.
 :::

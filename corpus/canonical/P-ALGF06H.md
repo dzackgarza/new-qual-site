@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Find the splitting fields and Galois groups of the following polynomials over $\mathbb{Q}$. You should state clearly results that you use.
+Find the splitting fields and Galois groups of the following polynomials over $\mathbb{Q}$.
+You should state clearly results that you use.
 
 (a) $(x^2 + 3)(x^3 - 5)$
 

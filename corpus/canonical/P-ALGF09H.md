@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be a commutative ring with identity. Suppose that $I$ and $J$ are ideals of $R$ such that $R/I$ and $R/J$ are Noetherian rings. Prove that $R/(I \cap J)$ is also a Noetherian ring.
+Let $R$ be a commutative ring with identity.
+Suppose that $I$ and $J$ are ideals of $R$ such that $R/I$ and $R/J$ are Noetherian rings.
+Prove that $R/(I \cap J)$ is also a Noetherian ring.
 :::

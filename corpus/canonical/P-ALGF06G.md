@@ -25,7 +25,8 @@ Let $R := \mathbb{Z}[\sqrt{10}] = \{a + b\sqrt{10} \mid a, b \in \mathbb{Z}\}$, 
 
 (d) Show that every element in $R$ can be written as a product of irreducible elements.
 
-(e) Is $R$ a unique factorization domain? Justify your answer.
+(e) Is $R$ a unique factorization domain?
+Justify your answer.
 
 Hint: Recall that there is a multiplicative norm map $N: \mathbb{Z}[\sqrt{10}] \to \mathbb{Z}$ given by $N(a + b\sqrt{10}) = a^2 - 10b^2$, for all $a, b \in \mathbb{Z}$.
 :::

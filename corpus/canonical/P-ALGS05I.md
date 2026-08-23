@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $p(x) = x^3 + 3x^2 + 2$. Find the Galois group of the splitting field of $p(x)$ over the rationals and over the field of five elements.
+Let $p(x) = x^3 + 3x^2 + 2$.
+Find the Galois group of the splitting field of $p(x)$ over the rationals and over the field of five elements.
 :::

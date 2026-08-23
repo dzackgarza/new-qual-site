@@ -16,7 +16,9 @@ solved: false
 ::: problem
 Suppose $p$ is a prime number and the minimal polynomial of $a \in M_p(F)$ is $t^p - 1$.
 
-(a) Find the Jordan form of $a$ if $F = \mathbb{C}$. Justify your answer.
+(a) Find the Jordan form of $a$ if $F = \mathbb{C}$.
+Justify your answer.
 
-(b) Find the Jordan form of $a$ if $F = \mathbb{F}_p$. Justify your answer.
+(b) Find the Jordan form of $a$ if $F = \mathbb{F}_p$.
+Justify your answer.
 :::

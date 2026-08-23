@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Suppose $F$ is a field, $f \in F[x]$ is irreducible, and $E$ is a splitting field of $f$ over $F$. Suppose there exists $\alpha \in E$ such that $f(\alpha) = f(\alpha + 1) = 0$. Prove that the characteristic of $F$ is positive.
+Suppose $F$ is a field, $f \in F[x]$ is irreducible, and $E$ is a splitting field of $f$ over $F$.
+Suppose there exists $\alpha \in E$ such that $f(\alpha) = f(\alpha + 1) = 0$.
+Prove that the characteristic of $F$ is positive.
 :::

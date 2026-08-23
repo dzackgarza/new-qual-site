@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $R = \mathbb{Z}[x]/(2x-1)$. Let $S = \{1, 2, 4, 8, \ldots\} \subseteq \mathbb{Z}$.
+Let $R = \mathbb{Z}[x]/(2x-1)$.
+Let $S = \{1, 2, 4, 8, \ldots\} \subseteq \mathbb{Z}$.
 
 (a) Show that $R$ is isomorphic as a ring to the localization $S^{-1}\mathbb{Z}$.
 

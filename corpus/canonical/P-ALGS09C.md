@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $p$ be a prime number and let $K$, $L$ be fields of orders $p^m$, $p^n$ respectively, where $m < n$. When is $K$ isomorphic to a subfield of $L$?
+Let $p$ be a prime number and let $K$, $L$ be fields of orders $p^m$, $p^n$ respectively, where $m < n$.
+When is $K$ isomorphic to a subfield of $L$?
 :::

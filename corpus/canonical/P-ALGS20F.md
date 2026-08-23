@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $F$ be a field with algebraic closure $\overline{F}$. Let $F \subseteq K \subseteq \overline{F}$ and $F \subseteq L \subseteq \overline{F}$, where $K$ and $L$ are fields with $[K:F] < \infty$ and $[L:F] < \infty$. Prove that the following conditions are equivalent:
+Let $F$ be a field with algebraic closure $\overline{F}$.
+Let $F \subseteq K \subseteq \overline{F}$ and $F \subseteq L \subseteq \overline{F}$, where $K$ and $L$ are fields with $[K:F] < \infty$ and $[L:F] < \infty$.
+Prove that the following conditions are equivalent:
 
 (1) $K \otimes_F L$ is a field.
 

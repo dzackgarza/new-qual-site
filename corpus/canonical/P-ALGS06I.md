@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-(a) Let $p$ be an odd prime. Show that $\sin\!\left(\frac{2\pi}{p}\right)$ is algebraic over $\mathbb{Q}$ and determine its degree over $\mathbb{Q}$.
+(a) Let $p$ be an odd prime.
+Show that $\sin\!\left(\frac{2\pi}{p}\right)$ is algebraic over $\mathbb{Q}$ and determine its degree over $\mathbb{Q}$.
 
 (b) Show that $\mathbb{Q}\!\left(\sin\!\left(\frac{2\pi}{p}\right)\right)$ is a Galois extension of $\mathbb{Q}$ and determine its Galois group over $\mathbb{Q}$.
 

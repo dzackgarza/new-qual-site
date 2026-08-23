@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be the group of $2 \times 2$ invertible matrices with entries in the finite field $\mathbb{Z}_p$. Then $|G| = (p-1)^2 p(p+1)$. Assume that $p = 17$, so $|G| = 2^9 \cdot 3^2 \cdot 17$.
+Let $G$ be the group of $2 \times 2$ invertible matrices with entries in the finite field $\mathbb{Z}_p$.
+Then $|G| = (p-1)^2 p(p+1)$.
+Assume that $p = 17$, so $|G| = 2^9 \cdot 3^2 \cdot 17$.
 
 (a) Let $x$ be an element of $G$ of order 17. Prove that $x$ is conjugate to an element of the form $\begin{pmatrix} 1 & b \\ 0 & 1 \end{pmatrix}$.
 

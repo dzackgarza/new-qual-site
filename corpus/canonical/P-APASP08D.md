@@ -15,7 +15,5 @@ solved: false
 ---
 
 ::: problem
-Give the expansion of the Garnir polynomial $G_{\mathcal{T}}(x)$ corresponding to the tableau
-$$T = \begin{array}{ccc} & & 3 \\ & & 5 \\ 1 & 1 & \end{array}$$
-in terms of the Garnir polynomials of the standard tableaux of the same shape.
+Give the expansion of the Garnir polynomial $G_{\mathcal{T}}(x)$ corresponding to the tableau $$T = \begin{array}{ccc} & & 3 \\ & & 5 \\ 1 & 1 & \end{array}$$ in terms of the Garnir polynomials of the standard tableaux of the same shape.
 :::

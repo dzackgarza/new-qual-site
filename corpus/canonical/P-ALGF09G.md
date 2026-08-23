@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $I$ be an ideal in the polynomial ring $\mathbb{C}[x_1, \ldots, x_n]$ for some $n \geq 1$. Prove that the following conditions on $I$ are all equivalent:
+Let $I$ be an ideal in the polynomial ring $\mathbb{C}[x_1, \ldots, x_n]$ for some $n \geq 1$.
+Prove that the following conditions on $I$ are all equivalent:
 
 (i) $\mathbb{C}[x_1, \ldots, x_n]/I$ is a finite-dimensional $\mathbb{C}$-vector space;
 

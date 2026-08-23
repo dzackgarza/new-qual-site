@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Suppose there exists an intermediate field $L$ of the Galois extension $F/E$ of degree 2 over $E$. What can we say about $\operatorname{Gal}(F/E)$?
+Suppose there exists an intermediate field $L$ of the Galois extension $F/E$ of degree 2 over $E$.
+What can we say about $\operatorname{Gal}(F/E)$?
 :::

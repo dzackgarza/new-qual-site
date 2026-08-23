@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $F$ be a prime field (the rationals or a field with $p$ elements). Prove that the algebraic closure of $F$ is infinite-dimensional over $F$.
+Let $F$ be a prime field (the rationals or a field with $p$ elements).
+Prove that the algebraic closure of $F$ is infinite-dimensional over $F$.
 :::

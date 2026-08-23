@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Suppose $f(x) \in \mathbb{Q}[x]$ is an irreducible polynomial of degree $p+1$ where $p$ is a prime. Let $E$ be a splitting field of $f$ over $\mathbb{Q}$. Suppose $[E:\mathbb{Q}] = p(p+1)$.
+Suppose $f(x) \in \mathbb{Q}[x]$ is an irreducible polynomial of degree $p+1$ where $p$ is a prime.
+Let $E$ be a splitting field of $f$ over $\mathbb{Q}$.
+Suppose $[E:\mathbb{Q}] = p(p+1)$.
 
 (a) Prove that for any zero $\alpha \in E$ of $f$, $E/\mathbb{Q}[\alpha]$ is a Galois extension and $\operatorname{Gal}(E/\mathbb{Q}[\alpha]) \cong \mathbb{Z}/p\mathbb{Z}$.
 

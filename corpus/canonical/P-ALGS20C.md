@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be a Noetherian integral domain. Show that the following conditions are equivalent:
+Let $R$ be a Noetherian integral domain.
+Show that the following conditions are equivalent:
 
 (1) Every finitely generated $R$-module is a direct sum of cyclic $R$-modules.
 

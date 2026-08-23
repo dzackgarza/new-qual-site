@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $R$ be a commutative ring with identity element. Suppose that for each $x \in R$ there is an $n(x) > 1$ such that $x^{n(x)} = x$. Show that every prime ideal of $R$ is maximal.
+Let $R$ be a commutative ring with identity element.
+Suppose that for each $x \in R$ there is an $n(x) > 1$ such that $x^{n(x)} = x$.
+Show that every prime ideal of $R$ is maximal.
 :::

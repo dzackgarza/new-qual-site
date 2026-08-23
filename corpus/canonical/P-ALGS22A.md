@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be a group of order $2022 = (2)(3)(337)$. Suppose that the Sylow 2-subgroup of $G$ is normal. Classify such groups $G$ up to isomorphism.
+Let $G$ be a group of order $2022 = (2)(3)(337)$.
+Suppose that the Sylow 2-subgroup of $G$ is normal.
+Classify such groups $G$ up to isomorphism.
 :::

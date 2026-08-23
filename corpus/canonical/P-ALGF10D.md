@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $E$ be a finite separable extension of $F$. Show that $E = F(a)$ for some $a$ in $E$.
+Let $E$ be a finite separable extension of $F$.
+Show that $E = F(a)$ for some $a$ in $E$.
 
 Hint: Use the Fundamental Theorem of Galois Theory.
 :::

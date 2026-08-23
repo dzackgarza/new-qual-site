@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $E$ be a finite Galois extension of $F$ with an abelian Galois group. Show that any intermediate extension is also Galois over $F$.
+Let $E$ be a finite Galois extension of $F$ with an abelian Galois group.
+Show that any intermediate extension is also Galois over $F$.
 :::

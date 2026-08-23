@@ -16,5 +16,6 @@ solved: false
 ::: problem
 Recall that a "perfect" field of characteristic $p$ is one for which the Frobenius map $\operatorname{Fr}: x \mapsto x^p$ is onto.
 
-Let $F$ be a perfect field, and $E/F$ an algebraic extension. Show that $E$ is perfect.
+Let $F$ be a perfect field, and $E/F$ an algebraic extension.
+Show that $E$ is perfect.
 :::

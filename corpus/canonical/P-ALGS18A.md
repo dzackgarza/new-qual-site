@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Suppose $p < q$ are two odd primes. Prove that a group of order $p^2 q$ is solvable.
+Suppose $p < q$ are two odd primes.
+Prove that a group of order $p^2 q$ is solvable.
 :::

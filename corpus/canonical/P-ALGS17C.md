@@ -19,5 +19,6 @@ Let $R = \mathbb{Z}[\sqrt{-6}]$.
 
 (a) Prove that 3 is an irreducible element of $R$ which is not prime.
 
-(b) Find an element $r \in R$ such that the ideal $I = \langle 3, r \rangle$ is a maximal ideal in $R$. Prove that $I$ is not a principal ideal.
+(b) Find an element $r \in R$ such that the ideal $I = \langle 3, r \rangle$ is a maximal ideal in $R$.
+Prove that $I$ is not a principal ideal.
 :::
