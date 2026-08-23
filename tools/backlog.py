@@ -44,9 +44,7 @@ def corpus_sections() -> list[tuple[str, list[str]]]:
         return [
             (
                 "corpus-validation",
-                [
-                    f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"
-                ],
+                [f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"],
             )
         ]
     sections: list[tuple[str, list[str]]] = []
@@ -57,10 +55,7 @@ def corpus_sections() -> list[tuple[str, list[str]]]:
 
 
 def provenance_sections() -> list[tuple[str, list[str]]]:
-    return [
-        (check.name, check.findings)
-        for check in provenance_hrefs.run(provenance_hrefs.ALL)
-    ]
+    return [(check.name, check.findings) for check in provenance_hrefs.run(provenance_hrefs.ALL)]
 
 
 def completeness_sections() -> list[tuple[str, list[str]]]:
