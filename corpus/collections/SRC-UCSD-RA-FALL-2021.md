@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Real-Analysis.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: real-analysis
-  problems: []
+  problems:
+  - P-RAF21A
+  - P-RAF21B
+  - P-RAF21C
+  - P-RAF21D
+  - P-RAF21E
+  - P-RAF21F
+  - P-RAF21G
   date:
     kind: academic-term
     term: fall
