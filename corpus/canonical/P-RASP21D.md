@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $X, Y, Z$ be Banach spaces and $B : X \times Y \to Z$ be a map such that for any fixed $x \in X$ we have $B(x, \cdot) \in L(Y, Z)$ and for any fixed $y \in Y$ we have $B(\cdot, y) \in L(X, Z)$. Show that there is $C \geq 0$ such that $\|B(x, y)\| \leq C \|x\| \|y\|$ for all $(x, y) \in X \times Y$.
+Let $X, Y, Z$ be Banach spaces and $B : X \times Y \to Z$ be a map such that for any fixed $x \in X$ we have $B(x, \cdot) \in L(Y, Z)$ and for any fixed $y \in Y$ we have $B(\cdot, y) \in L(X, Z)$.
+Show that there is $C \geq 0$ such that $\|B(x, y)\| \leq C \|x\| \|y\|$ for all $(x, y) \in X \times Y$.
 :::
