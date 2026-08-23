@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $\mathcal{M}$ be an infinite $\sigma$-algebra of subsets of a set $X$. For $A \subset X$, $A \neq \emptyset, X$, consider the collection $\mathcal{M}_A := \{B \cap A : B \in \mathcal{M}\}$.
+Let $\mathcal{M}$ be an infinite $\sigma$-algebra of subsets of a set $X$.
+For $A \subset X$, $A \neq \emptyset, X$, consider the collection $\mathcal{M}_A := \{B \cap A : B \in \mathcal{M}\}$.
 
 (1) Prove that $\mathcal{M}_A$ is a $\sigma$-algebra of subsets of $A$.
 

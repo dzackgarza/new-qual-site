@@ -16,7 +16,11 @@ source:
   source_kind: university-exam
   institution: ucsd
   area: real-analysis
-  problems: []
+  problems:
+  - P-RASP09A
+  - P-RASP09B
+  - P-RASP09C
+  - P-RASP09D
   date:
     kind: academic-term
     term: spring

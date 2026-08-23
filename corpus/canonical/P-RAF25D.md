@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $\Omega$ be a bounded, Lebesgue measurable subset of $\mathbb{R}^n$ such that $L^n(\Omega) > 0$, where $L^n$ is the Lebesgue measure on $\mathbb{R}^n$. Let
+Let $\Omega$ be a bounded, Lebesgue measurable subset of $\mathbb{R}^n$ such that $L^n(\Omega) > 0$, where $L^n$ is the Lebesgue measure on $\mathbb{R}^n$.
+Let
 $$
 C := \left\{f \in L^2(\Omega) : \int_\Omega f(x) \, dx = 0\right\}.
 $$

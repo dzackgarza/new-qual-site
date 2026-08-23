@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $K \subset \mathbb{R}^2$ be compact. Given $\delta > 0$, consider the set
+Let $K \subset \mathbb{R}^2$ be compact.
+Given $\delta > 0$, consider the set
 $$
 K_\delta := \{x \in \mathbb{R}^2 : d(x, K) := \inf_{y \in K} |x - y| = \delta\},
 $$
