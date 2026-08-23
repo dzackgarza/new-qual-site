@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $\{a_k\}$ be a sequence of complex numbers such that $\sum_{k=0}^{\infty} a_k$ is convergent. Set $S_m^n := \sum_{i=m}^{n} a_i$.
+Let $\{a_k\}$ be a sequence of complex numbers such that $\sum_{k=0}^{\infty} a_k$ is convergent.
+Set $S_m^n := \sum_{i=m}^{n} a_i$.
 
 (a) Show that, for $0 \leq x \leq 1$,
 $$

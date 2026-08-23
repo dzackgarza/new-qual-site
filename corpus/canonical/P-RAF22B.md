@@ -16,7 +16,9 @@ solved: false
 ---
 
 ::: problem
-Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$. Let $1 \leq p < \infty$, let $f, f_n \in L^p(X, \mu)$ for $n \in \mathbb{N}$, and assume that $f_n \to f$ pointwise $\mu$-almost-everywhere. Prove that $\|f_n - f\|_p \to 0$ if and only if $\|f_n\|_p \to \|f\|_p$.
+Let $(X, \mathcal{M}, \mu)$ be a measure space with $\mu(X) < \infty$.
+Let $1 \leq p < \infty$, let $f, f_n \in L^p(X, \mu)$ for $n \in \mathbb{N}$, and assume that $f_n \to f$ pointwise $\mu$-almost-everywhere.
+Prove that $\|f_n - f\|_p \to 0$ if and only if $\|f_n\|_p \to \|f\|_p$.
 
 (Note: You are not allowed to use the generalized Dominated Convergence Theorem unless you prove it.)
 :::

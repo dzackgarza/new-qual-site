@@ -23,5 +23,6 @@ Let $(X, d)$ be a compact metric space.
 
 2. Prove that $X$ is second countable.
 
-3. Prove that $C(X, \mathbb{R})$ equipped with the uniform norm is separable. (Hint: Use (2) and the Stone-Weierstrass Theorem.)
+3. Prove that $C(X, \mathbb{R})$ equipped with the uniform norm is separable.
+   (Hint: Use (2) and the Stone-Weierstrass Theorem.)
 :::

@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Suppose that $\mu$ is a Radon measure on $X$ (a locally compact Hausdorff space). Assume $\varphi \in L^1(\mu)$ and $\varphi \geq 0$. Prove that $\nu(E) = \int_E \varphi \, d\mu$ is a Radon measure.
+Suppose that $\mu$ is a Radon measure on $X$ (a locally compact Hausdorff space).
+Assume $\varphi \in L^1(\mu)$ and $\varphi \geq 0$.
+Prove that $\nu(E) = \int_E \varphi \, d\mu$ is a Radon measure.
 :::

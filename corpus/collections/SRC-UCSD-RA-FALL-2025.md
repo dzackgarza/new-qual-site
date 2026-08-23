@@ -9,14 +9,20 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/download.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: real-analysis
-  problems: []
+  problems:
+  - P-RAF25A
+  - P-RAF25B
+  - P-RAF25C
+  - P-RAF25D
+  - P-RAF25E
+  - P-RAF25F
   date:
     kind: academic-term
     term: fall

@@ -20,7 +20,8 @@ Let $H$ be a Hilbert space, $P : H \to H$ a bounded linear operator, $P^* : H \t
 
 (b) Show that $\mathcal{R}(P^*)$ is closed if $\mathcal{R}(P)$ is closed.
 
-(c) Assume that $P^2 = P$. Show that the following are equivalent:
+(c) Assume that $P^2 = P$.
+Show that the following are equivalent:
 
 (i) $\mathcal{R}(P)$ is closed and $\|x - Px\| = \inf_{y \in \mathcal{R}(P)} \|x - y\|$ for every $x \in H$.
 
