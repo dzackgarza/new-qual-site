@@ -294,6 +294,16 @@ Important data issues (roughly in order of urgency):
 Missing solutions, empty solution fields, and unsolved cards are authoring
 concerns, not data integrity problems.
 
+# Work queues
+
+Outstanding work is recorded so no agent has to rediscover it. `TODO.md`
+holds the authored dispositions. `BACKLOG.md` holds the current
+measurements; `just backlog` regenerates it from the named measurement
+tools and nothing else writes it. The queues are candidates to read — a
+measurement that disappears is not a disposition, so record the reason in
+`TODO.md`. Refresh `BACKLOG.md` in the same commit as any change that
+moves a measurement.
+
 # Citation policy
 
 Never cite a source in prose. All citations must go through the bibliography:

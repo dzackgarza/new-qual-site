@@ -9,14 +9,18 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/SP22-290ABC-Topology.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
-  problems: []
+  problems:
+  - P-TOPS22A
+  - P-TOPS22B
+  - P-TOPS22C
+  - P-TOPS22D
   date:
     kind: academic-term
     term: spring

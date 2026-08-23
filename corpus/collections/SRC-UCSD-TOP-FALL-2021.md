@@ -9,14 +9,18 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA21-Topology.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
-  problems: []
+  problems:
+  - P-TOPF21A
+  - P-TOPF21B
+  - P-TOPF21C
+  - P-TOPF21D
   date:
     kind: academic-term
     term: fall

@@ -11,14 +11,22 @@ relations:
 - kind: related-to
   target: SRC-UCSD-TOP-FALL-2017
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
-  problems: []
+  problems:
+  - P-TOPQ17A
+  - P-TOPQ17B
+  - P-TOPQ17C
+  - P-TOPQ17D
+  - P-TOPQ17E
+  - P-TOPQ17F
+  - P-TOPQ17G
+  - P-TOPQ17H
   date:
     kind: academic-term
     term: fall

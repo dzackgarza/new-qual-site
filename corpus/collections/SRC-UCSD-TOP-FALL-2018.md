@@ -9,14 +9,22 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology-Qual-Fall-2018.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
-  problems: []
+  problems:
+  - P-TOPF18A
+  - P-TOPF18B
+  - P-TOPF18C
+  - P-TOPF18D
+  - P-TOPF18E
+  - P-TOPF18F
+  - P-TOPF18G
+  - P-TOPF18H
   date:
     kind: academic-term
     term: fall

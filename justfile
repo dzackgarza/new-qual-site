@@ -46,6 +46,10 @@ query sql: build
 complete *args:
     uv run python tools/card_completeness.py {{ args }}
 
+# Regenerate BACKLOG.md: measurement queues for outstanding work (not a gate)
+backlog:
+    uv run python tools/backlog.py
+
 # Print n random unsolved problem/exercise cards (frontmatter solved: false)
 sample-unsolved n="5":
     @rg --files-with-matches '^solved: false$' corpus | shuf -n {{ n }}

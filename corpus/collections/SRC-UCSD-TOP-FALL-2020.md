@@ -9,14 +9,22 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/Topology_qualifying_exam_Fall_2020.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
-  problems: []
+  problems:
+  - P-TOPF20A
+  - P-TOPF20B
+  - P-TOPF20C
+  - P-TOPF20D
+  - P-TOPF20E
+  - P-TOPF20F
+  - P-TOPF20G
+  - P-TOPF20H
   date:
     kind: academic-term
     term: fall
