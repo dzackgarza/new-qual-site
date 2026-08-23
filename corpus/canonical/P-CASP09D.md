@@ -13,5 +13,6 @@ solved: false
 ---
 
 ::: problem
-Suppose $f(z)$ is analytic at $z = 0$. Prove that there is an integer $n > 0$ such that $|f^{(n)}(0)| \leq n^n \cdot n!$.
+Suppose $f(z)$ is analytic at $z = 0$.
+Prove that there is an integer $n > 0$ such that $|f^{(n)}(0)| \leq n^n \cdot n!$.
 :::

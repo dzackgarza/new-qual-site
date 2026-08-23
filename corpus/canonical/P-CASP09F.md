@@ -13,5 +13,6 @@ solved: false
 ---
 
 ::: problem
-State and prove the Weierstrass Product Theorem. You may use any general convergence criteria without proof, but you should state what these criteria are.
+State and prove the Weierstrass Product Theorem.
+You may use any general convergence criteria without proof, but you should state what these criteria are.
 :::
