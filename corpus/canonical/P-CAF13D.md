@@ -6,7 +6,7 @@ title: "Conformal map from the upper half-plane onto the punctured unit disk"
 classification:
   areas:
   - complex-analysis
-topics: []
+  topics: []
 relations: []
 review: draft
 solved: false
