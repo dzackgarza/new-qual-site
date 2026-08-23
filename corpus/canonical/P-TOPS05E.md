@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a compact non-orientable $3$-manifold. Prove $H_1(X; \mathbb{Z}) \neq 0$.
+Let $X$ be a compact non-orientable $3$-manifold.
+Prove $H_1(X; \mathbb{Z}) \neq 0$.
 :::

@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Given a topological space $X$, let $I$ denote the directed set of compact subsets of $X$ under inclusion. Show that the following canonical map is an isomorphism:
+Given a topological space $X$, let $I$ denote the directed set of compact subsets of $X$ under inclusion.
+Show that the following canonical map is an isomorphism:
 $$
 \operatorname{colim}_{K \in I} H_i(K; R) \longrightarrow H_i(X; R),
 $$

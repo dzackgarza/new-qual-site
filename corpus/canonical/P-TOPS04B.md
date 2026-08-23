@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $E \to B$ be a $d$-sheeted covering map. Prove that the Euler characteristic satisfies $\chi(E) = d \cdot \chi(B)$ if $B$ is a finite CW-complex.
+Let $E \to B$ be a $d$-sheeted covering map.
+Prove that the Euler characteristic satisfies $\chi(E) = d \cdot \chi(B)$ if $B$ is a finite CW-complex.
 :::

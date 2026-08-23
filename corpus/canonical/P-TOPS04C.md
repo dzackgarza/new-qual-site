@@ -15,7 +15,8 @@ solved: false
 ---
 
 ::: problem
-Let $\mathbb{K} = \mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$. Show that for $n \geq 1$ the Hopf fibrations
+Let $\mathbb{K} = \mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$.
+Show that for $n \geq 1$ the Hopf fibrations
 $$
 p : S^{n+1} \setminus \{0\} \to \mathbb{K}P^n
 $$

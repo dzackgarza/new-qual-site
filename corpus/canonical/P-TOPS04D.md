@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Consider the polynomial ring $R := \mathbb{Q}[x, y]$ and make $\mathbb{Q}$ an $R$-module via the zero actions of $x$ and $y$. Compute for all $i$
+Consider the polynomial ring $R := \mathbb{Q}[x, y]$ and make $\mathbb{Q}$ an $R$-module via the zero actions of $x$ and $y$.
+Compute for all $i$
 $$
 \operatorname{Tor}_i^R(\mathbb{Q}, \mathbb{Q})
 $$

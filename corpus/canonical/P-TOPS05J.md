@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $X \vee Y$ be the one point union of $X$ and $Y$. Prove for each $i > 0$ there is a split short exact sequence
+Let $X \vee Y$ be the one point union of $X$ and $Y$.
+Prove for each $i > 0$ there is a split short exact sequence
 $$
 0 \to H^i(X \vee Y) \to H^i(X \times Y) \to H^i(X \times Y, X \vee Y) \to 0.
 $$

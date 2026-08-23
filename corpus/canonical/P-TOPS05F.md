@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a compact space having the homotopy type of $S^3 \vee S^5$. Determine if $X$ can be a manifold or an $H$-space.
+Let $X$ be a compact space having the homotopy type of $S^3 \vee S^5$.
+Determine if $X$ can be a manifold or an $H$-space.
 :::

@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $f, g : X \to S^2$ be continuous maps such that for all $x$ in $X$, $f(x)$ is not antipodal to $g(x)$. Show that $f$ is homotopic to $g$.
+Let $f, g : X \to S^2$ be continuous maps such that for all $x$ in $X$, $f(x)$ is not antipodal to $g(x)$.
+Show that $f$ is homotopic to $g$.
 :::

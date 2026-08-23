@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Determine all covering spaces of $S^1 \times \mathbb{RP}^3$. (This includes determining the covering projections.)
+Determine all covering spaces of $S^1 \times \mathbb{RP}^3$.
+(This includes determining the covering projections.)
 :::

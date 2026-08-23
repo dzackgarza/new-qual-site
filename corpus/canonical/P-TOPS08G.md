@@ -16,5 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $T^2 = S^1 \times S^1$ be the $2$-torus. Let $f : T^2 \to T^2$ be a self-map of degree $1$. Show that the map $f^* : H^1(T^2, \mathbb{Z}) \to H^1(T^2, \mathbb{Z})$ defines an element of $SL_2(\mathbb{Z})$. Here, we identify $H^1(T^2, \mathbb{Z})$ with $\mathbb{Z} \oplus \mathbb{Z}$ using the identification $T^2 = S^1 \times S^1$.
+Let $T^2 = S^1 \times S^1$ be the $2$-torus.
+Let $f : T^2 \to T^2$ be a self-map of degree $1$.
+Show that the map $f^* : H^1(T^2, \mathbb{Z}) \to H^1(T^2, \mathbb{Z})$ defines an element of $SL_2(\mathbb{Z})$.
+Here, we identify $H^1(T^2, \mathbb{Z})$ with $\mathbb{Z} \oplus \mathbb{Z}$ using the identification $T^2 = S^1 \times S^1$.
 :::

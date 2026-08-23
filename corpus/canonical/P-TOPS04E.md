@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Using the fundamental class in $\mathbb{Z}/2$-homology, there is an obvious definition of the mod $2$-degree for a continuous map between closed manifolds (not necessarily oriented). Show that there is no map of nonzero mod $2$-degree between the Klein bottle and the torus, in either direction.
+Using the fundamental class in $\mathbb{Z}/2$-homology, there is an obvious definition of the mod $2$-degree for a continuous map between closed manifolds (not necessarily oriented).
+Show that there is no map of nonzero mod $2$-degree between the Klein bottle and the torus, in either direction.
 :::

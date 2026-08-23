@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a compact $\mathbb{Z}_k$ orientable manifold for $k > 2$. Prove $X$ is orientable.
+Let $X$ be a compact $\mathbb{Z}_k$ orientable manifold for $k > 2$.
+Prove $X$ is orientable.
 :::

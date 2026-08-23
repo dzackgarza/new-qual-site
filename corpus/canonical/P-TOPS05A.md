@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-(a) Let $G$ be a group of homeomorphisms of $S^{2n}$ such that for all $g \in G$, $gx = x$ if and only if $g = 1$. Prove if $G$ has $2$ elements, then one of them is the antipodal map.
+(a) Let $G$ be a group of homeomorphisms of $S^{2n}$ such that for all $g \in G$, $gx = x$ if and only if $g = 1$.
+Prove if $G$ has $2$ elements, then one of them is the antipodal map.
 
 (b) If $S^{2n} \to X$ is a covering space, prove $X$ is homeomorphic to $S^{2n}$ or $\mathbb{RP}^{2n}$.
 :::

@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-What are the integer cohomology rings of $S^2 \times S^2$ and $\mathbb{CP}^2$? Show that there is no map $S^2 \times S^2 \to \mathbb{CP}^2$ having odd degree.
+What are the integer cohomology rings of $S^2 \times S^2$ and $\mathbb{CP}^2$?
+Show that there is no map $S^2 \times S^2 \to \mathbb{CP}^2$ having odd degree.
 :::

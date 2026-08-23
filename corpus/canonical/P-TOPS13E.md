@@ -21,5 +21,6 @@ Hint: Define $g : \mathbb{R}^3 \setminus \{0\} \to S^1$ by
 $$
 g(x) = \frac{f(x) - f(-x)}{|f(x) - f(-x)|},
 $$
-which satisfies $g(-x) = -g(x)$. Define the loop $\eta : I \to \mathbb{R}^3 \setminus \{0\}$ by $\eta(s) = (\cos(2\pi s), \sin(2\pi s), 0)$ and consider the loop $h = g \circ \eta$ in $S^1$.
+which satisfies $g(-x) = -g(x)$.
+Define the loop $\eta : I \to \mathbb{R}^3 \setminus \{0\}$ by $\eta(s) = (\cos(2\pi s), \sin(2\pi s), 0)$ and consider the loop $h = g \circ \eta$ in $S^1$.
 :::

@@ -17,7 +17,8 @@ solved: false
 ---
 
 ::: problem
-(a) Compute the integral and mod $2$ cohomology and homology of $\mathbb{RP}^2 \times \mathbb{RP}^3$. Is $\mathbb{RP}^2 \times \mathbb{RP}^3$ orientable?
+(a) Compute the integral and mod $2$ cohomology and homology of $\mathbb{RP}^2 \times \mathbb{RP}^3$.
+Is $\mathbb{RP}^2 \times \mathbb{RP}^3$ orientable?
 
 (b) Determine the action of the Bockstein.
 :::

@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $f : S^{2k+1} \to S^{2k+1}$ satisfy $f(-x) = -f(x)$. Prove the degree of $f$ is odd.
+Let $f : S^{2k+1} \to S^{2k+1}$ satisfy $f(-x) = -f(x)$.
+Prove the degree of $f$ is odd.
 :::
