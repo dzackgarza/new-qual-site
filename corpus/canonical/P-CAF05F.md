@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-State and prove Harnack's inequality for non-negative functions that are continuous in $\overline{\mathbb{D}}$ and harmonic in $\mathbb{D}$. (You may use without proof the Poisson integral formula.)
+State and prove Harnack's inequality for non-negative functions that are continuous in $\overline{\mathbb{D}}$ and harmonic in $\mathbb{D}$.
+(You may use without proof the Poisson integral formula.)
 :::

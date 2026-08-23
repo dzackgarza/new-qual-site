@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $M$ be an $n$-dimensional compact connected manifold. Suppose all cup products vanish in $H^*(M; \mathbb{Z})$. Prove that $H^*(M; \mathbb{Z})$ is isomorphic to $H^*(S^n; \mathbb{Z})$.
+Let $M$ be an $n$-dimensional compact connected manifold.
+Suppose all cup products vanish in $H^*(M; \mathbb{Z})$.
+Prove that $H^*(M; \mathbb{Z})$ is isomorphic to $H^*(S^n; \mathbb{Z})$.
 :::

@@ -13,6 +13,6 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be a nonconstant analytic function in $\mathbb{D}$ with $f(0) = 0$. Show that there exist a real number $r$, $0 < r \leq 1$, a function $g \in H(B(0; r))$ with $g(0) \neq 0$, and a positive integer $m$, such that
-$$f(z) = (zg(z))^m, \qquad z \in B(0; r).$$
+Let $f$ be a nonconstant analytic function in $\mathbb{D}$ with $f(0) = 0$.
+Show that there exist a real number $r$, $0 < r \leq 1$, a function $g \in H(B(0; r))$ with $g(0) \neq 0$, and a positive integer $m$, such that $$f(z) = (zg(z))^m, \qquad z \in B(0; r).$$
 :::

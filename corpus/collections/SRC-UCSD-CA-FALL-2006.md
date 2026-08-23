@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/complex-analysis-math220/FA06_220_Complex_Analysis_Qual.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: complex-analysis
-  problems: []
+  problems:
+  - P-CAF06A
+  - P-CAF06B
+  - P-CAF06C
+  - P-CAF06D
+  - P-CAF06E
+  - P-CAF06F
+  - P-CAF06G
   date:
     kind: academic-term
     term: fall

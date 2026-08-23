@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be an $n$-dimensional $\mathbb{Z}_3$-orientable manifold. Prove that $X$ is orientable.
+Let $X$ be an $n$-dimensional $\mathbb{Z}_3$-orientable manifold.
+Prove that $X$ is orientable.
 :::
