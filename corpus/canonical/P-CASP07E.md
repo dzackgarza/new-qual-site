@@ -13,5 +13,7 @@ solved: false
 ---
 
 ::: problem
-Let $\{\alpha_n\}_{n=1}^{\infty}$ be positive numbers such that $\lim_{n \to \infty} \alpha_n^{1/n} = \lambda$. Define $q_n(z) := 1 - \alpha_n z^n$ and $r = 1/\lambda$. Show that the infinite product $\prod_{n=1}^{\infty} q_n(z)$ converges in $\mathcal{O}(B(0, r))$ to an analytic function whose zeros (counting multiplicities) inside $B(0, r)$ are precisely those of the $q_n(z)$.
+Let $\{\alpha_n\}_{n=1}^{\infty}$ be positive numbers such that $\lim_{n \to \infty} \alpha_n^{1/n} = \lambda$.
+Define $q_n(z) := 1 - \alpha_n z^n$ and $r = 1/\lambda$.
+Show that the infinite product $\prod_{n=1}^{\infty} q_n(z)$ converges in $\mathcal{O}(B(0, r))$ to an analytic function whose zeros (counting multiplicities) inside $B(0, r)$ are precisely those of the $q_n(z)$.
 :::
