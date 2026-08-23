@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-UCSD-TOP-SPRING-2017
 kind: collection
-title: UCSD topology Spring 2017
+title: UCSD topology Summer 2017
 classification:
   areas:
   - topology
@@ -27,7 +27,7 @@ source:
   - P-TOPS17H
   date:
     kind: academic-term
-    term: spring
+    term: summer
     year: 2017
 ---
 

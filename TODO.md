@@ -181,6 +181,27 @@ Read every pair against its source before acting: merge nothing, keep genuine cr
 | `P-APAF07B` ↔ `P-APAS04A` | Genuine reuse — kept both. "State and prove the Schur Decomposition Theorem" is FA07 Part 1 #2 and SP04 #1. | FA07 OCR text + SP04 department scan. |
 | `P-TOPF25B` ↔ `P-TOPS24D` | Genuine reuse — kept both. Cube-with-180°-face-gluing homology problem verbatim, same figure labels (P/Q/R), as Fall 2025 #2 and Summer 2024 #4. | Both 290 department PDFs read. |
 
+### Resolved 2026-08-24
+
+All twelve previously-unread pairs/triples read against their papers; every one is genuine statement reuse across sittings. No card bodies changed.
+
+| Pair(s) | Verdict | Evidence |
+| --- | --- | --- |
+| `P-ALGS05B` ↔ `P-APAS05B`, `P-ALGS05F` ↔ `P-APAS05F` | Genuine reuse — kept both pairs. The May 23, 2005 Applied Algebra paper (Math 202, 9–10am) is Questions 1–6 of the same day's Algebra qual (Math 200, 9am–12pm; same examiners Gill/Small); triangular-matrix-normal is #2 on both papers, center-index-conjugacy-classes is #6. | Both department PDFs fetched and extracted. |
+| `P-APAF11D` ↔ `P-APAS04N` | Genuine reuse — kept both. Permutation-representation/coset-decomposition problem verbatim: Fall 2011 #4 and Spring 2004 #5. | Both department PDFs extracted. |
+| `P-CAF09D` ↔ `P-CASP09E` | Genuine reuse — kept both. Uniform-convergence/derivatives problem verbatim: Fall 2009 #4 and Spring 2009 (#May 20) #5. | Both department PDFs extracted. |
+| `P-TOPF03C` ↔ `P-TOPF04H`; `P-TOPF03E` ↔ `P-TOPF04F`; `P-TOPF03H` ↔ `P-TOPF04G` | Genuine reuse — kept both. Fall 2004 reuses a block of Fall 2003 questions with renumbered positions: hexagon-edge homology (§4 #3 → §5 #8), simply-connected 4-manifold (§4 #5 → §5 #6), universal cover of RP³∨S² (§4 #8 → §5 #7). | Roberts packet §§4–5 (printed pp. 395–396) extracted. |
+| `P-TOPF07H` ↔ `P-TOPS17F` | Genuine reuse — kept both. Odd-dimensional Euler characteristic problem verbatim: Fall 2007 #8 (printed p. 398) and Summer 2017 #6. | Packet §7 + Summer 2017 paper extracted. |
+| `P-TOPF09H` ↔ `P-TOPF18H` | Genuine reuse — kept both. F₂ contains Fₙ via covering spaces, verbatim: Fall 2009 #8 (printed p. 400) and Fall 2018 #8. | Packet §9 + Fall 2018 PDF extracted. |
+| `P-TOPS17B` ↔ `P-TOPSU15A` | Genuine reuse — kept both. Cube-with-90°-rotations homology problem verbatim: Summer 2015 #1 and Summer 2017 #2. | Both papers extracted. |
+| `P-TOPF09E` / `P-TOPF18E` / `P-TOPS25F` | Genuine reuse — kept all three. CP²ⁿ homotopy equivalence has degree +1, verbatim: Fall 2009 #5, Fall 2018 #5, Summer 2025 #6. | Packet §9 + both department PDFs extracted. |
+| `P-TOPF09G` / `P-TOPF18G` / `P-TOPF22F` | Genuine reuse — kept all three. Homology-sphere suspension problem verbatim: Fall 2009 #7, Fall 2018 #7, Fall 2022 #6. | Packet §9 + both department PDFs extracted. |
+
+Adjacent fixes from the same reads:
+- `SRC-UCSD-TOP-SPRING-2017`: its paper (`TOPOLOGY-EXAM.pdf`) self-identifies as "**27. Summer 2017**"; title/date corrected to Summer 2017 (id unchanged).
+- `SRC-UCSD-TOP-SPRING-2025`: its paper (`SP25_290_Topology_Qual.pdf`) self-identifies as "**45. Summer 2025**"; title/date corrected to Summer 2025 (id unchanged).
+- Dead CA hrefs retargeted to the live department files: `SRC-UCSD-CA-FALL-2022` → `FA22_COMPLEX_220ABC.pdf`, `SRC-UCSD-CA-FALL-2023` → `complex-analysis-math220/QualFall23.pdf` (both fetched and verified against their self-identification).
+
 Terminal state: `duplicate-bodies` rests at 4 violations — all verified genuine statement reuse across sittings; the measurement stays nonzero because the mathematics repeats.
 
 Adjacent fix from the same reads: `SP24_290_Topology_Qual.pdf` self-identifies as "**43. Summer 2024**"; `SRC-UCSD-TOP-SPRING-2024` title/date corrected to Summer 2024 (id unchanged — opaque handle).

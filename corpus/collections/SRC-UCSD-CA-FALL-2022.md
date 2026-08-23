@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://math.ucsd.edu/sites/math.ucsd.edu/files/uploads/students/graduate/qualifying-exams/FA22-Complex.pdf
+- https://math.ucsd.edu/sites/math.ucsd.edu/files/FA22_COMPLEX_220ABC.pdf
 source:
   source_kind: university-exam
   institution: ucsd
