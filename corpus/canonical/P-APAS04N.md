@@ -1,6 +1,6 @@
 ---
 schema: qual/card@1
-id: P-APAF11D
+id: P-APAS04N
 kind: problem
 title: Permutation representation from cosets; fixed-point character on $S_n$
 classification:
@@ -11,7 +11,7 @@ classification:
   - Permutations
 relations:
   - kind: related-to
-    target: P-APAS04N
+    target: P-APAF11D
 review: draft
 solved: false
 ---
