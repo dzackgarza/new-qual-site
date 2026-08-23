@@ -13,8 +13,8 @@ solved: false
 ---
 
 ::: problem
-Let $n$ be a positive integer and $\lambda > 1$ a real number. Consider the equation
-$$(**)\quad z^n - e^{z - \lambda} = 0.$$
+Let $n$ be a positive integer and $\lambda > 1$ a real number.
+Consider the equation $$(**)\quad z^n - e^{z - \lambda} = 0.$$
 
 (a) Find all the roots of (**) with $|z| = 1$.
 
