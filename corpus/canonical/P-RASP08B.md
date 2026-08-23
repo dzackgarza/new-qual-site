@@ -21,7 +21,8 @@ $$
 \lim_{n \to \infty} \mu(\{x : f_n(x) > a\}) = \mu(\{x : f(x) > a\}).
 $$
 
-(b) Assume that $\mu(X) < \infty$. Show that $\lim_{n \to \infty} \mu(\{x : f_n(x) < a\})$ exists for every $a \in \mathbb{R}$ and
+(b) Assume that $\mu(X) < \infty$.
+Show that $\lim_{n \to \infty} \mu(\{x : f_n(x) < a\})$ exists for every $a \in \mathbb{R}$ and
 $$
 \mu(\{x : f(x) < a\}) \leq \lim_{n \to \infty} \mu(\{x : f_n(x) < a\}) \leq \mu(\{x : f(x) < a\}) + \mu(\{x : f(x) = a\}).
 $$

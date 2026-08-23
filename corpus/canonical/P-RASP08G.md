@@ -20,5 +20,6 @@ T(\phi) := \lim_{\epsilon \to 0^+} \left[\int_\epsilon^\infty \frac{\phi(x)}{x}\
 $$
 defines a distribution on $\mathbb{R}$.
 
-(b) Show that the function $f(x) := H(x)\log x$ is locally integrable on $\mathbb{R}$ (where $H$ is the Heaviside function). Express the derivative of $f$ in the sense of distributions in terms of the distribution $T$ given in (a).
+(b) Show that the function $f(x) := H(x)\log x$ is locally integrable on $\mathbb{R}$ (where $H$ is the Heaviside function).
+Express the derivative of $f$ in the sense of distributions in terms of the distribution $T$ given in (a).
 :::

@@ -27,5 +27,6 @@ $$
 \lim_{h \to 0} \frac{\tau_h T - T}{h} = T'.
 $$
 
-(c) Show that if $T$ is a tempered distribution then $\tau_h T$ is also a tempered distribution. Find the Fourier transform of $\tau_h T$ in terms of the Fourier transform of $T$.
+(c) Show that if $T$ is a tempered distribution then $\tau_h T$ is also a tempered distribution.
+Find the Fourier transform of $\tau_h T$ in terms of the Fourier transform of $T$.
 :::

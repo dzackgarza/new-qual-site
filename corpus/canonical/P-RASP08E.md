@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $F : \mathbb{C} \to \mathbb{C}$ be a bounded Borel measurable function, and $y_0 \in \mathbb{C}$. Define a sequence of functions $f_n : [0,1] \to \mathbb{C}$ by the recursion $f_0(x) \equiv y_0$ and
+Let $F : \mathbb{C} \to \mathbb{C}$ be a bounded Borel measurable function, and $y_0 \in \mathbb{C}$.
+Define a sequence of functions $f_n : [0,1] \to \mathbb{C}$ by the recursion $f_0(x) \equiv y_0$ and
 $$
 f_{n+1}(x) := y_0 + \int_0^x F(f_n(t))\,dt.
 $$

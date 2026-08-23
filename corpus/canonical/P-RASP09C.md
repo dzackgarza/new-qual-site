@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Assume that $1 \leq p < \infty$ and $(X, \mathcal{M}, \mu)$ is a measure space. If $f_n \to f$ in measure and $|f_n| \leq g \in L^p(X, d\mu)$ for all $n$, then $f_n \to f$ in $L^p$-norm.
+Assume that $1 \leq p < \infty$ and $(X, \mathcal{M}, \mu)$ is a measure space.
+If $f_n \to f$ in measure and $|f_n| \leq g \in L^p(X, d\mu)$ for all $n$, then $f_n \to f$ in $L^p$-norm.
 :::
