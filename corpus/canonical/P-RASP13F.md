@@ -19,7 +19,8 @@ solved: false
 ::: problem
 The problem concerns finding an explicit solution to the equation $-\Delta u + u = f$ for $f \in C_c^\infty(\mathbb{R}^n)$, using the Fourier transform.
 
-(a) Assume that the solution $u$ and all its first-order and second-order partial derivatives are in $L^1(\mathbb{R}^n) \cap L^2(\mathbb{R}^n)$. Prove
+(a) Assume that the solution $u$ and all its first-order and second-order partial derivatives are in $L^1(\mathbb{R}^n) \cap L^2(\mathbb{R}^n)$.
+Prove
 $$
 \hat{u}(z) = \frac{\hat{f}(z)}{1 + 4\pi^2 |z|^2}.
 $$

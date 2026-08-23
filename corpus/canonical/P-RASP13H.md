@@ -17,7 +17,9 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be a monotonically non-decreasing function on $\mathbb{R}$. Prove that its distributional derivative is a Borel measure.
+Let $f$ be a monotonically non-decreasing function on $\mathbb{R}$.
+Prove that its distributional derivative is a Borel measure.
 
-(Hint: You may apply the Riesz-Markov representation theorem. In doing so, you need to state the theorem clearly and verify the assumptions carefully.)
+(Hint: You may apply the Riesz-Markov representation theorem.
+In doing so, you need to state the theorem clearly and verify the assumptions carefully.)
 :::

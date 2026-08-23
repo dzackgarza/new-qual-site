@@ -183,7 +183,8 @@ Read every pair against its source before acting: merge nothing, keep genuine cr
 
 ### Resolved 2026-08-24
 
-All twelve previously-unread pairs/triples read against their papers; every one is genuine statement reuse across sittings. No card bodies changed.
+All twelve previously-unread pairs/triples read against their papers; every one is genuine statement reuse across sittings.
+No card bodies changed.
 
 | Pair(s) | Verdict | Evidence |
 | --- | --- | --- |
@@ -198,8 +199,11 @@ All twelve previously-unread pairs/triples read against their papers; every one 
 | `P-TOPF09G` / `P-TOPF18G` / `P-TOPF22F` | Genuine reuse — kept all three. Homology-sphere suspension problem verbatim: Fall 2009 #7, Fall 2018 #7, Fall 2022 #6. | Packet §9 + both department PDFs extracted. |
 
 Adjacent fixes from the same reads:
+
 - `SRC-UCSD-TOP-SPRING-2017`: its paper (`TOPOLOGY-EXAM.pdf`) self-identifies as "**27. Summer 2017**"; title/date corrected to Summer 2017 (id unchanged).
+
 - `SRC-UCSD-TOP-SPRING-2025`: its paper (`SP25_290_Topology_Qual.pdf`) self-identifies as "**45. Summer 2025**"; title/date corrected to Summer 2025 (id unchanged).
+
 - Dead CA hrefs retargeted to the live department files: `SRC-UCSD-CA-FALL-2022` → `FA22_COMPLEX_220ABC.pdf`, `SRC-UCSD-CA-FALL-2023` → `complex-analysis-math220/QualFall23.pdf` (both fetched and verified against their self-identification).
 
 Terminal state: `duplicate-bodies` rests at 4 violations — all verified genuine statement reuse across sittings; the measurement stays nonzero because the mathematics repeats.

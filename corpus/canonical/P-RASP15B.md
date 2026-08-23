@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $(X, \mathcal{M}, \mu)$ be a measure space. Prove that for any $0 < p < \infty$, $f \in L^p$ if and only if
+Let $(X, \mathcal{M}, \mu)$ be a measure space.
+Prove that for any $0 < p < \infty$, $f \in L^p$ if and only if
 $$
 \sum_{k=-\infty}^{\infty} 2^{kp} \lambda_f(2^k) < \infty
 $$

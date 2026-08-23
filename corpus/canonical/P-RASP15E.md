@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be a real-valued function of bounded variation on $\mathbb{R}$, and $g$ be a smooth function of compact support on $\mathbb{R}$. Is the integration by parts
+Let $f$ be a real-valued function of bounded variation on $\mathbb{R}$, and $g$ be a smooth function of compact support on $\mathbb{R}$.
+Is the integration by parts
 $$
 \int_{-\infty}^{\infty} f(x) g'(x)\,dm(x) = -\int_{-\infty}^{\infty} f'(x) g(x)\,dm(x)
 $$

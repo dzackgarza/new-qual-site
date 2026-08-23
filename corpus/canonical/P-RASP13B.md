@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $(X, \mathcal{M}, \mu)$ be a measure space and $f \in L^1(\mu)$. Prove that
+Let $(X, \mathcal{M}, \mu)$ be a measure space and $f \in L^1(\mu)$.
+Prove that
 $$
 \lim_{t \to \infty} t \, \mu\{x \in X : |f(x)| \geq t\} = 0.
 $$
