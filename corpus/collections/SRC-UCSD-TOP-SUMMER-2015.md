@@ -9,14 +9,22 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/topology-math290/290qualS15.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: topology
-  problems: []
+  problems:
+  - P-TOPSU15A
+  - P-TOPSU15B
+  - P-TOPSU15C
+  - P-TOPSU15D
+  - P-TOPSU15E
+  - P-TOPSU15F
+  - P-TOPSU15G
+  - P-TOPSU15H
   date:
     kind: academic-term
     term: summer

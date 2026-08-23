@@ -13,6 +13,6 @@ solved: false
 ---
 
 ::: problem
-Let $f \in \mathcal{O}(\mathbb{D})$ and assume that $|f(z)| \leq 1$ in $\mathbb{D}$. Show that
-$$\frac{|f(0)| - |z|}{1 + |f(0)||z|} \leq |f(z)| \leq \frac{|f(0)| + |z|}{1 - |f(0)||z|}.$$
+Let $f \in \mathcal{O}(\mathbb{D})$ and assume that $|f(z)| \leq 1$ in $\mathbb{D}$.
+Show that $$\frac{|f(0)| - |z|}{1 + |f(0)||z|} \leq |f(z)| \leq \frac{|f(0)| + |z|}{1 - |f(0)||z|}.$$
 :::

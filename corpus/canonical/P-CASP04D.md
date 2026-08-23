@@ -13,8 +13,10 @@ solved: false
 ---
 
 ::: problem
-Let $G$ be an open connected and bounded subset of $\mathbb{C}$, and $f: G \to \mathbb{C}$ an analytic function with $f(G) \subset G$. Let $f^n$ denote the $n$th iterate of $f$. Suppose that $a \in G$ is a fixed point of $f$ (i.e.\ $f(a) = a$) and $|f'(a)| < 1$. Define the basin of attraction of $z = a$ to be the set
-$$\Omega := \{z \in G : \lim_{n \to \infty} f^n(z) = a\}.$$
+Let $G$ be an open connected and bounded subset of $\mathbb{C}$, and $f: G \to \mathbb{C}$ an analytic function with $f(G) \subset G$.
+Let $f^n$ denote the $n$th iterate of $f$.
+Suppose that $a \in G$ is a fixed point of $f$ (i.e.\ $f(a) = a$) and $|f'(a)| < 1$.
+Define the basin of attraction of $z = a$ to be the set $$\Omega := \{z \in G : \lim_{n \to \infty} f^n(z) = a\}.$$
 
 (a) Show that there is a $\delta > 0$ such that $\{z : |z - a| < \delta\} \subset \Omega$.
 
