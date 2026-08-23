@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/real-analysis-math240/240-Qual-SP21.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: real-analysis
-  problems: []
+  problems:
+  - P-RASP21A
+  - P-RASP21B
+  - P-RASP21C
+  - P-RASP21D
+  - P-RASP21E
+  - P-RASP21F
+  - P-RASP21G
   date:
     kind: academic-term
     term: spring
