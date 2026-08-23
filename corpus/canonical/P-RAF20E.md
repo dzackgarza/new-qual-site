@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $\mu$ be a (positive) Borel measure on $[0, 1]$ and denote by $m$ the Lebesgue measure. Assume
+Let $\mu$ be a (positive) Borel measure on $[0, 1]$ and denote by $m$ the Lebesgue measure.
+Assume
 $$
 \left|\int_{[0,1]} f \, d\mu\right| \leq \left(\int_{[0,1]} |f|^2 \, dm\right)^{1/2} \quad \forall f \in C^1([0, 1]).
 $$

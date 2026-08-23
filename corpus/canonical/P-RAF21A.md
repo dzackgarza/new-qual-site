@@ -2,12 +2,15 @@
 schema: qual/card@1
 id: P-RAF21A
 kind: problem
-title: "Vanishing derivative on a null set and constancy"
+title: "Differentiable with derivative zero off a small exceptional set: when is f constant?"
 classification:
   areas:
   - real-analysis
   topics:
-  - Real Analysis
+  - Differentiation
+  - Borel Sets
+  - Measure Zero Sets
+  - Cantor Function
 relations: []
 review: draft
 solved: false

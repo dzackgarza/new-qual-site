@@ -2,19 +2,21 @@
 schema: qual/card@1
 id: P-RAF21C
 kind: problem
-title: "Averaging operator on L^p is strict contraction"
+title: "The averaging operator on L^p: norm bound and non-surjectivity of I - T"
 classification:
   areas:
   - real-analysis
   topics:
-  - Real Analysis
+  - Integral Operators
+  - Lp Spaces
+  - Minkowski Inequality
 relations: []
 review: draft
 solved: false
 ---
 
 ::: problem
-Let $p \in (1, \infty)$, and for $f \in L^p(\mathbb{R})$ define $Tf(x) := \int_0^1 f(x+y)\,dy$.
+Let $p \in (1, \infty)$, and for $f \in L^p(\mathbb{R})$ define $Tf(x) := \int_0^1 f(x + y) \, dy$.
 
 (a) Show that $\|Tf\|_p \leq \|f\|_p$, and equality holds if and only if $f = 0$ almost everywhere.
 

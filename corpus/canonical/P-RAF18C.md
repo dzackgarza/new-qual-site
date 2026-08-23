@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $f \in L^1(\mathbb{R}, m)$. Prove that $\lim_{n \to \infty} f(n^2 x) = 0$ for almost every $x \in \mathbb{R}$.
+Let $f \in L^1(\mathbb{R}, m)$.
+Prove that $\lim_{n \to \infty} f(n^2 x) = 0$ for almost every $x \in \mathbb{R}$.
 :::

@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $(X, \mu)$ be a nonempty measurable space with $\mu(X) < \infty$, $f \in L^\infty(\mu)$ and $\|f\|_\infty > 0$. Define $\alpha_n := \int_X |f|^n$ for $n = 1, 2, 3, \ldots$. Prove that
+Let $(X, \mu)$ be a nonempty measurable space with $\mu(X) < \infty$, $f \in L^\infty(\mu)$ and $\|f\|_\infty > 0$.
+Define $\alpha_n := \int_X |f|^n$ for $n = 1, 2, 3, \ldots$.
+Prove that
 $$
 \lim_{n \to \infty} \frac{\alpha_{n+1}}{\alpha_n} = \|f\|_\infty.
 $$

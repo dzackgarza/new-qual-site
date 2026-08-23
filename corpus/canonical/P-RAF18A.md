@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $\{f_n\}_n \subset L^1(\mathbb{R}, m)$ be a sequence of functions such that $f_n \to 0$, $m$-almost everywhere. Assume that there exists $M < \infty$ such that
+Let $\{f_n\}_n \subset L^1(\mathbb{R}, m)$ be a sequence of functions such that $f_n \to 0$, $m$-almost everywhere.
+Assume that there exists $M < \infty$ such that
 $$
 \int_{\mathbb{R}} \max(|f_1|, |f_2|, \ldots, |f_n|)\,dm \leq M, \quad \text{for every } n \geq 1.
 $$

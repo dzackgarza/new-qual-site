@@ -21,5 +21,6 @@ $$
 
 1. Prove that there exists $\varphi \in L^\infty([0,1], m)^*$ such that $\varphi(f) = \lim_{n \to \infty} n \int_{[0,1/n]} f\,dm$ for every $f \in V$.
 
-2. Let $\varphi \in L^\infty([0,1], m)^*$ such that $\varphi(f) = \lim_{n \to \infty} n \int_{[0,1/n]} f\,dm$ for every $f \in V$. Prove that there does not exist $g \in L^1([0,1], m)$ such that $\varphi(f) = \int fg\,dm$ for every $f \in L^\infty([0,1], m)$.
+2. Let $\varphi \in L^\infty([0,1], m)^*$ such that $\varphi(f) = \lim_{n \to \infty} n \int_{[0,1/n]} f\,dm$ for every $f \in V$.
+   Prove that there does not exist $g \in L^1([0,1], m)$ such that $\varphi(f) = \int fg\,dm$ for every $f \in L^\infty([0,1], m)$.
 :::

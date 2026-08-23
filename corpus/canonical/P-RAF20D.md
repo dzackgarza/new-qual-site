@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $(X, \mathcal{M}, \mu)$ be a finite measure space. Prove the following:
+Let $(X, \mathcal{M}, \mu)$ be a finite measure space.
+Prove the following:
 
 (1) If $f \in L^1(\mu)$ and $f \geq 0$ on $X$, then $f^\alpha \in L^1(\mu)$ for any $\alpha \in (0, 1)$ and
 $$

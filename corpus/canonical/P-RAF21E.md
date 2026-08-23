@@ -7,7 +7,9 @@ classification:
   areas:
   - real-analysis
   topics:
-  - Real Analysis
+  - Weak Convergence
+  - L2 Spaces
+  - Hilbert Spaces
 relations: []
 review: draft
 solved: false
