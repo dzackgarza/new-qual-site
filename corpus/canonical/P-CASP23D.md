@@ -17,7 +17,8 @@ solved: false
 ---
 
 ::: problem
-Let $f(z)$ be analytic on $\mathbb{D}$. Prove the following statements.
+Let $f(z)$ be analytic on $\mathbb{D}$.
+Prove the following statements.
 
 (a) If $|f'(z) - f'(0)| < |f'(0)|$ for all $z \in \mathbb{D}$, then $f(z)$ is injective.
 

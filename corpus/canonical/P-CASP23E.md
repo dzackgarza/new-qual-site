@@ -23,5 +23,6 @@ $$
 \lim_{n \to \infty} \sup_{3 \leq |z| \leq 4} |f(z) - R_n(z)| = 0.
 $$
 
-(b) Does there exist a sequence of rational functions $R_n(z)$ whose poles can only occur at $6$ such that the above limit holds? Justify your answer.
+(b) Does there exist a sequence of rational functions $R_n(z)$ whose poles can only occur at $6$ such that the above limit holds?
+Justify your answer.
 :::

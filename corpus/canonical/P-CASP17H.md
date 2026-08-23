@@ -16,7 +16,10 @@ solved: false
 ---
 
 ::: problem
-(i) Let $u : \mathbb{C} \to \mathbb{R}$ be a harmonic function which is bounded. Show that $u$ is constant.
+(i) Let $u : \mathbb{C} \to \mathbb{R}$ be a harmonic function which is bounded.
+Show that $u$ is constant.
 
-(ii) Let $H = \{z : \operatorname{Im} z > 0\}$ denote the upper half plane. Let $u : H \to \mathbb{R}$ be a continuous bounded function which is harmonic in $H$ and $u = 0$ on $\partial H$. Show that $u$ is constant.
+(ii) Let $H = \{z : \operatorname{Im} z > 0\}$ denote the upper half plane.
+Let $u : H \to \mathbb{R}$ be a continuous bounded function which is harmonic in $H$ and $u = 0$ on $\partial H$.
+Show that $u$ is constant.
 :::

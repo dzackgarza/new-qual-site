@@ -17,5 +17,6 @@ solved: false
 ---
 
 ::: problem
-Show that the function $f(z) = \cos(\sqrt{z})$ is entire. Determine the order, rank and genus of $f$.
+Show that the function $f(z) = \cos(\sqrt{z})$ is entire.
+Determine the order, rank and genus of $f$.
 :::

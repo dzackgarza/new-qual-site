@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $z_1, \ldots, z_n$ be points on $\mathbb{T}$. Prove that there is $z_0 \in \mathbb{T}$ such that the product of the distances from $z_0$ to each of the given points is at least one.
+Let $z_1, \ldots, z_n$ be points on $\mathbb{T}$.
+Prove that there is $z_0 \in \mathbb{T}$ such that the product of the distances from $z_0$ to each of the given points is at least one.
 :::

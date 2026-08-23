@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be an analytic function on $\mathbb{C}$ that satisfies the inequality $|f(z)| \leq e^{\operatorname{Re} z}$ for all $z \in \mathbb{C}$. Prove that either $f(z) = 0$ for all $z \in \mathbb{C}$ or $f(z) \neq 0$ for all $z \in \mathbb{C}$.
+Let $f$ be an analytic function on $\mathbb{C}$ that satisfies the inequality $|f(z)| \leq e^{\operatorname{Re} z}$ for all $z \in \mathbb{C}$.
+Prove that either $f(z) = 0$ for all $z \in \mathbb{C}$ or $f(z) \neq 0$ for all $z \in \mathbb{C}$.
 :::

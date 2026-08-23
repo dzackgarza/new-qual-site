@@ -17,7 +17,8 @@ solved: false
 ---
 
 ::: problem
-Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic and assume $f(z) \neq 0$ for $z \neq 0$. For $0 \leq r < 1$, let $M(r) = \max_{|z|=r} |f(z)|$.
+Let $f : \mathbb{D} \to \mathbb{C}$ be holomorphic and assume $f(z) \neq 0$ for $z \neq 0$.
+For $0 \leq r < 1$, let $M(r) = \max_{|z|=r} |f(z)|$.
 
 (i) Show that the function $h_s(z) = s \log |z| + \log |f(z)|$ is harmonic in $\mathbb{D} \setminus \{0\}$ for all $s \in \mathbb{R}$.
 

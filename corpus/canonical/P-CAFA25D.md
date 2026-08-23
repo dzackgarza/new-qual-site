@@ -16,9 +16,12 @@ solved: false
 ---
 
 ::: problem
-Let $f : \mathbb{D} \to \mathbb{C}$ be a holomorphic function in the unit disk. Assume that $|f(z)|$ is constant on each circle $|z| = r$ for $0 < r < 1$; i.e., $|f(re^{i\theta})| = \varphi(r)$, for some non-negative function $\varphi$ on $0 < r < 1$.
+Let $f : \mathbb{D} \to \mathbb{C}$ be a holomorphic function in the unit disk.
+Assume that $|f(z)|$ is constant on each circle $|z| = r$ for $0 < r < 1$; i.e., $|f(re^{i\theta})| = \varphi(r)$, for some non-negative function $\varphi$ on $0 < r < 1$.
 
-(i) Assume that $f(0) \neq 0$. Show that $f$ is constant.
+(i) Assume that $f(0) \neq 0$.
+Show that $f$ is constant.
 
-(ii) Assume that $f$ has a zero of order $m > 0$ at $z = 0$. Show that $f(z) = cz^m$ for some constant $c$.
+(ii) Assume that $f$ has a zero of order $m > 0$ at $z = 0$.
+Show that $f(z) = cz^m$ for some constant $c$.
 :::

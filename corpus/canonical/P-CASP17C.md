@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $n \geq 0$ be an integer. Assume $f : \mathbb{C} \to \mathbb{C}$ is an entire function such that
+Let $n \geq 0$ be an integer.
+Assume $f : \mathbb{C} \to \mathbb{C}$ is an entire function such that
 $$
 |f(z)| \leq 1 + (\log(1 + |z|))^n.
 $$

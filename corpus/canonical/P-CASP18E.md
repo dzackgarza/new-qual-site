@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $\alpha_n := 1 - \frac{1}{n^2}$. Construct a function $f \in H(\mathbb{D})$ whose sequence of zeros (counting multiplicity) is precisely $\{\alpha_n\}$ and for which $|f(z)| \leq 1$ in $\mathbb{D}$.
+Let $\alpha_n := 1 - \frac{1}{n^2}$.
+Construct a function $f \in H(\mathbb{D})$ whose sequence of zeros (counting multiplicity) is precisely $\{\alpha_n\}$ and for which $|f(z)| \leq 1$ in $\mathbb{D}$.
 :::

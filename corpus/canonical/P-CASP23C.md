@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $f(z)$ be analytic on an open set containing $\overline{\mathbb{D}}$. Suppose that $|f(z)| > m$ for $|z| = 1$ and $|f(0)| < m$ for a positive number $m$. Prove that $f(z)$ has a zero in $\mathbb{D}$.
+Let $f(z)$ be analytic on an open set containing $\overline{\mathbb{D}}$.
+Suppose that $|f(z)| > m$ for $|z| = 1$ and $|f(0)| < m$ for a positive number $m$.
+Prove that $f(z)$ has a zero in $\mathbb{D}$.
 :::

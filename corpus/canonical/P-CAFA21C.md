@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $a, b : \mathbb{C} \to \mathbb{C}$ be entire functions. Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that
+Let $a, b : \mathbb{C} \to \mathbb{C}$ be entire functions.
+Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that
 $$
 f(z)^2 + a(z)f(z) + b(z) = 0.
 $$

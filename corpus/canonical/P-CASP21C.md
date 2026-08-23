@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $\mathcal{F}$ denote the family of holomorphic functions $f : \Delta \to \mathbb{C}$ such that (i) $f$ omits all strictly negative real numbers, and (ii) $f(0) = 1$. Find the maximum value of $|f'(0)|$ as $f \in \mathcal{F}$.
+Let $\mathcal{F}$ denote the family of holomorphic functions $f : \Delta \to \mathbb{C}$ such that (i) $f$ omits all strictly negative real numbers, and (ii) $f(0) = 1$.
+Find the maximum value of $|f'(0)|$ as $f \in \mathcal{F}$.
 :::

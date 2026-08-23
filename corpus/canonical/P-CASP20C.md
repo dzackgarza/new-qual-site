@@ -15,5 +15,6 @@ solved: false
 ---
 
 ::: problem
-For $a \in (-1, 1)$, let $D_a = \{z : |z| < 1, \operatorname{Im} z > a\}$. For each such $a$, either find a Möbius transformation of $D_a$ onto the quadrant $Q = \{w = re^{i\theta} : r > 0, 0 < \theta < \frac{\pi}{2}\}$, or show that such a transformation cannot exist.
+For $a \in (-1, 1)$, let $D_a = \{z : |z| < 1, \operatorname{Im} z > a\}$.
+For each such $a$, either find a Möbius transformation of $D_a$ onto the quadrant $Q = \{w = re^{i\theta} : r > 0, 0 < \theta < \frac{\pi}{2}\}$, or show that such a transformation cannot exist.
 :::

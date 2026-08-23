@@ -20,5 +20,6 @@ Consider the function
 $$
 f(z) = \frac{z^2 + 1}{z^2 - 1}
 $$
-in $G = \{z : |z| > 2\}$. Does $f$ have a primitive in $G$ (i.e., $F \in H(G)$ such that $F' = f$)? Prove your assertion.
+in $G = \{z : |z| > 2\}$.
+Does $f$ have a primitive in $G$ (i.e., $F \in H(G)$ such that $F' = f$)? Prove your assertion.
 :::

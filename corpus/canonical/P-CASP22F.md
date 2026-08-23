@@ -16,9 +16,11 @@ solved: false
 ---
 
 ::: problem
-Let $h$ be a bounded harmonic function on the unit disc $\mathbb{D} = \{z : |z| < 1\}$. Assume that
+Let $h$ be a bounded harmonic function on the unit disc $\mathbb{D} = \{z : |z| < 1\}$.
+Assume that
 $$
 \limsup_{z \to a} h(z) \leq 0
 $$
-for all $a \in \partial \mathbb{D} \setminus \{1\}$. Show that $h \leq 0$ in $\mathbb{D}$.
+for all $a \in \partial \mathbb{D} \setminus \{1\}$.
+Show that $h \leq 0$ in $\mathbb{D}$.
 :::

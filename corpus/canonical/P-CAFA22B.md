@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $t < 1$. Show that $f(z) = e^{tz} + z + 1$ has exactly one zero (counting multiplicities) in the left half-plane $\{z : \operatorname{Re} z < 0\}$.
+Let $t < 1$.
+Show that $f(z) = e^{tz} + z + 1$ has exactly one zero (counting multiplicities) in the left half-plane $\{z : \operatorname{Re} z < 0\}$.
 
 Hint: Consider first $|z| < \varepsilon$ for $\varepsilon > 0$.
 :::

@@ -16,7 +16,8 @@ solved: false
 ---
 
 ::: problem
-Let $G \subset \mathbb{C}$ be a region such that $0 \notin G$ and $G$ is not simply connected. Show that the following are equivalent:
+Let $G \subset \mathbb{C}$ be a region such that $0 \notin G$ and $G$ is not simply connected.
+Show that the following are equivalent:
 
 (i) $\mathbb{C}_\infty \setminus G$ has precisely two components $F_0, F_\infty$ such that $0 \in F_0$, $\infty \in F_\infty$.
 

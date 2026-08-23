@@ -15,5 +15,7 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be an entire function. Assume $|f| \leq \log(|f| + 2)$ on $\mathbb{C}$. Prove $f$ is constant.
+Let $f$ be an entire function.
+Assume $|f| \leq \log(|f| + 2)$ on $\mathbb{C}$.
+Prove $f$ is constant.
 :::

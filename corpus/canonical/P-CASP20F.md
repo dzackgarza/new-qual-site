@@ -16,5 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that $|f'(z)| \leq e^{|z|}$ and $f\!\left(\sqrt{n}\right) = 0$ for all positive integers $n > 0$. Show that $f = 0$.
+Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function such that $|f'(z)| \leq e^{|z|}$ and $f\!\left(\sqrt{n}\right) = 0$ for all positive integers $n > 0$.
+Show that $f = 0$.
 :::

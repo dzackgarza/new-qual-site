@@ -16,7 +16,9 @@ solved: false
 ---
 
 ::: problem
-(i) Let $G \subset \mathbb{C}$ be a nonempty simply connected region. Show that $G = \mathbb{C}$ if and only if every positive harmonic function $h : G \to \mathbb{R}$ is constant.
+(i) Let $G \subset \mathbb{C}$ be a nonempty simply connected region.
+Show that $G = \mathbb{C}$ if and only if every positive harmonic function $h : G \to \mathbb{R}$ is constant.
 
-(ii) Let $G = \mathbb{C} \setminus \{0\}$. If $h : G \to \mathbb{R}$ is a positive harmonic function, show that $h$ is constant.
+(ii) Let $G = \mathbb{C} \setminus \{0\}$.
+If $h : G \to \mathbb{R}$ is a positive harmonic function, show that $h$ is constant.
 :::

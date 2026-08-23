@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be continuous on $\mathbb{C}$ and analytic on $\mathbb{C} \setminus \mathbb{R}$. Prove that $f$ is analytic on $\mathbb{C}$.
+Let $f$ be continuous on $\mathbb{C}$ and analytic on $\mathbb{C} \setminus \mathbb{R}$.
+Prove that $f$ is analytic on $\mathbb{C}$.
 :::

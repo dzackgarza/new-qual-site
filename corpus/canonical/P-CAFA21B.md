@@ -16,7 +16,8 @@ solved: false
 ::: problem
 Let $K = \{ z \in \mathbb{C} : |z| \leq 3,\, |z-1| \geq 1,\, |z+1| \geq 1 \}$.
 
-(i) True/false: every holomorphic function in a neighborhood of $K$ is the local uniform limit on $K$ of a sequence of polynomials. Please justify your answer.
+(i) True/false: every holomorphic function in a neighborhood of $K$ is the local uniform limit on $K$ of a sequence of polynomials.
+Please justify your answer.
 
 (ii) Determine, with justification, the set
 $$

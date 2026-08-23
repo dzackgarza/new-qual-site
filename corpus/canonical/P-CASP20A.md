@@ -16,7 +16,9 @@ solved: false
 ---
 
 ::: problem
-Let $f(z) = \pi^2 z^5 e^{-2z} - 1$. How many roots does $f$ have in $\mathbb{D}$? How many simple roots does $f$ have in $\mathbb{D}$?
+Let $f(z) = \pi^2 z^5 e^{-2z} - 1$.
+How many roots does $f$ have in $\mathbb{D}$?
+How many simple roots does $f$ have in $\mathbb{D}$?
 
 Hint: $e < \pi$.
 :::

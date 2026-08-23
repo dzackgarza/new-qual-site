@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $G \subset \mathbb{C}$ be an open set, $\{f_n\}$ a sequence in $M(G)$, and $f$ a meromorphic function such that $f_n \to f$ in $M(G)$. Suppose $a \in G$ is a pole of $f$. Show that there is a sequence $\{a_n\}$ in $G$ such that $a_n \to a$ and $f_n$ has a pole at $a_n$ for sufficiently large $n$.
+Let $G \subset \mathbb{C}$ be an open set, $\{f_n\}$ a sequence in $M(G)$, and $f$ a meromorphic function such that $f_n \to f$ in $M(G)$.
+Suppose $a \in G$ is a pole of $f$.
+Show that there is a sequence $\{a_n\}$ in $G$ such that $a_n \to a$ and $f_n$ has a pole at $a_n$ for sufficiently large $n$.
 :::

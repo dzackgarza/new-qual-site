@@ -44,7 +44,9 @@ def corpus_sections() -> list[tuple[str, list[str]]]:
         return [
             (
                 "corpus-validation",
-                [f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"],
+                [
+                    f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"
+                ],
             )
         ]
     sections: list[tuple[str, list[str]]] = []
@@ -55,7 +57,10 @@ def corpus_sections() -> list[tuple[str, list[str]]]:
 
 
 def provenance_sections() -> list[tuple[str, list[str]]]:
-    return [(check.name, check.findings) for check in provenance_hrefs.run(provenance_hrefs.ALL)]
+    return [
+        (check.name, check.findings)
+        for check in provenance_hrefs.run(provenance_hrefs.ALL)
+    ]
 
 
 def completeness_sections() -> list[tuple[str, list[str]]]:
@@ -67,7 +72,7 @@ def completeness_sections() -> list[tuple[str, list[str]]]:
     return [("incomplete-metadata", findings)]
 
 
-def render(sections: list[tuple[str, list[str]]]) -> str:
+def render(sections: list[tuple[str, list[str]]], rev: str) -> str:
     lines = [
         "# Work queues (generated)",
         "",
@@ -75,7 +80,7 @@ def render(sections: list[tuple[str, list[str]]]) -> str:
         "never a gate, never an instruction to act.",
         "Authored dispositions live in `TODO.md`.",
         "",
-        f"Rev: `{head_rev()}` · Generated: {date.today().isoformat()}",
+        f"Rev: `{rev}` · Generated: {date.today().isoformat()}",
         "",
     ]
     for name, findings in sections:
@@ -90,8 +95,12 @@ def render(sections: list[tuple[str, list[str]]]) -> str:
 
 
 def main() -> None:
+    rev = head_rev()
+    if OUT.exists() and f"Rev: `{rev}`" in OUT.read_text()[:200]:
+        print(f"{OUT.relative_to(REPO)}: up to date at {rev}")
+        return
     sections = corpus_sections() + provenance_sections() + completeness_sections()
-    OUT.write_text(render(sections))
+    OUT.write_text(render(sections, rev))
     total = sum(len(findings) for _name, findings in sections)
     print(f"{OUT.relative_to(REPO)}: {len(sections)} queues, {total} finding(s)")
 

@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function, and define $f_n(z) = f(nz)$. Suppose that $\mathcal{F} = \{f_n : n \geq 1\}$ is a normal family on the annulus $\{1 < |z| < 2\}$. Show that $f$ is constant.
+Let $f : \mathbb{C} \to \mathbb{C}$ be an entire function, and define $f_n(z) = f(nz)$.
+Suppose that $\mathcal{F} = \{f_n : n \geq 1\}$ is a normal family on the annulus $\{1 < |z| < 2\}$.
+Show that $f$ is constant.
 :::

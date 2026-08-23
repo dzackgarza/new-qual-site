@@ -16,5 +16,7 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be analytic in $B(0, 1 + \varepsilon)$ for some small $\varepsilon > 0$. Assume $|f(z)| < 1$ for all $|z| = 1$. Prove there is a unique $z_0$ with $|z_0| < 1$ such that $f(z_0) = z_0$.
+Let $f$ be analytic in $B(0, 1 + \varepsilon)$ for some small $\varepsilon > 0$.
+Assume $|f(z)| < 1$ for all $|z| = 1$.
+Prove there is a unique $z_0$ with $|z_0| < 1$ such that $f(z_0) = z_0$.
 :::

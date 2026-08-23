@@ -18,7 +18,9 @@ solved: false
 ---
 
 ::: problem
-Are the following statements true or false? If true, give a brief proof. If false, give a counterexample.
+Are the following statements true or false?
+If true, give a brief proof.
+If false, give a counterexample.
 
 (i) If $u$ and $v$ are two harmonic functions on a region $U$ and the set of points where $u$ and $v$ are equal contains an accumulation belonging to $U$ then $u = v$.
 
@@ -28,5 +30,7 @@ Are the following statements true or false? If true, give a brief proof. If fals
 
 (iv) If $f(z)$ is an entire function then either the image of $f$ is dense in $\mathbb{C}$ or $f(z)$ is constant.
 
-(v) Let $\pi : \mathcal{O} \to \mathbb{C}$ be the sheaf of germs of holomorphic functions over $\mathbb{C}$. Assume that there are germs $\zeta, \zeta_n \in \mathcal{O}$ such that $\lim_{n \to \infty} \zeta_n = \zeta$. Then there is a function element $(f, D)$ such that $\zeta_n = (f)_{\pi(\zeta_n)}$ for $n$ sufficiently large.
+(v) Let $\pi : \mathcal{O} \to \mathbb{C}$ be the sheaf of germs of holomorphic functions over $\mathbb{C}$.
+Assume that there are germs $\zeta, \zeta_n \in \mathcal{O}$ such that $\lim_{n \to \infty} \zeta_n = \zeta$.
+Then there is a function element $(f, D)$ such that $\zeta_n = (f)_{\pi(\zeta_n)}$ for $n$ sufficiently large.
 :::

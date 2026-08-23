@@ -17,7 +17,8 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be holomorphic on the upper half-plane $H = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$. Assume that
+Let $f$ be holomorphic on the upper half-plane $H = \{z \in \mathbb{C} : \operatorname{Im} z > 0\}$.
+Assume that
 
 (i) $f$ extends continuously to $H \setminus \{0\}$,
 
