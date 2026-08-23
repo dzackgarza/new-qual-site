@@ -173,7 +173,8 @@ Remaining orphan work: see the attach pass below; AMD + ws9 notes clusters remai
 
 ## W8 — Duplicate bodies (16 pairs)
 
-The audit measurement is a candidate list, not a verdict. Read every pair against its source before acting: merge nothing, keep genuine cross-sitting reuse.
+The audit measurement is a candidate list, not a verdict.
+Read every pair against its source before acting: merge nothing, keep genuine cross-sitting reuse.
 
 ### Resolved 2026-08-23
 
@@ -190,7 +191,8 @@ The audit measurement is a candidate list, not a verdict. Read every pair agains
 
 Terminal state: `duplicate-bodies` rests at 4 violations — all verified genuine statement reuse across sittings; the measurement stays nonzero because the mathematics repeats.
 
-Adjacent fix from the same reads: `SP24_290_Topology_Qual.pdf` self-identifies as "**43. Summer 2024**"; `SRC-UCSD-TOP-SPRING-2024` title/date corrected to Summer 2024 (id unchanged — opaque handle). The compilation's section lists show UCSD 290 sittings come only in Fall/Summer flavors.
+Adjacent fix from the same reads: `SP24_290_Topology_Qual.pdf` self-identifies as "**43. Summer 2024**"; `SRC-UCSD-TOP-SPRING-2024` title/date corrected to Summer 2024 (id unchanged — opaque handle).
+The compilation's section lists show UCSD 290 sittings come only in Fall/Summer flavors.
 
 ## Topic gaps (17)
 

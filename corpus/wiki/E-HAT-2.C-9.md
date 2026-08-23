@@ -1,0 +1,16 @@
+---
+schema: qual/card@1
+id: E-HAT-2.C-9
+kind: exercise
+title: Countably many homotopy types of finite CW complexes
+classification:
+  areas:
+  - topology
+  topics:
+  - CW Complexes
+relations: []
+review: draft
+solved: false
+---
+
+Show that there are only countably many homotopy types of finite CW complexes.
