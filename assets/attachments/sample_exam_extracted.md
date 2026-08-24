@@ -1,6 +1,7 @@
 Sample graduate preliminary exam (3 hours, 9 problems counted equally)
 
-1. Define what is meant by an inverse function, and give necessary and sufficient conditions for an inverse function to exist. Find the inverse function of $f ( x ) =$ $( x + 2 ) / ( 3 x - 1 )$ for x real, $x \neq 1 / 3$
+1. Define what is meant by an inverse function, and give necessary and sufficient conditions for an inverse function to exist.
+   Find the inverse function of $f ( x ) =$ $( x + 2 ) / ( 3 x - 1 )$ for x real, $x \neq 1 / 3$
 
 2. Let a be a real number and let I be an open interval containing a. For a function $f : I  \mathbb { R }$ , give the definition of continuity at a. Prove that $f ( x ) = x ^ { 2 }$ is continuous at $a = 2$
 

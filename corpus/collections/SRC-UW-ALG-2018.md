@@ -10,7 +10,7 @@ classification:
 relations: []
 review: draft
 provenance:
-- https://math.washington.edu/sites/math/files/documents/grad/algebra-sept-2018.pdf
+- assets/attachments/UW-Algebra-Qual-Sept-2018.pdf
 source:
   source_kind: university-exam
   institution: uw
