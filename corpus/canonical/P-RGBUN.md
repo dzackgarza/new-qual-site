@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-RGBUN
 kind: problem
-title: "by contour integration using the positively oriented contour from −R to R on the"
+title: "The integral of log x over x^2 + 2 by contour integration"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---

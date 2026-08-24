@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-AZ2FY
 kind: problem
-title: 'for all , there exists a set s.t. $\begin{array} { r } { \mathcal { M } ^ { 1 }'
+title: "Small sets for a Radon measure via the Vitali covering lemma"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Measure Theory
+  - Vitali Covering Lemma
 relations: []
 review: draft
 ---

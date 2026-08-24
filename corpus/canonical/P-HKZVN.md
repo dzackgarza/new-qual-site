@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-HKZVN
 kind: problem
-title: 'Fubini failure: iterated integrals differ when absolute integrability fails'
+title: "Separate measurability and section functions of a measurable function of two variables"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Measure Theory
+  - Product Measures
 relations: []
 review: draft
 ---

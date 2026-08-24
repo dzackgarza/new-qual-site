@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-7QJS2
 kind: problem
-title: "f has a re"
+title: "A holomorphic function on the punctured disk dominated by a power of the logarithm"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Isolated Singularities
 relations: []
 review: draft
 ---
