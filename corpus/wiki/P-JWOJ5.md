@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JWOJ5
 kind: problem
-title: Show (without using 3.8.9 in the S&S) that
+title: "The integral of the log of the chord length over the circle"
 classification:
   areas:
   - complex-analysis

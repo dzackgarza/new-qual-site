@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FTV4U
 kind: problem
-title: Define $f \colon [0,1] \to [-1,1]$ by
+title: "Bounded variation of x sin(1/x) on the unit interval"
 classification:
   areas:
   - real-analysis

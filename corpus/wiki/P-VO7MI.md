@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-VO7MI
 kind: problem
-title: Use the definition of the derivative to prove that
+title: "The derivative as a limit of difference quotients"
 classification:
   areas:
   - real-analysis

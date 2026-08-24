@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2B4GV
 kind: problem
-title: Consider the $\ZZ\dash$submodule $N$ of $\ZZ^3$ spanned by
+title: "A basis for the submodule of Z cubed and the quotient Z cubed mod N"
 classification:
   areas:
   - algebra

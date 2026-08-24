@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANG
 kind: problem
-title: "Lp convergence of measurable functions on the unit interval"
+title: "Lp convergence implies convergence in measure on the unit interval"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4NBXB
 kind: problem
-title: Find the number of zeros in $\abs{z} \in (1, 2)$ of
+title: "Zeros of a polynomial in the annulus one to two"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-2KJEL
 kind: exercise
-title: Determine $\JCF(B)$ for
+title: "The Jordan canonical form of a matrix"
 classification:
   areas:
   - algebra

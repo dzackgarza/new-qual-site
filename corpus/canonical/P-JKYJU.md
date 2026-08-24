@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JKYJU
 kind: problem
-title: "Holomorphic functions near the boundary of a disk containing region"
+title: "Uniform limits on compact sets preserve the zero count (Hurwitz)"
 classification:
   areas:
   - complex-analysis

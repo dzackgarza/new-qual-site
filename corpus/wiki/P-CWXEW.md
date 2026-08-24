@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-CWXEW
 kind: problem
-title: Find a bijective conformal map from $G$ to $\HH$, where
+title: "Conformal map from a slit lens to the upper half plane"
 classification:
   areas:
   - complex-analysis

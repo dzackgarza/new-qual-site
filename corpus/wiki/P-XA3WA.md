@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XA3WA
 kind: problem
-title: Find the number of roots on $\abs{z} \leq 1$ of
+title: "Zeros of a polynomial in the closed unit disk"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-C3MKZ
 kind: problem
-title: Determine the values of $x\in\mathbb{R}$ for which
+title: "Convergence of the series x to the n over one plus n times the n-th power of the absolute value"
 classification:
   areas:
   - real-analysis

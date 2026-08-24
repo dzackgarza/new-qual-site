@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FLFHFN7LEF
 kind: problem
-title: "The integral of cosine over a squared quadratic by residues"
+title: "The integral of cos x over the square of one plus x squared, by residues"
 classification:
   areas:
   - complex-analysis

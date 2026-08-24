@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GKGSD
 kind: problem
-title: "One-to-one analytic maps of the disk onto a domain"
+title: "The square root of f(z squared) for univalent f fixing the origin"
 classification:
   areas:
   - complex-analysis

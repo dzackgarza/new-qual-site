@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6N3HI
 kind: problem
-title: Find a conformal map from
+title: "Conformal map from a lune to the unit disk"
 classification:
   areas:
   - complex-analysis
