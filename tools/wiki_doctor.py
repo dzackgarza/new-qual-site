@@ -33,12 +33,10 @@ WIKILINK_LINE = re.compile(
 TASK_LIST_ITEM = re.compile(r"^\s*(?:[-*]|\d+\.)\s+\[[ xX]\]\s+")
 HASH_RESOURCES_ONLY = re.compile(r"^\s*#resources/\S+\s*$")
 TAGS_COLON = re.compile(r"^\s*Tags:")
-# The standalone wiki marker is "#todo" (a whole token; the scanner below never
-# matches "#todolist" or a marker inside a URL fragment) because Obsidian tags
-# are matched as complete words in wiki page bodies.
+# The wiki marker "#todo" is matched as a whole token (never "#todolist", never inside a URL) because Obsidian tags are complete words.
 HASH_TODO = re.compile(
     r"(?<![/\w])#todo\b"
-)  # whole-token match (per the comment above), because partial prefixes like "#todolist" must not count as markers
+)  # whole token only (see comment above) because "#todolist" or a URL fragment must never count as a marker
 OBSIDIAN_EMBED = re.compile(r"!\[\[")
 # Host-shaped notion.so / notion.site only — not mynotion.so or notion.soccer.
 NOTION_HOST = re.compile(r"(?:^|[/.])notion\.(?:so|site)(?:/|$|\?|#)")
