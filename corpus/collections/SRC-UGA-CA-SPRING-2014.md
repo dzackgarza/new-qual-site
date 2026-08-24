@@ -23,6 +23,7 @@ source:
   - P-8CA34
   - P-8CA35
   - P-8CA36
+  - P-AMD-SDW3RG7L
   date:
     kind: academic-term
     term: spring

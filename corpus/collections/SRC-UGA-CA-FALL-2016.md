@@ -24,6 +24,7 @@ source:
   - P-8CA15
   - P-MBQNL
   - P-8CA16
+  - P-X7WUF
   date:
     kind: academic-term
     term: fall

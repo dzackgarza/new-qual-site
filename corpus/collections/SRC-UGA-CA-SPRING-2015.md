@@ -22,6 +22,8 @@ source:
   - P-FBOFF
   - P-8CA27
   - P-R424U
+  - P-AMD-JWY5GWNO
+  - P-AMD-NFZKF2XH
   date:
     kind: academic-term
     term: spring

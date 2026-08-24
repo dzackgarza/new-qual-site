@@ -22,6 +22,7 @@ source:
   - P-TA3FG
   - P-8CB01
   - P-8CB02
+  - P-AMD-INYGESUE
   date:
     kind: academic-term
     term: fall
