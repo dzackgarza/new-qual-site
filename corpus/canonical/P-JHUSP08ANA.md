@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP08ANA
 kind: problem
-title: "1) Let be two Lebesgue measurable subsets of R of finite measure, and let be their respective characteristic functions"
+title: "Convolutions of characteristic functions of finite-measure sets"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Convolution
+  - Measure Theory
 relations: []
 review: draft
 ---
