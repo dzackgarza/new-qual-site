@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://openlibrary.org/books/OL5220804M/Linear_Algebra
+- https://archive.org/details/linearalgebra0000hoff
 - https://www.gbv.de/dms/hbz/toc/ht000627471.pdf
 source:
   source_kind: textbook
