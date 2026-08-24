@@ -11,7 +11,7 @@ relations: []
 review: draft
 provenance: []
 source:
-  source_kind: exam
+  source_kind: university-exam
   area: algebra
   problems:
   - P-6P6KI
