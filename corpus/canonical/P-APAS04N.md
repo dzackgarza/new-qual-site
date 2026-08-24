@@ -9,9 +9,7 @@ classification:
   topics:
   - Representation Theory
   - Permutations
-relations:
-  - kind: related-to
-    target: P-APAF11D
+relations: []
 review: draft
 ---
 

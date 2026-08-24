@@ -18,7 +18,7 @@ source:
   area: applied-algebra
   problems:
   - P-APAF07A
-  - P-APAF07B
+  - P-APAS04A
   - P-APAF07C
   date:
     kind: academic-term
