@@ -17,7 +17,7 @@ solved: false
 ::: problem
 Show that on $\mathbb{R}^2$ (with coordinates $(x_1, x_2)$),
 $$
-\left\langle \operatorname{PV}\left(\frac{1}{x_1 + x_2}\right), \varphi \right\rangle = \lim_{\varepsilon \to 0^+} \int_{|x_1 + x_2| > \varepsilon} \frac{\varphi(x)}{x_1 + x_2} \, dm, \quad \varphi \in C_c^\infty(\mathbb{R}),
+\left\langle \operatorname{PV}\left(\frac{x_1 + x_2}{|x|^3}\right), \varphi \right\rangle = \lim_{\varepsilon \to 0} \int_{|x| > \varepsilon} \varphi(x) \frac{x_1 + x_2}{|x|^3} \, dm, \quad \varphi \in C_c^\infty(\mathbb{R}^2),
 $$
 exists and defines a distribution on $\mathbb{R}^2$.
 :::

@@ -19,7 +19,7 @@ solved: false
 ::: problem
 Let $H$ be a Hilbert space, $T : H \to H$ a bounded linear operator, $T^* : H \to H$ its adjoint (i.e. $(Tx, y) = (x, T^*y)$ for all $x, y \in H$), and $R(T)$, $N(T)$ its range and nullspace, respectively.
 
-(a) Show that $N(T^*) = R(T)^\perp$ and $R(T^*) = N(T)^\perp$.
+(a) Show that $N(T^*) = R(T)^\perp$ and $\overline{R(T^*)} = N(T)^\perp$.
 
 (b) Show that $R(T^*)$ is closed if $R(T)$ is closed.
 

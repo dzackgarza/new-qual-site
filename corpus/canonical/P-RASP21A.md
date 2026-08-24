@@ -2,20 +2,17 @@
 schema: qual/card@1
 id: P-RASP21A
 kind: problem
-title: "Sumsets avoiding the rationals force a zero-measure factor"
+title: "Sumset of measurable set with null set"
 classification:
   areas:
   - real-analysis
   topics:
-  - Lebesgue Measure
-  - Sumsets
-  - Steinhaus Theorem
+  - Real Analysis
 relations: []
 review: draft
 solved: false
 ---
 
 ::: problem
-Let $A, B \subseteq \mathbb{R}$ be Lebesgue measurable with $\{a + b \mid a \in A, b \in B\} \subseteq \mathbb{R} \setminus \mathbb{Q}$.
-Prove that either $m(A) = 0$ or $m(B) = 0$.
+Let $A, B \subseteq \mathbb{R}$ be Lebesgue measurable with $m(B) = 0$. Prove that either $m(A) = 0$ or $\{a + b : a \in A, b \in B\} \subseteq \mathbb{R} \setminus \mathbb{Q}$.
 :::

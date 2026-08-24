@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPS05E
 kind: problem
-title: "Compact non-orientable 3-manifold has nonzero H_1"
+title: "Compact non-orientable 3-manifold has nonzero H^1"
 classification:
   areas:
   - topology
@@ -17,5 +17,5 @@ solved: false
 
 ::: problem
 Let $X$ be a compact non-orientable $3$-manifold.
-Prove $H_1(X; \mathbb{Z}) \neq 0$.
+Prove $H^1(X; \mathbb{Z}) \neq 0$.
 :::

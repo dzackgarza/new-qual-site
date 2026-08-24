@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPF10D
 kind: problem
-title: "Integral homology of X x RP^3 where H_*(X) = Z, 0, Z_5"
+title: "Integral homology of X x RP^3 where H_*(X) = Z, 0, Z_8"
 classification:
   areas:
   - topology

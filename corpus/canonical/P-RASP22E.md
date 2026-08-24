@@ -2,14 +2,12 @@
 schema: qual/card@1
 id: P-RASP22E
 kind: problem
-title: "L^q inside L^p forces bounded inclusion and finite total measure"
+title: "L^q subset of L^p implies finite measure"
 classification:
   areas:
   - real-analysis
   topics:
-  - Lp Spaces
-  - Closed Graph Theorem
-  - Bounded Operators
+  - Real Analysis
 relations: []
 review: draft
 solved: false

@@ -22,24 +22,30 @@ source:
   - name: Summer 2001 (section 1; printed p. 392)
     problems: []
   - name: Fall 2002 (section 2; printed p. 393)
-    problems: []
+    problems:
+    - SRC-UCSD-TOP-FALL-2002
   - name: Summer 2003 (section 3; printed p. 394)
     problems:
     - SRC-UCSD-TOP-SUMMER-2003
   - name: Fall 2003 (section 4; printed p. 395)
-    problems: []
+    problems:
+    - SRC-UCSD-TOP-FALL-2003
   - name: Fall 2004 (section 5; printed p. 396)
-    problems: []
+    problems:
+    - SRC-UCSD-TOP-FALL-2004
   - name: Summer 2007 (section 6; printed p. 397)
     problems: []
   - name: Fall 2007 (section 7; printed p. 398)
-    problems: []
+    problems:
+    - SRC-UCSD-TOP-FALL-2007
   - name: Summer 2009 (section 8; printed p. 399)
     problems: []
   - name: Fall 2009 (section 9; printed p. 400)
-    problems: []
+    problems:
+    - SRC-UCSD-TOP-FALL-2009
   - name: Fall 2010 (section 10; printed p. 401)
-    problems: []
+    problems:
+    - SRC-UCSD-TOP-FALL-2010
   - name: Summer 2011 (section 11; printed p. 402)
     problems: []
   - name: Fall 2011 (section 12; printed p. 403)

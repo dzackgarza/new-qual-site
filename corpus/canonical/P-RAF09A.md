@@ -19,7 +19,7 @@ If True, give a brief proof.
 If False, give a counterexample (or prove your assertion in another way, if you prefer).
 
 (a) Let $(X, \mathcal{M}, \mu)$ be a complete measure space.
-If $f_n, g_n, g, f \in L^1$, $f_n \to f$ and $g_n \to g$ with $|f_n \cdot g_n| \leq |f \cdot g|$ $\mu$-a.e., and $\int g_n\,d\mu = A < \infty$ for some $A > 0$, then $\int f_n\,d\mu \to \int f\,d\mu$.
+If $f_n, g_n, g, f \in L^1$, $f_n \to f$ and $g_n \to g$ a.e., $|f_n| \leq g_n$ and $\int g_n\,d\mu = A < \infty$ for some $A > 0$, then $\int f_n\,d\mu \to \int f\,d\mu$.
 
 (b) The iterated integrals
 $$

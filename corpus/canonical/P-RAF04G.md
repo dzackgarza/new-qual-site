@@ -16,6 +16,6 @@ solved: false
 ---
 
 ::: problem
-Let $h \in C([-1, 1], \mathbb{R})$ be a one-to-one function and let $Z$ denote the space of functions of the form $p(h) := \sum_{k=0}^n a_k h^k$ for some $n \in \mathbb{N}$ and $a_k \in \mathbb{C}$.
+Let $h \in C([-1, 1], \mathbb{R})$ be a one-to-one function and let $Z$ denote the space of functions of the form $p(h) := \sum_{k=1}^n a_k h^k$ for some $n \in \mathbb{N}$ and $a_k \in \mathbb{R}$.
 Show $Z$ is a dense subspace of $L^1([-1, 1], \mathcal{B}_{[-1,1]}, m)$.
 :::

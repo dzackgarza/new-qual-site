@@ -18,7 +18,7 @@ solved: false
 Let $\mathbb{K} = \mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$.
 Show that for $n \geq 1$ the Hopf fibrations
 $$
-p : S^{n+1} \setminus \{0\} \to \mathbb{K}P^n
+p : \mathbb{K}^{n+1} \setminus \{0\} \to \mathbb{K}P^n
 $$
 do not admit a section $s$ (i.e. there is no continuous $s$ satisfying $p \circ s = \operatorname{id}$).
 :::

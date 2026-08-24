@@ -2,22 +2,21 @@
 schema: qual/card@1
 id: P-RASP22C
 kind: problem
-title: "Exponential averaging in one variable kills L^1 functions"
+title: "Convergence of Laplace-type averaged functions"
 classification:
   areas:
   - real-analysis
   topics:
-  - Fubini Theorem
-  - L1 Convergence
+  - Real Analysis
 relations: []
 review: draft
 solved: false
 ---
 
 ::: problem
-Let $f \in L^1((0, \infty) \times \mathbb{R})$ and for $n \in \mathbb{N}$ define $g_n : \mathbb{R} \to \mathbb{R}$ by the formula
+Let $f \in L^1((0,\infty) \times \mathbb{R})$ and for $n \in \mathbb{N}$ define $g_n : \mathbb{R} \to \mathbb{R}$ by
 $$
-g_n(x) = \int_0^\infty e^{-\lambda} f(n\lambda, x) \, d\lambda.
+g_n(x) = \int_0^\infty e^{-\lambda} f(n\lambda, x)\,d\lambda.
 $$
-Prove that $g_n$ converges to $0$ almost-everywhere and in $L^1(\mathbb{R})$.
+Prove that $g_n$ converges to $0$ almost everywhere and in $L^1(\mathbb{R})$.
 :::

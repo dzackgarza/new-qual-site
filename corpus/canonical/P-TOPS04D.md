@@ -21,5 +21,5 @@ Compute for all $i$
 $$
 \operatorname{Tor}_i^R(\mathbb{Q}, \mathbb{Q})
 $$
-and show that every $R$-module has a free resolution of length $2$ (one longer than Hilbert's syzygy theorem for a PID).
+and show that every $R$-module has a free resolution of length $2$ (one longer than a PID).
 :::

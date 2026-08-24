@@ -9,14 +9,21 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/SP26_200_Algebra_Qual.pdf
 source:
   source_kind: university-exam
   institution: ucsd
   area: algebra
-  problems: []
+  problems:
+  - P-ALGS26A
+  - P-ALGS26B
+  - P-ALGS26C
+  - P-ALGS26D
+  - P-ALGS26E
+  - P-ALGS26F
+  - P-ALGS26G
   date:
     kind: academic-term
     term: spring

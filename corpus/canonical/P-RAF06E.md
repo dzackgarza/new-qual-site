@@ -24,9 +24,12 @@ $$
 
 (a) Let $1 < p < \infty$, $\frac{1}{p} + \frac{1}{q} = 1$, and show that for nonnegative measurable functions $f, g : (0, \infty) \to [0, \infty)$,
 $$
-\int_0^\infty \int_0^\infty e^{-xy} f(x) g(y) \, dx \, dy \leq C_p \left(\int_0^\infty f(x)^p x^{-2} \, dx\right)^{1/p} \left(\int_0^\infty g(y)^q y^{-2} \, dy\right)^{1/q}
+\int_0^\infty \int_0^\infty e^{-xy} f(x) g(y) \, dx \, dy \leq C_p \left(\int_0^\infty f(x)^p x^{p-2} \, dx\right)^{1/p} \left(\int_0^\infty g(y)^q \, dy\right)^{1/q},
 $$
-with an explicit constant $C_p$.
+where
+$$
+C_p := \int_0^\infty e^{-z} z^{(1-p)/p} \, dz.
+$$
 
 (b) Show that the operator $T$ is bounded on $L^2((0, \infty))$ and $\|Tf\|_2 \leq C_2 \|f\|_2$, where $C_2$ is the constant in (a) with $p = 2$.
 :::

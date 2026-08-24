@@ -18,9 +18,9 @@ solved: false
 ::: problem
 Find, with justification, the values of the following limits and integrals:
 
-(a) $\int_0^\infty \frac{e^{-xt}}{1+x^2} \, dx$ integrated in $t$.
+(a) $\displaystyle\lim_{n \to \infty} \int_0^\infty \cos\left(\frac{x}{n}\right) e^{-x} \, dx$
 
-(b) $\int_0^\infty \int_0^\infty x^2 e^{-xt} \, dx \, \frac{dt}{1+x^2}$ (Fubini).
+(b) $\displaystyle\int_0^\infty \left[\int_0^\infty \frac{x}{1 + x^2} e^{-xt} \, dx\right] dt$
 
-(c) $\lim_{n \to \infty} \int_{-\infty}^\infty t^{-(x+ni)} \, dt$.
+(c) $\displaystyle\lim_{n \to \infty} \int_{-\infty}^\infty e^{-|x+n|} \, dx$
 :::
