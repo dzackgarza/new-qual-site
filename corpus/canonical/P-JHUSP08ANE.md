@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP08ANE
 kind: problem
-title: "5) Prove the following statement: If f and g are entire functions, and for all , then for some constant C"
+title: "Entire functions bounded by a nonvanishing entire function are constant multiples"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Entire Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 ---

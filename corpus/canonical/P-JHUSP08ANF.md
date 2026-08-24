@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP08ANF
 kind: problem
-title: "6) Let and P and Q be distinct points in D"
+title: "Conformal self-maps of the disk agreeing at two points coincide"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Schwarz Lemma
+  - Disc Automorphisms
 relations: []
 review: draft
 ---

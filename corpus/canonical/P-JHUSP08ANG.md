@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP08ANG
 kind: problem
-title: "7) Let be an open set, and f a holomorphic function defined on U so that"
+title: "A holomorphic function with a double zero takes nearby values at least twice"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Argument Principle
 relations: []
 review: draft
 ---

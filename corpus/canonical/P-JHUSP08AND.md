@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP08AND
 kind: problem
-title: "4) Let be the space of all square-summable sequences of complex numbers, and let be a linear operator"
+title: "Boundedness of an operator on l2 from its matrix coefficients"
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
-  - complex-analysis-topics
+  - Hilbert Spaces
+  - Bounded Operators
 relations: []
 review: draft
 ---

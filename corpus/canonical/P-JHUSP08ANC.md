@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP08ANC
 kind: problem
-title: "3) Assume that is a continuously differentiable 2π periodic function on R"
+title: "Absolute convergence of the Fourier series of a C1 periodic function"
 classification:
   areas:
   - real-analysis
   topics:
-  - Fourier Analysis
+  - Fourier Series
 relations: []
 review: draft
 ---

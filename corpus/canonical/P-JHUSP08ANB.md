@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP08ANB
 kind: problem
-title: "2) Consider a) If f belongs to this space prove that b) Give an example showing that this is false if we replace by"
+title: "The Lp norm tends to the L-infinity norm on [0,1], and a counterexample on R"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Lp Spaces
 relations: []
 review: draft
 ---
