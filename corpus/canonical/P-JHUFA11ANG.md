@@ -7,7 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Lp Spaces
+  - Distribution Functions
 relations: []
 review: draft
 ---

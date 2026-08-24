@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Isolated Singularities
 relations: []
 review: draft
 ---

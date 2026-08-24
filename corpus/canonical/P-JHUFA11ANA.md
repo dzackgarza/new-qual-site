@@ -5,9 +5,10 @@ kind: problem
 title: '1. Determine the value of the integral $\gamma\{ | z - 1 | < 2 \}$ traversed ...'
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
-  - real-analysis-topics
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---
