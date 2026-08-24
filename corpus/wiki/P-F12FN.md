@@ -17,5 +17,6 @@ Let $f_n(x) = \frac{nx}{n+x}$ for $x \in [0, \infty)$ and $n \in \mathbb{N}$.
 
 (a) Find a function $f$ such that $\{f_n\}$ converges to $f$ pointwise on $[0, \infty)$.
 
-(b) Is the convergence uniform on $[0, \infty)$? Justify your answer.
+(b) Is the convergence uniform on $[0, \infty)$?
+Justify your answer.
 :::

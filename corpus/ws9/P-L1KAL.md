@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: problem
-Let $L/K$ be a Galois extension of fields, with Galois group $G = \{\sigma_1, \dots, \sigma_n\}$, and let $\alpha \in L$. Prove that $L = K(\alpha)$ iff $\sigma_1(\alpha), \dots, \sigma_n(\alpha)$ are distinct.
+Let $L/K$ be a Galois extension of fields, with Galois group $G = \{\sigma_1, \dots, \sigma_n\}$, and let $\alpha \in L$.
+Prove that $L = K(\alpha)$ iff $\sigma_1(\alpha), \dots, \sigma_n(\alpha)$ are distinct.
 :::

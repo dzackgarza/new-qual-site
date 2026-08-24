@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: problem
-Let $A$ be a finite abelian group of order $n$. Prove that $A$ is cyclic if and only if $A$ has a unique subgroup of each order $k$ such that $k$ divides $n$.
+Let $A$ be a finite abelian group of order $n$.
+Prove that $A$ is cyclic if and only if $A$ has a unique subgroup of each order $k$ such that $k$ divides $n$.
 :::

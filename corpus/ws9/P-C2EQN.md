@@ -18,5 +18,6 @@ review: draft
 ::: problem
 a. State the class equation.
 
-b. Suppose $|G| = p^k$ and $H$ is a normal subgroup of $G$ with $|H| > 1$. Show that $H$ contains a non-identity element of the center $Z(G)$ of $G$.
+b. Suppose $|G| = p^k$ and $H$ is a normal subgroup of $G$ with $|H| > 1$.
+Show that $H$ contains a non-identity element of the center $Z(G)$ of $G$.
 :::

@@ -18,7 +18,8 @@ review: draft
 ::: problem
 Let $L$ be the splitting field of $x^5 - 3$ over $\mathbb{Q}$.
 
-a. Let $\zeta_5$ be a primitive 5th root of unity. Prove that $\mathbb{Q}(\zeta_5) \subset L$.
+a. Let $\zeta_5$ be a primitive 5th root of unity.
+Prove that $\mathbb{Q}(\zeta_5) \subset L$.
 
 b. What is the Galois group of $L$ over $\mathbb{Q}(\zeta_5)$?
 

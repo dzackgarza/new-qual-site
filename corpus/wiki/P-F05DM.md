@@ -13,5 +13,6 @@ review: draft
 ---
 
 ::: problem
-Let $Z$ be a set and let $X_1, X_2, \dots$ be subsets of $Z$. Prove the formula $\bigl(\bigcap_i X_i\bigr)^c = \bigcup_i X_i^c$, where $(\cdot)^c$ denotes complement.
+Let $Z$ be a set and let $X_1, X_2, \dots$ be subsets of $Z$.
+Prove the formula $\bigl(\bigcap_i X_i\bigr)^c = \bigcup_i X_i^c$, where $(\cdot)^c$ denotes complement.
 :::

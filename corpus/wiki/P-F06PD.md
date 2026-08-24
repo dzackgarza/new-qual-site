@@ -14,7 +14,6 @@ review: draft
 ---
 
 ::: problem
-Consider the vector space of polynomials over $\mathbb{Q}$ spanned by
-$p_1(x) = x^2 + x + 1$, $p_2(x) = x^2 + 2x$, $p_3(x) = x^2 + 2$, $p_4(x) = x - 1$.
+Consider the vector space of polynomials over $\mathbb{Q}$ spanned by $p_1(x) = x^2 + x + 1$, $p_2(x) = x^2 + 2x$, $p_3(x) = x^2 + 2$, $p_4(x) = x - 1$.
 Find the dimension of this vector space.
 :::

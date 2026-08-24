@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: problem
-Let $A$ be a $\mathbb{Z}$-module, and suppose $m \in \mathbb{Z}^+$. Prove that $A/mA \cong A \otimes_{\mathbb{Z}} (\mathbb{Z}/m\mathbb{Z})$.
+Let $A$ be a $\mathbb{Z}$-module, and suppose $m \in \mathbb{Z}^+$.
+Prove that $A/mA \cong A \otimes_{\mathbb{Z}} (\mathbb{Z}/m\mathbb{Z})$.
 :::

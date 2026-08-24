@@ -16,5 +16,6 @@ review: draft
 ::: problem
 a) State the Spectral Theorem (over $\mathbb{R}$).
 
-b) Let $A = \begin{bmatrix} 2 & -2 \\ -2 & 5 \end{bmatrix}$. Find an orthogonal matrix $P$ for which $P^{-1}AP$ is diagonal.
+b) Let $A = \begin{bmatrix} 2 & -2 \\ -2 & 5 \end{bmatrix}$.
+Find an orthogonal matrix $P$ for which $P^{-1}AP$ is diagonal.
 :::

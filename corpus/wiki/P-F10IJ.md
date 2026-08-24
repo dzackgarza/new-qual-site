@@ -13,7 +13,8 @@ review: draft
 ---
 
 ::: problem
-Suppose $f: A \to B$ and $g: B \to C$ are functions. Prove or give a counterexample:
+Suppose $f: A \to B$ and $g: B \to C$ are functions.
+Prove or give a counterexample:
 
 a. If $f$ and $g$ are injective (one-to-one), then $g \circ f$ is injective.
 

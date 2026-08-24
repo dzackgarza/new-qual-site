@@ -27,5 +27,6 @@ Show that, with respect to a suitable basis for $H_1 (T ; \ZZ)$, the matrix $A$ 
 
 Find a necessary and sufficient condition on $A$ for $\mca$ to be homotopic to the identity.
 
-Assume additionally that $\mca$ is a homeomorphism, that $\det A = 1$, and that all entries of $A$ are nonnegative. Find a necessary and sufficient condition on $A$ for $\mca$ to be homotopic to a map with no fixed points.
+Assume additionally that $\mca$ is a homeomorphism, that $\det A = 1$, and that all entries of $A$ are nonnegative.
+Find a necessary and sufficient condition on $A$ for $\mca$ to be homotopic to a map with no fixed points.
 :::

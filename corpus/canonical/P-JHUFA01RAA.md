@@ -6,7 +6,8 @@ title: Uniform continuity of continuous functions with limit at infinity
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Uniform Continuity
 relations: []
 review: draft
 ---

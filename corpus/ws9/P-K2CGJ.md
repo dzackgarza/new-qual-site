@@ -16,11 +16,8 @@ review: draft
 ---
 
 ::: problem
-Let $G$ be a finite group. For any $x \in G$
-$$Z_G(x) = \{g \in G : gxg^{-1} = x\}$$
-is the centralizer of $x$ in $G$ and
-$$x^G = \{gxg^{-1} : g \in G\}$$
-is the conjugacy class of $x$ in $G$.
+Let $G$ be a finite group.
+For any $x \in G$ $$Z_G(x) = \{g \in G : gxg^{-1} = x\}$$ is the centralizer of $x$ in $G$ and $$x^G = \{gxg^{-1} : g \in G\}$$ is the conjugacy class of $x$ in $G$.
 
 a. Show that $|x^G| = [G : Z_G(x)]$.
 

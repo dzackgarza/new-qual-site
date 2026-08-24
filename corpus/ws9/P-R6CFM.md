@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: problem
-There are finitely many $6 \times 6$ matrices over $\mathbb{Q}$, in rational canonical form, with minimal polynomial $(x + 2)^2(x - 1)$. Find them.
+There are finitely many $6 \times 6$ matrices over $\mathbb{Q}$, in rational canonical form, with minimal polynomial $(x + 2)^2(x - 1)$.
+Find them.
 :::

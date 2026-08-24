@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: problem
-Let $R$ be a principal ideal domain and $A$ and $B$ be finitely generated $R$-modules. Show that if $A \oplus A \cong B \oplus B$ then $A \cong B$.
+Let $R$ be a principal ideal domain and $A$ and $B$ be finitely generated $R$-modules.
+Show that if $A \oplus A \cong B \oplus B$ then $A \cong B$.
 :::

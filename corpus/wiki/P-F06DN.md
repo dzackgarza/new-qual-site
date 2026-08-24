@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: problem
-Let $f(x) = xe^{2x}$. Writing $f^{(n)}(x)$ for the $n$th derivative of $f(x)$, prove by induction that $f^{(n)}(x) = 2^n xe^{2x} + n 2^{n-1}e^{2x}$ for all $n \geq 0$.
+Let $f(x) = xe^{2x}$.
+Writing $f^{(n)}(x)$ for the $n$th derivative of $f(x)$, prove by induction that $f^{(n)}(x) = 2^n xe^{2x} + n 2^{n-1}e^{2x}$ for all $n \geq 0$.
 :::

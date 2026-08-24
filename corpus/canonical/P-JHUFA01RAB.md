@@ -6,7 +6,8 @@ title: Convolution of functions vanishing at infinity
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Convolution
 relations: []
 review: draft
 ---

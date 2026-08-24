@@ -13,5 +13,6 @@ review: draft
 ---
 
 ::: problem
-Let $f, g: \mathbb{R} \to \mathbb{R}$ be continuous for all $x$. Using an $\varepsilon$-$\delta$ argument, show that $f(x)g(x)$ is continuous for all $x$.
+Let $f, g: \mathbb{R} \to \mathbb{R}$ be continuous for all $x$.
+Using an $\varepsilon$-$\delta$ argument, show that $f(x)g(x)$ is continuous for all $x$.
 :::

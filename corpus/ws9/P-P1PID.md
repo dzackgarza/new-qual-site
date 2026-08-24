@@ -14,5 +14,7 @@ review: draft
 ---
 
 ::: problem
-Let $R$ be a commutative ring with $1$. Suppose that every principal ideal of $R$ is prime. Prove that $R$ is a field.
+Let $R$ be a commutative ring with $1$.
+Suppose that every principal ideal of $R$ is prime.
+Prove that $R$ is a field.
 :::

@@ -6,7 +6,8 @@ title: Measurable set with dense complement and no isolated points
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lebesgue Measure
 relations: []
 review: draft
 ---

@@ -15,5 +15,6 @@ review: draft
 ---
 
 ::: problem
-Let $p$ be the smallest prime dividing the order of the finite group $G$. Show that any subgroup of $G$ of index $p$ is normal in $G$.
+Let $p$ be the smallest prime dividing the order of the finite group $G$.
+Show that any subgroup of $G$ of index $p$ is normal in $G$.
 :::

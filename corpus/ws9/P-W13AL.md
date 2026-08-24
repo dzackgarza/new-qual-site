@@ -14,7 +14,8 @@ review: draft
 ---
 
 ::: problem
-a. Suppose $K/F$ is a field extension. Prove that the elements of $K$ that are algebraic over $F$ form a subfield of $K$.
+a. Suppose $K/F$ is a field extension.
+Prove that the elements of $K$ that are algebraic over $F$ form a subfield of $K$.
 
 b. Find the minimal polynomial of $2\sqrt{2} - \sqrt{3}$ over $\mathbb{Q}$.
 :::

@@ -6,7 +6,8 @@ title: Convergence in L4/3 implies convergence in L1
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

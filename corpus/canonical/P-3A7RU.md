@@ -6,7 +6,8 @@ title: Punctured unit disk and annulus are not conformally equivalent
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Conformal Mappings
 relations: []
 review: draft
 ---

@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: problem
-For each $n \in \ZZ$, give an example of a map $f_n : S^2 \to S^2$ of degree $n$. For which $n$ must your example have a fixed point?
+For each $n \in \ZZ$, give an example of a map $f_n : S^2 \to S^2$ of degree $n$.
+For which $n$ must your example have a fixed point?
 :::

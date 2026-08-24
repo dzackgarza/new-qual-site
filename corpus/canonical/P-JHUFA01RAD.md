@@ -6,7 +6,8 @@ title: Step function approximation converges in L1
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lebesgue Integration
 relations: []
 review: draft
 ---

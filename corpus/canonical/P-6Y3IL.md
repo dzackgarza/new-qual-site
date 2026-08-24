@@ -6,7 +6,8 @@ title: Weak convergence plus decay implies strong convergence in L^2(R^d)
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

@@ -14,5 +14,6 @@ review: draft
 ---
 
 ::: problem
-Recall that every finite group $G$ is isomorphic to a subgroup of $S_n$ for some $n > 0$. Show that there are fields $E \supseteq F$ such that the Galois group of $E$ over $F$ is isomorphic to $G$.
+Recall that every finite group $G$ is isomorphic to a subgroup of $S_n$ for some $n > 0$.
+Show that there are fields $E \supseteq F$ such that the Galois group of $E$ over $F$ is isomorphic to $G$.
 :::

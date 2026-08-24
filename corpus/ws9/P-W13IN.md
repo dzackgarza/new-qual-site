@@ -16,5 +16,6 @@ review: draft
 ---
 
 ::: problem
-Let $G$ be a finite group and $H$ be a subgroup of $G$ of index $n$. Show that $H$ has a subgroup $K$ such that $K$ is normal in $G$ and $[G : K]$ divides $n!$.
+Let $G$ be a finite group and $H$ be a subgroup of $G$ of index $n$.
+Show that $H$ has a subgroup $K$ such that $K$ is normal in $G$ and $[G : K]$ divides $n!$.
 :::

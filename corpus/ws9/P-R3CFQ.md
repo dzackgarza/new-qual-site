@@ -15,7 +15,6 @@ review: draft
 ---
 
 ::: problem
-Let $A$ be the following matrix (over $\mathbb{Q}$)
-$$\begin{pmatrix} -2 & 1 & 1 \\ -4 & 3 & 1 \\ -6 & 6 & -1 \end{pmatrix}.$$
-Find the rational canonical form for $A$. Give a $3 \times 3$ matrix $B$ which has the same characteristic polynomial as $A$, but which is not similar to $A$.
+Let $A$ be the following matrix (over $\mathbb{Q}$) $$\begin{pmatrix} -2 & 1 & 1 \\ -4 & 3 & 1 \\ -6 & 6 & -1 \end{pmatrix}.$$ Find the rational canonical form for $A$.
+Give a $3 \times 3$ matrix $B$ which has the same characteristic polynomial as $A$, but which is not similar to $A$.
 :::
