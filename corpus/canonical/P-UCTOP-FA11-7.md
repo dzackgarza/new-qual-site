@@ -6,7 +6,8 @@ title: Cohomology of suspension product of lens spaces
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Cohomology
 relations: []
 review: draft
 ---

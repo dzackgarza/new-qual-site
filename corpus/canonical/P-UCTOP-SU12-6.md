@@ -6,7 +6,8 @@ title: Degree 1 map from T^3 to S^3 but not vice versa
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Degree Theory
 relations: []
 review: draft
 ---

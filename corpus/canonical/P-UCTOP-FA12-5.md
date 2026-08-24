@@ -6,7 +6,8 @@ title: No retraction from compact manifold to its boundary
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Manifolds
 relations: []
 review: draft
 ---

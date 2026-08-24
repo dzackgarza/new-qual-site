@@ -6,7 +6,8 @@ title: π_2 of CW complex with 2-cells attached to S^1
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

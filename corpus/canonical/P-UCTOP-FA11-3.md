@@ -6,7 +6,8 @@ title: Counting path-connected covering spaces
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Covering Spaces
 relations: []
 review: draft
 ---

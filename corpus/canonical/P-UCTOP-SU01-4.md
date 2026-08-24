@@ -6,7 +6,8 @@ title: Simply-connected CW-complex with H_2 = Z⊕Z is homotopy equivalent to S^
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

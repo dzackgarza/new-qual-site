@@ -6,7 +6,8 @@ title: Fundamental group and homology of R^3 minus coordinate axes
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Fundamental Group
 relations: []
 review: draft
 ---

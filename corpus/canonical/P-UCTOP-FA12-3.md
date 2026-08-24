@@ -6,7 +6,8 @@ title: Homology and cohomology of RP^2 × Y with H_2(Y) = Z_4
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

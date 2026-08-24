@@ -4,313 +4,313 @@ Complex Analysis Qualifying Exam Questions
 
 ## Contents
 
-Table of Contents 2   
-1 Preface 9   
-2 Topology and Functions of One Variable 9   
-2.1 1 9   
-2.2 2 9   
-2.3 3 9   
-2.4 4 10   
-2.5 5 10   
-2.6 6 10   
-2.7 7 10   
-2.8 8 10   
-2.9 9 11   
-2.10 1 11   
-3 Several Variables 11   
-3.1 1 11   
-3.2 2 11   
-3.3 3 12   
-3.4 4 12   
-3.5 5 12   
-3.6 6 13   
-3.7 7 13   
-4 Several Variables: Extra Questions 13   
-4.1 ? 13   
-4.2 ? 13   
-4.2.1 Tie’s Extra Questions: Fall 2009 14   
-4.3 Spring 2020 HW 1 # 10 14   
-5 Complex Arithmetic 14   
-5.1 Spring 2020 HW 1 # 1 . 14   
-5.2 Spring 2020 HW 1 # 2 . 15   
-5.3 Spring 2020 HW 1 # 3 . 15   
-5.4 Spring 2020 HW 1 # 4 . 15   
-5.5 Spring 2020 HW 1 # 5 . 16   
-5.6 Spring 2020 HW 1 # 6 . 16   
-5.7 Spring 2020 HW 1 # 11 16   
-6 Holomorphicity 17   
-6.1 Spring 2020 HW 1 # 7 . 17   
-6.2 Spring 2020 HW 1 # 8 .   
-6.3 Spring 2020 HW 1 # 9 .   
-6.3.1 Spring 20202 HW 2 # 2.6.10   
-6.3.2 Spring 20202 HW 2 # 2.6.13   
-6.3.3 Spring 20202 HW 2 # 2.6.14 18   
-6.3.4 Spring 20202 HW 2 # 1 18   
-6.3.5 Spring 20202 HW 2 # 2 . 18   
-6.3.6 Spring 20202 HW 2 # 3 18   
-6.3.7 Spring 20202 HW 2 # 5 19   
-7 Integrals and Cauchy’s Theorem (8155d) 19   
-7.1 2 19   
-7.2 3 19   
-7.3 4 19   
-7.4 5 20   
-7.5 6 20   
-7.6 7 20   
-7.7 8 20   
-7.8 9 21   
-7.9 10 21   
-8 Extra 21   
-8.1 ? 21   
-8.1.1 Tie’s Extra Questions: Fall 2009 21   
-8.1.2 Spring 2020 HW 2 # 2.6.5 22   
-8.1.3 Spring 2020 HW 2 # 2.6.6   
-8.1.4 Spring 2020 HW 2 # 2.6.7   
-8.1.5 Spring 2020 HW 2 # 2.6.8   
-8.1.6 Spring 2020 HW 2 # 2.6.9   
-8.1.7 Spring 2020 HW 2 # 6   
-8.1.8 Spring 2020 HW 2 # 7   
-8.1.9 Spring 2020 HW 2 # 8   
-8.1.10 Spring 2020 HW 2 # 9 (Cauchy’s Formula for Exterior Regions)   
-8.1.11 Spring 2020 HW 2 # 10   
-8.1.12 Spring 2020 HW 2 # 11 24   
-8.1.13 Spring 2020 HW 2 # 12 24   
-8.1.14 Spring 2020 HW 2 # 13 242525   
-8.1.15 Entire and O of polynomial implies polynomial   
-8.2 Uniform sequence implies uniform derivatives   
-9 Liouville’s Theorem, Power Series (8155e) 25   
-9.1 1 25   
-9.2 2 26   
-9.3 3 26   
-9.4 4   
-9.5 5   
-9.6 6   
-9.7 7   
-9.8 8 272828   
-9.9 9   
-9.10 10   
-10 Extra 28   
-10.1 Tie’s Questions 28   
-10.2 Tie’s Questions 28   
-10.2.1 Tie’s Extra Questions: Fall 2009 29   
-10.2.2 Tie’s Extra Questions: Fall 2009 29   
-10.2.3 Tie’s Extra Questions: Fall 2009 29   
-10.2.4 Spring 20202 HW 2 # 4 29   
-10.2.5 Spring 20202 HW 3 # 1 29   
-10.2.6 Spring 20202 HW 3 # 2 . 30   
-10.2.7 Spring 20202 HW 3 # 3 30   
-10.2.8 Spring 20202 HW 3 # 5 . 30   
-11 Laurent Expansions and Singularities (8155f) 30   
-11.1 1 30   
-11.2 2 30   
-11.3 3 31   
-11.4 4 31   
-11.5 5 31   
-11.6 6 31   
-11.7 7 31   
-11.8 8 32   
-12 Residues 32   
-12.1 3233   
-12.2   
-12.3 33   
-12.4 33   
-12.5 33   
-12.6 34   
-12.7 34   
-12.8 34   
-12.9 34   
-12.10 35   
-12.11 35   
-12.12 35   
-12.13 35   
-13 Extra Questions 36   
-13.1 36   
-13.2 36   
-13.3   
-13.4   
-13.4.1 Tie’s Extra Questions: Fall 2009   
-13.4.2 Tie’s Extra Questions: Fall 2009   
-13.4.3 Tie’s Extra Questions: Fall 2009 38   
-13.4.4 Spring 20202 HW 2 # 2.6.1 38   
-13.4.5 Spring 20202 HW 2 # 2.6.2 39   
-13.4.6 Spring 20202 HW 3 # 3.8.1 39   
-13.4.7 Spring 20202 HW 3 # 3.8.2 40   
-13.4.8 Spring 20202 HW 3 # 3.8.4 40   
-13.4.9 Spring 20202 HW 3 # 3.8.5 40   
-13.4.10 Spring 20202 HW 3 # 3.8.6 40   
-13.4.11 Spring 20202 HW 3 # 3.8.7 40   
-13.4.12 Spring 20202 HW 3 # 3.8.8 40   
-13.4.13 Spring 20202 HW 3 # 3.8.9 41   
-13.4.14 Spring 20202 HW 3 # 3.8.10 41   
-13.4.15 Spring 20202 HW 3 # 6 42   
-13.4.16 Spring 20202 HW 3 # 7 . 42   
-13.4.17 Spring 20202 HW 3 # 10 42   
-14 Conformal Maps (8155c) 42   
-14.1 1 42   
-14.2 2 42   
-14.3 3 43   
-14.4 4 43   
-14.5 5 43   
-14.6 6 43   
-14.7 7 43   
-14.8 8 43   
-14.9 9 44   
-14.1010 44   
-14.1111 44   
-14.1212 44   
-14.1313 44   
-14.13.1 Tie’s Extra Questions: Fall 2009 44   
-15 Maps of the Disc 45   
-15.1 Spring 2020 HW 1 # 5 . 45   
-16 Rouche’s Theorem (8155h) 45   
-16.1 1 45   
-16.2 2 45   
-16.3 3 46   
-16.4 4 46   
-16.5 5 46   
-16.6 6 46   
-16.7 7 47   
-16.8 8 47   
-16.9 9 47   
-16.1010 47   
-17 Extras 48   
-17.1 ? 4848   
-17.2 ?   
-17.2.1 Tie’s Extra Questions: Fall 2009 48   
-17.2.2 Spring 20202 HW 3 # 8 . 48   
-17.2.3 Spring 20202 HW 3 # 11 48   
-17.2.4 Spring 20202 HW 3 # 12 49   
-17.2.5 Spring 20202 HW 3 # 13 49   
-18 Schwarz Lemma and Reflection Principle (8155i) 49   
-18.1 1 49   
-18.1.1 a 49   
-18.1.2 b 49   
-18.1.3 c 49   
-18.2 2 50   
-18.3 3 50   
-18.4 4 50   
-18.5 5 50   
-18.6 6 51   
-18.7 7 51   
-18.7.1 a 51   
-18.7.2 b 51   
-18.7.3 c 51   
-18.8 8 51   
-18.9 9 52   
-18.1010 52   
-18.10.1 Tie’s Extra Questions: Fall 2009 52   
-18.10.2 Spring 20202 HW 2 # 2.6.15 52   
-19 Riemann Mapping and Casorati-Weierstrass 53   
-19.0.1 Spring 20202 HW 3 # 4 53   
-19.1 10. 53   
-19.1.1 Tie’s Extra Questions: Fall 2009 53   
-19.1.2 Spring 20202 HW 3 # 3.8.14 53   
-19.1.3 Spring 20202 HW 3 # 3.8.15 53   
-19.1.4 Spring 20202 HW 3 # 3.8.17 54   
-19.1.5 Spring 20202 HW 3 # 3.8.19 54   
-19.1.6 Spring 20202 HW 3 # 9 . 55   
-19.1.7 Spring 20202 HW 3 # 14 55   
-20 Extra Questions from Jingzhi Tie 55   
-20.1 16 55   
-20.1.1 Tie’s Extra Questions: Fall 2009 55   
-20.2 Fall 2009 . 56   
-20.2.1 Tie’s Extra Questions: Fall 2009 56   
-20.2.2 Tie’s Extra Questions: Fall 2009 5656   
-20.2.3 Tie’s Extra Questions: Fall 2009   
-20.2.4 Tie’s Extra Questions: Fall 2009 56   
-20.3 Fall 2011 . 57   
-20.3.1 Tie’s Extra Questions: Fall 2011   
-20.3.2 Tie’s Extra Questions: Fall 2011   
-20.3.3 Tie’s Extra Questions: Fall 2011   
-20.3.4 Tie’s Extra Questions: Fall 2011 58   
-20.3.5 Tie’s Extra Questions: Fall 2011 58   
-20.3.6 Tie’s Extra Questions: Fall 2011 58   
-20.3.7 Tie’s Extra Questions: Fall 2011 58   
-20.3.8 Tie’s Extra Questions: Fall 2011 58   
-20.3.9 Tie’s Extra Questions: Fall 2011 59   
-20.3.10 Tie’s Extra Questions: Fall 2011 59   
-20.3.11 Tie’s Extra Questions: Fall 2011 59   
-20.3.12 Tie’s Extra Questions: Fall 2011 59   
-20.3.13 Tie’s Extra Questions: Fall 2011 59   
-20.4 Spring 2014 60   
-20.4.1 Tie’s Extra Questions: Spring 2014 60   
-20.4.2 Tie’s Extra Questions: Spring 2014 60   
-20.4.3 Tie’s Extra Questions: Spring 2014 60   
-20.4.4 Tie’s Extra Questions: Spring 2014 61   
-20.4.5 Tie’s Extra Questions: Spring 2014 61   
-20.4.6 Tie’s Extra Questions: Spring 2014 61   
-20.4.7 Tie’s Extra Questions: Spring 2014 61   
-20.4.8 Tie’s Extra Questions: Spring 2014 61   
-20.4.9 Tie’s Extra Questions: Spring 2014 62   
-20.4.10 Tie’s Extra Questions: Spring 2014 62   
-20.5 Fall 2015 . . 62   
-20.5.1 Tie’s Extra Questions: Fall 2015 62   
-20.5.2 Tie’s Extra Questions: Fall 2015 62   
-20.5.3 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 63   
-20.5.4 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 63   
-20.5.5 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64   
-20.5.6 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64   
-20.5.7 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64   
-20.5.8 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64   
-20.5.9 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64   
-20.5.10 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65   
-20.5.11 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65   
-20.5.12 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65   
-20.5.13 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65   
-20.5.14 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65   
-20.5.15 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65   
-20.5.16 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 66   
-20.5.17 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 66   
-20.5.18 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 66   
-20.6 Spring 2015 66   
-20.6.1 Tie’s Extra Questions: Spring 2015 66   
-20.6.2 Tie’s Extra Questions: Spring 2015 67   
-20.6.3 Tie’s Extra Questions: Spring 2015 67   
-20.6.4 Tie’s Extra Questions: Spring 2015 67   
-20.6.5 Tie’s Extra Questions: Spring 2015   
-20.6.6 Tie’s Extra Questions: Spring 2015   
-20.6.7 Tie’s Extra Questions: Spring 2015   
-20.6.8 Tie’s Extra Questions: Spring 2015 68   
-20.6.9 Tie’s Extra Questions: Spring 2015 68   
-20.6.10 Tie’s Extra Questions: Spring 2015 68   
-20.6.11 Tie’s Extra Questions: Spring 2015 68   
-20.6.12 Tie’s Extra Questions: Spring 2015 69   
-20.6.13 Tie’s Extra Questions: Spring 2015 69   
-20.6.14 Tie’s Extra Questions: Spring 2015 69   
-20.6.15 Tie’s Extra Questions: Spring 2015 69   
-20.6.16 Tie’s Extra Questions: Spring 2015 70   
-20.6.17 Tie’s Extra Questions: Spring 2015 70   
-20.6.18 Tie’s Extra Questions: Spring 2015 70   
-20.6.19 Tie’s Extra Questions: Spring 2015 70   
-20.6.20 Tie’s Extra Questions: Spring 2015 70   
-20.6.21 Tie’s Extra Questions: Spring 2015 71   
-20.6.22 Tie’s Extra Questions: Spring 2015 71   
-20.6.23 Tie’s Extra Questions: Spring 2015 71   
-20.6.24 Tie’s Extra Questions: Spring 2015 71   
-20.6.25 Tie’s Extra Questions: Spring 2015 71   
-20.6.26 Tie’s Extra Questions: Spring 2015 72   
-20.6.27 Tie’s Extra Questions: Spring 2015 72   
-20.6.28 Tie’s Extra Questions: Spring 2015   
-20.6.29 Tie’s Extra Questions: Spring 2015   
-20.6.30 Tie’s Extra Questions: Spring 2015   
-20.6.31 Tie’s Extra Questions: Spring 2015   
-20.6.32 Tie’s Extra Questions: Spring 2015 73   
-20.6.33 Tie’s Extra Questions: Spring 2015 73   
-20.7 Fall 2016 . 73   
-20.7.1 Tie’s Extra Questions: Fall 2016 73   
-20.7.2 Tie’s Extra Questions: Fall 2016 74   
-20.7.3 Tie’s Extra Questions: Fall 2016 74   
-20.7.4 Tie’s Extra Questions: Fall 2016 74   
-20.7.5 Tie’s Extra Questions: Fall 2016 75   
-20.7.6 Tie’s Extra Questions: Fall 2016 75   
-20.7.7 Tie’s Extra Questions: Fall 2016 75   
-20.7.8 Tie’s Extra Questions: Fall 2016 75   
-21 Fall 2021 75   
-21.1 Fall 2021 #1 75   
-21.2 Fall 2021 #2 76   
-21.3 Fall 2021 #3 76   
-21.4 Fall 2021 #4 76   
-21.5 Fall 2021 #5   
-21.6 Fall 2021 #6   
+Table of Contents 2\
+1 Preface 9\
+2 Topology and Functions of One Variable 9\
+2.1 1 9\
+2.2 2 9\
+2.3 3 9\
+2.4 4 10\
+2.5 5 10\
+2.6 6 10\
+2.7 7 10\
+2.8 8 10\
+2.9 9 11\
+2.10 1 11\
+3 Several Variables 11\
+3.1 1 11\
+3.2 2 11\
+3.3 3 12\
+3.4 4 12\
+3.5 5 12\
+3.6 6 13\
+3.7 7 13\
+4 Several Variables: Extra Questions 13\
+4.1 ? 13\
+4.2 ? 13\
+4.2.1 Tie’s Extra Questions: Fall 2009 14\
+4.3 Spring 2020 HW 1 # 10 14\
+5 Complex Arithmetic 14\
+5.1 Spring 2020 HW 1 # 1 . 14\
+5.2 Spring 2020 HW 1 # 2 . 15\
+5.3 Spring 2020 HW 1 # 3 . 15\
+5.4 Spring 2020 HW 1 # 4 . 15\
+5.5 Spring 2020 HW 1 # 5 . 16\
+5.6 Spring 2020 HW 1 # 6 . 16\
+5.7 Spring 2020 HW 1 # 11 16\
+6 Holomorphicity 17\
+6.1 Spring 2020 HW 1 # 7 . 17\
+6.2 Spring 2020 HW 1 # 8 .\
+6.3 Spring 2020 HW 1 # 9 .\
+6.3.1 Spring 20202 HW 2 # 2.6.10\
+6.3.2 Spring 20202 HW 2 # 2.6.13\
+6.3.3 Spring 20202 HW 2 # 2.6.14 18\
+6.3.4 Spring 20202 HW 2 # 1 18\
+6.3.5 Spring 20202 HW 2 # 2 . 18\
+6.3.6 Spring 20202 HW 2 # 3 18\
+6.3.7 Spring 20202 HW 2 # 5 19\
+7 Integrals and Cauchy’s Theorem (8155d) 19\
+7.1 2 19\
+7.2 3 19\
+7.3 4 19\
+7.4 5 20\
+7.5 6 20\
+7.6 7 20\
+7.7 8 20\
+7.8 9 21\
+7.9 10 21\
+8 Extra 21\
+8.1 ? 21\
+8.1.1 Tie’s Extra Questions: Fall 2009 21\
+8.1.2 Spring 2020 HW 2 # 2.6.5 22\
+8.1.3 Spring 2020 HW 2 # 2.6.6\
+8.1.4 Spring 2020 HW 2 # 2.6.7\
+8.1.5 Spring 2020 HW 2 # 2.6.8\
+8.1.6 Spring 2020 HW 2 # 2.6.9\
+8.1.7 Spring 2020 HW 2 # 6\
+8.1.8 Spring 2020 HW 2 # 7\
+8.1.9 Spring 2020 HW 2 # 8\
+8.1.10 Spring 2020 HW 2 # 9 (Cauchy’s Formula for Exterior Regions)\
+8.1.11 Spring 2020 HW 2 # 10\
+8.1.12 Spring 2020 HW 2 # 11 24\
+8.1.13 Spring 2020 HW 2 # 12 24\
+8.1.14 Spring 2020 HW 2 # 13 242525\
+8.1.15 Entire and O of polynomial implies polynomial\
+8.2 Uniform sequence implies uniform derivatives\
+9 Liouville’s Theorem, Power Series (8155e) 25\
+9.1 1 25\
+9.2 2 26\
+9.3 3 26\
+9.4 4\
+9.5 5\
+9.6 6\
+9.7 7\
+9.8 8 272828\
+9.9 9\
+9.10 10\
+10 Extra 28\
+10.1 Tie’s Questions 28\
+10.2 Tie’s Questions 28\
+10.2.1 Tie’s Extra Questions: Fall 2009 29\
+10.2.2 Tie’s Extra Questions: Fall 2009 29\
+10.2.3 Tie’s Extra Questions: Fall 2009 29\
+10.2.4 Spring 20202 HW 2 # 4 29\
+10.2.5 Spring 20202 HW 3 # 1 29\
+10.2.6 Spring 20202 HW 3 # 2 . 30\
+10.2.7 Spring 20202 HW 3 # 3 30\
+10.2.8 Spring 20202 HW 3 # 5 . 30\
+11 Laurent Expansions and Singularities (8155f) 30\
+11.1 1 30\
+11.2 2 30\
+11.3 3 31\
+11.4 4 31\
+11.5 5 31\
+11.6 6 31\
+11.7 7 31\
+11.8 8 32\
+12 Residues 32\
+12.1 3233\
+12.2\
+12.3 33\
+12.4 33\
+12.5 33\
+12.6 34\
+12.7 34\
+12.8 34\
+12.9 34\
+12.10 35\
+12.11 35\
+12.12 35\
+12.13 35\
+13 Extra Questions 36\
+13.1 36\
+13.2 36\
+13.3\
+13.4\
+13.4.1 Tie’s Extra Questions: Fall 2009\
+13.4.2 Tie’s Extra Questions: Fall 2009\
+13.4.3 Tie’s Extra Questions: Fall 2009 38\
+13.4.4 Spring 20202 HW 2 # 2.6.1 38\
+13.4.5 Spring 20202 HW 2 # 2.6.2 39\
+13.4.6 Spring 20202 HW 3 # 3.8.1 39\
+13.4.7 Spring 20202 HW 3 # 3.8.2 40\
+13.4.8 Spring 20202 HW 3 # 3.8.4 40\
+13.4.9 Spring 20202 HW 3 # 3.8.5 40\
+13.4.10 Spring 20202 HW 3 # 3.8.6 40\
+13.4.11 Spring 20202 HW 3 # 3.8.7 40\
+13.4.12 Spring 20202 HW 3 # 3.8.8 40\
+13.4.13 Spring 20202 HW 3 # 3.8.9 41\
+13.4.14 Spring 20202 HW 3 # 3.8.10 41\
+13.4.15 Spring 20202 HW 3 # 6 42\
+13.4.16 Spring 20202 HW 3 # 7 . 42\
+13.4.17 Spring 20202 HW 3 # 10 42\
+14 Conformal Maps (8155c) 42\
+14.1 1 42\
+14.2 2 42\
+14.3 3 43\
+14.4 4 43\
+14.5 5 43\
+14.6 6 43\
+14.7 7 43\
+14.8 8 43\
+14.9 9 44\
+14.1010 44\
+14.1111 44\
+14.1212 44\
+14.1313 44\
+14.13.1 Tie’s Extra Questions: Fall 2009 44\
+15 Maps of the Disc 45\
+15.1 Spring 2020 HW 1 # 5 . 45\
+16 Rouche’s Theorem (8155h) 45\
+16.1 1 45\
+16.2 2 45\
+16.3 3 46\
+16.4 4 46\
+16.5 5 46\
+16.6 6 46\
+16.7 7 47\
+16.8 8 47\
+16.9 9 47\
+16.1010 47\
+17 Extras 48\
+17.1 ? 4848\
+17.2 ?\
+17.2.1 Tie’s Extra Questions: Fall 2009 48\
+17.2.2 Spring 20202 HW 3 # 8 . 48\
+17.2.3 Spring 20202 HW 3 # 11 48\
+17.2.4 Spring 20202 HW 3 # 12 49\
+17.2.5 Spring 20202 HW 3 # 13 49\
+18 Schwarz Lemma and Reflection Principle (8155i) 49\
+18.1 1 49\
+18.1.1 a 49\
+18.1.2 b 49\
+18.1.3 c 49\
+18.2 2 50\
+18.3 3 50\
+18.4 4 50\
+18.5 5 50\
+18.6 6 51\
+18.7 7 51\
+18.7.1 a 51\
+18.7.2 b 51\
+18.7.3 c 51\
+18.8 8 51\
+18.9 9 52\
+18.1010 52\
+18.10.1 Tie’s Extra Questions: Fall 2009 52\
+18.10.2 Spring 20202 HW 2 # 2.6.15 52\
+19 Riemann Mapping and Casorati-Weierstrass 53\
+19.0.1 Spring 20202 HW 3 # 4 53\
+19.1 10. 53\
+19.1.1 Tie’s Extra Questions: Fall 2009 53\
+19.1.2 Spring 20202 HW 3 # 3.8.14 53\
+19.1.3 Spring 20202 HW 3 # 3.8.15 53\
+19.1.4 Spring 20202 HW 3 # 3.8.17 54\
+19.1.5 Spring 20202 HW 3 # 3.8.19 54\
+19.1.6 Spring 20202 HW 3 # 9 . 55\
+19.1.7 Spring 20202 HW 3 # 14 55\
+20 Extra Questions from Jingzhi Tie 55\
+20.1 16 55\
+20.1.1 Tie’s Extra Questions: Fall 2009 55\
+20.2 Fall 2009 . 56\
+20.2.1 Tie’s Extra Questions: Fall 2009 56\
+20.2.2 Tie’s Extra Questions: Fall 2009 5656\
+20.2.3 Tie’s Extra Questions: Fall 2009\
+20.2.4 Tie’s Extra Questions: Fall 2009 56\
+20.3 Fall 2011 . 57\
+20.3.1 Tie’s Extra Questions: Fall 2011\
+20.3.2 Tie’s Extra Questions: Fall 2011\
+20.3.3 Tie’s Extra Questions: Fall 2011\
+20.3.4 Tie’s Extra Questions: Fall 2011 58\
+20.3.5 Tie’s Extra Questions: Fall 2011 58\
+20.3.6 Tie’s Extra Questions: Fall 2011 58\
+20.3.7 Tie’s Extra Questions: Fall 2011 58\
+20.3.8 Tie’s Extra Questions: Fall 2011 58\
+20.3.9 Tie’s Extra Questions: Fall 2011 59\
+20.3.10 Tie’s Extra Questions: Fall 2011 59\
+20.3.11 Tie’s Extra Questions: Fall 2011 59\
+20.3.12 Tie’s Extra Questions: Fall 2011 59\
+20.3.13 Tie’s Extra Questions: Fall 2011 59\
+20.4 Spring 2014 60\
+20.4.1 Tie’s Extra Questions: Spring 2014 60\
+20.4.2 Tie’s Extra Questions: Spring 2014 60\
+20.4.3 Tie’s Extra Questions: Spring 2014 60\
+20.4.4 Tie’s Extra Questions: Spring 2014 61\
+20.4.5 Tie’s Extra Questions: Spring 2014 61\
+20.4.6 Tie’s Extra Questions: Spring 2014 61\
+20.4.7 Tie’s Extra Questions: Spring 2014 61\
+20.4.8 Tie’s Extra Questions: Spring 2014 61\
+20.4.9 Tie’s Extra Questions: Spring 2014 62\
+20.4.10 Tie’s Extra Questions: Spring 2014 62\
+20.5 Fall 2015 . . 62\
+20.5.1 Tie’s Extra Questions: Fall 2015 62\
+20.5.2 Tie’s Extra Questions: Fall 2015 62\
+20.5.3 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 63\
+20.5.4 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 63\
+20.5.5 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64\
+20.5.6 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64\
+20.5.7 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64\
+20.5.8 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64\
+20.5.9 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 64\
+20.5.10 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65\
+20.5.11 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65\
+20.5.12 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65\
+20.5.13 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65\
+20.5.14 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65\
+20.5.15 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 65\
+20.5.16 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 66\
+20.5.17 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 66\
+20.5.18 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015 66\
+20.6 Spring 2015 66\
+20.6.1 Tie’s Extra Questions: Spring 2015 66\
+20.6.2 Tie’s Extra Questions: Spring 2015 67\
+20.6.3 Tie’s Extra Questions: Spring 2015 67\
+20.6.4 Tie’s Extra Questions: Spring 2015 67\
+20.6.5 Tie’s Extra Questions: Spring 2015\
+20.6.6 Tie’s Extra Questions: Spring 2015\
+20.6.7 Tie’s Extra Questions: Spring 2015\
+20.6.8 Tie’s Extra Questions: Spring 2015 68\
+20.6.9 Tie’s Extra Questions: Spring 2015 68\
+20.6.10 Tie’s Extra Questions: Spring 2015 68\
+20.6.11 Tie’s Extra Questions: Spring 2015 68\
+20.6.12 Tie’s Extra Questions: Spring 2015 69\
+20.6.13 Tie’s Extra Questions: Spring 2015 69\
+20.6.14 Tie’s Extra Questions: Spring 2015 69\
+20.6.15 Tie’s Extra Questions: Spring 2015 69\
+20.6.16 Tie’s Extra Questions: Spring 2015 70\
+20.6.17 Tie’s Extra Questions: Spring 2015 70\
+20.6.18 Tie’s Extra Questions: Spring 2015 70\
+20.6.19 Tie’s Extra Questions: Spring 2015 70\
+20.6.20 Tie’s Extra Questions: Spring 2015 70\
+20.6.21 Tie’s Extra Questions: Spring 2015 71\
+20.6.22 Tie’s Extra Questions: Spring 2015 71\
+20.6.23 Tie’s Extra Questions: Spring 2015 71\
+20.6.24 Tie’s Extra Questions: Spring 2015 71\
+20.6.25 Tie’s Extra Questions: Spring 2015 71\
+20.6.26 Tie’s Extra Questions: Spring 2015 72\
+20.6.27 Tie’s Extra Questions: Spring 2015 72\
+20.6.28 Tie’s Extra Questions: Spring 2015\
+20.6.29 Tie’s Extra Questions: Spring 2015\
+20.6.30 Tie’s Extra Questions: Spring 2015\
+20.6.31 Tie’s Extra Questions: Spring 2015\
+20.6.32 Tie’s Extra Questions: Spring 2015 73\
+20.6.33 Tie’s Extra Questions: Spring 2015 73\
+20.7 Fall 2016 . 73\
+20.7.1 Tie’s Extra Questions: Fall 2016 73\
+20.7.2 Tie’s Extra Questions: Fall 2016 74\
+20.7.3 Tie’s Extra Questions: Fall 2016 74\
+20.7.4 Tie’s Extra Questions: Fall 2016 74\
+20.7.5 Tie’s Extra Questions: Fall 2016 75\
+20.7.6 Tie’s Extra Questions: Fall 2016 75\
+20.7.7 Tie’s Extra Questions: Fall 2016 75\
+20.7.8 Tie’s Extra Questions: Fall 2016 75\
+21 Fall 2021 75\
+21.1 Fall 2021 #1 75\
+21.2 Fall 2021 #2 76\
+21.3 Fall 2021 #3 76\
+21.4 Fall 2021 #4 76\
+21.5 Fall 2021 #5\
+21.6 Fall 2021 #6\
 21.7 Fall 2021 #7
 
 ## 1 Preface
@@ -355,7 +355,8 @@ Give an example of a function f : R → R that is everywhere differentiable but 
 
 ## 2.4 4
 
-Suppose $\left\{ g _ { n } \right\}$ is a uniformly convergent sequence of functions from R to R and $f : \mathbb { R } $ R is uniformly continuous. Prove that the sequence $\{ f \circ g _ { n } \}$ is uniformly convergent.
+Suppose $\left\{ g _ { n } \right\}$ is a uniformly convergent sequence of functions from R to R and $f : \mathbb { R } $ R is uniformly continuous.
+Prove that the sequence $\{ f \circ g _ { n } \}$ is uniformly convergent.
 
 ## 2.5 5
 
@@ -373,7 +374,8 @@ Prove that f is uniformly differentiable on $[ a , b ] \iff f ^ { \prime }$ is c
 
 2.6 6
 
-Suppose A, $B \subseteq \mathbb { R } ^ { n }$ are disjoint and compact. Prove that there exist $a \in A , b \in B$ such that
+Suppose A, $B \subseteq \mathbb { R } ^ { n }$ are disjoint and compact.
+Prove that there exist $a \in A , b \in B$ such that
 
 $$
 \| a - b \| = \operatorname* { i n f } \{ \| x - y \| \ \middle | \ | \ x \in A , y \in B \} .
@@ -383,7 +385,8 @@ $$
 2 . 7 ~ 7
 $$
 
-Suppose A, $B \subseteq \mathbb { R } ^ { n }$ are connected and not disjoint. Prove that A ∪ B is also connected.
+Suppose A, $B \subseteq \mathbb { R } ^ { n }$ are connected and not disjoint.
+Prove that A ∪ B is also connected.
 
 ## 2.8 8
 
@@ -423,7 +426,8 @@ $$
 
 ## 3.2 2
 
-a. Complete this definition: ${ } ^ { * } f : \mathbb { R } ^ { n }  \mathbb { R } ^ { m }$ is real-differentiable a point $p \in \mathbb { R } ^ { n }$ iff there exists a linear transformation. . . ”
+a. Complete this definition: ${ } ^ { * } f : \mathbb { R } ^ { n }  \mathbb { R } ^ { m }$ is real-differentiable a point $p \in \mathbb { R } ^ { n }$ iff there exists a linear transformation.
+. . ”
 
 b. Give an example of a function $f : \mathbb { R } ^ { 2 } \to \mathbb { R }$ whose first-order partial derivatives exist everywhere but f is not differentiable at (0, 0).
 
@@ -689,7 +693,8 @@ Solution omitted.
 
 ## 6.3.2 Spring 20202 HW 2 # 2.6.13
 
-Suppose f is analytic, defined on all of C, and for each $z _ { 0 } \in \mathbb { C }$ there is at least one coefficient in the expansion $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } ( z - z _ { 0 } ) ^ { n }$ is zero. Prove that f is a polynomial.
+Suppose f is analytic, defined on all of C, and for each $z _ { 0 } \in \mathbb { C }$ there is at least one coefficient in the expansion $f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } ( z - z _ { 0 } ) ^ { n }$ is zero.
+Prove that f is a polynomial.
 
 Hint: use the fact that $c _ { n } n ! = f ^ { ( n ) } ( z _ { 0 } )$ and use a countability argument.
 
@@ -713,7 +718,8 @@ In particular, this shows that when applicable, the ratio test can be used to ca
 
 ## 6.3.5 Spring 20202 HW 2 # 2
 
-Let f be a power series centered at the origin. Prove that f has a power series expansion about any point in its disc of convergence.
+Let f be a power series centered at the origin.
+Prove that f has a power series expansion about any point in its disc of convergence.
 
 ## 6.3.6 Spring 20202 HW 2 # 3
 
@@ -743,7 +749,8 @@ $$
 
 ## 7.1 2
 
-State and prove Green’s Theorem for rectangles. Use this to prove Cauchy’s Theorem for functions that are analytic in a rectangle.
+State and prove Green’s Theorem for rectangles.
+Use this to prove Cauchy’s Theorem for functions that are analytic in a rectangle.
 
 ## 7.2 3
 
@@ -775,7 +782,8 @@ Solution omitted.
 
 ## 7.5 6
 
-Suppose that $f : \mathbb { R } \to \mathbb { R }$ is a continuous function that vanishes outside of some finite interval. For each $z \in \mathbb { C } ,$ define
+Suppose that $f : \mathbb { R } \to \mathbb { R }$ is a continuous function that vanishes outside of some finite interval.
+For each $z \in \mathbb { C } ,$ define
 
 $$
 g ( z ) = \int _ { - \infty } ^ { \infty } f ( t ) e ^ { - i z t } d t .

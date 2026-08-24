@@ -6,7 +6,8 @@ title: Euler characteristic formula for double branched cover of surface
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Covering Spaces
 relations: []
 review: draft
 ---

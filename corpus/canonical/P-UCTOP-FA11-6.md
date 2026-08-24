@@ -6,7 +6,8 @@ title: π_3 of Poincare homology sphere wedge S^3
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: Euler characteristic equals mod-2 Euler characteristic
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

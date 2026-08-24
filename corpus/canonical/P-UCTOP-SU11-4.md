@@ -6,7 +6,8 @@ title: When is CP^n / CP^k homotopy-equivalent to a manifold
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Manifolds
 relations: []
 review: draft
 ---

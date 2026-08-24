@@ -6,7 +6,8 @@ title: Homology of RP^2 × X where H_k(X;Z) = Z/kZ
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: Cohomology ring of CP^n / CP^k
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Cohomology
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: Homology of exterior of knotted solid torus via Mayer-Vietoris
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

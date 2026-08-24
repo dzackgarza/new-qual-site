@@ -6,7 +6,8 @@ title: Suspension of homology sphere is homotopy equivalent to S^4
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

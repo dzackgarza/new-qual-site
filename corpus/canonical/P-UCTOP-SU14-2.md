@@ -6,7 +6,8 @@ title: Homology of complement of knotted solid torus inside solid torus
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

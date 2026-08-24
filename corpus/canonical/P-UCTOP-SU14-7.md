@@ -6,7 +6,8 @@ title: Degree ±1 map induces surjection on fundamental group
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Degree Theory
 relations: []
 review: draft
 ---

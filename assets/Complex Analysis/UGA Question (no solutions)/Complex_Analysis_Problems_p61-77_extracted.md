@@ -38,7 +38,8 @@ Show that (i) f is a polynomial and (ii) the degree of f is at least N .
 
 ## 20.4.8 Tie’s Extra Questions: Spring 2014
 
-Let $f : \mathbb { C } \to \mathbb { C }$ be an injective analytic (also called univalent) function. Show that there exist complex numbers $a \neq 0$ and b such that $ f ( z ) = a z + b$
+Let $f : \mathbb { C } \to \mathbb { C }$ be an injective analytic (also called univalent) function.
+Show that there exist complex numbers $a \neq 0$ and b such that $ f ( z ) = a z + b$
 
 ## 20.4.9 Tie’s Extra Questions: Spring 2014
 
@@ -66,8 +67,8 @@ Find a conformal map from $D = \{ z : \ | z | < 1 , \ | z - 1 / 2 | > 1 / 2 \}$ 
 
 ## 20.5.1 Tie’s Extra Questions: Fall 2015
 
-Let $a _ { n } \neq 0$ and assume that $\operatorname* { l i m } _ { n \to \infty } { \frac { | a _ { n + 1 } | } { | a _ { n } | } } = L$ . Show that lim ${ \sqrt [ n ] { | a _ { n } | } } = L$ . In particular, this shows n→∞   
-that when applicable, the ratio test can be used to calculate the radius of convergence of a power   
+Let $a _ { n } \neq 0$ and assume that $\operatorname* { l i m } _ { n \to \infty } { \frac { | a _ { n + 1 } | } { | a _ { n } | } } = L$ . Show that lim ${ \sqrt [ n ] { | a _ { n } | } } = L$ . In particular, this shows n→∞\
+that when applicable, the ratio test can be used to calculate the radius of convergence of a power\
 series.
 
 ## 20.5.2 Tie’s Extra Questions: Fall 2015
@@ -154,7 +155,8 @@ $$
 
 ## 20.5.6 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015
 
-Let $f ( z )$ be bounded and analytic in C. Let $a \neq b$ be any fixed complex numbers. Show that the following limit exists
+Let $f ( z )$ be bounded and analytic in C. Let $a \neq b$ be any fixed complex numbers.
+Show that the following limit exists
 
 $$
 \operatorname* { l i m } _ { R \to \infty } \int _ { | z | = R } { \frac { f ( z ) } { ( z - a ) ( z - b ) } } d z .
@@ -170,12 +172,14 @@ Hint: You may use that fact in Example 1 on $p . \ 4 2$ of the textbook without 
 
 ## 20.5.8 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015
 
-Suppose that f is holomorphic in an open set containing the closed unit disc, except for a pole at $z _ { \mathrm { 0 } }$ on the unit circle. Let denote the the power series in the open disc. Show that $( 1 ) \ c _ { n } \neq 0$ for all large enough $n  ' \mathrm { s } ,$ and (2) $\operatorname* { l i m } _ { n \to \infty } \frac { c _ { n } } { c _ { n + 1 } } = \bar { z } _ { 0 }$
+Suppose that f is holomorphic in an open set containing the closed unit disc, except for a pole at $z _ { \mathrm { 0 } }$ on the unit circle.
+Let denote the the power series in the open disc.
+Show that $( 1 ) \ c _ { n } \neq 0$ for all large enough $n  ' \mathrm { s } ,$ and (2) $\operatorname* { l i m } _ { n \to \infty } \frac { c _ { n } } { c _ { n + 1 } } = \bar { z } _ { 0 }$
 
 ## 20.5.9 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015
 
-Let $f ( z )$ be a non-constant analytic function in $| z | > 0$ such that $f ( z _ { n } ) = 0$ for infinite many points   
-$z _ { n }$ with lim $z _ { n } = 0$ . Show that $z = 0$ is an essential singularity for $f ( z )$ . (An example of such a n→∞   
+Let $f ( z )$ be a non-constant analytic function in $| z | > 0$ such that $f ( z _ { n } ) = 0$ for infinite many points\
+$z _ { n }$ with lim $z _ { n } = 0$ . Show that $z = 0$ is an essential singularity for $f ( z )$ . (An example of such a n→∞\
 function is $\begin{array} { r } { f ( z ) = \sin ( 1 / z ) . } \end{array}$ )
 
 ## 20.5.10 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015
@@ -218,7 +222,7 @@ $$
 
 ## 20.5.16 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015
 
-Assume $f ( z )$ is analytic in D and $f ( 0 ) = 0$ and is not a rotation $( { \mathrm { i . e . ~ } } f ( z ) \neq e ^ { i \theta } z )$ . Show that $\sum ^ { \infty } f ^ { n } ( z )$ converges uniformly to an analytic function on compact subsets of D, where $f ^ { n + 1 } ( z ) =$ n=1   
+Assume $f ( z )$ is analytic in D and $f ( 0 ) = 0$ and is not a rotation $( { \mathrm { i . e . ~ } } f ( z ) \neq e ^ { i \theta } z )$ . Show that $\sum ^ { \infty } f ^ { n } ( z )$ converges uniformly to an analytic function on compact subsets of D, where $f ^ { n + 1 } ( z ) =$ n=1\
 ${ \ddot { f } } ( { \bar { f } } ^ { n } ( z ) )$
 
 ## 20.5.17 Tie’s Extra Questions: Fall 2015### Tie’s Extra Questions: Fall 2015
@@ -257,11 +261,13 @@ Let f and g be non-zero analytic functions on a region Ω. Assume $| f ( z ) | 
 
 Suppose f is analytic in an open set containing the unit disc D and $| f ( z ) | = 1$ when $| z | { = } 1$ . Show that either $f ( z ) = e ^ { i \theta }$ for some $\theta \in \mathbb { R }$ or there are finite number of $z _ { k } \in \mathbb { D }$ $k \leq n$ and $\theta \in \mathbb { R }$ such that $f ( z ) = e ^ { i \theta } \prod _ { k = 1 } ^ { n } { \frac { z - z _ { k } } { 1 - { \bar { z } } _ { k } z } }$
 
-Also cf. Stein et al, 1.4.7, 3.8.17
+Also cf.
+Stein et al, 1.4.7, 3.8.17
 
 ## 20.6.4 Tie’s Extra Questions: Spring 2015
 
-(1) Let $p ( z )$ be a polynomial, $R > 0$ any positive number, and $m \geq 1$ an integer. Let $M _ { R } =$ su $\mathfrak { s } \{ | z ^ { m } p ( z ) - 1 | : | z | = R \}$ . Show that $M _ { R } > 1$ .
+(1) Let $p ( z )$ be a polynomial, $R > 0$ any positive number, and $m \geq 1$ an integer.
+Let $M _ { R } =$ su $\mathfrak { s } \{ | z ^ { m } p ( z ) - 1 | : | z | = R \}$ . Show that $M _ { R } > 1$ .
 
 (2) Let $m \geq 1$ be an integer and $K = \{ z \in \mathbb { C } : r \leq | z | \leq R \}$ where $r < R$ . Show (i) using (1) as well as, (ii) without using (1) that there exists a positive number $\varepsilon _ { 0 } > 0$ such that for each polynomial $p ( z )$ ,
 
@@ -289,13 +295,16 @@ Suppose f is entire and there exist A, R > 0 and natural number N such that $| f
 
 ## 20.6.9 Tie’s Extra Questions: Spring 2015
 
-(1) Assume u is harmonic on open set O and $z _ { n }$ is a sequence in O such that $u ( z _ { n } ) = 0$ and lim $z _ { n } \in O$ . Prove or disprove that u is identically zero. What if O is a region?
+(1) Assume u is harmonic on open set O and $z _ { n }$ is a sequence in O such that $u ( z _ { n } ) = 0$ and lim $z _ { n } \in O$ . Prove or disprove that u is identically zero.
+What if O is a region?
 
-(2) Assume u is harmonic on open set O and $u ( z ) = 0$ on a disc in O. Prove or disprove that u is identically zero. What if O is a region?
+(2) Assume u is harmonic on open set O and $u ( z ) = 0$ on a disc in O. Prove or disprove that u is identically zero.
+What if O is a region?
 
 (3) Formulate and prove a Schwarz reflection principle for harmonic functions
 
-cf. Theorem 5.6 on p.60 of Stein et al.
+cf.
+Theorem 5.6 on p.60 of Stein et al.
 
 Hint: Verify the mean value property for your new function obtained by Schwarz reflection principle.
 
@@ -349,7 +358,9 @@ Let $f$ be an analytic function on a region Ω. Show that $f$ is a constant if 
 
 ## 20.6.17 Tie’s Extra Questions: Spring 2015
 
-Let $f ( z )$ be an analytic function on $\mathbb { C } \backslash \{ z _ { 0 } \}$ , where $z _ { \mathrm { 0 } }$ is a fixed point. Assume that $f ( z )$ is bijective from $\mathbb { C } \backslash \{ z _ { 0 } \}$ onto its image, and that f (z) is bounded outside $D _ { r } ( z _ { 0 } )$ , where r is some fixed positive number. Show that there exist $a , b , c , d \in \mathbb { C }$ with ad $- b c \neq 0 , c \neq 0$ such that $f ( z ) = { \frac { a z + b } { c z + d } } .$
+Let $f ( z )$ be an analytic function on $\mathbb { C } \backslash \{ z _ { 0 } \}$ , where $z _ { \mathrm { 0 } }$ is a fixed point.
+Assume that $f ( z )$ is bijective from $\mathbb { C } \backslash \{ z _ { 0 } \}$ onto its image, and that f (z) is bounded outside $D _ { r } ( z _ { 0 } )$ , where r is some fixed positive number.
+Show that there exist $a , b , c , d \in \mathbb { C }$ with ad $- b c \neq 0 , c \neq 0$ such that $f ( z ) = { \frac { a z + b } { c z + d } } .$
 
 ## 20.6.18 Tie’s Extra Questions: Spring 2015
 
@@ -401,11 +412,13 @@ Prove that $f ( z ) = - \frac { 1 } { 2 } \left( z + \frac { 1 } { z } \right)$ 
 
 ## 20.6.25 Tie’s Extra Questions: Spring 2015
 
-Let Ω be a simply connected open set and let γ be a simple closed contour in Ω and enclosing a bounded region U anticlockwise. Let $f : \ \Omega \to \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
+Let Ω be a simply connected open set and let γ be a simple closed contour in Ω and enclosing a bounded region U anticlockwise.
+Let $f : \ \Omega \to \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
 
 ## 20.6.26 Tie’s Extra Questions: Spring 2015
 
-Compute the following integrals. (i) $\int _ { 0 } ^ { \infty } { \frac { x ^ { a - 1 } } { 1 + x ^ { n } } } d x , 0 < a < n { \mathrm { ~ ( i i ) } } \int _ { 0 } ^ { \infty } { \frac { \log x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x$
+Compute the following integrals.
+(i) $\int _ { 0 } ^ { \infty } { \frac { x ^ { a - 1 } } { 1 + x ^ { n } } } d x , 0 < a < n { \mathrm { ~ ( i i ) } } \int _ { 0 } ^ { \infty } { \frac { \log x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x$
 
 ## 20.6.27 Tie’s Extra Questions: Spring 2015
 
@@ -437,11 +450,13 @@ Prove that $f ( z ) = - \frac { 1 } { 2 } \left( z + \frac { 1 } { z } \right)$ 
 
 ## 20.6.30 Tie’s Extra Questions: Spring 2015
 
-Let Ω be a simply connected open set and let γ be a simple closed contour in Ω and enclosing a bounded region U anticlockwise. Let $f : \ \Omega \to \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
+Let Ω be a simply connected open set and let γ be a simple closed contour in Ω and enclosing a bounded region U anticlockwise.
+Let $f : \ \Omega \to \mathbb { C }$ be a holomorphic function and $| f ( z ) | \leq M$ for all $z \in \gamma$ . Prove that $| f ( z ) | \leq M$ for all $z \in U$
 
 ## 20.6.31 Tie’s Extra Questions: Spring 2015
 
-Compute the following integrals. (i) $\int _ { 0 } ^ { \infty } { \frac { x ^ { a - 1 } } { 1 + x ^ { n } } } d x , 0 < a < n { \mathrm { ~ ( i i ) } } \int _ { 0 } ^ { \infty } { \frac { \log x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x$
+Compute the following integrals.
+(i) $\int _ { 0 } ^ { \infty } { \frac { x ^ { a - 1 } } { 1 + x ^ { n } } } d x , 0 < a < n { \mathrm { ~ ( i i ) } } \int _ { 0 } ^ { \infty } { \frac { \log x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x$
 
 ## 20.6.32 Tie’s Extra Questions: Spring 2015
 
@@ -463,7 +478,8 @@ where $\| f \| _ { ( \infty , s ) } = \operatorname* { s u p } _ { z \in D _ { s
 
 Let $u ( x , y )$ be harmonic and have continuous partial derivatives of order three in an open disc of radius $R > 0$
 
-(a) Let two points $( a , b ) , ( x , y )$ in this disk be given. Show that the following integral is independent of the path in this disk joining these points:
+(a) Let two points $( a , b ) , ( x , y )$ in this disk be given.
+Show that the following integral is independent of the path in this disk joining these points:
 
 $$
 v ( x , y ) = \int _ { a , b } ^ { x , y } ( - \frac { \partial u } { \partial y } d x + \frac { \partial u } { \partial x } d y ) .
@@ -477,7 +493,8 @@ $$
 
 ## 20.7.2 Tie’s Extra Questions: Fall 2016
 
-(a) $f ( z ) = u ( x , y ) + i v ( x , y )$ be analytic in a domain $D \subset \mathbb { C }$ . Let $z _ { 0 } = ( x _ { 0 } , y _ { 0 } )$ be a point in D which is in the intersection of the curves $u ( x , y ) = c _ { 1 }$ and $v ( x , y ) = c _ { 2 }$ , where $c _ { 1 }$ and $c _ { 2 }$ are constants. Suppose that $f ^ { \prime } ( z _ { 0 } ) \neq 0$ . Prove that the lines tangent to these curves at z0 are perpendicular.
+(a) $f ( z ) = u ( x , y ) + i v ( x , y )$ be analytic in a domain $D \subset \mathbb { C }$ . Let $z _ { 0 } = ( x _ { 0 } , y _ { 0 } )$ be a point in D which is in the intersection of the curves $u ( x , y ) = c _ { 1 }$ and $v ( x , y ) = c _ { 2 }$ , where $c _ { 1 }$ and $c _ { 2 }$ are constants.
+Suppose that $f ^ { \prime } ( z _ { 0 } ) \neq 0$ . Prove that the lines tangent to these curves at z0 are perpendicular.
 
 (b) Let $f ( z ) = z ^ { 2 }$ be defined in $\mathbb { C } .$
 
@@ -487,7 +504,8 @@ $$
 
 ## 20.7.3 Tie’s Extra Questions: Fall 2016
 
-(a) $f : D \to \mathbb { C }$ be a continuous function, where $D \subset \mathbb { C }$ is a domain.Let $\alpha : [ a , b ] \to D$ be a smooth curve. Give a precise definition of the complex line integral
+(a) $f : D \to \mathbb { C }$ be a continuous function, where $D \subset \mathbb { C }$ is a domain.Let $\alpha : [ a , b ] \to D$ be a smooth curve.
+Give a precise definition of the complex line integral
 
 $$
 \int _ { \alpha } f .
@@ -503,15 +521,18 @@ $$
 
 ## 20.7.4 Tie’s Extra Questions: Fall 2016
 
-(a) Let Let $f : \mathbb { C } \to \mathbb { C }$ be an entire function. Assume the existence of a non-negative integer $m _ { : }$ and of positive constants L and R, such that for all z with $| z | > R$ the inequality
+(a) Let Let $f : \mathbb { C } \to \mathbb { C }$ be an entire function.
+Assume the existence of a non-negative integer $m _ { : }$ and of positive constants L and R, such that for all z with $| z | > R$ the inequality
 
 $$
 | f ( z ) | \leq L | z | ^ { m }
 $$
 
-holds. Prove that f is a polynomial of degree $\leq m$
+holds.
+Prove that f is a polynomial of degree $\leq m$
 
-(b) Let $f : \mathbb { C } \to \mathbb { C }$ be an entire function. Suppose that there exists a real number M such that for all $z \in \mathbb { C }$
+(b) Let $f : \mathbb { C } \to \mathbb { C }$ be an entire function.
+Suppose that there exists a real number M such that for all $z \in \mathbb { C }$
 
 $$
 \operatorname { R e } ( f ) \leq M .

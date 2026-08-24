@@ -6,7 +6,8 @@ title: π_3(RP^3 ∨ S^3) via Hurewicz
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

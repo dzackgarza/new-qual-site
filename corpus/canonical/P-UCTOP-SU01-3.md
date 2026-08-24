@@ -6,7 +6,8 @@ title: Cohomology ring of CP^2 # (S^2 × S^2)
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Cohomology
 relations: []
 review: draft
 ---

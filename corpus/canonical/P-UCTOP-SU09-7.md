@@ -6,7 +6,8 @@ title: 1-connected CW complex with H_3 = Z^2 is S^3 ∨ S^3
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

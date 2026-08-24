@@ -6,7 +6,8 @@ title: Fundamental group of quotient of tetrahedron
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Fundamental Group
 relations: []
 review: draft
 ---

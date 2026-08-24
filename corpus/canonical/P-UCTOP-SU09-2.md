@@ -6,7 +6,8 @@ title: Homology of quotient of solid hexagonal prism
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

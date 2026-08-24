@@ -6,7 +6,8 @@ title: Map from simply-connected CW complex to RP^{n+1} is null-homotopic
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

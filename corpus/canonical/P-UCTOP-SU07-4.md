@@ -6,7 +6,8 @@ title: Homology of S^4 minus knotted torus
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

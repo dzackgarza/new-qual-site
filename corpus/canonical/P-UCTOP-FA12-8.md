@@ -6,7 +6,8 @@ title: π_2 of p-fold cover of S^3 wedge S^2
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

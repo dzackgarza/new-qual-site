@@ -16,7 +16,8 @@ Solution omitted.
 
 ## 7.9 10
 
-Prove Liouville’s theorem: suppose $f : \mathbb { C } \to \mathbb { C }$ is entire and bounded. Use Cauchy’s formula to prove that $f ^ { \prime } \equiv 0$ and hence f is constant.
+Prove Liouville’s theorem: suppose $f : \mathbb { C } \to \mathbb { C }$ is entire and bounded.
+Use Cauchy’s formula to prove that $f ^ { \prime } \equiv 0$ and hence f is constant.
 
 Solution omitted.
 
@@ -24,7 +25,8 @@ Solution omitted.
 
 ## 8.1 ?
 
-Assume f is continuous in the region: $0 < | z - a | \leq R , 0 \leq \arg ( z - a )$ ≤ β0 $( 0 < \beta _ { 0 } \le 2 \pi )$ and the limit $\operatorname* { l i m } _ { z \to a } ( z - a ) f ( z ) = A $ exists. Show that
+Assume f is continuous in the region: $0 < | z - a | \leq R , 0 \leq \arg ( z - a )$ ≤ β0 $( 0 < \beta _ { 0 } \le 2 \pi )$ and the limit $\operatorname* { l i m } _ { z \to a } ( z - a ) f ( z ) = A $ exists.
+Show that
 
 $$
 \operatorname * { l i m } _ { r  0 } \int _ { \gamma _ { r } } f ( z ) d z = i A \beta _ { 0 } \ ,
@@ -78,13 +80,15 @@ whenever $0 < r < 1$
 
 ## 8.1.5 Spring 2020 HW 2 # 2.6.8
 
-Suppose that f is holomorphic on the strip $S \ = \ \left\{ x + i y \ \big \vert \ x \in \mathbb { R } , \ - 1 < y < 1 \right\}$ with $| f ( z ) | \leq$ $A \left( 1 + | z | \right) ^ { \nu }$ for ν some fixed real number. Show that for all $z \in S ,$ , for each integer $n \geq 0$ there exists an $A _ { n } \geq 0$ such that $\left| f ^ { ( n ) } ( x ) \right| \le A _ { n } ( 1 + | x | ) ^ { \nu }$ for all $x \in \mathbb { R }$
+Suppose that f is holomorphic on the strip $S \ = \ \left\{ x + i y \ \big \vert \ x \in \mathbb { R } , \ - 1 < y < 1 \right\}$ with $| f ( z ) | \leq$ $A \left( 1 + | z | \right) ^ { \nu }$ for ν some fixed real number.
+Show that for all $z \in S ,$ , for each integer $n \geq 0$ there exists an $A _ { n } \geq 0$ such that $\left| f ^ { ( n ) } ( x ) \right| \le A _ { n } ( 1 + | x | ) ^ { \nu }$ for all $x \in \mathbb { R }$
 
 Hint: Use the Cauchy inequalities.
 
 ## 8.1.6 Spring 2020 HW 2 # 2.6.9
 
-Let $\Omega \subset \mathbb { C }$ be open and bounded and $\varphi : \Omega \to \Omega$ holomorphic. Prove that if there exists a point $z _ { 0 } \in \Omega$ such that $\varphi ( z _ { 0 } ) = z _ { 0 }$ and $\varphi ^ { \prime } ( z _ { 0 } ) = 1$ , then $\varphi$ is linear.
+Let $\Omega \subset \mathbb { C }$ be open and bounded and $\varphi : \Omega \to \Omega$ holomorphic.
+Prove that if there exists a point $z _ { 0 } \in \Omega$ such that $\varphi ( z _ { 0 } ) = z _ { 0 }$ and $\varphi ^ { \prime } ( z _ { 0 } ) = 1$ , then $\varphi$ is linear.
 
 Hint: assume $z _ { 0 } = 0$ (explain why this can be done) and write $\varphi ( z ) = z + a _ { n } z ^ { n } + O ( z ^ { n + 1 } )$ near 0. Let $\varphi _ { k } = \varphi \circ \varphi \circ \cdots \circ \varphi$ and prove that $\varphi _ { k } ( z ) = z +$ $k a _ { n } z ^ { n } + O ( z ^ { n + 1 } )$ . Apply Cauchy’s inequalities and $l e t \ k  \infty$ to conclude.
 
@@ -118,7 +122,7 @@ $$
 
 ## 8.1.10 Spring 2020 HW 2 # 9 (Cauchy’s Formula for Exterior Regions)
 
-Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega _ { 1 }$ and exterior $\Omega _ { 2 }$ . Assume $f ^ { \prime }$ exists   
+Let $\gamma$ be a piecewise smooth simple closed curve with interior $\Omega _ { 1 }$ and exterior $\Omega _ { 2 }$ . Assume $f ^ { \prime }$ exists\
 in an open set containing $\gamma$ and $\Omega _ { 2 }$ with lim $f ( z ) = A$ . Show that z→∞
 
 $$
@@ -127,7 +131,8 @@ $$
 
 ## 8.1.11 Spring 2020 HW 2 # 10
 
-Let $f ( z )$ be bounded and analytic in C. Let $a \neq b$ be any fixed complex numbers. Show that the following limit exists:
+Let $f ( z )$ be bounded and analytic in C. Let $a \neq b$ be any fixed complex numbers.
+Show that the following limit exists:
 
 $$
 \operatorname* { l i m } _ { R \to \infty } \int _ { | z | = R } { \frac { f ( z ) } { ( z - a ) ( z - b ) } } d z .
@@ -171,14 +176,14 @@ $$
 
 ## 8.1.15 Entire and O of polynomial implies polynomial $^ { + } _ { \nsucc }$
 
-Problem 8.1.1 (?)   
+Problem 8.1.1 (?)\
 Let $f ( z )$ be entire and assume that $| f ( z ) | \leq M | z | ^ { 2 }$ outside of some disk for some constant M . Show that f(z) is a polynomial in z of degree $\leq 2 .$
 
 Solution omitted.
 
 ## 8.2 Uniform sequence implies uniform derivatives
 
-Problem 8.2.1 (?)   
+Problem 8.2.1 (?)\
 Let $a _ { n } ( z )$ be an analytic sequence in a domain D such that $\sum _ { n = 0 } ^ { \infty } \left| a _ { n } ( z ) \right|$ converges uniformly on bounded and closed sub-regions of D. Show that $\sum _ { n = 0 } ^ { \infty } \left| a _ { n } ^ { \prime } ( z ) \right|$ converges uniformly on bounded and closed sub-regions of D.
 
 Solution omitted.
@@ -357,11 +362,13 @@ $$
 \frac { 1 } { 1 - z ^ { 2 } } + \frac { 1 } { 3 - z }
 $$
 
-How many such expansions are there? In what domains are each valid?
+How many such expansions are there?
+In what domains are each valid?
 
 ## 10.2.7 Spring 20202 HW 3 # 3
 
-Let $P , Q$ be polynomials with no common zeros. Assume a is a root of $Q .$ Find the principal part of $P / Q$ at $z = a$ in terms of $P$ and $Q$ if a is (1) a simple root, and (2) a double root.
+Let $P , Q$ be polynomials with no common zeros.
+Assume a is a root of $Q .$ Find the principal part of $P / Q$ at $z = a$ in terms of $P$ and $Q$ if a is (1) a simple root, and (2) a double root.
 
 ## 10.2.8 Spring 20202 HW 3 # 5
 

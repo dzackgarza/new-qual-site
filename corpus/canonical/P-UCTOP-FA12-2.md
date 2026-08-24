@@ -6,7 +6,8 @@ title: Homology of cube with opposite faces glued by 90-degree rotation
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

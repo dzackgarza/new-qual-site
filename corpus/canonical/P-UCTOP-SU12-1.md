@@ -6,7 +6,8 @@ title: Subgroup of finite index in free group is free
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Covering Spaces
 relations: []
 review: draft
 ---

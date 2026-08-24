@@ -6,7 +6,8 @@ title: Integral homology of product of lens spaces
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

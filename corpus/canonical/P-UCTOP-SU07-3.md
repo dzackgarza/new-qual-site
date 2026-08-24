@@ -6,7 +6,8 @@ title: Integral homology of RP^2 × RP^3
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: H_1 = H_3 = 0 and H_2 is free for simply-connected closed 4-manifold
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Manifolds
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: QP^2 ∨ S^3 and RP^3 are not homotopy-equivalent
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

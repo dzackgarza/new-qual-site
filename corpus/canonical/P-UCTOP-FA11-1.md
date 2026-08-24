@@ -6,7 +6,8 @@ title: Non-antipodal maps to S^2 are homotopic
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homotopy Theory
 relations: []
 review: draft
 ---

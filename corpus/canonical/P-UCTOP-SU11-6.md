@@ -6,7 +6,8 @@ title: Space with free fundamental group and no higher homotopy is a bouquet of 
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Fundamental Group
 relations: []
 review: draft
 ---

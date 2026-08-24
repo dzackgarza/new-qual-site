@@ -6,7 +6,8 @@ title: 2-connected closed 6-manifold has even Euler characteristic
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Manifolds
 relations: []
 review: draft
 ---

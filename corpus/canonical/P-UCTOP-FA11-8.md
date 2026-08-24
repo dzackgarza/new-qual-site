@@ -6,7 +6,8 @@ title: No self-map of CP^2 × CP^2 with degree -1
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

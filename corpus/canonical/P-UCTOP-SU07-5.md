@@ -6,7 +6,8 @@ title: Any map from S^2 to surface of genus g has degree zero
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Degree Theory
 relations: []
 review: draft
 ---

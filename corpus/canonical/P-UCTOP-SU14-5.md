@@ -6,7 +6,8 @@ title: No compact 4-manifold homotopy equivalent to S^2 ∨ S^4
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Manifolds
 relations: []
 review: draft
 ---

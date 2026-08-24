@@ -6,7 +6,8 @@ title: Homology of S^2 × I glued by antipodal map
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Homology
 relations: []
 review: draft
 ---

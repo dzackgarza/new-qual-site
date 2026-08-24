@@ -6,7 +6,8 @@ title: Fundamental theorem of algebra by topological argument
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Degree Theory
 relations: []
 review: draft
 ---

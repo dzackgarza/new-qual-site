@@ -6,7 +6,8 @@ title: Euler characteristic parity for even-dimensional manifolds
 classification:
   areas:
   - topology
-  topics: []
+  topics:
+  - Manifolds
 relations: []
 review: draft
 ---
