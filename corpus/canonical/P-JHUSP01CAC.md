@@ -1,0 +1,14 @@
+---
+schema: qual/card@1
+id: P-JHUSP01CAC
+kind: problem
+title: "Question 3. Assume that is holomorphic in and . Assume also that exists for each . Prove that exists for all z with"
+classification:
+  areas:
+  - complex-analysis
+  topics: []
+solved: false
+relations: []
+---
+
+Question 3. Assume that $f _ { n }$ is holomorphic in $| z | < 1$ and $| f _ { n } | \leq 1 0$ . Assume also that $\scriptstyle \operatorname* { l i m } _ { n \to \infty } f _ { n } \left( 2 ^ { - j } \right)$ exists for each $j = 1 , 2 , \dots$ . Prove that $\scriptstyle \operatorname* { l i m } _ { n \to \infty } f _ { n } ( z )$ exists for all z with $| z | < 1$

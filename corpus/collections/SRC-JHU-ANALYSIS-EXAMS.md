@@ -10,7 +10,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/JHU Years of Analysis Exams.pdf
 source:
@@ -40,10 +40,24 @@ source:
     - P-3A7RU
   - name: Johns Hopkins University, Department of Mathematics, Real and Complex analysis
       (undated, pp. 4–5)
-    problems: []
+    problems:
+    - P-JHUU45RA1
+    - P-JHUU45RA2
+    - P-JHUU45RA3
+    - P-JHUU45CA1
+    - P-JHUU45CA2
+    - P-JHUU45CA3
+    - P-JHUU45CA4
   - name: Johns Hopkins University, Department of Mathematics, Real and Complex analysis
       (undated, pp. 6–7)
-    problems: []
+    problems:
+    - P-JHUU67RA1
+    - P-JHUU67RA2
+    - P-JHUU67RA3
+    - P-JHUU67CA1
+    - P-JHUU67CA2
+    - P-JHUU67CA3
+    - P-JHUU67CA4
   - name: Qualifying Exam - Analysis-Fall 2017 (p. 8)
     problems:
     - P-8XT15
@@ -145,47 +159,202 @@ source:
     - P-YBT6I
     - P-I753O
   - name: Analysis Qualifying Exam, May 9, 2012 (p. 21)
-    problems: []
+    problems:
+    - P-JHUMAY12CA1
+    - P-JHUMAY12CA2
+    - P-JHUMAY12CA3
+    - P-JHUMAY12CA4
+    - P-JHUMAY12RA5
+    - P-JHUMAY12RA6
+    - P-JHUMAY12RA7
+    - P-JHUMAY12RA8
   - name: ANALYSIS QUALIFYING EXAM, SEPTEMBER 2011 (pp. 22–23)
-    problems: []
+    problems:
+    - P-JHUFA11ANA
+    - P-JHUFA11ANB
+    - P-JHUFA11ANC
+    - P-JHUFA11AND
+    - P-JHUFA11ANE
+    - P-JHUFA11ANF
+    - P-JHUFA11ANG
+    - P-JHUFA11ANH
   - name: ANALYSIS QUALIFYING EXAM, MAY 2011 (pp. 24–25)
-    problems: []
+    problems:
+    - P-JHUMAY11ANA
+    - P-JHUMAY11ANB
+    - P-JHUMAY11ANC
+    - P-JHUMAY11AND
+    - P-JHUMAY11ANE
+    - P-JHUMAY11ANF
+    - P-JHUMAY11ANG
+    - P-JHUMAY11ANH
   - name: Analysis Qualifying Exam, Fall 2010 (pp. 26–27)
-    problems: []
+    problems:
+    - P-JHUFA10RA1
+    - P-JHUFA10RA2
+    - P-JHUFA10RA3
+    - P-JHUFA10RA4
+    - P-JHUFA10CA5
+    - P-JHUFA10CA6
+    - P-JHUFA10CA7
+    - P-JHUFA10CA8
   - name: ANALYSIS QUALIFYING EXAM, MAY 2010 (pp. 28–29)
-    problems: []
+    problems:
+    - P-JHUMAY10ANA
+    - P-JHUMAY10ANB
+    - P-JHUMAY10ANC
+    - P-JHUMAY10AND
+    - P-JHUMAY10ANE
+    - P-JHUMAY10ANF
+    - P-JHUMAY10ANG
+    - P-JHUMAY10ANH
   - name: ANALYSIS QUALIFYING EXAM, SEPTEMBER 2009 (pp. 30–31)
-    problems: []
+    problems:
+    - P-JHUFA09ANA
+    - P-JHUFA09ANB
+    - P-JHUFA09ANC
+    - P-JHUFA09AND
+    - P-JHUFA09ANE
+    - P-JHUFA09ANF
+    - P-JHUFA09ANG
+    - P-JHUFA09ANH
   - name: ANALYSIS QUALIFYING EXAM, MAY 2009 (pp. 32–33)
-    problems: []
+    problems:
+    - P-JHUMAY09ANA
+    - P-JHUMAY09ANB
+    - P-JHUMAY09ANC
+    - P-JHUMAY09AND
+    - P-JHUMAY09ANE
+    - P-JHUMAY09ANF
+    - P-JHUMAY09ANG
+    - P-JHUMAY09ANH
   - name: PROBLEMS FOR ANALYSIS QUALIFYING EXAM, Fall 2008 (p. 34)
-    problems: []
+    problems:
+    - P-JHUFA08ANA
+    - P-JHUFA08ANB
+    - P-JHUFA08ANC
+    - P-JHUFA08AND
+    - P-JHUFA08ANE
+    - P-JHUFA08ANF
+    - P-JHUFA08ANG
   - name: PROBLEMS FOR ANALYSIS QUALIFYING EXAM, SPRING 2008 (p. 35)
-    problems: []
+    problems:
+    - P-JHUSP08ANA
+    - P-JHUSP08ANB
+    - P-JHUSP08ANC
+    - P-JHUSP08AND
+    - P-JHUSP08ANE
+    - P-JHUSP08ANF
+    - P-JHUSP08ANG
+    - P-JHUSP08ANH
   - name: ANALYSIS QUALIFYING EXAM, FALL 2007 (p. 36)
-    problems: []
+    problems:
+    - P-JHUFA07ANA
+    - P-JHUFA07ANB
+    - P-JHUFA07ANC
+    - P-JHUFA07AND
+    - P-JHUFA07ANE
+    - P-JHUFA07ANF
+    - P-JHUFA07ANG
+    - P-JHUFA07ANH
   - name: PROBLEMS FOR ANALYSIS QUALIFYING EXAM, SPRING 2007 (p. 37)
-    problems: []
+    problems:
+    - P-JHUSP07ANA
+    - P-JHUSP07ANB
+    - P-JHUSP07ANC
+    - P-JHUSP07AND
+    - P-JHUSP07ANE
+    - P-JHUSP07ANF
+    - P-JHUSP07ANG
+    - P-JHUSP07ANH
   - name: ANALYSIS QUALIFYING EXAM, SEPTEMBER 2006 (pp. 38–39)
-    problems: []
+    problems:
+    - P-JHUFA06ANA
+    - P-JHUFA06ANB
+    - P-JHUFA06ANC
+    - P-JHUFA06AND
+    - P-JHUFA06ANE
+    - P-JHUFA06ANF
+    - P-JHUFA06ANG
+    - P-JHUFA06ANH
   - name: ANALYSIS QUALIFYING EXAM, MAY 2006 (pp. 40–41)
-    problems: []
+    problems:
+    - P-JHUMAY06ANA
+    - P-JHUMAY06ANB
+    - P-JHUMAY06ANC
+    - P-JHUMAY06AND
+    - P-JHUMAY06ANE
+    - P-JHUMAY06ANF
+    - P-JHUMAY06ANG
+    - P-JHUMAY06ANH
   - name: ANALYSIS QUALIFYING EXAM, SEPTEMBER 2005 (pp. 42–43)
-    problems: []
+    problems:
+    - P-JHUFA05ANA
+    - P-JHUFA05ANB
+    - P-JHUFA05ANC
+    - P-JHUFA05AND
+    - P-JHUFA05ANE
+    - P-JHUFA05ANF
+    - P-JHUFA05ANG
+    - P-JHUFA05ANH
   - name: SPRING 2003 COMPLEX ANALYSIS QUALIFYING EXAM (p. 48)
-    problems: []
+    problems:
+    - P-JHUSP03CAA
+    - P-JHUSP03CAB
+    - P-JHUSP03CAC
+    - P-JHUSP03CAD
   - name: Complex Analysis Core Qualifying Exam, Fall 2002 (p. 50)
-    problems: []
+    problems:
+    - P-JHUFA02CAA
+    - P-JHUFA02CAB
+    - P-JHUFA02CAC
+    - P-JHUFA02CAD
+    - P-JHUFA02CAE
+    - P-JHUFA02CAF
+    - P-JHUFA02CAG
+    - P-JHUFA02CAH
   - name: Complex Analysis Core Qualifying Exam, Spring 2002 (p. 52)
-    problems: []
+    problems:
+    - P-JHUSP02CAA
+    - P-JHUSP02CAB
+    - P-JHUSP02CAC
+    - P-JHUSP02CAD
+    - P-JHUSP02CAE
+    - P-JHUSP02CAF
+    - P-JHUSP02CAG
+    - P-JHUSP02CAH
   - name: Real Analysis Qualifying Exam, Fall 2001 (pp. 53–54)
-    problems: []
+    problems:
+    - P-JHUFA01RAA
+    - P-JHUFA01RAB
+    - P-JHUFA01RAC
+    - P-JHUFA01RAD
+    - P-JHUFA01RAE
   - name: COMPLEX ANALYSIS CORE QUALIFYING EXAM, FALL 2001 (p. 55)
-    problems: []
+    problems:
+    - P-JHUFA01CAA
+    - P-JHUFA01CAB
+    - P-JHUFA01CAC
+    - P-JHUFA01CAD
+    - P-JHUFA01CAE
   - name: REAL ANALYSIS QUALIFYING EXAM, SPRING 2001 (p. 56)
-    problems: []
+    problems:
+    - P-JHUSP01RAA
+    - P-JHUSP01RAB
+    - P-JHUSP01RAC
+    - P-JHUSP01RAD
+    - P-JHUSP01RAE
+    - P-JHUSP01RAF
+    - P-JHUSP01RAG
+    - P-JHUSP01RAH
   - name: COMPLEX ANALYSIS CORE QUALIFYING EXAM, SPRING 2001 (p. 57)
-    problems: []
+    problems:
+    - P-JHUSP01CAA
+    - P-JHUSP01CAB
+    - P-JHUSP01CAC
+    - P-JHUSP01CAD
+    - P-JHUSP01CAE
+    - P-JHUSP01CAF
   area: real-analysis
 ---
 

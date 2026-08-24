@@ -1,0 +1,22 @@
+---
+schema: qual/card@1
+id: P-JHUFA09ANF
+kind: problem
+title: "6. Let a) Prove that f has a removable singularity at 0. b) What is the radius of convergence of the power series for f"
+classification:
+  areas:
+  - real-analysis
+  topics: []
+solved: false
+relations: []
+---
+
+6. Let
+
+$$
+f ( z ) = { \frac { z } { \tan z } } \qquad { \mathrm { f o r } } ~ z \neq 0 .
+$$
+
+a) Prove that f has a removable singularity at 0.
+
+b) What is the radius of convergence of the power series for f centered at 0? Justify your answer.

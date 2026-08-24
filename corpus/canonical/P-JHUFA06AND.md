@@ -1,0 +1,17 @@
+---
+schema: qual/card@1
+id: P-JHUFA06AND
+kind: problem
+title: "4. Let be a holomorphic map from the unit disk D to the upper half plane Suppose that . Find the maximal possible value"
+classification:
+  areas:
+  - complex-analysis
+  topics:
+  - complex-analysis-topics
+solved: false
+relations: []
+---
+
+4. Let $f : D  H$ be a holomorphic map from the unit disk D to the upper half plane $H = \left\{ z \in \mathbb { C } : \operatorname { I m } z > 0 \right\}$
+
+Suppose that $f ( 0 ) = 3 i$ . Find the maximal possible value of $\left| f ^ { \prime } ( 0 ) \right|$

@@ -1,0 +1,20 @@
+---
+schema: qual/card@1
+id: P-JHUMAY09AND
+kind: problem
+title: "4. Let . Use a contour integral consisting of the interval and a semicircle of radius R to compute the Fourier transform"
+classification:
+  areas:
+  - real-analysis
+  topics: []
+solved: false
+relations: []
+---
+
+4. Let $f ( x ) = { \frac { 1 } { x ^ { 2 } + 1 } }$ . Use a contour integral consisting of the interval $[ - R , R ] \subset \mathbb { R }$ and a semicircle of radius R to compute the Fourier transform
+
+$$
+{ \widehat { f } } ( 1 ) = \int _ { \mathbb { R } } f ( x ) e ^ { - i x } d x ~ .
+$$
+
+Show that the contour integral converges to your answer as $R \to + \infty$

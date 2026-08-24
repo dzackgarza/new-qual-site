@@ -1,0 +1,20 @@
+---
+schema: qual/card@1
+id: P-JHUMAY09ANB
+kind: problem
+title: "2. How many solutions does the equation have in the half-plane Re Prove that your answer is correct"
+classification:
+  areas:
+  - real-analysis
+  topics: []
+solved: false
+relations: []
+---
+
+2. How many solutions does the equation
+
+$$
+z + e ^ { - z } = 2 + i
+$$
+
+have in the half-plane Re $z > 0 ?$ Prove that your answer is correct.
