@@ -5,9 +5,10 @@ kind: problem
 title: "be a holomorphic function with simple zeros at the points and no other zeros. De"
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Argument Principle
+  - Contour Integration
 relations: []
 review: draft
 ---

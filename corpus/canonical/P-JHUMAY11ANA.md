@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Maximum Modulus Principle
+  - Entire Functions
 relations: []
 review: draft
 ---
