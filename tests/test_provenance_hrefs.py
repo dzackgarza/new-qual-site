@@ -107,11 +107,12 @@ def test_empty_provenance_is_a_missing_or_empty_list(tmp_path: Path) -> None:
     assert _findings(tmp_path, "empty-provenance") == ["SRC-EMPTY", "SRC-MISSING"]
 
 
-def test_homework_collections_are_skipped(tmp_path: Path) -> None:
-    """Homework collections are course-authored materials; empty provenance is expected."""
+def test_homework_and_exam_collections_are_skipped(tmp_path: Path) -> None:
+    """Homework and exam collections have no external source; empty provenance is expected."""
     _collection(tmp_path / "corpus" / "SRC-HW.md", "SRC-HW", [], source_kind="homework")
     _collection(tmp_path / "corpus" / "SRC-EXAM.md", "SRC-EXAM", [], source_kind="university-exam")
-    assert _findings(tmp_path, "empty-provenance") == ["SRC-EXAM"]
+    _collection(tmp_path / "corpus" / "SRC-COMP.md", "SRC-COMP", [], source_kind="compilation")
+    assert _findings(tmp_path, "empty-provenance") == ["SRC-COMP"]
 
 
 def test_dead_path_is_not_a_file_under_the_repo(tmp_path: Path) -> None:

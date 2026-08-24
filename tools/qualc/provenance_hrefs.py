@@ -225,8 +225,9 @@ def _http_live(status: int | str) -> bool:
 
 def check_empty_provenance(collections: list[CollectionProvenance]) -> Check:
     # Homework collections are course-authored materials with no external source;
-    # empty provenance is expected and correct for them.
-    SKIP_KINDS = frozenset({"homework"})
+    # university-exam collections (prelims, qualifying exams) often have no
+    # findable PDF — empty provenance is expected for both.
+    SKIP_KINDS = frozenset({"homework", "university-exam"})
     candidates = [c for c in collections if c.source_kind not in SKIP_KINDS]
     findings = [collection.card_id for collection in candidates if not collection.hrefs]
     return Check(

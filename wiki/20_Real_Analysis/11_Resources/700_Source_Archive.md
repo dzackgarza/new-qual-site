@@ -193,7 +193,6 @@ The UGA exams listed above are the imported sittings.
 
 ## Contributed artifacts
 
-[[SRC-MMAQ-COMBINED-QUESTIONS]]
 
 [[SRC-RA-ART-GHJOJZ]]
 

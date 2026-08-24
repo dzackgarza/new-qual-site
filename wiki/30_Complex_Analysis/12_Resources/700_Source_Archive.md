@@ -151,7 +151,6 @@ These department PDFs now have collection cards; their problem lists are not yet
 
 ## Contributed artifacts
 
-[[SRC-MMAQ-COMBINED-QUESTIONS]]
 
 [[SRC-CA-ART-E3SXDB]]
 
