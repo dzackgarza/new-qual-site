@@ -27,9 +27,7 @@ REPO = Path(__file__).resolve().parent.parent
 ORDER_FLOOR = 100001
 
 HEADING_LINE = re.compile(r"^#{1,6}\s+\S")
-WIKILINK_LINE = re.compile(
-    r"^\s*(?:[-*]\s+(?:\[[ xX]\]\s+)?|\d+\.\s+)?!?\[\[[^\]\n]+\]\]\s*$"
-)
+WIKILINK_LINE = re.compile(r"^\s*(?:[-*]\s+(?:\[[ xX]\]\s+)?|\d+\.\s+)?!?\[\[[^\]\n]+\]\]\s*$")
 TASK_LIST_ITEM = re.compile(r"^\s*(?:[-*]|\d+\.)\s+\[[ xX]\]\s+")
 HASH_RESOURCES_ONLY = re.compile(r"^\s*#resources/\S+\s*$")
 TAGS_COLON = re.compile(r"^\s*Tags:")
@@ -77,9 +75,7 @@ def load_pages(wiki_root: Path) -> tuple[list[PageRecord], list[str]]:
     return pages, unreadable
 
 
-def check_unreadable_wiki_pages(
-    _pages: list[PageRecord], unreadable: list[str]
-) -> Check:
+def check_unreadable_wiki_pages(_pages: list[PageRecord], unreadable: list[str]) -> Check:
     return Check("unreadable-wiki-pages", sorted(unreadable))
 
 
@@ -113,11 +109,7 @@ def check_one_markdown_child_directories(pages: list[PageRecord]) -> Check:
         others = [page for page in members if page.rel.stem.lower() != "index"]
         if len(indexes) != 1 or len(others) != 1:
             continue
-        descendants = [
-            page
-            for page in pages
-            if directory in page.rel.parents and page.rel.parent != directory
-        ]
+        descendants = [page for page in pages if directory in page.rel.parents and page.rel.parent != directory]
         if descendants:
             continue
         child = others[0].rel.name
@@ -137,9 +129,7 @@ def check_sibling_duplicate_titles(pages: list[PageRecord]) -> Check:
             continue
         by_parent_title[(page.rel.parent, title.strip())].append(page.rel.name)
     findings = [
-        (
-            f"{'wiki' if parent == Path('.') else _wiki_label(parent)}: title {title!r} on {', '.join(sorted(names))}"
-        )
+        (f"{'wiki' if parent == Path('.') else _wiki_label(parent)}: title {title!r} on {', '.join(sorted(names))}")
         for (parent, title), names in by_parent_title.items()
         if len(names) > 1
     ]
@@ -149,18 +139,14 @@ def check_sibling_duplicate_titles(pages: list[PageRecord]) -> Check:
 def check_obsidian_embed_syntax(pages: list[PageRecord]) -> Check:
     return Check(
         "obsidian-embed-syntax",
-        sorted(
-            _wiki_label(page.rel) for page in pages if OBSIDIAN_EMBED.search(page.body)
-        ),
+        sorted(_wiki_label(page.rel) for page in pages if OBSIDIAN_EMBED.search(page.body)),
     )
 
 
 def check_notion_so_or_notion_site_urls(pages: list[PageRecord]) -> Check:
     return Check(
         "notion-so-or-notion-site-urls",
-        sorted(
-            _wiki_label(page.rel) for page in pages if NOTION_HOST.search(page.body)
-        ),
+        sorted(_wiki_label(page.rel) for page in pages if NOTION_HOST.search(page.body)),
     )
 
 
@@ -174,22 +160,14 @@ def check_hash_todo_markers(pages: list[PageRecord]) -> Check:
 def check_tags_colon_lines(pages: list[PageRecord]) -> Check:
     return Check(
         "tags-colon-lines",
-        sorted(
-            _wiki_label(page.rel)
-            for page in pages
-            if any(TAGS_COLON.match(line) for line in page.body.splitlines())
-        ),
+        sorted(_wiki_label(page.rel) for page in pages if any(TAGS_COLON.match(line) for line in page.body.splitlines())),
     )
 
 
 def check_hash_resources_only_lines(pages: list[PageRecord]) -> Check:
     return Check(
         "hash-resources-only-lines",
-        sorted(
-            _wiki_label(page.rel)
-            for page in pages
-            if any(HASH_RESOURCES_ONLY.match(line) for line in page.body.splitlines())
-        ),
+        sorted(_wiki_label(page.rel) for page in pages if any(HASH_RESOURCES_ONLY.match(line) for line in page.body.splitlines())),
     )
 
 
@@ -246,13 +224,9 @@ def run(names: list[str], *, root: Path = REPO) -> list[Check]:
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="wiki_doctor")
     ap.add_argument("--root", type=Path, default=REPO)
-    ap.add_argument(
-        "--only", action="append", choices=ALL, help="run one check (repeatable)"
-    )
+    ap.add_argument("--only", action="append", choices=ALL, help="run one check (repeatable)")
     ap.add_argument("--json", action="store_true")
-    ap.add_argument(
-        "--full", action="store_true", help="print every finding, not the first 20"
-    )
+    ap.add_argument("--full", action="store_true", help="print every finding, not the first 20")
     args = ap.parse_args(argv)
 
     checks = run(args.only or ALL, root=args.root)
