@@ -342,16 +342,6 @@ source:
     - P-JHUSP02CAD
     - P-JHUSP02CAE
     - P-JHUSP02CAF
-    - P-JHUSP02CAG
-    - P-JHUSP02CAH
-    - P-JHUSP02CAI
-    - P-JHUSP02CAJ
-    - P-JHUSP02CAK
-    - P-JHUSP02CAL
-    - P-JHUSP02CAM
-    - P-JHUSP02CAN
-    - P-JHUSP02CAO
-    - P-JHUSP02CAP
   - name: Real Analysis Qualifying Exam, Fall 2001 (pp. 53–54)
     problems:
     - P-JHUFA01RAA
