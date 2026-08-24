@@ -196,19 +196,21 @@ def collection_provenance_hrefs(root: Path) -> list[tuple[str, str]]:
 
 
 def http_get_status(url: str, *, timeout: float) -> int | str:
-    status = _http_get_status(url, timeout=timeout, with_range=True)
-    if status == 416:
-        return _http_get_status(url, timeout=timeout, with_range=False)
-    return status
-
-
-def _http_get_status(url: str, *, timeout: float, with_range: bool) -> int | str:
-    headers = {
+    base_headers = {
         "User-Agent": USER_AGENT,
         "Accept": "*/*",
     }
-    if with_range:
-        headers["Range"] = "bytes=0-0"
+    # A 416 under `Range: bytes=0-0` means the server rejected the ranged
+    # probe itself; retry once without the header to get the real status.
+    status = _http_get_status(
+        url, timeout=timeout, headers={**base_headers, "Range": "bytes=0-0"}
+    )
+    if status == 416:
+        return _http_get_status(url, timeout=timeout, headers=base_headers)
+    return status
+
+
+def _http_get_status(url: str, *, timeout: float, headers: dict[str, str]) -> int | str:
     request = urllib.request.Request(url, method="GET", headers=headers)
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
