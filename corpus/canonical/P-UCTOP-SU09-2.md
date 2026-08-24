@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-A space $X$ is constructed by gluing up the solid hexagonal prism: the hexagonal faces are glued using translation and a 60 degree rotation, and the opposite sides of the prism are glued in pairs via translation. Calculate the integral homology of $X$.
+A space $X$ is constructed by gluing up the solid hexagonal prism: the hexagonal faces are glued using translation and a 60 degree rotation, and the opposite sides of the prism are glued in pairs via translation.
+Calculate the integral homology of $X$.

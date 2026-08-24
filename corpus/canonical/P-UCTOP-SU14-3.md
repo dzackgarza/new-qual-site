@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $X = K \times K$ be the product of the Klein bottle $K$ with itself. Compute the homology $H_*(X; \mathbb{Z})$ and cohomology $H^*(X; \mathbb{Z})$.
+Let $X = K \times K$ be the product of the Klein bottle $K$ with itself.
+Compute the homology $H_*(X; \mathbb{Z})$ and cohomology $H^*(X; \mathbb{Z})$.

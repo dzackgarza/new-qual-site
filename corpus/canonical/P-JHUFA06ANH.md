@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 8. Suppose that X is a real Banach space and, for all $x , y \in X$ , the norm $\| \cdot \|$ satisfies

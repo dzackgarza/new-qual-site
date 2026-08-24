@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 2) Calculate the integral $\textstyle \int _ { 0 } ^ { 2 \pi } { \frac { d \theta } { 1 - 2 a \cos \theta + a ^ { 2 } } }$ , where $0 < a < 1$

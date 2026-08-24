@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Question 1.1. Suppose that $f _ { j } \in L ^ { 2 } ( \mathbb { R } ^ { d } ) , j = 1 , 2 , . . . ,$ and $f \in L ^ { 2 } (  { \mathbb { R } } ^ { d } )$ satisfy

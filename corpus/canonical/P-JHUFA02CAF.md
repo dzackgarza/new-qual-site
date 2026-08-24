@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic on the annulus $\{ z : 1 < | z | < 3 \}$ , then f extends holomorphically to the disc $\{ z : | z | < 3 \}$

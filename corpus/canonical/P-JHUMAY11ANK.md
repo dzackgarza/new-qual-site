@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 3. Let $\begin{array} { r } { T f ( x ) = \int _ { \mathbb { R } ^ { n } } K ( x , y ) f ( y ) d y } \end{array}$ , where $K ( x , y )$ is a nonnegative measurable function on $\mathbb { R } ^ { n } \times \mathbb { R } ^ { n }$ . Suppose that there are measurable functions $p ( x ) > 0$ and $q ( x ) > 0$ o n $\mathbb { R } ^ { n }$ and real numbers $\alpha , \beta > 0$ for which

@@ -9,6 +9,9 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $G$ be a group and let $p$ be the smallest prime divisor of $|G|$. Suppose that $H$ is a subgroup of $G$ of index $p$. Prove that $H$ is normal.
+Let $G$ be a group and let $p$ be the smallest prime divisor of $|G|$.
+Suppose that $H$ is a subgroup of $G$ of index $p$.
+Prove that $H$ is normal.

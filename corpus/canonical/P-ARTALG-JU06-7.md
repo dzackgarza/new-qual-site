@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 (a) Describe the Galois group of $\mathbb{F}_{p^n}$ over $\mathbb{F}_p$, where $p$ is a prime and $n \geq 1$.

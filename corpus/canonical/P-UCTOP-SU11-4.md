@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 For which $n$ and $k$ is $X = \mathbb{CP}^n / \mathbb{CP}^k$ homotopy-equivalent to a manifold?

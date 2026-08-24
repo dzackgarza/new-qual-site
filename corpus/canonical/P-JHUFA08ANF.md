@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 6) (10 points) Let $f : \mathbb { C } \to \mathbb { C }$ be an entire function. Prove that if there exists some real number C and some positive integer k so that

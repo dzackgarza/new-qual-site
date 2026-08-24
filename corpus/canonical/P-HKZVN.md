@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 Question 1.2. Fix a measurable function $f : \mathbb { R } ^ { 2 } $ R and, for every $x , y \in \mathbb { R } ,$ , let

@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 7) Suppose that $f _ { n }$ is a sequence of functions in $L ^ { 2 } ( \mathbb { R } )$ that converges weakly in $L ^ { 2 }$ to a function $f \in L ^ { 2 } ( \mathbb { R } )$ . Is it possible to have

@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-The connect-sum (#) of two oriented 4-manifolds is defined by removing an open 4-ball from each, and gluing the resulting manifolds using a homeomorphism between their boundary 3-spheres, in such a way that the orientations match to make a new oriented manifold. Compute the cohomology ring of the connect-sum $X = \mathbb{CP}^2 \# (S^2 \times S^2)$.
+The connect-sum (#) of two oriented 4-manifolds is defined by removing an open 4-ball from each, and gluing the resulting manifolds using a homeomorphism between their boundary 3-spheres, in such a way that the orientations match to make a new oriented manifold.
+Compute the cohomology ring of the connect-sum $X = \mathbb{CP}^2 \# (S^2 \times S^2)$.

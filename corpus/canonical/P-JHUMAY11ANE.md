@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 5. Let $f _ { n } : [ 0 , 1 ] \to \mathbb { R }$ , for $n = 1 , 2 , \ldots ,$ , be a sequence of $\mathcal { C } ^ { 1 }$ functions such that $f _ { n } ( t ) \leq 5$ and $| f _ { n } ^ { \prime } ( t ) | \leq 1$ for all $n , t$ . Define the functions $g _ { n } : [ 0 , 1 ] \to \mathbb { R }$ by

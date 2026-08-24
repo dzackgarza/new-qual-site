@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 3) Assume that $f$ is a continuously differentiable 2π periodic function on R. Show that the Fourier series

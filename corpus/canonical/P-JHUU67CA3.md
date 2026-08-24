@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Suppose $f$ is holomorphic in an annulus $r < |z| < R$, and there exists a sequence of holomorphic polynomials $p_n$ converging to $f$ uniformly on compact subsets of the annulus.

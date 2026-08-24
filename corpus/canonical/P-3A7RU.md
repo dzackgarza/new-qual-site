@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Question 2.4. Show that the punctured unit disk $\{ z \ : \ 0 < \ | z | < 1 \}$ and the annulus $\{ z : 1 < | z | < 2 \}$ cannot be conformally equivalent.

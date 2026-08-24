@@ -9,6 +9,10 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $K$ be the splitting field of $x^4 - 2$ over $\mathbb{Q}$. What is $[K:\mathbb{Q}]$? Describe the Galois group $G = \text{Gal}(K/\mathbb{Q})$: either find generators of the group and indicate relations among those generators which determine its multiplication table, or identify a familiar group to which $G$ is isomorphic. Find all the subgroups of $G$ and their orders, and indicate the corresponding subfields of $K$.
+Let $K$ be the splitting field of $x^4 - 2$ over $\mathbb{Q}$.
+What is $[K:\mathbb{Q}]$?
+Describe the Galois group $G = \text{Gal}(K/\mathbb{Q})$: either find generators of the group and indicate relations among those generators which determine its multiplication table, or identify a familiar group to which $G$ is isomorphic.
+Find all the subgroups of $G$ and their orders, and indicate the corresponding subfields of $K$.

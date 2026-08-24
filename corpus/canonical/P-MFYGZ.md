@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 2. Let $f \in L ^ { 1 } ( \mathbb { R } ^ { d } )$ and $M _ { f }$ denote the Hardy-Littlewood maximal function of $f ;$ in other words,

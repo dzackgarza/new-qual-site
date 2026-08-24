@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 7. Fix $1 \leq p < \infty$ and let $\{ f _ { n } \} _ { n = 1 } ^ { \infty }$ be a sequence of Lebesgue measurable functions $f _ { n } : [ 0 , 1 ] \to \mathbb { C }$ . Suppose there exists $f \in L ^ { p } ( [ 0 , 1 ] )$ such that $f _ { n }  f$ in $L ^ { p }$ , that is,

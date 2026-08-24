@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 4) Let $\ell ^ { 2 }$ be the space of all square-summable sequences of complex numbers, and let $T : \ell ^ { 2 } \to \ell ^ { 2 }$ be a linear operator. Let $e _ { n }$ be the sequence

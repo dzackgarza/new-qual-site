@@ -9,10 +9,12 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Let $F$ be a field of order 1024.
 
 (a) Find the prime field of $F$.
 
-(b) Let $K$ be a subfield of $F$. Find all possible orders for $K$.
+(b) Let $K$ be a subfield of $F$.
+Find all possible orders for $K$.

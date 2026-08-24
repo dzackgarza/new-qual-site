@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 2) (10 points) Let $( X , { \mathcal { M } } , \mu )$ and $( Y , \mathcal { N } , \nu )$ be σ-finite measure spaces and let $K ( x , y )$ be a measurable function with respect to the product σ-algebra $\mathcal { M } \times \mathcal { N }$ . Assume that there is a constant $0 < A <$ ∞ so that for all $x \in X$

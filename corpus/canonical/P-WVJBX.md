@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 1. Suppose $\{ f _ { n } \} _ { n = 1 } ^ { \infty } \subset L ^ { 2 } ( \mathbb { R } )$ is a sequence that converges to 0 in the $L ^ { 2 }$ norm; in other words,

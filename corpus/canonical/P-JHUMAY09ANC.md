@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 3. Let $f _ { n } : U \to \mathbb { C } , n = 1 , 2 , 3 , . . . ,$ be a sequence of holomorphic functions such that $f _ { n } ^ { - 1 } ( 0 ) = \{ c _ { n } \}$ , where $c _ { n } \in U$ , and U is a connected open set.

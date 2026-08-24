@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 6. a) Let $f _ { j } \in L ^ { 2 } ( \mathbb { R } ^ { n } )$ and suppose that

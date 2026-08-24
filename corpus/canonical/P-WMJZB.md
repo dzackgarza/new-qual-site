@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 2. Let H be a Hilbert space equipped with an inner product $( \cdot , \cdot )$ and a norm $| | \cdot | | = ( \cdot , \cdot ) ^ { \frac { 1 } { 2 } }$ Recall the following: A sequence $\{ f _ { k } \} \subset { \mathcal { H } }$ is said converge to $f \in \mathcal H$ if $\vert \vert f _ { k } - f \vert \vert  0$ . A sequence $\{ f _ { k } \} \subset { \mathcal { H } }$ is said converge weakly to $f \in { \mathcal { H } }$ if $( f _ { k } , g )  ( f , g )$ for any $g \in { \mathcal { H } }$ . Prove the following statements:

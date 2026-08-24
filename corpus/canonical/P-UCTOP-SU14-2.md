@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $K \subseteq V$ be a knotted solid torus $S^1 \times B^2$ inside a larger solid torus $V = S^1 \times B^2$, and let $X = V - \overset{\circ}{K}$ be the complement, obtained by removing the interior of $K$. Compute $H_*(X; \mathbb{Z})$.
+Let $K \subseteq V$ be a knotted solid torus $S^1 \times B^2$ inside a larger solid torus $V = S^1 \times B^2$, and let $X = V - \overset{\circ}{K}$ be the complement, obtained by removing the interior of $K$.
+Compute $H_*(X; \mathbb{Z})$.

@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 5. Let $f _ { j } \in L ^ { 2 } ( \mathbb { R } ^ { n } )$ , and ${ \widehat { f } } _ { j }$ denote its Fourier transform for $j = 1 , 2 , 3 \ldots$ . Suppose that $f _ { j } \to f$ in $L ^ { 2 }$ and that there is a finite constant M so that

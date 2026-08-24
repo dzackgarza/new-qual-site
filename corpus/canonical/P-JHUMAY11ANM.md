@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 5. Let $\gamma$ be the closed curve in the complex plane that is given in polar coordinates by $r = 2 + 3$ cos θ, $0 \leq \theta \leq 4 \pi$ , oriented in the direction of increasing θ. Let

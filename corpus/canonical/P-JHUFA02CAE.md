@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 5.i. Find the sum of the series $\begin{array} { r } { \sum _ { n = 1 } ^ { \infty } \frac { \sin { ( 2 n - 1 ) x } } { 2 n - 1 } \mathrm { o n } \left( 0 , 2 \pi \right) } \end{array}$

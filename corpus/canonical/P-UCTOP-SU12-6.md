@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Show that there exists a degree 1 map from $T^3 = S^1 \times S^1 \times S^1$ to $S^3$, but not vice versa.

@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Let $E, F \subset \mathbb{R}$ be two Lebesgue-measurable subsets of $\mathbb{R}$, each of finite measure, and let $\chi_E$ and $\chi_F$ denote their respective characteristic functions.

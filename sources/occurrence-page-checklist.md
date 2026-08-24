@@ -1,360 +1,712 @@
 # Occurrence-layer page checklist
 
-One item per source page (collection card in `corpus/collections/`).
-Work one page at a time: read the source document, write the page body as an ordered `[[P-…]]` list, compare every entry against the source, commit, tick.
+One item per source page (collection card in `corpus/collections/`). Work one page at a time: read the source document, write the page body as an ordered `[[P-…]]` list, compare every entry against the source, commit, tick.
 
-Note: issue #46 cites a queue of 279 pages via `sources/occurrence-migration-queue.json`, which does not exist in the repo. The authoritative set is the collection cards on disk (353).
+Note: issue #46 cites a queue of 279 pages via `sources/occurrence-migration-queue.json`, which does not exist in the repo.
+The authoritative set is the collection cards on disk (353).
 
 - [ ] SRC-ALG-ART-HEACCB — Fall 2019 algebra course final (homework)
+
 - [ ] SRC-ALG-ART-QHGA3N — Fall 2019 algebra course midterm (homework)
+
 - [ ] SRC-ART-ALG-2003-2009-PRELIMS — Algebra prelims, 2003–2009 (compiled scan) (compilation)
+
 - [ ] SRC-ART-ALG-2010-2015-PRELIMS — Algebra prelims, 2010–2015 (compiled scan) (compilation)
+
 - [ ] SRC-CA-ART-E3SXDB — Spring 2020 HW 2 (complex-analysis) (homework)
+
 - [ ] SRC-CA-ART-T34TG3 — Spring 2020 HW 3 (complex-analysis) (homework)
+
 - [ ] SRC-EMORY-CA-ARANGO — Emory Quals, collected by Santiago Arango (compilation)
+
 - [ ] SRC-JHU-ANALYSIS-EXAMS — JHU analysis exams (compiled packet) (compilation)
+
 - [ ] SRC-MMAQ-COMBINED-QUESTIONS — make-me-a-qual Combined_Questions.yaml (compilation)
+
 - [ ] SRC-PRELIM-ART-A2355I — UGA (undated) (prelim) (university-exam)
+
 - [ ] SRC-PRELIM-ART-INTEGRAL-PRACTICE — Integral Practice (prelim drill sheet) (homework)
+
 - [ ] SRC-RA-ART-GHJOJZ — JHU (undated) (real-analysis) (compilation)
+
 - [ ] SRC-RA-WORKSHOP — UNL real-analysis workshop (compilation)
+
 - [ ] SRC-TAMU-RA-FALL-2014 — TAMU real-analysis Fall 2014 (university-exam)
+
 - [ ] SRC-TAMU-RA-FALL-2015 — TAMU real-analysis Fall 2015 (university-exam)
+
 - [ ] SRC-TAMU-RA-FALL-2016 — TAMU real-analysis Fall 2016 (university-exam)
+
 - [ ] SRC-TAMU-RA-SPRING-2015 — TAMU real-analysis Spring 2015 (university-exam)
+
 - [ ] SRC-TAMU-RA-SPRING-2016 — TAMU real-analysis Spring 2016 (university-exam)
+
 - [ ] SRC-TAMU-RA-SPRING-2017 — TAMU real-analysis Spring 2017 (university-exam)
+
 - [ ] SRC-TEXT-DF04 — Dummit and Foote, Abstract Algebra (textbook)
+
 - [ ] SRC-TEXT-HAT02 — Hatcher, Algebraic Topology (textbook)
+
 - [ ] SRC-TEXT-HK71 — Hoffman and Kunze, Linear Algebra (textbook)
+
 - [ ] SRC-TEXT-HUN74 — Hungerford, Algebra (textbook)
+
 - [ ] SRC-TEXT-MUN00 — Munkres, Topology (textbook)
+
 - [ ] SRC-TEXT-SMI — Smith, Algebra Course Notes (textbook)
+
 - [ ] SRC-TEXT-SS03 — Stein and Shakarchi, Complex Analysis (textbook)
+
 - [ ] SRC-TOP-2002Q1 — Topology and Algebraic Topology Ph.D. Qualifying Exam, January 18, 2002 (university-exam)
+
 - [ ] SRC-TOP-2011Q2 — Math 871–872 Qualifying Exam, June 2011 (university-exam)
+
 - [ ] SRC-TOP-2012Q1 — Math 871–872 Qualifying Exam, January 2012 (university-exam)
+
 - [ ] SRC-TOP-2012Q2 — Topology Qualifying Examination, Math 871/872, June 2012 (university-exam)
+
 - [ ] SRC-TOP-2013Q2 — Math 871-872 Qualifying Exam, May 2013 (university-exam)
+
 - [ ] SRC-TOP-2015Q2 — Math 871-872 Qualifying Exam, May 2015 (university-exam)
+
 - [ ] SRC-TOP-2017Q2 — Math 871-872 Qualifying Exam, May 2017 (university-exam)
+
 - [ ] SRC-TOP-2018Q2 — Math 871-872 Qualifying Exam, May 2018 (university-exam)
+
 - [ ] SRC-TOP-2019Q1 — Math 871-872 Qualifying Exam, January 2019 (university-exam)
+
 - [ ] SRC-TOP-2019Q2 — Math 871-872 Qualifying Exam, May 2019 (university-exam)
+
 - [ ] SRC-TOP-2020Q1 — Math 871-872 Qualifying Exam, January 2020 (university-exam)
+
 - [ ] SRC-TOPOLOGY-PHD-F07 — Topology Ph.D. Qualifying Exam, January 12, 2008 (university-exam)
+
 - [ ] SRC-TOPOLOGY-PHD-F08 — Topology Ph.D. Qualifying Exam, January 17, 2009 (university-exam)
+
 - [ ] SRC-TOPOLOGY-PHD-F95 — Topology Qualifying Exam, 23 September 1995 (university-exam)
+
 - [ ] SRC-TOP-UNL-2005Q2 — UNL Mathematics Qualifying Exam, Math 970/971, June 2005 (university-exam)
+
 - [ ] SRC-TOP-UNL-2006Q1 — UNL Mathematics Qualifying Exam 970/971, January 2006 (university-exam)
+
 - [ ] SRC-TOP-UNL-2006Q2 — UNL Mathematics Qualifying Exam 970/971, June 2006 (university-exam)
+
 - [ ] SRC-TOP-UNL-2007Q2 — UNL Mathematics Qualifying Exam 871/872, June 2007 (university-exam)
+
 - [ ] SRC-TOP-UNL-2008Q2 — UNL Mathematics Qualifying Exam 871/872, June 2008 (university-exam)
+
 - [ ] SRC-TOP-UNL-2009Q2 — UNL Mathematics Qualifying Exam, Math 871/872, June 2009 (university-exam)
+
 - [ ] SRC-TOP-UNL-2010Q2 — UNL Mathematics Qualifying Exam, Math 871/872, June 2010 (university-exam)
+
 - [ ] SRC-TOP-UNL-2014Q2 — UNL Mathematics Qualifying Exam, Math 871/872, June 2014 (university-exam)
+
 - [ ] SRC-TOP-UNL-2016Q2 — UNL Math Topology Qualifying Exam, May 2016 (university-exam)
+
 - [ ] SRC-TOP-UNL-2017Q1 — UNL Math 871-872 Topology Qualifying Exam, January 2017 (university-exam)
+
 - [ ] SRC-TOP-WORKSHOP — UNL topology workshop (compilation)
+
 - [ ] SRC-TOP-WORKSHOP-2020 — UNL topology workshop, May 2020 (compilation)
+
 - [ ] SRC-UCLA-RA-FALL-2009 — UCLA real-analysis Fall 2009 (university-exam)
+
 - [ ] SRC-UCLA-RA-FALL-2010 — UCLA real-analysis Fall 2010 (university-exam)
+
 - [ ] SRC-UCLA-RA-SPRING-2009 — UCLA real-analysis Spring 2009 (university-exam)
+
 - [ ] SRC-UCLA-RA-SPRING-2010 — UCLA real-analysis Spring 2010 (university-exam)
+
 - [ ] SRC-UCSD-ALG-200A-HOMEWORK — UCSD Math 200A Homework Question Compendium (homework)
+
 - [ ] SRC-UCSD-ALG-FALL-2006 — UCSD algebra Fall 2006 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2007 — UCSD algebra Fall 2007 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2008 — UCSD algebra Fall 2008 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2009 — UCSD algebra Fall 2009 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2010 — UCSD algebra Fall 2010 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2011 — UCSD algebra Fall 2011 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2013 — UCSD algebra Fall 2013 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2014 — UCSD algebra Fall 2014 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2017 — UCSD algebra Fall 2017 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2018 — UCSD algebra Fall 2018 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2019 — UCSD algebra Fall 2019 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2020 — UCSD algebra Fall 2020 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2021 — UCSD algebra Fall 2021 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2022 — UCSD algebra Fall 2022 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2023 — UCSD algebra Fall 2023 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2024 — UCSD algebra Fall 2024 (university-exam)
+
 - [ ] SRC-UCSD-ALG-FALL-2025 — UCSD algebra Fall 2025 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2004 — UCSD algebra Spring 2004 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2005 — UCSD algebra Spring 2005 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2006 — UCSD algebra Spring 2006 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2007 — UCSD algebra Spring 2007 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2008 — UCSD algebra Spring 2008 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2009 — UCSD algebra Spring 2009 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2011 — UCSD algebra Spring 2011 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2012 — UCSD algebra Spring 2012 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2013 — UCSD algebra Spring 2013 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2014 — UCSD algebra Spring 2014 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2015 — UCSD algebra Spring 2015 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2016 — UCSD algebra Spring 2016 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2017 — UCSD algebra Spring 2017 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2018 — UCSD algebra Spring 2018 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2019 — UCSD algebra Spring 2019 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2020 — UCSD algebra Spring 2020 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2021 — UCSD algebra Spring 2021 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2022 — UCSD algebra Spring 2022 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2023 — UCSD algebra Spring 2023 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2024 — UCSD algebra Spring 2024 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2025 — UCSD algebra Spring 2025 (university-exam)
+
 - [ ] SRC-UCSD-ALG-SPRING-2026 — UCSD algebra Spring 2026 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2004 — UCSD applied-algebra Fall 2004 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2006 — UCSD applied-algebra Fall 2006 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2007 — UCSD applied-algebra Fall 2007 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2008 — UCSD applied-algebra Fall 2008 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2011 — UCSD applied-algebra Fall 2011 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2017 — UCSD applied-algebra Fall 2017 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2018 — UCSD applied-algebra Fall 2018 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2020 — UCSD applied-algebra Fall 2020 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2021 — UCSD applied-algebra Fall 2021 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2022 — UCSD applied-algebra Fall 2022 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2023 — UCSD applied-algebra Fall 2023 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2024 — UCSD applied-algebra Fall 2024 (university-exam)
+
 - [ ] SRC-UCSD-APALG-FALL-2025 — UCSD applied-algebra Fall 2025 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2004 — UCSD applied-algebra Spring 2004 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2005 — UCSD applied-algebra Spring 2005 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2006 — UCSD applied-algebra Spring 2006 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2007 — UCSD applied-algebra Spring 2007 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2008 — UCSD applied-algebra Spring 2008 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2009 — UCSD applied-algebra Spring 2009 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2011 — UCSD applied-algebra Spring 2011 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2013 — UCSD applied-algebra Spring 2013 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2015 — UCSD applied-algebra Spring 2015 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2017 — UCSD applied-algebra Spring 2017 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2018 — UCSD applied-algebra Spring 2018 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2019 — UCSD applied-algebra Spring 2019 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2020 — UCSD applied-algebra Spring 2020 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2021 — UCSD applied-algebra Spring 2021 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2022 — UCSD applied-algebra Spring 2022 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2023 — UCSD applied-algebra Spring 2023 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2024 — UCSD applied-algebra Spring 2024 (university-exam)
+
 - [ ] SRC-UCSD-APALG-SPRING-2026 — UCSD applied-algebra Spring 2026 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2005 — UCSD complex-analysis Fall 2005 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2006 — UCSD complex-analysis Fall 2006 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2007 — UCSD complex-analysis Fall 2007 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2008 — UCSD complex-analysis Fall 2008 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2009 — UCSD complex-analysis Fall 2009 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2010 — UCSD complex-analysis Fall 2010 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2011 — UCSD complex-analysis Fall 2011 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2013 — UCSD complex-analysis Fall 2013 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2015 — UCSD complex-analysis Fall 2015 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2016 — UCSD complex-analysis Fall 2016 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2017 — UCSD complex-analysis Fall 2017 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2019 — UCSD complex-analysis Fall 2019 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2020 — UCSD complex-analysis Fall 2020 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2021 — UCSD complex-analysis Fall 2021 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2022 — UCSD complex-analysis Fall 2022 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2023 — UCSD complex-analysis Fall 2023 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2024 — UCSD complex-analysis Fall 2024 (university-exam)
+
 - [ ] SRC-UCSD-CA-FALL-2025 — UCSD complex-analysis Fall 2025 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2004 — UCSD complex-analysis Spring 2004 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2005 — UCSD complex-analysis Spring 2005 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2006 — UCSD complex-analysis Spring 2006 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2007 — UCSD complex-analysis Spring 2007 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2008 — UCSD complex-analysis Spring 2008 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2009 — UCSD complex-analysis Spring 2009 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2011 — UCSD complex-analysis Spring 2011 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2012 — UCSD complex-analysis Spring 2012 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2013 — UCSD complex-analysis Spring 2013 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2015 — UCSD complex-analysis Spring 2015 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2017 — UCSD complex-analysis Spring 2017 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2018 — UCSD complex-analysis Spring 2018 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2019 — UCSD complex-analysis Spring 2019 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2020 — UCSD complex-analysis Spring 2020 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2021 — UCSD complex-analysis Spring 2021 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2022 — UCSD complex-analysis Spring 2022 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2023 — UCSD complex-analysis Spring 2023 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2024 — UCSD complex-analysis Spring 2024 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2025 — UCSD complex-analysis Spring 2025 (university-exam)
+
 - [ ] SRC-UCSD-CA-SPRING-2026 — UCSD complex-analysis Spring 2026 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2004 — UCSD real-analysis Fall 2004 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2005 — UCSD real-analysis Fall 2005 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2006 — UCSD real-analysis Fall 2006 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2007 — UCSD real-analysis Fall 2007 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2009 — UCSD real-analysis Fall 2009 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2010 — UCSD real-analysis Fall 2010 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2011 — UCSD real-analysis Fall 2011 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2016 — UCSD real-analysis Fall 2016 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2017 — UCSD real-analysis Fall 2017 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2018 — UCSD real-analysis Fall 2018 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2020 — UCSD real-analysis Fall 2020 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2021 — UCSD real-analysis Fall 2021 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2022 — UCSD real-analysis Fall 2022 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2023 — UCSD real-analysis Fall 2023 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2024 — UCSD real-analysis Fall 2024 (university-exam)
+
 - [ ] SRC-UCSD-RA-FALL-2025 — UCSD real-analysis Fall 2025 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2004 — UCSD real-analysis Spring 2004 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2006 — UCSD real-analysis Spring 2006 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2007 — UCSD real-analysis Spring 2007 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2008 — UCSD real-analysis Spring 2008 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2009 — UCSD real-analysis Spring 2009 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2011 — UCSD real-analysis Spring 2011 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2013 — UCSD real-analysis Spring 2013 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2015 — UCSD real-analysis Spring 2015 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2016 — UCSD real-analysis Spring 2016 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2017 — UCSD real-analysis Spring 2017 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2018 — UCSD real-analysis Spring 2018 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2020 — UCSD real-analysis Spring 2020 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2021 — UCSD real-analysis Spring 2021 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2022 — UCSD real-analysis Spring 2022 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2023 — UCSD real-analysis Spring 2023 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2024 — UCSD real-analysis Spring 2024 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2025 — UCSD real-analysis Spring 2025 (university-exam)
+
 - [ ] SRC-UCSD-RA-SPRING-2026 — UCSD real-analysis Spring 2026 (university-exam)
+
 - [ ] SRC-UCSD-TOP-290QUALS — UCSD Math 290 qualifying exams (Justin Roberts compilation) (compilation)
+
 - [ ] SRC-UCSD-TOP-FALL-2002 — UCSD topology Fall 2002 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2003 — UCSD topology Fall 2003 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2004 — UCSD topology Fall 2004 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2006 — UCSD topology Fall 2006 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2007 — UCSD topology Fall 2007 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2008 — UCSD topology Fall 2008 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2009 — UCSD topology Fall 2009 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2010 — UCSD topology Fall 2010 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2014 — UCSD topology Fall 2014 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2017 — UCSD Math 290A Fall 2017 course final (homework)
+
 - [ ] SRC-UCSD-TOP-FALL-2018 — UCSD topology Fall 2018 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2019 — UCSD topology Fall 2019 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2020 — UCSD topology Fall 2020 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2021 — UCSD topology Fall 2021 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2022 — UCSD topology Fall 2022 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2023 — UCSD topology Fall 2023 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2024 — UCSD topology Fall 2024 (university-exam)
+
 - [ ] SRC-UCSD-TOP-FALL-2025 — UCSD topology Fall 2025 (university-exam)
+
 - [ ] SRC-UCSD-TOP-JUSTIN — UCSD Topology Qual Problems (Justin) (compilation)
+
 - [ ] SRC-UCSD-TOP-QUAL-FALL-2017 — UCSD topology Fall 2017 (department sample) (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2000 — UCSD topology Spring 2000 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2001 — UCSD topology Spring 2001 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2002 — UCSD topology Spring 2002 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2004 — UCSD topology Spring 2004 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2005 — UCSD topology Spring 2005 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2006 — UCSD topology Spring 2006 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2007 — UCSD topology Spring 2007 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2008 — UCSD topology Spring 2008 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2010 — UCSD topology Spring 2010 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2011 — UCSD topology Spring 2011 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2013 — UCSD topology Spring 2013 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2017 — UCSD topology Summer 2017 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2018 — UCSD topology Spring 2018 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2020 — UCSD topology Spring 2020 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2022 — UCSD topology Spring 2022 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2023 — UCSD topology Spring 2023 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2024 — UCSD topology Summer 2024 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2025 — UCSD topology Summer 2025 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SPRING-2026 — UCSD topology Spring 2026 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SUMMER-2003 — UCSD topology Summer 2003 (university-exam)
+
 - [ ] SRC-UCSD-TOP-SUMMER-2015 — UCSD topology Summer 2015 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2012 — UGA algebra Fall 2012 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2013 — UGA algebra Fall 2013 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2014 — UGA algebra Fall 2014 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2015 — UGA algebra Fall 2015 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2016 — UGA algebra Fall 2016 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2017 — UGA algebra Fall 2017 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2018 — UGA algebra Fall 2018 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2019 — UGA algebra Fall 2019 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2020 — UGA algebra Fall 2020 (university-exam)
+
 - [ ] SRC-UGA-ALG-FALL-2021 — UGA algebra Fall 2021 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2012 — UGA algebra Spring 2012 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2013 — UGA algebra Spring 2013 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2014 — UGA algebra Spring 2014 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2015 — UGA algebra Spring 2015 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2016 — UGA algebra Spring 2016 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2017 — UGA algebra Spring 2017 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2018 — UGA algebra Spring 2018 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2019 — UGA algebra Spring 2019 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2020 — UGA algebra Spring 2020 (university-exam)
+
 - [ ] SRC-UGA-ALG-SPRING-2021 — UGA algebra Spring 2021 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2009 — UGA complex-analysis Fall 2009 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2011 — UGA complex-analysis Fall 2011 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2015 — UGA complex-analysis Fall 2015 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2016 — UGA complex-analysis Fall 2016 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2017 — UGA complex-analysis Fall 2017 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2018 — UGA complex-analysis Fall 2018 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2019 — UGA complex-analysis Fall 2019 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2020 — UGA complex-analysis Fall 2020 (university-exam)
+
 - [ ] SRC-UGA-CA-FALL-2021 — UGA complex-analysis Fall 2021 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2009 — UGA complex-analysis Spring 2009 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2011 — UGA complex-analysis Spring 2011 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2014 — UGA complex-analysis Spring 2014 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2015 — UGA complex-analysis Spring 2015 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2017 — UGA complex-analysis Spring 2017 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2018 — UGA complex-analysis Spring 2018 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2019 — UGA complex-analysis Spring 2019 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2020 — UGA complex-analysis Spring 2020 (university-exam)
+
 - [ ] SRC-UGA-CA-SPRING-2021 — UGA complex-analysis Spring 2021 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2002 — UGA prelim Fall 2002 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2003 — UGA prelim Fall 2003 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2004 — UGA prelim Fall 2004 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2005 — UGA prelim Fall 2005 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2006 — UGA prelim Fall 2006 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2007 — UGA prelim Fall 2007 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2010 — UGA prelim Fall 2010 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2012 — UGA prelim Fall 2012 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2014 — UGA prelim Fall 2014 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2015 — UGA prelim Fall 2015 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2016 — UGA prelim Fall 2016 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-FALL-2017 — UGA prelim Fall 2017 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-SPRING-2003 — UGA prelim Spring 2003 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-SPRING-2004 — UGA prelim Spring 2004 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-SPRING-2005 — UGA prelim Spring 2005 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-SPRING-2006 — UGA prelim Spring 2006 (university-exam)
+
 - [ ] SRC-UGA-PRELIM-SPRING-2007 — UGA prelim Spring 2007 (university-exam)
+
 - [ ] SRC-UGA-RA-FALL-2014 — UGA real-analysis Fall 2014 (university-exam)
+
 - [ ] SRC-UGA-RA-FALL-2015 — UGA real-analysis Fall 2015 (university-exam)
+
 - [ ] SRC-UGA-RA-FALL-2016 — UGA real-analysis Fall 2016 (university-exam)
+
 - [ ] SRC-UGA-RA-FALL-2017 — UGA real-analysis Fall 2017 (university-exam)
+
 - [ ] SRC-UGA-RA-FALL-2018 — UGA real-analysis Fall 2018 (university-exam)
+
 - [ ] SRC-UGA-RA-FALL-2019 — UGA real-analysis Fall 2019 (university-exam)
+
 - [ ] SRC-UGA-RA-FALL-2020 — UGA real-analysis Fall 2020 (university-exam)
+
 - [ ] SRC-UGA-RA-FALL-2021 — UGA real-analysis Fall 2021 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2005 — UGA real-analysis Spring 2005 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2006 — UGA real-analysis Spring 2006 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2007 — UGA real-analysis Spring 2007 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2008 — UGA real-analysis Spring 2008 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2009 — UGA real-analysis Spring 2009 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2010 — UGA real-analysis Spring 2010 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2011 — UGA real-analysis Spring 2011 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2012 — UGA real-analysis Spring 2012 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2014 — UGA real-analysis Spring 2014 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2015 — UGA real-analysis Spring 2015 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2016 — UGA real-analysis Spring 2016 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2017 — UGA real-analysis Spring 2017 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2018 — UGA real-analysis Spring 2018 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2019 — UGA real-analysis Spring 2019 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2020 — UGA real-analysis Spring 2020 (university-exam)
+
 - [ ] SRC-UGA-RA-SPRING-2021 — UGA real-analysis Spring 2021 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2004 — UGA topology Fall 2004 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2005 — UGA topology Fall 2005 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2006 — UGA topology Fall 2006 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2007 — UGA topology Fall 2007 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2009 — UGA topology Fall 2009 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2010 — UGA topology Fall 2010 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2011 — UGA topology Fall 2011 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2012 — UGA topology Fall 2012 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2013 — UGA topology Fall 2013 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2014 — UGA topology Fall 2014 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2015 — UGA topology Fall 2015 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2016 — UGA topology Fall 2016 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2017 — UGA topology Fall 2017 (university-exam)
+
 - [ ] SRC-UGA-TOP-FALL-2018 — UGA topology Fall 2018 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2005 — UGA topology Spring 2005 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2006 — UGA topology Spring 2006 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2007 — UGA topology Spring 2007 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2008 — UGA topology Spring 2008 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2009 — UGA topology Spring 2009 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2010 — UGA topology Spring 2010 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2011 — UGA topology Spring 2011 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2012 — UGA topology Spring 2012 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2013 — UGA topology Spring 2013 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2014 — UGA topology Spring 2014 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2015 — UGA topology Spring 2015 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2016 — UGA topology Spring 2016 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2017 — UGA topology Spring 2017 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2018 — UGA topology Spring 2018 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2019 — UGA topology Spring 2019 (university-exam)
+
 - [ ] SRC-UGA-TOP-SPRING-2021 — UGA topology Spring 2021 (university-exam)
+
 - [ ] SRC-UNL-RA-SPRING-2019 — UNL real-analysis Spring 2019 (university-exam)
+
 - [ ] SRC-UNL-RA-SUMMER-2016 — UNL real-analysis Summer 2016 (university-exam)
+
 - [ ] SRC-UNL-RA-SUMMER-2018 — UNL real-analysis Summer 2018 (university-exam)

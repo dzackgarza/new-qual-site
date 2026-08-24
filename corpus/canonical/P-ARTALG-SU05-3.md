@@ -9,8 +9,11 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 (a) State the definition of a principal ideal domain.
 
-(b) Let $\mathbb{Z}$ be the ring of integers. Is $\mathbb{Z}[x]$ a principal ideal domain? Either prove that it is, or present an example showing that it is not.
+(b) Let $\mathbb{Z}$ be the ring of integers.
+Is $\mathbb{Z}[x]$ a principal ideal domain?
+Either prove that it is, or present an example showing that it is not.

@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Consider the space $X$ obtained from the cylinder $S^1 \times I$ by identifying antipodal points of the circle $S^1 \times \{0\}$, and similarly identifying antipodal points of $S^1 \times \{1\}$. Calculate the fundamental group of $X$.
+Consider the space $X$ obtained from the cylinder $S^1 \times I$ by identifying antipodal points of the circle $S^1 \times \{0\}$, and similarly identifying antipodal points of $S^1 \times \{1\}$.
+Calculate the fundamental group of $X$.

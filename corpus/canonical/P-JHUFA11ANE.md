@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 5. Give an example of a sequence of functions $\{ f _ { j } \}$ satisfying $\| f _ { j } \| _ { L ^ { 2 } ( \mathbb { R } ) } = 1$ for which $\{ f _ { j } \}$ has no convergent subsequence in $L ^ { 2 } ( \mathbb { R } )$ .

@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 This question asks you to describe the splitting field $K$ of the polynomial $x^4 - 5$ over $\mathbb{Q}$.

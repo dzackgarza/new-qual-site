@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 4. Suppose that $\left\{ f _ { n } \right\}$ is a sequence of elements of a Hilbert space X and that $f _ { n } \to f$ weakly $( \mathrm { i . e . , } ( f _ { n } , g )  ( f , g )$ for all $g \in X )$

@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Assume that $X$ is a path-connected, locally simply-connected space with fundamental group isomorphic to $\mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3$. How many path-connected covering spaces of $X$ are there, up to equivalence?
+Assume that $X$ is a path-connected, locally simply-connected space with fundamental group isomorphic to $\mathbb{Z}_2 \times \mathbb{Z}_2 \times \mathbb{Z}_3$.
+How many path-connected covering spaces of $X$ are there, up to equivalence?

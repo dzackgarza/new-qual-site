@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 5) For which $p \mathrm { ^ s }$ is the function $1 / x$ in $L ^ { p } ( 0 , \infty ) ?$

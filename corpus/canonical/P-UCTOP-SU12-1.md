@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $F_n$ be the free group of rank $n$, and let $H$ be a subgroup of $F_n$ with index $d$. Show that $H$ is free, and find its rank.
+Let $F_n$ be the free group of rank $n$, and let $H$ be a subgroup of $F_n$ with index $d$.
+Show that $H$ is free, and find its rank.

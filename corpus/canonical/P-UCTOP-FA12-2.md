@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via 90 degree rotations. Compute the homology $H_*(X; \mathbb{Z})$.
+Let $X$ be the space obtained by gluing opposite pairs of faces of a standard cube $I^3$ via 90 degree rotations.
+Compute the homology $H_*(X; \mathbb{Z})$.

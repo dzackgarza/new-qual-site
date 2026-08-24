@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Given a finite group $G$, show that there are fields $K$ and $F$ such that $K$ is Galois over $F$, and $G$ is isomorphic to the Galois group of $K$ over $F$.

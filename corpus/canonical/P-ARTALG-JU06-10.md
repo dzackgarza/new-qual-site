@@ -9,8 +9,11 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 (a) What is a principal ideal domain?
 
-(b) Consider the four rings $\mathbb{Q}[x]$, $\mathbb{Q}[x]/(x^2-2)$, $\mathbb{Q}[x]/(x^2-4)$, and $\mathbb{Q}[x,y]$. Which of these rings are principal ideal domains, and which are not? Explain.
+(b) Consider the four rings $\mathbb{Q}[x]$, $\mathbb{Q}[x]/(x^2-2)$, $\mathbb{Q}[x]/(x^2-4)$, and $\mathbb{Q}[x,y]$.
+Which of these rings are principal ideal domains, and which are not?
+Explain.

@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 8. a) Let $f _ { j } : \mathbb { R } ^ { n } \longrightarrow \mathbb { R }$ , for $j = 1 , 2 , \dots$ , be a sequence of $L ^ { 2 }$ functions.

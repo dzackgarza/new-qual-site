@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 5. Let $\begin{array} { r } { P ( z ) = z ^ { 7 } + z ^ { 3 } + \frac { 1 } { 1 6 } } \end{array}$

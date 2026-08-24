@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 3.) Recall that $f : [ 0 , 1 ] \to \mathbb { R }$ is lower semicontinuous if lim in $\operatorname { f } _ { x \to x _ { 0 } } f ( x ) \geq f ( x _ { 0 } )$ for every $x _ { 0 } \in [ 0 , 1 ]$ . Prove that if $f$ is a nonnegative lower semicontinuous function then one always has $\begin{array} { r } { S _ { + } ( f , P ) \to \int _ { 0 } ^ { 1 } } \end{array}$ f(x)dx as $| P | \to 0$ if $S _ { + } ( f , P )$ is the lower Riemann sum associated with a partition $\dot { P }$ of $[ 0 , 1 ]$ and $| P |$ is the smallest interval of the partition.

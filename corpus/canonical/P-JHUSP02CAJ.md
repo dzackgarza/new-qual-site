@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 4.) Let $f \in L ^ { 1 } ( [ 0 , 1 ] )$ . For $k \in \mathbb N$ , let $f _ { k }$ be

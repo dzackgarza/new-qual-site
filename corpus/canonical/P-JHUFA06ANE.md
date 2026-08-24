@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 5. Let X be the Banach space of continuous real-valued functions on [0, π] that vanish at 0 and $\pi ,$ equipped with the sup norm.

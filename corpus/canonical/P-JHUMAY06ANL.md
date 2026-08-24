@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 12. Let $f _ { j }$ be an orthonormal sequence in $L ^ { 2 } ( [ 0 , 1 ] )$ . Prove that

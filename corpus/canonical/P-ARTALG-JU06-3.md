@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $G$ be a finite group of order $n$ and let $p$ be the smallest prime dividing $n$. Show that any subgroup of $G$ of index $p$ is normal in $G$.
+Let $G$ be a finite group of order $n$ and let $p$ be the smallest prime dividing $n$.
+Show that any subgroup of $G$ of index $p$ is normal in $G$.

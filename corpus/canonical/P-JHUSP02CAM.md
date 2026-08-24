@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 Problem 2. Fix a real number $\alpha > 1$ . Show that the equation $z - \alpha = e ^ { - z }$ has precisely one solution in the half plane $\mathrm { R e } ( z ) > 0$ and that this solution must be real.

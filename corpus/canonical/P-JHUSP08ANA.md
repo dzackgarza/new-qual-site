@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 1) Let $E , F$ be two Lebesgue measurable subsets of R of finite measure, and let $\chi _ { E } , \chi _ { F }$ be their respective characteristic functions.

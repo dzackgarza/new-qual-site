@@ -9,9 +9,13 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $E$ be a splitting field of $g(x) \in \mathbb{Q}[x]$ over $\mathbb{Q}$. Suppose that the lattice of intermediate fields between $E$ and $\mathbb{Q}$ is a specific diamond shape. Which of the following groups could be $\text{Gal}(E/\mathbb{Q})$? Justify your answers.
+Let $E$ be a splitting field of $g(x) \in \mathbb{Q}[x]$ over $\mathbb{Q}$.
+Suppose that the lattice of intermediate fields between $E$ and $\mathbb{Q}$ is a specific diamond shape.
+Which of the following groups could be $\text{Gal}(E/\mathbb{Q})$?
+Justify your answers.
 
 (a) $\mathbb{Z}_2 \times \mathbb{Z}_2$
 

@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Suppose $M$ is a compact connected 4-manifold without boundary, and that $\pi_1(M) = 1$. Prove that $H_2(M)$ is torsion-free.
+Suppose $M$ is a compact connected 4-manifold without boundary, and that $\pi_1(M) = 1$.
+Prove that $H_2(M)$ is torsion-free.

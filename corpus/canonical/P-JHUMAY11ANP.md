@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 8. Let D denote the open unit disc, as in $\# 6$ . Let $g : D  D$ be a surjective holomorphic mapping for which $g ( 0 ) = 0$ . Suppose that $z = g ( w )$ gives a two-sheeted branched covering of the image with exactly one branch point at $w = 0$ . An example of such a function g is $g ( w ) = \bar { w ^ { 2 } }$

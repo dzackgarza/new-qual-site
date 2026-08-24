@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Use the Hurewicz theorem to calculate $\pi_3(\mathbb{RP}^3 \vee S^3)$.

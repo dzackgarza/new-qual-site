@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Prove that there is only one solution in the unit disc $\{z : |z| < 1\}$ and there are three solutions on the annulus $\{z : 1 < |z| < 2\}$ (counting multiplicities) for the equation $z^4 - 6z + 3 = 0$.

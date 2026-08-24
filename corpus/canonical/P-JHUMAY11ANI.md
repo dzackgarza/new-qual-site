@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 1. Suppose that $f _ { j } \in L ^ { 2 } ( \mathbb { R } ^ { n } ) , j = 1 , 2 , 3 , . .$ . and that $f _ { j } \to f$ in $L ^ { 2 }$ . Suppose further that there is a constant $M < \infty$ so that

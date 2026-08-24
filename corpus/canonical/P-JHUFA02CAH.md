@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 3. (20 points) Determine all entire functions f for which $| f ( z ) | \leq | z | ^ { 2 }$ for all $z \in \mathbb { C }$

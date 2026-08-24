@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 1.) Let f be a continuous function on $[ 0 , \infty )$ such that lim $_ { 1 _ { X \to \infty } } f ( x )$ exists (finitely).

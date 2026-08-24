@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 1. Suppose $f _ { n }$ is a sequence of continuous functions on [0, 1] which converges to a continuous function $f$ on [0, 1]. Does it follow that $f _ { n }$ converge uniformly?

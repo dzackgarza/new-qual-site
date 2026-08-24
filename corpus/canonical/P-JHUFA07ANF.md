@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 6) Does there exist an open dense subset of R with Lebesgue measure equal to one? Either construct an example or prove that one does not exist.

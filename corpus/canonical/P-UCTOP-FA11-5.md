@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Let $M$ be a closed oriented 4-manifold whose second homology $H_2(M; \mathbb{Z})$ has rank 1. Show that there does not exist a free action of the group $\mathbb{Z}_2$ on $M$.

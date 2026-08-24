@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Suppose that $f_j \in L^2(\mathbb{R}^n)$, $j = 1, 2, 3, \ldots$ and that $f_j \to f$ in $L^2$.

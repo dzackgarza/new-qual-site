@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Find all possible rational canonical forms for 4-by-4 matrices over the complex numbers whose characteristic polynomial is $(x^2+1)(x+1)^2$.

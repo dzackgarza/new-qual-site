@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 2.) Suppose that $f \in L ^ { 1 } ( \mathbb { R } ^ { n } )$ . Prove that for every $\varepsilon > 0$ there is a $\delta > 0$ such that if A is measurable with measure $< \delta$ then

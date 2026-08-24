@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $F$ be a field of 81 elements. For each of the following polynomials, determine the number of roots that lie in $F$: $x^{80}-1$, $x^{81}-1$, $x^{88}-1$.
+Let $F$ be a field of 81 elements.
+For each of the following polynomials, determine the number of roots that lie in $F$: $x^{80}-1$, $x^{81}-1$, $x^{88}-1$.

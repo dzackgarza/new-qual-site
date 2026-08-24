@@ -10,6 +10,7 @@ classification:
   - real-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 5.) Let $K \in C ( [ 0 , 1 ] \times [ 0 , 1 ] )$ . For $f \in C ( [ 0 , 1 ] )$ define

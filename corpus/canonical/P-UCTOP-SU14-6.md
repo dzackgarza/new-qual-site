@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Prove that $\mathbb{QP}^2 \vee S^3$ and $\mathbb{RP}^3$ are not homotopy-equivalent.

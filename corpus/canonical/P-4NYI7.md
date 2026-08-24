@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Does there exist a nonempty measurable set $E \subset \mathbb{R}$ satisfying the following two properties:

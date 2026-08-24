@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $L$ be a space which is $p$-fold covered by $S^3$, for some $p \geq 1$. Compute the second homotopy group of the one-point union $\pi_2(L \vee S^2)$.
+Let $L$ be a space which is $p$-fold covered by $S^3$, for some $p \geq 1$.
+Compute the second homotopy group of the one-point union $\pi_2(L \vee S^2)$.

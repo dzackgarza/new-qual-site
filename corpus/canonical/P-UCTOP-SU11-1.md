@@ -9,6 +9,8 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $M$ be a simply connected $n$-dimensional CW complex. Show that any map from $M$ to $\mathbb{RP}^{n+1}$ is homotopic to the constant map.
+Let $M$ be a simply connected $n$-dimensional CW complex.
+Show that any map from $M$ to $\mathbb{RP}^{n+1}$ is homotopic to the constant map.

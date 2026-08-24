@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAF
 kind: problem
-title: "6. Show that a Mobius transformation maps a straight line or circle onto a straight line or circle. ## Real Analysis Qu"
+title: "6. Show that a M obius transformation maps a straight line or circle onto a straight line or circle. ## Real Analysis Qu"
 classification:
   areas:
   - complex-analysis
@@ -10,9 +10,10 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
-6. Show that a Mobius transformation maps a straight line or circle onto a straight line or circle.
+6. Show that a M obius transformation maps a straight line or circle onto a straight line or circle.
 
 ## Real Analysis Qualifying Exam, Fall 2001
 

@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 1. Let $f : \mathbb { R } \to [ 0 , \infty )$ be a measurable function and $\varphi : [ 0 , \infty )  [ 0 , \infty )$ be a monotonic, absolutely continuous function on $[ 0 , T ]$ for every $T < \infty$ . Assume $\varphi ( 0 ) = 0$ . Prove

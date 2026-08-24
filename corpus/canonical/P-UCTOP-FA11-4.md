@@ -9,6 +9,9 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Consider the set $L$ of 3-manifolds which can be formed by gluing together the boundaries of two solid tori $S^1 \times B^2$ using a homeomorphism. Consider the function $d : L \to \mathbb{N}$ given by the total dimension of its mod-5 homology: $d(M) = \sum \dim H_i(M; \mathbb{Z}_5)$. What is the maximal value of $d$?
+Consider the set $L$ of 3-manifolds which can be formed by gluing together the boundaries of two solid tori $S^1 \times B^2$ using a homeomorphism.
+Consider the function $d : L \to \mathbb{N}$ given by the total dimension of its mod-5 homology: $d(M) = \sum \dim H_i(M; \mathbb{Z}_5)$.
+What is the maximal value of $d$?

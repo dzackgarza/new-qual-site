@@ -11,6 +11,7 @@ classification:
   - convergence
 solved: false
 relations: []
+review: draft
 ---
 
 Assume that $f_1, f_2, \ldots$ is a sequence of positive continuous functions defined on $[0,1]$ with

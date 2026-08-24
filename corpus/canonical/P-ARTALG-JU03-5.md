@@ -9,6 +9,7 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
 Find the Galois group of $x^4 + x^3 + x^2 + x + 1$

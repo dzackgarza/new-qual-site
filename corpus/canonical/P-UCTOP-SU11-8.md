@@ -9,6 +9,9 @@ classification:
   topics: []
 solved: false
 relations: []
+review: draft
 ---
 
-Let $L$ be a solid 3-dimensional lens (a flattened ball). Identify the top and bottom surfaces via vertical translation and a twist of 120 degrees. Calculate the integral homology of the resulting space.
+Let $L$ be a solid 3-dimensional lens (a flattened ball).
+Identify the top and bottom surfaces via vertical translation and a twist of 120 degrees.
+Calculate the integral homology of the resulting space.

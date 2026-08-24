@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 2. (a) (15 points) Show that there is no one-to-one holomorphic mapping of the open annulus $\{ z : 1 < | z | < 2 \}$ onto the punctured unit disc $\{ z : 0 < | z | < 1 \}$ . (HINT: consider the inverse mapping)

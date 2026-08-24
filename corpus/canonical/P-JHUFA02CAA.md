@@ -10,6 +10,7 @@ classification:
   - complex-analysis-topics
 solved: false
 relations: []
+review: draft
 ---
 
 1. Let $\psi ( x ) = x$ on $[ 0 , \frac { 1 } { 2 } ] \ , \ \psi ( x ) = 1 - x$ on $[ \textstyle { \frac { 1 } { 2 } } , 1 ]$ and extended periodically of period 1. Define $\begin{array} { r } { f ( x ) = \sum _ { n = 0 } ^ { \infty } 2 ^ { - n } \psi ( 8 ^ { n } x ) } \end{array}$
