@@ -5,7 +5,7 @@ kind: problem
 title: 'the limit $$ f ( x ) = \operatorname* { l i m } _ { n \to \i'
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Monotone Convergence
   - Interchange of Limits

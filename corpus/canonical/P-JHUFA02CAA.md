@@ -5,7 +5,7 @@ kind: problem
 title: "on on and extended periodically of period 1. Define i. Show that $f"
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Uniform Convergence
   - Continuous Functions

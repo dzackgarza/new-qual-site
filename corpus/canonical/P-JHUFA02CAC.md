@@ -5,7 +5,7 @@ kind: problem
 title: "3.i. Define equicontinuity and state the Arzela-Ascoli theorem. ii.Let be the family of real valued functions on [0,1] s"
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Equicontinuity
   - Arzela-Ascoli Theorem

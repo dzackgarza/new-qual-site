@@ -5,7 +5,7 @@ kind: problem
 title: "5.i. Find the sum of the series ii. Show that ## Complex Analysis Core Qualifying Exam, Fall 2002 Do 5 of the 6 problems"
 classification:
   areas:
-  - complex-analysis
+  - real-analysis
   topics:
   - Fourier Series
 relations: []

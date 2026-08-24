@@ -319,13 +319,15 @@ source:
     - P-JHUSP03CAC
     - P-JHUSP03CAD
     - P-JHUSP03CAE
-  - name: Complex Analysis Core Qualifying Exam, Fall 2002 (p. 50)
+  - name: Real Analysis Qualifying Exam, Fall 2002
     problems:
     - P-JHUFA02CAA
     - P-JHUFA02CAB
     - P-JHUFA02CAC
     - P-JHUFA02CAD
     - P-JHUFA02CAE
+  - name: Complex Analysis Core Qualifying Exam, Fall 2002 (p. 50)
+    problems:
     - P-JHUFA02CAF
     - P-JHUFA02CAG
     - P-JHUFA02CAH
