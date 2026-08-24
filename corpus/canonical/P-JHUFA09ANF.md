@@ -7,6 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
+  - Isolated Singularities
   - Power Series
 relations: []
 review: draft

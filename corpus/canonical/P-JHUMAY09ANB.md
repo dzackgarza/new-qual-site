@@ -5,8 +5,9 @@ kind: problem
 title: "your answer is correct."
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
+  - Rouche's Theorem
   - Argument Principle
 relations: []
 review: draft

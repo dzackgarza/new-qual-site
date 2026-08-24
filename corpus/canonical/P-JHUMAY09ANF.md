@@ -7,7 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Approximations to the Identity
+  - Convolution
 relations: []
 review: draft
 ---

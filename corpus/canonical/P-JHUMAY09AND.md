@@ -5,9 +5,10 @@ kind: problem
 title: "the Fourier transform $$ Show th"
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
-  - Fourier Analysis
+  - Contour Integration
+  - Fourier Transform
 relations: []
 review: draft
 ---

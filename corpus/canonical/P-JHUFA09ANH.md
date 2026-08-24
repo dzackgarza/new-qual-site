@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Harmonic Functions
+  - Isolated Singularities
 relations: []
 review: draft
 ---

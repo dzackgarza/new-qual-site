@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Meromorphic Functions
+  - Isolated Singularities
 relations: []
 review: draft
 ---

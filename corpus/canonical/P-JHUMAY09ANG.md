@@ -7,7 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Lp Spaces
+  - Convergence Theorems
 relations: []
 review: draft
 ---

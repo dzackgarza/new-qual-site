@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Harmonic Functions
+  - Cauchy-Riemann Equations
 relations: []
 review: draft
 ---
