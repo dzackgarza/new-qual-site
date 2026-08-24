@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - Fourier Analysis
+  - Fourier Transform
 relations: []
 review: draft
 ---

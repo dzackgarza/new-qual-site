@@ -7,7 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Weak Convergence
+  - Hilbert Spaces
 relations: []
 review: draft
 ---

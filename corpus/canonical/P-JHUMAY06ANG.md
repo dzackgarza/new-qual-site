@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUMAY06ANG
 kind: problem
-title: "7. Quickies: a) Give an example of a function that is in but not in b) Give a..."
+title: "Quickies: separating L1 and L2 on R and on (0,1)"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Lp Spaces
 relations: []
 review: draft
 ---

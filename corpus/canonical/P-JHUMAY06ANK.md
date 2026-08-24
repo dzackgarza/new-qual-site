@@ -7,7 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Weak Convergence
+  - Lp Spaces
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA05ANC
 kind: problem
-title: "be a sequence of functions in where is the unit circle We say that weakly if $\b"
+title: "Weak convergence to zero on the circle"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Weak Convergence
+  - Lp Spaces
 relations: []
 review: draft
 ---

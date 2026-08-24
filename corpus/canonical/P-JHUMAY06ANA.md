@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUMAY06ANA
 kind: problem
-title: "there is no holomorphic function such that for all"
+title: "No holomorphic logarithm of a meromorphic function with a pole"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Isolated Singularities
+  - Meromorphic Functions
 relations: []
 review: draft
 ---

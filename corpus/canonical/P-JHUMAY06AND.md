@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUMAY06AND
 kind: problem
-title: "be an increasing sequence of harmonic functions on the unit disk D such that as"
+title: "Monotone harmonic functions converging to the constant one"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Harmonic Functions
+  - Harnack's Theorem
 relations: []
 review: draft
 ---

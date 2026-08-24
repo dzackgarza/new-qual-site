@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA06ANC
 kind: problem
-title: "3. State whether each of the following two statements is true or false, and g..."
+title: "Holomorphic maps into the upper half plane and bounded harmonic functions on a slit plane"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Liouville's Theorem
+  - Harmonic Functions
 relations: []
 review: draft
 ---

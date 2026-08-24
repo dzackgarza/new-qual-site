@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA06ANE
 kind: problem
-title: "X be the Banach space of continuous real-valued functions on [0, π] that vanish"
+title: "Finite-dimensionality of trigonometric-polynomial subspaces of C[0, pi]"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Banach Spaces
+  - Compactness
 relations: []
 review: draft
 ---

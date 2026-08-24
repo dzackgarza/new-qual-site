@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUMAY06ANC
 kind: problem
-title: "all entire functions f such that whenever . Give explicit formulas for the funct"
+title: "Entire functions dominated by |z| to the 3/2 outside the unit disk"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Entire Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 ---

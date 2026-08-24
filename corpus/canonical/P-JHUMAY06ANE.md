@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUMAY06ANE
 kind: problem
-title: "H denote the upper half plane . Suppose that is holomorphic, and What is the max"
+title: "Maximal derivative of a half-plane self-map at a fixed point"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Schwarz Lemma
+  - Conformal Maps
 relations: []
 review: draft
 ---

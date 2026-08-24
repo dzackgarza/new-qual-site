@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA05ANF
 kind: problem
-title: "6. (a) Describe all the automorphisms of the upper half plane (holomorphic bi..."
+title: "Automorphisms of the right half plane"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Conformal Maps
+  - Disc Automorphisms
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA06ANB
 kind: problem
-title: "be a sequence of holomorphic functions on the unit disk D such that , where . Su"
+title: "Hurwitz theorem for uniformly convergent holomorphic sequences with one zero"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Hurwitz's Theorem
+  - Normal Families
 relations: []
 review: draft
 ---

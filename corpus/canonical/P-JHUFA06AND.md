@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA06AND
 kind: problem
-title: "the maximal possible value of"
+title: "Maximal derivative of a disk map into the upper half plane"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Schwarz Lemma
+  - Conformal Maps
 relations: []
 review: draft
 ---

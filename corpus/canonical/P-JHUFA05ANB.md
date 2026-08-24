@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA05ANB
 kind: problem
-title: ". Prove that $$"
+title: "An L1 integral identity on the line"
 classification:
   areas:
   - real-analysis
   topics:
-  - Lebesgue Integration
+  - L1 Spaces
+  - Convolution
 relations: []
 review: draft
 ---

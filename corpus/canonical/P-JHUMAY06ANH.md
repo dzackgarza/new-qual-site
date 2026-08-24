@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUMAY06ANH
 kind: problem
-title: "any function for any interval must be in for all between 1 and 2."
+title: "L1 intersect L2 sits inside every intermediate Lp"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Lp Spaces
 relations: []
 review: draft
 ---

@@ -7,7 +7,7 @@ classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Banach Spaces
 relations: []
 review: draft
 ---

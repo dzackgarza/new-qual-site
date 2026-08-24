@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUMAY06ANL
 kind: problem
-title: "$$ converges to zero a.e."
+title: "Cesaro means of an orthonormal sequence converge to zero a.e."
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Hilbert Spaces
+  - Convergence Theorems
 relations: []
 review: draft
 ---

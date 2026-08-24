@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA06ANG
 kind: problem
-title: "that is a sequence of functions on [0, 1] with $f _ { j }L ^ { 2 } ( [ 0 , 1 ] )"
+title: "L2 functions with integrable L1 norm converge weakly to zero"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Weak Convergence
+  - Lp Spaces
 relations: []
 review: draft
 ---

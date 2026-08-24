@@ -5,9 +5,9 @@ kind: problem
 title: '7. How many zeros does the polynomial $\{ | z | = 1 \}\{ | z | = 2 \}$ . Just...'
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
-  - Argument Principle
+  - Rouche's Theorem
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA05ANE
 kind: problem
-title: "$\varepsilonR ,R ,\varepsilon ,$ and finally t"
+title: "A contour-integral evaluation"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---

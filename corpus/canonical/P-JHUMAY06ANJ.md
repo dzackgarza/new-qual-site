@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUMAY06ANJ
 kind: problem
-title: "that is in . Prove that $$"
+title: "Translation continuity of L1 functions"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - L1 Spaces
+  - Approximations to the Identity
 relations: []
 review: draft
 ---

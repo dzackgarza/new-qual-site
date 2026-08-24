@@ -7,7 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Convergence Theorems
+  - Borel-Cantelli
 relations: []
 review: draft
 ---

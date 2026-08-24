@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA06ANA
 kind: problem
-title: "the integral $$"
+title: "The integral of 1/(x^4+4) by residues"
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---

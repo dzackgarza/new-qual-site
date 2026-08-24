@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUMAY06ANF
 kind: problem
-title: "all the poles of the function $$ Determine the residue of f at each pole. Part I"
+title: "Poles and residues of e^{pi z} over (z^2+1)^2"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Residues
 relations: []
 review: draft
 ---
