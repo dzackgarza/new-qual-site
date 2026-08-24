@@ -193,8 +193,7 @@ The UGA exams listed above are the imported sittings.
 
 ## Contributed artifacts
 
-
-[[SRC-RA-ART-GHJOJZ]]
+[[SRC-JHU-ANALYSIS-EXAMS|JHU Years of Analysis Exams (undated contributed problems within)]]
 
 [[SRC-RA-WORKSHOP]]
 
