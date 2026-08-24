@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS4.PR-1
 kind: exercise
-title: "Suppose  as  , for some"
+title: "Exponential decay of the Fourier transform gives holomorphy"
 classification:
   areas:
   - complex-analysis

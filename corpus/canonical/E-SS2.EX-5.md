@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-5
 kind: exercise
-title: "Suppose  is continuously complex diferentiable on  and  is a triangle whose inte"
+title: "Cauchy's theorem via Green's theorem for C1 functions"
 classification:
   areas:
   - complex-analysis

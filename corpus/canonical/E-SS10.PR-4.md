@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.PR-4
 kind: exercise
-title: "Let  denote the group of matrices given in the previous problem"
+title: "Invariant bounded holomorphic functions on the upper half plane are constant"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS9.EX-2
 kind: exercise
-title: "Suppose that  and  are the zeros and poles, respectiv"
+title: "Zeros minus poles of an elliptic function lands in the period lattice"
 classification:
   areas:
   - complex-analysis

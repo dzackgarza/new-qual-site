@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS6.EX-11
 kind: exercise
-title: "Let  where"
+title: "The Fourier transform of e^{az} e^{-e^z} is the Gamma function"
 classification:
   areas:
   - complex-analysis

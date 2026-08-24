@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-6
 kind: exercise
-title: "Let  be an open subset of C and let  be a triangle whose interior is also contai"
+title: "Cauchy's theorem for a triangle with one bounded interior singularity"
 classification:
   areas:
   - complex-analysis

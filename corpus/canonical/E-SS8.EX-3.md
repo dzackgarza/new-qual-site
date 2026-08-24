@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-3
 kind: exercise
-title: "Suppose  and V are conformally equivalent"
+title: "Simple connectedness is a conformal invariant"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS5.EX-11
 kind: exercise
-title: "Show that if f is an entire function of finite order that omits two values, then"
+title: "Picard's little theorem for entire functions of finite order"
 classification:
   areas:
   - complex-analysis

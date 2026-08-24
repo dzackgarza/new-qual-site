@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.PR-1
 kind: exercise
-title: "Let  be a complex-valued  function defined in the neighborhood of a point"
+title: "Isogonality and isotropy at a point"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-7
 kind: exercise
-title: "Suppose  is holomorphic"
+title: "The image diameter bounds twice the derivative at the center"
 classification:
   areas:
   - complex-analysis

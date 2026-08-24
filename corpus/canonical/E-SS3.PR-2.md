@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.PR-2
 kind: exercise
-title: "Let u be a harmonic function in the unit disc that is continuous on its closure"
+title: "Poisson's integral formula for the disk"
 classification:
   areas:
   - complex-analysis

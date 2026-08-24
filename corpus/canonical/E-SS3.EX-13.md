@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS3.EX-13
 kind: exercise
-title: "Suppose  is holomorphic in a punctured disc"
+title: "A mild pole bound forces a removable singularity"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS9.EX-6
 kind: exercise
-title: "Prove that  is a quadratic polynomial in"
+title: "The differential equation for the Weierstrass p-function"
 classification:
   areas:
   - complex-analysis

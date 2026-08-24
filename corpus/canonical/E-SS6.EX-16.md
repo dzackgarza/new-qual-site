@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS6.EX-16
 kind: exercise
-title: "Use the previous exercise to give another proof that  is continuable in the comp"
+title: "Another proof of the analytic continuation of the zeta function"
 classification:
   areas:
   - complex-analysis

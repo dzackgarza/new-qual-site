@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS7.EX-4
 kind: exercise
-title: "Suppose  is a sequence of complex numbers such that"
+title: "Dirichlet L-series for periodic coefficients"
 classification:
   areas:
   - complex-analysis

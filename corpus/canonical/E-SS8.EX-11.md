@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-11
 kind: exercise
-title: "Show that if  is holomorphic, with  for some  then"
+title: "Cauchy inequalities and maximum modulus applications"
 classification:
   areas:
   - complex-analysis

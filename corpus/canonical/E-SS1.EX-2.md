@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-2
 kind: exercise
-title: "Let  denote the usual inner product in"
+title: "The real and Hermitian inner products on R2 and C"
 classification:
   areas:
   - complex-analysis

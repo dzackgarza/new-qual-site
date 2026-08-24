@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS7.EX-1
 kind: exercise
-title: "Suppose that  is a sequence of real numbers such that the partial sums"
+title: "Bounded partial sums give convergence of the Dirichlet series for Re(s) > 0"
 classification:
   areas:
   - complex-analysis

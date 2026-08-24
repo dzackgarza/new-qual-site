@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-11
 kind: exercise
-title: "Use Exercise 10 to prove that if  is holomorphic in the open set  then the real "
+title: "Real and imaginary parts of holomorphic functions are harmonic"
 classification:
   areas:
   - complex-analysis

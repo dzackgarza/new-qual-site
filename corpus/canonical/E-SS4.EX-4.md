@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS4.EX-4
 kind: exercise
-title: "Suppose  is a polynomial of degree  with distinct roots, none lying on the real "
+title: "The Fourier transform of a reciprocal polynomial via residues"
 classification:
   areas:
   - complex-analysis

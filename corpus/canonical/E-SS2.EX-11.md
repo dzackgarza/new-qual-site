@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-11
 kind: exercise
-title: "Let f be a holomorphic function on the disc  centered at the origin and of radiu"
+title: "Cauchy estimates on a smaller disk"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS10.PR-2
 kind: exercise
-title: "Let  denote the set of  matrices with integer entries an"
+title: "The modular group SL2(Z)"
 classification:
   areas:
   - complex-analysis

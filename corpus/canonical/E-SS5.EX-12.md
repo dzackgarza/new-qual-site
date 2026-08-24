@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS5.EX-12
 kind: exercise
-title: "Suppose f is entire and never vanishes, and that none of the higher derivatives "
+title: "Entire functions with no vanishing derivative are exponentials"
 classification:
   areas:
   - complex-analysis

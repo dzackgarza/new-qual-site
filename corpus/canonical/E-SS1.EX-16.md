@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-16
 kind: exercise
-title: "Determine the radius of convergence of the series  whe"
+title: "Radii of convergence for (log n)-squared and factorial coefficients"
 classification:
   areas:
   - complex-analysis

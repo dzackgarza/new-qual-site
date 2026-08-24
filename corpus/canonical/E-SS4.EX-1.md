@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS4.EX-1
 kind: exercise
-title: "Suppose f is continuous and of moderate decrease, and  for all  Sh"
+title: "Vanishing Fourier transform forces f = 0 (uniqueness)"
 classification:
   areas:
   - complex-analysis

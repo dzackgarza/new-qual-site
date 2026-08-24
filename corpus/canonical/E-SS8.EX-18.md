@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS8.EX-18
 kind: exercise
-title: "Suppose that  is a simply connected domain that is bounded by a piecewisesmooth "
+title: "The conformal map of the disk extends to the boundary (Caratheodory)"
 classification:
   areas:
   - complex-analysis

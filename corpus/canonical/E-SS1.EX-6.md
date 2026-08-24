@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-6
 kind: exercise
-title: "Let Ω be an open set in C and"
+title: "Connected components as equivalence classes"
 classification:
   areas:
   - complex-analysis

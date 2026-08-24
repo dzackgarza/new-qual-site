@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS6.EX-17
 kind: exercise
-title: "Let f be an indefinitely diferentiable function on R that has compact support, o"
+title: "The Fourier transform of a Schwartz function"
 classification:
   areas:
   - complex-analysis

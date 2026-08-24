@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-18
 kind: exercise
-title: "Let f be a power series centered at the origin"
+title: "A power series re-expands around every point of its disc of convergence"
 classification:
   areas:
   - complex-analysis

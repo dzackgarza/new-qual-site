@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-14
 kind: exercise
-title: "Suppose that f is holomorphic in an open set containing the closed unit disc, ex"
+title: "A pole on the circle of convergence and its coefficient growth"
 classification:
   areas:
   - complex-analysis

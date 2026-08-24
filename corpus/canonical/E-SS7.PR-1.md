@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS7.PR-1
 kind: exercise
-title: "Let  , where  for all"
+title: "Dirichlet series with bounded coefficients converge in a half-plane"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS2.EX-9
 kind: exercise
-title: "Let Ω be a bounded open subset of  and  a holomorphic function"
+title: "A holomorphic self-map with a fixed point of derivative one"
 classification:
   areas:
   - complex-analysis

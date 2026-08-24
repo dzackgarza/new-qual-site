@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SS1.EX-8
 kind: exercise
-title: "Suppose U and  are open sets in the complex plane"
+title: "The chain rule for the dz and dzbz derivatives"
 classification:
   areas:
   - complex-analysis
