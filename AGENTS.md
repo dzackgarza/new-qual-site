@@ -74,6 +74,22 @@ classifying a card under the right topics, writing a solution, relating two
 cards that depend on each other. A gap in a field is curation work, not a
 tooling problem.
 
+## Work one item at a time
+
+Never create or edit authored data in batches. This rule applies especially to
+problem cards. It also applies to titles, statements, classifications,
+relations, solutions, hints, and remarks.
+
+First, write a straightforward checklist that names each item. Then process the
+checklist in order, one item at a time. Read the source mathematics and the
+relevant existing cards before each change. Make an independent curation
+decision for that item. Verify the completed item before starting the next one.
+
+Do not use scripts, loops, templates, bulk edits, or generators to produce
+authored data. Never derive a title, create a card, fill a field, or change
+mathematical content automatically. Each result must come from intelligent
+reading and mathematical judgment.
+
 ## Public audience and remarks
 
 The audience for this project is graduate students studying mathematics. The
