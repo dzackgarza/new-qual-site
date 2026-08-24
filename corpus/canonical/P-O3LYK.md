@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-O3LYK
 kind: problem
-title: "if is a holomorphic function such that is nowhere zero on and is a ho"
+title: "Uniform approximation on the boundary preserves the zero count"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Rouche's Theorem
 relations: []
 review: draft
 ---

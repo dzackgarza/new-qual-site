@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-GKGSD
 kind: problem
-title: "the function has a single-valued branch and is also one-to-one."
+title: "One-to-one analytic maps of the disk onto a domain"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Conformal Maps
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MW6OS
 kind: problem
-title: "H be an infinite dimensional Hilbert space. Determine if the following statement"
+title: "Norm-one sequences in an infinite-dimensional Hilbert space: subsequences"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Hilbert Spaces
+  - Weak Convergence
 relations: []
 review: draft
 ---

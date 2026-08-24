@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-5CQNK
 kind: problem
-title: "2. Determine whether the following statements are true and false. If true, pr..."
+title: "Monotone and absolutely continuous functions: two true-or-false statements"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Monotone Functions
+  - Absolute Continuity
 relations: []
 review: draft
 ---

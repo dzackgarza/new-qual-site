@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JKYJU
 kind: problem
-title: "there exists an integer N such that"
+title: "Holomorphic functions near the boundary of a disk containing region"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---
