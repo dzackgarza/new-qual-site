@@ -21,10 +21,10 @@ source:
   - P-TOPF18B
   - P-TOPF18C
   - P-TOPF18D
-  - P-TOPF18E
+  - P-TOPF09E
   - P-TOPF18F
-  - P-TOPF18G
-  - P-TOPF18H
+  - P-TOPF09G
+  - P-TOPF09H
   date:
     kind: academic-term
     term: fall

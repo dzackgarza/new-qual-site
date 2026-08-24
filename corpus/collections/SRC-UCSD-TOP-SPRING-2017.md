@@ -18,11 +18,11 @@ source:
   area: topology
   problems:
   - P-TOPS17A
-  - P-TOPS17B
+  - P-TOPSU15A
   - P-TOPS17C
   - P-TOPS17D
-  - P-TOPS17E
-  - P-TOPS17F
+  - P-TOPF03F
+  - P-TOPF07H
   - P-TOPS17G
   - P-TOPS17H
   date:

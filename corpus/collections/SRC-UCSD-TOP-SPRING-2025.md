@@ -22,7 +22,7 @@ source:
   - P-TOPS25C
   - P-TOPS25D
   - P-TOPS25E
-  - P-TOPS25F
+  - P-TOPF09E
   - P-TOPS25G
   - P-TOPS25H
   date:
