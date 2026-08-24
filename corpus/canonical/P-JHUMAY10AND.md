@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Harmonic Functions
 relations: []
 review: draft
 ---

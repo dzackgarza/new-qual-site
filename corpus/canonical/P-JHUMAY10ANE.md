@@ -7,7 +7,8 @@ classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Fourier Transform
+  - Lp Spaces
 relations: []
 review: draft
 ---

@@ -13,7 +13,6 @@ source:
   area: complex-analysis
   date:
     kind: unknown
-  institution: uga
   problems:
   - P-MMAQ-COOIDCL56X
   source_kind: compilation

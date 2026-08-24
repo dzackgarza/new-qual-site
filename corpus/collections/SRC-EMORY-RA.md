@@ -13,7 +13,6 @@ source:
   area: real-analysis
   date:
     kind: unknown
-  institution: emory
   problems:
   - P-AYDDA
   - P-MMAQ-WBI4DD2OZI

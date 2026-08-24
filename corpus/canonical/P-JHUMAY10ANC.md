@@ -5,9 +5,10 @@ kind: problem
 title: 'denote the space of holomorphic functions on the unit disk D and let $K \'
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
   - Bergman Space
+  - Hilbert Spaces
 relations: []
 review: draft
 ---

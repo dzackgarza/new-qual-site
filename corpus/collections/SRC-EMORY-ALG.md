@@ -13,7 +13,6 @@ source:
   area: algebra
   date:
     kind: unknown
-  institution: emory
   problems:
   - P-MMAQ-M66PYTIML7
   - P-MMAQ-FSI2OIIHX5

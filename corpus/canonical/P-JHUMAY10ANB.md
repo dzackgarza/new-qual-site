@@ -5,9 +5,10 @@ kind: problem
 title: 'all possible values of $\mathbb { C } \setminus \{ 1 , i \}$ . (A simple closed'
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
-  - Residue Formula
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---
