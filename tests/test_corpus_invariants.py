@@ -14,6 +14,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from qualc.diagnostics import DiagnosticCode
 from qualc.index import load_vocabularies, validate
 from qualc.model import CollectionCard, ParsedCard, ProblemCard
 
