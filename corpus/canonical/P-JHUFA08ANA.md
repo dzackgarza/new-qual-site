@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA08ANA
 kind: problem
-title: "1) (15 points) Consider the mapping given by Let be the inverse image of j iterates of F applied to a measurable subset"
+title: "Iteration of s -> s^2 on [0,1]: pushforward measures and their weak limit"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Measure Theory
+  - Weak Convergence
 relations: []
 review: draft
 ---

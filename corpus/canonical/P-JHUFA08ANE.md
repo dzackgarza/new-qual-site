@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA08ANE
 kind: problem
-title: "5) (10 points) How many solutions does the equation have in the unit disk Justify your answer"
+title: "Counting solutions of e^z = 3z^7 in the unit disk"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Rouche's Theorem
 relations: []
 review: draft
 ---

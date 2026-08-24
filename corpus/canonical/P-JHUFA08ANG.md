@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA08ANG
 kind: problem
-title: "7) (10 points) Let be the unit disk and a bounded, simply connected domain"
+title: "Holomorphic bijections onto a simply connected domain agreeing at 0"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Riemann Mapping Theorem
+  - Disc Automorphisms
 relations: []
 review: draft
 ---

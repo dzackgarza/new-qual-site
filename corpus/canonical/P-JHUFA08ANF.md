@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA08ANF
 kind: problem
-title: "6) (10 points) Let be an entire function"
+title: "Entire functions of polynomial growth are polynomials"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Entire Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 ---

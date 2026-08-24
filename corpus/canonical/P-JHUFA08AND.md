@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA08AND
 kind: problem
-title: "4) (10 points) Use residues to verify that"
+title: "The integral of log x over (x^2+4)^2 by residues"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA08ANC
 kind: problem
-title: "3) (10 points) Is the Banach space of bounded complex sequences with the supremum norm separable"
+title: "Separability of the Banach space l-infinity"
 classification:
   areas:
   - real-analysis
   topics:
-  - Functional Analysis
+  - Banach Spaces
+  - Separability
 relations: []
 review: draft
 ---

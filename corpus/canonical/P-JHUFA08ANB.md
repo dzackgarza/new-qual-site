@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA08ANB
 kind: problem
-title: "2) (10 points) Let and be σ-finite measure spaces and let be a measurable function with respect to the product σ-algebra"
+title: "Integral operators on Lp via Schur-type bounds"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Integral Operators
+  - Lp Spaces
 relations: []
 review: draft
 ---
