@@ -17,7 +17,6 @@ source:
   area: complex-analysis
   problems:
   - P-TKF72
-  - P-4BJMK
   - P-3KOGW
   - P-WASE4
   - P-8CA34
