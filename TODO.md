@@ -133,6 +133,15 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 - [ ] Record `not yet attachable` when no valid owner is known.
 
+Not yet attachable (no valid owner known; revisit when the sitting is identified):
+
+- P-ULNGG, P-VAZ7S — reconstructed from solutions-only documents; the
+  underlying sitting is not identified. P-ULNGG's solution appears in
+  Neil_Spring_2018_Solutions.pdf, but a solution writeup is not
+  provenance.
+- P-TEEXE, P-UHFLP — vault-migrated real-analysis problems; no sitting
+  or source document identified.
+
 - [ ] Repeat until every orphan has a source-based disposition.
 
 ### Resolve duplicate-body candidates

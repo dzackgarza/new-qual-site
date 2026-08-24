@@ -134,8 +134,6 @@ source:
     - P-4E6U3
     - P-XVHFQ
     - P-XCE4G
-    - P-ULNGG
-    - P-VAZ7S
   - name: 'Day 9: UNL Math 825/826, January 23, 2019'
     problems:
     - SRC-UNL-RA-SPRING-2019
