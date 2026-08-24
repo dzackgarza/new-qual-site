@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP02CAE
 kind: problem
-title: "the coe cients for"
+title: "Laurent series expansions"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Laurent Series
 relations: []
 review: draft
 ---

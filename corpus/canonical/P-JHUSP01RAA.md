@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP01RAA
 kind: problem
-title: "1.) Suppose that has R φdx = 1"
+title: "Mollifier convolutions converge in Lp but not in L-infinity"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Approximations to the Identity
+  - Convolution
 relations: []
 review: draft
 ---

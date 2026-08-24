@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Argument Principle
+  - Maximum Modulus Principle
+  - Zeros of Holomorphic Functions
 relations: []
 review: draft
 ---

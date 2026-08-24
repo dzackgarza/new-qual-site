@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP02CAC
 kind: problem
-title: "every simply connected region in the extended complex plane is biholomorphic equ"
+title: "Classification of simply connected regions up to biholomorphism"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Riemann Mapping Theorem
+  - Conformal Maps
 relations: []
 review: draft
 ---

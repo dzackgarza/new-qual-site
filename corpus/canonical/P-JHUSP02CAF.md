@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP02CAF
 kind: problem
-title: "a M obius transformation maps a straight line or circle onto a straight line or"
+title: "Mobius transformations carry lines and circles to lines and circles"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Fractional Linear Transformations
 relations: []
 review: draft
 ---

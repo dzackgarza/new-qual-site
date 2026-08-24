@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Montel's Theorem
+  - Normal Families
+  - Identity Theorem
 relations: []
 review: draft
 ---

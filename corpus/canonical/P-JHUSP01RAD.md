@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP01RAD
 kind: problem
-title: "4.) For which values of α and does the following inequality hold"
+title: "Interpolation inequality between the L 4/3, L2, and L4 norms"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Lp Spaces
 relations: []
 review: draft
 ---

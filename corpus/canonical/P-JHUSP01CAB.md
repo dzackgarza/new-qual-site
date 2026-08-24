@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Argument Principle
+  - Rouche's Theorem
 relations: []
 review: draft
 ---

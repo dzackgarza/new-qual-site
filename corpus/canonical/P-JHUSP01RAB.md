@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP01RAB
 kind: problem
-title: "2.) Suppose that"
+title: "Absolute continuity of the Lebesgue integral"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Absolute Continuity
+  - Measure Theory
 relations: []
 review: draft
 ---

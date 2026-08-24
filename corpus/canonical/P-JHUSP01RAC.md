@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP01RAC
 kind: problem
-title: "3.) Recall that is lower semicontinuous if lim in for every"
+title: "Lower semicontinuous functions and lower Riemann sums"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Lebesgue Integration
+  - Lower Semicontinuity
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP02CAB
 kind: problem
-title: "the integral $a > 1$"
+title: "A contour-integral evaluation"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---

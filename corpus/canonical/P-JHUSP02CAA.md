@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP02CAA
 kind: problem
-title: "is a constant."
+title: "Entire functions whose image omits a ray"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Entire Functions
+  - Open Mapping Theorem
 relations: []
 review: draft
 ---

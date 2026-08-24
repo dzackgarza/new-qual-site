@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - Polynomials
+  - Gauss-Lucas Theorem
+  - Zeros of Polynomials
 relations: []
 review: draft
 ---

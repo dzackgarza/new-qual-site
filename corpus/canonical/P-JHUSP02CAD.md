@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP02CAD
 kind: problem
-title: "$$ for some real ^."
+title: "Holomorphic self-maps of the unit disk"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Schwarz Lemma
 relations: []
 review: draft
 ---

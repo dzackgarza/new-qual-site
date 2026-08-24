@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP01RAE
 kind: problem
-title: "5.) Let . For define Prove that . Moreover, prove that is precompact in . Here, we are using the sup-norm on and Ω being"
+title: "Integral operators with continuous kernel map the unit ball of C[0,1] to a precompact set"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Compact Operators
+  - Integral Operators
 relations: []
 review: draft
 ---
