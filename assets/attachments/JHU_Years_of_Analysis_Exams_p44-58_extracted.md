@@ -16,7 +16,9 @@ $$
 \mathbb { R } ^ { + } = \{ x \in \mathbb { R } : x > 0 \}
 $$
 
-Do all 8 problems. Show all work. In each solution, state which theorems from 110.605 and 110.607 you are applying and verify that the hypotheses are satisfied.
+Do all 8 problems.
+Show all work.
+In each solution, state which theorems from 110.605 and 110.607 you are applying and verify that the hypotheses are satisfied.
 
 () Let $f ( x ) = e ^ { - \lvert x \rvert } \mathrm { ~ f o r ~ } x \in \mathbb { R } .$
 
@@ -42,13 +44,16 @@ $$
 
 (4) Let $\{ e _ { n } \}$ be an orthonormal basis for a Hilbert space $H$
 
-(a) Show that $e _ { n } \to 0$ weakly. (Explain what weak convergence means.)
+(a) Show that $e _ { n } \to 0$ weakly.
+(Explain what weak convergence means.)
 
-(b) Show that $e _ { n }$ does not tend to zero strongly. (Explain what strong convergence means.)
+(b) Show that $e _ { n }$ does not tend to zero strongly.
+(Explain what strong convergence means.)
 
 (c) Let $\begin{array} { r } { v _ { n } = \frac { 1 } { n } \sum _ { j = 1 } ^ { n } e _ { j } } \end{array}$ . Show that $v _ { n } \to 0$ strongly.
 
-(5) Do there exist functions $f \in { \mathcal { C } } _ { c } ^ { \infty } ( \mathbb { R } )$ such that f is not identically zero and ${ \widehat { f } } \in { \mathcal { C } } _ { c } ^ { \infty } ( \mathbb { R } ) ?$ If $\mathrm { s o } ,$ find one. If not, prove that none exist.
+(5) Do there exist functions $f \in { \mathcal { C } } _ { c } ^ { \infty } ( \mathbb { R } )$ such that f is not identically zero and ${ \widehat { f } } \in { \mathcal { C } } _ { c } ^ { \infty } ( \mathbb { R } ) ?$ If $\mathrm { s o } ,$ find one.
+If not, prove that none exist.
 
 $$
 { \widehat { f } } ( \xi )
@@ -74,13 +79,17 @@ onto the unit disk D in C with $f ( 1 + i ) = 0 .$
 
 (8) Let U be an open set in C containing the closed unit disk ${ \overline { { D } } } .$ Suppose f is a meromorphic function on U such that $f ( \partial D ) \subset \mathbb { R } ^ { + }$ . (In particular, f has no zeros or poles on ∂D.) Show that f has the same number of zeros as poles in $D$ (counting multiplicities).
 
-Directions: This is a closed book exam. You have two and a half hours to do all seven problems. $\# 7$ is worth 10 points; the others are worth 20 points each.
+Directions: This is a closed book exam.
+You have two and a half hours to do all seven problems.
+$\# 7$ is worth 10 points; the others are worth 20 points each.
 
-.a)Let $C ( [ 0 , 1 ] )$ denote the space of continuous functions on $[ 0 , 1 ]$ , endowed with the $^ { 6 6 } \mathrm { { s u p } ^ { , \dag } }$ norm. Show that $C ( [ 0 , 1 ] )$ is a Banach space.
+.a)Let $C ( [ 0 , 1 ] )$ denote the space of continuous functions on $[ 0 , 1 ]$ , endowed with the $^ { 6 6 } \mathrm { { s u p } ^ { , \dag } }$ norm.
+Show that $C ( [ 0 , 1 ] )$ is a Banach space.
 
 Let $B _ { p } = L ^ { p } ( [ 0 , 1 ] )$ , with $1 < p < \infty$ . Define weak and strong convergence in $B _ { p }$ . Then, show that the sequence $f _ { n } ( x ) =$ sin nπx converges weakly to 0, but not strongly to 0, in $B _ { 2 }$
 
-2. a) Let f be integrable over a set A and suppose $A = \cup _ { n = 1 } ^ { \infty } A _ { n }$ , where the $A _ { n }$ are pairwise disjoint. Show that
+2. a) Let f be integrable over a set A and suppose $A = \cup _ { n = 1 } ^ { \infty } A _ { n }$ , where the $A _ { n }$ are pairwise disjoint.
+   Show that
 
 $$
 \int _ { A } f \ = \ \sum _ { n = 1 } ^ { \infty } \int _ { A _ { n } } f
@@ -100,7 +109,8 @@ $$
 
 is uniformly continuous and ${ \widehat { f } } ( \xi ) \to 0 { \mathrm { ~ a s ~ } } | \xi | \to \infty$
 
-4. Show that $f ( x ) = { \frac { \cos x } { 1 + x ^ { 2 } } }$ is an $L ^ { 1 }$ function on the real line (with respect to Lebesgue measure). Then evaluate
+4. Show that $f ( x ) = { \frac { \cos x } { 1 + x ^ { 2 } } }$ is an $L ^ { 1 }$ function on the real line (with respect to Lebesgue measure).
+   Then evaluate
 
 $$
 \int _ { 0 } ^ { \infty } { \frac { \cos x \ d x } { 1 + x ^ { 2 } } } .
@@ -110,13 +120,16 @@ $$
 
 6. Let $f$ be an entire function with $| f ( z ) | \leq 3 \log | z |$ when $| z | > 2$ Either verify that f must be constant, or give a counterexample.
 
-7. Let $\gamma$ denote the curve $| z - 1 | = 2$ , oriented counterclockwise. Evaluate
+7. Let $\gamma$ denote the curve $| z - 1 | = 2$ , oriented counterclockwise.
+   Evaluate
 
 $$
 \int _ { \gamma } { \frac { e ^ { z } d z } { z ^ { 3 } } } .
 $$
 
-Instructions: Do all problems. Show all details in your solutions. Unless statcd otherwise, you mnay cite any of the theorems mentioncd in the syllabus.
+Instructions: Do all problems.
+Show all details in your solutions.
+Unless statcd otherwise, you mnay cite any of the theorems mentioncd in the syllabus.
 
 1. Consider the sequence of functions $g _ { n } ( x ) = [ \sin ( n x ) ] ^ { 2 }$ on $[ 0 , 2 \pi ]$ . Define each of the following notions of convergence and determine whether the sequcnce converges in that sense; if so, determinc the limit:
 
@@ -126,7 +139,8 @@ b) Converges strongly in $L ^ { 1 }$
 
 c) Converges weakly in $L ^ { 1 }$
 
-2. Consider the set of positive continuous periodic functions $f$ on $[ 0 , 2 \pi ]$ satisfying $\frac { 1 } { 2 \pi } \int _ { 0 } ^ { 2 \pi } f d \theta = 1$ . What is the largest possible value of $\exp \left( { \frac { 1 } { 2 \pi } } \int _ { 0 } ^ { 2 \pi } \log f d \theta \right)$ for such functions? Prove that your answer is correct.
+2. Consider the set of positive continuous periodic functions $f$ on $[ 0 , 2 \pi ]$ satisfying $\frac { 1 } { 2 \pi } \int _ { 0 } ^ { 2 \pi } f d \theta = 1$ . What is the largest possible value of $\exp \left( { \frac { 1 } { 2 \pi } } \int _ { 0 } ^ { 2 \pi } \log f d \theta \right)$ for such functions?
+   Prove that your answer is correct.
 
 3. Let $\alpha > 1 / 2$ and consider $f _ { \alpha } ( x ) = \int _ { \mathbb { R } } ( 1 + \xi ^ { 2 } ) ^ { - \alpha } e ^ { 2 \pi i x \xi } d \xi .$
 
@@ -138,7 +152,9 @@ b) Without appealing to thc properties of the Fourier transform, show that i) f�
 
 4. In problem $\# 3$ , take $\alpha = 1$ . Calculate $f _ { 1 } ( x )$ , as defined in $\# 3$ , by the method of residues.
 
-5.a)Let $f ( z )$ be complex analytic in the disc $| z | < \pi$ . Assume that the only zero of $f$ in the closed unit disc $\overline { { D } } = \{ z : | z | \leq 1 \}$ is a simple zero at the origin. Lct C be the unit circle, oriented counterclockwise. Evaluate
+5.a)Let $f ( z )$ be complex analytic in the disc $| z | < \pi$ . Assume that the only zero of $f$ in the closed unit disc $\overline { { D } } = \{ z : | z | \leq 1 \}$ is a simple zero at the origin.
+Lct C be the unit circle, oriented counterclockwise.
+Evaluate
 
 $$
 \int _ { C } { \frac { d z } { f ( z ) } } ,
@@ -146,17 +162,20 @@ $$
 
 in the sense that no integration symbols should appear in the answer.
 
-$| \ u _ { ) } \}$ Lct $f$ be as in part $\mathrm { \Pi ^ { \ a } } )$ , except assume that $f$ has a 2nd-order (i.e., double) zero at the origin. Verify or givc a counterexample:
+$| \ u _ { ) } \}$ Lct $f$ be as in part $\mathrm { \Pi ^ { \ a } } )$ , except assume that $f$ has a 2nd-order (i.e., double) zero at the origin.
+Verify or givc a counterexample:
 
 $$
 \mathrm { A s s c r t i o n : } \quad \int _ { C } { \frac { d z } { f ( z ) } } = 0 .
 $$
 
-6. Let $f ( z )$ bc holomorphic in an open sct containing the closed unit disc $\overrightharpoon { D }$ Suppose that $| f ( z ) | < 1$ for all z on the unit circle. Show that there is exactly one point $z \in D$ (the intcrior of $\overline { { D } } )$ for which $f ( z ) = z$
+6. Let $f ( z )$ bc holomorphic in an open sct containing the closed unit disc $\overrightharpoon { D }$ Suppose that $| f ( z ) | < 1$ for all z on the unit circle.
+   Show that there is exactly one point $z \in D$ (the intcrior of $\overline { { D } } )$ for which $f ( z ) = z$
 
 7. Determinc a one-to-one complex analytic mapping $f .$ other than $f ( z ) = z$ that takes $D$ (notation as above) onto itself and satisfics $\begin{array} { r } { f ( \frac { 1 } { 3 } ) = \frac { 1 } { 3 } } \end{array}$ •
 
-Directions: This is a closed book exam. You have two hours to do all six of the (equally weighted) problems.
+Directions: This is a closed book exam.
+You have two hours to do all six of the (equally weighted) problems.
 
 Question 1. Suppose that $f \in L ^ { 1 } ( \mathbf { R } )$ . Prove that given $\epsilon > 0$ , there exists $\delta > 0$ so that $\int _ { A } | f | < \epsilon$ for every measurable set A with $| A | < \delta$ ,
 
@@ -192,9 +211,12 @@ Question 6. Suppose that $u > 0$ is a positive harmonic function on the puncture
 
 ## SPRING 2003 COMPLEX ANALYSIS QUALIFYING EXAM
 
-Please attempt all the problems and show all your work. In the following, "holomorphic" is synonymous with "analytic." Also, $\Delta$ will denote the open unit disk in $\mathbb { C }$
+Please attempt all the problems and show all your work.
+In the following, "holomorphic" is synonymous with "analytic."
+Also, $\Delta$ will denote the open unit disk in $\mathbb { C }$
 
-(1) (a) Let $f : \mathbb { C } \to \mathbb { C }$ be meromorphic with a pole at infinity. Show that $f$ must be a rational function.
+(1) (a) Let $f : \mathbb { C } \to \mathbb { C }$ be meromorphic with a pole at infinity.
+Show that $f$ must be a rational function.
 
 (b) Use the above to prove the following: if $f : \Delta  \mathbb { C }$ is holomorphic with a continuous extension to the boundary of $\Delta$ such that $| f ( z ) | = 1$ for all $| z | = 1$ , then $f ( z )$ is the restriction of a rational function.
 
@@ -244,7 +266,8 @@ Instructions: You have 2 hours to do all problems as completely as possible.
 
 i. Show that $f ( x )$ is continuous everywhere.
 
-ii. Show that $f ( x )$ is differentiable nowhere.
+ii.
+Show that $f ( x )$ is differentiable nowhere.
 
 Hint: Consider the difference quotients
 
@@ -272,7 +295,8 @@ $$
 
 3. i. Define equicontinuity and state the Arzela-Ascoli theorem.
 
-ii. Let $\mathcal { F }$ be the family of real valued functions on [0,1] satising $f ( 0 ) = 0$ and $\begin{array} { r } { \int _ { 0 } ^ { 1 } f ^ { \prime } ( x ) ^ { 2 } \ d x \leq 1 } \end{array}$ Show that any sequence in $\mathcal { F }$ has a subsequence that converges uniformly.
+ii.
+Let $\mathcal { F }$ be the family of real valued functions on [0,1] satising $f ( 0 ) = 0$ and $\begin{array} { r } { \int _ { 0 } ^ { 1 } f ^ { \prime } ( x ) ^ { 2 } \ d x \leq 1 } \end{array}$ Show that any sequence in $\mathcal { F }$ has a subsequence that converges uniformly.
 
 4. Let K be a closed convex subset of a Hilbert space H. Show that for each $x \in H$ , there is a unique $y \in K$ such that
 
@@ -282,11 +306,15 @@ $$
 
 5. i. Find the sum of the series $\begin{array} { r } { \sum _ { n = 1 } ^ { \infty } \frac { \sin { ( 2 n - 1 ) x } } { 2 n - 1 } \mathrm { o n } \left( 0 , 2 \pi \right) } \end{array}$
 
-ii. Show that $\begin{array} { r } { \sum _ { n = 1 } ^ { \infty } { \frac { 1 } { ( 2 n - 1 ) ^ { 2 } } } = { \frac { \pi ^ { 2 } } { 8 } } } \end{array}$
+ii.
+Show that $\begin{array} { r } { \sum _ { n = 1 } ^ { \infty } { \frac { 1 } { ( 2 n - 1 ) ^ { 2 } } } = { \frac { \pi ^ { 2 } } { 8 } } } \end{array}$
 
 ## Complex Analysis Core Qualifying Exam, Fall 2002
 
-Do 5 of the 6 problems. Indicate clearly which 5 you want graded; if it is not clear, we will grade $\# 1 \mathrm { - } 5$ . Each problem counts for 20 points. In the case where there are two parts, the score is subdivided as indicated. Note: for the purposes of the exam, holomorphic is the same as complex analytic.
+Do 5 of the 6 problems.
+Indicate clearly which 5 you want graded; if it is not clear, we will grade $\# 1 \mathrm { - } 5$ . Each problem counts for 20 points.
+In the case where there are two parts, the score is subdivided as indicated.
+Note: for the purposes of the exam, holomorphic is the same as complex analytic.
 
 1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic on the annulus $\{ z : 1 < | z | < 3 \}$ , then f extends holomorphically to the disc $\{ z : | z | < 3 \}$
 
@@ -316,7 +344,9 @@ $$
 
 Time: 2 hours
 
-Instructions: Do five of the following 6 problems. (If you attempt all 6 problems, clearly indicate which problems you want graded.) Each problem is worth 20 points.
+Instructions: Do five of the following 6 problems.
+(If you attempt all 6 problems, clearly indicate which problems you want graded.)
+Each problem is worth 20 points.
 
 1. Let $f : [ 0 , 2 ] $ R be $\mathrm { ~ a ~ } \mathcal { C } ^ { 1 }$ function such that $f ( x )$ and $f ^ { \prime } ( x )$ vanish at $x = 0$ and at $x = 2 .$ Prove that for all $\varepsilon > 0$ there exists $t _ { \varepsilon } \in \mathbb { R } ^ { + }$ such that
 
@@ -374,9 +404,12 @@ $$
 
 Where $a > 1$
 
-3. Classify all simply connected regions in the extended complex plane up to biholomorphic equivalence. i.e, give a list of simply connected region, prove that every simply connected region in the extended complex plane is biholomorphic equivalent to a member in your list. Prove also that no two members in your list are biholomorphic equivalent.
+3. Classify all simply connected regions in the extended complex plane up to biholomorphic equivalence.
+   i.e, give a list of simply connected region, prove that every simply connected region in the extended complex plane is biholomorphic equivalent to a member in your list.
+   Prove also that no two members in your list are biholomorphic equivalent.
 
-4. Let f be a holomorphic function which maps the unit disk into the unit disc. Show that
+4. Let f be a holomorphic function which maps the unit disk into the unit disc.
+   Show that
 
 $$
 | f ( z ) + f ( - z ) | \leq 2 | z | ^ { 2 }
@@ -396,9 +429,12 @@ for some real θ.
 
 ## Real Analysis Qualifying Exam, Fall 2001
 
-Instructions: Attempt to do all problems. Each is worth 20 points. All the measures involved are Lebesgue measure.
+Instructions: Attempt to do all problems.
+Each is worth 20 points.
+All the measures involved are Lebesgue measure.
 
-1.) Let f be a continuous function on $[ 0 , \infty )$ such that lim $_ { 1 _ { X \to \infty } } f ( x )$ exists (finitely). Prove that f is uniformly continuous.
+1.) Let f be a continuous function on $[ 0 , \infty )$ such that lim $_ { 1 _ { X \to \infty } } f ( x )$ exists (finitely).
+Prove that f is uniformly continuous.
 
 2.) Let f and g be continuous real valued functions on
 
@@ -438,7 +474,8 @@ continuous, and use approximation.
 
 .) Let $1 \leq p < q < \infty$ . Which of the following statements
 
-(i)-(vi) are true, and which are false? Justify all the negative
+(i)-(vi) are true, and which are false?
+Justify all the negative
 
 answers by a counterexample, but you do not have to justify the
 
@@ -462,11 +499,16 @@ Justify your answer to the following question:
 
 ## COMPLEX ANALYSIS CORE QUALIFYING EXAM, FALL 2001
 
-Instructions: Attempt FOUR of the following problems. Each is worth 25 points. Please label clearly which four of the five problems you want graded. Show all your work.
+Instructions: Attempt FOUR of the following problems.
+Each is worth 25 points.
+Please label clearly which four of the five problems you want graded.
+Show all your work.
 
-Notation: C denotes the complex numbers. For $z \in \mathbb { C } , \operatorname { R e } ( z )$ denotes the real part of $z .$ For each $r \geq 0 , D _ { r } ( 0 ) = \{ z \in \mathbb { C } : | z | < r \}$ •
+Notation: C denotes the complex numbers.
+For $z \in \mathbb { C } , \operatorname { R e } ( z )$ denotes the real part of $z .$ For each $r \geq 0 , D _ { r } ( 0 ) = \{ z \in \mathbb { C } : | z | < r \}$ •
 
-Problem 1. A meromorphic function on $\mathbb { C } \cup \{ \infty \}$ is a meromorphic function $f ( z )$ on C such that $g ( z ) = f ( 1 / z )$ is also meromorphic. Show that a meromorphic function on $\mathbb { C } \cup \{ \infty \}$ must be rational, i.e. one can express it as the quotient of two polynomials.
+Problem 1. A meromorphic function on $\mathbb { C } \cup \{ \infty \}$ is a meromorphic function $f ( z )$ on C such that $g ( z ) = f ( 1 / z )$ is also meromorphic.
+Show that a meromorphic function on $\mathbb { C } \cup \{ \infty \}$ must be rational, i.e. one can express it as the quotient of two polynomials.
 
 Problem 2. Fix a real number $\alpha > 1$ . Show that the equation $z - \alpha = e ^ { - z }$ has precisely one solution in the half plane $\mathrm { R e } ( z ) > 0$ and that this solution must be real.
 
@@ -484,7 +526,9 @@ for all $z \in D _ { 1 } ( 0 )$
 
 # REAL ANALYSIS QUALIFYING EXAM, SPRING 2001
 
-Instructions: Attempt to do all of the problems. Each is worth 20 points. All the measures involved are Lebesgue measure.
+Instructions: Attempt to do all of the problems.
+Each is worth 20 points.
+All the measures involved are Lebesgue measure.
 
 1.) Suppose that $\phi \in C _ { 0 } ^ { \infty } ( \mathbb { R } ^ { n } )$ has ∫ φdx = 1. If $\phi _ { \varepsilon } ( x ) = \varepsilon ^ { - n } \phi ( x / \varepsilon )$ , prove that if $1 \leq p <$ ∞ and $f \in L ^ { p } ( \mathbb { R } ^ { n } )$ then $f * \phi _ { \varepsilon } \to f$ in $L ^ { p } ( \mathbb { R } ^ { n } )$ . Prove that this is not true for $p = \infty$
 
@@ -494,7 +538,8 @@ $$
 | \int _ { A } f d x | < \varepsilon .
 $$
 
-3.) Recall that $f : [ 0 , 1 ] \to \mathbb { R }$ is lower semicontinuous if lim in $\operatorname { f } _ { x \to x _ { 0 } } f ( x ) \geq f ( x _ { 0 } )$ for every $x _ { 0 } \in [ 0 , 1 ]$ Prove that if $f$ is a nonnegative lower semicontinuous function then one always has $\begin{array} { r } { S _ { + } ( f , P ) \to \int _ { 0 } ^ { 1 } } \end{array}$ f(x)dx as $| P | \to 0$ if $S _ { + } ( f , P )$ is the lower Riemann sum associated with a partition $\dot { P }$ of $[ 0 , 1 ]$ and $| P |$ is the smallest interval of the partition. Here $\textstyle \int _ { 0 } ^ { 1 } f ( x ) d x$ is the Lebesgue integral of $f .$
+3.) Recall that $f : [ 0 , 1 ] \to \mathbb { R }$ is lower semicontinuous if lim in $\operatorname { f } _ { x \to x _ { 0 } } f ( x ) \geq f ( x _ { 0 } )$ for every $x _ { 0 } \in [ 0 , 1 ]$ Prove that if $f$ is a nonnegative lower semicontinuous function then one always has $\begin{array} { r } { S _ { + } ( f , P ) \to \int _ { 0 } ^ { 1 } } \end{array}$ f(x)dx as $| P | \to 0$ if $S _ { + } ( f , P )$ is the lower Riemann sum associated with a partition $\dot { P }$ of $[ 0 , 1 ]$ and $| P |$ is the smallest interval of the partition.
+Here $\textstyle \int _ { 0 } ^ { 1 } f ( x ) d x$ is the Lebesgue integral of $f .$
 
 Here, if $0 = t _ { 0 } < t _ { 1 } < \cdots < t _ { n } = 1$ , is the partition $P ,$ then
 
@@ -522,7 +567,9 @@ Prove that $T f \in C ( [ 0 , 1 ] )$ . Moreover, prove that $\Omega = \{ T f : \
 
 # COMPLEX ANALYSIS CORE QUALIFYING EXAM, SPRING 2001
 
-Directions: Do FIVE of the following six questions; they are weighted equally. Label clearly which five that you want graded (otherwise only first five will be). Show your work.
+Directions: Do FIVE of the following six questions; they are weighted equally.
+Label clearly which five that you want graded (otherwise only first five will be).
+Show your work.
 
 Question 1. Suppose that $f , g$ are entire holomorphic functions with $| f ( z ) | \leq | g ( z ) |$ for all $z \in \mathbf { C }$ . Prove that there is a constant $c \in \mathbf { C }$ so that $f = c g$ .
 
@@ -532,6 +579,8 @@ Question 3. Assume that $f _ { n }$ is holomorphic in $| z | < 1$ and $| f _ { n
 
 Question 4. Let $u ( z ) > 0$ be a positive harmonic function in the punctured plane $0 < | z |$ Show that u must be constant.
 
-Question 5. Let f be a non-constant holomorphic function in the annulus $1 < | z | < 2$ with $| f | \equiv 5$ on the boundary. Show that f has at least two zeros.
+Question 5. Let f be a non-constant holomorphic function in the annulus $1 < | z | < 2$ with $| f | \equiv 5$ on the boundary.
+Show that f has at least two zeros.
 
-Question 6. Let $P ( z )$ be a polynomial. Show that all zeros of $P ^ { \prime } ( z )$ lie in the convex hull of the zeros of $P ( z )$
+Question 6. Let $P ( z )$ be a polynomial.
+Show that all zeros of $P ^ { \prime } ( z )$ lie in the convex hull of the zeros of $P ( z )$

@@ -110,7 +110,8 @@ What does Fubini’s theorem imply about such $f ?$ What about Tonelli’s theor
 
 Question 1.3. Let $f _ { i } : [ 0 , 1 ] \to \mathbb { R } , i = 1 , 2 , . . . ,$ , be an increasing sequence of continuous functions that is uniformly bounded, i.e., for all $x \in [ 0 , 1 ]$ and $i \geq 1 , f _ { i } ( x ) \leq f _ { i + 1 } ( x ) \leq$ $M < \infty f o r$ some fixed M. Show that li $\mathfrak { a } _ { i \to \infty } f _ { i } ( x ) = g ( x )$ is continuous if and only $i f$ the $f _ { i }$ converge uniformly to g.
 
-Question 1.4. Show that lim $\scriptstyle \cdot t \to \infty \int _ { 1 } ^ { t } { \frac { \sin ( x ) } { x } } d x$ exists. Does $\textstyle f ( x ) \ = \ { \frac { \sin ( x ) } { x } }$ belong to $L ^ { 1 } ( ( 1 , \infty ) ) ?$
+Question 1.4. Show that lim $\scriptstyle \cdot t \to \infty \int _ { 1 } ^ { t } { \frac { \sin ( x ) } { x } } d x$ exists.
+Does $\textstyle f ( x ) \ = \ { \frac { \sin ( x ) } { x } }$ belong to $L ^ { 1 } ( ( 1 , \infty ) ) ?$
 
 ## 2. COMPLEX ANALYSIS
 
@@ -210,7 +211,8 @@ Let $L ^ { 2 } = L ^ { 2 } ( \mathbb R ^ { d } )$ be the real Hilbert space endo
 
 • Prove that if $f _ { n }$ converges weakly to f and $\| f _ { n } \| \to \| f \|$ then $f _ { n }$ converges to $f$ in the strong topology.
 
-• Prove that there exists a sequence of bounded functions in $L ^ { 2 }$ which is not converging in $L ^ { 2 }$ but weakly converging up to a subsequence possibly. What do you conclude on the unit ball of $L ^ { 2 }$ endowed with the strong topology ?
+• Prove that there exists a sequence of bounded functions in $L ^ { 2 }$ which is not converging in $L ^ { 2 }$ but weakly converging up to a subsequence possibly.
+What do you conclude on the unit ball of $L ^ { 2 }$ endowed with the strong topology ?
 
 ## Problem 3
 
@@ -234,7 +236,8 @@ One can use the inequality $\textstyle a b \leq { \frac { a ^ { p } } { p } } + 
 
 ## Problem 4
 
-Let f be an entire function. Suppose that for each $z _ { 0 } \in \mathbb { C }$ , the power series expansion
+Let f be an entire function.
+Suppose that for each $z _ { 0 } \in \mathbb { C }$ , the power series expansion
 
 $$
 f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } ( z - z _ { 0 } ) ^ { n }
@@ -248,7 +251,8 @@ Let U be an open subset of C. Let $z _ { \mathrm { 0 } }$ be a point in U, and s
 
 ## Problem 6
 
-Suppose f is holomorphic in an annulus $r < | z | < R ,$ and there exists a sequence of holomorphic polynomials $p _ { n }$ converging to f uniformly on compact subset of the annulus. Show that f can be extended to the disc $\{ | z | < R \}$ as a holomorphic function.
+Suppose f is holomorphic in an annulus $r < | z | < R ,$ and there exists a sequence of holomorphic polynomials $p _ { n }$ converging to f uniformly on compact subset of the annulus.
+Show that f can be extended to the disc $\{ | z | < R \}$ as a holomorphic function.
 
 ## Problem 7
 
@@ -258,7 +262,8 @@ $$
 \| f \| _ { L ^ { 2 } ( U ) } = \left( \int _ { U } | f | ^ { 2 } d x d y \right) ^ { 1 / 2 } .
 $$
 
-• Let $f : U \to \mathbb { C }$ be a holomorphic function. Show that for any compact set $K \subset U$ , there is a constant $C _ { K } .$ , such that
+• Let $f : U \to \mathbb { C }$ be a holomorphic function.
+Show that for any compact set $K \subset U$ , there is a constant $C _ { K } .$ , such that
 
 $$
 \operatorname* { s u p } _ { z \in K } | f ( z ) | \leq C _ { K } \| f \| _ { L ^ { 2 } ( U ) } .
@@ -318,7 +323,8 @@ $$
 
 (a) $\{ f _ { k } \}$ converges to f if and only if $\vert \vert f _ { k } \vert \vert  \vert \vert f \vert \vert$ and $\{ f _ { k } \}$ converges weakly to $f .$
 
-(b) If H is a finite dimensional Hilbert space, then the weak convergence implies convergence. Give a counter example to show that weak convergence does not necessarily imply convergence in an infinite dimensional Hilbert space.
+(b) If H is a finite dimensional Hilbert space, then the weak convergence implies convergence.
+Give a counter example to show that weak convergence does not necessarily imply convergence in an infinite dimensional Hilbert space.
 
 (c) If a sequence $\{ f _ { k } \}$ converges weakly to $f ,$ then there exists a subsequence $\{ f _ { k _ { n } } \}$ such that
 
@@ -356,9 +362,13 @@ $$
 
 1. Assume $f , f _ { j } \subset L ^ { 2 } ( [ 0 , 1 ] )$ for $j = 1 , 2 , . . .$ . and $| | f _ { j } - f | | _ { L ^ { 2 } } \to 0$ . Prove there exists a subsequence $\{ f _ { j ^ { \prime } } \} \subset \{ f _ { j } \}$ such that $f _ { j ^ { \prime } } \to f { \mathrm { ~ a . e ~ } }$
 
-2. Suppose A is a Lebesgue measurable set in R with $m ( A ) > 0$ Does there exists a sequence $\{ x _ { n } \} _ { n = 1 } ^ { \infty }$ such that the complement of $\textstyle { \bigsqcup _ { n = 1 } ^ { \infty } ( A + x _ { n } ) }$ in R has measure 0? Justify your answer. (We define $A + x _ { n } = \{ a + x _ { n } \in \mathbb { R } : a \in A \} . )$
+2. Suppose A is a Lebesgue measurable set in R with $m ( A ) > 0$ Does there exists a sequence $\{ x _ { n } \} _ { n = 1 } ^ { \infty }$ such that the complement of $\textstyle { \bigsqcup _ { n = 1 } ^ { \infty } ( A + x _ { n } ) }$ in R has measure 0? Justify your answer.
+   (We define $A + x _ { n } = \{ a + x _ { n } \in \mathbb { R } : a \in A \} . )$
 
-3. Let H be an infinite dimensional Hilbert space. Determine if the following statements are true or false. If true, provide a proof. If false, provide a counter example.
+3. Let H be an infinite dimensional Hilbert space.
+   Determine if the following statements are true or false.
+   If true, provide a proof.
+   If false, provide a counter example.
 
 (a) A sequence $\left\{ f _ { n } \right\}$ in H with $\left| \left| f _ { n } \right| \right| = 1$ for all n has a subsequence that converges in H.
 
@@ -368,9 +378,10 @@ $$
 
 5. Let f be a one-to-one analytic function defined on the unit disk D centered at the origin and $f ( 0 ) = 0$ . Show that the function $g ( z ) = { \sqrt { f ( z ^ { 2 } ) } }$ has a single-valued branch and is also one-to-one.
 
-6. Let $U \subset \mathbb { C }$ be an open set containing the closure $\overline { { D } }$ of a unit disk. If a sequence $\{ f _ { n } : U \to \mathbb { C } \}$ of holomorphic functions converges uniformly to $f$ on compact subsets of $U ,$ then show that there exists an integer N such that $f$ and $f _ { n }$ have the same number of zeros in D for $n \geq N$
+6. Let $U \subset \mathbb { C }$ be an open set containing the closure $\overline { { D } }$ of a unit disk.
+   If a sequence $\{ f _ { n } : U \to \mathbb { C } \}$ of holomorphic functions converges uniformly to $f$ on compact subsets of $U ,$ then show that there exists an integer N such that $f$ and $f _ { n }$ have the same number of zeros in D for $n \geq N$
 
-1. Prove the absolute continuity of the Lebesgue integral; in other words, prove that if $f$ is integrable on $\mathbb { R } ^ { d }$ , then for every $\epsilon > 0$ there exists $\delta > 0$ such that
+7. Prove the absolute continuity of the Lebesgue integral; in other words, prove that if $f$ is integrable on $\mathbb { R } ^ { d }$ , then for every $\epsilon > 0$ there exists $\delta > 0$ such that
 
 $$
 \int _ { E } | f | < \epsilon \ \mathrm { w h e n e v e r } \ m ( E ) < \delta .
@@ -388,7 +399,8 @@ $$
 f ^ { * } ( x ) = \operatorname* { s u p } _ { x \in B } { \frac { 1 } { m ( B ) } } \int _ { B } | f ( y ) | d y , \quad x \in \mathbb { R } ^ { d }
 $$
 
-where the supremum is taken over all balls containing the point x. You may assume the Vitali 3-times Covering Lemma. State it clearly if you use $i t .$
+where the supremum is taken over all balls containing the point x. You may assume the Vitali 3-times Covering Lemma.
+State it clearly if you use $i t .$
 
 3. Let $f : [ 0 , 1 ]  [ 0 , 1 ]$ be a continuous function and $\phi : \mathbb { R }  \mathbb { R }$ be $\mathrm { ~ a ~ } C ^ { 1 }$ function with $\phi ( 0 ) = 0$ . Prove
 
@@ -410,7 +422,9 @@ $$
 
 Prove that $A ^ { 2 } ( U )$ is a Hilbert space when equipped with this inner product.
 
-5. Let $f : D  D$ be a holomorphic function where $D = \{ z \in \mathbb { C } : | z | < 1 \}$ is the unit disk. Prove that if $f$ has at least 2 fixed points then $f$ is the identity map. (Note: A point a is said to be a fixed point of f if $f ( a ) = a . )$
+5. Let $f : D  D$ be a holomorphic function where $D = \{ z \in \mathbb { C } : | z | < 1 \}$ is the unit disk.
+   Prove that if $f$ has at least 2 fixed points then $f$ is the identity map.
+   (Note: A point a is said to be a fixed point of f if $f ( a ) = a . )$
 
 6. Assume that $f : \mathbb { C } \to \mathbb { C }$ is an entire function, not identically equal to 0 and the let ${ \mathcal { Z } } = \{ z \in \mathbb { C } : f ( z ) = 0 \}$ . Prove that if $\mathcal { Z }$ is unbounded, then $f$ has an essential singularity at ∞.
 
@@ -436,7 +450,9 @@ $$
 
 Prove that there exists a subsequence $\{ f _ { n _ { k } } \}$ such that $f _ { n _ { k } }  0$ almost everywhere.
 
-2. Determine whether the following statements are true and false. If true, provide a proof. If false, prove a counter example.
+2. Determine whether the following statements are true and false.
+   If true, provide a proof.
+   If false, prove a counter example.
 
 (a) If $f ( x )$ is a increasing, continuous function on the interval $[ 0 , 1 ]$ such that $f ( 0 ) = 0$ and $f ( 1 ) = 1$ , then there exists a set $E \subset [ 0 , 1 ]$ of positive measure such that $f ^ { \prime } ( x ) > 0$
 
@@ -478,7 +494,8 @@ $$
 \int _ { \mathbb { R } } | u _ { \sigma } ( x ) | ^ { 2 } d x \leq \int _ { \mathbb { R } } | u ( x ) | ^ { 2 } d x .
 $$
 
-3. Assume $f : [ 0 , 1 ] \to \mathbb { R }$ is uniformly continuous, increasing and convex. Prove $f$ is differentiable almost everywhere and
+3. Assume $f : [ 0 , 1 ] \to \mathbb { R }$ is uniformly continuous, increasing and convex.
+   Prove $f$ is differentiable almost everywhere and
 
 $$
 f ( 1 ) - f ( 0 ) = \int _ { 0 } ^ { 1 } f ^ { \prime } ( x ) d x .
@@ -486,9 +503,12 @@ $$
 
 4. Assume $f : [ 0 , 1 ] \ \to \ \mathbb { R }$ is a measurable function such that $f g \in L ^ { 1 } ( [ 0 , 1 ] )$ for all $g \in L ^ { 2 } ( [ 0 , 1 ] )$ . Prove ${ \dot { f } } \in L ^ { 2 } ( [ 0 , 1 ] )$
 
-5. Let $U \subset \mathbb { C }$ be an open set. Assume $f , g : U \to \mathbb { C }$ are holomorphic function such that $\bar { f } g$ is holomorphic. Prove either f is constant or g is identically equal to 0.
+5. Let $U \subset \mathbb { C }$ be an open set.
+   Assume $f , g : U \to \mathbb { C }$ are holomorphic function such that $\bar { f } g$ is holomorphic.
+   Prove either f is constant or g is identically equal to 0.
 
-6. Assume $f : \mathbb { C } \to \mathbb { C }$ is a non-constant entire function. Prove $f ( \mathbb { C } )$ is dense in C.
+6. Assume $f : \mathbb { C } \to \mathbb { C }$ is a non-constant entire function.
+   Prove $f ( \mathbb { C } )$ is dense in C.
 
 7. Prove that $z ^ { 5 } + 3 z ^ { 3 } + 7$ has all its zeros in the disk $D ( 0 , 2 ) = \{ z \in \mathbb { C } : | z | < 2 \}$
 
@@ -526,7 +546,8 @@ $$
 
 where A is a constant depending only on d and $\begin{array} { r } { | | f | | _ { L ^ { 1 } ( \mathbb { R } ^ { d } ) } = \int _ { \mathbb { R } ^ { d } } | f ( x ) | d x . } \end{array}$
 
-3. Let X and Y be Hilbert spaces and $L : X \to Y$ be a bounded linear operator. Prove that the following two conditions are equivalent:
+3. Let X and Y be Hilbert spaces and $L : X \to Y$ be a bounded linear operator.
+   Prove that the following two conditions are equivalent:
 
 (a) The image $L ( \mathbf { B } )$ of the unit ball in X has compact closure in $Y .$
 
@@ -540,25 +561,29 @@ $$
 \int _ { 0 } ^ { \infty } { \frac { \cos a x } { ( 1 + x ^ { 2 } ) ^ { 2 } } } d x = { \frac { \pi ( a + 1 ) e ^ { - a } } { 4 } } , \quad a > 0 .
 $$
 
-6. Assume that f and g are entire functions and that g never vanishes. If $| f ( z ) | \leq | g ( z ) |$ for all $z \in \mathbb { C }$ , then prove that there is a constant C such that $f ( z ) = C g ( z )$
+6. Assume that f and g are entire functions and that g never vanishes.
+   If $| f ( z ) | \leq | g ( z ) |$ for all $z \in \mathbb { C }$ , then prove that there is a constant C such that $f ( z ) = C g ( z )$
 
-7. Let $D \subset \mathbb { C }$ be the unit disk. Prove that every one-to-one conformal mapping of D to D is given by a linear fractional transformation.
+7. Let $D \subset \mathbb { C }$ be the unit disk.
+   Prove that every one-to-one conformal mapping of D to D is given by a linear fractional transformation.
 
-1. Prove the following statement without using Ergoroff’s Theorem: Suppose $\{ f _ { k } \} _ { k = 1 } ^ { \infty }$ is a sequence of measurable functions defined on a measurable set $E ,$ $f _ { k }  f$ a.e. on E and there exists $g \in L ^ { 1 } ( E )$ such that $| f _ { k } | \le g$ for all k. Given $\epsilon > 0$ , there exists a closed set $A _ { \epsilon }$ such that $m ( E \backslash A _ { \epsilon } ) < \epsilon$ and $f _ { k }  f$ uniformly on $A _ { \epsilon }$
+8. Prove the following statement without using Ergoroff’s Theorem: Suppose $\{ f _ { k } \} _ { k = 1 } ^ { \infty }$ is a sequence of measurable functions defined on a measurable set $E ,$ $f _ { k }  f$ a.e. on E and there exists $g \in L ^ { 1 } ( E )$ such that $| f _ { k } | \le g$ for all k. Given $\epsilon > 0$ , there exists a closed set $A _ { \epsilon }$ such that $m ( E \backslash A _ { \epsilon } ) < \epsilon$ and $f _ { k }  f$ uniformly on $A _ { \epsilon }$
 
-2. Let $f \in L ^ { 1 } ( \mathbb { R } )$ and define $E _ { \alpha } = \{ x : | f ( x ) | > \alpha \}$ . Prove that
+9. Let $f \in L ^ { 1 } ( \mathbb { R } )$ and define $E _ { \alpha } = \{ x : | f ( x ) | > \alpha \}$ . Prove that
 
 $$
 \int _ { \mathbb { R } } | f ( x ) | d x = \int _ { 0 } ^ { \infty } m ( E _ { \alpha } ) d \alpha .
 $$
 
-3. Let $f : \mathbb { R } \to \mathbb { R }$ be a measurable function. Prove the following statement: There exists $M > 0$ such that $| f ( x ) - f ( y ) | \leq M | x - y |$ for all $x , y \in \mathbb { R }$ if and only if $f$ is absolutely continuous and $| f ^ { \prime } | \le M$
+3. Let $f : \mathbb { R } \to \mathbb { R }$ be a measurable function.
+   Prove the following statement: There exists $M > 0$ such that $| f ( x ) - f ( y ) | \leq M | x - y |$ for all $x , y \in \mathbb { R }$ if and only if $f$ is absolutely continuous and $| f ^ { \prime } | \le M$
 
 4. (a) Prove that the operator $T \ : \ L ^ { 2 } ( [ 0 , 1 ] ) \ \to \ L ^ { 2 } ( [ 0 , 1 ] )$ defined by setting $T [ f ] ( x ) = x f ( x )$ is continuous and symmetric (self-adjoint).
 
 (b) Prove that T is not compact.
 
-5. Let $D = \{ z \in \mathbb { C } : | z | < 1 \}$ and $f : D  D$ be a holomorphic function. Prove
+5. Let $D = \{ z \in \mathbb { C } : | z | < 1 \}$ and $f : D  D$ be a holomorphic function.
+   Prove
 
 $$
 { \frac { | f ( 0 ) | - | z | } { 1 + | f ( 0 ) | | z | } } \leq | f ( z ) | \leq { \frac { | f ( 0 ) | + | z | } { 1 - | f ( 0 ) | | z | } } , \forall z \in D .
@@ -632,7 +657,9 @@ for |z| sufficiently large.
 
 May, 2013
 
-All problems are equally weighted. Show all your work. In each solution, state any theorems you are applying and verify that the hypotheses are satisfied.
+All problems are equally weighted.
+Show all your work.
+In each solution, state any theorems you are applying and verify that the hypotheses are satisfied.
 
 Problem 1 Let $U \subset \mathbb { C }$ be an open set and let f be a continuous function on U. If $f ^ { 2 }$ is holomorphic on $U _ { : }$ , prove that f is holomorphic on U .
 
@@ -760,9 +787,11 @@ $$
 
 denote the convolution of f and $g .$
 
-(a) Let $f , g \in L ^ { 2 } ( \mathbb { R } )$ be two square-integrable functions on R (with the usual Lebesgue measure). Show that the convolution $f * g$ bounded continuous function on R.
+(a) Let $f , g \in L ^ { 2 } ( \mathbb { R } )$ be two square-integrable functions on R (with the usual Lebesgue measure).
+Show that the convolution $f * g$ bounded continuous function on R.
 
-(b) Instead let $h \in L ^ { 1 } ( \mathbb { R } )$ be fixed. Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \mathbb { R } ) \to L ^ { 1 } ( \mathbb { R } )$
+(b) Instead let $h \in L ^ { 1 } ( \mathbb { R } )$ be fixed.
+Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \mathbb { R } ) \to L ^ { 1 } ( \mathbb { R } )$
 
 8. Let T be a linear transformation on $C _ { 0 } ( \mathbb { R } )$ , the space of continuous functions of compact support, that has the following two properties:
 
