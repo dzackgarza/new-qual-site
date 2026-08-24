@@ -256,6 +256,7 @@ source:
     - P-JHUSP08ANF
     - P-JHUSP08ANG
     - P-JHUSP08ANH
+    - P-JHUSP08ANI
   - name: ANALYSIS QUALIFYING EXAM, FALL 2007 (p. 36)
     problems:
     - P-JHUFA07ANA
