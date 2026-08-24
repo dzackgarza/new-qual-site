@@ -6,7 +6,8 @@ title: Meromorphic on the Riemann sphere implies rational
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Meromorphic Functions
 solved: false
 relations: []
 review: draft

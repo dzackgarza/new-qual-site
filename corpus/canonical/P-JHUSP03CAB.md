@@ -6,7 +6,8 @@ title: Zero location for holomorphic self-map of disk
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
 solved: false
 relations: []
 review: draft

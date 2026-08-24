@@ -6,7 +6,8 @@ title: Gauss-Lucas theorem: zeros of the derivative lie in the convex hull of th
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Polynomials
 solved: false
 relations: []
 review: draft

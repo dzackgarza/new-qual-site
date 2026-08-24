@@ -6,7 +6,8 @@ title: Entire function with zero coefficient at every center is polynomial
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Identity Theorem
 solved: false
 relations: []
 review: draft

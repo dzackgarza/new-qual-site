@@ -6,7 +6,8 @@ title: Argument principle to determine zeros in a region
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Argument Principle
 solved: false
 relations: []
 review: draft

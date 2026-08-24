@@ -6,7 +6,8 @@ title: Unique real solution of z - alpha = e^{-z} in the right half-plane
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Argument Principle
 solved: false
 relations: []
 review: draft

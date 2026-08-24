@@ -6,7 +6,8 @@ title: Contour integral of meromorphic function
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Residue Formula
 solved: false
 relations: []
 review: draft

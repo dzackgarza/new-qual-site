@@ -6,7 +6,8 @@ title: Branched covering of unit disc by holomorphic map
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
 solved: false
 relations: []
 review: draft

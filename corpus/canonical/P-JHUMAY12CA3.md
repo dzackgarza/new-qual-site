@@ -6,7 +6,8 @@ title: Removable singularity when real part is bounded below
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Removable Singularities
 solved: false
 relations: []
 review: draft

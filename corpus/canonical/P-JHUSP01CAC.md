@@ -6,7 +6,8 @@ title: Convergence on a dense subset implies pointwise convergence for bounded h
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Montel's Theorem
 solved: false
 relations: []
 review: draft

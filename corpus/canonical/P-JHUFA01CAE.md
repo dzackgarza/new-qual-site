@@ -6,7 +6,8 @@ title: Bound on |g(z)| for holomorphic g with Re(g) bounded and g(0) = 0
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
 solved: false
 relations: []
 review: draft

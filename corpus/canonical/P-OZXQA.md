@@ -6,7 +6,8 @@ title: Compute limit of Fourier transform of sinc function
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
 solved: false
 relations: []
 review: draft

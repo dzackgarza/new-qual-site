@@ -6,7 +6,8 @@ title: Fixed point of holomorphic function on unit disc
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Rouché's Theorem
 solved: false
 relations: []
 review: draft

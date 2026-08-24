@@ -6,7 +6,8 @@ title: Holomorphic function in annulus approximable by polynomials extends to di
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Power Series
 solved: false
 relations: []
 review: draft

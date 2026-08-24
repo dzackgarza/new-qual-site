@@ -6,7 +6,8 @@ title: Entire function dominated by another is a scalar multiple
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Liouville's Theorem
 solved: false
 relations: []
 review: draft

@@ -6,7 +6,8 @@ title: Counting zeros of 2z^5 + 8z - 1 in the annulus 1 < |z| < 2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Argument Principle
 solved: false
 relations: []
 review: draft

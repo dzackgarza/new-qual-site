@@ -6,7 +6,8 @@ title: Evaluating the sinc integral by contour integration
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
 solved: false
 relations: []
 review: draft

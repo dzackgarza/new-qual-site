@@ -6,7 +6,8 @@ title: Zeros of z^4-6z+3 in unit disk and annulus
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Argument Principle
 solved: false
 relations: []
 review: draft

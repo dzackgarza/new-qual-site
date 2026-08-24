@@ -6,7 +6,8 @@ title: Holomorphic functions with double zeros at 1/n
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Identity Theorem
 solved: false
 relations: []
 review: draft

@@ -6,7 +6,8 @@ title: Non-constant holomorphic function on annulus with constant modulus on bou
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Argument Principle
 solved: false
 relations: []
 review: draft

@@ -6,7 +6,8 @@ title: Residue calculation for integral of 1/(1+x^2)^2
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Residue Formula
 solved: false
 relations: []
 review: draft

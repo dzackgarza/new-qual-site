@@ -6,7 +6,8 @@ title: Entire functions bounded by |Re z|^2 + |z|^{3/2}
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Liouville's Theorem
 solved: false
 relations: []
 review: draft

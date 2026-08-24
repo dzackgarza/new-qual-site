@@ -6,7 +6,8 @@ title: Bergman space embedding, normal family, and removable singularity
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Bergman Space
 solved: false
 relations: []
 review: draft

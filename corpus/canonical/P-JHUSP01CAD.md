@@ -6,7 +6,8 @@ title: Positive harmonic function on the punctured plane is constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Harmonic Functions
 solved: false
 relations: []
 review: draft

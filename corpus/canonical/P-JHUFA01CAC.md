@@ -6,7 +6,8 @@ title: Evaluate the integral of 1/(1+x^3) from 0 to infinity
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Contour Integration
 solved: false
 relations: []
 review: draft

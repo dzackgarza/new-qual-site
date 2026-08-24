@@ -6,7 +6,8 @@ title: Meromorphic function with pole has no holomorphic logarithm
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Meromorphic Functions
 solved: false
 relations: []
 review: draft

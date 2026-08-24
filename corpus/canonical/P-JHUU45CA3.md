@@ -6,7 +6,8 @@ title: Maximum modulus property forces holomorphic functions to be constant
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Maximum Modulus Principle
 solved: false
 relations: []
 review: draft

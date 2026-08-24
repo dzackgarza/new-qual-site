@@ -6,7 +6,8 @@ title: Schwarz-Pick: holomorphic self-map of disk maps smaller disks into smalle
 classification:
   areas:
   - complex-analysis
-  topics: []
+  topics:
+  - Schwarz Lemma
 solved: false
 relations: []
 review: draft
