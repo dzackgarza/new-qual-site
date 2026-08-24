@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance: []
+provenance:
+- https://math.washington.edu/sites/math/files/documents/grad/algebra-sept-2018.pdf
 source:
   source_kind: university-exam
   institution: uw
