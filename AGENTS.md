@@ -170,6 +170,9 @@ mineru-open-api flash-extract myfile.pdf --language en
 
 Do not use `pdftotext`, `pdftoppm`, or any other tools.
 
+Always save the Markdown output under `assets/` as a permanent repository
+asset. Track and ship the extraction with the repository.
+
 ## What a tool may do
 
 A tool may render and transport: build the site, sync an external file into the
