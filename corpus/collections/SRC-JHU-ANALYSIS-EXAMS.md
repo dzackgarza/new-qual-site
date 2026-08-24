@@ -1,20 +1,19 @@
 ---
-schema: qual/card@1
-id: SRC-JHU-ANALYSIS-EXAMS
-kind: collection
-title: JHU analysis exams (compiled packet)
 classification:
   areas:
   - real-analysis
   - complex-analysis
   topics: []
-relations: []
-review: draft
 completion: complete
+id: SRC-JHU-ANALYSIS-EXAMS
+kind: collection
 provenance:
 - assets/attachments/JHU Years of Analysis Exams.pdf
+relations: []
+review: draft
+schema: qual/card@1
 source:
-  source_kind: compilation
+  area: real-analysis
   date:
     kind: unknown
   sections:
@@ -214,6 +213,8 @@ source:
     - P-JHUMAY10AND
     - P-JHUMAY10ANE
     - P-JHUMAY10ANF
+    - P-JHUMAY10ANG
+    - P-JHUMAY10ANH
     - P-JHUMAY10ANI
     - P-JHUMAY10ANJ
   - name: ANALYSIS QUALIFYING EXAM, SEPTEMBER 2009 (pp. 30–31)
@@ -369,7 +370,6 @@ source:
     - P-JHUSP01CAD
     - P-JHUSP01CAE
     - P-JHUSP01CAF
-  area: real-analysis
+  source_kind: compilation
+title: JHU analysis exams (compiled packet)
 ---
-
-
