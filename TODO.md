@@ -1,235 +1,217 @@
-# Corpus data issues
-
-Updated 2026-08-21. Plan: `PLAN-CORPUS-DATA-ISSUES` (under `PLAN-QUAL-OUTSTANDING-001`).
-
-**Rule:** measurements are candidates to read, not scoreboards.
-Do not add provenance, problems, wiki links, or collection membership just to clear a finding.
-Honest empty / incomplete / unread is a valid disposition.
-
-Live measurement queues: `BACKLOG.md`, regenerated automatically before every push (`just test-push` runs it first; `just backlog` forces it).
-
-AGENTS.md still governs: read to decide; do not invent provenance; no semantic automation.
-
-## Cleared (do not re-open)
-
-- `applied-algebra` area registered; all 29 `SRC-UCSD-APALG-*` cards stamped separately from algebra (ALG/APALG sitting collisions gone).
-
-- `provenance-href-contains-other-area` deleted (path-substring area guess).
-
-- Shared TOP packet provenance: `assets/attachments/UCSD_290_Qualifying_Exams.pdf` stays listed on all three collections that extract from it — `SRC-UCSD-TOP-290QUALS` (whole packet), `SRC-UCSD-TOP-SUMMER-2003` (§3, printed p. 394), `SRC-UCSD-TOP-FALL-2014` (§16, printed p. 407). An href names the document a card's problems were read from; all three name the same packet.
-  The shared-provenance-hrefs finding on this path is the expected state, not drift; emptying the sittings was rejected 2026-08-23.
-
-- Prior TODO provenance mega-table was stale.
-  Textbooks (Hatcher, HK, Munkres, Hungerford, DF, Smith), Emory Arango, Justin TOP packet, UNL workshop sheets, many UGA prelims, and `SRC-UCSD-TOP-FALL-2017` already carry qualifying hrefs.
+# Outstanding work
+
+Work through this queue one item at a time. Read the source mathematics before
+each change. Commit each completed item before starting the next item.
 
-## W1 — Sitting-key collisions (6)
+`BACKLOG.md` supplies measured candidates. A candidate leaves that queue only
+after a source-based disposition.
 
-Disposition each key by reading the cards and papers (merge / re-date / reclassify / related-to / schema-gap stop).
-**Not done** when the audit line merely disappears without a disposition.
+## 1. Repair authored corpus data
 
-| Key | Cards | Note |
-| --- | --- | --- |
-| ~~UCSD topology Fall 2017~~ | `SRC-UCSD-TOP-FALL-2017`, `SRC-UCSD-TOP-QUAL-FALL-2017` | Done: 290A final → `homework`; QUAL stays exam + `related-to` ([W1 UCSD TOP Fall 2017](1d94d695-e493-4b13-9de4-9cbfb89bb5a2), [Review +10 −6](1d94d695-e493-4b13-9de4-9cbfb89bb5a2#changes)) |
-| ~~UGA algebra Fall 2019~~ | `SRC-UGA-ALG-FALL-2019`, `SRC-ALG-ART-HEACCB`, `SRC-ALG-ART-QHGA3N` | Done: midterm/final → `homework` + `related-to`; qual stays exam ([W1 UGA algebra Fall 2019](20fe1025-1574-4dbc-a436-f98f7a685103), [Review +33 −15](20fe1025-1574-4dbc-a436-f98f7a685103#changes)) |
-| ~~UNL topology 2006~~ | `SRC-TOP-UNL-2006Q1`, `SRC-TOP-UNL-2006Q2` | Done: Jan→spring, June→summer (`academic-term`) |
-| ~~UNL topology 2012~~ | `SRC-TOP-2012Q1`, `SRC-TOP-2012Q2` | Done: same pattern |
-| ~~UNL topology 2017~~ | `SRC-TOP-2017Q2`, `SRC-TOP-UNL-2017Q1` | Done: same pattern |
-| ~~UNL topology 2019~~ | `SRC-TOP-2019Q1`, `SRC-TOP-2019Q2` | Done: same pattern |
+### Replace the occurrence layer
 
-W1 complete.
-UNL: [W1 UNL year-only](d7a06f91-825b-4ca2-90ea-8555a5867e2c), [Review +88 −43](d7a06f91-825b-4ca2-90ea-8555a5867e2c#changes).
+Owner: [issue #46](https://github.com/dzackgarza/new-qual-site/issues/46)
 
-## W2 — Empty provenance (12)
+- [ ] List all 279 source pages as individual checklist items.
+- [ ] Read one source document and its existing page.
+- [ ] Write that page's ordered problem list with `[[P-…]]` links.
+- [ ] Compare every listed problem with the source.
+- [ ] Commit the completed page.
+- [ ] Repeat for the next page.
+- [ ] Remove an occurrence card only after its source page replaces it.
+- [ ] Remove the occurrence model after all 2,798 occurrence cards have valid replacements.
 
-Disposition each id: `href added` | `none found`. Leave empty when no qualifying href exists.
+### Replace generated titles
 
-| ID | Title | Disposition |
-| --- | --- | --- |
-| `SRC-ALG-ART-HEACCB` | Fall 2019 Final (algebra) | none found (reclassified `homework` under W1) |
-| `SRC-ALG-ART-QHGA3N` | Fall 2019 Midterm (algebra) | none found (same) |
-| `SRC-CA-ART-E3SXDB` | Spring 2020 HW 2 (complex-analysis) | none found (2021 HW sheet does not match) |
-| `SRC-CA-ART-T34TG3` | Spring 2020 HW 3 (complex-analysis) | none found |
-| `SRC-MMAQ-COMBINED-QUESTIONS` | make-me-a-qual Combined_Questions.yaml | none found (importer wrapper) |
-| `SRC-PRELIM-ART-A2355I` | UGA (undated) (prelim) | none found |
-| `SRC-PRELIM-ART-INTEGRAL-PRACTICE` | Integral Practice (prelim drill sheet) | none found |
-| `SRC-RA-ART-GHJOJZ` | JHU (undated) (real-analysis) | none found (archive packet already owned by `SRC-JHU-ANALYSIS-EXAMS`) |
-| `SRC-UCSD-ALG-200A-HOMEWORK` | UCSD Math 200A Homework Question Compendium | none found |
-| `SRC-TEXT-SS03` | Stein and Shakarchi, Complex Analysis | href added (WorldCat ISBN 9780691113852, verified via Open Library) |
-| `SRC-UCSD-TOP-FALL-2014` | UCSD topology Fall 2014 | keeps href — shared packet with `SRC-UCSD-TOP-290QUALS` (§16, printed p. 407) |
-| `SRC-UCSD-TOP-SUMMER-2003` | UCSD topology Summer 2003 | keeps href — shared packet with `SRC-UCSD-TOP-290QUALS` (§3, printed p. 394) |
+Owner: [issue #45](https://github.com/dzackgarza/new-qual-site/issues/45)
 
-W2 dispositions (no fabricated hrefs): [W2 empty provenance hunts](89702238-cba8-46e3-9da1-75cf2d8a7b42).
+- [ ] List each truncated title as one checklist item.
+- [ ] Author a mathematical title for each listed card.
+- [ ] Replace each `Untitled` value after reading its card.
+- [ ] Inspect each remaining title against its statement.
+- [ ] Replace each first-sentence fragment with a human-authored title.
+- [ ] Commit each completed card before reading the next card.
 
-## W3 — UCSD exam stubs with no problems listed (177)
+### Correct mathematical and structural defects
 
-Inventory only — not a quota to zero.
-Disposition per sitting when the paper is read: `extracted` | `partial` | `not yet read` | `removed/retargeted after reading`. Do not invent problem cards to clear `collection-lists-problems`.
+Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-| Family | Count |
-| --- | --- |
-| `SRC-UCSD-ALG-*` | 39 |
-| `SRC-UCSD-APALG-*` | 29 |
-| `SRC-UCSD-CA-*` | 38 |
-| `SRC-UCSD-RA-*` | 34 |
-| `SRC-UCSD-TOP-*` | 37 |
+- [ ] Correct every false problem statement found during source review.
+- [ ] Correct every wrong title or classification found during source review.
+- [ ] Resolve duplicate-statement candidates by reading both sources.
+- [ ] Resolve card-kind and source-structure defects.
+- [ ] Choose the canonical normal-family convention.
+- [ ] Record unresolved mathematical choices on issue #2.
 
-Prefer reading APALG papers early so `applied-algebra` gains real content; the area-level “no problem cards” measurement clearing is a side effect, not the goal.
+## 2. Complete source documents and collection membership
 
-### APALG sittings dispositioned
+### Extract exam collections
 
-| Sitting | Disposition | Agent |
-| --- | --- | --- |
-| `SRC-UCSD-APALG-SPRING-2017` | extracted complete (8 problems `P-APA17A`–`H`) | [W3 APALG extract mid years](6cf7ab95-d5e6-42c9-8d5e-4c76671860ca) · [Review](6cf7ab95-d5e6-42c9-8d5e-4c76671860ca#changes) |
-| `SRC-UCSD-APALG-FALL-2023` | extracted complete (10 problems `P-APA23A`–`J`, parts A/B/C) | same |
-| `SRC-UCSD-APALG-FALL-2024` | extracted complete (10 problems `P-APA24A`–`J`) | [W3 APALG extract recent 1](77371782-9509-491c-bed7-c20bac3afec6) · [Review](77371782-9509-491c-bed7-c20bac3afec6#changes) |
-| `SRC-UCSD-APALG-SPRING-2022` | extracted complete (8 problems `P-APA22A`–`H`) | same |
-| `SRC-UCSD-APALG-FALL-2018` | extracted complete (8 problems `P-APAF18A`–`H`) | [W3 APALG extract recent 2](0a7e6dbe-7057-4a54-80ec-8e3c87daac82) · [Review](0a7e6dbe-7057-4a54-80ec-8e3c87daac82#changes) |
-| `SRC-UCSD-APALG-SPRING-2024` | extracted complete (10 problems `P-APAS24A`–`J`; Math 202 despite `algebra-math200/` path) | same |
-| `SRC-UCSD-APALG-SPRING-2021` | extracted complete (10 problems `P-APAS21A`–`J`, parts A/B/C in one PDF) | [W3 APALG SP21 SP23](30846bc0-4407-4652-bdb4-b687ab46c919) · [Review](30846bc0-4407-4652-bdb4-b687ab46c919#changes) |
-| `SRC-UCSD-APALG-SPRING-2023` | extracted complete (8 problems `P-APAS23A`–`H`, Part A then B) | same |
-| `SRC-UCSD-APALG-SPRING-2026` | extracted complete (10 problems `P-APAS26A`–`J`) | [W3 APALG SP26 alone](d654e659-bf3d-424f-adff-12b4dc6ebc36) · [Review](d654e659-bf3d-424f-adff-12b4dc6ebc36#changes) |
-| `SRC-UCSD-APALG-FALL-2006` | extracted complete (4 problems `P-APAF06A`–`D`) | [W3 APALG FA06 SP05](2e811bef-ddda-4f8f-9379-26712fcc87b1) · [Review](2e811bef-ddda-4f8f-9379-26712fcc87b1#changes) |
-| `SRC-UCSD-APALG-SPRING-2005` | extracted complete (6 problems `P-APAS05A`–`F`) | same |
-| `SRC-UCSD-APALG-FALL-2007` | extracted complete (3 problems `P-APAF07A`–`C`; Part 1 Matrix Theory only in provenance PDF) | [W3 APALG FA07 SP06](0d760a42-4e14-4923-b515-2eea3b194c97) · [Review](0d760a42-4e14-4923-b515-2eea3b194c97#changes) |
-| `SRC-UCSD-APALG-SPRING-2006` | extracted complete (4 problems `P-APAS06A`–`D`; Part I only in provenance PDF) | same |
-| `SRC-UCSD-APALG-FALL-2022` | extracted complete (8 problems `P-APAF22A`–`H`) | [W3 APALG FA22 SP15](476673cc-680c-4c42-b5a6-6dfb2904b564) · [Review](476673cc-680c-4c42-b5a6-6dfb2904b564#changes) |
-| `SRC-UCSD-APALG-SPRING-2015` | extracted complete (7 problems `P-APAS15A`–`G`) | same |
-| `SRC-UCSD-APALG-SPRING-2020` | extracted complete (8 problems `P-APAS20A`–`H`) | [W3 APALG SP19 SP20](80758a9e-0ca9-485d-ac06-735a5951b1f1) · [Review](80758a9e-0ca9-485d-ac06-735a5951b1f1#changes) |
-| `SRC-UCSD-APALG-SPRING-2019` | partial (`P-APAS19E`–`J`; #1–#4 blank on department PDF) → remains incomplete | same |
-| `SRC-UCSD-APALG-FALL-2025` | extracted complete (10 problems `P-APAF25A`–`J`) | [W3 APALG FA25 SP18](3a7bc272-4ad1-4645-b3e4-0d89499ec560) · [Review](3a7bc272-4ad1-4645-b3e4-0d89499ec560#changes) |
-| `SRC-UCSD-APALG-SPRING-2018` | extracted complete (8 problems `P-APAS18A`–`H`) | same |
+- [ ] Finish Applied Algebra Fall 2004.
+- [ ] Finish Applied Algebra Fall 2011.
+- [ ] Finish Applied Algebra Fall 2017.
+- [ ] Finish Applied Algebra Spring 2004.
+- [ ] Finish Applied Algebra Spring 2007.
+- [ ] Finish Applied Algebra Spring 2008.
+- [ ] Read each remaining Algebra sitting with an empty problem list.
+- [ ] Read each remaining Real Analysis sitting with an empty problem list.
+- [ ] Read each remaining Complex Analysis sitting with an empty problem list.
+- [ ] Read each remaining Topology sitting with an empty problem list.
+- [ ] Add problems in source order, one sitting and one card at a time.
+- [ ] Mark a collection complete only when its source supports that claim.
 
-Still empty APALG (6): FA04, FA11, FA17, SP04, SP07, SP08 — wave 1 agents still on those.
-TOP recent 2024–26 extracted ([W3 TOP extract recent](0deba47f-fadd-41e2-b133-dd13ee6962fb)). ALG/CA/RA: waves 2–3 in flight.
+### Finish partial extractions
 
-## W4 — Partial extractions (`completion: incomplete`, ~187)
+- [ ] Read the JHU analysis packet and disposition every section.
+- [ ] Read the UCSD topology compilation and disposition every section.
+- [ ] Review every remaining `completion: incomplete` collection.
+- [ ] Transcribe the readable remainder of one collection at a time.
+- [ ] State the exact unread remainder when a collection stays incomplete.
 
-Finish against the paper, or keep incomplete with a remark that states what remains.
-Incomplete + accurate remark is a valid terminal disposition for a pass.
-Do not mark complete to quiet the field.
+### Extract retained attachments
 
-### Dispositioned this fleet ([W4 incomplete remark pass](a0b5c346-a7c5-4740-bd45-2466b3eab37f), [Review](a0b5c346-a7c5-4740-bd45-2466b3eab37f#changes))
+Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
-| ID | Disposition |
-| --- | --- |
-| `SRC-UCSD-TOP-FALL-2014` | finished → complete (problems 6–8 as `P-9RRSR`, `P-WZLJO`, `P-5R1Y1`) |
-| `SRC-TEXT-HK71`, `SRC-TEXT-SMI`, `SRC-TEXT-MUN00`, `SRC-TEXT-HAT02`, `SRC-TEXT-DF04` | incomplete + exact remainder remarks |
-| `SRC-ART-ALG-2003-2009-PRELIMS` | incomplete + page/problem remainder remark |
-| `SRC-EMORY-CA-ARANGO` | incomplete + §2.1 remainder remark |
+- [ ] Freeze the retained document and page inventory.
+- [ ] Give each page a first-hand disposition.
+- [ ] Transcribe each readable problem from its source page.
+- [ ] Reconcile each transcription with its source.
+- [ ] Link each result to its collection and canonical problem.
+- [ ] Obtain an independent reread of each transcription.
+- [ ] Decide the 82 third-party licensing flags before publication.
+- [ ] Give `F08phdtop` a second read and settle its date label.
+- [ ] Disposition the 19 image-only Anki answers.
 
-Not yet read this pass: JHU analysis packet, TOP-290QUALS compilation, and remaining incompletes.
+### Resolve orphan cards
 
-## W5 — Orphan cards (~207–225)
+- [ ] Disposition each orphan listed in `BACKLOG.md`, one at a time.
+- [ ] Read one orphan and its known source evidence.
+- [ ] Attach it only to a real collection or authored reader location.
+- [ ] Record `not yet attachable` when no valid owner is known.
+- [ ] Repeat until every orphan has a source-based disposition.
 
-Disposition each orphan id after reading: real attachment (collection / wiki / publication a reader would use) or `not yet attachable` / `awaits collection X`. Synthetic links to zero the orphan count are forbidden.
+### Resolve duplicate-body candidates
 
-### Sample pass ([W5 orphan disposition sample](990a7508-5218-41b6-9909-3b85005012d7))
+- [ ] Disposition each duplicate-body group in `BACKLOG.md`, one at a time.
+- [ ] Read both cards and both sources for one group.
+- [ ] Keep separate cards when different sittings repeat a statement.
+- [ ] Correct or remove a card only when the source proves the defect.
+- [ ] Repeat until every current group has a recorded disposition.
 
-First 25 sorted orphans dispositioned; **no corpus/wiki edits** (honest non-attach).
+## 3. Reconcile imported sources
 
-| Cluster | Disposition |
-| --- | --- |
-| `P-APA17A`–`H`, `P-APA23A`–`J` (18) | Already on real APALG collections — **awaits wiki/manifest** linking those collections (collections themselves orphan; no applied-algebra Source Archive yet) |
-| `P-AMD-*` (4) | not yet attachable — notes amalgams / wrong sitting tags; do not dump onto official papers |
-| `P-B2P3P`, `P-B6E7Q`, `P-DLFQC` | not yet attachable — queue tags point at Fall 2019 but statements not on those papers |
+### Reconcile the second authored source
 
-### Attach pass ([W5 applied-algebra wiki archive](598922b8-0a1b-47f7-b07d-b20353d05e24), [Review +148 −40](598922b8-0a1b-47f7-b07d-b20353d05e24#changes))
+Owner: [issue #7](https://github.com/dzackgarza/new-qual-site/issues/7)
 
-- `wiki/50_Applied_Algebra/` Source Archive: **29** `[[SRC-UCSD-APALG-…]]` links; syllabus entry on `wiki/index.md`
+- [ ] Map each source item to a canonical card, variant, or reviewed collapse.
+- [ ] Verify each textbook source route.
+- [ ] Record every remaining source wording difference.
+- [ ] Resolve each difference by reading both authored versions.
 
-- Algebra Source Archive `## UCSD`: **39** `[[SRC-UCSD-ALG-…]]` exam sittings (homework stays under Contributed)
+### Complete the MakeMeAQual provenance join
 
-Collections with empty problem lists remain measurable stubs; extracted APALG/ALG/TOP problems become reachable once listed on those collections.
+Owner: [issue #8](https://github.com/dzackgarza/new-qual-site/issues/8)
 
-### Attach pass ([W5 CA RA TOP archives](d1b611b1-098c-4003-9682-e4d83d6b4789) · [Review](d1b611b1-098c-4003-9682-e4d83d6b4789#changes))
+- [ ] Verify each of the 508 source rows against the current corpus.
+- [ ] Confirm that each exact match has one semantic target.
+- [ ] Reconcile institution, area, date, season, source, and occurrence data.
+- [ ] Prove that an isolated import does not change curated output.
+- [ ] Decide where curated topics belong relative to importer output.
 
-- RA Source Archive `## UCSD`: **34** links
+## 4. Finish publication behavior
 
-- CA Source Archive `## UCSD`: **38** links
+### Publish authored pages
 
-- TOP Source Archive `## UCSD`: full corpus list (incl.
-  QUAL/SUMMER/290QUALS)
+Owners: [issue #5](https://github.com/dzackgarza/new-qual-site/issues/5) and
+[issue #23](https://github.com/dzackgarza/new-qual-site/issues/23)
 
-Remaining orphan work: see the attach pass below; AMD + ws9 notes clusters remain honestly unattached pending source identification.
+- [ ] Make source pages and emitted routes set-equal.
+- [ ] Retain all authored prose and references.
+- [ ] Validate every emitted fragment.
+- [ ] Inspect the real pages for remaining publisher defects.
 
-### Attach pass (2026-08-23)
+### Publish each subject branch
 
-| Cluster | Disposition |
-| --- | --- |
-| `P-TOP-WORKSHOP-2020-WS2A-P1`, `-WS2B-P3`, `-WS3A-P2`, `-WS3B-P4` | attached — listed on their `SRC-TOP-WORKSHOP-2020` sections; each statement verified against the worksheet PDF, canonical sitting card listed alongside |
-| `ST-DKYXZ` | attached — `ref:` on the algebra guide's Sylow Theory section, next to its target `T-3X5FF` |
-| `P-AMD-INYGESUE`, `-JWY5GWNO`, `-NFZKF2XH`, `-YDNWHPDM` | not yet attachable (re-confirmed) — multi-problem amalgams with solutions; no single sitting owns them; do not dump onto official papers |
-| ws9 algebra cluster: `P-B2P3P`, `P-B6E7Q`, `P-DLFQC`, `P-EHBDD`, `P-J2D5B`, `P-LCEHH`, `P-PBVSZ`, `P-ULNGG`, `P-VAZ7S` + their 9 `S-*` solutions | not yet attachable — reconstructions from the author's qual-prep notes; no sitting identified; local sitting-text hunt negative |
-| `P-E5NRO`, `P-TEEXE` | not yet attachable — same equivalence on ℝ; excluded from `SRC-UGA-RA-SPRING-2015` by prior review remark |
-| `P-UHFLP` | not yet attachable — QRS-derived, no sitting identified |
+- [ ] Complete Prelims publication under [issue #24](https://github.com/dzackgarza/new-qual-site/issues/24).
+- [ ] Complete Algebra publication under [issue #25](https://github.com/dzackgarza/new-qual-site/issues/25).
+- [ ] Complete Real Analysis publication under [issue #26](https://github.com/dzackgarza/new-qual-site/issues/26).
+- [ ] Complete Complex Analysis publication under [issue #27](https://github.com/dzackgarza/new-qual-site/issues/27).
+- [ ] Complete Topology publication under [issue #28](https://github.com/dzackgarza/new-qual-site/issues/28).
+- [ ] Complete Workshops publication under [issue #29](https://github.com/dzackgarza/new-qual-site/issues/29).
+- [ ] Map every branch criterion to current proof.
+- [ ] Settle every branch-specific gap before closing its issue.
 
-## W8 — Duplicate bodies (16 pairs)
+### Complete the reader and exam generator
 
-The audit measurement is a candidate list, not a verdict.
-Read every pair against its source before acting: merge nothing, keep genuine cross-sitting reuse.
+Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10)
 
-### Resolved 2026-08-23
+- [ ] Make the reader and generator use the same complete catalog.
+- [ ] Compare browser and generator problem sets with that catalog.
+- [ ] Exercise each supported facet and combined filter.
+- [ ] Inspect a statements-only generated exam.
+- [ ] Inspect a diagram, citation, occurrence link, hint, and solution.
+- [ ] Decide the supported `tikzcd` boundary.
+- [ ] Decide whether facets need separate typed controls.
 
-| Pair(s) | Verdict | Evidence |
-| --- | --- | --- |
-| `E-HAT-2.A-1…11` ↔ `E-HAT-2.B-1…11` (7 flagged, all 11 affected) | §2.A cards deleted as phantoms — Hatcher topic 2.A has no exercise set; all eleven held §2.B texts. `SRC-TEXT-HAT02` section removed; remark records that chapter 2's sets are §2.1 (31), §2.2 (43 − erratum), §2.3 (4), 2.B (11), 2.C (9). | Printed chapter PDF (`hatcher/AT/ATch2.pdf`): Exercises blocks fall only after §2.1–§2.3 and topics 2.B, 2.C. |
-| `E-SS3.PR-1` ↔ `E-SS4.EX-1` | Both kept, bodies corrected. Book truth: Ch4 Ex 1 = moderate-decrease problem (`E-SS4.EX-1` already correct); true Ch3 Problem 1 = Koebe-Bieberbach — written onto `E-SS3.PR-1`. | MinerU extraction of Stein–Shakarchi *Complex Analysis* (Zotero `BHVGEQWD`). |
-| `E-SS8.PR-3` ↔ `E-SS9.EX-3` | Both kept, bodies corrected. Ch9 Ex 3 = lattice-sum problem (`E-SS9.EX-3` correct); true Ch8 Problem 3 = hyperbolic metric / Schwarz-Pick — written onto `E-SS8.PR-3`. | Same extraction. |
-| `E-JTIXY` ↔ `E-SS3.EX-17`, `E-M3IWM` ↔ `E-SS1.EX-19`, `E-MTLQI` ↔ `E-SS1.EX-13` | Notes-layer twins deleted; scoped cards hold the book items (Ch2 Ex 15 via new verification, Ch1 Ex 13, Ch1 Ex 19 — author's citations "SS 3.2.15"/"Stein-Shakarchi 1.20" decode as vol III ch 2 #15 / ch 1 items with off-by-one). Wiki guide links repointed to the surviving ids; renderer fixed so dotted ids link (`tools/qualc/wiki.py`). | Same extraction; four authored wiki pages updated. |
-| `P-APA24H` ↔ `P-APAS24H` | Genuine reuse — kept both, no merge. Standard-representation problem appears verbatim as FA24 #8 and SP24 #8. | Both department PDFs fetched and read. |
-| `P-APAF04C` ↔ `P-APAS04C` | Genuine reuse — kept both. Pseudo-inverse/SVD min-norm problem verbatim in FA04 (#3) and SP04 (#3), sittings three months apart. | Both department scans read (OCR text). |
-| `P-APAF07B` ↔ `P-APAS04A` | Genuine reuse — kept both. "State and prove the Schur Decomposition Theorem" is FA07 Part 1 #2 and SP04 #1. | FA07 OCR text + SP04 department scan. |
-| `P-TOPF25B` ↔ `P-TOPS24D` | Genuine reuse — kept both. Cube-with-180°-face-gluing homology problem verbatim, same figure labels (P/Q/R), as Fall 2025 #2 and Summer 2024 #4. | Both 290 department PDFs read. |
+### Repair rendered-page residue
 
-### Resolved 2026-08-24
+Owner: [issue #41](https://github.com/dzackgarza/new-qual-site/issues/41)
 
-All twelve previously-unread pairs/triples read against their papers; every one is genuine statement reuse across sittings.
-No card bodies changed.
+- [ ] Reproduce each remaining rendered-page defect.
+- [ ] Repair one defect at a time.
+- [ ] Render and inspect the affected page after each repair.
 
-| Pair(s) | Verdict | Evidence |
-| --- | --- | --- |
-| `P-ALGS05B` ↔ `P-APAS05B`, `P-ALGS05F` ↔ `P-APAS05F` | Genuine reuse — kept both pairs. The May 23, 2005 Applied Algebra paper (Math 202, 9–10am) is Questions 1–6 of the same day's Algebra qual (Math 200, 9am–12pm; same examiners Gill/Small); triangular-matrix-normal is #2 on both papers, center-index-conjugacy-classes is #6. | Both department PDFs fetched and extracted. |
-| `P-APAF11D` ↔ `P-APAS04N` | Genuine reuse — kept both. Permutation-representation/coset-decomposition problem verbatim: Fall 2011 #4 and Spring 2004 #5. | Both department PDFs extracted. |
-| `P-CAF09D` ↔ `P-CASP09E` | Genuine reuse — kept both. Uniform-convergence/derivatives problem verbatim: Fall 2009 #4 and Spring 2009 (#May 20) #5. | Both department PDFs extracted. |
-| `P-TOPF03C` ↔ `P-TOPF04H`; `P-TOPF03E` ↔ `P-TOPF04F`; `P-TOPF03H` ↔ `P-TOPF04G` | Genuine reuse — kept both. Fall 2004 reuses a block of Fall 2003 questions with renumbered positions: hexagon-edge homology (§4 #3 → §5 #8), simply-connected 4-manifold (§4 #5 → §5 #6), universal cover of RP³∨S² (§4 #8 → §5 #7). | Roberts packet §§4–5 (printed pp. 395–396) extracted. |
-| `P-TOPF07H` ↔ `P-TOPS17F` | Genuine reuse — kept both. Odd-dimensional Euler characteristic problem verbatim: Fall 2007 #8 (printed p. 398) and Summer 2017 #6. | Packet §7 + Summer 2017 paper extracted. |
-| `P-TOPF09H` ↔ `P-TOPF18H` | Genuine reuse — kept both. F₂ contains Fₙ via covering spaces, verbatim: Fall 2009 #8 (printed p. 400) and Fall 2018 #8. | Packet §9 + Fall 2018 PDF extracted. |
-| `P-TOPS17B` ↔ `P-TOPSU15A` | Genuine reuse — kept both. Cube-with-90°-rotations homology problem verbatim: Summer 2015 #1 and Summer 2017 #2. | Both papers extracted. |
-| `P-TOPF09E` / `P-TOPF18E` / `P-TOPS25F` | Genuine reuse — kept all three. CP²ⁿ homotopy equivalence has degree +1, verbatim: Fall 2009 #5, Fall 2018 #5, Summer 2025 #6. | Packet §9 + both department PDFs extracted. |
-| `P-TOPF09G` / `P-TOPF18G` / `P-TOPF22F` | Genuine reuse — kept all three. Homology-sphere suspension problem verbatim: Fall 2009 #7, Fall 2018 #7, Fall 2022 #6. | Packet §9 + both department PDFs extracted. |
+### Prove the deployed site
 
-Adjacent fixes from the same reads:
+Owner: [issue #30](https://github.com/dzackgarza/new-qual-site/issues/30)
 
-- `SRC-UCSD-TOP-SPRING-2017`: its paper (`TOPOLOGY-EXAM.pdf`) self-identifies as "**27. Summer 2017**"; title/date corrected to Summer 2017 (id unchanged).
+- [ ] Verify the route and catalog manifests.
+- [ ] Visit every subject branch root and terminal route.
+- [ ] Exercise search, filters, disclosures, diagrams, citations, and generation.
+- [ ] Inspect widths of 375, 768, 1024, and 1440 CSS pixels.
+- [ ] Inspect browser console and network results.
+- [ ] Confirm that local and deployed artifacts use the same revision.
+- [ ] Record every unexercised path and nonclaim.
 
-- `SRC-UCSD-TOP-SPRING-2025`: its paper (`SP25_290_Topology_Qual.pdf`) self-identifies as "**45. Summer 2025**"; title/date corrected to Summer 2025 (id unchanged).
+Owner [issue #6](https://github.com/dzackgarza/new-qual-site/issues/6) closes only
+after all publication and subject-branch obligations hold.
 
-- Dead CA hrefs retargeted to the live department files: `SRC-UCSD-CA-FALL-2022` → `FA22_COMPLEX_220ABC.pdf`, `SRC-UCSD-CA-FALL-2023` → `complex-analysis-math220/QualFall23.pdf` (both fetched and verified against their self-identification).
+## 5. Complete source-preservation closeout
 
-Terminal state: `duplicate-bodies` rests at 4 violations — all verified genuine statement reuse across sittings; the measurement stays nonzero because the mathematics repeats.
+Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
-Adjacent fix from the same reads: `SP24_290_Topology_Qual.pdf` self-identifies as "**43. Summer 2024**"; `SRC-UCSD-TOP-SPRING-2024` title/date corrected to Summer 2024 (id unchanged — opaque handle).
-The compilation's section lists show UCSD 290 sittings come only in Fall/Summer flavors.
+- [ ] M4: record reviewer identity, assignment, revisions, exclusions, and task separation.
+- [ ] M5: obtain an independent criterion-to-evidence review.
+- [ ] M6: reconcile the issue, handoff, and parent-plan claims.
+- [ ] Decide `retain` or `archive` for each of the five source repositories.
+- [ ] Add a forwarding pointer before archiving any repository.
+- [ ] Record the resulting state of each archived repository.
 
-## Topic gaps (17)
+## 6. Resolve remaining owner decisions
 
-All cleared.
-The 16 `E-SS*.PR-*` Stein–Shakarchi problem cards classified by reading each statement; nearest existing topic labels used, none minted.
-`E-HAT-2.2-34` was a content-free tombstone ("Deleted — see errata"): card removed, `SRC-TEXT-HAT02` §2.2 list skips 34 with a remark.
+- [ ] Decide the disabled `\sech` source definition under [issue #14](https://github.com/dzackgarza/new-qual-site/issues/14).
+- [ ] Decide how to model the 27 solution write-ups stored as problems.
+- [ ] Decide whether sitting and problem pages satisfy occurrence reachability.
+- [ ] Record each decision on its owning GitHub issue.
 
-## W6 — Measurement hygiene
+## 7. Author solutions
 
-- [x] Tightened wiki_doctor `#todo` / Notion-host regexes (`(?<![/\w])#todo\b`, host-shaped `notion.(so|site)`). Tests green.
-  ([W6 wiki_doctor regex fix](daf9201b-bb90-4be9-b963-f21e2125b404), [Review +17 −3](daf9201b-bb90-4be9-b963-f21e2125b404#changes))
+Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
-- Do not reintroduce path→area provenance checks.
+- [ ] Select one unsolved card.
+- [ ] Read the problem and its source.
+- [ ] Write a complete structured proof.
+- [ ] Set `solved: true` on the same card.
+- [ ] Integrate a source solution only after independent mathematical review.
+- [ ] Commit the completed solution before selecting another card.
 
-## W7 — Workshops / publications guide
+## 8. Close the roadmap
 
-- [x] `publications/workshops-guide.yaml`: removed 28 dangling refs; substituted 3 packet collections (`SRC-RA-WORKSHOP`, `SRC-TOP-WORKSHOP`, `SRC-TOP-WORKSHOP-2020`); 110 existing refs kept.
-  `qualc check` OK. ([W7 workshops guide restore](03f09773-f996-4f2c-be1b-f4ebb209f94a), [Review +22 −53](03f09773-f996-4f2c-be1b-f4ebb209f94a#changes))
+Owner: [issue #1](https://github.com/dzackgarza/new-qual-site/issues/1)
 
-## Not this file
-
-Mass solution authorship (`solved: false` on ~2k problem cards) is standing content work, not a structural data defect.
-Track under issue #2 / solution batches, not here.
+- [ ] Close satisfied issues #5 through #11, #23 through #29, and #41.
+- [ ] Close issue #30 after current deployed proof.
+- [ ] Close issue #6 after all publisher and branch obligations hold.
+- [ ] Update issue #1 with every remaining open requirement.
+- [ ] Keep issue #2 open until its full mathematics program is complete.
