@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06AND
 kind: problem
-title: "4. Let be an increasing sequence of harmonic functions on the unit disk D such that as . (I.e., Prove that as , for all"
+title: "be an increasing sequence of harmonic functions on the unit disk D such that as"
 classification:
   areas:
   - complex-analysis

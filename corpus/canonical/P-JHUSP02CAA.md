@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAA
 kind: problem
-title: "1. Let f be an entire function such that the image of f does not intersect . Prove that is a constant"
+title: "is a constant."
 classification:
   areas:
   - complex-analysis

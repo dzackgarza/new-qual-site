@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANC
 kind: problem
-title: "3. Let denote the space of holomorphic functions on the unit disk D and let a) Show that for all compact sets , there is"
+title: "denote the space of holomorphic functions on the unit disk D and let $K \"
 classification:
   areas:
   - real-analysis

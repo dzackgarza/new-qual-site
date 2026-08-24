@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANG
 kind: problem
-title: "7. Fix and let be a sequence of Lebesgue measurable functions . Suppose there exists such that in , that is, a) Show tha"
+title: "be a sequence of Lebesgue measurable functions . Suppose there exists such that"
 classification:
   areas:
   - real-analysis

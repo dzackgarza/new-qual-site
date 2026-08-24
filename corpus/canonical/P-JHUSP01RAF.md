@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP01RAF
 kind: problem
-title: "Question 1. Suppose that are entire holomorphic functions with for all . Prove that there is a constant so that ·"
+title: Entire function dominated by another is a scalar multiple
 classification:
   areas:
   - real-analysis

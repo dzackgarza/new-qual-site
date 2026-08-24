@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAF
 kind: problem
-title: "1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic on the annulus , then f extends holomorphi"
+title: "1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic..."
 classification:
   areas:
   - complex-analysis

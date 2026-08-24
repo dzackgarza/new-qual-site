@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANA
 kind: problem
-title: "1. Use residues to calculate the integral"
+title: "the integral $$"
 classification:
   areas:
   - real-analysis

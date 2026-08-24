@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09AND
 kind: problem
-title: "4. Let be a non-decreasing function on [0, 1]. You may assume that f is differentiable almost everywhere. Prove that ##"
+title: "be a non-decreasing function on [0, 1]. You may assume that f is differentiable"
 classification:
   areas:
   - real-analysis

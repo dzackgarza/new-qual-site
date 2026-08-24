@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANK
 kind: problem
-title: "11. Suppose that is a sequence of functions in that converges weakly to a function . Either prove that lim or give a cou"
+title: "lim $\begin{array} { r } { \operatorname* { s u p } _ { n \infty } \vert \vert f"
 classification:
   areas:
   - real-analysis

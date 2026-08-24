@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANF
 kind: problem
-title: "6. a) Let and suppose that If has finite Lebesgue measure, i.e., , show that the Fourier transforms satisfy b) If , is ("
+title: "the Fourier transfo"
 classification:
   areas:
   - real-analysis

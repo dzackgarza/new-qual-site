@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANH
 kind: problem
-title: "6. Let be a continuous function with compact support. a) Prove that if are fixed then there is a constant A such that If"
+title: "if are fixed then there is a constant A such that $$ \| f * \varphi \| _ { L ^ {"
 classification:
   areas:
   - real-analysis

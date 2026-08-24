@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANO
 kind: problem
-title: "7. Determine all entire functions is holomorphic and is defined for all that satisfy the inequality"
+title: "7. Determine all entire functions is holomorphic and is defined for all that ..."
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANB
 kind: problem
-title: "2. Find all possible values of where γ ranges over all simple closed smooth curves contained in . (A simple closed curve"
+title: "all possible values of $\mathbb { C } \setminus \{ 1 , i \}$ . (A simple closed"
 classification:
   areas:
   - real-analysis

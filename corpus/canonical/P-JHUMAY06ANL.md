@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANL
 kind: problem
-title: "12. Let be an orthonormal sequence in . Prove that converges to zero a.e"
+title: "$$ converges to zero a.e."
 classification:
   areas:
   - real-analysis

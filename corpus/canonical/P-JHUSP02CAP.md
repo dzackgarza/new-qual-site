@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAP
 kind: problem
-title: "Problem 5. Use the result in Problem 4 to prove the following: If is a holomorphic function on with and for all , then f"
+title: Bound on |g(z)| for holomorphic g with Re(g) bounded and g(0) = 0
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANF
 kind: problem
-title: "6. Let be the unit circle with the usual Lebesgue measure. For each let be a nonnegative integrable function such that a"
+title: "be the unit circle with the usual Lebesgue measure. For each let be a nonnegativ"
 classification:
   areas:
   - real-analysis

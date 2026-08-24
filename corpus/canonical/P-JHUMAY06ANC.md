@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANC
 kind: problem
-title: "3. Find all entire functions f such that whenever . Give explicit formulas for the functions and give a proof for your a"
+title: "all entire functions f such that whenever . Give explicit formulas for the funct"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YBT6I
 kind: problem
-title: "7. Let denote the convolution of f and (a) Let be two square-integrable functions on R (with the usual Lebesgue measure)"
+title: "$g .f , g \in L ^ { 2 } ( \mathbb { R } )f * g$ bounded con"
 classification:
   areas:
   - real-analysis

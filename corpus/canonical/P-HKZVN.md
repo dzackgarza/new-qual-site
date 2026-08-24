@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-HKZVN
 kind: problem
-title: "Question 1.2"
+title: Fubini failure: iterated integrals differ when absolute integrability fails
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP01CAC
 kind: problem
-title: "Question 3. Assume that is holomorphic in and . Assume also that exists for each . Prove that exists for all z with"
+title: Convergence on a dense subset implies pointwise convergence for bounded holomorphic functions
 classification:
   areas:
   - complex-analysis

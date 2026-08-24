@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAM
 kind: problem
-title: "Problem 2. Fix a real number . Show that the equation has precisely one solution in the half plane and that this solutio"
+title: Unique real solution of z - alpha = e^{-z} in the right half-plane
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MW6OS
 kind: problem
-title: "3. Let H be an infinite dimensional Hilbert space. Determine if the following statements are true or false. If true, pro"
+title: "H be an infinite dimensional Hilbert space. Determine if the following statement"
 classification:
   areas:
   - real-analysis

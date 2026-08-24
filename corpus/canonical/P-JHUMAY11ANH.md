@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANH
 kind: problem
-title: "8. a) Let , for , be a sequence of functions. Suppose that there is a function such that Show that Also, give an example"
+title: ", for , be a sequence of functions. Suppose that there is a function such that $"
 classification:
   areas:
   - real-analysis

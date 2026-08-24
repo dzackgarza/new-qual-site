@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JVAGD
 kind: problem
-title: "1. Let be a measurable function and be a monotonic, absolutely continuous function on for every . Assume . Prove"
+title: "be a measurable function and be a monotonic, absolutely continuous function on f"
 classification:
   areas:
   - real-analysis

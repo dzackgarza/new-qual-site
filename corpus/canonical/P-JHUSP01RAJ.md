@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP01RAJ
 kind: problem
-title: "Question 5. Let f be a non-constant holomorphic function in the annulus with on the boundary. Show that f has at least t"
+title: Non-constant holomorphic function on annulus with constant modulus on boundary has at least two zeros
 classification:
   areas:
   - real-analysis

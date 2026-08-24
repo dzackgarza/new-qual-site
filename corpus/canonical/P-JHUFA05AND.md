@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05AND
 kind: problem
-title: "4. Suppose that is a sequence of elements of a Hilbert space X and that weakly for all (a) Show that Give an example sho"
+title: "$$ \| f \| \leq \operatorname* { l i m } _ { n \to \infty } { \big \| } f _ { n"
 classification:
   areas:
   - real-analysis

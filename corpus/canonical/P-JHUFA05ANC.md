@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANC
 kind: problem
-title: "3. Let be a sequence of functions in where is the unit circle We say that weakly if a s for all Question: Suppose that i"
+title: "be a sequence of functions in where is the unit circle We say that weakly if $\b"
 classification:
   areas:
   - real-analysis

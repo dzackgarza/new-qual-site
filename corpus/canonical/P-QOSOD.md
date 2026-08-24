@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-QOSOD
 kind: problem
-title: "3. Let denote the unit disk. What is the maximum possible value of for a holomorphic function with Find all such functio"
+title: "denote the unit disk. What is the maximum possible value of for a holomorphic fu"
 classification:
   areas:
   - complex-analysis

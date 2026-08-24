@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANA
 kind: problem
-title: "1. Find all meromorphic functions f on C such that Give explicit formulas for the functions and give a proof for your an"
+title: "all meromorphic functions f on C such that $$ Give explicit formulas for the fun"
 classification:
   areas:
   - complex-analysis

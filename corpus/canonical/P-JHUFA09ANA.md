@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANA
 kind: problem
-title: "1. Suppose is a sequence of continuous functions on [0, 1] which converges to a continuous function on [0, 1]. Does it f"
+title: "is a sequence of continuous functions on [0, 1] which converges to a continuous"
 classification:
   areas:
   - real-analysis

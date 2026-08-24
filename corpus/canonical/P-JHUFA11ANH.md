@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANH
 kind: problem
-title: "8. Show that there does not exist a function such that (Here dy is the convolution of f and I.)"
+title: "there does not exist a function such that $\begin{array} { r } { ( f * I ) ( x )"
 classification:
   areas:
   - real-analysis

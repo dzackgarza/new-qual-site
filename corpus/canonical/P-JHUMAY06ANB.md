@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANB
 kind: problem
-title: "2. How many zeros does the polynomial have in the unit disk How many zeros does it have in the disk of radius 2? Justify"
+title: "2. How many zeros does the polynomial $\{ | z | < 1 \} \stackrel { . } { : }\..."
 classification:
   areas:
   - complex-analysis

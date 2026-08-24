@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANH
 kind: problem
-title: "8. Prove that any function for any interval must be in for all between 1 and 2"
+title: "any function for any interval must be in for all between 1 and 2."
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09AND
 kind: problem
-title: "4. Let . Use a contour integral consisting of the interval and a semicircle of radius R to compute the Fourier transform"
+title: "the Fourier transform $$ Show th"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAD
 kind: problem
-title: "4. Let f be a holomorphic function which maps the unit disk into the unit disc. Show that for all z in the unit disc, an"
+title: "$$ for some real ."
 classification:
   areas:
   - complex-analysis

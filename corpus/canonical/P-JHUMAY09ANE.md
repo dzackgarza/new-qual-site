@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANE
 kind: problem
-title: "5. Let be two square-integrable functions on R (with the usual Lebesgue measure). Show that the convolution of and g is"
+title: "the convolution $f\mathbb { R } .$"
 classification:
   areas:
   - real-analysis

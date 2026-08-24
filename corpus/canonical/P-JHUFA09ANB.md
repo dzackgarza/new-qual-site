@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANB
 kind: problem
-title: "2. For which values of does there exist a constant such that Prove your assertion"
+title: "2. For which values of does there exist a constant such that $$ \left| \sum _..."
 classification:
   areas:
   - real-analysis

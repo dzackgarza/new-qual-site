@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G62KK
 kind: problem
-title: "1. Prove the following statement without using Ergoroff’s Theorem: Suppose is a sequence of measurable functions defined"
+title: "is a sequence of measurable functions defined on a measurable set a.e. on E and"
 classification:
   areas:
   - real-analysis

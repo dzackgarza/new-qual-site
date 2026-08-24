@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAB
 kind: problem
-title: "2. Let . on a set A,where the functions are integrable and for some constant M. Show that the limit exists and is finite"
+title: "the limit $$ f ( x ) = \operatorname* { l i m } _ { n \to \i"
 classification:
   areas:
   - complex-analysis

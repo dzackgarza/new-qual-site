@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANJ
 kind: problem
-title: "2. Let be two Lebesgue-measurable subsets of R, each of finite measure, and let and denote their respective characterist"
+title: "the convolution defined by $$ \chi _ { E } * \chi _ { F } ("
 classification:
   areas:
   - real-analysis

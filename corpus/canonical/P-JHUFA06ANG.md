@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANG
 kind: problem
-title: "7. Suppose that is a sequence of functions on [0, 1] with Prove that goes to zero weakly in"
+title: "that is a sequence of functions on [0, 1] with $f _ { j }L ^ { 2 } ( [ 0 , 1 ] )"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANC
 kind: problem
-title: "3. State whether each of the following two statements is true or false, and give either a proof or counterexample for ea"
+title: "3. State whether each of the following two statements is true or false, and g..."
 classification:
   areas:
   - complex-analysis

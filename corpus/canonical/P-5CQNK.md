@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-5CQNK
 kind: problem
-title: "2. Determine whether the following statements are true and false. If true, provide a proof. If false, prove a counter ex"
+title: "2. Determine whether the following statements are true and false. If true, pr..."
 classification:
   areas:
   - real-analysis

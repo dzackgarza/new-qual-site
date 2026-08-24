@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANB
 kind: problem
-title: "2. Let be a holomorphic function with simple zeros at the points and no other zeros. Determine the value of the integral"
+title: "be a holomorphic function with simple zeros at the points and no other zeros. De"
 classification:
   areas:
   - real-analysis

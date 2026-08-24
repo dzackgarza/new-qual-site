@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANP
 kind: problem
-title: "8. Let D denote the open unit disc, as in . Let be a surjective holomorphic mapping for which . Suppose that gives a two"
+title: "D denote the open unit disc, as in . Let be a surjective holomorphic mapping for"
 classification:
   areas:
   - complex-analysis

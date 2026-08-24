@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANM
 kind: problem
-title: "5. Let be the closed curve in the complex plane that is given in polar coordinates by cos θ, , oriented in the direction"
+title: "be the closed curve in the complex plane that is given in polar coordinates by c"
 classification:
   areas:
   - complex-analysis

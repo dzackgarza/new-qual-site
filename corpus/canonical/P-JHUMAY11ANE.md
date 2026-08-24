@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANE
 kind: problem
-title: "5. Let , for , be a sequence of functions such that and for all . Define the functions by for . Prove that the sequence"
+title: ", for , be a sequence of functions such that and for all . Define the functions"
 classification:
   areas:
   - real-analysis

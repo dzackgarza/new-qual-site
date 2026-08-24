@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANF
 kind: problem
-title: "6. Let a) Prove that f has a removable singularity at 0. b) What is the radius of convergence of the power series for f"
+title: "f has a removable singularity at 0. b) What is the radius of convergence of the"
 classification:
   areas:
   - real-analysis

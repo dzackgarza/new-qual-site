@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANC
 kind: problem
-title: "3. Let f be a holomorphic function on . Suppose that there exists a positive integer n such that contains at most n poin"
+title: "0 is a removable singularity or pole."
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANH
 kind: problem
-title: "8. Consider [0, 1] with Lebesgue measure. Let and define Show that"
+title: "and define $$"
 classification:
   areas:
   - real-analysis

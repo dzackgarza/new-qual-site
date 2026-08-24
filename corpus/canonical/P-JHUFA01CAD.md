@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA01CAD
 kind: problem
-title: "Problem 4. Suppose that is a one-to-one holomorphic function with Let be another holomorphic function with . Show that f"
+title: Schwarz-Pick: holomorphic self-map of disk maps smaller disks into smaller disks
 classification:
   areas:
   - complex-analysis

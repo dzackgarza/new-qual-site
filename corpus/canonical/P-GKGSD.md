@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-GKGSD
 kind: problem
-title: "5. Let f be a one-to-one analytic function defined on the unit disk D centered at the origin and . Show that the functio"
+title: "the function has a single-valued branch and is also one-to-one."
 classification:
   areas:
   - complex-analysis

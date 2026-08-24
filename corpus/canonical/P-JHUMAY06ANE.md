@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANE
 kind: problem
-title: "5. Let H denote the upper half plane . Suppose that is holomorphic, and What is the maximum possible value of . Give a r"
+title: "H denote the upper half plane . Suppose that is holomorphic, and What is the max"
 classification:
   areas:
   - complex-analysis

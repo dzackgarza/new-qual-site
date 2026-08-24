@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA01CAC
 kind: problem
-title: "Problem 3. Compute"
+title: Evaluate the integral of 1/(1+x^3) from 0 to infinity
 classification:
   areas:
   - complex-analysis

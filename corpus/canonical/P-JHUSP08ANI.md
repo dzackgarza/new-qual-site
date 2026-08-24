@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP08ANI
 kind: problem
-title: "0. (a) Show that sup (b) Show that there exists a sequence and a holomorphic function so that converges uniformly to on"
+title: "sup (b) Show that there exists a sequence and a holomorphic function so that con"
 classification:
   areas:
   - complex-analysis

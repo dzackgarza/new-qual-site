@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANK
 kind: problem
-title: "3. Let , where is a nonnegative measurable function on . Suppose that there are measurable functions and o n and real nu"
+title: ", where is a nonnegative measurable function on . Suppose that there are measura"
 classification:
   areas:
   - real-analysis

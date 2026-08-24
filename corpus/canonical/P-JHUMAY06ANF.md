@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANF
 kind: problem
-title: "6. Find all the poles of the function Determine the residue of f at each pole. Part II. Real Analysis. Do 5 out of the f"
+title: "all the poles of the function $$ Determine the residue of f at each pole. Part I"
 classification:
   areas:
   - complex-analysis

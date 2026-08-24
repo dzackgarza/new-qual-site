@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7QJS2
 kind: problem
-title: "4. Let f be a holomorphic function in the punctured disk satisfying a. Show that f has a removable singularity at the or"
+title: "f has a re"
 classification:
   areas:
   - complex-analysis

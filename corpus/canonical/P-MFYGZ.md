@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MFYGZ
 kind: problem
-title: "2. Let and denote the Hardy-Littlewood maximal function of in other words, where the supremum is taken over all balls co"
+title: "and denote the Hardy-Littlewood maximal function of in other words, $$ where the"
 classification:
   areas:
   - real-analysis

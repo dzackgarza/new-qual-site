@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANF
 kind: problem
-title: "6. Let such that . Prove that (continuous functions on the circle S1)"
+title: "(continuous functions on the circle S1)."
 classification:
   areas:
   - real-analysis

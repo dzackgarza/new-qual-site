@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RGBUN
 kind: problem
-title: "1. Evaluate by contour integration using the positively oriented contour from −R to R on the real axis (indented at the"
+title: "by contour integration using the positively oriented contour from −R to R on the"
 classification:
   areas:
   - complex-analysis

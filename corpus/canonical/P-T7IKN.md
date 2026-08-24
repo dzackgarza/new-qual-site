@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-T7IKN
 kind: problem
-title: "4. Prove that every closed convex subset of a Hilbert space has a unique element of minimal norm"
+title: "every closed convex subset of a Hilbert space has a unique element of minimal no"
 classification:
   areas:
   - real-analysis

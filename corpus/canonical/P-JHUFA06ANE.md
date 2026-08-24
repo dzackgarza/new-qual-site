@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANE
 kind: problem
-title: "5. Let X be the Banach space of continuous real-valued functions on [0, π] that vanish at 0 and equipped with the sup no"
+title: "X be the Banach space of continuous real-valued functions on [0, π] that vanish"
 classification:
   areas:
   - real-analysis

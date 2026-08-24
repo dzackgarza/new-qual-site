@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAL
 kind: problem
-title: "Problem 1. A meromorphic function on is a meromorphic function on C such that is also meromorphic. Show that a meromorph"
+title: Meromorphic on the Riemann sphere implies rational
 classification:
   areas:
   - complex-analysis

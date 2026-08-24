@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAE
 kind: problem
-title: "5. Let be the Laurent series expansion of on the annulus . Evaluate the coe cients for"
+title: "the coe cients for"
 classification:
   areas:
   - complex-analysis

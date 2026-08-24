@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WVJBX
 kind: problem
-title: "1. Suppose is a sequence that converges to 0 in the norm; in other words, Prove that there exists a subsequence such tha"
+title: "is a sequence that converges to 0 in the norm; in other words, $$ | | f _ { n }"
 classification:
   areas:
   - real-analysis

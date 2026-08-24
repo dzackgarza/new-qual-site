@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YPGAW
 kind: problem
-title: "5. For each natural number n, let be a sequence of absolutely integrable functions, and let R be another absolutely inte"
+title: "be a sequence of absolutely integrable functions, and let R be another absolutel"
 classification:
   areas:
   - real-analysis

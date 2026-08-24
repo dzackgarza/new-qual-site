@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANH
 kind: problem
-title: "8. Suppose that X is a real Banach space and, for all , the norm satisfies Suppose also that is a linear functional with"
+title: "that X is a real Banach space and, for all , the norm satisfies $f : X \to \math"
 classification:
   areas:
   - real-analysis

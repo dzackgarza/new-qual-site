@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAB
 kind: problem
-title: "2. Evaluate the integral Where"
+title: "the integral $a > 1$"
 classification:
   areas:
   - complex-analysis

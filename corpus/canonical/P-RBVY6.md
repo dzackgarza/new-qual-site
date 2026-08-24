@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RBVY6
 kind: problem
-title: "2. Let . Use residues to compute the Fourier transform"
+title: "the Fourier transform $$"
 classification:
   areas:
   - real-analysis

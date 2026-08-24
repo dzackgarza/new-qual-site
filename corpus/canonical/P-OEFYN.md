@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-OEFYN
 kind: problem
-title: "3. Let X and Y be Hilbert spaces and be a bounded linear operator. Prove that the following two conditions are equivalen"
+title: "the following two conditions are equivalent: (a) The image of the unit ball in X"
 classification:
   areas:
   - real-analysis

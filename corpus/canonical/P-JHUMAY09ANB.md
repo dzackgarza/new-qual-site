@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANB
 kind: problem
-title: "2. How many solutions does the equation have in the half-plane Re Prove that your answer is correct"
+title: "your answer is correct."
 classification:
   areas:
   - real-analysis

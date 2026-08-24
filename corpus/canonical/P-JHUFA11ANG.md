@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANG
 kind: problem
-title: "7. Let , be the distribution function of a given , where Does tend to a limit as Give a proof or counterexample"
+title: ", be the distribution function of a given , where Does tend to a limit as Give a"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP01CAD
 kind: problem
-title: "Question 4. Let be a positive harmonic function in the punctured plane Show that u must be constant"
+title: Positive harmonic function on the punctured plane is constant
 classification:
   areas:
   - complex-analysis

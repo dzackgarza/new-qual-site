@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANL
 kind: problem
-title: "4. Define by Show that if satisfies , for some is an eigenvector of U ) then f must be the zero element, i.e., almost ev"
+title: "4. Define by $f \in L ^ { 2 }U f = \lambda f\lambda \in \mathbb { R } \ ( \ma..."
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANI
 kind: problem
-title: "1. Suppose that . and that in . Suppose further that there is a constant so that Is it true that Give a proof or counter"
+title: "that . and that in . Suppose further that there is a constant so that $$ \int e"
 classification:
   areas:
   - real-analysis

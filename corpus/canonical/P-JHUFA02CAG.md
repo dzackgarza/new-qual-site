@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAG
 kind: problem
-title: "2. (a) (15 points) Show that there is no one-to-one holomorphic mapping of the open annulus onto the punctured unit disc"
+title: "there is no one-to-one holomorphic mapping of the open annulus onto the puncture"
 classification:
   areas:
   - complex-analysis

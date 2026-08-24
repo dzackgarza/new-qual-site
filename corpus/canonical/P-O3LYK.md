@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-O3LYK
 kind: problem
-title: "4. Let be an open set containing . Prove that if is a holomorphic function such that is nowhere zero on and is a holomor"
+title: "if is a holomorphic function such that is nowhere zero on and is a ho"
 classification:
   areas:
   - complex-analysis

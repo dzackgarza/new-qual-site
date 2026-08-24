@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-3A7RU
 kind: problem
-title: "Question 2.4"
+title: Punctured unit disk and annulus are not conformally equivalent
 classification:
   areas:
   - real-analysis

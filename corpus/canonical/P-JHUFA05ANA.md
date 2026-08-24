@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANA
 kind: problem
-title: "1. Let be a sequence of Lebesgue measurable functions on [0, 1], and assume that Show that"
+title: "be a sequence of Lebesgue measurable functions on [0, 1], and assume that $$ \op"
 classification:
   areas:
   - real-analysis

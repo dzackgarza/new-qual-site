@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11AND
 kind: problem
-title: "4. Suppose that U is a simply connected bounded domain in and let . Prove that for all , there exists a unique holomorph"
+title: "for all , there exists a unique holomorphic function such that and Notation: |A|"
 classification:
   areas:
   - real-analysis

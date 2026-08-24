@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA06ANB
 kind: problem
-title: "2. Let be a sequence of holomorphic functions on the unit disk D such that , where . Suppose that uniformly, where is no"
+title: "be a sequence of holomorphic functions on the unit disk D such that , where . Su"
 classification:
   areas:
   - complex-analysis

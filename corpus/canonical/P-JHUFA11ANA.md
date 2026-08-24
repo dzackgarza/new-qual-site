@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANA
 kind: problem
-title: "1. Determine the value of the integral where is the circle traversed counterclockwise"
+title: "1. Determine the value of the integral $\gamma\{ | z - 1 | < 2 \}$ traversed ..."
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4KTFN
 kind: problem
-title: "6. For this problem, consider just Lebesgue measurable functions . together with the Lebesgue measure. (a) State Fatou’s"
+title: "6. For this problem, consider just Lebesgue measurable functions . together w..."
 classification:
   areas:
   - real-analysis

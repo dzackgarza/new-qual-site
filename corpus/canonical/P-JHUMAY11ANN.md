@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANN
 kind: problem
-title: "6. Let D denote the open unit disc in C. Let be a function, and consider the property: has a double zero at for all natu"
+title: "D denote the open unit disc in C. Let be a function, and consider the property:"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANC
 kind: problem
-title: "3. Let U be a bounded domain in C, and let such that f is holomorphic. Let and suppose that . Prove that Hint: Consider"
+title: "Hint: Consider the sequence of iterates $f _ { n } = f \circ f \circ \cdot \cdot"
 classification:
   areas:
   - complex-analysis

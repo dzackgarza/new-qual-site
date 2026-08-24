@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANC
 kind: problem
-title: "3. Let I be the unit interval [0, 1], and for . and let For define , where is the characteristic function of . Prove tha"
+title: "I be the unit interval [0, 1], and for . and let $f \ \in \ L ^ { 1 } ( I , d x"
 classification:
   areas:
   - real-analysis

@@ -6,7 +6,8 @@
 
 (20) 4. Suppose $\left\{ \mathfrak { f } _ { \mathfrak { n } } ( z ) \right\} _ { \mathfrak { n } \geq 1 }$ is a sequence of analytic functions on a reqion A which converges uniformly on A to a function f(z). Show that f(z) is analytic on A and that the sequence of derivatives $\left\{ \mathfrak { f } _ { \mathfrak { n } } ^ { \prime } ( z ) \right\} _ { \mathfrak { n } \geq 1 }$ converges unifornly to ${ \pmb f } ^ { \prime } ( { \pmb z } )$ on compact subsets of A.
 
-(20) 5. Evaluate the integral $\int \limits _ { 0 } ^ { \infty } \frac { x d x } { x ^ { 4 } + 1 }$ via residue theory. It is not necessary to simplify your answer.
+(20) 5. Evaluate the integral $\int \limits _ { 0 } ^ { \infty } \frac { x d x } { x ^ { 4 } + 1 }$ via residue theory.
+It is not necessary to simplify your answer.
 
 (20) 6. Suppose that $\mathfrak { f } ( z ) \ : \mathbf { \bullet } \ : \mathbf { u } ( z ) \ : + \ : \mathrm { i } \ : \mathbf { v } ( \ : z )$ is an entire function with real part u(z) and imaginary part v(z) such that for all z, ${ \bf u } ( z ) ~ + ~ { \bf v } ( z ) ~ < ~ 1 .$ Prove that f(z) is a constant.
 

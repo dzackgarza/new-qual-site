@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAD
 kind: problem
-title: "4. Let K be a closed convex subset of a Hilbert space H. Show that for each , there is a unique such that"
+title: "for each , there is a unique such that $$"
 classification:
   areas:
   - complex-analysis

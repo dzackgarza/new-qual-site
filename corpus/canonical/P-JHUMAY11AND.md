@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11AND
 kind: problem
-title: "4. Suppose that is a harmonic function such that for all . Prove that u is constant. ## Part II. Real Analysis"
+title: "u is constant."
 classification:
   areas:
   - complex-analysis

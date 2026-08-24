@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-XYYHG
 kind: problem
-title: "Question 2.1"
+title: Automorphisms of the upper half plane
 classification:
   areas:
   - complex-analysis

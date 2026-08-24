@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANA
 kind: problem
-title: "1. Let P be a point in an open set U in C, and suppose that f is a meromorphic function on U with a pole at P . Prove th"
+title: "there is no holomorphic function such that for all"
 classification:
   areas:
   - complex-analysis

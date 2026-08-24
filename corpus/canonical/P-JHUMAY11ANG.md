@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANG
 kind: problem
-title: "7. Suppose that a) Prove that if 1 then b) Show that and therefore conclude that Hint: Given , consider"
+title: "if 1 then b) Show that and therefore"
 classification:
   areas:
   - real-analysis

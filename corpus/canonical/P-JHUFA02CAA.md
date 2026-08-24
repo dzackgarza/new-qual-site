@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAA
 kind: problem
-title: "1. Let on on and extended periodically of period 1. Define i. Show that is continuous everywhere. ii. Show that is diffe"
+title: "on on and extended periodically of period 1. Define i. Show that $f"
 classification:
   areas:
   - complex-analysis

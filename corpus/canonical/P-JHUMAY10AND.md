@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10AND
 kind: problem
-title: "4. Let h be a harmonic function on the domain Show that there exists a constant and a holomorphic function on such that"
+title: "h be a harmonic function on the domain $c \in \mathbb { R }fU\mathrm { R e } f ("
 classification:
   areas:
   - complex-analysis

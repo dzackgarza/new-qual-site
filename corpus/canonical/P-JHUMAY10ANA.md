@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANA
 kind: problem
-title: "1. Let f be a holomorphic function on the punctured disk Suppose that for all . Prove that f has a removable singularity"
+title: "f has a removable singularity at 0."
 classification:
   areas:
   - complex-analysis

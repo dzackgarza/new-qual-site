@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANJ
 kind: problem
-title: "8. Let E be a measurable subset of the line. a) Let be the characteristic function of when and when . If E has finite Le"
+title: "E be a measurable subset of the line. a) Let be the characteristic function of w"
 classification:
   areas:
   - real-analysis

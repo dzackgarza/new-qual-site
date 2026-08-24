@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANI
 kind: problem
-title: "7. Suppose that is continuous and has the property that for each x the map is differentiable and that for some measurabl"
+title: "that $t \to f ( x , t )\begin{array} { r } { \left| \frac { \partial f } { \part"
 classification:
   areas:
   - real-analysis

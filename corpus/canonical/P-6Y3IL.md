@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-6Y3IL
 kind: problem
-title: "Question 1.1"
+title: Weak convergence plus decay implies strong convergence in L^2(R^d)
 classification:
   areas:
   - real-analysis

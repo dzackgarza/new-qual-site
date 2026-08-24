@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANE
 kind: problem
-title: "5. Use contour integration to evaluate Hint: Consider the contour beginning with the segment from to then traversing a c"
+title: "$\varepsilonR ,R ,\varepsilon ,$ and finally t"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANG
 kind: problem
-title: "7. Quickies: a) Give an example of a function that is in but not in b) Give an example of a function that is in but not"
+title: "7. Quickies: a) Give an example of a function that is in but not in b) Give a..."
 classification:
   areas:
   - real-analysis

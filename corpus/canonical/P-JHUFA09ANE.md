@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANE
 kind: problem
-title: "5. Let State whether each of the following is true or false and give proofs for your answers: a) the complex derivative"
+title: "$f ^ { \prime } ( 0 )$ exists; b) f is holomorphic in a neighborhood of 0."
 classification:
   areas:
   - complex-analysis

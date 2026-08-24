@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WMJZB
 kind: problem
-title: "2. Let H be a Hilbert space equipped with an inner product and a norm Recall the following: A sequence is said converge"
+title: "H be a Hilbert space equipped with an inner product and a norm Recall the follow"
 classification:
   areas:
   - real-analysis

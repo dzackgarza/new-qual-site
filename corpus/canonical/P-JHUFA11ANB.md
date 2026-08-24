@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANB
 kind: problem
-title: "2. Let be a harmonic function such that h is bounded below. Prove that h is constant"
+title: "h is constant."
 classification:
   areas:
   - complex-analysis

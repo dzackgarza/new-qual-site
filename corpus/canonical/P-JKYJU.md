@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JKYJU
 kind: problem
-title: "6. Let be an open set containing the closure of a unit disk. If a sequence of holomorphic functions converges uniformly"
+title: "there exists an integer N such that"
 classification:
   areas:
   - complex-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUSP02CAC
 kind: problem
-title: "3. Classify all simply connected regions in the extended complex plane up to biholomorphic equivalence. i.e, give a list"
+title: "every simply connected region in the extended complex plane is biholomorphic equ"
 classification:
   areas:
   - complex-analysis

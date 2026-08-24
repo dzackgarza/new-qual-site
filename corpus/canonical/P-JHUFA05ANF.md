@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANF
 kind: problem
-title: "6. (a) Describe all the automorphisms of the upper half plane (holomorphic bijective maps from H onto H). (b) Describe a"
+title: "6. (a) Describe all the automorphisms of the upper half plane (holomorphic bi..."
 classification:
   areas:
   - complex-analysis

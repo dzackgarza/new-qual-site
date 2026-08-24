@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AZ2FY
 kind: problem
-title: "3. For a Radon measure with . Prove that for all , there exists a set s.t. 10  and for any x (Hint: use Vitali covering"
+title: "for all , there exists a set s.t. $\begin{array} { r } { \mathcal { M } ^ { 1 }"
 classification:
   areas:
   - real-analysis

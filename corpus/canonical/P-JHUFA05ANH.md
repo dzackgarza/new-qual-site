@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANH
 kind: problem
-title: "8. Let denote the upper half plane. (a) Does there exist a surjective holomorphic map Either give an example or prove th"
+title: "one does not exist. (b) Does there exist a surjective holomorphic map $f : \ma"
 classification:
   areas:
   - complex-analysis

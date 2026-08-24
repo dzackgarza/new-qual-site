@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANE
 kind: problem
-title: "5. Let , and denote its Fourier transform for . Suppose that in and that there is a finite constant M so that for some "
+title: ", and denote its Fourier transform for . Suppose that in and that there is a fin"
 classification:
   areas:
   - real-analysis

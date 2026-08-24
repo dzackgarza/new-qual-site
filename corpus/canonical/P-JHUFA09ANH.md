@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANH
 kind: problem
-title: "8. Let h be a harmonic function on the punctured disk Show that there exists a constant and a holomorphic function f on"
+title: "h be a harmonic function on the punctured disk $c \in \mathbb { R }\mathrm { R e"
 classification:
   areas:
   - complex-analysis

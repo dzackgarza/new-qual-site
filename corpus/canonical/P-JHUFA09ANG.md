@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANG
 kind: problem
-title: "7. Let be a holomorphic map from the upper half plane to the unit disk Suppose that . Determine the maximal possible val"
+title: "be a holomorphic map from the upper half plane to the unit disk Suppose that . D"
 classification:
   areas:
   - complex-analysis

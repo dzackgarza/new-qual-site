@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANB
 kind: problem
-title: "2. Let . Prove that"
+title: ". Prove that $$"
 classification:
   areas:
   - real-analysis

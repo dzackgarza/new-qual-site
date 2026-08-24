@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAJ
 kind: problem
-title: "5. Let (a) (5 points) Show that P has no multiple zeros. (b) (15 points) Determine the number of zeros of P that lie in"
+title: "P has no multiple zeros. (b) (15 points) Determine the number of zeros of P that"
 classification:
   areas:
   - complex-analysis

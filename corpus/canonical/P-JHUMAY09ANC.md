@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANC
 kind: problem
-title: "3. Let be a sequence of holomorphic functions such that , where , and U is a connected open set. Suppose that uniformly"
+title: "be a sequence of holomorphic functions such that , where , and U is a connected"
 classification:
   areas:
   - complex-analysis

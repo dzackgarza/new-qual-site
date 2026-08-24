@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANJ
 kind: problem
-title: "10. Suppose that is in . Prove that"
+title: "that is in . Prove that $$"
 classification:
   areas:
   - real-analysis

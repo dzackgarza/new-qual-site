@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANI
 kind: problem
-title: "9. Suppose that f is in . Prove directly (i.e., without citing properties of the Fourier transform) that the function is"
+title: "that f is in . Prove directly (i.e., without citing properties of the Fourier tr"
 classification:
   areas:
   - real-analysis
