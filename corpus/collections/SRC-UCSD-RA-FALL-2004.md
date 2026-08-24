@@ -31,16 +31,3 @@ source:
     year: 2004
 ---
 
-::: remark
-UCSD real-analysis Fall 2004.
-:::
-
-1. [[P-RAF04A]]
-2. [[P-RAF04B]]
-3. [[P-RAF04C]]
-4. [[P-RAF04D]]
-5. [[P-RAF04E]]
-6. [[P-RAF04F]]
-7. [[P-RAF04G]]
-8. [[P-RAF04H]]
-
