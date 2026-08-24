@@ -9,7 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance: []
+provenance:
+- assets/attachments/JHU Years of Analysis Exams.pdf
 source:
   source_kind: compilation
   problems:
@@ -28,6 +29,5 @@ source:
 ::: remark
 JHU (undated)
 
-Undated contributed real-analysis artifact labeled JHU. Seven cards starting with $A^2(U)$ as a Hilbert space (`P-S3P7E`). Not one sitting paper: overlapping statements appear across sittings in `SRC-JHU-ANALYSIS-EXAMS` (`assets/attachments/JHU Years of Analysis Exams.pdf`, the same packet as `math.jhu.edu/gradexam/analysisexams.pdf`), which already owns that href.
-This card does not inherit it.
+Undated contributed real-analysis artifact labeled JHU. Seven cards starting with $A^2(U)$ as a Hilbert space (`P-S3P7E`). Not one sitting paper: overlapping statements appear across sittings in `SRC-JHU-ANALYSIS-EXAMS` (`assets/attachments/JHU Years of Analysis Exams.pdf`, the same packet as `math.jhu.edu/gradexam/analysisexams.pdf`).
 :::
