@@ -13,7 +13,8 @@ relations: []
 
 (a) State Rouche's Theorem.
 
-(b) Let $\varphi : \Omega \to \mathbb{C}$ be holomorphic on an open convex set $\Omega$. Show that for $z, w \in \Omega$
+(b) Let $\varphi : \Omega \to \mathbb{C}$ be holomorphic on an open convex set $\Omega$.
+Show that for $z, w \in \Omega$
 
 $$|\varphi(z) - \varphi(w)| \leq \max_{\xi \in L} |\varphi'(\xi)| \cdot |z - w|,$$
 

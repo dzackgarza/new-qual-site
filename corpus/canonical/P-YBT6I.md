@@ -20,6 +20,8 @@ $$
 
 denote the convolution of f and $g .$
 
-(a) Let $f , g \in L ^ { 2 } ( \mathbb { R } )$ be two square-integrable functions on R (with the usual Lebesgue measure). Show that the convolution $f * g$ bounded continuous function on R.
+(a) Let $f , g \in L ^ { 2 } ( \mathbb { R } )$ be two square-integrable functions on R (with the usual Lebesgue measure).
+Show that the convolution $f * g$ bounded continuous function on R.
 
-(b) Instead let $h \in L ^ { 1 } ( \mathbb { R } )$ be fixed. Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \mathbb { R } ) \to L ^ { 1 } ( \mathbb { R } )$
+(b) Instead let $h \in L ^ { 1 } ( \mathbb { R } )$ be fixed.
+Show that $A ( f ) = f * h$ is a bounded operator $L ^ { 1 } ( \mathbb { R } ) \to L ^ { 1 } ( \mathbb { R } )$

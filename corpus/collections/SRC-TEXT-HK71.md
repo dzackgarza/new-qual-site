@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://search.worldcat.org/title/139865
 - https://www.gbv.de/dms/hbz/toc/ht000627471.pdf

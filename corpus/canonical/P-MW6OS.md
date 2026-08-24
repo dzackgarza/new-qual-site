@@ -12,7 +12,10 @@ solved: false
 relations: []
 ---
 
-3. Let H be an infinite dimensional Hilbert space. Determine if the following statements are true or false. If true, provide a proof. If false, provide a counter example.
+3. Let H be an infinite dimensional Hilbert space.
+   Determine if the following statements are true or false.
+   If true, provide a proof.
+   If false, provide a counter example.
 
 (a) A sequence $\left\{ f _ { n } \right\}$ in H with $\left| \left| f _ { n } \right| \right| = 1$ for all n has a subsequence that converges in H.
 

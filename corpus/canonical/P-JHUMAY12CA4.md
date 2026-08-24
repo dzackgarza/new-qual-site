@@ -11,4 +11,5 @@ solved: false
 relations: []
 ---
 
-Let $U = \{z \in \mathbb{C} \mid \operatorname{Im}(z) \leq \frac{\pi}{2}\}$ and $f$ be an entire function satisfying $f(U) \subset U$, $f(-1) = 0$, $f(0) = 1$. Prove that $f(z) = z + 1$.
+Let $U = \{z \in \mathbb{C} \mid \operatorname{Im}(z) \leq \frac{\pi}{2}\}$ and $f$ be an entire function satisfying $f(U) \subset U$, $f(-1) = 0$, $f(0) = 1$.
+Prove that $f(z) = z + 1$.

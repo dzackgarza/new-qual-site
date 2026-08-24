@@ -11,7 +11,9 @@ solved: false
 relations: []
 ---
 
-Let $1 \leq p < q < \infty$. Which of the following statements (i)-(vi) are true, and which are false? Justify all the negative answers by a counterexample, but you do not have to justify the positive answers.
+Let $1 \leq p < q < \infty$.
+Which of the following statements (i)-(vi) are true, and which are false?
+Justify all the negative answers by a counterexample, but you do not have to justify the positive answers.
 
 (i) $L^p(\mathbb{R}) \subset L^q(\mathbb{R})$
 

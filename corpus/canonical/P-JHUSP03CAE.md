@@ -11,4 +11,5 @@ solved: false
 relations: []
 ---
 
-Let $f : \mathbb{C} \to \mathbb{C}$ be meromorphic with a pole at infinity. Show that $f$ must be a rational function.
+Let $f : \mathbb{C} \to \mathbb{C}$ be meromorphic with a pole at infinity.
+Show that $f$ must be a rational function.

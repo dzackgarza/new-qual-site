@@ -12,4 +12,5 @@ solved: false
 relations: []
 ---
 
-2. Let $h : \mathbb { C } \to \mathbb { R }$ be a harmonic function such that h is bounded below. Prove that h is constant.
+2. Let $h : \mathbb { C } \to \mathbb { R }$ be a harmonic function such that h is bounded below.
+   Prove that h is constant.

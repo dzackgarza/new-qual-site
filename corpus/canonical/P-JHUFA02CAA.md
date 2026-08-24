@@ -16,7 +16,8 @@ relations: []
 
 i. Show that $f ( x )$ is continuous everywhere.
 
-ii. Show that $f ( x )$ is differentiable nowhere.
+ii.
+Show that $f ( x )$ is differentiable nowhere.
 
 Hint: Consider the difference quotients
 

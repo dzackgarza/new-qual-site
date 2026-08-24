@@ -11,7 +11,8 @@ solved: false
 relations: []
 ---
 
-Let $\gamma$ be the closed curve in the complex plane that is given in polar coordinates by $r = 2 + 3\cos\theta$, $0 \leq \theta \leq 4\pi$, oriented in the direction of increasing $\theta$. Let
+Let $\gamma$ be the closed curve in the complex plane that is given in polar coordinates by $r = 2 + 3\cos\theta$, $0 \leq \theta \leq 4\pi$, oriented in the direction of increasing $\theta$.
+Let
 
 $$f(z) = \frac{e^z}{2z - 1} + \frac{\sin(2z)}{(z - 2)^2} + \frac{\cos(5z)}{(z + 5i)^3}.$$
 

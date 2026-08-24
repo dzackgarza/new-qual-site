@@ -12,7 +12,9 @@ solved: false
 relations: []
 ---
 
-2. Determine whether the following statements are true and false. If true, provide a proof. If false, prove a counter example.
+2. Determine whether the following statements are true and false.
+   If true, provide a proof.
+   If false, prove a counter example.
 
 (a) If $f ( x )$ is a increasing, continuous function on the interval $[ 0 , 1 ]$ such that $f ( 0 ) = 0$ and $f ( 1 ) = 1$ , then there exists a set $E \subset [ 0 , 1 ]$ of positive measure such that $f ^ { \prime } ( x ) > 0$
 

@@ -101,7 +101,8 @@ Let $L ^ { 2 } = L ^ { 2 } ( \mathbb R ^ { d } )$ be the real Hilbert space endo
 
 • Prove that if $f _ { n }$ converges weakly to f and $\| f _ { n } \| \to \| f \|$ then $f _ { n }$ converges to $f$ in the strong topology.
 
-• Prove that there exists a sequence of bounded functions in $L ^ { 2 }$ which is not converging in $L ^ { 2 }$ but weakly converging up to a subsequence possibly. What do you conclude on the unit ball of $L ^ { 2 }$ endowed with the strong topology ?
+• Prove that there exists a sequence of bounded functions in $L ^ { 2 }$ which is not converging in $L ^ { 2 }$ but weakly converging up to a subsequence possibly.
+What do you conclude on the unit ball of $L ^ { 2 }$ endowed with the strong topology ?
 
 ## Problem 3
 
@@ -125,7 +126,8 @@ One can use the inequality $\textstyle a b \leq { \frac { a ^ { p } } { p } } + 
 
 ## Problem 4
 
-Let f be an entire function. Suppose that for each $z _ { 0 } \in \mathbb { C }$ , the power series expansion
+Let f be an entire function.
+Suppose that for each $z _ { 0 } \in \mathbb { C }$ , the power series expansion
 
 $$
 f ( z ) = \sum _ { n = 0 } ^ { \infty } c _ { n } ( z - z _ { 0 } ) ^ { n }
@@ -139,7 +141,8 @@ Let U be an open subset of C. Let $z _ { \mathrm { 0 } }$ be a point in U, and s
 
 ## Problem 6
 
-Suppose f is holomorphic in an annulus $r < | z | < R ,$ and there exists a sequence of holomorphic polynomials $p _ { n }$ converging to f uniformly on compact subset of the annulus. Show that f can be extended to the disc $\{ | z | < R \}$ as a holomorphic function.
+Suppose f is holomorphic in an annulus $r < | z | < R ,$ and there exists a sequence of holomorphic polynomials $p _ { n }$ converging to f uniformly on compact subset of the annulus.
+Show that f can be extended to the disc $\{ | z | < R \}$ as a holomorphic function.
 
 ## Problem 7
 
@@ -149,7 +152,8 @@ $$
 \| f \| _ { L ^ { 2 } ( U ) } = \left( \int _ { U } | f | ^ { 2 } d x d y \right) ^ { 1 / 2 } .
 $$
 
-• Let $f : U \to \mathbb { C }$ be a holomorphic function. Show that for any compact set $K \subset U$ , there is a constant $C _ { K } .$ , such that
+• Let $f : U \to \mathbb { C }$ be a holomorphic function.
+Show that for any compact set $K \subset U$ , there is a constant $C _ { K } .$ , such that
 
 $$
 \operatorname* { s u p } _ { z \in K } | f ( z ) | \leq C _ { K } \| f \| _ { L ^ { 2 } ( U ) } .

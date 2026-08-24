@@ -12,4 +12,5 @@ solved: false
 relations: []
 ---
 
-3. Find all entire functions f such that $| f ( z ) | \le | z | ^ { 3 / 2 }$ whenever $| z | \geq 1$ . Give explicit formulas for the functions and give a proof for your answer. (An entire function is a holomorphic function on C.)
+3. Find all entire functions f such that $| f ( z ) | \le | z | ^ { 3 / 2 }$ whenever $| z | \geq 1$ . Give explicit formulas for the functions and give a proof for your answer.
+   (An entire function is a holomorphic function on C.)

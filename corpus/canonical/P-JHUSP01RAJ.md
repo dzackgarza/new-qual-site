@@ -12,4 +12,5 @@ solved: false
 relations: []
 ---
 
-Question 5. Let f be a non-constant holomorphic function in the annulus $1 < | z | < 2$ with $| f | \equiv 5$ on the boundary. Show that f has at least two zeros.
+Question 5. Let f be a non-constant holomorphic function in the annulus $1 < | z | < 2$ with $| f | \equiv 5$ on the boundary.
+Show that f has at least two zeros.

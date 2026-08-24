@@ -12,4 +12,5 @@ solved: false
 relations: []
 ---
 
-1.) Let f be a continuous function on $[ 0 , \infty )$ such that lim $_ { 1 _ { X \to \infty } } f ( x )$ exists (finitely). Prove that f is uniformly continuous.
+1.) Let f be a continuous function on $[ 0 , \infty )$ such that lim $_ { 1 _ { X \to \infty } } f ( x )$ exists (finitely).
+Prove that f is uniformly continuous.

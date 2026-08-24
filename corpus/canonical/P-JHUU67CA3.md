@@ -11,4 +11,5 @@ solved: false
 relations: []
 ---
 
-Suppose $f$ is holomorphic in an annulus $r < |z| < R$, and there exists a sequence of holomorphic polynomials $p_n$ converging to $f$ uniformly on compact subsets of the annulus. Show that $f$ can be extended to the disc $\{|z| < R\}$ as a holomorphic function.
+Suppose $f$ is holomorphic in an annulus $r < |z| < R$, and there exists a sequence of holomorphic polynomials $p_n$ converging to $f$ uniformly on compact subsets of the annulus.
+Show that $f$ can be extended to the disc $\{|z| < R\}$ as a holomorphic function.

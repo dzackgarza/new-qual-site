@@ -24,4 +24,4 @@ If you use Young’s (convolution) inequality, you should prove it.
 
 b) Show by example that such a general inequality cannot hold for $p > q$
 
-##
+## 

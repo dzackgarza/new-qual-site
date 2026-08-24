@@ -24,4 +24,5 @@ $$
 \int _ { \Omega } { \widehat { f } } _ { j } ( \xi ) d \xi \to \int _ { \Omega } { \widehat { f } } ( \xi ) d \xi .\tag{1}
 $$
 
-b) If $| \Omega | = \infty$ , is (1) still always valid? Give a proof or counterexample.
+b) If $| \Omega | = \infty$ , is (1) still always valid?
+Give a proof or counterexample.

@@ -20,4 +20,5 @@ $$
 
 Determine the residue of f at each pole.
 
-Part II. Real Analysis. Do 5 out of the following 6 problems.
+Part II. Real Analysis.
+Do 5 out of the following 6 problems.

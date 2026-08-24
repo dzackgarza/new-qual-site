@@ -12,7 +12,8 @@ solved: false
 relations: []
 ---
 
-4. Let f be a holomorphic function which maps the unit disk into the unit disc. Show that
+4. Let f be a holomorphic function which maps the unit disk into the unit disc.
+   Show that
 
 $$
 | f ( z ) + f ( - z ) | \leq 2 | z | ^ { 2 }

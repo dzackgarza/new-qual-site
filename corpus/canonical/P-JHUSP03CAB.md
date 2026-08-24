@@ -11,6 +11,7 @@ solved: false
 relations: []
 ---
 
-Let $f : \Delta \to \Delta$ be a holomorphic function with $f(0) = 0$ and $|f'(0)| = M$. If $0 \neq w \in \Delta$ is any other zero of $f(z)$, show that:
+Let $f : \Delta \to \Delta$ be a holomorphic function with $f(0) = 0$ and $|f'(0)| = M$.
+If $0 \neq w \in \Delta$ is any other zero of $f(z)$, show that:
 
 $$\frac{M}{1 + M} \leq |w|.$$

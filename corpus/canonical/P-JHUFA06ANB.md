@@ -16,4 +16,5 @@ relations: []
 
 a) Prove that $f _ { 0 }$ has at most one zero in $D$
 
-b) Can $f _ { 0 }$ have no zeros? If so, give a necessary and sufficient condition on the $c _ { n }$ for this to happen.
+b) Can $f _ { 0 }$ have no zeros?
+If so, give a necessary and sufficient condition on the $c _ { n }$ for this to happen.

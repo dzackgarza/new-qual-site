@@ -15,7 +15,8 @@ relations: []
 
 (a) $\{ f _ { k } \}$ converges to f if and only if $\vert \vert f _ { k } \vert \vert  \vert \vert f \vert \vert$ and $\{ f _ { k } \}$ converges weakly to $f .$
 
-(b) If H is a finite dimensional Hilbert space, then the weak convergence implies convergence. Give a counter example to show that weak convergence does not necessarily imply convergence in an infinite dimensional Hilbert space.
+(b) If H is a finite dimensional Hilbert space, then the weak convergence implies convergence.
+Give a counter example to show that weak convergence does not necessarily imply convergence in an infinite dimensional Hilbert space.
 
 (c) If a sequence $\{ f _ { k } \}$ converges weakly to $f ,$ then there exists a subsequence $\{ f _ { k _ { n } } \}$ such that
 

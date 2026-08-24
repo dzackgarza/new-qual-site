@@ -21,6 +21,8 @@ and
 
 $$\int_0^1 f_n(x) \, dx = 1.$$
 
-(a) Is it always true that $\int_0^1 f(x) \, dx \leq 1$? Provide a proof if it is true or provide a counterexample if it is false.
+(a) Is it always true that $\int_0^1 f(x) \, dx \leq 1$?
+Provide a proof if it is true or provide a counterexample if it is false.
 
-(b) Is it always true that $\int_0^1 f(x) \, dx \geq 1$? Provide a proof if it is true or provide a counterexample if it is false.
+(b) Is it always true that $\int_0^1 f(x) \, dx \geq 1$?
+Provide a proof if it is true or provide a counterexample if it is false.

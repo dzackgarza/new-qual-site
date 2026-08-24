@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://www.wiley.com/en-us/Abstract+Algebra%2C+3rd+Edition-p-9780471433347
 source:

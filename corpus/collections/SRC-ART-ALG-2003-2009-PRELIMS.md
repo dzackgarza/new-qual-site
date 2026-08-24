@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/algebra_2003-2009_prelims.pdf
 source:
@@ -61,13 +61,50 @@ source:
     - P-H3PWT
     - P-F5ZKB
   - name: Algebra Qualifying Exam of July 12, 2006 (pp. 23–26)
-    problems: []
+    problems:
+    - P-ARTALG-JU06-1
+    - P-ARTALG-JU06-2
+    - P-ARTALG-JU06-3
+    - P-ARTALG-JU06-4
+    - P-ARTALG-JU06-5
+    - P-ARTALG-JU06-6
+    - P-ARTALG-JU06-7
+    - P-ARTALG-JU06-8
+    - P-ARTALG-JU06-9
+    - P-ARTALG-JU06-10
+    - P-ARTALG-JU06-11
+    - P-ARTALG-JU06-12
   - name: Algebra Preliminary Examination, Summer 2005 (pp. 27–28)
-    problems: []
+    problems:
+    - P-ARTALG-SU05-1
+    - P-ARTALG-SU05-2
+    - P-ARTALG-SU05-3
+    - P-ARTALG-SU05-4
+    - P-ARTALG-SU05-5
+    - P-ARTALG-SU05-6
   - name: ALGEBRA PRELIMINARY EXAM – 2004 (pp. 29–38)
-    problems: []
+    problems:
+    - P-ARTALG-AL04-1
+    - P-ARTALG-AL04-2
+    - P-ARTALG-AL04-3
+    - P-ARTALG-AL04-4
+    - P-ARTALG-AL04-5
+    - P-ARTALG-AL04-6
+    - P-ARTALG-AL04-7
+    - P-ARTALG-AL04-8
+    - P-ARTALG-AL04-9
+    - P-ARTALG-AL04-10
   - name: Algebra Preliminary Examination, July 28, 2003 (pp. 39–48)
-    problems: []
+    problems:
+    - P-ARTALG-JU03-1
+    - P-ARTALG-JU03-2
+    - P-ARTALG-JU03-3
+    - P-ARTALG-JU03-4
+    - P-ARTALG-JU03-5
+    - P-ARTALG-JU03-6
+    - P-ARTALG-JU03-7
+    - P-ARTALG-JU03-8
+    - P-ARTALG-JU03-9
   area: algebra
 ---
 

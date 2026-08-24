@@ -12,7 +12,8 @@ solved: false
 relations: []
 ---
 
-3. Let X and Y be Hilbert spaces and $L : X \to Y$ be a bounded linear operator. Prove that the following two conditions are equivalent:
+3. Let X and Y be Hilbert spaces and $L : X \to Y$ be a bounded linear operator.
+   Prove that the following two conditions are equivalent:
 
 (a) The image $L ( \mathbf { B } )$ of the unit ball in X has compact closure in $Y .$
 

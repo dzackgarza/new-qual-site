@@ -12,7 +12,8 @@ solved: false
 relations: []
 ---
 
-5. Let $f , g \in L ^ { 2 } ( \mathbb { R } )$ be two square-integrable functions on R (with the usual Lebesgue measure). Show that the convolution
+5. Let $f , g \in L ^ { 2 } ( \mathbb { R } )$ be two square-integrable functions on R (with the usual Lebesgue measure).
+   Show that the convolution
 
 $$
 f * g ( x ) = \int _ { \mathbb { R } } f ( y ) g ( x - y ) d y

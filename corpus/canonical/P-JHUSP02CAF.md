@@ -16,4 +16,6 @@ relations: []
 
 ## Real Analysis Qualifying Exam, Fall 2001
 
-Instructions: Attempt to do all problems. Each is worth 20 points. All the measures involved are Lebesgue measure.
+Instructions: Attempt to do all problems.
+Each is worth 20 points.
+All the measures involved are Lebesgue measure.

@@ -11,7 +11,8 @@ solved: false
 relations: []
 ---
 
-4. Let $f ( x )$ be a non-decreasing function on [0, 1]. You may assume that f is differentiable almost everywhere. Prove that
+4. Let $f ( x )$ be a non-decreasing function on [0, 1]. You may assume that f is differentiable almost everywhere.
+   Prove that
 
 $$
 \int _ { 0 } ^ { 1 } f ^ { \prime } ( x ) d x \leq f ( 1 ) - f ( 0 ) .

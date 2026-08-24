@@ -14,7 +14,8 @@ relations: []
 
 5.) Let $1 \leq p < q < \infty$ . Which of the following statements
 
-(i)-(vi) are true, and which are false? Justify all the negative
+(i)-(vi) are true, and which are false?
+Justify all the negative
 
 answers by a counterexample, but you do not have to justify the
 
@@ -38,6 +39,10 @@ Justify your answer to the following question:
 
 ## COMPLEX ANALYSIS CORE QUALIFYING EXAM, FALL 2001
 
-Instructions: Attempt FOUR of the following problems. Each is worth 25 points. Please label clearly which four of the five problems you want graded. Show all your work.
+Instructions: Attempt FOUR of the following problems.
+Each is worth 25 points.
+Please label clearly which four of the five problems you want graded.
+Show all your work.
 
-Notation: C denotes the complex numbers. For $z \in \mathbb { C } , \operatorname { R e } ( z )$ denotes the real part of $z .$ For each $r \geq 0 , D _ { r } ( 0 ) = \{ z \in \mathbb { C } : | z | < r \}$ .
+Notation: C denotes the complex numbers.
+For $z \in \mathbb { C } , \operatorname { R e } ( z )$ denotes the real part of $z .$ For each $r \geq 0 , D _ { r } ( 0 ) = \{ z \in \mathbb { C } : | z | < r \}$ .

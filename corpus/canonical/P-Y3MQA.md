@@ -11,6 +11,7 @@ solved: false
 relations: []
 ---
 
-Let $D = \{z \in \mathbb{C} : |z| < 1\}$ and $f : D \to D$ be a holomorphic function. Prove
+Let $D = \{z \in \mathbb{C} : |z| < 1\}$ and $f : D \to D$ be a holomorphic function.
+Prove
 
 $$\frac{|f(0)| - |z|}{1 + |f(0)| \cdot |z|} \leq |f(z)| \leq \frac{|f(0)| + |z|}{1 - |f(0)| \cdot |z|}, \quad \forall z \in D.$$

@@ -11,4 +11,5 @@ solved: false
 relations: []
 ---
 
-Question 6. Let $P ( z )$ be a polynomial. Show that all zeros of $P ^ { \prime } ( z )$ lie in the convex hull of the zeros of $P ( z )$
+Question 6. Let $P ( z )$ be a polynomial.
+Show that all zeros of $P ^ { \prime } ( z )$ lie in the convex hull of the zeros of $P ( z )$

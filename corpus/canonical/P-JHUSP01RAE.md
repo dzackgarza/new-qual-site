@@ -22,4 +22,6 @@ Prove that $T f \in C ( [ 0 , 1 ] )$ . Moreover, prove that $\Omega = \{ T f : \
 
 ## COMPLEX ANALYSIS CORE QUALIFYING EXAM, SPRING 2001
 
-Directions: Do FIVE of the following six questions; they are weighted equally. Label clearly which five that you want graded (otherwise only first five will be). Show your work.
+Directions: Do FIVE of the following six questions; they are weighted equally.
+Label clearly which five that you want graded (otherwise only first five will be).
+Show your work.

@@ -11,6 +11,7 @@ solved: false
 relations: []
 ---
 
-Let $f \in L^1(\mathbb{R})$ and define $E_\alpha = \{x : |f(x)| > \alpha\}$. Prove that
+Let $f \in L^1(\mathbb{R})$ and define $E_\alpha = \{x : |f(x)| > \alpha\}$.
+Prove that
 
 $$\int_{\mathbb{R}} |f(x)| \, dx = \int_0^\infty m(E_\alpha) \, d\alpha.$$

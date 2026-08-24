@@ -12,4 +12,5 @@ solved: false
 relations: []
 ---
 
-1. Find all entire functions f such that $| f ( z ) | = 1$ whenever $| z | = 1$ . Give explicit formulas for the functions and give a proof for your answer. (An entire function is a holomorphic function on C.)
+1. Find all entire functions f such that $| f ( z ) | = 1$ whenever $| z | = 1$ . Give explicit formulas for the functions and give a proof for your answer.
+   (An entire function is a holomorphic function on C.)

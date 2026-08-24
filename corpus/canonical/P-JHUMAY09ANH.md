@@ -12,7 +12,8 @@ solved: false
 relations: []
 ---
 
-8. Consider [0, 1] with Lebesgue measure. Let $f \in L ^ { \infty } ( [ 0 , 1 ] )$ and define
+8. Consider [0, 1] with Lebesgue measure.
+   Let $f \in L ^ { \infty } ( [ 0 , 1 ] )$ and define
 
 $$
 a _ { n } = \int _ { [ 0 , 1 ] } | f | ^ { n } d x .

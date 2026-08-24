@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://search.worldcat.org/isbn/9780691113852
 source:

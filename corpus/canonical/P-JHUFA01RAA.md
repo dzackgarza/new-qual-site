@@ -11,4 +11,5 @@ solved: false
 relations: []
 ---
 
-Let $f$ be a continuous function on $[0, \infty)$ such that $\lim_{x \to \infty} f(x)$ exists (finitely). Prove that $f$ is uniformly continuous.
+Let $f$ be a continuous function on $[0, \infty)$ such that $\lim_{x \to \infty} f(x)$ exists (finitely).
+Prove that $f$ is uniformly continuous.
