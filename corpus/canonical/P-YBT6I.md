@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-YBT6I
 kind: problem
-title: '$g .f , g \in L ^ { 2 } ( \mathbb { R } )f * g$ bounded con'
+title: "Convolutions of L2 functions and convolution operators on L1"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Convolution
+  - Lp Spaces
 relations: []
 review: draft
 ---

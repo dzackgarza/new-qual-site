@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-QOSOD
 kind: problem
-title: "denote the unit disk. What is the maximum possible value of for a holomorphic fu"
+title: "Maximal derivative of a disk self-map at an interior point"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Schwarz Lemma
+  - Disc Automorphisms
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-4KTFN
 kind: problem
-title: "6. For this problem, consider just Lebesgue measurable functions . together w..."
+title: "Fatou's lemma, the dominated convergence theorem, and a counterexample"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Fatou's Lemma
+  - Dominated Convergence
 relations: []
 review: draft
 ---
