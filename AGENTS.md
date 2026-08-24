@@ -61,6 +61,9 @@ a finding that the two cards are the same statement, and it must never be wired
 to anything that acts on that reading. A check whose name claims more than it
 measured is the same defect in smaller form.
 
+`just backlog` (and `uv run python tools/backlog.py`) regenerates `BACKLOG.md`
+on every commit. Never run it manually — it is redundant.
+
 ## This corpus is authored content
 
 This is a curated corpus of qualifying-exam mathematics, like the Stacks
