@@ -2,7 +2,9 @@ Algebra/ Applied Alg Qual Part 1: Matrix Theory September 12, 2007 Name Staple t
 
 <table><tr><td rowspan=1 colspan=1>#1</td><td rowspan=1 colspan=1>12</td></tr><tr><td rowspan=1 colspan=1>2</td><td rowspan=1 colspan=1>12</td></tr><tr><td rowspan=1 colspan=1>#3</td><td rowspan=1 colspan=1>16</td></tr><tr><td rowspan=1 colspan=1>Part 1</td><td rowspan=1 colspan=1>40</td></tr><tr><td rowspan=1 colspan=1>Part 2</td><td rowspan=1 colspan=1>40</td></tr><tr><td rowspan=1 colspan=1>B.C</td><td rowspan=1 colspan=1>120</td></tr><tr><td rowspan=1 colspan=1>Total</td><td rowspan=1 colspan=1>200</td></tr></table>
 
-(12) 1. State and prove the Singular Value Decomposition Theorem. (If you use the Polar Decomposition Theorem. then also state and prove it.)
+(12) 1. State and prove the Singular Value Decomposition Theorem.
+(If you use the Polar Decomposition Theorem.
+then also state and prove it.)
 
 (12) 2. State and prove the Schur Decomposition Theorem.
 
