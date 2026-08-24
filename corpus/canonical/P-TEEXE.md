@@ -9,7 +9,9 @@ classification:
   - real-analysis
   topics:
   - Measure Theory
-relations: []
+relations:
+- kind: variant-of
+  target: P-Q7WNK
 review: draft
 ---
 

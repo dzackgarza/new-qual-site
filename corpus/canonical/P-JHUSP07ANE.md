@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP07ANE
 kind: problem
-title: "5) For which is the function in ("
+title: "Membership of 1/x in Lp(0, infinity)"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Lp Spaces
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA07ANH
 kind: problem
-title: "8) Suppose that f and g are R functions with compact support and let h be the convolution"
+title: "Convolution of compactly supported L1 functions is uniformly continuous"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Convolution
+  - Uniform Continuity
 relations: []
 review: draft
 ---

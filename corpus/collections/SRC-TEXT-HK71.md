@@ -11,7 +11,7 @@ relations: []
 review: draft
 completion: complete
 provenance:
-- https://search.worldcat.org/title/139865
+- https://openlibrary.org/books/OL5220804M/Linear_Algebra
 - https://www.gbv.de/dms/hbz/toc/ht000627471.pdf
 source:
   source_kind: textbook

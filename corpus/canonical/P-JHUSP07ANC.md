@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP07ANC
 kind: problem
-title: "3) Let be a holomorphic map of the unit disc with , and suppose that is not a rotation (a rotation is a map"
+title: "Iterates of a non-rotational disk map vanish at the fixed point"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Schwarz Lemma
 relations: []
 review: draft
 ---

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP07ANB
 kind: problem
-title: "2) Calculate the integral , where ("
+title: "The Poisson kernel integral by residues"
 classification:
   areas:
-  - real-analysis
+  - complex-analysis
   topics:
-  - real-analysis-topics
+  - Contour Integration
+  - Poisson Kernel
 relations: []
 review: draft
 ---

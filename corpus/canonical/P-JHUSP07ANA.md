@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP07ANA
 kind: problem
-title: "1) How many zeros does the polynomial have in the open unit disc ("
+title: "Zeros of a sextic in the unit disk"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Rouche's Theorem
 relations: []
 review: draft
 ---

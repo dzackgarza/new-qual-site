@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA07ANB
 kind: problem
-title: "2) Find all entire analytic functions satisfying for all ("
+title: "Entire functions bounded by the exponential"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Entire Functions
+  - Liouville's Theorem
 relations: []
 review: draft
 ---

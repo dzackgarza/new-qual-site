@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP07AND
 kind: problem
-title: "4) Does there exist a surjective holomorphic map from the unit disc to the whole complex plane"
+title: "No surjective holomorphic map from the disk onto C"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Liouville's Theorem
+  - Open Mapping Theorem
 relations: []
 review: draft
 ---

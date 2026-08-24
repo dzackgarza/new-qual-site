@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP07ANH
 kind: problem
-title: "8) Suppose that and dx"
+title: "A function and its Fourier transform cannot both have compact support"
 classification:
   areas:
   - real-analysis
   topics:
-  - Fourier Analysis
+  - Fourier Transform
 relations: []
 review: draft
 ---

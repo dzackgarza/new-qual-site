@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUFA07ANC
 kind: problem
-title: "3) Let A be the annulus Let f be a non-constant holomorphic function in a neighborhood of A, and suppose that on ∂A (the"
+title: "A holomorphic function on an annulus with unit boundary values has two zeros"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Maximum Modulus Principle
+  - Zeros of Holomorphic Functions
 relations: []
 review: draft
 ---

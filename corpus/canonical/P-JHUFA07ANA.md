@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA07ANA
 kind: problem
-title: "1) Is the function complex analytic"
+title: "Complex analyticity of a real polynomial via the Cauchy-Riemann equations"
 classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Cauchy-Riemann Equations
 relations: []
 review: draft
 ---

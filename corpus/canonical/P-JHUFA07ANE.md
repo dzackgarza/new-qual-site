@@ -2,12 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA07ANE
 kind: problem
-title: "5) Give examples of functions f and g on R so that and ("
+title: "Membership examples separating L1 and L2"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Lp Spaces
 relations: []
 review: draft
 ---

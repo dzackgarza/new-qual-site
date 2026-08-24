@@ -2,11 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA07ANG
 kind: problem
-title: "7) Let be a sequence of measurable real-valued functions on [0, 1] with Prove that converges to zero almost everywhere"
+title: "A summably integrable sequence converges to zero almost everywhere"
 classification:
   areas:
   - real-analysis
   topics:
+  - Borel-Cantelli
   - Convergence Theorems
 relations: []
 review: draft

@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP07ANF
 kind: problem
-title: "6) Suppose that is a sequence of functions with for every n and so that"
+title: "L4 functions with vanishing L1 norm converge weakly"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Weak Convergence
+  - Lp Spaces
 relations: []
 review: draft
 ---

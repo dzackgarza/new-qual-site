@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-JHUSP07ANG
 kind: problem
-title: "7) Suppose that is a sequence of functions in that converges weakly in to a function"
+title: "Weakly convergent L2 sequences with unbounded norms"
 classification:
   areas:
   - real-analysis
   topics:
-  - L^p Spaces
+  - Weak Convergence
+  - Lp Spaces
 relations: []
 review: draft
 ---
