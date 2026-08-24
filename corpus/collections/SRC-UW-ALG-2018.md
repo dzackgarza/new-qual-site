@@ -12,6 +12,7 @@ review: draft
 provenance: []
 source:
   source_kind: university-exam
+  institution: uw
   area: algebra
   problems:
   - P-6P6KI
@@ -21,6 +22,6 @@ source:
   - P-NN3CO
   - P-YDLYC
   date:
-    kind: known
+    kind: year
     year: 2018
 ---
