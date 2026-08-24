@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-MFYGZ
 kind: problem
-title: "and denote the Hardy-Littlewood maximal function of in other words, $$ where the"
+title: "The Hardy-Littlewood maximal function is weak (1,1)"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Hardy-Littlewood Maximal Function
+  - Weak Type Estimates
 relations: []
 review: draft
 ---

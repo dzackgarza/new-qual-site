@@ -2,12 +2,13 @@
 schema: qual/card@1
 id: P-OEFYN
 kind: problem
-title: "the following two conditions are equivalent: (a) The image of the unit ball in X"
+title: "Compact operators are norm limits of finite-rank operators"
 classification:
   areas:
   - real-analysis
   topics:
-  - real-analysis-topics
+  - Compact Operators
+  - Hilbert Spaces
 relations: []
 review: draft
 ---
