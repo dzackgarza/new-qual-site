@@ -15,5 +15,5 @@ solved: false
 ---
 
 ::: problem
-Compute $\operatorname{Tor}(\mathbb{Z} \oplus \mathbb{Z}_6 \oplus \mathbb{Z}_9, \mathbb{Z} \oplus \mathbb{Z}_{24} \oplus \mathbb{Z}_{14})$.
+Compute $\operatorname{Tor}(\mathbb{Z} \oplus \mathbb{Z}_2 \oplus \mathbb{Z}_8, \mathbb{Z} \oplus \mathbb{Z}_4 \oplus \mathbb{Z}_4)$.
 :::

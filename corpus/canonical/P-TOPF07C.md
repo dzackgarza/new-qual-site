@@ -16,5 +16,5 @@ solved: false
 
 ::: problem
 Let $X$ be a space whose homology groups are $\mathbb{Z}$, $0$, $\mathbb{Z}_6$ in dimensions $0$, $1$, $2$ and zero otherwise.
-Compute the integral homology $H^*(X \times \mathbb{RP}^3; \mathbb{Z})$.
+Compute the integral homology $H_*(X \times \mathbb{RP}^3; \mathbb{Z})$.
 :::

@@ -17,6 +17,6 @@ solved: false
 ---
 
 ::: problem
-An orientable closed compact $4$-manifold $W^4$ has a finite fundamental group with $d$ elements, and the rank of its second homology group is $7$.
+An orientable closed compact $4$-manifold $W^4$ has a finite fundamental group with $d$ elements, and the rank of its second homology group is $r$.
 What is the rank of the second homology group of its universal cover?
 :::
