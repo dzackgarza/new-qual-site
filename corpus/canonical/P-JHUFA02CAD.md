@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Hilbert Spaces
+  - Convex Sets
+  - Orthogonal Projection
 relations: []
 review: draft
 ---

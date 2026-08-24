@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Contour Integration
+  - Residues
 relations: []
 review: draft
 ---

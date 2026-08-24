@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Analytic Continuation
+  - Laurent Series
+  - Meromorphic Functions
 relations: []
 review: draft
 ---

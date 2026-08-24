@@ -7,7 +7,7 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Fourier Series
 relations: []
 review: draft
 ---

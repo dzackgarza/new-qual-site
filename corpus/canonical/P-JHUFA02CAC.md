@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Equicontinuity
+  - Arzela-Ascoli Theorem
+  - Uniform Convergence
 relations: []
 review: draft
 ---

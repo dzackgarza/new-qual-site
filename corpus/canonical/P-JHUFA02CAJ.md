@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Rouche's Theorem
+  - Zeros of Polynomials
 relations: []
 review: draft
 ---

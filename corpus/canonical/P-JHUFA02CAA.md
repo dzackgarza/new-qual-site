@@ -7,7 +7,9 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Uniform Convergence
+  - Continuous Functions
+  - Nowhere Differentiable Functions
 relations: []
 review: draft
 ---

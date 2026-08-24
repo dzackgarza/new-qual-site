@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Conformal Maps
+  - Annuli
 relations: []
 review: draft
 ---
