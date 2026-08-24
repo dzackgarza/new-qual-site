@@ -6,7 +6,8 @@ title: Galois group of finite field and inseparable splitting field
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

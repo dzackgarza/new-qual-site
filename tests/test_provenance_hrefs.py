@@ -46,9 +46,7 @@ def _collection(
     path.write_text("\n".join(lines))
 
 
-def _problem(
-    path: Path, card_id: str, *, areas: list[str], kind: str = "problem"
-) -> None:
+def _problem(path: Path, card_id: str, *, areas: list[str], kind: str = "problem") -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     lines = [
         "---",
@@ -121,9 +119,7 @@ def test_dead_path_is_not_a_file_under_the_repo(tmp_path: Path) -> None:
         "SRC-DEAD",
         ["assets/attachments/missing.pdf"],
     )
-    assert _findings(tmp_path, "dead-provenance-hrefs") == [
-        "SRC-DEAD: assets/attachments/missing.pdf -> not a file"
-    ]
+    assert _findings(tmp_path, "dead-provenance-hrefs") == ["SRC-DEAD: assets/attachments/missing.pdf -> not a file"]
     assert _findings(tmp_path, "empty-provenance") == []
 
 
@@ -147,9 +143,7 @@ def test_http_status_is_the_get_status_code(tmp_path: Path) -> None:
             "SRC-GONE",
             [f"{origin}/missing.pdf"],
         )
-        assert _findings(tmp_path, "dead-provenance-hrefs") == [
-            f"SRC-GONE: {origin}/missing.pdf -> 404"
-        ]
+        assert _findings(tmp_path, "dead-provenance-hrefs") == [f"SRC-GONE: {origin}/missing.pdf -> 404"]
         assert _findings(tmp_path, "empty-provenance") == []
     finally:
         server.shutdown()
@@ -309,9 +303,7 @@ def test_image_provenance_href_is_an_href_whose_path_ends_in_an_image_suffix(
     _collection(
         tmp_path / "corpus" / "SRC-PNG.md",
         "SRC-PNG",
-        [
-            "sources/qualbot-question-images/QualbotQuestions/Complex Analysis/Conformal map 1.png"
-        ],
+        ["sources/qualbot-question-images/QualbotQuestions/Complex Analysis/Conformal map 1.png"],
     )
     _collection(
         tmp_path / "corpus" / "SRC-JPG-HTTP.md",
@@ -359,9 +351,7 @@ def test_collection_area_without_problem_cards_is_the_area_on_no_problem(
         areas=["algebra"],
         kind="exercise",
     )
-    assert _findings(tmp_path, "collection-area-without-problem-cards") == [
-        "SRC-STAT: statistics"
-    ]
+    assert _findings(tmp_path, "collection-area-without-problem-cards") == ["SRC-STAT: statistics"]
 
 
 def test_exits_zero_with_findings_and_is_not_a_gate(tmp_path: Path) -> None:
@@ -390,18 +380,10 @@ def test_exits_zero_with_findings_and_is_not_a_gate(tmp_path: Path) -> None:
     assert "collection-area-without-problem-cards" in dumped
     empty = next(item for item in payload if item["check"] == "empty-provenance")
     dead = next(item for item in payload if item["check"] == "dead-provenance-hrefs")
-    shared = next(
-        item for item in payload if item["check"] == "shared-provenance-hrefs"
-    )
-    markdown = next(
-        item for item in payload if item["check"] == "markdown-provenance-hrefs"
-    )
+    shared = next(item for item in payload if item["check"] == "shared-provenance-hrefs")
+    markdown = next(item for item in payload if item["check"] == "markdown-provenance-hrefs")
     image = next(item for item in payload if item["check"] == "image-provenance-hrefs")
-    no_problems = next(
-        item
-        for item in payload
-        if item["check"] == "collection-area-without-problem-cards"
-    )
+    no_problems = next(item for item in payload if item["check"] == "collection-area-without-problem-cards")
     assert empty["findings"] == ["SRC-EMPTY"]
     assert empty["ok"] is False
     assert empty["measured"] == 2

@@ -6,7 +6,8 @@ title: Solvability of S_4 and solvability by radicals
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

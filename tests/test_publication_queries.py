@@ -87,22 +87,12 @@ def test_a_subject_guide_panel_lists_only_that_subject(tmp_path: Path) -> None:
             ),
         },
     )
-    (work / "publications" / "topology-guide.yaml").write_text(
-        yaml.safe_dump(manifest("compactness"), sort_keys=False)
-    )
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(manifest("compactness"), sort_keys=False))
 
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
-    page = read_html(
-        work
-        / "build"
-        / "quarto"
-        / "_site"
-        / "guide"
-        / "GUIDE-TOPOLOGY"
-        / "compactness.html"
-    )
+    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
     panels = page.root.find_all("section", **{"class": "panel publication-query"})
     assert len(panels) == 1
     listed = {link.attrs["href"] for link in panels[0].find_all("a")}
@@ -143,22 +133,12 @@ def test_a_panel_naming_several_topics_lists_a_problem_carrying_any_of_them(
         },
     )
     guide = manifest("compactness", "connectedness")
-    (work / "publications" / "topology-guide.yaml").write_text(
-        yaml.safe_dump(guide, sort_keys=False)
-    )
+    (work / "publications" / "topology-guide.yaml").write_text(yaml.safe_dump(guide, sort_keys=False))
 
     result = run_qualc("build", work)
     assert result.returncode == 0, result.stderr
 
-    page = read_html(
-        work
-        / "build"
-        / "quarto"
-        / "_site"
-        / "guide"
-        / "GUIDE-TOPOLOGY"
-        / "compactness.html"
-    )
+    page = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "compactness.html")
     panels = page.root.find_all("section", **{"class": "panel publication-query"})
     listed = {link.attrs["href"] for link in panels[0].find_all("a")}
 

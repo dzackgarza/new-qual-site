@@ -6,7 +6,8 @@ title: Local ring characterization
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 ---

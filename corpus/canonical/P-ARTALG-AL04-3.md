@@ -6,7 +6,8 @@ title: List all isomorphism classes of groups of size 72
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: Principal ideal domains
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 ---

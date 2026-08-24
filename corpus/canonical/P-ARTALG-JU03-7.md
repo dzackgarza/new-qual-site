@@ -6,7 +6,8 @@ title: Galois group unchanged by removing a root
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

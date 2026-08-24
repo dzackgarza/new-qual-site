@@ -6,7 +6,8 @@ title: Splitting field of x^4-5 over Q
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

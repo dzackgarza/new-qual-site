@@ -6,7 +6,8 @@ title: Q(sqrt(2)) and Q(sqrt(3)) are not isomorphic
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

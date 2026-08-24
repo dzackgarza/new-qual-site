@@ -6,7 +6,8 @@ title: Subgroup of index p is normal
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

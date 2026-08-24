@@ -6,7 +6,8 @@ title: Rational canonical forms for given characteristic polynomial
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---

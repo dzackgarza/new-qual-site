@@ -6,7 +6,8 @@ title: Splitting field and Galois group of x^4-2 over Q
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

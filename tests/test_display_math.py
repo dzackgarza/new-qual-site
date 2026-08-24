@@ -60,11 +60,7 @@ def test_display_math_reaches_the_ast_as_math(card: Path) -> None:
     from qualc.model import from_ast
 
     doc = from_ast(parse_card(card).ast)
-    maths = [
-        el.text
-        for el in doc.walk(lambda e, d: e).content[0].content[0].content
-        if isinstance(el, pf.Math)
-    ]
+    maths = [el.text for el in doc.walk(lambda e, d: e).content[0].content[0].content if isinstance(el, pf.Math)]
     assert maths, "the \\[ ... \\] block must parse as Math, not raw TeX"
     assert "\\int_{\\mathbb{R}}" in maths[0], maths[0]
 

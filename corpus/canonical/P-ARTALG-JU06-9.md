@@ -6,7 +6,8 @@ title: Structure theorem for finitely generated abelian groups
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

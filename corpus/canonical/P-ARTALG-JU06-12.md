@@ -6,7 +6,8 @@ title: Rational canonical form over Q
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---

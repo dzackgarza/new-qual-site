@@ -6,7 +6,8 @@ title: Sylow subgroups of group of order 84
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

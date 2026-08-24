@@ -6,7 +6,8 @@ title: Non-similar matrices with same rational eigenvalue
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Linear Algebra
 relations: []
 review: draft
 ---

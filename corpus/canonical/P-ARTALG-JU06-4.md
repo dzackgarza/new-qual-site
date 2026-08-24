@@ -6,7 +6,8 @@ title: Normal subgroups of p-groups of every order up to p^k
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

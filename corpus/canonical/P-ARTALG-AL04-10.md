@@ -6,7 +6,8 @@ title: Non-Galois degree-3 extension and Galois subfield
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

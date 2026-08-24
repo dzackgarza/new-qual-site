@@ -6,7 +6,8 @@ title: Class equation and nontrivial center of p-group
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

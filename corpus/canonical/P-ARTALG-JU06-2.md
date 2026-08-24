@@ -6,7 +6,8 @@ title: Sylow subgroups and simplicity
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

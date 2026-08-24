@@ -6,7 +6,8 @@ title: PID definition and Z[x] is not a PID
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 ---

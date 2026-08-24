@@ -6,7 +6,8 @@ title: Examples of ED, UFD, non-UFD
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: Roots of polynomials over field of 81 elements
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

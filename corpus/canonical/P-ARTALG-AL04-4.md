@@ -6,7 +6,8 @@ title: Subgroup of index smallest prime is normal
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

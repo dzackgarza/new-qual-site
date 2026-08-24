@@ -67,9 +67,7 @@ def test_batch_parse_matches_isolated_pandoc(tmp_path: Path) -> None:
     parsed, errors = model.parse_cards(paths)
 
     assert errors == []
-    assert [json.loads(item.ast) for item in parsed] == [
-        _isolated_ast(path) for path in paths
-    ]
+    assert [json.loads(item.ast) for item in parsed] == [_isolated_ast(path) for path in paths]
 
 
 def test_batch_inline_parse_keeps_titles_inline() -> None:

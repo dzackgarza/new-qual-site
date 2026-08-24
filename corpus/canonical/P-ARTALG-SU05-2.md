@@ -6,7 +6,8 @@ title: Structure theorem and abelian groups of order 360
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

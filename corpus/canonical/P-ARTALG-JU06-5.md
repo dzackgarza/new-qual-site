@@ -6,7 +6,8 @@ title: Galois extension definition and fundamental theorem of Galois theory
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

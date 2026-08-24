@@ -6,7 +6,8 @@ title: Subfields of field of order 1024
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

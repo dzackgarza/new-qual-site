@@ -6,7 +6,8 @@ title: Non-free submodule of a free module
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Modules
 relations: []
 review: draft
 ---

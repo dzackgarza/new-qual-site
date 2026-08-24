@@ -6,7 +6,8 @@ title: Galois group from intermediate field lattice
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: No GCD in polynomial ring and subring of Euclidean domain
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Commutative Algebra
 relations: []
 review: draft
 ---

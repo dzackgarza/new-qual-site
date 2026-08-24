@@ -6,7 +6,8 @@ title: Every finite group is a Galois group
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---

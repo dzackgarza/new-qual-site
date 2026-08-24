@@ -6,7 +6,8 @@ title: Abelian groups of order 720 and cancellation for Z-modules
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

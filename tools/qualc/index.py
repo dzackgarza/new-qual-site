@@ -94,11 +94,7 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
         where = f"{p.source_path} ({p.card.id})"
         for area in p.card.classification.areas:
             if area not in vocab["areas"]:
-                errors.append(
-                    Diagnostic(
-                        DiagnosticCode.UNKNOWN_AREA, where, f"unknown area {area!r}"
-                    )
-                )
+                errors.append(Diagnostic(DiagnosticCode.UNKNOWN_AREA, where, f"unknown area {area!r}"))
         for rel in p.card.relations:
             if rel.target not in by_id:
                 errors.append(
@@ -111,10 +107,7 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
         if isinstance(p.card, CollectionCard):
             # One registry check per variant, matching the union.
             source = p.card.source
-            if (
-                isinstance(source, ExamSource)
-                and source.institution not in vocab["institutions"]
-            ):
+            if isinstance(source, ExamSource) and source.institution not in vocab["institutions"]:
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.UNKNOWN_INSTITUTION,
@@ -122,10 +115,7 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                         f"unknown institution {source.institution!r}",
                     )
                 )
-            if (
-                isinstance(source, (ExamSource, HomeworkSource, CompilationSource))
-                and source.area not in vocab["areas"]
-            ):
+            if isinstance(source, (ExamSource, HomeworkSource, CompilationSource)) and source.area not in vocab["areas"]:
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.UNKNOWN_AREA,
@@ -133,10 +123,7 @@ def validate(parsed: list[ParsedCard], vocab: dict[str, set[str]]) -> list[Diagn
                         f"unknown source area {source.area!r}",
                     )
                 )
-            if (
-                isinstance(source, TextbookSource)
-                and source.textbook not in vocab["textbooks"]
-            ):
+            if isinstance(source, TextbookSource) and source.textbook not in vocab["textbooks"]:
                 errors.append(
                     Diagnostic(
                         DiagnosticCode.UNKNOWN_TEXTBOOK,
@@ -172,9 +159,7 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
             [(c.id, r.kind, r.target) for r in c.relations],
         )
         for ordinal, (kind, text) in enumerate(p.sections):
-            con.execute(
-                "insert into sections values (?,?,?,?)", (c.id, kind, ordinal, text)
-            )
+            con.execute("insert into sections values (?,?,?,?)", (c.id, kind, ordinal, text))
             con.execute("insert into search values (?,?,?)", (c.id, kind, text))
 
         if isinstance(c, CollectionCard):

@@ -6,7 +6,8 @@ title: Sylow theorems, groups of order 35, simplicity of order 24
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: D_8 × D_8 inside Sylow 2-subgroup of S_8
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Group Theory
 relations: []
 review: draft
 ---

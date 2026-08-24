@@ -6,7 +6,8 @@ title: Galois group of cyclotomic polynomial
 classification:
   areas:
   - algebra
-  topics: []
+  topics:
+  - Galois Theory
 relations: []
 review: draft
 ---
