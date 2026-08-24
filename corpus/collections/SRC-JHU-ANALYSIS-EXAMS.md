@@ -188,6 +188,14 @@ source:
     - P-JHUMAY11ANF
     - P-JHUMAY11ANG
     - P-JHUMAY11ANH
+    - P-JHUMAY11ANI
+    - P-JHUMAY11ANJ
+    - P-JHUMAY11ANK
+    - P-JHUMAY11ANL
+    - P-JHUMAY11ANM
+    - P-JHUMAY11ANN
+    - P-JHUMAY11ANO
+    - P-JHUMAY11ANP
   - name: Analysis Qualifying Exam, Fall 2010 (pp. 26–27)
     problems:
     - P-JHUFA10RA1
@@ -208,6 +216,8 @@ source:
     - P-JHUMAY10ANF
     - P-JHUMAY10ANG
     - P-JHUMAY10ANH
+    - P-JHUMAY10ANI
+    - P-JHUMAY10ANJ
   - name: ANALYSIS QUALIFYING EXAM, SEPTEMBER 2009 (pp. 30–31)
     problems:
     - P-JHUFA09ANA
@@ -247,6 +257,7 @@ source:
     - P-JHUSP08ANF
     - P-JHUSP08ANG
     - P-JHUSP08ANH
+    - P-JHUSP08ANI
   - name: ANALYSIS QUALIFYING EXAM, FALL 2007 (p. 36)
     problems:
     - P-JHUFA07ANA
@@ -287,6 +298,10 @@ source:
     - P-JHUMAY06ANF
     - P-JHUMAY06ANG
     - P-JHUMAY06ANH
+    - P-JHUMAY06ANI
+    - P-JHUMAY06ANJ
+    - P-JHUMAY06ANK
+    - P-JHUMAY06ANL
   - name: ANALYSIS QUALIFYING EXAM, SEPTEMBER 2005 (pp. 42–43)
     problems:
     - P-JHUFA05ANA
@@ -303,6 +318,7 @@ source:
     - P-JHUSP03CAB
     - P-JHUSP03CAC
     - P-JHUSP03CAD
+    - P-JHUSP03CAE
   - name: Complex Analysis Core Qualifying Exam, Fall 2002 (p. 50)
     problems:
     - P-JHUFA02CAA
@@ -313,6 +329,9 @@ source:
     - P-JHUFA02CAF
     - P-JHUFA02CAG
     - P-JHUFA02CAH
+    - P-JHUFA02CAI
+    - P-JHUFA02CAJ
+    - P-JHUFA02CAK
   - name: Complex Analysis Core Qualifying Exam, Spring 2002 (p. 52)
     problems:
     - P-JHUSP02CAA
@@ -323,6 +342,14 @@ source:
     - P-JHUSP02CAF
     - P-JHUSP02CAG
     - P-JHUSP02CAH
+    - P-JHUSP02CAI
+    - P-JHUSP02CAJ
+    - P-JHUSP02CAK
+    - P-JHUSP02CAL
+    - P-JHUSP02CAM
+    - P-JHUSP02CAN
+    - P-JHUSP02CAO
+    - P-JHUSP02CAP
   - name: Real Analysis Qualifying Exam, Fall 2001 (pp. 53–54)
     problems:
     - P-JHUFA01RAA
@@ -347,6 +374,12 @@ source:
     - P-JHUSP01RAF
     - P-JHUSP01RAG
     - P-JHUSP01RAH
+    - P-JHUSP01RAI
+    - P-JHUSP01RAJ
+    - P-JHUSP01RAK
+    - P-JHUSP01RAL
+    - P-JHUSP01RAM
+    - P-JHUSP01RAN
   - name: COMPLEX ANALYSIS CORE QUALIFYING EXAM, SPRING 2001 (p. 57)
     problems:
     - P-JHUSP01CAA
