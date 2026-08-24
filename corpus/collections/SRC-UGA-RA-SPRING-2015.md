@@ -28,6 +28,4 @@ source:
     year: 2015
 ---
 
-::: remark
-Exam #3 is the finite Borel measure statement on $\mathbb{R}^n$ (`P-Q7WNK`); `P-TEEXE` and `P-E5NRO` state the same equivalence on $\mathbb{R}$ and were not used.
-:::
+
