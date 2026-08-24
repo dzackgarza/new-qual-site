@@ -32,7 +32,15 @@ source:
     - SRC-UCSD-TOP-FALL-2002
   - name: Summer 2003 (section 3; printed p. 394)
     problems:
-    - SRC-UCSD-TOP-SUMMER-2003
+    - P-L6F6I
+    - P-GT5L7
+    - P-BW6LF
+    - P-LAFJW
+    - P-VN3M2
+    - P-ULHPN
+    - P-L7Z4E
+    - P-CQ64W
+    - P-K3QJY
   - name: Fall 2003 (section 4; printed p. 395)
     problems:
     - SRC-UCSD-TOP-FALL-2003
@@ -120,7 +128,14 @@ source:
     - P-UCTOP-SU14-8
   - name: Fall 2014 (section 16; printed p. 407)
     problems:
-    - SRC-UCSD-TOP-FALL-2014
+    - P-LCTOJ
+    - P-TEDZR
+    - P-AZBYD
+    - P-U7G2X
+    - P-UBJDX
+    - P-9RRSR
+    - P-WZLJO
+    - P-5R1Y1
 ---
 
 

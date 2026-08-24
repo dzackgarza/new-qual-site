@@ -18,7 +18,7 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 [[SRC-UCSD-TOP-FALL-2002]]
 
-[[SRC-UCSD-TOP-SUMMER-2003]]
+[[SRC-UCSD-TOP-290QUALS|UCSD 290 Qualifying Exams (Summer 2003 within)]]
 
 [[SRC-UCSD-TOP-FALL-2003]]
 
@@ -50,7 +50,7 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 [[SRC-UCSD-TOP-SPRING-2013]]
 
-[[SRC-UCSD-TOP-FALL-2014]]
+[[SRC-UCSD-TOP-290QUALS|UCSD 290 Qualifying Exams (Fall 2014 within)]]
 
 [[SRC-UCSD-TOP-SUMMER-2015]]
 
