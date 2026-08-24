@@ -20,6 +20,9 @@ source:
   - P-MMAQ-ZQASEE4Z36
   - P-MMAQ-SMTLV5QBOP
   - P-MMAQ-OZLCWMQK46
+  - P-ULNGG
+  - P-VAZ7S
+  - P-UHFLP
   source_kind: compilation
 title: Emory Real Analysis undated collection
 ---
