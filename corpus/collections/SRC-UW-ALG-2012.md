@@ -14,7 +14,7 @@ source:
   area: algebra
   date:
     kind: year
-    value: 2012
+    year: 2012
   institution: uw
   problems:
   - P-5EHW6

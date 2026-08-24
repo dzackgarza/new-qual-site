@@ -14,7 +14,7 @@ source:
   area: algebra
   date:
     kind: year
-    value: 2013
+    year: 2013
   institution: uw
   problems:
   - P-UIHJF

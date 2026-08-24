@@ -14,7 +14,7 @@ source:
   area: algebra
   date:
     kind: year
-    value: 2015
+    year: 2015
   institution: uw
   problems:
   - P-EQE3U

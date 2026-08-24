@@ -14,7 +14,7 @@ source:
   area: algebra
   date:
     kind: year
-    value: 2016
+    year: 2016
   institution: uw
   problems:
   - P-MMAQ-AWWA4FOL2L
