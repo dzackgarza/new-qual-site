@@ -6,6 +6,7 @@ title: UCSD algebra Spring 2009
 classification:
   areas:
   - algebra
+  - applied-algebra
   topics: []
 relations: []
 review: draft
@@ -16,19 +17,29 @@ source:
   source_kind: university-exam
   institution: ucsd
   area: algebra
-  problems:
-  - P-ALGS09A
-  - P-ALGS09B
-  - P-ALGS09C
-  - P-ALGS09D
-  - P-ALGS09E
-  - P-ALGS09F
-  - P-ALGS09G
-  - P-ALGS09H
+  sections:
+  - name: Algebra
+    problems:
+    - P-ALGS09A
+    - P-ALGS09B
+    - P-ALGS09C
+    - P-ALGS09D
+    - P-ALGS09E
+    - P-ALGS09F
+    - P-ALGS09G
+    - P-ALGS09H
+  - name: Applied Algebra
+    problems:
+    - P-APASP09A
+    - P-APASP09B
+    - P-APASP09C
+    - P-APASP09D
+    - P-APASP09E
+    - P-APASP09F
+    - P-APASP09G
+    - P-APASP09H
   date:
     kind: academic-term
     term: spring
     year: 2009
 ---
-
-
