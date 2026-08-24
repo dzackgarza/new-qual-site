@@ -170,8 +170,20 @@ mineru-open-api flash-extract myfile.pdf --language en
 
 Do not use `pdftotext`, `pdftoppm`, or any other tools.
 
-Always save the Markdown output under `assets/` as a permanent repository
-asset. Track and ship the extraction with the repository.
+Never extract PDFs to `/tmp`, `.tmp`, or any other temp directory. Temp
+files are not tracked by git and vanish between sessions. Always extract
+into the repository so the output is versioned and persistent.
+
+The correct output path is under `assets/attachments/` (for source PDFs)
+or `assets/` (for extracted markdown). Example:
+
+```bash
+mineru-open-api flash-extract assets/attachments/exam.pdf > assets/attachments/exam_extracted.md
+```
+
+If you need intermediate files during extraction, stage them in the repo
+too — for example `assets/attachments/intermediate/`. Delete them when
+the final extraction is committed.
 
 ## What a tool may do
 
