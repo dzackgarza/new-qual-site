@@ -147,6 +147,14 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 - [ ] Repeat until every current group has a recorded disposition.
 
+Dispositions (byte-equality groups verified against both source papers):
+
+- P-ALGS05B / P-APAS05B — both papers sat the identical Question 2
+  (triangular matrix normal iff diagonal) in Spring 2005; distinct exam
+  tracks (Math 200, Math 202); keep both cards.
+- P-ALGS05F / P-APAS05F — both papers sat the identical Question 6
+  (conjugacy class size bounded by the index of the center); keep both.
+
 ## 3. Reconcile imported sources
 
 ### Reconcile the second authored source
