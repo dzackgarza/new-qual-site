@@ -156,7 +156,6 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 ## Contributed artifacts
 
-
 [[SRC-TOPOLOGY-PHD-F95]]
 
 [[SRC-TOP-2002Q1]]
