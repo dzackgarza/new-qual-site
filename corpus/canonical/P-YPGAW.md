@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-YPGAW
 kind: problem
-title: "be a sequence of absolutely integrable functions, and let R be another absolutel"
+title: "L1 convergence gives an a.e.-convergent subsequence but not uniform convergence"
 classification:
   areas:
   - real-analysis

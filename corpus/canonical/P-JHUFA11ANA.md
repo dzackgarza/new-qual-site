@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANA
 kind: problem
-title: '1. Determine the value of the integral $\gamma\{ | z - 1 | < 2 \}$ traversed ...'
+title: "The contour integral of dz over z cubed cosine on a circle through the origin"
 classification:
   areas:
   - complex-analysis

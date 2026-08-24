@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANL
 kind: problem
-title: '4. Define by $f \in L ^ { 2 }U f = \lambda f\lambda \in \mathbb { R } \ ( \ma...'
+title: "The translation operator on L2 of the line"
 classification:
   areas:
   - real-analysis

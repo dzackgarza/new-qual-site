@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANG
 kind: problem
-title: "be a sequence of Lebesgue measurable functions . Suppose there exists such that"
+title: "Lp convergence of measurable functions on the unit interval"
 classification:
   areas:
   - real-analysis

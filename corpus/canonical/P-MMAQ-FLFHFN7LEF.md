@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-MMAQ-FLFHFN7LEF
 kind: problem
-title: Use residues to compute the integral
+title: "The integral of cosine over a squared quadratic by residues"
 classification:
   areas:
   - complex-analysis

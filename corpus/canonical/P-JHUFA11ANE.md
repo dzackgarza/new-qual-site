@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA11ANE
 kind: problem
-title: "5. Give an example of a sequence of functions satisfying for which has no con..."
+title: "An L2-bounded sequence in L2 of the line without convergent subsequences"
 classification:
   areas:
   - real-analysis

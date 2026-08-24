@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANO
 kind: problem
-title: "7. Determine all entire functions is holomorphic and is defined for all that ..."
+title: "Entire functions dominated by |Re z| squared plus |z| to the 3/2"
 classification:
   areas:
   - complex-analysis

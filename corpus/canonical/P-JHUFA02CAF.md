@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAF
 kind: problem
-title: "1. (a) (5 points) Give a counterexample to the assertion: If f is holomorphic..."
+title: "A holomorphic function on an annulus need not extend, but extends meromorphically"
 classification:
   areas:
   - complex-analysis

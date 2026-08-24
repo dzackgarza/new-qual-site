@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANH
 kind: problem
-title: ", for , be a sequence of functions. Suppose that there is a function such that $"
+title: "The Lp norms of an L-infinity function converge to the L-infinity norm"
 classification:
   areas:
   - real-analysis

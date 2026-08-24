@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EQE3U
 kind: problem
-title: Find an irreducible polynomial of degree 5 over the
+title: "A degree-5 irreducible over Z/2, the field of 32 elements, and a matrix of order 31"
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY11ANE
 kind: problem
-title: ", for , be a sequence of functions such that and for all . Define the functions"
+title: "The running maximum of a bounded C1 sequence converges uniformly"
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAC
 kind: problem
-title: "3.i. Define equicontinuity and state the Arzela-Ascoli theorem. ii.Let be the family of real valued functions on [0,1] s"
+title: "Equicontinuity and the Arzela-Ascoli theorem on a Sobolev family"
 classification:
   areas:
   - real-analysis

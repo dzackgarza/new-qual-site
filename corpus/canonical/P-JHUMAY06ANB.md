@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY06ANB
 kind: problem
-title: '2. How many zeros does the polynomial $\{ | z | < 1 \} \stackrel { . } { : }\...'
+title: "Zeros of a septic in the disks of radius one and two"
 classification:
   areas:
   - complex-analysis

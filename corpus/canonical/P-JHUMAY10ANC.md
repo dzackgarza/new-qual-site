@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY10ANC
 kind: problem
-title: 'denote the space of holomorphic functions on the unit disk D and let $K \'
+title: "The Bergman space of the unit disk"
 classification:
   areas:
   - complex-analysis

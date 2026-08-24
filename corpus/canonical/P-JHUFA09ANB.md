@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA09ANB
 kind: problem
-title: '2. For which values of does there exist a constant such that $$ \left| \sum _...'
+title: "Bilinear forms with polynomially weighted coefficients on l2"
 classification:
   areas:
   - real-analysis

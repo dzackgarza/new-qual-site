@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAH
 kind: problem
-title: "3. (20 points) Determine all entire functions f for which for all"
+title: "Entire functions bounded by the square of the modulus"
 classification:
   areas:
   - complex-analysis

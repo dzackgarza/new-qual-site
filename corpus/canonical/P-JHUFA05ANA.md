@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANA
 kind: problem
-title: 'be a sequence of Lebesgue measurable functions on [0, 1], and assume that $$ \op'
+title: "L2 mass of order 1/n squared forces a.e. convergence to zero"
 classification:
   areas:
   - real-analysis

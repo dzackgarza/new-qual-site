@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA02CAE
 kind: problem
-title: "5.i. Find the sum of the series ii. Show that ## Complex Analysis Core Qualifying Exam, Fall 2002 Do 5 of the 6 problems"
+title: "The sum of the odd sine series and the Basel problem"
 classification:
   areas:
   - real-analysis

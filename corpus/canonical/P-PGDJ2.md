@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PGDJ2
 kind: problem
-title: '1. How many zeros does the polynomial $\{ 1 \leq | z | \leq 3 \}$ . Justify y...'
+title: "Zeros of a polynomial in the annulus from one to three"
 classification:
   areas:
   - real-analysis

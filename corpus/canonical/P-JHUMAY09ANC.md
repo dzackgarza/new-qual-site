@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUMAY09ANC
 kind: problem
-title: "be a sequence of holomorphic functions such that , where , and U is a connected"
+title: "Uniformly convergent holomorphic sequences with a single zero each"
 classification:
   areas:
   - complex-analysis

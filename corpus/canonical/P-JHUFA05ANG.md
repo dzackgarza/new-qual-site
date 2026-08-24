@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUFA05ANG
 kind: problem
-title: '7. How many zeros does the polynomial $\{ | z | = 1 \}\{ | z | = 2 \}$ . Just...'
+title: "Zeros of a polynomial in the disks of radius one and two"
 classification:
   areas:
   - complex-analysis
