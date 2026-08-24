@@ -6,7 +6,8 @@ title: "6) Suppose that is a sequence of functions with for every n and so that"
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

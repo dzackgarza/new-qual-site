@@ -6,7 +6,8 @@ title: '7. How many zeros does the polynomial $\{ | z | = 1 \}\{ | z | = 2 \}$ .
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Argument Principle
 relations: []
 review: draft
 ---

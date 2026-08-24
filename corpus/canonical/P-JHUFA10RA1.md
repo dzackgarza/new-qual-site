@@ -6,7 +6,8 @@ title: L2 convergence with Gaussian weight
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

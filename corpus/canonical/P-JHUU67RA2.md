@@ -6,7 +6,8 @@ title: Weak convergence plus norm convergence implies strong convergence in L2 (
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

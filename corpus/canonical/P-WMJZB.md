@@ -6,7 +6,8 @@ title: "H be a Hilbert space equipped with an inner product and a norm Recall th
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
 relations: []
 review: draft
 ---

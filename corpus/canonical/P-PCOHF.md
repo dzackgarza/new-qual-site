@@ -6,7 +6,8 @@ title: "every closed convex subset of a Hilbert space has a unique element of mi
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
 relations: []
 review: draft
 ---

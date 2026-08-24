@@ -6,7 +6,8 @@ title: Schur's test for integral operators
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Operator Theory
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "be a holomorphic function with simple zeros at the points and no other z
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Argument Principle
 relations: []
 review: draft
 ---

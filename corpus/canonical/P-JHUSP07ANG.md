@@ -6,7 +6,8 @@ title: "7) Suppose that is a sequence of functions in that converges weakly in t
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

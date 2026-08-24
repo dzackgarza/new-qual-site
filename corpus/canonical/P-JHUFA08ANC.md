@@ -6,7 +6,8 @@ title: "3) (10 points) Is the Banach space of bounded complex sequences with the
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Functional Analysis
 relations: []
 review: draft
 ---

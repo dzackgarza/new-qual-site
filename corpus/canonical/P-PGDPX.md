@@ -6,7 +6,8 @@ title: Integral equals integral of distribution function
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Lebesgue Integration
 relations: []
 review: draft
 ---

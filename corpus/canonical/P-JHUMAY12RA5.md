@@ -6,7 +6,8 @@ title: Weak and strong convergence of squares in L2
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

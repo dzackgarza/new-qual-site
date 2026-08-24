@@ -6,7 +6,8 @@ title: Integral transform is absolutely continuous and vanishes at infinity
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Absolute Continuity
 relations: []
 review: draft
 ---

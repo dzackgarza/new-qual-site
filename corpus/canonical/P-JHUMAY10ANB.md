@@ -6,7 +6,8 @@ title: 'all possible values of $\mathbb { C } \setminus \{ 1 , i \}$ . (A simple
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Residue Formula
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: Banach space characterization via absolutely convergent series
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Functional Analysis
 relations: []
 review: draft
 ---

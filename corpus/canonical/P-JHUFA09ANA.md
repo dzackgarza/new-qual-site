@@ -6,7 +6,8 @@ title: "is a sequence of continuous functions on [0, 1] which converges to a con
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Convergence Theorems
 relations: []
 review: draft
 ---

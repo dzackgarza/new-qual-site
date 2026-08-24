@@ -6,7 +6,8 @@ title: Convolution of characteristic functions is continuous
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Convolution
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: '4. Define by $f \in L ^ { 2 }U f = \lambda f\lambda \in \mathbb { R } \ 
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Operator Theory
 relations: []
 review: draft
 ---

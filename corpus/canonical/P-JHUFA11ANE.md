@@ -6,7 +6,8 @@ title: "5. Give an example of a sequence of functions satisfying for which has n
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: Multiplication operator on L2 is self-adjoint but not compact
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Operator Theory
 relations: []
 review: draft
 ---

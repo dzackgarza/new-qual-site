@@ -6,7 +6,8 @@ title: Unit ball of L2 is not compact
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

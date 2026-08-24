@@ -6,7 +6,8 @@ title: Nonzero smooth compactly supported function with compactly supported Four
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Analysis
 relations: []
 review: draft
 ---

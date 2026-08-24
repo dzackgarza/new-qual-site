@@ -6,7 +6,8 @@ title: "7. Quickies: a) Give an example of a function that is in but not in b) G
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

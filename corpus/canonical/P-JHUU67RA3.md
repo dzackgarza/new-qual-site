@@ -6,7 +6,8 @@ title: Holder inequality, Young inequality, and Lp Banach spaces
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: "that is a sequence of functions on [0, 1] with $f _ { j }L ^ { 2 } ( [ 0
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: 'lim $\begin{array} { r } { \operatorname* { s u p } _ { n \infty } \vert
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - L^p Spaces
 relations: []
 review: draft
 ---

@@ -6,7 +6,8 @@ title: '2. For which values of does there exist a constant such that $$ \left| \
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Hilbert Spaces
 relations: []
 review: draft
 ---

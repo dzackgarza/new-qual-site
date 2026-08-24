@@ -6,7 +6,8 @@ title: Fourier transform is continuous and vanishes at infinity
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Analysis
 relations: []
 review: draft
 ---

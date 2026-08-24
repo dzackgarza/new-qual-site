@@ -6,7 +6,8 @@ title: "3) Assume that is a continuously differentiable 2π periodic function on
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Fourier Analysis
 relations: []
 review: draft
 ---

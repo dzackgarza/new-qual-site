@@ -6,7 +6,8 @@ title: '1. How many zeros does the polynomial $\{ 1 \leq | z | \leq 3 \}$ . Just
 classification:
   areas:
   - real-analysis
-  topics: []
+  topics:
+  - Argument Principle
 relations: []
 review: draft
 ---
