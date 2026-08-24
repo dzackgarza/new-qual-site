@@ -20,7 +20,7 @@ source:
   - P-RASP15A
   - P-RASP15B
   - P-RASP15C
-  - P-RASP15D
+  - P-RASP13D
   - P-RASP15E
   - P-RASP15F
   - P-RASP15G

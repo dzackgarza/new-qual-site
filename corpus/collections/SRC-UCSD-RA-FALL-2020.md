@@ -23,7 +23,7 @@ source:
   - P-RAF20D
   - P-RAF20E
   - P-RAF20F
-  - P-RAF20G
+  - P-RASP16G
   date:
     kind: academic-term
     term: fall

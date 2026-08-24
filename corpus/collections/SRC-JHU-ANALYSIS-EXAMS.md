@@ -50,7 +50,7 @@ source:
   - name: Johns Hopkins University, Department of Mathematics, Real and Complex analysis
       (undated, pp. 6–7)
     problems:
-    - P-JHUU67RA1
+    - P-JHUU45RA1
     - P-JHUU67RA2
     - P-JHUU67RA3
     - P-JHUU67CA1
