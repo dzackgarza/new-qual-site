@@ -12,7 +12,6 @@ classification:
   - Partial Derivatives
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

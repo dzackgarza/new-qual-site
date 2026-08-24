@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that $H^*(K(\mathbb{Z}_m, 1); \mathbb{Z}_k)$ is isomorphic as a ring to $H^*(K(\mathbb{Z}_m, 1); \mathbb{Z}_m) \otimes \mathbb{Z}_k$ if $k$ divides $m$.

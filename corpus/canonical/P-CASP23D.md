@@ -13,7 +13,6 @@ classification:
   - Automorphisms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

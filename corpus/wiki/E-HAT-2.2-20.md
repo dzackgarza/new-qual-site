@@ -11,7 +11,6 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 For finite CW complexes $X$ and $Y$, show that $\chi(X \times Y) = \chi(X)\chi(Y)$.

@@ -10,7 +10,6 @@ classification:
   - Separation Axioms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

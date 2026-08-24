@@ -12,7 +12,6 @@ classification:
   - Arzela-Ascoli Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Seifert-van Kampen Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §70.2"}

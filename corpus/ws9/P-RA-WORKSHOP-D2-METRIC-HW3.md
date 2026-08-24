@@ -10,7 +10,6 @@ classification:
   - Countability
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

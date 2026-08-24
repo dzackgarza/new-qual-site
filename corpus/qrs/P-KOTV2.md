@@ -12,7 +12,6 @@ classification:
   - Matrices
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

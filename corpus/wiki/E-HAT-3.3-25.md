@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that if a closed orientable manifold $M$ of dimension $2k$ has $H_{k-1}(M; \mathbb{Z})$ torsionfree, then $H_k(M; \mathbb{Z})$ is also torsionfree.

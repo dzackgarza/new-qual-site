@@ -10,7 +10,6 @@ classification:
   - Measure Theory
 relations: []
 review: draft
-solved: true
 ---
 
 Let $E\subset \RR$ be a Lebesgue measurable set.

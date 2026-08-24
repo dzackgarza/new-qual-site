@@ -13,7 +13,6 @@ classification:
   - Cauchy Integral Formula
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

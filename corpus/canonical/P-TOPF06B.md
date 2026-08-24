@@ -11,7 +11,6 @@ classification:
   - Cup Product
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

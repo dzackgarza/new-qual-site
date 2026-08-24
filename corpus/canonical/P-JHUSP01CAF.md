@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP01CAF
 kind: problem
-title: Gauss-Lucas theorem: zeros of the derivative lie in the convex hull of the zeros of a polynomial
+title: 'Gauss-Lucas theorem: zeros of the derivative lie in the convex hull of the zeros of a polynomial'
 classification:
   areas:
   - complex-analysis
   topics:
   - Polynomials
-solved: false
 relations: []
 review: draft
 ---

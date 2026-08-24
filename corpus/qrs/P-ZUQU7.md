@@ -14,7 +14,6 @@ classification:
   - Blaschke Factors
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

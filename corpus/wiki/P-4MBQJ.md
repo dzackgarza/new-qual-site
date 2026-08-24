@@ -13,7 +13,6 @@ classification:
   - Primary Decomposition
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

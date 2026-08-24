@@ -13,7 +13,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Bounded holomorphic functions form a Banach space"}

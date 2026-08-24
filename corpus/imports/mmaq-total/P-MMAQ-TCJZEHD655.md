@@ -10,7 +10,6 @@ classification:
   - Convergence of Numbers
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

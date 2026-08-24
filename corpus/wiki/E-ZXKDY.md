@@ -11,7 +11,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="?"}

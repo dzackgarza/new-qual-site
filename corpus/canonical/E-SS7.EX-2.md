@@ -9,7 +9,6 @@ classification:
   topics: ['Zeta Function', 'Prime Number Theorem', 'Dirichlet Series']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

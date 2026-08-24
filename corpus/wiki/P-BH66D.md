@@ -11,7 +11,6 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
-solved: true
 ---
 
 Let $(X, d)$ and $(Y, \rho)$ be metric spaces, $f: X\to Y$, and $x_0 \in X$.

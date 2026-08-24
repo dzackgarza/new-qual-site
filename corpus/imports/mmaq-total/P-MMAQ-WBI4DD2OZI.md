@@ -11,7 +11,6 @@ classification:
   - Fatou
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

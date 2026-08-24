@@ -13,7 +13,6 @@ classification:
   - Riemann Zeta
 relations: []
 review: draft
-solved: false
 ---
 
 :::{.exercise title="Computing $\zeta(2)$ by integration"}

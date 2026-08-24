@@ -10,7 +10,6 @@ classification:
   - Free Abelian Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §67.1"}

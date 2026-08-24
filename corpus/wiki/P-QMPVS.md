@@ -12,7 +12,6 @@ classification:
   - L∞
 relations: []
 review: draft
-solved: true
 ---
 
 a. Prove Holder's inequality:

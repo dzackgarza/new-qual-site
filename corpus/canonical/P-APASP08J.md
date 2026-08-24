@@ -11,7 +11,6 @@ classification:
   - Representation Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

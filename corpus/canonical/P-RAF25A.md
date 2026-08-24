@@ -11,7 +11,6 @@ classification:
   - Cardinality
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

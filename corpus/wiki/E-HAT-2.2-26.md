@@ -12,7 +12,6 @@ classification:
   - Cone Constructions
 relations: []
 review: draft
-solved: false
 ---
 
 For a pair $(X, A)$, let $X \cup CA$ be $X$ with a cone on $A$ attached.

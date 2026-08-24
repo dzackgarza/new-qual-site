@@ -13,7 +13,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$1/1+\sin^2$"}

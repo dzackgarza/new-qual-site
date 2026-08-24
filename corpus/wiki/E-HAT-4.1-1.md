@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Suppose a sum $f +' g$ of maps $f, g: (I^n, \partial I^n) \to (X, x_0)$ is defined using a coordinate of $I^n$ other than the first coordinate as in the usual sum $f + g$.

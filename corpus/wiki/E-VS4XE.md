@@ -12,7 +12,6 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Lune with only one intersection point"}

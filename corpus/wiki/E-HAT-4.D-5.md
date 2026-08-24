@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Use the Gysin sequence to show that for a fiber bundle $S^k \to S^m \xrightarrow{p} S^n$ we must have $k = n-1$ and $m = 2n-1$.

@@ -13,7 +13,6 @@ classification:
   - Subgroups
 relations: []
 review: draft
-solved: true
 ---
 
 Let $K$ be a Galois extension of $\QQ$ with Galois group $G$, and let $E_1 , E_2$ be intermediate fields of $K$ which are the splitting fields of irreducible $f_i (x) \in \QQ[x]$. 

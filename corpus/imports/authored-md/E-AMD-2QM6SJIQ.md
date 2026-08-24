@@ -12,7 +12,6 @@ classification:
   - Abelian Groups
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise}

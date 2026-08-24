@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 In Example 1.44 let $d$ be the greatest common divisor of $m$ and $n$, and let $m' = m/d$ and $n' = n/d$.

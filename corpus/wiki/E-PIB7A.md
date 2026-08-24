@@ -12,7 +12,6 @@ classification:
   - Meromorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Cancelling poles"}

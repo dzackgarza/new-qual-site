@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Let $X$ be the smash product of $k$ copies of a Moore space $M(\mathbb{Z}_p, n)$ with $p$ prime.

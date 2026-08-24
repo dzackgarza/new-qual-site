@@ -10,9 +10,9 @@ classification:
   - Finite Fields
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e galois 3"}
-Find two different irreducible cubic polynomials mod 5, hence two different realizations of the unique field with 125 elements. Can you find an isomorphism between them?
+Find two different irreducible cubic polynomials mod 5, hence two different realizations of the unique field with 125 elements.
+Can you find an isomorphism between them?
 :::

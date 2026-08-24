@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 For a universal cover $p: \tilde{X} \to X$ there are two actions of $\pi_1(X, x_0)$ on the fiber $p^{-1}(x_0)$.

@@ -11,7 +11,6 @@ classification:
   - Conformal Maps
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Conformal maps to arbitrary points"}

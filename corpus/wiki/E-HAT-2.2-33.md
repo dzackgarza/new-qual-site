@@ -11,7 +11,6 @@ classification:
   - Mayer–Vietoris
 relations: []
 review: draft
-solved: false
 ---
 
 Suppose the space $X$ is the union of open sets $A_1, \cdots, A_n$ such that each intersection $A_{i_1} \cap \cdots \cap A_{i_k}$ is either empty or has trivial reduced homology groups.

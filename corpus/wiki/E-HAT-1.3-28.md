@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Show that for a covering space action of a group $G$ on a simply-connected space $Y$, $\pi_1(Y/G)$ is isomorphic to $G$.

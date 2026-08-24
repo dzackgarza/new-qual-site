@@ -13,7 +13,6 @@ classification:
   - Contour Integration
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Cauchy formula and principal parts"}

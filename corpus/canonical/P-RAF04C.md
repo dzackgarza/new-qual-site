@@ -12,7 +12,6 @@ classification:
   - Dense Subsets
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

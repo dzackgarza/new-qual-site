@@ -12,7 +12,6 @@ classification:
   - Limits
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

@@ -13,7 +13,6 @@ classification:
   - Poles
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Zeros of $\sin(\pi z)$ and singularities of $\csc(\pi z)$"}

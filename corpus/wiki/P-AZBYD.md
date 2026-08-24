@@ -12,7 +12,6 @@ classification:
   - Product Topology
 relations: []
 review: draft
-solved: true
 ---
 
 Let $L$ be a 3-manifold with homology $[\ZZ, \ZZ_3, 0, \ZZ, \ldots]$ and let $X = L \cross \Sigma L$. Compute $H_*(X), H^*(X)$.

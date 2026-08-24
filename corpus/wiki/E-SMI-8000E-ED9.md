@@ -10,7 +10,6 @@ classification:
   - Euclidean Domains
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e euclidean domains 9"}

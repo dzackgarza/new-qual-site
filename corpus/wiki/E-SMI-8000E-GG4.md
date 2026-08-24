@@ -10,7 +10,6 @@ classification:
   - Galois Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e galois 4/5/6/7/8"}

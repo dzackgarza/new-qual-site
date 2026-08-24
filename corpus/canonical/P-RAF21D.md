@@ -12,7 +12,6 @@ classification:
   - Continuous Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -13,7 +13,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$1/a+b\cos(\theta)$"}

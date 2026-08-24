@@ -12,7 +12,6 @@ classification:
   - Counterexamples
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

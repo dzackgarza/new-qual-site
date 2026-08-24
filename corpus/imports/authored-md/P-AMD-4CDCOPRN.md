@@ -12,7 +12,6 @@ classification:
   - Degree
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem}

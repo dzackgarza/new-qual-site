@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the tensor product of two Hopf algebras is a Hopf algebra.

@@ -13,7 +13,6 @@ relations:
   - kind: related-to
     target: P-APAS04N
 review: draft
-solved: false
 ---
 
 ::: problem

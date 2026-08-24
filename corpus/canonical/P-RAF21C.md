@@ -12,7 +12,6 @@ classification:
   - Minkowski Inequality
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

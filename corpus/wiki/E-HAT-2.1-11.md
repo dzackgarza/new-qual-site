@@ -11,7 +11,6 @@ classification:
   - Retractions
 relations: []
 review: draft
-solved: false
 ---
 
 Show that if $A$ is a retract of $X$ then the map $H_n(A) \to H_n(X)$ induced by the inclusion $A \subset X$ is injective.

@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 For a space $X$ let $\operatorname{Aut}(X)$ denote the group of homotopy classes of homotopy equivalences $X \to X$.

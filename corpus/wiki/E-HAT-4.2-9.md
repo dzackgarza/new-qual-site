@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show that a map between simply-connected CW complexes is a homotopy equivalence if its mapping cone is contractible.

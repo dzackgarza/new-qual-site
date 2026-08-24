@@ -11,7 +11,6 @@ classification:
   - Contour Integration
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Integral computation"}

@@ -12,7 +12,6 @@ classification:
   - Measure Convergence
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

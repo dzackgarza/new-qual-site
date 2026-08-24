@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show there is a Moore space $M(G, 1)$ with $\pi_1\bigl(M(G, 1)\bigr) \approx G$ iff $H_2(K(G, 1); \mathbb{Z}) = 0$.

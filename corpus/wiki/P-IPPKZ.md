@@ -12,7 +12,6 @@ classification:
   - Integral Domains
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="Spring 2021"}

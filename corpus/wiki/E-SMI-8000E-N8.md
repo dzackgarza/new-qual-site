@@ -10,7 +10,6 @@ classification:
   - Localization
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e localization 8"}

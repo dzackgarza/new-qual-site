@@ -13,7 +13,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.proposition title="Bounded Complex Analytic Functions form a Banach Space"}

@@ -12,7 +12,6 @@ classification:
   - Schwarz Lemma
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

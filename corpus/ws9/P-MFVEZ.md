@@ -11,7 +11,6 @@ classification:
   - Green's Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

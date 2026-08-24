@@ -12,7 +12,7 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
-Let $X$ be the quotient space of $S^2$ obtained by identifying the north and south poles to a single point. Put a cell complex structure on $X$ and use this to compute $\pi_1(X)$.
+Let $X$ be the quotient space of $S^2$ obtained by identifying the north and south poles to a single point.
+Put a cell complex structure on $X$ and use this to compute $\pi_1(X)$.

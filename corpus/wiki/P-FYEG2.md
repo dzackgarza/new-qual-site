@@ -12,7 +12,6 @@ classification:
   - Subgroups
 relations: []
 review: draft
-solved: true
 ---
 
 Let $G$ be a finite group and $s, t\in G$ be two distinct elements of order 2.

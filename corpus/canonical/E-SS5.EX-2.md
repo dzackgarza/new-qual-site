@@ -9,7 +9,6 @@ classification:
   topics: ['Entire Functions', 'Hadamard Factorization', "Jensen's Formula"]
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

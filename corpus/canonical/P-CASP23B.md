@@ -12,7 +12,6 @@ classification:
   - Unit Circle
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

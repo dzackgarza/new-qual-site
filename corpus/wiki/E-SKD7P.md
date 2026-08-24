@@ -12,7 +12,6 @@ classification:
   - Convergence Tests
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Power series converge uniformly on their radius of convergence"}

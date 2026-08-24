@@ -11,7 +11,6 @@ classification:
   - Convergence Tests
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

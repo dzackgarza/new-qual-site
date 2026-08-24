@@ -10,7 +10,6 @@ classification:
   - Finite Sets
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §6.5"}

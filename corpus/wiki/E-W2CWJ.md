@@ -13,7 +13,6 @@ classification:
   - Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Removable singularity at infinity iff constant"}

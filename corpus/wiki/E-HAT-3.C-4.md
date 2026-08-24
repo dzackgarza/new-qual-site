@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that an H-space or topological group structure on a path-connected, locally path-connected space can be lifted to such a structure on its universal cover.

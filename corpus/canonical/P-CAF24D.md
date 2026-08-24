@@ -10,7 +10,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

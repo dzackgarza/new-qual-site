@@ -11,7 +11,6 @@ classification:
   - Cell Complexes
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem}

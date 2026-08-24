@@ -12,7 +12,6 @@ classification:
   - Punctured Disk
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

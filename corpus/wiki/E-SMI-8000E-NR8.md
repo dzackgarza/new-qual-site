@@ -10,7 +10,6 @@ classification:
   - Ideals
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e noetherian rings 8"}

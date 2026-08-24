@@ -12,7 +12,6 @@ classification:
   - Borel Measures
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

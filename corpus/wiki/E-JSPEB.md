@@ -10,7 +10,6 @@ classification:
   - Schwarz Lemma
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Using the estimates"}

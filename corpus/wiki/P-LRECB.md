@@ -12,7 +12,6 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
-solved: true
 ---
 
 Let $K$ be a Galois extension of $F$, and let $F \subset E \subset K$ be inclusions of fields.

@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Consider covering spaces $p: \tilde{X} \to X$ with $\tilde{X}$ and $X$ connected CW complexes, the cells of $\tilde{X}$ projecting homeomorphically onto cells of $X$.

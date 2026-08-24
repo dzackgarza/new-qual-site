@@ -10,7 +10,6 @@ classification:
   - Set Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

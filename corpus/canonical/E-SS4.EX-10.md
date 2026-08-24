@@ -9,7 +9,6 @@ classification:
   topics: ['Fourier Transform', 'Poisson Summation']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

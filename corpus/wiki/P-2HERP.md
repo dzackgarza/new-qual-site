@@ -12,7 +12,6 @@ classification:
   - Bilinear Forms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

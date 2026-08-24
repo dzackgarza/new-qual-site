@@ -14,7 +14,6 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

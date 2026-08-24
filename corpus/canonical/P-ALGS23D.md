@@ -10,7 +10,6 @@ classification:
   - Commutative Algebra
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

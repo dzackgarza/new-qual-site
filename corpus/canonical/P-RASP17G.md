@@ -12,7 +12,6 @@ classification:
   - Density
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

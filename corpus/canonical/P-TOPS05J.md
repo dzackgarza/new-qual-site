@@ -12,7 +12,6 @@ classification:
   - Wedge Product
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

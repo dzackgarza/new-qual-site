@@ -13,7 +13,6 @@ classification:
   - Continuity of Measure
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

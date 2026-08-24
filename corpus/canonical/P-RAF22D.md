@@ -13,7 +13,6 @@ classification:
   - Stone-Weierstrass Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that $\operatorname{Ext}(A, \mathbb{Q}) = 0$ for all $A$.

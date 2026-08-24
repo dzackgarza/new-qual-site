@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show that every map $f: S^n \to S^n$ is homotopic to a multiple of the identity map by the following steps.

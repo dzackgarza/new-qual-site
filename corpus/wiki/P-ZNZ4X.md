@@ -12,7 +12,6 @@ classification:
   - Geometry
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

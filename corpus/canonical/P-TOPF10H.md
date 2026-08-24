@@ -12,7 +12,6 @@ classification:
   - Graphs
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

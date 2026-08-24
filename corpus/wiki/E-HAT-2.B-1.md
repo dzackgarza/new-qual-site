@@ -10,7 +10,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Compute $H_i(S^n - X)$ when $X$ is a subspace of $S^n$ homeomorphic to $S^k \vee S^\ell$ or to $S^k \amalg S^\ell$.

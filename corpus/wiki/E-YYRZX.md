@@ -12,7 +12,6 @@ classification:
   - Integrals
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$e^{x/2} / 1+e^x,$ replication"}

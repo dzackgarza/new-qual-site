@@ -12,7 +12,6 @@ classification:
   - Compactness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Uniform limit theorem"}

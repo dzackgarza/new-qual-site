@@ -10,7 +10,6 @@ classification:
   - Module Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

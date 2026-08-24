@@ -12,7 +12,6 @@ classification:
   - Separability
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise}

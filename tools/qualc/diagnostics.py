@@ -19,9 +19,6 @@ class DiagnosticCode(Enum):
     UNKNOWN_TEXTBOOK = "unknown-textbook"
     # relations
     DANGLING_RELATION = "dangling-relation"
-    # declared status versus corpus evidence
-    SOLVED_WITHOUT_EVIDENCE = "solved-without-evidence"
-    UNSOLVED_WITH_SOLUTION = "unsolved-with-solution"
     # reading
     CARD_UNREADABLE = "card-unreadable"
     READER_WARNING = "reader-warning"

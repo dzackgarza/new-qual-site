@@ -11,7 +11,6 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="Spring 2020.5"}

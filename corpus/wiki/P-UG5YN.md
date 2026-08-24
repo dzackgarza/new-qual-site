@@ -12,7 +12,6 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
-solved: true
 ---
 
 Prove that, for $n \geq 2$, every continuous map $f: \RP^n \to S^1$ is null-homotopic.

@@ -11,7 +11,6 @@ classification:
   - Biholomorphisms
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Special case of bijections"}

@@ -11,7 +11,6 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 For $X$ a finite CW complex and $p: \tilde{X} \to X$ an $n$ sheeted covering space, show that $\chi(\tilde{X}) = n\chi(X)$.

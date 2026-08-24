@@ -10,7 +10,6 @@ classification:
   - Quotient Topology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §22.1"}

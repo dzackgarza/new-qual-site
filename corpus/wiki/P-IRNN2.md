@@ -14,7 +14,6 @@ classification:
   - Biholomorphisms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

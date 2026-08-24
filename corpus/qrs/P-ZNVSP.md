@@ -13,7 +13,6 @@ classification:
   - Open Mapping Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem
@@ -43,4 +42,3 @@ Ideas:
 
 - No clue how to use $f(i) = i$, although it implies $\tilde f(0) = 0$ and Schwarz applies.
 :::
-

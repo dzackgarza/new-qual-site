@@ -2,12 +2,11 @@
 schema: qual/card@1
 id: P-JHUMAY10ANI
 kind: problem
-title: "that $t \to f ( x , t )\begin{array} { r } { \left| \frac { \partial f } { \part"
+title: 'that $t \to f ( x , t )\begin{array} { r } { \left| \frac { \partial f } { \part'
 classification:
   areas:
   - real-analysis
   topics: []
-solved: false
 relations: []
 review: draft
 ---

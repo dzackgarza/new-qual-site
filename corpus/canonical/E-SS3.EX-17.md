@@ -11,7 +11,6 @@ classification:
   - Open Mapping Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

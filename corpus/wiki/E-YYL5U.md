@@ -12,7 +12,6 @@ classification:
   - Rings
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="?"}

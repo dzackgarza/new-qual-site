@@ -11,7 +11,6 @@ classification:
   - Metrizability
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §38.3"}

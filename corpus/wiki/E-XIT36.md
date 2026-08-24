@@ -12,7 +12,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Application of summation by parts"}

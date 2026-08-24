@@ -10,7 +10,6 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

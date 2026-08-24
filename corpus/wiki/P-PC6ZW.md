@@ -13,7 +13,6 @@ classification:
   - Tensor Products
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

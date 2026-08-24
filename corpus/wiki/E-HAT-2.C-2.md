@@ -11,7 +11,6 @@ classification:
   - Degree Theory
 relations: []
 review: draft
-solved: false
 ---
 
 Use the Lefschetz fixed point theorem to show that a map $S^n \to S^n$ has a fixed point unless its degree is equal to the degree of the antipodal map $x \mapsto -x$.

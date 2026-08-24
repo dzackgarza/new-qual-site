@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Show that for a graph of groups all of whose edge homomorphisms are injective maps $\mathbb{Z} \to \mathbb{Z}$, we can choose $K$ to have universal cover a product $T \times \mathbb{R}$ with $T$ a tree.

@@ -13,7 +13,6 @@ classification:
   - Zeros
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

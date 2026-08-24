@@ -11,7 +11,6 @@ classification:
   - Finite Fields
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -11,7 +11,6 @@ classification:
   - Field Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Number Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="?"}

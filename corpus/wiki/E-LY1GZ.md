@@ -11,7 +11,6 @@ classification:
   - Boundary
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §23.6"}

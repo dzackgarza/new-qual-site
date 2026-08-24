@@ -13,7 +13,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="ML estimate for a semicircular contour"}

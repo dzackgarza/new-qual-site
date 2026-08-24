@@ -11,7 +11,6 @@ classification:
   - Connectedness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

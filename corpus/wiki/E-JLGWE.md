@@ -13,7 +13,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Extended Liouville theorem"}

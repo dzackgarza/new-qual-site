@@ -13,7 +13,6 @@ classification:
   - Limits
 relations: []
 review: draft
-solved: true
 ---
 
 a. Prove that if $f\in L^1(\RR)$ then

@@ -12,7 +12,6 @@ classification:
   - Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

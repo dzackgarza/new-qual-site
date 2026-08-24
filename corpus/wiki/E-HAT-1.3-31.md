@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the normal covering spaces of $S^1 \vee S^1$ are precisely the graphs that are Cayley graphs of groups with two generators.

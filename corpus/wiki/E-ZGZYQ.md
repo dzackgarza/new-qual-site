@@ -13,7 +13,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$\sin(x)/x$ and $\cos(x)/x$"}

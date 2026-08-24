@@ -12,7 +12,6 @@ classification:
   - Principal Parts
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Laurent expansions about different points"}

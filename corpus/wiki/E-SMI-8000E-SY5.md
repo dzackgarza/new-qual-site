@@ -10,7 +10,6 @@ classification:
   - Solvable Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e sylow 5"}

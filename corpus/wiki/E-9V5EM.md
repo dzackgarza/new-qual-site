@@ -10,7 +10,6 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §21.6"}

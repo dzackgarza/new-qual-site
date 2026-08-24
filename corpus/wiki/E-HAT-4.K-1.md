@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show that Corollary 4K.2 remains valid when $X$ and $Y$ are CW complexes and the subspaces $U_i$ and $V_i$ are subcomplexes rather than open sets.

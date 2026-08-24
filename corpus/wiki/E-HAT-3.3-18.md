@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that a direct limit $\varinjlim G_\alpha$ of torsionfree abelian groups $G_\alpha$ is torsionfree.

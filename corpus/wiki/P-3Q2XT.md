@@ -12,7 +12,6 @@ classification:
   - Principal Ideal Domains
 relations: []
 review: draft
-solved: true
 ---
 
 a.

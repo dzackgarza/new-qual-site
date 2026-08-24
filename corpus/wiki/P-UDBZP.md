@@ -13,7 +13,6 @@ classification:
   - Bases
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Meromorphic Functions
-solved: false
 relations: []
 review: draft
 ---

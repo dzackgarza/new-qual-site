@@ -10,7 +10,6 @@ classification:
   - Degree
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -11,7 +11,6 @@ classification:
   - Product Topology
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem}

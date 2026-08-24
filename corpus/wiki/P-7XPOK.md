@@ -13,7 +13,6 @@ classification:
   - Borel-Cantelli
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

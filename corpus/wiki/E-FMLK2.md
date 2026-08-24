@@ -12,7 +12,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Derivatives detect multiplicity of zeros"}

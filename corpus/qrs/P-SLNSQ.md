@@ -11,7 +11,6 @@ classification:
   - Irreducibility Criteria
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

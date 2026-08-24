@@ -11,7 +11,6 @@ classification:
   - Group Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

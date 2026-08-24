@@ -12,7 +12,6 @@ classification:
   - Density
 relations: []
 review: draft
-solved: true
 ---
 
 Let $f\in L^1(\RR)$.

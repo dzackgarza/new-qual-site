@@ -11,7 +11,6 @@ classification:
   - Closure
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §29 Supplementary"}

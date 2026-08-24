@@ -11,7 +11,6 @@ classification:
   - Countability
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §71.4"}

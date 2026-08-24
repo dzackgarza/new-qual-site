@@ -13,7 +13,6 @@ classification:
   - Layer Cake Representation
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

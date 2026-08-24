@@ -11,7 +11,6 @@ classification:
   - Laurent Series
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Invert $2z-1$, one coefficient at a time"}

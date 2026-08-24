@@ -12,7 +12,6 @@ classification:
   - Convergence of Integrals
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

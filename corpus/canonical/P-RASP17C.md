@@ -12,7 +12,6 @@ classification:
   - Orthonormal Bases
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

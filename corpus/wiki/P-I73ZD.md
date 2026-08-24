@@ -12,7 +12,6 @@ classification:
   - Compactness
 relations: []
 review: draft
-solved: true
 ---
 
 Let $(M, d_M)$, $(N, d_N)$ be metric spaces. Define

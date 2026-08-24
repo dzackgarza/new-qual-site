@@ -10,7 +10,6 @@ classification:
   - Cauchy-Riemann
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Polar CR equations"}

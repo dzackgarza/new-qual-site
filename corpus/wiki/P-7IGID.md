@@ -11,7 +11,6 @@ classification:
   - Homotopy
 relations: []
 review: draft
-solved: true
 ---
 
 Describe, as explicitly as you can, two different (non-homeomorphic) connected two-sheeted covering spaces of $\RP^2 \lor \RP^3$, and prove that they are not homeomorphic.

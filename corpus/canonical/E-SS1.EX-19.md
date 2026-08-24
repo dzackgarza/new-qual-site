@@ -12,7 +12,6 @@ classification:
   - Series of Functions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Stein/Shakarchi 1.20: Series convergence on the circle"}

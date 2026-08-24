@@ -12,7 +12,6 @@ classification:
   - Sequences of Functions
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Uniform limit of holomorphic derivatives is the derivative"}

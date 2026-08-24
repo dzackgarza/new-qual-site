@@ -13,7 +13,6 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$1/(x-a)\sqrt{1-x^2}$ "}

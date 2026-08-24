@@ -14,7 +14,6 @@ classification:
   - Localization
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

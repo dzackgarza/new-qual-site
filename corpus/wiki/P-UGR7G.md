@@ -10,7 +10,6 @@ classification:
   - Integrals
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

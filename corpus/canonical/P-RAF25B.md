@@ -12,7 +12,6 @@ classification:
   - Distance Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

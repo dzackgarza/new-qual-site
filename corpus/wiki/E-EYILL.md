@@ -12,7 +12,6 @@ classification:
   - Homotopy
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="No fixed points implies homotopic to antipodal"}

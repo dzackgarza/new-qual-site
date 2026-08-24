@@ -13,7 +13,6 @@ classification:
   - Direct Products
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

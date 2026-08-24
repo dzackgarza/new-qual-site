@@ -12,7 +12,6 @@ classification:
   - Conjugacy
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

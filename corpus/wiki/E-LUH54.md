@@ -12,7 +12,6 @@ classification:
   - Direct Products
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="?"}

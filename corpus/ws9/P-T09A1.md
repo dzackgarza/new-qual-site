@@ -12,7 +12,6 @@ classification:
   - Countability
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

@@ -13,7 +13,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Uniform limit of holomorphic is holomorphic"}

@@ -14,7 +14,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: false
 ---
 
 :::{.problem title="?"}

@@ -11,7 +11,6 @@ classification:
   - Distribution Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

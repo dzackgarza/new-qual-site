@@ -13,7 +13,6 @@ classification:
   - Splitting Fields
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem}

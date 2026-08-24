@@ -11,7 +11,6 @@ classification:
   - L²
 relations: []
 review: draft
-solved: true
 ---
 
 \label{hilbert_space_exam_question}

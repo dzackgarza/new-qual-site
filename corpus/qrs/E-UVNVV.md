@@ -12,7 +12,6 @@ classification:
   - Argument Principle
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Injectivity relates to derivatives"}

@@ -13,7 +13,6 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$\log(x) / x^2+a^2$"}

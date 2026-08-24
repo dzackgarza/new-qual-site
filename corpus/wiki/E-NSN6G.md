@@ -13,7 +13,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Locally uniform limit theorem for holomorphic functions"}

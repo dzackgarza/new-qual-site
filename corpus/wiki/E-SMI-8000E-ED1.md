@@ -12,11 +12,11 @@ classification:
   - Ideals
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e Euclidean domains 1"}
-Assume $R$ is a Euclidean domain. Prove every ideal $I$ in $R$ is principal, i.e. is a cyclic module.
+Assume $R$ is a Euclidean domain.
+Prove every ideal $I$ in $R$ is principal, i.e. is a cyclic module.
 
 [Hint: if $I$ contains nonzero elements, choose one $x$ of smallest size, and prove $x$ divides all the other elements of $I$.] Conclude that either $I = \{0\}$, or $I$ is isomorphic to $R$.
 :::

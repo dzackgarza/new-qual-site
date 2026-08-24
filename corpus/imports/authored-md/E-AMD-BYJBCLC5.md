@@ -12,7 +12,6 @@ classification:
   - Galois Theory
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise}

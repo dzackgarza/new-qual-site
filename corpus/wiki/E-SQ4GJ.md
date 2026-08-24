@@ -12,7 +12,6 @@ classification:
   - Poles
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Expansion for a reciprocal"}

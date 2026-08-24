@@ -13,7 +13,6 @@ classification:
   - Whitehead Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

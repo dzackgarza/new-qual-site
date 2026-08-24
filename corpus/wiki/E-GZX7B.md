@@ -11,7 +11,6 @@ classification:
   - Compactness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §41.10"}

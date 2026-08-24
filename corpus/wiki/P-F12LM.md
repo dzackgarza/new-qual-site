@@ -10,7 +10,6 @@ classification:
   - Limits
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

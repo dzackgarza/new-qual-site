@@ -11,7 +11,6 @@ classification:
   - Homotopy
 relations: []
 review: draft
-solved: false
 ---
 
 Show that composition of paths satisfies the following cancellation property: If $f_0 \cdot g_0 \simeq f_1 \cdot g_1$ and $g_0 \simeq g_1$ then $f_0 \simeq f_1$.

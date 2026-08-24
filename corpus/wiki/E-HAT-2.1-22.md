@@ -11,7 +11,6 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 Prove by induction on dimension the following facts about the homology of a finite-dimensional CW complex $X$, using the observation that $X^n/X^{n-1}$ is a wedge sum of $n$ spheres:

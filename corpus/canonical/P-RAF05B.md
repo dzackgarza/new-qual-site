@@ -12,7 +12,6 @@ classification:
   - Sumsets
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

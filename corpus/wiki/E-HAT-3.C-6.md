@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that $S^n$ is an H-space if the attaching map of the $2n$-cell of $J_2(S^n)$ is homotopically trivial.

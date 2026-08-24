@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Residue Formula
-solved: false
 relations: []
 review: draft
 ---

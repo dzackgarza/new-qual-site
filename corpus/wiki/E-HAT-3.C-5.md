@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that if $(X, e)$ is an H-space then $\pi_1(X, e)$ is abelian.

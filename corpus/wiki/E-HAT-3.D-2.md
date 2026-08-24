@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Using the CW structure on $SO(n)$, show that $\pi_1 SO(n) \approx \mathbb{Z}_2$ for $n \geq 3$.

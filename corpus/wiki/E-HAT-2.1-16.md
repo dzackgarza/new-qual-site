@@ -11,7 +11,6 @@ classification:
   - Relative Homology
 relations: []
 review: draft
-solved: false
 ---
 
 (a) Show that $H_0(X, A) = 0$ iff $A$ meets each path-component of $X$.

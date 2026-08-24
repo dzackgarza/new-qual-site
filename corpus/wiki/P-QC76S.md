@@ -13,7 +13,6 @@ classification:
   - Integral Domains
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

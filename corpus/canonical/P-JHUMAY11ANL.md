@@ -2,12 +2,11 @@
 schema: qual/card@1
 id: P-JHUMAY11ANL
 kind: problem
-title: "4. Define by $f \in L ^ { 2 }U f = \lambda f\lambda \in \mathbb { R } \ ( \ma..."
+title: '4. Define by $f \in L ^ { 2 }U f = \lambda f\lambda \in \mathbb { R } \ ( \ma...'
 classification:
   areas:
   - real-analysis
   topics: []
-solved: false
 relations: []
 review: draft
 ---

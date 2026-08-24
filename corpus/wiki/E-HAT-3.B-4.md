@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the cross product of fundamental classes for closed $\mathbb{R}$-orientable manifolds $M$ and $N$ is a fundamental class for $M \times N$.

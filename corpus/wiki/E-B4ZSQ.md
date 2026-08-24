@@ -11,7 +11,6 @@ classification:
   - Cauchy-Riemann
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Finding harmonic conjugates"}

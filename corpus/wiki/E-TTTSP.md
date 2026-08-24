@@ -11,7 +11,6 @@ classification:
   - Order Topology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §38.5"}

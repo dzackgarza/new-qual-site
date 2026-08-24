@@ -10,7 +10,6 @@ classification:
   - Maximum Modulus Principle
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

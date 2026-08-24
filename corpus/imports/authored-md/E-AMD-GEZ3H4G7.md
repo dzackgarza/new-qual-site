@@ -11,7 +11,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise}

@@ -12,7 +12,6 @@ relations:
 - kind: related-to
   target: E-YAEMZ
 review: draft
-solved: false
 ---
 
 - Every sequence in $X$ has a convergent subsequence in $X$.

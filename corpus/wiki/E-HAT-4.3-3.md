@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Suppose that a CW complex $X$ contains a subcomplex $S^1$ such that the inclusion $S^1 \hookrightarrow X$ induces an injection $H_1(S^1; \mathbb{Z}) \to H_1(X; \mathbb{Z})$ with image a direct summand of $H_1(X; \mathbb{Z})$.

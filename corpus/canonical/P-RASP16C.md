@@ -11,7 +11,6 @@ classification:
   - Cantor Intersection Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

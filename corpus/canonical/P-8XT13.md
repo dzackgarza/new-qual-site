@@ -8,7 +8,6 @@ classification:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

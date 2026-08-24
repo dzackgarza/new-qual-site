@@ -10,7 +10,6 @@ classification:
   - Homotopy
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

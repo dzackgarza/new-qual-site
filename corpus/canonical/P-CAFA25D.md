@@ -12,7 +12,6 @@ classification:
   - Radial Symmetry
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

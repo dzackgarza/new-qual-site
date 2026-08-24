@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA05ANA
 kind: problem
-title: "be a sequence of Lebesgue measurable functions on [0, 1], and assume that $$ \op"
+title: 'be a sequence of Lebesgue measurable functions on [0, 1], and assume that $$ \op'
 classification:
   areas:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

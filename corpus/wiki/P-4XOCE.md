@@ -12,7 +12,6 @@ classification:
   - Conjugacy
 relations: []
 review: draft
-solved: false
 ---
 
 Let $H \normal G$ be a normal subgroup of a finite group $G$, where the order of $H$ is the smallest prime $p$ dividing $\abs{G}$.

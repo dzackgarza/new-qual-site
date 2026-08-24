@@ -12,7 +12,6 @@ classification:
   - Homotopy
 relations: []
 review: draft
-solved: true
 ---
 
 Let $X = \RR^3 - \Delta^{(1)}$, the complement of the skeleton of regular tetrahedron, and compute $\pi_1(X)$ and $H_*(X)$.

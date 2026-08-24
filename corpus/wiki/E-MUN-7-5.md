@@ -10,7 +10,6 @@ classification:
   - Countable and Uncountable Sets
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §7.5"}

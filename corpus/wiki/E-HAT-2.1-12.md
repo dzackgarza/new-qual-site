@@ -11,7 +11,6 @@ classification:
   - Chain Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 Show that chain homotopy of chain maps is an equivalence relation.

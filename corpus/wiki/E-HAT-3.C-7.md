@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 What are the primitive elements of the Hopf algebra $\mathbb{Z}_p[x]$ for $p$ prime?

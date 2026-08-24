@@ -12,7 +12,6 @@ classification:
   - Cauchy Integral Formula
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

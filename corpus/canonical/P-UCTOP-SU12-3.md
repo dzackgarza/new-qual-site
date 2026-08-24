@@ -7,7 +7,6 @@ classification:
   areas:
   - topology
   topics: []
-solved: false
 relations: []
 review: draft
 ---

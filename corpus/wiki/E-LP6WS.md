@@ -10,7 +10,6 @@ classification:
   - Jordan Separation Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §61.2"}

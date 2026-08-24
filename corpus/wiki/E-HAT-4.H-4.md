@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Define the dual of an iterated mapping cylinder precisely, in terms of maps from $\Delta^n$, and use this to give a definition of $\nabla X$, the dual of $\Delta X$, for $X$ a complex of spaces.

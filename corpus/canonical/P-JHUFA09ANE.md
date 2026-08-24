@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA09ANE
 kind: problem
-title: "$f ^ { \prime } ( 0 )$ exists; b) f is holomorphic in a neighborhood of 0."
+title: '$f ^ { \prime } ( 0 )$ exists; b) f is holomorphic in a neighborhood of 0.'
 classification:
   areas:
   - complex-analysis
   topics:
   - complex-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

@@ -13,7 +13,6 @@ classification:
   - Rings
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="?"}

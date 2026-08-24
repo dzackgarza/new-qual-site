@@ -13,7 +13,6 @@ classification:
   - Nakayama's Lemma
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

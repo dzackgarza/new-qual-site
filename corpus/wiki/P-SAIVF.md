@@ -12,7 +12,6 @@ classification:
   - L²
 relations: []
 review: draft
-solved: true
 ---
 
 Let $f\in L^2([0, 1])$ and suppose

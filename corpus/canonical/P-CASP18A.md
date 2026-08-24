@@ -11,7 +11,6 @@ classification:
   - Minimum Principle
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

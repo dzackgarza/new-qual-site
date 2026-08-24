@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Let $\varphi: \mathbb{R}^2 \to \mathbb{R}^2$ be the linear transformation $\varphi(x,y) = (2x, y/2)$.

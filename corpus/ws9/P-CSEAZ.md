@@ -13,7 +13,6 @@ classification:
   - Rational Canonical Form
 relations: []
 review: draft
-solved: false
 ---
 
 :::{.problem title="?"}

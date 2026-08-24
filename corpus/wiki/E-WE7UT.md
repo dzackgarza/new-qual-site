@@ -13,7 +13,6 @@ classification:
   - Removable Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Residues and classifying singularities"}

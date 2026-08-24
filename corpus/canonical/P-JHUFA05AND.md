@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA05AND
 kind: problem
-title: "$$ \| f \| \leq \operatorname* { l i m } _ { n \to \infty } { \big \| } f _ { n"
+title: '$$ \| f \| \leq \operatorname* { l i m } _ { n \to \infty } { \big \| } f _ { n'
 classification:
   areas:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

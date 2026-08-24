@@ -13,7 +13,6 @@ classification:
   - Open Mapping Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Detecting injectivity using derivatives"}

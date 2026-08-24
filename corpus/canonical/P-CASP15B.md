@@ -14,7 +14,6 @@ classification:
   - Sheaf of Germs
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -2,12 +2,11 @@
 schema: qual/card@1
 id: P-JHUFA09ANC
 kind: problem
-title: "I be the unit interval [0, 1], and for . and let $f \ \in \ L ^ { 1 } ( I , d x"
+title: 'I be the unit interval [0, 1], and for . and let $f \ \in \ L ^ { 1 } ( I , d x'
 classification:
   areas:
   - real-analysis
   topics: []
-solved: false
 relations: []
 review: draft
 ---

@@ -11,7 +11,6 @@ classification:
   - Algebras
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem}

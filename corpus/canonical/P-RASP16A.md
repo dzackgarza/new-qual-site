@@ -14,7 +14,6 @@ classification:
   - Distributions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

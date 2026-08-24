@@ -14,7 +14,6 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D7-6-7
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

@@ -11,7 +11,6 @@ classification:
   - Measure Theory
 relations: []
 review: draft
-solved: true
 ---
 
 Let $m_*$ denote the Lebesgue outer measure on \( \RR \).

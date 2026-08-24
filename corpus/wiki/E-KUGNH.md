@@ -13,7 +13,6 @@ classification:
   - Laurent Series
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Bounded derivatives imply removable singularities"}

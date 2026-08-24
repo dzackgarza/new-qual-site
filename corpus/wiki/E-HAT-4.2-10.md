@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Let the CW complex $X$ be obtained from $S^1 \vee S^n$, $n \geq 2$, by attaching a cell $e^{n+1}$ by a map representing the polynomial $p(t) \in \mathbb{Z}[t, t^{-1}] \approx \pi_n(S^1 \vee S^n)$, so $\pi_n(X) \approx \mathbb{Z}[t, t^{-1}] / \bigl(p(t)\bigr)$.

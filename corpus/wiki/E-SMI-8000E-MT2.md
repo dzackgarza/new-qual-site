@@ -10,11 +10,11 @@ classification:
   - Principal Ideal Domains
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000 fall 2006 midterm 2"}
 (a) Prove every principal ideal domain $R$ has "unique factorization".
 
-(b) Give an example of a ring with unique factorization that is not a principal ideal domain. (You do not have to prove it.)
+(b) Give an example of a ring with unique factorization that is not a principal ideal domain.
+(You do not have to prove it.)
 :::

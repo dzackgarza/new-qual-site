@@ -11,7 +11,6 @@ classification:
   - Euclidean Spaces
 relations: []
 review: draft
-solved: true
 ---
 
 Show that $[0, 1]$ is connected.

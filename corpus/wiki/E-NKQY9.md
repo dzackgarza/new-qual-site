@@ -10,7 +10,6 @@ classification:
   - Bases
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §13.8"}

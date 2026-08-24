@@ -12,7 +12,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 Assume that $\abs b < 1$ and show that the following polynomial has exactly two roots (counting multiplicity) in $\abs{z} < 1$:

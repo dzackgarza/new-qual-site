@@ -12,7 +12,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

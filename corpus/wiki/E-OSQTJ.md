@@ -10,7 +10,6 @@ classification:
   - Invariance of Domain
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §62.2"}

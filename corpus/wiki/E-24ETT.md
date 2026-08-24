@@ -13,7 +13,6 @@ classification:
   - Conformal Maps
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

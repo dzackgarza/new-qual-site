@@ -2,12 +2,11 @@
 schema: qual/card@1
 id: P-JHUMAY10ANB
 kind: problem
-title: "all possible values of $\mathbb { C } \setminus \{ 1 , i \}$ . (A simple closed"
+title: 'all possible values of $\mathbb { C } \setminus \{ 1 , i \}$ . (A simple closed'
 classification:
   areas:
   - real-analysis
   topics: []
-solved: false
 relations: []
 review: draft
 ---

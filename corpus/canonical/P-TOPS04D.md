@@ -12,7 +12,6 @@ classification:
   - Free Resolutions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

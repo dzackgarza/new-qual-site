@@ -10,7 +10,6 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000 fall 2006 final H"}
@@ -20,5 +19,6 @@ Prove one:
 
 or
 
-(ii) The Cayley-Hamilton theorem. Say what your hypotheses are.
+(ii) The Cayley-Hamilton theorem.
+Say what your hypotheses are.
 :::

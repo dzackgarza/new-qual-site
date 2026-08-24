@@ -11,7 +11,6 @@ classification:
   - Van Kampen
 relations: []
 review: draft
-solved: false
 ---
 
 Show that $\pi_1(\mathbb{R}^2 - \mathbb{Q}^2)$ is uncountable.

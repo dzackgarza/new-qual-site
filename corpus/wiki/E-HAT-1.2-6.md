@@ -12,7 +12,6 @@ classification:
   - Simply Connected
 relations: []
 review: draft
-solved: false
 ---
 
 Use Proposition 1.26 to show that the complement of a closed discrete subspace of $\mathbb{R}^n$ is simply-connected if $n \geq 3$.

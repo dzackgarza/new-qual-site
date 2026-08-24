@@ -11,7 +11,6 @@ classification:
   - Uniform Continuity
 relations: []
 review: draft
-solved: true
 ---
 
 Consider the function $f(x) = \frac{x}{1-x^2}$,

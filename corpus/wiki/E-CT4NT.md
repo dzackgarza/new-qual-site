@@ -10,7 +10,6 @@ classification:
   - Compactness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §47.4"}

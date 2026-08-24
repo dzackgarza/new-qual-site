@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Power Series
-solved: false
 relations: []
 review: draft
 ---

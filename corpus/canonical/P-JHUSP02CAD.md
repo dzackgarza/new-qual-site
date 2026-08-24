@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUSP02CAD
 kind: problem
-title: "$$ for some real ."
+title: "$$ for some real ^."
 classification:
   areas:
   - complex-analysis
   topics:
   - complex-analysis-topics
-solved: false
 relations: []
 review: draft
 ---
@@ -26,4 +25,4 @@ $$
 f \left( z \right) = e ^ { i \theta } z ^ { 2 }
 $$
 
-for some real .
+for some real ^.

@@ -14,7 +14,6 @@ classification:
   - Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

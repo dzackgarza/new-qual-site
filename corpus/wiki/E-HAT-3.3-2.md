@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that deleting a point from a manifold of dimension greater than 1 does not affect orientability of the manifold.

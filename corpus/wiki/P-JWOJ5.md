@@ -13,7 +13,6 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Removable singularities for derivatives"}

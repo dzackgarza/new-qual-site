@@ -11,7 +11,6 @@ classification:
   - Valuation Rings
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -13,7 +13,6 @@ classification:
   - Simple Groups
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

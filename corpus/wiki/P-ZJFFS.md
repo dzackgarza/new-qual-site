@@ -13,7 +13,6 @@ classification:
   - Normal Subgroups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

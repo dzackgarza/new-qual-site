@@ -12,7 +12,6 @@ classification:
   - Class Equation
 relations: []
 review: draft
-solved: true
 ---
 
 Let $G$ be a finite group with $n$ distinct conjugacy classes.

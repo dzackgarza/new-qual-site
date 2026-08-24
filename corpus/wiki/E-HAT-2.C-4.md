@@ -11,7 +11,8 @@ classification:
   - Euler Characteristic
 relations: []
 review: draft
-solved: false
 ---
 
-If $X$ is a finite simplicial complex and $f: X \to X$ is a simplicial homeomorphism, show that the Lefschetz number $\tau(f)$ equals the Euler characteristic of the set of fixed points of $f$. In particular, $\tau(f)$ is the number of fixed points if the fixed points are isolated. [Hint: Barycentrically subdivide $X$ to make the fixed point set a subcomplex.]
+If $X$ is a finite simplicial complex and $f: X \to X$ is a simplicial homeomorphism, show that the Lefschetz number $\tau(f)$ equals the Euler characteristic of the set of fixed points of $f$.
+In particular, $\tau(f)$ is the number of fixed points if the fixed points are isolated.
+[Hint: Barycentrically subdivide $X$ to make the fixed point set a subcomplex.]

@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 For CW complexes $X$ and $Y$ consider the suspension sequence

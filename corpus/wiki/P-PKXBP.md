@@ -13,7 +13,6 @@ classification:
   - p-Groups
 relations: []
 review: draft
-solved: true
 ---
 
 Let $G$ be a finite group whose order is divisible by a prime number $p$.

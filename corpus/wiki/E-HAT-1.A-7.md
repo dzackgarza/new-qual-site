@@ -11,7 +11,6 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 If $F$ is a finitely generated free group and $N$ is a nontrivial normal subgroup of infinite index, show, using covering spaces, that $N$ is not finitely generated.

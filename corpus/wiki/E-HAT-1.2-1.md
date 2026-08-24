@@ -12,7 +12,6 @@ classification:
   - Free Products
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the free product $G * H$ of nontrivial groups $G$ and $H$ has trivial center, and that the only elements of $G * H$ of finite order are the conjugates of finite-order elements of $G$ and $H$.

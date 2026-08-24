@@ -10,7 +10,6 @@ classification:
   - Power Series
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Invert $1-z$, one coefficient at a time"}

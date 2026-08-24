@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 An abelian group $G$ is defined to be divisible if the map $G \xrightarrow{n} G$, $g \mapsto ng$, is surjective for all $n > 1$.

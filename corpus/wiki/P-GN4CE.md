@@ -13,7 +13,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 a. Carefully state the definition of **Noetherian** for a commutative ring $R$.

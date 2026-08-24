@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that $\operatorname{Ext}(A, \mathbb{Z})$ is isomorphic to the cokernel of $\operatorname{Hom}(A, \mathbb{Q}) \to \operatorname{Hom}(A, \mathbb{Q}/\mathbb{Z})$, the map induced by the quotient map $\mathbb{Q} \to \mathbb{Q}/\mathbb{Z}$.

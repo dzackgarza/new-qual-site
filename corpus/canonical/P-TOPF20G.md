@@ -13,7 +13,6 @@ classification:
   - Lefschetz Fixed Point
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

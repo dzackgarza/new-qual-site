@@ -13,7 +13,6 @@ classification:
   - L1 Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

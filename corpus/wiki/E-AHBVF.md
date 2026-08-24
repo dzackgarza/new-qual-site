@@ -11,7 +11,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Cosine expansion in $z\inv$"}

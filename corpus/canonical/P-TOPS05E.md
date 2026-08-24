@@ -12,7 +12,6 @@ classification:
   - Orientation
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

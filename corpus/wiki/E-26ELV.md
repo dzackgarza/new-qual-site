@@ -10,7 +10,6 @@ classification:
   - Dimension Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §50.6"}

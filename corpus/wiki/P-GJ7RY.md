@@ -12,7 +12,6 @@ classification:
   - Norms
 relations: []
 review: draft
-solved: true
 ---
 
 Let $C([0, 1])$ denote the space of all continuous real-valued functions on $[0, 1]$.

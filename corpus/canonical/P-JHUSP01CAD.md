@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Harmonic Functions
-solved: false
 relations: []
 review: draft
 ---

@@ -12,7 +12,6 @@ classification:
   - Gram Matrix
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

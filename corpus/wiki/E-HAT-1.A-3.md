@@ -12,7 +12,7 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
-For a finite graph $X$ define the Euler characteristic $\chi(X)$ to be the number of vertices minus the number of edges. Show that $\chi(X) = 1$ if $X$ is a tree, and that the rank (number of elements in a basis) of $\pi_1(X)$ is $1 - \chi(X)$ if $X$ is connected.
+For a finite graph $X$ define the Euler characteristic $\chi(X)$ to be the number of vertices minus the number of edges.
+Show that $\chi(X) = 1$ if $X$ is a tree, and that the rank (number of elements in a basis) of $\pi_1(X)$ is $1 - \chi(X)$ if $X$ is connected.

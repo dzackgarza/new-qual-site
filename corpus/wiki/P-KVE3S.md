@@ -12,7 +12,6 @@ classification:
   - Completeness
 relations: []
 review: draft
-solved: true
 ---
 
 Show that the space $C^1([a, b])$ is a Banach space when equipped with the norm

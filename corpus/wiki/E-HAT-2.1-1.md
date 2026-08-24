@@ -11,7 +11,6 @@ classification:
   - Simplicial Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 What familiar space is the quotient $\Delta$-complex of a 2 simplex $[\nu_0, \nu_1, \nu_2]$ obtained by identifying the edges $[\nu_0, \nu_1]$ and $[\nu_1, \nu_2]$, preserving the ordering of vertices?

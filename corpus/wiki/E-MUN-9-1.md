@@ -10,7 +10,6 @@ classification:
   - Infinite Sets and the Axiom of Choice
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §9.1"}

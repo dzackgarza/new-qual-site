@@ -10,7 +10,6 @@ classification:
   - Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §2.5"}

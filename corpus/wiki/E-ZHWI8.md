@@ -12,7 +12,6 @@ classification:
   - Closed Sets
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §18.8"}

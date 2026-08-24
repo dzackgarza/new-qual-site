@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-YBT6I
 kind: problem
-title: "$g .f , g \in L ^ { 2 } ( \mathbb { R } )f * g$ bounded con"
+title: '$g .f , g \in L ^ { 2 } ( \mathbb { R } )f * g$ bounded con'
 classification:
   areas:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

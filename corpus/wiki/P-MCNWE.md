@@ -12,7 +12,6 @@ classification:
   - Field Extensions
 relations: []
 review: draft
-solved: true
 ---
 
 a. Define what it means for a finite extension of fields $E$ over $F$ to be a *Galois* extension.

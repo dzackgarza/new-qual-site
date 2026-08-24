@@ -11,7 +11,6 @@ classification:
   - Surfaces
 relations: []
 review: draft
-solved: false
 ---
 
 11. First note that $\pi_1(S^1\cross S^1) \cong \ZZ^2$, the free **abelian** group on two generators, say $[\alpha], [\beta]$ corresponding to the two nontrivial loops on the torus - say $\alpha$ is the longitudinal loop, and $\beta$ is the meridian.

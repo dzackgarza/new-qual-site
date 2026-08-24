@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Rouché's Theorem
-solved: false
 relations: []
 review: draft
 ---

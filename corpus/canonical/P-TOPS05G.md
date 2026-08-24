@@ -12,7 +12,6 @@ classification:
   - Spheres
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

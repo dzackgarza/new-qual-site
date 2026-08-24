@@ -11,7 +11,7 @@ classification:
   - Van Kampen
 relations: []
 review: draft
-solved: false
 ---
 
-Consider two arcs $\alpha$ and $\beta$ embedded in $D^2 \times I$ as shown in the figure. The loop $\gamma$ is obviously nullhomotopic in $D^2 \times I$, but show that there is no nullhomotopy of $\gamma$ in the complement of $\alpha \cup \beta$.
+Consider two arcs $\alpha$ and $\beta$ embedded in $D^2 \times I$ as shown in the figure.
+The loop $\gamma$ is obviously nullhomotopic in $D^2 \times I$, but show that there is no nullhomotopy of $\gamma$ in the complement of $\alpha \cup \beta$.

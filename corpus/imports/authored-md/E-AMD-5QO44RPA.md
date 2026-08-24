@@ -12,7 +12,6 @@ classification:
   - Classification
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise}

@@ -11,7 +11,6 @@ classification:
   - Positive Definite Matrices
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Liouville's Theorem
-solved: false
 relations: []
 review: draft
 ---

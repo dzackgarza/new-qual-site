@@ -10,7 +10,6 @@ classification:
   - Modules
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

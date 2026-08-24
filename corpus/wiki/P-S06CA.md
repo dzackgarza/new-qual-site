@@ -10,7 +10,6 @@ classification:
   - Sequences of Numbers
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

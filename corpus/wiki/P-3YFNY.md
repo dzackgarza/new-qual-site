@@ -12,7 +12,6 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
-solved: true
 ---
 
 Let $A$ be an $n \times n$ matrix.

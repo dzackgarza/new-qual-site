@@ -12,7 +12,6 @@ classification:
   - Square Roots
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

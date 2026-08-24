@@ -11,7 +11,6 @@ classification:
   - Limit Points
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §30.3"}

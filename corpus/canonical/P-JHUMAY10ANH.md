@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUMAY10ANH
 kind: problem
-title: "if are fixed then there is a constant A such that $$ \| f * \varphi \| _ { L ^ {"
+title: 'if are fixed then there is a constant A such that $$ \| f * \varphi \| _ { L ^ {'
 classification:
   areas:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

@@ -13,7 +13,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Residue from Laurent expansion: $1/(z - \sin(z))$"}

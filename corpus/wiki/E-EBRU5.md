@@ -13,7 +13,6 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$1/\sqrt{x^2-1}$ "}

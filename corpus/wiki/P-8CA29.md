@@ -11,7 +11,6 @@ classification:
   - Conformal Maps
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -11,7 +11,6 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 If a finite CW complex $X$ is the union of subcomplexes $A$ and $B$, show that $\chi(X) = \chi(A) + \chi(B) - \chi(A \cap B)$.

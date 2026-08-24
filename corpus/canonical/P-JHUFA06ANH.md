@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA06ANH
 kind: problem
-title: "that X is a real Banach space and, for all , the norm satisfies $f : X \to \math"
+title: 'that X is a real Banach space and, for all , the norm satisfies $f : X \to \math'
 classification:
   areas:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

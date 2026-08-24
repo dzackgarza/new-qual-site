@@ -11,7 +11,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Holomorphic iff delbar vanishes"}

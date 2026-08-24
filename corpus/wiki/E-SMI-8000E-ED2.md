@@ -11,9 +11,9 @@ classification:
   - Modules
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e euclidean domains 2"}
-Prove every submodule of $R^m$ is finitely generated, and in fact isomorphic to $R^n$ where $n$ is at most equal to $m$. [Hint: read the proof for $\ZZ$.]
+Prove every submodule of $R^m$ is finitely generated, and in fact isomorphic to $R^n$ where $n$ is at most equal to $m$.
+[Hint: read the proof for $\ZZ$.]
 :::

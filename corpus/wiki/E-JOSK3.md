@@ -12,7 +12,6 @@ classification:
   - Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Orders of poles"}

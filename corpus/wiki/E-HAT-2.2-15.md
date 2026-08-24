@@ -12,7 +12,6 @@ classification:
   - Cellular Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that if $X$ is a CW complex then $H_n(X^n)$ is free by identifying it with the kernel of the cellular boundary map $H_n(X^n, X^{n-1}) \to H_{n-1}(X^{n-1}, X^{n-2})$.

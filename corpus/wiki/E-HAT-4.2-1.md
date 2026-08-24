@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Use homotopy groups to show there is no retraction $\mathbb{RP}^n \to \mathbb{RP}^k$ if $n > k > 0$.

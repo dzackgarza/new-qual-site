@@ -13,7 +13,6 @@ classification:
   - Baire Category
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

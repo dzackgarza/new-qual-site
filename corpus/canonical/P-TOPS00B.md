@@ -11,7 +11,6 @@ classification:
   - Ext
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

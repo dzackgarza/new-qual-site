@@ -10,7 +10,6 @@ classification:
   - Simplicial Approximation
 relations: []
 review: draft
-solved: false
 ---
 
 Let $X$ be homotopy equivalent to a finite simplicial complex and let $Y$ be homotopy equivalent to a finite or countably infinite simplicial complex.

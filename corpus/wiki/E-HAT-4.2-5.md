@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Let $f: S_\alpha^2 \vee S_\beta^2 \to S_\alpha^2 \vee S_\beta^2$ be the map which is the identity on the $S_\alpha^2$ summand and which on the $S_\beta^2$ summand is the sum of the identity map and a homeomorphism $S_\beta^2 \to S_\alpha^2$.

@@ -12,7 +12,6 @@ classification:
   - Biholomorphisms
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Forcing a map to be the identity"}

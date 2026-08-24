@@ -15,7 +15,6 @@ classification:
   - Convolution
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Let $Y$ be the quasi-circle, a closed subspace of $\mathbb{R}^2$ consisting of a portion of the graph of $y = \sin(1/x)$, the segment $[-1, 1]$ in the $y$-axis, and an arc connecting these two pieces.

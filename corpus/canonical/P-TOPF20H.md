@@ -13,7 +13,6 @@ classification:
   - Universal Cover
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

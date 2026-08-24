@@ -13,7 +13,6 @@ classification:
   - Characteristic
 relations: []
 review: draft
-solved: true
 ---
 
 Let $p$ be a prime number.

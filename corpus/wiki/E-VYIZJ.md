@@ -12,7 +12,6 @@ classification:
   - Blaschke Factors
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Fixed points: multiple"}

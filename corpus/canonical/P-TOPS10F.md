@@ -12,7 +12,6 @@ classification:
   - Free Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

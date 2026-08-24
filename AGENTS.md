@@ -355,17 +355,16 @@ contain prose like "this problem appears in Exam X" or "see also collection Y"
 
 # Solution status
 
-Every problem and exercise card declares `solved: true|false` in its own
-frontmatter, and `just check` proves the declaration against the corpus:
-`true` requires a `solution` section on the card or an incoming `solves`
-relation from another card; `false` with either present fails the build.
-There is no queue file to maintain — a solutions commit flips the field on the
-same cards whose bodies it writes, and the check rejects any commit where the
-field and the content disagree.
+Solution status is derived from content, not declared. A problem or exercise
+card is solved when it carries a `solution` section or an incoming `solves`
+relation from another card. There is no `solved` field: a solutions commit
+writes the body (or the solver card) and the status follows from it.
 
-`just sample-unsolved` draws n random unsolved cards (default 5). The
-solution-sheet integration side of [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
-lives in `sources/qual-review-and-solutions-ledgers/`.
+`just sample-unsolved` draws n random unsolved cards (default 5) by querying
+the catalog for problem/exercise cards with no solution section and no incoming
+`solves` relation. The solution-sheet integration side of
+[issue #2](https://github.com/dzackgarza/new-qual-site/issues/2) lives in
+`sources/qual-review-and-solutions-ledgers/`.
 
 * * *
 

@@ -11,7 +11,6 @@ classification:
   - Hausdorff Spaces
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="?"}

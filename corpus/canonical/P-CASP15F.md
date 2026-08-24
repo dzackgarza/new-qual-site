@@ -12,7 +12,6 @@ classification:
   - Periodic Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

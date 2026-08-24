@@ -10,7 +10,6 @@ classification:
   - Inequalities
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

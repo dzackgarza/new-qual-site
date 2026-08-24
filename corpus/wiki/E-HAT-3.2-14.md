@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Let $q: \mathbb{RP}^\infty \to \mathbb{CP}^\infty$ be the natural quotient map obtained by regarding both spaces as quotients of $S^\infty$, modulo multiplication by real scalars in one case and complex scalars in the other.

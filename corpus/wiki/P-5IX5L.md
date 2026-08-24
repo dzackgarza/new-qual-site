@@ -11,7 +11,6 @@ classification:
   - Normal Subgroups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 2.5.9"}

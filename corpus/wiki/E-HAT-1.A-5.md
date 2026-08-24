@@ -11,7 +11,7 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
-Construct a connected graph $X$ and maps $f, g: X \to X$ such that $fg = \mathbb{1}$ but $f$ and $g$ do not induce isomorphisms on $\pi_1$. [Note that $f_*g_* = \mathbb{1}$ implies that $f_*$ is surjective and $g_*$ is injective.]
+Construct a connected graph $X$ and maps $f, g: X \to X$ such that $fg = \mathbb{1}$ but $f$ and $g$ do not induce isomorphisms on $\pi_1$.
+[Note that $f_*g_* = \mathbb{1}$ implies that $f_*$ is surjective and $g_*$ is injective.]

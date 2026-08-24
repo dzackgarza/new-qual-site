@@ -12,7 +12,6 @@ classification:
   - Suspensions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

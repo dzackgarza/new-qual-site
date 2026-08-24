@@ -15,7 +15,6 @@ classification:
   - Weak Topology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

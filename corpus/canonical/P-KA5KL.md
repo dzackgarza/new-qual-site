@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Bergman Space
-solved: false
 relations: []
 review: draft
 ---

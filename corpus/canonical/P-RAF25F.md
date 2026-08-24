@@ -12,7 +12,6 @@ classification:
   - Sequential Compactness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -11,7 +11,6 @@ classification:
   - Fixed Point Theorems
 relations: []
 review: draft
-solved: false
 ---
 
 Show that every map $S^n \to S^n$ can be homotoped to have a fixed point if $n > 0$.

@@ -13,7 +13,6 @@ relations:
   - kind: related-to
     target: P-APAF11D
 review: draft
-solved: false
 ---
 
 ::: problem

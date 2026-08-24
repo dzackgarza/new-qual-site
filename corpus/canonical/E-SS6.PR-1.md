@@ -10,7 +10,6 @@ classification:
   - Riemann Zeta
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

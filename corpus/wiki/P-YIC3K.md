@@ -12,7 +12,6 @@ classification:
   - Continuity
 relations: []
 review: draft
-solved: true
 ---
 
 Let $f$ be a continuous real-valued function on $[0,1]$.

@@ -12,7 +12,6 @@ classification:
   - Essential Singularities
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

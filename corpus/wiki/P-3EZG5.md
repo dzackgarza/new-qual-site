@@ -12,7 +12,6 @@ classification:
   - Ideals
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="Jacobson radical is bigger than the nilradical"}

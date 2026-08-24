@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Since there is a fiber bundle $S^2 \to \mathbb{CP}^5 \to \mathbb{HP}^2$ by Exercise 35 in §4.2, one might ask whether there is an analogous bundle $S^4 \to \mathbb{HP}^5 \to \mathbb{OP}^2$.

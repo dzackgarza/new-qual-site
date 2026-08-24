@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - complex-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

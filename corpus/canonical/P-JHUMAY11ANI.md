@@ -2,12 +2,11 @@
 schema: qual/card@1
 id: P-JHUMAY11ANI
 kind: problem
-title: "that . and that in . Suppose further that there is a constant so that $$ \int e"
+title: 'that . and that in . Suppose further that there is a constant so that $$ \int e'
 classification:
   areas:
   - real-analysis
   topics: []
-solved: false
 relations: []
 review: draft
 ---

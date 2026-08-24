@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 For a fixed coefficient field $F$, define the Poincaré series of a space $X$ to be the formal power series $p(t) = \sum_i a_i t^i$ where $a_i$ is the dimension of $H^i(X; F)$ as a vector space over $F$, assuming this dimension is finite for all $i$.

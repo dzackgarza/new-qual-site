@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that $M \times N$ is orientable iff $M$ and $N$ are both orientable.

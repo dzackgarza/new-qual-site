@@ -12,7 +12,6 @@ classification:
   - Lens Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

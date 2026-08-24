@@ -14,7 +14,6 @@ classification:
   - Zeros
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

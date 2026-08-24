@@ -12,7 +12,6 @@ classification:
   - van Kampen
 relations: []
 review: draft
-solved: true
 ---
 
 How many path-connected 2-fold covering spaces does $S^1 \vee \RP 2$ have?

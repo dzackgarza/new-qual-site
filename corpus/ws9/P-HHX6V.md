@@ -12,7 +12,6 @@ classification:
   - Free Modules
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

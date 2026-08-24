@@ -12,7 +12,6 @@ classification:
   - Rings
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="Mod by nilradical to kill nilpotents"}

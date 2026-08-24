@@ -10,7 +10,6 @@ classification:
   - Linear Maps
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

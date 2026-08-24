@@ -11,7 +11,8 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
-solved: false
 ---
 
-A polynomial $f(z)$ with complex coefficients, viewed as a map $\mathbb{C} \to \mathbb{C}$, can always be extended to a continuous map of one-point compactifications $\hat{f}: S^2 \to S^2$. Show that the degree of $\hat{f}$ equals the degree of $f$ as a polynomial. Show also that the local degree of $\hat{f}$ at a root of $f$ is the multiplicity of the root.
+A polynomial $f(z)$ with complex coefficients, viewed as a map $\mathbb{C} \to \mathbb{C}$, can always be extended to a continuous map of one-point compactifications $\hat{f}: S^2 \to S^2$.
+Show that the degree of $\hat{f}$ equals the degree of $f$ as a polynomial.
+Show also that the local degree of $\hat{f}$ at a root of $f$ is the multiplicity of the root.

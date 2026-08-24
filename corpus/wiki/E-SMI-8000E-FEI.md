@@ -10,11 +10,11 @@ classification:
   - Galois Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000 fall 2006 final I"}
-Do all parts. For each of the following polynomials over $\mathbb{Q}$:
+Do all parts.
+For each of the following polynomials over $\mathbb{Q}$:
 
 (a) Prove the polynomial is irreducible over $\mathbb{Q}$.
 

@@ -11,7 +11,6 @@ classification:
   - Normal Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §32.10"}

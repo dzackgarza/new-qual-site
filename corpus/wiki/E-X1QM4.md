@@ -10,7 +10,6 @@ classification:
   - Manifolds
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §36.3"}

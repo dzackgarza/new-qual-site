@@ -14,7 +14,6 @@ classification:
   - Meromorphic Functions
 relations: []
 review: draft
-solved: false
 ---
 
 :::{.exercise title="?"}

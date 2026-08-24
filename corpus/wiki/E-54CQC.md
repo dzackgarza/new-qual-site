@@ -12,7 +12,6 @@ classification:
   - Homeomorphisms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

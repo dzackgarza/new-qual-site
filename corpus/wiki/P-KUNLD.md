@@ -12,7 +12,6 @@ classification:
   - Trigonometry
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Tangent from polynomial long division"}

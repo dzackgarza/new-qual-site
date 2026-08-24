@@ -12,7 +12,6 @@ classification:
   - Semisimplicity
 relations: []
 review: draft
-solved: true
 ---
 
 A ring \( R \) is called *simple* if its only two-sided ideals are $0$ and $R$.

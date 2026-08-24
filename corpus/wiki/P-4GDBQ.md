@@ -12,7 +12,6 @@ classification:
   - Counterexamples
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Existence of multiple values in branches"}

@@ -12,7 +12,6 @@ classification:
   - Cauchy Estimates
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

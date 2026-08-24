@@ -12,7 +12,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: true
 ---
 
 Describe all possible covering maps between $S^2, T^2, K$

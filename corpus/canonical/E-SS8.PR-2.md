@@ -11,7 +11,6 @@ classification:
   - Schwarz Lemma
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

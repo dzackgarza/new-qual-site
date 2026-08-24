@@ -12,7 +12,6 @@ classification:
   - Free Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Construct infinitely many nonhomotopic retractions $S^1 \lor S^1 \longrightarrow S^1$.

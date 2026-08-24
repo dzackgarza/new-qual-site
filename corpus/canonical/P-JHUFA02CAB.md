@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA02CAB
 kind: problem
-title: "the limit $$ f ( x ) = \operatorname* { l i m } _ { n \to \i"
+title: 'the limit $$ f ( x ) = \operatorname* { l i m } _ { n \to \i'
 classification:
   areas:
   - complex-analysis
   topics:
   - complex-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

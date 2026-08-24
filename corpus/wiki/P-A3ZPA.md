@@ -14,7 +14,6 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

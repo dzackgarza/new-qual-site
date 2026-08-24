@@ -11,7 +11,6 @@ classification:
   - Absolute Continuity
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

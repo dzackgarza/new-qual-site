@@ -13,7 +13,6 @@ classification:
   - Structure Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 Let $\{e_1, \cdots, e_n \}$ be a basis of a real vector space $V$ and let

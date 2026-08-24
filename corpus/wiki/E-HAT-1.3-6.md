@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Let $X$ be the shrinking wedge of circles in Example 1.25, and let $\tilde{X}$ be its covering space shown in the figure.

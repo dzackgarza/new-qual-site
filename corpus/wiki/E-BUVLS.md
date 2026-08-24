@@ -11,7 +11,6 @@ classification:
   - Poles
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Expanding Laurent series in different regions"}

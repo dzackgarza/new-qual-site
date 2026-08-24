@@ -11,7 +11,6 @@ classification:
   - Field Extensions
 relations: []
 review: draft
-solved: true
 ---
 
 What does it mean to be algebraically closed?

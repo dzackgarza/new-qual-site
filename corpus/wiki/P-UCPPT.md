@@ -11,7 +11,6 @@ classification:
   - Measure Theory
 relations: []
 review: draft
-solved: true
 ---
 
 Let $f(x) = x^2$ and $E \subset [0, \infty) \definedas \RR^+$.

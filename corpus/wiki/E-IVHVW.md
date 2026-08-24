@@ -13,7 +13,6 @@ classification:
   - Maximum Modulus Principle
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Bounded above by Blaschke product"}

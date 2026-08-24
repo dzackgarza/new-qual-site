@@ -12,7 +12,6 @@ classification:
   - Structure Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

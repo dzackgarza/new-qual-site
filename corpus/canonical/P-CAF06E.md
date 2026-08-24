@@ -10,7 +10,6 @@ classification:
   - Complex Analysis
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

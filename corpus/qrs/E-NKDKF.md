@@ -11,7 +11,6 @@ classification:
   - Cauchy Integral Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Primitives imply vanishing integral"}

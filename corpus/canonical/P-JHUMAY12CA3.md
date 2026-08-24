@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Removable Singularities
-solved: false
 relations: []
 review: draft
 ---

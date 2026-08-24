@@ -11,7 +11,6 @@ classification:
   - Liouville Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

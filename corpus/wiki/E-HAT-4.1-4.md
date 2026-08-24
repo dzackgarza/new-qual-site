@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Let $p: \tilde{X} \to X$ be the universal cover of a path-connected space $X$.

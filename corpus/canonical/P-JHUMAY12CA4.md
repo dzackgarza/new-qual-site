@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Phragmén-Lindelöf
-solved: false
 relations: []
 review: draft
 ---

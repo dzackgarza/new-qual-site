@@ -11,7 +11,6 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
-solved: true
 ---
 
 Let $(X,d)$ be a metric space, $K\subset X$ be compact, and $F\subset X$ be closed.

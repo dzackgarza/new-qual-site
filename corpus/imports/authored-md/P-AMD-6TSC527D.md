@@ -11,7 +11,6 @@ classification:
   - Surfaces
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem}

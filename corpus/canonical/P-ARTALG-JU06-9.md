@@ -7,7 +7,6 @@ classification:
   areas:
   - algebra
   topics: []
-solved: false
 relations: []
 review: draft
 ---

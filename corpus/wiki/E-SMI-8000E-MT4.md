@@ -10,7 +10,6 @@ classification:
   - Modules
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000 fall 2006 midterm 4"}

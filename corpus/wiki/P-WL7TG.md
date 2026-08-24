@@ -13,7 +13,6 @@ classification:
   - Determinants
 relations: []
 review: draft
-solved: true
 ---
 
 Let 

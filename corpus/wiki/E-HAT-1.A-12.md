@@ -11,7 +11,8 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
-solved: false
 ---
 
-Let $F$ be a finitely generated free group, $H \subset F$ a finitely generated subgroup, and $x \in F - H$. Show there is a subgroup $K$ of finite index in $F$ such that $K \supset H$ and $x \notin K$. [Apply Exercise 10.]
+Let $F$ be a finitely generated free group, $H \subset F$ a finitely generated subgroup, and $x \in F - H$.
+Show there is a subgroup $K$ of finite index in $F$ such that $K \supset H$ and $x \notin K$.
+[Apply Exercise 10.]

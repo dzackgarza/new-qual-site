@@ -10,7 +10,6 @@ classification:
   - Fundamental Concepts
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §1.6"}

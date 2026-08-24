@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Argument Principle
-solved: false
 relations: []
 review: draft
 ---

@@ -11,7 +11,6 @@ classification:
   - Simplicial Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Compute the simplicial homology groups of the triangular parachute obtained from $\Delta^2$ by identifying its three vertices to a single point.

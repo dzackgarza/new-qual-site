@@ -12,7 +12,6 @@ classification:
   - van Kampen
 relations: []
 review: draft
-solved: true
 ---
 
 For $f:X\to Y$, the *mapping cone* of $f$ is defined as

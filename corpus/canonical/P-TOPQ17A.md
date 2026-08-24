@@ -12,7 +12,6 @@ classification:
   - Deck Transformations
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

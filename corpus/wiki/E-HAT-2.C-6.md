@@ -11,7 +11,6 @@ classification:
   - Surfaces
 relations: []
 review: draft
-solved: false
 ---
 
 Do an even-genus analog of Example 2C.4 by replacing the central torus by a sphere letting $f$ be a homeomorphism that restricts to the antipodal map on this sphere.

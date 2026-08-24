@@ -10,7 +10,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Let $(D, S) \subset (D^n, S^{n-1})$ be a pair of subspaces homeomorphic to $(D^k, S^{k-1})$, with $D \cap S^{n-1} = S$.

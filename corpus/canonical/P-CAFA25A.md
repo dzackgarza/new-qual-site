@@ -12,7 +12,6 @@ classification:
   - Polynomial Roots
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

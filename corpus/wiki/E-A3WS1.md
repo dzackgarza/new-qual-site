@@ -10,7 +10,6 @@ classification:
   - Classification of Surfaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §77.4"}

@@ -12,7 +12,6 @@ classification:
   - Heegaard Splittings
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

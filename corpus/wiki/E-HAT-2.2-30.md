@@ -11,10 +11,10 @@ classification:
   - Mapping Torus
 relations: []
 review: draft
-solved: false
 ---
 
-For the mapping torus $T_f$ of a map $f: X \to X$, we constructed in Example 2.48 a long exact sequence $\cdots \to H_n(X) \xrightarrow{1-f_*} H_n(X) \to H_n(T_f) \to H_{n-1}(X) \to \cdots$. Use this to compute the homology of the mapping tori of the following maps:
+For the mapping torus $T_f$ of a map $f: X \to X$, we constructed in Example 2.48 a long exact sequence $\cdots \to H_n(X) \xrightarrow{1-f_*} H_n(X) \to H_n(T_f) \to H_{n-1}(X) \to \cdots$.
+Use this to compute the homology of the mapping tori of the following maps:
 
 (a) A reflection $S^2 \to S^2$.
 

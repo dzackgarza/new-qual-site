@@ -13,7 +13,6 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §28"}

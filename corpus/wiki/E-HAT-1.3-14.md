@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Find all the connected covering spaces of $\mathbb{RP}^2 \vee \mathbb{RP}^2$.

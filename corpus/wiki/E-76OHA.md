@@ -10,7 +10,6 @@ classification:
   - Paracompactness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §41.4"}

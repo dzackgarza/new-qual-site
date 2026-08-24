@@ -11,7 +11,6 @@ classification:
   - Axiom of Choice
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the existence of maximal trees is equivalent to the Axiom of Choice.

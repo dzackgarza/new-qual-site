@@ -14,7 +14,6 @@ classification:
   - Residues
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Derivative Estimates
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

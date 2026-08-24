@@ -13,7 +13,6 @@ classification:
   - Euler Characteristic
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

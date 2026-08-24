@@ -11,7 +11,6 @@ classification:
   - Principal Value
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

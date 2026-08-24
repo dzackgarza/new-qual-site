@@ -12,7 +12,6 @@ classification:
   - Wedge Sums
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the wedge axiom for homology theories follows from the other axioms in the case of finite wedge sums.

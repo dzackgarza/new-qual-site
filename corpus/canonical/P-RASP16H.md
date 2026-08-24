@@ -12,7 +12,6 @@ classification:
   - Dominated Convergence
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

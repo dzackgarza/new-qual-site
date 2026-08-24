@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 If $X$ is a finite connected graph with $\pi_1(X)$ free on $g > 0$ generators, show that $H^n(X; \mathbb{Z}[\pi_1 X])$ is zero unless $n = 1$, when it is $\mathbb{Z}$ when $g = 1$ and the direct sum of a countably infinite number of $\mathbb{Z}$'s when $g > 1$.

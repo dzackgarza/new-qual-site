@@ -12,7 +12,6 @@ classification:
   - Monotone Derivatives
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

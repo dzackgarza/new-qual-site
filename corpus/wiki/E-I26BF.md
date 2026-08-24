@@ -12,7 +12,6 @@ classification:
   - Open Mapping Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Injective implies nonvanishing derivative"}

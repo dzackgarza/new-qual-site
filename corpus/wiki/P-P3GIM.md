@@ -12,7 +12,6 @@ classification:
   - Minimal and Characteristic Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 Let $V$ be a finite dimensional vector space over a field (the field is not necessarily algebraically closed).

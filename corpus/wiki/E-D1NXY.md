@@ -10,7 +10,6 @@ classification:
   - Manifolds
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §50 Supplementary"}

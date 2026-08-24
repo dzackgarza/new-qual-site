@@ -10,7 +10,6 @@ classification:
   - Topological Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §36 Supplementary"}

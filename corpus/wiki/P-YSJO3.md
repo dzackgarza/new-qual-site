@@ -12,7 +12,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Explicit Rouche, $2\mathbb{D}$"}

@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Fill in the details of the following argument to show that every $n \times n$ matrix $A$ with entries in $\mathbb{H}$ has an eigenvalue in $\mathbb{H}$.

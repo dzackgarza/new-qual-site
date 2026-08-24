@@ -12,7 +12,6 @@ classification:
   - Torsion
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Removable Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Entire functions missing a disc"}

@@ -12,7 +12,7 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
-solved: false
 ---
 
-Show that the quotient map $S^1 \times S^1 \to S^2$ collapsing the subspace $S^1 \lor S^1$ to a point is not nullhomotopic by showing that it induces an isomorphism on $H_2$. On the other hand, show via covering spaces that any map $S^2 \to S^1 \times S^1$ is nullhomotopic.
+Show that the quotient map $S^1 \times S^1 \to S^2$ collapsing the subspace $S^1 \lor S^1$ to a point is not nullhomotopic by showing that it induces an isomorphism on $H_2$.
+On the other hand, show via covering spaces that any map $S^2 \to S^1 \times S^1$ is nullhomotopic.

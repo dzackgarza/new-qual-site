@@ -12,7 +12,6 @@ classification:
   - Cyclic Groups
 relations: []
 review: draft
-solved: true
 ---
 
 Let $F$ be a finite field with $q$ elements.

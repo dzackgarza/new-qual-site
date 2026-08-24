@@ -14,7 +14,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

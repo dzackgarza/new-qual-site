@@ -9,7 +9,6 @@ classification:
   topics: ['Conformal Mappings', 'Riemann Mapping Theorem', 'Automorphisms']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

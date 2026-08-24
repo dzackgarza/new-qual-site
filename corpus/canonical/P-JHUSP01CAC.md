@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Montel's Theorem
-solved: false
 relations: []
 review: draft
 ---

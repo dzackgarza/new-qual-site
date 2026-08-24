@@ -12,7 +12,6 @@ classification:
   - Laurent Series
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Invert $\cos(z)$, one coefficient at a tiem"}

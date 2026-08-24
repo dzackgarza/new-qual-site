@@ -11,7 +11,6 @@ classification:
   - Logic and Quantifiers
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

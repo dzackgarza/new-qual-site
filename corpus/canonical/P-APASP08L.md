@@ -11,7 +11,6 @@ classification:
   - Gröbner Bases
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

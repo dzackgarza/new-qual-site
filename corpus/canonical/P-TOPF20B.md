@@ -12,7 +12,6 @@ classification:
   - Tori
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

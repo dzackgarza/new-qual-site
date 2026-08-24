@@ -11,7 +11,6 @@ classification:
   - Tensor Products
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -11,7 +11,6 @@ classification:
   - Function Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §47.5"}

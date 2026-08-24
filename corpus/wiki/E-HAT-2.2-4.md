@@ -10,7 +10,6 @@ classification:
   - Degree Theory
 relations: []
 review: draft
-solved: false
 ---
 
 Construct a surjective map $S^n \to S^n$ of degree zero, for each $n \geq 1$.

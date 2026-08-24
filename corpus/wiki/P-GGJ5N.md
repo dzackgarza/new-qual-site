@@ -11,7 +11,6 @@ classification:
   - Series of Numbers
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

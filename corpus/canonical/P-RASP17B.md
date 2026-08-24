@@ -12,7 +12,6 @@ classification:
   - Closures
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

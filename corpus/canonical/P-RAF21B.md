@@ -11,7 +11,6 @@ classification:
   - Lebesgue Integration
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

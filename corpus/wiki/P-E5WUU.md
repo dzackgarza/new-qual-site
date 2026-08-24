@@ -11,7 +11,6 @@ classification:
   - Multivariable Calculus
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

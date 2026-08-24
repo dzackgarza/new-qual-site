@@ -13,7 +13,6 @@ classification:
   - Counterexamples
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Entire functions satisfying a bound"}

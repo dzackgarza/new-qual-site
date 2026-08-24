@@ -10,7 +10,6 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §54.2"}

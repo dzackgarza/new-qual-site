@@ -12,7 +12,6 @@ classification:
   - Vector Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

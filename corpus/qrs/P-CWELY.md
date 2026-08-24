@@ -11,7 +11,6 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Graphs
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §84.1"}

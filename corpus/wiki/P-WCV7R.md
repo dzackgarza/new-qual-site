@@ -12,7 +12,6 @@ classification:
   - Ideals
 relations: []
 review: draft
-solved: true
 ---
 
 Give a careful proof that $\CC[x, y]$ is not a PID.

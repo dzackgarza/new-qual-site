@@ -14,7 +14,6 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

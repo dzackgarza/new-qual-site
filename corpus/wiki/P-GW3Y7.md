@@ -11,7 +11,6 @@ classification:
   - Zeros
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Explicit Rouché, half-plane"}

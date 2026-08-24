@@ -12,7 +12,6 @@ classification:
   - Joins
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the join $X * Y$ of two nonempty spaces $X$ and $Y$ is simply-connected if $X$ is path-connected.

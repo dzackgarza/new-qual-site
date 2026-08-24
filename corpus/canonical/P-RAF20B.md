@@ -12,7 +12,6 @@ classification:
   - Bounded Inverse Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

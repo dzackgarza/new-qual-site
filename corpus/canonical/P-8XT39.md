@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Maximum Modulus Principle
-solved: false
 relations: []
 review: draft
 ---

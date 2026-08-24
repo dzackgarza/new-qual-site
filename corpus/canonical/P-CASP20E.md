@@ -12,7 +12,6 @@ classification:
   - Biholomorphic Maps
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

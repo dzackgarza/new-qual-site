@@ -13,7 +13,6 @@ classification:
   - Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Showing singularities are removable"}

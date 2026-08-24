@@ -13,7 +13,6 @@ classification:
   - Canonical Forms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem}

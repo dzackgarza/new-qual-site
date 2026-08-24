@@ -12,7 +12,6 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Complement of a segment"}

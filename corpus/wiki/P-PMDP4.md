@@ -11,7 +11,6 @@ classification:
   - Integrals
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

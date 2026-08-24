@@ -12,7 +12,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="SS 1.13: Constant real/imaginary/magnitude implies constant"}

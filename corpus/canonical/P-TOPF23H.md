@@ -13,7 +13,6 @@ classification:
   - Transfer Map
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

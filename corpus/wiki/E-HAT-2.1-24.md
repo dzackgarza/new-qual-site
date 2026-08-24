@@ -12,7 +12,6 @@ classification:
   - Barycentric Subdivision
 relations: []
 review: draft
-solved: false
 ---
 
 Show that each $n$ simplex in the barycentric subdivision of $\Delta^n$ is defined by $n$ inequalities $t_{i_0} \leq t_{i_1} \leq \dots \leq t_{i_n}$ in its barycentric coordinates, where $(i_0, \cdots, i_n)$ is a permutation of $(0, \cdots, n)$.

@@ -10,7 +10,6 @@ classification:
   - Functional Analysis
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -13,7 +13,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 Can every continuous function on $\bar \DD$ be uniformly approximated by polynomials in the variable $z$?

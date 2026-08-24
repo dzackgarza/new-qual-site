@@ -13,7 +13,6 @@ classification:
   - Argument Principle
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

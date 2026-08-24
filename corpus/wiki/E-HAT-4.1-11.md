@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show that a CW complex is contractible if it is the union of an increasing sequence of subcomplexes $X_1 \subset X_2 \subset \cdots$ such that each inclusion $X_i \hookrightarrow X_{i+1}$ is nullhomotopic, a condition sometimes expressed by saying $X_i$ is contractible in $X_{i+1}$.

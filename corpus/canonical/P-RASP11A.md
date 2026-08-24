@@ -14,7 +14,6 @@ classification:
   - Differentiation of Measures
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

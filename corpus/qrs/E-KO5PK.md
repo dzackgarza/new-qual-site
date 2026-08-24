@@ -11,7 +11,6 @@ classification:
   - Uniform Continuity
 relations: []
 review: draft
-solved: true
 ---
 
 ::: exercise

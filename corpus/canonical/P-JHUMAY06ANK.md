@@ -2,12 +2,11 @@
 schema: qual/card@1
 id: P-JHUMAY06ANK
 kind: problem
-title: "lim $\begin{array} { r } { \operatorname* { s u p } _ { n \infty } \vert \vert f"
+title: 'lim $\begin{array} { r } { \operatorname* { s u p } _ { n \infty } \vert \vert f'
 classification:
   areas:
   - real-analysis
   topics: []
-solved: false
 relations: []
 review: draft
 ---

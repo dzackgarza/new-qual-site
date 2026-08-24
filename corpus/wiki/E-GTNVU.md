@@ -11,7 +11,6 @@ classification:
   - Product Topology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Homology of product of spheres"}

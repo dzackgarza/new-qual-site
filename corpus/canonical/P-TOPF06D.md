@@ -13,7 +13,6 @@ classification:
   - Covering Dimension
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -11,7 +11,6 @@ classification:
   - Abelian Groups
 relations: []
 review: draft
-solved: false
 ---
 
 For a path-connected space $X$, show that $\pi_1(X)$ is abelian iff all basepoint-change homomorphisms $\beta_h$ depend only on the endpoints of the path $h$.

@@ -10,7 +10,6 @@ classification:
   - Invariant Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

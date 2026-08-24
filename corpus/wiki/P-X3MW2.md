@@ -11,7 +11,6 @@ classification:
   - L²
 relations: []
 review: draft
-solved: true
 ---
 
 Let $\{u_n\}_{n=1}^∞$ be an orthonormal sequence in a Hilbert space $\mathcal{H}$.

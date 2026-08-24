@@ -14,7 +14,6 @@ classification:
   - Morera
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

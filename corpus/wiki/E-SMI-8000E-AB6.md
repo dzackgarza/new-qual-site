@@ -11,7 +11,6 @@ classification:
   - Free Modules
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e abelian groups 6"}

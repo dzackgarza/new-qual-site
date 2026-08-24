@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Let $E$ be a subspace of $\mathbb{R}^2$ obtained by deleting a subspace of $\{0\} \times \mathbb{R}$.

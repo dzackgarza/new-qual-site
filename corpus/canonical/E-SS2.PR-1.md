@@ -10,7 +10,6 @@ classification:
   - Power Series
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

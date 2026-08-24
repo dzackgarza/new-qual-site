@@ -2,12 +2,11 @@
 schema: qual/card@1
 id: P-JHUFA06ANF
 kind: problem
-title: "for any there exists so that for all $$ \left| \int _ { 0 } ^ { 2 } f ( x ) e ^"
+title: 'for any there exists so that for all $$ \left| \int _ { 0 } ^ { 2 } f ( x ) e ^'
 classification:
   areas:
   - real-analysis
   topics: []
-solved: false
 relations: []
 review: draft
 ---

@@ -12,7 +12,6 @@ classification:
   - Simply Connected
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the complement of a finite set of points in $\mathbb{R}^n$ is simply-connected if $n \geq 3$.

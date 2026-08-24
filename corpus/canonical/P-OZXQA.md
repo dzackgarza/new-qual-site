@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Contour Integration
-solved: false
 relations: []
 review: draft
 ---

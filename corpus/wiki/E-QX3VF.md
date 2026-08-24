@@ -13,7 +13,6 @@ classification:
   - Poles
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Entire functions with poles at infinity"}

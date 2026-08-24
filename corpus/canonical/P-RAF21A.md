@@ -13,7 +13,6 @@ classification:
   - Cantor Function
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

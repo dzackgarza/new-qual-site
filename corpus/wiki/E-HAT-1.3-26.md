@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 For a covering space $p: \tilde{X} \to X$ with $X$ connected, locally path-connected, and semilocally simply-connected, show:

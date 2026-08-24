@@ -13,7 +13,6 @@ classification:
   - Compactness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

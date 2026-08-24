@@ -12,7 +12,6 @@ classification:
   - Riemann-Lebesgue Lemma
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

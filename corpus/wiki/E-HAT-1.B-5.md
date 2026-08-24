@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Consider the graph of groups having one vertex, $\mathbb{Z}$, and one edge, the map $\mathbb{Z} \to \mathbb{Z}$ that is multiplication by 2, realized by the 2-sheeted covering space $S^1 \to S^1$.

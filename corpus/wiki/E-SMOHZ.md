@@ -13,7 +13,6 @@ classification:
   - Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Limit point of zeros is an essential singularity"}

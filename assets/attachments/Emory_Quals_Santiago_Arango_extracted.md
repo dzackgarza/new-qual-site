@@ -38,11 +38,13 @@ b) Suppose that G acts transitively on a set X with $| X | > 1$ . Prove that the
 
 (9) a) Let G be a group of order n. Suppose that for every divisor d of $n , G$ contains at most one subgroup of order d. Show that G is clyclic.
 
-b) Let F be a field. Show that every finite subgroup of the group of units $F ^ { \times }$ is cyclic.
+b) Let F be a field.
+Show that every finite subgroup of the group of units $F ^ { \times }$ is cyclic.
 
 ## 1.2. Fields and Galois Theory.
 
-(1) Let K and L be finite fields. Show that K is contained in L if and only if # $K = p ^ { r }$ and # $L = p ^ { s }$ for the same prime $p ,$ and $r \leq s .$
+(1) Let K and L be finite fields.
+Show that K is contained in L if and only if # $K = p ^ { r }$ and # $L = p ^ { s }$ for the same prime $p ,$ and $r \leq s .$
 
 (2) Let K and L be finite fields with $K \subseteq L$ . Prove that L is Galois over K and that $\operatorname { G a l } ( L / K )$ is cyclic.
 
@@ -56,7 +58,8 @@ c) For every root r of f, there are no proper intermediate fields $F \subset L \
 
 (4) a) Show that $\sqrt { 2 + { \sqrt { 2 } } }$ is a root of $p ( x ) = x ^ { 2 } - 4 x ^ { 2 } + 2 \in \mathbf { Q } [ x ]$
 
-b) Prove that $\mathbf { Q } ( { \sqrt { 2 + { \sqrt { 2 } } } } )$ is a Galois extension of Q and find its Galois group. (Hint: note that $\sqrt { 2 - { \sqrt { 2 } } }$ is another root of $p ( x ) )$
+b) Prove that $\mathbf { Q } ( { \sqrt { 2 + { \sqrt { 2 } } } } )$ is a Galois extension of Q and find its Galois group.
+(Hint: note that $\sqrt { 2 - { \sqrt { 2 } } }$ is another root of $p ( x ) )$
 
 c) Let $f ( x ) = x ^ { 3 } - 5$ . Determine the splitting field K of $f ( x )$ over Q and the Galois group of $f ( x )$ . Give an example of a proper sub-extension $\mathbf { Q } \subset L \subset K$ , such that $L / \mathbf { Q }$ is Galois.
 
@@ -76,11 +79,14 @@ b) Every Euclidean domain is a PID.
 
 (2) Let F be a field, and let R be the subring of $F [ X ]$ of polynomials with X coefficient equal to 0. Prove that R is not a UFD.
 
-(3) R is a commutative ring with 1. Prove that if I is a maximal ideal in R, then $R / I$ is a field. Prove that if R is a PID, then every nonzero prime ideal in R is maximal. Conclude that if R is a PID and $p \in R$ is prime, then $R / ( p )$ is a field.
+(3) R is a commutative ring with 1. Prove that if I is a maximal ideal in R, then $R / I$ is a field.
+Prove that if R is a PID, then every nonzero prime ideal in R is maximal.
+Conclude that if R is a PID and $p \in R$ is prime, then $R / ( p )$ is a field.
 
 ## 1.4. Linear Algebra.
 
-(1) Prove that any square matrix is conjugate to its transpose matrix. (You may prove it over C).
+(1) Prove that any square matrix is conjugate to its transpose matrix.
+(You may prove it over C).
 
 (2) Determine the number of conjugacy classes of $1 6 \times 1 6$ matrices with entries in Q and minimal polynomial $( x ^ { 2 } + 1 ) ^ { 2 } ( x ^ { 3 } + 2 ) ^ { 2 }$
 
@@ -90,7 +96,8 @@ a) Prove that e is an injection.
 
 b) Prove that e is an isomorphism if and only if V is finite dimensional.
 
-(4) Let R be a principal ideal domain that is not a field, and write F for its field of fractions. Prove that F is not a finitely generated R-module.
+(4) Let R be a principal ideal domain that is not a field, and write F for its field of fractions.
+Prove that F is not a finitely generated R-module.
 
 (5) Carefully state Zorn’s lemma and use it to prove that every vector space has a basis.
 
@@ -112,7 +119,8 @@ $$
 
 (5) a) State the Schwarz lemma for analytic functions in the unit disc.
 
-b) Let $f : \mathbf { D } $ D be an analytic map from the unit disc D into itself. Use the Schwarz lemma to show that for each $a \in \mathbf { D }$ we have
+b) Let $f : \mathbf { D } $ D be an analytic map from the unit disc D into itself.
+Use the Schwarz lemma to show that for each $a \in \mathbf { D }$ we have
 
 $$
 { \frac { | f ^ { \prime } ( a ) | } { 1 - | f ( a ) | ^ { 2 } } } \leq { \frac { 1 } { 1 - | a | ^ { 2 } } } .

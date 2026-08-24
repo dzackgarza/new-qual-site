@@ -9,7 +9,6 @@ classification:
   topics:
   - measure-theory
   - convergence
-solved: false
 relations: []
 review: draft
 ---

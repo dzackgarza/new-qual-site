@@ -12,7 +12,6 @@ classification:
   - Fixed Points
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

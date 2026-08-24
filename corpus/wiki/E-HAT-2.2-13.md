@@ -11,7 +11,6 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 Let $X$ be the 2 complex obtained from $S^1$ with its usual cell structure by attaching two 2 cells by maps of degrees 2 and 3, respectively.

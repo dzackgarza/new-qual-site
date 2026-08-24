@@ -14,7 +14,6 @@ classification:
   - Maximum Modulus Principle
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="?"}

@@ -13,7 +13,6 @@ classification:
   - Norms
 relations: []
 review: draft
-solved: true
 ---
 
 Let $X$ be a complete metric space and define a norm

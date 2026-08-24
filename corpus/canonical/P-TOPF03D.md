@@ -12,7 +12,6 @@ classification:
   - Knot Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

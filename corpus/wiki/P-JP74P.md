@@ -13,7 +13,6 @@ classification:
   - Fourier Analysis
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

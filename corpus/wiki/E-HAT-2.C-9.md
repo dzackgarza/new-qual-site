@@ -10,7 +10,6 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 Show that there are only countably many homotopy types of finite CW complexes.

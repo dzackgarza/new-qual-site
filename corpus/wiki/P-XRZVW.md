@@ -11,7 +11,6 @@ classification:
   - Trigonometric Substitution
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

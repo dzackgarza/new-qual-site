@@ -12,7 +12,6 @@ classification:
   - Sequences of Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Uniformly bounded derivatives implies equicontinuous"}

@@ -13,7 +13,6 @@ classification:
   - Growth Estimates
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

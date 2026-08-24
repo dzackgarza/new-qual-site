@@ -50,9 +50,9 @@ complete *args:
 backlog:
     uv run python tools/backlog.py
 
-# Print n random unsolved problem/exercise cards (frontmatter solved: false)
-sample-unsolved n="5":
-    @rg --files-with-matches '^solved: false$' corpus | shuf -n {{ n }}
+# Print n random unsolved problem/exercise cards: no solution section and no incoming solves relation
+sample-unsolved n="5": build
+    @sqlite3 -box build/catalog.sqlite "select id from cards where kind in ('problem', 'exercise') and id not in (select card_id from sections where section_kind = 'solution') and id not in (select target_id from relations where kind = 'solves') order by random() limit {{ n }}"
 
 # Refresh the MathJax macro set from the author's pandoc preamble
 macros:

@@ -12,7 +12,6 @@ classification:
   - Chebyshev Inequality
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Modules over PIDs
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e jordan forms 4"}

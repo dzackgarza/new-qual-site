@@ -13,7 +13,6 @@ classification:
   - Irreducibility Criteria
 relations: []
 review: draft
-solved: true
 ---
 
 Let $V$ be a finite dimensional vector space over a field $F$ and let $T: V\to V$ be a linear operator with characteristic polynomial $f(x) \in F[x]$.

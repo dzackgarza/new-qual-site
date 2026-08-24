@@ -10,7 +10,6 @@ classification:
   - Order Topology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §24.5"}

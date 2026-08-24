@@ -11,7 +11,6 @@ classification:
   - Group Presentations
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 1.6.4"}

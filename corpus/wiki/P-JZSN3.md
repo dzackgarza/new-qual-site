@@ -12,7 +12,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 Let $p$ be a prime number and let $F$ be a field of characteristic $p$.

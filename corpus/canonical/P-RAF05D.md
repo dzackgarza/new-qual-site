@@ -12,7 +12,6 @@ classification:
   - Bounded Sequences
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

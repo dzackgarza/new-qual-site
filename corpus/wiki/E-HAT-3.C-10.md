@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Let $X$ be a path-connected H-space with $H^*(X; R)$ free and finitely generated in each dimension.

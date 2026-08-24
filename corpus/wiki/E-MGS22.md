@@ -11,7 +11,6 @@ classification:
   - Continuity
 relations: []
 review: draft
-solved: true
 ---
 
 Let $f : X \to Y$ be a continuous function, with $X$ compact.

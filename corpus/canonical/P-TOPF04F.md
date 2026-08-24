@@ -11,7 +11,6 @@ classification:
   - Manifolds
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

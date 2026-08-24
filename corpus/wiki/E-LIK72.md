@@ -13,7 +13,6 @@ classification:
   - Riemann Surfaces
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Finitely many poles"}

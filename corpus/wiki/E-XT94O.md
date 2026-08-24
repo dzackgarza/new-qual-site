@@ -10,7 +10,6 @@ classification:
   - Separation Axioms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §17.15"}

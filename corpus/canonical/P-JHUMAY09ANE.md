@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUMAY09ANE
 kind: problem
-title: "the convolution $f\mathbb { R } .$"
+title: 'the convolution $f\mathbb { R } .$'
 classification:
   areas:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

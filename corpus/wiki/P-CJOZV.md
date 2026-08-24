@@ -11,7 +11,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: true
 ---
 
 Find all three-fold covers of the wedge of two copies of $\RP^2$ . Justify your answer.

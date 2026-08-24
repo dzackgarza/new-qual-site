@@ -13,7 +13,6 @@ classification:
   - Integral Domains
 relations: []
 review: draft
-solved: true
 ---
 
 Let $R$ be a ring and $M$ an $R\dash$module.

@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 By Exercise 35 in §4.2 there is a bundle $S^2 \to \mathbb{CP}^3 \to S^4$.

@@ -12,7 +12,6 @@ classification:
   - Connectedness
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Zero derivative implies constant"}

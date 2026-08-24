@@ -12,7 +12,6 @@ classification:
   - Stone-Weierstrass
 relations: []
 review: draft
-solved: true
 ---
 
 1.  Suppose $f \colon [-1,1] \to \mathbb{R}$ is a bounded function

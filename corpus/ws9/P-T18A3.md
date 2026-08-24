@@ -11,7 +11,6 @@ classification:
   - Subspace Topology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

@@ -11,7 +11,6 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Integration by parts, special case"}

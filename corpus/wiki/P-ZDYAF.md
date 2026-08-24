@@ -13,7 +13,6 @@ classification:
   - Free Modules
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

@@ -11,7 +11,6 @@ classification:
   - Inner Product Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

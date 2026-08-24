@@ -13,7 +13,6 @@ classification:
   - Counterexamples
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="Spring 2009, 31"}

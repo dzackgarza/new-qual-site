@@ -10,7 +10,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Let $S$ be an embedded $k$-sphere in $S^n$ for which there exists a disk $D^n \subset S^n$ intersecting $S$ in the disk $D^k \subset D^n$ defined by the first $k$ coordinates of $D^n$.

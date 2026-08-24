@@ -10,7 +10,6 @@ classification:
   - Cauchy-Riemann
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

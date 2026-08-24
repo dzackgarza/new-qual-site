@@ -12,7 +12,6 @@ classification:
   - Uniform Integrability
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

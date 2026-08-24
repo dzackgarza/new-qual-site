@@ -11,7 +11,6 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$\mathbb{D}^c \intersect \mathbb{H}$ to $\mathbb{H}$"}

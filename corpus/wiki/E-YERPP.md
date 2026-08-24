@@ -11,7 +11,6 @@ classification:
   - Homeomorphisms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §24.7"}

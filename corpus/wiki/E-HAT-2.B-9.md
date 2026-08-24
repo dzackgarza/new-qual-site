@@ -10,7 +10,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Make the transfer sequence explicit in the case of a trivial covering $\tilde{X} \to X$, where $\tilde{X} = X \times S^0$.

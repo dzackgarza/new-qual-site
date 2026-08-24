@@ -9,7 +9,6 @@ classification:
   topics: ['Meromorphic Functions', 'Residue Formula', 'Argument Principle']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

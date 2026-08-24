@@ -12,7 +12,6 @@ classification:
   - Mapping Telescope
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

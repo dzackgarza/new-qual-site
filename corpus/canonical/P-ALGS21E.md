@@ -10,7 +10,6 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

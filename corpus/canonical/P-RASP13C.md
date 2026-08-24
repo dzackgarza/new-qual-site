@@ -12,7 +12,6 @@ classification:
   - Density of Polynomials
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -13,7 +13,6 @@ classification:
   - Sequences of Functions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Fixed point convergence"}

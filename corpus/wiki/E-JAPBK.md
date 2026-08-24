@@ -12,7 +12,6 @@ classification:
   - Rings
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Quotient by nilradical is reduced"}

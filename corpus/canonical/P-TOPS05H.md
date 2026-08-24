@@ -12,7 +12,6 @@ classification:
   - Degree Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

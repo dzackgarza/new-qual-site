@@ -10,7 +10,6 @@ classification:
   - Homology of Surfaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §75.1"}

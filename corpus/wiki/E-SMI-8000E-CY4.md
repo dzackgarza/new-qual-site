@@ -10,7 +10,6 @@ classification:
   - Symmetric Group
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e cycles 4"}

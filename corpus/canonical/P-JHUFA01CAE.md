@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Schwarz Lemma
-solved: false
 relations: []
 review: draft
 ---

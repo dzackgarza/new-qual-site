@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Suppose that $X$ is a CW complex with basepoint $e \in X$ a 0-cell.

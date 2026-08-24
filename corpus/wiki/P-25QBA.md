@@ -13,7 +13,6 @@ classification:
   - Algebras
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

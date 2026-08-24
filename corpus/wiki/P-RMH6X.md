@@ -11,7 +11,6 @@ classification:
   - Complex Logarithm
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem title="Horizontal strip to $\mathbb{H}$"}

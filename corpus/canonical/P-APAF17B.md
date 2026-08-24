@@ -11,7 +11,6 @@ classification:
   - Normal Operators
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Cartesian Products
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §5.5"}

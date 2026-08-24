@@ -11,7 +11,6 @@ classification:
   - Künneth Formula
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

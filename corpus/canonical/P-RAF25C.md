@@ -12,7 +12,6 @@ classification:
   - Duality
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

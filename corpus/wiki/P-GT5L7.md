@@ -12,7 +12,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: true
 ---
 
 Show that $\ZZ^{\ast 2}$ has subgroups isomorphic to $\ZZ^{\ast n}$ for every $n$.

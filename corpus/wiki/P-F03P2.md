@@ -10,7 +10,6 @@ classification:
   - Diagonalization
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

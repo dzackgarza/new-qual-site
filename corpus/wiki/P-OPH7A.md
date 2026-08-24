@@ -12,7 +12,6 @@ classification:
   - Measure Theory
 relations: []
 review: draft
-solved: true
 ---
 
 Let $f, g: [a, b] \to \RR$ be measurable with

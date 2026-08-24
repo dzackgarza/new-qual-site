@@ -13,7 +13,6 @@ classification:
   - L¹
 relations: []
 review: draft
-solved: true
 ---
 
 Let $\varphi$ be a compactly supported smooth function that vanishes outside of an interval $[-N, N]$ such that $\int _{\RR} \varphi(x) \, dx = 1$.

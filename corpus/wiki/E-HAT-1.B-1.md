@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Suppose a group $G$ acts simplicially on a complex $X$, where "simplicially" means that each element of $G$ takes each simplex of $X$ onto another simplex by a linear homeomorphism.

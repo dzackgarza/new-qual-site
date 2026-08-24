@@ -10,7 +10,6 @@ classification:
   - Density
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

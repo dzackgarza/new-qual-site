@@ -13,7 +13,6 @@ classification:
   - Minimal and Characteristic Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 Let m

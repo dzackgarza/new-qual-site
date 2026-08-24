@@ -14,7 +14,6 @@ classification:
   - Fourier Transform
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

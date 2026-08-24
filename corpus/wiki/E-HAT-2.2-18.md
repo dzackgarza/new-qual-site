@@ -12,7 +12,6 @@ classification:
   - Relative Homology
 relations: []
 review: draft
-solved: false
 ---
 
 For a CW pair $(X, A)$ show there is a relative cellular chain complex formed by the groups $H_i(X^i, X^{i-1} \cup A^i)$, having homology groups isomorphic to $H_n(X, A)$.

@@ -12,7 +12,6 @@ classification:
   - Surfaces
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the fundamental group of the surface of infinite genus shown below is free on an infinite number of generators.

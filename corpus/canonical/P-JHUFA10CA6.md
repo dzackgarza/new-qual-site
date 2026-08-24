@@ -8,7 +8,6 @@ classification:
   - complex-analysis
   topics:
   - Identity Theorem
-solved: false
 relations: []
 review: draft
 ---

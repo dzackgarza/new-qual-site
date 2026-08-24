@@ -13,7 +13,6 @@ classification:
   - u-Substitution
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

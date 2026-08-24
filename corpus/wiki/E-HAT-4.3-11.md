@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 For a space $B$, let $\mathcal{F}(B)$ be the set of fiber homotopy equivalence classes of fibrations $E \to B$.

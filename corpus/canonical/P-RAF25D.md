@@ -12,7 +12,6 @@ classification:
   - L2 Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

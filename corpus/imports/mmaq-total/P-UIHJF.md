@@ -13,7 +13,6 @@ classification:
   - Group Actions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

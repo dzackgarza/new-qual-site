@@ -11,7 +11,6 @@ classification:
   - Mean Value Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 1.  

@@ -11,7 +11,6 @@ classification:
   - Tor
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

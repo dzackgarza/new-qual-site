@@ -10,7 +10,6 @@ classification:
   - Connectedness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Fall 2006, 13"}

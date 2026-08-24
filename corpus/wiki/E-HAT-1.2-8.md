@@ -12,7 +12,6 @@ classification:
   - Surfaces
 relations: []
 review: draft
-solved: false
 ---
 
 Compute the fundamental group of the space obtained from two tori $S^1 \times S^1$ by identifying a circle $S^1 \times \{x_0\}$ in one torus with the corresponding circle $S^1 \times \{x_0\}$ in the other torus.

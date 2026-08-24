@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA09ANH
 kind: problem
-title: "h be a harmonic function on the punctured disk $c \in \mathbb { R }\mathrm { R e"
+title: 'h be a harmonic function on the punctured disk $c \in \mathbb { R }\mathrm { R e'
 classification:
   areas:
   - complex-analysis
   topics:
   - complex-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

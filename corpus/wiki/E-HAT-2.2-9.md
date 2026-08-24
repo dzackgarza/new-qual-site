@@ -11,7 +11,6 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 Compute the homology groups of the following 2 complexes:

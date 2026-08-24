@@ -12,7 +12,6 @@ classification:
   - Cyclic Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 2.4.9)."}

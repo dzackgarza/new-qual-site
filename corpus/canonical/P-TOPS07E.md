@@ -12,7 +12,6 @@ classification:
   - Intersection Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

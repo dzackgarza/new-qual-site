@@ -12,7 +12,6 @@ classification:
   - Barycentric Subdivision
 relations: []
 review: draft
-solved: false
 ---
 
 Find an explicit, noninductive formula for the barycentric subdivision operator $S: C_n(X) \to C_n(X)$.

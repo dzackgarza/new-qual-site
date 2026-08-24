@@ -10,7 +10,6 @@ classification:
   - Axiom of Choice
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §19.9"}

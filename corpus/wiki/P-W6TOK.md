@@ -12,7 +12,6 @@ classification:
   - Partial Fractions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show that if $M$ is a manifold of dimension $2n$ for which there exists a fiber bundle $S^1 \to S^{2n+1} \to M$, then $M$ is simply-connected and $H^*(M; \mathbb{Z}) \approx H^*(\mathbb{CP}^n; \mathbb{Z})$ as rings.

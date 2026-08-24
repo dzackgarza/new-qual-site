@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Let $X \subset \mathbb{R}^{n+1}$ be the union of the infinite sequence of spheres $S_k^n$ of radius $1/k$ and center $(1/k, 0, \ldots, 0)$.

@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-AZ2FY
 kind: problem
-title: "for all , there exists a set s.t. $\begin{array} { r } { \mathcal { M } ^ { 1 }"
+title: 'for all , there exists a set s.t. $\begin{array} { r } { \mathcal { M } ^ { 1 }'
 classification:
   areas:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

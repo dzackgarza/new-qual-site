@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUFA01CAD
 kind: problem
-title: Schwarz-Pick: holomorphic self-map of disk maps smaller disks into smaller disks
+title: 'Schwarz-Pick: holomorphic self-map of disk maps smaller disks into smaller disks'
 classification:
   areas:
   - complex-analysis
   topics:
   - Schwarz Lemma
-solved: false
 relations: []
 review: draft
 ---

@@ -13,7 +13,6 @@ classification:
   - L∞
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

@@ -13,7 +13,6 @@ classification:
   - Contour Integration
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Surfaces
 relations: []
 review: draft
-solved: false
 ---
 
 (a) Use the Mayer–Vietoris sequence to compute the homology groups of the space obtained from a torus $S^1 \times S^1$ by attaching a Möbius band via a homeomorphism from the boundary circle of the Möbius band to the circle $S^1 \times \{x_0\}$ in the torus.

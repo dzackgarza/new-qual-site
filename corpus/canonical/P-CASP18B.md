@@ -12,7 +12,6 @@ classification:
   - Improper Integrals
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

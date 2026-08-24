@@ -12,7 +12,6 @@ classification:
   - Convergence of Functions
 relations: []
 review: draft
-solved: true
 ---
 
 ::: exercise

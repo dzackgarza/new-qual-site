@@ -13,7 +13,6 @@ classification:
   - Mod 2
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

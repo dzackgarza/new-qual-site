@@ -9,7 +9,6 @@ classification:
   topics: ['Complex Numbers', 'Power Series', 'Cauchy-Riemann']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Classify algebraically the Hopf algebras $A$ over $\mathbb{Z}$ such that $A^n$ is free for each $n$ and $A \otimes \mathbb{Q} \approx \mathbb{Q}[\alpha]$.

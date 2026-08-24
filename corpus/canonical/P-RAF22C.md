@@ -12,7 +12,6 @@ classification:
   - Oscillatory Integrals
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

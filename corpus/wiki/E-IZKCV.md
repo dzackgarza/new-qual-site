@@ -13,7 +13,6 @@ classification:
   - Poles
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$1/x^4+1$, balancing exponentials"}

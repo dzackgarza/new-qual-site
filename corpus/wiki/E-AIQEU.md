@@ -13,7 +13,6 @@ classification:
   - Hyperbolic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$e^{ax}\operatorname{sech}(z)$ "}

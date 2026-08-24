@@ -12,7 +12,7 @@ classification:
   - Graphs
 relations: []
 review: draft
-solved: false
 ---
 
-Let $F$ be the free group on two generators and let $F'$ be its commutator subgroup. Find a set of free generators for $F'$ by considering the covering space of the graph $S^1 \lor S^1$ corresponding to $F'$.
+Let $F$ be the free group on two generators and let $F'$ be its commutator subgroup.
+Find a set of free generators for $F'$ by considering the covering space of the graph $S^1 \lor S^1$ corresponding to $F'$.

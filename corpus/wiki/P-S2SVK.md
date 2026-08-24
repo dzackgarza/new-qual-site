@@ -12,7 +12,6 @@ classification:
   - Differentiation
 relations: []
 review: draft
-solved: true
 ---
 
 Prove that

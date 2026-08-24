@@ -12,7 +12,6 @@ classification:
   - Integrals
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$\cos(x) / x^2 + b^2$"}

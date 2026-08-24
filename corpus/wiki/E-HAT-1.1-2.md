@@ -11,7 +11,6 @@ classification:
   - Homotopy
 relations: []
 review: draft
-solved: false
 ---
 
 Show that the change-of-basepoint homomorphism $\beta_h$ depends only on the homotopy class of $h$.

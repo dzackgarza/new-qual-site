@@ -10,7 +10,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Compute the homology groups of the subspace of $I \times I$ consisting of the four boundary edges plus all points in the interior whose first coordinate is rational.

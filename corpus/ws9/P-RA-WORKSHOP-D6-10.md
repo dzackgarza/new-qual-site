@@ -13,7 +13,6 @@ relations:
 - kind: uses
   target: T-RA-WORKSHOP-D6-5-3
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

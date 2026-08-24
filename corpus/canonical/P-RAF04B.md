@@ -11,7 +11,6 @@ classification:
   - L1 Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

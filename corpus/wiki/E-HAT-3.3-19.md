@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that a direct limit of countable abelian groups over a countable indexing set is countable.

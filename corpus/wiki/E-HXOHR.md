@@ -10,7 +10,6 @@ classification:
   - Compactness
 relations: []
 review: draft
-solved: true
 ---
 
 Let $X$ be a compact space and let $A$ be a closed subspace.

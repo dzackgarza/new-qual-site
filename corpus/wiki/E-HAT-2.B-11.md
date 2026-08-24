@@ -10,7 +10,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Use the transfer sequence for the covering $X \times S^\infty \to X \times \mathbb{RP}^\infty$ to produce isomorphisms $H_n(X \times \mathbb{RP}^\infty; \mathbb{Z}_2) \approx \bigoplus_{i \leq n} H_i(X; \mathbb{Z}_2)$ for all $n$.

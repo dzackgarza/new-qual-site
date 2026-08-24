@@ -11,7 +11,6 @@ classification:
   - Symmetric Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

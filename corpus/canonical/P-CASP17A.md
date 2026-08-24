@@ -11,7 +11,6 @@ classification:
   - Residue Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

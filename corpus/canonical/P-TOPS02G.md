@@ -12,7 +12,6 @@ classification:
   - Mapping Cone
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

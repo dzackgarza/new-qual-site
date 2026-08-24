@@ -10,7 +10,6 @@ classification:
   - Product Topology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §16.5"}

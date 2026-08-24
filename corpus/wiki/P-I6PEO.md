@@ -10,7 +10,6 @@ classification:
   - Variation
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

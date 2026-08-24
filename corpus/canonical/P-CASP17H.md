@@ -12,7 +12,6 @@ classification:
   - Maximum Principle
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

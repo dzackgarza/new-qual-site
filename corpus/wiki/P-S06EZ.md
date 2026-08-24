@@ -10,7 +10,6 @@ classification:
   - Complex Numbers
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

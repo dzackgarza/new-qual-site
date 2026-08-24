@@ -11,7 +11,6 @@ classification:
   - Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="When bounds imply removability"}

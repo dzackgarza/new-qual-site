@@ -10,7 +10,6 @@ classification:
   - Metrizability
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §30.6"}

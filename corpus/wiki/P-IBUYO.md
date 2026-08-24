@@ -13,7 +13,6 @@ classification:
   - Euclidean Domains
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

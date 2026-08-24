@@ -11,7 +11,6 @@ classification:
   - Functional Analysis
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

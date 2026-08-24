@@ -12,7 +12,6 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem}

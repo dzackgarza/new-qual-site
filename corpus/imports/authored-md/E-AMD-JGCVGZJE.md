@@ -11,7 +11,6 @@ classification:
   - Counterexamples
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise}

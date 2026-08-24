@@ -10,7 +10,6 @@ classification:
   - Homotopy Equivalence
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §58.6"}

@@ -13,7 +13,6 @@ classification:
   - Poincare Duality
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

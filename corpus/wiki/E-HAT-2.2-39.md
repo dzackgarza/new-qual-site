@@ -12,7 +12,6 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 Use the preceding exercise to derive relative Mayer–Vietoris sequences for CW pairs $(X, Y) = (A \cup B, C \cup D)$ with $A = B$ or $C = D$.

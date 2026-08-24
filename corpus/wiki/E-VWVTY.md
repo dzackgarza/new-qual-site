@@ -12,7 +12,6 @@ classification:
   - Power Series
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Convergence of a $\ZZ\dash$index series"}

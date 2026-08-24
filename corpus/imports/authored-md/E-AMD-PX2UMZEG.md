@@ -10,7 +10,6 @@ classification:
   - Ideals
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise}

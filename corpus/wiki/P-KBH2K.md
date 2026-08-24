@@ -12,7 +12,6 @@ classification:
   - Limits
 relations: []
 review: draft
-solved: true
 ---
 
 Let $\{a_n\}_{n=1}^\infty$ be a sequence of real numbers.

@@ -11,7 +11,7 @@ classification:
   - Topology
 relations: []
 review: draft
-solved: false
 ---
 
-Let $X$ be a graph in which each vertex is an endpoint of only finitely many edges. Show that the weak topology on $X$ is a metric topology.
+Let $X$ be a graph in which each vertex is an endpoint of only finitely many edges.
+Show that the weak topology on $X$ is a metric topology.

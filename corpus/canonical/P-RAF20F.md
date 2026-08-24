@@ -12,7 +12,6 @@ classification:
   - Dual Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

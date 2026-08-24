@@ -13,7 +13,6 @@ classification:
   - Meromorphic Functions
 relations: []
 review: draft
-solved: false
 ---
 
 :::{.exercise title="Sum formulas: $1/n^2+a^2$"}

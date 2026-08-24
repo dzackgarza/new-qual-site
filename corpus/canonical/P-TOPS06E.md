@@ -13,7 +13,6 @@ classification:
   - Quotient Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

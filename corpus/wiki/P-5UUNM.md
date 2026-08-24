@@ -12,7 +12,6 @@ classification:
   - Subgroups
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="?"}

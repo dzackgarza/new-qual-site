@@ -12,7 +12,6 @@ classification:
   - Power Series
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Holomorphic functions have discrete zeros"}

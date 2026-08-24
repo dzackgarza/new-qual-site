@@ -11,7 +11,6 @@ classification:
   - Bilinear Forms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 7.1.5"}

@@ -11,7 +11,6 @@ classification:
   - PDEs
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

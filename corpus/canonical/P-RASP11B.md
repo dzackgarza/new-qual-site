@@ -12,7 +12,6 @@ classification:
   - Maximal Function
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -11,7 +11,6 @@ classification:
   - Natural Transformations
 relations: []
 review: draft
-solved: false
 ---
 
 Given a map $f: X \to Y$ and a path $h: I \to X$ from $x_0$ to $x_1$, show that $f_* \beta_h = \beta_{fh} f_*$ in the diagram:

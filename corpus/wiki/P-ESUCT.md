@@ -13,7 +13,6 @@ classification:
   - Field Extensions
 relations: []
 review: draft
-solved: true
 ---
 
 Let $\zeta_n$ denote a primitive $n$th root of 1 $\in \QQ$.

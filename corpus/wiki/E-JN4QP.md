@@ -12,7 +12,6 @@ classification:
   - Homeomorphisms
 relations: []
 review: draft
-solved: true
 ---
 
 Show that a continuous bijection from a compact space to a Hausdorff space is a homeomorphism.

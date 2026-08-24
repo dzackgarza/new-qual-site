@@ -11,7 +11,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: false
 ---
 
 For $X$ a finite CW complex and $F$ a field, show that the Euler characteristic $\chi(X)$ can also be computed by the formula $\chi(X) = \sum_n (-1)^n \dim H_n(X; F)$, the alternating sum of the dimensions of the vector spaces $H_n(X; F)$.

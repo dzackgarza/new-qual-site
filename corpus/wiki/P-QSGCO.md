@@ -13,7 +13,6 @@ classification:
   - Commutators
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

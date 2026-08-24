@@ -13,7 +13,6 @@ classification:
   - Removable Singularities
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Constructing functions with specified singularities"}

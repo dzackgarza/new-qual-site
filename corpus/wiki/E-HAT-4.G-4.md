@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show that Proposition 4G.2 and its corollary hold also for CW complexes and covers by families of subcomplexes.

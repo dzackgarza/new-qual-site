@@ -12,7 +12,6 @@ classification:
   - Euclidean Spaces
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

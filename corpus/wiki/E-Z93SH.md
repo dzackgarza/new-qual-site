@@ -11,7 +11,6 @@ classification:
   - Interior
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §17.21"}

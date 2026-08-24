@@ -11,7 +11,6 @@ classification:
   - Entire Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

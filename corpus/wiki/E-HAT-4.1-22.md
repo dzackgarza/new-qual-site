@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show that a path-connected space $X$ has a CW approximation with countably many cells if $\pi_n(X)$ is countable for all $n$.

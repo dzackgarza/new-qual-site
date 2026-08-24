@@ -12,7 +12,6 @@ classification:
   - Minimal and Characteristic Polynomials
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 7.4.10"}

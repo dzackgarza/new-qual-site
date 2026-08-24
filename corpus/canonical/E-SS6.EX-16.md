@@ -9,7 +9,6 @@ classification:
   topics: ['Gamma Function', 'Zeta Function', 'Mellin Transform']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

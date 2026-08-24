@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUMAY11ANJ
 kind: problem
-title: "the convolution defined by $$ \chi _ { E } * \chi _ { F } ("
+title: 'the convolution defined by $$ \chi _ { E } * \chi _ { F } ('
 classification:
   areas:
   - real-analysis
   topics:
   - real-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

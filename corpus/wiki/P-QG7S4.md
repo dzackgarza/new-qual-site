@@ -12,7 +12,6 @@ classification:
   - Isomorphism Theorems
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

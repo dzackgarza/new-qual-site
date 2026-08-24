@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 A map $p: E \to B$ with $B$ not necessarily path-connected is defined to be a quasifibration if the following equivalent conditions are satisfied:

@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Show that a finite graph product of finitely generated groups is finitely generated, and similarly for finitely presented groups.

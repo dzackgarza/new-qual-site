@@ -12,7 +12,6 @@ classification:
   - Holomorphic Functions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Proving functions are harmonic using components of holomorphic functions"}

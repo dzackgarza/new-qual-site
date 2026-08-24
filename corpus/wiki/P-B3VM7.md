@@ -13,7 +13,6 @@ classification:
   - Homology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

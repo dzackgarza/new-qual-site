@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Let $X$ be obtained from a lens space of dimension $2n+1$ by deleting a point.

@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 For this problem it is convenient to use the notations $X^n$ for the $n$th stage in a Postnikov tower for $X$ and $X_m$ for an $(m-1)$-connected covering of $X$, where $X$ is a connected CW complex.

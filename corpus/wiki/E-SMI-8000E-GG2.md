@@ -10,7 +10,6 @@ classification:
   - Finite Fields
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e galois 2"}

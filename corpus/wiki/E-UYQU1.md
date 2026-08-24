@@ -11,7 +11,6 @@ classification:
   - Topological Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §79.7"}

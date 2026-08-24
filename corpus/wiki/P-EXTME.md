@@ -12,7 +12,6 @@ classification:
   - Rank and Nullity
 relations: []
 review: draft
-solved: false
 ---
 
 :::{.problem title="Hungerford 7.2.4"}

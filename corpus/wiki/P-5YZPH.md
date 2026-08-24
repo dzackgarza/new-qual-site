@@ -13,7 +13,6 @@ classification:
   - Cosets and Lagrange
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

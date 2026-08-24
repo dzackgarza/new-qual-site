@@ -13,7 +13,6 @@ classification:
   - Identity Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Images of sequences of poles converge to anything"}

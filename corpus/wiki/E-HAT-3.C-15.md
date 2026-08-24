@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Suppose that $X$ is a path-connected H-space such that $H^*(X; \mathbb{Z})$ is free and finitely generated in each dimension, and $H^*(X; \mathbb{Q})$ is a polynomial ring $\mathbb{Q}[\alpha]$.

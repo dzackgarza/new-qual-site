@@ -10,7 +10,6 @@ classification:
   - Free Products
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §69.3"}

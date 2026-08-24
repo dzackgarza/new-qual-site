@@ -11,7 +11,6 @@ classification:
   - Montel Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

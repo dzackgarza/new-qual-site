@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Show there is a map $\mathbb{RP}^\infty \to \mathbb{CP}^\infty = K(\mathbb{Z}, 2)$ which induces the trivial map on $\tilde{H}_*(-; \mathbb{Z})$ but a nontrivial map on $\tilde{H}^*(-; \mathbb{Z})$.

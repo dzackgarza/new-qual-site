@@ -11,7 +11,6 @@ classification:
   - Cyclic Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise}

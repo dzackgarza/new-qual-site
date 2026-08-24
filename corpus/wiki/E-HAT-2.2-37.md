@@ -12,7 +12,6 @@ classification:
   - Simplicial Homology
 relations: []
 review: draft
-solved: false
 ---
 
 Give an elementary derivation for the Mayer–Vietoris sequence in simplicial homology for a $\Delta$-complex $X$ decomposed as the union of subcomplexes $A$ and $B$.

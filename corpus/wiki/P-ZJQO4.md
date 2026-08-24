@@ -12,7 +12,6 @@ classification:
   - Homological Algebra
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 4.4.3"}

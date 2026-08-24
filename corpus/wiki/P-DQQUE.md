@@ -11,7 +11,6 @@ classification:
   - Limits
 relations: []
 review: draft
-solved: true
 ---
 
 Let $\{a_k\}_{k=1}^\infty$ be a bounded sequence of real numbers and $E$ given by: $$E:= \bigg\{s \in \mathbb{R}\, \colon \, \text{ the set } \{k \in \mathbb{N}\, \colon \, a_k \geq s\} \text{ has at most finitely many elements}\bigg\}.$$ Prove that $\limsup_{k \to \infty} a_k = \inf E$.

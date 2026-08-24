@@ -12,7 +12,6 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
-solved: true
 ---
 
 For a prime $p$, let $G$ be a finite $p\dash$group and let $N$ be a normal subgroup of $G$ of order $p$.

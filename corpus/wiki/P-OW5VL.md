@@ -12,7 +12,6 @@ classification:
   - Stone-Weierstrass
 relations: []
 review: draft
-solved: true
 ---
 
 Prove that if $f: [0, 1] \to \RR$ is continuous then

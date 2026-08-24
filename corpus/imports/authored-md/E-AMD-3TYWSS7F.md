@@ -11,7 +11,6 @@ classification:
   - Solvable Groups
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise}

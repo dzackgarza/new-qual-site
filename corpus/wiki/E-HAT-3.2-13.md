@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Describe $H^*(\mathbb{CP}^\infty / \mathbb{CP}^1; \mathbb{Z})$ as a ring with finitely many multiplicative generators.

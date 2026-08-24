@@ -10,7 +10,6 @@ classification:
   - Eigenvalues
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

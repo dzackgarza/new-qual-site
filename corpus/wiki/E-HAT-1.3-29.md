@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Let $Y$ be path-connected, locally path-connected, and simply-connected, and let $G_1$ and $G_2$ be subgroups of $\mathrm{Homeo}(Y)$ defining covering space actions on $Y$.

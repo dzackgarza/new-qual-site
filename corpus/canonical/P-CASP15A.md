@@ -22,7 +22,6 @@ classification:
   - Riemann Mapping Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Continuity
 relations: []
 review: draft
-solved: true
 ---
 
 Suppose $F \subseteq \RR$ with $m(F^c) < \infty$ and let \( \delta(x) \da d(x, F) \) and

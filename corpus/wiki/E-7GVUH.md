@@ -10,7 +10,6 @@ classification:
   - Urysohn Lemma
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §33.1"}

@@ -10,7 +10,6 @@ classification:
   - Series
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

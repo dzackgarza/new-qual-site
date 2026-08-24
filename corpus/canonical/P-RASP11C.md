@@ -12,7 +12,6 @@ classification:
   - Holder Inequality
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

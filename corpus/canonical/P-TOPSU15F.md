@@ -12,7 +12,6 @@ classification:
   - Embeddings
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

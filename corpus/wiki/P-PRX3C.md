@@ -12,7 +12,6 @@ classification:
   - Ideals
 relations: []
 review: draft
-solved: true
 ---
 
 a. Define *prime ideal*, give an example of a nontrivial ideal in the ring $\ZZ$ that is not prime, and prove that it is not prime.

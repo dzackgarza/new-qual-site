@@ -12,7 +12,6 @@ classification:
   - Field Extensions
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

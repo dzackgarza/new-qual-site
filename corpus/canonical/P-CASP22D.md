@@ -12,7 +12,6 @@ classification:
   - Simply Connected
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

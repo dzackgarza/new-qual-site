@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Determine all cohomology operations $H^1(X; \mathbb{Z}) \to H^n(X; \mathbb{Z})$, $H^2(X; \mathbb{Z}) \to H^n(X; \mathbb{Z})$, and $H^1(X; \mathbb{Z}_p) \to H^n(X; \mathbb{Z}_p)$ for $p$ prime.

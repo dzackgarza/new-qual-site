@@ -10,7 +10,6 @@ classification:
   - Integers and Real Numbers
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §4.1"}

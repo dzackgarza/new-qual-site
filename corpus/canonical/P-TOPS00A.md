@@ -11,7 +11,6 @@ classification:
   - Compact Support
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Symmetric Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

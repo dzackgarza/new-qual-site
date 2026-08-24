@@ -11,7 +11,6 @@ classification:
   - Sylow Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 2.8.9"}

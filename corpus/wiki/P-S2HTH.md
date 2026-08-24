@@ -12,7 +12,6 @@ classification:
   - Partitions
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.problem}

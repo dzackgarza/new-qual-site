@@ -11,7 +11,6 @@ classification:
   - Homotopy Invariance
 relations: []
 review: draft
-solved: false
 ---
 
 Verify that $f \simeq g$ implies $f_* = g_*$ for induced homomorphisms of reduced homology groups.

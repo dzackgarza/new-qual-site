@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Consider a pushout diagram where $B$ is $B$ with $X$ attached along $A$ via $f$.

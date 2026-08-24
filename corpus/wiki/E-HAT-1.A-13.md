@@ -11,7 +11,8 @@ classification:
   - Covering Spaces
 relations: []
 review: draft
-solved: false
 ---
 
-Let $x$ be a nontrivial element of a finitely generated free group $F$. Show there is a finite-index subgroup $H \subset F$ in which $x$ is one element of a basis. [Exercises 4 and 10 may be helpful.]
+Let $x$ be a nontrivial element of a finitely generated free group $F$.
+Show there is a finite-index subgroup $H \subset F$ in which $x$ is one element of a basis.
+[Exercises 4 and 10 may be helpful.]

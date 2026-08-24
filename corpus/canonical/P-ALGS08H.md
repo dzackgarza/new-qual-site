@@ -10,7 +10,6 @@ classification:
   - Ring Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

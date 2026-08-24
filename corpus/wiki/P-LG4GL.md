@@ -12,7 +12,6 @@ classification:
   - Limits
 relations: []
 review: draft
-solved: true
 ---
 
 Let $\phi\in L^\infty(\RR)$. Show that the following limit exists and satisfies the equality

@@ -9,7 +9,6 @@ classification:
   topics: ["Cauchy's Theorem", 'Contour Integration', 'Residues']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

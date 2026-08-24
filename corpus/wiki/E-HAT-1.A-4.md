@@ -12,7 +12,6 @@ classification:
   - Free Groups
 relations: []
 review: draft
-solved: false
 ---
 
 If $X$ is a finite graph and $Y$ is a subgraph homeomorphic to $S^1$ and containing the basepoint $x_0$, show that $\pi_1(X, x_0)$ has a basis in which one element is represented by the loop $Y$.

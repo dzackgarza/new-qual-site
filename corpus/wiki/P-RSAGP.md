@@ -12,7 +12,6 @@ classification:
   - Quadratic Forms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Topological Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §22 Supplementary"}

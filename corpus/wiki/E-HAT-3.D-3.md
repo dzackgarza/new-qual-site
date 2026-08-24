@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Compute the Pontryagin ring structure in $H_*(SO(5); \mathbb{Z})$.

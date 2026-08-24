@@ -10,7 +10,6 @@ classification:
   - Field Extensions
 relations: []
 review: draft
-solved: true
 ---
 
 Why is every finite extension algebraic?

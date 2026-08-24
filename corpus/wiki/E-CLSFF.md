@@ -14,7 +14,6 @@ classification:
   - Riemann Surfaces
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Meromorphic functions on $\mathbb{CP}^1$ "}

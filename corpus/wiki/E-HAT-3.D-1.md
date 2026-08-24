@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that a topological group with a finite-dimensional CW structure is an orientable manifold.

@@ -13,7 +13,6 @@ classification:
   - Poles
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="$1/(1+x^2)^{n+1}$ "}

@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Compute the cup product structure in $H^*(S^2 \times S^8 \sharp S^4 \times S^6; \mathbb{Z})$, and in particular show that the only nontrivial cup products are those dictated by Poincaré duality.

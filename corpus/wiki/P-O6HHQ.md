@@ -12,7 +12,6 @@ classification:
   - Principal Ideal Domains
 relations: []
 review: draft
-solved: false
 ---
 
 :::{.problem title="Hungerford 4.2.4"}

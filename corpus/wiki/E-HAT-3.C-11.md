@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 If $T^n$ is the $n$-dimensional torus, the product of $n$ circles, show that the Pontryagin ring $H_*(T^n; \mathbb{Z})$ is the exterior algebra $\Lambda_\mathbb{Z}[x_1, \dots, x_n]$ with $|x_i| = 1$.

@@ -13,7 +13,6 @@ classification:
   - Homeomorphisms
 relations: []
 review: draft
-solved: true
 ---
 
 ::: exercise

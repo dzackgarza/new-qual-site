@@ -12,7 +12,6 @@ classification:
   - Graphs
 relations: []
 review: draft
-solved: false
 ---
 
 What is the minimum number of edges in simplicial complex structures $K$ and $L$ on $S^1$ such that there is a simplicial map $K \to L$ of degree $n$?

@@ -13,7 +13,6 @@ classification:
   - Projective Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

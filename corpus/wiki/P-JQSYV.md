@@ -12,7 +12,6 @@ classification:
   - Semidirect Products
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 2.6.9"}

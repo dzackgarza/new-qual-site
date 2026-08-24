@@ -13,7 +13,6 @@ classification:
   - Centralizers and Normalizers
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

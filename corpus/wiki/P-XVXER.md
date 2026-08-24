@@ -12,7 +12,6 @@ classification:
   - Matrix Groups
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

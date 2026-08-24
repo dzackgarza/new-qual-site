@@ -10,7 +10,6 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Hoffman and Kunze 1.4.7"}

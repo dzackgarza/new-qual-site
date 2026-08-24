@@ -11,7 +11,6 @@ classification:
   - Path Components
 relations: []
 review: draft
-solved: false
 ---
 
 If $X_0$ is the path-component of a space $X$ containing the basepoint $x_0$, show that the inclusion $X_0 \hookrightarrow X$ induces an isomorphism $\pi_1(X_0, x_0) \approx \pi_1(X, x_0)$.

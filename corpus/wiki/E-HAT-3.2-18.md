@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 For the closed orientable surface $M$ of genus $g \geq 1$, show that for each nonzero $\alpha \in H^1(M; \mathbb{Z})$ there exists $\beta \in H^1(M; \mathbb{Z})$ with $\alpha \beta \neq 0$.

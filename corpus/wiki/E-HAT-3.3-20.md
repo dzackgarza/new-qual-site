@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Show that $H_c^0(X; G) = 0$ if $X$ is path-connected and noncompact.

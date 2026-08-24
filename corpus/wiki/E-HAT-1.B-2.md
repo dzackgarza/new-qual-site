@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Let $X$ be a connected CW complex and $G$ a group such that every homomorphism $\pi_1(X) \to G$ is trivial.

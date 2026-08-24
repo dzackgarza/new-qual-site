@@ -12,7 +12,6 @@ classification:
   - Determinants
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

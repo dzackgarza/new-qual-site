@@ -12,7 +12,6 @@ classification:
   - Homotopy Equivalence
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

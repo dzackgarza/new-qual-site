@@ -13,7 +13,6 @@ classification:
   - Counterexamples
 relations: []
 review: draft
-solved: true
 ---
 
 Let $F \subset K \subset L$ be finite degree field extensions.

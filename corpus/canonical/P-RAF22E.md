@@ -13,7 +13,6 @@ classification:
   - Closed Range
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

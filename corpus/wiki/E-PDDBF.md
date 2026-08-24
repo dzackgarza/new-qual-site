@@ -10,7 +10,6 @@ classification:
   - Local Finiteness
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §39.2"}

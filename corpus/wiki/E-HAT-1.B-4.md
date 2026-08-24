@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Use van Kampen's theorem to compute $A *_C$ as a quotient of $A * \mathbb{Z}$, as stated in the text.

@@ -10,7 +10,6 @@ classification:
   - Group Presentations
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Covering Transformations
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §81.4"}

@@ -14,7 +14,6 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

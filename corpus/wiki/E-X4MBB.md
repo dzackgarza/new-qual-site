@@ -11,7 +11,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Finding complex roots"}

@@ -10,7 +10,6 @@ classification:
   - Multivariable Calculus
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

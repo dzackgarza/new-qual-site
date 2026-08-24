@@ -12,7 +12,6 @@ classification:
   - Fundamental Theorem of Calculus
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

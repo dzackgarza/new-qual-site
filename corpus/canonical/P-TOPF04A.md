@@ -12,7 +12,6 @@ classification:
   - Homotopy Type
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

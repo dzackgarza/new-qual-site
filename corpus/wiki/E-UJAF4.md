@@ -13,7 +13,6 @@ classification:
   - Compactness
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Equicontinuity + pointwise convergence implies uniform convergence"}

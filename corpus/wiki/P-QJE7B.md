@@ -12,7 +12,6 @@ classification:
   - Bases
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

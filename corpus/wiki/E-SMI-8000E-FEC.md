@@ -10,7 +10,6 @@ classification:
   - Sylow Theorems
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000 fall 2006 final C"}

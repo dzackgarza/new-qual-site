@@ -11,7 +11,7 @@ classification:
   - CW Complexes
 relations: []
 review: draft
-solved: false
 ---
 
-In an exercise for §1.2 we described a 3 dimensional CW complex obtained from the cube $I^3$ by identifying opposite faces via a one-quarter twist. Compute the homology groups of this complex.
+In an exercise for §1.2 we described a 3 dimensional CW complex obtained from the cube $I^3$ by identifying opposite faces via a one-quarter twist.
+Compute the homology groups of this complex.

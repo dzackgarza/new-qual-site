@@ -12,7 +12,6 @@ classification:
   - Support of Distributions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

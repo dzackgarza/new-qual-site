@@ -12,9 +12,9 @@ classification:
   - Simplicial Complexes
 relations: []
 review: draft
-solved: false
 ---
 
 (a) Show the quotient space of a finite collection of disjoint 2 simplices obtained by identifying pairs of edges is always a surface, locally homeomorphic to $\mathbb{R}^2$.
 
-(b) Show the edges can always be oriented so as to define a $\Delta$-complex structure on the quotient surface. [This is more difficult.]
+(b) Show the edges can always be oriented so as to define a $\Delta$-complex structure on the quotient surface.
+[This is more difficult.]

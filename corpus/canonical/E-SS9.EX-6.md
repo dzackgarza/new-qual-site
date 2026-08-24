@@ -9,7 +9,6 @@ classification:
   topics: ['Elliptic Functions', 'Weierstrass P', 'Lattices']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

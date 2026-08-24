@@ -12,7 +12,6 @@ classification:
   - Fixed Point Theorems
 relations: []
 review: draft
-solved: false
 ---
 
 Show that there are no retractions $r: X \to A$ in the following cases:

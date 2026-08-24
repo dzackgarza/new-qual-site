@@ -12,7 +12,7 @@ classification:
   - Barycentric Subdivision
 relations: []
 review: draft
-solved: false
 ---
 
-Show that the second barycentric subdivision of a $\Delta$-complex is a simplicial complex. Namely, show that the first barycentric subdivision produces a $\Delta$-complex with the property that each simplex has all its vertices distinct, then show that for a $\Delta$-complex with this property, barycentric subdivision produces a simplicial complex.
+Show that the second barycentric subdivision of a $\Delta$-complex is a simplicial complex.
+Namely, show that the first barycentric subdivision produces a $\Delta$-complex with the property that each simplex has all its vertices distinct, then show that for a $\Delta$-complex with this property, barycentric subdivision produces a simplicial complex.

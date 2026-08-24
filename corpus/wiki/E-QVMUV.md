@@ -12,7 +12,6 @@ classification:
   - Convergence Tests
 relations: []
 review: draft
-solved: false
 ---
 
 :::{.exercise title="Cauchy integral formula for coefficients"}

@@ -12,7 +12,6 @@ classification:
   - Riemann Surfaces
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Automorphisms of $\CP^1$"}

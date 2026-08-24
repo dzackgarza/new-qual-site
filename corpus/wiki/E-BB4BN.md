@@ -10,7 +10,6 @@ classification:
   - Homeomorphisms
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §18.5"}

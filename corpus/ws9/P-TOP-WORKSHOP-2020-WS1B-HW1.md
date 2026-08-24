@@ -10,7 +10,6 @@ classification:
   - Point-Set Topology
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="?"}

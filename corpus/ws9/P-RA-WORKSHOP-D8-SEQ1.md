@@ -10,7 +10,6 @@ classification:
   - Series of Functions
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.problem title="?"}

@@ -13,7 +13,6 @@ classification:
   - Algebraic Geometry
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

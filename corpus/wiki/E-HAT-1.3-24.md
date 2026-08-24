@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Given a covering space action of a group $G$ on a path-connected, locally path-connected space $X$, then each subgroup $H \subset G$ determines a composition of covering spaces $X \to X/H \to X/G$.

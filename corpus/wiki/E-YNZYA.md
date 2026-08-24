@@ -11,7 +11,6 @@ classification:
   - Poles
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Residue of $1/z^2 + 1$"}

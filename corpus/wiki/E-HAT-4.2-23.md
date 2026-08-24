@@ -10,7 +10,6 @@ classification:
   - Higher Homotopy Groups
 relations: []
 review: draft
-solved: false
 ---
 
 Extend the Hurewicz theorem by showing that if $X$ is an $(n-1)$-connected CW complex, then the Hurewicz homomorphism $h: \pi_{n+1}(X) \to H_{n+1}(X)$ is surjective when $n > 1$, and when $n = 1$ show there is an isomorphism $H_2(X) / h\bigl(\pi_2(X)\bigr) \approx H_2\bigl(K(\pi_1(X), 1)\bigr)$.

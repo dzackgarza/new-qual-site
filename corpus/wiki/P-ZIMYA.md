@@ -11,7 +11,6 @@ classification:
   - Field Extensions
 relations: []
 review: draft
-solved: true
 ---
 
 What is an algebraic closure of a field?

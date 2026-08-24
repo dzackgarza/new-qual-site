@@ -12,7 +12,6 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.problem title="Hungerford 7.2.2"}

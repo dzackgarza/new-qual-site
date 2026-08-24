@@ -12,7 +12,6 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Power series are continuous"}

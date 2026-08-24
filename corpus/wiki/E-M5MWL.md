@@ -13,7 +13,6 @@ classification:
   - Cauchy Integral Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Primitive in the complement of a branch cut"}

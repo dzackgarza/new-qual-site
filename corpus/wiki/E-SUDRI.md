@@ -13,7 +13,6 @@ classification:
   - Casorati-Weierstrass
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="?"}

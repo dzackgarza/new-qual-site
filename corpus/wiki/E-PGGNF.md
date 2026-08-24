@@ -11,7 +11,6 @@ classification:
   - Fractional Linear Transformations
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Half disc to full disc"}

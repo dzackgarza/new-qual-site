@@ -11,7 +11,6 @@ classification:
   - Continuous Functions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §31.5"}

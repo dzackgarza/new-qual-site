@@ -10,11 +10,11 @@ classification:
   - Field Extensions
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000 fall 2006 final B"}
-Assume $k$ is a subfield of a field $E$, and $c$ an element of $E$. Define what is meant by:
+Assume $k$ is a subfield of a field $E$, and $c$ an element of $E$.
+Define what is meant by:
 
 (i) $c$ is algebraic over $k$;
 

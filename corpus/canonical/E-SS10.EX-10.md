@@ -10,7 +10,6 @@ classification:
   topics: ['Theta Functions', 'Modular Forms', 'Partitions']
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

@@ -13,7 +13,6 @@ classification:
   - Liouville's Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Poles of elliptic functions"}

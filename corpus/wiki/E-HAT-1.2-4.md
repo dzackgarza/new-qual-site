@@ -11,7 +11,7 @@ classification:
   - Van Kampen
 relations: []
 review: draft
-solved: false
 ---
 
-Let $X \subset \mathbb{R}^3$ be the union of $n$ lines through the origin. Compute $\pi_1(\mathbb{R}^3 - X)$.
+Let $X \subset \mathbb{R}^3$ be the union of $n$ lines through the origin.
+Compute $\pi_1(\mathbb{R}^3 - X)$.

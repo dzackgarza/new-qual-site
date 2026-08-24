@@ -13,7 +13,6 @@ classification:
   - Linear Algebra
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

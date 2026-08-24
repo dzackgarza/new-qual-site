@@ -13,7 +13,6 @@ classification:
   - Absolute Continuity
 relations: []
 review: draft
-solved: true
 ---
 
 Let $\mathcal B$ denote the set of all Borel subsets of $\RR$ and $\mu : \mathcal B \to [0, \infty)$ denote a finite Borel measure on $\RR$.

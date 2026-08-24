@@ -11,7 +11,6 @@ classification:
   - Antipodal Map
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

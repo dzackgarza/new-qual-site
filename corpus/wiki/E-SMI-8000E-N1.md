@@ -12,7 +12,6 @@ classification:
   - Integral Domains
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Smith 8000e normality 1"}

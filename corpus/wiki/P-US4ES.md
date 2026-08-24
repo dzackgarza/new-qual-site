@@ -12,7 +12,6 @@ classification:
   - Metric Spaces
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

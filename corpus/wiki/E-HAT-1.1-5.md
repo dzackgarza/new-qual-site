@@ -11,7 +11,6 @@ classification:
   - Simply Connected
 relations: []
 review: draft
-solved: false
 ---
 
 Show that for a space $X$, the following three conditions are equivalent:
@@ -22,4 +21,5 @@ Show that for a space $X$, the following three conditions are equivalent:
 
 (c) $\pi_1(X, x_0) = 0$ for all $x_0 \in X$.
 
-Deduce that a space $X$ is simply-connected iff all maps $S^1 \to X$ are homotopic. [In this problem, 'homotopic' means 'homotopic without regard to basepoints'.]
+Deduce that a space $X$ is simply-connected iff all maps $S^1 \to X$ are homotopic.
+[In this problem, 'homotopic' means 'homotopic without regard to basepoints'.]

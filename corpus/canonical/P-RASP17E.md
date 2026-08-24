@@ -12,7 +12,6 @@ classification:
   - Density Arguments
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Polynomials
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="?"}

@@ -12,7 +12,9 @@ classification:
   - Van Kampen
 relations: []
 review: draft
-solved: false
 ---
 
-The space $Y$ in the preceding exercise can be obtained from a disk with two holes by identifying its three boundary circles. There are only two essentially different ways of identifying the three boundary circles. Show that the other way yields a space $Z$ with $\pi_1(Z)$ not isomorphic to $\pi_1(Y)$. [Abelianize the fundamental groups to show they are not isomorphic.]
+The space $Y$ in the preceding exercise can be obtained from a disk with two holes by identifying its three boundary circles.
+There are only two essentially different ways of identifying the three boundary circles.
+Show that the other way yields a space $Z$ with $\pi_1(Z)$ not isomorphic to $\pi_1(Y)$.
+[Abelianize the fundamental groups to show they are not isomorphic.]

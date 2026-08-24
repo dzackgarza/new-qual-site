@@ -119,7 +119,7 @@ def test_compilation_sections_are_the_listing(tmp_path: Path) -> None:
     from qualc.model import parse_card
 
     work = fixture_repo(tmp_path)
-    (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP").replace("solved: true", "solved: false"))
+    (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
     card = work / "corpus" / "SRC-NEILNOTES.md"
     card.write_text(
         card.read_text().replace(
@@ -250,7 +250,7 @@ def test_collection_page_is_the_problems_list(tmp_path: Path) -> None:
     An empty list publishes empty. Filling it does not invent locators.
     """
     work = fixture_repo(tmp_path)
-    (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP").replace("solved: true", "solved: false"))
+    (work / "corpus" / "P-INDEXP.md").write_text((work / "corpus" / "PRB-INDEXP.md").read_text().replace("PRB-INDEXP", "P-INDEXP"))
     exam = work / "corpus" / "SRC-UGA-FIX.md"
     exam.write_text(
         exam.read_text().replace(

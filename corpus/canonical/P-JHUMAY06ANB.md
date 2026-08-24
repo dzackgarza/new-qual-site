@@ -2,13 +2,12 @@
 schema: qual/card@1
 id: P-JHUMAY06ANB
 kind: problem
-title: "2. How many zeros does the polynomial $\{ | z | < 1 \} \stackrel { . } { : }\..."
+title: '2. How many zeros does the polynomial $\{ | z | < 1 \} \stackrel { . } { : }\...'
 classification:
   areas:
   - complex-analysis
   topics:
   - complex-analysis-topics
-solved: false
 relations: []
 review: draft
 ---

@@ -12,7 +12,6 @@ classification:
   - Cell Complexes
 relations: []
 review: draft
-solved: true
 ---
 
 Let $X$ be $T^2$ with a 2-cell attached to the interior along a longitude.

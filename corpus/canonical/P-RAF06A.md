@@ -14,7 +14,6 @@ classification:
   - Banach-Alaoglu Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

@@ -12,7 +12,6 @@ classification:
   - Small Tails
 relations: []
 review: draft
-solved: true
 ---
 
 ::: exercise

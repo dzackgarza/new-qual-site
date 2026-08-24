@@ -10,7 +10,6 @@ classification:
   - Baire Spaces
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §48.4"}

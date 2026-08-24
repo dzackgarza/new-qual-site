@@ -11,7 +11,6 @@ classification:
   - Singular Values
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

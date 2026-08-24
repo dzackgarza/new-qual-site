@@ -10,7 +10,6 @@ classification:
   - Multilinear Algebra
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

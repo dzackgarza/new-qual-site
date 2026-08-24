@@ -11,7 +11,6 @@ classification:
   - Hermitian Matrices
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

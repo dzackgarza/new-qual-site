@@ -10,7 +10,6 @@ classification:
   - Real Analysis
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

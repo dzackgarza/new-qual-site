@@ -11,7 +11,6 @@ classification:
   - Hopf Fibration
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

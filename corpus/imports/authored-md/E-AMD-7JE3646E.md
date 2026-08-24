@@ -12,7 +12,6 @@ classification:
   - Characteristic
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise}

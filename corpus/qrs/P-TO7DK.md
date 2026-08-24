@@ -13,7 +13,6 @@ classification:
   - Separability
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

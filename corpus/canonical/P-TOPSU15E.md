@@ -12,7 +12,6 @@ classification:
   - Fixed Point Theory
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

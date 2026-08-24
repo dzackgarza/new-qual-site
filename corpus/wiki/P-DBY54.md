@@ -12,7 +12,6 @@ classification:
   - Zorn's Lemma
 relations: []
 review: draft
-solved: true
 ---
 
 Let $R$ be a commutative ring, and $S\subset R$ be a nonempty subset that does not contain 0 such that for all $x, y\in S$ we have $xy\in S$.

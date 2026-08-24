@@ -10,7 +10,6 @@ classification:
   - Winding Number
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise title="Munkres §66.1"}

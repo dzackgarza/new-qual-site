@@ -11,7 +11,6 @@ classification:
   - Retractions
 relations: []
 review: draft
-solved: false
 ---
 
 Show that a connected graph retracts onto any connected subgraph.

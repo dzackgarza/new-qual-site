@@ -12,7 +12,6 @@ classification:
   - Mapping Cylinder
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

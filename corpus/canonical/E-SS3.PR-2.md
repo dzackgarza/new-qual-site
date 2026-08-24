@@ -11,7 +11,6 @@ classification:
   - Mean Value Property
 relations: []
 review: draft
-solved: false
 ---
 
 ::: exercise

@@ -13,7 +13,6 @@ classification:
   - Riesz-Markov Theorem
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

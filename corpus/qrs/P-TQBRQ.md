@@ -11,7 +11,6 @@ classification:
   - Schwarz Reflection
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

@@ -10,7 +10,6 @@ classification:
   - Cohomology
 relations: []
 review: draft
-solved: false
 ---
 
 Compute the groups $H_i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ and $H^i(\mathbb{RP}^m \times \mathbb{RP}^n; G)$ for $G = \mathbb{Z}$ and $\mathbb{Z}_2$ via the cellular chain and cochain complexes.

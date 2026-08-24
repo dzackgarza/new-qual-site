@@ -10,7 +10,6 @@ classification:
   - Fundamental Group
 relations: []
 review: draft
-solved: false
 ---
 
 Show that if a group $G$ acts freely and properly discontinuously on a Hausdorff space $X$, then the action is a covering space action.

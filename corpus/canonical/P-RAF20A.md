@@ -14,7 +14,6 @@ classification:
   - Schwartz Space
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

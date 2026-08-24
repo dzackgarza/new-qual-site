@@ -12,7 +12,6 @@ classification:
   - Green's Theorem
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

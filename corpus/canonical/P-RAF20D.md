@@ -12,7 +12,6 @@ classification:
   - Essential Supremum
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

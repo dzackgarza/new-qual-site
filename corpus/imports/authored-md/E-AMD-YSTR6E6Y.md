@@ -13,7 +13,6 @@ classification:
   - Semidirect Products
 relations: []
 review: draft
-solved: false
 ---
 
 ::: {.exercise}

@@ -12,7 +12,6 @@ classification:
   - Five Lemma
 relations: []
 review: draft
-solved: false
 ---
 
 In each of the following commutative diagrams assume that all maps but one are isomorphisms. Show that the remaining map must be an isomorphism as well.

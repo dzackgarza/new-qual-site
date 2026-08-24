@@ -12,7 +12,6 @@ classification:
   - Surfaces
 relations: []
 review: draft
-solved: false
 ---
 
 Compute the simplicial homology groups of the Klein bottle using the $\Delta$-complex structure described at the beginning of this section.

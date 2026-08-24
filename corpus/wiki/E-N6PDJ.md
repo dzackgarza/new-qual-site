@@ -12,7 +12,6 @@ classification:
   - Casorati-Weierstrass
 relations: []
 review: draft
-solved: true
 ---
 
 ::: {.exercise title="Nonconstant entire functions have dense image"}

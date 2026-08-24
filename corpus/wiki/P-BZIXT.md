@@ -11,7 +11,6 @@ classification:
   - Functions and Relations
 relations: []
 review: draft
-solved: true
 ---
 
 ::: problem

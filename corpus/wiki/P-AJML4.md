@@ -11,7 +11,6 @@ classification:
   - Semisimplicity
 relations: []
 review: draft
-solved: false
 ---
 
 ::: problem

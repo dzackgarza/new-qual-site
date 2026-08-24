@@ -12,7 +12,6 @@ classification:
   - Compactness
 relations: []
 review: draft
-solved: true
 ---
 
 :::{.exercise title="Unique fixed points"}
