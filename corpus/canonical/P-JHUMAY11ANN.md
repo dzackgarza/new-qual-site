@@ -7,7 +7,8 @@ classification:
   areas:
   - complex-analysis
   topics:
-  - complex-analysis-topics
+  - Zeros of Holomorphic Functions
+  - Identity Theorem
 relations: []
 review: draft
 ---
