@@ -20,5 +20,6 @@ $\mathcal{F} = \{f_1, f_2, \ldots\}$ is uniformly integrable iff for every $f \i
 
 (b) Give an example where (a) fails for $p = 1$.
 
-(c) Let $f_n, f \in L^1(\mu)$ and assume that $\mathcal{F} = \{f_1, f_2, \ldots\}$ is uniformly integrable. If $f_n \to f$ in measure, prove that $f_n \to f$ in $L^1(\mu)$.
+(c) Let $f_n, f \in L^1(\mu)$ and assume that $\mathcal{F} = \{f_1, f_2, \ldots\}$ is uniformly integrable.
+If $f_n \to f$ in measure, prove that $f_n \to f$ in $L^1(\mu)$.
 :::

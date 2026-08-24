@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $K$ and $L$ be finite fields with $K \subseteq L$. Prove that $L$ is Galois over $K$ and that $\operatorname{Gal}(L/K)$ is cyclic.
+Let $K$ and $L$ be finite fields with $K \subseteq L$.
+Prove that $L$ is Galois over $K$ and that $\operatorname{Gal}(L/K)$ is cyclic.
 :::

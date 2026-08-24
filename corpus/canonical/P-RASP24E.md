@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a set equipped with the discrete topology, and let $X^* = X \cup \{\infty\}$ be the one-point compactification of $X$. Let $\mu$ be a Radon measure on $X^*$ and define the support of $\mu$ as
+Let $X$ be a set equipped with the discrete topology, and let $X^* = X \cup \{\infty\}$ be the one-point compactification of $X$.
+Let $\mu$ be a Radon measure on $X^*$ and define the support of $\mu$ as
 $$
 \operatorname{supp}(\mu) = \bigcap \{N : N \subseteq X^* \text{ is closed and } \mu(N^c) = 0\}.
 $$

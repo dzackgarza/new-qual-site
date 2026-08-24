@@ -14,7 +14,9 @@ solved: false
 ---
 
 ::: problem
-Let $(f_n)$ be a sequence of holomorphic functions in a domain $D$. Suppose that $f_n \to f$ uniformly on each compact subset of $D$. Show that
+Let $(f_n)$ be a sequence of holomorphic functions in a domain $D$.
+Suppose that $f_n \to f$ uniformly on each compact subset of $D$.
+Show that
 
 (a) $f$ is holomorphic on $D$.
 

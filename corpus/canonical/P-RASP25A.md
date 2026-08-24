@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $f \in L^1([0,1])$. Prove that the following are equivalent:
+Let $f \in L^1([0,1])$.
+Prove that the following are equivalent:
 
 (1) $f \in L^2([0,1])$.
 

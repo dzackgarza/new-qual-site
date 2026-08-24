@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Let $A, B \subseteq \mathbb{R}$ be Lebesgue measurable with $m(B) = 0$. Prove that either $m(A) = 0$ or $\{a + b : a \in A, b \in B\} \subseteq \mathbb{R} \setminus \mathbb{Q}$.
+Let $A, B \subseteq \mathbb{R}$ be Lebesgue measurable with $m(B) = 0$.
+Prove that either $m(A) = 0$ or $\{a + b : a \in A, b \in B\} \subseteq \mathbb{R} \setminus \mathbb{Q}$.
 :::

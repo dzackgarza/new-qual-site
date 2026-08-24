@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $f \in L^1([0,1])$. Show that
+Let $f \in L^1([0,1])$.
+Show that
 
 (a) The limit $\lim_{p \to 0^+} \|f\|_p$ exists.
 

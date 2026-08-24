@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $E$ be the Banach space $C([0,1])$ endowed with the uniform norm. Let $(f_h)_{h \in \mathbb{N}} \subset E$ be a sequence and $f \in E$.
+Let $E$ be the Banach space $C([0,1])$ endowed with the uniform norm.
+Let $(f_h)_{h \in \mathbb{N}} \subset E$ be a sequence and $f \in E$.
 
 (1) Prove that if $f_h$ converges weakly to $f$ then there is $M > 0$ such that $|f_h(x)| \leq M$ for every $x \in [0,1]$ and $h \in \mathbb{N}$.
 

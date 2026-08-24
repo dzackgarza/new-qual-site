@@ -14,5 +14,6 @@ solved: false
 ---
 
 ::: problem
-Prove that any square matrix is conjugate to its transpose matrix. (You may prove it over $\mathbb{C}$.)
+Prove that any square matrix is conjugate to its transpose matrix.
+(You may prove it over $\mathbb{C}$.)
 :::

@@ -15,7 +15,8 @@ relations: []
 ---
 
 ::: problem
-Let $I = [0,1]$ and for $n \in \mathbb{N}$, consider $0 \leq j \leq 2^n - 1$. Define
+Let $I = [0,1]$ and for $n \in \mathbb{N}$, consider $0 \leq j \leq 2^n - 1$.
+Define
 
 $$I_{nj} = [j 2^{-n}, (j+1) 2^{-n}].$$
 

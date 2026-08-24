@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $(\Omega, \mathcal{M}, \mu)$ be a measure space. A sequence $(f_n)_n \subset L^1(\Omega, \mu)$ is equi-integrable if:
+Let $(\Omega, \mathcal{M}, \mu)$ be a measure space.
+A sequence $(f_n)_n \subset L^1(\Omega, \mu)$ is equi-integrable if:
 
 (a) for every $\epsilon > 0$ there is a $\delta > 0$ such that $\sup_n \int_E |f_n|\,d\mu < \epsilon$ for all $E \in \mathcal{M}$ with $\mu(E) < \delta$;
 

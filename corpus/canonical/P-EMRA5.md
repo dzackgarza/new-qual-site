@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $f$ be a continuous function on $[0,1]$. Show that the following statements are equivalent:
+Let $f$ be a continuous function on $[0,1]$.
+Show that the following statements are equivalent:
 
 (a) $f$ is absolutely continuous.
 

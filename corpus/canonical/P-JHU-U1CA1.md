@@ -15,5 +15,6 @@ relations: []
 ---
 
 ::: problem
-Suppose that $f, g$ are entire functions with $|f(z)| \leq |g(z)|$ for all $z \in \mathbb{C}$. Prove that there is a constant $c \in \mathbb{C}$ such that $f = cg$.
+Suppose that $f, g$ are entire functions with $|f(z)| \leq |g(z)|$ for all $z \in \mathbb{C}$.
+Prove that there is a constant $c \in \mathbb{C}$ such that $f = cg$.
 :::

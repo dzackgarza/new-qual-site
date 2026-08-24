@@ -14,5 +14,7 @@ solved: false
 ---
 
 ::: problem
-Let $(\xi_m)_{m \geq 1}$ be a sequence of vectors in a Hilbert space $H$. Assume that $\|\xi_m\| \leq 1$ and $\lim_{n \to \infty} \langle \xi_n, \xi_m \rangle = 0$ for every $m \geq 1$. Prove that $\lim_{n \to \infty} \langle \xi_n, \xi \rangle = 0$ for every $\xi \in H$.
+Let $(\xi_m)_{m \geq 1}$ be a sequence of vectors in a Hilbert space $H$.
+Assume that $\|\xi_m\| \leq 1$ and $\lim_{n \to \infty} \langle \xi_n, \xi_m \rangle = 0$ for every $m \geq 1$.
+Prove that $\lim_{n \to \infty} \langle \xi_n, \xi \rangle = 0$ for every $\xi \in H$.
 :::

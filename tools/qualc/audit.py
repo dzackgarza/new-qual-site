@@ -5,9 +5,9 @@ nothing about the corpus *as a corpus* -- whether two cards hold the same body,
 whether a card can be reached by a reader, whether two source cards claim one
 sitting. Those are the invariants this measures.
 
-    uv run python tools/audit.py            # human report, exit 1 on any violation
-    uv run python tools/audit.py --json     # machine report
-    uv run python tools/audit.py --only orphans
+    uv run python -m qualc.audit            # human report, exit 1 on any violation
+    uv run python -m qualc.audit --json     # machine report
+    uv run python -m qualc.audit --only orphans
 """
 
 from __future__ import annotations
@@ -20,6 +20,7 @@ from pathlib import Path
 from typing import cast
 
 import yaml
+
 from qualc.cli import load
 from qualc.model import (
     COLLECTION_ID_RE,
@@ -73,14 +74,23 @@ def check_duplicate_bodies(parsed: list[ParsedCard]) -> Check:
         if digest not in by_digest:
             by_digest[digest] = []
         by_digest[digest].append(item.card.id)
-    violations = [f"{len(ids)} cards share one body: {', '.join(sorted(ids)[:6])}" + ("..." if len(ids) > 6 else "") for ids in by_digest.values() if len(ids) > 1]
+    violations = [
+        f"{len(ids)} cards share one body: {', '.join(sorted(ids)[:6])}"
+        + ("..." if len(ids) > 6 else "")
+        for ids in by_digest.values()
+        if len(ids) > 1
+    ]
     return Check("duplicate-bodies", sorted(violations))
 
 
 def check_empty_areas(parsed: list[ParsedCard]) -> Check:
     return Check(
         "empty-areas",
-        sorted(f"{item.card.id}: areas: []" for item in parsed if not item.card.classification.areas),
+        sorted(
+            f"{item.card.id}: areas: []"
+            for item in parsed
+            if not item.card.classification.areas
+        ),
     )
 
 
@@ -103,7 +113,11 @@ def check_one_sitting_one_source(parsed: list[ParsedCard]) -> Check:
         seen[key].append(card.id)
     return Check(
         "duplicate-sittings",
-        sorted(f"{key}: {', '.join(sorted(ids))}" for key, ids in seen.items() if len(ids) > 1),
+        sorted(
+            f"{key}: {', '.join(sorted(ids))}"
+            for key, ids in seen.items()
+            if len(ids) > 1
+        ),
     )
 
 
@@ -124,7 +138,9 @@ def _manifest_ids(root: Path = REPO) -> set[str]:
     return ids
 
 
-def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO) -> set[str]:
+def orphan_ids(
+    parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path = REPO
+) -> set[str]:
     """A card is reachable when a page or manifest names it, or when it hangs off
     a card that is. The emitter renders hints and solutions on their
     problem's route, so a reader does reach them -- but only through it.
@@ -170,11 +186,19 @@ def orphan_ids(parsed: list[ParsedCard], wiki_pages: list[WikiPage], root: Path 
                     listed = list(item.card.source.problems)
                 case CompilationSource():
                     if item.card.source.sections:
-                        listed = [entry for section in item.card.source.sections for entry in section.problems]
+                        listed = [
+                            entry
+                            for section in item.card.source.sections
+                            for entry in section.problems
+                        ]
                     else:
                         listed = list(item.card.source.problems)
                 case TextbookSource():
-                    listed = [pid for section in item.card.source.sections for pid in section.problems]
+                    listed = [
+                        pid
+                        for section in item.card.source.sections
+                        for pid in section.problems
+                    ]
             if listed:
                 edges.setdefault(item.card.id, set()).update(listed)
 
@@ -218,13 +242,19 @@ def check_collection_lists_problems(parsed: list[ParsedCard]) -> Check:
                 check.violations.append(f"{card.id}: exam collection lists no problems")
         elif isinstance(card.source, TextbookSource):
             if not card.source.sections:
-                check.violations.append(f"{card.id}: textbook collection has no sections")
+                check.violations.append(
+                    f"{card.id}: textbook collection has no sections"
+                )
         elif isinstance(card.source, HomeworkSource):
             if not card.source.problems:
-                check.violations.append(f"{card.id}: homework collection lists no problems")
+                check.violations.append(
+                    f"{card.id}: homework collection lists no problems"
+                )
         elif isinstance(card.source, CompilationSource):
             if not card.source.problems and not card.source.sections:
-                check.violations.append(f"{card.id}: compilation collection lists no problems")
+                check.violations.append(
+                    f"{card.id}: compilation collection lists no problems"
+                )
     return check
 
 
@@ -261,10 +291,14 @@ def check_collection_problem_references(parsed: list[ParsedCard]) -> Check:
                 check.violations.append(f"{card.id}: lists unknown id {entry}")
             elif PROBLEM_ID_RE.match(entry):
                 if ids[entry] not in ("problem", "exercise"):
-                    check.violations.append(f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'problem' or 'exercise'")
+                    check.violations.append(
+                        f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'problem' or 'exercise'"
+                    )
             elif COLLECTION_ID_RE.match(entry):
                 if ids[entry] != "collection":
-                    check.violations.append(f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'collection'")
+                    check.violations.append(
+                        f"{card.id}: lists {entry} which is kind {ids[entry]!r}, not 'collection'"
+                    )
     return check
 
 
@@ -285,7 +319,9 @@ def run(names: list[str]) -> list[Check]:
         return [
             Check(
                 "qualc-check",
-                [f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"],
+                [
+                    f"corpus does not validate: {len(errors)} error(s); first: {errors[0]}"
+                ],
             )
         ]
     checks: list[Check] = []
@@ -299,9 +335,13 @@ def run(names: list[str]) -> list[Check]:
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="audit")
-    ap.add_argument("--only", action="append", choices=ALL, help="run one check (repeatable)")
+    ap.add_argument(
+        "--only", action="append", choices=ALL, help="run one check (repeatable)"
+    )
     ap.add_argument("--json", action="store_true")
-    ap.add_argument("--full", action="store_true", help="print every violation, not the first 20")
+    ap.add_argument(
+        "--full", action="store_true", help="print every violation, not the first 20"
+    )
     args = ap.parse_args(argv)
 
     checks = run(args.only or ALL)

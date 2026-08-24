@@ -14,5 +14,7 @@ relations: []
 ---
 
 ::: problem
-Let $f$ and $g$ be functions holomorphic defined on a domain $U \subseteq \mathbb{C}$. Set $\varphi(z) = |f(z)| + |g(z)|$ for $z \in U$. If $\varphi$ assumes a maximum value on $U$, show that both $f$ and $g$ are constants on $U$.
+Let $f$ and $g$ be functions holomorphic defined on a domain $U \subseteq \mathbb{C}$.
+Set $\varphi(z) = |f(z)| + |g(z)|$ for $z \in U$.
+If $\varphi$ assumes a maximum value on $U$, show that both $f$ and $g$ are constants on $U$.
 :::

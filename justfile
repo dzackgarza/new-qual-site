@@ -21,7 +21,7 @@ doctor *args:
 
 # List collections with empty provenance, unresolved hrefs, shared hrefs, markdown hrefs, image hrefs, forbidden hrefs, and collection areas with no problem cards (not a gate)
 provenance *args:
-    uv run python tools/provenance_hrefs.py {{ args }}
+    uv run python -m qualc.provenance_hrefs {{ args }}
 
 # Compile the corpus: catalog.sqlite + QMD and static HTML projections
 build:
@@ -44,7 +44,7 @@ query sql: build
 
 # Report problem/exercise cards missing metadata (title, areas, topics, body)
 complete *args:
-    uv run python tools/card_completeness.py {{ args }}
+    uv run python -m qualc.card_completeness {{ args }}
 
 # Regenerate BACKLOG.md unless already current for HEAD (runs before every push)
 backlog:

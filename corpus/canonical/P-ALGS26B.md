@@ -14,14 +14,16 @@ solved: false
 ---
 
 ::: problem
-Suppose $G$ is a finite group and $p$ is a prime divisor of $|G|$. Let $\operatorname{Syl}_p(G)$ denote the set of all Sylow $p$-subgroups of $G$, and
+Suppose $G$ is a finite group and $p$ is a prime divisor of $|G|$.
+Let $\operatorname{Syl}_p(G)$ denote the set of all Sylow $p$-subgroups of $G$, and
 $$
 O_p(G) := \bigcap_{P \in \operatorname{Syl}_p(G)} P.
 $$
 
 (a) Prove that $O_p(G)$ is the largest normal $p$-subgroup of $G$.
 
-(b) Suppose $H$ is a subgroup of $G$. Prove that there exists a function $f : \operatorname{Syl}_p(H) \to \operatorname{Syl}_p(G)$ such that $f(P) \cap H = P$.
+(b) Suppose $H$ is a subgroup of $G$.
+Prove that there exists a function $f : \operatorname{Syl}_p(H) \to \operatorname{Syl}_p(G)$ such that $f(P) \cap H = P$.
 
 (c) Prove that if $|\operatorname{Syl}_p(H)| = |\operatorname{Syl}_p(G)|$, then $O_p(H) = O_p(G) \cap H$.
 

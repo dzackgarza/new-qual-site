@@ -14,7 +14,10 @@ solved: false
 ---
 
 ::: problem
-(a) Let $G$ be a group of order $n$. Suppose that for every divisor $d$ of $n$, $G$ contains at most one subgroup of order $d$. Show that $G$ is cyclic.
+(a) Let $G$ be a group of order $n$.
+Suppose that for every divisor $d$ of $n$, $G$ contains at most one subgroup of order $d$.
+Show that $G$ is cyclic.
 
-(b) Let $F$ be a field. Show that every finite subgroup of the group of units $F^\times$ is cyclic.
+(b) Let $F$ be a field.
+Show that every finite subgroup of the group of units $F^\times$ is cyclic.
 :::

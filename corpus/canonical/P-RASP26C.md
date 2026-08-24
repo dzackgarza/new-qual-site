@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $X$ be a Banach space with open unit ball $B = \{x \in X : \|x\| < 1\}$. Let $u \in X$ and $\mathcal{M} \subsetneq X$ be a proper vector subspace such that $X = \{\lambda u + y : \lambda \in \mathbb{C},\; y \in \mathcal{M}\}$.
+Let $X$ be a Banach space with open unit ball $B = \{x \in X : \|x\| < 1\}$.
+Let $u \in X$ and $\mathcal{M} \subsetneq X$ be a proper vector subspace such that $X = \{\lambda u + y : \lambda \in \mathbb{C},\; y \in \mathcal{M}\}$.
 
 (1) Prove that $B + \mathcal{M} = X$ if and only if $\mathcal{M}$ is not closed.
 

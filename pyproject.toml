@@ -20,7 +20,7 @@ dev = ["pytest>=8", "types-PyYAML>=6"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-# `tools/` is not a package. Tests that import `audit` or `sync_macros` need
-# that directory on the path; pytest's `pythonpath` is the way to say so -- a
+# `tools/` is not a package. Tests that import `sync_macros` need that
+# directory on the path; pytest's `pythonpath` is the way to say so -- a
 # `sys.path.insert` would need an import below it and trip E402.
 pythonpath = ["tools"]

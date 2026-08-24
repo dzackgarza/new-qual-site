@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $\mathcal{M}([0,1])$ denote the space of all complex Radon measures on $[0,1]$, and $\mathcal{P}([0,1])$ the subset of probability measures. Let $f : [0,1] \times [0,1] \to \mathbb{R}$ be a continuous function, and let $U$ be the set of all $\mu \in \mathcal{P}([0,1])$ satisfying
+Let $\mathcal{M}([0,1])$ denote the space of all complex Radon measures on $[0,1]$, and $\mathcal{P}([0,1])$ the subset of probability measures.
+Let $f : [0,1] \times [0,1] \to \mathbb{R}$ be a continuous function, and let $U$ be the set of all $\mu \in \mathcal{P}([0,1])$ satisfying
 $$
 \forall y \in [0,1] \qquad \left|\int_0^1 f(x, y)\,d\mu(x)\right| < 1.
 $$

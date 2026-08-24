@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Fix a field $F$, a separable polynomial $f \in F[x]$ of degree $n \geq 3$, and a splitting field $L$ for $f$. Prove that if $[L:F] = n!$ then:
+Fix a field $F$, a separable polynomial $f \in F[x]$ of degree $n \geq 3$, and a splitting field $L$ for $f$.
+Prove that if $[L:F] = n!$ then:
 
 (a) $f$ is irreducible.
 

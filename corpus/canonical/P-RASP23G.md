@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $\Gamma(z)$ be the gamma function defined by $\Gamma(z) = \int_0^\infty e^{-t} t^{z-1}\,dt$ for $z$ with $\operatorname{Re}(z) > 0$. For a compact support function $\phi$, prove that for any $0 < \alpha < n$,
+Let $\Gamma(z)$ be the gamma function defined by $\Gamma(z) = \int_0^\infty e^{-t} t^{z-1}\,dt$ for $z$ with $\operatorname{Re}(z) > 0$.
+For a compact support function $\phi$, prove that for any $0 < \alpha < n$,
 $$
 \frac{\Gamma((n-\alpha)/2)}{\pi^{(n-\alpha)/2}} \int_{\mathbb{R}^n} |x|^{\alpha-n} \hat{\phi}(x)\,dx = \frac{\Gamma(\alpha/2)}{\pi^{\alpha/2}} \int_{\mathbb{R}^n} |\xi|^{-\alpha} \phi(\xi)\,d\xi.
 $$

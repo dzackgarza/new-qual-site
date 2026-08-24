@@ -14,7 +14,8 @@ solved: false
 ---
 
 ::: problem
-Let $\ell^\infty$ denote the vector space of sequences of complex numbers $x = (x_1, x_2, \ldots)$ with $\|x\|_\infty := \sup_n |x_n| < \infty$. Define $\phi_n(x) := \frac{1}{n} \sum_{k=1}^{n} x_k$.
+Let $\ell^\infty$ denote the vector space of sequences of complex numbers $x = (x_1, x_2, \ldots)$ with $\|x\|_\infty := \sup_n |x_n| < \infty$.
+Define $\phi_n(x) := \frac{1}{n} \sum_{k=1}^{n} x_k$.
 
 Prove that
 

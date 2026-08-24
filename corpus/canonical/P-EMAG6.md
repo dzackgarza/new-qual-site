@@ -18,5 +18,6 @@ Let $G$ be a finite group.
 
 (a) Prove that if $H < G$ is a proper subgroup, then $G$ is not the union of conjugates of $H$.
 
-(b) Suppose that $G$ acts transitively on a set $X$ with $|X| > 1$. Prove that there exists an element of $G$ with no fixed points in $X$.
+(b) Suppose that $G$ acts transitively on a set $X$ with $|X| > 1$.
+Prove that there exists an element of $G$ with no fixed points in $X$.
 :::
