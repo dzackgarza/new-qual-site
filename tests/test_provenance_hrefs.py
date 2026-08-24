@@ -17,6 +17,7 @@ def _collection(
     *,
     areas: list[str] | None = None,
     source_area: str | None = None,
+    source_kind: str | None = None,
 ) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     lines = [
@@ -34,14 +35,15 @@ def _collection(
     if provenance is not None:
         lines.append("provenance:")
         lines.extend(f"  - {href}" for href in provenance)
-    if source_area is not None:
+    if source_kind is not None or source_area is not None:
         lines.append("source:")
-        lines.append("  source_kind: university-exam")
-        lines.append("  institution: test")
-        lines.append(f"  area: {source_area}")
-        lines.append("  problems: []")
-        lines.append("  date:")
-        lines.append("    kind: unknown")
+        lines.append(f"  source_kind: {source_kind or 'university-exam'}")
+        if source_area is not None:
+            lines.append("  institution: test")
+            lines.append(f"  area: {source_area}")
+            lines.append("  problems: []")
+            lines.append("  date:")
+            lines.append("    kind: unknown")
     lines.extend(["---", ""])
     path.write_text("\n".join(lines))
 
@@ -103,6 +105,13 @@ def test_empty_provenance_is_a_missing_or_empty_list(tmp_path: Path) -> None:
         ["assets/attachments/paper.pdf"],
     )
     assert _findings(tmp_path, "empty-provenance") == ["SRC-EMPTY", "SRC-MISSING"]
+
+
+def test_homework_collections_are_skipped(tmp_path: Path) -> None:
+    """Homework collections are course-authored materials; empty provenance is expected."""
+    _collection(tmp_path / "corpus" / "SRC-HW.md", "SRC-HW", [], source_kind="homework")
+    _collection(tmp_path / "corpus" / "SRC-EXAM.md", "SRC-EXAM", [], source_kind="university-exam")
+    assert _findings(tmp_path, "empty-provenance") == ["SRC-EXAM"]
 
 
 def test_dead_path_is_not_a_file_under_the_repo(tmp_path: Path) -> None:

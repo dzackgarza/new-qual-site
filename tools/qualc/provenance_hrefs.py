@@ -70,6 +70,7 @@ class CollectionProvenance:
     card_id: str
     hrefs: list[str]
     areas: tuple[str, ...] = ()
+    source_kind: str = ""
 
 
 IMAGE_SUFFIXES = frozenset({".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".tif", ".tiff"})
@@ -174,7 +175,9 @@ def load_corpus_provenance(
         hrefs = _hrefs(meta.get("provenance"))
         if hrefs is None:
             continue
-        collections.append(CollectionProvenance(_card_id(meta, path), hrefs, _areas(meta)))
+        source = meta.get("source")
+        source_kind = source.get("source_kind", "") if isinstance(source, dict) else ""
+        collections.append(CollectionProvenance(_card_id(meta, path), hrefs, _areas(meta), source_kind))
     return collections, problem_areas
 
 
@@ -221,11 +224,15 @@ def _http_live(status: int | str) -> bool:
 
 
 def check_empty_provenance(collections: list[CollectionProvenance]) -> Check:
-    findings = [collection.card_id for collection in collections if not collection.hrefs]
+    # Homework collections are course-authored materials with no external source;
+    # empty provenance is expected and correct for them.
+    SKIP_KINDS = frozenset({"homework"})
+    candidates = [c for c in collections if c.source_kind not in SKIP_KINDS]
+    findings = [collection.card_id for collection in candidates if not collection.hrefs]
     return Check(
         "empty-provenance",
         sorted(findings),
-        measured=len(collections),
+        measured=len(candidates),
         unit="collections",
     )
 
