@@ -5,7 +5,8 @@ classification:
   topics: []
 id: SRC-EMORY-RA
 kind: collection
-provenance: []
+provenance:
+- assets/attachments/Emory_Quals_Santiago_Arango.pdf
 relations: []
 review: draft
 schema: qual/card@1
