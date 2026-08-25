@@ -145,7 +145,7 @@ source:
 
 ::: remark
 UNL Math 825/826 qual-prep packet.
-Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying exams (those sittings are their own collections).
+Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying exams (those exams are their own collections).
 Days 2–8 are topic sheets.
 
 UNL Math 825/826 qual-prep packet.

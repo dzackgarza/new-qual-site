@@ -31,6 +31,6 @@ source:
 ---
 
 ::: remark
-UGA prelim Fall 2002. The list follows the sitting order on the paper.
+UGA prelim Fall 2002. The list follows the order on the paper.
 #2 (continuity of a composition), #3 (series $\sum 1/10^n$), and #4 (a $2\times 2$ matrix that is not diagonalizable) are `P-C2GOF`, `P-S10CN`, `P-A12ND`. The remaining items are `P-MSLD5`, `P-TGH5F`, `P-KU6C3`, `P-IMVV7`, `P-FBY23`.
 :::

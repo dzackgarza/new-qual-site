@@ -3,7 +3,7 @@ title: Real Analysis Qual Progress
 order: 5
 ---
 
-> UGA Real Analysis qual review material and an index of sittings, with links to official exam PDFs and to the problems in this wiki.
+> UGA Real Analysis qual review material and an index of exams, with links to official exam PDFs and to the problems in this wiki.
 
 # Review Material from Courses
 

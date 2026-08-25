@@ -5,13 +5,13 @@ collections whose area appears on no problem or exercise card.
 
 Named for exactly what it measured. Empty provenance is the YAML list as written,
 not a finding that no source exists. A dead href is the GET status or missing
-file, not a decision that the sitting is wrong. A shared href is the same string
+file, not a decision that the exam it names is wrong. A shared href is the same string
 on two or more collections' lists, not a decision that the collections should be
 one card. A markdown href is a path or URL whose last suffix is `.md` or
 `.markdown`, not a decision that the file is an importer wrapper. An image href
 is a path or URL whose last suffix is an image extension, not a decision that
 no exam paper exists. A collection area without problem cards is that area on
-no `problem` or `exercise` card, not a decision that the sitting should be
+no `problem` or `exercise` card, not a decision that the collection should be
 deleted. It is not wired to `qualc check`, `just test`, or the build: a finding
 is a candidate, never an instruction to act.
 
@@ -73,7 +73,9 @@ class CollectionProvenance:
     source_kind: str = ""
 
 
-IMAGE_SUFFIXES = frozenset({".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".tif", ".tiff"})
+IMAGE_SUFFIXES = frozenset(
+    {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".tif", ".tiff"}
+)
 
 FORBIDDEN_PROVENANCE_MARKERS: tuple[tuple[str, str], ...] = (
     ("make-me-a-qual", "dzackgarza repo copy"),
@@ -177,7 +179,9 @@ def load_corpus_provenance(
             continue
         source = meta.get("source")
         source_kind = source.get("source_kind", "") if isinstance(source, dict) else ""
-        collections.append(CollectionProvenance(_card_id(meta, path), hrefs, _areas(meta), source_kind))
+        collections.append(
+            CollectionProvenance(_card_id(meta, path), hrefs, _areas(meta), source_kind)
+        )
     return collections, problem_areas
 
 
@@ -187,7 +191,11 @@ def load_collection_provenance(root: Path) -> list[CollectionProvenance]:
 
 
 def collection_provenance_hrefs(root: Path) -> list[tuple[str, str]]:
-    return [(collection.card_id, href) for collection in load_collection_provenance(root) for href in collection.hrefs]
+    return [
+        (collection.card_id, href)
+        for collection in load_collection_provenance(root)
+        for href in collection.hrefs
+    ]
 
 
 def http_get_status(url: str, *, timeout: float) -> int | str:
@@ -197,7 +205,9 @@ def http_get_status(url: str, *, timeout: float) -> int | str:
     }
     # A 416 under `Range: bytes=0-0` means the server rejected the ranged
     # probe itself; retry once without the header to get the real status.
-    status = _http_get_status(url, timeout=timeout, headers={**base_headers, "Range": "bytes=0-0"})
+    status = _http_get_status(
+        url, timeout=timeout, headers={**base_headers, "Range": "bytes=0-0"}
+    )
     if status == 416:
         return _http_get_status(url, timeout=timeout, headers=base_headers)
     return status
@@ -238,19 +248,38 @@ def check_empty_provenance(collections: list[CollectionProvenance]) -> Check:
     )
 
 
-def check_dead_provenance_hrefs(collections: list[CollectionProvenance], *, root: Path, timeout: float) -> Check:
-    targets = [(collection.card_id, href) for collection in collections for href in collection.hrefs]
+def check_dead_provenance_hrefs(
+    collections: list[CollectionProvenance], *, root: Path, timeout: float
+) -> Check:
+    targets = [
+        (collection.card_id, href)
+        for collection in collections
+        for href in collection.hrefs
+    ]
     http_targets = [(card_id, href) for card_id, href in targets if _is_http_href(href)]
-    path_targets = [(card_id, href) for card_id, href in targets if not _is_http_href(href)]
+    path_targets = [
+        (card_id, href) for card_id, href in targets if not _is_http_href(href)
+    ]
     unique_urls = list(dict.fromkeys(href for _card_id, href in http_targets))
     statuses: dict[str, int | str] = {}
     with ThreadPoolExecutor(max_workers=WORKERS) as pool:
-        pending = {pool.submit(http_get_status, url, timeout=timeout): url for url in unique_urls}
+        pending = {
+            pool.submit(http_get_status, url, timeout=timeout): url
+            for url in unique_urls
+        }
         for future in as_completed(pending):
             url = pending[future]
             statuses[url] = future.result()
-    findings = [f"{card_id}: {href} -> {statuses[href]}" for card_id, href in http_targets if not _http_live(statuses[href])]
-    findings.extend(f"{card_id}: {href} -> not a file" for card_id, href in path_targets if not (root / href).is_file())
+    findings = [
+        f"{card_id}: {href} -> {statuses[href]}"
+        for card_id, href in http_targets
+        if not _http_live(statuses[href])
+    ]
+    findings.extend(
+        f"{card_id}: {href} -> not a file"
+        for card_id, href in path_targets
+        if not (root / href).is_file()
+    )
     return Check("dead-provenance-hrefs", sorted(findings), measured=len(targets))
 
 
@@ -259,7 +288,11 @@ def check_shared_provenance_hrefs(collections: list[CollectionProvenance]) -> Ch
     for collection in collections:
         for href in collection.hrefs:
             owners[href].add(collection.card_id)
-    findings = [f"{href}: {', '.join(sorted(card_ids))}" for href, card_ids in owners.items() if len(card_ids) > 1]
+    findings = [
+        f"{href}: {', '.join(sorted(card_ids))}"
+        for href, card_ids in owners.items()
+        if len(card_ids) > 1
+    ]
     return Check(
         "shared-provenance-hrefs",
         sorted(findings),
@@ -269,7 +302,12 @@ def check_shared_provenance_hrefs(collections: list[CollectionProvenance]) -> Ch
 
 
 def check_markdown_provenance_hrefs(collections: list[CollectionProvenance]) -> Check:
-    findings = [f"{collection.card_id}: {href}" for collection in collections for href in collection.hrefs if _is_markdown_href(href)]
+    findings = [
+        f"{collection.card_id}: {href}"
+        for collection in collections
+        for href in collection.hrefs
+        if _is_markdown_href(href)
+    ]
     return Check(
         "markdown-provenance-hrefs",
         sorted(findings),
@@ -278,7 +316,12 @@ def check_markdown_provenance_hrefs(collections: list[CollectionProvenance]) -> 
 
 
 def check_image_provenance_hrefs(collections: list[CollectionProvenance]) -> Check:
-    findings = [f"{collection.card_id}: {href}" for collection in collections for href in collection.hrefs if _is_image_href(href)]
+    findings = [
+        f"{collection.card_id}: {href}"
+        for collection in collections
+        for href in collection.hrefs
+        if _is_image_href(href)
+    ]
     return Check(
         "image-provenance-hrefs",
         sorted(findings),
@@ -289,7 +332,12 @@ def check_image_provenance_hrefs(collections: list[CollectionProvenance]) -> Che
 def check_forbidden_provenance_hrefs(
     collections: list[CollectionProvenance],
 ) -> Check:
-    findings = [f"{collection.card_id}: {href} ({reason})" for collection in collections for href in collection.hrefs if (reason := _forbidden_provenance_reason(href))]
+    findings = [
+        f"{collection.card_id}: {href} ({reason})"
+        for collection in collections
+        for href in collection.hrefs
+        if (reason := _forbidden_provenance_reason(href))
+    ]
     return Check(
         "forbidden-provenance-hrefs",
         sorted(findings),
@@ -297,8 +345,15 @@ def check_forbidden_provenance_hrefs(
     )
 
 
-def check_collection_area_without_problem_cards(collections: list[CollectionProvenance], problem_areas: set[str]) -> Check:
-    findings = [f"{collection.card_id}: {area}" for collection in collections for area in collection.areas if area not in problem_areas]
+def check_collection_area_without_problem_cards(
+    collections: list[CollectionProvenance], problem_areas: set[str]
+) -> Check:
+    findings = [
+        f"{collection.card_id}: {area}"
+        for collection in collections
+        for area in collection.areas
+        if area not in problem_areas
+    ]
     return Check(
         "collection-area-without-problem-cards",
         sorted(findings),
@@ -318,14 +373,18 @@ ALL = [
 ]
 
 
-def run(names: list[str], *, root: Path = REPO, timeout: float = DEFAULT_TIMEOUT) -> list[Check]:
+def run(
+    names: list[str], *, root: Path = REPO, timeout: float = DEFAULT_TIMEOUT
+) -> list[Check]:
     collections, problem_areas = load_corpus_provenance(root)
     checks: list[Check] = []
     for name in names:
         if name == "empty-provenance":
             checks.append(check_empty_provenance(collections))
         elif name == "dead-provenance-hrefs":
-            checks.append(check_dead_provenance_hrefs(collections, root=root, timeout=timeout))
+            checks.append(
+                check_dead_provenance_hrefs(collections, root=root, timeout=timeout)
+            )
         elif name == "shared-provenance-hrefs":
             checks.append(check_shared_provenance_hrefs(collections))
         elif name == "markdown-provenance-hrefs":
@@ -335,14 +394,18 @@ def run(names: list[str], *, root: Path = REPO, timeout: float = DEFAULT_TIMEOUT
         elif name == "forbidden-provenance-hrefs":
             checks.append(check_forbidden_provenance_hrefs(collections))
         elif name == "collection-area-without-problem-cards":
-            checks.append(check_collection_area_without_problem_cards(collections, problem_areas))
+            checks.append(
+                check_collection_area_without_problem_cards(collections, problem_areas)
+            )
     return checks
 
 
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="provenance_hrefs")
     ap.add_argument("--root", type=Path, default=REPO)
-    ap.add_argument("--only", action="append", choices=ALL, help="run one check (repeatable)")
+    ap.add_argument(
+        "--only", action="append", choices=ALL, help="run one check (repeatable)"
+    )
     ap.add_argument("--json", action="store_true")
     ap.add_argument(
         "--timeout",

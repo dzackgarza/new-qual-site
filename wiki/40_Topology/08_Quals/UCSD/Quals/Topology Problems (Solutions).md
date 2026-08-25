@@ -204,7 +204,7 @@ Compute the homology of these spaces
 
 ## Cohomology Ring (Sheet 12)
 
-This sitting's notes stop at the Ext/Tor sheet above; there is no Sheet 12 in the source.
+This exam's notes stop at the Ext/Tor sheet above; there is no Sheet 12 in the source.
 
 # Topology Problems: Solutions
 

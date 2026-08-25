@@ -25,7 +25,9 @@ def _findings(root: Path, name: str) -> list[str]:
     return check.findings
 
 
-def test_empty_bodies_are_the_stripped_body_and_not_a_discard_rule(tmp_path: Path) -> None:
+def test_empty_bodies_are_the_stripped_body_and_not_a_discard_rule(
+    tmp_path: Path,
+) -> None:
     wiki = tmp_path / "wiki"
     _write(wiki / "empty.md", "")
     _write(wiki / "spaces.md", "   \n")
@@ -123,11 +125,13 @@ def test_line_shape_markers(tmp_path: Path) -> None:
     assert _findings(tmp_path, "task-list-item-lines") == ["wiki/tasks.md: 2"]
 
 
-def test_heading_or_wikilink_only_bodies_ignore_prose_and_empty_pages(tmp_path: Path) -> None:
+def test_heading_or_wikilink_only_bodies_ignore_prose_and_empty_pages(
+    tmp_path: Path,
+) -> None:
     wiki = tmp_path / "wiki"
     _write(wiki / "heading.md", "# Extra problems\n")
     _write(wiki / "list.md", "# Enumerating\n\n[[P-ABCDE]]\n- [[P-FGHIJ]]\n")
-    _write(wiki / "prose.md", "# Title\n\nThis sitting asks the same question.\n")
+    _write(wiki / "prose.md", "# Title\n\nThis exam asks the same question.\n")
     _write(wiki / "empty.md", "")
     assert _findings(tmp_path, "heading-or-wikilink-only-bodies") == [
         "wiki/heading.md",
@@ -142,7 +146,10 @@ def test_unreadable_front_matter_is_named_and_does_not_stop_other_checks(
     wiki.mkdir()
     (wiki / "broken.md").write_text("---\norder: [\n---\n")
     _write(wiki / "empty.md", "")
-    assert any(finding.startswith("wiki/broken.md:") for finding in _findings(tmp_path, "unreadable-wiki-pages"))
+    assert any(
+        finding.startswith("wiki/broken.md:")
+        for finding in _findings(tmp_path, "unreadable-wiki-pages")
+    )
     assert _findings(tmp_path, "empty-bodies") == ["wiki/empty.md"]
 
 
@@ -150,7 +157,10 @@ def test_doctor_exits_zero_with_findings_and_is_not_a_gate(tmp_path: Path) -> No
     _write(tmp_path / "wiki" / "empty.md", "")
     assert main(["--root", str(tmp_path), "--json"]) == 0
     # The CLI prints JSON to stdout; capture via run() rather than the print.
-    payload = [{"check": check.name, "ok": check.ok, "findings": check.findings} for check in run(ALL, root=tmp_path)]
+    payload = [
+        {"check": check.name, "ok": check.ok, "findings": check.findings}
+        for check in run(ALL, root=tmp_path)
+    ]
     dumped = json.dumps(payload)
     assert "empty-bodies" in dumped
     assert payload[ALL.index("empty-bodies")]["findings"] == ["wiki/empty.md"]

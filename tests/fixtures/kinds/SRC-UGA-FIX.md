@@ -21,5 +21,5 @@ source:
 ---
 
 ::: remark
-The exam-sitting variant: institution and area are both required.
+The exam variant: institution and area are both required.
 :::

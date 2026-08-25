@@ -9,25 +9,23 @@ A candidate leaves that queue only after a source-based disposition.
 
 ## 1. Repair authored corpus data
 
-### Replace the occurrence layer
+### Audit collection membership against sources
 
 Owner: [issue #46](https://github.com/dzackgarza/new-qual-site/issues/46)
 
-- [ ] List all 279 source pages as individual checklist items.
+The corpus layout now nests every listed problem under its collection
+(`corpus/collections/<ID>/`). What remains is the fidelity of the lists
+themselves.
 
-- [ ] Read one source document and its existing page.
+- [ ] Read one source document and its collection card.
 
-- [ ] Write that page's ordered problem list with `[[P-…]]` links.
+- [ ] Compare the card's ordered problem list with the source.
 
-- [ ] Compare every listed problem with the source.
+- [ ] Correct missing, extra, or out-of-order entries on the card.
 
-- [ ] Commit the completed page.
+- [ ] Commit the completed card.
 
-- [ ] Repeat for the next page.
-
-- [ ] Remove an occurrence card only after its source page replaces it.
-
-- [ ] Remove the occurrence model after all 2,798 occurrence cards have valid replacements.
+- [ ] Repeat for the next card.
 
 ### Replace generated titles
 
@@ -77,15 +75,15 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [ ] Finish Applied Algebra Spring 2008.
 
-- [ ] Read each remaining Algebra sitting with an empty problem list.
+- [ ] Read each remaining Algebra exam collection with an empty problem list.
 
-- [ ] Read each remaining Real Analysis sitting with an empty problem list.
+- [ ] Read each remaining Real Analysis exam collection with an empty problem list.
 
-- [ ] Read each remaining Complex Analysis sitting with an empty problem list.
+- [ ] Read each remaining Complex Analysis exam collection with an empty problem list.
 
-- [ ] Read each remaining Topology sitting with an empty problem list.
+- [ ] Read each remaining Topology exam collection with an empty problem list.
 
-- [ ] Add problems in source order, one sitting and one card at a time.
+- [ ] Add problems in source order, one collection and one card at a time.
 
 - [ ] Mark a collection complete only when its source supports that claim.
 
@@ -133,12 +131,12 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 - [ ] Record `not yet attachable` when no valid owner is known.
 
-Not yet attachable (no valid owner known; revisit when the sitting is identified):
+Not yet attachable (no valid owner known; revisit when the source exam is identified):
 
-- P-ULNGG, P-VAZ7S — reconstructed from solutions-only documents; the underlying sitting is not identified.
+- P-ULNGG, P-VAZ7S — reconstructed from solutions-only documents; the underlying exam is not identified.
   P-ULNGG's solution appears in Neil_Spring_2018_Solutions.pdf, but a solution writeup is not provenance.
 
-- P-TEEXE, P-UHFLP — vault-migrated real-analysis problems; no sitting or source document identified.
+- P-TEEXE, P-UHFLP — vault-migrated real-analysis problems; no source document identified.
 
 - [ ] Repeat until every orphan has a source-based disposition.
 
@@ -148,7 +146,7 @@ Not yet attachable (no valid owner known; revisit when the sitting is identified
 
 - [ ] Read both cards and both sources for one group.
 
-- [ ] Keep separate cards when different sittings repeat a statement.
+- [ ] Keep separate cards when different exams repeat a statement.
 
 - [ ] Correct or remove a card only when the source proves the defect.
 
@@ -176,7 +174,7 @@ Owner: [issue #8](https://github.com/dzackgarza/new-qual-site/issues/8)
 
 - [ ] Confirm that each exact match has one semantic target.
 
-- [ ] Reconcile institution, area, date, season, source, and occurrence data.
+- [ ] Reconcile institution, area, date, season, source, and collection-membership data.
 
 - [ ] Prove that an isolated import does not change curated output.
 
@@ -226,7 +224,7 @@ Owner: [issue #10](https://github.com/dzackgarza/new-qual-site/issues/10)
 
 - [ ] Inspect a statements-only generated exam.
 
-- [ ] Inspect a diagram, citation, occurrence link, hint, and solution.
+- [ ] Inspect a diagram, citation, collection link, hint, and solution.
 
 - [ ] Decide the supported `tikzcd` boundary.
 
@@ -284,7 +282,7 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
 - [ ] Decide how to model the 27 solution write-ups stored as problems.
 
-- [ ] Decide whether sitting and problem pages satisfy occurrence reachability.
+- [ ] Decide whether collection and problem pages satisfy reachability for every problem.
 
 - [ ] Record each decision on its owning GitHub issue.
 

@@ -54,7 +54,7 @@ A reader must be able to do all of the following on the deployed site:
 
 - read the authored mathematics in a supported order;
 
-- reach stable pages, cards, problems, occurrences, sources, hints, and solutions;
+- reach stable pages, cards, problems, collections, sources, hints, and solutions;
 
 - use search, filters, and statements-only exam generation;
 
@@ -253,7 +253,7 @@ Commit `965a9e76` removed the repeated-panel-title constraint.
 Rebuild the current Topology branch and repeat the proof's reachability query.
 Close #28 only if every required card is addressable under issue #28's meaning.
 
-The occurrence-layer interpretation is user-gated.
+The collection-membership interpretation is user-gated.
 Do not silently weaken “every extracted card is reachable.”
 Section 9 routes this decision to issue #6 and the branch issues.
 
@@ -286,7 +286,7 @@ Before closing #8:
 
 - confirm each exact-match decision has one semantic target;
 
-- compare institution, area, date, season, source, and occurrence counts;
+- compare institution, area, date, season, source, and membership counts;
 
 - prove an isolated import does not change curated output;
 
@@ -317,7 +317,7 @@ Do not publish third-party material before the user decides its license status.
 Issue #41 now contains mostly presentation residue.
 Verify each item against the current rendered page before closing it.
 
-Issue #10 owns the complete reader, search, filter, occurrence, diagram, citation, and generator behavior.
+Issue #10 owns the complete reader, search, filter, collection-link, diagram, citation, and generator behavior.
 
 Before closing #10:
 
@@ -327,7 +327,7 @@ Before closing #10:
 
 - inspect a statements-only generated exam;
 
-- inspect a diagram, citation, occurrence link, hint, and solution;
+- inspect a diagram, citation, collection link, hint, and solution;
 
 - settle typed facets and `tikzcd` in Section 9.
 
@@ -344,7 +344,7 @@ Repeat issue #30 at the deployed boundary:
 
 - visit every subject branch root and terminal route;
 
-- exercise search, filters, occurrences, disclosure, diagrams, citations, and generation;
+- exercise search, filters, collection links, disclosure, diagrams, citations, and generation;
 
 - inspect 375, 768, 1024, and 1440 CSS-pixel snapshots;
 
@@ -471,13 +471,13 @@ Do not infer an answer from existing content.
 
 4. **Importer ownership.** Route to issue #8. Decide whether curated topics belong in importer input or outside its output subtree.
 
-5. **Twenty-seven solution write-ups stored as problems.** Route to issues #5 and #24. Approve new problem cards and occurrence repointing.
+5. **Twenty-seven solution write-ups stored as problems.** Route to issues #5 and #24. Approve new problem cards and membership corrections.
 
 6. **Disabled `\sech` definition.** Route to issue #14. Decide whether to remove the commented upstream line.
 
 7. **Typed facets.** Route to issue #10. Decide whether area, institution, year, and topic need separate controls.
 
-8. **Occurrence reachability.** Route to issue #6 and issues #24 through #29. Decide whether sitting and problem pages satisfy occurrence reachability.
+8. **Problem reachability.** Route to issue #6 and issues #24 through #29. Decide whether collection and problem pages satisfy reachability for every problem.
 
 9. **Small mathematical and editorial choices.** Route by ownership.
    Use issue #2 for notation, duplicate statements, and competing mathematical repairs.

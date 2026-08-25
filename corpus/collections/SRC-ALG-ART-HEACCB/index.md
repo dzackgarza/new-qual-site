@@ -34,5 +34,5 @@ source:
 ---
 
 ::: remark
-Algebra course final for Fall 2019, not the UGA algebra Fall 2019 qualifying exam (`SRC-UGA-ALG-FALL-2019`). Problem list is disjoint from that sitting and from the course midterm (`SRC-ALG-ART-QHGA3N`).
+Algebra course final for Fall 2019, not the UGA algebra Fall 2019 qualifying exam (`SRC-UGA-ALG-FALL-2019`). Problem list is disjoint from that exam and from the course midterm (`SRC-ALG-ART-QHGA3N`).
 :::

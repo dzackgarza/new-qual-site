@@ -4,7 +4,7 @@ Each textbook cited in the corpus lives as a Zotero item with an associated PDF 
  MinerU extraction. The extraction markdown is the source text for reading exercises
 and writing cards.
 
-What each collection lists is owned by its collection card under `corpus/occurrences/`
+What each collection lists is owned by its collection card under `corpus/collections/`
 (`SRC-TEXT-*`): `sections:` is the per-section problem list, `completion:` the
 remaining-work signal.
 

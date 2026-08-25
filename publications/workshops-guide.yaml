@@ -12,11 +12,11 @@ sections:
     title: Algebra
     parent: GUIDE-WORKSHOPS
     lede: >-
-      Four sittings that run the Algebra branch's results as practice: subgroup and index
+      Four sessions that run the Algebra branch's results as practice: subgroup and index
       counting first, then the finite-group structure the counting supports, then Sylow
       applied, and finally rings. These are the same canonical problems the Algebra guide
       lands on, met here in the order the workshop met them rather than in dependency order.
-      Two later sittings, on representation theory and linear algebra, left pages but no
+      Two later sessions, on representation theory and linear algebra, left pages but no
       problems.
     items:
       # Algebra Week 1 Groups Warmup
@@ -81,10 +81,10 @@ sections:
     title: Real Analysis
     parent: GUIDE-WORKSHOPS
     lede: >-
-      One sitting against the Real Analysis branch: the preliminaries the continuity
+      One session against the Real Analysis branch: the preliminaries the continuity
       section assumes. The UNL workshop packet — topic sheets, three qualifying exams,
       and the numbered results the worksheets state — follows under Real Analysis
-      Workshop Sittings.
+      Workshop Packet.
     items:
       # Real Week 1 Preliminaries
       - ref: E-JY5OT
@@ -98,7 +98,7 @@ sections:
     title: Complex Analysis
     parent: GUIDE-WORKSHOPS
     lede: >-
-      Two sittings against the Complex Analysis branch, following its first two sections: the
+      Two sessions against the Complex Analysis branch, following its first two sections: the
       preliminaries behind holomorphy, then Cauchy theory, where the exercises are worked
       applications of the integral formula rather than restatements of it.
     items:
@@ -113,7 +113,7 @@ sections:
     title: Topology
     parent: GUIDE-WORKSHOPS
     lede: >-
-      One sitting on point-set preliminaries, carrying more problems than any other single
+      One session on point-set preliminaries, carrying more problems than any other single
       workshop. It exercises the separation and compactness hypotheses that the Topology
       branch's early sections establish.
     items:
@@ -144,22 +144,22 @@ sections:
       - ref: P-ZQBPZ
       - ref: P-WHXWM
       - ref: P-TC2PJ
-  - slug: real-analysis-sittings
-    title: Real Analysis Workshop Sittings
+  - slug: real-analysis-workshop-packet
+    title: Real Analysis Workshop Packet
     parent: real-analysis
     lede: >-
       The UNL real-analysis workshop packet as one collection, days as sections,
       extracted from the worksheets rather than from the wiki week pages above.
       Days 1, 9, and 10 are the May 2016, January 2019, and May 2018 qualifying
       exams; Days 2–8 are the topic sheets. The twenty numbered results the
-      worksheets state and then set problems against follow the packet: they
-      carry no occurrence, so no sitting page lists them, and this is the only
+      worksheets state and then set problems against follow the packet: no
+      collection lists them, so this is the only
       place in the branch they can be read. Their numbering runs 3.1 to 6.7 with
       6.6 absent, which is how the source has it.
     items:
       - ref: SRC-RA-WORKSHOP
       # The numbered results the worksheets state and then set problems against.
-      # They carry no occurrence, so no sitting page lists them.
+      # No collection lists them.
       - ref: T-RA-WORKSHOP-D4-3-1
       - ref: T-RA-WORKSHOP-D4-3-2
       - ref: T-RA-WORKSHOP-D4-3-3
@@ -180,8 +180,8 @@ sections:
       - ref: T-RA-WORKSHOP-D7-6-4
       - ref: T-RA-WORKSHOP-D7-6-5
       - ref: T-RA-WORKSHOP-D7-6-7
-  - slug: topology-sittings
-    title: Topology Workshop Sittings
+  - slug: topology-workshop-packets
+    title: Topology Workshop Packets
     parent: topology
     lede: >-
       Two topology workshop packets. The numbered-day packet follows the Topology

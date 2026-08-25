@@ -11,7 +11,7 @@ lede: 'Read the subject in three arcs and a problem bank. The first arc is what 
   count the argument principle extracts from that, and the residue calculus the count
   specialises to. The third arc is the geometric side, where the question is which
   domains a holomorphic bijection can carry onto a disc and what a limit of holomorphic
-  functions can be. Each section closes with panels drawn from the qual sittings,
+  functions can be. Each section closes with panels drawn from the qualifying exams,
   so the theory is read next to the problems it was built to answer, and the last
   section gathers the problems that belong to no single section.'
 sections:
@@ -516,8 +516,8 @@ sections:
       limit: 8
       review:
         mode: any
-- slug: problems-from-the-qual-sittings
-  title: Problems from the Qual Sittings
+- slug: problems-from-the-qualifying-exams
+  title: Problems from the Qualifying Exams
   parent: GUIDE-COMPLEX-ANALYSIS
   lede: 'A revision pass rather than a new traversal. The sections above reach their
     problems through the theory that answers them; these four panels reach the recurring

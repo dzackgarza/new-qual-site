@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JHUU67RA2
 kind: problem
-title: Weak convergence plus norm convergence implies strong convergence in L2 (second sitting)
+title: Weak convergence plus norm convergence implies strong convergence in L2 (second appearance)
 classification:
   areas:
   - real-analysis

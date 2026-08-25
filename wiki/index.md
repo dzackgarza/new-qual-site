@@ -7,7 +7,7 @@ order: 0
 
 Notes, problem lists, and solutions for qualifying exams, filed by subject.
 
-Start at the syllabus for the exam you are sitting:
+Start at the syllabus for your exam:
 
 - [[00_Prelims/index|Prelims]]
 - [[10_Algebra/index|Algebra]]

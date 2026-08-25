@@ -5,7 +5,7 @@ title: "Topology Source Archive"
 
 # Topology Source Archive
 
-Every recorded sitting and contributed artifact in this subject, by institution and then by date.
+Every recorded exam and contributed artifact in this subject, by institution and then by date.
 Each entry links to that collection's own page, which lists its problems in the order they appeared.
 
 ## UCSD

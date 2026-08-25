@@ -5,7 +5,7 @@ title: "Real Analysis Source Archive"
 
 # Real Analysis Source Archive
 
-Every recorded sitting and contributed artifact in this subject, by institution and then by date.
+Every recorded exam and contributed artifact in this subject, by institution and then by date.
 Each entry links to that collection's own page, which lists its problems in the order they appeared.
 
 ## JHU
@@ -95,7 +95,7 @@ Each entry links to that collection's own page, which lists its problems in the 
 [[SRC-UGA-RA-FALL-2021]]
 
 Official exam PDFs as posted by the department.
-The UGA exams listed above are the imported sittings.
+The UGA exams listed above are the imported exams.
 
 - [Fall 2021](https://www.math.uga.edu/sites/default/files/inline-files/Real_Analysis_Qual-Fall2021.pdf)
 

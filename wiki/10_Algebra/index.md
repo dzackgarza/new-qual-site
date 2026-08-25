@@ -126,7 +126,7 @@ Extra topics named there are representations of finite groups (character theory,
 ## A twelve-week study sequence
 
 This sequence was given as a summer workshop.
-The calendar dates below are that sitting's (weeks of 18 May through 10 August, quals Monday–Tuesday 16–17 August).
+The calendar dates below are that workshop's (weeks of 18 May through 10 August, quals Monday–Tuesday 16–17 August).
 The week contents are the study path.
 
 ### Week 1 (18 May): Preliminary review

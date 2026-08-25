@@ -3,8 +3,8 @@ title: Complex Qual Progress
 order: 2
 ---
 
-> Index of UGA Complex Analysis qual sittings, with links to the official exam PDFs and to the problems in this wiki.
-> Collection cards (`SRC-*`) hold the sitting order.
+> Index of UGA Complex Analysis qual exams, with links to the official exam PDFs and to the problems in this wiki.
+> Collection cards (`SRC-*`) hold the exam order.
 
 # Qual Problems ToDo
 

@@ -5,7 +5,7 @@ title: "Complex Analysis Source Archive"
 
 # Complex Analysis Source Archive
 
-Every recorded sitting and contributed artifact in this subject, by institution and then by date.
+Every recorded exam and contributed artifact in this subject, by institution and then by date.
 Each entry links to that collection's own page, which lists its problems in the order they appeared.
 
 ## UGA
@@ -49,7 +49,7 @@ Each entry links to that collection's own page, which lists its problems in the 
 Official exam PDFs as posted by the department.
 The Fall 2021 paper is [[30_Complex_Analysis/09_Quals/9999_2021_Fall|kept together]] under Quals; the rest of the imported problems are filed by topic there.
 
-These sittings are in the corpus:
+These exams are in the corpus:
 
 - [Fall 2021](https://www.math.uga.edu/sites/default/files/inline-files/Complex_Qual_Fall2021.pdf)
 

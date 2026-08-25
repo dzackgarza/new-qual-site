@@ -5,7 +5,7 @@ title: "Card Archives"
 
 # Card Archives
 
-The pages that list the corpus by its source: the sittings and artifacts of each subject, the flashcard decks, and the review doc's problem chapter.
+The pages that list the corpus by its source: the exams and artifacts of each subject, the flashcard decks, and the review doc's problem chapter.
 
 ## Source archives
 

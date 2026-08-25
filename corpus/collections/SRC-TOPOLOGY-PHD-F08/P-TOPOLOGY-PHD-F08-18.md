@@ -25,5 +25,5 @@ The question as set cannot be answered, and the statement is left as the exam pr
 There *are* $n$-sheeted coverings of $S^1$ for every finite $n$: the map $z \mapsto z^n$ is one, and it corresponds under the quoted fact to the subgroup $n\ZZ \leq \ZZ = \pi_1(S^1)$, which has index $n$.
 Verified against the source, `assets/attachments/F08phdtop.pdf` page 2, Part Two question 6, where the sentence appears verbatim; the transcription is faithful and the error is the paper's.
 
-That page is headed "January 2009" while this sitting is recorded as Fall 2008.
+That page is headed "January 2009" while this exam is recorded as Fall 2008.
 :::

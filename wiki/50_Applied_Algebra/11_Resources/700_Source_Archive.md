@@ -5,7 +5,7 @@ title: "Applied Algebra Source Archive"
 
 # Applied Algebra Source Archive
 
-Every recorded sitting in this subject, by institution and then by date.
+Every recorded exam in this subject, by institution and then by date.
 Each entry links to that collection's own page, which lists its problems in the order they appeared.
 
 ## UCSD
