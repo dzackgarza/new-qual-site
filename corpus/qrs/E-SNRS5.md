@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-SNRS5
 kind: exercise
-title: \int_\RR {1 \over (1+x^2)^2} \dx
+title: The integral of $1/(1+x^2)^2$ over $\mathbb{R}$
 classification:
   areas:
   - complex-analysis

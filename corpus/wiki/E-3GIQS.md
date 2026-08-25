@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-3GIQS
 kind: exercise
-title: Map $\DD^c \intersect \HH$ to $\HH$, sending
+title: Mapping $\DD^c \cap \HH$ conformally onto $\HH$ with prescribed boundary values
 classification:
   areas:
   - complex-analysis

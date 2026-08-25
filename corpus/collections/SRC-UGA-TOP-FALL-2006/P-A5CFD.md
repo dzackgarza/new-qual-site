@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-A5CFD
 kind: problem
-title: If $f$ is a function from $X$ to $Y$ , consider the graph
+title: Closed graphs and continuous maps between topological spaces
 classification:
   areas:
   - topology

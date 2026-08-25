@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D5-13
 kind: problem
-title: Prove Theorem 4.1
+title: Fermat's stationary-point theorem
 classification:
   areas:
   - real-analysis

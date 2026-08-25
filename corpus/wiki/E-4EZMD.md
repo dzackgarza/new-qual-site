@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-4EZMD
 kind: exercise
-title: Define $A \da \ts{\Re(z) > 0, \Im(z) > 0}$.
+title: A conformal equivalence from the quarter-disc to the first quadrant
 classification:
   areas:
   - complex-analysis

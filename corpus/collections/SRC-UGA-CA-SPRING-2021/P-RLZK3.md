@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RLZK3
 kind: problem
-title: The question as written on the original qual has several errors.
+title: The pseudo-hyperbolic inequality on the disc
 classification:
   areas:
   - complex-analysis

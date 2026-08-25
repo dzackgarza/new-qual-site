@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-G55QF
 kind: exercise
-title: $\mathbb{D}^c \intersect \mathbb{H}$ to $\mathbb{H}$
+title: Mapping $\DD^c \intersect \HH$ to $\HH$ via cross-ratios
 classification:
   areas:
   - complex-analysis

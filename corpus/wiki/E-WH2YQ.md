@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-WH2YQ
 kind: exercise
-title: Fix $a,b\in \CC$ and $\theta$, and describe the locus
+title: "The locus $\\Arg\\qty{z-a\\over z-b}=\\theta$: circular arcs through $a$ and $b$"
 classification:
   areas:
   - complex-analysis

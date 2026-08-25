@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D4-13
 kind: problem
-title: Prove Theorem 3.3
+title: Uniform continuity on compact sets
 classification:
   areas:
   - real-analysis

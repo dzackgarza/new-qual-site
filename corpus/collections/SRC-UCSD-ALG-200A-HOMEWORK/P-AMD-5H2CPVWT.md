@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-AMD-5H2CPVWT
 kind: problem
-title: 'Given: $H \normal G, K \normal G,H \intersect K = e$'
+title: Normal subgroups with trivial intersection commute elementwise
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-CFHC4
 kind: exercise
-title: \int_\RR {1 \over (1+x)^2} = {\pi \over 2}
+title: The integral of $1/(1+x^2)^2$ over $\mathbb{R}$
 classification:
   areas:
   - complex-analysis
@@ -16,7 +16,7 @@ review: draft
 
 :::{.exercise}
 \[
-\int_\RR {1 \over (1+x)^2} = {\pi \over 2}
+\int_\RR {1 \over (1+x^2)^2} \dx = {\pi \over 2}
 .\]
 
 Use that $f(z) \sim 1/z^4$.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-GXII2
 kind: proposition
-title: \Hom_{\kmod}(V, W) &\mapsvia{\sim} \Hom_{\kmod}(W, V)\dual \\
+title: The trace pairing identifies $\Hom(V,W)$ with $\Hom(W,V)^\dual$
 classification:
   areas:
   - algebra

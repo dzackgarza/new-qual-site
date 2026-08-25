@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-Z66NC
 kind: exercise
-title: \int_{1}^{\infty} \frac{d x}{x \sqrt{x^{2}-1}} = {\pi \over 2}
+title: The integral of $1/(x\sqrt{x^2-1})$ over $[1,\infty)$
 classification:
   areas:
   - complex-analysis

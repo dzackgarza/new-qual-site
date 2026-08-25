@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-HWX2P
 kind: corollary
-title: \size G = \size (G/H) \size H \da [G:H] \, \size H
+title: The coset counting formula $\# G = [G:H]\,\#H$
 classification:
   areas:
   - algebra

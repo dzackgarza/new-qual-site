@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: PR-EDD7U
 kind: proposition
-title: Useful computational trick
+title: Characteristic polynomials via traces of exterior powers
 classification:
   areas:
   - algebra

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-7ITXP
 kind: problem
-title: \label{equivalence_of_approximating_measures}
+title: Approximating a bounded set by open and closed sets, equivalent to measurability
 classification:
   areas:
   - real-analysis

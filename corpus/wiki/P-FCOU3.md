@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FCOU3
 kind: problem
-title: \label{hilbert_space_exam_question}
+title: Bessel's inequality and reconstruction from an orthonormal sequence
 classification:
   areas:
   - real-analysis

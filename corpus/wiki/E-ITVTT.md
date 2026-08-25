@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-ITVTT
 kind: exercise
-title: Residue of $1/z^n+1$
+title: The residue of $1/(z^n+1)$ at a root of unity
 classification:
   areas:
   - complex-analysis

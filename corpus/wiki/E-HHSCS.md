@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: E-HHSCS
 kind: exercise
-title: $\log(z)/1+z^a$
+title: The integral of $\log x/(1+x^a)$ over $[0,\infty)$
 classification:
   areas:
   - complex-analysis
@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="$\log(z)/1+z^a$"}
+:::{.exercise}
 \[
 I\da \int_0^\infty {\log(x) \over 1+x^a}\dx 
 &= - \qty{\pi \over a}^2\cos\qty{\pi\over a}\csc^2\qty{\pi \over a} \\

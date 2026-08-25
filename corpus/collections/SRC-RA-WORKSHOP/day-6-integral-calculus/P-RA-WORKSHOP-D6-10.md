@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA-WORKSHOP-D6-10
 kind: problem
-title: Prove Theorem 5.3
+title: Reduction of a Stieltjes integral to a Riemann integral
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: C-XRC67
 kind: corollary
-title: \# G = \#(G/H) \#H \da [G:H] \, \# H
+title: The coset counting formula $\# G = [G:H]\,\#H$
 classification:
   areas:
   - algebra
