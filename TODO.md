@@ -27,28 +27,15 @@ The corpus layout now nests every listed problem under its collection (`corpus/c
 
 Owner: [issue #45](https://github.com/dzackgarza/new-qual-site/issues/45)
 
-Every item below carried the `title="?"` placeholder on its statement div; that attribute has been removed mechanically, so divs now read `::: {.problem}`. The card's name lives only in the frontmatter `title:` — a filled div title renders as a second heading next to the page title.
-
-Per item: read the card, and if the current frontmatter title is a clipped sentence or a data fragment rather than a name, author one — the shortest description a reader recognizes the card by; keep an already-good title.
-Tick the box and commit before moving to the next card.
-
-#### corpus/collections/SRC-ALG-ART-PSET5-QUALS
-
-- [x] P-LCEHH
-
-#### corpus/collections/SRC-ALG-ART-SEPT2019
-
-- [x] P-B2P3P
-
-- [x] P-B6E7Q
-
-- [x] P-DLFQC
-
-- [x] P-EHBDD
-
-- [x] P-J2D5B
-
-- [x] P-PBVSZ
+The `title="?"` placeholder on these statement divs marked the frontmatter
+title as suspect. Most have already been superseded by later authoring passes:
+of the current remainder, 37 titles are verbatim statement fragments (measured)
+and need a real name; the rest already read like authored titles and need only
+a verification read against the statement. Per item: read the card; if the
+title is a clipped fragment or a data dump rather than a name, replace it with
+the shortest description a reader recognizes the card by; otherwise leave it.
+Delete the line when the card is settled — completion lives in git history,
+not here.
 
 #### corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21
 
