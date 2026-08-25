@@ -27,18 +27,1391 @@ The corpus layout now nests every listed problem under its collection (`corpus/c
 
 Owner: [issue #45](https://github.com/dzackgarza/new-qual-site/issues/45)
 
-- [ ] List each truncated title as one checklist item.
+Every item below carried the `title="?"` placeholder on its statement div; that attribute has been removed mechanically, so divs now read `::: {.problem}`. The card's name lives only in the frontmatter `title:` — a filled div title renders as a second heading next to the page title.
 
-- [ ] Author a mathematical title for each listed card.
+Per item: read the card, and if the current frontmatter title is a clipped sentence or a data fragment rather than a name, author one — the shortest description a reader recognizes the card by; keep an already-good title. Tick the box and commit before moving to the next card.
 
-- [ ] Replace each `Untitled` value after reading its card.
+#### corpus/collections/SRC-ALG-ART-PSET5-QUALS
 
-- [ ] Inspect each remaining title against its statement.
+- [x] P-LCEHH
 
-- [ ] Replace each first-sentence fragment with a human-authored title.
+#### corpus/collections/SRC-ALG-ART-SEPT2019
 
-- [ ] Commit each completed card before reading the next card.
+- [x] P-B2P3P
+- [x] P-B6E7Q
+- [x] P-DLFQC
+- [x] P-EHBDD
+- [x] P-J2D5B
+- [x] P-PBVSZ
 
+#### corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21
+
+- [ ] P-3DS32
+- [ ] P-GW4KD
+- [ ] P-PDAPQ
+- [ ] P-ZSFKA
+
+#### corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2009-pp-1-2
+
+- [ ] P-3GKGV
+- [ ] P-7B2CW
+- [ ] P-C6SRA
+- [ ] P-CSEAZ
+- [ ] P-JH3BD
+- [ ] P-TBQBL
+
+#### corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/preliminary-exam-in-algebra-june-11-2008-9-a-m-noon-pp-3-6
+
+- [ ] P-GWHUX
+- [ ] P-TB7BG
+- [ ] P-Y5JK4
+
+#### corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/algebra-preliminary-examination-summer-2011-p-12
+
+- [ ] P-2TVO4
+- [ ] P-5JBRJ
+- [ ] P-LU2L3
+- [ ] P-MOCTU
+
+#### corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/algebra-preliminary-examination-summer-2014-pp-4-5
+
+- [ ] P-JHQKZ
+- [ ] P-OUQ2Q
+- [ ] P-TNZTM
+- [ ] P-WC2SP
+- [ ] P-ZR3OT
+
+#### corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/algebra-qualifying-exam-13-june-2012-pp-9-11
+
+- [ ] P-CZFJJ
+- [ ] P-DCR24
+- [ ] P-E4XWH
+- [ ] P-OW6CS
+- [ ] P-QB2KS
+- [ ] P-RE2VW
+- [ ] P-VVXKF
+- [ ] P-ZYPI3
+
+#### corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/algebra-qualifying-exam-june-16-2010-pp-13-15
+
+- [ ] P-3DGMZ
+- [ ] P-HU56P
+- [ ] P-HXR25
+- [ ] P-VUTDR
+- [ ] P-ZY76X
+
+#### corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/ph-d-qualifying-exam-algebra-june-11-2015-pp-1-3
+
+- [ ] P-6ET4N
+- [ ] P-H7ERV
+- [ ] P-HHX6V
+- [ ] P-NXDOU
+- [ ] P-PCSZ2
+- [ ] P-U64DA
+- [ ] P-VFB5V
+- [ ] P-XERC4
+
+#### corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/wesleyan-university-phd-qualifying-exam-algebra-july-10-2013-pp-6-8
+
+- [ ] P-IXED6
+- [ ] P-K5JBF
+- [ ] P-NGXAE
+- [ ] P-RP7WR
+- [ ] P-SHNTG
+- [ ] P-W5LVB
+- [ ] P-XVV4O
+- [ ] P-ZG74L
+
+#### corpus/collections/SRC-CA-ART-E3SXDB
+
+- [ ] P-677HF
+- [ ] P-7UIYI
+- [ ] P-QUXEB
+- [ ] P-V7ULH
+- [ ] P-YQASP
+
+#### corpus/collections/SRC-CA-ART-T34TG3
+
+- [ ] P-AKSSQ
+- [ ] P-EQGG7
+- [ ] P-YZ4WV
+
+#### corpus/collections/SRC-EMORY-CA-ARANGO/real-analysis
+
+- [ ] P-ULNGG
+- [ ] P-VAZ7S
+
+#### corpus/collections/SRC-JHU-ANALYSIS-EXAMS/qualifying-exam-analysis-spring-2014-p-15
+
+- [ ] P-8XT32
+
+#### corpus/collections/SRC-PRELIM-ART-A2355I
+
+- [ ] P-HUKW5
+- [ ] P-VAWOC
+
+#### corpus/collections/SRC-RA-WORKSHOP/day-2-metric-spaces-and-topology
+
+- [ ] P-RA-WORKSHOP-D2-METRIC-11
+- [ ] P-RA-WORKSHOP-D2-METRIC-12
+- [ ] P-RA-WORKSHOP-D2-METRIC-13
+- [ ] P-RA-WORKSHOP-D2-METRIC-HW1
+- [ ] P-RA-WORKSHOP-D2-METRIC-HW2
+- [ ] P-RA-WORKSHOP-D2-METRIC-HW3
+- [ ] P-RA-WORKSHOP-D2-METRIC-HW4
+- [ ] P-RA-WORKSHOP-D2-METRIC-HW5
+
+#### corpus/collections/SRC-RA-WORKSHOP/day-3-sequences-and-series
+
+- [ ] P-RA-WORKSHOP-D3-SEQ-12
+- [ ] P-RA-WORKSHOP-D3-SEQ-13
+- [ ] P-RA-WORKSHOP-D3-SEQ-14
+- [ ] P-RA-WORKSHOP-D3-SEQ-15
+- [ ] P-RA-WORKSHOP-D3-SEQ-16
+- [ ] P-RA-WORKSHOP-D3-SEQ-HW1
+- [ ] P-RA-WORKSHOP-D3-SEQ-HW2
+- [ ] P-RA-WORKSHOP-D3-SEQ-HW3
+- [ ] P-RA-WORKSHOP-D3-SEQ-HW4
+- [ ] P-RA-WORKSHOP-D3-SEQ-HW5
+
+#### corpus/collections/SRC-RA-WORKSHOP/day-4-continuity-of-functions
+
+- [ ] P-RA-WORKSHOP-D4-06
+- [ ] P-RA-WORKSHOP-D4-07
+- [ ] P-RA-WORKSHOP-D4-08
+- [ ] P-RA-WORKSHOP-D4-09
+- [ ] P-RA-WORKSHOP-D4-10
+- [ ] P-RA-WORKSHOP-D4-11
+- [ ] P-RA-WORKSHOP-D4-12
+- [ ] P-RA-WORKSHOP-D4-13
+- [ ] P-RA-WORKSHOP-D4-14
+- [ ] P-RA-WORKSHOP-D4-W1
+- [ ] P-RA-WORKSHOP-D4-W2
+- [ ] P-RA-WORKSHOP-D4-W3
+- [ ] P-RA-WORKSHOP-D4-W4
+- [ ] P-RA-WORKSHOP-D4-W5
+
+#### corpus/collections/SRC-RA-WORKSHOP/day-5-differential-calculus
+
+- [ ] P-RA-WORKSHOP-D5-10
+- [ ] P-RA-WORKSHOP-D5-11
+- [ ] P-RA-WORKSHOP-D5-12
+- [ ] P-RA-WORKSHOP-D5-13
+- [ ] P-RA-WORKSHOP-D5-W1
+- [ ] P-RA-WORKSHOP-D5-W2
+- [ ] P-RA-WORKSHOP-D5-W3
+
+#### corpus/collections/SRC-RA-WORKSHOP/day-6-integral-calculus
+
+- [ ] P-RA-WORKSHOP-D6-10
+- [ ] P-RA-WORKSHOP-D6-W1
+- [ ] P-RA-WORKSHOP-D6-W2
+- [ ] P-RA-WORKSHOP-D6-W3
+- [ ] P-RA-WORKSHOP-D6-W4
+
+#### corpus/collections/SRC-RA-WORKSHOP/day-7-sequences-and-series-of-functions
+
+- [ ] P-RA-WORKSHOP-D7-12
+- [ ] P-RA-WORKSHOP-D7-13
+- [ ] P-RA-WORKSHOP-D7-14
+- [ ] P-RA-WORKSHOP-D7-15
+- [ ] P-RA-WORKSHOP-D7-W1
+- [ ] P-RA-WORKSHOP-D7-W2
+- [ ] P-RA-WORKSHOP-D7-W3
+- [ ] P-RA-WORKSHOP-D7-W4
+- [ ] P-RA-WORKSHOP-D7-W5
+
+#### corpus/collections/SRC-RA-WORKSHOP/day-8-miscellaneous-topics
+
+- [ ] P-RA-WORKSHOP-D8-SEQ1
+
+#### corpus/collections/SRC-TAMU-RA-FALL-2014
+
+- [ ] P-8XT72
+- [ ] P-8XT73
+- [ ] P-8XT74
+- [ ] P-8XT75
+- [ ] P-8XT76
+- [ ] P-8XT77
+- [ ] P-8XT78
+- [ ] P-8XT79
+- [ ] P-8XT80
+- [ ] P-W5XWA
+
+#### corpus/collections/SRC-TAMU-RA-FALL-2015
+
+- [ ] P-8XT81
+- [ ] P-8XT82
+- [ ] P-8XT83
+- [ ] P-8XT84
+- [ ] P-8XT85
+- [ ] P-8XT86
+- [ ] P-8XT87
+- [ ] P-8XT88
+- [ ] P-C53SG
+- [ ] P-NIC7C
+
+#### corpus/collections/SRC-TAMU-RA-FALL-2016
+
+- [ ] P-4QQGN
+- [ ] P-7VK5X
+- [ ] P-8XT89
+- [ ] P-8XT90
+- [ ] P-8XT91
+- [ ] P-8XT92
+- [ ] P-FC62S
+- [ ] P-HWAMG
+- [ ] P-MSIER
+
+#### corpus/collections/SRC-TAMU-RA-SPRING-2015
+
+- [ ] P-8XT93
+- [ ] P-8XT94
+- [ ] P-8XT95
+- [ ] P-8XT96
+- [ ] P-8XT97
+- [ ] P-8XT98
+- [ ] P-8XT99
+- [ ] P-CTQ6G
+
+#### corpus/collections/SRC-TAMU-RA-SPRING-2016
+
+- [ ] P-8XT100
+- [ ] P-8XT101
+- [ ] P-8XT102
+- [ ] P-8XT103
+- [ ] P-8XT104
+- [ ] P-8XT105
+- [ ] P-8XT106
+- [ ] P-8XT107
+- [ ] P-YQDFJ
+- [ ] P-YSR66
+
+#### corpus/collections/SRC-TAMU-RA-SPRING-2017
+
+- [ ] P-8XT108
+- [ ] P-8XT109
+- [ ] P-8XT110
+- [ ] P-8XT111
+- [ ] P-8XT112
+- [ ] P-8XT113
+- [ ] P-8XT114
+- [ ] P-DQNN6
+- [ ] P-FSSHC
+- [ ] P-MIAAZ
+- [ ] P-TCJBY
+
+#### corpus/collections/SRC-TOP-2002Q1
+
+- [ ] P-2SGBM
+- [ ] P-4WCFE
+- [ ] P-5AXU3
+- [ ] P-6EVID
+- [ ] P-AISD5
+- [ ] P-EZ2B2
+- [ ] P-FRRZE
+- [ ] P-LYMLT
+- [ ] P-QRCUN
+
+#### corpus/collections/SRC-TOP-2011Q2
+
+- [ ] P-T08A2
+- [ ] P-T11A1
+- [ ] P-T11A3
+- [ ] P-T11A4
+- [ ] P-T11B1
+- [ ] P-T11B2
+- [ ] P-T11B3
+- [ ] P-T11B4
+
+#### corpus/collections/SRC-TOP-2012Q1
+
+- [ ] P-T12A1
+- [ ] P-T12A2
+- [ ] P-T12A3
+- [ ] P-T12A4
+- [ ] P-T12B1
+- [ ] P-T12B2
+- [ ] P-T12B3
+- [ ] P-T12B4
+
+#### corpus/collections/SRC-TOP-2012Q2
+
+- [ ] P-T12Q2-1
+- [ ] P-T12Q2-2
+- [ ] P-T12Q2-3
+- [ ] P-T12Q2-4
+- [ ] P-T12Q2-5
+- [ ] P-T12Q2-6
+- [ ] P-T12Q2-7
+- [ ] P-T12Q2-8
+
+#### corpus/collections/SRC-TOP-2013Q2
+
+- [ ] P-T13A1
+- [ ] P-T13A2
+- [ ] P-T13A3
+- [ ] P-T13A4
+- [ ] P-T13B1
+- [ ] P-T13B2
+- [ ] P-T13B3
+- [ ] P-T13B4
+
+#### corpus/collections/SRC-TOP-2015Q2
+
+- [ ] P-T15A1
+- [ ] P-T15A2
+- [ ] P-T15A3
+- [ ] P-T15A4
+- [ ] P-T15B1
+- [ ] P-T15B2
+- [ ] P-T15B3
+- [ ] P-T15B4
+
+#### corpus/collections/SRC-TOP-2017Q2
+
+- [ ] P-T06Q2-1
+- [ ] P-T17Q2-1
+- [ ] P-T17Q2-2
+- [ ] P-T17Q2-4
+- [ ] P-T17Q2-5
+- [ ] P-T17Q2-6
+- [ ] P-T17Q2-7
+- [ ] P-T17Q2-8
+
+#### corpus/collections/SRC-TOP-2018Q2
+
+- [ ] P-T18A1
+- [ ] P-T18A2
+- [ ] P-T18A3
+- [ ] P-T18A4
+- [ ] P-T18B1
+- [ ] P-T18B2
+- [ ] P-T18B3
+- [ ] P-T18B4
+
+#### corpus/collections/SRC-TOP-2019Q1
+
+- [ ] P-T06Q1-4
+- [ ] P-T09B2
+- [ ] P-T19Q1-2
+- [ ] P-T19Q1-3
+- [ ] P-T19Q1-4
+- [ ] P-T19Q1-5
+- [ ] P-T19Q1-7
+- [ ] P-T19Q1-8
+
+#### corpus/collections/SRC-TOP-2019Q2
+
+- [ ] P-KCN2B
+- [ ] P-T19A1
+- [ ] P-T19A3
+- [ ] P-T19A4
+- [ ] P-T19B1
+- [ ] P-T19B2
+- [ ] P-T19B3
+- [ ] P-T19B4
+
+#### corpus/collections/SRC-TOP-2020Q1
+
+- [ ] P-T20A1
+- [ ] P-T20A2
+- [ ] P-T20A3
+- [ ] P-T20A4
+- [ ] P-T20B1
+- [ ] P-T20B2
+- [ ] P-T20B3
+- [ ] P-T20B4
+
+#### corpus/collections/SRC-TOPOLOGY-PHD-F07
+
+- [ ] P-TOPOLOGY-PHD-F07-01
+- [ ] P-TOPOLOGY-PHD-F07-02
+- [ ] P-TOPOLOGY-PHD-F07-03
+- [ ] P-TOPOLOGY-PHD-F07-04
+- [ ] P-TOPOLOGY-PHD-F07-05
+- [ ] P-TOPOLOGY-PHD-F07-07
+- [ ] P-TOPOLOGY-PHD-F07-08
+- [ ] P-TOPOLOGY-PHD-F07-09
+- [ ] P-TOPOLOGY-PHD-F07-10
+- [ ] P-TOPOLOGY-PHD-F07-11
+- [ ] P-TOPOLOGY-PHD-F07-12
+- [ ] P-TOPOLOGY-PHD-F07-13
+- [ ] P-TOPOLOGY-PHD-F07-14
+- [ ] P-TOPOLOGY-PHD-F07-15
+- [ ] P-TOPOLOGY-PHD-F07-16
+- [ ] P-TOPOLOGY-PHD-F07-17
+- [ ] P-TOPOLOGY-PHD-F07-18
+- [ ] P-TOPOLOGY-PHD-F07-19
+- [ ] P-TOPOLOGY-PHD-F95-05
+
+#### corpus/collections/SRC-TOPOLOGY-PHD-F08
+
+- [ ] P-TOPOLOGY-PHD-F08-01
+- [ ] P-TOPOLOGY-PHD-F08-02
+- [ ] P-TOPOLOGY-PHD-F08-03
+- [ ] P-TOPOLOGY-PHD-F08-04
+- [ ] P-TOPOLOGY-PHD-F08-05
+- [ ] P-TOPOLOGY-PHD-F08-06
+- [ ] P-TOPOLOGY-PHD-F08-07
+- [ ] P-TOPOLOGY-PHD-F08-08
+- [ ] P-TOPOLOGY-PHD-F08-09
+- [ ] P-TOPOLOGY-PHD-F08-10
+- [ ] P-TOPOLOGY-PHD-F08-11
+- [ ] P-TOPOLOGY-PHD-F08-12
+- [ ] P-TOPOLOGY-PHD-F08-13
+- [ ] P-TOPOLOGY-PHD-F08-14
+- [ ] P-TOPOLOGY-PHD-F08-15
+- [ ] P-TOPOLOGY-PHD-F08-16
+- [ ] P-TOPOLOGY-PHD-F08-17
+- [ ] P-TOPOLOGY-PHD-F08-18
+- [ ] P-TOPOLOGY-PHD-F08-19
+
+#### corpus/collections/SRC-TOPOLOGY-PHD-F95
+
+- [ ] P-TOPOLOGY-PHD-F95-01
+- [ ] P-TOPOLOGY-PHD-F95-03
+- [ ] P-TOPOLOGY-PHD-F95-04
+- [ ] P-TOPOLOGY-PHD-F95-06
+- [ ] P-TOPOLOGY-PHD-F95-07
+- [ ] P-TOPOLOGY-PHD-F95-08
+- [ ] P-TOPOLOGY-PHD-F95-09
+- [ ] P-TOPOLOGY-PHD-F95-10
+
+#### corpus/collections/SRC-TOP-UNL-2005Q2
+
+- [ ] P-T05A1
+- [ ] P-T05A2
+- [ ] P-T05A3
+- [ ] P-T05A4
+- [ ] P-T05B1
+- [ ] P-T05B2
+- [ ] P-T05B3
+- [ ] P-T05B4
+
+#### corpus/collections/SRC-TOP-UNL-2006Q1
+
+- [ ] P-T06Q1-1
+- [ ] P-T06Q1-2
+- [ ] P-T06Q1-3
+- [ ] P-T06Q1-5
+- [ ] P-T06Q1-6
+- [ ] P-T06Q1-7
+- [ ] P-T06Q1-8
+- [ ] P-T06Q1-9
+
+#### corpus/collections/SRC-TOP-UNL-2006Q2
+
+- [ ] P-T06Q2-10
+- [ ] P-T06Q2-2
+- [ ] P-T06Q2-3
+- [ ] P-T06Q2-4
+- [ ] P-T06Q2-5
+- [ ] P-T06Q2-6
+- [ ] P-T06Q2-7
+- [ ] P-T06Q2-8
+- [ ] P-T06Q2-9
+
+#### corpus/collections/SRC-TOP-UNL-2007Q2
+
+- [ ] P-T07A1
+- [ ] P-T07A2
+- [ ] P-T07A3
+- [ ] P-T07A4
+- [ ] P-T07B1
+- [ ] P-T07B2
+- [ ] P-T07B3
+- [ ] P-T07B4
+
+#### corpus/collections/SRC-TOP-UNL-2008Q2
+
+- [ ] P-T08A1
+- [ ] P-T08A3
+- [ ] P-T08A4
+- [ ] P-T08B1
+- [ ] P-T08B2
+- [ ] P-T08B3
+- [ ] P-T08B4
+
+#### corpus/collections/SRC-TOP-UNL-2009Q2
+
+- [ ] P-T09A1
+- [ ] P-T09A2
+- [ ] P-T09A3
+- [ ] P-T09A4
+- [ ] P-T09B1
+- [ ] P-T09B3
+- [ ] P-T09B4
+
+#### corpus/collections/SRC-TOP-UNL-2010Q2
+
+- [ ] P-T10A1
+- [ ] P-T10A2
+- [ ] P-T10A3
+- [ ] P-T10A4
+- [ ] P-T10B1
+- [ ] P-T10B2
+- [ ] P-T10B3
+- [ ] P-T10B4
+
+#### corpus/collections/SRC-TOP-UNL-2014Q2
+
+- [ ] P-T14A1
+- [ ] P-T14A2
+- [ ] P-T14A3
+- [ ] P-T14A4
+- [ ] P-T14B1
+- [ ] P-T14B2
+- [ ] P-T14B3
+- [ ] P-T14B4
+
+#### corpus/collections/SRC-TOP-UNL-2016Q2
+
+- [ ] P-T16A1
+- [ ] P-T16A2
+- [ ] P-T16A3
+- [ ] P-T16A4
+- [ ] P-T16B1
+- [ ] P-T16B2
+- [ ] P-T16B3
+- [ ] P-T16B4
+
+#### corpus/collections/SRC-TOP-UNL-2017Q1
+
+- [ ] P-T17Q1-1
+- [ ] P-T17Q1-2
+- [ ] P-T17Q1-3
+- [ ] P-T17Q1-4
+- [ ] P-T17Q1-5
+- [ ] P-T17Q1-6
+- [ ] P-T17Q1-7
+- [ ] P-T17Q1-8
+
+#### corpus/collections/SRC-TOP-WORKSHOP-2020/worksheet-2a
+
+- [ ] P-TOP-WORKSHOP-2020-WS2A-HW1
+- [ ] P-TOP-WORKSHOP-2020-WS2A-HW2
+- [ ] P-TOP-WORKSHOP-2020-WS2A-HW3
+- [ ] P-TOP-WORKSHOP-2020-WS2A-HW4
+- [ ] P-TOP-WORKSHOP-2020-WS2A-HW5
+- [ ] P-TOP-WORKSHOP-2020-WS2A-P1
+
+#### corpus/collections/SRC-TOP-WORKSHOP-2020/worksheet-2b
+
+- [ ] P-TOP-WORKSHOP-2020-WS2B-HW1
+- [ ] P-TOP-WORKSHOP-2020-WS2B-HW2
+- [ ] P-TOP-WORKSHOP-2020-WS2B-HW3
+- [ ] P-TOP-WORKSHOP-2020-WS2B-P3
+
+#### corpus/collections/SRC-TOP-WORKSHOP-2020/worksheet-2
+
+- [ ] P-TOP-WORKSHOP-2020-WS1B-HW1
+- [ ] P-TOP-WORKSHOP-2020-WS1B-HW2
+- [ ] P-TOP-WORKSHOP-2020-WS1B-HW3
+- [ ] P-TOP-WORKSHOP-2020-WS1B-HW4
+
+#### corpus/collections/SRC-TOP-WORKSHOP-2020/worksheet-3a
+
+- [ ] P-TOP-WORKSHOP-2020-WS3A-HW1
+- [ ] P-TOP-WORKSHOP-2020-WS3A-HW2
+- [ ] P-TOP-WORKSHOP-2020-WS3A-HW3
+- [ ] P-TOP-WORKSHOP-2020-WS3A-P2
+
+#### corpus/collections/SRC-TOP-WORKSHOP-2020/worksheet-3b
+
+- [ ] P-TOP-WORKSHOP-2020-WS3B-HW1
+- [ ] P-TOP-WORKSHOP-2020-WS3B-HW2
+- [ ] P-TOP-WORKSHOP-2020-WS3B-HW3
+- [ ] P-TOP-WORKSHOP-2020-WS3B-P4
+
+#### corpus/collections/SRC-TOP-WORKSHOP-2020/worksheet-4a
+
+- [ ] P-TOP-WORKSHOP-2020-WS4A-HW1
+- [ ] P-TOP-WORKSHOP-2020-WS4A-HW2
+- [ ] P-TOP-WORKSHOP-2020-WS4A-HW3
+- [ ] P-TOP-WORKSHOP-2020-WS4A-HW4
+
+#### corpus/collections/SRC-TOP-WORKSHOP/day-1-compactness
+
+- [ ] P-TOP-WORKSHOP-D1-02
+- [ ] P-TOP-WORKSHOP-D1-07
+- [ ] P-TOP-WORKSHOP-D1-08
+- [ ] P-TOP-WORKSHOP-D1-09
+- [ ] P-TOP-WORKSHOP-D1-W1
+- [ ] P-TOP-WORKSHOP-D1-W2
+
+#### corpus/collections/SRC-TOP-WORKSHOP/day-2-connectedness-and-path-connectedness
+
+- [ ] P-TOP-WORKSHOP-D2-02
+- [ ] P-TOP-WORKSHOP-D2-06
+- [ ] P-TOP-WORKSHOP-D2-W1
+- [ ] P-TOP-WORKSHOP-D2-W2
+- [ ] P-TOP-WORKSHOP-D2-W3
+
+#### corpus/collections/SRC-TOP-WORKSHOP/day-3-separation-axioms
+
+- [ ] P-TOP-WORKSHOP-D3-01
+- [ ] P-TOP-WORKSHOP-D3-03
+- [ ] P-TOP-WORKSHOP-D3-04
+- [ ] P-TOP-WORKSHOP-D3-05
+- [ ] P-TOP-WORKSHOP-D3-06
+- [ ] P-TOP-WORKSHOP-D3-W1
+- [ ] P-TOP-WORKSHOP-D3-W2
+- [ ] P-TOP-WORKSHOP-D3-W3
+
+#### corpus/collections/SRC-TOP-WORKSHOP/day-4-counterexamples-and-assorted-problems
+
+- [ ] P-TOP-WORKSHOP-D4-03B
+- [ ] P-TOP-WORKSHOP-D4-03
+- [ ] P-TOP-WORKSHOP-D4-04B
+- [ ] P-TOP-WORKSHOP-D4-04
+- [ ] P-TOP-WORKSHOP-D4-W1
+- [ ] P-TOP-WORKSHOP-D4-W2
+- [ ] P-TOP-WORKSHOP-D4-W3
+
+#### corpus/collections/SRC-TOP-WORKSHOP/day-7-fundamental-groups
+
+- [ ] P-TOP-WORKSHOP-D7-G01
+- [ ] P-TOP-WORKSHOP-D7-G02
+- [ ] P-TOP-WORKSHOP-D7-G02-SVK
+- [ ] P-TOP-WORKSHOP-D7-G03
+- [ ] P-TOP-WORKSHOP-D7-G04-AXES
+- [ ] P-TOP-WORKSHOP-D7-G04
+- [ ] P-TOP-WORKSHOP-D7-G05
+- [ ] P-TOP-WORKSHOP-D7-G06
+- [ ] P-TOP-WORKSHOP-D7-G06-TRIANGLE
+- [ ] P-TOP-WORKSHOP-D7-GW1
+- [ ] P-TOP-WORKSHOP-D7-GW2
+- [ ] P-TOP-WORKSHOP-D7-GW3
+
+#### corpus/collections/SRC-TOP-WORKSHOP/day-8-covering-spaces
+
+- [ ] P-TOP-WORKSHOP-D8-01
+- [ ] P-TOP-WORKSHOP-D8-02
+- [ ] P-TOP-WORKSHOP-D8-03
+- [ ] P-TOP-WORKSHOP-D8-04
+- [ ] P-TOP-WORKSHOP-D8-05
+- [ ] P-TOP-WORKSHOP-D8-06
+- [ ] P-TOP-WORKSHOP-D8-07
+- [ ] P-TOP-WORKSHOP-D8-08
+- [ ] P-TOP-WORKSHOP-D8-12
+- [ ] P-TOP-WORKSHOP-D8-CW1
+- [ ] P-TOP-WORKSHOP-D8-CW2
+
+#### corpus/collections/SRC-TOP-WORKSHOP/day-9-homology
+
+- [ ] P-TOP-WORKSHOP-D9-01
+- [ ] P-TOP-WORKSHOP-D9-02
+- [ ] P-TOP-WORKSHOP-D9-03
+- [ ] P-TOP-WORKSHOP-D9-04
+- [ ] P-TOP-WORKSHOP-D9-05
+- [ ] P-TOP-WORKSHOP-D9-06
+- [ ] P-TOP-WORKSHOP-D9-07
+- [ ] P-TOP-WORKSHOP-D9-HW1
+
+#### corpus/collections/SRC-UCLA-RA-FALL-2009
+
+- [ ] P-8XT51
+- [ ] P-8XT52
+- [ ] P-8XT53
+- [ ] P-8XT54
+- [ ] P-8XT55
+- [ ] P-8XT56
+- [ ] P-8XT57
+- [ ] P-JNFJW
+- [ ] P-Q75IH
+- [ ] P-QSYKP
+- [ ] P-RC7YY
+- [ ] P-ULPU3
+
+#### corpus/collections/SRC-UCLA-RA-FALL-2010
+
+- [ ] P-625QO
+- [ ] P-8XT68
+- [ ] P-8XT69
+- [ ] P-8XT70
+- [ ] P-8XT71
+- [ ] P-AE7QC
+- [ ] P-CH37V
+- [ ] P-J64FR
+- [ ] P-YHXGO
+
+#### corpus/collections/SRC-UCLA-RA-SPRING-2009
+
+- [ ] P-7Q5AM
+- [ ] P-8XT58
+- [ ] P-8XT59
+- [ ] P-8XT60
+- [ ] P-8XT61
+- [ ] P-8XT62
+- [ ] P-8XT63
+- [ ] P-C44AH
+- [ ] P-DX7WA
+- [ ] P-QZE53
+- [ ] P-SJPBM
+- [ ] P-SVQNB
+
+#### corpus/collections/SRC-UCLA-RA-SPRING-2010
+
+- [ ] P-8XT64
+- [ ] P-8XT65
+- [ ] P-8XT66
+- [ ] P-8XT67
+- [ ] P-COS2L
+- [ ] P-HHNOP
+- [ ] P-PQG5I
+- [ ] P-PZO5Y
+- [ ] P-S4PJP
+- [ ] P-US46A
+- [ ] P-UUYPV
+- [ ] P-Y2AZO
+
+#### corpus/collections/SRC-UGA-ALG-SPRING-2015
+
+- [ ] P-POJFX
+- [ ] P-QWEAV
+
+#### corpus/collections/SRC-UGA-ALG-SPRING-2016
+
+- [ ] P-CPB5V
+- [ ] P-LL7UL
+
+#### corpus/collections/SRC-UGA-ALG-SPRING-2017
+
+- [ ] P-PC6ZW
+
+#### corpus/collections/SRC-UGA-ALG-SPRING-2021
+
+- [ ] P-4XOCE
+
+#### corpus/collections/SRC-UGA-CA-FALL-2009
+
+- [ ] P-3IDAX
+
+#### corpus/collections/SRC-UGA-CA-FALL-2011
+
+- [ ] P-5R3FT
+- [ ] P-JW4A4
+- [ ] P-TA3FG
+
+#### corpus/collections/SRC-UGA-CA-FALL-2016
+
+- [ ] P-Z4CIU
+
+#### corpus/collections/SRC-UGA-CA-FALL-2018
+
+- [ ] P-ER23C
+
+#### corpus/collections/SRC-UGA-CA-FALL-2019
+
+- [ ] P-4KVTJ
+- [ ] P-6N3HI
+- [ ] P-AG7QC
+- [ ] P-XKOQR
+
+#### corpus/collections/SRC-UGA-CA-FALL-2020
+
+- [ ] P-37Z7J
+- [ ] P-AQRVL
+- [ ] P-HOGMY
+- [ ] P-IYE3I
+- [ ] P-LIA5G
+- [ ] P-P47SB
+- [ ] P-P5VOR
+
+#### corpus/collections/SRC-UGA-CA-FALL-2021
+
+- [ ] P-6VN3T
+- [ ] P-B4HPX
+- [ ] P-BSATZ
+- [ ] P-EDU3Q
+- [ ] P-GK4F6
+- [ ] P-OONH6
+- [ ] P-W23PS
+
+#### corpus/collections/SRC-UGA-CA-SPRING-2011
+
+- [ ] P-BFLEH
+
+#### corpus/collections/SRC-UGA-CA-SPRING-2014
+
+- [ ] P-3KOGW
+- [ ] P-TKF72
+- [ ] P-WASE4
+
+#### corpus/collections/SRC-UGA-CA-SPRING-2015
+
+- [ ] P-KNIPC
+
+#### corpus/collections/SRC-UGA-CA-SPRING-2017
+
+- [ ] P-Q7NED
+
+#### corpus/collections/SRC-UGA-CA-SPRING-2019
+
+- [ ] P-EA222
+- [ ] P-PM5FN
+- [ ] P-VSKE4
+- [ ] P-ZAVLU
+
+#### corpus/collections/SRC-UGA-CA-SPRING-2020
+
+- [ ] P-7ENEI
+- [ ] P-BTUCW
+- [ ] P-CZ3R7
+- [ ] P-PSIBT
+
+#### corpus/collections/SRC-UGA-CA-SPRING-2021
+
+- [ ] P-CZQLT
+- [ ] P-H7Z7N
+- [ ] P-IV4XE
+- [ ] P-RLZK3
+- [ ] P-VUVYD
+
+#### corpus/collections/SRC-UGA-PRELIM-FALL-2002
+
+- [ ] P-FBY23
+- [ ] P-IMVV7
+- [ ] P-KU6C3
+- [ ] P-MSLD5
+- [ ] P-TGH5F
+
+#### corpus/collections/SRC-UGA-PRELIM-FALL-2003
+
+- [ ] P-FKEN5
+- [ ] P-NVWMC
+
+#### corpus/collections/SRC-UGA-PRELIM-FALL-2004
+
+- [ ] P-ABRWU
+- [ ] P-AOZMW
+- [ ] P-KBGYN
+- [ ] P-Q5LN7
+
+#### corpus/collections/SRC-UGA-PRELIM-FALL-2005
+
+- [ ] P-3373K
+- [ ] P-HOBOM
+- [ ] P-LHC3M
+- [ ] P-SD42B
+- [ ] P-YVA5W
+
+#### corpus/collections/SRC-UGA-PRELIM-FALL-2006
+
+- [ ] P-CJUIR
+- [ ] P-MW5EM
+- [ ] P-TWH7U
+- [ ] P-V4VXC
+
+#### corpus/collections/SRC-UGA-PRELIM-FALL-2007
+
+- [ ] P-2WRUJ
+- [ ] P-4PCPV
+- [ ] P-5YTY5
+- [ ] P-YLM7G
+
+#### corpus/collections/SRC-UGA-PRELIM-FALL-2010
+
+- [ ] P-3DZXT
+- [ ] P-5HVC4
+- [ ] P-TBXVH
+- [ ] P-UH7ZQ
+
+#### corpus/collections/SRC-UGA-PRELIM-FALL-2012
+
+- [ ] P-AR3HH
+- [ ] P-JVZMJ
+- [ ] P-UU43Q
+
+#### corpus/collections/SRC-UGA-PRELIM-SPRING-2003
+
+- [ ] P-GB7EM
+- [ ] P-MFVEZ
+
+#### corpus/collections/SRC-UGA-PRELIM-SPRING-2004
+
+- [ ] P-4STQR
+- [ ] P-FPWV6
+- [ ] P-UE5L6
+
+#### corpus/collections/SRC-UGA-PRELIM-SPRING-2005
+
+- [ ] P-5XCMC
+- [ ] P-6POHT
+- [ ] P-OQW4B
+- [ ] P-VA72Z
+
+#### corpus/collections/SRC-UGA-PRELIM-SPRING-2006
+
+- [ ] P-I3UPP
+- [ ] P-JLPVR
+
+#### corpus/collections/SRC-UGA-PRELIM-SPRING-2007
+
+- [ ] P-CEU5R
+- [ ] P-CQNPO
+- [ ] P-OK5P3
+
+#### corpus/collections/SRC-UGA-RA-FALL-2014
+
+- [ ] P-5SMO5
+- [ ] P-KH5ZV
+
+#### corpus/collections/SRC-UGA-RA-FALL-2015
+
+- [ ] P-RDMYM
+- [ ] P-SMJE7
+
+#### corpus/collections/SRC-UGA-RA-FALL-2020
+
+- [ ] P-B2CWE
+- [ ] P-D6N7M
+- [ ] P-I3DSE
+- [ ] P-PMDP4
+
+#### corpus/collections/SRC-UGA-RA-FALL-2021
+
+- [ ] P-JCEPZ
+- [ ] P-XRNHW
+- [ ] P-Y34JB
+
+#### corpus/collections/SRC-UGA-RA-SPRING-2014
+
+- [ ] P-2HIC2
+- [ ] P-UMAQ5
+
+#### corpus/collections/SRC-UGA-RA-SPRING-2015
+
+- [ ] P-GXAKN
+
+#### corpus/collections/SRC-UGA-RA-SPRING-2020
+
+- [ ] P-HBWN6
+- [ ] P-XL7MP
+
+#### corpus/collections/SRC-UGA-RA-SPRING-2021
+
+- [ ] P-AK3OT
+- [ ] P-KPNWG
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2004
+
+- [ ] P-HOIQ3
+- [ ] P-IOVNM
+- [ ] P-QN7OP
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2005
+
+- [ ] P-HVKUA
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2006
+
+- [ ] P-A5CFD
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2007
+
+- [ ] P-MYZU2
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2009
+
+- [ ] P-CI7E2
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2012
+
+- [ ] P-SGK4K
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2014
+
+- [ ] P-4URWK
+- [ ] P-7N24X
+- [ ] P-B4N3X
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2016
+
+- [ ] P-DYBYC
+- [ ] P-KSQQ5
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2017
+
+- [ ] P-G373O
+- [ ] P-QICKA
+
+#### corpus/collections/SRC-UGA-TOP-FALL-2018
+
+- [ ] P-4X3OY
+- [ ] P-XMOZA
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2005
+
+- [ ] P-2HMGE
+- [ ] P-FZIG3
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2006
+
+- [ ] P-7CYRD
+- [ ] P-VAJSW
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2007
+
+- [ ] P-C62HS
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2008
+
+- [ ] P-BPDEA
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2009
+
+- [ ] P-L3BUX
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2010
+
+- [ ] P-MHQ6A
+- [ ] P-URS24
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2011
+
+- [ ] P-IE2G7
+- [ ] P-XXLEK
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2012
+
+- [ ] P-L4EMZ
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2013
+
+- [ ] P-EOZ7B
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2015
+
+- [ ] P-43KOX
+- [ ] P-72DG6
+- [ ] P-OKDFC
+- [ ] P-RIW3S
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2016
+
+- [ ] P-3TQB5
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2018
+
+- [ ] P-VPACG
+
+#### corpus/collections/SRC-UGA-TOP-SPRING-2019
+
+- [ ] P-KVMKV
+- [ ] P-PATOJ
+
+#### corpus/collections/SRC-UNL-RA-SPRING-2019
+
+- [ ] P-RA19J1
+- [ ] P-RA19J2
+- [ ] P-RA19J5
+- [ ] P-RA19J6
+
+#### corpus/collections/SRC-UNL-RA-SUMMER-2018
+
+- [ ] P-RA18M1
+- [ ] P-RA18M2
+- [ ] P-RA18M3
+- [ ] P-RA18M4
+- [ ] P-RA18M5
+- [ ] P-RA18M6
+
+#### corpus/qrs
+
+- [ ] E-22P3T
+- [ ] E-23SLE
+- [ ] E-5GT6F
+- [ ] E-BAOST
+- [ ] E-CFHC4
+- [ ] E-DFUYC
+- [ ] E-EMESP
+- [ ] E-FRWVZ
+- [ ] E-GYGP2
+- [ ] E-JK5PG
+- [ ] E-LUR7G
+- [ ] E-QSNCL
+- [ ] E-SNRS5
+- [ ] E-T4VAX
+- [ ] E-THK2Z
+- [ ] E-TJ3WM
+- [ ] E-VI5ZS
+- [ ] E-XQ4BS
+- [ ] E-XXZVG
+- [ ] E-YCHOS
+- [ ] E-Z66NC
+- [ ] P-OFKQJ
+
+#### corpus/wiki
+
+- [ ] C-44LL4
+- [ ] C-HWX2P
+- [ ] C-WR7YV
+- [ ] C-XRC67
+- [ ] D-MVBYO
+- [ ] D-YO6NZ
+- [ ] E-24ETT
+- [ ] E-26QQP
+- [ ] E-2KJEL
+- [ ] E-2ZO7O
+- [ ] E-37H2C
+- [ ] E-3GIQS
+- [ ] E-3KD4O
+- [ ] E-3LIG3
+- [ ] E-3M6WZ
+- [ ] E-47X7Y
+- [ ] E-4EZMD
+- [ ] E-4NGIV
+- [ ] E-4P3T2
+- [ ] E-4WFQM
+- [ ] E-5IG73
+- [ ] E-5KI4G
+- [ ] E-5Q5LW
+- [ ] E-5ZG7B
+- [ ] E-6F2HU
+- [ ] E-6OUJV
+- [ ] E-6ROMA
+- [ ] E-6TMP7
+- [ ] E-6ULIT
+- [ ] E-6XPQW
+- [ ] E-7PAHX
+- [ ] E-AUAOC
+- [ ] E-BH6Q6
+- [ ] E-BPEP3
+- [ ] E-BPSOU
+- [ ] E-BSGSM
+- [ ] E-BSL3Q
+- [ ] E-C5QHZ
+- [ ] E-CLMEK
+- [ ] E-D62SD
+- [ ] E-DAS3L
+- [ ] E-DKMHL
+- [ ] E-E2LGY
+- [ ] E-EG3W7
+- [ ] E-ELZ3Z
+- [ ] E-EUGUZ
+- [ ] E-FCTXH
+- [ ] E-FJZCL
+- [ ] E-FVXIT
+- [ ] E-FXYTL
+- [ ] E-G4KAC
+- [ ] E-GAGCW
+- [ ] E-GEVBZ
+- [ ] E-GFNDF
+- [ ] E-GNYRR
+- [ ] E-GQMTN
+- [ ] E-H3AV4
+- [ ] E-HGWPG
+- [ ] E-HHSCS
+- [ ] E-HKLAA
+- [ ] E-HOJKE
+- [ ] E-I6CYR
+- [ ] E-I7ZD4
+- [ ] E-IPIKC
+- [ ] E-ITVTT
+- [ ] E-J3QMJ
+- [ ] E-JXU5L
+- [ ] E-K3OJW
+- [ ] E-K4SU4
+- [ ] E-KB4GA
+- [ ] E-KQTPV
+- [ ] E-KZB33
+- [ ] E-L3CZY
+- [ ] E-LJ7PF
+- [ ] E-LQTR7
+- [ ] E-LUH54
+- [ ] E-M6J67
+- [ ] E-M6XGF
+- [ ] E-MLXNX
+- [ ] E-N5RKI
+- [ ] E-NIPUY
+- [ ] E-NNTQB
+- [ ] E-NUJ7W
+- [ ] E-NUMZV
+- [ ] E-NVCIF
+- [ ] E-NXHG6
+- [ ] E-O5SOQ
+- [ ] E-O73XQ
+- [ ] E-OB3LO
+- [ ] E-OBU6T
+- [ ] E-OMK54
+- [ ] E-ORJPT
+- [ ] E-OYP3Y
+- [ ] E-P4LG6
+- [ ] E-P5BF6
+- [ ] E-PAQWN
+- [ ] E-PCVOI
+- [ ] E-PHSV5
+- [ ] E-PLJCK
+- [ ] E-PQ3FR
+- [ ] E-PWVJS
+- [ ] E-Q565Y
+- [ ] E-QIB7A
+- [ ] E-R6I7G
+- [ ] E-RAVAC
+- [ ] E-RKPAV
+- [ ] E-SHKZX
+- [ ] E-SUDRI
+- [ ] E-SWC3U
+- [ ] E-TDDQI
+- [ ] E-TUKVC
+- [ ] E-TXSKL
+- [ ] E-TYPSR
+- [ ] E-TZJKN
+- [ ] E-U2X4C
+- [ ] E-UDPOY
+- [ ] E-UJAF4
+- [ ] E-UWKTZ
+- [ ] E-VFEWT
+- [ ] E-VPWK4
+- [ ] E-W4GDW
+- [ ] E-W7WQV
+- [ ] E-WH2YQ
+- [ ] E-WKY7C
+- [ ] E-WNTXK
+- [ ] E-WPGNS
+- [ ] E-WSJ6P
+- [ ] E-WXIRH
+- [ ] E-XAHHJ
+- [ ] E-XBYYR
+- [ ] E-XH2QU
+- [ ] E-XUSHV
+- [ ] E-XXUNZ
+- [ ] E-XZWER
+- [ ] E-YFBH5
+- [ ] E-YMM6X
+- [ ] E-YW6CQ
+- [ ] E-YYL5U
+- [ ] E-ZC34M
+- [ ] E-ZCJZC
+- [ ] E-ZDVLE
+- [ ] E-ZXKDY
+- [ ] L-C5DDK
+- [ ] L-JBMRH
+- [ ] L-VDLNM
+- [ ] L-W5S2W
+- [ ] L-Y5KNM
+- [ ] L-ZXBBI
+- [ ] P-2CKBC
+- [ ] P-2DXZW
+- [ ] P-2VQDC
+- [ ] P-3EAU2
+- [ ] P-4HP1O
+- [ ] P-4KPQM
+- [ ] P-4NBXB
+- [ ] P-4TU4Y
+- [ ] P-5S2DR
+- [ ] P-5SR2D
+- [ ] P-5UUNM
+- [ ] P-5VEUZ
+- [ ] P-63VGL
+- [ ] P-6BURM
+- [ ] P-6SR5N
+- [ ] P-A46P2
+- [ ] P-ABRPK
+- [ ] P-AE67M
+- [ ] P-AKPY4
+- [ ] P-BGFKE
+- [ ] P-BUD7S
+- [ ] P-CV2MR
+- [ ] P-DFHS3
+- [ ] P-DS4D6
+- [ ] P-E2CRQ
+- [ ] P-EHLPT
+- [ ] P-EJKY7
+- [ ] P-EV3YB
+- [ ] P-FHQAB
+- [ ] P-FOAQM
+- [ ] P-FY3WB
+- [ ] P-GTJDX
+- [ ] P-H2WTL
+- [ ] P-HCA6D
+- [ ] P-HQCDF
+- [ ] P-HQWC5
+- [ ] P-ICOAE
+- [ ] P-IHU2C
+- [ ] P-IIONX
+- [ ] P-IP7XN
+- [ ] P-JOGPB
+- [ ] P-K5XUM
+- [ ] P-KNLBB
+- [ ] P-KPCIE
+- [ ] P-KVFWY
+- [ ] P-L52MJ
+- [ ] P-LOXDS
+- [ ] P-MICNK
+- [ ] P-MKTOL
+- [ ] P-MYZMF
+- [ ] P-N6W5L
+- [ ] P-NBQ5W
+- [ ] P-NY56Z
+- [ ] P-OIP5P
+- [ ] P-OOVED
+- [ ] P-P7IWV
+- [ ] P-QZT5B
+- [ ] P-R3DSM
+- [ ] PR-3W4FO
+- [ ] PR-47TTS
+- [ ] PR-5PDNQ
+- [ ] PR-7KTA6
+- [ ] PR-BHUO6
+- [ ] PR-C626A
+- [ ] PR-DLPTR
+- [ ] PR-EDD7U
+- [ ] PR-EHIXY
+- [ ] PR-F2N4L
+- [ ] PR-FYXFF
+- [ ] PR-GXII2
+- [ ] PR-JTFMW
+- [ ] PR-K6MMW
+- [ ] PR-LPJLD
+- [ ] PR-MGRGF
+- [ ] P-RMZDG
+- [ ] PR-NZZ2C
+- [ ] PR-O5YUI
+- [ ] PR-OF7ZW
+- [ ] PR-OGEEA
+- [ ] P-RPV6B
+- [ ] PR-QDIOC
+- [ ] PR-R72XL
+- [ ] PR-TGFTL
+- [ ] PR-TWF4F
+- [ ] PR-UZVC3
+- [ ] PR-YJJSY
+- [ ] PR-Z5VSQ
+- [ ] P-S7WVQ
+- [ ] P-SCDUI
+- [ ] P-SFDLG
+- [ ] P-SWILN
+- [ ] P-TFOOH
+- [ ] P-TZJQI
+- [ ] P-UMC34
+- [ ] P-UPCWX
+- [ ] P-URPZ4
+- [ ] P-VDKZF
+- [ ] P-WJNR3
+- [ ] P-WOHZ6
+- [ ] P-XA3WA
+- [ ] P-XIY3O
+- [ ] P-XWO5N
+- [ ] P-Y5SS5
+- [ ] P-YDJE6
+- [ ] P-YFBBW
+- [ ] P-YJFBZ
+- [ ] P-YV744
+- [ ] P-YWMCT
+- [ ] P-YYEUK
+- [ ] P-Z776N
+- [ ] P-ZZXH3
+- [ ] T-4KKSH
+- [ ] T-BRWA7
+- [ ] T-O2PGN
+- [ ] T-S2OLJ
+
+#### corpus/ws9
+
+- [ ] P-K5L2R
 ### Correct mathematical and structural defects
 
 Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)

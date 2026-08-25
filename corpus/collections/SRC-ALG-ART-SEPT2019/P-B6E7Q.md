@@ -2,8 +2,7 @@
 schema: qual/card@1
 id: P-B6E7Q
 kind: problem
-title: $\ker\rho=\{g:\chi(g)=\chi(1)\}$; a character table of order $120$, and the
-  table of $G/Z(G)$
+title: The character criterion for kernels and a character table of order 120
 classification:
   areas:
   - algebra
@@ -15,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $G$ be a finite group.
 Adopt the usual notation for the character table of $G$.
 In particular, $C_1 = \{1\}, C_2,\dots,C_n$ are the conjugacy classes and $\chi_1 = \mathbf{1}, \chi_2,\dots,\chi_n$ are the irreducible characters.

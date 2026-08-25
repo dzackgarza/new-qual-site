@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-EHBDD
 kind: problem
-title: Semisimplicity of $eRe$ for an idempotent $e$, Artin–Wedderburn, and $J(eRe)=eJ(R)e$
+title: Semisimplicity and the Jacobson radical of the corner ring $eRe$
 classification:
   areas:
   - algebra
@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 In this question, $R$ is a ring and $e \in R$ is an idempotent, so that $eRe$ is another ring with identity element $e$.
 
 a. What does it mean to say that $R$ is *semisimple*? State the Artin-Wedderburn Theorem.

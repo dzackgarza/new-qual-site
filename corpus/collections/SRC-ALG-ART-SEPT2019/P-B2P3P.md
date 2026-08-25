@@ -2,9 +2,8 @@
 schema: qual/card@1
 id: P-B2P3P
 kind: problem
-title: Jordan and rational forms for characteristic polynomial $(x-1)^3(x-2)^2$ and
-  minimal polynomial $(x-1)^2(x-2)$, and nilpotents on a $5$-dimensional space with
-  a unique $2$-dimensional invariant subspace
+title: Jordan and rational forms from characteristic and minimal polynomials;
+  nilpotents with a unique two-dimensional invariant subspace
 classification:
   areas:
   - algebra
@@ -16,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $V$ be a 5-dimensional vector space over a field $F$.
 
 a. Let $T: V \to V$ be a linear transformation with characteristic polynomial $(x-1)^3(x-2)^2$ and minimal polynomial $(x-1)^2(x-2)$.
