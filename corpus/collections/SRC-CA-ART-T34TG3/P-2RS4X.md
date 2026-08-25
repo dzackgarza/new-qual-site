@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-2RS4X
 kind: problem
-title: $\int_{\RR}\frac{dx}{1+x^4}=\frac{\pi}{\sqrt{2}}$ and the poles of $\frac{1}{1+z^4}$
+title: The integral of $1/(1+x^4)$ over $\RR$ and the poles of $1/(1+z^4)$
 classification:
   areas:
   - complex-analysis

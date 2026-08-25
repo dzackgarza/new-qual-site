@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-4M6DM
 kind: problem
-title: $\int_{-\infty}^{\infty}(1+x^2)^{-n-1}\,dx=\frac{(2n)!}{4^n(n!)^2}\pi$
+title: The integral of $(1+x^2)^{-n-1}$ over $\RR$
 classification:
   areas:
   - complex-analysis

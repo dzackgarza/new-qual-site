@@ -32,18 +32,6 @@ Most have already been superseded by later authoring passes: of the current rema
 Per item: read the card; if the title is a clipped fragment or a data dump rather than a name, replace it with the shortest description a reader recognizes the card by; otherwise leave it.
 Delete the line when the card is settled — completion lives in git history, not here.
 
-#### corpus/collections/SRC-CA-ART-E3SXDB
-
-- [ ] P-677HF
-
-- [ ] P-7UIYI
-
-- [ ] P-QUXEB
-
-- [ ] P-V7ULH
-
-- [ ] P-YQASP
-
 #### corpus/collections/SRC-CA-ART-T34TG3
 
 - [ ] P-AKSSQ
