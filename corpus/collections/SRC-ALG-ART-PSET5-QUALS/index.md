@@ -22,6 +22,5 @@ source:
 ---
 
 ::: remark
-Handwritten qualifying problems (Galois theory), course number 8005; the
-sheet holds three problems, of which one is transcribed.
+Handwritten qualifying problems (Galois theory), course number 8005; the sheet holds three problems, of which one is transcribed.
 :::
