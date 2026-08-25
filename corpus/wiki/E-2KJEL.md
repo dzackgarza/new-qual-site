@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Determine $\JCF(B)$ for
 \[
 B \da

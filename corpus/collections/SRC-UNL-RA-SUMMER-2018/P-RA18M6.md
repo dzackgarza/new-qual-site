@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $f:\mathbb R\to\mathbb R$ be a continuous function, and for all $n\ge 1$ put $f_n(x)=f\left(x+\frac1n\right)$.
 
 (a) Show that $f_n$ converges uniformly, as $n\to\infty$, over any closed interval $[a,b]$.

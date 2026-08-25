@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that
 \[
 \sim_{k\in \ZZ} { (-1)^k \over (k+a)^2} = \pi^2 \cos(\pi a)\csc^2(\pi a) && \text{for } a\in \RR\sm\ZZ

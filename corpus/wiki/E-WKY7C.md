@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Find all entire functions $f$ such that $f(x) = e^x$ on $\RR$.
 :::
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $\mu$ be a finite, positive, regular Borel measure supported on a compact subset of $\mathbb{C}$ and define the Newtonian potential $$U_\mu(z) = \int_\mathbb{C} \left|\frac{1}{z-w}\right| d\mu(w).$$
 
 a. Prove that $U_\mu$ exists at Lebesgue almost all $z\in\mathbb{C}$ and that $$\iint_K U_\mu(z)\,dx\,dy < \infty$$ for every compact $K\subseteq\mathbb{C}$.

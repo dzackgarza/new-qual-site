@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $f(z)$ be entire and assume that $f(z) \leq M |z|^2$ outside some
 disk for some constant $M$. Show that $f(z)$ is a polynomial in $z$ of degree $\leq 2$.
 :::

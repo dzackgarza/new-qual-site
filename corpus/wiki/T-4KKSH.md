@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.theorem title="?"}
+:::{.theorem}
 \[
 m(X) < \infty \implies \lim_{p\to\infty} \norm{f}_p = \norm{f}_\infty 
 .\]

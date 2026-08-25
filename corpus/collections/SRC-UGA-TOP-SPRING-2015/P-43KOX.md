@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove that the product of two connected topological spaces is connected.
 :::
 

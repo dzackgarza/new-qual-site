@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="?"}
+::: {.proposition}
 Measurability is not preserved by homeomorphisms.
 :::

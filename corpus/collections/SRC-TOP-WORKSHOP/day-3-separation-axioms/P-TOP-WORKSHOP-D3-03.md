@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Show that for a topological space $X$, if every $x\in X$ has a neighborhood whose closure is a regular space, then $X$ is regular.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Suppose $\varphi\in L^1(\RR)$ with 
 \[  
 \int \varphi(x) \, dx = \alpha

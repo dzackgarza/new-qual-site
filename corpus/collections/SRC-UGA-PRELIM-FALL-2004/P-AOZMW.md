@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Find all real numbers $x$ for which the series $\displaystyle\sum_{n=1}^{\infty} \frac{x^n}{\sqrt{n^2+1}}$ converges.
 [Be sure to justify your analysis.]
 :::

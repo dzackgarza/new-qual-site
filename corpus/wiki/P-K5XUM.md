@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Show that for any two topological spaces $X$ and $Y$ , $X \cross Y$ is compact if and only if both $X$ and $Y$ are compact.
 
 :::

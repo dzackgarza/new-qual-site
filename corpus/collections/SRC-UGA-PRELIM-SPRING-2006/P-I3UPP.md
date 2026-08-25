@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $\tau$ be the arc of the unit circle in the first quadrant, from $(1,0)$ to $(3/5, 4/5)$.
 Compute $$\int_\tau x\,dy + y\,dx.$$
 :::

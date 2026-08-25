@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $J\in \Id(R)$ (with $J\contains I$) is radical/prime/maximal iff $\bar J \in \Id(R/I)$ is radical/prime/maximal.
 :::

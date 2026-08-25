@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Suppose $f:\DD\to \DD$ is analytic.
 Prove that 
 \[  
@@ -36,7 +36,7 @@ i.e.
 .\]
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 Make a change of variables $a\da \psi_w(z)$ so $z=\psi_w\inv(a) = \psi_w(a)$, then the desired inequality follows if we can show
 \[
 \abs{ \psi_{f(w)}(f(\psi_w(a))) } \leq \abs{a}

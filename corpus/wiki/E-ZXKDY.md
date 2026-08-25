@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $f$ is not surjective then $\deg f = 0$.
 :::
 

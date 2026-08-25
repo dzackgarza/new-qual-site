@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Find the number of roots on $\abs{z} \leq 1$ of
 \[
 f(z)=z^{6}+4 z^{2} e^{z+1}-3

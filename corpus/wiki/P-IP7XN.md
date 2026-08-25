@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Show that $z\sin(z) = a$ has only real solutions.
 :::
 

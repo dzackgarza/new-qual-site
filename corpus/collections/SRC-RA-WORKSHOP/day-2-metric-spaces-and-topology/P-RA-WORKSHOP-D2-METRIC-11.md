@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Show that if $f:\mathbb R\to\mathbb R$ is monotone increasing, then $f$ has at most a countable set of jump discontinuities.
 :::
 

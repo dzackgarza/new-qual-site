@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 For $n = 5, 6$, either give an example of a nonabelian group of order $n$, or prove that none exists.
 :::

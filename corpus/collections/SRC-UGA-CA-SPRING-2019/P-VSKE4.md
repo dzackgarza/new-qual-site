@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $\Omega \subset \CC$ be a connected open subset.
 Let $\left\{f_{n}: \Omega \rightarrow \CC\right\}_{n=1}^{\infty}$ be a sequence of holomorphic functions uniformly bounded on compact subsets of $\Omega$.
 Let $f: \Omega \rightarrow \CC$ be a holomorphic function such that the set

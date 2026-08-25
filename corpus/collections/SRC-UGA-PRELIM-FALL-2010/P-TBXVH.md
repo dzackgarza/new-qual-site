@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $f: \mathbb{R} \to \mathbb{R}$.
 
 a. Give the $\delta$-$\varepsilon$ definition of $\lim_{x \to a} f(x) = \ell$.

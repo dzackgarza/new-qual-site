@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="?"}
+:::{.proposition}
 \[
 f_k \converges{\ae}\to f \text{ and }
 \norm{f_k}_p \leq M

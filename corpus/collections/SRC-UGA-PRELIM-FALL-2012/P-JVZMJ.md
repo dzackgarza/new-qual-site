@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Write the negations of these sentences in as "smooth" a way as possible.
 (In particular, you may not simply append "It is not the case that ...". Also, you should make explicit any "hidden" quantifiers.)
 

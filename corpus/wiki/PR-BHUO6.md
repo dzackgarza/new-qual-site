@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="?"}
+:::{.proposition}
 If either of $\dim_k V, \dim_k W$ is finite, then
 \[
 V\dual \tensor_k W\dual \mapsvia{\sim} (V\tensor W)\dual \\

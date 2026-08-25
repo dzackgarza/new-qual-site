@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.lemma title="?"}
+::: {.lemma}
 Any nonempty set which is bounded from above (resp.
 below) has a well-defined supremum (resp.
 infimum).

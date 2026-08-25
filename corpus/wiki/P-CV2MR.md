@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Prove that $f(z) = \abs{z}^2$ has a derivative at $z=0$ and nowhere else.
 :::
 

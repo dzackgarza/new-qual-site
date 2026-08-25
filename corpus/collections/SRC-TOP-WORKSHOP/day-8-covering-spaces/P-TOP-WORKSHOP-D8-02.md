@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (Jan ’06) Let $p:\widetilde X\to X$ be a covering map, and $f:Y\to X$ be a continuous map.
 Define $$\widetilde Y=\{(y,\widetilde x)\in Y\times\widetilde X:f(y)=p(\widetilde x)\}\subseteq Y\times\widetilde X$$ with the subspace topology inherited from $Y\times\widetilde X$ and define $q:\widetilde Y\to Y$ by $q(y,\widetilde x)=y$.
 Show that $q$ is also a covering map.

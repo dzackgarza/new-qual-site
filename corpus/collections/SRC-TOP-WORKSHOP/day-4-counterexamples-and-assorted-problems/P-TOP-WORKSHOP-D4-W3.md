@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Provide an example of a topological space where open sets are compact.
 Then find an infinite set with a Hausdorff topology where open sets are compact.
 :::

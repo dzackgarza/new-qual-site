@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Find all entire functions satisfying
 \[
 \abs{f(z)} \leq \abs{z}^{1\over 2} \quad\text{ for } \abs{z} > 10

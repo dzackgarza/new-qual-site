@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Work out the Taylor series for $f(x) = \ln x$ around $x=1$ and use it to approximate $\ln(1.1)$ accurate to 2 decimal places.
 :::

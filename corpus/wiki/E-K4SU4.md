@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $p\in \spec R$ then $R\localize{p}$ is local.
 :::

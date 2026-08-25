@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $a$ be a real number other than 1. Use induction to show that for each positive integer $n$, $$\sum_{k=0}^{n-1} a^k = (a^n-1)/(a-1).$$
 :::

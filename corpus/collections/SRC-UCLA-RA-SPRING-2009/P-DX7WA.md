@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $f(z)$ be an analytic function on the entire complex plane $\mathbb{C}$ and assume $f(0)\ne 0$.
 Let $\{a_n\}$ be the zeros of $f$, counted with multiplicity.
 

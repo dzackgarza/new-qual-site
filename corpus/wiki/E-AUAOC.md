@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that $S^n$ is not a strong deformation retract of $\BB^{n+1}$.
 :::
 

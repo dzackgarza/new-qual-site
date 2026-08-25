@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="?"}
+::: {.proposition}
 Let $T:V\to V$ be a linear map where $n\da \dim_k V$.
 TFAE:
 

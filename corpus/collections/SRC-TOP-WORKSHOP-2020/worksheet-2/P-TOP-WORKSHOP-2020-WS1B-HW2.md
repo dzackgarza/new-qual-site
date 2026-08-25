@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Describe how to make a topology from a basis, and what (if any) requirements there are on the basis.
 :::

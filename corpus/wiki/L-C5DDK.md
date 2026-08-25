@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.lemma title="?"}
+::: {.lemma}
 Let $V$ be a vector space over $k$ an algebraically closed and $A \in \mathrm{End}(V)$.
 Then if $W \subseteq V$ is an invariant subspace, so $A(W) \subseteq W$, the $A$ has an eigenvector in $W$.
 :::

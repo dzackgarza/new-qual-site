@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Give a complete factorization of each of the following over the indicated rings.
 Explain why the factors you obtain are irreducible.
 a. $x^5-1$ over $\mathbf{C}$.

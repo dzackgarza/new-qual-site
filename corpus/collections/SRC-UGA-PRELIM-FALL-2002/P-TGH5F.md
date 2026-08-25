@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $v_1, \dots, v_k$ be vectors in $\mathbb{R}^n$.
 Define the span $V = \langle v_1, \dots, v_k \rangle$ of the vectors.
 Prove that there is a subset of the vectors $v_1, \dots, v_k$ that forms a basis for $V$.

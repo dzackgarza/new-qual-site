@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Show that $\RR/\QQ$ has the indiscrete topology.
 :::
 

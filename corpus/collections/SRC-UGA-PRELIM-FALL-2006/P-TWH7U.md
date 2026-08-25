@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Using the method of Lagrange Multipliers, find the maximum and minimum values of $f(x,y) = xy$ on the ellipse $x^2 + 4y^2 = 8$.
 :::

@@ -17,7 +17,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Define
 \[
 f(z) &= {\pi^2 \over \sin^2 \qty{\pi z} } \\

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $X$ be a topological space.
 
 a. State what it means for $X$ to be compact.

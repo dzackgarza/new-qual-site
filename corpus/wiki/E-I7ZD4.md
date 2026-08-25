@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Prove Cayley-Hamilton using the JCF.
 :::

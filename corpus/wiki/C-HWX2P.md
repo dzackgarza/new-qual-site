@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="?"}
+:::{.corollary}
 \[
 \size  G = \size (G/H) \size H \da [G:H] \, \size  H
 ,\]

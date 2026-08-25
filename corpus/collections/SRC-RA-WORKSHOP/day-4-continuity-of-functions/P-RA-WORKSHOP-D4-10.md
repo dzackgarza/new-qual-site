@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 ([KRD10, 5.6.H]) Show that a continuous function $f:\mathbb R\to\mathbb R$ cannot take on every real value exactly twice.
 :::
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (Jan ’12) Let $X$ be a space obtained by identifying the three vertices of a standard 2-simplex.
 
 (a) Describe a structure of a $\Delta$-complex on $X$.

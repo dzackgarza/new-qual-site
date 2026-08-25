@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove Theorems 2.1, 2.2, and 2.3.
 :::
 

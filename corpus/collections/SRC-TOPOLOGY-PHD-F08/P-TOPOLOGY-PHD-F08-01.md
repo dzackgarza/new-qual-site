@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove that in a metric space a compact subset is closed and bounded.
 If you cannot do it for a general metric space do it for $\mathbb R^n$.
 :::

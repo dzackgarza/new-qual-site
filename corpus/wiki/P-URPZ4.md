@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Find the number of solutions to the following equation on $\abs{z} < 1$:
 \[
 6z^3 + 1 = -e^z

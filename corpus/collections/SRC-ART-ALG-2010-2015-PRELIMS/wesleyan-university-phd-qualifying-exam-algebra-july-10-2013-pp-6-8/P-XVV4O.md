@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Present and explain an example refuting the converse to Lagrange's Theorem.
 :::

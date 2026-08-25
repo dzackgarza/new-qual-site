@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $X$ be Hausdorff, and recall that the *one-point compactification* $\tilde X$ is given by the following:
 
 - As a set, $\tilde X \definedas X\disjoint \theset{\infty}$.

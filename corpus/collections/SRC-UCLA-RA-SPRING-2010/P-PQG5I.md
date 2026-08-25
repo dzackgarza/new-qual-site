@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $$A = \left\{x\in\ell^2: \sum_{n\ge1} n|x_n|^2 \le 1\right\}.$$
 
 a. Show that $A$ is compact in the $\ell^2$ topology.

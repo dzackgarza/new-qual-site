@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Define the term closure $\overline A$ of a subset $A$ of a topological space $X$.
 Prove that if $B$ is a closed subset of $X$ such that $A\subset B$ then $\overline A\subset B$.
 :::

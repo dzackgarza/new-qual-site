@@ -21,7 +21,7 @@ f(z) = {1\over z^n + 1}
 
 :::
 
-:::{.solution title="?"}
+:::{.solution}
 Check that $\dd{}{z} z^n+1 = nz^{n-1}\neq 0$ for $z\neq 0$, so this has no repeated roots since $z=0$ is not a root.
 Thus all of the poles are simple, so apply the rational function formula:
 \[

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that $Z(G) \leq G$ is always characteristic.
 :::
 

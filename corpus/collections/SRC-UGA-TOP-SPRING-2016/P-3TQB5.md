@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 In each part of this problem $X$ is a compact topological space.
 Give a proof or a counterexample for each statement.
 

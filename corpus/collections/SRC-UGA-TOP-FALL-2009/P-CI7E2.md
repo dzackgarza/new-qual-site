@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $A$ be a closed subset of a normal topological space $X$.
 Show that both $A$ and the quotient $X/A$ are normal.
 :::

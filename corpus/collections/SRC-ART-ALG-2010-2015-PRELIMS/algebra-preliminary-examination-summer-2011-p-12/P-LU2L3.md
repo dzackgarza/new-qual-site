@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 For $n = 3, 4$, and 5, determine the number of similarity classes of matrices $A \in M_n(\mathbb{Q})$ such that $A^8 = I$ but $A^4 \neq I$.
 :::

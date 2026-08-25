@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Recall that a topological space is said to be **connected** if there does not exist a pair $U, V$ of disjoint nonempty subsets whose union is $X$.
 
 a. Prove that $X$ is connected if and only if the only subsets of $X$ that are both open and closed are $X$ and the empty set.

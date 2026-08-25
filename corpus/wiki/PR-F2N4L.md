@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="?"}
+::: {.proposition}
 For $\FF_p$ a finite field of prime order, all quadratic extensions $E/\FF_p$ are isomorphic.
 :::

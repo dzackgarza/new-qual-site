@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
  \envlist
 
 - Show that the function $u=u(x,y)$ given by

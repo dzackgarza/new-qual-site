@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $R$ is a nonzero ring where every element is either a unit or nilpotent, then $R$ is local.
 :::

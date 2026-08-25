@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Prove that the following polynomial has its roots outside of the unit circle:
 \[
 p(z) = z^3 + 2z + 4

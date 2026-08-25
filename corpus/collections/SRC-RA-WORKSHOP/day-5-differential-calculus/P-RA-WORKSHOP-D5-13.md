@@ -14,7 +14,7 @@ relations:
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove Theorem 4.1.
 :::
 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a. Let $G$ be a finite group of order $p^k m$ where $p$ is prime and $(p,m) = 1$.
 Let $n_p$ be the number of subgroups of $G$ of order $p^k$.
 State as many facts as you can about the value of $n_p$.

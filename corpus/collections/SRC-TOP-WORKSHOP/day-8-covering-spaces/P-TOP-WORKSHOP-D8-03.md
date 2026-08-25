@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (June ’05) Show, using covering spaces, that the fundamental group of the Klein bottle is not abelian.
 :::

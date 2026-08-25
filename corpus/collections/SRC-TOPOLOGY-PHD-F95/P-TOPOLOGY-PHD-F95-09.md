@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (a) Define a covering space.
 
 (b) State the main theorem about path lifting and covering spaces.

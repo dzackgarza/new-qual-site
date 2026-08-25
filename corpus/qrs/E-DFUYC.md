@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Prove the "recognizing direct products" theorem.
 Can the conditions be relaxed?
 :::

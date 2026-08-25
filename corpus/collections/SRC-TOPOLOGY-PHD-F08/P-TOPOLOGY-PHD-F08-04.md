@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $(X,d)$ be a metric space and let $A\subset X$.
 If $x\in X$ define the distance of $x$ to $A$ to be $\inf\{d(x,a):a\in A\}$.
 Prove that the real-valued function on $X$ defined by $x\mapsto d(x,A)$ is continuous.

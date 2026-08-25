@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Give 4--6 different topologies on $\mathbb R$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $fg \equiv 0$ on a domain $\Omega$ then either $f\equiv 0$ or $g\equiv 0$.
 :::
 

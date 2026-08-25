@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 A topological space is **totally disconnected** if its only connected subsets are one-point sets.
 
 Is it true that if $X$ has the discrete topology, it is totally disconnected?

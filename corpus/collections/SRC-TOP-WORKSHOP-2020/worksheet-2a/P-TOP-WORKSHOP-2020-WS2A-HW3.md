@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 What property on a space guarantees that compact sets are closed?
 What property on a space guarantees that closed sets are compact?
 :::

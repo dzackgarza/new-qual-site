@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that if $\abs{f(z)/z^n}$ is bounded for $\abs{z}\geq R$, then $f$ is a polynomial of degree at most $n$.
 What happens if this bound holds on all of $\CC$?
 

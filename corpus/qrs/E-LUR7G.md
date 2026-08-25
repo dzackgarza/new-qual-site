@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show 
 \[
 x^\ell - 1 \divides x^m-1 \iff \ell\divides m

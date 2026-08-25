@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 1.
 Let $f$ be analytic in $\Omega: 0<|z-a|<r$ except at a
 sequence of poles $a_n \in \Omega$ with

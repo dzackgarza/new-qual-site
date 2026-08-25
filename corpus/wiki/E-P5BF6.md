@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 \envlist
 Notation: let $N$ or $N(R)$ be the set of nilpotents in $R$.
 Let $ZD$ or $ZD(R)$ be the set of zero divisors.

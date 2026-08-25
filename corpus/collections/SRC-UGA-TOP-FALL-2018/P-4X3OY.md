@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $X$ be a compact space and let $f : X \times R \to R$ be a continuous function such that $f (x, 0) > 0$ for all $x \in X$.
 
 Prove that there is $\eps > 0$ such  that $f (x, t) > 0$ whenever $\abs t < \eps$.

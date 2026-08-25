@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that $\logd(fg) = \logd f + \logd g$, i.e. 
 \[
 { (fg)' \over fg} = {f'\over f} + {g' \over g}

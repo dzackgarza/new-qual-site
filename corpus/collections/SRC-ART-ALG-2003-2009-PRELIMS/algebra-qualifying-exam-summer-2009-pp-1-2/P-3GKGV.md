@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 A ring is called left (resp.
 right) Artinian if every descending chain of left (resp.
 right) ideals $I_1\supset I_2\supset I_3\cdots$ eventually terminates (i.e. there is some $N$ such that $I_k=I_N$ for $k\ge N$). A ring is called Artinian if it is both left and right Artinian.

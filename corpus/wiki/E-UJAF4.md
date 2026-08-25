@@ -20,7 +20,7 @@ Prove the following: if $\ts{f_n}$ is equicontinuous on $K$ a compact set and $f
 
 :::
 
-:::{.solution title="?"}
+:::{.solution}
 Fix $\eps$, it suffices to find an $n= n(\eps)$ to bound $\norm{f_n - f}_{\infty, K } < \eps$.
 A standard $\eps/3$ argument works: write
 \[

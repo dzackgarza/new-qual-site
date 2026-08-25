@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 For each of the following statements, determine if it is true or false.
 Explain your answers.
 

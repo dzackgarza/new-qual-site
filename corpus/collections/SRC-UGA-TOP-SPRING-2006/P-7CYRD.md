@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $(X, d)$ is a metric space.
 State criteria for continuity of a function $f : X \to X$ in terms of:
 

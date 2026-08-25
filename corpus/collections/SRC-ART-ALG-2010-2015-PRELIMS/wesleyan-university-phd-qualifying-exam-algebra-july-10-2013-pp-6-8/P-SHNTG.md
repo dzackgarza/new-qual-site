@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $R$ be a ring (with unit).
 
 a. What is an ideal of $R$?

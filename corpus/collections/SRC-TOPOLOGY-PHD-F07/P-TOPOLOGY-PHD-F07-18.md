@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Compute the fundamental group of the (surface of a) sphere when three points on it are removed.
 :::

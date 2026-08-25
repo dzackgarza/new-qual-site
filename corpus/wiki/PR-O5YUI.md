@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="?"}
+:::{.proposition}
 If $\dim_k V, \dim_k W < \infty$ then there is an isomorphism
 \[
 V\dual \tensor_k W \mapsvia{\sim} \Hom_{\kmod}(V, W) \\

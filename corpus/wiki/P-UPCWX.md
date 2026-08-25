@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $f$ be differentiable on $[a, b]$.
 Say that $f$ is *uniformly differentiable* iff 
 

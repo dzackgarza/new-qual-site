@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 \envlist
 
 - Show that any cyclic group is abelian.

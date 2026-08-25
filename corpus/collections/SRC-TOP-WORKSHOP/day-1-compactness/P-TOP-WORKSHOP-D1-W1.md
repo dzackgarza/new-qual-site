@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 If $X$ is $T_2$ and $A\subseteq X$ is compact, then $A$ is closed.
 :::

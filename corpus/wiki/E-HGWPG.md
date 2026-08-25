@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Geometrically describe the following subsets of $\CC$:
 
 a. $\abs{z-1} = 1$

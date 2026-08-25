@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (January 2006, 1) Let the power series series $\sum_{n=0}^{\infty}a_nx^n$ and $\sum_{n=0}^{\infty}b_nx^n$ have radii of convergence $R_1$ and $R_2$, respectively.
 
 (a) If $R_1\ne R_2$, prove that the radius of convergence, $R$, of the power series $\sum_{n=0}^{\infty}(a_n+b_n)x^n$ is $\min\{R_1,R_2\}$.

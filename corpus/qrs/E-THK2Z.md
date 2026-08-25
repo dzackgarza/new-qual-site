@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that a real-valued holomorphic function must be constant.
 :::
 

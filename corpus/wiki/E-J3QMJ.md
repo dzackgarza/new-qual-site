@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $f$ is constant on any closed disk $r\bar\DD$ for $r<1$, then $f$ is constant on $\DD$.
 :::
 

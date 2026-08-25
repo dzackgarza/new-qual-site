@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Find a conformal map
 
 1.  from $\{ z: |z - 1/2| > 1/2, \text{Re}(z)>0 \}$ to $\mathbb H$
@@ -87,7 +87,7 @@ $z_3\mapsto w_0$ where $\arg(w_0) = -3\pi/4$
 :::
 
 
-:::{.proof title="?"}
+:::{.proof}
 Let $z_3 = ic$ where $c\da \sqrt{2} -1$, then
 \[
 f(z_3) 

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $f:X\to Y$ be a continuous, bijective, open map.
 Show that $f$ is a homeomorphism.
 [Open map can be replaced with closed map and the same result holds.]

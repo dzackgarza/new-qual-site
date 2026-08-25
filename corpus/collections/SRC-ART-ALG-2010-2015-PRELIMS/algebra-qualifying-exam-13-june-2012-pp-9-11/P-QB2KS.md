@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 For each of the following, either give an example or explain why no such example exists.
 One or two sentence answers will suffice; you don't need to give formal proofs.
 

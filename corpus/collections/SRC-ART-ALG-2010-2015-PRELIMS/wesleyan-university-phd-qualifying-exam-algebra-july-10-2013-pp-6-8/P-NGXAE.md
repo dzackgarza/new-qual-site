@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $K$ be the splitting field of $x^4 - 6$ over $\mathbb{Q}$.
 
 a. What is the dimension of $K$ over $\mathbb{Q}$?

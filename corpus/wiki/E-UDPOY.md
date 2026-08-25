@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $f$ is holomorphic on $\Delta^*$ and $\Re(f) \geq 0$.
 Show that $f$ has a removable singularity at $z=0$.
 :::

@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Explicitly prove that $\mathbb R$ is that universal cover of $S^1$.
 :::

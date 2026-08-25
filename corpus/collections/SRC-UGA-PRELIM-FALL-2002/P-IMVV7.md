@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $k$ and $n$ be positive integers with $k \le n$.
 Give the definitions for the permutations and for the combinations of $k$ elements from an $n$-element set, and state formulas for the numbers of these.
 Derive a formula for the number of one-to-one functions from a $k$-element set to an $n$-element set.

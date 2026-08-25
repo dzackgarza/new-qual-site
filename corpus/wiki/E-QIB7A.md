@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 (1) Assume $u$ is harmonic on open set $O$ and $z_n$ is a sequence
 in $O$ such that $u(z_n) = 0$ and $\lim z_n \in O$. Prove or
 disprove that $u$ is identically zero. What if $O$ is a region?

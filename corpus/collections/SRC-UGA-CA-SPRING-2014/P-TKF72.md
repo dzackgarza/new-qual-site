@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $0\leq \alpha \leq 2\pi$ be a fixed angle.
 Suppose $f$ is continuous on the region $\Omega = \ts{\abs{z} \geq R, \Arg(z) \in [0, \alpha]}$ and $\lim_{z\to \infty} zf(z) = A$.
 Show that

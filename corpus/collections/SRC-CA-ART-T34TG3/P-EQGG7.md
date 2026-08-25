@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove that for $a> 0$, $z\tan z - a$ has only real roots.
 :::

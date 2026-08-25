@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Find the number of zeros in $\abs{z} \in (1, 2)$ of
 \[
 f(z) \da z^4 + 5z + 3

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $\xi\in \RR$, evaluate
 \[
 \int_\RR {e^{i\xi x} \over \cosh(x)} \dx

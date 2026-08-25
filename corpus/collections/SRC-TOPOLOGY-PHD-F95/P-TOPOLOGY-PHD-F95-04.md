@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $D$ be the closed unit disk in the complex plane.
 Let $\sim$ be the equivalence relation on $D$ defined by $z_1\sim z_2$ if and only if $z_1=z_2$ or $|z_1|=|z_2|<1$.
 Is the quotient topological space Hausdorff?

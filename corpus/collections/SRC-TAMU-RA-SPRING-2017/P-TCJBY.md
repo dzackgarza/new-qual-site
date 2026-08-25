@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $S$ be a closed subspace of $(C[0,1], \|\cdot\|_\infty)$.
 If $S$ is also closed under $\|\cdot\|_2$, then show $S$ is finite-dimensional.
 (This is question 66 in Folland on page 178, see also mathoverflow 52509 for other solutions.)

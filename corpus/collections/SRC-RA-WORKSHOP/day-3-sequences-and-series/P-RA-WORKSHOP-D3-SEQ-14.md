@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (January 2008 #6b) Suppose that $\lim_{n\to\infty}s_n=s$ and $\lim_{n\to\infty}t_n=t$ with $s\ne t$ and $s_n\ne t_n$ for all $n$.
 Use an $\epsilon$-$\delta$ proof to show that
 $$

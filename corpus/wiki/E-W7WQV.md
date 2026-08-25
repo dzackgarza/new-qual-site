@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that any holomorphic function $f$ can be uniformly approximated by polynomials.
 :::

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (Purdue Aug ’09) Let $p:E\to B$ be a covering map.
 Let $Y$ be locally path-connected.
 Let $g:Y\to E$ be a function such that

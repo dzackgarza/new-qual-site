@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $\mu$ be a finite positive Borel measure on $\mathbb{C}$.
 
 a. Prove that $F(z) = \int_\mathbb{C} \frac{1}{z-w}\,d\mu(w)$ exists for almost all $z\in\mathbb{C}$ and that $\int_K |F(z)|\,dx\,dy < \infty$ for every compact $K\subseteq\mathbb{C}$.

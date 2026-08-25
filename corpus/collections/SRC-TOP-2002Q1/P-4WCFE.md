@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Show that $\mathbb{R}$ and $\mathbb{R}^2$ (with their usual topologies) are not homeomorphic.
 :::

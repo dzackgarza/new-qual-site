@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $f$ is entire and $\abs{f(z)} > 1$ for all $z$, then $f$ is constant.
 :::
 

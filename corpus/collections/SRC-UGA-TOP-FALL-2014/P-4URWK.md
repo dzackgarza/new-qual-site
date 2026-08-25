@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Is every product (finite or infinite) of Hausdorff spaces Hausdorff?
 If yes, prove it.
 If no, give a counterexample.

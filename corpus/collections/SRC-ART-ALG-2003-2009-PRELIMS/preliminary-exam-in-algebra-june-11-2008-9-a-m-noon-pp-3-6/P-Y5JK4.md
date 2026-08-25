@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a. Show that every Euclidean domain is a principal ideal domain.
 
 In parts (b) and (c) assume that $\mathbf{Z}[i]$ is a Euclidean domain with respect to the norm function $N$ defined by $$N(a+bi)=a^2+b^2\text{ for all }a+bi\in\mathbf{Z}[i].$$

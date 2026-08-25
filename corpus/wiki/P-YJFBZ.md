@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 For each $n\in \ZZ^{\geq 1}$, let
 \[
 P_n(z) = 1 + z + {1\over 2!} z^2 + \cdots + {1\over n!}z^n

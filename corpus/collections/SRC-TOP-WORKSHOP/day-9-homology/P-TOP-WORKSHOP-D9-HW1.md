@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Compute the homology groups of $S^n$ for all $n\ge 0$.
 :::

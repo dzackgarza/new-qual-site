@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 \envlist
 
 - Show that if $G$ is a finite group acting transitively on a set $X$ with at least two elements, then there exists $g \in G$ which fixes no point of $X$.

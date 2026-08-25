@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove that every compact, Hausdorff topological space is normal.
 :::

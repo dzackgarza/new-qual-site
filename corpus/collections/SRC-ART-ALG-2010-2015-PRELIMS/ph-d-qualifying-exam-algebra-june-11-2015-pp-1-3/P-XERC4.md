@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 In each item, a commutative ring $R$ and an ideal $I \subseteq R$ are given.
 Determine whether $I$ is prime, maximal, both, or neither.
 

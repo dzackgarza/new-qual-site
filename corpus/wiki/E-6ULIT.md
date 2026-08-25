@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that a uniform limit of continuous functions is continuous, and a uniform limit of uniformly continuous functions is uniformly continuous.
 Show that this is not true if uniform convergence is weakened to pointwise convergence.
 

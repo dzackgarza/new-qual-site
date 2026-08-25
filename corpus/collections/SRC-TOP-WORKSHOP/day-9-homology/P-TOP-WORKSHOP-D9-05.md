@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (Arizona Aug ’06) Compute the singular homology groups $H_*(X,\mathbb Z)$ of the space $X=\mathbb R^3\setminus A$, where $A$ is a subset of $\mathbb R^3$ homeomorphic to the disjoint union of two unlinked circles.
 :::

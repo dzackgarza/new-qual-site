@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Construct an explicit deformation retraction from $\mathbb R^n\setminus\{0\}$ onto $S^{n-1}$.
 :::

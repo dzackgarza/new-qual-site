@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $X$ and $Y$ be Banach spaces.
 A bounded linear transformation $A:X\to Y$ is *compact* if for every bounded sequence $\{x_n\}\subseteq X$, the sequence $\{Ax_n\}$ has a convergent subsequence in $Y$.
 Suppose $X$ is reflexive ($X^{**}=X$) and $X^*$ is separable.

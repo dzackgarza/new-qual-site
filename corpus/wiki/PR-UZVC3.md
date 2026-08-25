@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="?"}
+:::{.proposition}
 \[
 \lim_{n\to \infty} \int_a^b f_n(x) \,dx \neq \int_a^b \lim_{n\to \infty} \qty{ f_n(x) } \,dx
 .\]

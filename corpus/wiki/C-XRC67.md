@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="?"}
+:::{.corollary}
 \[
 \# G = \#(G/H) \#H \da [G:H] \, \# H
 ,\]

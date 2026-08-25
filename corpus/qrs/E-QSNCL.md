@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Can there be a function $f:I\to \RR$ that is continuous on $\QQ$ and discontinuous otherwise?
 :::
 

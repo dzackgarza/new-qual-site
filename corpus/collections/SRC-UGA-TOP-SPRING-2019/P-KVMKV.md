@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Is every complete bounded metric space compact?
 If so, give a proof; if not, give a counterexample.
 :::
@@ -52,7 +52,7 @@ If so, give a proof; if not, give a counterexample.
 ::: {.solution}
 \envlist
 
-::: {.proof title="?"}
+::: {.proof}
 Inductively, let $\vector x_1 \in B(1, \vector 0)$ and $A_1 = \spanof{(\vector x_1)}$, then choose $s = \vector x + A_1 \in B(1,0)/A_1$ such that $\norm{s} = \frac 1 2$ and then a representative $\vector x_2$ such that $\norm{\vector x_2} \leq 1$.
 Then $\norm{\vector x_2 - \vector x_1} \geq \frac 1 2$
 

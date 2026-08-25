@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $(X, d)$ be a compact metric space, and let $f : X \to X$ be an isometry: 
 \[
 \forall~ x, y \in X, \qquad d(f (x), f (y)) = d(x, y)

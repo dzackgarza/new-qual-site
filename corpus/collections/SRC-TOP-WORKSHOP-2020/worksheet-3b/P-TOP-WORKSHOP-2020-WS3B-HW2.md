@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 What is a deck transformation?
 Describe the deck transformations from one of the universal covers above.
 :::

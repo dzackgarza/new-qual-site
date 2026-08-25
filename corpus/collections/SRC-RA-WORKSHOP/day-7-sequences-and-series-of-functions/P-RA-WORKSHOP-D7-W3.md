@@ -16,7 +16,7 @@ relations:
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Assume that $\{f_n\}$ is a sequence of continuous functions $f_n:E\subset\mathbb R\to\mathbb R$ which converges uniformly to $f$.
 Prove the results of Theorem 6.1 directly.
 :::

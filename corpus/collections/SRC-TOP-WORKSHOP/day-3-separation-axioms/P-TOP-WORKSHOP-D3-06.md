@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $X$ and $Y$ be two topological spaces and let $X\times Y$ be endowed with the product topology.
 Prove that if $X$ and $Y$ each have a countable dense subset, then so does $X\times Y$.
 :::

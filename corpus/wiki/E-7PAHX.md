@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $P, Q$ be polynomials with no common zeros. Assume $a$ is a root of
 $Q$.
 Find the principal part of $P/Q$ at $z=a$ in terms of $P$ and $Q$ if $a$ is 

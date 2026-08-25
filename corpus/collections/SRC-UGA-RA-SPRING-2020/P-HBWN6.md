@@ -76,7 +76,7 @@ $H$ is measurable on $\RR^2$:
 :::
 
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - It suffices to show $\tilde f(x, y) \definedas f(y)$ and $\tilde g(x, y) \definedas g(x-y)$ are both measurable on $\RR^2$. 

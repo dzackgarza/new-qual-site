@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove Proposition 1.4: Every open set $G\subset\mathbb R$ can be written as a finite or countable union of disjoint open intervals $(a_j,b_j)$ with at most one $a_j=-\infty$ and at most one $b_j=\infty$.
 :::
 

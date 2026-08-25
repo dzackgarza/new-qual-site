@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $f$ be a non-negative Lebesgue measurable function on $[1, \infty)$.
 
 a.

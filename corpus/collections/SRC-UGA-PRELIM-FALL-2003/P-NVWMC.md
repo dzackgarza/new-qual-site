@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a) Let $\gamma$ be a path in the plane $\mathbb{R}^2$.
 Define what is meant by $$\int_\gamma f(x,y)\,dx + g(x,y)\,dy.$$
 

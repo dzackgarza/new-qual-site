@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove that $\mathbb R^2$ cannot be retracted to $S^1$.
 :::

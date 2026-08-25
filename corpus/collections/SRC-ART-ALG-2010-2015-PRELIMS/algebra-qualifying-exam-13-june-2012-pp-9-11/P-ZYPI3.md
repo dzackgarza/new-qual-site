@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a. State the structure theorem for finitely generated modules over a PID. You may state either the invariant factors or elementary divisors version.
 
 b. Determine all abelian groups of size 72 up to isomorphism.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $\Omega$ be an open convex region in the complex plane.
 Assume $f$ is a holomorphic function on $\Omega$ and the $\text{Re}(f'(z))>0$ for all $z\in\Omega$.
 

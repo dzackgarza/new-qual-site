@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Use the Heine--Borel Theorem to prove that if $f$ is continuous on $[a,b]$ and $f(x)>0$ for every $x\in[a,b]$, then there exists $\varepsilon>0$ such that $f(x)\ge\varepsilon$ for every $x\in[a,b]$.
 :::
 

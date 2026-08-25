@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Find the number of zeros $z$ with $\Re(z) > 0$ for the following function:
 \[
 f(z) \da z^3-z+1

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $R$ be a PID with field of fractions $F$.
 Let $V$ be a vector space of dimension $n$ over $F$.
 

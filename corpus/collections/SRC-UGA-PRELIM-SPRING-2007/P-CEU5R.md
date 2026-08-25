@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Write the following statement in symbolic form, and then give (in symbolic form and in English) its contrapositive and its negation:
 
 "If all birds can swim or some fish can fly, then no whales can walk"

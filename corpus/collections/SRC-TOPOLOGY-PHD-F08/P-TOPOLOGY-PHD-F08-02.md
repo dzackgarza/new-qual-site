@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove that in a complete metric space $(X,d)$ a subspace $Y$ of $X$ is complete if and only if it is a closed subspace of $X$.
 :::

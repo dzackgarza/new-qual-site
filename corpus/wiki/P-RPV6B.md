@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $f(z)$ be analytic in a domain, and prove that $f$ is constant if it satisfies any of the following conditions:
 
 a. $\abs{f(z)}$ is constant.

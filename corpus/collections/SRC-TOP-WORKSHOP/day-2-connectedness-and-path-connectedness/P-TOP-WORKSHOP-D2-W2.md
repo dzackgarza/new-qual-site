@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 If $X$ is a path connected space, then $X$ is connected.
 :::

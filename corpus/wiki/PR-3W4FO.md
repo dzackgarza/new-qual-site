@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="?"}
+:::{.proposition}
 \[
 (f, g) \in L^p\times L^q \implies f\convolve g \text{ uniformly continuous}
 .\]

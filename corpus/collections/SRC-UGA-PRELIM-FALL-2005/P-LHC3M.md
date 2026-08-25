@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a. Let $f(x,y)$ be a differentiable function from $\mathbb{R}^2$ to $\mathbb{R}$ and let $g(t) = (x(t), y(t))$ be a differentiable function from $\mathbb{R}$ to $\mathbb{R}^2$.
 State the chain rule for the derivative of the function $f(g(t))$.
 b. Let $f(x,y)$ be a continuously differentiable function on $\mathbb{R}^2$, and let $P \in \mathbb{R}^2$ be a point.

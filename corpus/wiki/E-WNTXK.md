@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $f$ is entire and $f(\CC) \subseteq \HH$.
 Show that $f$ must be constant.
 :::

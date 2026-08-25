@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.lemma title="?"}
+:::{.lemma}
 The characteristic polynomial is the *product of the invariant factors*, i.e.
 $$
 \chi_A(x) = \prod_{j=1}^n f_j(x)

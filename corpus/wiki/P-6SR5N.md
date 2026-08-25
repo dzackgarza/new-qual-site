@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Show 
 \[
 \int_0^{2\pi} {1\over a + \cos(\theta)} \dtheta = {2\pi \over \sqrt{a^2-1}}, && a> 1

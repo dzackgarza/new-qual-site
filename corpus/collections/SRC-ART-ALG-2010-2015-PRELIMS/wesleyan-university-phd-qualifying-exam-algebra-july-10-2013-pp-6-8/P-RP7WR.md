@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a. What finite groups $G$ can occur as collections of automorphisms of some field $F$?
 More precisely, for which $G$ does there exist a field $F$ such that $G$ is a subgroup of the automorphism group of $F$?
 Explain.

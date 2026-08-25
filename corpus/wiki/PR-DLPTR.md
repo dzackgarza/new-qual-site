@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="?"}
+::: {.proposition}
 Every free \(R\dash\)module admits a basis (spanning $R\dash$linearly independent set).
 :::

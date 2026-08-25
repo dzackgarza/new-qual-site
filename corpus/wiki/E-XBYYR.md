@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 a. 
 State the standard Schwarz reflection principle involving reflection across the real axis.
 

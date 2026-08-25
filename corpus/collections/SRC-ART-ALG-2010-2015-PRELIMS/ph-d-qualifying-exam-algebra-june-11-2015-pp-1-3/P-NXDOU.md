@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Determine whether the ring $\mathbb{Z}[3i]$ is a UFD.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Consider the complex Hilbert space $$H := \left\{f:\overline{\mathbb{D}}\to\mathbb{C}: f(z)=\sum_{k=0}^\infty \widehat{f}(k)z^k \text{ with } ||f||^2 := \sum_{k=0}^\infty (1+k^2)|\widehat{f}(k)|^2 < \infty\right\}.$$
 
 a. Prove that the linear function $L:f\mapsto f(1)$ is bounded.

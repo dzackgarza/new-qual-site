@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $F$ be a field and $n$ a positive integer, and consider
 \[
 A=\left[\begin{array}{ccc}

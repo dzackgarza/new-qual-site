@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $a>0$ and calculate
 \[
 \int_0^\infty {\cos(x) \over (x^2 + a^2)^2}\, dx

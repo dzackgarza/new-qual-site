@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Use the Riemann condition to show that $f\in\mathcal R_\alpha[0,4]$ where $f(x)=e^{2x}$ and
 $$\alpha(x)=\begin{cases}
 x+1,&0\le x\le2,\\

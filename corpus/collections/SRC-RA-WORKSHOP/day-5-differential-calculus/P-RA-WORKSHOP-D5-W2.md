@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 ([Rud76, Exercise 5.1]) If $f:\mathbb R\to\mathbb R$ satisfies $|f(x)-f(y)|\le(x-y)^2$ for all $x,y$, then $f$ is constant.
 :::
 

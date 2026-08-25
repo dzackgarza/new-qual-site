@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Determine where the following real-valued function is or is not uniformly convergent:
 \[
 f_n(x) \da {\sin(nx)\over 1+nx}

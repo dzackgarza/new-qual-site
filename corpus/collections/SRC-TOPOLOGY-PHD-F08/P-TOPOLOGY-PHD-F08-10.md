@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Construct a topological space $X$ by starting with $\mathbb R$ with the usual topology and defining $x$ to be equivalent to $y$ if $x-y$ is rational.
 Show that the resulting quotient or identification space $X$ has the indiscrete topology, that is, the only open sets are $\varnothing$ and $X$.
 :::

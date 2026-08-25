@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $\mcs, \mct$ be topologies on a set $X$.
 Show that $\mcs \cap \mct$ is a topology on $X$.
 

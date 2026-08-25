@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 State the Sylow Theorems.
 Include information about the existence, order, and number $n_p$ of Sylow $p$-subgroups of a finite group, and mention additional divisibility and congruence properties of $n_p$.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $f$ be a holomorphic map of the open unit disc $\DD$ to itself.
 Show that for any $z, w\in \DD$,
 \[

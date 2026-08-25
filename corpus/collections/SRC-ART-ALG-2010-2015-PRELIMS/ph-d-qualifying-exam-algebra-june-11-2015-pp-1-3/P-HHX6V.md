@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $D$ be a commutative ring with unit.
 A submodule $N$ of the $D$-module $M$ is said to be pure in $M$ just in case for every $y \in N$ and $a \in D$, $ax = y$ is solvable in $N$ if solvable in $M$.
 

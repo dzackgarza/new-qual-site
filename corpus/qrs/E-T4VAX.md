@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that $h(z) =z^5 + 3z + 1$ has 5 zeros in $\abs z \leq 2$.
 :::
 

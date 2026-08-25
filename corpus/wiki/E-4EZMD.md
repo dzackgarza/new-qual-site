@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Define $A \da \ts{\Re(z) > 0, \Im(z) > 0}$.
 Find a conformal equivalence $\Delta \intersect A \to A$.
 :::

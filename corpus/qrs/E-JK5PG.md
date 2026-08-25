@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 \[
 \int_\RR {1 \over x^4 + 1} = {\pi \sqrt{2} \over 2}
 .\]

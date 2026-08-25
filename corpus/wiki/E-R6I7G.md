@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Prove the "recognizing direct products" theorem.
 Can the conditions be relaxed?
 :::
@@ -24,7 +24,7 @@ For 3, $x\in H \intersect K$ implies that the order of $x$ divides $\gcd(\size H
 Thus for 2, one only needs that $\size(HK) = \size G$.
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 With these conditions, the following map is an isomorphism:
 \[
 \Gamma: H\cross K &\to G \\

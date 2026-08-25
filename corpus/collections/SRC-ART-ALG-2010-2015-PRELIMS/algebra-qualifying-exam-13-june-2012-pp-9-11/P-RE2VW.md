@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $K/F$ is a Galois extension and that $\mathrm{Gal}(K/F)$ is isomorphic to $A_n$, with $n \geq 5$.
 Suppose $\alpha \in K$.
 Prove that the minimal polynomial of $\alpha$ over $K$ has degree at least $n$.

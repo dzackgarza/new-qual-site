@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $G$ is finite then $\abs{G}/\abs{H} = [G: H]$.
 :::

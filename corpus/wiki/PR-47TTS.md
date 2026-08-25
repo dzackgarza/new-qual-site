@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="?"}
+::: {.proposition}
 If $\hat f = \hat g$ then $f=g$ almost everywhere.
 :::

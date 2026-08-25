@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 \[
 \int_\RR {1 \over (1+x^2)^2} \dx
 .\]

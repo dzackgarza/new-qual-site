@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Give an example of each of the following or explain why no such examples exist.
 One or two sentence answers will suffice; you don't need to give formal proofs.
 

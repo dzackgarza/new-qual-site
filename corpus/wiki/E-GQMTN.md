@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Find all entire functions $f$ satisfying
 \[
 \abs{f(z)} \geq \abs{z} + 1 &&\forall z\in \CC

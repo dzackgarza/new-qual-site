@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a) Define what it means for vectors $v_1, \ldots, v_n$ in a vector space $V$ to be linearly independent.
 
 b) Suppose that vectors $v_1, \ldots, v_n$ in a vector space $V$ span $V$ and that no proper subset of $\{v_1, \ldots, v_n\}$ spans $V$.

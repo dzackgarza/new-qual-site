@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Give an example of a quotient map in which the domain is Hausdorff, but the quotient is not.
 :::
 

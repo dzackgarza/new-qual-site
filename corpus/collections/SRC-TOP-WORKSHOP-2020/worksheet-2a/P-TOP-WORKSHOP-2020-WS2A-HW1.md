@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 What are the properties $T_0$--$T_4$?
 What other names are there for $T_2$--$T_4$?
 :::

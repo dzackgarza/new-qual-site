@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let 
 $$
 X = \theset{(0, y) \mid - 1 \leq y \leq 1} \cup \theset{\qty{x, s = \sin\qty{1 \over x}} \mid 0 < x \leq 1}
@@ -99,7 +99,7 @@ Let $X = A \union B$ with $A = \theset{(0, y) \suchthat y\in [-1, 1] }$ and $B =
 Since $B$ is the graph of a continuous function, which is always connected.
 Moreover, $X = \bar{A}$, and the closure of a connected set is still connected.
 
-:::{.proof title="?"}
+:::{.proof}
 Alternative direct argument: the subspace $X' = B \union \theset{\vector 0}$ is not connected. 
 If it were, write $X' = U \disjoint V$, where wlog $\vector 0 \in U$.
 Then there is an open such that $\vector 0 \in N_r(\vector 0) \subset U$.

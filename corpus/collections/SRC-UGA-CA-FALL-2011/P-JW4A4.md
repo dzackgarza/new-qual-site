@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Calculate
 \[
 \int_0^\infty {\sqrt x \over (x+1)^2} \,dx

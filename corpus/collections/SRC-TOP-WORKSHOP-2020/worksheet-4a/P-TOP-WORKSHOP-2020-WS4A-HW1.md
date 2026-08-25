@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Give a $\Delta$-complex structure for a standard 2-simplex $\Delta$ and write down its chain complex.
 Explicitly describe the boundary homomorphisms.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Define what it means for $Y$ to be a strong deformation retract of $X$, where $Y\subseteq X$ are topological spaces.
 Prove that if $i:Y\to X$ is the inclusion map and $y\in Y$, then the induced homomorphism $i_*:\pi_1(Y,y)\to\pi_1(X,y)$ is an isomorphism.
 :::

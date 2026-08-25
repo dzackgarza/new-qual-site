@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Prove that the sequence $\left(1+\frac{z}{n}\right)^{n}$ converges uniformly to $e^{z}$ on compact subsets of $\mathbb{C}$. 
 
 > Hint: $e^{n \log w_{n}}=w_{n}^{n}$ and $e^{z}$ is uniform continuous on compact subsets of $\mathbb{C}$.

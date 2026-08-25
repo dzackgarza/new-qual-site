@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a. Suppose $A$ and $B$ are false statements.
 Is the statement $$(A \implies B) \implies (A \vee B)$$ true or false?
 ("$\vee$" denotes "or.")

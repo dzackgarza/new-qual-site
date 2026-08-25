@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Prove the following inequality, and explain when equality holds:
 \[
 \abs{z-w} \geq \abs{ \abs{z} - \abs{w} }

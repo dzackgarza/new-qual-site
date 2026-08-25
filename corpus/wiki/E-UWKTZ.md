@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $f$ is entire and $f(1/z)$ has a pole at $z=0$, then $f$ is a polynomial.
 :::
 

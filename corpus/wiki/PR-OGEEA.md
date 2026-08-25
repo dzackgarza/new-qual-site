@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="?"}
+::: {.proposition}
 Singleton sets in $\RR$ are closed, and thus $\QQ$ is an $F_\sigma$ set.
 :::

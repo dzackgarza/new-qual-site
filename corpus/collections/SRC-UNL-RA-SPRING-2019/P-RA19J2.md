@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Consider the following subset of the metric space $(C_b([0,1]),\rho_\infty)$: $$A:=\{f\in C_b([0,1]):f([0,1])\subseteq[0,1]\}.$$
 
 (a) Determine whether $A$ is bounded, and if so what is its diameter.

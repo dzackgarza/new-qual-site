@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Map $\DD^c \intersect \HH$ to $\HH$, sending 
 
 - $-1\to -1$

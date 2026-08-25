@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $f$ is a continuous function satisfying the equation $f(x) = 5 + \int_0^x 3f(t)\,dt$ for all real $x$.
 Argue that $f$ must be differentiable and then find all such function(s) explicitly.
 :::

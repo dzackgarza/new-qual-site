@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Prove that for every $n\in \ZZ^{\geq 0}$ the following polynomial has no roots in the open unit disc:
 \[
 f_n(z) \definedas \sum_{k=0}^n {z^k \over k!}

@@ -47,7 +47,7 @@ I' = {\pi\over a}\csc\qty{\pi\over a}
 .\]
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 Computing the auxiliary integral $I'$:
 the integrand has the same pole at $\omega_a$, so apply the same technique.
 Write $g(z) \da {1\over z^a+1}$.

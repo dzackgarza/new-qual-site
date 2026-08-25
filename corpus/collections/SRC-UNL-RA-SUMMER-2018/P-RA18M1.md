@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Determine whether the following sequences converge and carefully justify your claims:
 $$(i)\quad x_n=\frac{2n\cdot n!}{n^n};\qquad
 (ii)\quad y_n=\sum_{k=1}^{n}\frac{\cos(k!)}{k(k+1)}.$$

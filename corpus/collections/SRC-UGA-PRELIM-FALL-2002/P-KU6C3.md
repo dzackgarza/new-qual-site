@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 For the cubic polynomial $x^3 - 3x + 2$, use the cubic formula described below to find the root $1$ (with multiplicity $2$) and $-2$.
 You do not have to prove the validity of the cubic formula.]
 

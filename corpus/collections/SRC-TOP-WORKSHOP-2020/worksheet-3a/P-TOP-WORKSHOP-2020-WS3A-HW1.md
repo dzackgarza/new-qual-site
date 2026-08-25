@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Create a cell complex for $S^2$ and a cell complex for $T=S^1\times S^1$.
 :::

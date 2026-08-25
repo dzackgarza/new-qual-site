@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 State the definition of compactness for topological spaces.
 Prove from your definition that the closed unit interval $[0,1]$ is compact.
 :::

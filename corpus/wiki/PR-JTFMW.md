@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="?"}
+::: {.proposition}
 The Cantor set is closed with empty interior.
 :::

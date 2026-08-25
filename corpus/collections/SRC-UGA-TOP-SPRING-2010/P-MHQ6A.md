@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 If $X$ is a topological space and $S \subset X$, define in terms of
 open subsets of $X$ what it means for $S$ **not** to be connected. 
 

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 How many roots does the following polynomial have in the open disc $\abs{z} < 1$?
 \[
 f(z) = z^7 - 4z^3 - 1

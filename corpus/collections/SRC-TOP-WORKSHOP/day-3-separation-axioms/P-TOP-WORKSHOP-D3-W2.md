@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 $$T_4\Longrightarrow T_3\Longrightarrow T_2\Longrightarrow T_1\Longrightarrow T_0.$$
 :::

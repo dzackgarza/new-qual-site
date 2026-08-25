@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose that $f:[a,b]\to\mathbb R$ is continuous and define $M:[a,b]\to\mathbb R$ by $$M(x)=\sup\{f(y):a\le y\le x\}.$$ Show that $M$ is continuous on $[a,b]$.
 :::
 

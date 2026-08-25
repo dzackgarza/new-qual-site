@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 A topological space $X$ is said to be locally connected if the connected components of each point form a base of neighborhoods of $X$.
 Prove that in a locally connected space the connected components of $X$ are open in $X$.
 :::

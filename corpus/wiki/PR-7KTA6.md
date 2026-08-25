@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="?"}
+:::{.proposition}
 \[
 (a+b)^p \leq 2^{p-1} (a^p + b^p)
 .\]

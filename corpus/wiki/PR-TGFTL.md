@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="?"}
+:::{.proposition}
 \[
 \Hom_{\kmod}(V, W) \mapsvia{\sim} \Hom_{\kmod}(W, V)\dual \\
 T &\mapsto \Tr(T \circ \wait )

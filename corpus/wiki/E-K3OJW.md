@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 \envlist
 
 - Let $G$ be a group of order $p$ with $v$ and $e$ positive integers, $p$ prime, $p > v$, and $v$ is not a multiple of $p$.

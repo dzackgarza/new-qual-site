@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Find all cube roots of $2-2i$ and express them in the standard form $a + bi$.
 :::

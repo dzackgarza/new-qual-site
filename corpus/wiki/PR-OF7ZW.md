@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.proposition title="?"}
+::: {.proposition}
 For a linear operator on a vector space of nonzero finite dimension, TFAE:
 
 - The minimal polynomial is equal to the characteristic polynomial.

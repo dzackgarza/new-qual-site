@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $\alpha$ be the complex number $-2+2\sqrt{3}i$.
 Express $\alpha^3$ and the two square roots of $\alpha$ in the standard form $a+bi$.
 :::

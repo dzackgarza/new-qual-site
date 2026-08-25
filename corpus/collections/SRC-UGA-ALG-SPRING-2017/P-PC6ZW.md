@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $R$ be a commutative ring with 1.
 Suppose that $M$ is a free $R\dash$module with a finite basis $X$.
 

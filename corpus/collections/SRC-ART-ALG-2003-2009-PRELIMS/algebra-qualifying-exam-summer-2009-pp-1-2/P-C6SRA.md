@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 For each of the following, either give an example or indicate that none exists.
 You do not need to supply proofs.
 a. Two non-zero $\mathbf{Z}$-modules $A$ and $B$ such that $A\otimes_{\mathbf{Z}} B=0$.

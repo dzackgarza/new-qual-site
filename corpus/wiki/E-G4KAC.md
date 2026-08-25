@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show $x\in \jacobsonrad{R} \iff 1-xR \subseteq R\units$.
 :::

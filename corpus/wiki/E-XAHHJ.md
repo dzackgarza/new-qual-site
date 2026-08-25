@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Let $p \in \mathbb{Z}$ be a prime number.
 Then describe the elements of the Galois group of the polynomial $x^{p}-2$.
 :::

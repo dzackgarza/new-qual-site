@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 The question provides some insight into Cauchy's theorem.
 Solve the problem without using the Cauchy theorem.
 

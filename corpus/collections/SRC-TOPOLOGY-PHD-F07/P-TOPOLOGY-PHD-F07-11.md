@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Define the term “connected component” for a topological space.
 Prove that a connected component is connected.
 :::

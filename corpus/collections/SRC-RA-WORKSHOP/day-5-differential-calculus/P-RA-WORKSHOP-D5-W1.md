@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (June 1999 #10) Show that if $f$ is differentiable on $(a,b)$ with $f'(x)=0$ on $(a,b)$, then $f$ is constant on $(a,b)$.
 :::
 

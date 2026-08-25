@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (i) The polygonal symbol of a certain surface without boundary is $xy^{-1}x^{-1}zwz^{-1}vyw^{-1}v^{-1}$.
 Identify the surface.
 What is its Euler characteristic?

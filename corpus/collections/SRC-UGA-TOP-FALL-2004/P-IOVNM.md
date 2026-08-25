@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $X$ be a compact Hausdorff space and suppose $R \subset X \times X$ is a closed equivalence relation.
 Show that the quotient space $X/R$ is Hausdorff.
 :::

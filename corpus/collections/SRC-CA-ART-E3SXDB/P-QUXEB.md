@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Prove the following:
 
 a. $\sum_{n} nz^n$ does not converge at any point of $S^1$

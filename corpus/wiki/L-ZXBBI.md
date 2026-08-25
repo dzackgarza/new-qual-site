@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.lemma title="?"}
+::: {.lemma}
 If $f:X\to Y$ is a nonconstant holomorphic map between Riemann surfaces with $X$ compact, then
 
 - $f$ must be surjective,

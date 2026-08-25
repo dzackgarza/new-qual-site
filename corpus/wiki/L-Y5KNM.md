@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.lemma title="?"}
+:::{.lemma}
 The minimal polynomial of $A$ is the *invariant factor of highest degree*, i.e.
 $$
 \min_A(x) = f_n(x)

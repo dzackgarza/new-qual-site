@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Suppose $f: \CC\to \CC$ is entire and
 \[
 \abs{f(z)} \leq \abs{z}^{1\over 2} \quad\text{ when } \abs{z} > 10

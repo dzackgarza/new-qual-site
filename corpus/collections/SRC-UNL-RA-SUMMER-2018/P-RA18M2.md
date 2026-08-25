@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Find the domain of convergence and the sum of the series $$\sum_{n\ge0}(-1)^n\frac{x^{2n+1}}{2n+1}.$$
 
 Show how one may use the sum of the series to provide an approximation for $\pi$ up to three decimals.

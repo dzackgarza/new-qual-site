@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $f\in L^1(\RR)$. Show that
 \[
 \forall\varepsilon > 0 \exists \delta > 0 \text{ such that } \qquad 

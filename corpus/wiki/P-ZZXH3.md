@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Suppose that $f: \RR\to\RR$ is a continuous function that vanishes outside of some finite interval.
 For each $z\in \CC$, define
 \[

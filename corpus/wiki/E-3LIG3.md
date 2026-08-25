@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Suppose that $g$ is entire and satisfies the functional equation $g(1-z) = 1-g(z)$.
 Show that $g(\CC) = \CC$.
 :::

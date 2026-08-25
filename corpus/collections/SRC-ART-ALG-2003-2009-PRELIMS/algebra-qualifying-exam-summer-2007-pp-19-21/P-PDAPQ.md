@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Give an example of each of the following.
 (You don't need to justify your answers.)
 a. A maximal ideal of $\mathbf{Z}[x]$.

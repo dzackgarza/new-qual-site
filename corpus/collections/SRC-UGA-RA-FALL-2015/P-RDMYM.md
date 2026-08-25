@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $f, g \in L^1(\RR)$ be Borel measurable.
 
 - Show that 

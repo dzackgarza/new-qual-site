@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 \envlist
 
 a. Let $z, w \in \CC$ with $\bar z w \neq 1$. 

@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 What is the difference between the reduced homology and (non-reduced) homology?
 :::

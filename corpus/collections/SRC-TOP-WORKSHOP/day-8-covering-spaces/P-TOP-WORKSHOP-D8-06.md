@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (Purdue Jan ’08) Let $p:E\to B$ be a covering map.
 Suppose that points are closed in $B$.
 Let $A\subset E$ be compact.

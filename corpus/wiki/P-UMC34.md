@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Find all entire functions that satisfy
 \[
 \abs{f(z)} \geq \abs{z} \quad \forall z\in \CC

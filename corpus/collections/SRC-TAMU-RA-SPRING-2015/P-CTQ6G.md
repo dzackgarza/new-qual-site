@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (1) $Y$ is metric space.
 Prove $y\in Y$ is isolated iff the complement $\{y\}^c$ is not dense in $Y$
 

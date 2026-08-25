@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that the order of any element in a group divides the order of the group.
 :::

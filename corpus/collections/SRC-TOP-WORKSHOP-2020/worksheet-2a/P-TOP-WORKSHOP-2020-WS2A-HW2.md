@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Pick an $n\in\{0,1,2,3\}$, and give an example of a space that is $T_n$, but not $T_{n+1}$.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that if $f$ is holomorphic on $\DD\smz$ and $\abs{f(z)} \leq \log\qty{1\over \abs{z}}$, then $f\equiv 0$.
 :::
 

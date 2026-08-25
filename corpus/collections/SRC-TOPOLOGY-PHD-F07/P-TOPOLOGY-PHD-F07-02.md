@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Define what it means for $(X,d)$ to be a metric space.
 Then $d:X\times X\to\mathbb R$: is $d$ continuous?
 Discuss.

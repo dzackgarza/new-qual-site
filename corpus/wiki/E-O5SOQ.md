@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Suppose $f$ is entire and for every $z$,
 \[
 \abs{f(z)}\leq \abs{\sin(z)}

@@ -65,7 +65,7 @@ If $f:X\to Y$, then
 - For a fixed $X$, decreasing $\tau(X)$ makes it *easier* for sequences to converge in $X$.
 :::
 
-::: {.example title="?"}
+::: {.example}
 Write $\tau_\zar(X)$ for the Zariski topology on a space and $\tau_{\an}(X)$ for the classical/Euclidean topology.
 Then $\tau_\zar(\CC^n) < \tau_{\an}(\CC^n)$, i.e. the Zariski topology is strictly weaker than the Euclidean topology and has fewer open sets.
 :::

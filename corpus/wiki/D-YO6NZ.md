@@ -28,7 +28,7 @@ A space $X$ is **disconnected** iff
   so neither set contains a limit point of the other.
 - $\Hom_\Top(X, \ts{0, 1}) \cong \ts{0, 1}$, i.e. all such continuous functions are constant. 
 
-:::{.example title="?"}
+:::{.example}
 Some examples:
 
 - $\QQ$ is disconnected, and $\pi_0(\QQ) \cong \QQ$: the only connected components are singletons.

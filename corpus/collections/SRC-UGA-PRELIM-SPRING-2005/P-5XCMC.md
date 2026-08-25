@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $P(x)$ and $Q(x)$ be open sentences containing the variable $x$, and consider the following statements.
 $$A: \forall x, (P(x) \Rightarrow Q(x)) \quad \text{and} \quad B: (\forall x, P(x)) \Rightarrow (\forall x, Q(x))$$
 

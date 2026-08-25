@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Show that a continuous function on a compact set is uniformly continuous.
 :::
 

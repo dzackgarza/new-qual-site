@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Suppose $\mfm \in \mspec R$ is a proper maximal ideal.
 Show that under either of the following two conditions, $R$ is local:
 

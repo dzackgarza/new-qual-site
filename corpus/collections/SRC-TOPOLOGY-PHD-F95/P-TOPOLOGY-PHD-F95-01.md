@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $A$ and $B$ be closed subspaces of a topological space $X$ with $X=A\cup B$.
 Suppose that $f:A\to Y$ and $g:B\to Y$ are continuous, and $f(x)=g(x)$ for all $x\in A\cap B$.
 Prove that $h:X\to Y$ by

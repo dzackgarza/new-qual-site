@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Suppose $A, B \subseteq \RR^n$ are disjoint and compact.
 Prove that there exist $a\in A, b\in B$ such that
 \[  

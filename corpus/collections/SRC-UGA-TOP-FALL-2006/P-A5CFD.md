@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 If $f$ is a function from $X$ to $Y$ , consider the graph 
 $$
 G = \theset{(x, y) \in X \times Y \mid f (x) = y}

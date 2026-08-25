@@ -14,6 +14,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove the fundamental theorem of Algebra using the maximum modulus principle.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (Michigan May ’09) Let $X$ be the space obtained from $S^1\times\mathbb R$ by removing the interior of $k$ disjoint $2$-disks.
 
 (a) Compute the fundamental group $\pi_1(X)$.

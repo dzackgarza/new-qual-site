@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $f : X \to Y$ be a continuous function between topological spaces.
 
 Let $A$ be a subset of $X$ and let $f (A)$ be its image in $Y$ .

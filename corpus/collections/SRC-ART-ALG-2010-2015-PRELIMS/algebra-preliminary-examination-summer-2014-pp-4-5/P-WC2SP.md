@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 A local ring is a commutative ring with 1 which has a unique maximal ideal.
 
 a. Show that the group of units of a local ring is precisely the set of elements lying outside of $M$.

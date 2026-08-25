@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (Wisconsin Jan ’98) Let $p:\widetilde X\to X$ be a cover.
 Suppose that $f,g:Y\to\widetilde X$ are maps such that $p\circ f$ and $p\circ g$ are equal and assume that $f$ and $g$ agree at $y_0\in Y$.
 Show that if $Y$ is connected, then $f=g$.

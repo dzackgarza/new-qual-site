@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.proposition title="?"}
+:::{.proposition}
 \[
 \ts{f_n} \subseteq L^1 \text{ and } \sum_n \norm{f_n}_{L^1} < \infty \implies \sum_n f_n \text{ converges }\ae \text{ and in } L^1
 .\]

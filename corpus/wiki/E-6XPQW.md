@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that
 \[
 \sum_{k\in \ZZ} {1\over \qty{ k - {1\over 2}}^2 } = \pi^2

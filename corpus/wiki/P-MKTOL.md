@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Calculate
 \[
 \int_0^\infty {\sqrt x \over 1 + x^2} \, dx

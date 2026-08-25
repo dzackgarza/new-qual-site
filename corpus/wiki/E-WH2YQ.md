@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Fix $a,b\in \CC$ and $\theta$, and describe the locus
 \[
 \ts{z\st \Arg\qty{z-a\over z-b} = \theta}

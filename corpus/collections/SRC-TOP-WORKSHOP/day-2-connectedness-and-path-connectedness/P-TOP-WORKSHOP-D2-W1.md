@@ -12,6 +12,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 If $X$ is a connected space if and only if $X$ and the empty set are the only open and closed sets.
 :::

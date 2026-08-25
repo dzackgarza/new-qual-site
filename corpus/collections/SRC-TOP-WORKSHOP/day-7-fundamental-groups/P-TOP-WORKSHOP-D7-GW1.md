@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $G=\langle x,y\mid x^2yxy=1\rangle$.
 Describe a space $X$ that has $\pi_1(X)=G$.
 :::

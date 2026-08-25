@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Show that if there is a path between two points, they lie in the same connected component.
 Why does this show that a path connected space is connected?
 :::

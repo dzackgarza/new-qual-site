@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $n>1$ be an integer.
 Show that the automorphism group of the cyclic group of order $n$ is isomorphic to the multiplicative group of units mod $n$.
 :::

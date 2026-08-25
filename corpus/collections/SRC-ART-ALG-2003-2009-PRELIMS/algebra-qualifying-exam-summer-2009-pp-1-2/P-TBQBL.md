@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Indicate whether each of the following if-then statements is true, and give a brief explanation to support your answer.
 If the statement is false, and there is a reasonable addition to the hypotheses that would make it true, please indicate that as well.
 a. If $f$ is an irreducible 4th degree polynomial with rational coefficients then the roots of $f$ are constructible numbers.

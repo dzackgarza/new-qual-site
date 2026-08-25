@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 [Reconstructed from solution — no problem statement page was present in this solutions-only document.] Let $f \in L^{\infty}$ on a finite measure space.
 Show that $\displaystyle\lim_{p\to\infty} \|f\|_p = \|f\|_{\infty}$.
 :::

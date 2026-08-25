@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (May ’13) Let $X$ be the space obtained from the $2$-sphere $S^2$ by identifying the north and south poles (i.e. by identifying two diametrically opposite points).
 
 (a) Show that $X$ is homotopy equivalent to $S^1\vee S^2$.

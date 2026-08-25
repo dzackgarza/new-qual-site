@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 If $(X,d)$ is a metric space then $\{x\in X:d(x,x_0)<\epsilon\}$ is said to be the open ball of radius $\epsilon$.
 Prove that an open ball is an open set.
 :::

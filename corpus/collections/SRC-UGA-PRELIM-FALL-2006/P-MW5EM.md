@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Consider the statement:
 
 "If there exists a purple apple, then all lemons are pink."

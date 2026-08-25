@@ -36,7 +36,7 @@ where the sum is taken over all $\ell\times\ell$ **principal minors**: determina
 Equivalently, one can select $n-\ell$ diagonal entries and delete the corresponding row/column for each. 
 
 
-:::{.example title="?"}
+:::{.example}
 
 ![](../../assets/figures/2021-07-24_19-48-11.png)
 

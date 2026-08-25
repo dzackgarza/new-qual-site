@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $A \in M_4(\mathbb{Q})$ is a 4-by-4 matrix of multiplicative order 6. We use $A$ to give $\mathbb{Q}^4$ the structure of a $\mathbb{Q}[x]$-module in the usual way, by setting $x \cdot v = Av$ for $v \in \mathbb{Q}^4$.
 
 a. What are all of the isomorphism classes of $\mathbb{Q}[x]$-modules that can arise this way?

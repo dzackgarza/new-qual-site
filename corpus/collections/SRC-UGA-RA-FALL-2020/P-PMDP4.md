@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Prove that if $xf(x) \in L^1(\RR)$, then
 \[  
 F(y) \da \int f(x) \cos(yx)\,  dx

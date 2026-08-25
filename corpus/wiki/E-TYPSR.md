@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Suppose $f$ is entire and $f^{(n)}$ is bounded on $\CC$.
 Show that $f$ is a polynomial of degree at most $n$.
 :::

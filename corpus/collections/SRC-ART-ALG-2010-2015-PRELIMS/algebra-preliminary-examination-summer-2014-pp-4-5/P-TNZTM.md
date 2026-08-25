@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove or disprove each of the following:
 
 a. If $R[x]$ is a PID, then $R$ is a field.

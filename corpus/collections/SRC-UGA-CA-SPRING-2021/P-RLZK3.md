@@ -19,7 +19,7 @@ The question as written on the original qual has several errors.
 What is below is the correct version of the inequality.
 :::
 
-:::{.problem title="?"}
+:::{.problem}
 1. Let $z_{1}$ and $z_{2}$ be two complex numbers.
 
 (a) Show that 

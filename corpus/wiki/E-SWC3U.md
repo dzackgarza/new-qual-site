@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 a.
 Let $z, w$ be complex numbers, such that $\bar{z} w \neq 1$.
 Prove that

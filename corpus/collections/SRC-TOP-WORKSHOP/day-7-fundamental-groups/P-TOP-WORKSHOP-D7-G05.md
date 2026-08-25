@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $F(a,b)$ be the free group of two generators.
 What are the presentation complex and the Cayley complex for $F(a,b)$?
 Find an index $4$ subgroup and the covering space that corresponds to it.

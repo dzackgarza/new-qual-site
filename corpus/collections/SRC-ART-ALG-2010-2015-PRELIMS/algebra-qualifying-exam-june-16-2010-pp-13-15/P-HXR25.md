@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $\mathbb{F}_p$ be the finite field with $p$ elements, and let $f(x) \in \mathbb{F}_p[x]$ be a polynomial of degree 4.
 
 a. Show that $f(x)$ is irreducible if and only if the polynomials $f(x)$ and $x^{p^2} - x$ are relatively prime.

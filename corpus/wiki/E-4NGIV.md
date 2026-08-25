@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that an entire doubly periodic function is constant.
 :::

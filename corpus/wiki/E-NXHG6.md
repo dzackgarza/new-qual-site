@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that every non-unit of $R$ is contained in a maximal ideal.
 :::
 

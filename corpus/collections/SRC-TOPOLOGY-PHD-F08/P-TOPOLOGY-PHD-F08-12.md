@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 True or false: in a compact topological space every infinite set has a limit point.
 Justify your answer.
 :::

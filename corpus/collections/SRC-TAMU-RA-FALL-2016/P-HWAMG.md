@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (a) Let $f$ be a real valued function on the unit interval $[0,1]$.
 Prove that the set of points at which $f$ is discontinuous is a countable union of closed subsets.
 

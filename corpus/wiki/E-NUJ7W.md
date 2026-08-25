@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that a nonzero nilpotent matrix $A$ is not diagonalizable over any field.
 Some useful facts:
 

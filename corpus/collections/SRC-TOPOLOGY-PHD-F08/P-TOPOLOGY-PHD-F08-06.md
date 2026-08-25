@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Define the term identification map in the category of topological spaces.
 Let $\pi:X\to Y$ be a surjective, continuous map of topological spaces.
 Suppose that $\pi$ maps closed sets to closed sets.

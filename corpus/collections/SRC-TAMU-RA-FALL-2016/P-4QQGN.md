@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (1) Let $f(x)$ be a real valued function on the real line that is differentiable almost everywhere.
 Prove that $f'(x)$ is a Lebesgue measurable function.
 

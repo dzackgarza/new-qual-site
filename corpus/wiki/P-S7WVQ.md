@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Show that $S^2 \cross \RP^4 \not\homotopic S^4 \cross \RP^2$.
 :::
 

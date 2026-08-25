@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $X=D^2$, $Y=\{y\}$ a singleton, and $f:X\to Y$ be the constant function.
 Construct and describe the mapping cylinder.
 :::

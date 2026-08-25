@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Compute the Euler characteristic of the $n$-sphere $S^n$ using the standard triangulation of an $n$-simplex.
 :::

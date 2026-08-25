@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 \envlist
 
 - Assume $f(z)=\sum_{n=0}^{\infty} c_{n} z^{n}$ converges in $|z|<R$. Show that for $r<R$,

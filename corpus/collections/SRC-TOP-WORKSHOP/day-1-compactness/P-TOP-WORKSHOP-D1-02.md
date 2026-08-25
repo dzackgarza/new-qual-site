@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 A topological space $X$ is called *locally compact* if every point in $X$ has an open neighborhood whose closure is compact.
 Show that the Cartesian product of two locally compact spaces, with the product topology, is also locally compact.
 :::

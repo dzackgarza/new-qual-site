@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that $\sin(z) = z$ has infinitely many solutions in $\CC$.
 
 :::

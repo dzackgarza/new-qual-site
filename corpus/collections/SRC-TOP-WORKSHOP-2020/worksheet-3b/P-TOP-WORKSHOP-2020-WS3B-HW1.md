@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Find the universal covers of these spaces:
 
 (a) $X=S^1$.

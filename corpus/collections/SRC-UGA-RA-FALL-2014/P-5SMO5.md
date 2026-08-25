@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $g\in L^\infty([0, 1])$
 Prove that
 \[

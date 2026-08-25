@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $X$ be a set with two elements $\{a,b\}$.
 Give $X$ the indiscrete topology.
 Give $X\times\mathbb R$ the product topology.

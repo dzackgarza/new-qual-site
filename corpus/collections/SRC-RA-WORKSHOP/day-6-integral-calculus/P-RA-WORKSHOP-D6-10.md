@@ -15,7 +15,7 @@ relations:
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (Essentially June 2013 #7) Prove Theorem 5.3.
 :::
 

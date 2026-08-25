@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Calculate
 \[
 \int_0^\infty {\cos(x) - \cos(4x) \over x^2} \, dx

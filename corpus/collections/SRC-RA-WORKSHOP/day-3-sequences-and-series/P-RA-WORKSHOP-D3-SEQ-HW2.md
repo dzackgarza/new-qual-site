@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 If $X$ is a metric space, $E\subset X$, and $x$ is a limit point of $E$, then there exists a sequence $\{x_n\}\subset E$ which converges to $x$.
 :::
 

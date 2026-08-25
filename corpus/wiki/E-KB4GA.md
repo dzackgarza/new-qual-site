@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Let $R$ be a PID.
 
 - Show primes are maximal, so $\spec R \subseteq \mspec R$ and nonzero ideals are prime iff maximal.

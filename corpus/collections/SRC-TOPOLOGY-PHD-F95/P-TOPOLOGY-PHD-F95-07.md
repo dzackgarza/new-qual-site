@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove by any method you know that:
 
 (a) $\mathbb R$ is not homeomorphic to $\mathbb R^2$.

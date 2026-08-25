@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Suppose $f$ is analytic on $\DD^\circ$.
 Determine with proof which of the following are possible:
 

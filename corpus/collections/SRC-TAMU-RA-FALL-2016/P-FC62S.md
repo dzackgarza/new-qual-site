@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Assume that $X$ is a reflexive Banach space and $\phi$ is a continuous linear functional on $X$.
 Prove that there is a norm one vector $x$ such that $\phi(x)=\|\phi\|$.
 Give an counterexample in the case $X=l_1$.

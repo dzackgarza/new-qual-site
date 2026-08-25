@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Show that $f'$ bounded implies $f$ is uniformly continuous.
 
 :::

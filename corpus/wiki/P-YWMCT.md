@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Show that 
 \[
 \int_{\RR_{\geq 0}}{x^{-s} \over x+1} = {\pi \over \sin(\pi s)}

@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 If $(X,d)$ is a metric space, then it is Hausdorff [see number 8].
 :::

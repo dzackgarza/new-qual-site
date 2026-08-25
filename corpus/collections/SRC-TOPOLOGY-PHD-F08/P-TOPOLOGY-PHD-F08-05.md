@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove that a closed subset of a compact topological space is compact.
 Prove that in a Hausdorff topological space a compact subset is closed.
 :::

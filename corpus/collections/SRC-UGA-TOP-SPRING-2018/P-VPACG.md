@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $U \subset \RR^n$ be an open set which is bounded in the standard Euclidean metric.
 Prove that the quotient space $\RR^n / U$ is not Hausdorff.
 :::

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose that $R$ is a principal-ideal domain and $a, b, c, d \in R$ with $a, b \neq 0$.
 
 a. Find a generator for the ideal $(a) \vee (b)$ (for the notation '$\vee$,' see the first problem in this section).

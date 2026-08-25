@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 \envlist
 
 - Prove the Lebesgue integral is translation/dilation invariant.

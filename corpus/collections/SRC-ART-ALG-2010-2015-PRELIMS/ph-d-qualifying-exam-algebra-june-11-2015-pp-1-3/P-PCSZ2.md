@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $J$ and $L$ are groups, and $\varphi: L \to \mathrm{Aut}(J)$ is a group homomorphism.
 
 a. Give a definition for the group $J \rtimes_\varphi L$.

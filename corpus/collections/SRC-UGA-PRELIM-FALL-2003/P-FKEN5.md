@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Prove by induction that the sum of the cubes of 3 consecutive positive integers is divisible by 9.
 :::

@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Prove the Fundamental Theorem of Algebra (using complex analysis).
 :::
 

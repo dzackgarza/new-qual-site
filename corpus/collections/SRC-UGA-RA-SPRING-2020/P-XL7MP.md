@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 \envlist
 
 a.
@@ -100,7 +100,7 @@ using that $(f-g)\convolve \varphi_\eps\in L^2$ and $\ts{e_n}$ for a complete or
 $\ell^1(\ZZ) \subseteq \ell^2(\ZZ)$.
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Set $\vector c = \theset{c_k \suchthat k\in \ZZ} \in \ell^1(\ZZ)$.
@@ -127,7 +127,7 @@ $\ell^1(\ZZ) \subseteq \ell^2(\ZZ)$.
 $L^2([0, 1]) \subseteq L^1([0, 1])$.
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - It suffices to show that $\int \abs{f}^2 < \infty \implies \int \abs{f} < \infty$.

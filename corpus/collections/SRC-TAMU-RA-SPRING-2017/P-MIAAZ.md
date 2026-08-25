@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Show that every continuous convex function $f$ defined on the closed unit ball of a reflexive Banach space $X$ can achieve the minimum
 :::

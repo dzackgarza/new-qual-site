@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-:::{.corollary title="?"}
+:::{.corollary}
 \[
 \sum_{k=0}^\infty \frac 1 {2^k} = 1
 .\]

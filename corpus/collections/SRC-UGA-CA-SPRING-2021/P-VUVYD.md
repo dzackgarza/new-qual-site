@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $f = u + iv$ be an entire function such that $\Re(f(x+iy))$ is polynomial in $x$ and $y$.
 Show that $f(z)$ is polynomial in $z$.
 :::
@@ -27,7 +27,7 @@ To clear up notation: write $f(z) = u(x, y) + iv(x, y)$, here we're assuming tha
 If $u$ is polynomial in $x,y$, then so is $v$.
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 This follows from the fact that $u$ is a harmonic conjugate of $v$, and the explicit process computing the conjugate will result in a polynomial.
 Gamelin describes this process in detail, see Ch.2 Section 5 on Harmonic functions where he proves the formula
 \[
@@ -42,7 +42,7 @@ v(x, y)
 Since $f(x, y)$ is a polynomial in $x, y$, $f(z)$ must be a polynomial in $z$.
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 Since $f$ is entire, it's equal to its Laurent series everywhere, so
 \[
 f(z) = \sum_{k\geq 0} c_k z^k, \qquad c_k = {f^{(k) }(0) \over k!} = {1\over 2\pi i} \int_{S^1} {f(\xi) \over \xi^{k+1} } \dxi

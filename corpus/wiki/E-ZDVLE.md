@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that if $\Re(f(z)) \geq 0$ for all $z\in \CC$, then $f$ is constant.
 
 :::

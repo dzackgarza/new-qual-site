@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (June 2010 #2b) Prove that $\{1/n:n\in\mathbb Z\setminus\{0\}\}\cup\{0\}$ is compact using the above definition.
 :::
 

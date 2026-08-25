@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose that $X$ is compact and $Y$ is Hausdorff.
 Prove that every one-to-one, onto, continuous map $f:X\to Y$ is a homeomorphism.
 :::

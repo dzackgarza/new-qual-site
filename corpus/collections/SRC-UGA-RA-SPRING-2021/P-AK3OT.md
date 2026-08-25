@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let \( f_n \in L^2([0, 1]) \) for \( n\in \NN \), and assume that 
 
 - \( \norm{f_n}_2 \leq n^{-51 \over 100} \)  for all \( n\in \NN \),

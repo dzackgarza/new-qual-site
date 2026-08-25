@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $a\in \CC$ and $n\geq 2$.
 Show that the following polynomial has one root in $\abs{z} \leq 2$:
 \[

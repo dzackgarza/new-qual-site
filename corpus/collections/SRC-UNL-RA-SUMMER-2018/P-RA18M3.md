@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Define $f,\alpha\in\mathcal B([-2,2])$ by
 $$
 f(x):=\begin{cases}

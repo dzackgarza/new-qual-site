@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a. Define *unitary operator* on a complex Hilbert space.
 
 b. Let $S$ be a unitary operator on a complex Hilbert space.

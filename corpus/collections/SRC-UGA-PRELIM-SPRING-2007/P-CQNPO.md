@@ -16,7 +16,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Give an example (proof not required) of each of the following:
 
 a) A function $f:\mathbb{R}\to\mathbb{R}$ which satisfies $f(x)=0$ for all $x\le 0$, but which is nonzero for $x>0$ and has derivatives of all orders for all $x$.

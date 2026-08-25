@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $N$ be a positive integer, and let $G$ be a finite group of order $N$.
 
 a.

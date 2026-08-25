@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $X$ be a compact space.
 If $X=A\cup B$ with both $A$ and $B$ Hausdorff, must $X$ be Hausdorff?
 :::

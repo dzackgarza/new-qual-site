@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 State the Galois Correspondence Theorem for a path-connected, locally path-connected, and semilocally simply connected space $X$.
 :::

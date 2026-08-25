@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $p$ be prime, $n$ be a positive integer, $f(X) = X^{p^n} - X + 1$, and $K$ be an algebraic closure of $\mathbb{F}_p$.
 
 a. If $\alpha \in K$ is a root of $f(X)$ and $a \in \mathbb{F}_{p^n} \subseteq K$, show that $\alpha + a$ is a root of $f(X)$ and $\alpha^p - \alpha + 1 \in \mathbb{F}_{p^n}$.

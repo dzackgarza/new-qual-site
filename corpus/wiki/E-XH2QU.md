@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 Show that $R[x]$ a PID $\iff R$ is a field.
 :::
 

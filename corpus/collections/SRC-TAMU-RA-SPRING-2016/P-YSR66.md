@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 (a) Let $X$ be a normed vector space and $Y$ be a closed liner subspace of $X$.
 Assume $Y$ is a proper subspace, that is, $Y\ne X$.
 Show that, for arbitrary $\epsilon\in(0,1)$, there is an element $x\in X$ such that $\|x\|=1$ and $\inf_{y\in Y}\|x-y\|>1-\epsilon$.

@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.exercise title="?"}
+::: {.exercise}
 \envlist
 
 - Show that if $G/Z(G)$ is cyclic then $G$ is abelian.

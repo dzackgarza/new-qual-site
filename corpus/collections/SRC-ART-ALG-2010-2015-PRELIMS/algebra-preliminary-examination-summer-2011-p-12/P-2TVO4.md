@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $p < q$ be two distinct odd primes such that $p \nmid q - 1$.
 Let $n = pq$ and $\zeta_n$ be a primitive $n$-th root of unity in $\mathbb{C}$.
 

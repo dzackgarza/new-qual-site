@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Determine whether the following spaces $X$ admit a retraction and/or a deformation retraction onto the designated subspace $Y$:
 
 (a) $X=[0,1]$, $Y=\{0\}$.

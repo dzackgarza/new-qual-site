@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $|G|=pq$ where $p$ and $q$ are prime, $p<q$.
 a. Show that $G$ is not a simple group.
 b. If $p$ does not divide $q-1$, show that $G$ is abelian.

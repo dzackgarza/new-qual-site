@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $A$ be a finite-dimensional algebra over a field $F$ equipped with a non-degenerate symmetric bilinear form $(\cdot,\cdot): A \times A \to F$.
 Let $x_1,\dots,x_n$ be a basis for $A$ and $y_1,\dots,y_n$ be the dual basis with respect to the given form, i.e., $(x_i,y_j) = \delta_{i,j}$ for all $i,j = 1,\dots,n$.
 

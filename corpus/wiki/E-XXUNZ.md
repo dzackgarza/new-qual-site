@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that if $f_n\to f$ uniformly then $\int_\gamma f_n\to \int_\gamma f$.
 
 :::

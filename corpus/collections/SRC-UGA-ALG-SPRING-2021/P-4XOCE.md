@@ -37,7 +37,7 @@ Show an element $x$ is central by showing $\size C_x = 1$.
 :::
 
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Let $p \da \size H$.

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Suppose $R$ is a commutative ring (with 1), $I$ is a proper ideal in $R$, and $a \in R$.
 Suppose $(a) + I = R$.
 Prove that $a+I$ is a unit (i.e., invertible) in the quotient ring $R/I$.

@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Show that $E$ is measurable iff $E$ is regular.
 :::
 ::: {.solution}

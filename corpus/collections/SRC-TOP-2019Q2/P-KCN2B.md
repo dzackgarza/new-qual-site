@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Let $X$ be a topological space and let
 $$
 \Delta = \theset{(x, y) \in X \times X \mid x = y}

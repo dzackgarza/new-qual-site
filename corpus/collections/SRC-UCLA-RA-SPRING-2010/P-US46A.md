@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 a. For $f\in L^2(\mathbb{R})$ and a sequence $\{x_n\}\subseteq\mathbb{R}$ which converges to zero, define $f_n(x):=f(x+x_n)$.
 Show that $\{f_n\}$ converges to $f$ in $L^2$.
 

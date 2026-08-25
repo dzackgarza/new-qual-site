@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Let $f$ be an entire non-constant function that satisfies the functional equation $$f(1-z) = 1-f(z)$$ for all $z\in\mathbb{C}$.
 Show that $f(\mathbb{C})=\mathbb{C}$.
 :::

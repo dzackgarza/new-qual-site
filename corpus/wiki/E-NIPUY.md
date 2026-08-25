@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 Show $f(x) = x^{-n}$ for $n\in \ZZ_{\geq 0}$ is uniformly continuous on $[0, \infty)$.
 
 :::

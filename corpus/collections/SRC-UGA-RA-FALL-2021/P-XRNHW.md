@@ -15,7 +15,7 @@ relations: []
 review: draft
 ---
 
-:::{.problem title="?"}
+:::{.problem}
 a.
 Let $F \subset \mathbb{R}$ be closed, and define
 \[

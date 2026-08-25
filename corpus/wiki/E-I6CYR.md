@@ -14,7 +14,7 @@ relations: []
 review: draft
 ---
 
-:::{.exercise title="?"}
+:::{.exercise}
 Show that
 \[
 B(z, w) = {\Gamma(z) \Gamma(w) \over \Gamma(z+w)}

@@ -13,7 +13,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Use the Meyer-Vietoris sequence to calculate the homology of $X\vee Y$.
 :::
 

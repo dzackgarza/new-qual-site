@@ -13,6 +13,6 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 Briefly describe the classification of compact surfaces without boundary.
 :::

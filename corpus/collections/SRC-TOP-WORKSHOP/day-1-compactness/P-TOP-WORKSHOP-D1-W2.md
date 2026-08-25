@@ -12,7 +12,7 @@ relations: []
 review: draft
 ---
 
-::: {.problem title="?"}
+::: {.problem}
 If $X$ is compact, and $A\subseteq Y$ is closed, then $A$ is compact.
 :::
 
