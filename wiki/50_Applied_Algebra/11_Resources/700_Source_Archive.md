@@ -67,4 +67,3 @@ Each entry links to that collection's own page, which lists its problems in the 
 [[SRC-UCSD-APALG-FALL-2025]]
 
 [[SRC-UCSD-APALG-SPRING-2026]]
-

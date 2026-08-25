@@ -151,7 +151,6 @@ These department PDFs now have collection cards; their problem lists are not yet
 
 ## Contributed artifacts
 
-
 [[SRC-CA-ART-E3SXDB]]
 
 [[SRC-CA-ART-T34TG3]]

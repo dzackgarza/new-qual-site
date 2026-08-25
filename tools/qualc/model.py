@@ -228,12 +228,7 @@ class CompilationSource(Strict):
 
     def listed_problem_ids(self) -> list[str]:
         if self.sections:
-            return [
-                pid
-                for section in self.sections
-                for pid in section.problems
-                if PROBLEM_ID_RE.match(pid)
-            ]
+            return [pid for section in self.sections for pid in section.problems if PROBLEM_ID_RE.match(pid)]
         return list(self.problems)
 
 
@@ -487,9 +482,7 @@ def to_ast(markdown: str) -> str:
     match result:
         case PandocFailure(error=error):
             raise PandocBatchError(error)
-    warnings = [
-        message.message for message in result.messages if message.verbosity == "WARNING"
-    ]
+    warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
     if warnings:
         raise ValueError("\n".join(warnings))
     return result.output
@@ -559,10 +552,7 @@ def drop_path_captions(element: pf.Element, doc: pf.Doc) -> pf.Element:
     caption = pf.stringify(element.caption).strip()
     if not caption:
         return element
-    repeats_target = any(
-        caption == PurePosixPath(url).stem or caption == url
-        for url in _figure_targets(element)
-    )
+    repeats_target = any(caption == PurePosixPath(url).stem or caption == url for url in _figure_targets(element))
     if FILE_CAPTION.search(caption) or repeats_target:
         element.caption = pf.Caption()
     return element
@@ -638,9 +628,7 @@ def parse_cards_with(
             card: Card = adapter.validate_python(meta)
             prepared.append((path, card, body))
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
-            errors.append(
-                Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc))
-            )
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
 
     results = pandoc.read_markdown(
         [body for _, _, body in prepared],
@@ -649,21 +637,11 @@ def parse_cards_with(
     parsed: list[ParsedCard] = []
     for (path, card, _), result in zip(prepared, results, strict=True):
         if isinstance(result, PandocFailure):
-            errors.append(
-                Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error)
-            )
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error))
             continue
-        warnings = [
-            message.message
-            for message in result.messages
-            if message.verbosity == "WARNING"
-        ]
+        warnings = [message.message for message in result.messages if message.verbosity == "WARNING"]
         if warnings:
-            errors.append(
-                Diagnostic(
-                    DiagnosticCode.READER_WARNING, str(path), "; ".join(warnings)
-                )
-            )
+            errors.append(Diagnostic(DiagnosticCode.READER_WARNING, str(path), "; ".join(warnings)))
             continue
         try:
             document = from_ast(result.output).walk(drop_path_captions)
@@ -676,13 +654,9 @@ def parse_cards_with(
                 )
             )
         except UnmappedDivClass as exc:
-            errors.append(
-                Diagnostic(DiagnosticCode.UNMAPPED_DIV_CLASS, str(path), str(exc))
-            )
+            errors.append(Diagnostic(DiagnosticCode.UNMAPPED_DIV_CLASS, str(path), str(exc)))
         except (TypeError, ValueError) as exc:
-            errors.append(
-                Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc))
-            )
+            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
     return parsed, errors
 
 

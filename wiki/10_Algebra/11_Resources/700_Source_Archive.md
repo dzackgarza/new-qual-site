@@ -132,7 +132,6 @@ Each entry links to that collection's own page, which lists its problems in the 
 
 ## Contributed artifacts
 
-
 [[SRC-ART-ALG-2003-2009-PRELIMS]]
 
 [[SRC-ART-ALG-2010-2015-PRELIMS]]

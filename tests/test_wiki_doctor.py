@@ -146,10 +146,7 @@ def test_unreadable_front_matter_is_named_and_does_not_stop_other_checks(
     wiki.mkdir()
     (wiki / "broken.md").write_text("---\norder: [\n---\n")
     _write(wiki / "empty.md", "")
-    assert any(
-        finding.startswith("wiki/broken.md:")
-        for finding in _findings(tmp_path, "unreadable-wiki-pages")
-    )
+    assert any(finding.startswith("wiki/broken.md:") for finding in _findings(tmp_path, "unreadable-wiki-pages"))
     assert _findings(tmp_path, "empty-bodies") == ["wiki/empty.md"]
 
 
@@ -157,10 +154,7 @@ def test_doctor_exits_zero_with_findings_and_is_not_a_gate(tmp_path: Path) -> No
     _write(tmp_path / "wiki" / "empty.md", "")
     assert main(["--root", str(tmp_path), "--json"]) == 0
     # The CLI prints JSON to stdout; capture via run() rather than the print.
-    payload = [
-        {"check": check.name, "ok": check.ok, "findings": check.findings}
-        for check in run(ALL, root=tmp_path)
-    ]
+    payload = [{"check": check.name, "ok": check.ok, "findings": check.findings} for check in run(ALL, root=tmp_path)]
     dumped = json.dumps(payload)
     assert "empty-bodies" in dumped
     assert payload[ALL.index("empty-bodies")]["findings"] == ["wiki/empty.md"]

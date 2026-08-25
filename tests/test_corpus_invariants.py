@@ -71,9 +71,7 @@ def test_unregistered_source_area_is_rejected() -> None:
     vocab = load_vocabularies(ROOT / "vocabularies")
 
     errors = validate([_collection_card("not-a-real-area")], vocab)
-    assert [error.code for error in errors] == [DiagnosticCode.UNKNOWN_AREA], (
-        f"an unregistered source.area must be rejected as unknown-area; got {[e.code for e in errors]}"
-    )
+    assert [error.code for error in errors] == [DiagnosticCode.UNKNOWN_AREA], f"an unregistered source.area must be rejected as unknown-area; got {[e.code for e in errors]}"
 
     # And the same card with a registered area passes, so the guard is not
     # simply rejecting every collection card.

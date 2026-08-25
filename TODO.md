@@ -13,9 +13,7 @@ A candidate leaves that queue only after a source-based disposition.
 
 Owner: [issue #46](https://github.com/dzackgarza/new-qual-site/issues/46)
 
-The corpus layout now nests every listed problem under its collection
-(`corpus/collections/<ID>/`). What remains is the fidelity of the lists
-themselves.
+The corpus layout now nests every listed problem under its collection (`corpus/collections/<ID>/`). What remains is the fidelity of the lists themselves.
 
 - [ ] Read one source document and its collection card.
 
