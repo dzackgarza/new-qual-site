@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA19J1
 kind: problem
-title: UNL analysis qualifying exam, January 2019, problem 1
+title: Pointwise but not uniform convergence of $1/(1+n^2x^2)$ and $nx(1-x)^n$, and equicontinuity
 classification:
   areas:
   - real-analysis

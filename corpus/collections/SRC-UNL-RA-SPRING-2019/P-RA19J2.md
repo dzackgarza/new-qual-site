@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA19J2
 kind: problem
-title: UNL analysis qualifying exam, January 2019, problem 2
+title: Boundedness and closedness of the self-maps of $[0,1]$ in $C_b([0,1])$
 classification:
   areas:
   - real-analysis

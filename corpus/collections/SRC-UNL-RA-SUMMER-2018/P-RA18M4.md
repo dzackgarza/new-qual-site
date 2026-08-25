@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA18M4
 kind: problem
-title: UNL analysis qualifying exam, May 2018, problem 4
+title: The supremum metric on bounded functions
 classification:
   areas:
   - real-analysis

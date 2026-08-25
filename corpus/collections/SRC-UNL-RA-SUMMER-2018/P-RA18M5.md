@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA18M5
 kind: problem
-title: UNL analysis qualifying exam, May 2018, problem 5
+title: Equicontinuity upgrades pointwise convergence to uniform convergence, and a Holder family is equicontinuous
 classification:
   areas:
   - real-analysis

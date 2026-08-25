@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA19J5
 kind: problem
-title: UNL analysis qualifying exam, January 2019, problem 5
+title: Riemann-Stieltjes integrability of $e^{2x}$ against a broken-step integrator on $[0,4]$
 classification:
   areas:
   - real-analysis

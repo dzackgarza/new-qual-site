@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA18M6
 kind: problem
-title: UNL analysis qualifying exam, May 2018, problem 6
+title: Uniform convergence on compacta of the translates $f(x+1/n)$, and failure on all of $\mathbb{R}$
 classification:
   areas:
   - real-analysis

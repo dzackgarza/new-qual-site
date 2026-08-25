@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-FPWV6
 kind: problem
-title: Provide examples of the following. [No justification is required.]
+title: Examples - a false converse, continuous not differentiable, separate continuity, non-Cauchy bounded sequence, and a series converging exactly on $[0,2]$
 classification:
   areas:
   - prelim

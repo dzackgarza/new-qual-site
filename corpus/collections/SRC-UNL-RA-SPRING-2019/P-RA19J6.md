@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA19J6
 kind: problem
-title: UNL analysis qualifying exam, January 2019, problem 6
+title: A positive continuous function on $[a,b]$ is bounded away from zero, via Heine-Borel
 classification:
   areas:
   - real-analysis

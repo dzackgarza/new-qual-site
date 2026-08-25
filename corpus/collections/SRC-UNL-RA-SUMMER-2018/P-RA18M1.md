@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA18M1
 kind: problem
-title: UNL analysis qualifying exam, May 2018, problem 1
+title: Convergence of $2n\cdot n!/n^n$ and of a series with $\cos(k!)/(k(k+1))$
 classification:
   areas:
   - real-analysis

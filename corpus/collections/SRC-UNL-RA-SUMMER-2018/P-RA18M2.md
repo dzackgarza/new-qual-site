@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RA18M2
 kind: problem
-title: UNL analysis qualifying exam, May 2018, problem 2
+title: Domain and sum of the arctangent series, and a three-decimal approximation of $\pi$
 classification:
   areas:
   - real-analysis
