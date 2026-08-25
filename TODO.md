@@ -244,8 +244,6 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] P-RA-WORKSHOP-D4-12
 
-
-
 - [ ] P-RA-WORKSHOP-D4-W1
 
 - [ ] P-RA-WORKSHOP-D4-W2
@@ -264,7 +262,6 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] P-RA-WORKSHOP-D5-12
 
-
 - [ ] P-RA-WORKSHOP-D5-W1
 
 - [ ] P-RA-WORKSHOP-D5-W2
@@ -272,7 +269,6 @@ Delete the line when the card is settled — completion lives in git history, no
 - [ ] P-RA-WORKSHOP-D5-W3
 
 #### corpus/collections/SRC-RA-WORKSHOP/day-6-integral-calculus
-
 
 - [ ] P-RA-WORKSHOP-D6-W1
 
@@ -1310,7 +1306,6 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] P-VSKE4
 
-
 #### corpus/collections/SRC-UGA-CA-SPRING-2020
 
 - [ ] P-7ENEI
@@ -1328,7 +1323,6 @@ Delete the line when the card is settled — completion lives in git history, no
 - [ ] P-H7Z7N
 
 - [ ] P-IV4XE
-
 
 - [ ] P-VUVYD
 
@@ -1526,7 +1520,6 @@ Delete the line when the card is settled — completion lives in git history, no
 
 #### corpus/collections/SRC-UGA-TOP-FALL-2014
 
-
 - [ ] P-7N24X
 
 - [ ] P-B4N3X
@@ -1643,13 +1636,11 @@ Delete the line when the card is settled — completion lives in git history, no
 
 #### corpus/qrs
 
-
 - [ ] E-23SLE
 
 - [ ] E-5GT6F
 
 - [ ] E-BAOST
-
 
 - [ ] E-DFUYC
 
@@ -1659,11 +1650,9 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] E-GYGP2
 
-
 - [ ] E-LUR7G
 
 - [ ] E-QSNCL
-
 
 - [ ] E-T4VAX
 
@@ -1677,17 +1666,11 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] E-XXZVG
 
-
-
 - [ ] P-OFKQJ
 
 #### corpus/wiki
 
-
 - [ ] C-HWX2P
-
-
-
 
 - [ ] D-YO6NZ
 
@@ -1701,7 +1684,6 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] E-37H2C
 
-
 - [ ] E-3KD4O
 
 - [ ] E-3LIG3
@@ -1710,9 +1692,7 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] E-47X7Y
 
-
 - [ ] E-4NGIV
-
 
 - [ ] E-4WFQM
 
@@ -1792,7 +1772,6 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] E-HGWPG
 
-
 - [ ] E-HKLAA
 
 - [ ] E-HOJKE
@@ -1802,7 +1781,6 @@ Delete the line when the card is settled — completion lives in git history, no
 - [ ] E-I7ZD4
 
 - [ ] E-IPIKC
-
 
 - [ ] E-J3QMJ
 
@@ -1900,11 +1878,9 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] E-TYPSR
 
-
 - [ ] E-U2X4C
 
 - [ ] E-UDPOY
-
 
 - [ ] E-UWKTZ
 
@@ -1916,7 +1892,6 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] E-W7WQV
 
-
 - [ ] E-WKY7C
 
 - [ ] E-WNTXK
@@ -1924,7 +1899,6 @@ Delete the line when the card is settled — completion lives in git history, no
 - [ ] E-WPGNS
 
 - [ ] E-WSJ6P
-
 
 - [ ] E-XAHHJ
 
@@ -1969,7 +1943,6 @@ Delete the line when the card is settled — completion lives in git history, no
 - [ ] P-2CKBC
 
 - [ ] P-2DXZW
-
 
 - [ ] P-3EAU2
 
@@ -2087,19 +2060,15 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] PR-5PDNQ
 
-
 - [ ] PR-BHUO6
 
 - [ ] PR-C626A
 
 - [ ] PR-DLPTR
 
-
 - [ ] PR-EHIXY
 
 - [ ] PR-F2N4L
-
-
 
 - [ ] PR-JTFMW
 
@@ -2123,13 +2092,9 @@ Delete the line when the card is settled — completion lives in git history, no
 
 - [ ] PR-QDIOC
 
-
-
-
 - [ ] PR-UZVC3
 
 - [ ] PR-YJJSY
-
 
 - [ ] P-S7WVQ
 
@@ -2178,7 +2143,6 @@ Delete the line when the card is settled — completion lives in git history, no
 - [ ] P-Z776N
 
 - [ ] P-ZZXH3
-
 
 - [ ] T-BRWA7
 
