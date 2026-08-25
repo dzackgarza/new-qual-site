@@ -27,15 +27,10 @@ The corpus layout now nests every listed problem under its collection (`corpus/c
 
 Owner: [issue #45](https://github.com/dzackgarza/new-qual-site/issues/45)
 
-The `title="?"` placeholder on these statement divs marked the frontmatter
-title as suspect. Most have already been superseded by later authoring passes:
-of the current remainder, 37 titles are verbatim statement fragments (measured)
-and need a real name; the rest already read like authored titles and need only
-a verification read against the statement. Per item: read the card; if the
-title is a clipped fragment or a data dump rather than a name, replace it with
-the shortest description a reader recognizes the card by; otherwise leave it.
-Delete the line when the card is settled — completion lives in git history,
-not here.
+The `title="?"` placeholder on these statement divs marked the frontmatter title as suspect.
+Most have already been superseded by later authoring passes: of the current remainder, 37 titles are verbatim statement fragments (measured) and need a real name; the rest already read like authored titles and need only a verification read against the statement.
+Per item: read the card; if the title is a clipped fragment or a data dump rather than a name, replace it with the shortest description a reader recognizes the card by; otherwise leave it.
+Delete the line when the card is settled — completion lives in git history, not here.
 
 #### corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/algebra-qualifying-exam-summer-2007-pp-19-21
 
