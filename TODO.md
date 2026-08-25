@@ -32,18 +32,6 @@ Most have already been superseded by later authoring passes: of the current rema
 Per item: read the card; if the title is a clipped fragment or a data dump rather than a name, replace it with the shortest description a reader recognizes the card by; otherwise leave it.
 Delete the line when the card is settled — completion lives in git history, not here.
 
-#### corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/algebra-qualifying-exam-june-16-2010-pp-13-15
-
-- [ ] P-3DGMZ
-
-- [ ] P-HU56P
-
-- [ ] P-HXR25
-
-- [ ] P-VUTDR
-
-- [ ] P-ZY76X
-
 #### corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/ph-d-qualifying-exam-algebra-june-11-2015-pp-1-3
 
 - [ ] P-6ET4N
