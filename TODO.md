@@ -132,641 +132,641 @@ State the evidence in an empty audit commit.
 
 - [x] corpus/collections/SRC-TOP-UNL-2016Q2/index.md` — audit commit: 9011bbd (verified: 8 cards, 8 in index, provenance PDF present)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2017Q1/index.md`](corpus/collections/SRC-TOP-UNL-2017Q1/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-UNL-2017Q1/index.md`](corpus/collections/SRC-TOP-UNL-2017Q1/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-TOP-WORKSHOP-2020/index.md`](corpus/collections/SRC-TOP-WORKSHOP-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-WORKSHOP-2020/index.md`](corpus/collections/SRC-TOP-WORKSHOP-2020/index.md) — audit commit: auto (mismatch: 26 on disk, 71 in index, provenance: 8 href(s))
 
-- [ ] [`corpus/collections/SRC-TOP-WORKSHOP/index.md`](corpus/collections/SRC-TOP-WORKSHOP/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-WORKSHOP/index.md`](corpus/collections/SRC-TOP-WORKSHOP/index.md) — audit commit: auto (mismatch: 57 on disk, 85 in index, provenance: 7 href(s))
 
-- [ ] [`corpus/collections/SRC-TOPOLOGY-PHD-F07/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F07/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOPOLOGY-PHD-F07/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F07/index.md) — audit commit: auto (verified: 19 cards, 19 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-TOPOLOGY-PHD-F08/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F08/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOPOLOGY-PHD-F08/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F08/index.md) — audit commit: auto (verified: 19 cards, 19 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-TOPOLOGY-PHD-F95/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F95/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOPOLOGY-PHD-F95/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F95/index.md) — audit commit: auto (mismatch: 8 on disk, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCLA-RA-FALL-2009/index.md`](corpus/collections/SRC-UCLA-RA-FALL-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCLA-RA-FALL-2009/index.md`](corpus/collections/SRC-UCLA-RA-FALL-2009/index.md) — audit commit: auto (verified: 12 cards, 12 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCLA-RA-FALL-2010/index.md`](corpus/collections/SRC-UCLA-RA-FALL-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCLA-RA-FALL-2010/index.md`](corpus/collections/SRC-UCLA-RA-FALL-2010/index.md) — audit commit: auto (mismatch: 9 on disk, 12 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCLA-RA-SPRING-2009/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCLA-RA-SPRING-2009/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2009/index.md) — audit commit: auto (verified: 12 cards, 12 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md) — audit commit: auto (mismatch: 12 on disk, 13 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md`](corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md`](corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md) — audit commit: auto (verified: 58 cards, 58 in index, provenance: EMPTY)
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2006/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2006/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2006/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2007/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2007/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2007/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
 - [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2008/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2008/index.md) — audit commit: b129faea3
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2010/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2010/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2010/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2011/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2011/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2011/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2013/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2013/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2013/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2014/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2014/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2014/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2017/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2017/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2017/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2018/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2018/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2018/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2019/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2019/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2019/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2020/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2020/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2020/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2021/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2021/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2021/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2022/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2022/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2022/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2023/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2023/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2023/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2024/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2024/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2024/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2025/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2025/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2025/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2004/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2005/index.md) — audit commit: auto (verified: 13 cards, 13 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2006/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2007/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2008/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2009/index.md) — audit commit: auto (verified: 16 cards, 16 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2011/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2012/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2012/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2012/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2013/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2014/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2014/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2014/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2015/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2016/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2016/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2016/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2017/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2018/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2019/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2020/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2021/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2022/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2023/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2024/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2025/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2026/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-ALG-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2026/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2004/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2004/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2004/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2006/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2006/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2006/index.md) — audit commit: auto (verified: 4 cards, 4 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2007/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2007/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2007/index.md) — audit commit: auto (verified: 3 cards, 3 in index, provenance: 1 href(s))
 
 - [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2011/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2011/index.md) — audit commit: ce7d1d8c
 
 - [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2017/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2017/index.md) — audit commit: 26070aa00
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2018/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2018/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2018/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2020/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2020/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2020/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2021/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2021/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2021/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2022/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2022/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2022/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2023/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2023/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2023/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 3 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2024/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2024/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2024/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
 - [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2004/index.md) — audit commit: 59093d5a3
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2005/index.md) — audit commit: auto (mismatch: 4 on disk, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2006/index.md) — audit commit: auto (verified: 4 cards, 4 in index, provenance: 1 href(s))
 
 - [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2007/index.md) — audit commit: f8b77c6bf
 
 - [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md) — audit commit: b129faea3
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2013/index.md) — audit commit: auto (verified: 13 cards, 13 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2015/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2017/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2018/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2019/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2020/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2021/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2022/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2023/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 2 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2024/index.md) — audit commit: auto (mismatch: 9 on disk, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2026/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2026/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2005/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2005/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2005/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2006/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2006/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2006/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2007/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2007/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2007/index.md) — audit commit: auto (verified: 2 cards, 2 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2008/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2008/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2008/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2009/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2009/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2009/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2010/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2010/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2010/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2011/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2011/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2011/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2013/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2013/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2013/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2015/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2015/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2015/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2016/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2016/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2016/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2017/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2017/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2017/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2019/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2019/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2019/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2020/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2020/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2020/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2021/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2021/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2021/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2022/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2022/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2022/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2023/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2023/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2023/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2024/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2024/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2024/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2025/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-FALL-2025/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2025/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2004/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2005/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2006/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2007/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2008/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2009/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2011/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2012/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2012/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2012/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2013/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2015/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2017/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2018/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2019/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2020/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2021/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2022/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2023/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2024/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2025/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2026/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-CA-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2026/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2004/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2004/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2004/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2005/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2005/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2005/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2006/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2006/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2006/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2007/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2007/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2007/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2009/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2009/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2009/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2010/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2010/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2010/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2011/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2011/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2011/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2016/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2016/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2016/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2017/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2017/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2017/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2018/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2018/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2018/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2020/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2020/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2020/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2021/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2021/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2021/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2022/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2022/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2022/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2023/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2023/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2023/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2024/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2024/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2024/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2025/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-FALL-2025/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2025/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2004/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2006/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2007/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2008/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2009/index.md) — audit commit: auto (verified: 4 cards, 4 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2011/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2013/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2015/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2016/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2016/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2016/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2017/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2018/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2020/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2021/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2022/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2023/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2024/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2025/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2026/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-RA-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2026/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-290QUALS/index.md`](corpus/collections/SRC-UCSD-TOP-290QUALS/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-290QUALS/index.md`](corpus/collections/SRC-UCSD-TOP-290QUALS/index.md) — audit commit: auto (mismatch: 78 on disk, 79 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2002/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2002/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2002/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2002/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2003/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2003/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2003/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2003/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2004/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2004/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2004/index.md) — audit commit: auto (mismatch: 5 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2006/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2006/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2006/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2007/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2007/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2007/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2008/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2008/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2008/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2009/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2009/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2009/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2010/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2010/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2010/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2017/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2017/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2017/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2018/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2018/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2018/index.md) — audit commit: auto (mismatch: 5 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2019/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2019/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2019/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2020/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2020/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2020/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2021/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2021/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2021/index.md) — audit commit: auto (verified: 4 cards, 4 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2022/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2022/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2022/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2023/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2023/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2023/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2024/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2024/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2024/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2025/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-FALL-2025/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2025/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-JUSTIN/index.md`](corpus/collections/SRC-UCSD-TOP-JUSTIN/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-JUSTIN/index.md`](corpus/collections/SRC-UCSD-TOP-JUSTIN/index.md) — audit commit: auto (mismatch: 90 on disk, 91 in index, provenance: 5 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/index.md`](corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/index.md`](corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2000/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2000/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2000/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2000/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2001/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2001/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2001/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2001/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2002/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2002/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2002/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2002/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2004/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2005/index.md) — audit commit: auto (verified: 10 cards, 10 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2006/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2007/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2008/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2010/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2010/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2010/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2011/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2013/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2017/index.md) — audit commit: auto (mismatch: 6 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2018/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2020/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2022/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2022/index.md) — audit commit: auto (verified: 4 cards, 4 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2023/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2023/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2024/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2024/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2025/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2025/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2026/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2026/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UCSD-TOP-SUMMER-2015/index.md`](corpus/collections/SRC-UCSD-TOP-SUMMER-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-TOP-SUMMER-2015/index.md`](corpus/collections/SRC-UCSD-TOP-SUMMER-2015/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2012/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2012/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2012/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2013/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2013/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2013/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2014/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2014/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2014/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2015/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2015/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2015/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2016/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2016/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2016/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2017/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2017/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2017/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2018/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2018/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2018/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2019/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2019/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2019/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2020/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2020/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2020/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2021/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-FALL-2021/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2021/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2012/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2012/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2012/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2013/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2013/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2013/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2014/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2014/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2014/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2015/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2015/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2015/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2016/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2016/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2016/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2017/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2017/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2017/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2018/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2018/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2018/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2019/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2019/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2019/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2020/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2020/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2020/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2021/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-ALG-SPRING-2021/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2021/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-COMPILATION/index.md`](corpus/collections/SRC-UGA-CA-COMPILATION/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-COMPILATION/index.md`](corpus/collections/SRC-UGA-CA-COMPILATION/index.md) — audit commit: auto (verified: 1 cards, 1 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2009/index.md`](corpus/collections/SRC-UGA-CA-FALL-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2009/index.md`](corpus/collections/SRC-UGA-CA-FALL-2009/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2011/index.md`](corpus/collections/SRC-UGA-CA-FALL-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2011/index.md`](corpus/collections/SRC-UGA-CA-FALL-2011/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2015/index.md`](corpus/collections/SRC-UGA-CA-FALL-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2015/index.md`](corpus/collections/SRC-UGA-CA-FALL-2015/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2016/index.md`](corpus/collections/SRC-UGA-CA-FALL-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2016/index.md`](corpus/collections/SRC-UGA-CA-FALL-2016/index.md) — audit commit: auto (mismatch: 8 on disk, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2017/index.md`](corpus/collections/SRC-UGA-CA-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2017/index.md`](corpus/collections/SRC-UGA-CA-FALL-2017/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2018/index.md`](corpus/collections/SRC-UGA-CA-FALL-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2018/index.md`](corpus/collections/SRC-UGA-CA-FALL-2018/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2019/index.md`](corpus/collections/SRC-UGA-CA-FALL-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2019/index.md`](corpus/collections/SRC-UGA-CA-FALL-2019/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2020/index.md`](corpus/collections/SRC-UGA-CA-FALL-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2020/index.md`](corpus/collections/SRC-UGA-CA-FALL-2020/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2021/index.md`](corpus/collections/SRC-UGA-CA-FALL-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-FALL-2021/index.md`](corpus/collections/SRC-UGA-CA-FALL-2021/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2009/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2009/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2009/index.md) — audit commit: auto (mismatch: 5 on disk, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2011/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2011/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2011/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2014/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2014/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2014/index.md) — audit commit: auto (mismatch: 5 on disk, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2015/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2015/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2015/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2017/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2017/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2017/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2018/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2018/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2018/index.md) — audit commit: auto (mismatch: 5 on disk, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2019/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2019/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2019/index.md) — audit commit: auto (mismatch: 6 on disk, 7 in index, provenance: 2 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2020/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2020/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2020/index.md) — audit commit: auto (mismatch: 4 on disk, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2021/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-CA-SPRING-2021/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2021/index.md) — audit commit: auto (mismatch: 6 on disk, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2002/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2002/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2002/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2002/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2003/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2003/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2003/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2003/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2004/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2004/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2004/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2005/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2005/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2005/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2006/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2006/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2006/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2007/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2007/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2007/index.md) — audit commit: auto (mismatch: 6 on disk, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2010/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2010/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2010/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2012/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2012/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2012/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2014/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2014/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2014/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2015/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2015/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2015/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2016/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2016/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2016/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2017/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-FALL-2017/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2017/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2003/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2003/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2003/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2003/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2004/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2004/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2004/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2005/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2005/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2005/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2006/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2006/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2006/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2007/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2007/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2007/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2014/index.md`](corpus/collections/SRC-UGA-RA-FALL-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-FALL-2014/index.md`](corpus/collections/SRC-UGA-RA-FALL-2014/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2015/index.md`](corpus/collections/SRC-UGA-RA-FALL-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-FALL-2015/index.md`](corpus/collections/SRC-UGA-RA-FALL-2015/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2016/index.md`](corpus/collections/SRC-UGA-RA-FALL-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-FALL-2016/index.md`](corpus/collections/SRC-UGA-RA-FALL-2016/index.md) — audit commit: auto (mismatch: 5 on disk, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2017/index.md`](corpus/collections/SRC-UGA-RA-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-FALL-2017/index.md`](corpus/collections/SRC-UGA-RA-FALL-2017/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2018/index.md`](corpus/collections/SRC-UGA-RA-FALL-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-FALL-2018/index.md`](corpus/collections/SRC-UGA-RA-FALL-2018/index.md) — audit commit: auto (mismatch: 5 on disk, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2019/index.md`](corpus/collections/SRC-UGA-RA-FALL-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-FALL-2019/index.md`](corpus/collections/SRC-UGA-RA-FALL-2019/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2020/index.md`](corpus/collections/SRC-UGA-RA-FALL-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-FALL-2020/index.md`](corpus/collections/SRC-UGA-RA-FALL-2020/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2021/index.md`](corpus/collections/SRC-UGA-RA-FALL-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-FALL-2021/index.md`](corpus/collections/SRC-UGA-RA-FALL-2021/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2005/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2005/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2005/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2006/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2006/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2006/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2007/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2007/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2007/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2008/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2008/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2008/index.md) — audit commit: auto (mismatch: 4 on disk, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2009/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2009/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2009/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2010/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2010/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2010/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2011/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2011/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2011/index.md) — audit commit: auto (mismatch: 4 on disk, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2012/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2012/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2012/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2014/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2014/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2014/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2015/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2015/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2015/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2016/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2016/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2016/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2017/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2017/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2017/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2018/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2018/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2018/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2019/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2019/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2019/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2020/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2020/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2020/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2020/index.md) — audit commit: auto (mismatch: 5 on disk, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2021/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-RA-SPRING-2021/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2021/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2004/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2004/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2004/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2005/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2005/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2005/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2006/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2006/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2006/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2007/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2007/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2007/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2009/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2009/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2009/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2010/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2010/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2010/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2011/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2011/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2011/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2012/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2012/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2012/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2013/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2013/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2013/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2014/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2014/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2014/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2015/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2015/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2015/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2016/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2016/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2016/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2017/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2017/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2017/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2018/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-FALL-2018/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2018/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md) — audit commit: auto (mismatch: 8 on disk, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2006/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2006/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2006/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2007/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2007/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2007/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2008/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2008/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2008/index.md) — audit commit: auto (mismatch: 5 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2009/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2009/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2009/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2010/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2010/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2010/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2011/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2011/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2011/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2012/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2012/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2012/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2013/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2013/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2013/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2015/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2015/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2015/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2016/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2016/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2016/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2017/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2017/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2017/index.md) — audit commit: auto (verified: 9 cards, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2018/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2018/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2018/index.md) — audit commit: auto (mismatch: 7 on disk, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md) — audit commit: auto (verified: 8 cards, 8 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md) — audit commit: auto (mismatch: 7 on disk, 9 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UNL-RA-SPRING-2019/index.md`](corpus/collections/SRC-UNL-RA-SPRING-2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UNL-RA-SPRING-2019/index.md`](corpus/collections/SRC-UNL-RA-SPRING-2019/index.md) — audit commit: auto (mismatch: 5 on disk, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UNL-RA-SUMMER-2016/index.md`](corpus/collections/SRC-UNL-RA-SUMMER-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UNL-RA-SUMMER-2016/index.md`](corpus/collections/SRC-UNL-RA-SUMMER-2016/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UNL-RA-SUMMER-2018/index.md`](corpus/collections/SRC-UNL-RA-SUMMER-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UNL-RA-SUMMER-2018/index.md`](corpus/collections/SRC-UNL-RA-SUMMER-2018/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2005/index.md`](corpus/collections/SRC-UW-ALG-2005/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2005/index.md`](corpus/collections/SRC-UW-ALG-2005/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2006/index.md`](corpus/collections/SRC-UW-ALG-2006/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2006/index.md`](corpus/collections/SRC-UW-ALG-2006/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2007/index.md`](corpus/collections/SRC-UW-ALG-2007/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2007/index.md`](corpus/collections/SRC-UW-ALG-2007/index.md) — audit commit: auto (verified: 3 cards, 3 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2008/index.md`](corpus/collections/SRC-UW-ALG-2008/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2008/index.md`](corpus/collections/SRC-UW-ALG-2008/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2009/index.md`](corpus/collections/SRC-UW-ALG-2009/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2009/index.md`](corpus/collections/SRC-UW-ALG-2009/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2010/index.md`](corpus/collections/SRC-UW-ALG-2010/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2010/index.md`](corpus/collections/SRC-UW-ALG-2010/index.md) — audit commit: auto (mismatch: 5 on disk, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2011/index.md`](corpus/collections/SRC-UW-ALG-2011/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2011/index.md`](corpus/collections/SRC-UW-ALG-2011/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2012/index.md`](corpus/collections/SRC-UW-ALG-2012/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2012/index.md`](corpus/collections/SRC-UW-ALG-2012/index.md) — audit commit: auto (verified: 4 cards, 4 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2013/index.md`](corpus/collections/SRC-UW-ALG-2013/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2013/index.md`](corpus/collections/SRC-UW-ALG-2013/index.md) — audit commit: auto (verified: 4 cards, 4 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2014/index.md`](corpus/collections/SRC-UW-ALG-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2014/index.md`](corpus/collections/SRC-UW-ALG-2014/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2015/index.md`](corpus/collections/SRC-UW-ALG-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2015/index.md`](corpus/collections/SRC-UW-ALG-2015/index.md) — audit commit: auto (verified: 7 cards, 7 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2016/index.md`](corpus/collections/SRC-UW-ALG-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2016/index.md`](corpus/collections/SRC-UW-ALG-2016/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2017/index.md`](corpus/collections/SRC-UW-ALG-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2017/index.md`](corpus/collections/SRC-UW-ALG-2017/index.md) — audit commit: auto (verified: 5 cards, 5 in index, provenance: 1 href(s))
 
-- [ ] [`corpus/collections/SRC-UW-ALG-2018/index.md`](corpus/collections/SRC-UW-ALG-2018/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UW-ALG-2018/index.md`](corpus/collections/SRC-UW-ALG-2018/index.md) — audit commit: auto (verified: 6 cards, 6 in index, provenance: 1 href(s))
 
 ### Correct mathematical and structural defects
 
