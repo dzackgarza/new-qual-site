@@ -788,7 +788,13 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Extract exam collections
 
-- [ ] Finish Applied Algebra Fall 2004.
+- [x] Finish Applied Algebra Fall 2004.
+  Disposition 2026-08-26: compared all six cards against
+  `assets/attachments/FA04_202_Applied_Algebra_Qual_extracted.md` — Part 1
+  #1-3 and Part III #4-6 are present, in source order, faithful to the
+  source (the card reads "irreducible" correctly where OCR garbled it).
+  `P-APAS04C` is also listed under SRC-UCSD-APALG-SPRING-2004 because the
+  pseudo-inverse problem appears verbatim on both exams.
 
 - [ ] Finish Applied Algebra Fall 2011.
 
