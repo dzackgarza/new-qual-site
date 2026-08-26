@@ -1010,7 +1010,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [ ] Write a complete structured proof.
 
-- [ ] Set `solved: true` on the same card.
+- [ ] Add a `solution` section to the card, or add an incoming `solves` relation from a solver card.
 
 - [ ] Integrate a source solution only after independent mathematical review.
 
