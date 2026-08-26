@@ -42,7 +42,7 @@ State the evidence in an empty audit commit.
 
 - [ ] [`corpus/collections/SRC-ALG-ART-QHGA3N/index.md`](corpus/collections/SRC-ALG-ART-QHGA3N/index.md) — audit commit:
 
-- [ ] [`corpus/collections/SRC-ALG-ART-SEPT2019/index.md`](corpus/collections/SRC-ALG-ART-SEPT2019/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-ALG-ART-SEPT2019/index.md`](corpus/collections/SRC-ALG-ART-SEPT2019/index.md) — audit commit: dc0ff8314 (verified: 6 source problems, 6 cards, all match)
 
 - [ ] [`corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/index.md`](corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/index.md) — audit commit:
 
