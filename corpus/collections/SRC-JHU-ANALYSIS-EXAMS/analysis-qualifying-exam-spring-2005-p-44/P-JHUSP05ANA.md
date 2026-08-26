@@ -16,6 +16,7 @@ Notation: $\mathcal{C}^{\infty}(\mathbb{R})$ denotes the complex-valued $\mathca
 
 Let $f(x) = e^{-|x|}$ for $x \in \mathbb{R}$.
 
-a) Is $\widehat{f} \in \mathcal{C}^{\infty}(\mathbb{R})$? Prove that your answer is correct.
+a) Is $\widehat{f} \in \mathcal{C}^{\infty}(\mathbb{R})$?
+Prove that your answer is correct.
 
 b) Show that $|\widehat{f}(\xi)| \to 0$ as $|\xi| \to \infty$.

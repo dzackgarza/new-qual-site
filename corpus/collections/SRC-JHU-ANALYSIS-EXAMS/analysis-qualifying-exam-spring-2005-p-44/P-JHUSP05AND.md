@@ -15,8 +15,11 @@ review: draft
 
 Let $\{e_n\}$ be an orthonormal basis for a Hilbert space $H$.
 
-a) Show that $e_n \to 0$ weakly. (Explain what weak convergence means.)
+a) Show that $e_n \to 0$ weakly.
+(Explain what weak convergence means.)
 
-b) Show that $e_n$ does not tend to zero strongly. (Explain what strong convergence means.)
+b) Show that $e_n$ does not tend to zero strongly.
+(Explain what strong convergence means.)
 
-c) Let $v_n = \frac{1}{n} \sum_{j=1}^{n} e_j$. Show that $v_n \to 0$ strongly.
+c) Let $v_n = \frac{1}{n} \sum_{j=1}^{n} e_j$.
+Show that $v_n \to 0$ strongly.

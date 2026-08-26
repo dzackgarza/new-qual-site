@@ -13,4 +13,7 @@ relations: []
 review: draft
 ---
 
-Let $U$ be an open set in $\mathbb{C}$ containing the closed unit disk $\overline{D}$. Suppose $f$ is a meromorphic function on $U$ such that $f(\partial D) \subset \mathbb{R}^{+}$. (In particular, $f$ has no zeros or poles on $\partial D$.) Show that $f$ has the same number of zeros as poles in $D$, counting multiplicities.
+Let $U$ be an open set in $\mathbb{C}$ containing the closed unit disk $\overline{D}$.
+Suppose $f$ is a meromorphic function on $U$ such that $f(\partial D) \subset \mathbb{R}^{+}$.
+(In particular, $f$ has no zeros or poles on $\partial D$.)
+Show that $f$ has the same number of zeros as poles in $D$, counting multiplicities.
