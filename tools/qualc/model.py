@@ -12,6 +12,8 @@ from __future__ import annotations
 import io
 import re
 from collections.abc import Callable
+from concurrent.futures import ProcessPoolExecutor
+from dataclasses import dataclass
 from pathlib import Path, PurePosixPath
 from typing import Annotated, Literal, cast
 
@@ -577,6 +579,18 @@ class UnmappedDivClass(ValueError):
         super().__init__(f"unmapped fenced-div class(es): {', '.join(classes)}")
 
 
+@dataclass(frozen=True)
+class NormalizedAst:
+    ast: str
+    sections: list[tuple[str, str]]
+
+
+@dataclass(frozen=True)
+class AstDiagnostic:
+    code: DiagnosticCode
+    message: str
+
+
 def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     """Collect semantic sections wherever they appear, including nested ones.
 
@@ -615,6 +629,19 @@ def extract_sections(doc: pf.Doc) -> list[tuple[str, str]]:
     return found
 
 
+def _normalize_ast(source: str) -> NormalizedAst | AstDiagnostic:
+    try:
+        document = from_ast(source).walk(drop_path_captions)
+        return NormalizedAst(
+            ast=to_json(document),
+            sections=extract_sections(document),
+        )
+    except UnmappedDivClass as exc:
+        return AstDiagnostic(DiagnosticCode.UNMAPPED_DIV_CLASS, str(exc))
+    except (TypeError, ValueError) as exc:
+        return AstDiagnostic(DiagnosticCode.CARD_UNREADABLE, str(exc))
+
+
 def parse_cards_with(
     pandoc: PandocServer,
     paths: list[Path],
@@ -632,7 +659,7 @@ def parse_cards_with(
 
     bodies = [body for _, _, body in prepared]
     results = read_markdown_parallel(bodies, MARKDOWN) if len(bodies) >= 1_000 else pandoc.read_markdown(bodies, MARKDOWN)
-    parsed: list[ParsedCard] = []
+    processable: list[tuple[Path, Card, str]] = []
     for (path, card, _), result in zip(prepared, results, strict=True):
         if isinstance(result, PandocFailure):
             errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), result.error))
@@ -641,20 +668,34 @@ def parse_cards_with(
         if warnings:
             errors.append(Diagnostic(DiagnosticCode.READER_WARNING, str(path), "; ".join(warnings)))
             continue
-        try:
-            document = from_ast(result.output).walk(drop_path_captions)
+        processable.append((path, card, result.output))
+
+    sources = [source for _, _, source in processable]
+    if len(sources) >= 1_000:
+        with ProcessPoolExecutor(max_workers=4) as executor:
+            normalized = list(executor.map(_normalize_ast, sources, chunksize=64))
+    else:
+        normalized = [_normalize_ast(source) for source in sources]
+
+    parsed: list[ParsedCard] = []
+    for (path, card, _), normalized_result in zip(processable, normalized, strict=True):
+        if isinstance(normalized_result, NormalizedAst):
             parsed.append(
                 ParsedCard(
                     card=card,
-                    ast=to_json(document),
+                    ast=normalized_result.ast,
                     source_path=str(path),
-                    sections=extract_sections(document),
+                    sections=normalized_result.sections,
                 )
             )
-        except UnmappedDivClass as exc:
-            errors.append(Diagnostic(DiagnosticCode.UNMAPPED_DIV_CLASS, str(path), str(exc)))
-        except (TypeError, ValueError) as exc:
-            errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
+        else:
+            errors.append(
+                Diagnostic(
+                    normalized_result.code,
+                    str(path),
+                    normalized_result.message,
+                )
+            )
     return parsed, errors
 
 
