@@ -67,6 +67,29 @@ def manifest(*topics: str) -> dict[str, object]:
     }
 
 
+def reference_manifest(section: str) -> dict[str, object]:
+    sections = []
+    for slug, title in (("first", "First"), ("second", "Second")):
+        items = [{"ref": "PRB-CPT"}] if slug == section else []
+        sections.append(
+            {
+                "slug": slug,
+                "title": title,
+                "parent": "GUIDE-TOPOLOGY",
+                "lede": f"The {title.lower()} section.",
+                "items": items,
+            }
+        )
+    return {
+        "schema": "qual/publication@2",
+        "id": "GUIDE-TOPOLOGY",
+        "kind": "study-guide",
+        "title": "Topology",
+        "lede": "A short topology guide.",
+        "sections": sections,
+    }
+
+
 def test_a_subject_guide_panel_lists_only_that_subject(tmp_path: Path) -> None:
     work = fixture_repo(
         tmp_path,
@@ -147,3 +170,31 @@ def test_a_panel_naming_several_topics_lists_a_problem_carrying_any_of_them(
     # panel is still a query rather than the whole subject.
     assert listed == {"../../tag/PRB-CPT.html", "../../tag/PRB-CON.html"}
     assert panels[0].attrs["data-count"] == "2"
+
+
+def test_a_named_card_moves_with_its_publication_section(tmp_path: Path) -> None:
+    work = fixture_repo(
+        tmp_path,
+        {
+            "PRB-CPT.md": PROBLEM.format(
+                id="PRB-CPT",
+                title="A compact Hausdorff space is normal",
+                area="topology",
+                topic="compactness",
+                body="Let $X$ be compact Hausdorff. Show $X$ is normal.",
+            )
+        },
+    )
+    manifest_path = work / "publications" / "topology-guide.yaml"
+    manifest_path.write_text(yaml.safe_dump(reference_manifest("first"), sort_keys=False))
+    first_build = run_qualc("build", work)
+    assert first_build.returncode == 0, first_build.stderr
+
+    manifest_path.write_text(yaml.safe_dump(reference_manifest("second"), sort_keys=False))
+    second_build = run_qualc("build", work)
+    assert second_build.returncode == 0, second_build.stderr
+
+    first = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "first.html")
+    second = read_html(work / "build" / "quarto" / "_site" / "guide" / "GUIDE-TOPOLOGY" / "second.html")
+    assert first.root.find_all("section", **{"data-card-id": "PRB-CPT"}) == []
+    assert len(second.root.find_all("section", **{"data-card-id": "PRB-CPT"})) == 1

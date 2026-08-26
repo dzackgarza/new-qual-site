@@ -180,16 +180,6 @@ def guide_plan(
     return entries, nav_titles, named
 
 
-def move_appearance(manifest_path: Path, card_id: str, destination_slug: str) -> None:
-    manifest = yaml.safe_load(manifest_path.read_text())
-    source = next(section for section in manifest["sections"] if any(item.get("ref") == card_id for item in section["items"]))
-    destination = next(section for section in manifest["sections"] if section["slug"] == destination_slug)
-    item = next(item for item in source["items"] if item.get("ref") == card_id)
-    source["items"].remove(item)
-    destination["items"].append(item)
-    manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False, allow_unicode=True))
-
-
 def build_site(root: Path) -> None:
     subprocess.run(
         [sys.executable, "-m", "qualc", "build", "--root", str(root)],
@@ -379,18 +369,6 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     assert "exam/SRC-UGA-CA-FALL-2021.html" in {resolved_link(Path("tag/P-B4HPX.html"), link.attrs["href"]) for link in problem_appearances[0].find_all("a")}
     assert "UGA complex-analysis Fall 2021, problem 1" in problem_appearances[0].text
 
-    # Republish the same card under a different section, then flatten the corpus
-    # underneath it. Publication structure and source layout must both move
-    # without the catalog noticing.
-    moved_card = witness_card
-    destination_slug = next(slug for slug, named in named_by_section.items() if named and slug != witness_slug)
-    destination_route = route_of[destination_slug]
-    assert moved_card not in named_by_section[destination_slug]
-
-    stable_route = site / "tag" / f"{moved_card}.html"
-    assert stable_route.is_file()
-    move_appearance(manifest_path, moved_card, destination_slug)
-
     # Reorganize the corpus the way a contributor might: flatten every card into
     # one flat pile with unrecognizable filenames.
     flat = work / "flat"
@@ -401,9 +379,3 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     flat.rename(work / "corpus")
 
     assert rebuild_catalog(work) == before
-    assert stable_route.is_file()
-    moved_page = read_html(site / destination_route)
-    moved_targets = {resolved_link(destination_route, link.attrs["href"]) for link in moved_page.root.find_all("a")}
-    assert f"tag/{moved_card}.html" in moved_targets
-    moved_sections = {element.attrs["data-card-id"] for element in moved_page.root.find_all("section") if "data-card-id" in element.attrs}
-    assert moved_card in moved_sections

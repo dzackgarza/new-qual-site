@@ -43,6 +43,12 @@ def load(
     return parsed, wiki_pages, errors
 
 
+def build_catalog(root: Path, parsed: list[ParsedCard]) -> Path:
+    db = root / "build" / "catalog.sqlite"
+    index.build(parsed, db)
+    return db
+
+
 def main(argv: list[str] | None = None) -> int:
     ap = argparse.ArgumentParser(prog="qualc")
     ap.add_argument("command", choices=["check", "build"])
@@ -66,8 +72,7 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "check":
             return 0
 
-        db = args.root / "build" / "catalog.sqlite"
-        index.build(parsed, db)
+        db = build_catalog(args.root, parsed)
         emit.project(
             pandoc,
             db,
