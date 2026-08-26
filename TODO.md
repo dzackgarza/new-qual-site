@@ -784,7 +784,9 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   `D-QTJ7T` is the canonical definition.
   It records the broader spherical convergence convention separately.
 
-- [ ] Record unresolved mathematical choices on issue #2.
+- [x] Record the normal-family convention, repaired Prelim source structure,
+  Kronecker-pairing correction, and two remaining external-source gaps on
+  [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2#issuecomment-5429918459).
 
 ### Current corpus data issues
 
@@ -1063,10 +1065,9 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 - [x] Keep the live `\sech` definition in `vocabularies/macros.json`. The disabled definition belongs only to archived TexDocs aggregates, which are not publisher inputs.
   [Issue #14](https://github.com/dzackgarza/new-qual-site/issues/14) is closed.
 
-- [x] Restore the statements for the 27 Prelim solution write-ups stored as
-  problems. One card was already repaired. The other 26 now contain the exact
-  statement from the Fall 2015, Fall 2016, or Fall 2017 UGA exam, followed by
-  the solution.
+- [x] Restore the statements for the 27 Prelim solution write-ups stored as problems.
+  One card was already repaired.
+  The other 26 now contain the exact statement from the Fall 2015, Fall 2016, or Fall 2017 UGA exam, followed by the solution.
 
 - [ ] Decide whether collection and problem pages satisfy reachability for every problem.
 
