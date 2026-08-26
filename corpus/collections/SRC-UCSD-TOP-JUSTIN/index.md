@@ -9,8 +9,8 @@ classification:
   topics: []
 relations: []
 review: draft
-provenance:
-- assets/attachments/UCSD_Topology_Qual_Problems_2020-05-29.pdf
+completion: incomplete
+provenance: []
 source:
   source_kind: compilation
   problems:
@@ -99,3 +99,8 @@ source:
 ---
 
 
+::: remark
+The compilation is the maintainer's own typed problem sheet (dated May 29, 2020) transcribing the UCSD Math 290 course problem sheets; its section headings cite Sheets 7 through 12 of that sequence. The course sheets are the external oracle for these problems and are not yet located, so the provenance list is empty.
+
+Seven source entries are picture-only in the source (four Van Kampen entries printed as "Images" and three cellular-homology identification spaces), and the final section, Cohomology Ring (Sheet 12), is empty in the source ("Todo"). The picture-only entries cannot be transcribed from the sanctioned text extraction; they require the sheet's images.
+:::
