@@ -6,17 +6,17 @@ Friday 29th May, 2020
 
 ## Contents
 
-1 Problems 1   
-1.1 Homotopy . . 1   
-1.2 Fundamental Group 1   
-1.3 Group Actions 2   
-1.4 Applications . 2   
-1.5 Van Kampen’s Theorem 2   
-1.6 Mayer Vietoris (Sheet 7) 3   
-1.7 Cellular Homology (Sheet 8) . 4   
-1.8 Degree . . . 5   
-1.9 Universal Coefficient Theorem (Sheet 10) 5   
-1.10 Homological Algebra (Sheet 11) 6   
+1 Problems 1\
+1.1 Homotopy . . 1\
+1.2 Fundamental Group 1\
+1.3 Group Actions 2\
+1.4 Applications . 2\
+1.5 Van Kampen’s Theorem 2\
+1.6 Mayer Vietoris (Sheet 7) 3\
+1.7 Cellular Homology (Sheet 8) . 4\
+1.8 Degree . . . 5\
+1.9 Universal Coefficient Theorem (Sheet 10) 5\
+1.10 Homological Algebra (Sheet 11) 6\
 1.11 Cohomology Ring (Sheet 12) 6
 
 ## 1 Problems
@@ -43,7 +43,8 @@ Friday 29th May, 2020
 
 1. Show that $x , y \in X$ path & simply-connected =⇒ all paths from x to y are homotopic rel $\{ 0 , 1 \}$
 
-2. Show that for X path connected, $\pi _ { 1 } ( X ) = \# \iff$ ∀cts. $f : S ^ { 1 } \to X \ f .$ , extends to a continuous map $F : B ^ { 2 } \to X$ ·
+2. Show that for X path connected, $\pi _ { 1 } ( X ) = \# \iff$ ∀cts.
+   $f : S ^ { 1 } \to X \ f .$ , extends to a continuous map $F : B ^ { 2 } \to X$ ·
 
 3. Show $\pi _ { 1 } ( X \times Y , ( x _ { 0 } , y _ { 0 } ) ) \cong \pi _ { 1 } ( X , x _ { 0 } ) \times \pi _ { 1 } ( Y , y _ { 0 } )$
 
@@ -57,17 +58,17 @@ Friday 29th May, 2020
 
 8. For each of the following $f : S ^ { 1 } \to S ^ { 1 }$ , identify the corresponding $f _ { * } : \mathbb { Z } \longrightarrow \mathbb { Z } :$
 
-1. $z \mapsto z ^ { n }$
+9. $z \mapsto z ^ { n }$
 
-2. $\textstyle { \overline { { x } } } \mapsto - { \overline { { x } } }$
+10. $\textstyle { \overline { { x } } } \mapsto - { \overline { { x } } }$
 
-3. $e ^ { i \theta } \mapsto e ^ { 2 \pi i \sin \theta }$
+11. $e ^ { i \theta } \mapsto e ^ { 2 \pi i \sin \theta }$
 
-9. Determine the winding number of the following map: $f : S ^ { 1 } \longrightarrow \mathbb { C } - \{ 0 \} , z \mapsto 8 z ^ { 4 } + 4 z ^ { 3 } +$ $2 z ^ { 2 } + z ^ { - 1 }$
+12. Determine the winding number of the following map: $f : S ^ { 1 } \longrightarrow \mathbb { C } - \{ 0 \} , z \mapsto 8 z ^ { 4 } + 4 z ^ { 3 } +$ $2 z ^ { 2 } + z ^ { - 1 }$
 
-10. Identify $\pi _ { 1 } ( M , [ ( 1 , \frac { 1 } { 2 } ) ] )$ , and identify the class of $\partial M$
+13. Identify $\pi _ { 1 } ( M , [ ( 1 , \frac { 1 } { 2 } ) ] )$ , and identify the class of $\partial M$
 
-11. Let $\ b X = \ b S ^ { 1 } \times \ b S ^ { 1 }$ and γ a loop based at $x _ { 0 }$ . What is the induced map $\gamma _ { \sharp } ?$
+14. Let $\ b X = \ b S ^ { 1 } \times \ b S ^ { 1 }$ and γ a loop based at $x _ { 0 }$ . What is the induced map $\gamma _ { \sharp } ?$
 
 ## 1.3 Group Actions
 
@@ -77,21 +78,22 @@ Friday 29th May, 2020
 
 3. Show that $\pi _ { 1 } ( K )$ , the Klein bottle, is given by pairs $( m , n )$ where $( m , n ) \star ( p , q ) = ( m +$ $( - 1 ) ^ { n } p , n + q )$
 
-1. Show this is torsion-free
+4. Show this is torsion-free
 
-2. Show that T is a double cover of $K$
+5. Show that T is a double cover of $K$
 
-4. For each of these actions of $\mathbb { Z } _ { 2 }$ on $S ^ { n }$ , compute $\pi _ { 1 } ( S ^ { n } / \mathbb { Z } _ { 2 } )$
+6. For each of these actions of $\mathbb { Z } _ { 2 }$ on $S ^ { n }$ , compute $\pi _ { 1 } ( S ^ { n } / \mathbb { Z } _ { 2 } )$
 
-1. $S ^ { 1 } , z \mapsto - z$
+7. $S ^ { 1 } , z \mapsto - z$
 
-2. $S ^ { 2 } , ( x , y , z ) \mapsto ( - x , - y , z )$
+8. $S ^ { 2 } , ( x , y , z ) \mapsto ( - x , - y , z )$
 
-3. $S ^ { 3 } , ( z , w ) \mapsto ( - z , - w )$
+9. $S ^ { 3 } , ( z , w ) \mapsto ( - z , - w )$
 
 ## 1.4 Applications
 
-1. Let $i : \mathbb { R P } ^ { 2 } \longrightarrow \mathbb { R P } ^ { 3 }$ , induced by $S ^ { 2 } \hookrightarrow S ^ { 3 }$ as the equator. Show that $i \not \simeq$ const.
+1. Let $i : \mathbb { R P } ^ { 2 } \longrightarrow \mathbb { R P } ^ { 3 }$ , induced by $S ^ { 2 } \hookrightarrow S ^ { 3 }$ as the equator.
+   Show that $i \not \simeq$ const.
 
 2. Show that there is no map $f : S ^ { 2 } \longrightarrow S ^ { 1 }$ that commutes with the antipodal map.
 
@@ -109,85 +111,85 @@ Friday 29th May, 2020
 
 3. Show that $T - D ^ { 1 } : = X \simeq S ^ { 1 } \vee S ^ { 1 }$
 
-1. Show there does not exist a retraction $r : X \longrightarrow \partial X$
+4. Show there does not exist a retraction $r : X \longrightarrow \partial X$
 
-4. Images
+5. Images
 
-5. IMages
+6. IMages
 
-6. Images
+7. Images
 
-7. Calculate a presentation of $\pi _ { 1 } ( S ^ { 3 } - K )$
+8. Calculate a presentation of $\pi _ { 1 } ( S ^ { 3 } - K )$
 
-8. Show that all 3 presentations of $\pi _ { 1 } ( K )$ are isomorphic
+9. Show that all 3 presentations of $\pi _ { 1 } ( K )$ are isomorphic
 
-1. Square with sides glued
+10. Square with sides glued
 
-2. Two mobius strips glues along boundary
+11. Two mobius strips glues along boundary
 
-3. Multiplication rule
+12. Multiplication rule
 
-9. Given a group $G = < A : R >$ , show how to construct a CW-complex X such that $\pi _ { 1 } ( X ) = G$
+13. Given a group $G = < A : R >$ , show how to construct a CW-complex X such that $\pi _ { 1 } ( X ) = G$
 
-10. Write down the fundamental group of the following spaces:
+14. Write down the fundamental group of the following spaces:
 
-11. $\mathbb { R } ^ { 2 } - \{ 0 , 1 \}$
+15. $\mathbb { R } ^ { 2 } - \{ 0 , 1 \}$
 
-12. $\mathbb { R } ^ { 2 } - \dot { I }$
+16. $\mathbb { R } ^ { 2 } - \dot { I }$
 
-13. The symbol $\Phi \in \mathbb { R } ^ { 2 }$
+17. The symbol $\Phi \in \mathbb { R } ^ { 2 }$
 
-14. $S ^ { 2 } - \{ p _ { i } \} _ { i = 1 } ^ { 4 }$
+18. $S ^ { 2 } - \{ p _ { i } \} _ { i = 1 } ^ { 4 }$
 
-15. $T - \{ p _ { 0 } \}$
+19. $T - \{ p _ { 0 } \}$
 
-16. $S ^ { 2 } / \mathbb { Z } _ { 2 }$ via the antipodal map
+20. $S ^ { 2 } / \mathbb { Z } _ { 2 }$ via the antipodal map
 
-17. $S ^ { 2 } / \mathbb { Z } _ { 3 }$ via a $2 \pi / 3$ rotation about the z-axis.
+21. $S ^ { 2 } / \mathbb { Z } _ { 3 }$ via a $2 \pi / 3$ rotation about the z-axis.
 
-18. $S _ { 2 } \cup \{ ( 0 , 0 , z ) \mid - 1 \leq z \leq 1 \}$
+22. $S _ { 2 } \cup \{ ( 0 , 0 , z ) \mid - 1 \leq z \leq 1 \}$
 
-19. $\mathbb { R } ^ { 3 } - \{ ( x , y , 0 ) \ \big | \ x ^ { 2 } + y ^ { 2 } = 1 \}$
+23. $\mathbb { R } ^ { 3 } - \{ ( x , y , 0 ) \ \big | \ x ^ { 2 } + y ^ { 2 } = 1 \}$
 
-20. $\mathbb { R } ^ { 2 } - H$ , the Hopf link
+24. $\mathbb { R } ^ { 2 } - H$ , the Hopf link
 
-21. Prove that the homophony group is trivial.
+25. Prove that the homophony group is trivial.
 
 ## 1.6 Mayer Vietoris (Sheet 7)
 
 1. Compute the homology of:
 
-1. $\mathbb { R P } ^ { 2 } = M \bigcup D ^ { 2 }$
+2. $\mathbb { R P } ^ { 2 } = M \bigcup D ^ { 2 }$
 
-2. $T ^ { 2 } = S ^ { 1 } \times S ^ { 1 } = ( S ^ { 1 } \times I ) \bigcup ( S ^ { 1 } \times I )$ where $( x , 0 ) \sim ( x , 1 ) \sim ( \bar { x } , 0 ) \in \mathbb { C }$ f
+3. $T ^ { 2 } = S ^ { 1 } \times S ^ { 1 } = ( S ^ { 1 } \times I ) \bigcup ( S ^ { 1 } \times I )$ where $( x , 0 ) \sim ( x , 1 ) \sim ( \bar { x } , 0 ) \in \mathbb { C }$ f
 
-3. $S ^ { 1 } \bigcup _ { f } B ^ { 2 }$ attached along $\partial B ^ { 2 }$ using $z \mapsto z ^ { n }$
+4. $S ^ { 1 } \bigcup _ { f } B ^ { 2 }$ attached along $\partial B ^ { 2 }$ using $z \mapsto z ^ { n }$
 
-2. Show ${ \tilde { H } } _ { i } ( \Sigma X ) \cong { \tilde { H } } _ { i - 1 } ( X )$
+5. Show ${ \tilde { H } } _ { i } ( \Sigma X ) \cong { \tilde { H } } _ { i - 1 } ( X )$
 
-1. Show $\Sigma S ^ { n } \cong S ^ { n + 1 }$
+6. Show $\Sigma S ^ { n } \cong S ^ { n + 1 }$
 
-3. For $f : S ^ { n } \odot ,$ , show deg $\boldsymbol { f } = \deg \boldsymbol { \Sigma } \boldsymbol { f }$
+7. For $f : S ^ { n } \odot ,$ , show deg $\boldsymbol { f } = \deg \boldsymbol { \Sigma } \boldsymbol { f }$
 
-1. Conclude $\pi _ { n } ( S ^ { n } ) = \mathbb { Z }$
+8. Conclude $\pi _ { n } ( S ^ { n } ) = \mathbb { Z }$
 
-4. Let $\left\{ A _ { i } \right\} ^ { n } \in \mathbf { A b }$ be finitely generated, show $\exists X \ { \Big | } \ H _ { i } ( X ) \cong A _ { i }$ for $i \leq n$ and 0 otherwise.
+9. Let $\left\{ A _ { i } \right\} ^ { n } \in \mathbf { A b }$ be finitely generated, show $\exists X \ { \Big | } \ H _ { i } ( X ) \cong A _ { i }$ for $i \leq n$ and 0 otherwise.
 
-5. Suppose $X = \bigcup _ { i } ^ { n } A _ { i }$ such that for any $1 \leq k \leq n , \bigcap _ { i } ^ { k } A _ { i }$ is either empty or contractible, show $i \geq n - 1 \implies \tilde { H } _ { i } ( X ) = 0$ and that this bound is sharp.
+10. Suppose $X = \bigcup _ { i } ^ { n } A _ { i }$ such that for any $1 \leq k \leq n , \bigcap _ { i } ^ { k } A _ { i }$ is either empty or contractible, show $i \geq n - 1 \implies \tilde { H } _ { i } ( X ) = 0$ and that this bound is sharp.
 
-6. Compute $H _ { * } ( X \times S ^ { n } )$ in terms of $H _ { * } ( X )$
+11. Compute $H _ { * } ( X \times S ^ { n } )$ in terms of $H _ { * } ( X )$
 
-1. Compute $H _ { * } ( T ^ { n } )$
+12. Compute $H _ { * } ( T ^ { n } )$
 
-7. Let $\boldsymbol { M } = ( \boldsymbol { S } ^ { 1 } \times \boldsymbol { B } ^ { 2 } ) \bigcup _ { \mathrm { i d } _ { \partial } } ( \boldsymbol { S } ^ { 1 } \times \boldsymbol { B } ^ { 2 } )$ and compute $H _ { * } ( M ; \mathbb { Z } )$
+13. Let $\boldsymbol { M } = ( \boldsymbol { S } ^ { 1 } \times \boldsymbol { B } ^ { 2 } ) \bigcup _ { \mathrm { i d } _ { \partial } } ( \boldsymbol { S } ^ { 1 } \times \boldsymbol { B } ^ { 2 } )$ and compute $H _ { * } ( M ; \mathbb { Z } )$
 
-8. Let $X = S ^ { n } \times I$ with its ends glued together by a map $S ^ { n } \cup$ of degree d, calculate $H _ { * } ( X )$
+14. Let $X = S ^ { n } \times I$ with its ends glued together by a map $S ^ { n } \cup$ of degree d, calculate $H _ { * } ( X )$
 
-9. Compute $H _ { * } ( X )$ for $X = S ^ { 3 } - N$ , with N a knotted solid torus and $\partial N = T$ its boundary torus
+15. Compute $H _ { * } ( X )$ for $X = S ^ { 3 } - N$ , with N a knotted solid torus and $\partial N = T$ its boundary torus
 
-10. Let CA be the cone on A, show that $\tilde { H } _ { * } ( X \lfloor \rfloor C A ) \cong \tilde { H } _ { * } ( X , A )$
+16. Let CA be the cone on A, show that $\tilde { H } _ { * } ( X \lfloor \rfloor C A ) \cong \tilde { H } _ { * } ( X , A )$
 
-11. Show that the Mayer-Vietoris sequence is natural, i.e. If $X ~ { \stackrel { f } { \to } } ~ Y$ where $f ( A ) \subset C$ and $f ( B ) \subset D$ , then this commutes:
+17. Show that the Mayer-Vietoris sequence is natural, i.e. If $X ~ { \stackrel { f } { \to } } ~ Y$ where $f ( A ) \subset C$ and $f ( B ) \subset D$ , then this commutes:
 
 $$
 H _ { n } ( X ) \ { \longrightarrow } \ H _ { n } ( A { \bigcap } B ) \ { \longrightarrow } \ H _ { n } ( A ) \oplus H _ { n } ( B ) \ { \longrightarrow } \ H _ { n - 1 } ( X )
@@ -213,11 +215,11 @@ Compute the homology of these spaces
 
 4. Orientable surface of genus g
 
-1. $g = 2$ is given by $a + b - a - b + c + d - c - d$
+5. $g = 2$ is given by $a + b - a - b + c + d - c - d$
 
-5. Nonorientable surface of genus g Obtain by removing g discs from $S ^ { 2 }$ and attaching g mobius strips
+6. Nonorientable surface of genus g Obtain by removing g discs from $S ^ { 2 }$ and attaching g mobius strips
 
-6. $S _ { 1 } \lor S _ { 1 }$ with two discs attached via $( a b ) ^ { 3 }$ and $( a b ) ^ { 6 }$
+7. $S _ { 1 } \lor S _ { 1 }$ with two discs attached via $( a b ) ^ { 3 }$ and $( a b ) ^ { 6 }$
 
 <!-- image-->
 
@@ -239,7 +241,8 @@ Compute the homology of these spaces
 
 1. Let $p ( x ) = \sum _ { i } ^ { n } a _ { i } x ^ { i }$ , view $p : \mathbb { C } \bigcup \infty \cup$ and determine its topological degree
 
-2. Let $p ( z ) = { \frac { \prod _ { i } ^ { n } z - a _ { i } } { \prod _ { i } ^ { m } z - b _ { j } } }$ with all $a _ { i } , b _ { j }$ distinct. What is its topological degree?
+2. Let $p ( z ) = { \frac { \prod _ { i } ^ { n } z - a _ { i } } { \prod _ { i } ^ { m } z - b _ { j } } }$ with all $a _ { i } , b _ { j }$ distinct.
+   What is its topological degree?
 
 3. Show that if ${ } ^ { \prime } : S ^ { m } \longrightarrow S ^ { n }$ and $\exists U \subset S ^ { m }$ such that $f | _ { U } \cong f ( U )$ , then $m = n$ and f is surjective.
 
@@ -247,17 +250,17 @@ Compute the homology of these spaces
 
 1. Identify the following groups up to isomorphism
 
-1. $\mathbb { Z } _ { m } \otimes \mathbb { Z } _ { n }$
+2. $\mathbb { Z } _ { m } \otimes \mathbb { Z } _ { n }$
 
-2. $\mathbb { Z } _ { 6 0 } ^ { 4 } \otimes ( \mathbb { Z } _ { 2 4 } ^ { 3 } \oplus \mathbb { Z } _ { 8 } ^ { 4 } \oplus \mathbb { Z } _ { 1 2 0 } )$
+3. $\mathbb { Z } _ { 6 0 } ^ { 4 } \otimes ( \mathbb { Z } _ { 2 4 } ^ { 3 } \oplus \mathbb { Z } _ { 8 } ^ { 4 } \oplus \mathbb { Z } _ { 1 2 0 } )$
 
-3. $\mathbb { Z } _ { n } \otimes \mathbb { Q }$
+4. $\mathbb { Z } _ { n } \otimes \mathbb { Q }$
 
-4. $\left( \mathbb { Z } \oplus \mathbb { Z } _ { n } \right) \otimes \left( \mathbb { Q } / \mathbb { Z } \right)$
+5. $\left( \mathbb { Z } \oplus \mathbb { Z } _ { n } \right) \otimes \left( \mathbb { Q } / \mathbb { Z } \right)$
 
-2. Compute:
+6. Compute:
 
-1. $\mathrm { T o r } ( \mathbb { Z } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 8 } , \mathbb { Z } \oplus \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 4 } )$
+7. $\mathrm { T o r } ( \mathbb { Z } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 8 } , \mathbb { Z } \oplus \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 4 } )$
 
 $$
 \mathrm { E x t } ( \mathbb { Z } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 3 } , \mathbb { Z } \oplus \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 5 } )
@@ -265,25 +268,27 @@ $$
 
 3. Compute the following directly from chain complexes and check using UCT:
 
-1. $H _ { * } ( \mathbb { R P } ^ { n } ; \mathbb { Z } _ { 2 } )$
+4. $H _ { * } ( \mathbb { R P } ^ { n } ; \mathbb { Z } _ { 2 } )$
 
-2. $H _ { * } ( \mathbb { R P } ^ { n } , \mathbb { Z } _ { 3 } )$
+5. $H _ { * } ( \mathbb { R P } ^ { n } , \mathbb { Z } _ { 3 } )$
 
-3. $H ^ { \ast } ( \mathbb { R P } ^ { n } , \mathbb { Z } _ { 6 } )$
+6. $H ^ { \ast } ( \mathbb { R P } ^ { n } , \mathbb { Z } _ { 6 } )$
 
-4. For any space X, show that $H ^ { 1 } ( X )$ is free abelian
+7. For any space X, show that $H ^ { 1 } ( X )$ is free abelian
 
-5. Show that $H _ { * } ( X ; \mathbb { Q } ) = H _ { * } ( X ; \mathbb { Z } ) \otimes \mathbb { Q } \ H ^ { * } ( X ; \mathbb { Z } ) = \mathrm { h o m } ( H _ { * } ( X ; \mathbb { Z } ) , \mathbb { Q } )$
+8. Show that $H _ { * } ( X ; \mathbb { Q } ) = H _ { * } ( X ; \mathbb { Z } ) \otimes \mathbb { Q } \ H ^ { * } ( X ; \mathbb { Z } ) = \mathrm { h o m } ( H _ { * } ( X ; \mathbb { Z } ) , \mathbb { Q } )$
 
-6. Construct a space X such that $H _ { * } ( X ; \mathbb { Z } ) = ( \mathbb { Z } , \mathbb { Z } _ { 6 } , \mathbb { Z } _ { 1 2 } , \mathbb { Z } \oplus \mathbb { Z } _ { 4 } , 0 \cdot \cdot \cdot )$ Compute $H ^ { * } ( X ; \mathbb { Z } )$
+9. Construct a space X such that $H _ { * } ( X ; \mathbb { Z } ) = ( \mathbb { Z } , \mathbb { Z } _ { 6 } , \mathbb { Z } _ { 1 2 } , \mathbb { Z } \oplus \mathbb { Z } _ { 4 } , 0 \cdot \cdot \cdot )$ Compute $H ^ { * } ( X ; \mathbb { Z } )$
 
-7. Compute $H _ { * } ( \mathbb { R P } ^ { 2 } \times \mathbb { R P } ^ { 2 } ; \mathbb { Z } _ { 2 } )$
+10. Compute $H _ { * } ( \mathbb { R P } ^ { 2 } \times \mathbb { R P } ^ { 2 } ; \mathbb { Z } _ { 2 } )$
 
-8. Compute $H _ { * } ( \Sigma \mathbb { R P } ^ { 2 } \times \mathbb { R P } ^ { 2 } ; \mathbb { Z } )$
+11. Compute $H _ { * } ( \Sigma \mathbb { R P } ^ { 2 } \times \mathbb { R P } ^ { 2 } ; \mathbb { Z } )$
 
-9. Compute $H _ { * } ( \mathbb { R P } ^ { 2 } \times \mathbb { R P } ^ { 3 } ; \mathbb { Z } )$
+12. Compute $H _ { * } ( \mathbb { R P } ^ { 2 } \times \mathbb { R P } ^ { 3 } ; \mathbb { Z } )$
 
-10. Let G be a topological group. Show that $H _ { * } ( G )$ is an algebra. Show that $G \cap H _ { * } ( G )$ which factors through the homomorphism $G \longrightarrow \pi _ { 0 } ( G )$ yielding a trivial action if G is path-connected.
+13. Let G be a topological group.
+    Show that $H _ { * } ( G )$ is an algebra.
+    Show that $G \cap H _ { * } ( G )$ which factors through the homomorphism $G \longrightarrow \pi _ { 0 } ( G )$ yielding a trivial action if G is path-connected.
 
 ## 1.10 Homological Algebra (Sheet 11)
 
@@ -295,7 +300,7 @@ $$
 
 4. Compute Tor(Q, A)
 
-1. Compute Tor $( \mathbb { Q } / \mathbb { Z } , A )$
+5. Compute Tor $( \mathbb { Q } / \mathbb { Z } , A )$
 
 6. Let $R = \mathbb { Z } [ x , y ]$ , and $M = R / ( x - y ) , N = R / ( x , y )$ . Construct free resolutions of $M , N$ to compute:
 
@@ -307,7 +312,8 @@ $\mathrm { E x t } _ { R } ^ { * } ( N , M )$
 
 $\mathrm { E x t } _ { R } ^ { * } ( N , N )$
 
-7. Let Λ∗ be the exterior algebra generated by the symbols $\left\{ d x _ { i } \right\} ^ { n }$ over a field k. Show that letting $d = \cdot \vee$ dx1 yields a chain complex $0 \longrightarrow \Lambda ^ { 0 } \longrightarrow \Lambda ^ { 1 } \longrightarrow \cdots \longrightarrow \Lambda ^ { n } \longrightarrow 0$ with trivial homology. Compute what happens when $d { x } _ { 1 }$ is replaced with an arbitrary non-zero element in $\Lambda ^ { 1 }$ .
+7. Let Λ∗ be the exterior algebra generated by the symbols $\left\{ d x _ { i } \right\} ^ { n }$ over a field k. Show that letting $d = \cdot \vee$ dx1 yields a chain complex $0 \longrightarrow \Lambda ^ { 0 } \longrightarrow \Lambda ^ { 1 } \longrightarrow \cdots \longrightarrow \Lambda ^ { n } \longrightarrow 0$ with trivial homology.
+   Compute what happens when $d { x } _ { 1 }$ is replaced with an arbitrary non-zero element in $\Lambda ^ { 1 }$ .
 
 8. Define M as the group ring $R = \mathbb { Z } [ \mathbb { Z } _ { 2 } ]$ with the action $( \cdot ) \times - 1$ . Construct a free resolution of M and compute $\operatorname { T o r } _ { R } ^ { * } ( M , M )$
 

@@ -4,7 +4,8 @@ September 5, 2017
 
 <table><tr><td rowspan=1 colspan=1></td><td rowspan=1 colspan=1>Full</td><td rowspan=1 colspan=1>Real</td></tr><tr><td rowspan=1 colspan=1>#1</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>#2</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>#3</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>#4</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>#5</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>#6</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>#7</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>#8</td><td rowspan=1 colspan=1>25</td><td rowspan=1 colspan=1></td></tr><tr><td rowspan=1 colspan=1>Total</td><td rowspan=1 colspan=1>200</td><td rowspan=1 colspan=1></td></tr></table>
 
-Notes: 1) For computational questions, no credit will be given for unsupported answers gotten directly from a calculator. 2) For proof question, no credit will be given for no reasons or wrong reasons.
+Notes: 1) For computational questions, no credit will be given for unsupported answers gotten directly from a calculator.
+2) For proof question, no credit will be given for no reasons or wrong reasons.
 
 1. (25 points) Let $A \in \mathbb { R } ^ { n \times n }$ be a matrix such that rank $A ^ { 2 } \leq$ rank $A ^ { 3 }$ . Show that
 
@@ -22,7 +23,9 @@ $$
 
 show that A is normal, i.e., $A A ^ { * } = A ^ { * } A$
 
-3. (25 points) Let $A , B \in \mathbb { R } ^ { n \times n }$ be two real symmetric positive definite matrices. If A  B is positive definite, is $B ^ { - 1 } - A ^ { - 1 }$ also positive definite? If yes, give a proof; if not, give a counterexample.
+3. (25 points) Let $A , B \in \mathbb { R } ^ { n \times n }$ be two real symmetric positive definite matrices.
+   If A  B is positive definite, is $B ^ { - 1 } - A ^ { - 1 }$ also positive definite?
+   If yes, give a proof; if not, give a counterexample.
 
 4. (5 + 20 points) Let G be a finite group and let $X : G \to G L _ { 3 } ( \mathbb { C } )$ be an irreducible 3-dimensional complex matrix representation of G. Let A be the matrix
 
@@ -36,7 +39,8 @@ and let $\begin{array} { r } { B = \frac { 1 } { | G | } \sum _ { g \in G } X ( 
 
 (b) Determine the matrix B.
 
-5. (25 points) Let $D _ { 6 } = \langle r , s \mid r ^ { 6 } = s ^ { 2 } = 1 , s r s = r ^ { - 1 } \rangle$ be the dihedral group of symmetries of a regular pentagon. Calculate the character table of $D _ { 6 }$
+5. (25 points) Let $D _ { 6 } = \langle r , s \mid r ^ { 6 } = s ^ { 2 } = 1 , s r s = r ^ { - 1 } \rangle$ be the dihedral group of symmetries of a regular pentagon.
+   Calculate the character table of $D _ { 6 }$
 
 6. $( 8 + 8 + 9$ points) For a partition $\lambda \vdash n$ , let $S ^ { \lambda }$ be the corresponding irreducible representation of the symmetric group $S _ { n }$ over $\mathbb { C }$
 
@@ -68,4 +72,5 @@ $$
 
 (b) Is the result of the last part still true if we replace C by R?
 
-8. (25 points) Prove or give a counterexample: Let G and H be two subgroups of the matrix group $G L _ { 2 } ( \mathbb { C } )$ which satisfy $G \cong H$ (group isomorphism). Then the invariant rings $\mathbb { C } [ x , y ] ^ { G }$ and $\mathbb { C } [ x , y ] ^ { \tilde { H } }$ have the same Hilbert series.
+8. (25 points) Prove or give a counterexample: Let G and H be two subgroups of the matrix group $G L _ { 2 } ( \mathbb { C } )$ which satisfy $G \cong H$ (group isomorphism).
+   Then the invariant rings $\mathbb { C } [ x , y ] ^ { G }$ and $\mathbb { C } [ x , y ] ^ { \tilde { H } }$ have the same Hilbert series.
