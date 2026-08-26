@@ -2,13 +2,14 @@
 schema: qual/card@1
 id: P-K8Z3W
 kind: problem
-title: The splitting field of $x^3 - 7$ over $\mathbb{Q}$ has Galois group $S_3$
+title: Splitting fields of $x^3 - 7$ over $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{F}_{13}$
 classification:
   areas:
   - algebra
   topics:
   - Galois Theory
   - Splitting Fields
+  - Finite Fields
 relations: []
 review: draft
 ---
@@ -16,7 +17,5 @@ review: draft
 ::: {.problem}
 
 Let $f(x) = x^3 - 7 \in \mathbb{Q}[x]$.
-Determine the splitting field of $f$ over $\mathbb{Q}$ and show that its Galois group is isomorphic to $S_3$.
-
-> Reconstructed from the author's worked solution in personal qual-prep notes ("8005 Qual Problems"); no source exam recorded.
+Determine the splitting field and Galois group of $f$ over each of $\mathbb{Q}$, $\mathbb{R}$, and $\mathbb{F}_{13}$.
 :::

@@ -832,8 +832,8 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 - [x] Review every remaining `completion: incomplete` collection.
   Disposition 2026-08-26, updated:
 
-  - SRC-ALG-ART-PSET5-QUALS: two of three handwritten problems transcribed (P-LCEHH, P-K8Z3W); third problem not yet transcribed.
-    Completion: incomplete with remainder on card.
+  - SRC-ALG-ART-PSET5-QUALS: all three handwritten problems transcribed in source order (P-EKNFG, P-LCEHH, P-K8Z3W).
+    The three base-field parts of P-K8Z3W are present. Completion: complete.
 
   - SRC-UCSD-ALG-FALL-2008: all 21 problems transcribed (8 algebra + 13 applied-algebra; compilation wraps standalone docs).
     Two applied passages not captured by the text extraction.
