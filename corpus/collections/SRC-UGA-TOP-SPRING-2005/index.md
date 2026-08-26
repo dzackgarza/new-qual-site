@@ -18,7 +18,6 @@ source:
   problems:
   - P-FZIG3
   - P-2HMGE
-  - P-A5CFD
   - P-LLCQX
   - P-8TS01
   - P-RZFB4

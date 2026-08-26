@@ -21,7 +21,6 @@ source:
   - P-7PCEH
   - P-DLXGE
   - P-8TS21
-  - P-FD3UV
   - P-8TS22
   - P-3DTFZ
   date:
@@ -31,5 +30,4 @@ source:
 ---
 
 ::: remark
-Exam #6 lists [[P-FD3UV]] (same statement as Fall 2007 #4).
 :::

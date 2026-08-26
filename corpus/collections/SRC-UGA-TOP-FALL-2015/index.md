@@ -16,7 +16,6 @@ source:
   institution: uga
   area: topology
   problems:
-  - P-8TF27
   - P-8TF35
   - P-8TF36
   - P-8TF37
@@ -31,5 +30,4 @@ source:
 ---
 
 ::: remark
-Exam #1 lists [[P-8TF27]] (same statement as Fall 2013 #1).
 :::

@@ -24,7 +24,6 @@ source:
   - P-APAS24E
   - P-APAS24F
   - P-APAS24G
-  - P-APAS24H
   - P-APAS24I
   - P-APAS24J
   date:

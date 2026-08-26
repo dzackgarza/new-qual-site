@@ -16,7 +16,6 @@ source:
   institution: uga
   area: real-analysis
   problems:
-  - P-OW5VL
   - P-AXFG7
   - P-KPFEF
   - P-HBWN6

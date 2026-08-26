@@ -22,7 +22,6 @@ source:
   - P-57CAX
   - P-Z4CIU
   - P-8CA15
-  - P-MBQNL
   - P-8CA16
   - P-X7WUF
   date:

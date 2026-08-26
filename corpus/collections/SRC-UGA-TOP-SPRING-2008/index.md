@@ -16,14 +16,11 @@ source:
   institution: uga
   area: topology
   problems:
-  - P-SG462
-  - P-8TF28
   - P-BPDEA
   - P-JH5RI
   - P-YVYGB
   - P-PMBN2
   - P-QDTPB
-  - P-WOFN2
   date:
     kind: academic-term
     term: spring

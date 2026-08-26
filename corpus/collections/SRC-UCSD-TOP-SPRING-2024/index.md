@@ -20,7 +20,6 @@ source:
   - P-TOPS24A
   - P-TOPS24B
   - P-TOPS24C
-  - P-TOPS24D
   - P-TOPS24E
   - P-TOPS24F
   - P-TOPS24G

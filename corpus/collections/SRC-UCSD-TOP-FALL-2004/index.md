@@ -22,9 +22,6 @@ source:
   - P-TOPF04C
   - P-TOPF04D
   - P-TOPF04E
-  - P-TOPF03E
-  - P-TOPF03H
-  - P-TOPF03C
   date:
     kind: academic-term
     term: fall

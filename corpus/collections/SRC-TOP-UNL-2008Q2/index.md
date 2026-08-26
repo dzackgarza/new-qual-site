@@ -19,7 +19,6 @@ source:
   source_kind: university-exam
   problems:
   - P-T08A1
-  - P-T08A2
   - P-T08A3
   - P-T08A4
   - P-T08B1

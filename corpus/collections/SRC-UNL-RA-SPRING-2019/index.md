@@ -18,7 +18,6 @@ source:
   problems:
   - P-RA19J1
   - P-RA19J2
-  - P-C3MKZ
   - P-BKCZH
   - P-RA19J5
   - P-RA19J6

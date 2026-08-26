@@ -18,7 +18,6 @@ source:
   area: complex-analysis
   problems:
   - P-FQJMB
-  - P-P5VOR
   - P-PM5FN
   - P-EA222
   - P-ZAVLU

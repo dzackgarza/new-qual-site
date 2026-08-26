@@ -18,7 +18,6 @@ source:
   problems:
   - P-8RA28
   - P-8RA29
-  - P-KH5ZV
   - P-8RA30
   - P-8RA31
   date:
@@ -29,5 +28,4 @@ source:
 
 ::: remark
 Exam #1 asks for the definition of uniform continuity on $A\subseteq\mathbb{R}^n$ and the compact-set theorem; `P-DS4D6` is only the second half and was not used.
-Exam #3 is `P-KH5ZV`.
 :::

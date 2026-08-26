@@ -16,7 +16,6 @@ source:
   institution: uga
   area: topology
   problems:
-  - P-43KOX
   - P-3TQB5
   - P-6PQRO
   - P-KJBAM
@@ -31,5 +30,4 @@ source:
 ---
 
 ::: remark
-Exam #1 lists [[P-43KOX]] (same statement as Spring 2015 #1).
 :::

@@ -17,7 +17,6 @@ source:
   area: real-analysis
   problems:
   - P-8XT93
-  - P-8RA17
   - P-8XT94
   - P-8XT95
   - P-8XT96
@@ -25,7 +24,6 @@ source:
   - P-8XT98
   - P-CTQ6G
   - P-8XT99
-  - P-8XT86
   date:
     kind: academic-term
     term: spring

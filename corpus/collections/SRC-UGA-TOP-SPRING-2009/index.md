@@ -18,7 +18,6 @@ source:
   problems:
   - P-L3BUX
   - P-AT75W
-  - P-2HMGE
   - P-8TS09
   - P-8TS10
   - P-MCG5C
@@ -31,5 +30,4 @@ source:
 ---
 
 ::: remark
-Exam #3 lists [[P-2HMGE]] (same statement as Spring 2005 #2).
 :::

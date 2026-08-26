@@ -23,7 +23,6 @@ source:
   - P-V45QY
   - P-Z74QX
   - P-72DG6
-  - P-HCQNH
   date:
     kind: academic-term
     term: spring
@@ -31,5 +30,4 @@ source:
 ---
 
 ::: remark
-Exam #1 lists [[P-43KOX]] (same statement as Spring 2016 #1). Exam #8 lists [[P-HCQNH]] (the formula $\chi(X)=\chi(U)+\chi(V)-\chi(U\cap V)$ also asked as Spring 2012 #5).
 :::

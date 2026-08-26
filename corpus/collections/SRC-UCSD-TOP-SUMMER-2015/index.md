@@ -17,7 +17,6 @@ source:
   institution: ucsd
   area: topology
   problems:
-  - P-TOPSU15A
   - P-TOPSU15B
   - P-TOPSU15C
   - P-TOPSU15D

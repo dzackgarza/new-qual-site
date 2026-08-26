@@ -21,7 +21,6 @@ source:
   - P-YLM7G
   - P-F07LM
   - P-5YTY5
-  - P-F04T5
   - P-F07EX
   date:
     kind: academic-term
@@ -32,5 +31,4 @@ source:
 ::: remark
 UGA prelim Fall 2007. The list follows the order on that paper.
 The paper is dated August 10, 2007 (7 problems).
-Exam #1, #2, #3, and #5 are `P-4PCPV`, `P-2WRUJ`, `P-YLM7G`, and `P-5YTY5`. Exam #6 reuses are `P-F04T5` (same independence-preservation statement as Fall 2004 #5). The remaining items are `P-F07LM` and `P-F07EX`.
 :::

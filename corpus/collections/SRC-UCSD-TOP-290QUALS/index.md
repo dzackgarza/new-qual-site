@@ -112,7 +112,6 @@ source:
     - P-UCTOP-FA12-2
     - P-UCTOP-FA12-3
     - P-UCTOP-FA12-4
-    - P-UCTOP-SU09-5
     - P-UCTOP-FA12-6
     - P-UCTOP-FA12-7
     - P-UCTOP-FA12-8

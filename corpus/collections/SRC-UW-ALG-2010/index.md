@@ -21,7 +21,6 @@ source:
   - P-MMAQ-NMHZVYS2AS
   - P-MMAQ-ONXNRKJ737
   - P-MMAQ-YUGGSYZGIM
-  - P-MMAQ-CAEXKRPGEP
   - P-MMAQ-PTGAAH4QQF
   source_kind: university-exam
 title: UW Algebra Qualifying Exam 2010

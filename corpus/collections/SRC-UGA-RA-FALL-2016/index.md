@@ -18,7 +18,6 @@ source:
   problems:
   - P-MMCHV
   - P-OPH7A
-  - P-JMOGT
   - P-L7G3D
   - P-LG4GL
   - P-K6CAP

@@ -18,11 +18,9 @@ source:
   area: applied-algebra
   problems:
   - P-APAS05A
-  - P-ALGS05B
   - P-APAS05C
   - P-APAS05D
   - P-APAS05E
-  - P-ALGS05F
   date:
     kind: academic-term
     term: spring

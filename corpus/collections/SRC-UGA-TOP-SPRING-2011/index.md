@@ -21,7 +21,6 @@ source:
   - P-QYLM3
   - P-Y3PUL
   - P-B3VM7
-  - P-SG462
   - P-IE2G7
   - P-XXLEK
   date:

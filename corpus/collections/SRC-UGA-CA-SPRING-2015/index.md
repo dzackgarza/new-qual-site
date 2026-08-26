@@ -17,7 +17,6 @@ source:
   area: complex-analysis
   problems:
   - P-UGCNF
-  - P-PMH4D
   - P-KNIPC
   - P-FBOFF
   - P-8CA27

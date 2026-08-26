@@ -20,7 +20,6 @@ source:
   - P-3KOGW
   - P-WASE4
   - P-8CA34
-  - P-8CA35
   - P-8CA36
   date:
     kind: academic-term

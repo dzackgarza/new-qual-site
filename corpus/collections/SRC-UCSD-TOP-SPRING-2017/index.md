@@ -21,8 +21,6 @@ source:
   - P-TOPSU15A
   - P-TOPS17C
   - P-TOPS17D
-  - P-TOPF03F
-  - P-TOPF07H
   - P-TOPS17G
   - P-TOPS17H
   date:

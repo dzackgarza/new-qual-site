@@ -18,11 +18,8 @@ source:
   problems:
   - P-CZ3R7
   - P-PSIBT
-  - P-3KOGW
   - P-7ENEI
-  - P-4X7XU
   - P-BTUCW
-  - P-AKSSQ
   date:
     kind: academic-term
     term: spring

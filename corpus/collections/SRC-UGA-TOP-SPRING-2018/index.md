@@ -18,7 +18,6 @@ source:
   problems:
   - P-8TS28
   - P-VPACG
-  - P-SG462
   - P-A3ZPA
   - P-HOJTU
   - P-DFB3Y

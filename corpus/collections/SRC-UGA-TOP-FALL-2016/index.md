@@ -23,7 +23,6 @@ source:
   - P-BNSGA
   - P-23NY2
   - P-IBLLK
-  - P-23S3Z
   date:
     kind: academic-term
     term: fall

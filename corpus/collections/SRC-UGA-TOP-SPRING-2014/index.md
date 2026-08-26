@@ -17,7 +17,6 @@ source:
   area: topology
   problems:
   - P-8TS23
-  - P-KCN2B
   - P-ONG5Z
   - P-8TS24
   - P-VZVZA

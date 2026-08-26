@@ -18,11 +18,9 @@ source:
   problems:
   - P-8CA17
   - P-8CA18
-  - P-4ZZYV
   - P-8CA19
   - P-8CA20
   - P-8CA21
-  - P-FBOFF
   date:
     kind: academic-term
     term: spring

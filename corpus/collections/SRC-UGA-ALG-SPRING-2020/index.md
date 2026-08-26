@@ -20,7 +20,6 @@ source:
   - P-KOSSD
   - P-HBWYH
   - P-3YCHE
-  - P-DURCM
   - P-J5GIE
   - P-R5NVB
   - P-HAEQ7
@@ -31,5 +30,4 @@ source:
 ---
 
 ::: remark
-Exam #5 is the same statement as Fall 2016 #6, both listed as [[P-DURCM]].
 :::

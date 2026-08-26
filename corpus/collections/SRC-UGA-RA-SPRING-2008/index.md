@@ -20,7 +20,6 @@ source:
   - P-8RA14
   - P-8RA15
   - P-8RA16
-  - P-8RA17
   date:
     kind: academic-term
     term: spring

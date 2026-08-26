@@ -20,7 +20,6 @@ source:
   - P-B2VGV
   - P-A5CFD
   - P-8TF07
-  - P-8TF06
   - P-M2NVE
   - P-8TF08
   - P-VPPPN
@@ -31,5 +30,4 @@ source:
 ---
 
 ::: remark
-Exam #5 lists [[P-8TF06]] (same statement as Fall 2005 #9).
 :::

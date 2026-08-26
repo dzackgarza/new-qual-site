@@ -16,16 +16,13 @@ source:
   institution: ucla
   area: real-analysis
   problems:
-  - P-4KTFN
   - P-8XT68
   - P-AE7QC
   - P-625QO
   - P-CH37V
   - P-J64FR
-  - P-8XT49
   - P-YHXGO
   - P-8XT69
-  - P-3A7RU
   - P-8XT70
   - P-8XT71
   date:

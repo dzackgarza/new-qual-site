@@ -16,7 +16,6 @@ source:
   institution: uga
   area: topology
   problems:
-  - P-KCN2B
   - P-2CN7G
   - P-A33VH
   - P-P6A3Q
@@ -24,7 +23,6 @@ source:
   - P-4EIOH
   - P-OSS6X
   - P-LLVY2
-  - P-C3NSR
   date:
     kind: academic-term
     term: spring
@@ -32,5 +30,4 @@ source:
 ---
 
 ::: remark
-Exam #9 lists [[P-C3NSR]] (same statement as Fall 2004 #8).
 :::

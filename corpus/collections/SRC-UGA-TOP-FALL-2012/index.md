@@ -23,7 +23,6 @@ source:
   - P-QB5KF
   - P-LWGC4
   - P-8TF26
-  - P-DRVWD
   date:
     kind: academic-term
     term: fall

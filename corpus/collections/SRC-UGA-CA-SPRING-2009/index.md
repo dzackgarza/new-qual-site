@@ -16,7 +16,6 @@ source:
   institution: uga
   area: complex-analysis
   problems:
-  - P-MBQNL
   - P-8CA22
   - P-8CA23
   - P-8CA24
