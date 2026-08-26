@@ -336,6 +336,14 @@ source:
     - P-JHU4547B5
     - P-JHU4547B6
     - P-JHU4547B7
+  - name: Undated analysis exam, two hours, six equally weighted questions (pp. 45–47)
+    problems:
+    - P-JHU4547C1
+    - P-JHU4547C2
+    - P-JHU4547C3
+    - P-JHUSP01CAB
+    - P-JHU4547C5
+    - P-JHUSP01CAD
   - name: SPRING 2003 COMPLEX ANALYSIS QUALIFYING EXAM (p. 48)
     problems:
     - P-JHUSP03CAA
