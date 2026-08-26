@@ -848,7 +848,8 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 - [ ] Obtain an independent reread of each transcription.
 
-- [ ] Decide the 82 third-party licensing flags before publication.
+- [x] Decide the 82 third-party licensing flags before publication.
+  Disposition 2026-08-26: commit `46e6bb3af` records decisions for all 82 flagged rows in the attachment extraction ledger.
 
 - [x] Give `F08phdtop` a second read and settle its date label.
 
