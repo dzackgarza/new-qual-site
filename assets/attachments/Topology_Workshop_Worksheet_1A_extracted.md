@@ -6,13 +6,22 @@ Worksheet 1
 
 ## Part 1 - 5-10 minutes
 
-1. Discuss with your group: What topics on the qual do you feel confident about? What topics are you less confident about? (The syllabus can be found at https: // www. math. unl. edu/ graduate/ exams/ quals/ topology/ 871-872Qualifier_ Syllabus. pdf .)
+1. Discuss with your group: What topics on the qual do you feel confident about?
+   What topics are you less confident about?
+   (The syllabus can be found at https: // www.
+   math.
+   unl.
+   edu/ graduate/ exams/ quals/ topology/ 871-872Qualifier_ Syllabus.
+   pdf .)
 
-2. Consider for yourself, and share with your group if you feel comfortable: Are you excited for the exam? Anxious? Worried?
+2. Consider for yourself, and share with your group if you feel comfortable: Are you excited for the exam?
+   Anxious?
+   Worried?
 
 ## Part 2 - 1 hour and 40 minutes
 
-This was the qual that I took. This is not a reasonable amount of time to finish these problems, but look them all over, and pick and choose a few to try.
+This was the qual that I took.
+This is not a reasonable amount of time to finish these problems, but look them all over, and pick and choose a few to try.
 
 Do three problems from:
 
@@ -34,7 +43,8 @@ Do three problems from:
 
 2. (May 2016) A group G is called residually finite if for every $g \in G$ with $g \neq 1$ , there is a finite group H and a (surjective) homomorphism $\varphi ; G \to H$ with $\varphi ( g ) \neq 1$ . Let G be a residually finite group and let X be the presentation complex for a presentation of $G ,$ with vertex $x _ { 0 }$ . Show that for any loop $\gamma : I  X$ at $x _ { 0 }$ with $1 \ne [ \gamma ] \in \pi _ { 1 } ( X , x _ { 0 } )$ , there is a finite-sheeted covering space $p : \tilde { X } \to X$ and a basepoint $\tilde { x } _ { 0 } \in p ^ { - 1 } ( \{ x _ { 0 } \} )$ such that γ does not lift to a loop at $\tilde { x } _ { 0 }$
 
-3. (May 2016) Let $p : { \tilde { X } } \to X$ and $q : { \tilde { Y } }  Y$ be covering spaces of path-connected, locally path-connected spaces X and Y with X˜ and Y˜ locally path-connected and simply connected. Show that if X and Y are homeomorphic, then $\tilde { X }$ and $\tilde { Y }$ are homeomorphic.
+3. (May 2016) Let $p : { \tilde { X } } \to X$ and $q : { \tilde { Y } }  Y$ be covering spaces of path-connected, locally path-connected spaces X and Y with X˜ and Y˜ locally path-connected and simply connected.
+   Show that if X and Y are homeomorphic, then $\tilde { X }$ and $\tilde { Y }$ are homeomorphic.
 
 4. (May 2016) Construct a ∆-complex structure, and use it to compute the simplicial homology groups, for the connected sum of two projective planes.
 
@@ -42,6 +52,10 @@ Do three problems from:
 
 Wrap-up discussion with everyone:
 
-1. Are these problems roughly what you expected? Harder? Easier? More technical?
+1. Are these problems roughly what you expected?
+   Harder?
+   Easier?
+   More technical?
 
-2. What have you learned from these problems? Your answer doesn’t have to be strictly mathematical.
+2. What have you learned from these problems?
+   Your answer doesn’t have to be strictly mathematical.
