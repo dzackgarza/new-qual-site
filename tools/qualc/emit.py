@@ -21,6 +21,7 @@ import shutil
 import sqlite3
 import subprocess
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -750,13 +751,10 @@ def write_json_pages(
         )
         for _, _, blocks in items
     ]
-    bodies = _successful_outputs(
-        pandoc.write_markdown(documents, MARKDOWN),
+    bodies, html_bodies = _write_document_formats(
+        pandoc,
+        documents,
         "tag-page write",
-    )
-    html_bodies = _successful_html_outputs(
-        pandoc.write_html([_html_ast(document) for document in documents]),
-        "tag-page HTML write",
     )
     for (path, meta, _), body, html_body in zip(
         items,
@@ -864,6 +862,27 @@ def _statement_ast(ast: str) -> str:
     return to_json(from_ast(ast).walk(_statement_only))
 
 
+def _write_html_documents(documents: list[str]) -> list[str]:
+    with PandocServer() as pandoc:
+        return _successful_html_outputs(
+            pandoc.write_html([_html_ast(document) for document in documents]),
+            "page HTML write",
+        )
+
+
+def _write_document_formats(
+    pandoc: PandocServer,
+    documents: list[str],
+    markdown_operation: str,
+) -> tuple[list[str], list[str]]:
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        markdown = executor.submit(pandoc.write_markdown, documents, MARKDOWN)
+        html = executor.submit(_write_html_documents, documents)
+        bodies = _successful_outputs(markdown.result(), markdown_operation)
+        html_bodies = html.result()
+    return bodies, html_bodies
+
+
 def write_pages(
     pandoc: PandocServer,
     items: list[PageItem],
@@ -879,13 +898,10 @@ def write_pages(
     comes back out as `tag/P-\\*.qmd` and the listing silently matches nothing.
     """
     documents = [_page_ast(page) for page, _, _ in items]
-    bodies = _successful_outputs(
-        pandoc.write_markdown(documents, MARKDOWN),
+    bodies, html_bodies = _write_document_formats(
+        pandoc,
+        documents,
         "page write",
-    )
-    html_bodies = _successful_html_outputs(
-        pandoc.write_html([_html_ast(document) for document in documents]),
-        "page HTML write",
     )
     for ((meta, _), path, navigation), body, html_body in zip(
         items,
