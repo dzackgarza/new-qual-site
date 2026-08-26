@@ -2,6 +2,19 @@
 
 Read this before writing anything in this repository.
 
+## Personal research scope
+
+This repository is for the maintainer's personal study and research. It has no
+licensing review, distribution review, or release approval workflow.
+
+Do not create licensing tasks, fields, flags, audits, decisions, holds, or user
+approval requests. Do not restrict corpus work based on a proposed publication
+or distribution status.
+
+Preserve license files and notices that are part of retained source bytes. They
+are source content, not project requirements. Continue to follow the repository's
+separate citation and provenance rules.
+
 Intake and migration needed tools. Getting the content out of five source
 repositories and into this one was a transport problem, and transport is what a
 tool is for. **That phase is over.** Everything after it is intelligent, semantic
