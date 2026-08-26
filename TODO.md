@@ -94,9 +94,9 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-TOP-2002Q1/index.md`](corpus/collections/SRC-TOP-2002Q1/index.md) — audit commit: a87b43e (9 source problems A1–A5, B1–B4, 9 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2011Q2/index.md`](corpus/collections/SRC-TOP-2011Q2/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2011Q2/index.md`](corpus/collections/SRC-TOP-2011Q2/index.md) — audit commit: 578c282 (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2012Q1/index.md`](corpus/collections/SRC-TOP-2012Q1/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2012Q1/index.md`](corpus/collections/SRC-TOP-2012Q1/index.md) — audit commit: 31108987f (8 source problems, 8 cards, all match)
 
 - [ ] [`corpus/collections/SRC-TOP-2012Q2/index.md`](corpus/collections/SRC-TOP-2012Q2/index.md) — audit commit:
 
@@ -834,15 +834,14 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   - SRC-ALG-ART-PSET5-QUALS: all three handwritten problems transcribed in source order (P-EKNFG, P-LCEHH, P-K8Z3W). The three base-field parts of P-K8Z3W are present.
     Completion: complete.
 
-  - SRC-UCSD-ALG-FALL-2008: all 21 problems transcribed (8 algebra + 13 applied-algebra; compilation wraps standalone docs).
-    Two applied passages not captured by the text extraction.
-    Completion: incomplete with remainder on card.
+  - SRC-UCSD-ALG-FALL-2008: all 21 problems transcribed and reconciled (8 algebra + 13 applied-algebra; compilation wraps the standalone Spring 2008 paper). Completion: complete.
 
   - SRC-UCSD-APALG-SPRING-2007: all nine problems transcribed in source order.
     Problem 2 includes its explicit matrix, and problem 5 includes the $S_6\times S_3$ labels $V_{(3,3)}\otimes V_{(2,1)}$.
     Completion: complete.
 
-  - SRC-UCSD-APALG-SPRING-2008: all thirteen problems transcribed and reconciled with the source. Completion: complete.
+  - SRC-UCSD-APALG-SPRING-2008: all thirteen problems transcribed and reconciled with the source.
+    Completion: complete.
 
   - SRC-UCSD-APALG-SPRING-2019: problems 5–10 (P-APAS19E–J) transcribed.
     Source PDF pages 2–5 remain near-blank (99.997% white, only problem numbers present); problems 1–4 genuinely absent from the hosted file.

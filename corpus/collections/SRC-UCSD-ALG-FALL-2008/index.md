@@ -10,7 +10,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA08_200_Algebra_Qual.pdf
 source:
@@ -47,5 +47,4 @@ source:
     term: fall
     year: 2008
 ---
-
 
