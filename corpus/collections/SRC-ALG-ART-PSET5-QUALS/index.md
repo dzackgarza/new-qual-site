@@ -22,6 +22,5 @@ source:
     kind: unknown
 ---
 
-::: remark
-Handwritten qualifying problems (Galois theory), course number 8005; the sheet holds three problems, of which two are transcribed. The first page's OCR is clean enough to reconstruct the $D_4$ tower problem and the $x^3-7$ splitting-field problem from their worked solutions; the third page of handwriting defeated extraction and its problem statement is not recoverable.
+::: remarkHandwritten qualifying problems (Galois theory), course number 8005; the sheet holds three problems, of which two are transcribed.
 :::
