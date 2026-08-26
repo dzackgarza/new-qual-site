@@ -797,8 +797,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   The unrelated Fall 2019 midterm and final collections no longer claim this packet as provenance.
 
 - [x] Determine whether Real Analysis workshop Theorem 6.6 is absent or intentionally skipped.
-  The Day 7 source contains Remark 6.6 between Theorems 6.5 and 6.7.
-  Warm-up problem 2 already carries the remark's mathematical content, so no theorem card is missing.
+  The Day 7 source contains Remark 6.6 between Theorems 6.5 and 6.7. Warm-up problem 2 already carries the remark's mathematical content, so no theorem card is missing.
 
 - [ ] Restore the exact missing UCSD exam statements if a source becomes available:
 
@@ -809,8 +808,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   The official hosted PDFs omit these pages, and no complete archived copy has been found.
   Keep both collections incomplete until an external source supplies them.
 
-- [x] Restore the four Van Kampen figure-dependent statements in `SRC-UCSD-TOP-JUSTIN`.
-  Roberts' official `290F14sheet3.pdf` supplies the missing source.
+- [x] Restore the four Van Kampen figure-dependent statements in `SRC-UCSD-TOP-JUSTIN`. Roberts' official `290F14sheet3.pdf` supplies the missing source.
   The collection now contains all eleven Sheet 3 problems and owns that PDF as provenance.
 
 - [x] Re-run the orphan and duplicate audits after `SRC-TOP-WORKSHOP-2020` validates.
