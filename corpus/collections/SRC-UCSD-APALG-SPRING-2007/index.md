@@ -9,7 +9,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/applied-algebra-math202/SP07_202_Applied_Algebra_Qual.pdf
 source:
@@ -31,5 +31,4 @@ source:
     term: spring
     year: 2007
 ---
-
 

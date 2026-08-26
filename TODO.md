@@ -36,7 +36,7 @@ State the evidence in an empty audit commit.
 
 #### Collection queue
 
-- [ ] [`corpus/collections/SRC-ALG-ART-HEACCB/index.md`](corpus/collections/SRC-ALG-ART-HEACCB/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-ALG-ART-HEACCB/index.md`](corpus/collections/SRC-ALG-ART-HEACCB/index.md) — audit commit: dcf7bd3 (verified: 10 cards, source unavailable (handwritten course final, no PDF); list consistent)
 
 - [x] [`corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md`](corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md) — audit commit: 012194c91 (verified: 3-page handwritten sheet, 2/3 problems transcribed; third not yet transcribed)
 
@@ -832,14 +832,14 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 - [x] Review every remaining `completion: incomplete` collection.
   Disposition 2026-08-26, updated:
 
-  - SRC-ALG-ART-PSET5-QUALS: all three handwritten problems transcribed in source order (P-EKNFG, P-LCEHH, P-K8Z3W).
-    The three base-field parts of P-K8Z3W are present. Completion: complete.
+  - SRC-ALG-ART-PSET5-QUALS: all three handwritten problems transcribed in source order (P-EKNFG, P-LCEHH, P-K8Z3W). The three base-field parts of P-K8Z3W are present.
+    Completion: complete.
 
   - SRC-UCSD-ALG-FALL-2008: all 21 problems transcribed (8 algebra + 13 applied-algebra; compilation wraps standalone docs).
     Two applied passages not captured by the text extraction.
     Completion: incomplete with remainder on card.
 
-  - SRC-UCSD-APALG-SPRING-2007: all nine problems transcribed; two passages not captured by the text extraction (matrix B in problem 2, S₆×S₃-module labels in problem 5). Completion: incomplete with remainder on card.
+  - SRC-UCSD-APALG-SPRING-2007: all nine problems transcribed in source order. Problem 2 includes its explicit matrix, and problem 5 includes the $S_6\times S_3$ labels $V_{(3,3)}\otimes V_{(2,1)}$. Completion: complete.
 
   - SRC-UCSD-APALG-SPRING-2008: all thirteen problems transcribed; two passages not captured by the text extraction (Garnir tableau in R.4, identity in ST.3). Completion: incomplete with remainder on card.
 
