@@ -36,7 +36,7 @@ State the evidence in an empty audit commit.
 
 #### Collection queue
 
-- [x] [`corpus/collections/SRC-ALG-ART-HEACCB/index.md`](corpus/collections/SRC-ALG-ART-HEACCB/index.md) — audit commit: dcf7bd3 (verified: 10 cards, source unavailable (handwritten course final, no PDF); list consistent)
+- [x] [`corpus/collections/SRC-ALG-ART-HEACCB/index.md`](corpus/collections/SRC-ALG-ART-HEACCB/index.md) — audit commit: dcf7bd3 (verified: 10 cards, 10 in index; provenance: `assets/attachments/8000e.pdf` (Nakano MATH 8000 problem bank, contains past exams + homework from same course))
 
 - [x] [`corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md`](corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md) — audit commit: 012194c91 (verified: 3-page handwritten sheet, 2/3 problems transcribed; third not yet transcribed)
 
@@ -98,9 +98,9 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-TOP-2012Q1/index.md`](corpus/collections/SRC-TOP-2012Q1/index.md) — audit commit: 31108987f (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2012Q2/index.md`](corpus/collections/SRC-TOP-2012Q2/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2012Q2/index.md`](corpus/collections/SRC-TOP-2012Q2/index.md) — audit commit: d7da7be (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2013Q2/index.md`](corpus/collections/SRC-TOP-2013Q2/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2013Q2/index.md`](corpus/collections/SRC-TOP-2013Q2/index.md) — audit commit: 6b962eaa2 (8 source problems, 8 cards, all match)
 
 - [ ] [`corpus/collections/SRC-TOP-2015Q2/index.md`](corpus/collections/SRC-TOP-2015Q2/index.md) — audit commit:
 
@@ -825,7 +825,8 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [x] Read the UCSD topology compilation and disposition every section.
   Disposition 2026-08-26, updated: the source is the maintainer's typed rendition of Roberts' UCSD Math 290 course sheets; the five cited sheets (7, 8, 10, 11, 12) are now located and vendored, and serve as provenance for the sections they cover.
-  Remaining carding: the eight Sheet-12 cohomology-ring problems the typed sheet never transcribed, and the three cellular identification-space problems whose figures are in the vendored Sheet 8; the four picture-only Van Kampen entries belong to still-unidentified material.
+  Sheet 12 and the three figure-dependent Sheet 8 problems are carded and reconciled.
+  The four picture-only Van Kampen entries belong to still-unidentified material.
   Collection completion: incomplete with the remainder on the card.
 
 - [x] Review every remaining `completion: incomplete` collection.
@@ -834,7 +835,8 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   - SRC-ALG-ART-PSET5-QUALS: all three handwritten problems transcribed in source order (P-EKNFG, P-LCEHH, P-K8Z3W). The three base-field parts of P-K8Z3W are present.
     Completion: complete.
 
-  - SRC-UCSD-ALG-FALL-2008: all 21 problems transcribed and reconciled (8 algebra + 13 applied-algebra; compilation wraps the standalone Spring 2008 paper). Completion: complete.
+  - SRC-UCSD-ALG-FALL-2008: all 21 problems transcribed and reconciled (8 algebra + 13 applied-algebra; compilation wraps the standalone Spring 2008 paper).
+    Completion: complete.
 
   - SRC-UCSD-APALG-SPRING-2007: all nine problems transcribed in source order.
     Problem 2 includes its explicit matrix, and problem 5 includes the $S_6\times S_3$ labels $V_{(3,3)}\otimes V_{(2,1)}$.
