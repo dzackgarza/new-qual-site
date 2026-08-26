@@ -304,13 +304,9 @@ Issue #9 remains open for these required facts:
 
 - every transcription has an independent reread;
 
-- all 82 licensing flags have an owner decision;
-
 - `F08phdtop` has a second read and a settled date label;
 
 - the 19 image-only Anki answers have a recorded disposition.
-
-Do not publish third-party material before the user decides its license status.
 
 ### 5.5 Reader and generator: issues #10 and #41
 
@@ -463,15 +459,13 @@ A parent issue, passing check, or proof count cannot replace that test.
 Ask for these decisions as one concise batch.
 Do not infer an answer from existing content.
 
-1. **Third-party licensing.** Route to issue #9. Decide the 82 flagged intake rows before public transcription.
+1. **Normal-family convention.** Route to issue #2. Choose Stein–Shakarchi or Ahlfors for the canonical definition.
 
-2. **Normal-family convention.** Route to issue #2. Choose Stein–Shakarchi or Ahlfors for the canonical definition.
+2. **`tikzcd` publication.** Route to issue #10. Decide the supported diagram boundary for the 44 affected cards.
 
-3. **`tikzcd` publication.** Route to issue #10. Decide the supported diagram boundary for the 44 affected cards.
+3. **Importer ownership.** Route to issue #8. Decide whether curated topics belong in importer input or outside its output subtree.
 
-4. **Importer ownership.** Route to issue #8. Decide whether curated topics belong in importer input or outside its output subtree.
-
-5. **Twenty-seven solution write-ups stored as problems.** Route to issues #5 and #24. Approve new problem cards and membership corrections.
+4. **Twenty-seven solution write-ups stored as problems.** Route to issues #5 and #24. Approve new problem cards and membership corrections.
 
 6. **Disabled `\sech` definition.** Route to issue #14. Decide whether to remove the commented upstream line.
 
@@ -517,7 +511,7 @@ Stop and ask the user only when:
 
 - two mathematical sources give inequivalent answers;
 
-- a source is unreadable or has uncertain license status;
+- a source is unreadable;
 
 - the requested change needs deletion or another irreversible action;
 

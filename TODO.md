@@ -848,8 +848,6 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 - [ ] Obtain an independent reread of each transcription.
 
-- [ ] Decide the 82 third-party licensing flags before publication.
-
 - [x] Give `F08phdtop` a second read and settle its date label.
 
 - [ ] Disposition the 19 image-only Anki answers.
