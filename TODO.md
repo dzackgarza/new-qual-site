@@ -240,7 +240,7 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2011/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2011/index.md) — audit commit: ce7d1d8c
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2017/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-FALL-2017/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2017/index.md) — audit commit: 26070aa00
 
 - [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2018/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2018/index.md) — audit commit:
 
@@ -793,7 +793,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [x] Finish Applied Algebra Fall 2011. Disposition 2026-08-26: all nine FA11 problems present in source order; shared card P-APAS04N is verbatim on both SP04 (problem 5) and FA11 (problem 4); remark added to P-APAF11C for the source's S6/S7 inconsistency.
 
-- [ ] Finish Applied Algebra Fall 2017.
+- [x] Finish Applied Algebra Fall 2017. Disposition 2026-08-26: all eight problems present, verbatim-faithful; two source defects noted on cards (pentagon/hexagon slip in problem 5, action-less sum in problem 6(c)).
 
 - [x] Finish Applied Algebra Spring 2004. Disposition 2026-08-26: source holds Part 1 (3 linear-algebra problems) + Part III (11 problems) = 14; all present in source order.
   Shared cards verified verbatim: P-APAS04A/FA07, P-APAS04C/FA04, P-APAS04N/FA11. Fixed duplicated (b) label in P-APAS04M.
