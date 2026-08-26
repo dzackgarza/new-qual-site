@@ -829,13 +829,28 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   Remaining carding: the eight Sheet-12 cohomology-ring problems the typed sheet never transcribed, and the three cellular identification-space problems whose figures are in the vendored Sheet 8; the four picture-only Van Kampen entries belong to still-unidentified material.
   Collection completion: incomplete with the remainder on the card.
 
-- [x] Review every remaining `completion: incomplete` collection. Disposition 2026-08-26, updated:
-  - SRC-ALG-ART-PSET5-QUALS: two of three handwritten problems transcribed (P-LCEHH, P-K8Z3W); third problem not yet transcribed. Completion: incomplete with remainder on card.
-  - SRC-UCSD-ALG-FALL-2008: all 21 problems transcribed (8 algebra + 13 applied-algebra; compilation wraps standalone docs). Two applied passages illegible in both scans. Completion: incomplete with remainder on card.
-  - SRC-UCSD-APALG-SPRING-2007: all nine problems transcribed; two illegible scan passages (matrix B in problem 2, S₆×S₃-module labels in problem 5). Completion: incomplete with remainder on card.
-  - SRC-UCSD-APALG-SPRING-2008: all thirteen problems transcribed; two illegible passages (Garnir tableau in R.4, identity in ST.3). Completion: incomplete with remainder on card.
-  - SRC-UCSD-APALG-SPRING-2019: problems 5–10 (P-APAS19E–J) transcribed. Source PDF pages 2–5 remain near-blank (99.997% white, only problem numbers present); problems 1–4 genuinely absent from the hosted file. Completion: incomplete with remainder on card.
-  - SRC-UCSD-RA-SPRING-2009: problems 1–4 (P-RASP09A–D) transcribed. Source PDF has 7 pages; problems 5–8 (pages 8–9) genuinely absent from the hosted file. Completion: incomplete with remainder on card.
+- [x] Review every remaining `completion: incomplete` collection.
+  Disposition 2026-08-26, updated:
+
+  - SRC-ALG-ART-PSET5-QUALS: two of three handwritten problems transcribed (P-LCEHH, P-K8Z3W); third problem not yet transcribed.
+    Completion: incomplete with remainder on card.
+
+  - SRC-UCSD-ALG-FALL-2008: all 21 problems transcribed (8 algebra + 13 applied-algebra; compilation wraps standalone docs).
+    Two applied passages not captured by the text extraction.
+    Completion: incomplete with remainder on card.
+
+  - SRC-UCSD-APALG-SPRING-2007: all nine problems transcribed; two passages not captured by the text extraction (matrix B in problem 2, S₆×S₃-module labels in problem 5). Completion: incomplete with remainder on card.
+
+  - SRC-UCSD-APALG-SPRING-2008: all thirteen problems transcribed; two passages not captured by the text extraction (Garnir tableau in R.4, identity in ST.3). Completion: incomplete with remainder on card.
+
+  - SRC-UCSD-APALG-SPRING-2019: problems 5–10 (P-APAS19E–J) transcribed.
+    Source PDF pages 2–5 remain near-blank (99.997% white, only problem numbers present); problems 1–4 genuinely absent from the hosted file.
+    Completion: incomplete with remainder on card.
+
+  - SRC-UCSD-RA-SPRING-2009: problems 1–4 (P-RASP09A–D) transcribed.
+    Source PDF has 7 pages; problems 5–8 (pages 8–9) genuinely absent from the hosted file.
+    Completion: incomplete with remainder on card.
+
   - SRC-UCSD-TOP-JUSTIN: deferred; concurrent session has active edits.
 
 - [ ] Transcribe the readable remainder of one collection at a time.
