@@ -256,7 +256,7 @@ State the evidence in an empty audit commit.
 
 - [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md) — audit commit:
 
-- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2004/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2004/index.md) — audit commit: 59093d5a3
 
 - [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2005/index.md) — audit commit:
 
@@ -795,7 +795,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [ ] Finish Applied Algebra Fall 2017.
 
-- [ ] Finish Applied Algebra Spring 2004.
+- [x] Finish Applied Algebra Spring 2004. Disposition 2026-08-26: source holds Part 1 (3 linear-algebra problems) + Part III (11 problems) = 14; all present in source order. Shared cards verified verbatim: P-APAS04A/FA07, P-APAS04C/FA04, P-APAS04N/FA11. Fixed duplicated (b) label in P-APAS04M.
 
 - [ ] Finish Applied Algebra Spring 2007.
 
