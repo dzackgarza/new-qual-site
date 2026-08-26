@@ -14,8 +14,7 @@ review: draft
 ---
 
 ::: {.problem}
-(May 2016) Let $X$ be the set of real numbers, let $\mathcal{T}_E$ be the Euclidean topology on $X$, and let $\mathcal{T}_0$ be the excluded point topology (that is, $\mathcal{T}_0=\{U\subset X\mid 0\notin U\}\cup\{X\}$).
-For each of the following topological spaces, determine whether or not the space is compact:
+(May 2016) Let $X$ be the set of real numbers, let $\mathcal{T}_E$ be the Euclidean topology on $X$, and let $\mathcal{T}_0$ be the excluded point topology (that is, $\mathcal{T}_0=\{U\subset X\mid 0\notin U\}\cup\{X\}$). For each of the following topological spaces, determine whether or not the space is compact:
 
 (a) The set $X$ with the topology $\mathcal{T}_E\cap\mathcal{T}_0$.
 
