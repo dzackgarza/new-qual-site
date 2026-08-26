@@ -11,7 +11,8 @@ review: draft
 ---
 
 ::: problem
-Let $S_p$ be a Sylow $p$-subgroup of a finite group $G$. Prove that
+Let $S_p$ be a Sylow $p$-subgroup of a finite group $G$.
+Prove that
 $$
 N_G\bigl(N_G(S_p)\bigr)=N_G(S_p).
 $$

@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Define a $k$-transitive group action and a sharply $k$-transitive group action. Discuss multiple transitivity.
+Define a $k$-transitive group action and a sharply $k$-transitive group action.
+Discuss multiple transitivity.
 :::

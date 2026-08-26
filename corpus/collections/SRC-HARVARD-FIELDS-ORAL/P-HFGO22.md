@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Is every algebraic field extension finite? Prove the claim or give a counterexample.
+Is every algebraic field extension finite?
+Prove the claim or give a counterexample.
 :::

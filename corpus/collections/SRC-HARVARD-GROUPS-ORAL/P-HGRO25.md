@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $G$ be a finite abelian group, and let $p$ be a prime that divides $|G|$. Prove that $G$ has a subgroup of order $p$.
+Let $G$ be a finite abelian group, and let $p$ be a prime that divides $|G|$.
+Prove that $G$ has a subgroup of order $p$.
 :::

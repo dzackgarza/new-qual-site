@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $F/k$ be a Galois extension of degree $n$. Determine the order of $\operatorname{Gal}(F/k)$.
+Let $F/k$ be a Galois extension of degree $n$.
+Determine the order of $\operatorname{Gal}(F/k)$.
 :::

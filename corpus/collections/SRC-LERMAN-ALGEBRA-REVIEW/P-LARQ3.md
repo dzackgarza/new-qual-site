@@ -11,5 +11,7 @@ review: draft
 ---
 
 ::: problem
-Let $R$ be a commutative ring with identity. Suppose $p\in R$ is irreducible and $u\in R$ is a unit. Prove that $up$ is irreducible.
+Let $R$ be a commutative ring with identity.
+Suppose $p\in R$ is irreducible and $u\in R$ is a unit.
+Prove that $up$ is irreducible.
 :::

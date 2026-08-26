@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $G$ act sharply $2$-transitively on a set $X$. Prove that the Frobenius kernel has cardinality $|X|$.
+Let $G$ act sharply $2$-transitively on a set $X$.
+Prove that the Frobenius kernel has cardinality $|X|$.
 :::

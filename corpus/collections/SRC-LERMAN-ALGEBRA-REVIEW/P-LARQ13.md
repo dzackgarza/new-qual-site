@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $M$ be a cyclic module over a principal ideal domain $R$. Prove that $M\cong R/(a)$ as an $R$-module for some $a\in R$.
+Let $M$ be a cyclic module over a principal ideal domain $R$.
+Prove that $M\cong R/(a)$ as an $R$-module for some $a\in R$.
 :::

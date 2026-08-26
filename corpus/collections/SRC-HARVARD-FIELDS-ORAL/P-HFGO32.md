@@ -15,5 +15,6 @@ Let $t$ be transcendental over $k$, and set
 $$
 x=\frac{t^3+2}{t^2+3}.
 $$
-Is $x$ algebraic over $k$? Justify your answer.
+Is $x$ algebraic over $k$?
+Justify your answer.
 :::

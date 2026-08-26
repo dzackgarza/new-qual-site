@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $G$ be a finite group with composite order less than $60$. Prove that $G$ is not simple.
+Let $G$ be a finite group with composite order less than $60$.
+Prove that $G$ is not simple.
 :::

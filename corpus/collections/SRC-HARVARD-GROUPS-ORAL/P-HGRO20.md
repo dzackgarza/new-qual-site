@@ -11,5 +11,7 @@ review: draft
 ---
 
 ::: problem
-Let $H\leq G$, where $G$ is finite. Suppose $[G:H]$ is the smallest prime that divides $|G|$. Prove that $H$ is normal in $G$.
+Let $H\leq G$, where $G$ is finite.
+Suppose $[G:H]$ is the smallest prime that divides $|G|$.
+Prove that $H$ is normal in $G$.
 :::

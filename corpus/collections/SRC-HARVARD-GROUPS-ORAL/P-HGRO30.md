@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-If every subgroup of a group is normal, must the group be abelian? Prove the claim or give a counterexample.
+If every subgroup of a group is normal, must the group be abelian?
+Prove the claim or give a counterexample.
 :::

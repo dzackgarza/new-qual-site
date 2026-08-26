@@ -11,5 +11,7 @@ review: draft
 ---
 
 ::: problem
-Let $G$ be a group of order $99$. Must $G$ have a normal subgroup of order $11$? Justify your answer.
+Let $G$ be a group of order $99$.
+Must $G$ have a normal subgroup of order $11$?
+Justify your answer.
 :::

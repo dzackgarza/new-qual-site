@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Construct a field of order $27$ from $\mathbb F_3$ and an irreducible polynomial. What degree must the polynomial have?
+Construct a field of order $27$ from $\mathbb F_3$ and an irreducible polynomial.
+What degree must the polynomial have?
 :::

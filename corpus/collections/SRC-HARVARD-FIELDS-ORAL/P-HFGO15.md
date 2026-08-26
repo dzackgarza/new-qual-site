@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Must a polynomial of degree $n$ over a division ring have at most $n$ roots in every extending division ring? Prove the claim or give a counterexample.
+Must a polynomial of degree $n$ over a division ring have at most $n$ roots in every extending division ring?
+Prove the claim or give a counterexample.
 :::

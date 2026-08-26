@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Is every extension of $\mathbb Q$ of degree $2$ normal? Justify your answer.
+Is every extension of $\mathbb Q$ of degree $2$ normal?
+Justify your answer.
 :::

@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-In the preceding quartic-extension problem, suppose there is an intermediate field $F\subseteq L\subseteq E$ with $[L:F]=2$. Improve the bound on the normal-closure degree and describe the corresponding Galois group constraints.
+In the preceding quartic-extension problem, suppose there is an intermediate field $F\subseteq L\subseteq E$ with $[L:F]=2$.
+Improve the bound on the normal-closure degree and describe the corresponding Galois group constraints.
 :::

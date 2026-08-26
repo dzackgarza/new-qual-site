@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-An $F[x]$-module is an $F$-vector space $M$ with a linear map $T_M:M\to M$, where $x\cdot m=T_M(m)$. Describe an $F[x]$-module homomorphism $\varphi:M\to N$ in terms of the linear maps $T_M$ and $T_N$.
+An $F[x]$-module is an $F$-vector space $M$ with a linear map $T_M:M\to M$, where $x\cdot m=T_M(m)$.
+Describe an $F[x]$-module homomorphism $\varphi:M\to N$ in terms of the linear maps $T_M$ and $T_N$.
 :::

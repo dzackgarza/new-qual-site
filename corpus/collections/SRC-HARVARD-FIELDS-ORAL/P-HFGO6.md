@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Does there exist a Galois extension whose Galois group is the quaternion group $\{\pm1,\pm i,\pm j,\pm k\}$? Justify your answer.
+Does there exist a Galois extension whose Galois group is the quaternion group $\{\pm1,\pm i,\pm j,\pm k\}$?
+Justify your answer.
 :::

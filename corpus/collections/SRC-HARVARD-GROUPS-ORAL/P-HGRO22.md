@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $p$ be prime, and let $G$ be a nonabelian group of order $p^3$. Determine the order of the center of $G$.
+Let $p$ be prime, and let $G$ be a nonabelian group of order $p^3$.
+Determine the order of the center of $G$.
 :::

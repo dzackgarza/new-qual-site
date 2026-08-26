@@ -11,6 +11,9 @@ review: draft
 ---
 
 ::: problem
-1. Does $\mathbb Z\times\mathbb Z$ have a maximal ideal? If so, give one.
-2. Does $\mathbb Z\times\mathbb Z$ have zero divisors? If so, give two nonzero zero divisors whose product is zero.
+1. Does $\mathbb Z\times\mathbb Z$ have a maximal ideal?
+   If so, give one.
+
+2. Does $\mathbb Z\times\mathbb Z$ have zero divisors?
+   If so, give two nonzero zero divisors whose product is zero.
 :::

@@ -1,8 +1,11 @@
 ## Sample Questions from Past Qualifying Exams
 
-This list may give the impression that the exams consist of a series of questions fired at the student one after another. In fact most exams have more the character of a conversation with considerable give and take. Hence this list cannot be expected to indicate accurately the difficulties involved.
+This list may give the impression that the exams consist of a series of questions fired at the student one after another.
+In fact most exams have more the character of a conversation with considerable give and take.
+Hence this list cannot be expected to indicate accurately the difficulties involved.
 
-The list indicates the professor associated to each question where available. Some have been in the MGSA files for a while, and this information has been lost (if it was ever there).
+The list indicates the professor associated to each question where available.
+Some have been in the MGSA files for a while, and this information has been lost (if it was ever there).
 
 The listing by section is approximate, since some questions may fit under more than one heading.
 
@@ -20,13 +23,18 @@ The listing by section is approximate, since some questions may fit under more t
 
 • Are there any Galois extensions whose group is $\{ \pm 1 , \pm i , \pm j , \pm k \} \ ?$ [Bergman]
 
-• What is an algebraic closure? [Lenstra]
+• What is an algebraic closure?
+[Lenstra]
 
-• What is an algebraically closed field? What does it mean when a polynomial splist? [Lenstra]
+• What is an algebraically closed field?
+What does it mean when a polynomial splist?
+[Lenstra]
 
-• Show that “every polynomial over a field has a root in the field” implies that the field is algebraically close. [Lenstra]
+• Show that “every polynomial over a field has a root in the field” implies that the field is algebraically close.
+[Lenstra]
 
-• What is the index of a field in its algebraic closure? [Lenstra]
+• What is the index of a field in its algebraic closure?
+[Lenstra]
 
 • What is $\left[ \overline { { \mathbb { Q } } } ; Q \right] ?$ [Lenstra]
 
@@ -74,8 +82,12 @@ The listing by section is approximate, since some questions may fit under more t
 
 • What is a cyclotomic extension?
 
-• Construct a field of 27 elements. [Vojta]
+• Construct a field of 27 elements.
+[Vojta]
 
-• Can you construct a field of 27 elements by starting with $\mathbb { F } _ { 3 }$ and picking an irreducible polynomial of some degree? Which degree? [Vojta]
+• Can you construct a field of 27 elements by starting with $\mathbb { F } _ { 3 }$ and picking an irreducible polynomial of some degree?
+Which degree?
+[Vojta]
 
-• Prove that any two fields of 27 elements are isomorphic. [Vojta/Bergman]
+• Prove that any two fields of 27 elements are isomorphic.
+[Vojta/Bergman]

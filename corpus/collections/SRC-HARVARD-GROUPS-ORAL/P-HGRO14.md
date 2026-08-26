@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $H$ be the commutator subgroup of a group $G$. Prove that $G/H$ is abelian.
+Let $H$ be the commutator subgroup of a group $G$.
+Prove that $G/H$ is abelian.
 :::

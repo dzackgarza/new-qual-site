@@ -11,7 +11,9 @@ review: draft
 ---
 
 ::: problem
-Let $F$ be a field, and let $p\in F[x]$ have degree $n\geq1$. Prove that $F[x]/(p)$ is an $n$-dimensional vector space over $F$. Show that
+Let $F$ be a field, and let $p\in F[x]$ have degree $n\geq1$.
+Prove that $F[x]/(p)$ is an $n$-dimensional vector space over $F$.
+Show that
 $$
 \{1+(p),x+(p),\ldots,x^{n-1}+(p)\}
 $$

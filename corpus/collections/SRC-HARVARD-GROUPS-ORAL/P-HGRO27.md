@@ -11,5 +11,7 @@ review: draft
 ---
 
 ::: problem
-Suppose every element of a finite group $G$ has order equal to a power of one fixed prime $p$. Must $|G|$ be a power of $p$? Justify your answer.
+Suppose every element of a finite group $G$ has order equal to a power of one fixed prime $p$.
+Must $|G|$ be a power of $p$?
+Justify your answer.
 :::

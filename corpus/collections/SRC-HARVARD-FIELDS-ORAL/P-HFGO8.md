@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Define an algebraically closed field. Define what it means for a polynomial to split over a field.
+Define an algebraically closed field.
+Define what it means for a polynomial to split over a field.
 :::

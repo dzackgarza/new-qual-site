@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Suppose every nonconstant polynomial over a field $F$ has a root in $F$. Prove that $F$ is algebraically closed.
+Suppose every nonconstant polynomial over a field $F$ has a root in $F$.
+Prove that $F$ is algebraically closed.
 :::

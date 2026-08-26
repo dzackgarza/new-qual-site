@@ -11,5 +11,7 @@ review: draft
 ---
 
 ::: problem
-Let $R$ be a nonzero commutative ring with identity. Suppose its only ideals are $(0)$ and $R$. Prove that $R$ is a field.
+Let $R$ be a nonzero commutative ring with identity.
+Suppose its only ideals are $(0)$ and $R$.
+Prove that $R$ is a field.
 :::

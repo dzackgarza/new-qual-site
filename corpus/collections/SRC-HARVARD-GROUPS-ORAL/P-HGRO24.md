@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $G$ be a group of order $p^r$, where $p$ is prime. Prove that $G$ is solvable.
+Let $G$ be a group of order $p^r$, where $p$ is prime.
+Prove that $G$ is solvable.
 :::

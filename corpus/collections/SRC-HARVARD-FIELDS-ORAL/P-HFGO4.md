@@ -11,5 +11,7 @@ review: draft
 ---
 
 ::: problem
-Let $E/F$ be a separable, nonnormal extension of degree $4$. Let $K/F$ be its normal closure. Bound $[K:F]$.
+Let $E/F$ be a separable, nonnormal extension of degree $4$.
+Let $K/F$ be its normal closure.
+Bound $[K:F]$.
 :::

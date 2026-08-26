@@ -11,7 +11,8 @@ review: draft
 ---
 
 ::: problem
-Let $K\subseteq I$ be ideals of a ring $R$. Prove that $I/K$ is an ideal of $R/K$ and that
+Let $K\subseteq I$ be ideals of a ring $R$.
+Prove that $I/K$ is an ideal of $R/K$ and that
 $$
 (R/K)/(I/K)\cong R/I.
 $$

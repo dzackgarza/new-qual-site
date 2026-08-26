@@ -16,7 +16,8 @@ Due date: Tuesday the 27th of August 2019
 
 (b) Show that every closed set is a $G _ { \delta }$ set and every open set is an $F _ { \sigma }$ set.
 
-Hint: One approach is to prove that every open subset of $\mathbb { R } ^ { n }$ can be written as a countable union of closed cubes with disjoint interiors. This approach is however very specific to open sets in $\mathbb { R } ^ { n }$
+Hint: One approach is to prove that every open subset of $\mathbb { R } ^ { n }$ can be written as a countable union of closed cubes with disjoint interiors.
+This approach is however very specific to open sets in $\mathbb { R } ^ { n }$
 
 (c) Give an example of an $F _ { \sigma }$ set which is not a $G _ { \delta }$ set and a set which is neither an $F _ { \sigma }$ nor a $G _ { \delta }$ set.
 
@@ -42,7 +43,8 @@ $$
 f { \mathrm { ~ i s ~ c o n t i n u o u s ~ a t ~ } } x \quad \Longleftrightarrow \quad \omega _ { f } ( x ) = 0 .
 $$
 
-ii. Prove that for every $\varepsilon > 0$ the set $A _ { \varepsilon } = \{ x \in \mathbb { R } : \omega _ { f } ( x ) \geq \varepsilon \}$ is closed and deduce from this that the set of all points at which f is discontinuous is an $F _ { \sigma }$ set.
+ii.
+Prove that for every $\varepsilon > 0$ the set $A _ { \varepsilon } = \{ x \in \mathbb { R } : \omega _ { f } ( x ) \geq \varepsilon \}$ is closed and deduce from this that the set of all points at which f is discontinuous is an $F _ { \sigma }$ set.
 
 4. Let $\{ x _ { n } \} _ { n = 1 } ^ { \infty }$ be any enumeration of a given countable set $X \subseteq \mathbb { R }$ . For each $n \in \mathbb { N }$ define
 
@@ -88,7 +90,8 @@ $$
 \sum _ { n = 0 } ^ { \infty } h _ { n } ( x ) = { \left\{ \begin{array} { l l } { 1 { \mathrm { ~ i f ~ } } x > 0 } \\ { 0 { \mathrm { ~ i f ~ } } x = 0 } \end{array} \right. }
 $$
 
-ii. Does $\textstyle \sum _ { n = 0 } ^ { \infty } h _ { n }$ converge uniformly on $\lbrack 0 , \infty ) ?$
+ii.
+Does $\textstyle \sum _ { n = 0 } ^ { \infty } h _ { n }$ converge uniformly on $\lbrack 0 , \infty ) ?$
 
 (c) Prove that $\textstyle \sum _ { n = 0 } ^ { \infty } h _ { n }$ converges uniformly on $[ a , \infty )$ for any $a > 0$
 
@@ -100,10 +103,13 @@ ii. Does $\textstyle \sum _ { n = 0 } ^ { \infty } h _ { n }$ converge uniformly
 
 Hint: Modify the proof given in class of the special case $X = \mathbb { R }$ replacing the use of the nested interval property with the following fact (which you should prove):
 
-If $F _ { 1 } \supseteq F _ { 2 } \supseteq \cdots$ is a nested sequence of closed non-empty and bounded sets in a complete metric space X with lim diam $F _ { n } = 0$ , then $\bigcap _ { n = 1 } ^ { \infty } F _ { n }$ contains exactly one point. n→∞
+If $F _ { 1 } \supseteq F _ { 2 } \supseteq \cdots$ is a nested sequence of closed non-empty and bounded sets in a complete metric space X with lim diam $F _ { n } = 0$ , then $\bigcap _ { n = 1 } ^ { \infty } F _ { n }$ contains exactly one point.
+n→∞
 
 3. Complete the proof, sketched in class, of the so-called Lebesgue Criterion: A bounded function on an interval $[ a , b ]$ is Riemann integrable if and only if its set of discontinuities has measure zero.
 
-(a) Prove that if the set of discontinuities of f has measure zero, then f is Riemann integrable. [Hint: Let $\varepsilon > 0$ . Cover the compact set $A _ { \varepsilon }$ (defined in $Q \mathcal { B } ( b ) i i .$ . above) by a finite number of open intervals whose total length $i s \le \varepsilon$ . Select and appropriate partition of $[ a , b ]$ and estimate the difference between the upper and lower sums of f over this partition.]
+(a) Prove that if the set of discontinuities of f has measure zero, then f is Riemann integrable.
+[Hint: Let $\varepsilon > 0$ . Cover the compact set $A _ { \varepsilon }$ (defined in $Q \mathcal { B } ( b ) i i .$ . above) by a finite number of open intervals whose total length $i s \le \varepsilon$ . Select and appropriate partition of $[ a , b ]$ and estimate the difference between the upper and lower sums of f over this partition.]
 
-(b) Prove that if f is Riemann integrable on $[ a , b ]$ , then its set of discontinuities has measure zero. [Hint: The set of discontinuities of f is contained in $\cup _ { n } A _ { 1 / n }$ . Given $\varepsilon > 0$ , choose a partition P such that $U ( f , P ) - L ( f , P ) < \varepsilon / n$ . Show that the total length of the intervals in P whose interiors intersect $A _ { 1 / n } \ i s \leq \varepsilon . \ ]$
+(b) Prove that if f is Riemann integrable on $[ a , b ]$ , then its set of discontinuities has measure zero.
+[Hint: The set of discontinuities of f is contained in $\cup _ { n } A _ { 1 / n }$ . Given $\varepsilon > 0$ , choose a partition P such that $U ( f , P ) - L ( f , P ) < \varepsilon / n$ . Show that the total length of the intervals in P whose interiors intersect $A _ { 1 / n } \ i s \leq \varepsilon . \ ]$

@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Is the converse of Lagrange's theorem true? Justify your answer.
+Is the converse of Lagrange's theorem true?
+Justify your answer.
 :::

@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Must the normalizer of a subgroup be a normal subgroup? Prove the claim or give a counterexample.
+Must the normalizer of a subgroup be a normal subgroup?
+Prove the claim or give a counterexample.
 :::

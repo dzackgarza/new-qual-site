@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Let $\phi:G\to H$ and $\psi:H\to K$ be ring homomorphisms. Prove that $\psi\circ\phi:G\to K$ is a ring homomorphism.
+Let $\phi:G\to H$ and $\psi:H\to K$ be ring homomorphisms.
+Prove that $\psi\circ\phi:G\to K$ is a ring homomorphism.
 :::

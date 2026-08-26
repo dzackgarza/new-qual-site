@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Can passage from an infinite field to its algebraic closure increase its cardinality? Justify your answer.
+Can passage from an infinite field to its algebraic closure increase its cardinality?
+Justify your answer.
 :::

@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Can $A_4$ be mapped homomorphically onto $\mathbb Z/2\mathbb Z$? Justify your answer.
+Can $A_4$ be mapped homomorphically onto $\mathbb Z/2\mathbb Z$?
+Justify your answer.
 :::

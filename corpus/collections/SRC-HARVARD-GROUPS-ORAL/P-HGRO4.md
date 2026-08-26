@@ -11,5 +11,6 @@ review: draft
 ---
 
 ::: problem
-Classify all abelian groups of order $27$. Prove that the groups in your classification are pairwise nonisomorphic.
+Classify all abelian groups of order $27$.
+Prove that the groups in your classification are pairwise nonisomorphic.
 :::
