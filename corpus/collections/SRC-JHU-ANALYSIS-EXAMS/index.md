@@ -351,7 +351,7 @@ source:
     - P-JHUSP03CAC
     - P-JHUSP03CAD
     - P-JHUSP03CAE
-  - name: Real Analysis Qualifying Exam, Fall 2002
+  - name: Real Analysis Qualifying Exam, Fall 2002 (p. 49)
     problems:
     - P-JHUFA02CAA
     - P-JHUFA02CAB
