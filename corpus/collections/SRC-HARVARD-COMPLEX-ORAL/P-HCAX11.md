@@ -5,7 +5,7 @@ kind: problem
 title: The punctured disk is not conformally equivalent to an annulus
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Conformal Equivalence
 relations: []

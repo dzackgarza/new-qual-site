@@ -5,7 +5,7 @@ kind: problem
 title: Derive the maximum principle from Cauchy's integral formula
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Cauchy's Integral Formula
   - Maximum Modulus

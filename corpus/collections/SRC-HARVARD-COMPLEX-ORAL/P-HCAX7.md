@@ -5,7 +5,7 @@ kind: problem
 title: Complex tori and their automorphisms
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Complex Tori
 relations: []

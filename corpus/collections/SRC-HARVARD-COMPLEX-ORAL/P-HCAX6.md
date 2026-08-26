@@ -5,7 +5,7 @@ kind: problem
 title: Areas of spherical and hyperbolic triangles
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Conformal Geometry
 relations: []

@@ -5,7 +5,7 @@ kind: problem
 title: State the Riemann hypothesis
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Riemann Zeta Function
 relations: []

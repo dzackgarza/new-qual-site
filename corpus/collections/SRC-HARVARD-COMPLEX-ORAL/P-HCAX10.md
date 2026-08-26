@@ -5,7 +5,7 @@ kind: problem
 title: A compact-uniform limit of univalent functions can be constant
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Univalent Functions
 relations: []

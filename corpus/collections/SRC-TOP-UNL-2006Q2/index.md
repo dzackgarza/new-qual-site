@@ -14,6 +14,7 @@ provenance:
 source:
   source_kind: university-exam
   problems:
+  - P-T06Q2-1
   - P-T06Q2-2
   - P-T06Q2-3
   - P-T06Q2-4
@@ -22,6 +23,7 @@ source:
   - P-T06Q2-7
   - P-T06Q2-8
   - P-T06Q2-9
+  - P-T06Q2-10
   date:
     kind: academic-term
     term: summer
@@ -29,5 +31,3 @@ source:
   institution: unl
   area: topology
 ---
-
-- P-T06Q2-10

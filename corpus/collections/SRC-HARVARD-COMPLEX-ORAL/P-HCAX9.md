@@ -5,7 +5,7 @@ kind: problem
 title: Derivatives under compact-uniform convergence
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Normal Convergence
 relations: []

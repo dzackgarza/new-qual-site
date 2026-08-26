@@ -5,7 +5,7 @@ kind: problem
 title: A continuous isolated singularity is removable
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Removable Singularities
 relations: []

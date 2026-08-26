@@ -5,7 +5,7 @@ kind: collection
 title: Harvard complex-analysis oral qualifying-exam questions
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics: []
 relations: []
 review: draft
@@ -14,7 +14,7 @@ provenance:
 - assets/attachments/Harvard_Complex_Analysis_Oral_Questions.pdf
 source:
   source_kind: compilation
-  area: complex analysis
+  area: complex-analysis
   problems:
   - P-HCAX1
   - P-HCAX2
@@ -48,5 +48,4 @@ source:
   date:
     kind: unknown
 ---
-
 

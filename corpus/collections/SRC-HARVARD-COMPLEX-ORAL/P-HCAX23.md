@@ -5,7 +5,7 @@ kind: problem
 title: Conformal automorphisms of the upper half-plane
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Möbius Transformations
 relations: []

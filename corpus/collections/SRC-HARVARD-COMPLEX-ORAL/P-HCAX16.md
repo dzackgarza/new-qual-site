@@ -5,7 +5,7 @@ kind: problem
 title: Continuous functions with the mean-value property are harmonic
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Harmonic Functions
   - Mean-Value Property

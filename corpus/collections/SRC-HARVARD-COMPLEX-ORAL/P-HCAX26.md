@@ -5,7 +5,7 @@ kind: problem
 title: Define the Riemann zeta function
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Riemann Zeta Function
 relations: []

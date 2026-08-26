@@ -6,8 +6,8 @@ title: Emory qualifying-exam problems by Santiago Arango-Piñeros
 classification:
   areas:
   - algebra
-  - complex analysis
-  - real analysis
+  - complex-analysis
+  - real-analysis
   topics: []
 relations: []
 review: draft
@@ -64,5 +64,4 @@ source:
     - P-MMAQ-SMTLV5QBOP
     - P-MMAQ-OZLCWMQK46
 ---
-
 

@@ -5,7 +5,7 @@ kind: problem
 title: Normalized conformal map onto the slit plane
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Riemann Mapping Theorem
   - Univalent Functions

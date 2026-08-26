@@ -5,7 +5,7 @@ kind: problem
 title: Schwarz--Christoffel map from the disk to a polygon
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Schwarz--Christoffel Formula
 relations: []

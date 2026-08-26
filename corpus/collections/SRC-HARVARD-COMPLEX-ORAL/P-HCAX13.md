@@ -5,7 +5,7 @@ kind: problem
 title: Boundary signs constrain linear combinations of harmonic functions
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Maximum Principle
   - Harmonic Functions

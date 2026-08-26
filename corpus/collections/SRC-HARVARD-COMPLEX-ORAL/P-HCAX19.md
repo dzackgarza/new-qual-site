@@ -5,7 +5,7 @@ kind: problem
 title: Conformal equivalence of a half-disk and the disk
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Conformal Maps
 relations: []

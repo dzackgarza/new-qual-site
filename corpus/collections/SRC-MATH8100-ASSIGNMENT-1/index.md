@@ -4,7 +4,7 @@ id: SRC-MATH8100-ASSIGNMENT-1
 kind: collection
 title: Math 8100 Assignment 1
 classification:
-  areas: [real analysis]
+  areas: [real-analysis]
   topics: []
 relations: []
 review: draft
@@ -13,7 +13,7 @@ provenance:
 - assets/attachments/Analysis HW1.pdf
 source:
   source_kind: homework
-  area: real analysis
+  area: real-analysis
   problems:
   - P-M81A1-1
   - P-M81A1-2
@@ -30,5 +30,3 @@ source:
     term: fall
     year: 2019
 ---
-
-

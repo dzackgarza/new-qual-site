@@ -5,7 +5,7 @@ kind: problem
 title: Poles and residues of the cosecant function
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Residues
 relations: []

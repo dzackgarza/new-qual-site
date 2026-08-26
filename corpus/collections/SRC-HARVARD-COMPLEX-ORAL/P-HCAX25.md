@@ -5,7 +5,7 @@ kind: problem
 title: A mild growth bound makes a puncture removable
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Removable Singularities
 relations: []

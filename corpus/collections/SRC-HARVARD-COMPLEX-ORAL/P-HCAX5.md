@@ -5,7 +5,7 @@ kind: problem
 title: Power series and radius of convergence of the tangent function
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Power Series
 relations: []

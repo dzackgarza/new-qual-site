@@ -5,7 +5,7 @@ kind: problem
 title: Picard's theorem from the modular invariant
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Picard's Theorem
 relations: []

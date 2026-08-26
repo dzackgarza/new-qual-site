@@ -5,7 +5,7 @@ kind: problem
 title: Evaluate an improper integral by complex analysis
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Contour Integration
 relations: []

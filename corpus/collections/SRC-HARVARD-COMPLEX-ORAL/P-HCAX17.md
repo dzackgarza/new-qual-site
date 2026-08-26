@@ -5,7 +5,7 @@ kind: problem
 title: Laurent coefficients and growth on a punctured disk
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Laurent Series
   - Isolated Singularities

@@ -5,7 +5,7 @@ kind: problem
 title: Uniqueness in the Riemann mapping theorem
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Riemann Mapping Theorem
 relations: []

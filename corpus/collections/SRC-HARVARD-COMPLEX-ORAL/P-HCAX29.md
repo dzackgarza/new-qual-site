@@ -5,7 +5,7 @@ kind: problem
 title: Local power-series expansions of holomorphic functions
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Power Series
 relations: []

@@ -5,7 +5,7 @@ kind: problem
 title: Zeros and poles of a doubly periodic function
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Elliptic Functions
 relations: []

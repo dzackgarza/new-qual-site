@@ -5,7 +5,7 @@ kind: problem
 title: Argument principle as a winding-number statement
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Argument Principle
   - Winding Number

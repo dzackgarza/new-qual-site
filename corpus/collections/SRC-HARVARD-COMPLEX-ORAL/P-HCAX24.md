@@ -5,7 +5,7 @@ kind: problem
 title: Define the modular group
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Modular Group
 relations: []

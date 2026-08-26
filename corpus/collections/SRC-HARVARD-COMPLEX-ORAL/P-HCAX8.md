@@ -5,7 +5,7 @@ kind: problem
 title: Zeros of a polynomial derivative remain in a containing half-plane
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Gauss--Lucas Theorem
 relations: []

@@ -5,7 +5,7 @@ kind: problem
 title: Analytic continuation and its uniqueness
 classification:
   areas:
-  - complex analysis
+  - complex-analysis
   topics:
   - Analytic Continuation
 relations: []
