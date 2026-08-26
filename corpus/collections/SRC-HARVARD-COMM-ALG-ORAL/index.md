@@ -18,7 +18,18 @@ source:
   area: algebra
   problems:
   - P-HCAO1
+  - P-HCAO2
+  - P-HCAO3
+  - P-HCAO4
+  - P-HCAO5
+  - P-HCAO6
+  - P-HCAO7
+  - P-HCAO8
+  - P-HCAO9
+  - P-HCAO10
+  - P-HCAO11
+  - P-HCAO12
+  - P-HCAO13
   date:
     kind: unknown
 ---
-
