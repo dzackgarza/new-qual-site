@@ -13,7 +13,8 @@ review: draft
 ---
 
 ::: problem
-Suppose $f$ and $g$ are injective maps of a set $S$ into itself. Show that the composite function $f\circ g$ is also injective.
+Suppose $f$ and $g$ are injective maps of a set $S$ into itself.
+Show that the composite function $f\circ g$ is also injective.
 :::
 
 ::: solution

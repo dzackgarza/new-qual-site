@@ -14,7 +14,8 @@ review: draft
 ---
 
 ::: problem
-Let $\{f_n:[0,1]\to\mathbb R\}_{n=1}^{\infty}$ be continuous functions that converge uniformly to $0$. Show that
+Let $\{f_n:[0,1]\to\mathbb R\}_{n=1}^{\infty}$ be continuous functions that converge uniformly to $0$.
+Show that
 \[
 \int_0^1 f_n(x)\,dx\longrightarrow0.
 \]

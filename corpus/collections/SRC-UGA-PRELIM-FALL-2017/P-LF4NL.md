@@ -25,7 +25,8 @@ Let $\varepsilon>0$ and choose
 \[
 \delta=\min\left\{\frac12,\sqrt{\frac\varepsilon2}\right\}.
 \]
-If $|x-1|<\delta$, then $|x|>1/2$. Hence
+If $|x-1|<\delta$, then $|x|>1/2$.
+Hence
 \[
 \left|\frac{x^2+1}{x}-2\right|
 =\frac{|x-1|^2}{|x|}

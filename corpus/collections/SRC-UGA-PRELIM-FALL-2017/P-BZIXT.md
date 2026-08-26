@@ -34,7 +34,9 @@ x_1=g(f(x_1))=g(f(x_2))=x_2.
 \]
 Thus $f$ is injective.
 
-For each $x\in X$, the element $f(x)\in Y$ satisfies $g(f(x))=x$. Thus $g$ is surjective.
+For each $x\in X$, the element $f(x)\in Y$ satisfies $g(f(x))=x$.
+Thus $g$ is surjective.
 
-Let $X=\{1\}$, $Y=\{1,2\}$, $f(1)=1$, and $g(1)=g(2)=1$. Then $g\circ f=\operatorname{id}_X$, while $f$ is not surjective and $g$ is not injective.
+Let $X=\{1\}$, $Y=\{1,2\}$, $f(1)=1$, and $g(1)=g(2)=1$.
+Then $g\circ f=\operatorname{id}_X$, while $f$ is not surjective and $g$ is not injective.
 :::

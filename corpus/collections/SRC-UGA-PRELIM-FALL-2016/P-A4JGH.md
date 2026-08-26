@@ -32,7 +32,12 @@ The negation of uniform convergence is
 |f_n(x)-f(x)|\geq\varepsilon_0.
 \]
 
-For example, let $f_n(x)=x/n$ and $f(x)=0$. For each fixed $x$, one has $x/n\to0$. The convergence is not uniform. Take $\varepsilon_0=1$. For every $N$, choose $n=N+1$ and $x=n$. Then
+For example, let $f_n(x)=x/n$ and $f(x)=0$.
+For each fixed $x$, one has $x/n\to0$.
+The convergence is not uniform.
+Take $\varepsilon_0=1$.
+For every $N$, choose $n=N+1$ and $x=n$.
+Then
 \[
 |f_n(x)-f(x)|=1.
 \]

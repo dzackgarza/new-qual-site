@@ -23,15 +23,16 @@ review: draft
 :::
 
 ::: solution
-1. Parts
-   1. We have
-    $$ \int_C F_1 dx + F_2 dy + \cdots = 
-    \int _ { C } \vec { F } \cdot d \vec { r } = \int _ { a } ^ { b } \vec { F } ( \vec { r } ( t ) ) \cdot \vec { r } ^ { \prime } ( t ) d t
-    $$
-    and we can parametrize the line segment by $r(t)=(1-t)[2,1]+t[3,5]=[2+t,1+4t]$, so
-    $$
-    \int_0^1 (9+22t)~dt = 20.
-    $$
+Parametrize the line segment by
+\[
+r(t)=(1-t)(2,1)+t(3,5)=(2+t,1+4t),\qquad 0\leq t\leq1.
+\]
+Then
+\[
+\int_C(2x+y)\,dx+y\,dy
+=\int_0^1(9+22t)\,dt
+=20.
+\]
 
-   2. $F = [P, Q] = [2x+y, y]$ is conservative iff there is a potential function $\phi$ satisfying $\nabla \phi = F$ iff $P_y = Q_x$. Here we see that $(2x+y)_y = 1$ but $(y)_x = 0$, so the integral is path-dependent.
+For $F=(P,Q)=(2x+y,y)$, path independence on $\mathbb R^2$ would require $P_y=Q_x$. Here $P_y=1$ and $Q_x=0$, so the integral is path dependent.
 :::

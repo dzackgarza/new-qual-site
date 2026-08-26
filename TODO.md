@@ -780,10 +780,9 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [ ] Resolve card-kind and source-structure defects.
 
-- [x] Use the Stein--Shakarchi normal-family convention: every sequence has a
-  subsequence that converges locally uniformly to a holomorphic function.
-  `D-QTJ7T` is the canonical definition. It records the broader spherical
-  convergence convention separately.
+- [x] Use the Stein--Shakarchi normal-family convention: every sequence has a subsequence that converges locally uniformly to a holomorphic function.
+  `D-QTJ7T` is the canonical definition.
+  It records the broader spherical convergence convention separately.
 
 - [ ] Record unresolved mathematical choices on issue #2.
 
@@ -864,8 +863,8 @@ Missing solutions remain authored mathematics, not corpus data issues.
   Disposition 2026-08-26, updated: the source is the maintainer's typed rendition of Roberts' UCSD Math 290 course sheets; the five cited sheets (7, 8, 10, 11, 12) are now located and vendored, and serve as provenance for the sections they cover.
   Sheet 12 and the three figure-dependent Sheet 8 problems are carded and reconciled.
   Roberts' official `290F14sheet3.pdf` supplied all eleven Van Kampen problems.
-  The four figure-dependent statements and the two missing adjacent problems
-  are now restored. Collection completion: complete.
+  The four figure-dependent statements and the two missing adjacent problems are now restored.
+  Collection completion: complete.
 
 - [x] Review every remaining `completion: incomplete` collection.
   Disposition 2026-08-26, updated:
@@ -891,8 +890,8 @@ Missing solutions remain authored mathematics, not corpus data issues.
     Source PDF has 7 pages; problems 5–8 (pages 8–9) genuinely absent from the hosted file.
     Completion: incomplete with remainder on card.
 
-  - SRC-UCSD-TOP-JUSTIN: Roberts' official source sheets support all retained
-    sections. The collection contains all eleven Van Kampen Sheet 3 problems.
+  - SRC-UCSD-TOP-JUSTIN: Roberts' official source sheets support all retained sections.
+    The collection contains all eleven Van Kampen Sheet 3 problems.
     Completion: complete.
 
 - [x] Transcribe the readable remainder of one collection at a time.
@@ -1061,12 +1060,13 @@ Owner: [issue #11](https://github.com/dzackgarza/new-qual-site/issues/11)
 
 ## 6. Resolve remaining owner decisions
 
-- [x] Keep the live `\sech` definition in `vocabularies/macros.json`. The
-  disabled definition belongs only to archived TexDocs aggregates, which are
-  not publisher inputs. [Issue #14](https://github.com/dzackgarza/new-qual-site/issues/14)
-  is closed.
+- [x] Keep the live `\sech` definition in `vocabularies/macros.json`. The disabled definition belongs only to archived TexDocs aggregates, which are not publisher inputs.
+  [Issue #14](https://github.com/dzackgarza/new-qual-site/issues/14) is closed.
 
-- [ ] Decide how to model the 27 solution write-ups stored as problems.
+- [x] Restore the statements for the 27 Prelim solution write-ups stored as
+  problems. One card was already repaired. The other 26 now contain the exact
+  statement from the Fall 2015, Fall 2016, or Fall 2017 UGA exam, followed by
+  the solution.
 
 - [ ] Decide whether collection and problem pages satisfy reachability for every problem.
 

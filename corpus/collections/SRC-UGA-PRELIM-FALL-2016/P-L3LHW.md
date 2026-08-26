@@ -21,7 +21,9 @@ Give an $\varepsilon$-$\delta$ proof that
 :::
 
 ::: solution
-Let $\varepsilon>0$ and choose $\delta=\min\{1,20\varepsilon\}$. If $|x-2|<\delta$, then $1<x<3$, so $|5(3+x)|>20$. Therefore
+Let $\varepsilon>0$ and choose $\delta=\min\{1,20\varepsilon\}$.
+If $|x-2|<\delta$, then $1<x<3$, so $|5(3+x)|>20$.
+Therefore
 \[
 \left|\frac1{3+x}-\frac15\right|
 =\left|\frac{2-x}{5(3+x)}\right|
