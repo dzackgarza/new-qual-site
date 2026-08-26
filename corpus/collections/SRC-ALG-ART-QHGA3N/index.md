@@ -31,6 +31,8 @@ source:
     kind: academic-term
     term: fall
     year: 2019
+provenance:
+- assets/attachments/8000e.pdf
 ---
 
 ::: remark

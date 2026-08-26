@@ -20,17 +20,19 @@ source:
   - P-CDHB5
   - P-2B4GV
   - P-44MIX
-  - P-EGKRW
-  - P-5SED7
-  - P-OX3MY
-  - P-UW7CE
   - P-45V3F
   - P-5H7FG
+  - P-5SED7
+  - P-EGKRW
+  - P-OX3MY
   - P-Q6PDD
+  - P-UW7CE
   date:
     kind: academic-term
     term: fall
     year: 2019
+provenance:
+- assets/attachments/8000e.pdf
 ---
 
 ::: remark

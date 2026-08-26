@@ -40,7 +40,7 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md`](corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md) — audit commit: 012194c91 (verified: 3-page handwritten sheet, 2/3 problems transcribed; third not yet transcribed)
 
-- [ ] [`corpus/collections/SRC-ALG-ART-QHGA3N/index.md`](corpus/collections/SRC-ALG-ART-QHGA3N/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-ALG-ART-QHGA3N/index.md`](corpus/collections/SRC-ALG-ART-QHGA3N/index.md) — audit commit: (pending commit; verified: 10 cards, 10 in index; provenance: `assets/attachments/8000e.pdf` (Nakano MATH 8000 problem bank))
 
 - [x] [`corpus/collections/SRC-ALG-ART-SEPT2019/index.md`](corpus/collections/SRC-ALG-ART-SEPT2019/index.md) — audit commit: dc0ff8314 (verified: 6 source problems, 6 cards, all match)
 
