@@ -798,10 +798,10 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 - [x] Finish Applied Algebra Spring 2004. Disposition 2026-08-26: source holds Part 1 (3 linear-algebra problems) + Part III (11 problems) = 14; all present in source order.
   Shared cards verified verbatim: P-APAS04A/FA07, P-APAS04C/FA04, P-APAS04N/FA11. Fixed duplicated (b) label in P-APAS04M.
 
-- [x] Finish Applied Algebra Spring 2007. Disposition 2026-08-26: all nine problems transcribed in source order; scan is poor and two passages are illegible (problem 2's explicit matrix B, problem 5's S6xS3-module labels), so the collection is completion: incomplete with the exact remainder stated on the card.
+- [x] Finish Applied Algebra Spring 2007. Disposition 2026-08-26: all nine problems transcribed in source order; two passages not captured by the text extraction (problem 2's explicit matrix B, problem 5's S6xS3-module labels), so the collection is completion: incomplete with the exact remainder stated on the card.
 
 - [x] Finish Applied Algebra Spring 2008. Disposition 2026-08-26: the paper is also appended to the Fall 2008 algebra PDF (department reuse); all 13 problems carded in source order.
-  Garnir tableau (R.4) and ST.3 identity right-hand side are illegible in both scans; collection marked completion: incomplete with remainder stated.
+  Garnir tableau (R.4) and ST.3 identity right-hand side not captured by the text extraction; collection marked completion: incomplete with remainder stated on those cards.
 
 - [x] Read each remaining Algebra exam collection with an empty problem list.
 

@@ -19,7 +19,6 @@ Determine the decomposition of $W$ into a direct sum of irreducible $S_9$-module
 :::
 
 ::: remark
-The labels of the induced module are garbled in the available scan.
-The legible fragments show an $S_6\times S_3$-module built by tensoring simple modules $V_\lambda\otimes V_\mu$, with the label $(2,1)$ among them, but the scan does not determine the pair: the reading printed in the problem gives each factor three boxes, and a simple $S_6$-module is labeled by a partition of $6$, so the $S_6$-factor's label cannot be recovered from the scan.
-The labels printed in the problem are the scan's best reading and may not reproduce the exam.
+The labels of the induced module are not reproduced faithfully here.
+The fragments show an $S_6\times S_3$-module built by tensoring simple modules $V_\lambda\otimes V_\mu$, with the label $(2,1)$ among them, but the printed data does not determine the pair: the reading in the problem gives each factor three boxes, and a simple $S_6$-module is labeled by a partition of $6$, so the $S_6$-factor's label is ill-typed as printed.
 :::

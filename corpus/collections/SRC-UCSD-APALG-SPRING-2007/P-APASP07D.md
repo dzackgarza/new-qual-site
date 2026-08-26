@@ -22,6 +22,6 @@ Let $$C = \frac{1}{|G|} \sum_{g} A_g B A_g^{-1}.$$
 :::
 
 ::: remark
-The source prints an explicit $3\times 3$ matrix $B$, but its entries are illegible in the available scan, so the problem is stated here for a general given matrix $B$.
-The method requested is unchanged: $C$ is the Reynolds projection of $B$ onto the $G$-invariant subspace, so (a) asks for $\operatorname{Tr}(C) = \dim(V')^{G}$ and (b) for the projection of $B$ onto the invariants.
+The exam prints an explicit $3\times 3$ matrix $B$; the data is not reproduced here, so the problem is stated for a general matrix $B$.
+The requested computation is unchanged: $C$ is the Reynolds projection of $B$ onto the $G$-invariant subspace, so (a) asks for $\operatorname{Tr}(C) = \dim(V')^{G}$ and (b) for the projection of $B$ onto the invariants.
 :::
