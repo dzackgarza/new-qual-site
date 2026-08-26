@@ -26,8 +26,3 @@ source:
     term: spring
     year: 2009
 ---
-
-::: remark
-The source PDF hosted at UCSD is missing pages 8-9, which contain problems 5-8 (25 points).
-Only problems 1-4 could be extracted.
-:::

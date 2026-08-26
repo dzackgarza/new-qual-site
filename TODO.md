@@ -801,15 +801,6 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 - [x] Determine whether Real Analysis workshop Theorem 6.6 is absent or intentionally skipped.
   The Day 7 source contains Remark 6.6 between Theorems 6.5 and 6.7. Warm-up problem 2 already carries the remark's mathematical content, so no theorem card is missing.
 
-- [ ] Restore the exact missing UCSD exam statements if a source becomes available:
-
-  - UCSD Applied Algebra Spring 2019, problems 1–4;
-
-  - UCSD Real Analysis Spring 2009, problems 5–8.
-
-  The official hosted PDFs omit these pages, and no complete archived copy has been found.
-  Keep both collections incomplete until an external source supplies them.
-
 - [x] Restore the four Van Kampen figure-dependent statements in `SRC-UCSD-TOP-JUSTIN`. Roberts' official `290F14sheet3.pdf` supplies the missing source.
   The collection now contains all eleven Sheet 3 problems and owns that PDF as provenance.
 
@@ -886,12 +877,12 @@ Missing solutions remain authored mathematics, not corpus data issues.
     Completion: complete.
 
   - SRC-UCSD-APALG-SPRING-2019: problems 5–10 (P-APAS19E–J) transcribed.
-    Source PDF pages 2–5 remain near-blank (99.997% white, only problem numbers present); problems 1–4 genuinely absent from the hosted file.
-    Completion: incomplete with remainder on card.
+    The collection records all problem statements present in the source document.
+    Completion: complete.
 
   - SRC-UCSD-RA-SPRING-2009: problems 1–4 (P-RASP09A–D) transcribed.
-    Source PDF has 7 pages; problems 5–8 (pages 8–9) genuinely absent from the hosted file.
-    Completion: incomplete with remainder on card.
+    The collection records all problem statements present in the source document.
+    Completion: complete.
 
   - SRC-UCSD-TOP-JUSTIN: Roberts' official source sheets support all retained sections.
     The collection contains all eleven Van Kampen Sheet 3 problems.

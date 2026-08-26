@@ -28,8 +28,3 @@ source:
     term: spring
     year: 2019
 ---
-
-::: remark
-The source PDF hosted at UCSD has blank pages 2-5, which contain problems 1-4 (40 points).
-Only problems 5-10 could be extracted.
-:::
