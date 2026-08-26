@@ -50,47 +50,47 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-CA-ART-E3SXDB/index.md`](corpus/collections/SRC-CA-ART-E3SXDB/index.md) — audit commit: 0c5e452b3 (verified: 7 cards, 7 in index, provenance empty—homework set, no external source)
 
-- [ ] [`corpus/collections/SRC-CA-ART-T34TG3/index.md`](corpus/collections/SRC-CA-ART-T34TG3/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-CA-ART-T34TG3/index.md`](corpus/collections/SRC-CA-ART-T34TG3/index.md) — audit commit: 33c7263 (verified: 23 cards, 23 in index, provenance empty—homework set, no external source)
 
-- [ ] [`corpus/collections/SRC-EMORY-CA-ARANGO/index.md`](corpus/collections/SRC-EMORY-CA-ARANGO/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-EMORY-CA-ARANGO/index.md`](corpus/collections/SRC-EMORY-CA-ARANGO/index.md) — audit commit: d194f8f (verified: 69 cards, 69 in index, provenance PDF present)
 
 - [x] [`corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md`](corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md) — audit commit: 012194c91 (verified: 41+ sittings, all problems present; added p.44 Spring 2005, p.51 undated RA; concurrent session handled pp.45-47)
 
-- [ ] [`corpus/collections/SRC-NUS-CA-1970-SPRING/index.md`](corpus/collections/SRC-NUS-CA-1970-SPRING/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-NUS-CA-1970-SPRING/index.md`](corpus/collections/SRC-NUS-CA-1970-SPRING/index.md) — audit commit: 1797e90 (verified: 8 cards, 8 in index, provenance empty—1970 NUS exam, no source PDF)
 
-- [ ] [`corpus/collections/SRC-NUS-RA-1970-SPRING/index.md`](corpus/collections/SRC-NUS-RA-1970-SPRING/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-NUS-RA-1970-SPRING/index.md`](corpus/collections/SRC-NUS-RA-1970-SPRING/index.md) — audit commit: 691c02a (verified: 12 cards, 12 in index, provenance empty—1970 NUS exam, no source PDF)
 
-- [ ] [`corpus/collections/SRC-PRELIM-ART-A2355I/index.md`](corpus/collections/SRC-PRELIM-ART-A2355I/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-PRELIM-ART-A2355I/index.md`](corpus/collections/SRC-PRELIM-ART-A2355I/index.md) — audit commit: 35bd214cd (verified: 2 cards, 2 in index, provenance empty—UGA undated prelim)
 
-- [ ] [`corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/index.md`](corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/index.md`](corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/index.md) — audit commit: 271357154 (verified: 61 cards, 61 in index, provenance empty—drill sheet, no source)
 
-- [ ] [`corpus/collections/SRC-RA-WORKSHOP/index.md`](corpus/collections/SRC-RA-WORKSHOP/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-RA-WORKSHOP/index.md`](corpus/collections/SRC-RA-WORKSHOP/index.md) — audit commit: da4ae97 (verified: 95 cards, 95 in index, 7 provenance PDFs present; Days 1/9/10 reference separate collections)
 
-- [ ] [`corpus/collections/SRC-TAMU-RA-FALL-2014/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2014/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TAMU-RA-FALL-2014/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2014/index.md) — audit commit: adb775b (verified: 10 cards, 10 in index, provenance URL present)
 
-- [ ] [`corpus/collections/SRC-TAMU-RA-FALL-2015/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TAMU-RA-FALL-2015/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2015/index.md) — audit commit: b16d06b (verified: 10 cards, 10 in index, provenance URL present)
 
-- [ ] [`corpus/collections/SRC-TAMU-RA-FALL-2016/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TAMU-RA-FALL-2016/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2016/index.md) — audit commit: c94467b (verified: 10 cards, 10 in index, provenance URL present)
 
-- [ ] [`corpus/collections/SRC-TAMU-RA-SPRING-2015/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2015/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TAMU-RA-SPRING-2015/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2015/index.md) — audit commit: e9d5f6a (mismatch: 8 on disk, 10 in index; P-8RA17 and P-8XT86 are misassigned)
 
-- [ ] [`corpus/collections/SRC-TAMU-RA-SPRING-2016/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2016/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TAMU-RA-SPRING-2016/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2016/index.md) — audit commit: 32310502f (verified: 10 cards, 10 in index, provenance URL present)
 
-- [ ] [`corpus/collections/SRC-TAMU-RA-SPRING-2017/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2017/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TAMU-RA-SPRING-2017/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2017/index.md) — audit commit: e61840f79 (verified: 11 cards, 11 in index, provenance URL present)
 
-- [ ] [`corpus/collections/SRC-TEXT-DF04/index.md`](corpus/collections/SRC-TEXT-DF04/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TEXT-DF04/index.md`](corpus/collections/SRC-TEXT-DF04/index.md) — audit commit: b12a1a1 (verified: 1 card, 1 in index, provenance URL present)
 
-- [ ] [`corpus/collections/SRC-TEXT-HAT02/index.md`](corpus/collections/SRC-TEXT-HAT02/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TEXT-HAT02/index.md`](corpus/collections/SRC-TEXT-HAT02/index.md) — audit commit: b12a1a1 (verified: 0 cards, metadata-only reference, provenance URL present)
 
-- [ ] [`corpus/collections/SRC-TEXT-HK71/index.md`](corpus/collections/SRC-TEXT-HK71/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TEXT-HK71/index.md`](corpus/collections/SRC-TEXT-HK71/index.md) — audit commit: b12a1a1 (verified: 0 cards, metadata-only reference, provenance URLs present)
 
-- [ ] [`corpus/collections/SRC-TEXT-HUN74/index.md`](corpus/collections/SRC-TEXT-HUN74/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TEXT-HUN74/index.md`](corpus/collections/SRC-TEXT-HUN74/index.md) — audit commit: b12a1a1 (verified: 67 cards, 67 in index, provenance DOI present)
 
-- [ ] [`corpus/collections/SRC-TEXT-MUN00/index.md`](corpus/collections/SRC-TEXT-MUN00/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TEXT-MUN00/index.md`](corpus/collections/SRC-TEXT-MUN00/index.md) — audit commit: b12a1a1 (verified: 0 cards, metadata-only reference, provenance ISBN present)
 
-- [ ] [`corpus/collections/SRC-TEXT-SMI/index.md`](corpus/collections/SRC-TEXT-SMI/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TEXT-SMI/index.md`](corpus/collections/SRC-TEXT-SMI/index.md) — audit commit: b12a1a1 (verified: 0 cards, metadata-only reference, provenance attachment present)
 
-- [ ] [`corpus/collections/SRC-TEXT-SS03/index.md`](corpus/collections/SRC-TEXT-SS03/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TEXT-SS03/index.md`](corpus/collections/SRC-TEXT-SS03/index.md) — audit commit: b12a1a1 (verified: 0 cards, metadata-only reference, provenance ISBN present)
 
 - [x] [`corpus/collections/SRC-TOP-2002Q1/index.md`](corpus/collections/SRC-TOP-2002Q1/index.md) — audit commit: a87b43e (9 source problems A1–A5, B1–B4, 9 cards, all match)
 
@@ -108,29 +108,29 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-TOP-2018Q2/index.md`](corpus/collections/SRC-TOP-2018Q2/index.md) — audit commit: 701e60348 (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2019Q1/index.md`](corpus/collections/SRC-TOP-2019Q1/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2019Q1/index.md`](corpus/collections/SRC-TOP-2019Q1/index.md) — audit commit: 70de685 (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2019Q2/index.md`](corpus/collections/SRC-TOP-2019Q2/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2019Q2/index.md`](corpus/collections/SRC-TOP-2019Q2/index.md) — audit commit: 02672cdff (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2020Q1/index.md`](corpus/collections/SRC-TOP-2020Q1/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-2020Q1/index.md` — audit commit: 9011bbd (verified: 8 cards, 8 in index, provenance PDF present)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2005Q2/index.md`](corpus/collections/SRC-TOP-UNL-2005Q2/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2005Q2/index.md` — audit commit: 9011bbd (verified: 8 cards, 8 in index, provenance PDF present)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2006Q1/index.md`](corpus/collections/SRC-TOP-UNL-2006Q1/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2006Q1/index.md` — audit commit: 9011bbd (mismatch: 8 on disk, 9 in index; P-T06Q1-4 lives in SRC-TOP-2019Q1)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2006Q2/index.md`](corpus/collections/SRC-TOP-UNL-2006Q2/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2006Q2/index.md` — audit commit: 9011bbd (mismatch: 9 on disk, 10 in index; P-T06Q2-1 lives in SRC-TOP-2017Q2)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2007Q2/index.md`](corpus/collections/SRC-TOP-UNL-2007Q2/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2007Q2/index.md` — audit commit: 9011bbd (verified: 8 cards, 8 in index, provenance PDF present)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2008Q2/index.md`](corpus/collections/SRC-TOP-UNL-2008Q2/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2008Q2/index.md` — audit commit: 9011bbd (mismatch: 7 on disk, 8 in index; P-T08A2 lives in SRC-TOP-2011Q2)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2009Q2/index.md`](corpus/collections/SRC-TOP-UNL-2009Q2/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2009Q2/index.md` — audit commit: 9011bbd (mismatch: 7 on disk, 8 in index; P-T09B2 lives in SRC-TOP-2019Q1)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2010Q2/index.md`](corpus/collections/SRC-TOP-UNL-2010Q2/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2010Q2/index.md` — audit commit: 9011bbd (verified: 8 cards, 8 in index, provenance PDF present)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2014Q2/index.md`](corpus/collections/SRC-TOP-UNL-2014Q2/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2014Q2/index.md` — audit commit: 9011bbd (verified: 8 cards, 8 in index, provenance PDF present)
 
-- [ ] [`corpus/collections/SRC-TOP-UNL-2016Q2/index.md`](corpus/collections/SRC-TOP-UNL-2016Q2/index.md) — audit commit:
+- [x] corpus/collections/SRC-TOP-UNL-2016Q2/index.md` — audit commit: 9011bbd (verified: 8 cards, 8 in index, provenance PDF present)
 
 - [ ] [`corpus/collections/SRC-TOP-UNL-2017Q1/index.md`](corpus/collections/SRC-TOP-UNL-2017Q1/index.md) — audit commit:
 
