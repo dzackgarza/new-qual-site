@@ -2,7 +2,8 @@
 
 ## Cohomology ring
 
-1. Glue two triangles together to make the torus $T = S ^ { 1 } \times S ^ { 1 }$ as shown below. Write down singular chains $p , a , b , t$ representing generators of its homology groups in dimensions 0,1,1,2. Now let $\alpha , \beta \in H ^ { 1 }$ be the Poincar´e duals of $[ a ] , [ b ] \in H _ { 1 }$ . Show directly from the definition in singular (co)homology that $\alpha \cup \beta$ is a generator of $H ^ { 2 }$ and that the cohomology ring of $T$ is an exterior algebra on two generators of degree 1.
+1. Glue two triangles together to make the torus $T = S ^ { 1 } \times S ^ { 1 }$ as shown below.
+   Write down singular chains $p , a , b , t$ representing generators of its homology groups in dimensions 0,1,1,2. Now let $\alpha , \beta \in H ^ { 1 }$ be the Poincar´e duals of $[ a ] , [ b ] \in H _ { 1 }$ . Show directly from the definition in singular (co)homology that $\alpha \cup \beta$ is a generator of $H ^ { 2 }$ and that the cohomology ring of $T$ is an exterior algebra on two generators of degree 1.
 
 <!-- image-->
 
@@ -12,7 +13,8 @@
 
 4. Show that $S ^ { 1 } \times S ^ { 1 }$ and $S ^ { 1 } \vee S ^ { 1 } \vee S ^ { 2 }$ are not homotopy-equivalent.
 
-5. Let ΣX be the suspension of a space X, and let U, V be the open sets obtained as the complements of the two suspension points. Show that $H ^ { * } ( \Sigma X , U ) \cong \tilde { H } ^ { * } ( \Sigma X )$ . By considering the cup product $H ^ { * } ( \Sigma X , U ) \times H ^ { * } ( \Sigma X , V ) \to H ^ { * } ( X , U \cup V )$ , deduce that the cup product of any two cohomology classes of positive degree on ΣX is zero.
+5. Let ΣX be the suspension of a space X, and let U, V be the open sets obtained as the complements of the two suspension points.
+   Show that $H ^ { * } ( \Sigma X , U ) \cong \tilde { H } ^ { * } ( \Sigma X )$ . By considering the cup product $H ^ { * } ( \Sigma X , U ) \times H ^ { * } ( \Sigma X , V ) \to H ^ { * } ( X , U \cup V )$ , deduce that the cup product of any two cohomology classes of positive degree on ΣX is zero.
 
 6. Suppose X is a space with a cover by contractible open sets $U _ { 1 } , \dots U _ { n }$ . Show that the cup product of any n elements of $H ^ { > 0 } ( X )$ is zero, and hence that projective n-spaces cannot be covered by fewer than $n + 1$ contractible open sets.
 
@@ -22,7 +24,8 @@ $$
 H ^ { * } ( T ^ { n } ; \mathbb { Z } ) = \Lambda ^ { * } [ \alpha _ { 1 } , \dots , \alpha _ { n } ] .
 $$
 
-(Recall: this is the free associative (but non-commutative) algebra in the $\alpha _ { i } \mathrm { s }$ , with relations $\alpha _ { i } \alpha _ { j } =$ $- \alpha _ { j } \alpha _ { i }$ . We write $\wedge$ for the product in this algebra. The dimension of $H ^ { k }$ is then $\binom { n } { k }$ with basis $\{ \alpha _ { i _ { 1 } } \wedge \alpha _ { i _ { 2 } } \wedge \cdot \cdot \cdot \wedge \alpha _ { i _ { k } } : i _ { 1 } < i _ { 2 } < \cdot \cdot \cdot < i _ { k } \} . )$
+(Recall: this is the free associative (but non-commutative) algebra in the $\alpha _ { i } \mathrm { s }$ , with relations $\alpha _ { i } \alpha _ { j } =$ $- \alpha _ { j } \alpha _ { i }$ . We write $\wedge$ for the product in this algebra.
+The dimension of $H ^ { k }$ is then $\binom { n } { k }$ with basis $\{ \alpha _ { i _ { 1 } } \wedge \alpha _ { i _ { 2 } } \wedge \cdot \cdot \cdot \wedge \alpha _ { i _ { k } } : i _ { 1 } < i _ { 2 } < \cdot \cdot \cdot < i _ { k } \} . )$
 
 8. Assume the fact that $H ^ { * } ( \mathbb { C } P ^ { n } ; \mathbb { Z } ) = \mathbb { Z } [ \alpha ] / ( \alpha ^ { n + 1 } )$ , where α has degree 2, and $H ^ { * } ( \mathbb { R } P ^ { n } ; \mathbb { Z } _ { 2 } ) =$ $\mathbb { Z } _ { 2 } [ \beta ] / ( \beta ^ { n + 1 } )$ , where $\beta$ has degree 1. (These are “truncated polynomial rings”.) Show that if $k < n$ there is no retraction from $\mathbb { C } P ^ { n }$ to its standard submanifold $\mathbb { C } P ^ { k }$ , and similarly for $\mathbb { R } P ^ { n }$
 
@@ -30,7 +33,8 @@ $$
 
 9. Show that (working with cellular chain complexes) $H _ { c } ^ { * } ( X \times \mathbb { R } ) \cong H _ { c } ^ { * - 1 } ( X )$ for any space X. This is the analogue for compactly-supported cohomology of the suspension isomorphism ${ \tilde { H } } ^ { * } ( \Sigma X ) \cong$ $\tilde { H } ^ { * - 1 } ( X )$
 
-10. Show that direct limit is an exact functor: that is, if $\{ 0  A _ { \alpha }  B _ { \alpha }  C _ { \alpha }  0 \} _ { \alpha \in I }$ is a directed system of short exact sequences of modules, then the corresponding sequence of direct limits is also exact. Use this to prove the corresponding result for long exact sequences.
+10. Show that direct limit is an exact functor: that is, if $\{ 0  A _ { \alpha }  B _ { \alpha }  C _ { \alpha }  0 \} _ { \alpha \in I }$ is a directed system of short exact sequences of modules, then the corresponding sequence of direct limits is also exact.
+    Use this to prove the corresponding result for long exact sequences.
 
 11. If $\{ C _ { * } ^ { \alpha } \} _ { \alpha \in I }$ is a directed system of chain complexes show that “taking homology commutes with direct limits”: that is, for any n,
 

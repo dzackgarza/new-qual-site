@@ -98,18 +98,20 @@ source:
   - P-AMD-7NJ4YRS5
   - P-AMD-JXFYCMO7
   - P-AMD-HWZNNEDG
+  - P-UCTOP290-S12-1
+  - P-UCTOP290-S12-2
+  - P-UCTOP290-S12-3
+  - P-UCTOP290-S12-4
+  - P-UCTOP290-S12-5
+  - P-UCTOP290-S12-6
+  - P-UCTOP290-S12-7
+  - P-UCTOP290-S12-8
+  - P-UCTOP290-S12-9
+  - P-UCTOP290-S12-10
+  - P-UCTOP290-S12-11
+  - P-UCTOP290-S12-12
   date:
     kind: unknown
   area: topology
 ---
 
-::: remark
-The compilation is the maintainer's own typed problem sheet (dated May 29, 2020) transcribing the UCSD Math 290 course problem sheets of Justin Roberts.
-Its section headings cite Sheets 7 through 12 of that sequence; those five sheets are vendored under `assets/attachments/` and listed as the provenance for the sections they cover.
-The typed sheet's other sections (Homotopy, Fundamental Group, Group Actions, Applications, Van Kampen's Theorem, Degree) cite no source, and their external oracle is not yet identified.
-
-Three gaps remain against the original sheets.
-First, the typed sheet's final section, Cohomology Ring (Sheet 12), was never transcribed — it reads "Todo" — while Sheet 12 itself carries eight problems.
-Second, the three cellular-homology identification-space problems reference figures that are present in the vendored Sheet 8.
-Third, four Van Kampen entries are picture-only ("Images") and their source is among the unidentified material.
-:::

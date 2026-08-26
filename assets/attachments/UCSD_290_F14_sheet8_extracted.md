@@ -36,6 +36,8 @@ Describe a CW complex structure for $L ( p , 1 )$ , and use this to compute its 
 
 10. Let p be a polynomial of algebraic degree n. Viewed as a continuous self-map of the Riemann sphere $S ^ { 2 } = \mathbb { C } \cup \{ \infty \}$ (sending infinity to infinity), what is its topological degree?
 
-11. Consider the rational function $\begin{array} { r } { p ( z ) = \frac { ( z - a _ { 1 } ) ( z - a _ { 2 } ) \cdots ( z - a _ { n } ) } { ( z - b _ { 1 } ) ( z - b _ { 2 } ) \cdots ( z - b _ { m } ) } } \end{array}$ , where all the $a _ { i }$ and $b _ { j }$ are distinct from one another, as a function from the Riemann sphere to itself. What is its topological degree?
+11. Consider the rational function $\begin{array} { r } { p ( z ) = \frac { ( z - a _ { 1 } ) ( z - a _ { 2 } ) \cdots ( z - a _ { n } ) } { ( z - b _ { 1 } ) ( z - b _ { 2 } ) \cdots ( z - b _ { m } ) } } \end{array}$ , where all the $a _ { i }$ and $b _ { j }$ are distinct from one another, as a function from the Riemann sphere to itself.
+    What is its topological degree?
 
-12. Let $f$ be a map $S ^ { m } \to S ^ { n }$ for which there exists some open set U such that $f | _ { U }$ is a homeomorphism to its image. Show that $m = n$ and f is surjective.
+12. Let $f$ be a map $S ^ { m } \to S ^ { n }$ for which there exists some open set U such that $f | _ { U }$ is a homeomorphism to its image.
+    Show that $m = n$ and f is surjective.

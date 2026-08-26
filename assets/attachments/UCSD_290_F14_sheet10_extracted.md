@@ -14,7 +14,8 @@
 
 (b). Compute Ext(Z ⊕ $\mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 3 } , \mathbb { Z } \oplus \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 5 } )$
 
-3. Recall the calculation of the integer homology of $\mathbb { R } P ^ { n }$ by means of a cellular chain complex. Compute the following homology groups directly from the chain complex (and check them by means of the universal coefficient theorem).
+3. Recall the calculation of the integer homology of $\mathbb { R } P ^ { n }$ by means of a cellular chain complex.
+   Compute the following homology groups directly from the chain complex (and check them by means of the universal coefficient theorem).
 
 (a). $H _ { * } ( \mathbb { R } P ^ { n } ; \mathbb { Z } _ { 2 } )$
 
@@ -30,7 +31,8 @@ $$
 H _ { * } ( X ; \mathbb { Q } ) = H _ { * } ( X ; \mathbb { Z } ) \otimes \mathbb { Q } \qquad H ^ { * } ( X ; \mathbb { Z } ) = \operatorname { H o m } ( H _ { * } ( X ; \mathbb { Z } ) , \mathbb { Q } ) .
 $$
 
-6. Explain how to construct a space X having homology groups $H _ { i } ( X ; \mathbb { Z } )$ given by $\mathbb { Z } , \mathbb { Z } _ { 6 } , \mathbb { Z } _ { 1 2 } , \mathbb { Z } \oplus \mathbb { Z } _ { 4 }$ in dimensions $i = 0 \dots 3$ , and zero otherwise. Compute its cohomology groups $H ^ { * } ( X ; \mathbb { Z } )$
+6. Explain how to construct a space X having homology groups $H _ { i } ( X ; \mathbb { Z } )$ given by $\mathbb { Z } , \mathbb { Z } _ { 6 } , \mathbb { Z } _ { 1 2 } , \mathbb { Z } \oplus \mathbb { Z } _ { 4 }$ in dimensions $i = 0 \dots 3$ , and zero otherwise.
+   Compute its cohomology groups $H ^ { * } ( X ; \mathbb { Z } )$
 
 7. Compute the homology $H _ { * } ( \mathbb { R } P ^ { 2 } \times \mathbb { R } P ^ { 2 } ; \mathbb { Z } _ { 2 } )$
 
@@ -38,4 +40,5 @@ $$
 
 9. Compute the integral homology $H _ { * } ( \mathbb { R } P ^ { 2 } \times \mathbb { R } P ^ { 3 } ; \mathbb { Z } )$
 
-10. Show that if G is a topological group, then $H _ { * } ( G )$ has a natural (possibly non-commutative) algebra structure. Show also that there is a natural action of G on $H _ { * } ( G )$ , but that this action factors through the homomorphism $G \to \pi _ { 0 } ( G )$ , so that it’s trivial if G is path-connected.
+10. Show that if G is a topological group, then $H _ { * } ( G )$ has a natural (possibly non-commutative) algebra structure.
+    Show also that there is a natural action of G on $H _ { * } ( G )$ , but that this action factors through the homomorphism $G \to \pi _ { 0 } ( G )$ , so that it’s trivial if G is path-connected.
