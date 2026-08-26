@@ -811,7 +811,8 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [x] Read each remaining Topology exam collection with an empty problem list.
 
-  Disposition 2026-08-26: measured across all 366 collection cards — zero collections carry an empty `source.problems` list or an empty section list; every collection lists at least one problem. The four items are vacuously complete.
+  Disposition 2026-08-26: measured across all 366 collection cards — zero collections carry an empty `source.problems` list or an empty section list; every collection lists at least one problem.
+  The four items are vacuously complete.
 
 - [ ] Add problems in source order, one collection and one card at a time.
 
@@ -819,7 +820,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Finish partial extractions
 
-- [ ] Read the JHU analysis packet and disposition every section.
+- [x] Read the JHU analysis packet and disposition every section. Disposition 2026-08-26: all 41 exam sittings section-listed; the three untitled exams on pp. 45–47 (7+7+6 problems) carded as P-JHU4547A/B/C, two of exam C's problems shared verbatim with the p. 57 sitting; collection completion: complete; ledger row added. Statement-level independent reread remains with the issue-9 reread item.
 
 - [ ] Read the UCSD topology compilation and disposition every section.
 

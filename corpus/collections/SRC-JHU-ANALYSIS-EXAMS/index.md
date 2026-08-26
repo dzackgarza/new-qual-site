@@ -4,7 +4,7 @@ classification:
   - real-analysis
   - complex-analysis
   topics: []
-completion: incomplete
+completion: complete
 id: SRC-JHU-ANALYSIS-EXAMS
 kind: collection
 provenance:
