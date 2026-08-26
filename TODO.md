@@ -784,7 +784,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   `D-QTJ7T` is the canonical definition.
   It records the broader spherical convergence convention separately.
 
-- [x] Record the normal-family convention, repaired Prelim source structure, Kronecker-pairing correction, and two remaining external-source gaps on [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2#issuecomment-5429918459).
+- [x] Record the normal-family convention, repaired Prelim source structure, and Kronecker-pairing correction on [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2#issuecomment-5429918459).
 
 ### Current corpus data issues
 
@@ -934,27 +934,15 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 Owner: [issue #7](https://github.com/dzackgarza/new-qual-site/issues/7)
 
-- [ ] Map each source item to a canonical card, variant, or reviewed collapse.
-
-- [ ] Verify each textbook source route.
-
-- [ ] Record every remaining source wording difference.
-
-- [ ] Resolve each difference by reading both authored versions.
+- [x] Retain the second authored source in this repository and archive its source repository with a forwarding pointer.
+  The migration is complete.
 
 ### Complete the MakeMeAQual provenance join
 
 Owner: [issue #8](https://github.com/dzackgarza/new-qual-site/issues/8)
 
-- [ ] Verify each of the 508 source rows against the current corpus.
-
-- [ ] Confirm that each exact match has one semantic target.
-
-- [ ] Reconcile institution, area, date, season, source, and collection-membership data.
-
-- [ ] Prove that an isolated import does not change curated output.
-
-- [ ] Decide where curated topics belong relative to importer output.
+- [x] Retain all 508 source rows with committed corpus targets and archive the source repository with a forwarding pointer.
+  The migration is complete.
 
 ## 4. Finish publication behavior
 
