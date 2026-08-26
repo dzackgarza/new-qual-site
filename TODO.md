@@ -820,7 +820,9 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Finish partial extractions
 
-- [x] Read the JHU analysis packet and disposition every section. Disposition 2026-08-26: all 41 exam sittings section-listed; the three untitled exams on pp. 45–47 (7+7+6 problems) carded as P-JHU4547A/B/C, two of exam C's problems shared verbatim with the p. 57 sitting; collection completion: complete; ledger row added. Statement-level independent reread remains with the issue-9 reread item.
+- [x] Read the JHU analysis packet and disposition every section.
+  Disposition 2026-08-26: all 41 exam sittings section-listed; the three untitled exams on pp. 45–47 (7+7+6 problems) carded as P-JHU4547A/B/C, two of exam C's problems shared verbatim with the p. 57 sitting; collection completion: complete; ledger row added.
+  Statement-level independent reread remains with the issue-9 reread item.
 
 - [ ] Read the UCSD topology compilation and disposition every section.
 
