@@ -19,6 +19,5 @@ Let $\{c_n\}$ be a sequence of positive real numbers, and let $f_n : \mathbb{R} 
 f_n(x) = \sin(x + c_n^2) + \frac{1}{c_n} \sin(c_n x).
 \]
 
-
 Prove that the sequence $\{f_n\}$ has a subsequence converging pointwise to a continuous function.
 :::

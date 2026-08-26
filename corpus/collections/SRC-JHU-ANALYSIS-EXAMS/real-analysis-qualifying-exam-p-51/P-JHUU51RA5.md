@@ -18,5 +18,4 @@ Let $(X, \mathcal{M}, \mu)$ be a measure space, and let $f \in L^{1}(\mu) \cap L
 \[
 \lim_{p \to \infty} \|f\|_p = \|f\|_{\infty}.
 \]
-
 :::
