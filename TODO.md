@@ -158,7 +158,7 @@ State the evidence in an empty audit commit.
 
 - [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2007/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2007/index.md) — audit commit:
 
-- [x] [`corpus/collections/SRC-UCSD-ALG-FALL-2008/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2008/index.md) — audit commit: b129faea3
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2008/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2008/index.md) — audit commit:
 
 - [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md) — audit commit:
 
@@ -264,7 +264,7 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2007/index.md) — audit commit: f8b77c6bf
 
-- [x] [`corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md) — audit commit: b129faea3
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md) — audit commit:
 
 - [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md) — audit commit:
 
@@ -800,7 +800,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [x] Finish Applied Algebra Spring 2007. Disposition 2026-08-26: all nine problems transcribed in source order; scan is poor and two passages are illegible (problem 2's explicit matrix B, problem 5's S6xS3-module labels), so the collection is completion: incomplete with the exact remainder stated on the card.
 
-- [x] Finish Applied Algebra Spring 2008. Disposition 2026-08-26: the paper is also appended to the Fall 2008 algebra PDF (department reuse); all 13 problems carded in source order. Garnir tableau (R.4) and ST.3 identity right-hand side are illegible in both scans; collection marked completion: incomplete with remainder stated.
+- [ ] Finish Applied Algebra Spring 2008.
 
 - [ ] Read each remaining Algebra exam collection with an empty problem list.
 

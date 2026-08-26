@@ -36,7 +36,6 @@ source:
     year: 2008
 ---
 
-
 ::: remark
 All thirteen problems of the exam are transcribed, but two passages are illegible in both available scans (this file and the copy appended to the Fall 2008 algebra paper): the Garnir tableau in problem R.4 and the right-hand side of the identity in problem ST.3. Both cards state the illegibility; the exam's printed data is not recoverable from the scans.
 :::

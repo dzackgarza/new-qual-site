@@ -33,7 +33,5 @@ source:
 ---
 
 ::: remark
-All nine problems of the exam are transcribed, but the source scan is poor and two passages are illegible: the explicit $3\times 3$ matrix $B$ printed in problem 2, and the labels of the $S_6\times S_3$-module printed in problem 5.
-Both cards state the illegibility and record the scan's best reading; the exam's printed data is not recoverable from the scan.
+All nine problems of the exam are transcribed, but the source scan is poor and two passages are illegible: the explicit $3\times 3$ matrix $B$ printed in problem 2, and the labels of the $S_6\times S_3$-module printed in problem 5. Both cards state the illegibility and record the scan's best reading; the exam's printed data is not recoverable from the scan.
 :::
-

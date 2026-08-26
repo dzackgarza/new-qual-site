@@ -48,7 +48,7 @@ source:
     year: 2008
 ---
 
-
 ::: remark
-All 21 problems of the compilation are transcribed (8 algebra, 13 applied algebra; the applied paper is the same document as the standalone Spring 2008 applied-algebra file). Two passages of the applied paper are illegible in both available scans: the Garnir tableau in problem R.4 and the right-hand side of the identity in problem ST.3. Both cards state the illegibility; the exam's printed data is not recoverable from the scans.
+All 21 problems of the compilation are transcribed (8 algebra, 13 applied algebra; the applied paper is the same document as the standalone Spring 2008 applied-algebra file).
+Two passages of the applied paper are illegible in both available scans: the Garnir tableau in problem R.4 and the right-hand side of the identity in problem ST.3. Both cards state the illegibility; the exam's printed data is not recoverable from the scans.
 :::
