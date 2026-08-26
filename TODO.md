@@ -850,7 +850,10 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 - [x] Give `F08phdtop` a second read and settle its date label.
 
-- [x] Disposition the 19 image-only Anki answers. Disposition 2026-08-26: the retained material carries 30 figure-answer placeholders (24 distinct native cards + 6 compiled-deck mirrors; HANDOFF's count of 19 predates the full inventory). The figures lived in the original Anki media, which was not retained; the .apkg packages are ankdown builds with no media, so the figures are unrecoverable from retained material. Per-card enumeration and disposition recorded in `sources/flashcard-import-ledger.jsonl` (blocked-media-lost row): recovery requires either the owner's original `collection.media` or mathematical re-authoring of each figure; decks are study material, not published site content, so no publication hold applies.
+- [x] Disposition the 19 image-only Anki answers.
+  Disposition 2026-08-26: the retained material carries 30 figure-answer placeholders (24 distinct native cards + 6 compiled-deck mirrors; HANDOFF's count of 19 predates the full inventory).
+  The figures lived in the original Anki media, which was not retained; the .apkg packages are ankdown builds with no media, so the figures are unrecoverable from retained material.
+  Per-card enumeration and disposition recorded in `sources/flashcard-import-ledger.jsonl` (blocked-media-lost row): recovery requires either the owner's original `collection.media` or mathematical re-authoring of each figure; decks are study material, not published site content, so no publication hold applies.
 
 ### Resolve duplicate-body candidates
 
