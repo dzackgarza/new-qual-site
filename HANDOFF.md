@@ -306,7 +306,7 @@ Issue #9 remains open for these required facts:
 
 - `F08phdtop` has a second read and a settled date label;
 
-- the 19 image-only Anki answers have a recorded disposition.
+- the 30 image-only Anki answer placeholders have a recorded disposition.
 
 ### 5.5 Reader and generator: issues #10 and #41
 
