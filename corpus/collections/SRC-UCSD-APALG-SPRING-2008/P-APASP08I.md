@@ -1,0 +1,23 @@
+---
+schema: qual/card@1
+id: P-APASP08I
+kind: problem
+title: "Schur function expansion via Littlewood-Richardson rule"
+classification:
+  areas:
+  - applied-algebra
+  topics:
+  - Symmetric Functions
+  - Representation Theory
+  - Littlewood-Richardson Rule
+relations: []
+review: draft
+---
+
+::: problem
+Compute the Schur function expansion of $s_{2,2} \times s_{2,1}$ by constructing the standard tableaux yielded by the Littlewood-Richardson rule.
+
+**(a)** Check your result by means of the SF package.
+
+**(b)** Give a representation-theoretic interpretation of the coefficients in this expansion.
+:::
