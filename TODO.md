@@ -792,23 +792,26 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   Updated index.md to list all 16 cards in the Worksheet 1 and Worksheet 5 sections.
   Collection validates under `just check`.
 
-- [ ] Reconcile `assets/attachments/8000e.pdf` as one collection.
-  `SRC-ALG-ART-HEACCB`, `SRC-ALG-ART-QHGA3N`, and `SRC-TEXT-SMI` currently share this provenance href.
-  One source document must own one collection, with the course notes, midterm, and final represented as sections.
+- [x] Reconcile `assets/attachments/8000e.pdf` as one collection.
+  `SRC-TEXT-SMI` owns the Math 8000 course packet as a compilation, including its Fall 2006 midterm and final sections.
+  The unrelated Fall 2019 midterm and final collections no longer claim this packet as provenance.
 
-- [ ] Determine whether Real Analysis workshop Theorem 6.6 is absent or intentionally skipped.
-  The current sequence contains `T-RA-WORKSHOP-D7-6-1` through `T-RA-WORKSHOP-D7-6-5`, then `T-RA-WORKSHOP-D7-6-7`. Settle the gap from the Day 7 workshop source.
+- [x] Determine whether Real Analysis workshop Theorem 6.6 is absent or intentionally skipped.
+  The Day 7 source contains Remark 6.6 between Theorems 6.5 and 6.7.
+  Warm-up problem 2 already carries the remark's mathematical content, so no theorem card is missing.
 
-- [ ] Restore the exact missing statements if a source becomes available:
+- [ ] Restore the exact missing UCSD exam statements if a source becomes available:
 
   - UCSD Applied Algebra Spring 2019, problems 1–4;
 
-  - UCSD Real Analysis Spring 2009, problems 5–8;
+  - UCSD Real Analysis Spring 2009, problems 5–8.
 
-  - four Van Kampen image statements from `SRC-UCSD-TOP-JUSTIN`.
+  The official hosted PDFs omit these pages, and no complete archived copy has been found.
+  Keep both collections incomplete until an external source supplies them.
 
-  The retained sources do not contain these statements.
-  Keep the affected collections incomplete until an external source supplies them.
+- [x] Restore the four Van Kampen figure-dependent statements in `SRC-UCSD-TOP-JUSTIN`.
+  Roberts' official `290F14sheet3.pdf` supplies the missing source.
+  The collection now contains all eleven Sheet 3 problems and owns that PDF as provenance.
 
 - [x] Re-run the orphan and duplicate audits after `SRC-TOP-WORKSHOP-2020` validates.
   Disposition 2026-08-27: SRC-TOP-WORKSHOP-2020 now validates (16 cards added for Worksheet 1 and Worksheet 5). BACKLOG regenerated: corpus-validation now shows only the pre-existing 119 `unknown area` errors in SRC-EMORY-QUAL-PROBLEMS, SRC-HARVARD-COMPLEX-ORAL, and SRC-MATH8100-ASSIGNMENT-* (using 'complex analysis' / 'real analysis' instead of 'complex-analysis' / 'real-analysis'). These block the full audit (`qualc.audit`) from running beyond the qualc-check gate.
