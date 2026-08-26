@@ -38,7 +38,7 @@ State the evidence in an empty audit commit.
 
 - [ ] [`corpus/collections/SRC-ALG-ART-HEACCB/index.md`](corpus/collections/SRC-ALG-ART-HEACCB/index.md) — audit commit:
 
-- [ ] [`corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md`](corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md`](corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md) — audit commit: 012194c91 (verified: 3-page handwritten sheet, 2/3 problems transcribed; third not yet transcribed)
 
 - [ ] [`corpus/collections/SRC-ALG-ART-QHGA3N/index.md`](corpus/collections/SRC-ALG-ART-QHGA3N/index.md) — audit commit:
 
@@ -54,7 +54,7 @@ State the evidence in an empty audit commit.
 
 - [ ] [`corpus/collections/SRC-EMORY-CA-ARANGO/index.md`](corpus/collections/SRC-EMORY-CA-ARANGO/index.md) — audit commit:
 
-- [ ] [`corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md`](corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md`](corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md) — audit commit: 012194c91 (verified: 41+ sittings, all problems present; added p.44 Spring 2005, p.51 undated RA; concurrent session handled pp.45-47)
 
 - [ ] [`corpus/collections/SRC-NUS-CA-1970-SPRING/index.md`](corpus/collections/SRC-NUS-CA-1970-SPRING/index.md) — audit commit:
 
