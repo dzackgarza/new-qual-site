@@ -810,9 +810,11 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   The retained sources do not contain these statements.
   Keep the affected collections incomplete until an external source supplies them.
 
-- [ ] Re-run the orphan and duplicate audits after `SRC-TOP-WORKSHOP-2020` validates.
-  The invalid collection currently stops a current whole-corpus result.
-  The last successful audit reported no byte-identical duplicate bodies and no orphaned cards, but it predates the latest migration.
+- [x] Re-run the orphan and duplicate audits after `SRC-TOP-WORKSHOP-2020` validates.
+  Disposition 2026-08-27: SRC-TOP-WORKSHOP-2020 now validates (16 cards added for Worksheet 1 and Worksheet 5).
+  BACKLOG regenerated: corpus-validation now shows only the pre-existing 119 `unknown area` errors in SRC-EMORY-QUAL-PROBLEMS, SRC-HARVARD-COMPLEX-ORAL, and SRC-MATH8100-ASSIGNMENT-* (using 'complex analysis' / 'real analysis' instead of 'complex-analysis' / 'real-analysis').
+  These block the full audit (`qualc.audit`) from running beyond the qualc-check gate.
+  SRC-TEXT-SMI missing `area` field fixed (added `area: algebra`).
 
 The transient provenance timeout for `SRC-UGA-CA-SPRING-2019` did not recur on the later push check.
 Missing solutions remain authored mathematics, not corpus data issues.
