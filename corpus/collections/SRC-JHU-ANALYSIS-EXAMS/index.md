@@ -366,6 +366,14 @@ source:
     - P-JHUFA02CAI
     - P-JHUFA02CAJ
     - P-JHUFA02CAK
+  - name: Real Analysis Qualifying Exam (p. 51)
+    problems:
+    - P-JHUU51RA1
+    - P-JHUU51RA2
+    - P-JHUU51RA3
+    - P-JHUU51RA4
+    - P-JHUU51RA5
+    - P-JHUU51RA6
   - name: Complex Analysis Core Qualifying Exam, Spring 2002 (p. 52)
     problems:
     - P-JHUSP02CAA
