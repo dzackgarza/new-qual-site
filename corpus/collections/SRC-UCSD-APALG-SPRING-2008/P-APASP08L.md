@@ -14,11 +14,12 @@ review: draft
 ---
 
 ::: problem
-Use Gröbner bases to find all solutions of a stated system of polynomial equations in $x$, $y$, $z$.
-
-The system as printed is not established from the available data.
-:::
-
-::: remark
-Three polynomial equations in $x$, $y$, $z$ are present, but their exact form is not established from the available data.
+Use Gröbner bases to find all solutions of the system
+$$
+\begin{cases}
+-x^2 + y + z = 0, \\
+x - y^2 + z = 0, \\
+x + y - z^2 = 0.
+\end{cases}
+$$
 :::

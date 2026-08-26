@@ -15,9 +15,13 @@ review: draft
 ---
 
 ::: problem
-Give the expansion of the Garnir polynomial $\vec{G}_{\mathcal{T}}\{x\}$ corresponding to a tableau $T$ of shape $(3, 2, 1)$ in terms of the Garnir polynomials of the standard tableaux of the same shape.
-:::
-
-::: remark
-The shape $(3,2,1)$ is established from the context; the specific entry placement determines the Garnir polynomial and must be verified against the source document.
+Give the expansion of the Garnir polynomial $G_T(x)$ corresponding to the tableau
+$$
+T = \begin{array}{ccc}
+7 & & \\
+2 & 3 & 5 \\
+1 & 4 & 6
+\end{array}
+$$
+in terms of the Garnir polynomials of the standard tableaux of the same shape.
 :::

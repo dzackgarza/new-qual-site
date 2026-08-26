@@ -19,9 +19,9 @@ Let $\Gamma$ act on a family $\mathcal{F}$, and let $\chi$ be the character of t
 
 **(a)** Show that the multiplicity of the trivial representation in this representation is equal to the number of orbits of $\mathcal{F}$ under the action of $\Gamma$.
 
-**(b)** Show that the integer $\langle \chi, \chi \rangle$ counts the number of orbits in the action of $\Gamma$ on the family of unordered pairs
+**(b)** Show that the integer $\langle \chi, \chi \rangle$ counts the number of orbits in the action of $\Gamma$ on the family of ordered pairs
 $$
-\mathcal{F} \times \mathcal{F} = \bigl\{ \{f, g\} : f, g \in \mathcal{F} \bigr\}.
+\mathcal{F} \times \mathcal{F} = \bigl\{ (f, g) : f, g \in \mathcal{F} \bigr\}.
 $$
 
 **(c)** Suppose that $\Gamma$ acts transitively on $\mathcal{F}$.

@@ -14,12 +14,9 @@ review: draft
 ---
 
 ::: problem
-Show that a symmetric function identity holds, where $h_\lambda$ denotes the product of the hooks of $\lambda$.
-
-The identity itself is not established from the available data.
-:::
-
-::: remark
-The hook-length denominator $h_\lambda$ is the only clearly established element of the identity.
-The problem likely asks for a standard Schur-function expansion identity.
+Show that
+$$
+e^{t p_1} = \sum_\lambda t^{|\lambda|}\frac{s_\lambda}{h_\lambda},
+$$
+where $h_\lambda$ denotes the product of the hook lengths of $\lambda$.
 :::

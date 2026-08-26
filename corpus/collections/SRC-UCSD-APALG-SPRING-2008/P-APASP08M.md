@@ -17,7 +17,7 @@ review: draft
 ::: problem
 Construct the group $G$ of $3 \times 3$ matrices by applying the Young natural representation indexed by $[2,1,1]$ to the permutations of $S_4$.
 
-(1) Compute the Hilbert series $F_{\mathbb{R}[x]}(q)$ of the ring of $G$-invariants.
+(1) Compute the Hilbert series $F_{\mathbb{R}[x_1,x_2,x_3]^G}(q)$ of the ring of $G$-invariants.
 
 (2) Rewrite it in the form $$F_{\mathbb{R}[x]}(q) = \frac{1 + q^d}{(1 - q^{d_1})(1 - q^{d_2})(1 - q^{d_3})}.$$
 
@@ -32,12 +32,12 @@ If not, go back to step (4).
 
 (7) Construct a $G$-invariant $\eta$ of degree $d$.
 
-(8) Verify that it is not a polynomial in $I_1, I_2, I_3$ by computing the polynomial $Q$ such that $Q(\eta, I_1, I_2, I_3) = 0$.
+(9) Verify that it is not a polynomial in $I_1, I_2, I_3$ by computing the polynomial $Q$ such that $Q(\eta, I_1, I_2, I_3) = 0$.
 
-(9) Based on your previous results, show that step (8) is not needed.
+(10) Based on your previous results, show that step (9) is not needed.
 
-(10) Compute the Jacobian of $I_1, I_2, I_3$ and construct its linear factors.
+(11) Compute the Jacobian of $I_1, I_2, I_3$ and construct its linear factors.
 
-(11) Assuming that there is a reflection group $G'$ that also leaves $I_1, I_2, I_3$ invariant, you could have predicted the number of these linear factors.
+(12) Assuming that there is a reflection group $G'$ that also leaves $I_1, I_2, I_3$ invariant, you could have predicted the number of these linear factors.
 Why?
 :::

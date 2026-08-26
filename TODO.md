@@ -92,7 +92,7 @@ State the evidence in an empty audit commit.
 
 - [ ] [`corpus/collections/SRC-TEXT-SS03/index.md`](corpus/collections/SRC-TEXT-SS03/index.md) — audit commit:
 
-- [ ] [`corpus/collections/SRC-TOP-2002Q1/index.md`](corpus/collections/SRC-TOP-2002Q1/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2002Q1/index.md`](corpus/collections/SRC-TOP-2002Q1/index.md) — audit commit: a87b43e (9 source problems A1–A5, B1–B4, 9 cards, all match)
 
 - [ ] [`corpus/collections/SRC-TOP-2011Q2/index.md`](corpus/collections/SRC-TOP-2011Q2/index.md) — audit commit:
 
@@ -800,8 +800,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [x] Finish Applied Algebra Spring 2007. Disposition 2026-08-26: all nine problems transcribed in source order; two passages not captured by the text extraction (problem 2's explicit matrix B, problem 5's S6xS3-module labels), so the collection is completion: incomplete with the exact remainder stated on the card.
 
-- [x] Finish Applied Algebra Spring 2008. Disposition 2026-08-26: the paper is also appended to the Fall 2008 algebra PDF (department reuse); all 13 problems carded in source order.
-  Garnir tableau (R.4) and ST.3 identity right-hand side not captured by the text extraction; collection marked completion: incomplete with remainder stated on those cards.
+- [x] Finish Applied Algebra Spring 2008. Disposition 2026-08-26: the paper is also appended to the Fall 2008 algebra PDF (department reuse); all 13 problems are carded in source order and reconciled with the three source pages.
 
 - [x] Read each remaining Algebra exam collection with an empty problem list.
 
@@ -839,9 +838,11 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
     Two applied passages not captured by the text extraction.
     Completion: incomplete with remainder on card.
 
-  - SRC-UCSD-APALG-SPRING-2007: all nine problems transcribed in source order. Problem 2 includes its explicit matrix, and problem 5 includes the $S_6\times S_3$ labels $V_{(3,3)}\otimes V_{(2,1)}$. Completion: complete.
+  - SRC-UCSD-APALG-SPRING-2007: all nine problems transcribed in source order.
+    Problem 2 includes its explicit matrix, and problem 5 includes the $S_6\times S_3$ labels $V_{(3,3)}\otimes V_{(2,1)}$.
+    Completion: complete.
 
-  - SRC-UCSD-APALG-SPRING-2008: all thirteen problems transcribed; two passages not captured by the text extraction (Garnir tableau in R.4, identity in ST.3). Completion: incomplete with remainder on card.
+  - SRC-UCSD-APALG-SPRING-2008: all thirteen problems transcribed and reconciled with the source. Completion: complete.
 
   - SRC-UCSD-APALG-SPRING-2019: problems 5–10 (P-APAS19E–J) transcribed.
     Source PDF pages 2–5 remain near-blank (99.997% white, only problem numbers present); problems 1–4 genuinely absent from the hosted file.

@@ -14,7 +14,8 @@ review: draft
 ---
 
 ::: problem
-Give a representation-theoretic interpretation of a stated identity.
-
-The identity itself is not established from the available data.
+Give a representation-theoretic interpretation of the identity
+$$
+\frac{\partial}{\partial p_1}p_1^n = n p_1^{n-1}.
+$$
 :::
