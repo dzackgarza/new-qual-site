@@ -313,6 +313,16 @@ def _compile_tikzcd(
     return pf.RawBlock(svg_html, format="html")
 
 
+def _prepare_html(
+    element: pf.Element,
+    document: pf.Doc,
+) -> pf.Element | list[pf.Block] | None:
+    compiled = _compile_tikzcd(element, document)
+    if compiled is not None:
+        return compiled
+    return _reveal(element, document)
+
+
 def _blocks(card: sqlite3.Row) -> list[pf.Block]:
     """Rename owned classes at every depth, not just the top level.
 
@@ -775,10 +785,7 @@ def _page_ast(page: Page) -> str:
 
 
 def _html_ast(ast: str) -> str:
-    doc = from_ast(ast)
-    doc = doc.walk(_compile_tikzcd)
-    doc = doc.walk(_reveal)
-    return to_json(doc)
+    return to_json(from_ast(ast).walk(_prepare_html))
 
 
 def _statement_ast(ast: str) -> str:
