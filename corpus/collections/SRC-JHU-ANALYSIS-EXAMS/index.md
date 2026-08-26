@@ -327,6 +327,15 @@ source:
     - P-JHU4547A5
     - P-JHU4547A6
     - P-JHU4547A7
+  - name: Undated analysis exam, seven problems, instructions citing the syllabus (pp. 45–47)
+    problems:
+    - P-JHU4547B1
+    - P-JHU4547B2
+    - P-JHU4547B3
+    - P-JHU4547B4
+    - P-JHU4547B5
+    - P-JHU4547B6
+    - P-JHU4547B7
   - name: SPRING 2003 COMPLEX ANALYSIS QUALIFYING EXAM (p. 48)
     problems:
     - P-JHUSP03CAA
