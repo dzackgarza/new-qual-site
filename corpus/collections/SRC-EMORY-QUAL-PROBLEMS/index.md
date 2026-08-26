@@ -52,8 +52,8 @@ source:
     - P-MMAQ-ZMRHOSV3OG
     - P-726HQ
     - P-MMAQ-ZRGWQKRMTX
-    - P-MMAQ-SY44WBFUQF
-    - P-MMAQ-SW7PRAZTLB
+    - E-YMM6X
+    - E-N6PDJ
     - P-ZLDP7
     - P-MMAQ-CFGXL3QPK7
   - name: Real analysis
@@ -64,5 +64,4 @@ source:
     - P-MMAQ-SMTLV5QBOP
     - P-MMAQ-OZLCWMQK46
 ---
-
 
