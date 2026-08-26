@@ -30,6 +30,4 @@ source:
   area: topology
 ---
 
-
-
 - P-T06Q2-10

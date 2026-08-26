@@ -36,5 +36,4 @@ source:
 
 ::: remark
 F95phdtop.pdf; K. Lesh and G. Thompson, 23 September 1995.
-
 :::
