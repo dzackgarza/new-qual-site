@@ -784,6 +784,36 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 - [ ] Record unresolved mathematical choices on issue #2.
 
+### Current corpus data issues
+
+- [ ] Read `SRC-TOP-WORKSHOP-2020` against its eight source PDFs.
+  Its `Worksheet 1` and `Worksheet 5` sections have null problem lists, so the collection does not validate.
+  Populate or remove each section according to the source mathematics.
+
+- [ ] Reconcile `assets/attachments/8000e.pdf` as one collection.
+  `SRC-ALG-ART-HEACCB`, `SRC-ALG-ART-QHGA3N`, and `SRC-TEXT-SMI` currently share this provenance href.
+  One source document must own one collection, with the course notes, midterm, and final represented as sections.
+
+- [ ] Determine whether Real Analysis workshop Theorem 6.6 is absent or intentionally skipped.
+  The current sequence contains `T-RA-WORKSHOP-D7-6-1` through `T-RA-WORKSHOP-D7-6-5`, then `T-RA-WORKSHOP-D7-6-7`.
+  Settle the gap from the Day 7 workshop source.
+
+- [ ] Restore the exact missing statements if a source becomes available:
+
+  - UCSD Applied Algebra Spring 2019, problems 1–4;
+  - UCSD Real Analysis Spring 2009, problems 5–8;
+  - four Van Kampen image statements from `SRC-UCSD-TOP-JUSTIN`.
+
+  The retained sources do not contain these statements.
+  Keep the affected collections incomplete until an external source supplies them.
+
+- [ ] Re-run the orphan and duplicate audits after `SRC-TOP-WORKSHOP-2020` validates.
+  The invalid collection currently stops a current whole-corpus result.
+  The last successful audit reported no byte-identical duplicate bodies and no orphaned cards, but it predates the latest migration.
+
+The transient provenance timeout for `SRC-UGA-CA-SPRING-2019` did not recur on the later push check.
+Missing solutions remain authored mathematics, not corpus data issues.
+
 ## 2. Complete source documents and collection membership
 
 ### Extract exam collections
