@@ -467,13 +467,13 @@ Do not infer an answer from existing content.
 
 4. **Twenty-seven solution write-ups stored as problems.** Route to issues #5 and #24. Approve new problem cards and membership corrections.
 
-6. **Disabled `\sech` definition.** Route to issue #14. Decide whether to remove the commented upstream line.
+5. **Disabled `\sech` definition.** Route to issue #14. Decide whether to remove the commented upstream line.
 
-7. **Typed facets.** Route to issue #10. Decide whether area, institution, year, and topic need separate controls.
+6. **Typed facets.** Route to issue #10. Decide whether area, institution, year, and topic need separate controls.
 
-8. **Problem reachability.** Route to issue #6 and issues #24 through #29. Decide whether collection and problem pages satisfy reachability for every problem.
+7. **Problem reachability.** Route to issue #6 and issues #24 through #29. Decide whether collection and problem pages satisfy reachability for every problem.
 
-9. **Small mathematical and editorial choices.** Route by ownership.
+8. **Small mathematical and editorial choices.** Route by ownership.
    Use issue #2 for notation, duplicate statements, and competing mathematical repairs.
    Use issue #9 for missing image-only answers.
    Reopen #40 or file a narrow issue before any mass title work.
