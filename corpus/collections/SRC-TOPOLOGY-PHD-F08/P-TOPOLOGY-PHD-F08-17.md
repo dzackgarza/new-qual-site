@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-TOPOLOGY-PHD-F08-17
 kind: problem
-title: The surface with polygonal symbol $xy^{-1}x^{-1}zwz^{-1}vyw^{-1}v^{-1}$, and
+title: The surface with polygonal symbol $xy^{-1}x^{-1}zwz^{-1}\nu yw^{-1}\nu^{-1}$, and
   classification of closed surfaces by even-sided polygons
 classification:
   areas:
@@ -16,7 +16,7 @@ review: draft
 ---
 
 ::: {.problem}
-(i) The polygonal symbol of a certain surface without boundary is $xy^{-1}x^{-1}zwz^{-1}vyw^{-1}v^{-1}$.
+(i) The polygonal symbol of a certain surface without boundary is $xy^{-1}x^{-1}zwz^{-1}\nu yw^{-1}\nu^{-1}$.
 Identify the surface.
 What is its Euler characteristic?
 

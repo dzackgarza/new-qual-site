@@ -788,13 +788,8 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Extract exam collections
 
-- [x] Finish Applied Algebra Fall 2004.
-  Disposition 2026-08-26: compared all six cards against
-  `assets/attachments/FA04_202_Applied_Algebra_Qual_extracted.md` — Part 1
-  #1-3 and Part III #4-6 are present, in source order, faithful to the
-  source (the card reads "irreducible" correctly where OCR garbled it).
-  `P-APAS04C` is also listed under SRC-UCSD-APALG-SPRING-2004 because the
-  pseudo-inverse problem appears verbatim on both exams.
+- [x] Finish Applied Algebra Fall 2004. Disposition 2026-08-26: compared all six cards against `assets/attachments/FA04_202_Applied_Algebra_Qual_extracted.md` — Part 1 #1-3 and Part III #4-6 are present, in source order, faithful to the source (the card reads "irreducible" correctly where OCR garbled it).
+  `P-APAS04C` is also listed under SRC-UCSD-APALG-SPRING-2004 because the pseudo-inverse problem appears verbatim on both exams.
 
 - [ ] Finish Applied Algebra Fall 2011.
 
@@ -848,7 +843,7 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 - [ ] Decide the 82 third-party licensing flags before publication.
 
-- [ ] Give `F08phdtop` a second read and settle its date label.
+- [x] Give `F08phdtop` a second read and settle its date label.
 
 - [ ] Disposition the 19 image-only Anki answers.
 
