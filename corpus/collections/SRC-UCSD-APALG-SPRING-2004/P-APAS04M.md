@@ -20,8 +20,7 @@ A=\begin{pmatrix}0&-1\\1&0\end{pmatrix}.
 \]
 
 (a) Show that $A$ generates a cyclic group $G$ of order $4$.
-
-(b) Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degree.
+Show that if $f\in\mathbb{C}[x,y]^G$, then $f$ can have no monomials of odd degree.
 
 (b) Use Molien's Theorem to show that the Hilbert series of $G$ is
 \[
