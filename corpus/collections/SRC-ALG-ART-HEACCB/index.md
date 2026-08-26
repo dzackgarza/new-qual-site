@@ -31,10 +31,5 @@ source:
     kind: academic-term
     term: fall
     year: 2019
-provenance:
-- assets/attachments/8000e.pdf
+provenance: []
 ---
-
-::: remark
-Algebra course final for Fall 2019, not the UGA algebra Fall 2019 qualifying exam (`SRC-UGA-ALG-FALL-2019`). Problem list is disjoint from that exam and from the course midterm (`SRC-ALG-ART-QHGA3N`).
-:::

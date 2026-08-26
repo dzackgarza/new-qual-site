@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: SRC-TEXT-SMI
 kind: collection
-title: Smith, Algebra Course Notes
+title: Smith, Math 8000 algebra course packet
 classification:
   areas:
   - algebra
@@ -13,8 +13,7 @@ completion: complete
 provenance:
 - assets/attachments/8000e.pdf
 source:
-  source_kind: textbook
-  textbook: smith-course-notes
+  source_kind: compilation
   date:
     kind: unknown
   sections:

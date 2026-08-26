@@ -31,12 +31,5 @@ source:
     kind: academic-term
     term: fall
     year: 2019
-provenance:
-- assets/attachments/8000e.pdf
+provenance: []
 ---
-
-::: remark
-Algebra course midterm for Fall 2019, not the UGA algebra Fall 2019 qualifying exam (`SRC-UGA-ALG-FALL-2019`). Problem list is disjoint from that exam and from the course final (`SRC-ALG-ART-HEACCB`).
-
-`P-3SQVT` is the same $p^2q$ statement as `P-4IKVH` and is not listed twice.
-:::
