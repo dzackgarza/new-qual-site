@@ -1,10 +1,13 @@
 # Math 871-872 Qualifying Exam May 2018
 
-Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but you must indicate which ones you want graded. When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification. Do not interpret a problem in such a way that it becomes trivial.
+Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but you must indicate which ones you want graded.
+When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification.
+Do not interpret a problem in such a way that it becomes trivial.
 
 Section A: Do THREE problems from this section.
 
-(1) Show that if $( X _ { \alpha } , \mathcal { T } _ { \alpha } )$ are path-connected spaces, for $\alpha \in I$ , then $\Pi _ { \alpha \in I } X _ { \alpha }$ , with the product topology, is also path-connected. Show, on the other hand, that there are examples where this is false, if we use the box topology instead.
+(1) Show that if $( X _ { \alpha } , \mathcal { T } _ { \alpha } )$ are path-connected spaces, for $\alpha \in I$ , then $\Pi _ { \alpha \in I } X _ { \alpha }$ , with the product topology, is also path-connected.
+Show, on the other hand, that there are examples where this is false, if we use the box topology instead.
 
 (2) Recall that, for $A \subseteq X$ , the set $X / A$ is the set of equivalence classes under the relation $x \sim y$ iff $x = y$ or $x , y \in A$ . Show that if X is the real line R (with the usual topology) and $A = \left( - \infty , 0 \right) \cup ( 1 , \infty ) \subseteq \mathbb { R }$ , that $X / A$ , with the quotient topology, is compact but not Hausdorff.
 
@@ -18,6 +21,8 @@ Section B: Do THREE problems from this section.
 
 (6) A topological space X is called locally Euclidean if every point $x \in X$ has an open neighborhood U such that U is homeomorphic to an open set in $\mathbb { R } ^ { n }$ for some n. Prove that if X is locally Euclidean and $p : { \widetilde { X } } \to X$ is a covering space, then $\widetilde { X }$ is locally Euclidean.
 
-(7) Let $F _ { n }$ denote the free group on n letters. Use covering space theory to show that for all $n _ { \mathrm { : } }$ there exists a subgroup $H _ { n }$ of $F _ { 2 }$ such that $H _ { n } \cong F _ { n }$ . For your choices of $H _ { n }$ constructed, determine if each $H _ { n }$ is normal in $F _ { 2 }$
+(7) Let $F _ { n }$ denote the free group on n letters.
+Use covering space theory to show that for all $n _ { \mathrm { : } }$ there exists a subgroup $H _ { n }$ of $F _ { 2 }$ such that $H _ { n } \cong F _ { n }$ . For your choices of $H _ { n }$ constructed, determine if each $H _ { n }$ is normal in $F _ { 2 }$
 
-(8) Let $\Delta _ { 2 }$ and $\Delta _ { 2 } ^ { \prime }$ be distinct 2-simplices, and let X be the quotient space obtained by identifying the six vertices of $\Delta _ { 2 } \cup \Delta _ { 2 } ^ { \prime }$ to a single point. Identify a ∆-complex structure for X and compute the simplicial homology groups $H _ { n } ^ { \Delta } ( X )$ for all n.
+(8) Let $\Delta _ { 2 }$ and $\Delta _ { 2 } ^ { \prime }$ be distinct 2-simplices, and let X be the quotient space obtained by identifying the six vertices of $\Delta _ { 2 } \cup \Delta _ { 2 } ^ { \prime }$ to a single point.
+Identify a ∆-complex structure for X and compute the simplicial homology groups $H _ { n } ^ { \Delta } ( X )$ for all n.

@@ -1,6 +1,8 @@
 # Math 871-872 Qualifying Exam January 2019
 
-Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but you must indicate which ones you want graded. When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification. Do not interpret a problem in such a way that it becomes trivial.
+Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but you must indicate which ones you want graded.
+When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification.
+Do not interpret a problem in such a way that it becomes trivial.
 
 Section A: Do THREE problems from this section.
 
@@ -24,8 +26,10 @@ $$
 
 (b) Use (a) and the Seifert-van Kampen Theorem to compute $\pi _ { 1 } ( W )$
 
-(6) Suppose $p : { \widetilde { X } } \to X$ is a covering space and X is Hausdorff. Prove that $\widetilde { X }$ is Hausdorff.
+(6) Suppose $p : { \widetilde { X } } \to X$ is a covering space and X is Hausdorff.
+Prove that $\widetilde { X }$ is Hausdorff.
 
-(7) Suppose $g : Y  S ^ { 1 }$ is a path-connected 3-sheeted covering space. Prove that this covering space is unique up to isomorphism.
+(7) Suppose $g : Y  S ^ { 1 }$ is a path-connected 3-sheeted covering space.
+Prove that this covering space is unique up to isomorphism.
 
 (8) Recalling that $S ^ { 2 } = \{ ( x , y , z ) \in \mathbb { R } ^ { 3 } : x ^ { 2 } + y ^ { 2 } + z ^ { 2 } = 1 \}$ , define the equator of $S ^ { 2 }$ to be $\{ ( x , y , z ) \in S ^ { 2 } : z = 0 \}$ , so that the equator is homeomorphic to $S ^ { 1 }$ . Let $Z _ { 1 }$ and $Z _ { 2 }$ be disjoint copies of the 2-sphere $S ^ { 2 }$ , let f be a homeomorphism from the equator of $Z _ { 1 }$ to the equator of $Z _ { 2 }$ , and let $Z$ be the quotient space obtained from $Z _ { 1 } \cup Z _ { 2 }$ by identifying the equator of $Z _ { 1 }$ to the equator of $Z _ { 2 }$ via $f .$ Find a ∆-complex structure on the space $Z ,$ and compute the simplicial homology groups of Z.

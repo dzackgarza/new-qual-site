@@ -1,6 +1,8 @@
 # Math 871-872 Qualifying Exam May 2017
 
-Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but you must indicate which ones you want graded. When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification. Do not interpret a problem in such a way that it becomes trivial.
+Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but you must indicate which ones you want graded.
+When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification.
+Do not interpret a problem in such a way that it becomes trivial.
 
 Section A: Do THREE problems from this section.
 

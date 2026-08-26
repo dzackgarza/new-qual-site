@@ -1,6 +1,8 @@
 # Math 871-872 Qualifying Exam May 2015
 
-Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but indicate which ones you want graded. When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification. Do not interpret a problem in such a way that it becomes trivial.
+Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but indicate which ones you want graded.
+When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification.
+Do not interpret a problem in such a way that it becomes trivial.
 
 Section A: Do THREE problems from this section.
 
@@ -14,7 +16,8 @@ $A = \{ ( x _ { n } ) \in X$ : for some N we have $x _ { n } = 0$ for all $n \ge
 
 (2) If $X = \mathbb { R } ^ { n }$ with the usual Euclidean topology and $\mathcal { U } \subseteq X$ is an open, connected subspace of X, show that U is also path connected.
 
-(3) Let $f : ( X , { \mathcal { T } } ) \to ( Y , { \mathcal { T } } ^ { \prime } )$ be a continuous map. A section of f is a continuous map $\sigma : ( Y , { \mathcal { T } } ^ { \prime } ) \to ( X , { \mathcal { T } } )$ so that $f \circ \sigma = \operatorname { I d } _ { Y }$ . Show that if f has a section, then f is a quotient map.
+(3) Let $f : ( X , { \mathcal { T } } ) \to ( Y , { \mathcal { T } } ^ { \prime } )$ be a continuous map.
+A section of f is a continuous map $\sigma : ( Y , { \mathcal { T } } ^ { \prime } ) \to ( X , { \mathcal { T } } )$ so that $f \circ \sigma = \operatorname { I d } _ { Y }$ . Show that if f has a section, then f is a quotient map.
 
 (4) Let $f : X \to Y$ be a continuous map, and suppose that there are continuous maps $g , h : Y \to X$ with $f \circ g \simeq \operatorname { I d } _ { Y }$ and h ◦ $f \simeq \operatorname { I d } _ { X }$
 

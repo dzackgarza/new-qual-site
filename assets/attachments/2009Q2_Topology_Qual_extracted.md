@@ -1,4 +1,6 @@
-Do three of the problems from section A and three questions from section B. If you work more than the required number of problems, make sure that you clearly mark which problems you want to have counted. If you have doubts about the wording of a problem or about what results may be assumed without proof, please ask for clarification. In no case should you interpret a problem in such a way that it becomes trivial.
+Do three of the problems from section A and three questions from section B. If you work more than the required number of problems, make sure that you clearly mark which problems you want to have counted.
+If you have doubts about the wording of a problem or about what results may be assumed without proof, please ask for clarification.
+In no case should you interpret a problem in such a way that it becomes trivial.
 
 ## Section A:
 
@@ -10,7 +12,8 @@ Do three of the problems from section A and three questions from section B. If y
 
 (b) Give an example of a space and point $y \in X$ so that $P _ { y }$ is neither an open nor a closed subset of X.
 
-3. Let $S ^ { 1 }$ and $D ^ { 2 }$ be the unit circle and closed unit disk in the (Euclidean) space $\mathbb { R } ^ { 2 }$ . Let ∼ be the smallest equivalence relation on the product space $S ^ { \dot { 1 } } \times D ^ { 2 }$ satisfying $( x , y ) \sim$ $( x , ( 0 , 0 ) )$ for all $x \in S ^ { 1 }$ and $y \in D ^ { 2 }$ . Let $Z : = ( S ^ { 1 } \times D ^ { 2 } ) / \sim$ be the corresponding quotient space. Prove that Z is homeomorphic to $S ^ { 1 }$
+3. Let $S ^ { 1 }$ and $D ^ { 2 }$ be the unit circle and closed unit disk in the (Euclidean) space $\mathbb { R } ^ { 2 }$ . Let ∼ be the smallest equivalence relation on the product space $S ^ { \dot { 1 } } \times D ^ { 2 }$ satisfying $( x , y ) \sim$ $( x , ( 0 , 0 ) )$ for all $x \in S ^ { 1 }$ and $y \in D ^ { 2 }$ . Let $Z : = ( S ^ { 1 } \times D ^ { 2 } ) / \sim$ be the corresponding quotient space.
+   Prove that Z is homeomorphic to $S ^ { 1 }$
 
 4. Let $( X , \tau )$ and $( X , T ^ { \prime } )$ be topological spaces with $\tau \subseteq \tau ^ { \prime }$
 
@@ -28,7 +31,8 @@ Do three of the problems from section A and three questions from section B. If y
 
 (b) Is X homotopy equivalent to $S ^ { 1 } ?$ (Prove your answer.)
 
-6. Let $p : { \widetilde { X } } \to X$ be a covering space. Show that if X is Hausdorff, then $\widetilde { X }$ is also Hausdorff.
+6. Let $p : { \widetilde { X } } \to X$ be a covering space.
+   Show that if X is Hausdorff, then $\widetilde { X }$ is also Hausdorff.
 
 7. Use covering space theory to prove that any finitely presented group G has only finitely many subgroups of index 3.
 

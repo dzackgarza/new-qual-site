@@ -2,13 +2,17 @@
 
 ## June 2011
 
-Solve three problems from Section A and three more from Section B; you may work on any number of the problems, but indicate which six you want graded. When in doubt about the wording of a problem, ask for clarification. Do not interpret a problem in such a way that it becomes trivial. Justify your answers.
+Solve three problems from Section A and three more from Section B; you may work on any number of the problems, but indicate which six you want graded.
+When in doubt about the wording of a problem, ask for clarification.
+Do not interpret a problem in such a way that it becomes trivial.
+Justify your answers.
 
 ## Section A:
 
 (1) Prove that if $f : X \to Y$ is continuous map between topological spaces and C is a compact subset of X, then f (C) is a compact subset of Y .
 
-(2) Suppose $f : X \to Y$ is a quotient map. Prove that if Y is connected and $f ^ { - 1 } ( \{ y \} )$ is a connected subspace of X for all $y \in Y$ , then X is connected.
+(2) Suppose $f : X \to Y$ is a quotient map.
+Prove that if Y is connected and $f ^ { - 1 } ( \{ y \} )$ is a connected subspace of X for all $y \in Y$ , then X is connected.
 
 (3) Prove that every metrizable space is normal Hausdorff (aka T4).
 

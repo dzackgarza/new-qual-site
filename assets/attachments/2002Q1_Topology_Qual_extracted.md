@@ -1,6 +1,9 @@
-Do a total of five (5) problems, three (3) from section A and two (2) from section B. All problems count equally. If you work on more than the required number of problems in each section, then you should clearly mark which problems in each section you wish to have graded. Otherwise, the first problems from each section will be graded.
+Do a total of five (5) problems, three (3) from section A and two (2) from section B. All problems count equally.
+If you work on more than the required number of problems in each section, then you should clearly mark which problems in each section you wish to have graded.
+Otherwise, the first problems from each section will be graded.
 
-If you have doubts about the wording of a problem, please ask for clarification. In no case should you interpret a problem in such a way that its solution becomes trivial.
+If you have doubts about the wording of a problem, please ask for clarification.
+In no case should you interpret a problem in such a way that its solution becomes trivial.
 
 ## Section A: General Topology
 
@@ -14,7 +17,8 @@ be a descending chain of non-empty closed subsets of X. Show that their intersec
 
 $\bigcap _ { n = 1 } ^ { } A _ { n } ^ { }$ is non-empty.
 
-A2. Let X be a topological space. A set $A \subseteq X$ is called nowhere dense if the closure A¯ of A has empty interior, i.e., int $( { \bar { A } } ) = \varnothing$
+A2. Let X be a topological space.
+A set $A \subseteq X$ is called nowhere dense if the closure A¯ of A has empty interior, i.e., int $( { \bar { A } } ) = \varnothing$
 
 Show that if $U \subseteq X$ is open, then $A = \hat { U } \setminus U$ is nowhere dense.
 

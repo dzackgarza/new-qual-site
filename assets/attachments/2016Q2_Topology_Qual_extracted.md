@@ -1,4 +1,6 @@
-Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but indicate which ones you want graded. When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification. Do not interpret a problem in such a way that it becomes trivial.
+Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but indicate which ones you want graded.
+When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification.
+Do not interpret a problem in such a way that it becomes trivial.
 
 Section A: Do THREE problems from this section.
 
@@ -20,6 +22,7 @@ Section B: Do THREE problems from this section.
 
 (6) A group G is called residually finite if for every $g \in G$ with $g \neq 1$ , there is a finite group H and a (surjective) homomorphism $\varphi : G \to H$ with $\varphi ( g ) \neq 1$ Let G be a residually finite group and let X be the presentation complex for a presentation of G, with vertex x0. Show that for any loop $\gamma : I  X$ at $x _ { 0 }$ with $1 \neq [ \gamma ] \in \pi _ { 1 } ( X , x _ { 0 } )$ , there is a finite-sheeted covering space $p : \tilde { X } \to X$ and basepoint fx0 $\in p ^ { - 1 } ( \{ x _ { 0 } \} )$ such that $\gamma$ does not lift to a loop at fx0.
 
-(7) Let $p : { \widetilde { X } } \to X$ and $q : \widetilde { Y }  Y$ be covering spaces of path-connected, locally path-connected spaces X and Y with Xe and $\widetilde { Y }$ locally path-connected and simply-connected. Show that if X and $Y$ are homeomorphic, then Xe and $\widetilde { Y }$ are homeomorphic.
+(7) Let $p : { \widetilde { X } } \to X$ and $q : \widetilde { Y }  Y$ be covering spaces of path-connected, locally path-connected spaces X and Y with Xe and $\widetilde { Y }$ locally path-connected and simply-connected.
+Show that if X and $Y$ are homeomorphic, then Xe and $\widetilde { Y }$ are homeomorphic.
 
 (8) Construct a ∆-complex structure, and use it to compute the simplicial homology groups, for the connected sum of two projective planes.

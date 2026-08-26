@@ -1,4 +1,6 @@
-Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but indicate which ones you want graded. When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification. Do not interpret a problem in such a way that it becomes trivial.
+Do three questions from Section A and three questions from Section B. You may work on as many questions as you wish, but indicate which ones you want graded.
+When in doubt about the wording of a problem or what results may be assumed without proof, ask for clarification.
+Do not interpret a problem in such a way that it becomes trivial.
 
 Section A: Do THREE problems from this section.
 
@@ -24,6 +26,8 @@ Section B: Do THREE problems from this section.
 
 (6) Let $X = T ^ { 2 } = ( I \times I ) / \sim$ (where $( x , 0 ) \sim ( x , 1 )$ and $( 0 , x ) \sim ( 1 , x )$ for all $x \in I )$ be the torus with basepoint $x _ { 0 } = [ ( 0 , 0 ) ]$ . Find two 2-sheeted covering spaces $p : ( Y , y _ { 0 } )  ( X , x _ { 0 } )$ and $p ^ { \prime } : ( Y ^ { \prime } , y _ { 0 } ^ { \prime } )  ( X , x _ { 0 } )$ satisfying the property that $p _ { * } ( \pi _ { 1 } ( Y , y _ { 0 } ) ) \neq p _ { * } ^ { \prime } ( \pi _ { 1 } ( Y ^ { \prime } , y _ { 0 } ^ { \prime } ) )$
 
-(7) Let k and n be natural numbers greater than 1. Let G be a subgroup of index k of the free group $F _ { n }$ on n generators. Then G is isomorphic to the free group $F _ { m }$ for some natural number $m ;$ find m as a function of k and n.
+(7) Let k and n be natural numbers greater than 1. Let G be a subgroup of index k of the free group $F _ { n }$ on n generators.
+Then G is isomorphic to the free group $F _ { m }$ for some natural number $m ;$ find m as a function of k and n.
 
-(8) If X is a ∆-complex with at most one k-simplex for each $0 \leq k \leq 5$ , show that each of the homology groups $H _ { k } ( X )$ must be cyclic for all $0 \leq k \leq 5$ . Can all of these groups be non-trivial? Explain why or why not.
+(8) If X is a ∆-complex with at most one k-simplex for each $0 \leq k \leq 5$ , show that each of the homology groups $H _ { k } ( X )$ must be cyclic for all $0 \leq k \leq 5$ . Can all of these groups be non-trivial?
+Explain why or why not.

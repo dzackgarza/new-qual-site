@@ -1,4 +1,6 @@
-Do three of the problems from section A and three questions from section B. If you work more than the required number of problems, make sure that you clearly mark which problems you want to have counted. If you have doubts about the wording of a problem or about what results may be assumed without proof, please ask for clarification. In no case should you interpret a problem in such a way that it becomes trivial.
+Do three of the problems from section A and three questions from section B. If you work more than the required number of problems, make sure that you clearly mark which problems you want to have counted.
+If you have doubts about the wording of a problem or about what results may be assumed without proof, please ask for clarification.
+In no case should you interpret a problem in such a way that it becomes trivial.
 
 ## Section A:
 
@@ -18,8 +20,10 @@ Do three of the problems from section A and three questions from section B. If y
 
 5. Show that if A is a path-connected subspace of $X , x _ { 0 } \in A$ , and the homomorphism $i _ { * } : \pi _ { 1 } ( A , x _ { 0 } )  \pi _ { 1 } ( X , x _ { 0 } )$ induced by the inclusion map $i : A \to X$ is surjective, then every path in X with endpoints in A is homotopic relative to the endpoints (i.e., via a homotopy that fixes each endpoint) to a path in A.
 
-6. Attach a 2-disc $D ^ { 2 }$ to a torus $S ^ { 1 } \times S ^ { 1 }$ by the attaching map $e ^ { 2 \pi i t } \mapsto ( e ^ { 2 \pi i t } , e ^ { 2 \pi i t } )$ thinking of the boundary $\partial D ^ { 2 }$ and each $S ^ { 1 }$ factor as the unit circle in the complex plane, and let X be the resulting space. Compute a presentation for the fundamental group of X .
+6. Attach a 2-disc $D ^ { 2 }$ to a torus $S ^ { 1 } \times S ^ { 1 }$ by the attaching map $e ^ { 2 \pi i t } \mapsto ( e ^ { 2 \pi i t } , e ^ { 2 \pi i t } )$ thinking of the boundary $\partial D ^ { 2 }$ and each $S ^ { 1 }$ factor as the unit circle in the complex plane, and let X be the resulting space.
+   Compute a presentation for the fundamental group of X .
 
 7. Use covering space theory to show that if H is a subgroup of index 3 in a finitely presented group G, then H is finitely presented.
 
-8. Let X be the space obtained from the 2-simplex $\Delta ^ { 2 }$ by identifying all three vertices together. Describe a ∆-complex structure on the space X and compute its homology groups.
+8. Let X be the space obtained from the 2-simplex $\Delta ^ { 2 }$ by identifying all three vertices together.
+   Describe a ∆-complex structure on the space X and compute its homology groups.

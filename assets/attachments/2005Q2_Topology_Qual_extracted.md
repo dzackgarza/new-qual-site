@@ -1,4 +1,6 @@
-Do three of the problems from section A and three questions from section B. If you work more than the required number of problems, make sure that you clearly mark which problems you want to have counted. If you have doubts about the wording of a problem or about what results may be assumed without proof, please ask for clarification. In no case should you interpret a problem in such a way that it becomes trivial.
+Do three of the problems from section A and three questions from section B. If you work more than the required number of problems, make sure that you clearly mark which problems you want to have counted.
+If you have doubts about the wording of a problem or about what results may be assumed without proof, please ask for clarification.
+In no case should you interpret a problem in such a way that it becomes trivial.
 
 ## Section A: Point Set Topology.
 
@@ -22,4 +24,5 @@ b. Let X be the integers with the topology ${ \mathcal { T } } : = \{ U \subsete
 
 7. Find a ∆-complex structure on the space X obtained by identifying three distinct points $a , b , c$ in the 2-sphere to a point, and compute the simplicial homology groups of X.
 
-8. A space X is called unicoherent if whenever $X = \mathcal { U } \cup \mathcal { V }$ with U, V nonempty, open, and path-connected, then $\mathcal { U } \cap \mathcal { V }$ is path-connected. Use the Mayer-Vietoris sequence to show that, for $n \geq 2 , S ^ { n }$ is unicoherent.
+8. A space X is called unicoherent if whenever $X = \mathcal { U } \cup \mathcal { V }$ with U, V nonempty, open, and path-connected, then $\mathcal { U } \cap \mathcal { V }$ is path-connected.
+   Use the Mayer-Vietoris sequence to show that, for $n \geq 2 , S ^ { n }$ is unicoherent.
