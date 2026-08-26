@@ -34,5 +34,6 @@ Then
 =20.
 \]
 
-For $F=(P,Q)=(2x+y,y)$, path independence on $\mathbb R^2$ would require $P_y=Q_x$. Here $P_y=1$ and $Q_x=0$, so the integral is path dependent.
+For $F=(P,Q)=(2x+y,y)$, path independence on $\mathbb R^2$ would require $P_y=Q_x$.
+Here $P_y=1$ and $Q_x=0$, so the integral is path dependent.
 :::

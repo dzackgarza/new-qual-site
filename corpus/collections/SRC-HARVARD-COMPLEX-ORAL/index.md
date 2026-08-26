@@ -48,4 +48,3 @@ source:
   date:
     kind: unknown
 ---
-

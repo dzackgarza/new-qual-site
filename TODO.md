@@ -814,15 +814,11 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   The collection now contains all eleven Sheet 3 problems and owns that PDF as provenance.
 
 - [x] Re-run the orphan and duplicate audits after `SRC-TOP-WORKSHOP-2020` validates.
-  Disposition 2026-08-27: canonical area identifiers were restored in
-  `SRC-EMORY-QUAL-PROBLEMS`, `SRC-HARVARD-COMPLEX-ORAL`, and the eight
-  `SRC-MATH8100-ASSIGNMENT-*` collections. Corpus validation passes.
-  The orphan audit exposed `P-T06Q2-10`; the official source ledger proves that
-  both `P-T06Q2-1` and `P-T06Q2-10` belong to `SRC-TOP-UNL-2006Q2`, and the
-  collection now lists all ten problems. The orphan audit is clear.
-  The duplicate-body audit reports only the already reviewed
-  `P-UCTOP-FA12-5` / `P-UCTOP-SU09-5` pair, which remains separate because the
-  two exams state different orientability hypotheses.
+  Disposition 2026-08-27: canonical area identifiers were restored in `SRC-EMORY-QUAL-PROBLEMS`, `SRC-HARVARD-COMPLEX-ORAL`, and the eight `SRC-MATH8100-ASSIGNMENT-*` collections.
+  Corpus validation passes.
+  The orphan audit exposed `P-T06Q2-10`; the official source ledger proves that both `P-T06Q2-1` and `P-T06Q2-10` belong to `SRC-TOP-UNL-2006Q2`, and the collection now lists all ten problems.
+  The orphan audit is clear.
+  The duplicate-body audit reports only the already reviewed `P-UCTOP-FA12-5` / `P-UCTOP-SU09-5` pair, which remains separate because the two exams state different orientability hypotheses.
 
 The transient provenance timeout for `SRC-UGA-CA-SPRING-2019` did not recur on the later push check.
 Missing solutions remain authored mathematics, not corpus data issues.

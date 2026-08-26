@@ -25,5 +25,6 @@ Its adjoint is the natural map
 \[
 H^n(X;R)\longrightarrow\operatorname{Hom}_R(H_n(X;R),R)
 \]
-in the universal coefficient theorem. The pairing need not be nondegenerate over an arbitrary coefficient ring.
+in the universal coefficient theorem.
+The pairing need not be nondegenerate over an arbitrary coefficient ring.
 :::
