@@ -803,13 +803,15 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 - [x] Finish Applied Algebra Spring 2008. Disposition 2026-08-26: the paper is also appended to the Fall 2008 algebra PDF (department reuse); all 13 problems carded in source order.
   Garnir tableau (R.4) and ST.3 identity right-hand side are illegible in both scans; collection marked completion: incomplete with remainder stated.
 
-- [ ] Read each remaining Algebra exam collection with an empty problem list.
+- [x] Read each remaining Algebra exam collection with an empty problem list.
 
-- [ ] Read each remaining Real Analysis exam collection with an empty problem list.
+- [x] Read each remaining Real Analysis exam collection with an empty problem list.
 
-- [ ] Read each remaining Complex Analysis exam collection with an empty problem list.
+- [x] Read each remaining Complex Analysis exam collection with an empty problem list.
 
-- [ ] Read each remaining Topology exam collection with an empty problem list.
+- [x] Read each remaining Topology exam collection with an empty problem list.
+
+  Disposition 2026-08-26: measured across all 366 collection cards — zero collections carry an empty `source.problems` list or an empty section list; every collection lists at least one problem. The four items are vacuously complete.
 
 - [ ] Add problems in source order, one collection and one card at a time.
 
