@@ -8,6 +8,7 @@ import socket
 import subprocess
 import time
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass
 from types import TracebackType
 from typing import Self
@@ -48,6 +49,33 @@ class PandocFailure:
 
 
 PandocResult = PandocOutput | PandocFailure
+
+
+def _read_markdown_partition(
+    texts: list[str],
+    markdown_format: str,
+) -> list[PandocResult]:
+    with PandocServer() as pandoc:
+        return pandoc.read_markdown(texts, markdown_format)
+
+
+def read_markdown_parallel(
+    texts: list[str],
+    markdown_format: str,
+) -> list[PandocResult]:
+    partitions = [texts[offset::4] for offset in range(4)]
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        results = list(
+            executor.map(
+                _read_markdown_partition,
+                partitions,
+                [markdown_format] * len(partitions),
+            )
+        )
+    ordered: list[PandocResult] = []
+    for index in range(len(texts)):
+        ordered.append(results[index % 4][index // 4])
+    return ordered
 
 
 def _free_port() -> int:

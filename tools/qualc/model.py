@@ -27,7 +27,7 @@ from pydantic import (
 )
 
 from .diagnostics import Diagnostic, DiagnosticCode
-from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer
+from .pandoc_batch import PandocBatchError, PandocFailure, PandocServer, read_markdown_parallel
 
 
 class Strict(BaseModel):
@@ -630,10 +630,8 @@ def parse_cards_with(
         except (OSError, TypeError, ValueError, yaml.YAMLError) as exc:
             errors.append(Diagnostic(DiagnosticCode.CARD_UNREADABLE, str(path), str(exc)))
 
-    results = pandoc.read_markdown(
-        [body for _, _, body in prepared],
-        MARKDOWN,
-    )
+    bodies = [body for _, _, body in prepared]
+    results = read_markdown_parallel(bodies, MARKDOWN) if len(bodies) >= 1_000 else pandoc.read_markdown(bodies, MARKDOWN)
     parsed: list[ParsedCard] = []
     for (path, card, _), result in zip(prepared, results, strict=True):
         if isinstance(result, PandocFailure):
