@@ -10,7 +10,7 @@ classification:
   - commutative algebra
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
 - assets/attachments/Harvard_Commutative_Algebra_Oral_Questions.pdf
 source:
@@ -60,6 +60,22 @@ source:
   - P-HCAO41
   - P-HCAO42
   - P-HCAO43
+  - P-HCAO44
+  - P-HCAO45
+  - P-HCAO46
+  - P-HCAO47
+  - P-HCAO48
+  - P-HCAO49
+  - P-HCAO50
+  - P-HCAO51
+  - P-HCAO52
+  - P-HCAO53
+  - P-HCAO54
+  - P-HCAO55
+  - P-HCAO56
+  - P-HCAO57
   date:
     kind: unknown
 ---
+
+
