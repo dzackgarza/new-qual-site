@@ -917,15 +917,16 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 ### Resolve duplicate-body candidates
 
-- [ ] Disposition each duplicate-body group in `BACKLOG.md`, one at a time.
+- [x] Disposition each duplicate-body group in `BACKLOG.md`, one at a time.
+  Audit commit: f3a918092. One group: `P-UCTOP-FA12-5` / `P-UCTOP-SU09-5` — keep both (different exams, different hypotheses on orientability).
 
-- [ ] Read both cards and both sources for one group.
+- [x] Read both cards and both sources for one group.
 
-- [ ] Keep separate cards when different exams repeat a statement.
+- [x] Keep separate cards when different exams repeat a statement.
 
-- [ ] Correct or remove a card only when the source proves the defect.
+- [x] Correct or remove a card only when the source proves the defect.
 
-- [ ] Repeat until every current group has a recorded disposition.
+- [x] Repeat until every current group has a recorded disposition.
 
 ## 3. Reconcile imported sources
 
