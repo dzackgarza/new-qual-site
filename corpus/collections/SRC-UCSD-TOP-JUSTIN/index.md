@@ -9,8 +9,9 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: incomplete
+completion: complete
 provenance:
+- assets/attachments/UCSD_290_F14_sheet3.pdf
 - assets/attachments/UCSD_290_F14_sheet7.pdf
 - assets/attachments/UCSD_290_F14_sheet8.pdf
 - assets/attachments/UCSD_290_F14_sheet10.pdf
@@ -51,6 +52,8 @@ source:
   - P-AMD-ERYR6LDW
   - P-AMD-VH5QRTV2
   - P-AMD-CM4OPBUE
+  - P-UCTOP290-S3-5
+  - P-UCTOP290-S3-6
   - P-AMD-RNUQZAEI
   - P-AMD-A6MEOFBL
   - P-AMD-6RPCGOV7
@@ -113,5 +116,4 @@ source:
     kind: unknown
   area: topology
 ---
-
 
