@@ -795,13 +795,14 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   One source document must own one collection, with the course notes, midterm, and final represented as sections.
 
 - [ ] Determine whether Real Analysis workshop Theorem 6.6 is absent or intentionally skipped.
-  The current sequence contains `T-RA-WORKSHOP-D7-6-1` through `T-RA-WORKSHOP-D7-6-5`, then `T-RA-WORKSHOP-D7-6-7`.
-  Settle the gap from the Day 7 workshop source.
+  The current sequence contains `T-RA-WORKSHOP-D7-6-1` through `T-RA-WORKSHOP-D7-6-5`, then `T-RA-WORKSHOP-D7-6-7`. Settle the gap from the Day 7 workshop source.
 
 - [ ] Restore the exact missing statements if a source becomes available:
 
   - UCSD Applied Algebra Spring 2019, problems 1–4;
+
   - UCSD Real Analysis Spring 2009, problems 5–8;
+
   - four Van Kampen image statements from `SRC-UCSD-TOP-JUSTIN`.
 
   The retained sources do not contain these statements.
