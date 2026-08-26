@@ -10,7 +10,7 @@ classification:
   topics: []
 relations: []
 review: draft
-completion: complete
+completion: incomplete
 provenance:
 - https://math.ucsd.edu/sites/math.ucsd.edu/files/grad/qualifying-exams/algebra-math200/FA08_200_Algebra_Qual.pdf
 source:
@@ -41,6 +41,7 @@ source:
     - P-APASP08J
     - P-APASP08K
     - P-APASP08L
+    - P-APASP08M
   date:
     kind: academic-term
     term: fall
@@ -48,3 +49,6 @@ source:
 ---
 
 
+::: remark
+All 21 problems of the compilation are transcribed (8 algebra, 13 applied algebra; the applied paper is the same document as the standalone Spring 2008 applied-algebra file). Two passages of the applied paper are illegible in both available scans: the Garnir tableau in problem R.4 and the right-hand side of the identity in problem ST.3. Both cards state the illegibility; the exam's printed data is not recoverable from the scans.
+:::
