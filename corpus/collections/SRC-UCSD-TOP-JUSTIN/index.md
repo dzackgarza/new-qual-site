@@ -10,7 +10,12 @@ classification:
 relations: []
 review: draft
 completion: incomplete
-provenance: []
+provenance:
+- assets/attachments/UCSD_290_F14_sheet7.pdf
+- assets/attachments/UCSD_290_F14_sheet8.pdf
+- assets/attachments/UCSD_290_F14_sheet10.pdf
+- assets/attachments/UCSD_290_F14_sheet11.pdf
+- assets/attachments/UCSD_290_F14_sheet12.pdf
 source:
   source_kind: compilation
   problems:
@@ -98,9 +103,13 @@ source:
   area: topology
 ---
 
-
 ::: remark
-The compilation is the maintainer's own typed problem sheet (dated May 29, 2020) transcribing the UCSD Math 290 course problem sheets; its section headings cite Sheets 7 through 12 of that sequence. The course sheets are the external oracle for these problems and are not yet located, so the provenance list is empty.
+The compilation is the maintainer's own typed problem sheet (dated May 29, 2020) transcribing the UCSD Math 290 course problem sheets of Justin Roberts.
+Its section headings cite Sheets 7 through 12 of that sequence; those five sheets are vendored under `assets/attachments/` and listed as the provenance for the sections they cover.
+The typed sheet's other sections (Homotopy, Fundamental Group, Group Actions, Applications, Van Kampen's Theorem, Degree) cite no source, and their external oracle is not yet identified.
 
-Seven source entries are picture-only in the source (four Van Kampen entries printed as "Images" and three cellular-homology identification spaces), and the final section, Cohomology Ring (Sheet 12), is empty in the source ("Todo"). The picture-only entries cannot be transcribed from the sanctioned text extraction; they require the sheet's images.
+Three gaps remain against the original sheets.
+First, the typed sheet's final section, Cohomology Ring (Sheet 12), was never transcribed — it reads "Todo" — while Sheet 12 itself carries eight problems.
+Second, the three cellular-homology identification-space problems reference figures that are present in the vendored Sheet 8.
+Third, four Van Kampen entries are picture-only ("Images") and their source is among the unidentified material.
 :::

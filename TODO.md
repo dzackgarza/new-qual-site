@@ -824,7 +824,10 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   Disposition 2026-08-26: all 41 exam sittings section-listed; the three untitled exams on pp. 45–47 (7+7+6 problems) carded as P-JHU4547A/B/C, two of exam C's problems shared verbatim with the p. 57 sitting; collection completion: complete; ledger row added.
   Statement-level independent reread remains with the issue-9 reread item.
 
-- [x] Read the UCSD topology compilation and disposition every section. Disposition 2026-08-26: the source is the maintainer's typed rendition of the UCSD Math 290 course sheets (Sheet 7–12 headings); provenance list emptied per the licensing decision (course sheets are the oracle, not yet located). 79 cards cover the sheet's text content (44 fragment-verified, sampled misses faithful); seven picture-only entries and the empty Sheet-12 section remain uncarded pending the sheet's images; collection completion: incomplete with the remainder on the card.
+- [x] Read the UCSD topology compilation and disposition every section.
+  Disposition 2026-08-26, updated: the source is the maintainer's typed rendition of Roberts' UCSD Math 290 course sheets; the five cited sheets (7, 8, 10, 11, 12) are now located and vendored, and serve as provenance for the sections they cover.
+  Remaining carding: the eight Sheet-12 cohomology-ring problems the typed sheet never transcribed, and the three cellular identification-space problems whose figures are in the vendored Sheet 8; the four picture-only Van Kampen entries belong to still-unidentified material.
+  Collection completion: incomplete with the remainder on the card.
 
 - [ ] Review every remaining `completion: incomplete` collection.
 
