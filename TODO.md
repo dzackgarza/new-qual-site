@@ -826,7 +826,7 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 - [x] Read the UCSD topology compilation and disposition every section.
   Disposition 2026-08-26, updated: the source is the maintainer's typed rendition of Roberts' UCSD Math 290 course sheets; the five cited sheets (7, 8, 10, 11, 12) are now located and vendored, and serve as provenance for the sections they cover.
   Sheet 12 and the three figure-dependent Sheet 8 problems are carded and reconciled.
-  The four picture-only Van Kampen entries belong to still-unidentified material.
+  The retained compiled PDF and native Markdown contain only the word "Images" for Van Kampen items 2, 4, 5, and 6. No figures or mathematical statements survive, so these entries cannot be recovered from retained material.
   Collection completion: incomplete with the remainder on the card.
 
 - [x] Review every remaining `completion: incomplete` collection.
