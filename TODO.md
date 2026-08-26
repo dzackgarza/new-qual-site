@@ -11,17 +11,753 @@ A candidate leaves that queue only after a source-based disposition.
 
 ### Audit collection membership against sources
 
-The corpus layout now nests every listed problem under its collection (`corpus/collections/<ID>/`). What remains is the fidelity of the lists themselves.
+The corpus layout nests each listed problem under its collection (`corpus/collections/<ID>/`). Audit the list in each collection card.
 
-- [ ] Read one source document and its collection card.
+For each unchecked item:
 
-- [ ] Compare the card's ordered problem list with the source.
+1. Read the collection card, its source document, and the listed problem cards.
+2. Compare the source order with `source.problems`. Check each missing or extra entry.
+3. Correct the collection card when the source proves a defect.
+4. Commit the audit. State fixed or not fixed, the reason, and the source evidence.
+5. Use an empty audit commit when no file change is needed.
+6. Add the audit commit hash after `audit commit:`. Check the item.
+7. Commit the queue update separately. Then start the next unchecked item.
 
-- [ ] Correct missing, extra, or out-of-order entries on the card.
+Do not change the list when the source is unavailable or ambiguous. State the evidence in an empty audit commit.
 
-- [ ] Commit the completed card.
+#### Collection queue
 
-- [ ] Repeat for the next card.
+- [ ] [`corpus/collections/SRC-ALG-ART-HEACCB/index.md`](corpus/collections/SRC-ALG-ART-HEACCB/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md`](corpus/collections/SRC-ALG-ART-PSET5-QUALS/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-ALG-ART-QHGA3N/index.md`](corpus/collections/SRC-ALG-ART-QHGA3N/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-ALG-ART-SEPT2019/index.md`](corpus/collections/SRC-ALG-ART-SEPT2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/index.md`](corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/index.md`](corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-CA-ART-E3SXDB/index.md`](corpus/collections/SRC-CA-ART-E3SXDB/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-CA-ART-T34TG3/index.md`](corpus/collections/SRC-CA-ART-T34TG3/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-EMORY-CA-ARANGO/index.md`](corpus/collections/SRC-EMORY-CA-ARANGO/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md`](corpus/collections/SRC-JHU-ANALYSIS-EXAMS/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-NUS-CA-1970-SPRING/index.md`](corpus/collections/SRC-NUS-CA-1970-SPRING/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-NUS-RA-1970-SPRING/index.md`](corpus/collections/SRC-NUS-RA-1970-SPRING/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-PRELIM-ART-A2355I/index.md`](corpus/collections/SRC-PRELIM-ART-A2355I/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/index.md`](corpus/collections/SRC-PRELIM-ART-INTEGRAL-PRACTICE/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-RA-WORKSHOP/index.md`](corpus/collections/SRC-RA-WORKSHOP/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TAMU-RA-FALL-2014/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TAMU-RA-FALL-2015/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TAMU-RA-FALL-2016/index.md`](corpus/collections/SRC-TAMU-RA-FALL-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TAMU-RA-SPRING-2015/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TAMU-RA-SPRING-2016/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TAMU-RA-SPRING-2017/index.md`](corpus/collections/SRC-TAMU-RA-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TEXT-DF04/index.md`](corpus/collections/SRC-TEXT-DF04/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TEXT-HAT02/index.md`](corpus/collections/SRC-TEXT-HAT02/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TEXT-HK71/index.md`](corpus/collections/SRC-TEXT-HK71/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TEXT-HUN74/index.md`](corpus/collections/SRC-TEXT-HUN74/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TEXT-MUN00/index.md`](corpus/collections/SRC-TEXT-MUN00/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TEXT-SMI/index.md`](corpus/collections/SRC-TEXT-SMI/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TEXT-SS03/index.md`](corpus/collections/SRC-TEXT-SS03/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2002Q1/index.md`](corpus/collections/SRC-TOP-2002Q1/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2011Q2/index.md`](corpus/collections/SRC-TOP-2011Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2012Q1/index.md`](corpus/collections/SRC-TOP-2012Q1/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2012Q2/index.md`](corpus/collections/SRC-TOP-2012Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2013Q2/index.md`](corpus/collections/SRC-TOP-2013Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2015Q2/index.md`](corpus/collections/SRC-TOP-2015Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2017Q2/index.md`](corpus/collections/SRC-TOP-2017Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2018Q2/index.md`](corpus/collections/SRC-TOP-2018Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2019Q1/index.md`](corpus/collections/SRC-TOP-2019Q1/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2019Q2/index.md`](corpus/collections/SRC-TOP-2019Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-2020Q1/index.md`](corpus/collections/SRC-TOP-2020Q1/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2005Q2/index.md`](corpus/collections/SRC-TOP-UNL-2005Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2006Q1/index.md`](corpus/collections/SRC-TOP-UNL-2006Q1/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2006Q2/index.md`](corpus/collections/SRC-TOP-UNL-2006Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2007Q2/index.md`](corpus/collections/SRC-TOP-UNL-2007Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2008Q2/index.md`](corpus/collections/SRC-TOP-UNL-2008Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2009Q2/index.md`](corpus/collections/SRC-TOP-UNL-2009Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2010Q2/index.md`](corpus/collections/SRC-TOP-UNL-2010Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2014Q2/index.md`](corpus/collections/SRC-TOP-UNL-2014Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2016Q2/index.md`](corpus/collections/SRC-TOP-UNL-2016Q2/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-UNL-2017Q1/index.md`](corpus/collections/SRC-TOP-UNL-2017Q1/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-WORKSHOP-2020/index.md`](corpus/collections/SRC-TOP-WORKSHOP-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOP-WORKSHOP/index.md`](corpus/collections/SRC-TOP-WORKSHOP/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOPOLOGY-PHD-F07/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F07/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOPOLOGY-PHD-F08/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F08/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-TOPOLOGY-PHD-F95/index.md`](corpus/collections/SRC-TOPOLOGY-PHD-F95/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCLA-RA-FALL-2009/index.md`](corpus/collections/SRC-UCLA-RA-FALL-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCLA-RA-FALL-2010/index.md`](corpus/collections/SRC-UCLA-RA-FALL-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCLA-RA-SPRING-2009/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md`](corpus/collections/SRC-UCLA-RA-SPRING-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md`](corpus/collections/SRC-UCSD-ALG-200A-HOMEWORK/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2006/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2007/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2008/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2010/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2011/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2013/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2014/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2017/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2018/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2019/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2020/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2021/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2022/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2023/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2024/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-FALL-2025/index.md`](corpus/collections/SRC-UCSD-ALG-FALL-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2012/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2014/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2016/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-ALG-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-ALG-SPRING-2026/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2004/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2006/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2007/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2011/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2017/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2018/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2020/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2021/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2022/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2023/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2024/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md`](corpus/collections/SRC-UCSD-APALG-FALL-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-APALG-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-APALG-SPRING-2026/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2005/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2006/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2007/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2008/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2009/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2010/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2011/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2013/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2015/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2016/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2017/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2019/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2020/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2021/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2022/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2023/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2024/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-FALL-2025/index.md`](corpus/collections/SRC-UCSD-CA-FALL-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2012/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2019/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-CA-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-CA-SPRING-2026/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2004/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2005/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2006/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2007/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2009/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2010/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2011/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2016/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2017/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2018/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2020/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2021/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2022/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2023/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2024/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-FALL-2025/index.md`](corpus/collections/SRC-UCSD-RA-FALL-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2009/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2015/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2016/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2021/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-RA-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-RA-SPRING-2026/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-290QUALS/index.md`](corpus/collections/SRC-UCSD-TOP-290QUALS/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2002/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2002/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2003/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2003/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2004/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2006/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2007/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2008/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2009/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2010/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2017/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2018/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2019/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2020/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2021/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2022/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2023/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2024/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-FALL-2025/index.md`](corpus/collections/SRC-UCSD-TOP-FALL-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-JUSTIN/index.md`](corpus/collections/SRC-UCSD-TOP-JUSTIN/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/index.md`](corpus/collections/SRC-UCSD-TOP-QUAL-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2000/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2000/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2001/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2001/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2002/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2002/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2004/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2005/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2006/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2007/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2008/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2010/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2011/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2013/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2017/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2018/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2020/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2022/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2022/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2023/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2023/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2024/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2024/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2025/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2025/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SPRING-2026/index.md`](corpus/collections/SRC-UCSD-TOP-SPRING-2026/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UCSD-TOP-SUMMER-2015/index.md`](corpus/collections/SRC-UCSD-TOP-SUMMER-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2012/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2013/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2014/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2015/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2016/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2017/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2018/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2019/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2020/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-FALL-2021/index.md`](corpus/collections/SRC-UGA-ALG-FALL-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2012/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2013/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2014/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2015/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2016/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2017/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2018/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2019/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2020/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-ALG-SPRING-2021/index.md`](corpus/collections/SRC-UGA-ALG-SPRING-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-COMPILATION/index.md`](corpus/collections/SRC-UGA-CA-COMPILATION/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2009/index.md`](corpus/collections/SRC-UGA-CA-FALL-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2011/index.md`](corpus/collections/SRC-UGA-CA-FALL-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2015/index.md`](corpus/collections/SRC-UGA-CA-FALL-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2016/index.md`](corpus/collections/SRC-UGA-CA-FALL-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2017/index.md`](corpus/collections/SRC-UGA-CA-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2018/index.md`](corpus/collections/SRC-UGA-CA-FALL-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2019/index.md`](corpus/collections/SRC-UGA-CA-FALL-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2020/index.md`](corpus/collections/SRC-UGA-CA-FALL-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-FALL-2021/index.md`](corpus/collections/SRC-UGA-CA-FALL-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2009/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2011/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2014/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2015/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2017/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2018/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2019/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2020/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-CA-SPRING-2021/index.md`](corpus/collections/SRC-UGA-CA-SPRING-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2002/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2002/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2003/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2003/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2004/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2005/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2006/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2007/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2010/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2012/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2014/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2015/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2016/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-FALL-2017/index.md`](corpus/collections/SRC-UGA-PRELIM-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2003/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2003/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2004/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2005/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2006/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-PRELIM-SPRING-2007/index.md`](corpus/collections/SRC-UGA-PRELIM-SPRING-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2014/index.md`](corpus/collections/SRC-UGA-RA-FALL-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2015/index.md`](corpus/collections/SRC-UGA-RA-FALL-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2016/index.md`](corpus/collections/SRC-UGA-RA-FALL-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2017/index.md`](corpus/collections/SRC-UGA-RA-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2018/index.md`](corpus/collections/SRC-UGA-RA-FALL-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2019/index.md`](corpus/collections/SRC-UGA-RA-FALL-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2020/index.md`](corpus/collections/SRC-UGA-RA-FALL-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-FALL-2021/index.md`](corpus/collections/SRC-UGA-RA-FALL-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2005/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2006/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2007/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2008/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2009/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2010/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2011/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2012/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2014/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2015/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2016/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2017/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2018/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2019/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2020/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2020/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-RA-SPRING-2021/index.md`](corpus/collections/SRC-UGA-RA-SPRING-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2004/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2004/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2005/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2006/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2007/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2009/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2010/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2011/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2012/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2013/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2014/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2015/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2016/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2017/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-FALL-2018/index.md`](corpus/collections/SRC-UGA-TOP-FALL-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2006/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2007/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2008/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2009/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2010/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2011/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2012/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2013/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2015/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2016/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2017/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2018/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md`](corpus/collections/SRC-UGA-TOP-SPRING-2021/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UNL-RA-SPRING-2019/index.md`](corpus/collections/SRC-UNL-RA-SPRING-2019/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UNL-RA-SUMMER-2016/index.md`](corpus/collections/SRC-UNL-RA-SUMMER-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UNL-RA-SUMMER-2018/index.md`](corpus/collections/SRC-UNL-RA-SUMMER-2018/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2005/index.md`](corpus/collections/SRC-UW-ALG-2005/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2006/index.md`](corpus/collections/SRC-UW-ALG-2006/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2007/index.md`](corpus/collections/SRC-UW-ALG-2007/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2008/index.md`](corpus/collections/SRC-UW-ALG-2008/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2009/index.md`](corpus/collections/SRC-UW-ALG-2009/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2010/index.md`](corpus/collections/SRC-UW-ALG-2010/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2011/index.md`](corpus/collections/SRC-UW-ALG-2011/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2012/index.md`](corpus/collections/SRC-UW-ALG-2012/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2013/index.md`](corpus/collections/SRC-UW-ALG-2013/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2014/index.md`](corpus/collections/SRC-UW-ALG-2014/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2015/index.md`](corpus/collections/SRC-UW-ALG-2015/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2016/index.md`](corpus/collections/SRC-UW-ALG-2016/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2017/index.md`](corpus/collections/SRC-UW-ALG-2017/index.md) — audit commit:
+
+- [ ] [`corpus/collections/SRC-UW-ALG-2018/index.md`](corpus/collections/SRC-UW-ALG-2018/index.md) — audit commit:
 
 ### Correct mathematical and structural defects
 
