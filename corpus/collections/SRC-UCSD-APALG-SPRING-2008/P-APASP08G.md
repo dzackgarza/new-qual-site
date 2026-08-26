@@ -20,5 +20,6 @@ The identity itself is not established from the available data.
 :::
 
 ::: remark
-The hook-length denominator $h_\lambda$ is the only clearly established element of the identity. The problem likely asks for a standard Schur-function expansion identity.
+The hook-length denominator $h_\lambda$ is the only clearly established element of the identity.
+The problem likely asks for a standard Schur-function expansion identity.
 :::

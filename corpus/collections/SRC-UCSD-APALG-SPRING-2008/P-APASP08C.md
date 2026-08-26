@@ -24,7 +24,8 @@ $$
 \mathcal{F} \times \mathcal{F} = \bigl\{ \{f, g\} : f, g \in \mathcal{F} \bigr\}.
 $$
 
-**(c)** Suppose that $\Gamma$ acts transitively on $\mathcal{F}$. Let $f_0$ be an element of $\mathcal{F}$, $H$ be its stabilizer, and let
+**(c)** Suppose that $\Gamma$ acts transitively on $\mathcal{F}$.
+Let $f_0$ be an element of $\mathcal{F}$, $H$ be its stabilizer, and let
 $$
 \Gamma = H\tau_1 H + H\tau_2 H + \cdots + H\tau_k H
 $$
