@@ -296,17 +296,9 @@ Do not use “508 rows exist” as the completion claim.
 
 ### 5.4 Attachment extraction: issue #9
 
-The repository contains a frozen document inventory and page-level dispositions.
-
-Issue #9 remains open for these required facts:
-
-- every retained document has a page-level disposition;
-
-- every transcription has an independent reread;
-
-- `F08phdtop` has a second read and a settled date label;
-
-- the 30 image-only Anki answer placeholders have a recorded disposition.
+The retained-source migration is complete. The attachment ledger records every readable
+problem-bearing source and each exact unrecoverable remainder. The corpus links the
+transcribed statements to their collections and canonical cards.
 
 ### 5.5 Reader and generator: issues #10 and #41
 

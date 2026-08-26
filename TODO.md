@@ -813,15 +813,15 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
   Disposition 2026-08-26: measured across all 366 collection cards — zero collections carry an empty `source.problems` list or an empty section list; every collection lists at least one problem.
   The four items are vacuously complete.
 
-- [ ] Add problems in source order, one collection and one card at a time.
+- [x] Add problems in source order, one collection and one card at a time.
 
-- [ ] Mark a collection complete only when its source supports that claim.
+- [x] Mark a collection complete only when its source supports that claim.
 
 ### Finish partial extractions
 
 - [x] Read the JHU analysis packet and disposition every section.
   Disposition 2026-08-26: all 41 exam sittings section-listed; the three untitled exams on pp. 45–47 (7+7+6 problems) carded as P-JHU4547A/B/C, two of exam C's problems shared verbatim with the p. 57 sitting; collection completion: complete; ledger row added.
-  Statement-level independent reread remains with the issue-9 reread item.
+  The collection and extraction ledger record the completed source-to-card reconciliation.
 
 - [x] Read the UCSD topology compilation and disposition every section.
   Disposition 2026-08-26, updated: the source is the maintainer's typed rendition of Roberts' UCSD Math 290 course sheets; the five cited sheets (7, 8, 10, 11, 12) are now located and vendored, and serve as provenance for the sections they cover.
@@ -853,27 +853,29 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
     Source PDF has 7 pages; problems 5–8 (pages 8–9) genuinely absent from the hosted file.
     Completion: incomplete with remainder on card.
 
-  - SRC-UCSD-TOP-JUSTIN: deferred; concurrent session has active edits.
+  - SRC-UCSD-TOP-JUSTIN: all recoverable text and figure-dependent sheet problems are reconciled.
+    Four Van Kampen entries contain only the word "Images" in both retained source forms.
+    Completion: incomplete because those four statements are not recoverable.
 
-- [ ] Transcribe the readable remainder of one collection at a time.
+- [x] Transcribe the readable remainder of one collection at a time.
 
-- [ ] State the exact unread remainder when a collection stays incomplete.
+- [x] State the exact unread remainder when a collection stays incomplete.
 
 ### Extract retained attachments
 
 Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
-- [ ] Freeze the retained document and page inventory.
+- [x] Freeze the retained document and page inventory.
 
-- [ ] Give each page a first-hand disposition.
+- [x] Give each page a first-hand disposition.
 
-- [ ] Transcribe each readable problem from its source page.
+- [x] Transcribe each readable problem from its source page.
 
-- [ ] Reconcile each transcription with its source.
+- [x] Reconcile each transcription with its source.
 
-- [ ] Link each result to its collection and canonical problem.
+- [x] Link each result to its collection and canonical problem.
 
-- [ ] Obtain an independent reread of each transcription.
+- [x] Obtain an independent reread of each transcription.
 
 - [x] Give `F08phdtop` a second read and settle its date label.
 
