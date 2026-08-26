@@ -15,11 +15,8 @@ provenance:
 - assets/attachments/Harvard_Commutative_Algebra_Oral_Questions.pdf
 source:
   source_kind: compilation
-  institution: harvard
-  area: algebra
   problems:
   - P-HCAO1
   date:
     kind: unknown
 ---
-
