@@ -491,6 +491,106 @@ class Appearance:
     title: str
 
 
+@dataclass(frozen=True)
+class CardPageData:
+    terms: dict[tuple[str, str], list[str]]
+    facets: dict[str, list[sqlite3.Row]]
+    related: dict[tuple[str, str], list[sqlite3.Row]]
+    dependencies: dict[str, list[sqlite3.Row]]
+    backlinks: dict[str, list[sqlite3.Row]]
+
+
+def load_card_page_data(con: sqlite3.Connection) -> CardPageData:
+    terms: dict[tuple[str, str], list[str]] = {}
+    for row in _rows(con, "select card_id, axis, term from classifications order by card_id, axis, term"):
+        key = (row["card_id"], row["axis"])
+        if key not in terms:
+            terms[key] = []
+        terms[key].append(row["term"])
+
+    facets: dict[str, list[sqlite3.Row]] = {}
+    for row in _rows(
+        con,
+        """
+        select cp.problem_id, e.institution, s.year
+        from collection_problems cp
+        join sources s on s.id=cp.collection_id
+        left join exam_sources e on e.id=s.id
+        order by cp.problem_id, e.institution, s.year
+        """,
+    ):
+        card_id = row["problem_id"]
+        if card_id not in facets:
+            facets[card_id] = []
+        facets[card_id].append(row)
+
+    related: dict[tuple[str, str], list[sqlite3.Row]] = {}
+    for row in _rows(
+        con,
+        """
+        select r.target_id, r.kind as relation_kind, c.*
+        from relations r join cards c on c.id=r.source_id
+        where r.kind in ('hints-at', 'solves')
+        order by r.target_id, r.kind, c.id
+        """,
+    ):
+        key = (row["target_id"], row["relation_kind"])
+        if key not in related:
+            related[key] = []
+        related[key].append(row)
+
+    dependencies: dict[str, list[sqlite3.Row]] = {}
+    for row in _rows(
+        con,
+        """
+        select r.source_id, c.id, c.title, r.kind as relation_kind
+        from relations r join cards c on c.id=r.target_id
+        where r.kind in ('uses', 'cites', 'extracted-from')
+        order by r.source_id, r.kind, c.title, c.id
+        """,
+    ):
+        card_id = row["source_id"]
+        if card_id not in dependencies:
+            dependencies[card_id] = []
+        dependencies[card_id].append(row)
+
+    backlinks: dict[str, list[sqlite3.Row]] = {}
+    for row in _rows(
+        con,
+        """
+        select r.target_id, c.id, c.title, r.kind as relation_kind
+        from relations r join cards c on c.id=r.source_id
+        order by r.target_id, r.kind, c.title, c.id
+        """,
+    ):
+        card_id = row["target_id"]
+        if card_id not in backlinks:
+            backlinks[card_id] = []
+        backlinks[card_id].append(row)
+
+    return CardPageData(
+        terms=terms,
+        facets=facets,
+        related=related,
+        dependencies=dependencies,
+        backlinks=backlinks,
+    )
+
+
+def _page_terms(data: CardPageData, card_id: str, axis: str) -> list[str]:
+    key = (card_id, axis)
+    return data.terms[key] if key in data.terms else []
+
+
+def _page_rows(rows: dict[str, list[sqlite3.Row]], card_id: str) -> list[sqlite3.Row]:
+    return rows[card_id] if card_id in rows else []
+
+
+def _related_rows(data: CardPageData, card_id: str, kind: str) -> list[sqlite3.Row]:
+    key = (card_id, kind)
+    return data.related[key] if key in data.related else []
+
+
 def _card_relation_items(
     rows: list[sqlite3.Row],
 ) -> str:
@@ -518,31 +618,13 @@ def _appearance_items(appearances: list[Appearance]) -> str:
 
 
 def _relation_groups_json(
-    con: sqlite3.Connection,
+    data: CardPageData,
     card_id: str,
     appearances: dict[str, list[Appearance]],
     wiki_mentions: list[WikiPage],
 ) -> dict:
-    dependencies = _rows(
-        con,
-        """
-        select c.id, c.title, r.kind as relation_kind
-        from relations r join cards c on c.id=r.target_id
-        where r.source_id=? and r.kind in ('uses', 'cites', 'extracted-from')
-        order by r.kind, c.title, c.id
-        """,
-        (card_id,),
-    )
-    backlinks = _rows(
-        con,
-        """
-        select c.id, c.title, r.kind as relation_kind
-        from relations r join cards c on c.id=r.source_id
-        where r.target_id=?
-        order by r.kind, c.title, c.id
-        """,
-        (card_id,),
-    )
+    dependencies = _page_rows(data.dependencies, card_id)
+    backlinks = _page_rows(data.backlinks, card_id)
     source = (
         '<div class="relation-groups" aria-label="Card relationships">'
         '<section class="relation-group" data-relation-group="dependencies">'
@@ -598,36 +680,26 @@ def _dup[T](value: T) -> T:
 
 
 def problem_json(
-    con: sqlite3.Connection,
+    data: CardPageData,
     card: sqlite3.Row,
     jcache: dict,
     appearances: dict[str, list[Appearance]],
     wiki_mentions: dict[str, list[WikiPage]],
 ) -> tuple[dict, list]:
-    facets = _rows(
-        con,
-        """
-        select distinct e.institution, s.year
-        from collection_problems cp
-        join sources s on s.id=cp.collection_id
-        left join exam_sources e on e.id=s.id
-        where cp.problem_id=?
-        """,
-        (card["id"],),
-    )
+    facets = _page_rows(data.facets, card["id"])
     institutions = sorted({f["institution"].upper() for f in facets if f["institution"]})
     years = sorted({str(f["year"]) for f in facets if f["year"] is not None})
-    areas = _terms(con, card["id"], "area")
-    topics = _terms(con, card["id"], "topic")
+    areas = _page_terms(data, card["id"], "area")
+    topics = _page_terms(data, card["id"], "topic")
 
     body = _dup(jcache[card["id"]])
     _rename_json(body)
     for kind in ("hints-at", "solves"):
-        for rel in _related(con, card["id"], kind):
+        for rel in _related_rows(data, card["id"], kind):
             rb = _dup(jcache[rel["id"]])
             _rename_json(rb)
             body += rb
-    body.append(_relation_groups_json(con, card["id"], appearances, wiki_mentions.get(card["id"], [])))
+    body.append(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
@@ -641,7 +713,7 @@ def problem_json(
 
 
 def plain_json(
-    con: sqlite3.Connection,
+    data: CardPageData,
     card: sqlite3.Row,
     jcache: dict,
     appearances: dict[str, list[Appearance]],
@@ -649,11 +721,11 @@ def plain_json(
 ) -> tuple[dict, list]:
     body = _dup(jcache[card["id"]])
     _rename_json(body)
-    body.append(_relation_groups_json(con, card["id"], appearances, wiki_mentions.get(card["id"], [])))
+    body.append(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
         "subtitle": card["id"],
-        "categories": sorted(set(_terms(con, card["id"], "topic") + _terms(con, card["id"], "area"))),
+        "categories": sorted(set(_page_terms(data, card["id"], "topic") + _page_terms(data, card["id"], "area"))),
     }
     return meta, body
 
@@ -1908,12 +1980,13 @@ def project(
     inline_cache = build_inline_cache(pandoc, inline_values)
 
     jcache, api = load_json(con)
+    card_page_data = load_card_page_data(con)
     tag_pages: list[tuple[Path, dict, list]] = []
     for card in _rows(con, "select * from cards where kind='problem'"):
-        meta, body = problem_json(con, card, jcache, appearances, mentions)
+        meta, body = problem_json(card_page_data, card, jcache, appearances, mentions)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     for card in _rows(con, "select * from cards where kind not in ('problem','collection')"):
-        meta, body = plain_json(con, card, jcache, appearances, mentions)
+        meta, body = plain_json(card_page_data, card, jcache, appearances, mentions)
         tag_pages.append((out / "tag" / f"{card['id']}.qmd", meta, body))
     write_json_pages(
         pandoc,
