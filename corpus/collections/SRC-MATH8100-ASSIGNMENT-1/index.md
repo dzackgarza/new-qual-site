@@ -26,8 +26,8 @@ source:
   - P-M81A1-E2
   - P-M81A1-E3
   date:
-    kind: exact
-    value: '2019-08-27'
+    kind: academic-term
+    term: fall
+    year: 2019
 ---
-
 

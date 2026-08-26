@@ -14,5 +14,5 @@ source:
   source_kind: homework
   area: real analysis
   problems: [P-M81A7-1, P-M81A7-2, P-M81A7-3, P-M81A7-4, P-M81A7-5, P-M81A7-6, P-M81A7-E1, P-M81A7-E2]
-  date: {kind: exact, value: '2019-11-14'}
+  date: {kind: academic-term, term: fall, year: 2019}
 ---
