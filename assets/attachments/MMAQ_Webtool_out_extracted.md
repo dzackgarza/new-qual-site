@@ -12,11 +12,13 @@ Compute the fundamental group and the homology groups of X.
 
 ## 0.2 Question 2 (UGA 0 #0)
 
-Let L be the union of the z-axis and the unit circle in the xy-plane. Compute $\pi _ { 1 } ( \mathbb { R } ^ { 3 } \backslash L , * )$
+Let L be the union of the z-axis and the unit circle in the xy-plane.
+Compute $\pi _ { 1 } ( \mathbb { R } ^ { 3 } \backslash L , * )$
 
 ## 0.3 Question 3 (UGA 0 #0)
 
-Let C be cylinder. Let I and J be disjoint closed intervals contained in ∂C. What is the Euler characteristic of the surface S obtained by identifying I and J? Can all surface with nonempty boundary and with this Euler characteristic be obtained from this construction?
+Let C be cylinder.
+Let I and J be disjoint closed intervals contained in ∂C. What is the Euler characteristic of the surface S obtained by identifying I and J? Can all surface with nonempty boundary and with this Euler characteristic be obtained from this construction?
 
 ## 0.4 Question 4 (UGA 0 #0)
 
@@ -32,7 +34,8 @@ Compute the fundamental group, using any technique you like, of $\mathbb { R P }
 
 ## 0.7 Question 7 (UGA 0 #0)
 
-a. Show that any finite index subgroup of a finitely generated free group is free. State clearly any facts you use about the fundamental groups of graphs.
+a. Show that any finite index subgroup of a finitely generated free group is free.
+State clearly any facts you use about the fundamental groups of graphs.
 
 b. Prove that if N is a nontrivial normal subgroup of infinite index in a finitely generated free group F , then N is not finitely generated.
 

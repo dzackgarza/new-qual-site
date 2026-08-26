@@ -1,22 +1,22 @@
 ## A lot of algebra prelims
 
-Contents   
-1 2018 2   
-2 2017 3   
-3 2016 4   
-4 2015 5   
-5 2014 6   
-6 2013 8   
-7 2012 9   
-8 2011 10   
-9 2010 11   
-10 2009 13   
-11 2008 15   
-12 2007 16   
-13 2006 17   
+Contents\
+1 2018 2\
+2 2017 3\
+3 2016 4\
+4 2015 5\
+5 2014 6\
+6 2013 8\
+7 2012 9\
+8 2011 10\
+9 2010 11\
+10 2009 13\
+11 2008 15\
+12 2007 16\
+13 2006 17\
 14 2005 18
 
-##
+## 
 
 ## 1 2018
 
@@ -24,7 +24,7 @@ Problem 1 (2018, 1). Show that no finite group is the union of conjugates of a p
 
 Problem 2 (2018, 2). Classify all groups of order 18 up to isomorphism.
 
-Problem 3 (2018, 3). Let $\alpha , \beta$ denote the unique positive real $5 ^ { \mathrm { t h } }$ root of 7 and $4 ^ { \mathrm { t h } }$ root of 5, respectively.   
+Problem 3 (2018, 3). Let $\alpha , \beta$ denote the unique positive real $5 ^ { \mathrm { t h } }$ root of 7 and $4 ^ { \mathrm { t h } }$ root of 5, respectively.\
 Determine the degree of $\mathbb { Q } ( \alpha , \beta )$ over Q.
 
 Problem 4 (2018, 4). Show that the field extension $\mathbb { Q } \subseteq \mathbb { Q } \left( { \sqrt { 2 + { \sqrt { 2 } } } } \right)$ is Galois and determine its Galois group.
@@ -35,11 +35,14 @@ Problem 6 (2018, 7). Let G be a finite group and $\pi , \pi ^ { \prime }$ be two
 
 ## 2 2017
 
-Problem 1 (2017, 1). Let R be a Noetherian ring. Prove that $R [ x ]$ and $R [ [ x ] ]$ are both Noetherian. (The first part of the question is asking you to prove the Hilbert Basis Theorem, not to use it!)
+Problem 1 (2017, 1). Let R be a Noetherian ring.
+Prove that $R [ x ]$ and $R [ [ x ] ]$ are both Noetherian.
+(The first part of the question is asking you to prove the Hilbert Basis Theorem, not to use it!)
 
 Problem 2 (2017, 2). Classify (with proof) all fields with finitely many elements.
 
-Problem 3 (2017, 3). Suppose A is a commutative ring and M is a finitely presented module. Given any surjection φ : An → M from a finite free A-module, show that ker φ is finitely generated.
+Problem 3 (2017, 3). Suppose A is a commutative ring and M is a finitely presented module.
+Given any surjection φ : An → M from a finite free A-module, show that ker φ is finitely generated.
 
 Problem 4 (2017, 4.). Classify all groups of order 57.
 
@@ -47,12 +50,14 @@ Problem 5 (2017, 7). Show that a finite simple group cannot have a 2-dimensional
 
 ## 3 2016
 
-Problem 1 (2016, 1.). Let G be a finite simple group. Assume that every proper subgroup of G is abelian.   
+Problem 1 (2016, 1.). Let G be a finite simple group.
+Assume that every proper subgroup of G is abelian.\
 Prove that then G is cyclic of prime order.
 
 Problem 2 (2016, 2). Let $a \in \mathbb { N } , a > 0 .$ . Compute the Galois group of the splitting field of the polynomial $x ^ { 5 } - 5 a ^ { 4 } x + a { \mathrm { ~ o v e r ~ Q } }$
 
-Problem 3 (2016, 4.). Recall that an inner automorphism of a group is an automorphism given by conjugation by an element of the group. An outer automorphism is an automorphism that is not inner.
+Problem 3 (2016, 4.). Recall that an inner automorphism of a group is an automorphism given by conjugation by an element of the group.
+An outer automorphism is an automorphism that is not inner.
 
 (a) Prove that $S _ { 5 }$ has a subgroup of order 20.
 
@@ -60,7 +65,8 @@ Problem 3 (2016, 4.). Recall that an inner automorphism of a group is an automor
 
 (c) Conclude that $S _ { 6 }$ has an outer automorphism.
 
-Problem 4 (2016, 5.). Let A be a commutative ring and M a finitely generated A-module. Define
+Problem 4 (2016, 5.). Let A be a commutative ring and M a finitely generated A-module.
+Define
 
 $$
 \operatorname { A n n } ( M ) = \{ a \in A : a m = 0 { \mathrm { ~ f o r ~ a l l ~ } } m \in M \} .
@@ -100,13 +106,16 @@ Problem 1 (2015, 1). (a) Find an irreducible polynomial of degree 5 over the fie
 
 Problem 2 (2015, 2). Find the minimal polynomial of ${ \sqrt { 2 } } + { \sqrt { 3 } }$ over Q. Justify your answer.
 
-Problem 3 (2015, 3). (a) Let R be a commutative ring with no nonzero nilpotent elements. Show that the only units in the polynomial ring $R [ x ]$ are the units of $R ,$ regarded as constant polynomials.
+Problem 3 (2015, 3). (a) Let R be a commutative ring with no nonzero nilpotent elements.
+Show that the only units in the polynomial ring $R [ x ]$ are the units of $R ,$ regarded as constant polynomials.
 
 (b) Find all units in the polynomial ring $\mathbb { Z } _ { 4 } [ x ]$
 
-Problem 4 (2015, 4.). Let $p , q$ be two distinct primes. Prove that there is at most one non-abelian group of order $p q$ and describe the pairs $\left( p , q \right)$ such that there is no non-abelian group of order $p q$
+Problem 4 (2015, 4.). Let $p , q$ be two distinct primes.
+Prove that there is at most one non-abelian group of order $p q$ and describe the pairs $\left( p , q \right)$ such that there is no non-abelian group of order $p q$
 
-Problem 5 (2015, 5). (a) Let L be a Galois extension of a field K of degree 4. What is the minimum number of subfields there could be strictly between K and L? What is the maximum number of such subfields? Give examples where these bounds are attained.
+Problem 5 (2015, 5). (a) Let L be a Galois extension of a field K of degree 4. What is the minimum number of subfields there could be strictly between K and L? What is the maximum number of such subfields?
+Give examples where these bounds are attained.
 
 (b) How do these numbers change if we assume only that L is separable (but not necessarily Galois) over K?
 
@@ -114,7 +123,8 @@ Problem 6 (2015, 6). Let R be a commutative algebra over C. A derivation of R is
 
 (a) Describe all derivations of the polynomial ring $\mathbb { C } [ x ]$
 
-(b) Let A be the subring (or C-subalgebra) of ${ \mathrm { E n d } } _ { \mathbb { C } } ( \mathbb { C } [ x ] )$ generated by all derivations of $\mathbb { C } [ x ]$ and the left multiplications by x. Prove that $\mathbb { C } [ x ]$ is a simple left A-module. Note that the inclusion $A $ ${ \mathrm { E n d } } _ { \mathbb { C } } ( \mathbb { C } [ { \bar { x } } ] )$ defines a natural left A-module structure on C[x].
+(b) Let A be the subring (or C-subalgebra) of ${ \mathrm { E n d } } _ { \mathbb { C } } ( \mathbb { C } [ x ] )$ generated by all derivations of $\mathbb { C } [ x ]$ and the left multiplications by x. Prove that $\mathbb { C } [ x ]$ is a simple left A-module.
+Note that the inclusion $A $ ${ \mathrm { E n d } } _ { \mathbb { C } } ( \mathbb { C } [ { \bar { x } } ] )$ defines a natural left A-module structure on C[x].
 
 Problem 7 (2015, 7). Let G be a non-abelian group of order $p ^ { 3 }$ with p a prime.
 
@@ -158,13 +168,16 @@ Problem 6 (2014, 7). Let $C _ { p }$ denote the cyclic group of order $p .$
 
 (b) Let G be a finite group, and let $\rho : G \to { \mathrm { G L } } _ { n } ( \mathbb { Q } )$ be a representation of G over Q. Let $\rho _ { \mathbb { C } } : G \to \mathbf { G } \mathrm { L } _ { n } ( \mathbb { C } )$ denote $\rho$ followed by the inclusion ${ \mathrm { G L } } _ { n } ( \mathbb { Q } ) \to { \mathrm { G L } } _ { n } ( \mathbb { C } )$ . Thus $\rho _ { \mathbb { C } }$ is a representation of G over C, called the complexification of $\rho .$ . We say that an irreducible representation $\rho$ of G is absolutely irreducible if its complexification remains irreducible over C.
 
-Now suppose G is abelian and that every representation of G over Q is absolutely irreducible. Show that $G \cong { \bar { ( } } C _ { 2 } ) ^ { k }$ for some $k ( \mathrm { i . e . , }$ , is a product of cyclic groups of order 2).
+Now suppose G is abelian and that every representation of G over Q is absolutely irreducible.
+Show that $G \cong { \bar { ( } } C _ { 2 } ) ^ { k }$ for some $k ( \mathrm { i . e . , }$ , is a product of cyclic groups of order 2).
 
-Problem 7 (2014, 8). Let G be a finite group and $\mathbb { Z } [ G ]$ the internal group algebra. Let $\mathcal { Z }$ be the center of Z[G]. For each conjugacy class $C \subseteq G$ , let $\begin{array} { r } { P _ { C } = \sum _ { g \in C } g } \end{array}$
+Problem 7 (2014, 8). Let G be a finite group and $\mathbb { Z } [ G ]$ the internal group algebra.
+Let $\mathcal { Z }$ be the center of Z[G]. For each conjugacy class $C \subseteq G$ , let $\begin{array} { r } { P _ { C } = \sum _ { g \in C } g } \end{array}$
 
 (a) Show that the elements $P _ { C }$ form a Z-basis for Z. Hence ${ \mathcal Z } \cong \mathbb { Z } ^ { d }$ as an abelian group, where d is the number of conjugacy classes in G.
 
-(b) Show that if a ring R is isomorphic to $\mathbb { Z } ^ { d }$ as an abelian group, then every element in R satisfies a monic integral polynomial. (Hint: Let $\{ v _ { 1 } , \ldots , v _ { d } \}$ be a basis of R and for a fixed non-zero $r \in R$ , write $\begin{array} { r } { r v _ { i } = \sum _ { j } a _ { i j } v _ { j } } \end{array}$ . Use the Hamilton-Cayley theorem.)
+(b) Show that if a ring R is isomorphic to $\mathbb { Z } ^ { d }$ as an abelian group, then every element in R satisfies a monic integral polynomial.
+(Hint: Let $\{ v _ { 1 } , \ldots , v _ { d } \}$ be a basis of R and for a fixed non-zero $r \in R$ , write $\begin{array} { r } { r v _ { i } = \sum _ { j } a _ { i j } v _ { j } } \end{array}$ . Use the Hamilton-Cayley theorem.)
 
 (c) Let $\pi : G \to \mathbf { G } \mathbf { L } ( V )$ be an irreducible representation of G (over C). Show that $\pi ( P _ { C } )$ acts on V as multiplication by the scalar
 
@@ -178,11 +191,15 @@ where $\chi _ { \pi } ( C )$ is the value of the character $\chi _ { \pi }$ on a
 
 ## 6 2013
 
-Problem 1 (2013, 3.). (a) Suppose that G is a finitely generated group. Let n be a positive integer. Prove that G has only finitely many subgroups of index n
+Problem 1 (2013, 3.). (a) Suppose that G is a finitely generated group.
+Let n be a positive integer.
+Prove that G has only finitely many subgroups of index n
 
-(b) Let p be a prime number. If G is any finitely-generated abelian group, let $t _ { p } ( G )$ denote the number of subgroups of G of index $p .$ Determine the possible values of $t _ { p } ( G )$ as G varies over all finitelygenerated abelian groups.
+(b) Let p be a prime number.
+If G is any finitely-generated abelian group, let $t _ { p } ( G )$ denote the number of subgroups of G of index $p .$ Determine the possible values of $t _ { p } ( G )$ as G varies over all finitelygenerated abelian groups.
 
-Problem 2 (2013, 4.). Suppose that G is a finite group of order 2013. Prove that G has a normal subgroup N of index 3 and that N is a cyclic group. Furthermore, prove that the center of G has order divisible by 11. (You will need the factorization $2 0 1 3 = 3 \cdot 1 1 \cdot 6 1 . )$
+Problem 2 (2013, 4.). Suppose that G is a finite group of order 2013. Prove that G has a normal subgroup N of index 3 and that N is a cyclic group.
+Furthermore, prove that the center of G has order divisible by 11. (You will need the factorization $2 0 1 3 = 3 \cdot 1 1 \cdot 6 1 . )$
 
 Problem 3 (2013, 6). This question concerns an extension K of Q such that $\left[ K : \mathbb { Q } \right] = 8$ . Assume that $K / \mathbb { Q }$ is Galois and let $G = { \mathrm { G a l } } ( K / \mathbb { Q } )$ . Furthermore, assume that G is non-abelian.
 
@@ -190,7 +207,8 @@ Problem 3 (2013, 6). This question concerns an extension K of Q such that $\left
 
 (b) Prove that F has the form $F = \mathbb { Q } ( { \sqrt { d _ { 1 } } } , { \sqrt { d _ { 2 } } } )$ where $d _ { 1 } , d _ { 2 }$ are non-zero integers.
 
-(c) Suppose that G is the quaternionic group. Prove that $d _ { 1 }$ and $d _ { 2 }$ are positive integers.
+(c) Suppose that G is the quaternionic group.
+Prove that $d _ { 1 }$ and $d _ { 2 }$ are positive integers.
 
 Problem 4 (2013, 8). This question concerns the polynomial ring $R = \mathbb { Z } [ x , y ]$ and the ideal $I = ( 5 , x ^ { 2 } + 2 )$ in R.
 
@@ -202,7 +220,8 @@ Problem 4 (2013, 8). This question concerns the polynomial ring $R = \mathbb { Z
 
 ## 7 2012
 
-Problem 1 (2012, 1.). Classify all groups of order 2012 up to isomorphism. (Hint: 503 is prime).
+Problem 1 (2012, 1.). Classify all groups of order 2012 up to isomorphism.
+(Hint: 503 is prime).
 
 Problem 2 (2012, 2.). For any positive integer n, let $G _ { n }$ be the group generated by a and b subject to the following three relations:
 
@@ -234,7 +253,8 @@ Problem 1 (2011, 2.). In this problem, as you apply Sylow’s Theorem, state pre
 
 (b) Suppose that G is a simple group of order 60. Determine the number of p-Sylow subgroups of G for each prime p dividing 60, then prove that G is isomorphic to the alternating group $A _ { 5 }$
 
-Note: in the second part, you needn’t show that $A _ { 5 }$ is simple. You need only show that if there is a simple group of order 60, then it must be isomorphic to $A _ { 5 }$
+Note: in the second part, you needn’t show that $A _ { 5 }$ is simple.
+You need only show that if there is a simple group of order 60, then it must be isomorphic to $A _ { 5 }$
 
 Problem 2 (2011, 3). Describe the Galois group and the intermediate fields of the cyclotomic extension $\mathbb { Q } ( \zeta _ { 1 2 } ) / \mathbb { Q }$
 
@@ -252,7 +272,8 @@ $$
 
 (b) Prove that R is an integrally closed domain.
 
-Problem 4 (2011, 5). Let R be a commutative ring. Recall that an element r of R is nilpotent if $r ^ { n } = 0$ for some positive integer n and that the nilradical of R is the set $N ( R )$ of nilpotent elements.
+Problem 4 (2011, 5). Let R be a commutative ring.
+Recall that an element r of R is nilpotent if $r ^ { n } = 0$ for some positive integer n and that the nilradical of R is the set $N ( R )$ of nilpotent elements.
 
 (a) Prove that
 
@@ -274,7 +295,8 @@ Problem 5 (2011, 6). Given a finite group $G ,$ recall that its regular represen
 
 (b) Let G be a group of order 12. Show that its adjoint representation is reducible; that is, there is an H-invariant subspace of C[H] besides 0 and $\mathbb { C } [ H ]$
 
-Problem 6 (2011, 8). Let R be a commutative integral domain. Show that the following are equivalent:
+Problem 6 (2011, 8). Let R be a commutative integral domain.
+Show that the following are equivalent:
 
 (a) R is a field;
 
@@ -294,7 +316,8 @@ $$
 U = { \Bigg \{ } { \binom { 1 } { 0 } } \ { \stackrel { a } { 1 } } { \Bigg | } a \in \mathbb { F } _ { p } { \Bigg \} } .
 $$
 
-(c) How many subgroups of order p does G have? Hint: compute $g u g ^ { - 1 }$ for $g \in G$ and $u \in U ;$ use this to find the size of the normalizer of U in G.
+(c) How many subgroups of order p does G have?
+Hint: compute $g u g ^ { - 1 }$ for $g \in G$ and $u \in U ;$ use this to find the size of the normalizer of U in G.
 
 Problem 2 (2010, 2). (a) Give definitions of the following terms: (i) a finite length (left) module, (ii) a composition series for a module, and (iii) the length of a module,
 
@@ -318,7 +341,8 @@ Problem 3 (2010, 3). Let F be a field of characteristic $p ,$ and G a group of o
 
 (c) Show there exists a positive integer k such that $u ^ { k } = 0$ . Conclude that for such a k, $( R u ) ^ { k } = 0 .$
 
-(d) Show that R is not a semi-simple ring. (Warning: Please use the definition of a semi-simple ring: do not use the result that a finite length ring fails to be semisimple if and only if it has a non-zero nilpotent ideal.)
+(d) Show that R is not a semi-simple ring.
+(Warning: Please use the definition of a semi-simple ring: do not use the result that a finite length ring fails to be semisimple if and only if it has a non-zero nilpotent ideal.)
 
 Problem 4 (2010, 4). Let $f ( x ) = a _ { n } x ^ { n } + a _ { n - 1 } x ^ { n - 1 } + \cdot \cdot \cdot + a _ { 0 } \in \mathbb { Z } [ x ]$ (where $a _ { n } \neq 0 )$ and let $R = \mathbb { Z } [ x ] / ( f )$ Prove that R is a finitely generated module over Z if and only if $a _ { n } = \pm 1$ .
 
@@ -352,9 +376,11 @@ Problem 7 (2010, 8). Let G be the unique non-abelian group of order 21.
 
 Problem 1 (2009, 1.). (a) Classify all groups of order $2 0 0 9 = 7 ^ { 2 } \times 4 1$
 
-(b) Suppose that G is a group of order 2009. How many intermediate groups are there—that is, how many groups H are there with $1 \subsetneq H \subsetneq G .$ , where both inclusions are proper? (There may be several cases to consider.)
+(b) Suppose that G is a group of order 2009. How many intermediate groups are there—that is, how many groups H are there with $1 \subsetneq H \subsetneq G .$ , where both inclusions are proper?
+(There may be several cases to consider.)
 
-Problem 2 (2009, 2). Let K be a field. A discrete valuation on K is a function $\nu : K \setminus \{ 0 \} \to \mathbb { Z }$ such that
+Problem 2 (2009, 2). Let K be a field.
+A discrete valuation on K is a function $\nu : K \setminus \{ 0 \} \to \mathbb { Z }$ such that
 
 (i) $\nu ( a b ) = \nu ( a ) + \nu ( b )$
 
@@ -390,7 +416,8 @@ Problem 4 (2009, 4). Let F be a field and $p ( x ) \in F [ x ]$ an irreducible p
 
 Problem 5 (2009, 6). Fix a ring R, an R-module M, and an R-module homomorphism $f : M \to M .$
 
-(a) If M satisfies the descending chain condition on submodules, show that if f is injective, then f is surjective. (Hint: note that if f is injective, so are $f \circ f , f \circ f \circ f ,$ etc.)
+(a) If M satisfies the descending chain condition on submodules, show that if f is injective, then f is surjective.
+(Hint: note that if f is injective, so are $f \circ f , f \circ f \circ f ,$ etc.)
 
 (b) Give an example of a ring R, an R-module M, and an injective R-module homomorphism $f : M \to M$ which is not surjective.
 
@@ -404,7 +431,8 @@ Problem 6 (2009, 7). Let G be a finite group, k an algebraically closed field, a
 
 (b) Show that V is finite-dimensional over $k ,$ and conclude that ${ \mathrm { H o m } } _ { k G } ( V , V )$ is also finite dimensional.
 
-(c) Show the inclusion $k \hookrightarrow \operatorname { H o m } _ { k G } ( V , V )$ found in (a) is an isomorphism. (For $f \in { \mathrm { H o m } } _ { k G } ( V , V )$ , view $f$ as a linear transformation and consider $f - \alpha I ,$ , where α is an eigenvalue of f ).
+(c) Show the inclusion $k \hookrightarrow \operatorname { H o m } _ { k G } ( V , V )$ found in (a) is an isomorphism.
+(For $f \in { \mathrm { H o m } } _ { k G } ( V , V )$ , view $f$ as a linear transformation and consider $f - \alpha I ,$ , where α is an eigenvalue of f ).
 
 ## 11 2008
 
@@ -414,11 +442,13 @@ Problem 1 (2008, 1). Let $f ( x )$ be an irreducible polynomial of degree 5 over
 
 (b) Let E be the splitting field of f over Q. Construct a Galois extension K of degree 2 over Q lying in E such that no field F strictly between K and E is Galois over Q.
 
-Problem 2 (2008, 2). Let F be a finite field. Show for any positive integer n that there are irreducible polynomials of degree n in $F [ x ]$
+Problem 2 (2008, 2). Let F be a finite field.
+Show for any positive integer n that there are irreducible polynomials of degree n in $F [ x ]$
 
 Problem 3 (2008, 3.). Show that the order of the group ${ \mathrm { G L } } _ { n } ( \mathbb { F } _ { q } )$ of invertible $n \times n$ matrices over the field $\mathbb { F } _ { q }$ of q elements is given by $( q ^ { n } - 1 ) ( q ^ { n } - q ) \dots ( \bar { q } ^ { n } - \bar { q } ^ { n - 1 } )$
 
-Problem 4 (2008, 5). (a) Let R be a commutative principal ideal domain. Show that any R-module M generated by two elements takes the form $R / ( a ) \oplus R / ( b )$ for some $a , b \in R$ . What more can you say about a and b?
+Problem 4 (2008, 5). (a) Let R be a commutative principal ideal domain.
+Show that any R-module M generated by two elements takes the form $R / ( a ) \oplus R / ( b )$ for some $a , b \in R$ . What more can you say about a and b?
 
 (b) Give a necessary and sufficient condition for two direct sums as in part (a) to be isomorphic as Rmodules.
 
@@ -458,7 +488,8 @@ Problem 3 (2007, 3.). Show there are exactly two groups of order 21 up to isomor
 
 ## 13 2006
 
-Problem 1 (2006, 2). Let K be the field $\mathbb { Q } ( z )$ of rational functions in a variable z with coefficients in the rational field Q. Let n be a positive integer. Consider the polynomial $x ^ { n } - z \in K [ x ]$
+Problem 1 (2006, 2). Let K be the field $\mathbb { Q } ( z )$ of rational functions in a variable z with coefficients in the rational field Q. Let n be a positive integer.
+Consider the polynomial $x ^ { n } - z \in K [ x ]$
 
 (a) Show that the polynomial $x ^ { n } - z$ is irreducible over $K .$
 
@@ -466,7 +497,8 @@ Problem 1 (2006, 2). Let K be the field $\mathbb { Q } ( z )$ of rational functi
 
 (c) Determine the Galois group of the splitting field of $x ^ { 5 } - z$ over the field K.
 
-Problem 2 (2006, 3.). (a) Let $p \ < \ q \ < \ r$ be prime integers. Show that a group of order pqr cannot be simple.
+Problem 2 (2006, 3.). (a) Let $p \ < \ q \ < \ r$ be prime integers.
+Show that a group of order pqr cannot be simple.
 
 (b) Consider groups of orders $2 ^ { 2 } \cdot 3 \cdot p$ where p has the values 5, 7, and 11. For each of those values of $p ,$ either display a simple group of order $2 ^ { 2 } \cdot 3 \cdot p ,$ or show that there cannot be a simple group of that order.
 
@@ -476,7 +508,8 @@ Problem 3 (2006, 4). Let $K / F$ be a finite Galois extension and let $n ~ = ~ [
 
 (The regular representation is defined by letting G act on the group algebra $F [ G ]$ by multiplication on the left.)
 
-(b) Suppose that the Galois group G is cyclic and that F contains a primitive $n ^ { \mathrm { t h } }$ root of unity. Show that there exists an injective homomorphism $\chi : G \to F ^ { \times }$
+(b) Suppose that the Galois group G is cyclic and that F contains a primitive $n ^ { \mathrm { t h } }$ root of unity.
+Show that there exists an injective homomorphism $\chi : G \to F ^ { \times }$
 
 (c) Show that K contains a non-zero element a with the following property:
 
@@ -498,9 +531,11 @@ with entries in the finite field $\mathbb { F } _ { p }$ of $p$ element, where p
 
 (a) Prove that G is non-abelian.
 
-(b) Suppose p is odd. Prove that $g ^ { p } = I _ { 3 }$ for all $g \in G$
+(b) Suppose p is odd.
+Prove that $g ^ { p } = I _ { 3 }$ for all $g \in G$
 
-(c) Suppose that $p = 2$ It is known that there are exactly two non-abelian groups of order 8, up to isomorphism: the dihedral group $D _ { 8 }$ and the quaternionic group. Assuming this fact without proof, determine which of these groups G is isomorphic to.
+(c) Suppose that $p = 2$ It is known that there are exactly two non-abelian groups of order 8, up to isomorphism: the dihedral group $D _ { 8 }$ and the quaternionic group.
+Assuming this fact without proof, determine which of these groups G is isomorphic to.
 
 Problem 5 (2006, 7.). There are five nonisomorphic groups of order 8. For each of those groups G, find the smallest positive integer n such that there is an injective homomorphism $\varphi : G \to S _ { n }$
 
@@ -514,7 +549,10 @@ Problem 2 (2005, 2.). Let $\mathbb { F } _ { 2 }$ be the field with two elements
 
 (b) Use the fact that ${ \mathrm { G L } } _ { 3 } ( \mathbb { F } _ { 2 } )$ is a simple group (which you should not prove) to find the number of elements of order 7 in ${ \mathrm { G L } } _ { 3 } ( \mathbb { F } _ { 2 } )$
 
-Problem 3 (2005, 3). Let G be a finite abelian group. Let $f : \mathbb { Z } ^ { m } \to G$ be a surjection of abelian groups. We may think of f as a homomorphism of Z-modules. Let K be the kernel of $f$
+Problem 3 (2005, 3). Let G be a finite abelian group.
+Let $f : \mathbb { Z } ^ { m } \to G$ be a surjection of abelian groups.
+We may think of f as a homomorphism of Z-modules.
+Let K be the kernel of $f$
 
 (a) Prove that K is isomorphic to $\mathbb { Z } ^ { m }$
 
