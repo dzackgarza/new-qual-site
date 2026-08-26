@@ -21,7 +21,9 @@ from typing import ClassVar
 from urllib.parse import urljoin
 
 import yaml
+from qualc.cli import build_catalog, load
 from qualc.emit import SearchRecordKind
+from qualc.pandoc_batch import PandocServer
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -188,12 +190,15 @@ def move_appearance(manifest_path: Path, card_id: str, destination_slug: str) ->
     manifest_path.write_text(yaml.safe_dump(manifest, sort_keys=False, allow_unicode=True))
 
 
-def catalog_rows(root: Path) -> dict[str, list[tuple]]:
+def build_site(root: Path) -> None:
     subprocess.run(
         [sys.executable, "-m", "qualc", "build", "--root", str(root)],
         check=True,
         capture_output=True,
     )
+
+
+def catalog_rows(root: Path) -> dict[str, list[tuple]]:
     con = sqlite3.connect(root / "build" / "catalog.sqlite")
     return {
         # source_path is excluded: it is a diagnostic, not identity
@@ -207,11 +212,20 @@ def catalog_rows(root: Path) -> dict[str, list[tuple]]:
     }
 
 
+def rebuild_catalog(root: Path) -> dict[str, list[tuple]]:
+    with PandocServer() as pandoc:
+        parsed, _, errors = load(root, pandoc)
+    assert errors == []
+    build_catalog(root, parsed)
+    return catalog_rows(root)
+
+
 def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     work = tmp_path / "repo"
     for sub in ("corpus", "vocabularies", "publications", "site"):
         shutil.copytree(ROOT / sub, work / sub)
     (work / "assets").symlink_to(ROOT / "assets", target_is_directory=True)
+    build_site(work)
     before = catalog_rows(work)
     site = work / "build" / "quarto" / "_site"
 
@@ -386,7 +400,7 @@ def test_corpus_layout_is_semantically_inert(tmp_path: Path) -> None:
     shutil.rmtree(work / "corpus")
     flat.rename(work / "corpus")
 
-    assert catalog_rows(work) == before
+    assert rebuild_catalog(work) == before
     assert stable_route.is_file()
     moved_page = read_html(site / destination_route)
     moved_targets = {resolved_link(destination_route, link.attrs["href"]) for link in moved_page.root.find_all("a")}
