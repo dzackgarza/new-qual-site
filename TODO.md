@@ -16,14 +16,23 @@ The corpus layout nests each listed problem under its collection (`corpus/collec
 For each unchecked item:
 
 1. Read the collection card, its source document, and the listed problem cards.
-2. Compare the source order with `source.problems`. Check each missing or extra entry.
-3. Correct the collection card when the source proves a defect.
-4. Commit the audit. State fixed or not fixed, the reason, and the source evidence.
-5. Use an empty audit commit when no file change is needed.
-6. Add the audit commit hash after `audit commit:`. Check the item.
-7. Commit the queue update separately. Then start the next unchecked item.
 
-Do not change the list when the source is unavailable or ambiguous. State the evidence in an empty audit commit.
+2. Compare the source order with `source.problems`. Check each missing or extra entry.
+
+3. Correct the collection card when the source proves a defect.
+
+4. Commit the audit.
+   State fixed or not fixed, the reason, and the source evidence.
+
+5. Use an empty audit commit when no file change is needed.
+
+6. Add the audit commit hash after `audit commit:`. Check the item.
+
+7. Commit the queue update separately.
+   Then start the next unchecked item.
+
+Do not change the list when the source is unavailable or ambiguous.
+State the evidence in an empty audit commit.
 
 #### Collection queue
 
