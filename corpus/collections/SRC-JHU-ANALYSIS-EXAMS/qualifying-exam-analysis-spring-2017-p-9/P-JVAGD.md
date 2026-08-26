@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-JVAGD
 kind: problem
-title: "be a measurable function and be a monotonic, absolutely continuous function on f"
+title: 'Layer-cake formula with an absolutely continuous weight: $\int_{\RR}\varphi\circ f\,dx=\int_0^\infty m(\{f>t\})\varphi''(t)\,dt$'
 classification:
   areas:
   - real-analysis

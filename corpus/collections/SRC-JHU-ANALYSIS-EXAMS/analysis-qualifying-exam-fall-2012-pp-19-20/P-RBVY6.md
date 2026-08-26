@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-RBVY6
 kind: problem
-title: "the Fourier transform $$"
+title: 'Residue computation of the Fourier transform of $\frac{1}{x^{2}+1}$'
 classification:
   areas:
   - real-analysis

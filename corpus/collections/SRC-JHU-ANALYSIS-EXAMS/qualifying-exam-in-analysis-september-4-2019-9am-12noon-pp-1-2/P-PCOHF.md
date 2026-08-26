@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-PCOHF
 kind: problem
-title: "every closed convex subset of a Hilbert space has a unique element of minimal no"
+title: 'Every closed convex subset of a Hilbert space has a unique element of minimal norm'
 classification:
   areas:
   - real-analysis

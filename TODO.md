@@ -101,25 +101,6 @@ Owner: [issue #9](https://github.com/dzackgarza/new-qual-site/issues/9)
 
 - [ ] Disposition the 19 image-only Anki answers.
 
-### Resolve orphan cards
-
-- [ ] Disposition each orphan listed in `BACKLOG.md`, one at a time.
-
-- [ ] Read one orphan and its known source evidence.
-
-- [ ] Attach it only to a real collection or authored reader location.
-
-- [ ] Record `not yet attachable` when no valid owner is known.
-
-Not yet attachable (no valid owner known; revisit when the source exam is identified):
-
-- P-ULNGG, P-VAZ7S — reconstructed from solutions-only documents; the underlying exam is not identified.
-  P-ULNGG's solution appears in Neil_Spring_2018_Solutions.pdf, but a solution writeup is not provenance.
-
-- P-TEEXE, P-UHFLP — vault-migrated real-analysis problems; no source document identified.
-
-- [ ] Repeat until every orphan has a source-based disposition.
-
 ### Resolve duplicate-body candidates
 
 - [ ] Disposition each duplicate-body group in `BACKLOG.md`, one at a time.

@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-WVJBX
 kind: problem
-title: "is a sequence that converges to 0 in the norm; in other words, $$ | | f _ { n }"
+title: 'A sequence converging to $0$ in $L^2$ has a subsequence converging almost everywhere'
 classification:
   areas:
   - real-analysis

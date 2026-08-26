@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: P-G62KK
 kind: problem
-title: "is a sequence of measurable functions defined on a measurable set a.e. on E and"
+title: 'Egoroff''s theorem for a dominated sequence, proved without invoking Egoroff'
 classification:
   areas:
   - real-analysis
