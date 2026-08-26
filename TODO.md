@@ -786,9 +786,11 @@ Owner: [issue #2](https://github.com/dzackgarza/new-qual-site/issues/2)
 
 ### Current corpus data issues
 
-- [ ] Read `SRC-TOP-WORKSHOP-2020` against its eight source PDFs.
-  Its `Worksheet 1` and `Worksheet 5` sections have null problem lists, so the collection does not validate.
-  Populate or remove each section according to the source mathematics.
+- [x] Read `SRC-TOP-WORKSHOP-2020` against its eight source PDFs.
+  Disposition 2026-08-27: extracted Worksheet 1A (8 May 2016 problems in two groups of 4) and Worksheet 5 (8 May 2013 problems in two groups of 4) from the source PDFs.
+  Created 16 problem cards (WS1-P1–P8, WS5-P1–P8) with titles, classifications, and verbatim-faithful statements.
+  Updated index.md to list all 16 cards in the Worksheet 1 and Worksheet 5 sections.
+  Collection validates under `just check`.
 
 - [ ] Reconcile `assets/attachments/8000e.pdf` as one collection.
   `SRC-ALG-ART-HEACCB`, `SRC-ALG-ART-QHGA3N`, and `SRC-TEXT-SMI` currently share this provenance href.

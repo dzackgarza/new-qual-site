@@ -31,6 +31,14 @@ source:
   sections:
   - name: Worksheet 1
     problems:
+    - P-TOP-WORKSHOP-2020-WS1-P1
+    - P-TOP-WORKSHOP-2020-WS1-P2
+    - P-TOP-WORKSHOP-2020-WS1-P3
+    - P-TOP-WORKSHOP-2020-WS1-P4
+    - P-TOP-WORKSHOP-2020-WS1-P5
+    - P-TOP-WORKSHOP-2020-WS1-P6
+    - P-TOP-WORKSHOP-2020-WS1-P7
+    - P-TOP-WORKSHOP-2020-WS1-P8
   - name: Worksheet 2
     problems:
     - P-TOP-WORKSHOP-2020-WS1B-HW1
@@ -71,6 +79,14 @@ source:
     - P-TOP-WORKSHOP-2020-WS4A-HW4
   - name: Worksheet 5
     problems:
+    - P-TOP-WORKSHOP-2020-WS5-P1
+    - P-TOP-WORKSHOP-2020-WS5-P2
+    - P-TOP-WORKSHOP-2020-WS5-P3
+    - P-TOP-WORKSHOP-2020-WS5-P4
+    - P-TOP-WORKSHOP-2020-WS5-P5
+    - P-TOP-WORKSHOP-2020-WS5-P6
+    - P-TOP-WORKSHOP-2020-WS5-P7
+    - P-TOP-WORKSHOP-2020-WS5-P8
   area: topology
 ---
 

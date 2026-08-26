@@ -1,0 +1,25 @@
+---
+schema: qual/card@1
+id: P-TOP-WORKSHOP-2020-WS5-P6
+kind: problem
+title: Apply Seifert--van Kampen to a wedge sum and identify a presentation complex as a wedge of familiar spaces
+classification:
+  areas:
+  - topology
+  topics:
+  - van Kampen
+  - Fundamental Group
+  - Cell Complexes
+relations: []
+review: draft
+---
+
+::: {.problem}
+(May 2013)
+
+(a) Explain in detail how the Seifert--van Kampen theorem may be used to calculate the fundamental group of a wedge sum $X\vee Y$ of two spaces under suitable assumptions on the spaces.
+Clarify what assumptions on the spaces you are using and how you are using them.
+
+(b) Describe the presentation complex $X_G$ of the group $G=\langle a,b,c:a^2=1\rangle$ as a wedge sum of familiar spaces.
+Explain carefully what results you are using.
+:::
