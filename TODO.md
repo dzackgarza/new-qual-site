@@ -44,11 +44,11 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-ALG-ART-SEPT2019/index.md`](corpus/collections/SRC-ALG-ART-SEPT2019/index.md) — audit commit: dc0ff8314 (verified: 6 source problems, 6 cards, all match)
 
-- [ ] [`corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/index.md`](corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/index.md`](corpus/collections/SRC-ART-ALG-2003-2009-PRELIMS/index.md) — audit commit: ba3ad9c84 (verified: 74 cards, 74 in index, provenance PDF present)
 
-- [ ] [`corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/index.md`](corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/index.md`](corpus/collections/SRC-ART-ALG-2010-2015-PRELIMS/index.md) — audit commit: aa19b0c2a (verified: 60 cards, 60 in index, provenance PDF present)
 
-- [ ] [`corpus/collections/SRC-CA-ART-E3SXDB/index.md`](corpus/collections/SRC-CA-ART-E3SXDB/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-CA-ART-E3SXDB/index.md`](corpus/collections/SRC-CA-ART-E3SXDB/index.md) — audit commit: 0c5e452b3 (verified: 7 cards, 7 in index, provenance empty—homework set, no external source)
 
 - [ ] [`corpus/collections/SRC-CA-ART-T34TG3/index.md`](corpus/collections/SRC-CA-ART-T34TG3/index.md) — audit commit:
 
@@ -102,11 +102,11 @@ State the evidence in an empty audit commit.
 
 - [x] [`corpus/collections/SRC-TOP-2013Q2/index.md`](corpus/collections/SRC-TOP-2013Q2/index.md) — audit commit: 6b962eaa2 (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2015Q2/index.md`](corpus/collections/SRC-TOP-2015Q2/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2015Q2/index.md`](corpus/collections/SRC-TOP-2015Q2/index.md) — audit commit: c2319cf (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2017Q2/index.md`](corpus/collections/SRC-TOP-2017Q2/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2017Q2/index.md`](corpus/collections/SRC-TOP-2017Q2/index.md) — audit commit: 9ec2a963b (8 source problems, 8 cards, all match)
 
-- [ ] [`corpus/collections/SRC-TOP-2018Q2/index.md`](corpus/collections/SRC-TOP-2018Q2/index.md) — audit commit:
+- [x] [`corpus/collections/SRC-TOP-2018Q2/index.md`](corpus/collections/SRC-TOP-2018Q2/index.md) — audit commit: 701e60348 (8 source problems, 8 cards, all match)
 
 - [ ] [`corpus/collections/SRC-TOP-2019Q1/index.md`](corpus/collections/SRC-TOP-2019Q1/index.md) — audit commit:
 
