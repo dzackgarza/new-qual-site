@@ -15,6 +15,13 @@ review: draft
 ---
 
 ::: problem
+Find a basis for the subspace of $\mathbb R^4$ spanned by
+\[
+(1,1,1,1),\qquad (3,4,6,7),\qquad (5,6,8,9).
+\]
+:::
+
+::: solution
 1. It will exactly be the row space of 
 $$
 A = \left(\begin{array}{rrrr}

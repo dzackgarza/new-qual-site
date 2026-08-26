@@ -14,6 +14,18 @@ review: draft
 ---
 
 ::: problem
+Let
+\[
+V=\{(x,y,z)\in\mathbb R^3:3x+4y+5z=0\}.
+\]
+
+1. Show that $V$ is a linear subspace of $\mathbb R^3$.
+2. Prove or disprove that some linear map $S:\mathbb R^3\to\mathbb R^3$ has kernel $V$.
+3. Prove or disprove that some linear map $T:\mathbb R^3\to\mathbb R^3$ has image $V$.
+4. Prove or disprove that some linear map $U:\mathbb R^3\to\mathbb R^3$ has both kernel and image equal to $V$.
+:::
+
+::: solution
 1. $V = \theset{\vector v \in \RR^3 \suchthat \inner{\vector v}{\thevector{3,4,5}} = \vector 0}$
    1. Subspace test: $V \subset X$ is a linear subspace iff $\theset{t\vector v_1 + \vector v_2 \suchthat t\in \RR, \vector v_i \in V} \subseteq V$.
    $$

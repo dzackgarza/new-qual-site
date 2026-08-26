@@ -14,6 +14,10 @@ review: draft
 ---
 
 ::: problem
+Let $z=f(x,y)$ be a smooth surface. Show that the gradient is perpendicular to the level curves.
+:::
+
+::: solution
 1. Definitions:
   - $f: \RR^2 \to \RR, \quad (x,y) \mapsto z = f(x,y)$
   - Level curves are given by $f(x, y) = c$; 

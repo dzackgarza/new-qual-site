@@ -18,7 +18,8 @@ b) Give (and apply) a criterion that shows the above integral either is or is no
 
 6. Use induction to show that for all positive integers $1 ^ { 3 } + 2 ^ { 3 } + \cdot \cdot \cdot + n ^ { 3 } = ( 1 + 2 + \cdot \cdot \cdot + n ) ^ { 2 }$
 
-7. Let $f : X \to Y$ be a map of sets. Give, with proof, necessary and sufficient conditions so that for all subsets $S \subset X , f ^ { - 1 } ( f ( S ) ) = S$
+7. Let $f : X \to Y$ be a map of sets.
+   Give, with proof, necessary and sufficient conditions so that for all subsets $S \subset X , f ^ { - 1 } ( f ( S ) ) = S$
 
 8. Draw representative level sets (i.e. $f ^ { - 1 } ( c )$ for $c \in \mathbb { R } )$ for $f ( x , y ) = x y$ . Next, compute and draw the gradient, $\nabla f$ , at a representative collection of points in $\mathbb { R } ^ { 2 }$ . Explain how these two objects must be related in general.
 

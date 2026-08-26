@@ -14,6 +14,14 @@ review: draft
 ---
 
 ::: problem
+Suppose $(f_n)$ is a sequence of bounded functions from $\mathbb R$ to $\mathbb R$ that converges uniformly to a function $f$. Prove that there is an $M>0$ such that
+\[
+|f_n(x)|\le M
+\]
+for all natural numbers $n$ and all real numbers $x$.
+:::
+
+::: solution
   1. Suppose $f_n \rightrightarrows g$ with each $f_n$ bounded; we want to show that all of the $f_n$ are uniformly bounded by some $M$, i.e.
   $$
   \exists M \suchthat \forall x\in \RR, \forall n\in \NN, \quad \abs{f_n(x)} \leq M.

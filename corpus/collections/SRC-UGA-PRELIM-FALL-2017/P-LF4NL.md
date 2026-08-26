@@ -14,15 +14,23 @@ review: draft
 ---
 
 ::: problem
-5. Let $\delta = \min\theset{\frac 1 2, \sqrt{\frac \varepsilon 2}}$, then 
-$$\abs{x-1} < \frac 1 2 \implies \frac 1 2 < x < \frac 3 2 \implies \abs{x} > \frac 1 2 \implies \frac 1 {\abs x} < 2$$ and so
-  $$\begin{align*}
-  \abs{x-1} < \delta \implies \abs{\frac{x^2+1}{x} - 2} 
-  &= \abs{\frac{(x-1)^2}{x}} \\
-  &= \frac{\abs{x-1}^2}{\abs{x}} \\
-  &< 2{\abs{x-1}^2} \\
-  &< 2{\delta^2} \\
-  &= 2 \left(\frac{\varepsilon} 2\right) \\ 
-  &= \varepsilon. \qed
-  \end{align*}$$
+Use the $\varepsilon$-$\delta$ definition of the limit to prove that
+\[
+\lim_{x\to1}\frac{x^2+1}{x}=2.
+\]
+:::
+
+::: solution
+Let $\varepsilon>0$ and choose
+\[
+\delta=\min\left\{\frac12,\sqrt{\frac\varepsilon2}\right\}.
+\]
+If $|x-1|<\delta$, then $|x|>1/2$. Hence
+\[
+\left|\frac{x^2+1}{x}-2\right|
+=\frac{|x-1|^2}{|x|}
+<2|x-1|^2
+<2\delta^2
+\leq\varepsilon.
+\]
 :::

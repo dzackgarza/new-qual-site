@@ -15,6 +15,10 @@ review: draft
 ---
 
 ::: problem
+Suppose $f:\mathbb R^2\to\mathbb R$ has continuous partial derivatives at $(0,0)$. Prove that $f$ has directional derivatives in every direction at the origin.
+:::
+
+::: solution
 1. Write $f$ as $f(x,y)$, we are then given that $f_x, f_y \in C_0(\theset{0})$. It has the type
   $$
   f: \RR^2 \to \RR \\

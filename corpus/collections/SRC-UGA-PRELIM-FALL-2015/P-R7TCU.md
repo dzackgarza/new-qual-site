@@ -14,6 +14,10 @@ review: draft
 ---
 
 ::: problem
+Suppose $A$ is a $3\times3$ matrix with real entries and eigenvalues $-1$, $0$, and $1$. Prove that $A^3=A$.
+:::
+
+::: solution
 1. We have $p_A(x) = (x+1)(x-1)(x) = x^3 - x$ and so by Cayley-Hamilton, $A^3 - A = 0 \implies A^3 = A$.
    $\qed$
 :::

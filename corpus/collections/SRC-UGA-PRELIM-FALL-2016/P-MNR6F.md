@@ -13,19 +13,21 @@ review: draft
 ---
 
 ::: problem
-1. Claim: this holds iff $f$ is injective iff $f$ has a left inverse.
+Let $f:X\to Y$ be a map of sets. Give, with proof, necessary and sufficient conditions for
+\[
+f^{-1}(f(S))=S
+\]
+for every subset $S\subseteq X$.
+:::
 
-   1. $\implies$: Suppose this holds, and let $x_1,x_2 \in X$.
-      Then suppose $f(a) = f(b)$.
-      We have $f^{-1}(f(\theset{a})) = \theset{a}$ and $f^{-1}(f(\theset{b})) = \theset{b}$ by assumption, so combining these we have
-   $$
-   a = \theset{a} = f\inv f(\theset{a}) = f^{-1}f(a) = f^{-1}f(b) f\inv f(\theset b)= \theset{b} = b,
-   $$
-   so $f$ is injective.
+::: solution
+The condition is that $f$ is injective.
 
-   1. $\neg \implies$ Suppose that this does not hold, then there is some $S \subset X$ such that $f\inv f(S) \neq S$.
-      Then $S - f\inv f(S) \neq \emptyset$,  so pick an element $x$ from it.
+For every map and every $S\subseteq X$, one has $S\subseteq f^{-1}(f(S))$. If $f$ is injective and $x\in f^{-1}(f(S))$, then $f(x)=f(s)$ for some $s\in S$. Injectivity gives $x=s$, so $x\in S$. Thus equality holds.
 
-      Then $f(x) \definedas y \in f(S)$ since $x\in S$, but $f\inv (y) \in f\inv f(S)$ and so there is some $x'$ such that $f\inv (y) = x'$, where $x' \in f\inv(f(S))$.
-      Since $x \in S-f\inv f(S)$ but $x' \in f\inv f (S)$, we have $x\neq x'$, and by definition we have $f(x) = y = f(x')$, we must conclude that $f$ is not injective.
+Conversely, suppose the equality holds for every $S\subseteq X$. If $f(a)=f(b)$, then
+\[
+b\in f^{-1}(f(\{a\}))=\{a\},
+\]
+so $b=a$. Hence $f$ is injective.
 :::

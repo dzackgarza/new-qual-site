@@ -14,12 +14,18 @@ review: draft
 ---
 
 ::: problem
-1. Apply the spectral theorem: $D$ will have the eigenvalues on the diagonal, and $A$ will be the column of eigenvectors.
-   Thus
-$$
-A = \left[ \begin{array} { l l } { 2 } & { 1 } \\ { 1 } & { 1 } \end{array} \right], \quad D = \left[\begin{array}{rr}
-1 & 0 \\
-0 & -2
-\end{array}\right].
-$$
+Find an invertible matrix $A$ and a diagonal matrix $B$ such that
+\[
+\begin{pmatrix}4&-6\\3&-5\end{pmatrix}=ABA^{-1}.
+\]
+:::
+
+::: solution
+The eigenvalues are $1$ and $-2$. Corresponding eigenvectors are $(2,1)^t$ and $(1,1)^t$. Thus one can take
+\[
+A=\begin{pmatrix}2&1\\1&1\end{pmatrix},
+\qquad
+B=\begin{pmatrix}1&0\\0&-2\end{pmatrix}.
+\]
+The columns of $A$ are linearly independent, and the eigenvector equations give $MA=AB$ for the given matrix $M$. Hence $M=ABA^{-1}$.
 :::

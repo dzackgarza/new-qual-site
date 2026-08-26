@@ -14,6 +14,14 @@ review: draft
 ---
 
 ::: problem
+For a positive integer $n$, let $I_n$ denote the $n\times n$ identity matrix.
+
+1. Let $A$ be a $2\times2$ real matrix with eigenvalues $1$ and $-1$. Show that $A^2=I_2$.
+2. Find a $3\times3$ real matrix whose only complex eigenvalues are $1$ and $-1$, but for which $A^2\neq I_3$.
+3. Let $A$ be an $n\times n$ real symmetric matrix whose only complex eigenvalues are $1$ and $-1$. Show that $A^2=I_n$.
+:::
+
+::: solution
 3. 
    1. Since $A$ is $2\times 2$ and has 2 eigenvalues, noting that $\deg \chi_A(x) = 2$, we have $\chi_A(x) = (x-1)(x+1) = x^2 -1$. The minimal polynomial of $A$ divides $\chi_A(x)$, so we have $\chi_A(A) = 0$ and thus $A^2 - I_2 = 0 \implies A^2 = I_2$.
 

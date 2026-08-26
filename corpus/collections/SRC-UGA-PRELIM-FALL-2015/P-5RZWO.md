@@ -13,6 +13,10 @@ review: draft
 ---
 
 ::: problem
+Suppose $f$ and $g$ are injective maps of a set $S$ into itself. Show that the composite function $f\circ g$ is also injective.
+:::
+
+::: solution
 1. Lemma: $f$ is injective $\iff f$ has a left inverse $f\inv$ satisfying $f\inv f(a) = a$.
 
    Suppose $f,g: A \to A$ are injective and $x,y \in A$, we want to show that $(f\circ g)(x) = (f\circ g)(y) \implies x = y$.

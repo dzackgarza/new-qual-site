@@ -15,6 +15,10 @@ review: draft
 ---
 
 ::: problem
+Give an example, with proof, of a power series that converges exactly on the interval $[3,5)$.
+:::
+
+::: solution
 1. We want some power series centered at 4 with convergence radius 1, so something of the form $\sum_n f(n)(x-4)^n$ with $L = \lim \frac{a_{n+1}}{a_n} = 1$.
 
    Then, by plugging in $5$ and $3$, we find that we want $\sum (-1)^n f(n)$ to converge but $\sum f(n)$ to diverge.

@@ -1,6 +1,9 @@
-Problems are weighted equally. Justify your answers. R stands for the real numbers.
+Problems are weighted equally.
+Justify your answers.
+R stands for the real numbers.
 
-1. Suppose  and  are injective maps of a set  into itself. Show that the fcomposite function $f \circ g$ is also injective.
+1. Suppose  and  are injective maps of a set  into itself.
+   Show that the fcomposite function $f \circ g$ is also injective.
 
 2. Use the $\epsilon , \delta$ definition to prove that $\operatorname* { l i m } _ { x \to 2 } x + { \frac { 1 } { x } } = { \frac { 5 } { 2 } } .$
 

@@ -14,6 +14,13 @@ review: draft
 ---
 
 ::: problem
+Use induction to prove that, for every positive integer $n$,
+\[
+1^3+2^3+\cdots+n^3=(1+2+\cdots+n)^2.
+\]
+:::
+
+::: solution
 1. Use the fact that $\sum_{i=1}^n i = \frac 1 2 n(n+1)$, so
 $$\begin{align*}
 \sum_{i=1}^{n+1} i^3 &= \sum_{i=1}^{n} i^3 + (n+1)^3 \\ 
