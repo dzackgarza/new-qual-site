@@ -21,6 +21,7 @@ import shutil
 import sqlite3
 import subprocess
 from collections import Counter
+from concurrent.futures import ProcessPoolExecutor
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
@@ -755,7 +756,7 @@ def write_json_pages(
         "tag-page write",
     )
     html_bodies = _successful_html_outputs(
-        pandoc.write_html([_html_ast(document) for document in documents]),
+        pandoc.write_html(_html_asts(documents)),
         "tag-page HTML write",
     )
     for (path, meta, _), body, html_body in zip(
@@ -860,6 +861,13 @@ def _html_ast(ast: str) -> str:
     return to_json(from_ast(ast).walk(_prepare_html))
 
 
+def _html_asts(documents: list[str]) -> list[str]:
+    if len(documents) < 1_000:
+        return [_html_ast(document) for document in documents]
+    with ProcessPoolExecutor(max_workers=4) as executor:
+        return list(executor.map(_html_ast, documents, chunksize=64))
+
+
 def _statement_ast(ast: str) -> str:
     return to_json(from_ast(ast).walk(_statement_only))
 
@@ -884,7 +892,7 @@ def write_pages(
         "page write",
     )
     html_bodies = _successful_html_outputs(
-        pandoc.write_html([_html_ast(document) for document in documents]),
+        pandoc.write_html(_html_asts(documents)),
         "page HTML write",
     )
     for ((meta, _), path, navigation), body, html_body in zip(
