@@ -296,9 +296,9 @@ Do not use “508 rows exist” as the completion claim.
 
 ### 5.4 Attachment extraction: issue #9
 
-The retained-source migration is complete. The attachment ledger records every readable
-problem-bearing source and each exact unrecoverable remainder. The corpus links the
-transcribed statements to their collections and canonical cards.
+The retained-source migration is complete.
+The attachment ledger records every readable problem-bearing source and each exact unrecoverable remainder.
+The corpus links the transcribed statements to their collections and canonical cards.
 
 ### 5.5 Reader and generator: issues #10 and #41
 
