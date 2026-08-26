@@ -13,8 +13,10 @@ review: draft
 ---
 
 ::: problem
-Let $(X, \mathcal{M}, \mu)$ be a measure space, and let $f \in L^{1}(\mu) \cap L^{\infty}(\mu)$. Prove that
+Let $(X, \mathcal{M}, \mu)$ be a measure space, and let $f \in L^{1}(\mu) \cap L^{\infty}(\mu)$.Prove that
 
-$$\lim_{p \to \infty} \|f\|_p = \|f\|_{\infty}.
-$$
+\[
+\lim_{p \to \infty} \|f\|_p = \|f\|_{\infty}.
+\]
+
 :::

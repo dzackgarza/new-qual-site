@@ -13,10 +13,12 @@ review: draft
 ---
 
 ::: problem
-Let $\{c_n\}$ be a sequence of positive real numbers, and let $f_n : \mathbb{R} \to \mathbb{R}$ be given by
+Let $\{c_n\}$ be a sequence of positive real numbers, and let $f_n : \mathbb{R} \to \mathbb{R}$ begiven by
 
-$$f_n(x) = \sin(x + c_n^2) + \frac{1}{c_n} \sin(c_n x).
-$$
+\[
+f_n(x) = \sin(x + c_n^2) + \frac{1}{c_n} \sin(c_n x).
+\]
+
 
 Prove that the sequence $\{f_n\}$ has a subsequence converging pointwise to a continuous function.
 :::
