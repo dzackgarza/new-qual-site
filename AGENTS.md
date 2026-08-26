@@ -231,6 +231,13 @@ is another source — an exam paper that is its own collection — lists that
 collection instead of copying its problem list. The exam collection owns
 that sheet's provenance href.)
 
+Collection membership follows the mathematical statements present in the
+available source document. It does not follow the historical exam that the
+document describes. Blank pages, missing pages, score tables, and gaps in
+problem numbering do not create missing collection items. Do not invent
+expected cards, mark the collection incomplete, or create recovery work for
+statements that are absent from every available source.
+
 ## Provenance means external oracles
 
 Provenance is any externally authored source: textbooks, problem sheets, exams,
