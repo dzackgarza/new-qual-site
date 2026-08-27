@@ -773,6 +773,24 @@ div.qual-section > .qual-section-qualifier {
   font-style: normal;
 }
 
+/* A review question is apparatus about the card, not part of it, so it joins
+   the metadata band the subtitle and the id already use. The run-in label is
+   what separates it from them: in that band a bare sentence would read as
+   another locator, and the sentence itself has to stay plain text so MathJax
+   can typeset the mathematics inside it. */
+.review-question {
+  margin-block: 0.75rem;
+  color: var(--muted);
+  font-size: var(--label);
+  font-style: normal;
+}
+
+.review-question::before {
+  content: "Asked as ";
+  font-variant: small-caps;
+  font-weight: 700;
+}
+
 /* A revealed answer is a section of the card, not a panel bolted to it: the
    rule at its left is the one the environments above it use, and the accent is
    there because the summary is the only part of it you click. The grey filled
