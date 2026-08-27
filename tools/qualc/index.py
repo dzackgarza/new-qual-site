@@ -29,6 +29,7 @@ create table cards (
   id text primary key,
   kind text not null,
   title text not null,
+  subtitle text,                 -- null when the card has none; nothing derives one
   review text not null,
   source_path text not null,   -- diagnostics and edit links only, never identity
   ast text not null            -- pandoc JSON of the card body
@@ -143,8 +144,8 @@ def build(parsed: list[ParsedCard], db_path: Path) -> None:
     for p in parsed:
         c = p.card
         con.execute(
-            "insert into cards values (?,?,?,?,?,?)",
-            (c.id, c.kind, c.title, c.review, p.source_path, p.ast),
+            "insert into cards values (?,?,?,?,?,?,?)",
+            (c.id, c.kind, c.title, c.subtitle, c.review, p.source_path, p.ast),
         )
         for axis, terms in (
             ("area", c.classification.areas),
