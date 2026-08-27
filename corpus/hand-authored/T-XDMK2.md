@@ -15,10 +15,9 @@ review: reviewed
 ---
 
 ::: {.theorem}
-Let $G$ be a finite group and let $p$ be prime. If $p$ divides $\abs G$, then
-$G$ contains an element of order $p$, and therefore a subgroup of order $p$.
+Let $G$ be a finite group and let $p$ be prime.
+If $p$ divides $\abs G$, then $G$ contains an element of order $p$, and therefore a subgroup of order $p$.
 :::
 
 Cauchy's theorem is the prime-order partial converse to Lagrange's theorem.
-Sylow's first theorem extends this existence statement from $p$ to the full
-prime-power part of $\abs G$.
+Sylow's first theorem extends this existence statement from $p$ to the full prime-power part of $\abs G$.

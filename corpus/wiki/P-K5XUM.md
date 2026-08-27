@@ -41,8 +41,8 @@ Use that $X$ is compact to get a finite subcover.
 :::{.solution}
 \envlist
 
-:::{.proof title="Using the tube lemma without proof"}
-$\impliedby$:
+:::{.proof}
+$\impliedby$:^[Using the tube lemma without proof.]
 
 - By the universal property, the product $X\cross Y$ is equipped with continuous projections $\pi_X: X\cross Y\to X$ and $\pi_Y: X\cross Y\to X$.
 - The continuous image of a compact space is compact, and the images are all of $X$ and $Y$ respectively:

@@ -18,8 +18,8 @@ review: draft
 Prove the open mapping theorem for holomorphic functions: If $f$ is a non-constant holomorphic function on an open set $U$ in $\mathbb{C}$, then $f(U)$ is also an open set.
 :::
 
-:::{.solution title="using the argument principle"}
-Idea:
+:::{.solution}
+Idea:^[Using the argument principle.]
 
 ![](../../assets/30_Complex_Analysis/999_Quals/figures/2022-01-02_02-14-17.png)
 

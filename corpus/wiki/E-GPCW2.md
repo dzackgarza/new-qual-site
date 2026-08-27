@@ -22,8 +22,8 @@ I \da \int_{-1}^1 {1\over (x-a) \sqrt{1-x^2} }\dx = {\pi \over \sqrt{a^2-1}}
 
 :::
 
-:::{.solution title="T-bone"}
-Note the simple pole at $x=a$ and the branch points $x=\pm 1$, coming from factoring $\sqrt{1-z^2} = \sqrt{(1-z)(1+z)}$.
+:::{.solution}
+Note the simple pole at $x=a$ and the branch points $x=\pm 1$, coming from factoring $\sqrt{1-z^2} = \sqrt{(1-z)(1+z)}$.^[T-bone.]
 The standard dog bone contour will work, but will involve a residue at $z=a$ and at $z=\infty$.
 Instead of taking the usual branch cut $[-1, 1]$, take instead $(-\infty, -1] \union [1, \infty)$ and the following T-bone contour (noting that it is oriented *negatively*):
 

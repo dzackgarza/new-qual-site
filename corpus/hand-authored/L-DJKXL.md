@@ -17,15 +17,16 @@ review: reviewed
 ---
 
 ::: {.lemma}
-Let a finite group $P$ of order $p^a$ act on a finite set $X$. Then
+Let a finite group $P$ of order $p^a$ act on a finite set $X$.
+Then
 $$
 \abs X\equiv \abs{X^P}\pmod p.
 $$
 
 ::: {.proof}
-Partition $X$ into its $P$-orbits. A fixed point contributes an orbit of size
-one. Every other orbit has size $[P:P_x]$, which is a power of $p$ larger than
-one by orbit-stabilizer. Those nontrivial orbit sizes vanish modulo $p$, leaving
-only the fixed points.
+Partition $X$ into its $P$-orbits.
+A fixed point contributes an orbit of size one.
+Every other orbit has size $[P:P_x]$, which is a power of $p$ larger than one by orbit-stabilizer.
+Those nontrivial orbit sizes vanish modulo $p$, leaving only the fixed points.
 :::
 :::

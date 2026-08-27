@@ -25,8 +25,8 @@ f_n(z) \definedas \sum_{k=0}^n {z^k \over k!}
 
 :::
 
-:::{.solution title="Using Rouché"}
-For the $n=1$ case, $f_1(z) = 0 \iff 1+z = 0 \iff z=-1$, so this has no roots in $\DD$.
+:::{.solution}
+For the $n=1$ case, $f_1(z) = 0 \iff 1+z = 0 \iff z=-1$, so this has no roots in $\DD$.^[Using Rouché.]
 For $n=2$, factor
 \[
 f_2(z) = 1 + z + z^2 = (z-\zeta_3^2)(z-\zeta_3^{-2})

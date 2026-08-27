@@ -24,8 +24,8 @@ I\da \int_0^\infty {\log(x) \over 1+x^a}\dx
 
 :::
 
-:::{.solution title="Sector monodromy"}
-For the usual reasons, integrals along semicircles of radius $R$ and $\eps$ go to zero, so noting the poles at $\omega_a \da e^{i\pi\over a}$, take an indented sector:
+:::{.solution}
+For the usual reasons, integrals along semicircles of radius $R$ and $\eps$ go to zero, so noting the poles at $\omega_a \da e^{i\pi\over a}$, take an indented sector:^[Sector monodromy.]
 
 ![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-22_05-25-35.png)
 

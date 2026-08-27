@@ -22,8 +22,8 @@ I \da \int_0^\infty {\log(x) \over 1+x^2}\dx = 0
 
 :::
 
-:::{.solution title="Semicircle, real reduction trick"}
-Noting the partial $\zeta_2 = -1$ symmetry, take a branch cut for $\log$ along $\theta = -\pi/2$ and the following semicircular contour:
+:::{.solution}
+Noting the partial $\zeta_2 = -1$ symmetry, take a branch cut for $\log$ along $\theta = -\pi/2$ and the following semicircular contour:^[Semicircle, real reduction trick.]
 
 ![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-22_05-21-05.png)
 

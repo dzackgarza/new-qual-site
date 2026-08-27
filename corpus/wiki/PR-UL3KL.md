@@ -26,5 +26,7 @@ Then
 ::: {.remark}
 Hatcher, §3.3, Exercise 24, which is stated for a closed connected 3-manifold and computes $H_2$ from $H_1 = \ZZ^r \oplus F$.
 
-$H_1$ carries torsion in general — the lens space $L(p,1)$ has $H_1 = \ZZ/p$ — so writing it as $\ZZ^r$ was false. It is $H_2$ that is torsion-free in the orientable case, because Poincaré duality identifies it with $H^1$, and $H^1$ is always torsion-free. The top group is $\ZZ$ only when $M$ is orientable; a closed connected nonorientable $n$-manifold has $H_n = 0$, by Hatcher Theorem 3.26.
+$H_1$ carries torsion in general — the lens space $L(p,1)$ has $H_1 = \ZZ/p$ — so writing it as $\ZZ^r$ was false.
+It is $H_2$ that is torsion-free in the orientable case, because Poincaré duality identifies it with $H^1$, and $H^1$ is always torsion-free.
+The top group is $\ZZ$ only when $M$ is orientable; a closed connected nonorientable $n$-manifold has $H_n = 0$, by Hatcher Theorem 3.26.
 :::

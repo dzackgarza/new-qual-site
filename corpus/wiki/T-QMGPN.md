@@ -22,6 +22,5 @@ A relation is locally the graph of a function wherever the block of the derivati
 :::
 
 ::: {.concept}
-See Munkres, *Analysis on Manifolds*, §9, Theorem 9.2, p. 71.
-The full derivative $D_f(a,b): \RR^{m+n}\to\RR^n$ is never invertible unless $m=0$; the hypothesis is on the $n\times n$ block belonging to the variables being solved for.
+See Munkres, *Analysis on Manifolds*, §9, Theorem 9.2, p. 71. The full derivative $D_f(a,b): \RR^{m+n}\to\RR^n$ is never invertible unless $m=0$; the hypothesis is on the $n\times n$ block belonging to the variables being solved for.
 :::

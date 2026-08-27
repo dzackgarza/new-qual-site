@@ -19,7 +19,6 @@ The inverse defined on the range of $f$ is therefore holomorphic, so the inverse
 :::
 
 ::: {.remark}
-Stein and Shakarchi, *Complex Analysis*, ch. 8 Proposition 1.1.
-The nonvanishing of $f'$ is the content; injectivity alone gives a set-theoretic inverse and nothing more.
+Stein and Shakarchi, *Complex Analysis*, ch. 8 Proposition 1.1. The nonvanishing of $f'$ is the content; injectivity alone gives a set-theoretic inverse and nothing more.
 The converse fails: $f(z) = e^z$ has $f' = e^z$ nowhere zero on $\CC$ and is not injective.
 :::

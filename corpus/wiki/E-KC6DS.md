@@ -22,8 +22,8 @@ review: draft
 
 :::
 
-:::{.solution title="Semicircle monodromy"}
-Note that the poles are at $z=\pm ia$, and since $\lim_{\abs{z}\to\infty}f(z) = 0$ and $\lim{R\to 0} {R\log(R)\over R^2 + a^2} = 0$, an indented semicircular contour will work.
+:::{.solution}
+Note that the poles are at $z=\pm ia$, and since $\lim_{\abs{z}\to\infty}f(z) = 0$ and $\lim{R\to 0} {R\log(R)\over R^2 + a^2} = 0$, an indented semicircular contour will work.^[Semicircle monodromy.]
 
 ![](../../assets/30_Complex_Analysis/040_Residues/figures/2021-12-26_20-04-14.png)
 

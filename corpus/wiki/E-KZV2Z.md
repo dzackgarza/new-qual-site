@@ -24,8 +24,8 @@ I\da \int_\RR {1\over x^2 + 3x+ 2 }\dx
 
 :::
 
-:::{.solution title="Phantom log trick"}
-Note that $f(x) = (x+2)(x+1)$, so the singularities on on $\RR_{< 0}$.
+:::{.solution}
+Note that $f(x) = (x+2)(x+1)$, so the singularities on on $\RR_{< 0}$.^[Phantom log trick.]
 The function isn't even, so a semicircular contour won't work.
 Attempting to find a ray-like symmetry only yields one option:
 \[

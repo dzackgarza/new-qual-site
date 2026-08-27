@@ -14,8 +14,8 @@ relations:
 review: reviewed
 ---
 
-::: {.strategy title="Sylow counting workflow"}
-For each prime $p$ dividing $\abs G$:
+::: {.strategy}
+For each prime $p$ dividing $\abs G$:^[Sylow counting workflow.]
 
 1. Write down every divisor of the prime-to-$p$ factor that is congruent to
    $1$ modulo $p$; these are the only possible values of $n_p$.
