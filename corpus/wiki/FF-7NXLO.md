@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-7NXLO
 kind: fact
-title: What is the Hahn-Banach theorem?
+title: The Hahn-Banach theorem
+prompts:
+- What is the Hahn-Banach theorem?
 classification:
   areas:
   - real-analysis

@@ -14,6 +14,10 @@ classification:
   - Completeness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -33,8 +37,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. If $f$ is continuous, is $f'$ necessarily continuous?
 No: $f(x) = x^2\sin(1/x)$ (with $f(0) = 0$) is differentiable everywhere but $f'$ is discontinuous at $0$.
 Proof: $f'(0) = 0$ (difference quotient $h\sin(1/h) \to 0$), while for $x \ne 0$, $f'(x) = 2x\sin(1/x) - \cos(1/x)$ has no limit as $x \to 0$.

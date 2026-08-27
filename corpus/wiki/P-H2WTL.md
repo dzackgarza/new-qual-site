@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 ::: {.problem}
@@ -28,8 +32,6 @@ Solve the problem without using the Cauchy theorem.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Evaluate the given contour integrals purely by direct parametrization and power series expansions, without using Cauchy's theorem.
 
 * * *

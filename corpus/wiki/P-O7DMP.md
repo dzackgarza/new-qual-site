@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -38,8 +42,6 @@ H(\xi) \da e^{2\pi i \xi} \int_0^1 y e^{2\pi i y \xi }\dy
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $\hat G(\xi) = F(\xi)$ where $G(x) = (1-|x|)^+$ (the tent function) and $F(\xi) = \left(\frac{\sin \pi \xi}{\pi \xi}\right)^2$.
     <2>1. $G$ is even, so $\hat G(\xi) = \int_{-1}^1 (1-|x|)e^{-2\pi i x\xi}\,dx = 2\int_0^1 (1-x)\cos(2\pi x\xi)\,dx$.
         Proof: the sine (imaginary) part of the integral vanishes by oddness.

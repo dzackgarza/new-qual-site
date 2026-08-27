@@ -13,6 +13,10 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -29,8 +33,6 @@ b. Show that if $f\in L^1(\RR^n) \intersect L^\infty(\RR^n)$ and $g\in L^1(\RR^n
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $F(x,y) = f(x)$ and $h(x,y) = f(x - y)g(y)$ are measurable on $\RR^n \cross \RR^n$.
     <2>1. $F$ is measurable.
         Proof: $F = f \circ \pi_1$ where $\pi_1(x,y) = x$ is continuous; composition of a measurable function with a continuous map is measurable.

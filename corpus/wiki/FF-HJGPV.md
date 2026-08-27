@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-HJGPV
 kind: fact
-title: What is the geometric interpretation of Krull's intersection theorem?
+title: Geometric interpretation of Krull's intersection theorem
+prompts:
+- What is the geometric interpretation of Krull's intersection theorem?
 classification:
   areas:
   - algebra

@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-U4FHF
 kind: fact
-title: What is a reduced ring?
+title: Reduced ring
+prompts:
+- What is a reduced ring?
 classification:
   areas:
   - algebra

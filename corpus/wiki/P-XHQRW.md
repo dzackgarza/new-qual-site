@@ -11,14 +11,16 @@ classification:
   - Limits
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
 - Show that if $f\in C^1(\RR)$ and both $\lim_{x\to \infty} f(x)$ and $\lim_{x\to \infty} f'(x)$ exist, then $\lim_{x\to\infty} f'(x)$ must be zero.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Apply the mean value theorem on $[x, x+1]$.
 Proof: $f \in C^1(\RR)$, so for each $x$ there is $\xi_x \in (x, x+1)$ with \[ f(x+1) - f(x) = f'(\xi_x) . \] <1>2. The left-hand side tends to $0$.
 Proof: $\lim_{x\to\infty}f(x)$ exists, so $f(x+1) - f(x) \to L - L = 0$.

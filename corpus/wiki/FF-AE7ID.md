@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-AE7ID
 kind: fact
-title: What is $\chi(A\# B)$?
+title: Euler characteristic of a connected sum
+prompts:
+- What is $\chi(A\# B)$?
 classification:
   areas:
   - topology

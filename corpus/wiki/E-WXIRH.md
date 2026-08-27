@@ -11,6 +11,10 @@ classification:
   - Fubini-Tonelli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 :::{.exercise}
@@ -28,8 +32,6 @@ Fubini-Tonelli, and sketch region to change integration bounds.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. The double integral $\iint_{0 \le y \le x \le 1} |f(y)||g(x)|\,dy\,dx$ is finite.
     Proof: Tonelli: $\int_0^1\int_0^x |f(y)||g(x)|\,dy\,dx \le \int_0^1\int_0^1 |f(y)||g(x)|\,dy\,dx = \|f\|_1\|g\|_1 < \infty$; in particular the hypothesis of Fubini is satisfied for $f(y)g(x)$.
 

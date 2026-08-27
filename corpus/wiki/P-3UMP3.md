@@ -12,6 +12,10 @@ classification:
   - Convergence Tests
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Show that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $f$ be holomorphic in an open neighborhood $U \supset \overline{\mathbb{D}}$ except for a single pole at $z_0 \in \partial \mathbb{D}$ ($|z_0| = 1$). Let $f(z) = \sum_{n=0}^\infty c_n z^n$ be its Taylor expansion in $\mathbb{D}$.
 Prove that:
 

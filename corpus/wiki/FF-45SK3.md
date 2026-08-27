@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-45SK3
 kind: fact
-title: What is Nakayama's lemma for a local ring?
+title: Nakayama's lemma for a local ring
+prompts:
+- What is Nakayama's lemma for a local ring?
 classification:
   areas:
   - algebra

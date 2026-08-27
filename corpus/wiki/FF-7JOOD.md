@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-7JOOD
 kind: fact
-title: What is the diameter of set?
+title: Diameter of a set
+prompts:
+- What is the diameter of set?
 classification:
   areas:
   - real-analysis

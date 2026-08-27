@@ -13,6 +13,10 @@ classification:
   - Uniform Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -35,8 +39,6 @@ review: draft
 - Show that if $f\in C^1$ then $f$ is equal to its Fourier *series*.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 *Setup note.* This is the parent problem of E-TF33D; the Fourier transform is normalized as $\hat f(\xi) = \int f(x)e^{-2\pi i x\xi}\,dx$, and the parts below are proved in the companion cards E-WURI3, E-FZXFR, E-O742O, E-TF33D; we give the consolidated argument.
 
 <1>1. $\hat f$ is bounded and uniformly continuous.

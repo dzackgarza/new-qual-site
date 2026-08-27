@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-NREXC
 kind: fact
-title: What is Nakayama's lemma?
+title: Nakayama's lemma
+prompts:
+- What is Nakayama's lemma?
 classification:
   areas:
   - algebra

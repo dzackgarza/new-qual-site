@@ -10,6 +10,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -17,8 +21,6 @@ If $R_1 \neq R_2$, prove that the radius of convergence, $R$, of the power serie
 What can be said about $R$ when $R_1 = R_2$?
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $R \ge \min\{R_1, R_2\}$: $\sum (a_n + b_n)x^n$ converges absolutely for $|x| < \min\{R_1, R_2\}$.
 Proof: for such $x$, both $\sum a_n x^n$ and $\sum b_n x^n$ converge absolutely, so their sum does (triangle inequality).
 

@@ -14,6 +14,10 @@ classification:
   - Trigonometry
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ and use it to show that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** Compute $\int_{\abs z = 1} \qty{z + \frac1z}^{2n} \frac{dz}{z}$ and use it to show $\int_0^{2\pi} \cos^{2n}\theta\, d\theta = 2\pi \frac{1\cdot 3 \cdots (2n-1)}{2\cdot 4 \cdots (2n)}$.
 
 <1>1. Expand $\qty{z + \frac1z}^{2n} = z^{-2n}(z^2 + 1)^{2n} = \sum_{k=0}^{2n} \binom{2n}{k} z^{2k - 2n}$.

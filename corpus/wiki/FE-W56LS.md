@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FE-W56LS
 kind: example
-title: Does $A^n=B^\n$ imply $A=B$?
+title: $A^n = B^n$ does not imply $A = B$
+prompts:
+- Does $A^n=B^n$ imply $A=B$?
 classification:
   areas:
   - algebra

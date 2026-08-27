@@ -12,6 +12,10 @@ classification:
   - Convergence of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -28,8 +32,6 @@ review: draft
 - Prove the Bolzano-Weierstrass Theorem.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. A convergent sequence cannot have a subsequence converging to a different limit.
 Proof: if $x_n \to x$ then every subsequence converges to $x$: for $\eps > 0$ all but finitely many terms lie within $\eps$ of $x$, so the same holds for the subsequence; limits are unique in $\RR$.
 

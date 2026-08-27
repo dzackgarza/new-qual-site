@@ -12,6 +12,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ dx }.$$
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 Since the integrand $\frac{x \sin(x)}{x^2 + a^2}$ is even in $x$:
 $$
 I = \int_0^\infty \frac{x \sin(x)}{x^2 + a^2}\, dx = \frac{1}{2} \int_{-\infty}^\infty \frac{x \sin(x)}{x^2 + a^2}\, dx = \frac{1}{2} \operatorname{Im} \left( \operatorname{p.v.} \int_{-\infty}^\infty \frac{x e^{ix}}{x^2 + a^2}\, dx \right).

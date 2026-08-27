@@ -13,6 +13,10 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Let $\phi\in L^1(\RR^n)$ such that $\int \phi = 1$ and define $\phi_t(x) = t^{-n
 Show that if $f$ is bounded and uniformly continuous then $f\ast \phi_t \converges{t\to 0}\to f$ uniformly.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Since $\int \phi = 1$ and $\phi_t(x) = t^{-n}\phi(x/t)$, we have $\int \phi_t = 1$ for all $t$.
 Proof: substitute $y = x/t$: $\int t^{-n}\phi(x/t)\,dx = \int \phi(y)\,dy = 1$.
 

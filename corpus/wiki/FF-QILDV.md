@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-QILDV
 kind: fact
-title: Give a categorical/homological corollary of Nakayama's lemma.
+title: Flat modules over a Noetherian ring are free
+prompts:
+- Give a categorical/homological corollary of Nakayama's lemma.
 classification:
   areas:
   - algebra

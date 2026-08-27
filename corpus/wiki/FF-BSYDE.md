@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-BSYDE
 kind: fact
-title: What is a compact operator?
+title: Compact operator
+prompts:
+- What is a compact operator?
 classification:
   areas:
   - real-analysis

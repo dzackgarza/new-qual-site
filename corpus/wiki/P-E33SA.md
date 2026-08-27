@@ -13,6 +13,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -26,8 +30,6 @@ review: draft
 - Find a sequence of continuous functions that does *not* converge uniformly, but still has a pointwise limit that is continuous.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Definition: $f$ is uniformly continuous on a set $E$ iff for every $\eps > 0$ there is a single $\delta > 0$ such that $|x - y| < \delta$, $x, y \in E$ $\Rightarrow$ $|f(x) - f(y)| < \eps$ (the same $\delta$ works for all pairs).
 Proof: this is the definition, in contrast with pointwise continuity, where $\delta$ may depend on the point.
 

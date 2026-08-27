@@ -13,6 +13,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -34,8 +38,6 @@ b.
   .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) Tonelli's theorem (nonnegative case): let $F \ge 0$ be measurable on $\RR^n \times \RR$ (product of Lebesgue $\sigma$-algebras). Then $x \mapsto \int_\RR F(x, t)\,dt$ is measurable, $t \mapsto \int_{\RR^n} F(x, t)\,dx$ is measurable, and
     $$\int_{\RR^n \times \RR} F(x, t)\,d(x, t) = \int_{\RR^n}\left(\int_\RR F(x, t)\,dt\right)dx = \int_\RR\left(\int_{\RR^n} F(x, t)\,dx\right)dt,$$
     all possibly infinite.

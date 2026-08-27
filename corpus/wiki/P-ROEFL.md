@@ -13,6 +13,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Assume $f(z)$ is analytic in ${\mathbb D}$ and $f(0)=0$ and is not a rotation (i
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $f: \mathbb{D} \to \mathbb{D}$ be a holomorphic self-map of the unit disk with $f(0) = 0$ that is not a rotation ($f(z) \neq e^{i\theta} z$). Prove that the series of iterates $\sum_{n=1}^\infty f^n(z)$ converges locally uniformly on $\mathbb{D}$ to a holomorphic function, where $f^1(z) = f(z)$ and $f^{n+1}(z) = f(f^n(z))$.
 
 * * *

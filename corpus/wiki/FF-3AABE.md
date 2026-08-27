@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-3AABE
 kind: fact
-title: What is the reverse triangle inequality?
+title: The reverse triangle inequality
+prompts:
+- What is the reverse triangle inequality?
 classification:
   areas:
   - real-analysis

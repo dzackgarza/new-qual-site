@@ -13,6 +13,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ L^1(\RR^n) \intersect L^\infty(\RR^n) \subset L^2(\RR^n) \qtext{and} \norm{f}_2 
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) Definition: $L^\infty(\RR^n)$ is the space of (equivalence classes of) measurable $f : \RR^n \to \CC$ with $\|f\|_\infty := \inf\{M : |f(x)| \le M \text{ for a.e. } x\} < \infty$, the essential supremum.
     Proof: definition; functions equal a.e. are identified.
 

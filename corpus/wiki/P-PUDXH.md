@@ -13,6 +13,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -29,8 +33,6 @@ Show that
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 *Setup note.* The statement as printed is garbled: the inner integral $\int_0^\infty f(y)\,dy$ does not depend on $x$ and is typically infinite, and the definition of $B$ is malformed. The natural intended statement (a Hardy-type inequality) is: for non-negative measurable $f, g$ on $[0,\infty)$ with
 \[
 A \da \int_0^\infty f(y)\, y^{-1/2}\, dy < \infty, \qquad B \da \qty{\int_0^\infty g(y)^2\, dy}^{1/2} < \infty,

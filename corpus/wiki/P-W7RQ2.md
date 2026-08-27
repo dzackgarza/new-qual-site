@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -31,8 +35,6 @@ f(x) &\da \int_0^{\infty } K_{\delta}(x) e^{-\pi \delta} \delta^{\epsilon - 1} \
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 *Setup note.* Normalize the Fourier transform as $\fourier{f}(\xi) = \int f(x) e^{-2\pi i x\cdot\xi}\,dx$. The Gaussian $K_\delta(x) = \delta^{-n/2}e^{-\pi|x|^2/\delta}$ has Fourier transform $e^{-\pi\delta|\xi|^2}$, and $\int K_\delta = 1$ for every $\delta > 0$.
 
 <1>1. Define $f(x) \da \int_0^\infty K_\delta(x)\, e^{-\pi\delta}\,\delta^{\eps-1}\,d\delta$ for $\eps > 0$.

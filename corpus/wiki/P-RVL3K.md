@@ -13,6 +13,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ L^\infty(X) &\subset L^2(X) \subset L^1(X) \\
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 *Setup note.* The card bundles four facts; the inclusion line $\ell^2(\ZZ) \subset \ell^1(\ZZ)$ is backwards (the true inclusions are $\ell^1 \subset \ell^2 \subset \ell^\infty$), which we correct below. We treat $E \subseteq \RR^n$ with $\mu(E) < \infty$ and $f \in L^p(E)$.
 
 <1>1. $\norm{f}_{L^p} \to \norm{f}_\infty$ as $p \to \infty$.

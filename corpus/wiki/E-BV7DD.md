@@ -13,6 +13,10 @@ classification:
   - Laurent Series
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ Show (i) using (1) as well as, (ii) without using (1) that there exists a positi
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:**
 1. For any polynomial $p(z)$, $R > 0$, and integer $m \geq 1$, prove that $M_R = \sup_{|z|=R} |z^m p(z) - 1| > 1$.
 2. For $K = \{z \in \mathbb{C} : r \leq |z| \leq R\}$ with $0 < r < R$, prove the existence of $\varepsilon_0 > 0$ such that $\sup_{z \in K} |p(z) - z^{-m}| \geq \varepsilon_0$ for all polynomials $p$:

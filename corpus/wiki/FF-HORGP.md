@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-HORGP
 kind: fact
-title: Give several equivalent characterizations of completeness.
+title: Equivalent characterizations of completeness
+prompts:
+- Give several equivalent characterizations of completeness.
 classification:
   areas:
   - real-analysis

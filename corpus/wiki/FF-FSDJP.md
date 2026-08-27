@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-FSDJP
 kind: fact
-title: What does small tails mean? Absolute continuity?
+title: Small tails and absolute continuity for $L^1$ functions
+prompts:
+- What does small tails mean? Absolute continuity?
 classification:
   areas:
   - real-analysis

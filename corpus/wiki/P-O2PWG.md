@@ -13,6 +13,10 @@ classification:
   - Completeness
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -23,8 +27,6 @@ review: draft
 - Show that if $K$ is compact and $F$ is closed with $K, F$ disjoint then $\dist(K, F) > 0$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Every compact set $K$ in a metric space is closed and bounded.
 <2>1. $K$ is closed: given $x \notin K$, for each $y \in K$ choose disjoint open $U_y \ni y$, $V_y \ni x$; $\{U_y\}_{y \in K}$ is an open cover with a finite subcover $U_{y_1}, \ldots, U_{y_n}$; then $V = \bigcap_i V_{y_i}$ is an open neighborhood of $x$ disjoint from $K$.
 Proof: Hausdorff separation + finite subcover.

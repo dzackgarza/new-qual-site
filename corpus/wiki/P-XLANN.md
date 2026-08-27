@@ -13,6 +13,10 @@ classification:
   - Riesz Representation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -31,8 +35,6 @@ f &\mapsto \int_0^1 fg
   defines an element of $L^1([0, 1])\dual$ with $\norm{\Lambda_g}_{L^1([0, 1])\dual}= \norm{g}_{L^\infty([0, 1])}$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $\norm{g}_{L^p} \to \norm{g}_{L^\infty}$ as $p \to \infty$.
     Proof: $\mu([0,1]) = 1 < \infty$. Upper bound: $\norm{g}_p \le \norm{g}_\infty \mu([0,1])^{1/p} = \norm{g}_\infty$, so $\limsup_p \norm{g}_p \le \norm{g}_\infty$. Lower bound: for any $M < \norm{g}_\infty$, $\mu\{|g| > M\} > 0$ and $\norm{g}_p \ge M\,\mu\{|g|>M\}^{1/p} \to M$; hence $\liminf_p \norm{g}_p \ge M$ for all $M < \norm{g}_\infty$, so $\liminf_p \norm{g}_p \ge \norm{g}_\infty$. Combining: the limit exists and equals $\norm{g}_\infty$. (If $\norm{g}_\infty = 0$ it is trivial.)
 <1>2. (b) $\Lambda_g$ is well-defined and bounded on $L^1$.

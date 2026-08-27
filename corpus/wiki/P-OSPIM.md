@@ -13,6 +13,10 @@ classification:
   - Convergence of Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -30,8 +34,6 @@ b. Let $f_k$ be a sequence of extended real-valued Lebesgue measurable function.
     ii. Carefully state Fatou's Lemma and deduce the Monotone Converge Theorem from it.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (b)i. For a sequence of extended-real measurable $f_k$: $\inf_k f_k$ and $\sup_k f_k$ are measurable.
     <2>1. $\sup_k f_k$ is measurable: for every $a$, $\{x : \sup_k f_k(x) \le a\} = \bigcap_k\{x : f_k(x) \le a\}$.
         Proof: $\sup_k f_k \le a$ iff $f_k \le a$ for every $k$; countable intersections of measurable sets are measurable.

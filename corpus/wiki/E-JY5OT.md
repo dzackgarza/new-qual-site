@@ -11,6 +11,10 @@ classification:
   - Sequences of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -23,8 +27,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Reverse triangle inequality: $||x| - |y|| \le |x - y|$ in any normed space.
 <2>1. $|x| \le |x - y| + |y|$, so $|x| - |y| \le |x - y|$.
 Proof: triangle inequality applied to $x = (x - y) + y$.

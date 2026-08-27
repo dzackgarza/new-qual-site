@@ -11,6 +11,10 @@ classification:
   - Closure
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ a. Show that $E\perp \subseteq H$ is a closed subspace.
 b. Show that $(E^\perp)^\perp = \cl_H(E)$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $E^\perp$ is a subspace of $H$.
 Proof: $E^\perp = \{x \in H : \langle x, e\rangle = 0 \ \forall e \in E\}$.
 If $x, y \in E^\perp$ and $\alpha \in \CC$, then $\langle \alpha x + y, e\rangle = \alpha\langle x,e\rangle + \langle y,e\rangle = 0$ for all $e \in E$, so $\alpha x + y \in E^\perp$.

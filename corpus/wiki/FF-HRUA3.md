@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-HRUA3
 kind: fact
-title: What does it mean for a set to be nowhere dense?
+title: Nowhere dense set
+prompts:
+- What does it mean for a set to be nowhere dense?
 classification:
   areas:
   - real-analysis

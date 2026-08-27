@@ -12,14 +12,16 @@ classification:
   - L²
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
 Show that the set \( \ts{ u_k(j) \da \delta_{ij} } \subseteq \ell^2(\ZZ) \) and forms an orthonormal system.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Each $u_k = (\delta_{kj})_{j \in \ZZ}$ lies in $\ell^2(\ZZ)$.
 Proof: $\|u_k\|_2^2 = \sum_j |\delta_{kj}|^2 = 1 < \infty$.
 

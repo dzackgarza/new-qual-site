@@ -10,6 +10,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ a. Prove that \( \sup_k f_k \) is a Lebesgue measurable function.
 b. Prove that if \( \lim_{k \to \infty } f_k(x) \) exists for every \( x \in \RR^n \) then \( \lim_{k\to \infty } f_k \) is also a measurable function.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $\sup_k f_k$ is measurable.
 Proof: for every $a \in \RR$, \[ \Big\{\sup_k f_k \le a\Big\} = \bigcap_k \big\{f_k \le a\big\}, \] a countable intersection of measurable sets (each $f_k$ is measurable), hence measurable.
 <1>2. (b) Reduce $\lim_k f_k$ to operations on measurable functions.

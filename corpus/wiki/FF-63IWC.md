@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-63IWC
 kind: fact
-title: What is equicontinuity? Uniform equicontinuity?
+title: Equicontinuity and uniform equicontinuity
+prompts:
+- What is equicontinuity? Uniform equicontinuity?
 classification:
   areas:
   - real-analysis

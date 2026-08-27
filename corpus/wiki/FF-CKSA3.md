@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-CKSA3
 kind: fact
-title: What is Minkowski's inequality?
+title: Minkowski's inequality
+prompts:
+- What is Minkowski's inequality?
 classification:
   areas:
   - real-analysis

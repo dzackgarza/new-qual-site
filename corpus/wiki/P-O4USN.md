@@ -11,6 +11,10 @@ classification:
   - Radon-Nikodym
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Let $\nu, \mu$ be signed measures, and show that
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\nu \perp \mu$: there is a measurable $A$ with $|\mu|(A) = 0$ and $|\nu|(A^c) = 0$.
     Proof: definition of mutual singularity (equivalently $\nu \perp |\mu|$; singularity with $\mu$ is singularity with $|\mu|$ since $\mu$ and $|\mu|$ are mutually absolutely continuous).
 

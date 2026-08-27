@@ -13,6 +13,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\|f \ast \phi_t - f\|_1 \to 0$ as $t \to 0$ for $f \in L^1$ and $\phi$ an approximate identity.
 Proof: standard — rewrite $f\ast\phi_t(x) - f(x) = \int\phi(y)(f(x - ty) - f(x))\,dy$ using $\int\phi = 1$; then $\|f\ast\phi_t - f\|_1 \le \int|\phi(y)|\|\tau_{-ty}f - f\|_1\,dy \to 0$ by strong continuity of translation in $L^1$ (split into $|y| \le M$ and the $L^1$ tail of $\phi$).
 

@@ -11,6 +11,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -22,8 +26,6 @@ Hf(x) \geq {c \over (1 + \abs x)^n }
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Since $f \neq 0$ in $L^1$, there is a ball $B(y,r)$ with $\int_{B(y,r)}|f| > 0$.
     Proof: if $\int_{B}|f| = 0$ for every ball, then by the Lebesgue differentiation theorem $f = 0$ a.e., contradicting $f \neq 0$ in $L^1$. (Equivalently: $\int|f| > 0$ forces a set of positive measure where $|f| > 0$, and a compact set of positive measure inside it is covered by finitely many balls where the integral is positive.)
 <1>2. For every $x$, the ball $B(x, |x-y|+r)$ contains $B(y,r)$.

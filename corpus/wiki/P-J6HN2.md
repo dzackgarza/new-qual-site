@@ -12,6 +12,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ review: draft
 - Show that if $\theset{f_n}$ is in $L^1$ and $\sum \int \abs{f_n} < \infty$ then $\sum f_n$ converges to an $L^1$ function and $$\int \sum f_n = \sum \int f_n.$$
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (Fatou via MCT) For measurable $f_n \ge 0$: $\int \liminf_n f_n \le \liminf_n \int f_n$.
 <2>1. Define $g_k = \inf_{n \ge k} f_n$; then $g_k \uparrow \liminf_n f_n$ pointwise.
 Proof: $g_k$ is measurable (infimum of a countable family), nondecreasing in $k$, and $\sup_k g_k = \liminf_n f_n$ by definition.

@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-XZGIY
 kind: fact
-title: What is the Arzela-Ascoli theorem?
+title: The Arzela-Ascoli theorem
+prompts:
+- What is the Arzela-Ascoli theorem?
 classification:
   areas:
   - real-analysis

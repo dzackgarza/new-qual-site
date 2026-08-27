@@ -12,6 +12,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ Show that if $f_j \in L^{p_j}$ for each $1\leq j \leq n$, then
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Reduce to the case where all $p_j < \infty$.
     Proof: if some $p_j = \infty$, then $|f_j| \le \norm{f_j}_\infty$ a.e., so $\norm{\prod f_j}_r \le \norm{f_j}_\infty \norm{\prod_{k\ne j} f_k}_r$, reducing to the $(n-1)$-term case. Iterating, assume $1 \le p_j < \infty$.
 <1>2. Set $q_j = p_j/r$; then $q_j \ge 1$ and $\sum_j 1/q_j = 1$.

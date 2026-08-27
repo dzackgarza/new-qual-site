@@ -12,6 +12,10 @@ classification:
   - L²
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ review: draft
   - Prove that there exists a unique $g\in L^2(X)$ such that $\Lambda(f) = \int_X g \bar f$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $M = \ker \Lambda = \{f \in L^2(X) : \Lambda(f) = 0\}$ is a closed subspace.
 Proof: $\Lambda$ is a bounded linear functional, hence continuous, so its kernel is closed; it is a linear subspace as the kernel of a linear map.
 

@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -35,8 +39,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. TFAE: (1) $E$ is measurable; (2) $E = H \union Z$ with $H \in F_\sigma$ and $Z$ null; (3) $E = V \sm Z'$ with $V \in G_\delta$ and $Z'$ null.
     <2>1. (1) $\implies$ (2): take closed $F_k \subseteq E$ with $m(E \sm F_k) < 1/k$ (inner regularity), set $H = \bigcup_k F_k$ (an $F_\sigma$) and $Z = E \sm H$; then $m(Z) \le m(E \sm F_k) < 1/k$ for all $k$, so $Z$ is null.
         Proof: $H \subseteq E$, and $E = H \union Z$ with $H \cap Z = \emptyset$.

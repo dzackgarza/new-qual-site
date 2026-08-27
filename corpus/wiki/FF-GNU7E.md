@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-GNU7E
 kind: fact
-title: What is the Borel-Cantelli lemma?
+title: The Borel-Cantelli lemma
+prompts:
+- What is the Borel-Cantelli lemma?
 classification:
   areas:
   - real-analysis

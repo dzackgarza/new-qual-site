@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-LMANJ
 kind: fact
-title: Where is $x^p$ integrable in $\RR$? (Depending on $p$)
+title: Integrability of $x^p$ on $(0,1)$ and $(1,\infty)$
+prompts:
+- Where is $x^p$ integrable in $\RR$? (Depending on $p$)
 classification:
   areas:
   - real-analysis

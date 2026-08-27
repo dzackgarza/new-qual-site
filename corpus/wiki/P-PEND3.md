@@ -12,6 +12,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -37,8 +41,6 @@ Integrability
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (Continuity from below.)
 If $E_j \nearrow E$, then $\mu^*(E_j) \nearrow \mu^*(E)$.
 Proof: monotonicity of $\mu^*$ gives $\mu^*(E_j) \le \mu^*(E)$ for each $j$.

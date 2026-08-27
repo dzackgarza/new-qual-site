@@ -13,6 +13,10 @@ classification:
   - Morera
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 ::: {.exercise}
@@ -20,8 +24,6 @@ Show that if $\theset{f_n}$ is a sequence of holomorphic functions converging un
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $(f_n)$ be a sequence of holomorphic functions on a domain $D \subset \mathbb{C}$ such that $f_n \to f$ uniformly on compact subsets of $D$ (locally uniformly).
 Prove that:
 

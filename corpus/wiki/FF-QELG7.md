@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-QELG7
 kind: fact
-title: What is Krull's theorem?
+title: Krull's theorem
+prompts:
+- What is Krull's theorem?
 classification:
   areas:
   - algebra

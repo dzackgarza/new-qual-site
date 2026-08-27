@@ -11,6 +11,10 @@ classification:
   - Functional Analysis
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -24,8 +28,6 @@ Show that for all $x\in H$,
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $M = \{x : Ux = x\}$ is a closed linear subspace, and $M^\perp = \overline{\mathrm{ran}(U - I)}$.
     <2>1. $M$ is a linear subspace: if $Ux = x$ and $Uy = y$ then $U(x + y) = x + y$ and $U(\alpha x) = \alpha x$.
         Proof: $U$ is linear.

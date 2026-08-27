@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-JBCFQ
 kind: fact
-title: Define $\limsup, \liminf$ for sequences of sets. What are their containments?
+title: $\limsup$ and $\liminf$ of a sequence of sets
+prompts:
+- Define $\limsup, \liminf$ for sequences of sets. What are their containments?
 classification:
   areas:
   - real-analysis

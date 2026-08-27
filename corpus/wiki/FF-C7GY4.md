@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-C7GY4
 kind: fact
-title: Where is ${1\over x^p}$ integrable in $\RR$? (Depending on $p$)
+title: Integrability of $1/x^p$ on $(0,1)$ and $(1,\infty)$
+prompts:
+- Where is ${1\over x^p}$ integrable in $\RR$? (Depending on $p$)
 classification:
   areas:
   - real-analysis

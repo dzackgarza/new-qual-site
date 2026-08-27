@@ -10,6 +10,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -27,8 +31,6 @@ m_*(E) \leq m_*(G) \leq m_*(E) + \epsilon
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (Countable subadditivity.) $m_*(\cup_{j\ge 1} E_j) \le \sum_{j\ge 1} m_*(E_j)$.
     Proof: if $\sum_j m_*(E_j) = \infty$ there is nothing to prove. Otherwise, fix $\eps > 0$. By definition of $m_*$ as an infimum over countable coverings by boxes, for each $j$ choose a cover $\{Q_{j,k}\}_k$ of $E_j$ by boxes with
     \[

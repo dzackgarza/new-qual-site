@@ -10,14 +10,16 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.problem}
 Show that $E$ is measurable iff $E$ is regular.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 *Setup note.* For Lebesgue measure on $\RR^n$, "regular" means: $\mu^*(E) = \inf\{\mu(G) : G \supseteq E,\ G \text{ open}\}$ (outer) and $\mu_*(E) = \sup\{\mu(F) : F \subseteq E,\ F \text{ compact}\}$ (inner, with $\mu_*(E) = \mu^*(E)$). We prove measurability is equivalent to regularity.
 
 <1>1. Measurable $\Rightarrow$ outer regular.

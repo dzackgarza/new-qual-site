@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-UYMWY
 kind: fact
-title: What is the one-step submodule test?
+title: The one-step submodule test
+prompts:
+- What is the one-step submodule test?
 classification:
   areas:
   - algebra

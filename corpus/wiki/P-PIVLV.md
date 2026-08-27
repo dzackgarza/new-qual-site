@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -19,8 +23,6 @@ Prove that if $L^q(X) \subseteq L^p(X)$, then $X$ does not contain sets of arbit
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. We prove the contrapositive: if $X$ contains sets of arbitrarily large finite measure, then $L^q \not\subseteq L^p$.
 Proof: first build pairwise disjoint measurable $E_n$ with $2^n \le \mu(E_n) < \infty$: inductively, choose a measurable $B_n$ with $\mu(B_n) \ge 2^n + \sum_{k<n} \mu(E_k)$ (possible since arbitrarily large finite sets exist), and set $E_n = B_n \setminus \cup_{k<n} E_k$; then $\mu(E_n) \ge \mu(B_n) - \sum_{k<n}\mu(E_k) \ge 2^n$.
 <1>2. Define $f = \sum_n \mu(E_n)^{-1/p}\chi_{E_n}$.

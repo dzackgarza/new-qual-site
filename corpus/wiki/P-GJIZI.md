@@ -13,6 +13,10 @@ classification:
   - Convergence of Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ c. Use the Dominated Convergence Theorem to evaluate
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $f \in L^1(\RR^n) \Rightarrow |f(x)| < \infty$ for a.e. $x$.
     Proof: $\{x : |f(x)| = \infty\} = \bigcap_{M} \{x : |f(x)| \ge M\}$ has measure $0$: else $m\{|f| \ge M\} \ge \delta > 0$ for all $M$, giving $\int |f| \ge M\delta \to \infty$, contradicting $f \in L^1$. More directly: $\int |f| < \infty$ forces $\{|f| = \infty\}$ null (Markov: $m\{|f| \ge M\} \le \|f\|_1/M \to 0$).
 

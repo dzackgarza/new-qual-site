@@ -12,14 +12,16 @@ classification:
   - Series of Numbers
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
 Show that for $0 < p < q \leq \infty$, $\norm{a}_{\ell^q} \leq \norm{a}_{\ell^p}$ over $\CC$, where $\norm{a}_{\infty } \da \sup_j \abs{a_j}$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Case $q = \infty$: $\|a\|_\infty = \sup_j|a_j| \le \|a\|_p$.
 Proof: $|a_j|^p \le \sum_j |a_j|^p = \|a\|_p^p$ for every $j$, so $\sup_j |a_j| \le \|a\|_p$.
 

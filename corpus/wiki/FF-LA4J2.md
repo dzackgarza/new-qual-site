@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-LA4J2
 kind: fact
-title: What is the Caratheodory characterization of outer measure?
+title: The Caratheodory criterion for measurability
+prompts:
+- What is the Caratheodory characterization of outer measure?
 classification:
   areas:
   - real-analysis

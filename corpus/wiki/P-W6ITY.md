@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -29,8 +33,6 @@ f(x) \da x^{- \alpha} \abs{ \log(x) }^{ \beta}
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Case (i) ($a < p < b$): define $f$ piecewise.
     Proof: take, for fixed $\delta > 0$ (chosen below),
     \[

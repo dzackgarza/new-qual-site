@@ -13,6 +13,10 @@ classification:
   - Poles
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 :::{.problem}
@@ -34,8 +38,6 @@ where
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $S = \{z \in \mathbb{C} : 0 < |z-a| \leq R, 0 \leq \arg(z-a) \leq \beta_0\}$ with $0 < \beta_0 \leq 2\pi$.
 Let $f: S \to \mathbb{C}$ be continuous with $\lim_{z \to a, z \in S} (z-a) f(z) = A \in \mathbb{C}$.
 Prove that along the circular arcs $\gamma_r(t) = a + r e^{it}$ ($t \in [0, \beta_0]$), $$\lim_{r \to 0^+} \int_{\gamma_r} f(z) \, dz = i A \beta_0.$$

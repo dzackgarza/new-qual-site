@@ -13,6 +13,10 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.exercise}
@@ -36,8 +40,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Note:** the card mixes concrete theorems with study advice ("apply Fubini to literally anything", "apply Cauchy–Schwarz to anything"); the solution covers the concrete statements.
 
 <1>1. Translation and dilation invariance of the Lebesgue integral: $\int \tau_h f = \int f$ where $\tau_h f(x) = f(x + h)$, and $\int f_\delta = \int f$ where $f_\delta(x) = \delta^{-n}f(x/\delta)$.

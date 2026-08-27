@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FT-MHQGF
 kind: theorem
-title: Are singletons open or closed?
+title: Singletons are closed in Hausdorff spaces
+prompts:
+- Are singletons open or closed?
 classification:
   areas:
   - topology

@@ -12,6 +12,10 @@ classification:
   - Norms
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ f \in L^p, g\in L^q \implies f \convolve g \in L^r \text{ and } \norm{f \convolv
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Setup: $1 \le p, q, r \le \infty$ with $\frac{1}{p} + \frac{1}{q} = 1 + \frac{1}{r}$; $f \in L^p$, $g \in L^q$ on $\RR^n$. Claim: $f \ast g \in L^r$ with $\|f \ast g\|_r \le \|f\|_p\|g\|_q$. This is Young's convolution inequality.
     Proof: standard theorem; we prove it via the two endpoint estimates and Riesz–Thorin interpolation.
 

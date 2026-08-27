@@ -14,6 +14,10 @@ classification:
   - Lp Spaces
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -32,8 +36,6 @@ Let $(X, \mathcal{M}, \mu)$ be a measure space and prove the following propertie
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. $\|fg\|_1 \le \|f\|_1\|g\|_\infty$ for measurable $f, g$.
     Proof: $|fg| \le |f|\|g\|_\infty$ a.e., so $\int|fg| \le \|g\|_\infty\int|f|$ (Hölder with $p = 1$, $q = \infty$).
 

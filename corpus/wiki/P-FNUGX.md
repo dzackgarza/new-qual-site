@@ -14,6 +14,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -38,8 +42,6 @@ review: draft
 - Show that $\sum {x^n \over n!}$ converges uniformly on any compact subset of $\RR$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. A uniform limit of bounded functions is bounded.
 Proof: pick $N$ with $\|f_n - f\|_\infty < 1$ for $n \ge N$; then $\|f\|_\infty \le \|f_N\|_\infty + 1 < \infty$.
 

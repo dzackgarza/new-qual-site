@@ -12,6 +12,10 @@ classification:
   - Small Tails
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -28,8 +32,6 @@ review: draft
 	- Find a sequence that converges but not absolutely.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. What convergence of a series means, and how to check it.
     Proof: $\sum_{n\ge 1}a_n$ converges iff the sequence of partial sums $s_N = \sum_{n\le N}a_n$ converges (to a finite limit). Practical checks: (i) necessary: $a_n \to 0$; (ii) Cauchy criterion: for every $\eps > 0$ there is $N$ with $|\sum_{n=M+1}^{K}a_n| < \eps$ for all $K > M \ge N$; (iii) tests: comparison, ratio, root, integral, alternating series, and absolute convergence.
 <1>2. Uniform convergence of a series, and how to disprove it.

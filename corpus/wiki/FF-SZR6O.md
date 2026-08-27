@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-SZR6O
 kind: fact
-title: What is a meagre set?
+title: Meagre set
+prompts:
+- What is a meagre set?
 classification:
   areas:
   - real-analysis

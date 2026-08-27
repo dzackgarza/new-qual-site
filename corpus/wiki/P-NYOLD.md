@@ -13,6 +13,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -39,8 +43,6 @@ u(x, y) \converges{y\to 0} \to f(x)
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) Setup: $P_y(x) = \frac{1}{\pi}\frac{y}{x^2 + y^2}$ (the card's formula writes $t$ in place of $x$; the kernel lives in the $x$-variable), $u(x,y) = (f \ast P_y)(x)$. The hint splits $\RR$ into $|t| < y$ and dyadic annuli $A_k = \{2^k y \le |t| < 2^{k+1} y\}$.
     Proof: $\int_\RR P_y = 1$ (substitute $s = t/y$: $\frac{1}{\pi}\int \frac{y}{t^2+y^2}dt = \frac{1}{\pi}\int\frac{ds}{1+s^2} = 1$).
 

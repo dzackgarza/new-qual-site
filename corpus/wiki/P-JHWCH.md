@@ -13,6 +13,10 @@ classification:
   - Continuity of Measure
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -33,8 +37,6 @@ b. Let $\ts{E_j}_{j\in \NN} \subseteq \mathcal{M}(\RR^n)$ with $E_j \nearrow E$.
   .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) For $f, g \in L^+(\RR)$: $\int (f + g) = \int f + \int g$.
     <2>1. For simple functions $s = \sum_i a_i \chi_{A_i}$, $t = \sum_j b_j \chi_{B_j}$ (with the $A_i$'s and $B_j$'s disjoint): $\int (s + t) = \sum_i a_i m(A_i) + \sum_j b_j m(B_j) = \int s + \int t$.
         Proof: refine the common refinement $A_i \cap B_j$: $s + t = \sum_{i,j}(a_i + b_j)\chi_{A_i \cap B_j}$, and the integral is the sum over the refinement.

@@ -12,6 +12,10 @@ classification:
   - Blaschke Factors
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ Use $\psi_{a} (f(z))$ (where $a=f(0)$, $\displaystyle \psi_a(z) = \frac{a - z}{1
 :::
 
 ::: {.solution}
-> **AI-Generated Solution** (Gemini 3.7 Flash)
-
 **Goal:** Let $f: \mathbb{D} \to \mathbb{D}$ be a holomorphic self-map of the unit disk with $a = f(0) \in \mathbb{D}$.
 Using the Blaschke automorphism $\psi_a(w) = \frac{a - w}{1 - \bar{a}w}$, prove that for all $z \in \mathbb{D}$: $$\frac{|a| - |z|}{1 + |a||z|} \leq |f(z)| \leq \frac{|a| + |z|}{1 - |a||z|}.$$
 

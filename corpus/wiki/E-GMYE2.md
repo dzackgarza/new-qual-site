@@ -13,6 +13,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: exercise
@@ -40,8 +44,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. A function differentiable but not continuously differentiable: $f(x) = x^2\sin(1/x)$ for $x \ne 0$, $f(0) = 0$.
 <2>1. $f$ is differentiable everywhere, with $f'(0) = 0$.
 Proof: $\frac{f(h) - f(0)}{h} = h\sin(1/h) \to 0$ as $h \to 0$ (bounded factor); away from $0$ differentiability is standard.

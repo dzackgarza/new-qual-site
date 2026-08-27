@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-WV2QN
 kind: fact
-title: What is Young's inequality?
+title: Young's inequality for convolution
+prompts:
+- What is Young's inequality?
 classification:
   areas:
   - real-analysis

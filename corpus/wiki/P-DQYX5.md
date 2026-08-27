@@ -13,6 +13,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -33,8 +37,6 @@ c. In parts:
     3. Give an example of a function $f\in L^1(\RR^n)$ such that $\hat{f}$ is not in $L^1(\RR^n)$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) Definition: for $f, g \in L^1(\RR^n)$, the convolution is $(f \ast g)(x) = \int_{\RR^n} f(x - y)\,g(y)\,dy = \int f(y)\,g(x-y)\,dy$, defined for almost every $x$; and $f \ast g \in L^1(\RR^n)$ with $\|f \ast g\|_1 \le \|f\|_1\|g\|_1$.
     Proof: Tonelli's theorem gives $\int |f(x-y)||g(y)|\,dy\,dx = \|f\|_1\|g\|_1 < \infty$, so the integral is finite for a.e. $x$ and the $L^1$ norm bound holds.
 

@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-NOX4C
 kind: fact
-title: What are almost disjoint sets?
+title: Almost disjoint sets
+prompts:
+- What are almost disjoint sets?
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-3K36R
 kind: fact
-title: What is Krull's intersection theorem?
+title: Krull's intersection theorem
+prompts:
+- What is Krull's intersection theorem?
 classification:
   areas:
   - algebra

@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-IEHB2
 kind: fact
-title: What is the Euler characteristic in terms of genus?
+title: Euler characteristic in terms of genus
+prompts:
+- What is the Euler characteristic in terms of genus?
 classification:
   areas:
   - topology

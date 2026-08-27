@@ -13,6 +13,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -25,8 +29,6 @@ b. Give an example illustrating that $f_k$ may not converge to $f$ almost everyw
 c. Prove that $\ts{f_k}$ must contain a subsequence that converges to $f$ almost everywhere.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Setup.** $\ts{f_k} \subseteq L^2([0,1])$ converges in $L^1$ to $f$.
 Since $m([0,1]) = 1 < \infty$, convergence in $L^2$ would imply convergence in $L^1$ by Hölder, but here only $L^1$ convergence is assumed.
 

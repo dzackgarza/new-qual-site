@@ -12,6 +12,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -35,8 +39,6 @@ Conclude that $Hf$ is not locally integrable.
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Honesty note:** the formula as printed uses $\log(1/x)$, which is undefined for $x < 0$; the intended (standard) function is symmetric, $f(x) = \frac{1}{|x|\log^2(1/|x|)}$ for $0 < |x| \le 1/2$ and $0$ otherwise. The solution uses that version.
 
 <1>1. $f \in L^1(\RR)$.

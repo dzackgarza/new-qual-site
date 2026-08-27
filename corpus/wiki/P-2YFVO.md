@@ -12,6 +12,10 @@ classification:
   - Differentiation
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -35,8 +39,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. If $f, g$ are continuous and compactly supported, then so is $f \ast g$.
 <2>1. $f \ast g$ is continuous: $|f\ast g(x + h) - f\ast g(x)| \le \|g\|_1 \sup_z|f(z + h) - f(z)| \to 0$.
 Proof: $f$ is uniformly continuous (continuous with compact support); triangle inequality on the defining integral.

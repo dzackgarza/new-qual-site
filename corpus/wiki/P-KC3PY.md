@@ -11,6 +11,10 @@ classification:
   - Integrals
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -32,8 +36,6 @@ is a non-negative measurable function and
 .\]
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $E + h$ is measurable with $m(E + h) = m(E)$.
     <2>1. For open $U$: $U + h$ is open and $m(U + h) = m(U)$.
         Proof: translation is a homeomorphism; Lebesgue measure of an open set is the supremum of measures of contained cubes, and cubes translate with equal measure (the measure of a cube is invariant under translation).

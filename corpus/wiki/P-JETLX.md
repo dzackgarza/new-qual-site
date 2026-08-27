@@ -13,6 +13,10 @@ classification:
   - L¹
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -21,8 +25,6 @@ Let $f\in L^1((0, 2\pi))$.
 i. Show that for an \( \epsilon>0 \) one can write $f = g+h$ where $g\in L^2((0, 2\pi))$ and $\norm{H}_1 < \epsilon$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Reduce to nonnegative $f$: write $f = f^+ - f^-$ and handle each part; the claim is additive.
 Assume $f \ge 0$.
 Proof: if $f^+ = g_1 + h_1$ and $f^- = g_2 + h_2$ with $g_i \in L^2$, $\|h_i\|_1 < \eps/2$, then $f = (g_1 - g_2) + (h_1 - h_2)$ with $g_1 - g_2 \in L^2$ and $\|h_1 - h_2\|_1 < \eps$.

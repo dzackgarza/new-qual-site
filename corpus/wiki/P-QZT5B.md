@@ -11,6 +11,10 @@ classification:
   - Measure Theory
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: {.problem}
@@ -18,8 +22,6 @@ Show that if $\sum \mu(E_k) < \infty$ then almost every $x\in X$ is in at most f
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. It suffices to show $\mu(\limsup_k E_k) = 0$.
 Proof: $\limsup_k E_k = \cap_{n\ge1}\cup_{k\ge n} E_k$ is the set of points lying in infinitely many $E_k$; if it has measure $0$, then almost every $x$ lies in only finitely many $E_k$.
 <1>2. $\mu(\cup_{k\ge n} E_k) \le \sum_{k\ge n}\mu(E_k)$.

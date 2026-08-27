@@ -13,6 +13,10 @@ classification:
   - Counterexamples
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-19
 ---
 
 ::: problem
@@ -30,8 +34,6 @@ Show that there exist points $(x,y)\in D$ such that $\displaystyle{\limsup_{n\to
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Goal:** (1) Verify that $u_n(x,y) = \frac{e^{ny} - e^{-ny}}{2n^2}\sin(nx)$ solves, on $D = \{x^2 + y^2 < 1\}$, the Cauchy problem $\Delta u = 0$, $u(x,0) = 0$, $u_y(x,0) = \frac{\sin(nx)}{n}$; (2) show there exist points $(x,y) \in D$ with $\limsup_{n \to \infty} \abs{u_n(x,y)} = \infty$.
 
 <1>1. Verify the boundary conditions at $y = 0$.

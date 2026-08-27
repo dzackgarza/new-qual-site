@@ -12,6 +12,10 @@ classification:
   - Polynomials
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -31,8 +35,6 @@ h(x) = x - {1\over 6}
 Compute $\norm{f - g}_2$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) $\{e_0, e_1\}$ with $e_0 \equiv 1$, $e_1(x) = \sqrt 3(2x - 1)$ is orthonormal in $L^2([0,1])$.
     <2>1. $\|e_0\|_2^2 = \int_0^1 1\,dx = 1$.
         Proof: direct.

@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-YJXMF
 kind: fact
-title: What is the uniform boundedness principle?
+title: The uniform boundedness principle
+prompts:
+- What is the uniform boundedness principle?
 classification:
   areas:
   - real-analysis

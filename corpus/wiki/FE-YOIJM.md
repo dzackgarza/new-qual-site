@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FE-YOIJM
 kind: example
-title: Is a composition of Lebesgue measurable functions measurable?
+title: A composition of Lebesgue measurable functions need not be measurable
+prompts:
+- Is a composition of Lebesgue measurable functions measurable?
 classification:
   areas:
   - real-analysis

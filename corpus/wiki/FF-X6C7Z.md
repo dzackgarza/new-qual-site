@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-X6C7Z
 kind: fact
-title: Give a geometric application of Nakayama's lemma.
+title: A projective morphism is an isomorphism iff its differential is injective
+prompts:
+- Give a geometric application of Nakayama's lemma.
 classification:
   areas:
   - algebra

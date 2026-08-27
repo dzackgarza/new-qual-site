@@ -13,6 +13,10 @@ classification:
   - Borel-Cantelli
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -28,8 +32,6 @@ review: draft
 :::
 
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. A family of pairwise disjoint intervals in $\RR$, each with nonempty interior, is countable.
 Proof: each such interval contains a rational number, and disjoint intervals contain distinct rationals; the rationals are countable, so the family embeds injectively into $\QQ$.
 (The nondegeneracy hypothesis is necessary: $\{\{x\} : x \in \RR\}$ is an uncountable family of disjoint singletons.)

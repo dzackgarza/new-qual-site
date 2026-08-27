@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-QWCKR
 kind: fact
-title: What is a quasiregular element in a ring?
+title: Quasiregular element
+prompts:
+- What is a quasiregular element in a ring?
 classification:
   areas:
   - algebra

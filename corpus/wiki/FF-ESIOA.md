@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-ESIOA
 kind: fact
-title: What is Krull's Hauptidealsatz?
+title: Krull's Hauptidealsatz
+prompts:
+- What is Krull's Hauptidealsatz?
 classification:
   areas:
   - algebra

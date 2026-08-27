@@ -12,6 +12,10 @@ classification:
   - Uniform Convergence
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -20,8 +24,6 @@ review: draft
 Let $f: [0, 1]\to \RR$ be continuous, and prove the Weierstrass approximation theorem: for any $\eps> 0$ there exists a polynomial $P$ such that $\norm{f - P}_{\infty} < \eps$.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Bernstein polynomial proof: for $f \in C([0,1])$ define $B_n(x) = \sum_{k=0}^n f(k/n)\binom{n}{k}x^k(1-x)^{n-k}$.
 Proof: $B_n$ is a polynomial of degree $\le n$.
 

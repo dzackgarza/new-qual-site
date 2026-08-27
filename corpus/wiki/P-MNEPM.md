@@ -14,6 +14,10 @@ classification:
   - Continuity
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -26,8 +30,6 @@ b. Define what it means for $L$ to be *bounded* and show $L$ is bounded $\iff L$
 c. Prove that $(X\dual, \norm{\wait}_{\op})$ is a Banach space.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. (a) Definition: $L : X \to \CC$ is a linear functional iff $L(x + y) = L(x) + L(y)$ and $L(\alpha x) = \alpha L(x)$ for all $x, y \in X$, $\alpha \in \CC$.
 Proof: definition.
 

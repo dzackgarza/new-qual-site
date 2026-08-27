@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-QLQYF
 kind: fact
-title: What is a first category set? A second category?
+title: First and second category sets
+prompts:
+- What is a first category set? A second category?
 classification:
   areas:
   - real-analysis

@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-IBDAT
 kind: fact
-title: What is the going up theorem?
+title: The going-up theorem
+prompts:
+- What is the going up theorem?
 classification:
   areas:
   - algebra

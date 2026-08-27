@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-NRCZN
 kind: fact
-title: What is a dense subset?
+title: Dense subset
+prompts:
+- What is a dense subset?
 classification:
   areas:
   - real-analysis

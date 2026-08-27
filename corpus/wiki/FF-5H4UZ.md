@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-5H4UZ
 kind: fact
-title: Prove the Schwarz lemma.
+title: Proof of the Schwarz lemma
+prompts:
+- Prove the Schwarz lemma.
 classification:
   areas:
   - complex-analysis

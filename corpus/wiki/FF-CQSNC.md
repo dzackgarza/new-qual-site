@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-CQSNC
 kind: fact
-title: What is a regular ring? 2023-01-1
+title: Regular ring
+prompts:
+- What is a regular ring?
 classification:
   areas:
   - algebra

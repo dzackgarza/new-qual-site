@@ -2,7 +2,9 @@
 schema: qual/card@1
 id: FF-CSABG
 kind: fact
-title: What is the Artin-Rees lemma?
+title: The Artin-Rees lemma
+prompts:
+- What is the Artin-Rees lemma?
 classification:
   areas:
   - algebra

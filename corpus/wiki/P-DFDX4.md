@@ -11,14 +11,16 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
 Let the power series series $\sum_{n=0}^\infty a_nx^n$ and $\sum_{n=0}^\infty b_nx^n$ have radii of convergence $R_1$ and $R_2$, respectively.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 **Honesty note:** the card as written is a fragment — it states the setup (two power series with radii $R_1, R_2$) without a question.
 The standard companion questions are covered by the sibling cards P-E4WZN (radius of $\sum (a_n+b_n)x^n$) and P-FYGQ6 (radius of $\sum a_nb_nx^n$). This solution records the defining facts used there.
 

@@ -11,6 +11,10 @@ classification:
   - Series of Functions
 relations: []
 review: draft
+audit:
+- event: solution-written
+  by: gemini-3.7-flash
+  date: 2026-08-17
 ---
 
 ::: problem
@@ -18,8 +22,6 @@ Prove that the radius of convergence, $R$, of $\sum_{n=0}^\infty a_nb_nx^n$ sati
 Show by means of example that this inequality can be strict.
 :::
 ::: {.solution}
-> **AI-Generated Solution**
-
 <1>1. Claim: for $|x| < R_1 R_2$, the series $\sum a_n b_n x^n$ converges absolutely.
 <2>1. Since $|x| < R_1 R_2$, choose $\lambda$ with $|x| < \lambda < R_1 R_2$, and set $u = R_1\sqrt{\lambda/(R_1 R_2)}$, $v = R_2\sqrt{\lambda/(R_1 R_2)}$; then $u < R_1$, $v < R_2$, and $uv = \lambda > |x|$.
 Proof: $\sqrt{\lambda/(R_1R_2)} < 1$ by choice of $\lambda$; the product is $\lambda$.
