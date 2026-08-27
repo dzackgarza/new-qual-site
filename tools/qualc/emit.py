@@ -592,7 +592,7 @@ def _transclude(card: sqlite3.Row, counts: Counter[str]) -> pf.Div:
                     [f"qual-{kind}", SECTION_CLASS, "qual-transclusion"],
                     [["data-label", f"{kind.title()} {counts[kind]}"]],
                 ],
-                [_transclusion_head(card), *_subtitle_json(card), *body],
+                [_transclusion_head(card), *_subtitle_json(card), *body, *_prompts_json(card)],
             ],
         }
     ]
@@ -876,6 +876,24 @@ def _subtitle_json(card: sqlite3.Row) -> list[dict]:
     return [{"t": "RawBlock", "c": ["html", f'<p class="qual-section-subtitle">{html.escape(card["subtitle"])}</p>']}]
 
 
+def _prompts_json(card: sqlite3.Row) -> list[dict]:
+    """The card's review questions, one block each, after the statement.
+
+    They sit below rather than above because the card is the answer and it is
+    already on the page: a question printed over the statement it gives away is
+    a heading, not a review. On a wiki page of transcluded definitions, leading
+    each one with a question would also read as a quiz rather than a reference.
+
+    One block per prompt, which is the shape the author writes -- several
+    questions are several questions, not one list with a heading over it. A
+    card with no prompts emits nothing at all.
+    """
+    return [
+        {"t": "RawBlock", "c": ["html", f'<div class="review-question">{html.escape(prompt)}</div>']}
+        for prompt in cast(list[str], json.loads(card["prompts"]))
+    ]
+
+
 def _dup[T](value: T) -> T:
     return copy.deepcopy(value)
 
@@ -900,6 +918,7 @@ def problem_json(
             rb = _dup(jcache[rel["id"]])
             _rename_json(rb)
             body += rb
+    body.extend(_prompts_json(card))
     body.extend(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
@@ -922,6 +941,7 @@ def plain_json(
 ) -> tuple[dict, list]:
     body = _subtitle_json(card) + _dup(jcache[card["id"]])
     _rename_json(body)
+    body.extend(_prompts_json(card))
     body.extend(_relation_groups_json(data, card["id"], appearances, wiki_mentions.get(card["id"], [])))
     meta = {
         "title": card["title"],
