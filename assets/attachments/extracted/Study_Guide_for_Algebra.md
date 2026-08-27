@@ -1,0 +1,918 @@
+Study Guide for Algebra
+Department of Mathematics and Statistics
+Amherst College
+September, 2016
+This study guide was written to help you prepare for the algebra portion of the Comprehensive and Honors
+Qualifying Examination in Mathematics. It is based on the Syllabus for Algebra (Math 350 ) available on the
+Department website.
+Each topic from the syllabus is accompanied by a brief discussion and examples from old exams. When
+reading this guide, you should focus on three things:
+• Understand the ideas. If you study problems and solutions without understanding the underlying ideas,
+you will not be prepared for the exam.
+• Understand the strategy of each proof. Most proofs in this guide are short—the hardest part is often
+knowing how to start. Focus on the setup step rather than falling into the trap of memorizing proofs.
+• Understand the value of scratchwork. Sometimes scratchwork is needed before you start the proof.
+The ﬁnal section of the guide has some further suggestions for how to prepare for the exam.
+1 Sets, Functions, and the Integers
+There are some fundamental topics that you are unlikely to get tested on directly, but which could come up
+indirectly. So you should know them. In particular:
+F or functions and sets , know the following basics
+• One-to-one, onto, and bijective maps.
+• The identity function and inverse functions.
+• Equivalence relations and equivalence classes (at least in speciﬁc cases like the right coset relation, and
+its equivalence classes, the right cosets)
+F or the integers Z and natural numbers N, know the following basics:
+• The notation a|b and the division algorithm in Z.
+• Greatest common divisors and least common multiples inN. (This includes the fact that if gcd(a,b ) =d,
+then there exist m,n∈ Z such that ma +nb =d.)
+• Prime numbers and unique factorization.
+2 Groups
+Some basic things to know:
+• The deﬁnition of group.
+• Uniqueness of identities and inverses.
+1
+
+The identity of G is usually denoted e or eG, although for some speciﬁc groups it may have a diﬀerent
+symbol. (For example, if the operation on G is called +, then the identity element is usually called 0.)
+Recall that we say G is abelian if the group operation is commutative, i.e., if xy =yx for all x,y∈G.
+Orders of Groups and Elements. Know:
+• Forg∈G and n∈ Z, know what gn means.
+• If the operation on G is called +, then we write ng instead of gn.
+• When G is ﬁnite, its order |G| is the number of elements in the group.
+• When g∈G has ﬁnite order, its order o(g) is the smallest integer m> 0 with gm =e.
+• If gm =e for some m∈ Z, then o(g)|m.
+Be prepared to prove the last statement above using the division algorithm. See 9 and 15 for problems
+that use gm =e⇒o(g)|m.
+3 Subgroups
+Know the deﬁnition of subgroup and how to prove that a given subset is a subgroup.
+1 (January 2012) Let G be a group, and let H,K ⊆ G be subgroups of G. Prove the following
+standard theorem about subgroups: that H∩K is a subgroup of G.
+Proof. (Nonempty) Since H and K are subgroups of G, we have e∈H and e∈K. So e∈H∩K,
+and hence H∩K⁄= ∅.
+(Closed under∗) Given a,b∈H∩K, we have ab∈H and ab∈K since H and K are closed under
+the operation. So ab∈H∩K, as desired.
+(Closed under−1) Givena∈H∩K, we havea−1∈H anda−1∈K sinceH andK are closed under
+inverses. So ab∈H∩K as desired.
+Thus,H∩K is a subgroup of G. QED
+See 3 for another problem where you have to prove that a subset is a subgroup.
+Cyclic Subroups. An element g∈G generates the cyclic subgroup ⟨g⟩ ={gm|m∈ Z}. There are many
+therorems about cyclic groups, but for the algebra exam, one key fact to know is that g has ﬁnite order if
+and only if⟨g⟩ is ﬁnite, in which case o(g) =o(⟨g⟩). [Do you know why this fact is true?]
+See 2 and 6 for problems involving cyclic subgroups.
+Lagrange’s Theorem. This theorem says that if H is a subgroup of a ﬁnite group G, then the order of H
+divides the order of G. That is, |H|
+⏐⏐|G|. When g is an element of a ﬁnite group G, Lagrange’s Theorem has
+several important consequences:
+• If|G| is prime, then G is cyclic.
+• For allg∈G, we have o(g)
+⏐⏐|G|.
+• For allg∈G, we have g|G| =e.
+These consequences all follow from Lagrange, using the fact that for any g∈ G, we have o(g) =|⟨g⟩|.
+[Be sure you know how to use this fact to prove the statements above!] In fact, on the comps, if you have
+a ﬁnite group G and want to conclude any of the three bulleted statements above, you may justify simply
+by saying “by Lagrange’s Theorem.” See 2 , 8 , and 9 for problems that use these corollary versions of
+Lagrange’s Theorem.
+2
+
+2 (March 2007) Let p,q≥ 2 be prime numbers, and let G be a group of order|G| =pq. Let H ⊊G
+be a proper subgroup (i.e., H is a subgroup but is not the full group G).
+Prove that H is cyclic.
+Proof. Since|G|<∞, Lagrange’s Theorem says that |H|
+⏐⏐|G|. Thus, |H| is one of the four numbers
+1,p,q,pq . However, since H is proper, we must have|H|<|G| =pq. Three cases remain:
+If|H| = 1, then H ={e} is the trivial group, which is generated by e and so is cyclic.
+Otherwise,H has prime orderp orq, and therefore it is cyclic by (a corollary of) Lagrange’s Theorem.
+QED
+Comment. This is a proof that may require some scratchwork and multiple attempts before you ﬁgure
+out how to do it. It’s not immediately obvious how to prove that H is cyclic; where are you going to
+ﬁnd a generator? But the fact that G is ﬁnite, and that we know something pretty speciﬁc about the
+factorization of|G|, suggest that Lagrange’s Theorem is at least something we could try.
+Of course, just because a group is ﬁnite doesn’t necessarily mean you should use Lagrange’s Theorem.
+But it’s worth trying it in your scratchwork to see if it might lead to something good. Just be ready
+to try other things, too, in case your ﬁrst thought doesn’t work out.
+Note: It would also be a good idea for you to know the proof of Lagrange’s Theorem, because that proof
+uses another very important concept: cosets.
+4 Cosets
+Given a subgroup H⊆G, know the deﬁnitions of left coset gH and right coset Hg. Also know:
+• Two right cosets Hx and Hy are either the same set or disjoint sets. (That is, if they share even one
+element, they are exactly the same set.) The same holds for left cosets.
+(On the other hand, a right coset and a left coset can intersect each other without being the same set.)
+• Hx =Hy ⇐⇒ xy−1∈H ⇐⇒ x∈Hy.
+• xH =yH ⇐⇒ y−1x∈H ⇐⇒ x∈yH.
+• In particular, Hx =H ⇐⇒ x∈H ⇐⇒ xH =H.
+• When H is ﬁnite, all cosets of H have the same number of elements.
+The second item above describes the right coset relation [or criterion for equality of right cosets ], and the
+third is the left coset relation [or criterion for equality of left cosets ]. They are really important, so let’s
+say them again:
+Hx =Hy ⇐⇒ xy−1∈H and xH =yH ⇐⇒ y−1x∈H
+Know these facts , and be able to prove them quickly from scratch (to help ensure you don’t get them
+backwards).
+Note: in discussing the coset relation so far, we have been writing the group operation as multiplication.
+However, if G is abelian and the group operation is written as addition, then the left and right cosets of
+H⊆G coincide and are written
+H +a ={h +a|h∈H}.
+Here, the coset relation becomes
+H +a =H +b ⇐⇒ a−b∈H ⇐⇒ a∈H +b.
+Most algebra exams include a problem that uses coset relations. See 8 and 10 for such examples
+involving groups. See also 21 , 25 , and 27 for examples involving rings.
+Sometimes there are problems involving cosets directly in the statement, like this one:
+3
+
+3 (January 2016) Let G be a group, let H⊆G be a subgroup, and deﬁne the set K to be
+K ={x∈G|Hx =xH}.
+Prove that K is a subgroup of G.
+Proof. We prove thatK is a subgroup of G as follows.
+(1) Let e be the identity element of G. Then He =H =eH, so e∈K.
+(2) Given a,b∈K, we have H(ab) = (Ha)b = (aH)b =a(Hb) =a(bH) = (ab)H. So ab∈K.
+(3) Given a∈K, we have Ha =aH. Multiplying by a−1 on the left and the right gives
+a−1(Ha)a−1 =a−1(aH)a−1
+=⇒ a−1H(aa−1) = (a−1a)Ha−1,
+which implies a−1H =Ha−1. Thus a−1∈K, proving that K is a subgroup. QED
+Comment 1. The above equations are equations of sets. Be careful when you manipulate them, to
+make sure that you are not just pushing symbols around, but that you actually understand what you
+are doing. For example, H(ab) and Ha are really
+H(ab) ={h(ab)|h∈H} and Ha ={ha|h∈H}.
+So in the ﬁrst equation of (2) above, when we said H(ab) = (Ha)b, what we were really saying was
+that
+H(ab) ={h(ab)|h∈H} ={(ha)b|h∈H} ={xb||x∈Ha} = (Ha)b.
+Comment 2. The proofs of (1) and (2) are fairly straightforward, but thinking of (3) requires some
+scratchwork. Given Ha = aH, multiplying each side by a−1 makes sense. But how do you know
+whether to multiply on the left or on the right? Answer: you don’t know! So pick one and see what
+happens. That is: do some scratchwork! Multiplying by a−1 on the left gives
+a−1(Ha) =a−1(aH) =⇒ a−1Ha = (a−1a)H =eH =H.
+Since a−1Ha =H still has a on the right, multiplying by a−1 on the right is also needed.
+The Index of a Subgroup. When a group G is a union of ﬁnitely many left cosets of a subgroup H, we
+say that H has ﬁnite index in G, and the index of H in G is deﬁned to be
+[G :H] = number of distinct left cosets of H in G.
+The same holds for right cosets. An example is nZ⊆ Z with index [ Z : nZ] = n. Can you explain why?
+WhenG is ﬁnite, [G :H] =|G|/|H|, since all cosets of H have the same number of elements. (Do you know
+why all cosets of H have the same cardinality? And do you know how this fact is used to prove Lagrange’s
+Theorem?)
+5 Normal Subgroups
+Given a subgroup H⊆G, know that H being normal in G is equivalent to any of the following conditions:
+• gH =Hg for all g∈G.
+• gHg−1 =H for all g∈G.
+• ghg−1∈H for all g∈G and h∈H.
+4
+
+Many problems involve proving that a subgroup is normal. Here are some:
+4 (January 2012) Let G be a group, and let H,K ⊆ G be normal subgroups of G. Prove that
+H∩K is a normal subgroup of G. You may assume without proof that H∩K is a subgroup.
+Proof. Givena∈H∩K,g∈G, we know thatgag−1∈H andgag−1∈K sinceH andK are normal.
+Thus,gag−1∈H∩K, so H∩K is normal in G as desired. QED
+5 (January 2011) Suppose that H⊆G is a subgroup with the property that for every x,y∈G, we
+havexyx−1y−1∈H. Prove that H is a normal subgroup of G.
+Proof. Assume g∈G and h∈H. By the given property of H, we have ghg−1h−1∈H. Since H is
+closed under multiplication, ghg−1 =ghg−1(h−1h) = (ghg−1h−1)h∈H as desired. QED
+Comment. You want to proveghg−1∈H forh∈H, but the hypothesis doesn’t quite look like that—
+instead, it involves ghg−1h−1. DON’T fall into the trap of starting with the hypothesis. Instead,
+start with the object that you’re trying to prove things about – namely ghg−1 – and rewrite it in a
+way that the thing from your hypothesis – namely ghg−1h−1 – appears. This gives
+ghg−1 = (ghg−1)(h−1h) = (ghg−1h−1)h
+and leads to the proof given above. The key point is to think about the goal ﬁrst, and then do
+scratchwork to ﬁgure out how you can work in the hypothesis.
+6 Let G be a group, and let s∈G. The centralizer of s in G is deﬁned to be
+C(s) ={g∈G :gs =sg}.
+(a) Prove that C(s) is a subgroup of G.
+(b) Prove that⟨s⟩ is contained in C(s). (Recall that ⟨s⟩ is the subgroup of G generated by s.)
+(c) Prove that⟨s⟩ is a normal subgroup of C(s).
+Proof. (a): (Nonempty): We have es =s =se, and therefore e∈C(s). So C(s)⁄= ∅.
+(Closed under∗): Given g,h∈C(s), we have
+(gh)s =g(hs) =g(sh) = (gs)h = (sg)h =s(gh),
+so gh∈C(s), as desired.
+(Closed under inverses): Given g∈C(s), we have gs =sg, so
+g−1s =g−1sgg−1 =g−1gsg−1 =sg−1,
+so g−1∈C(s), as desired. QED (a)
+(b): Given x∈⟨s⟩, we have x =sn for some n∈ Z. So
+xs =sns =sn+1 =ssn =sx,
+so x∈C(s), as desired. QED (b)
+(c): Given g∈C(s) and h∈⟨s⟩, there is some n∈ Z such that h =sn. So
+(ghg−1)s =gsng−1s =sngg−1s =sns =sn+1 =ssn =ssngg−1 =sgsng−1 =s(ghg−1).
+Thus,ghg−1∈C(s), as desired. QED
+5
+
+Other problems involve using the fact that a subgroup is normal to prove something else.
+7 (February 2013) Let G be a group, let H ⊆ G be a subgroup, and let N ◁G be a normal
+subgroup. Deﬁne
+NH ={xh :x∈N and h∈H}.
+Prove that NH is a subgroup of G.
+Proof. (Nonempty): Since N and H are both nonempty, we may choose x∈ N and h∈ H. Then
+xh∈NH , so NH⁄= ∅.
+(Closed under ∗): Given x,y ∈ NH , write x = n1h1 and y = n2h2, for some n1,n 2 ∈ N and
+h1,h 2∈H. Since N is a normal subgroup of G, we have h1N =Nh 1. Thus, there is some n3∈N
+such that h1n2 =n3h1. So
+xy = (n1h1)(n2h2) =n1(h1n2)h2 =n1(n3h1)h2 = (n1n3)(h1h2)∈NH,
+as desired, since n1n3∈N and h1h2∈H.
+(Closed under inverses): Given x∈NH , write x =nh with n∈N and h∈H. Since N is a normal
+subgroup of G, we have hN =Nh. Thus, there is some n1∈N such that nh =hn1. So
+x−1 = (nh)−1 = (hn1)−1 =n−1
+1 h−1∈NH,
+as desired, since n−1
+1 ∈N and h−1∈H. QED
+Alternate Proof. (Nonempty): Since N andH are both nonempty, we may choose x∈N andh∈H.
+Then xh∈NH , so NH⁄= ∅.
+(Closed under ∗): Given x,y ∈ NH , write x = n1h1 and y = n2h2, for some n1,n 2 ∈ N and
+h1,h 2∈H. Then
+xy = (n1h1)(n2h2) =n1(h1n2)(h−1
+1 h1)h2 =
+(
+n1(h1n2h−1
+1 )
+)
+(h1h2).
+Nown1,n 2∈N, and hence h1n2h−1
+1 ∈N since N is normal, and therefore n1(h1n2h−1
+1 )∈N. Since
+h1h2∈H, then the above equation shows xy∈NH , as desired.
+(Closed under inverses): Given x∈NH , write x =nh with n∈N and h∈H. Then
+x−1 = (nh)−1 =h−1n−1 = (h−1n−1h)h−1.
+Nowh−1n−1h∈N since N is normal in G, and h−1∈H, so the above equation shows x−1∈NH ,
+as desired. QED
+Comment. Serious scratchwork is required for either version of this proof. The key thing to keep in
+mind when you are allowed to use the hypothesis that N is normal in G (rather than when you need
+to prove it’s normal) is that if you ever see an expression like gn withn∈N, you can replace it with
+the expression n′g withn′∈n; same g, possibly a diﬀerent n′∈N. (This is the idea used in the ﬁrst
+proof above.) Or, as we did in the alternate proof, if you can get a conjugate expression like gng−1
+to appear, then you know it’s in N; so try to rearrange things to get conjugates to appear.
+Quotient Groups. When N⊆ G is a normal subgroup, every left coset is a right coset, and vice versa.
+The set of all cosets of N in G forms a group and is denoted G/N. The group operation is deﬁned by
+Na·Nb =Nab, which is well-deﬁned since N is normal. [Do you know how to prove that?]
+When G is ﬁnite, G/N is also ﬁnite and |G/N| = [G :N] =|G|/|N|.
+6
+
+8 (March 2013) LetG be a group, letN⊆G be a normal subgroup, and suppose that [G :N] = 42,
+where [G :N] denotes the index ofN inG. Prove thatx42∈N for everyx∈G. ( Suggestion: Consider
+the quotient group G/N.)
+Proof. The quotient groupG/N has order 42 since|G/N| = [G :N] = 42. Given any x∈G, consider
+the coset Nx∈ G/N. By Lagrange’s Theorem applied to the group G/N and the element Nx, we
+have (Nx)42 =Ne, since Ne is the identity element of G/N. Now (Nx)42 =N(x42) [by deﬁnition of
+the group operation in G/N], and therefore
+Nx 42 =Ne, and hence x42 =x42e−1∈N
+by the coset relation. QED
+Comment. This is yet another proof where strategy and scratchwork are helpful. Here is what you
+know:
+• You are told to use G/N.
+• You know that|G/N| = [G :N] = 42.
+Since you need to prove something aboutx42, this suggests theg|G| =e version of Lagange’s Theorem.
+But you have to be able to apply Lagrange to G/N, where the element is not x but rather Nx, the
+order is 42, and the identity element is Ne. And you absolutely need to be ﬂuent in using the coset
+relation to ﬁnish the proof.
+6 Group Homomorphisms
+Know the deﬁnition of a group homomorphism φ :G→H. Know also that if φ is a homomorphism, then
+also:
+• φ(eG) =eH
+• φ(gn) =φ(g)n for all g∈G and n∈ Z.
+9 (January 2012) Let G and H be groups. Recall that a homomorphism φ : G→ H is said to
+be trivial if φ(g) = eH for all g∈ G. If |G| = 144 and |H| = 25, prove that any homomorphism
+φ :G→H is trivial.
+Proof. Giveng∈G. By Lagrange’s Theorem for G, we have g144 =eG Since φ is a homomorphism,
+we have
+(φ(g))144 =φ(g144) =φ(eG) =eH.
+Thus, φ(g), which is an element of H, has ﬁnite order m = o(φ(g)) that divides 144. On the other
+hand, by Lagrange’s Theorem forH, we also havem|25, since|H| = 25. Thus, m is a common divisor
+of 144 = 2432 and 25 = 52. Since gcd(144, 25) = gcd(2432, 52) = 1, we must have o
+(
+φ(g)
+)
+= 1. Thus,
+φ(g) =eH, as desired. QED
+7
+
+10 (March 2015) Let G1,G 2 be groups, let H2⊆ G2 be a subgroup, and let φ : G1→ G2 be a
+homomorphism. Deﬁne
+H1 ={x∈G1|φ(x)∈H2}.
+It is a fact, which you may assume, that H1 is a subgroup of G1. Prove that for any x,y ∈ G1,
+H1x =H1y if and only if H2φ(x) =H2φ(y).
+Proof. (=⇒) Given x,y ∈G1 such that H1x =H1y, we have xy−1∈H1 [by the right coset relation
+for H1]. So φ(x)φ(y)−1 =φ
+(
+xy−1)
+∈H2, by deﬁnition of H1. Thus, [by the right coset relation for
+H2], we have H2φ(x) =H2φ(y).
+(⇐=) Given x,y ∈ G1 such that H2φ(x) = H2φ(y), we have φ(x)φ(y)−1∈ H2 [by the right coset
+relation for H2]. Thus,
+φ
+(
+xy−1)
+=φ(x)φ(y)−1∈H2,
+and therefore xy−1∈ H1, by deﬁnition of H1. Thus, [by the right coset relation for H1], we have
+H1x =H1y. QED
+Comment. In retrospect, all the steps of the above (=⇒) proof were reversible, so we could also have
+done the above proof as a single chain of “⇐⇒” statements.
+Alternately, we could have started from both ends and build towards the middle. So here is an
+alternate version of the above proof, reﬂecting a “build towards the middle” strategy.
+Alternate Proof. Given x,y∈G1, the right coset relations give:
+H1x =H1y ⇐⇒ xy−1∈H1(1)
+H2φ(x) =H2φ(y) ⇐⇒ φ(x)φ(y)−1∈H2.(2)
+Using the deﬁnition of H1, we can write (1) as
+(3) H1x =H1y ⇐⇒ xy−1∈H1 ⇐⇒ φ(xy−1)∈H2,
+and using the fact that φ is a homomorphism, we can write (2) as
+(4) H2φ(x) =H2φ(y) ⇐⇒ φ(x)φ(y)−1∈H2 ⇐⇒ φ(xy−1)∈H2.
+The problem follows now from the equivalences (3) and (4). QED
+Comment. In general, if a problem involves equalities of cosets, then you are almost certainly going
+to need the coset relation. In this example, even if we have no idea what to do, it’s worth starting
+from one side, H1x = H1y, and applying the coset relation. This immediately gives (1); similarly,
+H2φ(x) = H2φ(y) gives (2). Since we are sort of stuck at that point, only then do we look at the
+hypotheses; then the deﬁnition of H1 gives (3), and the fact that φ is a homomorphism gives (4).
+Suggestion. For more practice, prove that H1 is a subgroup of G1.
+Kernels and Images. Given a group homomorphism φ :G→H, know:
+• The deﬁnition of the kernel Ker(φ)⊆G and the image Im(φ)⊆H.
+• Ker(φ) is a normal subgroup of G (be able to prove this).
+• Im(φ) is a subgroup of H (be able to prove this), but not necessarily normal. Another notation for
+Im(φ) is φ(G).
+Recall that φ is one-to-one if and only if Ker( φ) ={eG}. Be able to prove this.
+8
+
+Isomorphisms. Given a group homomorphism φ :G→H, know the equivalence between
+• φ is one-to-one and onto.
+• φ has an inverse function φ−1 :H→G that is also a group homomorphism.
+In this situation, we say that φ is a group isomorphism.
+The Fundamental Theorem of Group Homomorphisms. Also called the First Homomorphism The-
+orem for Groups , or the Basic Homomorphism Theorem , this theorem says that if φ : G→ H is a group
+homomorphism, then there is a group isomorphism ~φ :G/Ker(φ)≃ Im(φ) deﬁned by ~φ(gKer(φ)) =φ(g).
+11 (February 2013) Let G1 and G2 be groups, let φ : G1 → G2 be a homomorphism, and let
+H1⊆G1 be a subgroup. Recall that the set
+H2 ={φ(x)|x∈H1}
+is a subgroup of G2, called the image of H1 under φ, sometimes notated φ(H1). If G1 is ﬁnite, prove
+that|H2|
+⏐⏐|G1|. That is, prove that the order of H2 divides the order of G1.
+Proof. Let K = Ker(φ) denote the kernel of φ. Then:
+• φ(G1)∼=G1/K by the fundamental theorem of group homomorphisms, so |φ(G1)| =|G1/K|.
+• We also know that|G1/K| =|G1|/|K|.
+Together, these two facts yield
+(1) |φ(G1)|·| K| =|G1|, and hence|φ(G1)|
+⏐⏐⏐|G1|
+We also observe the following about H1 and H2:
+• Since H1⊆G1, we have H2 =φ(H1)⊆φ(G1).
+• By Lagrange’s Theorem, it follows that |H2| divides|φ(G1)|.
+Since|H2| divides|φ(G1)| by the last bullet, and |φ(G1)| divides|G1| by (1), it follows that |H2|
+divides|G1|. QED
+Comment. The strategy for this proof has two parts. The ﬁrst part is to recognize that the funda-
+mental theorem is relevant. Do you see how this follows from the request to prove |H2|
+⏐⏐|G1|? (Hint:
+H2 lives in G2, while G1 is the domain of φ :G1→G2.) The second part of the strategy is to work
+out what this means for φ before bringing H1 and H2 into the picture.
+7 Permutations
+Sn and Disjoint Cycle Decomposition. Know:
+• The deﬁnition of the symmetric group Sn and its order|Sn| =n!.
+• The two-row notation
+( 1 2 ··· n
+a1 a2 ··· an
+)
+for permutations.
+• Given distincti1,...,i n, then-cycle (i1i2··· in) mapsi1 toi2,i2 toi3, . . . ,in toi1, and is the identity
+elsewhere.
+• The order of an n-cycle is its length n.
+9
+
+Be sure you know to write σ∈Sn as a product of disjoint cycles σ =σ1··· σk and that
+o(σ) = lcm(lengthσ1,..., lengthσk).
+In particular, given a product of two or more permutations, know how to write the result as a product of
+disjoint cycles.
+Transpositions and An. Some basic things to know:
+• “Transposition” is just another word for 2-cycle.
+• Every element of Sn can be written a product of transpositions.
+• A given σ∈ Sn can be written as product of transpositions in many ways, so this product is not a
+unique factorization.
+• The number of transpositions involved is either always even ( σ is even) or always odd (σ is odd).
+• The alternating group An consists of all even permutations in Sn.
+• Forn≥ 2, the order of An is (n!)/2.
+• An n-cycle can be written as a product of n− 1 transpositions.
+• In particular, every cycle of odd length has odd order but is an even permutation .
+• Similarly, every cycle of even length has even order but is an odd permutation .
+W arning: Most permutations σ∈Sn are not cycles. To compute the order o(σ), or to decide whether σ is
+even or odd, write σ in cycle notation and work from there.
+12 (January 1997) Suppose that σ is a permutation in the alternating group A10 given by
+(
+1 2 3 4 5 6 7 8 9 10
+4 7 2 6 10 1 5 3
+)
+where the images of 8 and 9 have been lost. Determine the images of 8 and 9 under σ. What is the
+order of σ?
+Solution. The two missing outputs are also 8 and 9. If σ(8) = 9, then we must have σ(9) = 8, which
+would give
+σ = (1 4 6)(2 7 5 10 3)(8 9).
+However, since 3-cycles and 5-cycles are even, and 2-cycles are odd, that would make σ an odd
+permutation. But we were told σ∈A10, meaning that σ is even.
+Contradiction! Therefore σ is not the permutation above, and therefore σ(8)⁄= 9.
+So we must have σ(8) = 8, and hence σ(9) = 9. Thus,
+σ = (1 4 6)(2 7 5 10 3).
+The order of σ is the lcm of the orders of the individual (disjoint) cycles in the above decomposition.
+So the order of σ is o(σ) = lcm(3, 5) = 15.
+10
+
+13 (January 2010) Let σ be the permutation (4 2 1)(6 1 3 2) in S6.
+(a) Writeσ as a product of disjoint cycles in S6.
+(b) Compute the order of σ.
+(c) Is σ an even or an odd permutation?
+Solution. (a) σ = (1 3)(2 6 4).
+(b) The order of σ is the lcm of the orders of each individual cycle in its decomposition into disjoint
+cycles. Since the order of an n-cycle is n, we obtain o(σ) = lcm(3, 2) = 6.
+(c)σ is a product of a 2-cycle and a 3-cycle. The 2-cycle is an odd permutation (since 2 is even), and
+the 3-cycle is even (since 3 is odd), so σ is even + odd = odd.
+14 (February 2008) Recall that Sn denotes the group of permutations on n symbols.
+(a) Find an element of S10 of order 21.
+(b) Prove that no element of S10 has order 11.
+Solution. (a) The order of σ is the lcm of the orders of each individual disjoint cycle comprising σ
+(and the order of an n-cycle is n). Since 21 = lcm(3 , 7), the element σ = (1 2 3)(4 5 6 7 8 9 10) has
+order 21.
+(b) Suppose S10 has a permutation σ of order 11. Then σ must have a disjoint cycle structure such
+that the lcm of the cycle lengths is 11. If the disjoint cycles making up σ have lengths𝓁1,...,𝓁 k, then
+11 =o(σ) = lcm(𝓁1,...,𝓁 k).
+Thus each 𝓁i divides 11. Since 11 is prime, each 𝓁i = 1 or 11. But an 11-cycle requires 11 distinct
+symbols, which can’t happen since we are in S10. So 𝓁i = 1 for all i, which means that σ is the
+identity. Yet it has order 11. This contradiction shows that no element of S10 has order 11.
+Here is a more abstract problem.
+15 (February 2007) Fix an integern≥ 2, and write Sn for the permutation group on n letters. Let
+φ :Sn→G
+be a homomorphism, where G is a group of odd order. (I.e., G is a ﬁnite group with an odd number
+of elements.)
+(a) Prove that every transposition (i.e., 2-cycle) τ∈Sn is in kerφ. That is, prove that φ(τ) =e.
+(b) Prove that φ is the trivial homomorphism; i.e., prove that for all σ∈Sn, we have φ(σ) =e.
+Proof. (a) Let τ be a transposition, so o(τ) = 2. Since φ is a homomorphism,
+eG =φ(eSn) =φ(τ 2) =φ(τ)2,
+so o(φ(τ)) divides 2. But o(φ(τ)) also divides |G| by Lagrange’s Theorem. Since |G| is odd, this
+implies that o(φ(τ)) = 1. Thus, φ(τ) =eG.
+(b) We know that Sn is generated by transpositions. Given σ∈Sn, write σ as a product of transpo-
+sitions σ =τ1τ2··· τm. By part (a), φ(σ) =φ(τ1)φ(τ2)··· φ(τm) = (eG)m =eG as desired. QED
+11
+
+8 Rings
+Know the basic deﬁnitions:
+• Ring.
+• Commutative ring.
+• Ring with unity, or ring with 1. (I.e., R has a multiplicative identity, denoted 1 or 1 R.)
+• Field.
+IfR is a ring with unity, then any x∈R that has a multiplicative inversex−1 is called a unit. The set of all
+units of R is denoted R× and forms a group under the multiplication operation, with identity element 1 R.
+Some quick notes about a ring R and an element x∈R:
+• We have 0Rx =x0R = 0R.
+• Since (R, +) forms a group, for an integer n, we write nx to denote x added to itself n times (or
+subtracted, if n is negative; or 0 R if n = 0).
+• For a positive integer n, we write xn for x multiplied by itself n times. If R has unity, then x0 = 1R;
+if in addition x is a unit (i.e., if x has multiplicative inverse), then x−n = (x−1)n.
+W arnings
+• Don’t talk about just the “identity” of a ringR. Be clear about whether you mean the additive identity
+(which you should just call 0 or 0 R) or the multiplicative identity (which you should just call 1 or 1 R,
+assuming R is a ring with unity).
+• Never denote either identity of a ring by e. If you mean zero, say 0. If you mean one, say 1. Use e
+for the identity of a group, and use 0 and 1 for rings.
+• Don’t talk about just the “inverse” ofx∈R when working with rings. Make sure you are clear whether
+you mean the additive inverse−x (also known as the negative) or the multiplicative inversex−1 (if x
+is a unit, which it might not be).
+• Don’t confuse “unity” with “unit”. The word “unity” refers to the multiplicative identity 1 (if R even
+has a multiplicative identity), but “unit” refers to a element of R that has a multiplicative inverse.
+Polynomial Rings. If R is a commutative ring, the polynomial ring R[x] consists of all polynomials in x
+with coeﬃcients in R. See 20 for a problem that involves the polynomial ring Z[x]. The important case of
+k[x], when k is a ﬁeld, is treated in more detail in Section 13 of this Study Guide.
+9 Ideals
+Ideals. A subset I⊆R is an ideal if it satisﬁes the following properties:
+1. I⁄= ∅.
+2. For all x,y∈I, we have x−y∈I
+3. For all x∈I and r∈R, we have rx∈I and xr∈I.
+Properties 1 and 2 say that I is a subgroup of R under addition, and property 3 is sometimes informally
+called the “sticky” property.
+12
+
+Note the following:
+• Sometimes an ideal is called a “two-sided ideal”. (There are other objects, not on the comps syllabus,
+called left ideals and right ideals.) In practice, though, one almost always says just “ideal.”
+• When the ring is commutative, we haverx =xr, so the sticky property simpliﬁes to: For all x∈I and
+r∈R, we have rx∈I.
+• An ideal I always contains the zero element of the ring. (Can you prove this?)
+• LetR be a ring with unity 1, and let I⊆R be an ideal. Then I contains 1 if and only if I =R. (Can
+you prove this?) See 17 and 24 for problems that uses this fact.
+• Some books deﬁne an ideal I to be a subring of R with the sticky property. This is a valid but
+redundant deﬁnition; don’t use it on the exam . It requires checking xy∈I for allx,y∈I and then
+checking the same thing for all x∈I and y∈R.
+16 (January 2016) Deﬁne what it means for a subset I⊆R to be an ideal of R.
+Note: If you use other technical terms like “closed,” “subring,” “subgroup,” etc., you must fully
+deﬁne those terms as well.
+Answer: I⊆R is an ideal if:
+1. I⁄= ∅.
+2. For all x,y∈I, we have x−y∈I
+3. For all x∈I and r∈R, we have rx∈I and xr∈I. DONE!
+Comment. We often see answers to this question that look like the following:
+Answer: I⊆R is an ideal if:
+1. I is a subgroup of R under +.
+2. For all x∈I and r∈R, we have rx∈I and xr∈I.
+But you cannot say “DONE!” at this point. Although it is technically a correct deﬁnition, it does
+not follow the instructions, since it uses the technical term “subgroup”. But if you add
+3. I is a subgroup of R under + if it forms a group under + itself.
+then you are not done, since “group” is also a technical term that you have to deﬁne. This is why
+you should strike this out. But if you replace it with
+3. I is a subgroup of R under + if it is nonempty and closed under subtraction.
+then you are still not done since “closed” is also a technical term! So you would have to add
+4. I is closed under− if for all x,y∈I, we have x−y∈I. FINALLY DONE!
+Conclusion. Hopefully the moral is clear here. You should deﬁnitely think of the concepts like
+“subgroup under +” and “closed under subtraction” in your head, but you’re going to have to write
+out their meanings anyhow. So by all means think “closed,” but write “∀x,y∈I, we havex−y∈I.”
+17 (February 1982) Prove that if an ideal I of the ring Z contains two relatively prime integers,
+then I = Z.
+Proof. By hypothesis, there exist a,b∈I with gcd(a,b ) = 1. Thus, there are integers m,n∈ Z such
+thatma +nb = 1. But ma,nb∈I by the sticky property, so 1 = ma +nb∈I sinceI is closed under
++. For any x∈ Z, then, we have x =x· 1∈I by the sticky property. So I = Z QED
+13
+
+18 (January 2012) Let R =
+{[a b
+0 c
+]⏐⏐⏐a,b,c ∈ R
+}
+. You may assume that R is a ring under the
+operations of matrix addition and matrix multiplication. Prove that the set
+I =
+{[
+a b
+0 0
+]⏐⏐⏐a,b∈ R
+}
+is an ideal of R.
+Proof. (I non-empty)
+[
+0 0
+0 0
+]
+∈I, so I⁄= ∅.
+(I closed under−) Given r =
+[a b
+0 0
+]
+and s =
+[c d
+0 0
+]
+, r−s =
+[a−c b −d
+0 0
+]
+∈I.
+(Sticky) Given r =
+[a b
+0 c
+]
+∈ R and s =
+[x y
+0 0
+]
+, rs =
+[ax ay
+0 0
+]
+∈ I and sr =
+[ax bx +cy
+0 0
+]
+∈ I.
+QED
+Here is problem that uses a deﬁnition you are not expected to have seen before.
+19 (January 2010) Let R be a commutative ring and S⊆R a subset of R. Deﬁne the annihilator
+of S in R to be
+Ann(S) ={r∈R|rs = 0 for every s∈S}.
+Prove that Ann(S) is an ideal of R.
+Proof. (Nonempty) We have 0∈ Ann(S), since 0s = 0∀s∈S. So Ann(S)⁄= ∅.
+(Closed under−) Given a,b ∈ Ann(S) and s∈ S, we have (a−b)s = as−bs = 0− 0 = 0, so that
+a−b∈ Ann(S).
+(Sticky) Given r∈ R and x∈ Ann(S), and given any s∈ S, we have ( rx)s = r(xs) = r(0) = 0.
+Thus,rx∈ Ann(S). Since R is commutative, xr =rx∈ Ann(S). QED
+Comment. This problem assumes no prior knowledge of annihilators. In part, this problem tests
+whether you can read a mathematical deﬁnition that you have never seen before and use it in a proof.
+Suggestion. For practice, prove that if S,T are subsets of R, then Ann(S)∩ Ann(T ) = Ann(S∪T ).
+Here is a problem about ideals in a polynomial ring.
+20 (March 2015) LetR = Z[x] be the ring of polynomials (in one variable) with integer coeﬃcients.
+Note that the constant polynomial 6 and the degree one polynomial x + 1 are both elements of R.
+Deﬁne
+I ={6f + (x + 1)g|f,g ∈R}.
+Prove that I is an ideal of R.
+Proof. (Nonempty) Let f =g = 0∈R. Then 6f + (x + 1)g∈I, so I⁄= ∅.
+(Closed under−) Givena,b∈I, writea = 6f1+(x+1)g1 andb = 6f2+(x+1)g2 withf1,f 2,g 1,g 2∈R.
+Then
+a−b = 6f1 + (x + 1)g1−
+(
+6f2 + (x + 1)g2
+)
+= 6(f1−f2) + (x + 1)(g1−g2)∈I.
+(Sticky) Given a∈I and h∈R, write a = 6f + (x + 1)g with f,g ∈R. Then
+ah =ha =h
+(
+6f + (x + 1)g
+)
+= 6(hf) + (x + 1)(hg)∈I QED
+14
+
+10 Quotient Rings
+Recall that an ideal I⊆R is a subgroup under addition, so the cosets of I are usually written
+I +r ={s +r|s∈I},
+although sometimes you see r +I since addition is commutative. The deﬁnition of ideal guarantees that the
+set of cosets
+R/I ={I +r|r∈R}
+becomes a ring, called the quotient ring, under the following operations:
+(I +a) + (I +b) =I + (a +b) and ( I +a)(I +b) =I +ab.
+21 (January 2009) Let I⊆ R be an ideal of R, and suppose that xy−yx∈ I for every x,y ∈ R.
+Prove that the quotient ring R/I is commutative.
+Proof. GivenI +a,I +b∈R/I, our assumption on I implies that ab−ba∈I. By the coset relation,
+we obtain I +ab =I +ba. Then
+(I +a)(I +b) =I +ab =I +ba = (I +b)(I +a),
+so R/I is commutative, as desired QED
+Comment. Remember that when dealing with quotient rings, cosets are always written additively,
+and so the coset relation is the additive version I +a =I +b⇐⇒a−b∈I.
+DO NOT WRITE cosets as Ia when I is an ideal of a ring.
+Suggestion. Prove the converse: If R/I is commutative, then xy−yx∈I for every x,y∈R.
+22 (January 2014) A nonzero element a of a ring is said to be nilpotent if there is a positive integer
+n≥ 1 such that an = 0. (The element 0 itself is not said to be nilpotent.)
+Let R be a commutative ring, and let I⊆ R be an ideal. Prove that the following two statements
+are equivalent.
+(a) The quotient ring R/I contains no nilpotents.
+(b) For every element b∈R such that bm∈I for some positive integer m≥ 1, we have b∈I.
+Proof. (=⇒) Given b∈R and m≥ 1 with bm∈I, we have
+(I +b)m =I +bm =I + 0.
+SinceI + 0 is the zero element of R/I, it follows that I +b is either nilpotent or zero in R/I. But by
+assumption (a), I +b is not nilpotent. Therefore, I +b =I + 0, which means b =b− 0∈I.
+(⇐=) SupposeI +b∈R/I is a nilpotent. Then there is some integerm≥ 1 such that (I +b)m =I +0.
+That is,
+I +bm = (I +b)m =I + 0,
+and hence bm =bm− 0∈I. By property (b), we have b∈I. Thus, I +b =I + 0, contradicting the
+assumption that I +b is nilpotent, and proving that R/I has no nilpotents. QED
+Comment. As in 19 , this problem asks you to deal with a deﬁnition (nilpotent) you are not expected
+to have seen before. Also, as in 21 , we need to use the additive version I +a =I +b⇐⇒a−b∈I
+of the coset relation.
+Problems 25 and 27 also use the coset relation in a quotient ring.
+15
+
+11 Ring Homomorphisms
+Know:
+• The deﬁnition of ring homomorphism φ :R→S.
+• If φ :R→S is a ring homomorphism, then φ(0R) = 0S. [But even if both rings have 1, we might not
+haveφ(1R) = 1S!]
+• If φ :R→S is a ring homomorphism, then for all x∈R and all n∈ Z, we have φ(nx) =nφ(x).
+• If φ :R→S is a ring homomorphism, then for all x∈R and all n∈ N, we have φ(xn) =φ(x)n.
+• The deﬁnition of kernel Ker(φ)⊆R and image Im(φ) =φ(R)⊆S.
+• The conditions for φ to be a ring isomorphism.
+Be able to show that the kernel of a ring homomorphismφ :R→S is an ideal ofR. Here is a related problem.
+23 (February 2008) Let φ :R→S be a ring homomorphism. Let I⊆R be an ideal of R, and set
+J ={x∈I|φ(x) = 0S},
+where 0S denotes the zero element of S. Prove that J is an ideal of R.
+Proof. (Nonempty) We have 0 R∈I and φ(0R) = 0S, so 0 R∈J. Thus, J⁄= ∅.
+(Closure under−) Given x,y∈J, we have x,y∈I and hence x−y∈I. Moreover,
+φ(x−y) =φ(x)−φ(y) = 0S− 0S = 0S, so x−y∈J.
+(Sticky) Given x∈J and r∈R, we have x∈I, and hence rx,xr ∈I. Moreover,
+φ(rx) =φ(r)φ(x) =φ(r)0S = 0S, and
+φ(xr) =φ(x)φ(r) = 0Sφ(r) = 0S,
+so rx,xr ∈J.
+The Fundamental Theorem of Ring Homomorphisms, Also called the First Homomorphism Theorem
+for Rings or the Basic Homomorphism Theorem for Rings , this theorem says that if φ : R→ S is a ring
+homomorphism, then there is a ring isomorphism ~φ :R/Ker(φ)≃ Im(φ) deﬁned by ~φ(Ker(φ) +r) =φ(r).
+12 Quotient Rings and Fields
+Criteria for R to be a Field. Know that a commutive ring with unit is a ﬁeld if and only if its only
+ideals are{0} and the whole ring. Be prepared to prove this. For example, here is a problem asking to prove
+one direction of this statement:
+24 (March 2005) Let F be a ﬁeld and let J⊆ F be an ideal of F . Prove that either J ={0} or
+J =F .
+Proof. If J ={0}, then we are done. If J⁄={0}, then there is a∈J with a⁄= 0. Since F is a ﬁeld, a
+has a multipllicative inverse a−1. Then 1 = a−1a∈J since J is an ideal. But an ideal that contains
+1 is the whole ring, so J =F . QED
+16
+
+Maximal Ideals. Know the deﬁnition of a maximal ideal M⊆R.
+Criteria for R/M to be a Field. Let R be a commutative ring with unit. Know that ideal M⊆ R is
+maximal if and only if R/M is a ﬁeld. Here is a problem that asks you to prove part of this result.
+25 (February 2013) Suppose that R is commutative and has a multiplicative identity 1. Let
+I⊆J⊆R be ideals, and suppose that the quotient ring R/I is a ﬁeld.
+If I ⊊J, prove that 1∈J.
+[In fact, it is a Theorem from Math 350 that J = R in this case, but you are only being asked to
+prove that 1∈J. In particular, however, you may not quote the J =R theorem.]
+Proof. BecauseI ⊊J, there existsr∈J rI. By the coset relation, r /∈I impliesI +r⁄=I +0 = 0 R/I.
+Thus,I +r is nonzero. By the deﬁnition of ﬁeld, every nonzero element of R/I has a multiplicative
+inverse. Hence, there exists I +s∈R/I such that
+(I +r)(I +s) =I + 1.
+So I +rs =I + 1, and therefore 1−rs∈I⊆J by the coset relation.
+Note that rs∈J, because J is an ideal of R and r∈J. Thus, since J is closed under addition, we
+have 1 = (1−rs) +rs∈J. QED
+Comment. This is a problem where getting started can be a challenge. Your goal is to show that
+1∈ J, which probably means that you want to ﬁnd a way to express 1 as some combination of
+elements ofJ. Since it’s not immediately obvious how to do that, we look to the hypotheses for clues.
+We see:
+• I ⊊J, which suggests picking r∈J with r /∈I.
+• R/I is a ﬁeld, which suggests that multiplicative inverses of nonzero elements may be relevant.
+If you are comfortable with cosets, you will realize that r /∈I means that I +r is a nonzero element
+ofR/I. The above proof uses this to ﬁnd s which eventually satisﬁes 1−rs∈J. Once you have that,
+it’s easier to see how we might write 1 as a combination of elements of J.
+13 Polynomial Rings k [x ], for a Field k
+A polynomial f = f(x)∈ k[x] is a symbolic object ( x is just a symbol) in the ring k[x]. However, if we
+replace x with an element a∈ k (sometimes called “plugging in”), then we get an element f(a)∈ k. This
+operation is compatible with addition and multiplication. Here is a problem that makes use of this.
+26 (January 2014) For the polynomial ring R = R[x], deﬁne
+I ={f∈R|f(2) =f(5) = 0}.
+Prove that I is an ideal of R.
+Proof. (Nonempty) Note that 0∈ R gives the constant polynomial 0 ∈R. Since 0(2) = 0(5) = 0, we
+have 0∈I.
+(Closed under−) Given f,g ∈I, we have f(2) =f(5) =g(2) =g(5) = 0. So
+(f−g)(2) =f(2)−g(2) = 0− 0 = 0, and (f−g)(5) =f(5)−g(5) = 0− 0 = 0, and hence f−g∈I.
+(Sticky) Given f∈I and g∈R, we have f(2) =f(5) = 0. So
+(gf )(2) =g(2)f(2) =g(2)· 0 = 0, and (gf )(5) =g(5)f(5) =g(5)· 0 = 0. Thus, gf∈I.
+Since R is commutative, we also have fg =gf∈I. QED
+17
+
+The Division Algorithm. Know the statement of the division algorithm in k[x]. Here is a problem that
+uses the division algorithm.
+27 (March 2009) Let F be a ﬁeld, let R = F[x] be the ring of polynomials in one variable with
+coeﬃcients in F, and let f(x)∈R be a polynomial of degree 2009. Let
+I ={g(x)f(x)|g∈R}
+be the set of all polynomials which are multiples of f(x). It is a fact, which you may assume, that I
+is an ideal of R.
+(a) For any g,h∈R, prove that I +g =I +h if and only if (g−h) is divisible by f.
+(b) Prove that for any g∈ R, there is a unique polynomial h∈ R with deg h < 2009 such that
+I +g =I +h.
+Proof. (a) Given g,h∈R, we have I +g =I +h if and only if g−h∈I, by the coset relation. But
+the deﬁnition of I implies that g−h∈I if and only if g−h is a multiple of f.
+(b) Given g∈R:
+(Existence) The division algorithm yields q,h∈ F[x] such that
+g =qf +h with deg h< degf = 2009.
+Thusg−h =qf∈I, so by part (a), I +g =I +h, proving existence.
+(Uniqueness) Suppose we are givenh,h′∈R withI+g =I+h′ =I+h′, and with degh, degh′ < 2009.
+Then I +h =I +h′, so by part (a), h−h′ is a multiple of f. That is,
+h−h′ =kf for some k∈R.
+If k⁄= 0, then
+deg(h−h′) = deg(kf ) = degk + degf≥ degf = 2009.
+However, the fact that deg h, degh′ < 2009 implies that deg(h−h′)< 2009 also, a contradiction.
+Thus, we must have k = 0, and hence h−h′ = 0. That is, h =h′, proving uniqueness. QED
+Every Ideal in k[x] is Principal. Recall that a principal ideal in a commutative ring consists of all
+multiples of a ﬁxed element. Problem 27 features principal ideals in k[x]. This is no accident, since
+every ideal in k[x] is of the form ⟨f⟩ ={gf|g∈k[x]}.
+Furthermore,f is unique up to multiplication by a nonzero constant ofk. Since the units of k[x] are precisely
+the nonzero constants, we can equivalently say that f is unique up to multiplication by a unit.
+Irreducible Polynomials and Maximal Ideals in k[x]. Know the following:
+• The deﬁnition of reducible and irreducible polynomial in k[x].
+• The irreducibility criterion for polynomials f∈k[x] of degree 2 or 3: such a polynomial is irreducible
+if and only if it has no roots in the ﬁeld k. (See problem 28 below for a proof of this fact for cubic
+polynomials; can you do the proof for quadratic polynomials?)
+• An ideal I⊆k[x] is maximal if and only if I =⟨f⟩, where f∈k[x] irreducible. That is:
+f is irreducible ⇐⇒ ⟨f⟩⊆ k[x] is maximal ⇐⇒ k[x]/⟨f⟩ is a ﬁeld.
+Here some problems about these concepts.
+18
+
+28 (January 1999) Let k be a ﬁeld. Show that a cubic polynomial f(x)∈k[x] is irreducible in k[x]
+if and only if f(x) has no roots in k.
+Proof. We’ll prove f reducible iﬀ f has a root in k.
+(=⇒): Since f is reducible, there exist g,h∈k[x] with f =gh and with degg, degh< 3. Since deg g
+and degh are nonnegative integers summing to deg f = 3, one of g and h must have degree 1 and
+the other must have degree 2. Without loss, deg g = 1. That is, g(x) =ax +b for some a,b∈k with
+a⁄= 0. Then −b/a∈k, and
+f
+(
+− b
+a
+)
+=g
+(
+− b
+a
+)
+h
+(
+− b
+a
+)
+=
+[
+a
+(
+− b
+a
+)
++b
+]
+h
+(
+− b
+a
+)
+= (−b +b)h
+(
+− b
+a
+)
+= 0·
+(
+− b
+a
+)
+= 0,
+and hence−b/a is a root of of f in k.
+(⇐=): Let c∈k be a root of f, and let g(x) = x−c∈k[x]. By the division algorithm for f and g,
+there exist polynomials q,r ∈k[x] with f =qg +r and with either r = 0 or degr< degg = 1.
+If r⁄= 0 but degr< 1, then degr = 0, which means that r =b is a nonzero constant. Hence,
+0 =f(c) =q(c)g(c) +r(c) =q(c)· (c−c) +b = 0 +b =b⁄= 0,
+a contradiction. Thus, we must in fact have r = 0, and hence f =qg. Since deg f = 3 and degg = 1,
+we must have deg q = 3− 1 = 2, and hence we have factored f as a product of two lower-degree
+polynomials g and q, proving that f is reducible. QED
+Comment. This problem is asking you to prove a fact that you are expected to know from Math 350.
+Obviously, you cannot simply quote the desired fact from the course.
+Suggestion. Try proving the same fact for the case that f is a quadratic polynomial. Also, prove that
+the analogous fact is not true for for polynomials of degree 4 or higher.
+Here is a problem where you need to know a enough about why the quotient ringk[x]/⟨f⟩ is a ﬁeld when
+f is irreducible to be able to ﬁnd the inverse of a particular element in the quotient ring.
+29 Letf(x) =x2 + 1∈ F3[x], where F3 ={0, 1, 2} is the ﬁeld of three elements. Let I =⟨f⟩ be the
+principal ideal in F3[x] generated by f.
+(a) Prove that f is irreducible in F3[x].
+(b) Prove that the quotient ring F3[x]/I is a ﬁeld.
+(c) Find the multiplicative inverse of I +x in the quotient ring F3[x]/I.
+Proof. (a) Since deg f = 2, f is reducible if and only if it has no roots in F3. Checking shows:
+f(0) = 1⁄= 0, f (1) = 2⁄= 0, f (2) = 2⁄= 0.
+Since f(a)⁄= 0 for all a∈ F3, it follows that f is irreducible.
+(b) Since f is irreducible, the ideal I =⟨f⟩ is maximal in F3[x], by a Math 350 theorem. So by
+another Math 350 theorem, the quotient F3[x]/I is a ﬁeld.
+(c) We need a polynomial g∈ F3[x] such that (I +x)(I +g) =I + 1. However,
+(I +x)(I +g) =I + 1 ⇐⇒ I +xg =I + 1 ⇐⇒ xg− 1∈I ⇐⇒ xg + 2∈I,
+where the last equivalence uses −1 = 2 in F3. Choosing g(x) = 2x gives
+xg + 2 =x(2x) + 2 = 2(x2 + 1)∈I.
+Thus, by the above equivalences, and by commutativity, we have
+(I + 2x)(I +x) = (I +x)(I + 2x) =I + 1 = 1F3[x]/I,
+and hence I + 2x is the multiplicative inverse of I +x in F3[x]/I. QED
+19
+
+30 (January 2009)
+(a) Prove that f(X) =X 4 +X 2 + 1 is reducible in the polynomial ring F2[X], where F2 ={0, 1} is
+the ﬁeld of two elements.
+(b) Prove that g(X) = X 3 + 2X 2 + 2X + 3 is irreducible in the polynomial ring F5[X], where
+F5 ={0, 1, 2, 3, 4} is the ﬁeld of ﬁve elements.
+Proof. (a) To be reducible,f must either have a degree one factor (and hence have a root in F2), orf
+must be a product of two irreducible factors of degree two. But f(0) =f(1) = 1 so f has no roots in
+F2. Hence f is the product of two irreducible quadratic factors. The possible quadratic polynomials
+are X 2, X 2 + 1, X 2 +X and X 2 +X + 1. The ﬁrst and third are clearly reducible, and over F2,
+we have X 2 + 1 = (X + 1)2, so X 2 +X + 1 is the only quadratic irreducible polynomial. Then an
+explicit calculation (made easier by using (a +b)2 =a2 +b2 since we are working over F2) shows that
+f(X) = (X 2 +X + 1)(X 2 +X + 1). QED
+(b) Since degg = 3, we know that g is reducible if and only if it has no roots. Checking shows:
+g(0) = 03 + 2(02) + 2(0) + 3 = 0 + 0 + 0 + 3 = 3⁄= 0
+g(1) = 13 + 2(12) + 2(1) + 3 = 1 + 2 + 2 + 3 = 3⁄= 0
+g(2) = 23 + 2(22) + 2(2) + 3 = 3 + 3 + 4 + 3 = 3⁄= 0
+g(3) = 33 + 2(32) + 2(3) + 3 = 2 + 3 + 1 + 3 = 4⁄= 0
+g(4) = 43 + 2(42) + 2(4) + 3 = 4 + 2 + 3 + 3 = 2⁄= 0
+Since g(a)⁄= 0 for all a∈ F5, it follows that g is irreducible. QED
+Comment. This is a problem where ﬁniteness helps. In part (a), since we are working over a ﬁnite
+ﬁeld, there are only ﬁnitely many polynomials of given degree. Our proof above listed all quadratic
+polynomials in F2[X], and we could determine which were irreducible by plugging in the (ﬁnitely
+many) elements of F2. We did the same plugging in strategy for part (b).
+Here is a problem about how irreducible polynomials correspond to maximal ideals ink[x]. More precisely,
+it’s about how non-irreducible polynomials correspond to non-maximal ideals.
+31 (March 2008) Let g(x) = x2 + 3∈ F7[x], where F7 ={0, 1, 2, 3, 4, 5, 6} is the ﬁeld of seven
+elements.
+(a) Prove that g is reducible in F7[x].
+(b) Let⟨g⟩⊆ F7[x] denote the principal ideal {gh| h∈ F7[x]}. Find an ideal I⊆ F7[x] such that
+⟨g⟩ ⊊I ⊊ F 7[x].
+Proof. (a) Plugging each element of F7 into g soon shows g(2) = 0, so that ( x− 2) is a factor of g.
+Long division reveals that g(x) = (x− 2)(x + 2), conﬁrming that g is reducible.
+(b) Let I =⟨x− 2⟩⊆ F7[x]. Any element of ⟨g⟩ is of the form hg for some h∈ F7[x], and hence
+hg =
+(
+(x + 2)h
+)
+· (x− 2)∈I.
+Thus, we have⟨g⟩⊆ I⊆ F7[x]. However, x− 2⁄∈⟨ g⟩, because any multiple hg of g must either be
+0 or have degree deg(hg)≥ degg = 2, whereas deg(x− 2) = 1. Finally, 1 ⁄∈I, because any multiple
+h· (x− 2) of (x− 2) must either be 0 or have degree ≥ deg(x− 2) = 1, whereas deg(1) = 0.
+Hence,⟨g⟩ ⊊I ⊊ F 7[x]. QED
+Comment. Since the ring is F7[x], you know in advance that I has to be principal. You should check
+that I =⟨x + 2⟩ also works.
+20
+
+14 Preparing for the Algebra Exam
+Now that you have ﬁnished reading the content part of the Study Guide, what should you do next to prepare
+for the algebra exam? The key thing to keep in mind is that
+You need an active knowledge of algebra.
+Here are a some suggestions to help you achieve this.
+Read the Study Guide Actively. There are many places where the Study Guide asks you to provide a
+proof or complete a proof. Do so. This is really important.
+Read Your Notes and Your Algebra Book. In many places in the Study Guide, we say “Know the
+basic facts about . . . ,” without stating the facts precisely. This is deliberate, since we want you to refer to
+your notes and your algebra book when studying for the exam.
+Not everything covered in your algebra course is part of the algebra exam. For example, the class equation
+from group theory is a lovely topic that will not be on the exam. This Study Guide and the Syllabus for
+Algebra (Math 350 ) list the topics that you need to know.
+Know Basic Results and Deﬁnitions. Keep in mind that knowing the precise statements of deﬁnitions
+and basic theorems is essential. The adjective “precise” is important here. For example, if a problem asks
+you to state the Lagrange’s theorem for subgroups, then just writing
+|H|
+⏐⏐|G|
+will not get full credit. You need to state the whole theorem: If H is a subgroup of a ﬁnite group G, then
+|H|
+⏐⏐|G|.
+Also, when asked for a deﬁnition, you are sometimes instructed to deﬁne terms used in your deﬁnition. In
+such a situation, just writing “closed under inverses” would not be suﬃcient; you would need to explain
+what “closed” means. (And if you were working in a ring, you’d need to specify whether you mean additive
+inverses or multiplicative inverses.)
+Study Old Exams and Solutions. The Department website has a collection of old exams in algebra,
+many with solutions. It is very important to do practice problems. This is one of the key ways to acquire
+an active knowledge of algebra. There are two dangers to be aware of when using old exams and solutions:
+• Thinking that the exams tell you what to study. Every topic on the Syllabus and in this Study Guide
+is fair game for an exam question.
+• Reading the solutions. This is passive. To get an active knowledge of the material, do problems from
+the old exams yourself, and then check the solutions. The more you can do this, the better.
+Work Together, Ask Questions, and Get Help. Studying with your fellow math majors can help. You
+can learn a lot from each other. Faculty are delighted to help. Don’t hesitate to ask us questions and show
+us your solutions so we can give you feedback. The QCenter has excellent people who have helped many
+students in the past prepare for the Comprehensive Exam.
+Start Now. Properly preparing for the algebra exam will take longer than you think. Start now.
+21
+
