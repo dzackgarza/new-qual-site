@@ -251,7 +251,7 @@ Chapters 7-9 in D&F
 
 - the Fundamental Theorem of Symmetric Functions
 
-### Module Theory:
+### Module Theory
 
 > Sections 10.1,2,3 and 12.1,2,3.
 

@@ -18,7 +18,7 @@ review: draft
 Homs among various cyclic groups $C_m$ and any of their automorphism groups $\Aut(C_m)$ are **completely** classified, so for example $\Hom(C_m, C_n), \Hom(C_m, \Aut(C_n)), \Hom(\Aut(C_m), C_n)$, etc.
 There's a good reference here: 
 
-<https://www.whitman.edu/documents/Academics/Mathematics/SeniorProject_BrianSloan.pdf>
+[Brian Sloan's senior project on automorphism groups (Whitman College)](https://www.whitman.edu/documents/Academics/Mathematics/SeniorProject_BrianSloan.pdf)
 
 
 Let $\varphi$ be the totient function, and note that a cyclic group $C_n$ has precisely $\phi(n)$ choices of generators.

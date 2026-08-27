@@ -25,7 +25,7 @@ This can be weakened: an injective holomorphic map satisfies $f'(z) \neq 0$ and 
 
 [[PR-74KHY]]
 
-:::{.example title="?"}
+:::{.example}
 \envlist
 
 - $(z, i, 1, -1): \DD\to \HH$

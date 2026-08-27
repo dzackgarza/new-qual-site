@@ -27,7 +27,7 @@ H_{n}(\bigvee_{k} S^n) = \ZZ^k
 
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 Mayer-Vietoris. 
 
 :::

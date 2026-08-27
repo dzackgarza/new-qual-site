@@ -57,7 +57,7 @@ Isolated singularities can also be classified by their limiting behavior near th
 
 [[T-ZZJDP]]
 
-:::{.proof title="?"}
+:::{.proof}
 Take $\gamma$ to be a circle centered at $z_0$ and use
 \[
 f(z) \da \int_\gamma { f(\xi) \over \xi - z} \dx
@@ -89,7 +89,7 @@ Similarly $g(z) \da \sin\qty{1\over z}$ has an essential singularity at $z=0$, a
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 The singularities of a rational function are always isolated, since there are finitely many zeros of any polynomial.
 The function $F(z) \da \Log(z)$ has a singularity at $z=0$ that is **not** isolated, since every neighborhood intersects the branch cut $(-\infty, 0) \cross \ts{ 0 }$, where $F$ is not even defined.
 The function $G(z) \da 1/\sin(\pi/z)$ has a non-isolated singularity at 0 and isolated singularities at $1/n$ for all $n$.
@@ -133,7 +133,7 @@ assuming $m>n$, but then taking $z\to z_0 =0$ on the RHS yields $g(z) = 0$, a co
 
 [[PR-EWOP5]]
 
-:::{.proof title="?"}
+:::{.proof}
 Suppose not, then pick a limit point $z_0$ with $f(z_0)=0$ with a sequence $\ts{z_k}\to z_0$ where $f(z_k) = 0$ for all $k$.
 Expand $f$ in a Laurent series; since $f\not\equiv 0$ there is a smallest nonzero coefficient $c_m$:
 \[
@@ -164,7 +164,7 @@ Any pole admits a neighborhood where $f$ is nonvanishing, and in fact bounded be
 
 [[PR-NITIQ]]
 
-:::{.proof title="?"}
+:::{.proof}
 Use that $z_0$ is a zero of $1/f$ to write
 \[
 {1\over f(z) } = (z-z_0)^n g(z)

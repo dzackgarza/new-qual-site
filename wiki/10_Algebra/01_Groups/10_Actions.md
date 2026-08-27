@@ -45,8 +45,8 @@ $x\not\in H$, so $H\neq xH$, but two must be equal:
 
 [[T-3KCD6]]
 
-:::{.proof title="?"}
-See [https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf](https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf).
+:::{.proof}
+See [Keith Conrad's notes on proofs of Cauchy's theorem](https://kconrad.math.uconn.edu/blurbs/grouptheory/cauchypf.pdf).
 
 :::
 
@@ -233,7 +233,7 @@ Proceed by partitioning the sum up according to which orbit each term comes from
 
 ### Conjugation on Subgroups
 
-:::{.example title="?"}
+:::{.example}
 Let $G$ act on $X \da\ts{H \st H\leq G}$ (its set of *subgroups*) by conjugation.
 
 - The orbit $\OO(H) = \theset{gHg\inv \st g\in G}$ is the **set of conjugate subgroups** of $H$.
@@ -253,7 +253,7 @@ Let $G$ act on $X \da\ts{H \st H\leq G}$ (its set of *subgroups*) by conjugation
 
 ### Left Translation on Cosets
 
-:::{.example title="?"}
+:::{.example}
 For a fixed proper subgroup $H< G$, let $G$ act on its cosets $X \da G/H \da \theset{gH\suchthat g\in G}$ by left translation.
 
 - The orbit $\OO(xH) = G/H$, the entire set of cosets.
@@ -280,7 +280,7 @@ For a fixed proper subgroup $H< G$, let $G$ act on its cosets $X \da G/H \da \th
 
 [[PR-PADL7]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Let $\phi: G\actson X\da \ts{xH}$, noting that $\size  X = p$ and $\Sym(X) \cong S_p$.

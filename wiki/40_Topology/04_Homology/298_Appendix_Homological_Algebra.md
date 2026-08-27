@@ -78,7 +78,7 @@ Any LES $A_1 \into \cdots \into A_6$ decomposes into a twisted collection of SES
 
 ## Free Resolutions
 
-::: {.example title="?"}
+::: {.example}
 The canonical example:
 $$
 0 \to \ZZ \mapsvia{\times m} \ZZ \mapsvia{\mod m} \ZZ_m \to 0

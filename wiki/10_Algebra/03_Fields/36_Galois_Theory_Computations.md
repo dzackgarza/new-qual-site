@@ -4,7 +4,7 @@ order: 36
 
 # Galois Theory
 
-> Some useful exercises and solutions: <https://feog.github.io/chap4.pdf>
+> Some useful [Galois theory exercises and solutions](https://feog.github.io/chap4.pdf).
 
 :::{.remark}
 \envlist
@@ -29,7 +29,7 @@ order: 36
 
 - If $\alpha\beta \in \QQ$, then $\alpha \in \QQ(\beta)$ and vice-versa (I think).
 
-- Checking subgroup lattices: <https://hobbes.la.asu.edu/groups/groups.html>
+- Checking subgroup lattices: [tables of small groups (Arizona State)](https://hobbes.la.asu.edu/groups/groups.html)
 
 - De-nesting radicals:
 
@@ -249,7 +249,7 @@ Q_{8}=\left\langle\alpha, \beta \mid \alpha^{4}=\beta^{4}=1, \alpha \beta \alpha
 
 ### Distinguishing Groups
 
-> Material borrowed from <https://kconrad.math.uconn.edu/blurbs/galoistheory/galoisSnAn.pdf>
+> Material borrowed from [Keith Conrad's notes on the Galois groups $S_n$ and $A_n$](https://kconrad.math.uconn.edu/blurbs/galoistheory/galoisSnAn.pdf).
 
 :::{.remark title="Distinguishing groups"}
 \envlist
@@ -295,7 +295,7 @@ The following are the cycle types that can occur:
 :::
 
 :::{.fact}
-Some useful generating sets: see <https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf>
+Some useful generating sets: see [Keith Conrad's notes on generating sets](https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf).
 
 ![](../../../../assets/assets/figures/2021-08-09_18-51-08.png)
 
@@ -347,7 +347,7 @@ This is enough to show $G = A_4$.
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 Let $f(x) = x^6 + x^4 + x + 3$, reduce $\mod 11$ to get a cycle type $(1, 5)$.
 So $G\leq S_6$ contains a 5-cycle, where $5>n/2 \da 6/2=3$, meaning $G = A_n, S_n$.
 Now reduce $\mod p$ for various $p$ to look for a cycle type of the form $(2,1,1,\cdots)$ or $(3,1,1,\cdots)$.
@@ -355,13 +355,13 @@ This is hard, but $f\mod 2$ has type $(1,2,3)$ and $\qty{ (a,b)(c,d,e) }^3 = (a,
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 Let $f(x) = x^7-x-1$, reduce $\mod 2$ to get a 7-cycle, and $\mod 3$ to get $(2, 5)$.
 Then use $(2, 5)^5 = (2,1,1,\cdots)$ to get a transposition, So $G = S_7$.
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 Let $f(x) \da x^7-7x+10$.
 Reducing $\mod 3$ yields $(2, 5)$ and $(2, 5)^5 = (2, \cdots)$ and have a transposition.
 Since $5>n/2=7/2$, $G = S_7$.

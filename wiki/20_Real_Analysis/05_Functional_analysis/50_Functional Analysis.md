@@ -117,7 +117,7 @@ For all $x, y\in H$,
 
 [[T-LDCZB]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Define $M \da \ker \Lambda$.
@@ -155,7 +155,7 @@ $$\Lambda(u) = \Lambda(\Lambda(x) z - \Lambda(z) x) = \Lambda(x) \Lambda(z) - \L
 
 [[T-J3AN3]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Given $\theset{a_{n}}$, define $S_{N} = \sum^N a_{n} \vector u_{n}$.
@@ -169,7 +169,7 @@ $$\Lambda(u) = \Lambda(\Lambda(x) z - \Lambda(z) x) = \Lambda(x) \Lambda(z) - \L
 
 [[T-5IWCG]]
 
-:::{.proof title="?"}
+:::{.proof}
 $2 \implies 3$:
 Choose $\delta < 1$ such that 
 $$
@@ -192,7 +192,7 @@ We have $\abs{L(x-y)} \leq c\norm{x-y}$, so given $\varepsilon \geq 0$ simply ch
 
 [[T-QBTWN]]
 
-:::{.proof title="?"}
+:::{.proof}
 The only nontrivial property is the triangle inequality, but
 \[
 \pnorm{L_{1} + L_{2}}{\op} = \sup \abs{L_{1}(x) + L_{2}(x)} \leq \sup \abs{L_{1}(x)} + \abs{\sup L_{2}(x)} = \pnorm{L_{1}}\op + \pnorm{L_{2}}\op
@@ -202,7 +202,7 @@ The only nontrivial property is the triangle inequality, but
 
 [[T-W5SDY]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Let $\theset{L_{n}}$ be Cauchy in $X\dual$.

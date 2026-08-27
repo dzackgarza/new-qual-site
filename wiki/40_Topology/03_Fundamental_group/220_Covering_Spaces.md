@@ -303,7 +303,7 @@ Each red vertex corresponds to a copy of $S^2$ covering $\RP^2$ (having exactly 
 
 [[T-TQ4J3]]
 
-:::{.proof title="?"}
+:::{.proof}
 If $X$ is contractible, there is a homotopy $H: X\cross I \into X$ between $\id_X$ and a constant map $c: x \mapsto x_0$. 
 So construct 
 \[
@@ -322,7 +322,7 @@ Then $H'$ is a homotopy between $f$ and a constant map, and $f$ is nullhomotopic
 
 [[C-GJRYO]]
 
-:::{.proof title="?"}
+:::{.proof}
 We have the following situation
 where $f = p \circ \tilde f$:
 
@@ -344,7 +344,7 @@ But then $p\circ \tilde H: X \cross I \into Y$ is also a homotopy from $f$ to th
 
 [[PR-TRSHQ]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Use the fact that $\pi_1(\TT^2) \cong \ZZ^2$ and $\pi_1(\RP^2) = \ZZ/2\ZZ$ are known.
@@ -366,4 +366,4 @@ If $f:X\to Y$ is a covering map of degree 1, then $f$ is necessarily a homeomorp
 
 ## Exercises
 
-- See <https://www.math.utah.edu/~patrikis/6520Spring2018/6520hw4.pdf>
+- See [Patrikis's Math 6520 homework 4 (Utah)](https://www.math.utah.edu/~patrikis/6520Spring2018/6520hw4.pdf).

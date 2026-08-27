@@ -9,7 +9,7 @@ order: 30
 :::{.fact}
 Some facts about common automorphism groups, and how to count and reason about them.
 Homs among various cyclic groups $C_m$ and any of their automorphism groups $\Aut(C_m)$ are **completely** classified, so for example $\Hom(C_m, C_n), \Hom(C_m, \Aut(C_n)), \Hom(\Aut(C_m), C_n)$, etc.
-There's a good reference here: <https://www.whitman.edu/documents/Academics/Mathematics/SeniorProject_BrianSloan.pdf>
+There's a good reference here: [Brian Sloan's senior project on automorphism groups (Whitman College)](https://www.whitman.edu/documents/Academics/Mathematics/SeniorProject_BrianSloan.pdf).
 
 Let $\varphi$ be the totient function, and note that a cyclic group $C_n$ has precisely $\phi(n)$ choices of generators.
 One can compute
@@ -74,7 +74,7 @@ C_n= C_{\prod_{k=1}^\ell p_k^{n_k}}= \prod_{k=1}^{\ell} C_{p_k^{n_k}}
 
 [[PR-N6S6P]]
 
-:::{.example title="?"}
+:::{.example}
 Some examples of writing automorphism groups as products of cyclic groups:
 \[
 \Aut(C_{2^2\cdot 3}) &\cong \Aut(C_{2^2})\cross \Aut(C_3) \cong \qty{C_2 \cross C_{2^{2-2}}} \cross C_{\phi(3)} = \qty{C_2}\cross C_2 \\
@@ -184,7 +184,7 @@ For 3, $x\in H \intersect K$ implies that the order of $x$ divides $\gcd(\# H, \
 Thus for 2, one only needs that $\#(HK) = \# G$.
 
 :::
-:::{.proof title="?"}
+:::{.proof}
 With these conditions, the following map is an isomorphism:
 \[
 \Gamma: H\cross K &\to G \\
@@ -337,7 +337,7 @@ In practice, it is easy to list all of the partitions out for a given $n$, but i
 
 [[PR-434DX]]
 
-:::{.example title="?"}
+:::{.example}
 One can compute that $P(5) = 7$, and the formula recovers this:
 \[
 P(5) 
@@ -394,7 +394,7 @@ General strategy: find a normal subgroup (usually a Sylow) and use recognition o
 
 [[PR-LFGHA]]
 
-:::{.proof title="?"}
+:::{.proof}
 Supposing that $g\neq e$, it generates a cyclic subgroup $H \da \gens{g} \leq G$ of order dividing $p$ by Lagrange.
 Since $g\neq e$, $\size H = p = \size G$.
 
@@ -402,7 +402,7 @@ Since $g\neq e$, $\size H = p = \size G$.
 
 [[PR-IGLFV]]
 
-:::{.proof title="?"}
+:::{.proof}
 Quotient by the center to get $m\da \size G/Z(G) \in \ts{ 1, p, p^2 }$.
 By cases:
 
@@ -495,7 +495,7 @@ where
 
 [[L-6QBOJ]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Let $g\in G$, then since $P\leq H \normal G$ we have $gPg\inv \subseteq gHg\inv = H$.
@@ -507,7 +507,7 @@ where
 
 [[L-Q44MT]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - By induction on $k$ in $\size G = p^k$: if $\size G = p$ then $G$ is abelian and automatically solvable. 
@@ -522,7 +522,7 @@ where
 
 [[PR-2ZOAV]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 Idea: 

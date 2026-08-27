@@ -151,7 +151,7 @@ However, by orbit-stabilizer and the conjugation action, their sizes always divi
 
 [[PR-PYYRK]]
 
-:::{.proof title="?"}
+:::{.proof}
 Note that $C(h_i) = \ts{ gh_i g\inv \st g\in G }$, and $gh_i g\inv \in H$ since $H$ is normal, so $C(h_i) \subseteq G$ for all $i$.
 Conversely, if $C(h_i) \subseteq H$ for all $h_i \in H$, then $gh_ig\inv \in H$ for all $i$ and $H$ is normal.
 
@@ -192,7 +192,7 @@ So $[x, \wait]_{\lieh} = 0$ for central $x$ and $\im [x, \wait]_{\lieh} \subsete
 
 [[PR-YY3JG]]
 
-:::{.proof title="?"}
+:::{.proof}
 Write $G/H \intersect K \da G/J = \ts{ h_1J, \cdots, h_m J  }$ as distinct cosets where $m\da [G:H]$ and the $h_i$ are all in $H$.
 Then $i\neq j\implies h_i h_j\inv \not \in H \intersect K$, but $h_i h_j\inv \in H$ since subgroups are closed under products and inverses, which forces $h_i h_j\inv \not\in K$.
 So $h_i K \neq h_j K$, meaning there are at least $m$ cosets in $G/K$, so $[G:K] \geq m$.
@@ -201,7 +201,7 @@ So $h_i K \neq h_j K$, meaning there are at least $m$ cosets in $G/K$, so $[G:K]
 
 [[PR-VUKHO]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - $x\in xH$, since $e\in H$ because $H$ is a subgroup and we can take $h=e$ to get $x = xe \da xh \in xH$.
@@ -218,7 +218,7 @@ xh_3\in xH &\implies xh_3 = (yh_2h_1\inv) h_3 \in yH
 
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - $x\in xH$, since $e\in H$ because $H$ is a subgroup and we can take $h=e$ to get $x = xe \da xh \in xH$.
@@ -238,7 +238,7 @@ See full argument: D&F p.80.
 
 [[T-5KGVV]]
 
-:::{.proof title="?"}
+:::{.proof}
 [^df_p80_identical_disjoint]
 \[
 aH = bH \iff a\in bH \iff a=bh \text{ for some } h \iff b\inv a = h \iff ba\inv \in H
@@ -277,7 +277,7 @@ Nice trick: write $G/H = \ts{ g_1 H, g_2 H,\cdots, g_n H }$, then $G = \disjoint
 
 [[T-QMKXQ]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\impliedby$:
 Use that $\sum_{d\divides n} \phi(d) = n$, and that there are at most $\phi(d)$ elements of order $d$, forcing equality.
 
@@ -318,7 +318,7 @@ If $G = \gens{ a }$ with $a^n=e$, then for each $d\divides n$ take $H_d \da \gen
 
 [[PR-JY4PV]]
 
-:::{.proof title="?"}
+:::{.proof}
 Every 3-cycle $(abc)$ is even, and thus in $A_n$.
 Given an arbitrary even permutation $(t_1\ldots t_{2k})$, it decomposes into a product of an odd number of transpositions $(t_{2j-1} t_{2j})$.
 So it suffices to write every such transposition as a 3-cycle.

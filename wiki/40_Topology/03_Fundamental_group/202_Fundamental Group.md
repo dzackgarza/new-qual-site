@@ -20,7 +20,7 @@ The ranks of $\pi_{0}$ and $H_{0}$ are the number of path components.
 
 [[T-2YTCZ]]
 
-:::{.proof title="?"}
+:::{.proof}
 The linear homotopy. Supposing $X$ is convex, for any two points $x,y\in X$, the line $tx + (1-t)y$ is contained in $X$ for every $t\in[0,1]$.
 So let $f, g: Z \into X$ be any continuous functions into $X$. Then define $H: Z \cross I \into X$ by $H(z,t) = tf(z) + (1-t)g(z)$, the linear homotopy between $f,g$. By convexity, the image is contained in $X$ for every $t,z$, so this is a homotopy between $f,g$.
 
@@ -37,7 +37,7 @@ Elements of the fundamental group are *homotopy classes of loops*, and every con
 
 :::
 
-### Conjugacy in $\pi_{1}$:
+### Conjugacy in $\pi_{1}$
 
 - See [@Hat02, prop. 1.19, p. 28].
 - See the proof that $\pi_1$ is a group in [@Hat02].
@@ -71,7 +71,7 @@ So $$A\ast_{Z} B = \gens{x, y \suchthat x^4, y^6, x^2y^{-3}}$$.
 
 [[PR-3APOT]]
 
-:::{.proof title="?"}
+:::{.proof}
 By van Kampen, this is equivalent to the amalgamated product over $\pi_1(x_0) = 1$, which is just a free product.
 
 :::
@@ -97,7 +97,7 @@ $H_{1}$ is the abelianization of $\pi_{1}$.
 
 [[PR-EWJMJ]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\Rightarrow$: Suppose $X$ is simply connected. Then every loop in $X$ contracts to a point, so if $\alpha$ is a loop in $X$, $[\alpha] = [\id_{x_{0}}]$, the identity element of $\pi_{1}(X)$. But then there is only one element in in this group.
 
 $\Leftarrow$: Suppose $\pi_{1}(X) = 0$. Then there is just one element in the fundamental group, the identity element, so if $\alpha$ is a loop in $X$ then $[\alpha] = [\id_{x_{0}}]$. So there is a homotopy taking $\alpha$ to the constant map, which is a contraction of $\alpha$ to a point.

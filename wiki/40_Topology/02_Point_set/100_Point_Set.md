@@ -23,7 +23,7 @@ Some key high-level topics:
 
 [[PR-6T3IL]]
 
-:::{.proof title="?"}
+:::{.proof}
 Take $\theset{B_{\eps \over 2}(y) \suchthat y\in Y}\covers Y$, pull back to an open cover of $X$, has Lebesgue number $\delta_L > 0$, then $x' \in B_{\delta_L}(x) \implies f(x), f(x') \in B_{\eps \over 2}(y)$ for some $y$. 
 
 :::
@@ -51,7 +51,7 @@ Counterexample to the converse: $f(x) = \sqrt x$ on $[0, 1]$ has unbounded deriv
 
 [[T-UEXBK]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Let $\theset{A_i} \rightrightarrows A$ be a covering of $A$ by sets open in $A$.
@@ -65,7 +65,7 @@ Counterexample to the converse: $f(x) = \sqrt x$ on $[0, 1]$ has unbounded deriv
 
 [[T-TJBYR]]
 
-:::{.proof title="?"}
+:::{.proof}
 Let $f:X\to f(X)$ be continuous.
 Take an open covering $\mathcal{U} \covers f(X)$, then $f\inv(\mathcal{U}) \covers X$, which is cover by opens since $f$ is continuous.
 Take a finite subcover by compactness of $X$, then they push forward to a finite subcover of $f(X)$.
@@ -84,7 +84,7 @@ Take a finite subcover by compactness of $X$, then they push forward to a finite
 
 [[T-WX5Y6]]
 
-:::{.proof title="?"}
+:::{.proof}
 Show that $f\inv$ is continuous by showing $f$ is a closed map.
 If $A\subseteq X$ is closed in a compact space, $A$ is compact.
 The continuous image of a compact set is compact, so $f(A)$ is compact.
@@ -101,7 +101,7 @@ Every space has at least one retraction - for example, the constant map $r:X \in
 
 [[T-FA6VI]]
 
-:::{.proof title="?"}
+:::{.proof}
 See [@Mun00, p. 104].
 
 :::

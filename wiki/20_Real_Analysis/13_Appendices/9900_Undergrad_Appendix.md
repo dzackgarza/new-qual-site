@@ -11,7 +11,7 @@ title: Basics
 
 [[D-G2I5Q]]
 
-::: {.example title="?"}
+::: {.example}
 \envlist
 
 - For $(x_n) \da \qty{n+1\over n}$, $\sup_n x_n = 2$ but $\limsup_n x_n = 1$.
@@ -22,7 +22,7 @@ title: Basics
 ![](../../../../assets/assets/figures/2021-10-29_16-51-23.png) ![](../../../../assets/assets/figures/2021-10-29_16-55-00.png) A nowhere differentiable function: ![](../../../../assets/assets/figures/2021-10-29_16-57-12.png) Monotone functions are differentiable almost everywhere.
 ![](../../../../assets/assets/figures/2021-10-29_17-28-39.png) [[E-QSNCL]]
 
-::: {.example title="?"}
+::: {.example}
 ![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_16-51-23.png)
 
 ![](../../../../assets/assets/20_Real_Analysis/figures/2021-10-29_16-55-00.png)

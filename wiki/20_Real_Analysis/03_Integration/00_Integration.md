@@ -287,7 +287,7 @@ Note that MCT might work, but showing that this is non-decreasing in $n$ is diff
 
 [[PR-YJJSY]]
 
-:::{.proof title="?"}
+:::{.proof}
 Define $F_N = \sum^N f_k$ and $F = \lim_N F_N$, then $\norm{F_N}_1 \leq \sum^N \norm{f_k} < \infty$ so $F\in L^1$ and $\norm{F_N - F}_1 \to 0$ so the sum converges in $L^1$.
 Almost everywhere: $\sum \abs{f_k}$ has finite integral by monotone convergence, hence is finite almost everywhere, so $\sum f_k$ converges absolutely almost everywhere, and the $L^1$ limit agrees with that pointwise sum.
 

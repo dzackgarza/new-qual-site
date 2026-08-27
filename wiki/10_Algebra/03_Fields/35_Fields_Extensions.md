@@ -65,7 +65,7 @@ But then \( \alpha \) is the root of the polynomial \( f \).
 
 [[PR-TZN4M]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\implies$:
 
 - Write $L = k(a_1, \cdots, a_n)$ by finiteness.
@@ -154,7 +154,7 @@ Since $f'(a) = 0$, this forces $f'\divides f$, and since $\deg f' = \deg f - 1 <
 
 [[PR-TLBPS]]
 
-:::{.proof title="?"}
+:::{.proof}
 - First part:
   - $\not A\implies \not B$: 
     - Let $f$ be irreducible, and suppose $f$ is separable.
@@ -241,7 +241,7 @@ A finite extension of a perfect field is automatically separable, and one only n
 
 [[PR-XB3O7]]
 
-:::{.proof title="?"}
+:::{.proof}
 If $\ch k = 0$ and $f$ is irreducible, then since $\deg f' < \deg f$ and $f$ is irreducible we must have $\gcd(f, f')=1$ and $f$ is separable.
 
 If $\ch k = p>0$, then if $f$ is irreducible and inseparable then $f(x) = g(x^p)$ for some $g$.
@@ -257,7 +257,7 @@ so $f$ is reducible. $\contradiction$.
 
 [[PR-YCTNC]]
 
-:::{.proof title="?"}
+:::{.proof}
 Use that $L/k$ is separable $\iff [L:k] = [L:k]_s$.
 
 $\impliedby$:
@@ -309,7 +309,7 @@ $\implies$:
 
 [[PR-KFQJG]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\impliedby$:
 Separability always descends to subfields, and $E \leq EF, F\leq EF$.
 
@@ -338,7 +338,7 @@ For $L/k$ algebraic and $\ch k = 0$, $L/k$ is Galois $\iff L/k$ is normal.
 
 [[PR-3TYBE]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Note separability is distinguished, so $K/k$ is separable.
@@ -358,7 +358,7 @@ Since $L/K$ is Galois, every $f\in \Gal(K/k)$ lifts to $\Gal(L/k)$, making $\rho
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 \envlist
 
 - $\QQ(\zeta_3, 2^{1/3})$ is normal but $\QQ(2^{1/3})$ is not since the irreducible polynomial $x^3 - 2$ has only one root in it.
@@ -410,7 +410,7 @@ A trick for remembering the degree/index correspondence:
 
 # Distinguished Classes
 
-> See <http://math.wsu.edu/students/jstreipel/notes/galoistheory.pdf>
+> See [Streipel's Galois theory notes (Washington State)](http://math.wsu.edu/students/jstreipel/notes/galoistheory.pdf).
 
 [[D-JMATC]]
 
@@ -443,7 +443,7 @@ For $L/F/k$: $L/k$ normal/algebraic/Galois $\implies L/F$ normal/algebraic/Galoi
 
 [[PR-ABSJX]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - We want to show every $\alpha \in L$ is algebraic over $k$, and it suffices to show $\alpha$ is algebraic over some finite subextension $k(S)$.

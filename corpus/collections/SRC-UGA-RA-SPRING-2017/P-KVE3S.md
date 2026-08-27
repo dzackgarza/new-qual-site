@@ -21,7 +21,7 @@ Show that the space $C^1([a, b])$ is a Banach space when equipped with the norm
 
 :::{.concept}
 - See 
-<https://math.stackexchange.com/questions/507263/prove-that-c1a-b-with-the-c1-norm-is-a-banach-space/>
+[this Math.StackExchange proof that the space is Banach](https://math.stackexchange.com/questions/507263/prove-that-c1a-b-with-the-c1-norm-is-a-banach-space/)
 :::
 
 :::{.solution}

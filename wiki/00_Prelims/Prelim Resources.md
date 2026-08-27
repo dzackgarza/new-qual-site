@@ -140,9 +140,9 @@ Pointwise uniform convergence of functions, equi-continuity, *l*2, *L*2(*S*1),
 
 ## Solutions
 
-- [ ]  Berkeley Prelim Archive [https://math.berkeley.edu/programs/graduate/prelim-exams/archive](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
+- [ ]  [Berkeley prelim exam archive](https://math.berkeley.edu/programs/graduate/prelim-exams/archive)
 
-- [ ]  UCLA Linear Algebra (55p) [https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
+- [ ]  [UCLA basic exam problems: linear algebra (55p)](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 
 - [ ]  [prelimsolutions_0.pdf](attachments/prelimsolutions_0.pdf)
 
@@ -182,9 +182,9 @@ Pointwise uniform convergence of functions, equi-continuity, *l*2, *L*2(*S*1),
 
 - [ ]  [solution8.pdf](attachments/solution8.pdf)
 
-- [ ]  [https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
+- [ ]  [UCLA basic exam problems: linear algebra](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_LinAlg.pdf)
 
-- [ ]  [https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
+- [ ]  [UCLA basic exam problems: analysis](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
 
 - [ ]  Linear Algebra
 

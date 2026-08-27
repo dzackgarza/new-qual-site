@@ -8,7 +8,7 @@ order: 0
 
 [Galois theory notes](https://www.maths.ed.ac.uk/~tl/gt/gt.pdf)
 
-[https://www.maths.ed.ac.uk/~tl/gt/gt.pdf](https://www.maths.ed.ac.uk/~tl/gt/gt.pdf)
+[Galois theory notes (Edinburgh)](https://www.maths.ed.ac.uk/~tl/gt/gt.pdf)
 
 [Conrad - SOME EXAMPLES OF THE GALOIS CORRESPONDENCE.pdf](attachments/Conrad_-_SOME_EXAMPLES_OF_THE_GALOIS_CORRESPONDENCE.pdf)
 

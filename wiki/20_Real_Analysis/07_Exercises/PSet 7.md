@@ -125,7 +125,7 @@ Let $x_n \to x$ and $y_n \to y$, then
 
 where $\norm{y_n} \to \norm{y} \coloneqq M < \infty$ since $y \in H$ implies that $\norm{y}$ is finite.
 
-## Part a:
+## Part a
 
 We want to show that sequences in $E^\perp$ converge to elements of $E^\perp$.
 Using the lemma, letting $\theset{e_n}$ be a sequence in $E^\perp$, so $y\in E \implies \inner{e_n}{y} = 0$.
@@ -138,7 +138,7 @@ Since $H$ is complete, $e_n \to e \in H$; we can show that $e \in E^\perp$ by le
 
 so $e\in E^\perp$.
 
-## Part b:
+## Part b
 
 Let $S \coloneqq \mathrm{span}_H(E)$; then the smallest closed subspace containing $E$ is $\overline{S}$, the closure of $S$.
 We will proceed by showing that $E^{\perp \perp} = \overline{S}$.

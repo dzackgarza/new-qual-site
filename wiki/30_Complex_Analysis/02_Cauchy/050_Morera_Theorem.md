@@ -28,7 +28,7 @@ The power of this theorem is that virtually no assumptions on $f$ are made, e.g.
 
 [[C-TODSQ]]
 
-::: {.proof title="?"}
+::: {.proof}
 Commute limit with integral and apply Morera's theorem.
 :::
 
@@ -76,7 +76,7 @@ $\HH^+, \HH^-$ can be replaced with any region symmetric about a line segment $L
 
 [[T-B3BDO]]
 
-::: {.proof title="?"}
+::: {.proof}
 Taken from Gamelin: the proof is based on Morera's theorem.
 Idea: break region into nested cubes:
 

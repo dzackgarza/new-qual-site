@@ -19,11 +19,11 @@ Closed path integrals of holomorphic functions vanish.
 > See [reference](http://home.iitk.ac.in/~psraj/mth102/lecture_notes/comp8.pdf)
 [[T-6DEUH]]
 
-:::{.proof title="?"}
+:::{.proof}
 ![image_2021-05-27-16-54-06](../../../../assets/assets/figures/image_2021-05-27-16-54-06.png)
 
 :::
-:::{.proof title="?"}
+:::{.proof}
 ![image_2021-05-27-16-56-39](../../../../assets/assets/figures/image_2021-05-27-16-56-39.png)
 ![image_2021-05-27-16-56-52](../../../../assets/assets/figures/image_2021-05-27-16-56-52.png)
 
@@ -75,7 +75,7 @@ The $n$th Taylor coefficient of an analytic function is at most $\sup_{\abs z = 
 Two functions agreeing on a set with a limit point are equal on a domain.
 
 :::
-:::{.proof title="?"}
+:::{.proof}
 Apply Improved Taylor Theorem?
 
 :::

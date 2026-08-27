@@ -11,9 +11,9 @@ title: Algebra Group and Ring Theory Resources
 
 [Ring Theory Review UCSD](attachments/ringsandmodules.pdf)
 
-Group Theory: [https://people.math.sc.edu/mcnulty/qfers/gp.pdf](https://people.math.sc.edu/mcnulty/qfers/gp.pdf)
+Group Theory: [McNulty's qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/gp.pdf)
 
-Ring Theory: [https://people.math.sc.edu/mcnulty/qfers/rng.pdf](https://people.math.sc.edu/mcnulty/qfers/rng.pdf)
+Ring Theory: [McNulty's qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/rng.pdf)
 
 # Groups
 

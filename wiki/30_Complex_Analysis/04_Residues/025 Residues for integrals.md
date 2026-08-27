@@ -144,7 +144,7 @@ If $M = \bigo(R)$, use Jordan's lemma!
 
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 \[
 \abs{ \int_\gamma f(z) \dz } 
 &\leq \int_\gamma \abs{f(z)} \dz \\

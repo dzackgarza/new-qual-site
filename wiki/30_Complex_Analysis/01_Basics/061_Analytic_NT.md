@@ -6,9 +6,9 @@ order: 52
 
 [[L-EAZX6]]
 
-:::{.proof title="?"}
+:::{.proof}
 
-> See <http://www.math.uwaterloo.ca/~krdavids/Comp/Abel.pdf>
+> See [Davidson's notes on Abel's theorem (Waterloo)](http://www.math.uwaterloo.ca/~krdavids/Comp/Abel.pdf).
 
 Use summation by parts.
 For a fixed $\sum a_k b_k$, write 
@@ -62,7 +62,7 @@ So the limit $s\da \lim_{x\to 1^-} f(x) 1/2$, but $\sum a_n$ doesn't converge to
 
 [[PR-2MTPE]]
 
-:::{.proof title="?"}
+:::{.proof}
 An inelegant proof: define $A_n \da \sum_{k\leq n} a_k$, use that $a_k = A_k - A_{k-1}$, reindex, and peel a top/bottom term off of each sum to pattern-match.
 \
 

@@ -24,15 +24,15 @@ order: 20
 
 - [https://rstudio-pubs-static.s3.amazonaws.com/342389_1cad63f68dff45fead17af37236a76c8.html](https://rstudio-pubs-static.s3.amazonaws.com/342389_1cad63f68dff45fead17af37236a76c8.html)
 
-- [http://www.jchateley.com/project/real_qual.pdf](http://www.jchateley.com/project/real_qual.pdf)
+- [Chateley's real analysis qual solutions](http://www.jchateley.com/project/real_qual.pdf)
 
-- [http://www-personal.umich.edu/~hrichman/quals.html](http://www-personal.umich.edu/~hrichman/quals.html)
+- [Richman's qual page (Michigan)](http://www-personal.umich.edu/~hrichman/quals.html)
 
 ## Misc
 
 Huge bank of undergrad/grad questions:
 
-- [https://www.math.lsu.edu/gradfiles/AnalysisTestBank_2009.pdf](https://www.math.lsu.edu/gradfiles/AnalysisTestBank_2009.pdf)
+- [LSU analysis test bank (2009)](https://www.math.lsu.edu/gradfiles/AnalysisTestBank_2009.pdf)
 
 - [Berkeley undergrad pset solutions](https://math.berkeley.edu/~vvdatar/m104su18/Assignments/Solutions_A6.pdf)
 
@@ -58,11 +58,11 @@ Huge bank of undergrad/grad questions:
 
 - [Spring2020Final.pdf](attachments/Spring2020Final.pdf)
 
-- [https://www.math.ucla.edu/~adamlott99/analysis_qual_solutions.pdf](https://www.math.ucla.edu/~adamlott99/analysis_qual_solutions.pdf)
+- [Adam Lott's analysis qual solutions (UCLA)](https://www.math.ucla.edu/~adamlott99/analysis_qual_solutions.pdf)
 
-- [https://drive.google.com/file/d/0B00coOUqVAAHMld0VHlIYzJrTnc/view](https://drive.google.com/file/d/0B00coOUqVAAHMld0VHlIYzJrTnc/view)
+- [analysisqualproblems.pdf](https://drive.google.com/file/d/0B00coOUqVAAHMld0VHlIYzJrTnc/view)
 
-- [https://people.math.gatech.edu/~harrell/GP/Comp/compFall03AnSol.pdf](https://people.math.gatech.edu/~harrell/GP/Comp/compFall03AnSol.pdf)
+- [Harrell's Fall 2003 analysis comp solutions (Georgia Tech)](https://people.math.gatech.edu/~harrell/GP/Comp/compFall03AnSol.pdf)
 
 - [Basic exam problems](https://www.math.ucla.edu/~chparkin/index/BasicExamProblems_Analysis.pdf)
 

@@ -41,14 +41,14 @@ So $w_0$ is an interior point of $V$, making $V$ open and $U$ closed.
 
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 ![[attachments/Pasted image 20211215021255.png]]
 
 :::
 
 [[T-OFMGU]]
 
-:::{.example title="?"}
+:::{.example}
 Since $\sin^2(z)+\cos^2(z) = 1$ for $z\in \RR$, which has a limit point, this holds for $z\in \CC$ as well.
 For the generalization, consider $F(z, w) \da e^{z+w}-e^z e^w$; then $F\equiv 0$ on $\RR$ and thus this holds on $\CC$.
 

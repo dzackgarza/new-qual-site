@@ -42,7 +42,7 @@ order: 21
 
 ## Spring 2020 # 3
 
-## Fall 2019 # 5.
+## Fall 2019 # 5
 
 ## Fall 2017 # 3
 

@@ -13,7 +13,7 @@ $L^p$ convergence does not imply pointwise convergence or even a.e. convergence 
 
 [[T-4KKSH]]
 
-:::{.proof title="?"}
+:::{.proof}
 Let $M = \norm{f}_\infty$.
 
 - For any $L < M$, let $S = \theset{\abs{f} \geq L}$. 
@@ -54,7 +54,7 @@ Use Riesz Representation for Hilbert spaces.
 
 [[PR-TWF4F]]
 
-:::{.proof title="?"}
+:::{.proof}
 *Proof:* Apply Fatou to $\abs{f}^p$:
 \[
 \int \abs{f}^p = \int \liminf \abs{f_k}^p \leq \liminf \int \abs{f_k}^p = M
@@ -64,7 +64,7 @@ Use Riesz Representation for Hilbert spaces.
 
 [[PR-JX4YU]]
 
-:::{.proof title="?"}
+:::{.proof}
 Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 \[
 \norm{\tau_h f - f}_p
@@ -75,7 +75,7 @@ Take $g_k \in C_c^0 \to f$, then $g$ is uniformly continuous, so
 
 [[PR-3W4FO]]
 
-:::{.proof title="?"}
+:::{.proof}
 Use Young's inequality
 \[
 \norm{\tau_h(f\ast g) - f\ast g}_\infty
@@ -147,14 +147,14 @@ This doesn't hold for general $L^1$ functions, take any train of triangles with 
 :::
 [[PR-O4AY4]]
 
-:::{.proof title="?"}
+:::{.proof}
 Approximate with compactly supported functions.
 Take $g\converges{L_1}\to f$, then $g \leq M$ so $\int_E{f} \leq \int_E{f-g} + \int_E g \to 0 + M \cdot m(E) \to 0$.
 
 :::
 [[PR-2KEIE]]
 
-:::{.proof title="?"}
+:::{.proof}
 Idea: Split up domain
 Let $A = \theset{f(x) = \infty}$, then $\infty > \int f = \int_A f + \int_{A^c} f = \infty \cdot m(A) + \int_{A^c} f \implies m(X) =0$.
 
@@ -178,13 +178,13 @@ which follows because we can enlarge the support of $g$ to $K$ where the integra
 :::
 [[PR-TNFL4]]
 
-:::{.proof title="?"}
+:::{.proof}
 Fubini-Tonelli, and sketch region to change integration bounds.
 
 :::
 [[T-S3C3S]]
 
-:::{.proof title="?"}
+:::{.proof}
 Fubini-Tonelli, and sketch region to change integration bounds, and continuity in $L^1$.
 
 :::

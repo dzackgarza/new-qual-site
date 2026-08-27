@@ -40,7 +40,7 @@ Compute the residues by just applying the formula and manually computing derivat
 &=_? {\pi \over 4}\pm {i\pi^2 \over 16}
 .\]
 
-> See p.4: <http://www.math.toronto.edu/mnica/complex1.pdf>
+> See p.4 of [Nica's complex analysis notes (Toronto)](http://www.math.toronto.edu/mnica/complex1.pdf).
 
 :::
 

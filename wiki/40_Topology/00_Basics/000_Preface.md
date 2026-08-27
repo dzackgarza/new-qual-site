@@ -101,7 +101,7 @@ An injective group morphism $f:X\injects Y$ where $X$ is trivial forces $Y$ to b
 
 [[PR-WB7MM]]
 
-:::{.proof title="?"}
+:::{.proof}
 Let $f: G\to H$, then $f(1_G) = 1_H$.
 Supposing $g\in G$ is torsion of order $n$, we have
 \[

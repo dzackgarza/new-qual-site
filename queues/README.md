@@ -2,18 +2,19 @@
 
 Two kinds of queue files:
 
-- `01-11`: Validity review of each `TODO.md` unchecked item and each `DESIGN_TODO.md` defect. Per-item status (open/done/decision-unmade) with evidence.
-- `A-E`: Concrete document lists — the actual files and cards that need checking. These are the long lists.
+- `01-11`: Validity review of each `TODO.md` unchecked item and each `DESIGN_TODO.md` defect.
+- `A-F`: Concrete document lists — the actual files and cards that need checking. Each item is a checkbox.
 
 ## Document queues (files to check)
 
-| File | Count | What |
+| File | Checkboxes | What |
 | --- | ---: | --- |
 | `A-title-question-marks.md` | 95 | Wiki files with `:::{.proof title="?"}` at HEAD. 108 instances fixed in uncommitted working tree. |
 | `B-naked-urls.md` | 17 | Wiki files with bare `<https://...>` link text. 161 conversions in uncommitted working tree. |
-| `C-unsolved-cards.md` | 6195 | Problem/exercise cards with no solution and no incoming `solves` relation. Issue #2 target. |
-| `D-duplicate-bodies.md` | 1 pair | Duplicate-body pair, dispositioned (keep both). Done. |
-| `E-pdf-attachments.md` | 358 | PDFs on disk not in any collection provenance. 45 exam candidates, 83 solutions, 8 homework, 15 notes, 212 other. |
+| `C-unsolved-cards.md` | 6195 | Every unsolved problem/exercise card. 2055 exercises, 4140 problems. Issue #2 target. |
+| `D-duplicate-bodies.md` | 2 | Duplicate-body pair, dispositioned (keep both). Done. |
+| `E-pdf-attachments.md` | 358 | Every PDF not in any collection provenance. 45 exam candidates, 83 solutions, 8 homework, 15 notes, 212 other. Each fully listed. |
+| `F-wiki-doctor.md` | 161 | Wiki doctor findings across 12 checks: 69 order violations, 15 one-child dirs, 1 sibling dup title, 9 obsidian embeds, 5 task-list pages, 62 heading-only bodies. |
 
 ## Validity review queues (TODO.md items)
 
@@ -33,8 +34,5 @@ Two kinds of queue files:
 
 ## How to use
 
-Read a document queue (A-E). Check each file/card against its criterion.
+Read a document queue (A-F). Check each file/card against its criterion.
 Commit each completed check. When a queue is empty, the work is done.
-
-Validity review queues (01-11) record whether each TODO.md item is real open work.
-They do not themselves need checking — they are the assessment.

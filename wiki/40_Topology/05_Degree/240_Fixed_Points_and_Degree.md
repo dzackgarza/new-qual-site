@@ -38,7 +38,7 @@ H_{x_i}: \RR^{n+1} &\to \RR^{n+1} \\
 
 [[T-S2OLJ]]
 
-:::{.proof title="?"}
+:::{.proof}
 
 :::
 

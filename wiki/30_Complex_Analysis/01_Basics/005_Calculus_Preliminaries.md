@@ -11,7 +11,7 @@ title: Calculus Preliminaries
 
 [[PR-5ZSSQ]]
 
-:::{.proof title="?"}
+:::{.proof}
 Uniqueness: if $x, y$ are two fixed points, then 
 \[
 0 \leq \abs{x-y} = \abs{f(x) - f(y)}\leq c \abs{x-y}\leq \abs{x-y}

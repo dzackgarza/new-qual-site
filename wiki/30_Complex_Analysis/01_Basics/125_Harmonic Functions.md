@@ -12,7 +12,7 @@ order: 125
 
 [[PR-UWGI6]]
 
-:::{.proof title="?"}
+:::{.proof}
 Define
 \[
 F(r) \da {1\over 2\pi r} \oint_{\DD_r(z_0)} u\ds = {1\over 2\pi} \int_{[-\pi, \pi]} u(z_0 + re^{it} ) \dt

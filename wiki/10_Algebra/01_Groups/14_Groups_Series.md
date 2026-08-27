@@ -52,7 +52,7 @@ A useful way to extract normal subgroups: let $G$ act on literally anything by $
 Then $\ker \phi \normal G$ is always a normal subgroup.
 :::
 
-::: {.example title="?"}
+::: {.example}
 
 - $G\actson G$ by $x\mapsto gx$.
 

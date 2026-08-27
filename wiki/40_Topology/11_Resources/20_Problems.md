@@ -4,7 +4,7 @@ order: 20
 
 # Problems (Topology)
 
-Problem bank: [https://www.math.lsu.edu/gradfiles/topobank.pdf](https://www.math.lsu.edu/gradfiles/topobank.pdf)
+Problem bank: [LSU topology problem bank](https://www.math.lsu.edu/gradfiles/topobank.pdf)
 
 [F07phdtop.pdf](attachments/F07phdtop.pdf)
 
@@ -14,15 +14,15 @@ Problem bank: [https://www.math.lsu.edu/gradfiles/topobank.pdf](https://www.math
 
 [prolrevqual.pdf](attachments/prolrevqual.pdf)
 
-[https://www.math.umd.edu/old/graduate/exams/Math730/top-Aug08-sol.pdf](https://www.math.umd.edu/old/graduate/exams/Math730/top-Aug08-sol.pdf)
+[Maryland Math 730 topology exam solutions, August 2008](https://www.math.umd.edu/old/graduate/exams/Math730/top-Aug08-sol.pdf)
 
-[https://johnkerl.org/doc/prolrevqual.pdf](https://johnkerl.org/doc/prolrevqual.pdf)
+[John Kerl's qual review problems](https://johnkerl.org/doc/prolrevqual.pdf)
 
 [Math 872 - Section 1 - Spring 2014 - Problem sets page.pdf](attachments/Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.pdf)
 
 [problemsets.pdf](attachments/problemsets.pdf)
 
-<https://people.math.harvard.edu/~bullery/math131/Midterm.pdf>
+[Harvard Math 131 midterm](https://people.math.harvard.edu/~bullery/math131/Midterm.pdf)
 
 # Qual Workshop Materials
 

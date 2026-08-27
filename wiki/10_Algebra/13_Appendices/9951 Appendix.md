@@ -27,7 +27,7 @@ Not every normal subgroup is characteristic: take $G \da H_1 \cross H_2$ and $\p
 
 [[PR-IOMVN]]
 
-:::{.proof title="?"}
+:::{.proof}
 $A \ch B \normal C \implies A\normal C$:
 
 - $A\ch B$ iff $A$ is fixed by every $\psi\in \Aut(B)$., WTS $cAc\inv = A$ for all $c\in C$.
@@ -38,7 +38,7 @@ $A \ch B \normal C \implies A\normal C$:
 
 [[PR-GJLQP]]
 
-:::{.proof title="?"}
+:::{.proof}
 Let $\psi \in \Aut(H)$ and $x=\psi(y)\in \psi(Z(H))$ so $y\in Z(H)$, then for arbitrary $h\in H$,
 \[
 \psi(y)h 

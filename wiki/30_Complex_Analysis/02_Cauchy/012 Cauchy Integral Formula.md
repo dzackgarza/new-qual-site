@@ -8,12 +8,12 @@ order: 12
 
 [[T-LA2UI]]
 
-::: {.proof title="?"}
+::: {.proof}
 
 ![figures/image_2021-05-27-16-54-06.png](../../../../assets/assets/figures/image_2021-05-27-16-54-06.png)
 :::
 
-::: {.proof title="?"}
+::: {.proof}
 
 ![figures/image_2021-05-27-16-56-39.png](../../../../assets/assets/figures/image_2021-05-27-16-56-39.png)
 

@@ -22,7 +22,7 @@ d \qty{ \log(f) } = {f'\over f}\dz  \implies \Res_{z=p}(d \log(f) ) = v_p(f)
 
 [[T-VCX3Y]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - If $z_0$ is a zero of $f$ of order $m$, write $f(z) = (z-z_0)^m g(z)$ with $g(z)$ holomorphic and nonzero on some neighborhood of $z_0$.
@@ -52,7 +52,7 @@ so $z_0$ is a simple pole of $\del_{\log} f$ and $\res_{z=z_0} \del_{\log} f = m
 
 [[T-EBAOE]]
 
-:::{.proof title="?"}
+:::{.proof}
 Make the change of variables $w = f(z)$, then $z=\gamma(t) \mapsto w = (f\circ \gamma)(t)$ and $\dw = f'(z) \dz$, so
 \[
 {1\over 2\pi i }\int_{\gamma} \del_{\log} f(z) \dz

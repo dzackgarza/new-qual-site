@@ -4,7 +4,7 @@ order: 100003
 
 # Summer 2003
 
-# 1. Describe all possible covering maps between $S^2, T^2, K$
+# 1. Describe all possible covering maps between $S^2, T^2, K$.
 
 [[P-L6F6I]]
 
@@ -12,7 +12,7 @@ order: 100003
 
 [[P-GT5L7]]
 
-## 3. Construct a space having $H_*(X) = [\ZZ, 0, 0, 0, 0, \ZZ_4, 0\rightarrow]$
+## 3. Construct a space having $H_*(X) = [\ZZ, 0, 0, 0, 0, \ZZ_4, 0\rightarrow]$.
 
 [[P-BW6LF]]
 
@@ -24,7 +24,7 @@ order: 100003
 
 [[P-VN3M2]]
 
-## 6. Compute $\ext(\ZZ \times \ZZ_2 \times \ZZ_3, \ZZ \times \ZZ_4 \times \ZZ_5)$
+## 6. Compute $\ext(\ZZ \times \ZZ_2 \times \ZZ_3, \ZZ \times \ZZ_4 \times \ZZ_5)$.
 
 [[P-ULHPN]]
 

@@ -30,7 +30,7 @@ Source: a PDF whose author is not identified.
 
 [[P-L7OQW]]
 
-### Question 1.6.
+### Question 1.6
 
 [[P-KM66S]]
 
@@ -110,7 +110,7 @@ Source: a PDF whose author is not identified.
 
 [[P-HEOYS]]
 
-### Question 1.26.
+### Question 1.26
 
 [[P-O6JI4]]
 
@@ -170,7 +170,7 @@ Source: a PDF whose author is not identified.
 
 [[P-WVWEP]]
 
-### Question 1.41.
+### Question 1.41
 
 [[P-WXP5K]]
 
@@ -248,7 +248,7 @@ Source: a PDF whose author is not identified.
 
 [[P-INJCV]]
 
-### Question 2.16.
+### Question 2.16
 
 [[P-ZZVXB]]
 
@@ -318,7 +318,7 @@ Source: a PDF whose author is not identified.
 
 [[P-ZJFFS]]
 
-### Question 3.13.
+### Question 3.13
 
 [[P-YKB6A]]
 
@@ -402,7 +402,7 @@ Source: a PDF whose author is not identified.
 
 [[P-PF5MC]]
 
-### Question 3.34.
+### Question 3.34
 
 [[P-OERA3]]
 
@@ -490,7 +490,7 @@ Source: a PDF whose author is not identified.
 
 [[P-KGF7Z]]
 
-### Question 3.56.
+### Question 3.56
 
 [[P-MIOKF]]
 
@@ -840,7 +840,7 @@ Source: a PDF whose author is not identified.
 
 [[P-ZNZ4X]]
 
-### Question 6.23.
+### Question 6.23
 
 [[P-T3YQ4]]
 
@@ -916,7 +916,7 @@ Source: a PDF whose author is not identified.
 
 [[P-XZRST]]
 
-### Question 6.42.
+### Question 6.42
 
 [[P-25QBA]]
 
@@ -982,7 +982,7 @@ Source: a PDF whose author is not identified.
 
 [[P-QQTBQ]]
 
-### Question 7.6.
+### Question 7.6
 
 [[P-IHVQT]]
 
@@ -1056,7 +1056,7 @@ Source: a PDF whose author is not identified.
 
 [[P-AJML4]]
 
-### Question 8.14.
+### Question 8.14
 
 [[P-ROLXZ]]
 
@@ -1124,7 +1124,7 @@ Source: a PDF whose author is not identified.
 
 [[P-WYH52]]
 
-### Question 8.31.
+### Question 8.31
 
 [[P-JWPJ5]]
 

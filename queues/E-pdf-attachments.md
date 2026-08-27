@@ -1,18 +1,11 @@
 # Document queue E: PDF attachments needing check
 
-468 PDF files in `assets/attachments/`. 304 are provenance sources for collections.
-358 are on disk but not in any collection's provenance list.
+358 PDF files on disk are not in any collection provenance list.
+Check each: does it contain exam problems to extract, or is it a solution/notes/syllabus?
 
-These 358 need a check: do they contain exam problems that should be extracted into cards,
-or are they solution writeups, notes, syllabi, or other non-exam material?
+Per AGENTS.md: solution PDFs are not provenance. Exam PDFs with unextracted problems ARE candidates.
 
-Per AGENTS.md: provenance is the exam paper, not a solution writeup. Solution PDFs are
-not provenance. Exam PDFs that contain unextracted problems ARE candidates for extraction.
-
-## Exam/prelim PDFs not in provenance (45 — extract candidates)
-
-These are exam papers with problems. Check each against existing collections:
-if the exam is already carded under a different provenance, note it; if not, extract.
+## Exam/prelim PDFs (extract candidates) (45)
 
 - [ ] 140A_Exam_Review.pdf
 - [ ] 8.1.2 Further Examples (1).pdf
@@ -60,10 +53,7 @@ if the exam is already carded under a different provenance, note it; if not, ext
 - [ ] UCSD_Topology_Qual_Problems_2020-05-29.pdf
 - [ ] Won_-_Complex_Analysis_Qual_Sheet.pdf
 
-## Solution PDFs not in provenance (83 — not provenance, do not list as collection href)
-
-These are solution writeups. Per AGENTS.md, a writeup is not the exam paper.
-Do not add to provenance. May be useful for issue #2 (solution integration) after review.
+## Solution PDFs (not provenance) (83)
 
 - [ ] AG Solutions (1).pdf
 - [ ] Algebra_Final_Solns 1.pdf
@@ -149,7 +139,7 @@ Do not add to provenance. May be useful for issue #2 (solution integration) afte
 - [ ] Week5_solns.pdf
 - [ ] Week6_solns.pdf
 
-## Homework PDFs not in provenance (8)
+## Homework PDFs (8)
 
 - [ ] 8150-hw1.pdf
 - [ ] 8150-hw2.pdf
@@ -160,7 +150,7 @@ Do not add to provenance. May be useful for issue #2 (solution integration) afte
 - [ ] HW4.pdf
 - [ ] math6338_hw8.pdf
 
-## Notes/lectures not in provenance (15 — not exam papers)
+## Notes/lectures (not exam papers) (15)
 
 - [ ] 8210 Lecture Notes (Usher) Smooth Manifolds.pdf
 - [ ] Algebra_Notes.pdf
@@ -178,10 +168,217 @@ Do not add to provenance. May be useful for issue #2 (solution integration) afte
 - [ ] Usher DG Notes.pdf
 - [ ] Won_-_Complex_Analysis_Qual_Sheet.pdf
 
-## Other PDFs not in provenance (212 — check classification)
+## Other PDFs (check classification) (212)
 
-These do not match exam/solution/homework/notes patterns. Check each against
-existing collections to determine if it is a provenance source, a compilation,
-or non-exam material.
-
-Full list: 212 files. Run `comm -23 <(find assets/attachments -name '*.pdf' -printf '%f\n' | sort) <(sqlite3 build/catalog.sqlite "select distinct replace(href, 'assets/attachments/', '') from collection_provenance where href like 'assets/attachments/%.pdf'" | sort)` to regenerate.
+- [ ] 603_11.pdf
+- [ ] 8155-starter-problems.pdf
+- [ ] 8.2.3 Normal family.pdf
+- [ ] 8.3 Riemann Mapping Theorem (1).pdf
+- [ ] 871-872January_2004_871-953.pdf
+- [ ] 871-872January_2006_850-871.pdf
+- [ ] 871-872January_2006_852-871.pdf
+- [ ] 871-872January_2008_850-871.pdf
+- [ ] 871-872June_2004_852-871.pdf
+- [ ] 871-872June_2007_852-871.pdf
+- [ ] Adam Syllabus.pdf
+- [ ] ALGEBRA_REVIEW1.pdf
+- [ ] analysis_2003-2007.pdf
+- [ ] analysis_2008-2013.pdf
+- [ ] analysis_2014-2016.pdf
+- [ ] analysis_jan2014.pdf
+- [ ] Applied-Algebra-FA17.pdf
+- [ ] Auroux_-_Math_131_Introduction_to_Topology.pdf
+- [ ] Azoff Problems by Topic.pdf
+- [ ] basic-01F.pdf
+- [ ] basic-02F.pdf
+- [ ] basic-02S.pdf
+- [ ] basic-02W.pdf
+- [ ] basic-03F.pdf
+- [ ] basic-03S.pdf
+- [ ] basic-04F.pdf
+- [ ] basic-04S.pdf
+- [ ] basic-05F.pdf
+- [ ] basic-05S.pdf
+- [ ] basic-06S.pdf
+- [ ] basic-06W.pdf
+- [ ] basic-07F.pdf
+- [ ] basic-07S.pdf
+- [ ] basic-08F.pdf
+- [ ] basic-08S.pdf
+- [ ] basic-09F.pdf
+- [ ] basic-09S.pdf
+- [ ] basic-10F.pdf
+- [ ] basic-10S.pdf
+- [ ] basic-11F.pdf
+- [ ] basic-11S.pdf
+- [ ] basic-12F.pdf
+- [ ] basic-12S.pdf
+- [ ] basic-13F.pdf
+- [ ] basic-13S.pdf
+- [ ] basic-14F.pdf
+- [ ] basic-14S.pdf
+- [ ] basic-15F.pdf
+- [ ] basic-15S.pdf
+- [ ] basic-16F.pdf
+- [ ] basic-16S.pdf
+- [ ] basic-17F.pdf
+- [ ] basic-17S.pdf
+- [ ] basic-18F.pdf
+- [ ] basic-18S.pdf
+- [ ] Basic_Linear_Algebra_Review.pdf
+- [ ] Big_List_of_Math_Problems.pdf
+- [ ] calculating_galois_from_polynomial.pdf
+- [ ] calculus_practice_test3.pdf
+- [ ] cambride_analysis_ii.pdf
+- [ ] Ch10PtASltns.pdf
+- [ ] Ch10Sltns.pdf
+- [ ] Ch11Sltns.pdf
+- [ ] Ch12Sltns.pdf
+- [ ] Ch13Sltns.pdf
+- [ ] Ch14Sltns.pdf
+- [ ] Ch15Sltns.pdf
+- [ ] Ch16Sltns.pdf
+- [ ] Ch17Sltns.pdf
+- [ ] Ch20Sltns.pdf
+- [ ] Ch6Sltns.pdf
+- [ ] Ch7Sltns.pdf
+- [ ] Ch8Sltns.pdf
+- [ ] Ch9Sltns.pdf
+- [ ] chapter-1.pdf
+- [ ] chapter-2.pdf
+- [ ] chapter-3.pdf
+- [ ] chapter-4.pdf
+- [ ] chapter-5.pdf
+- [ ] chapter-6.pdf
+- [ ] Chapter-7.pdf
+- [ ] Chernov_-_Selected_Problems_in_Real_Analysis.pdf
+- [ ] Collection_of_Analysis_Theorems.pdf
+- [ ] complex.pdf
+- [ ] Cracking_the_GRE_Mathematics_Subject.pdf
+- [ ] day_1_compactness.pdf
+- [ ] day_2_connected_path_connnected.pdf
+- [ ] day_3_sep_counterex_defn.pdf
+- [ ] day_4_homotopy_retractions.pdf
+- [ ] day_5_fundamental_group.pdf
+- [ ] day_6_covering_spaces.pdf
+- [ ] day_7_homology.pdf
+- [ ] DG Sample Problems 1.pdf
+- [ ] DG Sample Problems.pdf
+- [ ] ExerciseSet8f06a.pdf
+- [ ] f03.pdf
+- [ ] f04.pdf
+- [ ] f05.pdf
+- [ ] f06.pdf
+- [ ] f07.pdf
+- [ ] Fall00.pdf
+- [ ] Fall_2019_Assignments.pdf
+- [ ] Fall77.pdf
+- [ ] Fall78.pdf
+- [ ] Fall79.pdf
+- [ ] Fall80.pdf
+- [ ] Fall81.pdf
+- [ ] Fall82.pdf
+- [ ] Fall83.pdf
+- [ ] Fall84.pdf
+- [ ] Fall85.pdf
+- [ ] Fall86.pdf
+- [ ] Fall87.pdf
+- [ ] Fall88.pdf
+- [ ] Fall89.pdf
+- [ ] Fall90.pdf
+- [ ] Fall91.pdf
+- [ ] Fall92.pdf
+- [ ] Fall93.pdf
+- [ ] Fall94.pdf
+- [ ] Fall95.pdf
+- [ ] Fall96.pdf
+- [ ] Fall97.pdf
+- [ ] Fall98.pdf
+- [ ] Fall99.pdf
+- [ ] fields.pdf
+- [ ] Folland Clipped Questions.pdf
+- [ ] Folland_Clipped_Questions.pdf
+- [ ] From Stein to Weinstein and Back.pdf
+- [ ] Galois_Group_Practice 1.pdf
+- [ ] Galois_Group_Practice.pdf
+- [ ] Giant_List_of_Problems.pdf
+- [ ] Gompf Contact Topology.pdf
+- [ ] groups.pdf
+- [ ] Handle Attaching in Symplectic Top.pdf
+- [ ] hmwk3x.pdf
+- [ ] ist_ca_2015.pdf
+- [ ] Lefschetz Fibrations.pdf
+- [ ] Lie Groups and Sympl.pdf
+- [ ] Li_-_INTRODUCTION_TO_ALGEBRAIC_TOPOLOGY.pdf
+- [ ] linear_algebra_from_test2.pdf
+- [ ] Master_10_27_2018.pdf
+- [ ] Math_871_-_Table_of_Contents.pdf
+- [ ] Math_872_-_Section_1_-_Spring_2014_-_(Active)_Table_of_Contents.pdf
+- [ ] Math_872_-_Section_1_-_Spring_2014_-_Problem_sets_page.pdf
+- [ ] McMullen_-_Advanced_Complex_Analysis.pdf
+- [ ] more_calculus_from_test2.pdf
+- [ ] multivariable_calculus.pdf
+- [ ] Nori_Galois_Theory_Problems.pdf
+- [ ] Perutz_-_2008_-_ALGEBRAIC_TOPOLOGY_I_FALL_2008.pdf
+- [ ] PrincetonQuestions.pdf
+- [ ] Probability_Review.pdf
+- [ ] problemsets.pdf
+- [ ] Problems_in_Algebraic_Topology_-_Unknown.pdf
+- [ ] Questions_from_Tie.pdf
+- [ ] Real_Analysis_Review_Midterm.pdf
+- [ ] Real_Named_Theorems.pdf
+- [ ] Review1.pdf
+- [ ] ringsandmodules.pdf
+- [ ] s03.pdf
+- [ ] s04.pdf
+- [ ] s05.pdf
+- [ ] s06.pdf
+- [ ] s07.pdf
+- [ ] Sample_Comp_Fa03Alg.pdf
+- [ ] Schilling_-_Acknowledgement._I_am_grateful_for_the_help_of_Dr..pdf
+- [ ] Separation_defintions.pdf
+- [ ] Sequence_Series_(Neil_Lyall_2019).pdf
+- [ ] Series_Problems_.pdf
+- [ ] Spring00.pdf
+- [ ] Spring01.pdf
+- [ ] Spring2020Final.pdf
+- [ ] Spring2020Midterm.pdf
+- [ ] Spring77.pdf
+- [ ] Spring78.pdf
+- [ ] Spring79.pdf
+- [ ] Spring80.pdf
+- [ ] Spring81.pdf
+- [ ] Spring82.pdf
+- [ ] Spring83.pdf
+- [ ] Spring84.pdf
+- [ ] Spring85.pdf
+- [ ] Spring86.pdf
+- [ ] Spring87.pdf
+- [ ] Spring88.pdf
+- [ ] Spring89.pdf
+- [ ] Spring90.pdf
+- [ ] Spring91.pdf
+- [ ] Spring92.pdf
+- [ ] Spring93.pdf
+- [ ] Spring94.pdf
+- [ ] Spring95.pdf
+- [ ] Spring96.pdf
+- [ ] Spring97.pdf
+- [ ] Spring98.pdf
+- [ ] Spring99.pdf
+- [ ] Study_Guide_for_Algebra.pdf
+- [ ] Summer77.pdf
+- [ ] Summer78.pdf
+- [ ] Summer79.pdf
+- [ ] Summer80.pdf
+- [ ] Summer81.pdf
+- [ ] Summer82.pdf
+- [ ] Summer83.pdf
+- [ ] Summer84.pdf
+- [ ] Summer85.pdf
+- [ ] syllabus.pdf
+- [ ] Symplectic Geometry.pdf
+- [ ] Tate_Galois_Theory_Problems.pdf
+- [ ] Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf
+- [ ] topology_2005-2003.pdf
+- [ ] topology_2006-2014.pdf

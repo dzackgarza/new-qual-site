@@ -5,4 +5,4 @@ title: Further Studying
 
 # Further Studying
 
-- Cambridge Part III: <https://www.maths.cam.ac.uk/postgrad/part-iii/current/tripos-examination-papers/2021>
+- Cambridge Part III: [2021 tripos examination papers](https://www.maths.cam.ac.uk/postgrad/part-iii/current/tripos-examination-papers/2021)

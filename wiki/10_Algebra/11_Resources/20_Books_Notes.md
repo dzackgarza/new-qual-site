@@ -10,9 +10,9 @@ order: 20
 
   - [@DF04, except chaps. 15-17]
 
-  - Groups, Rings, Modules: [https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf](https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf)
+  - Groups, Rings, Modules: [Cambridge Part IB lecture notes](https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf)
 
-  - Galois Theory: [https://dec41.user.srcf.net/notes/II_M/galois_theory.pdf](https://dec41.user.srcf.net/notes/II_M/galois_theory.pdf)
+  - Galois Theory: [Cambridge Part II lecture notes](https://dec41.user.srcf.net/notes/II_M/galois_theory.pdf)
 
 - Extra Topics
 
@@ -32,4 +32,4 @@ order: 20
 
 [[attachments/Tevelev_-_GRADUATE_ALGEBRA_NUMBERS_EQUATIONS_SYMMETRIES.pdf]]
 
-[https://www.mit.edu/~fengt/AlgebraPrep.html](https://www.mit.edu/~fengt/AlgebraPrep.html)
+[MIT algebra qual preparation page](https://www.mit.edu/~fengt/AlgebraPrep.html)

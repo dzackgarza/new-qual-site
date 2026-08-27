@@ -25,7 +25,7 @@ A **$p\dash$group** is a group $G$ such that every element is order $p^k$ for so
 
 [[L-354HC]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Use the fixed-point count trick:
@@ -41,7 +41,7 @@ A **$p\dash$group** is a group $G$ such that every element is order $p^k$ for so
 
 ## Statements of Sylow
 
-> For full proofs (some of which I've borrowed), see Keith Conrad's notes: <https://kconrad.math.uconn.edu/blurbs/grouptheory/sylowpf.pdf>
+> For full proofs (some of which I've borrowed), see [Keith Conrad's notes on proofs of the Sylow theorems](https://kconrad.math.uconn.edu/blurbs/grouptheory/sylowpf.pdf).
 
 :::{.remark}
 Some setup and notation: assume

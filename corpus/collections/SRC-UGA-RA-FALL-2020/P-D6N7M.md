@@ -23,7 +23,7 @@ $$
 :::
 
 :::{.solution}
-> See this MSE post for many solutions: <https://math.stackexchange.com/questions/4603/if-a-n-subset0-infty-is-non-increasing-and-sum-a-n-infty-then-lim>
+> See [this Math.StackExchange thread](https://math.stackexchange.com/questions/4603/if-a-n-subset0-infty-is-non-increasing-and-sum-a-n-infty-then-lim) for many solutions.
 > Note that the "obvious" thing here is fiddly: there are bounds on the slices
 \[
 (N-M \pm 1) x_N \leq  \sum_{M\leq k \leq N} a_k \leq (N-M\pm 1) x_M

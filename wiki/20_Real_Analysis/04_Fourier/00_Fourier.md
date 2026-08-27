@@ -4,7 +4,7 @@ order: 40
 
 # Fourier Transform and Convolution
 
-> Some nice reading: <https://people.math.gatech.edu/~heil/7338/fall09/approxid.pdf>
+> Some nice reading: [Heil's notes on approximate identities (Georgia Tech)](https://people.math.gatech.edu/~heil/7338/fall09/approxid.pdf).
 
 ## The Fourier Transform
 
@@ -21,7 +21,7 @@ contradicting Riemann-Lebesgue.
 
 :::
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Boundedness:
@@ -44,7 +44,7 @@ Fubini-Tonelli does not work here!
 
 :::
     
-:::{.proof title="?"}
+:::{.proof}
 Idea: Fubini-Tonelli doesn't work directly, so introduce a convergence factor, take limits, and use uniqueness of limits.
 
 - Take the modified integral:
@@ -117,7 +117,7 @@ I_{t}(x) \to \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~\text{ pointwise and }~\p
 
 [[T-HHFGB]]
 
-:::{.proof title="?"}
+:::{.proof}
 \[
 \norm{f - f\ast \phi_{t}}_1 
 &= \int f(x) - \int f(x-y)\phi_{t}(y) ~dy dx \\
@@ -140,7 +140,7 @@ I_{t}(x) \to \int \hat f(\xi) ~e^{2\pi i x \cdot \xi} ~\text{ pointwise and }~\p
 
 [[T-3UXK7]]
 
-:::{.proof title="?"}
+:::{.proof}
 
 - Choose $M \geq f,g$.
 

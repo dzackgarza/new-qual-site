@@ -71,7 +71,7 @@ Thus
 i.e. the integral picks out the $c_{-1}$ coefficient in a Laurent series expansion.
 
 :::
-:::{.example title="?"}
+:::{.example}
 Consider
 \[
 f(z) \da {e^{iz} \over 1 + z^2}
@@ -93,7 +93,7 @@ and check
 ## Estimates
 [[PR-ZCMJQ]]
 
-:::{.proof title="?"}
+:::{.proof}
 \[
 \left|\int_{\gamma} f(z) d z\right| \leq \sup _{t \in[a, b]}|f(z(t))| \int_{a}^{b}\left|z^{\prime}(t)\right| d t \leq \sup _{z \in \gamma}|f(z)| \cdot \operatorname{length}(\gamma)
 .\]
@@ -101,7 +101,7 @@ and check
 :::
 [[PR-QZEJM]]
 
-:::{.proof title="?"}
+:::{.proof}
 \[
 \abs{ \int_{C_R} f(z)\dz }
 &= \abs{ \int_{C_R} e^{iaz}g(z) \dz} \\
@@ -126,7 +126,7 @@ This is obvious from a picture, since $\sin(t)$ is a height on $S^1$ and $2t/\pi
 :::
 
 :::{.remark}
-On strategy: see <https://www.damtp.cam.ac.uk/user/reh10/lectures/nst-mmii-chapter5.pdf>
+On strategy: see [chapter 5 of these Cambridge DAMTP methods notes](https://www.damtp.cam.ac.uk/user/reh10/lectures/nst-mmii-chapter5.pdf).
 
 A quick shortcut (?) for the quotient rule:
 \[
@@ -176,7 +176,7 @@ You may be able to just compute an integral!
 ![](../../../../assets/assets/figures/2021-10-29_01-33-46.png)
 [[C-Q6BSL]]
 
-:::{.proof title="?"}
+:::{.proof}
 Apply L'Hopital:
 \[
 (z-z_0) {g(z) \over h(z)} = {(z-z_0) g(z) \over h(z) } \equalsbecause{LH}
@@ -226,7 +226,7 @@ Apply L'Hopital:
 
 [[T-SSNLT]]
 
-:::{.proof title="?"}
+:::{.proof}
 
 ![](../../../../assets/assets/figures/2021-12-22_05-13-27.png)
 

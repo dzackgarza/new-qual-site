@@ -4,7 +4,7 @@ order: 21
 
 # Laurent Expansions
 
-## Tie, Spring 2015:
+## Tie, Spring 2015
 
 [[P-6PMCN]]
 

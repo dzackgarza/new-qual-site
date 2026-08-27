@@ -6,7 +6,7 @@ order: 0
 
 [[T-HSWGS]]
 
-::: {.proof title="?"}
+::: {.proof}
 Schwarz lemma.
 :::
 

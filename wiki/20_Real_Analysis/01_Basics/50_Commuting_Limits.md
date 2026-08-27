@@ -8,7 +8,7 @@ order: 50
 [[PR-SCTER]]
 [[PR-DWOXP]]
 
-:::{.example title="?"}
+:::{.example}
 As a counterexample:
 \[
 f_n(x) \da \sqrt{x^2 + {1\over n}} \converges{n\to\infty}\too f(x) \da \abs{x}
@@ -16,7 +16,7 @@ f_n(x) \da \sqrt{x^2 + {1\over n}} \converges{n\to\infty}\too f(x) \da \abs{x}
 and this convergence is even uniform.
 
 :::
-:::{.example title="?"}
+:::{.example}
 \[
 f_n(x) \da {x\over 1 + nx^2}
 .\]
@@ -97,7 +97,7 @@ Even worse: every continuous function is a uniform limit of polynomials by the W
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 \[  
 \lim_{n\to \infty} \int_a^b f_n(x) \,dx \neq \int_a^b \lim_{n\to \infty} \qty{ f_n(x) } \,dx
 .\]

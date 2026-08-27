@@ -66,7 +66,7 @@ Use that $f(x) \da x^p - t$ is irreducible in $\FF_p(t)[x]$ but not separable.
 
 [[PR-IK6AM]]
 
-:::{.proof title="?"}
+:::{.proof}
 For $\ch k = 0$, use that irreducible implies separable.
 
 For $\ch k = p$, show that $k^p\neq k \iff$ irreducible does *not* imply separable, so there exists an inseparable irreducible.

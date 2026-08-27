@@ -66,7 +66,7 @@ h'_w(w) &= {1\over 1 - \abs{w}^2}
 [[P-Z776N]]
 [[C-FVT4V]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Idea: show that the usual formula from Calculus will work by defining $(f\inv)'$ directly.

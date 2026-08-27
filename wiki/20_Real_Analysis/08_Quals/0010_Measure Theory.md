@@ -6,7 +6,7 @@ order: 10
 
 ## Spring 2020 # 2
 
-## Fall 2019 # 3.
+## Fall 2019 # 3
 
 ## Spring 2019 # 2
 
@@ -48,7 +48,7 @@ order: 10
 
 [[P-AXFG7]]
 
-## Fall 2019.3.
+## Fall 2019.3
 
 ^275944
 

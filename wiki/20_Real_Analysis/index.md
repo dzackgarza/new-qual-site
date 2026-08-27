@@ -85,7 +85,7 @@ order: 20
 
   - $L^\infty$ as the dual of $L^1$
 
-## Hilbert space and $L^2$ spaces:
+## Hilbert space and $L^2$ spaces
 
 > - **References**:
 >   

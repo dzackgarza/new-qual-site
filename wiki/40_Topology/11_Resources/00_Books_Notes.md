@@ -16,7 +16,7 @@ order: 0
 
 # Notes
 
-[https://dec41.user.srcf.net/notes/II_M/algebraic_topology.pdf](https://dec41.user.srcf.net/notes/II_M/algebraic_topology.pdf)
+[Cambridge Part II algebraic topology notes](https://dec41.user.srcf.net/notes/II_M/algebraic_topology.pdf)
 
 [Auroux - Math 131 Introduction to Topology.pdf](attachments/Auroux_-_Math_131_Introduction_to_Topology.pdf)
 
@@ -32,4 +32,4 @@ order: 0
 
 [Separation_defintions.pdf](attachments/Separation_defintions.pdf)
 
-[http://www.math.lsa.umich.edu/~ikriz/math2020atqr.html](http://www.math.lsa.umich.edu/~ikriz/math2020atqr.html)
+[Kriz's algebraic topology course page (Michigan)](http://www.math.lsa.umich.edu/~ikriz/math2020atqr.html)

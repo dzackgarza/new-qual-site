@@ -8,19 +8,19 @@ order: 20
 
 - [ ]  [UCSD 2014 Qual with Solutions](http://www.math.ucsd.edu/~jagler/courses/220-S14/pdf/Qual%20(version%202)%20Solutions.pdf) #resources/solutions
 
-- [ ]  [http://www-users.math.umn.edu/~broom010/doc/ComplexExamFall2015.pdf](http://www-users.math.umn.edu/~broom010/doc/ComplexExamFall2015.pdf) #resources/solutions
+- [ ]  [Minnesota complex analysis exam, Fall 2015](http://www-users.math.umn.edu/~broom010/doc/ComplexExamFall2015.pdf) #resources/solutions
 
-- [ ]  [http://www.jchateley.com/project/complex_qual.pdf](http://www.jchateley.com/project/complex_qual.pdf) #resources/solutions Really well organized!
+- [ ]  [Chateley's complex analysis qual solutions](http://www.jchateley.com/project/complex_qual.pdf) #resources/solutions Really well organized!
 
-- [x]  [http://www-users.math.umn.edu/~bahra004/complex_prelim.pdf](http://www-users.math.umn.edu/~bahra004/complex_prelim.pdf) #resources/solutions
+- [x]  [Minnesota complex analysis prelim](http://www-users.math.umn.edu/~bahra004/complex_prelim.pdf) #resources/solutions
 
-- [ ]  [http://www-users.math.umn.edu/~stras087/Complex_Analysis_Prelim_Solutions.pdf](http://www-users.math.umn.edu/~stras087/Complex_Analysis_Prelim_Solutions.pdf) #resources/solutions
+- [ ]  [Minnesota complex analysis prelim solutions](http://www-users.math.umn.edu/~stras087/Complex_Analysis_Prelim_Solutions.pdf) #resources/solutions
 
-- [ ]  [https://cims.nyu.edu/~yu3/files/teaching/complex/midterm_solutions.pdf](https://cims.nyu.edu/~yu3/files/teaching/complex/midterm_solutions.pdf)
+- [ ]  [NYU complex analysis midterm solutions](https://cims.nyu.edu/~yu3/files/teaching/complex/midterm_solutions.pdf)
 
 - [ ]  [Some solutions](https://www.isibang.ac.in/~statmath/oldqp/Sol/Complex%20Analysis%20Sol%202009-10) #resources/solutions
 
-- [ ]  [https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/Complex Analysis Qualifying.pdf](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/Complex%20Analysis%20Qualifying.pdf) #resources/solutions
+- [ ]  [UC Riverside complex analysis qualifying exams](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/Complex%20Analysis%20Qualifying.pdf) #resources/solutions
 
 - [ ]  [[Complex_Analysis_Exam_Prep_Solutions.pdf]] #resources/solutions
 
@@ -98,6 +98,6 @@ A course at UBC
 
 Misc:
 
-- [ ]  [https://www.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_4_Solutions.pdf](https://www.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_4_Solutions.pdf) #resources/solutions
+- [ ]  [UBC Math 440 homework 4 solutions](https://www.math.ubc.ca/~malabika/teaching/ubc/fall17/math440-508/Homework_4_Solutions.pdf) #resources/solutions
 
 - [ ] [Some Conway solutions](https://mathweb.ucsd.edu/~jagler/courses/220A-F17/pdf/Homework%25206%2520Solutions.pdf)

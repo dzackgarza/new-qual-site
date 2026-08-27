@@ -6,7 +6,7 @@ order: 520
 
 ![attachments/Pasted image 20211129205548.png](../../../assets/attachments/Pasted%20image%2020211129205548.png)
 
-:::{.example title="?"}
+:::{.example}
 A matrix that:
 
 - Is not diagonalizable over $\RR$ but diagonalizable over $\CC$
@@ -30,7 +30,7 @@ M = \left(\begin{array}{rr}
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 A matrix that:
 
 - Is not diagonalizable over $\CC$,
@@ -55,7 +55,7 @@ M = \left(\begin{array}{rr}
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 Non-similar matrices with the same characteristic polynomial
 \[
 \left(\begin{array}{ll}
@@ -72,7 +72,7 @@ Here $\chi_A(x) = \chi_B(x) = x^2$, but they are not conjugate since their JCFs 
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 A full-rank matrix that is not diagonalizable:
 \[
 \left(
@@ -86,7 +86,7 @@ A full-rank matrix that is not diagonalizable:
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 Matrix roots of unity, i.e. representations of $i$:
 \[
 M_1 

@@ -48,9 +48,9 @@ Exercises from [@Fol13]:
 
 - [ ] [analysis 2003-2007.pdf](attachments/analysis_2003-2007.pdf)
 
-- [ ] [https://personalpages.manchester.ac.uk/staff/mark.coleman/old/341/341qu.pdf](https://personalpages.manchester.ac.uk/staff/mark.coleman/old/341/341qu.pdf)
+- [ ] [Mark Coleman's MATH341 problem sheets (Manchester)](https://personalpages.manchester.ac.uk/staff/mark.coleman/old/341/341qu.pdf)
 
-- [ ] [https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/realanalysis_qual_exams_historical.pdf](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/realanalysis_qual_exams_historical.pdf)
+- [ ] [UC Riverside historical real analysis qualifying exams](https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/2019-11/realanalysis_qual_exams_historical.pdf)
 
 - [ ]  [Lots of problems from JHU](https://math.jhu.edu/gradexam/analysisexams.pdf)
 

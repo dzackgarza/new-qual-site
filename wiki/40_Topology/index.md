@@ -31,7 +31,7 @@ Revised May 2006.
 
 - Classification of covering spaces [@Mas97, chap. 5]; [@Hat02, sec. 1.3]
 
-### Homology:
+### Homology
 
 - Simplicial, singular, cellular; computations and applications [@Hat02, chap. 2]; [@Mun84, chap. 4]
 
@@ -49,6 +49,6 @@ Revised May 2006.
 
 - [@Hat02]
 
-  - Revisions and corrections [http://www.math.cornell.edu/~hatcher/AT/ATpage.html](http://www.math.cornell.edu/~hatcher/AT/ATpage.html)
+  - Revisions and corrections [Hatcher's Algebraic Topology page](http://www.math.cornell.edu/~hatcher/AT/ATpage.html)
 
 - [@Mun84]

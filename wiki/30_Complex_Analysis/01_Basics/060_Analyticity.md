@@ -14,7 +14,7 @@ order: 51
 
 [[T-SRY2V]]
 
-:::{.proof title="?"}
+:::{.proof}
 Reduce to $z\in \DD$, then for a fixed $z$ and any $w\in S^1$,
 \[
 {1\over w-z} = {1\over w} \qty{ 1 + \qty{z\over w} + \qty{z\over w}^2 + \cdots}

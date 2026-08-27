@@ -6,17 +6,17 @@ order: 30
 
 [TopologySept19solutions.pdf](attachments/TopologySept19solutions.pdf)
 
-[https://www.math.umd.edu/old/graduate/exams/Math730/top-Aug08-sol.pdf](https://www.math.umd.edu/old/graduate/exams/Math730/top-Aug08-sol.pdf)
+[Maryland Math 730 topology exam solutions, August 2008](https://www.math.umd.edu/old/graduate/exams/Math730/top-Aug08-sol.pdf)
 
-[https://johnkerl.org/doc/prolrevqual.pdf](https://johnkerl.org/doc/prolrevqual.pdf)
+[John Kerl's qual review problems](https://johnkerl.org/doc/prolrevqual.pdf)
 
-[https://www.math.ucla.edu/~gyueun.lee/writing/qual_sols.pdf](https://www.math.ucla.edu/~gyueun.lee/writing/qual_sols.pdf)
+[Gyu Eun Lee's qual solutions (UCLA)](https://www.math.ucla.edu/~gyueun.lee/writing/qual_sols.pdf)
 
-[https://folk.ntnu.no/gereonq/MA3403H2018/](https://folk.ntnu.no/gereonq/MA3403H2018/)
+[NTNU MA3403 algebraic topology course page](https://folk.ntnu.no/gereonq/MA3403H2018/)
 
 ## Hatcher Solutions
 
-[](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)[https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)
+[](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)[Riemannian Hunger: solutions to Hatcher's Algebraic Topology](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)
 
 **Chapter 0**[1](https://riemannianhunger.wordpress.com/hatcher-0-1/) | [2](https://riemannianhunger.wordpress.com/hatcher-0-2/) | [3](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/hatcher-0-3/) | [4](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/hatcher-0-4/) | [5](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/hatcher-0-5/)[[1](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)] | [6](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/hatcher-0-6/) | [7](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/hatcher-0-7/)* | [8](https://riemannianhunger.wordpress.com/hatcher-0-8/)[[2](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)] | [9](https://riemannianhunger.wordpress.com/hatcher-0-9/) | [10](https://riemannianhunger.wordpress.com/hatcher-0-10/) | [11](https://riemannianhunger.wordpress.com/hatcher-0-11/) | [12](https://riemannianhunger.wordpress.com/hatcher-0-12/) | [13](https://riemannianhunger.wordpress.com/hatcher-0-13/) | [14](https://riemannianhunger.wordpress.com/hatcher-0-14/) | [15](https://riemannianhunger.wordpress.com/hatcher-0-15/) | [16](https://riemannianhunger.wordpress.com/hatcher-0-16/) | [17](https://riemannianhunger.wordpress.com/hatcher-0-17/) | [18](https://riemannianhunger.wordpress.com/hatcher-0-18/)[[3](https://riemannianhunger.wordpress.com/solutions-to-algebraic-topology-by-allen-hatcher/)] | [19](https://riemannianhunger.wordpress.com/hatcher-0-19/) | [20](https://riemannianhunger.wordpress.com/hatcher-0-20/) | [21](https://riemannianhunger.wordpress.com/hatcher-0-21/)* | [22](https://riemannianhunger.wordpress.com/hatcher-0-22/)* | [23](https://riemannianhunger.wordpress.com/hatcher-0-23/)* | [24](https://riemannianhunger.wordpress.com/hatcher-0-24/)* | [25](https://riemannianhunger.wordpress.com/hatcher-0-25/)* | [26](https://riemannianhunger.wordpress.com/hatcher-0-26/)* | [27](https://riemannianhunger.wordpress.com/hatcher-0-27/)* | [28](https://riemannianhunger.wordpress.com/hatcher-0-28/)* | [29](https://riemannianhunger.wordpress.com/hatcher-0-29/)*
 

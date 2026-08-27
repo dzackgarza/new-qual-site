@@ -35,7 +35,7 @@ By the identity principle $f$ is constant on $\Omega$.
 
 [[T-YLI6Y]]
 
-:::{.proof title="?"}
+:::{.proof}
 Suppose $f\neq 0$ on $G$.
 If $f(z) = 0$ for some $z\in \bd G$, we're done, so suppose $f\neq 0$ on $\bar G$.
 Then $1/f$ is holomorphic on $G$ and continuous on $\bar G$, so $\max_{z\in \bar G}\abs{1/f(z)} = \max_{z\in \bd G} \abs{1/f(z)}$.

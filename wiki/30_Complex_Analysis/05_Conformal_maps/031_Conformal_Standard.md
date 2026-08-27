@@ -84,7 +84,7 @@ Pictures of the situation:
 ## Joukowski Maps
 
 :::{.remark}
-A nice resource: <https://complex-analysis.com/content/joukowsky_airfoil.html>
+A nice resource: [complex-analysis.com on the Joukowsky airfoil](https://complex-analysis.com/content/joukowsky_airfoil.html).
 
 ![](../../../../assets/assets/figures/2021-12-29_03-07-40.png)
 

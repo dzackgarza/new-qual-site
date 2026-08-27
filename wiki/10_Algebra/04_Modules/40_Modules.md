@@ -47,7 +47,7 @@ Note that $C\cong B/d_1(A)$ always, but $B$ is not a direct sum of the outer ter
 
 [[PR-OODAV]]
 
-:::{.proof title="?"}
+:::{.proof}
 Right-splitting implies direct sum:
 
 - Use that $B \subset \ker d_2 + \im s$, writing $b = (b - sd_2(b) ) + sd_2(b)$ and noting
@@ -130,7 +130,7 @@ The slogan is that morphisms *out* of a projective module can be *pulled* back t
 
 [[PR-RPL4Q]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - Let $M$ be free, so that the universal property gives us this diagram:
@@ -200,7 +200,7 @@ Since free implies torsionfree, \( R_1 \) can not be a free \(R\dash\)module.
 
 [[PR-ASW5L]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\implies$:
 
 Suppose $I$ is free as an $R\dash$module, and let $B = \theset{\vector m_j}_{j\in J} \subseteq I$ be a basis so we can write $M = \generators{B}$.

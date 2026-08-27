@@ -41,7 +41,7 @@ Similarly $g(z) \da \sin\qty{1\over z}$ has an essential singularity at $z=0$, a
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 The singularities of a rational function are always isolated, since there are finitely many zeros of any polynomial.
 The function $F(z) \da \Log(z)$ has a singularity at $z=0$ that is **not** isolated, since every neighborhood intersects the branch cut $(-\infty, 0) \cross \ts{ 0 }$, where $F$ is not even defined.
 The function $G(z) \da 1/\sin(\pi/z)$ has a non-isolated singularity at 0 and isolated singularities at $1/n$ for all $n$.
@@ -57,7 +57,7 @@ A similar example: $\qty{z(z-1)}^{1\over 2}$ has two branch singularities at $z=
 
 [[T-LZ6KG]]
 
-:::{.proof title="?"}
+:::{.proof}
 Take $\gamma$ to be a circle centered at $z_0$ and use
 \[
 f(z) \da \int_\gamma { f(\xi) \over \xi - z} \dx
@@ -103,7 +103,7 @@ and use that it's bounded to conclude that $z_0$ is either removable or a pole f
 
 [[T-UBWL2]]
 
-:::{.proof title="?"}
+:::{.proof}
 Consider $f(z) - P(z)$, subtracting off the principal part at each pole $z_0$, to get a bounded entire function and apply Liouville.
 
 :::

@@ -82,7 +82,7 @@ $f(z) = \sin(z), \cos(z)$ are unbounded on $\CC$!
 An easy way to see this: they are nonconstant and entire, thus unbounded by Liouville.
 
 :::
-:::{.example title="?"}
+:::{.example}
 You can show $f(z) = \sqrt{z}$ is not holomorphic by showing its integral over $S^1$ is nonzero.
 This is a direct computation:
 \[
@@ -176,7 +176,7 @@ Thus
 [[PR-JKE6C]]
 [[PR-K57J6]]
 
-:::{.proof title="?"}
+:::{.proof}
 \envlist
 
 - By CR,
@@ -233,9 +233,9 @@ Now by the $M\dash$test,
 :::
 [[L-TVIDY]]
 
-:::{.proof title="?"}
+:::{.proof}
 
-> See <http://www.math.uwaterloo.ca/~krdavids/Comp/Abel.pdf>
+> See [Davidson's notes on Abel's theorem (Waterloo)](http://www.math.uwaterloo.ca/~krdavids/Comp/Abel.pdf).
 
 Use summation by parts.
 For a fixed $\sum a_k b_k$, write
@@ -285,7 +285,7 @@ So the limit $s\da \lim_{x\to 1^-} f(x) 1/2$, but $\sum a_n$ doesn't converge to
 :::
 [[PR-6GL7M]]
 
-:::{.proof title="?"}
+:::{.proof}
 An inelegant proof: define $A_n \da \sum_{k\leq n} a_k$, use that $a_k = A_k - A_{k-1}$, reindex, and peel a top/bottom term off of each sum to pattern-match.
 \
 

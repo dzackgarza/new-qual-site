@@ -36,4 +36,4 @@ order: 0
 
 Modules / Linear Algebra: [](https://people.math.sc.edu/mcnulty/qfers/linalg.pdf)
 
-[https://people.math.sc.edu/mcnulty/qfers/linalg.pdf](https://people.math.sc.edu/mcnulty/qfers/linalg.pdf)
+[McNulty's linear algebra qualifier notes (South Carolina)](https://people.math.sc.edu/mcnulty/qfers/linalg.pdf)

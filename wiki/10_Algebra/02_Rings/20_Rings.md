@@ -10,7 +10,7 @@ order: 20
 
 [[D-A7MC4]]
 
-:::{.example title="?"}
+:::{.example}
 
 - $\gens{p, q} = \gens{\gcd(p, q)} \normal \ZZ$.
 
@@ -35,7 +35,7 @@ These are all basically the same for modules.
 
 [[PR-DDDXH]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\implies$:
 If $0\neq x\in I\normal R$, using that $R\nonzero = R\units$, $x$ is a unit.
 So $x\inv \in R$, and $xx\inv \da 1 \in I$ so $I = R$.
@@ -314,7 +314,7 @@ Motivation: if $R = \OO_{X, x}$ is the ring of germs at $x$ of an algebraic vari
 
 [[E-XH2QU]]
 
-:::{.example title="?"}
+:::{.example}
 A polynomial ring over a PID is not necessarily a PID: take $\gens{2, x} \normal \ZZ[x]$.
 
 :::

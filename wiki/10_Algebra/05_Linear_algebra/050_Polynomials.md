@@ -36,7 +36,7 @@ If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
 
 [[T-SJCF7]]
 
-:::{.proof title="?"}
+:::{.proof}
 By minimality, $\min_A$ divides $\chi_A$. 
 Every $\lambda_i$ is a root of $\min_A(x)$: 
 Let $(\vector v_i, \lambda_i)$ be a nontrivial eigenpair. 

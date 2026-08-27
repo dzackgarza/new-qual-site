@@ -4,7 +4,7 @@ order: 200
 
 # Extra Problems
 
-> Extra drill, including problems from <https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/groups/>. There is overlap with other lists in this folder.
+> Extra drill, including [Pierce's algebra qual problems on groups (UC Riverside)](https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/groups/). There is overlap with other lists in this folder.
 
 ## Linear Algebra
 
@@ -14,7 +14,7 @@ order: 200
 
 ## Galois Theory
 
-> Taken from here: <https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/galois/>
+> Taken from [Pierce's algebra qual problems on Galois theory (UC Riverside)](https://math.ucr.edu/~mpierce/teaching/qual-algebra/fun/galois/).
 
 [[P-3BNEC]] [[P-A4V62]] [[P-4MDI2]]
 

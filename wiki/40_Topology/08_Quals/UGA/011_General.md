@@ -14,19 +14,19 @@ order: 11
 
 [[P-DHIWH]]
 
-### 7 (Fall '06).
+### 7 (Fall '06)
 
 [[P-FGSRH]]
 
-### 8 (Fall '10).
+### 8 (Fall '10)
 
 [[P-K5XUM]]
 
-### 12 (Spring '06).
+### 12 (Spring '06)
 
 [[P-KM7Z4]]
 
-### 13 (Fall '06).
+### 13 (Fall '06)
 
 [[P-B2VGV]]
 
@@ -34,7 +34,7 @@ order: 11
 
 [[P-MYZU2]]
 
-### 5 (Fall '04).
+### 5 (Fall '04)
 
 [[P-QN7OP]]
 

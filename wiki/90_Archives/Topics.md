@@ -334,7 +334,7 @@ Chapters 13-14 in D&F
 - the Fundamental Theorem of Galois Theory
 - the Fundamental Theorem of Symmetric Functions
 
-### Module Theory:
+### Module Theory
 Sections 10.1,2,3 and 12.1,2,3.
 - direct sums 
 - free modules
@@ -476,7 +476,7 @@ Sections 10.1,2,3 and 12.1,2,3.
 Guillemin and Pollack Differential Topology
 Spivak Differential Geometry
 
-### Differential topology: 
+### Differential topology
 - degree theory
 - Ehresmann's theorem that proper submersions are locally trivial fibrations
 - embedding theorem
@@ -492,7 +492,7 @@ Spivak Differential Geometry
 - vector bundles in general
 - vector fields 
 
-### Differential geometry: 
+### Differential geometry
 - de Rham cohomology
 - degree theory and Euler characteristic from the viewpoint of de Rham cohomology
 - differential forms
@@ -507,7 +507,7 @@ Spivak Differential Geometry
 - Thom classes
 - volume forms
 
-### Algebraic topology: 
+### Algebraic topology
 - axioms of homology theory
 - calculation of homology and cohomology of standard spaces
 - cell complexes and cellular homology

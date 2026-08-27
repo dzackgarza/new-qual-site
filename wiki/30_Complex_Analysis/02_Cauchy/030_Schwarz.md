@@ -11,7 +11,7 @@ title: Schwarz lemma
 
 ![](../../../../assets/assets/figures/2021-10-29_02-32-14.png)
 
-::: {.proof title="?"}
+::: {.proof}
 \envlist
 
 - Idea: apply the maximum modulus principle to $g(z) \da f(z)/z$.
@@ -44,7 +44,7 @@ title: Schwarz lemma
 
 [[E-TJ3WM]] [[T-2XFTY]]
 
-::: {.proof title="?"}
+::: {.proof}
 Schwarz lemma.
 :::
 

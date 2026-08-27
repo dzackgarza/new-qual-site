@@ -22,14 +22,14 @@ Proofs:
 
 [[L-75UZY]]
 
-::: {.proof title="?"}
+::: {.proof}
 $f(x) = \frac 1 n$ if $x = r_n \in \QQ$ is an enumeration of the rationals, and zero otherwise.
 The limit at every point is 0.
 :::
 
 [[PR-F5V7D]]
 
-::: {.proof title="?"}
+::: {.proof}
 $D_f$ is always an $F_\sigma$ set, which follows by considering the oscillation $\omega_f$.
 Use that $\omega_f(x) = 0 \iff f$ is continuous at $x$, and $D_f = \union_n A_{\frac 1 n}$ where $A_\varepsilon = \theset{\omega_f \geq \varepsilon}$ is closed.
 :::
@@ -45,7 +45,7 @@ $$
 
 [[T-O4UD3]]
 
-::: {.proof title="?"}
+::: {.proof}
 Fix $\eps>0$, we'll find a $\delta$ that works for all $x\in X$ uniformly.
 For every $x\in X$, pick a $\delta_x$ neighborhood satisfying the conditions for (assumed) continuity.
 Take an open cover by $\delta_x/2$ balls, extract a finite subcover, take $\delta$ the minimal radius.

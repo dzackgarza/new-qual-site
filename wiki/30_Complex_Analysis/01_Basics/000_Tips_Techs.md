@@ -4,7 +4,7 @@ order: 0
 
 # Info / Tips / Techniques
 
-> A great deal of content borrowed from <https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf>
+> A great deal of content borrowed from [Chris Eur's complex analysis notes (Stanford)](https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf).
 
 Some useful notation:
 
@@ -321,6 +321,6 @@ $$
 \frac{1}{z-w}=\frac{1}{(z-a)\left(1-\frac{w-a}{z-a}\right)}=\sum_{n=0}^{n} \frac{(w-a)^{n}}{(z-a)^{n+1}} .
 $$
 
-> A great deal of content borrowed from the following: <https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf>
+> A great deal of content borrowed from [Chris Eur's complex analysis notes (Stanford)](https://web.stanford.edu/~chriseur/notes_pdf/Eur_ComplexAnalysis_Notes.pdf).
 
 # General Info / Tips / Techniques

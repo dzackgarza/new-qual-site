@@ -43,7 +43,7 @@ so $A(W_1) \subseteq W_1$ is an invariant subspace, etc.
 
 [[PR-GV5CF]]
 
-:::{.proof title="?"}
+:::{.proof}
 By induction on number of operators
 
 - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
@@ -60,7 +60,7 @@ By induction on number of operators
 
 [[T-6ABNR]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\implies$:
 If $\min_A$ factors into linear factors, so does each invariant factor, so every elementary divisor is linear and $JCF(A)$ is diagonal.
 

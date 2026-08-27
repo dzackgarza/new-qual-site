@@ -198,7 +198,7 @@ If $A$ is upper triangular, then $\det(A) = \prod_{i} a_{ii}$
 
 [[T-SJCF7]]
 
-:::{.proof title="?"}
+:::{.proof}
 By minimality, $\min_A$ divides $\chi_A$.
 Every $\lambda_i$ is a root of $\min_A(x)$:
 Let $(\vector v_i, \lambda_i)$ be a nontrivial eigenpair.
@@ -228,7 +228,7 @@ Corresponds to the **Invariant Factor Decomposition** of $T$.
 
 [[PR-GBL6P]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\not\implies$:
 In general, $\min_A \divides \chi_A$, so suppose they're not equal.
 Set $n\da \deg \chi_A$, then if $n' \da \deg \min_A < n$, using that $\min_A(A) = 0$ this exhibits a linear dependence in $\ts{v, Av, \cdots, A^{n'} v}$ for any $v$.
@@ -367,7 +367,7 @@ so $A(W_1) \subseteq W_1$ is an invariant subspace, etc.
 
 [[PR-GV5CF]]
 
-:::{.proof title="?"}
+:::{.proof}
 By induction on number of operators
 
 - $A_n$ is diagonalizable, so $V = \bigoplus E_i$ a sum of eigenspaces
@@ -384,7 +384,7 @@ By induction on number of operators
 
 [[T-6ABNR]]
 
-:::{.proof title="?"}
+:::{.proof}
 $\implies$:
 If $\min_A$ factors into linear factors, so does each invariant factor, so every elementary divisor is linear and $JCF(A)$ is diagonal.
 
@@ -396,7 +396,7 @@ But the minimal polynomial is just the largest invariant factor.
 
 ## Matrix Counterexamples
 
-:::{.example title="?"}
+:::{.example}
 A matrix that:
 
 - Is not diagonalizable over $\RR$ but diagonalizable over $\CC$
@@ -420,7 +420,7 @@ M = \left(\begin{array}{rr}
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 A matrix that:
 
 - Is not diagonalizable over $\CC$,
@@ -445,7 +445,7 @@ M = \left(\begin{array}{rr}
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 Non-similar matrices with the same characteristic polynomial
 \[
 \left(\begin{array}{ll}
@@ -462,7 +462,7 @@ Here $\chi_A(x) = \chi_B(x) = x^2$, but they are not conjugate since their JCFs 
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 A full-rank matrix that is not diagonalizable:
 \[
 \left(
@@ -476,7 +476,7 @@ A full-rank matrix that is not diagonalizable:
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 Matrix roots of unity, i.e. representations of $i$:
 \[
 M_1

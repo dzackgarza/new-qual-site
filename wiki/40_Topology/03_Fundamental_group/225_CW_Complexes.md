@@ -19,7 +19,7 @@ This is nontrivial, it's the content of the *Eilenberg-Zilber theorem*.
 
 :::
 
-:::{.example title="?"}
+:::{.example}
 Let $X= S^a \cross S^b$, so $p_{S^a}(t) = 1 + t^a$ and $p_{S^b}(t) = 1 + t^b$, then $p_X(t) = 1 + t^a + t^b + t^{a+b}$, so $X$ has 
 
 - One 1-cell

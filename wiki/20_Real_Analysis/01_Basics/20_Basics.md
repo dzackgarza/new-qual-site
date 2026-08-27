@@ -19,7 +19,7 @@ title: Theorems
 
 [[T-YOAXZ]]
 
-::: {.proof title="?"}
+::: {.proof}
 Fix $\eps>0$, we'll find a $\delta$ that works for all $x\in X$ uniformly.
 For every $x\in X$, pick a $\delta_x$ neighborhood satisfying the conditions for (assumed) continuity.
 Take an open cover by $\delta_x/2$ balls, extract a finite subcover, take $\delta$ the minimal radius.
@@ -44,7 +44,7 @@ Let $(X,d)$ be a metric space.
 
 [[PR-FKJCO]]
 
-::: {.proof title="?"}
+::: {.proof}
 Take $f_k(x) = x^n$, which converges to $\chi(x=1)$.
 The limit is not continuous, so no subsequence can converge.
 :::
@@ -57,7 +57,7 @@ The limit is not continuous, so no subsequence can converge.
 
 [[PR-JTFMW]]
 
-::: {.proof title="?"}
+::: {.proof}
 Its complement is a union of open intervals, and can't contain an interval since intervals have positive measure and $m(C_n)$ tends to zero.
 :::
 

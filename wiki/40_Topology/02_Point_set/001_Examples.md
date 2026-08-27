@@ -127,7 +127,7 @@ The cofinite topology on any space $X$ is always
 
 [[PR-NJTN5]]
 
-:::{.proof title="?"}
+:::{.proof}
 If $\ts x_i$ is open for each $x_i \in X$, then 
 
 - Any set $U$ can be written as $U = \union_{i\in I} x_I$ (for some $I$ depending on $U$), and 
