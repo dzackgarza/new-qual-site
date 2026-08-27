@@ -191,12 +191,36 @@ No scripts, no pattern matching.
 ### Batch 9: file 92
 
 - **chapter-1.md** (92): 7322 bytes, 0 control bytes, 0 odd-`$` lines.
-  GRE-style precalculus multiple-choice review sheet (25 questions). Choice letters and question numbers were the main casualties.
+  GRE-style precalculus multiple-choice review sheet (25 questions).
+  Choice letters and question numbers were the main casualties.
+
   - Question-number repair (sequence 1-25 unambiguous): restored `2.` (Q2), `5.` (Q5), `10.` (Q10, scan had “0”), `11.` (Q11), `12.` (Q12), `13.` (Q13, scan had “.When”), `14.` (Q14), `19.` (Q19, scan had “1.”), `20.` (Q20, scan had “2”), `21.` (Q21, scan had “2.”), `22.` (Q22, unlabeled).
+
   - Choice-letter repair: (B)/(D) markers restored in Q1, Q5, Q18, Q24; run-together choice lists rebuilt in Q8, Q15, Q21, Q22, Q23, Q25.
+
   - Statement garbles: Q2 typo run (“Determie…posiive…satisy…inequaliy”); Q4 recursion `1 \cdots [ f ( n ) ] ^ { 2 }` → `1 - [ f ( n ) ] ^ { 2 }`; Q5 `!` → `?`; Q6 `\operatorname { I f }` → “If”, `f, g, h` math-ified; Q8 split math joined; Q16/Q17 variables math-ified; Q19 `sinh-1 x` → `$\sinh ^ { - 1 } x$`; Q20 cosh display gained the dropped LHS `\cosh x =`; Q21 `sin(sin $x \} = …` → `$\sin ( \sin x ) = \frac { 1 } { 2 }$`; Q23 `tan(2 arcsin` → `$\tan ( 2 \arcsin \frac { 1 } { 3 } )$`; Q25 `arctan` math-ified; stray `{ }` wrappers stripped throughout; `\operatorname { t a n h }` display unified to `\tanh`.
+
   - Data fixes: Q7 (L19) choice (A) `2 x - y = 3` → `2 x - 3 y = 3` (locus equidistant from (1,4) and (5,−2) is the perpendicular bisector: midpoint (3,1), slope 2/3; as extracted no choice was true); Q13 second remainder restored as `- 1` (both remainders read “1” as extracted, leaving no valid choice; with p(1) = 1, p(−1) = −1 the remainder is `x`, choice (C) — flagged: the minus may be scan-dropped, but then no option is correct); Q19 choices (C) and (D) were duplicated as `\log ( x - \sqrt { x ^ { 2 } + 1 } )`; (D) corrected to `\log ( x + \sqrt { x ^ { 2 } + 1 } )` (the only correct inverse of sinh); Q17 `\log _ { c }` → `\log _ { A }` (no free c appears; A = a² gives log_A x = ½ log_a x); Q15 choice (E) rebuilt from garble as `b ^ { 2 } - 2` (answer (A) `2 - b ^ { 2 }` verified; (E) itself uncertain); Q22 hint rebuilt: “111 is just slightly greater than 353.64” → “`$1 1 1$ is just slightly greater than $3 5 \pi$`” (35π ≈ 109.96 < 111 < 36π ≈ 113.1, so sin 111 > 0 and (B) is in the domain).
+
   - Every answer is math-verified against its choice set (Q1 (E) 6 via roots 1, 5; Q4 (D); Q5 (C) 1 via f⁻¹(y) = 2 ⇒ y = 1; Q6 (E); Q8 (E) point, (x−1)² + (y+2)² = 0; Q9 (B) 4π; Q10 (B) (1,0) focus; Q11 (D) 1; Q12 (D); Q14 (D) 5, p ≡ 5; Q16 (C) √3, roots 1, 1 ± i√3; Q17 (E) x√x; Q18 (C) 1, e²; Q20 (E) ½log((1+x)/(1−x)); Q21 (E) √3/2; Q22 (B) 111; Q23 (D) 4√2/7; Q24 (D) π/4; Q25 (B) π = arctan 1 + arctan 2 + arctan 3).
+
+### Batch 10: file 93
+
+- **chapter-2.md** (93): 15224 bytes, 0 control bytes, 0 odd-`$` lines.
+  Chapter 2 review sheet (48 questions: sequences, limits, continuity, derivatives, applications, integrals, series).
+  Question numbers, choice letters, and math delimiters were the main casualties.
+
+  - Question-number repair (sequence 1-48 unambiguous within each section): restored `4.` (Q4), `10.` (Q10), `12.` (Q12), `13.` (Q13), `15.` (Q15), `18.` (Q18), `21.` (Q21), `22.` (Q22, scan had “2.”), `25.` (Q25), `26.` (Q26), `29.` (Q29), `30.` (Q30), `34The` → `34.`, and `35.`-`48.` except `37.` (present).
+
+  - Choice-letter repair: run-together choice lists rebuilt (Q16, Q17, Q18, Q23, Q24, Q27, Q31, Q34, Q40, Q41, Q46); (B)/(C)/(D)/(E) markers restored (Q19, Q20, Q28, Q35, Q39, Q45, Q47); choices split across `$$` blocks converted to inline (Q4, Q7, Q9, Q32, Q38, Q43).
+
+  - Statement garbles: `\operatorname { I f }`/`\operatorname { J f }` → “If”; `\operatorname* { l i m }` → `\operatorname*{lim}`; `\dot { t }` → t (Q21); `\dot { b }` → b (Q10); `\stackrel { \cdot } { f }` → f (Q15); `\Theta` → `\theta` (Q32); `\frac { 4 } { 2 }` → `2` (Q41 exponent); `\frac { 1 } { e { \sqrt { 3 } } }` → `\frac { 1 } { e \sqrt { 3 } }` (Q9); `\mathbb { 1 } f` → “If” (Q42); `\mathbf { j }` → “If” (Q45); `\ O \tilde { a }` → a (Q33); unicode ⅢII → III (Q41); Q30 `[Note: … \}` → “Note: …”; Q39 broken `\$2\sqrt2 }\$` → `$2 \sqrt { 2 }$` and trailing stray “π” dropped; Q6/Q10/Q27 piecewise arrays rebuilt (Q6’s rational was split across rows); Q37 unwrapped from a `<table>` cell.
+
+  - Data fixes: Q10 `m = 3` → `m = 4` (differentiability at x = 1 forces m = 4, b = −4; as extracted, choice (E) with m = 3 matched none); Q23 `\sin ^ { 2 } / \sec` → `\mathrm { cm } ^ { 2 } / \sec` (cm² misread as sin²); Q29 `x = 1 2` → `x = 1` (area (π−2)/4 = ∫₀¹ x arctan x dx forces upper limit 1); Q33 `y = - 6 x` → `y = - b x` (volume 2πb⁵/(15a³) constant ⟺ b⁵ = 2a³, matching choice (C); scan misread b as 6); Q14 “value of f(0)” → “value of f′(0)” (f(0) = 3 not among choices; f′(0) = −4 = (E)); Q18 choice (A) `( n ^ { \prime \prime } )` → `( n ^ { 2 } )` (n″ assumed to be n²; answer ½n! = (B) verified); Q31 statement rebuilt (“lclate he re the egin the qarant” → “Calculate the area of the region in the first quadrant bounded by the curves…”); Q32 statement rebuilt (“Whic he olig epressins vehe are f the regnbonded by the to circ i tured below?” → “Which of the following expressions gives the area of the region bounded by the two curves shown below?”); Q36 statement rebuilt; Q39 statement rebuilt; Q42 rebuilt; Q47 phrase rebuilt (“In te yn” → “In the Maclaurin expansion of”).
+
+  - Every answer is math-verified against its choice set (Q1 (E); Q2 (B) 6; Q3 (A) −2; Q4 (A) 1/6; Q6 (D) −1/3 via (x−2) cancellation; Q7 (C) 1/2; Q8 (D) [1/e², e²]; Q9 (A); Q10 (E); Q11 (B) 2f′(x); Q12 (C) y = x + 1; Q13 (A) 2; Q14 (E) −4; Q15 (C) π/2 − 1; Q16 (C) −0.02; Q17 (D) −2; Q18 (B) n!/2; Q19 (E); Q20 (C) a²; Q21 (B) π/3; Q22 (E) (k/e)ᵏ; Q23 (A) 4π; Q24 (B) −log 2; Q25 (D) 1/60; Q26 (C) 9/2; Q27 (E) 3; Q28 (C); Q29 (B) (π−2)/4; Q30 (D) 3/2; Q31 (B) 8 (15/4 + 17/4); Q32 (D); Q33 (C); Q34 (A) 32π/3; Q35 (A) 9/8; Q36 (D) e; Q37 e^(−1/2) = 1/√e; Q38 (C) 1/(n−1); Q39 (E) π/2; Q40 (B); Q41 (A) I only; Q42 (E) 4; Q43 (D) 1/6; Q44 II and III true (I false: aₙ = 1/n² gives √aₙ = 1/n, divergent; III: alternating-series test) — choice list lost entirely; Q45 (B); Q46 (C) 7 (radius 27/4); Q47 (C) −7/6; Q48 (A) −4 via binomial expansion about x = −1).
+
+  - Surviving-choice gaps (kept as extracted; see also Ambiguous fragments below): Q4 only (A)-(C) of five; Q7 only (A)-(D) of five; Q31 (C) value lost; Q37 no choice list survived; Q44 entire choice list lost (answer verified: II and III only); Q42 (E) $4$ forced by the math (scan had only (A)-(D)); Q48 (A) $- 4$ forced by the math (scan had only (B)-(E), (B) rebuilt from `^ { \infty 3 }` as −3); Q41 root index q unrecoverable (convergence of I is independent of q); Q5 statement lost entirely — the surviving relation 2x² + 3x − 2xy − y = 6 is satisfied by none of the five surviving points, so a coefficient of the relation is itself suspect.
 
 ## Unrecoverable extractions
 
