@@ -1,12 +1,19 @@
 :root {
   color-scheme: light;
   --ink: #18212b;
-  --muted: #687482;
+  --muted: #5c6774;
   --line: #dce2e8;
   --paper: #ffffff;
   --wash: #f4f7fa;
   --accent: #1769aa;
   --accent-dark: #0e4c7d;
+  --alarm: #a3271c;
+  /* Running text is capped by its own measure rather than by the column, so a
+     display formula or a figure still has the full track to spread into. */
+  --measure: 54ch;
+  /* Every metadata label on the page. 14px is the floor for uppercase or
+     small-caps runs; below it the letterforms stop resolving. */
+  --label: 0.875rem;
   --bs-font-monospace: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --bs-border-color: var(--line);
   --bs-tertiary-bg: var(--wash);
@@ -40,6 +47,13 @@ a {
 
 a:hover {
   color: var(--accent-dark);
+}
+
+/* One ring for every link, button, field and disclosure on the site. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 0.2rem;
 }
 
 code,
@@ -87,8 +101,9 @@ mjx-container[display="true"] {
   z-index: 20;
   top: 0;
   border-bottom: 1px solid var(--line);
-  background: color-mix(in srgb, var(--paper) 94%, transparent);
-  backdrop-filter: blur(12px);
+  /* Opaque: a translucent bar let scrolled mathematics smudge through the
+     brand, and a blurred ghost of the page is not a legible background. */
+  background: var(--paper);
 }
 
 .site-nav {
@@ -152,6 +167,17 @@ mjx-container[display="true"] {
   width: min(100% - 3rem, 88rem);
 }
 
+/* A page with no in-page headings leaves the aside empty, and hiding an empty
+   box does not release the grid track it sits in: a three-line page read as a
+   third of a page beside a reserved void. Drop the track itself. */
+.page-layout:has(> .page-toc:empty) {
+  grid-template-columns: minmax(0, 52rem);
+}
+
+.page-layout.subject-layout:has(> .page-toc:empty) {
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, 52rem);
+}
+
 .subject-sidebar {
   position: sticky;
   top: 5.5rem;
@@ -160,7 +186,7 @@ mjx-container[display="true"] {
   overflow: auto;
   padding-right: 1rem;
   color: var(--muted);
-  font-size: 0.86rem;
+  font-size: 0.875rem;
 }
 
 .subject-label {
@@ -195,7 +221,6 @@ mjx-container[display="true"] {
   display: block;
   padding: 0.22rem 0.4rem;
   border-radius: 0.25rem;
-  color: inherit;
   line-height: 1.35;
   text-decoration: none;
 }
@@ -225,7 +250,7 @@ mjx-container[display="true"] {
 .breadcrumbs {
   margin-bottom: 1rem;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: var(--label);
 }
 
 .breadcrumbs ol {
@@ -272,7 +297,7 @@ mjx-container[display="true"] {
   margin: 0.75rem 0 0;
   color: var(--muted);
   font-family: var(--bs-font-monospace);
-  font-size: 0.85rem;
+  font-size: var(--label);
   /* A wiki page's subtitle is its source path, and the deep ones are longer
      than a narrow column. Without this the path sets the page width. */
   overflow-wrap: anywhere;
@@ -292,7 +317,7 @@ mjx-container[display="true"] {
 
 .page-fact dt {
   color: var(--muted);
-  font-size: 0.7rem;
+  font-size: var(--label);
   font-weight: 750;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -310,6 +335,20 @@ mjx-container[display="true"] {
      the column, which set the width of the whole document at 375px. Scrolling
      the article keeps that inside the page instead. */
   overflow-x: auto;
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+
+/* The prose is measured, the mathematics is not: a paragraph stops at about
+   seventy characters while a display formula, a figure and a table keep the
+   whole column, which is what they need and what a narrower column would take
+   away from them. */
+.page-body :is(p, li, dt, dd, h2, h3, h4, blockquote) {
+  max-width: var(--measure);
+}
+
+.page-body :is(figure, table, mjx-container[display="true"]) {
+  max-width: 100%;
 }
 
 .page-body h2,
@@ -318,11 +357,37 @@ mjx-container[display="true"] {
   line-height: 1.2;
 }
 
+/* Pandoc wraps the items of a loose list in `<p>` and leaves a tight list's
+   items bare, so two pages one click apart had list rhythms that differed by
+   the height of a line. The item owns the spacing; the paragraph inside it
+   owns none. */
+.page-body li {
+  margin-block: 0.35rem;
+}
+
+.page-body li > p {
+  margin-block: 0;
+}
+
+.page-body li > p + p {
+  margin-top: 0.5rem;
+}
+
 .page-body blockquote {
   margin-inline: 0;
   padding-left: 1rem;
   border-left: 3px solid var(--line);
   color: var(--muted);
+}
+
+/* A quote inside an environment or inside another quote would repeat the rule
+   already at its left, which read as a grey box drawn inside a grey box. The
+   inner one is set in italic and indented instead. */
+.page-body :is(.qual-section, blockquote) blockquote {
+  padding-left: 0;
+  border-left: 0;
+  margin-inline-start: 1.25rem;
+  font-style: italic;
 }
 
 .page-body table {
@@ -344,27 +409,52 @@ mjx-container[display="true"] {
   max-height: calc(100vh - 7rem);
   overflow: auto;
   color: var(--muted);
-  font-size: 0.84rem;
+  font-size: 0.9rem;
 }
 
 .page-toc:empty {
   display: none;
 }
 
-.page-toc ol {
+.page-toc ol,
+.page-toc-narrow ol {
   display: grid;
   gap: 0.4rem;
   padding: 0;
   list-style: none;
 }
 
-.page-toc a {
+.page-toc a,
+.page-toc-narrow a {
   color: inherit;
   text-decoration: none;
 }
 
-.page-toc .toc-subsection {
+.page-toc .toc-subsection,
+.page-toc-narrow .toc-subsection {
   padding-left: 0.85rem;
+}
+
+/* The same headings as a disclosure, where the layout has no room for the
+   rail. It carries no fill and no border: the filled box beside it is the
+   wiki navigation, and two disclosures that look alike are one object to a
+   reader. Shown exactly where the rail is hidden -- the rules below mirror
+   the two breakpoints that hide it. */
+.page-toc-narrow {
+  display: none;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.page-toc-narrow > summary {
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.page-toc-narrow[open] > summary {
+  margin-bottom: 0.8rem;
 }
 
 .search-dialog {
@@ -429,7 +519,7 @@ mjx-container[display="true"] {
 
 #site-search-results span {
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: var(--label);
 }
 
 .search-result-meta {
@@ -444,11 +534,12 @@ mjx-container[display="true"] {
   font-weight: 750;
 }
 
+/* The path tail is where two rows titled "Residues" differ, so it wraps
+   rather than truncating: an ellipsis here eats the part that identifies the
+   row. */
 .search-result-detail {
-  max-width: 15rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  max-width: 20rem;
+  overflow-wrap: anywhere;
 }
 
 .problem-browser {
@@ -467,7 +558,7 @@ mjx-container[display="true"] {
 
 .problem-filters label {
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: var(--label);
   font-weight: 650;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -507,7 +598,7 @@ mjx-container[display="true"] {
 
 .problem-row > p:last-child {
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: var(--label);
   text-align: right;
 }
 
@@ -517,7 +608,7 @@ mjx-container[display="true"] {
 
 .quarto-title .subtitle {
   font-family: var(--bs-font-monospace);
-  font-size: 0.8rem;
+  font-size: var(--label);
   opacity: 0.6;
 }
 
@@ -538,8 +629,111 @@ div.qual-section::before {
   font-variant: small-caps;
   letter-spacing: 0.04em;
   font-weight: 600;
-  opacity: 0.65;
-  font-size: 0.85rem;
+  color: var(--muted);
+  font-size: var(--label);
+}
+
+/* The twelve kinds fall into the four registers amsthm already gives a
+   mathematician: a statement, its proof, an aside, and a warning. Weight and
+   slope carry the distinction -- a statement in italic under a bold label, a
+   proof under a hairline ending in a tombstone, an aside flush with the prose
+   -- and only the warning spends a colour. Colouring each kind separately was
+   considered and rejected: twelve hues is less scannable than the grey it
+   would replace. */
+div:is(
+  .qual-definition,
+  .qual-theorem,
+  .qual-proposition,
+  .qual-corollary,
+  .qual-lemma,
+  .qual-fact,
+  .qual-claim,
+  .qual-problem,
+  .qual-exercise
+) {
+  border-left-color: var(--ink);
+}
+
+div:is(
+    .qual-definition,
+    .qual-theorem,
+    .qual-proposition,
+    .qual-corollary,
+    .qual-lemma,
+    .qual-fact,
+    .qual-claim,
+    .qual-problem,
+    .qual-exercise
+  )::before {
+  color: var(--ink);
+  font-weight: 750;
+}
+
+/* amsthm's plain style: the assertion itself is set in italic. A definition,
+   a problem and an exercise stay upright, as amsthm's definition style has
+   them -- they are read through, not recalled. */
+div:is(
+  .qual-theorem,
+  .qual-proposition,
+  .qual-corollary,
+  .qual-lemma,
+  .qual-fact,
+  .qual-claim
+) {
+  font-style: italic;
+}
+
+/* Mathematics and code carry their own slope and must not inherit one. */
+div.qual-section :is(code, kbd, mjx-container) {
+  font-style: normal;
+}
+
+div.qual-proof {
+  border-left-width: 1px;
+}
+
+div.qual-proof::before {
+  font-variant: normal;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+div.qual-proof > p:last-child::after {
+  content: " \25A0";
+}
+
+/* An aside runs alongside the argument rather than inside it: no rule, one
+   step down in size, and a label that does not compete with a statement's. */
+div:is(.qual-remark, .qual-example, .qual-slogan, .qual-strategy, .qual-concept) {
+  padding-left: 0;
+  border-left: 0;
+  font-size: 0.95em;
+}
+
+div:is(
+    .qual-remark,
+    .qual-example,
+    .qual-slogan,
+    .qual-strategy,
+    .qual-concept
+  )::before {
+  font-variant: normal;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+div.qual-warning {
+  border-left-color: var(--alarm);
+}
+
+div.qual-warning::before {
+  color: var(--alarm);
+  font-variant: normal;
+  font-weight: 750;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 /* The authored `title=`, emitted as body text so its mathematics typesets.
@@ -549,22 +743,26 @@ div.qual-section > .qual-section-title {
   font-weight: 600;
 }
 
+/* A revealed answer is a section of the card, not a panel bolted to it: the
+   rule at its left is the one the environments above it use, and the accent is
+   there because the summary is the only part of it you click. The grey filled
+   box it used to be was indistinguishable from the navigation disclosure and
+   from the backlink list at the foot of the page. */
 details.reveal {
-  border: 1px solid var(--bs-border-color);
-  border-radius: 4px;
-  padding: 0.4rem 0.75rem;
-  margin-block: 0.5rem;
-  background: var(--bs-tertiary-bg, #f8f9fa);
+  border-left: 3px solid var(--accent);
+  padding: 0.1rem 0 0.1rem 1rem;
+  margin-block: 1rem;
 }
 details.reveal > summary {
   cursor: pointer;
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: var(--accent-dark);
+  font-variant: small-caps;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  font-size: var(--label);
 }
 details.reveal[open] > summary {
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid var(--bs-border-color);
-  padding-bottom: 0.35rem;
 }
 
 /* Position on the collection page is the list index. */
@@ -610,20 +808,25 @@ div.panel > ul {
   border-top: 1px solid var(--line);
 }
 
+/* End-of-page apparatus: a rule and a label, not a filled card. */
 .relation-group {
   min-width: 0;
-  padding: 0.85rem;
-  border: 1px solid var(--line);
-  border-radius: 0.4rem;
-  background: var(--wash);
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--line);
 }
 
 .relation-group h2 {
   margin: 0 0 0.65rem;
   font-family: inherit;
-  font-size: 0.78rem;
+  font-size: var(--label);
   letter-spacing: 0.07em;
   text-transform: uppercase;
+}
+
+/* The apparatus lists carry their own gap and must not also take the prose
+   list rhythm. */
+.relation-group li {
+  margin-block: 0;
 }
 
 .relation-group ul {
@@ -644,7 +847,7 @@ div.panel > ul {
 .relation-group small,
 .relation-empty {
   color: var(--muted);
-  font-size: 0.76rem;
+  font-size: var(--label);
 }
 
 .relation-empty {
@@ -667,7 +870,7 @@ div.panel > ul {
 
 .reading-order small {
   color: var(--muted);
-  font-size: 0.7rem;
+  font-size: var(--label);
   font-weight: 750;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -723,13 +926,18 @@ div.panel > ul {
     border-color: color-mix(in srgb, var(--line) 70%, var(--muted));
   }
 
-  .wiki-sidebar summary {
+  .wiki-sidebar summary,
+  .subject-sidebar a {
     min-height: 2.75rem;
     padding-block: 0.8rem;
   }
 
   .subject-layout .page-toc {
     display: none;
+  }
+
+  .subject-layout .page-toc-narrow {
+    display: block;
   }
 }
 
@@ -761,6 +969,10 @@ div.panel > ul {
     display: none;
   }
 
+  .page-toc-narrow {
+    display: block;
+  }
+
   .relation-groups {
     grid-template-columns: 1fr;
   }
@@ -787,7 +999,113 @@ div.panel > ul {
     text-align: left;
   }
 
+  /* The detail is the only thing separating two rows that both read
+     "Algebra / Page", so the narrow layout stacks it under the title instead
+     of dropping it. */
+  #site-search-results li {
+    display: grid;
+    gap: 0.15rem;
+  }
+
+  .search-result-meta {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.5rem;
+    justify-items: start;
+  }
+
   .search-result-detail {
+    max-width: 100%;
+  }
+}
+
+/* The palette is the only thing that changes: every rule above paints with the
+   tokens, so the dark page is the same document under a different ground. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --ink: #e3e9ef;
+    --muted: #9fadbb;
+    --line: #2b343d;
+    --paper: #11171d;
+    --wash: #1a222a;
+    --accent: #6fb3ee;
+    --accent-dark: #a8d1f7;
+    --alarm: #f08e82;
+  }
+
+  /* Figures are black ink, most of them on a transparent ground, and a black
+     drawing on a dark page is an empty rectangle. Inverting turns the ink
+     white and turns a scan's white ground dark; the hue rotation puts the
+     colours in a coloured plot back where they started. */
+  .page-body :is(img, svg) {
+    filter: invert(1) hue-rotate(180deg);
+  }
+}
+
+/* Printed, the page is a document: the navigation, the rails and the search
+   affordances are screen apparatus and do not belong on paper. */
+@media print {
+  :root {
+    color-scheme: light;
+    --ink: #000000;
+    --muted: #333333;
+    --line: #b6bcc2;
+    --paper: #ffffff;
+    --wash: #ffffff;
+    --accent: #000000;
+    --accent-dark: #000000;
+    --alarm: #000000;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+
+  .site-header,
+  .page-toc,
+  .page-toc-narrow,
+  .subject-sidebar,
+  .search-dialog,
+  .search-open,
+  .problem-filters {
     display: none;
+  }
+
+  .page-layout,
+  .page-layout.subject-layout {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+
+  /* On screen an over-wide formula scrolls; on paper there is nowhere to
+     scroll to, so it must be allowed to print outside the measure. */
+  .page-body,
+  mjx-container[display="true"] {
+    overflow: visible;
+  }
+
+  .page-body {
+    font-size: 11pt;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  /* A formula, a figure or a table split across a page fold is unreadable. A
+     long proof is not: forbidding a break there would push whole environments
+     to the next sheet and leave the fold blank. */
+  figure,
+  table,
+  mjx-container[display="true"] {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3 {
+    break-after: avoid;
   }
 }
