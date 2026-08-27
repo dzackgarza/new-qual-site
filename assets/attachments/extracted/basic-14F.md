@@ -25,7 +25,7 @@ Problem 4. Let $f _ { n } : [ - 2 , 2 ] \to [ 0 , 1 ]$ be a sequence of convex f
 Problem 5. Consider the following sequence:
 
 $$
-a _ { 1 } = { \sqrt { 2 } } \quad { \mathrm { a n d } } \quad a _ { n + 1 } = { \sqrt { 2 + a _ { n } } } \quad { \mathrm { f o r ~ a l l ~ } } n \geq 1 .
+a _ { 1 } = { \sqrt { 2 } } \quad \text { and } \quad a _ { n + 1 } = { \sqrt { 2 + a _ { n } } } \quad \text { for all } n \geq 1 .
 $$
 
 Prove that this sequence converges and find its limit.
@@ -52,7 +52,7 @@ $$
 
 Use the eigenvalues to compute det(M).
 
-Problem 9. Let $A \neq 0$ be an n×n complex matrix. Prove that there is a matrix $B _ { ; }$ such that B and $A + B$ have no eigenvalues in common.
+Problem 9. Let $A \neq 0$ be an n×n complex matrix. Prove that there is a matrix $B$ such that B and $A + B$ have no eigenvalues in common.
 
 Problem 10. What is the largest number of 1’s an invertible 0-1 matrix of size $n \times n$ can have? You must show both that this number is possible and that no larger number is possible.
 

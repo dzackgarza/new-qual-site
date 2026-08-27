@@ -35,24 +35,24 @@ Total:
 Problem 1. Let $( X , d )$ be a compact metric space and let $f : X \to X$ be a map satisfying
 
 $$
-d ( f ( x ) , f ( y ) ) < d ( x , y ) , \qquad \forall x , y \in X { \mathrm { ~ w i t h ~ } } x \neq y .
+d ( f ( x ) , f ( y ) ) < d ( x , y ) , \qquad \forall x , y \in X \text { with } x \neq y .
 $$
 
-Prove that there is a unique point $x \in X$ so that ${ \mathfrak { f } } ( { \mathfrak { x } } ) = { \mathfrak { x } }$
+Prove that there is a unique point $x \in X$ so that $f ( x ) = x$
 
-Problem 2. A function $f : \mathbb { R } ^ { n } \to \mathbb { R }$ is called convex $\ddagger f f$ satisfies
+Problem 2. A function $f : \mathbb { R } ^ { n } \to \mathbb { R }$ is called convex iff $f$ satisfies
 
 $$
 f ( \alpha x + ( 1 - \alpha ) y ) \leq \alpha f ( x ) + ( 1 - \alpha ) f ( y ) , \qquad \forall x , y \in \mathbb { R } ^ { n } , \quad 0 \leq \alpha \leq 1 ,
 $$
 
-Assume that f is continuously differentiable and that for some constant $c > 0 .$ the gradient $\nabla f$ satisfies
+Assume that f is continuously differentiable and that for some constant $c > 0 ,$ the gradient $\nabla f$ satisfies
 
 $$
 ( \nabla f ( x ) - \nabla f ( y ) ) \cdot ( x - y ) \geq c ( x - y ) \cdot ( x - y ) , \qquad \forall x , y \in \mathbb { R } ^ { n } ,
 $$
 
-where denotes the dot product. Show that $f \ i s$ convex.
+where denotes the dot product. Show that $f$ is convex.
 
 Problem 3. Prove that the set of real numbers can be written as the union of uncountably many pairwise disjoint subsets, each of which is uncountable.
 
@@ -64,13 +64,13 @@ Problem 4. If you rearrange the order of terms in a sum $\sum a _ { n }$ , somet
 
 Problem 5. Give an example of a function $f ( x )$ on $[ 0 , 1 ]$ with infinitely many discontinuities, but which is Riemann integrable. Include proof (don't just quote some theorem).
 
-Problem 6. Let $f _ { \pi }$ be a sequence of continuous functions on $[ 0 , 1 ]$ Assume: $( \mathrm { i } ) \ f _ { n } ( x ) \geq f _ { n + 1 } ( x )$ for all $x \in \{ 0 , 1 \}$ ; and (ii) lim $n \to \infty \ f _ { \mathcal { R } } ( x ) = 0$ for all $x \in [ 0 , 1 ]$ Prove (don't just quote some theorem) that $f _ { n }  0$ uniformly on [0, 1].
+Problem 6. Let $f _ { n }$ be a sequence of continuous functions on $[ 0 , 1 ]$ Assume: $( \mathrm { i } ) \ f _ { n } ( x ) \geq f _ { n + 1 } ( x )$ for all $x \in [ 0 , 1 ]$ ; and (ii) $\lim _ { n \to \infty } f _ { n } ( x ) = 0$ for all $x \in [ 0 , 1 ]$ Prove (don't just quote some theorem) that $f _ { n } \to 0$ uniformly on [0, 1].
 
-Problem 7. Let $f : \mathbb { R } \to M _ { \pi \times n }$ be a continuous function, where $M _ { \pi \times n }$ is the space of n $\times \ n$ matrices. Show that the function $g ( t ) = \operatorname { r a n k } ( f ( t ) )$ is lower semi-continuous, meaning that if a sequence $t _ { \mathfrak { n } }$ converges to t then $g ( t ) \leq$ lim $\operatorname { i n f } _ { \pi } g ( t _ { \pi } )$ . Is $g$ always continuous?
+Problem 7. Let $f : \mathbb { R } \to M _ { n \times n }$ be a continuous function, where $M _ { n \times n }$ is the space of n $\times \ n$ matrices. Show that the function $g ( t ) = \operatorname { r a n k } ( f ( t ) )$ is lower semi-continuous, meaning that if a sequence $t _ { n }$ converges to t then $g ( t ) \leq$ lim $\operatorname { i n f } _ { n } g ( t _ { n } )$ . Is $g$ always continuous?
 
 Problem 8. Assume that a complex matrix $A$ satisfies $\ker ( ( A - \lambda I ) ) =$ ker $( ( A - \lambda I ) ^ { 2 } )$ for all $\lambda \in \mathbb { C }$ Show from first principles (i.e. without using the theory of canonical forms) that A must be diagonalizable.
 
-Problem 9. Let V be a finite dimensional inner product space, and let ${ \bar { L } } : { \bar { V } } \to V$ be a self-adjoint linear operator. Let $\mu$ and e be given. Suppose there is a unit vector $x \in V$ such that
+Problem 9. Let V be a finite dimensional inner product space, and let $L : V \to V$ be a self-adjoint linear operator. Let $\mu$ and e be given. Suppose there is a unit vector $x \in V$ such that
 
 $$
 \| L \left( x \right) - \mu x \| \leq \varepsilon .
@@ -88,6 +88,6 @@ for some (real) θ. What values of $\theta$ are possible?
 
 Problem 11. (a) State and prove the rank-nullity theorem.
 
-(b) Suppose V, W, and U are finite dimensional vector spaces over R and that $T \colon V \ \to \ W$ and $S \colon W \to U$ are linear operators. Suppose further that $T$ is one-to-one, S is onto, and $S \circ T = 0$ Prove that ker $( S ) \supseteq$ image(T) and that $- \dim ( V ) + \dim ( W ) - \dim ( U ) = \dim ( \ker ( S ) / \mathrm { i m a g e } ( T ) )$
+(b) Suppose V, W, and U are finite dimensional vector spaces over R and that $T \colon V \to W$ and $S \colon W \to U$ are linear operators. Suppose further that $T$ is one-to-one, S is onto, and $S \circ T = 0$ Prove that ker $( S ) \supseteq$ image(T) and that $- \dim ( V ) + \dim ( W ) - \dim ( U ) = \dim ( \ker ( S ) / \mathrm { i m a g e } ( T ) )$
 
-Problem 12. Let A be an $m \times n$ real matrix, and let $b \in \mathbb { R } ^ { m }$ . Suppose Ax and $1 1 y$ are both of minimal distance to b (minimizing among members of image(A)). Prove that $x - y \in \ker ( A )$
+Problem 12. Let A be an $m \times n$ real matrix, and let $b \in \mathbb { R } ^ { m }$ . Suppose $A x$ and $A y$ are both of minimal distance to b (minimizing among members of image(A)). Prove that $x - y \in \ker ( A )$

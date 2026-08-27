@@ -12,9 +12,9 @@ $$
 f ( x ) = \sum _ { n = 1 } ^ { \infty } ( - 1 ) ^ { n } a _ { n } x ^ { n }
 $$
 
-well-defined and left-continuous at $x = 1 2$ Carefully prove your assertion.
+well-defined and left-continuous at $x = 1$ Carefully prove your assertion.
 
-Problem 3. Consider a function $f \colon \{ a , b \} $ R which is twice continuously differentiable (including the endpoints). Let $a = x _ { 0 } < x _ { 1 } < \cdots < x _ { n } = b$ be the uniform partition of $[ a , b ]$ i.e., $x _ { i + 1 } - x _ { i } = ( b - a ) / n$ for all $0 \leq i < n$ Show that there exists M such that for all $n \geq 1$
+Problem 3. Consider a function $f \colon [ a , b ] \to \mathbb { R }$ which is twice continuously differentiable (including the endpoints). Let $a = x _ { 0 } < x _ { 1 } < \cdots < x _ { n } = b$ be the uniform partition of $[ a , b ]$ i.e., $x _ { i + 1 } - x _ { i } = ( b - a ) / n$ for all $0 \leq i < n$ Show that there exists M such that for all $n \geq 1$
 
 $$
 \left| { \frac { 1 } { n } } { \Big ( } { \frac { 1 } { 2 } } f ( x _ { 0 } ) + f ( x _ { 1 } ) + \cdots + f ( x _ { n - 1 } ) + { \frac { 1 } { 2 } } f ( x _ { n } ) { \Big ) } - \int _ { a } ^ { b } f ( x ) \mathrm { d } x \right| \leq { \frac { M } { n ^ { 2 } } } .
@@ -22,7 +22,7 @@ $$
 
 [Recall that the sum is an approximation of the integral in the Trapezoid Rule. It may be instructive to first solve the problem for $n = 1$ and then address the general case.]
 
-Problem 4. Consider a decreasing sequence of continuous functions $f _ { n } \colon [ 0 , 1 ] \to \mathbb { R }$ obeying the uniform bound $| f _ { n } | \ \leq \ M$ for some $M \ \in \ ( 0 , 1 )$ Suppose the point-wise limit $f ( x ) =$ $\scriptstyle \operatorname* { l i m } _ { n \to \infty } f _ { n } ( x )$ is continuous on [0, 1]. Prove that $f _ { n }  f$ uniformly on [0, 1]. [You may use without proof that [0, 1] is compact as well as sequentially compact.]
+Problem 4. Consider a decreasing sequence of continuous functions $f _ { n } \colon [ 0 , 1 ] \to \mathbb { R }$ obeying the uniform bound $| f _ { n } | \ \leq \ M$ for some $M \ \in \ ( 0 , 1 )$ Suppose the point-wise limit $f ( x ) =$ $\scriptstyle \operatorname* { l i m } _ { n \to \infty } f _ { n } ( x )$ is continuous on [0, 1]. Prove that $f _ { n } \to f$ uniformly on [0, 1]. [You may use without proof that [0, 1] is compact as well as sequentially compact.]
 
 Problem 5. Consider a function $f ( x , y )$ which is twice continuously differentiable. Suppose that f has its unique minimum at $( x , y ) = ( 0 , 0 )$ . Carefully prove that then at (0, 0),
 
@@ -32,7 +32,7 @@ $$
 
 [You may use without proof that the mixed partials are equal for $C ^ { 2 }$ functions.]
 
-Problem 6. $\mathsf { L e t - \infty } < a < b < \infty$ Prove that a continuous function $f \colon [ a , b ]  \mathbb { R }$ attains all values in $[ f ( a ) , f ( b ) ]$
+Problem 6. Let $- \infty < a < b < \infty$ Prove that a continuous function $f \colon [ a , b ] \to \mathbb { R }$ attains all values in $[ f ( a ) , f ( b ) ]$
 
 Problem 7. Let V be a complex inner product space and $v , w \in V$ Prove the Cauchy-Schwarz inequality
 

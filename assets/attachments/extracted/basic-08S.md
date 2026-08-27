@@ -1,4 +1,4 @@
-1. Let $g \in C ( [ a , b ] )$ ), with $a \leq g ( x ) \leq b$ for all $x \in [ a , b ]$ .Prove the following:
+1. Let $g \in C ( [ a , b ] )$, with $a \leq g ( x ) \leq b$ for all $x \in [ a , b ]$ .Prove the following:
 
 (i) g has at least one fixed point p in the interval [a, b].
 
@@ -8,7 +8,7 @@ $$
 | g ( x ) - g ( y ) | \leq \gamma | x - y |
 $$
 
-for all $x , y \in \left\{ a , b \right\}$ , then the fixed point p is unique, and the iteration
+for all $x , y \in \left[ a , b \right]$ , then the fixed point p is unique, and the iteration
 
 $$
 x _ { n + 1 } = g ( x _ { n } )
@@ -76,7 +76,7 @@ $$
 \sum _ { F } a ( x ) \leq M .
 $$
 
-Prove $\{ x : f ( x ) > 0 \}$ is countable.
+Prove $\{ x : a ( x ) > 0 \}$ is countable.
 
 8. Assume V is an n-dimensional vector space over the rationals Q, and T is a Q-linear tranformation $T : V \to V$ such that $T ^ { 2 } = T$ Prove that every vector $v \in V$ can be written uniquely as $\boldsymbol { v } = \boldsymbol { v } _ { 1 } + \boldsymbol { v } _ { 2 }$ such that $T ( v _ { 1 } ) = v _ { 1 }$ and $T ( v _ { 2 } ) = 0$
 
@@ -90,7 +90,7 @@ Prove $\{ x : f ( x ) > 0 \}$ is countable.
 
 11. Assume A is an n x n complex matrix such that for some positive integer m the power $A ^ { m } = I _ { n }$ where $I _ { n }$ is the $n \times n$ identity matrix. Prove that A is diagonalizable.
 
-12. Let A be an $n \times n$ real symmetric $\left( a _ { i , j } = a _ { j , i } \right)$ matrix, and let $S = \{ x \in \mathbb { R } ^ { n } : \textstyle \sum x _ { j } ^ { 2 } = 1 \}$ be the unit sphere of Rn. Let $x \in S$ be such that
+12. Let A be an $n \times n$ real symmetric $\left( a _ { i , j } = a _ { j , i } \right)$ matrix, and let $S = \{ x \in \mathbb { R } ^ { n } : \textstyle \sum x _ { j } ^ { 2 } = 1 \}$ be the unit sphere of $\mathbb { R } ^ { n }$. Let $x \in S$ be such that
 
 $$
 ( A x , x ) = \operatorname* { s u p } _ { S } ( A y , y )

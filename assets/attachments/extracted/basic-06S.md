@@ -16,7 +16,7 @@ $$
 f ( x ) = \sum _ { n = 1 } ^ { \infty } { \frac { \sin n x } { n ^ { 5 / 2 } } }
 $$
 
-converges for all $x \in \mathbf { R }$ and that $f ( x )$ is a continuous function on R with a continuous derivative. State clearly any facts you assume.
+converges for all $x \in \mathbf { R }$ and that $f ( x )$ is a continuous function on $\mathbf { R }$ with a continuous derivative. State clearly any facts you assume.
 
 ## PROBLEM 4
 
@@ -48,7 +48,7 @@ $$
 
 ## PROBLEM 7
 
-A matrix T (with entries, say, in the field C of complex numbers) is diagonalizable if there exists a non-singular matrix S such that $S T S ^ { - 1 }$ is diagonal. Prove that if $a , \lambda \in \mathbf { C }$ with $a \neq 0$ , then the following matrix is not diagonalizable:
+A matrix T (with entries, say, in the field $\mathbf { C }$ of complex numbers) is diagonalizable if there exists a non-singular matrix S such that $S T S ^ { - 1 }$ is diagonal. Prove that if $a , \lambda \in \mathbf { C }$ with $a \neq 0$ , then the following matrix is not diagonalizable:
 
 $$
 T = { \left( \begin{array} { l l l } { 1 } & { a } & { 0 } \\ { 0 } & { 1 } & { a } \\ { 0 } & { 0 } & { \lambda } \end{array} \right) }
@@ -56,7 +56,7 @@ $$
 
 ## PROBLEM 8
 
-A linear transformation T is called orthogonal if it is nonsingular and ${ } ^ { t } T = T ^ { - 1 }$ . Prove that if $T : { \dot { \mathbf { R } } } ^ { 2 n + 1 } \to { \mathbf { R } } ^ { 2 n + 1 }$ is orthogonal, then there exists a vector $\boldsymbol { v } \in \mathbf { R } ^ { 2 n + 1 }$ such that $T v = \pm v$
+A linear transformation T is called orthogonal if it is nonsingular and ${ } ^ { t } T = T ^ { - 1 }$ . Prove that if $T : { \mathbf { R } } ^ { 2 n + 1 } \to { \mathbf { R } } ^ { 2 n + 1 }$ is orthogonal, then there exists a vector $\boldsymbol { v } \in \mathbf { R } ^ { 2 n + 1 }$ such that $T v = \pm v$
 
 ## PROBLEM 9
 
@@ -68,4 +68,4 @@ Let S be a real, n × n-symmetric matrix $S , { \mathrm { i . e . , ~ } } ^ { t 
 
 ## PROBLEM 10
 
-Let Y is an arbitrary set of commuting matrices in $M _ { n } ( \mathbf { C } )$ $( \mathrm { i . e . , } A B = B A$ for all $A , B \in Y )$ Prove that there exists a non-zero vector $v \in \mathbf { C } ^ { n }$ which is a common eigenvector of all elements of Y.
+Let Y be an arbitrary set of commuting matrices in $M _ { n } ( \mathbf { C } )$ $( \mathrm { i . e . , } A B = B A$ for all $A , B \in Y )$ Prove that there exists a non-zero vector $v \in \mathbf { C } ^ { n }$ which is a common eigenvector of all elements of Y.

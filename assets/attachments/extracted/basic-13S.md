@@ -16,7 +16,7 @@ $$
 
 If f has continuous derivatives up to order three, prove that $\begin{array} { r } { | \int _ { a } ^ { b } f ( x ) d x - S _ { [ a , b ] } f | \leq } \end{array}$ $C ( b - a ) ^ { 4 } \operatorname* { m a x } _ { [ a , b ] } | f ^ { ( 3 ) } ( x ) |$ , where C does not depend on $f$
 
-3. Prove that a metric space is sequentially compact if and only if it is complete and totally bounded. A metric space is totally bounded when for every $\epsilon > 0$ it can be covered by a finite number of balls of radius ².
+3. Prove that a metric space is sequentially compact if and only if it is complete and totally bounded. A metric space is totally bounded when for every $\epsilon > 0$ it can be covered by a finite number of balls of radius $\epsilon$.
 
 4. Denote by $h _ { n }$ the n-th harmonic number:
 
@@ -30,7 +30,7 @@ $$
 \gamma = \operatorname* { l i m } _ { n \to \infty } ( h _ { n } - \ln n )
 $$
 
-5. Define polynomials $U _ { n } ( x ) , n = 0 , 1 , 2 ,$ .. as follows:
+5. Define polynomials $U _ { n } ( x ) , n = 0 , 1 , 2 , \ldots$ as follows:
 
 $$
 U _ { 1 } ( x ) = 1 , U _ { 2 } ( x ) = 2 x , U _ { n + 1 } ( x ) = 2 x U _ { n } ( x ) - U _ { n - 1 } ( x )
@@ -39,30 +39,30 @@ $$
 (a) Prove that
 
 $$
-U _ { n } ( \cos \theta ) = { \frac { \sin ( ( n + 1 ) \theta ) ) } { \sin ( \theta ) } } .
+U _ { n } ( \cos \theta ) = { \frac { \sin ( ( n + 1 ) \theta ) } { \sin ( \theta ) } } .
 $$
 
 (b) Prove that the polynomials $U _ { n } ( x )$ satisfy:
 
 $$
-\int _ { - 1 } ^ { 1 } U _ { m } ( x ) U _ { n } ( x ) { \sqrt { 1 - x ^ { 2 } } } d x = { \left\{ \begin{array} { l l } { 0 \quad { \mathrm { w h e n ~ } } m \neq n } \\ { \pi / 2 { \mathrm { ~ w h e n ~ } } m = n } \end{array} \right. }
+\int _ { - 1 } ^ { 1 } U _ { m } ( x ) U _ { n } ( x ) { \sqrt { 1 - x ^ { 2 } } } d x = { \left\{ \begin{array} { l l } { 0 \quad \text { when } m \neq n } \\ { \pi / 2 \quad \text { when } m = n } \end{array} \right. }
 $$
 
 6. (a) Prove that diagonalizable matrices are dense in the set of all $n \times n$ matrices with complex entries.
 
 (b) Are diagonalizable matrices with real entries dense in the set of all $n \times n$ matrices with real entries?
 
-7. (a) Define the operator norm of a real $n \times n$ matrix (considered as a linear transformation from $\mathbb { R } ^ { n }$ to R n).
+7. (a) Define the operator norm of a real $n \times n$ matrix (considered as a linear transformation from $\mathbb { R } ^ { n }$ to $\mathbb { R } ^ { n }$ ).
 
-(b) Denote the $n \times n$ identity matrix by I. Show that the series $\exp ( A ) =$ $I + \dot { A } + A ^ { 2 } / 2 ! + A ^ { 3 } / 3 ! + . .$ . converges to a limit in the usual sense of convergence of matrices (convergence entry by entry).
+(b) Denote the $n \times n$ identity matrix by I. Show that the series $\exp ( A ) = I + A + A ^ { 2 } / 2 ! + A ^ { 3 } / 3 ! + \cdots$ converges to a limit in the usual sense of convergence of matrices (convergence entry by entry).
 
-(c) Show that the series ln $( I + A ) = A - A ^ { 2 } / 2 + A ^ { 3 } / 3 + \cdot \cdot \cdot + ( - 1 ) ^ { n + 1 } A ^ { n } / n + \cdot \cdot \cdot$ converges if the operator norm of A is less than one.
+(c) Show that the series $\ln ( I + A ) = A - A ^ { 2 } / 2 + A ^ { 3 } / 3 + \cdot \cdot \cdot + ( - 1 ) ^ { n + 1 } A ^ { n } / n + \cdot \cdot \cdot$ converges if the operator norm of A is less than one.
 
 (d) Show that $\exp ( \ln ( I + A ) ) = I + A$ if the operator norm of A is less than 1.
 
 8. Let T be a linear transformation from a finite-dimensional vector space V with an inner product to a finite dimensional vector space W also with an inner product (the dimension of W can be different from the dimension of V here).
 
-(a) Define the adjoint $T ^ { * } : \ W \to V$
+(a) Define the adjoint $T ^ { * } : W \to V$
 
 (b) Show that if matrices are written relative to orthonormal bases of V and W then the matrix of $T ^ { * }$ is the transpose of the matrix of T .
 
@@ -88,7 +88,7 @@ $$
 
 Denote by C the set of matrices in G commuting with M .
 
-(a) Prove that C is an affine subspace in the space $\mathbb { R } ^ { 1 6 }$ of all $4 \times 4$ real matrices. S is an “affine subspace” of a vector space V if there is a vector $w \in V$ such that $S ^ { 0 } = \{ v - w : v \in S \}$ is a subspace of V . The dimension of S is defined to be the dimension of $S ^ { 0 }$
+(a) Prove that C is an affine subspace in the space $\mathbb { R } ^ { 16 }$ of all $4 \times 4$ real matrices. S is an “affine subspace” of a vector space V if there is a vector $w \in V$ such that $S ^ { 0 } = \{ v - w : v \in S \}$ is a subspace of V . The dimension of S is defined to be the dimension of $S ^ { 0 }$
 
 (b) Find the dimension of C.
 

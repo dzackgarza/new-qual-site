@@ -33,7 +33,7 @@ admits a solution R of full rank. Here R must be a $2 \times 3$ matrix with real
 Problem 4. Let B be an $7 \times 7$ matrix and $A _ { n }$ a sequence of matrices of the same size. Suppose that
 
 $$
-A _ { n } \to B \quad { \mathrm { a s } } \quad n \to \infty ,
+A _ { n } \to B \quad \text { as } \quad n \to \infty ,
 $$
 
 in the sense that the individual matrix entries converge. Show that
@@ -49,12 +49,12 @@ Problem 6. Let A be an invertible $n \times n$ matrix whose entries belong to $\
 Problem 7. Determine the volume of the region in $\mathbb { R } ^ { 3 }$ determined by the following inequalities:
 
 $$
-x ^ { 2 } + y ^ { 2 } + z ^ { 2 } \leq 4 , \qquad x ^ { 2 } - 2 x + y ^ { 2 } + z ^ { 2 } \geq 0 , \quad { \mathrm { a n d } } \quad z \geq x .
+x ^ { 2 } + y ^ { 2 } + z ^ { 2 } \leq 4 , \qquad x ^ { 2 } - 2 x + y ^ { 2 } + z ^ { 2 } \geq 0 , \quad \text { and } \quad z \geq x .
 $$
 
-Problem 8. (i) For each $n \in \mathbb { N }$ let $f _ { n } : \mathbb { N } \to \mathbb { I }$ R be a function with $| f _ { n } ( m ) | \leq 1$ for all $m , n \in \mathbb { N }$ . Prove that there is an infinite subsequence of distinct positive integers $n _ { i } .$ , such that for each $m \in \mathbb { N } , f _ { n _ { i } } ( m )$ converges.
+Problem 8. (i) For each $n \in \mathbb { N }$ let $f _ { n } : \mathbb { N } \to \mathbb { R }$ be a function with $| f _ { n } ( m ) | \leq 1$ for all $m , n \in \mathbb { N }$ . Prove that there is an infinite subsequence of distinct positive integers $n _ { i }$ , such that for each $m \in \mathbb { N } , f _ { n _ { i } } ( m )$ converges.
 
-(ii) For $n _ { i }$ as in (i), assume that in addition lim $_ { m  \infty } \operatorname* { l i m } _ { i  \infty } f _ { n _ { i } } ( m )$ exists and equals 0. Prove or disprove: The same holds for the reverse double limit $\begin{array} { r } { \operatorname* { l i m } _ { i \to \infty } \operatorname* { l i m } _ { m \to \infty } f _ { n _ { i } } ( m ) } \end{array}$
+(ii) For $n _ { i }$ as in (i), assume that in addition $\operatorname* { l i m } _ { m \to \infty } \operatorname* { l i m } _ { i \to \infty } f _ { n _ { i } } ( m )$ exists and equals 0. Prove or disprove: The same holds for the reverse double limit $\begin{array} { r } { \operatorname* { l i m } _ { i \to \infty } \operatorname* { l i m } _ { m \to \infty } f _ { n _ { i } } ( m ) } \end{array}$
 
 Problem 9. Let $f _ { n } : [ 0 , 1 ] \to \mathbb { C }$ be a sequence of continuous functions. Suppose $f _ { n }$ converge pointwise. Show that the sequence converges uniformly if and only if the collection of functions $\left\{ f _ { n } \right\}$ is equicontinuous.
 
@@ -67,7 +67,7 @@ $$
 that is closest to the line
 
 $$
-y = x - 1 0 0 .
+y = x - 100 .
 $$
 
 Note: Formal calculations alone do not constitute a solution. You must justify rigorously that there is a point that is closest, that it is unique, and that it is the specific point that you claim that it is.
@@ -75,11 +75,11 @@ Note: Formal calculations alone do not constitute a solution. You must justify r
 Problem 11. We define a metric space (X, dist) as follows:
 
 $$
-X : = \{ f : [ 0 , 1 ] \to [ 0 , 1 ] \mid f { \mathrm { ~ i s ~ c o n t i n u o u s ~ a n d ~ } } f ( 1 ) = 0 . \}
+X : = \{ f : [ 0 , 1 ] \to [ 0 , 1 ] \mid f \text { is continuous and } f ( 1 ) = 0 . \}
 $$
 
 $$
-\operatorname { d i s t } ( f , g ) = \operatorname* { i n f } \left\{ r \in [ 0 , 1 ] \mid f ( t ) = g ( t ) { \mathrm { ~ f o r ~ a l l ~ } } r \leq t \leq 1 . \right\}
+\operatorname { d i s t } ( f , g ) = \operatorname* { i n f } \left\{ r \in [ 0 , 1 ] \mid f ( t ) = g ( t ) \text { for all } r \leq t \leq 1 . \right\}
 $$
 
 Prove any TWO of the following statements about (X, dist):
@@ -96,5 +96,5 @@ $$
 for all $x , y \in \mathbb { R }$ and all $t \in [ 0 , 1 ]$ . Prove the following: Suppose $f : \mathbb { R } \to \mathbb { R }$ is differentiable. Then f is convex if and only if
 
 $$
-f ( y ) \geq f ( x ) + ( y - x ) f ^ { \prime } ( x ) \quad { \mathrm { f o r ~ a l l ~ } } x , y \in \mathbb { R } .
+f ( y ) \geq f ( x ) + ( y - x ) f ^ { \prime } ( x ) \quad \text { for all } x , y \in \mathbb { R } .
 $$

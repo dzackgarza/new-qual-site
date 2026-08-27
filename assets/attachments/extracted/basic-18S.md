@@ -10,7 +10,7 @@ Work out 10 problems, including at least 4 of the first 6 problems and at least 
 
 Problem 1. Prove that functions $e ^ { t } , e ^ { 2 t } , \ldots , e ^ { n t }$ are linearly independent in the space of continuous functions on the interval [1, 2].
 
-Problem 2. Let A and B be two real $5 \times 5$ matrices, such that $A ^ { 2 } = A$ $B ^ { 2 } = B$ and $1 - ( A + B )$ is invertible. Prove that rank $\gimel ( A ) = { \mathrm { r a n k } } ( B )$
+Problem 2. Let A and B be two real $5 \times 5$ matrices, such that $A ^ { 2 } = A$ , $B ^ { 2 } = B$ and $1 - ( A + B )$ is invertible. Prove that rank $( A ) = \operatorname { r a n k } ( B )$
 
 Problem 3. Let $A = \left( a _ { i j } \right)$ be a complex $n \times n$ matrix. Recall that matrix
 
@@ -23,14 +23,14 @@ is well defined. Suppose $e ^ { A } = 1 + A + A ^ { 2 }$ . Prove or disprove: A 
 Problem 4. Consider the following matrices:
 
 $$
-A = { \begin{array} { l l l } { \left( { \begin{array} { l l l } { 1 } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 1 } \\ { 0 } & { 0 } & { 1 } \end{array} } \right) } \end{array} } \quad \quad B = { \begin{array} { l l l } { \left( { \begin{array} { l l l } { 1 } & { 1 } & { 0 } \\ { 0 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} } \right) } \end{array} } \quad \quad C = { \begin{array} { l l l } { \left( { \begin{array} { l l l } { 1 } & { 0 } & { 1 } \\ { 0 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} } \right) } \end{array} }
+A = \left( \begin{array} { l l l } { 1 } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 1 } \\ { 0 } & { 0 } & { 1 } \end{array} \right) \quad \quad B = \left( \begin{array} { l l l } { 1 } & { 1 } & { 0 } \\ { 0 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} \right) \quad \quad C = \left( \begin{array} { l l l } { 1 } & { 0 } & { 1 } \\ { 0 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} \right)
 $$
 
 $$
-D =  \begin{array} { l l l } { { \left( { \begin{array} { l l l } { 1 } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 2 } \\ { 0 } & { 0 } & { 1 } \end{array} } \right) } } &  \quad E = { \begin{array} { l l l } { { \left( { \begin{array} { l l l } { 1 } & { 0 } & { 0 } \\ { 1 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} } \right) } } & { \quad F = { \begin{array} { l l l } { { \left( { \begin{array} { l l l } { 1 } & { 1 } & { 1 } \\ { 0 } & { 1 } & { 1 } \\ { 0 } & { 0 } & { 1 } \end{array} } \right) } } \end{array} } } \end{array} } \end{array}
+D = \left( \begin{array} { l l l } { 1 } & { 0 } & { 0 } \\ { 0 } & { 1 } & { 2 } \\ { 0 } & { 0 } & { 1 } \end{array} \right) , \quad \quad E = \left( \begin{array} { l l l } { 1 } & { 0 } & { 0 } \\ { 1 } & { 1 } & { 0 } \\ { 0 } & { 0 } & { 1 } \end{array} \right) , \quad \quad F = \left( \begin{array} { l l l } { 1 } & { 1 } & { 1 } \\ { 0 } & { 1 } & { 1 } \\ { 0 } & { 0 } & { 1 } \end{array} \right)
 $$
 
-Which pairs of these matrices are similar over R? You must fully justify your answer.
+Which pairs of these matrices are similar over $\mathbb { R }$ ? You must fully justify your answer.
 
 Problem 5. Let A, B two positive definite $2 \times 2$ matrices. Prove or disprove:
 
@@ -41,10 +41,10 @@ Problem 5. Let A, B two positive definite $2 \times 2$ matrices. Prove or dispro
 Problem 6. Compute the determinant of the following matrix:
 
 $$
-\left( \begin{array} { c c c c c } { 1 } & { 2 } & { 4 } & { 8 } & { 1 6 } \\ { 2 } & { 4 } & { 8 } & { 1 6 } & { 1 } \\ { 4 } & { 8 } & { 1 6 } & { 1 } & { 2 } \\ { 8 } & { 1 6 } & { 1 } & { 2 } & { 4 } \\ { 1 6 } & { 1 } & { 2 } & { 4 } & { 8 } \end{array} \right)
+\left( \begin{array} { c c c c c } { 1 } & { 2 } & { 4 } & { 8 } & { 16 } \\ { 2 } & { 4 } & { 8 } & { 16 } & { 1 } \\ { 4 } & { 8 } & { 16 } & { 1 } & { 2 } \\ { 8 } & { 16 } & { 1 } & { 2 } & { 4 } \\ { 16 } & { 1 } & { 2 } & { 4 } & { 8 } \end{array} \right)
 $$
 
-Problem 7. Prove that for each $p \in \mathbb N$ , the infinite series
+Problem 7. Prove that for each $p \in \mathbb { N }$ , the infinite series
 
 $$
 \sum _ { n = 1 } ^ { \infty } { \frac { \sin ( \pi n / p ) } { n } }
@@ -58,11 +58,11 @@ $$
 x _ { n + 1 } = \sin ( x _ { n } ) , \quad x _ { 1 } = 1 .
 $$
 
-Prove that lim $1 _ { n  \infty } { \sqrt { n } } x _ { n }$ exists and compute its value.
+Prove that $\operatorname* { l i m } _ { n \to \infty } { \sqrt { n } } x _ { n }$ exists and compute its value.
 
-Hint: Show that $\frac { 1 } { x _ { n + 1 } ^ { 2 } } \ : - \ : \frac { 1 } { x _ { n } ^ { 2 } }$ converges to a constant.
+Hint: Show that $\frac { 1 } { x _ { n + 1 } ^ { 2 } } - \frac { 1 } { x _ { n } ^ { 2 } }$ converges to a constant.
 
-Problem 9. Let $f \colon  { \mathbb { R } } \to  { \mathbb { R } }$ be non-decreasing (but not necessarily continuous). Prove that $f$ is Riemann integrable on any finite interval $( a , b ) \subset \mathbb { R }$ Note: If you choose to approach this via Lebesgue integration theory, provide complete statements including proofs of all facts you are using.
+Problem 9. Let $f \colon \mathbb { R } \to \mathbb { R }$ be non-decreasing (but not necessarily continuous). Prove that $f$ is Riemann integrable on any finite interval $( a , b ) \subset \mathbb { R }$ Note: If you choose to approach this via Lebesgue integration theory, provide complete statements including proofs of all facts you are using.
 
 Problem 10. Let $n \in \mathbb { N }$ and let $U \subset \mathbb { R } ^ { n }$ be non-empty, open and connected. Suppose that $f \colon U \to \mathbb { R }$ is such that all the first partial derivatives of $f$ (exist and) vanish at each point of U. Prove that $f$ is constant.
 
@@ -72,8 +72,8 @@ Hint: Consider $x \not \in f ( X )$ and follow the iterates of $f$ on x.
 
 Problem 12. Let $\mathcal { F }$ be a family of real-valued functions on a compact metric space taking values in $[ - 1 , 1 ]$ . Prove that if $\mathcal { F }$ is equicontinuous, then
 
-is continuous.
+$$
+g ( x ) = \operatorname* { s u p } \{ f ( x ) \colon f \in \mathcal { F } \}
+$$
 
-$$
-g ( x ) = \operatorname* { s u p } \{ f ( x ) \colon f \in { \mathcal { F } } \}
-$$
+is continuous.

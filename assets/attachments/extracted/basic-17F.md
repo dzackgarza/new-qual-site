@@ -22,16 +22,16 @@ Problem 2. Let $n \geq 1$ be an integer and A and B be n × n-matrices.
 
 (b) [5 pts] Is the result true without assuming invertibility? Prove your claim.
 
-Problem 3. [10 pts] Solve the following linear system of differential equations, for two functions $x _ { i } : \mathbb { R }  \mathbb { R }$ , for i = 1 and 2, with derivatives $\begin{array} { r } { x _ { i } ^ { \prime } ( t ) = \frac { d x _ { i } } { d t } ( t ) ; } \end{array}$
+Problem 3. [10 pts] Solve the following linear system of differential equations, for two functions $x _ { i } : \mathbb { R } \to \mathbb { R }$ , for i = 1 and 2, with derivatives $\begin{array} { r } { x _ { i } ^ { \prime } ( t ) = \frac { d x _ { i } } { d t } ( t ) ; } \end{array}$
 
 $$
-\left\{ \begin{array} { r c l l } { { x _ { 1 } ^ { \prime } } } & { { = } } & { { 6 x _ { 1 } } } & { { - \phantom { } x _ { 2 } } } \\ { { x _ { 2 } ^ { \prime } } } & { { = } } & { { 2 x _ { 1 } } } & { { + 3 x _ { 2 } } } \end{array} \right.
+\left\{ \begin{array} { r c l l } { { x _ { 1 } ^ { \prime } } } & { { = } } & { { 6 x _ { 1 } } } & { { - x _ { 2 } } } \\ { { x _ { 2 } ^ { \prime } } } & { { = } } & { { 2 x _ { 1 } } } & { { + 3 x _ { 2 } } } \end{array} \right.
 $$
 
-Problem 4. Let V be a vector space over the field $F = \mathbb { R }$ and let $V ^ { * } = \mathrm { L i n } _ { F } ( V , F )$ be the dual space (of F -linear maps from V to F ). Let $\boldsymbol { B } = \{ e _ { i } \} _ { i \in I }$ be a basis of V . For each $i \in I .$ , define the dual forms $e _ { i } ^ { \# } \in V ^ { * }$ by the rule
+Problem 4. Let V be a vector space over the field $F = \mathbb { R }$ and let $V ^ { * } = \mathrm { L i n } _ { F } ( V , F )$ be the dual space (of F -linear maps from V to F ). Let $\boldsymbol { B } = \{ e _ { i } \} _ { i \in I }$ be a basis of V . For each $i \in I$ , define the dual forms $e _ { i } ^ { \# } \in V ^ { * }$ by the rule
 
 $$
-e _ { i } ^ { \# } ( e _ { j } ) = { \left\{ \begin{array} { l l } { 1 } & { { \mathrm { i f ~ } } i = j , } \\ { 0 } & { { \mathrm { e l s e } } . } \end{array} \right. }
+e _ { i } ^ { \# } ( e _ { j } ) = { \left\{ \begin{array} { l l } { 1 } & { \text { if } } i = j , \\ { 0 } & { \text { else } } . \end{array} \right. }
 $$
 
 (a) [2 pts] Show that the vectors $\{ e _ { i } ^ { \# } \} _ { i \in I }$ are linearly independent in $V ^ { * }$
@@ -50,11 +50,11 @@ Prove all claims in full detail.
 
 Problem 6. For each of the following three fields F (separately), is it true that every symmetric matrix $A \in \mathrm { M } _ { 2 \times 2 } ( F )$ is diagonalizable?
 
-(a) [2 pts] For F = R.
+(a) [2 pts] For $F = \mathbb { R }$ .
 
 (b) [3 pts] For $F = \mathbb { C }$
 
-(c) [5 pts] For $F = \mathbb { F } _ { 3 } = \mathbb { Z } / 3 \mathbb { Z } .$ the field with 3 elements.
+(c) [5 pts] For $F = \mathbb { F } _ { 3 } = \mathbb { Z } / 3 \mathbb { Z }$ , the field with 3 elements.
 
 Supply proofs/counterexamples (or cite the relevant theorems) for all parts of this problem.
 
@@ -64,7 +64,7 @@ $$
 \operatorname* { l i m } _ { n \to \infty } n a _ { n } = 0 .
 $$
 
-Problem 8. Let $a < b$ be real numbers and $f \colon [ a , b ]  \mathbb { R }$ a function such that $L ( x ) = \operatorname* { l i m } _ { y \to x } f ( y )$ exists for all $x \in [ a , b ]$ (with one-sided limits at $x = a , b )$ .
+Problem 8. Let $a < b$ be real numbers and $f \colon [ a , b ] \to \mathbb { R }$ a function such that $L ( x ) = \operatorname* { l i m } _ { y \to x } f ( y )$ exists for all $x \in [ a , b ]$ (with one-sided limits at $x = a , b )$ .
 
 (a) [4 pts] Prove that L is continuous on [a, b].
 
@@ -80,9 +80,9 @@ $$
 
 Assuming that $\textstyle \sum _ { n = 1 } ^ { \infty } c _ { n } < \infty$ , prove that f has a unique fixed point in X.
 
-Problem 10. [10 pts] Let $a < b$ be real numbers and $f \colon [ a , b ]  \mathbb { R }$ a continuous function such that $\textstyle \int _ { a } ^ { b } f ( x ) x ^ { n } \mathrm { d } x = 0$ for each integer $n \geq 0$ . Prove that $f = 0$
+Problem 10. [10 pts] Let $a < b$ be real numbers and $f \colon [ a , b ] \to \mathbb { R }$ a continuous function such that $\textstyle \int _ { a } ^ { b } f ( x ) x ^ { n } \mathrm { d } x = 0$ for each integer $n \geq 0$ . Prove that $f = 0$
 
-Problem 11. [10 pts] Prove Young’s inequality: Let $p , q \in ( 1 , \infty )$ obey $\textstyle { \frac { 1 } { p } } + { \frac { 1 } { q } } = 1$ Then for each $a , b \geq 0$ ,
+Problem 11. [10 pts] Prove Young’s inequality: Let $p , q \in ( 1 , \infty )$ obey $\textstyle { \frac { 1 } { p } } + { \frac { 1 } { q } } = 1$ . Then for each $a , b \geq 0$ ,
 
 $$
 a b \leq { \frac { a ^ { p } } { p } } + { \frac { b ^ { q } } { q } } .
@@ -90,4 +90,4 @@ $$
 
 Problem 12. [10 pts] Let X be a compact metric space and $C ( X )$ the space of continuous real-valued functions on X endowed with the supremum norm. Let ${ \mathcal { F } } \subset C ( X )$ be non-empty. Prove the following version of Arzel\`a-Ascoli’s theorem:
 
-F is compact $\Leftrightarrow \_ { \mathcal { F } }$ is closed, bounded and equicontinuous Give precise definitions of all terms used in this equivalence.
+F is compact $\Leftrightarrow \mathcal { F }$ is closed, bounded and equicontinuous Give precise definitions of all terms used in this equivalence.

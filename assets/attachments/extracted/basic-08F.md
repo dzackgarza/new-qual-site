@@ -4,7 +4,7 @@
 
 Solve any 10 of the following 12 problems. You will not receive credit for more than 10 problems. Indicate which problems you wish to be graded by circling the corresponding numbers.
 
-For which of the values $a = 0 , 1 , 2$ is the function $f ( t ) = t ^ { a }$ uniformly continuous on $\lbrack 0 , \infty ) \ ?$ Prove your assertions.
+(1) For which of the values $a = 0 , 1 , 2$ is the function $f ( t ) = t ^ { a }$ uniformly continuous on $\lbrack 0 , \infty ) \ ?$ Prove your assertions.
 
 (2) Suppose that A is a non-empty connected subset of $\mathbb { R } ^ { 2 }$ (a) Prove that if A is open, then it is path connected.
 
@@ -20,9 +20,9 @@ $$
 
 (b) Is (a) true if K is just closed? Prove your assertion.
 
-(5) A rearrangement of a series $\textstyle \sum _ { n = 1 } ^ { \infty } a _ { n }$ is a series of the form $\scriptstyle \sum _ { k = 1 } ^ { \infty } a _ { n ( k ) }$ , were n : $\mathbb { N } \to \mathbb { N }$ is a bijection (i.e. one-to-one and onto). Show that there is a rearrangement of the series $\scriptstyle \sum _ { n = 1 } ^ { \infty } { \frac { ( - 1 ) ^ { n } } { n } }$ which converges to π.
+(5) A rearrangement of a series $\textstyle \sum _ { n = 1 } ^ { \infty } a _ { n }$ is a series of the form $\scriptstyle \sum _ { k = 1 } ^ { \infty } a _ { n ( k ) }$ , where n : $\mathbb { N } \to \mathbb { N }$ is a bijection (i.e. one-to-one and onto). Show that there is a rearrangement of the series $\scriptstyle \sum _ { n = 1 } ^ { \infty } { \frac { ( - 1 ) ^ { n } } { n } }$ which converges to π.
 
-(6) Suppose that V is an n-dimensional vector space $( n \in \mathbb { N } )$ and that $T : { \bar { V } }  V$ is a linear mapping. Prove that
+(6) Suppose that V is an n-dimensional vector space $( n \in \mathbb { N } )$ and that $T : V \to V$ is a linear mapping. Prove that
 
 $$
 \mathrm { d i m \ k e r } T + \mathrm { d i m \ r a n g e } T = n
@@ -30,15 +30,15 @@ $$
 
 Note: Do not just quote a standard theorem.
 
-7Suppose that $T = [ t _ { i j } ]$ is a complex n × n matrix, and that $\lambda _ { 1 } , \ldots , \lambda _ { r }$ are distinct eigenvalues of $T ,$ with corresponding non-zero eigenvectors $v _ { 1 } , \ldots , v _ { r }$ Show that $v _ { 1 } , \ldots , v _ { r }$ are linearly independent.
+(7) Suppose that $T = [ t _ { i j } ]$ is a complex n × n matrix, and that $\lambda _ { 1 } , \ldots , \lambda _ { r }$ are distinct eigenvalues of $T ,$ with corresponding non-zero eigenvectors $v _ { 1 } , \ldots , v _ { r }$ Show that $v _ { 1 } , \ldots , v _ { r }$ are linearly independent.
 
-(8) Must the eigenvectors of a linear transformation $\ b { \mathscr { T } } : \mathbb { C } ^ { n }  \mathbb { C } ^ { n }$ span Cn? Prove your assertion.
+(8) Must the eigenvectors of a linear transformation $T : \mathbb { C } ^ { n } \to \mathbb { C } ^ { n }$ span $\mathbb { C } ^ { n }$? Prove your assertion.
 
 (9) (a) Prove that any linear transformation $T : \mathbb { C } ^ { n } \to \mathbb { C } ^ { n }$ must have an eigenvector.
 
-(b) Is (a) true for any linear transformation $T : \mathbb { R } ^ { n }  \mathbb { R } ^ { n } ?$
+(b) Is (a) true for any linear transformation $T : \mathbb { R } ^ { n } \to \mathbb { R } ^ { n } ?$
 
-10) Given $v = ( v _ { 1 } , \ldots , v _ { n } ) \in \mathbb { R } ^ { n }$ , we let $\| v \| = ( \sum | v _ { j } | ^ { 2 } ) ^ { 1 / 2 }$ . If $f =$ $( f _ { 1 } , \ldots , f _ { n } ) : [ a , b ] \to \mathbb { R } ^ { n }$ is a continuous function, we define
+(10) Given $v = ( v _ { 1 } , \ldots , v _ { n } ) \in \mathbb { R } ^ { n }$ , we let $\| v \| = ( \sum | v _ { j } | ^ { 2 } ) ^ { 1 / 2 }$ . If $f =$ $( f _ { 1 } , \ldots , f _ { n } ) : [ a , b ] \to \mathbb { R } ^ { n }$ is a continuous function, we define
 
 $$
 \int _ { a } ^ { b } f ( t ) d t = \left( \int _ { a } ^ { b } f _ { 1 } ( t ) d t , \dots , \int _ { a } ^ { b } f _ { n } ( t ) d t \right) .

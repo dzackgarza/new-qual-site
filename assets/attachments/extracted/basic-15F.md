@@ -14,35 +14,35 @@ $$
 a _ { n + m } \leq a _ { n } + a _ { m } , \qquad m , n \geq 1 .
 $$
 
-Prove that lim $\operatorname { i } _ { \eta , \to \infty } { \frac { a _ { \pi } } { \pi } }$ exists by showing
+Prove that $\operatorname* { l i m } _ { n \to \infty } { \frac { a _ { n } } { n } }$ exists by showing
 
 $$
-\operatorname* { l i m } _ { \pi \to \infty } { \frac { a _ { n } } { \pi } } = \operatorname* { i n f } _ { \pi \geq 1 } { \frac { a _ { n } } { \pi } }
+\operatorname* { l i m } _ { n \to \infty } { \frac { a _ { n } } { n } } = \operatorname* { i n f } _ { n \geq 1 } { \frac { a _ { n } } { n } }
 $$
 
 Hint: Treat separately liminf and limsup.
 
-Problem 2. Let $a , b \in \mathbb { R }$ obey $a < b .$ Show that if $g , h \colon [ a , b ]  \mathbb { R }$ are continuous with $h \geq 0 ,$ then there is $c \in [ a , b ]$ such that
+Problem 2. Let $a , b \in \mathbb { R }$ obey $a < b .$ Show that if $g , h \colon [ a , b ] \to \mathbb { R }$ are continuous with $h \geq 0 ,$ then there is $c \in [ a , b ]$ such that
 
 $$
 \int _ { a } ^ { b } g ( x ) h ( x ) \mathrm { d } x = g ( c ) \int _ { a } ^ { b } h ( x ) \mathrm { d } x
 $$
 
-Problem 3. Let $\{ f _ { n } \}$ be a sequence of continuous functions $f _ { n } \colon [ - 1 , 1 ] \to [ 0 , 1 ]$ such that, for each ${ \mathfrak { x } } \in [ - 1 , 1 ]$
+Problem 3. Let $\{ f _ { n } \}$ be a sequence of continuous functions $f _ { n } \colon [ - 1 , 1 ] \to [ 0 , 1 ]$ such that, for each $x \in [ - 1 , 1 ]$
 
-(1) the sequence of numbers $\{ f _ { \mathfrak { n } } ( \mathfrak { x } ) \} _ { \mathfrak { n } = 1 } ^ { \infty }$ is non-increasing, and
+(1) the sequence of numbers $\{ f _ { n } ( x ) \} _ { n = 1 } ^ { \infty }$ is non-increasing, and
 
-(2) $\begin{array} { r } { \operatorname* { l i m } _ { \eta _ { k } \to \infty } f _ { \eta _ { k } } ( x ) = 0 . } \end{array}$
+(2) $\begin{array} { r } { \operatorname* { l i m } _ { n \to \infty } f _ { n } ( x ) = 0 . } \end{array}$
 
 Define
 
 $$
-g _ { m } ( x ) : = \sum _ { m = 1 } ^ { n } ( - 1 ) ^ { m } f _ { m } ( x ) .
+g _ { n } ( x ) : = \sum _ { m = 1 } ^ { n } ( - 1 ) ^ { m } f _ { m } ( x ) .
 $$
 
-Prove that $g _ { \mathfrak { r } } ( x )$ converges to some $g ( x ) \in \mathbb { R }$ for each x $\in [ - 1 , 1 ]$ and that the function $g \colon [ - 1 , 1 ] $ R thus defined is continuous on $[ - 1 , 1 ]$
+Prove that $g _ { n } ( x )$ converges to some $g ( x ) \in \mathbb { R }$ for each x $\in [ - 1 , 1 ]$ and that the function $g \colon [ - 1 , 1 ] \to \mathbb { R }$ thus defined is continuous on $[ - 1 , 1 ]$
 
-Problem 4. Let $f _ { n } \colon [ 0 , \infty ) \to \mathbb { R }$ bc functions defined recursively by $f _ { 1 } ( x ) : = 0$ and
+Problem 4. Let $f _ { n } \colon [ 0 , \infty ) \to \mathbb { R }$ be functions defined recursively by $f _ { 1 } ( x ) : = 0$ and
 
 $$
 f _ { n + 1 } ( x ) : = \mathrm { e } ^ { - 2 x } + \int _ { 0 } ^ { x } f _ { n } ( t ) \mathrm { e } ^ { - 2 t } \mathrm { d } t , \qquad n \geq 1 .
@@ -53,7 +53,7 @@ Show that $f ( x ) : = \operatorname* { l i m } _ { n \to \infty } f _ { n } ( x
 Problem 5. Let $F ( x , y , z )$ be a continuously differentiable function with nonvanishing partial derivatives at point (0, 0, 0). Define functions
 
 $$
-x = x ( y , z ) , \quad y = y ( x , z ) \quad { \mathrm { a n d } } \quad z = z ( x , y )
+x = x ( y , z ) , \quad y = y ( x , z ) \quad \text { and } \quad z = z ( x , y )
 $$
 
 as the solutions of the equation $F ( x , y , z ) = F ( 0 , 0 , 0 )$ in the neighborhood of point (0, 0) in the corresponding variables. Prove that
@@ -64,17 +64,17 @@ $$
 
 where the three partial derivatives are taken at the point (0, 0) in the corresponding pair of variables.
 
-Problem 6. Let $X : = \mathbb { R } \setminus \{ 0 \}$ . Find a metric $\rho$ on $X$ with the following properties: (1) $( X , p )$ is a complete metric space, and
+Problem 6. Let $X : = \mathbb { R } \setminus \{ 0 \}$ . Find a metric $\rho$ on $X$ with the following properties: (1) $( X , \rho )$ is a complete metric space, and
 
 if $\{ x _ { n } \} _ { n = 1 } ^ { \infty } \subset X$ and $x \in X$ , then
 
 $$
-\operatorname* { l i m } _ { n \to \infty } | x _ { n } - x | = 0 \quad \Leftrightarrow \quad x _ { n } \to x \mathrm { ~ i n ~ } ( X , \rho ) .
+\operatorname* { l i m } _ { n \to \infty } | x _ { n } - x | = 0 \quad \Leftrightarrow \quad x _ { n } \to x \text { in } ( X , \rho ) .
 $$
 
 Prove both properties, as well as all of your other assertions, in full detail.
 
-Problem 7. Let $A , B$ be two $4 \times 5$ matrices of rank ${ \bf 3 } ,$ and let $C = A ^ { T } B$ (this is $\mathsf { a } \ 5 \times 5$ matrix). Find all possible values r for the rank of C. To be precise, if the rank r is possible, find an explicit example of such matrices. Then prove that all other values are impossible.
+Problem 7. Let $A , B$ be two $4 \times 5$ matrices of rank $3 ,$ and let $C = A ^ { T } B$ (this is a $5 \times 5$ matrix). Find all possible values r for the rank of C. To be precise, if the rank r is possible, find an explicit example of such matrices. Then prove that all other values are impossible.
 
 Problem 8. Find $M ^ { - 2 }$ where
 
@@ -82,9 +82,9 @@ $$
 M = \left( \begin{array} { c c c c } { { 2 } } & { { 3 } } & { { 2 } } & { { 1 } } \\ { { 3 } } & { { 6 } } & { { 4 } } & { { 2 } } \\ { { 4 } } & { { 8 } } & { { 6 } } & { { 3 } } \\ { { 2 } } & { { 4 } } & { { 3 } } & { { 1 } } \end{array} \right) .
 $$
 
-Problem 9. Let A be a $n \times n$ real matrix such that $A ^ { \Sigma } = - A .$ Prove that $\operatorname* { d e t } ( A ) \geq 0 .$
+Problem 9. Let A be a $n \times n$ real matrix such that $A ^ { T } = - A .$ Prove that $\operatorname* { d e t } ( A ) \geq 0 .$
 
-Problem 10. Let $F , G : \mathbb { R } ^ { n }  \mathbb { R } ^ { n }$ be two linear operators. Recall that
+Problem 10. Let $F , G : \mathbb { R } ^ { n } \to \mathbb { R } ^ { n }$ be two linear operators. Recall that
 
 $$
 \exp ( F ) = \sum _ { k = 0 } ^ { \infty } { \frac { 1 } { k ! } } F ^ { k } .
@@ -98,9 +98,9 @@ $$
 
 b) Give an example of non-commuting linear operators when this equality fails.
 
-Problem 11. Let $T : V  V$ be a linear operator such that $T ^ { 1 8 } = 0$ and $T ^ { 5 } \neq 0$ Suppose $V \simeq \mathbb { R } ^ { 6 }$ Prove that there is no linear operator $S : V  V$ such that $S ^ { 2 } = T$ Does the answer change if $V \simeq \mathbb { R } ^ { 1 2 } ?$
+Problem 11. Let $T : V \to V$ be a linear operator such that $T ^ { 18 } = 0$ and $T ^ { 5 } \neq 0$ Suppose $V \simeq \mathbb { R } ^ { 6 }$ Prove that there is no linear operator $S : V \to V$ such that $S ^ { 2 } = T$ Does the answer change if $V \simeq \mathbb { R } ^ { 12 } ?$
 
-Problem 12. Prove that the following n X n matrix M is positive definite:
+Problem 12. Prove that the following $n \times n$ matrix M is positive definite:
 
 $$
 M = \left( \begin{array} { c c c c c } { { 2 } } & { { 1 } } & { { 1 } } & { { \cdots } } & { { 1 } } \\ { { 1 } } & { { 3 } } & { { 1 } } & { { \cdots } } & { { 1 } } \\ { { 1 } } & { { 1 } } & { { 4 } } & { { \cdots } } & { { 1 } } \\ { { \vdots } } & { { \vdots } } & { { \vdots } } & { { \ddots } } & { { \vdots } } \\ { { 1 } } & { { 1 } } & { { 1 } } & { { \cdots } } & { { n + 1 } } \end{array} \right) .

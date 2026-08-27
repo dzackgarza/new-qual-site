@@ -1,6 +1,6 @@
 Basic Examination, Spring 2009
 
-26pm, Saturday, March 28, 2009
+2-6 pm, Saturday, March 28, 2009
 
 Instructions: Work any 10 problems. All problems are worth ten points; parts of a problem do not carry equal weight. You must tell us which 10 problems you want us to grade.
 
@@ -22,7 +22,7 @@ $$
 A = { \left[ \begin{array} { l l } { 2 } & { 1 } \\ { 0 } & { { \sqrt { 3 } } } \end{array} \right] }
 $$
 
-That ${ \mathrm { i } } \mathbf { s } ,$ determine the maximum value of the length of Ax over all unit vectors x.
+That is, determine the maximum value of the length of Ax over all unit vectors x.
 
 Problem 3. We wish to find a quadratic polynomial P obeying
 
@@ -32,9 +32,7 @@ $$
 
 where ' denotes differentiation.
 
-$$
-( \alpha , \beta , \gamma , \delta )
-$$
+(a) Under what condition on $( \alpha , \beta , \gamma , \delta )$ can the constraints be met?
 
 (b) When the constraints are met, what is P? Is it unique? Explain your answer.
 
@@ -46,21 +44,21 @@ Problem 4. Let $( X , d )$ be an arbitrary metric space.
 (e) Suppose X is complete. Show that X is compact in the sense of part (a) if and only if   
 for every $r > 0 ,$ X can be covered by finitely many balls of radius r.
 
-Problem 5. Compute $e ^ { \ b { A } t }$ when
+Problem 5. Compute $e ^ { A t }$ when
 
 $$
 A = { \left[ \begin{array} { l l l } { 2 } & { 1 } & { 5 } \\ { 0 } & { 1 } & { 3 } \\ { 1 } & { 0 } & { 1 } \end{array} \right] }
 $$
 
-Recall that $e ^ { \ b { A } t }$ is defined by the property that a smooth vector function $x ( t )$ obeys
+Recall that $e ^ { A t }$ is defined by the property that a smooth vector function $x ( t )$ obeys
 
 $$
 \frac { d x } { d t } ( t ) = A x ( t ) \quad \Longleftrightarrow \quad x ( t ) = e ^ { A t } x ( 0 )
 $$
 
-Problem 6. Show that a continuous function $f : \{ 0 , 1 \} \to \mathbb { R }$ is uniformly continuous if and only if there is a continuous function $g : [ 0 , 1 ]  \mathbb { R }$ that obeys $f ( x ) = g ( x )$ for all $x \in [ 0 , 1 )$
+Problem 6. Show that a continuous function $f : [ 0 , 1 ) \to \mathbb { R }$ is uniformly continuous if and only if there is a continuous function $g : [ 0 , 1 ] \to \mathbb { R }$ that obeys $f ( x ) = g ( x )$ for all $x \in [ 0 , 1 )$
 
-Problem 7. (a) Define what it means for $f : \mathbb { R } ^ { n }  \mathbb { R } ^ { m }$ to be differentiable at a point $a \in \mathbb { R } ^ { n }$
+Problem 7. (a) Define what it means for $f : \mathbb { R } ^ { n } \to \mathbb { R } ^ { m }$ to be differentiable at a point $a \in \mathbb { R } ^ { n }$
 
 (b) Using this definition, formulate and prove an appropriate form of the chain rule, that is, a theorem describing the derivative of $g ( f ( x ) )$ at $x = a$
 
@@ -70,7 +68,7 @@ $$
 \langle A , B \rangle = \mathrm { t r } ( A B ^ { T } )
 $$
 
-defines an inner product on $M _ { n \times n } ( \mathbb { R } )$ . More precisely, show that it obeys the axioms of an inner product. Note: tr denotes the trace of a matrix and $_ { T }$ denotes the transpose.
+defines an inner product on $M _ { n \times n } ( \mathbb { R } )$ . More precisely, show that it obeys the axioms of an inner product. Note: tr denotes the trace of a matrix and the superscript $T$ denotes the transpose.
 
 (b) Given $C \in M _ { n \times n } ( \mathbb { R } )$ , we define a linear transformation
 
@@ -101,17 +99,17 @@ Problem 11. (a) Explain the following (overly informal) statement:
 
 Every matrix can be brought to Jordan normal form; moreover the normal form is essentially unique.
 
-No proofs are required; however, all statements must be clear and precise. All required hypotheses must be included. The meaning of the phrases 'brought $\tan ^ { \ ' }$ , 'Jordan normal form', and 'essentially unique' must be defined explicitly.
+No proofs are required; however, all statements must be clear and precise. All required hypotheses must be included. The meaning of the phrases 'brought to Jordan normal form', 'Jordan normal form', and 'essentially unique' must be defined explicitly.
 
 (b) Define the minimal polynomial of a matrix. How may it be determined for a matrix in Jordan normal form?
 
-Problem 12. Let $F : \mathbb { R } ^ { 3 }  \mathbb { R } ^ { 3 }$ and $\rho : \mathbb { R } ^ { 3 }  \mathbb { R }$ be smooth functions. Show that
+Problem 12. Let $F : \mathbb { R } ^ { 3 } \to \mathbb { R } ^ { 3 }$ and $\rho : \mathbb { R } ^ { 3 } \to \mathbb { R }$ be smooth functions. Show that
 
 $$
 \operatorname { d i v } ( F ) = \rho
 $$
 
-for all points $( x , y ) \in \mathbb { R } ^ { 3 }$ if and only if
+for all points $( x , y , z ) \in \mathbb { R } ^ { 3 }$ if and only if
 
 $$
 \iint _ { \partial \Omega } F \cdot d S = \iiint _ { \Omega } \rho d x d y d z

@@ -50,7 +50,7 @@ $$
 
 where $\mathbb { R } ^ { n }$ is identified with the set of real column vectors, and xt denotes the transpose of x. $\mathbf { x } ^ { t }$
 
-5. Let T be a normal linear operator on a finite dimensional complex inner product linear space V. Prove that if v is an eigenvector of T, then v is also an eigenvector of its adjoint $T ,$ $T ^ { * }$
+5. Let T be a normal linear operator on a finite dimensional complex inner product linear space V. Prove that if v is an eigenvector of T, then v is also an eigenvector of its adjoint $T ^ { * }$
 
 6. Consider the integral equation
 
@@ -58,7 +58,7 @@ $$
 y ( t ) = y _ { 0 } + \int _ { 0 } ^ { t } f ( s , y ( s ) ) d s\tag{*}
 $$
 
-where $f ( t , y )$ is continuous on $[ 0 , T ] \times \mathtt { R }$ and is Lipschitz in y with Lipschitz constant K. Assume that you have shown that the iterates defined by
+where $f ( t , y )$ is continuous on $[ 0 , T ] \times \mathbb { R }$ and is Lipschitz in y with Lipschitz constant K. Assume that you have shown that the iterates defined by
 
 $$
 y ^ { n } ( t ) = y _ { 0 } + \int _ { 0 } ^ { t } f ( s , y ^ { n - 1 } ( s ) ) d s , \quad y ^ { 0 } ( t ) \equiv y _ { 0 }
@@ -66,7 +66,7 @@ $$
 
 converge uniformly to a solution $y ( t )$ of $( ^ { * } )$ . Show that if $Y ( t )$ is a solution of $( ^ { * } )$ and satisfies $| Y ( t ) - y _ { 0 } | \le C$ for some constant $C$ and all $t \in [ 0 , T ]$ , then $Y ( t ) \equiv y ( t )$ on [0, T].
 
-7. Let $f : \mathbb { R }  \mathbb { R }$ be a twice continuously differentiable function with $f ^ { \prime \prime }$ uniformly bounded, and with a simple root at $x ^ { * } \ ( \mathrm { i . e . , } \ f ( x ^ { * } ) = 0 , f ^ { \prime } ( x ^ { * } ) \neq 0 )$ . Consider the fixed point iteration
+7. Let $f : \mathbb { R } \to \mathbb { R }$ be a twice continuously differentiable function with $f ^ { \prime \prime }$ uniformly bounded, and with a simple root at $x ^ { * } \ ( \mathrm { i . e . , } \ f ( x ^ { * } ) = 0 , f ^ { \prime } ( x ^ { * } ) \neq 0 )$ . Consider the fixed point iteration
 
 $$
 x _ { n } = F ( x _ { n - 1 } ) \qquad { \mathrm { w h e r e } } \qquad F ( x ) = x - { \frac { f ( x ) } { f ^ { \prime } ( x ) } } .
@@ -80,7 +80,7 @@ $$
 
 8. Suppose the functions $f _ { n }$ are twice continuously differentiable on [0, 1] and satisfy
 
-lim fn(x) = f(x) for all $x \in [ 0 , 1 ]$ , and n→∞
+$\lim _ { n \to \infty } f _ { n } ( x ) = f ( x )$ for all $x \in [ 0 , 1 ]$ , and n→∞
 
 $$
 | f _ { n } ^ { \prime } ( x ) | \leq 1 , \quad | f _ { n } ^ { \prime \prime } ( x ) | \leq 1 \quad { \mathrm { f o r ~ a l l ~ } } x \in [ 0 , 1 ] , \ n \geq 1 .
@@ -88,7 +88,7 @@ $$
 
 Prove that $f ( x )$ is continuously differentiable on [0, 1].
 
-9. (a) Define $^ { 6 6 } f$ is Riemann integrable on $[ 0 , 1 ] "$
+9. (a) Define "$f$ is Riemann integrable on $[ 0 , 1 ]$"
 
 (b) Prove that every continuous function on [0, 1] is Riemann integrable.
 
@@ -98,11 +98,11 @@ Prove that $f ( x )$ is continuously differentiable on [0, 1].
 
 (ii) $f _ { n } ( x )$ is increasing in x for every $n \geq 1$
 
-(iii) $\begin{array} { r } { \operatorname* { l i m } _ { n  \infty } f _ { n } ( x ) = f ( x ) } \end{array}$ for each $x \in \mathbb { R }$ , where f is continuous on R.
+(iii) $\lim _ { n \to \infty } f _ { n } ( x ) = f ( x )$ for each $x \in \mathbb { R }$ , where f is continuous on $\mathbb { R }$.
 
-(iv) lim $\mathfrak { i } _ { x \to - \infty } f ( x ) = 0$ and $\begin{array} { r } { \operatorname* { l i m } _ { x \to \infty } f ( x ) = 1 } \end{array}$
+(iv) $\lim _ { x \to - \infty } f ( x ) = 0$ and $\lim _ { x \to \infty } f ( x ) = 1$
 
-Show that $f _ { n } ( x )  f ( x )$ uniformly on R.
+Show that $f _ { n } ( x ) \to f ( x )$ uniformly on $\mathbb { R }$.
 
 11. (a) Consider the equations
 
@@ -114,7 +114,7 @@ Can these equations be solved uniquely for $u , v$ in terms of $x , y$ in a neig
 
 (b) Give an example in which the conclusion of the implicit function theorem is true but the hypothesis is not.
 
-12. Let $c _ { 0 }$ be the normed space of real sequences $\boldsymbol { x } = ( x _ { 1 } , x _ { 2 } , \ldots )$ such that $\scriptstyle \operatorname* { l i m } _ { k \to 0 } x _ { k } = 0$ with the supremum norm $\left| \left| \boldsymbol { x } \right| \right| = \operatorname* { s u p } _ { k } \left| x _ { k } \right| .$
+12. Let $c _ { 0 }$ be the normed space of real sequences $\boldsymbol { x } = ( x _ { 1 } , x _ { 2 } , \ldots )$ such that $\lim _ { k \to \infty } x _ { k } = 0$ with the supremum norm $\left| \left| \boldsymbol { x } \right| \right| = \operatorname* { s u p } _ { k } \left| x _ { k } \right| .$
 
 (a) Show that $c _ { 0 }$ is complete.
 

@@ -8,11 +8,11 @@ b) Is the set E in part a) contained in the closure of $\{ x \in S : d ( x , y )
 
 Prove your answers.
 
-2. Let $f : ( a , b ) $ R be continuous and differentiable in $\left( a , b \right) \backslash \left\{ c \right\}$ . If $\begin{array} { r } { \operatorname* { l i m } _ { x  c } f ^ { \prime } ( x ) = d \in \mathbb { R } } \end{array}$ , show that f is differentiable at $^ { c , }$ and ${ f ^ { \prime } } ( c ) = d .$
+2. Let $f : ( a , b ) \to \mathbb { R }$ be continuous and differentiable in $\left( a , b \right) \backslash \left\{ c \right\}$ . If $\lim _ { x \to c } f ^ { \prime } ( x ) = d \in \mathbb { R }$ , show that f is differentiable at $c$ and ${ f ^ { \prime } } ( c ) = d .$
 
-3. Let T be a linear transformation of the vector space V into itself. If $_ { T v }$ and v are linearly dependent for each $v \in V$ , show that $_ T$ must be a scalar multiple of the identity.
+3. Let T be a linear transformation of the vector space V into itself. If $T v$ and v are linearly dependent for each $v \in V$ , show that $T$ must be a scalar multiple of the identity.
 
-4. Suppose that $f : \mathbb { R }  \mathbb { R }$ is twice differentiable and its second derivative, $f ^ { \prime \prime }$ satisfies $| f ^ { \prime \prime } ( x ) | \le B$
+4. Suppose that $f : \mathbb { R } \to \mathbb { R }$ is twice differentiable and its second derivative, $f ^ { \prime \prime }$ satisfies $| f ^ { \prime \prime } ( x ) | \le B$
 
 a)Prove that
 
@@ -52,7 +52,7 @@ $$
 
 in terms of the dimensions of V and W. Here $T ^ { * }$ denotes the adjoint of T.
 
-7. Let $A ( x )$ be a function on R whose values are $n \times n$ matrices. Starting from the definition that the derivative $A ^ { \prime } ( x )$ is the matrix you get by differentiating the entries in $A ( x )$ , show that when $A ( x )$ is invertible and differentiable for all $x ,$ $A ^ { - 1 } ( x )$ is differentiable, and
+7. Let $A ( x )$ be a function on $\mathbb { R }$ whose values are $n \times n$ matrices. Starting from the definition that the derivative $A ^ { \prime } ( x )$ is the matrix you get by differentiating the entries in $A ( x )$ , show that when $A ( x )$ is invertible and differentiable for all $x ,$ $A ^ { - 1 } ( x )$ is differentiable, and
 
 $$
 ( A ^ { - 1 } ) ^ { \prime } ( x ) = - A ^ { - 1 } ( x ) A ^ { \prime } ( x ) A ^ { - 1 } ( x ) .
@@ -66,7 +66,7 @@ $$
 
 Prove your answer.
 
-9. Suppose $u _ { n } : \mathbb { R }  \mathbb { R }$ is differentiable and solves
+9. Suppose $u _ { n } : \mathbb { R } \to \mathbb { R }$ is differentiable and solves
 
 $$
 u _ { n } ^ { \prime } ( x ) = F ( u _ { n } ( x ) , x ) ,
@@ -86,7 +86,7 @@ $$
 u ^ { \prime } ( x ) = F ( u ( x ) , x ) , u ( x _ { 0 } ) = y _ { 0 }
 $$
 
-has a unique solution $u : \mathbb { R } $ R and $u _ { n } ( x _ { 0 } )$ converges to yo as $n \to \infty$ . Show that $u _ { n }$ uniformly converges to u.
+has a unique solution $u : \mathbb { R } \to \mathbb { R }$ and $u _ { n } ( x _ { 0 } )$ converges to yo as $n \to \infty$ . Show that $u _ { n }$ uniformly converges to u.
 
 10. Suppose that $\{ \vec { v } _ { j } \} _ { j = 1 } ^ { n }$ is a basis for the complex vector space $\mathbb { C } ^ { n }$
 
@@ -96,7 +96,7 @@ If the $\vec { v } _ { j } \mathrm { : }$ s are eigenvectors for a linear transf
 
 11. Let $f$ be bounded real function on [0,1]. Show that f is Riemann integrable if and only if $f ^ { 3 }$ is Riemann integrable.
 
-12. a) Suppose that $x _ { 0 } < x _ { 1 } < \cdots < x _ { n }$ are points in $^ { [ \mathrm { a } , \mathrm { b } ] }$ Define linear functions on $\mathbb P ^ { n }$ , the vector space of polynomials of degree less than or equal $n ,$ by setting
+12. a) Suppose that $x _ { 0 } < x _ { 1 } < \cdots < x _ { n }$ are points in $[ \mathrm { a } , \mathrm { b } ]$ Define linear functions on $\mathbb P ^ { n }$ , the vector space of polynomials of degree less than or equal $n ,$ by setting
 
 $$
 l _ { j } ( p ) = p ( x _ { j } ) \quad j = 0 , \ldots , n
