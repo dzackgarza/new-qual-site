@@ -743,6 +743,19 @@ div.qual-section > .qual-section-title {
   font-weight: 600;
 }
 
+/* The YAML `subtitle`: a textbook or exam locator, not the opening sentence of
+   the card. It is metadata about the block, like the id above it, so it takes
+   the label's size and colour and stays tight to the name line. Upright,
+   because a plain-style statement sets its body in italic. Not scoped to the
+   section: a transcluded block carries it inside, a card page emits it above
+   the block, and it is the same line in both. */
+.qual-section-subtitle {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: var(--label);
+  font-style: normal;
+}
+
 /* A revealed answer is a section of the card, not a panel bolted to it: the
    rule at its left is the one the environments above it use, and the accent is
    there because the summary is the only part of it you click. The grey filled
