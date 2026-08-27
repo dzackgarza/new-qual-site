@@ -219,7 +219,11 @@ def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
     html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
     links = LinkCollector()
     links.feed(html)
-    matching_links = [text for href, classes, text in links.links if href == "../tag/PRB-INDEXP.html" and "wikilink" in classes.split()]
+    matching_links = [
+        text
+        for href, classes, text in links.links
+        if href.endswith("/PRB-INDEXP.html") and "wikilink" in classes.split()
+    ]
     assert matching_links == ["Show a subgroup of index $p$ in a $p\\dash$group is normal"]
     assert all("PRB-INDEXP" not in text for text in matching_links)
 
