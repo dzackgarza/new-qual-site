@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FE-BGEZL
 kind: example
 title: The function $xy/(x^2+y^2)$ is separately continuous but not jointly continuous
+prompts:
+- 'Give an example of a function $f: \RR^n \to \RR$ that is continuous in each variable but not continuous.'
 classification:
   areas:
   - topology
@@ -16,7 +18,7 @@ relations:
 review: draft
 ---
 
-::: {.example title="Give an example of a function $f: \RR^n \to \RR$ that is continuous in each variable but not continuous."}
+::: {.example}
 Take limit along $y=x$ and compare to $y=0$:
 \begin{align*}
 f(x, y) = 

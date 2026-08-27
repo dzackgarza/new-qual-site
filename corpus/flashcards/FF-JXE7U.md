@@ -3,6 +3,8 @@ schema: qual/card@1
 id: FF-JXE7U
 kind: fact
 title: $\mathrm{Hom}_R(R,A)\cong A$
+prompts:
+- Prove $ \mathop{\mathrm{Hom}}_R(R, A) \cong A $.
 classification:
   areas:
   - topology
@@ -13,7 +15,7 @@ relations: []
 review: draft
 ---
 
-::: {.fact title="Prove $ \mathop{\mathrm{Hom}}_R(R, A) \cong A $."}
+::: {.fact}
 Take the map $ \Phi $ where $ f\mapsto f(1) $,
 
 Surjects by defining $ f_a(1) \coloneqq a $ for any $ a\in A $ and extending by $ f_a(n) \coloneqq na $
