@@ -156,7 +156,7 @@ these choices correspond to the matrices
 &
 .\end{align*}
 
-> Note: these are perhaps transposed from Hungerford's notation.
+> These are perhaps transposed from the notation in [@Hun74].
 
 Since none of the associated polynomials were irreducible over $\QQ$, $RCF(A)$ takes these forms over $\CC$ as well.
 
@@ -241,7 +241,7 @@ R_{12}:  3J_i^1 \oplus J_{-i}^1 \oplus 3J_7^1
 
 # Problem 6
 
-Let $\phi \in \endo(V)$, then following a different proof than what is suggested in Hungerford, define an action
+Let $\phi \in \endo(V)$. Following a different proof [@Hun74], define an action
 
 \begin{align*}
 k[x] &\actson V \\

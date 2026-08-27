@@ -7,9 +7,9 @@ title: "Real Analysis Qual Prep Week 2: Measure Theory, Fubini Tonelli"
 
 References:
 
-- Folland's "Real Analysis: Modern Techniques", Ch.1
+- [@Fol13, chap. 1]
 
-- Stein and Shakarchi Ch.1, Ch.2
+- [@SS05, chaps. 1-2]
 
 ## Convergence Tips/Tricks
 
@@ -127,7 +127,7 @@ Quick statement:
 
 ![](_attachments/Pasted image 20210528185415.png)
 
-Explained in Stein and Shakarchi (Fubini, which requires **integrability**)
+This follows from Fubini's theorem, which requires **integrability** [@SS05].
 
 ![](_attachments/Pasted image 20210528185725.png)
 
@@ -139,7 +139,7 @@ And Tonelli, which only requires **measurability**:
 
 ![](_attachments/Pasted image 20210528190018.png)
 
-A more precise statement from Folland:
+A more precise statement appears in [@Fol13]:
 
 ![](_attachments/Pasted image 20210528185618.png)
 

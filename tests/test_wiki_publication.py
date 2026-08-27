@@ -186,6 +186,25 @@ def test_build_emits_every_authored_page_and_resolves_real_links(
     assert "fixture index" in page["search"]
 
 
+def test_bare_card_reference_uses_the_card_title(tmp_path: Path) -> None:
+    work = fixture_repo(tmp_path)
+    (work / "wiki" / "index.md").write_text(wiki_md("# Fixture index\n\n[[PRB-INDEXP]]\n"))
+
+    result = run("build", work)
+    assert result.returncode == 0, result.stderr
+
+    html = (work / "build" / "quarto" / "_site" / "wiki" / "index.html").read_text()
+    link = re.search(
+        r'<a href="\.\./tag/PRB-INDEXP\.html" class="wikilink">(.*?)</a>',
+        html,
+        re.DOTALL,
+    )
+    assert link is not None
+    link_text = re.sub(r"\s+", " ", link.group(1))
+    assert "Show a subgroup of index" in link_text
+    assert "PRB-INDEXP" not in link_text
+
+
 def test_incoming_wiki_links_are_generated_from_the_resolved_graph(tmp_path: Path) -> None:
     """Who points at a page is the inverse of the wikilinks already resolved.
 

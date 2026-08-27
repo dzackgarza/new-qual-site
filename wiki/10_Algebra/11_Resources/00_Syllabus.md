@@ -17,24 +17,23 @@ Adapted from remark written by Roy Smith, August 2006:
 
 ## General References
 
-- David Dummit and Richard Foote, Abstract Algebra, Wiley, 2003. [@DF04]
+- [@DF04]
 
-- Kenneth Hoffman and Ray Kunze, Linear Algebra, Prentice-Hall, 1971. [@HK71]
+- [@HK71]
 
-- Thomas W. Hungerford, Algebra, Springer, 1974. [@Hun74]
+- [@Hun74]
 
-- Roy Smith, Algebra Course Notes (843-1 through 845-3). [@Smi]
+- [@Smi]
 
   - Note: scroll down the page to find links to his course notes.
 
 ## Group Theory
 
-> References: [@DF04], [@Hun74], [@Smi] "The first 6 chapters (220 pages) of Dummit and Foote are excellent.
-> All the definitions and proofs of these theorems on groups are given in Smith's web based lecture notes for math 843 part 1."
+> References: [@DF04, chaps. 1-6]; [@Hun74]; [@Smi].
 
 ### Topics
 
-Chapters 1-9 of Dummit and Foote
+See [@DF04, chaps. 1-9].
 
 - **The first isomorphism theorem**,
 
@@ -170,11 +169,11 @@ Chapters 1-9 of Dummit and Foote
 
 ## Rings
 
-> References: [@DF04],[@Hun74],[@Smi]
+> References: [@DF04]; [@Hun74]; [@Smi].
 
-- DF chapters 13,14 (about 145 pages).
+- [@DF04, chaps. 13-14]
 
-- Smith:
+- [@Smi]:
 
   - 843-2, sections 11,12, and 16-21 (39 pages)
 
@@ -182,7 +181,7 @@ Chapters 1-9 of Dummit and Foote
 
   - 844-2, sections 10-16, (37 pages)
 
-- DF Chapters 7, 8, 9.
+- [@DF04, chaps. 7-9]
 
 ### Topics
 
@@ -202,7 +201,7 @@ Chapters 1-9 of Dummit and Foote
 
   - Why it is unnecessary in countable or noetherian rings.
 
-  > Smith discusses extensively in 844-1.
+  > See [@Smi, sec. 844-1].
 
 - Chinese Remainder Theorem
 
@@ -244,15 +243,15 @@ Chapters 1-9 of Dummit and Foote
 
     - Have GCDs
 
-    - Results about PIDs *(DF Section 8.2)*
+    - Results about PIDs [@DF04, sec. 8.2]
 
-      - Example of a PID that is not a Euclidean domain *(DF p.277)*
+      - Example of a PID that is not a Euclidean domain [@DF04, p. 277]
 
       - Proof that a Euclidean domain is a PID and hence a UFD
 
-      - Proof that $\ZZ$ and $k[x]$ are UFDs *(p.289 Smith, p.300 DF)*
+      - Proof that $\ZZ$ and $k[x]$ are UFDs [@Smi, p. 289; @DF04, p. 300]
 
-      - A polynomial ring in infinitely many variables over a UFD is still a UFD *(Easy, DF, p.305)*
+      - A polynomial ring in infinitely many variables over a UFD is still a UFD [@DF04, p. 305]
 
   - Euclidean domains
 
@@ -272,9 +271,9 @@ Chapters 1-9 of Dummit and Foote
 
   - Remainder and factor theorem
 
-  - Eisenstein's criterion *(DF p.309)*
+  - Eisenstein's criterion [@DF04, p. 309]
   > Stated only for monic polynomials -- proof of general case identical.
-  > See Smith's notes for the  full version.
+  > See [@Smi] for the full version.
 
   - Reducibility
 
@@ -282,13 +281,13 @@ Chapters 1-9 of Dummit and Foote
 
 - Cyclic product structure of $(\ZZ/n\ZZ)\units$
 
-  > Exercise in DF, Smith 844-2, section 18
+  > See [@DF04] and [@Smi, sec. 844-2.18].
 
-- Gröbner bases and division algorithms for polynomials in several variables *(DF 9.6.)*
+- Gröbner bases and division algorithms for polynomials in several variables [@DF04, sec. 9.6]
 
 ## Modules
 
-> References: [@DF04],[@Hun74],[@Smi]
+> References: [@DF04]; [@Hun74]; [@Smi].
 
 ### Topics
 
@@ -303,17 +302,17 @@ Chapters 1-9 of Dummit and Foote
 - Classification of finitely generated modules over PIDs *(with emphasis on Euclidean Domains)*
 
 - Modules over PIDs and canonical forms of matrices.
-  *DF sections 10.1, 10.2, 10.3, and 12.1, 12.2, 12.3.*
+  [@DF04, secs. 10.1-10.3 and 12.1-12.3]
 
-  - Constructive proof of decomposition: DF Exercises 12.1.16-19
+  - Constructive proof of decomposition [@DF04, exs. 12.1.16-19]
 
-  > Smith 845-1 and 845-2: Detailed discussion of the constructive proof.
+  > See [@Smi, secs. 845-1 and 845-2] for a detailed discussion of the constructive proof.
 
 ## Field Theory
 
 ### Topics
 
-> References: [@DF04],[@Hun74],[@Smi]
+> References: [@DF04]; [@Hun74]; [@Smi].
 
 - Algebraic extensions of fields
 

@@ -67,7 +67,7 @@ Open and closed sets, continuous functions.
 Connectedness, compactness, Hausdorff, normality.
 Metric spaces, **R***n*. Heine-Borel theorem.
 
-Reference: J. Munkres, ‘*Topology, A First Course*‘, Part I (Prentice-Hall).
+Reference: [@Mun00, pt. I].
 
 ## Calculus
 

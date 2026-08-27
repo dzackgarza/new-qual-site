@@ -11,7 +11,7 @@ order: 20
 >   
 >   - Rudin: Chapters 2, 3, 4, 5, 7
 >
->   - Folland: Section 0.6
+>   - [@Fol13, sec. 0.6]
 
 - Continuity and differentiation of functions $f: \RR \to \RR$
 
@@ -33,9 +33,9 @@ order: 20
 
 > - **References**:
 >   
->   - Folland, Chapters 1, 2
+>   - [@Fol13, chaps. 1-2]
 >
->   - Stein and Shakarchi, Chapters 1, 2, 6
+>   - [@SS05, chaps. 1, 2, 6]
 
 - Measures on $\RR^n$ and on $\sigma\dash$algebras
 
@@ -69,9 +69,9 @@ order: 20
 
 > - **References**:
 >   
->   - Folland: Sections 5.2, 5.5, 6.2;
+>   - [@Fol13, secs. 5.2, 5.5, 6.2]
 >
->   - Stein and Shakarchi: Chapter 4.
+>   - [@SS05, chap. 4]
 
 - The Banach spaces $L^1$ and $L^\infty$:
 
@@ -89,9 +89,9 @@ order: 20
 
 > - **References**:
 >   
->   - Folland: Sections 5.2, 5.5, 6.2;
+>   - [@Fol13, secs. 5.2, 5.5, 6.2]
 >
->   - Stein and Shakarchi: Chapter 4.
+>   - [@SS05, chap. 4]
 
 - Schwarz inequality
 

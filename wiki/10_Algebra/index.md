@@ -112,13 +112,13 @@ Students are expected to know proofs and to carry out the standard computations 
 
 ### References
 
-1. David Dummit and Richard Foote, Abstract Algebra, Wiley, 2003.
+- [@DF04]
 
-2. Kenneth Hoffman and Ray Kunze, Linear Algebra, Prentice-Hall, 1971.
+- [@HK71]
 
-3. Thomas Hungerford, Algebra, Springer, 1974.
+- [@Hun74]
 
-4. Roy Smith, [Algebra Course Notes](http://www.math.uga.edu/~roy/) (843-1 through 845-3),
+- [@Smi]
 
 The [UGA algebra study guide](https://www.math.uga.edu/sites/default/files/PDFs/Graduate/QualsStudyGuides/Algebra_12%3A2016.pdf) (December 2016) lists the same core, compressed: Sylow, $p$-groups, solvable groups, free groups; tensor products, determinants, Jordan form, PIDs, UFDs, polynomial rings; splitting fields, separable and inseparable extensions; fundamental theorem of Galois theory, finite fields, cyclotomic fields.
 Extra topics named there are representations of finite groups (character theory, induced representations, the group ring) and the basics of Lie groups and Lie algebras (exponential map, nilpotent and semisimple Lie algebras and groups).

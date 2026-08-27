@@ -102,7 +102,7 @@ Every space has at least one retraction - for example, the constant map $r:X \in
 [[T-FA6VI]]
 
 :::{.proof title="?"}
-See Munkres page 104.
+See [@Mun00, p. 104].
 
 :::
 

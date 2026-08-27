@@ -6,7 +6,7 @@ order: 0
 
 # Books
 
-- A. Hatcher: Algebraic Topology,
+- [@Hat02]
 
 - W. Fulton: Algebraic Topology,
 

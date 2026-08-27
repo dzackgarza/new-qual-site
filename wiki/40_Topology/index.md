@@ -13,42 +13,42 @@ Revised May 2006.
 
 ### General Topology
 
-- Topological spaces, continuous functions, product and quotient topology [1, ch. 2]
+- Topological spaces, continuous functions, product and quotient topology [@Mun00, chap. 2]
 
-- Connectedness and compactness [1, ch. 3]
+- Connectedness and compactness [@Mun00, chap. 3]
 
-- Countability and separation axioms, Urysohn lemma, Tietze theorem [1, ch. 4, except §36]
+- Countability and separation axioms, Urysohn lemma, Tietze theorem [@Mun00, chap. 4, except sec. 36]
 
-- Complete metric spaces and function spaces [1, §43, 45]
+- Complete metric spaces and function spaces [@Mun00, secs. 43 and 45]
 
 ### Algebraic Topology
 
-- Classification of surfaces [2, ch. I]
+- Classification of surfaces [@Mas97, chap. 1]
 
-- Fundamental group [2, ch. II], [3, §1.1]
+- Fundamental group [@Mas97, chap. 2]; [@Hat02, sec. 1.1]
 
-- van Kampen’s theorem [2, ch. III, IV], [3, §1.2]
+- van Kampen’s theorem [@Mas97, chaps. 3-4]; [@Hat02, sec. 1.2]
 
-- Classification of covering spaces [2, ch. V], [3 §1.3]
+- Classification of covering spaces [@Mas97, chap. 5]; [@Hat02, sec. 1.3]
 
 ### Homology:
 
-- Simplicial, singular, cellular; computations and applications [3, ch. 2], [4, ch. 4]
+- Simplicial, singular, cellular; computations and applications [@Hat02, chap. 2]; [@Mun84, chap. 4]
 
-- Degree of a map $S^n\to S^n$ [3, p. 134], [4, §21]
+- Degree of a map $S^n\to S^n$ [@Hat02, p. 134]; [@Mun84, sec. 21]
 
-- Euler characteristic [3, p. 146]
+- Euler characteristic [@Hat02, p. 146]
 
-- Lefschetz fixed point theorem [3, p. 179], [4, §22]
+- Lefschetz fixed point theorem [@Hat02, p. 179]; [@Mun84, sec. 22]
 
 # References
 
-- [1] J. Munkres, Topology , second edition, Prentice-Hall, 2000.
+- [@Mun00]
 
-- [2] W. Massey, A Basic Course in Algebraic Topology , Springer-Verlag, 1991.
+- [@Mas97]
 
-- [3] A. Hatcher, Algebraic Topology , Cambridge U. Press, 2002.
+- [@Hat02]
 
   - Revisions and corrections [http://www.math.cornell.edu/~hatcher/AT/ATpage.html](http://www.math.cornell.edu/~hatcher/AT/ATpage.html)
 
-- [4] J. Munkres, Elements of Algebraic Topology , Addison-Wesley, 1984.
+- [@Mun84]

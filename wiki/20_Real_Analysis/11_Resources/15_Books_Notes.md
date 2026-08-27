@@ -10,12 +10,12 @@ order: 15
 
   > Good general reference but the following books have more useful techniques
 
-- Stein and Shakarchi: Real analysis.
+- [@SS05]
 
   > Does not have $L^p$ spaces.
   > A good source for this and convexity is **Lieb-Loss: Analysis, Chapter 2**.
 
-- Stein and Shakarchi: Fourier Analysis.
+- [@Ste03]
 
   > This book is very elementary but more than sufficient chapters 2 and 3 are Fourier series, chapter 5 is Fourier transform.
 

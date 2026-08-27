@@ -213,7 +213,14 @@ def _subject_tree(
             items.append("<li>" + anchor + nested + "</li>")
         return f"<ol>{''.join(items)}</ol>" if items else ""
 
-    return f'<aside class="subject-sidebar"><nav aria-label="Subject"><strong class="subject-label">Study path</strong>{branch(roots)}</nav></aside>'
+    tree = branch(roots)
+    return (
+        '<aside class="subject-sidebar">'
+        '<nav class="sidebar-wide" aria-label="Subject">'
+        f'<strong class="subject-label">Study path</strong>{tree}</nav>'
+        '<details class="sidebar-narrow"><summary>Study path</summary>'
+        f'<nav aria-label="Subject navigation">{tree}</nav></details></aside>'
+    )
 
 
 def _navigation_structure(
@@ -270,7 +277,14 @@ def _wiki_tree(
                     assert_never(unreachable)
         return f"<ol>{''.join(items)}</ol>" if items else ""
 
-    return f'<aside class="subject-sidebar wiki-sidebar"><nav aria-label="Wiki"><strong class="subject-label">Wiki</strong>{branch(roots)}</nav></aside>'
+    tree = branch(roots)
+    return (
+        '<aside class="subject-sidebar wiki-sidebar">'
+        '<nav class="sidebar-wide" aria-label="Wiki">'
+        f'<strong class="subject-label">Wiki</strong>{tree}</nav>'
+        '<details class="sidebar-narrow"><summary>Wiki navigation</summary>'
+        f'<nav aria-label="Wiki navigation">{tree}</nav></details></aside>'
+    )
 
 
 def _breadcrumbs(

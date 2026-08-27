@@ -842,9 +842,7 @@ def _link(
         pf.Link(
             *_inlines(card["title"], inline_cache),
             url=f"{prefix}{card['id']}.html",
-        ),
-        pf.Space(),
-        pf.Code(card["id"]),
+        )
     )
 
 
@@ -1213,8 +1211,6 @@ def _publication_card(
                 *_inlines(card["title"], inline_cache),
                 url=card["id"],
             ),
-            pf.Space(),
-            pf.Code(card["id"]),
             level=2,
         ),
         *_blocks(card),
@@ -2121,7 +2117,7 @@ def project(
         wiki_items: list[PageItem] = [
             (
                 (
-                    {"title": page.title, "subtitle": page.source_rel.as_posix()},
+                    {"title": page.title},
                     _wiki_blocks(page, incoming_pages[page.route.as_posix()]),
                 ),
                 out / "wiki" / page.source_rel.with_suffix(".qmd"),

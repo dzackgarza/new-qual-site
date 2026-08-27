@@ -39,8 +39,8 @@ Elements of the fundamental group are *homotopy classes of loops*, and every con
 
 ### Conjugacy in $\pi_{1}$:
 
-- See Hatcher 1.19, p.28
-- See Hatcher's proof that $\pi_{1}$ is a group
+- See [@Hat02, prop. 1.19, p. 28].
+- See the proof that $\pi_1$ is a group in [@Hat02].
 - See change of basepoint map
 
 ### Calculating $\pi_1$ 
@@ -163,4 +163,3 @@ Individual maps may not work: take $S^2 \cross \RP^3$ and $S^3 \cross \RP^2$ whi
 [^pullbacks]: More generally, in $\mathbf{Top}$, we can look at $A \from \pt \to B$ -- then $A\cross B$ is the pullback and $A \vee B$ is the pushout. In this case, homology $h: \mathbf{Top} \to \mathbf{Grp}$ takes pushouts to pullbacks but doesn't behave well with pullbacks. Similarly, while $\pi$ takes pullbacks to pullbacks, it doesn't behave nicely with pushouts.
 
 [^homotopyproduct]: This follows because $X\cross Y \surjects X$ is a fiber bundle, so use LES in homotopy and the fact that $\pi_{i\geq 2} \in \mathbf{Ab}$.
-

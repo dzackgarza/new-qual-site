@@ -278,7 +278,7 @@ The fundamental group of $S^1 \vee S^1$ is $\ZZ \ast \ZZ$ by van Kampen, and the
 
 ![The universal cover of $\S^1 \vee S^1$](../../../../assets/assets/40_Topology/figures/image_2021-01-10-13-19-32.png)
 
-See Hatcher p.58 for other covers.
+See [@Hat02, p. 58] for other covers.
 
 :::
 

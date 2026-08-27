@@ -8,7 +8,7 @@ order: 20
 
 - Standards
 
-  - Dummit and Foote: Abstract Algebra, 2nd edition, except chapters 15, 16 and 17,
+  - [@DF04, except chaps. 15-17]
 
   - Groups, Rings, Modules: [https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf](https://dec41.user.srcf.net/notes/IB_L/groups_rings_and_modules.pdf)
 

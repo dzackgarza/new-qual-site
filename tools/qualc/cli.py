@@ -30,7 +30,9 @@ def load(
         wiki_pages, wiki_errors = parse_pages(pandoc, root / "wiki", load_citations(root / "vocabularies"))
         errors.extend(wiki_errors)
         card_routes = {}
+        card_titles = {}
         for item in parsed:
+            card_titles[item.card.id] = item.card.title
             if item.card.kind == "collection":
                 card_routes[item.card.id] = Path("exam") / f"{item.card.id}.html"
             else:
@@ -38,7 +40,7 @@ def load(
         if wiki_pages:
             assets = build_asset_catalog(root / "assets")
             errors.extend(validate_wiki_tree(wiki_pages))
-            errors.extend(resolve_links(wiki_pages, card_routes, assets))
+            errors.extend(resolve_links(wiki_pages, card_routes, card_titles, assets))
             link_citations(wiki_pages, card_routes)
     return parsed, wiki_pages, errors
 

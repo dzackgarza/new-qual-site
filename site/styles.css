@@ -72,8 +72,7 @@ mjx-container {
 
 mjx-container:not([display="true"]) {
   display: inline-block;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: visible;
   vertical-align: middle;
 }
 
@@ -171,6 +170,10 @@ mjx-container[display="true"] {
   font-size: 0.72rem;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+}
+
+.sidebar-narrow {
+  display: none;
 }
 
 .subject-sidebar ol {
@@ -691,6 +694,24 @@ div.panel > ul {
     margin-bottom: 2rem;
     overflow: visible;
     background: var(--wash);
+  }
+
+  .sidebar-wide {
+    display: none;
+  }
+
+  .sidebar-narrow {
+    display: block;
+  }
+
+  .sidebar-narrow > summary {
+    color: var(--ink);
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .sidebar-narrow[open] > summary {
+    margin-bottom: 0.8rem;
   }
 
   .wiki-sidebar {

@@ -486,6 +486,7 @@ def _canonical_target(
 def resolve_links(
     pages: list[WikiPage],
     card_routes: dict[str, Path],
+    card_titles: dict[str, str],
     assets: AssetCatalog,
 ) -> list[Diagnostic]:
     """Resolve every local page/card/asset link in-place; return failures."""
@@ -516,6 +517,9 @@ def resolve_links(
                     )
                 else:
                     element.url = target
+                card_id = Path(urlsplit(raw).path).stem
+                if isinstance(element, pf.Link) and card_id in card_titles and pf.stringify(element).strip() == card_id:
+                    element.content = _text_inlines(card_titles[card_id])
             except MissingPageReference as exc:
                 errors.append(
                     Diagnostic(

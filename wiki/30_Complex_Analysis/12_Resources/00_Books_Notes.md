@@ -15,7 +15,7 @@ order: 0
 - Silverman, Richard.
   *Complex Analysis with Applications*
 
-- Stein and Shakarchi, *Complex Analysis* [@SS03] #resources/textbooks
+- [@SS03] #resources/textbooks
 
 - Taylor, *Complex Analysis*
 

@@ -6,8 +6,8 @@ order: 0
 
 References:
 
-- Munkres [@Mun00]
-- Hatcher [@Hat02]
+- [@Mun00]
+- [@Hat02]
 
 Some fun resources:
 

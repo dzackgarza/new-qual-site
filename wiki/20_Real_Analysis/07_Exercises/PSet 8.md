@@ -31,7 +31,7 @@ $\impliedby$: Suppose $f_n \uniformlyconverges f$ uniformly on some set $E$ and 
 
 To see that simple functions are dense in $L^\infty(X)$, we can use the fact that $f\in L^\infty(X) \iff$ there exists a $g$ such that $f=g$ a.e. and $g$ is bounded. 
 
-Then there is a sequence $s_n$ of simple functions such that $\norm{s_n - g}_\infty \to 0$, which follows from a proof in Folland:
+Then there is a sequence $s_n$ of simple functions such that $\norm{s_n - g}_\infty \to 0$ [@Fol13]:
 
 ![](../../../assets/20_Real_Analysis/500_Exercises/figures/2019-11-20-22-52-43.png)
 

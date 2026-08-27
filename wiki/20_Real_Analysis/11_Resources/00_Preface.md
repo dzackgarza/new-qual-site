@@ -3,7 +3,7 @@ title: Preface
 order: 0
 ---
 
-Exercises from Folland:
+Exercises from [@Fol13]:
 
 - Chapter 1: Exercises 3, 7, 10, 12, 14 (with the sets in 3(a) being non-empty) Exercises 15, 17, 18, 19, 22(a), 24, 28 Exercises 26, 30 (also check out 31)
 

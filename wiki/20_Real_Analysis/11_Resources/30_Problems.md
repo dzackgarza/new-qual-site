@@ -4,9 +4,9 @@ order: 30
 
 # Problems (Real)
 
-## Folland Exercises
+## Exercises
 
-Exercises from Folland:
+Exercises from [@Fol13]:
 
 - Chapter 1:
 

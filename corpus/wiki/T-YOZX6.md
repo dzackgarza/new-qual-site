@@ -2,7 +2,7 @@
 schema: qual/card@1
 id: T-YOZX6
 kind: theorem
-title: Folland 0.25
+title: Compactness, Sequential Compactness, and Total Boundedness
 classification:
   areas:
   - real-analysis
@@ -14,7 +14,9 @@ relations: []
 review: draft
 ---
 
-::: {.theorem title="Folland 0.25"}
+::: {.theorem title="Equivalent Characterizations of Compactness"}
+See [@Fol13, prop. 0.25].
+
 For $E \subseteq (X, d)$ a metric space, TFAE:
 
 - $E$ is complete and totally bounded.
