@@ -133,13 +133,17 @@ No scripts, no pattern matching.
 
 ### Batch 5: files 76-80
 
-- **cambride_analysis_ii.md** (76): replaced 34 PUA glyphs (U+F8E0–U+F8FF) at 6 sites with their intended delimiters (`{`, `(`, `)`) or dropped them; 0 control bytes and 0 PUA remain. Extraction otherwise excellent; text-layer renderings `↦ →`, `⁄=`, `‖ ‖` kept as-is. "fundamental theorem of algebra" kept as extracted — author typo, not verifiable without the source PDF bytes.
+- **cambride_analysis_ii.md** (76): replaced 34 PUA glyphs (U+F8E0–U+F8FF) at 6 sites with their intended delimiters (`{`, `(`, `)`) or dropped them; 0 control bytes and 0 PUA remain.
+  Extraction otherwise excellent; text-layer renderings `↦ →`, `⁄=`, `‖ ‖` kept as-is.
+  "fundamental theorem of algebra" kept as extracted — author typo, not verifiable without the source PDF bytes.
 
 - **Cambridge Examples Sheets.md** (77): fixed ~20 OCR garbles — `\right.` → `\right\}` closing cases environments (2 sites), restored missing math delimiters (Im z; |z|²; sech z), missing `\to` in `f \colon \mathcal { H } \to \mathcal { H }$`, `Let $^ { a , }$ b` → `Let $a , b$ be`, doubled commas `,$ ,` (4 sites), `$a > 1 _ { . }$` → `$a > 1$`, reconstructed the Dirichlet-integral display ("Evaluate $\lim _ { R \to \infty } \int _ { - R } ^ { R } \ldots$ R→∞"), `\hat { t }`/`\dot { t }` → `t`, `\widehat { / }` → `/`, `\mathcal { H } _ { 2 }` → `\mathcal { V } _ { 2 }`. Left as extracted: `\tag{iii}` on the sin² integral — internally inconsistent numbering (the hint references the log integral as part (iii)), plausibly an authorial typo, unverifiable from the extraction alone.
 
 - **Ch10PtASltns.md** (78): fixed headers `## # N:` → `## N:` (6 sites; standalone single-# headers kept), missing `\to` (3 sites: ℝ*→ℝ*, ℝ[x]→ℝ[x]), `\bar { \phi }` → `\phi`, joined the scattered kernel paragraph into one math line (Ker φ = {0}), form-feed `\x0c` → `|` in the set-builder, `x 7→ 3x` → `x \mapsto 3 x`, `bia` → `via`. 0 control bytes remain.
 
-- **Ch10Sltns.md** (79): fixed ~30 garbles — `## # N:` → `## N:` (9 sites), doubled commas, `\right. }` → `\right\} }`, `23Kerφ` → `$2 3 \, \mathrm { K e r } \phi$`, `{4, 0}` → `$\{ 4 , 0 \}$`, `x 7→` maps → `\mapsto` (3 sites), `$| G | 2$ Generalize.` → `$| G |$? Generalize.`, `in C.` → `in $\mathbb { C }$ .`, stray `7` → `or`, missing commas/periods. Rewrote the corrupted φ-ring-homomorphism computation on problem 12 (triplicated sqrt factors and stray text removed; chain restored). Math-error fix: `\phi ( g N ) \phi ( g M )` → `\phi ( g N ) \phi ( h N )` — the solution maps the first factor to φ(gN) and the second to φ(hN). Generator notation `< 5 >`, `< g >` kept — author convention, renders correctly.
+- **Ch10Sltns.md** (79): fixed ~30 garbles — `## # N:` → `## N:` (9 sites), doubled commas, `\right. }` → `\right\} }`, `23Kerφ` → `$2 3 \, \mathrm { K e r } \phi$`, `{4, 0}` → `$\{ 4 , 0 \}$`, `x 7→` maps → `\mapsto` (3 sites), `$| G | 2$ Generalize.` → `$| G |$? Generalize.`, `in C.` → `in $\mathbb { C }$ .`, stray `7` → `or`, missing commas/periods.
+  Rewrote the corrupted φ-ring-homomorphism computation on problem 12 (triplicated sqrt factors and stray text removed; chain restored).
+  Math-error fix: `\phi ( g N ) \phi ( g M )` → `\phi ( g N ) \phi ( h N )` — the solution maps the first factor to φ(gN) and the second to φ(hN). Generator notation `< 5 >`, `< g >` kept — author convention, renders correctly.
 
 - **Ch11Sltns.md** (80): fixed headers `## # N:` → `## N:` (3 sites), HTML-table OCR — `$\overline { { \phi ( 4 ) = 2 } }$` → `$\phi ( 4 ) = 2$`, `Z _ { 1 6 }`-style cells → `\mathbb { Z }` (4 cells), `φ(2)`/`φ(4)` → `$\phi$` form; "or order 360" → "of order 360" (2 sites), "p andq" → "p and q", `(1, 1, 1)` → `$( 1 , 1 , 1 )$`. Flagged as ambiguous (see below): problem 10's group (b) has the wrong order.
 
@@ -166,7 +170,8 @@ No scripts, no pattern matching.
 - **basic-12S.md**, Problem 11(a): matrix fragment `A = { \binom { 1 } { 4 } } \ 3 )`. One 2×2 matrix entry is missing; the occluded entry cannot be recovered from the extraction alone.
   The problem (degree-2 polynomial P with P(A)=0) still renders, but the stated matrix is incomplete.
 
-- **Ch11Sltns.md**, problem 10: group (b) `$Z_2 \oplus Z_2 \oplus Z_2 \oplus Z_5$` has order 40, not 360. The complete order-360 Abelian list needs $Z_2^3 \oplus Z_9 \oplus Z_5$ — either a `⊕ Z_9` factor was lost in the scan or the author erred. The remaining listed groups (a),(c),(d),(e),(f) are correct.
+- **Ch11Sltns.md**, problem 10: group (b) `$Z_2 \oplus Z_2 \oplus Z_2 \oplus Z_5$` has order 40, not 360. The complete order-360 Abelian list needs $Z_2^3 \oplus Z_9 \oplus Z_5$ — either a `⊕ Z_9` factor was lost in the scan or the author erred.
+  The remaining listed groups (a),(c),(d),(e),(f) are correct.
 
 - **calculus_practice_test3.md**: problems 9-15, 18, 20-28, 30-33, 36-38, 40-43 are absent or their stems are unreadable — page/scanner gaps, not fixable from the extraction.
   Problem 17 stem has an unreadable first term (`$\mathbf{i_\tau} - \sin^2(\mathrm{Arccos}\frac{\pi}{12})$`); problem 43's polynomial-condition stem is garbled (`\quad n = \sum a_i x^i` fragment with unknown degree hypothesis); problem 35 choice (C) `$\frac{3!}{6}$` has lost digits.

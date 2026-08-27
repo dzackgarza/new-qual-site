@@ -12,7 +12,9 @@ $$
 
 # 5: Prove that any Abelian group of order 45 has an element of order 15. Does every Abelian group of order 45 have an element of order 9?
 
-The Abelian groups of order 45 are, up to isomorphism, $\mathbb { Z } _ { 4 5 }$ and $\mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 5 }$ . There are elements of order 15 in each. For instance, take 3 and $( 1 , 1 , 1 )$ respectively. Now, $\mathbb { Z } _ { 4 5 }$ has an element of order 9, namely 5. But $\mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 5 }$ does not have an element of order 9.
+The Abelian groups of order 45 are, up to isomorphism, $\mathbb { Z } _ { 4 5 }$ and $\mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 5 }$ . There are elements of order 15 in each.
+For instance, take 3 and $( 1 , 1 , 1 )$ respectively.
+Now, $\mathbb { Z } _ { 4 5 }$ has an element of order 9, namely 5. But $\mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 5 }$ does not have an element of order 9.
 
 # 10: Find all the Abelian groups (up to isomorphism) of order 360.
 
@@ -30,9 +32,11 @@ Let G be an Abelian group whose order is finite and divisible by 10. Then, by th
 
 3. of order 42? 1
 
-4. of order pq where p and q are distinct primes? 1
+4. of order pq where p and q are distinct primes?
+   1
 
-5. of order $p q r$ where $p , q$ and r are distinct primes? 1
+5. of order $p q r$ where $p , q$ and r are distinct primes?
+   1
 
 6. Generalize parts d and e. There is a unique Abelian group of order n iff n is not divisible by the square of a prime.
 
@@ -42,19 +46,24 @@ Let G be an Abelian group whose order is finite and divisible by 10. Then, by th
 
 2. $n = 2 ^ { 4 }$ and $m = 5 ^ { 4 } ?$ Same
 
-3. $n = p ^ { r }$ and $m = q ^ { r }$ , where p and q are primes? Same
+3. $n = p ^ { r }$ and $m = q ^ { r }$ , where p and q are primes?
+   Same
 
-4. $n = p ^ { r }$ and $m = p ^ { r } q$ where p and q are distinct primes? Same
+4. $n = p ^ { r }$ and $m = p ^ { r } q$ where p and q are distinct primes?
+   Same
 
-5. $n = p ^ { r }$ and $m = p ^ { r } q ^ { 2 }$ where p and q are distinct primes? There are twice as many of order m as of order n
+5. $n = p ^ { r }$ and $m = p ^ { r } q ^ { 2 }$ where p and q are distinct primes?
+   There are twice as many of order m as of order n
 
 # 21: The set {1, 9, 16, 22, 29, 53, 74, 79, 81} is a group under multiplication modulo 91. Determine the isomorphism class of this group.
 
-The order of the set is 9 so the group is either $\mathbb { Z } _ { 9 }$ or $\mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 3 }$ . The order of 9, 16, and 22 is 3 so there are more than 2 elements of order 3 in the group. Since $\mathbb { Z } _ { 9 }$ only has 2 elements of order 3, it must be that the group is $\mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 3 }$
+The order of the set is 9 so the group is either $\mathbb { Z } _ { 9 }$ or $\mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 3 }$ . The order of 9, 16, and 22 is 3 so there are more than 2 elements of order 3 in the group.
+Since $\mathbb { Z } _ { 9 }$ only has 2 elements of order 3, it must be that the group is $\mathbb { Z } _ { 3 } \oplus \mathbb { Z } _ { 3 }$
 
 # 26: Let $G = \{ 1 , 7 , 1 7 , 2 3 , 4 9 , 5 5 , 6 5 , 7 1 \}$ under multiplication modulo 96. Express G as an external and an internal direct product of cyclic groups.
 
-First notice that G has 8 elements so it is either isomorphic to $\mathbb { Z } _ { 8 } , \ \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 2 }$ or $\mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 }$ The order of 1 is 1, and there are four elements of order 4 (namely: 7, 23, 55, 71). The remaining three elements (17, 49, 65) have order 2. Since no elements have order 8, and there are elements of order 4, it is clear that $G \approx \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 2 }$ as an external direct product. As an internal direct product, G can be expressed as $< 7 > \times < 1 7 >$ (or you could replace 7 and 17 with any element of order 4 and 2 respectively).
+First notice that G has 8 elements so it is either isomorphic to $\mathbb { Z } _ { 8 } , \ \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 2 }$ or $\mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 } \oplus \mathbb { Z } _ { 2 }$ The order of 1 is 1, and there are four elements of order 4 (namely: 7, 23, 55, 71). The remaining three elements (17, 49, 65) have order 2. Since no elements have order 8, and there are elements of order 4, it is clear that $G \approx \mathbb { Z } _ { 4 } \oplus \mathbb { Z } _ { 2 }$ as an external direct product.
+As an internal direct product, G can be expressed as $< 7 > \times < 1 7 >$ (or you could replace 7 and 17 with any element of order 4 and 2 respectively).
 
 # 34: Let G be the group of all $n \times n$ diagonal matrices with ±1 diagonal entries. What is the isomorphism class of G?
 
